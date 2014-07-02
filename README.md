@@ -67,7 +67,7 @@ This guide contains the following resources. Check regularly for updates and add
 <a id="overview"></a>
 ## Overview
 
-All content is written in Markdown, stored as `MD` files in GitHub, and published in Sitefinity. When creating or editing content, make sure to keep it consistent with existing content in terms of doc structure, spelling, grammar, and formatting. For pointers, review the markdown of articles similar to the document you are currently working on.
+All content is written in Markdown, stored as `.md` files in GitHub, and published in Sitefinity. When creating or editing content, make sure to keep it consistent with existing content in terms of doc structure, spelling, grammar, and formatting. For pointers, review the markdown of articles similar to the document you are currently working on.
 
 The GitHub repository that contains all Icenium docs is <a href="https://github.com/Icenium/docs" target="_blank">https://github.com/Icenium/docs</a>.
 

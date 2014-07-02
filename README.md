@@ -1,10 +1,10 @@
 # Documentation Base
 
-This repository contains the common infrastructure for building markdown documentation with Jekyll.
+This repository contains the common infrastructure for building markdown documentation with [Jekyll](http://jekyllrb.com/).
 
 ## Getting started
 
-1. Install Ruby 1.9.x (2.x may or may not work). Jekyll is a Ruby tool.
+1. Install Ruby 1.9.x (2.x may or may not work).
 2. Open a terminal or "Git Bash" if on Windows.
 3. `cd` to the directory where your markdown documentation repository is.
 4. Add a new git remote to the docs-base repository. This will be used to merge any new features and fixes from the documentation base repository.
@@ -24,11 +24,29 @@ This repository contains the common infrastructure for building markdown documen
 
 9. Create a Google Custom Search Engine (or ask one to be created for you). Set the `google_custom_search` attribute in "_config.yml". If you forget this step the search results will be from the Kendo UI documentation.
 10. Run `bundle install`. If the `bundle` command is not found run `gem install bundler`. This will install Jekyll and all other required packages.
-11. Run `jekyll serve`. After a while jekyll will run a server at `http://0.0.0.0:4000/<baseurl>` e.g. `http://0.0.0.0:4000/devtools/ios`. You can view the documentation in your browser.
+11. Run `jekyll serve`. After a while jekyll build the documentation and start a web server at `http://0.0.0.0:4000/<baseurl>` e.g. `http://0.0.0.0:4000/devtools/ios`. You can now view the documentation in your browser.
+12. Exclude the `_site` directory from git by adding `_site` to your `.gitignore`.
  
 Jekyll builds a static HTML site in the `_site` directory. This contents of this directory can be deployed on a live server. 
 
 > Important: Jekyll creates .html pages by default. However the documentation creates links without .html extension. A `web.config` with rewrite rules is included out of the box. 
+
+## Some Jekyll info
+
+Jekyll is a tool for creating static html web sites. It supports markdown which makes it a good fit for our needs.
+
+### Directory structure
+
+#### _plugins
+
+Contains [Jekyll plugins](http://jekyllrb.com/docs/plugins/) (Ruby classes) which are needed for producing the final output. The following plugins are available:
+
+* breadcrumb.rb - renders breadcrumb navigation
+* markdown_processor.rb - creates HTML from Markdown using [html-pipeline](https://github.com/jch/html-pipeline). We are not using the default markdown conversion as we need to tweak the output to our needs.
+* navigation_generator.rb - creates a JSON TOC file used for the left-hand treeview navigation.
+* redirect_generator.rb - creates IIS redirect rules in the `web.config` to handle the `previous_url` attribute. 
+* sitemap_generator.rb - creates sitemap.xml which is used by search engines for crawling.
+* slug.rb - gets the URL of a help article from its slug.
 
 Writing and Publishing the Docs
 ====

@@ -98,15 +98,15 @@ Determines the text displayed in the TOC navigation (the treeview in the left).
 
 #### page_title (optional but recommended)
 
-The contents of the `<title>` in the final output. If `page_title` is not set the value of `title` is usded.
+The contents of the `<title>` in the final output. If `page_title` is not set the value of `title` is usded. Blade name was `meta_title`.
 
 #### description (optional but recommended)
 
-Used to set the contents of the `<meta name="description">` in the final output. Improves SEO.
+Used to set the contents of the `<meta name="description">` in the final output. Improves SEO. Blade name was  `meta_description`.
 
 #### position (optional)
 
-The position this document will appear at in the TOC navigation. 
+The position this document will appear at in the TOC navigation. Blade name was `ordinal`.
 
 #### slug (optional)
 

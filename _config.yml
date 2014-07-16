@@ -12,7 +12,7 @@ navigation:
         title: Foo
 
 ## The application virtual path
-baseurl: /product
+baseurl: /kendo-ui
 
 ## The product name
 productName: "AppBuilder"
@@ -32,6 +32,11 @@ defaults:
 # The google services configuration
 google_tag_manager: GTM-6X92
 google_custom_search: '001595215763381649090:eblhnfskwrk'
+
+# Assets pipeline configuration
+assets:
+    cachebust: soft
+    js_compressor: uglifier
 
 ## Do not edit below this line
 safe: false

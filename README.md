@@ -37,6 +37,10 @@ Jekyll is a tool for creating static html web sites. It supports markdown which 
 
 ### Jekyll Directory structure
 
+#### _assets
+
+Contains CSS and JavaScript files.
+
 #### _includes
 
 Contains common include files used by the layout pages. Not included in the final output in the `_site` directory.
@@ -48,6 +52,14 @@ The layout pages used by the documentation site. They define the common HTML whi
 #### _plugins
 
 Contains [Jekyll plugins](http://jekyllrb.com/docs/plugins/) (Ruby classes) which are needed for producing the final output. Not included in the final output. 
+
+#### images
+
+Contains images used in the web site.
+
+#### fonts
+
+Custom fonts used in the web site.
 
 The following plugins are currently available:
 

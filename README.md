@@ -5,27 +5,28 @@ This repository contains the common infrastructure for building markdown documen
 ## Installation
 
 1. Install Ruby 1.9.x (2.x may or may not work).
-2. Open a terminal or "Git Bash" if on Windows.
-3. `cd` to the directory where your markdown documentation repository is.
-4. Add a new git remote to the docs-base repository. This will be used to merge any new features and fixes from the documentation base repository.
+2. Install NodeJS (or delete the line ` js_compressor: uglifier` from `_config.yml`).
+1. Open a terminal or "Git Bash" if on Windows.
+1. `cd` to the directory where your markdown documentation repository is.
+1. Add a new git remote to the docs-base repository. This will be used to merge any new features and fixes from the documentation base repository.
 
          git remote add base git@github.com:telerik/docs-base.git
-5. Fetch the "base" remote. This will retrieve the latest files.
+1. Fetch the "base" remote. This will retrieve the latest files.
       
          git fetch base
-6. Merge the "base/master" branch to your documentation repository branch. 
+1. Merge the "base/master" branch to your documentation repository branch. 
          
          git merge --no-ff base/master
-7. Resolve any conflicts (available via `git status`) and commit `git commit`. Make sure you don't remove any customizations you have made to some of the base files.
-8. Open the "_config.yml" file and set the `baseurl` and `url` attributes. The first is used for resolving the path to images and hyperlinks. The second is the online URL of the documentation and is used for creating `sitemap.xml`.
+1. Resolve any conflicts (available via `git status`) and commit `git commit`. Make sure you don't remove any customizations you have made to some of the base files.
+1. Open the "_config.yml" file and set the `baseurl` and `url` attributes. The first is used for resolving the path to images and hyperlinks. The second is the online URL of the documentation and is used for creating `sitemap.xml`.
          
          url: "http://docs.telerik.com/devtools/ios"
          baseurl: "/devtools/ios"
 
-9. Create a Google Custom Search Engine (or ask one to be created for you). Set the `google_custom_search` attribute in "_config.yml". If you forget this step the search results will be from the Kendo UI documentation.
-10. Run `bundle install`. If the `bundle` command is not found run `gem install bundler`. This will install Jekyll and all other required packages.
-11. Run `jekyll serve`. After a while jekyll build the documentation and start a web server at `http://0.0.0.0:4000/<baseurl>` e.g. `http://0.0.0.0:4000/devtools/ios`. You can now view the documentation in your browser.
-12. Exclude the `_site` directory from git by adding `_site` to your `.gitignore`.
+1. Create a Google Custom Search Engine (or ask one to be created for you). Set the `google_custom_search` attribute in "_config.yml". If you forget this step the search results will be from the Kendo UI documentation.
+1. Run `bundle install`. If the `bundle` command is not found run `gem install bundler`. This will install Jekyll and all other required packages.
+1. Run `jekyll serve`. After a while jekyll build the documentation and start a web server at `http://0.0.0.0:4000/<baseurl>` e.g. `http://0.0.0.0:4000/devtools/ios`. You can now view the documentation in your browser.
+1. Exclude the `_site` directory from git by adding `_site` to your `.gitignore`.
  
 Jekyll builds a static HTML site in the `_site` directory. This contents of this directory can be deployed on a live server. 
 

@@ -32,13 +32,7 @@ class BreadCrumbTag < Liquid::Tag
 
                 text = mapping['title'] || segment;
 
-                if  pages.first
-                    url = pages.first.url.sub('.html', '').sub('/', '')
-                else
-                    url = path
-                end
-
-                html += "<li class=\"link\"><a href=\"#{site.baseurl}/#{url}\">#{text}</a></li>"
+                html += "<li class=\"link\"><a href=\"#{site.baseurl}#{pages.first.url.sub('.html', '')}\">#{text}</a></li>"
             end
 
         end

@@ -1,6 +1,6 @@
 # The public documentation URL, used for sitemap.xml
-url: "http://docs.telerik.com/product"
-
+url: "http://docs.telerik.com/devtools/wpf"
+site_name: WPF
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
@@ -12,10 +12,7 @@ navigation:
         title: Foo
 
 ## The application virtual path
-baseurl: /kendo-ui
-
-## The product name
-productName: "AppBuilder"
+baseurl: "/devtools/wpf"
 
 ## Assign layout and category per different paths
 defaults:
@@ -30,13 +27,9 @@ defaults:
 # "foo": "Bar"
 
 # The google services configuration
+google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
 google_custom_search: '001595215763381649090:eblhnfskwrk'
-
-# Assets pipeline configuration
-assets:
-    cachebust: soft
-    js_compressor: uglifier
 
 ## Do not edit below this line
 safe: false

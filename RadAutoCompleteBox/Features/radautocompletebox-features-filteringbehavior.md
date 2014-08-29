@@ -2,10 +2,10 @@
 title: Filtering Behavior
 page_title: Filtering Behavior
 description: Filtering Behavior
-{{slug: radautocompletebox-features-filteringbehavior}}
+slug: radautocompletebox-features-filteringbehavior
 tags: filtering,behavior
 publish: True
-ordinal: 2
+position: 2
 ---
 
 

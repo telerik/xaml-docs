@@ -2,10 +2,10 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: Keyboard Support
-{{slug: radautocompletebox-features-keyboard-support}}
+slug: radautocompletebox-features-keyboard-support
 tags: keyboard,support
 publish: True
-ordinal: 4
+position: 4
 ---
 
 

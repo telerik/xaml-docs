@@ -2,10 +2,10 @@
 title: SDK Examples
 page_title: SDK Examples
 description: SDK Examples
-{{slug: radautocompletebox-sdk-examples}}
+slug: radautocompletebox-sdk-examples
 tags: sdk,examples
 publish: True
-ordinal: 2
+position: 2
 ---
 
 

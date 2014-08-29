@@ -5,12 +5,17 @@ site_name: WPF
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
-    getting-started:
-        position: 2
-        title: Getting Started
-    "*foo":
-        title: Foo
-
+    radautocompletebox:
+        title: RadAutoCompleteBox
+    "*features":
+        title: Features		
+        position: 4		
+    "*populating-with-data":
+        title: Populating with Data
+        position: 5		
+    "*styles-and-templates":
+        title: "Styles and Templates"	
+        position: 6
 ## The application virtual path
 baseurl: "/devtools/wpf"
 

@@ -2,10 +2,10 @@
 title: Events
 page_title: Events
 description: Events
-{{slug: radautocompletebox-events}}
+slug: radautocompletebox-events
 tags: events
 publish: True
-ordinal: 6
+position: 6
 ---
 
 

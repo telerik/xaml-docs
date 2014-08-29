@@ -2,10 +2,10 @@
 title: Key Properties
 page_title: Key Properties
 description: Key Properties
-{{slug: radautocompletebox-features-key-properties}}
+slug: radautocompletebox-features-key-properties
 tags: key,properties
 publish: True
-ordinal: 0
+position: 0
 ---
 
 

@@ -2,10 +2,10 @@
 title: Getting Started
 page_title: Getting Started
 description: Getting Started
-{{slug: radautocompletebox-getting-started}}
+slug: radautocompletebox-getting-started
 tags: getting,started
 publish: True
-ordinal: 1
+position: 1
 ---
 
 

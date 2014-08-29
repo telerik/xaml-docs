@@ -2,10 +2,10 @@
 title: Highlight Behavior
 page_title: Highlight Behavior
 description: Highlight Behavior
-{{slug: radautocompletebox-features-highlightbehavior}}
+slug: radautocompletebox-features-highlightbehavior
 tags: highlight,behavior
 publish: True
-ordinal: 3
+position: 3
 ---
 
 

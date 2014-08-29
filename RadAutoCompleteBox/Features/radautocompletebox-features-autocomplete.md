@@ -2,10 +2,10 @@
 title: AutoComplete
 page_title: AutoComplete
 description: AutoComplete
-{{slug: radautocompletebox-features-autocomplete}}
+slug: radautocompletebox-features-autocomplete
 tags: autocomplete
 publish: True
-ordinal: 1
+position: 1
 ---
 
 

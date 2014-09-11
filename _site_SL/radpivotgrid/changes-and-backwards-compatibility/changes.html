@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Changes</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Changes">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/changes-and-backwards-compatibility/changes.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/changes-and-backwards-compatibility/changes">changes-and-backwards-compatibility</a></li><li>Changes</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="changes"><a href="#changes">Changes</a></h1>
+
+<p>In this article you can find out the history of the changes we've made in <strong>RadPivotGrid</strong> and <strong>RadPivotFieldList</strong>.</p>
+
+<h2 id="latest-release-notes"><a href="#latest-release-notes">Latest Release Notes</a></h2>
+
+<p>You can find out the latest release notes<br>
+                    <a href="http://www.telerik.com/products/silverlight/whats-new/release-history.aspx">here</a>.</p>
+
+<h2 id="q3-2013"><a href="#q3-2013">Q3 2013</a></h2>
+
+<h3 id="whats-new"><a href="#whats-new">What's new</a></h3>
+
+<ul>
+<li><p>Implement Calculated Items for LocalDataSourceProvider</p></li>
+<li><p>Implement Calculated Fields for LocalDataSourceProvider</p></li>
+</ul>
+
+<h3 id="whats-fixed"><a href="#whats-fixed">What's fixed</a></h3>
+
+<ul>
+<li><p>Exception is thrown when a calculated field is added that has RequiredField which is not part of the data source</p></li>
+<li><p>Exception is thrown when some report filters are applied</p></li>
+<li><p>RadPivotGrid doesn't show data if the Cube doesn't support KPIs</p></li>
+<li><p>Using Is Between/Is Not Between label filters - when typing in the textboxes focus is lost on every keystroke</p></li>
+<li><p>ArgumentNullException is thrown when checking RadPivotGrid's IsBusy property in Silverlight</p></li>
+</ul>
+
+<h2 id="q2-2013"><a href="#q2-2013">Q2 2013</a></h2>
+
+<h3 id="whats-new"><a href="#whats-new">What's new</a></h3>
+
+<ul>
+<li><p>Added new steps for DateTimeGroupDescription and a way to implement custom steps.</p></li>
+<li><p>Added UI Dialog to set the step of DateTimeGroupDescription.</p></li>
+<li><p>Added support for DateTimeOffset data.</p></li>
+<li><p>Added German and Turkish localization languages.</p></li>
+<li><p>ItemsSource of LocalDataSourceProvider is a DependencyProperty.</p></li>
+<li><p>Added RowGroupsExpandBehavior/ColumnGroupsExpandBehavior to control initial expand/collapse state.</p></li>
+<li><p>PivotFieldList dialogs respond to Escape and Enter keys.</p></li>
+<li><p>Added a setting to query additional properties in XmlaConnectionSettings (for example to use specific language from OLAP Cube).</p></li>
+<li><p>Added serialization support.</p></li>
+<li><p>Implemented Label Filters for OLAP.</p></li>
+<li><p>Added IntelliSense support at design time for the AggregateFunction properties of the LocalAggregateDescriptions.</p></li>
+</ul>
+
+<h3 id="whats-fixed"><a href="#whats-fixed">What's fixed</a></h3>
+
+<ul>
+<li><p>XAML Binding errors.</p></li>
+<li><p>Label Filter is not applied on DateTimeGroupDescriptions.</p></li>
+<li><p>Sorting by Aggregates is not working properly when Aggregate values contain empty values.</p></li>
+<li><p>OLAP: Layout issue with hierarchy – overlapping text.</p></li>
+<li><p>SelectItems Report Filter dialog throws exception when a property has null or DBNull value.</p></li>
+<li><p>RowHeaderStyle/RowHeaderTemplate is applied on both rows and columns. ColumnHeaderStyle/ColumnHeaderTemplate is not applied at all.</p></li>
+<li><p>Collapsing group through code does not change the UI of this group ("-" and "+" signs are not updated).</p></li>
+<li><p>Exception is thrown when two aggregates are selected, all rows and columns are collapsed and the theme is changed.</p></li>
+<li><p>Hierarchy with only one level and isAggregatable=false can't be used in Report Filter.</p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

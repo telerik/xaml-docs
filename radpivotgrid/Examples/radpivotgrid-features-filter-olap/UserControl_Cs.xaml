@@ -1,0 +1,205 @@
+#region radpivotgrid-features-filter-olap_1
+<pivot:XmlaGroupDescription MemberName="[Promotion].[Promotion Category]">
+    <pivot:XmlaGroupDescription.GroupFilter>
+        <pivot:OlapLabelGroupFilter>
+            <pivot:OlapLabelGroupFilter.Condition>
+                <pivot:OlapTextCondition Comparison="Contains" Pattern="C"/>
+            </pivot:OlapLabelGroupFilter.Condition>
+        </pivot:OlapLabelGroupFilter>
+    </pivot:XmlaGroupDescription.GroupFilter>
+</pivot:XmlaGroupDescription>
+<pivot:XmlaGroupDescription MemberName="[Product].[Category]">
+    <pivot:XmlaGroupDescription.GroupFilter>
+        <pivot:OlapLabelGroupFilter>
+            <pivot:OlapLabelGroupFilter.Condition>                                
+                <!--[Product].[Category].&[3] = Clothing-->
+                <pivot:OlapComparisonCondition Condition="Equals">
+                    <pivot:OlapComparisonCondition.Than>
+                        <sys:String>[Product].[Category].&amp;[3]</sys:String>
+                    </pivot:OlapComparisonCondition.Than>
+                </pivot:OlapComparisonCondition>
+            </pivot:OlapLabelGroupFilter.Condition>
+        </pivot:OlapLabelGroupFilter>
+    </pivot:XmlaGroupDescription.GroupFilter>
+</pivot:XmlaGroupDescription>
+#endregion
+
+#region radpivotgrid-features-filter-olap_2
+<pivot:AdomdGroupDescription MemberName="[Promotion].[Promotion Category]">
+    <pivot:AdomdGroupDescription.GroupFilter>
+        <pivot:OlapLabelGroupFilter>
+            <pivot:OlapLabelGroupFilter.Condition>
+                <pivot:OlapTextCondition Comparison="Contains" Pattern="C"/>
+            </pivot:OlapLabelGroupFilter.Condition>
+        </pivot:OlapLabelGroupFilter>
+    </pivot:AdomdGroupDescription.GroupFilter>
+</pivot:AdomdGroupDescription>
+<pivot:AdomdGroupDescription MemberName="[Product].[Category]">
+    <pivot:AdomdGroupDescription.GroupFilter>
+        <pivot:OlapLabelGroupFilter>
+            <pivot:OlapLabelGroupFilter.Condition>
+                <!--[Product].[Category].&[3] = Clothing-->
+                <pivot:OlapComparisonCondition Condition="Equals">
+                    <pivot:OlapComparisonCondition.Than>
+                        <sys:String>[Product].[Category].&amp;[3]</sys:String>
+                    </pivot:OlapComparisonCondition.Than>
+                </pivot:OlapComparisonCondition>
+            </pivot:OlapLabelGroupFilter.Condition>
+        </pivot:OlapLabelGroupFilter>
+    </pivot:AdomdGroupDescription.GroupFilter>
+</pivot:AdomdGroupDescription>
+#endregion
+
+#region radpivotgrid-features-filter-olap_3
+<pivot:XmlaGroupDescription MemberName="[Promotion].[Promotion Category]">
+    <pivot:XmlaGroupDescription.GroupFilter>
+        <pivot:OlapValueGroupFilter AggregateIndex="1">
+            <pivot:OlapValueGroupFilter.Condition>
+                <pivot:OlapIntervalCondition Condition="IsBetween" From="1000" To="5000"/>
+            </pivot:OlapValueGroupFilter.Condition>
+        </pivot:OlapValueGroupFilter>
+    </pivot:XmlaGroupDescription.GroupFilter>
+</pivot:XmlaGroupDescription>
+<pivot:XmlaGroupDescription MemberName="[Product].[Category]">
+    <pivot:XmlaGroupDescription.GroupFilter>
+        <pivot:OlapValueGroupFilter AggregateIndex="0">
+            <pivot:OlapValueGroupFilter.Condition>
+                <pivot:OlapComparisonCondition Condition="IsGreaterThan" Than="50000"/>
+            </pivot:OlapValueGroupFilter.Condition>
+        </pivot:OlapValueGroupFilter>
+    </pivot:XmlaGroupDescription.GroupFilter>
+</pivot:XmlaGroupDescription>
+#endregion
+
+#region radpivotgrid-features-filter-olap_4
+<pivot:AdomdGroupDescription MemberName="[Promotion].[Promotion Category]">
+    <pivot:AdomdGroupDescription.GroupFilter>
+        <pivot:OlapValueGroupFilter AggregateIndex="1">
+            <pivot:OlapValueGroupFilter.Condition>
+                <pivot:OlapIntervalCondition Condition="IsBetween" From="1000" To="5000"/>
+            </pivot:OlapValueGroupFilter.Condition>
+        </pivot:OlapValueGroupFilter>
+    </pivot:AdomdGroupDescription.GroupFilter>
+</pivot:AdomdGroupDescription>
+<pivot:AdomdGroupDescription MemberName="[Product].[Category]">
+    <pivot:AdomdGroupDescription.GroupFilter>
+        <pivot:OlapValueGroupFilter AggregateIndex="0">
+            <pivot:OlapValueGroupFilter.Condition>
+                <pivot:OlapComparisonCondition Condition="IsGreaterThan" Than="50000"/>
+            </pivot:OlapValueGroupFilter.Condition>
+        </pivot:OlapValueGroupFilter>
+    </pivot:AdomdGroupDescription.GroupFilter>
+</pivot:AdomdGroupDescription>
+#endregion
+
+#region radpivotgrid-features-filter-olap_5
+<pivot:XmlaGroupDescription MemberName="[Promotion].[Promotions]">
+    <pivot:XmlaGroupDescription.Levels>
+        <pivot:XmlaLevelGroupDescription MemberName="[Promotion].[Promotions].[Category]">
+            <pivot:XmlaLevelGroupDescription.GroupFilter>
+                <pivot:OlapLabelGroupFilter>
+                    <pivot:OlapLabelGroupFilter.Condition>
+                        <pivot:OlapTextCondition Comparison="Contains" Pattern="E"/>
+                    </pivot:OlapLabelGroupFilter.Condition>
+                </pivot:OlapLabelGroupFilter>
+            </pivot:XmlaLevelGroupDescription.GroupFilter>
+        </pivot:XmlaLevelGroupDescription>
+
+        <pivot:XmlaLevelGroupDescription MemberName="[Promotion].[Promotions].[Type]">
+            <pivot:XmlaLevelGroupDescription.GroupFilter>
+                <pivot:OlapLabelGroupFilter>
+                    <pivot:OlapLabelGroupFilter.Condition>
+                        <pivot:OlapComparisonCondition Condition="Equals">
+                            <pivot:OlapComparisonCondition.Than>
+                                <sys:String>[Promotion].[Promotions].[Category].&amp;[Reseller].&amp;[Excess Inventory]</sys:String>
+                            </pivot:OlapComparisonCondition.Than>
+                        </pivot:OlapComparisonCondition>
+                    </pivot:OlapLabelGroupFilter.Condition>
+                </pivot:OlapLabelGroupFilter>
+            </pivot:XmlaLevelGroupDescription.GroupFilter>
+        </pivot:XmlaLevelGroupDescription>
+    </pivot:XmlaGroupDescription.Levels>
+</pivot:XmlaGroupDescription>
+#endregion
+
+#region radpivotgrid-features-filter-olap_6
+<pivot:AdomdGroupDescription MemberName="[Promotion].[Promotions]">
+    <pivot:AdomdGroupDescription.Levels>
+        <pivot:AdomdLevelGroupDescription MemberName="[Promotion].[Promotions].[Category]">
+            <pivot:AdomdLevelGroupDescription.GroupFilter>
+                <pivot:OlapLabelGroupFilter>
+                    <pivot:OlapLabelGroupFilter.Condition>
+                        <pivot:OlapTextCondition Comparison="Contains" Pattern="E"/>
+                    </pivot:OlapLabelGroupFilter.Condition>
+                </pivot:OlapLabelGroupFilter>
+            </pivot:AdomdLevelGroupDescription.GroupFilter>
+        </pivot:AdomdLevelGroupDescription>
+
+        <pivot:AdomdLevelGroupDescription MemberName="[Promotion].[Promotions].[Type]">
+            <pivot:AdomdLevelGroupDescription.GroupFilter>
+                <pivot:OlapLabelGroupFilter>
+                    <pivot:OlapLabelGroupFilter.Condition>
+                        <pivot:OlapComparisonCondition Condition="Equals">
+                            <pivot:OlapComparisonCondition.Than>
+                                <sys:String>[Promotion].[Promotions].[Category].&amp;[Reseller].&amp;[Excess Inventory]</sys:String>
+                            </pivot:OlapComparisonCondition.Than>
+                        </pivot:OlapComparisonCondition>
+                    </pivot:OlapLabelGroupFilter.Condition>
+                </pivot:OlapLabelGroupFilter>
+            </pivot:AdomdLevelGroupDescription.GroupFilter>
+        </pivot:AdomdLevelGroupDescription>
+    </pivot:AdomdGroupDescription.Levels>
+</pivot:AdomdGroupDescription>
+#endregion
+
+#region radpivotgrid-features-filter-olap_7
+<pivot:XmlaGroupDescription MemberName="[Promotion].[Promotions]">
+    <pivot:XmlaGroupDescription.Levels>
+        <pivot:XmlaLevelGroupDescription MemberName="[Promotion].[Promotions].[Category]">
+            <pivot:XmlaLevelGroupDescription.GroupFilter>
+                <pivot:OlapValueGroupFilter AggregateIndex="1">
+                    <pivot:OlapValueGroupFilter.Condition>
+                        <pivot:OlapIntervalCondition Condition="IsBetween" From="900" To="1000"/>
+                    </pivot:OlapValueGroupFilter.Condition>
+                </pivot:OlapValueGroupFilter>
+            </pivot:XmlaLevelGroupDescription.GroupFilter>
+        </pivot:XmlaLevelGroupDescription>
+
+        <pivot:XmlaLevelGroupDescription MemberName="[Promotion].[Promotions].[Type]">
+            <pivot:XmlaLevelGroupDescription.GroupFilter>
+                <pivot:OlapValueGroupFilter AggregateIndex="0">
+                    <pivot:OlapValueGroupFilter.Condition>
+                        <pivot:OlapComparisonCondition Condition="IsGreaterThan" Than="300"/>
+                    </pivot:OlapValueGroupFilter.Condition>
+                </pivot:OlapValueGroupFilter>
+            </pivot:XmlaLevelGroupDescription.GroupFilter>
+        </pivot:XmlaLevelGroupDescription>
+    </pivot:XmlaGroupDescription.Levels>
+</pivot:XmlaGroupDescription>
+#endregion
+
+#region radpivotgrid-features-filter-olap_8
+<pivot:AdomdGroupDescription MemberName="[Promotion].[Promotions]">
+    <pivot:AdomdGroupDescription.Levels>
+        <pivot:AdomdLevelGroupDescription MemberName="[Promotion].[Promotions].[Category]">
+            <pivot:AdomdLevelGroupDescription.GroupFilter>
+                <pivot:OlapValueGroupFilter AggregateIndex="1">
+                    <pivot:OlapValueGroupFilter.Condition>
+                        <pivot:OlapIntervalCondition Condition="IsBetween" From="900" To="1000"/>
+                    </pivot:OlapValueGroupFilter.Condition>
+                </pivot:OlapValueGroupFilter>
+            </pivot:AdomdLevelGroupDescription.GroupFilter>
+        </pivot:AdomdLevelGroupDescription>
+
+        <pivot:AdomdLevelGroupDescription MemberName="[Promotion].[Promotions].[Type]">
+            <pivot:AdomdLevelGroupDescription.GroupFilter>
+                <pivot:OlapValueGroupFilter AggregateIndex="0">
+                    <pivot:OlapValueGroupFilter.Condition>
+                        <pivot:OlapComparisonCondition Condition="IsGreaterThan" Than="300"/>
+                    </pivot:OlapValueGroupFilter.Condition>
+                </pivot:OlapValueGroupFilter>
+            </pivot:AdomdLevelGroupDescription.GroupFilter>
+        </pivot:AdomdLevelGroupDescription>
+    </pivot:AdomdGroupDescription.Levels>
+</pivot:AdomdGroupDescription>
+#endregion

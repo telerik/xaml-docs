@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Debugging XMLA problems</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Debugging XMLA problems">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/how-to/howto-debug-olap.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/how-to/howto-set-http-access-to-sqlserver">how-to</a></li><li>Debugging XMLA problems</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="debugging-xmla-problems"><a href="#debugging-xmla-problems">Debugging XMLA problems</a></h1>
+
+<p>With <strong>RadPivotGrid</strong> you have the ability to connect to OLAP Cube through http protocol by using XmlaDataProvider. This is great but at some point you may face different errors dedicated to the specifics of <br>
+        this protocol. For example your RadPivotGrid may be empty if there are some network connectivity issues. In this article we will explain how to "debug" such situations to check <br>
+        where the problem is.</p>
+
+<h2 id="fiddler"><a href="#fiddler">Fiddler</a></h2>
+
+<p>You can use any http tracing utility, but Telerik recommends you to use <br>
+          <a href="http://www.fiddler2.com/Fiddler2/version.asp">Fiddler</a>. Fiddler is a Web Debugging Proxy which logs all HTTP(S) traffic between your computer and the Internet. <br>
+          Fiddler allows you to inspect traffic, set breakpoints, and "fiddle" with incoming or outgoing data. For our purposes we will use Fiddler to trace the traffic between our application<br>
+          and OLAP Cube. So after you have installed it it is time to run Fiddler and start debugging.</p>
+
+<h2 id="fiddler-interface-and-debugging-application"><a href="#fiddler-interface-and-debugging-application">Fiddler Interface and debugging application</a></h2>
+
+<p>After you have started Fiddler it is time to run your application and connect to OLAP Cube. Fiddler automatically tracess all traffic and when your application is started you should see something simillar to this:<br>
+        <img src="images/RadPivotGrid_HowTo_DebugOlap_01.png" alt="Rad Pivot Grid How To Debug Olap 01"></p>
+
+<p>As you can see the protocol is HTTP. The Host is server where your OLAP Cube is deployed. The URL points to the virtual directory which is defined in your Internet Information Service (IIS). More information about<br>
+          this directory can be found in our article <a href="/devtools/silverlight/radpivotgrid/how-to/howto-set-http-access-to-sqlserver">Set Http access to OLAP Cube</a>.</p>
+
+<p>Select one of the rows on the left and lets take a look at the right part of the screen. You can see different menus and windows there. Lets go to "Inspectors" menu.</p>
+
+<blockquote>
+<p>If you cannot see "Inspectors" menu, go to View and Select "Inspectors" from there. Another option is to press F8 on your keyboard.<br>
+          <img src="images/RadPivotGrid_HowTo_DebugOlap_02.png" alt="Rad Pivot Grid How To Debug Olap 02"></p>
+</blockquote>
+
+<p>The top part of "Inspectors" shows the request that has been sent. The botton part shows the answer received from the server. As you can see you can check the whole request and response - their headers,<br>
+          Raw View, Text View, etc. Lets take a closer look at TextView option - you can see here the request that <strong>RadPivotGrid</strong> sends and what is the response.<br>
+        <img src="images/RadPivotGrid_HowTo_DebugOlap_03.png" alt="Rad Pivot Grid How To Debug Olap 03"></p>
+
+<p>If everything is working fine you should have several requests with different Request Type (blue rectangle above): MDSCHEMA_DIMENSIONS, MDSCHEMA_HIERARCHIES, MDSCHEMA_LEVELS,<br>
+          MDSCHEMA_MEASURES, MDSCHEMA_SETS, MDSCHEMA_KPIS, etc. For each of them you should receive valid response from the server.</p>
+
+<p>If you see less requests in the left side of Fiddler, most probably there is some kind of problem. How can we figure out what it is? Lets see what is happening when we have<br>
+          set incorrect "Database name" in our XmlaDataProvider:<br>
+        <img src="images/RadPivotGrid_HowTo_DebugOlap_04.png" alt="Rad Pivot Grid How To Debug Olap 04"></p>
+
+<p>As you can see there is only one request in the left panel. So lets "Inspect" it. The request seems okay (in the blue rectangle you can check the incorrect name).<br>
+          In the response you can see the "Error" tag and its value. It is pretty easy to understand that there is mistake in the Database name so when you fix it in your application<br>
+          everything should work fine.</p>
+
+<p>So if your <strong>RadPivotGrid</strong> doesn't show data from OLAP Cube, try tracing the requests and responses with Fiddler.</p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started">RadPivotGrid Getting Started</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/how-to/howto-set-http-access-to-sqlserver">Set HTTP access to SQL Server</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/populating-with-data/data-xmla">Using XmlaDataProvider</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

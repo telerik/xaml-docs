@@ -1,0 +1,19 @@
+#region radpivotgrid-features-local-calc-fields_1
+<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
+    <pivot:PropertyAggregateDescription.TotalFormat>
+        <pivot:DifferenceFrom Axis="Rows" Level="0" GroupName="Pen"></pivot:DifferenceFrom>
+    </pivot:PropertyAggregateDescription.TotalFormat>
+</pivot:PropertyAggregateDescription>
+#endregion
+
+#region radpivotgrid-features-local-calc-fields_2
+<pivot:LocalDataSourceProvider.CalculatedFields>
+    <local:CommissionCalculatedField Name="Commission" />
+</pivot:LocalDataSourceProvider.CalculatedFields>
+#endregion
+
+#region radpivotgrid-features-local-calc-fields_3
+<pivot:LocalDataSourceProvider.AggregateDescriptions>
+    <pivot:CalculatedAggregateDescription CalculatedFieldName="Commission" />
+</pivot:LocalDataSourceProvider.AggregateDescriptions>
+#endregion

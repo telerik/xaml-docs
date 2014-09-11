@@ -1,0 +1,56 @@
+#region radpivotgrid-features-queryable-group-filter_1
+<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
+    <pivot:QueryablePropertyGroupDescription.GroupFilter>
+        <pivot:LabelGroupFilter>
+            <pivot:LabelGroupFilter.Condition>
+                <pivot:TextCondition Comparison="Contains" Pattern="C"/>
+            </pivot:LabelGroupFilter.Condition>
+        </pivot:LabelGroupFilter>
+    </pivot:QueryablePropertyGroupDescription.GroupFilter>
+</pivot:QueryablePropertyGroupDescription>
+#endregion
+
+#region radpivotgrid-features-queryable-group-filter_2
+<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
+    <pivot:QueryablePropertyGroupDescription.GroupFilter>
+        <pivot:ValueGroupFilter AggregateIndex="0">
+            <pivot:ValueGroupFilter.Condition>
+                <pivot:IntervalCondition Condition="IsBetween" From="50" To="70"/>
+            </pivot:ValueGroupFilter.Condition>
+        </pivot:ValueGroupFilter>
+    </pivot:QueryablePropertyGroupDescription.GroupFilter>
+</pivot:QueryablePropertyGroupDescription>
+#endregion
+
+#region radpivotgrid-features-queryable-group-filter_3
+<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
+    <pivot:QueryablePropertyGroupDescription.GroupFilter>
+        <pivot:GroupsCountFilter AggregateIndex="0" Count="4" Selection="Top"/>
+    </pivot:QueryablePropertyGroupDescription.GroupFilter>
+</pivot:QueryablePropertyGroupDescription>
+#endregion
+
+#region radpivotgrid-features-queryable-group-filter_4
+<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
+    <pivot:QueryablePropertyGroupDescription.GroupFilter>
+        <pivot:LabelGroupFilter>
+            <pivot:LabelGroupFilter.Condition>
+                <pivot:ItemsFilterCondition>
+                    <pivot:ItemsFilterCondition.DistinctCondition>
+                        <pivot:SetCondition Comparison="Includes">
+                            <pivot:SetCondition.Items>
+                                <sys:String>Brazil</sys:String>
+                                <sys:String>Canada</sys:String>
+                                <sys:String>Denmark</sys:String>
+                            </pivot:SetCondition.Items>
+                        </pivot:SetCondition>
+                    </pivot:ItemsFilterCondition.DistinctCondition>
+                    <pivot:ItemsFilterCondition.Condition>
+                        <pivot:TextCondition Comparison="Contains" Pattern="n" />
+                    </pivot:ItemsFilterCondition.Condition>
+                </pivot:ItemsFilterCondition>
+            </pivot:LabelGroupFilter.Condition>
+        </pivot:LabelGroupFilter>
+    </pivot:QueryablePropertyGroupDescription.GroupFilter>
+</pivot:QueryablePropertyGroupDescription>
+#endregion

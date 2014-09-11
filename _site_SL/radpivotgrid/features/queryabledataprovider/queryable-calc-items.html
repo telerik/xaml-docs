@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculated Items</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Calculated Items">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/features/queryabledataprovider/queryable-calc-items.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/layouts">Features1</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/queryabledataprovider/queryable-calc-fields">queryabledataprovider</a></li><li>Calculated Items</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="calculated-items"><a href="#calculated-items">Calculated Items</a></h1>
+
+<p>A calculated item is a new item in a row or column field in which the values are the result of a custom calculation. In this case, the calculated item’s formula references one or more items in the same field.<br>
+        By using Calculated Items you are able to extend <strong>RadPivotGrid</strong> with additional items that are not part of the data source.</p>
+
+<h2 id="defining-calculated-item"><a href="#defining-calculated-item">Defining Calculated Item</a></h2>
+
+<p>With <strong>RadPivotGrid</strong> you are able to create different Groups that will be shown in Rows and Columns. But in some cases you may need to show additional items for specific group.<br>
+          In this case you may use Calculated Items. Calculated Items are added to a group description and they have access to different items from the same group. For example, lets say we want to calculate<br>
+          the average sales made by some of the salespeople, but not all of them. First we have to create a concrete class that implements the abstract <em>CalculatedItem</em> class.<br>
+          For this purpose the new class must implement GetValue method. In our scenario we'll show the average sales of four of the salespeople:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public class MenAverageSales : CalculatedItem
+{
+    protected override AggregateValue GetValue(IAggregateSummaryValues aggregateSummaryValues)
+    {
+        AggregateValue[] aggregateValues = {
+            aggregateSummaryValues.GetAggregateValue("Andrew Fuller"),
+            aggregateSummaryValues.GetAggregateValue("Michael Suyama"),
+            aggregateSummaryValues.GetAggregateValue("Robert King"),
+            aggregateSummaryValues.GetAggregateValue("Steven Buchanan")
+        };
+
+        if (aggregateValues.ContainsError())
+        {
+            return AggregateValue.ErrorAggregateValue;
+        }
+
+        double average = aggregateValues.Average(av =&gt; av.ConvertOrDefault&lt;double&gt;());
+        return new DoubleAggregateValue(average);
+    }
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Public Class MenAverageSales
+    Inherits CalculatedItem
+
+    Protected Overrides Function GetValue(ByVal aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
+        Dim aggregateValues() As AggregateValue =
+            {aggregateSummaryValues.GetAggregateValue("Andrew Fuller"), aggregateSummaryValues.GetAggregateValue("Michael Suyama"),
+            aggregateSummaryValues.GetAggregateValue("Robert King"), aggregateSummaryValues.GetAggregateValue("Steven Buchanan")}
+
+        If aggregateValues.ContainsError() Then
+            Return AggregateValue.ErrorAggregateValue
+        End If
+
+        Dim average As Double = aggregateValues.Average(Function(av) av.ConvertOrDefault(Of Double)())
+        Return New DoubleAggregateValue(average)
+    End Function
+End Class
+</code></pre>
+
+<p>As you can see the Calculated Item will show the average sales of four people. Now we just have to add it to the QueryablePropertyGroupDescription. In our case this will be the Salesperson group:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:QueryableDataProvider.ColumnGroupDescriptions&gt;
+    &lt;pivot:QueryablePropertyGroupDescription PropertyName="Salesperson"&gt;
+        &lt;pivot:QueryablePropertyGroupDescription.CalculatedItems&gt;
+            &lt;local:MenAverageSales GroupName="Average Sales (Men)" /&gt;
+        &lt;/pivot:QueryablePropertyGroupDescription.CalculatedItems&gt;
+    &lt;/pivot:QueryablePropertyGroupDescription&gt;
+&lt;/pivot:QueryableDataProvider.ColumnGroupDescriptions&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>var propertyGroupDescription = new QueryablePropertyGroupDescription();
+propertyGroupDescription.PropertyName = "Salesperson";
+var calculatedItem = new MenAverageSales();
+calculatedItem.GroupName = "Average Sales (Men)";
+propertyGroupDescription.CalculatedItems.Add(calculatedItem);
+dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription);
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim propertyGroupDescription = New QueryablePropertyGroupDescription()
+propertyGroupDescription.PropertyName = "Salesperson"
+Dim calculatedItem = New MenAverageSales()
+calculatedItem.GroupName = "Average Sales (Men)"
+propertyGroupDescription.CalculatedItems.Add(calculatedItem)
+dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription)
+</code></pre>
+
+<p><img src="images/RadPivotGrid_Features_Local_Calc_Items_01.png" alt="Rad Pivot Grid Features Local Calc Items 01"></p>
+
+<blockquote class="important"><p>If you need to add a Calculated Item of type QueryableDateTimeGroupDescription or QueryableDoubleGroupDescription you will need to pass a specific object to the GetAggregateValue()</p></blockquote>
+
+<pre><code>        method instead of just string with the group name. For the QueryableDateTimeGroupDescription you have to use the following types depending the step used in the description:
+</code></pre>
+
+<ul>
+<li><p>SecondGroup</p></li>
+<li><p>MinuteGroup</p></li>
+<li><p>HourGroup</p></li>
+<li><p>DayGroup</p></li>
+<li><p>WeekGroup</p></li>
+<li><p>MonthGroup</p></li>
+<li><p>QuarterGroup</p></li>
+<li><p>YearGroupAs for the QueryableDoubleGroupDescription you would need to use an object of type DoubleGroup.</p></li>
+</ul>
+
+<h2 id="add-calculated-items-at-runtime"><a href="#add-calculated-items-at-runtime">Add Calculated Items at runtime</a></h2>
+
+<p>Calculated items can be added only to Group Descriptions. If you are using <strong>RadPivotFieldList</strong> the users can remove<br>
+          the group for which you've added calculated items and this way the calculated items will be removed as well. Adding the same group in rows or columns will not show<br>
+          the calculated items anymore. In order to add them again you have to use <em>PrepareDescriptionForField</em><br>
+          event of QueryableDataProvider and add the calculated items to the description:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>private void QueryableDataProvider_PrepareDescriptionForField(object sender, PrepareDescriptionForFieldEventArgs e)
+{
+    if (e.DescriptionType == DataProviderDescriptionType.Group &amp;&amp; e.FieldInfo.DisplayName == "Salesperson")
+    {
+        var description = e.Description as QueryablePropertyGroupDescription;
+
+        if (description != null)
+        {
+            var calculatedItem = new MenAverageSales();
+            calculatedItem.GroupName = "Average Sales (Men)";
+            description.CalculatedItems.Add(calculatedItem);
+        }
+    }
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Private Sub QueryableDataProvider_PrepareDescriptionForField(ByVal sender As Object, ByVal e As PrepareDescriptionForFieldEventArgs)
+    If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
+        Dim description = TryCast(e.Description, QueryablePropertyGroupDescription)
+
+        If description IsNot Nothing Then
+            Dim calculatedItem = New MenAverageSales()
+            calculatedItem.GroupName = "Average Sales (Men)"
+            description.CalculatedItems.Add(calculatedItem)
+        End If
+    End If
+End Sub
+</code></pre>
+
+<h2 id="solve-order"><a href="#solve-order">Solve Order</a></h2>
+
+<p>If you have calculated items in both rows and columns group descriptions, you have to define which of them will be used for the intersected cells. That's why each Calculated Item has <em>SolveOrder</em><br>
+          property - when a cell is an intersection between two calculated items the one with higher solve order will be used.</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:QueryableDataProvider.RowGroupDescriptions&gt;
+    &lt;pivot:QueryablePropertyGroupDescription PropertyName="Country"&gt;
+        &lt;pivot:QueryablePropertyGroupDescription.CalculatedItems&gt;
+            &lt;local:CA GroupName="CA" SolveOrder="1" /&gt;
+        &lt;/pivot:QueryablePropertyGroupDescription.CalculatedItems&gt;
+    &lt;/pivot:QueryablePropertyGroupDescription&gt;
+&lt;/pivot:QueryableDataProvider.RowGroupDescriptions&gt;
+
+&lt;pivot:QueryableDataProvider.ColumnGroupDescriptions&gt;
+    &lt;pivot:QueryablePropertyGroupDescription PropertyName="Salesperson"&gt;
+        &lt;pivot:QueryablePropertyGroupDescription.CalculatedItems&gt;
+            &lt;local:MenAverageSales GroupName="Average Sales (Men)" SolveOrder="2" /&gt;
+        &lt;/pivot:QueryablePropertyGroupDescription.CalculatedItems&gt;
+    &lt;/pivot:QueryablePropertyGroupDescription&gt;
+&lt;/pivot:QueryableDataProvider.ColumnGroupDescriptions&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>var salesPersonGroupDescription = new QueryablePropertyGroupDescription();
+salesPersonGroupDescription.PropertyName = "Salesperson";
+var menAvgSalesCalculatedItem = new MenAverageSales();
+menAvgSalesCalculatedItem.GroupName = "Average Sales (Men)";
+menAvgSalesCalculatedItem.SolveOrder = 1; 
+salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem);
+
+var countryGroupDescription = new QueryablePropertyGroupDescription();
+countryGroupDescription.PropertyName = "Country";
+var caCalculatedItem = new CA();
+caCalculatedItem.GroupName = "CA";
+caCalculatedItem.SolveOrder = 2;
+countryGroupDescription.CalculatedItems.Add(caCalculatedItem);
+
+dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
+dataProvider.RowGroupDescriptions.Add(countryGroupDescription);
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim salesPersonGroupDescription = New QueryablePropertyGroupDescription()
+salesPersonGroupDescription.PropertyName = "Salesperson"
+Dim menAvgSalesCalculatedItem = New MenAverageSales()
+menAvgSalesCalculatedItem.GroupName = "Average Sales (Men)"
+menAvgSalesCalculatedItem.SolveOrder = 1
+salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem)
+
+Dim countryGroupDescription = New QueryablePropertyGroupDescription()
+countryGroupDescription.PropertyName = "Country"
+Dim caCalculatedItem = New CA()
+caCalculatedItem.GroupName = "CA"
+caCalculatedItem.SolveOrder = 2
+countryGroupDescription.CalculatedItems.Add(caCalculatedItem)
+
+dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
+dataProvider.RowGroupDescriptions.Add(countryGroupDescription)
+</code></pre>
+
+<p>Here is the result:<br>
+        <img src="images/RadPivotGrid_Features_Local_Calc_Items_02.png" alt="Rad Pivot Grid Features Local Calc Items 02"></p>
+
+<p>As you can see the intersected cell between the two calculated items has value 500 as the CA calculated item has higher solve order. If we change the solve order of Men Average Sales to a higher value,<br>
+          for example 5, here is how <strong>RadPivotGrid</strong> will look like:<br>
+        <img src="images/RadPivotGrid_Features_Local_Calc_Items_03.png" alt="Rad Pivot Grid Features Local Calc Items 03"></p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started">Getting Started</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a></p></li>
+<li><p><a href="">QueryableDataSourceProvider</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/features">Features</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

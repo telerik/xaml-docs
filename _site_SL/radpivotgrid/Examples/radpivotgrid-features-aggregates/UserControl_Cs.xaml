@@ -1,0 +1,3 @@
+#region radpivotgrid-features-aggregates_1
+<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="StdDevP" />
+#endregion

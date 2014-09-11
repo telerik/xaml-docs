@@ -1,1 +1,16 @@
+destination: _site_SL
+exclude: [README.md,Gemfile,Gemfile.lock,
+radpivotgrid/features/olap-providers/calculations-xmla.md,
+radpivotgrid/features/olap-providers/serialization-adomd.md,
+radpivotgrid/features/olap-providers/persistence-adomd.md,
+radpivotgrid/features/queryable-overview.md,
+radpivotgrid/features/queryabledataprovider/queryable-group-filtering.md,
+radpivotgrid/features/queryabledataprovider/queryable-sorting.md,
+radpivotgrid/populating-with-data/data-adomd.md,
+radpivotgrid/populating-with-data/data-queryable.md,]
+# The public documentation URL, used for sitemap.xml
+url: "http://docs.telerik.com/devtools/silverlight"
 site_name: Silverlight
+
+## The application virtual path
+baseurl: "/devtools/silverlight"

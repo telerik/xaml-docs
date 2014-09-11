@@ -2,13 +2,17 @@
 url: "http://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
-exclude: [README.md,Gemfile,Gemfile.lock]
+exclude: [README.md,Gemfile,Gemfile.lock,
+radpivotgrid/features/olap-providers/calculations-xmla.md,]
 navigation:
 ## List your directory names and order here, like this:
+
     radautocompletebox:
         title: RadAutoCompleteBox
-    "*features":
-        title: Features		
+    radpivotgrid:
+        title: RadPivotGrid
+    "radpivotgrid/features":
+        title: Features1
         position: 4		
     "*populating-with-data":
         title: Populating with Data

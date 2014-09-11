@@ -71,3 +71,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+#page-inner-content {
+    bottom: 44px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+	overflow: hidden !important;
+}

@@ -1,0 +1,51 @@
+#region radpivotgrid-features-sort_1
+<pivot:PropertyGroupDescription PropertyName="Name" SortOrder="Descending"/>
+<pivot:DoubleGroupDescription PropertyName="Price" SortOrder="Ascending"/>
+<pivot:DateTimeGroupDescription PropertyName="Date" SortOrder="Descending"/>
+#endregion
+
+#region radpivotgrid-features-sort_2
+<pivot:PropertyGroupDescription PropertyName="Name" SortOrder="Ascending">
+    <pivot:PropertyGroupDescription.GroupComparer>
+        <pivot:GrandTotalComparer AggregateIndex="0"/>
+    </pivot:PropertyGroupDescription.GroupComparer>
+</pivot:PropertyGroupDescription>
+
+<pivot:DoubleGroupDescription PropertyName="Price" SortOrder="Descending">
+    <pivot:DoubleGroupDescription.GroupComparer>
+        <pivot:GrandTotalComparer AggregateIndex="1"/>
+    </pivot:DoubleGroupDescription.GroupComparer>
+</pivot:DoubleGroupDescription>
+
+<pivot:DateTimeGroupDescription PropertyName="Date" SortOrder="Descending">
+    <pivot:DateTimeGroupDescription.GroupComparer>
+        <pivot:GrandTotalComparer AggregateIndex="0"/>
+    </pivot:DateTimeGroupDescription.GroupComparer>
+</pivot:DateTimeGroupDescription>
+#endregion
+
+#region radpivotgrid-features-sort_3
+<!--XmlaDataProvider-->
+<pivot:XmlaDataProvider.RowGroupDescriptions>
+    <pivot:XmlaGroupDescription MemberName="[Date].[Calendar]">
+        <pivot:XmlaGroupDescription.Levels>
+            <pivot:XmlaLevelGroupDescription MemberName="[Date].[Calendar].[Calendar Year]" SortOrder="Descending"/>
+        </pivot:XmlaGroupDescription.Levels>
+    </pivot:XmlaGroupDescription>
+</pivot:XmlaDataProvider.RowGroupDescriptions>
+
+<!--AdomdDataProvider-->
+<pivot:AdomdDataProvider.RowGroupDescriptions>
+    <pivot:AdomdGroupDescription MemberName="[Date].[Calendar]">
+        <pivot:AdomdGroupDescription.Levels>
+            <pivot:AdomdLevelGroupDescription MemberName="[Date].[Calendar].[Calendar Year]" SortOrder="Descending"/>
+        </pivot:AdomdGroupDescription.Levels>
+    </pivot:AdomdGroupDescription>
+</pivot:AdomdDataProvider.RowGroupDescriptions>            
+#endregion
+    
+#region radpivotgrid-features-sort_4
+<pivot:PropertyGroupDescription PropertyName="Name" SortOrder="None"/>
+<pivot:DoubleGroupDescription PropertyName="Price" SortOrder="None"/>
+<pivot:DateTimeGroupDescription PropertyName="Date" SortOrder="None"/>
+#endregion

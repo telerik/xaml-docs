@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Culture Support</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Culture Support">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/features/localdatasourceprovider/culture-support.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/layouts">Features1</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/localdatasourceprovider/aggregation-functions">localdatasourceprovider</a></li><li>Culture Support</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="culture-support"><a href="#culture-support">Culture Support</a></h1>
+
+<p>With the Q2 2014 release version of UI for Silverlight, the <strong>LocalDataSourceProvider</strong><br>
+        provides a brand new <strong>Culture</strong> support option. Now it is possible to localize the underlying data using the CurrentCulture of the user or any other Culture.<br>
+        For example, this will allow you to display the names of the Months in the desired language, use the currency symbol from the specified culture and format the values with the correct separator.</p>
+
+<h2 id="setting-localdatasourceprovider-culture"><a href="#setting-localdatasourceprovider-culture">Setting LocalDataSourceProvider Culture</a></h2>
+
+<p>You can easily apply the required culture by setting the <strong>Culture</strong> property of the <strong>LocalDataSourceProvider</strong> as shown below:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:LocalDataSourceProvider x:Key="LocalDataProvider" Culture="en-US"&gt;
+    ...
+&lt;/pivot:LocalDataSourceProvider&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>var dataProvider = new LocalDataSourceProvider { Culture = new CultureInfo("en-US") };
+</code></pre>
+
+<h4><strong>VB</strong></h4>
+
+<pre><code>Dim dataProvider = New LocalDataSourceProvider With {.Culture = New CultureInfo("en-US")}
+</code></pre>
+
+<blockquote>
+<p>By default when there isn't any Culture set the <strong>LocalDataSourceProvider</strong> will use <strong>InvariantCulture</strong> to display the data.<br>
+            In this case as a currency symbol will be displayed the one from the CurrentCulture.</p>
+</blockquote>
+
+<p>On the following screenshots you can see how setting different cultures will affect the displayed data.</p>
+
+<pre><code>        Figure 1: Culture="en-US"
+      ![Rad Pivot Grid Features Culture Support 01](images/RadPivotGrid_Features_CultureSupport_01.png)
+
+
+        Figure 2: Culture="fr-FR"
+      ![Rad Pivot Grid Features Culture Support 02](images/RadPivotGrid_Features_CultureSupport_02.png)
+
+
+        Figure 3: Without any Culture set (using the CurrentCulture for the currency symbol)
+      ![Rad Pivot Grid Features Culture Support 03](images/RadPivotGrid_Features_CultureSupport_03.png)
+</code></pre>
+
+<h2 id="changing-localdatasourceprovider-culture-at-runtime"><a href="#changing-localdatasourceprovider-culture-at-runtime">Changing LocalDataSourceProvider Culture at Runtime</a></h2>
+
+<p>If you would like to change the Culture at runtime you will need to manualy reset the ItemsSource of the <strong>LocalDataSourceProvider</strong> and set the new Culture. <br>
+          For example, if the <strong>LocalDataSourceProvider</strong> is defined in XAML you will be able to easily change the Culture as shown below:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>var provider = this.Resources["LocalDataProvider"] as LocalDataSourceProvider;
+var itemsSource = provider.ItemsSource;
+provider.ItemsSource = null;
+provider.Culture = new CultureInfo("fr-FR");
+provider.ItemsSource = itemsSource;
+</code></pre>
+
+<h4><strong>VB</strong></h4>
+
+<pre><code>Dim provider = TryCast(Me.Resources("LocalDataProvider"), LocalDataSourceProvider)
+Dim itemsSource = provider.ItemsSource
+provider.ItemsSource = Nothing
+provider.Culture = New CultureInfo("fr-FR")
+provider.ItemsSource = itemsSource
+</code></pre>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><a href="/devtools/silverlight/radpivotgrid/features/localization">Localization</a></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

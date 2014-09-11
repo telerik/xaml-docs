@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculated Fields</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Calculated Fields">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/features/localdatasourceprovider/local-calc-fields.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/layouts">Features1</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/localdatasourceprovider/aggregation-functions">localdatasourceprovider</a></li><li>Calculated Fields</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="calculated-fields"><a href="#calculated-fields">Calculated Fields</a></h1>
+
+<p>In this article you will find out how to extend <strong>RadPivotGrid's</strong> generated report by adding Calculated Fields.</p>
+
+<h2 id="calculated-fields-description"><a href="#calculated-fields-description">Calculated Fields Description</a></h2>
+
+<p>If your data analysis requires results that are not available using just the data source fields and <strong>RadPivotGrid's</strong><br>
+          built-in calculations, you can insert a calculated field that uses a custom formula to derive the results you need.<br>
+          A calculated field is a new data field in which the values are the result of a custom calculation formula. You can display the<br>
+          calculated field along with another data field or on its own. A calculated field is really a custom summary calculation, so in<br>
+          almost all cases, the calculated field references one or more fields in the source data.</p>
+
+<h2 id="define-calculated-field"><a href="#define-calculated-field">Define Calculated Field</a></h2>
+
+<p>All Calculated Fields that you have added to your LocalDataSourceProvider will be visible in <strong>RadPivotFieldList</strong>, so the user will be able to add and remove them at runtime.<br>
+          In order to add a calculated field to LocalDataSourceProvider you have to add it to its CalculatedFields collection.<br>
+          So first you have to create a concrete class that implements the abstract class <em>CalculatedField</em>. This requires the implementation of two methods - CalculatedValue and RequiredFields.<br>
+          CalculateValue is the method in which you have to define your calculation formula and create a new AggregateValue that will be shown in <strong>RadPivotGrid</strong>. <br>
+          In common scenario a Calculated Field reference one or more fields in the data source. The RequiredFields method should return IEnumerable of the required fields. That's why we have added a new class called<br>
+          RequiredField. It's purpose is to describe a field, required for a calculated field. RequiredField can be created for property from the data object or for another calculated field.<br>
+          Name property of CalculatedField class identifies its unique name that will be shown in the UI. </p>
+
+<p>The first task is to decide what is the calculation formula that you want to use. For example, you can show the commission that will be paid to all salespeople. Commission will be paid only to those who have more sold for more <br>
+          than $15 000. The price of the sold items is kept by the ExtendedPrice property from the source. So the new class will look like this:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public class CommissionCalculatedField : CalculatedField
+{
+    private RequiredField extendPriceField;
+
+    public CommissionCalculatedField()
+    {
+        this.Name = "Commission";
+        this.extendPriceField = RequiredField.ForProperty("ExtendedPrice");
+    }
+
+    protected override IEnumerable&lt;RequiredField&gt; RequiredFields()
+    {
+        yield return this.extendPriceField;
+    }
+
+    protected override AggregateValue CalculateValue(IAggregateValues aggregateValues)
+    {
+        var aggregateValue = aggregateValues.GetAggregateValue(this.extendPriceField);
+        if (aggregateValue.IsError())
+        {
+            return aggregateValue;
+        }
+
+        double extendedPrice = aggregateValue.ConvertOrDefault&lt;double&gt;();
+        if (extendedPrice &gt; 15000)
+        {
+            return new DoubleAggregateValue(extendedPrice * 0.1);
+        }
+
+        return null;
+    }
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Public Class CommissionCalculatedField
+    Inherits CalculatedField
+
+    Private extendPriceField As RequiredField
+
+    Public Sub New()
+        Me.Name = "Commission"
+        Me.extendPriceField = RequiredField.ForProperty("ExtendedPrice")
+    End Sub
+
+    Protected Overrides Iterator Function RequiredFields() As IEnumerable(Of RequiredField)
+        Yield Me.extendPriceField
+    End Function
+
+    Protected Overrides Function CalculateValue(ByVal aggregateValues As IAggregateValues) As AggregateValue
+        Dim aggregateValue = aggregateValues.GetAggregateValue(Me.extendPriceField)
+        If aggregateValue.IsError() Then
+            Return aggregateValue
+        End If
+
+        Dim extendedPrice As Double = aggregateValue.ConvertOrDefault(Of Double)()
+        If extendedPrice &gt; 15000 Then
+            Return New DoubleAggregateValue(extendedPrice * 0.1)
+        End If
+
+        Return Nothing
+    End Function
+</code></pre>
+
+<p>Now it is time to add a new instance of this class to the CalculatedFields collection of LocalDataSourceProvider:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:LocalDataSourceProvider.CalculatedFields&gt;
+    &lt;local:CommissionCalculatedField Name="Commission" /&gt;
+&lt;/pivot:LocalDataSourceProvider.CalculatedFields&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>var calculatedField = new CommissionCalculatedField();
+calculatedField.Name = "Commission";
+dataProvider.CalculatedFields.Add(calculatedField);
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim calculatedField = New CommissionCalculatedField()
+calculatedField.Name = "Commission"
+dataProvider.CalculatedFields.Add(calculatedField)
+</code></pre>
+
+<blockquote class="important"><p>If you add caculated fields in code behind, you have to set the ItemsSource of LocalDataSourceProvider after you have added all calculated fields or to wrap the code between <em>BeginInit() - EndInit()</em> methods (or inside <em>using DeferRefresh() { ... } section</em> ).</p></blockquote>
+          
+
+<p>This way the Commission field will be visible in a special folder inside <strong>RadPivotFieldList</strong> called Calculated Fields.<br>
+        <img src="images/RadPivotGrid_Features_Local_Calc_Fields_01.png" alt="Rad Pivot Grid Features Local Calc Fields 01"></p>
+
+<p>In order to use the calculated field in the generated report, you have to add it to LocalDataSourceProvider's AggregateDescriptions collection:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:LocalDataSourceProvider.AggregateDescriptions&gt;
+    &lt;pivot:CalculatedAggregateDescription CalculatedFieldName="Commission" /&gt;
+&lt;/pivot:LocalDataSourceProvider.AggregateDescriptions&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>var calculatedAggregate = new CalculatedAggregateDescription();
+calculatedAggregate.CalculatedFieldName = "Commission";
+dataProvider.AggregateDescriptions.Add(calculatedAggregate);
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim calculatedAggregate = New CalculatedAggregateDescription()
+calculatedAggregate.CalculatedFieldName = "Commission"
+dataProvider.AggregateDescriptions.Add(calculatedAggregate)
+</code></pre>
+
+<p>The result will look like this:<br>
+        <img src="images/RadPivotGrid_Features_Local_Calc_Fields_02.png" alt="Rad Pivot Grid Features Local Calc Fields 02"></p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started">Getting Started</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/populating-with-data/data-localdatasource">LocalDataSourceProvider</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/features">Features</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>QuickStyle</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="QuickStyle">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/styles-and-templates/quickstyles.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/styles-and-templates/templating-cells">styles-and-templates</a></li><li>QuickStyle</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="quickstyle"><a href="#quickstyle">QuickStyle</a></h1>
+
+<p><strong>RadPivotGrid</strong> provides easy styling method out of the box called <strong>QuickStyle</strong>.<br>
+        By using a custom <strong>QuickStyle</strong> you can achieve a totally different visual representation with very little effort.<br>
+        This article will you help you to get familiar with the <strong>QuickStyle</strong> and its customization potential.</p>
+
+<h2 id="quickstyle-properties"><a href="#quickstyle-properties">QuickStyle Properties</a></h2>
+
+<p>The <strong>QuickStyle</strong> is a property of <strong>RadPivotGrid</strong> that accepts object of type <strong>QuickStyle</strong>.<br>
+          The <strong>QuickStyle</strong> object contains many properties which affect different parts of <strong>RadPivotGrid</strong>.<br>
+          For example you could easily modify only the background of the header rows or change the altering colors of the columns using a custom <strong>QuickStyle</strong>.<br>
+          Each of the <strong>QuickStyle</strong> properties accepts objects of type <strong>ElementProperties</strong> or <strong>AlternationElementProperties</strong> that should be<br>
+          configured as required. You can find below a list with all of the available <strong>QuickStyle</strong> properties and their usage:</p>
+
+<table>
+<th></th>
+<tr>
+<td>
+
+<b>QuickStyle Property</b>
+</td>
+<td>
+
+<b>Usage</b>
+</td>
+</tr>
+<tr>
+<td>
+
+<i>HeaderColumn</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects the header columns at the left side of <b>RadPivotGrid</b>.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>HeaderRow</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects the header rows at the top of <b>RadPivotGrid</b>.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>HeaderCell</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects the header cell at the very top left side of <b>RadPivotGrid</b>.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>RowSubgroups</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects the sub groups of each row.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>ColumnSubgroups</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects the sub groups of each column.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>GrandTotalRow</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects the grand total row at the very bottom of <b>RadPivotGrid</b>.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>GrandTotalColumn</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects the grand total column at the very right side of <b>RadPivotGrid</b>.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>SubtotalRows</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects each of the subtotal rows.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>SubtotalColumns</i>
+</td>
+<td>
+
+Accepts object of type <b>ElementProperties</b>, affects each of the subtotal columns.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>ColumnFirstAlternationPattern</i>
+</td>
+<td>
+
+Accepts object of type <b>AlternationElementProperties</b>, defines the first alternation pattern of the columns.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>ColumnSecondAlternationPattern</i>
+</td>
+<td>
+
+Accepts object of type <b>AlternationElementProperties</b>, defines the second alternation pattern of the columns.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>RowFirstAlternationPattern</i>
+</td>
+<td>
+
+Accepts object of type <b>AlternationElementProperties</b>, defines the first alternation pattern of the rows.
+              </td>
+</tr>
+<tr>
+<td>
+
+<i>RowSecondAlternationPattern</i>
+</td>
+<td>
+
+Accepts object of type <b>AlternationElementProperties</b>, defines the second alternation pattern of the rows.
+              </td>
+</tr>
+</table>
+
+<p>On <strong>Figure 1</strong> you can see the parts of <strong>RadPivotGrid</strong> that can be separately styled using <strong>QuickStyle</strong>.</p>
+
+<pre><code>        Figure 1: QuickStyle styling options
+      ![Rad Pivot Grid Styles And Templates-Quick Styles 01](images/RadPivotGrid_Styles_And_Templates_QuickStyles_01.png)
+</code></pre>
+
+<blockquote>
+<p>Note that each of the <strong>QuickStyle</strong> properties has a specific priority. When same cell is styled through a few properties,<br>
+            the style with higher priority will be placed on the top and will be the visible one.</p>
+</blockquote>
+
+<p><strong>RadPivotGrid</strong> relays on the <strong>QuickStyle</strong> in order to get visualized correctly. When applying a custom <strong>QuickStyle</strong><br>
+          it is highly recommended that the default one is extracted from the theme, modified as desired and applied afterwards.<br>
+          For example, you can see below the default <strong>QuickStyle</strong> of <strong>RadPivotGrid</strong> for Office Black Theme:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:QuickStyle x:Key="PivotGridQuickStyle"&gt;
+    &lt;pivot:QuickStyle.HeaderRow&gt;
+        &lt;pivot:ElementProperties BorderThickness="1" BorderBrush="{StaticResource CellLines}"/&gt;
+    &lt;/pivot:QuickStyle.HeaderRow&gt;
+    &lt;pivot:QuickStyle.HeaderColumn&gt;
+        &lt;pivot:ElementProperties BorderThickness="1" BorderBrush="{StaticResource CellLines}"/&gt;
+    &lt;/pivot:QuickStyle.HeaderColumn&gt;
+    &lt;pivot:QuickStyle.HeaderCell&gt;
+        &lt;pivot:ElementProperties Background="{StaticResource HeaderCellFill}" BorderThickness="1" BorderBrush="{StaticResource CellLines}"/&gt;
+    &lt;/pivot:QuickStyle.HeaderCell&gt;
+    &lt;pivot:QuickStyle.RowSubgroups&gt;
+        &lt;pivot:ElementProperties
+                FontWeight="Bold"
+                Background="{StaticResource SubHeadersFill}"
+                BorderThickness="1"
+                BorderBrush="{StaticResource CellLines}"
+                Foreground="{StaticResource CellsForeground}"/&gt;
+    &lt;/pivot:QuickStyle.RowSubgroups&gt;
+    &lt;pivot:QuickStyle.ColumnSubgroups&gt;
+        &lt;pivot:ElementProperties
+                FontWeight="Bold"
+                Background="{StaticResource SubHeadersFill}"
+                BorderThickness="1"
+                BorderBrush="{StaticResource CellLines}"
+                Foreground="{StaticResource CellsForeground}"/&gt;
+    &lt;/pivot:QuickStyle.ColumnSubgroups&gt;
+    &lt;pivot:QuickStyle.ColumnFirstAlternationPattern&gt;
+        &lt;pivot:AlternationElementProperties AlternationCount="1" BorderThickness="1" 
+                                            BorderBrush="{StaticResource CellLines}" 
+                                            Foreground="{StaticResource CellsForeground}" /&gt;
+    &lt;/pivot:QuickStyle.ColumnFirstAlternationPattern&gt;
+    &lt;pivot:QuickStyle.ColumnSecondAlternationPattern&gt;
+        &lt;pivot:AlternationElementProperties AlternationCount="1" BorderThickness="1" 
+                                            BorderBrush="{StaticResource CellLines}" 
+                                            Foreground="{StaticResource CellsForeground}" /&gt;
+    &lt;/pivot:QuickStyle.ColumnSecondAlternationPattern&gt;
+    &lt;pivot:QuickStyle.RowFirstAlternationPattern&gt;
+        &lt;pivot:AlternationElementProperties AlternationCount="1" BorderThickness="1" 
+                                            BorderBrush="{StaticResource CellLines}" 
+                                            Foreground="{StaticResource CellsForeground}" /&gt;
+    &lt;/pivot:QuickStyle.RowFirstAlternationPattern&gt;
+    &lt;pivot:QuickStyle.RowSecondAlternationPattern&gt;
+        &lt;pivot:AlternationElementProperties AlternationCount="1" BorderThickness="1" 
+                                            BorderBrush="{StaticResource CellLines}" 
+                                            Foreground="{StaticResource CellsForeground}" /&gt;
+    &lt;/pivot:QuickStyle.RowSecondAlternationPattern&gt;
+    &lt;pivot:QuickStyle.SubtotalRows&gt;
+        &lt;pivot:ElementProperties
+                FontWeight="Bold"
+                BorderThickness="1"
+                BorderBrush="{StaticResource CellLines}"
+                Background="{StaticResource RowSubTotalsFill}"
+                Foreground="{StaticResource CellsForeground}"/&gt;
+    &lt;/pivot:QuickStyle.SubtotalRows&gt;
+    &lt;pivot:QuickStyle.SubtotalColumns&gt;
+        &lt;pivot:ElementProperties
+                FontWeight="Bold"
+                BorderThickness="1"
+                BorderBrush="{StaticResource CellLines}"
+                Background="{StaticResource ColumnSubTotalsFill}"
+                Foreground="{StaticResource CellsForeground}"/&gt;
+    &lt;/pivot:QuickStyle.SubtotalColumns&gt;
+    &lt;pivot:QuickStyle.GrandTotalRow&gt;
+        &lt;pivot:ElementProperties
+                FontWeight="Bold"
+                Background="{StaticResource GrandTotalsFill}"
+                BorderThickness="1"
+                BorderBrush="{StaticResource CellLines}"
+                Foreground="{StaticResource CellsForeground}"/&gt;
+    &lt;/pivot:QuickStyle.GrandTotalRow&gt;
+    &lt;pivot:QuickStyle.GrandTotalColumn&gt;
+        &lt;pivot:ElementProperties
+                FontWeight="Bold"
+                Background="{StaticResource GrandTotalsFill}"
+                BorderThickness="1"
+                BorderBrush="{StaticResource CellLines}"
+                Foreground="{StaticResource CellsForeground}"/&gt;
+    &lt;/pivot:QuickStyle.GrandTotalColumn&gt;
+&lt;/pivot:QuickStyle&gt;
+</code></pre>
+
+<blockquote class="important"><p>When applying a custom <strong>QuickStyle</strong> all of the properties of the default style should be included in order to have a correct appearance.</p></blockquote>
+
+<pre><code>        If there are missing properties, the corresponding elements will appear without any styling.
+</code></pre>
+
+<blockquote class="important"><p>If the <strong>QuickStyle</strong> property is set to <em>null</em> <strong>RadPivotGrid</strong> will loose all of its styling.</p></blockquote>
+          
+
+<p>Afterwards the custom <strong>QuickStyle</strong> should be applied the following way:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:RadPivotGrid x:Name="pivot" QuickStyle="{StaticResource PivotGridQuickStyle}" /&gt;
+</code></pre>
+
+<blockquote class="tip"><p>You can download a runnable sample project demonstrating how to implement a custom <strong>QuickStyle</strong> from our online SDK repository</p></blockquote>
+
+<pre><code>        [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / PivotGridQuickStyles__.
+</code></pre>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/features/layouts">Layouts</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started/started-understanding-pivot">Understanding RadPivotGrid</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

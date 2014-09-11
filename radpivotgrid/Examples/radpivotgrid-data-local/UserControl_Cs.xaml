@@ -1,0 +1,66 @@
+#region radpivotgrid-data-local_1
+<Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <Grid.Resources>
+        <pivot:LocalDataSourceProvider x:Key="LocalDataSourceProvider">
+        </pivot:LocalDataSourceProvider>
+    </Grid.Resources>
+
+    <pivot:RadPivotGrid Name="radPivotGrid1" DataProvider="{StaticResource LocalDataProvider}">
+    <pivot:RadPivotFieldList Name="radPivotFieldList1" Grid.Column="1"  DataProvider="{StaticResource LocalDataProvider}"/>
+</Grid>
+#endregion
+
+#region radpivotgrid-data-local_2
+<Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <pivot:RadPivotGrid Name="radPivotGrid1">
+        <pivot:RadPivotGrid.DataProvider>
+            <pivot:LocalDataSourceProvider>
+            </pivot:LocalDataSourceProvider>
+        </pivot:RadPivotGrid.DataProvider>
+    </pivot:RadPivotGrid>
+    <pivot:RadPivotFieldList Name="radPivotFieldList1" Grid.Column="1" >
+        <pivot:RadPivotFieldList.DataProvider>
+            <pivot:LocalDataSourceProvider>
+            </pivot:LocalDataSourceProvider>
+        </pivot:RadPivotFieldList.DataProvider>
+    </pivot:RadPivotFieldList>
+</Grid>
+#endregion
+
+#region radpivotgrid-data-local_3
+<pivot:LocalDataSourceProvider.RowGroupDescriptions>
+    <pivot:PropertyGroupDescription PropertyName="Name" />
+    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
+</pivot:LocalDataSourceProvider.RowGroupDescriptions>
+#endregion
+
+#region radpivotgrid-data-local_4
+<pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
+    <pivot:DoubleGroupDescription PropertyName="Price"/>
+</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
+#endregion
+
+#region radpivotgrid-data-local_5
+<pivot:LocalDataSourceProvider.AggregateDescriptions>
+    <pivot:PropertyAggregateDescription PropertyName="Price" StringFormat="C" AggregateFunction="Average" />
+    <pivot:PropertyAggregateDescription PropertyName="Quantity"/>
+</pivot:LocalDataSourceProvider.AggregateDescriptions>
+#endregion
+
+#region radpivotgrid-data-local_6
+<pivot:LocalDataSourceProvider.FilterDescriptions>
+    <pivot:PropertyFilterDescription PropertyName="Name">
+        <pivot:PropertyFilterDescription.Condition>
+            <pivot:TextCondition Comparison="BeginsWith" Pattern="N" />
+        </pivot:PropertyFilterDescription.Condition>
+    </pivot:PropertyFilterDescription>
+</pivot:LocalDataSourceProvider.FilterDescriptions>
+#endregion

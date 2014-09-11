@@ -1,0 +1,29 @@
+#region radpivotgrid-features-queryable-sort_1
+<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="Ascending"/>
+<pivot:QueryableDoubleGroupDescription PropertyName="Freight" SortOrder="Descending"/>
+<pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" SortOrder="Ascending"/>
+#endregion
+
+#region radpivotgrid-features-queryable-sort_2
+<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="Ascending">
+    <pivot:QueryablePropertyGroupDescription.GroupComparer>
+        <pivot:GrandTotalComparer AggregateIndex="0"/>
+    </pivot:QueryablePropertyGroupDescription.GroupComparer>
+</pivot:QueryablePropertyGroupDescription>
+<pivot:QueryableDoubleGroupDescription PropertyName="Freight" SortOrder="Descending">
+    <pivot:QueryablePropertyGroupDescription.GroupComparer>
+        <pivot:GrandTotalComparer AggregateIndex="1"/>
+    </pivot:QueryablePropertyGroupDescription.GroupComparer>
+</pivot:QueryableDoubleGroupDescription>
+<pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" SortOrder="Ascending">
+    <pivot:QueryablePropertyGroupDescription.GroupComparer>
+        <pivot:GrandTotalComparer AggregateIndex="0"/>
+    </pivot:QueryablePropertyGroupDescription.GroupComparer>
+</pivot:QueryableDateTimeGroupDescription>
+#endregion
+    
+#region radpivotgrid-features-queryable-sort_3
+<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="None"/>
+<pivot:QueryableDoubleGroupDescription PropertyName="Freight" SortOrder="None"/>
+<pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" SortOrder="None"/>
+#endregion

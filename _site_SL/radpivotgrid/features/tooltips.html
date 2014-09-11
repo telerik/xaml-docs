@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ToolTips</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="ToolTips">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/features/tooltips.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/layouts">Features1</a></li><li>ToolTips</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="tooltips"><a href="#tooltips">ToolTips</a></h1>
+
+<p><strong>RadPivotGrid</strong> shows ToolTips when you place your mouse over the cells. The ToolTip has default content, but you can set your own or disable it.<br>
+        In this article we will show you how you can do this.</p>
+
+<h2 id="default-tooltip"><a href="#default-tooltip">Default ToolTip</a></h2>
+
+<p>If you run your application and mouse over any of the cells in <strong>RadPivotGrid</strong> you will see the default ToolTip that is constructed from the information<br>
+        in the DataProvider:<br>
+        <img src="images/RadPivotGrid_Features_Tooltips_01.png" alt="Rad Pivot Grid Features Tooltips 01"></p>
+
+<p>As you can see the ToolTip shows the aggregate function that is used and on which property it is set. Also you can see the information in which row and column is the cell.</p>
+
+<p><strong>RadPivotGrid</strong> shows different ToolTips based on the position of the mouse. There are three common positions - RowHeader, ColumnHeader or Cell.<br>
+          The default ToolTip defers a little bit for these three positions. In the image below you can check the three areas of the different ToolTips.<br>
+        <img src="images/RadPivotGrid_Features_Tooltips_02.png" alt="Rad Pivot Grid Features Tooltips 02"></p>
+
+<p>If you put your mouse over the red zone (Row Headers) the ToolTip which have the following content: row header, group description from which it was created and under Row: the hierarchy in the RowGroupDescriptions<br>
+          collection where this item stands. The ToolTip for Column Headers (blue zone on image above) is almost the same, but you will Column instead of Row. Cell's ToolTip (green zone) will show the<br>
+          aggregate function that is used and on which property it is set. Also you can see the information in which row and column is the cell.<br>
+        <img src="images/RadPivotGrid_Features_Tooltips_03.png" alt="Rad Pivot Grid Features Tooltips 03"></p>
+
+<h2 id="custom-tooltips"><a href="#custom-tooltips">Custom ToolTips</a></h2>
+
+<p>You can set your own ToolTips for the three mentioned areas by using the following properties of <strong>RadPivotGrid</strong>:</p>
+
+<ul>
+<li><p><strong>RowGroupTooltipStyle</strong> - sets the style of the ToolTip that will show for RowHeaders.</p></li>
+<li><p><strong>ColumnGroupTooltipStyle</strong> - sets the style of the ToolTip that will show for ColumnHeaders.</p></li>
+<li><p><strong>CellTooltipStyle</strong> - sets the style of the ToolTip that will show for Cells.</p></li>
+</ul>
+
+<p>You can show three different ToolTips for the three different styles.</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;UserControl.Resources&gt;
+    &lt;Style x:Key="CellToolTip" TargetType="ToolTip"&gt;
+        &lt;Setter Property="ContentTemplate"&gt;
+            &lt;Setter.Value&gt;
+                &lt;DataTemplate&gt;
+                    &lt;TextBlock  Text="This is CellToolTip"/&gt;
+                &lt;/DataTemplate&gt;
+            &lt;/Setter.Value&gt;
+        &lt;/Setter&gt;
+    &lt;/Style&gt;
+
+    &lt;Style x:Key="RowToolTip" TargetType="ToolTip"&gt;
+        &lt;Setter Property="ContentTemplate"&gt;
+            &lt;Setter.Value&gt;
+                &lt;DataTemplate&gt;
+                    &lt;TextBlock  Text="This is RowToolTip"/&gt;
+                &lt;/DataTemplate&gt;
+            &lt;/Setter.Value&gt;
+        &lt;/Setter&gt;
+    &lt;/Style&gt;
+
+    &lt;Style x:Key="ColumnToolTip" TargetType="ToolTip"&gt;
+        &lt;Setter Property="ContentTemplate"&gt;
+            &lt;Setter.Value&gt;
+                &lt;DataTemplate&gt;
+                    &lt;TextBlock  Text="This is ColumnToolTip"/&gt;
+                &lt;/DataTemplate&gt;
+            &lt;/Setter.Value&gt;
+        &lt;/Setter&gt;
+    &lt;/Style&gt;
+&lt;/UserControl.Resources&gt;
+
+&lt;Grid x:Name="LayoutRoot"&gt;
+    &lt;pivot:RadPivotGrid Name="radPivotGrid1"
+                        RowGroupTooltipStyle="{StaticResource RowToolTip}"
+                        CellTooltipStyle="{StaticResource CellToolTip}"
+                        ColumnGroupTooltipStyle="{StaticResource ColumnToolTip}"&gt;
+&lt;/Grid&gt;
+</code></pre>
+
+<blockquote>
+<p>If you want to use the value of the cell in the ToolTip you should set Binding to Data property. To use the DisplayName of the cell you should set Binding to AggregateDescription.DisplayName.<br>
+            For RowGroupToolTipStyle and ColumnGroupTooltipStyle you should set Binding to GroupDescription.DisplayName property.</p>
+</blockquote>
+
+<h2 id="disable-tooltips"><a href="#disable-tooltips">Disable ToolTips</a></h2>
+
+<p>You can disable the ToolTips for each of the three groups at any time by using the properties:</p>
+
+<ul>
+<li><p><strong>RowToolTipIsEnabled</strong> - if it is set to false the ToolTip on RowHeaders will not show up.</p></li>
+<li><p><strong>ColumnToolTipIsEnabled</strong> - if it is set to false the ToolTip on ColumnHeaders will not show up.</p></li>
+<li><p><strong>CellToolTipIsEnabled</strong> - if it is set to false the ToolTip on Cells will not show up.</p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

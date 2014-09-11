@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculations</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Calculations">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/features/localdatasourceprovider/calculations.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/layouts">Features1</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/localdatasourceprovider/aggregation-functions">localdatasourceprovider</a></li><li>Calculations</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="calculations"><a href="#calculations">Calculations</a></h1>
+
+<p><strong>RadPivotGrid</strong> can apply different calculations on your data. Instead of presenting the whole Total number by using calculations you can show<br>
+        other information - for example what percentage of the GrandTotal is the value in particular cell.</p>
+
+<h2 id="calculations"><a href="#calculations">Calculations</a></h2>
+
+<p>There are several predefined calculations that you can use. To explain each of them we will use the below <strong>RadPivotGrid</strong> and we will apply the calculations<br>
+          on it to show how they will modify the view of <strong>RadPivotGrid</strong>:<br>
+        <img src="images/RadPivotGrid_Features_Calculations_01.png" alt="Rad Pivot Grid Features Calculations 01"></p>
+
+<ul>
+<li>
+<strong>DifferenceFrom</strong> - instead of showing Totals in the cells you can show how items differentiate from a particular group. In the example below we have set
+          DifferenceFrom "Pen":</li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum"&gt;
+    &lt;pivot:PropertyAggregateDescription.TotalFormat&gt;
+        &lt;pivot:DifferenceFrom Axis="Rows" Level="0" GroupName="Pen"&gt;&lt;/pivot:DifferenceFrom&gt;
+    &lt;/pivot:PropertyAggregateDescription.TotalFormat&gt;
+&lt;/pivot:PropertyAggregateDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
+aggregate.AggregateFunction = AggregateFunctions.Sum;
+aggregate.PropertyName = "Price";
+aggregate.TotalFormat = new DifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim aggregate As New PropertyAggregateDescription()
+aggregate.AggregateFunction = AggregateFunctions.Sum
+aggregate.PropertyName = "Price"
+aggregate.TotalFormat = New DifferenceFrom() With {.Axis = PivotAxis.Rows, .Level = 0, .GroupName = "Pen"}
+</code></pre>
+
+<p><img src="images/RadPivotGrid_Features_Calculations_02.png" alt="Rad Pivot Grid Features Calculations 02">You can also set Difference From Next or Difference From Previous - this way each cell will show how the value in it differentiate from the value in next/previous cell.<br>
+              For example we can set DifferenceFromNext for our Rows and here is the result:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum"&gt;
+    &lt;pivot:PropertyAggregateDescription.TotalFormat&gt;
+        &lt;pivot:DifferenceFromNext Axis="Rows" Level="0"/&gt;
+    &lt;/pivot:PropertyAggregateDescription.TotalFormat&gt;
+&lt;/pivot:PropertyAggregateDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
+aggregate.AggregateFunction = AggregateFunctions.Sum;
+aggregate.PropertyName = "Price";
+aggregate.TotalFormat = new DifferenceFromNext() { Axis = PivotAxis.Rows, Level = 0 };
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim aggregate As New PropertyAggregateDescription()
+aggregate.AggregateFunction = AggregateFunctions.Sum
+aggregate.PropertyName = "Price"
+aggregate.TotalFormat = New DifferenceFromNext() With {.Axis = PivotAxis.Rows, .Level = 0}
+</code></pre>
+
+<p><img src="images/RadPivotGrid_Features_Calculations_03.png" alt="Rad Pivot Grid Features Calculations 03"></p>
+
+<ul>
+<li>
+<strong>PercentDifferenceFrom</strong> - the logic behind this calculation is the same as DifferenceFrom, but instead the difference is calculated in percents.</li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum"&gt;
+        &lt;pivot:PropertyAggregateDescription.TotalFormat&gt;
+            &lt;pivot:PercentDifferenceFrom Axis="Rows" Level="0" GroupName="Pen"/&gt;
+        &lt;/pivot:PropertyAggregateDescription.TotalFormat&gt;
+    &lt;/pivot:PropertyAggregateDescription&gt;
+&lt;/pivot:LocalDataSourceProvider.AggregateDescriptions&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
+aggregate.AggregateFunction = AggregateFunctions.Sum;
+aggregate.PropertyName = "Price";
+aggregate.TotalFormat = new PercentDifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim aggregate As New PropertyAggregateDescription()
+aggregate.AggregateFunction = AggregateFunctions.Sum
+aggregate.PropertyName = "Price"
+aggregate.TotalFormat = New PercentDifferenceFrom() With {.Axis = PivotAxis.Rows, .Level = 0, .GroupName = "Pen"}
+</code></pre>
+
+<p><img src="images/RadPivotGrid_Features_Calculations_05.png" alt="Rad Pivot Grid Features Calculations 05">You can also set "Percent Difference From Next" or "Percent Difference From Previous" and this way the value in each cell will be the differences between its value and the value in next/previous cell, but <br>
+              calculated in percents.</p>
+
+<ul>
+<li>
+<strong>Index</strong> - calculates a weighted average by using the following formula:
+          ((value in cell) x (Grand Total)) / ((Grand Row Total) x (Grand Column Total)). If we apply Index calculation on our example here is the result:</li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum"&gt;
+    &lt;pivot:PropertyAggregateDescription.TotalFormat&gt;
+        &lt;pivot:Index/&gt;
+    &lt;/pivot:PropertyAggregateDescription.TotalFormat&gt;
+&lt;/pivot:PropertyAggregateDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
+aggregate.AggregateFunction = AggregateFunctions.Sum;
+aggregate.PropertyName = "Price";
+aggregate.TotalFormat = new Index();
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim aggregate As New PropertyAggregateDescription()
+aggregate.AggregateFunction = AggregateFunctions.Sum
+aggregate.PropertyName = "Price"
+aggregate.TotalFormat = New Index()
+</code></pre>
+
+<p><img src="images/RadPivotGrid_Features_Calculations_04.png" alt="Rad Pivot Grid Features Calculations 04"></p>
+
+<ul>
+<li><p><strong>PercentOf</strong> - values in the cells are percents of a sample - for example percent of next/previous or percent of a particular group description.</p></li>
+<li><p><strong>PercentOfGrandTotal</strong> - values in the cells are percent of the GrandTotal.</p></li>
+<li><p><strong>PercentOfColumnTotal</strong> - values in the cells are percent of the ColumnTotal.</p></li>
+<li><p><strong>PercentOfRowTotal</strong> - values in the cells are percent of the RowTotal.</p></li>
+<li><p><strong>RunningTotalIn</strong> - the value in the cell is aggregation of the value in the previous cell and the total in the current one. Last item in<br>
+          the collection holds the GrandTotal values. For example in the image below the value which stands for "Pen" in promotion "Extra Discount" is a sum of its own <br>
+          total (32.67) and the value of "Notebook" in promotion "Extra Discount" (69.10).</p></li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum"&gt;
+    &lt;pivot:PropertyAggregateDescription.TotalFormat&gt;
+        &lt;pivot:RunningTotalsIn Axis="Rows" Level="0"/&gt;
+    &lt;/pivot:PropertyAggregateDescription.TotalFormat&gt;
+&lt;/pivot:PropertyAggregateDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
+aggregate.AggregateFunction = AggregateFunctions.Sum;
+aggregate.PropertyName = "Price";
+aggregate.TotalFormat = new RunningTotalsIn() { Axis = PivotAxis.Rows, Level = 0 };
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim aggregate As New PropertyAggregateDescription()
+aggregate.AggregateFunction = AggregateFunctions.Sum
+aggregate.PropertyName = "Price"
+aggregate.TotalFormat = New RunningTotalsIn() With {.Axis = PivotAxis.Rows, .Level = 0}
+</code></pre>
+
+<p><img src="images/RadPivotGrid_Features_Calculations_06.png" alt="Rad Pivot Grid Features Calculations 06"></p>
+
+<ul>
+<li>
+<strong>PercentRunningTotalsIn</strong> - the value in each cell is accumulated from the total in it and the value in the previous cell. The result is presented as 
+          percent of the GrandTotal. GrandTotal is present in the last item in the collection with the value 100 percents.</li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum"&gt;
+    &lt;pivot:PropertyAggregateDescription.TotalFormat&gt;
+        &lt;pivot:PercentRunningTotalsIn Axis="Rows" Level="0"/&gt;
+    &lt;/pivot:PropertyAggregateDescription.TotalFormat&gt;
+&lt;/pivot:PropertyAggregateDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
+aggregate.AggregateFunction = AggregateFunctions.Sum;
+aggregate.PropertyName = "Price";
+aggregate.TotalFormat = new PercentRunningTotalsIn() { Axis = PivotAxis.Rows, Level = 0};
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim aggregate As New PropertyAggregateDescription()
+aggregate.AggregateFunction = AggregateFunctions.Sum
+aggregate.PropertyName = "Price"
+aggregate.TotalFormat = New PercentRunningTotalsIn() With {.Axis = PivotAxis.Rows, .Level = 0}
+</code></pre>
+
+<p><img src="images/RadPivotGrid_Features_Calculations_07.png" alt="Rad Pivot Grid Features Calculations 07"></p>
+
+<ul>
+<li>
+<strong>RankTotals</strong> - the value in the cell is integer representing the rank of the current total in the current collection of totals. You can set ranking to be
+          from smallest to largest or from largest to smallest.</li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum"&gt;
+    &lt;pivot:PropertyAggregateDescription.TotalFormat&gt;
+        &lt;pivot:RankTotals Axis="Rows" Level="0"/&gt;
+    &lt;/pivot:PropertyAggregateDescription.TotalFormat&gt;
+&lt;/pivot:PropertyAggregateDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
+aggregate.AggregateFunction = AggregateFunctions.Sum;
+aggregate.PropertyName = "Price";
+aggregate.TotalFormat = new RankTotals() { Axis = PivotAxis.Rows, Level = 0};
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim aggregate As New PropertyAggregateDescription()
+aggregate.AggregateFunction = AggregateFunctions.Sum
+aggregate.PropertyName = "Price"
+aggregate.TotalFormat = New RankTotals() With {.Axis = PivotAxis.Rows, .Level = 0}
+</code></pre>
+
+<p><img src="images/RadPivotGrid_Features_Calculations_08.png" alt="Rad Pivot Grid Features Calculations 08"></p>
+
+<h2 id="calculations-and-totalformats"><a href="#calculations-and-totalformats">Calculations and TotalFormats</a></h2>
+
+<p>You can change the applied calculation at runtime by using <strong>RadPivotFieldList</strong>. If you want to apply calculation at design time you should use<br>
+          TotalFormat property on PropertyAggregateDescription.</p>
+
+<p>When you set TotalFormat in your code there are several properties that you should understand:</p>
+
+<ol>
+<li><p><strong>Axis</strong> - this property defines if the calculation should be applied on the rows or on the columns.</p></li>
+<li><p><strong>Level</strong> - this property sets on which group description to apply the calculation - for example if you have three RowGroupDescriptions first one has level 0,<br>
+          second one - level 1 and the third one - level 2.</p></li>
+<li><p><strong>GroupName</strong> - this is the exact name of the group based on which the calculation will be applied. Note that this is a particular header in the rows or columns.<br>
+          For the above example we have defined "Name" as PropertyGroupDescription in RowGroupDescriptions collection. But the GroupName that has to be set when the Axis is Rows is one of the RowHeaders:<br>
+          "Pen", "Pencil" or "Notebook".</p></li>
+</ol>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum"&gt;
+    &lt;pivot:PropertyAggregateDescription.TotalFormat&gt;
+        &lt;pivot:DifferenceFrom Axis="Rows" Level="0" GroupName="Pen"&gt;&lt;/pivot:DifferenceFrom&gt;
+    &lt;/pivot:PropertyAggregateDescription.TotalFormat&gt;
+&lt;/pivot:PropertyAggregateDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
+aggregate.AggregateFunction = AggregateFunctions.Sum;
+aggregate.PropertyName = "Price";
+aggregate.TotalFormat = new DifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim aggregate As New PropertyAggregateDescription()
+aggregate.AggregateFunction = AggregateFunctions.Sum
+aggregate.PropertyName = "Price"
+aggregate.TotalFormat = New DifferenceFrom() With {.Axis = PivotAxis.Rows, .Level = 0, .GroupName = "Pen"}
+</code></pre>
+
+<p>When you want to apply/change the calculation at runtime you should use <strong>RadPivotFieldList</strong>. Just click on the aggregate description and choose one of the defined<br>
+          calculations or select "More calculation options..." option. This will open a new RadWindow where you will find all predefined calculations and you will be able to set them with just a few clicks.<br>
+        <img src="images/RadPivotGrid_Features_Calculations_09.png" alt="Rad Pivot Grid Features Calculations 09"></p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started">Getting Started</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/populating-with-data/data-localdatasource">LocalDataSourceProvider</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/features">Features</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

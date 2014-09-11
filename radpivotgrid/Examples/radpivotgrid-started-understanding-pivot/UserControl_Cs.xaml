@@ -1,0 +1,3 @@
+#region radpivotgrid-started-understanding-pivot_1
+<pivot:LocalDataSourceProvider AggregatesLevel="0" AggregatesPosition="Rows" />
+#endregion

@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Understanding RadPivotGrid</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Understanding RadPivotGrid">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/getting-started/started-understanding-pivot.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/getting-started/started-understanding-pivot">getting-started</a></li><li>Understanding RadPivotGrid</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="understanding-radpivotgrid"><a href="#understanding-radpivotgrid">Understanding RadPivotGrid</a></h1>
+
+<p>In this article we will explain the concept of <strong>RadPivotGrid</strong> and <strong>RadPivotFieldList</strong> - we will explain the basic<br>
+        terms, when you should use RadPivotGrid and when not, we will explain the idea of aggregations and calculations and how important they are, we make a comparison between<br>
+        RadPivotGrid and RadGridView to help you in your decision which of the two controls to choose.</p>
+
+<h2 id="items-source"><a href="#items-source">Items Source</a></h2>
+
+<p>This is the Items Source that we will use through the whole article to explain what is <strong>RadPivotGrid</strong> and how does it work.</p>
+
+<table>
+<th></th>
+<tr>
+<td>
+
+Name</td>
+<td>
+
+Promotion</td>
+<td>
+
+Price</td>
+<td>
+
+Quantity</td>
+</tr>
+<tr>
+<td>
+
+Pen</td>
+<td>
+
+Extra Discount</td>
+<td>
+
+10.47</td>
+<td>
+
+148</td>
+</tr>
+<tr>
+<td>
+
+Pen</td>
+<td>
+
+Extra Discount</td>
+<td>
+
+10.61</td>
+<td>
+
+122</td>
+</tr>
+<tr>
+<td>
+
+Pen</td>
+<td>
+
+Direct Mail</td>
+<td>
+
+10.82</td>
+<td>
+
+80</td>
+</tr>
+<tr>
+<td>
+
+Pen</td>
+<td>
+
+Direct Mail</td>
+<td>
+
+10.92</td>
+<td>
+
+84</td>
+</tr>
+<tr>
+<td>
+
+Pencil</td>
+<td>
+
+Extra Discount</td>
+<td>
+
+08.63</td>
+<td>
+
+80</td>
+</tr>
+<tr>
+<td>
+
+Pencil</td>
+<td>
+
+Extra Discount</td>
+<td>
+
+08.73</td>
+<td>
+
+83</td>
+</tr>
+<tr>
+<td>
+
+Pencil</td>
+<td>
+
+Direct Mail</td>
+<td>
+
+08.82</td>
+<td>
+
+100</td>
+</tr>
+<tr>
+<td>
+
+Pencil</td>
+<td>
+
+Direct Mail</td>
+<td>
+
+08.95</td>
+<td>
+
+85</td>
+</tr>
+</table>
+
+<p>In the DataProvider that we will use the definitions will be:</p>
+
+<table>
+<th></th>
+<tr>
+<td>
+
+Property Name</td>
+<td>
+
+Type Definition</td>
+<td>
+
+Collection</td>
+</tr>
+<tr>
+<td>
+
+Name</td>
+<td>
+
+PropertyGroupDescription</td>
+<td>
+
+RowGroupDescription</td>
+</tr>
+<tr>
+<td>
+
+Promotion</td>
+<td>
+
+PropertyGroupDescription</td>
+<td>
+
+ColumnGroupDescriptions</td>
+</tr>
+<tr>
+<td>
+
+Average of Price</td>
+<td>
+
+PropertyAggregateDescription</td>
+<td>
+
+AggregateDescriptions</td>
+</tr>
+<tr>
+<td>
+
+Sum of Quantity</td>
+<td>
+
+PropertyAggregateDescription</td>
+<td>
+
+AggregateDescriptions</td>
+</tr>
+</table>
+
+<h2 id="basic-terminology"><a href="#basic-terminology">Basic Terminology</a></h2>
+
+<p>Before starting with <strong>RadPivotGrid</strong> you have to take a closer look at the terms that we are using in all of the articles:</p>
+
+<ul>
+<li><p><strong>DataProvider</strong> - this is the object that holds the data for <strong>RadPivotGrid</strong> and <strong>RadPivotFieldList</strong> controls.<br>
+          There are three predefined data providers - LocalDataSourceProvider, XmlaDataProvider and AdomdDataProvider which can be used in different cases. Each <em>DataProvider</em><br>
+          has four important collections that are used by <strong>RadPivotGrid</strong> and <strong>RadPivotFieldList</strong> to visualize the data: RowGroupDescriptions,<br>
+          ColumnGroupDescriptions, AggregateDescriptions and FilterDescriptions. More information for <em>DataProvider</em> is available in our Populating with Data article.</p></li>
+<li><p><strong>Rows, RowGroupDescriptions and Row Headers</strong> - these terms are inseparable. <em>RowGroupDescriptions</em> is one of the collections in the<br>
+          <em>DataProvider</em> which is used to populate <strong>RadPivotGrid</strong> and <strong>RadPivotFieldList</strong> with data.<br>
+          For our ItemsSource <em>RowGroupDescriptions</em> can be Name, Promotion, Price and Quantity defined as PropertyGroupDescription or DoubleGroupDescription.<br>
+          <em>RowHeaders</em> are the values of the properties defined in the RowGroupDescriptions collection. For our example RowHeaders will be "Pen" and "Pencil".</p></li>
+<li><p><strong>Columns, ColumnGroupDescriptions and Column Headers</strong> - these terms are also inseparable and are following the same logic as Rows. <em>ColumnGroupDescriptions</em><br>
+          is a collection of the <em>DataProvider</em> which holds data that will show up in the Columns of <strong>RadPivotGrid</strong>. <em>Column Headers</em><br>
+          are all values of the properties added in <em>ColumnGroupDescriptions</em> collection. In our example the only property added as ColumnGroupDescription is "Promotion".<br>
+          Column Headers will be "Direct Mail" and "Extra Discount".</p></li>
+<li><p><strong>AggregateDescriptions, Aggregates and Cells</strong> - each Cell of <strong>RadPivotGrid</strong> shows data. This data is in numeric format<br>
+          and is aggregated based on some description. The aggregated value is shown in the exact location where the column and row intersect each other for a particular object.<br>
+          As we have defined Average Aggregate for Price property using PropertyAggregateDescription <strong>RadPivotGrid</strong> will calculate the average value of the Price<br>
+          for each of the GroupDescriptions. So the average price of "Pen" which is in "Promotion" "Extra Discount" will show in the exact place where these two groups intersect each other.<br>
+        <img src="images/RadPivotGrid_GettingStarted_UnderstandingPivot_01.png" alt="Rad Pivot Grid Getting Started Understanding Pivot 01">In the explanations of the above terms we used RowHeaders, ColumnHeaders and Cells. It is essential to understand what stays behind these terms.<br>
+          You can take a look at the image below which describes best these three terms:<br>
+        <img src="images/RadPivotGrid_GettingStarted_UnderstandingPivot_02.png" alt="Rad Pivot Grid Getting Started Understanding Pivot 02"></p></li>
+<li><p><strong>AggregatesLevel</strong> and <strong>AggregatesPosition</strong> - these two properties of the DataProvider are valid only when you have<br>
+          more than one aggregate in your application. As you can see in the images <strong>RadPivotGrid</strong> shows GrandTotals for each row and for each column, based on the<br>
+          aggregate function. When you have more than one aggregates instead of showing Grand Totals, RadPivotGrid visualizes Totals for each of the aggregates. The <strong>AggregatesPosition</strong><br>
+          property defines where to place these Totals - if you choose Rows(this is the default position), than the GrandTotal there will be replaced by several rows which will show the Total for each of the<br>
+          AggregatesDescriptions:<br>
+        <img src="images/RadPivotGrid_GettingStarted_UnderstandingPivot_03.png" alt="Rad Pivot Grid Getting Started Understanding Pivot 03"><strong>AggregatesLevel</strong> property can be used in combination with AggregatesPosition property. Its purpose is to define on which step of the hierarchy in the RowGroupDescription/ColumnGroupDescription<br>
+          to place the aggregate headers. For example in the image above AggregatesLevel has value 1. If we change it to 0, here is the new view of <strong>RadPivotGrid</strong>:<br>
+        <img src="images/RadPivotGrid_GettingStarted_UnderstandingPivot_04.png" alt="Rad Pivot Grid Getting Started Understanding Pivot 04">You can see how the items in red and blue rectangles have changed their positions and how the values (in green) have changed.</p></li>
+<li><p><strong>GrandTotals</strong> and <strong>SubTotals</strong> - by default <strong>RadPivotGrid</strong> shows GrandTotals and SubTotals for each of the rows/columns.<br>
+          GrandTotals show aggregated data for all groups. SubTotals appear when you have more than one item defined in your RowGroupDescriptions/ColumnGroupDescriptions. SubTotals will appear for each group which has SubGroups in the hierarchy of Group Descriptions.<br>
+        <img src="images/RadPivotGrid_GettingStarted_UnderstandingPivot_06.png" alt="Rad Pivot Grid Getting Started Understanding Pivot 06">As you can see we have two PropertyGroupDescriptions defined as RowGroupDescriptions and the first one is for property Name. Each group in <strong>RadPivotGrid</strong> has totals, but the groups on the BottomLevel (which do not<br>
+          have children) show their totals right next to them("Direct Mail" and "Extra Discount" totals are on the same row), while the TopLevelGroups("Pen" and "Pencil") can show their totals at the Top, Bottom, Inline position or even can hide them. The position depends on the used Layout<br>
+          and the value of SubTotalsPosition property.<br>
+        You can find examples demonstrating how to set the <strong>AggregatesLevel</strong> and <strong>AggregatesPosition</strong> properties below:</p></li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:LocalDataSourceProvider AggregatesLevel="0" AggregatesPosition="Rows" /&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>var dataProvider = new LocalDataSourceProvider();
+dataProvider.AggregatesLevel = 0;
+dataProvider.AggregatesPosition = PivotAxis.Rows;
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim dataProvider = New LocalDataSourceProvider()
+dataProvider.AggregatesLevel = 0
+dataProvider.AggregatesPosition = PivotAxis.Rows
+</code></pre>
+
+<ul>
+<li>
+<strong>RadPivotFieldList</strong> - a powerful control for applying modifications on the DataProvider at runtime. If you have <strong>RadPivotGrid</strong> and
+          <strong>RadPivotFieldList</strong> and they are using the same DataProvider, you can modify your pivot at runtime with <strong>RadPivotFieldList</strong>. Combination of these two controls
+          is a very powerful business intelligence tool.
+        <img src="images/RadPivotGrid_GettingStarted_UnderstandingPivot_07.png" alt="Rad Pivot Grid Getting Started Understanding Pivot 07">The red rectangle on the image shows all public properties from the DataProvider - you can use them as group descriptions or aggregate descriptions.
+          The blue area shows each of the four collections of the DataProvider (RowGroupDescriptions, ColumnGroupDescriptions, AggregateDescriptions, FilterDescriptions).
+          The green area is used to define if your changes should apply immediately (when Defer Layout Update checkbox is not checked) or when you click the Update button (you are able to do it
+          only when the checbox is checked).
+          You can use the checkboxes in the red area to add items in your collections or you can do it by using drag-drop. You can apply runtime modifications (filters, sorting, etc.) by clicking on an item
+          in a group description (Promotion for example) - this will show you menu with modifications you can use. You can do the same for the aggregates by clicking on them (Average of Price for example) and
+          modify the aggregate function that is applied or the type of calculation.
+        In "Row Labels" you can see a special group description named "Values" and a special symbol in front of it. This is indicator for the AggregatesPosition - as it is in the "Row Labels" it means,
+          that our AggregatesPosition is Rows. You can notice that it is after the "Name" group description, which indicates that the AggregatesLevel has value 1. You can easily modify these two
+          properties by dragging the "Values" to the desired place (for example if you want to set AggregatesLevel to 0, just drag "Values" to be above "Name" in "Row Labels").</li>
+</ul>
+
+<h2 id="when-to-use-radpivotgrid"><a href="#when-to-use-radpivotgrid">When to Use RadPivotGrid</a></h2>
+
+<p><strong>RadPivotGrid</strong> is very powerful control that provides different aggregation functions, calculations and grouping mechanism for your data. But how to decide if<br>
+          this control is exactly what you need? Well, here is a short list that should give you the answer of this question.</p>
+
+<p>When to use <strong>RadPivotGrid</strong>:</p>
+
+<ol>
+<li><p>You have data that needs grouping. For example you have a hundred items with ProductName = "Pen" and you want to show a single entry for them.</p></li>
+<li><p>You need aggregation. If you don't want to show only the values that you have defined, but you need to apply an aggregate function for them.</p></li>
+<li><p>You want to do some calculations - for example "Difference From", "% of GrandTotal", etc.</p></li>
+<li><p>You want to be able to modify generated report at runtime - combine <strong>RadPivotGrid</strong> with <strong>RadPivotFieldList</strong> and generate totally different reports at runtime.<br>
+        RadPivotGrid or RadGridView</p></li>
+</ol>
+
+<p>In some cases you may get confused which control to use - <strong>RadPivotGrid</strong> or <strong>RadGridView</strong>. The main difference between the two of them is the view of the data -<br>
+                if you want to show all of your items - you need <strong>RadGridView</strong>. If you want to show only grouped data and diffrent aggregates you need <strong>RadPivotGrid</strong>.</p>
+
+<blockquote class="important"><p>If you want to show your data items then use <strong>RadGridView</strong>. <strong>RadPivotGrid</strong> shows only groups and aggregates (without data items behind these groups).</p></blockquote>
+                
+
+<p>Here is <strong>RadPivotGrid</strong> with two groupings and two aggregate descriptions applied:<br>
+              <img src="images/RadPivotGrid_GettingStarted_UnderstandingPivot_01.png" alt="Rad Pivot Grid Getting Started Understanding Pivot 01"></p>
+
+<p>And here is <strong>RadGridView</strong> with the same grouping and aggregate descriptions applied:<br>
+              <img src="images/RadPivotGrid_GettingStarted_UnderstandingPivot_08.png" alt="Rad Pivot Grid Getting Started Understanding Pivot 08"></p>
+
+<p>The differences are obvious - <strong>RadPivotGrid</strong> is grouping data in Rows and Columns and shows only grouped values, while with <strong>RadGridView</strong><br>
+                you are able to expand/collapse all groups and you can see each data item.</p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started">RadPivotGrid Getting Started</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

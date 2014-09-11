@@ -1,0 +1,7 @@
+#region radpivotgrid-features-contextmenubehavior_1
+<pivot:RadPivotFieldList x:Name="radPivotFieldList">
+    <pivot:FieldListContextMenuBehavior.Behavior>
+        <local:CustomContextMenuBehavior />
+    </pivot:FieldListContextMenuBehavior.Behavior>
+</pivot:RadPivotFieldList>
+#endregion

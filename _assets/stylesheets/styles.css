@@ -54,6 +54,10 @@ a img {
 	background: url('../images/telerik_logo_sl.png') 30px center no-repeat;
 }
 
+#logo-bar-sl span {
+	display: none;
+}
+
 #logo-bar a {
     color: #fff;
 }
@@ -151,7 +155,7 @@ a img {
 }
 
 #page-breadcrumb {
-	display: none;
+	display: inline-block;
 }
 
 #page-breadcrumb ul {
@@ -168,12 +172,12 @@ a img {
     margin: 0 8px;
 }
 
-#page-top #page-search {
+#page-header #page-search {
     margin: 0;
     width: 450px;
-    position: absolute;
-    right: 0;
-    top: 10px;
+	position: absolute;
+	top: 10px;
+	right: 0px;
     background-color: transparent;
     padding: 0;
 }
@@ -202,7 +206,7 @@ a img {
     opacity: 0;
 }
 
-#page-top #page-search input.gsc-search-button {
+#page-header #page-search input.gsc-search-button {
     padding: 8px 7px 7px;
 }
 
@@ -210,8 +214,12 @@ a img {
 
 #page-nav {
     float: left;
-    width: 400px;
+    width: 20%;
     padding: 20px 0 0;
+	height: 100% !important;
+    left: 0;
+    overflow: auto;
+    position: absolute;
 }
 
 #page-tree {
@@ -389,13 +397,31 @@ a img {
 
 #page-article {
     background-color: #fff;
-    margin-left: 400px;
-    padding: 1px 85px 50px;
+    bottom: 0;
+    box-sizing: border-box;
     line-height: 1.5;
+    overflow: auto;
+    padding: 15px 1em 0 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+	width: 80%;
+}
+
+#page-article h1:before {
+    border-top: 2px solid #ebecee;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 1px;
+    position: relative;
+    top: -15px;
+    width: 100%;
+
 }
 
 #page-article h1 {
-    margin-top: 60px;
+	font-size: 2em;
 }
 
 a {
@@ -423,7 +449,7 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 h2 {
-    margin: 2em 0 0;
+    margin: 2em 0em 1em 0;
 }
 
 h3 {
@@ -612,3 +638,23 @@ h2:before {
     top: -15px;
     width: 100%;
 	position: relative;
+}
+
+footer {
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    padding: 0 1em 0 0;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+	background-color: #2a2d33;
+    color: #fff;
+}
+
+h4 {
+	color: #00b312;
+    font-size: 1.1em;
+	margin: 3px 0 0 0;
+	font-weight: normal;
+}

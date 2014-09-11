@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Overview</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Overview">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/overview.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li>Overview</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="overview"><a href="#overview">Overview</a></h1>
+
+<p><img src="images/RadPivotGrid_Overview_SL01.png" alt="Rad Pivot Grid Overview SL 01"></p>
+
+<p>Telerik <strong>RadPivotGrid</strong> is a control used to aggregate millions of records in a concise tabular format. The data can be easily grouped, filtered, sorted and manipulated to create different reports.</p>
+
+<p><img src="images/RadPivotGrid_Overview_SL2.png" alt="Rad Pivot Grid Overview SL 2"></p>
+
+<p><strong>Key features</strong> list includes:</p>
+
+<ul>
+<li><p><strong>RadPivotGrid</strong> control provides features for filtering and sorting the data, so you can work with a small part of it.</p></li>
+<li><p><strong>RadPivotGrid</strong> provides support for multiple datasources:</p></li>
+<li><p>Support for XMLA access to OLAP Cube.</p></li>
+<li><p>LocalDataSourceProvider with <em>ItemsSource</em> that implements <em>IEnumerable</em> interface.</p></li>
+<li><p>Built-in Aggregates: <em>Sum, Min, Max, Average, Count, etc.</em></p></li>
+<li><p>Grouping and showing hierarchical structure.</p></li>
+<li><p>Applying visual represenation (string formats) to the data: currency, numbers after the decimal point, etc.</p></li>
+<li><p>Parallel asynchronous data processing.</p></li>
+<li><p>Different Pivot UI Layouts:  Compact, Outline, Tabular.</p></li>
+<li><p>Built-in runtime configuration control - <a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a>.</p></li>
+<li><p>Export to different formats - xlsx, docx, pdf, HTML.</p></li>
+<li><p>Serialization of the DataProviders, so you can save the current state and load it later.</p></li>
+</ul>
+
+<p>You can check <strong>RadPivotGrid</strong> demos at:<br>
+        <a href="http://demos.telerik.com/silverlight/#PivotGrid/FirstLook">RadPivotGrid FirstLook</a></p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started">Getting Started</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/populating-with-data">Populating with Data</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

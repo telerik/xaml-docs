@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Templating Headers and Cells</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Templating Headers and Cells">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/styles-and-templates/templating-cells.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/styles-and-templates/templating-cells">styles-and-templates</a></li><li>Templating Headers and Cells</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="templating-headers-and-cells"><a href="#templating-headers-and-cells">Templating Headers and Cells</a></h1>
+
+<p><strong>RadPivotGrid</strong> provides few options to template its cells and headers out of the box. You can either apply one template to all of them using the <strong>CellTemplate</strong>,<br>
+        <strong>RowHeaderTemplate</strong> and <strong>ColumnHeaderTemplate</strong> properties of <strong>RadPivotGrid</strong>. Or you can use the <strong>CellTemplateSelector</strong>,<br>
+        <strong>RowHeaderTemplateSelector</strong> and <strong>ColumnHeaderTemplateSelector</strong> properties in order to implement custom TemplateSelector and template the headers and cells per condition.<br>
+        This article will show you how to improve the <strong>RadPivotGrid</strong> appearance by applying custom Templates and implementing custom TemplateSelectors.</p>
+
+<h2 id="using-custom-cell-and-header-templates"><a href="#using-custom-cell-and-header-templates">Using Custom Cell and Header Templates</a></h2>
+
+<p>The <strong>CellTemplate</strong>, <strong>RowHeaderTemplate</strong> and <strong>ColumnHeaderTemplate</strong> properties of <strong>RadPivotGrid</strong> will help you to easily <br>
+          apply a custom template to all of the cells or to all of the column and row headers. You would simply need to define the needed DataTemplates and apply them to <strong>RadPivotGrid</strong>. For example if <br>
+          you need to have green cells and headers with Italic FontStyle you will need to define the following templates:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;UserControl.Resources&gt;     
+    &lt;DataTemplate x:Key="CellTemplate"&gt;
+        &lt;Border BorderThickness="1 1 0 0" BorderBrush="LightGray"&gt;
+            &lt;Grid Background="LightGreen"&gt;
+                &lt;TextBlock Text="{Binding Data, Mode=OneWay}" Margin="4" VerticalAlignment="Center" HorizontalAlignment="Right"/&gt;
+            &lt;/Grid&gt;
+        &lt;/Border&gt;
+    &lt;/DataTemplate&gt;
+    &lt;DataTemplate x:Key="HeaderTemplate"&gt;
+        &lt;TextBlock Text="{Binding Data, Mode=OneWay}" FontStyle="Italic" Margin="4 0 0 0"  VerticalAlignment="Center" /&gt;
+    &lt;/DataTemplate&gt;
+&lt;/UserControl.Resources&gt;  
+</code></pre>
+
+<p>And apply them as shown below:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:RadPivotGrid CellTemplate="{StaticResource CellTemplate}" 
+                    RowHeaderTemplate="{StaticResource HeaderTemplate}" 
+                    ColumnHeaderTemplate="{StaticResource HeaderTemplate}" /&gt;
+</code></pre>
+
+<p><strong>Figure 1</strong> demonstrates the final result.</p>
+
+<pre><code>        Figure 1: Custom cell and header templates.
+      ![Rad Pivot Grid Styles And Templates Templating Cells 03](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_03.png)
+</code></pre>
+
+<h2 id="using-custom-celltemplateselector"><a href="#using-custom-celltemplateselector">Using Custom CellTemplateSelector</a></h2>
+
+<p>Implementing a custom <strong>CellTemplateSelector</strong> allows you to apply different templates per a condition. For example depending on the cell value you can change its Background<br>
+          in order to indicate lower or higher value than a certain one. To get it started you would need to create a new class inheriting from the <strong>DataTemplateSelector</strong> class and define<br>
+          the two Templates - one for the lower values and one for the higher ones. Afterwards you have to override the <strong>SelectTemplate</strong> and implement the needed custom logic. So finally the<br>
+          custom <strong>CellTemplateSelector</strong> should look the following way:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public class CellTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate RedTemplate { get; set; }
+    public DataTemplate GreenTemplate { get; set; }
+
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        var cellAggregate = item as CellAggregateValue;
+
+        if (cellAggregate != null)
+        {
+            var description = cellAggregate.Description as PropertyAggregateDescription;
+
+            if (description.PropertyName == "Net" &amp;&amp; cellAggregate.RowGroup.Type == GroupType.BottomLevel &amp;&amp; cellAggregate.ColumnGroup.Type == GroupType.BottomLevel)
+            {
+                if (Convert.ToDouble(cellAggregate.Value) &gt; 1000d)
+                {
+                    return this.GreenTemplate;
+                }
+                else
+                {
+                    return this.RedTemplate;
+                }
+            }
+        }
+
+        return base.SelectTemplate(item, container);
+    }
+}
+</code></pre>
+
+<h4><strong>VB</strong></h4>
+
+<pre><code>Public Class CellTemplateSelector
+    Inherits DataTemplateSelector
+
+    Public Property RedTemplate() As DataTemplate
+    Public Property GreenTemplate() As DataTemplate
+
+    Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+        Dim cellAggregate = TryCast(item, CellAggregateValue)
+
+        If cellAggregate IsNot Nothing Then
+            Dim description = TryCast(cellAggregate.Description, PropertyAggregateDescription)
+
+            If description.PropertyName = "Net" AndAlso cellAggregate.RowGroup.Type = GroupType.BottomLevel AndAlso cellAggregate.ColumnGroup.Type = GroupType.BottomLevel Then
+                If Convert.ToDouble(cellAggregate.Value) &gt; 1000.0R Then
+                    Return Me.GreenTemplate
+                Else
+                    Return Me.RedTemplate
+                End If
+            End If
+        End If
+
+        Return MyBase.SelectTemplate(item, container)
+    End Function
+End Class
+</code></pre>
+
+<p>Next thing to do is to define the required templates in the XAML as shown below:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;UserControl.Resources&gt;        
+    &lt;local:CellTemplateSelector x:Key="CellTemplateSelector"&gt;
+        &lt;local:CellTemplateSelector.GreenTemplate&gt;
+            &lt;DataTemplate&gt;
+                &lt;Border BorderThickness="1 1 0 0" BorderBrush="LightGray"&gt;
+                    &lt;Grid Background="LightGreen"&gt;
+                        &lt;TextBlock Text="{Binding Data, Mode=OneWay}" Margin="4" VerticalAlignment="Center" HorizontalAlignment="Right"/&gt;
+                    &lt;/Grid&gt;
+                &lt;/Border&gt;
+            &lt;/DataTemplate&gt;
+        &lt;/local:CellTemplateSelector.GreenTemplate&gt;
+        &lt;local:CellTemplateSelector.RedTemplate&gt;
+            &lt;DataTemplate&gt;
+                &lt;Border BorderThickness="1 1 0 0" BorderBrush="LightGray"&gt;
+                    &lt;Grid Background="Red"&gt;
+                        &lt;TextBlock Text="{Binding Data, Mode=OneWay}" Margin="4" VerticalAlignment="Center" HorizontalAlignment="Right"/&gt;
+                    &lt;/Grid&gt;
+                &lt;/Border&gt;
+            &lt;/DataTemplate&gt;
+        &lt;/local:CellTemplateSelector.RedTemplate&gt;
+    &lt;/local:CellTemplateSelector&gt;
+&lt;/UserControl.Resources&gt;  
+</code></pre>
+
+<p>And the last step would be to assign the <strong>CellTemplateSelector</strong> to <strong>RadPivotGrid</strong>:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:RadPivotGrid x:Name="pivotGrid" CellTemplateSelector="{StaticResource CellTemplateSelector}"/&gt;
+</code></pre>
+
+<p>You can see the final result on <strong>Figure 2</strong>.</p>
+
+<pre><code>        Figure 2: Cells with values below 1000 are colored in red and the other cells in green using CellTemplateSelector.
+      ![Rad Pivot Grid Styles And Templates Templating Cells 01](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_01.png)
+</code></pre>
+
+<blockquote class="tip"><p>You can download a runnable project of the previous example from our online SDK repository</p></blockquote>
+
+<pre><code>        [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomCellTemplate__.
+</code></pre>
+
+<h2 id="using-custom-headertemplateselectors"><a href="#using-custom-headertemplateselectors">Using Custom HeaderTemplateSelectors</a></h2>
+
+<p>By implementing a custom <strong>HeaderTemplateSelector</strong> you are able to modify the templates only of the column header cells or row header cells. In this section you will see how to add<br>
+          images in the different header cells. Firstly you will need to create custom <strong>HeaderTemplateSelector</strong> that inherits from <strong>DataTemplateSelector</strong> and define a DataTemplate<br>
+          which will be used for the Product header cells. The selector should look as shown below:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public class HeaderTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate ProductTemplate { get; set; }
+
+    public override DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
+    {
+        FrameworkElement element = container as FrameworkElement;
+        GroupData data = element.DataContext as GroupData;
+        PropertyGroupDescriptionBase pgd = data.GroupDescription as PropertyGroupDescriptionBase;
+
+        if (pgd != null &amp;&amp; pgd.PropertyName == "Product")
+        {
+            return this.ProductTemplate;
+        }
+
+        return base.SelectTemplate(item, container);
+    }
+}
+</code></pre>
+
+<h4><strong>VB</strong></h4>
+
+<pre><code>Public Class HeaderTemplateSelector
+    Inherits DataTemplateSelector
+
+    Public Property ProductTemplate() As DataTemplate
+
+    Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As System.Windows.DependencyObject) As DataTemplate
+        Dim element As FrameworkElement = TryCast(container, FrameworkElement)
+        Dim data As GroupData = TryCast(element.DataContext, GroupData)
+        Dim pgd As PropertyGroupDescriptionBase = TryCast(data.GroupDescription, PropertyGroupDescriptionBase)
+
+        If pgd IsNot Nothing AndAlso pgd.PropertyName = "Product" Then
+            Return Me.ProductTemplate
+        End If
+
+        Return MyBase.SelectTemplate(item, container)
+    End Function
+End Class
+</code></pre>
+
+<p>Next thing to do is to define the required templates in the XAML the folloing way:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;local:ProductToImageConverter x:Key="ProductToImageConverter"/&gt;        
+&lt;local:HeaderTemplateSelector x:Key="HeaderTemplateSelector"&gt;
+    &lt;local:HeaderTemplateSelector.ProductTemplate&gt;
+        &lt;DataTemplate&gt;
+            &lt;Grid Height="80"&gt;
+                &lt;Grid.ColumnDefinitions&gt;
+                    &lt;ColumnDefinition Width="64"/&gt;
+                    &lt;ColumnDefinition Width="85"/&gt;
+                &lt;/Grid.ColumnDefinitions&gt;
+                &lt;Image Source="{Binding Data, Converter={StaticResource ProductToImageConverter}}"  Stretch="None"/&gt;
+                &lt;TextBlock Grid.Column="1" Text="{Binding Data, Mode=OneWay}" Margin="4 0 0 0"  VerticalAlignment="Center"/&gt;
+            &lt;/Grid&gt;
+        &lt;/DataTemplate&gt;
+    &lt;/local:HeaderTemplateSelector.ProductTemplate&gt;
+&lt;/local:HeaderTemplateSelector&gt;
+</code></pre>
+
+<p>Using an IValueConverter you will be able to return the path for the needed image depending content of the header cell:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public class ProductToImageConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        string product = System.Convert.ToString(value);
+        return string.Format("/CustomHeaderTemplate;component/ProductImages/{0}.png", product);
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+</code></pre>
+
+<h4><strong>VB</strong></h4>
+
+<pre><code>Public Class ProductToImageConverter
+    Implements IValueConverter
+
+    Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
+        Dim product As String = System.Convert.ToString(value)
+        Return String.Format("/CustomHeaderTemplate;component/ProductImages/{0}.png", product)
+    End Function
+
+    Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
+        Throw New NotImplementedException()
+    End Function
+End Class
+</code></pre>
+
+<p>Finaly you will have to assing the HeaderTemplateSelector to the <strong>RowHeaderTemplateSelector</strong> and <strong>ColumnHeaderTemplateSelector</strong> properties of<br>
+          <strong>RadPivotGrid</strong>.</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:RadPivotGrid RowHeaderTemplateSelector="{StaticResource HeaderTemplateSelector}" 
+                    ColumnHeaderTemplateSelector="{StaticResource HeaderTemplateSelector}"/&gt;
+</code></pre>
+
+<p>You can see the final result on <strong>Figure 3</strong>.</p>
+
+<pre><code>        Figure 3: Header cells with different images.
+      ![Rad Pivot Grid Styles And Templates Templating Cells 02](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_02.png)
+</code></pre>
+
+<blockquote class="tip"><p>You can download a runnable project of the previous example from our online SDK repository</p></blockquote>
+
+<pre><code>        [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomHeaderTemplate__.
+</code></pre>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><a href="/devtools/silverlight/radpivotgrid/styles-and-templates/quickstyles">QuickStyle</a></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

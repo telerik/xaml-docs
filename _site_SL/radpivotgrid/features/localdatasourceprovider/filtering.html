@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Group Filtering</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Group Filtering">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/features/localdatasourceprovider/filtering.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/layouts">Features1</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/localdatasourceprovider/aggregation-functions">localdatasourceprovider</a></li><li>Group Filtering</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="group-filtering"><a href="#group-filtering">Group Filtering</a></h1>
+
+<p>In this article we will show you how to apply different filters on your RowGroupDescriptions and ColumnGroupDescriptions.</p>
+
+<h2 id="filter-types"><a href="#filter-types">Filter Types</a></h2>
+
+<p>The Data in <strong>RadPivotGrid</strong> can be filtered based on several conditions to give you a view on specific details or just to make the report shorter.<br>
+            There are three types of filters you may use on your <strong>RowGroupDescriptions</strong>/<strong>ColumnGroupDescriptions</strong>.</p>
+
+<ul>
+<li><p><strong>Label filter</strong> - filters the report based on the Header name.</p></li>
+<li><p><strong>Value filter</strong> - filters the report based on one of the aggregates used.</p></li>
+<li><p><strong>Top 10 filter</strong> - filters the report based on one of the aggregates used, but shows top/bottom results of applied filter.</p></li>
+</ul>
+
+<h2 id="label-filter"><a href="#label-filter">Label Filter</a></h2>
+
+<p>The <strong>LabelFilter</strong> is used for filtering the data based on the Headers (row or column). The LabelFilter is using one of the following conditions:</p>
+
+<ul>
+<li><p><strong>equals</strong> - showing only groups which header fully match the parameter we pass.</p></li>
+<li><p><strong>does not equal</strong> - showing all groups which header does NOT match the parameter we pass.</p></li>
+<li><p><strong>is greater than</strong> - show only groups which header is greater than the parameter we pass. Note that you should put in the whole header value which has to be matched.<br>
+                    For example if you have headers <em>"Data1"</em>, <em>"Data2"</em>, <em>"Data3"</em> and you set this condition with parameter <em>"Data1"</em> <br>
+                    you will see only <em>"Data2"</em> and <em>"Data3"</em> in <strong>RadPivotGrid</strong>, but if you set the parameter of the condition to <em>"Data"</em> <br>
+                    then all of the groups will show as all of them <em>are greater than</em> "Data" by string comparison.</p></li>
+<li><p><strong>is greater than or equal to</strong> - showing only groups which header is greater or equal of the parameter we pass.</p></li>
+<li><p><strong>is less than</strong> - show only groups which header is smaller than the parameter we pass.</p></li>
+<li><p><strong>is less than or equal to</strong> - showing only groups which header is smaller is or equal of the parameter we pass. Note that the full header text has to match<br>
+                    in order to apply the equal comparison.</p></li>
+<li><p><strong>begins with</strong> - showing only groups which header starts with the parameter we pass.</p></li>
+<li><p><strong>does not begin with</strong> - showing only groups which header does NOT start with the parameter we pass.</p></li>
+<li><p><strong>ends with</strong> - showing only groups which header ends with the parameter we pass.</p></li>
+<li><p><strong>does not end with</strong> - showing only groups which header does NOT end with the parameter we pass.</p></li>
+<li><p><strong>contains</strong> - showing only groups which header contains the parameter we pass.</p></li>
+<li><p><strong>does not contain</strong> - showing only groups which header does NOT contain the parameter we pass.</p></li>
+<li><p><strong>is between</strong> - showing only groups which header is between the two parameters we pass.</p></li>
+<li><p><strong>is not between</strong> - showing only groups which header is NOT between the two parameters we pass.</p></li>
+</ul>
+
+<blockquote class="important"><p>All conditions are case sensitive and are using string comparison between the headers of the groups and the passed parameters.</p></blockquote>
+
+<p>So if we apply a <strong>LabelFilter</strong> of <strong>RadPivotGrid</strong> from GettingStarted article with condition <em>begins with</em> and parameter<br>
+            <em>"P"</em> we will receive the following result:<img src="images/RadPivotGrid_Features_Filtering_01.png" alt="Rad Pivot Grid Features Filtering 01">Defining Label Filter</p>
+
+<p><strong>Label Filter</strong> can be defined in the <strong>XAML</strong>, code behind or even at runtime by using <strong>RadPivotFieldList</strong>.<br>
+                            To apply Label Filter you should set it to the <em>GroupFilter</em> property of the PropertyGroupDescription/DoubleGroupDescription/DateTimeGroupDescription.<br>
+                            To define Label Filter, use the <strong>LabelGroupFilter</strong> class from <strong>Telerik.Pivot.Core.Filtering</strong> namespace. Each <strong>LabelGroupFilter</strong> must have a <em>Condition</em> defined. The <em>Condition</em> can be:</p>
+
+<ul>
+<li><p><strong>ComparisonCondition</strong> - used to compare the Header with the value set in the <em>Than</em> property based on the <em>Condition</em> property.</p></li>
+<li><p><strong>IntervalCondition</strong> - used when you want to show only data that is (not) between two values set in the <em>From</em> and <em>To</em> properties based on the <em>Condition</em> property.</p></li>
+<li><p><strong>SetCondition</strong> - used when you want to show only particular items that include/does not include particular items defined in the <em>Items</em> property based on the <em>Comparison</em> property.</p></li>
+<li><p><strong>TextCondition</strong> - used when you want to filter the data based on a string value defined in <em>Pattern</em> property. The <em>Comparison</em> property gives different options<br>
+                                for the comparison method.</p></li>
+<li><p><strong>ItemsFilterCondition</strong> - used when you want to apply to conditions simultaneously (it is mandatory one of them to be SetCondition). <em>ItemsFilterCondition</em> has property Condition where you can set an instance of Comparison, Interval or Text condtions.<br>
+                The property DistinctCondition needs an instance of SetCondition.</p></li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:DateTimeGroupDescription PropertyName="Date" Step="Month"&gt;
+    &lt;pivot:DateTimeGroupDescription.GroupFilter&gt;
+        &lt;pivot:LabelGroupFilter&gt;
+            &lt;pivot:LabelGroupFilter.Condition&gt;
+                &lt;pivot:TextCondition Comparison="BeginsWith" Pattern="Pe"/&gt;
+            &lt;/pivot:LabelGroupFilter.Condition&gt;
+        &lt;/pivot:LabelGroupFilter&gt;
+    &lt;/pivot:DateTimeGroupDescription.GroupFilter&gt;
+&lt;/pivot:DateTimeGroupDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
+dateTimeGroupDescription.PropertyName = "Date";
+dateTimeGroupDescription.Step = DateTimeStep.Month;
+LabelGroupFilter labelFilter = new LabelGroupFilter();
+TextCondition textCondition = new TextCondition();
+textCondition.Pattern = "Pe";
+textCondition.Comparison = TextComparison.BeginsWith;
+labelFilter.Condition = textCondition;
+dateTimeGroupDescription.GroupFilter = labelFilter;
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim dateTimeGroupDescription As New DateTimeGroupDescription()
+dateTimeGroupDescription.PropertyName = "Date"
+dateTimeGroupDescription.Step = DateTimeStep.Month
+Dim labelFilter As New LabelGroupFilter()
+Dim textCondition As New TextCondition()
+textCondition.Pattern = "Pe"
+textCondition.Comparison = TextComparison.BeginsWith
+labelFilter.Condition = textCondition
+dateTimeGroupDescription.GroupFilter = labelFilter
+</code></pre>
+
+<p>And here is how to apply ItemsFilterCondition:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:PropertyGroupDescription PropertyName="Name" &gt;
+    &lt;pivot:PropertyGroupDescription.GroupFilter&gt;
+        &lt;pivot:LabelGroupFilter&gt;
+            &lt;pivot:LabelGroupFilter.Condition&gt;
+                &lt;pivot:ItemsFilterCondition&gt;
+                    &lt;pivot:ItemsFilterCondition.DistinctCondition&gt;
+                        &lt;pivot:SetCondition Comparison="Includes"&gt;
+                            &lt;pivot:SetCondition.Items&gt;
+                                &lt;sys:String&gt;Pencil&lt;/sys:String&gt;
+                                &lt;sys:String&gt;Pen&lt;/sys:String&gt;
+                            &lt;/pivot:SetCondition.Items&gt;
+                        &lt;/pivot:SetCondition&gt;
+                    &lt;/pivot:ItemsFilterCondition.DistinctCondition&gt;
+                    &lt;pivot:ItemsFilterCondition.Condition&gt;
+                        &lt;pivot:TextCondition Comparison="Contains" Pattern="c" /&gt;
+                    &lt;/pivot:ItemsFilterCondition.Condition&gt;
+                &lt;/pivot:ItemsFilterCondition&gt;
+            &lt;/pivot:LabelGroupFilter.Condition&gt;
+        &lt;/pivot:LabelGroupFilter&gt;
+    &lt;/pivot:PropertyGroupDescription.GroupFilter&gt;
+&lt;/pivot:PropertyGroupDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>Telerik.Pivot.Core.PropertyGroupDescription propertyGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
+propertyGroupDescription.PropertyName = "Name";
+
+var labelFilter = new LabelGroupFilter();
+var textCondition = new TextCondition();
+textCondition.Pattern = "c";
+textCondition.Comparison = TextComparison.Contains;
+
+var setCondition = new SetCondition();
+setCondition.Comparison = SetComparison.Includes;
+setCondition.Items.Add("Pen");
+setCondition.Items.Add("Pencil");
+
+var itemsFilterCondition = new ItemsFilterCondition();
+itemsFilterCondition.Condition = textCondition;
+itemsFilterCondition.DistinctCondition = setCondition;
+
+labelFilter.Condition = itemsFilterCondition;
+propertyGroupDescription.GroupFilter = labelFilter;
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim propertyGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
+propertyGroupDescription.PropertyName = "Name"
+
+Dim labelFilter = New LabelGroupFilter()
+Dim textCondition = New TextCondition()
+textCondition.Pattern = "c"
+textCondition.Comparison = TextComparison.Contains
+
+Dim setCondition = New SetCondition()
+setCondition.Comparison = SetComparison.Includes
+setCondition.Items.Add("Pen")
+setCondition.Items.Add("Pencil")
+
+Dim itemsFilterCondition = New ItemsFilterCondition()
+itemsFilterCondition.Condition = textCondition
+itemsFilterCondition.DistinctCondition = setCondition
+
+labelFilter.Condition = itemsFilterCondition
+propertyGroupDescription.GroupFilter = labelFilter
+</code></pre>
+
+<p>This way the only visible item will be Pencil as it is part of the SetCondition and also has "c" in its name which satisfies the text condition.</p>
+
+<h2 id="value-filter"><a href="#value-filter">Value Filter</a></h2>
+
+<p><strong>Value Filter</strong> is applied on <strong>RowGroupDescriptions</strong>/<strong>ColumnGroupDescriptions</strong> based on the <em>GrandTotals</em> of one of the Aggregation descriptions used in <br>
+                the application. To apply value filter you have to use one of the predefined conditions:</p>
+
+<ul>
+<li><p><strong>equals</strong> - showing only groups which header fully matches the parameter we pass.</p></li>
+<li><p><strong>does not equal</strong> - showing all groups which header does NOT match the parameter we pass.</p></li>
+<li><p><strong>is greater than</strong> - show only groups which header is greater than the parameter we pass.</p></li>
+<li><p><strong>is greater than or equal to</strong> - showing only groups which header is greater or equal of the parameter we pass.</p></li>
+<li><p><strong>is less than</strong> - show only groups which header is smaller than the parameter we pass.</p></li>
+<li><p><strong>is less than or equal to</strong> - showing only groups which header is smaller is or equal of the parameter we pass.</p></li>
+<li><p><strong>is between</strong> - showing only groups which header is between the two parameters we pass.</p></li>
+<li><p><strong>is not between</strong> - showing only groups which header is NOT between the two parameters we pass.</p></li>
+</ul>
+
+<blockquote class="important"><p><strong>Value Filter</strong> is filtering the groups by number comparison between the <em>GrandTotals</em> of the groups and the parameters we pass, while <strong>Label Filter</strong> is a string filter.</p></blockquote>
+
+<p>So if we apply a <strong>Value Filter</strong> on the <em>Name</em> RowGroupDescription from the <strong>GettingStarted</strong> article, set condition <em>"is greater than"</em> and pass as parameter value 10<br>
+            we will notice that one of the items is missing because its <em>GrandTotal</em> is less than 10.</p>
+
+<p><strong>RadPivotGrid</strong> without <strong>Value Filter</strong>:<img src="images/RadPivotGrid_Features_Filtering_02.png" alt="Rad Pivot Grid Features Filtering 02"></p>
+
+<p><strong>RadPivotGrid</strong> after <strong>Value Filter</strong> is applied:<img src="images/RadPivotGrid_Features_Filtering_03.png" alt="Rad Pivot Grid Features Filtering 03">Defining Value Filter</p>
+
+<p><strong>Value Filter</strong> can be defined in <strong>XAML</strong>, code behind or at runtime by using <strong>RadPivotFieldList</strong>.<br>
+                            Defining in the code is using <em>ValueGroupFilter</em> class from <strong>Telerik.Pivot.Core</strong> namespace. Each object of this type<br>
+                            must have <em>Condition</em> defined. <em>Condition</em> can be any of these:</p>
+
+<ul>
+<li><p><strong>ComparisonCondition</strong> - used to compare the Header with the value set in the <em>Than</em> property based on the <em>Condition</em> property.</p></li>
+<li><p><strong>IntervalCondition</strong> - used when you want to show only data that is (not) between two values set in the <em>From</em> and <em>To</em> properties based on the <em>Condition</em> property.</p></li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:DateTimeGroupDescription PropertyName="Date" Step="Month"&gt;
+    &lt;pivot:DateTimeGroupDescription.GroupFilter&gt;
+        &lt;pivot:ValueGroupFilter AggregateIndex="0"&gt;
+            &lt;pivot:ValueGroupFilter.Condition&gt;
+                &lt;pivot:IntervalCondition Condition="IsBetween" From="13" To="15"/&gt;
+            &lt;/pivot:ValueGroupFilter.Condition&gt;
+        &lt;/pivot:ValueGroupFilter&gt;
+    &lt;/pivot:DateTimeGroupDescription.GroupFilter&gt;
+&lt;/pivot:DateTimeGroupDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
+dateTimeGroupDescription.PropertyName = "Date";
+dateTimeGroupDescription.Step = DateTimeStep.Month;
+IntervalCondition intervalCondition = new IntervalCondition();
+intervalCondition.Condition = IntervalComparison.IsBetween;
+intervalCondition.From = "13";
+intervalCondition.To = "15";
+ValueGroupFilter valueGroupFilter = new ValueGroupFilter();
+valueGroupFilter.Condition = intervalCondition;
+valueGroupFilter.AggregateIndex = 0;
+dateTimeGroupDescription.GroupFilter = valueGroupFilter;
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim dateTimeGroupDescription As New DateTimeGroupDescription()
+dateTimeGroupDescription.PropertyName = "Date"
+dateTimeGroupDescription.Step = DateTimeStep.Month
+Dim intervalCondition As New IntervalCondition()
+intervalCondition.Condition = IntervalComparison.IsBetween
+intervalCondition.From = "13"
+intervalCondition.To = "15"
+Dim valueGroupFilter As New ValueGroupFilter()
+valueGroupFilter.Condition = intervalCondition
+valueGroupFilter.AggregateIndex = 0
+dateTimeGroupDescription.GroupFilter = valueGroupFilter
+</code></pre>
+
+<h2 id="top-10-filter"><a href="#top-10-filter">Top 10 filter</a></h2>
+
+<p><strong>Top 10 filter</strong> is used when you want to show only the top/bottom items based on some criteria. The criteria is one of the Aggregate Descriptions used in the<br>
+                application. You can show the exact count of top/bottom items to show based on the selected aggregate description, the top items which sum is near the one you set as parameter<br>
+                or the top/bottom items which sum presents percent of the GrandTotal (you choose the percent).</p>
+
+<p>For example if you have the following RadPivotGrid:<br>
+            <img src="images/RadPivotGrid_Features_Filtering_04.png" alt="Rad Pivot Grid Features Filtering 04"></p>
+
+<p>And you apply a Top 10 filter on the Date columns to show the top 4 items based on the Average Price Aggregate Description<br>
+                the result will be:<img src="images/RadPivotGrid_Features_Filtering_05.png" alt="Rad Pivot Grid Features Filtering 05">Defining Top 10 filter</p>
+
+<p>You can define <em>Top 10 filter</em> in the <strong>XAML</strong>, in the code behind or at runtime by using <strong>RadPivotFieldList</strong>.<br>
+                            When defining this filter you have to note that <strong>PropertyGroupDescription</strong>, <strong>DoubleGroupDescription</strong> and <strong>DateTimeGroupDescription</strong> all have <em>GroupFilter</em> property. <br>
+                            To apply <em>Top 10 filter</em> you can set as <em>GroupFilter</em> any of the following: <strong>GroupsCountFilter</strong>, <strong>GroupsPercentFilter</strong>, <strong>GroupsSumFilter</strong>.</p>
+
+<ul>
+<li><p><strong>GroupsCountFilter</strong> - selects a specific number of groups sorted by a given criteria. It is important to define the <em>Count</em><br>
+                                property which indicates the number of groups that will be shown, <em>Selection</em> property, which defines if the Top or Bottom groups will be shown<br>
+                                and <em>AggregateIndex</em> property which defines which Aggregate Description will be used for the filter.</p></li>
+<li><p><strong>GroupsPercentFilter</strong> - selects groups until the sum of their aggregates reaches a given percent of their total. It is important to define the <em>Percent</em><br>
+                                property which indicates the percentage of GrandTotal that selected groups should reach, <em>Selection</em> property, which defines if the Top or Bottom groups will be shown<br>
+                                and <em>AggregateIndex</em> property which defines which Aggregate Description will be used for the filter.</p></li>
+</ul>
+
+<blockquote>
+<p>The <em>Percent</em> property is of type double. If you define value higher than 1.00 it will represent it as 100%.</p>
+</blockquote>
+
+<ul>
+<li>
+<strong>GroupsSumFilter</strong> - selects from the groups until sum of their GrandTotals reaches a given number. It is important to define the <em>Sum</em>
+                                property which indicates the Sum of GrandTotal that selected groups should reach, <em>Selection</em> property, which defines if the Top or Bottom groups will be shown
+                                and <em>AggregateIndex</em> property which defines which Aggregate Description will be used for the filter.</li>
+</ul>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;pivot:DateTimeGroupDescription PropertyName="Date" Step="Month"&gt;
+    &lt;pivot:DateTimeGroupDescription.GroupFilter&gt;
+        &lt;pivot:GroupsCountFilter AggregateIndex="0" Count="4" Selection="Top" /&gt;
+    &lt;/pivot:DateTimeGroupDescription.GroupFilter&gt;
+&lt;/pivot:DateTimeGroupDescription&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
+dateTimeGroupDescription.PropertyName = "Date";
+dateTimeGroupDescription.Step = DateTimeStep.Month;
+GroupsCountFilter countFilter = new GroupsCountFilter();
+countFilter.Count = 4;
+countFilter.Selection = SortedListSelection.Top;
+countFilter.AggregateIndex = 0;
+dateTimeGroupDescription.GroupFilter = countFilter;
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim dateTimeGroupDescription As New DateTimeGroupDescription()
+dateTimeGroupDescription.PropertyName = "Date"
+dateTimeGroupDescription.Step = DateTimeStep.Month
+Dim countFilter As New GroupsCountFilter()
+countFilter.Count = 4
+countFilter.Selection = SortedListSelection.Top
+countFilter.AggregateIndex = 0
+dateTimeGroupDescription.GroupFilter = countFilter
+</code></pre>
+
+<h2 id="applying-filter-at-runtime"><a href="#applying-filter-at-runtime">Applying filter at runtime</a></h2>
+
+<p>You can apply any of the filters at runtime by using <strong>RadPivotFieldList</strong>. When you click on any of the RowGroupDescriptions or ColumnGroupDescriptions<br>
+                you will see a menu with several options. Three of them are used for filtering: <em>"Label Filter"</em>, <em>"Value Filter"</em>,* "Top 10 filter"*:<br>
+            <img src="images/RadPivotGrid_Features_Filtering_06.png" alt="Rad Pivot Grid Features Filtering 06"></p>
+
+<p>When you choose any of them a new Dialog window will help you to adjust the needed attributes. Note that you can always remove applied filters by using the additional option from the drop-down content:<br>
+            <img src="images/RadPivotGrid_Features_Filtering_07.png" alt="Rad Pivot Grid Features Filtering 07"></p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/populating-with-data/data-localdatasource">LocalDataSourceProvider</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/features">Features</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/features/localdatasourceprovider/sorting">Sorting</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

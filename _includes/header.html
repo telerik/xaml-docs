@@ -1,8 +1,21 @@
- <div id="page-header"> 
-    <div id="logo-bar">
+ <div id="page-header">
+{% if site.site_name == 'Silverlight' %}
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+{% endif %}
+
+{% if site.site_name == 'WPF' %}
+	<div id="logo-bar">
 		<a href="http://www.telerik.com" target="_blank" title="UI for WPF">
 			<span>UI for WPF</span>
 		</a>
 	</div> 
+{% endif %}
+	<div id="page-search">
+        {% include search.html %}
+    </div>
 </div> 
 

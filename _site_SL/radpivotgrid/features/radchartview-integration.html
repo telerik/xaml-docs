@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ChartView Integration</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="ChartView Integration">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/features/radchartview-integration.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/layouts">Features1</a></li><li>ChartView Integration</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="chartview-integration"><a href="#chartview-integration">ChartView Integration</a></h1>
+
+<p>In this article we will show you how to integrate <strong>RadPivotGrid</strong> with <strong>RadChartView</strong>.</p>
+
+<h2 id="pivotchartviewmodel"><a href="#pivotchartviewmodel">PivotChartViewModel</a></h2>
+
+<p>In order to create <strong>RadChartView</strong> you need data source. In our case we need the aggregated data from RadPivotGrid's DataProvider. <br>
+          That's why we have created <strong>PivotChartViewModel</strong> - this class exposes several properties that will help to integrate the two contorls:</p>
+
+<ul>
+<li><p><strong>DataProvider</strong> - this property holds the DataProvider for which you will create <strong>RadChartView</strong>. It is mandatory to set it, otherwise you<br>
+          will not populate <strong>RadChartView</strong> with data.</p></li>
+<li><p><strong>SeriesSource</strong> - this property holds a collection that is automatically filled after the <em>DataProvider</em> property is set and when <br>
+          there is a change in the used DataProvider (for example when you add new <em>RowGroupDescription</em>, <strong>SeriesSource</strong> will be populated<br>
+          with the new data.</p></li>
+<li><p><strong>RowGrandTotalsPosition</strong> - controls the position of Row Grand Totals  in the chart. You can choose between None, Left and Right. The default value is set to None.</p></li>
+<li><p><strong>RowsSubTotalsPosition</strong> - controls the position of Row SubTotals in the chart. You can choose between None, Left and Right. The default value is set to None.</p></li>
+<li><p><strong>ColumnGrandTotalsPosition</strong> - controls the position of Column Grand Totals in the chart. You can choose between None, Left and Right. The default value is set to None.</p></li>
+<li><p><strong>ColumnsSubTotalsPosition</strong> - controls the position of Column SubTotals in the chart. You can choose between None, Left and Right. The default value is set to None.</p></li>
+<li><p><strong>IsReady</strong> - boolean value, indicating the state of the DataProvider that is used by <strong>PivotChartViewModel</strong>. Its value is true, when the DataProvider<br>
+          is still aggregating data.</p></li>
+<li><p><strong>SelectedAxis</strong> - Gets or sets the PivotAxis which will be used as the Y axis (the value axis) when generating the <strong>SeriesSource</strong>. Default value is <em>Columns</em>.</p></li>
+</ul>
+
+<blockquote>
+<p>If you use both <strong>RadPivotGrid</strong> and <strong>PivotChartViewModel</strong>, changing the GrandTotals/SubTotals position in one of them, will not affect the other one as they are not connected.</p>
+</blockquote>
+
+<h2 id="creating-radchartview"><a href="#creating-radchartview">Creating RadChartView</a></h2>
+
+<blockquote>
+<p>In order to use <strong>RadChartView</strong> in your application, you will have to add references to <strong>Telerik.Windows.Controls Telerik.Windows.Controls.Chart and Telerik.Windows.Controls.Data</strong> assmeblies.</p>
+</blockquote>
+
+<p>Our first task is to create an instance of <strong>PivotChartViewModel</strong> and set its <em>DataProvider</em>. We will use this instance as a DataContext of our application:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;UserControl.DataContext&gt;
+    &lt;pivot:PivotChartViewModel DataProvider="{StaticResource DataProvider}"/&gt;
+&lt;/UserControl.DataContext&gt;
+</code></pre>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public PivotChartUserControl()
+{
+    InitializeComponent();
+    var chartViewModel = new PivotChartViewModel();
+    chartViewModel.DataProvider = this.DataProvider;
+    this.DataContext = chartViewModel;
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Public Sub New()
+    InitializeComponent()
+    Dim chartViewModel = New PivotChartViewModel()
+    chartViewModel.DataProvider = Me.DataProvider
+    Me.DataContext = chartViewModel
+End Sub
+</code></pre>
+
+<p>Now we will create a new <strong>RadCartesianChart</strong> and set its <em>HorizontalAxis</em>, <em>VerticalAxis</em> and <em>SeriesProvider</em> properties. <br>
+          We will use <em>ChartSeriesProvider</em> and bind its Source to the <em>SeriesSource</em> of <strong>PivotChartViewModel</strong>.</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;telerik:RadCartesianChart x:Name="chart"  Grid.Row="1" Palette="Windows8"&gt;
+    &lt;telerik:RadCartesianChart.HorizontalAxis&gt;
+        &lt;telerik:CategoricalAxis LabelFitMode="Rotate" /&gt;
+    &lt;/telerik:RadCartesianChart.HorizontalAxis&gt;
+    &lt;telerik:RadCartesianChart.VerticalAxis&gt;
+        &lt;telerik:LinearAxis HorizontalAlignment="Right" /&gt;
+    &lt;/telerik:RadCartesianChart.VerticalAxis&gt;
+
+    &lt;telerik:RadCartesianChart.SeriesProvider&gt;
+        &lt;telerik:ChartSeriesProvider Source="{Binding SeriesSource}" &gt;
+            &lt;telerik:ChartSeriesProvider.SeriesDescriptors &gt;
+                &lt;telerik:CategoricalSeriesDescriptor  x:Name="seriesDescriptor"  ItemsSourcePath="Items" ValuePath="Value" CategoryPath="NameX"/&gt;
+            &lt;/telerik:ChartSeriesProvider.SeriesDescriptors&gt;
+        &lt;/telerik:ChartSeriesProvider&gt;
+    &lt;/telerik:RadCartesianChart.SeriesProvider&gt;
+&lt;/telerik:RadCartesianChart&gt;
+</code></pre>
+
+<p>Note the binginds for <em>ItemsSourcePath</em>, <em>ValuePath</em> and <em>CategoryPath</em> properties. <em>Items</em> is a property of<br>
+        <strong>Telerik.Pivot.Core.PivotChartItemsCollection</strong>. <em>Values</em> and <em>NameX</em> are properties of <strong>Telerik.Pivot.Core.PivotChartItem</strong>.</p>
+
+<p>And here is the result of the application:<img src="images/RadPivotGrid_Features_ChartViewIntegration_01.png" alt="Rad Pivot Grid Features Chart View Integration 01"></p>
+
+<h2 id="set-chart-type-and-show-legend"><a href="#set-chart-type-and-show-legend">Set Chart type and Show Legend</a></h2>
+
+<p>You can change the chart type by setting a Style on your <strong>CategoricalSeriesDescriptor</strong>. In order to create <strong>RadLegend</strong> you will have to use a converter<br>
+          in order to convert the Name to a SeriesLegendSettings.</p>
+
+<p>First lets create the Style. We'll use BarSeries and we'll set its <em>CombineMode</em> and <em>LegendSettings</em> properties:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;telerik:CategoricalSeriesDescriptor  x:Name="seriesDescriptor"  ItemsSourcePath="Items" ValuePath="Value" CategoryPath="NameX"&gt;
+    &lt;telerik:CategoricalSeriesDescriptor.Style&gt;
+        &lt;Style TargetType="telerik:BarSeries"&gt;
+            &lt;Setter Property="CombineMode" Value="Stack"/&gt;
+            &lt;Setter Property="LegendSettings" Value="{Binding Name, Converter={StaticResource SeriesSourceNameToSeriesLegendSettigsConverter}}"/&gt;
+        &lt;/Style&gt;
+    &lt;/telerik:CategoricalSeriesDescriptor.Style&gt;
+&lt;/telerik:CategoricalSeriesDescriptor&gt;
+</code></pre>
+
+<p>The <em>SeriesSourceNameToSeriesLegendSettigsConverter</em> is a class in our application:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public class SeriesSourceNameToSeriesLegendSettigsConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        return new SeriesLegendSettings() 
+        { 
+            Title = value.ToString() 
+        };
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Public Class SeriesSourceNameToSeriesLegendSettigsConverter
+    Implements IValueConverter
+
+    Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
+        Return New SeriesLegendSettings() With {.Title = value.ToString()}
+    End Function
+
+    Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
+        Throw New NotImplementedException()
+    End Function
+End Class
+</code></pre>
+
+<p>Now we just have to add <strong>RadLegend</strong> to our application:</p>
+
+<h4><strong>XAML</strong></h4>
+
+<pre><code>&lt;telerik:RadLegend x:Name="legend" Grid.Row="1" Grid.Column="1" Margin="10 10 0 0" Items="{Binding ElementName=chart, Path=LegendItems, Mode=OneWay}"/&gt;
+</code></pre>
+
+<p>And here is the result:<br>
+        <img src="images/RadPivotGrid_Features_ChartViewIntegration_02.png" alt="Rad Pivot Grid Features Chart View Integration 02"></p>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started">RadPivotGrid Getting Started</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/features">Features</a><a href="AA40AD04-1C88-4849-8C3C-24D06D9C3624">RadChartView</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

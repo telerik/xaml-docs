@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Serialization</title>
+        <link rel="shortcut icon" href="/devtools/silverlight/favicon.ico"/>
+        <meta name="description" content="Serialization">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/devtools/silverlight/assets/styles-5bdcfd475585f36df16a95e0457f2f6f.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/theme-d2ae4bb8495446e1d4605832601ddc1a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/branding-a6bed66550d3e9b437d7b25da3bd997a.css">
+        <link rel="stylesheet" href="/devtools/silverlight/assets/highlight-49ceada082f1c903edb130c25d09cf1f.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/app-552278fa51da4b2d25adc25f9fec90be.js"></script>
+		<script src="/devtools/silverlight/assets/prettify-31f05a2784b46b14f119862e47123f4c.js"></script>
+        <script src="/devtools/silverlight/assets/branding-59377013fb75f02a1dbffd638033ef6d.js"></script>
+    </head>
+    <body class="faux-columns">
+        <!-- Google Tag Manager -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <header id="page-header">
+             <div id="page-header">
+
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+
+
+
+	<div id="page-search">
+        <script>
+  (function() {
+    var cx = '001595215763381649090:eblhnfskwrk';
+    var gcse = document.createElement('script');
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+    </div>
+</div> 
+
+
+        </header>
+
+        <div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/devtools/silverlight/default.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("/devtools/silverlight/"),
+            dataBound: expandNavigation("radpivotgrid/features/localdatasourceprovider/serialization.html")
+        });
+        </script>
+    </div>
+
+    <div id="page-article">
+        <div id="page-top">
+            <div id="page-breadcrumb">
+                <ul><li class="link"><a href="/devtools/silverlight/introduction/index">Home</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/overview">RadPivotGrid</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/layouts">Features1</a></li><li class="link"><a href="/devtools/silverlight/radpivotgrid/features/localdatasourceprovider/aggregation-functions">localdatasourceprovider</a></li><li>Serialization</li></ul>
+            </div>
+        </div>
+
+        <article>
+            <h1 id="serialization"><a href="#serialization">Serialization</a></h1>
+
+<p>In this article we will show you how to serialize and deserialize LocalDataSourceProvider and all of its settings.<br>
+        You can use this feature to save the current state of the provider and load it next time the application is started.</p>
+
+<h2 id="serialize-localdatasourceprovider-with-datacontractserializer"><a href="#serialize-localdatasourceprovider-with-datacontractserializer">Serialize LocalDataSourceProvider with DataContractSerializer</a></h2>
+
+<p>We've added the DataContract attribute to all classes used by LocalDataSourceProvider. So you can easily serialize it by using DataContractSerializer. Below you will find out<br>
+          how to create a serializer and use it with <strong>RadPivotGrid</strong>.</p>
+
+<p>So lets create a simple class that we'll use to save (when serializing) and load (when deserializing) DataProviderSettings. You have to add the DataContract attribute to the new class and DataMember attribute for its properties.</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>[DataContract]
+public class DataProviderSettings
+{
+    [DataMember]
+    public object[] Aggregates { get; set; }
+
+    [DataMember]
+    public object[] Filters { get; set; }
+
+    [DataMember]
+    public object[] Rows { get; set; }
+
+    [DataMember]
+    public object[] Columns { get; set; }
+
+    [DataMember]
+    public int AggregatesLevel { get; set; }
+
+    [DataMember]
+    public PivotAxis AggregatesPosition { get; set; }
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>&lt;DataContract&gt; _
+Public Class DataProviderSettings
+    &lt;DataMember&gt; _
+    Public Property Aggregates() As Object()
+
+    &lt;DataMember&gt; _
+    Public Property Filters() As Object()
+
+    &lt;DataMember&gt; _
+    Public Property Rows() As Object()
+
+    &lt;DataMember&gt; _
+    Public Property Columns() As Object()
+
+    &lt;DataMember&gt; _
+    Public Property AggregatesLevel() As Integer
+
+    &lt;DataMember&gt; _
+    Public Property AggregatesPosition() As PivotAxis
+End Class
+</code></pre>
+
+<p>The next step is to implement the serializer. When serializing the provider, you have to create an instance of <em>DataProviderSettings</em> class and set all of the properties.<br>
+          After that you can serialize the instance to a file or a stream. When using DataContractSerializer you have to give a collection of KnownTypes to the serializer. That's why we've created a new <strong>PivotSerializationHelper</strong> <br>
+          class which has a static member - KnownTypes. It consits of all types you'll need in order to serialize LocalDataSourceProvider. Here's an example how to implement your own serializer:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public abstract class DataProviderSerializer
+{
+    public abstract IEnumerable&lt;Type&gt; KnownTypes { get; }
+
+    public string Serialize(object context)
+    {
+        string serialized = string.Empty;
+
+        IDataProvider dataProvider = context as IDataProvider;
+        if (dataProvider != null)
+        {
+            MemoryStream stream = new MemoryStream();
+
+            DataProviderSettings settings = new DataProviderSettings()
+            {
+                Aggregates = dataProvider.Settings.AggregateDescriptions.OfType&lt;object&gt;().ToArray(),
+                Filters = dataProvider.Settings.FilterDescriptions.OfType&lt;object&gt;().ToArray(),
+                Rows = dataProvider.Settings.RowGroupDescriptions.OfType&lt;object&gt;().ToArray(),
+                Columns = dataProvider.Settings.ColumnGroupDescriptions.OfType&lt;object&gt;().ToArray(),
+                AggregatesLevel = dataProvider.Settings.AggregatesLevel,
+                AggregatesPosition = dataProvider.Settings.AggregatesPosition
+            };
+
+            DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
+            serializer.WriteObject(stream, settings);
+
+            stream.Position = 0;
+            var streamReader = new StreamReader(stream);
+            serialized += streamReader.ReadToEnd();
+        }
+
+        return serialized;
+    }
+
+    public void Deserialize(object context, string savedValue)
+    {
+        IDataProvider dataProvider = context as IDataProvider;
+        if (dataProvider != null)
+        {
+            var stream = new MemoryStream();
+            var tw = new StreamWriter(stream);
+            tw.Write(savedValue);
+            tw.Flush();
+            stream.Position = 0;
+
+            DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
+            var result = serializer.ReadObject(stream);
+
+            dataProvider.Settings.AggregateDescriptions.Clear();
+            foreach (var aggregateDescription in (result as DataProviderSettings).Aggregates)
+            {
+                dataProvider.Settings.AggregateDescriptions.Add(aggregateDescription);
+            }
+
+            dataProvider.Settings.FilterDescriptions.Clear();
+            foreach (var filterDescription in (result as DataProviderSettings).Filters)
+            {
+                dataProvider.Settings.FilterDescriptions.Add(filterDescription);
+            }
+
+            dataProvider.Settings.RowGroupDescriptions.Clear();
+            foreach (var rowDescription in (result as DataProviderSettings).Rows)
+            {
+                dataProvider.Settings.RowGroupDescriptions.Add(rowDescription);
+            }
+
+            dataProvider.Settings.ColumnGroupDescriptions.Clear();
+            foreach (var columnDescription in (result as DataProviderSettings).Columns)
+            {
+                dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription);
+            }
+
+            dataProvider.Settings.AggregatesPosition = (result as DataProviderSettings).AggregatesPosition;
+            dataProvider.Settings.AggregatesLevel = (result as DataProviderSettings).AggregatesLevel;
+        }
+    }
+}
+
+
+public class LocalDataSourceSerializer : DataProviderSerializer
+{
+    public override IEnumerable&lt;Type&gt; KnownTypes
+    {
+        get
+        {
+            return PivotSerializationHelper.KnownTypes;
+        }
+    }
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Public MustInherit Class DataProviderSerializer
+    Public MustOverride ReadOnly Property KnownTypes() As IEnumerable(Of Type)
+
+    Public Function Serialize(ByVal context As Object) As String
+        Dim serialized As String = String.Empty
+
+        Dim dataProvider As IDataProvider = TryCast(context, IDataProvider)
+        If dataProvider IsNot Nothing Then
+            Dim stream As New MemoryStream()
+
+            Dim settings As New DataProviderSettings() With {.Aggregates = dataProvider.Settings.AggregateDescriptions.OfType(Of Object)().ToArray(), .Filters = dataProvider.Settings.FilterDescriptions.OfType(Of Object)().ToArray(), .Rows = dataProvider.Settings.RowGroupDescriptions.OfType(Of Object)().ToArray(), .Columns = dataProvider.Settings.ColumnGroupDescriptions.OfType(Of Object)().ToArray(), .AggregatesLevel = dataProvider.Settings.AggregatesLevel, .AggregatesPosition = dataProvider.Settings.AggregatesPosition}
+
+            Dim serializer As New DataContractSerializer(GetType(DataProviderSettings), KnownTypes)
+            serializer.WriteObject(stream, settings)
+
+            stream.Position = 0
+            Dim streamReader = New StreamReader(stream)
+            serialized &amp;= streamReader.ReadToEnd()
+        End If
+
+        Return serialized
+    End Function
+
+    Public Sub Deserialize(ByVal context As Object, ByVal savedValue As String)
+        Dim dataProvider As IDataProvider = TryCast(context, IDataProvider)
+        If dataProvider IsNot Nothing Then
+            Dim stream = New MemoryStream()
+            Dim tw = New StreamWriter(stream)
+            tw.Write(savedValue)
+            tw.Flush()
+            stream.Position = 0
+
+            Dim serializer As New DataContractSerializer(GetType(DataProviderSettings), KnownTypes)
+            Dim result = serializer.ReadObject(stream)
+
+            dataProvider.Settings.AggregateDescriptions.Clear()
+            For Each aggregateDescription In (TryCast(result, DataProviderSettings)).Aggregates
+                dataProvider.Settings.AggregateDescriptions.Add(aggregateDescription)
+            Next aggregateDescription
+
+            dataProvider.Settings.FilterDescriptions.Clear()
+            For Each filterDescription In (TryCast(result, DataProviderSettings)).Filters
+                dataProvider.Settings.FilterDescriptions.Add(filterDescription)
+            Next filterDescription
+
+            dataProvider.Settings.RowGroupDescriptions.Clear()
+            For Each rowDescription In (TryCast(result, DataProviderSettings)).Rows
+                dataProvider.Settings.RowGroupDescriptions.Add(rowDescription)
+            Next rowDescription
+
+            dataProvider.Settings.ColumnGroupDescriptions.Clear()
+            For Each columnDescription In (TryCast(result, DataProviderSettings)).Columns
+                dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription)
+            Next columnDescription
+
+            dataProvider.Settings.AggregatesPosition = (TryCast(result, DataProviderSettings)).AggregatesPosition
+            dataProvider.Settings.AggregatesLevel = (TryCast(result, DataProviderSettings)).AggregatesLevel
+        End If
+    End Sub
+End Class
+
+
+Public Class LocalDataSourceSerializer
+    Inherits DataProviderSerializer
+
+    Public Overrides ReadOnly Property KnownTypes() As IEnumerable(Of Type)
+        Get
+            Return PivotSerializationHelper.KnownTypes
+        End Get
+    End Property
+End Class
+</code></pre>
+
+<p>So the last step is to serialize the provider and deserialize it:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>string lastSerializadProvider;
+
+//serializiation
+LocalDataSourceSerializer provider = new LocalDataSourceSerializer();
+this.lastSerializadProvider = provider.Serialize(this.pivotGrid.DataProvider);
+
+//deserialization
+LocalDataSourceSerializer provider = new LocalDataSourceSerializer();
+provider.Deserialize(this.pivotGrid.DataProvider, this.lastSerializadProvider);
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Dim lastSerializadProvider As String
+
+'serializiation
+Dim provider As New LocalDataSourceSerializer()
+Me.lastSerializadProvider = provider.Serialize(Me.pivotGrid.DataProvider)
+
+'deserialization
+Dim provider As New LocalDataSourceSerializer()
+provider.Deserialize(Me.pivotGrid.DataProvider, Me.lastSerializadProvider)
+</code></pre>
+
+<h2 id="serialize-custom-types"><a href="#serialize-custom-types">Serialize custom types</a></h2>
+
+<p>If you have implemented your own custom types, for example CustomGroupDescription, and you want to serialize your data, you have to do the following:</p>
+
+<ul>
+<li><p>Set the DataContract attribute on each of your custom classes.</p></li>
+<li><p>Set the DataMember attribute on each of the properties that you want to serialize.</p></li>
+<li><p>Add all custom classes to the KnownTypes collection.</p></li>
+</ul>
+
+<p>So if you have implemented a custom group description, it should be similar to this:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>[DataContract]
+public class CustomGroupDescription : PropertyGroupDescriptionBase
+{
+    [DataMember]
+    public string MyCustomProperty { get; set; }
+
+    protected override void CloneOverride(Cloneable source)
+    {
+        this.MyCustomProperty = (source as CustomGroupDescription).MyCustomProperty;
+    }
+
+    protected override Cloneable CreateInstanceCore()
+    {
+        return new CustomGroupDescription();
+    }
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>&lt;DataContract&gt; _
+Public Class CustomGroupDescription
+    Inherits PropertyGroupDescriptionBase
+
+    &lt;DataMember&gt; _
+    Public Property MyCustomProperty() As String
+
+    Protected Overrides Sub CloneOverride(ByVal source As Cloneable)
+        Me.MyCustomProperty = (TryCast(source, CustomGroupDescription)).MyCustomProperty
+    End Sub
+
+    Protected Overrides Function CreateInstanceCore() As Cloneable
+        Return New CustomGroupDescription()
+    End Function
+End Class
+</code></pre>
+
+<p>And here's the change in <em>LocalDataSourceSerializer</em> class:</p>
+
+<h4><strong>C#</strong></h4>
+
+<pre><code>public class LocalDataSourceSerializer : DataProviderSerializer
+{
+    private IEnumerable&lt;Type&gt; myKnownTypes = PivotSerializationHelper.KnownTypes.Concat&lt;Type&gt;(new List&lt;Type&gt;() { typeof(CustomGroupDescription) });
+
+    public override IEnumerable&lt;Type&gt; KnownTypes
+    {
+        get
+        {
+            return myKnownTypes;
+        }
+    }
+}
+</code></pre>
+
+<h4><strong>VB.NET</strong></h4>
+
+<pre><code>Public Class LocalDataSourceSerializer
+    Inherits DataProviderSerializer
+
+    Private myKnownTypes As IEnumerable(Of Type) = PivotSerializationHelper.KnownTypes.Concat(New List(Of Type)() From {GetType(CustomGroupDescription)})
+
+    Public Overrides ReadOnly Property KnownTypes() As IEnumerable(Of Type)
+        Get
+            Return myKnownTypes
+        End Get
+    End Property
+End Class
+</code></pre>
+
+<h1 id="see-also"><a href="#see-also">See Also</a></h1>
+
+<ul>
+<li><p><a href="/devtools/silverlight/radpivotgrid/getting-started">Getting Started</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/fieldlist">RadPivotFieldList</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/populating-with-data/data-localdatasource">LocalDataSourceProvider</a></p></li>
+<li><p><a href="/devtools/silverlight/radpivotgrid/features">Features</a></p></li>
+</ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2002-2014 Telerik. All rights reserved.</p>
+</footer>
+
+
+    </body>
+</html>
+

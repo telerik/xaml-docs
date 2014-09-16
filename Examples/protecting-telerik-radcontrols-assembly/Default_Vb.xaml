@@ -1,0 +1,55 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region protecting-telerik-radcontrols-assembly_0 -->
+public static void Validate()
+{
+    //Uncomment the following line
+    //ValidatePassPhrase();
+}
+<!-- #endregion -->
+
+<!-- #region protecting-telerik-radcontrols-assembly_1 -->
+public static void Validate()
+{
+    //Uncomment the following line
+    ValidatePassPhrase();
+}
+<!-- #endregion -->
+
+<!-- #region protecting-telerik-radcontrols-assembly_2 -->
+internal const string ApplicationName = "MyApp";
+<!-- #endregion -->
+
+<!-- #region protecting-telerik-radcontrols-assembly_3 -->
+internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
+<!-- #endregion -->
+
+<!-- #region protecting-telerik-radcontrols-assembly_4 -->
+<Application 
+    xmlns=http://schemas.microsoft.com/client/2007
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    x:Class="...">
+</Application>
+<!-- #endregion -->
+
+<!-- #region protecting-telerik-radcontrols-assembly_5 -->
+<Application 
+       xmlns=http://schemas.microsoft.com/client/2007
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       xmlns:system="clr-namespace:System;assembly=mscorlib"
+       x:Class="...">
+<Application.Resources>
+    <system:String x:Key="Telerik.Windows.Controls.Key">Sample Application Name v2.0 (tm)</system:String>
+</Application.Resources>
+</Application>
+<!-- #endregion -->
+</Grid>
+</UserControl>

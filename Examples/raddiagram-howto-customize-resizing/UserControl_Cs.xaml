@@ -1,0 +1,23 @@
+﻿<!--  #region raddiagram-howto-customize-resizing-0 -->
+<telerik:RadDiagram x:Name="diagram">
+    <telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=BeginLoopShape}" Position="400 300" />
+    <telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=ExternalDataShape}" Position="500 400" />
+</telerik:RadDiagram>
+<!--  #endregion  -->
+<!--  #region raddiagram-howto-customize-resizing-1 -->
+<StackPanel Width="200" HorizontalAlignment="Left">
+	<TextBlock FontSize="16"
+			   FontWeight="Bold"
+			   Text="Resizing: " />
+	<telerik:RadToggleButton x:Name="resizeWidth"
+							 Width="130"
+							 Height="30"
+							 Content="CanResizeWidth"
+							 IsChecked="True" />
+	<telerik:RadToggleButton x:Name="resizeHeight"
+							 Width="130"
+							 Height="30"
+							 Content="CanResizeHeight"
+							 IsChecked="True" />
+</StackPanel>
+<!--  #endregion  -->

@@ -1,0 +1,112 @@
+---
+title: Pane's Menu
+page_title: Pane's Menu
+description: Pane's Menu
+slug: raddocking-features-panes-panes-menu
+tags: pane's,menu
+published: True
+position: 4
+---
+
+# Pane's Menu
+
+
+
+## 
+
+Each __RadPane__ has a menu, which allow you to perform certain actions against the __RadPane__. By default the __RadMenu__ has the following items:
+
+* __Floating__ - makes the __RadPane__ floating.
+
+* __Dockable__ - docks the __RadPane__.
+
+* __Tabbed Document__- places the __RadPane__ in the __DocumentHost__.
+
+* __Auto Hide__- pins/unpins the __RadPane__, when it is docked.
+
+* __Hide__ - hides the __RadPane__.
+
+
+
+
+         
+      ![](images/RadDocking_Features_Panes_Pane_Menu_01.png)
+
+You can modify the menu by using the __ContextMenuTemplate__ property of the __RadPane__. It is of type __DataTemplate__ and is expected to contain a __RadContextMenu__. Here is an example:
+
+#### __XAML__
+
+{{region raddocking-features-panes-panes-menu_0}}
+	<telerik:RadPane x:Name="radPane"
+	                     Header="Pane 1">
+	    <telerik:RadPane.ContextMenuTemplate>
+	        <DataTemplate>
+	            <telerik:RadContextMenu>
+	                <telerik:RadMenuItem Header="Floating" />
+	                <telerik:RadMenuItem Header="Dockable" />
+	            </telerik:RadContextMenu>
+	        </DataTemplate>
+	    </telerik:RadPane.ContextMenuTemplate>
+	</telerik:RadPane>
+	{{endregion}}
+
+
+
+To make the menu items functional you can use the predefined __RadDocking__ commands, which are located in the __RadDockingCommands__ class:
+
+* __Close__
+
+* __ContextMenuOpen__
+
+* __Dockable__
+
+* __Floating__
+
+* __PaneHeaderMenuOpen__
+
+* __Pin__
+
+* __TabbedDocument__
+
+>tipYou can also create your own custom commands and use them with the RadPane's menu. To learn how read [this topic]({%slug raddocking-how-to-add-menu-items-to-the-radpanes-menu%}).
+
+Here is the final code:
+
+>
+
+The __RadDockingCommands__ class is located in the __Telerik.Windows.Controls__namepsace of the__Telerik.Windows.Controls__assembly. To use it in XAML you have to declare the following namespace:
+
+#### __XAML__
+
+{{region raddocking-features-panes-panes-menu_1}}
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	{{endregion}}
+
+
+
+#### __XAML__
+
+{{region raddocking-features-panes-panes-menu_2}}
+	<telerik:RadPane x:Name="radPane"
+	                     Header="Pane 1">
+	    <telerik:RadPane.ContextMenuTemplate>
+	        <DataTemplate>
+	            <telerik:RadContextMenu>
+	                <telerik:RadMenuItem Header="Floating"
+	                                               Command="telerik:RadDockingCommands.Floating" />
+	                <telerik:RadMenuItem Header="Dockable"
+	                                               Command="telerik:RadDockingCommands.Dockable" />
+	            </telerik:RadContextMenu>
+	        </DataTemplate>
+	    </telerik:RadPane.ContextMenuTemplate>
+	    <TextBlock Text="Some simple text here" />
+	</telerik:RadPane>
+	{{endregion}}
+
+
+
+
+
+
+         
+      ![](images/RadDocking_Features_Panes_Pane_Menu_02.png)

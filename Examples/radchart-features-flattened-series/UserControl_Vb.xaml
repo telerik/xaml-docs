@@ -1,0 +1,51 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-features-flattened-series_0 -->
+<telerik:RadChart x:Name="radChart">
+    <telerik:RadChart.SeriesMappings>
+        <telerik:SeriesMapping>
+            <telerik:SeriesMapping.SeriesDefinition>
+                <telerik:LineSeriesDefinition />
+            </telerik:SeriesMapping.SeriesDefinition>
+            <telerik:SeriesMapping.GroupingSettings>
+                <telerik:GroupingSettings>
+                    <telerik:GroupingSettings.GroupDescriptors>
+                        <telerik:ChartYearGroupDescriptor Member="Date" />
+                    </telerik:GroupingSettings.GroupDescriptors>
+                </telerik:GroupingSettings>
+            </telerik:SeriesMapping.GroupingSettings>
+            <telerik:SeriesMapping.ItemMappings>
+                <telerik:ItemMapping FieldName="Date"
+                                        DataPointMember="XValue" />
+                <telerik:ItemMapping FieldName="Value"
+                                        DataPointMember="YValue" />
+            </telerik:SeriesMapping.ItemMappings>
+        </telerik:SeriesMapping>
+    </telerik:RadChart.SeriesMappings>
+</telerik:RadChart>
+<!-- #endregion -->
+
+<!-- #region radchart-features-flattened-series_1 -->
+<telerik:SeriesMapping.GroupingSettings>
+    <telerik:GroupingSettings ShouldFlattenSeries="True">
+        <telerik:GroupingSettings.GroupDescriptors>
+            <telerik:ChartYearGroupDescriptor Member="Date" />
+        </telerik:GroupingSettings.GroupDescriptors>
+    </telerik:GroupingSettings>
+</telerik:SeriesMapping.GroupingSettings>
+<!-- #endregion -->
+
+<!-- #region radchart-features-flattened-series_4 -->
+<CheckBox Content="Flatten"
+          Click="CheckBox_Click" />
+<!-- #endregion -->
+</Grid>
+</UserControl>

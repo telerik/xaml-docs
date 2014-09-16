@@ -1,0 +1,57 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region check-box-support_0 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView">
+    <telerik:RadTreeViewItem Header="Sport Categories">
+        <telerik:RadTreeViewItem Header="Football">
+            <telerik:RadTreeViewItem Header="Futsal"/>
+            <telerik:RadTreeViewItem Header="Soccer"/>
+        </telerik:RadTreeViewItem>
+        <telerik:RadTreeViewItem Header="Tennis"/>
+        <telerik:RadTreeViewItem Header="Cycling"/>
+    </telerik:RadTreeViewItem>
+</telerik:RadTreeView>
+<!-- #endregion -->
+
+<!-- #region check-box-support_1 -->
+<telerik:RadTreeView x:Name="radTreeView" IsOptionElementsEnabled="True" ItemsOptionListType="CheckList">
+<!-- #endregion -->
+
+<!-- #region check-box-support_4 -->
+<telerik:RadTreeView x:Name="radTreeView" IsOptionElementsEnabled="True" ItemsOptionListType="OptionList">
+<!-- #endregion -->
+
+<!-- #region check-box-support_7 -->
+<telerik:RadTreeView x:Name="radTreeView" IsOptionElementsEnabled="True" ItemsOptionListType="CheckList" IsTriStateMode="True">
+<!-- #endregion -->
+
+<!-- #region check-box-support_11 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsOptionElementsEnabled="True" ItemsOptionListType="CheckList" IsTriStateMode="True">
+    <telerik:RadTreeViewItem Header="Sport Categories">
+        <telerik:RadTreeViewItem Header="Football">
+            <telerik:RadTreeViewItem Header="Futsal" OptionType="OptionList"/>
+            <telerik:RadTreeViewItem Header="Soccer"/>
+        </telerik:RadTreeViewItem>
+        <telerik:RadTreeViewItem Header="Tennis" OptionType="None"/>
+        <telerik:RadTreeViewItem Header="Cycling"/>
+    </telerik:RadTreeViewItem>
+</telerik:RadTreeView>
+<!-- #endregion -->
+
+<!-- #region check-box-support_12 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsOptionElementsEnabled="True"
+        PreviewChecked="radTreeView_PreviewChecked"
+        Checked="radTreeView_Checked"
+        PreviewUnchecked="radTreeView_PreviewUnchecked"
+        Unchecked="radTreeView_Unchecked">
+<!-- #endregion -->
+</Grid>
+</UserControl>

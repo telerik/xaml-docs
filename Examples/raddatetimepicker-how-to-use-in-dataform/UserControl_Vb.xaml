@@ -1,0 +1,48 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddatetimepicker-how-to-use-in-dataform_2 -->
+<Grid x:Name="LayoutRoot"
+        Background="White">
+    <dataForm:DataForm x:Name="dataForm"
+                       Header="DataForm"
+                       AutoGenerateFields="False"
+                       CommandButtonsVisibility="All">
+    </dataForm:DataForm>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region raddatetimepicker-how-to-use-in-dataform_5 -->
+<Grid x:Name="LayoutRoot"
+        Background="White">
+    <dataForm:DataForm x:Name="dataForm"
+                       Header="DataForm"
+                       AutoGenerateFields="False"
+                       CommandButtonsVisibility="All">
+        <dataForm:DataForm.EditTemplate>
+            <DataTemplate>
+                <StackPanel>
+                    <dataForm:DataField Label="Name">
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                    </dataForm:DataField>
+                    <dataForm:DataField Label="Established">
+                        <telerik:RadDateTimePicker SelectedValue="{Binding Established}" Width="200" />
+                    </dataForm:DataField>
+                    <dataForm:DataField Label="Stadium Capacity">
+                        <TextBlock Text="{Binding StadiumCapacity}"></TextBlock>
+                    </dataForm:DataField>
+                </StackPanel>
+            </DataTemplate>
+        </dataForm:DataForm.EditTemplate>
+    </dataForm:DataForm>
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

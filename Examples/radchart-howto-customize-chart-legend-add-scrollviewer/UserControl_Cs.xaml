@@ -1,0 +1,96 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-howto-customize-chart-legend-add-scrollviewer_0 -->
+<UserControl.Resources>
+        <telerik:TextToVisibilityConverter x:Key="textToVisibilityConverter" />
+        <SolidColorBrush x:Key="LegendForeground" Color="#FF000000" />
+        <LinearGradientBrush x:Key="LegendBackground" EndPoint="1.96,0.5" StartPoint="-0.96,0.5">
+            <GradientStop Color="#FFB5B5B5"/>
+            <GradientStop Color="#FFF0F0F0" Offset="0.5"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="LegendBorderBrush" Color="#FF848484" />
+        <Thickness x:Key="LegendBorderThickness">1</Thickness>
+        <system:Double x:Key="LegendItemMarkerMaskStrokeThickness">1</system:Double>
+        <SolidColorBrush x:Key="LegendItemMarkerMaskStroke" Color="White" />
+        <LinearGradientBrush x:Key="LegendItemMarkerMask" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#D8FFFFFF" Offset="0.009"/>
+            <GradientStop Color="#66FFFFFF" Offset="1"/>
+            <GradientStop Color="Transparent" Offset="0.43"/>
+            <GradientStop Color="#7FFFFFFF" Offset="0.42"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="LegendItemMarkerMaskOpacityMask" Color="#FF000000" />
+        <SolidColorBrush x:Key="LegendItemMarkerMask2" Color="Transparent" />
+        <telerik:MarkerShape x:Key="LegendItemMarkerShape">SquareRounded</telerik:MarkerShape>
+        <Style x:Key="ChartLegendStyle"
+        TargetType="telerik:ChartLegend">
+            <Setter Property="Foreground" Value="{StaticResource LegendForeground}" />
+            <Setter Property="Background" Value="{StaticResource LegendBackground}" />
+            <Setter Property="Padding" Value="10,10,10,5" />
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="BorderBrush" Value="{StaticResource LegendBorderBrush}" />
+            <Setter Property="BorderThickness" Value="{StaticResource LegendBorderThickness}" />
+            <Setter Property="HeaderFontWeight" Value="Bold" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Stretch" />
+            <Setter Property="LegendItemMarkerShape" Value="{StaticResource LegendItemMarkerShape}" />
+            <Setter Property="Template" >
+                <Setter.Value>
+                    <ControlTemplate TargetType="telerik:ChartLegend">
+                        <Border 
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}" >
+                            <Grid Margin="{TemplateBinding Padding}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <ContentControl Foreground="{TemplateBinding Foreground}"
+                                            HorizontalAlignment="Stretch"
+                                            HorizontalContentAlignment="Stretch"
+                                            FontWeight="{TemplateBinding HeaderFontWeight}" 
+                                            Content="{TemplateBinding Header}" 
+                                            ContentTemplate="{TemplateBinding HeaderTemplate}"/>
+                                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible" >  
+                                    <ItemsPresenter/>
+                                </ScrollViewer>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <telerik:RadWrapPanel/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Grid>
+                            <TextBlock FontSize="12"
+                                   Padding="0,0,0,2"  
+                                   Width="Auto" 
+                                   Height="Auto" 
+                                   Text="{Binding}"
+                                   Visibility="{Binding Converter={StaticResource textToVisibilityConverter}}"
+                                   TextWrapping="Wrap" />
+                        </Grid>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+<!-- #endregion -->
+</Grid>
+</UserControl>

@@ -1,0 +1,48 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-how-to-bind-wcf-service-load-on-demand_0 -->
+<UserControl.Resources>
+    <example:HierarchicalDataSource x:Key="Source" />
+    <telerik:HierarchicalDataTemplate x:Key="NodeTemplate"
+        ItemsSource="{Binding Children}">
+        <TextBlock Text="{Binding Text}"/>
+    </telerik:HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+    <telerik:RadTreeView x:Name="radTreeView" Margin="8"
+        ItemsSource="{Binding Source={StaticResource Source}}"
+        ItemTemplate="{StaticResource NodeTemplate}"/>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radtreeview-how-to-bind-wcf-service-load-on-demand_1 -->
+<UserControl.Resources>
+    <example:HierarchicalDataSource x:Key="Source" />
+    <HierarchicalDataTemplate x:Key="NodeTemplate"
+        ItemsSource="{Binding Children}">
+        <TextBlock Text="{Binding Text}"/>
+    </HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+    <telerik:RadTreeView x:Name="radTreeView" Margin="8"
+        ItemsSource="{Binding Source={StaticResource Source}}"
+        ItemTemplate="{StaticResource NodeTemplate}"/>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radtreeview-how-to-bind-wcf-service-load-on-demand_14 -->
+<telerik:RadTreeView x:Name="radTreeView" Margin="8"
+    Expanded="radTreeView_Expanded"
+    ItemsSource="{Binding Source={StaticResource Source}}"
+    ItemTemplate="{StaticResource NodeTemplate}"/>
+<!-- #endregion -->
+</Grid>
+</UserControl>

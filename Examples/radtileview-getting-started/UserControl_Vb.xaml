@@ -1,0 +1,60 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtileview-getting-started_0 -->
+<UserControl x:Class="RadTileViewHelpExamples.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+    <Grid x:Name="LayoutRoot">
+        <telerik:RadTileView>
+            <telerik:RadTileViewItem Header="Item1">
+                <TextBlock Text="Item1 Content"/>
+            </telerik:RadTileViewItem>
+            <telerik:RadTileViewItem Header="Item2">
+                <TextBlock Text="Item2 Content"/>
+            </telerik:RadTileViewItem>
+            <telerik:RadTileViewItem Header="Item3" >
+                <TextBlock Text="Item3 Content"/>
+            </telerik:RadTileViewItem>
+        </telerik:RadTileView>
+    </Grid>
+</UserControl>
+<!-- #endregion -->
+
+<!-- #region radtileview-getting-started_1 -->
+<telerik:RadTileView>
+    <telerik:RadTileViewItem TileState="Maximized" Header="Item1">
+        <TextBlock Text="Item1 Content"/>
+    </telerik:RadTileViewItem>
+    <telerik:RadTileViewItem Header="Item2">
+        <TextBlock Text="Item2 Content"/>
+    </telerik:RadTileViewItem>
+    <telerik:RadTileViewItem Header="Item3" >
+        <TextBlock Text="Item3 Content"/>
+    </telerik:RadTileViewItem>
+</telerik:RadTileView>
+<!-- #endregion -->
+
+<!-- #region radtileview-getting-started_2 -->
+<telerik:RadTileView MinimizedItemsPosition="Bottom">
+    <telerik:RadTileViewItem TileState="Maximized" Header="Item1">
+        <TextBlock Text="Item1 Content"/>
+    </telerik:RadTileViewItem>
+    <telerik:RadTileViewItem Header="Item2">
+        <TextBlock Text="Item2 Content"/>
+    </telerik:RadTileViewItem>
+    <telerik:RadTileViewItem Header="Item3" >
+        <TextBlock Text="Item3 Content"/>
+    </telerik:RadTileViewItem>
+</telerik:RadTileView>
+<!-- #endregion -->
+</Grid>
+</UserControl>

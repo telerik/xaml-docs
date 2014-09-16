@@ -1,0 +1,9 @@
+﻿<!--  #region radmaskedinput-howto-create-custom-tokens-0  -->
+<Grid Background="White">
+    <telerik:RadMaskedTextInput Width="200" 
+                                Margin="20 20 20 10"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Mask="$$-$$$$-$$$$" />
+</Grid>
+<!--  #endregion  -->

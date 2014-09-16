@@ -1,0 +1,74 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-howto-create-scatter-errorbars-and-boxplot-series_0 -->
+<Style x:Key="CustomCandleStickStyle" TargetType="telerik:CandleStick">
+                <Setter Property="EmptyFill" Value="{StaticResource CandleStickEmptyRectangleFill}"/>
+                <Setter Property="RadiusX" Value="{StaticResource CandleRadiusX}" />
+                <Setter Property="RadiusY" Value="{StaticResource CandleRadiusY}" />
+                <Setter Property="LineThickness" Value="{StaticResource CandleStickLineStrokeThickness}" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="telerik:CandleStick">
+                            <Canvas x:Name="PART_MainContainer">
+                                <telerik:ParametricLine x:Name="PART_UpperLine" LineStyle="{TemplateBinding ItemStyle}"
+                                    StrokeThickness="{TemplateBinding LineThickness}" />
+                                <telerik:ParametricLine x:Name="PART_LowerLine" LineStyle="{TemplateBinding ItemStyle}"
+                                        StrokeThickness="{TemplateBinding LineThickness}" />
+                                <Rectangle x:Name="PART_CenterRectangle" 
+                                           Height="{TemplateBinding CandleHeight}" 
+                                           Canvas.Top="{TemplateBinding MinYValue}"
+                                           Style="{TemplateBinding ItemStyle}"
+                                           RadiusX="{TemplateBinding RadiusX}"
+                                           RadiusY="{TemplateBinding RadiusY}" />
+                                <telerik:ParametricLine x:Name="PART_DojiLine"
+                                      Visibility="{TemplateBinding DojiLineVisibility}"
+                                      LineStyle="{TemplateBinding ItemStyle}"
+                                      StrokeThickness="{TemplateBinding LineThickness}" />
+                                <telerik:ParametricLine x:Name="PART_CustomLine"
+                                      LineStyle="{TemplateBinding ItemStyle}"
+                                      StrokeThickness="{TemplateBinding LineThickness}"
+                                      X1="{Binding Center}"
+                                      Y1="{Binding CustomMinValue}"
+                                      X2="{Binding Center}"
+                                      Y2="{Binding CustomMaxValue}" />
+                            </Canvas>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+<!-- #endregion -->
+
+<!-- #region radchart-howto-create-scatter-errorbars-and-boxplot-series_3 -->
+<Style x:Key="CustomScatterPointStyle" 
+              TargetType="demo:ScatterErrorBar"> 
+              <Setter Property="Template" > 
+                  <Setter.Value> 
+                      <ControlTemplate TargetType="demo:ScatterErrorBar"> 
+                          <Canvas> 
+                              <Line Stroke="Black" 
+                                    Y1="{TemplateBinding MinValueY}" 
+                                    Y2="{TemplateBinding MaxValueY}" /> 
+                              <Line Stroke="Black" 
+                                    X1="-15" X2="15" 
+                                    Y1="{TemplateBinding StartPointY}" 
+                                    Y2="{TemplateBinding StartPointY}" /> 
+                              <telerik:PointMark x:Name="PART_PointMark" 
+                                                 Canvas.Top="{TemplateBinding StartPointY}" 
+                                                 ShapeStyle="{TemplateBinding PointMarkShapeStyle}" 
+                                                 Size="{TemplateBinding PointSize}" /> 
+                          </Canvas> 
+                      </ControlTemplate> 
+                  </Setter.Value> 
+              </Setter> 
+          </Style>
+<!-- #endregion -->
+</Grid>
+</UserControl>

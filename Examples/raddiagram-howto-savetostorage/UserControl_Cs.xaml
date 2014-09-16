@@ -1,0 +1,14 @@
+   <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <telerik:RadDiagram Grid.Row="1" x:Name="diagram">
+            <telerik:RadDiagramShape Width="100" Height="100" Position="100 100" Content="Shape" />
+        </telerik:RadDiagram>
+        
+        <StackPanel Orientation="Horizontal">
+            <telerik:RadButton Content="Save To Storage" x:Name="saveButton" Click="saveButton_Click" />
+            <telerik:RadButton Content="Load To Storage" x:Name="loadButton" Click="loadButton_Click" />
+        </StackPanel>        
+    </Grid>

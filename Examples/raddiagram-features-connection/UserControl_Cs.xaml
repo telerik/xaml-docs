@@ -1,0 +1,192 @@
+<!--  #region raddiagram_features_connection_0  -->
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape
+                x:Name="ConditionShape"
+                Width="80"
+                Height="80"
+                Content="condition"
+                FontWeight="Bold"
+                Geometry="{telerik:FlowChartShape ShapeType=DecisionShape}"
+                Position="160,80" />
+            <telerik:RadDiagramShape
+                x:Name="StatementShape1"
+                Width="100"
+                Content="statement(s)"
+                FontWeight="Bold"
+                Position="60,280" />
+            <telerik:RadDiagramConnection
+                Content="if condition is false"
+                FontWeight="Bold"
+                Source="{Binding ElementName=ConditionShape}"
+                SourceConnectorPosition="Bottom"
+                StrokeThickness="2"
+                Target="{Binding ElementName=StatementShape1}"
+                TargetCapType="Arrow1Filled" />
+        </telerik:RadDiagram>
+    </Grid>
+<!--  #endregion  -->
+<!--  #region raddiagram_features_connection_1  -->
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape x:Name="ConditionShape"
+                                     Width="80"
+                                     Height="80"
+                                     Content="condition"
+                                     FontWeight="Bold"
+                                     Geometry="{telerik:FlowChartShape ShapeType=DecisionShape}"
+                                     Position="160,80" />
+            <telerik:RadDiagramShape x:Name="StatementShape1"
+                                     Width="100"
+                                     Content="statement(s)"
+                                     FontWeight="Bold"
+                                     Position="60,280" />
+            <telerik:RadDiagramConnection FontWeight="Bold"
+                                          Source="{Binding ElementName=ConditionShape}"
+                                          SourceConnectorPosition="Bottom"
+                                          StrokeThickness="2"
+                                          Target="{Binding ElementName=StatementShape1}"
+                                          TargetCapType="Arrow1Filled">
+                <telerik:RadDiagramConnection.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <StackPanel Margin="3" Orientation="Horizontal">
+                            <TextBlock Text="StrokeThickness: " />
+                            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=StrokeThickness}" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="1"
+                                    Margin="3"
+                                    Orientation="Horizontal">
+                            <TextBlock Text="StartPoint: " />
+                            <TextBlock Margin="0,0,4,0" Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=StartPoint}" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="2"
+                                    Margin="3"
+                                    Orientation="Horizontal">
+                            <TextBlock Text="EndPoint: " />
+                            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=EndPoint}" />
+                        </StackPanel>
+                    </Grid>
+                </telerik:RadDiagramConnection.Content>
+            </telerik:RadDiagramConnection>
+        </telerik:RadDiagram>
+    </Grid>
+<!--  #endregion  -->
+<!--  #region raddiagram_features_connection_2  -->
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape x:Name="ConditionShape"
+                                     Height="30"
+                                     Content="Router"
+                                     FontWeight="Bold"
+                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                                     Position="80,80" />
+            <telerik:RadDiagramShape x:Name="StatementShape1"
+                                     Content="PC 1"
+                                     FontWeight="Bold"
+                                     Position="120,220" />
+            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
+                                          Content="{Binding IpAddress}"
+                                          FontWeight="Bold"
+                                          Source="{Binding ElementName=ConditionShape}"
+                                          Target="{Binding ElementName=StatementShape1}"
+                                          TargetCapType="Arrow1Filled" />
+        </telerik:RadDiagram>
+    </Grid>
+<!--  #endregion  -->
+<!--  #region raddiagram_features_connection_3  -->
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape x:Name="ConditionShape"
+                                     Height="30"
+                                     Content="Router"
+                                     FontWeight="Bold"
+                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                                     Position="80,80" />
+            <telerik:RadDiagramShape x:Name="StatementShape1"
+                                     Content="PC 1"
+                                     FontWeight="Bold"
+                                     Position="120,220" />
+            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
+                                          Content="{Binding IpAddress}"
+                                          FontWeight="Bold"
+                                          Source="{Binding ElementName=ConditionShape}"
+                                          Target="{Binding ElementName=StatementShape1}"
+                                          TargetCapType="Arrow1Filled">
+                <telerik:RadDiagramConnection.ContentTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="-60,5,0,0" Orientation="Horizontal">
+                            <TextBlock Text="Interface: " />
+                            <TextBlock Text="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </telerik:RadDiagramConnection.ContentTemplate>
+            </telerik:RadDiagramConnection>
+        </telerik:RadDiagram>
+    </Grid>
+<!--  #endregion  -->
+<!--  #region raddiagram_features_connection_4  -->
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape x:Name="ConditionShape"
+                                     Height="30"
+                                     Content="Router"
+                                     FontWeight="Bold"
+                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                                     Position="80,80" />
+            <telerik:RadDiagramShape x:Name="StatementShape1"
+                                     Width="100"
+                                     Content="PC 1"
+                                     FontWeight="Bold"
+                                     Position="120,220" />
+            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
+                                          Content="{Binding}"
+                                          FontWeight="Bold"
+                                          Source="{Binding ElementName=ConditionShape}"
+                                          Target="{Binding ElementName=StatementShape1}"
+                                          TargetCapType="Arrow1Filled">
+                <telerik:RadDiagramConnection.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding IpAddress}" />
+                    </DataTemplate>
+                </telerik:RadDiagramConnection.ContentTemplate>
+                <telerik:RadDiagramConnection.EditTemplate>
+                    <DataTemplate>
+                        <TextBox Text="{Binding IpAddress}" />
+                    </DataTemplate>
+                </telerik:RadDiagramConnection.EditTemplate>
+            </telerik:RadDiagramConnection>
+        </telerik:RadDiagram>
+    </Grid>
+<!--  #endregion  -->
+<!--  #region raddiagram_features_connection_5  -->
+        <telerik:RadDiagram x:Name="xDiagram" ConnectionRoundedCorners="True">
+            <telerik:RadDiagramShape x:Name="xShape1"
+                                     Content="Shape1"
+                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                                     Position="240,260" />
+            <telerik:RadDiagramShape x:Name="xShape2"
+                                     Content="Shape2"
+                                     Geometry="{telerik:FlowChartShape ShapeType=DataStoreShape}"
+                                     GlidingStyle="Rectangle"
+                                     Position="600,80"
+                                     UseGlidingConnector="True" />
+            <telerik:RadDiagramShape x:Name="xShape3"
+                                     Content="Shape3"
+                                     Geometry="{telerik:FlowChartShape ShapeType=DataStoreShape}"
+                                     Position="600,380" />
+            <telerik:RadDiagramConnection ConnectionType="Polyline"
+                                          Source="{Binding ElementName=xShape1}"
+                                          SourceConnectorPosition="Top"
+                                          Target="{Binding ElementName=xShape2}"/>
+            <telerik:RadDiagramConnection ConnectionType="Polyline"
+                                          Source="{Binding ElementName=xShape1}"
+                                          SourceConnectorPosition="Bottom"
+                                          Target="{Binding ElementName=xShape3}" />
+
+        </telerik:RadDiagram>
+<!--  #endregion  -->

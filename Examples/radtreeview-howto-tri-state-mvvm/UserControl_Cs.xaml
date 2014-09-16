@@ -1,0 +1,34 @@
+﻿<!-- #region radtreeview-how-to-tri-state-0 -->
+<UserControl.DataContext>
+    <vm:MainViewModel />
+</UserControl.DataContext>
+<Grid x:Name="LayoutRoot">
+    <telerik:RadTreeView Margin="5" ItemsSource="{Binding Categories}" Padding="5">
+        <telerik:RadTreeView.ItemTemplate>
+            <telerik:HierarchicalDataTemplate ItemsSource="{Binding SubCategories}">
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}" telerik:StyleManager.Theme="Office_Black" />
+                    <TextBlock VerticalAlignment="Center" Text="{Binding Name}" />
+                </StackPanel>
+            </telerik:HierarchicalDataTemplate>
+        </telerik:RadTreeView.ItemTemplate>
+    </telerik:RadTreeView>
+</Grid>
+<!-- #endregion -->
+<!-- #region radtreeview-how-to-tri-state-1 -->
+<Window.DataContext>
+    <vm:MainViewModel />
+</Window.DataContext>
+<Grid>
+    <telerik:RadTreeView Margin="5" ItemsSource="{Binding Categories}" Padding="5">
+        <telerik:RadTreeView.ItemTemplate>
+            <HierarchicalDataTemplate ItemsSource="{Binding SubCategories}">
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}" telerik:StyleManager.Theme="Office_Black" />
+                    <TextBlock VerticalAlignment="Center" Text="{Binding Name}" />
+                </StackPanel>
+            </HierarchicalDataTemplate>
+        </telerik:RadTreeView.ItemTemplate>
+    </telerik:RadTreeView>
+</Grid>
+<!-- #endregion -->

@@ -1,0 +1,42 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-getting-started-create-data-bound-chart_0 -->
+<UserControl
+ ...
+xmlns:telerikChart="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Charting"
+ ...>
+ <Grid x:Name="LayoutRoot" Background="White">
+  <telerikChart:RadChart x:Name="radChart" Content="RadChart" d:LayoutOverrides="Width, Height"/>
+ </Grid>
+</UserControl>
+<!-- #endregion -->
+
+<!-- #region radchart-getting-started-create-data-bound-chart_5 -->
+<telerikChart:RadChart x:Name="radChart">
+    <telerikChart:RadChart.SeriesMappings>
+        <telerikCharting:SeriesMapping LegendLabel="Product Sales">
+            <telerikCharting:SeriesMapping.SeriesDefinition>
+                <telerikCharting:SplineSeriesDefinition></telerikCharting:SplineSeriesDefinition>
+            </telerikCharting:SeriesMapping.SeriesDefinition>
+            <telerikCharting:SeriesMapping.ItemMappings>
+                <telerikCharting:ItemMapping DataPointMember="XValue" FieldName="Month"></telerikCharting:ItemMapping>
+                <telerikCharting:ItemMapping DataPointMember="YValue" FieldName="Quantity"></telerikCharting:ItemMapping>
+            </telerikCharting:SeriesMapping.ItemMappings>
+        </telerikCharting:SeriesMapping>
+    </telerikChart:RadChart.SeriesMappings>
+</telerikChart:RadChart>
+<!-- #endregion -->
+
+<!-- #region radchart-getting-started-create-data-bound-chart_10 -->
+<telerikCharting:ItemMapping DataPointMember="XCategory" FieldName="MonthName"/>
+<!-- #endregion -->
+</Grid>
+</UserControl>

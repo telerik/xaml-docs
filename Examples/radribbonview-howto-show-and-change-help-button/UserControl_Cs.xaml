@@ -1,0 +1,7 @@
+<!-- #region radribbonview-howto-show-and-change-help-button_0 -->
+<telerik:RadRibbonView x:Name="xRibbonView" HelpButtonVisibility="Visible"/>
+<!-- #endregion -->
+	
+<!-- #region radribbonview-howto-show-and-change-help-button_3 -->
+<telerik:RadRibbonView x:Name="xRibbonView" HelpButtonImageSource="myHelpButton.png"/>
+<!-- #endregion -->

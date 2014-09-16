@@ -1,0 +1,25 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radribbonview-howto-use-commands-with-radribbonview-buttons_0 -->
+<telerik:RadRibbonView x:Name="xRibbonView">
+			<telerik:RadRibbonTab Header="Home">
+				<telerik:RadRibbonGroup Header="Home Group">
+					<telerik:RadRibbonButton Width="Auto"
+					                         Height="20"
+					                         Command="{Binding MyCommand}"
+					                         CommandParameter="ParameterValue"
+					                         Content="Execute Command" />
+				</telerik:RadRibbonGroup>
+			</telerik:RadRibbonTab>
+		</telerik:RadRibbonView>
+<!-- #endregion -->
+</Grid>
+</UserControl>

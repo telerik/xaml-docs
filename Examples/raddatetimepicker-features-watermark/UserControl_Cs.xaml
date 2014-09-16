@@ -1,0 +1,28 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddatetimepicker-features-watermark_0 -->
+<telerik:RadDateTimePicker DateTimeWatermarkContent="Enter departure date">
+<!-- #endregion -->
+
+<!-- #region raddatetimepicker-features-watermark_1 -->
+<telerik:RadDateTimePicker Width="200">
+      <telerik:RadDateTimePicker.DateTimeWatermarkTemplate>
+           <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                   <Image Source="/Silverlight.Help.RadDateTimePicker;component/Demos/Images/web-airplain.png" />                       
+                    <TextBlock Text="Enter departure date" VerticalAlignment="Center" />
+                </StackPanel>
+           </DataTemplate>
+      </telerik:RadDateTimePicker.DateTimeWatermarkTemplate>  
+</telerik:RadDateTimePicker>
+<!-- #endregion -->
+</Grid>
+</UserControl>

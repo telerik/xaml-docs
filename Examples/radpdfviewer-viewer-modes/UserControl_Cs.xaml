@@ -1,0 +1,61 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+
+<!--#region radpdfviewer-viewer-modes_0 -->
+<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
+  <telerik:RadToolBar.Resources>
+    <converters:FixedDocumentViewerModeConverter x:Key="ModeConverter" />
+  </telerik:RadToolBar.Resources>
+<telerik:RadToggleButton IsChecked="{Binding FixedDocumentViewer.Mode, Mode=TwoWay, Converter={StaticResource ModeConverter}, ConverterParameter=Pan}" Margin="2" Padding="0" IsBackgroundVisible="False" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+	<ToolTipService.ToolTip>
+		<TextBlock Text="Pan" />
+	</ToolTipService.ToolTip>
+	<Image Source="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/hand-free.png" Stretch="None" />
+</telerik:RadToggleButton>
+
+<telerik:RadToggleButton IsChecked="{Binding FixedDocumentViewer.Mode, Mode=TwoWay, Converter={StaticResource ModeConverter}, ConverterParameter=TextSelection}" Margin="2" Padding="0" IsBackgroundVisible="False" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+	<ToolTipService.ToolTip>
+		<TextBlock Text="Text Selection" />
+	</ToolTipService.ToolTip>
+	<Image Source="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/text-selection.png" Stretch="None" />
+</telerik:RadToggleButton>
+</telerik:RadToolBar>
+
+<telerik:RadPdfViewer Grid.Row="1" x:Name="pdfViewer" DefaultFormatProviderSettings="ReadAllAtOnce" DocumentSource="/PdfViewerDemo;component/SampleData/test.pdf" />
+<!-- #endregion -->
+
+<!--#region radpdfviewer-viewer-modes_1 -->
+<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
+  <telerik:RadToolBar.Resources>
+    <converters:FixedDocumentViewerModeConverter x:Key="ModeConverter" />
+  </telerik:RadToolBar.Resources>
+<telerik:RadToggleButton IsChecked="{Binding FixedDocumentViewer.Mode, Mode=TwoWay, Converter={StaticResource ModeConverter}, ConverterParameter=Pan}" Margin="2" Padding="0" IsBackgroundVisible="False" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+	<ToolTipService.ToolTip>
+		<TextBlock Text="Pan" />
+	</ToolTipService.ToolTip>
+	<Image Source="pack://application:,,,/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/hand-free.png" Stretch="None" />
+</telerik:RadToggleButton>
+
+<telerik:RadToggleButton IsChecked="{Binding FixedDocumentViewer.Mode, Mode=TwoWay, Converter={StaticResource ModeConverter}, ConverterParameter=TextSelection}" Margin="2" Padding="0" IsBackgroundVisible="False" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+	<ToolTipService.ToolTip>
+		<TextBlock Text="Text Selection" />
+	</ToolTipService.ToolTip>
+	<Image Source="pack://application:,,,/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/text-selection.png" Stretch="None" />
+</telerik:RadToggleButton>
+</telerik:RadToolBar>
+
+<telerik:RadPdfViewer Grid.Row="1" x:Name="pdfViewer" DefaultFormatProviderSettings="ReadAllAtOnce" DocumentSource="/PdfViewerDemo;component/SampleData/test.pdf" />
+<!-- #endregion -->
+<!--#region radpdfviewer-viewer-modes_2 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+xmlns:converters="clr-namespace:Telerik.Windows.Documents.Converters;assembly=Telerik.Windows.Controls.FixedDocumentViewers"
+<!-- #endregion -->
+      
+    </Grid>
+</UserControl>

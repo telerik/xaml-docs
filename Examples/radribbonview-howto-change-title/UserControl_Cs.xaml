@@ -1,0 +1,3 @@
+<!-- #region radribbonview-howto-change-title_0 -->
+<telerik:RadRibbonView x:Name="xRibbonView" Title="RadRibbonView Demo" />
+<!-- #endregion -->

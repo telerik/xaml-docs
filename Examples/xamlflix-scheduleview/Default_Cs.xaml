@@ -1,0 +1,232 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region xamlflix_scheduleview_0 -->
+<UserControl x:Class="RadScheduleViewTutorial.MainPage"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+		mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+
+<!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_1 -->
+<telerik:RadScheduleView Name="xRadScheduleView" >   
+</telerik:RadScheduleView>
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_2 -->
+<telerik:RadScheduleView Name="xRadScheduleView" >
+    <telerik:RadScheduleView.ViewDefinitions>    
+    </telerik:RadScheduleView.ViewDefinitions>
+</telerik:RadScheduleView>
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_3 -->
+<ControlTemplate x:Key="EditAppointmentTemplate" TargetType="local:SchedulerDialog">
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_4 -->
+<TextBlock Grid.Row="4" Grid.Column="0" Margin="6" Text="Custom String" />
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_5 -->
+<TextBox Grid.Row="4" Grid.Column="1"  Grid.ColumnSpan="2" Margin="3"
+     Text="{Binding Occurrence.Appointment.CustomString, 
+     ValidatesOnDataErrors=True, 
+     NotifyOnValidationError=True, 
+     Mode=TwoWay}" />
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_6 -->
+<telerik:RadScheduleView Name="radScheduleView1"
+EditAppointmentDialogStyle="{StaticResource EditAppointmentDialogStyle}">
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_7 -->
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="ScheduleView.xaml" />
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Application.Resources>
+
+    <!-- #endregion -->
+    <!-- #region xamlflix_scheduleview_8 -->
+            <telerik:RadScheduleView.ResourceTypesSource>
+                <telerik:ResourceTypeCollection>
+                    
+                </telerik:ResourceTypeCollection>
+            </telerik:RadScheduleView.ResourceTypesSource>
+
+    <!-- #endregion -->
+    <!-- #region xamlflix_scheduleview_9 -->
+<telerik:ResourceType DisplayName="Location" Name="Location">
+    <!-- #endregion -->
+        <!-- #region xamlflix_scheduleview_10 -->
+<telerik:RadScheduleView Name="radScheduleView1" >
+    <telerik:RadScheduleView.ViewDefinitions>
+        <telerik:DayViewDefinition />
+        <telerik:WeekViewDefinition />
+        <telerik:MonthViewDefinition />
+        <telerik:TimelineViewDefinition />
+    </telerik:RadScheduleView.ViewDefinitions>
+    <telerik:RadScheduleView.ResourceTypesSource>
+        <telerik:ResourceTypeCollection>
+            <telerik:ResourceType DisplayName="Location" Name="Location">
+                <telerik:Resource ResourceName="Hall A" ResourceType="Location" />
+                <telerik:Resource ResourceName="Hall B" ResourceType="Location" />
+                <telerik:Resource ResourceName="Hall C" ResourceType="Location" />
+            </telerik:ResourceType>
+        </telerik:ResourceTypeCollection>
+    </telerik:RadScheduleView.ResourceTypesSource>
+</telerik:RadScheduleView>
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_11 -->
+<telerik:ResourceType DisplayName="Speaker" Name="Speaker">
+    <telerik:Resource ResourceName="Enchev" ResourceType="Speaker" />
+    <telerik:Resource ResourceName="Milev" ResourceType="Speaker" />
+    <telerik:Resource ResourceName="Donchev" ResourceType="Speaker" />
+</telerik:ResourceType>
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_12 -->
+<telerik:RadScheduleView Name="radScheduleView1" >
+    <telerik:RadScheduleView.ViewDefinitions>
+        <telerik:DayViewDefinition />
+        <telerik:WeekViewDefinition />
+        <telerik:MonthViewDefinition />
+        <telerik:TimelineViewDefinition />
+    </telerik:RadScheduleView.ViewDefinitions>
+    <telerik:RadScheduleView.ResourceTypesSource>
+        <telerik:ResourceTypeCollection>
+            <telerik:ResourceType DisplayName="Location" Name="Location">
+                <telerik:Resource ResourceName="Hall A" ResourceType="Location" />
+                <telerik:Resource ResourceName="Hall B" ResourceType="Location" />
+                <telerik:Resource ResourceName="Hall C" ResourceType="Location" />
+            </telerik:ResourceType>
+            <telerik:ResourceType DisplayName="Speaker" Name="Speaker">
+                <telerik:Resource ResourceName="Enchev" ResourceType="Speaker" />
+                <telerik:Resource ResourceName="Milev" ResourceType="Speaker" />
+                <telerik:Resource ResourceName="Donchev" ResourceType="Speaker" />
+            </telerik:ResourceType>
+        </telerik:ResourceTypeCollection>
+    </telerik:RadScheduleView.ResourceTypesSource>
+    <telerik:RadScheduleView.GroupDescriptionsSource>
+        <telerik:GroupDescriptionCollection>
+            <telerik:ResourceGroupDescription ResourceType="Location" />
+        </telerik:GroupDescriptionCollection>
+    </telerik:RadScheduleView.GroupDescriptionsSource>
+</telerik:RadScheduleView>
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_13 -->
+ <telerik:ResourceGroupDescription ResourceType="Speaker" />
+    <!-- #endregion -->
+    <!-- #region xamlflix_scheduleview_14 -->
+<telerik:GroupDescriptionCollection>
+    <telerik:DateGroupDescription />
+    <telerik:ResourceGroupDescription ResourceType="Location"  ShowNullGroup="True"/>
+    <telerik:ResourceGroupDescription ResourceType="Speaker" />
+</telerik:GroupDescriptionCollection>
+
+    <!-- #endregion -->
+    <!-- #region xamlflix_scheduleview_15 -->
+xmlns:local="clr-namespace:RadScheduleFiltering"
+    <!-- #endregion -->
+        <!-- #region xamlflix_scheduleview_16 -->
+<UserControl.Resources>
+    <local:ScheduleViewVM x:Key="xVM" />
+</UserControl.Resources>
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_17 -->
+               <Grid x:Name="LayoutRoot" DataContext="{StaticResource xVM}">
+<Grid.RowDefinitions>
+    <RowDefinition Height="60" />
+    <RowDefinition />
+</Grid.RowDefinitions>
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_18 -->
+<TextBlock Text="Select a value from the RadComboBox to filter appointments in RadScheduleView by that resource."
+               Width="300"
+               Margin="10"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               TextWrapping="Wrap" />
+<telerik:RadComboBox x:Name="xRadComboBox"
+                Width="150"
+                ClearSelectionButtonVisibility="Visible"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="320,10,10,10" />
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_19 -->
+   <telerik:RadScheduleView
+          Grid.Row="1"
+          Name="xRadScheduleView"
+          AppointmentsSource="{Binding Appointments}"
+          ResourceTypesSource="{Binding ResourceTypes}">
+
+    <!-- #endregion -->
+    <!-- #region xamlflix_scheduleview_20 -->
+<telerik:RadScheduleView.ViewDefinitions>
+    <telerik:DayViewDefinition />
+    <telerik:WeekViewDefinition />
+    <telerik:MonthViewDefinition />
+</telerik:RadScheduleView.ViewDefinitions>
+
+
+    <!-- #endregion -->
+    <!-- #region xamlflix_scheduleview_21 -->
+ <telerik:RadScheduleView.GroupDescriptionsSource>
+     <telerik:GroupDescriptionCollection>
+       <telerik:DateGroupDescription />
+       <telerik:ResourceGroupDescription ResourceType="Location" ShowNullGroup="True" />
+     </telerik:GroupDescriptionCollection>
+ </telerik:RadScheduleView.GroupDescriptionsSource>     
+
+    <!-- #endregion -->
+      <!-- #region xamlflix_scheduleview_22 -->
+                       <telerik:RadComboBox x:Name="xRadComboBox"
+                         Width="150"
+                         ClearSelectionButtonVisibility="Visible"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Left"
+                         Margin="320,10,10,10" 
+                        ItemsSource="{Binding ComboResources}"
+                        SelectedItem="{Binding SelectedResource, Mode=TwoWay}"/>
+
+
+    <!-- #endregion -->
+    
+    <!-- #region xamlflix_scheduleview_23 -->
+                       <telerik:DayViewDefinition AppointmentFilter="{Binding FilterValue}"/>
+    <!-- #endregion -->
+    
+   
+
+</Grid>
+</UserControl>

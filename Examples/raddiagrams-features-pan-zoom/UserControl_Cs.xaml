@@ -1,0 +1,34 @@
+﻿<!--  #region raddiagrams-features-pan-zoom-0-->
+         <telerik:RadDiagram x:Name="xDiagram" Grid.Row="1" PreviewZoom="xDiagram_PreviewZoom">
+            <telerik:RadDiagramShape Width="40" 
+                                     Height="40"
+                                     Geometry="{telerik:CommonShape ShapeType=Star5Shape}" />
+        </telerik:RadDiagram>
+<!--  #endregion  -->
+<!--  #region raddiagrams-features-pan-zoom-1 -->
+<Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock FontWeight="Bold" 
+                       Foreground="Blue"
+                       Text="Use the RadSlider to ZoomIn/ZoomOut: " />
+            <telerik:RadSlider x:Name="slider" 
+                               Width="200"
+                               Maximum="5"
+                               Minimum="0.5"
+                               Value="{Binding ElementName=xDiagram, Path=Zoom}"/>
+            <TextBlock 
+                       FontWeight="Bold" Foreground="Blue"
+                       Margin="10 0 0 0"
+                       Text="{Binding ElementName=slider, Path=Value}" />
+        </StackPanel>
+        <telerik:RadDiagram x:Name="xDiagram" Grid.Row="1">
+            <telerik:RadDiagramShape Width="40" 
+                                     Height="40"
+                                     Geometry="{telerik:CommonShape ShapeType=Star5Shape}" />
+        </telerik:RadDiagram>
+</Grid>
+<!--  #endregion  -->

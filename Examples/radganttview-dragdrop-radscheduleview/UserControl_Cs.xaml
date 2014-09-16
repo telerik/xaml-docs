@@ -1,0 +1,59 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+
+
+
+<!-- #region radganttview-dragdrop-radscheduleview-0 -->
+<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
+	<telerik:RadScheduleView.ViewDefinitions>
+		<telerik:WeekViewDefinition/>
+	</telerik:RadScheduleView.ViewDefinitions>
+</telerik:RadScheduleView>
+<!-- #endregion -->
+
+<!-- #region radganttview-dragdrop-radscheduleview-1 -->
+<telerik:RadGanttView x:Name="radGanttView" 
+					  TasksSource="{Binding GanttTasks}" 
+					  VisibleRange="{Binding VisibleRange}">
+	<telerik:RadGanttView.Columns>
+		<telerik:TreeColumnDefinition MemberBinding="{Binding Title}" Header="Title" Width="AutoHeaderAndContent"/>
+		<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+		<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+	</telerik:RadGanttView.Columns>
+</telerik:RadGanttView>
+<!-- #endregion -->
+
+<!-- #region radganttview-dragdrop-radscheduleview-2 -->
+<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
+						 Margin="20">
+	<telerik:RadScheduleView.ViewDefinitions>
+		<telerik:WeekViewDefinition/>
+	</telerik:RadScheduleView.ViewDefinitions>
+	<telerik:RadScheduleView.DragDropBehavior>
+		<local:CustomScheduleViewDragDropBehavior />
+	</telerik:RadScheduleView.DragDropBehavior>
+	<telerik:RadScheduleView.DataObjectProvider>
+		<local:CustomScheduleViewConverter/>
+	</telerik:RadScheduleView.DataObjectProvider>
+</telerik:RadScheduleView>
+<telerik:RadGanttView TasksSource="{Binding GanttTasks}" 
+					  VisibleRange="{Binding VisibleRange}">
+	<telerik:RadGanttView.Columns>
+		<telerik:TreeColumnDefinition MemberBinding="{Binding Title}" Header="Title" Width="AutoHeaderAndContent"/>
+		<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+		<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+	</telerik:RadGanttView.Columns>
+	<telerik:RadGanttView.DragDropBehavior>
+		<local:CustomGanttDragDropBehavior/>
+	</telerik:RadGanttView.DragDropBehavior>
+</telerik:RadGanttView>
+<!-- #endregion -->
+
+	</Grid>
+</UserControl>

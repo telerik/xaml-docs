@@ -1,0 +1,66 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radoutlookbar-resizing_0 -->
+<telerik:RadOutlookBar MinContentHeight="300"
+    x:Name="RadOutlookBar1">
+        <telerik:RadOutlookBarItem Icon="Letter.png"
+    Header="Item 1">
+            <TextBlock Text="Item 1
+    Content"/>
+        </telerik:RadOutlookBarItem>
+        <telerik:RadOutlookBarItem Icon="Letter.png" 
+    IsSelected="True" Header="Item 2">
+            <TextBlock Text="Item 2
+    Content"/>
+        </telerik:RadOutlookBarItem>
+        <telerik:RadOutlookBarItem  Icon="Letter.png"
+    Header="Item 3">
+            <TextBlock Text="Item 3
+    Content"/>
+        </telerik:RadOutlookBarItem>
+    </telerik:RadOutlookBar>
+<!-- #endregion -->
+
+<!-- #region radoutlookbar-resizing_1 -->
+<telerik:RadOutlookBar ActiveItemsMaxCount="1"
+    ItemPositionChanged="RadOutlookBar1_ItemPositionChanged"
+    x:Name="RadOutlookBar1">
+        <telerik:RadOutlookBarItem Icon="Letter.png"
+    Header="Item 1">
+            <TextBlock Text="Item 1
+    Content"/>
+        </telerik:RadOutlookBarItem>
+        <telerik:RadOutlookBarItem Icon="Letter.png" 
+    IsSelected="True" Header="Item 2">
+            <TextBlock Text="Item 2
+    Content"/>
+        </telerik:RadOutlookBarItem>
+        <telerik:RadOutlookBarItem  Icon="Letter.png"
+    Header="Item 3">
+            <TextBlock Text="Item 3
+    Content"/>
+        </telerik:RadOutlookBarItem>
+    </telerik:RadOutlookBar>
+<!-- #endregion -->
+
+<!-- #region radoutlookbar-resizing_2 -->
+private void
+    RadOutlookBar1_ItemPositionChanged(object sender, PositionChangedEventArgs
+    e)
+            {
+    RadOutlookBarItem outlookBarItem = e.OriginalSource as
+    RadOutlookBarItem;
+    OutlookBarItemPosition oldPosition = e.OldPosition;
+    OutlookBarItemPosition newPosition = e.NewPosition;
+            }
+<!-- #endregion -->
+</Grid>
+</UserControl>

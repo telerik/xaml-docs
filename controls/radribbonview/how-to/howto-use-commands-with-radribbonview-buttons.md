@@ -1,0 +1,154 @@
+---
+title: Use Commands with RadRibbonView Buttons
+page_title: Use Commands with RadRibbonView Buttons
+description: Use Commands with RadRibbonView Buttons
+slug: radribbonview-howto-use-commands-with-radribbonview-buttons
+tags: use,commands,with,radribbonview,buttons
+published: True
+position: 12
+---
+
+# Use Commands with RadRibbonView Buttons
+
+
+
+## 
+
+All __RadRibbonView__ buttons provide a standard __ICommandSource__ implementation. This is why you can bind the __RadRibbonButtons__ to commands that will get executed when a button is clicked. For this purpose you can use the following properties.
+		
+
+* __Command__ - gets the command that will be executed when the command source is invoked.
+			
+
+* __CommandParameter__ - represents a user defined data value that can be passed to the command when it is executed.
+			
+
+* __CommandTarget__ - the object on which the command is being executed.
+			
+
+>tipAs all butons implement the __ICommandSource__ interface, you can use them with any command that implements the __ICommand__ interface, for example the __DelegateCommands__.
+		  
+
+Here is an example of a command usage in a MVVM scenario. The command is located in the __ButtonViewModel__ class.
+		
+
+#### __C#__
+
+{{region radribbonview-howto-use-commands-with-radribbonview-buttons_1}}
+	public class ButtonViewModel
+		{
+			public ButtonViewModel()
+			{
+				this.MyCommand = new DelegateCommand(p => Execute(p), p => CanExecute(p));
+			}
+	
+			public DelegateCommand MyCommand { get; set; }
+	
+			private bool CanExecute(object p)
+			{
+				if (p != null)
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			}
+	
+			private void Execute(object p)
+			{
+				MessageBox.Show("Executed: \n" + p.ToString());
+			}
+		}
+	{{endregion}}
+
+
+
+#### __VB__
+
+{{region radribbonview-howto-use-commands-with-radribbonview-buttons_2}}
+		Public Class ButtonViewModel
+			Public Sub New()
+				Me.MyCommand = New DelegateCommand(Function(p) Execute(p), Function(p) CanExecute(p))
+			End Sub
+	
+			Public Property MyCommand() As DelegateCommand
+				Get
+					Return m_MyCommand
+				End Get
+				Set(value As DelegateCommand)
+					m_MyCommand = Value
+				End Set
+			End Property
+			Private m_MyCommand As DelegateCommand
+	
+			Private Function CanExecute(p As Object) As Boolean
+				If p IsNot Nothing Then
+					Return True
+				Else
+					Return False
+				End If
+			End Function
+	
+			Private Sub Execute(p As Object)
+				MessageBox.Show("Executed: " & vbLf + p.ToString())
+			End Sub
+		End Class
+	{{endregion}}
+
+
+
+Set the __ButtonViewModel__ as the __DataContext__ of your __UserControl__.
+	  
+
+#### __C#__
+
+{{region radribbonview-howto-use-commands-with-radribbonview-buttons_3}}
+	public Example()
+	{
+	    InitializeComponent();
+	    this.DataContext = new ButtonViewModel();
+	}
+	{{endregion}}
+
+
+
+#### __VB__
+
+{{region radribbonview-howto-use-commands-with-radribbonview-buttons_4}}
+		Public Sub New()
+			InitializeComponent()
+			Me.DataContext = New ButtonViewModel()
+		End Sub
+	{{endregion}}
+
+
+
+In the XAML provide the bindings for the command and set the command parameter.
+		
+
+>tipThis can be applied to each of the __RadRibbonButtons__. To learn more about them read [here]({%slug radribbonview-buttons-overview%}). Commands can be used with any control, placed in the __RadRibbonView__, that implements the __ICommandSource__ interface.
+		  
+
+#### __XAML__
+
+{{region radribbonview-howto-use-commands-with-radribbonview-buttons_0}}
+	<telerik:RadRibbonView x:Name="xRibbonView">
+				<telerik:RadRibbonTab Header="Home">
+					<telerik:RadRibbonGroup Header="Home Group">
+						<telerik:RadRibbonButton Width="Auto"
+						                         Height="20"
+						                         Command="{Binding MyCommand}"
+						                         CommandParameter="ParameterValue"
+						                         Content="Execute Command" />
+					</telerik:RadRibbonGroup>
+				</telerik:RadRibbonTab>
+			</telerik:RadRibbonView>
+	{{endregion}}
+
+
+
+# See Also
+
+ * [RibbonButtons]({%slug radribbonview-buttons-overview%})

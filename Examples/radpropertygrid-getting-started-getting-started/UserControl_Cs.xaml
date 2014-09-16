@@ -1,0 +1,81 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radpropertygrid-getting-started-getting-started_0 -->
+<UserControl x:Class="RadPropertyGrid_SL.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+ <Grid x:Name="LayoutRoot" Background="White">
+       <telerik:RadPropertyGrid x:Name="PropertyGrid1" /> 
+ </Grid>
+</UserControl>
+<!-- #endregion -->
+
+<!-- #region radpropertygrid-getting-started-getting-started_1 -->
+<Window x:Class="RadPropertyGrid_WPF.Window"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+ <Grid x:Name="LayoutRoot" Background="White">
+  <telerik:RadPropertyGrid x:Name="PropertyGrid1" /> 
+ </Grid>
+</Window>
+<!-- #endregion -->
+
+<!-- #region radpropertygrid-getting-started-getting-started_2 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+<!-- #endregion -->
+
+<!-- #region radpropertygrid-getting-started-getting-started_3 -->
+<Grid x:Name="LayoutRoot" Background="White">
+  <telerik:RadPropertyGrid x:Name="PropertyGrid1" /> 
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radpropertygrid-getting-started-getting-started_6 -->
+<telerik:RadButton x:Name="button1" Content="MyButton" />
+<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding ElementName= button1}"/>
+<!-- #endregion -->
+        
+        <!-- #region radpropertygrid-getting-started-getting-started_7 -->
+<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding}"
+ NestedPropertiesVisibility="Visible" />
+<!-- #endregion -->
+        
+        <!-- #region radpropertygrid-getting-started-getting-started_10 -->
+  <telerik:RadPropertyGrid x:Name="PropertyGrid1"> 
+        <telerik:RadPropertyGrid.PropertyDefinitions>                
+                <telerik:PropertyDefinition Binding="{Binding FirstName}" DisplayName="My FirstName"/>
+        </telerik:RadPropertyGrid.PropertyDefinitions>
+  </telerik:RadPropertyGrid>
+        <!-- #endregion -->
+        
+          <!-- #region radpropertygrid-getting-started-getting-started_11 -->
+  <telerik:RadPropertyGrid x:Name="PropertyGrid1">
+        <telerik:RadPropertyGrid.PropertyDefinitions>  
+            <telerik:PropertyDefinition Binding="{Binding Employee}">
+                    <telerik:PropertyDefinition.NestedProperties>
+                        <telerik:PropertyDefinition DisplayName="First name" Binding="{Binding FirstName}"/>
+                    </telerik:PropertyDefinition.NestedProperties>
+            </telerik:PropertyDefinition>
+        </telerik:RadPropertyGrid.PropertyDefinitions>
+  </telerik:RadPropertyGrid>
+         <!-- #endregion -->
+</Grid>
+</UserControl>

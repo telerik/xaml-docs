@@ -1,0 +1,23 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radpanelbar-populating_0 -->
+<telerik:RadPanelBar VerticalAlignment="Center" ExpandMode="Single"></telerik:RadPanelBar>
+<!-- #endregion -->
+
+<!-- #region radpanelbar-populating_1 -->
+<telerik:RadPanelBar>
+<telerik:RadPanelBarItem Header="Item 1" />
+<telerik:RadPanelBarItem Header="Item 2" />
+<telerik:RadPanelBarItem Header="Item 3" />
+</telerik:RadPanelBar>
+<!-- #endregion -->
+</Grid>
+</UserControl>

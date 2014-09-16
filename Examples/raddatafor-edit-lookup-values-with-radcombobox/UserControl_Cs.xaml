@@ -1,0 +1,81 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddatafor-edit-lookup-values-with-radcombobox_9 -->
+<UserControl.Resources>
+ <my:MyViewModel x:Key="MyViewModel" />
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource MyViewModel}">
+ <Grid.Resources>   
+  <DataTemplate x:Key="MyTemplate">
+   <Grid>
+              <Grid.ColumnDefinitions>
+     <ColumnDefinition/>
+     <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+   <Grid.RowDefinitions>
+     <RowDefinition/>
+     <RowDefinition/>
+   </Grid.RowDefinitions>
+   <telerik:DataFormDataField Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" Grid.Row="0" Grid.Column="0"/>
+   <telerik:DataFormDataField Label="Last Name" DataMemberBinding="{Binding LastName, Mode=TwoWay}" Grid.Row="0" Grid.Column="1"/>
+   <telerik:DataFormComboBoxField SelectedValuePath="ID" DisplayMemberPath="Name"
+                                  Grid.Row="2" Grid.Column="1" DataMemberBinding="{Binding CountryID, Mode=TwoWay}" 
+                                  ItemsSource="{Binding Countries, Source={StaticResource MyViewModel}}" />
+   </Grid>
+  </DataTemplate>
+ </Grid.Resources>
+ <telerik:RadDataForm x:Name="DataForm1"
+    AutoGenerateFields="False"
+    Header="Person" 
+    ItemsSource="{Binding Persons}"
+    ReadOnlyTemplate="{StaticResource MyTemplate}"
+    EditTemplate="{StaticResource MyTemplate}"
+    NewItemTemplate="{StaticResource MyTemplate}">
+ </telerik:RadDataForm>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region raddatafor-edit-lookup-values-with-radcombobox_10 -->
+<Window.Resources>
+ <my:MyViewModel x:Key="MyViewModel" />
+</Window.Resources>
+<Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource MyViewModel}">
+ <Grid.Resources>   
+  <DataTemplate x:Key="MyTemplate">
+   <Grid>
+              <Grid.ColumnDefinitions>
+     <ColumnDefinition/>
+     <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+   <Grid.RowDefinitions>
+     <RowDefinition/>
+     <RowDefinition/>
+   </Grid.RowDefinitions>
+   <telerik:DataFormDataField Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" Grid.Row="0" Grid.Column="0"/>
+   <telerik:DataFormDataField Label="Last Name" DataMemberBinding="{Binding LastName, Mode=TwoWay}" Grid.Row="0" Grid.Column="1"/>
+   <telerik:DataFormComboBoxField SelectedValuePath="ID" DisplayMemberPath="Name"
+      Grid.Row="2" Grid.Column="1"                    DataMemberBinding="{Binding CountryID, Mode=TwoWay}" 
+                                                ItemsSource="{Binding Countries, Source={StaticResource MyViewModel}}" />
+   </Grid>
+  </DataTemplate>
+ </Grid.Resources>
+ <telerik:RadDataForm x:Name="DataForm1"
+    AutoGenerateFields="False"
+    Header="Person" 
+    ItemsSource="{Binding Persons}"
+    ReadOnlyTemplate="{StaticResource MyTemplate}"
+    EditTemplate="{StaticResource MyTemplate}"
+    NewItemTemplate="{StaticResource MyTemplate}">
+ </telerik:RadDataForm>
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

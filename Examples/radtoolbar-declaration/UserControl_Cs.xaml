@@ -1,0 +1,44 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtoolbar-declaration_1 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+<telerik:RadToolBar />
+<!-- #endregion -->
+
+<!-- #region radtoolbar-declaration_3 -->
+xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation
+<telerik:RadToolBar>
+<Button Content="Button" />
+</telerik:RadToolBar>
+<!-- #endregion -->
+
+<!-- #region radtoolbar-declaration_5 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+<telerik:RadToolBar>
+<Button Content="Button" telerik:RadToolBar.OverflowMode="Always"/>
+</telerik:RadToolBar>
+<!-- #endregion -->
+
+<!-- #region radtoolbar-declaration_7 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+<telerik:RadToolBar ItemsSource="{Binding Source={StaticResource MyToolBarItemsCollection}}" />
+<!-- #endregion -->
+
+<!-- #region radtoolbar-declaration_9 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+<telerik:RadToolBarTray>
+<telerik:RadToolBar Band="0" BandIndex="0" />
+<telerik:RadToolBar Band="0" BandIndex="1" />
+<telerik:RadToolBar Band="1" BandIndex="0" />
+</telerik:RadToolBarTray>
+<!-- #endregion -->
+</Grid>
+</UserControl>

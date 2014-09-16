@@ -1,0 +1,27 @@
+---
+title: How to Change the Tab Items Orientation
+page_title: How to Change the Tab Items Orientation
+description: How to Change the Tab Items Orientation
+slug: radtabcontrol-how-to-change-the-tab-items-orientation
+tags: how,to,change,the,tab,items,orientation
+publish: True
+position: 3
+---
+
+# How to Change the Tab Items Orientation
+
+
+
+## 
+
+See how to change the tab orientation
+        [here](5CF866DE-453C-48CF-A4EB-2A4F717AD728#Set_Tab_Orientation).
+        
+
+# See Also
+
+ * [How to Change the Tab Template]({%slug radtabcontrol-how-to-change-the-tab-template%})
+
+ * [To Which Assemblies do I Have to Add Reference in my Project]({%slug radtabcontrol-needed-assemblies%})
+
+ * [How to Change the Position of the Tab Strip of RadTabControl]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%})

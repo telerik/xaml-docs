@@ -1,0 +1,56 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+<!-- #region raddocking-how-to-add-menu-items-to-the-radpanes-menu_2_1 -->
+<DataTemplate x:Key="ContextMenuTemplate">
+	<telerik:RadContextMenu InheritDataContext="False">
+		<telerik:RadMenuItem 
+                    IsChecked="{Binding IsFloatingOnly}"
+                    Command="telerik:RadDockingCommands.Floating" 
+                    CommandParameter="{Binding}"                
+                    CommandTarget="{Binding}"
+                    Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}" />
+
+		<telerik:RadMenuItem 
+                    IsChecked="{Binding IsDockableOptionChecked}" 
+                    Command="telerik:RadDockingCommands.Dockable" 
+                    CommandParameter="{Binding}"
+                    CommandTarget="{Binding}"
+                    Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}" />
+
+		<telerik:RadMenuItem 
+                    Command="local:RadDockingCommands.CloseAllPanesButThisCommand"
+					CommandParameter="{Binding}" 
+                    CommandTarget="{Binding}"
+                    Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}" />
+	</telerik:RadContextMenu>
+</DataTemplate>
+
+<Style TargetType="telerik:RadPane">
+	<Setter Property="ContextMenuTemplate" Value="{StaticResource ContextMenuTemplate}" />
+</Style>
+<!-- #endregion -->
+
+<!-- #region raddocking-how-to-add-menu-items-to-the-radpanes-menu_5 -->
+<telerik:RadDocking x:Name="radDocking">
+    <telerik:RadDocking.DocumentHost>
+        <telerik:RadSplitContainer>
+            <telerik:RadPaneGroup>
+                <telerik:RadPane x:Name="radPane"
+                                    Title="Pane 1"
+                                    ContextMenuTemplate="{x:Null}">
+                    <TextBlock Text="Some simple text here" />
+                </telerik:RadPane>
+            </telerik:RadPaneGroup>
+        </telerik:RadSplitContainer>
+    </telerik:RadDocking.DocumentHost>
+</telerik:RadDocking>
+<!-- #endregion -->
+</Grid>
+</UserControl>

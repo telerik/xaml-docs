@@ -1,0 +1,18 @@
+<UserControl x:Class="ApplicationX.MainPage_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 <!-- #region radbarcodeqr-getting-started-telerik-xmlns-definition -->
+			 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			 <!-- #endregion -->
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+<!-- #region radbarcodereader-overview -->
+<!--The values below are the default ones, so you do not need to specify them-->
+<telerik:RadBarcodeReader OpenButtonText="Choose Image" DecodeButtonText="Decode Image"/>
+<!-- #endregion -->
+	</Grid>
+</UserControl>
+

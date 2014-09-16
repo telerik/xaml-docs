@@ -1,0 +1,58 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-retrieving-checked-items_2 -->
+<UserControl.Resources>
+    <DataTemplate x:Key="MemberTemplate">
+        <TextBlock Text="{Binding Name}" />
+    </DataTemplate>
+    <telerik:HierarchicalDataTemplate x:Key="FamilyTemplate"
+                                      ItemsSource="{Binding Members}"
+                                      ItemTemplate="{StaticResource MemberTemplate}">
+        <TextBlock Text="{Binding Name}" />
+    </telerik:HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot"
+      Background="White">
+    <telerik:RadTreeView x:Name="radTreeView"
+                                   IsOptionElementsEnabled="True"
+                                   ItemsOptionListType="CheckList"
+                                   ItemTemplate="{StaticResource FamilyTemplate}">
+    </telerik:RadTreeView>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radtreeview-retrieving-checked-items_15 -->
+<Style x:Key="TreeViewItemStyle" TargetType="telerik:RadTreeViewItem">
+     <Setter Property="CheckState" Value="{Binding IsChecked, Mode=TwoWay, Converter={StaticResource CheckStateConverter}}" />
+</Style>
+<!-- #endregion -->
+
+<!-- #region radtreeview-retrieving-checked-items_16 -->
+<telerik:ContainerBindingCollection x:Key="TreeViewItemContainerBindings">
+     <telerik:ContainerBinding PropertyName="CheckState" Binding="{Binding IsChecked, Mode=TwoWay, Converter={StaticResource CheckStateConverter}}" />
+</telerik:ContainerBindingCollection>
+<!-- #endregion -->
+
+<!-- #region radtreeview-retrieving-checked-items_19 -->
+<UserControl.Resources>
+    <DataTemplate x:Key="MemberTemplate">
+        <TextBlock Text="{Binding Name}" />
+    </DataTemplate>
+    <telerik:HierarchicalDataTemplate x:Key="FamilyTemplate"
+                                      ItemsSource="{Binding Members}"
+                                      ItemTemplate="{StaticResource MemberTemplate}"
+                                      telerik:ContainerBinding.ContainerBindings="{StaticResource TreeViewItemContainerBindings}">
+        <TextBlock Text="{Binding Name}" />
+    </telerik:HierarchicalDataTemplate>
+</UserControl.Resources>
+<!-- #endregion -->
+</Grid>
+</UserControl>

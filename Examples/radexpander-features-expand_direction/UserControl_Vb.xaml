@@ -1,0 +1,48 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radexpander-features-expand_direction_0 -->
+<Grid x:Name="LayoutRoot" Background="White" Height="444" Width="555" Width="555" ShowGridLines="True">
+<Grid.RowDefinitions>
+<RowDefinition Height="*" />
+<RowDefinition Height="*" />
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*" />
+<ColumnDefinition Width="*" />
+</Grid.ColumnDefinitions>
+<telerik:RadExpander Header="Down" Grid.Row="0" Grid.Column="0"
+     ExpandDirection="Down" VerticalAlignment="Top">
+<StackPanel Orientation="Vertical">
+<Ellipse Width="99" Height="99" Margin="5" Fill="Yellow" />
+</StackPanel>
+</telerik:RadExpander>
+<telerik:RadExpander Header="Up" Grid.Row="0" Grid.Column="1"
+     ExpandDirection="Up" VerticalAlignment="Bottom">
+<StackPanel Orientation="Vertical">
+<Ellipse Width="99" Height="99" Margin="5" Fill="Blue" />
+</StackPanel>
+</telerik:RadExpander>
+<telerik:RadExpander Header="Right" Grid.Row="1" Grid.Column="0"
+     ExpandDirection="Right" HorizontalAlignment="Left">
+<StackPanel Orientation="Horizontal">
+<Ellipse Width="99" Height="99" Margin="5" Fill="Red" />
+</StackPanel>
+</telerik:RadExpander>
+<telerik:RadExpander Header="Left" Grid.Row="1" Grid.Column="1"
+     ExpandDirection="Left" HorizontalAlignment="Right">
+<StackPanel Orientation="Horizontal">
+<Ellipse Width="99" Height="99" Margin="5" Fill="Green" />
+</StackPanel>
+</telerik:RadExpander>
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

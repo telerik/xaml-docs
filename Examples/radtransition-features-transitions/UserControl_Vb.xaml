@@ -1,0 +1,84 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtransition-features-transitions_0 -->
+<telerik:RadTransitionControl x:Name="radTRansitionControl">
+    <telerik:RadTransitionControl.Transition>
+        <telerikTransitions:FadeTransition />
+    </telerik:RadTransitionControl.Transition>
+</telerik:RadTransitionControl>
+<!-- #endregion -->
+
+<!-- #region radtransition-features-transitions_1 -->
+<telerik:RadTransitionControl x:Name="radTRansitionControl">
+    <telerik:RadTransitionControl.Transition>
+        <telerikTransitions:FadeTransition />
+    </telerik:RadTransitionControl.Transition>
+</telerik:RadTransitionControl>
+<!-- #endregion -->
+
+<!-- #region radtransition-features-transitions_2 -->
+<telerik:RadTransitionControl x:Name="radTRansitionControl">
+    <telerik:RadTransitionControl.Transition>
+        <telerikTransitions:LinearFadeTransition Darker="0.5"
+                                                 Angle="0.5"
+                                                 Thickness="0.5" />
+    </telerik:RadTransitionControl.Transition>
+</telerik:RadTransitionControl>
+<!-- #endregion -->
+
+<!-- #region radtransition-features-transitions_3 -->
+<telerik:RadTransitionControl x:Name="radTRansitionControl">
+    <telerik:RadTransitionControl.Transition>
+        <telerikTransitions:MotionBlurredZoomTransition Center="0.5,0.5"
+                                                        InBlurRatio="0.3"
+                                                        OutBlurRatio="-0.3"
+                                                        Samples="7" />
+    </telerik:RadTransitionControl.Transition>
+</telerik:RadTransitionControl>
+<!-- #endregion -->
+
+<!-- #region radtransition-features-transitions_4 -->
+<telerik:RadTransitionControl x:Name="radTRansitionControl">
+    <telerik:RadTransitionControl.Transition>
+        <telerikTransitions:RollTransition InterpolationFunction="2"
+                                            IsRollOut="False"
+                                            IsTopToBottom="True"
+                                            Orientation="Vertical"
+                                            LightIntensity="0.5"
+                                            RelativeRollWidth="0.15"
+                                            RollSize="0.15" />
+    </telerik:RadTransitionControl.Transition>
+</telerik:RadTransitionControl>
+<!-- #endregion -->
+
+<!-- #region radtransition-features-transitions_5 -->
+<telerik:RadTransitionControl x:Name="radTRansitionControl">
+    <telerik:RadTransitionControl.Transition>
+        <telerikTransitions:SlideAndZoomTransition MinAlpha="0.1"
+                                                    MinZoom="0.9"
+                                                    SlideDirection="LeftToRight"
+                                                    StartSlideAt="0.25" />
+    </telerik:RadTransitionControl.Transition>
+</telerik:RadTransitionControl>
+<!-- #endregion -->
+
+<!-- #region radtransition-features-transitions_6 -->
+<telerik:RadTransitionControl x:Name="radTRansitionControl">
+    <telerik:RadTransitionControl.Transition>
+    <telerik:RadTransitionControl.Transition>
+        <telerikTransitions:WaveTransition Amplitude="0.2"
+                                            Angle="0.5"
+                                            Fade="0.7" />
+    </telerik:RadTransitionControl.Transition>
+</telerik:RadTransitionControl>
+<!-- #endregion -->
+</Grid>
+</UserControl>

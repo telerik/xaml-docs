@@ -1,0 +1,31 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radwindow-using-confirm_3 -->
+Public Sub Confirm()
+        RadWindow.Confirm(New DialogParameters _
+                        With {.Header = "Confirm Message", _
+                              .Closed = New EventHandler(Of WindowClosedEventArgs)(AddressOf OnWindowClosed), _
+                              .Opened = New EventHandler(AddressOf OnWindowOpened), _
+                              .Content = "Are you sure you want to do this?", _
+                              .OkButtonContent = "Yes", _
+                              .CancelButtonContent = "No"})
+    End Sub
+    Private Sub OnWindowClosed(ByVal sender As Object, ByVal e As WindowClosedEventArgs)
+        RadWindow.Alert(String.Format("DialogResult: {0}, PromptResult: {1}", e.DialogResult, e.PromptResult))
+    End Sub
+    Private Sub OnWindowOpened(ByVal sender As Object, ByVal e As EventArgs)
+        Dim window As RadWindow = sender
+        window.DialogResult = True
+        window.Close()
+    End Sub
+<!-- #endregion -->
+</Grid>
+</UserControl>

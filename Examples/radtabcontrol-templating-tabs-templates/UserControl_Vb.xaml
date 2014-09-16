@@ -1,0 +1,70 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtabcontrol-templating-tabs-templates_0 -->
+<ControlTemplate x:Key="TabItemTemplate" TargetType="telerik:RadTabItem">
+    <Grid x:Name="wrapper">
+        <vsm:VisualStateManager.VisualStateGroups>
+            ... The VisualStates are hidden, because they aren’t important now.
+        </vsm:VisualStateManager.VisualStateGroups>
+        <Border Margin="0 2" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1 1 0 1" CornerRadius="3 0 0 3"/>
+        <Border Margin="0 2" x:Name="Bg" Opacity="0" Background="{StaticResource TabBackground_MouseOver}" BorderBrush="{StaticResource TabBorder_MouseOver}" BorderThickness="1,1,0,1" CornerRadius="3,0,0,3"/>
+        <Grid x:Name="HeaderWrapper">
+            <Telerik_Windows_Controls_Primitives:TabItemContentPresenter HorizontalAlignment="Center" Margin="{TemplateBinding Padding}" x:Name="HeaderElement" VerticalAlignment="Center" Foreground="{TemplateBinding Foreground}" Content="{TemplateBinding Header}" ContentTemplate="{TemplateBinding HeaderTemplate}"/>
+        </Grid>
+    </Grid>
+</ControlTemplate>
+<Style x:Key="RadTabItemStyle" TargetType="telerik:RadTabItem">
+    <Setter Property="Template" Value="{StaticResource TabItemTemplate}"/>
+</Style>
+<!-- #endregion -->
+
+<!-- #region radtabcontrol-templating-tabs-templates_1 -->
+<DataTemplate x:Key="DataTemplate">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" />
+        <TextBlock Grid.Column="1" />
+    </Grid>
+</DataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtabcontrol-templating-tabs-templates_2 -->
+<DataTemplate x:Key="DataTemplate">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0"
+                   Source="{Binding IconPath}" />
+        <TextBlock Grid.Column="1"
+                       Text="{Binding Title}" />
+    </Grid>
+</DataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtabcontrol-templating-tabs-templates_3 -->
+<DataTemplate x:Key="ContentDataTemplate">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source=”{Binding ImagePath}” />
+        <TextBlock Grid.Column="1" TextWrapping="Wrap" Text=”{Binding Description}” />
+    </Grid>
+ </DataTemplate>
+<!-- #endregion -->
+</Grid>
+</UserControl>

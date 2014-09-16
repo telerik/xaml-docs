@@ -1,0 +1,39 @@
+<UserControl x:Class="GanttViewArticleProject.MainPage"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			 xmlns:example="clr-namespace:GanttViewArticleProject"
+			 mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+    <Grid>
+            
+    
+
+<!-- #region radganttview-filteringtimeruleritems_0 -->
+<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
+	<telerik:RadGanttView.TimeLineFilteringBehavior>
+		<telerik:SingleRangeGenerator />
+	</telerik:RadGanttView.TimeLineFilteringBehavior>
+</telerik:RadGanttView>
+<!-- #endregion -->
+
+<!-- #region radganttview-filteringtimeruleritems_1 -->
+<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
+	<telerik:RadGanttView.TimeLineFilteringBehavior>
+		<telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
+	</telerik:RadGanttView.TimeLineFilteringBehavior>
+</telerik:RadGanttView>
+<!-- #endregion -->
+
+<!-- #region radganttview-filteringtimeruleritems_2 -->
+<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
+	<telerik:RadGanttView.TimeLineFilteringBehavior>
+		<example:CustomRangeGenerator />
+	</telerik:RadGanttView.TimeLineFilteringBehavior>
+</telerik:RadGanttView>
+<!-- #endregion -->
+
+
+</Grid>
+</UserControl>

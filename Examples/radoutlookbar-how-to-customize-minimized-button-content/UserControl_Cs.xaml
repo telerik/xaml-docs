@@ -1,0 +1,36 @@
+<UserControl x:Class="RadOutlookBarDataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        mc:Ignorable="d" 
+        d:DesignHeight="300" d:DesignWidth="300"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Grid>
+
+        <!--  #region radoutlookbar-how-to-customize-minimized-button-content-0  -->
+        <telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button">
+		<!-- #endregion -->
+
+        <!--  #region radoutlookbar-how-to-customize-minimized-button-content-1  -->
+            <telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button" IsMinimized="True">
+                <telerik:RadOutlookBar.MinimizedButtonContentTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Polygon Points="8,0 0,5, 8,10" Fill="OrangeRed" Margin="0 0 5 0 " VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding}" FontWeight="Bold" Foreground="OrangeRed" />
+                            <Polygon Points="0,0 8,5, 0,10" Fill="OrangeRed" Margin="5 0 0 0 " VerticalAlignment="Center" />
+                        </StackPanel>
+                    </DataTemplate>
+                </telerik:RadOutlookBar.MinimizedButtonContentTemplate>
+
+                <telerik:RadOutlookBarItem Header="Contacts" Icon="contacts.png" />
+                <telerik:RadOutlookBarItem Header="Folders" Icon="folders.png" />
+                <telerik:RadOutlookBarItem Header="Mail" Icon="mail.png" />
+            </telerik:RadOutlookBar>
+            <!-- #endregion -->
+    </Grid>
+</UserControl>
+

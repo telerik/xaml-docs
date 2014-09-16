@@ -1,0 +1,99 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region gridview-how-to-create-hierarchical-grid-with-ria_0 -->
+<Grid x:Name="LayoutRoot" Background="White">
+ <telerik:RadDomainDataSource x:Name="customersDomainDataSource" QueryName="GetCustomers" AutoLoad="True">
+  <telerik:RadDomainDataSource.DomainContext>
+   <local:CustomerDomainContext />
+  </telerik:RadDomainDataSource.DomainContext>
+ </telerik:RadDomainDataSource>
+ <telerik:RadGridView x:Name="customersGrid" ItemsSource="{Binding DataView, ElementName=customersDomainDataSource}">
+  <telerik:RadGridView.ChildTableDefinitions>
+   <telerik:GridViewTableDefinition />
+  </telerik:RadGridView.ChildTableDefinitions>
+  <telerik:RadGridView.HierarchyChildTemplate>
+   <DataTemplate>
+    <Grid>
+     <telerik:RadDomainDataSource x:Name="ordersDomainDataSource" QueryName="GetOrders" AutoLoad="True">
+      <telerik:RadDomainDataSource.DomainContext>
+       <local:CustomerDomainContext />
+      </telerik:RadDomainDataSource.DomainContext>
+     </telerik:RadDomainDataSource>
+     <telerik:RadGridView x:Name="ordersGrid" ItemsSource="{Binding DataView, ElementName=ordersDomainDataSource}" />
+    </Grid>      
+   </DataTemplate>
+  </telerik:RadGridView.HierarchyChildTemplate>
+ </telerik:RadGridView>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region gridview-how-to-create-hierarchical-grid-with-ria_1 -->
+<UserControl x:Class="Hierarchy_RIA.MainPage">
+ <UserControl.Resources>
+  <telerik:RadDomainDataSource x:Name="customersDomainDataSource" QueryName="GetCustomers" AutoLoad="True">
+   <telerik:RadDomainDataSource.DomainContext>
+    <local:CustomerDomainContext />
+   </telerik:RadDomainDataSource.DomainContext>
+  </telerik:RadDomainDataSource>
+  <telerik:RadDomainDataSource x:Name="ordersDomainDataSource" QueryName="GetOrders" AutoLoad="True">
+   <telerik:RadDomainDataSource.DomainContext>
+    <local:CustomerDomainContext />
+   </telerik:RadDomainDataSource.DomainContext>
+  </telerik:RadDomainDataSource>
+ </UserControl.Resources>
+ <Grid x:Name="LayoutRoot" Background="White">
+  <telerik:RadGridView x:Name="customersGrid" ItemsSource="{Binding DataView, Source={StaticResource customersDomainDataSource}}">
+   <telerik:RadGridView.ChildTableDefinitions>
+    <telerik:GridViewTableDefinition />
+   </telerik:RadGridView.ChildTableDefinitions>
+   <telerik:RadGridView.HierarchyChildTemplate>
+    <DataTemplate>    
+     <telerik:RadGridView x:Name="ordersGrid" ItemsSource="{Binding DataView, Source={StaticResource ordersDomainDataSource}}" />         
+    </DataTemplate>
+   </telerik:RadGridView.HierarchyChildTemplate>
+  </telerik:RadGridView>
+ </Grid>
+</UserControl>
+<!-- #endregion -->
+
+<!-- #region gridview-how-to-create-hierarchical-grid-with-ria_3 -->
+<UserControl.Resources>
+ <telerik:RadDomainDataSource x:Key="customers" QueryName="GetCustomers" AutoLoad="True">
+  <telerik:RadDomainDataSource.DomainContext>
+   <local:CustomerDomainContext />
+  </telerik:RadDomainDataSource.DomainContext>
+ </telerik:RadDomainDataSource>  
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+ <telerik:RadGridView x:Name="customersGrid" ItemsSource="{Binding DataView, Source={StaticResource customers}}">
+  <telerik:RadGridView.ChildTableDefinitions>
+   <telerik:GridViewTableDefinition />
+  </telerik:RadGridView.ChildTableDefinitions>
+  <telerik:RadGridView.HierarchyChildTemplate>
+   <DataTemplate>
+    <StackPanel>
+     <telerik:RadDomainDataSource x:Name="orders" QueryName="GetOrdersByCustomerID" AutoLoad="True">
+      <telerik:RadDomainDataSource.DomainContext>
+       <local:CustomerDomainContext />
+      </telerik:RadDomainDataSource.DomainContext>       
+      <telerik:RadDomainDataSource.QueryParameters>
+       <telerik:QueryParameter ParameterName="customerID" Value="{Binding CustomerID}" />
+      </telerik:RadDomainDataSource.QueryParameters>     
+     </telerik:RadDomainDataSource>     
+     <telerik:RadGridView x:Name="ordersGrid" ItemsSource="{Binding DataView, ElementName=orders}" />
+    </StackPanel>
+   </DataTemplate>
+  </telerik:RadGridView.HierarchyChildTemplate>
+         </telerik:RadGridView>
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

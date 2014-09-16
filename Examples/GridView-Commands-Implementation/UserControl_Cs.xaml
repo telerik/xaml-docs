@@ -1,0 +1,40 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+   
+<!-- #region GridView-Commands-Implementation_0 -->
+<telerik:GridViewColumn>
+  <telerik:GridViewColumn.CellTemplate>
+     <DataTemplate>
+         <telerik:RadButton Content="Delete" Command="telerikGrid:RadGridViewCommands.Delete" CommandParameter="{Binding}" />
+     </DataTemplate>
+  </telerik:GridViewColumn.CellTemplate>
+</telerik:GridViewColumn>
+<!-- #endregion -->
+
+<!-- #region GridView-Commands-Implementation_1 -->
+<telerik:RadButton Width="150" Content="Save insert/edit" 
+                   Command="telerikGrid:RadGridViewCommands.CommitEdit" 
+                   CommandTarget="{Binding ElementName=RadGridView1}"  />
+<!-- #endregion -->
+
+<!-- #region GridView-Commands-Implementation_2 -->
+public MainPage()
+{
+           ICommand deleteCommand = RadGridViewCommands.Delete;
+           ICommand beginInsertCommand = RadGridViewCommands.BeginInsert;
+           ICommand cancelRowEditCommand = RadGridViewCommands.CancelRowEdit;
+           ICommand commitEditCommand = RadGridViewCommands.CommitEdit;
+           InitializeComponent();
+}
+<!-- #endregion -->
+<!-- #region GridView-Commands-Implementation_3 -->
+xmlns:telerikGrid="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView"
+<!-- #endregion -->
+</Grid>
+</UserControl>

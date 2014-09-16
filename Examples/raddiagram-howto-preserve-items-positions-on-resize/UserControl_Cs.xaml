@@ -1,0 +1,20 @@
+﻿<telerik:RadDiagram IsManipulationAdornerVisible="False" IsConnectorsManipulationEnabled="False" 
+				x:Name="diagram" Width="1000" Height="500" Grid.Row="1">
+				<telerik:RadDiagramShape Width="45" Height="45" Content="Parent" x:Name="parentShape"/>
+				<telerik:RadDiagramShape Width="45" Height="45" Content="Child1" x:Name="childShape1"/>
+				<telerik:RadDiagramShape Width="45" Height="45" Content="Child2" x:Name="childShape2"/>
+				<telerik:RadDiagramShape Width="45" Height="45" Content="Child2" x:Name="childShape3" />
+				<telerik:RadDiagramShape Width="55" Height="25" Content="Child11" x:Name="subchildShape1" />
+				<telerik:RadDiagramShape Width="55" Height="25" Content="Child12" x:Name="subchildShape2" />
+				<telerik:RadDiagramConnection Source="{Binding ElementName=parentShape}" 
+											  Target="{Binding ElementName=childShape1}" />
+				<telerik:RadDiagramConnection Source="{Binding ElementName=childShape1}"
+											  Target="{Binding ElementName=subchildShape1}" />
+					<telerik:RadDiagramConnection Source="{Binding ElementName=childShape1}"
+												  Target="{Binding ElementName=subchildShape2}" />
+					<telerik:RadDiagramConnection Source="{Binding ElementName=parentShape}" 
+												  Target="{Binding ElementName=childShape2}" />
+				<telerik:RadDiagramConnection Source="{Binding ElementName=parentShape}"
+											  Target="{Binding ElementName=childShape3}" />	
+
+</telerik:RadDiagram>

@@ -1,0 +1,33 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer_0 -->
+<telerikDocuments:RadRichTextBox x:Name="radRichTextBox"
+                                 IsReadOnly="True">
+   ...
+</telerikDocuments:RadRichTextBox>
+<!-- #endregion -->
+
+<!-- #region radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer_1 -->
+<telerikDocuments:RadRichTextBox x:Name="radRichTextBox"
+                                    IsReadOnly="True"
+                                    Background="White">
+    <telerikDocuments:RadRichTextBox.Document>
+        <telerikDocumentsModel:RadDocument LayoutMode="Flow"
+                                            PageViewMargin="0,0,0,0">
+            <telerikDocumentsModel:Section PageMargin="0,0,0,0">
+  ...
+            </telerikDocumentsModel:Section>
+        </telerikDocumentsModel:RadDocument>
+    </telerikDocuments:RadRichTextBox.Document>
+</telerikDocuments:RadRichTextBox>
+<!-- #endregion -->
+</Grid>
+</UserControl>

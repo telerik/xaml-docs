@@ -1,0 +1,60 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddocking-how-to-add-icon-pane-header_0 -->
+<telerik:RadDocking x:Name="radDocking">
+    <telerik:RadSplitContainer>
+        <telerik:RadPaneGroup >
+            <telerik:RadPane Header="Pane 1">
+                <TextBlock Text="Some simple text here"/>
+            </telerik:RadPane>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>
+    <telerik:RadSplitContainer>
+        <telerik:RadPaneGroup >
+            <telerik:RadPane Header="Pane 2">
+                <TextBlock Text="Some simple text here"/>
+            </telerik:RadPane>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>
+</telerik:RadDocking>
+<!-- #endregion -->
+
+<!-- #region raddocking-how-to-add-icon-pane-header_1 -->
+<UserControl.Resources>
+    <DataTemplate x:Key="HeaderTemplate">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding}"/>
+            <Image Source="Icon.jpg" Width="16" Height="16"/>
+        </StackPanel>
+    </DataTemplate>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region raddocking-how-to-add-icon-pane-header_2 -->
+<telerik:RadDocking x:Name="radDocking">
+    <telerik:RadSplitContainer>
+        <telerik:RadPaneGroup>
+            <telerik:RadPane Header="Pane 1" HeaderTemplate="{StaticResource HeaderTemplate}">
+               <TextBlock Text="Some simple text here"/>
+            </telerik:RadPane>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>
+    <telerik:RadSplitContainer>
+        <telerik:RadPaneGroup >
+            <telerik:RadPane Header="Pane 2" HeaderTemplate="{StaticResource HeaderTemplate}">
+                <TextBlock Text="Some simple text here"/>
+            </telerik:RadPane>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>
+</telerik:RadDocking>
+<!-- #endregion -->
+</Grid>
+</UserControl>

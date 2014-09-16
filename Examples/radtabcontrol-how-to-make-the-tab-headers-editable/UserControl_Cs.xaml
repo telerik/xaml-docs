@@ -1,0 +1,85 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtabcontrol-how-to-make-the-tab-headers-editable_2 -->
+<Style TargetType="example:EditableTabHeader">
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="example:EditableTabHeader">
+                <Grid>
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="EditStates">
+                            <VisualState x:Name="EditMode">
+                                <Storyboard>
+                                    <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="ContentPresenter"
+                                            Storyboard.TargetProperty="Visibility">
+                                        <DiscreteObjectKeyFrame KeyTime="0">
+                                            <DiscreteObjectKeyFrame.Value>
+                                                <Visibility>Collapsed</Visibility>
+                                            </DiscreteObjectKeyFrame.Value>
+                                        </DiscreteObjectKeyFrame>
+                                    </ObjectAnimationUsingKeyFrames>
+                                    <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="TextBox"
+                                            Storyboard.TargetProperty="Visibility">
+                                        <DiscreteObjectKeyFrame KeyTime="0">
+                                            <DiscreteObjectKeyFrame.Value>
+                                                <Visibility>Visible</Visibility>
+                                            </DiscreteObjectKeyFrame.Value>
+                                        </DiscreteObjectKeyFrame>
+                                    </ObjectAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </VisualState>
+                            <VisualState x:Name="ViewMode">
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                    <ContentPresenter Content="{TemplateBinding Content}"
+                            x:Name="ContentPresenter"
+                            ContentTemplate="{TemplateBinding ContentTemplate}" />
+                    <TextBox Text="{TemplateBinding Content}" x:Name="TextBox"
+                            Visibility="Collapsed" />
+                </Grid>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+<!-- #endregion -->
+
+<!-- #region radtabcontrol-how-to-make-the-tab-headers-editable_5 -->
+<UserControl x:Class="CSharp.RadTabControl.HowTo_EditableTabHeader.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"   
+    xmlns:example="clr-namespace:CSharp.RadTabControl.HowTo_EditableTabHeader"
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <telerik:RadTabControl x:Name="radTabControl">
+            <telerik:RadTabControl.ContentTemplate>
+                <!--The Content Template:-->
+                <DataTemplate>
+                    <Grid Background="WhiteSmoke">
+                        <TextBlock Text="{Binding Content}" />
+                    </Grid>
+                </DataTemplate>
+            </telerik:RadTabControl.ContentTemplate>
+            <telerik:RadTabControl.ItemTemplate>
+                <!--The Header Template:-->
+                <DataTemplate>
+                    <example:EditableTabHeader Content="{Binding Name, Mode=TwoWay}" />
+                </DataTemplate>
+            </telerik:RadTabControl.ItemTemplate>
+        </telerik:RadTabControl>
+    </Grid>
+</UserControl>
+<!-- #endregion -->
+</Grid>
+</UserControl>

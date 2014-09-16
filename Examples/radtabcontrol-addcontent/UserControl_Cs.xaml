@@ -1,0 +1,108 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtabcontrol-addcontent_0 -->
+<telerik:RadTabControl x:Name="tabControl" Height="200">
+<telerik:RadTabItem Header="item1" Content="SomeContent"/>
+<telerik:RadTabItem Header="item2" />
+<telerik:RadTabItem Header="item3" />
+</telerik:RadTabControl>
+<!-- #endregion -->
+
+<!-- #region radtabcontrol-addcontent_1 -->
+<telerik:RadTabControl FontSize="15" Height="400" x:Name="tabControl" Margin="10">
+<telerik:RadTabItem Header="Products">
+<telerik:RadTabControl x:Name="Products" BorderThickness="0"
+SelectionChanged="Products_SelectionChanged">
+<telerik:RadTabItem Tag="0">
+<telerik:RadTabItem.Header>
+<StackPanel Orientation="Horizontal">
+<Image Source="/Examples/Common/Images/TabControl/Categories/beverages.png"
+Height="16" Width="16" />
+<TextBlock Text="Beverages" Margin="3,0,0,0" />
+</StackPanel>
+</telerik:RadTabItem.Header>
+<grid:RadGridView x:Name="Category1" AutoGenerateColumns="False">
+<grid:RadGridView.Columns>
+<grid:GridViewDataColumn IsReadOnly="False" Width="300"
+HeaderText="Product Name" UniqueName="ProductName" />
+<grid:GridViewDataColumn HeaderText="Units In Stack" Width="150"
+UniqueName="UnitsInStack" />
+<grid:GridViewDataColumn HeaderText="Unit Price" Width="*"
+UniqueName="UnitPrice" />
+</grid:RadGridView.Columns>
+</grid:RadGridView>
+</telerik:RadTabItem>
+<telerik:RadTabItem Tag="1">
+<telerik:RadTabItem.Header>
+<StackPanel Orientation="Horizontal">
+<Image Source="/Examples/Common/Images/TabControl/Categories/condiments.png"
+Height="16" Width="16" />
+<TextBlock Text="Condiments" Margin="3,0,0,0" />
+</StackPanel>
+</telerik:RadTabItem.Header>
+<grid:RadGridView x:Name="Category2" AutoGenerateColumns="False">
+<grid:RadGridView.Columns>
+<grid:GridViewDataColumn IsReadOnly="False" Width="300"
+HeaderText="Product Name" UniqueName="ProductName" />
+<grid:GridViewDataColumn HeaderText="Units In Stack" Width="150"
+UniqueName="UnitsInStack" />
+<grid:GridViewDataColumn HeaderText="Unit Price" Width="*"
+UniqueName="UnitPrice" />
+</grid:RadGridView.Columns>
+</grid:RadGridView>
+</telerik:RadTabItem>
+<telerik:RadTabItem Tag="2">
+<telerik:RadTabItem.Header>
+<StackPanel Orientation="Horizontal">
+<Image
+Source="/Examples/Common/Images/TabControl/Categories/confections.png"
+Height="16" Width="16" />
+<TextBlock Text="Confections" Margin="3,0,0,0" />
+</StackPanel>
+</telerik:RadTabItem.Header>
+<grid:RadGridView x:Name="Category3" AutoGenerateColumns="False">
+<grid:RadGridView.Columns>
+<grid:GridViewDataColumn IsReadOnly="False" Width="300"
+HeaderText="Product Name" UniqueName="ProductName" />
+<grid:GridViewDataColumn HeaderText="Units In Stack" Width="150"
+UniqueName="UnitsInStack" />
+<grid:GridViewDataColumn HeaderText="Unit Price" Width="*"
+UniqueName="UnitPrice" />
+</grid:RadGridView.Columns>
+</grid:RadGridView>
+</telerik:RadTabItem>
+</telerik:RadTabControl>
+</telerik:RadTabItem>
+<telerik:RadTabItem Header="Company Info">
+<grid:RadGridView x:Name="company" AutoGenerateColumns="False">
+<grid:RadGridView.Columns>
+<grid:GridViewDataColumn IsReadOnly="False" HeaderText="Name" Width="170"
+UniqueName="CompanyName" />
+<grid:GridViewDataColumn HeaderText="ContactTitle" Width="200"
+UniqueName="ContactTitle" />
+<grid:GridViewDataColumn HeaderText="Address" Width="*" UniqueName="Address" />
+</grid:RadGridView.Columns>
+</grid:RadGridView>
+</telerik:RadTabItem>
+<telerik:RadTabItem Header="Orders">
+<grid:RadGridView x:Name="orders" AutoGenerateColumns="False">
+<grid:RadGridView.Columns>
+<grid:GridViewDataColumn IsReadOnly="False" HeaderText="Order ID" Width="170"
+UniqueName="OrderID" />
+<grid:GridViewDataColumn HeaderText="Order Date" Width="200" UniqueName="OrderDate" />
+<grid:GridViewDataColumn HeaderText="Ship Name" Width="*" UniqueName="ShipName" />
+</grid:RadGridView.Columns>
+</grid:RadGridView>
+</telerik:RadTabItem>
+</telerik:RadTabControl>
+<!-- #endregion -->
+</Grid>
+</UserControl>

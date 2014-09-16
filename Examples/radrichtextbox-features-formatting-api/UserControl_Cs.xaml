@@ -1,0 +1,17 @@
+<UserControl x:Class="FormattingAPI.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <!-- #region radrichtextbox-features-formatting-api_0 -->
+        <StackPanel>
+            <telerik:RadToggleButton x:Name="BoldButton" Content="B" Padding="5" HorizontalAlignment="Left" Click="BoldButton_Click" />
+            <telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged" Height="200" />
+        </StackPanel>
+        <!-- #endregion -->
+    </Grid>
+</UserControl>

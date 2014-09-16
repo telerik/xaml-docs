@@ -1,0 +1,31 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region manually-declaring-namespace-in-xaml_0 -->
+xmlns:<Name of namespace>= “clr-namespace:Telerik.Windows.Controls;assembly=<Name of assembly>”
+<!-- #endregion -->
+
+<!-- #region manually-declaring-namespace-in-xaml_1 -->
+<UserControl
+    x:Class="SilverlightApplication1.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:telerikNav="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Background="White">
+    </Grid>
+</UserControl>
+<!-- #endregion -->
+
+<!-- #region manually-declaring-namespace-in-xaml_2 -->
+<telerikNav:RadTabControl></telerikNav:RadTabControl>
+<!-- #endregion -->
+</Grid>
+</UserControl>

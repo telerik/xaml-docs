@@ -1,0 +1,113 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_0 -->
+        <Grid>
+            <Grid.Resources>
+                <telerik:HierarchicalDataTemplate x:Key="treeViewTemplate" ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Title}" />
+                </telerik:HierarchicalDataTemplate>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+
+            <telerik:RadTreeView x:Name="treeView"
+                             Margin="8"
+                             HorizontalAlignment="Stretch"
+                             IsLoadOnDemandEnabled="True"
+                             IsVirtualizing="True"
+                             ItemTemplate="{StaticResource treeViewTemplate}"
+                             telerik:TextSearch.TextPath="Title" />
+
+            <StackPanel Grid.Column="1"
+                    Width="300"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top">
+                <Button Click="Button_Click_1" Content="Bring Item" />
+                <TextBox x:Name="userInput" />
+            </StackPanel>
+        </Grid>
+        <!-- #endregion -->
+
+<!-- #region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_7 -->
+<Grid x:Name="LayoutRoot" Background="White">
+    <Grid.Resources>
+        <telerik:HierarchicalDataTemplate x:Key="treeViewTemplate" ItemsSource="{Binding Children}">
+            <TextBlock Text="{Binding Title}" />
+        </telerik:HierarchicalDataTemplate>
+    </Grid.Resources>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="250"/>
+        <ColumnDefinition Width="300" />
+    </Grid.ColumnDefinitions>
+    <telerik:RadTreeView x:Name="radTreeView" 
+                                   Margin="8"
+                                   ItemTemplate="{StaticResource treeViewTemplate}"
+                                   IsLoadOnDemandEnabled="True"
+                                   LoadOnDemand="radTreeView_LoadOnDemand"/>
+
+<Button Content="Expand, Select and BringIntoView with LOD" Click="Button_Click" Grid.Column="1"/>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_22 -->
+        <Grid>
+            <Grid.Resources>
+                <HierarchicalDataTemplate x:Key="treeViewTemplate" ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Title}" />
+                </HierarchicalDataTemplate>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+
+            <telerik:RadTreeView x:Name="treeView"
+                             Margin="8"
+                             HorizontalAlignment="Stretch"
+                             IsLoadOnDemandEnabled="True"
+                             IsVirtualizing="True"
+                             ItemTemplate="{StaticResource treeViewTemplate}"
+                             telerik:TextSearch.TextPath="Title" />
+
+            <StackPanel Grid.Column="1"
+                    Width="300"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top">
+                <Button Click="Button_Click_1" Content="Bring Item" />
+                <TextBox x:Name="userInput" />
+            </StackPanel>
+        </Grid>
+        <!-- #endregion -->
+
+<!-- #region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_23 -->
+<Grid x:Name="LayoutRoot" Background="White">
+    <Grid.Resources>
+        <HierarchicalDataTemplate x:Key="treeViewTemplate" ItemsSource="{Binding Children}">
+            <TextBlock Text="{Binding Title}" />
+        </HierarchicalDataTemplate>
+    </Grid.Resources>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="250"/>
+        <ColumnDefinition Width="300" />
+    </Grid.ColumnDefinitions>
+    <telerik:RadTreeView x:Name="radTreeView" 
+                                   Margin="8"
+                                   ItemTemplate="{StaticResource treeViewTemplate}"
+                                   IsLoadOnDemandEnabled="True"
+                                   LoadOnDemand="radTreeView_LoadOnDemand"/>
+
+<Button Content="Expand, Select and BringIntoView with LOD" Click="Button_Click" Grid.Column="1"/>
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

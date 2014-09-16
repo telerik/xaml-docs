@@ -1,0 +1,39 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region gridview-how-to-create-external-filtering_2 -->
+<UserControl x:Class="CSharp.RadGridView.Filtering.ExternalFiltering"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:example="clr-namespace:CSharp.RadGridView.Filtering"
+    xmlns:telerikGrid="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <TextBlock Text="Search for:" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="textBoxSearchFor" Width="500" TextChanged="textBoxSearchFor_TextChanged"/>
+        </StackPanel>
+				<telerik:RadGridView x:Name="radGridView" Grid.Row="1" AutoGenerateColumns="False">
+					<telerik:RadGridView.Columns>
+						<telerik:GridViewDataColumn UniqueName="CompanyName" Header="Company Name" />
+						<telerik:GridViewDataColumn UniqueName="Name" Header="Contact Name" />
+						<telerik:GridViewDataColumn UniqueName="Title" Header="Contact Title" />
+						<telerik:GridViewDataColumn UniqueName="Country" />
+						<telerik:GridViewDataColumn UniqueName="City" />
+					</telerik:RadGridView.Columns>
+				</telerik:RadGridView>
+    </Grid>
+</UserControl>
+<!-- #endregion -->
+</Grid>
+</UserControl>

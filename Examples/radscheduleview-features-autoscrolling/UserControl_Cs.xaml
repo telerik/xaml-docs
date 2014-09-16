@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ScheduleViewAutoScrollingExample.MainPage"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			 mc:Ignorable="d"
+			 d:DesignHeight="300" d:DesignWidth="400">
+	<Grid x:Name="LayoutRoot" Background="White">
+<!-- #region radscheduleview-features-autoscrolling-1 -->
+<telerik:RadScheduleView telerik:ScrollingSettingsBehavior.IsEnabled="False">
+	...
+</telerik:RadScheduleView>
+<!-- #endregion -->
+
+<!-- #region radscheduleview-features-autoscrolling-2 -->
+<telerik:RadScheduleView ScrollStep="10">
+	…
+</telerik:RadScheduleView>
+<!-- #endregion -->
+
+<!-- #region radscheduleview-features-autoscrolling-3 -->
+<telerik:RadScheduleView telerik:ScrollingSettingsBehavior.ScrollStepTime="00:00:00.5">
+	…
+</telerik:RadScheduleView>
+<!-- #endregion -->
+
+<!-- #region radscheduleview-features-autoscrolling-4 -->
+<telerik:RadScheduleView ScrollAreaPadding=" 100, 50, 100, 50">
+	…
+</telerik:RadScheduleView>
+<!-- #endregion -->
+
+	</Grid>
+</UserControl>

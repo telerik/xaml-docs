@@ -1,0 +1,51 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-features-load-on-demand_0 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView">
+    <telerik:RadTreeViewItem Header="Sport Categories">
+        <telerik:RadTreeViewItem Header="Football"/>
+        <telerik:RadTreeViewItem Header="Tennis"/>
+        <telerik:RadTreeViewItem Header="Cycling"/>
+    </telerik:RadTreeViewItem>
+</telerik:RadTreeView>
+<!-- #endregion -->
+
+<!-- #region radtreeview-features-load-on-demand_1 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView">
+    <telerik:RadTreeViewItem Header="Sport Categories">
+        <telerik:RadTreeViewItem Header="Football" IsLoadOnDemandEnabled="True"/>
+        <telerik:RadTreeViewItem Header="Tennis" IsLoadOnDemandEnabled="True"/>
+        <telerik:RadTreeViewItem Header="Cycling" IsLoadOnDemandEnabled="True"/>
+    </telerik:RadTreeViewItem>
+</telerik:RadTreeView>
+<!-- #endregion -->
+
+<!-- #region radtreeview-features-load-on-demand_4 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView">
+    <telerik:RadTreeViewItem Header="Sport Categories">
+        <telerik:RadTreeViewItem Header="Football" IsLoadOnDemandEnabled="True" LoadOnDemand="RadTreeViewItem_LoadOnDemand"/>
+        <telerik:RadTreeViewItem Header="Tennis" IsLoadOnDemandEnabled="True"/>
+        <telerik:RadTreeViewItem Header="Cycling" IsLoadOnDemandEnabled="True"/>
+    </telerik:RadTreeViewItem>
+</telerik:RadTreeView>
+<!-- #endregion -->
+
+<!-- #region radtreeview-features-load-on-demand_7 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsLoadOnDemandEnabled="True" LoadOnDemand="radTreeView_LoadOnDemand">
+    <telerik:RadTreeViewItem Header="Sport Categories">
+        <telerik:RadTreeViewItem Header="Football"/>
+        <telerik:RadTreeViewItem Header="Tennis"/>
+        <telerik:RadTreeViewItem Header="Cycling"/>
+    </telerik:RadTreeViewItem>
+</telerik:RadTreeView>
+<!-- #endregion -->
+</Grid>
+</UserControl>

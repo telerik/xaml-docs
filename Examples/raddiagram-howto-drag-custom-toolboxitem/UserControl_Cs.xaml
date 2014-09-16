@@ -1,0 +1,31 @@
+﻿<!--#region raddiagram-howto-drag-custom-toolboxitem-0 -->
+  <Grid>
+    <Grid.DataContext>
+        ...
+    </Grid.DataContext>
+    <Grid.Resources>
+        ...
+    </Grid.Resources>
+	
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <telerik:RadDiagramToolbox x:Name="toolbox"
+                                Title="Gallery"
+                                Width="330"
+                                HorizontalAlignment="Right"
+                                Header="{Binding SelectedItem.Header,
+                                                RelativeSource={RelativeSource Self}}"
+                                ItemTemplate="{StaticResource ToolboxGroupTemplate}"
+                                ItemsSource="{Binding Items}"
+                                Visibility="{Binding IsChecked,
+                                                    ElementName=toolboxButton,
+                                                    Converter={StaticResource BooleanToVisibilityConverter}}" />
+    <telerik:RadDiagram Grid.Column="1" />
+</Grid>
+<!--#endregion -->
+<!--#region raddiagram-howto-drag-custom-toolboxitem-1 -->
+ <telerik:RadDiagram Grid.Column="1" ShapeDeserialized="RadDiagram_ShapeDeserialized"/>
+<!--#endregion -->

@@ -1,0 +1,44 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddocking-features-nested-docking_0 -->
+<telerik:RadDocking x:Name="OuterDocking">
+    <telerik:RadDocking.DocumentHost>
+        <telerik:RadSplitContainer>
+            <telerik:RadPaneGroup>
+                <telerik:RadPane Header="Outer Pane 1" />
+                <telerik:RadPane Header="Outer Pane 2" />
+            </telerik:RadPaneGroup>
+        </telerik:RadSplitContainer>
+    </telerik:RadDocking.DocumentHost>
+</telerik:RadDocking>
+<!-- #endregion -->
+
+<!-- #region raddocking-features-nested-docking_1 -->
+<telerik:RadDocking x:Name="OuterDocking">
+    ...
+    <telerik:RadPane Header="Outer Pane 1">
+        <telerik:RadDocking x:Name="InnerDocking" CloseButtonPosition="InPane">
+            <telerik:RadDocking.DocumentHost>
+                <telerik:RadSplitContainer>
+                    <telerik:RadPaneGroup>
+                        <telerik:RadPane Header="Inner Pane A" />
+                        <telerik:RadPane Header="Inner Pane B" />
+                        <telerik:RadPane Header="Inner Pane C" />
+                    </telerik:RadPaneGroup>
+                </telerik:RadSplitContainer>
+            </telerik:RadDocking.DocumentHost>
+        </telerik:RadDocking>
+    </telerik:RadPane>
+    ...
+</telerik:RadDocking>
+<!-- #endregion -->
+    </Grid>
+</UserControl>

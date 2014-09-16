@@ -1,0 +1,41 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region how-to-override-default-gridview-styles_0 -->
+<Border x:Name="Background_Over" 
+        BorderBrush="{StaticResource ItemOuterBorder_Over}" 
+        BorderThickness="1" 
+        Grid.ColumnSpan="2" Grid.Column="2" 
+        CornerRadius="1" Margin="1,1,1,2" telerik:SelectiveScrollingGrid.SelectiveScrollingClip="True" Visibility="Collapsed">
+               <Border BorderBrush="{StaticResource ItemInnerBorder_Over}" BorderThickness="1" Background="{StaticResource ItemBackground_Over}"/>
+</Border>
+<!-- #endregion -->
+
+<!-- #region how-to-override-default-gridview-styles_1 -->
+<Border x:Name="Background_Over" 
+ BorderBrush="Blue" 
+ BorderThickness="1" 
+ Grid.ColumnSpan="2" Grid.Column="2" CornerRadius="1" Margin="1,1,1,2" 
+ telerik:SelectiveScrollingGrid.SelectiveScrollingClip="True" Visibility="Collapsed">
+     <Border BorderBrush="{StaticResource ItemInnerBorder_Over}" BorderThickness="1" Background="Gray"/>
+</Border>
+<!-- #endregion -->
+
+<!-- #region how-to-override-default-gridview-styles_2 -->
+<Trigger Property="IsCurrent" Value="True">
+      <Setter Property="Visibility" TargetName="Background_Current" Value="Visible"/>
+</Trigger>
+<!-- #endregion -->
+
+<!-- #region how-to-override-default-gridview-styles_3 -->
+<Setter Property="FocusVisualStyle" Value="{x:Null}" />
+<!-- #endregion -->
+</Grid>
+</UserControl>

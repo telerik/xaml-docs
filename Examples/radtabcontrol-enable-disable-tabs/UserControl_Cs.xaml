@@ -1,0 +1,17 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtabcontrol-enable-disable-tabs_0 -->
+<telerik:RadTabControl x:Name="radTabControl">
+    <telerik:RadTabItem Header="Calendar" IsEnabled="False"/>
+</telerik:RadTabControl>
+<!-- #endregion -->
+</Grid>
+</UserControl>

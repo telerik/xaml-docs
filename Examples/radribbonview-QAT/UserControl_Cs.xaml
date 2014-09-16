@@ -1,0 +1,49 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radribbonview-QAT_0 -->
+<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
+    <telerik:RadRibbonView.QuickAccessToolBar>
+        <telerik:QuickAccessToolBar />
+    </telerik:RadRibbonView.QuickAccessToolBar>
+</telerik:RadRibbonView>
+<!-- #endregion -->
+
+<!-- #region radribbonview-QAT_3 -->
+<telerik:RadRibbonView x:Name="radRibbonView">
+    <telerik:RadRibbonView.QuickAccessToolBar>
+        <telerik:QuickAccessToolBar>
+            <telerik:RadRibbonButton Text="Save" SmallImage="Images/IconMSOffice/16/save.png"
+                                        Size="Small"
+                                        telerik:KeyTipService.AccessText="1" />
+            <telerik:RadRibbonButton Text="Undo" SmallImage="Images/IconMSOffice/16/undo.png"
+                                        Size="Small"
+                                        telerik:KeyTipService.AccessText="2" />
+            <telerik:RadRibbonButton Text="Print" SmallImage="Images/IconMSOffice/16/print.png"
+                                        Size="Small"
+                                        telerik:KeyTipService.AccessText="3" />
+        </telerik:QuickAccessToolBar>
+    </telerik:RadRibbonView.QuickAccessToolBar>
+</telerik:RadRibbonView>
+<!-- #endregion -->
+
+<!-- #region radribbonview-QAT_4 -->
+<telerik:RadRibbonView x:Name="radRibbonView" QuickAccessToolBarPosition="BelowRibbon">
+<!-- #endregion -->
+
+<!-- #region radribbonview-QAT_7 -->
+<telerik:RadRibbonView x:Name="radRibbonView" QuickAccessToolBarPosition="NotHosted">
+<!-- #endregion -->
+
+<!-- #region radribbonview-QAT_10 -->
+<telerik:RadRibbonView x:Name="radRibbonView" ToolBarPositionChanged="radRibbonView_ToolBarPositionChanged">
+<!-- #endregion -->
+</Grid>
+</UserControl>

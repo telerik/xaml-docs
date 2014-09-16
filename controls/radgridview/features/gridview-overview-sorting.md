@@ -1,0 +1,94 @@
+---
+title: Sorting
+page_title: Sorting
+description: Sorting
+slug: gridview-overview-sorting
+tags: sorting
+publish: True
+position: 5
+---
+
+# Sorting
+
+
+
+## 
+
+__RadGridView__ provides you with a built-in sorting functionality, which allows the user to easily sort the data by one of the columns.
+
+
+
+
+         
+      ![](images/RadGridView_FunctionalOverview_Sorting_1.png)
+
+You can define sorting criteria either in the XAML or in the code-behind.
+
+#### __XAML__
+
+{{region gridview-overview-sorting_0}}
+	<telerik:RadGridView x:Name="radGridView"
+	                         AutoGenerateColumns="False">
+	    <telerik:RadGridView.SortDescriptors>
+					<telerik:SortDescriptor Member="EmployeeID"
+	                                    SortDirection="Ascending" />
+	    </telerik:RadGridView.SortDescriptors>
+	    ...
+	</telerik:RadGridView>
+	{{endregion}}
+
+
+
+You can achieve the same result if you define your sorting criteria in the code-behind like this:
+
+#### __C#__
+
+{{region gridview-overview-sorting_2}}
+	SortDescriptor descriptor = new SortDescriptor();
+	descriptor.Member = "EmployeeID";
+	descriptor.SortDirection = ListSortDirection.Ascending;
+	this.radGridView.SortDescriptors.Add( descriptor );
+	{{endregion}}
+
+
+
+#### __VB.NET__
+
+{{region gridview-overview-sorting_3}}
+	Dim descriptor As New SortDescriptor()
+	descriptor.Member = "EmployeeID"
+	descriptor.SortDirection = ListSortDirection.Ascending
+	Me.radGridView.SortDescriptors.Add(descriptor)
+	{{endregion}}
+
+
+
+>Note that since __SortDescriptors__ property is a __collection__, you can add more than one __SortDescriptor__ to a __RadGridView__.
+
+>tipConsider using the code-behind approach only when changing the sorting criteria __run-time__.
+
+Check out the chapters entirely dedicated to the sorting functionality of __RadGridView__ and find the answers to the following questions:
+
+* What are the available [types of sorting]({%slug gridview-sorting-basics%}).
+
+* How does the [basic sorting]({%slug gridview-sorting-basics%}) work.
+
+* How to [define sorting]({%slug gridview-sorting-programmatic%}) using __SortDescriptors__ in both XAML and code-behind.
+
+* How to use the exposed [sort events](FFEF9E84-B518-4DF1-819B-247298BAA176#Events).
+
+* How to [disable](FFEF9E84-B518-4DF1-819B-247298BAA176#Disabling_Sorting) the default sorting per column or for the whole __RadGridView__ control.
+
+* How to define [custom sorting]({%slug gridview-sorting-custom%}) based on the __Sorting__ event.
+
+* How to sort your data by [multiple-columns]({%slug gridview-multiple-column-sorting%}).
+
+* How to [style the column header]({%slug gridview-styling-column-headers%}) of the sorted column.
+
+# See Also
+
+ * [Grouping]({%slug gridview-overview-grouping%})
+
+ * [Filtering]({%slug gridview-overview-filtering%})
+
+ * [Data Selection]({%slug gridview-overview-data-selection%})

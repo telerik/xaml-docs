@@ -1,0 +1,46 @@
+﻿ <!--  #region radziplibrary-howto-compress-decompress-0  -->
+     <Grid Background="White">
+        <StackPanel HorizontalAlignment="Left">
+            <TextBox x:Name="UncompressedText"
+                     Width="400"
+                     Height="200"
+                     Margin="0 2"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Auto" />
+            <Grid Margin="0 5">
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                    <TextBlock Text="Uncompressed size: " />
+                    <TextBlock Text="{Binding Text.Length, ElementName=UncompressedText}" />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                    <telerik:RadButton Height="24"
+                                       Click="Compress"
+                                       Content="Compress" />
+                    <telerik:RadButton Height="24"
+                                       Click="DeCompress"
+                                       Content="DeCompress" />
+                </StackPanel>
+            </Grid>
+            <TextBox x:Name="CompressedText"
+                     Width="400"
+                     Height="200"
+                     Margin="0 2"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Auto" />
+            <StackPanel Margin="0 2" Orientation="Horizontal">
+                <TextBlock Text="Compressed size: " />
+                <TextBlock x:Name="CompressedSize" />
+            </StackPanel>
+            <TextBox x:Name="DeCompressedText"
+                     Width="400"
+                     Height="200"
+                     Margin="0 2"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Auto" />
+            <StackPanel Margin="0 2" Orientation="Horizontal">
+                <TextBlock Text="DeCompressed size: " />
+                <TextBlock Name="DeCompressedSize" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+ <!--  #endregion  -->

@@ -1,0 +1,58 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radcombobox-populating-with-data-binding-to-wcf_0 -->
+<telerik:RadComboBox x:Name="radComboBox"/>
+<!-- #endregion -->
+
+<!-- #region radcombobox-populating-with-data-binding-to-wcf_7 -->
+<UserControl.Resources>
+    <DataTemplate x:Key="CustomItemTemplate">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding ProductName}"/>
+            <TextBlock Text=" - "/>
+            <TextBlock Text="{Binding UnitPrice}"/>
+            <TextBlock Text=" $"/>
+        </StackPanel>
+    </DataTemplate>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radcombobox-populating-with-data-binding-to-wcf_8 -->
+<telerik:RadComboBox x:Name="radComboBox" ItemTemplate="{StaticResource CustomItemTemplate}"/>
+<!-- #endregion -->
+
+<!-- #region radcombobox-populating-with-data-binding-to-wcf_19 -->
+<UserControl.Resources>
+    <example:NorthwindDataSource x:Key="DataSource"/>   
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radcombobox-populating-with-data-binding-to-wcf_20 -->
+<UserControl.Resources>
+    <DataTemplate x:Key="CustomItemTemplate">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding ProductName}"/>
+            <TextBlock Text=" - "/>
+            <TextBlock Text="{Binding UnitPrice}"/>
+            <TextBlock Text=" $"/>
+        </StackPanel>
+    </DataTemplate>
+    <example:NorthwindDataSource x:Key="DataSource"/>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radcombobox-populating-with-data-binding-to-wcf_21 -->
+<telerik:RadComboBox x:Name="radComboBox"
+    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}"
+    ItemTemplate="{StaticResource CustomItemTemplate}"/>
+<!-- #endregion -->
+</Grid>
+</UserControl>

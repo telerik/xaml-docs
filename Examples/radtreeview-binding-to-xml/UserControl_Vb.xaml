@@ -1,0 +1,146 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-binding-to-xml_0 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<Items>
+  <XmlNodeItem Header="Animal">
+    <Items>
+      <XmlNodeItem Header="Dog" />
+      <XmlNodeItem Header="Cat" />
+    </Items>
+  </XmlNodeItem>
+  <XmlNodeItem Header="Fish">
+    <Items>
+      <XmlNodeItem Header="Fresh Water">
+        <Items>
+          <XmlNodeItem Header="Roach"/>
+          <XmlNodeItem Header="Bream"/>
+        </Items>
+      </XmlNodeItem>
+      <XmlNodeItem Header="Salt Water">
+        <Items>
+          <XmlNodeItem Header="Edible"/>
+          <XmlNodeItem Header="Flat">
+            <Items>
+              <XmlNodeItem Header="Skate"/>
+              <XmlNodeItem Header="Soul"/>
+            </Items>
+          </XmlNodeItem>
+        </Items>
+      </XmlNodeItem>
+    </Items>
+  </XmlNodeItem>
+</Items>
+<!-- #endregion -->
+
+<!-- #region radtreeview-binding-to-xml_1 -->
+<UserControl x:Class="Telerik.XAML.HelpTopicSources.TreeView.XMLBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+        xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
+        xmlns:local="clr-namespace:Telerik.XAML.HelpTopicSources.TreeView"
+        Width="400" Height="300">
+    <UserControl.Resources>
+        <!-- define the data source -->
+        <local:RadTreeViewXMLDataSource x:Key="treeViewData"
+                Source="/Telerik.XAML.HelpTopicSources;component/genericXML.xml" />
+        <!-- define the hierarchical data template -->
+        <telerik:HierarchicalDataTemplate x:Key="Item" ItemsSource="{Binding Items}">            
+                <TextBlock Text="{Binding Header}" />        
+        </telerik:HierarchicalDataTemplate>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot">
+        <!-- bind the RadTreeView to the collection and set the hierarchical data template -->
+        <telerikNavigation:RadTreeView ItemTemplate="{StaticResource Item}"
+                ItemsSource="{Binding Source={StaticResource treeViewData}}" />
+    </Grid>
+</UserControl>
+<!-- #endregion -->
+
+<!-- #region radtreeview-binding-to-xml_2 -->
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
+using System.Xml.Serialization;
+using System.Collections.ObjectModel;
+using System.IO;
+namespace Telerik.XAML.HelpTopicSources.TreeView
+{
+ public partial class XMLBinding : UserControl
+ {
+  public XMLBinding()
+  {
+   InitializeComponent();
+  }
+ }
+ // this is the collection that will be created from the XML file
+ // the RadTreeView will be binded to this collection.
+ [XmlRoot(ElementName = "Items")]
+ public class XmlNodeItemList : ObservableCollection<XmlNodeItem>
+ {
+  public void AddRange(ObservableCollection<XmlNodeItem> range)
+  {
+   foreach (XmlNodeItem node in range)
+   {
+    Add(node);
+   }
+  }
+ }
+ public class XmlNodeItem
+ {
+  public XmlNodeItem()
+  {
+   Items = new ObservableCollection<XmlNodeItem>();
+  }
+  [XmlAttribute(AttributeName = "Header")]
+  public string Header { get; set; }
+  public ObservableCollection<XmlNodeItem> Items
+  {
+   get;
+   set;
+  }
+ }
+ public class RadTreeViewXMLDataSource : XmlNodeItemList
+ {
+  private String source;
+  public String Source
+  {
+   get
+   {
+    return source;
+   }
+   set
+   {
+    source = value;
+    AddRange(RetrieveData(Application.GetResourceStream(new Uri(value, UriKind.Relative)).Stream));
+   }
+  }
+  public XmlNodeItemList RetrieveData(Stream xmlStream)
+  {
+   XmlSerializer serializer = new XmlSerializer(typeof(XmlNodeItemList));
+   StreamReader reader = new StreamReader(xmlStream);
+   XmlNodeItemList list = (XmlNodeItemList)serializer.Deserialize(reader);
+   return list;
+  }
+ }
+}
+<!-- #endregion -->
+</Grid>
+</UserControl>

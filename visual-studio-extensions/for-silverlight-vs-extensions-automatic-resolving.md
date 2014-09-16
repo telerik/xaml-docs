@@ -1,0 +1,38 @@
+---
+title: Automatic Dependency resolving
+page_title: Automatic Dependency resolving
+description: Automatic Dependency resolving
+slug: radcontrols-for-silverlight-vs-extensions-automatic-resolving
+tags: automatic,dependency,resolving
+publish: True
+position: 5
+site_name: Silverlight
+---
+
+# Automatic Dependency resolving
+
+
+
+## 
+
+To improve the experience of your clients and boost your application’s initial load time it is crucial to use only the subset of UI for Silverlight assemblies you really need, as described in the [Installation and Deployment Section](50B1CE13-5FE2-4B7D-ACED-2E61D637EB5A). 
+
+Some controls require multiple assemblies and it mistakes are not unlikely to happen. For example, in the urge to optimize load times, you could remove an assembly the project needs, thus breaking the application compilation.
+
+When using the __New Project Wizard__ or __Project Configuration Wizard__, the possibility to make such mistakes is lowered to a minimum, thanks to the dependency analysis in the Visual Studio Extensions.
+
+![Project Configuration Wizard](images/VSExtensions_SL_ProjectConfigWizard.png)
+
+The VSExtensions assembly list control is controlled by the dependency analyzer, which won’t let you select __UI for Silverlight__ assemblies without selecting the assemblies they depend on. Both the aspects are covered:
+
+* Selecting a __Telerik UI__ assembly will also select the additional assemblies it depends on as well. 
+
+* Deselecting a __Telerik UI__ assembly will also deselect assemblies depending on it along with it.  
+
+# See Also
+
+ * [Project creation and configuration]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%})
+
+ * [Upgrading to a new UI for Silverlight distribution]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%})
+
+ * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})

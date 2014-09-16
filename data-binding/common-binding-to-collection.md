@@ -4,7 +4,7 @@ page_title: Binding to Collections
 description: Binding to Collections
 slug: common-data-binding-binding-to-collection
 tags: binding,to,collections
-published: True
+publish: True
 position: 2
 ---
 

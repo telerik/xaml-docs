@@ -4,7 +4,7 @@ page_title: Striplines and Gridlines
 description: Striplines and Gridlines
 slug: radchart-features-axes-striplines-and-gridlines
 tags: striplines,and,gridlines
-published: True
+publish: True
 position: 4
 ---
 

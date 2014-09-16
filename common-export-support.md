@@ -4,7 +4,7 @@ page_title: Export Support
 description: Export Support
 slug: common-export-support
 tags: export,support
-published: True
+publish: True
 position: 9
 ---
 

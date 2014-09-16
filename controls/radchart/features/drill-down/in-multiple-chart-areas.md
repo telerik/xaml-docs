@@ -4,7 +4,7 @@ page_title: In Multiple Chart Areas
 description: In Multiple Chart Areas
 slug: radchart-features-drill-down-in-multiple-chart-areas
 tags: in,multiple,chart,areas
-published: True
+publish: True
 position: 2
 ---
 

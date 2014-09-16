@@ -4,7 +4,7 @@ page_title: Workbook Protection
 description: Workbook Protection
 slug: radspreadprocessing-features-protection-workbook
 tags: workbook,protection
-published: True
+publish: True
 position: 0
 ---
 

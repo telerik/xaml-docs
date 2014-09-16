@@ -4,7 +4,7 @@ page_title: Enable Deferred Filtering
 description: Enable Deferred Filtering
 slug: radgridview-filtering-deffered
 tags: enable,deferred,filtering
-published: False
+publish: False
 position: 6
 ---
 

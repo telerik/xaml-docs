@@ -4,7 +4,7 @@ page_title: Namespace Declaration
 description: Namespace Declaration
 slug: installation-adding-application-namespace-declaration-wpf
 tags: namespace,declaration
-published: True
+publish: True
 position: 3
 site_name: WPF
 ---

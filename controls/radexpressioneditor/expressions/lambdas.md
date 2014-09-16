@@ -4,7 +4,7 @@ page_title: Lambdas
 description: Lambdas
 slug: radexpressioneditor-expressions-lambdas
 tags: lambdas
-published: True
+publish: True
 position: 4
 ---
 

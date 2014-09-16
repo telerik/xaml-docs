@@ -4,7 +4,7 @@ page_title: Set the Best View for the InformationLayer
 description: Set the Best View for the InformationLayer
 slug: radmap-how-to-set-the-best-view-for-the-informationlayer
 tags: set,the,best,view,for,the,informationlayer
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Code Block
 description: Code Block
 slug: radrichtextbox-features-code-block
 tags: code,block
-published: True
+publish: True
 position: 20
 ---
 

@@ -4,7 +4,7 @@ page_title: Backward Compatibility
 description: Backward Compatibility
 slug: radbarcode-changes-backward-compatibility
 tags: backward,compatibility
-published: False
+publish: False
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Adding UI for Silverlight to the Visual Studio 2012 Toolbox
 description: Adding UI for Silverlight to the Visual Studio 2012 Toolbox
 slug: installation-adding-to-vs-2012-toolbox
 tags: adding,ui,for,silverlight,to,the,visual,studio,2012,toolbox
-published: True
+publish: True
 position: 4
 site_name: Silverlight
 ---

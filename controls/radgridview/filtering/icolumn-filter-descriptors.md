@@ -4,7 +4,7 @@ page_title: Column Filter Descriptors
 description: Column Filter Descriptors
 slug: radgridview-filtering-icolumn-filter-descriptors
 tags: column,filter,descriptors
-published: True
+publish: True
 position: 11
 ---
 

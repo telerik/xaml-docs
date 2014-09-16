@@ -4,7 +4,7 @@ page_title: RadGridView
 description: RadGridView
 slug: xamlflix-gridview
 tags: radgridview
-published: True
+publish: True
 position: 6
 ---
 

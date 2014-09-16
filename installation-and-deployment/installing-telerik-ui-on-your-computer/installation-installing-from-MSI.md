@@ -4,7 +4,7 @@ page_title: Installing UI for Silverlight from MSI File
 description: Installing UI for Silverlight from MSI File
 slug: installation-installing-from-msi
 tags: installing,ui,for,silverlight,from,msi,file
-published: True
+publish: True
 position: 1
 site_name: Silverlight
 ---

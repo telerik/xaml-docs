@@ -4,7 +4,7 @@ page_title: Binding to RIA Service
 description: Binding to RIA Service
 slug: radcombobox-populating-with-data-binding-ria
 tags: binding,to,ria,service
-published: True
+publish: True
 position: 7
 site_name: Silverlight
 ---

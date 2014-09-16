@@ -4,7 +4,7 @@ page_title: Corrupted Extended Selection
 description: Corrupted Extended Selection
 slug: gridview-troubleshooting-corrupted_extended-selection
 tags: corrupted,extended,selection
-published: True
+publish: True
 position: 20
 ---
 

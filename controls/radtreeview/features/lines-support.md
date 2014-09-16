@@ -4,7 +4,7 @@ page_title: Lines Support
 description: Lines Support
 slug: radtreeview-features-lines-support
 tags: lines,support
-published: True
+publish: True
 position: 4
 ---
 

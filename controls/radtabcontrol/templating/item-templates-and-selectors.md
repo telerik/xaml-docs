@@ -4,7 +4,7 @@ page_title: Item Template and Template Selectors
 description: Item Template and Template Selectors
 slug: radtabcontrol-item-templates-and-selectors
 tags: item,template,and,template,selectors
-published: True
+publish: True
 position: 2
 ---
 

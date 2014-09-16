@@ -4,7 +4,7 @@ page_title: Hyperlink
 description: Hyperlink
 slug: radrichtextbox-features-document-elements-hyperlink
 tags: hyperlink
-published: True
+publish: True
 position: 9
 ---
 

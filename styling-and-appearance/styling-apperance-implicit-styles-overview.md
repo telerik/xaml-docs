@@ -4,7 +4,7 @@ page_title: Setting a Theme (Using  Implicit Styles)
 description: Setting a Theme (Using  Implicit Styles)
 slug: styling-apperance-implicit-styles-overview
 tags: setting,a,theme,(using,,implicit,styles)
-published: True
+publish: True
 position: 0
 ---
 

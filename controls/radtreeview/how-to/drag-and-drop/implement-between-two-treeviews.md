@@ -4,7 +4,7 @@ page_title: Implement Drag and Drop Between TreeViews
 description: Implement Drag and Drop Between TreeViews
 slug: radtreeview-how-to-implement-drag-and-drop-between-two-treeviews
 tags: implement,drag,and,drop,between,treeviews
-published: True
+publish: True
 position: 2
 ---
 

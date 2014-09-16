@@ -4,7 +4,7 @@ page_title: Removing Items
 description: Removing Items
 slug: raddiagrams-features-delete
 tags: removing,items
-published: True
+publish: True
 position: 4
 ---
 

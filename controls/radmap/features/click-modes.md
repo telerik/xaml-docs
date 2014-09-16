@@ -4,7 +4,7 @@ page_title: Click Modes
 description: Click Modes
 slug: radmap-features-click-modes
 tags: click,modes
-published: True
+publish: True
 position: 3
 ---
 

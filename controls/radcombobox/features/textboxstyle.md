@@ -4,7 +4,7 @@ page_title: TextBoxStyle
 description: TextBoxStyle
 slug: radcombobox-features-textboxstyle
 tags: textboxstyle
-published: True
+publish: True
 position: 9
 ---
 

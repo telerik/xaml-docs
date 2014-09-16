@@ -4,7 +4,7 @@ page_title: Using TextBoxBehavior
 description: Using TextBoxBehavior
 slug: gridview-how-to-update-on-every-text-changed
 tags: using,textboxbehavior
-published: True
+publish: True
 position: 10
 ---
 

@@ -4,7 +4,7 @@ page_title: Default Layout
 description: Default Layout
 slug: radmap-features-default-layout
 tags: default,layout
-published: True
+publish: True
 position: 8
 ---
 

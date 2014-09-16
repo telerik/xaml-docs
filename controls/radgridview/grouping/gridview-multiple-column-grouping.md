@@ -4,7 +4,7 @@ page_title: Multiple-column Grouping
 description: Multiple-column Grouping
 slug: gridview-multiple-column-grouping
 tags: multiple-column,grouping
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Programmatic Filtering
 description: Programmatic Filtering
 slug: raddataservicedatasource-filtering-programmatic-filtering
 tags: programmatic,filtering
-published: True
+publish: True
 position: 0
 ---
 

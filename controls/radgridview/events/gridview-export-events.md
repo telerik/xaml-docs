@@ -4,7 +4,7 @@ page_title: Export
 description: Export
 slug: gridview-export-events
 tags: export
-published: True
+publish: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Multiple Files Upload
 description: Multiple Files Upload
 slug: radcloudupload-features-multiple-files-upload
 tags: multiple,files,upload
-published: False
+publish: False
 position: 1
 ---
 

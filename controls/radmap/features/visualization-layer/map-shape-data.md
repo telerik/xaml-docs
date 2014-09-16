@@ -4,7 +4,7 @@ page_title: Map Shape Data
 description: Map Shape Data
 slug: radmap-visualization-layer-map-shape-data
 tags: map,shape,data
-published: True
+publish: True
 position: 3
 ---
 

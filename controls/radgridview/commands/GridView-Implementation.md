@@ -4,7 +4,7 @@ page_title: Implementation
 description: Implementation
 slug: gridview-commands-implementation
 tags: implementation
-published: True
+publish: True
 position: 1
 ---
 

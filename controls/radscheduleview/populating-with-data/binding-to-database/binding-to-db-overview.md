@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: radscheduleview-populating-with-data-binding-to-db-overview
 tags: overview
-published: True
+publish: True
 position: 0
 ---
 

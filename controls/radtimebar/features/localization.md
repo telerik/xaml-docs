@@ -4,7 +4,7 @@ page_title: Localization
 description: Localization
 slug: radtimebar-localization
 tags: localization
-published: True
+publish: True
 position: 1
 ---
 

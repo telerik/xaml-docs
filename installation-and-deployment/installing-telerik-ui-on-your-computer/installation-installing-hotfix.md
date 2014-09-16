@@ -4,7 +4,7 @@ page_title: Using the Hotfix (DLLs Only)
 description: Using the Hotfix (DLLs Only)
 slug: installation-installing-hotfix
 tags: using,the,hotfix,(dlls,only)
-published: True
+publish: True
 position: 7
 site_name: Silverlight
 ---

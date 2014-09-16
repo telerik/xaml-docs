@@ -4,7 +4,7 @@ page_title: View specific properties
 description: View specific properties
 slug: radscheduleview-viewdefinitions-specificproperties
 tags: view,specific,properties
-published: True
+publish: True
 position: 2
 ---
 

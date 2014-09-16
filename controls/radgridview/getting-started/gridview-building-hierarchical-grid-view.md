@@ -4,7 +4,7 @@ page_title: Building Hierarchical Grid View
 description: Building Hierarchical Grid View
 slug: gridview-building-hierarchical-grid-view
 tags: building,hierarchical,grid,view
-published: True
+publish: True
 position: 1
 ---
 

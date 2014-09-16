@@ -4,7 +4,7 @@ page_title: DataBinding
 description: DataBinding
 slug: raddiagram-data-databinding
 tags: databinding
-published: True
+publish: True
 position: 2
 ---
 

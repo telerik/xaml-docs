@@ -4,7 +4,7 @@ page_title: How to Implement Conditional Docking
 description: How to Implement Conditional Docking
 slug: raddocking-how-to-implement-conditional-docking
 tags: how,to,implement,conditional,docking
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Layouts
 description: Layouts
 slug: radpivotgrid-features-layouts
 tags: layouts
-published: True
+publish: True
 position: 0
 ---
 

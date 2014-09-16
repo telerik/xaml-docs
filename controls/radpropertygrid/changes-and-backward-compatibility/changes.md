@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: radpropertygrid-changes
 tags: changes
-published: True
+publish: True
 position: 0
 ---
 

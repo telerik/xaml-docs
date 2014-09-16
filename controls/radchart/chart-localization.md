@@ -4,7 +4,7 @@ page_title: Localization
 description: Localization
 slug: chart-localization
 tags: localization
-published: True
+publish: True
 position: 6
 site_name: Silverlight
 ---

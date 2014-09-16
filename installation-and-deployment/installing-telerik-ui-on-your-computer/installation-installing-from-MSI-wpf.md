@@ -4,7 +4,7 @@ page_title: Installing UI for WPF from MSI File
 description: Installing UI for WPF from MSI File
 slug: installation-installing-from-msi-wpf
 tags: installing,ui,for,wpf,from,msi,file
-published: True
+publish: True
 position: 2
 site_name: WPF
 ---

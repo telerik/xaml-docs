@@ -4,7 +4,7 @@ page_title: Declaration
 description: Declaration
 slug: paletteview-populating
 tags: declaration
-published: True
+publish: True
 position: 3
 ---
 

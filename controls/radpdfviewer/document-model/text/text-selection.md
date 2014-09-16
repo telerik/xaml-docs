@@ -4,7 +4,7 @@ page_title: Text Selection
 description: Text Selection
 slug: radpdfviewer-text-text-selection
 tags: text,selection
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Setting default startup language
 description: Setting default startup language
 slug: gridview-localization-setting-default-startup-language3
 tags: setting,default,startup,language
-published: True
+publish: True
 position: 1
 ---
 

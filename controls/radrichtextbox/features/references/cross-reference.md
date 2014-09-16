@@ -4,7 +4,7 @@ page_title: Cross-Reference
 description: Cross-Reference
 slug: radrichtextbox-features-cross-reference
 tags: cross-reference
-published: True
+publish: True
 position: 2
 ---
 

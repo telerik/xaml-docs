@@ -4,7 +4,7 @@ page_title: Last row is not fully visible
 description: Last row is not fully visible
 slug: gridview-troubleshooting-last-row-cut
 tags: last,row,is,not,fully,visible
-published: True
+publish: True
 position: 19
 ---
 

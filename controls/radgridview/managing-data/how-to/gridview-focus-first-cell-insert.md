@@ -4,7 +4,7 @@ page_title: Always focus the first cell on insert
 description: Always focus the first cell on insert 
 slug: gridview-how-to-focus-first-cell-insert
 tags: always,focus,the,first,cell,on,insert,
-published: True
+publish: True
 position: 4
 ---
 

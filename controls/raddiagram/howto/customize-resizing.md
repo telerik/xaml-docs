@@ -4,7 +4,7 @@ page_title: Disable Horizontal or Vertical Shape Resizing
 description: Disable Horizontal or Vertical Shape Resizing
 slug: raddiagram-howto-customize-resizing
 tags: disable,horizontal,or,vertical,shape,resizing
-published: True
+publish: True
 position: 14
 ---
 

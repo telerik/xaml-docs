@@ -4,7 +4,7 @@ page_title: Serialization Options
 description: Serialization Options
 slug: persistence-framework-defining-properties
 tags: serialization,options
-published: True
+publish: True
 position: 1
 ---
 

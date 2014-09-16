@@ -4,7 +4,7 @@ page_title: Styling the Numeric Buttons
 description: Styling the Numeric Buttons
 slug: raddatapager-styles-and-templates-styling-the-numeric-buttons
 tags: styling,the,numeric,buttons
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: RadDiagram
 description: RadDiagram
 slug: xamlflix-diagram
 tags: raddiagram
-published: True
+publish: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Template Structure
 description: Template Structure
 slug: radcoloreditor-template-structure
 tags: template,structure
-published: True
+publish: True
 position: 4
 ---
 

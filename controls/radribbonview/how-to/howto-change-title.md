@@ -4,7 +4,7 @@ page_title: Change Title
 description: Change Title
 slug: radribbonview-howto-change-title
 tags: change,title
-published: True
+publish: True
 position: 5
 ---
 

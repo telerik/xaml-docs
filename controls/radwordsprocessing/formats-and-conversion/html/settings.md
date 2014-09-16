@@ -4,7 +4,7 @@ page_title: Settings
 description: Settings
 slug: radwordsprocessing-formats-and-conversion-html-settings
 tags: settings
-published: True
+publish: True
 position: 3
 ---
 

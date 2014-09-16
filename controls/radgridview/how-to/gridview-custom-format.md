@@ -4,7 +4,7 @@ page_title: Apply a custom format via the CurrentCulture
 description: Apply a custom format via the CurrentCulture
 slug: gridview-how-to-custom-format
 tags: apply,a,custom,format,via,the,currentculture
-published: True
+publish: True
 position: 11
 ---
 

@@ -4,7 +4,7 @@ page_title: RadTreeMap and RadPivotMap
 description: RadTreeMap and RadPivotMap
 slug: xamlflix-tree_pivot_maps
 tags: radtreemap,and,radpivotmap
-published: True
+publish: True
 position: 9
 ---
 

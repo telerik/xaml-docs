@@ -4,7 +4,7 @@ page_title: Export FAQ
 description: Export FAQ
 slug: gridview-export-faq
 tags: export,faq
-published: True
+publish: True
 position: 4
 ---
 

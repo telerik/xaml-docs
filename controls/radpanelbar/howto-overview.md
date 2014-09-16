@@ -4,7 +4,7 @@ page_title: HowTo
 description: HowTo
 slug: radpanelbar-howto-overview
 tags: howto
-published: True
+publish: True
 position: 5
 ---
 

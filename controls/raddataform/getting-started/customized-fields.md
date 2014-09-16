@@ -4,7 +4,7 @@ page_title: Customized Fields
 description: Customized Fields
 slug: raddataform-customized-fields
 tags: customized,fields
-published: True
+publish: True
 position: 2
 ---
 

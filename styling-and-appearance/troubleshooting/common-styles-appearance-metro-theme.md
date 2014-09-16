@@ -4,7 +4,7 @@ page_title: Windows8 Theme Brushes
 description: Windows8 Theme Brushes
 slug: common-styles-appearance-troubleshooting-metro-theme
 tags: windows8,theme,brushes
-published: True
+publish: True
 position: 0
 site_name: WPF
 ---

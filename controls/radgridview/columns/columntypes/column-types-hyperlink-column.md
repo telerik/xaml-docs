@@ -4,7 +4,7 @@ page_title: Hyperlink Column
 description: Hyperlink Column
 slug: radgridview-columns-column-types-hyperlink-column
 tags: hyperlink,column
-published: True
+publish: True
 position: 7
 ---
 

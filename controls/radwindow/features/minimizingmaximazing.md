@@ -4,7 +4,7 @@ page_title: Minimizing/Maximizing
 description: Minimizing/Maximizing
 slug: radwindow-features-minimizingmaximazing
 tags: minimizing/maximizing
-published: True
+publish: True
 position: 6
 ---
 

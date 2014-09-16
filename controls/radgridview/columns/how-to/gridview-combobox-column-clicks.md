@@ -4,7 +4,7 @@ page_title: Number of clicks in the ComboBox column
 description: Number of clicks in the ComboBox column
 slug: gridview-combobox-column-clicks
 tags: number,of,clicks,in,the,combobox,column
-published: True
+publish: True
 position: 7
 ---
 

@@ -4,7 +4,7 @@ page_title: Drawing Tools
 description: Drawing Tools
 slug: raddiagram-features-drawing
 tags: drawing,tools
-published: True
+publish: True
 position: 2
 ---
 

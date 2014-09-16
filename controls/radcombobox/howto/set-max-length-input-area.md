@@ -4,7 +4,7 @@ page_title: Set MaxLength Property of the Input Area
 description: Set MaxLength Property of the Input Area
 slug: radcombobox-howto-set-max-length-input-area
 tags: set,maxlength,property,of,the,input,area
-published: True
+publish: True
 position: 7
 ---
 

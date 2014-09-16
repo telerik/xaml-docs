@@ -4,7 +4,7 @@ page_title: Shapes
 description: Shapes
 slug: raddiagrams-features-shapes
 tags: shapes
-published: True
+publish: True
 position: 0
 ---
 

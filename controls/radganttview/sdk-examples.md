@@ -4,7 +4,7 @@ page_title: SDK Examples
 description: SDK Examples
 slug: radganttview-sdk-examples
 tags: sdk,examples
-published: True
+publish: True
 position: 3
 ---
 

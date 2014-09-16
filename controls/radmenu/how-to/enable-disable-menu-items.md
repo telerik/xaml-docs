@@ -4,7 +4,7 @@ page_title: Enable and Disable Menu Items
 description: Enable and Disable Menu Items
 slug: radmenu-how-to-enable-disable-menu-items
 tags: enable,and,disable,menu,items
-published: True
+publish: True
 position: 2
 ---
 

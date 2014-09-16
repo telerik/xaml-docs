@@ -4,7 +4,7 @@ page_title: Basic Grouping
 description: Basic Grouping
 slug: gridview-grouping-basics
 tags: basic,grouping
-published: True
+publish: True
 position: 0
 ---
 

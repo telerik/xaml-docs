@@ -4,7 +4,7 @@ page_title: Separator Items
 description: Separator Items
 slug: radmenu-features-separator-items
 tags: separator,items
-published: True
+publish: True
 position: 9
 ---
 

@@ -4,7 +4,7 @@ page_title: Formulas
 description: Formulas
 slug: radspreadsheet-features-formulas
 tags: formulas
-published: False
+publish: False
 position: 1
 ---
 

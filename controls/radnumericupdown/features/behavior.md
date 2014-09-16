@@ -4,7 +4,7 @@ page_title: Behavior
 description: Behavior
 slug: radnumericupdown-behavior
 tags: behavior
-published: True
+publish: True
 position: 3
 site_name: WPF
 ---

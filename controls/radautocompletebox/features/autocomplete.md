@@ -4,7 +4,7 @@ page_title: AutoComplete
 description: AutoComplete
 slug: radautocompletebox-features-autocomplete
 tags: autocomplete
-published: True
+publish: True
 position: 1
 ---
 

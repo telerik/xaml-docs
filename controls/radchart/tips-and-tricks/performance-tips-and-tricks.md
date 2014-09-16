@@ -4,7 +4,7 @@ page_title: Performance Tips and Tricks
 description: Performance Tips and Tricks
 slug: radchart-performance-tips-and-tricks
 tags: performance,tips,and,tricks
-published: True
+publish: True
 position: 0
 ---
 

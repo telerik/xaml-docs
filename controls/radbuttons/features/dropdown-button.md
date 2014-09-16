@@ -4,7 +4,7 @@ page_title: DropDown Button
 description: DropDown Button
 slug: radbuttons-features-dropdown-button
 tags: dropdown,button
-published: True
+publish: True
 position: 1
 ---
 

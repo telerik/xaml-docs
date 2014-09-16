@@ -4,7 +4,7 @@ page_title: Tooltips
 description: Tooltips
 slug: radtimeline-features-tooltips
 tags: tooltips
-published: True
+publish: True
 position: 2
 ---
 

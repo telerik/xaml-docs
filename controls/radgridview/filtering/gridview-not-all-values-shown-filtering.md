@@ -4,7 +4,7 @@ page_title: Not all values are shown in the distinct values filter
 description: Not all values are shown in the distinct values filter
 slug: gridview-not-all-values-shown-filtering
 tags: not,all,values,are,shown,in,the,distinct,values,filter
-published: False
+publish: False
 position: 4
 ---
 

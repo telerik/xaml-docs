@@ -4,7 +4,7 @@ page_title: How to Enter Only Positive Numbers
 description: How to Enter Only Positive Numbers
 slug: radmaskedinput-howto-enter-positive-values
 tags: how,to,enter,only,positive,numbers
-published: True
+publish: True
 position: 2
 ---
 

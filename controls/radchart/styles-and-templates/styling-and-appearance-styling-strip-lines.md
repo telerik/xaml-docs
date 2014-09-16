@@ -4,7 +4,7 @@ page_title: Styling the Strip Lines
 description: Styling the Strip Lines
 slug: radchart-styling-and-appearance-styling-strip-lines
 tags: styling,the,strip,lines
-published: True
+publish: True
 position: 4
 ---
 

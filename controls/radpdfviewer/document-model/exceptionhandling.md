@@ -4,7 +4,7 @@ page_title: Exception Handling
 description: Exception Handling 
 slug: radpdfviewer-document-model-exceptionhandling
 tags: exception,handling,
-published: True
+publish: True
 position: 1
 ---
 

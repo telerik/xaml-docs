@@ -4,7 +4,7 @@ page_title: Create a Watermark
 description: Create a Watermark
 slug: radcombobox-create_a_watermark
 tags: create,a,watermark
-published: True
+publish: True
 position: 9
 ---
 

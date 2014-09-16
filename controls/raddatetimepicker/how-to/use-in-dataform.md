@@ -4,7 +4,7 @@ page_title: How to use RadDateTimePicker in a DataForm
 description: How to use RadDateTimePicker in a DataForm
 slug: raddatetimepicker-how-to-use-in-dataform
 tags: how,to,use,raddatetimepicker,in,a,dataform
-published: True
+publish: True
 position: 4
 site_name: Silverlight
 ---

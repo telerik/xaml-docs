@@ -4,7 +4,7 @@ page_title: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer 
 description: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
 slug: installation-upgrading-from-trial-to-developer-license
 tags: upgrading,telerik,ui,trial,to,telerik,ui,developer,license,or,newer,version
-published: True
+publish: True
 position: 0
 site_name: Silverlight
 ---

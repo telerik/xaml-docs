@@ -4,7 +4,7 @@ page_title: Bind RadTreeView to Hierarchical Data from WCF Service and Use Load 
 description: Bind RadTreeView to Hierarchical Data from WCF Service and Use Load on Demand
 slug: radtreeview-how-to-bind-wcf-service-load-on-demand
 tags: bind,radtreeview,to,hierarchical,data,from,wcf,service,and,use,load,on,demand
-published: True
+publish: True
 position: 15
 ---
 

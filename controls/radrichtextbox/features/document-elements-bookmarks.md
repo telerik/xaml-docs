@@ -4,7 +4,7 @@ page_title: Bookmarks
 description: Bookmarks
 slug: radrichtextbox-features-document-elements-bookmarks
 tags: bookmarks
-published: True
+publish: True
 position: 10
 ---
 

@@ -4,7 +4,7 @@ page_title: Binding to Object
 description: Binding to Object
 slug: radcombobox-populating-with-data-binding-to-object
 tags: binding,to,object
-published: True
+publish: True
 position: 4
 ---
 

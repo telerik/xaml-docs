@@ -4,7 +4,7 @@ page_title: Xlsx
 description: Xlsx
 slug: radspreadprocessing-formats-and-conversion-xlsx
 tags: xlsx
-published: True
+publish: True
 position: 0
 ---
 

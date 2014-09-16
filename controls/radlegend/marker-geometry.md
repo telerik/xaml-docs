@@ -4,7 +4,7 @@ page_title: Marker Geometry
 description: Marker Geometry
 slug: radlegend-marker-geometry
 tags: marker,geometry
-published: True
+publish: True
 position: 3
 ---
 

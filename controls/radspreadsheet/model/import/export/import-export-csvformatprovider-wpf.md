@@ -4,7 +4,7 @@ page_title: CsvFormatProvider
 description: CsvFormatProvider
 slug: radspreadsheet-model-import-export-csvformatprovider-wpf
 tags: csvformatprovider
-published: False
+publish: False
 position: 4
 site_name: WPF
 ---

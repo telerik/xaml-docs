@@ -4,7 +4,7 @@ page_title: Bar Indicator
 description: Bar Indicator
 slug: radgauge-features-indicators-bar-indicators-basics
 tags: bar,indicator
-published: True
+publish: True
 position: 3
 ---
 

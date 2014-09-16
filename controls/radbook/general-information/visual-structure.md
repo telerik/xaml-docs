@@ -4,7 +4,7 @@ page_title: Visual Structure
 description: Visual Structure
 slug: radbook-visual-structure
 tags: visual,structure
-published: True
+publish: True
 position: 0
 ---
 

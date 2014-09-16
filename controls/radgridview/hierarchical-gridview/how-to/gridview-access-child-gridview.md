@@ -4,7 +4,7 @@ page_title: How-to Set properties to the child gridview
 description: How-to Set properties to the child gridview
 slug: gridview-how-to-access-child-gridview
 tags: how-to,set,properties,to,the,child,gridview
-published: True
+publish: True
 position: 0
 ---
 

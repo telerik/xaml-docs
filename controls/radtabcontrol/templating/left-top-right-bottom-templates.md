@@ -4,7 +4,7 @@ page_title: Left/Top/Right/Bottom Templates
 description: Left/Top/Right/Bottom Templates
 slug: radtabcontrol-left-top-right-bottom-templates
 tags: left/top/right/bottom,templates
-published: False
+publish: False
 position: 1
 ---
 

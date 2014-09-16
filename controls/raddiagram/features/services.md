@@ -4,7 +4,7 @@ page_title: Services
 description: Services
 slug: raddiagram-features-services
 tags: services
-published: True
+publish: True
 position: 16
 ---
 

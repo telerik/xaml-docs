@@ -4,7 +4,7 @@ page_title: Edit Modes
 description: Edit Modes
 slug: radcombobox-features-edit-modes
 tags: edit,modes
-published: True
+publish: True
 position: 1
 ---
 

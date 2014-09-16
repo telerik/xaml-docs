@@ -4,7 +4,7 @@ page_title: Resizing Rows and Columns
 description: Resizing Rows and Columns
 slug: radspreadprocessing-working-with-rows-and-columns-resizing
 tags: resizing,rows,and,columns
-published: True
+publish: True
 position: 2
 ---
 

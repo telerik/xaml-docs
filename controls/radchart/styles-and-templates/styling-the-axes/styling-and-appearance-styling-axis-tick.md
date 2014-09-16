@@ -4,7 +4,7 @@ page_title: Styling the Axis Tick
 description: Styling the Axis Tick
 slug: radchart-styling-and-appearance-styling-axis-tick
 tags: styling,the,axis,tick
-published: True
+publish: True
 position: 2
 ---
 

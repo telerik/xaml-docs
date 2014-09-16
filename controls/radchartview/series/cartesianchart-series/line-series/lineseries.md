@@ -4,7 +4,7 @@ page_title: LineSeries
 description: LineSeries
 slug: radchartview-series-lineseries
 tags: lineseries
-published: True
+publish: True
 position: 0
 ---
 

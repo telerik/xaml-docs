@@ -4,7 +4,7 @@ page_title: Styling the MapNavigation
 description: Styling the MapNavigation
 slug: radmap-styles-and-templates-styling-the-mapnavigation
 tags: styling,the,mapnavigation
-published: True
+publish: True
 position: 4
 ---
 

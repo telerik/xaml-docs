@@ -4,7 +4,7 @@ page_title: TxtFormatProvider
 description: TxtFormatProvider
 slug: radspreadsheet-model-import-export-txtformatprovider-silverlight
 tags: txtformatprovider
-published: False
+publish: False
 position: 5
 site_name: Silverlight
 ---

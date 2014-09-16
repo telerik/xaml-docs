@@ -4,7 +4,7 @@ page_title: CellTemplateSelector
 description: CellTemplateSelector
 slug: gridview-cell-template-selector
 tags: celltemplateselector
-published: True
+publish: True
 position: 1
 ---
 

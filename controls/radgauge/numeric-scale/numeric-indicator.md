@@ -4,7 +4,7 @@ page_title: Numeric Indicator
 description: Numeric Indicator
 slug: numeric-scale-numeric-indicator
 tags: numeric,indicator
-published: True
+publish: True
 position: 1
 ---
 

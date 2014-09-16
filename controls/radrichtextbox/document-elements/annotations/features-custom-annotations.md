@@ -4,7 +4,7 @@ page_title: Custom Annotations
 description: Custom Annotations
 slug: radrichtextbox-features-document-elements-custom-annotations
 tags: custom,annotations
-published: True
+publish: True
 position: 2
 ---
 

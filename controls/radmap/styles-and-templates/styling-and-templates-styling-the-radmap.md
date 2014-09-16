@@ -4,7 +4,7 @@ page_title: Styling the RadMap
 description: Styling the RadMap
 slug: radmap-styling-and-templates-styling-the-radmap
 tags: styling,the,radmap
-published: True
+publish: True
 position: 2
 ---
 

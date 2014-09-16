@@ -4,7 +4,7 @@ page_title: Adding New Entries
 description: Adding New Entries
 slug: gridview-managing-data-add-new-entries
 tags: adding,new,entries
-published: True
+publish: True
 position: 1
 ---
 

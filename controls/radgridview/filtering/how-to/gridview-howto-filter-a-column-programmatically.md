@@ -4,7 +4,7 @@ page_title: Filter a Column Programmatically
 description: Filter a Column Programmatically
 slug: gridview-filtering-howto-filter-a-column-programmatically
 tags: filter,a,column,programmatically
-published: True
+publish: True
 position: 6
 ---
 

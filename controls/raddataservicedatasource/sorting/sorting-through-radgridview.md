@@ -4,7 +4,7 @@ page_title: Sorting through RadGridView
 description: Sorting through RadGridView
 slug: raddataservicedatasource-sorting-sorting-through-radgridview
 tags: sorting,through,radgridview
-published: True
+publish: True
 position: 1
 ---
 

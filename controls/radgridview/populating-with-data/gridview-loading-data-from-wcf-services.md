@@ -4,7 +4,7 @@ page_title: Loading Data from WCF Services
 description: Loading Data from WCF Services
 slug: gridview-loading-data-from-wcf-services
 tags: loading,data,from,wcf,services
-published: True
+publish: True
 position: 6
 ---
 

@@ -4,7 +4,7 @@ page_title: TextFragment
 description: TextFragment
 slug: radpdfprocessing-model-textfragment
 tags: textfragment
-published: True
+publish: True
 position: 2
 ---
 

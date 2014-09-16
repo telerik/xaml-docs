@@ -4,7 +4,7 @@ page_title: BringIntoView Support
 description: BringIntoView Support
 slug: radtreeview-features-treeviewitem-bring-into-view-support
 tags: bringintoview,support
-published: True
+publish: True
 position: 5
 ---
 

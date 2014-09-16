@@ -4,7 +4,7 @@ page_title: TxtFormatProvider
 description: TxtFormatProvider
 slug: radspreadsheet-model-import-export-txtformatprovider-wpf
 tags: txtformatprovider
-published: False
+publish: False
 position: 6
 site_name: WPF
 ---

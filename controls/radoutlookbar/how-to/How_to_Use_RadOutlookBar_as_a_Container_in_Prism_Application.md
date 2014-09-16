@@ -4,7 +4,7 @@ page_title: How to Use RadOutlookBar as a Container in Prism Application
 description: How to Use RadOutlookBar as a Container in Prism Application
 slug: how_to_use_radoutlookbar_as_a_container_in_prism_application
 tags: how,to,use,radoutlookbar,as,a,container,in,prism,application
-published: True
+publish: True
 position: 2
 ---
 

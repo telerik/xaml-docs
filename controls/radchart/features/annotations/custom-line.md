@@ -4,7 +4,7 @@ page_title: Custom Line
 description: Custom Line
 slug: radchart-features-annotations-custom-line
 tags: custom,line
-published: True
+publish: True
 position: 0
 ---
 

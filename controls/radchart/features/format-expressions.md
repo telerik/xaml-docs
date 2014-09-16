@@ -4,7 +4,7 @@ page_title: Format Expressions
 description: Format Expressions
 slug: radchart-features-format-expressions
 tags: format,expressions
-published: True
+publish: True
 position: 9
 ---
 

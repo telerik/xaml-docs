@@ -4,7 +4,7 @@ page_title: Styling the MapMouseLocationIndicator
 description: Styling the MapMouseLocationIndicator
 slug: radmap-styles-and-templates-styling-the-mapmouselocationindicator
 tags: styling,the,mapmouselocationindicator
-published: True
+publish: True
 position: 7
 ---
 

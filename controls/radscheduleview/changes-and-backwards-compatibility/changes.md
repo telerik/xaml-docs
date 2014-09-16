@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: radscheduleview-changes
 tags: changes
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Run
 description: Run
 slug: radwordsprocessing-model-run
 tags: run
-published: True
+publish: True
 position: 3
 ---
 

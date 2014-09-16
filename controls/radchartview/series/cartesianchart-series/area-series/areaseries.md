@@ -4,7 +4,7 @@ page_title: AreaSeries
 description: AreaSeries
 slug: radchartview-series-areaseries
 tags: areaseries
-published: True
+publish: True
 position: 0
 ---
 

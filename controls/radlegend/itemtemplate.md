@@ -4,7 +4,7 @@ page_title: ItemTemplate
 description: ItemTemplate
 slug: radlegend-itemtemplate
 tags: itemtemplate
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Showing a File
 description: Showing a File
 slug: radpdfviewer-showing-a-file
 tags: showing,a,file
-published: True
+publish: True
 position: 4
 ---
 

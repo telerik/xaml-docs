@@ -4,7 +4,7 @@ page_title: Auto Ellipsis
 description: Auto Ellipsis
 slug: raddatapager-features-auto-ellipsis
 tags: auto,ellipsis
-published: True
+publish: True
 position: 6
 ---
 

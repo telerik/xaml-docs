@@ -4,7 +4,7 @@ page_title: Place RadControls in Diagram Shapes
 description: Place RadControls in Diagram Shapes
 slug: raddiagram-howto-radcontrols-in-shape
 tags: place,radcontrols,in,diagram,shapes
-published: True
+publish: True
 position: 12
 ---
 

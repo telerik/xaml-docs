@@ -4,7 +4,7 @@ page_title: Shape Appearance
 description: Shape Appearance
 slug: radmap-features-shape-appearance
 tags: shape,appearance
-published: True
+publish: True
 position: 5
 ---
 

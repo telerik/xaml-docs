@@ -4,7 +4,7 @@ page_title: Bar Indicator
 description: Bar Indicator
 slug: linear-scale-bar-indicator
 tags: bar,indicator
-published: True
+publish: True
 position: 3
 ---
 

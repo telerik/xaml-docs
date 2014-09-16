@@ -4,7 +4,7 @@ page_title: ScrollMode
 description: ScrollMode
 slug: radtimebar-features-scrollmode
 tags: scrollmode
-published: True
+publish: True
 position: 4
 ---
 

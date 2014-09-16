@@ -4,7 +4,7 @@ page_title: RadRibbonView Template Structure
 description: RadRibbonView Template Structure
 slug: radribbonview-styling-templatestructure
 tags: radribbonview,template,structure
-published: True
+publish: True
 position: 2
 ---
 

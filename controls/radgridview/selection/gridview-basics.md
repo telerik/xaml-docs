@@ -4,7 +4,7 @@ page_title: Basic Selection
 description: Basic Selection
 slug: gridview-selection-basics
 tags: basic,selection
-published: True
+publish: True
 position: 0
 ---
 

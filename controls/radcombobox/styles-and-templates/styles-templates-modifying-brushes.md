@@ -4,7 +4,7 @@ page_title: Modifying Brushes
 description: Modifying Brushes
 slug: radcombobox-styles-templates-modifying-brushes
 tags: modifying,brushes
-published: True
+publish: True
 position: 7
 ---
 

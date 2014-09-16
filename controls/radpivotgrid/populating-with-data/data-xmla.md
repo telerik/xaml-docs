@@ -4,7 +4,7 @@ page_title: Using XmlaDataProvider
 description: Using XmlaDataProvider
 slug: radpivotgrid-data-xmla
 tags: using,xmladataprovider
-published: True
+publish: True
 position: 1
 ---
 

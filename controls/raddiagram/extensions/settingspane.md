@@ -4,7 +4,7 @@ page_title: SettingsPane
 description: SettingsPane
 slug: raddiagram-extensions-settingspane
 tags: settingspane
-published: True
+publish: True
 position: 4
 ---
 

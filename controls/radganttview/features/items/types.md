@@ -4,7 +4,7 @@ page_title: Types of Items
 description: Types of Items
 slug: radganttview-features-items-types
 tags: types,of,items
-published: True
+publish: True
 position: 0
 ---
 

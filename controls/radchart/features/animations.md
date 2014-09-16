@@ -4,7 +4,7 @@ page_title: Animations
 description: Animations
 slug: radchart-features-animations
 tags: animations
-published: True
+publish: True
 position: 10
 ---
 

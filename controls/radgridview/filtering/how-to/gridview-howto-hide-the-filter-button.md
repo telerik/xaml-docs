@@ -4,7 +4,7 @@ page_title: Hide the Filter Button
 description: Hide the Filter Button
 slug: gridview-filtering-howto-hide-the-filter-button
 tags: hide,the,filter,button
-published: True
+publish: True
 position: 16
 ---
 

@@ -4,7 +4,7 @@ page_title: What is a Workbook?
 description: What is a Workbook? 
 slug: radspreadsheet-model-working-with-workbooks-what-is-workbook
 tags: what,is,a,workbook?,
-published: False
+publish: False
 position: 0
 ---
 

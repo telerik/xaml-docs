@@ -4,7 +4,7 @@ page_title: Adding UI for WPF to the Visual Studio 2012 Toolbox
 description: Adding UI for WPF to the Visual Studio 2012 Toolbox
 slug: installation-adding-to-vs-2012-toolbox-wpf
 tags: adding,ui,for,wpf,to,the,visual,studio,2012,toolbox
-published: True
+publish: True
 position: 5
 site_name: WPF
 ---

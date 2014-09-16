@@ -4,7 +4,7 @@ page_title: Using in-memory Data
 description: Using in-memory Data
 slug: gridview-in-memory-date
 tags: using,in-memory,data
-published: True
+publish: True
 position: 2
 ---
 

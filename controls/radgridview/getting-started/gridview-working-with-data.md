@@ -4,7 +4,7 @@ page_title: Working with Data
 description: Working with Data
 slug: gridview-working-with-data
 tags: working,with,data
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Cannot group, sort and filter a specific column
 description: Cannot group, sort and filter a specific column
 slug: gridview-troubleshoot-group-sort-filter
 tags: cannot,group,,sort,and,filter,a,specific,column
-published: True
+publish: True
 position: 5
 ---
 

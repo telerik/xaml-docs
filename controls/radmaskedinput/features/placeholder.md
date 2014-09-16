@@ -4,7 +4,7 @@ page_title: Placeholder
 description: Placeholder
 slug: radmaskedinput-features-placeholder
 tags: placeholder
-published: True
+publish: True
 position: 5
 ---
 

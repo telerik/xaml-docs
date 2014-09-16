@@ -4,7 +4,7 @@ page_title: How to Hide the Minimized Area
 description: How to Hide the Minimized Area
 slug: radoutlookbar-how-to-hide-the-minimized-area
 tags: how,to,hide,the,minimized,area
-published: True
+publish: True
 position: 1
 ---
 

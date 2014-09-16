@@ -4,7 +4,7 @@ page_title: Property Accessor
 description: Property Accessor
 slug: radmap-visualization-layer-property-accessor
 tags: property,accessor
-published: True
+publish: True
 position: 2
 ---
 

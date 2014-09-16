@@ -4,7 +4,7 @@ page_title: Customize Appearance
 description: Customize Appearance
 slug: raddiagram-styling-appearance
 tags: customize,appearance
-published: True
+publish: True
 position: 1
 ---
 

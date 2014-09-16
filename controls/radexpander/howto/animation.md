@@ -4,7 +4,7 @@ page_title: Expander Animation
 description: Expander Animation
 slug: radexpander-howto-animation
 tags: expander,animation
-published: True
+publish: True
 position: 1
 ---
 

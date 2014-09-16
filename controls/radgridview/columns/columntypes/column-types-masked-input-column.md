@@ -4,7 +4,7 @@ page_title: Masked Input Column
 description: Masked Input Column
 slug: radgridview-columns-column-types-masked-input-column
 tags: masked,input,column
-published: True
+publish: True
 position: 12
 ---
 

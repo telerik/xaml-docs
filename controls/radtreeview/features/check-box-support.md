@@ -4,7 +4,7 @@ page_title: CheckBox Support
 description: CheckBox Support
 slug: check-box-support
 tags: checkbox,support
-published: True
+publish: True
 position: 2
 ---
 

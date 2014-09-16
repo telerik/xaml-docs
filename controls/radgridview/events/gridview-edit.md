@@ -4,7 +4,7 @@ page_title: Edit
 description: Edit
 slug: gridview-events-edit
 tags: edit
-published: True
+publish: True
 position: 2
 ---
 

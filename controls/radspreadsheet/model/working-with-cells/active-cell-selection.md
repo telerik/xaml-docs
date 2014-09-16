@@ -4,7 +4,7 @@ page_title: Accessing Cells of a Worksheet
 description: Accessing Cells of a Worksheet
 slug: radspreadsheet-active-cell-selection
 tags: accessing,cells,of,a,worksheet
-published: False
+publish: False
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Simple Filter Descriptors
 description: Simple Filter Descriptors
 slug: radgridview-filtering-simple-filter-descriptors
 tags: simple,filter,descriptors
-published: False
+publish: False
 position: 2
 ---
 

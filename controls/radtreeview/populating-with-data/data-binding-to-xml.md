@@ -4,7 +4,7 @@ page_title: Binding to XML
 description: Binding to XML
 slug: radtreeview-populating-with-data-data-binding-to-xml
 tags: binding,to,xml
-published: True
+publish: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Custom Connectors
 description: Custom Connectors
 slug: raddiagram-features-custom-connectors
 tags: custom,connectors
-published: True
+publish: True
 position: 0
 ---
 

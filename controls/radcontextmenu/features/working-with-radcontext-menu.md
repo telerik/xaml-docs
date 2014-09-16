@@ -4,7 +4,7 @@ page_title: Working with the RadContextMenu
 description: Working with the RadContextMenu
 slug: radcontextmenu-features-working-with-radcontext-menu
 tags: working,with,the,radcontextmenu
-published: True
+publish: True
 position: 0
 ---
 

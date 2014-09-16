@@ -4,7 +4,7 @@ page_title: Creating ItemTemplate and SelectionBoxTemplate
 description: Creating ItemTemplate and SelectionBoxTemplate
 slug: radcombobox-creating-itemtemplate
 tags: creating,itemtemplate,and,selectionboxtemplate
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Migration from RadMaskedTextBox
 description: Migration from RadMaskedTextBox
 slug: radmaskedinput-migrating
 tags: migration,from,radmaskedtextbox
-published: True
+publish: True
 position: 3
 ---
 

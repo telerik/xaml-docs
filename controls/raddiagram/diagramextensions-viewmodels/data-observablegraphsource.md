@@ -4,7 +4,7 @@ page_title: ObservableGraphSourceBase
 description: ObservableGraphSourceBase
 slug: raddiagram-data-observablegraphsource
 tags: observablegraphsourcebase
-published: True
+publish: True
 position: 6
 ---
 

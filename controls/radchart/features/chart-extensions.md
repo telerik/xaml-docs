@@ -4,7 +4,7 @@ page_title: Chart Extensions
 description: Chart Extensions
 slug: radchart-features-chart-extensions
 tags: chart,extensions
-published: True
+publish: True
 position: 21
 ---
 

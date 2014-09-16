@@ -4,7 +4,7 @@ page_title: Thumbnail
 description: Thumbnail
 slug: raddiagram-extensions-thumbnail
 tags: thumbnail
-published: True
+publish: True
 position: 0
 ---
 

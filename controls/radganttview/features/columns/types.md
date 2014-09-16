@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: radganttview-features-columns-types
 tags: overview
-published: True
+publish: True
 position: 0
 ---
 

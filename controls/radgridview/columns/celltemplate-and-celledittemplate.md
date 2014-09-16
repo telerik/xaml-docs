@@ -4,7 +4,7 @@ page_title: Setting CellTemplate and CellEditTemplate
 description: Setting CellTemplate and CellEditTemplate
 slug: radgridview-columns-celltemplate-and-celledittemplate
 tags: setting,celltemplate,and,celledittemplate
-published: True
+publish: True
 position: 3
 ---
 

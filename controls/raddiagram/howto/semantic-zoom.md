@@ -4,7 +4,7 @@ page_title: Implement Semantic Zoom on a Shape level
 description: Implement Semantic Zoom on a Shape level
 slug: raddiagram-howto-semantic-zoom
 tags: implement,semantic,zoom,on,a,shape,level
-published: True
+publish: True
 position: 10
 ---
 

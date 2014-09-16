@@ -4,7 +4,7 @@ page_title: Creating a BulletGraph Programmatically
 description: Creating a BulletGraph Programmatically
 slug: radbulletgraph_creating_a_bulletgraph_programmatically
 tags: creating,a,bulletgraph,programmatically
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Specifications
 description: Specifications
 slug: radbarcode-barcode-specifications
 tags: specifications
-published: True
+publish: True
 position: 0
 ---
 

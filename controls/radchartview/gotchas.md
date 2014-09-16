@@ -4,7 +4,7 @@ page_title: Gotchas
 description: Gotchas
 slug: radchartview-gotchas
 tags: gotchas
-published: True
+publish: True
 position: 11
 site_name: Silverlight
 ---

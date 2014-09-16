@@ -4,7 +4,7 @@ page_title: Highlight PointMark On Click
 description: Highlight PointMark On Click
 slug: radchart-howto-highlight-pointmark-on-click
 tags: highlight,pointmark,on,click
-published: True
+publish: True
 position: 11
 ---
 

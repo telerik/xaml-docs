@@ -4,7 +4,7 @@ page_title: Access the default editing element
 description: Access the default editing element
 slug: gridview-access-editing-element
 tags: access,the,default,editing,element
-published: True
+publish: True
 position: 1
 ---
 

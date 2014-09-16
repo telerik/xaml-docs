@@ -4,7 +4,7 @@ page_title: Backwards compatibility
 description: Backwards compatibility
 slug: radpivotgrid-backwards-compatibility
 tags: backwards,compatibility
-published: True
+publish: True
 position: 1
 ---
 

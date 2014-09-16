@@ -4,7 +4,7 @@ page_title: DefaultView
 description: DefaultView
 slug: radchart-features-default-view
 tags: defaultview
-published: True
+publish: True
 position: 17
 ---
 

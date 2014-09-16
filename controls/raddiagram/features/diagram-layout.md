@@ -4,7 +4,7 @@ page_title: Layout
 description: Layout
 slug: raddiagram-features-diagram-layout
 tags: layout
-published: True
+publish: True
 position: 10
 ---
 

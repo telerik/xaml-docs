@@ -4,7 +4,7 @@ page_title: View and ViewModel
 description: View and ViewModel
 slug: radscheduleview-populating-with-data-binding-to-db-viewmodel
 tags: view,and,viewmodel
-published: True
+publish: True
 position: 7
 site_name: Silverlight
 ---

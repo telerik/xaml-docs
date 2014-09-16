@@ -4,7 +4,7 @@ page_title: RowStyleSelectors
 description: RowStyleSelectors
 slug: gridview-rowstyleselector
 tags: rowstyleselectors
-published: True
+publish: True
 position: 2
 ---
 

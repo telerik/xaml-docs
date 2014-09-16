@@ -4,7 +4,7 @@ page_title: Cropping
 description: Cropping
 slug: radimageeditor-howto-use-crop
 tags: cropping
-published: True
+publish: True
 position: 1
 ---
 

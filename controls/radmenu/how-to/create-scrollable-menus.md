@@ -4,7 +4,7 @@ page_title: Create Scrollable Menus
 description: Create Scrollable Menus
 slug: radmenu-how-to-create-scrollable-menus
 tags: create,scrollable,menus
-published: True
+publish: True
 position: 1
 ---
 

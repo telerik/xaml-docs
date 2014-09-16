@@ -4,7 +4,7 @@ page_title: Drill Down Chart
 description: Drill Down Chart
 slug: radchart-how-to-drill-down-chart
 tags: drill,down,chart
-published: True
+publish: True
 position: 0
 ---
 

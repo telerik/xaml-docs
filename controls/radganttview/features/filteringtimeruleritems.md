@@ -4,7 +4,7 @@ page_title: Filtering TimeRulerItems
 description: Filtering TimeRulerItems
 slug: radganttview-filteringtimeruleritems
 tags: filtering,timeruleritems
-published: True
+publish: True
 position: 5
 ---
 

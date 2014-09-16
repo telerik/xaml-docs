@@ -4,7 +4,7 @@ page_title: Structure
 description: Structure
 slug: radtoolbar-structure
 tags: structure
-published: True
+publish: True
 position: 1
 site_name: Silverlight
 ---

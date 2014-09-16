@@ -4,7 +4,7 @@ page_title: Orientation
 description: Orientation
 slug: orientation
 tags: orientation
-published: True
+publish: True
 position: 1
 ---
 

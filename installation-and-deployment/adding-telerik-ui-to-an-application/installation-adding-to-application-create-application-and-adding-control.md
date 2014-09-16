@@ -4,7 +4,7 @@ page_title: Creating an Application and Adding UI for Silverlight
 description: Creating an Application and Adding UI for Silverlight
 slug: installation-adding-to-application-create-application-and-adding-control
 tags: creating,an,application,and,adding,ui,for,silverlight
-published: True
+publish: True
 position: 0
 site_name: Silverlight
 ---

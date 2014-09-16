@@ -4,7 +4,7 @@ page_title: Declaratively
 description: Declaratively
 slug: radtreeview-populating-with-data-declaratively
 tags: declaratively
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Display Modes
 description: Display Modes
 slug: raddatapager-features-display-modes
 tags: display,modes
-published: True
+publish: True
 position: 1
 ---
 

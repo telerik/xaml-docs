@@ -4,7 +4,7 @@ page_title: Mouse Tools
 description: Mouse Tools
 slug: raddiagrams-features-mouse-tools
 tags: mouse,tools
-published: True
+publish: True
 position: 1
 ---
 

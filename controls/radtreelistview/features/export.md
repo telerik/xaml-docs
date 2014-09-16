@@ -4,7 +4,7 @@ page_title: Export
 description: Export
 slug: radtreelistview-features-export
 tags: export
-published: True
+publish: True
 position: 11
 ---
 

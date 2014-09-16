@@ -4,7 +4,7 @@ page_title: Iterate Through TreeViewItems
 description: Iterate Through TreeViewItems
 slug: radtreeview-how-to-iterate-through-treeviewitems
 tags: iterate,through,treeviewitems
-published: True
+publish: True
 position: 11
 ---
 

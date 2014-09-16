@@ -4,7 +4,7 @@ page_title: What Is New
 description: What Is New
 slug: radgauge-what-is-new
 tags: what,is,new
-published: True
+publish: True
 position: 2
 ---
 

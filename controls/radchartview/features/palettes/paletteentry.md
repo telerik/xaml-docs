@@ -4,7 +4,7 @@ page_title: Palette Entry
 description: Palette Entry
 slug: radchartview-features-palettes-paletteentry
 tags: palette,entry
-published: True
+publish: True
 position: 2
 ---
 

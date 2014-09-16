@@ -4,7 +4,7 @@ page_title: SplineSeries
 description: SplineSeries
 slug: radchartview-series-splineseries
 tags: splineseries
-published: True
+publish: True
 position: 1
 ---
 

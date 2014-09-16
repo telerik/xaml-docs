@@ -4,7 +4,7 @@ page_title: Current Page
 description: Current Page
 slug: raddatapager-features-current-page
 tags: current,page
-published: True
+publish: True
 position: 4
 ---
 

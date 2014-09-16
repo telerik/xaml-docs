@@ -4,7 +4,7 @@ page_title: Expanding and Collapsing Items
 description: Expanding and Collapsing Items
 slug: radtreeview-feautres-treeviewitem-expanding-and-collapsing-items
 tags: expanding,and,collapsing,items
-published: True
+publish: True
 position: 4
 ---
 

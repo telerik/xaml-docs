@@ -4,7 +4,7 @@ page_title: Consuming WCF Data Service
 description: Consuming WCF Data Service
 slug: consuming-data-ado-net-data-service
 tags: consuming,wcf,data,service
-published: True
+publish: True
 position: 2
 ---
 

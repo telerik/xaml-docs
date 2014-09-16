@@ -4,7 +4,7 @@ page_title: Row Details
 description: Row Details
 slug: radtreelistview-features-row-details
 tags: row,details
-published: True
+publish: True
 position: 3
 ---
 

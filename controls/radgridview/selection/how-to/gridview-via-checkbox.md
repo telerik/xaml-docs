@@ -4,7 +4,7 @@ page_title: Selection via CheckBox
 description: Selection via CheckBox
 slug: gridview-selection-via-checkbox
 tags: selection,via,checkbox
-published: True
+publish: True
 position: 0
 ---
 

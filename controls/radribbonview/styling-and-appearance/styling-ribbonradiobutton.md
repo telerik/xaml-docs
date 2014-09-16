@@ -4,7 +4,7 @@ page_title: Styling the RadRibbonRadioButton
 description: Styling the RadRibbonRadioButton
 slug: radribbonview-styling-ribbonradiobutton
 tags: styling,the,radribbonradiobutton
-published: True
+publish: True
 position: 14
 ---
 

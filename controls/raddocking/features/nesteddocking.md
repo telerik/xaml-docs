@@ -4,7 +4,7 @@ page_title: Nested RadDocking Support
 description: Nested RadDocking Support
 slug: raddocking-features-nesteddocking
 tags: nested,raddocking,support
-published: True
+publish: True
 position: 9
 ---
 

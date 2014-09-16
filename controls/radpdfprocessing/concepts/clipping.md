@@ -4,7 +4,7 @@ page_title: Clipping
 description: Clipping
 slug: radpdfprocessing-concepts-clipping
 tags: clipping
-published: True
+publish: True
 position: 1
 ---
 

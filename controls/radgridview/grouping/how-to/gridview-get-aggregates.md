@@ -4,7 +4,7 @@ page_title: Get aggregates from a group
 description: Get aggregates from a group
 slug: gridview-grouping-how-to-get-aggregates
 tags: get,aggregates,from,a,group
-published: True
+publish: True
 position: 0
 ---
 

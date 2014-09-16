@@ -4,7 +4,7 @@ page_title: Colors
 description: Colors
 slug: radpanelbar-changing-colors
 tags: colors
-published: True
+publish: True
 position: 2
 ---
 

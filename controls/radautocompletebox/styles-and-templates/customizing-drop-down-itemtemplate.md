@@ -4,7 +4,7 @@ page_title: Customizing the DropDownItemTemplate
 description: Customizing the DropDownItemTemplate
 slug: radautocompletebox-customizing-drop-down-itemtemplate
 tags: customizing,the,dropdownitemtemplate
-published: True
+publish: True
 position: 0
 ---
 

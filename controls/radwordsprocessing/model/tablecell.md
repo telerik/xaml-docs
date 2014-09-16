@@ -4,7 +4,7 @@ page_title: TableCell
 description: TableCell
 slug: radwordsprocessing-model-tablecell
 tags: tablecell
-published: True
+publish: True
 position: 6
 ---
 

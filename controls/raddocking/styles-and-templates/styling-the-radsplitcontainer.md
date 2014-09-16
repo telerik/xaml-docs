@@ -4,7 +4,7 @@ page_title: Styling the RadSplitContainer
 description: Styling the RadSplitContainer
 slug: raddocking-styling-the-radsplitcontainer
 tags: styling,the,radsplitcontainer
-published: True
+publish: True
 position: 11
 ---
 

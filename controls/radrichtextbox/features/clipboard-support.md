@@ -4,7 +4,7 @@ page_title: Clipboard Support
 description: Clipboard Support
 slug: radrichtextbox-features-clipboard-support
 tags: clipboard,support
-published: True
+publish: True
 position: 5
 ---
 

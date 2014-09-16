@@ -4,7 +4,7 @@ page_title: Providers
 description: Providers
 slug: radcloudupload-features-providers
 tags: providers
-published: True
+publish: True
 position: 0
 ---
 

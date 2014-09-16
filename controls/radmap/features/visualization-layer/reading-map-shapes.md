@@ -4,7 +4,7 @@ page_title: Reading Map Shapes
 description: Reading Map Shapes
 slug: radmap-visualization-layer-reading-map-shapes
 tags: reading,map,shapes
-published: True
+publish: True
 position: 6
 ---
 

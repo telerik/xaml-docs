@@ -4,7 +4,7 @@ page_title: Adding UI for WPF to the Visual Studio 2010 Toolbox
 description: Adding UI for WPF to the Visual Studio 2010 Toolbox
 slug: installation-adding-to-vs-2010-toolbox-wpf
 tags: adding,ui,for,wpf,to,the,visual,studio,2010,toolbox
-published: True
+publish: True
 position: 3
 site_name: WPF
 ---

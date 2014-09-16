@@ -4,7 +4,7 @@ page_title: Clock Items
 description: Clock Items
 slug: raddatetimepicker-features-clock-items
 tags: clock,items
-published: True
+publish: True
 position: 4
 ---
 

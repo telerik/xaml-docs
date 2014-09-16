@@ -4,7 +4,7 @@ page_title: Cell Styles
 description: Cell Styles
 slug: radspreadsheet-model-features-styling-cell-styles
 tags: cell,styles
-published: False
+publish: False
 position: 0
 ---
 

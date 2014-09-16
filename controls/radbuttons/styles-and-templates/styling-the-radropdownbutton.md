@@ -4,7 +4,7 @@ page_title: Styling the RadDropDownButton
 description: Styling the RadDropDownButton
 slug: radbuttons-styles-and-templates-styling-the-radropdownbutton
 tags: styling,the,raddropdownbutton
-published: True
+publish: True
 position: 4
 ---
 

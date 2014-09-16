@@ -4,7 +4,7 @@ page_title: Enable Row Reordering within two RadGridView-s
 description: Enable Row Reordering within two RadGridView-s
 slug: radgridview-row-reorder
 tags: enable,row,reordering,within,two,radgridview-s
-published: True
+publish: True
 position: 9
 ---
 

@@ -4,7 +4,7 @@ page_title: Insert and Remove Cells
 description: Insert and Remove Cells
 slug: radspreadprocessing-working-with-cells-insert-remove-cells
 tags: insert,and,remove,cells
-published: True
+publish: True
 position: 1
 ---
 

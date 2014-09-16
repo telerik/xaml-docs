@@ -4,7 +4,7 @@ page_title: Customizing the CellTemplate
 description: Customizing the CellTemplate
 slug: radganttview-features-columns-cell-template
 tags: customizing,the,celltemplate
-published: True
+publish: True
 position: 1
 ---
 

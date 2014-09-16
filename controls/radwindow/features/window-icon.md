@@ -4,7 +4,7 @@ page_title: Window Icon
 description: Window Icon
 slug: radwindow-features-window-icon
 tags: window,icon
-published: True
+publish: True
 position: 4
 ---
 

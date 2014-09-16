@@ -4,7 +4,7 @@ page_title: Styling the MapCommandBar
 description: Styling the MapCommandBar
 slug: radmap-styles-and-templates-styling-the-mapcommandbar
 tags: styling,the,mapcommandbar
-published: True
+publish: True
 position: 3
 ---
 

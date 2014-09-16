@@ -4,7 +4,7 @@ page_title: Virtualization
 description: Virtualization
 slug: raddiagrams-features-virtualization
 tags: virtualization
-published: True
+publish: True
 position: 6
 ---
 

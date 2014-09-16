@@ -4,7 +4,7 @@ page_title: Customizing Columns
 description: Customizing Columns
 slug: gridview-columns-customizing-columns
 tags: customizing,columns
-published: True
+publish: True
 position: 4
 ---
 

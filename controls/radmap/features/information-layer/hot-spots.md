@@ -4,7 +4,7 @@ page_title: Hot Spots
 description: Hot Spots
 slug: radmap-features-hot-spots
 tags: hot,spots
-published: True
+publish: True
 position: 7
 ---
 

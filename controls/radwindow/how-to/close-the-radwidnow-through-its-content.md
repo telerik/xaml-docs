@@ -4,7 +4,7 @@ page_title: Close the RadWindow Through its Content
 description: Close the RadWindow Through its Content
 slug: radwindow-how-to-close-the-radwidnow-through-its-content
 tags: close,the,radwindow,through,its,content
-published: True
+publish: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Aggregate Functions
 description: Aggregate Functions
 slug: gridview-columns-aggregate-functions
 tags: aggregate,functions
-published: True
+publish: True
 position: 8
 ---
 

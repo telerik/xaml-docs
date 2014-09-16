@@ -4,7 +4,7 @@ page_title: Find Dialog
 description: Find Dialog
 slug: radpdfviewer-find-dialog
 tags: find,dialog
-published: True
+publish: True
 position: 4
 ---
 

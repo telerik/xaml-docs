@@ -4,7 +4,7 @@ page_title: Properties
 description: Properties
 slug: radbulletgraph_properties
 tags: properties
-published: True
+publish: True
 position: 2
 ---
 

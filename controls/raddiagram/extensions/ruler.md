@@ -4,7 +4,7 @@ page_title: Ruler
 description: Ruler
 slug: raddiagram-extensions-ruler
 tags: ruler
-published: True
+publish: True
 position: 3
 ---
 

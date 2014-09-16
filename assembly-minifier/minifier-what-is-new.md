@@ -4,7 +4,7 @@ page_title: What is New
 description: What is New
 slug: minifier-what-is-new
 tags: what,is,new
-published: True
+publish: True
 position: 0
 site_name: Silverlight
 ---

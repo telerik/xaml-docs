@@ -4,7 +4,7 @@ page_title: Hierarchy Column
 description: Hierarchy Column
 slug: radtreelistview-features-hierarchy-column
 tags: hierarchy,column
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: ItemsPanel
 description: ItemsPanel
 slug: radlegend-itemspanel
 tags: itemspanel
-published: True
+publish: True
 position: 2
 ---
 

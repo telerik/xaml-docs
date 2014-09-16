@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: radtoolbar-changes
 tags: changes
-published: True
+publish: True
 position: 0
 ---
 

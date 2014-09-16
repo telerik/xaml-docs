@@ -4,7 +4,7 @@ page_title: How to Create Custom Mask Tokens
 description: How to Create Custom Mask Tokens
 slug: radmaskedinput-howto-create-custom-token
 tags: how,to,create,custom,mask,tokens
-published: True
+publish: True
 position: 3
 ---
 

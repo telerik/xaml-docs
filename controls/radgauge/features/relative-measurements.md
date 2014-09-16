@@ -4,7 +4,7 @@ page_title: Relative Measurements
 description: Relative Measurements
 slug: radgauge-features-relative-measurements
 tags: relative,measurements
-published: True
+publish: True
 position: 7
 ---
 

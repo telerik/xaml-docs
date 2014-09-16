@@ -4,7 +4,7 @@ page_title: Information Layer
 description: Information Layer
 slug: radmap-features-information-layer
 tags: information,layer
-published: True
+publish: True
 position: 0
 ---
 

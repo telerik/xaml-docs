@@ -4,7 +4,7 @@ page_title: Create Menu Button with RadContextMenu and ToggleButton
 description: Create Menu Button with RadContextMenu and ToggleButton
 slug: radcontextmenu-how-to-create-menu-button-with-radcontextmenu-and-togglebutton
 tags: create,menu,button,with,radcontextmenu,and,togglebutton
-published: True
+publish: True
 position: 2
 ---
 

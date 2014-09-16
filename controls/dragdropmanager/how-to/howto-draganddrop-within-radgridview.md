@@ -4,7 +4,7 @@ page_title: Drag and Drop within RadGridView
 description: Drag and Drop within RadGridView
 slug: dragdropmanager-howto-draganddrop-within-radgridview
 tags: drag,and,drop,within,radgridview
-published: True
+publish: True
 position: 4
 ---
 

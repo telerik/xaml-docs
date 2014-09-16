@@ -4,7 +4,7 @@ page_title: Closing
 description: Closing
 slug: radwindow-features-closing
 tags: closing
-published: True
+publish: True
 position: 8
 ---
 

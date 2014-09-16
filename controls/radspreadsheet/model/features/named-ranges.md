@@ -4,7 +4,7 @@ page_title: Names (Named Ranges)
 description: Names (Named Ranges)
 slug: radspreadsheet-model-features-named-ranges
 tags: names,(named,ranges)
-published: False
+publish: False
 position: 10
 ---
 

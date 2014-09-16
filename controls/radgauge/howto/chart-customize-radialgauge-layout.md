@@ -4,7 +4,7 @@ page_title: Create Compass
 description: Create Compass
 slug: chart-customize-radialgauge-layout
 tags: create,compass
-published: True
+publish: True
 position: 1
 ---
 

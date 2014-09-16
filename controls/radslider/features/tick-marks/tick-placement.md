@@ -4,7 +4,7 @@ page_title: Tick placement
 description: Tick placement
 slug: radslider-tick-placement
 tags: tick,placement
-published: True
+publish: True
 position: 1
 ---
 

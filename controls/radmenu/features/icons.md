@@ -4,7 +4,7 @@ page_title: Icons
 description: Icons
 slug: radmenu-features-icons
 tags: icons
-published: True
+publish: True
 position: 5
 ---
 

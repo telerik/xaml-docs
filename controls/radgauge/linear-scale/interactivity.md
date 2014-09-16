@@ -4,7 +4,7 @@ page_title: Interactivity
 description: Interactivity
 slug: linear-scale-interactivity
 tags: interactivity
-published: True
+publish: True
 position: 7
 ---
 

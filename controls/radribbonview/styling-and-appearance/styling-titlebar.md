@@ -4,7 +4,7 @@ page_title: Styling the RadRibbonView TitleBar
 description: Styling the RadRibbonView TitleBar
 slug: radribbonview-styling-titlebar
 tags: styling,the,radribbonview,titlebar
-published: True
+publish: True
 position: 7
 ---
 

@@ -4,7 +4,7 @@ page_title: Creating a Chart in Code-behind
 description: Creating a Chart in Code-behind
 slug: radchart-populating-with-data-creating-chart-in-code-behind
 tags: creating,a,chart,in,code-behind
-published: True
+publish: True
 position: 2
 ---
 

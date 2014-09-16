@@ -4,7 +4,7 @@ page_title: Marked Zone
 description: Marked Zone
 slug: radchart-features-annotations-marked-zone
 tags: marked,zone
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Virtualization Layer
 description: Virtualization Layer
 slug: radmap-features-virtualization-layer
 tags: virtualization,layer
-published: True
+publish: True
 position: 12
 ---
 

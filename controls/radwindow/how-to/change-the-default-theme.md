@@ -4,7 +4,7 @@ page_title: Change the Default Theme
 description: Change the Default Theme
 slug: radwindow-how-to-change-the-default-theme
 tags: change,the,default,theme
-published: True
+publish: True
 position: 1
 ---
 

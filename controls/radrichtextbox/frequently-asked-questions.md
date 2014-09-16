@@ -4,7 +4,7 @@ page_title: Frequently Asked Questions
 description: Frequently Asked Questions
 slug: radrichtextbox-frequently-asked-questions
 tags: frequently,asked,questions
-published: True
+publish: True
 position: 2
 ---
 

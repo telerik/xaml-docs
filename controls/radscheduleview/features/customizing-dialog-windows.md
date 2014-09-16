@@ -4,7 +4,7 @@ page_title: Customizing Dialog Windows
 description: Customizing Dialog Windows
 slug: radscheduleview-features-customizing-dialog-windows
 tags: customizing,dialog,windows
-published: True
+publish: True
 position: 17
 ---
 

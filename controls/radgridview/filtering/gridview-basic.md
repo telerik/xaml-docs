@@ -4,7 +4,7 @@ page_title: Basic Filtering
 description: Basic Filtering
 slug: gridview-filtering-basic
 tags: basic,filtering
-published: True
+publish: True
 position: 9
 ---
 

@@ -4,7 +4,7 @@ page_title: InlineUIContainer
 description: InlineUIContainer
 slug: radrichtextbox-features-document-elements-inlineuicontainer
 tags: inlineuicontainer
-published: True
+publish: True
 position: 7
 ---
 

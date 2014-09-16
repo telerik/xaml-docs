@@ -4,7 +4,7 @@ page_title: Load on Demand
 description: Load on Demand
 slug: radtreeview-features-load-on-demand
 tags: load,on,demand
-published: True
+publish: True
 position: 8
 ---
 

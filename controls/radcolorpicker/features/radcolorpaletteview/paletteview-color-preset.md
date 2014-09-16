@@ -4,7 +4,7 @@ page_title: Color Preset
 description: Color Preset
 slug: paletteview-color-preset
 tags: color,preset
-published: True
+publish: True
 position: 1
 ---
 

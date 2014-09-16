@@ -4,7 +4,7 @@ page_title: Implement custom commands for MapCommandBar UI
 description: Implement custom commands for MapCommandBar UI
 slug: radmap-howto-customize-commands
 tags: implement,custom,commands,for,mapcommandbar,ui
-published: True
+publish: True
 position: 0
 ---
 

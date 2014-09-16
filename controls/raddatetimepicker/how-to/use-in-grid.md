@@ -4,7 +4,7 @@ page_title: How to use RadDateTimePicker in a Grid
 description: How to use RadDateTimePicker in a Grid
 slug: raddatetimepicker-how-to-use-in-grid
 tags: how,to,use,raddatetimepicker,in,a,grid
-published: True
+publish: True
 position: 3
 ---
 

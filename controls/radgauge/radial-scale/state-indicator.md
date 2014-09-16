@@ -4,7 +4,7 @@ page_title: State Indicator
 description: State Indicator
 slug: radial-scale-state-indicator
 tags: state,indicator
-published: True
+publish: True
 position: 6
 ---
 

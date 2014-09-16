@@ -4,7 +4,7 @@ page_title: Data Selection
 description: Data Selection
 slug: gridview-overview-data-selection
 tags: data,selection
-published: True
+publish: True
 position: 1
 ---
 

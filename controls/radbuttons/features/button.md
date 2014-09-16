@@ -4,7 +4,7 @@ page_title: Button
 description: Button
 slug: radbuttons-features-button
 tags: button
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: External Row Details
 description: External Row Details
 slug: radgridview-row-details-external-row-details
 tags: external,row,details
-published: True
+publish: True
 position: 5
 ---
 

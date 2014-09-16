@@ -4,7 +4,7 @@ page_title: Sorting
 description: Sorting
 slug: radpivotgrid-features-sorting-olap
 tags: sorting
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Settings
 description: Settings
 slug: radspreadprocessing-formats-and-conversion-txt-settings
 tags: settings
-published: True
+publish: True
 position: 1
 ---
 

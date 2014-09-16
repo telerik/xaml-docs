@@ -4,7 +4,7 @@ page_title: Freeze Panes
 description: Freeze Panes
 slug: radspreadsheet-ui-freeze-panes
 tags: freeze,panes
-published: True
+publish: True
 position: 4
 ---
 

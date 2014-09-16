@@ -4,7 +4,7 @@ page_title: Scrolling into View
 description: Scrolling into View
 slug: radpropertygrid-scrolling
 tags: scrolling,into,view
-published: True
+publish: True
 position: 10
 ---
 

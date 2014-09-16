@@ -4,7 +4,7 @@ page_title: Styling the RadRibbonComboBox
 description: Styling the RadRibbonComboBox
 slug: radribbonview-styling-ribboncombobox
 tags: styling,the,radribboncombobox
-published: True
+publish: True
 position: 18
 ---
 

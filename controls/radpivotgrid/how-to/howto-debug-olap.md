@@ -4,7 +4,7 @@ page_title: Debugging XMLA problems
 description: Debugging XMLA problems
 slug: radpivotgrid-howto-debug-olap
 tags: debugging,xmla,problems
-published: True
+publish: True
 position: 1
 ---
 

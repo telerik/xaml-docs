@@ -4,7 +4,7 @@ page_title: Animation
 description: Animation
 slug: radmenu-features-animation
 tags: animation
-published: True
+publish: True
 position: 4
 site_name: Silverlight
 ---

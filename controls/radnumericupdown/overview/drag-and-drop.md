@@ -4,7 +4,7 @@ page_title: Getting Started
 description: Getting Started
 slug: radnumericupdown-drag-and-drop
 tags: getting,started
-published: True
+publish: True
 position: 2
 ---
 

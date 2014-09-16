@@ -4,7 +4,7 @@ page_title: Application Menu
 description: Application Menu
 slug: radribbonview-applicationmenu
 tags: application,menu
-published: True
+publish: True
 position: 1
 ---
 

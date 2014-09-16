@@ -4,7 +4,7 @@ page_title: Graph Colorizer
 description: Graph Colorizer
 slug: radmap-features-graph-colorizer
 tags: graph,colorizer
-published: True
+publish: True
 position: 10
 ---
 

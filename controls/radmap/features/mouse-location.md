@@ -4,7 +4,7 @@ page_title: Mouse Location
 description: Mouse Location
 slug: radmap-features-mouse-location
 tags: mouse,location
-published: True
+publish: True
 position: 7
 ---
 

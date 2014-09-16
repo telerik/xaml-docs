@@ -4,7 +4,7 @@ page_title: Multiple-column Sorting
 description: Multiple-column Sorting
 slug: gridview-multiple-column-sorting
 tags: multiple-column,sorting
-published: True
+publish: True
 position: 3
 ---
 

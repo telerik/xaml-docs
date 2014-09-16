@@ -4,7 +4,7 @@ page_title: Shapefiles Support
 description: Shapefiles Support
 slug: radmap-features-shapefiles-support
 tags: shapefiles,support
-published: True
+publish: True
 position: 12
 ---
 

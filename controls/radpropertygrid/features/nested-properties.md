@@ -4,7 +4,7 @@ page_title: Nested Properties
 description: Nested Properties
 slug: radpropertygrid-nested-properties
 tags: nested,properties
-published: True
+publish: True
 position: 0
 ---
 

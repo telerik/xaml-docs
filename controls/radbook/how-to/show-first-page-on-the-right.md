@@ -4,7 +4,7 @@ page_title: Show First Page On The Right
 description: Show First Page On The Right
 slug: radbook-show-first-page-on-the-right
 tags: show,first,page,on,the,right
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Mouse Support
 description: Mouse Support
 slug: radribbonview-mouse-support
 tags: mouse,support
-published: True
+publish: True
 position: 7
 ---
 

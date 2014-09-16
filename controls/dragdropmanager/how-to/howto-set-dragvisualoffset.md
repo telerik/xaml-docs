@@ -4,7 +4,7 @@ page_title: Set Drag Visual Offset
 description: Set Drag Visual Offset
 slug: dragdropmanager-howto-set-dragvisualoffset
 tags: set,drag,visual,offset
-published: True
+publish: True
 position: 5
 ---
 

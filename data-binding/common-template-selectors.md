@@ -4,7 +4,7 @@ page_title: Template Selectors
 description: Template Selectors
 slug: common-data-binding-template-selectors
 tags: template,selectors
-published: True
+publish: True
 position: 6
 ---
 

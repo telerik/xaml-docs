@@ -4,7 +4,7 @@ page_title: DragDropPayloadManager
 description: DragDropPayloadManager
 slug: dragdropmanager-dragdroppayloadmanager
 tags: dragdroppayloadmanager
-published: True
+publish: True
 position: 4
 ---
 

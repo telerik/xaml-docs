@@ -4,7 +4,7 @@ page_title: Localize the Filtering UI
 description: Localize the Filtering UI
 slug: gridview-filtering-howto-localize-the-filtering-ui
 tags: localize,the,filtering,ui
-published: True
+publish: True
 position: 19
 ---
 

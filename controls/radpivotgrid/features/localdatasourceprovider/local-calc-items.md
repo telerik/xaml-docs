@@ -4,7 +4,7 @@ page_title: Calculated Items
 description: Calculated Items
 slug: radpivotgrid-features-local-calc-items
 tags: calculated,items
-published: True
+publish: True
 position: 9
 ---
 

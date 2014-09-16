@@ -4,7 +4,7 @@ page_title: Styling a Row
 description: Styling a Row
 slug: gridview-styling-a-row
 tags: styling,a,row
-published: True
+publish: True
 position: 13
 ---
 

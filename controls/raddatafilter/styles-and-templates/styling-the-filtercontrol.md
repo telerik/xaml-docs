@@ -4,7 +4,7 @@ page_title: Styling the FilterControl
 description: Styling the FilterControl
 slug: raddatafilter-styles-and-templates-styling-the-filtercontrol
 tags: styling,the,filtercontrol
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Table Styles Gallery
 description: Table Styles Gallery
 slug: radrichtextbox-ui-for-applying-formatting-table-styles-gallery
 tags: table,styles,gallery
-published: True
+publish: True
 position: 5
 ---
 

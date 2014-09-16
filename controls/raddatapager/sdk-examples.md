@@ -4,7 +4,7 @@ page_title: SDK Examples
 description: SDK Examples
 slug: raddatapager-sdk-examples
 tags: sdk,examples
-published: True
+publish: True
 position: 4
 ---
 

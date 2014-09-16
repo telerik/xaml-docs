@@ -4,7 +4,7 @@ page_title: Map Legend
 description: Map Legend
 slug: radmap-features-map-legend
 tags: map,legend
-published: True
+publish: True
 position: 16
 ---
 

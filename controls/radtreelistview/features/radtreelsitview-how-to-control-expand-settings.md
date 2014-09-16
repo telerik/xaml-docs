@@ -4,7 +4,7 @@ page_title: IsExpandedBinding and IsExpandableBinding
 description: IsExpandedBinding and IsExpandableBinding
 slug: radtreelsitview-how-to-control-expand-settings
 tags: isexpandedbinding,and,isexpandablebinding
-published: True
+publish: True
 position: 2
 ---
 

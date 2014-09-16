@@ -4,7 +4,7 @@ page_title: Positioning
 description: Positioning
 slug: radwindow-features-positioning
 tags: positioning
-published: True
+publish: True
 position: 2
 ---
 

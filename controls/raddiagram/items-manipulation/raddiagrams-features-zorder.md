@@ -4,7 +4,7 @@ page_title: ZOrder
 description: ZOrder
 slug: raddiagrams-features-zorder
 tags: zorder
-published: True
+publish: True
 position: 6
 ---
 

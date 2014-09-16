@@ -4,7 +4,7 @@ page_title: Special Slots
 description: Special Slots
 slug: radganttview-specialslots
 tags: special,slots
-published: True
+publish: True
 position: 4
 ---
 

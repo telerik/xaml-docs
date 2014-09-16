@@ -4,7 +4,7 @@ page_title: Grouping
 description: Grouping
 slug: raddiagram-features-grouping
 tags: grouping
-published: True
+publish: True
 position: 12
 ---
 

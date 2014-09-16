@@ -4,7 +4,7 @@ page_title: Isolated Storage
 description: Isolated Storage
 slug: consuming-data-isolated-storage
 tags: isolated,storage
-published: False
+publish: False
 position: 7
 site_name: Silverlight
 ---

@@ -4,7 +4,7 @@ page_title: Predefined Dialogs
 description: Predefined Dialogs
 slug: radwindow-features-predefined-dialogs
 tags: predefined,dialogs
-published: True
+publish: True
 position: 1
 ---
 

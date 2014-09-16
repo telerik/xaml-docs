@@ -4,7 +4,7 @@ page_title: Styling the Calendar
 description: Styling the Calendar
 slug: raddatetimepicker-styling-calendar
 tags: styling,the,calendar
-published: True
+publish: True
 position: 3
 ---
 

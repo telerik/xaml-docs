@@ -4,7 +4,7 @@ page_title: ComboBox Column
 description: ComboBox Column
 slug: radgridview-columns-column-types-combobox-column
 tags: combobox,column
-published: True
+publish: True
 position: 3
 ---
 

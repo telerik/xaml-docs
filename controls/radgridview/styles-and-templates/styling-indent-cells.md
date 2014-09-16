@@ -4,7 +4,7 @@ page_title: Styling the Indent Cells in RadGridView
 description: Styling the Indent Cells in RadGridView
 slug: radgridview-styling-indent-cells
 tags: styling,the,indent,cells,in,radgridview
-published: True
+publish: True
 position: 16
 ---
 

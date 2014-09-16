@@ -4,7 +4,7 @@ page_title: How to Make the Tab Headers Editable
 description: How to Make the Tab Headers Editable
 slug: radtabcontrol-how-to-make-the-tab-headers-editable
 tags: how,to,make,the,tab,headers,editable
-published: True
+publish: True
 position: 11
 site_name: Silverlight
 ---

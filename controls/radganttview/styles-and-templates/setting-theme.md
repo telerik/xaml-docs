@@ -4,7 +4,7 @@ page_title: Setting a Theme
 description: Setting a Theme
 slug: radganttview-styles-and-templates-setting-theme
 tags: setting,a,theme
-published: True
+publish: True
 position: 0
 ---
 

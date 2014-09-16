@@ -4,7 +4,7 @@ page_title: Date Time Axes
 description: Date Time Axes
 slug: radchartview-axes-datetimeaxes
 tags: date,time,axes
-published: True
+publish: True
 position: 2
 ---
 

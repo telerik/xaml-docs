@@ -4,7 +4,7 @@ page_title: Custom Functions
 description: Custom Functions
 slug: radspreadsheet-features-formulas-custom-functions
 tags: custom,functions
-published: False
+publish: False
 position: 4
 ---
 

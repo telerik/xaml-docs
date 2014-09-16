@@ -4,7 +4,7 @@ page_title: Programmatic Sorting
 description: Programmatic Sorting
 slug: gridview-sorting-programmatic
 tags: programmatic,sorting
-published: True
+publish: True
 position: 1
 ---
 

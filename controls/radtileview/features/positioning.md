@@ -4,7 +4,7 @@ page_title: Customize Position
 description: Customize Position
 slug: radtileview-positioning
 tags: customize,position
-published: True
+publish: True
 position: 6
 ---
 

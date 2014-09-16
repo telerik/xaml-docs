@@ -4,7 +4,7 @@ page_title: Required Parts
 description: Required Parts
 slug: radtimepicker-required-parts
 tags: required,parts
-published: False
+publish: False
 position: 1
 ---
 

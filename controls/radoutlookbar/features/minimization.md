@@ -4,7 +4,7 @@ page_title: Minimization
 description: Minimization
 slug: radoutlookbar-features-minimization
 tags: minimization
-published: True
+publish: True
 position: 4
 ---
 

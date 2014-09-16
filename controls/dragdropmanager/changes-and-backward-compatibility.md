@@ -4,7 +4,7 @@ page_title: Changes and Backward Compatibility
 description: Changes and Backward Compatibility
 slug: dragdropmanager-changes-and-backward-compatibility
 tags: changes,and,backward,compatibility
-published: True
+publish: True
 position: 1
 ---
 

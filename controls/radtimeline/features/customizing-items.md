@@ -4,7 +4,7 @@ page_title: Customizing Items
 description: Customizing Items
 slug: radtimeline-customizing-items
 tags: customizing,items
-published: True
+publish: True
 position: 3
 ---
 

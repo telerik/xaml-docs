@@ -4,7 +4,7 @@ page_title: Colorizers
 description: Colorizers
 slug: radheatmap-colorizers
 tags: colorizers
-published: True
+publish: True
 position: 4
 ---
 

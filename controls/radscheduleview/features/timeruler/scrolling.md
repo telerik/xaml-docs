@@ -4,7 +4,7 @@ page_title: Scrolling the TimeRuler
 description: Scrolling the TimeRuler
 slug: radscheduleview-features-timeruler-scrolling
 tags: scrolling,the,timeruler
-published: True
+publish: True
 position: 1
 ---
 

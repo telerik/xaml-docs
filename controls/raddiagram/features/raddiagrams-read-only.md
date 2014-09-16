@@ -4,7 +4,7 @@ page_title: Read-Only Diagram
 description: Read-Only Diagram
 slug: raddiagrams-features-read-only
 tags: read-only,diagram
-published: True
+publish: True
 position: 5
 ---
 

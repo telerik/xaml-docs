@@ -4,7 +4,7 @@ page_title: Display All Distinct Values
 description: Display All Distinct Values
 slug: gridview-filtering-howto-display-all-distinct-values
 tags: display,all,distinct,values
-published: True
+publish: True
 position: 3
 ---
 

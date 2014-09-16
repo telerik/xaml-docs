@@ -4,7 +4,7 @@ page_title: Color History
 description: Color History
 slug: radcoloreditor-features-color-history
 tags: color,history
-published: True
+publish: True
 position: 1
 ---
 

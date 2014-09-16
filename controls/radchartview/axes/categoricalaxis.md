@@ -4,7 +4,7 @@ page_title: Categorical Axis
 description: Categorical Axis
 slug: radchartview-axes-categoricalaxis
 tags: categorical,axis
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Not auto-generate a column for a specific property
 description: Not auto-generate a column for a specific property
 slug: gridview-prevent-column-autogenerate
 tags: not,auto-generate,a,column,for,a,specific,property
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Delete Appointment
 description: Delete Appointment
 slug: radscheduleview-end-user-capabilities-delete-appointment
 tags: delete,appointment
-published: True
+publish: True
 position: 3
 ---
 

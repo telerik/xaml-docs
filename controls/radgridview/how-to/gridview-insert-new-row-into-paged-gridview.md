@@ -4,7 +4,7 @@ page_title: Insert New Row into Paged GridView
 description: Insert New Row into Paged GridView
 slug: gridview-how-to-insert-new-row-into-paged-gridview
 tags: insert,new,row,into,paged,gridview
-published: True
+publish: True
 position: 13
 ---
 

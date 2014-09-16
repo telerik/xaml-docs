@@ -4,7 +4,7 @@ page_title: Styling the Header Row
 description: Styling the Header Row
 slug: gridview-styling-header-row
 tags: styling,the,header,row
-published: True
+publish: True
 position: 12
 ---
 

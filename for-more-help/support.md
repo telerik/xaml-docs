@@ -4,7 +4,7 @@ page_title: Support
 description: Support
 slug: for-more-help-support
 tags: support
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Increase/decrease handles
 description: Increase/decrease handles
 slug: radslider-handles
 tags: increase/decrease,handles
-published: True
+publish: True
 position: 3
 ---
 

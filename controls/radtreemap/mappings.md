@@ -4,7 +4,7 @@ page_title: Mappings
 description: Mappings
 slug: radtreemap-mappings
 tags: mappings
-published: True
+publish: True
 position: 6
 ---
 

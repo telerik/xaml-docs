@@ -4,7 +4,7 @@ page_title: Categorical Charts
 description: Categorical Charts
 slug: radchart-features-categorical-charts
 tags: categorical,charts
-published: True
+publish: True
 position: 2
 ---
 

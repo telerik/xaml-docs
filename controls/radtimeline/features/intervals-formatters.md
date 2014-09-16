@@ -4,7 +4,7 @@ page_title: Intervals Formatters
 description: Intervals Formatters
 slug: radtimeline-features-intervals-formatters
 tags: intervals,formatters
-published: True
+publish: True
 position: 1
 ---
 

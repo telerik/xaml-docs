@@ -4,7 +4,7 @@ page_title: End-User Capabilities
 description: End-User Capabilities
 slug: radwindow-end-user-capabilities
 tags: end-user,capabilities
-published: True
+publish: True
 position: 8
 ---
 

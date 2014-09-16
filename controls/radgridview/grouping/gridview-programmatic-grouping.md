@@ -4,7 +4,7 @@ page_title: Programmatic Grouping
 description: Programmatic Grouping
 slug: gridview-programmatic-grouping
 tags: programmatic,grouping
-published: True
+publish: True
 position: 2
 ---
 

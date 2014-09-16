@@ -4,7 +4,7 @@ page_title: DragDropMode
 description: DragDropMode
 slug: raddocking-features-dragdropmode
 tags: dragdropmode
-published: True
+publish: True
 position: 8
 ---
 

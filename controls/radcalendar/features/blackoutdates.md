@@ -4,7 +4,7 @@ page_title: BlackoutDates
 description: BlackoutDates
 slug: radcalendar-features-blackoutdates
 tags: blackoutdates
-published: True
+publish: True
 position: 3
 ---
 

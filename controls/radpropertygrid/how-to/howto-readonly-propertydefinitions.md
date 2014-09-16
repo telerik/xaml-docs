@@ -4,7 +4,7 @@ page_title: Read Only PropertyDefinition
 description: Read Only PropertyDefinition
 slug: radpropertygrid-howto-readonly-propertydefinitions
 tags: read,only,propertydefinition
-published: True
+publish: True
 position: 0
 ---
 

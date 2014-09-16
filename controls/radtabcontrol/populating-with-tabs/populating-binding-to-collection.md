@@ -4,7 +4,7 @@ page_title: Binding To Collection
 description: Binding To Collection
 slug: radtabcontrol-populating-binding-to-collection
 tags: binding,to,collection
-published: True
+publish: True
 position: 2
 ---
 

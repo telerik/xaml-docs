@@ -4,7 +4,7 @@ page_title: Cascading Distinct Values
 description: Cascading Distinct Values
 slug: gridview-filtering-cascading-distinct-values
 tags: cascading,distinct,values
-published: False
+publish: False
 position: 5
 ---
 

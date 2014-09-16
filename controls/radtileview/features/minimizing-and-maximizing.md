@@ -4,7 +4,7 @@ page_title: Minimizing And Maximizing
 description: Minimizing And Maximizing
 slug: radtileview-minimizing-and-maximizing
 tags: minimizing,and,maximizing
-published: True
+publish: True
 position: 0
 ---
 

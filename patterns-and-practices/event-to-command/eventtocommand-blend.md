@@ -4,7 +4,7 @@ page_title: Blend Option
 description: Blend Option
 slug: patterns-and-practices-eventtocommand-blend
 tags: blend,option
-published: True
+publish: True
 position: 2
 ---
 

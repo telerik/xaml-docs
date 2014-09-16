@@ -4,7 +4,7 @@ page_title: Hyperlink
 description: Hyperlink
 slug: radspreadprocessing-features-hyperlink
 tags: hyperlink
-published: True
+publish: True
 position: 7
 ---
 

@@ -4,7 +4,7 @@ page_title: Ribbon Tab
 description: Ribbon Tab
 slug: radribbonview-ribbon-tab
 tags: ribbon,tab
-published: True
+publish: True
 position: 4
 ---
 

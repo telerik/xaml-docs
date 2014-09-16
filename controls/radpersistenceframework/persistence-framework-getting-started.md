@@ -4,7 +4,7 @@ page_title: Getting Started
 description: Getting Started
 slug: persistence-framework-getting-started
 tags: getting,started
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Ribbon DropDownButton
 description: Ribbon DropDownButton
 slug: radribbonview-dropdown-button
 tags: ribbon,dropdownbutton
-published: True
+publish: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: radpivotgrid-events-overview
 tags: overview
-published: True
+publish: True
 position: 0
 ---
 

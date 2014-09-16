@@ -4,7 +4,7 @@ page_title: Drag and Drop Support
 description: Drag and Drop Support
 slug: raddiagrams-features-drag-drop
 tags: drag,and,drop,support
-published: True
+publish: True
 position: 4
 ---
 

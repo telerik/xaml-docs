@@ -4,7 +4,7 @@ page_title: Using XlsxFormatProvider
 description: Using XlsxFormatProvider
 slug: radspreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider
 tags: using,xlsxformatprovider
-published: True
+publish: True
 position: 1
 ---
 

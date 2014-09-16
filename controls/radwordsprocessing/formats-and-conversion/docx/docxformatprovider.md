@@ -4,7 +4,7 @@ page_title: Using DocxFormatProvider
 description: Using DocxFormatProvider
 slug: radwordsprocessing-formats-and-conversion-docx-docxformatprovider
 tags: using,docxformatprovider
-published: True
+publish: True
 position: 1
 ---
 

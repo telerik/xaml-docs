@@ -4,7 +4,7 @@ page_title: Contextual Tabs
 description: Contextual Tabs
 slug: radribbonview-contextual-tabs
 tags: contextual,tabs
-published: True
+publish: True
 position: 2
 ---
 

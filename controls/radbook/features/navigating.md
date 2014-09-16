@@ -4,7 +4,7 @@ page_title: Navigating
 description: Navigating
 slug: radbook-navigating
 tags: navigating
-published: True
+publish: True
 position: 3
 ---
 

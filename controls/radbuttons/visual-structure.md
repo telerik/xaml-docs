@@ -4,7 +4,7 @@ page_title: Visual Structure
 description: Visual Structure
 slug: radbuttons-visual-structure
 tags: visual,structure
-published: True
+publish: True
 position: 2
 ---
 

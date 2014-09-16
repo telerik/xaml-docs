@@ -4,7 +4,7 @@ page_title: No Initial Animation
 description: No Initial Animation
 slug: radtransition-how-to-no-initial-animation
 tags: no,initial,animation
-published: True
+publish: True
 position: 3
 ---
 

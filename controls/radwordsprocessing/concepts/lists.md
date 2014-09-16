@@ -4,7 +4,7 @@ page_title: Lists
 description: Lists
 slug: radwordsprocessing-concepts-lists
 tags: lists
-published: True
+publish: True
 position: 6
 ---
 

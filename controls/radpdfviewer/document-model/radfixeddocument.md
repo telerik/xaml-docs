@@ -4,7 +4,7 @@ page_title: RadFixedDocument
 description: RadFixedDocument
 slug: radpdfviewer-document-model-radfixeddocument
 tags: radfixeddocument
-published: True
+publish: True
 position: 0
 ---
 

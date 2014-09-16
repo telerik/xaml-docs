@@ -4,7 +4,7 @@ page_title: Maintain the Items' Positions When the Diagram is Resized
 description: Maintain the Items' Positions When the Diagram is Resized
 slug: raddiagram-howto-maintain-shapes-positions-when-resizing-the-diagram
 tags: maintain,the,items',positions,when,the,diagram,is,resized
-published: True
+publish: True
 position: 3
 ---
 

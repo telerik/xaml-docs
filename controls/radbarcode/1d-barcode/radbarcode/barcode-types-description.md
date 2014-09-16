@@ -4,7 +4,7 @@ page_title: Types Description
 description: Types Description
 slug: radbarcode-barcode-types-description
 tags: types,description
-published: True
+publish: True
 position: 1
 ---
 

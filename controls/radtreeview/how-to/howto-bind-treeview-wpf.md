@@ -4,7 +4,7 @@ page_title: Bind RadTreeView in WPF
 description: Bind RadTreeView in WPF
 slug: radtreeview-howto-bind-treeview-wpf
 tags: bind,radtreeview,in,wpf
-published: True
+publish: True
 position: 19
 site_name: WPF
 ---

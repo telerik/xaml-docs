@@ -4,7 +4,7 @@ page_title: Drag and Drop with RadScheduleView
 description: Drag and Drop with RadScheduleView
 slug: radscheduleview-features-draganddrop
 tags: drag,and,drop,with,radscheduleview
-published: True
+publish: True
 position: 1
 ---
 

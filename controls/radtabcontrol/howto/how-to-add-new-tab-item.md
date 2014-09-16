@@ -4,7 +4,7 @@ page_title: How to Add New Tab Item
 description: How to Add New Tab Item
 slug: radtabcontrol-how-to-add-new-tab-item
 tags: how,to,add,new,tab,item
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Import/Export
 description: Import/Export
 slug: radrichtextbox-features-import-export
 tags: import/export
-published: True
+publish: True
 position: 0
 ---
 

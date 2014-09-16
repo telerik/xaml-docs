@@ -4,7 +4,7 @@ page_title: Events Overview
 description: Events Overview
 slug: radslider-events-overview
 tags: events,overview
-published: True
+publish: True
 position: 0
 ---
 

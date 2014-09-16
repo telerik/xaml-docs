@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: radcontrols-for-silverlight-vs-extensions-overview
 tags: overview
-published: True
+publish: True
 position: 0
 site_name: Silverlight
 ---

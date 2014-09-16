@@ -4,7 +4,7 @@ page_title: Self-Referencing GridView
 description: Self-Referencing GridView
 slug: gridview-self-referencing-grid
 tags: self-referencing,gridview
-published: True
+publish: True
 position: 3
 ---
 

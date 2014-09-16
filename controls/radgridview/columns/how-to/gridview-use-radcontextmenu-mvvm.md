@@ -4,7 +4,7 @@ page_title: Use a RadContextMenu in MVVM
 description: Use a RadContextMenu in MVVM
 slug: gridview-how-to-use-radcontextmenu-mvvm
 tags: use,a,radcontextmenu,in,mvvm
-published: True
+publish: True
 position: 9
 ---
 

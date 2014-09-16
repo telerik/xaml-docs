@@ -4,7 +4,7 @@ page_title: Populating TimeBar from WCF service with LINQ to SQL
 description: Populating TimeBar from WCF service with LINQ to SQL
 slug: radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql
 tags: populating,timebar,from,wcf,service,with,linq,to,sql
-published: True
+publish: True
 position: 2
 ---
 

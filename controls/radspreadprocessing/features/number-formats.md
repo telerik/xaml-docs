@@ -4,7 +4,7 @@ page_title: Number Formatting
 description: Number Formatting
 slug: radspreadprocessing-features-number-formats
 tags: number,formatting
-published: True
+publish: True
 position: 10
 ---
 

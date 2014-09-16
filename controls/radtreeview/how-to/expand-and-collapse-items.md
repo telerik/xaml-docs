@@ -4,7 +4,7 @@ page_title: Expand and Collapse Items
 description: Expand and Collapse Items
 slug: radtreeview-how-to-expand-and-collapse-items
 tags: expand,and,collapse,items
-published: True
+publish: True
 position: 5
 ---
 

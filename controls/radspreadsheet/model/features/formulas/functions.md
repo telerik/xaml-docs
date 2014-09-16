@@ -4,7 +4,7 @@ page_title: Functions
 description: Functions
 slug: radspreadsheet-features-formulas-functions
 tags: functions
-published: False
+publish: False
 position: 2
 ---
 

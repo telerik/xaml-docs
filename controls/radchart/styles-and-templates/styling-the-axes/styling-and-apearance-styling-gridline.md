@@ -4,7 +4,7 @@ page_title: Styling the GridLine
 description: Styling the GridLine
 slug: radchart-styling-and-apearance-styling-gridline
 tags: styling,the,gridline
-published: True
+publish: True
 position: 4
 ---
 

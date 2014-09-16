@@ -4,7 +4,7 @@ page_title: ClusteredDataSource
 description: ClusteredDataSource
 slug: radmap-features-information-layer-clustereddatasource
 tags: clustereddatasource
-published: True
+publish: True
 position: 11
 ---
 

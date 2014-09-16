@@ -4,7 +4,7 @@ page_title: First Chance 'System.ArgumentException'
 description: First Chance 'System.ArgumentException'
 slug: gridview-troubleshooting-argumentexception-datarowview
 tags: first,chance,'system.argumentexception'
-published: True
+publish: True
 position: 17
 site_name: WPF
 ---

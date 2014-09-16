@@ -4,7 +4,7 @@ page_title: Ribbon ToggleButton
 description: Ribbon ToggleButton
 slug: radribbonview-toggle-button
 tags: ribbon,togglebutton
-published: True
+publish: True
 position: 2
 ---
 

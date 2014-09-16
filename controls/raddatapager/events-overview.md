@@ -4,7 +4,7 @@ page_title: Events
 description: Events
 slug: raddatapager-events-overview
 tags: events
-published: True
+publish: True
 position: 6
 ---
 

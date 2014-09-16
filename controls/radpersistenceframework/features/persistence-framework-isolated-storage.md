@@ -4,7 +4,7 @@ page_title: Isolated Storage
 description: Isolated Storage
 slug: persistence-framework-isolated-storage
 tags: isolated,storage
-published: True
+publish: True
 position: 0
 ---
 

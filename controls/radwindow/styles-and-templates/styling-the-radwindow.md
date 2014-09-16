@@ -4,7 +4,7 @@ page_title: Styling the RadWindow
 description: Styling the RadWindow
 slug: radwindow-styles-and-templates-styling-the-radwindow
 tags: styling,the,radwindow
-published: True
+publish: True
 position: 2
 ---
 

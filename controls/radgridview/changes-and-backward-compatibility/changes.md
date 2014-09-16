@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: radgridview-changes
 tags: changes
-published: True
+publish: True
 position: 0
 ---
 

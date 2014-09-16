@@ -4,7 +4,7 @@ page_title: Printing
 description: Printing
 slug: radpdfviewer-printing
 tags: printing
-published: True
+publish: True
 position: 7
 ---
 

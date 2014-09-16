@@ -4,7 +4,7 @@ page_title: Formatting
 description: Formatting
 slug: radnumericupdown-formatting
 tags: formatting
-published: True
+publish: True
 position: 1
 ---
 

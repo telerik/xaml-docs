@@ -4,7 +4,7 @@ page_title: Linear Scale
 description: Linear Scale
 slug: radgauge-features-scales-linear-scale
 tags: linear,scale
-published: True
+publish: True
 position: 2
 ---
 

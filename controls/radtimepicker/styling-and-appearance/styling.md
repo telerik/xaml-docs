@@ -4,7 +4,7 @@ page_title: Styling
 description: Styling
 slug: radtimepicker-styling
 tags: styling
-published: True
+publish: True
 position: 3
 ---
 

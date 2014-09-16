@@ -4,7 +4,7 @@ page_title: Main Properties
 description: Main Properties
 slug: radheatmap-main-properties
 tags: main,properties
-published: True
+publish: True
 position: 2
 ---
 

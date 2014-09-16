@@ -4,7 +4,7 @@ page_title: Styling the Group Footers
 description: Styling the Group Footers
 slug: gridview-styles-and-templates-styling-group-footers
 tags: styling,the,group,footers
-published: True
+publish: True
 position: 9
 ---
 

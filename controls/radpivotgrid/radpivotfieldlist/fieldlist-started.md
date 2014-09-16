@@ -4,7 +4,7 @@ page_title: Adding RadPivotFieldList to your project
 description: Adding RadPivotFieldList to your project
 slug: radpivotgrid-fieldlist-started
 tags: adding,radpivotfieldlist,to,your,project
-published: True
+publish: True
 position: 0
 ---
 

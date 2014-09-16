@@ -4,7 +4,7 @@ page_title: Table
 description: Table
 slug: radrichtextbox-features-document-elements-tables
 tags: table
-published: True
+publish: True
 position: 6
 ---
 

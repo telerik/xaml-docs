@@ -4,7 +4,7 @@ page_title: Styling the RadPaneGroup
 description: Styling the RadPaneGroup
 slug: raddocking-styling-the-radpanegroup
 tags: styling,the,radpanegroup
-published: True
+publish: True
 position: 8
 ---
 

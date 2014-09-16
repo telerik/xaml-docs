@@ -4,7 +4,7 @@ page_title: Major and Minor releases
 description: Major and Minor releases
 slug: radcontrols-for-wpf-vs-extensions-releases
 tags: major,and,minor,releases
-published: True
+publish: True
 position: 6
 site_name: WPF
 ---

@@ -4,7 +4,7 @@ page_title: Grouping
 description: Grouping
 slug: raddataservicedatasource-grouping
 tags: grouping
-published: True
+publish: True
 position: 0
 ---
 

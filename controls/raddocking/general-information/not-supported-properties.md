@@ -4,7 +4,7 @@ page_title: Not Supported Properties
 description: Not Supported Properties
 slug: not-supported-properties
 tags: not,supported,properties
-published: True
+publish: True
 position: 2
 ---
 

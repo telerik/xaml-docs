@@ -4,7 +4,7 @@ page_title: Upgrading to a new UI for Silverlight distribution
 description: Upgrading to a new UI for Silverlight distribution
 slug: radcontrols-for-silverlight-vs-extensions-upgrading
 tags: upgrading,to,a,new,ui,for,silverlight,distribution
-published: True
+publish: True
 position: 7
 site_name: Silverlight
 ---

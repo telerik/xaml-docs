@@ -4,7 +4,7 @@ page_title: Interact with the User before the Page Changes
 description: Interact with the User before the Page Changes
 slug: raddatapager-how-to-interact-with-with-user-before-page-changes
 tags: interact,with,the,user,before,the,page,changes
-published: True
+publish: True
 position: 2
 ---
 

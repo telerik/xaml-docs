@@ -4,7 +4,7 @@ page_title: Styling the RadDataFilter
 description: Styling the RadDataFilter
 slug: raddatafilter-styles-and-templates-styling-the-raddatafilter
 tags: styling,the,raddatafilter
-published: True
+publish: True
 position: 2
 ---
 

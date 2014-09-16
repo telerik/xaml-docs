@@ -4,7 +4,7 @@ page_title: Report Progress Value
 description: Report Progress Value
 slug: radbusyindicator-features-report-progress-value
 tags: report,progress,value
-published: True
+publish: True
 position: 2
 ---
 

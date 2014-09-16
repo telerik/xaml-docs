@@ -4,7 +4,7 @@ page_title: DataBinding
 description: DataBinding
 slug: radtimeline-databinding
 tags: databinding
-published: True
+publish: True
 position: 0
 ---
 

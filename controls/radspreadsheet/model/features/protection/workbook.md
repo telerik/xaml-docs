@@ -4,7 +4,7 @@ page_title: Workbook Protection
 description: Workbook Protection
 slug: radspreadsheet-model-features-protection-workbook
 tags: workbook,protection
-published: False
+publish: False
 position: 0
 ---
 

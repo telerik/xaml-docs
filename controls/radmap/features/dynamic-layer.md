@@ -4,7 +4,7 @@ page_title: Dynamic Layer
 description: Dynamic Layer
 slug: radmap-features-dynamic-layer
 tags: dynamic,layer
-published: True
+publish: True
 position: 11
 ---
 

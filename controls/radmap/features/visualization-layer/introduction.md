@@ -4,7 +4,7 @@ page_title: Introduction
 description: Introduction
 slug: radmap-visualization-layer-introduction
 tags: introduction
-published: True
+publish: True
 position: 0
 ---
 

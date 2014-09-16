@@ -4,7 +4,7 @@ page_title: Backwards Compatibility
 description: Backwards Compatibility
 slug: radganttview-backward-compatibility
 tags: backwards,compatibility
-published: True
+publish: True
 position: 1
 ---
 

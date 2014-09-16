@@ -4,7 +4,7 @@ page_title: Show Preview of the Gallery Options
 description: Show Preview of the Gallery Options
 slug: radribbonview-howto-show-preview-of-gallery-options
 tags: show,preview,of,the,gallery,options
-published: True
+publish: True
 position: 9
 ---
 

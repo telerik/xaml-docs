@@ -4,7 +4,7 @@ page_title: Working with ItemPrepared Event
 description: Working with ItemPrepared Event
 slug: radtreeview-events-working-with-item-prepared-event
 tags: working,with,itemprepared,event
-published: True
+publish: True
 position: 1
 ---
 

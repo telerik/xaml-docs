@@ -4,7 +4,7 @@ page_title: RadCarouselPanel Item Movement
 description: RadCarouselPanel Item Movement
 slug: carousel-radcarouselpanel-item-movement
 tags: radcarouselpanel,item,movement
-published: True
+publish: True
 position: 0
 ---
 

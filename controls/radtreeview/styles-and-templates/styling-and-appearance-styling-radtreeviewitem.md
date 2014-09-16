@@ -4,7 +4,7 @@ page_title: Styling the RadTreeViewItem
 description: Styling the RadTreeViewItem
 slug: radtreeview-styling-and-appearance-styling-radtreeviewitem
 tags: styling,the,radtreeviewitem
-published: True
+publish: True
 position: 2
 ---
 

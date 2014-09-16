@@ -4,7 +4,7 @@ page_title: Additional column added after all gridview columns
 description: Additional column added after all gridview columns
 slug: gridview-troubleshooting-additional-column
 tags: additional,column,added,after,all,gridview,columns
-published: True
+publish: True
 position: 8
 ---
 

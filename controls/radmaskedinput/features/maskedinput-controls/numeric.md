@@ -4,7 +4,7 @@ page_title: MaskedNumericInput
 description: MaskedNumericInput
 slug: radmaskedinput-features-controls-numeric
 tags: maskednumericinput
-published: True
+publish: True
 position: 0
 ---
 

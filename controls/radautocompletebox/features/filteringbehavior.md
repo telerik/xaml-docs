@@ -4,7 +4,7 @@ page_title: Filtering Behavior
 description: Filtering Behavior
 slug: radautocompletebox-features-filteringbehavior
 tags: filtering,behavior
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: How to use the Events
 description: How to use the Events
 slug: radnumericupdown-howto-events
 tags: how,to,use,the,events
-published: True
+publish: True
 position: 1
 site_name: Silverlight
 ---

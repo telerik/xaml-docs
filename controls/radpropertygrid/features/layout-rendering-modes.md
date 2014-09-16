@@ -4,7 +4,7 @@ page_title: Layout Rendering Modes
 description: Layout Rendering Modes
 slug: radpropertygrid-features-layout-rendering-modes
 tags: layout,rendering,modes
-published: True
+publish: True
 position: 11
 ---
 

@@ -4,7 +4,7 @@ page_title: Opening on a Specific Event
 description: Opening on a Specific Event
 slug: radcontextmenu-features-opening-on-specific-event
 tags: opening,on,a,specific,event
-published: True
+publish: True
 position: 1
 ---
 

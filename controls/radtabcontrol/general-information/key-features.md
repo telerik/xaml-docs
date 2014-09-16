@@ -4,7 +4,7 @@ page_title: Key Features
 description: Key Features
 slug: radtabcontrol-key-features
 tags: key,features
-published: True
+publish: True
 position: 0
 ---
 

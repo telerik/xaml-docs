@@ -4,7 +4,7 @@ page_title: DataTemplateSelector Support
 description: DataTemplateSelector Support
 slug: radpropertygrid-datatemplateselector
 tags: datatemplateselector,support
-published: True
+publish: True
 position: 3
 ---
 

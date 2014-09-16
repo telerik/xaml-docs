@@ -4,7 +4,7 @@ page_title: Image Column
 description: Image Column
 slug: radgridview-columns-columntypes-image-column
 tags: image,column
-published: True
+publish: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Filtering
 description: Filtering
 slug: gridview-overview-filtering
 tags: filtering
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Events
 description: Events
 slug: radbook-events
 tags: events
-published: True
+publish: True
 position: 2
 ---
 

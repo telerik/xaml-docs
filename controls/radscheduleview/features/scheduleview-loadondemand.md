@@ -4,7 +4,7 @@ page_title: Load on demand with RadScheduleView
 description: Load on demand with RadScheduleView
 slug: scheduleview-features-loadondemand
 tags: load,on,demand,with,radscheduleview
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Working with the RadTransitionControl
 description: Working with the RadTransitionControl
 slug: radtransition-features-working-with-radtransitioncontrol
 tags: working,with,the,radtransitioncontrol
-published: True
+publish: True
 position: 0
 ---
 

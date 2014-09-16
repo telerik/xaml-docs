@@ -4,7 +4,7 @@ page_title: Selection Modes
 description: Selection Modes
 slug: radcalendar-selection-modes
 tags: selection,modes
-published: True
+publish: True
 position: 2
 ---
 

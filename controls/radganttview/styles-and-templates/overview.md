@@ -4,7 +4,7 @@ page_title: GanttView Styles
 description: GanttView Styles
 slug: radganttview-styles-and-templates-overview
 tags: ganttview,styles
-published: True
+publish: True
 position: 1
 ---
 

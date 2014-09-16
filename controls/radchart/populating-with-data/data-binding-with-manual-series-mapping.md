@@ -4,7 +4,7 @@ page_title: Data Binding with Manual Series Mapping
 description: Data Binding with Manual Series Mapping
 slug: radchart-populating-with-data-data-binding-with-manual-series-mapping
 tags: data,binding,with,manual,series,mapping
-published: True
+publish: True
 position: 6
 ---
 

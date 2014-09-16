@@ -4,7 +4,7 @@ page_title: PlotBand Annotations
 description: PlotBand Annotations
 slug: radchartview-annotations-plotband
 tags: plotband,annotations
-published: True
+publish: True
 position: 3
 ---
 

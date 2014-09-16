@@ -4,7 +4,7 @@ page_title: Style Selector
 description: Style Selector
 slug: radtoolbar-style-selector
 tags: style,selector
-published: True
+publish: True
 position: 2
 ---
 

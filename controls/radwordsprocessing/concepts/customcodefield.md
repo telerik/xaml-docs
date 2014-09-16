@@ -4,7 +4,7 @@ page_title: CustomCodeField
 description: CustomCodeField
 slug: radwordsprocessing-concepts-customcodefield
 tags: customcodefield
-published: True
+publish: True
 position: 2
 ---
 

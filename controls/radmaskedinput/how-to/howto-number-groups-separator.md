@@ -4,7 +4,7 @@ page_title: How to Remove the Thousands Separator
 description: How to Remove the Thousands Separator
 slug: radmaskedinput-howto-number-groups-separator
 tags: how,to,remove,the,thousands,separator
-published: True
+publish: True
 position: 1
 ---
 

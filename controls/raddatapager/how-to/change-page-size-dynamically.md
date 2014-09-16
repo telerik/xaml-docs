@@ -4,7 +4,7 @@ page_title: Change PageSize dynamically
 description: Change PageSize dynamically
 slug: raddatapager-change-page-size-dynamically
 tags: change,pagesize,dynamically
-published: True
+publish: True
 position: 3
 ---
 

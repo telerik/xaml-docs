@@ -4,7 +4,7 @@ page_title: Appearance
 description: Appearance
 slug: radcolorpicker-appearance
 tags: appearance
-published: True
+publish: True
 position: 1
 ---
 

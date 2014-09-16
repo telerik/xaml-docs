@@ -4,7 +4,7 @@ page_title: Model
 description: Model
 slug: radpdfprocessing-model
 tags: model
-published: True
+publish: True
 position: 3
 ---
 

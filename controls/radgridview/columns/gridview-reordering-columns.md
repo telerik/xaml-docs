@@ -4,7 +4,7 @@ page_title: Reordering Columns
 description: Reordering Columns
 slug: gridview-columns-reordering-columns
 tags: reordering,columns
-published: True
+publish: True
 position: 10
 ---
 

@@ -4,7 +4,7 @@ page_title: Change the Default Height of a TreeViewItem
 description: Change the Default Height of a TreeViewItem
 slug: radtreeview-how-to-change-default-height-treeviewitem
 tags: change,the,default,height,of,a,treeviewitem
-published: True
+publish: True
 position: 8
 ---
 

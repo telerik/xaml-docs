@@ -4,7 +4,7 @@ page_title: In Code Behind
 description: In Code Behind
 slug: radlistbox-populating-with-data-in-code-behind
 tags: in,code,behind
-published: True
+publish: True
 position: 2
 ---
 

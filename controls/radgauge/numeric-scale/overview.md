@@ -4,7 +4,7 @@ page_title: Numeric Scale Overview
 description: Numeric Scale Overview
 slug: numeric-scale-overview
 tags: numeric,scale,overview
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: DateTime Grouping
 description: DateTime Grouping
 slug: radchart-features-datetime-grouping
 tags: datetime,grouping
-published: True
+publish: True
 position: 2
 ---
 

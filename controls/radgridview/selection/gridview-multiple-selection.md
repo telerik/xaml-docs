@@ -4,7 +4,7 @@ page_title: Multiple Selection
 description: Multiple Selection
 slug: gridview-multiple-selection
 tags: multiple,selection
-published: True
+publish: True
 position: 1
 ---
 

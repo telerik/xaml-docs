@@ -4,7 +4,7 @@ page_title: Worksheet Editor Context Menu
 description: Worksheet Editor Context Menu
 slug: radspreadsheet-ui-worksheet-editor-context-menu
 tags: worksheet,editor,context,menu
-published: True
+publish: True
 position: 3
 ---
 

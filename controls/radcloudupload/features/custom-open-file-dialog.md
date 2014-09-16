@@ -4,7 +4,7 @@ page_title: Open File Dialog
 description: Open File Dialog
 slug: radcloudupload-features-custom-open-file-dialog
 tags: open,file,dialog
-published: True
+publish: True
 position: 4
 ---
 

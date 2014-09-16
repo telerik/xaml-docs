@@ -4,7 +4,7 @@ page_title: Ticks
 description: Ticks
 slug: radchart-features-axes-ticks
 tags: ticks
-published: True
+publish: True
 position: 6
 ---
 

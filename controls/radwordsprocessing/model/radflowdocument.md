@@ -4,7 +4,7 @@ page_title: RadFlowDocument
 description: RadFlowDocument
 slug: radwordsprocessing-model-radflowdocument
 tags: radflowdocument
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Selection
 description: Selection
 slug: radcombobox-features-selection
 tags: selection
-published: True
+publish: True
 position: 3
 ---
 

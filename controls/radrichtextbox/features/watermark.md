@@ -4,7 +4,7 @@ page_title: Watermark
 description: Watermark
 slug: radrichtextbox-features-watermark
 tags: watermark
-published: True
+publish: True
 position: 19
 ---
 

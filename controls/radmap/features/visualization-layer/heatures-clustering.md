@@ -4,7 +4,7 @@ page_title: Clustering
 description: Clustering
 slug: radmap-heatures-visualization-layer-clustering
 tags: clustering
-published: True
+publish: True
 position: 11
 ---
 

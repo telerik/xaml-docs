@@ -4,7 +4,7 @@ page_title: Styling the Point Marks
 description: Styling the Point Marks
 slug: radchart-styling-and-appearance-styling-point-marks
 tags: styling,the,point,marks
-published: True
+publish: True
 position: 11
 ---
 

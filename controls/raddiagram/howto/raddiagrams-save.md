@@ -4,7 +4,7 @@ page_title: Save the Diagram in the File System
 description: Save the Diagram in the File System
 slug: raddiagrams-howto-save
 tags: save,the,diagram,in,the,file,system
-published: True
+publish: True
 position: 6
 site_name: WPF
 ---

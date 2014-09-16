@@ -4,7 +4,7 @@ page_title: Ribbon Group
 description: Ribbon Group
 slug: radribbonview-ribbon-group
 tags: ribbon,group
-published: True
+publish: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Expand all rows
 description: Expand all rows
 slug: treelistview-expand-all-hierarchy
 tags: expand,all,rows
-published: True
+publish: True
 position: 0
 ---
 

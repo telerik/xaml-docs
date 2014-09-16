@@ -4,7 +4,7 @@ page_title: Unsupported Features
 description: Unsupported Features
 slug: radspreadsheet-unsupported-features
 tags: unsupported,features
-published: True
+publish: True
 position: 7
 ---
 

@@ -4,7 +4,7 @@ page_title: Watermark
 description: Watermark
 slug: raddatetimepicker-features-watermark
 tags: watermark
-published: True
+publish: True
 position: 2
 ---
 

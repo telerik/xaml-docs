@@ -4,7 +4,7 @@ page_title: Categories
 description: Categories
 slug: radscheduleview-features-categories
 tags: categories
-published: True
+publish: True
 position: 7
 ---
 

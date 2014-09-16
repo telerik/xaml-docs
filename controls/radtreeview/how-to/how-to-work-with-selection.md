@@ -4,7 +4,7 @@ page_title: Work with Selection
 description: Work with Selection
 slug: radtreeview-how-to-how-to-work-with-selection
 tags: work,with,selection
-published: False
+publish: False
 position: 4
 ---
 

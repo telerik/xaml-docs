@@ -4,7 +4,7 @@ page_title: Template Structure
 description: Template Structure
 slug: radcombobox-styles-templates-template-structure
 tags: template,structure
-published: False
+publish: False
 position: 4
 ---
 

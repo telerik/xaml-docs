@@ -4,7 +4,7 @@ page_title: Add Context Menu
 description: Add Context Menu
 slug: radtreeview-how-to-add-context-menu
 tags: add,context,menu
-published: True
+publish: True
 position: 9
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the Lines
 description: Styling the Lines
 slug: radtreeview-styling-appearance-styling-line
 tags: styling,the,lines
-published: True
+publish: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Items Relations
 description: Items Relations
 slug: radganttview-features-items-relations
 tags: items,relations
-published: True
+publish: True
 position: 2
 ---
 

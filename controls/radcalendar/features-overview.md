@@ -4,7 +4,7 @@ page_title: Features
 description: Features
 slug: radcalendar-features-overview
 tags: features
-published: True
+publish: True
 position: 4
 ---
 

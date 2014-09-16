@@ -4,7 +4,7 @@ page_title: Zoom Modes
 description: Zoom Modes
 slug: radmap-features-zoom-modes
 tags: zoom,modes
-published: True
+publish: True
 position: 5
 ---
 

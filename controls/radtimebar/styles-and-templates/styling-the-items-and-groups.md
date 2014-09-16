@@ -4,7 +4,7 @@ page_title: Styling the Items and Groups
 description: Styling the Items and Groups
 slug: radtimebar-styling-the-items-and-groups
 tags: styling,the,items,and,groups
-published: True
+publish: True
 position: 0
 ---
 

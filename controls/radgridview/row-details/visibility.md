@@ -4,7 +4,7 @@ page_title: Row Details Visibility
 description: Row Details Visibility
 slug: radgridview-row-details-visibility
 tags: row,details,visibility
-published: True
+publish: True
 position: 2
 ---
 

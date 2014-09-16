@@ -4,7 +4,7 @@ page_title: Radial Scale Overview
 description: Radial Scale Overview
 slug: radial-scale-overview
 tags: radial,scale,overview
-published: True
+publish: True
 position: 0
 ---
 

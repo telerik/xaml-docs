@@ -4,7 +4,7 @@ page_title: Hierarchical View
 description: Hierarchical View
 slug: radchart-features-drill-down-hierarchical-view
 tags: hierarchical,view
-published: True
+publish: True
 position: 0
 ---
 

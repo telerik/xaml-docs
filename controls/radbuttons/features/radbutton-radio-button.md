@@ -4,7 +4,7 @@ page_title: Radio Button
 description: Radio Button
 slug: radbutton-features-radio-button
 tags: radio,button
-published: True
+publish: True
 position: 2
 ---
 

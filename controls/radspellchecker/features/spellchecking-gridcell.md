@@ -4,7 +4,7 @@ page_title: SpellChecking GridCell
 description: SpellChecking GridCell
 slug: radspellchecker-spellchecking-gridcell
 tags: spellchecking,gridcell
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: RadDataBar
 description: RadDataBar
 slug: xamlflix-databars
 tags: raddatabar
-published: True
+publish: True
 position: 3
 ---
 

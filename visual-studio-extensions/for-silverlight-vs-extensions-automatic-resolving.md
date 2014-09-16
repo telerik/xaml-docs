@@ -4,7 +4,7 @@ page_title: Automatic Dependency resolving
 description: Automatic Dependency resolving
 slug: radcontrols-for-silverlight-vs-extensions-automatic-resolving
 tags: automatic,dependency,resolving
-published: True
+publish: True
 position: 5
 site_name: Silverlight
 ---

@@ -4,7 +4,7 @@ page_title: How to Remove the Header of the RadPane
 description: How to Remove the Header of the RadPane
 slug: raddocking-how-to-remove-the-header-of-the-radpane
 tags: how,to,remove,the,header,of,the,radpane
-published: True
+publish: True
 position: 7
 ---
 

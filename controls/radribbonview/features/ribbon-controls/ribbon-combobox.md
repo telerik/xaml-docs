@@ -4,7 +4,7 @@ page_title: Ribbon ComboBox
 description: Ribbon ComboBox
 slug: radribbonview-ribbon-combobox
 tags: ribbon,combobox
-published: True
+publish: True
 position: 7
 ---
 

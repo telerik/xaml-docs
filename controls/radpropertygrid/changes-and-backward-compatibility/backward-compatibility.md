@@ -4,7 +4,7 @@ page_title: Backward Compatibility
 description: Backward Compatibility
 slug: radpropertygrid-backward-compatibility
 tags: backward,compatibility
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Grouping Modes
 description: Grouping Modes
 slug: gridview-grouping-groupingmodes
 tags: grouping,modes
-published: True
+publish: True
 position: 1
 ---
 

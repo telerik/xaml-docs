@@ -4,7 +4,7 @@ page_title: Most important properties, settings and elements
 description: Most important properties, settings and elements
 slug: radsparkline_most_important_properties,_settings_and_elements
 tags: most,important,properties,,settings,and,elements
-published: True
+publish: True
 position: 2
 ---
 

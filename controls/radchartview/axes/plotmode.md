@@ -4,7 +4,7 @@ page_title: Plot Mode
 description: Plot Mode
 slug: radchartview-axes-plotmode
 tags: plot,mode
-published: True
+publish: True
 position: 5
 ---
 

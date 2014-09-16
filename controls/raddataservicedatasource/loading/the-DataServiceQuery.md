@@ -4,7 +4,7 @@ page_title: The DataServiceQuery
 description: The DataServiceQuery
 slug: raddataservicedatasource-loading-the-dataservicequery
 tags: the,dataservicequery
-published: True
+publish: True
 position: 1
 ---
 

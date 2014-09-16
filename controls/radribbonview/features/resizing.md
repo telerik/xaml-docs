@@ -4,7 +4,7 @@ page_title: Resizing
 description: Resizing
 slug: radribbonview-resizing
 tags: resizing
-published: True
+publish: True
 position: 4
 ---
 

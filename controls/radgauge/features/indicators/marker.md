@@ -4,7 +4,7 @@ page_title: Marker
 description: Marker
 slug: radgauge-features-indicators-marker
 tags: marker
-published: True
+publish: True
 position: 1
 ---
 

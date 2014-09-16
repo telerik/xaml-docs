@@ -4,7 +4,7 @@ page_title: Document Themes
 description: Document Themes
 slug: radspreadsheet-model-features-styling-document-themes
 tags: document,themes
-published: False
+publish: False
 position: 1
 ---
 

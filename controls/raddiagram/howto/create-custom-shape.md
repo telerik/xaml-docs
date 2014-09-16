@@ -4,7 +4,7 @@ page_title: Create Custom Shape
 description: Create Custom Shape
 slug: raddiagram-howto-create-custom-shape
 tags: create,custom,shape
-published: True
+publish: True
 position: 4
 ---
 

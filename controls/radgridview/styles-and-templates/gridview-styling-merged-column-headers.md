@@ -4,7 +4,7 @@ page_title: Styling the Merged Column Headers
 description: Styling the Merged Column Headers
 slug: gridview-styling-merged-column-headers
 tags: styling,the,merged,column,headers
-published: True
+publish: True
 position: 7
 ---
 

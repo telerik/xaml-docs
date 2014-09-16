@@ -4,7 +4,7 @@ page_title: Axis
 description: Axis
 slug: radchartview-axes-axis
 tags: axis
-published: True
+publish: True
 position: 0
 ---
 

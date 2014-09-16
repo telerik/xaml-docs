@@ -4,7 +4,7 @@ page_title: Bind RadTreeViewItem CheckState Property
 description: Bind RadTreeViewItem CheckState Property
 slug: radtreeview-howto-bind-checkstate-property
 tags: bind,radtreeviewitem,checkstate,property
-published: False
+publish: False
 position: 27
 ---
 

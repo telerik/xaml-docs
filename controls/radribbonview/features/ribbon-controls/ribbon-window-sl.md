@@ -4,7 +4,7 @@ page_title: Ribbon Window
 description: Ribbon Window
 slug: radribbonview-ribbon-window-sl
 tags: ribbon,window
-published: True
+publish: True
 position: 10
 site_name: Silverlight
 ---

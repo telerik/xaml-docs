@@ -4,7 +4,7 @@ page_title: Series
 description: Series
 slug: radspreadsheet-features-series
 tags: series
-published: False
+publish: False
 position: 1
 ---
 

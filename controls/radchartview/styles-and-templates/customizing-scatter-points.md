@@ -4,7 +4,7 @@ page_title: Customizing Scatter Points
 description: Customizing Scatter Points
 slug: radchartview-styles-and-templates-customizing-scatter-points
 tags: customizing,scatter,points
-published: True
+publish: True
 position: 3
 ---
 

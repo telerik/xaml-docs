@@ -4,7 +4,7 @@ page_title: Numeric Scale
 description: Numeric Scale
 slug: radgauge-features-scales-numeric-scale
 tags: numeric,scale
-published: True
+publish: True
 position: 0
 ---
 

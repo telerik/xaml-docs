@@ -4,7 +4,7 @@ page_title: Modal Windows
 description: Modal Windows
 slug: radwindow-features-modal-windows
 tags: modal,windows
-published: True
+publish: True
 position: 11
 ---
 

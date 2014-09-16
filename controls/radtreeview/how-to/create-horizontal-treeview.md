@@ -4,7 +4,7 @@ page_title: Create Horizontal TreeView
 description: Create Horizontal TreeView
 slug: radtreeview-how-to-create-horizontal-treeview
 tags: create,horizontal,treeview
-published: True
+publish: True
 position: 12
 ---
 

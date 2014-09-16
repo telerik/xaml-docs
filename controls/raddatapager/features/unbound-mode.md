@@ -4,7 +4,7 @@ page_title: Unbound Mode
 description: Unbound Mode
 slug: raddatapager-features-unbound-mode
 tags: unbound,mode
-published: True
+publish: True
 position: 7
 ---
 

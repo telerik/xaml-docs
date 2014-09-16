@@ -4,7 +4,7 @@ page_title: Boundaries Detection
 description: Boundaries Detection
 slug: radcontextmenu-features-boundaries-detection
 tags: boundaries,detection
-published: True
+publish: True
 position: 6
 site_name: Silverlight
 ---

@@ -4,7 +4,7 @@ page_title: Paging before Grouping
 description: Paging before Grouping
 slug: raddatapager-features-grouping
 tags: paging,before,grouping
-published: True
+publish: True
 position: 8
 ---
 

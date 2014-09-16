@@ -4,7 +4,7 @@ page_title: Split Container
 description: Split Container
 slug: raddocking-features-split-container
 tags: split,container
-published: True
+publish: True
 position: 2
 ---
 

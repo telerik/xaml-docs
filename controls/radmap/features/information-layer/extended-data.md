@@ -4,7 +4,7 @@ page_title: Extended Data
 description: Extended Data
 slug: radmap-features-extended-data
 tags: extended,data
-published: True
+publish: True
 position: 13
 ---
 

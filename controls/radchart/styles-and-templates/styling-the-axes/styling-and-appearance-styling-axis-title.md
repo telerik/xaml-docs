@@ -4,7 +4,7 @@ page_title: Styling the Axis Title
 description: Styling the Axis Title
 slug: radchart-styling-and-appearance-styling-axis-title
 tags: styling,the,axis,title
-published: True
+publish: True
 position: 7
 ---
 

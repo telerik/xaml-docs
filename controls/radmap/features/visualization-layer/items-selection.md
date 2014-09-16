@@ -4,7 +4,7 @@ page_title: Items Selection
 description: Items Selection
 slug: radmap-features-visualization-layer-items-selection
 tags: items,selection
-published: True
+publish: True
 position: 12
 ---
 

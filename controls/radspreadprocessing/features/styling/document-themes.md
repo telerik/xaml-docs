@@ -4,7 +4,7 @@ page_title: Document Themes
 description: Document Themes
 slug: radspreadprocessing-features-styling-document-themes
 tags: document,themes
-published: True
+publish: True
 position: 1
 ---
 

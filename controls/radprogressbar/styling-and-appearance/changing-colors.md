@@ -4,7 +4,7 @@ page_title: Changing colors
 description: Changing colors
 slug: radprogressbar-changing-colors
 tags: changing,colors
-published: True
+publish: True
 position: 2
 ---
 

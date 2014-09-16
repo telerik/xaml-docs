@@ -4,7 +4,7 @@ page_title: Item Images
 description: Item Images
 slug: radtreeview-feautres-treeviewitem-item-images
 tags: item,images
-published: True
+publish: True
 position: 2
 ---
 

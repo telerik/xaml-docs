@@ -4,7 +4,7 @@ page_title: Managing Data
 description: Managing Data
 slug: gridview-overview-managing-data
 tags: managing,data
-published: True
+publish: True
 position: 9
 ---
 

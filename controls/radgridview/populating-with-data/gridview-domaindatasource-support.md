@@ -4,7 +4,7 @@ page_title: DomainDataSource Support
 description: DomainDataSource Support
 slug: gridview-domaindatasource-support
 tags: domaindatasource,support
-published: True
+publish: True
 position: 5
 site_name: Silverlight
 ---

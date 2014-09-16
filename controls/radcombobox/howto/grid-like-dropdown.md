@@ -4,7 +4,7 @@ page_title: Get a Grid Like Dropdown
 description: Get a Grid Like Dropdown
 slug: radcombobox-grid-like-dropdown
 tags: get,a,grid,like,dropdown
-published: True
+publish: True
 position: 4
 ---
 

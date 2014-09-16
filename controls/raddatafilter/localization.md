@@ -4,7 +4,7 @@ page_title: Localization
 description: Localization
 slug: raddatafilter-localization
 tags: localization
-published: True
+publish: True
 position: 6
 ---
 

@@ -4,7 +4,7 @@ page_title: Defer Filtering Until the Filter Button is Clicked
 description: Defer Filtering Until the Filter Button is Clicked
 slug: gridview-filtering-howto-defer-filtering-until-the-filter-button-is-clicked
 tags: defer,filtering,until,the,filter,button,is,clicked
-published: True
+publish: True
 position: 15
 ---
 

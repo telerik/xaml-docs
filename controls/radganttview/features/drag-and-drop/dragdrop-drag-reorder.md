@@ -4,7 +4,7 @@ page_title: Drag Reorder
 description: Drag Reorder
 slug: radganttview-dragdrop-drag-reorder
 tags: drag,reorder
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the RootCompass
 description: Styling the RootCompass
 slug: raddocking-styling-the-root-compass
 tags: styling,the,rootcompass
-published: True
+publish: True
 position: 6
 ---
 

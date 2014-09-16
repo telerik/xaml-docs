@@ -4,7 +4,7 @@ page_title: Orientation
 description: Orientation
 slug: radslider-orientation
 tags: orientation
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Bing Map Provider
 description: Bing Map Provider
 slug: radmap-features-providers-bing-map
 tags: bing,map,provider
-published: True
+publish: True
 position: 1
 ---
 

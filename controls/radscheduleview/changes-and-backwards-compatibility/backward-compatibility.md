@@ -4,7 +4,7 @@ page_title: Backwards Compatibility
 description: Backwards Compatibility
 slug: radscheduleview-backward-compatibility
 tags: backwards,compatibility
-published: True
+publish: True
 position: 2
 ---
 

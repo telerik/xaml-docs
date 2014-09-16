@@ -4,7 +4,7 @@ page_title: Document Protection
 description: Document Protection
 slug: radrichtextbox-features-document-protection
 tags: document,protection
-published: True
+publish: True
 position: 14
 ---
 

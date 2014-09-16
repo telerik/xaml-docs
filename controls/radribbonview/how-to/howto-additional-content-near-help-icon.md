@@ -4,7 +4,7 @@ page_title: Add Additional Content near the Help button
 description: Add Additional Content near the Help button
 slug: radribbonview-howto-additional-content-near-help-icon
 tags: add,additional,content,near,the,help,button
-published: True
+publish: True
 position: 8
 ---
 

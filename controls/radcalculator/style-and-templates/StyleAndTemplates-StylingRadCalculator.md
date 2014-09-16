@@ -4,7 +4,7 @@ page_title: Styling RadCalculator
 description: Styling RadCalculator
 slug: radcalculator-styleandtemplates-stylingradcalculator
 tags: styling,radcalculator
-published: True
+publish: True
 position: 3
 ---
 

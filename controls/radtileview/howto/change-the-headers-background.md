@@ -4,7 +4,7 @@ page_title: Change the RadTileViewItem Header Background
 description: Change the RadTileViewItem Header Background
 slug: radtileview-howto-change-the-headers-background
 tags: change,the,radtileviewitem,header,background
-published: True
+publish: True
 position: 2
 ---
 

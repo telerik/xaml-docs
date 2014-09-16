@@ -4,7 +4,7 @@ page_title: Creating an Application and Adding UI for WPF
 description: Creating an Application and Adding UI for WPF
 slug: installation-adding-to-application-create-application-and-adding-control-wpf
 tags: creating,an,application,and,adding,ui,for,wpf
-published: True
+publish: True
 position: 1
 site_name: WPF
 ---

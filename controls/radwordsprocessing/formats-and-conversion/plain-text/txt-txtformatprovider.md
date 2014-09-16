@@ -4,7 +4,7 @@ page_title: Using TxtFormatProvider
 description: Using TxtFormatProvider
 slug: radwordsprocessing-formats-and-conversion-txt-txtformatprovider
 tags: using,txtformatprovider
-published: True
+publish: True
 position: 0
 ---
 

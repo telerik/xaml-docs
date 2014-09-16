@@ -4,7 +4,7 @@ page_title: Additional content
 description: Additional content
 slug: radtabcontrol-fetures-additional-content
 tags: additional,content
-published: False
+publish: False
 position: 6
 ---
 

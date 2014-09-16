@@ -4,7 +4,7 @@ page_title: Customize the TimeLine Data and Containers
 description: Customize the TimeLine Data and Containers
 slug: radganttview-howto-customize-the-timeline
 tags: customize,the,timeline,data,and,containers
-published: True
+publish: True
 position: 0
 ---
 

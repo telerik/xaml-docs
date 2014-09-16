@@ -4,7 +4,7 @@ page_title: Creating simple toolbar
 description: Creating simple toolbar
 slug: radtoolbar-create-simple-toolbar
 tags: creating,simple,toolbar
-published: True
+publish: True
 position: 1
 ---
 

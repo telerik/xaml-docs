@@ -4,7 +4,7 @@ page_title: RadCalculatorPicker
 description: RadCalculatorPicker
 slug: radcalculatorpicker-gettingstarted
 tags: radcalculatorpicker
-published: True
+publish: True
 position: 1
 ---
 

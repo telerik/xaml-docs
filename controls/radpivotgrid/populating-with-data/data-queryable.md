@@ -4,7 +4,7 @@ page_title: Using QueryableDataProvider
 description: Using QueryableDataProvider
 slug: radpivotgrid-data-queryable
 tags: using,queryabledataprovider
-published: True
+publish: True
 position: 3
 site_name: WPF
 ---

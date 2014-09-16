@@ -4,7 +4,7 @@ page_title: Structure
 description: Structure
 slug: raddiagram-structure
 tags: structure
-published: True
+publish: True
 position: 1
 ---
 

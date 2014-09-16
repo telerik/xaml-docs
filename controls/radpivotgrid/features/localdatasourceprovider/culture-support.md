@@ -4,7 +4,7 @@ page_title: Culture Support
 description: Culture Support
 slug: radpivotgrid-features-culture-support
 tags: culture,support
-published: True
+publish: True
 position: 10
 ---
 

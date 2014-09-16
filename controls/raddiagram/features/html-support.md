@@ -4,7 +4,7 @@ page_title: Html Support
 description: Html Support
 slug: raddiagram-features-html-support
 tags: html,support
-published: True
+publish: True
 position: 18
 ---
 

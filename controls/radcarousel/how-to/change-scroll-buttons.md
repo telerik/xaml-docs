@@ -4,7 +4,7 @@ page_title: Change the predefined scroll buttons
 description: Change the predefined scroll buttons
 slug: radcarousel-how-to-change-scroll-buttons
 tags: change,the,predefined,scroll,buttons
-published: True
+publish: True
 position: 0
 site_name: WPF
 ---

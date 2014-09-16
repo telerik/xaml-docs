@@ -4,7 +4,7 @@ page_title: Style Sheets
 description: Style Sheets
 slug: radrichtextbox-features-style-sheets
 tags: style,sheets
-published: True
+publish: True
 position: 2
 ---
 

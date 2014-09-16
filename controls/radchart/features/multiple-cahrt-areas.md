@@ -4,7 +4,7 @@ page_title: Multiple Chart Areas
 description: Multiple Chart Areas
 slug: radchart-features-multiple-cahrt-areas
 tags: multiple,chart,areas
-published: True
+publish: True
 position: 23
 ---
 

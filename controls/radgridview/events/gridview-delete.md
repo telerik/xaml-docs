@@ -4,7 +4,7 @@ page_title: Delete
 description: Delete
 slug: gridview-events-delete
 tags: delete
-published: True
+publish: True
 position: 3
 ---
 

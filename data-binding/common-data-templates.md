@@ -4,7 +4,7 @@ page_title: Data Templates
 description: Data Templates
 slug: common-data-binding-data-templates
 tags: data,templates
-published: True
+publish: True
 position: 3
 ---
 

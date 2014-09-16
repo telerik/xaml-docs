@@ -4,7 +4,7 @@ page_title: Set Drag Visual
 description: Set Drag Visual
 slug: dragdrompmanager-howto-set-drag-visual
 tags: set,drag,visual
-published: True
+publish: True
 position: 0
 ---
 

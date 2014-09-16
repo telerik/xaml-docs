@@ -4,7 +4,7 @@ page_title: ArcGIS Online Map Provider
 description: ArcGIS Online Map Provider
 slug: radmap-features-providers-arcgis
 tags: arcgis,online,map,provider
-published: True
+publish: True
 position: 2
 ---
 

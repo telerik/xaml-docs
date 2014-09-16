@@ -4,7 +4,7 @@ page_title: Binding to WCF Service
 description: Binding to WCF Service
 slug: radtreeview-populating-with-data-databinding-to-wcf-service
 tags: binding,to,wcf,service
-published: True
+publish: True
 position: 6
 ---
 

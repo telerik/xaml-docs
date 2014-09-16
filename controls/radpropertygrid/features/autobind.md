@@ -4,7 +4,7 @@ page_title: AutoBind Attached Behavior
 description: AutoBind Attached Behavior
 slug: radpropertygrid-autobind
 tags: autobind,attached,behavior
-published: True
+publish: True
 position: 2
 ---
 

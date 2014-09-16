@@ -4,7 +4,7 @@ page_title: Ribbon Window
 description: Ribbon Window
 slug: radribbonview-ribbon-window-wpf
 tags: ribbon,window
-published: True
+publish: True
 position: 11
 site_name: WPF
 ---

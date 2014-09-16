@@ -4,7 +4,7 @@ page_title: Key Modifiers
 description: Key Modifiers
 slug: radcontextmenu-key-modifiers
 tags: key,modifiers
-published: True
+publish: True
 position: 2
 ---
 

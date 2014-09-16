@@ -4,7 +4,7 @@ page_title: Styles
 description: Styles
 slug: radwordsprocessing-concepts-styles
 tags: styles
-published: True
+publish: True
 position: 4
 ---
 

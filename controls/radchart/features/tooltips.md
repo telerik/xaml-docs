@@ -4,7 +4,7 @@ page_title: ToolTips
 description: ToolTips
 slug: radchart-features-tooltips
 tags: tooltips
-published: True
+publish: True
 position: 18
 ---
 

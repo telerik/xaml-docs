@@ -4,7 +4,7 @@ page_title: Styling the RadBusyIndicator
 description: Styling the RadBusyIndicator
 slug: radbusyindicator-styles-and-templates-styling-radbusyindicator
 tags: styling,the,radbusyindicator
-published: True
+publish: True
 position: 2
 ---
 

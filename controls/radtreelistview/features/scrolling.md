@@ -4,7 +4,7 @@ page_title: Scrolling
 description: Scrolling
 slug: radtreelistview-features-scrolling
 tags: scrolling
-published: True
+publish: True
 position: 10
 ---
 

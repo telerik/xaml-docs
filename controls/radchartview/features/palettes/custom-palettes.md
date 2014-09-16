@@ -4,7 +4,7 @@ page_title: Creating Custom palettes
 description: Creating Custom palettes
 slug: radchartview-features-palettes-custom-palettes
 tags: creating,custom,palettes
-published: True
+publish: True
 position: 1
 ---
 

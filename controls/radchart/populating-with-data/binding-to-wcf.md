@@ -4,7 +4,7 @@ page_title: Data Binding to WCF Service
 description: Data Binding to WCF Service
 slug: radchart-populating-with-data-binding-to-wcf
 tags: data,binding,to,wcf,service
-published: True
+publish: True
 position: 9
 ---
 

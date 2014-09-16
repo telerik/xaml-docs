@@ -4,7 +4,7 @@ page_title: Cell Value Types
 description: Cell Value Types
 slug: radspreadsheet-model-working-with-cells-cell-value-types
 tags: cell,value,types
-published: False
+publish: False
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Lightweight Templates
 description: Lightweight Templates
 slug: gridview-overview-lightweight-template
 tags: lightweight,templates
-published: True
+publish: True
 position: 8
 ---
 

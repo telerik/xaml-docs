@@ -4,7 +4,7 @@ page_title: Creating the Client Application
 description: Creating the Client Application
 slug: raddataservicedatasource-getting-started-creating-the-client-application
 tags: creating,the,client,application
-published: True
+publish: True
 position: 1
 ---
 

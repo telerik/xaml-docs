@@ -4,7 +4,7 @@ page_title: Data Binding and Data Templates
 description: Data Binding and Data Templates
 slug: radbook-data-templates
 tags: data,binding,and,data,templates
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Controlling Behavior
 description: Controlling Behavior
 slug: radtabcontrol-features-controlling-behavior
 tags: controlling,behavior
-published: True
+publish: True
 position: 4
 ---
 

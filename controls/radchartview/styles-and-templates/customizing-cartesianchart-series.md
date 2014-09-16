@@ -4,7 +4,7 @@ page_title: Customizing CartesianChart Series
 description: Customizing CartesianChart Series
 slug: radchartview-styles-and-templates-customizing-cartesianchart-series
 tags: customizing,cartesianchart,series
-published: True
+publish: True
 position: 0
 ---
 

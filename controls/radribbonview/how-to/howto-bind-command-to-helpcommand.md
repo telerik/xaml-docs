@@ -4,7 +4,7 @@ page_title: Bind Command to the HelpCommand property
 description: Bind Command to the HelpCommand property
 slug: radribbonview-howto-bind-command-to-helpcommand
 tags: bind,command,to,the,helpcommand,property
-published: True
+publish: True
 position: 13
 ---
 

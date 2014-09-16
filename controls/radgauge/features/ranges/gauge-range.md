@@ -4,7 +4,7 @@ page_title: Gauge Range
 description: Gauge Range
 slug: radgauge-features-ranges-gauge-range
 tags: gauge,range
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Change the Default Selected Filter Operators
 description: Change the Default Selected Filter Operators
 slug: gridview-filtering-howto-change-the-default-selected-filter-operator
 tags: change,the,default,selected,filter,operators
-published: True
+publish: True
 position: 5
 ---
 

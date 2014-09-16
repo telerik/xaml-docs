@@ -4,7 +4,7 @@ page_title: Delayed Display
 description: Delayed Display
 slug: radbusyindicator-features-delayed-display
 tags: delayed,display
-published: True
+publish: True
 position: 4
 ---
 

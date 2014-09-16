@@ -4,7 +4,7 @@ page_title: Styling RadDataForm
 description: Styling RadDataForm
 slug: raddatafor-styles-and-templates-styling-raddataform
 tags: styling,raddataform
-published: True
+publish: True
 position: 2
 ---
 

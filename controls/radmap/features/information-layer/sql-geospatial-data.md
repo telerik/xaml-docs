@@ -4,7 +4,7 @@ page_title: SQL Geospatial Data
 description: SQL Geospatial Data
 slug: radmap-features-sql-geospatial-data
 tags: sql,geospatial,data
-published: True
+publish: True
 position: 14
 ---
 

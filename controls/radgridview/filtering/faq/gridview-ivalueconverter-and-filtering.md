@@ -4,7 +4,7 @@ page_title: Applied IValueConverter on the DataMemberBinding
 description: Applied IValueConverter on the DataMemberBinding
 slug: gridview-filtering-faq-ivalueconverter-and-filtering
 tags: applied,ivalueconverter,on,the,datamemberbinding
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Use expression descriptors
 description: Use expression descriptors
 slug: gridview-howto-use-expression-descriptors
 tags: use,expression,descriptors
-published: True
+publish: True
 position: 15
 ---
 

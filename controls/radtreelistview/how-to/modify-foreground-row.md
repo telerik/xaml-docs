@@ -4,7 +4,7 @@ page_title: Modify foreground color of Selected/Hovered row
 description: Modify foreground color of Selected/Hovered row
 slug: radtreelistview-how-to-modify-foreground-row
 tags: modify,foreground,color,of,selected/hovered,row
-published: True
+publish: True
 position: 1
 ---
 

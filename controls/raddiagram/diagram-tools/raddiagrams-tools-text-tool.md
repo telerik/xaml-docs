@@ -4,7 +4,7 @@ page_title: Text Tool
 description: Text Tool
 slug: raddiagrams-tools-text-tool
 tags: text,tool
-published: True
+publish: True
 position: 3
 ---
 

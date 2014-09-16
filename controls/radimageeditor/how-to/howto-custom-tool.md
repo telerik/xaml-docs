@@ -4,7 +4,7 @@ page_title: Create a Custom Tool
 description: Create a Custom Tool
 slug: radimageeditor-howto-custom-tool
 tags: create,a,custom,tool
-published: True
+publish: True
 position: 0
 ---
 

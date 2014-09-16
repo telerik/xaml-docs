@@ -4,7 +4,7 @@ page_title: RadCloudUploadListItem
 description: RadCloudUploadListItem
 slug: radcloudupload-radclouduploadlistitem
 tags: radclouduploadlistitem
-published: True
+publish: True
 position: 8
 ---
 

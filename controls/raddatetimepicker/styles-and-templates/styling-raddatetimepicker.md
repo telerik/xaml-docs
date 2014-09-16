@@ -4,7 +4,7 @@ page_title: Styling RadDateTimePicker
 description: Styling RadDateTimePicker
 slug: raddatetimepicker-styling-raddatetimepicker
 tags: styling,raddatetimepicker
-published: True
+publish: True
 position: 2
 ---
 

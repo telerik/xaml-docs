@@ -4,7 +4,7 @@ page_title: Filter Descriptors
 description: Filter Descriptors
 slug: raddatafilter-features-filter-descriptors
 tags: filter,descriptors
-published: True
+publish: True
 position: 2
 ---
 

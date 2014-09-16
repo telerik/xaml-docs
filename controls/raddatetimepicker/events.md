@@ -4,7 +4,7 @@ page_title: Events
 description: Events
 slug: raddatetimepicker-events
 tags: events
-published: True
+publish: True
 position: 7
 ---
 

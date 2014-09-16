@@ -4,7 +4,7 @@ page_title: Member Access
 description: Member Access
 slug: radexpressioneditor-expressions-member-access
 tags: member,access
-published: True
+publish: True
 position: 1
 ---
 

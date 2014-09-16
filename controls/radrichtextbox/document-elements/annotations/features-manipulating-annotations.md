@@ -4,7 +4,7 @@ page_title: Manipulating Annotations
 description: Manipulating Annotations
 slug: radrichtextbox-features-document-elements-manipulating-annotations
 tags: manipulating,annotations
-published: True
+publish: True
 position: 1
 ---
 

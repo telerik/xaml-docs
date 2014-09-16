@@ -4,7 +4,7 @@ page_title: Context Menu
 description: Context Menu
 slug: radrichtextbox-features-context-menu
 tags: context,menu
-published: True
+publish: True
 position: 2
 ---
 

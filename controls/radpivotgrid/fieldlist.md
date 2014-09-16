@@ -4,7 +4,7 @@ page_title: RadPivotFieldList
 description: RadPivotFieldList
 slug: radpivotgrid-fieldlist
 tags: radpivotfieldlist
-published: True
+publish: True
 position: 4
 ---
 

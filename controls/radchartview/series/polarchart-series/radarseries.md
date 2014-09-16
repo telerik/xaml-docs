@@ -4,7 +4,7 @@ page_title: Radar Series
 description: Radar Series
 slug: radchartview-series-radarseries
 tags: radar,series
-published: False
+publish: False
 position: 3
 ---
 

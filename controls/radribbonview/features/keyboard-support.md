@@ -4,7 +4,7 @@ page_title: Keyboard Support
 description: Keyboard Support
 slug: radribbonview-keyboard-support
 tags: keyboard,support
-published: True
+publish: True
 position: 8
 ---
 

@@ -4,7 +4,7 @@ page_title: Hyperlinks
 description: Hyperlinks
 slug: radwordsprocessing-concepts-hyperlinks
 tags: hyperlinks
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Modify the GroupRow
 description: Modify the GroupRow
 slug: gridview-grouping-how-to-modify-grouptemplates
 tags: modify,the,grouprow
-published: True
+publish: True
 position: 1
 ---
 

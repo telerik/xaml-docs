@@ -4,7 +4,7 @@ page_title: Direction
 description: Direction
 slug: radslider-direction
 tags: direction
-published: True
+publish: True
 position: 6
 ---
 

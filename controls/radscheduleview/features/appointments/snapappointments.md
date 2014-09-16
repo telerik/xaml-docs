@@ -4,7 +4,7 @@ page_title: Snapping Appointments
 description: Snapping Appointments
 slug: radscheduleview-features-snapappointments
 tags: snapping,appointments
-published: True
+publish: True
 position: 1
 ---
 

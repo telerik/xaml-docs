@@ -4,7 +4,7 @@ page_title: History
 description: History
 slug: radimageeditor-features-history
 tags: history
-published: True
+publish: True
 position: 3
 ---
 

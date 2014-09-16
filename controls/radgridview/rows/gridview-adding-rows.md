@@ -4,7 +4,7 @@ page_title: Adding Rows
 description: Adding Rows
 slug: gridview-rows-adding-rows
 tags: adding,rows
-published: True
+publish: True
 position: 1
 ---
 

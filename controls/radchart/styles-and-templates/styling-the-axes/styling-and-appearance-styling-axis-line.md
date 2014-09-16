@@ -4,7 +4,7 @@ page_title: Styling the Axis Line
 description: Styling the Axis Line
 slug: radchart-styling-and-appearance-styling-axis-line
 tags: styling,the,axis,line
-published: True
+publish: True
 position: 1
 ---
 

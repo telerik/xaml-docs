@@ -4,7 +4,7 @@ page_title: Create Custom DateTimePicker Column
 description: Create Custom DateTimePicker Column
 slug: gridview-how-to-create-custom-date-column
 tags: create,custom,datetimepicker,column
-published: True
+publish: True
 position: 3
 ---
 

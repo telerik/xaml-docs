@@ -4,7 +4,7 @@ page_title: ContainerNodeViewModelBase
 description: ContainerNodeViewModelBase
 slug: raddiagram-data-containernodeviewmodel
 tags: containernodeviewmodelbase
-published: True
+publish: True
 position: 3
 ---
 

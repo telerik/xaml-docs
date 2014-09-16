@@ -4,7 +4,7 @@ page_title: Forums
 description: Forums
 slug: for-more-help-forums
 tags: forums
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Custom Drag and Drop Behaviors
 description: Custom Drag and Drop Behaviors
 slug: radganttview-dragdrop-custom-behaviors
 tags: custom,drag,and,drop,behaviors
-published: True
+publish: True
 position: 2
 ---
 

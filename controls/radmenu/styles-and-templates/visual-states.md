@@ -4,7 +4,7 @@ page_title: Visual States
 description: Visual States
 slug: radmenu-styles-and-templates-visual-states
 tags: visual,states
-published: True
+publish: True
 position: 2
 site_name: Silverlight
 ---

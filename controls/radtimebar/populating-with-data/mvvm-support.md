@@ -4,7 +4,7 @@ page_title: MVVM Support
 description: MVVM Support
 slug: radtimebar-mvvm-support
 tags: mvvm,support
-published: True
+publish: True
 position: 1
 ---
 

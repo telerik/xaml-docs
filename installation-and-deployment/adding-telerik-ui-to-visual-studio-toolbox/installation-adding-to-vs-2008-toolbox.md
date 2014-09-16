@@ -4,7 +4,7 @@ page_title: Adding UI for Silverlight to the Visual Studio 2008 Toolbox
 description: Adding UI for Silverlight to the Visual Studio 2008 Toolbox
 slug: installation-adding-to-vs-2008-toolbox
 tags: adding,ui,for,silverlight,to,the,visual,studio,2008,toolbox
-published: False
+publish: False
 position: 0
 site_name: Silverlight
 ---

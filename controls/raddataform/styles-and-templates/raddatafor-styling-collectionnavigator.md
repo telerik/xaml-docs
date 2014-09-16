@@ -4,7 +4,7 @@ page_title: Styling CollectionNavigator
 description: Styling CollectionNavigator
 slug: raddatafor-styles-and-templates-styling-collectionnavigator
 tags: styling,collectionnavigator
-published: True
+publish: True
 position: 3
 ---
 

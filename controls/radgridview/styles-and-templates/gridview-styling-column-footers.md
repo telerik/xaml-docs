@@ -4,7 +4,7 @@ page_title: Styling the Column Footers
 description: Styling the Column Footers
 slug: gridview-styling-column-footers
 tags: styling,the,column,footers
-published: True
+publish: True
 position: 8
 ---
 

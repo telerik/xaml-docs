@@ -4,7 +4,7 @@ page_title: GridLine Annotations
 description: GridLine Annotations
 slug: radchartview-annotations-gridline
 tags: gridline,annotations
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Resizing Rows and Columns
 description: Resizing Rows and Columns
 slug: radspreadsheet-model-working-with-rows-and-columns-resizing
 tags: resizing,rows,and,columns
-published: False
+publish: False
 position: 2
 ---
 

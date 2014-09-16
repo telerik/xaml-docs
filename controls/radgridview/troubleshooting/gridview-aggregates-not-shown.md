@@ -4,7 +4,7 @@ page_title: Aggregates are not shown
 description: Aggregates are not shown
 slug: gridview-troubleshooting-aggregates-not-shown
 tags: aggregates,are,not,shown
-published: True
+publish: True
 position: 0
 ---
 

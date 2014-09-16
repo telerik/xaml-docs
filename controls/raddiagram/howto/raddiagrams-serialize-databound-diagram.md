@@ -4,7 +4,7 @@ page_title: Serialize a Databound Diagram
 description: Serialize a Databound Diagram
 slug: raddiagrams-howto-serialize-databound-diagram
 tags: serialize,a,databound,diagram
-published: True
+publish: True
 position: 1
 ---
 

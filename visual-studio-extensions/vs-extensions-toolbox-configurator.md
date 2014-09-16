@@ -4,7 +4,7 @@ page_title: Toolbox Configurator
 description: Toolbox Configurator
 slug: radcontrols-vs-extensions-toolbox-configurator
 tags: toolbox,configurator
-published: True
+publish: True
 position: 10
 ---
 

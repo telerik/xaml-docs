@@ -4,7 +4,7 @@ page_title: Page Flip Mode
 description: Page Flip Mode
 slug: radbook-page-flip-mode
 tags: page,flip,mode
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: UI Virtualization
 description: UI Virtualization
 slug: radtreeview-features-ui-virtualization
 tags: ui,virtualization
-published: True
+publish: True
 position: 9
 ---
 

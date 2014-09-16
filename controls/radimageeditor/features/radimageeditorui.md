@@ -4,7 +4,7 @@ page_title: RadImageEditorUI
 description: RadImageEditorUI
 slug: radimageeditor-features-radimageeditorui
 tags: radimageeditorui
-published: True
+publish: True
 position: 1
 ---
 

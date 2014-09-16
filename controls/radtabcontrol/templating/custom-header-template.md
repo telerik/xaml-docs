@@ -4,7 +4,7 @@ page_title: Choose Header Template by Custom Logic
 description: Choose Header Template by Custom Logic
 slug: radtabcontrol-templating-custom-header-template
 tags: choose,header,template,by,custom,logic
-published: True
+publish: True
 position: 3
 ---
 

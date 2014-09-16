@@ -4,7 +4,7 @@ page_title: Use generic GroupDescriptor
 description: Use generic GroupDescriptor
 slug: gridview-grouping-generic-descriptor
 tags: use,generic,groupdescriptor
-published: True
+publish: True
 position: 2
 ---
 

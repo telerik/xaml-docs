@@ -4,7 +4,7 @@ page_title: Save/Load Settings
 description: Save/Load Settings
 slug: gridview-overview-saveload-settings
 tags: save/load,settings
-published: True
+publish: True
 position: 10
 ---
 

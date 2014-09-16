@@ -4,7 +4,7 @@ page_title: Highlight Behavior
 description: Highlight Behavior
 slug: radautocompletebox-features-highlightbehavior
 tags: highlight,behavior
-published: True
+publish: True
 position: 3
 ---
 

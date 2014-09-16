@@ -4,7 +4,7 @@ page_title: Hierarchical Data
 description: Hierarchical Data
 slug: common-data-binding-hierarchical-data
 tags: hierarchical,data
-published: True
+publish: True
 position: 4
 ---
 

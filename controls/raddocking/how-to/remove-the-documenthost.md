@@ -4,7 +4,7 @@ page_title: How to Remove the DocumentHost
 description: How to Remove the DocumentHost
 slug: raddocking-how-to-remove-the-documenthost
 tags: how,to,remove,the,documenthost
-published: True
+publish: True
 position: 6
 ---
 

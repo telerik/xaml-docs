@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: common-data-binding-overview
 tags: overview
-published: True
+publish: True
 position: 0
 ---
 

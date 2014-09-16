@@ -4,7 +4,7 @@ page_title: Clone and Merge
 description: Clone and Merge
 slug: radwordsprocessing-editing-clone-and-merge
 tags: clone,and,merge
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Theming the ToolWindow
 description: Theming the ToolWindow
 slug: raddocking-theming-toolwindow
 tags: theming,the,toolwindow
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Validation Support
 description: Validation Support
 slug: radpropertygrid-features-validation
 tags: validation,support
-published: True
+publish: True
 position: 14
 ---
 

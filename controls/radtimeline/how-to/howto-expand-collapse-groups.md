@@ -4,7 +4,7 @@ page_title: Expand and Collapse Timeline groups
 description: Expand and Collapse Timeline groups
 slug: radtimeline-howto-expand-collapse-groups
 tags: expand,and,collapse,timeline,groups
-published: True
+publish: True
 position: 0
 ---
 

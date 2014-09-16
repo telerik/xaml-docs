@@ -4,7 +4,7 @@ page_title: Custom Sorting
 description: Custom Sorting
 slug: gridview-sorting-custom
 tags: custom,sorting
-published: True
+publish: True
 position: 2
 ---
 

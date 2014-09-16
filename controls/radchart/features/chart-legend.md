@@ -4,7 +4,7 @@ page_title: Chart Legend
 description: Chart Legend
 slug: radchart-features-chart-legend
 tags: chart,legend
-published: True
+publish: True
 position: 14
 ---
 

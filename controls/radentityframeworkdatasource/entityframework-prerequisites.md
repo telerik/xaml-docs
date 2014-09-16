@@ -4,7 +4,7 @@ page_title: Prerequisites
 description: Prerequisites
 slug: entityframework-prerequisites
 tags: prerequisites
-published: True
+publish: True
 position: 2
 ---
 

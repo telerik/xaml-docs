@@ -4,7 +4,7 @@ page_title: RadColorPaletteView
 description: RadColorPaletteView
 slug: paletteview-getting-started
 tags: radcolorpaletteview
-published: True
+publish: True
 position: 2
 ---
 

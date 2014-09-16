@@ -4,7 +4,7 @@ page_title: Styling the RadDataPager
 description: Styling the RadDataPager
 slug: raddatapager-styles-and-templates-styling-the-raddatapager
 tags: styling,the,raddatapager
-published: True
+publish: True
 position: 2
 ---
 

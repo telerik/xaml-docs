@@ -4,7 +4,7 @@ page_title: Use Commands with RadRibbonView Buttons
 description: Use Commands with RadRibbonView Buttons
 slug: radribbonview-howto-use-commands-with-radribbonview-buttons
 tags: use,commands,with,radribbonview,buttons
-published: True
+publish: True
 position: 12
 ---
 

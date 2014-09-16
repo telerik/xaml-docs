@@ -4,7 +4,7 @@ page_title: Using Telerik RadDataPager
 description: Using Telerik RadDataPager
 slug: radgridview-paging-using-telerik-raddatapager
 tags: using,telerik,raddatapager
-published: True
+publish: True
 position: 0
 ---
 

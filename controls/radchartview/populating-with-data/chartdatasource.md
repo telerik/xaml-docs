@@ -4,7 +4,7 @@ page_title: ChartDataSource
 description: ChartDataSource
 slug: radchartview-populating-with-data-chartdatasource
 tags: chartdatasource
-published: True
+publish: True
 position: 1
 ---
 

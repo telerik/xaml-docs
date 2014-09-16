@@ -4,7 +4,7 @@ page_title: Customizing PieChart Series
 description: Customizing PieChart Series
 slug: radchartview-styles-and-templates-customizing-piechart-series
 tags: customizing,piechart,series
-published: True
+publish: True
 position: 2
 ---
 

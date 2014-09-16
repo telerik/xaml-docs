@@ -4,7 +4,7 @@ page_title: Getting Started
 description: Getting Started
 slug: radtimepicker-timepicker-populating
 tags: getting,started
-published: True
+publish: True
 position: 2
 ---
 

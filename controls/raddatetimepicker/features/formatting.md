@@ -4,7 +4,7 @@ page_title: Formatting
 description: Formatting
 slug: raddatetimepicker-features-formatting
 tags: formatting
-published: True
+publish: True
 position: 7
 ---
 

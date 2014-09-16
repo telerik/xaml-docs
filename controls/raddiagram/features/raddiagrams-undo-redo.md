@@ -4,7 +4,7 @@ page_title: Undo and Redo
 description: Undo and Redo
 slug: raddiagrams-features-undo-redo
 tags: undo,and,redo
-published: True
+publish: True
 position: 2
 ---
 

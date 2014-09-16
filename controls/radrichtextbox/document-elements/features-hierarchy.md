@@ -4,7 +4,7 @@ page_title: Elements Hierarchy
 description: Elements Hierarchy
 slug: radrichtextbox-features-document-elements-hierarchy
 tags: elements,hierarchy
-published: True
+publish: True
 position: 0
 ---
 

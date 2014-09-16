@@ -4,7 +4,7 @@ page_title: Properties
 description: Properties
 slug: radbarcode-pdf417-properties
 tags: properties
-published: True
+publish: True
 position: 1
 ---
 

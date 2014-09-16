@@ -4,7 +4,7 @@ page_title: Row Details TemplateSelector
 description: Row Details TemplateSelector
 slug: radgridview-row-details-templateselector
 tags: row,details,templateselector
-published: True
+publish: True
 position: 3
 ---
 

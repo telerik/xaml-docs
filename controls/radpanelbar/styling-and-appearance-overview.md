@@ -4,7 +4,7 @@ page_title: Styling and Appearance
 description: Styling and Appearance
 slug: radpanelbar-styling-and-appearance-overview
 tags: styling,and,appearance
-published: True
+publish: True
 position: 4
 ---
 

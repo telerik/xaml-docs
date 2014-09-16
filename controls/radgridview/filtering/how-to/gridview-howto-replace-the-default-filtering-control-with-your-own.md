@@ -4,7 +4,7 @@ page_title: Replace the Default Filtering Control With Your Own
 description: Replace the Default Filtering Control With Your Own
 slug: gridview-filtering-howto-replace-the-default-filtering-control-with-your-own
 tags: replace,the,default,filtering,control,with,your,own
-published: True
+publish: True
 position: 14
 ---
 

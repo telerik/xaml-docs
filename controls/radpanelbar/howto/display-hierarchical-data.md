@@ -4,7 +4,7 @@ page_title: How to Display Hierarchical Data
 description: How to Display Hierarchical Data
 slug: howto-display-hierarchical-data
 tags: how,to,display,hierarchical,data
-published: True
+publish: True
 position: 2
 ---
 

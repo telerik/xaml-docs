@@ -4,7 +4,7 @@ page_title: Styling the RibbonScrollViewer
 description: Styling the RibbonScrollViewer
 slug: radribbonview-styling-ribbonscrollviewer
 tags: styling,the,ribbonscrollviewer
-published: True
+publish: True
 position: 6
 ---
 

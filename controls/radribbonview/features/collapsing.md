@@ -4,7 +4,7 @@ page_title: Collapsing
 description: Collapsing
 slug: radribbonview-collapsing
 tags: collapsing
-published: True
+publish: True
 position: 6
 ---
 

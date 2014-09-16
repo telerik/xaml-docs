@@ -4,7 +4,7 @@ page_title: Fluid Content Control
 description: Fluid Content Control
 slug: radtileview-fluid-content-control
 tags: fluid,content,control
-published: True
+publish: True
 position: 2
 ---
 

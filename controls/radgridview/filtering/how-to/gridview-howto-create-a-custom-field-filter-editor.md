@@ -4,7 +4,7 @@ page_title: Create a Custom Field Filter Editor
 description: Create a Custom Field Filter Editor
 slug: gridview-filtering-howto-create-a-custom-field-filter-editor
 tags: create,a,custom,field,filter,editor
-published: True
+publish: True
 position: 10
 ---
 

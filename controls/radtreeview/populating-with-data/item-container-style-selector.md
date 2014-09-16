@@ -4,7 +4,7 @@ page_title: ItemContainerStyleSelector
 description: ItemContainerStyleSelector
 slug: radtreeview-populating-with-data-item-container-style-selector
 tags: itemcontainerstyleselector
-published: True
+publish: True
 position: 12
 ---
 

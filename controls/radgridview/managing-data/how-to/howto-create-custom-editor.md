@@ -4,7 +4,7 @@ page_title: Create Custom Editor with RadGridView
 description: Create Custom Editor with RadGridView
 slug: radgridview-howto-create-custom-editor
 tags: create,custom,editor,with,radgridview
-published: True
+publish: True
 position: 0
 ---
 

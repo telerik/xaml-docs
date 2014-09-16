@@ -4,7 +4,7 @@ page_title: Edit Lookup Values with RadComboBox
 description: Edit Lookup Values with RadComboBox
 slug: raddatafor-edit-lookup-values-with-radcombobox
 tags: edit,lookup,values,with,radcombobox
-published: True
+publish: True
 position: 1
 ---
 

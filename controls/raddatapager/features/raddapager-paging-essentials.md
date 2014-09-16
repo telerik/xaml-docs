@@ -4,7 +4,7 @@ page_title: Paging Essentials
 description: Paging Essentials
 slug: raddapager-features-paging-essentials
 tags: paging,essentials
-published: True
+publish: True
 position: 0
 ---
 

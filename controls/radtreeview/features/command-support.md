@@ -4,7 +4,7 @@ page_title: Command Support
 description: Command Support
 slug: radtreeview-features-command-support
 tags: command,support
-published: True
+publish: True
 position: 5
 site_name: WPF
 ---

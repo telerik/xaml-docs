@@ -4,7 +4,7 @@ page_title: Getting Started
 description: Getting Started
 slug: radcloudupload-getting-started
 tags: getting,started
-published: False
+publish: False
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Menu Items
 description: Menu Items
 slug: radmenu-features-menuitems
 tags: menu,items
-published: True
+publish: True
 position: 0
 ---
 

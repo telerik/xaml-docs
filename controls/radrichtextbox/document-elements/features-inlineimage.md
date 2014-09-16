@@ -4,7 +4,7 @@ page_title: InlineImage
 description: InlineImage
 slug: radrichtextbox-features-document-elements-inlineimage
 tags: inlineimage
-published: True
+publish: True
 position: 5
 ---
 

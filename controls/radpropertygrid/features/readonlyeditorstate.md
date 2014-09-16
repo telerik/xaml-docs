@@ -4,7 +4,7 @@ page_title: ReadOnlyEditorState
 description: ReadOnlyEditorState
 slug: radpropertygrid-features-readonlyeditorstate
 tags: readonlyeditorstate
-published: True
+publish: True
 position: 15
 ---
 

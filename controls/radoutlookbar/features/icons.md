@@ -4,7 +4,7 @@ page_title: Icons
 description: Icons
 slug: radoutlookbar-features-icons
 tags: icons
-published: True
+publish: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: QuickStyle
 description: QuickStyle
 slug: radpivotgrid-styles-and-templates-quickstyles
 tags: quickstyle
-published: True
+publish: True
 position: 1
 ---
 

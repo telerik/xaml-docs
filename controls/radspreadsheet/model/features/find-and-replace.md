@@ -4,7 +4,7 @@ page_title: Find and Replace
 description: Find and Replace
 slug: radspreadsheet-features-find-and-replace
 tags: find,and,replace
-published: False
+publish: False
 position: 6
 ---
 

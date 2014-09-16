@@ -4,7 +4,7 @@ page_title: Show Help Button and Change its Image
 description: Show Help Button and Change its Image
 slug: radribbonview-howto-show-help-icon-and-change-its-image
 tags: show,help,button,and,change,its,image
-published: True
+publish: True
 position: 7
 ---
 

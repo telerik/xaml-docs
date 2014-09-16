@@ -4,7 +4,7 @@ page_title: LinkViewModelBase
 description: LinkViewModelBase
 slug: raddiagram-data-linkviewmodel
 tags: linkviewmodelbase
-published: True
+publish: True
 position: 2
 ---
 

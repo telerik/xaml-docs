@@ -4,7 +4,7 @@ page_title: Scroll to a particular row or column
 description: Scroll to a particular row or column
 slug: gridview-scroll-item
 tags: scroll,to,a,particular,row,or,column
-published: True
+publish: True
 position: 3
 ---
 

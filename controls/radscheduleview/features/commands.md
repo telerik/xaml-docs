@@ -4,7 +4,7 @@ page_title: Commands
 description: Commands
 slug: radscheduleview-features-commands
 tags: commands
-published: True
+publish: True
 position: 9
 ---
 

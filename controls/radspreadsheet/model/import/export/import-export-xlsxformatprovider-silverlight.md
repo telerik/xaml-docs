@@ -4,7 +4,7 @@ page_title: XlsxFormatProvider
 description: XlsxFormatProvider
 slug: radspreadsheet-model-import-export-xlsxformatprovider-silverlight
 tags: xlsxformatprovider
-published: False
+publish: False
 position: 1
 site_name: Silverlight
 ---

@@ -4,7 +4,7 @@ page_title: Templates
 description: Templates
 slug: radoutlookbar-templates
 tags: templates
-published: True
+publish: True
 position: 3
 ---
 

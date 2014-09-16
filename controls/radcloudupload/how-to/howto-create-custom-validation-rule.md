@@ -4,7 +4,7 @@ page_title: Create Custom Validaton Rule
 description: Create Custom Validaton Rule
 slug: radcloudupload-howto-create-custom-validation-rule
 tags: create,custom,validaton,rule
-published: True
+publish: True
 position: 0
 ---
 

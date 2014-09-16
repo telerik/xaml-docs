@@ -4,7 +4,7 @@ page_title: Remove the Delete Button
 description: Remove the Delete Button
 slug: radscheduleview-howto-remove-delete-button
 tags: remove,the,delete,button
-published: True
+publish: True
 position: 3
 ---
 

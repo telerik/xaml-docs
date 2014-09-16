@@ -4,7 +4,7 @@ page_title: Localization
 description: Localization
 slug: radmap-localization
 tags: localization
-published: True
+publish: True
 position: 6
 ---
 

@@ -4,7 +4,7 @@ page_title: Restricting the Number of Visible Rows and Columns
 description: Restricting the Number of Visible Rows and Columns
 slug: radspreadsheet-ui-restricting-number-of-visible-rows-and-columns
 tags: restricting,the,number,of,visible,rows,and,columns
-published: True
+publish: True
 position: 1
 ---
 

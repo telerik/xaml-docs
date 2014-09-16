@@ -4,7 +4,7 @@ page_title: RadChartView
 description: RadChartView
 slug: xamlflix-chartview
 tags: radchartview
-published: True
+publish: True
 position: 2
 ---
 

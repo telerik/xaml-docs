@@ -4,7 +4,7 @@ page_title: Keyboard Command Provider
 description: Keyboard Command Provider
 slug: gridview-commands-keyboardcommandprovider
 tags: keyboard,command,provider
-published: True
+publish: True
 position: 2
 ---
 

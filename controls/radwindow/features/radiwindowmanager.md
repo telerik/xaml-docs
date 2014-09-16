@@ -4,7 +4,7 @@ page_title: RadWindowManager
 description: RadWindowManager
 slug: radwindow-features-radiwindowmanager
 tags: radwindowmanager
-published: True
+publish: True
 position: 10
 ---
 

@@ -4,7 +4,7 @@ page_title: Common
 description: Common
 slug: radmaskedinput-features-common
 tags: common
-published: True
+publish: True
 position: 1
 ---
 

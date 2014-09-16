@@ -4,7 +4,7 @@ page_title: Filtering through RadDataFilter
 description: Filtering through RadDataFilter
 slug: raddataservicedatasource-filtering-filtering-through-raddatafilter
 tags: filtering,through,raddatafilter
-published: True
+publish: True
 position: 2
 ---
 

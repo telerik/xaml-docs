@@ -4,7 +4,7 @@ page_title: Persist AdomdDataProvider
 description: Persist AdomdDataProvider
 slug: radpivotgrid-features-persistence-adomd
 tags: persist,adomddataprovider
-published: True
+publish: True
 position: 6
 site_name: WPF
 ---

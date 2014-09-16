@@ -4,7 +4,7 @@ page_title: ItemTemplateSelector
 description: ItemTemplateSelector
 slug: radtreeview-populating-with-data-item-template-selector
 tags: itemtemplateselector
-published: True
+publish: True
 position: 9
 ---
 

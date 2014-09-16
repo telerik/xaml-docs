@@ -4,7 +4,7 @@ page_title: Enable and Disable Tabs
 description: Enable and Disable Tabs
 slug: radtabcontrol-enable-disable-tabs
 tags: enable,and,disable,tabs
-published: True
+publish: True
 position: 3
 ---
 

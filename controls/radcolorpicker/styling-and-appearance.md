@@ -4,7 +4,7 @@ page_title: Styling and Appearance
 description: Styling and Appearance
 slug: radcolorpicker-styling-and-appearance
 tags: styling,and,appearance
-published: True
+publish: True
 position: 4
 ---
 

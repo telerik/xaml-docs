@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: radchart-styling-and-appearance-styling-axes-overview
 tags: overview
-published: True
+publish: True
 position: 0
 ---
 

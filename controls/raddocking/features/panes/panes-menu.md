@@ -4,7 +4,7 @@ page_title: Pane's Menu
 description: Pane's Menu
 slug: raddocking-features-panes-panes-menu
 tags: pane's,menu
-published: True
+publish: True
 position: 4
 ---
 

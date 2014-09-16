@@ -4,7 +4,7 @@ page_title: Attaching input events to the map shapes
 description: Attaching input events to the map shapes
 slug: radmap-visualization-layer-input-events
 tags: attaching,input,events,to,the,map,shapes
-published: True
+publish: True
 position: 4
 ---
 

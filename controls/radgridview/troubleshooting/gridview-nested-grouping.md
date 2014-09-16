@@ -4,7 +4,7 @@ page_title: UI freeze with deep nested grouping
 description: UI freeze with deep nested grouping
 slug: gridview-troubleshooting-nested-grouping
 tags: ui,freeze,with,deep,nested,grouping
-published: True
+publish: True
 position: 9
 ---
 

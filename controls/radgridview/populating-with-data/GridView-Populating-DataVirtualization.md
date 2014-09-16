@@ -4,7 +4,7 @@ page_title: Using Data Virtualization
 description: Using Data Virtualization
 slug: gridview-populating-datavirtualization
 tags: using,data,virtualization
-published: True
+publish: True
 position: 9
 ---
 

@@ -4,7 +4,7 @@ page_title: Pane Groups
 description: Pane Groups
 slug: raddocking-features-pane-groups
 tags: pane,groups
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Empty Content
 description: Empty Content
 slug: radchartview-features-empty-content
 tags: empty,content
-published: True
+publish: True
 position: 8
 ---
 

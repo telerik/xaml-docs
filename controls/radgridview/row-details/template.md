@@ -4,7 +4,7 @@ page_title: Row Details Template
 description: Row Details Template
 slug: radgridview-row-details-template
 tags: row,details,template
-published: True
+publish: True
 position: 1
 ---
 

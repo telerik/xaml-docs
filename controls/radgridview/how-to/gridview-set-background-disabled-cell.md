@@ -4,7 +4,7 @@ page_title: Change Background for Disabled Grid Elements
 description: Change Background for Disabled Grid Elements
 slug: gridview-how-to-set-background-disabled-cell
 tags: change,background,for,disabled,grid,elements
-published: True
+publish: True
 position: 7
 ---
 

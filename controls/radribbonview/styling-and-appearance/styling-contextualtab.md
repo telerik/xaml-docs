@@ -4,7 +4,7 @@ page_title: Styling the ContextualTabs
 description: Styling the ContextualTabs
 slug: radribbonview-styling-contextualtab
 tags: styling,the,contextualtabs
-published: True
+publish: True
 position: 9
 site_name: WPF
 ---

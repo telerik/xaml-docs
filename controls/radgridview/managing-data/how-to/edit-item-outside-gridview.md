@@ -4,7 +4,7 @@ page_title: Edit an item outside RadGridView
 description: Edit an item outside RadGridView
 slug: edit-item-outside-gridview
 tags: edit,an,item,outside,radgridview
-published: True
+publish: True
 position: 2
 ---
 

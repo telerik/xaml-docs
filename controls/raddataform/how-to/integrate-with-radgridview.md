@@ -4,7 +4,7 @@ page_title: Integrate RadDataForm with RadGridView
 description: Integrate RadDataForm with RadGridView
 slug: raddataform-integrate-with-radgridview
 tags: integrate,raddataform,with,radgridview
-published: True
+publish: True
 position: 0
 ---
 

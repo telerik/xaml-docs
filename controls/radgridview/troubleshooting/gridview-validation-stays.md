@@ -4,7 +4,7 @@ page_title: Validation errors not cleared
 description: Validation errors not cleared
 slug: gridview-troubleshooting-validation-stays
 tags: validation,errors,not,cleared
-published: True
+publish: True
 position: 18
 ---
 

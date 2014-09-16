@@ -4,7 +4,7 @@ page_title: Populate ColorPicker with Business Data
 description: Populate ColorPicker with Business Data
 slug: radcolorpicker-howto-binding-to-object
 tags: populate,colorpicker,with,business,data
-published: True
+publish: True
 position: 3
 ---
 

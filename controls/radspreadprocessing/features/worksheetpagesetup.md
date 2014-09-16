@@ -4,7 +4,7 @@ page_title: Worksheet Page Setup
 description: Worksheet Page Setup
 slug: radspreadprocessing-features-worksheetpagesetup
 tags: worksheet,page,setup
-published: True
+publish: True
 position: 12
 ---
 

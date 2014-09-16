@@ -4,7 +4,7 @@ page_title: Use RadRibbonView with Other controls
 description: Use RadRibbonView with Other controls
 slug: radribbonview-howto-use-ribbonview-other-controls
 tags: use,radribbonview,with,other,controls
-published: True
+publish: True
 position: 10
 ---
 

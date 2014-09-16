@@ -4,7 +4,7 @@ page_title: Grouping Support
 description: Grouping Support
 slug: radpropertygrid-grouping
 tags: grouping,support
-published: True
+publish: True
 position: 13
 ---
 

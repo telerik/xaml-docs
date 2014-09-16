@@ -4,7 +4,7 @@ page_title: Prevent Dialogs from Opening
 description: Prevent Dialogs from Opening
 slug: radscheduleview-howto-prevent-dialogs-from-opening
 tags: prevent,dialogs,from,opening
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Load Delay
 description: Load Delay
 slug: raddataservicedatasource-loading-load-delay
 tags: load,delay
-published: True
+publish: True
 position: 3
 ---
 

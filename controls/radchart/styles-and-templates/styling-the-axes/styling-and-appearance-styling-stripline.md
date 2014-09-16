@@ -4,7 +4,7 @@ page_title: Styling the StripLine
 description: Styling the StripLine
 slug: radchart-styling-and-appearance-styling-stripline
 tags: styling,the,stripline
-published: True
+publish: True
 position: 5
 ---
 

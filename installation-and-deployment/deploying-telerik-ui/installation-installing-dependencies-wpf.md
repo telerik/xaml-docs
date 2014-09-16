@@ -4,7 +4,7 @@ page_title: Controls Dependencies
 description: Controls Dependencies
 slug: installation-installing-controls-dependencies-wpf
 tags: controls,dependencies
-published: True
+publish: True
 position: 1
 site_name: WPF
 ---

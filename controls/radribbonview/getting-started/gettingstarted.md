@@ -4,7 +4,7 @@ page_title: Getting Started
 description: Getting Started
 slug: radribbonview-gettingstarted
 tags: getting,started
-published: True
+publish: True
 position: 0
 ---
 

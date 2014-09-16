@@ -4,7 +4,7 @@ page_title: Commands
 description: Commands
 slug: radmenu-features-commands
 tags: commands
-published: True
+publish: True
 position: 6
 ---
 

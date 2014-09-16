@@ -4,7 +4,7 @@ page_title: Framework Elements
 description: Framework Elements
 slug: radmap-features-information-layer-framework-elements
 tags: framework,elements
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the Chart Series
 description: Styling the Chart Series
 slug: radchart-styling-and-appearance-styling-chart-series
 tags: styling,the,chart,series
-published: True
+publish: True
 position: 5
 ---
 

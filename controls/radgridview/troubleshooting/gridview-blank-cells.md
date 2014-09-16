@@ -4,7 +4,7 @@ page_title: Empty Cells in Combobox column
 description: Empty Cells in Combobox column
 slug: gridview-troubleshooting-blank-cells
 tags: empty,cells,in,combobox,column
-published: True
+publish: True
 position: 7
 ---
 

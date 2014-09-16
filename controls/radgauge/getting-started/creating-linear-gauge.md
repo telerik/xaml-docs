@@ -4,7 +4,7 @@ page_title: Creating Linear Gauge
 description: Creating Linear Gauge
 slug: radgauge-getting-started-creating-linear-gauge
 tags: creating,linear,gauge
-published: True
+publish: True
 position: 1
 ---
 

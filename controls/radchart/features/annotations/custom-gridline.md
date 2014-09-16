@@ -4,7 +4,7 @@ page_title: Custom Gridline
 description: Custom Gridline
 slug: radchart-features-annotations-custom-gridline
 tags: custom,gridline
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Create Custom Transitions
 description: Create Custom Transitions
 slug: radtransition-how-to-create-custom-transitions
 tags: create,custom,transitions
-published: True
+publish: True
 position: 2
 ---
 

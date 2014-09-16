@@ -4,7 +4,7 @@ page_title: The DataServiceContext
 description: The DataServiceContext
 slug: raddataservicedatasource-loading-the-dataservicecontext
 tags: the,dataservicecontext
-published: True
+publish: True
 position: 0
 ---
 

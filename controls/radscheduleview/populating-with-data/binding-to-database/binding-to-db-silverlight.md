@@ -4,7 +4,7 @@ page_title: Silverlight Part
 description: Silverlight Part
 slug: radscheduleview-populating-with-data-binding-to-db-silverlight
 tags: silverlight,part
-published: True
+publish: True
 position: 5
 site_name: Silverlight
 ---

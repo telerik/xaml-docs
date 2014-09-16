@@ -4,7 +4,7 @@ page_title: Filter on a Property Different from the Displayed One
 description: Filter on a Property Different from the Displayed One
 slug: gridview-filtering-howto-filter-on-a-property-different-from-the-displayed-one
 tags: filter,on,a,property,different,from,the,displayed,one
-published: True
+publish: True
 position: 20
 ---
 

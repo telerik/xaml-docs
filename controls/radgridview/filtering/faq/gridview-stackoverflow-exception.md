@@ -4,7 +4,7 @@ page_title: StackOverflowException on selecting all distinct values
 description: StackOverflowException on selecting all distinct values
 slug: gridview-filtering-faq-stackoverflow-exception
 tags: stackoverflowexception,on,selecting,all,distinct,values
-published: True
+publish: True
 position: 4
 ---
 

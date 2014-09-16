@@ -4,7 +4,7 @@ page_title: Styling the RadRibbonView
 description: Styling the RadRibbonView
 slug: radribbonview-styling-ribbonview
 tags: styling,the,radribbonview
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Disable Filtering for a Specific Column
 description: Disable Filtering for a Specific Column
 slug: gridview-filtering-disable-filtering-for-a-specific-column
 tags: disable,filtering,for,a,specific,column
-published: True
+publish: True
 position: 1
 ---
 

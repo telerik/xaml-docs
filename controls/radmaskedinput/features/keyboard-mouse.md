@@ -4,7 +4,7 @@ page_title: Keyboard and Mouse Support
 description: Keyboard and Mouse Support
 slug: radmaskedinput-features-keyboard-mouse
 tags: keyboard,and,mouse,support
-published: True
+publish: True
 position: 7
 ---
 

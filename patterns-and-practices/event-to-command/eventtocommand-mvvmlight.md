@@ -4,7 +4,7 @@ page_title: MVVM Light Option
 description: MVVM Light Option
 slug: patterns-and-practices-eventtocommand-mvvmlight
 tags: mvvm,light,option
-published: True
+publish: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Touch Support
 description: Touch Support
 slug: raddiagram-features-touch-support
 tags: touch,support
-published: True
+publish: True
 position: 17
 ---
 

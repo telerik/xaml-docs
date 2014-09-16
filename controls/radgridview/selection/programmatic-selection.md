@@ -4,7 +4,7 @@ page_title: Programmatic Selection
 description: Programmatic Selection
 slug: radgridview-selection-programmatic-selection
 tags: programmatic,selection
-published: True
+publish: True
 position: 3
 ---
 

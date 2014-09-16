@@ -4,7 +4,7 @@ page_title: Warning message when opening the excel file
 description: Warning message when opening the excel file
 slug: gridview-troubleshooting-warning-message-excel
 tags: warning,message,when,opening,the,excel,file
-published: True
+publish: True
 position: 2
 ---
 

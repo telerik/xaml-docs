@@ -4,7 +4,7 @@ page_title: Conversion API
 description: Conversion API
 slug: radchartview-features-conversion
 tags: conversion,api
-published: True
+publish: True
 position: 4
 ---
 

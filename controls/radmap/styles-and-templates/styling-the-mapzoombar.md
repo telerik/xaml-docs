@@ -4,7 +4,7 @@ page_title: Styling the MapZoomBar
 description: Styling the MapZoomBar
 slug: radmap-styles-and-templates-styling-the-mapzoombar
 tags: styling,the,mapzoombar
-published: True
+publish: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Filter a Custom Type
 description: Filter a Custom Type
 slug: gridview-filtering-howto-filter-a-custom-type
 tags: filter,a,custom,type
-published: True
+publish: True
 position: 11
 ---
 

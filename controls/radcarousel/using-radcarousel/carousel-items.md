@@ -4,7 +4,7 @@ page_title: Carousel Items
 description: Carousel Items
 slug: carousel-items
 tags: carousel,items
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Restrict the Draggable Area
 description: Restrict the Draggable Area
 slug: raddiagram-howto-customize-dragging
 tags: restrict,the,draggable,area
-published: True
+publish: True
 position: 15
 ---
 

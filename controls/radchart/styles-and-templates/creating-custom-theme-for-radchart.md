@@ -4,7 +4,7 @@ page_title: Creating a Custom Theme for the RadChart
 description: Creating a Custom Theme for the RadChart
 slug: radchart-styles-and-templates-creating-custom-theme-for-radchart
 tags: creating,a,custom,theme,for,the,radchart
-published: True
+publish: True
 position: 14
 ---
 

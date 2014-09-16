@@ -4,7 +4,7 @@ page_title: Styling the MapScale
 description: Styling the MapScale
 slug: radmap-styles-and-templates-styling-the-mapscale
 tags: styling,the,mapscale
-published: True
+publish: True
 position: 6
 ---
 

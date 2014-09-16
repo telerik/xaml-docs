@@ -4,7 +4,7 @@ page_title: Working with RadWindow
 description: Working with RadWindow
 slug: radwindow-features-working-with-radwindow
 tags: working,with,radwindow
-published: True
+publish: True
 position: 0
 ---
 

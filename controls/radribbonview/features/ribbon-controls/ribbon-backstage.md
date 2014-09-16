@@ -4,7 +4,7 @@ page_title: Ribbon Backstage
 description: Ribbon Backstage
 slug: radribbonview-ribbon-backstage
 tags: ribbon,backstage
-published: True
+publish: True
 position: 2
 ---
 

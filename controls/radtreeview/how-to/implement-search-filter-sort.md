@@ -4,7 +4,7 @@ page_title: Implement Search, Filter and Sort
 description: Implement Search, Filter and Sort
 slug: radtreeview-how-to-implement-search-filter-sort
 tags: implement,search,,filter,and,sort
-published: True
+publish: True
 position: 30
 ---
 

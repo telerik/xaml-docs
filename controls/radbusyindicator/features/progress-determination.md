@@ -4,7 +4,7 @@ page_title: Progress Determination
 description: Progress Determination
 slug: radbusyindicator-features-progress-determination
 tags: progress,determination
-published: True
+publish: True
 position: 1
 ---
 

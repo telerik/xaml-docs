@@ -4,7 +4,7 @@ page_title: Ordered Wrap Panel
 description: Ordered Wrap Panel
 slug: radribbonview-ordered-wrap-panel
 tags: ordered,wrap,panel
-published: True
+publish: True
 position: 0
 ---
 

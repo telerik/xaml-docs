@@ -4,7 +4,7 @@ page_title: InputGestureText
 description: InputGestureText
 slug: radmenu-features-inputgesturetext
 tags: inputgesturetext
-published: True
+publish: True
 position: 7
 site_name: WPF
 ---

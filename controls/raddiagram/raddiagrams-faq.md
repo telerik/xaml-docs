@@ -4,7 +4,7 @@ page_title: FAQ
 description: FAQ
 slug: raddiagrams-faq
 tags: faq
-published: True
+publish: True
 position: 16
 ---
 

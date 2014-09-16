@@ -4,7 +4,7 @@ page_title: Data Binding
 description: Data Binding
 slug: radtreeview-features-data-binding
 tags: data,binding
-published: True
+publish: True
 position: 1
 ---
 

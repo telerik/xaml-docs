@@ -4,7 +4,7 @@ page_title: How to remove and modify the Icon area for RadMenu
 description: How to remove and modify the Icon area for RadMenu
 slug: radmenu-how-to-remove-the-icon-area-for-radmenu
 tags: how,to,remove,and,modify,the,icon,area,for,radmenu
-published: True
+publish: True
 position: 4
 ---
 

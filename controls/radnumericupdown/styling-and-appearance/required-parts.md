@@ -4,7 +4,7 @@ page_title: Required parts
 description: Required parts
 slug: radnumericupdown-required-parts
 tags: required,parts
-published: True
+publish: True
 position: 1
 ---
 

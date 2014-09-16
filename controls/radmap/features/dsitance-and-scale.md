@@ -4,7 +4,7 @@ page_title: Distance and Scale
 description: Distance and Scale
 slug: radmap-features-dsitance-and-scale
 tags: distance,and,scale
-published: True
+publish: True
 position: 6
 ---
 

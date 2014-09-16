@@ -4,7 +4,7 @@ page_title: Toggle Button
 description: Toggle Button
 slug: radbuttons-features-toggle-button
 tags: toggle,button
-published: True
+publish: True
 position: 4
 ---
 

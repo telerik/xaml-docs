@@ -4,7 +4,7 @@ page_title: Sorting
 description: Sorting
 slug: radchart-features-sorting
 tags: sorting
-published: True
+publish: True
 position: 25
 ---
 

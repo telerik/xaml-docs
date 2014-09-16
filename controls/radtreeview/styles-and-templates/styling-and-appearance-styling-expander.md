@@ -4,7 +4,7 @@ page_title: Styling the Expander
 description: Styling the Expander
 slug: radtreeview-styling-and-appearance-styling-expander
 tags: styling,the,expander
-published: True
+publish: True
 position: 3
 ---
 

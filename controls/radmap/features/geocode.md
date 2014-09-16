@@ -4,7 +4,7 @@ page_title: Geocode
 description: Geocode
 slug: radmap-features-geocode
 tags: geocode
-published: True
+publish: True
 position: 14
 ---
 

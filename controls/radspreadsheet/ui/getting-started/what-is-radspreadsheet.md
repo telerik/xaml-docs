@@ -4,7 +4,7 @@ page_title: What is RadSpreadsheet?
 description: What is RadSpreadsheet?
 slug: radspreadsheet-ui-getting-started-what-is-radspreadsheet
 tags: what,is,radspreadsheet?
-published: True
+publish: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the Row Details
 description: Styling the Row Details
 slug: gridview-styling-row-details
 tags: styling,the,row,details
-published: True
+publish: True
 position: 14
 ---
 

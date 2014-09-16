@@ -4,7 +4,7 @@ page_title: Empty provider
 description: Empty provider
 slug: radmap-features-empty-provider
 tags: empty,provider
-published: True
+publish: True
 position: 3
 ---
 

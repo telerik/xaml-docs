@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: radrating-changes
 tags: changes
-published: True
+publish: True
 position: 0
 ---
 

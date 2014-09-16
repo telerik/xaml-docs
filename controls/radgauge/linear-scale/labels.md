@@ -4,7 +4,7 @@ page_title: Labels
 description: Labels
 slug: linear-scale-labels
 tags: labels
-published: True
+publish: True
 position: 2
 ---
 

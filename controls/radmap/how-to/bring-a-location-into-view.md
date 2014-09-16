@@ -4,7 +4,7 @@ page_title: Bring a Location into View
 description: Bring a Location into View
 slug: radmap-how-to-bring-a-location-into-view
 tags: bring,a,location,into,view
-published: True
+publish: True
 position: 5
 ---
 

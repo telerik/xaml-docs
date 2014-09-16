@@ -4,7 +4,7 @@ page_title: Use RadContextMenu with a RadGridView
 description: Use RadContextMenu with a RadGridView
 slug: radcontextmenu-how-to-use-radcontextmenu-with-radgridview
 tags: use,radcontextmenu,with,a,radgridview
-published: True
+publish: True
 position: 0
 ---
 

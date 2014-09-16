@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: radcontrols-for-wpf-vs-extensions-overview-wpf
 tags: overview
-published: True
+publish: True
 position: 1
 site_name: WPF
 ---

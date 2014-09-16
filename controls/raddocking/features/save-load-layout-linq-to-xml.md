@@ -4,7 +4,7 @@ page_title: Save/load Layout with LINQ to XML
 description: Save/load Layout with LINQ to XML
 slug: raddocking-features-save-load-layout-linq-to-xml
 tags: save/load,layout,with,linq,to,xml
-published: True
+publish: True
 position: 12
 ---
 

@@ -4,7 +4,7 @@ page_title: RadScheduleView
 description: RadScheduleView
 slug: xamlflix-scheduleview
 tags: radscheduleview
-published: True
+publish: True
 position: 8
 ---
 

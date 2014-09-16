@@ -4,7 +4,7 @@ page_title: Spellcheck
 description: Spellcheck
 slug: radrichtextbox-features-spellcheck
 tags: spellcheck
-published: True
+publish: True
 position: 7
 ---
 

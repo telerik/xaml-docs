@@ -4,7 +4,7 @@ page_title: Clear Functionality
 description: Clear Functionality
 slug: radcalculator-clearfunctionality
 tags: clear,functionality
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Serialize XmlaDataProvider
 description: Serialize XmlaDataProvider
 slug: radpivotgrid-features-serialization-xmla
 tags: serialize,xmladataprovider
-published: True
+publish: True
 position: 3
 ---
 

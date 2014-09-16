@@ -4,7 +4,7 @@ page_title: In a Single Chart Area
 description: In a Single Chart Area
 slug: radchart-features-drill-down-in-a-single-chart-area
 tags: in,a,single,chart,area
-published: True
+publish: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the ButtonChrome
 description: Styling the ButtonChrome
 slug: radbuttons-styles-and-templates-styling-buttonchrome
 tags: styling,the,buttonchrome
-published: True
+publish: True
 position: 2
 ---
 

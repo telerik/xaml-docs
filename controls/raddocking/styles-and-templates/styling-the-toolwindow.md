@@ -4,7 +4,7 @@ page_title: Styling the ToolWindow
 description: Styling the ToolWindow
 slug: raddocking-styling-the-toolwindow
 tags: styling,the,toolwindow
-published: True
+publish: True
 position: 10
 ---
 

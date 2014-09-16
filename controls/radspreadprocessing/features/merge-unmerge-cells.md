@@ -4,7 +4,7 @@ page_title: Merge and Unmerge Cells
 description: Merge and Unmerge Cells
 slug: radspreadprocessing-features-merge-unmerge-cells
 tags: merge,and,unmerge,cells
-published: True
+publish: True
 position: 8
 ---
 

@@ -4,7 +4,7 @@ page_title: Enable Only Drop Inside
 description: Enable Only Drop Inside
 slug: radtreeview-how-to-enabled-drop-inside-only
 tags: enable,only,drop,inside
-published: True
+publish: True
 position: 3
 ---
 

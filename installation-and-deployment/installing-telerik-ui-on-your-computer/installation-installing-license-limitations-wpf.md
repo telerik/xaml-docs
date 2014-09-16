@@ -4,7 +4,7 @@ page_title: Trial License Limitations
 description: Trial License Limitations
 slug: installation-installing-license-limitations-wpf
 tags: trial,license,limitations
-published: True
+publish: True
 position: 10
 site_name: WPF
 ---

@@ -4,7 +4,7 @@ page_title: TrackBall
 description: TrackBall
 slug: radchartview-features-trackball
 tags: trackball
-published: True
+publish: True
 position: 2
 ---
 

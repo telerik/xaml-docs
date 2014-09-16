@@ -4,7 +4,7 @@ page_title: Rotation
 description: Rotation
 slug: raddiagrams-features-rotation
 tags: rotation
-published: True
+publish: True
 position: 0
 ---
 

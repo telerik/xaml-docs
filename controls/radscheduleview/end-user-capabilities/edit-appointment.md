@@ -4,7 +4,7 @@ page_title: Edit Appointment
 description: Edit Appointment
 slug: radscheduleview-end-user-capabilities-edit-appointment
 tags: edit,appointment
-published: True
+publish: True
 position: 2
 ---
 

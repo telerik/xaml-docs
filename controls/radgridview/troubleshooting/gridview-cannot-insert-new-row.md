@@ -4,7 +4,7 @@ page_title: Cannot insert new row
 description: Cannot insert new row
 slug: gridview-troubleshooting-cannot-insert-new-row
 tags: cannot,insert,new,row
-published: True
+publish: True
 position: 12
 ---
 

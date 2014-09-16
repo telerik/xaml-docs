@@ -4,7 +4,7 @@ page_title: Working with UI Selection
 description: Working with UI Selection
 slug: radspreadsheet-ui-working-with-selection
 tags: working,with,ui,selection
-published: True
+publish: True
 position: 2
 ---
 

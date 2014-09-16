@@ -4,7 +4,7 @@ page_title: Save and Load Filter Settings
 description: Save and Load Filter Settings
 slug: gridview-filtering-howto-save-and-load-filter-settings
 tags: save,and,load,filter,settings
-published: True
+publish: True
 position: 18
 ---
 

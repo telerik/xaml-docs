@@ -4,7 +4,7 @@ page_title: Configure the RadTabControl when Bound to a Collection of Visual Ele
 description: Configure the RadTabControl when Bound to a Collection of Visual Elements
 slug: radtabcontrol-how-to-allow-visual-elements
 tags: configure,the,radtabcontrol,when,bound,to,a,collection,of,visual,elements
-published: True
+publish: True
 position: 15
 ---
 

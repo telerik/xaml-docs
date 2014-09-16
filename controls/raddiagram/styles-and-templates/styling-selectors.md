@@ -4,7 +4,7 @@ page_title: Styling and Style Selectors
 description: Styling and Style Selectors
 slug: raddiagram-styling-selectors
 tags: styling,and,style,selectors
-published: True
+publish: True
 position: 2
 ---
 

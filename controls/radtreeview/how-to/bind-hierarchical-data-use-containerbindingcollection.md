@@ -4,7 +4,7 @@ page_title: Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollec
 description: Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection
 slug: radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection
 tags: bind,radtreeview,to,hierarchical,data,and,use,containerbindingcollection
-published: False
+publish: False
 position: 17
 site_name: Silverlight
 ---

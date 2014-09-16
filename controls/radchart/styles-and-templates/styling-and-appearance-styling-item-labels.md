@@ -4,7 +4,7 @@ page_title: Styling the Item Labels
 description: Styling the Item Labels
 slug: radchart-styling-and-appearance-styling-item-labels
 tags: styling,the,item,labels
-published: True
+publish: True
 position: 10
 ---
 

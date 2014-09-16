@@ -4,7 +4,7 @@ page_title: Migration from RadScheduler
 description: Migration from RadScheduler
 slug: radscheduleview-migration-from-radscheduler
 tags: migration,from,radscheduler
-published: True
+publish: True
 position: 3
 ---
 

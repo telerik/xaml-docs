@@ -4,7 +4,7 @@ page_title: Using Static Items
 description: Using Static Items
 slug: radcontextmenu-populating-with-data-using-static-items
 tags: using,static,items
-published: True
+publish: True
 position: 2
 ---
 

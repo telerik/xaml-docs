@@ -4,7 +4,7 @@ page_title: Styling the Ribbon GroupChrome
 description: Styling the Ribbon GroupChrome
 slug: radribbonview-styling-groupchrome
 tags: styling,the,ribbon,groupchrome
-published: True
+publish: True
 position: 11
 ---
 

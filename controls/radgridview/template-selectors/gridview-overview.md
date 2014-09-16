@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: gridview-template-selectors-overview
 tags: overview
-published: True
+publish: True
 position: 0
 ---
 

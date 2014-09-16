@@ -4,7 +4,7 @@ page_title: UI Virtualization
 description: UI Virtualization
 slug: virtualization
 tags: ui,virtualization
-published: True
+publish: True
 position: 5
 ---
 

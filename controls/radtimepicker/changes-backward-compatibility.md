@@ -4,7 +4,7 @@ page_title: Changes and Backward compatibility
 description: Changes and Backward compatibility
 slug: radtimepicker-changes-backward-compatibility
 tags: changes,and,backward,compatibility
-published: False
+publish: False
 position: 1
 ---
 

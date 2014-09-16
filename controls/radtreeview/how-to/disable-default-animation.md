@@ -4,7 +4,7 @@ page_title: Disable Default Animation in RadTreeView
 description: Disable Default Animation in RadTreeView
 slug: radtreeview-how-to-disable-default-animation
 tags: disable,default,animation,in,radtreeview
-published: True
+publish: True
 position: 14
 ---
 

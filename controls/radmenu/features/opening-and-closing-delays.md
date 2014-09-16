@@ -4,7 +4,7 @@ page_title: Opening and Closing Delays
 description: Opening and Closing Delays
 slug: radmenu-features-opening-and-closing-delays
 tags: opening,and,closing,delays
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Implementing View-ViewModel
 description: Implementing View-ViewModel
 slug: radganttview-populating-with-data-viewmodel
 tags: implementing,view-viewmodel
-published: True
+publish: True
 position: 1
 ---
 

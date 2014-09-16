@@ -4,7 +4,7 @@ page_title: Scroll Item into View
 description: Scroll Item into View
 slug: radtreelistview-how-to-scrollintoview
 tags: scroll,item,into,view
-published: True
+publish: True
 position: 3
 ---
 

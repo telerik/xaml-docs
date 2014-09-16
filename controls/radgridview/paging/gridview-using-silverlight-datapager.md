@@ -4,7 +4,7 @@ page_title: Using Silverlight DataPager
 description: Using Silverlight DataPager
 slug: gridview-paging-using-silverlight-datapager
 tags: using,silverlight,datapager
-published: True
+publish: True
 position: 1
 site_name: Silverlight
 ---

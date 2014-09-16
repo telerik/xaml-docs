@@ -4,7 +4,7 @@ page_title: List Styles
 description: List Styles
 slug: radrichtextbox-features-list-styles
 tags: list,styles
-published: True
+publish: True
 position: 1
 ---
 

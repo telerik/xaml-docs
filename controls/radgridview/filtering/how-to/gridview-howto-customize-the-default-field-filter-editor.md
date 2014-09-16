@@ -4,7 +4,7 @@ page_title: Customize the Default Field Filter Editor
 description: Customize the Default Field Filter Editor
 slug: gridview-filtering-howto-customize-the-default-field-filter-editor
 tags: customize,the,default,field,filter,editor
-published: True
+publish: True
 position: 9
 ---
 

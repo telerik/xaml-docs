@@ -4,7 +4,7 @@ page_title: Styling the Column Headers
 description: Styling the Column Headers
 slug: gridview-styling-column-headers
 tags: styling,the,column,headers
-published: True
+publish: True
 position: 6
 ---
 

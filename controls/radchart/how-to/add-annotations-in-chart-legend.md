@@ -4,7 +4,7 @@ page_title: Add Annotations in Chart Legend
 description: Add Annotations in Chart Legend
 slug: radchart-how-to-add-annotations-in-chart-legend
 tags: add,annotations,in,chart,legend
-published: True
+publish: True
 position: 9
 ---
 

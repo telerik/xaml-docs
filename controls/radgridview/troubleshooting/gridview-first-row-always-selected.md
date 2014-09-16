@@ -4,7 +4,7 @@ page_title: First Row is Always Selected
 description: First Row is Always Selected
 slug: gridview-troubleshooting-first-row-always-selected
 tags: first,row,is,always,selected
-published: True
+publish: True
 position: 6
 ---
 

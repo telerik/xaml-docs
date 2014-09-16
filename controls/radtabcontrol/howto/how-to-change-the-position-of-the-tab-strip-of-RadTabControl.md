@@ -4,7 +4,7 @@ page_title: How to Change the Position of the Tab Strip of RadTabControl
 description: How to Change the Position of the Tab Strip of RadTabControl
 slug: radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol
 tags: how,to,change,the,position,of,the,tab,strip,of,radtabcontrol
-published: True
+publish: True
 position: 6
 ---
 

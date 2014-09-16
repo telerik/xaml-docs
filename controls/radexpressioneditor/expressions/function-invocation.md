@@ -4,7 +4,7 @@ page_title: Function Invocation
 description: Function Invocation
 slug: radexpressioneditor-expressions-function-invocation
 tags: function,invocation
-published: True
+publish: True
 position: 2
 ---
 

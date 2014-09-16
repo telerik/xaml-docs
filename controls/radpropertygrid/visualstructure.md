@@ -4,7 +4,7 @@ page_title: VisualStructure
 description: VisualStructure
 slug: radpropertygrid-visualstructure
 tags: visualstructure
-published: True
+publish: True
 position: 1
 ---
 

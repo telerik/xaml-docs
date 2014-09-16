@@ -4,7 +4,7 @@ page_title: Custom Busy Content
 description: Custom Busy Content
 slug: radbusyindicator-features-custom-busy-content
 tags: custom,busy,content
-published: True
+publish: True
 position: 3
 ---
 

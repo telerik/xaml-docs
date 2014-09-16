@@ -4,7 +4,7 @@ page_title: Create Multicolumn Menu
 description: Create Multicolumn Menu
 slug: radmenu-how-to-create-multicolumn-menu
 tags: create,multicolumn,menu
-published: True
+publish: True
 position: 0
 ---
 

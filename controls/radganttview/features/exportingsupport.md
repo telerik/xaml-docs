@@ -4,7 +4,7 @@ page_title: Exporting Support
 description: Exporting Support
 slug: radganttview-exportingsupport
 tags: exporting,support
-published: True
+publish: True
 position: 6
 ---
 

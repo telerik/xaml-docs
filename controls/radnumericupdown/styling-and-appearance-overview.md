@@ -4,7 +4,7 @@ page_title: Styling and appearance
 description: Styling and appearance
 slug: radnumericupdown-styling-and-appearance-overview
 tags: styling,and,appearance
-published: True
+publish: True
 position: 3
 ---
 

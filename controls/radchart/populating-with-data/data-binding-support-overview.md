@@ -4,7 +4,7 @@ page_title: Data Binding Support Overview
 description: Data Binding Support Overview
 slug: radchart-populating-with-data-data-binding-support-overview
 tags: data,binding,support,overview
-published: True
+publish: True
 position: 4
 ---
 

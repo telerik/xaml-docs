@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: radspreadprocessing-changes
 tags: changes
-published: True
+publish: True
 position: 0
 ---
 

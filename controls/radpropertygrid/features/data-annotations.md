@@ -4,7 +4,7 @@ page_title: Data Annotations
 description: Data Annotations
 slug: radpropertygrid-data-annotations
 tags: data,annotations
-published: True
+publish: True
 position: 8
 ---
 

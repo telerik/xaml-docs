@@ -4,7 +4,7 @@ page_title: Custom Hierarchies
 description: Custom Hierarchies
 slug: gridview-custom-hierarchies
 tags: custom,hierarchies
-published: True
+publish: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Ribbon RadioButton
 description: Ribbon RadioButton
 slug: radribbonview-radio-button
 tags: ribbon,radiobutton
-published: True
+publish: True
 position: 3
 ---
 

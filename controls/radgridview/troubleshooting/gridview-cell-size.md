@@ -4,7 +4,7 @@ page_title: Containers' Size is Increased
 description: Containers' Size is Increased
 slug: gridview-troubleshooting-cell-size
 tags: containers',size,is,increased
-published: True
+publish: True
 position: 14
 ---
 

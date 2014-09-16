@@ -4,7 +4,7 @@ page_title: Templating Headers and Cells
 description: Templating Headers and Cells
 slug: radpivotgrid-styles-and-templates-templating-cells
 tags: templating,headers,and,cells
-published: True
+publish: True
 position: 0
 ---
 

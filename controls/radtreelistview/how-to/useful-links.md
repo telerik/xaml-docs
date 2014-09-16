@@ -4,7 +4,7 @@ page_title: Useful Links
 description: Useful Links
 slug: radtreelistview-how-to-useful-links
 tags: useful,links
-published: True
+publish: True
 position: 2
 ---
 

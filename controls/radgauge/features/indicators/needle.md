@@ -4,7 +4,7 @@ page_title: Needle
 description: Needle
 slug: radgauge-features-indicators-needle
 tags: needle
-published: True
+publish: True
 position: 2
 ---
 

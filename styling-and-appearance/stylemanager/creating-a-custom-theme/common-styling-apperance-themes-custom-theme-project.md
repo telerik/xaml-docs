@@ -4,7 +4,7 @@ page_title: Creating a Custom Theme Project
 description: Creating a Custom Theme Project
 slug: common-styling-apperance-themes-custom-theme-project
 tags: creating,a,custom,theme,project
-published: True
+publish: True
 position: 1
 site_name: Silverlight
 ---

@@ -4,7 +4,7 @@ page_title: Select Map Shapes
 description: Select Map Shapes
 slug: radmap-howto-select-map-shapes
 tags: select,map,shapes
-published: True
+publish: True
 position: 8
 ---
 

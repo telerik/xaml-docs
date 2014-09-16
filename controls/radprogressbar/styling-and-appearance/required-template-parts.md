@@ -4,7 +4,7 @@ page_title: Required Parts
 description: Required Parts
 slug: radprogressbar-required-template-parts
 tags: required,parts
-published: True
+publish: True
 position: 1
 ---
 

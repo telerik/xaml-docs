@@ -4,7 +4,7 @@ page_title: Group Filtering
 description: Group Filtering
 slug: radpivotgrid-features-filtering
 tags: group,filtering
-published: True
+publish: True
 position: 1
 ---
 

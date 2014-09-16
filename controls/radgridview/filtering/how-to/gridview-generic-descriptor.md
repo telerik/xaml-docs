@@ -4,7 +4,7 @@ page_title: Use generic FilterDescriptor
 description: Use generic FilterDescriptor
 slug: gridview-filtering-generic-descriptor
 tags: use,generic,filterdescriptor
-published: True
+publish: True
 position: 23
 ---
 

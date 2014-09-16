@@ -4,7 +4,7 @@ page_title: Pan and Zoom
 description: Pan and Zoom
 slug: raddiagrams-features-pan-zoom
 tags: pan,and,zoom
-published: True
+publish: True
 position: 1
 ---
 

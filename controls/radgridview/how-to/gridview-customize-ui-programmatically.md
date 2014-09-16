@@ -4,7 +4,7 @@ page_title: Customize the UI programmatically
 description: Customize the UI programmatically
 slug: gridview-how-to-customize-ui-programmatically
 tags: customize,the,ui,programmatically
-published: True
+publish: True
 position: 8
 ---
 

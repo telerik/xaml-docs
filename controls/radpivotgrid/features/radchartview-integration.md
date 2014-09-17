@@ -4,7 +4,7 @@ page_title: ChartView Integration
 description: ChartView Integration
 slug: radpivotgrid-features-radchartview-integration
 tags: chartview,integration
-publish: True
+published: True
 position: 6
 ---
 

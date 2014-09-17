@@ -4,7 +4,7 @@ page_title: Resize Map Shapes With Mouse Dragging
 description: Resize Map Shapes With Mouse Dragging
 slug: radmap-howto-resize-map-shapes-with-mouse-dragging
 tags: resize,map,shapes,with,mouse,dragging
-publish: True
+published: True
 position: 7
 ---
 

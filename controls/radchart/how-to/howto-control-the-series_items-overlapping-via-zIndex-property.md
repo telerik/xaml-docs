@@ -4,7 +4,7 @@ page_title: Control the Series Items overlapping via ZIndex property
 description: Control the Series Items overlapping via ZIndex property
 slug: radchart-howto-control-the-series_items-overlapping-via-zindex-property
 tags: control,the,series,items,overlapping,via,zindex,property
-publish: True
+published: True
 position: 8
 ---
 

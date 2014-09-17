@@ -4,7 +4,7 @@ page_title: Styling the ApplicationButton
 description: Styling the ApplicationButton
 slug: radribbonview-styling-applicationbutton
 tags: styling,the,applicationbutton
-publish: True
+published: True
 position: 4
 ---
 

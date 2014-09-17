@@ -4,7 +4,7 @@ page_title: Navigation
 description: Navigation
 slug: radmap-features-navigation
 tags: navigation
-publish: True
+published: True
 position: 2
 ---
 

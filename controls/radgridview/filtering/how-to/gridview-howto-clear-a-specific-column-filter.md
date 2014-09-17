@@ -4,7 +4,7 @@ page_title: Clear a Specific Column Filter
 description: Clear a Specific Column Filter
 slug: gridview-filtering-howto-clear-a-specific-column-filter
 tags: clear,a,specific,column,filter
-publish: True
+published: True
 position: 7
 ---
 

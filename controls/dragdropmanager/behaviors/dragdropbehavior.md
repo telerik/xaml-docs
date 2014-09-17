@@ -4,7 +4,7 @@ page_title: DragDropBehavior
 description: DragDropBehavior
 slug: dragdropmanager-behaviors-dragdropbehavior
 tags: dragdropbehavior
-publish: True
+published: True
 position: 0
 ---
 

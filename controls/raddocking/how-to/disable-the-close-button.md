@@ -4,7 +4,7 @@ page_title: How to Disable the Close Button
 description: How to Disable the Close Button
 slug: raddocking-how-to-disable-the-close-button
 tags: how,to,disable,the,close,button
-publish: True
+published: True
 position: 2
 ---
 

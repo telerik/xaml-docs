@@ -4,7 +4,7 @@ page_title: Custom Document Presenter
 description: Custom Document Presenter
 slug: radpdfviewer-customization-and-extensibility-custom-document-presenter
 tags: custom,document,presenter
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Page DomainDataSource
 description: Page DomainDataSource
 slug: raddatapager-how-to-page-domaindatasource
 tags: page,domaindatasource
-publish: True
+published: True
 position: 0
 site_name: Silverlight
 ---

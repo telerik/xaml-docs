@@ -4,7 +4,7 @@ page_title: Quick Access Toolbar
 description: Quick Access Toolbar
 slug: radribbonview-qat
 tags: quick,access,toolbar
-publish: True
+published: True
 position: 3
 ---
 

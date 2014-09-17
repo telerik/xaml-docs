@@ -4,7 +4,7 @@ page_title: Customizing PolarChart Series
 description: Customizing PolarChart Series
 slug: radchartview-styles-and-templates-customizing-polarchart-series
 tags: customizing,polarchart,series
-publish: True
+published: True
 position: 1
 ---
 

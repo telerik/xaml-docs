@@ -4,7 +4,7 @@ page_title: View and ViewModel
 description: View and ViewModel
 slug: radscheduleview-populating-with-data-binding-to-db-viewmodel-wpf
 tags: view,and,viewmodel
-publish: True
+published: True
 position: 8
 site_name: WPF
 ---

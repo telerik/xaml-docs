@@ -4,7 +4,7 @@ page_title: Styling DataFormDataField
 description: Styling DataFormDataField
 slug: raddataform-styles-and-templates-styling-dataformdatafield
 tags: styling,dataformdatafield
-publish: True
+published: True
 position: 4
 ---
 

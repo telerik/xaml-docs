@@ -4,7 +4,7 @@ page_title: Move to point
 description: Move to point
 slug: radslider-move-to-point
 tags: move,to,point
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the No Data Control
 description: Styling the No Data Control
 slug: radchart-styling-and-appearance-styling-no-data-control
 tags: styling,the,no,data,control
-publish: True
+published: True
 position: 9
 ---
 

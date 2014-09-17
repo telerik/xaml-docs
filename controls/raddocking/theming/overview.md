@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: raddocking-theming-overview
 tags: overview
-publish: True
+published: True
 position: 0
 ---
 

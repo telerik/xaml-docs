@@ -4,7 +4,7 @@ page_title: Events
 description: Events
 slug: radtimebar-events
 tags: events
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Customizing the CellHighlightTemplate
 description: Customizing the CellHighlightTemplate
 slug: radganttview-features-columns-highlight-template
 tags: customizing,the,cellhighlighttemplate
-publish: True
+published: True
 position: 3
 ---
 

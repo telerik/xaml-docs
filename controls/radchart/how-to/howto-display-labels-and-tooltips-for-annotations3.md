@@ -4,7 +4,7 @@ page_title: Display Labels And Tooltips For Annotations
 description: Display Labels And Tooltips For Annotations
 slug: radchart-howto-display-labels-and-tooltips-for-annotations3
 tags: display,labels,and,tooltips,for,annotations
-publish: True
+published: True
 position: 10
 ---
 

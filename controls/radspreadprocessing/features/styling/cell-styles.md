@@ -4,7 +4,7 @@ page_title: Cell Styles
 description: Cell Styles
 slug: radspreadprocessing-features-styling-cell-styles
 tags: cell,styles
-publish: True
+published: True
 position: 0
 ---
 

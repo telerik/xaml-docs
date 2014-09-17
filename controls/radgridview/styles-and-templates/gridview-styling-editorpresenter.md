@@ -4,7 +4,7 @@ page_title: Styling the GridViewEditorPresenter
 description: Styling the GridViewEditorPresenter
 slug: gridview-styling-editorpresenter
 tags: styling,the,gridvieweditorpresenter
-publish: True
+published: True
 position: 5
 ---
 

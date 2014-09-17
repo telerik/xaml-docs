@@ -4,7 +4,7 @@ page_title: Editing the CalendarButton Style
 description: Editing the CalendarButton Style
 slug: radcalendar-editing-button
 tags: editing,the,calendarbutton,style
-publish: True
+published: True
 position: 1
 ---
 

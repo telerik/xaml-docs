@@ -4,7 +4,7 @@ page_title: Expand and Collapse
 description: Expand and Collapse
 slug: radganttview-features-items-expand-collapse
 tags: expand,and,collapse
-publish: True
+published: True
 position: 6
 ---
 

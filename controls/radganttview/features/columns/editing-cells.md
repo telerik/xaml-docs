@@ -4,7 +4,7 @@ page_title: Customizing the CellEditTemplate
 description: Customizing the CellEditTemplate
 slug: radganttview-features-columns-editing-cells
 tags: customizing,the,celledittemplate
-publish: True
+published: True
 position: 2
 ---
 

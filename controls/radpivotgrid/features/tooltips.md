@@ -4,7 +4,7 @@ page_title: ToolTips
 description: ToolTips
 slug: radpivotgrid-features-tooltips
 tags: tooltips
-publish: True
+published: True
 position: 1
 ---
 

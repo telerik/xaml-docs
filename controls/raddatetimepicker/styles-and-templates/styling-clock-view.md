@@ -4,7 +4,7 @@ page_title: Styling the Clock
 description: Styling the Clock
 slug: raddatetimepicker-styling-clock-view
 tags: styling,the,clock
-publish: True
+published: True
 position: 4
 ---
 

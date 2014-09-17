@@ -4,7 +4,7 @@ page_title: Paragraph
 description: Paragraph
 slug: radrichtextbox-features-document-elements-paragraph
 tags: paragraph
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Image Export
 description: Image Export
 slug: raddiagram-features-image-export
 tags: image,export
-publish: True
+published: True
 position: 11
 ---
 

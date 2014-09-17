@@ -4,7 +4,7 @@ page_title: Controlling Appearance
 description: Controlling Appearance
 slug: raddocking-styling-controlling-appearance
 tags: controlling,appearance
-publish: True
+published: True
 position: 2
 ---
 

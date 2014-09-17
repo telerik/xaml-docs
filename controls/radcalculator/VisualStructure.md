@@ -4,7 +4,7 @@ page_title: Visual Structure
 description: Visual Structure
 slug: radcalculator-visualstructure
 tags: visual,structure
-publish: True
+published: True
 position: 2
 ---
 

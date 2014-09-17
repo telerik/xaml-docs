@@ -4,7 +4,7 @@ page_title: XML Binding
 description: XML Binding
 slug: radcalendar-xml-binding
 tags: xml,binding
-publish: True
+published: True
 position: 3
 ---
 

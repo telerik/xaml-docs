@@ -4,7 +4,7 @@ page_title: Separator
 description: Separator
 slug: radribbonview-separator
 tags: separator
-publish: True
+published: True
 position: 8
 ---
 

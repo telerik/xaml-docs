@@ -4,7 +4,7 @@ page_title: Template and Style Selectors
 description: Template and Style Selectors
 slug: radcontextmenu-populating-with-data-template-and-style-selectors
 tags: template,and,style,selectors
-publish: True
+published: True
 position: 4
 ---
 

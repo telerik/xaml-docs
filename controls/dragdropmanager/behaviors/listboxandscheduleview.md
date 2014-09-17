@@ -4,7 +4,7 @@ page_title: Drag-drop between ListBox and ScheduleView
 description: Drag-drop between ListBox and ScheduleView
 slug: dragdropmanager-behaviors-listboxandscheduleview
 tags: drag-drop,between,listbox,and,scheduleview
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Global Styles
 description: Global Styles
 slug: carousel-global-styles
 tags: global,styles
-publish: True
+published: True
 position: 0
 ---
 

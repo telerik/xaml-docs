@@ -4,7 +4,7 @@ page_title: Data Annotations
 description: Data Annotations
 slug: radpivotgrid-data-annotations
 tags: data,annotations
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Export Custom Header
 description: Export Custom Header
 slug: gridview-export-troubleshooting-export-header
 tags: export,custom,header
-publish: True
+published: True
 position: 1
 ---
 

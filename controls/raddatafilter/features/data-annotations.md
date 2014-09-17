@@ -4,7 +4,7 @@ page_title: Data Annotations
 description: Data Annotations
 slug: raddatafilter-features-data-annotations
 tags: data,annotations
-publish: True
+published: True
 position: 0
 ---
 

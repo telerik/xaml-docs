@@ -4,7 +4,7 @@ page_title: Update the Resources
 description: Update the Resources
 slug: radscheduleview-howto-update-resources
 tags: update,the,resources
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Align and Snap
 description: Align and Snap 
 slug: raddiagrams-features-snap
 tags: align,and,snap,
-publish: True
+published: True
 position: 3
 ---
 

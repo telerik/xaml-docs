@@ -4,7 +4,7 @@ page_title: Binding to Object
 description: Binding to Object
 slug: radtreeview-populating-with-data-data-binding-to-object
 tags: binding,to,object
-publish: True
+published: True
 position: 5
 ---
 

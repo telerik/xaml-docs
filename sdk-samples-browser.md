@@ -4,7 +4,7 @@ page_title: SDK Samples Browser
 description: SDK Samples Browser 
 slug: sdk-samples-browser
 tags: sdk,samples,browser,
-publish: True
+published: True
 position: 14
 ---
 

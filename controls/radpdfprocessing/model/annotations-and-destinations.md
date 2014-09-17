@@ -4,7 +4,7 @@ page_title: Annotations and Destinations
 description: Annotations and Destinations
 slug: radpdfprocessing-model-annotations-and-destinations
 tags: annotations,and,destinations
-publish: True
+published: True
 position: 5
 ---
 

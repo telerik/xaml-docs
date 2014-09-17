@@ -4,7 +4,7 @@ page_title: Degraded Performance
 description: Degraded Performance
 slug: gridview-troubleshooting-performance
 tags: degraded,performance
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Protect ZipArchive
 description: Protect ZipArchive
 slug: radziplibrary-protect-ziparchive
 tags: protect,ziparchive
-publish: True
+published: True
 position: 2
 ---
 

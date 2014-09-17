@@ -4,7 +4,7 @@ page_title: Fonts
 description: Fonts
 slug: radpdfprocessing-concepts-fonts
 tags: fonts
-publish: True
+published: True
 position: 3
 ---
 

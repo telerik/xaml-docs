@@ -4,7 +4,7 @@ page_title: General Known Issues
 description: General Known Issues
 slug: common-styles-appearance-troubleshooting-known-issues
 tags: general,known,issues
-publish: True
+published: True
 position: 1
 ---
 

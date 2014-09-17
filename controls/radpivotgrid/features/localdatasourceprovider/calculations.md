@@ -4,7 +4,7 @@ page_title: Calculations
 description: Calculations
 slug: radpivotgrid-features-calculations
 tags: calculations
-publish: True
+published: True
 position: 4
 ---
 

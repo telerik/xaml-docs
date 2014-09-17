@@ -4,7 +4,7 @@ page_title: How To Change the Fold Size
 description: How To Change the Fold Size
 slug: radbook-how-to-change-fold-size
 tags: how,to,change,the,fold,size
-publish: True
+published: True
 position: 1
 ---
 

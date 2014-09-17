@@ -4,7 +4,7 @@ page_title: Formatter Provider
 description: Formatter Provider
 slug: radtimeline-features-formatter-provider
 tags: formatter,provider
-publish: True
+published: True
 position: 9
 ---
 

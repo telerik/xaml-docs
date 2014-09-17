@@ -4,7 +4,7 @@ page_title: How to Edit An Item
 description: How to Edit An Item
 slug: radtreeview-feautres-treeviewitem-item-editing
 tags: how,to,edit,an,item
-publish: True
+published: True
 position: 1
 ---
 

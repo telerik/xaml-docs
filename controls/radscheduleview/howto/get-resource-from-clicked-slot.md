@@ -4,7 +4,7 @@ page_title: Get the Resource of the Clicked Slot/Appointment
 description: Get the Resource of the Clicked Slot/Appointment
 slug: radscheduleview-howto-get-resource-from-clicked-slot
 tags: get,the,resource,of,the,clicked,slot/appointment
-publish: True
+published: True
 position: 4
 ---
 

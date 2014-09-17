@@ -4,7 +4,7 @@ page_title: Names (Named Ranges)
 description: Names (Named Ranges)
 slug: radspreadprocessing-features-named-ranges
 tags: names,(named,ranges)
-publish: True
+published: True
 position: 9
 ---
 

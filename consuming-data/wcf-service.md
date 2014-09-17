@@ -4,7 +4,7 @@ page_title: Consuming WCF Service
 description: Consuming WCF Service
 slug: consuming-data-wcf-service
 tags: consuming,wcf,service
-publish: True
+published: True
 position: 1
 ---
 

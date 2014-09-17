@@ -4,7 +4,7 @@ page_title: Filtering
 description: Filtering
 slug: radtreelistview-features-filtering
 tags: filtering
-publish: True
+published: True
 position: 7
 ---
 

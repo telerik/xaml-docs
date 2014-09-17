@@ -4,7 +4,7 @@ page_title: Defining Custom DataFields
 description: Defining Custom DataFields
 slug: raddataform-defining-custom-datafields
 tags: defining,custom,datafields
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Have mixed CLR and DLR properties
 description: Have mixed CLR and DLR properties
 slug: gridview-how-to-use-mixed-clr-dlr-properties
 tags: have,mixed,clr,and,dlr,properties
-publish: True
+published: True
 position: 12
 ---
 

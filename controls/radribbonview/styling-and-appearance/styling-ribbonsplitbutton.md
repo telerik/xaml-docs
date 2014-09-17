@@ -4,7 +4,7 @@ page_title: Styling the RadRibbonSplitButton
 description: Styling the RadRibbonSplitButton
 slug: radribbonview-styling-ribbonsplitbutton
 tags: styling,the,radribbonsplitbutton
-publish: True
+published: True
 position: 16
 ---
 

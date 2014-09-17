@@ -4,7 +4,7 @@ page_title: Plain text
 description: Plain text
 slug: radwordsprocessing-formats-and-conversion-txt
 tags: plain,text
-publish: True
+published: True
 position: 3
 ---
 

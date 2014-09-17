@@ -4,7 +4,7 @@ page_title: NoData Control
 description: NoData Control
 slug: radchart-features-no-data-control
 tags: nodata,control
-publish: True
+published: True
 position: 16
 ---
 

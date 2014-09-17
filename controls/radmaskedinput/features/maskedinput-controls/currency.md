@@ -4,7 +4,7 @@ page_title: MaskedCurrencyInput
 description: MaskedCurrencyInput
 slug: radmaskedinput-features-controls-currency
 tags: maskedcurrencyinput
-publish: True
+published: True
 position: 1
 ---
 

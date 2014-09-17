@@ -4,7 +4,7 @@ page_title: Integration with Content Controls
 description: Integration with Content Controls
 slug: radtransition-features-integration-with-content-controls
 tags: integration,with,content,controls
-publish: True
+published: True
 position: 4
 ---
 

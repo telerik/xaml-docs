@@ -4,7 +4,7 @@ page_title: Hierarchical Data Templates
 description: Hierarchical Data Templates
 slug: radtreeview-features-hierarchical-data-templates
 tags: hierarchical,data,templates
-publish: True
+published: True
 position: 3
 ---
 

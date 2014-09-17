@@ -4,7 +4,7 @@ page_title: Handling SelectionChanged event for the DataFormComboBoxField
 description: Handling SelectionChanged event for the DataFormComboBoxField
 slug: raddataform-howto-selectionchanged-comboboxfield
 tags: handling,selectionchanged,event,for,the,dataformcomboboxfield
-publish: True
+published: True
 position: 2
 ---
 

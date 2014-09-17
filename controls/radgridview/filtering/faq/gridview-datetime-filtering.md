@@ -4,7 +4,7 @@ page_title: Filtering column showing DateTime values
 description: Filtering column showing DateTime values
 slug: gridview-filtering-faq-datetime-filtering
 tags: filtering,column,showing,datetime,values
-publish: True
+published: True
 position: 3
 ---
 

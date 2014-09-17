@@ -4,7 +4,7 @@ page_title: Styling the RadDocumentPane
 description: Styling the RadDocumentPane
 slug: raddocking-styling-the-raddocumentpane
 tags: styling,the,raddocumentpane
-publish: True
+published: True
 position: 9
 ---
 

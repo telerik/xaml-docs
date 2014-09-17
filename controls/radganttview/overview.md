@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: radganttview-overview
 tags: overview
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Dynamic Creation
 description: Dynamic Creation
 slug: radtimepicker-radtimepicker-dynamic-creation
 tags: dynamic,creation
-publish: True
+published: True
 position: 1
 ---
 

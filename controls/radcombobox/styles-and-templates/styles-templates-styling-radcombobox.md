@@ -4,7 +4,7 @@ page_title: Styling RadComboBox
 description: Styling RadComboBox
 slug: radcombobox-styles-templates-styling-radcombobox
 tags: styling,radcombobox
-publish: False
+published: False
 position: 2
 ---
 

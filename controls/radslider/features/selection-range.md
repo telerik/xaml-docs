@@ -4,7 +4,7 @@ page_title: Selection Range
 description: Selection Range
 slug: radslider-selection-range
 tags: selection,range
-publish: True
+published: True
 position: 2
 ---
 

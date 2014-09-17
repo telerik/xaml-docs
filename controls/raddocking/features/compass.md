@@ -4,7 +4,7 @@ page_title: Compass
 description: Compass
 slug: raddocking-features-compass
 tags: compass
-publish: True
+published: True
 position: 4
 ---
 

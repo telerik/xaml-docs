@@ -4,7 +4,7 @@ page_title: Tips and Tricks
 description: Tips and Tricks
 slug: radgridview-performance-tips-tricks
 tags: tips,and,tricks
-publish: True
+published: True
 position: 1
 ---
 

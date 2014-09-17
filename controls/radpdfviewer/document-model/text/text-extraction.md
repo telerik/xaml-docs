@@ -4,7 +4,7 @@ page_title: Text Extraction
 description: Text Extraction
 slug: radpdfviewer-text-text-extraction
 tags: text,extraction
-publish: False
+published: False
 position: 3
 ---
 

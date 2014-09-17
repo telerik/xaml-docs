@@ -4,7 +4,7 @@ page_title: Custom GanttTask
 description: Custom GanttTask
 slug: radganttview-features-items-custom-gantttask
 tags: custom,gantttask
-publish: True
+published: True
 position: 4
 ---
 

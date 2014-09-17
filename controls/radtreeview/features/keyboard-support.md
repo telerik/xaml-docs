@@ -4,7 +4,7 @@ page_title: Keyboard Support
 description: Keyboard Support
 slug: radtreeview-features-keyboard-support
 tags: keyboard,support
-publish: True
+published: True
 position: 10
 ---
 

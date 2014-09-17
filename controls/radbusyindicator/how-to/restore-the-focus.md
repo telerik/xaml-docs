@@ -4,7 +4,7 @@ page_title: Restore the focus
 description: Restore the focus
 slug: radbusyindicator-how-to-restore-the-focus
 tags: restore,the,focus
-publish: True
+published: True
 position: 1
 ---
 

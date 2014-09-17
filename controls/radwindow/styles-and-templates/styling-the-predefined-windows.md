@@ -4,7 +4,7 @@ page_title: Styling the Predefined Windows
 description: Styling the Predefined Windows
 slug: radwindow-styles-and-templates-styling-the-predefined-windows
 tags: styling,the,predefined,windows
-publish: True
+published: True
 position: 3
 ---
 

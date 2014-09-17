@@ -4,7 +4,7 @@ page_title: Structure
 description: Structure
 slug: radnumericupdown-structure
 tags: structure
-publish: True
+published: True
 position: 1
 ---
 

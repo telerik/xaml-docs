@@ -4,7 +4,7 @@ page_title: BlackoutDates
 description: BlackoutDates
 slug: raddatetimepicker-features-blackoutdates
 tags: blackoutdates
-publish: True
+published: True
 position: 9
 ---
 

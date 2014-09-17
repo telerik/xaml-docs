@@ -4,7 +4,7 @@ page_title: Input Modes
 description: Input Modes
 slug: raddatetimepicker-features-input-modes
 tags: input,modes
-publish: True
+published: True
 position: 0
 ---
 

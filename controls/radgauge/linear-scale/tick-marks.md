@@ -4,7 +4,7 @@ page_title: Tick Marks
 description: Tick Marks
 slug: linear-scale-tick-marks
 tags: tick,marks
-publish: True
+published: True
 position: 1
 ---
 

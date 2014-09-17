@@ -4,7 +4,7 @@ page_title: Styling the Chart Legend
 description: Styling the Chart Legend
 slug: radchart-styling-and-appearance-styling-chart-legend
 tags: styling,the,chart,legend
-publish: True
+published: True
 position: 7
 ---
 

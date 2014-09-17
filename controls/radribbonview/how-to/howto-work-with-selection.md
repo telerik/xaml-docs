@@ -4,7 +4,7 @@ page_title: Work With Selection
 description: Work With Selection
 slug: radribbonview-howto-work-with-selection
 tags: work,with,selection
-publish: True
+published: True
 position: 4
 ---
 

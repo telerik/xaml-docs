@@ -4,7 +4,7 @@ page_title: ScatterSplineAreaSeries
 description: ScatterSplineAreaSeries
 slug: radchartview-series-scattersplineareaseries
 tags: scattersplineareaseries
-publish: True
+published: True
 position: 4
 ---
 

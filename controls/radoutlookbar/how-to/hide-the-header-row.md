@@ -4,7 +4,7 @@ page_title: How to Hide the Header Row
 description: How to Hide the Header Row
 slug: radoutlookbar-how-to-hide-the-header-row
 tags: how,to,hide,the,header,row
-publish: True
+published: True
 position: 0
 ---
 

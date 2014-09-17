@@ -4,7 +4,7 @@ page_title: Wrap the text in the column header
 description: Wrap the text in the column header
 slug: gridview-howto-wrap-text-column-header
 tags: wrap,the,text,in,the,column,header
-publish: True
+published: True
 position: 4
 ---
 

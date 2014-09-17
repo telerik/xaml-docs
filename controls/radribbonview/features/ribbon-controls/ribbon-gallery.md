@@ -4,7 +4,7 @@ page_title: Ribbon Gallery
 description: Ribbon Gallery
 slug: radribbonview-ribbon-gallery
 tags: ribbon,gallery
-publish: True
+published: True
 position: 6
 ---
 

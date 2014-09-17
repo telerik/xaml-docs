@@ -4,7 +4,7 @@ page_title: FieldCharacter
 description: FieldCharacter
 slug: radwordsprocessing-model-fieldcharacter
 tags: fieldcharacter
-publish: True
+published: True
 position: 10
 ---
 

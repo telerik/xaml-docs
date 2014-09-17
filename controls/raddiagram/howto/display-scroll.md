@@ -4,7 +4,7 @@ page_title: Display ScrollViewer Inside the Diagram
 description: Display ScrollViewer Inside the Diagram
 slug: raddiagram-howto-display-scroll
 tags: display,scrollviewer,inside,the,diagram
-publish: True
+published: True
 position: 2
 ---
 

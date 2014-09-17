@@ -4,7 +4,7 @@ page_title: Styling the TimeRulerItems
 description: Styling the TimeRulerItems
 slug: radscheduleview-styles-and-templates-styling-timeruleritems
 tags: styling,the,timeruleritems
-publish: True
+published: True
 position: 2
 ---
 

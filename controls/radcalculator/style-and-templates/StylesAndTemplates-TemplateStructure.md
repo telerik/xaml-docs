@@ -4,7 +4,7 @@ page_title: RadCalculator Template Structure
 description: RadCalculator Template Structure
 slug: radcalculator-stylesandtemplates-templatestructure
 tags: radcalculator,template,structure
-publish: True
+published: True
 position: 1
 ---
 

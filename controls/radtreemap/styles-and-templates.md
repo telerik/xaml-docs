@@ -4,7 +4,7 @@ page_title: Styles and Templates
 description: Styles and Templates
 slug: radtreemap-styles-and-templates
 tags: styles,and,templates
-publish: True
+published: True
 position: 2
 ---
 

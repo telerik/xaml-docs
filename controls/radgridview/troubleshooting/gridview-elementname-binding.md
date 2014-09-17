@@ -4,7 +4,7 @@ page_title: ElementName binding in column Header or CellTemplate
 description: ElementName binding in column Header or CellTemplate
 slug: gridview-troubleshooting-elementname-binding
 tags: elementname,binding,in,column,header,or,celltemplate
-publish: True
+published: True
 position: 10
 site_name: Silverlight
 ---

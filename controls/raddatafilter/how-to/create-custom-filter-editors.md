@@ -4,7 +4,7 @@ page_title: Create Custom Filter Editors
 description: Create Custom Filter Editors
 slug: raddatafilter-how-to-create-custom-filter-editors
 tags: create,custom,filter,editors
-publish: True
+published: True
 position: 1
 ---
 

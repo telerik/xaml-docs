@@ -4,7 +4,7 @@ page_title: Special Slots
 description: Special Slots
 slug: radtimeline-features-special-slots
 tags: special,slots
-publish: True
+published: True
 position: 10
 ---
 

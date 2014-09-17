@@ -4,7 +4,7 @@ page_title: DataBinding
 description: DataBinding
 slug: radsparkline_databinding
 tags: databinding
-publish: True
+published: True
 position: 3
 ---
 

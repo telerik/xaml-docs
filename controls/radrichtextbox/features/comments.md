@@ -4,7 +4,7 @@ page_title: Comments
 description: Comments
 slug: radrichtextbox-features-comments
 tags: comments
-publish: True
+published: True
 position: 11
 ---
 

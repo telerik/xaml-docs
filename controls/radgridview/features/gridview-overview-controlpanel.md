@@ -4,7 +4,7 @@ page_title: Control Panel
 description: Control Panel
 slug: gridview-overview-controlpanel
 tags: control,panel
-publish: True
+published: True
 position: 14
 ---
 

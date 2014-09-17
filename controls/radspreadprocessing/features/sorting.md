@@ -4,7 +4,7 @@ page_title: Sorting
 description: Sorting
 slug: radspreadprocessing-features-sorting
 tags: sorting
-publish: True
+published: True
 position: 14
 ---
 

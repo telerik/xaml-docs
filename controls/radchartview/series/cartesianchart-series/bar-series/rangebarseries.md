@@ -4,7 +4,7 @@ page_title: RangeBarSeries
 description: RangeBarSeries
 slug: radchartview-series-rangebarseries
 tags: rangebarseries
-publish: True
+published: True
 position: 1
 ---
 

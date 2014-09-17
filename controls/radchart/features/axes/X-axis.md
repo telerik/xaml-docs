@@ -4,7 +4,7 @@ page_title: X-Axis
 description: X-Axis
 slug: radchart-features-axes-x-axis
 tags: x-axis
-publish: True
+published: True
 position: 1
 ---
 

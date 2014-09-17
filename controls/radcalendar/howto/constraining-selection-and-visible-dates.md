@@ -4,7 +4,7 @@ page_title: Constraining Selection and Visible Dates
 description: Constraining Selection and Visible Dates
 slug: radcalendar-constraining-selection-and-visible-dates
 tags: constraining,selection,and,visible,dates
-publish: True
+published: True
 position: 1
 ---
 

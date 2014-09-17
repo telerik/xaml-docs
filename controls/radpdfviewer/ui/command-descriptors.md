@@ -4,7 +4,7 @@ page_title: Command Descriptors
 description: Command Descriptors
 slug: radpdfviewer-command-descriptors
 tags: command,descriptors
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: DataBinding Support Overview
 description: DataBinding Support Overview
 slug: radcombobox-populating-with-data-binding-support-overview
 tags: databinding,support,overview
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Collapsible Panel
 description: Collapsible Panel
 slug: radribbonview-collapsible-panel
 tags: collapsible,panel
-publish: True
+published: True
 position: 1
 ---
 

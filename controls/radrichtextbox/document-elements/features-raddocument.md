@@ -4,7 +4,7 @@ page_title: RadDocument
 description: RadDocument
 slug: radrichtextbox-features-document-elements-raddocument
 tags: raddocument
-publish: True
+published: True
 position: 1
 ---
 

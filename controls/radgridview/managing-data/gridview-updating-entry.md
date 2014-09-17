@@ -4,7 +4,7 @@ page_title: Updating an Entry
 description: Updating an Entry
 slug: gridview-managing-data-updating-entry
 tags: updating,an,entry
-publish: True
+published: True
 position: 2
 ---
 

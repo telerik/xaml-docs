@@ -4,7 +4,7 @@ page_title: Export String Value
 description: Export String Value
 slug: gridview-export-troubleshooting-export-string
 tags: export,string,value
-publish: True
+published: True
 position: 0
 ---
 

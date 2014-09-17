@@ -4,7 +4,7 @@ page_title: FloatingImage
 description: FloatingImage
 slug: radwordsprocessing-model-floatingimage
 tags: floatingimage
-publish: True
+published: True
 position: 8
 ---
 

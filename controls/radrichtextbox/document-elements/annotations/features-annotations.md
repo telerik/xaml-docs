@@ -4,7 +4,7 @@ page_title: Annotations Overview
 description: Annotations Overview
 slug: radrichtextbox-features-document-elements-annotations
 tags: annotations,overview
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Insert, Delete and Editing Operations
 description: Insert, Delete and Editing Operations
 slug: raddataform-add-edit-delete-buttons
 tags: insert,,delete,and,editing,operations
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Filtering
 description: Filtering
 slug: radchart-features-filtering
 tags: filtering
-publish: True
+published: True
 position: 26
 ---
 

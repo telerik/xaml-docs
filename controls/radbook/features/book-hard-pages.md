@@ -4,7 +4,7 @@ page_title: Hard Pages
 description: Hard Pages
 slug: book-hard-pages
 tags: hard,pages
-publish: True
+published: True
 position: 4
 ---
 

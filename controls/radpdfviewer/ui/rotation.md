@@ -4,7 +4,7 @@ page_title: Rotation
 description: Rotation
 slug: radpdfviewer-rotation
 tags: rotation
-publish: True
+published: True
 position: 7
 ---
 

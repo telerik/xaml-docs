@@ -4,7 +4,7 @@ page_title: Step size
 description: Step size
 slug: radslider-step-size
 tags: step,size
-publish: True
+published: True
 position: 4
 ---
 

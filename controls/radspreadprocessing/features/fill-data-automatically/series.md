@@ -4,7 +4,7 @@ page_title: Series
 description: Series
 slug: radspreadprocessing-features-fill-data-automatically-series
 tags: series
-publish: True
+published: True
 position: 1
 ---
 

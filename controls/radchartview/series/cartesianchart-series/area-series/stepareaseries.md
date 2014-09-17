@@ -4,7 +4,7 @@ page_title: StepAreaSeries
 description: StepAreaSeries
 slug: radchartview-series-stepareaseries
 tags: stepareaseries
-publish: True
+published: True
 position: 2
 ---
 

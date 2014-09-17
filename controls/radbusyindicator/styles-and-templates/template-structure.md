@@ -4,7 +4,7 @@ page_title: Template Structure
 description: Template Structure
 slug: radbusyindicator-styles-and-templates-template-structure
 tags: template,structure
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Customize the PaletteViewItem's ToolTip
 description: Customize the PaletteViewItem's ToolTip
 slug: radcolorpicked-howto-custom-tooltip
 tags: customize,the,paletteviewitem's,tooltip
-publish: True
+published: True
 position: 2
 ---
 

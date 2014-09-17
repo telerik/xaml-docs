@@ -3,7 +3,79 @@ url: "http://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,
-radpivotgrid/features/olap-providers/calculations-xmla.md,]
+common-routed-events-support.md,
+common-command-support.md,
+installation-and-deployment/installation-system-requirements.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/for-silverlight-vs-extensions-releases.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-hotfix.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-license-limitations.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox.md,
+installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
+installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
+installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
+installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license.md,
+installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies.md,
+installation-and-deployment/deploying-telerik-ui/protecting-telerik-assembly.md,
+consuming-data/web-asmx-service.md,
+consuming-data/net-ria-service.md,
+consuming-data/domain-datasource-support.md,
+consuming-data/isolated-storage.md,
+styling-and-appearance/stylemanager/common-styling-apperance-setting-theme.md,
+styling-and-appearance/stylemanager/common-styling-apperance-create-theme-overview.md,
+styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-modifying-built-in-theme.md,
+styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project.md,
+styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project-telerik-approach.md,
+visual-studio-extensions/for-silverlight-vs-extensions-overview.md,
+visual-studio-extensions/for-silverlight-vs-extensions-project-configuration.md,
+visual-studio-extensions/for-silverlight-vs-extensions-automatic-resolving.md,
+visual-studio-extensions/for-silverlight-vs-extensions-upgrading.md,
+assembly-minifier-section.md,
+assembly-minifier/minifier-what-is-new.md,
+assembly-minifier/overview.md,
+controls/radchart/chart-localization.md,
+controls/radchart/how-to/howto-integration-radcontextmenu.md,
+controls/radchart/how-to/howto-integrate-data-visualization-with-wcf-ria-services.md,
+controls/radchartview/gotchas.md,
+controls/radcombobox/comparison.md,
+controls/radcombobox/populating-with-data/binding-ria.md,
+controls/radcombobox/howto/bind-enum-values.md,
+controls/radcontextmenu/features/boundaries-detection.md,
+controls/raddatapager/how-to/page-domaindatasource.md,
+controls/raddatetimepicker/how-to/use-in-dataform.md,
+controls/raddiagram/howto/raddiagrams-save-isolated-storage.md,
+controls/radgridview/gridview_comparison.md,
+controls/radgridview/features/gridview-overview-paging.md,
+controls/radgridview/populating-with-data/gridview-loading-data-from-ria-services.md,
+controls/radgridview/populating-with-data/gridview-domaindatasource-support.md,
+controls/radgridview/populating-with-data/gridview-loading-data-from-web-services.md,
+controls/radgridview/paging/gridview-using-silverlight-datapager.md,
+controls/radgridview/hierarchical-gridview/how-to/gridview-create-hierarchical-grid-with-ria.md,
+controls/radgridview/troubleshooting/gridview-paging.md,
+controls/radgridview/troubleshooting/gridview-elementname-binding.md,
+controls/radmenu/features/animation.md,
+controls/radmenu/features/boundaries-detection.md,
+controls/radmenu/styles-and-templates/visual-states.md,
+controls/radnumericupdown/howto/events.md,
+controls/radribbonview/features/ribbon-controls/ribbon-window-sl.md,
+controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier.md,
+controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-silverlight.md,
+controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-viewmodel.md,
+controls/radspreadsheet/model/import/export/import-export-xlsxformatprovider-silverlight.md,
+controls/radspreadsheet/model/import/export/import-export-csvformatprovider-silverlight.md,
+controls/radspreadsheet/model/import/export/import-export-txtformatprovider-silverlight.md,
+controls/radtabcontrol/styling-and-appearance/using-themes.md,
+controls/radtabcontrol/styling-and-appearance/modifying-themes-in-blend.md,
+controls/radtabcontrol/howto/how-to-make-the-tab-headers-editable.md,
+controls/radtoolbar/overview/structure.md,
+controls/radtoolbar/overview/declaration.md,
+controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigation-framework.md,
+controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
+controls/radtreeview/how-to/howto-bind-treeview.md,]
+
 navigation:
 ## List your directory names and order here, like this:
 
@@ -11,8 +83,10 @@ navigation:
         title: RadAutoCompleteBox
     radpivotgrid:
         title: RadPivotGrid
-    "radpivotgrid/features":
-        title: Features1
+    controls:
+        title: Controls		
+    "*features":
+        title: Features
         position: 4		
     "*populating-with-data":
         title: Populating with Data

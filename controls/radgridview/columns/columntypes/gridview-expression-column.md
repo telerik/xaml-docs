@@ -4,7 +4,7 @@ page_title: Expression Column
 description: Expression Column
 slug: gridview-expression-column
 tags: expression,column
-publish: True
+published: True
 position: 11
 ---
 

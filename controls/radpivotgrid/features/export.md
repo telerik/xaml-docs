@@ -4,7 +4,7 @@ page_title: Export
 description: Export
 slug: radpivotgrid-features-export
 tags: export
-publish: True
+published: True
 position: 2
 ---
 

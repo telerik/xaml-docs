@@ -4,7 +4,7 @@ page_title: Select Column
 description: Select Column
 slug: radgridview-columns-column-types-select-column
 tags: select,column
-publish: True
+published: True
 position: 5
 ---
 

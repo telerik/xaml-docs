@@ -4,7 +4,7 @@ page_title: Columns
 description: Columns
 slug: radtreelistview-features-columns
 tags: columns
-publish: True
+published: True
 position: 1
 ---
 

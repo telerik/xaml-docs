@@ -4,7 +4,7 @@ page_title: Basic Hierarchies
 description: Basic Hierarchies
 slug: gridview-basic-hierarchies
 tags: basic,hierarchies
-publish: True
+published: True
 position: 1
 ---
 

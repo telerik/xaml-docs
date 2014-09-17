@@ -4,7 +4,7 @@ page_title: Styling the Axis Item Label
 description: Styling the Axis Item Label
 slug: radchart-styling-and-appearance-styling-axis-item-label
 tags: styling,the,axis,item,label
-publish: True
+published: True
 position: 6
 ---
 

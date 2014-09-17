@@ -4,7 +4,7 @@ page_title: Assembly Minifier
 description: Assembly Minifier
 slug: assembly-minifier-section
 tags: assembly,minifier
-publish: True
+published: True
 position: 24
 site_name: Silverlight
 ---

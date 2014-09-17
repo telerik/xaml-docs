@@ -4,7 +4,7 @@ page_title: Filter a Collection Property
 description: Filter a Collection Property
 slug: gridview-filtering-howto-filter-a-collection-property
 tags: filter,a,collection,property
-publish: True
+published: True
 position: 12
 ---
 

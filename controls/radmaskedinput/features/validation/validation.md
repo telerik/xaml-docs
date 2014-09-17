@@ -4,7 +4,7 @@ page_title: Throwing Validation Exceptions
 description: Throwing Validation Exceptions
 slug: radmaskedinput-features-validation
 tags: throwing,validation,exceptions
-publish: True
+published: True
 position: 0
 ---
 

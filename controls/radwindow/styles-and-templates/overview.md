@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: radwindow-styles-and-templates-overview
 tags: overview
-publish: True
+published: True
 position: 0
 ---
 

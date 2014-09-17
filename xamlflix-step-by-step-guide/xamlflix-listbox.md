@@ -4,7 +4,7 @@ page_title: RadListBox
 description: RadListBox
 slug: xamlflix-listbox
 tags: radlistbox
-publish: True
+published: True
 position: 7
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling a Cell
 description: Styling a Cell
 slug: gridview-styling-cell
 tags: styling,a,cell
-publish: True
+published: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the Chart Title
 description: Styling the Chart Title
 slug: radchart-styling-and-appearance-styling-chart-title
 tags: styling,the,chart,title
-publish: True
+published: True
 position: 2
 ---
 

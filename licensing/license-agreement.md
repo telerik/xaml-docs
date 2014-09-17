@@ -4,7 +4,7 @@ page_title: License Agreement
 description: License Agreement
 slug: license-agreement
 tags: license,agreement
-publish: True
+published: True
 position: 1
 ---
 

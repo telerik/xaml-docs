@@ -4,7 +4,7 @@ page_title: SDK Examples
 description: SDK Examples
 slug: radlistbox-sdk-examples
 tags: sdk,examples
-publish: True
+published: True
 position: 3
 ---
 

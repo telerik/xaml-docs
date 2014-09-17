@@ -4,7 +4,7 @@ page_title: How To Databind RadToolBar
 description: How To Databind RadToolBar 
 slug: toolbar-databinding
 tags: how,to,databind,radtoolbar,
-publish: True
+published: True
 position: 2
 ---
 

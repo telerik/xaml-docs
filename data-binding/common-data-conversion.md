@@ -4,7 +4,7 @@ page_title: Data Conversion
 description: Data Conversion
 slug: common-data-binding-data-conversion
 tags: data,conversion
-publish: True
+published: True
 position: 1
 ---
 

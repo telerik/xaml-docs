@@ -4,7 +4,7 @@ page_title: How to Create Multi-line Tabs
 description: How to Create Multi-line Tabs
 slug: radtabcontrol-how-to-create-multi-line-tabs
 tags: how,to,create,multi-line,tabs
-publish: True
+published: True
 position: 8
 ---
 

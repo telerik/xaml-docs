@@ -4,7 +4,7 @@ page_title: Keyboard Navigation
 description: Keyboard Navigation
 slug: radmenu-keyboard-navigation
 tags: keyboard,navigation
-publish: True
+published: True
 position: 12
 ---
 

@@ -4,7 +4,7 @@ page_title: Path
 description: Path
 slug: radpdfprocessing-model-path
 tags: path
-publish: True
+published: True
 position: 4
 ---
 

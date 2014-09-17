@@ -4,7 +4,7 @@ page_title: Clear All RadGridView Filters
 description: Clear All RadGridView Filters
 slug: gridview-filtering-howto-clear-all-radgridview-filters
 tags: clear,all,radgridview,filters
-publish: True
+published: True
 position: 8
 ---
 

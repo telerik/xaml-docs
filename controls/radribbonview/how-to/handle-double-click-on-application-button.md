@@ -4,7 +4,7 @@ page_title: Handle Double Click On Application Button
 description: Handle Double Click On Application Button
 slug: radribbonview-how-to-handle-double-click-on-application-button
 tags: handle,double,click,on,application,button
-publish: True
+published: True
 position: 0
 ---
 

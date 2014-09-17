@@ -4,7 +4,7 @@ page_title: Clear Selection Button
 description: Clear Selection Button
 slug: radcombobox-features-clearselectionbutton
 tags: clear,selection,button
-publish: True
+published: True
 position: 7
 ---
 

@@ -4,7 +4,7 @@ page_title: Selection
 description: Selection
 slug: radtreeview-feautres-treeviewitem-selection
 tags: selection
-publish: True
+published: True
 position: 6
 ---
 

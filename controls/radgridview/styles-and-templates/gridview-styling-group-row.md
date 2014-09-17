@@ -4,7 +4,7 @@ page_title: Styling the Group Row
 description: Styling the Group Row
 slug: gridview-styling-group-row
 tags: styling,the,group,row
-publish: True
+published: True
 position: 11
 ---
 

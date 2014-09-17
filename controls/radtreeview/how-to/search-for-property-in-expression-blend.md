@@ -4,7 +4,7 @@ page_title: Search for a Property in Expression Blend
 description: Search for a Property in Expression Blend
 slug: radtreeview-how-to-search-for-property-in-expression-blend
 tags: search,for,a,property,in,expression,blend
-publish: False
+published: False
 position: 23
 ---
 

@@ -4,7 +4,7 @@ page_title: How to Control the Selection When the SelectedItem is Removed
 description: How to Control the Selection When the SelectedItem is Removed
 slug: radtabcontrol-how-to-control-selected-item-on-removed-tab
 tags: how,to,control,the,selection,when,the,selecteditem,is,removed
-publish: True
+published: True
 position: 14
 ---
 

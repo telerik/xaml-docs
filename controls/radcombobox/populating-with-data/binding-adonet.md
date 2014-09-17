@@ -4,7 +4,7 @@ page_title: Binding to ADO.NET Data Service
 description: Binding to ADO.NET Data Service
 slug: radcombobox-populating-with-data-binding-adonet
 tags: binding,to,ado.net,data,service
-publish: True
+published: True
 position: 6
 ---
 

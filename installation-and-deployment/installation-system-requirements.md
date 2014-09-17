@@ -4,7 +4,7 @@ page_title: System Requirements
 description: System Requirements
 slug: installation-system-requirements
 tags: system,requirements
-publish: True
+published: True
 position: 0
 site_name: Silverlight
 ---

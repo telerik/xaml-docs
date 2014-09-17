@@ -4,7 +4,7 @@ page_title: Customize PDF Rendering
 description: Customize PDF Rendering
 slug: radpdfviewer-customize-pdf-rendering
 tags: customize,pdf,rendering
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: IsIndeterminate
 description: IsIndeterminate
 slug: isindeterminate
 tags: isindeterminate
-publish: True
+published: True
 position: 2
 ---
 

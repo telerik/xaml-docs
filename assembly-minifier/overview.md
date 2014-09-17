@@ -4,7 +4,7 @@ page_title: Overview
 description: Overview
 slug: assembly-minifier-overview
 tags: overview
-publish: True
+published: True
 position: 1
 site_name: Silverlight
 ---

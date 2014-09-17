@@ -4,7 +4,7 @@ page_title: Drag and Drop with RadListBox
 description: Drag and Drop with RadListBox
 slug: radganttview-dragdrop-radlistbox
 tags: drag,and,drop,with,radlistbox
-publish: True
+published: True
 position: 3
 ---
 

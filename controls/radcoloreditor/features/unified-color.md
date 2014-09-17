@@ -4,7 +4,7 @@ page_title: Unified Color
 description: Unified Color
 slug: radcoloreditor-features-unified-color
 tags: unified,color
-publish: True
+published: True
 position: 2
 ---
 

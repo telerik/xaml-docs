@@ -4,7 +4,7 @@ page_title: Shape Reader
 description: Shape Reader
 slug: radmap-features-information-layer-shape-reder
 tags: shape,reader
-publish: True
+published: True
 position: 8
 ---
 

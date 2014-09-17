@@ -4,7 +4,7 @@ page_title: Creating a Custom Theme Project - Using the Telerik Approach
 description: Creating a Custom Theme Project - Using the Telerik Approach
 slug: common-styling-apperance-themes-custom-theme-project-telerik-approach
 tags: creating,a,custom,theme,project,-,using,the,telerik,approach
-publish: True
+published: True
 position: 2
 site_name: Silverlight
 ---

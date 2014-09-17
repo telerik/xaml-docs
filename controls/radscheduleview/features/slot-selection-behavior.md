@@ -4,7 +4,7 @@ page_title: SlotSelectionBehavior
 description: SlotSelectionBehavior
 slug: radscheduleview-features-slot-selection-behavior
 tags: slotselectionbehavior
-publish: True
+published: True
 position: 19
 ---
 

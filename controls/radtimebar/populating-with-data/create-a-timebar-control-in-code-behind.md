@@ -4,7 +4,7 @@ page_title: Create a TimeBar control in Code-behind
 description: Create a TimeBar control in Code-behind
 slug: radtimebar-create-a-timebar-control-in-code-behind
 tags: create,a,timebar,control,in,code-behind
-publish: True
+published: True
 position: 0
 ---
 

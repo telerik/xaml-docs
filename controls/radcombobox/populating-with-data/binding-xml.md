@@ -4,7 +4,7 @@ page_title: Binding to XML
 description: Binding to XML
 slug: radcombobox-populating-with-data-binding-xml
 tags: binding,to,xml
-publish: True
+published: True
 position: 8
 ---
 

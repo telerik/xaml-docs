@@ -4,7 +4,7 @@ page_title: Tick marks
 description: Tick marks
 slug: radial-scale-tick-marks
 tags: tick,marks
-publish: True
+published: True
 position: 1
 ---
 

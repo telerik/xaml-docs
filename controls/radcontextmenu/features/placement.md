@@ -4,7 +4,7 @@ page_title: Placement
 description: Placement
 slug: radcontextmenu-features-placement
 tags: placement
-publish: True
+published: True
 position: 3
 ---
 

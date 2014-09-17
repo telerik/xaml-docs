@@ -4,7 +4,7 @@ page_title: EditableTemplate
 description: EditableTemplate
 slug: radcombobox-styles-templates-editable-template
 tags: editabletemplate
-publish: False
+published: False
 position: 5
 ---
 

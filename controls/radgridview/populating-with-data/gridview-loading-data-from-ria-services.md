@@ -4,7 +4,7 @@ page_title: Loading Data from RIA Services
 description: Loading Data from RIA Services
 slug: gridview-loading-data-from-ria-services
 tags: loading,data,from,ria,services
-publish: True
+published: True
 position: 4
 site_name: Silverlight
 ---

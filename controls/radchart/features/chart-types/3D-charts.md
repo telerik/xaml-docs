@@ -4,7 +4,7 @@ page_title: 3D Charts
 description: 3D Charts
 slug: radchart-features-chart-types-3d-charts
 tags: 3d,charts
-publish: True
+published: True
 position: 1
 ---
 

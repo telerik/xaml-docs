@@ -4,7 +4,7 @@ page_title: PieSeries
 description: PieSeries
 slug: radchartview-series-pieseries
 tags: pieseries
-publish: True
+published: True
 position: 0
 ---
 

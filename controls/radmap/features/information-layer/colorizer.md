@@ -4,7 +4,7 @@ page_title: Colorizer
 description: Colorizer
 slug: radmap-features-colorizer
 tags: colorizer
-publish: True
+published: True
 position: 9
 ---
 

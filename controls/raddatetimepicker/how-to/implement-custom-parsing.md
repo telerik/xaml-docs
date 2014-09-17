@@ -4,7 +4,7 @@ page_title: How to implement custom parsing
 description: How to implement custom parsing
 slug: raddatetimepicker-how-to-implement-custom-parsing
 tags: how,to,implement,custom,parsing
-publish: True
+published: True
 position: 0
 ---
 

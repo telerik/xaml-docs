@@ -4,7 +4,7 @@ page_title: Bind RadTreeView
 description: Bind RadTreeView
 slug: radtreeview-howto-bind-treeview
 tags: bind,radtreeview
-publish: True
+published: True
 position: 20
 site_name: Silverlight
 ---

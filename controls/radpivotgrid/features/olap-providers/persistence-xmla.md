@@ -4,7 +4,7 @@ page_title: Persist XmlaDataProvider
 description: Persist XmlaDataProvider
 slug: radpivotgrid-features-persistence-xmla
 tags: persist,xmladataprovider
-publish: True
+published: True
 position: 4
 ---
 

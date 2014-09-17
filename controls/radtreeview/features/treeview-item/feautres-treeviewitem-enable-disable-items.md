@@ -4,7 +4,7 @@ page_title: Enable and Disable Items
 description: Enable and Disable Items
 slug: radtreeview-feautres-treeviewitem-enable-disable-items
 tags: enable,and,disable,items
-publish: True
+published: True
 position: 3
 ---
 

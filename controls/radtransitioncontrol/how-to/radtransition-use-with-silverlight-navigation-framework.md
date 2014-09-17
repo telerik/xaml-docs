@@ -4,7 +4,7 @@ page_title: Use with Silverlight Navigation Framework
 description: Use with Silverlight Navigation Framework
 slug: radtransition-how-to-use-with-silverlight-navigation-framework
 tags: use,with,silverlight,navigation,framework
-publish: True
+published: True
 position: 0
 site_name: Silverlight
 ---

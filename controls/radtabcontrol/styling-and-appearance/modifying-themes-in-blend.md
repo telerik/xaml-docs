@@ -4,7 +4,7 @@ page_title: Modifying Themes in Blend
 description: Modifying Themes in Blend
 slug: radtabcontrol-modifying-themes-in-blend
 tags: modifying,themes,in,blend
-publish: True
+published: True
 position: 3
 site_name: Silverlight
 ---

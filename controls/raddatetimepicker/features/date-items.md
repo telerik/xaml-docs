@@ -4,7 +4,7 @@ page_title: Date Items
 description: Date Items
 slug: raddatetimepicker-features-date-items
 tags: date,items
-publish: True
+published: True
 position: 5
 ---
 

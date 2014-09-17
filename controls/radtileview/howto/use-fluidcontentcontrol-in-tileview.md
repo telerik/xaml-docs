@@ -4,7 +4,7 @@ page_title: Use RadFluidContentControl in RadTileView
 description: Use RadFluidContentControl in RadTileView
 slug: radtileview-howto-use-fluidcontentcontrol-in-tileview
 tags: use,radfluidcontentcontrol,in,radtileview
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Rename a Worksheet
 description: Rename a Worksheet
 slug: radspreadprocessing-working-with-worksheets-rename-worksheet
 tags: rename,a,worksheet
-publish: True
+published: True
 position: 3
 ---
 

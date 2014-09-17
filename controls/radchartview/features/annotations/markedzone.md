@@ -4,7 +4,7 @@ page_title: MarkedZone Annotations
 description: MarkedZone Annotations
 slug: radchartview-annotations-markedzone
 tags: markedzone,annotations
-publish: True
+published: True
 position: 5
 ---
 

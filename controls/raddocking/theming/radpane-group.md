@@ -4,7 +4,7 @@ page_title: Theming the RadPaneGroup
 description: Theming the RadPaneGroup
 slug: raddocking-theming-radpane-group
 tags: theming,the,radpanegroup
-publish: True
+published: True
 position: 2
 ---
 

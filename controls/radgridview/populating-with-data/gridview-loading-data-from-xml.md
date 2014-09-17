@@ -4,7 +4,7 @@ page_title: Loading Data from XML
 description: Loading Data from XML
 slug: gridview-loading-data-from-xml
 tags: loading,data,from,xml
-publish: True
+published: True
 position: 3
 ---
 

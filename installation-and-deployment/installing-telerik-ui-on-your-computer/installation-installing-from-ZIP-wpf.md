@@ -4,7 +4,7 @@ page_title: Installing UI for WPF from ZIP File
 description: Installing UI for WPF from ZIP File
 slug: installation-installing-from-zip-wpf
 tags: installing,ui,for,wpf,from,zip,file
-publish: True
+published: True
 position: 4
 site_name: WPF
 ---

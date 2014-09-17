@@ -4,7 +4,7 @@ page_title: How to apply different templates for front and back cover page.
 description: How to apply different templates for front and back cover page.
 slug: radbook-cover-template
 tags: how,to,apply,different,templates,for,front,and,back,cover,page.
-publish: True
+published: True
 position: 2
 ---
 

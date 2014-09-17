@@ -4,7 +4,7 @@ page_title: SpellChecking Modes
 description: SpellChecking Modes
 slug: radspellchecker-spellchecking-modes
 tags: spellchecking,modes
-publish: True
+published: True
 position: 0
 ---
 

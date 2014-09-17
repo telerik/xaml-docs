@@ -4,7 +4,7 @@ page_title: BoundColumnBase
 description: BoundColumnBase
 slug: radgridview-columns-column-types-boundcolumnbase
 tags: boundcolumnbase
-publish: True
+published: True
 position: 1
 ---
 

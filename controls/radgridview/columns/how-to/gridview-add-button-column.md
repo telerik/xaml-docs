@@ -4,7 +4,7 @@ page_title: Add a button column
 description: Add a button column
 slug: gridview-add-button-column
 tags: add,a,button,column
-publish: True
+published: True
 position: 5
 ---
 

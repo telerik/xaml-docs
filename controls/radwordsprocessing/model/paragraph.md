@@ -4,7 +4,7 @@ page_title: Paragraph
 description: Paragraph
 slug: radwordsprocessing-model-paragraph
 tags: paragraph
-publish: True
+published: True
 position: 2
 ---
 

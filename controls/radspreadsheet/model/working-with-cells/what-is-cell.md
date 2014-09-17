@@ -4,7 +4,7 @@ page_title: What is a Cell?
 description: What is a Cell?
 slug: radspreadsheet-model-working-with-cells-what-is-cell
 tags: what,is,a,cell?
-publish: False
+published: False
 position: 0
 ---
 

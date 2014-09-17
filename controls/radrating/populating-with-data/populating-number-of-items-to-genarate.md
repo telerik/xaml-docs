@@ -4,7 +4,7 @@ page_title: Using the NumberOfItemsToGenarate property
 description: Using the NumberOfItemsToGenarate property
 slug: populating-number-of-items-to-genarate
 tags: using,the,numberofitemstogenarate,property
-publish: True
+published: True
 position: 1
 ---
 

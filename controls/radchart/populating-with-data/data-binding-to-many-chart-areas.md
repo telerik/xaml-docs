@@ -4,7 +4,7 @@ page_title: Data Binding to Many Chart Areas
 description: Data Binding to Many Chart Areas
 slug: radchart-populating-with-data-data-binding-to-many-chart-areas
 tags: data,binding,to,many,chart,areas
-publish: True
+published: True
 position: 8
 ---
 

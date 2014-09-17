@@ -4,7 +4,7 @@ page_title: Txt
 description: Txt
 slug: radspreadprocessing-formats-and-conversion-txt
 tags: txt
-publish: True
+published: True
 position: 3
 ---
 

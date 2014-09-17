@@ -4,7 +4,7 @@ page_title: Moving
 description: Moving
 slug: radwindow-features-moving
 tags: moving
-publish: True
+published: True
 position: 9
 ---
 

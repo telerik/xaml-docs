@@ -4,7 +4,7 @@ page_title: Exception with Sum AggregateFuntion
 description: Exception with Sum AggregateFuntion
 slug: gridview-troubleshooting-sum-aggregate
 tags: exception,with,sum,aggregatefuntion
-publish: True
+published: True
 position: 2
 ---
 

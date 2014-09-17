@@ -4,7 +4,7 @@ page_title: How to Change the Tab Template
 description: How to Change the Tab Template
 slug: radtabcontrol-how-to-change-the-tab-template
 tags: how,to,change,the,tab,template
-publish: True
+published: True
 position: 4
 ---
 

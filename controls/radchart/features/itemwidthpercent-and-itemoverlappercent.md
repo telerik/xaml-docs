@@ -4,7 +4,7 @@ page_title: ItemWidthPercent and ItemOverlapPercent
 description: ItemWidthPercent and ItemOverlapPercent
 slug: radchart-features-itemwidthpercent-and-itemoverlappercent
 tags: itemwidthpercent,and,itemoverlappercent
-publish: True
+published: True
 position: 31
 ---
 

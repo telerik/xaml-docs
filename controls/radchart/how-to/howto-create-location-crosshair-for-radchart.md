@@ -4,7 +4,7 @@ page_title: Create Location Crosshair for RadChart
 description: Create Location Crosshair for RadChart
 slug: radchart-howto-create-location-crosshair-for-radchart
 tags: create,location,crosshair,for,radchart
-publish: True
+published: True
 position: 18
 ---
 

@@ -4,7 +4,7 @@ page_title: Span
 description: Span
 slug: radrichtextbox-features-document-elements-span
 tags: span
-publish: True
+published: True
 position: 4
 ---
 

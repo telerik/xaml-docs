@@ -4,7 +4,7 @@ page_title: Structure
 description: Structure
 slug: radcoloreditor-structure
 tags: structure
-publish: True
+published: True
 position: 0
 ---
 

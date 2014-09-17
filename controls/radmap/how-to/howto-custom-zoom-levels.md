@@ -4,7 +4,7 @@ page_title: Implement custom zoom levels for MapZoomBar UI
 description: Implement custom zoom levels for MapZoomBar UI
 slug: radmap-howto-custom-zoom-levels
 tags: implement,custom,zoom,levels,for,mapzoombar,ui
-publish: True
+published: True
 position: 2
 ---
 

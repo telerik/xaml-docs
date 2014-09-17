@@ -4,7 +4,7 @@ page_title: Data Binding to Nested Collections
 description: Data Binding to Nested Collections
 slug: radchart-populating-with-data-data-binding-to-nested-collections
 tags: data,binding,to,nested,collections
-publish: True
+published: True
 position: 7
 ---
 

@@ -4,7 +4,7 @@ page_title: Configure The Filtering Mode
 description: Configure The Filtering Mode
 slug: gridview-filtering-howto-configure-the-filtering-mode
 tags: configure,the,filtering,mode
-publish: True
+published: True
 position: 0
 ---
 

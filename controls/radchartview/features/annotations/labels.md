@@ -4,7 +4,7 @@ page_title: Annotation Labels
 description: Annotation Labels
 slug: radchartview-annotations-labels
 tags: annotation,labels
-publish: True
+published: True
 position: 7
 ---
 

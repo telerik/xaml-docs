@@ -4,7 +4,7 @@ page_title: Configuration
 description: Configuration
 slug: radscheduleview-viewdefinitions-configuration
 tags: configuration
-publish: True
+published: True
 position: 1
 ---
 

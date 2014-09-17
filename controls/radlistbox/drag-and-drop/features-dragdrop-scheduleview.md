@@ -4,7 +4,7 @@ page_title: Drag-Drop between RadListBox and RadScheduleView
 description: Drag-Drop between RadListBox and RadScheduleView
 slug: radlistbox-features-dragdrop-scheduleview
 tags: drag-drop,between,radlistbox,and,radscheduleview
-publish: True
+published: True
 position: 1
 ---
 

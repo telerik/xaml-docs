@@ -4,7 +4,7 @@ page_title: Use Commands with the RadContextMenu
 description: Use Commands with the RadContextMenu
 slug: radcontextmenu-how-to-use-commands-with-the-radcontextmenu
 tags: use,commands,with,the,radcontextmenu
-publish: True
+published: True
 position: 3
 ---
 

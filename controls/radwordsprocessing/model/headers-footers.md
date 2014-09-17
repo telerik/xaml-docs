@@ -4,7 +4,7 @@ page_title: Headers and Footers
 description: Headers and Footers
 slug: radwordsprocessing-model-headers-footers
 tags: headers,and,footers
-publish: True
+published: True
 position: 9
 ---
 

@@ -4,7 +4,7 @@ page_title: Chart Area
 description: Chart Area
 slug: radchart-features-chart-area
 tags: chart,area
-publish: True
+published: True
 position: 12
 ---
 

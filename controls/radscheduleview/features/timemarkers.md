@@ -4,7 +4,7 @@ page_title: Time Markers
 description: Time Markers
 slug: radscheduleview-features-timemarkers
 tags: time,markers
-publish: True
+published: True
 position: 8
 ---
 

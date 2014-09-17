@@ -4,7 +4,7 @@ page_title: DomainDataSource Support
 description: DomainDataSource Support
 slug: consuming-data-domain-datasource-support
 tags: domaindatasource,support
-publish: True
+published: True
 position: 6
 site_name: Silverlight
 ---

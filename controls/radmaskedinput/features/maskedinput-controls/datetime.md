@@ -4,7 +4,7 @@ page_title: MaskedDateTimeInput
 description: MaskedDateTimeInput
 slug: radmaskedinput-features-controls-datetime
 tags: maskeddatetimeinput
-publish: True
+published: True
 position: 3
 ---
 

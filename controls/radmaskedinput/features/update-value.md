@@ -4,7 +4,7 @@ page_title: UpdateValueEvent
 description: UpdateValueEvent
 slug: radmaskedinput-features-update-value
 tags: updatevalueevent
-publish: True
+published: True
 position: 4
 ---
 

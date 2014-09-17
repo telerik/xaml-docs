@@ -4,7 +4,7 @@ page_title: Animation
 description: Animation
 slug: radtileview-animation
 tags: animation
-publish: True
+published: True
 position: 4
 ---
 

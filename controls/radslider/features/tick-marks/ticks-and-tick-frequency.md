@@ -4,7 +4,7 @@ page_title: Ticks and Tick frequency
 description: Ticks and Tick frequency
 slug: radslider-ticks-and-tick-frequency
 tags: ticks,and,tick,frequency
-publish: True
+published: True
 position: 0
 ---
 

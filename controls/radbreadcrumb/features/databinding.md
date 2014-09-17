@@ -4,7 +4,7 @@ page_title: Databinding
 description: Databinding 
 slug: radbreadcrumb-databinding
 tags: databinding,
-publish: True
+published: True
 position: 1
 ---
 

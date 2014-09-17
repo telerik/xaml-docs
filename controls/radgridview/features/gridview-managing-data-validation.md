@@ -4,7 +4,7 @@ page_title: Validating
 description: Validating
 slug: gridview-managing-data-validation
 tags: validating
-publish: True
+published: True
 position: 6
 ---
 

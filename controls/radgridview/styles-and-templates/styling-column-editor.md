@@ -4,7 +4,7 @@ page_title: Styling the Column Editor
 description: Styling the Column Editor
 slug: radgridview-styling-column-editor
 tags: styling,the,column,editor
-publish: True
+published: True
 position: 15
 ---
 

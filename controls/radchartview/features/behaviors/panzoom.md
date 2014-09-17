@@ -4,7 +4,7 @@ page_title: Scroll and Zoom
 description: Scroll and Zoom 
 slug: radchartview-features-panzoom
 tags: scroll,and,zoom,
-publish: True
+published: True
 position: 0
 ---
 

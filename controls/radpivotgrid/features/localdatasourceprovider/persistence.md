@@ -4,7 +4,7 @@ page_title: Persistence
 description: Persistence
 slug: radpivotgrid-features-persistence
 tags: persistence
-publish: True
+published: True
 position: 6
 ---
 

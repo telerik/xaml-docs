@@ -4,7 +4,7 @@ page_title: Display PointMarks and Labels for Specific points only
 description: Display PointMarks and Labels for Specific points only 
 slug: radchart-howto-display-pointmarks-and-labels-for-specific-points-only
 tags: display,pointmarks,and,labels,for,specific,points,only,
-publish: True
+published: True
 position: 7
 ---
 

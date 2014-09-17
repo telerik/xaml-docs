@@ -4,7 +4,7 @@ page_title: ContainerShapes
 description: ContainerShapes
 slug: raddiagram-features-container-shapes
 tags: containershapes
-publish: True
+published: True
 position: 2
 ---
 

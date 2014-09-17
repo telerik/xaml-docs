@@ -4,7 +4,7 @@ page_title: Worksheet Protection
 description: Worksheet Protection
 slug: radspreadsheet-model-features-protection-worksheet
 tags: worksheet,protection
-publish: False
+published: False
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Binding To Object
 description: Binding To Object
 slug: radlistbox-populating-with-data-binding-to-object
 tags: binding,to,object
-publish: True
+published: True
 position: 4
 ---
 

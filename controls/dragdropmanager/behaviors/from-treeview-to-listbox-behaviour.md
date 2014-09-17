@@ -4,7 +4,7 @@ page_title: Drag-drop between ListBox and TreeView
 description: Drag-drop between ListBox and TreeView
 slug: dragdropmanager-from-treeview-to-listbox-behaviour
 tags: drag-drop,between,listbox,and,treeview
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Document Host
 description: Document Host
 slug: raddocking-features-document-host
 tags: document,host
-publish: True
+published: True
 position: 5
 ---
 

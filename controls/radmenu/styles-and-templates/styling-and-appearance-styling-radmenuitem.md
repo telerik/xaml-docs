@@ -4,7 +4,7 @@ page_title: Styling the RadMenuItem
 description: Styling the RadMenuItem
 slug: radmenu-styling-and-appearance-styling-radmenuitem
 tags: styling,the,radmenuitem
-publish: True
+published: True
 position: 4
 ---
 

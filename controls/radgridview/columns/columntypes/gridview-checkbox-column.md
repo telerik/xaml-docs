@@ -4,7 +4,7 @@ page_title: CheckBox Column
 description: CheckBox Column
 slug: gridview-checkbox-column
 tags: checkbox,column
-publish: True
+published: True
 position: 6
 ---
 

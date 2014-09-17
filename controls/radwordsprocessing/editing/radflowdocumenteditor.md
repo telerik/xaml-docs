@@ -4,7 +4,7 @@ page_title: RadFlowDocumentEditor
 description: RadFlowDocumentEditor
 slug: radwordsprocessing-editing-radflowdocumenteditor
 tags: radflowdocumenteditor
-publish: True
+published: True
 position: 1
 ---
 

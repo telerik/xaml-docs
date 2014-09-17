@@ -4,7 +4,7 @@ page_title: Disable Drop at Specific Location
 description: Disable Drop at Specific Location
 slug: radtreeview-how-to-disable-drop-specific-location
 tags: disable,drop,at,specific,location
-publish: True
+published: True
 position: 4
 ---
 

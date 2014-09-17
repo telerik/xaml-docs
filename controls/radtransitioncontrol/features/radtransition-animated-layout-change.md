@@ -4,7 +4,7 @@ page_title: Animated Layout Change
 description: Animated Layout Change
 slug: radtransition-features-animated-layout-change
 tags: animated,layout,change
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Implement a Tri-State CheckBox logic using MVVM
 description: Implement a Tri-State CheckBox logic using MVVM
 slug: radtreeview-howto-tri-state-mvvm
 tags: implement,a,tri-state,checkbox,logic,using,mvvm
-publish: True
+published: True
 position: 3
 ---
 

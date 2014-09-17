@@ -4,7 +4,7 @@ page_title: Implement custom map provider
 description: Implement custom map provider
 slug: radmap-howto-custom-provider
 tags: implement,custom,map,provider
-publish: True
+published: True
 position: 1
 ---
 

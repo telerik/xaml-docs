@@ -4,7 +4,7 @@ page_title: Logarithmic Axis
 description: Logarithmic Axis
 slug: radchartview-axes-logarithmicaxis
 tags: logarithmic,axis
-publish: True
+published: True
 position: 1
 ---
 

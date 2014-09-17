@@ -4,7 +4,7 @@ page_title: Data Binding
 description: Data Binding
 slug: gridview-overview-data-binding
 tags: data,binding
-publish: True
+published: True
 position: 0
 ---
 

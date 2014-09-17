@@ -4,7 +4,7 @@ page_title: Introduction
 description: Introduction
 slug: radchartview-features-palettes-introduction
 tags: introduction
-publish: True
+published: True
 position: 0
 ---
 

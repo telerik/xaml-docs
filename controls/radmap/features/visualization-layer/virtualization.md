@@ -4,7 +4,7 @@ page_title: Items Virtualization
 description: Items Virtualization
 slug: radmap-visualization-layer-virtualization
 tags: items,virtualization
-publish: True
+published: True
 position: 7
 ---
 

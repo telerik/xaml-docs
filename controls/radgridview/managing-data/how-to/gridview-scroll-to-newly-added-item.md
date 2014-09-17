@@ -4,7 +4,7 @@ page_title: Scroll to newly added item
 description: Scroll to newly added item
 slug: gridview-how-to-scroll-to-newly-added-item
 tags: scroll,to,newly,added,item
-publish: True
+published: True
 position: 5
 ---
 

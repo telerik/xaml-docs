@@ -4,7 +4,7 @@ page_title: CandlesticSeries
 description: CandlesticSeries
 slug: radchartview-series-candlestickseries
 tags: candlesticseries
-publish: True
+published: True
 position: 1
 ---
 

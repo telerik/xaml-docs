@@ -4,7 +4,7 @@ page_title: Aggregates
 description: Aggregates
 slug: radtreelistview-features-aggregates
 tags: aggregates
-publish: True
+published: True
 position: 8
 ---
 

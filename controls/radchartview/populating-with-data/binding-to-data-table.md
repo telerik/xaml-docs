@@ -4,7 +4,7 @@ page_title: Binding to a DataTable
 description: Binding to a DataTable
 slug: radchartview-populating-with-data-binding-to-data-table
 tags: binding,to,a,datatable
-publish: True
+published: True
 position: 3
 ---
 

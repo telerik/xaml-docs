@@ -4,7 +4,7 @@ page_title: Column Headers
 description: Column Headers
 slug: gridview-columns-column-headers
 tags: column,headers
-publish: True
+published: True
 position: 6
 ---
 

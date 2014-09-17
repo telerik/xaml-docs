@@ -4,7 +4,7 @@ page_title: Property level validation
 description: Property level validation
 slug: raddataform-validation
 tags: property,level,validation
-publish: True
+published: True
 position: 0
 ---
 

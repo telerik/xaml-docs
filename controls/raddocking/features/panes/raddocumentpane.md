@@ -4,7 +4,7 @@ page_title: RadDocumentPane
 description: RadDocumentPane
 slug: raddocking-panes-raddocumentpane
 tags: raddocumentpane
-publish: True
+published: True
 position: 1
 ---
 

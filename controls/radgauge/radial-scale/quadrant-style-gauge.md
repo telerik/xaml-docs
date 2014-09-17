@@ -4,7 +4,7 @@ page_title: Quadrant-style gauge
 description: Quadrant-style gauge
 slug: radial-scale-quadrant-style-gauge
 tags: quadrant-style,gauge
-publish: True
+published: True
 position: 9
 ---
 

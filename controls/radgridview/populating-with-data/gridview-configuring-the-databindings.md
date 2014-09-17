@@ -4,7 +4,7 @@ page_title: Configuring the Data Bindings
 description: Configuring the Data Bindings
 slug: gridview-configuring-the-databindings
 tags: configuring,the,data,bindings
-publish: True
+published: True
 position: 1
 ---
 

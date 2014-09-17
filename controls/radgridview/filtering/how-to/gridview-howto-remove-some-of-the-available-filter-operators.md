@@ -4,7 +4,7 @@ page_title: Remove Some of the Available Filter Operators
 description: Remove Some of the Available Filter Operators
 slug: gridview-filtering-howto-remove-some-of-the-available-filter-operators
 tags: remove,some,of,the,available,filter,operators
-publish: True
+published: True
 position: 4
 ---
 

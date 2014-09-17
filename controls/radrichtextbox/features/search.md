@@ -4,7 +4,7 @@ page_title: Search
 description: Search
 slug: radrichtextbox-features-search
 tags: search
-publish: True
+published: True
 position: 2
 ---
 

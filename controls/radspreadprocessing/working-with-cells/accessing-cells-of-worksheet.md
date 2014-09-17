@@ -4,7 +4,7 @@ page_title: Accessing Cells of a Worksheet
 description: Accessing Cells of a Worksheet
 slug: radspreadprocessing-working-with-cells-accessing-cells-of-worksheet
 tags: accessing,cells,of,a,worksheet
-publish: True
+published: True
 position: 2
 ---
 

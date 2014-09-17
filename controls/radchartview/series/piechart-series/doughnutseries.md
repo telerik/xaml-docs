@@ -4,7 +4,7 @@ page_title: DoughtnutSeries
 description: DoughtnutSeries
 slug: radchartview-series-doughnutseries
 tags: doughtnutseries
-publish: True
+published: True
 position: 1
 ---
 

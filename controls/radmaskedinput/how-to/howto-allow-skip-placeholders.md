@@ -4,7 +4,7 @@ page_title: How to Define Consecutive Input
 description: How to Define Consecutive Input
 slug: radmaskedinput-howto-allow-skip-placeholders
 tags: how,to,define,consecutive,input
-publish: True
+published: True
 position: 0
 ---
 

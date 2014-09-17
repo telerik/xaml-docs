@@ -4,7 +4,7 @@ page_title: Drag Items from a Custom Databound DiagramToolbox
 description: Drag Items from a Custom Databound DiagramToolbox
 slug: raddiagram-howto-drag-custom-toolboxitem
 tags: drag,items,from,a,custom,databound,diagramtoolbox
-publish: True
+published: True
 position: 11
 ---
 

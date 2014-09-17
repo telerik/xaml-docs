@@ -4,7 +4,7 @@ page_title: Touch Support
 description: Touch Support
 slug: gridview-overview-touch-support
 tags: touch,support
-publish: True
+published: True
 position: 12
 ---
 

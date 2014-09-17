@@ -4,7 +4,7 @@ page_title: Using LocalDataSourceProvider
 description: Using LocalDataSourceProvider
 slug: radpivotgrid-data-localdatasource
 tags: using,localdatasourceprovider
-publish: True
+published: True
 position: 0
 ---
 

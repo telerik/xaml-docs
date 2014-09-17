@@ -4,7 +4,7 @@ page_title: FixedContentEditor
 description: FixedContentEditor
 slug: radpdfprocessing-editing-fixedcontenteditor
 tags: fixedcontenteditor
-publish: True
+published: True
 position: 0
 ---
 

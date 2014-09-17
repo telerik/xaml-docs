@@ -4,7 +4,7 @@ page_title: DataBinding
 description: DataBinding
 slug: radcombobox-features-databinding
 tags: databinding
-publish: False
+published: False
 position: 4
 ---
 

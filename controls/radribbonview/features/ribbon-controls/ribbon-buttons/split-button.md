@@ -4,7 +4,7 @@ page_title: Ribbon SplitButton
 description: Ribbon SplitButton
 slug: radribbonview-split-button
 tags: ribbon,splitbutton
-publish: True
+published: True
 position: 5
 ---
 

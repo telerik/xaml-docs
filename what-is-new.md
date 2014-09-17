@@ -4,7 +4,7 @@ page_title: What's New
 description: What's New
 slug: what-is-new
 tags: what's,new
-publish: True
+published: True
 position: 2
 ---
 

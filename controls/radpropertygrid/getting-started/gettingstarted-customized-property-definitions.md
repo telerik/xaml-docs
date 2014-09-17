@@ -4,7 +4,7 @@ page_title: Customized Property Definitions
 description: Customized Property Definitions
 slug: radpropertygrid-gettingstarted-customized-property-definitions
 tags: customized,property,definitions
-publish: True
+published: True
 position: 2
 ---
 

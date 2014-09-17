@@ -4,7 +4,7 @@ page_title: PolarPointSeries
 description: PolarPointSeries
 slug: radchartview-series-polarpointseries
 tags: polarpointseries
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Operator
 description: Operator
 slug: radspreadprocessing-features-formulas-operators
 tags: operator
-publish: True
+published: True
 position: 0
 ---
 

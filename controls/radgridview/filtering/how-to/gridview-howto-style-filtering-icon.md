@@ -4,7 +4,7 @@ page_title: Style the filtering funnel icon
 description: Style the filtering funnel icon
 slug: gridview-filtering-howto-style-filtering-icon
 tags: style,the,filtering,funnel,icon
-publish: True
+published: True
 position: 21
 ---
 

@@ -4,7 +4,7 @@ page_title: Expand Behavior
 description: Expand Behavior
 slug: radpivotgrid-features-expand-behavior
 tags: expand,behavior
-publish: True
+published: True
 position: 4
 ---
 

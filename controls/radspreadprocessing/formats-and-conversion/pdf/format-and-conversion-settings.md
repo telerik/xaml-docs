@@ -4,7 +4,7 @@ page_title: Settings
 description: Settings
 slug: radspreadprocessing-format-and-conversion-pdf-settings
 tags: settings
-publish: True
+published: True
 position: 2
 ---
 

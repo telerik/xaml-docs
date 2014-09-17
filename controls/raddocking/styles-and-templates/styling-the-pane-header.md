@@ -4,7 +4,7 @@ page_title: Styling the Pane Header
 description: Styling the Pane Header
 slug: raddocking-styling-the-pane-header
 tags: styling,the,pane,header
-publish: True
+published: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Using DataAnnotation Attributes
 description: Using DataAnnotation Attributes
 slug: radmaskedinput-validation-regex
 tags: using,dataannotation,attributes
-publish: True
+published: True
 position: 1
 ---
 

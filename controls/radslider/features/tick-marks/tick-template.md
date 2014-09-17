@@ -4,7 +4,7 @@ page_title: Tick template
 description: Tick template
 slug: radslider-tick-template
 tags: tick,template
-publish: True
+published: True
 position: 2
 ---
 

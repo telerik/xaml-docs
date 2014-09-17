@@ -4,7 +4,7 @@ page_title: DiagramNavigationPane
 description: DiagramNavigationPane
 slug: raddiagram-extensions-navigationpane
 tags: diagramnavigationpane
-publish: True
+published: True
 position: 2
 ---
 

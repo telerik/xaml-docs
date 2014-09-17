@@ -4,7 +4,7 @@ page_title: OhlcSeries
 description: OhlcSeries
 slug: radchartview-series-ohlcseries
 tags: ohlcseries
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Controlling RadCarousel Appearance
 description: Controlling RadCarousel Appearance
 slug: carousel-properties
 tags: controlling,radcarousel,appearance
-publish: True
+published: True
 position: 2
 ---
 

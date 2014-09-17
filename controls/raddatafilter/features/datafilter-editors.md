@@ -4,7 +4,7 @@ page_title: Filter Editors
 description: Filter Editors
 slug: datafilter-editors
 tags: filter,editors
-publish: True
+published: True
 position: 3
 ---
 

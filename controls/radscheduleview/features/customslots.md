@@ -4,7 +4,7 @@ page_title: Custom Slots
 description: Custom Slots
 slug: radscheduleview-features-customslots
 tags: custom,slots
-publish: True
+published: True
 position: 12
 ---
 

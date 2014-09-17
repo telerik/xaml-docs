@@ -4,7 +4,7 @@ page_title: Binding the Color of Series Items
 description: Binding the Color of Series Items
 slug: radchartview-populating-with-data-binding-the-color-of-series-items
 tags: binding,the,color,of,series,items
-publish: True
+published: True
 position: 4
 ---
 

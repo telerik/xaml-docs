@@ -4,7 +4,7 @@ page_title: UI Structure
 description: UI Structure
 slug: carousel-ui-structure
 tags: ui,structure
-publish: True
+published: True
 position: 1
 ---
 

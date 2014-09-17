@@ -4,7 +4,7 @@ page_title: Filtering through RadGridView
 description: Filtering through RadGridView
 slug: raddataservicedatasource-filtering-filtering-through-radgridview
 tags: filtering,through,radgridview
-publish: True
+published: True
 position: 1
 ---
 

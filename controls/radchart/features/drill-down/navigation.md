@@ -4,7 +4,7 @@ page_title: Navigation
 description: Navigation
 slug: radchart-features-drill-down-navigation
 tags: navigation
-publish: True
+published: True
 position: 3
 ---
 

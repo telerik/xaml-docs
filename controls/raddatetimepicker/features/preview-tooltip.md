@@ -4,7 +4,7 @@ page_title: Preview ToolTip
 description: Preview ToolTip
 slug: raddatetimepicker-features-preview-tooltip
 tags: preview,tooltip
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Transition Selection
 description: Transition Selection
 slug: radtransition-how-to-transition-selection
 tags: transition,selection
-publish: True
+published: True
 position: 4
 ---
 

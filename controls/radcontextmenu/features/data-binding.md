@@ -4,7 +4,7 @@ page_title: Data Binding
 description: Data Binding
 slug: radcontextmenu-features-data-binding
 tags: data,binding
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Creating a Chart With Custom Layout
 description: Creating a Chart With Custom Layout
 slug: radchart-populating-with-data-creating-a-chart-with-custom-layout
 tags: creating,a,chart,with,custom,layout
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Customizing the DragVisual
 description: Customizing the DragVisual
 slug: dragdropmanager-behaviors-customizingdragvisual
 tags: customizing,the,dragvisual
-publish: True
+published: True
 position: 5
 ---
 

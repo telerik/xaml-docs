@@ -4,7 +4,7 @@ page_title: How to compress and decompress a stream
 description: How to compress and decompress a stream
 slug: radziplibrary-howto-compress-decompress-stream
 tags: how,to,compress,and,decompress,a,stream
-publish: True
+published: True
 position: 0
 ---
 

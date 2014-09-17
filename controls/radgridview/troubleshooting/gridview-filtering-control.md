@@ -4,7 +4,7 @@ page_title: Filter goes outside the window
 description: Filter goes outside the window
 slug: gridview-troubleshooting-filtering-control
 tags: filter,goes,outside,the,window
-publish: True
+published: True
 position: 11
 ---
 

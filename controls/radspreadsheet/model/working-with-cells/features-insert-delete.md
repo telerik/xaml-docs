@@ -4,7 +4,7 @@ page_title: Insert and Remove Cells
 description: Insert and Remove Cells 
 slug: radspreadsheet-features-insert-delete
 tags: insert,and,remove,cells,
-publish: False
+published: False
 position: 1
 ---
 

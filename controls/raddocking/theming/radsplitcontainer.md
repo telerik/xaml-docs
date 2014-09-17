@@ -4,7 +4,7 @@ page_title: Theming the RadSplitContainer
 description: Theming the RadSplitContainer
 slug: raddocking-theming-radsplitcontainer
 tags: theming,the,radsplitcontainer
-publish: True
+published: True
 position: 4
 ---
 

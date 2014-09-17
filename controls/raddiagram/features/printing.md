@@ -4,7 +4,7 @@ page_title: Printing
 description: Printing
 slug: raddiagram-features-printing
 tags: printing
-publish: True
+published: True
 position: 14
 ---
 

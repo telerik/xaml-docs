@@ -4,7 +4,7 @@ page_title: Create Thermometer
 description: Create Thermometer
 slug: linear-gauge-create-thermometer
 tags: create,thermometer
-publish: True
+published: True
 position: 0
 ---
 

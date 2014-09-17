@@ -4,7 +4,7 @@ page_title: Resources
 description: Resources
 slug: radscheduleview-features-resources
 tags: resources
-publish: True
+published: True
 position: 0
 ---
 

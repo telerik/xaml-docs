@@ -4,7 +4,7 @@ page_title: Populating With Data RadTreeMap
 description: Populating With Data RadTreeMap
 slug: radtreemap-populating-with-data-radtreemap
 tags: populating,with,data,radtreemap
-publish: True
+published: True
 position: 4
 ---
 

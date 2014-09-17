@@ -4,7 +4,7 @@ page_title: Performance
 description: Performance
 slug: radrichtextbox-performance
 tags: performance
-publish: True
+published: True
 position: 17
 ---
 

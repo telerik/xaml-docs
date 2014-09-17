@@ -4,7 +4,7 @@ page_title: Features
 description: Features
 slug: radexpander-features-overview
 tags: features
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Table Definitions and Relationships
 description: Table Definitions and Relationships
 slug: radscheduleview-populating-with-data-binding-to-db-datatier
 tags: table,definitions,and,relationships
-publish: True
+published: True
 position: 2
 ---
 

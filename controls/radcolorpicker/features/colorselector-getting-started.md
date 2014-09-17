@@ -4,7 +4,7 @@ page_title: RadColorSelector
 description: RadColorSelector
 slug: colorselector-getting-started
 tags: radcolorselector
-publish: True
+published: True
 position: 1
 ---
 

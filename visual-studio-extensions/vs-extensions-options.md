@@ -4,7 +4,7 @@ page_title: Options
 description: Options
 slug: radcontrols-vs-extensions-options
 tags: options
-publish: True
+published: True
 position: 11
 ---
 

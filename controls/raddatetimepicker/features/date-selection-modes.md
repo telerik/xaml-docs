@@ -4,7 +4,7 @@ page_title: Date Selection Modes
 description: Date Selection Modes
 slug: raddatetimepicker-features-date-selection-modes
 tags: date,selection,modes
-publish: True
+published: True
 position: 1
 ---
 

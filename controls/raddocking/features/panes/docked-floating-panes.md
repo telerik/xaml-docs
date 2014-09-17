@@ -4,7 +4,7 @@ page_title: Docked/Floating Panes
 description: Docked/Floating Panes
 slug: raddocking-features-panes-docked-floating-panes
 tags: docked/floating,panes
-publish: True
+published: True
 position: 2
 ---
 

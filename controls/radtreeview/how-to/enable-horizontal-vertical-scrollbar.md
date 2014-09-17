@@ -4,7 +4,7 @@ page_title: Enable the Horizontal and Vertical Scrollbars
 description: Enable the Horizontal and Vertical Scrollbars
 slug: radtreeview-how-to-enable-horizontal-vertical-scrollbar
 tags: enable,the,horizontal,and,vertical,scrollbars
-publish: True
+published: True
 position: 21
 ---
 

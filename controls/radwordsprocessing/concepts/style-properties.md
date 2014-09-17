@@ -4,7 +4,7 @@ page_title: Style Properties
 description: Style Properties
 slug: radwordsprocessing-concepts-style-properties
 tags: style,properties
-publish: True
+published: True
 position: 5
 ---
 

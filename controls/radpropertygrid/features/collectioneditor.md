@@ -4,7 +4,7 @@ page_title: CollectionEditors
 description: CollectionEditors
 slug: radpropertygrid-collectioneditor
 tags: collectioneditors
-publish: True
+published: True
 position: 5
 ---
 

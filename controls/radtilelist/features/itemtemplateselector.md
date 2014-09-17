@@ -4,7 +4,7 @@ page_title: ItemTemplateSelector
 description: ItemTemplateSelector
 slug: radtilelist-itemtemplateselector
 tags: itemtemplateselector
-publish: True
+published: True
 position: 1
 ---
 

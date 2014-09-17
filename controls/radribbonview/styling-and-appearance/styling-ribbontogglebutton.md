@@ -4,7 +4,7 @@ page_title: Styling the RadRibbonToggleButton
 description: Styling the RadRibbonToggleButton
 slug: radribbonview-styling-ribbontogglebutton
 tags: styling,the,radribbontogglebutton
-publish: True
+published: True
 position: 13
 ---
 

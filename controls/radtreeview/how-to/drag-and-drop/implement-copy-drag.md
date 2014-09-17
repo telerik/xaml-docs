@@ -4,7 +4,7 @@ page_title: Implement Copy Drag
 description: Implement Copy Drag
 slug: radtreeview-how-to-implement-copy-drag
 tags: implement,copy,drag
-publish: True
+published: True
 position: 5
 ---
 

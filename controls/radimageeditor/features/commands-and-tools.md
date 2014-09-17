@@ -4,7 +4,7 @@ page_title: Commands and Tools
 description: Commands and Tools
 slug: radimageeditor-features-commands-and-tools
 tags: commands,and,tools
-publish: True
+published: True
 position: 0
 ---
 

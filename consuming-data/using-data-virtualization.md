@@ -4,7 +4,7 @@ page_title: Using Data Virtualization
 description: Using Data Virtualization
 slug: using-data-virtualization
 tags: using,data,virtualization
-publish: True
+published: True
 position: 11
 ---
 

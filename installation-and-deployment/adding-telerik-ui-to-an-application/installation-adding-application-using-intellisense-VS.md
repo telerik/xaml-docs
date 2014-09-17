@@ -4,7 +4,7 @@ page_title: Using IntelliSense in Visual Studio
 description: Using IntelliSense in Visual Studio
 slug: installation-adding-application-using-intellisense-vs
 tags: using,intellisense,in,visual,studio
-publish: True
+published: True
 position: 4
 site_name: Silverlight
 ---

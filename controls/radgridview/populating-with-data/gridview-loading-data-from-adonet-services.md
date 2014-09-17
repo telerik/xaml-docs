@@ -4,7 +4,7 @@ page_title: Loading Data from ADO.NET Services
 description: Loading Data from ADO.NET Services
 slug: gridview-loading-data-from-adonet-services
 tags: loading,data,from,ado.net,services
-publish: True
+published: True
 position: 7
 ---
 

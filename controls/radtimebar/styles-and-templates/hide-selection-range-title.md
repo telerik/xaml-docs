@@ -4,7 +4,7 @@ page_title: Hide Selection Range Title
 description: Hide Selection Range Title
 slug: radtimebar-hide-selection-range-title
 tags: hide,selection,range,title
-publish: True
+published: True
 position: 1
 ---
 

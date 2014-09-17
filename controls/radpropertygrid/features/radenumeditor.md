@@ -4,7 +4,7 @@ page_title: FlagEnumEditor
 description: FlagEnumEditor
 slug: radpropertygrid-radenumeditor
 tags: flagenumeditor
-publish: True
+published: True
 position: 6
 ---
 

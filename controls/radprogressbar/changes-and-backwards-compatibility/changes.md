@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: radprogressbar-changes
 tags: changes
-publish: True
+published: True
 position: 0
 ---
 

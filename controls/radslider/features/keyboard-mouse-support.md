@@ -4,7 +4,7 @@ page_title: Keyboard and Mouse support
 description: Keyboard and Mouse support
 slug: radslider-keyboard-mouse-support
 tags: keyboard,and,mouse,support
-publish: True
+published: True
 position: 7
 ---
 

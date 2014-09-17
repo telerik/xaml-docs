@@ -4,7 +4,7 @@ page_title: Creating Numeric Gauge
 description: Creating Numeric Gauge
 slug: radgauge-getting-started-creating-numeric-gauge
 tags: creating,numeric,gauge
-publish: True
+published: True
 position: 2
 ---
 

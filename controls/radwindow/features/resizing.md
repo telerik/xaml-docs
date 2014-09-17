@@ -4,7 +4,7 @@ page_title: Resizing
 description: Resizing
 slug: radwindow-features-resizing
 tags: resizing
-publish: True
+published: True
 position: 7
 ---
 

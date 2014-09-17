@@ -4,7 +4,7 @@ page_title: Orientation and DropDownPlacement
 description: Orientation and DropDownPlacement
 slug: radmenu-features-orientation
 tags: orientation,and,dropdownplacement
-publish: True
+published: True
 position: 3
 ---
 

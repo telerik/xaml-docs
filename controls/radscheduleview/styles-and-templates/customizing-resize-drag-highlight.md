@@ -4,7 +4,7 @@ page_title: Customizing the Resize and DragDropHighlight
 description: Customizing the Resize and DragDropHighlight
 slug: radscheduleview-styles-and-templates-customizing-resize-drag-highlight
 tags: customizing,the,resize,and,dragdrophighlight
-publish: True
+published: True
 position: 7
 ---
 

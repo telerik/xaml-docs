@@ -4,7 +4,7 @@ page_title: Expand and Select Item with Load on Demand Enabled RadTreeView
 description: Expand and Select Item with Load on Demand Enabled RadTreeView
 slug: radtreeview-howto-exapand-select-item-with-lod-enabled-treeview
 tags: expand,and,select,item,with,load,on,demand,enabled,radtreeview
-publish: True
+published: True
 position: 25
 ---
 

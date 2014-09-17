@@ -4,7 +4,7 @@ page_title: Editing Control Templates in Expression Blend
 description: Editing Control Templates in Expression Blend
 slug: common-styling-appearance-edit-control-templates-blend
 tags: editing,control,templates,in,expression,blend
-publish: True
+published: True
 position: 2
 ---
 

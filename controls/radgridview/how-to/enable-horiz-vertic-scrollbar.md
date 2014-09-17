@@ -4,7 +4,7 @@ page_title: Enable Horizontal and Vertical Scrollbar
 description: Enable Horizontal and Vertical Scrollbar 
 slug: radgridview-how-to-enable-horiz-vertic-scrollbar
 tags: enable,horizontal,and,vertical,scrollbar,
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Working with Selection
 description: Working with Selection
 slug: radmaskedinput-features-selection
 tags: working,with,selection
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Events
 description: Events
 slug: radrichtextbox-events-overview
 tags: events
-publish: True
+published: True
 position: 13
 ---
 

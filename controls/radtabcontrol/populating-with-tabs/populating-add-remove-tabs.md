@@ -4,7 +4,7 @@ page_title: Add and Remove Tabs
 description: Add and Remove Tabs
 slug: radtabcontrol-populating-add-remove-tabs
 tags: add,and,remove,tabs
-publish: True
+published: True
 position: 0
 ---
 

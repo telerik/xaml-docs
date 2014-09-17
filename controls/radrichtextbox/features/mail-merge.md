@@ -4,7 +4,7 @@ page_title: Mail Merge
 description: Mail Merge
 slug: radrichtextbox-features-mail-merge
 tags: mail,merge
-publish: True
+published: True
 position: 13
 ---
 

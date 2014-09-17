@@ -4,7 +4,7 @@ page_title: Close Filtering Popup on Pressing Filter Button
 description: Close Filtering Popup on Pressing Filter Button
 slug: gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button
 tags: close,filtering,popup,on,pressing,filter,button
-publish: True
+published: True
 position: 22
 ---
 

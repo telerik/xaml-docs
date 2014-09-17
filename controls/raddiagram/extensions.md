@@ -4,7 +4,7 @@ page_title: Extensions
 description: Extensions
 slug: raddiagram-extensions
 tags: extensions
-publish: True
+published: True
 position: 12
 ---
 

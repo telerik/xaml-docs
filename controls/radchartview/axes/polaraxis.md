@@ -4,7 +4,7 @@ page_title: Polar Axis
 description: Polar Axis
 slug: radchartview-axes-polaraxis
 tags: polar,axis
-publish: True
+published: True
 position: 4
 ---
 

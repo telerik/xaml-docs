@@ -4,7 +4,7 @@ page_title: Flattened Series
 description: Flattened Series
 slug: radchart-features-flattened-series
 tags: flattened,series
-publish: True
+published: True
 position: 1
 ---
 

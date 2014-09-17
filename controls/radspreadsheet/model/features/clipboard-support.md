@@ -4,7 +4,7 @@ page_title: Clipboard Support
 description: Clipboard Support
 slug: radspreadsheet-clipboard-support
 tags: clipboard,support
-publish: False
+published: False
 position: 5
 ---
 

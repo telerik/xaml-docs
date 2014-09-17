@@ -4,7 +4,7 @@ page_title: Docx
 description: Docx
 slug: radwordsprocessing-formats-and-conversion-docx
 tags: docx
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: End User Manual
 description: End User Manual
 slug: datafilter-end-user-manual
 tags: end,user,manual
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Stop Showing the Unfocused State
 description: Stop Showing the Unfocused State
 slug: gridview-selection-unfocused-state
 tags: stop,showing,the,unfocused,state
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: DataBinding Support Overview
 description: DataBinding Support Overview
 slug: databinding-support
 tags: databinding,support,overview
-publish: True
+published: True
 position: 4
 ---
 

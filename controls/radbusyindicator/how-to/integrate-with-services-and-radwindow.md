@@ -4,7 +4,7 @@ page_title: Integrate with services and a RadWindow
 description: Integrate with services and a RadWindow
 slug: radbusyindicator-how-to-integrate-with-services-and-radwindow
 tags: integrate,with,services,and,a,radwindow
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Installing UI for Silverlight from ZIP File
 description: Installing UI for Silverlight from ZIP File
 slug: installation-installing-from-zip
 tags: installing,ui,for,silverlight,from,zip,file
-publish: True
+published: True
 position: 3
 site_name: Silverlight
 ---

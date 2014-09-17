@@ -4,7 +4,7 @@ page_title: Use Keyboard to Get User Response
 description: Use Keyboard to Get User Response
 slug: radwindow-how-to-use-keyboard-to-get-user-response
 tags: use,keyboard,to,get,user,response
-publish: True
+published: True
 position: 0
 ---
 

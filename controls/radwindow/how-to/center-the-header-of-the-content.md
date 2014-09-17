@@ -4,7 +4,7 @@ page_title: Center the Header of the RadWindow
 description: Center the Header of the RadWindow
 slug: radwindow-how-to-center-the-header-of-the-content
 tags: center,the,header,of,the,radwindow
-publish: True
+published: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Transitions
 description: Transitions
 slug: radtransition-features-transitions
 tags: transitions
-publish: True
+published: True
 position: 1
 ---
 

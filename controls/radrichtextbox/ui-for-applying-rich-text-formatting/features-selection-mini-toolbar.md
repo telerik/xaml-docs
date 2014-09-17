@@ -4,7 +4,7 @@ page_title: Selection Mini Tool Bar
 description: Selection Mini Tool Bar
 slug: radrichtextbox-features-selection-mini-toolbar
 tags: selection,mini,tool,bar
-publish: True
+published: True
 position: 3
 ---
 

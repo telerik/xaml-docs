@@ -4,7 +4,7 @@ page_title: Hyperlink
 description: Hyperlink
 slug: radspreadsheet-features-hyperlink
 tags: hyperlink
-publish: False
+published: False
 position: 8
 ---
 

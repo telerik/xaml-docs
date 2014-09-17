@@ -4,7 +4,7 @@ page_title: Event-Based Setup
 description: Event-Based Setup
 slug: patterns-and-practices-eventtocommand-eventbased
 tags: event-based,setup
-publish: True
+published: True
 position: 1
 ---
 

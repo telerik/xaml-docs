@@ -4,7 +4,7 @@ page_title: Memory Functionality
 description: Memory Functionality
 slug: radcalculator_memoryfunctionality
 tags: memory,functionality
-publish: True
+published: True
 position: 0
 ---
 

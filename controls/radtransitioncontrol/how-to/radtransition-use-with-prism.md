@@ -4,7 +4,7 @@ page_title: Use with Prism
 description: Use with Prism
 slug: radtransition-how-to-use-with-prism
 tags: use,with,prism
-publish: True
+published: True
 position: 1
 ---
 

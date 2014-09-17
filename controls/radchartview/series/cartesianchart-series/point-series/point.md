@@ -4,7 +4,7 @@ page_title: PointSeries
 description: PointSeries
 slug: radchartview-series-point
 tags: pointseries
-publish: True
+published: True
 position: 0
 ---
 

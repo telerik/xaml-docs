@@ -4,7 +4,7 @@ page_title: Using IntelliSense in Visual Studio
 description: Using IntelliSense in Visual Studio
 slug: installation-adding-application-using-intellisense-vs-wpf
 tags: using,intellisense,in,visual,studio
-publish: True
+published: True
 position: 5
 site_name: WPF
 ---

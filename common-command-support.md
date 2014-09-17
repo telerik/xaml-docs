@@ -4,7 +4,7 @@ page_title: Command Support
 description: Command Support
 slug: common-command-support
 tags: command,support
-publish: True
+published: True
 position: 7
 site_name: Silverlight
 ---

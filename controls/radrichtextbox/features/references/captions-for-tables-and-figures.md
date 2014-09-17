@@ -4,7 +4,7 @@ page_title: Captions for Tables and Figures
 description: Captions for Tables and Figures
 slug: radrichtextbox-features-captions-for-tables-and-figures
 tags: captions,for,tables,and,figures
-publish: True
+published: True
 position: 3
 ---
 

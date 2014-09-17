@@ -4,7 +4,7 @@ page_title: Connections
 description: Connections
 slug: raddiagrams-features-connections
 tags: connections
-publish: True
+published: True
 position: 1
 ---
 

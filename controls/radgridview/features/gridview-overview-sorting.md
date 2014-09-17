@@ -4,7 +4,7 @@ page_title: Sorting
 description: Sorting
 slug: gridview-overview-sorting
 tags: sorting
-publish: True
+published: True
 position: 5
 ---
 

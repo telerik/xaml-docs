@@ -4,7 +4,7 @@ page_title: Upgrading to a new UI for WPF distribution
 description: Upgrading to a new UI for WPF distribution
 slug: radcontrols-for-wpf-vs-extensions-upgrading
 tags: upgrading,to,a,new,ui,for,wpf,distribution
-publish: True
+published: True
 position: 8
 site_name: WPF
 ---

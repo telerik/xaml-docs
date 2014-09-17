@@ -4,7 +4,7 @@ page_title: Features
 description: Features
 slug: radpivotgrid-features
 tags: features
-publish: True
+published: True
 position: 5
 ---
 

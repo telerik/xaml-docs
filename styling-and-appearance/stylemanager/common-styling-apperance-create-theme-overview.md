@@ -4,7 +4,7 @@ page_title: Creating a Custom Theme
 description: Creating a Custom Theme
 slug: common-styling-apperance-create-theme-overview
 tags: creating,a,custom,theme
-publish: True
+published: True
 position: 5
 site_name: Silverlight
 ---

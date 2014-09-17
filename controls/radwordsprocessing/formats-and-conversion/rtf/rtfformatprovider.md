@@ -4,7 +4,7 @@ page_title: Using RtfFormatProvider
 description: Using RtfFormatProvider
 slug: radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider
 tags: using,rtfformatprovider
-publish: True
+published: True
 position: 1
 ---
 

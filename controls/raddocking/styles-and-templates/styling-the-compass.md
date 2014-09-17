@@ -4,7 +4,7 @@ page_title: Styling the Compass
 description: Styling the Compass
 slug: raddocking-styling-the-compass
 tags: styling,the,compass
-publish: True
+published: True
 position: 5
 ---
 

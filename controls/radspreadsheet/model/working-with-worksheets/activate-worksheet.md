@@ -4,7 +4,7 @@ page_title: Activate a Worksheet
 description: Activate a Worksheet
 slug: radspreadsheet-model-working-with-worksheets-activate-worksheet
 tags: activate,a,worksheet
-publish: False
+published: False
 position: 2
 ---
 

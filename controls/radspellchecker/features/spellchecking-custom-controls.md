@@ -4,7 +4,7 @@ page_title: SpellChecking Custom Controls
 description: SpellChecking Custom Controls
 slug: radspellchecker-spellchecking-custom-controls
 tags: spellchecking,custom,controls
-publish: True
+published: True
 position: 2
 ---
 

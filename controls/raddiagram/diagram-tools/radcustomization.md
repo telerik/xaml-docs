@@ -4,7 +4,7 @@ page_title: Tools Customization
 description: Tools Customization
 slug: raddiagram-tools-customization
 tags: tools,customization
-publish: True
+published: True
 position: 4
 ---
 

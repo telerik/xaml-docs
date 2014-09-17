@@ -4,7 +4,7 @@ page_title: Prism Option
 description: Prism Option
 slug: patterns-and-practices-eventtocommand-prism
 tags: prism,option
-publish: True
+published: True
 position: 4
 ---
 

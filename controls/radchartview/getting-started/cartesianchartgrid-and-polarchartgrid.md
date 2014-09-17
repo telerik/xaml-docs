@@ -4,7 +4,7 @@ page_title: CartesianChartGrid and PolarChartGrid
 description: CartesianChartGrid and PolarChartGrid
 slug: radchartview-cartesianchartgrid-and-polarchartgrid
 tags: cartesianchartgrid,and,polarchartgrid
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the RadRadioButton
 description: Styling the RadRadioButton
 slug: radbuttons-styles-and-templates-styling-the-radradiobutton
 tags: styling,the,radradiobutton
-publish: True
+published: True
 position: 5
 ---
 

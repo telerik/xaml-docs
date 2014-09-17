@@ -4,7 +4,7 @@ page_title: Keyboard Support
 description: Keyboard Support
 slug: raddataform-features-keyboard-support
 tags: keyboard,support
-publish: True
+published: True
 position: 4
 ---
 

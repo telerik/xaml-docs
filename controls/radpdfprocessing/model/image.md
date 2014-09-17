@@ -4,7 +4,7 @@ page_title: Image
 description: Image
 slug: radpdfprocessing-model-image
 tags: image
-publish: True
+published: True
 position: 3
 ---
 

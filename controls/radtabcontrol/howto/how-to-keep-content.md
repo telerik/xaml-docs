@@ -4,7 +4,7 @@ page_title: How to Keep the Content State
 description: How to Keep the Content State
 slug: radtabcontrol-how-to-keep-content
 tags: how,to,keep,the,content,state
-publish: True
+published: True
 position: 13
 ---
 

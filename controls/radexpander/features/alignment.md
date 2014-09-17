@@ -4,7 +4,7 @@ page_title: Alignment
 description: Alignment
 slug: radexpander-features-alignment
 tags: alignment
-publish: True
+published: True
 position: 2
 ---
 

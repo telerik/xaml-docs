@@ -4,7 +4,7 @@ page_title: Templating the Point Marks
 description: Templating the Point Marks
 slug: radchart-templating-point-marks
 tags: templating,the,point,marks
-publish: True
+published: True
 position: 13
 ---
 

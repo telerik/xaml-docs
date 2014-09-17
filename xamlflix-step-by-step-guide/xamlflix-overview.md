@@ -4,7 +4,7 @@ page_title: What is XAMLflix?
 description: What is XAMLflix?
 slug: xamlflix-overview
 tags: what,is,xamlflix?
-publish: True
+published: True
 position: 0
 ---
 

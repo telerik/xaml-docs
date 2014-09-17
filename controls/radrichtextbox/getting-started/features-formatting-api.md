@@ -4,7 +4,7 @@ page_title: Formatting API
 description: Formatting API
 slug: radrichtextbox-features-formatting-api
 tags: formatting,api
-publish: True
+published: True
 position: 2
 ---
 

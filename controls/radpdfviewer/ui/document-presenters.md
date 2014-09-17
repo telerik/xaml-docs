@@ -4,7 +4,7 @@ page_title: Document Presenters
 description: Document Presenters
 slug: radpdfviewer-ui-document-presenters
 tags: document,presenters
-publish: True
+published: True
 position: 6
 ---
 

@@ -4,7 +4,7 @@ page_title: Localization
 description: Localization
 slug: gridview-localization2
 tags: localization
-publish: True
+published: True
 position: 0
 ---
 

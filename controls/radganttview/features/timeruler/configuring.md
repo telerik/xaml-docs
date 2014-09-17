@@ -4,7 +4,7 @@ page_title: Configuring the TimeRuler
 description: Configuring the TimeRuler
 slug: radganttview-features-timeruler-configuring
 tags: configuring,the,timeruler
-publish: True
+published: True
 position: 0
 ---
 

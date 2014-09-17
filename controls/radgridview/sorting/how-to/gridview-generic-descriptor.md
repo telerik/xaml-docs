@@ -4,7 +4,7 @@ page_title: Use generic SortDescriptor
 description: Use generic SortDescriptor
 slug: gridview-sorting-generic-descriptor
 tags: use,generic,sortdescriptor
-publish: True
+published: True
 position: 1
 ---
 

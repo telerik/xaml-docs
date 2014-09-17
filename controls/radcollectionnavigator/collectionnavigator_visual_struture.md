@@ -4,7 +4,7 @@ page_title: Visual Structure
 description: Visual Structure
 slug: collectionnavigator_visual_struture
 tags: visual,structure
-publish: True
+published: True
 position: 3
 ---
 

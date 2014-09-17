@@ -4,7 +4,7 @@ page_title: Numeric Indicator
 description: Numeric Indicator
 slug: radgauge-features-indicators-numeric-indicator
 tags: numeric,indicator
-publish: True
+published: True
 position: 0
 ---
 

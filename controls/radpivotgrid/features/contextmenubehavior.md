@@ -4,7 +4,7 @@ page_title: FieldList ContextMenuBehavior
 description: FieldList ContextMenuBehavior
 slug: radpivotgrid-features-contextmenubehavior
 tags: fieldlist,contextmenubehavior
-publish: True
+published: True
 position: 5
 ---
 

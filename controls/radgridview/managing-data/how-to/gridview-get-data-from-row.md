@@ -4,7 +4,7 @@ page_title: Get the data from a row
 description: Get the data from a row
 slug: gridview-how-to-get-data-from-row
 tags: get,the,data,from,a,row
-publish: True
+published: True
 position: 3
 ---
 

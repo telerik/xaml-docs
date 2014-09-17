@@ -4,7 +4,7 @@ page_title: Filtering Popup Remains Opened
 description: Filtering Popup Remains Opened
 slug: gridview-filtering-faq-popup-stays
 tags: filtering,popup,remains,opened
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: TimeRuler Configuration
 description: TimeRuler Configuration
 slug: radscheduleview-end-user-capabilities-timerulerconfiguration
 tags: timeruler,configuration
-publish: True
+published: True
 position: 4
 ---
 

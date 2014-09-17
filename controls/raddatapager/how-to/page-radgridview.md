@@ -4,7 +4,7 @@ page_title: Page RadGridView
 description: Page RadGridView
 slug: raddatapager-how-to-page-radgridview
 tags: page,radgridview
-publish: True
+published: True
 position: 1
 ---
 

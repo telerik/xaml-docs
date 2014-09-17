@@ -4,7 +4,7 @@ page_title: GanttTask Deadline
 description: GanttTask Deadline
 slug: radganttview-features-items-gantttask-deadline
 tags: gantttask,deadline
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Highlighting Items
 description: Highlighting Items
 slug: radganttview-features-items-highlighting
 tags: highlighting,items
-publish: True
+published: True
 position: 3
 ---
 

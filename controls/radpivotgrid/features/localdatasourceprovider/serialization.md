@@ -4,7 +4,7 @@ page_title: Serialization
 description: Serialization
 slug: radpivotgrid-features-serialization
 tags: serialization
-publish: True
+published: True
 position: 5
 ---
 

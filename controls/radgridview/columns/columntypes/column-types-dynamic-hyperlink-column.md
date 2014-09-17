@@ -4,7 +4,7 @@ page_title: Dynamic Hyperlink Column
 description: Dynamic Hyperlink Column
 slug: radgridview-columns-column-types-dynamic-hyperlink-column
 tags: dynamic,hyperlink,column
-publish: True
+published: True
 position: 8
 ---
 

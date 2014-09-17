@@ -4,7 +4,7 @@ page_title: How to hide/show the pop-up pane in code
 description: How to hide/show the pop-up pane in code
 slug: raddatetimepicker-how-to-hide-show-pop-up-in-code
 tags: how,to,hide/show,the,pop-up,pane,in,code
-publish: True
+published: True
 position: 1
 ---
 

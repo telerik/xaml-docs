@@ -4,7 +4,7 @@ page_title: Styling the Visual Cue
 description: Styling the Visual Cue
 slug: raddocking-styling-the-visual-cue
 tags: styling,the,visual,cue
-publish: True
+published: True
 position: 7
 ---
 

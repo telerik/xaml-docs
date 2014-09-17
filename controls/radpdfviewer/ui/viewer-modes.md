@@ -4,7 +4,7 @@ page_title: Viewer Modes
 description: Viewer Modes
 slug: radpdfviewer-viewer-modes
 tags: viewer,modes
-publish: True
+published: True
 position: 3
 ---
 

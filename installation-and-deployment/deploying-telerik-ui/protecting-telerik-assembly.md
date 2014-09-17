@@ -4,7 +4,7 @@ page_title: Protecting Telerik UI assembly
 description: Protecting Telerik UI assembly
 slug: protecting-telerik-radcontrols-assembly
 tags: protecting,telerik,ui,assembly
-publish: True
+published: True
 position: 2
 site_name: Silverlight
 ---

@@ -4,7 +4,7 @@ page_title: Insert and Remove Rows and Columns
 description: Insert and Remove Rows and Columns
 slug: radspreadprocessing-working-with-rows-and-columns-insert-and-remove
 tags: insert,and,remove,rows,and,columns
-publish: True
+published: True
 position: 1
 ---
 

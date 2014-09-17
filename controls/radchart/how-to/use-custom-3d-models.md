@@ -4,7 +4,7 @@ page_title: Use Custom 3D Models
 description: Use Custom 3D Models
 slug: radchart-how-to-use-custom-3d-models
 tags: use,custom,3d,models
-publish: True
+published: True
 position: 5
 site_name: WPF
 ---

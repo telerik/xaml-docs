@@ -4,7 +4,7 @@ page_title: Infinite Paging
 description: Infinite Paging
 slug: raddatapager-features-infinite-paging
 tags: infinite,paging
-publish: True
+published: True
 position: 2
 ---
 

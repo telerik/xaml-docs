@@ -4,7 +4,7 @@ page_title: Set Cursor to Arrow while Dragging
 description: Set Cursor to Arrow while Dragging
 slug: dragdropmanager-howto-set-cursor-to-arrow-while-dragging
 tags: set,cursor,to,arrow,while,dragging
-publish: True
+published: True
 position: 1
 ---
 

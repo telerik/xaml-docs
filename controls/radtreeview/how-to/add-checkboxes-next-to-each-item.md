@@ -4,7 +4,7 @@ page_title: Add Check Boxes (Radio Buttons) Next to Each Item
 description: Add Check Boxes (Radio Buttons) Next to Each Item
 slug: radtreeview-how-to-add-checkboxes-next-to-each-item
 tags: add,check,boxes,(radio,buttons),next,to,each,item
-publish: True
+published: True
 position: 7
 ---
 

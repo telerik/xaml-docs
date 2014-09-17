@@ -4,7 +4,7 @@ page_title: Binding DataPointMember to a DependencyProperty
 description: Binding DataPointMember to a DependencyProperty
 slug: radchart-howto-binding-datapointmember-to-a-depenndency-property
 tags: binding,datapointmember,to,a,dependencyproperty
-publish: True
+published: True
 position: 6
 ---
 

@@ -4,7 +4,7 @@ page_title: Layout Strategies
 description: Layout Strategies
 slug: radtreemap-layout-strategies
 tags: layout,strategies
-publish: True
+published: True
 position: 3
 ---
 

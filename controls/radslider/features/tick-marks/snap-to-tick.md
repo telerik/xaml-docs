@@ -4,7 +4,7 @@ page_title: Snap to Tick
 description: Snap to Tick
 slug: radslider-snap-to-tick
 tags: snap,to,tick
-publish: True
+published: True
 position: 3
 ---
 

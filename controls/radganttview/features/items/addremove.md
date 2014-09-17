@@ -4,7 +4,7 @@ page_title: Add / Remove Items
 description: Add / Remove Items
 slug: radganttview-features-items-addremove
 tags: add,/,remove,items
-publish: True
+published: True
 position: 1
 ---
 

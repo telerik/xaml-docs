@@ -4,7 +4,7 @@ page_title: Binding to Dynamic Data
 description: Binding to Dynamic Data
 slug: radmenu-populating-with-data-binding-to-dynamic-data
 tags: binding,to,dynamic,data
-publish: True
+published: True
 position: 3
 ---
 

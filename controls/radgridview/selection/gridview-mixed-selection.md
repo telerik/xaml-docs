@@ -4,7 +4,7 @@ page_title: Mixed Selection
 description: Mixed Selection
 slug: gridview-mixed-selection
 tags: mixed,selection
-publish: True
+published: True
 position: 2
 ---
 

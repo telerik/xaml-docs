@@ -4,7 +4,7 @@ page_title: Localization
 description: Localization
 slug: raddocking-localization
 tags: localization
-publish: True
+published: True
 position: 5
 ---
 

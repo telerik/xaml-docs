@@ -4,7 +4,7 @@ page_title: Managing Docking Controls Dynamically
 description: Managing Docking Controls Dynamically
 slug: raddocking-managing-docking-controls-dynamically
 tags: managing,docking,controls,dynamically
-publish: True
+published: True
 position: 1
 ---
 

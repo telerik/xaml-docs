@@ -4,7 +4,7 @@ page_title: What is a Row? What is a Column?
 description: What is a Row? What is a Column?
 slug: radspreadprocessing-working-with-rows-and-columns-what-is-row-column
 tags: what,is,a,row?,what,is,a,column?
-publish: True
+published: True
 position: 0
 ---
 

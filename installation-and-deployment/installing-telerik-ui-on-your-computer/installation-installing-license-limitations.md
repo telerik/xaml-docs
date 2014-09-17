@@ -4,7 +4,7 @@ page_title: Trial License Limitations
 description: Trial License Limitations
 slug: installation-installing-license-limitations
 tags: trial,license,limitations
-publish: True
+published: True
 position: 9
 site_name: Silverlight
 ---

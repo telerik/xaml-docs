@@ -4,7 +4,7 @@ page_title: Split Button
 description: Split Button
 slug: radbuttons-features-split-button
 tags: split,button
-publish: True
+published: True
 position: 3
 ---
 

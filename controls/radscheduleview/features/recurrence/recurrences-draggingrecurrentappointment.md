@@ -4,7 +4,7 @@ page_title: Dragging a Recurrent Appointment
 description: Dragging a Recurrent Appointment
 slug: radscheduleview-features-recurrences-draggingrecurrentappointment
 tags: dragging,a,recurrent,appointment
-publish: True
+published: True
 position: 4
 ---
 

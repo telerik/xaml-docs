@@ -4,7 +4,7 @@ page_title: Logarithmic Scale
 description: Logarithmic Scale
 slug: radchart-features-axes-logarithmic-scale
 tags: logarithmic,scale
-publish: True
+published: True
 position: 5
 ---
 

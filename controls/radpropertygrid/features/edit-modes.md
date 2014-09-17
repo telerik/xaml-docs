@@ -4,7 +4,7 @@ page_title: Edit Modes
 description: Edit Modes
 slug: radpropertygrid-edit-modes
 tags: edit,modes
-publish: True
+published: True
 position: 16
 ---
 

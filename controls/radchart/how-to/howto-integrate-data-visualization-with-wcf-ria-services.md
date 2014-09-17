@@ -4,7 +4,7 @@ page_title: Integrate Data Visualization Controls With WCF RIA services
 description: Integrate Data Visualization Controls With WCF RIA services
 slug: radchart-howto-integrate-data-visualization-controls-with-wcf-ria-services
 tags: integrate,data,visualization,controls,with,wcf,ria,services
-publish: True
+published: True
 position: 14
 site_name: Silverlight
 ---

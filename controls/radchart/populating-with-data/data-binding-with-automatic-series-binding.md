@@ -4,7 +4,7 @@ page_title: Data Binding with Automatic Series Mappings
 description: Data Binding with Automatic Series Mappings
 slug: radchart-populating-with-data-data-binding-with-automatic-series-binding
 tags: data,binding,with,automatic,series,mappings
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Project creation and configuration
 description: Project creation and configuration
 slug: radcontrols-for-silverlight-vs-extensions-project-configuration
 tags: project,creation,and,configuration
-publish: True
+published: True
 position: 2
 site_name: Silverlight
 ---

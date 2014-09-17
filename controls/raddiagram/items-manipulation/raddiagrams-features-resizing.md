@@ -4,7 +4,7 @@ page_title: Resizing
 description: Resizing
 slug: raddiagrams-features-resizing
 tags: resizing
-publish: True
+published: True
 position: 1
 ---
 

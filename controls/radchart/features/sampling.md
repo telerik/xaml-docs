@@ -4,7 +4,7 @@ page_title: Sampling
 description: Sampling
 slug: radchart-features-sampling
 tags: sampling
-publish: True
+published: True
 position: 24
 ---
 

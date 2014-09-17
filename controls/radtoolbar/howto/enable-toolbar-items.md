@@ -4,7 +4,7 @@ page_title: Enable / Disable items state
 description: Enable / Disable items state
 slug: radtoolbar-enable-toolbar-items
 tags: enable,/,disable,items,state
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Grid Export
 description: Grid Export
 slug: gridview-export
 tags: grid,export
-publish: True
+published: True
 position: 0
 ---
 

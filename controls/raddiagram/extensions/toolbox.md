@@ -4,7 +4,7 @@ page_title: DiagramToolbox
 description: DiagramToolbox
 slug: raddiagram-extensions-toolbox
 tags: diagramtoolbox
-publish: True
+published: True
 position: 1
 ---
 

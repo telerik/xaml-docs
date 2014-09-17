@@ -4,7 +4,7 @@ page_title: Set CharacterCasing Property of the Input Area
 description: Set CharacterCasing Property of the Input Area
 slug: radcombobox-howto-set-character-casing
 tags: set,charactercasing,property,of,the,input,area
-publish: True
+published: True
 position: 8
 site_name: WPF
 ---

@@ -4,7 +4,7 @@ page_title: Clipboard Operations
 description: Clipboard Operations
 slug: raddiagrams-features-clipboard
 tags: clipboard,operations
-publish: True
+published: True
 position: 3
 ---
 

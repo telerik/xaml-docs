@@ -4,7 +4,7 @@ page_title: Styling the CheckBoxColumn
 description: Styling the CheckBoxColumn
 slug: gridview-columns-styling-checkboxcolumn
 tags: styling,the,checkboxcolumn
-publish: True
+published: True
 position: 20
 ---
 

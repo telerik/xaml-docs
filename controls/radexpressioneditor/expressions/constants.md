@@ -4,7 +4,7 @@ page_title: Constants
 description: Constants
 slug: radexpressioneditor-expressions-constants
 tags: constants
-publish: True
+published: True
 position: 3
 ---
 

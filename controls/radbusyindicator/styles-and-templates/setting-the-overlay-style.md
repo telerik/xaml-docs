@@ -4,7 +4,7 @@ page_title: Setting the OverlayStyle
 description: Setting the OverlayStyle
 slug: radbusyindicator-styles-and-templates-setting-the-overlay-style
 tags: setting,the,overlaystyle
-publish: True
+published: True
 position: 4
 ---
 

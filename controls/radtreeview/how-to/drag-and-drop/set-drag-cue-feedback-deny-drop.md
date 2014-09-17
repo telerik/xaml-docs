@@ -4,7 +4,7 @@ page_title: Set DragCue Feedback for Denying a Drop
 description: Set DragCue Feedback for Denying a Drop
 slug: radtreeview-how-to-set-drag-cue-feedback-deny-drop
 tags: set,dragcue,feedback,for,denying,a,drop
-publish: True
+published: True
 position: 7
 ---
 

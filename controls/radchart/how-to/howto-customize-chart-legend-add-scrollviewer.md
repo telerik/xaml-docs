@@ -4,7 +4,7 @@ page_title: Customize Chart Legend - Add ScrollViewer
 description: Customize Chart Legend - Add ScrollViewer
 slug: radchart-howto-customize-chart-legend-add-scrollviewer
 tags: customize,chart,legend,-,add,scrollviewer
-publish: True
+published: True
 position: 17
 ---
 

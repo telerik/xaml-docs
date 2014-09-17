@@ -4,7 +4,7 @@ page_title: Styling the RadRibbonGallery
 description: Styling the RadRibbonGallery
 slug: radribbonview-styling-ribbongallery
 tags: styling,the,radribbongallery
-publish: True
+published: True
 position: 17
 ---
 

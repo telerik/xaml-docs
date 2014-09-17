@@ -4,7 +4,7 @@ page_title: MaskedInputExtensions
 description: MaskedInputExtensions
 slug: radmaskedinput-features-extensions
 tags: maskedinputextensions
-publish: True
+published: True
 position: 10
 ---
 

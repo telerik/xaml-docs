@@ -4,7 +4,7 @@ page_title: Tech Specs &amp; Comparisons
 description: Tech Specs &amp; Comparisons
 slug: gridview_comparison
 tags: tech,specs,&amp;,comparisons
-publish: True
+published: True
 position: 3
 site_name: Silverlight
 ---

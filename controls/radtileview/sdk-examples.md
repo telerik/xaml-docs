@@ -4,7 +4,7 @@ page_title: SDK Examples
 description: SDK Examples
 slug: radtileview-sdk-examples
 tags: sdk,examples
-publish: True
+published: True
 position: 1
 ---
 

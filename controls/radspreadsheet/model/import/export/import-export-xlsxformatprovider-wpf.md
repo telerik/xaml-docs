@@ -4,7 +4,7 @@ page_title: XlsxFormatProvider
 description: XlsxFormatProvider
 slug: radspreadsheet-model-import-export-xlsxformatprovider-wpf
 tags: xlsxformatprovider
-publish: False
+published: False
 position: 2
 site_name: WPF
 ---

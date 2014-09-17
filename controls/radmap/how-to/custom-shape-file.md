@@ -4,7 +4,7 @@ page_title: Custom Shapefile
 description: Custom Shapefile
 slug: radmap-how-to-custom-shape-file
 tags: custom,shapefile
-publish: True
+published: True
 position: 9
 ---
 

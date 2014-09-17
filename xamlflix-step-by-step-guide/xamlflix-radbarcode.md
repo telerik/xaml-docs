@@ -4,7 +4,7 @@ page_title: RadBarCode
 description: RadBarCode
 slug: xamlflix-radbarcode
 tags: radbarcode
-publish: True
+published: True
 position: 1
 ---
 

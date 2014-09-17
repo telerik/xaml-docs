@@ -4,7 +4,7 @@ page_title: Applied DataFormatString on a Column
 description: Applied DataFormatString on a Column
 slug: gridview-filtering-faq-dataformatstring-and-filtering
 tags: applied,dataformatstring,on,a,column
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling and appearance
 description: Styling and appearance
 slug: radprogressbar-styling-and-appearance-overview
 tags: styling,and,appearance
-publish: True
+published: True
 position: 3
 ---
 

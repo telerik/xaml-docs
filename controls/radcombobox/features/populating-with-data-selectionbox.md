@@ -4,7 +4,7 @@ page_title: SelectionBoxTemplate
 description: SelectionBoxTemplate
 slug: radcombobox-populating-with-data-selectionbox
 tags: selectionboxtemplate
-publish: True
+published: True
 position: 8
 ---
 

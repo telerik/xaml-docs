@@ -4,7 +4,7 @@ page_title: Read Only Rows and Cells
 description: Read Only Rows and Cells
 slug: gridview-read-only-rows-cells
 tags: read,only,rows,and,cells
-publish: True
+published: True
 position: 2
 ---
 

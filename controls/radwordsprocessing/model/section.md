@@ -4,7 +4,7 @@ page_title: Section
 description: Section
 slug: radwordsprocessing-model-section
 tags: section
-publish: True
+published: True
 position: 1
 ---
 

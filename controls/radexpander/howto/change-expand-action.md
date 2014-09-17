@@ -4,7 +4,7 @@ page_title: How To Change the Action Trigering an Expand
 description: How To Change the Action Trigering an Expand
 slug: radexpander-howto-change-expand-action
 tags: how,to,change,the,action,trigering,an,expand
-publish: True
+published: True
 position: 2
 ---
 

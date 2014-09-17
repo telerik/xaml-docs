@@ -4,7 +4,7 @@ page_title: Templated Nodes
 description: Templated Nodes
 slug: radtreeview-styles-and-templates-templated-nodes
 tags: templated,nodes
-publish: True
+published: True
 position: 6
 ---
 

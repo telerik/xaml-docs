@@ -4,7 +4,7 @@ page_title: Screen Tips
 description: Screen Tips
 slug: radribbonview-screentips
 tags: screen,tips
-publish: True
+published: True
 position: 9
 ---
 

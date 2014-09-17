@@ -4,7 +4,7 @@ page_title: How to hide week numbers
 description: How to hide week numbers
 slug: raddatetimepicker-how-to-hide-week-numbers
 tags: how,to,hide,week,numbers
-publish: True
+published: True
 position: 6
 ---
 

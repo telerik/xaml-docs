@@ -4,7 +4,7 @@ page_title: Find
 description: Find
 slug: radpdfviewer-text-find
 tags: find
-publish: False
+published: False
 position: 1
 ---
 

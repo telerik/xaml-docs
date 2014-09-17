@@ -4,7 +4,7 @@ page_title: Operators
 description: Operators
 slug: radspreadsheet-features-formulas-operators
 tags: operators
-publish: False
+published: False
 position: 0
 ---
 

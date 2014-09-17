@@ -4,7 +4,7 @@ page_title: Setting a Theme with StyleManager
 description: Setting a Theme with StyleManager
 slug: common-styling-apperance-setting-theme
 tags: setting,a,theme,with,stylemanager
-publish: True
+published: True
 position: 1
 site_name: Silverlight
 ---

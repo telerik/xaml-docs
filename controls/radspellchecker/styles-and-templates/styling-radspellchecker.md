@@ -4,7 +4,7 @@ page_title: Styling RadSpellChecker
 description: Styling RadSpellChecker
 slug: radspellchecker-styling-radspellchecker
 tags: styling,radspellchecker
-publish: True
+published: True
 position: 0
 ---
 

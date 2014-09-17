@@ -4,7 +4,7 @@ page_title: Loading Data from Web Services
 description: Loading Data from Web Services
 slug: gridview-loading-data-from-web-services
 tags: loading,data,from,web,services
-publish: True
+published: True
 position: 8
 site_name: Silverlight
 ---

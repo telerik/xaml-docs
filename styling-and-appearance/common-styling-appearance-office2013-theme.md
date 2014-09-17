@@ -4,7 +4,7 @@ page_title: Office2013 Theme
 description: Office2013 Theme
 slug: common-styling-appearance-office2013-theme
 tags: office2013,theme
-publish: True
+published: True
 position: 5
 ---
 

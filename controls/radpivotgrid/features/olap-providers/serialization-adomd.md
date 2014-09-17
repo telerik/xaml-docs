@@ -4,7 +4,7 @@ page_title: Serialize AdomdDataProvider
 description: Serialize AdomdDataProvider
 slug: radpivotgrid-features-serialization-adomd
 tags: serialize,adomddataprovider
-publish: True
+published: True
 position: 5
 site_name: WPF
 ---

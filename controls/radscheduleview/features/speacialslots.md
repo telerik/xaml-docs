@@ -4,7 +4,7 @@ page_title: Special and ReadOnly slots
 description: Special and ReadOnly slots
 slug: radscheduleview-features-speacialslots
 tags: special,and,readonly,slots
-publish: True
+published: True
 position: 11
 ---
 

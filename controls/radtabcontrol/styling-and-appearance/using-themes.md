@@ -4,7 +4,7 @@ page_title: Using Themes
 description: Using Themes
 slug: radtabcontrol-using-themes
 tags: using,themes
-publish: True
+published: True
 position: 2
 site_name: Silverlight
 ---

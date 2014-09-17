@@ -4,7 +4,7 @@ page_title: Required Parts
 description: Required Parts
 slug: radcalendar-required-parts
 tags: required,parts
-publish: False
+published: False
 position: 2
 ---
 

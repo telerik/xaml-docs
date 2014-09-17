@@ -4,7 +4,7 @@ page_title: Entity Model, DomainContext
 description: Entity Model, DomainContext
 slug: radscheduleview-populating-with-data-binding-to-db-midtier
 tags: entity,model,,domaincontext
-publish: True
+published: True
 position: 3
 site_name: Silverlight
 ---

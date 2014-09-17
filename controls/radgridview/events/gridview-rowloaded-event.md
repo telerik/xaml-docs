@@ -4,7 +4,7 @@ page_title: RowLoaded / RowUnloaded
 description: RowLoaded / RowUnloaded
 slug: gridview-rowloaded-event
 tags: rowloaded,/,rowunloaded
-publish: True
+published: True
 position: 7
 ---
 

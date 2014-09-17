@@ -4,7 +4,7 @@ page_title: Tooltip
 description: Tooltip
 slug: radchartview-features-tooltip
 tags: tooltip
-publish: True
+published: True
 position: 1
 ---
 

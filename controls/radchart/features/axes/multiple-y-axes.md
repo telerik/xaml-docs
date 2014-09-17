@@ -4,7 +4,7 @@ page_title: Multiple Y axes
 description: Multiple Y axes
 slug: radchart-features-axes-multiple-y-axes
 tags: multiple,y,axes
-publish: True
+published: True
 position: 3
 ---
 

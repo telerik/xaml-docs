@@ -4,7 +4,7 @@ page_title: How to Customize the Minimized Button Content
 description: How to Customize the Minimized Button Content
 slug: radoutlookbar-how-to-customize-minimized-button-content
 tags: how,to,customize,the,minimized,button,content
-publish: True
+published: True
 position: 3
 ---
 

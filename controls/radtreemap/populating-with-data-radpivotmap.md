@@ -4,7 +4,7 @@ page_title: Populating With Data RadPivotMap
 description: Populating With Data RadPivotMap
 slug: radtreemap-populating-with-data-radpivotmap
 tags: populating,with,data,radpivotmap
-publish: True
+published: True
 position: 5
 ---
 

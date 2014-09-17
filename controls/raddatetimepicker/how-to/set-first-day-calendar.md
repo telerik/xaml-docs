@@ -4,7 +4,7 @@ page_title: How to set the first day of the week
 description: How to set the first day of the week
 slug: raddatetimepicker-how-to-set-first-day-calendar
 tags: how,to,set,the,first,day,of,the,week
-publish: True
+published: True
 position: 2
 ---
 

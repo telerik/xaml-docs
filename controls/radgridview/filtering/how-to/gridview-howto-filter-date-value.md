@@ -4,7 +4,7 @@ page_title: Filter on Date value only
 description: Filter on Date value only
 slug: gridview-filtering-howto-filter-date-value
 tags: filter,on,date,value,only
-publish: True
+published: True
 position: 13
 ---
 

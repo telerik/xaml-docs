@@ -4,7 +4,7 @@ page_title: Handle Item Clicks
 description: Handle Item Clicks
 slug: radcontextmenu-how-to-handle-item-clicks
 tags: handle,item,clicks
-publish: True
+published: True
 position: 4
 ---
 

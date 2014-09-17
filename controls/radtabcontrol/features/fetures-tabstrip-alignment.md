@@ -4,7 +4,7 @@ page_title: Tabstrip alignment
 description: Tabstrip alignment
 slug: radtabcontrol-fetures-tabstrip-alignment
 tags: tabstrip,alignment
-publish: True
+published: True
 position: 7
 ---
 

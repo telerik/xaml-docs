@@ -4,7 +4,7 @@ page_title: Project creation and configuration
 description: Project creation and configuration
 slug: radcontrols-for-wpf-vs-extensions-project-configuration
 tags: project,creation,and,configuration
-publish: True
+published: True
 position: 3
 site_name: WPF
 ---

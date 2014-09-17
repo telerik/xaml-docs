@@ -4,7 +4,7 @@ page_title: RecurrenceRule
 description: RecurrenceRule
 slug: radscheduleview-features-recurrences-recurrencerule
 tags: recurrencerule
-publish: True
+published: True
 position: 3
 ---
 

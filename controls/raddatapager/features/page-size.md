@@ -4,7 +4,7 @@ page_title: Page Size
 description: Page Size
 slug: raddatapager-features-page-size
 tags: page,size
-publish: True
+published: True
 position: 3
 ---
 

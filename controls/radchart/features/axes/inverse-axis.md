@@ -4,7 +4,7 @@ page_title: Inverse Axis
 description: Inverse Axis
 slug: radchart-features-axes-inverse-axis
 tags: inverse,axis
-publish: True
+published: True
 position: 8
 ---
 

@@ -4,7 +4,7 @@ page_title: Hide The Title
 description: Hide The Title
 slug: radribbonview-howto-hide-title
 tags: hide,the,title
-publish: True
+published: True
 position: 6
 ---
 

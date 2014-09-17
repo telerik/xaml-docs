@@ -4,7 +4,7 @@ page_title: Pinned/Unpinned Panes
 description: Pinned/Unpinned Panes
 slug: raddocking-panes-pinned-unpinned-panes
 tags: pinned/unpinned,panes
-publish: True
+published: True
 position: 3
 ---
 

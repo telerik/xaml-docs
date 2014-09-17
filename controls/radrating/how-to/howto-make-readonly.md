@@ -4,7 +4,7 @@ page_title: Make the RadRating read only
 description: Make the RadRating read only
 slug: howto-make-readonly
 tags: make,the,radrating,read,only
-publish: True
+published: True
 position: 0
 ---
 

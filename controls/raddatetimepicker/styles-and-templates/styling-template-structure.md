@@ -4,7 +4,7 @@ page_title: Templates Structure
 description: Templates Structure
 slug: raddatetimepicker-styling-template-structure
 tags: templates,structure
-publish: True
+published: True
 position: 1
 ---
 

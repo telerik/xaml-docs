@@ -4,7 +4,7 @@ page_title: MaskedTextInput
 description: MaskedTextInput
 slug: radmaskedinput-features-controls-text
 tags: maskedtextinput
-publish: True
+published: True
 position: 2
 ---
 

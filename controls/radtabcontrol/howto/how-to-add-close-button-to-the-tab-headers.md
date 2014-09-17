@@ -4,7 +4,7 @@ page_title: How to Add Close Button to the Tab Headers
 description: How to Add Close Button to the Tab Headers
 slug: radtabcontrol-how-to-add-close-button-to-the-tab-headers
 tags: how,to,add,close,button,to,the,tab,headers
-publish: True
+published: True
 position: 10
 ---
 

@@ -4,7 +4,7 @@ page_title: Key Features
 description: Key Features
 slug: gridview-key-features
 tags: key,features
-publish: True
+published: True
 position: 0
 ---
 

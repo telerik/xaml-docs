@@ -4,7 +4,7 @@ page_title: Defining Columns
 description: Defining Columns
 slug: gridview-columns-defining-columns
 tags: defining,columns
-publish: True
+published: True
 position: 1
 ---
 

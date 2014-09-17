@@ -4,7 +4,7 @@ page_title: Styling the RadGridView
 description: Styling the RadGridView
 slug: radgridview-styles-and-templates-styling-radgridview
 tags: styling,the,radgridview
-publish: True
+published: True
 position: 3
 ---
 

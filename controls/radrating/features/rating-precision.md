@@ -4,7 +4,7 @@ page_title: Precision
 description: Precision
 slug: rating-features-precision
 tags: precision
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the FilteringControl
 description: Styling the FilteringControl
 slug: gridview-styling-filteringcontrol
 tags: styling,the,filteringcontrol
-publish: True
+published: True
 position: 18
 ---
 

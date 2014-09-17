@@ -4,7 +4,7 @@ page_title: To Which Assemblies do I Have to Add Reference in my Project
 description: To Which Assemblies do I Have to Add Reference in my Project
 slug: radtabcontrol-needed-assemblies
 tags: to,which,assemblies,do,i,have,to,add,reference,in,my,project
-publish: True
+published: True
 position: 5
 ---
 

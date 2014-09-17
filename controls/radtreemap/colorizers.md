@@ -4,7 +4,7 @@ page_title: Colorizers
 description: Colorizers
 slug: radtreemap-colorizers
 tags: colorizers
-publish: True
+published: True
 position: 7
 ---
 

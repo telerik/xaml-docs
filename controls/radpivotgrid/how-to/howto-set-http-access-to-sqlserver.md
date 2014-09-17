@@ -4,7 +4,7 @@ page_title: Set HTTP access to SQL Server
 description: Set HTTP access to SQL Server
 slug: radpivotgrid-howto-set-http-access-to-sqlserver
 tags: set,http,access,to,sql,server
-publish: True
+published: True
 position: 0
 ---
 

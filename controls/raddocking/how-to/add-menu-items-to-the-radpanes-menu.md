@@ -4,7 +4,7 @@ page_title: How to Customize or Remove the RadPane's Menu
 description: How to Customize or Remove the RadPane's Menu
 slug: raddocking-how-to-add-menu-items-to-the-radpanes-menu
 tags: how,to,customize,or,remove,the,radpane's,menu
-publish: True
+published: True
 position: 0
 ---
 

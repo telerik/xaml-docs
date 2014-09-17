@@ -4,7 +4,7 @@ page_title: SDK Examples
 description: SDK Examples
 slug: raddatetimepicker-sdk-examples
 tags: sdk,examples
-publish: True
+published: True
 position: 4
 ---
 

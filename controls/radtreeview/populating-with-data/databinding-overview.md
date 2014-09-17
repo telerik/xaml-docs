@@ -4,7 +4,7 @@ page_title: DataBinding - Overview
 description: DataBinding - Overview
 slug: radtreeview-populating-with-data-databinding-overview
 tags: databinding,-,overview
-publish: True
+published: True
 position: 1
 ---
 

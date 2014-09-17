@@ -4,7 +4,7 @@ page_title: Supported Controls
 description: Supported Controls
 slug: radlegend-supported-controls
 tags: supported,controls
-publish: True
+published: True
 position: 5
 ---
 

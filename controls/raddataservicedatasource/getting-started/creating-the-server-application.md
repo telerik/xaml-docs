@@ -4,7 +4,7 @@ page_title: Creating the Server Application
 description: Creating the Server Application
 slug: raddataservicedatasource-getting-started-creating-the-server-application
 tags: creating,the,server,application
-publish: True
+published: True
 position: 0
 ---
 

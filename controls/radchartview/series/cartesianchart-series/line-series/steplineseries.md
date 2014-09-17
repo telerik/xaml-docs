@@ -4,7 +4,7 @@ page_title: StepLineSeries
 description: StepLineSeries
 slug: radchartview-series-steplineseries
 tags: steplineseries
-publish: True
+published: True
 position: 2
 ---
 

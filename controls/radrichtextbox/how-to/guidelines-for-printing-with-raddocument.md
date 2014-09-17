@@ -4,7 +4,7 @@ page_title: Guidelines for Printing with RadDocument
 description: Guidelines for Printing with RadDocument
 slug: radrichtextbox-guidelines-for-printing-with-raddocument
 tags: guidelines,for,printing,with,raddocument
-publish: True
+published: True
 position: 1
 ---
 

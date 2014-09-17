@@ -4,7 +4,7 @@ page_title: Grouping events
 description: Grouping events
 slug: gridview-events-grouping
 tags: grouping,events
-publish: True
+published: True
 position: 8
 ---
 

@@ -4,7 +4,7 @@ page_title: Providers Overview
 description: Providers Overview
 slug: radmap-features-providers
 tags: providers,overview
-publish: True
+published: True
 position: 0
 ---
 

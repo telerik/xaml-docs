@@ -4,7 +4,7 @@ page_title: ScrollBar Functionality
 description: ScrollBar Functionality
 slug: radlegend-scrollbar-functionality
 tags: scrollbar,functionality
-publish: True
+published: True
 position: 4
 ---
 

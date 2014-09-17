@@ -4,7 +4,7 @@ page_title: Customizing the CellSelectionTemplate
 description: Customizing the CellSelectionTemplate
 slug: radganttview-features-columns-selection-template
 tags: customizing,the,cellselectiontemplate
-publish: True
+published: True
 position: 4
 ---
 

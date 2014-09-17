@@ -4,7 +4,7 @@ page_title: HowTo
 description: HowTo
 slug: radprogressbar-howto-overview
 tags: howto
-publish: True
+published: True
 position: 4
 ---
 

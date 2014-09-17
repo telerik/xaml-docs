@@ -4,7 +4,7 @@ page_title: Bind to a Selected Item
 description: Bind to a Selected Item
 slug: radtreeview-how-to-bind-selected-item
 tags: bind,to,a,selected,item
-publish: True
+published: True
 position: 10
 ---
 

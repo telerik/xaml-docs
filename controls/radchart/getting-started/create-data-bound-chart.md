@@ -4,7 +4,7 @@ page_title: Create Data Bound Chart
 description: Create Data Bound Chart
 slug: radchart-getting-started-create-data-bound-chart
 tags: create,data,bound,chart
-publish: True
+published: True
 position: 0
 ---
 

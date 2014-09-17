@@ -4,7 +4,7 @@ page_title: Chart Point-marks
 description: Chart Point-marks
 slug: radchart-features-chart-point-marks
 tags: chart,point-marks
-publish: True
+published: True
 position: 15
 ---
 

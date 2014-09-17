@@ -4,7 +4,7 @@ page_title: Editing Images
 description: Editing Images
 slug: radrichtextbox-features-editing-images
 tags: editing,images
-publish: True
+published: True
 position: 1
 ---
 

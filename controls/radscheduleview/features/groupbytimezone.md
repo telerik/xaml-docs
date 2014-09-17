@@ -4,7 +4,7 @@ page_title: Grouping By TimeZone
 description: Grouping By TimeZone
 slug: radscheduleview-features-groupbytimezone
 tags: grouping,by,timezone
-publish: True
+published: True
 position: 16
 ---
 

@@ -4,7 +4,7 @@ page_title: RadCalculator
 description: RadCalculator
 slug: radcalculator-gettingstarted
 tags: radcalculator
-publish: True
+published: True
 position: 0
 ---
 

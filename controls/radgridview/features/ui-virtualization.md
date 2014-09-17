@@ -4,7 +4,7 @@ page_title: UI Virtualization
 description: UI Virtualization
 slug: radgridview-features-ui-virtualization
 tags: ui,virtualization
-publish: True
+published: True
 position: 13
 ---
 

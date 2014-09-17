@@ -4,7 +4,7 @@ page_title: Declaratively
 description: Declaratively
 slug: populating-declaratively
 tags: declaratively
-publish: True
+published: True
 position: 2
 ---
 

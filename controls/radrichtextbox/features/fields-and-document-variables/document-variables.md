@@ -4,7 +4,7 @@ page_title: Document Variables
 description: Document Variables
 slug: radrichtextbox-features-document-variables
 tags: document,variables
-publish: True
+published: True
 position: 1
 ---
 

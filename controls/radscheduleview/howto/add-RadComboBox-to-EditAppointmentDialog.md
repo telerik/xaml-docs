@@ -4,7 +4,7 @@ page_title: Add RadComboBox to a custom EditAppointmentDialog
 description: Add RadComboBox to a custom EditAppointmentDialog
 slug: radscheduleview-howto-add-radcombobox-to-editappointmentdialog
 tags: add,radcombobox,to,a,custom,editappointmentdialog
-publish: True
+published: True
 position: 1
 ---
 

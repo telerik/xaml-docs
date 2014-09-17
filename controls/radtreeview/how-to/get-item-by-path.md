@@ -4,7 +4,7 @@ page_title: Get Item by Path
 description: Get Item by Path
 slug: radtreeview-how-to-get-item-by-path
 tags: get,item,by,path
-publish: True
+published: True
 position: 1
 ---
 

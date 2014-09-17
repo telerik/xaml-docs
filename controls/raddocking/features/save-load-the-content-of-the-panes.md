@@ -4,7 +4,7 @@ page_title: Save/Load the Content of the Panes
 description: Save/Load the Content of the Panes
 slug: raddocking-save-load-the-content-of-the-panes
 tags: save/load,the,content,of,the,panes
-publish: True
+published: True
 position: 11
 ---
 

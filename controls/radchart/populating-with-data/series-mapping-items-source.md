@@ -4,7 +4,7 @@ page_title: Multiple Datasources
 description: Multiple Datasources
 slug: radchart-populating-with-data-series-mapping-items-source
 tags: multiple,datasources
-publish: True
+published: True
 position: 11
 ---
 

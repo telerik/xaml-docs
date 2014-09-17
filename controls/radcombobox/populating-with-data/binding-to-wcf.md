@@ -4,7 +4,7 @@ page_title: Binding to WCF Service
 description: Binding to WCF Service
 slug: radcombobox-populating-with-data-binding-to-wcf
 tags: binding,to,wcf,service
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: CRUD
 description: CRUD
 slug: raddataservicedatasource-crud
 tags: crud
-publish: True
+published: True
 position: 0
 ---
 

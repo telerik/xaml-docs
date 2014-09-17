@@ -4,7 +4,7 @@ page_title: Global Settings
 description: Global Settings
 slug: raddiagram-features-global-settings
 tags: global,settings
-publish: True
+published: True
 position: 15
 ---
 

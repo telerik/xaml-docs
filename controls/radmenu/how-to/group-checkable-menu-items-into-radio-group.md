@@ -4,7 +4,7 @@ page_title: Group Checkable Menu Items into Radio Group
 description: Group Checkable Menu Items into Radio Group
 slug: radmenu-how-to-group-checkable-menu-items-into-radio-group
 tags: group,checkable,menu,items,into,radio,group
-publish: True
+published: True
 position: 3
 ---
 

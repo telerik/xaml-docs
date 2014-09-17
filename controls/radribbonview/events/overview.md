@@ -4,7 +4,7 @@ page_title: Events Overview
 description: Events Overview
 slug: radribbonview-events-overview
 tags: events,overview
-publish: True
+published: True
 position: 0
 ---
 

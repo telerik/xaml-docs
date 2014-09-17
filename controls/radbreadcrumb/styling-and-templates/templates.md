@@ -4,7 +4,7 @@ page_title: Templates Structure
 description: Templates Structure
 slug: radbreadcrumb-templates
 tags: templates,structure
-publish: True
+published: True
 position: 0
 ---
 

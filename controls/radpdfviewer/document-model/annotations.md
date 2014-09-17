@@ -4,7 +4,7 @@ page_title: Annotations
 description: Annotations
 slug: radpdfviewer-document-model-annotations
 tags: annotations
-publish: True
+published: True
 position: 2
 ---
 

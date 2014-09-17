@@ -4,7 +4,7 @@ page_title: Chart Title
 description: Chart Title
 slug: radchart-features-chart-title
 tags: chart,title
-publish: True
+published: True
 position: 11
 ---
 

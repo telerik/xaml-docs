@@ -4,7 +4,7 @@ page_title: ItemContainerStyle
 description: ItemContainerStyle
 slug: radtreeview-styling-and-appearance-item-container-style
 tags: itemcontainerstyle
-publish: True
+published: True
 position: 5
 ---
 

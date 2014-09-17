@@ -4,7 +4,7 @@ page_title: Styling the FilterRow
 description: Styling the FilterRow
 slug: gridview-styling-filterrow
 tags: styling,the,filterrow
-publish: True
+published: True
 position: 19
 ---
 

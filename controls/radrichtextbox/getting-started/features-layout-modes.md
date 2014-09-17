@@ -4,7 +4,7 @@ page_title: Layout Modes
 description: Layout Modes
 slug: radrichtextbox-features-layout-modes
 tags: layout,modes
-publish: True
+published: True
 position: 1
 ---
 

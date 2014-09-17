@@ -4,7 +4,7 @@ page_title: Create Data-Bound Chart
 description: Create Data-Bound Chart
 slug: radchartview-series-databinding
 tags: create,data-bound,chart
-publish: True
+published: True
 position: 0
 ---
 

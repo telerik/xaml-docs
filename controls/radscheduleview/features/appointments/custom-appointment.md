@@ -4,7 +4,7 @@ page_title: Custom Appointment
 description: Custom Appointment
 slug: radscheduleview-features-appointments-custom-appointment
 tags: custom,appointment
-publish: True
+published: True
 position: 0
 ---
 

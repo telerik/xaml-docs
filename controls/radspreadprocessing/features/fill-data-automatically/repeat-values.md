@@ -4,7 +4,7 @@ page_title: Repeat Values
 description: Repeat Values
 slug: radspreadprocessing-features-fill-data-automatically-repeat-values
 tags: repeat,values
-publish: True
+published: True
 position: 0
 ---
 

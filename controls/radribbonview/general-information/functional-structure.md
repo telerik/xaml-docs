@@ -4,7 +4,7 @@ page_title: Functional Structure
 description: Functional Structure
 slug: radribbonview-functional-structure
 tags: functional,structure
-publish: True
+published: True
 position: 2
 ---
 

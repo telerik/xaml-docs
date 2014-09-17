@@ -4,7 +4,7 @@ page_title: Customize RadTreeListView
 description: Customize RadTreeListView
 slug: radtreeview-howto-cutomize-radtreelistview
 tags: customize,radtreelistview
-publish: True
+published: True
 position: 31
 ---
 

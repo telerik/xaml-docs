@@ -4,7 +4,7 @@ page_title: Create Custom Drag Arrow
 description: Create Custom Drag Arrow
 slug: dragdropmanager-howto-create-custom-drag-arrow
 tags: create,custom,drag,arrow
-publish: True
+published: True
 position: 2
 ---
 

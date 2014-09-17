@@ -4,7 +4,7 @@ page_title: Data Column
 description: Data Column
 slug: radgridview-columns-column-types-data-column
 tags: data,column
-publish: True
+published: True
 position: 2
 ---
 

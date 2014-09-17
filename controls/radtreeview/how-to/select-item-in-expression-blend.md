@@ -4,7 +4,7 @@ page_title: Select an Item in Expression Blend
 description: Select an Item in Expression Blend
 slug: radtreeview-how-to-select-item-in-expression-blend
 tags: select,an,item,in,expression,blend
-publish: False
+published: False
 position: 22
 ---
 

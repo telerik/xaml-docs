@@ -4,7 +4,7 @@ page_title: Major and Minor releases
 description: Major and Minor releases
 slug: radcontrols-for-silverlight-vs-extensions-releases
 tags: major,and,minor,releases
-publish: True
+published: True
 position: 5
 site_name: Silverlight
 ---

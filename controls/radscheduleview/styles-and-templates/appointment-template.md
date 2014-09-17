@@ -4,7 +4,7 @@ page_title: Appointment Template
 description: Appointment Template
 slug: radscheduleview-styles-and-templates-appointment-template
 tags: appointment,template
-publish: True
+published: True
 position: 1
 ---
 

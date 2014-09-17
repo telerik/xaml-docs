@@ -4,7 +4,7 @@ page_title: Paging through RadDataPager
 description: Paging through RadDataPager
 slug: raddataservicedatasource-paging-paging-through-raddatapager
 tags: paging,through,raddatapager
-publish: True
+published: True
 position: 1
 ---
 

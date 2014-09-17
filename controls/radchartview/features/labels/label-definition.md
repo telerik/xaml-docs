@@ -4,7 +4,7 @@ page_title: Label Definition
 description: Label Definition
 slug: radchartview-features-label-definition
 tags: label,definition
-publish: True
+published: True
 position: 0
 ---
 

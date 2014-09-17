@@ -4,7 +4,7 @@ page_title: Iterate Through Worksheets
 description: Iterate Through Worksheets
 slug: radspreadprocessing-working-with-worksheets-iterate-through-worksheets
 tags: iterate,through,worksheets
-publish: True
+published: True
 position: 4
 ---
 

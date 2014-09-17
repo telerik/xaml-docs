@@ -4,7 +4,7 @@ page_title: Polar Series
 description: Polar Series
 slug: radchartview-series-polarseries
 tags: polar,series
-publish: False
+published: False
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Mini Map
 description: Mini Map
 slug: radmap-features-mini-map
 tags: mini,map
-publish: True
+published: True
 position: 1
 ---
 

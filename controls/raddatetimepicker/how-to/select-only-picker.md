@@ -4,7 +4,7 @@ page_title: How to create a select-only RadDateTimePicker
 description: How to create a select-only RadDateTimePicker
 slug: raddatetimepicker-how-to-select-only-picker
 tags: how,to,create,a,select-only,raddatetimepicker
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Templates
 description: Templates
 slug: radtabcontrol-templating-tabs-templates
 tags: templates
-publish: True
+published: True
 position: 4
 ---
 

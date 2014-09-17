@@ -4,7 +4,7 @@ page_title: Diagram Events
 description: Diagram Events
 slug: raddiagrams-events-diagram
 tags: diagram,events
-publish: True
+published: True
 position: 0
 ---
 

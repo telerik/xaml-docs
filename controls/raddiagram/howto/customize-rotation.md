@@ -4,7 +4,7 @@ page_title: Customize the Rotation Step
 description: Customize the Rotation Step
 slug: raddiagram-howto-customize-rotation
 tags: customize,the,rotation,step
-publish: True
+published: True
 position: 13
 ---
 

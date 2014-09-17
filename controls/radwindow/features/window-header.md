@@ -4,7 +4,7 @@ page_title: Window Header
 description: Window Header
 slug: radwindow-features-window-header
 tags: window,header
-publish: True
+published: True
 position: 5
 ---
 

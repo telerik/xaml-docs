@@ -4,7 +4,7 @@ page_title: Turn off the SortingState.None
 description: Turn off the SortingState.None
 slug: gridview-sorting-none
 tags: turn,off,the,sortingstate.none
-publish: True
+published: True
 position: 0
 ---
 

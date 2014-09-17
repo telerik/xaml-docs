@@ -4,7 +4,7 @@ page_title: Hide The Application Menu
 description: Hide The Application Menu
 slug: radribbonview-how-to-hide-the-application-menu
 tags: hide,the,application,menu
-publish: True
+published: True
 position: 1
 ---
 

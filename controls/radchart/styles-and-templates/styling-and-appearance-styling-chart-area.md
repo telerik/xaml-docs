@@ -4,7 +4,7 @@ page_title: Styling the Chart Area
 description: Styling the Chart Area
 slug: radchart-styling-and-appearance-styling-chart-area
 tags: styling,the,chart,area
-publish: True
+published: True
 position: 6
 ---
 

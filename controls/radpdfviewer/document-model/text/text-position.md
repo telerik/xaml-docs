@@ -4,7 +4,7 @@ page_title: Text Position
 description: Text Position
 slug: radpdfviewer-text-text-position
 tags: text,position
-publish: True
+published: True
 position: 0
 ---
 

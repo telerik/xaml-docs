@@ -4,7 +4,7 @@ page_title: RecurrencePatternHelper
 description: RecurrencePatternHelper
 slug: radscheduleview-features-recurrences-recurrencepatternhelper
 tags: recurrencepatternhelper
-publish: True
+published: True
 position: 2
 ---
 

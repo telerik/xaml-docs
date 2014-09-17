@@ -4,7 +4,7 @@ page_title: CurrentItem vs SelectedItem
 description: CurrentItem vs SelectedItem
 slug: gridview-selection-selecteditem-currentitem
 tags: currentitem,vs,selecteditem
-publish: True
+published: True
 position: 4
 ---
 

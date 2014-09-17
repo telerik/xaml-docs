@@ -4,7 +4,7 @@ page_title: Add and Remove Worksheets
 description: Add and Remove Worksheets
 slug: radspreadsheet-model-working-with-worksheets-add-remove-worksheets
 tags: add,and,remove,worksheets
-publish: False
+published: False
 position: 1
 ---
 

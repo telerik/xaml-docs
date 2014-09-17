@@ -4,7 +4,7 @@ page_title: Military DateTime Parsing
 description: Military DateTime Parsing
 slug: raddatetimepicker-features-militaryparsing
 tags: military,datetime,parsing
-publish: True
+published: True
 position: 11
 ---
 

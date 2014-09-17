@@ -4,7 +4,7 @@ page_title: RadScheduleView Types and Sources
 description: RadScheduleView Types and Sources
 slug: radscheduleview-populating-with-data-binding-to-db-sources
 tags: radscheduleview,types,and,sources
-publish: True
+published: True
 position: 1
 ---
 

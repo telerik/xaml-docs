@@ -4,7 +4,7 @@ page_title: Add Screen Tips in the Code Behind
 description: Add Screen Tips in the Code Behind
 slug: radribbonview-howto-add-screentips-code-behind
 tags: add,screen,tips,in,the,code,behind
-publish: True
+published: True
 position: 3
 ---
 

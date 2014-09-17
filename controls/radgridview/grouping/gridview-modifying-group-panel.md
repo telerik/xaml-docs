@@ -4,7 +4,7 @@ page_title: Modifying the Group Panel
 description: Modifying the Group Panel
 slug: gridview-modifying-group-panel
 tags: modifying,the,group,panel
-publish: True
+published: True
 position: 6
 ---
 

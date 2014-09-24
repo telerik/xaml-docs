@@ -10,109 +10,92 @@ position: 0
 
 # Create a TimeBar control in Code-behind
 
-
-
-## 
-
 RadTimeBar supports lightweight batch initialization through the [ISupportInitialize](http://msdn.microsoft.com/en-us/library/system.componentmodel.isupportinitialize.aspx) interface. You can use the methods of this interface in code behind to create and initialize a time bar before adding it in the visual tree. Here is an example:
 
 1. Create *[RadAreaSparkLine](http://www.telerik.com/help/silverlight/radsparkline_overview.html)* to use it as Content for the TimeBar control:
 
->tip*You can use RadChart*, *RadSparkline* or any other custom control as Content for the RadTimeBar.
+	>tip You can use *RadChart*, *RadSparkline* or any other custom control as Content for the RadTimeBar.
 
-#### __C#__
+	#### __C#__
 
-{{region radtimebar-create-a-timebar-control-in-code-behind_0}}
-	InitializeComponent();
-	RadAreaSparkline sparkline = new RadAreaSparkline();
-	Random r = new Random();
-	List<int> data = new List<int>();
-	for (DateTime currentDate = DateTime.Today; currentDate < DateTime.Today.AddDays(100);
-	   currentDate = currentDate.AddDays(1))
-	   {
-	     data.Add(r.Next(0, 60));
-	   }
-	sparkline.ItemsSource = data;
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtimebar-create-a-timebar-control-in-code-behind_1}}
-	InitializeComponent()
-	
-	Dim sparkline As New RadAreaSparkline()
-	
-	Dim r As New Random()
-	
-	Dim data As New List(Of Integer)()
-	
-	Dim currentDate As Date = Date.Today
-	Do While currentDate < Date.Today.AddDays(100)
-	
-	  data.Add(r.Next(0, 60))
-	
-	  currentDate = currentDate.AddDays(1)
-	Loop
-	
-	sparkline.ItemsSource = data
-	{{endregion}}
+	{{region radtimebar-create-a-timebar-control-in-code-behind_0}}
+		InitializeComponent();
+		RadAreaSparkline sparkline = new RadAreaSparkline();
+		Random r = new Random();
+		List<int> data = new List<int>();
+		for (DateTime currentDate = DateTime.Today; currentDate < DateTime.Today.AddDays(100);
+		   currentDate = currentDate.AddDays(1))
+		   {
+			 data.Add(r.Next(0, 60));
+		   }
+		sparkline.ItemsSource = data;
+		{{endregion}}
 
 
+
+	#### __VB.NET__
+
+	{{region radtimebar-create-a-timebar-control-in-code-behind_1}}
+		InitializeComponent()
+		
+		Dim sparkline As New RadAreaSparkline()
+		
+		Dim r As New Random()
+		
+		Dim data As New List(Of Integer)()
+		
+		Dim currentDate As Date = Date.Today
+		Do While currentDate < Date.Today.AddDays(100)
+		
+		  data.Add(r.Next(0, 60))
+		
+		  currentDate = currentDate.AddDays(1)
+		Loop
+		
+		sparkline.ItemsSource = data
+		{{endregion}}
 
 2. Create new TimeBar and add the SparkLine as Content. 
 
-#### __C#__
+	#### __C#__
+	{{region radtimebar-create-a-timebar-control-in-code-behind_2}}
+		RadTimeBar timebar = new RadTimeBar();
+		   timebar.BeginInit();
+		   timebar.Width = 950;
+		   timebar.Height = 250;
+		   timebar.PeriodStart = new DateTime(2010, 1, 1);
+		   timebar.PeriodEnd = new DateTime(2012, 1, 1);
+		   timebar.VisiblePeriodStart = new DateTime(2010, 2, 14);
+		   timebar.VisiblePeriodEnd = new DateTime(2011, 6, 2);
+		   timebar.SelectionStart = new DateTime(2010, 5, 14);
+		   timebar.SelectionEnd = new DateTime(2010, 6, 14);
+		   timebar.Intervals.Add(new MonthInterval());
+		   timebar.Intervals.Add(new WeekInterval());
+		   timebar.Intervals.Add(new DayInterval());
+		   timebar.EndInit();
+		   timebar.Content = sparkline;
+		   this.Content = timebar;
+		{{endregion}}
+		
+	#### __VB.NET__
+	{{region radtimebar-create-a-timebar-control-in-code-behind_3}}
+		Dim timebar As New RadTimeBar()
+		   timebar.BeginInit()
+		   timebar.Width = 950
+		   timebar.Height = 250
+		   timebar.PeriodStart = New Date(2010, 1, 1)
+		   timebar.PeriodEnd = New Date(2012, 1, 1)
+		   timebar.VisiblePeriodStart = New Date(2010, 2, 14)
+		   timebar.VisiblePeriodEnd = New Date(2011, 6, 2)
+		   timebar.SelectionStart = New Date(2010, 5, 14)
+		   timebar.SelectionEnd = New Date(2010, 6, 14)
+		   timebar.Intervals.Add(New MonthInterval())
+		   timebar.Intervals.Add(New WeekInterval())
+		   timebar.Intervals.Add(New DayInterval())
+		   timebar.EndInit()
+		   timebar.Content = sparkline
+		   Me.Content = timebar
+		{{endregion}}
 
-{{region radtimebar-create-a-timebar-control-in-code-behind_2}}
-	RadTimeBar timebar = new RadTimeBar();
-	   timebar.BeginInit();
-	   timebar.Width = 950;
-	   timebar.Height = 250;
-	   timebar.PeriodStart = new DateTime(2010, 1, 1);
-	   timebar.PeriodEnd = new DateTime(2012, 1, 1);
-	   timebar.VisiblePeriodStart = new DateTime(2010, 2, 14);
-	   timebar.VisiblePeriodEnd = new DateTime(2011, 6, 2);
-	   timebar.SelectionStart = new DateTime(2010, 5, 14);
-	   timebar.SelectionEnd = new DateTime(2010, 6, 14);
-	   timebar.Intervals.Add(new MonthInterval());
-	   timebar.Intervals.Add(new WeekInterval());
-	   timebar.Intervals.Add(new DayInterval());
-	   timebar.EndInit();
-	   timebar.Content = sparkline;
-	   this.Content = timebar;
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtimebar-create-a-timebar-control-in-code-behind_3}}
-	Dim timebar As New RadTimeBar()
-	   timebar.BeginInit()
-	   timebar.Width = 950
-	   timebar.Height = 250
-	   timebar.PeriodStart = New Date(2010, 1, 1)
-	   timebar.PeriodEnd = New Date(2012, 1, 1)
-	   timebar.VisiblePeriodStart = New Date(2010, 2, 14)
-	   timebar.VisiblePeriodEnd = New Date(2011, 6, 2)
-	   timebar.SelectionStart = New Date(2010, 5, 14)
-	   timebar.SelectionEnd = New Date(2010, 6, 14)
-	   timebar.Intervals.Add(New MonthInterval())
-	   timebar.Intervals.Add(New WeekInterval())
-	   timebar.Intervals.Add(New DayInterval())
-	   timebar.EndInit()
-	   timebar.Content = sparkline
-	   Me.Content = timebar
-	{{endregion}}
-
-
-
-The result:
-
-
-
-
-         
-      ![](images/radtimeBar_create_programmatically.PNG)
+The result:         
+![](images/radtimeBar_create_programmatically.PNG)

@@ -5,7 +5,7 @@ description: SerializableGraphSourceBase
 slug: raddiagram-data-serializablegraphsource
 tags: serializablegraphsourcebase
 published: True
-position: 7
+position: 8
 ---
 
 # SerializableGraphSourceBase

@@ -5,7 +5,7 @@ description: NodeViewModelBase
 slug: raddiagram-data-nodeviewmodel
 tags: nodeviewmodelbase
 published: True
-position: 1
+position: 2
 ---
 
 # NodeViewModelBase

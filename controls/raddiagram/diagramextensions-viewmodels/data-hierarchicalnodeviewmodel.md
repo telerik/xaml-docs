@@ -5,7 +5,7 @@ description: HierarchicalNodeViewModel
 slug: raddiagram-data-hierarchicalnodeviewmodel
 tags: hierarchicalnodeviewmodel
 published: True
-position: 4
+position: 5
 ---
 
 # HierarchicalNodeViewModel

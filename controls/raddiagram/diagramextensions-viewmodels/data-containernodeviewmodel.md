@@ -5,7 +5,7 @@ description: ContainerNodeViewModelBase
 slug: raddiagram-data-containernodeviewmodel
 tags: containernodeviewmodelbase
 published: True
-position: 3
+position: 4
 ---
 
 # ContainerNodeViewModelBase

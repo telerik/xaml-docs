@@ -1,0 +1,52 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region gridview-grouping-aggregates_0 -->
+<telerik:RadGridView x:Name="radGridView"
+                         AutoGenerateColumns="False">
+    <telerik:RadGridView.GroupDescriptors>
+        <telerik:GroupDescriptor Member="Country"
+                                     SortDirection="Ascending">
+            <telerik:GroupDescriptor.AggregateFunctions>
+                <telerik:CountFunction Caption="Entries count: " />
+            </telerik:GroupDescriptor.AggregateFunctions>
+        </telerik:GroupDescriptor>
+    </telerik:RadGridView.GroupDescriptors>
+    ...
+</telerik:RadGridView>
+<!-- #endregion -->
+
+<!-- #region gridview-grouping-aggregates_3 -->
+<telerik:RadGridView x:Name="radGridView"
+                         AutoGenerateColumns="False">
+    <telerik:RadGridView.GroupDescriptors>
+        <telerik:GroupDescriptor Member="Country"
+                                     SortDirection="Ascending">
+            <telerik:GroupDescriptor.AggregateFunctions>
+                <telerik:CountFunction Caption="Entries count: " />
+                <telerik:FirstFunction Caption="First entry: " />            
+            </telerik:GroupDescriptor.AggregateFunctions>
+        </telerik:GroupDescriptor>
+    </telerik:RadGridView.GroupDescriptors>
+    ...
+</telerik:RadGridView>
+<!-- #endregion -->
+        
+ <!-- #region gridview-grouping-aggregates_6 -->
+     <Style TargetType="telerik:GroupHeaderRow">
+        <Setter Property="ShowGroupHeaderColumnAggregates" Value="True" />
+     </Style>
+<!-- #endregion -->
+        
+<!-- #region gridview-grouping-aggregates_7 -->     
+        <Setter Property="ShowHeaderAggregates" Value="False" />  
+<!-- #endregion -->
+</Grid>
+</UserControl>

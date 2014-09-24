@@ -1,0 +1,7 @@
+﻿<!--#region raddiagram-extensions-settingspane-0 -->
+<telerik:RadDiagram x:Name="diagram">
+    <primitives:ItemInformationAdorner.AdditionalContent>
+        <telerik:SettingsPane Diagram="{Binding ElementName=diagram}" />
+    </primitives:ItemInformationAdorner.AdditionalContent>
+</telerik:RadDiagram>
+<!--#endregion -->

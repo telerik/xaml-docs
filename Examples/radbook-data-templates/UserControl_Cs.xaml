@@ -1,0 +1,58 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+<!-- #region radbook-data-templates_0 -->
+    <Grid x:Name="LayoutRoot" Background="Purple">
+        <Grid.Resources>
+            <!--  Declare the template used for the left pages  -->
+            <DataTemplate x:Name="LeftPageTemplate">
+                <StackPanel Margin="10" Background="LightGray">
+
+                    <TextBlock FontSize="24" 
+                               FontWeight="Bold"
+                               Text="{Binding Title}" />
+                    <Image Width="240" 
+                           Height="320"
+                           Source="{Binding Image}" />
+                    <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                        <TextBlock FontWeight="Bold" Text="Date Taken:" />
+                        <TextBlock Text="{Binding DateTaken}" />
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                        <TextBlock FontWeight="Bold" Text="Size:" />
+                        <TextBlock Text="{Binding Size}" />
+                    </StackPanel>
+                </StackPanel>
+            </DataTemplate>
+            <!--  Declare the template used for the right pages  -->
+            <DataTemplate x:Name="RightPageTemplate">
+                <StackPanel Margin="10" Background="LightBlue">
+                    <TextBlock HorizontalAlignment="Right" 
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Text="{Binding Title}" />
+                    <Image Width="240" 
+                           Height="320"
+                           Source="{Binding Image}" />
+                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                        <TextBlock FontWeight="Bold" Text="Date Taken:" />
+                        <TextBlock Text="{Binding DateTaken}" />
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                        <TextBlock FontWeight="Bold" Text="Size:" />
+                        <TextBlock Text="{Binding Size}" />
+                    </StackPanel>
+                </StackPanel>
+            </DataTemplate>
+        </Grid.Resources>
+        <telerik:RadBook x:Name="RadBook1" 
+                         Margin="50"
+                         LeftPageTemplate="{StaticResource LeftPageTemplate}"
+                         RightPageTemplate="{StaticResource RightPageTemplate}" />
+    </Grid>
+<!-- #endregion -->
+</UserControl>

@@ -1,14 +1,21 @@
-<nav class="main-navigation">
-    <a href="http://platform.telerik.com" class="logo">
-        <em></em><span><strong>Telerik</strong> Platform</span>
-    </a>
-    <ul class="multi-site-nav">
-        <li>
-            <a href="/platform" title="Telerik Platform Products Documentation" id="DocsLink">Documentation</a>
-        </li>
-        <li>
-            <a href="{{site.baseurl}}">{{site.productName}}</a>
-        </li>
-    </ul>
-</nav>
+ <div id="page-header">
+{% if site.site_name == 'Silverlight' %}
+	<div id="logo-bar-sl">
+		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
+			<span>UI for Silverlight</span>
+		</a>
+	</div> 
+{% endif %}
+
+{% if site.site_name == 'WPF' %}
+	<div id="logo-bar">
+		<a href="http://www.telerik.com" target="_blank" title="UI for WPF">
+			<span>UI for WPF</span>
+		</a>
+	</div> 
+{% endif %}
+	<div id="page-search">
+        {% include search.html %}
+    </div>
+</div> 
 

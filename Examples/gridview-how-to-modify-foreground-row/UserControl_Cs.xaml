@@ -1,0 +1,62 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+<!-- #region gridview-how-to-modify-foreground-row_0 -->
+<VisualState x:Name="Selected">
+    <Storyboard>
+        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Selected"
+Storyboard.TargetProperty="(UIElement.Visibility)">
+            <DiscreteObjectKeyFrame KeyTime="0">
+                <DiscreteObjectKeyFrame.Value>
+                    <Visibility>Visible</Visibility>
+                </DiscreteObjectKeyFrame.Value>
+            </DiscreteObjectKeyFrame>
+        </ObjectAnimationUsingKeyFrames>
+        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NavigatorIndicatorBackground"
+Storyboard.TargetProperty="Background">
+            <DiscreteObjectKeyFrame KeyTime="0:0:0"
+Value="{StaticResource GridView_RowIndicatorCellBackground_Selected}" />
+        </ObjectAnimationUsingKeyFrames>
+        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_DataCellsPresenter"
+Storyboard.TargetProperty="Foreground">
+            <DiscreteObjectKeyFrame KeyTime="0:0:0"
+Value="{StaticResource GridView_ItemForeground_Selected}" />
+        </ObjectAnimationUsingKeyFrames>
+    </Storyboard>
+</VisualState>
+
+<!-- #endregion -->
+
+<!-- #region gridview-how-to-modify-foreground-row_1 -->
+<VisualState x:Name="MouseOver">
+    <Storyboard>
+        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Over"
+Storyboard.TargetProperty="(UIElement.Visibility)">
+            <DiscreteObjectKeyFrame KeyTime="0">
+                <DiscreteObjectKeyFrame.Value>
+                    <Visibility>Visible</Visibility>
+                </DiscreteObjectKeyFrame.Value>
+            </DiscreteObjectKeyFrame>
+        </ObjectAnimationUsingKeyFrames>
+        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_DataCellsPresenter"
+Storyboard.TargetProperty="Foreground">
+            <DiscreteObjectKeyFrame KeyTime="0:0:0"
+Value="{StaticResource GridView_ItemForeground_Over}" />
+        </ObjectAnimationUsingKeyFrames>
+    </Storyboard>
+</VisualState>
+
+<!-- #endregion -->
+
+<!-- #region gridview-how-to-modify-foreground-row_2 -->
+<SolidColorBrush x:Key="GridView_ItemForeground_Selected" Color="Green"/>
+<SolidColorBrush x:Key="GridView_ItemForeground_Over" Color="Red"/>
+<!-- #endregion -->
+
+</Grid>
+</UserControl>

@@ -1,0 +1,119 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radscheduleview-styles-and-templates-appointment-style_0 -->
+<telerik:OrientedAppointmentItemStyleSelector x:Key="ScheduleViewAppointmentStyleSelector">
+    <telerik:OrientedAppointmentItemStyleSelector.HorizontalStyle>
+       ...
+    </telerik:OrientedAppointmentItemStyleSelector.HorizontalStyle>
+    <telerik:OrientedAppointmentItemStyleSelector.VerticalStyle>
+       ...
+    </telerik:OrientedAppointmentItemStyleSelector.VerticalStyle>
+</telerik:OrientedAppointmentItemStyleSelector>
+<!-- #endregion -->
+
+<!-- #region radscheduleview-styles-and-templates-appointment-style_3 -->
+<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
+   <telerik:RadScheduleView.ViewDefinitions>
+    <telerik:DayViewDefinition />
+    <telerik:WeekViewDefinition />
+    <telerik:MonthViewDefinition />
+    <telerik:TimelineViewDefinition />
+   </telerik:RadScheduleView.ViewDefinitions>
+   <telerik:RadScheduleView.GroupDescriptionsSource>
+    <telerik:GroupDescriptionCollection>
+     <telerik:ResourceGroupDescription ResourceType="Room" />
+    </telerik:GroupDescriptionCollection>
+   </telerik:RadScheduleView.GroupDescriptionsSource>
+   <telerik:RadScheduleView.ResourceTypesSource>
+    <telerik:ResourceTypeCollection>
+     <telerik:ResourceType Name="Room">
+      <telerik:Resource ResourceName="402A" />
+      <telerik:Resource ResourceName="401B" />
+      <telerik:Resource ResourceName="605A" />
+     </telerik:ResourceType>
+    </telerik:ResourceTypeCollection>
+   </telerik:RadScheduleView.ResourceTypesSource>   
+  </telerik:RadScheduleView>
+<!-- #endregion -->
+
+<!-- #region radscheduleview-styles-and-templates-appointment-style_4 -->
+<Style x:Key="Room402AHorizontalStyle" TargetType="telerik:AppointmentItem">
+   <Setter Property="Background">
+    <Setter.Value>
+     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+      <GradientStop Color="#FF46384B" Offset="0.998"/>
+      <GradientStop Color="#FFBA9DC2" Offset="0.007"/>
+     </LinearGradientBrush>
+    </Setter.Value>
+   </Setter>
+  </Style>
+  <Style x:Key="Room402AVerticalStyle" TargetType="telerik:AppointmentItem">
+   <Setter Property="Background">
+    <Setter.Value>
+     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+      <GradientStop Color="#FF46384B" Offset="0.998"/>
+      <GradientStop Color="#FFBA9DC2" Offset="0.007"/>
+     </LinearGradientBrush>
+    </Setter.Value>
+   </Setter>
+  </Style>
+  <Style x:Key="Room401BHorizontalStyle" TargetType="telerik:AppointmentItem">
+   <Setter Property="Background">
+    <Setter.Value>
+     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+      <GradientStop Color="#FFBFDCDE"/>
+      <GradientStop Color="#FF49595A" Offset="1"/>
+     </LinearGradientBrush>
+    </Setter.Value>
+   </Setter>
+  </Style>
+  <Style x:Key="Room401BVerticalStyle" TargetType="telerik:AppointmentItem">
+   <Setter Property="Background">
+    <Setter.Value>
+     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+      <GradientStop Color="#FFBFDCDE"/>
+      <GradientStop Color="#FF49595A" Offset="1"/>
+     </LinearGradientBrush>
+    </Setter.Value>
+   </Setter>
+  </Style>
+  <Style x:Key="Room605AHorizontalStyle" TargetType="telerik:AppointmentItem">
+   <Setter Property="Background">
+    <Setter.Value>
+     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+      <GradientStop Color="#FFDAA8D3" Offset="0.002"/>
+      <GradientStop Color="#FF5C485A" Offset="1"/>
+     </LinearGradientBrush>
+    </Setter.Value>
+   </Setter>
+  </Style>
+  <Style x:Key="Room605AVerticalStyle" TargetType="telerik:AppointmentItem">
+   <Setter Property="Background">
+    <Setter.Value>
+     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+      <GradientStop Color="#FFDAA8D3" Offset="0.002"/>
+      <GradientStop Color="#FF5C485A" Offset="1"/>
+     </LinearGradientBrush>
+    </Setter.Value>
+   </Setter>
+  </Style>
+<!-- #endregion -->
+
+<!-- #region radscheduleview-styles-and-templates-appointment-style_5 -->
+<local:AppointmentStyleSelector x:Key="RoomAppointmentStyleSelector" Room401BHorizontalStyle="{StaticResource Room401BHorizontalStyle}"
+          Room401BVerticalStyle="{StaticResource Room401BVerticalStyle}"
+          Room402AHorizontalStyle="{StaticResource Room402AHorizontalStyle}"
+          Room402AVerticalStyle="{StaticResource Room402AVerticalStyle}"
+          Room605AHorizontalStyle="{StaticResource Room605AHorizontalStyle}"
+          Room605AVerticalStyle="{StaticResource Room605AVerticalStyle}" />
+<!-- #endregion -->
+</Grid>
+</UserControl>

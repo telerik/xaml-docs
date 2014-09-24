@@ -1,0 +1,62 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_0 -->
+<ListBox x:Name="listBox">
+    <telerik:RadContextMenu.ContextMenu>
+        <telerik:RadContextMenu x:Name="radContextMenu">
+        </telerik:RadContextMenu>
+    </telerik:RadContextMenu.ContextMenu>
+</ListBox>
+<!-- #endregion -->
+
+<!-- #region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_5 -->
+<ListBox x:Name="listBox"
+         DisplayMemberPath="Value"
+         ItemsSource="{Binding Items}"
+         SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+    <telerik:RadContextMenu.ContextMenu>
+        <telerik:RadContextMenu x:Name="radContextMenu">
+        </telerik:RadContextMenu>
+    </telerik:RadContextMenu.ContextMenu>
+</ListBox>
+<!-- #endregion -->
+
+<!-- #region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_6 -->
+<ListBox x:Name="listBox"
+         DisplayMemberPath="Value"
+         ItemsSource="{Binding Items}"
+         SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+    <telerik:RadContextMenu.ContextMenu>
+        <telerik:RadContextMenu x:Name="radContextMenu"
+                                          Opened="RadContextMenu_Opened">
+        </telerik:RadContextMenu>
+    </telerik:RadContextMenu.ContextMenu>
+</ListBox>
+<!-- #endregion -->
+
+<!-- #region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_13 -->
+<ListBox x:Name="listBox"
+         DisplayMemberPath="Value"
+         ItemsSource="{Binding Items}"
+         SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+    <telerik:RadContextMenu.ContextMenu>
+        <telerik:RadContextMenu x:Name="radContextMenu"
+                                          Opened="RadContextMenu_Opened">
+            <telerik:RadMenuItem Header="{Binding MoveUpCommand.Text}"
+                                           Command="{Binding MoveUpCommand}" />
+            <telerik:RadMenuItem Header="{Binding MoveDownCommand.Text}"
+                                           Command="{Binding MoveDownCommand}" />
+        </telerik:RadContextMenu>
+    </telerik:RadContextMenu.ContextMenu>
+</ListBox>
+<!-- #endregion -->
+</Grid>
+</UserControl>

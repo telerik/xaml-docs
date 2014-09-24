@@ -1,0 +1,35 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddocking-features-pane-groups_0 -->
+<telerik:RadDocking x:Name="radDocking">
+    <telerik:RadSplitContainer>
+        <telerik:RadPaneGroup x:Name="Group1">
+            <telerik:RadPane x:Name="Pane1" Header="Server Explorer"/>
+            <telerik:RadPane x:Name="Pane2" Header="Toolbox"/>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>
+</telerik:RadDocking>
+<!-- #endregion -->
+
+<!-- #region raddocking-features-pane-groups_17 -->
+<telerik:RadDocking x:Name="radDocking">
+    <telerik:RadSplitContainer Height="200" InitialPosition="DockedTop" Orientation="Horizontal">
+        <telerik:RadPaneGroup telerik:ProportionalStackPanel.RelativeSize="200, 200">
+            <telerik:RadPane Header="pane" />
+        </telerik:RadPaneGroup>
+        <telerik:RadPaneGroup telerik:ProportionalStackPanel.RelativeSize="400, 200">
+            <telerik:RadPane Header="pane" />
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>
+</telerik:RadDocking>
+<!-- #endregion -->
+</Grid>
+</UserControl>

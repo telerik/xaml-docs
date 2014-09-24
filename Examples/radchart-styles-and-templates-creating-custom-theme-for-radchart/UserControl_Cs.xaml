@@ -1,0 +1,193 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-styles-and-templates-creating-custom-theme-for-radchart_0 -->
+<!-- Custom Theme Animation BEGIN -->
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyBarStoryboard">
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_AnimationTransform"
+                                    Storyboard.TargetProperty="ScaleY"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_MainContainer"
+                                    Storyboard.TargetProperty="Opacity"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1.0"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyHorizontalBarStoryboard">
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_AnimationTransform"
+                                    Storyboard.TargetProperty="ScaleX"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_MainContainer"
+                                    Storyboard.TargetProperty="Opacity"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyStackedBarStoryboard">
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_AnimationTransform"
+                                    Storyboard.TargetProperty="ScaleY"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_MainContainer"
+                                    Storyboard.TargetProperty="Opacity"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyHorizontalStackedBarStoryboard">
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_AnimationTransform"
+                                    Storyboard.TargetProperty="ScaleX"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_MainContainer"
+                                    Storyboard.TargetProperty="Opacity"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyStackedBar100Storyboard">
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_AnimationTransform"
+                                    Storyboard.TargetProperty="ScaleY"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_MainContainer"
+                                    Storyboard.TargetProperty="Opacity"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyHorizontalStackedBar100Storyboard">
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_AnimationTransform"
+                                    Storyboard.TargetProperty="ScaleX"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_MainContainer"
+                                    Storyboard.TargetProperty="Opacity"
+                                    Duration="00:00:00.5"
+                                    BeginTime="00:00:00.2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.495"
+                                Value="1"
+                                KeySpline="0.26,0.564,0.512,1" />
+    </DoubleAnimationUsingKeyFrames>
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyPieStoryboard">
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleX"
+                        Duration="00:00:00.25"
+                        BeginTime="00:00:00.25" />
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleY"
+                        Duration="00:00:00.25"
+                        BeginTime="00:00:00.25" />
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyDoughnutStoryboard">
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleX"
+                        Duration="00:00:00.25"
+                        BeginTime="00:00:00.25" />
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleY"
+                        Duration="00:00:00.25"
+                        BeginTime="00:00:00.25" />
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyLineSeriesStoryboard">
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleX"
+                        Duration="00:00:01"
+                        BeginTime="00:00:00.25" />
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyAreaSeriesStoryboard">
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleX"
+                        Duration="00:00:01"
+                        BeginTime="00:00:00.25" />
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyRangeSeriesStoryboard">
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleX"
+                        Duration="00:00:01"
+                        BeginTime="00:00:00.25" />
+</Storyboard>
+<Storyboard BeginTime="00:00:00.5"
+            x:Key="MyBubbleStoryboard">
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleX"
+                        Duration="00:00:00.25"
+                        BeginTime="00:00:00.2" />
+    <DoubleAnimation To="1"
+                        Storyboard.TargetName="PART_AnimationTransform"
+                        Storyboard.TargetProperty="ScaleY"
+                        Duration="00:00:00.25"
+                        BeginTime="00:00:00.2" />
+</Storyboard>
+<!-- Custom Theme Animation END -->
+<!-- #endregion -->
+</Grid>
+</UserControl>

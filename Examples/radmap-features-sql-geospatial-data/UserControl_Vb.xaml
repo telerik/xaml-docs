@@ -1,0 +1,58 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radmap-features-sql-geospatial-data_0 -->
+<telerik:InformationLayer x:Name="informationLayer">
+    <telerik:InformationLayer.Reader>
+        <telerik:SqlGeospatialDataReader x:Name="sqlGeospatialDataReader" 
+                   ExtendedPropertySet="Area,string Latitude,double Longitude,double"
+                   Source="{Binding Source={StaticResource domainServiceContext}, Path=LocationsWKTs}"
+                   GeospatialPropertyName="Point" ToolTipFormat="Area" PreviewReadCompleted="reader_PreviewReadCompleted" />
+    </telerik:InformationLayer.Reader>
+</telerik:InformationLayer>
+<!-- #endregion -->
+
+<!-- #region radmap-features-sql-geospatial-data_1 -->
+SELECT        id, Area, Latitude, Longitude, GeoLocation.STAsBinary() AS Point
+FROM            dbo.Locations
+<!-- #endregion -->
+
+<!-- #region radmap-features-sql-geospatial-data_2 -->
+<Window x:Class="EntityDataModelTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:local="clr-namespace:EntityDataModelTest"
+        Title="MainWindow" Height="350" Width="525">
+                <Window.Resources>
+                    <local:Database1Entities x:Key="dataBase" />
+                </Window.Resources>
+                <Grid x:Name="LayoutRoot">
+                    <telerik:RadMap x:Name="radMap"
+                        Center="40,-100"
+                        ZoomLevel="3">
+                        <telerik:RadMap.Provider>
+                            <telerik:OpenStreetMapProvider />
+                        </telerik:RadMap.Provider>
+                        <telerik:InformationLayer x:Name="informationLayer">
+                            <telerik:InformationLayer.Reader>
+                                <telerik:SqlGeospatialDataReader x:Name="sqlGeospatialDataReader" 
+                                                     GeospatialPropertyName="Point"
+                                                     Source="{Binding Source={StaticResource dataBase}, Path=LocationsWKB}"
+                                                     ToolTipFormat="{}{Area} ({Latitude} : {Longitude})"
+                                                     PreviewReadCompleted="reader_PreviewReadCompleted" />
+                            </telerik:InformationLayer.Reader>
+                        </telerik:InformationLayer>
+                    </telerik:RadMap>
+                </Grid>
+            </Window>
+<!-- #endregion -->
+</Grid>
+</UserControl>

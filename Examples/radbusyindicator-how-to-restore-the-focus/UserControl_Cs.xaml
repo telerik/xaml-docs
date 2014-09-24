@@ -1,0 +1,43 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radbusyindicator-how-to-restore-the-focus_1 -->
+<telerik:RadBusyIndicator x:Name="radBusyIndicator">                          
+    <Grid>
+        <TextBox example:FocusHelper.EnsureFocus="{Binding IsBusyIndicationVisible, ElementName=radBusyIndicator}"/>
+    </Grid>
+</telerik:RadBusyIndicator>
+<!-- #endregion -->
+
+<!-- #region radbusyindicator-how-to-restore-the-focus_2 -->
+<Border BorderBrush="Black" 
+		BorderThickness="2" 
+		Height="200" Width="220"
+		Margin="10">
+	<telerik:RadBusyIndicator x:Name="BusyIndicator">
+		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
+					x:Name="StackPanel">
+			<TextBox Width="170"
+						Margin="10"
+						x:Name="TextBox"
+						Text="Click here to set the focus."/>
+			<TextBox Width="170"
+						Margin="10"
+						Text="or here."/>
+		</StackPanel>
+	</telerik:RadBusyIndicator>
+</Border>
+<!-- #endregion -->
+
+		<!-- #region radbusyindicator-how-to-restore-the-focus_3 -->
+	
+		<!-- #endregion -->
+	</Grid>
+</UserControl>

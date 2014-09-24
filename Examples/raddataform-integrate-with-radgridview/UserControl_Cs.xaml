@@ -1,0 +1,24 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddataform-integrate-with-radgridview_2 -->
+<telerik:RadGridView x:Name="RadGridView1" IsReadOnly="True" ItemsSource="{Binding Employees}" 
+                             CanUserFreezeColumns="False" RowIndicatorVisibility="Collapsed" 
+                             Height="500"  Width="700"
+                             RowDetailsVisibilityMode="VisibleWhenSelected">
+ <telerik:RadGridView.RowDetailsTemplate>
+  <DataTemplate>
+   <telerik:RadDataForm x:Name="myRadDataForm" CurrentItem="{Binding}" Header="Edit Employee:" />
+  </DataTemplate>
+ </telerik:RadGridView.RowDetailsTemplate>
+</telerik:RadGridView>
+<!-- #endregion -->
+</Grid>
+</UserControl>

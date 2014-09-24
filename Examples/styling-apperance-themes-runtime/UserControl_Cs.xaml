@@ -1,0 +1,64 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+
+<!-- #region styling-apperance-themes-runtime_1 -->
+<Application.Resources>
+	<ResourceDictionary>
+		<ResourceDictionary.MergedDictionaries>
+			<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
+			<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
+			<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+			...
+		</ResourceDictionary.MergedDictionaries>
+	</ResourceDictionary>
+</Application.Resources>
+<!-- #endregion -->
+
+<!-- #region styling-apperance-themes-runtime_2 -->
+<Grid x:Name="LayoutRoot" Background="White">
+	<Grid.RowDefinitions>
+		<RowDefinition Height="Auto" />
+		<RowDefinition Height="*" />
+	</Grid.RowDefinitions>
+		
+	<StackPanel Orientation="Horizontal" Background="#FFE5E5E5" HorizontalAlignment="Stretch">
+		<telerik:RadButton Content="Office Black" VerticalAlignment="Center" Width="110"  Margin="10" Click="OfficeBlack_Click" />
+		<telerik:RadButton Content="Windows8" VerticalAlignment="Center" Width="110" Margin="10" Click="Windows8_Click" />
+		<telerik:RadButton Content="Windows 7" VerticalAlignment="Center" Width="110"  Margin="10" Click="Windows7_Click" />
+	</StackPanel>
+	
+	<StackPanel Orientation="Vertical" Grid.Row="1" Margin="20" HorizontalAlignment="Left">
+		<telerik:RadComboBox Width="230" Margin="10">
+			<telerik:RadComboBoxItem Content="Item 1" />
+			<telerik:RadComboBoxItem Content="Item 2" />
+			<telerik:RadComboBoxItem Content="Item 3" />
+			<telerik:RadComboBoxItem Content="Item 4" />
+			<telerik:RadComboBoxItem Content="Item 5" />
+		</telerik:RadComboBox>
+		
+		<telerik:RadDateTimePicker Width="230" Margin="10" IsDropDownOpen="True" />
+	</StackPanel>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region styling-apperance-themes-runtime_4 -->
+<Application.Resources>
+  <ResourceDictionary>
+    <ResourceDictionary.MergedDictionaries>
+      <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
+      ...
+    </ResourceDictionary.MergedDictionaries>
+  </ResourceDictionary>
+</Application.Resources>
+<!-- #endregion -->
+
+</Grid>
+</UserControl>

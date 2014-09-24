@@ -1,0 +1,63 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region gridview-troubleshooting-elementname-binding_0 -->
+<TextBox x:Name="TextBox1" Text="Type something" />
+
+    <telerik:RadGridView ItemsSource="{Binding}" AutoGenerateColumns="False">
+        <telerik:RadGridView.Columns>
+            <telerik:GridViewColumn>
+                <telerik:GridViewColumn.Header>
+                    <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
+                </telerik:GridViewColumn.Header>
+                <telerik:GridViewColumn.CellTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
+                    </DataTemplate>
+                </telerik:GridViewColumn.CellTemplate>
+            </telerik:GridViewColumn>
+        </telerik:RadGridView.Columns>
+    </telerik:RadGridView>
+<!-- #endregion -->
+
+<!-- #region gridview-troubleshooting-elementname-binding_1 -->
+<TextBox x:Name="TextBox1" Text="Type something" />
+
+    <telerik:RadGridView ItemsSource="{Binding}" AutoGenerateColumns="False">
+        <telerik:RadGridView.Columns>
+            <telerik:GridViewColumn>
+                <telerik:GridViewColumn.HeaderCellStyle>
+                    <Style TargetType="telerik:GridViewHeaderCell">
+                        <Setter Property="ContentTemplate">
+                            <Setter.Value>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
+                                </DataTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </telerik:GridViewColumn.HeaderCellStyle>
+                <telerik:GridViewColumn.CellStyle>
+                    <Style TargetType="telerik:GridViewCell">
+                        <Setter Property="ContentTemplate">
+                            <Setter.Value>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
+                                </DataTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </telerik:GridViewColumn.CellStyle>
+            </telerik:GridViewColumn>
+        </telerik:RadGridView.Columns>
+    </telerik:RadGridView>
+<!-- #endregion -->
+</Grid>
+</UserControl>

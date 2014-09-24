@@ -1,0 +1,3 @@
+<!--  #region radcoloreditor-features-unified-color-0  -->
+<telerik:RadColorEditor x:Name="colorEditor1" SelectedColor="Magenta" />
+<!--  #endregion  -->

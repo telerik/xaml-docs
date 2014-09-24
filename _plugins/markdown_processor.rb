@@ -99,7 +99,6 @@ module Jekyll
             @config = config
 
             context = {
-                :gfm => false,
                 :baseurl => @config['baseurl']
             }
 

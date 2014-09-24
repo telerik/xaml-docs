@@ -1,0 +1,94 @@
+<!-- #region radpivotgrid-getting-started_1 -->
+<pivot:RadPivotGrid Name="radPivotGrid1">            
+</pivot:RadPivotGrid>
+<!-- #endregion -->
+
+<Window x:Class="RadPivotGrid_GettingStarted.MainWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                xmlns:local="clr-namespace:RadPivotGrid_GettingStarted"
+				Title="MainWindow" Height="350" Width="525" xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot">
+    <Window.Resources>
+<!-- #region radpivotgrid-getting-started_2 -->
+<pivot:LocalDataSourceProvider x:Key="LocalDataProvider" AggregatesPosition="Rows">
+    <pivot:LocalDataSourceProvider.RowGroupDescriptions>
+        <pivot:PropertyGroupDescription PropertyName="Name" />
+    </pivot:LocalDataSourceProvider.RowGroupDescriptions>
+    <pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
+        <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
+    </pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
+    <pivot:LocalDataSourceProvider.AggregateDescriptions>
+        <pivot:PropertyAggregateDescription PropertyName="Price" StringFormat="C" AggregateFunction="Average" />
+        <pivot:PropertyAggregateDescription PropertyName="Quantity"/>
+    </pivot:LocalDataSourceProvider.AggregateDescriptions>
+</pivot:LocalDataSourceProvider>
+<!-- #endregion -->
+    </Window.Resources>
+		<Grid>
+<!-- #region radpivotgrid-getting-started_3 -->
+<pivot:RadPivotGrid Name="radPivotGrid1" DataProvider="{StaticResource LocalDataProvider}" >            
+</pivot:RadPivotGrid>
+<!-- #endregion -->
+    </Grid>
+</Window>
+
+
+<!-- #region radpivotgrid-getting-started_4 -->
+<Window x:Class="RadPivotGrid_GettingStarted.MainWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                xmlns:local="clr-namespace:RadPivotGrid_GettingStarted"
+                xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"
+				Title="MainWindow" Height="350" Width="525" >
+    <Window.Resources>
+        <pivot:LocalDataSourceProvider x:Key="LocalDataProvider" AggregatesPosition="Rows">
+            <pivot:LocalDataSourceProvider.RowGroupDescriptions>
+                <pivot:PropertyGroupDescription PropertyName="Name" />
+            </pivot:LocalDataSourceProvider.RowGroupDescriptions>
+            <pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
+                <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
+            </pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
+            <pivot:LocalDataSourceProvider.AggregateDescriptions>
+                <pivot:PropertyAggregateDescription PropertyName="Price" StringFormat="C" AggregateFunction="Average" />
+                <pivot:PropertyAggregateDescription PropertyName="Quantity"/>
+            </pivot:LocalDataSourceProvider.AggregateDescriptions>
+        </pivot:LocalDataSourceProvider>
+    </Window.Resources>
+		<Grid>
+        <pivot:RadPivotGrid Name="radPivotGrid1" DataProvider="{StaticResource LocalDataProvider}" >            
+        </pivot:RadPivotGrid>
+    </Grid>
+</Window>
+<!-- #endregion -->
+
+<!-- #region radpivotgrid-getting-started_5 -->
+<UserControl x:Class="RadPivotGrid_GettingStarted.MainPage"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"
+		mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+    <UserControl.Resources>
+        <pivot:LocalDataSourceProvider x:Key="LocalDataProvider" AggregatesPosition="Rows">
+            <pivot:LocalDataSourceProvider.RowGroupDescriptions>
+                <pivot:PropertyGroupDescription PropertyName="Name" />
+            </pivot:LocalDataSourceProvider.RowGroupDescriptions>
+            <pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
+                <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
+            </pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
+            <pivot:LocalDataSourceProvider.AggregateDescriptions>
+                <pivot:PropertyAggregateDescription PropertyName="Price" StringFormat="C" AggregateFunction="Average" />
+                <pivot:PropertyAggregateDescription PropertyName="Quantity"/>
+            </pivot:LocalDataSourceProvider.AggregateDescriptions>
+        </pivot:LocalDataSourceProvider>
+    </UserControl.Resources>
+	<Grid x:Name="LayoutRoot">
+        <pivot:RadPivotGrid Name="radPivotGrid1" DataProvider="{StaticResource LocalDataProvider}" >
+        </pivot:RadPivotGrid>
+    </Grid>
+</UserControl>
+<!-- #endregion -->

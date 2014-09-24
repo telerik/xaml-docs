@@ -1,0 +1,41 @@
+﻿<!--  #region raddiagram-howto-customize-dragging-0 -->
+    <Grid Background="White">
+        <telerik:RadDiagram x:Name="diagram">
+            <telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=BeginLoopShape}" Position="400 300" />
+            <telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=ExternalDataShape}" Position="500 400" />
+        </telerik:RadDiagram>
+
+        <Border x:Name="border"
+                Width="840"
+                Height="480"
+                BorderBrush="LightBlue"
+                BorderThickness="2" />
+
+        <StackPanel Width="200" HorizontalAlignment="Left">
+
+            <TextBlock FontSize="16"
+                       FontWeight="Bold"
+                       Text="Dragging: " />
+            <telerik:RadToggleButton x:Name="toggleDrag"
+                                     Width="130"
+                                     Height="30"
+                                     Content="On"
+                                     IsChecked="True" />
+            <telerik:RadToggleButton x:Name="IsRestrictedToBounds"
+                                     Width="130"
+                                     Height="30"
+                                     Content="IsRestrictedToBounds" />
+            <telerik:RadToggleButton x:Name="useRotaitonBounds"
+                                     Width="130"
+                                     Height="30"
+                                     Content="UseRotatedBounds"
+                                     IsChecked="True" />
+        </StackPanel>
+    </Grid>
+<!--  #endregion  -->
+<!--  #region raddiagram-howto-customize-dragging-1 -->
+<telerik:RadDiagram x:Name="diagram" ViewportChanged="OnDiagramViewportChanged">
+	<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=BeginLoopShape}" Position="400 300" />
+	<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=ExternalDataShape}" Position="500 400" />
+</telerik:RadDiagram>
+<!--  #endregion  -->

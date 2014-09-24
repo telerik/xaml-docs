@@ -1,0 +1,15 @@
+#region radpivotgrid-features-datetimegroup_1
+<pivot:LocalDataSourceProvider.RowGroupDescriptions>
+    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Quarter"/>
+    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
+    <pivot:PropertyGroupDescription PropertyName="Date"/>
+</pivot:LocalDataSourceProvider.RowGroupDescriptions>
+#endregion
+
+#region radpivotgrid-features-datetimegroup_2
+<pivot:LocalDataSourceProvider x:Key="dataProvider" ItemsSource="{StaticResource source}">
+    <pivot:LocalDataSourceProvider.FieldDescriptionsProvider>
+        <pivot:LocalDataSourceFieldDescriptionsProvider AddingContainerNode="LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded_1"/>
+    </pivot:LocalDataSourceProvider.FieldDescriptionsProvider>
+</pivot:LocalDataSourceProvider>
+#endregion

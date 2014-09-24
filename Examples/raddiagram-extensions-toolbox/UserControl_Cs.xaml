@@ -1,0 +1,199 @@
+﻿<!--#region raddiagram-extensions-toolbox-0 -->
+<Grid>
+	<Grid.DataContext>
+		<telerik:HierarchicalGalleryItemsCollection />
+	</Grid.DataContext>
+	<Grid.Resources>
+		<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+		   <!--  ToolboxItemTemplate  -->
+            <DataTemplate x:Key="ToolboxItemTemplate">
+                <Grid Width="76"
+                      Height="100"
+                      Margin="0 1 1 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="42" />
+                    </Grid.RowDefinitions>
+                    <Viewbox Margin="5 5 5 0"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Bottom">
+                        <ContentPresenter Margin="5"
+                                          Content="{Binding Shape}"
+                                          IsHitTestVisible="False" />
+                    </Viewbox>
+                    <TextBlock Grid.Row="1"
+                               Margin="5"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Top"
+                               FontFamily="Segoe UI Semibold"
+                               FontSize="12"
+                               Text="{Binding Header}"
+                               TextAlignment="Center"
+                               TextWrapping="Wrap" />
+                </Grid>
+            </DataTemplate>
+            <!--  ToolboxGroupTemplate  -->
+            <HierarchicalDataTemplate x:Key="ToolboxTemplate"
+                                      ItemTemplate="{StaticResource ToolboxItemTemplate}"
+                                      ItemsSource="{Binding Items}">
+                <TextBlock MinWidth="55" Text="{Binding Header}" />
+            </HierarchicalDataTemplate>
+	</Grid.Resources>
+
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="Auto" />
+		<ColumnDefinition Width="*" />
+		<ColumnDefinition Width="Auto" />
+
+	</Grid.ColumnDefinitions>
+
+	<telerik:RadDiagramToolbox x:Name="toolbox"
+							   Title="Gallery"
+							   Width="330"
+							   HorizontalAlignment="Right"
+							   Header="{Binding SelectedItem.Header,
+												RelativeSource={RelativeSource Self}}"
+							   ItemsSource="{Binding}"
+							   ItemTemplate="{StaticResource ToolboxTemplate}"
+							   Visibility="{Binding IsChecked,
+													ElementName=toolboxButton,
+													Converter={StaticResource BooleanToVisibilityConverter}}" />
+
+</Grid>
+<!--#endregion -->
+<!--#region raddiagram-extensions-toolbox-1 -->
+<Grid>
+	<Grid.DataContext>
+		 <!-- local is an alias pointing to your local namespace where the MainViewModel class is defined-->
+        <local:MainViewModel />
+	</Grid.DataContext>
+	<Grid.Resources>
+		<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+		   <!--  ToolboxItemTemplate  -->
+            <DataTemplate x:Key="ToolboxItemTemplate">
+                <Grid Width="76"
+                      Height="100"
+                      Margin="0 1 1 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="42" />
+                    </Grid.RowDefinitions>
+                    <Viewbox Margin="5 5 5 0"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Bottom">
+                        <ContentPresenter Margin="5"
+                                          Content="{Binding Shape}"
+                                          IsHitTestVisible="False" />
+                    </Viewbox>
+                    <TextBlock Grid.Row="1"
+                               Margin="5"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Top"
+                               FontFamily="Segoe UI Semibold"
+                               FontSize="12"
+                               Text="{Binding Header}"
+                               TextAlignment="Center"
+                               TextWrapping="Wrap" />
+                </Grid>
+            </DataTemplate>
+            <!--  ToolboxGroupTemplate  -->
+            <HierarchicalDataTemplate x:Key="ToolboxTemplate"
+                                      ItemTemplate="{StaticResource ToolboxItemTemplate}"
+                                      ItemsSource="{Binding Items}">
+                <TextBlock MinWidth="55" Text="{Binding Header}" />
+            </HierarchicalDataTemplate>
+	</Grid.Resources>
+
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="Auto" />
+		<ColumnDefinition Width="*" />
+		<ColumnDefinition Width="Auto" />
+
+	</Grid.ColumnDefinitions>
+
+	<telerik:RadDiagramToolbox x:Name="toolbox"
+							   Title="Gallery"
+							   Width="330"
+							   HorizontalAlignment="Right"
+							   Header="{Binding SelectedItem.Header,
+												RelativeSource={RelativeSource Self}}"
+							   ItemsSource="{Binding GalleryItems}"
+							   ItemTemplate="{StaticResource ToolboxTemplate}"
+							   Visibility="{Binding IsChecked,
+													ElementName=toolboxButton,
+													Converter={StaticResource BooleanToVisibilityConverter}}" />
+
+</Grid>
+<!--#endregion -->
+<!--#region raddiagram-extensions-toolbox-2 -->
+<Grid>
+	<Grid.DataContext>
+		<local:MainViewModel />
+	</Grid.DataContext>
+	<Grid.Resources>
+		<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+		<!--  ToolboxItemTemplate  -->
+		<DataTemplate x:Key="ToolboxItemTemplate">
+			<Border Width="76"
+					Height="100"
+					Margin="0 1 1 0"
+					Background="Transparent">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+					<Viewbox Width="64"
+							 Height="50"
+							 Margin="5 10 5 0"
+							 HorizontalAlignment="Center"
+							 VerticalAlignment="Top"
+							 Stretch="Uniform">
+						<telerik:RadDiagramShape Margin="15"
+												 VerticalAlignment="Top"
+												 HorizontalContentAlignment="Center"
+												 VerticalContentAlignment="Center"
+												 Geometry="{Binding Geometry}"
+												 IsHitTestVisible="False" />
+					</Viewbox>
+					<TextBlock Grid.Row="1"
+							   Margin="0 0 0 5"
+							   HorizontalAlignment="Center"
+							   FontFamily="Segoe UI Semibold"
+							   Padding="4 0"
+							   Text="{Binding Header}"
+							   TextAlignment="Center"
+							   TextWrapping="Wrap" />
+				</Grid>
+			</Border>
+
+		</DataTemplate>
+		<!--  ToolboxGroupTemplate  -->
+		<HierarchicalDataTemplate x:Key="ToolboxGroupTemplate"
+								  ItemsSource="{Binding Shapes}"
+								  ItemTemplate="{StaticResource ToolboxItemTemplate}">
+			<TextBlock Text="{Binding Header}" />
+		</HierarchicalDataTemplate>
+	</Grid.Resources>
+
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="Auto" />
+		<ColumnDefinition Width="*" />
+		<ColumnDefinition Width="Auto" />
+
+	</Grid.ColumnDefinitions>
+
+	<telerik:RadDiagramToolbox x:Name="toolbox"
+							   Title="Gallery"
+							   Width="330"
+							   HorizontalAlignment="Right"
+							   Header="{Binding SelectedItem.Header,
+												RelativeSource={RelativeSource Self}}"
+							   ItemsSource="{Binding Items}"
+							   ItemTemplate="{StaticResource ToolboxGroupTemplate}"
+							   Visibility="{Binding IsChecked,
+													ElementName=toolboxButton,
+													Converter={StaticResource BooleanToVisibilityConverter}}" />
+
+</Grid>
+<!--#endregion -->

@@ -1,0 +1,60 @@
+<Window x:Class="CalendarDayButtonStyle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:local="clr-namespace:CalendarDayButtonStyle"
+        xmlns:calendar="clr-namespace:Telerik.Windows.Controls.Calendar;assembly=Telerik.Windows.Controls.Input"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.Resources>
+            <local:DayButtonStyleSelector x:Key="customStyleSelector">
+                <local:DayButtonStyleSelector.SpecialStyleMonday>
+                    <Style TargetType="{x:Type calendar:CalendarButton}">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <SolidColorBrush Color="Orange" Opacity="0.6"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </local:DayButtonStyleSelector.SpecialStyleMonday>
+            </local:DayButtonStyleSelector>
+        </Grid.Resources>
+        <telerik:RadCalendar HorizontalAlignment="Left" Margin="68,96,0,0"
+                             Name="radCalendar1"
+                             VerticalAlignment="Top"
+                             DayButtonStyleSelector="{StaticResource customStyleSelector}"
+                             DayButtonStyle="{x:Null}"/>
+    </Grid>
+</Window>
+
+<!-- #region radcalendar-styling-and-appearance-daybuttonstyleselector-1 -->
+<UserControl x:Class="CalendarDayButtonStyle.MainPage"
+	     	...
+             xmlns:local="clr-namespace:CalendarDayButtonStyle"
+    	     xmlns:calendar="clr-namespace:Telerik.Windows.Controls.Calendar;assembly=Telerik.Windows.Controls.Input"
+             ...>
+</UserControl>
+<!-- #endregion -->
+
+<!-- #region radcalendar-styling-and-appearance-daybuttonstyleselector-2 -->
+<local:DayButtonStyleSelector x:Key="CustomStyleSelector">
+    <local:DayButtonStyleSelector.SpecialStyleMonday>
+        <Style TargetType="calendar:CalendarButton">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <SolidColorBrush Color="Orange" Opacity="0.6"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </local:DayButtonStyleSelector.SpecialStyleMonday>
+</local:DayButtonStyleSelector>
+<!-- #endregion -->
+
+<!-- #region radcalendar-styling-and-appearance-daybuttonstyleselector-3 -->
+<telerik:RadCalendar DayButtonStyleSelector="{StaticResource CustomStyleSelector}"/>
+<!-- #endregion -->
+
+<!-- #region radcalendar-styling-and-appearance-daybuttonstyleselector-4 -->
+<telerik:RadCalendar DayButtonStyleSelector="{StaticResource CustomStyleSelector}"
+                     DayButtonStyle="{x:Null}"/>
+<!-- #endregion -->

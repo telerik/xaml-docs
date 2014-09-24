@@ -1,0 +1,38 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region installation-adding-application-namespace-declaration-wpf_0 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+<!-- #endregion -->
+
+<!-- #region installation-adding-application-namespace-declaration-wpf_1 -->
+<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+    </Grid>
+</Window>
+<!-- #endregion -->
+
+<!-- #region installation-adding-application-namespace-declaration-wpf_2 -->
+<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <telerik:RadTreeView/>
+    </Grid>
+</Window>
+<!-- #endregion -->
+</Grid>
+</UserControl>

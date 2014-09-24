@@ -1,0 +1,28 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radscheduleview-features-appointments-custom-appointment_4 -->
+<CheckBox Grid.Row="4" Grid.Column="1" Margin="3" Content="Is done?" IsChecked="{Binding Occurrence.Appointment.IsDone, Mode=TwoWay}"/>
+<!-- #endregion -->
+
+<!-- #region radscheduleview-features-appointments-custom-appointment_5 -->
+<Ellipse Fill="Green" Width="12" Height="12" VerticalAlignment="Top" Margin="10 5 5 5" HorizontalAlignment="Left" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />
+<!-- #endregion -->
+
+<!-- #region radscheduleview-features-appointments-custom-appointment_6 -->
+<DataTemplate x:Key="ToolTipTemplate">
+   <StackPanel Orientation="Horizontal" MinWidth="140" Margin="0 5">
+      <TextBlock MaxWidth="200" TextWrapping="Wrap" Text="{Binding Subject}"/>
+      <TextBlock Text="(Done)" Grid.Row="1" Margin="5 0 5 0" Foreground="#FF191D1A" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" FontStyle="Italic" />
+   </StackPanel> 
+</DataTemplate>
+<!-- #endregion -->
+</Grid>
+</UserControl>

@@ -1,0 +1,42 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+  <DataTemplate           
+<!-- #region radtabcontrol-templating-custom-header-template_0 -->
+<Application.Resources>
+	<DataTemplate x:Key="AnimalDataTemplate">
+		<Border Background="Yellow">
+			<StackPanel Orientation="Horizontal">
+				<Image Source="{Binding ImageSource}" Width="16" Height="16"/>
+				<TextBlock Text="{Binding Name}" VerticalAlignment="Center"/>
+			</StackPanel>
+		</Border>
+	</DataTemplate>
+	<DataTemplate x:Key="PlantDataTemplate">
+		<Border Background="Green">
+			<StackPanel Orientation="Horizontal">
+				<Image Source="{Binding ImageSource}" Width="16" Height="16"/>
+				<TextBlock Text="{Binding Name}" VerticalAlignment="Center"/>
+			</StackPanel>
+		</Border>
+	</DataTemplate>
+</Application.Resources>
+<!-- #endregion -->    
+<!-- #region radtabcontrol-templating-custom-header-template_4 -->
+<selectors:HeaderSelector x:Key="HeaderSelector" />
+...
+<telerik:RadTabControl x:Name="Tabs">
+    <telerik:RadTabControl.ItemContainerStyle>
+        <Style TargetType="telerik:RadTabItem">
+            <Setter Property="HeaderTemplateSelector" Value="{StaticResource HeaderSelector}" />
+        </Style>
+    </telerik:RadTabControl.ItemContainerStyle>
+</telerik:RadTabControl>
+<!-- #endregion -->
+</Grid>
+</UserControl>

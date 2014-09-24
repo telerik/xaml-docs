@@ -1,0 +1,118 @@
+﻿<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+       <!-- #region gridview-how-to-use-radcontextmenu-mvvm_0 -->
+        <local:RadContextMenuXamlHolder x:Key="ContextMenuHolder">
+        <telerik:RadContextMenu InheritDataContext="False" DataContext="{Binding Path=UIElement.Column.DataControl.DataContext, RelativeSource={RelativeSource Self}}">
+            <telerik:RadMenuItem Command="{Binding SortAscendingCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    StringFormat='Sort Ascending by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Command="{Binding SortDescendingCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    StringFormat='Sort Descending by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Command="{Binding ClearSortCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    StringFormat='Clear Sorting by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Command="{Binding GroupbyCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    StringFormat='Group by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Command="{Binding UngroupCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    StringFormat='Ungroup by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Header="Choose Columns:" ItemsSource="{Binding Path=Menu.UIElement.Column.DataControl.Columns, RelativeSource={RelativeSource Self}}">
+                <telerik:RadMenuItem.ItemContainerStyle>
+                    <Style TargetType="telerik:RadMenuItem">
+                        <Setter Property="Header" Value="{Binding Header}" />
+                        <Setter Property="IsChecked" Value="{Binding IsVisible, Mode=TwoWay}" />
+                        <Setter Property="IsCheckable" Value="True" />
+                    </Style>
+                </telerik:RadMenuItem.ItemContainerStyle>
+            </telerik:RadMenuItem>
+        </telerik:RadContextMenu>
+    </local:RadContextMenuXamlHolder>
+<!-- #endregion -->  
+          <!-- #region gridview-how-to-use-radcontextmenu-mvvm_1 -->
+        
+    <local:ObjectToStringConverter x:Key="ObjectToStringConverter" />
+    <local:RadContextMenuXamlHolder x:Key="ContextMenuHolder">
+        <telerik:RadContextMenu DataContext="{Binding Path=UIElement.Column.DataControl.DataContext, RelativeSource={RelativeSource Self}}" InheritDataContext="False">
+            <telerik:RadMenuItem Command="{Binding SortAscendingCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    Converter={StaticResource ObjectToStringConverter},
+                                                    ConverterParameter='Sort Ascending by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Command="{Binding SortDescendingCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    Converter={StaticResource ObjectToStringConverter},
+                                                    ConverterParameter='Sort Descending by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Command="{Binding ClearSortCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    Converter={StaticResource ObjectToStringConverter},
+                                                    ConverterParameter='Clear Sorting by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Command="{Binding GroupbyCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    Converter={StaticResource ObjectToStringConverter},
+                                                    ConverterParameter='Group by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Command="{Binding UngroupCommand}"
+                                    CommandParameter="{Binding Path=Menu.UIElement,
+                                                            RelativeSource={RelativeSource Self}}"
+                                    Header="{Binding Path=Menu.UIElement.Column.Header,
+                                                    RelativeSource={RelativeSource Self},
+                                                    Converter={StaticResource ObjectToStringConverter},
+                                                    ConverterParameter='Ungroup by &quot;{0}&quot;'}" />
+            <telerik:RadMenuItem Header="Choose Columns:" ItemsSource="{Binding Path=Menu.UIElement.Column.DataControl.Columns, RelativeSource={RelativeSource Self}}">
+                <telerik:RadMenuItem.ItemContainerStyle>
+                    <Style TargetType="telerik:RadMenuItem">
+                        <Setter Property="Header" Value="{Binding Header}" />
+                        <Setter Property="IsChecked" Value="{Binding IsVisible, Mode=TwoWay}" />
+                        <Setter Property="IsCheckable" Value="True" />
+                    </Style>
+                </telerik:RadMenuItem.ItemContainerStyle>
+            </telerik:RadMenuItem>
+        </telerik:RadContextMenu>
+    </local:RadContextMenuXamlHolder>
+    <!-- #endregion -->  
+<!-- #region gridview-how-to-use-radcontextmenu-mvvm_2 -->
+    <Style TargetType="telerik:GridViewHeaderCell">
+        <Setter Property="telerik:RadContextMenu.ContextMenu" Value="{Binding Path=ContextMenu, Source={StaticResource ContextMenuHolder}}" />
+    </Style>
+<!-- #endregion -->  
+         <!-- #region gridview-how-to-use-radcontextmenu-mvvm_3 -->
+    <Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource ViewModel}">
+        <telerik:RadGridView ItemsSource="{Binding Items}" />
+    </Grid>
+<!-- #endregion -->  
+        
+    </Grid>
+</UserControl>

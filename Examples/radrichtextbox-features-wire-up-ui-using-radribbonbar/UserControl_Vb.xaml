@@ -1,0 +1,68 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radrichtextbox-features-wire-up-ui-using-radribbonbar_0 -->
+xmlns:telerikDocuments="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Documents"
+xmlns:telerikDocumentsModel="clr-namespace:Telerik.Windows.Documents.Model;assembly=Telerik.Windows.Documents"
+xmlns:telerikRibbonBar="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.RibbonBar"
+<!-- #endregion -->
+
+<!-- #region radrichtextbox-features-wire-up-ui-using-radribbonbar_1 -->
+<Grid x:Name="LayoutRoot"
+      Background="White">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <telerikRibbonBar:RadRibbonBar x:Name="radRibbonBar"
+                                   ApplicationName="Editor Demo"
+                                   Title="Document1">
+        <telerikRibbonBar:RadRibbonTab Header="Home">
+            <telerikRibbonBar:RadRibbonGroup Header="Formatting"
+                                             telerikRibbonBar:ScreenTip.Title="Formatting"
+                                             telerikRibbonBar:ScreenTip.Description="Show the Font dialog box.">
+                <telerikRibbonBar:RadOrderedWrapPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <telerikRibbonBar:RadButtonGroup>
+                            <telerikRibbonBar:RadRibbonToggleButton x:Name="Bold"
+                                                                    Content="B"
+                                                                    Click="Bold_Click"
+                                                                    telerikRibbonBar:ScreenTip.Title="Bold"
+                                                                    telerikRibbonBar:ScreenTip.Description="Make the selected text bold." />
+                            <telerikRibbonBar:RadRibbonToggleButton x:Name="Italic"
+                                                                    Content="I"
+                                                                    Click="Italic_Click"
+                                                                    telerikRibbonBar:ScreenTip.Title="Italic"
+                                                                    telerikRibbonBar:ScreenTip.Description="Italicize the selected text." />
+                            <telerikRibbonBar:RadRibbonToggleButton x:Name="Underline"
+                                                                    Content="U"
+                                                                    Click="Underline_Click"
+                                                                    telerikRibbonBar:ScreenTip.Title="Underline"
+                                                                    telerikRibbonBar:ScreenTip.Description="Underline the selected text." />
+                        </telerikRibbonBar:RadButtonGroup>
+                    </StackPanel>
+                </telerikRibbonBar:RadOrderedWrapPanel>
+            </telerikRibbonBar:RadRibbonGroup>
+        </telerikRibbonBar:RadRibbonTab>
+    </telerikRibbonBar:RadRibbonBar>
+    <telerikRtb:RadRichTextBox Grid.Row="1"
+                               x:Name="radRichTextBox"
+                               CurrentSpanStyleChanged="radRichTextBox_CurrentSpanStyleChanged">
+        <telerikRtb:RadRichTextBox.Document>
+            <telerikDoc:RadDocument LayoutMode="Paged"
+                                    ParagraphDefaultSpacingAfter="0"
+                                    SectionDefaultPageMargin="15, 15, 15, 15"
+                                    PageViewMargin="5, 5" />
+        </telerikRtb:RadRichTextBox.Document>
+    </telerikRtb:RadRichTextBox>
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

@@ -1,0 +1,21 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+<!-- #region radpropertygrid-flagenumeditor_4 -->
+  <telerik:PropertyDefinition Binding="{Binding Position}">
+    <telerik:PropertyDefinition.EditorTemplate>
+        <DataTemplate>
+            <telerik:FlagEnumEditor Value="{Binding Position}" EnumType="my:Position" Loaded="FlagEnumEditor_Loaded">                             
+
+            </telerik:FlagEnumEditor>
+        </DataTemplate>
+    </telerik:PropertyDefinition.EditorTemplate>
+ </telerik:PropertyDefinition>
+<!-- #endregion -->
+</Grid>
+</UserControl>

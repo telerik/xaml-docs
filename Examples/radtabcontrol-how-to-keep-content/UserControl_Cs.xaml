@@ -1,0 +1,28 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+        <!--  #region radtabcontrol-how-to-keep-content_0  -->
+        <telerik:RadTabControl x:Name="tabControl" 
+                               IsContentPreserved="True"
+                               ItemsSource="{Binding Tabs}">
+            <telerik:RadTabControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Header}" />
+                </DataTemplate>
+            </telerik:RadTabControl.ItemTemplate>
+            <telerik:RadTabControl.ContentTemplate>
+                <DataTemplate>
+                    <telerik:RadCalendar HorizontalAlignment="Left" VerticalAlignment="Top" />
+                </DataTemplate>
+            </telerik:RadTabControl.ContentTemplate>
+        </telerik:RadTabControl>
+        <!--  #endregion  -->
+</Grid>
+</UserControl>

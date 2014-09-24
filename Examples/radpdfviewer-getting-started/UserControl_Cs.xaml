@@ -1,0 +1,35 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+
+<!-- #region radpdfviewer-getting-started_0-->   
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"     
+<!-- #endregion -->
+
+<!-- #region radpdfviewer-getting-started_1-->   
+<Grid>
+    <telerik:RadPdfViewer x:Name="pdfViewer"/>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radpdfviewer-getting-started_2-->
+        <telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
+   …
+</telerik:RadToolBar>
+<!-- #endregion -->
+
+<!-- #region radpdfviewer-getting-started_3-->
+        <telerik:RadButton Command="{Binding OpenCommandDescriptor.Command}" Visibility="{Binding OpenCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsBackgroundVisible="False">
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Open" />
+            </ToolTipService.ToolTip>
+            <Image Source="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/open.png" Stretch="None" />
+        </telerik:RadButton>
+        <!-- #endregion -->
+    </Grid>
+</UserControl>

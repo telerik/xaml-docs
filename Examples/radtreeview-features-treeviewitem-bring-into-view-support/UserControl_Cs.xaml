@@ -1,0 +1,28 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-features-treeviewitem-bring-into-view-support_0 -->
+<Grid x:Name="LayoutRoot"
+        Background="White">
+    <Grid.Resources>
+        <DataTemplate x:Key="treeViewTemplate">
+            <TextBlock Text="{Binding Title}" />
+        </DataTemplate>
+    </Grid.Resources>
+    <telerik:RadTreeView x:Name="RadTreeView">
+        <telerik:RadTreeViewItem x:Name="RadTreeViewItem"
+                                            Header="MyItems"
+                                            ItemTemplate="{StaticResource treeViewTemplate}">
+        </telerik:RadTreeViewItem>
+    </telerik:RadTreeView>
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

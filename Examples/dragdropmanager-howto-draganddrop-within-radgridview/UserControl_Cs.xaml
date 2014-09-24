@@ -1,0 +1,51 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+<!--my:RowReorderBehavior.IsEnabled="True"-->
+<!-- #region dragdropmanager-howto-draganddrop-within-radgridview_0 -->
+ <telerik:RadGridView   AutoGenerateColumns="True"
+                        Margin="5"
+                        Name="radGridView"
+                        AllowDrop="True"
+                        GroupRenderMode="Flat">
+            <telerik:RadGridView.Resources>
+                <DataTemplate x:Key="DraggedItemTemplate">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Dragging:" />
+                            <TextBlock Text="{Binding CurrentDraggedItem}"
+									   FontWeight="Bold" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding CurrentDropPosition}"
+									   FontWeight="Bold"
+									   MinWidth="45" />
+                            <TextBlock Text=", ("
+									   Foreground="Gray" />
+                            <TextBlock Text="{Binding CurrentDraggedOverItem}" />
+                            <TextBlock Text=")"
+									   Foreground="Gray" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </telerik:RadGridView.Resources>
+            <telerik:RadGridView.RowStyle>
+                <Style TargetType="telerik:GridViewRow">
+                    <Setter Property="telerik:DragDropManager.AllowDrag"
+                            Value="True" />
+                    <Setter Property="telerik:DragDropManager.TouchDragTrigger"
+                            Value="TapAndHold"/>
+                </Style>
+            </telerik:RadGridView.RowStyle>
+        </telerik:RadGridView>
+<!-- #endregion -->
+
+
+</Grid>
+</UserControl>

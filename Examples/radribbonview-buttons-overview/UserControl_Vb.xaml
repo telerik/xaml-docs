@@ -1,0 +1,56 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radribbonview-buttons-overview_0 -->
+<telerik:RadRibbonButton CollapseToMedium="Never" 
+                         CollapseToSmall="WhenGroupIsMedium"
+                         IsAutoSize="True"
+                         LargeImage="Icons/32/Equation.png"
+                         Size="Large"
+                         SmallImage="Icons/16/Equation.png"
+                         Text="Equation" />
+<!-- #endregion -->
+
+<!-- #region radribbonview-buttons-overview_1 -->
+<telerik:RadRibbonButton CollapseToMedium="Never" 
+                         ...
+                         Text="Equation" 
+                         Click="RadRibbonButton_Click"/>
+<!-- #endregion -->
+
+<!-- #region radribbonview-buttons-overview_6 -->
+<telerik:RadRibbonButton Text="Equation"
+                                 ...
+                        Command="Samples.RibbonButtonsSample.EquationCommand" />
+<!-- #endregion -->
+
+<!-- #region radribbonview-buttons-overview_7 -->
+<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
+    <telerik:RadRibbonTab Header="Home">
+        <telerik:RadRibbonGroup Header="Font">
+            <telerik:RadOrderedWrapPanel>
+                <telerik:RadButtonGroup>
+                    <telerik:RadRibbonButton
+                            SmallImage="Images/IconMSOffice/16/font-increasesize.png" />
+                    <telerik:RadRibbonButton
+                            SmallImage="Images/IconMSOffice/16/font-decreasesize.png" />
+                </telerik:RadButtonGroup>
+                <telerik:RadButtonGroup>
+                    <telerik:RadRibbonButton
+                            SmallImage="Images/IconMSOffice/16/ClearFormatting16.png"
+                            Text="Clear Formatting" />
+                </telerik:RadButtonGroup>
+            </telerik:RadOrderedWrapPanel>
+        </telerik:RadRibbonGroup>
+    </telerik:RadRibbonTab>
+</telerik:RadRibbonView>
+<!-- #endregion -->
+</Grid>
+</UserControl>

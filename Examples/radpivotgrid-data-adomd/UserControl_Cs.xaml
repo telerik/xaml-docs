@@ -1,0 +1,81 @@
+#region radpivotgrid-data-adomd_1
+<Grid>
+    <Grid.Resources>
+        <pivot:AdomdDataProvider x:Key="ADOMDDataProvider"/>
+    </Grid.Resources>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="2*"/>
+        <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    
+    <pivot:RadPivotGrid x:Name="radPivotGrid" DataProvider="{StaticResource ADOMDDataProvider}"/>
+    <pivot:RadPivotFieldList x:Name="radPivotFieldList" Grid.Column="1" DataProvider="{StaticResource ADOMDDataProvider}"/>
+</Grid>
+#endregion
+
+#region radpivotgrid-data-adomd_2
+<pivot:AdomdDataProvider x:Key="ADOMDDataProvider" >
+    <pivot:AdomdDataProvider.ConnectionSettings>
+        <pivot:AdomdConnectionSettings
+            Cube="Adventure Works"
+            Database="Adventure Works DW 2008R2"
+            ConnectionString="Provider=MSOLAP.5;Data Source=ServerName;Initial Catalog=Adventure Works DW 2008R2;User Id=domain\user;Password=myPassword;">
+        </pivot:AdomdConnectionSettings>
+    </pivot:AdomdDataProvider.ConnectionSettings>
+</pivot:AdomdDataProvider>
+#endregion
+
+#region radpivotgrid-data-adomd_3
+<pivot:AdomdDataProvider.RowGroupDescriptions>
+    <pivot:AdomdGroupDescription MemberName="[Date].[Calendar Year]"/>
+</pivot:AdomdDataProvider.RowGroupDescriptions>
+        
+<pivot:AdomdDataProvider.ColumnGroupDescriptions>
+    <pivot:AdomdGroupDescription MemberName="[Promotion].[Promotion Category]"/>
+</pivot:AdomdDataProvider.ColumnGroupDescriptions>
+        
+<pivot:AdomdDataProvider.AggregateDescriptions>
+    <pivot:AdomdAggregateDescription MemberName="[Measures].[Internet Order Quantity]" />
+</pivot:AdomdDataProvider.AggregateDescriptions>
+#endregion
+
+#region radpivotgrid-data-adomd_4
+<pivot:AdomdDataProvider.FilterDescriptions>
+    <pivot:AdomdFilterDescription MemberName="[Date].[Calendar Year]">
+        <pivot:AdomdFilterDescription.Condition>
+            <pivot:OlapSetCondition Comparison="Includes">
+                <pivot:OlapSetCondition.Items>
+                    <sys:String>[Date].[Calendar Year].&amp;[2005]</sys:String>
+                </pivot:OlapSetCondition.Items>
+            </pivot:OlapSetCondition>
+        </pivot:AdomdFilterDescription.Condition>
+    </pivot:AdomdFilterDescription>
+</pivot:AdomdDataProvider.FilterDescriptions>
+#endregion
+
+#region radpivotgrid-data-adomd_5
+<pivot:AdomdDataProvider.FilterDescriptions>
+    <pivot:AdomdFilterDescription MemberName="[Date].[Calendar]">
+        <pivot:AdomdFilterDescription.Levels>
+            <pivot:AdomdLevelFilterDescription MemberName="[Date].[Calendar].[Calendar Year]">
+                <pivot:AdomdLevelFilterDescription.Condition>
+                    <pivot:OlapSetCondition Comparison="Includes">
+                        <pivot:OlapSetCondition.Items>
+                            <sys:String>[Date].[Calendar].[Calendar Year].&amp;[2007]</sys:String>
+                        </pivot:OlapSetCondition.Items>
+                    </pivot:OlapSetCondition>
+                </pivot:AdomdLevelFilterDescription.Condition>
+            </pivot:AdomdLevelFilterDescription>
+            <pivot:AdomdLevelFilterDescription MemberName="[Date].[Calendar].[Calendar Semester]">
+                    <pivot:AdomdLevelFilterDescription.Condition>
+                        <pivot:OlapSetCondition Comparison="Includes">
+                            <pivot:OlapSetCondition.Items>
+                                <sys:String>[Date].[Calendar].[Calendar Semester].&amp;[2007]&amp;[2]</sys:String>
+                            </pivot:OlapSetCondition.Items>
+                        </pivot:OlapSetCondition>
+                    </pivot:AdomdLevelFilterDescription.Condition>
+                </pivot:AdomdLevelFilterDescription>
+        </pivot:AdomdFilterDescription.Levels>
+    </pivot:AdomdFilterDescription>
+</pivot:AdomdDataProvider.FilterDescriptions>
+#endregion

@@ -1,0 +1,69 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-templating-point-marks_0 -->
+<Style x:Key="PointMarkStyle"
+     TargetType="telerikCharting:PointMark">
+  <Setter Property="Size"
+          Value="10" />
+  <Setter Property="Template">
+      <Setter.Value>
+          <ControlTemplate TargetType="telerikCharting:PointMark">
+              <Canvas>
+                  <Path x:Name="PART_PointMarkPath"
+                        Stretch="Fill"
+                        Height="{TemplateBinding Size}"
+                        Style="{TemplateBinding ShapeStyle}"
+                        Width="{TemplateBinding Size}"
+                        Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
+                        Canvas.Top="{TemplateBinding PointMarkCanvasTop}" />
+              </Canvas>
+          </ControlTemplate>
+      </Setter.Value>
+  </Setter>
+</Style>
+<!-- #endregion -->
+
+<!-- #region radchart-templating-point-marks_1 -->
+<Path x:Name="PART_PointMarkPath"
+      Stretch="Fill"
+      Height="{TemplateBinding Size}"
+      Style="{TemplateBinding ShapeStyle}"
+      Width="{TemplateBinding Size}"
+      Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
+      Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
+      Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z" />
+<!-- #endregion -->
+
+<!-- #region radchart-templating-point-marks_4 -->
+<Style x:Key="PointMarkStyle"
+       TargetType="telerikCharting:PointMark">
+    <Setter Property="Size"
+            Value="10" />
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="telerikCharting:PointMark">
+                <Canvas>
+                    <Path x:Name="PART_PointMarkPath"
+                          Stretch="Fill"
+                          Height="{TemplateBinding Size}"
+                          Style="{TemplateBinding ShapeStyle}"
+                          Width="{TemplateBinding Size}"
+                          Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
+                          Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
+                          Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z" />
+                </Canvas>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+<!-- #endregion -->
+</Grid>
+</UserControl>

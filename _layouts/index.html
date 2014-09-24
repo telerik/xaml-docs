@@ -8,12 +8,16 @@
         <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
         {% stylesheet styles %}
         {% stylesheet theme %}
+        {% stylesheet branding %}
+        {% stylesheet highlight %}
         <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
         {% javascript prettify %}
         {% javascript app %}
+		{% javascript prettify %}
+        {% javascript branding %}
     </head>
-    <body>
+    <body class="faux-columns">
         <!-- Google Tag Manager -->
         <noscript>
             <iframe src="//www.googletagmanager.com/ns.html?id={{site.google_tag_manager}}" height="0" width="0" style="display: none; visibility: hidden"></iframe>

@@ -11,10 +11,6 @@ site_name: Silverlight
 
 # How to use RadDateTimePicker in a DataForm
 
-
-
-## 
-
 This tutorial will show you how easy and straightforward it might be to use a __RadDateTimePicker__ control in a __DataForm__.
 
 In order to do this you need to alter the default __DataTemplate__ of your __DataForm__ control. You have to indicate that the __RadDateTimePicker__ control is to be used for a particular field, whenever the entity is in edit mode.
@@ -57,9 +53,7 @@ For the purpose of this example the first thing you have to do is to define the 
 	        return clubs;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -106,9 +100,7 @@ For the purpose of this example the first thing you have to do is to define the 
 	  Return clubs
 	 End Function
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 >Remember that in order to use the __DataForm__ control you will have to add a reference to the __System.Windows.Controls.Data.DataForm.Toolkit__ library.
 
@@ -123,25 +115,19 @@ For the purpose of this example the first thing you have to do is to define the 
 	                       CommandButtonsVisibility="All">
 	    </dataForm:DataForm>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region raddatetimepicker-how-to-use-in-dataform_3}}
 	this.radGridView.ItemsSource = Club.GetClubs();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region raddatetimepicker-how-to-use-in-dataform_4}}
 	Me.radGridView.ItemsSource = Club.GetClubs()
-	{{endregion}}
-
-
+{{endregion}}
 
 The next and final step in this example is to define the __DataTemplate__ which will be used when the data is in edit mode. There you should point out that for some of your data fields you want to use the __RadDateTimePicker__.
 
@@ -173,17 +159,11 @@ Here is the complete XAML:
 	        </dataForm:DataForm.EditTemplate>
 	    </dataForm:DataForm>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
-
-
-
-         
-      ![](images/dateTimePicker_how_to_use_in_dataForm_010.png)
+![](images/dateTimePicker_how_to_use_in_dataForm_010.png)
 
 # See Also
 

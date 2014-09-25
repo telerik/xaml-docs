@@ -24,7 +24,10 @@ The __RadButtons__ provide you with a standard __ICommandSource__ implementation
 * __CommandTarget__ - the object on which the command is being executed.
 		
 
->tipAs the __RadButtons__ implement the __ICommandSource__, you can use them with any command that implements the __ICommand__ interface, for example Telerik {% if site.site_name == 'Silverlight' %}[DelegateCommand](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_delegatecommand.html){% endif %}{% if site.site_name == 'WPF' %}[DelegateCommand](http://www.telerik.com/help/wpf/t_telerik_windows_controls_delegatecommand.html){% endif %}.
+>tip
+		As the __RadButtons__ implement the __ICommandSource__, you can use them with
+		any command that implements the __ICommand__ interface, for example Telerik
+		{% if site.site_name == 'Silverlight' %}[DelegateCommand](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_delegatecommand.html){% endif %}{% if site.site_name == 'WPF' %}[DelegateCommand](http://www.telerik.com/help/wpf/t_telerik_windows_controls_delegatecommand.html){% endif %}.
 	  
 
 ## Example
@@ -95,10 +98,19 @@ Set the __SampleViewModel__ as the __DataContext__ of your __UserControl__.
 
 In the XAML provide the bindings for the command and set the command parameter.
 
->__RadButtons__ are located in the __Telerik.Windows.Controls.dll__ and in order to use them in your project you have to add a reference to the assembly.{% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
+>
 
-Then in XAML you have to declare the namespace:
-xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+__RadButtons__ are located in the __Telerik.Windows.Controls.dll__
+			  and in order to use them in your project you have to add a reference to the assembly.
+			  {% if site.site_name == 'WPF' %}
+				You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+			  {% endif %}{% if site.site_name == 'Silverlight' %}
+				You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
+			  {% endif %}
+
+
+			  Then in XAML you have to declare the namespace:
+			  __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__
 
 #### __XAML__
 
@@ -110,7 +122,10 @@ xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
 
 
->This is a very basic sample, but you can apply this approach to any type of commands that implement the __ICommand__ interface.
+>
+
+
+			This is a very basic sample, but you can apply this approach to any type of commands that implement the __ICommand__ interface.
 		  
 
 # See Also

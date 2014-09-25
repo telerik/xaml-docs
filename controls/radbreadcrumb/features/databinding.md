@@ -15,7 +15,7 @@ position: 1
 The __RadBreacrumb__ provides extensive databinding support. You can  display flat data collections as well as hierarchical data. The following properties are exposed to help you implement databinding scenarios with the control:
 	  
 
-* __IconPath__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem.Image__.
+* __IconPath__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem__.__Image__.
 		  
 
 * __TextModePath__ - Gets or sets a path to a value on the source object to serve as the string representation of the __BreadcrumbItem__ in text mode
@@ -23,9 +23,9 @@ The __RadBreacrumb__ provides extensive databinding support. You can  display fl
 
 ## Bind the Breadcrumb to a flat collection of business objects
 
-The following example will show you how to bind a __Breadcrumb__ control to a flat collection of business objects. The final result should look like the snapshot below:
-
-![](images/breadcrumb_features_flat_collection.png)
+The following example will show you how to bind a __Breadcrumb__ control to a flat collection of business objects.
+		  The final result should look like the snapshot below:
+		![](images/breadcrumb_features_flat_collection.png)
 
 * First, you need to include the following assemblies in your XAML declaration:
 
@@ -33,19 +33,19 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 
 * __Telerik.Windows.Controls.Navigation__
 
-* Create a new class named __ExplorerItem__ :
+* Create a new class named __ExplorerItem:__
 
 #### __C#__
 
 {{region radbreadcrumb-databinding_0}}
 	public class ExplorerItem
 	{
-		 public string Header { get; set; }
-		 public string PreviewHeader { get; set; }
-		 public string Path { get; set; }
-		 public ImageSource IconPath { get; set;} 
+	 public string Header { get; set; }
+	 public string PreviewHeader { get; set; }
+	 public string Path { get; set; }
+	 public ImageSource IconPath { get; set;} 
 	}
-{{endregion}}
+	{{endregion}}
 
 
 
@@ -90,7 +90,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 	        End Property
 	        Private _IconPath As ImageSource
 	End Class
-{{endregion}}
+	{{endregion}}
 
 
 
@@ -159,7 +159,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 	  this.Items.Add(desktop);
 	 }
 	}
-{{endregion}}
+	{{endregion}}
 
 
 
@@ -241,11 +241,11 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 			Me.Items.Add(desktop)
 		End Sub
 	End Class
-{{endregion}}
+	{{endregion}}
 
 
 
-* Use the __MainViewModel__ as data context for a __RadBreadcrumb__ control:
+* Use the __MainViewModel__ as data context for a __RadBreadcrumb__control:
 			
 
 #### __XAML__
@@ -780,11 +780,12 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 
 
 
-* Display the hierarchical data collection in the __Breadcrumb__ control using:
+* Display the hierarchical data collection in the __Breadcrumb__control using:
 			
 
 * __HierarchicalDataTemplates__:
-{% if site.site_name == 'Silverlight' %}
+				{% if site.site_name == 'Silverlight' %}
+
 #### __XAML__
 
 {{region radbreadcrumb-databinding_9}}
@@ -815,7 +816,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 	        </telerik:RadBreadcrumb.ItemTemplate>
 	    </telerik:RadBreadcrumb>
 	</Grid>
-{{endregion}}
+	{{endregion}}
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
@@ -849,7 +850,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 	        </telerik:RadBreadcrumb.ItemTemplate>
 	    </telerik:RadBreadcrumb>
 	</Grid>
-{{endregion}}
+	{{endregion}}
 
 {% endif %}
 
@@ -859,10 +860,10 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 * __HeaderMemberPath__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem.Header__.
 					
 
-* __HierarchicalItemsSource__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem__ 's __ItemsSource__ collection.
+* __HierarchicalItemsSource__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem__'s __ItemsSource__ collection.
 					
 
-* __HierarchicalMemberPath__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem.DropDownHeader__.
+* __HierarchicalMemberPath__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem.____DropDownHeader__.
 					
 
 #### __XAML__
@@ -877,16 +878,14 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 	                       IsIconVisible="True"
 	                       ItemsSource="{Binding Root.Children}"
 	                       TextModePath="Path" />
-{{endregion}}
+	{{endregion}}
 
 
 
-In both approaches the final result should look like this:
+In both approaches the final result should look like this:![](images/breadcrumb_features_hierarchical_data.png){% if site.site_name == 'Silverlight' %}
 
-![](images/breadcrumb_features_hierarchical_data.png)
-
-{% if site.site_name == 'Silverlight' %}
-You can download the sample project [here](http://www.telerik.com/community/code-library/silverlight/general/breadcrumb-hierarchical-data-binding.aspx){% endif %}
+You can download the sample project
+			[here](http://www.telerik.com/community/code-library/silverlight/general/breadcrumb-hierarchical-data-binding.aspx){% endif %}
 
 # See Also
 

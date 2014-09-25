@@ -12,7 +12,7 @@ position: 0
 
 
 
-This article describes the release history of the __RadOutlookBar__ control
+This article describes the release history of the RadOutlookBar control
 
 ## Q1 2014
 

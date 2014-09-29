@@ -12,15 +12,15 @@ position: 0
 
 
 
-You can create your own custom tool for __RadImageEditor__quite easily. You have to implement the __ITool__interface, which will give you the ability to setup your own preview, settings UI and attach to any events of __RadImageEditor__that are relevant to your tool.
+You can create your own custom tool for __RadImageEditor__ quite easily. You have to implement the __ITool__ interface, which will give you the ability to setup your own preview, settings UI and attach to any events of __RadImageEditor__ that are relevant to your tool.
       
 
 ## 
 
-This allows you to implement virtually any behavior you want within your tool and is the highlight of an online demo at [http://demos.telerik.com/silverlight/#ImageEditor/CustomTool](http://demos.telerik.com/silverlight/#ImageEditor/CustomTool), where a custom tool for watermarking is available. The next tutorial will get you through the steps you need to execute to create one yourself.
+This allows you to implement virtually any behavior you want within your tool and is the highlight of an SDK example: [Custom Watermark Tool](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/CustomWatermarkTool), where a custom tool for watermarking is available. The next tutorial will get you through the steps you need to execute to create one yourself.
         
 
-1. __Create your tool.__Create a WatermarkTool class which implements the __ITool__ interface. The interface contains three properties and six methods which you need to implement.
+1. __Create your tool.__<br/>Create a WatermarkTool class which implements the __ITool__ interface. The interface contains three properties and six methods which you need to implement.
             
 
 #### __[C#] Create Tool__
@@ -31,7 +31,7 @@ This allows you to implement virtually any behavior you want within your tool an
 
 
 
-1. __Create a command.__The public IImageCommand GetCommand() method requires you to return a command linked with the tool. Create a custom command which implements the __IImageCommand__ interface and a field of the command's type in the WatermarkTool class.
+1. __Create a command.__<br/>The public IImageCommand GetCommand() method requires you to return a command linked with the tool. Create a custom command which implements the __IImageCommand__ interface and a field of the command's type in the WatermarkTool class.
             
 
 #### __[C#] Create Command__
@@ -84,7 +84,7 @@ This allows you to implement virtually any behavior you want within your tool an
 
 >tipDo not forget to initialize the command in the constructor of the tool.
 
-1. __Create command context.__Create context for your custom command. In this case we will take into account the Opacity, Rotation, Scale and Image properties.
+1. __Create command context.__<br/>Create context for your custom command. In this case we will take into account the Opacity, Rotation, Scale and Image properties.
             
 
 #### __[C#] Create Command Context__
@@ -211,6 +211,5 @@ The context is also used in the public object GetContext() method in your tool.
 >The __IsDirty__ property is used in the commiting logic of tools. Make sure to set it to true when a change in the settings has occured and to false when the settings are reset.
               
 
->tipThe complete code is available in the XAML SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __ImageEditor / CustomWatermarkTool__.
+>tipThe complete code is available in the XAML SDK repository: [Custom Watermark Tool](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/CustomWatermarkTool).
           

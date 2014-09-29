@@ -298,6 +298,14 @@ navigation:
         title: RadTreeView		
 ## X2 Controls End
 
+## Centaur Controls Start
+    "*radimageeditor":
+        title: RadImageEditor
+    controls/radimageeditor/how-to:
+        title: How To
+        position: 4
+## Centaur Controls End
+
 ## X2 Controls Start
 
 ## X2 Controls End

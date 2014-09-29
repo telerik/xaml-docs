@@ -78,8 +78,7 @@ RadImageEditor raises the following events:
 * The sender argument contains the RadImageEditor. The argument is of type object but can be cast to the RadImageEditor type.
                 
 
-* A ToolCommittedEventArgs object which allows you access to the executed tool and provides an option to specify whether the tool
-                  should be executed again.
+* A ToolCommittedEventArgs object which allows you access to the executed tool and provides an option to specify whether the tool should be executed again.
                 
 
 * __ToolCommitting__: Occurs before a tool is committed. The event handler receives two arguments:
@@ -91,10 +90,7 @@ RadImageEditor raises the following events:
 * A ToolCommittingEventArgs object which allows you access to the tool being executed and provides an option to cancel the execution.
                 
 
->tipWhen a tool is executed, the CommandExecuting/ CommandExecuted events are raised for the ExecuteToolCommand. The specific tool is available
-            from the CommandParameter, however you cannot control its behavior (for example, cancel it). For this purpose the ToolCommitting/ToolCommitted
-            events are raised. You can find a working example of their use in our online SDK reporitory
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __ImageEditor / HandleToolCommit__.
+>tipWhen a tool is executed, the CommandExecuting/ CommandExecuted events are raised for the ExecuteToolCommand. The specific tool is available from the CommandParameter, however you cannot control its behavior (for example, cancel it). For this purpose the ToolCommitting/ToolCommitted events are raised. You can find a working example of their use in our online SDK reporitory: [Handle Tool Commit](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/HandleToolCommit).
           
 
 # See Also

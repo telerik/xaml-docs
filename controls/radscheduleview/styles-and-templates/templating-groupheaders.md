@@ -4,7 +4,7 @@ page_title: Templating the GroupHeaders
 description: Templating the GroupHeaders
 slug: radscheduleview-styles-and-templates-templating-groupheaders
 tags: templating,the,groupheaders
-publish: True
+published: True
 position: 5
 ---
 

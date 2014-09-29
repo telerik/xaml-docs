@@ -4,7 +4,7 @@ page_title: Import/Export Settings
 description: Import/Export Settings
 slug: radrichtextbox-features-import-export-settings
 tags: import/export,settings
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Group Footers
 description: Group Footers
 slug: gridview-group-footers
 tags: group,footers
-publish: True
+published: True
 position: 5
 ---
 

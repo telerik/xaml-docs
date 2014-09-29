@@ -4,7 +4,7 @@ page_title: Tool Window
 description: Tool Window
 slug: raddocking-features-tool-window
 tags: tool,window
-publish: True
+published: True
 position: 3
 ---
 

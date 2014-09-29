@@ -4,7 +4,7 @@ page_title: Bind to object data
 description: Bind to object data
 slug: radpanelbar-object-data
 tags: bind,to,object,data
-publish: True
+published: True
 position: 1
 ---
 

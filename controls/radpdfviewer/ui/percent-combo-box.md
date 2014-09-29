@@ -4,7 +4,7 @@ page_title: Percent Combo Box
 description: Percent Combo Box
 slug: radpdfviewer-percent-combo-box
 tags: percent,combo,box
-publish: False
+published: False
 position: 5
 ---
 

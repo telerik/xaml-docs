@@ -4,7 +4,7 @@ page_title: Adding UI for WPF to the Visual Studio 2008 Toolbox
 description: Adding UI for WPF to the Visual Studio 2008 Toolbox
 slug: installation-adding-to-vs-2008-toolbox-wpf
 tags: adding,ui,for,wpf,to,the,visual,studio,2008,toolbox
-publish: False
+published: False
 position: 1
 site_name: WPF
 ---

@@ -4,7 +4,7 @@ page_title: Create a Line Chart with Static Data
 description: Create a Line Chart with Static Data
 slug: radchart-getting-started-create-a-line-chart-with-static-data
 tags: create,a,line,chart,with,static,data
-publish: True
+published: True
 position: 1
 ---
 

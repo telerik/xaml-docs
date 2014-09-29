@@ -4,7 +4,7 @@ page_title: Drag between RadScheduleView and ListBox
 description: Drag between RadScheduleView and ListBox
 slug: dragdropmanager_-howto-drag-between-radscheduleview-and-listbox
 tags: drag,between,radscheduleview,and,listbox
-publish: False
+published: False
 position: 3
 ---
 

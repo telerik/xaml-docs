@@ -4,7 +4,7 @@ page_title: Using PdfFormatProvider
 description: Using PdfFormatProvider
 slug: radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider
 tags: using,pdfformatprovider
-publish: True
+published: True
 position: 1
 ---
 

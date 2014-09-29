@@ -4,7 +4,7 @@ page_title: Consuming .NET RIA Service
 description: Consuming .NET RIA Service
 slug: consuming-data-net-ria-service
 tags: consuming,.net,ria,service
-publish: True
+published: True
 position: 4
 site_name: Silverlight
 ---

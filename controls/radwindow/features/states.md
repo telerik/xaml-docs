@@ -4,7 +4,7 @@ page_title: States
 description: States
 slug: radwindow-features-states
 tags: states
-publish: True
+published: True
 position: 3
 ---
 

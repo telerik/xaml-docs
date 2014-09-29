@@ -4,7 +4,7 @@ page_title: How to customize the look of the tick marks using TickTemplateSelect
 description: How to customize the look of the tick marks using TickTemplateSelector
 slug: radslider-tick-templateselector
 tags: how,to,customize,the,look,of,the,tick,marks,using,ticktemplateselector
-publish: True
+published: True
 position: 1
 ---
 

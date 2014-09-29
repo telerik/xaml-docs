@@ -4,7 +4,7 @@ page_title: Create Chart With Static Data
 description: Create Chart With Static Data
 slug: radchartview-populating-with-data-static-data
 tags: create,chart,with,static,data
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Comment
 description: Comment
 slug: radwordsprocessing-model-comment
 tags: comment
-publish: True
+published: True
 position: 13
 ---
 

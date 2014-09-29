@@ -4,7 +4,7 @@ page_title: Pin Points
 description: Pin Points
 slug: radmap-features-information-layer-pin-points
 tags: pin,points
-publish: True
+published: True
 position: 6
 ---
 

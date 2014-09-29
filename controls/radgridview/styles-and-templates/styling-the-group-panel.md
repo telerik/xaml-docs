@@ -4,7 +4,7 @@ page_title: Styling the Group Panel
 description: Styling the Group Panel
 slug: radgridview-styles-and-templates-styling-the-group-panel
 tags: styling,the,group,panel
-publish: True
+published: True
 position: 10
 ---
 

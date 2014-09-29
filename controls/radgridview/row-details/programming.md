@@ -4,7 +4,7 @@ page_title: Programming
 description: Programming
 slug: radgridview-row-details-programming
 tags: programming
-publish: True
+published: True
 position: 4
 ---
 

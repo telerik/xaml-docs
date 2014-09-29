@@ -4,7 +4,7 @@ page_title: How to Use BringPathIntoView Method
 description: How to Use BringPathIntoView Method
 slug: radtreeview-how-to-bring-path-into-view
 tags: how,to,use,bringpathintoview,method
-publish: True
+published: True
 position: 29
 ---
 

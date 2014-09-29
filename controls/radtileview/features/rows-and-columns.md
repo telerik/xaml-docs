@@ -4,7 +4,7 @@ page_title: Rows and Columns
 description: Rows and Columns
 slug: radtileview-rows-and-columns
 tags: rows,and,columns
-publish: True
+published: True
 position: 1
 ---
 

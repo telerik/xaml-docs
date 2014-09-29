@@ -4,7 +4,7 @@ page_title: Put a Mark on the clicked Location
 description: Put a Mark on the clicked Location
 slug: radmap-how-to-put-a-mark-on-the-clicked-location
 tags: put,a,mark,on,the,clicked,location
-publish: True
+published: True
 position: 4
 ---
 

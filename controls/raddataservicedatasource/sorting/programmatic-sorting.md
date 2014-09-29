@@ -4,7 +4,7 @@ page_title: Programmatic Sorting
 description: Programmatic Sorting
 slug: raddataservicedatasource-sorting-programmatic-sorting
 tags: programmatic,sorting
-publish: True
+published: True
 position: 0
 ---
 

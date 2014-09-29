@@ -4,7 +4,7 @@ page_title: Globalization Support
 description: Globalization Support
 slug: radmaskedinput-features-globalization
 tags: globalization,support
-publish: True
+published: True
 position: 6
 ---
 

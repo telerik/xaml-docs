@@ -4,7 +4,7 @@ page_title: NonEditableTemplate
 description: NonEditableTemplate
 slug: radcombobox-styles-templates-noneditable-template
 tags: noneditabletemplate
-publish: False
+published: False
 position: 6
 ---
 

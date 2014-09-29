@@ -4,7 +4,7 @@ page_title: Controlling Layout
 description: Controlling Layout
 slug: radtabcontrol-controlling-layout
 tags: controlling,layout
-publish: True
+published: True
 position: 1
 ---
 

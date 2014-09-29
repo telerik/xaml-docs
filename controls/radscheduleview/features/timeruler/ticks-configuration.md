@@ -4,7 +4,7 @@ page_title: Configuring the TimeRuler ticks
 description: Configuring the TimeRuler ticks
 slug: radscheduleview-features-timeruler-ticks-configuration
 tags: configuring,the,timeruler,ticks
-publish: True
+published: True
 position: 0
 ---
 

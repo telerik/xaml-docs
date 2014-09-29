@@ -4,7 +4,7 @@ page_title: Open the DropDown When the Control Gets Focus
 description: Open the DropDown When the Control Gets Focus
 slug: radcombobox-howto-open-dropdown-get-focus
 tags: open,the,dropdown,when,the,control,gets,focus
-publish: True
+published: True
 position: 5
 ---
 

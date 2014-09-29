@@ -4,7 +4,7 @@ page_title: Editing Control Templates
 description: Editing Control Templates
 slug: styling-apperance-editing-control-templates
 tags: editing,control,templates
-publish: True
+published: True
 position: 3
 ---
 

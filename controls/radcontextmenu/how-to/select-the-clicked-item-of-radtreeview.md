@@ -4,7 +4,7 @@ page_title: Select  the clicked Item of a RadTreeView
 description: Select  the clicked Item of a RadTreeView
 slug: radcontextmenu-how-to-select-the-clicked-item-of-radtreeview
 tags: select,,the,clicked,item,of,a,radtreeview
-publish: True
+published: True
 position: 1
 ---
 

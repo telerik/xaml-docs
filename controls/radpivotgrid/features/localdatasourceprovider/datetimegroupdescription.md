@@ -4,7 +4,7 @@ page_title: DateTimeGroupDescription
 description: DateTimeGroupDescription
 slug: radpivotgrid-features-datetimegroupdescription
 tags: datetimegroupdescription
-publish: True
+published: True
 position: 7
 ---
 

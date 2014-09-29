@@ -4,7 +4,7 @@ page_title: Csv
 description: Csv
 slug: radspreadprocessing-formats-and-conversion-csv
 tags: csv
-publish: True
+published: True
 position: 2
 ---
 

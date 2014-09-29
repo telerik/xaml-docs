@@ -4,7 +4,7 @@ page_title: CurrentCulture Format Settings are not respected
 description: CurrentCulture Format Settings are not respected
 slug: gridview-troubleshooting-apply-currentculture
 tags: currentculture,format,settings,are,not,respected
-publish: True
+published: True
 position: 15
 ---
 

@@ -4,7 +4,7 @@ page_title: Shapes and Images
 description: Shapes and Images
 slug: radspreadsheet-model-features-shapes-and-images
 tags: shapes,and,images
-publish: False
+published: False
 position: 11
 ---
 

@@ -4,7 +4,7 @@ page_title: Deleting an Entry
 description: Deleting an Entry
 slug: gridview-managing-data-deleting-entry
 tags: deleting,an,entry
-publish: True
+published: True
 position: 3
 ---
 

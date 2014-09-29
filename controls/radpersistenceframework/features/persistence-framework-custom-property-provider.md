@@ -4,7 +4,7 @@ page_title: CustomPropertyProviders
 description: CustomPropertyProviders
 slug: persistence-framework-custom-property-provider
 tags: custompropertyproviders
-publish: True
+published: True
 position: 3
 ---
 

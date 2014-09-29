@@ -4,7 +4,7 @@ page_title: CloudUploadFile
 description: CloudUploadFile
 slug: radcloudupload-cloud-upload-file
 tags: clouduploadfile
-publish: True
+published: True
 position: 6
 ---
 

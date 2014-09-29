@@ -4,7 +4,7 @@ page_title: Entity Model
 description: Entity Model
 slug: radscheduleview-populating-with-data-binding-to-db-midtier-wpf
 tags: entity,model
-publish: True
+published: True
 position: 4
 site_name: WPF
 ---

@@ -4,7 +4,7 @@ page_title: Item level attribute-based validation
 description: Item level attribute-based validation
 slug: raddataform-validation-item-level
 tags: item,level,attribute-based,validation
-publish: True
+published: True
 position: 1
 ---
 

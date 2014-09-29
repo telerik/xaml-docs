@@ -4,7 +4,7 @@ page_title: Use IsRecentColorsActive property
 description: Use IsRecentColorsActive property
 slug: radcolorpicker-howto-use-isrecentcolorsactive
 tags: use,isrecentcolorsactive,property
-publish: True
+published: True
 position: 4
 ---
 

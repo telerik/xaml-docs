@@ -4,7 +4,7 @@ page_title: Working with RadRichTextBox
 description: Working with RadRichTextBox
 slug: radrichtextbox-features-working-with-radrichtextbox
 tags: working,with,radrichtextbox
-publish: False
+published: False
 position: 3
 ---
 

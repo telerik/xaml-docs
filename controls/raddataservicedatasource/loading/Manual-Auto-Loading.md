@@ -4,7 +4,7 @@ page_title: Manual vs. Auto Loading
 description: Manual vs. Auto Loading
 slug: raddataservicedatasource-loading-manual-auto-loading
 tags: manual,vs.,auto,loading
-publish: True
+published: True
 position: 2
 ---
 

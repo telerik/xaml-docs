@@ -4,7 +4,7 @@ page_title: Aggregates are not updated
 description: Aggregates are not updated
 slug: gridview-troubleshooting-aggregates-not-updated
 tags: aggregates,are,not,updated
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Vertical ScrollBar
 description: Vertical ScrollBar
 slug: radtimeline-features-vertical-scroll-bar
 tags: vertical,scrollbar
-publish: True
+published: True
 position: 8
 ---
 

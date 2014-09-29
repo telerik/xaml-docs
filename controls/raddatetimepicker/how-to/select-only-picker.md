@@ -4,15 +4,11 @@ page_title: How to create a select-only RadDateTimePicker
 description: How to create a select-only RadDateTimePicker
 slug: raddatetimepicker-how-to-select-only-picker
 tags: how,to,create,a,select-only,raddatetimepicker
-publish: True
+published: True
 position: 5
 ---
 
 # How to create a select-only RadDateTimePicker
-
-
-
-## 
 
 This tutorial shows you how to modify the default __RadDateTimePicker__ in such a way that the user is not allowed to type in the control but only to choose from the drop down picker. 
 
@@ -28,7 +24,7 @@ This will achieve the desired behavior. However, a specific grey visual element 
 
 * After generating the __RadWatermarkTextBox's__ style in the __Resources__ pane in Expression Blend you can find the __ControlBackground_ReadOnly__ brush and set it to the __RadDateTimePicker's__ background color.
 
->tipLearn more about the __RadWatermarkTextBox__[here](http://www.telerik.com/help/silverlight/radmaskedtextbox-features-using-rad-watermark-text-box.html).
+>tipLearn more about the __RadWatermarkTextBox__ [here]({%slug radwatermarktextbox-overview%}).
 
 # See Also
 

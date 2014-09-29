@@ -4,7 +4,7 @@ page_title: Working with ZipPackage
 description: Working with ZipPackage
 slug: radziplibrary-zippackage
 tags: working,with,zippackage
-publish: True
+published: True
 position: 3
 ---
 

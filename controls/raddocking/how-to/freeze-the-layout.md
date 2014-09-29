@@ -4,7 +4,7 @@ page_title: How to Freeze the Layout
 description: How to Freeze the Layout
 slug: raddocking-how-to-freeze-the-layout
 tags: how,to,freeze,the,layout
-publish: True
+published: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: General FAQ
 description: General FAQ
 slug: common-faq
 tags: general,faq
-publish: True
+published: True
 position: 13
 ---
 

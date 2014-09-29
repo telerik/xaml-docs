@@ -4,7 +4,7 @@ page_title: Items Events
 description: Items Events
 slug: raddiagrams-events-item
 tags: items,events
-publish: True
+published: True
 position: 1
 ---
 

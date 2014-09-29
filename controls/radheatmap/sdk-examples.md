@@ -4,7 +4,7 @@ page_title: SDK Example
 description: SDK Example
 slug: radheatmap-sdk-examples
 tags: sdk,example
-publish: True
+published: True
 position: 1
 ---
 

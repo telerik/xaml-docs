@@ -4,7 +4,7 @@ page_title: Validation
 description: Validation
 slug: radcloudupload-features-validation
 tags: validation
-publish: True
+published: True
 position: 5
 ---
 

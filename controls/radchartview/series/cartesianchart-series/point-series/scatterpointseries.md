@@ -4,7 +4,7 @@ page_title: ScatterPointSeries
 description: ScatterPointSeries
 slug: radchartview-series-scatterpointseries
 tags: scatterpointseries
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the RadContextMenu
 description: Styling the RadContextMenu
 slug: radcontextmenu-styles-and-templates-styling-the-context-menu
 tags: styling,the,radcontextmenu
-publish: True
+published: True
 position: 2
 ---
 

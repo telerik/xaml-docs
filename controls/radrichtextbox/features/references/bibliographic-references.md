@@ -4,7 +4,7 @@ page_title: Bibliographic References
 description: Bibliographic References
 slug: radrichtextbox-features-bibliographic-references
 tags: bibliographic,references
-publish: True
+published: True
 position: 1
 ---
 

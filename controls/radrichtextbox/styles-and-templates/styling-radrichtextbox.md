@@ -4,7 +4,7 @@ page_title: Styling the RadRichTextBox
 description: Styling the RadRichTextBox
 slug: radrichtextbox-styles-and-templates-styling-radrichtextbox
 tags: styling,the,radrichtextbox
-publish: True
+published: True
 position: 2
 ---
 

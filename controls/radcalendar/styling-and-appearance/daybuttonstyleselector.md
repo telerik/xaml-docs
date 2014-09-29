@@ -4,7 +4,7 @@ page_title: How to Customize the Calendar Buttons
 description: How to Customize the Calendar Buttons
 slug: radcalendar-styling-and-appearance-daybuttonstyleselector
 tags: how,to,customize,the,calendar,buttons
-publish: True
+published: True
 position: 3
 ---
 

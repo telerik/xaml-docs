@@ -4,7 +4,7 @@ page_title: Multilanguage Support
 description: Multilanguage Support
 slug: radspellchecker-multilanguage-support
 tags: multilanguage,support
-publish: True
+published: True
 position: 3
 ---
 

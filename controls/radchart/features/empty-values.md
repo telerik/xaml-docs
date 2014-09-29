@@ -4,7 +4,7 @@ page_title: Empty Values
 description: Empty Values
 slug: radchart-features-empty-values
 tags: empty,values
-publish: True
+published: True
 position: 30
 ---
 

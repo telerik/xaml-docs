@@ -4,7 +4,7 @@ page_title: Defining Property-Sets
 description: Defining Property-Sets
 slug: radpropertygrid-defining-propertysets
 tags: defining,property-sets
-publish: True
+published: True
 position: 1
 ---
 

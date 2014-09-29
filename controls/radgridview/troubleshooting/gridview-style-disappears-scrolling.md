@@ -4,7 +4,7 @@ page_title: Styling or content mixed-up on scrolling
 description: Styling or content mixed-up on scrolling
 slug: gridview-troubleshooting-style-disappears-scrolling
 tags: styling,or,content,mixed-up,on,scrolling
-publish: True
+published: True
 position: 13
 ---
 

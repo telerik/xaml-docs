@@ -4,7 +4,7 @@ page_title: Export To PDF
 description: Export To PDF
 slug: radchart-features-export-to-pdf
 tags: export,to,pdf
-publish: True
+published: True
 position: 32
 ---
 

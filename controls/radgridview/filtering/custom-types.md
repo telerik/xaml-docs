@@ -4,7 +4,7 @@ page_title: Filtering Custom Types
 description: Filtering Custom Types
 slug: radgridview-filtering-custom-types
 tags: filtering,custom,types
-publish: False
+published: False
 position: 7
 ---
 

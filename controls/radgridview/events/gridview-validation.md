@@ -4,7 +4,7 @@ page_title: Validation
 description: Validation
 slug: gridview-events-validation
 tags: validation
-publish: True
+published: True
 position: 1
 ---
 

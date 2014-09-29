@@ -4,7 +4,7 @@ page_title: Formulas
 description: Formulas
 slug: radspreadprocessing-features-formulas
 tags: formulas
-publish: True
+published: True
 position: 1
 ---
 

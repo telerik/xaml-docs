@@ -4,7 +4,7 @@ page_title: EventToCommandBehavior
 description: EventToCommandBehavior
 slug: common-event-to-command-behavior
 tags: eventtocommandbehavior
-publish: True
+published: True
 position: 8
 ---
 

@@ -4,7 +4,7 @@ page_title: RadChart vs. RadChartView
 description: RadChart vs. RadChartView
 slug: radchartview-radchartview-vs.-radchart
 tags: radchart,vs.,radchartview
-publish: True
+published: True
 position: 2
 ---
 

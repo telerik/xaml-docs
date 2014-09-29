@@ -4,7 +4,7 @@ page_title: Use RadWindow as User Control
 description: Use RadWindow as User Control
 slug: radwindow-how-to-use-radwindow-as-user-control
 tags: use,radwindow,as,user,control
-publish: True
+published: True
 position: 6
 ---
 

@@ -4,7 +4,7 @@ page_title: MVVM support
 description: MVVM support
 slug: radtimeline-mvvm-support
 tags: mvvm,support
-publish: True
+published: True
 position: 1
 ---
 

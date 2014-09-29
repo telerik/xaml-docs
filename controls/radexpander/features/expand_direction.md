@@ -4,7 +4,7 @@ page_title: Expand Direction
 description: Expand Direction
 slug: radexpander-features-expand_direction
 tags: expand,direction
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Knowledge Base
 description: Knowledge Base
 slug: for-more-help-knowledge-base
 tags: knowledge,base
-publish: True
+published: True
 position: 0
 ---
 

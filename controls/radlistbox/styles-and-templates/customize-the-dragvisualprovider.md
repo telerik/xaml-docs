@@ -4,7 +4,7 @@ page_title: How to customize the DragVisualProvider
 description: How to customize the DragVisualProvider
 slug: radlistbox-styles-and-templates-customize-the-dragvisualprovider
 tags: how,to,customize,the,dragvisualprovider
-publish: True
+published: True
 position: 0
 ---
 

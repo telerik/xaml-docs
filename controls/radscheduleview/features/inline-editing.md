@@ -4,7 +4,7 @@ page_title: Inline Editing
 description: Inline Editing
 slug: radscheduleview-features-inline-editing
 tags: inline,editing
-publish: True
+published: True
 position: 10
 ---
 

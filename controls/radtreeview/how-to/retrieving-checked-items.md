@@ -4,7 +4,7 @@ page_title: Retrieve All Checked Items
 description: Retrieve All Checked Items
 slug: radtreeview-retrieving-checked-items
 tags: retrieve,all,checked,items
-publish: False
+published: False
 position: 24
 ---
 

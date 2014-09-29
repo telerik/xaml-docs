@@ -4,7 +4,7 @@ page_title: Populating with Tabs
 description: Populating with Tabs
 slug: radtabcontrol-populating-with-tabs
 tags: populating,with,tabs
-publish: True
+published: True
 position: 1
 ---
 

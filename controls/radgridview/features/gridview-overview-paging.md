@@ -4,7 +4,7 @@ page_title: Paging
 description: Paging
 slug: gridview-overview-paging
 tags: paging
-publish: True
+published: True
 position: 4
 site_name: Silverlight
 ---

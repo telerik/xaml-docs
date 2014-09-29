@@ -4,7 +4,7 @@ page_title: View Modes
 description: View Modes
 slug: radmap-features-view-modes
 tags: view,modes
-publish: False
+published: False
 position: 4
 ---
 

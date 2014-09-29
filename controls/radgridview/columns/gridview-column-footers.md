@@ -4,7 +4,7 @@ page_title: Column Footers
 description: Column Footers
 slug: gridview-columns-column-footers
 tags: column,footers
-publish: True
+published: True
 position: 7
 ---
 

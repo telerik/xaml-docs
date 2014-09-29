@@ -4,7 +4,7 @@ page_title: Number of clicks in the CheckBox column
 description: Number of clicks in the CheckBox column
 slug: gridview-checkbox-column-clicks
 tags: number,of,clicks,in,the,checkbox,column
-publish: True
+published: True
 position: 6
 ---
 

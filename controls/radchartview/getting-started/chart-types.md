@@ -4,7 +4,7 @@ page_title: Chart Types
 description: Chart Types
 slug: radchartview-chart-types
 tags: chart,types
-publish: True
+published: True
 position: 1
 ---
 

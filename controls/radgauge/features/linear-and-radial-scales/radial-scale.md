@@ -4,7 +4,7 @@ page_title: Radial Scale
 description: Radial Scale
 slug: radgauge-features-radial-scale
 tags: radial,scale
-publish: True
+published: True
 position: 1
 ---
 

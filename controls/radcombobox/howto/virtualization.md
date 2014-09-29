@@ -4,7 +4,7 @@ page_title: RadComboBox Virtualization
 description: RadComboBox Virtualization
 slug: radcombobox-howto-virtualization
 tags: radcombobox,virtualization
-publish: True
+published: True
 position: 3
 ---
 

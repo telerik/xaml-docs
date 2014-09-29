@@ -4,7 +4,7 @@ page_title: Programmatic Paging
 description: Programmatic Paging
 slug: raddataservicedatasource-paging-programmatic-paging
 tags: programmatic,paging
-publish: True
+published: True
 position: 0
 ---
 

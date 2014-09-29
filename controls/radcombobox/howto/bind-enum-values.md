@@ -4,7 +4,7 @@ page_title: Bind a RadComboBox to Enum Values
 description: Bind a RadComboBox to Enum Values
 slug: radcombobox-howto-bind-enum-values
 tags: bind,a,radcombobox,to,enum,values
-publish: True
+published: True
 position: 2
 site_name: Silverlight
 ---

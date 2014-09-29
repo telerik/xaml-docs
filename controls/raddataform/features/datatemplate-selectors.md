@@ -4,7 +4,7 @@ page_title: DataTemplate Selectors
 description: DataTemplate Selectors
 slug: raddataform-datatemplate-selectors
 tags: datatemplate,selectors
-publish: True
+published: True
 position: 2
 ---
 

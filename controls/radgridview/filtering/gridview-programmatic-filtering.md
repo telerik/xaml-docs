@@ -4,7 +4,7 @@ page_title: Programmatic Filtering
 description: Programmatic Filtering
 slug: gridview-programmatic-filtering
 tags: programmatic,filtering
-publish: False
+published: False
 position: 1
 ---
 

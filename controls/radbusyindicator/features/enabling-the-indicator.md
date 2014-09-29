@@ -4,7 +4,7 @@ page_title: Enabling the Indicator
 description: Enabling the Indicator
 slug: radbusyindicator-features-enabling-the-indicator
 tags: enabling,the,indicator
-publish: True
+published: True
 position: 0
 ---
 

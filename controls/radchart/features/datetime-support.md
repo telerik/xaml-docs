@@ -4,7 +4,7 @@ page_title: DateTime Support
 description: DateTime Support
 slug: radchart-features-datetime-support
 tags: datetime,support
-publish: True
+published: True
 position: 7
 ---
 

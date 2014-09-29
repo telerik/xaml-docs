@@ -4,7 +4,7 @@ page_title: Layout Mode
 description: Layout Mode
 slug: radchart-features-layout-mode
 tags: layout,mode
-publish: True
+published: True
 position: 8
 ---
 

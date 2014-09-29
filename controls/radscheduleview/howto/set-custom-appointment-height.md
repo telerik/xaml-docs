@@ -4,7 +4,7 @@ page_title: Set Custom Appointment Height
 description: Set Custom Appointment Height
 slug: radscheduleview-howto-set-custom-appointment-height
 tags: set,custom,appointment,height
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Basics
 description: Basics
 slug: radgauge-features-ticks-basics
 tags: basics
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,17 +4,13 @@ page_title: Input Modes
 description: Input Modes
 slug: raddatetimepicker-features-input-modes
 tags: input,modes
-publish: True
+published: True
 position: 0
 ---
 
 # Input Modes
 
-
-
-## 
-
-This __RadDateTimePicker__ fully replaces the functionality of the __RadTimePicker__and __RadDatePicker__controls. When you use a __RadDateTimePicker__ control you might want to specify that you need to use the calendar or the clock independently. 
+This __RadDateTimePicker__ fully replaces the functionality of the __RadTimePicker__ and __RadDatePicker__ controls. When you use a __RadDateTimePicker__ control you might want to specify that you need to use the calendar or the clock independently. 
 
 This behavior can be controlled via the __InputMode__ property. The default value gives you both the calendar and the clock views. There are three input modes that correspond to these scenarios:
 
@@ -30,17 +26,11 @@ You can change the value of this property in XAML as shown in this snippet:
 
 {{region raddatetimepicker-features-input-modes_0}}
 	<telerik:RadDateTimePicker InputMode="DatePicker"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
-
-
-
-         
-      ![](images/dateTimePicker_features___input_modes_010.png)
+![](images/dateTimePicker_features___input_modes_010.png)
 
 Similarly if you decide to have only the time picker you can choose the TimePicker input mode:
 
@@ -48,17 +38,11 @@ Similarly if you decide to have only the time picker you can choose the TimePick
 
 {{region raddatetimepicker-features-input-modes_1}}
 	<telerik:RadDateTimePicker InputMode="TimePicker"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 This leads to the following result:
 
-
-
-
-         
-      ![](images/dateTimePicker_features___input_modes_020.png)
+![](images/dateTimePicker_features___input_modes_020.png)
 
 # See Also
 

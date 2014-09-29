@@ -4,7 +4,7 @@ page_title: Why doesn’t my column show the filtering funnel icon?
 description: Why doesn’t my column show the filtering funnel icon?
 slug: gridview-filtering-faq-no-funnel-icon
 tags: why,doesn’t,my,column,show,the,filtering,funnel,icon?
-publish: True
+published: True
 position: 0
 ---
 

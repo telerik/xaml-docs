@@ -4,7 +4,7 @@ page_title: Useful Links
 description: Useful Links
 slug: gridview-columns-useful-links
 tags: useful,links
-publish: True
+published: True
 position: 13
 ---
 

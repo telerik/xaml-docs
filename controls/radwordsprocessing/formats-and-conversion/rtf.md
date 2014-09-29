@@ -4,7 +4,7 @@ page_title: Rtf
 description: Rtf
 slug: radwordsprocessing-formats-and-conversion-rtf
 tags: rtf
-publish: True
+published: True
 position: 1
 ---
 

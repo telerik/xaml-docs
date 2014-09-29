@@ -4,7 +4,7 @@ page_title: Templating the RadDocking
 description: Templating the RadDocking
 slug: raddocking-styles-and-templates-templating-the-raddocking
 tags: templating,the,raddocking
-publish: True
+published: True
 position: 12
 ---
 

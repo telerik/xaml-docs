@@ -4,7 +4,7 @@ page_title: Data Binding Support Overview
 description: Data Binding Support Overview
 slug: radscheduleview-populating-with-data-data-binding-support-overview
 tags: data,binding,support,overview
-publish: True
+published: True
 position: 0
 ---
 

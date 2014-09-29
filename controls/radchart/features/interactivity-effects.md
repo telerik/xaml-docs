@@ -4,7 +4,7 @@ page_title: Interactivity Effects
 description: Interactivity Effects
 slug: radchart-features-interactivity-effects
 tags: interactivity,effects
-publish: True
+published: True
 position: 29
 ---
 

@@ -4,7 +4,7 @@ page_title: Column resize
 description: Column resize
 slug: gridview-column-resize-event
 tags: column,resize
-publish: True
+published: True
 position: 6
 ---
 

@@ -4,7 +4,7 @@ page_title: Using XML
 description: Using XML
 slug: consuming-data-using-xml
 tags: using,xml
-publish: True
+published: True
 position: 5
 ---
 

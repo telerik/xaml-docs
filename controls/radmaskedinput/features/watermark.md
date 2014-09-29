@@ -4,7 +4,7 @@ page_title: Watermark
 description: Watermark
 slug: radmaskedinput-features-watermark
 tags: watermark
-publish: True
+published: True
 position: 8
 ---
 

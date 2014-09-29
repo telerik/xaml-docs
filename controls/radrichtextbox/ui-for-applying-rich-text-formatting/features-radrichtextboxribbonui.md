@@ -4,7 +4,7 @@ page_title: RadRichTextBoxRibbonUI
 description: RadRichTextBoxRibbonUI
 slug: radrichtextbox-features-radrichtextboxribbonui
 tags: radrichtextboxribbonui
-publish: True
+published: True
 position: 0
 ---
 

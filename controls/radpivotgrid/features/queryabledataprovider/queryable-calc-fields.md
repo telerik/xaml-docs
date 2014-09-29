@@ -4,7 +4,7 @@ page_title: Calculated Fields
 description: Calculated Fields
 slug: radpivotgrid-features-queryable-calc-fields
 tags: calculated,fields
-publish: True
+published: True
 position: 2
 ---
 

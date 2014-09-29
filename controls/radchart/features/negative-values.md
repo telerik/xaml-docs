@@ -4,7 +4,7 @@ page_title: Negative Values
 description: Negative Values
 slug: radchart-features-negative-values
 tags: negative,values
-publish: True
+published: True
 position: 22
 ---
 

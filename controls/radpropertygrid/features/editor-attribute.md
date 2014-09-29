@@ -4,7 +4,7 @@ page_title: Editor Attribute
 description: Editor Attribute
 slug: radpropertygrid-editor-attribute
 tags: editor,attribute
-publish: True
+published: True
 position: 17
 ---
 

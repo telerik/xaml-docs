@@ -4,7 +4,7 @@ page_title: Masked TextBox Column
 description: Masked TextBox Column
 slug: radgridview-columns-column-types-masked-textbox-column
 tags: masked,textbox,column
-publish: False
+published: False
 position: 9
 ---
 

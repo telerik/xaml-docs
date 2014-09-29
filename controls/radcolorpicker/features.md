@@ -4,7 +4,7 @@ page_title: Features
 description: Features
 slug: radcolorpicker-features
 tags: features
-publish: True
+published: True
 position: 3
 ---
 

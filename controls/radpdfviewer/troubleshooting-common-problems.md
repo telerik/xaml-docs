@@ -4,7 +4,7 @@ page_title: Troubleshooting Common Problems
 description: Troubleshooting Common Problems
 slug: radpdfviewer-troubleshooting-common-problems
 tags: troubleshooting,common,problems
-publish: True
+published: True
 position: 12
 ---
 

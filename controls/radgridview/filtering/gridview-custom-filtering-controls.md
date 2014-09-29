@@ -4,7 +4,7 @@ page_title: Custom Filtering Controls
 description: Custom Filtering Controls
 slug: gridview-filtering-custom-filtering-controls
 tags: custom,filtering,controls
-publish: True
+published: True
 position: 13
 ---
 

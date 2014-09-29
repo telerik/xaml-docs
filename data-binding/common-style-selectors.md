@@ -4,7 +4,7 @@ page_title: Style Selectors
 description: Style Selectors
 slug: common-data-binding-style-selectors
 tags: style,selectors
-publish: True
+published: True
 position: 5
 ---
 

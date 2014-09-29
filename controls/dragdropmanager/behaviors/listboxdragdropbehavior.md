@@ -4,7 +4,7 @@ page_title: ListBoxDragDropBehavior
 description: ListBoxDragDropBehavior
 slug: dragdropmanager-behaviors-listboxdragdropbehavior
 tags: listboxdragdropbehavior
-publish: True
+published: True
 position: 1
 ---
 

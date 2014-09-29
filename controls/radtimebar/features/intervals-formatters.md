@@ -4,7 +4,7 @@ page_title: Intervals Formatters
 description: Intervals Formatters
 slug: radtimebar-intervals-formatters
 tags: intervals,formatters
-publish: True
+published: True
 position: 3
 ---
 

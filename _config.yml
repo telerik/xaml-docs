@@ -3,26 +3,306 @@ url: "http://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,
-radpivotgrid/features/olap-providers/calculations-xmla.md,]
+common-routed-events-support.md,
+common-command-support.md,
+installation-and-deployment/installation-system-requirements.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/for-silverlight-vs-extensions-releases.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-hotfix.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-license-limitations.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox.md,
+installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
+installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
+installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
+installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license.md,
+installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies.md,
+installation-and-deployment/deploying-telerik-ui/protecting-telerik-assembly.md,
+consuming-data/web-asmx-service.md,
+consuming-data/net-ria-service.md,
+consuming-data/domain-datasource-support.md,
+consuming-data/isolated-storage.md,
+styling-and-appearance/stylemanager/common-styling-apperance-setting-theme.md,
+styling-and-appearance/stylemanager/common-styling-apperance-create-theme-overview.md,
+styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-modifying-built-in-theme.md,
+styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project.md,
+styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project-telerik-approach.md,
+visual-studio-extensions/for-silverlight-vs-extensions-overview.md,
+visual-studio-extensions/for-silverlight-vs-extensions-project-configuration.md,
+visual-studio-extensions/for-silverlight-vs-extensions-automatic-resolving.md,
+visual-studio-extensions/for-silverlight-vs-extensions-upgrading.md,
+assembly-minifier-section.md,
+assembly-minifier/minifier-what-is-new.md,
+assembly-minifier/overview.md,
+controls/radchart/chart-localization.md,
+controls/radchart/how-to/howto-integration-radcontextmenu.md,
+controls/radchart/how-to/howto-integrate-data-visualization-with-wcf-ria-services.md,
+controls/radchartview/gotchas.md,
+controls/radcombobox/comparison.md,
+controls/radcombobox/populating-with-data/binding-ria.md,
+controls/radcombobox/howto/bind-enum-values.md,
+controls/radcontextmenu/features/boundaries-detection.md,
+controls/radcolorpicker/features.md,
+controls/radcolorpicker/features/colorselector-getting-started.md,
+controls/radcolorpicker/features/paletteview-getting-started.md,
+controls/raddatapager/how-to/page-domaindatasource.md,
+controls/raddatetimepicker/how-to/use-in-dataform.md,
+controls/raddiagram/howto/raddiagrams-save-isolated-storage.md,
+controls/radgridview/gridview_comparison.md,
+controls/radgridview/features/gridview-overview-paging.md,
+controls/radgridview/populating-with-data/gridview-loading-data-from-ria-services.md,
+controls/radgridview/populating-with-data/gridview-domaindatasource-support.md,
+controls/radgridview/populating-with-data/gridview-loading-data-from-web-services.md,
+controls/radgridview/paging/gridview-using-silverlight-datapager.md,
+controls/radgridview/hierarchical-gridview/how-to/gridview-create-hierarchical-grid-with-ria.md,
+controls/radgridview/troubleshooting/gridview-paging.md,
+controls/radgridview/troubleshooting/gridview-elementname-binding.md,
+controls/radmenu/features/animation.md,
+controls/radmenu/features/boundaries-detection.md,
+controls/radmenu/styles-and-templates/visual-states.md,
+controls/radnumericupdown/howto/events.md,
+controls/radribbonview/features/ribbon-controls/ribbon-window-sl.md,
+controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier.md,
+controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-silverlight.md,
+controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-viewmodel.md,
+controls/radspreadsheet/model/import/export/import-export-xlsxformatprovider-silverlight.md,
+controls/radspreadsheet/model/import/export/import-export-csvformatprovider-silverlight.md,
+controls/radspreadsheet/model/import/export/import-export-txtformatprovider-silverlight.md,
+controls/radtabcontrol/styling-and-appearance/using-themes.md,
+controls/radtabcontrol/styling-and-appearance/modifying-themes-in-blend.md,
+controls/radtabcontrol/howto/how-to-make-the-tab-headers-editable.md,
+controls/radtoolbar/overview/structure.md,
+controls/radtoolbar/overview/declaration.md,
+controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigation-framework.md,
+controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
+controls/radtreeview/how-to/howto-bind-treeview.md,]
+
 navigation:
 ## List your directory names and order here, like this:
 
-    radautocompletebox:
-        title: RadAutoCompleteBox
-    radpivotgrid:
-        title: RadPivotGrid
-    "radpivotgrid/features":
-        title: Features1
-        position: 4		
+## Common Start
+    controls:
+        title: Controls
+    "*overview":
+        title: Overview
+        position: 1
+    "*getting-started":
+        title: Getting Started
+        position: 2
+    "*general-information":
+        title: General Information
+        position: 2
+    "*changes-and-backward-compatibility":
+        title: Changes and Backward Compatibility
+        position: 3
+    "*changes-and-backwards-compatibility":
+        title: Changes and Backward Compatibility
+        position: 3
+    "*features":
+        title: Features
+        position: 4
     "*populating-with-data":
         title: Populating with Data
-        position: 5		
+        position: 5
     "*styles-and-templates":
         title: "Styles and Templates"	
-        position: 6
-
-    "*api-reference":
+        position: 90
+    "*styling-and-templates":
+        title: "Styles and Templates"	
+        position: 90
+    "*how-to":
+        title: How To
+        position: 100
+    "*howto":
+        title: How To
+        position: 100
+    "*events":
+        title: Events
+        position: 80
+    "api-reference":
         title: "Api Reference"
+## Common End
+
+## X3 Controls Start
+    controls/radautocompletebox:
+        title: RadAutoCompleteBox		
+    controls/radpivotgrid:
+        title: RadPivotGrid
+    controls/raddatetimepicker:
+        title: RadDateTimePicker
+    controls/radcombobox:
+        title: RadComboBox
+    controls/dragdropmanager:
+        title: DragDropManager
+    controls/radbusyindicator:
+        title: RadBusyIndicator
+    controls/radcalendar:
+        title: RadCalendar
+    controls/radcontextmenu:
+        title: RadContextMenu
+    controls/raddocking:
+        title: RadDocking
+    controls/radganttview:
+        title: RadGanttView
+    controls/radlistbox:
+        title: RadListBox
+    controls/radmenu:
+        title: RadMenu
+    controls/radnumericupdown:
+        title: RadNumericUpDown
+    controls/radscheduleview:
+        title: RadScheduleView
+    controls/radtimepicker:
+        title: RadTimePicker
+    controls/radtransitioncontrol:
+        title: RadTransitionControl
+    controls/radwatermarktextbox:
+        title: RadWatermarkTextBox
+    controls/radwindow:
+        title: RadWindow
+## X3 Controls End
+
+## X2 Controls Start
+    "*radbarcode":
+        title: RadBarcode
+    controls/radbarcode/1d-barcode:
+        title: 1D Barcode
+    controls/radbarcode/2d-barcodes:
+        title: 2D Barcodes
+    controls/radbarcode/2d-barcodes/radbarcodepdf417:
+        title: RadBarcodePDF417
+    controls/radbarcode/2d-barcodes/radbarcodeqr:
+        title: RadBarcodeQR
+    controls/radbook:
+        title: RadBook
+    controls/radbreadcrumb:
+        title: RadBreadcrumb
+    controls/radbuttons:
+        title: RadButtons
+    controls/radchart:
+        title: RadChart
+    controls/radchart/features/axes:
+        title: Axis
+    controls/radchart/features/drill-down:
+        title: Drill Down
+    controls/radchart/features/grouping:
+        title: Grouping
+    controls/radchart/features/chart-types:
+        title: Chart types
+    controls/radchart/features/annotations:
+        title: Annotations
+    controls/radchart/styles-and-templates/styling-the-axes:
+        title: Styling the Asix
+    controls/radchart/tips-and-tricks:
+        title: Tips and Tricks
+    controls/radchartview:
+        title: RadChartView
+    controls/radchartview/features/annotations:
+        title: Annotations
+    controls/radchartview/features/behaviors:
+        title: Behaviors
+    controls/radchartview/features/labels:
+        title: Labels
+    controls/radchartview/features/palettes:
+        title: Palettes
+    controls/radchartview/axes:
+        title: Axis
+    controls/radchartview/series:
+        title: Series
+    controls/radchartview/series/cartesianchart-series:
+        title: CartesianChart Series
+    controls/radchartview/series/cartesianchart-series/bar-series:
+        title: Bar Series
+    controls/radchartview/series/cartesianchart-series/financial-series:
+        title: Financial Series
+    controls/radchartview/series/cartesianchart-series/scatter-series:
+        title: Scatter Series
+    controls/radchartview/series/piechart-series:
+        title: PieChart Series
+    controls/radchartview/series/polarchart-series:
+        title: PolarChart Series
+    "*area-series":
+        title: Area Series
+    "*line-series":
+        title: Line Series
+    "*point-series":
+        title: Point Series
+    controls/radcloudupload:
+        title: RadCouldUpload
+    controls/radcoloreditor:
+        title: RadColorEditor
+    controls/radcoloreditor/overview:
+        title: General Information
+        position: 2
+    controls/radcolorpicker:
+        title: RadColorPicker
+    controls/radcolorpicker/overview:
+        title: General Information
+    controls/radcolorpicker/features/radcolorpaletteview:
+        title: RadColorPaletteView
+    controls/radcolorpicker/features/radcolorselector:
+        title: RadColorSelector
+    controls/radcolorpicker/styling-and-appearance:
+        title: Appearance
+    controls/raddiagram:
+        title: RadDiagram
+    controls/raddiagram/diagram-items:
+        title: Diagram Items
+    controls/raddiagram/diagram-tools:
+        title: Diagram Tools
+    controls/raddiagram/diagramextensions-viewmodels:
+        title: DiagramExtensions ViewModels
+    controls/raddiagram/extensions:
+        title: Extensions
+    controls/raddiagram/items-manipulation:
+        title: Items Manipulation
+    controls/radexpander:
+        title: RadExpander
+    controls/radgauge:
+        title: RadGauge
+    controls/radheatmap:
+        title: RadHeatMap
+    controls/radlegend:
+        title: RadLegend
+    controls/radmap:
+        title: RadMap
+    controls/radmaskedinput:
+        title: RadMaskedInput
+    controls/radoutlookbar:
+        title: RadOutlookbar
+    controls/radpanelbar:
+        title: RadPanelBar
+    controls/radpersistenceframework:
+        title: RadPersistenceFramework
+    controls/radrating:
+        title: RadRating
+    controls/radribbonview:
+        title: RadRibbonView
+    controls/radslider:
+        title: RadSlider
+    controls/radsparkline:
+        title: RadSparkLine
+    controls/radtabcontrol:
+        title: RadTabControl
+    controls/radtileview:
+        title: RadTileView
+    controls/radtoolbar:
+        title: RadToolbar
+    controls/radtimebar:
+        title: RadTimeBar
+    controls/radtimeline:
+        title: RadTimeline
+    controls/radtreeview:
+        title: RadTreeView		
+## X2 Controls End
+
+## X2 Controls Start
+
+## X2 Controls End
+
+## Api Reference Start
     "*system.windows":
         title: "System.Windows"
     "*canexecutechangedeventmanager-class":
@@ -2108,7 +2388,9 @@ navigation:
     "*touchinteraction-methods":
         title: "TouchInteraction Methods"
     "*touchinteraction-attached-properties":
-        title: "TouchInteraction Attached Properties"		
+        title: "TouchInteraction Attached Properties"	
+## Api Reference End
+
 ## The application virtual path
 baseurl: "/devtools/wpf"
 

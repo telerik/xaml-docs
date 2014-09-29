@@ -4,7 +4,7 @@ page_title: Zooming and Scrolling
 description: Zooming and Scrolling
 slug: radchart-features-zooming-and-scrolling
 tags: zooming,and,scrolling
-publish: True
+published: True
 position: 27
 ---
 

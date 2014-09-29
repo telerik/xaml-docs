@@ -4,7 +4,7 @@ page_title: Modify the default placement
 description: Modify the default placement
 slug: radbusyindicator-how-to-modify-default-placement
 tags: modify,the,default,placement
-publish: True
+published: True
 position: 0
 ---
 

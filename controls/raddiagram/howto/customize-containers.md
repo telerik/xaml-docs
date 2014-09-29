@@ -4,7 +4,7 @@ page_title: Customize a ContainerShape
 description: Customize a ContainerShape
 slug: raddiagram-howto-customize-containers
 tags: customize,a,containershape
-publish: True
+published: True
 position: 8
 ---
 

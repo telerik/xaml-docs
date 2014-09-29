@@ -4,7 +4,7 @@ page_title: Multiple Axes
 description: Multiple Axes
 slug: radchartview-axes-multipleaxes
 tags: multiple,axes
-publish: True
+published: True
 position: 6
 ---
 

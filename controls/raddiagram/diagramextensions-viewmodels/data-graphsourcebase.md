@@ -4,8 +4,8 @@ page_title: GraphSourceBase
 description: GraphSourceBase
 slug: raddiagram-data-graphsourcebase
 tags: graphsourcebase
-publish: True
-position: 5
+published: True
+position: 6
 ---
 
 # GraphSourceBase

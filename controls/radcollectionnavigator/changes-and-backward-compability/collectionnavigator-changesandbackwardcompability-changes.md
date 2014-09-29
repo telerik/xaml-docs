@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: collectionnavigator-changesandbackwardcompability-changes
 tags: changes
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: AutoScrolling
 description: AutoScrolling
 slug: radscheduleview-features-autoscrolling
 tags: autoscrolling
-publish: True
+published: True
 position: 15
 ---
 

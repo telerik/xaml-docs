@@ -4,7 +4,7 @@ page_title: How to Add Buttons to the Pane Header
 description: How to Add Buttons to the Pane Header
 slug: raddocking-how-to-add-buttons-to-the-pane-headers
 tags: how,to,add,buttons,to,the,pane,header
-publish: True
+published: True
 position: 1
 ---
 

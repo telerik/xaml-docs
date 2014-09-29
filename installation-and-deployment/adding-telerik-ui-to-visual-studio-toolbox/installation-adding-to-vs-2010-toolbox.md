@@ -4,7 +4,7 @@ page_title: Adding UI for Silverlight to the Visual Studio 2010 Toolbox
 description: Adding UI for Silverlight to the Visual Studio 2010 Toolbox
 slug: installation-adding-to-vs-2010-toolbox
 tags: adding,ui,for,silverlight,to,the,visual,studio,2010,toolbox
-publish: True
+published: True
 position: 2
 site_name: Silverlight
 ---

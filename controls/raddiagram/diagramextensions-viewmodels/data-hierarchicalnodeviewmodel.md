@@ -4,8 +4,8 @@ page_title: HierarchicalNodeViewModel
 description: HierarchicalNodeViewModel
 slug: raddiagram-data-hierarchicalnodeviewmodel
 tags: hierarchicalnodeviewmodel
-publish: True
-position: 4
+published: True
+position: 5
 ---
 
 # HierarchicalNodeViewModel

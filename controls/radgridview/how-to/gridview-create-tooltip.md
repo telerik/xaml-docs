@@ -4,7 +4,7 @@ page_title: Add ToolTip for columns and headers
 description: Add ToolTip for columns and headers
 slug: gridview-how-to-create-tooltip
 tags: add,tooltip,for,columns,and,headers
-publish: True
+published: True
 position: 4
 ---
 

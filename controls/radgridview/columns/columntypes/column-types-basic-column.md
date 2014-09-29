@@ -4,7 +4,7 @@ page_title: Basic Column
 description: Basic Column
 slug: radgridview-columns-column-types-basic-column
 tags: basic,column
-publish: True
+published: True
 position: 0
 ---
 

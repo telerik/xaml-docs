@@ -4,7 +4,7 @@ page_title: Styling and Appearance
 description: Styling and Appearance
 slug: radslider-styling-and-appearance-overview
 tags: styling,and,appearance
-publish: True
+published: True
 position: 4
 ---
 

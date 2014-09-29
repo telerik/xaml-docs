@@ -4,7 +4,7 @@ page_title: Autostart
 description: Autostart
 slug: radcloudupload-features-autostart
 tags: autostart
-publish: True
+published: True
 position: 2
 ---
 

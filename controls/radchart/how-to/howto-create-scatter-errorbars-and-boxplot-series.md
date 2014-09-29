@@ -4,7 +4,7 @@ page_title: Create Scatter ErrorBars and BoxPlot Series
 description: Create Scatter ErrorBars and BoxPlot Series
 slug: radchart-howto-create-scatter-errorbars-and-boxplot-series
 tags: create,scatter,errorbars,and,boxplot,series
-publish: True
+published: True
 position: 12
 ---
 

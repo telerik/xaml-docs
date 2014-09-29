@@ -4,7 +4,7 @@ page_title: How to Take Advantage of the Tag Property
 description: How to Take Advantage of the Tag Property
 slug: radtabcontrol-how-to-take-advantage-of-the-tag-property
 tags: how,to,take,advantage,of,the,tag,property
-publish: True
+published: True
 position: 1
 ---
 

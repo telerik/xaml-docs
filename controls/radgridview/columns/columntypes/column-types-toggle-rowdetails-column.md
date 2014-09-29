@@ -4,7 +4,7 @@ page_title: Toggle RowDetails Column
 description: Toggle RowDetails Column
 slug: radgridview-columns-column-types-toggle-rowdetails-column
 tags: toggle,rowdetails,column
-publish: True
+published: True
 position: 10
 ---
 

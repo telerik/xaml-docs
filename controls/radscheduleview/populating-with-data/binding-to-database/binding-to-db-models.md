@@ -4,7 +4,7 @@ page_title: Models
 description: Models
 slug: radscheduleview-populating-with-data-binding-to-db-models
 tags: models
-publish: True
+published: True
 position: 6
 ---
 

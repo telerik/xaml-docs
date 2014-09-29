@@ -4,7 +4,7 @@ page_title: Populating With Data
 description: Populating With Data
 slug: radheatmap-populating-with-data
 tags: populating,with,data
-publish: True
+published: True
 position: 3
 ---
 

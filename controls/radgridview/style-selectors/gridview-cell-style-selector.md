@@ -4,7 +4,7 @@ page_title: CellStyleSelector
 description: CellStyleSelector
 slug: gridview-cell-style-selector
 tags: cellstyleselector
-publish: True
+published: True
 position: 1
 ---
 

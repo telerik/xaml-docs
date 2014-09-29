@@ -4,7 +4,7 @@ page_title: Bound/Unbound Columns
 description: Bound/Unbound Columns
 slug: gridview-columns-bound-unbound-columns
 tags: bound/unbound,columns
-publish: True
+published: True
 position: 12
 ---
 

@@ -4,7 +4,7 @@ page_title: Lightweight Templates
 description: Lightweight Templates
 slug: radtreelistview-features-lightweight-templates
 tags: lightweight,templates
-publish: True
+published: True
 position: 15
 ---
 

@@ -4,7 +4,7 @@ page_title: Printing
 description: Printing
 slug: radspreadsheet-ui-printing
 tags: printing
-publish: True
+published: True
 position: 5
 ---
 

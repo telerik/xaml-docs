@@ -4,7 +4,7 @@ page_title: RadBarcodeReader
 description: RadBarcodeReader 
 slug: radbarcodereader-overview
 tags: radbarcodereader,
-publish: True
+published: True
 position: 4
 ---
 

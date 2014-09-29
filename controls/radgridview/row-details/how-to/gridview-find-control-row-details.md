@@ -4,7 +4,7 @@ page_title: Find a control in RowDetailsTemplate
 description: Find a control in RowDetailsTemplate
 slug: gridview-find-control-row-details
 tags: find,a,control,in,rowdetailstemplate
-publish: True
+published: True
 position: 0
 ---
 

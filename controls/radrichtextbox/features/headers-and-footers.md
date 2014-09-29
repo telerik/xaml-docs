@@ -4,7 +4,7 @@ page_title: Headers and Footers
 description: Headers and Footers
 slug: radrichtextbox-features-headers-and-footers
 tags: headers,and,footers
-publish: True
+published: True
 position: 8
 ---
 

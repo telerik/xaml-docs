@@ -4,7 +4,7 @@ page_title: KML Data Import
 description: KML Data Import
 slug: radmap-features-kml-data-import
 tags: kml,data,import
-publish: True
+published: True
 position: 4
 ---
 

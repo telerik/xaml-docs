@@ -4,7 +4,7 @@ page_title: Visual Structure
 description: Visual Structure
 slug: radbarcode-pdf417-structure
 tags: visual,structure
-publish: True
+published: True
 position: 0
 ---
 

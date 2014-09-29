@@ -4,7 +4,7 @@ page_title: Using AdomdDataProvider
 description: Using AdomdDataProvider
 slug: radpivotgrid-data-adomd
 tags: using,adomddataprovider
-publish: True
+published: True
 position: 2
 site_name: WPF
 ---

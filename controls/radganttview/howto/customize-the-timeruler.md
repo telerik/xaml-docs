@@ -4,7 +4,7 @@ page_title: Customize the TimeRuler Data and Containers
 description: Customize the TimeRuler Data and Containers
 slug: radganttview-howto-customize-the-timeruler
 tags: customize,the,timeruler,data,and,containers
-publish: True
+published: True
 position: 1
 ---
 

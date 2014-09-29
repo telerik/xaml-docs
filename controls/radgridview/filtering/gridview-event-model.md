@@ -4,7 +4,7 @@ page_title: Event Model
 description: Event Model
 slug: gridview-filtering-event-model
 tags: event,model
-publish: True
+published: True
 position: 12
 ---
 

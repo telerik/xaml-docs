@@ -4,7 +4,7 @@ page_title: Smart Labels
 description: Smart Labels
 slug: radchartview-features-smart-labels
 tags: smart,labels
-publish: True
+published: True
 position: 1
 ---
 

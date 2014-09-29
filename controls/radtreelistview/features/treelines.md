@@ -4,7 +4,7 @@ page_title: Connecting Lines
 description: Connecting Lines
 slug: radtreelistview-features-treelines
 tags: connecting,lines
-publish: True
+published: True
 position: 16
 ---
 

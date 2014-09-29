@@ -4,7 +4,7 @@ page_title: Creating a Chart Declaratively
 description: Creating a Chart Declaratively
 slug: radchart-populating-with-data-creating-chart-declaratively
 tags: creating,a,chart,declaratively
-publish: True
+published: True
 position: 1
 ---
 

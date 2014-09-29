@@ -4,8 +4,8 @@ page_title: NodeViewModelBase
 description: NodeViewModelBase
 slug: raddiagram-data-nodeviewmodel
 tags: nodeviewmodelbase
-publish: True
-position: 1
+published: True
+position: 2
 ---
 
 # NodeViewModelBase

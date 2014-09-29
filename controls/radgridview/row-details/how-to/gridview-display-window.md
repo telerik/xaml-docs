@@ -4,7 +4,7 @@ page_title: Display RadGridView Row Details in RadWindow
 description: Display RadGridView Row Details in RadWindow
 slug: gridview-how-to-display-row-details-window
 tags: display,radgridview,row,details,in,radwindow
-publish: True
+published: True
 position: 1
 ---
 

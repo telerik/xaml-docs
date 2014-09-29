@@ -4,7 +4,7 @@ page_title: Grouping and Aggregation
 description: Grouping and Aggregation
 slug: radchart-features-grouping-and-aggregation
 tags: grouping,and,aggregation
-publish: True
+published: True
 position: 0
 ---
 

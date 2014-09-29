@@ -4,7 +4,7 @@ page_title: Find and Replace
 description: Find and Replace
 slug: radspreadprocessing-features-find-and-replace
 tags: find,and,replace
-publish: True
+published: True
 position: 5
 ---
 

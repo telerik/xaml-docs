@@ -4,7 +4,7 @@ page_title: Save in a Stream
 description: Save in a Stream
 slug: persistence-framework-save-stream
 tags: save,in,a,stream
-publish: True
+published: True
 position: 2
 ---
 

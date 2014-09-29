@@ -4,7 +4,7 @@ page_title: Reordering the Tiles
 description: Reordering the Tiles
 slug: radtilelist-reordering-tiles
 tags: reordering,the,tiles
-publish: True
+published: True
 position: 2
 ---
 

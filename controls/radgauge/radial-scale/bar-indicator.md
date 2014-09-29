@@ -4,7 +4,7 @@ page_title: Bar Indicator
 description: Bar Indicator
 slug: radial-scale-bar-indicator
 tags: bar,indicator
-publish: True
+published: True
 position: 4
 ---
 

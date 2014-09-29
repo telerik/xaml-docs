@@ -4,7 +4,7 @@ page_title: Mouse Support
 description: Mouse Support
 slug: radtreeview-features-mouse-support
 tags: mouse,support
-publish: True
+published: True
 position: 11
 ---
 

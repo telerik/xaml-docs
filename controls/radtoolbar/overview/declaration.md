@@ -4,7 +4,7 @@ page_title: Getting Started
 description: Getting Started
 slug: radtoolbar-declaration
 tags: getting,started
-publish: True
+published: True
 position: 2
 site_name: Silverlight
 ---

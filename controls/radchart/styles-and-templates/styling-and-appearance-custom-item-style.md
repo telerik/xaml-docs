@@ -4,7 +4,7 @@ page_title: Custom Item Style
 description: Custom Item Style
 slug: radchart-styling-and-appearance-custom-item-style
 tags: custom,item,style
-publish: True
+published: True
 position: 12
 ---
 

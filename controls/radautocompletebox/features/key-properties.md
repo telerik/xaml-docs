@@ -4,7 +4,7 @@ page_title: Key Properties
 description: Key Properties
 slug: radautocompletebox-features-key-properties
 tags: key,properties
-publish: True
+published: True
 position: 0
 ---
 

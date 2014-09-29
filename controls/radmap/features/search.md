@@ -4,7 +4,7 @@ page_title: Search
 description: Search
 slug: radmap-features-search
 tags: search
-publish: True
+published: True
 position: 13
 ---
 

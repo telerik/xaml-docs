@@ -4,7 +4,7 @@ page_title: How to apply different templates for front and back cover page.
 description: How to apply different templates for front and back cover page.
 slug: radbook-cover-template
 tags: how,to,apply,different,templates,for,front,and,back,cover,page.
-publish: True
+published: True
 position: 2
 ---
 
@@ -207,7 +207,7 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 	   }
 	  }
 	 }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -247,9 +247,9 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 			Private m_LeftPageTemplate As DataTemplate
 			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
 				Dim page As RadBookItem = TryCast(container, RadBookItem)
-				' we need an instance of the book so that we can determine the whether the current page is the last page.
+				'''we need an instance of the book so that we can determine the whether the current page is the last page.
 				Dim book As RadBook = TryCast(System.Windows.Controls.ItemsControl.ItemsControlFromItemContainer(container), RadBook)
-				' Using the index property, we can determine whether the page is last page or it is one of the inner left pages.
+				'''Using the index property, we can determine whether the page is last page or it is one of the inner left pages.
 				If page.Index = book.Items.Count - 1 Then
 					Return Me.BackCoverTemplate
 				Else
@@ -290,7 +290,7 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 			Private m_RightPageTemplate As DataTemplate
 			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
 				Dim page As RadBookItem = TryCast(container, RadBookItem)
-				' Using the index property, we can determine whether the page is first page or it is one of the inner right pages.
+				'''Using the index property, we can determine whether the page is first page or it is one of the inner right pages.
 				If page.Index = 0 Then
 					Return Me.FrontCoverTemplate
 				Else
@@ -298,19 +298,7 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 				End If
 			End Function
 		End Class
-	#End Region
-	
-	#Region "radbook-cover-template_4"
-		Partial Public Class MainPage
-			Inherits UserControl
-			Public Sub New()
-				InitializeComponent()
-				book1.ItemsSource = Enumerable.Range(0, 10)
-			End Sub
-		End Class
-	#End Region
-	
-	End Class
+{{endregion}}
 
 
 
@@ -319,12 +307,12 @@ Next, we can instantiate the two template selectors in XAML...
 #### __XAML__
 
 {{region radbook-cover-template_2}}
-	    <local:LeftPageTemplateSelector x:Key="LeftPageTemplateSelector"
-	            BackCoverTemplate="{StaticResource BackCoverTemplate}" LeftPageTemplate="{StaticResource LeftPageTemplate}" />
-	    <local:RightPageTemplateSelector x:Key="RightPageTemplateSelector"
-	            FrontCoverTemplate="{StaticResource FrontCoverTemplate}"
-	            RightPageTemplate="{StaticResource RightPageTemplate}" />
-	{{endregion}}
+	<local:LeftPageTemplateSelector x:Key="LeftPageTemplateSelector"
+			BackCoverTemplate="{StaticResource BackCoverTemplate}" LeftPageTemplate="{StaticResource LeftPageTemplate}" />
+	<local:RightPageTemplateSelector x:Key="RightPageTemplateSelector"
+			FrontCoverTemplate="{StaticResource FrontCoverTemplate}"
+			RightPageTemplate="{StaticResource RightPageTemplate}" />
+{{endregion}}
 
 
 
@@ -333,12 +321,12 @@ Next, we can instantiate the two template selectors in XAML...
 #### __XAML__
 
 {{region radbook-cover-template_3}}
-	    <telerik:RadBook x:Name="book1" 
-	                     FirstPagePosition="Right"
-	                     LeftPageTemplateSelector="{StaticResource LeftPageTemplateSelector}"
-	                     RightPageIndex="0"
-	                     RightPageTemplateSelector="{StaticResource RightPageTemplateSelector}" />
-	{{endregion}}
+	<telerik:RadBook x:Name="book1" 
+					 FirstPagePosition="Right"
+					 LeftPageTemplateSelector="{StaticResource LeftPageTemplateSelector}"
+					 RightPageIndex="0"
+					 RightPageTemplateSelector="{StaticResource RightPageTemplateSelector}" />
+{{endregion}}
 
 
 
@@ -355,42 +343,28 @@ Finally, all we have to do is populate the book with items. In this example, the
 	   book1.ItemsSource = Enumerable.Range(0, 10);
 	  }
 	 }
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radbook-cover-template_4}}
-		Partial Public Class MainPage
-			Inherits UserControl
-			Public Sub New()
-				InitializeComponent()
-				book1.ItemsSource = Enumerable.Range(0, 10)
-			End Sub
-		End Class
-	#End Region
-	
+	Partial Public Class MainPage
+		Inherits UserControl
+		Public Sub New()
+			InitializeComponent()
+			book1.ItemsSource = Enumerable.Range(0, 10)
+		End Sub
 	End Class
+{{endregion}}
 
 
 
 This is how the final result looks like:
 
+![](images/book_howto_covertemplates_img02.png)
+ 
+![](images/book_howto_covertemplates_img03.png)
 
-
-
-         
-      ![](images/book_howto_covertemplates_img02.png)
-
-
-
-
-         
-      ![](images/book_howto_covertemplates_img03.png)
-
-
-
-
-         
-      ![](images/book_howto_covertemplates_img04.png)
+![](images/book_howto_covertemplates_img04.png)

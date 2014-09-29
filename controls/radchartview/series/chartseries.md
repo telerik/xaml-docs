@@ -4,7 +4,7 @@ page_title: Chart Series Overview
 description: Chart Series Overview
 slug: radchartview-series-chartseries
 tags: chart,series,overview
-publish: True
+published: True
 position: 0
 ---
 

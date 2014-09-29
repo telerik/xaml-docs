@@ -4,7 +4,7 @@ page_title: Handle SelectionChanged for the GridViewComboBoxColumn
 description: Handle SelectionChanged for the GridViewComboBoxColumn
 slug: gridview-columns-howto-selectionchanged-comboboxcolumn
 tags: handle,selectionchanged,for,the,gridviewcomboboxcolumn
-publish: True
+published: True
 position: 11
 ---
 

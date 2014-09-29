@@ -4,7 +4,7 @@ page_title: Track Changes
 description: Track Changes
 slug: radrichtextbox-features-track-changes
 tags: track,changes
-publish: True
+published: True
 position: 16
 ---
 

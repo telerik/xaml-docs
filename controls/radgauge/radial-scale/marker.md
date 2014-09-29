@@ -4,7 +4,7 @@ page_title: Marker
 description: Marker
 slug: radial-scale-marker
 tags: marker
-publish: True
+published: True
 position: 3
 ---
 

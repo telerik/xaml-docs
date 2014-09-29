@@ -4,7 +4,7 @@ page_title: Source and Paged Source
 description: Source and Paged Source
 slug: raddatapager-features-source-and-paged-source
 tags: source,and,paged,source
-publish: True
+published: True
 position: 5
 ---
 

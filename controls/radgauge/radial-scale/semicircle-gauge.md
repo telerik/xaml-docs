@@ -4,7 +4,7 @@ page_title: Semicircle gauge
 description: Semicircle gauge
 slug: radial-scale-semicircle-gauge
 tags: semicircle,gauge
-publish: True
+published: True
 position: 8
 ---
 

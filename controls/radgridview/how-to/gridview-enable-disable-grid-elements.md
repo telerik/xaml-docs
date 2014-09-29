@@ -4,7 +4,7 @@ page_title: Enable\Disable Grid Elements
 description: Enable\Disable Grid Elements
 slug: gridview-enable-disable-grid-elements
 tags: enable\disable,grid,elements
-publish: True
+published: True
 position: 6
 ---
 

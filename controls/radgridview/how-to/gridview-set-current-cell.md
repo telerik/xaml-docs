@@ -4,7 +4,7 @@ page_title: Set the current cell
 description: Set the current cell
 slug: gridview-how-to-set-current-cell
 tags: set,the,current,cell
-publish: True
+published: True
 position: 5
 ---
 

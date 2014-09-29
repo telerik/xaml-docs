@@ -4,7 +4,7 @@ page_title: Auto Expand on Drag Over
 description: Auto Expand on Drag Over
 slug: radtreeview-how-to-enable-auto-expand-drag-over
 tags: auto,expand,on,drag,over
-publish: True
+published: True
 position: 6
 ---
 

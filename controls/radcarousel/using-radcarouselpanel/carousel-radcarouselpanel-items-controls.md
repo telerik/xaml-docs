@@ -4,7 +4,7 @@ page_title: Using RadCarouselPanel with Items Controls
 description: Using RadCarouselPanel with Items Controls
 slug: carousel-radcarouselpanel-items-controls
 tags: using,radcarouselpanel,with,items,controls
-publish: True
+published: True
 position: 1
 ---
 

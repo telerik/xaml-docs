@@ -4,7 +4,7 @@ page_title: Ribbon Button
 description: Ribbon Button
 slug: radribbonview-ribbonbutton
 tags: ribbon,button
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Populating with Data
 description: Populating with Data
 slug: radtreeview-getting-started-populating-with-data
 tags: populating,with,data
-publish: True
+published: True
 position: 1
 ---
 

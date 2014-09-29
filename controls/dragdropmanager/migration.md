@@ -4,7 +4,7 @@ page_title: DragDropManager Migration
 description: DragDropManager Migration
 slug: dragdropmanager-migration
 tags: dragdropmanager,migration
-publish: True
+published: True
 position: 5
 ---
 

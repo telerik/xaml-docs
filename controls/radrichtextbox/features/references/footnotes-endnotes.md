@@ -4,7 +4,7 @@ page_title: Footnotes and Endnotes
 description: Footnotes and Endnotes
 slug: radrichtextbox-features-footnotes-endnotes
 tags: footnotes,and,endnotes
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Declaratively
 description: Declaratively
 slug: radlistbox-populating-with-data-declaratively
 tags: declaratively
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Filter RadChart Using The GridView's CompositeFilterDescriptor
 description: Filter RadChart Using The GridView's CompositeFilterDescriptor
 slug: radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor
 tags: filter,radchart,using,the,gridview's,compositefilterdescriptor
-publish: True
+published: True
 position: 16
 ---
 

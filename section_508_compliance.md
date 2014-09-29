@@ -4,7 +4,7 @@ page_title: Section 508 Compliance
 description: Section 508 Compliance
 slug: section_508_compliance
 tags: section,508,compliance
-publish: True
+published: True
 position: 4
 ---
 

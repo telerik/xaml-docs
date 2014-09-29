@@ -4,7 +4,7 @@ page_title: Enable\Disable RadComboBoxItems
 description: Enable\Disable RadComboBoxItems
 slug: radcombobox-howto-enable-disable-radcombobox-items
 tags: enable\disable,radcomboboxitems
-publish: True
+published: True
 position: 6
 ---
 

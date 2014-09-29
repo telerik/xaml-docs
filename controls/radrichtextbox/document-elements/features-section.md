@@ -4,7 +4,7 @@ page_title: Section
 description: Section
 slug: radrichtextbox-features-document-elements-section
 tags: section
-publish: True
+published: True
 position: 2
 ---
 

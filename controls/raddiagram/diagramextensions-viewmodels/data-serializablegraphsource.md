@@ -4,8 +4,8 @@ page_title: SerializableGraphSourceBase
 description: SerializableGraphSourceBase
 slug: raddiagram-data-serializablegraphsource
 tags: serializablegraphsourcebase
-publish: True
-position: 7
+published: True
+position: 8
 ---
 
 # SerializableGraphSourceBase

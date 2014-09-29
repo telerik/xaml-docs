@@ -4,7 +4,7 @@ page_title: Styling the Axis Minor Tick
 description: Styling the Axis Minor Tick
 slug: radchart-styling-and-appearance-styling-axis-minor-tick
 tags: styling,the,axis,minor,tick
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Binding to Objects
 description: Binding to Objects
 slug: radcalendar-binding-to-objects
 tags: binding,to,objects
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the Other Elements
 description: Styling the Other Elements
 slug: raddatapager-styles-and-templates-styling-the-other-elements
 tags: styling,the,other,elements
-publish: True
+published: True
 position: 4
 ---
 

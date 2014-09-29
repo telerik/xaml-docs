@@ -4,7 +4,7 @@ page_title: Routed Events Support
 description: Routed Events Support
 slug: common-routed-events-support
 tags: routed,events,support
-publish: True
+published: True
 position: 6
 site_name: Silverlight
 ---

@@ -4,7 +4,7 @@ page_title: Iterate Over the Diagram Items
 description: Iterate Over the Diagram Items
 slug: raddiagrams-howto-iterate-over-the-diagram-items
 tags: iterate,over,the,diagram,items
-publish: True
+published: True
 position: 7
 ---
 

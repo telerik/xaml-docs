@@ -4,7 +4,7 @@ page_title: Styling the RadProgressBar
 description: Styling the RadProgressBar
 slug: radbusyindicator-styles-and-templates-styling-the-radprogressbar
 tags: styling,the,radprogressbar
-publish: True
+published: True
 position: 3
 ---
 

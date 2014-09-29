@@ -4,7 +4,7 @@ page_title: Creating Radial Gauge
 description: Creating Radial Gauge
 slug: radgauge-getting-started-creating-radial-gauge
 tags: creating,radial,gauge
-publish: True
+published: True
 position: 0
 ---
 

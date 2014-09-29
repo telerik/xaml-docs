@@ -4,7 +4,7 @@ page_title: Chart Export
 description: Chart Export
 slug: radchart-features-chart-export
 tags: chart,export
-publish: True
+published: True
 position: 20
 ---
 

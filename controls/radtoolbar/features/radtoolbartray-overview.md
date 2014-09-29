@@ -4,7 +4,7 @@ page_title: ToolBarTray Overview
 description: ToolBarTray Overview
 slug: radtoolbartray-overview
 tags: toolbartray,overview
-publish: True
+published: True
 position: 1
 ---
 

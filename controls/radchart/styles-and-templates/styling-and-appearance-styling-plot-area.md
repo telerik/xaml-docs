@@ -4,7 +4,7 @@ page_title: Styling the Plot Area
 description: Styling the Plot Area
 slug: radchart-styling-and-appearance-styling-plot-area
 tags: styling,the,plot,area
-publish: True
+published: True
 position: 8
 ---
 

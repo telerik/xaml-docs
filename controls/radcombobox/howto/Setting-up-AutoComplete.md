@@ -4,7 +4,7 @@ page_title: Setting up AutoComplete
 description: Setting up AutoComplete
 slug: radcombobox-setting-up-autocomplete
 tags: setting,up,autocomplete
-publish: True
+published: True
 position: 0
 ---
 

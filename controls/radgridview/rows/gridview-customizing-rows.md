@@ -4,7 +4,7 @@ page_title: Customizing Rows
 description: Customizing Rows
 slug: gridview-customizing-rows
 tags: customizing,rows
-publish: True
+published: True
 position: 2
 ---
 

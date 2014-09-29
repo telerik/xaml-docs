@@ -4,7 +4,7 @@ page_title: Interactivity
 description: Interactivity
 slug: radchart-features-interactivity
 tags: interactivity
-publish: True
+published: True
 position: 19
 ---
 

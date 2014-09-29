@@ -4,7 +4,7 @@ page_title: Sorting
 description: Sorting
 slug: radpivotgrid-features-queryable-sorting
 tags: sorting
-publish: True
+published: True
 position: 1
 site_name: WPF
 ---

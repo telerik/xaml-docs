@@ -4,7 +4,7 @@ page_title: How to Select Control in Expression Blend
 description: How to Select Control in Expression Blend
 slug: radtabcontrol-how-to-select-control-in-expression-blend
 tags: how,to,select,control,in,expression,blend
-publish: True
+published: True
 position: 7
 ---
 

@@ -4,7 +4,7 @@ page_title: Bookmark
 description: Bookmark
 slug: radwordsprocessing-model-bookmark
 tags: bookmark
-publish: True
+published: True
 position: 12
 ---
 

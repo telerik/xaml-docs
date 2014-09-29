@@ -4,7 +4,7 @@ page_title: Composite Filter Descriptors
 description: Composite Filter Descriptors
 slug: radgridview-filtering-composite-filter-descriptors
 tags: composite,filter,descriptors
-publish: False
+published: False
 position: 3
 ---
 

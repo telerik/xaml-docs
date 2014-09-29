@@ -4,7 +4,7 @@ page_title: VisualStudio2013 Theme
 description: VisualStudio2013 Theme
 slug: common-styling-appearance-visualstudio2013-theme
 tags: visualstudio2013,theme
-publish: True
+published: True
 position: 6
 ---
 

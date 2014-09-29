@@ -4,7 +4,7 @@ page_title: Customizing Commands
 description: Customizing Commands
 slug: raddataform-customize-commands
 tags: customizing,commands
-publish: True
+published: True
 position: 3
 ---
 

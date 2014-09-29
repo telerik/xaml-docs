@@ -4,7 +4,7 @@ page_title: Templates Structure
 description: Templates Structure
 slug: raddataform-styles-and-templates-templates-structure
 tags: templates,structure
-publish: True
+published: True
 position: 1
 ---
 

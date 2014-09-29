@@ -4,7 +4,7 @@ page_title: Drag and Drop
 description: Drag and Drop
 slug: gridview-drag-drop-scenario
 tags: drag,and,drop
-publish: True
+published: True
 position: 0
 ---
 

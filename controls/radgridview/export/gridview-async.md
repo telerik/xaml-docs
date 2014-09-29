@@ -4,7 +4,7 @@ page_title: Grid Async Export
 description: Grid Async Export
 slug: gridview-export-async
 tags: grid,async,export
-publish: True
+published: True
 position: 1
 ---
 

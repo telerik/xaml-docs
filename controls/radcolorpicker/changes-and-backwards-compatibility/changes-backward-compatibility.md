@@ -4,7 +4,7 @@ page_title: Backwards Compatibility
 description: Backwards Compatibility
 slug: radcolorpicker-changes-backward-compatibility
 tags: backwards,compatibility
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Basic Sorting
 description: Basic Sorting
 slug: gridview-sorting-basics
 tags: basic,sorting
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: Format Providers Manager
 description: Format Providers Manager
 slug: radspreadsheet-model-import-export-format-providers-manager
 tags: format,providers,manager
-publish: False
+published: False
 position: 0
 ---
 

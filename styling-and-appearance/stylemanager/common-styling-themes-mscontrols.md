@@ -4,7 +4,7 @@ page_title: Use StyleManager to Apply Theme on MS Controls
 description: Use StyleManager to Apply Theme on MS Controls
 slug: common-styling-themes-mscontrols
 tags: use,stylemanager,to,apply,theme,on,ms,controls
-publish: True
+published: True
 position: 3
 ---
 

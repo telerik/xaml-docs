@@ -4,7 +4,7 @@ page_title: State Indicator
 description: State Indicator
 slug: numeric-scale-state-indicator
 tags: state,indicator
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Add Scrolling to RadContextMenu
 description: Add Scrolling to RadContextMenu
 slug: radcontextmenu-how-to-add-scrolling-to-radcontextmenu
 tags: add,scrolling,to,radcontextmenu
-publish: True
+published: True
 position: 5
 ---
 

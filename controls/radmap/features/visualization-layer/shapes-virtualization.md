@@ -4,7 +4,7 @@ page_title: Map Shapes Virtualization
 description: Map Shapes Virtualization
 slug: radmap-features-visualization-layer-shapes-virtualization
 tags: map,shapes,virtualization
-publish: True
+published: True
 position: 9
 ---
 

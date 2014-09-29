@@ -4,7 +4,7 @@ page_title: Microsoft Expression Blend Support
 description: Microsoft Expression Blend Support
 slug: common-blend-support
 tags: microsoft,expression,blend,support
-publish: True
+published: True
 position: 5
 ---
 

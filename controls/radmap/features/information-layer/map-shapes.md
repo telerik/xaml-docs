@@ -4,7 +4,7 @@ page_title: Map Shapes
 description: Map Shapes
 slug: radmap-features-map-shapes
 tags: map,shapes
-publish: True
+published: True
 position: 3
 ---
 

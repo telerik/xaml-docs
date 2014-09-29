@@ -4,7 +4,7 @@ page_title: Save the Diagram in Isolated Storage
 description: Save the Diagram in Isolated Storage
 slug: raddiagrams-howto-save-isolated-storage
 tags: save,the,diagram,in,isolated,storage
-publish: True
+published: True
 position: 5
 site_name: Silverlight
 ---

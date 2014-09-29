@@ -4,7 +4,7 @@ page_title: Items Editing
 description: Items Editing
 slug: raddiagrams-features-edit
 tags: items,editing
-publish: True
+published: True
 position: 5
 ---
 

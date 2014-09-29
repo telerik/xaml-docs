@@ -4,7 +4,7 @@ page_title: UI Automation Support
 description: UI Automation Support
 slug: common-ui-automation
 tags: ui,automation,support
-publish: True
+published: True
 position: 11
 ---
 

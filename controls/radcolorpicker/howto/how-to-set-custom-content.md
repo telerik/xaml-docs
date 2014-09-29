@@ -4,7 +4,7 @@ page_title: Set Custom Content
 description: Set Custom Content
 slug: radcolorpicker-how-to-set-custom-content
 tags: set,custom,content
-publish: True
+published: True
 position: 1
 ---
 

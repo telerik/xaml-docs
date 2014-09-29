@@ -4,7 +4,7 @@ page_title: Multi-series Charts
 description: Multi-series Charts
 slug: radchart-features-multi-series-charts
 tags: multi-series,charts
-publish: True
+published: True
 position: 6
 ---
 

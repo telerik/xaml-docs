@@ -4,7 +4,7 @@ page_title: Integration with RadGridView
 description: Integration with RadGridView
 slug: radchart-how-to-integration-with-rad-grid-view
 tags: integration,with,radgridview
-publish: True
+published: True
 position: 2
 ---
 

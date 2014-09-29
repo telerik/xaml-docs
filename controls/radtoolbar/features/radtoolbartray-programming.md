@@ -4,7 +4,7 @@ page_title: ToolBarTray HowTo
 description: ToolBarTray HowTo
 slug: radtoolbartray-programming
 tags: toolbartray,howto
-publish: True
+published: True
 position: 3
 ---
 

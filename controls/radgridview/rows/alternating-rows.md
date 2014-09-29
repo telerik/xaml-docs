@@ -4,7 +4,7 @@ page_title: Alternating Rows
 description: Alternating Rows
 slug: radgridview-rows-alternating-rows
 tags: alternating,rows
-publish: True
+published: True
 position: 3
 ---
 

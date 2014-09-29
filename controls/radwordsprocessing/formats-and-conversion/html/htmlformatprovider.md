@@ -4,7 +4,7 @@ page_title: Using HtmlFormatProvider
 description: Using HtmlFormatProvider
 slug: radwordsprocessing-formats-and-conversion-html-htmlformatprovider
 tags: using,htmlformatprovider
-publish: True
+published: True
 position: 2
 ---
 

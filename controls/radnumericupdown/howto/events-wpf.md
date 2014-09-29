@@ -4,7 +4,7 @@ page_title: How to use the Events
 description: How to use the Events
 slug: radnumericupdown-howto-events-wpf
 tags: how,to,use,the,events
-publish: True
+published: True
 position: 2
 site_name: WPF
 ---

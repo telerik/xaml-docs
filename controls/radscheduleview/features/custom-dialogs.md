@@ -4,7 +4,7 @@ page_title: Custom Dialogs
 description: Custom Dialogs
 slug: radscheduleview-features-custom-dialogs
 tags: custom,dialogs
-publish: True
+published: True
 position: 13
 ---
 

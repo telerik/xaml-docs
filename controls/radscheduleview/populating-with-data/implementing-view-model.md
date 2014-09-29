@@ -4,7 +4,7 @@ page_title: Implementing View-ViewModel
 description: Implementing View-ViewModel 
 slug: radscheduleview-populating-with-data-implementing-view-model
 tags: implementing,view-viewmodel,
-publish: True
+published: True
 position: 1
 ---
 

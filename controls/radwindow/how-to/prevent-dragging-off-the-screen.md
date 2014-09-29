@@ -4,7 +4,7 @@ page_title: Prevent Dragging Off the Screen
 description: Prevent Dragging Off the Screen
 slug: radwindow-how-to-prevent-dragging-off-the-screen
 tags: prevent,dragging,off,the,screen
-publish: True
+published: True
 position: 2
 ---
 

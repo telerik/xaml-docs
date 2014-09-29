@@ -4,7 +4,7 @@ page_title: Model
 description: Model
 slug: radwordsprocessing-model
 tags: model
-publish: True
+published: True
 position: 4
 ---
 

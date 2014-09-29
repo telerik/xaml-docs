@@ -4,19 +4,17 @@ page_title: Clock Items
 description: Clock Items
 slug: raddatetimepicker-features-clock-items
 tags: clock,items
-publish: True
+published: True
 position: 4
 ---
 
 # Clock Items
 
-
-
 You can limit the time items available in the clock view of your __RadDateTimePicker__ control in several ways. This topic explains how to achieve this, going through the following features:
 
-* [Using the StartTime, EndTime and TimeInterval features](#Using_the_StartTime,_EndTime_and_TimeInterval_features)
+* [Using the StartTime, EndTime and TimeInterval features](#using-the-starttime-endtime-and-timeinterval-features)
 
-* [Setting a custom ClockItemsSource for the clock view](#Setting_a_custom_ClockItemsSource_for_the_clock_view)
+* [Setting a custom ClockItemsSource for the clock view](#setting-a-custom-clockitemssource-for-the-clock-view)
 
 ## Using the StartTime, EndTime and TimeInterval features
 
@@ -38,19 +36,11 @@ Here is demonstrated how to change these properties in XAML:
 
 
 
->
-
-The __TimeInterval__ property is also of type __TimeSpan__. In this example you set its value to 30 minutes, this is why you need to set the __TimeInterval__ to 0:30, meaning 0 hours and 30 minutes. 
-
-You can also achieve the same result in code-behind.
+>The __TimeInterval__ property is also of type __TimeSpan__. In this example you set its value to 30 minutes, this is why you need to set the __TimeInterval__ to 0:30, meaning 0 hours and 30 minutes. You can also achieve the same result in code-behind.
 
 Here is the result:
-
-
-
-
          
-      ![](images/dateTimePicker_features_clock_items_010.png)
+![](images/dateTimePicker_features_clock_items_010.png)
 
 ## Setting a custom ClockItemsSource for the clock view
 
@@ -78,9 +68,7 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 	    };
 	    return times;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -99,17 +87,11 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 	 }
 	 Return times
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
-
-
-
-
          
-      ![](images/dateTimePicker_features_clock_items_020.png)
+![](images/dateTimePicker_features_clock_items_020.png)
 
 # See Also
 

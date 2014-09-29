@@ -4,7 +4,7 @@ page_title: How to Load data in a hierarchical grid with RIA Services
 description: How to Load data in a hierarchical grid with RIA Services
 slug: gridview-how-to-create-hierarchical-grid-with-ria
 tags: how,to,load,data,in,a,hierarchical,grid,with,ria,services
-publish: True
+published: True
 position: 1
 site_name: Silverlight
 ---

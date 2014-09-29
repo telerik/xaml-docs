@@ -4,7 +4,7 @@ page_title: Create Appointment
 description: Create Appointment
 slug: radscheduleview-end-user-capabilities-create-appointment
 tags: create,appointment
-publish: True
+published: True
 position: 1
 ---
 

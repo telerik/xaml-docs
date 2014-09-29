@@ -4,7 +4,7 @@ page_title: RadLegend Support
 description: RadLegend Support
 slug: radchartview-features-radlegend-support
 tags: radlegend,support
-publish: True
+published: True
 position: 5
 ---
 

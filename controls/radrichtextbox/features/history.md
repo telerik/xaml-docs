@@ -4,7 +4,7 @@ page_title: History
 description: History
 slug: radrichtextbox-features-history
 tags: history
-publish: True
+published: True
 position: 3
 ---
 

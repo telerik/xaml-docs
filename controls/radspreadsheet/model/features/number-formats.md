@@ -4,7 +4,7 @@ page_title: Number Formatting
 description: Number Formatting
 slug: radspreadsheet-features-number-formats
 tags: number,formatting
-publish: False
+published: False
 position: 9
 ---
 

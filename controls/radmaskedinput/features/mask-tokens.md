@@ -4,7 +4,7 @@ page_title: Mask Tokens
 description: Mask Tokens
 slug: radmaskedinput-features-mask-tokens
 tags: mask,tokens
-publish: True
+published: True
 position: 2
 ---
 

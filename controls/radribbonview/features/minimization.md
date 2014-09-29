@@ -4,7 +4,7 @@ page_title: Minimization
 description: Minimization
 slug: radribbonview-minimization
 tags: minimization
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Y-Axis
 description: Y-Axis
 slug: radchart-features-axes-y-axis
 tags: y-axis
-publish: True
+published: True
 position: 2
 ---
 

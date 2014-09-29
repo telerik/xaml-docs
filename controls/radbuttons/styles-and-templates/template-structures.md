@@ -4,7 +4,7 @@ page_title: Template Structures
 description: Template Structures
 slug: radbuttons-styles-and-templates-template-structures
 tags: template,structures
-publish: True
+published: True
 position: 1
 ---
 

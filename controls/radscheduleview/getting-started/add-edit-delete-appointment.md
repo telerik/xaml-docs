@@ -4,7 +4,7 @@ page_title: Understanding Appointments
 description: Understanding Appointments
 slug: radscheduleview-getting-started-add-edit-delete-appointment
 tags: understanding,appointments
-publish: True
+published: True
 position: 2
 ---
 

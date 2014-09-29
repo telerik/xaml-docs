@@ -4,7 +4,7 @@ page_title: Use MVVM in RadDiagram
 description: Use MVVM in RadDiagram
 slug: raddiagrams-howto-mvvm
 tags: use,mvvm,in,raddiagram
-publish: True
+published: True
 position: 0
 ---
 

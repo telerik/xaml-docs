@@ -4,7 +4,7 @@ page_title: Functions
 description: Functions
 slug: radspreadprocessing-features-formulas-functions
 tags: functions
-publish: True
+published: True
 position: 2
 ---
 

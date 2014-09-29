@@ -4,7 +4,7 @@ page_title: Import/Export
 description: Import/Export
 slug: radspreadsheet-import-export
 tags: import/export
-publish: False
+published: False
 position: 5
 ---
 

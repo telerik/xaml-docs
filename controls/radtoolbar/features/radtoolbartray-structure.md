@@ -4,7 +4,7 @@ page_title: ToolBarTray Structure
 description: ToolBarTray Structure
 slug: radtoolbartray-structure
 tags: toolbartray,structure
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Opening Modes
 description: Opening Modes
 slug: radmenu-features-opening-modes
 tags: opening,modes
-publish: True
+published: True
 position: 1
 ---
 

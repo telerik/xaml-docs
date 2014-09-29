@@ -4,7 +4,7 @@ page_title: Events
 description: Events
 slug: radbuttons-events
 tags: events
-publish: True
+published: True
 position: 5
 ---
 

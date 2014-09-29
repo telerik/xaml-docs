@@ -4,7 +4,7 @@ page_title: DiagramExtensions ViewModels
 description: DiagramExtensions ViewModels
 slug: raddiagram-data-extensionsviewmodels
 tags: diagramextensions,viewmodels
-publish: True
+published: True
 position: 6
 ---
 

@@ -4,7 +4,7 @@ page_title: AppointmentSelectionBehavior
 description: AppointmentSelectionBehavior
 slug: radscheduleview-features-appointment-selection-behavior
 tags: appointmentselectionbehavior
-publish: True
+published: True
 position: 18
 ---
 

@@ -4,7 +4,7 @@ page_title: Import/Export
 description: Import/Export
 slug: radimageeditor-features-import-export
 tags: import/export
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Drag-drop between GridView and TreeView
 description: Drag-drop between GridView and TreeView
 slug: dragdropmanager-behaviors-gridviewandtreeview
 tags: drag-drop,between,gridview,and,treeview
-publish: True
+published: True
 position: 4
 ---
 

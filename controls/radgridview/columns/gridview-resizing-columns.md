@@ -4,7 +4,7 @@ page_title: Resizing Columns
 description: Resizing Columns
 slug: gridview-columns-resizing-columns
 tags: resizing,columns
-publish: True
+published: True
 position: 9
 ---
 

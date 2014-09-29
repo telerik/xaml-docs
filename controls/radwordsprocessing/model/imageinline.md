@@ -4,7 +4,7 @@ page_title: ImageInline
 description: ImageInline
 slug: radwordsprocessing-model-imageinline
 tags: imageinline
-publish: True
+published: True
 position: 7
 ---
 

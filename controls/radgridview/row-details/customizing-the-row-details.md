@@ -4,7 +4,7 @@ page_title: Customizing the Row Details
 description: Customizing the Row Details
 slug: radgridview-row-details-customizing-the-row-details
 tags: customizing,the,row,details
-publish: True
+published: True
 position: 6
 ---
 

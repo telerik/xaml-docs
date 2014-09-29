@@ -4,21 +4,15 @@ page_title: Overview
 description: Overview
 slug: raddatetimepicker-styling-overview
 tags: overview
-publish: True
+published: True
 position: 0
 ---
 
 # Overview
 
-
-
-## 
-
 This section is intended to give you a broad understanding of the possible ways to change the visual appearance of the __RadDateTimePicker__ control. There is also comprehensive information about its __ControlTemplates__. You will need this information if you want to customize their appearance.
 
->To learn how to change the control's theme, please read the common [Theming](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html) topic.
-
->tipTo learn how to style Silverlight __RadControls__ read the common topics about [Styling and Appearance](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html). If you are new to the controls they will give you a basic knowledge about it.
+>tipTo learn how to change the control's theme, please read the common [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) topic.
 
 You can modify the look of the __RadDateTimePicker__ control either by changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and add your own elements. However, when changing the __ControlTemplate__ you should be careful to include all required parts.
 

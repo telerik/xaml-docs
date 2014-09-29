@@ -4,7 +4,7 @@ page_title: Integration with RadContextMenu
 description: Integration with RadContextMenu
 slug: radchart-howto-integration-radcontextmenu
 tags: integration,with,radcontextmenu
-publish: True
+published: True
 position: 3
 site_name: Silverlight
 ---

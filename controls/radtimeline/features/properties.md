@@ -4,7 +4,7 @@ page_title: Properties
 description: Properties
 slug: radtimeline-properties
 tags: properties
-publish: True
+published: True
 position: 0
 ---
 

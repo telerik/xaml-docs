@@ -4,7 +4,7 @@ page_title: ScrollMode
 description: ScrollMode
 slug: radtimeline-features-scrollmode
 tags: scrollmode
-publish: True
+published: True
 position: 5
 ---
 

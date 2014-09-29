@@ -4,15 +4,11 @@ page_title: How to use RadDateTimePicker in a Grid
 description: How to use RadDateTimePicker in a Grid
 slug: raddatetimepicker-how-to-use-in-grid
 tags: how,to,use,raddatetimepicker,in,a,grid
-publish: True
+published: True
 position: 3
 ---
 
 # How to use RadDateTimePicker in a Grid
-
-
-
-## 
 
 This tutorial will guide you through creating a custom __RadDateTimePicker__ column in a __RadGridView__ control.
 
@@ -56,7 +52,7 @@ For the purpose of this example the first thing you have to do is to define the 
 	        return clubs;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -105,9 +101,7 @@ For the purpose of this example the first thing you have to do is to define the 
 	  Return clubs
 	 End Function
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -124,25 +118,19 @@ For the purpose of this example the first thing you have to do is to define the 
 	                                    DataFormatString="{}{0:N0}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region raddatetimepicker-how-to-use-in-grid_3}}
 	this.radGridView.ItemsSource = Club.GetClubs();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region raddatetimepicker-how-to-use-in-grid_4}}
 	Me.radGridView.ItemsSource = Club.GetClubs()
-	{{endregion}}
-
-
+{{endregion}}
 
 The next and final step in the example is to define the actual __CellTemplate__ used for the DateTime column. Here is the complete XAML:
 
@@ -167,17 +155,11 @@ The next and final step in the example is to define the actual __CellTemplate__ 
 	                                    DataFormatString="{}{0:N0}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
-
-
-
-         
-      ![](images/dateTimePicker_how_to_use_in_grid_010.png)
+![](images/dateTimePicker_how_to_use_in_grid_010.png)
 
 # See Also
 

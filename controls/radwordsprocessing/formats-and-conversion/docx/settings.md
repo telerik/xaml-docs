@@ -4,7 +4,7 @@ page_title: Settings
 description: Settings
 slug: radwordsprocessing-formats-and-conversion-docx-settings
 tags: settings
-publish: True
+published: True
 position: 2
 ---
 

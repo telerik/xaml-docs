@@ -4,7 +4,7 @@ page_title: Changes
 description: Changes
 slug: radoutlookbar-changes
 tags: changes
-publish: True
+published: True
 position: 0
 ---
 
@@ -12,7 +12,7 @@ position: 0
 
 
 
-This article describes the release history of the RadOutlookBar control
+This article describes the release history of the __RadOutlookBar__ control
 
 ## Q1 2014
 

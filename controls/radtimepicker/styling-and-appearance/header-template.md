@@ -4,7 +4,7 @@ page_title: Header Template
 description: Header Template
 slug: radtimepicker-header-template
 tags: header,template
-publish: True
+published: True
 position: 2
 ---
 

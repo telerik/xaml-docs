@@ -4,7 +4,7 @@ page_title: Active Sections
 description: Active Sections
 slug: radcoloreditor-activesections
 tags: active,sections
-publish: True
+published: True
 position: 3
 ---
 

@@ -4,7 +4,7 @@ page_title: Data Formatting
 description: Data Formatting
 slug: gridview-columns-data-formatting
 tags: data,formatting
-publish: True
+published: True
 position: 5
 ---
 

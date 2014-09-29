@@ -4,7 +4,7 @@ page_title: ExportFormat.Html
 description: ExportFormat.Html
 slug: gridview-export-html
 tags: exportformat.html
-publish: True
+published: True
 position: 2
 ---
 

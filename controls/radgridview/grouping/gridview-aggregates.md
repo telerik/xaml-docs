@@ -4,7 +4,7 @@ page_title: Group Aggregates
 description: Group Aggregates
 slug: gridview-grouping-aggregates
 tags: group,aggregates
-publish: True
+published: True
 position: 4
 ---
 

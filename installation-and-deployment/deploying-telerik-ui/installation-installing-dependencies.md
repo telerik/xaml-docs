@@ -4,7 +4,7 @@ page_title: Controls Dependencies
 description: Controls Dependencies
 slug: installation-installing-controls-dependencies
 tags: controls,dependencies
-publish: True
+published: True
 position: 0
 site_name: Silverlight
 ---

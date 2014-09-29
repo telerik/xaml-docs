@@ -4,7 +4,7 @@ page_title: Groups
 description: Groups
 slug: radgauge-features-groups
 tags: groups
-publish: True
+published: True
 position: 8
 ---
 

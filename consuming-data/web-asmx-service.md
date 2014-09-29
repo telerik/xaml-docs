@@ -4,7 +4,7 @@ page_title: Consuming Web (asmx) Service
 description: Consuming Web (asmx) Service
 slug: consuming-data-web-asmx-service
 tags: consuming,web,(asmx),service
-publish: True
+published: True
 position: 3
 site_name: Silverlight
 ---

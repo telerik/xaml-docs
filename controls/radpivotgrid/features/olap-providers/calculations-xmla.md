@@ -4,7 +4,7 @@ page_title: Calculations with XmlaDataProvider
 description: Calculations with XmlaDataProvider
 slug: radpivotgrid-features-calculations-xmla
 tags: calculations,with,xmladataprovider
-publish: False
+published: False
 position: 2
 ---
 

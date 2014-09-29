@@ -4,7 +4,7 @@ page_title: Scenario Templates
 description: Scenario Templates
 slug: radcontrols-vs-extensions-scenario-templates
 tags: scenario,templates
-publish: True
+published: True
 position: 4
 ---
 

@@ -4,7 +4,7 @@ page_title: Styling the RadSplitButton
 description: Styling the RadSplitButton
 slug: radbuttons-styles-and-templates-styling-the-radsplitbutton
 tags: styling,the,radsplitbutton
-publish: True
+published: True
 position: 6
 ---
 

@@ -4,13 +4,11 @@ page_title: Keyboard Support
 description: Keyboard Support
 slug: raddatetimepicker-features-keyboard-support
 tags: keyboard,support
-publish: True
+published: True
 position: 8
 ---
 
 # Keyboard Support
-
-
 
 Using the keyboard you can perform some of the most common tasks. This section describes the keyboard shortcuts used by __RadDateTimePicker__.
 
@@ -24,7 +22,9 @@ When the user opens the DateTimePicker, the keyboard focus goes automatically to
 
 * The next TAB moves the focus to the Calendar again;
 
-* Clicking SHIFT+TAB returns to the previous element in the TAB cycle.![date Time Picker features keyboard support 01](images/dateTimePicker_features_keyboard_support_01.png)
+* Clicking SHIFT+TAB returns to the previous element in the TAB cycle.
+
+![date Time Picker features keyboard support 01](images/dateTimePicker_features_keyboard_support_01.png)
 
 ## Navigation inside the Calendar
 
@@ -32,17 +32,13 @@ When the focus is in the Calendar, you can use the following keyboard keys to na
 
 * __Arrow Keys__ - navigate in all directions inside the Calendar;
 
-* __Home/End__ - navigate to the first/last day of the month;
-            
+* __Home/End__ - navigate to the first/last day of the month;            
 
-* __PageUp/PageDown__ - navigate to the next or previous month;
-            
+* __PageUp/PageDown__ - navigate to the next or previous month;            
 
-* __Ctrl & +/- or Ctrl + ArrowUp/ArrowDown__ - navigate between the Views in the Calendar ( ZoomIn and ZoomOut functionality ).
-            
+* __Ctrl & +/- or Ctrl + ArrowUp/ArrowDown__ - navigate between the Views in the Calendar (ZoomIn and ZoomOut functionality).            
 
-* __Enter__ - selects the currently focused date and closes the dropdown.
-            
+* __Enter__ - selects the currently focused date and closes the dropdown.            
 
 ## Navigation inside the TimePicker
 

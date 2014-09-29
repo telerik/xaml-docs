@@ -4,7 +4,7 @@ page_title: Theming the Pane Header
 description: Theming the Pane Header
 slug: raddocking-theming-pane-header
 tags: theming,the,pane,header
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Populating RadTileList with Tiles
 description: Populating RadTileList with Tiles 
 slug: radtilelist-getting-started-populating-with-tiles
 tags: populating,radtilelist,with,tiles,
-publish: True
+published: True
 position: 1
 ---
 

@@ -4,7 +4,7 @@ page_title: Data Binding to ADO.NET Data Service
 description: Data Binding to ADO.NET Data Service
 slug: radchart-populating-with-data-binding-to-adonet-service
 tags: data,binding,to,ado.net,data,service
-publish: True
+published: True
 position: 10
 ---
 

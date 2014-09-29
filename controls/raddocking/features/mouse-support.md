@@ -4,7 +4,7 @@ page_title: Mouse Support
 description: Mouse Support
 slug: raddocking-mouse-support
 tags: mouse,support
-publish: True
+published: True
 position: 13
 ---
 

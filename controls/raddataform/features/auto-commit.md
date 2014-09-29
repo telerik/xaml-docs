@@ -4,7 +4,7 @@ page_title: AutoCommit Settings
 description: AutoCommit Settings
 slug: raddataform-auto-commit
 tags: autocommit,settings
-publish: True
+published: True
 position: 1
 ---
 

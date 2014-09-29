@@ -4,7 +4,7 @@ page_title: Repeat Values
 description: Repeat Values
 slug: radspreadsheet-features-auto-fill
 tags: repeat,values
-publish: False
+published: False
 position: 0
 ---
 

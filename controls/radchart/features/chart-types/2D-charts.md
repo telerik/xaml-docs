@@ -4,7 +4,7 @@ page_title: 2D Charts
 description: 2D Charts
 slug: radchart-features-chart-types-2d-charts
 tags: 2d,charts
-publish: True
+published: True
 position: 0
 ---
 

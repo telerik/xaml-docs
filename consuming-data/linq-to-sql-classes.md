@@ -4,7 +4,7 @@ page_title: Using LINQ to SQL Classes
 description: Using LINQ to SQL Classes
 slug: consuming-data-linq-to-sql-classes
 tags: using,linq,to,sql,classes
-publish: False
+published: False
 position: 9
 ---
 

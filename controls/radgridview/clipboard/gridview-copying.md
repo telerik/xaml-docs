@@ -4,7 +4,7 @@ page_title: Copying
 description: Copying
 slug: gridview-copying
 tags: copying
-publish: True
+published: True
 position: 1
 ---
 

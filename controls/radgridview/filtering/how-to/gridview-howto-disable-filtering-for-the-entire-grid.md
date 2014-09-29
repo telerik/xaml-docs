@@ -4,7 +4,7 @@ page_title: Disable Filtering for the Entire Grid
 description: Disable Filtering for the Entire Grid
 slug: gridview-filtering-howto-disable-filtering-for-the-entire-grid
 tags: disable,filtering,for,the,entire,grid
-publish: True
+published: True
 position: 2
 ---
 

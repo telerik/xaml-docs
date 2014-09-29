@@ -4,7 +4,7 @@ page_title: DragReorder of Tabs
 description: DragReorder of Tabs
 slug: raddocking-features-dragreorder
 tags: dragreorder,of,tabs
-publish: True
+published: True
 position: 7
 ---
 

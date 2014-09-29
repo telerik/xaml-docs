@@ -4,7 +4,7 @@ page_title: Color Mode
 description: Color Mode
 slug: radcoloreditor-features-color-mode
 tags: color,mode
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: BarSeries
 description: BarSeries
 slug: radchartview-series-barseries
 tags: barseries
-publish: True
+published: True
 position: 0
 ---
 

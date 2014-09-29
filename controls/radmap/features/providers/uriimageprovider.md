@@ -4,7 +4,7 @@ page_title: UriImageProvider
 description: UriImageProvider
 slug: radmap-features-uriimageprovider
 tags: uriimageprovider
-publish: True
+published: True
 position: 4
 ---
 

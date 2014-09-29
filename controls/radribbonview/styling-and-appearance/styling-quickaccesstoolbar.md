@@ -4,7 +4,7 @@ page_title: Styling the QuickAccessToolbar
 description: Styling the QuickAccessToolbar
 slug: radribbonview-styling-quickaccesstoolbar
 tags: styling,the,quickaccesstoolbar
-publish: True
+published: True
 position: 5
 ---
 

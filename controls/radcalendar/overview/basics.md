@@ -4,7 +4,7 @@ page_title: Calendar Basics
 description: Calendar Basics
 slug: radcalendar-basics
 tags: calendar,basics
-publish: True
+published: True
 position: 3
 ---
 

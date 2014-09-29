@@ -4,7 +4,7 @@ page_title: RadGanttView
 description: RadGanttView
 slug: xamlflix-ganttview
 tags: radganttview
-publish: True
+published: True
 position: 5
 ---
 

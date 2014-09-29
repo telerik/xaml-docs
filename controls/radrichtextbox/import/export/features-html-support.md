@@ -4,7 +4,7 @@ page_title: HTML Support
 description: HTML Support
 slug: radrichtextbox-features-html-support
 tags: html,support
-publish: True
+published: True
 position: 2
 ---
 

@@ -4,7 +4,7 @@ page_title: Serialization
 description: Serialization
 slug: raddiagrams-features-serialization
 tags: serialization
-publish: True
+published: True
 position: 7
 ---
 

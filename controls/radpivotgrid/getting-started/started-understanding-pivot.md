@@ -4,7 +4,7 @@ page_title: Understanding RadPivotGrid
 description: Understanding RadPivotGrid
 slug: radpivotgrid-started-understanding-pivot
 tags: understanding,radpivotgrid
-publish: True
+published: True
 position: 0
 ---
 

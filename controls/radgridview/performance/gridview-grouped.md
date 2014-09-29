@@ -4,7 +4,7 @@ page_title: Grouped Scenario
 description: Grouped Scenario
 slug: gridview-performance-grouped
 tags: grouped,scenario
-publish: True
+published: True
 position: 0
 ---
 

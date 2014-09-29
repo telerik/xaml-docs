@@ -4,7 +4,7 @@ page_title: Get, Set and Clear Cell Properties
 description: Get, Set and Clear Cell Properties
 slug: radspreadsheet-features-formatting-cells
 tags: get,,set,and,clear,cell,properties
-publish: False
+published: False
 position: 3
 ---
 

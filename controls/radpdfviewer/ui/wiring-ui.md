@@ -4,7 +4,7 @@ page_title: Wiring UI
 description: Wiring UI
 slug: radpdfviewer-wiring-ui
 tags: wiring,ui
-publish: True
+published: True
 position: 0
 ---
 

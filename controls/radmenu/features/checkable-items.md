@@ -4,7 +4,7 @@ page_title: Checkable Items
 description: Checkable Items
 slug: radmenu-features-checkable-items
 tags: checkable,items
-publish: True
+published: True
 position: 8
 ---
 

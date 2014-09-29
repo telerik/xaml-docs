@@ -4,7 +4,7 @@ page_title: PaneActivationMode
 description: PaneActivationMode
 slug: raddocking-features-panes-activation-mode
 tags: paneactivationmode
-publish: True
+published: True
 position: 5
 ---
 

@@ -4,7 +4,7 @@ page_title: Document Themes
 description: Document Themes
 slug: radwordsprocessing-concepts-document-themes
 tags: document,themes
-publish: True
+published: True
 position: 3
 ---
 

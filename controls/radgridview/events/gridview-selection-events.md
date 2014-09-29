@@ -4,7 +4,7 @@ page_title: Selection
 description: Selection
 slug: gridview-selection-events
 tags: selection
-publish: True
+published: True
 position: 5
 ---
 

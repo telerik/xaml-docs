@@ -4,7 +4,7 @@ page_title: Managing Data
 description: Managing Data
 slug: radtreelistview-features-managing-data
 tags: managing,data
-publish: True
+published: True
 position: 5
 ---
 

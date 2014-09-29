@@ -4,7 +4,7 @@ page_title: Modifying a Built-In Theme
 description: Modifying a Built-In Theme
 slug: common-styling-apperance-modifying-built-in-theme
 tags: modifying,a,built-in,theme
-publish: True
+published: True
 position: 0
 site_name: Silverlight
 ---

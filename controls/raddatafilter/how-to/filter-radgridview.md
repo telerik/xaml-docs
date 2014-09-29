@@ -4,7 +4,7 @@ page_title: Filter RadGridView
 description: Filter RadGridView
 slug: raddatafilter-how-to-filter-radgridview
 tags: filter,radgridview
-publish: True
+published: True
 position: 0
 ---
 

@@ -4,7 +4,7 @@ page_title: TableRow
 description: TableRow
 slug: radwordsprocessing-model-tablerow
 tags: tablerow
-publish: True
+published: True
 position: 5
 ---
 

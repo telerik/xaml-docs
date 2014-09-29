@@ -4,7 +4,7 @@ page_title: Fields
 description: Fields
 slug: radrichtextbox-features-fields
 tags: fields
-publish: True
+published: True
 position: 0
 ---
 

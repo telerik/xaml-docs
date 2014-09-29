@@ -4,8 +4,8 @@ page_title: ItemViewModelBase
 description: ItemViewModelBase
 slug: raddiagram-data-itemviewmodels
 tags: itemviewmodelbase
-publish: True
-position: 0
+published: True
+position: 1
 ---
 
 # ItemViewModelBase

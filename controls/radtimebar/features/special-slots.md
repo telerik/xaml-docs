@@ -10,11 +10,17 @@ position: 6
 
 # Special Slots
 
-__RadTimeBar__ provides an easy way to mark certain intervals along the visible range of the control as special slots. This is done through a custom __RangeGenerator__ class which implements __ITimeRangeGenerator__ interface. This interface defines the __GetRanges()__ method. Given the current visible period, this method returns __IEnumerable<IPeriodSpan>__ - an array of __PeriodSpan__ instances each of which defines a special slot with a start and end date. E.g. new PeriodSpan(System.DateTime date, System.TimeSpan slotSpan)        
+
+
+## 
+
+__RadTimeBar__ provides an easy way to mark certain intervals along the visible range of the control as special slots. This is done through a custom __RangeGenerator__ class which implements __ITimeRangeGenerator__ interface. This interface defines the __GetRanges()__ method. Given the current visible period, this method returns __IEnumerable<IPeriodSpan>__ - an array of __PeriodSpan__ instances each of which defines a special slot with a start and end date. E.g. new PeriodSpan(System.DateTime date, System.TimeSpan slotSpan)
+        
 
 Below you can find a sample weekends generator implementation:
         
-#### __C#__	
+
+	
           using Telerik.Windows.Controls;
           using Telerik.Windows.Controls.TimeBar;
 
@@ -33,7 +39,9 @@ Below you can find a sample weekends generator implementation:
               }
           }
 
-#### __VB.NET__		
+
+
+	
           Imports Telerik.Windows.Controls
           Imports Telerik.Windows.Controls.TimeBar
 
@@ -52,8 +60,12 @@ Below you can find a sample weekends generator implementation:
 	          End Function
           End Class
 
+
+
 Using the __SpecialSlotsGenerator__ property of the __RadTimeBar__ control you can specify a custom __ITimeRangeGenerator__ instance that defines certain time intervals as special. The example below shows how you can specify a time range generator for a __RadTimeBar__ control:
-#### __XAML__	
+        
+
+	
           <telerik:RadTimeBar PeriodStart="1-Jan-2010" PeriodEnd="1-Jan-2011">
             <telerik:RadTimeBar.SpecialSlotsGenerator>
                 <example:WeekendsGenerator />
@@ -64,10 +76,15 @@ Using the __SpecialSlotsGenerator__ property of the __RadTimeBar__ control you c
             </telerik:RadTimeBar.Intervals>
           </telerik:RadTimeBar>
 
-Using the sample weekends generator above, you will get the following result:
-![Rad Timebar-features-special-slots](images/RadTimebar-features-special-slots.jpg)
 
-### See Also
+
+Using the sample weekends generator above, you will get the following result:
+        ![Rad Timebar-features-special-slots](images/RadTimebar-features-special-slots.jpg)
+
+# See Also
+
  * [Intervals Formatters]({%slug radtimebar-intervals-formatters%})
+
  * [Formatter Provider]({%slug radtimebar-features-formatter-provider%})
+
  * [Properties]({%slug radtimebar-properties%})

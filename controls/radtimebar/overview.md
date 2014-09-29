@@ -18,11 +18,9 @@ position: 0
 
 Thank you for choosing __RadTimeBar__!
 
-The __RadTimeBar__ is a time bound DataVisualization control. Its chief purpose is to allow lightweight scrolling and navigation through large periods of time. Additionally, the control exposes intuitive API which allows for both declarative and programmatic manipulation of the control.
+The __RadTimeBar__ is a time bound DataVisualization control. Its chief purpose is to allow lightweight scrolling and navigation through large periods of time. Additionally, the control exposes intuitive API which allows for both declarative and programmatic manipulation of the control. The __RadTimeBar__ control can host other controls; however its true power comes when combined with RadSparklines to show trends in large data collections. The control can be easily combined with other controls such as RadChart, RadGridView, RadBulletGraph, etc. to create rich and powerful dashboards.
 
-    The __RadTimeBar__ control can host other controls; however its true power comes when combined with RadSparklines to show trends in large data collections. The control can be easily combined with other controls such as RadChart, RadGridView, RadBulletGraph, etc. to create rich and powerful dashboards.
-
->In order to use __RadTimeBar__control in your projects you have to add references to __Telerik.Windows.Controls.dll, Telerik.Windows.Controls.DataVisualization.dll__and__Telerik.Windows.Data.dll.__
+>In order to use __RadTimeBar__ control in your projects you have to add references to __Telerik.Windows.Controls.dll, Telerik.Windows.Controls.DataVisualization.dll__ and __Telerik.Windows.Data.dll.__
 
 A sample __TimeBar__ definition may look like this:
 

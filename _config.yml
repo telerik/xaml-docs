@@ -114,10 +114,8 @@ navigation:
         position: 90
     "*how-to":
         title: How To
-        position: 100
     "*howto":
         title: How To
-        position: 100
     "*events":
         title: Events
         position: 80
@@ -162,6 +160,13 @@ navigation:
         title: RadWatermarkTextBox
     controls/radwindow:
         title: RadWindow
+    controls/radcombobox/end-user-capabilities:
+        title: End-User Capabilities
+        position: 9
+    controls/radcombobox/features:
+        position: 7
+    controls/radcombobox/populating-with-data:
+        position: 8
 ## X3 Controls End
 
 ## X2 Controls Start
@@ -306,9 +311,9 @@ navigation:
         position: 4
 ## Centaur Controls End
 
-## X2 Controls Start
+## X1 Controls Start
 
-## X2 Controls End
+## X1 Controls End
 
 ## Api Reference Start
     "*system.windows":

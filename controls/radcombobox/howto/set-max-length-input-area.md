@@ -10,8 +10,6 @@ position: 7
 
 # Set MaxLength Property of the Input Area
 
-
-
 The purpose of this tutorial is to show you how to set the __MaxLength__ property of the [InputArea]({%slug radcombobox-general-information-visual-structure%}) of [editable]({%slug radcombobox-features-edit-modes%})__RadComboBox__(__RadComboBox__'s __IsEditable__ property is set to __True__).
 
 It is possible to set the MaxLength property of the InputArea with two different approaches: 
@@ -36,9 +34,7 @@ The next code snippet shows how to set the MaxLength property of the TextBox in 
 	        </Style>
 	    </telerik:RadComboBox.Resources>
 	</telerik:RadComboBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Using an Attached property
 
@@ -66,9 +62,7 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	    {
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -87,9 +81,7 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	    Private Shared Sub OnMaxLengthChanged(ByVal obj As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
 	    End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 In the __OnMaxLengthChanged()__ event handler you should perform the following step.
 
@@ -97,7 +89,7 @@ In the __OnMaxLengthChanged()__ event handler you should perform the following s
 
 * Get the __PART_EditableTextBox__ element from its template.
 
-* The __PART_EditableTextBox__is a __TextBox__and you can easily set its __MaxLength__ property.
+* The __PART_EditableTextBox__ is a __TextBox__ and you can easily set its __MaxLength__ property.
 
 #### __C#__
 
@@ -133,7 +125,7 @@ In the __OnMaxLengthChanged()__ event handler you should perform the following s
 	            } );
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -162,9 +154,7 @@ In the __OnMaxLengthChanged()__ event handler you should perform the following s
 	       End Function)
 	    End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally set the property in XAML:
 
@@ -172,9 +162,7 @@ Finally set the property in XAML:
 
 {{region radcombobox-howto-set-max-length-input-area_4}}
 	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.MaxLength="20"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipNote that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.
 

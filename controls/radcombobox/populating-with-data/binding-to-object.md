@@ -10,8 +10,6 @@ position: 4
 
 # Binding to Object
 
-
-
 To bind the __RadComboBox__ to a collection of business objects, you should use its __ItemsSource__ property and define the __DataTemplate__ that is needed to display the data from the collection. If you want the changes to the collection to be automatically reflected to the __RadComboBoxItems__, the collection should implement the __INotifyCollectionChanged__ interface, as well as your business object to implement the __INotifyPropertyChanged__ interface.
 
 The following tutorial will guide you how to bind a __RadComboBox__ to a collection of business objects. Two cases will be shown:
@@ -30,9 +28,7 @@ In order to bind a __RadComboBox__ to a collection of business objects, you shou
 
 {{region radcombobox-populating-with-data-binding-to-object_0}}
 	<telerik:RadComboBox Width="200" x:Name="radComboBox"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Create a new business object named __Agency__. Its structure is shown on the next code-snippet.
 
@@ -66,9 +62,7 @@ In order to bind a __RadComboBox__ to a collection of business objects, you shou
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -109,9 +103,7 @@ In order to bind a __RadComboBox__ to a collection of business objects, you shou
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 The __RadComboBox__ control will be bound to an __ObservableCollection__ of __Agency__ objects.
 
@@ -167,9 +159,7 @@ The __RadComboBox__ control will be bound to an __ObservableCollection__ of __Ag
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -218,9 +208,7 @@ The __RadComboBox__ control will be bound to an __ObservableCollection__ of __Ag
 	        End Get
 	    End Property
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 * Declare the __AgencyViewModel__ as a resource in your XAML.
 
@@ -230,9 +218,7 @@ The __RadComboBox__ control will be bound to an __ObservableCollection__ of __Ag
 	<UserControl.Resources>
 	    <example:AgencyViewModel x:Key="DataSource"/>
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Update your __RadComboBox__ declaration and its __ItemsSource__ property.
 
@@ -240,9 +226,7 @@ The __RadComboBox__ control will be bound to an __ObservableCollection__ of __Ag
 
 {{region radcombobox-populating-with-data-binding-to-object_6}}
 	<telerik:RadComboBox Width="200" x:Name="radComboBox" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Using Custom ItemTemplate
 
@@ -276,9 +260,7 @@ The final step is to create a custom __DataTemplate__ and set it to the __RadCom
 	        </Grid>
 	    </DataTemplate>
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Update your __RadComboBox__ declaration and set its __ItemTemplate__ property like in the example below.
 
@@ -286,41 +268,29 @@ The final step is to create a custom __DataTemplate__ and set it to the __RadCom
 
 {{region radcombobox-populating-with-data-binding-to-object_8}}
 	<telerik:RadComboBox Width="200" x:Name="radComboBox" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" ItemTemplate="{StaticResource ComboBoxCustomTemplate}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Run your demo, the end result is shown on the snapshot below.
 
-
-
-
-         
-      ![](images/RadComboBox_PopulatingWithData_BindingToObject_020.png)
+![](images/RadComboBox_PopulatingWithData_BindingToObject_020.png)
 
 ## Using DisplayMemberPath
 
 Instead of creating a custom __ItemTemplate__, an alternative approach is to use the __DisplayMemberPath__ property. Its purpose is to get or set a path to a value on the source object to serve as the visual representation of the object.
 
-For example, instead of setting the __ItemTemplate__, set the __RadComboBox__'s __DisplayMemberPath__ property to point the __Name__property of the __Agency__ object.
+For example, instead of setting the __ItemTemplate__, set the __RadComboBox__'s __DisplayMemberPath__ property to point the __Name__ property of the __Agency__ object.
 
 #### __XAML__
 
 {{region radcombobox-populating-with-data-binding-to-object_9}}
 	<telerik:RadComboBox Width="200" x:Name="radComboBox" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" DisplayMemberPath="Name"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 The end result is shown on the next snapshot.
 
+![](images/RadComboBox_PopulatingWithData_BindingToObject_030.png)
 
-
-
-         
-      ![](images/RadComboBox_PopulatingWithData_BindingToObject_030.png)
-
->If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the item would be set to the value returned by the__ToString()__ method of the business object.
+>If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the item would be set to the value returned by the __ToString()__ method of the business object.
 
 # See Also
 

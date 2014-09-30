@@ -67,21 +67,7 @@ __Example 1__ and __Example 2__ demonstrate how to set the initial size of the t
 {{region radimageeditor-howto-use-crop_0}}
 		Dim cropTool As New CropTool()
 		cropTool.InitialSize = New Size(150, 150)
-		#End Region
-	End Sub
-	Private Sub CreateToolFixedSize()
-		#Region "radimageeditor-howto-use-crop_1"
-		Dim tool As New CropTool()
-		tool.FixedSize = New Size(200, 100)
-		#End Region
-	End Sub
-	Private Sub CreateToolAspectRatio()
-		#Region "radimageeditor-howto-use-crop_2"
-		Dim tool As New CropTool()
-		tool.AspectRatio = 0.5
-		#End Region
-	End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -115,15 +101,7 @@ __Example 3__ and __Example 4__ show how to set fixed size in XAML and code.
 {{region radimageeditor-howto-use-crop_1}}
 		Dim tool As New CropTool()
 		tool.FixedSize = New Size(200, 100)
-		#End Region
-	End Sub
-	Private Sub CreateToolAspectRatio()
-		#Region "radimageeditor-howto-use-crop_2"
-		Dim tool As New CropTool()
-		tool.AspectRatio = 0.5
-		#End Region
-	End Sub
-	End Class
+	{{endregion}}
 
 
 
@@ -160,9 +138,7 @@ The calculated ratio value corresponds to the width of the adorner divided by it
 {{region radimageeditor-howto-use-crop_2}}
 		Dim tool As New CropTool()
 		tool.AspectRatio = 0.5
-		#End Region
-	End Sub
-	End Class
+{{endregion}}
 
 
 

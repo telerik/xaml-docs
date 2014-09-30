@@ -18,10 +18,10 @@ __RadImageEditor__ comes with a predefined UI out of the box – __RadImageEdito
 
 The tools and commands that the editor can execute are __ImageToolItems__. They are grouped into sections depending on the modification they perform on the image. In the default template, these __ImageToolSections__ can be minimized and maximized using RadExpander. Moreover, each __ImageToolItem__ specifies:
 
-* __Command__property – a command which will be executed when you select the ImageToolItem, e.g. CropCommand.
+* __Command__ property – a command which will be executed when you select the ImageToolItem, e.g. CropCommand.
 When it comes to image editing tools which have settings and a live preview, they are passed as parameters to the ExecuteToolCommand. The values of the parameters of these tools are obtained from their SettingsUI, which are shown in a SettingsContainer on the right of the image.
 
-* __ImageKey__property - sets the image that will be used as an icon in the ImageToolItem. Telerik.Windows.Controls.ImageEditor contains images mapped to the following ImageKeys:
+* __ImageKey__ property - sets the image that will be used as an icon in the ImageToolItem. Telerik.Windows.Controls.ImageEditor contains images mapped to the following ImageKeys:
 
 * Blur
 

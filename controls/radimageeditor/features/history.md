@@ -26,7 +26,7 @@ Undoing the effect of a command can be done as follows:
 
 
 
-or if you are using __RadImageEditorUI__:
+Оr if you are using __RadImageEditorUI__:
 
 #### __C#__
 
@@ -40,7 +40,7 @@ Redo can be executed in the same way.
 
 Even though image editing is rather memory intensive, you should not have any worries with RadImageEditor. Instead of keeping every step in the history stack as a copy of the image, RadImageEditor uses an adaptive cache scheme – it retains images along with the commands and their arguments. When memory depletes, it can delete some images, but can recreate them later from previous history points.
 
-You have control over the maximum amount of memory taken by the image history through the __RadImageEditor.History.MaximumMemoryBufferSize__property. The default value is {% if site.site_name == 'Silverlight' %}256 MB for Silverlight{% endif %}{% if site.site_name == 'WPF' %}512 MB for WPF{% endif %}.
+You have control over the maximum amount of memory taken by the image history through the __RadImageEditor.History.MaximumMemoryBufferSize__ property. The default value is {% if site.site_name == 'Silverlight' %}256 MB for Silverlight{% endif %}{% if site.site_name == 'WPF' %}512 MB for WPF{% endif %}.
 
 Other useful properties that the __ImageHistory__ object, which RadImageEditor exposes through the History property, has are:
 
@@ -72,7 +72,7 @@ For example, if you subscribe to the CurrentImageChanged in the following way, y
 
 
 
-and change the value of some boolean property in the handler of the event:
+Аnd change the value of some Boolean property in the handler of the event:
 
 #### __C#__
 

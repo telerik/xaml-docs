@@ -14,7 +14,7 @@ position: 2
 
 ## 
 
-__RadImageEditor__can load and save images in different file formats. This functionality is implemented through format providers. The format providers shipped with the control are:
+__RadImageEditor__ can load and save images in different file formats. This functionality is implemented through format providers. The format providers shipped with the control are:
         
 
 * __PngFormatProvider__– allows import and export from/to PNG;
@@ -26,7 +26,7 @@ __RadImageEditor__can load and save images in different file formats. This funct
 * __JpegFormatProvider__– allows import only from JPEG/JPG.
           
 
-As __RadImageEditor__is highly extensible, you can create your own format providers by implementing the __IImageFormatProvider__interface. This approach is illustrated in a demo attached to [this blog post](http://blogs.telerik.com/blogs/posts/11-07-20/under-the-hood-of-radimageeditor-for-silverlight-and-wpf.aspx), showing how a format provider that supports both import and export from JPEG can be developed and plugged in RadImageEditor’s architecture.
+As __RadImageEditor__ is highly extensible, you can create your own format providers by implementing the __IImageFormatProvider__ interface. This approach is illustrated in a demo attached to [this blog post](http://blogs.telerik.com/blogs/posts/11-07-20/under-the-hood-of-radimageeditor-for-silverlight-and-wpf.aspx), showing how a format provider that supports both import and export from JPEG can be developed and plugged in RadImageEditor’s architecture.
         
 
 The format providers can load images from streams and bytes just like this:
@@ -136,7 +136,7 @@ You can use the available format providers to export the images as well.  Here i
 
 
 
-One thing to note here is that the last applied change may not be commited (which normally happens when you press Enter or change the current tool).
+One thing to note is that the last applied change may not be committed (which normally happens when you press Enter or change the current tool).
 
 To commit this last change, use the following method:
 

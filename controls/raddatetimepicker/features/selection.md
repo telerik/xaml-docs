@@ -10,11 +10,9 @@ position: 6
 
 # Selection
 
-
-
 The __RadDateTimePicker__ lets you select only single values - a single date, month or year from the Calendar and/or a single time item from the Clock.
 
->You can customize the selection mode in the calendar view via the __DateSelectionMode__ property. The default behavior is that you can choose from dates. [Read more here](745AAE86-4E0D-4617-98F7-B686CFB031B1)
+>You can customize the selection mode in the calendar view via the __DateSelectionMode__ property. The default behavior is that you can choose from dates. [Read more here]({%slug raddatetimepicker-features-date-selection-modes%})
 
 ## Selecting an Item Declaratively and Programmatically 
 
@@ -32,25 +30,19 @@ The following properties hold the information about the selection in the __RadDa
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker"
 	                           SelectedDate="11/15/2010"
 	                           SelectedTime="10:00"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region raddatetimepicker-features-selection_1}}
 	this.radDateTimePicker.SelectedValue = new DateTime( 2010, 1, 5, 10, 0, 0 );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region raddatetimepicker-features-selection_2}}
 	Me.radDateTimePicker.SelectedValue = New DateTime(2010, 1, 5, 10, 0, 0)
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Restricting the date item's selection
 
@@ -66,15 +58,9 @@ In the __RadDateTimePicker's__ calendar you can restrict the selectable items by
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" 
 	                           SelectableDateStart="8/10/2010"
 	                           SelectableDateEnd="10/10/2010"/>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/dateTimePicker_features_selection_010.png)
+![](images/dateTimePicker_features_selection_010.png)
 
 The date items which are after the __SelectableDateEnd__ will still be visible but you will not be able to select any of them. 
 

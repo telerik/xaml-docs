@@ -14,7 +14,7 @@ position: 1
 
 ## 
 
-__RadImageEditor__control encapsulates the entire image editing logic. In order to use it in your application you have to add references to:
+__RadImageEditor__ control encapsulates the entire image editing logic. In order to use it in your application you have to add references to:
 
 * Telerik.Windows.Controls;
 

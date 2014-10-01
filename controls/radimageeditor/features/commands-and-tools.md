@@ -42,7 +42,7 @@ Available __Commands__:
 
 * ExecuteToolCommand
 
-Available__Tools__:
+Available __Tools__:
         
 
 * CropTool
@@ -65,8 +65,7 @@ Available__Tools__:
 
 * ContrastTool
 
->tipAll tools are located in the Telerik.Windows.Media.Imaging.Tools namespace and can be created in XAML.
-          __xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"__
+>tipAll tools are located in the Telerik.Windows.Media.Imaging.Tools namespace and can be created in XAML.<br/> __xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"__
 
-The effects in __RadImageEditor__that are implemented using pixel shaders enable the use of hardware acceleration whenever the platform supports it. This result in most effects being applied almost instantly, enabling realtime preview with sliders for the parameter values. You can easily create a command using your own custom shader by implementing EffectCommandBase. This approach is shown in [this blog post](http://blogs.telerik.com/blogs/posts/11-07-20/under-the-hood-of-radimageeditor-for-silverlight-and-wpf.aspx) with a sample implementation of a blur command.
+The effects in __RadImageEditor__ that are implemented using pixel shaders enable the use of hardware acceleration whenever the platform supports it. This result in most effects being applied almost instantly, enabling real-time preview with sliders for the parameter values. You can easily create a command using your own custom shader by implementing __EffectCommandBase__. This approach is shown in [this blog post](http://blogs.telerik.com/blogs/posts/11-07-20/under-the-hood-of-radimageeditor-for-silverlight-and-wpf.aspx) with a sample implementation of a blur command.
         

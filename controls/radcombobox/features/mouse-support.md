@@ -10,7 +10,7 @@ position: 6
 
 # Mouse Support
 
-
+This article explains the mouse support of the control.
 
 ## Using MouseWheel
 
@@ -20,7 +20,7 @@ __RadComboBox__ responses to the mouse wheel scrolling. There are two possible c
 
 * When the dropdown of the __RadComboBox__ is __opened__, then rotating the mouse wheel will __not change__ the highlighted item.
 
->Note that in order for the __RadComboBox__ to response to the mouse wheel scrolling, the mouse cursor should be __over__the __combo box__.
+>Note that in order for the __RadComboBox__ to response to the mouse wheel scrolling, the mouse cursor should be __over__ the __combo box__.
 
 ## Disable MouseWheel Scrolling
 
@@ -30,9 +30,7 @@ In order to disable the mouse wheel scrolling, you should set the __RadComboBox_
 
 {{region radcombobox-features-mouse-support_0}}
 	<telerik:RadComboBox x:Name="radComboBox" IsMouseWheelEnabled="False"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

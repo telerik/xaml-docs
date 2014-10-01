@@ -10,19 +10,17 @@ position: 6
 
 # Enable\Disable RadComboBoxItems
 
+The purpose of this tutorial is to show you how to enable and disable __RadComboBoxItems__. The following sections are included:
 
+* [Enable\disable RadComboBox with static data](#enabledisable-radcombobox-with-static-data)
 
-The purpose of this tutorial is to show you how to enable and disable __RadComboBoxItem__s. The following sections are included:
+* [Enable\disable items using ItemContainerStyle](#enabledisable-items-using-itemcontainerstyle)
 
-* [Enable\disable RadComboBox with static data](#Enable\Disable_RadComboBox_with_Static_Data)
+* [Enable\disable items using ItemContainerStyleSelector](#enabledisable-items-using-itemcontainerstyleselector)
 
-* [Enable\disable items using ItemContainerStyle](#Enable\Disable_Items_Using_ItemContainerStyle)
+* [Using MVVM approach and ContainerBindingCollection](#using-mvvm-approach-and-containerbindingcollection)
 
-* [Enable\disable items using ItemContainerStyleSelector](#Enable\disable_Items_Using_ItemContainerStyleSelector)
-
-* [Using MVVM approach and ContainerBindingCollection](#Using_MVVM_Approach_and_ContainerBindingCollection)
-
-* [Using style binding](#Using_Style_Binding)
+* [Using style binding](#using-style-binding)
 
 ## Enable\Disable RadComboBox with Static Data
 
@@ -36,11 +34,11 @@ In the simplest scenario you will have a __RadComboBox__ populated with static d
 	    <telerik:RadComboBoxItem Content="Brickell Avenue" />
 	    <telerik:RadComboBoxItem Content="Downtown Miami" />
 	</telerik:RadComboBox>
-	{{endregion}}
+{{endregion}}
 
 
 
-The __RadComboBox__ and __RadComboBoxItem__ classes expose a property named __IsEnabled__. Set this property to __False__, when you want to disable either the whole __RadComboBox__ or specific __RadComboBoxItem__s. The next code-snippet shows you how to do that.
+The __RadComboBox__ and __RadComboBoxItem__ classes expose a property named __IsEnabled__. Set this property to __False__, when you want to disable either the whole __RadComboBox__ or specific __RadComboBoxItems__. The next code-snippet shows you how to do that.
 
 #### __XAML__
 
@@ -50,21 +48,15 @@ The __RadComboBox__ and __RadComboBoxItem__ classes expose a property named __Is
 	    <telerik:RadComboBoxItem Content="Brickell Avenue" />
 	    <telerik:RadComboBoxItem Content="Downtown Miami" IsEnabled="False"/>
 	</telerik:RadComboBox>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadComboBox_HowTo_EnableDisableItems_010.png)
+![](images/RadComboBox_HowTo_EnableDisableItems_010.png)
 
 ## Enable\Disable Items Using ItemContainerStyle
 
-Using __RadComboBox__with static data is the simplest scenario. However, in most of the cases you will have a __RadComboBox__[populated with a collection of business objects]({%slug radcombobox-populating-with-data-binding-to-object%}). In this case you have no other options except for using either the __ItemContainerStyle__ or the __ItemContainerStyleSelector__.
+Using __RadComboBox__ with static data is the simplest scenario. However, in most of the cases you will have a __RadComboBox__ [populated with a collection of business objects]({%slug radcombobox-populating-with-data-binding-to-object%}). In this case you have no other options except for using either the __ItemContainerStyle__ or the __ItemContainerStyleSelector__.
 
-The next example shows you how to set the __ItemContainerStyle__of a __RadComboBox__.
+The next example shows you how to set the __ItemContainerStyle__ of a __RadComboBox__.
 
 #### __XAML__
 
@@ -74,22 +66,16 @@ The next example shows you how to set the __ItemContainerStyle__of a __RadComboB
 	        <Setter Property="IsEnabled" Value="False"/>
 	    </Style>
 	</UserControl.Resources>
-	....
+	 ...
 	<telerik:RadComboBox x:Name="radComboBox"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Items}"
 	    DisplayMemberPath="Text"
 	    ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-	{{endregion}}
+{{endregion}}
 
+Note that in this case all __RadComboBoxItems__ will be disabled. However, you have the ability to determine which items to be disabled based on your custom logic. [Check out](#enabledisable-items-using-itemcontainerstyleselector) the next section to see the solution.
 
-
-Note that in this case all __RadComboBoxItem__s will be disabled. However, you have the ability to determine which items to be disabled based on your custom logic. [Check out](#Enable\disable_Items_Using_ItemContainerStyleSelector) the next section to see the solution.
-
-
-
-
-         
-      ![](images/RadComboBox_HowTo_EnableDisableItems_020.png)
+![](images/RadComboBox_HowTo_EnableDisableItems_020.png)
 
 ## Enable\Disable Items Using ItemContainerStyleSelector
 
@@ -114,26 +100,22 @@ The next example demonstrates you how to achieve this.
 	    <example:EnableDisableSelector x:Key="StyleSelector" EnableStyle="{StaticResource EnableStyle}"
 	        DisableStyle="{StaticResource DisableStyle}"/>
 	</UserControl.Resources>
-	....
+	 ...
 	<telerik:RadComboBox x:Name="radComboBox"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Items}"
 	    DisplayMemberPath="Text"
 	    ItemContainerStyleSelector="{StaticResource StyleSelector}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 And the result is that every odd item is disabled.
 
+![](images/RadComboBox_HowTo_EnableDisableItems_030.png)
 
+## Using MVVM Approach and ContainerBindingCollection
 
-
-         
-      ![](images/RadComboBox_HowTo_EnableDisableItems_030.png)
-
-## Using MVVM Approach and ContainerBindingCollection{% if site.site_name == 'Silverlight' %}
-
-Using __ItemContainerStyle__ is a good solution, however, it is not the best. Imagine that your business object has a boolean property named __IsEnabled__. Even more flexible solution is to directly bind the __RadComboBoxItem__'s __IsEnabled__ property to the __IsEnabled__ property exposed by your domain object. You can do this through the __ContainerBindingCollection__ class exposed by the Telerik RadControls' API.{% endif %}
+{% if site.site_name == 'Silverlight' %}
+Using __ItemContainerStyle__ is a good solution, however, it is not the best. Imagine that your business object has a boolean property named __IsEnabled__. Even more flexible solution is to directly bind the __RadComboBoxItem__'s __IsEnabled__ property to the __IsEnabled__ property exposed by your domain object. You can do this through the __ContainerBindingCollection__ class exposed by the Telerik RadControls' API.
+{% endif %}
 
 #### __XAML__
 
@@ -148,25 +130,23 @@ Using __ItemContainerStyle__ is a good solution, however, it is not the best. Im
 	        <TextBlock Text="{Binding Text}"/>
 	    </DataTemplate>
 	</UserControl.Resources>
-	....
+	 ...
 	<telerik:RadComboBox x:Name="radComboBox"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Items}"
 	    ItemTemplate="{StaticResource CustomItemTemplate}"/>
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
+In this case every even item is disabled and the logic about that is enclosed in the model.
 
-In this case every even item is disabled and the logic about that is enclosed in the model.{% endif %}{% if site.site_name == 'Silverlight' %}
+![](images/RadComboBox_HowTo_EnableDisableItems_040.png)
+{% endif %}
 
+## Using Style Binding
 
-
-
-         
-      ![](images/RadComboBox_HowTo_EnableDisableItems_040.png){% endif %}
-
-## Using Style Binding{% if site.site_name == 'WPF' %}
-
-Using __ItemContainerStyle__ is a good solution, however, it is not the best. Imagine that your business object has a boolean property named __IsEnabled__. Even more flexible solution is to directly bind the __RadComboBoxItem__'s __IsEnabled__ property to the __IsEnabled__ property exposed by your domain object. You can do this through __style binding__like in the example below:{% endif %}
+{% if site.site_name == 'WPF' %}
+Using __ItemContainerStyle__ is a good solution, however, it is not the best. Imagine that your business object has a boolean property named __IsEnabled__. Even more flexible solution is to directly bind the __RadComboBoxItem__'s __IsEnabled__ property to the __IsEnabled__ property exposed by your domain object. You can do this through __style binding__ like in the example below:
+{% endif %}
 
 #### __XAML__
 
@@ -176,21 +156,18 @@ Using __ItemContainerStyle__ is a good solution, however, it is not the best. Im
 	        <Setter Property="IsEnabled" Value="{Binding IsEnabled}"/>
 	    </Style>
 	</UserControl.Resources>
-	....<telerik:RadComboBox x:Name="radComboBox"
+	 ...
+	<telerik:RadComboBox x:Name="radComboBox"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Items}"
 	    ItemTemplate="{StaticResource CustomItemTemplate}"
 	    ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'WPF' %}
+Two things should be mentioned here. First, note how the __IsEnabled__ property is bound in the __Style__. Second, the declared __Style__ is set as a __ItemContainerStyle__ of the __RadComboBox__. The result is shown on the image below.
 
-Two things should be mentioned here. First, note how the __IsEnabled__ property is bound in the __Style__. Second, the declared __Style__ is set as a __ItemContainerStyle__ of the __RadComboBox__. The result is shown on the image below.{% endif %}{% if site.site_name == 'WPF' %}
-
-
-
-
-         
-      ![](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png){% endif %}
+![](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
+{% endif %}
 
 # See Also
 

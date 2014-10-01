@@ -10,10 +10,6 @@ position: 1
 
 # Declaratively
 
-
-
-## 
-
 This tutorial will walk you through the common task of populating __RadComboBox__ with __RadComboBoxItems__ declaratively. 
 
 Here is a regular __RadComboBox__ declaration without items:
@@ -23,17 +19,11 @@ Here is a regular __RadComboBox__ declaration without items:
 {{region radcombobox-populating-with-data-declaratively_0}}
 	<telerik:RadComboBox x:Name="radComboBox" Width="200">
 	</telerik:RadComboBox>
-	{{endregion}}
+{{endregion}}
 
+![](images/RadComboBox_PopulatingWithData_Declaratively_010.png)
 
-
-
-
-
-         
-      ![](images/RadComboBox_PopulatingWithData_Declaratively_010.png)
-
-In order to add combobox items you need to use the __RadComboBox__'s __Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadComboBoxItem__s. For example, insert the following lines to the declaration of your __RadComboBox__ and see how it will change.
+In order to add combobox items you need to use the __RadComboBox__'s __Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadComboBoxItems__. For example, insert the following lines to the declaration of your __RadComboBox__ and see how it will change.
 
 #### __XAML__
 
@@ -51,15 +41,9 @@ In order to add combobox items you need to use the __RadComboBox__'s __Items__ p
 	    <telerik:RadComboBoxItem Content="Medley" />
 	    <telerik:RadComboBoxItem Content="Pinecrest" />
 	</telerik:RadComboBox>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadComboBox_PopulatingWithData_Declaratively_020.png)
+![](images/RadComboBox_PopulatingWithData_Declaratively_020.png)
 
 >tipConsider declaring combobox items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 

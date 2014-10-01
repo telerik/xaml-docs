@@ -12,42 +12,46 @@ position: 0
 
 
 
-> There is a required precedence of the __TimeBar's__ properties. This means that the __Start Time__ should always be set before the __End Time__. A required precedence of Properties is given in the code snippet below. 
-{{region radtimebar-properties_0}}
+## __There is a required precedence of the TimeBar's properties. This means that the Start Time should always be set before the End Time. A required precedence of Properties is given in the code snippet below.____{{region radtimebar-properties_0}}
 	<telerik:RadTimeBar x:Name="timeBar" Width="950" Height="250"      
-						PeriodStart="01-01-2011"
-						PeriodEnd="01/01/2012"
-						VisiblePeriodStart="01/01/2011"
-						VisiblePeriodEnd="06/01/2011"
-						SelectionStart="02/01/2011"
-						SelectionEnd="03/01/2011"
-						MinSelectionRange="28.00:00:00"                            
-						MaxSelectionRange="31.00:00:00"                            
-						IsSnapToIntervalEnabled="True" >
-		<telerik:RadTimeBar.Intervals>
-			<telerik:MonthInterval />
-		</telerik:RadTimeBar.Intervals>
-	</telerik:RadTimeBar>
-{{endregion}} 
-	
-__PeriodStart__ - gets or sets the timeline's start date
-__PeriodEnd__ - gets or sets the timeline's end data
-__VisiblePeriodStart__ - gets or sets the currently visible start date
-__VisiblePeriodEnd__ - gets or sets the the currently visible end date
-__Intervals__ - determines the displayed time intervals
+	                    PeriodStart="01-01-2011"
+	                    PeriodEnd="01/01/2012"
+	                    VisiblePeriodStart="01/01/2011"
+	                    VisiblePeriodEnd="06/01/2011"
+	                    SelectionStart="02/01/2011"
+	                    SelectionEnd="03/01/2011"
+	                    MinSelectionRange="28.00:00:00"                            
+	                    MaxSelectionRange="31.00:00:00"                            
+	                    IsSnapToIntervalEnabled="True" >
+	            <telerik:RadTimeBar.Intervals>
+	                <telerik:MonthInterval />
+	            </telerik:RadTimeBar.Intervals>
+	        </telerik:RadTimeBar>
+	{{endregion}}____PeriodStart____PeriodEnd____VisiblePeriodStart____VisiblePeriodEnd____Intervals__
 
 Currently the supported intervals are:
-*         Century;
-*         Decade;
-*         Year;
-*         Quarter;
-*         Month;
-*         Week;
-*         Day;
-*         Hour;
-*         Minute;
-*         Second;
-*         Millisecond;
+
+·         Century;
+
+·         Decade;
+
+·         Year;
+
+·         Quarter;
+
+·         Month;
+
+·         Week;
+
+·         Day;
+
+·         Hour;
+
+·         Minute;
+
+·         Second;
+
+·         Millisecond;
 
 A sample Intervals section may look like this:
 

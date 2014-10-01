@@ -10,29 +10,23 @@ position: 4
 
 # Styling the Clock
 
-
-
 To style the clock in your __RadDateTimePicker__ you can do the following:
 
 * Create a __Style__ for it and set it to the __ClockStyle__ property of the __RadDateTimePicker__. To learn how to create a style that targets the __RadCalendar__ control read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}).
 
-* Modify the default resources for the __DateTimePickerClock__, that are generated together with the __RadDateTimePicker's____Style__.
+* Modify the default resources for the __DateTimePickerClock__, that are generated together with the __RadDateTimePicker's Style__.
 
->tipTo learn how to generate the default __Style__ for the __RadDateTimePicker__ read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}). To learn how to modify the layout of the calendar, look [here]({%slug raddatetimepicker-styling-calendar%}).{% if site.site_name == 'Silverlight' %}
+>tipTo learn how to generate the default __Style__ for the __RadDateTimePicker__ read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}). To learn how to modify the layout of the calendar, look [here]({%slug raddatetimepicker-styling-calendar%}).
 
-This topic will focus on the second approach.{% endif %}
+This topic will focus on the second approach.
 
-## Modifying the default resources{% if site.site_name == 'Silverlight' %}
+## Modifying the default resources
 
-In order to see these resource you have to first generate the default style for the __RadDateTimePicker__ control. To learn how read this [topic]({%slug raddatetimepicker-styling-raddatetimepicker%}).{% endif %}{% if site.site_name == 'Silverlight' %}
+In order to see these resource you have to first generate the default style for the __RadDateTimePicker__ control. To learn how read this [topic]({%slug raddatetimepicker-styling-raddatetimepicker%}).
 
-Modifying some of the resources generated for the __RadDateTimePicker's__ style will allow you to change the appearance of the clock. Here are some of the resources: {% endif %}{% if site.site_name == 'Silverlight' %}
+Modifying some of the resources generated for the __RadDateTimePicker's__ style will allow you to change the appearance of the clock. Here are some of the resources:
 
-
-
-
-         
-      ![](images/dateTimePicker_styling_styling_the_clock_view_010.png){% endif %}
+![](images/dateTimePicker_styling_styling_the_clock_view_010.png)
 
 * __HeaderOuterBorder__ - represents the __RadDateTimePicker__ content's header outer border brush.
 
@@ -54,23 +48,15 @@ Modifying some of the resources generated for the __RadDateTimePicker's__ style 
 
 * __ClockItemsMargin__ - is the __Thickness__ applied to each item in the clock view.
 
-* __RadClockDefaultStyleKey__ - defines the clock's default style which includes some of the above properties.{% if site.site_name == 'Silverlight' %}
+* __RadClockDefaultStyleKey__ - defines the clock's default style which includes some of the above properties.
 
-Here is an example of the above resources modified:{% endif %}{% if site.site_name == 'Silverlight' %}
+Here is an example of the above resources modified:
 
+![](images/dateTimePicker_styling_styling_the_clock_view_020.png)
 
+Here is the result:
 
-
-         
-      ![](images/dateTimePicker_styling_styling_the_clock_view_020.png){% endif %}{% if site.site_name == 'Silverlight' %}
-
-Here is the result:{% endif %}{% if site.site_name == 'Silverlight' %}
-
-
-
-
-         
-      ![](images/dateTimePicker_styling_styling_the_clock_view_030.png){% endif %}
+![](images/dateTimePicker_styling_styling_the_clock_view_030.png)
 
 # See Also
 

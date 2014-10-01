@@ -10,21 +10,13 @@ position: 4
 
 # Get a Grid Like Dropdown
 
-
-
-## 
-
 The purpose of this tutorial is to show you how to create a custom __ItemTemplate__ to display multiple "columns" of data in the drop-down for each item. 
 
 >Note, that this tutorial won't show you how to create a grid like drop-down with column __Headers__. __RadComboBox__ does not support this out of the box. You should modify the control template to add heading for the columns. However, this is not very flexible, because you will have to provide a different control template (with different headings) for each combo box instance that has different columns in its drop-down. This feature will be included in some of the next control's release dates.
 
 The final result from this tutorial should look like the snapshot below.
 
-
-
-
-         
-      ![](images/RadComboBox_HowTo_GridLikeDropDown_010.png)
+![](images/RadComboBox_HowTo_GridLikeDropDown_010.png)
 
 >Before proceeding further with this tutorial, be sure that you are familiar with how to [bind a RadComboBox to a collection of objects]({%slug radcombobox-populating-with-data-binding-to-object%}).
 
@@ -57,9 +49,7 @@ The final result from this tutorial should look like the snapshot below.
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -98,9 +88,7 @@ The final result from this tutorial should look like the snapshot below.
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 The __Dealer__ class is extremely simple. It has only properties which describe it - __Name__, __Country__, __Phone__.
 
@@ -133,9 +121,7 @@ The __Dealer__ class is extremely simple. It has only properties which describe 
 	        this.dealers.Add( new Dealer( "Germany Auto-Osa Ericsson", "Germany", "04-444444" ) );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -163,9 +149,7 @@ The __Dealer__ class is extremely simple. It has only properties which describe 
 	        Me.m_dealers.Add(New Dealer("Germany Auto-Osa Ericsson", "Germany", "04-444444"))
 	    End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 The class __DealerViewModel__ is doing nothing special except for initializing on demand a collection of __Dealer__ objects. There is a helper method, doing this work.
 
@@ -186,9 +170,7 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 	
 	    </StackPanel>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 * The final step is to declare a custom __DataTemplate__ which defines the grid like drop-down of the __RadComboBox__. Set the just declared __DataTemplate__ to the __RadComboBox__'s __ItemsSource__ property.
 
@@ -196,8 +178,7 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 
 {{region radcombobox-grid-like-dropdown_5}}
 	<UserControl.Resources>
-	    <example:DealerViewModel x:Key="DataSource"/>
-	
+	    <example:DealerViewModel x:Key="DataSource"/>	
 	    <DataTemplate x:Key="GridLikeDataTemplate">
 	        <StackPanel>
 	            <TextBlock Text="{Binding Name}" />
@@ -206,29 +187,21 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 	                <TextBlock Text="{Binding Phone}" />
 	            </StackPanel>
 	        </StackPanel>
-	    </DataTemplate>
-	
+	    </DataTemplate>	
 	</UserControl.Resources>
-	<Grid x:Name="LayoutRoot" Background="White">
-	    <StackPanel Margin="10">
 	
+	<Grid x:Name="LayoutRoot" Background="White">
+	    <StackPanel Margin="10">	
 	        <telerik:RadComboBox x:Name="radComboBox" Width="200"
 	            ItemsSource="{Binding Source={StaticResource DataSource}, Path=Dealers}"
-	            ItemTemplate="{StaticResource GridLikeDataTemplate}"/>
-	
+	            ItemTemplate="{StaticResource GridLikeDataTemplate}"/>	
 	    </StackPanel>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 The final result is shown again on the next image.
 
-
-
-
-         
-      ![](images/RadComboBox_HowTo_GridLikeDropDown_020.png)
+![](images/RadComboBox_HowTo_GridLikeDropDown_020.png)
 
 # See Also
 

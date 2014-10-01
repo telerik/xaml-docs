@@ -483,7 +483,7 @@ blockquote.note  {
     color: #555;
     padding: 10px 10px 10px 64px;
     background: #d9f0f7 url(../images/note-icon.png) no-repeat 15px center;
-    margin: 0;
+    margin: 5px 0;
 	min-height: 40px;
 }
 
@@ -513,7 +513,8 @@ blockquote th, blockquote td {
     font-size: 12px;
     padding: 20px;
 	background-color: #fbfdfe;
-    border: 2px dashed #ebecee;
+    border: 2px dashed #ebecee;	
+	margin: 5px 0;
 }
 
 pre .nocode { background-color: transparent; color: #000; }
@@ -538,11 +539,6 @@ pre .dec { color: #3e526b; } /* decimal */
     bottom: 0;
     left: 0;
     width: 100%;
-}
-
-#introduction,
-#page-inner-content {
-    padding-bottom: 140px; /* footer height */
 }
 
 .footer-links {
@@ -655,6 +651,35 @@ footer {
 h4 {
 	color: #00b312;
     font-size: 1.1em;
-	margin: 3px 0 0 0;
+	margin: 12px 0 0 0;
 	font-weight: normal;
+}
+
+article h1:first-of-type:before {
+	margin-top: 0px !important;
+	top: 50px !important;
+}
+
+#page-article table {
+                border: 1px solid #2CB144;
+                border-collapse: collapse;
+}
+
+#page-article table th {
+                background: #2CB144;
+                color: #fff;
+}
+
+#page-article table tr:nth-child(2n) td {
+                background: #F6F3EA;
+}
+
+#page-article table th, #page-article table td {
+                padding: 3px 5px;
+                text-align: left;
+}
+
+#page-article table td {
+    border: 1px solid #e1e5ea;
+    color: #555; 
 }

@@ -5,7 +5,7 @@ description: ObservableGraphSourceBase
 slug: raddiagram-data-observablegraphsource
 tags: observablegraphsourcebase
 published: True
-position: 6
+position: 7
 ---
 
 # ObservableGraphSourceBase

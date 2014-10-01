@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="WpfApplication1.Default_Cs"
+﻿<UserControl x:Class="RadZipLibraryDocumentationSourceCode.Examples.CompressStream.Default_Cs"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 

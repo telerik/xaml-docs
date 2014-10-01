@@ -5,7 +5,7 @@ description: Protect ZipArchive
 slug: radziplibrary-protect-ziparchive
 tags: protect,ziparchive
 published: True
-position: 2
+position: 1
 ---
 
 # Protect ZipArchive
@@ -36,19 +36,37 @@ __Example 1__: Create a password-protected ZIP archive:
 #### __C#__
 
 {{region radziplibrary-protect-ziparchive_0}}
-	using (Stream stream = File.Open("test.zip", FileMode.Create)) 
-	{
-	    DefaultEncryptionSettings encryptionSettings = new DefaultEncryptionSettings(); 
-	    encryptionSettings.Password = "password"; 
-	    using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Create, false, null, null, encryptionSettings)) 
-	    { 
-	        using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
-	        { 
-	            StreamWriter writer = new StreamWriter(entry.Open()); 
-	            writer.WriteLine("Hello world!"); writer.Flush();
-	        }
-	    }
-	}
+	            using (Stream stream = File.Open("test.zip", FileMode.Create))
+	            {
+	                DefaultEncryptionSettings encryptionSettings = new DefaultEncryptionSettings();
+	                encryptionSettings.Password = "password";
+	                using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Create, false, null, null, encryptionSettings))
+	                {
+	                    using (ZipArchiveEntry entry = archive.CreateEntry("text.txt"))
+	                    {
+	                        StreamWriter writer = new StreamWriter(entry.Open());
+	                        writer.WriteLine("Hello world!"); writer.Flush();
+	                    }
+	                }
+	            }
+	{{endregion}}
+
+
+
+#### __VB.NET__
+
+{{region radziplibrary-protect-ziparchive_0}}
+				Using stream As Stream = File.Open("test.zip", FileMode.Create)
+					Dim encryptionSettings As New DefaultEncryptionSettings()
+					encryptionSettings.Password = "password"
+					Using archive As New ZipArchive(stream, ZipArchiveMode.Create, False, Nothing, Nothing, encryptionSettings)
+						Using entry As ZipArchiveEntry = archive.CreateEntry("text.txt")
+							Dim writer As New StreamWriter(entry.Open())
+							writer.WriteLine("Hello world!")
+							writer.Flush()
+						End Using
+					End Using
+				End Using
 	{{endregion}}
 
 
@@ -67,16 +85,29 @@ __Example 2__: Open and read a password-protected ZIP archive.
 #### __C#__
 
 {{region radziplibrary-protect-ziparchive_1}}
-	using (Stream stream = File.Open("test.zip", FileMode.Open)) 
-	{ 
-	    DefaultEncryptionSettings encryptionSettings = new DefaultEncryptionSettings(); 
-	    encryptionSettings.Password = "password"; 
-	    using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Read, false, null,null, encryptionSettings))
-	    {
-	        {
-	            // Display the list of the files in the selected zip file using the ZipArchive.Entries property. 
-	        }
-	    }
+	            using (Stream stream = File.Open("test.zip", FileMode.Open))
+	            {
+	                DefaultEncryptionSettings encryptionSettings = new DefaultEncryptionSettings();
+	                encryptionSettings.Password = "password";
+	                using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Read, false, null, null, encryptionSettings))
+	                {
+	                    {
+	                        // Display the list of the files in the selected zip file using the ZipArchive.Entries property. 
+	                    }
+	                }
+	{{endregion}}
+
+
+
+#### __VB.NET__
+
+{{region radziplibrary-protect-ziparchive_1}}
+				Using stream As Stream = File.Open("test.zip", FileMode.Open)
+					Dim encryptionSettings As New DefaultEncryptionSettings()
+					encryptionSettings.Password = "password"
+					Using archive As New ZipArchive(stream, ZipArchiveMode.Read, False, Nothing, Nothing, encryptionSettings)
+							' Display the list of the files in the selected zip file using the ZipArchive.Entries property. 
+					End Using
 	{{endregion}}
 
 

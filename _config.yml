@@ -82,49 +82,6 @@ controls/radtreeview/how-to/howto-bind-treeview.md,]
 navigation:
 ## List your directory names and order here, like this:
 
-## Common Start
-    controls:
-        title: Controls
-    "*overview":
-        title: Overview
-        position: 1
-    "*getting-started":
-        title: Getting Started
-        position: 2
-    "*general-information":
-        title: General Information
-        position: 2
-    "*changes-and-backward-compatibility":
-        title: Changes and Backward Compatibility
-        position: 3
-    "*changes-and-backwards-compatibility":
-        title: Changes and Backward Compatibility
-        position: 3
-    "*features":
-        title: Features
-        position: 4
-    "*populating-with-data":
-        title: Populating with Data
-        position: 5
-    "*styles-and-templates":
-        title: "Styles and Templates"	
-        position: 90
-    "*styling-and-templates":
-        title: "Styles and Templates"	
-        position: 90
-    "*how-to":
-        title: How To
-        position: 100
-    "*howto":
-        title: How To
-        position: 100
-    "*events":
-        title: Events
-        position: 80
-    "api-reference":
-        title: "Api Reference"
-## Common End
-
 ## X3 Controls Start
     controls/radautocompletebox:
         title: RadAutoCompleteBox		
@@ -162,6 +119,15 @@ navigation:
         title: RadWatermarkTextBox
     controls/radwindow:
         title: RadWindow
+    controls/radcombobox/end-user-capabilities:
+        title: End-User Capabilities
+        position: 9
+    controls/radcombobox/features:
+        title: Features
+        position: 7
+    controls/radcombobox/populating-with-data:
+        title: Populating With Data
+        position: 8
 ## X3 Controls End
 
 ## X2 Controls Start
@@ -306,9 +272,52 @@ navigation:
         position: 4
 ## Centaur Controls End
 
-## X2 Controls Start
+## X1 Controls Start
 
-## X2 Controls End
+## X1 Controls End
+
+## Common Start
+    controls:
+        title: Controls
+    "*overview":
+        title: Overview
+        position: 1
+    "*getting-started":
+        title: Getting Started
+        position: 2
+    "*general-information":
+        title: General Information
+        position: 2
+    "*changes-and-backward-compatibility":
+        title: Changes and Backward Compatibility
+        position: 3
+    "*changes-and-backwards-compatibility":
+        title: Changes and Backward Compatibility
+        position: 3
+    "*features":
+        title: Features
+        position: 4
+    "*populating-with-data":
+        title: Populating with Data
+        position: 5
+    "*styles-and-templates":
+        title: "Styles and Templates"	
+        position: 90
+    "*styling-and-templates":
+        title: "Styles and Templates"	
+        position: 90
+    "*how-to":
+        title: How To
+        position: 100
+    "*howto":
+        title: How To
+        position: 100
+    "*events":
+        title: Events
+        position: 80
+    "api-reference":
+        title: "Api Reference"
+## Common End
 
 ## Api Reference Start
     "*system.windows":

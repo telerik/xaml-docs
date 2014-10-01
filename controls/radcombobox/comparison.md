@@ -11,10 +11,27 @@ site_name: Silverlight
 
 # Tech Specs &amp; Comparisons
 
-
+This article compares __RadComboBox__ with native Silverlight ComboBox features and explains few additional ones as well.
 
 ## Feature comparison of RadComboBox and Silverlight ComboBox
-<table><th><tr><td>Feature</td><td>RadComboBox</td><td>Silverlight ComboBox</td></tr></th><tr><td>Background, BorderBrush, BorderThickness</td><td>OK</td><td>OK</td></tr><tr><td>Cursor</td><td>OK</td><td>OK</td></tr><tr><td>FlowDirection, FontFamily, FontSize, FontStyle, FontWeightForeground</td><td>OK</td><td>OK</td></tr><tr><td>Themes</td><td>OK</td><td>OK</td></tr><tr><td>ToolTip</td><td>OK</td><td>OK</td></tr><tr><td>Edit Items</td><td>OK</td><td>OK</td></tr><tr><td>Edit Modes</td><td>OK</td><td>OK</td></tr><tr><td>Edit Templates</td><td>OK</td><td>-</td></tr><tr><td>Clear Button</td><td>OK</td><td>-</td></tr><tr><td>Auto complete</td><td>OK</td><td>-</td></tr><tr><td>Filtering</td><td>OK</td><td>- (out of the box)</td></tr><tr><td>ItemContainerStyleSelector</td><td>OK</td><td>-</td></tr><tr><td>ItemTemplateSelector</td><td>OK</td><td>-</td></tr><tr><td>Virtualization Support</td><td>OK</td><td>OK</td></tr></table>
+
+Feature	|	RadComboBox	|	Silverlight ComboBox
+---	|	---	|	---
+Background, BorderBrush, BorderThickness	|	OK	|	OK
+Cursor	|	OK	|	OK
+FlowDirection, FontFamily, FontSize, FontStyle, FontWeightForeground	|	OK	|	OK
+Themes	|	OK	|	OK
+ToolTip	|	OK	|	OK
+Edit Items	|	OK	|	OK
+Edit Modes	|	OK	|	OK
+Edit Templates	|	OK	|	-
+Clear Button	|	OK	|	-
+Auto complete	|	OK	|	-
+Filtering	|	OK	|	- (out of the box)
+ItemContainerStyleSelector	|	OK	|	-
+ItemTemplateSelector	|	OK	|	-
+Virtualization Support	|	OK	|	OK
+
 
 ## Additional Features
 

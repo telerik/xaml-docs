@@ -11,11 +11,7 @@ site_name: WPF
 
 # Set CharacterCasing Property of the Input Area
 
-
-
-## 
-
-The purpose of this tutorial is to show you how to set the __CharacterCasing__ property of the [InputArea]({%slug radcombobox-general-information-visual-structure%}) of an [editable]({%slug radcombobox-features-edit-modes%})__RadComboBox__(__RadComboBox__'s __IsEditable__ property is set to __True__).
+The purpose of this tutorial is to show you how to set the __CharacterCasing__ property of the [InputArea]({%slug radcombobox-general-information-visual-structure%}) of an [editable]({%slug radcombobox-features-edit-modes%}) __RadComboBox__(__RadComboBox__'s __IsEditable__ property is set to __True__).
 
 The idea in this case is to create a new __Attached Property__ in a helper class.
 
@@ -41,9 +37,7 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	    {
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -59,9 +53,7 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	    Private Shared Sub OnCharacterCasingChanged(ByVal obj As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
 	    End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 In the __OnCharacterCasingChanged()__ event handler you should perform the following step.
 
@@ -69,7 +61,7 @@ In the __OnCharacterCasingChanged()__ event handler you should perform the follo
 
 * Get the __PART_EditableTextBox__ element from its template.
 
-* The __PART_EditableTextBox__is a __TextBox__and you can easily set its __CharacterCasing__ property.
+* The __PART_EditableTextBox__ is a __TextBox__ and you can easily set its __CharacterCasing__ property.
 
 #### __C#__
 
@@ -109,9 +101,7 @@ In the __OnCharacterCasingChanged()__ event handler you should perform the follo
 	            , null );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally set the property in XAML.
 
@@ -119,8 +109,6 @@ Finally set the property in XAML.
 
 {{region radcombobox-howto-set-character-casing_3}}
 	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.CharacterCasingProperty="1"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipNote that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.

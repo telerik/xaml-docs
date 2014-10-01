@@ -10,9 +10,9 @@ position: 7
 
 # Clear Selection Button
 
+This article demonstrates how to enable the clear selection button and change its content.
 
-
-## Using ClearSelectionButtonVisibility and ClearSelectionButtonVisibilityContent
+## Using ClearSelectionButtonVisibility and ClearSelectionButtonContent
 
 The __RadComboBox__ offers an additional button displayed in the drop-down part, which is responsible for clearing the selection. By default this button is __not visible__. However you could make it visible by using the __ClearSelectionButtonVisibility__ property. Also you have the ability to set the content of the button clearing the selection to anything you want.
 
@@ -20,13 +20,9 @@ The __RadComboBox__ offers an additional button displayed in the drop-down part,
 
 {{region radcombobox-features-clearselectionbutton_0}}
 	<telerik:RadComboBox ClearSelectionButtonVisibility="Visible" ClearSelectionButtonContent="Clear Selection"/>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-         
-      ![](images/RadComboBox_Features_Selection_010.png)
+![](images/RadComboBox_Features_Selection_010.png)
 
 # See Also
 

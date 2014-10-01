@@ -10,24 +10,159 @@ position: 1
 
 # Intervals Formatters
 
-Every __RadTimeline's__ interval has a preset collection of formatting strings that creates the string representation of a given date to match the interval.
-          RadTimeline automatically chooses the appropriate string formatter according to the control size and visible range.
-        
+Every __RadTimeline's__ interval has a preset collection of formatting strings that creates the string representation of a given date to match the interval. RadTimeline automatically chooses the appropriate string formatter according to the control size and visible range.
 
 The table shows the available formatters per Interval:
 
-|  Intervals:         |  Formatters:                                                                                 |  Examples (en-US)                                                                                                                                                                                                                             |
-|---------------------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MillisecondInterval |  fff                                                                                         |  7/21/2011 12:00:00.55 AM -> 055 ms                                                                                                                                                                                                           |
-| SecondInterval      |  hh:mm:ss tt                                                                                 |  7/21/2011 12:00:00 AM -> 12:00:00 AM 7/21/2011 12:00:00 AM -> 12:00:00 7/21/2011 12:00:00 AM -> 00                                                                                                                                           |
-					     hh:mm:ss
-						 ss
-| MinuteInterval      |  hh:mm tt hh:mm                                                                              |  7/21/2011 12:00:00 AM -> 12:00 AM 7/21/2011 12:00:00 AM -> 12:00                                                                                                                                                                             |
-| HourInterval        |  hh tt ht                                                                                    |  7/21/2011 12:00:00 AM -> 12 AM 7/21/2011 12:00:00 AM -> 12A                                                                                                                                                                                  |
-| DayInterval         |  dddd, MMMM d, yyyy ddd, MMM d, yyyy dddd, d ddd, d ("dddd").Substring(0, 1) default format  |  7/21/2011 12:00:00 AM -> Thursday, July 21, 2011 7/21/2011 12:00:00 AM -> Thu, Jul 21, 2011 7/21/2011 12:00:00 AM -> Thursday, 21 7/21/2011 12:00:00 AM -> Thu, 21 7/21/2011 12:00:00 AM -> T 7/21/2011 12:00:00 AM -> 7/21/2011 12:00:00 AM |
-| WeekInterval        |  Week {1}, "MMMM, yyyy" Week {1}, "MMM, yyyy" Week {1} WeekShort{1}                          |  7/21/2011 12:00:00 AM -> Week 29, July, 2011 7/21/2011 12:00:00 AM -> Week 29, Jul, 2011 7/21/2011 12:00:00 AM -> Week 29 7/21/2011 12:00:00 AM -> WeekShort29                                                                               |
-| MonthInterval       |  MMMM, yyyy MMMM MMM ("MMM").Substring(0, 1)                                                 |  7/21/2011 12:00:00 AM -> July, 2011 7/21/2011 12:00:00 AM -> July 7/21/2011 12:00:00 AM -> Jul 7/21/2011 12:00:00 AM -> J                                                                                                                    |
-| QuarterInterval     |  Quarter {1}, "yyyy" Quarter {1} QuarterShort{1} "yyyy" QuarterShort{1}/"yy" QuarterShort{1} |  7/21/2011 12:00:00 AM -> Quarter 3, 2011 7/21/2011 12:00:00 AM -> Quarter 3 7/21/2011 12:00:00 AM -> QuarterShort3 2011 7/21/2011 12:00:00 AM -> QuarterShort3/11 7/21/2011 12:00:00 AM -> QuarterShort3                                     |
-| YearInterval        |  yyyy yy                                                                                     |  7/21/2011 12:00:00 AM -> 2011 7/21/2011 12:00:00 AM -> 11                                                                                                                                                                                    |
-| DecadeInterval      |  {0} - {1} {0}DecadeEnding "yy"DecadeEnding                                                  |  7/21/2011 12:00:00 AM -> 2010 - 2019 7/21/2011 12:00:00 AM -> 2010DecadeEnding 7/21/2011 12:00:00 AM -> 10DecadeEnding                                                                                                                       |
-| CenturyInterval     |  {0} Century {0}                                                                             |  7/21/2011 12:00:00 AM -> 21st Century 7/21/2011 12:00:00 AM -> 21st     
+<table>
+	<thead>
+		<tr>
+			<th>Intervals:</th>
+			<th>Formatters:</th>
+			<th>Examples (en-US)</th>
+		</tr>
+	</thead>
+	<tbody>	
+		<tr>
+			<td>MillisecondInterval</td>
+			<td>fff</td>
+			<td>7/21/2011 12:00:00.55 AM -> 055 ms</td>
+		</tr>
+		<tr>
+			<td>SecondInterval</td>
+			<td>
+				 hh:mm:ss tt <br/> 
+				 hh:mm:ss <br/>
+				 ss
+			</td>
+			<td>
+				7/21/2011 12:00:00 AM -> 12:00:00 AM <br/>
+				7/21/2011 12:00:00 AM -> 12:00:00 <br/>
+				7/21/2011 12:00:00 AM -> 00
+			</td>
+		</tr>
+		<tr>
+			<td>MinuteInterval</td>
+			<td>
+				 hh:mm tt <br/>
+				 hh:mm
+			</td>
+			<td>
+				7/21/2011 12:00:00 AM -> 12:00 AM <br/>
+				7/21/2011 12:00:00 AM -> 12:00
+			</td>
+		</tr>
+		<tr>
+			<td>HourInterval</td>
+			<td>
+				 hh tt <br/>
+				 ht
+			</td>
+			<td>
+				7/21/2011 12:00:00 AM -> 12 AM <br/>
+				7/21/2011 12:00:00 AM -> 12A
+			</td>
+		</tr>
+		<tr>
+			<td>DayInterval</td>
+			<td>
+				 dddd, MMMM d, yyyy <br/>
+				 ddd, MMM d, yyyy <br/>
+				 dddd, d <br/>
+				 ddd, d <br/>
+				 ("dddd").Substring(0, 1) <br/>
+				 default format
+			</td>
+			<td>
+				 7/21/2011 12:00:00 AM -> Thursday, July 21, 2011 <br/>
+				 7/21/2011 12:00:00 AM -> Thu, Jul 21, 2011 <br/>
+				 7/21/2011 12:00:00 AM -> Thursday, 21 <br/>
+				 7/21/2011 12:00:00 AM -> Thu, 21 <br/>
+				 7/21/2011 12:00:00 AM -> T <br/>
+				 7/21/2011 12:00:00 AM -> 7/21/2011 12:00:00 AM
+			</td>
+		</tr>
+		<tr>
+			<td>WeekInterval</td>
+			<td>
+				 Week {1}, "MMMM, yyyy" <br/>
+				 Week {1}, "MMM, yyyy" <br/>
+				 Week {1} <br/>
+				 WeekShort{1}
+			</td>
+			<td>
+				 7/21/2011 12:00:00 AM -> Week 29, July, 2011 <br/>
+				 7/21/2011 12:00:00 AM -> Week 29, Jul, 2011 <br/>
+				 7/21/2011 12:00:00 AM -> Week 29 <br/>
+				 7/21/2011 12:00:00 AM -> WeekShort29
+			</td>
+		</tr>
+		<tr>
+			<td>MonthInterval</td>
+			<td>
+				 MMMM, yyyy <br/>
+				 MMMM <br/>
+				 MMM <br/>
+				 ("MMM").Substring(0, 1)
+			</td>
+			<td>
+				 7/21/2011 12:00:00 AM -> July, 2011 <br/>
+				 7/21/2011 12:00:00 AM -> July <br/>
+				 7/21/2011 12:00:00 AM -> Jul <br/>
+				 7/21/2011 12:00:00 AM -> J
+			</td>
+		</tr>
+		<tr>
+			<td>QuarterInterval</td>
+			<td>
+				 Quarter {1}, "yyyy" <br/>
+				 Quarter {1} <br/>
+				 QuarterShort{1} "yyyy" <br/>
+				 QuarterShort{1}/"yy" <br/>
+				 QuarterShort{1}
+			</td>
+			<td>
+				 7/21/2011 12:00:00 AM -> Quarter 3, 2011 <br/>
+				 7/21/2011 12:00:00 AM -> Quarter 3 <br/>
+				 7/21/2011 12:00:00 AM -> QuarterShort3 2011 <br/>
+				 7/21/2011 12:00:00 AM -> QuarterShort3/11 <br/>
+				 7/21/2011 12:00:00 AM -> QuarterShort3
+			</td>
+		</tr>
+		<tr>
+			<td>YearInterval</td>
+			<td>
+				 yyyy <br/>
+				 yy
+			</td>
+			<td>
+				 7/21/2011 12:00:00 AM -> 2011 <br/>
+				 7/21/2011 12:00:00 AM -> 11
+			</td>
+		</tr>
+		<tr>
+			<td>DecadeInterval</td>
+			<td>
+				 {0} - {1} <br/>
+				 {0}DecadeEnding <br/>
+				 "yy"DecadeEnding
+			</td>
+			<td>
+				 7/21/2011 12:00:00 AM -> 2010 - 2019 <br/>
+				 7/21/2011 12:00:00 AM -> 2010DecadeEnding <br/>
+				 7/21/2011 12:00:00 AM -> 10DecadeEnding
+			</td>
+		</tr>
+		<tr>
+			<td>CenturyInterval</td>
+			<td>
+				 {0} Century <br/>
+				 {0}
+			</td>
+			<td>
+				 7/21/2011 12:00:00 AM -> 21st Century <br/>
+				 7/21/2011 12:00:00 AM -> 21st
+			</td>
+		</tr>
+	</tbody>
+</table>

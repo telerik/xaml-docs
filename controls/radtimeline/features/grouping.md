@@ -10,15 +10,9 @@ position: 7
 
 # Grouping
 
-
-
-The timeline items in a RadTimeline control can be displayed in groups.
-        Additionally, groups of timeline items can be made expandable/collapsible.
-      
+The timeline items in a RadTimeline control can be displayed in groups. Additionally, groups of timeline items can be made expandable/collapsible.
 
 This help topic contains the following information:
-      
-
 * [Properties](#properties)
 
 * [Group Expand Modes](#group-expand-modes)
@@ -26,36 +20,18 @@ This help topic contains the following information:
 * [Changing the default collapsed state of expandable groups](#changing-the-default-collapsed-state-of-expandable-groups)
 
 ## Properties
-
 __GroupPath__
-
 The path to the Group source property.
-        
-
 __GroupExpandMode__
-
-A GroupExpandMode value that indicates the group expand mode for a
-          RadTimeline instance. The default value is None. Setting the
-          GroupExpandMode property of a RadTimeline control changes
-          the behavior of the control only if the GroupPath
-          property is set to a valid path.
-        
+A GroupExpandMode value that indicates the group expand mode for a RadTimeline instance. The default value is None. Setting the GroupExpandMode property of a RadTimeline control changes the behavior of the control only if the GroupPath property is set to a valid path.        
 
 ## Group Expand Modes
-
 __None (Default)__
+A value of None indicates that the groups of timeline items of the RadTimeline instance are expanded by default and cannot be collapsed.        
 
-A value of None indicates that the groups of timeline items of
-          the RadTimeline instance are expanded by default and cannot be
-          collapsed.
-        
-
-The following example demonstrates how you can group the timeline
-          items of a RadTimeline control:
-        
+The following example demonstrates how you can group the timeline items of a RadTimeline control:       
 
 #### __XAML__
-
 {{region radtimeline-features-grouping-0}}
 	<!-- GroupPath is specified and GroupExpandMode is set to None -->
 	<telerik:RadTimeline PeriodStart="2011-01-01"
@@ -74,23 +50,16 @@ The following example demonstrates how you can group the timeline
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Timeline-features-grouping-0-Group Expand Mode-None](images/RadTimeline-features-grouping-0-GroupExpandMode-None.jpg)
 
 __Single__
+The Single value indicates that only a single group of timeline items can be expanded at a time. By default, all groups of timeline items are collapsed in this mode.        
 
-The Single value indicates that only a single group of timeline items 
-          can be expanded at a time. By default, all groups of timeline items 
-          are collapsed in this mode.
-        
-
-The following example demonstrates how you can group the timeline items of a 
-          RadTimeline control and set Single group expand mode:
-        
+The following example demonstrates how you can group the timeline items of a RadTimeline control and set Single group expand mode:       
 
 #### __XAML__
-
 {{region radtimeline-features-grouping-1}}
 	<!-- GroupPath is specified and GroupExpandMode is set to Single -->
 	<telerik:RadTimeline PeriodStart="2011-01-01"
@@ -109,23 +78,16 @@ The following example demonstrates how you can group the timeline items of a
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Timeline-features-grouping-1-Group Expand Mode-Single](images/RadTimeline-features-grouping-1-GroupExpandMode-Single.jpg)
 
 __Multiple__
+The Multiple value indicates that multiple groups of timeline items can be expanded at a time. By default, all groups of timeline items are collapsed in this mode.        
 
-The Multiple value indicates that multiple groups of timeline items can be 
-          expanded at a time. By default, all groups of timeline items 
-          are collapsed in this mode.
-        
-
-The following example demonstrates how you can group the timeline items of a
-          RadTimeline control and set Multiple group expand mode:
-        
+The following example demonstrates how you can group the timeline items of a RadTimeline control and set Multiple group expand mode:        
 
 #### __XAML__
-
 {{region radtimeline-features-grouping-2}}
 	<!-- GroupPath is specified and GroupExpandMode is set to Multiple -->
 	<telerik:RadTimeline PeriodStart="2011-01-01"
@@ -144,48 +106,33 @@ The following example demonstrates how you can group the timeline items of a
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Timeline-features-grouping-2-Group Expand Mode-Multiple](images/RadTimeline-features-grouping-2-GroupExpandMode-Multiple.jpg)
 
 ## Changing the default collapsed state of expandable groups
 
->The styles used in this section are __implicit__. In order
-            to apply them you have to use NoXAML DLL-s. For more information check the
-            [Implicit Styles](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html)
-            topic.
-          
+>The styles used in this section are __implicit__. In order to apply them you have to use NoXAML DLL-s. For more information check the [Implicit Styles](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html) topic.          
 
-By default, the groups of timeline items are collapsed when GroupExpandMode 
-          is set to either Single or Multiple. You can use the following style 
-          to change this default state:
-        
+By default, the groups of timeline items are collapsed when GroupExpandMode is set to either Single or Multiple. You can use the following style to change this default state:        
 
 #### __XAML__
-
 {{region radtimeline-features-grouping-3}}
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="True" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
-
-
-In order to change the default state of specific groups of timeline items, you can use a converter:
-        
+In order to change the default state of specific groups of timeline items, you can use a converter:        
 
 #### __XAML__
-
 {{region radtimeline-features-grouping-4}}
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="{Binding GroupKey, Converter={StaticResource groupKeyToIsExpandedConverter}}" />
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radtimeline-features-grouping-0}}
 	public class GroupKeyToIsExpandedConverter : IValueConverter
 	{
@@ -204,12 +151,9 @@ In order to change the default state of specific groups of timeline items, you c
 	        throw new NotImplementedException();
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radtimeline-features-grouping-0}}
 	Public Class GroupKeyToIsExpandedConverter
 		Implements IValueConverter
@@ -227,8 +171,4 @@ In order to change the default state of specific groups of timeline items, you c
 			Throw New NotImplementedException()
 		End Function
 	End Class
-	{{endregion}}
-
-
-
-# See Also
+{{endregion}}

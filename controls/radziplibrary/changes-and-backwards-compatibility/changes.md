@@ -12,14 +12,12 @@ position: 0
 
 
 
-This topic summarizes the new functionality introduced in the library with helpful links to places in the documentation that describe in greater
-        detail the new functionality and how it can be used.
+This topic summarizes the new functionality introduced in the library with helpful links to places in the documentation that describe in greater detail the new functionality and how it can be used.
       
 
 ## What's New in 2014 Q1 - 2014.1.0226
 
-* ZIP library has been redesigned from scratch for better cross-platform compatibility (.NET, Silverlight, Windows Store Apps, Windows Phone),
-              better support of the standards and better functionality.
+* ZIP library has been redesigned from scratch for better cross-platform compatibility (.NET, Silverlight, Windows Store Apps, Windows Phone), better support of the standards and better functionality.
             
 
 * ZIP library now supports both ZIP and ZIP64 specifications, i.e. large ZIP files with more than 4GB length are supported now.

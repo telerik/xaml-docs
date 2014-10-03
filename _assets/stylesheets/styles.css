@@ -491,6 +491,10 @@ blockquote.important {
 	background: #f8eee3 url(../images/important-icon.png) no-repeat 15px center;
 }
 
+blockquote.caution {
+	background: #eddee1 url(../images/caution-icon.png) no-repeat 15px center;
+}
+
 blockquote.tip {
 	background: #def4e4 url(../images/tip-icon.png) no-repeat 15px center;
 }

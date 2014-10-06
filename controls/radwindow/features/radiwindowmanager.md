@@ -10,10 +10,6 @@ position: 10
 
 # RadWindowManager
 
-
-
-## 
-
 __RadWindowManager__ is a singleton class that exposes several methods that act on all active __RadWindows__ in the current application.
 
 Here is a brief list of all static methods exposed by __RadWindowManager__:
@@ -34,17 +30,13 @@ Here is an example of how to use __RadWindowManager__ to close all active __RadW
 
 {{region radwindow-features-radiwindowmanager_0}}
 	RadWindowManager.Current.CloseAllWindows();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radwindow-features-radiwindowmanager_1}}
 	RadWindowManager.Current.CloseAllWindows()
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

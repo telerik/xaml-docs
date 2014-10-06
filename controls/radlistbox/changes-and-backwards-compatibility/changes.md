@@ -10,66 +10,49 @@ position: 0
 
 # Changes
 
-
-
 This article describes the release history of the control.
 
-For the complete Release History of RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} go to
-        {% if site.site_name == 'Silverlight' %}[What's New Section](http://www.telerik.com/products/silverlight/whats-new.aspx){% endif %}{% if site.site_name == 'WPF' %}[What's New Section](http://www.telerik.com/products/wpf/whats-new.aspx){% endif %}.
-      
+For the complete Release History of RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} go to {% if site.site_name == 'Silverlight' %}[What's New Section](http://www.telerik.com/products/silverlight/whats-new.aspx){% endif %}{% if site.site_name == 'WPF' %}[What's New Section](http://www.telerik.com/products/wpf/whats-new.aspx){% endif %}.
 
 ## Q1 2014
 
 ### What's New
 
 * Extend the ListBoxDragVisualProvider to include DropTarget, DropPosition and DragTarget
-                
 
 * Improve the style of the ListBoxDragVisual
-                
 
 ## Q3 2013
 
 ### What's Fixed
 
 * Cannot interact with a button placed in ListBoxItem in Windows8TouchTheme
-                
 
 ## Q2 2013
 
 ### What's New
 
 * Enable the smooth scrolling of the ListBox with all panels with touch
-                
 
 ### What's Fixed
 
 * Calling ScrollIntoView before RadListBox is loaded results in incorrect selection behavior
-                
 
 * RadListBox selection is cleared when the control is used in ItemsTemplate
-                
 
 * NullReferenceException thrown in GeneratePanelInfo()
-                
 
 * NullReferenceException in RadListBox when using touch and the ColorPicker
-                
 
 * NullReferenceException is thrown in RadListBox with CollectionViewSource set to Empty
-                
 
 * RadListBoxItem do not get implicit style in Windows8Touch
-                
 
 * DropCue is missing when dragging item
-                
 
 * KeyDown shouldn't be handled if TextSearch is disabled
-                
 
 * Prevent the ScrollViewer from receiving focus to let a RadListBoxItem to receive the focus when the user navigates to the RadListBox control
-                
 
 ## Q1 2013
 

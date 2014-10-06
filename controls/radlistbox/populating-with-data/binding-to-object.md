@@ -10,10 +10,7 @@ position: 4
 
 # Binding To Object
 
-
-
-To bind the __RadListBox__ to a collection of business objects, you should use its __ItemsSource__ property and define the __DataTemplate__ that is needed to display the data from the collection. If you want the changes to the collection to be automatically reflected to the __RadListBoxItems__, the collection should implement the __INotifyCollectionChanged__ interface, as well as your business object to implement the __INotifyPropertyChanged__ interface.
-		
+To bind the __RadListBox__ to a collection of business objects, you should use its __ItemsSource__ property and define the __DataTemplate__ that is needed to display the data from the collection. If you want the changes to the collection to be automatically reflected to the __RadListBoxItems__, the collection should implement the __INotifyCollectionChanged__ interface, as well as your business object to implement the __INotifyPropertyChanged__ interface.		
 
 The following tutorial will guide you how to bind a __RadListBox__ to a collection of business objects. Two cases will be shown:
 
@@ -21,24 +18,19 @@ The following tutorial will guide you how to bind a __RadListBox__ to a collecti
 
 * [Using DisplayMemberPath property](#using-displaymemberpath)
 
->tipBefore reading this tutorial you should get familiar with the 
-    	[Data Binding]({%slug radlistbox-populating-with-data-binding-support-overview%}) support of the RadListBox control.
+>tipBefore reading this tutorial you should get familiar with the [Data Binding]({%slug radlistbox-populating-with-data-binding-support-overview%}) support of the RadListBox control.
 
 In order to bind a __RadListBox__ to a collection of business objects, you should perform the following instructions:
 
-* Add a new __RadListBox__ declaration in your XAML:
-    	
+* Add a new __RadListBox__ declaration in your XAML:    	
 
 #### __XAML__
 
 {{region radlistbox-populating-with-data-binding-to-object_0}}
 	<telerik:RadListBox x:Name="radListBox" Width="300" />
-	{{endregion}}
-
-
+{{endregion}}
 
 * Create a new business object named Customer. Its structure is shown on the next code-snippet:
-    	
 
 #### __C#__
 
@@ -56,12 +48,11 @@ In order to bind a __RadListBox__ to a collection of business objects, you shoul
 			this.Phone = phone;
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
 The __RadListBox__ control will be bound to an ObservableCollection of Customer objects.
 
-* Create a new class named __CustomerViewModel__. In fact, this will be the data source for the listbox. This class has only one purpose - to initialize a collection with sample data.
-    	
+* Create a new class named __CustomerViewModel__. In fact, this will be the data source for the listbox. This class has only one purpose - to initialize a collection with sample data.    	
 
 #### __C#__
 
@@ -83,12 +74,9 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 			};
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* Declare the __CustomerViewModel__ as a resource in your XAML:
-    		
+* Declare the __CustomerViewModel__ as a resource in your XAML:    		
 
 #### __XAML__
 
@@ -96,21 +84,16 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 	<UserControl.Resources>
 		<example:CustomerViewModel x:Key="CustomerViewModel" />
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
-
-
-* Update your __RadListBox__ declaration and its __ItemsSource__ property:
-    		
+* Update your __RadListBox__ declaration and its __ItemsSource__ property:    		
 
 #### __XAML__
 
 {{region radlistbox-populating-with-data-binding-to-object_4}}
 	<telerik:RadListBox x:Name="radListBox" Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}" />
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Using Custom ItemTemplate
 
@@ -138,12 +121,9 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 	                Text="{Binding Phone}" />
 		</Grid>
 	</DataTemplate>
-	{{endregion}}
+{{endregion}}
 
-
-
-* Update your __RadListBox__ declaration and set its __ItemTemplate__ property like in the example below:
-           	
+* Update your __RadListBox__ declaration and set its __ItemTemplate__ property like in the example below:           	
 
 #### __XAML__
 
@@ -151,9 +131,7 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 	<telerik:RadListBox x:Name="radListBox" Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
 			ItemTemplate="{StaticResource ListBoxCustomTemplate}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Run your demo, the end result is shown on the snapshot below:
 
@@ -161,13 +139,9 @@ Run your demo, the end result is shown on the snapshot below:
 
 ## Using DisplayMemberPath
 
-Instead of creating a custom __ItemTemplate__, an alternative approach is to use the __DisplayMemberPath__ property. Its purpose is to get or set a path to a value on the source object to serve as the visual representation of the object.
-	
+Instead of creating a custom __ItemTemplate__, an alternative approach is to use the __DisplayMemberPath__ property. Its purpose is to get or set a path to a value on the source object to serve as the visual representation of the object.	
 
 For example, instead of setting the __ItemTemplate__, set the __RadListBox__'s __DisplayMemberPath__ property to point the Name property of the Customer object.
-      
-
-
 
 #### __XAML__
 
@@ -175,13 +149,10 @@ For example, instead of setting the __ItemTemplate__, set the __RadListBox__'s _
 	<telerik:RadListBox x:Name="radListBox" Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
 			DisplayMemberPath="Name"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 The end result is shown on the next snapshot:
 
 ![radlistbox populatingwithdata bindingtoobject 020](images/radlistbox_populatingwithdata_bindingtoobject_020.png)
 
->If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the item would be set to the value returned by the ToString() method of the business object.
-           	
+>If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the item would be set to the value returned by the ToString() method of the business object. 

@@ -27,8 +27,8 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 #### __XAML__
 
 {{region radoutlookbar-databinding-7}}
-	        <telerik:RadOutlookBar Name="radOutlookBar" />
-	{{endregion}}
+        <telerik:RadOutlookBar Name="radOutlookBar" />
+{{endregion}}
 
 
 
@@ -37,51 +37,49 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 #### __C#__
 
 {{region radoutlookbar-databinding-2}}
-	    public class MenuItem
-	    {
-	        public string Header { get; set; }
-	        public string Content { get; set; }
-	        public string ImageSourcePath { get; set; }
-	    }
-	{{endregion}}
+    public class MenuItem
+    {
+        public string Header { get; set; }
+        public string Content { get; set; }
+        public string ImageSourcePath { get; set; }
+    }
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radoutlookbar-databinding-2}}
-	
-	    Public Class MenuItem
-	        Public Property Header() As String
-	            Get
-	                Return m_Header
-	            End Get
-	            Set(value As String)
-	                m_Header = Value
-	            End Set
-	        End Property
-	        Private m_Header As String
-	        Public Property Content() As String
-	            Get
-	                Return m_Content
-	            End Get
-	            Set(value As String)
-	                m_Content = Value
-	            End Set
-	        End Property
-	        Private m_Content As String
-	        Public Property ImageSourcePath() As String
-	            Get
-	                Return m_ImageSourcePath
-	            End Get
-	            Set(value As String)
-	                m_ImageSourcePath = Value
-	            End Set
-	        End Property
-	        Private m_ImageSourcePath As String
-	    End Class
-	#End Region
-	End Namespace
+    Public Class MenuItem
+        Public Property Header() As String
+            Get
+                Return m_Header
+            End Get
+            Set(value As String)
+                m_Header = Value
+            End Set
+        End Property
+        Private m_Header As String
+        Public Property Content() As String
+            Get
+                Return m_Content
+            End Get
+            Set(value As String)
+                m_Content = Value
+            End Set
+        End Property
+        Private m_Content As String
+        Public Property ImageSourcePath() As String
+            Get
+                Return m_ImageSourcePath
+            End Get
+            Set(value As String)
+                m_ImageSourcePath = Value
+            End Set
+        End Property
+        Private m_ImageSourcePath As String
+    End Class
+{{endregion}}
 
 
 
@@ -90,123 +88,118 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 #### __C#__
 
 {{region radoutlookbar-databinding-1}}
-	    public class MailMenuViewModel : ViewModelBase
-	    {
-	        public ObservableCollection<MenuItem> MenuItems { get; set; }
-	
-	        private MenuItem selectedItem;
-	        public MenuItem SelectedItem
-	        {
-	            get { return this.selectedItem; }
-	            set
-	            {
-	                if (this.selectedItem != value)
-	                {
-	                    this.selectedItem = value;
-	                    this.OnPropertyChanged("SelectedItem");
-	                }
-	            }
-	        }
-	
-	        public MailMenuViewModel()
-	        {
-	            this.MenuItems = new ObservableCollection<MenuItem>();
-	            this.MenuItems.Add(new MenuItem() { Content = "Mails content", Header = "Mail", ImageSourcePath = "/images/mailBig.png" });
-	            this.MenuItems.Add(new MenuItem() { Content = "Contacts content", Header = "Contacts", ImageSourcePath = "/images/contactsBig.png" });
-	            this.MenuItems.Add(new MenuItem() { Content = "Calendar content", Header = "Calendar", ImageSourcePath = "/images/calendarBig.png" });
-	
-	            this.selectedItem = this.MenuItems[0];
-	        }
-	    }   
-	{{endregion}}
+    public class MailMenuViewModel : ViewModelBase
+    {
+        public ObservableCollection<MenuItem> MenuItems { get; set; }
+
+        private MenuItem selectedItem;
+        public MenuItem SelectedItem
+        {
+            get { return this.selectedItem; }
+            set
+            {
+                if (this.selectedItem != value)
+                {
+                    this.selectedItem = value;
+                    this.OnPropertyChanged("SelectedItem");
+                }
+            }
+        }
+
+        public MailMenuViewModel()
+        {
+            this.MenuItems = new ObservableCollection<MenuItem>();
+            this.MenuItems.Add(new MenuItem() { Content = "Mails content", Header = "Mail", ImageSourcePath = "/images/mailBig.png" });
+            this.MenuItems.Add(new MenuItem() { Content = "Contacts content", Header = "Contacts", ImageSourcePath = "/images/contactsBig.png" });
+            this.MenuItems.Add(new MenuItem() { Content = "Calendar content", Header = "Calendar", ImageSourcePath = "/images/calendarBig.png" });
+
+            this.selectedItem = this.MenuItems[0];
+        }
+    }   
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radoutlookbar-databinding-1}}
-	
-	    Public Class MailMenuViewModel
-	        Inherits ViewModelBase
-	        Public Property MenuItems() As ObservableCollection(Of MenuItem)
-	            Get
-	                Return m_MenuItems
-	            End Get
-	            Set(value As ObservableCollection(Of MenuItem))
-	                m_MenuItems = Value
-	            End Set
-	        End Property
-	        Private m_MenuItems As ObservableCollection(Of MenuItem)
-	
-	        Private m_selectedItem As MenuItem
-	        Public Property SelectedItem() As MenuItem
-	            Get
-	                Return Me.m_selectedItem
-	            End Get
-	            Set(value As MenuItem)
-	                If Me.m_selectedItem <> value Then
-	                    Me.m_selectedItem = value
-	                    Me.OnPropertyChanged("SelectedItem")
-	                End If
-	            End Set
-	        End Property
-	
-	        Public Sub New()
-	            Me.MenuItems = New ObservableCollection(Of MenuItem)()
-			Me.MenuItems.Add(New MenuItem() With { _
-				Key .Content = "Mails content", _
-				Key .Header = "Mail", _
-				Key .ImageSourcePath = "/images/mailBig.png" _
-			})
-			Me.MenuItems.Add(New MenuItem() With { _
-				Key .Content = "Contacts content", _
-				Key .Header = "Contacts", _
-				Key .ImageSourcePath = "/images/contactsBig.png" _
-			})
-			Me.MenuItems.Add(New MenuItem() With { _
-				Key .Content = "Calendar content", _
-				Key .Header = "Calendar", _
-				Key .ImageSourcePath = "/images/calendarBig.png" _
-			})
-	
-	            Me.m_selectedItem = Me.MenuItems(0)
-	        End Sub
-	    End Class
-	#End Region
-	
-	#Region "radoutlookbar-databinding-2"
-	
-	    Public Class MenuItem
-	        Public Property Header() As String
-	            Get
-	                Return m_Header
-	            End Get
-	            Set(value As String)
-	                m_Header = Value
-	            End Set
-	        End Property
-	        Private m_Header As String
-	        Public Property Content() As String
-	            Get
-	                Return m_Content
-	            End Get
-	            Set(value As String)
-	                m_Content = Value
-	            End Set
-	        End Property
-	        Private m_Content As String
-	        Public Property ImageSourcePath() As String
-	            Get
-	                Return m_ImageSourcePath
-	            End Get
-	            Set(value As String)
-	                m_ImageSourcePath = Value
-	            End Set
-	        End Property
-	        Private m_ImageSourcePath As String
-	    End Class
-	#End Region
-	End Namespace
+    Public Class MailMenuViewModel
+        Inherits ViewModelBase
+        Public Property MenuItems() As ObservableCollection(Of MenuItem)
+            Get
+                Return m_MenuItems
+            End Get
+            Set(value As ObservableCollection(Of MenuItem))
+                m_MenuItems = Value
+            End Set
+        End Property
+        Private m_MenuItems As ObservableCollection(Of MenuItem)
+
+        Private m_selectedItem As MenuItem
+        Public Property SelectedItem() As MenuItem
+            Get
+                Return Me.m_selectedItem
+            End Get
+            Set(value As MenuItem)
+                If Me.m_selectedItem <> value Then
+                    Me.m_selectedItem = value
+                    Me.OnPropertyChanged("SelectedItem")
+                End If
+            End Set
+        End Property
+
+        Public Sub New()
+            Me.MenuItems = New ObservableCollection(Of MenuItem)()
+		Me.MenuItems.Add(New MenuItem() With {
+			Key .Content = "Mails content",
+			Key .Header = "Mail",
+			Key .ImageSourcePath = "/images/mailBig.png"
+		})
+		Me.MenuItems.Add(New MenuItem() With {
+			Key .Content = "Contacts content",
+			Key .Header = "Contacts",
+			Key .ImageSourcePath = "/images/contactsBig.png"
+		})
+		Me.MenuItems.Add(New MenuItem() With {
+			Key .Content = "Calendar content",
+			Key .Header = "Calendar",
+			Key .ImageSourcePath = "/images/calendarBig.png"
+		})
+
+            Me.m_selectedItem = Me.MenuItems(0)
+        End Sub
+    End Class
+
+    Public Class MenuItem
+        Public Property Header() As String
+            Get
+                Return m_Header
+            End Get
+            Set(value As String)
+                m_Header = Value
+            End Set
+        End Property
+        Private m_Header As String
+        Public Property Content() As String
+            Get
+                Return m_Content
+            End Get
+            Set(value As String)
+                m_Content = Value
+            End Set
+        End Property
+        Private m_Content As String
+        Public Property ImageSourcePath() As String
+            Get
+                Return m_ImageSourcePath
+            End Get
+            Set(value As String)
+                m_ImageSourcePath = Value
+            End Set
+        End Property
+        Private m_ImageSourcePath As String
+    End Class
+{{endregion}}
 
 
 
@@ -215,108 +208,23 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 #### __C#__
 
 {{region radoutlookbar-databinding-0}}
-	        public MainWindow()
-	        {
-	            InitializeComponent();
-	            this.radOutlookBar.DataContext = new MailMenuViewModel();
-	        }
-	{{endregion}}
+    public MainWindow()
+    {
+        InitializeComponent();
+        this.radOutlookBar.DataContext = new MailMenuViewModel();
+    }
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radoutlookbar-databinding-0}}
-	        Public Sub New()
-	            InitializeComponent()
-	            Me.radOutlookBar.DataContext = New MailMenuViewModel()
-	        End Sub
-	#End Region
-	    End Class
-	
-	#Region "radoutlookbar-databinding-1"
-	
-	    Public Class MailMenuViewModel
-	        Inherits ViewModelBase
-	        Public Property MenuItems() As ObservableCollection(Of MenuItem)
-	            Get
-	                Return m_MenuItems
-	            End Get
-	            Set(value As ObservableCollection(Of MenuItem))
-	                m_MenuItems = Value
-	            End Set
-	        End Property
-	        Private m_MenuItems As ObservableCollection(Of MenuItem)
-	
-	        Private m_selectedItem As MenuItem
-	        Public Property SelectedItem() As MenuItem
-	            Get
-	                Return Me.m_selectedItem
-	            End Get
-	            Set(value As MenuItem)
-	                If Me.m_selectedItem <> value Then
-	                    Me.m_selectedItem = value
-	                    Me.OnPropertyChanged("SelectedItem")
-	                End If
-	            End Set
-	        End Property
-	
-	        Public Sub New()
-	            Me.MenuItems = New ObservableCollection(Of MenuItem)()
-			Me.MenuItems.Add(New MenuItem() With { _
-				Key .Content = "Mails content", _
-				Key .Header = "Mail", _
-				Key .ImageSourcePath = "/images/mailBig.png" _
-			})
-			Me.MenuItems.Add(New MenuItem() With { _
-				Key .Content = "Contacts content", _
-				Key .Header = "Contacts", _
-				Key .ImageSourcePath = "/images/contactsBig.png" _
-			})
-			Me.MenuItems.Add(New MenuItem() With { _
-				Key .Content = "Calendar content", _
-				Key .Header = "Calendar", _
-				Key .ImageSourcePath = "/images/calendarBig.png" _
-			})
-	
-	            Me.m_selectedItem = Me.MenuItems(0)
-	        End Sub
-	    End Class
-	#End Region
-	
-	#Region "radoutlookbar-databinding-2"
-	
-	    Public Class MenuItem
-	        Public Property Header() As String
-	            Get
-	                Return m_Header
-	            End Get
-	            Set(value As String)
-	                m_Header = Value
-	            End Set
-	        End Property
-	        Private m_Header As String
-	        Public Property Content() As String
-	            Get
-	                Return m_Content
-	            End Get
-	            Set(value As String)
-	                m_Content = Value
-	            End Set
-	        End Property
-	        Private m_Content As String
-	        Public Property ImageSourcePath() As String
-	            Get
-	                Return m_ImageSourcePath
-	            End Get
-	            Set(value As String)
-	                m_ImageSourcePath = Value
-	            End Set
-	        End Property
-	        Private m_ImageSourcePath As String
-	    End Class
-	#End Region
-	End Namespace
+    Public Sub New()
+    	InitializeComponent()
+    	Me.radOutlookBar.DataContext = New MailMenuViewModel()
+	End Sub
+{{endregion}}
 
 
 
@@ -325,25 +233,26 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 #### __XAML__
 
 {{region radoutlookbar-databinding-8}}
-	        <telerik:RadOutlookBar Name="radOutlookBar" 
-	                               ItemsSource="{Binding MenuItems}"/>
-	{{endregion}}
+    <telerik:RadOutlookBar Name="radOutlookBar" 
+                           ItemsSource="{Binding MenuItems}"/>
+{{endregion}}
 
 
 
-You can see the end result bellow:![outlook databinding result 0](images/outlook_databinding_result0.png)
+You can see the end result bellow:
+
+![outlook databinding result 0](images/outlook_databinding_result0.png)
 
 ## Using Custom Templates
 
-The __RadOutlookBar__ has few properties of type __DataTemplate__ that can be used in order to control its items appearance. Each property accepts a DataTemplate as a value that determines the visual appearance of the __RadOutlookBarItems__ and the __RadOutlookBar__ itself. The properties that can be used are the following:
-          __ItemTemplate__, 
-          __ItemMinimizedTemplate__, 
-          __ItemDropDownTemplate__, 
-          __TitleTemplate__,
-          __MinimizedButtonContentTemplate__ and
-          __ContentTemplate__. 
-          There are also template selectors for all of the listed templates except for the __MinimizedButtonContentTemplate__.
-        
+The __RadOutlookBar__ has few properties of type __DataTemplate__ that can be used in order to control its items appearance. Each property accepts a DataTemplate as a value that determines the visual appearance of the __RadOutlookBarItems__ and the __RadOutlookBar__ itself. The properties that can be used are the following:<br/>
+          * __ItemTemplate__, <br/>
+          * __ItemMinimizedTemplate__,<br/> 
+          * __ItemDropDownTemplate__,<br/> 
+          * __TitleTemplate__,<br/>
+          * __MinimizedButtonContentTemplate__<br/>
+          * __ContentTemplate__ <br/>
+>note There are also template selectors for all of the listed templates except for the __MinimizedButtonContentTemplate__.
 
 To customize the project that we developed so far you can do the following:
 
@@ -352,10 +261,10 @@ To customize the project that we developed so far you can do the following:
 #### __XAML__
 
 {{region radoutlookbar-databinding-1}}
-	        <DataTemplate x:Key="outlookBarItemTemplate">
-	            <TextBlock Text="{Binding Header}" />
-	        </DataTemplate>
-	{{endregion}}
+    <DataTemplate x:Key="outlookBarItemTemplate">
+        <TextBlock Text="{Binding Header}" />
+    </DataTemplate>
+{{endregion}}
 
 
 
@@ -364,10 +273,10 @@ To customize the project that we developed so far you can do the following:
 #### __XAML__
 
 {{region radoutlookbar-databinding-2}}
-	        <DataTemplate x:Key="outlookBarItemMinimizedTemplate">
-	            <TextBlock Text="{Binding Header}" VerticalAlignment="Center" />
-	        </DataTemplate>
-	{{endregion}}
+    <DataTemplate x:Key="outlookBarItemMinimizedTemplate">
+        <TextBlock Text="{Binding Header}" VerticalAlignment="Center" />
+    </DataTemplate>
+{{endregion}}
 
 
 
@@ -376,10 +285,10 @@ To customize the project that we developed so far you can do the following:
 #### __XAML__
 
 {{region radoutlookbar-databinding-3}}
-	        <DataTemplate x:Key="outlookBarItemDropDownTemplate">
-				<TextBlock Text="{Binding Header}" />
-	        </DataTemplate>
-	{{endregion}}
+    <DataTemplate x:Key="outlookBarItemDropDownTemplate">
+		<TextBlock Text="{Binding Header}" />
+    </DataTemplate>
+{{endregion}}
 
 
 
@@ -388,12 +297,12 @@ To customize the project that we developed so far you can do the following:
 #### __XAML__
 
 {{region radoutlookbar-databinding-4}}
-	        <DataTemplate x:Key="outlookBarTitleTemplate">
-	            <TextBlock Text="{Binding Header}" 
-	                       FontSize="16" 
-	                       FontWeight="Bold" />
-	        </DataTemplate>
-	{{endregion}}
+    <DataTemplate x:Key="outlookBarTitleTemplate">
+        <TextBlock Text="{Binding Header}" 
+                   FontSize="16" 
+                   FontWeight="Bold" />
+    </DataTemplate>
+{{endregion}}
 
 
 
@@ -402,12 +311,12 @@ To customize the project that we developed so far you can do the following:
 #### __XAML__
 
 {{region radoutlookbar-databinding-5}}
-	        <DataTemplate x:Key="outlookBarMinimizedBtnContentTemplate">
-	            <TextBlock Text="{Binding Header}" FontStyle="Italic" 
-	                       TextDecorations="Underline" 
-	                       FontWeight="Bold"/>
-	        </DataTemplate>
-	{{endregion}}
+    <DataTemplate x:Key="outlookBarMinimizedBtnContentTemplate">
+        <TextBlock Text="{Binding Header}" FontStyle="Italic" 
+                   TextDecorations="Underline" 
+                   FontWeight="Bold"/>
+    </DataTemplate>
+{{endregion}}
 
 
 
@@ -416,14 +325,14 @@ To customize the project that we developed so far you can do the following:
 #### __XAML__
 
 {{region radoutlookbar-databinding-6}}
-	        <DataTemplate x:Key="outlookBarContentTemplate">
-	            <Grid Background="Bisque" Margin="10">
-	                <TextBlock Text="{Binding Content}" 
-	                           FontStyle="Italic" 
-	                           Margin="10" />
-	            </Grid>
-	        </DataTemplate>
-	{{endregion}}
+	<DataTemplate x:Key="outlookBarContentTemplate">
+	    <Grid Background="Bisque" Margin="10">
+	        <TextBlock Text="{Binding Content}" 
+	                   FontStyle="Italic" 
+	                   Margin="10" />
+	    </Grid>
+	</DataTemplate>
+{{endregion}}
 
 
 
@@ -432,29 +341,24 @@ To customize the project that we developed so far you can do the following:
 #### __XAML__
 
 {{region radoutlookbar-databinding-9}}
-			<telerik:RadOutlookBar Name="radOutlookBar"
-	                               SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
-	                               ItemsSource="{Binding MenuItems}"                               
-	                               ItemTemplate="{StaticResource outlookBarItemTemplate}"
-	                               ItemMinimizedTemplate="{StaticResource outlookBarItemMinimizedTemplate}"
-	                               ItemDropDownContentTemplate="{StaticResource outlookBarItemDropDownTemplate}"
-	                               TitleTemplate="{StaticResource outlookBarTitleTemplate}"
-	                               ContentTemplate="{StaticResource outlookBarContentTemplate}"
-	                               MinimizedButtonContentTemplate="{StaticResource outlookBarMinimizedBtnContentTemplate}"
-	                               MinimizedButtonContent="{Binding SelectedItem}" />
-	{{endregion}}
+	<telerik:RadOutlookBar Name="radOutlookBar"
+                           SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                           ItemsSource="{Binding MenuItems}"                               
+                           ItemTemplate="{StaticResource outlookBarItemTemplate}"
+                           ItemMinimizedTemplate="{StaticResource outlookBarItemMinimizedTemplate}"
+                           ItemDropDownContentTemplate="{StaticResource outlookBarItemDropDownTemplate}"
+                           TitleTemplate="{StaticResource outlookBarTitleTemplate}"
+                           ContentTemplate="{StaticResource outlookBarContentTemplate}"
+                           MinimizedButtonContentTemplate="{StaticResource outlookBarMinimizedBtnContentTemplate}"
+                           MinimizedButtonContent="{Binding SelectedItem}" />
+{{endregion}}
+
+>tip You can download a runnable project of the demonstrated example from our online [SDK repository here](https://github.com/telerik/xaml-sdk), after navigating OutlookBar/DataBinding
 
 
+You can see the end result on the screenshots below
 
-## 
-
->tipYou can download a runnable project of the demonstrated example from our online  
-            [SDK repository here](https://github.com/telerik/xaml-sdk)
-            , after navigating OutlookBar/DataBinding
-
-## 
-
-You can see the end result on the screenshots below![outlook databinding result 1](images/outlook_databinding_result1.png)
+![outlook databinding result 1](images/outlook_databinding_result1.png)
 
 # See Also
 

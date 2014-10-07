@@ -10,11 +10,7 @@ position: 4
 
 # Center the Header of the RadWindow
 
-
-
-## 
-
-In order to allow the content in the header to be centered, you have to modify some elements in the __ControlTemplate__ of the __RadWindow__. Before continuing you might want to take a look at the template structure of the __RadWindow__. You might also find useful to learn [how to edit the default template of a control in Expression Blend](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html).
+In order to allow the content in the header to be centered, you have to modify some elements in the __ControlTemplate__ of the __RadWindow__. Before continuing you might want to take a look at the template structure of the __RadWindow__. You might also find useful to learn [how to edit the default template of a control]({%slug styling-apperance-editing-control-templates%}).
 
 In the __ControlTemplate__ for the __RadWindow__, find the __Grid__ with name "Header". It should have a __StackPanel__ placed in its first column:
 
@@ -36,9 +32,7 @@ In the __ControlTemplate__ for the __RadWindow__, find the __Grid__ with name "H
 	                      Content="{TemplateBinding Header}"
 	                      ContentTemplate="{TemplateBinding HeaderTemplate}" />
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 Replace the __StackPanel__ with a __Grid__, having two columns. Place the __IconContent__ in the first column, then place the __HeaderContent__ in the second one and set the __HorizontalAlignment__ property of the __ContentPresenter__ to __Stretch__.
 
@@ -65,9 +59,7 @@ Replace the __StackPanel__ with a __Grid__, having two columns. Place the __Icon
 	                      Content="{TemplateBinding Header}"
 	                      ContentTemplate="{TemplateBinding HeaderTemplate}" />
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 With this done, you can easily control the position of the content through the elements passed to the Header property:
 
@@ -82,9 +74,7 @@ With this done, you can easily control the position of the content through the e
 	radWindow.Height = 300;
 	radWindow.Style = this.Resources[ "RadWindowStyle" ] as Style;
 	radWindow.Header = textBlock;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -97,17 +87,11 @@ With this done, you can easily control the position of the content through the e
 	radWindow.Height = 300
 	radWindow.Style = TryCast(Me.Resources("RadWindowStyle"), Style)
 	radWindow.Header = textBlock
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the final result:
 
-
-
-
-         
-      ![](images/RadWindow_How_To_Center_the_Header_01.png)
+![](images/RadWindow_How_To_Center_the_Header_01.png)
 
 # See Also
 

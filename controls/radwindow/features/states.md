@@ -10,10 +10,6 @@ position: 3
 
 # States
 
-
-
-## 
-
 The __RadWindow__ has three states:
 
 * __Normal__ - this is the default state of the window and it appears as defined in the code.

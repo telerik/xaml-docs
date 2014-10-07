@@ -28,21 +28,21 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 ![](images/breadcrumb_features_overview_path_separator.png)
 
-* __IsLinearMode__- is of type bool and controls whether the __Breadcrumb__is in __Linear__mode. By default this property is __False__.
+* __IsLinearMode__- is of type bool and controls whether the __Breadcrumb__is in __Linear__ mode. By default this property is __False__ .
 
-* __IsIconVisible__- is of type bool and controls whether the __Breadcrumb.Image__ should be displayed. By default this property is __False.__
+* __IsIconVisible__- is of type bool and controls whether the __Breadcrumb.Image__ should be displayed. By default this property is __False__ .
 
-* __IsTextModeEnabled__- is of type bool and controls whether the __Breadcrumb.TextMode__is enabled. By default this property is __True__.
+* __IsTextModeEnabled__- is of type bool and controls whether the __Breadcrumb.TextMode__ is enabled. By default this property is __True__ .
 
-* __IsHistoryEnabled__- is of type bool and specifies whether history of visited paths should be kept. By default this property is __True__.
+* __IsHistoryEnabled__- is of type bool and specifies whether history of visited paths should be kept. By default this property is __True__ .
 
->tipEven if the __IsHistoryEnabled__property is set to False, you can add items to the RadBreadcrumb.HistoryItems collection. You can use this collection to create a set of favorites for example.
+>tipEven if the __IsHistoryEnabled__ property is set to False, you can add items to the RadBreadcrumb.HistoryItems collection. You can use this collection to create a set of favorites for example.
 
 ## RadBreadcrumbItem common properties
 
 * __Header__ - gets/sets the __Header__of the __BreadcrumbItem__
 
-* __DropDownHeader__ - gets/sets the __Header__of the __BreadcrumbItem__ that is used to visualize the item when displayed inside its parent's __DropDown__ content
+* __DropDownHeader__ - gets/sets the __Header__ of the __BreadcrumbItem__ that is used to visualize the item when displayed inside its parent's __DropDown__ content
 
 ![](images/breadcrumb_features_overview_dropdown_header.png)
 

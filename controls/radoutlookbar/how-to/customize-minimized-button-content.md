@@ -16,7 +16,7 @@ position: 3
 
 __RadOutlookBar__ exposes two properties that can be used to customize its __Minimized Button__ (the button that is displayed when the control is minimized).
 
->tipYou can see how the__Minimized Button__ looks by default in the [Visual Structure]({%slug radoutlookbar-visual-structure%}) article.
+>tipYou can see how the __Minimized Button__ looks by default in the [Visual Structure]({%slug radoutlookbar-visual-structure%}) article.
           
 
 The first property is __MinimizedButtonContent__ - defines the Content of the button.
@@ -24,8 +24,8 @@ The first property is __MinimizedButtonContent__ - defines the Content of the bu
 #### __XAML__
 
 {{region radoutlookbar-how-to-customize-minimized-button-content-0}}
-	        <telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button">
-	{{endregion}}
+    <telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button">
+{{endregion}}
 
 
 
@@ -37,26 +37,28 @@ The second property is __MinimizedButtonContentTemplate__ - defines the __Conten
 #### __XAML__
 
 {{region radoutlookbar-how-to-customize-minimized-button-content-1}}
-	            <telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button" IsMinimized="True">
-	                <telerik:RadOutlookBar.MinimizedButtonContentTemplate>
-	                    <DataTemplate>
-	                        <StackPanel Orientation="Horizontal">
-	                            <Polygon Points="8,0 0,5, 8,10" Fill="OrangeRed" Margin="0 0 5 0 " VerticalAlignment="Center" />
-	                            <TextBlock Text="{Binding}" FontWeight="Bold" Foreground="OrangeRed" />
-	                            <Polygon Points="0,0 8,5, 0,10" Fill="OrangeRed" Margin="5 0 0 0 " VerticalAlignment="Center" />
-	                        </StackPanel>
-	                    </DataTemplate>
-	                </telerik:RadOutlookBar.MinimizedButtonContentTemplate>
-	
-	                <telerik:RadOutlookBarItem Header="Contacts" Icon="contacts.png" />
-	                <telerik:RadOutlookBarItem Header="Folders" Icon="folders.png" />
-	                <telerik:RadOutlookBarItem Header="Mail" Icon="mail.png" />
-	            </telerik:RadOutlookBar>
-	{{endregion}}
+    <telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button" IsMinimized="True">
+        <telerik:RadOutlookBar.MinimizedButtonContentTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <Polygon Points="8,0 0,5, 8,10" Fill="OrangeRed" Margin="0 0 5 0 " VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding}" FontWeight="Bold" Foreground="OrangeRed" />
+                    <Polygon Points="0,0 8,5, 0,10" Fill="OrangeRed" Margin="5 0 0 0 " VerticalAlignment="Center" />
+                </StackPanel>
+            </DataTemplate>
+        </telerik:RadOutlookBar.MinimizedButtonContentTemplate>
+
+        <telerik:RadOutlookBarItem Header="Contacts" Icon="contacts.png" />
+        <telerik:RadOutlookBarItem Header="Folders" Icon="folders.png" />
+        <telerik:RadOutlookBarItem Header="Mail" Icon="mail.png" />
+    </telerik:RadOutlookBar>
+{{endregion}}
 
 
 
-You can see the end result on the picure below![outlookbar-how-to-customize-minimized-button-content-01](images/outlookbar-how-to-customize-minimized-button-content-01.png)
+You can see the end result on the picture below
+
+![outlookbar-how-to-customize-minimized-button-content-01](images/outlookbar-how-to-customize-minimized-button-content-01.png)
 
 # See Also
 

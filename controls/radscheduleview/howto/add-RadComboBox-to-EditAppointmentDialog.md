@@ -10,10 +10,7 @@ position: 1
 
 # Add RadComboBox to a custom EditAppointmentDialog
 
-
-
-This tutorial explains how to bind additional controls in a custom EditAppointmentDialog to properties in the ViewModel of the __RadScheduleView__.
-      
+This tutorial explains how to bind additional controls in a custom EditAppointmentDialog to properties in the ViewModel of the __RadScheduleView__.      
 
 Before we proceed, check these topics:
 
@@ -23,8 +20,7 @@ Before we proceed, check these topics:
 
 * [Custom Appointment]({%slug radscheduleview-features-appointments-custom-appointment%})
 
-Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle set to the generated Style:
-      
+Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle set to the generated Style:      
 
 #### __XAML__
 
@@ -34,12 +30,9 @@ Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle s
 	    EditAppointmentDialogStyle="{StaticResource EditAppointmentDialogStyle}">
 	   <telerik:RadScheduleView.ViewDefinitions>
 	       <telerik:DayViewDefinition />
-	 …
 	   </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 RadComboBox is added to the ControlTemplate of the EditAppointmentDialog:
 
@@ -47,16 +40,13 @@ RadComboBox is added to the ControlTemplate of the EditAppointmentDialog:
 
 {{region radscheduleview-howto-add-RadComboBox-to-EditAppointmentDialog_1}}
 	<ControlTemplate x:Key="EditAppointmentTemplate" TargetType="local:SchedulerDialog">
-	  ... 
+			... 
 	    <telerik:RadComboBox  />
-	  ...    
+			...    
 	</ControlTemplate>
-	{{endregion}}
+{{endregion}}
 
-
-
-The ViewModel of the __ScheduleView__ has an additional property called “ComboBoxItems” which will be used to populate it:
-      
+The ViewModel of the __ScheduleView__ has an additional property called “ComboBoxItems” which will be used to populate it:      
 
 #### __C#__
 
@@ -87,9 +77,7 @@ The ViewModel of the __ScheduleView__ has an additional property called “Combo
 	        };
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -129,11 +117,7 @@ The ViewModel of the __ScheduleView__ has an additional property called “Combo
 	        }
 	    End Sub
 	End Class
-	{{endregion}}
-
-
-
-## 
+{{endregion}}
 
 If the DataContext is set in XAML:
 
@@ -144,9 +128,7 @@ If the DataContext is set in XAML:
 	    <my:MyViewModel x:Key="MyViewModel" />
 	    ...
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 The ItemsSource can be bound like this:
 
@@ -154,28 +136,17 @@ The ItemsSource can be bound like this:
 
 {{region radscheduleview-howto-add-RadComboBox-to-EditAppointmentDialog_6}}
 	<telerik:RadComboBox ItemsSource="{Binding Source={StaticResource MyViewModel}, Path=ComboBoxItems, Mode=TwoWay}" />
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
+![RadComboBox in EditAppointmentDialog](images/radscheduleview_addcomboboxtoeditappointmentdialog.png)
 
-
-
-               
-            ![RadComboBox in EditAppointmentDialog](images/radscheduleview_addcomboboxtoeditappointmentdialog.png)
-
-
-
->tipIn order to preselect a certain item in the RadComboBox,  bind __SelectedItem__  to a  property in your [custom appointment]({%slug radscheduleview-features-appointments-custom-appointment%}) class:
-          
+>tipIn order to preselect a certain item in the RadComboBox,  bind __SelectedItem__  to a  property in your [custom appointment]({%slug radscheduleview-features-appointments-custom-appointment%}) class:          
 
 #### __XAML__
 
 {{region radscheduleview-howto-add-RadComboBox-to-EditAppointmentDialog_4}}
 	<telerik:RadComboBox SelectedItem="{Binding Occurrence.Appointment.ComboBoxItem, Mode=TwoWay}"
 	            ItemsSource="{Binding Source={StaticResource MyViewModel}, Path=ComboBoxItems, Mode=TwoWay}" />
-	{{endregion}}
-
-
+{{endregion}}

@@ -10,13 +10,9 @@ position: 12
 
 # Custom Slots
 
-
-
 This article describes how you can create a custom SpecialSlot, add custom properties to it and bind the properties in the Slot template.
 
 >Please check [here]({%slug radscheduleview-features-speacialslots%}) for more details about SpecialSlots.
-
-## 
 
 Let's for example have the following RadScheduleView grouped by "Calendar" ResourceType:
 
@@ -42,9 +38,7 @@ Let's for example have the following RadScheduleView grouped by "Calendar" Resou
 			</telerik:GroupDescriptionCollection>
 		</telerik:RadScheduleView.GroupDescriptionsSource>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 We will define a custom Slot class, create a collection of custom Slot objects which then will be set to the SpecialSlotsSource property.Also in this tutorial we will crete custom ScheduleViewStyleSelector class and define the needed Styles.
 
@@ -81,9 +75,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 >Note how __Copy__ and __CopyFrom__ methods in the custom slot class are overriden!
 
@@ -105,9 +97,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 			Description = "coffee break"
 		}
 	};
-	{{endregion}}
-
-
+{{endregion}}
 
 * The next step is to create the __ScheduleViewStyleSelector__ class:
 
@@ -140,9 +130,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 			return base.SelectStyle(item, container, activeViewDefinition);
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 * and to define the Style:
 
@@ -167,9 +155,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 			</Style>
 		</local:SpecialSlotStyleSelector.BreakSlotStyle>
 	</local:SpecialSlotStyleSelector>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Finally, bind them to __SpecialSlotsSource__ and __SpecialSlotsStyleSelector__ properties:
 
@@ -184,8 +170,8 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 		</telerik:RadScheduleView.ViewDefinitions>
 		...
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
+Here is the result:
 
-
-Here is the result:![radscheduleview custom slots](images/radscheduleview_custom_slots.png)
+![radscheduleview custom slots](images/radscheduleview_custom_slots.png)

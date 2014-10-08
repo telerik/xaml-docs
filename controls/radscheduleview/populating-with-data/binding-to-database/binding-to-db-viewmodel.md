@@ -11,13 +11,11 @@ site_name: Silverlight
 
 # View and ViewModel
 
-
+This article will demonstrate how to implement the View and the ViewModel.
 
 ## Presentation tier (xaml)
 
 When the models are defined, we need to create the __ViewModel__ (refer to __ScheduleViewViewModel__ class) and bind the ScheduleView control in the xaml:
-
-
 
 #### __XAML__
 
@@ -49,15 +47,11 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 		</telerik:RadScheduleView>
 		<Button Grid.Row="1" Content="Save data" HorizontalAlignment="Center" Command="{Binding SaveCommand}" VerticalAlignment="Center"/>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 >The appointments are loaded from the database when the VisibleRangeChanged command is executed.
 
 When "Save data" button is clicked, we save the data to the server.
-
-
 
 #### __C#__
 
@@ -83,22 +77,15 @@ When "Save data" button is clicked, we save the data to the server.
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 ## ViewModel
 
-In the constructor we load the data for the ScheduleView control (without appointments, they are loaded later). 
-      First, we need to load the SqlResource and SqlResourceTypes. When both are loaded, we can added the resources to the ResourceTypes collection.
-	  
+In the constructor we load the data for the ScheduleView control (without appointments, they are loaded later). First, we need to load the SqlResource and SqlResourceTypes. When both are loaded, we can added the resources to the ResourceTypes collection. 
 
-Load the SqlTimeMarkers and the SqlCategories and add them to the TimeMarkers and Categories collections.
-		
+Load the SqlTimeMarkers and the SqlCategories and add them to the TimeMarkers and Categories collections.		
 
 Here is the code:
-
-
 
 #### __C#__
 
@@ -125,14 +112,9 @@ Here is the code:
 			this.Categories.AddRange((o as LoadOperation).Entities);
 		};
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 Also, we need to handle the Appointments.CollectionChanged event and in the handler we add or remove the items from the EntitySets:
-        
-
-
 
 #### __C#__
 
@@ -168,6 +150,4 @@ Also, we need to handle the Appointments.CollectionChanged event and in the hand
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}

@@ -10,8 +10,6 @@ position: 1
 
 # Snapping Appointments
 
-
-
 RadScheduleView provides the option to automatically snap the appointments while resizing/dragging them. This behavior is enabled through the __SnapAppointments__ Boolean property:
 
 #### __XAML__
@@ -20,14 +18,13 @@ RadScheduleView provides the option to automatically snap the appointments while
 	<telerik:RadScheduleView SnapAppointments="True">
 	...
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
+This way during drag/resize operation the Start/End times of the appointment will be rounded according to the TimeSlots’ length:
 
+![radscheduleview snapappointments 1](images/radscheduleview_snapappointments_1.png)
 
-This way during drag/resize operation the Start/End times of the appointment will be rounded according to the TimeSlots’ length:![radscheduleview snapappointments 1](images/radscheduleview_snapappointments_1.png)
-
-You could set MinorTickLength property of the ViewDefinition in order to snap the appointments to different duration:
-     
+You could set MinorTickLength property of the ViewDefinition in order to snap the appointments to different duration:     
 
 #### __XAML__
 
@@ -37,19 +34,17 @@ You could set MinorTickLength property of the ViewDefinition in order to snap th
 			<telerik:DayViewDefinition MinorTickLength = "15min" />		
 		</telerik:RadScheduleView.ViewDefinitions>	
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
+And the result is:
 
-
-And the result is:![radscheduleview snapappointments 2](images/radscheduleview_snapappointments_2.png)
+![radscheduleview snapappointments 2](images/radscheduleview_snapappointments_2.png)
 
 >tipYou can check [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration%}) article for more details about MinorTickLength property.
 
 ## Customizing the SnapBehavior
 
-For more advanced scenarios when snapping of the appointments is not directly connected with the time slots, the RadScheduleView control provides a way to customize the snapping of the appointments in a more detailed manner. 
-        You just need to create a class which inherits from __Telerik.Windows.Controls.ScheduleView.SnapBehavior__ and to override its SnapStart and SnapEnd methods.
-        Then an instance of this class should be set to the __SnapBehavior__ property of RaddScheduleView.
+For more advanced scenarios when snapping of the appointments is not directly connected with the time slots, the RadScheduleView control provides a way to customize the snapping of the appointments in a more detailed manner. You just need to create a class which inherits from __Telerik.Windows.Controls.ScheduleView.SnapBehavior__ and to override its SnapStart and SnapEnd methods. Then an instance of this class should be set to the __SnapBehavior__ property of RaddScheduleView.
 
 In the next example it is demonstrated how to set the snapping to 5 minutes regardless of the TimeSlots length.
 
@@ -61,9 +56,7 @@ In the next example it is demonstrated how to set the snapping to 5 minutes rega
 	public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
 	{
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 * Override the needed methods:
 
@@ -108,9 +101,7 @@ In the next example it is demonstrated how to set the snapping to 5 minutes rega
 			return timeToSnap.AddTicks(-difference);
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 * Attach the newly created custom behavior to the ScheduleView control:
 
@@ -123,8 +114,8 @@ In the next example it is demonstrated how to set the snapping to 5 minutes rega
 			<local:CustomSnapBehavior />
 		</telerik:RadScheduleView.SnapBehavior>
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
+So now the appointments are snapped to 5 minutes:
 
-
-So now the appointments are snapped to 5 minutes:![radscheduleview snapappointments 3](images/radscheduleview_snapappointments_3.png)
+![radscheduleview snapappointments 3](images/radscheduleview_snapappointments_3.png)

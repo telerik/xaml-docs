@@ -10,28 +10,19 @@ position: 2
 
 # Update the Resources
 
-
-
 This article will show how you can update the visible resources by which the RadScheduleView is grouped.
 
 There are two approaches you can use:
-   		
-
-
 
 * [Using Filtering feature of the ScheduleView;](#using-filtering-feature-of-the-scheduleview)
 
-* [Adding/removing resources at run time.](#adding/removing-resources-at-run-time)
+* [Adding/removing resources at run time.](#addingremoving-resources-at-run-time)
 
 ## Using Filtering feature of the ScheduleView
 
 We will use __GroupFilter__ predicate of the ViewDefinition to specify which resources will be visible per some condition.
-		
 
 Let’s have the following ScheduleView grouped by “Location” resource type:
-		
-
-
 
 #### __XAML__
 
@@ -46,14 +37,9 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 			</telerik:GroupDescriptionCollection>
 		</telerik:RadScheduleView.GroupDescriptionsSource>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 We will add checkboxes for each resource in order to allow the user to change their Visibility:
-		
-
-
 
 #### __XAML__
 
@@ -63,13 +49,9 @@ We will add checkboxes for each resource in order to allow the user to change th
 		<CheckBox Content="Show Room2" IsChecked="{Binding ShowRoom2, Mode=TwoWay}" />
 		<CheckBox Content="Show Room3" IsChecked="{Binding ShowRoom3, Mode=TwoWay}" />
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the GroupFilter predicate to the ViewModel:
-
-
 
 #### __C#__
 
@@ -143,13 +125,9 @@ Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the G
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 Add the UpdateGroupFilter() method:
-
-
 
 #### __C#__
 
@@ -175,9 +153,7 @@ Add the UpdateGroupFilter() method:
 	{
 		this.GroupFilter = new Func<object, bool>(this.GroupFilterFunc);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 So checking/unchecking the checkboxes will update the visible Resources in the ViewDefintion:
 
@@ -185,17 +161,13 @@ So checking/unchecking the checkboxes will update the visible Resources in the V
 
 ![radscheduleview updateresources 3](images/radscheduleview_updateresources_3.png)
 
->tipYou can check this approach in RadScheduleView Grouping and Filtering demo 
-		{% if site.site_name == 'Silverlight' %}[here](http://demos.telerik.com/silverlight/#ScheduleView/Grouping/GroupingAndFiltering){% endif %}{% if site.site_name == 'WPF' %}[here](http://demos.telerik.com/wpf/){% endif %}
-		.
+>tipYou can check this approach in RadScheduleView Grouping and Filtering demo {% if site.site_name == 'Silverlight' %}[here](http://demos.telerik.com/silverlight/#ScheduleView/Grouping/GroupingAndFiltering){% endif %}{% if site.site_name == 'WPF' %}[here](http://demos.telerik.com/wpf/){% endif %}.
 
 ## Adding/removing resources at run time
 
 When adding/removing resources from the Resources collection of  a certain resource type, the changes will not be reflected in the View immediately - you should also reset the whole ResourceType.  Just remove and add it again to the ResourceTypesSource collection of the ScheduleView.
-    	
 
 >We intentionally do not listen for changes in the Resources collection of a ResourceType (actually all of its properties) because of performance considerations. That’s why resetting the ResourceType is needed in these cases.
-    		
 
 For example, if we have the RadScheduleView grouped again by “Location” ResourceType:
 
@@ -203,29 +175,21 @@ For example, if we have the RadScheduleView grouped again by “Location” Reso
 
 Calling the following code will add an additional “Room4” resource:
 
-
-
 #### __C#__
 
 {{region radscheduleview-howto-update-resources_4}}
 	locationResType.Resources.Add(new Resource("Room4"));
 	ResourceTypes.Remove(locationResType);
 	ResourceTypes.Add(locationResType);
-	{{endregion}}
-
-
+{{endregion}}
 
 where __ResourceTypes__ is the collection to which ResourceTypesSource property of the ScheduleView is bound:
-
-
 
 #### __XAML__
 
 {{region radscheduleview-howto-update-resources_5}}
 	<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}" … />
-	{{endregion}}
-
-
+{{endregion}}
 
 This will lead to the following result:
 

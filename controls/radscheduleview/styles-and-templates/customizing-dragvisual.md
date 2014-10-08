@@ -10,9 +10,9 @@ position: 6
 
 # Customizing the DragVisual
 
+This help article explains how you could customize the visual element that is shown while the user is dragging an appointment in the __ScheduleView__ control.
 
-
-This help article explains how you could customize the visual element that is shown while the user is dragging an appointment in the __ScheduleView__ control.![radscheduleview dragvisual 1](images/radscheduleview_dragvisual_1.png)
+![radscheduleview dragvisual 1](images/radscheduleview_dragvisual_1.png)
 
 You could change its look by setting DragVisualTemplate and DragVisualStyle properties.  We will go through each of them separately:
 
@@ -36,11 +36,11 @@ Here is the default DragVisualTemplate:
 			MaxHeight="66" 
 			TextTrimming="WordEllipsis" />
 	</DataTemplate>  
-	{{endregion}}
+{{endregion}}
 
+Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed to cover  the cases when multiple appointments are dragged:
 
-
-Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed to cover  the cases when multiple appointments are dragged:![radscheduleview dragvisual 2](images/radscheduleview_dragvisual_2.png)
+![radscheduleview dragvisual 2](images/radscheduleview_dragvisual_2.png)
 
 Let’s for example, change the DataTemplate  as following:
 
@@ -57,14 +57,10 @@ Let’s for example, change the DataTemplate  as following:
 					TextTrimming="WordEllipsis" />
 		</StackPanel>
 	</DataTemplate>
-	{{endregion}}
+{{endregion}}
 
-
-
->If you’re using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you will be able to reference DraggedAppointmentsToLocalizedStringConverter directly.  In other case you should manually add it as a resource before the DragVisualContentTemplate declaration:
-					 
-							<telerik:DraggedAppointmentsToLocalizedStringConverter x:Key="DraggedAppointmentsToLocalizedStringConverter" />				
-							
+>If you’re using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you will be able to reference DraggedAppointmentsToLocalizedStringConverter directly.  In other case you should manually add it as a resource before the DragVisualContentTemplate declaration: 
+<telerik:DraggedAppointmentsToLocalizedStringConverter x:Key="DraggedAppointmentsToLocalizedStringConverter" />
 
 Then set the newly created template to the DragVisualTemplate property of the ScheduleView:
 
@@ -75,11 +71,11 @@ Then set the newly created template to the DragVisualTemplate property of the Sc
 							DragVisualTemplate="{StaticResource DragVisualContentTemplate}">
 		...
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
+Here is the result:
 
-
-Here is the result:![radscheduleview dragvisual 3](images/radscheduleview_dragvisual_3.png)
+![radscheduleview dragvisual 3](images/radscheduleview_dragvisual_3.png)
 
 ## DragVisualStyle
 
@@ -87,10 +83,7 @@ __DragVisualStyle__ property defines the look and behavior of the DragVisual ele
 
 There are two approaches for customizing the DragVisualStyle according to the way you’re setting a theme to RadScheduleView:
 
-* If you’re using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) and merge the needed XAML files as 
-              ResourceDictionaries in App.xaml, then you could create there a new Style for DragVisual element based on the default style. 
-              This way you will be able to modify only certain properties of the default style. Here is a simple example below:
-            
+* If you’re using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) and merge the needed XAML files as ResourceDictionaries in App.xaml, then you could create there a new Style for DragVisual element based on the default style. This way you will be able to modify only certain properties of the default style. Here is a simple example below:           
 
 #### __XAML__
 
@@ -107,9 +100,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 		    <Setter Property="BorderThickness" Value="2" />
 	    </Style>
 	</Application.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 >The complete definition of the DragVisualStyle can be found in RadControls installation folder in Themes.Impicit folder.  Select the theme that you’re using and open Telerik.Windows.Controls.ScheduleView.xaml. Then search for “DragVisualStyle” in this XAML file.
 
@@ -141,7 +132,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 			</Setter.Value>
 		</Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 Where *local* is:
 
@@ -149,13 +140,9 @@ Where *local* is:
 
 {{region radscheduleview-styles-and-templates-customizing-dragvisual_6}}
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView”
-	{{endregion}}
+{{endregion}}
 
-
-
->The custom __DragVisualStyle__ must be always created in the App.xaml file as the __DragVisualProvider__ is placed
-              inside of another visual tree and cannot be targeted from the {% if site.site_name == 'Silverlight' %}Page{% endif %}/{% if site.site_name == 'WPF' %}Window{% endif %} where RadScheduleView is placed.
-            
+>The custom __DragVisualStyle__ must be always created in the App.xaml file as the __DragVisualProvider__ is placed inside of another visual tree and cannot be targeted from the {% if site.site_name == 'Silverlight' %}Page{% endif %}/{% if site.site_name == 'WPF' %}Window{% endif %} where RadScheduleView is placed.            
 
 Either approach you’ve selected, the final step is to set the custom DragVisual style to DragVisualStyle property of the ScheduleView:
 
@@ -166,8 +153,8 @@ Either approach you’ve selected, the final step is to set the custom DragVisua
 							 DragVisualStyle="{StaticResource CustomDragVisualStyle}">
 		...
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
+The result is:
 
-
-The result is:![radscheduleview dragvisual 4](images/radscheduleview_dragvisual_4.png)
+![radscheduleview dragvisual 4](images/radscheduleview_dragvisual_4.png)

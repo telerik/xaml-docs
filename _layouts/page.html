@@ -5,27 +5,34 @@ layout: index
     <div id="page-nav">
         <div id="page-tree"></div>
         <script>
-        $("#page-tree").kendoTreeView({
-            dataSource: {
-                transport: {
-                    read: {
-                        url: "{{site.baseurl}}/{{page.category}}.json",
-                        dataType: "json"
-                    }
-                },
-                schema: {
-                    model: {
-                        id: "path",
-                        children: "items",
-                        hasChildren: "items"
-                    }
-                }
-            },
-            select: preventParentSelection,
-            template: navigationTemplate("{{site.baseurl}}/"),
-            dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
-        });
+			$("#page-tree").kendoTreeView({
+				dataSource: {
+					transport: {
+						read: {
+							url: "{{site.baseurl}}/{{page.category}}.json",
+							dataType: "json"
+						}
+					},
+					schema: {
+						model: {
+							id: "path",
+							children: "items",
+							hasChildren: "items"
+						}
+					}
+				},
+				select: preventParentSelection,
+				template: navigationTemplate("{{site.baseurl}}/"),
+				dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
+			});
         </script>
+		<script type="text/javascript">		
+			window.onload = function(){
+				var tree = $("#page-tree").data("kendoTreeView");
+				var selected = tree.select()
+				$("#page-nav").animate({scrollTop:selected.offset().top - $("#page-header").height() - $("#page-nav").height() / 2}, 300);				
+			}
+		</script>		
     </div>
 
     <div id="page-article">       
@@ -33,6 +40,7 @@ layout: index
             {{ content }}
         </article>
     </div>
+	
 </div>
 
 {% include footer.html %}

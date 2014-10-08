@@ -10,8 +10,6 @@ position: 5
 
 # Templating the GroupHeaders
 
-
-
 This help article explains in details how to use GroupHeaderContentTemplateSelector in order to set different DataTemplates to the GroupHeaders of __RadScheduleView__.
 
 The article covers the following topics:
@@ -22,16 +20,14 @@ The article covers the following topics:
 
 ## How to generate and use GroupHeaderContentTemplateSelector
 
->Since Q2 2011 release the GroupHeaderContentTemplateSelector contains only two templates – HorizontalTemplate and VerticalTemplate. 
-      		
+>Since Q2 2011 release the GroupHeaderContentTemplateSelector contains only two templates – HorizontalTemplate and VerticalTemplate.      		
 
 Choose one of the following approaches to obtain the source code of GroupHeaderContentTemplateSelector:
 
-* __Generate GroupHeaderContentTemplateSelector from installation folder__In the RadControls installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the GroupHeaderContentTemplateSelector and any needed resources that it uses.
+* __Generate GroupHeaderContentTemplateSelector from installation folder__ - In the RadControls installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the GroupHeaderContentTemplateSelector and any needed resources that it uses.
         	
 
-* __Generate GroupHeaderContentTemplateSelector from RadScheduleView template__Generate first the RadScheduleView template from Expression Blend ( Edit Template > Edit a Copy). Search for the GroupHeaderContentTemplateSelector and copy the style together with all needed resources that it uses.
-        	
+* __Generate GroupHeaderContentTemplateSelector from RadScheduleView template__ - Generate first the RadScheduleView template from Expression Blend ( Edit Template > Edit a Copy). Search for the GroupHeaderContentTemplateSelector and copy the style together with all needed resources that it uses.        	
 
 The end result should include the following XAML code:
 
@@ -57,9 +53,7 @@ The end result should include the following XAML code:
 			</DataTemplate>
 		</local:GroupHeaderTemplateSelector.VerticalTemplate>
 	</local:GroupHeaderTemplateSelector>
-	{{endregion}}
-
-
+{{endregion}}
 
 Note the use of the local  and telerikPrimitives namespaces from the raw source:
 
@@ -68,9 +62,7 @@ Note the use of the local  and telerikPrimitives namespaces from the raw source:
 {{region radscheduleview-styles-and-templates-templating-groupheaders_1}}
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
 	xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls.Primitives;assembly=Telerik.Windows.Controls"
-	{{endregion}}
-
-
+{{endregion}}
 
 The selector is applied to our instance of RadScheduleView:
 
@@ -80,9 +72,7 @@ The selector is applied to our instance of RadScheduleView:
 	<telerik:RadScheduleView x:Name="scheduleView" 
 	        AppointmentsSource="{Binding Appointments}" 
 	        GroupHeaderContentTemplateSelector="{StaticResource GroupHeaderContentTemplateSelector }">
-	{{endregion}}
-
-
+{{endregion}}
 
 ## How to create a custom GroupHeaderContentTemplateSelector
 
@@ -96,12 +86,9 @@ Let’s, for example, create a custom Resource like this:
 		public string Photo { get; set; }
 		public Brush Brush { get; set; }
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-And add the EmployeeResource to “Employee” ResourceType. Note that the RadScheduleView is grouped by this resource type.
-       
+And add the EmployeeResource to “Employee” ResourceType. Note that the RadScheduleView is grouped by this resource type.       
 
 #### __XAML__
 
@@ -126,12 +113,9 @@ And add the EmployeeResource to “Employee” ResourceType. Note that the RadSc
 			</telerik:ResourceTypeCollection>
 		</telerik:RadScheduleView.ResourceTypesSource>
 	</telerik:RadScheduleView>   
-	{{endregion}}
+{{endregion}}
 
-
-
-In order to set different templates  to the GroupHeaders , we should create a custom class which inherits ScheduleViewDataTemplateSelector  and overrides its SelectTemplate method. Also we need to add the DataTemplates  for resource  and date GroupHeaders and return the corresponding template:
-       
+In order to set different templates  to the GroupHeaders , we should create a custom class which inherits ScheduleViewDataTemplateSelector  and overrides its SelectTemplate method. Also we need to add the DataTemplates  for resource  and date GroupHeaders and return the corresponding template:       
 
 #### __C#__
 
@@ -178,9 +162,7 @@ In order to set different templates  to the GroupHeaders , we should create a cu
 			return base.SelectTemplate(item, container, activeViewDeifinition);
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 Add the DataTemplates to the XAML:
 
@@ -224,19 +206,15 @@ Add the DataTemplates to the XAML:
 			</DataTemplate>
 		</local:CustomGroupHeaderContentTemplateSelector.VerticalResourceTemplate>
 	</local:CustomGroupHeaderContentTemplateSelector>
-	{{endregion}}
+{{endregion}}
 
-
-
->Note how the properties of the custom resource are binded using Name property:
+>Note how the properties of the custom resource are bound using Name property:
 
 #### __XAML__
 
 {{region radscheduleview-styles-and-templates-templating-groupheaders_8}}
 	Source="{Binding Name.Photo}"
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally, set the GroupHeaderContentTemplateSelector property of the ScheduleView:
 
@@ -247,15 +225,10 @@ Finally, set the GroupHeaderContentTemplateSelector property of the ScheduleView
 			GroupHeaderContentTemplateSelector="{StaticResource CustomGroupHeaderContentTemplateSelector}">
 		...	
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
 ![](images/radscheduleview_groupheadercontenttemplate.png)
 
-Check out the 
-      	{% if site.site_name == 'Silverlight' %}[online demo](http://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/GroupHeaderTemplate){% endif %}{% if site.site_name == 'WPF' %}GroupHeaderTemplate Example at 
-      	[WPF demos](http://demos.telerik.com/wpf/){% endif %}
-      	to see the GroupHeaderContentTemplateSelector in action.
+Check out the {% if site.site_name == 'Silverlight' %}[online demo](http://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/GroupHeaderTemplate){% endif %}{% if site.site_name == 'WPF' %}GroupHeaderTemplate Example at [WPF demos](http://demos.telerik.com/wpf/){% endif %} to see the GroupHeaderContentTemplateSelector in action.

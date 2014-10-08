@@ -10,103 +10,77 @@ position: 1
 
 # Changes
 
-
-
 This article describes the release history of the control.
 
-For the complete Release History of RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} go to
-        {% if site.site_name == 'Silverlight' %}[What's New Section](http://www.telerik.com/products/silverlight/whats-new.aspx){% endif %}{% if site.site_name == 'WPF' %}[What's New Section](http://www.telerik.com/products/wpf/whats-new.aspx){% endif %}.
-      
+For the complete Release History of RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} go to {% if site.site_name == 'Silverlight' %}[What's New Section](http://www.telerik.com/products/silverlight/whats-new.aspx){% endif %}{% if site.site_name == 'WPF' %}[What's New Section](http://www.telerik.com/products/wpf/whats-new.aspx){% endif %}.
 
 ## Q1 2014
 
 ### What's New
 
 * Make property to remove easily the delete button from the appointment
-                
 
 ### What's Fixed
 
 * DialogClosing event is fired more than once
-                {% if site.site_name == 'Silverlight' %}
 
+{% if site.site_name == 'Silverlight' %}
 * Cancel deletion for recurrent tasks in some themes doesn't work
-                  {% endif %}
+{% endif %}
 
 ## Q3 2013
 
 ### What's New
 
-* Provide way to change the recurrent pattern when dragging appointment or a notification message that this can't be done this way
-                
+* Provide way to change the recurrent pattern when dragging appointment or a notification message that this can't be done this way                
 
 ### What's Fixed
 
-* Allow to set ToolTips on SpecialSlots in RadScheduleView
-                
+* Allow to set ToolTips on SpecialSlots in RadScheduleView                
 
-* Unable to use DatePicker's keyboard navigation in ScheduleView
-                
+* Unable to use DatePicker's keyboard navigation in ScheduleView                
 
-* AppointmentSaving event is fired when opening the EditAppointmentDialog, if previously in AppointmentSaving the e.Cancel = true
-                
+* AppointmentSaving event is fired when opening the EditAppointmentDialog, if previously in AppointmentSaving the e.Cancel = true                
 
-* Special slots tooltip is not visible in Windows8Touch theme
-                
+* Special slots tooltip is not visible in Windows8Touch theme                
 
-* When used the constructor with Null set to DaysOfMonth property and get the iCal after this, the rule line end with "BYMONTHDAY=".
-                
+* When used the constructor with Null set to DaysOfMonth property and get the iCal after this, the rule line end with "BYMONTHDAY=".                
 
 * Weekly recurring appointment series do not update correctly when they are dragged/resized.
-                
 
-* Exception is thrown in the VS 2010 designer.
-                
+* Exception is thrown in the VS 2010 designer.                
 
-* If the RecurrencePattern's DaysOfMonth is set to null upon opening the edit recurrence dialog a NullReferenceException is thrown
-                
+* If the RecurrencePattern's DaysOfMonth is set to null upon opening the edit recurrence dialog a NullReferenceException is thrown                
 
 ## Q2 2013
 
 ### What's New
 
-* Make the new constructor of the AppointmentDialogViewModel public
-                
+* Make the new constructor of the AppointmentDialogViewModel public                
 
-* Delete obsoleted InvertedBooleanConverter from RadScheduleView
-                
+* Delete obsoleted InvertedBooleanConverter from RadScheduleView                
 
-* The delete button is showing on selection in order to be clickable with touch
-                
+* The delete button is showing on selection in order to be clickable with touch                
 
 ### What's Fixed
 
-* When the user tries to drag an appointment inside a read-only slot, RadScheduleView does not accept any drop from external source anymore
-                
+* When the user tries to drag an appointment inside a read-only slot, RadScheduleView does not accept any drop from external source anymore                
 
-* PropertyChanged event of the RecurrencePattern is not fired when its properties are changed
-                
+* PropertyChanged event of the RecurrencePattern is not fired when its properties are changed                
 
-* When the DayStartTime and DayEndTime properties of the TimelineViewDefinition are changed dynamically the slots are not measured properly
-                
+* When the DayStartTime and DayEndTime properties of the TimelineViewDefinition are changed dynamically the slots are not measured properly                
 
-* The application hangs when resizing it
-                
+* The application hangs when resizing it                
 
-* OccurrenceFilter property is not updating the view of RadScheduleView if it is changed at run-time
-                
+* OccurrenceFilter property is not updating the view of RadScheduleView if it is changed at run-time                
 
-* NavigationHeader has wrong Height in Windows8 theme
-                
+* NavigationHeader has wrong Height in Windows8 theme                
 
-* An ArgumentOutOfRangeException is thrown when the CurrentDate is set to MinValue and you click on the empty group header
-                
+* An ArgumentOutOfRangeException is thrown when the CurrentDate is set to MinValue and you click on the empty group header                
 
-* Border is missing on today slot in the Windows8Touch theme of RadScheduleView
-                
+* Border is missing on today slot in the Windows8Touch theme of RadScheduleView                
 
-* Adding a Slot with End = DateTime MaxValue to the SpecialSlotsSource collection of the ScheduleView raises an exception
-                
+* Adding a Slot with End = DateTime MaxValue to the SpecialSlotsSource collection of the ScheduleView raises an exception                
 
 ## Q1 2013
 

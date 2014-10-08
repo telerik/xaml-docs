@@ -128,6 +128,29 @@ navigation:
     controls/radcombobox/populating-with-data:
         title: Populating With Data
         position: 8
+    controls/radwindow/features:
+        title: Features
+        position: 6
+    controls/radlistbox/drag-and-drop:
+        title: Drag and Drop
+        position: 5
+    controls/radscheduleview/end-user-capabilities:
+        title: End-User Capabilities
+        position: 8
+    controls/radscheduleview/features/appointments:
+        title: Appointments
+        position: 3
+    controls/radscheduleview/features/recurrence:
+        title: Recurrence
+        position: 4
+    controls/radscheduleview/features/viewdefinitions:
+        title: ViewDefinitions
+        position: 5
+    controls/radscheduleview/features/timeruler:
+        title: TimeRuler
+        position: 6
+    controls/radscheduleview/populating-with-data/binding-to-database:
+        title: Binding To Database
 ## X3 Controls End
 
 ## X2 Controls Start

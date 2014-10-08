@@ -10,19 +10,11 @@ position: 0
 
 # Configuring the TimeRuler ticks
 
-
-
-## Overview
-
-The __MajorTickLength__ and __MinorTicklength__ properties of the RadScheduleView ViewDefinitions are used to determine the density of the time ruler items. You can play with different combinations to find the one that best suits your needs. The appointments will snap with regards to the minor ticks.  Also TimelineViewDefinition has an additional __GroupTickLength__ property used to set the length of the group. 
-        
+The __MajorTickLength__ and __MinorTicklength__ properties of the RadScheduleView ViewDefinitions are used to determine the density of the time ruler items. You can play with different combinations to find the one that best suits your needs. The appointments will snap with regards to the minor ticks.  Also TimelineViewDefinition has an additional __GroupTickLength__ property used to set the length of the group.
 
 Let’s have the RadScheduleView defined like this:
 
-
-
 #### __XAML__
-
 {{region radscheduleview-features-timeruler-ticks-configuration_0}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
 		<telerik:RadScheduleView.ViewDefinitions>
@@ -31,54 +23,56 @@ Let’s have the RadScheduleView defined like this:
 			<telerik:TimelineViewDefinition MinorTickLength="6h" MajorTickLength="1d" GroupTickLength="2d" />
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 This will lead to the following results:
 
 * In DayViewDefinition:
-    	![radscheduleview features timeruler day View](images/radscheduleview_features_timeruler_dayView.png)
+
+![radscheduleview features timeruler day View](images/radscheduleview_features_timeruler_dayView.png)
 
 * In WeekViewDefinition:
-    	![radscheduleview features timeruler week View](images/radscheduleview_features_timeruler_weekView.png)
 
-* In TimelineViewDefinition:![radscheduleview features timeruler timeline View](images/radscheduleview_features_timeruler_timelineView.png)
+![radscheduleview features timeruler week View](images/radscheduleview_features_timeruler_weekView.png)
 
->You can check [this article]({%slug radscheduleview-features-formatting%}) where it is explained how the dates and times on the time ruler can be formatted.
-    	
+* In TimelineViewDefinition:
+
+![radscheduleview features timeruler timeline View](images/radscheduleview_features_timeruler_timelineView.png)
+
+>You can check [this article]({%slug radscheduleview-features-formatting%}) where it is explained how the dates and times on the time ruler can be formatted.   	
 
 ## Setting the properties
 
 The ticklength properties can be set in the XAML and in code-behind:
 
-* In XAML:
-       You can use the following formats:
-       
+* In XAML: 
 
-* min,  minute, minutes; 
+	You can use the following formats:
 
-* h, hour, hours;
+	* min,  minute, minutes;
 
-* d, day, days;
+	* h, hour, hours;
 
-* w, week, weeks;
+	* d, day, days;
 
-* m, month, months;
+	* w, week, weeks;
 
-* y, year, years.Here are some examples:
+	* m, month, months;
+
+	* y, year, years.
+
+Here are some examples:
 
 #### __XAML__
 
 {{region radscheduleview-features-timeruler-ticks-configuration_1}}
 	<telerik:DayViewDefinition MinorTickLength="5min" MajorTickLength="1h" />				
 	<telerik:TimelineViewDefinition MinorTickLength="1day" MajorTickLength="2days" GroupTickLength="1week" />
-	{{endregion}}
-
-
+{{endregion}}
 
 * In Code-Behind:
-       The same can be set in code-behind like this:
+
+	The same can be set in code-behind like this:
 
 #### __C#__
 
@@ -98,10 +92,7 @@ The ticklength properties can be set in the XAML and in code-behind:
 		GroupTickLength = new FixedTickProvider(new DateTimeInterval(0, 0, 1))
 	};
 	this.ScheduleView.ViewDefinitions.Add(timelineView);
-	{{endregion}}
+{{endregion}}
 
 
-
-You can check the ScheduleView Configurator example at 
-      	{% if site.site_name == 'Silverlight' %}[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#ScheduleView/ScheduleViewConfigurator){% endif %}{% if site.site_name == 'WPF' %}[RadControls for WPF demos](http://demos.telerik.com/wpf/){% endif %} to see the tick length properties in action.
-      
+You can check the ScheduleView Configurator example at {% if site.site_name == 'Silverlight' %}[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#ScheduleView/ScheduleViewConfigurator){% endif %}{% if site.site_name == 'WPF' %}[RadControls for WPF demos](http://demos.telerik.com/wpf/){% endif %} to see the tick length properties in action.

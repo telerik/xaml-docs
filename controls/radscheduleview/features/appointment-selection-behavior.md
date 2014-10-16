@@ -10,8 +10,6 @@ position: 18
 
 # AppointmentSelectionBehavior
 
-
-
 In RadScheduleView there are plugin selection behaviors that make it possible to customize the logic behind all selections in the control. There are selection behaviors like AppointmentSelectionBehavior, SlotSelectionBehavior etc.
 
 AppointmentSelectionBehavior is responsible for executing the selection logic of appointments in the control. Its default behavior is for single, multiple and extended selection. It is possible to customize the behavior in order to restrict selecting appointments in different resources, selecting more than one appointment etc.
@@ -22,13 +20,7 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 >Before proceeding with this tutorial first read about [Resources in RadScheduleView]({%slug radscheduleview-features-resources%}).
 
-
-
-* 
-
-Create CustomAppointmentSelectionBehavior class that inherits AppointmentSelectionBehavior class:
-
-
+* Create CustomAppointmentSelectionBehavior class that inherits AppointmentSelectionBehavior class:
 
 #### __C#__
 
@@ -36,15 +28,9 @@ Create CustomAppointmentSelectionBehavior class that inherits AppointmentSelecti
 	public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
 	{
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-Override the GetSelectedAppointments method:
-
-
+* Override the GetSelectedAppointments method:
 
 #### __C#__
 
@@ -71,15 +57,9 @@ Override the GetSelectedAppointments method:
 			return occurence is IAppointment ? ((IAppointment)occurence) : ((Occurrence)occurence).Appointment;
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-All that is left is to attach the newly created custom behavior to the ScheduleView:
-
-
+* All that is left is to attach the newly created custom behavior to the ScheduleView:
 
 #### __XAML__
 
@@ -91,13 +71,9 @@ All that is left is to attach the newly created custom behavior to the ScheduleV
 		</telerik:RadScheduleView.AppointmentSelectionBehavior>
 		...
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally the ScheduleView control in the XAML should look like this:
-
-
 
 #### __XAML__
 
@@ -123,35 +99,23 @@ Finally the ScheduleView control in the XAML should look like this:
 		</telerik:RadScheduleView.AppointmentSelectionBehavior>
 		...
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 The end result is:
 
-
-
-* 
-
-With the default AppointmentSelectionBehavior (before selection):
+* With the default AppointmentSelectionBehavior (before selection):
 
 ![radscheduleview features appointment selection behavior 0](images/radscheduleview_features_appointment_selection_behavior_0.png)
 
-* 
-
-With the default AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
+* With the default AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
 
 ![radscheduleview features appointment selection behavior 1](images/radscheduleview_features_appointment_selection_behavior_1.png)
 
-* 
-
-With the custom AppointmentSelectionBehavior (before selection):
+* With the custom AppointmentSelectionBehavior (before selection):
 
 ![radscheduleview features appointment selection behavior 2](images/radscheduleview_features_appointment_selection_behavior_2.png)
 
-* 
-
-With the custom AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
+* With the custom AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
 
 ![radscheduleview features appointment selection behavior 3](images/radscheduleview_features_appointment_selection_behavior_3.png)
 

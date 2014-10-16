@@ -223,7 +223,7 @@ a img {
 }
 
 #page-tree {
-    padding: 0 20px 40px 40px;
+    padding: 0 20px 40px;
     white-space: normal;
     word-break: break-word;
     overflow: hidden;
@@ -491,6 +491,10 @@ blockquote.important {
 	background: #f8eee3 url(../images/important-icon.png) no-repeat 15px center;
 }
 
+blockquote.caution {
+	background: #eddee1 url(../images/caution-icon.png) no-repeat 15px center;
+}
+
 blockquote.tip {
 	background: #def4e4 url(../images/tip-icon.png) no-repeat 15px center;
 }
@@ -660,3 +664,26 @@ article h1:first-of-type:before {
 	top: 50px !important;
 }
 
+#page-article table {
+                border: 1px solid #2CB144;
+                border-collapse: collapse;
+}
+
+#page-article table th {
+                background: #2CB144;
+                color: #fff;
+}
+
+#page-article table tr:nth-child(2n) td {
+                background: #F6F3EA;
+}
+
+#page-article table th, #page-article table td {
+                padding: 3px 5px;
+                text-align: left;
+}
+
+#page-article table td {
+    border: 1px solid #e1e5ea;
+    color: #555; 
+}

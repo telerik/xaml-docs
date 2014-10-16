@@ -10,34 +10,25 @@ position: 5
 
 # Binding to WCF Service
 
-
-
 The purpose of this tutorial is to show you how to populate a __RadComboBox__ with a data from a __WCF Service__ in two ways:
-      
 
 * [Using plain methods call in the code-behind](#Using_Plain_Methods_Call_in_the_Code-Behind)
 
 * [Using MVVM approach](#Using_MVVM_Approach)
 
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
-        
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 Before proceeding further with this tutorial, you need to create a new application and a __RadComboBox__ declaration in your XAML.
-      
 
 #### __XAML__
 
 {{region radcombobox-populating-with-data-binding-to-wcf_0}}
 	<telerik:RadComboBox x:Name="radComboBox"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Using Plain Methods Call in the Code-Behind
 
-* 
-            Add a reference to your WCF Service.
-          
+* Add a reference to your WCF Service.
 
 * Switch to the code-behind and create a new instance of your WCF Service client.
 
@@ -45,25 +36,17 @@ Before proceeding further with this tutorial, you need to create a new applicati
 
 {{region radcombobox-populating-with-data-binding-to-wcf_1}}
 	ComboBoxWcfServiceClient serviceClient = new ComboBoxWcfServiceClient();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radcombobox-populating-with-data-binding-to-wcf_2}}
 	Dim serviceClient As New ComboBoxWcfServiceClient()
-	{{endregion}}
+{{endregion}}
 
+>tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
 
-
->tip
-          For more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
-        
-
-* 
-            The __ComboBox__ control will be populated with all __Products__ from the __Northwind__ database. In the drop-down list the __ProductName__ and the __UnitPrice__ properties will be displayed. Add the following code which will make the initial load of the objects.
-          
+* The __ComboBox__ control will be populated with all __Products__ from the __Northwind__ database. In the drop-down list the __ProductName__ and the __UnitPrice__ properties will be displayed. Add the following code which will make the initial load of the objects.
 
 #### __C#__
 
@@ -77,9 +60,7 @@ Before proceeding further with this tutorial, you need to create a new applicati
 	{
 	    radComboBox.ItemsSource = e.Result;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -91,9 +72,7 @@ Before proceeding further with this tutorial, you need to create a new applicati
 	Private Sub serviceClient_GetProductsCompleted(ByVal sender As Object, ByVal e As GetProductsCompletedEventArgs)
 	    radComboBox.ItemsSource = e.Result
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -102,9 +81,7 @@ Before proceeding further with this tutorial, you need to create a new applicati
 	{
 	    this.radComboBox.ItemsSource = serviceClient.GetProducts();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -112,13 +89,9 @@ Before proceeding further with this tutorial, you need to create a new applicati
 	Private Sub BeginRequest()
 	    Me.radComboBox.ItemsSource = serviceClient.GetProducts()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            You need to declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
-          
+* You need to declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
 
 #### __XAML__
 
@@ -133,37 +106,25 @@ Before proceeding further with this tutorial, you need to create a new applicati
 	        </StackPanel>
 	    </DataTemplate>
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 Find your __RadComboBox__ declaration and set the declared __DataTemplate__ to its __ItemTemplate__ property.
-        
 
 #### __XAML__
 
 {{region radcombobox-populating-with-data-binding-to-wcf_8}}
 	<telerik:RadComboBox x:Name="radComboBox" ItemTemplate="{StaticResource CustomItemTemplate}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Run your demo, the result can be seen on the next image:
 
-
-
-
-               
-            ![](images/RadComboBox_PopulatingWithData_BindingToWcfService_010.png)
+![](images/RadComboBox_PopulatingWithData_BindingToWcfService_010.png)
 
 ## Using MVVM Approach
 
-This section will show you how to populate your __RadComboBox__control in a MVVM manner. The __RadComboBox__will be bound to a data source object, that has a property __Products__. When the control is loaded, all products from the __Products__table in the Northwind database are loaded asynchronously.
-        
+This section will show you how to populate your __RadComboBox__control in a MVVM manner. The __RadComboBox__ will be bound to a data source object, that has a property __Products__. When the control is loaded, all products from the __Products__ table in the Northwind database are loaded asynchronously.
 
-* 
-            Create a new class named __NorthwindDataSource__.
-          
+* Create a new class named __NorthwindDataSource__.
 
 #### __C#__
 
@@ -171,30 +132,20 @@ This section will show you how to populate your __RadComboBox__control in a MVVM
 	public class NorthwindDataSource
 	{
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radcombobox-populating-with-data-binding-to-wcf_10}}
 	Public Class NorthwindDataSource
 	End Class
-	{{endregion}}
+{{endregion}}
 
+* Add a reference to your WCF Service
 
+* In the __NorthwindDataSource__class add a reference to an __ObservableCollection__of __Products__.
 
-* 
-            Add a reference to your WCF Service
-          
-
-* 
-            In the __NorthwindDataSource__class add a reference to an __ObservableCollection__of __Products__.
-          
-
-* 
-            In the __NorthwindDataSource__class add a reference to your WCF Service client:
-          
+* In the __NorthwindDataSource__class add a reference to your WCF Service client:
 
 #### __C#__
 
@@ -215,9 +166,7 @@ This section will show you how to populate your __RadComboBox__control in a MVVM
 	        protected set;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -240,38 +189,29 @@ This section will show you how to populate your __RadComboBox__control in a MVVM
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
+>tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
 
-
->tip
-          For more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
-        
-
-* 
-            Add the following code in the __constructor__ of the __NorthwindDataSource__. It will make the initial load of all __Products__from the database:
-          
+* Add the following code in the __constructor__ of the __NorthwindDataSource__. It will make the initial load of all __Products__ from the database:
 
 #### __C#__
 
 {{region radcombobox-populating-with-data-binding-to-wcf_13}}
 	this.serviceClient.GetProductsCompleted += new EventHandler<GetProductsCompletedEventArgs>( serviceClient_GetProductsCompleted );
 	this.serviceClient.GetProductsAsync();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radcombobox-populating-with-data-binding-to-wcf_14}}
 	AddHandler Me.serviceClient.GetProductsCompleted, AddressOf serviceClient_GetProductsCompleted
 	Me.serviceClient.GetProductsAsync()
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
-
 And here is the code handling the __GetProductsCompleted__ event:
-          {% endif %}
+{% endif %}
 
 #### __C#__
 
@@ -283,9 +223,7 @@ And here is the code handling the __GetProductsCompleted__ event:
 	        this.Products.Add( p );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -295,9 +233,7 @@ And here is the code handling the __GetProductsCompleted__ event:
 	        Me.Products.Add(p)
 	    Next
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -306,9 +242,7 @@ And here is the code handling the __GetProductsCompleted__ event:
 	{
 	    this.Products.Add( p );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -316,13 +250,9 @@ And here is the code handling the __GetProductsCompleted__ event:
 	For Each p As Products In serviceClient.GetProducts()
 	    Me.Products.Add(p)
 	Next
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Declare the __NorthwindDataSource__ object as a resource in your application.
-          
+* Declare the __NorthwindDataSource__ object as a resource in your application.
 
 #### __XAML__
 
@@ -330,13 +260,9 @@ And here is the code handling the __GetProductsCompleted__ event:
 	<UserControl.Resources>
 	    <example:NorthwindDataSource x:Key="DataSource"/>   
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
-          
+* Declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
 
 #### __XAML__
 
@@ -353,13 +279,9 @@ And here is the code handling the __GetProductsCompleted__ event:
 	
 	    <example:NorthwindDataSource x:Key="DataSource"/>
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Update your __RadComboBox__declaration - set the __ItemsSource__and __ItemTemplate__ properties.
-          
+* Update your __RadComboBox__ declaration - set the __ItemsSource__ and __ItemTemplate__ properties.
 
 #### __XAML__
 
@@ -367,17 +289,11 @@ And here is the code handling the __GetProductsCompleted__ event:
 	<telerik:RadComboBox x:Name="radComboBox"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}"
 	    ItemTemplate="{StaticResource CustomItemTemplate}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Run your demo, the result can be seen on the snapshot below:
 
-
-
-
-               
-            ![](images/RadComboBox_PopulatingWithData_BindingToWcfService_020.png)
+![](images/RadComboBox_PopulatingWithData_BindingToWcfService_020.png)
 
 # See Also
 

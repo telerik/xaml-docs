@@ -10,10 +10,7 @@ position: 8
 
 # Time Markers
 
-
-
-__RadScheduleView__ provides you with a built-in time markers support. You can assign a time marker to each one of your appointments, thus making them easily distinguishable.
-		
+__RadScheduleView__ provides you with a built-in time markers support. You can assign a time marker to each one of your appointments, thus making them easily distinguishable.		
 
 This chapter will cover the following topics:
 
@@ -33,11 +30,9 @@ On the snapshot below you can see four appointments where three of them have tim
 
 ## Adding TimeMarkers to the RadScheduleView
 
-By default the RadScheduleView has predefined list of time markers i.e. "Busy", "Free", etc. 
-		
+By default the RadScheduleView has predefined list of time markers i.e. "Busy", "Free", etc.
 
 However, there are cases when new time markers are needed and you have to create them on your own, as it is shown below. 
-		
 
 Each time marker has three important characteristics:
 
@@ -46,7 +41,6 @@ Each time marker has three important characteristics:
 1. __TimeMarkerBrush__ - each category has a color brush assigned.
 
 The time markers available in the RadScheduleView are defined in the TimeMarkersSource property (IEnumarable). Just add or remove time markers to that collection in order to add or remove time markers to the RadScheduleView itself.
-		
 
 #### __XAML__
 
@@ -62,9 +56,7 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>		
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 or
 
@@ -85,9 +77,7 @@ or
 			};
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -99,9 +89,7 @@ or
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>		
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally, set the DataContext:
 
@@ -109,9 +97,7 @@ Finally, set the DataContext:
 
 {{region radscheduleview-features-timemarkers_4}}
 	this.DataContext = new MyViewModel();
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
@@ -120,3 +106,4 @@ Here is the result:
 # See Also
 
  * [Implementing View-ViewModel ]({%slug radscheduleview-populating-with-data-implementing-view-model%})
+ 

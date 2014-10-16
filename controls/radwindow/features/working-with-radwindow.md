@@ -10,23 +10,21 @@ position: 0
 
 # Working with RadWindow
 
-
-
 This topic will explain you how to work with the __RadWindow__ in details. It will make you familiar with the following:
 
-* [Create a RadWindow](#Create_a_RadWindow)
+* [Create a RadWindow](#create-a-radwindow)
 
-* [Show the RadWindow](#Show_the_RadWindow)
+* [Show the RadWindow](#show-the-radwindow)
 
-* [Add content to the RadWindow](#Add_content_to_the_RadWindow)
+* [Add content to the RadWindow](#add-content-to-the-radwindow)
 
-* [Program the RadWindow](#Program_the_RadWindow)
+* [Program the RadWindow](#program-the-radwindow)
 
-* [Modify the appearance of the RadWindow](#Modify_the_appearance_of_the_RadWindow)
+* [Modify the appearance of the RadWindow](#modify-the-appearance-of-the-radwindow)
 
 ## Create a RadWindow
 
-In order to use the __RadWindow__ in your application you have to add a reference to the __Telerik.Windows.Controls.Navigation__assembly in your project.
+In order to use the __RadWindow__ in your application you have to add a reference to the __Telerik.Windows.Controls.Navigation__ assembly in your project.
 
 After the reference is available, you can declare a __RadWindow__. Here is an example.
 
@@ -36,9 +34,7 @@ After the reference is available, you can declare a __RadWindow__. Here is an ex
 	RadWindow radWindow = new RadWindow();
 	radWindow.Width = 400;
 	radWindow.Height = 300;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -46,9 +42,7 @@ After the reference is available, you can declare a __RadWindow__. Here is an ex
 	Dim radWindow As New RadWindow()
 	radWindow.Width = 400
 	radWindow.Height = 300
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Show the RadWindow
 
@@ -62,17 +56,13 @@ Call the __Show()__ method of the __RadWindow__ instance to open it as a __norma
 
 {{region radwindow-features-working-with-radwindow_2}}
 	radWindow.Show();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radwindow-features-working-with-radwindow_3}}
 	radWindow.Show()
-	{{endregion}}
-
-
+{{endregion}}
 
 Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a __modal dialog window__.
 
@@ -80,23 +70,15 @@ Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a _
 
 {{region radwindow-features-working-with-radwindow_4}}
 	radWindow.ShowDialog();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radwindow-features-working-with-radwindow_5}}
 	radWindow.ShowDialog()
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadWindow_Working_with_RadWindow_01.png)
+![](images/RadWindow_Working_with_RadWindow_01.png)
 
 >tipLearn more about positioning the __RadWindow__ by reading the [Positioning]({%slug radwindow-features-positioning%}) topic.
 
@@ -116,9 +98,7 @@ If you have a window-specific content, use the __Content__ property.
 	Grid grid = new Grid();
 	grid.Background = new SolidColorBrush( Color.FromArgb( 255, 240, 255, 255 ) );
 	radWindow.Content = grid;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -126,9 +106,7 @@ If you have a window-specific content, use the __Content__ property.
 	Dim grid As New Grid()
 	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
 	radWindow.Content = grid
-	{{endregion}}
-
-
+{{endregion}}
 
 If you want to share a common layout structure for the content of multiple windows, define an appropriate __DataTemplate__ and set it to the __ContentTemplate__ property of the __RadWindow__.
 
@@ -140,31 +118,21 @@ If you want to share a common layout structure for the content of multiple windo
 	        <Grid Background="Azure" />
 	    </DataTemplate>
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region radwindow-features-working-with-radwindow_9}}
 	radWindow.ContentTemplate = this.Resources[ "WindowContentTemplate" ] as DataTemplate;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radwindow-features-working-with-radwindow_10}}
 	radWindow.ContentTemplate = TryCast(Me.Resources("WindowContentTemplate"), DataTemplate)
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadWindow_Working_with_RadWindow_02.png)
+![](images/RadWindow_Working_with_RadWindow_02.png)
 
 ## Program the RadWindow
 

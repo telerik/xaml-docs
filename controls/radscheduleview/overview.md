@@ -10,22 +10,20 @@ position: 0
 
 # Overview
 
-
-
-## 
-
-{% if site.site_name == 'WPF' %}![RadScheduleView Logo](images/scheduleview_logo.png){% endif %}{% if site.site_name == 'Silverlight' %}![RadScheduleView Logo](images/scheduleview_silverlight_logo.png){% endif %}
+{% if site.site_name == 'WPF' %}
+![RadScheduleView Logo](images/scheduleview_logo.png)
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+![RadScheduleView Logo](images/scheduleview_silverlight_logo.png)
+{% endif %}
 
 Thank you for choosing Telerik __RadScheduleView__!
-        
 
-__RadScheduleView__is a radically different scheduling component, going beyond the standard Microsoft Outlook-style control. The __RadScheduleView__ empowers end users with unprecedented control over precision and flexibility when handling their appointments. This is achieved through features such as multi-level grouping, powerful zoom for smart navigation through a large number of appointments and blazing fast scrolling.
-        
+__RadScheduleView__ is a radically different scheduling component, going beyond the standard Microsoft Outlook-style control. The __RadScheduleView__ empowers end users with unprecedented control over precision and flexibility when handling their appointments. This is achieved through features such as multi-level grouping, powerful zoom for smart navigation through a large number of appointments and blazing fast scrolling.
 
 ![scheduleview overview](images/scheduleview_overview.png)
 
 __RadScheduleView__ key features list:
-        
 
 * __Performance__
 
@@ -43,7 +41,7 @@ __RadScheduleView__ key features list:
 
 * __Zooming__
 
-* __Snap____Appointments__
+* __Snap Appointments__
 
 * __Creating Recurrent Appointment using TimeSlot selection__
 
@@ -54,7 +52,6 @@ __RadScheduleView__ key features list:
 * __Flexible Recurring Appointments Support__
 
 A complete list with all key features can be found [here]({%slug radscheduleview-key-features%}).
-        
 
 Check out the online demo at:{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/){% endif %}
 

@@ -11,10 +11,6 @@ site_name: Silverlight
 
 # Bind a RadComboBox to Enum Values
 
-
-
-## 
-
 The purpose of this topic is to show you how to build a __RadComboBox__ containing all values of a specific Enum. This is a fairly easy task and can be done in only few steps.
 
 * The best solution here is to create a view model for the Enum:
@@ -52,9 +48,7 @@ The purpose of this topic is to show you how to build a __RadComboBox__ containi
 	                        .Select<FieldInfo, object>( ( FieldInfo x ) => x.GetValue( this.EnumType ) );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -87,9 +81,7 @@ The purpose of this topic is to show you how to build a __RadComboBox__ containi
 	        Me.Values = Me.EnumType.GetFields(System.Reflection.BindingFlags.[Public] Or System.Reflection.BindingFlags.[Static]).[Select](Of FieldInfo, Object)(Function(ByVal x As FieldInfo) x.GetValue(Me.EnumType))
 	    End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 The trick here is the __TypeConverter__ attribute on the __EnumType__ property, that allows you to declare the __EnumModel__ in XAML:
 
@@ -99,9 +91,7 @@ The trick here is the __TypeConverter__ attribute on the __EnumType__ property, 
 	<UserControl.Resources>
 	    <example:EnumViewModel x:Name="DataSource" EnumType="System.Windows.Controls.ClickMode"/>
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the structure of the __TypeTypeConverter__ class which derives from __TypeConverter__.
 
@@ -144,9 +134,7 @@ Here is the structure of the __TypeTypeConverter__ class which derives from __Ty
 	        return Type.GetType( assemblyName.Replace( knownType.FullName, typeName ), false );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -183,9 +171,7 @@ Here is the structure of the __TypeTypeConverter__ class which derives from __Ty
 	        Return Type.[GetType](assemblyName.Replace(knownType.FullName, typeName), False)
 	    End Function
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Take a closer look at the tricky __ConvertFrom()__ method. It does several things:
 
@@ -195,9 +181,9 @@ Take a closer look at the tricky __ConvertFrom()__ method. It does several thing
 
 * You can also add code, which tries to load the type from other known assemblies.
 
-There are some limitations in this approach, though – you should modify the __TypeTypeConverter__class so that it can "recognize" the assemblies that might contain the enumerations, defined in XAML. Of course, if you create the __EnumModel__in the code-behind you will be able to provide any __Enum Type__you want – in this case the modifications in the __TypeTypeConverter__class __won't be necessary__.
+There are some limitations in this approach, though – you should modify the __TypeTypeConverter__ class so that it can "recognize" the assemblies that might contain the enumerations, defined in XAML. Of course, if you create the __EnumModel__ in the code-behind you will be able to provide any __Enum Type__ you want – in this case the modifications in the __TypeTypeConverter__ class __won't be necessary__.
 
-* The second step is to find your __RadComboBox__ declaration and to set the __EnumModel__ to the __ItemsSource__property.
+* The second step is to find your __RadComboBox__ declaration and to set the __EnumModel__ to the __ItemsSource__ property.
 
 #### __XAML__
 
@@ -209,13 +195,9 @@ There are some limitations in this approach, though – you should modify the __
 	<telerik:RadComboBox x:Name="radComboBox"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Values}">
 	</telerik:RadComboBox>
-	{{endregion}}
+{{endregion}}
 
-
-
-* The final step is to set the __DisplayMemberPath__attribute with __empty string value__. It has to be present, in order for the __RadComboBox__ to be able to properly display its selected item. If you remove it, the control will display the __Enum’s integer value__ in its selection box, instead of its text representation.
-
-
+* The final step is to set the __DisplayMemberPath__ attribute with __empty string value__. It has to be present, in order for the __RadComboBox__ to be able to properly display its selected item. If you remove it, the control will display the __Enum’s integer value__ in its selection box, instead of its text representation.
 
 #### __XAML__
 
@@ -227,20 +209,14 @@ There are some limitations in this approach, though – you should modify the __
 	<telerik:RadComboBox x:Name="radComboBox"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Values}" DisplayMemberPath="">
 	</telerik:RadComboBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 The result can be seen on the image below. All members of the __System.Windows.Controls.ClickMode__ enumeration are loaded in the __RadComboBox__.
 
-
-
-
-         
-      ![](images/RadComboBox_HowTo_BindToEnumValues_010.png)
+![](images/RadComboBox_HowTo_BindToEnumValues_010.png)
 
 # See Also
 
  * [AutoComplete]({%slug radcombobox-features-autocomplete%})
 
- * [DataBinding]({%slug radcombobox-features-databinding%})[](24F6C44F-4E3B-4432-8F5C-A60A256AFF84)
+ * [DataBinding]({%slug radcombobox-features-databinding%})

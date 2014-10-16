@@ -38,8 +38,7 @@ The __System.Void Telerik.Windows.Zip.ZipPackage::Add(System.String[])__ method 
 
 ### What to do now
 
-You can use the __System.Void Telerik.Windows.Zip.ZipPackage::Add(System.Collections.Generic.IEnumerable<string>)__ 
-              method instead.
+You can use the __System.Void Telerik.Windows.Zip.ZipPackage::Add(System.Collections.Generic.IEnumerable<string>)__   method instead.
             
 
 ### Changed
@@ -49,8 +48,7 @@ The __System.Void Telerik.Windows.Zip.ZipPackage::Add(System.String[])__ method 
 
 ### What to do now
 
-You can use the __System.Void Telerik.Windows.Zip.ZipPackage::Add(System.Collections.Generic.IEnumerable<string>)__ 
-              method instead.
+You can use the __System.Void Telerik.Windows.Zip.ZipPackage::Add(System.Collections.Generic.IEnumerable<string>)__  method instead.
             
 
 ### Changed
@@ -65,20 +63,17 @@ You can use the __System.Void Telerik.Windows.Zip.ZipPackage::AddStream(System.I
 
 ### Changed
 
-The __System.Void Telerik.Windows.Zip.ZipPackage::AddStream(Telerik.Windows.Zip.ZipCompression, System.String, System.IO.Stream, 
-              System.DateTime)__ method is removed.
+The __System.Void Telerik.Windows.Zip.ZipPackage::AddStream(Telerik.Windows.Zip.ZipCompression, System.String, System.IO.Stream, System.DateTime)__ method is removed.
             
 
 ### What to do now
 
-You can use the __System.Void Telerik.Windows.Zip.ZipPackage::AddStream(System.IO.Stream, System.String, 
-              Telerik.Windows.Zip.ZipCompression, System.DateTime)__ method instead.
+You can use the __System.Void Telerik.Windows.Zip.ZipPackage::AddStream(System.IO.Stream, System.String, Telerik.Windows.Zip.ZipCompression, System.DateTime)__ method instead.
             
 
 ### Changed
 
-The __Telerik.Windows.Zip.ZipPackage Telerik.Windows.Zip.ZipPackage::Open(System.IO.Stream, System.IO.FileAccess)__ method 
-              is removed.
+The __Telerik.Windows.Zip.ZipPackage Telerik.Windows.Zip.ZipPackage::Open(System.IO.Stream, System.IO.FileAccess)__ method is removed.
             
 
 ### What to do now

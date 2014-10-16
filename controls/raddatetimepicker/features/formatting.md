@@ -10,17 +10,13 @@ position: 7
 
 # Formatting
 
-
-
-
-
 The __RadDateTimePicker__ gives you a few possibilities to change the way your data is formatted. This topic will go through the following sections:
 
-* [Changing the display format](#Changing_the_display_format)
+* [Changing the display format](#changing-the-display-format)
 
-* [Changing the culture](#Changing_the_culture)
+* [Changing the culture](#changing-the-culture)
 
-* [Defining a custom format](#Defining_a_custom_format)
+* [Defining a custom format](#defining-a-custom-format)
 
 ## Changing the display format
 
@@ -38,7 +34,7 @@ For example:
 
 {{region raddatetimepicker-features-formatting_0}}
 	<telerik:RadDateTimePicker DisplayFormat="Long"/>
-	{{endregion}}
+{{endregion}}
 
 ![](images/dateTimePicker_features_formatting_010.png)
 
@@ -52,33 +48,29 @@ Here is an example:
 
 {{region raddatetimepicker-features-formatting_1}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" Culture="de"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region raddatetimepicker-features-formatting_2}}
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo( "de" );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region raddatetimepicker-features-formatting_3}}
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("de")
-	{{endregion}}
+{{endregion}}
 
+Here is the result:
 
-
-Here is the result:![](images/dateTimePicker_features_formatting_020.png)
+![](images/dateTimePicker_features_formatting_020.png)
 
 ## Defining a custom format
 
-You can easily customize the date format in the __RadDateTimePicker__ through its __Culture__ property. You do this by defining a custom __DateFormatInfo__ object and later assigning it to the __CultureInfo's____DateTimeFormat__ property.
+You can easily customize the date format in the __RadDateTimePicker__ through its __Culture__ property. You do this by defining a custom __DateFormatInfo__ object and later assigning it to the __CultureInfo's DateTimeFormat__ property.
 
-Here is an example of defining a custom format for the __RadDateTimePicker's__items:
+Here is an example of defining a custom format for the __RadDateTimePicker's__ items:
 
 #### __C#__
 
@@ -86,7 +78,7 @@ Here is an example of defining a custom format for the __RadDateTimePicker's__it
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo("en-US");
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "dd-MMM";
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "h tt";
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -96,17 +88,17 @@ Here is an example of defining a custom format for the __RadDateTimePicker's__it
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("en-US")
 	Me.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "dd-MMM"
 	Me.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "h tt"
-	{{endregion}}
-
-
+{{endregion}}
 
 >In this example the "tt" in the __ShortTimePattern__ represents the AM and PM values and also you have omitted the year from the __ShortDatePattern's__ definition.
 
->For more information about the custom date and time format specifiers and the result string produced by each format specifier, check out the 
-            [Custom Date and Time Format Strings topic](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx).
-          
+<!-- -->
 
-Here is the result:![](images/dateTimePicker_features_formatting_030.png)
+>For more information about the custom date and time format specifiers and the result string produced by each format specifier, check out the [Custom Date and Time Format Strings topic](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx).
+
+Here is the result:
+
+![](images/dateTimePicker_features_formatting_030.png)
 
 # See Also
 

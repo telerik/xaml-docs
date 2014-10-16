@@ -10,16 +10,13 @@ position: 0
 
 # Prevent Dialogs from Opening
 
-
-
 This article covers the following topics:
 
-* [How to hide a RadScheduleView dialog](#hidedialog)
+* [How to hide a RadScheduleView dialog](#how-to-hide-a-radscheduleview-dialog)
 
-* [How to skip ConfirmDeleteDialog.](#skipconfirmdeletedialog)
+* [How to skip ConfirmDeleteDialog](#how-to-skip-confirmdeletedialog)
 
-* [How to preselect a certain option in RecurrenceChoiceDialog.](#preselectrecurrencechoicedialog)
-
+* [How to preselect a certain option in RecurrenceChoiceDialog](#how-to-preselect--a-certain-option-in-recurrencechoicedialog)
 
 
 ## How to hide a RadScheduleView dialog
@@ -32,11 +29,9 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 
 {{region radscheduleview-howto-prevent-dialogs-from-opening_0}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowDialog="RadScheduleView_ShowDialog">
-	…
+		…
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -46,9 +41,7 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 	    if (e.DialogViewModel is AppointmentDialogViewModel)
 	        e.Cancel = true;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -58,9 +51,7 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 	       e.Cancel = True
 	    End If
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >To learn more about __RadScheduleView__ events, check [here]({%slug radscheduleview-events-overview%}).
 
@@ -79,9 +70,7 @@ In this case __DefaultDialogResult__ property of the event args should be set in
 	        e.Cancel = true;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -92,11 +81,7 @@ In this case __DefaultDialogResult__ property of the event args should be set in
 	        e.Cancel = True
 	    End If
 	End Sub
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 ## How to preselect  a certain option in RecurrenceChoiceDialog
 
@@ -113,9 +98,7 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	        dialogViewModel.IsSeriesModeSelected = true;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -126,8 +109,6 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	       dialogViewModel.IsSeriesModeSelected = True
 	   End If
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipCheck [here]({%slug radscheduleview-features-custom-dialogs%}) for more information about RadScheduleView dialogs.

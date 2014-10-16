@@ -10,13 +10,11 @@ position: 5
 
 # Date Items
 
-
-
 When you use the __RadDateTimePicker__ control you can customize the date items included in the __Calendar__ view. You can define start and end dates for the entries in the calendar. You do this using the following properties:
 
-* __DisplayDateStart__ - it is of type __DateTime__and____represents the starting date of the date items in your __Calendar.__
+* __DisplayDateStart__ - it is of type __DateTime__ and represents the starting date of the date items in your __Calendar__.
 
-* __DisplayDateEnd__ - it is again of type __DateTime__ and represents the ending date of the items in your __Calendar.__
+* __DisplayDateEnd__ - it is again of type __DateTime__ and represents the ending date of the items in your __Calendar__.
 
 If you specify these properties you will be able to select a date only in the range of the chosen start and end dates.
 
@@ -26,17 +24,11 @@ Here is an example of setting these properties in XAML:
 
 {{region raddatetimepicker-features-date-items_0}}
 	<telerik:RadDateTimePicker DisplayDateStart="1/1/2010" DisplayDateEnd="11/15/2010"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
-
-
-
-         
-      ![](images/dateTimePicker_features_date_items_010.png)
+![](images/dateTimePicker_features_date_items_010.png)
 
 The Next Month button is not active because of the __DisplayDateEnd__ property's value set in the example.
 
@@ -54,17 +46,11 @@ For example:
 
 {{region raddatetimepicker-features-date-items_1}}
 	<telerik:RadDateTimePicker DisplayDate="4/1/2010"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 The result of this example will be that when you click on the __RadDateTimePicker's__ drop-down button for the first time in the calendar you will not see the current month and year but instead the month and year defined in the __DisplayDate__ property.
 
-
-
-
-         
-      ![](images/dateTimePicker_features_date_items_020.png)
+![](images/dateTimePicker_features_date_items_020.png)
 
 >tipIf you set the __DisplayDate__ property to a value which is not in the range of the __DisplayDateStart__ and __DisplayDateEnd__ properties you will end up with a parse error exception.
 

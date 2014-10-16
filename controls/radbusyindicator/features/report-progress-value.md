@@ -10,10 +10,6 @@ position: 2
 
 # Report Progress Value
 
-
-
-## 
-
 >tip To read more about the determined and indetermined __RadBusyIndicator__ control's modes, look [here]({%slug radbusyindicator-features-progress-determination%}).
 
 This topic will describe the scenario in which you have a determined __RadBusyIndicator__ control which you want to be available for a predefined amount of time. In this case the __RadBusyIndicator__ provides you out of the box with a way to visualize the progress.
@@ -34,11 +30,9 @@ The first thing you have to do is to specify that you want your indicator to be 
 	                Click="showIndicatorButton_Click" />
 	    </Grid>
 	</telerik:RadBusyIndicator>
-	{{endregion}}
+{{endregion}}
 
-
-
-Notice that you have also defined the __ProgressValue__ property. For the purpose of this example, by using data binding you have bound it to a property named in the same way located in the code-behind. Through this binding you will be changing this property to report any shifts in the __RadBusyIndicator's__progress value. 
+Notice that you have also defined the __ProgressValue__ property. For the purpose of this example, by using data binding you have bound it to a property named in the same way located in the code-behind. Through this binding you will be changing this property to report any shifts in the __RadBusyIndicator's__ progress value. 
 
 >tipYou can further change the default way of the progress changes notifications by customizing the [Busy Content]({%slug radbusyindicator-features-custom-busy-content%}).
 
@@ -46,27 +40,21 @@ In the code behind you have to:
 
 * Create and initialize the __DispathcherTimer__ object.
 
-* Handle the click event for the button:
-          	
+* Handle the click event for the button:          	
 
-* Enable the __RadBusyIndicator__ by setting its __IsBusy__ property to __True__.
+	* Enable the __RadBusyIndicator__ by setting its __IsBusy__ property to __True__.
 
-* Start the timer which will represent the ongoing process.
+	* Start the timer which will represent the ongoing process.
 
-* Handle the tick event for the timer:
-          	
+* Handle the tick event for the timer:          	
 
-* Modify the progress value.
+	* Modify the progress value.
 
-* Disable the __RadBusyIndicator__ by setting its __IsBusy__ property to __False__in a specific condition.
+	* Disable the __RadBusyIndicator__ by setting its __IsBusy__ property to __False__ in a specific condition.
 
->
-
-In order to use the __DispatcherTimer__and the __INotifyPropertyChanged__ interface you will need to add the following usings/imports: 
-
-* System.ComponentModel
-
-* System.Windows.Threading
+>In order to use the __DispatcherTimer__ and the __INotifyPropertyChanged__ interface you will need to add the following usings/imports: 
+>* System.ComponentModel
+>* System.Windows.Threading
 
 #### __C#__
 
@@ -115,9 +103,7 @@ In order to use the __DispatcherTimer__and the __INotifyPropertyChanged__ interf
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -163,19 +149,11 @@ In order to use the __DispatcherTimer__and the __INotifyPropertyChanged__ interf
 			End If
 		End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the final result:
 
-
-
-
-         
-      ![](images/radbusyindicator_features_report_progress_value_010.png)
-
-
+![](images/radbusyindicator_features_report_progress_value_010.png)
 
 # See Also
 

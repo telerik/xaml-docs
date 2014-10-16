@@ -10,10 +10,6 @@ position: 4
 
 # Delayed Display
 
-
-
-## 
-
 When using the __RadBusyIndicator__ in your applications you can notify the users about an ongoing process with a specific delay. By changing the __DisplayAfter__ property to a certain __TimeSpan__, the __RadBusyIndicator__ is shown after the corresponding amount of time elapses. 
 
 The default value of this delay is 100 milliseconds but you can easily change it in XAML or code-behind.
@@ -33,13 +29,11 @@ First you have to declare the controls in XAML or code-behind:
 	                Click="showIndicatorButton_Click"/>
 	    </Grid>
 	</telerik:RadBusyIndicator>
-	{{endregion}}
-
-
+{{endregion}}
 
 >Notice that the __DisplayAfter__ property is of type __TimeSpan__. Considering this fact, in this example you have to set the __RadBusyIndicator__ to be delayed with 5 seconds (00:00:05).
 
-Finally, in the code-behind you have to handle the click event for the button and activate the __RadBusyIndicator__control:
+Finally, in the code-behind you have to handle the click event for the button and activate the __RadBusyIndicator__ control:
 
 >tipTo read more about enabling the __RadBusyIndicator__ look [here]({%slug radbusyindicator-features-enabling-the-indicator%}).
 
@@ -50,17 +44,11 @@ Finally, in the code-behind you have to handle the click event for the button an
 	{
 	    this.radBusyIndicator.IsBusy = true;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 As a result when the user clicks on a button after a delay of five seconds, the __RadBusyIndicator__ will be displayed:
 
-
-
-
-         
-      ![](images/radbusyindicator_features_delayed_display_010.png)
+![](images/radbusyindicator_features_delayed_display_010.png)
 
 >tipThe __RadBusyIndicator__ control also gives you a read-only boolean property - __IsBusyIndicationVisible__. Its value will be equal to __True__ whenever the __RadBusyIndicator__ is enabled and visualized.To check whether the __RadBusyIndicator__ is enabled, you can observe its __IsBusy__ boolean property.
 

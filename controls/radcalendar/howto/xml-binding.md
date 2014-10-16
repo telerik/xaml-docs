@@ -10,13 +10,9 @@ position: 3
 
 # XML Binding
 
+The current version of Silverlight does not support direct XML binding but __LINQ to XML__ can be used to retrieve the necessary data. The following example loads a collection of dates from an xml file and assigns them as the selected dates of a calendar.
 
-
-## 
-
-The current version of Silverlight does not support direct XML binding but __LINQ to XML__can be used to retrieve the necessary data. The following example loads a collection of dates from an xml file and assigns them as the selected dates of a calendar.
-
-The __DataSource.xml__file has the following content:
+The __DataSource.xml__ file has the following content:
 
 #### __XAML__
 
@@ -32,9 +28,7 @@ The __DataSource.xml__file has the following content:
 	  <Date>08/19/2010</Date>
 	  <Date>08/10/2010</Date>
 	</ChosenDates>
-	{{endregion}}
-
-
+{{endregion}}
 
 The following code snippet loads the file and extracts the Date nodes out of it, then assigns the respective dates as selection:
 
@@ -53,6 +47,4 @@ The following code snippet loads the file and extracts the Date nodes out of it,
 	}
 	// Set the display date to the forst selected date, so that the selection is visible.
 	calendar.DisplayDate = (DateTime)calendar.SelectedDates[0];
-	{{endregion}}
-
-
+{{endregion}}

@@ -10,10 +10,6 @@ position: 3
 
 # Data Binding
 
-
-
-## 
-
 You are able to bind the content of the __RadTransitionCotnrol__ to a data item or to a property of another control. Whenever the value of the data item or the property changes, the __RadTransitionControl__ will apply a transition to the change. 
 
 In case of using data binding, you have to combine the __Content__ property with the __ContentTemplate__ property. This is needed when the bound object is not an __UIElement__. In this case use the __ContentTemplate__ property to define a __DataTemplate__, in which to define the appropriate data bindings to the object.
@@ -31,9 +27,7 @@ Here is an example:
 	        </DataTemplate>
 	    </telerik:RadTransitionControl.ContentTemplate>
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 The object that you have bound to the __Content__ property becomes the __DataContext__ of the __ContentTemplate__ and you can bind your __UIElements__ to its properties. In this example the __TextBlock's Text__ property is bound to the __Text__ property of the __MyDataItem__ object.
 
@@ -55,9 +49,7 @@ You can also bind the __RadTransitionControl__ to another __Control__ in your __
 	        </DataTemplate>
 	    </telerik:RadTransitionControl.ContentTemplate>
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 In this case the data item representing the __SelectedItem__ is the __DataContext__ of the __ControlTemplate__.
 

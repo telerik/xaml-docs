@@ -10,8 +10,6 @@ position: 4
 
 # Transition Selection
 
-
-
 We had many requests on tips how to change the transitions based on some application logic. Such logic is for example:
 
 * Navigating back and forth between UserControls that follow some sequence – slide left or right
@@ -20,11 +18,9 @@ We had many requests on tips how to change the transitions based on some applica
 
 * Drill down – zoom data in or out
 
-The __Transition__ property of the RadTransitionControl is of type __TransitionProvider__ so it works pretty much as a DataTemplate that can create object when asked. Setting properties on it will not change the instances that have been generated. It is not a DependencyObject so its properties are not bindable. In other words you can’t bind the Direction property of the __SlideAndZoomTransition__.
-    
+The __Transition__ property of the RadTransitionControl is of type __TransitionProvider__ so it works pretty much as a DataTemplate that can create object when asked. Setting properties on it will not change the instances that have been generated. It is not a DependencyObject so its properties are not bindable. In other words you can’t bind the Direction property of the __SlideAndZoomTransition__.    
 
-One of the possible solutions to set the __Transition__ property of the __RadTransitionControl__ to new __TransitionProvider__ such as __SlideAndZoomTransition__ with __Direction__ set to __Left__ or __Right__ based on some custom logic.
-    
+One of the possible solutions to set the __Transition__ property of the __RadTransitionControl__ to new __TransitionProvider__ such as __SlideAndZoomTransition__ with __Direction__ set to __Left__ or __Right__ based on some custom logic.    
 
 * This could happen in code behind.
 
@@ -32,11 +28,9 @@ One of the possible solutions to set the __Transition__ property of the __RadTra
 
 * You could create a custom TransitionProvider implementation that would use the parameters passed to an override of CreateTransition to generate a Transition.
 
-All approaches have pros and cons. For small applications the first one is recommended as you could easily drop a few lines of code on the back of your UserControl and alter the RadTransitionControl.
-	
+All approaches have pros and cons. For small applications the first one is recommended as you could easily drop a few lines of code on the back of your UserControl and alter the RadTransitionControl.	
 
-In large projects it is a common practice to separate code from presentation so you may have the RadTransitionControl placed within a ControlTemplate in a ResourceDictionary where it would be hard to add codebehind. In such cases the second and the third approach are preferred. Which one to choose? It depends on that whether you are willing to keep navigation state in your ViewModel and if the data items or controls passed in the Content property of the RadTransitionControl are enough to select the proper transition.
-	
+In large projects it is a common practice to separate code from presentation so you may have the RadTransitionControl placed within a ControlTemplate in a ResourceDictionary where it would be hard to add codebehind. In such cases the second and the third approach are preferred. Which one to choose? It depends on that whether you are willing to keep navigation state in your ViewModel and if the data items or controls passed in the Content property of the RadTransitionControl are enough to select the proper transition.	
 
 ## Switch Transition in Code Behind
 
@@ -75,9 +69,7 @@ Such converter would look like:
 			throw new NotImplementedException();
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 And could be used in XAML:
 
@@ -100,26 +92,19 @@ And could be used in XAML:
 	    </Binding>
 	  </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Switch in a Custom TransitionProvider
 
-This could be a very MVVM friendly approach if the parameters provided in the __TransitionContext__ instance in the __CreateTransition__ method of the __TransitionProvider__ are enough. If you are binding the __Content__ property of __RadTransitionControl__ to objects from your __ViewModel__ and you could compare these objects, then you could implement a very decent solution to transition switching.
-	
+This could be a very MVVM friendly approach if the parameters provided in the __TransitionContext__ instance in the __CreateTransition__ method of the __TransitionProvider__ are enough. If you are binding the __Content__ property of __RadTransitionControl__ to objects from your __ViewModel__ and you could compare these objects, then you could implement a very decent solution to transition switching.	
 
-For example if you drill down you could check if the new Content contains larger or smaller data range and respectively pick a zoom in or zoom out animation.
-	
+For example if you drill down you could check if the new Content contains larger or smaller data range and respectively pick a zoom in or zoom out animation.	
 
-If you navigate between indexed items you could check the indices of the items and slide left or right.
-	
+If you navigate between indexed items you could check the indices of the items and slide left or right.	
 
-If you need some additional data for the comparison this approach won’t work and you will have to stick to the CodeBehind transition selection.
-	
+If you need some additional data for the comparison this approach won’t work and you will have to stick to the CodeBehind transition selection.	
 
-In general implementing a custom TransitionProvider would use quite a few lines of code:
-	
+In general implementing a custom TransitionProvider would use quite a few lines of code:	
 
 #### __C#__
 
@@ -146,9 +131,7 @@ In general implementing a custom TransitionProvider would use quite a few lines 
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 And in XAML you could use it like:
 
@@ -165,16 +148,10 @@ And in XAML you could use it like:
 					<telerik:SlideAndZoomTransition SlideDirection="RightToLeft"/>
 				</local:WizzardPageTransition.ForwardTransition>
 			</local:WizzardPageTransition>
-	</telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-	
-	{{endregion}}
+		</telerik:RadTransitionControl.Transition>
+	</telerik:RadTransitionControl>	
+{{endregion}}
 
+If the Content is non-UI element you could define simple properties that can be compared in the if-statements.      	
 
-
-If the Content is non-UI element you could define simple properties that can be compared in the if-statements.
-      	
-
-If the Content is UI you could create a class that extends UserControl or Control and add properties there. Also an AttachedProperty could be used so you could attach data for comparison on Controls without having to extend them.
-
-      	
+If the Content is UI you could create a class that extends UserControl or Control and add properties there. Also an AttachedProperty could be used so you could attach data for comparison on Controls without having to extend them.      	

@@ -12,30 +12,20 @@ site_name: Silverlight
 # Use with Silverlight Navigation Framework
 
 
+The __RadTransitionControl__ can be used together with the __Silverlight Navigation Framework__ in order to apply transition effects, when navigating from one page to another. The only thing you have to do is to create a __ControlTemplate__ for the __Frame__ control and to place a __RadTransitionControl__ in it. This tutorial will walk you through the following:
 
-The __RadTransitionControl__ can be used together with the __Silverlight Navigation Framework__in order to apply transition effects, when navigating from one page to another. The only thing you have to do is to create a __ControlTemplate__ for the __Frame__ control and to place a __RadTransitionControl__ in it. This tutorial will walk you through the following:
+* [Creating a ControlTemplate](#creating-a-controltemplate)
 
-* [Creating a ControlTemplate](#Creating_a_ControlTemplate)
+* [Defining and configuring a RadTransitionControl](#defining-and-configuring-a-radtransitioncontrol)
 
-* [Defining and configuring a RadTransitionControl](#Defining_and_configuring_a_RadTransitionControl)
-
-* [Set the ControlTemplate to the Frame](#Set_the_ControlTemplate_to_the_Frame)
+* [Set the ControlTemplate to the Frame](#set-the-controltemplate-to-the-frame)
 
 ## Creating a ControlTemplate
 
 The first thing to do is to create a __ControlTemplate__ in your resources section, that targets the __Frame__ control.
 
->
-
-In order to use the __Frame__ control you have to add the following namespace declaration:
-
-#### __XAML__
-
-{{region radtransition-how-to-use-with-silverlight-navigation-framework_0}}
-	xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
-	{{endregion}}
-
-
+>In order to use the __Frame__ control you have to add the following namespace declaration:
+>	xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
 
 #### __XAML__
 
@@ -45,9 +35,7 @@ In order to use the __Frame__ control you have to add the following namespace de
 	                        TargetType="navigation:Frame">
 	    </ControlTemplate>
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Defining and configuring a RadTransitionControl
 
@@ -64,9 +52,7 @@ Add a __RadTransitionControl__ to the __ControlTemplate__ and configure the appr
 	        </telerik:RadTransitionControl>
 	    </ControlTemplate>
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 By default there is no transition effect specified for the __RadtRansitionControl__, so you have to define one.
 
@@ -84,9 +70,7 @@ By default there is no transition effect specified for the __RadtRansitionContro
 	        </telerik:RadTransitionControl>
 	    </ControlTemplate>
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Set the ControlTemplate to the Frame
 
@@ -95,11 +79,8 @@ The last thing to do is to set the created __ControlTemplate__ to the __Frame__ 
 #### __XAML__
 
 {{region radtransition-how-to-use-with-silverlight-navigation-framework_4}}
-	<navigation:Frame x:Name="MainFrame"
-	                    Template="{StaticResource FrameTemplate}" />
-	{{endregion}}
-
-
+	<navigation:Frame x:Name="MainFrame" Template="{StaticResource FrameTemplate}" />
+{{endregion}}
 
 # See Also
 

@@ -30,9 +30,9 @@ To copy the default style, load your project in Expression Blend and open the Us
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __ButtonChrome__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __ButtonChrome__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __ButtonChrome.__Their names indicate to which part of the __RadButton__appearance they are assigned.{% endif %}
+{% if site.site_name == 'Silverlight' %}If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __ButtonChrome__. Their names indicate to which part of the __RadButton__ appearance they are assigned.{% endif %}
 
 # See Also
 

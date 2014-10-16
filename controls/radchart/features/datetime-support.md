@@ -14,7 +14,7 @@ position: 7
 
 Often charts are used to display information for certain period in time. __RadChart__ provides full support of __DateTime__ values and allows you to show dates on the [X-Axis]({%slug radchart-features-axes-x-axis%}).
 
-You can populate your chart with __DateTime__ values by using __SeriesMapping__or __DataPoints__. Take a look at the [Populating with Data]({%slug radchart-populating-with-data-overview%}) topic for more details.
+You can populate your chart with __DateTime__ values by using __SeriesMapping__ or __DataPoints__. Take a look at the [Populating with Data]({%slug radchart-populating-with-data-overview%}) topic for more details.
 
 ## Using data binding (SeriesMapping/ItemMapping)
 
@@ -62,8 +62,6 @@ On the example below, __RadChart.ItemSource__ is set to a collection of __TradeD
 	    ....
 	End Class
 	{{endregion}}
-
-
 
 Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-support-overview%}) the __TradeData.FromDate__ to __DataPointMember.XValue__ and __TradeDate.Close__ to __DataPointMember.YValue__ using [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}) mechanism. Additionally, the [X-Axis]({%slug radchart-features-axes-x-axis%}) is customized: the values are formatted (__radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat__ = "dd-MMM") and rotated on 45 degree (__radChart.DefaultView.ChartArea.AxisX.LabelRotatingAngle__ = 45):
 
@@ -134,11 +132,7 @@ Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-suppor
 
 
 As a result, the chart will look like the one on the snapshot:
-
-
-
-
-         
+ 
       ![](images/RadChart_Features_DateTime_Support_01.png)
 
 ## Using DataPoint
@@ -146,7 +140,6 @@ As a result, the chart will look like the one on the snapshot:
 This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}). However, using [DataPoints]({%slug radchart-populating-with-data-overview%}) is also possible, but you have to be aware of the following specifics:
 
 * __DataPoint.XValue__ is of type __double__. Therefore, the __DateTime__ values have to be converted to OLE Automation dates first: see [DateTime.ToOADate()](http://msdn.microsoft.com/en-us/library/system.datetime.tooadate(VS.95).aspx). 
-
 
 * The __AxisX.IsDateTime__ should be set to __True__.
 
@@ -195,8 +188,6 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 	</telerikChart:RadChart>
 	{{endregion}}
 
-
-
 #### __C#__
 
 {{region radchart-features-datetime-support_6}}
@@ -223,8 +214,6 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 	lineSeries.Add( new DataPoint() { YValue = 176, XValue = new DateTime( 2009, 12, 31 ).ToOADate() } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( lineSeries );
 	{{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -256,11 +245,7 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 
 
 The image below shows the chart with defined using __DataPoints__:
-
-
-
-
-         
+ 
       ![](images/RadChart_Features_DateTime_Support_10.png)
 
 Note how the values are defined in the XAML - this is the OLE Automation equivalent of the dates. In the code behind, __ToOADate()__ method is used to convert the dates and then the value is set to the __XValue__ property of the __DataPoint__ class.

@@ -40,7 +40,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 * __ControlOuterBorder_Normal__ - a brush that represents the outer border color of the button, when it is in __Normal__ state.
 
-* __ControlBackground_Normal__ -a brush that represents the background color of the button, when it is in__Normal__ state.
+* __ControlBackground_Normal__ -a brush that represents the background color of the button, when it is in __Normal__ state.
 
 * __ControlForeground_Normal__ - a brush that represents the foreground color of the button, when it is in __Normal__ state.
 

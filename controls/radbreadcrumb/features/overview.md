@@ -16,7 +16,7 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 ## RadBreadcrumb common properties
 
-* __Header__- gets/sets the root element of the __Breadcrumb__control
+* __Header__- gets/sets the root element of the __Breadcrumb__ control
 
 * __CurrentItem__- is of type object and gets the current destination data item
 
@@ -28,7 +28,7 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 ![](images/breadcrumb_features_overview_path_separator.png)
 
-* __IsLinearMode__- is of type bool and controls whether the __Breadcrumb__is in __Linear__ mode. By default this property is __False__ .
+* __IsLinearMode__- is of type bool and controls whether the __Breadcrumb__ is in __Linear__ mode. By default this property is __False__ .
 
 * __IsIconVisible__- is of type bool and controls whether the __Breadcrumb.Image__ should be displayed. By default this property is __False__ .
 

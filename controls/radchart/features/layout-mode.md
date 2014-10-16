@@ -28,7 +28,7 @@ Each __LayoutMode__ is best to be used with certain chart types:
 
 * __Between__ - ticks are margins (labels are between two ticks); a small margin on both sides is provided. Useful for __Bar__ charts.
 
-* __Auto__ - depending on the chart type, __RadChart__ will____automatically select the best __LayoutMode__. For multi-series charts, layout mode is prioritized in this order: __Between__, __Inside__, __Normal.__
+* __Auto__ - depending on the chart type, __RadChart__ will automatically select the best __LayoutMode__. For multi-series charts, layout mode is prioritized in this order: __Between__, __Inside__, __Normal.__
 
 You can set the __LayoutMode__ from XAML or code-behind like this:
 
@@ -58,15 +58,11 @@ You can set the __LayoutMode__ from XAML or code-behind like this:
 	this.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal;
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-features-layout-mode_2}}
 	Me.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal
 	{{endregion}}
-
-
 
 On the snapshots below you can see the differences between the available layout modes.
 
@@ -75,35 +71,19 @@ On the snapshots below you can see the differences between the available layout 
 Note the areas inside the red rectangles and see how the line and the bar charts are drawn and how the __X-Axis__'s ticks and labels are displayed for each of the modes.
 
 * __LayoutMode.Normal__- the chart is drawn starting directly from the first value (1), thus making the first and the last bars partly visible.
-
-
-
-
-         
+ 
       ![](images/RadChart_Features_LayoutMode_01.png)
 
 * __LayoutMode.Inside__- the chart data is accommodated in a way that makes the first and the last bars visible by adding small offset in the beginning and in the end of the X axis.
-
-
-
-
-         
+ 
       ![](images/RadChart_Features_LayoutMode_02.png)
 
 * __LayoutMode.Between__- in this case each item is visualized as a margin - the labels and the bars are placed between the ticks.
-
-
-
-
-         
+ 
       ![](images/RadChart_Features_LayoutMode_03.png)
 
 * __LayoutMode.Auto__- the layout mode is set automatically to __Between__ by following the logic specified above.
-
-
-
-
-         
+ 
       ![](images/RadChart_Features_LayoutMode_04.png)
 
 # See Also

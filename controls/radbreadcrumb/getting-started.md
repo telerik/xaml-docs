@@ -248,52 +248,6 @@ By default the __RadBreadcrumb__ control keeps a history of 10 visited paths. If
 	breadcrumb.HistorySize = 15
 {{endregion}}
 
-#  Apply a theme
-# {% if site.site_name == 'Silverlight' %}
-
-# Add a reference to Telerik.Windows.Themes.Vista.dll.{% endif %}
-
-# In the __RadBreadcrumb__ XAML declaration set the __StyleManager.Theme__ attached property:
-
-
-### __XAML__
-
-# {{region radbreadcrumb-getting-started_14}}
-	# <telerik:RadBreadcrumb x:Name="breadcrumb" 
-	                        # VerticalAlignment="Top"
-	                        # Header="Breadcrumb Header"
-	                        # telerik:StyleManager.Theme="Vista">
-	    # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 1" Header="BreadcrumbItem 1">
-	        # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 1.1" Header="BreadcrumbItem 1.1" />
-	        # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 1.2" Header="BreadcrumbItem 1.2" />
-	        # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 1.3" Header="BreadcrumbItem 1.3" />
-	    # </telerik:RadBreadcrumbItem>
-	    # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 2" Header="BreadcrumbItem 2">
-	        # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 2.1" Header="BreadcrumbItem 2.1" />
-	        # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 2.2" Header="BreadcrumbItem 2.2" />
-	        # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 2.3" Header="BreadcrumbItem 2.3" />
-	    # </telerik:RadBreadcrumbItem>
-	    # <telerik:RadBreadcrumbItem DropDownHeader="DropDownItem 3" Header="BreadcrumbItem 3" />
-	# </telerik:RadBreadcrumb>
-# {{endregion}}
-
-# Or in code behind:
-
-### __C#__
-
-# {{region radbreadcrumb-getting-started_15}}
-	# StyleManager.SetTheme(breadcrumb, new VistaTheme());
-# {{endregion}}
-
-
-
-### __VB.NET__
-
-# {{region radbreadcrumb-getting-started_16}}
-	# StyleManager.SetTheme(breadcrumb, New VistaTheme())
-# {{endregion}}
-
-# ![](images/breadcrumb_gettingstarted_apply_theme.png)
 
 # See Also
 

@@ -25,7 +25,7 @@ The template contains the following parts.
 * __[Grid]__ - hosts the layout of the __RadButton__ and is of type __Grid__.
 						
 
-* __OuterBorder__- a __Border__ control that represents the outer border of the __RadButton__
+* __OuterBorder__ - a __Border__ control that represents the outer border of the __RadButton__
 
 * __InnerBorder__ - a __Border__ control that represents the background and the inner border of the __RadButton__
 
@@ -49,14 +49,14 @@ Here is a snapshot from Expression Blend.
 
 The template contains the following parts.
 
-* __[Grid]__ - hosts the layout of the __RadDropDownButton__and is of type __Grid__.
+* __[Grid]__ - hosts the layout of the __RadDropDownButton__ and is of type __Grid__.
 						
 
 * __OuterBorder__ - a  __Border__ control that represents the outer border of the __RadDropDownButton__
 
 * __InnerBorder__ - a __Border__ control that represents the background and the inner border of the __RadDropDownButton__
 
-* __CheckedVisual -__a __Border__ control that represents the outer border of the __RadDropDownButton__, when its __DropDownContent__ is opened
+* __CheckedVisual__ - a __Border__ control that represents the outer border of the __RadDropDownButton__, when its __DropDownContent__ is opened
 								
 
 * __InnerCheckedVisual -__a __Border__ control that represents the background and the inner border of the __RadDropDownButton__, when its __DropDownContent__ is opened
@@ -73,16 +73,16 @@ The template contains the following parts.
 * __DropDownPopup__ - represents the drop down area and is of type __Popup__.
 								
 
-* __[Grid] -__a __Grid__ control that hosts the __RadDropDownButton.DropDownContent__elements
+* __[Grid]__ - a __Grid__ control that hosts the __RadDropDownButton.DropDownContent__ elements
 										
 
-* __DropDownPopupBorder -__ represents the background and the border of the drop down area and is of type __Border__.
+* __DropDownPopupBorder__ - represents the background and the border of the drop down area and is of type __Border__.
 												
 
 * __DropDownPopupContent__ - displays the content of the drop down area and is of type __ContentPresenter__.
 													
 
-* __CommonStatesWrapper__ - a __Border__ control that hosts the __RadDropDownButton__'s____focused visual state control elements
+* __CommonStatesWrapper__ - a __Border__ control that hosts the __RadDropDownButton's__ focused visual state control elements
 								
 
 * __FocusVisual__ - a __Border__ control that represents the background and the outer border of the __RadDropDownButton__, when it is focused

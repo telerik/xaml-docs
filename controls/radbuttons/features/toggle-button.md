@@ -25,10 +25,7 @@ To learn how to use it with commands you should read the [Commands]({%slug radbu
 You can instantiate your __RadToggleButton__ in both XAML and code. Here is an example:
 		
 
->The __RadToggleButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly.{% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
-
-Then in XAML you have to declare the namespace:
-xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+>The __RadToggleButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly.{% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %} <br/> Then in XAML you have to declare the namespace:xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
 #### __XAML__
 
@@ -110,7 +107,7 @@ To make the __RadToggleButton__ go into a three state mode you just have to set 
 
 * __IsBackgroundVisible__ - this property controls the visibility of the background and the border of the __RadToggleButton__ control in normal state
 
-* __CornerRadius -__this property controls the __CornerRadius__ of the __RadToggleButton__ control
+* __CornerRadius__ - this property controls the __CornerRadius__ of the __RadToggleButton__ control
 		  
 
 # See Also

@@ -40,7 +40,7 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 ## RadBreadcrumbItem common properties
 
-* __Header__ - gets/sets the __Header__of the __BreadcrumbItem__
+* __Header__ - gets/sets the __Header__ of the __BreadcrumbItem__
 
 * __DropDownHeader__ - gets/sets the __Header__ of the __BreadcrumbItem__ that is used to visualize the item when displayed inside its parent's __DropDown__ content
 

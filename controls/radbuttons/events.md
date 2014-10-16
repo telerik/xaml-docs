@@ -113,21 +113,21 @@ __RadToggleButton__
 * __Checked__ - occurs when the button gets checked. The event handler receives two arguments: 
 
 
-* The sender argument contains the button. This argument is of type object, but can be cast to the __RadToggleButton__type.
+* The sender argument contains the button. This argument is of type object, but can be cast to the __RadToggleButton__ type.
 
 * A System.Windows.__RoutedEventArgs__ object.
 
 * __Indeterminate__ - occurs when the button goes in the Indeterminate state (if the button is in the three state mode). The event handler receives two arguments: 
 
 
-* The sender argument contains the button. This argument is of type object, but can be cast to the __RadToggleButton__type.
+* The sender argument contains the button. This argument is of type object, but can be cast to the __RadToggleButton__ type.
 
 * A System.Windows.__RoutedEventArgs__ object.
 
 * __Unchecked__ - occurs when the button gets unchecked. The event handler receives two arguments: 
 
 
-* The sender argument contains the button. This argument is of type object, but can be cast to the __RadToggleButton__type.
+* The sender argument contains the button. This argument is of type object, but can be cast to the __RadToggleButton__ type.
 
 * A System.Windows.__RoutedEventArgs__ object.
 

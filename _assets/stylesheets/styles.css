@@ -13,10 +13,11 @@ html {
 
 body, html {
     min-height: 100%;
+	overflow: hidden;
 }
 
 body {
-    background-color: #fff;
+    
     color: #555;
     font: 400 14px Arial, Helvetica, sans-serif;
     min-width: 1230px;
@@ -215,22 +216,36 @@ a img {
 #page-nav {
     float: left;
     width: 20%;
-    padding: 20px 0 0;
 	height: 100% !important;
+	top: 0;
     left: 0;
     overflow: auto;
     position: absolute;
+	background: none repeat scroll 0 0 #f5f7f8;
+    border-right: 1px solid #ebecee;
+	z-index: 1;
 }
 
 #page-tree {
-    padding: 0 20px 40px;
+    padding: 20px 20px 40px 30px;
     white-space: normal;
-    word-break: break-word;
+    /*word-break: break-word;*/
     overflow: hidden;
 }
+#page-nav .k-icon,
+#page-nav .k-sprite {
+ width: 18px;
+}
 
-#page-nav .k-plus { background: url(../images/close.png); }
-#page-nav .k-minus { background: url(../images/open.png); }
+#page-nav .k-plus { background: url(../images/close.png) no-repeat; }
+#page-nav .k-minus { background: url(../images/open.png) no-repeat; }
+
+#page-nav .article {
+	background: url(../images/file.png) no-repeat;
+	position: absolute;
+	margin-left: -21px;
+	margin-top: 2px;
+}
 
 #page-nav .k-in {
     line-height: 20px;
@@ -241,9 +256,9 @@ a img {
 }
 
 #page-nav .k-in a {
-    margin: -1px -.3333em -1px -.25em;
-    padding: 1px .3333em 1px .25em;
-    display: inline-block;
+	margin: -1px -.3333em -1px -.25em;
+	padding: 1px .3333em 1px .25em;
+	display: inline-block;
 }
 
 #page-nav .k-in,
@@ -384,7 +399,7 @@ a img {
 /* Article pages */
 
 .faux-columns {
-    background: #fff url(../images/column.png) repeat-y 0 0;
+    background: #fff;
 }
 
 #page-inner-content:after {
@@ -401,7 +416,6 @@ a img {
     box-sizing: border-box;
     line-height: 1.5;
     overflow: auto;
-    padding: 15px 1em 0 3em;
     position: absolute;
     right: 0;
     top: 0;
@@ -441,11 +455,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     padding-left: 25px;
     margin-left: -25px;
+	display: block;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover,
 h4 a:hover, h5 a:hover, h6 a:hover {
-    background: transparent url(../images/anchor.png) no-repeat 0 50%;
+    background: transparent url(../images/anchor.png) no-repeat 0px 50%;
 }
 
 h2 {
@@ -644,12 +659,18 @@ footer {
     bottom: 0;
     box-sizing: border-box;
     left: 0;
-    padding: 0 1em 0 0;
     position: absolute;
     text-align: right;
     width: 100%;
 	background-color: #2a2d33;
     color: #fff;
+	min-height: 44px;
+	z-index: 100;
+}
+
+footer p {
+	margin-top: 15px;
+	margin-right: 1em;
 }
 
 h4 {
@@ -686,4 +707,15 @@ article h1:first-of-type:before {
 #page-article table td {
     border: 1px solid #e1e5ea;
     color: #555; 
+}
+
+
+#page-article article {
+    max-width: 930px;
+	
+    padding: 15px 1em 0 3em;
+}
+
+header, nav, section, article, aside, footer {
+    display: block;
 }

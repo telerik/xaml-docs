@@ -14,12 +14,10 @@ position: 2
 
 ## 
 
-With this feature, the enabled X axis can be used to plot not only values (e.g. number of sales, etc.), but also categories (e.g. months of the year, units, people, etc.). Using a Category axis, the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart treats data as a sequence of non-numerical text labels. The marker is placed according to the position of the category in the sequence. Data is provided per category.
-
-
-
-
-         
+With this feature, the enabled X axis can be used to plot not only values (e.g. number of sales, etc.), but also categories (e.g. months of the year, units, people, etc.). Using a Category axis, the 
+{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
+{% if site.site_name == 'WPF' %}WPF{% endif %} Chart treats data as a sequence of non-numerical text labels. The marker is placed according to the position of the category in the sequence. Data is provided per category.
+ 
       ![](images/RadChart_Features_CategoricalCharts_01.PNG)
 
 As you can see from the image above, __RadChart__ automatically set __X-Axis__ labels to the categories they represent and each numeric value is shown in the corresponding category. Note that the numeric values are from two data series and they share the same category.
@@ -36,8 +34,6 @@ To create categorical charts, you have to map the category values to the __XCate
 	<telerikCharting:DataPoint YValue="25" XCategory="Grapes"/>
 	{{endregion}}
 
-
-
 #### __C#__
 
 {{region radchart-features-categorical-charts_1}}
@@ -48,8 +44,6 @@ To create categorical charts, you have to map the category values to the __XCate
 	dataSeries.Add( new DataPoint() { YValue = 25, XCategory = "Grapes" } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( dataSeries );
 	{{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -71,8 +65,6 @@ To create categorical charts, you have to map the category values to the __XCate
 	radChart.DefaultView.ChartArea.DataSeries.Add( dataSeries )
 	{{endregion}}
 
-
-
 If you want to use data binding, then you have to set the __DataPointMember__ to __XCategory__ instead of __XValue__.
 
 #### __C#__
@@ -91,8 +83,6 @@ If you want to use data binding, then you have to set the __DataPointMember__ to
 	radChart.SeriesMappings.Add( seriesMapping );
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-features-categorical-charts_4}}
@@ -108,8 +98,6 @@ If you want to use data binding, then you have to set the __DataPointMember__ to
 	seriesMapping.ItemMappings.Add( itemMapping )
 	radChart.SeriesMappings.Add( seriesMapping )
 	{{endregion}}
-
-
 
 If you are looking for more data binding options take a look at the [Populating with Data Overview]({%slug radchart-populating-with-data-overview%}) topic.
 

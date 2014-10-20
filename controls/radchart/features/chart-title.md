@@ -10,17 +10,9 @@ position: 11
 
 # Chart Title
 
-
-
-## 
-
 The __ChartTitle__ is a content control placed at the top of each chart control. It is used to display any title information regarding the visualized chart.
-
-
-
-
-         
-      ![](images/RadChart_Features_ChartTitle_01.png)
+ 
+![](images/RadChart_Features_ChartTitle_01.png)
 
 You can specify the content of the default __ChartTitle__ control from XAML or code-behind, like this:
 
@@ -31,16 +23,14 @@ You can specify the content of the default __ChartTitle__ control from XAML or c
 	    <telerikChart:RadChart.DefaultView>
 	        <telerikCharting:ChartDefaultView>
 	            <telerikCharting:ChartDefaultView.ChartTitle>
-	
+
 	                <telerikCharting:ChartTitle Content="Monthly Sales for 2009" HorizontalAlignment="Center"/>
-	
+
 	            </telerikCharting:ChartDefaultView.ChartTitle>
 	        </telerikCharting:ChartDefaultView>
 	    </telerikChart:RadChart.DefaultView>
 	</telerikChart:RadChart>
 	{{endregion}}
-
-
 
 #### __C#__
 
@@ -48,15 +38,11 @@ You can specify the content of the default __ChartTitle__ control from XAML or c
 	radChart.DefaultView.ChartTitle.Content = "Monthly Sales for 2009";
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-features-chart-title_2}}
 	radChart.DefaultView.ChartTitle.Content = "Monthly Sales for 2009"
 	{{endregion}}
-
-
 
 Since __ChartTitle__ is a content control, you can set as its content not only textual data but also any other type of controls. The following example demonstrates how to create custom chart title with __TextBlock__ in a __Border__ control.
 
@@ -67,20 +53,18 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 	    <telerikChart:RadChart.DefaultView>
 	        <telerikCharting:ChartDefaultView>
 	            <telerikCharting:ChartDefaultView.ChartTitle>
-	
+
 	                <telerikCharting:ChartTitle HorizontalAlignment="Center">
 	                    <Border BorderBrush="LightBlue" CornerRadius="5" BorderThickness="2">
 	                        <TextBlock Text="Monthly Sales for 2009" />
 	                    </Border>
 	                </telerikCharting:ChartTitle>
-	
+
 	            </telerikCharting:ChartDefaultView.ChartTitle>
 	        </telerikCharting:ChartDefaultView>
 	    </telerikChart:RadChart.DefaultView>
 	</telerikChart:RadChart>
 	{{endregion}}
-
-
 
 #### __C#__
 
@@ -94,8 +78,6 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 	border.Child = new TextBlock(){ Text = "Monthly Sales for 2009" };
 	radChart.DefaultView.ChartTitle.Content = border;
 	{{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -114,12 +96,8 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 
 
 And here is the final result:
-
-
-
-
-         
-      ![](images/RadChart_Features_ChartTitle_02.png)
+ 
+![](images/RadChart_Features_ChartTitle_02.png)
 
 If you want to learn more about styling the __ChartTitle__ take a look at the [Customizing Title]({%slug radchart-styling-and-appearance-styling-chart-title%}) topic.
 

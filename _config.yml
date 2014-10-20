@@ -168,6 +168,8 @@ navigation:
         title: RadBook
     controls/radbreadcrumb:
         title: RadBreadcrumb
+    controls/radbulletgraph:
+        title: RadBulletGraph
     controls/radbuttons:
         title: RadButtons
     controls/radchart:

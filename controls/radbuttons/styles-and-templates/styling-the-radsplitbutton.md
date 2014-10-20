@@ -80,7 +80,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 * __toggleStyle__ - the default __Style__ for the __Drop Down Part__ of the __RadSplitButton__. 
 
-* __buttonStyle__ - the default __Style__ for the__Button Part__of the __RadSplitButton__. 
+* __buttonStyle__ - the default __Style__ for the __Button Part__ of the __RadSplitButton__. 
 
 * __ControlOuterBorder_Normal__ - a brush that represents the outer border color of the button, when it is in __Normal__ state.
 

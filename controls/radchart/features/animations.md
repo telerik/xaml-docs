@@ -34,11 +34,9 @@ You have __AnimationSettings__ on several levels:
 
 * __ISeriesDefinition.AnimationSettings__ - use when you want to control the animation of each series definition separately. For example, when you have multi series charts and you want each one to be animated differently.
 
->
+>As you can see, you can define __AnimationSettings__ on several levels, but the apply priority is from more concrete to more general. This means that the animation settings defined for a single series have the highest priority and will override the settings defined in the __ChartArea__ and the __Chart__.
 
-As you can see, you can define __AnimationSettings__ on several levels, but the apply priority is from more concrete to more general. This means that the animation settings defined for a single series have the highest priority and will override the settings defined in the __ChartArea__ and the __Chart__.
-
-However, in case you prefer to show the charts without animations, __ChartArea__provides you with two properties:
+However, in case you prefer to show the charts without animations, __ChartArea__ provides you with two properties:
 
 * __EnableAnimations__ - indicates whether animation should be applied on the chart or not.
 
@@ -158,7 +156,8 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	barSeries.Add( new DataPoint(){ YValue = 80 } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( barSeries );
 	{{endregion}}
-
+    
+#### __VB.NET__
 __{{region radchart-features-animations_2}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AnimationSettings = New AnimationSettings()
@@ -197,17 +196,15 @@ __{{region radchart-features-animations_2}}
 	barSeries.Add( New DataPoint( 89 ) )
 	barSeries.Add( New DataPoint( 80 ) )
 	radChart.DefaultView.ChartArea.DataSeries.Add( barSeries )
-	{{endregion}}____The image below is a snapshot taken in the middle of the animation.__
-
-
-
-
-         
+	{{endregion}}
+    
+__The image below is a snapshot taken in the middle of the animation.__
+ 
       ![](images/RadChart_Features_Animations_01.png)
 
-__AnimationSettings__are a simple and easy way to control your animations. However, if you need further customizations, you should consider using [templates](13DD5D60-0C6A-4ABE-B72F-27A3F1E14807).
+__AnimationSettings__ are a simple and easy way to control your animations. However, if you need further customizations, you should consider using [templates](13DD5D60-0C6A-4ABE-B72F-27A3F1E14807).
 
-To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __ChartArea.EnableStripLinesAnimation__properties to __False:__
+To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __ChartArea.EnableStripLinesAnimation__ properties to __False:__
 
 #### __XAML__
 

@@ -10,20 +10,15 @@ position: 0
 
 # Overview
 
-
-
-## 
-
 {% if site.site_name == 'Silverlight' %}![treeview sl icon](images/treeview_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![treeview wpf icon](images/treeview_wpf_icon.png){% endif %}
 
-Thank you for choosing Telerik __RadTreeView__!
-		
+Thank you for choosing Telerik __RadTreeView__!		
 
 Do you have need of building complicated navigation systems which perform with the speed of light? With __RadTreeView__ you can achieve all of this and much more. With its powerful databinding and load on demand mechanism, the control lets you display hierarchical structures, such as directories and relational data. With its drag and drop functionality and other advanced capabilities, __RadTreeView__ significantly improves the navigation and performance of your application.
-		![](images/RadTreeView_Overview_030.png)
 
-This is a list with short descriptions of the top-of-the-line features of Telerik's __RadTreeView__control:
-		
+![](images/RadTreeView_Overview_030.png)
+
+This is a list with short descriptions of the top-of-the-line features of Telerik's __RadTreeView__ control:
 
 * __Powerful DataBinding to Objects, Collections, XML and WCF services__ - Binding Telerik __RadTreeView__ is as simple as setting a single property. The binding sources which the treeview supports include Objects, XML, WCF services. [Read more]({%slug radtreeview-features-data-binding%})
 
@@ -52,26 +47,26 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Multi-node Selection__ - Let users select multiple nodes by simply setting a single property. [Read more]({%slug radtreeview-feautres-treeviewitem-selection%})
 
-* __UI Automation Support -__As the Silverlight platform exposes a full accessibility tree through UIA____(UI Automation), Telerik __RadControls__ for Silverlight fully support UI Automation for UI elements access/manipulation, screen readers and other accessibility tools__.__
+* __UI Automation Support__ -As the Silverlight platform exposes a full accessibility tree through UIA(UI Automation), Telerik __RadControls__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} fully support UI Automation for UI elements access/manipulation, screen readers and other accessibility tools.
 
-* __Expression Blend Support -__ All __RadControls__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} can be easily customized using Expression Blend.
-			{% if site.site_name == 'Silverlight' %}
+* __Expression Blend Support__ - All __RadControls__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} can be easily customized using Expression Blend.
 
+{% if site.site_name == 'Silverlight' %}
 * __Enhanced Routed Events Framework -__ To help your code become even more elegant and concise, we have implemented Enhanced Routed Events Framework for __RadControls__ for Silverlight. This gives you more freedom when you design your applications, since you can write instance handlers as well as class handlers for the routed events of our controls.
-			  {% endif %}{% if site.site_name == 'Silverlight' %}
+{% endif %}
 
-Check out the online demo at: [http://demos.telerik.com/silverlight/#TreeView/FirstLook](http://demos.telerik.com/silverlight/#TreeView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}
+{% if site.site_name == 'Silverlight' %}
+Check out the online demo at: [http://demos.telerik.com/silverlight/#TreeView/FirstLook](http://demos.telerik.com/silverlight/#TreeView/FirstLook)
+{% endif %}
+{% if site.site_name == 'WPF' %}
+Check out the online demo at: [http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)
+{% endif %}
 
-Check out the online demo at: [http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
+# See Also
 
-# See Also[Getting Started with RadTreeView - Video Tutorial](http://tv.telerik.com/silverlight/video/introduction-radtreeview-silverlight)
-
+ *[Getting Started with RadTreeView - Video Tutorial](http://tv.telerik.com/silverlight/video/introduction-radtreeview-silverlight)
  * [Visual Structure]({%slug radtreeview-visual-structure%})
-
  * [Getting Started]({%slug radtreeview-getting-started%})
-
  * [Styles and Templates]({%slug radtreeview-styling-and-appearance-overview2%})
-
  * [Events]({%slug radtreeview-events-overview%})
-
  * [Populating with Data]({%slug radtreeview-populating-with-data-overview%})

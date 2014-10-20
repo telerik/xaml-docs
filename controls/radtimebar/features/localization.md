@@ -66,7 +66,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 
 
-To see the __RadTimeBar__localized in German for example you should set the *CurrentCulture *and *CurrentUICulture *in *App.xaml.cs/ App.xaml.vb* like this:
+To see the __RadTimeBar__ localized in German for example you should set the *CurrentCulture* and *CurrentUICulture* in *App.xaml.cs/ App.xaml.vb* like this:
 
 #### __C#__
 
@@ -94,7 +94,7 @@ Here is how the localized *RadTimeBar* will look like:
 
 __Localization Using Custom Localization Manager__
 
-The other way to localize your __RadTimeBar__control is to create a class that derives from the __LocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key,____as it is shown below for German language:
+The other way to localize your __RadTimeBar__ control is to create a class that derives from the __LocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below for German language:
 
 #### __C#__
 
@@ -161,23 +161,13 @@ To apply custom localization to your controls just instantiate your custom __Loc
 
 
 
->
+>Note that you have to set the localization manager before the creation of the UI, otherwise some parts might remain not-localized.
 
-Note that you have to set the localization manager before the creation of the UI, otherwise some parts might remain not-localized.
+__Using Built-In Resources__
 
+__RadTimeBar__ provides you with built-in resources for several cultures:  Spanish, German, Italian, Turkish, Dutch.
 
-
-
-
-
-
-
-
-Using Built-In Resources
-
-RadTimeBar provides you with built-in resources for several cultures:  Spanish, German, Italian, Turkish, Dutch.
-
-To change the default culture, you should set the __CurrentCulture__ and the __CurrentUICulture__of the __CurrentThread__. Note that this must happen in the code-behind of your __Application__ (__App.xaml.cs/ App.xaml.vb__) file, right before the UI initialization. The next code-snippet shows you how to change the __CurrentCulture__to __Dutch__.
+To change the default culture, you should set the __CurrentCulture__ and the __CurrentUICulture__ of the __CurrentThread__. Note that this must happen in the code-behind of your __Application__ (__App.xaml.cs/ App.xaml.vb__) file, right before the UI initialization. The next code-snippet shows you how to change the __CurrentCulture__ to __Dutch__.
 
 #### __C#__
 
@@ -210,18 +200,12 @@ To change the default culture, you should set the __CurrentCulture__ and the __C
 
 
 
-RadTimeBar Resource Keys
+__RadTimeBar Resource Keys__
 
 The following __Resource Keys__ are available:
-
-· Century 
-
-· DecadeEnding 
-
-· Quarter 
-
-· QuarterShort 
-
-· Week 
-
-· WeekShort 
+* Century 
+* DecadeEnding 
+* Quarter 
+* QuarterShort 
+* Week 
+* WeekShort 

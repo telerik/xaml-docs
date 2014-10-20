@@ -10,10 +10,7 @@ position: 7
 
 # Categories
 
-
-
-__RadScheduleView__ provides you with a built-in categories support. You can assign a category to each one of your appointments, thus making them easily distinguishable.
-	
+__RadScheduleView__ provides you with a built-in categories support. You can assign a category to each one of your appointments, thus making them easily distinguishable.	
 
 This chapter will cover the following topics:
 
@@ -27,22 +24,17 @@ Run-time you can define the category of your appointment via the drop down menu 
 
 ![radscheduleview categories 01](images/radscheduleview_categories_01.png)
 
-On the snapshot below you can see four appointments where three of them have categories set, while the fourth does not have. Note how the background color of the appointments is taken from their categories.
-      	
+On the snapshot below you can see four appointments where three of them have categories set, while the fourth does not have. Note how the background color of the appointments is taken from their categories.      	
 
 ![radscheduleview categories 02](images/radscheduleview_categories_02.png)
 
 ## Adding Categories to the RadScheduleView
 
-By default the RadScheduleView has predefined list of categories i.e. "Red Category", "Blue Category", "Olive Category" etc. 
-      	
+By default the RadScheduleView has predefined list of categories i.e. "Red Category", "Blue Category", "Olive Category" etc.       	
 
-However, there are cases when new categories are needed and you have to create them on your own, as it is shown below.
-      	
+However, there are cases when new categories are needed and you have to create them on your own, as it is shown below.      	
 
 >The categories used by the RadScheduleView control are represented by the class __Telerik.Windows.Controls.Category__ located in the assembly __Telerik.Windows.Controls.ScheduleView.dll__.
-
-
 
 Each category has three important characteristics:
 
@@ -81,9 +73,7 @@ The categories available in the RadScheduleView are defined in the CategoriesSou
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>		
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 or
 
@@ -105,9 +95,7 @@ or
 			};
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -119,9 +107,7 @@ or
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>		
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally, set the DataContext:
 
@@ -129,9 +115,7 @@ Finally, set the DataContext:
 
 {{region radscheduleview-features-categories_4}}
 	this.DataContext = new MyViewModel();
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is how the new categories look like:
 

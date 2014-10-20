@@ -10,15 +10,13 @@ position: 2
 
 # Positioning
 
-
-
 There are several ways to position the __RadWindow__ prior to opening:
 
-* [Use the WindowStartupLocation property](#WindowStartupLocation)
+* [Use the WindowStartupLocation property](#windowstartuplocation)
 
-* [Use the Top/Left or TopOffset/LeftOffset properties](#Top_Left_and_TopOffset_LeftOffset)
+* [Use the Top/Left or TopOffset/LeftOffset properties](#topleft-and-topoffsetleftoffset)
 
->tipTo learn how to preserve the size and the location for each state of the __RadWindow__ read [this section](#Preserving_the_size_and_the_location_of_the_window).
+>tipTo learn how to preserve the size and the location for each state of the __RadWindow__ read [this section](#preserving-the-size-and-the-location-of-the-window).
 
 ## WindowStartupLocation
 
@@ -27,7 +25,6 @@ The __WindowStartupLocation__ property is an enumeration that provides you with 
 * __CenterScreen__ - positions the __RadWindow__ in the center of the screen, when opened.
 
 * __CenterOwner__ - positions the __RadWindow__ in the center of its owner, if any.
-
 
 >tipThe __Owner__ property specifies the control, that owns the __RadWindow__. When having the __CenterOwner__ enumeration value, the __RadWindow__ will get centered relatively to its owner.Note that the __Owner__ property should be of type __RadWindow__{% if site.site_name == 'WPF' %}or __WPF Window__{% endif %}.
 
@@ -45,7 +42,7 @@ When having the __WindowStartupLocation__ set to __CenterScreen__ or __CenterOwn
 
 ## Preserving the size and the location of the window
 
-The __RestoreMinimizedLocation__ property allows the __RadWindow__ to store its size and position for the __Normal__ and the __Minimized__states. For example, if you minimize a window in the center of the screen and then drag it to the leftmost corner, __RadWindow__ will store its position separately. Thus,  if you restore the __RadWindow__ to __Normal__, it will appear in the center of the screen, respectively if you minimize it, it will get positioned in the leftmost corner.
+The __RestoreMinimizedLocation__ property allows the __RadWindow__ to store its size and position for the __Normal__ and the __Minimized__ states. For example, if you minimize a window in the center of the screen and then drag it to the leftmost corner, __RadWindow__ will store its position separately. Thus,  if you restore the __RadWindow__ to __Normal__, it will appear in the center of the screen, respectively if you minimize it, it will get positioned in the leftmost corner.
 
 >tipTo learn more about the __States__ of the __RadWindow__ read [here]({%slug radwindow-features-states%}).
 

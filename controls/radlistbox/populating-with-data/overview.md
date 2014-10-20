@@ -10,18 +10,13 @@ position: 0
 
 # Overview
 
-
-
-## 
-
 In order to display items, you have to populate the RadListBox control with some data. You can do this in two ways:
 
 * Manually, by adding items to the __Items__ collection.
 
 * With data binding, by using the __ItemsSource__ property.
 
->You __can't__ have items added manually to the __Items__ collection and set the __ItemsSource__ at the same time.
-     	
+>You __can't__ have items added manually to the __Items__ collection and set the __ItemsSource__ at the same time.     	
 
 In this section you will find:
 

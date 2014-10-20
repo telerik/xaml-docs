@@ -10,13 +10,7 @@ position: 4
 
 # Templating the ToolTip
 
-
-
-This help article will show you how to set a custom Appointment ToolTip by using the __ToolTipTemplate__ property of
-        __RadScheduleView__.
-      
-
-## 
+This help article will show you how to set a custom Appointment ToolTip by using the __ToolTipTemplate__ property of __RadScheduleView__.      
 
 If you have for example __RadScheduleView__ set up the following way:
 
@@ -42,14 +36,9 @@ If you have for example __RadScheduleView__ set up the following way:
 	        </telerik:GroupDescriptionCollection>
 	    </telerik:RadScheduleView.GroupDescriptionsSource>
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
-
-
-And you want to replace the default ToolTip with custom one which shows the full information of the Appointment including the 
-          location of the Appoinment. In this case you can use the ToolTipTemplate property of the __RadScheduleView__.
-          Firstly you need to define appropriate DataTemplate as a resource like shown below:
-        
+And you want to replace the default ToolTip with custom one which shows the full information of the Appointment including the location of the Appoinment. In this case you can use the ToolTipTemplate property of the __RadScheduleView__. Firstly you need to define appropriate DataTemplate as a resource like shown below:       
 
 #### __XAML__
 
@@ -84,21 +73,13 @@ And you want to replace the default ToolTip with custom one which shows the full
 	        </StackPanel>
 	    </Grid>
 	</DataTemplate>
-	{{endregion}}
+{{endregion}}
 
+>Note that the ToolTip receives object of type AppointmentItemProxy as a DataContext which contains the actual Appointment. You can easily bind to its properties like shown above.          
 
+>importantIf you are using a custom Appointment with custom properties you won't be able to bind directly to them. You should access them through the Appointment property of the AppointmentItemProxy object the following way: Appointment.*CustomProperty*.          
 
->Note that the ToolTip receives object of type AppointmentItemProxy as a DataContext which contains the actual Appointment.
-            You can easily bind to its properties like shown above.
-          
-
->importantIf you are using a custom Appointment with custom properties you won't be able to bind directly to them.
-            You should access them through the Appointment property of the AppointmentItemProxy object the following way: 
-            Appointment.*CustomProperty*.
-          
-
-Aftewards you just need to set the DataTemplate as a __ToolTipTemplate__ the following way:
-        
+Aftewards you just need to set the DataTemplate as a __ToolTipTemplate__ the following way:        
 
 #### __XAML__
 
@@ -106,12 +87,10 @@ Aftewards you just need to set the DataTemplate as a __ToolTipTemplate__ the fol
 	<telerik:RadScheduleView ToolTipTemplate="{StaticResource ToolTipTemplate}" ... >
 	    ...
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
-
+{{endregion}}
 And here is the final result:
-        ![radscheduleview-styles-and-templates-templating-tooltip](images/radscheduleview-styles-and-templates-templating-tooltip.png)
+
+![radscheduleview-styles-and-templates-templating-tooltip](images/radscheduleview-styles-and-templates-templating-tooltip.png)
 
 # See Also
 

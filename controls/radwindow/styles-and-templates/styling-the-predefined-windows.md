@@ -10,10 +10,6 @@ position: 3
 
 # Styling the Predefined Windows
 
-
-
-## 
-
 This topic will explain how you could customize the look and feel of the predefined Windows.
 
 >To style the predefined dialogs of the __RadWindow__ static class, you have to call them via the overload that takes __DialogParameters__ object as an argument. Learn more about the predefined dialogs [here]({%slug radwindow-features-predefined-dialogs%}).
@@ -25,22 +21,20 @@ First, you will need to obtain the default style that targets __RadAlert__ - to 
 #### __XAML__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_0}}
-	        <Style x:Key="RadAlertStyle" TargetType="telerik:RadAlert">
-	            <Setter Property="IsTabStop" Value="False"/>
-	            <Setter Property="MinWidth" Value="275"/>
-	            <Setter Property="MaxWidth" Value="500"/>
-	            <Setter Property="SnapsToDevicePixels" Value="True"/>
-	            <Setter Property="Template">
-	                <Setter.Value>
-	                    <ControlTemplate TargetType="telerik:RadAlert">
-	                    ...
-	                    </ControlTemplate>
-	                </Setter.Value>    
-	            </Setter>
-	        </Style>
-	{{endregion}}
-
-
+	<Style x:Key="RadAlertStyle" TargetType="telerik:RadAlert">
+		<Setter Property="IsTabStop" Value="False"/>
+		<Setter Property="MinWidth" Value="275"/>
+		<Setter Property="MaxWidth" Value="500"/>
+		<Setter Property="SnapsToDevicePixels" Value="True"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="telerik:RadAlert">
+				...
+				</ControlTemplate>
+			</Setter.Value>    
+		</Setter>
+	</Style>
+{{endregion}}
 
 Now, you could make any modifications in the template, such as removing the OK button, changing the Alert icon, etc.
 
@@ -53,9 +47,7 @@ And finally, you have to pass the customized __RadAlertStyle__ to the predefined
 	parameters.ContentStyle = this.Resources["RadAlertStyle"] as Style;
 	parameters.Content = "Hello";
 	RadWindow.Alert(parameters);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -64,13 +56,12 @@ And finally, you have to pass the customized __RadAlertStyle__ to the predefined
 	parameters.ContentStyle = TryCast(Me.Resources("RadAlertStyle"), Style)
 	parameters.Content = "Hello"
 	RadWindow.Alert(parameters)
-	{{endregion}}
-
-
+{{endregion}}
 
 __Figure 1__ shows the final result.
 
-Figure 1: RadAlert with custom Style![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_01.png)
+Figure 1: RadAlert with custom Style
+![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_01.png)
 
 # See Also
 

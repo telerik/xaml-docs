@@ -10,10 +10,7 @@ position: 1
 
 # AutoComplete
 
-
-
 __RadListBox__ has full autocomplete support - while the control is focused, you can type certain keys and the listbox will select the relative match for the currently typed text.
-	
 
 The purpose of this tutorial is to show you how to configure the autocomplete feature. The following sections are included:
 
@@ -21,13 +18,13 @@ The purpose of this tutorial is to show you how to configure the autocomplete fe
 
 * [Using TypedText property](#using-typedtext-property)
 
-* [Setting TextPath/TextBinding](#setting-textpath/textbinding)
+* [Setting TextPath/TextBinding](#setting-textpathtextbinding)
 
 * [Disable autocomplete](#disable-autocomplete)
 
 ## Using TextSearchMode property
 
-This enumeration property specifies whether the text search will be StartsWith/Contains and/or case sensitive. It procvides the following entries:
+This enumeration property specifies whether the text search will be StartsWith/Contains and/or case sensitive. It provides the following entries:
 
 * Contains
 
@@ -38,22 +35,18 @@ This enumeration property specifies whether the text search will be StartsWith/C
 * StartsWithCaseSensitive
 
 ## Using TypedText property
-    	The TypedText property of RadListBox contains the currently typed text. It is updated as soon as the user types a new key for autocomplete. 
-    	
+
+The TypedText property of RadListBox contains the currently typed text. It is updated as soon as the user types a new key for autocomplete.    	
 
 ## Setting TextPath/TextBinding
 
-In most of the cases you will have a __RadListBox__[populated with a collection of business objects]({%slug radlistbox-populating-with-data-binding-to-object%}). If your data source is more complex and your data objects are not single values but rather more complicated classes that have multiple properties, you can specify which value you want to use for Autocomplete. 
-        To accomplish this you need to configure the __TextPath__/__TextBinding__ property.
+In most of the cases you will have a __RadListBox__ [populated with a collection of business objects]({%slug radlistbox-populating-with-data-binding-to-object%}). If your data source is more complex and your data objects are not single values but rather more complicated classes that have multiple properties, you can specify which value you want to use for Autocomplete. To accomplish this you need to configure the __TextPath__/__TextBinding__ property.
 
-Let's have the __RadListBox__ binded to "Customers" collection as explained in [Binding to Object]({%slug radlistbox-populating-with-data-binding-to-object%}) article:
+Let's have the __RadListBox__ bound to "Customers" collection as explained in [Binding to Object]({%slug radlistbox-populating-with-data-binding-to-object%}) article:
 
 ![radlistbox features autocomplete 010](images/radlistbox_features_autocomplete_010.png)
 
 Setting __TextPath__ /__TextBinding__ property will allow to use "Name" property of the Customer object for AutoComplete:
-      	
-
-
 
 #### __XAML__
 
@@ -62,9 +55,7 @@ Setting __TextPath__ /__TextBinding__ property will allow to use "Name" property
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"				
 			ItemTemplate="{StaticResource ListBoxCustomTemplate}"
 			TextPath="Name" />
-	{{endregion}}
-
-
+{{endregion}}
 
 Typing, for example "L" will select the corresponding item:
 
@@ -80,22 +71,14 @@ Typing, for example "L" will select the corresponding item:
 
 By default the autocomplete feature of __RadListBox__ is always enabled. In order to disable it, you need to set the __RadListBox__'s __IsTextSearchEnabled__ property to __False__.
 
-
-
 #### __XAML__
 
 {{region radlistbox-features-autocomplete_0}}
 	<telerik:RadListBox x:Name="radListBox" IsTextSearchEnabled="False"/>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region radlistbox-features-autocomplete_1}}
 	radListBox.IsTextSearchEnabled = false;
-	{{endregion}}
-
-
+{{endregion}}

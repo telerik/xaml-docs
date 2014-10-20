@@ -11,34 +11,21 @@ position: 2
 # Load on demand with RadScheduleView
 
 
-
 This tutorial demonstrates how you can load the appointments depending on the visible range of the RadScheduleView. This can be very useful in one real-time scenario when the number of appointments it's very large.
 
 There are two approaches to accomplish this. You can choose one of them according to your scenario:
 
-1. 
-          Using the __RadScheduleView.VisibleRangeChanged__ event. The __VisibleRangeChanged__ event handler receives two arguments:
-          
+1. Using the __RadScheduleView.VisibleRangeChanged__ event. The __VisibleRangeChanged__ event handler receives two arguments:
 
-1. 
-              The __sender__ argument contains the RadScheduleView. This argument is of type object, but can be cast to the __RadScheduleView__ type.
-            
+	1. The __sender__ argument contains the RadScheduleView. This argument is of type object, but can be cast to the __RadScheduleView__ type.
 
-1. The System.EventArgs object.
+	1. The System.EventArgs object.
 
-1. 
-          Using the __RadScheduleView.VisibleRangeChangedCommandProperty__ and the __RadScheduleView.VisibleRangeChangedCommandParameterProperty__. This approach is effective if you wish to load the visible appointments using the MVVM pattern.
-        
+1. Using the __RadScheduleView.VisibleRangeChangedCommandProperty__ and the __RadScheduleView.VisibleRangeChangedCommandParameterProperty__. This approach is effective if you wish to load the visible appointments using the MVVM pattern.
 
+## Using the VisibleRangeChanged event.
 
-
-## 
-        Using the VisibleRangeChanged event.
-      
-
-* 
-            Handle the VisibleRangeChanged event:
-            
+* Handle the VisibleRangeChanged event:
 
 #### __XAML__
 
@@ -46,13 +33,9 @@ There are two approaches to accomplish this. You can choose one of them accordin
 	<telerik:RadScheduleView VisibleRangeChanged="scheduleView_VisibleRangeChanged">
 	...
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Get the VisibleRange from the sender:
-            
+* Get the VisibleRange from the sender:            
 
 #### __C#__
 
@@ -61,9 +44,7 @@ There are two approaches to accomplish this. You can choose one of them accordin
 	{
 	 var range = (sender as RadScheduleView).VisibleRange;
 	 }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -72,13 +53,9 @@ There are two approaches to accomplish this. You can choose one of them accordin
 	
 	 Dim range = TryCast(sender, RadScheduleView).VisibleRange
 	 End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Load the appointments:
-            
+* Load the appointments:            
 
 #### __C#__
 
@@ -88,9 +65,7 @@ There are two approaches to accomplish this. You can choose one of them accordin
 	   var range = (sender as RadScheduleView).VisibleRange;
 	   this.LoadAppointmentsByRange(range);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -100,41 +75,32 @@ There are two approaches to accomplish this. You can choose one of them accordin
 	 Dim range = TryCast(sender, RadScheduleView).VisibleRange
 	 Me.LoadAppointmentsByRange(range)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-## 
-        Using the VisibleRangeChangedCommand
+## Using the VisibleRangeChangedCommand
 
 * Create a RadScheduleViewViewModel class.
 
-* 
-            Add VisibleRangeChanged property of type ICommand:
-            
+* Add VisibleRangeChanged property of type ICommand:            
 
 #### __C#__
 
 {{region scheduleview-features-loadondemand_5}}
 	private ICommand visibleRangeChanged;
-	  public ICommand VisibleRangeChanged
-	  {
-	   get
-	   {
-	    return this.visibleRangeChanged;
-	   }
-	   set
-	   {
-	    this.visibleRangeChanged = value;
-	   }
-	  }
-	{{endregion}}
+	public ICommand VisibleRangeChanged
+	{
+		get
+		{
+		return this.visibleRangeChanged;
+		}
+		set
+		{
+		this.visibleRangeChanged = value;
+		}
+	}
+{{endregion}}
 
-
-
-* 
-            Initialize the VisibleRangeChanged property in the constructor of the RadScheduleViewViewModel and load the appointments in the VisibleRangeExecuted method.
-            
+* Initialize the VisibleRangeChanged property in the constructor of the RadScheduleViewViewModel and load the appointments in the VisibleRangeExecuted method.
 
 #### __C#__
 
@@ -164,9 +130,7 @@ There are two approaches to accomplish this. You can choose one of them accordin
 	  {
 	   return param != null;
 	  }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -190,12 +154,9 @@ There are two approaches to accomplish this. You can choose one of them accordin
 	Private Function CanVisibleRangeCanExecuted(param As Object) As Boolean
 	 Return param IsNot Nothing
 	End Function
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Bind the __VisibleRangeChangedCommand__ and __VisibleRangeChangedCommandParameter__
+* Bind the __VisibleRangeChangedCommand__ and __VisibleRangeChangedCommandParameter__
 
 #### __XAML__
 
@@ -205,6 +166,4 @@ There are two approaches to accomplish this. You can choose one of them accordin
 	         VisibleRangeChangedCommandParameter="{Binding VisibleRange, RelativeSource={RelativeSource Self}}">
 	...
 	</scheduleView:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}

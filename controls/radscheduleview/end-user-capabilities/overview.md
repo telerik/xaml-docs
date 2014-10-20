@@ -10,10 +10,6 @@ position: 0
 
 # Overview
 
-
-
-## 
-
 This chapter covers the most common end-user work flows in the usage of the Telerik's __RadScheduleView__.
 
 * [Create Appointment]({%slug radscheduleview-end-user-capabilities-create-appointment%})

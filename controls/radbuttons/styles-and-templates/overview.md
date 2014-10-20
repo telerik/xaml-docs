@@ -18,7 +18,7 @@ This section is intended to give you a broad understanding of the possible ways 
 
 >To learn how to change the control's theme, please read the common [Theming](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html) topic.
 
-You can modify the look of the __RadButtons__by either changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and to add your own elements. However, when changing the control template you should be careful to include all required parts.
+You can modify the look of the __RadButtons__ by either changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and to add your own elements. However, when changing the control template you should be careful to include all required parts.
 
 >tipTo learn more about templating the __RadControls__ read the [common topic](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html) regarding templating.
 

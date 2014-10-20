@@ -10,20 +10,16 @@ position: 0
 
 # Changes
 
-
-
 This article describes the release history of the RadTreeView control
 
 ## Q1 2014
-
 ### What's Fixed
 
-* Fixed: The lines of the control look jagged
+* Fixed: The lines of the control look jagged 
 
 * Fixed: DragDrop operation produces exception when ScrollViewer is removed from the TreeView's ControlTemplate
 
 ## Q2 2013
-
 ### What's Fixed
 
 * Fixed: AllowDrop is initially set to True
@@ -65,7 +61,6 @@ This article describes the release history of the RadTreeView control
 * Feature: Refactor Drag Drop logic to use the new API 
 
 ## Q1 2013
-
 ### What's Fixed
 
 * Fixed: Dynamic implicit theme change breaks expand/collapse animations
@@ -107,7 +102,6 @@ This article describes the release history of the RadTreeView control
 * Feature: Add touch support for scrolling
 
 ## Q3 2012
-
 ### What's Fixed
 
 * Fixed: Changing the height of TreeViewItem not respected by TreeViewPanel
@@ -119,7 +113,6 @@ This article describes the release history of the RadTreeView control
 * Feature: Touch Support for Scrolling
 
 ## Q2 2012
-
 ### What's Fixed
 
 * Fixed: Keyboard Navigation Not Relative to Focused Item 
@@ -130,12 +123,9 @@ This article describes the release history of the RadTreeView control
 
 * Fixed: Opening MessageBox on DoubleClick with enabled drag drop functionality freezes the mouse interaction
 
->You can examine the Q2 2012 release history in
-				{% if site.site_name == 'Silverlight' %}[our site](http://www.telerik.com/products/silverlight/whats-new/release_notes/q2-2012-version-2012-2-607.aspx){% endif %}{% if site.site_name == 'WPF' %}[our site](http://www.telerik.com/products/wpf/whats-new/release-history/q2-2012-version-2012-2-607-2457892840.aspx){% endif %}.
-			  
-
+>You can examine the Q2 2012 release history in {% if site.site_name == 'Silverlight' %}[our site](http://www.telerik.com/products/silverlight/whats-new/release_notes/q2-2012-version-2012-2-607.aspx){% endif %}{% if site.site_name == 'WPF' %}[our site](http://www.telerik.com/products/wpf/whats-new/release-history/q2-2012-version-2012-2-607-2457892840.aspx){% endif %}.
+			
 ## Q1 2012
-
 ### What's Fixed
 
 * Fixed: PreviewDragStarted fires if you handle PreviewSelected/PreviewUnselected 
@@ -156,8 +146,5 @@ This article describes the release history of the RadTreeView control
 
 * Feature: Add Double Click Event
 
->You can examine the Q1 2012 release history in
-				{% if site.site_name == 'Silverlight' %}[our site](http://www.telerik.com/products/silverlight/whats-new/release_notes/q1-2012-version-2012-1-215-271395503.aspx){% endif %}{% if site.site_name == 'WPF' %}[our site](http://www.telerik.com/products/wpf/whats-new/release-history/q1-2012-version-2012-1-215-1506305735.aspx){% endif %}.
+>You can examine the Q1 2012 release history in {% if site.site_name == 'Silverlight' %}[our site](http://www.telerik.com/products/silverlight/whats-new/release_notes/q1-2012-version-2012-1-215-271395503.aspx){% endif %}{% if site.site_name == 'WPF' %}[our site](http://www.telerik.com/products/wpf/whats-new/release-history/q1-2012-version-2012-1-215-1506305735.aspx){% endif %}.
 			  
-
-# See Also

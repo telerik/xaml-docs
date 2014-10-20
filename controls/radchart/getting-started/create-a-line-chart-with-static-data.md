@@ -24,9 +24,7 @@ This tutorial will walk you through the creation of a __RadChart__ and will show
 
 >Before reading this tutorial you should get familiar with the [Visual Structure]({%slug radchart-general-information-visual-structure%}) of the standard __RadChart__ control and its elements.
 
-For the purpose of this tutorial, you will need to create an empty 
-{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
-{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Blend.
+For the purpose of this tutorial, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Blend.
 
 >In order to use __RadChart__ control in your projects you have to add references to __Telerik.Windows.Controls.Charting.dll__, __Telerik.Windows.Controls.dll__ and __Telerik.Windows.Data.dll.__
 

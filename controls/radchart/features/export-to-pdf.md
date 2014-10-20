@@ -70,45 +70,6 @@ The following code creates the Chart part of the PDF document:
 	{{endregion}}
 
 
-
-#### __C#__
-
-{{region radchart-features-export-to-pdf_2}}
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	
-	MemoryStream ms = new MemoryStream();
-	RadChart1.ExportToImage(ms, new PngBitmapEncoder());
-	ImageInline image = new ImageInline(ms, new Size(700, 500), "png");
-	
-	paragraph.Inlines.Add(image);
-	section.Blocks.Add(paragraph);
-	document.Sections.Add(section);
-	
-	ms.Close();
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchart-features-export-to-pdf_3}}
-	    Dim section As New Section()
-	    Dim paragraph As New Paragraph()
-	
-	    Dim ms As New MemoryStream()
-	RadChart1.ExportToImage(ms, New PngBitmapEncoder())
-	    Dim image As New ImageInline(ms, New Size(700, 500), "png")
-	
-	paragraph.Inlines.Add(image)
-	section.Blocks.Add(paragraph)
-	document.Sections.Add(section)
-	
-	ms.Close()
-	{{endregion}}
-
-
-
 As for the grid part of the constructed document – all you need to do is create a second __Section__ element and construct __Table__ with the respective __TableRow__/ __TableCell__ elements. We will not go into details as you may find them as well as the source listing in this [online example](http://demos.telerik.com/silverlight/#GridView/PrintAndExportWithRadDocument) and this blog post [here](http://blogs.telerik.com/vladimirenchev/posts/10-11-11/pdf_export_with_radgridview_for_silverlight_q3_2010.aspx).
 
 Now that the document model is ready, you can add a Button that will function as exporter and call the __PdfFormatProvider.Export(...)__ method from the *Click* event's body like this:

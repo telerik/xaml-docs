@@ -31,8 +31,6 @@ You can set values for the properties like this:
 	RadChart1.DefaultView.ChartArea.ItemWidthPercent = 50;
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-features-itemwidthpercent-and-itemoverlappercent_1}}
@@ -40,44 +38,27 @@ You can set values for the properties like this:
 	RadChart1.DefaultView.ChartArea.ItemWidthPercent = 50
 	{{endregion}}
 
-
-
+    
 The sample pictures show these properties in action:
 
 *ItemOverlapPercent* = 0 and *ItemWidthPercent* = 100
 
-
-
-
-         
-      ![ItemOverlapPercent=0 and ItemWidthPercent=100 ](images/RadChart_Features_Capture1.PNG)
+![ItemOverlapPercent=0 and ItemWidthPercent=100 ](images/RadChart_Features_Capture1.PNG)
 
 
 
 *ItemOverlapPercent* = 0 and *ItemWidthPercent* = 50
 
-
-
-
-         
-      ![](images/RadChart_Features_Capture2.PNG)
+![](images/RadChart_Features_Capture2.PNG)
 
 
 
 *ItemOverlapPercent* = -20 and *ItemWidthPercent* = 50
 
-
-
-
-         
-      ![](images/RadChart_Features_Capture3.PNG)
+![](images/RadChart_Features_Capture3.PNG)
 
 
 
 *ItemOverlapPercent* = 50 and *ItemWidthPercent* = 50
 
-
-
-
-         
-      ![](images/RadChart_Features_Capture4.PNG)
+![](images/RadChart_Features_Capture4.PNG)

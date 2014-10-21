@@ -20,7 +20,7 @@ For the purpose 3 StackedBar series are created using the [Manual Series Mapping
 #### __C#__
 
 {{region radchart-howto-select-whole-stack-of-bars-using-the-interactivity-effects_0}}
-	public partial class MainPage : UserControl   // MainWindow in WPF
+	public partial class MainPage : UserControl 
 	    {
 	        public class Company
 	        {
@@ -167,14 +167,10 @@ For the purpose 3 StackedBar series are created using the [Manual Series Mapping
 
 Note that the *SelectionScope* is set to Multiple and *SelectionMode* to Item.
 
->tip__ChildrenOfType__() is an extension method of *Telerik.Windows.Controls.dll* and you will need to add reference to it.
+>tip __ChildrenOfType__() is an extension method of *Telerik.Windows.Controls.dll* and you will need to add reference to it.
 
 The Selection is cleared each time the SelectedItems are more than one so that you won't have more than one Stack of Bars selected simultaneously.
 
 The result can be seen below:
 
-
-
-
-         
-      ![](images/RadChart_HowToStackedbarsSelection.PNG)
+![](images/RadChart_HowToStackedbarsSelection.PNG)

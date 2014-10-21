@@ -66,13 +66,9 @@ Here is an example.
 	Me.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.ScrollMode = ScrollMode.ScrollAndZoom
 	{{endregion}}
 
+    
 
-
-
-
-
-         
-      ![](images/RadChart_Features_Zooming_and_Scrolling_01.png)
+![](images/RadChart_Features_Zooming_and_Scrolling_01.png)
 
 ## Using the Zooming and Scrolling
 
@@ -80,19 +76,11 @@ There are two things the user can do in order to zoom the series in the __ChartA
 
 * __Resize the ScrollBar__ - the __ScrollBar__ can be resized from both the left and the right side. Changing its size, changes the range of the displayed data.
 
-
-
-
-         
-      ![](images/RadChart_Features_Zooming_and_Scrolling_02.png)
+    ![](images/RadChart_Features_Zooming_and_Scrolling_02.png)
 
 * __Select an Area__ - you can draw a selection on the __ChartArea__, which will determine the range of data to be displayed.
 
-
-
-
-         
-      ![](images/RadChart_Features_Zooming_and_Scrolling_03.png)
+    ![](images/RadChart_Features_Zooming_and_Scrolling_03.png)
 
 ## Styling the Zooming and Scrolling Elements
 

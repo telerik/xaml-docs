@@ -14,8 +14,7 @@ position: 2
 
 ## 
 
-In order to improve the readiness of the chart you may want to add a grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes for better readability.
-      Depending on the chart that you use (RadCartesianChart or RadPolarChart) there are two types CartesianChartGrid and PolarChartGrid that you can play with to add a decoration over the plot area.
+In order to improve the readiness of the chart you may want to add a grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes for better readability. Depending on the chart that you use (RadCartesianChart or RadPolarChart) there are two types CartesianChartGrid and PolarChartGrid that you can play with to add a decoration over the plot area.
 
 * [CartesianChartGrid](#CartesianChartGrid)
 
@@ -33,8 +32,7 @@ In order to improve the readiness of the chart you may want to add a grid-like v
 
 ![Rad Chart View-chart majorlines](images/RadChartView-chart_majorlines.PNG)
 
->For the sake of shortness and simplicity this article won't show you how to create chart series and populate them with data. You may find this information in RadChartView's
-  *Populating With Data* and *Series* sections.
+>For the sake of shortness and simplicity this article won't show you how to create chart series and populate them with data. You may find this information in RadChartView's *Populating With Data* and *Series* sections.
 
 To enable striplines you should set some brushes. There is no limitation for the number or type of brushes you may use. The plot area will be colored alternatively with the colors you have set.
       

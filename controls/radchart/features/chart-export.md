@@ -90,11 +90,7 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 
 The snapshot below shows the exported ExcelML file loaded into Excel.
 
-
-
-
-         
-      ![](images/RadChart_Features_Export_01.png)
+![](images/RadChart_Features_Export_01.png)
 
 
 

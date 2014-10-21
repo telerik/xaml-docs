@@ -14,7 +14,7 @@ position: 4
 
 ## 
 
-The axis grid lines are part of the chart axis and are represented by the __Line__ control. To create a style for them in Expression Blend use a dummy control and after modifying it, set it to the __AxisStyles__complex property of the __Axis__.
+The axis grid lines are part of the chart axis and are represented by the __Line__ control. To create a style for them in Expression Blend use a dummy control and after modifying it, set it to the __AxisStyles__ complex property of the __Axis__.
 
 Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ control you have to go to the XAML view. To do that select *View -> Active Document View -> XAML View* from the menu. Declare a __Line__ control in your XAML.
 
@@ -60,11 +60,7 @@ After finishing with the changes, it is time to set the style. It can be set onl
 
 Here is a snapshot of the sample result.
 
-
-
-
-         
-      ![](images/RadChart_StylingAxisGridLines_04.png)
+![](images/RadChart_StylingAxisGridLines_04.png)
 
 Here is the final XAML for the __Style__:
 

@@ -12,15 +12,11 @@ position: 1
 
 
 
-Like most controls, the __RadChart__also allow you to template it in order to change the control from the inside. Except for templating the whole control, you can template only parts of it. This topic will make you familiar with the structure of the __RadChart's__ templates.
+Like most controls, the __RadChart__ also allow you to template it in order to change the control from the inside. Except for templating the whole control, you can template only parts of it. This topic will make you familiar with the structure of the __RadChart's__ templates.
 
 ## RadChart
 
-
-
-
-         
-      ![](images/RadChart_TemplateStructure_01.png)
+![](images/RadChart_TemplateStructure_01.png)
 
 * __[Border]__ - represents the border around the __RadChart__ and is of type __Border__.
 
@@ -38,11 +34,7 @@ Like most controls, the __RadChart__also allow you to template it in order to ch
 
 ## Chart Area
 
-
-
-
-         
-      ![](images/RadChart_TemplateStructure_02.png)
+![](images/RadChart_TemplateStructure_02.png)
 
 * __[Grid]__ - hosts the elements of the __ChartArea's__ template and is of type __Grid__.
 

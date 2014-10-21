@@ -16,7 +16,7 @@ position: 8
 
 The following article demonstrates how to control the overlapping of [Bubbles](http://demos.telerik.com/silverlight/#Chart/Gallery/Bubble) when they are positioned too close. By selecting one of the Bubbles the *Canvas.ZIndex* attached property will increase it's value (by default it is 0) which will cause the selected Bubble to be positioned over the others.
 
-1. Create a class of Business Objects that will be used to populate the Chart:
+##### 1. Create a class of Business Objects that will be used to populate the Chart:
 
 #### __C#__
 
@@ -171,7 +171,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 
 
 
-2. Create a BubbleViewModel class:
+##### 2. Create a BubbleViewModel class:
 
 #### __C#__
 
@@ -215,7 +215,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 
 
 
-3. Add a new RadChart declaration and new SeriesMapping (the Chart is populated via [Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%})). 
+##### 3. Add a new RadChart declaration and new SeriesMapping (the Chart is populated via [Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%})). 
 
 #### __XAML__
 
@@ -243,7 +243,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 
 Selection of Bubble Items is achieved via [Interactivity Effects](http://www.telerik.com/help/silverlight/radchart-features-interactivity-effects.html) feature of the RadChart.
 
-4. In the MainPage.xaml.cs subscribe to __SelectionChanged__ event of the ChartArea and make sure there is only one Bubble Item Selected. Set the __Canvas.ZIndex__property of the selected Bubble to 2000 and make it 0 for all others:
+##### 4. In the MainPage.xaml.cs subscribe to __SelectionChanged__ event of the ChartArea and make sure there is only one Bubble Item Selected. Set the __Canvas.ZIndex__ property of the selected Bubble to 2000 and make it 0 for all others:
 
 #### __C#__
 
@@ -304,10 +304,6 @@ Selection of Bubble Items is achieved via [Interactivity Effects](http://www.tel
 
 
 
-5. The result:
+##### 5. The result:
 
-
-
-
-         
-      ![](images/BubbleCapture.PNG)
+![](images/BubbleCapture.PNG)

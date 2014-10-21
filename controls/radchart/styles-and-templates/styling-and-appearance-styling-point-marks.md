@@ -19,15 +19,12 @@ The easiest approach that you can use in order to style the point marks is to us
 * __Fill__ - gets or sets the brush that describes the fill of the point mark. 
 
 * __Stroke__ - gets or sets the brush that describes the stroke of the point mark. 
-          
 
 * __StrokeThickness__ - gets or sets the stroke thickness of the point mark.
 
 * __Shape__- gets or sets the shape of the point mark, which corresponds to a value of the __Telerik.Windows.Controls.Charting.MarkerShape__ enumerator. 
 
->
-
-Currently, changing the point marks appearance could be done only via the provided API. Declarative customizations are not supported.
+>Currently, changing the point marks appearance could be done only via the provided API. Declarative customizations are not supported.
 
 For example, you can change the appearance of the point marks for a __LineSeries__ in the following way.
 
@@ -67,9 +64,7 @@ Here is the result.
 
 __Customize Scatter/Bubble Series__
 
-Changing the shape of the pointmark can be done by retemplating the Scatter/Point control
-       (the class that represents 1 point on the screen).
-       You can create a custom style for your scatter points as shown below and apply it to the series via __ItemStyle__ property:
+Changing the shape of the pointmark can be done by retemplating the Scatter/Point control (the class that represents 1 point on the screen). You can create a custom style for your scatter points as shown below and apply it to the series via __ItemStyle__ property:
 
 #### __XAML__
 

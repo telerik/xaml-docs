@@ -14,9 +14,9 @@ position: 7
 
 ## 
 
->tipThe approach below allow you more completely to change the appearance of the axis item label, but if you want to change only the foreground of it, you can use the __AxisForeground__ property of the __RadChart__.__Note__ that the value of this property will get applied to all of the axis item labels and all of the axis titles.
+>tipThe approach below allow you more completely to change the appearance of the axis item label, but if you want to change only the foreground of it, you can use the __AxisForeground__ property of the __RadChart.Note__ that the value of this property will get applied to all of the axis item labels and all of the axis titles.
 
-The axis title is part of the chart axis and is represented by the __AxisTitle__control. To style it in Expression Blend use a dummy control to create the style and after modifying it, set it to the __RadChart__.
+The axis title is part of the chart axis and is represented by the __AxisTitle__ control. To style it in Expression Blend use a dummy control to create the style and after modifying it, set it to the __RadChart__.
 
 Open your __RadChart__ project in Expression Blend. On the same scene you should place a __AxisTitle__ control which will be used as a dummy. To do so choose the 'Assets' tab. From the 'Controls -> All' section select the __AxisTitle__ control.
 
@@ -26,13 +26,9 @@ With your mouse create a new instance of the control on the scene. Now select th
 
 After clicking the OK button a style with target type __AxisTitle__ will be created and the properties for this type will be loaded in the 'Properties' pane. Modify them until you get the desired appearance.
 
-If you go to the 'Resources' pane you will see that two additional __Styles__ have been generated together with the one for the __AxisTitle.__They are for the borders which the __AxisTitle__ uses in its template. Clicking on their icons will allow you to modify them.
+If you go to the 'Resources' pane you will see that two additional __Styles__ have been generated together with the one for the __AxisTitle__. They are for the borders which the __AxisTitle__ uses in its template. Clicking on their icons will allow you to modify them.
 
-
-
-
-         
-      ![](images/RadChart_StylingAxisTitle_07.png)
+![](images/RadChart_StylingAxisTitle_07.png)
 
 After finishing with the changes it is time to set the style. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
@@ -56,11 +52,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 >tipThe title for a particular axis can be set through its __Title__ property. Read more about axes [here]({%slug radchart-features-axes-overview%}).
 
-
-
-
-         
-      ![](images/RadChart_StylingAxisTitle_10.png)
+![](images/RadChart_StylingAxisTitle_10.png)
 
 Here is the final XAML for the __Style__:
 

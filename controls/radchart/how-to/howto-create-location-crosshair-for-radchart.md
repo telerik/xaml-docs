@@ -15,18 +15,9 @@ position: 18
 ## 
 
 This help topic will demonstrate how to add location crosshair for RadChart as well as location indicator (achieved by two TextBlock-s that track the current mouse location).
+![](images/RadChart_HowTo_LocationCrosshair.PNG)
 
-
-
-
-         
-      ![](images/RadChart_HowTo_LocationCrosshair.PNG)
-
-To achieve the crosshair functionality you will add two [
-        custom gridlines]({%slug radchart-features-annotations-custom-gridline%}) to the ChartArea (each of them parallel to one of the axes). Also, you will need three events – 
-        MouseEnter, MouseLeave and MouseMove to track the mouse cursor position and “move” the gridlines across the plot area (represented by ClipPanel element in the ChartArea template).
-        First you need to hook up to the chart's Loaded event. When the chart is loaded you can easily get hold of the panel via
-        the ChildrenOfType<T> extension method (add reference to the __Telerik.Windows.Controls__ namespace) like this:
+To achieve the crosshair functionality you will add two [custom gridlines]({%slug radchart-features-annotations-custom-gridline%}) to the ChartArea (each of them parallel to one of the axes). Also, you will need three events – MouseEnter, MouseLeave and MouseMove to track the mouse cursor position and “move” the gridlines across the plot area (represented by ClipPanel element in the ChartArea template). First you need to hook up to the chart's Loaded event. When the chart is loaded you can easily get hold of the panel via the ChildrenOfType<T> extension method (add reference to the __Telerik.Windows.Controls__ namespace) like this:
 
 #### __C#__
 
@@ -55,18 +46,9 @@ To achieve the crosshair functionality you will add two [
 
 
 
-By handling the MouseEnter and MouseLeave events you can add and remove the gridlines 
-        whenever the mouse cursor enters or leaves the bounds of the plot area. The Mouse Move event handler in the code behind
-        finds the current mouse position within the plot area. Note that you need to calculate the respective mouse coordinates
-        relative to the plot area and not to the ChartArea itself.
-        Now that you have the correct mouse coordinates, you need to pass the information to the custom gridline elements as well.
-        However, the gridlines expect and work with data units and not physical pixels so a transformation must be applied first.
-        Each axis exposes *ConvertPhysicalUnitsToData*() method that can handle the actual conversion 
-        from physical pixels to data units.
+By handling the MouseEnter and MouseLeave events you can add and remove the gridlines whenever the mouse cursor enters or leaves the bounds of the plot area. The Mouse Move event handler in the code behind finds the current mouse position within the plot area. Note that you need to calculate the respective mouse coordinates relative to the plot area and not to the ChartArea itself. Now that you have the correct mouse coordinates, you need to pass the information to the custom gridline elements as well. However, the gridlines expect and work with data units and not physical pixels so a transformation must be applied first. Each axis exposes *ConvertPhysicalUnitsToData*() method that can handle the actual conversion from physical pixels to data units.
 
->If you need the same functionality on mouse click, you do not need to perform 
-        the conversion manually, as RadChart provides already converted values through the event arguments for the 
-        __ChartArea.PlotAreaMouseLeftButtonDown__ / __ChartArea.PlotAreaMouseLeftButtonUp__ events.
+>If you need the same functionality on mouse click, you do not need to perform the conversion manually, as RadChart provides already converted values through the event arguments for the __ChartArea.PlotAreaMouseLeftButtonDown__ / __ChartArea.PlotAreaMouseLeftButtonUp__ events.
 
 Knowing the current X and Y data values of the mouse cursor you can bind the pair of lines to the X and Y properties of their DataContext, ensuring that the two lines will intersect at the current mouse location. 
 

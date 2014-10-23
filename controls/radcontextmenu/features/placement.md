@@ -10,25 +10,15 @@ position: 3
 
 # Placement
 
-
-
 The __RadContextMenu__ exposes a set of properties, which allow you to specify the location, on which it will appear. They are as follows:
 
-* [
-            Placement
-          ](#placement)
+* [Placement](#placement)
 
-* [
-            PlacementRectangle
-          ](#placementrectangle)
+* [PlacementRectangle](#placementrectangle)
 
-* [
-            PlacementTarget
-          ](#placementtarget)
+* [PlacementTarget](#placementtarget)
 
-* [
-            DropDownPlacement
-          ](#dropdownplacement)
+* [DropDownPlacement](#dropdownplacement)
 
 ## Placement
 
@@ -61,9 +51,7 @@ Here is an example:
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadContextMenu_Features_Placement_01.png)
 
@@ -71,9 +59,7 @@ Here is an example:
 
 The __PlacementRectangle__ is of type __Rect__ and specifies the position of the __RadContextMenu__. It can be combined with the __Placement__ property.
 
->tip
-            Properties of type __Rect__ cannot be declared in-line because this is not supported by Silverlight. Set the property as attribute by passing the x, y, width and height parameters. The type converter will handle them from there.
-          
+>tipProperties of type __Rect__ cannot be declared in-line because this is not supported by Silverlight. Set the property as attribute by passing the x, y, width and height parameters. The type converter will handle them from there.          
 
 #### __XAML__
 
@@ -89,21 +75,15 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadContextMenu_Features_Placement_02.png)
 
 ## PlacementTarget
 
-The __PlacementTarget__ property is used when the __RadContextMenu__ should be displayed on 
-          a position related to a different UI element (not the one attached to).
-        
+The __PlacementTarget__ property is used when the __RadContextMenu__ should be displayed on a position related to a different UI element (not the one attached to).
 
->If you are using the same __RadContextMenu__ for multiple elements and you want to open it from the code behind, 
-            it is mandatory to set the __PlacementTarget__.
-          
+>If you are using the same __RadContextMenu__ for multiple elements and you want to open it from the code behind, it is mandatory to set the __PlacementTarget__.          
 
 #### __C#__
 
@@ -114,33 +94,37 @@ The __PlacementTarget__ property is used when the __RadContextMenu__ should be d
 	    this.radContextMenu.PlacementTarget = this.InputBox;
 	    this.radContextMenu.IsOpen = true;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadContextMenu_Features_Placement_01.png)
-<table><th><tr><td>Placement</td><td>Placement Target</td><td>Target Area</td><td>Context Menu Target Point</td><td>Context Menu Alignment Point</td></tr></th><tr><td>Absolute</td><td>Not applicable. PlacementTarget is ignored.</td><td>The screen, or PlacementRectangle if it is set. The PlacementRectangle is relative to the screen.</td><td>The top-left corner of the target area.</td><td>The top-left corner of the RadContextMenu.</td></tr><tr><td>AbsolutePoint</td><td>Not applicable. PlacementTarget is ignored.</td><td>The screen, or PlacementRectangle if it is set. The PlacementRectangle is relative to the screen.</td><td>The top-left corner of the target area.</td><td>The top-left corner of the RadContextMenu.</td></tr><tr><td>Bottom</td><td>PlacementTarget or parent.</td><td>The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.</td><td>The bottom-left corner of the target area.</td><td>The top-left corner of the RadContextMenu.</td></tr><tr><td>Center</td><td>PlacementTarget or parent.</td><td>The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.</td><td>The center of the target area.</td><td>The center of the RadContextMenu.</td></tr><tr><td>Left</td><td>PlacementTarget or parent.</td><td>The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.</td><td>The top-left corner of the target area.</td><td>The top-right corner of the RadContextMenu.</td></tr><tr><td>Mouse</td><td>Not applicable. PlacementTarget is ignored.</td><td>The bounds of the mouse pointer. PlacementRectangle is ignored.</td><td>The bottom-left corner of the target area.</td><td>The top-left corner of the RadContextMenu.</td></tr><tr><td>MousePoint</td><td>Not applicable. PlacementTarget is ignored.</td><td>The bounds of the mouse pointer. PlacementRectangle is ignored.</td><td>The top-left corner of the target area.</td><td>The top-left corner of the RadContextMenu.</td></tr><tr><td>Relative</td><td>PlacementTarget or parent.</td><td>The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.</td><td>The top-left corner of the target area.</td><td>The top-left corner of the RadContextMenu.</td></tr><tr><td>RelativePoint</td><td>PlacementTarget or parent.</td><td>The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.</td><td>The top-left corner of the target area.</td><td>The top-left corner of the RadContextMenu.</td></tr><tr><td>Right</td><td>PlacementTarget or parent.</td><td>The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.</td><td>The top-right corner of the target area.</td><td>The top-left corner of the RadContextMenu.</td></tr><tr><td>Top</td><td>PlacementTarget or parent.</td><td>The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.</td><td>The top-left corner of the target area.</td><td>The bottom-left corner of the RadContextMenu.</td></tr></table>
+
+Placement	|	Placement Target	|	Target Area	|	Context Menu Target Point	|	Context Menu Alignment Point
+---	|	---	|	---	|	---	|	---
+Absolute	|	Not applicable. PlacementTarget is ignored.	|	The screen, or PlacementRectangle if it is set. The PlacementRectangle is relative to the screen.	|	The top-left corner of the target area.	|	The top-left corner of the RadContextMenu.
+AbsolutePoint	|	Not applicable. PlacementTarget is ignored.	|	The screen, or PlacementRectangle if it is set. The PlacementRectangle is relative to the screen.	|	The top-left corner of the target area.	|	The top-left corner of the RadContextMenu.
+Bottom	|	PlacementTarget or parent.	|	The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.	|	The bottom-left corner of the target area.	|	The top-left corner of the RadContextMenu.
+Center	|	PlacementTarget or parent.	|	The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.	|	The center of the target area.	|	The center of the RadContextMenu.
+Left	|	PlacementTarget or parent.	|	The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.	|	The top-left corner of the target area.	|	The top-right corner of the RadContextMenu.
+Mouse	|	Not applicable. PlacementTarget is ignored.	|	The bounds of the mouse pointer. PlacementRectangle is ignored.	|	The bottom-left corner of the target area.	|	The top-left corner of the RadContextMenu.
+MousePoint	|	Not applicable. PlacementTarget is ignored.	|	The bounds of the mouse pointer. PlacementRectangle is ignored.	|	The top-left corner of the target area.	|	The top-left corner of the RadContextMenu.
+Relative	|	PlacementTarget or parent.	|	The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.	|	The top-left corner of the target area.	|	The top-left corner of the RadContextMenu.
+RelativePoint	|	PlacementTarget or parent.	|	The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.	|	The top-left corner of the target area.	|	The top-left corner of the RadContextMenu.
+Right	|	PlacementTarget or parent.	|	The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.	|	The top-right corner of the target area.	|	The top-left corner of the RadContextMenu.
+Top	|	PlacementTarget or parent.	|	The target object, or PlacementRectangle if it is set. The PlacementRectangle is relative to the target object.	|	The top-left corner of the target area.	|	The bottom-left corner of the RadContextMenu.
 
 ## DropDownPlacement
 
-If there are any sub-menus in the __RadContextMenu__ their dropdown position can be specified through the
-          __DropDownPlacement__ property of the __RadMenuItem__. It has the following values:
-        
+If there are any sub-menus in the __RadContextMenu__ their dropdown position can be specified through the __DropDownPlacement__ property of the __RadMenuItem__. It has the following values:        
 
 * __Auto__ - positions the dropdown of the sub-menu automatically.
-          
 
-* __Bottom__ - displays the nested __RadMenuItems__ below the parent RadMenuItem.
-          
+* __Bottom__ - displays the nested __RadMenuItems__ below the parent RadMenuItem.          
 
 * __Left__ - displays the nested __RadMenuItems__ on the left of the parent RadMenuItem.
-          
 
 * __Right__ - displays the nested __RadMenuItems__ on the right of the parent RadMenuItem.
-          
 
 * __Top__ - displays the nested __RadMenuItems__ above the parent RadMenuItem.
-          
 
 Here is an example:
 
@@ -161,9 +145,7 @@ Here is an example:
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadContextMenu_Features_Placement_03.png)
 

@@ -11,14 +11,15 @@ position: 0
 # Working with the RadContextMenu
 
 
-
 This topic will make you familiar with the basics around the usage of the __RadContextMenu__. The following topics will be discussed:
 
 * [Attaching a RadContextMenu to a Control](#attaching-a-radcontextmenu-to-a-control)
 
 * [Adding Menu Items to the RadContextMenu](#adding-menu-items-to-the-radcontextmenu)
 
-* [Getting the Clicked Element](#getting-the-clicked-element)Attaching a RadContextMenu to a Control
+* [Getting the Clicked Element](#getting-the-clicked-element)
+
+## Attaching a RadContextMenu to a Control
 
 In order to attach a __RadContextMenu__ to a control, you have to set the instance of it to the __RadContextMenu.ContextMenu__ attached property.
 
@@ -33,9 +34,7 @@ In order to attach a __RadContextMenu__ to a control, you have to set the instan
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -46,9 +45,7 @@ In order to attach a __RadContextMenu__ to a control, you have to set the instan
 	    RadContextMenu radContextMenu = new RadContextMenu();
 	    RadContextMenu.SetContextMenu( this.textBox, radContextMenu );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -58,17 +55,13 @@ In order to attach a __RadContextMenu__ to a control, you have to set the instan
 	 Dim radContextMenu As New RadContextMenu()
 	 RadContextMenu.SetContextMenu(Me.textBox, radContextMenu)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding Menu Items to the RadContextMenu
 
->The class that represents the menu item is __Telerik.Windows.Controls.RadMenuItem__, located in the __Telerik.Windows.Controls.Navigation__ assembly.{% if site.site_name == 'Silverlight' %}
+>The class that represents the menu item is __Telerik.Windows.Controls.RadMenuItem__, located in the __Telerik.Windows.Controls.Navigation__ assembly.
 
->tipTo learn more about the __RadMenuItem__ control, please take a look at the [RadMenu's help content](http://www.telerik.com/help/silverlight/radmenu-overview.html).{% endif %}{% if site.site_name == 'WPF' %}
-
->tipTo learn more about the __RadMenuItem__ control, please take a look at the [RadMenu's help content](http://www.telerik.com/help/wpf/radmenu-overview.html).{% endif %}
+>tipTo learn more about the __RadMenuItem__ control, please take a look at the [RadMenu's help content]({%slug radmenu-overview%}).
 
 The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample declaration of several child menu items.
 
@@ -86,9 +79,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	         </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -109,9 +100,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	    radContextMenu.Items.Add( cutItem );
 	    RadContextMenu.SetContextMenu( this.textBox, radContextMenu );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -130,13 +119,11 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	 radContextMenu.Items.Add(cutItem)
 	 RadContextMenu.SetContextMenu(Me.textBox, radContextMenu)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Getting the Clicked Element
 
-When an element gets clicked and the __RadContextMenu__ appears, you might need to get the instance of that element. This can be very useful when you have an __ItemsControl__ that integrates with the __RadContextMenu__, as you can get the instance of the item that has been clicked. For this purpose, the __RadContextMenu__ exposes the __GetClickedElement<T>()__ method. This will return the first element of type __T__ in the VisualTree, that is part of the route of the __RadContextMenu's__ triggering event.
+When an element gets clicked and the __RadContextMenu__ appears, you might need to get the instance of that element. This can be very useful when you have an __ItemsControl__ that integrates with the __RadContextMenu__, as you can get the instance of the item that has been clicked. For this purpose, the __RadContextMenu__ exposes the __GetClickedElement\<T\>()__ method. This will return the first element of type __T__ in the VisualTree, that is part of the route of the __RadContextMenu's__ triggering event.
 
 For example, if you have a __RadTreeView__ with a __RadContextMenu__ attached, and you want to get the instance of the __RadTreeViewItem__, which has been right-clicked, you can use the following lines of code.
 
@@ -144,17 +131,13 @@ For example, if you have a __RadTreeView__ with a __RadContextMenu__ attached, a
 
 {{region radcontextmenu-features-working-with-radcontext-menu_6}}
 	RadTreeViewItem item = radContextMenu.GetClickedElement<RadTreeViewItem>();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radcontextmenu-features-working-with-radcontext-menu_7}}
 	Dim item As RadTreeViewItem = radContextMenu.GetClickedElement(Of RadTreeViewItem)()
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipA more complex example scenario can be found in the [Use RadContextMenu with a RadGridView]({%slug radcontextmenu-how-to-use-radcontextmenu-with-radgridview%}) topic and in the [Select the clicked Item of a RadTreeView]({%slug radcontextmenu-how-to-select-the-clicked-item-of-radtreeview%}) topic.
 

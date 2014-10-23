@@ -10,10 +10,6 @@ position: 2
 
 # Key Modifiers
 
-
-
-## 
-
 The __ModifierKey__ property allows you to use a modifier key, which in combination with the mouse action opens the __RadContextMenu__. When setting the __ModifierKey__ property you can choose among several available values:
 
 * __Alt__ - specifies that the __Alt__ button must be pressed, in order to open the __RadContextMenu__.
@@ -41,9 +37,7 @@ Here is an example of a __RadContextMenu__ that requires the Control button to b
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 If you run your application and just right-click the __TextBox__ control, nothing will happen. The combination of holding the "__Control__" key and then right-clicking the button actually opens the __RadContextMenu__.
 

@@ -10,23 +10,17 @@ position: 2
 
 # Using Static Items
 
+This tutorial will walk you through the common task of populating __RadMenu__ with __RadMenuItems__ declaratively. 
 
-
-## 
-
-This tutorial will walk you through the common task of populating __RadMenu__with __RadMenuItems__declaratively. 
-
-Here is a regular __RadMenu__declaration without items:
+Here is a regular __RadMenu__ declaration without items:
 
 #### __XAML__
 
 {{region radmenu-populating-with-data-using-static-items_0}}
 	<telerik:RadMenu VerticalAlignment="Top">
-	{{endregion}}
+{{endregion}}
 
-
-
-In order to add items you need to use the __RadMenu's____Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadMenuItems__. For example, the following lines will add the top-level items of the menu.
+In order to add items you need to use the __RadMenu's Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadMenuItems__. For example, the following lines will add the top-level items of the menu.
 
 #### __XAML__
 
@@ -39,9 +33,7 @@ In order to add items you need to use the __RadMenu's____Items__ property. The _
 	    <telerik:RadMenuItem Header="Tools" />
 	    <telerik:RadMenuItem Header="Help" />
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadMenu_Populating_with_Data_Using_Static_Items_01.png)
 
@@ -84,9 +76,7 @@ Each of the __RadMenuItems__ can have child items that are defined in the same w
 	    <telerik:RadMenuItem Header="Tools" />
 	    <telerik:RadMenuItem Header="Help" />
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadMenu_Populating_with_Data_Using_Static_Items_02.png)
 

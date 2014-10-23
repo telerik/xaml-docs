@@ -293,7 +293,7 @@ The specified label formats are:
 
 * "__High/Low: #DATAITEM.High{C4}/#DATAITEM.Low{C4}\nVolume: #DATAITEM.Volume{#,###,###,##0}"__
 
-The result is shown on the image below. Note that the __YValue__ is bound to the __Close__ property of the underlying business object, while the tooltip using the __#DATAITEM__ token extracts the values from from the __High__, __Low__and __Volume__ properties and then applies the specified format:
+The result is shown on the image below. Note that the __YValue__ is bound to the __Close__ property of the underlying business object, while the tooltip using the __#DATAITEM__ token extracts the values from from the __High__, __Low__ and __Volume__ properties and then applies the specified format:
  
       ![](images/RadChart_Features_FormatExpressions_010.png)
 

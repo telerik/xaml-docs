@@ -16,7 +16,7 @@ position: 26
 
 >This feature is available in data bound scenarios only!
 
-The __RadChart__ allows you to programmatically filter its data. This is achieved via the __FilterDescriptors__ property of the __RadChart__or the __FilterDescriptors__ property of the __SeriesMapping__. This collection allows you to use descriptors which define the sorting member and the sorting direction for the data to which the __RadChart__ is bound. As this is a collection you are able not only to add, but also to remove or clear the entries in it, too.
+The __RadChart__ allows you to programmatically filter its data. This is achieved via the __FilterDescriptors__ property of the __RadChart__ or the __FilterDescriptors__ property of the __SeriesMapping__. This collection allows you to use descriptors which define the sorting member and the sorting direction for the data to which the __RadChart__ is bound. As this is a collection you are able not only to add, but also to remove or clear the entries in it, too.
 
 The items in this collection are of type __ChartFilterDescriptor__. It exposes a few important properties:
 
@@ -24,15 +24,11 @@ The items in this collection are of type __ChartFilterDescriptor__. It exposes a
 
 * __Operator__-  defines the operator, which will be applied to the filtering criteria.
 
-* __Value__ - defines the value that will be compared with the value of the __Member__ property via the __Operator__property.
+* __Value__ - defines the value that will be compared with the value of the __Member__ property via the __Operator__ property.
 
 Here is an example of a chart without filter descriptors.
 
-
-
-
-         
-      ![](images/RadChart_Features_Filtering_01.png)
+![](images/RadChart_Features_Filtering_01.png)
 
 Here is an example of implementing filtering.
 
@@ -81,11 +77,6 @@ Here is an example of implementing filtering.
 	descriptor.Value = 150
 	Me.radChart.FilterDescriptors.Add(descriptor)
 	{{endregion}}
-
-
-
-
-
-
-         
-      ![](images/RadChart_Features_Filtering_02.png)
+    
+Here is a snapshot of the result.
+    ![](images/RadChart_Features_Filtering_02.png)

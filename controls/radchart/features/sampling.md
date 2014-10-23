@@ -12,15 +12,11 @@ position: 24
 
 
 
->
-
-__Sampling__ is __available__ in data binding scenarios__only__.
-
-__Sampling__ is also __not applicable__when plotting data for properties of non-CLS compliant types, like __uint__.
+>__Sampling__ is __available__ in data binding scenarios __only__. __Sampling__ is also __not applicable__ when plotting data for properties of non-CLS compliant types, like __uint__.
 
 When the chart is populated by thousands of items, the visual representation might not be that clear. It is possible that there are two or more __DataPoints__ shown with a very close Y and X values. This is when sampling comes in handy. The chart combines the items, so that the __DataPoints__ are limited to a certain number (__200__ by default). The sampling engine does not detect/determine whether the datapoints will be on similar pixel coordinates. Instead, it visualizes a subset of the original data. For example, if you have 1000 points, 95% of which are clustered together, and you choose a sampling threshold of 300 points, 95% of these 300 points will be clustered as well. In such a scenario, one possible option is to use [Zooming and Scrolling]({%slug radchart-features-zooming-and-scrolling%}). 
 
-Determining the number of __DataPoints__ to be displayed is done by setting the __SamplingTh____reshold__ property of the __SamplingSettings__:
+Determining the number of __DataPoints__ to be displayed is done by setting the __SamplingTh reshold__ property of the __SamplingSettings__:
 
 #### __XAML__
 
@@ -38,9 +34,7 @@ Determining the number of __DataPoints__ to be displayed is done by setting the 
 
 The way in which __RadChart__ combines the __DataPoints__ depends on the value of the __SamplingFunction__ property of the SamplingSettings. 
 
->
-
-When binding without series mappings, the value of the __RadChart.SamplingSettings.SamplingFunction__ determines the pattern. When binding with series mappings, the value of the pattern is determined by the value of the __ItemMapping.SamplingFunction__.
+>When binding without series mappings, the value of the __RadChart.SamplingSettings.SamplingFunction__ determines the pattern. When binding with series mappings, the value of the pattern is determined by the value of the __ItemMapping.SamplingFunction__.
 
 The __SamplingFunction__ property has the following values.
 
@@ -81,17 +75,17 @@ The following sample code will demonstrate how to create a standard deviation fu
 
 The standard deviation is calculated as follows:
 
-      1. Calculate the average of the values.
-
-      2. Subtract each value from the average.
-
-      3. Take the result to the second power.
-
-      4. Sum-up the result of steps 1-3 over all of the values.
-
-      5. Divides the sum by the number of values.
-
-      6. Takes the square root of the result.
+    1. Calculate the average of the values.
+    
+    2. Subtract each value from the average.
+    
+    3. Take the result to the second power.
+    
+    4. Sum-up the result of steps 1-3 over all of the values.
+    
+    5. Divides the sum by the number of values.
+    
+    6. Takes the square root of the result.
 
 These steps are made by the static class Statistics:
 
@@ -303,8 +297,4 @@ Finally the XAML:
 
 The result:
 
-
-
-
-         
-      ![](images/RadChart_Features_Sampling_01.png)
+![](images/RadChart_Features_Sampling_01.png)

@@ -10,15 +10,11 @@ position: 3
 
 # Custom Busy Content
 
-
-
-## 
-
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
 
-The __RadBusyIndicator__exposes a __BusyContentTemplate__property of type __DataTemplate__. Through this template you can customize what is shown in the __RadBusyIndicator's__content while the indicator is active.
+The __RadBusyIndicator__ exposes a __BusyContentTemplate__ property of type __DataTemplate__. Through this template you can customize what is shown in the __RadBusyIndicator's__ content while the indicator is active.
 
-This topic will show you how to create and apply a simple __BusyContentTemplate__to your __RadBusyIndicator__ control. For the purpose of this example, this topic will create a __DispatcherTimer__ timer and while this timer is on, the __RadBusyIndicator__ will also be active. To start the timer the user will have to click on a button. The example also includes a counter representing the progress value which will count down from 100 to 0 percent and will be visible through the __RadBusyIndicator's__ busy content.
+This topic will show you how to create and apply a simple __BusyContentTemplate__ to your __RadBusyIndicator__ control. For the purpose of this example, this topic will create a __DispatcherTimer__ timer and while this timer is on, the __RadBusyIndicator__ will also be active. To start the timer the user will have to click on a button. The example also includes a counter representing the progress value which will count down from 100 to 0 percent and will be visible through the __RadBusyIndicator's__ busy content.
 
 To do this, first you have to define your __RadBusyIndicator__ control:
 
@@ -37,11 +33,9 @@ To do this, first you have to define your __RadBusyIndicator__ control:
 	                 Width="150" />
 	    </Grid>
 	</telerik:RadBusyIndicator>
-	{{endregion}}
+{{endregion}}
 
-
-
->Notice that the __RadBusyIndicator's____Background__ property is set to __Transparent__. This will be the background applied to the indicator's content and the __Grid__ hosting the __RadBusyIndicator's__ progress bar and content elements.
+>Notice that the __RadBusyIndicator's Background__ property is set to __Transparent__. This will be the background applied to the indicator's content and the __Grid__ hosting the __RadBusyIndicator's__ progress bar and content elements.
 
 In the __RadBusyIndicator's__ definition you have indicated the __BusyContentTemplate__, that's why you have to define this __DataTemplate__ as well. Here is an example:
 
@@ -59,37 +53,29 @@ In the __RadBusyIndicator's__ definition you have indicated the __BusyContentTem
 	                   FontWeight="Bold" />
 	    </StackPanel>
 	</DataTemplate>
-	{{endregion}}
-
-
+{{endregion}}
 
 In the code behind you have to:
 
 * Create and initialize the __DispathcherTimer__ object.
 
 * Handle the click event for the button:
-          	
 
-* Enable the __RadBusyIndicator__ by setting its __IsBusy__ property to __True__.
+	* Enable the __RadBusyIndicator__ by setting its __IsBusy__ property to __True__.
 
-* Start the timer that will count down some period of time.
+	* Start the timer that will count down some period of time.
 
 * Handle the tick event for the timer:
-          		
 
-* Modify the counter (progress) property.
+	* Modify the counter (progress) property.
 
-* Disable the __RadBusyIndicator__ by setting its __IsBusy__ property to __False__in a specific condition.
+	* Disable the __RadBusyIndicator__ by setting its __IsBusy__ property to __False__ in a specific condition.
 
 >tipYou can also create a [determined RadBusyIndicator]({%slug radbusyindicator-features-report-progress-value%}) control which provides a straightforward way to report a changing progress value.
 
->
-
-In order to use the __DispatcherTimer__and the __INotifyPropertyChanged__ interface you will need to add the following usings/imports: 
-
-* __System.ComponentModel__
-
-* __System.Windows.Threading__
+>In order to use the __DispatcherTimer__ and the __INotifyPropertyChanged__ interface you will need to add the following usings/imports: 
+>* __System.ComponentModel__
+>* __System.Windows.Threading__
 
 #### __C#__
 
@@ -139,9 +125,7 @@ In order to use the __DispatcherTimer__and the __INotifyPropertyChanged__ interf
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -184,19 +168,11 @@ In order to use the __DispatcherTimer__and the __INotifyPropertyChanged__ interf
 	  End If
 	 End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the final result:
 
-
-
-
-         
-      ![](images/radbusyindicator_styles_and_templates_busycontenttemplate_010.png)
-
-
+![](images/radbusyindicator_styles_and_templates_busycontenttemplate_010.png)
 
 # See Also
 

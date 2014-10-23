@@ -16,7 +16,7 @@ position: 9
 
 The following help article will demonstrate how to customize the Chart Legend so that Annotations - in this case a Custom GridLine can be added as Chart Legend Item.
 
-1. Create CustomGridLine Style that has Line as *TargetType*. Currently the GridLine will be presented as dashed line by using the [StrokeDashArray](http://msdn.microsoft.com/en-us/library/bb980148(v=vs.95).aspx) as Setter:
+##### 1. Create CustomGridLine Style that has Line as *TargetType*. Currently the GridLine will be presented as dashed line by using the [StrokeDashArray](http://msdn.microsoft.com/en-us/library/bb980148(v=vs.95).aspx) as Setter:
 
 #### __XAML__
 
@@ -30,7 +30,7 @@ The following help article will demonstrate how to customize the Chart Legend so
 
 
 
-2. Customize the *ChartLegendItem *Style so that it will draw a Dashed Line as Legend Item Marker:
+##### 2. Customize the *ChartLegendItem *Style so that it will draw a Dashed Line as Legend Item Marker:
 
 #### __XAML__
 
@@ -71,7 +71,7 @@ The following help article will demonstrate how to customize the Chart Legend so
 
 >tipThe ChartLegendItem style may be different for the older versions of the RadChart
 
-3. Create a sample Chart and add CustomGridLine by applying the CustomGridLine Style:
+##### 3. Create a sample Chart and add CustomGridLine by applying the CustomGridLine Style:
 
 #### __C#__
 
@@ -131,7 +131,7 @@ The following help article will demonstrate how to customize the Chart Legend so
 
 
 
-4. Add the Chart Legend Items explicitly as shown in this [help topic]({%slug radchart-features-chart-legend%}). The recently created LegendItemStyle is added for the ChartLegendItem that will show the CustomGridLine:
+##### 4. Add the Chart Legend Items explicitly as shown in this [help topic]({%slug radchart-features-chart-legend%}). The recently created LegendItemStyle is added for the ChartLegendItem that will show the CustomGridLine:
 
 #### __C#__
 
@@ -175,10 +175,6 @@ The following help article will demonstrate how to customize the Chart Legend so
 
 The result is shown below:
 
-
-
-
-         
-      ![](images/RadChart_HowToAnnotationInLegend.PNG)
+![](images/RadChart_HowToAnnotationInLegend.PNG)
 
 

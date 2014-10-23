@@ -10,46 +10,35 @@ position: 1
 
 # Transitions
 
-
-
 The __RadTransitionControl__ applies a transition effect to its content when it gets changed. There are several built-in effects, but you are able to create your own via the __HLSL__ language. 
 
 For more information read the following sections:
 
-* [Built-in Transition Effects](#Built_in_Transition_Effects)
+* [Built-in Transition Effects](#built-in-transition-effects)
 
-* [Custom Transition Effects](#Custom_Transition_Effects)
+* [Custom Transition Effects](#fadetransition)
 
->tipYou are also capable of specifying the transition [duration](#Transition_Duration) and [an animation easing function](#Transition_Ease).
+>tipYou are also capable of specifying the transition [duration]({%slug radtransition-features-working-with-radtransitioncontrol%}#transition-duration) and [an animation easing function]({%slug radtransition-features-working-with-radtransitioncontrol%}#transition-easing).
 
 ## Built-in Transition Effects
 
 The built-in transition effects are:
 
-* [FadeTransition](#FadeTransition)
+* [FadeTransition](#fadetransition)
 
-* [FlipWrapTransition](#FlipWrapTransition)
+* [FlipWrapTransition](#flipwraptransition)
 
-* [LinearFadeTransition](#LinearFadeTransition)
+* [LinearFadeTransition](#linearfadetransition)
 
-* [MotionBlurredZoomTransition](#MotionBlurredZoomTransition)
+* [MotionBlurredZoomTransition](#motionblurredzoomtransition)
 
-* [RollTransition](#RollTransition)
+* [RollTransition](#rolltransition)
 
-* [SlideAndZoomTransition](#SlideAndZoomTransition)
+* [SlideAndZoomTransition](#slideandzoomtransition)
 
-* [WaveTransition](#WaveTransition)
+* [WaveTransition](#wavetransition)
 
-
-
->
-
-
-        The __Transition__ property of __RadTransitionControl__ is of type __TransitionProvider__. 
-        It has a type converter so you could quickly select a transition in XAML. 
-        Please note that although the short syntax comes handy you will not be able to configure the transitions. 
-        They will appear with the default settings.
-        
+>The __Transition__ property of __RadTransitionControl__ is of type __TransitionProvider__. It has a type converter so you could quickly select a transition in XAML. Please note that although the short syntax comes handy you will not be able to configure the transitions. They will appear with the default settings.        
 
 The short syntax to set the transition in XAML is:
 
@@ -57,13 +46,9 @@ The short syntax to set the transition in XAML is:
 
 {{region radtransition-features-transitions_7}}
 	<telerik:RadTransitionControl Transition="Fade" />
-	{{endregion}}
+{{endregion}}
 
-
-
-
-            The transition could also be set to one of the:
-            
+The transition could also be set to one of the:            
 
 * Fade
 
@@ -97,15 +82,9 @@ The __FadeTransition__ fades out the old content and fades in the new one. It ha
 	        <telerikTransitions:FadeTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadTransition_Features_Transitions_01.png)
+![](images/RadTransition_Features_Transitions_01.png)
 
 ## FlipWrapTransition
 
@@ -119,15 +98,9 @@ The __FlipWrapsTransition__ flips the old content from the bottom to the top and
 	        <telerikTransitions:FadeTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadTransition_Features_Transitions_02.png)
+![](images/RadTransition_Features_Transitions_02.png)
 
 ## LinearFadeTransition
 
@@ -149,15 +122,9 @@ The __LinearFadeTransition__ is a fade transition which follows a linear pattern
 	                                                 Thickness="0.5" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadTransition_Features_Transitions_03.png)
+![](images/RadTransition_Features_Transitions_03.png)
 
 ## MotionBlurredZoomTransition
 
@@ -165,9 +132,9 @@ The __MotionBlurredZoomTransition__ is basically a fade transition with motion b
 
 * __Center__ - it is of type __Point__ and specifies the center of the motion blur effect towards the content. The default value is __0.5, 0.5__, which means that the center of the zoom is the center of the content. For reference: __0, 0__ - top left corner, __1, 1__ - bottom right corner.
 
-* __InBlurRatio__ - specifies the ratio of the motion blur effect applied to the new content. The default value is __0.3__. A value of __0__ will neutralize the motion blur. A __negative value__will direct the motion blur outside the object and it will behave like it had been zoomed out. A motion blur with a __positive value__will give the impression of zooming in.
+* __InBlurRatio__ - specifies the ratio of the motion blur effect applied to the new content. The default value is __0.3__. A value of __0__ will neutralize the motion blur. A __negative value__ will direct the motion blur outside the object and it will behave like it had been zoomed out. A motion blur with a __positive value__ will give the impression of zooming in.
 
-* __OutBlurRatio__ - specifies the ratio of the motion blur effect applied to the old content. The default value is __-0.3__. A value of __0__ will neutralize the motion blur. A__negative value__will direct the motion blur outside of the object and it will behave like it had been zoomed out. A motion blur with a __positive value__will give the impression of zooming in.
+* __OutBlurRatio__ - specifies the ratio of the motion blur effect applied to the old content. The default value is __-0.3__. A value of __0__ will neutralize the motion blur. A __negative value__ will direct the motion blur outside of the object and it will behave like it had been zoomed out. A motion blur with a __positive value__ will give the impression of zooming in.
 
 >tipSetting the __InBlurRatio__ and the __OutBlurRatio__ to 0 will make the __MotionBlurredZoomTransition__ behave like a normal __FadeTransition__.
 
@@ -184,15 +151,9 @@ The __MotionBlurredZoomTransition__ is basically a fade transition with motion b
 	                                                        Samples="7" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadTransition_Features_Transitions_04.png)
+![](images/RadTransition_Features_Transitions_04.png)
 
 ## RollTransition
 
@@ -226,21 +187,15 @@ The __RollTransition__ rolls out the new content above the old one. You can also
 	                                            RollSize="0.15" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadTransition_Features_Transitions_05.png)
+![](images/RadTransition_Features_Transitions_05.png)
 
 ## SlideAndZoomTransition
 
 The __SlideAndZoomTransition__ zooms out the old content and decreases its opacity, while sliding it off the view. Meanwhile the new content gets slide in and zoomed in to its normal size. Here is a list of properties you can use in order to customize the behavior of the transition.
 
-* __MinAlpha__ - specifies the end opacity value for the old content, when the slide out is over. The default value is __0.1__. A value of__1__ will cause the content not to fade away.
+* __MinAlpha__ - specifies the end opacity value for the old content, when the slide out is over. The default value is __0.1__. A value of __1__ will cause the content not to fade away.
 
 * __MinZoom__ - specifies the zoom factor to which the old content will get zoomed out before sliding out of the view. The default value is __0.9__ (90% zoom). A value of __1__ will neutralize the zooming.
 
@@ -259,21 +214,15 @@ The __SlideAndZoomTransition__ zooms out the old content and decreases its opaci
 	                                                    StartSlideAt="0.25" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadTransition_Features_Transitions_06.png)
+![](images/RadTransition_Features_Transitions_06.png)
 
 ## WaveTransition
 
 The __WaveTransition__ creates a wave effect over the old content. When the waves reach their peak, the content is changed and the waves begin to fall and clarify the new content. Here is a list of properties you can use in order to customize the behavior of the transition.
 
-* __Amplitude__ - represents the amplitude of the waves relatively to the content width. The default value is__0.2__.
+* __Amplitude__ - represents the amplitude of the waves relatively to the content width. The default value is __0.2__.
 
 * __Angle__ - specifies the angle of the wave. The default value is __0.5__. The greater the value is, the more distorted the content gets.
 
@@ -290,19 +239,13 @@ The __WaveTransition__ creates a wave effect over the old content. When the wave
 	                                            Fade="0.7" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadTransition_Features_Transitions_07.png)
+![](images/RadTransition_Features_Transitions_07.png)
 
 ## Custom Transition Effects
 
-You are allowed to create your own custom transition effects. This is done via the HLSL language and the base classes provided by the __Telerik____RadTransitionControl API__. To learn more about how to create such effects, take e look at [How to Create Custom Transitions]({%slug radtransition-how-to-create-custom-transitions%}).
+You are allowed to create your own custom transition effects. This is done via the HLSL language and the base classes provided by the __Telerik RadTransitionControl API__. To learn more about how to create such effects, take e look at [How to Create Custom Transitions]({%slug radtransition-how-to-create-custom-transitions%}).
 
 # See Also
 

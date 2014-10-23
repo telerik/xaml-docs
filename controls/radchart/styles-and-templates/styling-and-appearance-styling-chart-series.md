@@ -12,7 +12,9 @@ position: 5
 
 
 
-There are four ways to style the chart series. The first and easier one is to [use the shortcut visual properties of the ISeriesDefinition interface](#Styling_the_Series_via_the_SeriesDefinition_classes), the second is to [use the complex styles property](#Styling_the_Series_via_Styles) provided by the __ChartArea__ of the __RadChart__ , the third is to [use Palette Brushes](#Styling_Series_via_PaletteBrushes) and the forth is to retemplate the default series style.
+There are four ways to style the chart series. The first and easier one is to [use the shortcut visual properties of the ISeriesDefinition interface](#Styling_the_Series_via_the_SeriesDefinition_classes)
+
+the second is to [use the complex styles property](#Styling_the_Series_via_Styles) provided by the __ChartArea__ of the __RadChart__ , the third is to [use Palette Brushes](#Styling_Series_via_PaletteBrushes) and the forth is to retemplate the default series style.
 
 ## Styling the Series via the SeriesDefinition classes
 
@@ -53,12 +55,7 @@ For example, you can change the appearance of a __BarSeries__ in the following w
 
 
 Here is the result.
-
-
-
-
-         
-      ![](images/RadChart_StylingChartSeries_01.png)
+![](images/RadChart_StylingChartSeries_01.png)
 
 ## Styling the Series via Styles
 
@@ -80,13 +77,7 @@ The second way is to define a style and set it through the __SeriesStyles__ comp
 	</Style>
 	{{endregion}}
 
-
-
-
-
 The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyle__. The __BorderLineStyle__ is __obligatory__, as it defines the main chart contour. The __BackgroundStyle must be__ set when your chart represents an area. Here is an example:
-
-
 
 
 #### __XAML__
@@ -133,13 +124,7 @@ The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyl
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = TryCast(Me.Resources("SplineAreaStyle"), Style)
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_StylingChartSeries_02.png)
+![](images/RadChart_StylingChartSeries_02.png)
 
 * To create a style for the __Item-Drawn Series__ (Bar, StackedBar, StackedBar100, HorizontalBar, HorizontalStackedBar, HorizontalStackedBar100, Pie, Doughnut, Stick, CandleStick, Bubble) you have to create a style that targets the __Shape__ class. 
 
@@ -157,22 +142,11 @@ Here is an example:
 	</Style>
 	{{endregion}}
 
-
-
-
-
-
-
 #### __C#__
 
 {{region radchart-styling-and-appearance-styling-chart-series_7}}
 	this.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = this.Resources[ "BarStyle" ] as Style;
 	{{endregion}}
-
-
-
-
-
 
 
 #### __VB.NET__
@@ -181,24 +155,16 @@ Here is an example:
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = TryCast(Me.Resources("BarStyle"), Style)
 	{{endregion}}
 
-
-
-
-
-
-
-
-         
-      ![](images/RadChart_StylingChartSeries_03.png)
+![](images/RadChart_StylingChartSeries_03.png)
 
 >tipTo learn how to change the foreground of the item's label when using styles take a look at the [Styling the Item Labels]({%slug radchart-styling-and-appearance-styling-item-labels%}) topic.
 
 ## Styling Series via PaletteBrushes
 
 The __RadChart__ exposes two __BrushCollections__:
-        
 
-* __RadChart.PaletteBrushes__ - defines the brushes used for the series __RadChart__-wide.
+
+* __RadChart.PaletteBrushes__ - defines the brushes used for the series __RadChart__ -wide.
 
 * __RadChart.DefaultView.ChartArea.PaletteBrushes__ - defines the brushes used for the series for the specific __ChartArea__.
 
@@ -209,7 +175,6 @@ The __RadChart__ exposes two __BrushCollections__:
 >The __PaletteBrush__ collection on the __ChartArea__ level takes precedence over the one on the __RadChart__ level and the latter takes precedence over the theme resources.
 
 The __PaletteBrushes__ is read-only and allows you to specify a set of brushes that will be applied to the series displayed in the __RadChart__. The pattern of applying is as follows: first series - first brush, second series - second brush.
-        
 
 #### __XAML__
 
@@ -249,13 +214,7 @@ or
 	</telerikChart:RadChart>
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_StylingChartSeries_04.png)
+![](images/RadChart_StylingChartSeries_04.png)
 
 There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartArea__, which define the behavior of the palette. When __N__brushes are added, then the first __N__ series will use those brushes. If __PaletteBrushesRepeat__ is set to __True__, then the next __N__ series will again use the same colors. When set to __False__, the next series will fallback to use the other available resources.
 
@@ -299,31 +258,17 @@ or
 	</telerikChart:RadChart>
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_StylingChartSeries_05.png)
+![](images/RadChart_StylingChartSeries_05.png)
 
 >tipYou can set the __PaletteBrushesUseSolidColors__ property to true so that those Themes that have *Gradient* colors will have their Gradients set to the SolidColors as given in the Palette. Such themes are *Vista*, *Summer* and *Windows7*. For comparison you may take a look at the following two pictures:
 
 * PaletteBrushesUseSolidColors = *False* and Theme is set to Vista:
 
-
-
-
-         
-      ![](images/RadChart_StylingChartSeries_08.PNG)
+![](images/RadChart_StylingChartSeries_08.PNG)
 
 * PaletteBrushesUseSolidColors = *True* and Theme is set to Vista:
 
-
-
-
-         
-      ![](images/RadChart_StylingChartSeries_07.PNG)Styling Series via Retemplating
+![](images/RadChart_StylingChartSeries_07.PNG)Styling Series via Retemplating
 
 If you want to see a double line when you create new LineSeriesDefinition the onliest way to do this is by retemplating the default Line Style. The double line appearance can be achieved by Transforming the Line by Y with Value -8 for example. The default Line __Fill__, __Stroke__ and __StrokeThickness__ values of the LineSeries should be set so that they are same as the properties defined in the Style. Additionally you can style the point marks so that their color equals the one set in the Style as shown in our help topic [Styling the Point Marks](http://www.telerik.com/help/silverlight/radchart-styling-and-appearance-styling-point-marks.html).
 
@@ -393,13 +338,8 @@ Here is an example:
 	line.ItemStyle = TryCast(Me.Resources("MyDoubleLineStyle"), Style)
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_StylingChartSeries_06.PNG)
+    
+![](images/RadChart_StylingChartSeries_06.PNG)
 
 # See Also
 

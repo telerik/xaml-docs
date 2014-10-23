@@ -10,33 +10,19 @@ position: 2
 
 # Integrate with services and a RadWindow
 
-
-
-## 
-
-This tutorial will show you how to apply a __RadBusyIndicator__ while a long distance calls are being in progress.
-        
+This tutorial will show you how to apply a __RadBusyIndicator__ while a long distance calls are being in progress.        
 
 One way to achieve this is to make the time consuming service calls in a separate thread. To accomplish this you can use the __BackgroundWorker__ class.
-        
 
-This topic will create a __RadWindow__control containing a __RadGridView__ and a __Button__. Pressing the button will reproduce a service call which will retrieve some data. Later when the data is available it will be loaded into the __RadGridView__ and while the call is in progress the __RadBusyIndicator__ will be shown to indicate the ongoing process.
-        
+This topic will create a __RadWindow__ control containing a __RadGridView__ and a __Button__. Pressing the button will reproduce a service call which will retrieve some data. Later when the data is available it will be loaded into the __RadGridView__ and while the call is in progress the __RadBusyIndicator__ will be shown to indicate the ongoing process.        
 
 Here is a snapshot of the final result:
 
+![](images/radbusyindicator_how_service_and_radwindow_010.png)
 
+* The first thing you have to do is to declare the __RadWindow__ and set its content to be the __RadBusyIndicator__ content control as long as you want to show the indicator over the __RadWindow__ control.
 
-
-               
-            ![](images/radbusyindicator_how_service_and_radwindow_010.png)
-
-* 
-            The first thing you have to do is to declare the __RadWindow__ and set its content to be the __RadBusyIndicator__ content control as long as you want to show the indicator over the __RadWindow__ control.
-            
-
->tipWe will create __RadWindow__ as a user control, the approach is explained in details 
-            {% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/radwindow-how-to-use-radwindow-as-user-control.html){% endif %}{% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/radwindow-how-to-use-radwindow-as-user-control.html){% endif %}.
+>tipWe will create __RadWindow__ as a user control, the approach is explained in details [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
 #### __XAML__
 
@@ -59,7 +45,7 @@ Here is a snapshot of the final result:
 		</telerik:RadBusyIndicator>
 	    </Grid>
 	</telerik:RadWindow>
-	{{endregion}}
+{{endregion}}
 
 Here is the sample data that is going to be retrieved:
 
@@ -89,9 +75,7 @@ Here is the sample data that is going to be retrieved:
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -111,9 +95,7 @@ Here is the sample data that is going to be retrieved:
 	        return employees;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -156,9 +138,7 @@ Here is the sample data that is going to be retrieved:
 	 End Property
 	 Private m_Married As Boolean
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -177,29 +157,20 @@ Here is the sample data that is going to be retrieved:
 	  Return employees
 	 End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            In code you can use the __BackgroundWorker__ to make your service calls in a different thread:
+* In code you can use the __BackgroundWorker__ to make your service calls in a different thread:
             
 
-* 
-                Handle the __DoWork__ event to make the time consuming call.
+* Handle the __DoWork__ event to make the time consuming call.
               
 
-* 
-                Handle the __RunWorkerCompleted__ event to disable the __RadBusyIndicator__ and show the result.
+* Handle the __RunWorkerCompleted__ event to disable the __RadBusyIndicator__ and show the result.
               
 
->
+>In order to use the BackgroundWorker you will have to add the following using/import in your code:
 
-In order to use the BackgroundWorker you will have to add the following using/import in your code:
-
-* 
-
-System.ComponentModel
+* System.ComponentModel
 
 #### __C#__
 
@@ -238,9 +209,7 @@ System.ComponentModel
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -278,39 +247,27 @@ System.ComponentModel
 			End If
 		End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-Then just open the RadWindow:
+* Then just open the RadWindow:
 
 #### __C#__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_7}}
 	var radWindow = new RadWindow1();
 	radWindow.Show();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_8}}
 	Dim radWindow As RadWindow1 = New RadWindow1()
 	radWindow.Show()
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the final result:
 
-
-
-
-               
-            ![](images/radbusyindicator_how_service_and_radwindow_010.png)
+![](images/radbusyindicator_how_service_and_radwindow_010.png)
 
 # See Also
 

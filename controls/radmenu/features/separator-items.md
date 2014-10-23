@@ -10,10 +10,6 @@ position: 9
 
 # Separator Items
 
-
-
-## 
-
 In order to enhance the functionality of the __RadMenu__ control, the __RadMenuItem__ can behave like a separator. In order to make it a separator you have to set its __IsSeparator__ property to either __True__ or __False__. The default value is __False__.
 
 Here is a sample definition of __RadMenuItem__, used as separator:
@@ -22,9 +18,7 @@ Here is a sample definition of __RadMenuItem__, used as separator:
 
 {{region radmenu-features-separator-items_0}}
 	<telerik:RadMenuItem IsSeparator="True" />
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadMenu_Features_Separator_Items_01.png)
 

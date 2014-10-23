@@ -10,8 +10,6 @@ position: 2
 
 # Enable and Disable Menu Items
 
-
-
 This topic will show you how to enable and disable menu items. There are several major cases that will serve as examples:
 
 * Disable all menu items
@@ -22,7 +20,7 @@ This topic will show you how to enable and disable menu items. There are several
 
 ## Disable all Menu Items
 
-Disabling all menu items can be easily done by just setting the __IsEnabled__ property of the __RadMenu__parent____control to __False__.
+Disabling all menu items can be easily done by just setting the __IsEnabled__ property of the __RadMenu__ parent control to __False__.
 
 #### __XAML__
 
@@ -31,9 +29,7 @@ Disabling all menu items can be easily done by just setting the __IsEnabled__ pr
 	                           IsEnabled="False">
 	    ...
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 This will disable the top-level menu items and they won't be expandable. 
 
@@ -46,11 +42,8 @@ To disable a static menu item you just have to set its __IsEnabled__ property to
 #### __XAML__
 
 {{region radmenu-how-to-enable-disable-menu-items_1}}
-	<telerik:RadMenuItem Header="Save as ..."
-	                               IsEnabled="False" />
-	{{endregion}}
-
-
+	<telerik:RadMenuItem Header="Save as ..." IsEnabled="False" />
+{{endregion}}
 
 >Note that disabling an item will prevent it from expanding its child items (if any).
 
@@ -75,11 +68,7 @@ In order to disable a dynamic menu item you have to bind its __IsEnabled__ prope
 	    </telerik:ContainerBinding.ContainerBindings>
 	    <TextBlock Text="{Binding Text}" />
 	</telerik:HierarchicalDataTemplate>
-	{{endregion}}
-
-
-
->tipTo learn more about the __ContainerBindings__ read [here](#Using_ContainerBindings).
+{{endregion}}
 
 # See Also
 

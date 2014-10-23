@@ -5,12 +5,10 @@ description: Getting Started
 slug: contextmenu-getting-started
 tags: getting,started
 published: True
-position: 4
+position: 3
 ---
 
 # Getting Started
-
-
 
 This tutorial will walk you through the creation of a __RadContextMenu__ and will show you how to:
 
@@ -29,10 +27,8 @@ This tutorial will walk you through the creation of a __RadContextMenu__ and wil
 For the purpose of this tutorial, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project.
 
 >In order to use __RadContextMenu__ control in your projects you have to add references to the following assemblies:
-
-1. __Telerik.Windows.Controls.Navigation.dll__
-
-1. __Telerik.Windows.Controls.dll__
+> 1. __Telerik.Windows.Controls.Navigation.dll__
+> 2. __Telerik.Windows.Controls.dll__
 
 ## Add RadContextMenu
 
@@ -47,9 +43,7 @@ In order to add a __RadContextMenu__ control to your __UserControl__ you have to
 	
 	    </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 This tutorial will show you how to attach a __RadContextMenu__ to a TextBox control. Here is the TextBox control definition.
 
@@ -63,12 +57,11 @@ This tutorial will show you how to attach a __RadContextMenu__ to a TextBox cont
 	             VerticalAlignment="Top">
 	    </TextBox>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
+The next step is to set the __ContextMenu__ attached property of the __RadContextMenu__ class to the __TextBox__ control.
 
-
-The next step is to set the __ContextMenu__ attached property of the __RadContextMenu__ class to the __TextBox__ control.{% if site.site_name == 'WPF' %}
-
+{% if site.site_name == 'WPF' %}
 >*ContextMenu="{x:Null}"* is needed to override the default context menu of the textbox.
 
 #### __XAML__
@@ -84,10 +77,10 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 	        </telerik:RadContextMenu.ContextMenu>
 	    </TextBox>
 	</Grid>
-	{{endregion}}
+{{endregion}}
+{% endif %}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
+{% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
 {{region contextmenu-getting-started_2_1}}
@@ -100,8 +93,7 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 	        </telerik:RadContextMenu.ContextMenu>
 	    </TextBox>
 	</Grid>
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
 If you run the application and right-click on the TextBox you will see an empty context menu.
@@ -110,12 +102,11 @@ If you run the application and right-click on the TextBox you will see an empty 
 
 ## Add Menu Items
 
->The class that represents the menu item is __Telerik.Windows.Controls.RadMenuItem__. To learn more about it, please take a look at the [RadMenu help content](http://www.telerik.com/help/silverlight/radmenu-overview).
+>The class that represents the menu item is __Telerik.Windows.Controls.RadMenuItem__. To learn more about it, please take a look at the [RadMenu help content]({%slug radmenu-overview%}).
 
->The class that represents the menu item is __Telerik.Windows.Controls.RadMenuItem__. To learn more about it, please take a look at the [RadMenu help content](http://www.telerik.com/help/wpf/radmenu-overview).
+The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample declaration of several child menu items.
 
-The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample declaration of several child menu items.{% if site.site_name == 'Silverlight' %}
-
+{% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
 {{region contextmenu-getting-started_3_1}}
@@ -131,16 +122,14 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	            </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
+{{endregion}}
+{% endif %}
 
-{% endif %}{% if site.site_name == 'WPF' %}
-
+{% if site.site_name == 'WPF' %}
 #### __XAML__
 
 {{region contextmenu-getting-started_3}}
-	<TextBox Width="200"
-	         VerticalAlignment="Top"
-			 ContextMenu="{x:Null}">
+	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
 	                <telerik:RadMenuItem Header="Copy" />
@@ -151,8 +140,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	            </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
 Here is a snapshot of the result.
@@ -167,9 +155,7 @@ However, in most of the cases you have to bind your __RadContextMenu__ to a coll
 
 * [Data Binding Support Overview]({%slug radcontextmenu-populating-with-data-data-binding-support-overview%}) - describes the various data sources for the __RadContextMenu__ and shows you many tips and tricks. Read this topics in order to achieve basic knowledge about how the binding mechanism works at the __RadContextMenu__. 
 
-
 * [Binding to Dynamic Data]({%slug radcontextmenu-populating-with-data-using-static-items%}) - shows you how to bind the __RadContextMenu__ to a collection of business objects. 
-
 
 * [Template and Styles Selectors]({%slug radcontextmenu-populating-with-data-template-and-style-selectors%}) - describes the possibilities to adjust the appearance of the __RadContextMenu's__ items depending on the data they hold. 
 

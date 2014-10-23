@@ -12,13 +12,13 @@ position: 10
 
 
 
-The purpose of this tutorial is to show you how to populate a __RadChart__with data from an __ADO.NET Data Service__in two ways:
+The purpose of this tutorial is to show you how to populate a __RadChart__ with data from an __ADO.NET Data Service__ in two ways:
 
 * A straight-forward way - [plain method calls](#Plain_Method_Calls).
 
 * [Using MVVM approach](#Using_MVVM_Approach)
 
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadChart__ declaration in your XAML: 
 
@@ -31,15 +31,15 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 
 
-The chart control will be populated with the top 10 products from the Northwind database. On the __Y axis__the __UnitPrice__property will be displayed.
+The chart control will be populated with the top 10 products from the Northwind database. On the __Y axis__ the __UnitPrice__ property will be displayed.
 
-* Add a new __SeriesMapping__to your chart declaration and set the __LegendLabel__property to "Products UnitPrice".
+* Add a new __SeriesMapping__ to your chart declaration and set the __LegendLabel__ property to "Products UnitPrice".
 
-* Add a new __ItemMapping__and set the following properties:
+* Add a new __ItemMapping__ and set the following properties:
 
-* __FieldName__to __UnitPrice__
+* __FieldName__ to __UnitPrice__
 
-* __DataPointMember__to __YValue__
+* __DataPointMember__ to __YValue__
 
 #### __XAML__
 
@@ -57,7 +57,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 
 
-* Create new __Business Object__ and name it____ProductDetail__:______
+* Create new __Business Object__ and name it __ProductDetail__:
 
 #### __C#__
 
@@ -96,7 +96,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 Add a reference to your ADO.NET Data Service. 
 
-* Switch to the code-behind and add a reference to the {% if site.site_name == 'WPF' %}__NorthWindEntities__ object{% endif %}__DataServiceContext__.
+* Switch to the code-behind and add a reference to the{% if site.site_name == 'WPF' %} __NorthWindEntities__ object{% endif %}__DataServiceContext__.
 
 #### __C#__
 
@@ -197,15 +197,11 @@ Add the following code which will make the initial load of the objects.
 
 Run your demo, the result can be seen on the next image:
 
-
-
-
-         
-      ![](images/RadChart_PopulatingWithDataBindingToAdoNet_010.PNG)
+![](images/RadChart_PopulatingWithDataBindingToAdoNet_010.PNG)
 
 ## Using MVVM Approach
 
-This section will show you how to populate your __RadChart__control in a MVVM manner.
+This section will show you how to populate your __RadChart__ control in a MVVM manner.
 
 * Create a new class named __NorthwindDataSource__. 
 
@@ -230,9 +226,9 @@ This section will show you how to populate your __RadChart__control in a MVVM ma
 
 * Add a reference to your ADO.NET Data Service.
 
-* In the __NorthwindDataSource__class add a reference to an __ObservableCollection__of __Categories__.
+* In the __NorthwindDataSource__ class add a reference to an __ObservableCollection__ of __Categories__.
 
-* In the __NorthwindDataSource__ class add a reference to the __NorthwindEntities__object.
+* In the __NorthwindDataSource__ class add a reference to the __NorthwindEntities__ object.
 
 #### __C#__
 
@@ -280,7 +276,7 @@ This section will show you how to populate your __RadChart__control in a MVVM ma
 
 
 
-* Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Categories__from the database: 
+* Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Categories__ from the database: 
 
 #### __C#__
 
@@ -310,9 +306,7 @@ This section will show you how to populate your __RadChart__control in a MVVM ma
 	Next
 	{{endregion}}
 
-{% if site.site_name == 'Silverlight' %}
-
-And here is the code for the __EntitiesLoaded__method: {% endif %}
+{% if site.site_name == 'Silverlight' %}And here is the code for the __EntitiesLoaded__ method: {% endif %}
 
 #### __C#__
 
@@ -353,7 +347,6 @@ And here is the code for the __EntitiesLoaded__method: {% endif %}
 	{{endregion}}
 
 
-
 *  Update your chart declaration - set the __ItemsSource__ property. 
 
 #### __XAML__
@@ -372,14 +365,9 @@ And here is the code for the __EntitiesLoaded__method: {% endif %}
 	{{endregion}}
 
 
-
 Here it is shown how the final result should look like: 
 
-
-
-
-         
-      ![](images/RadChart_PopulatingWithDataBindingToAdoNet_010.PNG)
+![](images/RadChart_PopulatingWithDataBindingToAdoNet_010.PNG)
 
 # See Also
 

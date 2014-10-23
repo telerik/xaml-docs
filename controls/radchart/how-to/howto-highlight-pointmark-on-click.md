@@ -16,7 +16,7 @@ position: 11
 
 It is common scenario that you would like to select a single PointMark of Line Series for example. Since __InteractivityScope.Item__ (for more information see Interactivity Effects [topic]({%slug radchart-features-interactivity-effects%})) is not supported for series that do not render separate items (__Line__, __Spline__, __Area__, __Range__, and __all their stacked versions__) this help topic will demonstrate how to select single Line's PointMark and customise it. 
 
-__1.__  Create Line Chart Series. The following code snippet demonstrates LineSeries created using [Manual Series Mappings]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}).
+##### 1.  Create Line Chart Series. The following code snippet demonstrates LineSeries created using [Manual Series Mappings]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}).
 
 #### __C#__
 
@@ -61,9 +61,6 @@ __1.__  Create Line Chart Series. The following code snippet demonstrates LineSe
 	{{endregion}}
 
 
-
-____
-
 #### __VB.NET__
 
 {{region radchart-howto-highlight-pointmark-on-click_1}}
@@ -99,7 +96,7 @@ ____
 
 
 
-__2.__ Subscribe to the *ItemClick* event of the ChartArea and get a list of all PointMarks in the ChartArea using the ChildrenOfType<T> extension method. The next step is to figure out which PointMark is selected. Find the SingleOrDefault PointMark from the eventargs (e.DataPoint) which matches the datacontext of a pointmark in the collection of pointmarks:
+##### 2. Subscribe to the *ItemClick* event of the ChartArea and get a list of all PointMarks in the ChartArea using the ChildrenOfType<T> extension method. The next step is to figure out which PointMark is selected. Find the SingleOrDefault PointMark from the eventargs (e.DataPoint) which matches the datacontext of a pointmark in the collection of pointmarks:
 
 #### __C#__
 
@@ -135,7 +132,7 @@ __2.__ Subscribe to the *ItemClick* event of the ChartArea and get a list of all
 
 
 
-__3.__ The methods SetPointMarkSelectedState() and ClearPointMarkSelectedState() define what should be done with the selected PointMark (in this case the selected one's MarkerShape is set to Triangle and the Fill to Red) and how to return to it's default state when another one is selected (Circle MarkerShape and White Fill):
+##### 3. The methods SetPointMarkSelectedState() and ClearPointMarkSelectedState() define what should be done with the selected PointMark (in this case the selected one's MarkerShape is set to Triangle and the Fill to Red) and how to return to it's default state when another one is selected (Circle MarkerShape and White Fill):
 
 #### __C#__
 
@@ -185,9 +182,4 @@ __3.__ The methods SetPointMarkSelectedState() and ClearPointMarkSelectedState()
 
 
 The snapshot below shows the result:
-
-
-
-
-         
-      ![](images/RadChart_HowToHighlightedPointMark_01.png)
+![](images/RadChart_HowToHighlightedPointMark_01.png)

@@ -14,17 +14,17 @@ position: 0
 
 ## 
 
->To learn how to use the built-in __RadChart____Drill Down__ feature please read the [Drill Down]({%slug radchart-features-drill-down-hierarchical-view%}) section.
+>To learn how to use the built-in __RadChart Drill Down__ feature please read the [Drill Down]({%slug radchart-features-drill-down-hierarchical-view%}) section.
 
 The purpose of this tutorial is to show you the drill down capabilities of the chart with tooltips enabled.
 
 The idea behind the drill down behavior is to move the chart content from summary information to detailed data by focusing on something. 
 
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 Also in the following examples the charts will be populated with a various data from an __ADO.NET Data Service__. You can read more information about populating with data [here]({%slug radchart-populating-with-data-binding-to-adonet-service%}).
 
-* Here is the initial __RadChart__declaration. 
+* Here is the initial __RadChart__ declaration. 
 
 #### __XAML__
 
@@ -82,15 +82,9 @@ Also in the following examples the charts will be populated with a various data 
 	</Grid>
 	{{endregion}}
 
+![](images/RadChart_HowToDrillDownChart_010.png)
 
-
-
-
-
-         
-      ![](images/RadChart_HowToDrillDownChart_010.png)
-
-When the application (the user control) is loaded, the __RadChart__is populated with the first eight products from the Products table in the Northwind database. On the __Y Axis__is displayed the products __UnitPrice__. On the __X Axis__is displayed the __ProductName__ property. This is done through the __ItemsMapping__ property. 
+When the application (the user control) is loaded, the __RadChart__ is populated with the first eight products from the Products table in the Northwind database. On the __Y Axis__ is displayed the products __UnitPrice__. On the __X Axis__ is displayed the __ProductName__ property. This is done through the __ItemsMapping__ property. 
 
 #### __XAML__
 
@@ -112,7 +106,7 @@ When the application (the user control) is loaded, the __RadChart__is populated 
 
 
 
-Also the products' names are rotated on 45 degrees. In order to do that you should use the __LabelRotationAngle__property of the __XAxis__. Here is the XAML which does it: 
+Also the products' names are rotated on 45 degrees. In order to do that you should use the __LabelRotationAngle__ property of the __XAxis__. Here is the XAML which does it: 
 
 #### __XAML__
 
@@ -254,8 +248,7 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 	}
 	{{endregion}}
 
-
-
+    
 #### __VB.NET__
 
 {{region radchart-how-to-drill-down-chart_8}}
@@ -270,8 +263,7 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 	End Sub
 	{{endregion}}
 
-
-
+    
 #### __VB.NET__
 
 {{region radchart-how-to-drill-down-chart_9}}
@@ -393,7 +385,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 
 
-* Enable __ToolTip__. In order to do that use the __ShowItemToolTips__property. 
+* Enable __ToolTip__. In order to do that use the __ShowItemToolTips__ property. 
 
 #### __XAML__
 
@@ -512,13 +504,9 @@ Second, the __BeginLoadingOrderDetails()__ method is invoked. Finally, a new ins
 
 You can see the result on the snapshot below:
 
+![](images/RadChart_HowToDrillDownChart_020.png)
 
-
-
-         
-      ![](images/RadChart_HowToDrillDownChart_020.png)
-
-Here is the XAML declaration of the __DrillDownChartToolTip__control, which is used as a tooltip content: 
+Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is used as a tooltip content: 
 
 #### __XAML__
 
@@ -626,17 +614,17 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 {{region radchart-how-to-drill-down-chart_28}}
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
-	    ' Get the product and load all order details
+	    ' Get the product and load all order details'
 	    Dim selectedItem As Products = TryCast(e.DataPoint.DataItem, Products)
 	    selectedItem.Order_Details = New ObservableCollection(Of Order_Details)()
 	    radChart.ItemsSource = selectedItem.Order_Details
 	    NorthwindDataSource.BeginLoadingOrderDetails(selectedItem, -1)
 	
-	    ' Change the chart title
+	    ' Change the chart title'
 	    radChart.DefaultView.ChartTitle.Content = "Financial Report"
 	    radChart.SeriesMappings.Clear()
 	
-	    ' Change the Item mapping
+	    ' Change the Item mapping'
 	    Dim newSeriesMapping As New SeriesMapping()
 	    newSeriesMapping.LegendLabel = "Quantity"
 	    Dim newItemMapping As New ItemMapping()
@@ -653,17 +641,17 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 {{region radchart-how-to-drill-down-chart_29}}
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
-	    ' Get the product and load all order details
+	    ' Get the product and load all order details'
 	    Dim selectedItem As Products = TryCast(e.DataPoint.DataItem, Products)
 	    selectedItem.Order_Details = New ObservableCollection(Of Order_Details)()
 	    radChart.ItemsSource = selectedItem.Order_Details
 	    NorthwindDataSource.LoadOrderDetails( selectedItem, -1 )
 	
-	    ' Change the chart title
+	    ' Change the chart title'
 	    radChart.DefaultView.ChartTitle.Content = "Financial Report"
 	    radChart.SeriesMappings.Clear()
 	
-	    ' Change the Item mapping
+	    ' Change the Item mapping'
 	    Dim newSeriesMapping As New SeriesMapping()
 	    newSeriesMapping.LegendLabel = "Quantity"
 	    Dim newItemMapping As New ItemMapping()
@@ -678,11 +666,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 When the user clicks on a specific item (product), some information about the order details will be displayed: 
 
-
-
-
-         
-      ![](images/RadChart_HowToDrillDownChart_030.png)
+![](images/RadChart_HowToDrillDownChart_030.png)
 
 # See Also
 

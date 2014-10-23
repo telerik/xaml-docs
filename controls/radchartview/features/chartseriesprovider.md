@@ -12,56 +12,23 @@ position: 6
 
 
 
-In this help topic you will learn what mechanism for automatic series
-        generation ChartView provides.
+In this help topic you will learn what mechanism for automatic series generation ChartView provides.
       
 
 ## Overview
 
-RadCartesianChart and RadPolar chart can create a dynamic number of series depending
-          on the data (collection of collections). To take advantage of this feautre,
-          you need to create a __ChartSeriesProvider__ object. This will be the object that
-          receives the data and holds the __ChartSeriesDescriptors__ – objects that define the specific
-          properties of the dynamically generated series.
+RadCartesianChart and RadPolar chart can create a dynamic number of series depending on the data (collection of collections). To take advantage of this feautre, you need to create a __ChartSeriesProvider__ object. This will be the object that receives the data and holds the __ChartSeriesDescriptors__ – objects that define the specific properties of the dynamically generated series.
         
 
-__ChartSeriesDescriptor__  is an abstract class. You need to create an instance
-          of one of its inheritors depending on the series you need to produce:
+__ChartSeriesDescriptor__  is an abstract class. You need to create an instance of one of its inheritors depending on the series you need to produce:
         
-<table><th><tr><td>
-
-Series</td><td>
-
-Descriptor</td></tr></th><tr><td>
-
-CategoricalSeries (BarSeries, LineSeries, SplineSeries, AreaSeries, SplineAreaSeries)</td><td>
-
-CategoricalSeriesDescriptor
-              </td></tr><tr><td>
-
-OhlcSeries, CandlestickSeries
-              </td><td>
-
-OhlcSeriesDescriptor
-              </td></tr><tr><td>
-
-Scatter* Series (ScatterPointSeries, ScatterLineSeries, ScatterSplineSeries, ScatterAreaSeries, ScatterSplineAreaSeries)
-              </td><td>
-
-ScatterSeriesDescriptor
-              </td></tr><tr><td>
-
-Polar* Series (PolarPointSeries, PolarLineSeries, PolarAreaSeries)
-              </td><td>
-
-PolarSeriesDescriptor
-              </td></tr><tr><td>
-
-Radar* Series (RadarPointSeries, RadarLineSeries, RadarAreaSeries)
-              </td><td>
-
-RadarSeriesDescriptor
-              </td></tr></table>
+|Series|Descriptor|
+|------|----------|
+|CategoricalSeries(BarSeries, LineSeries, SplineSeries, AreaSeries, SplineAreaSeries)|CategoricalSeriesDescriptor
+|OhlcSeries, CandlestickSeries|OhlcSeriesDescriptor
+|Scatter Series (ScatterPointSeries, ScatterLineSeries, ScatterSplineSeries, ScatterAreaSeries, ScatterSplineAreaSeries)|ScatterSeriesDescriptor
+|Polar Series (PolarPointSeries, PolarLineSeries, PolarAreaSeries)|PolarSeriesDescriptor
+|Radar Series (RadarPointSeries, RadarLineSeries, RadarAreaSeries)|RadarSeriesDescriptor
 
 ## Properties
 
@@ -74,14 +41,10 @@ Important properties of ChartSeriesDescriptor:
 * __TypePath__ – path to the property that indicates the series type that needs to be created.
             
 
-* __Style__ – gets or sets the Style that describes the appearance of the series that are to be created.
-              If no __TypePath__ is specified, the TargetType property of this style object is used to generate the desired series.
+* __Style__ – gets or sets the Style that describes the appearance of the series that are to be created. If no __TypePath__ is specified, the TargetType property of this style object is used to generate the desired series.
             
 
-* __CollectionIndex__ – gets or sets the index within the Source collection of data (view models) for which
-              the current descriptor should be used.
-            This property is useful when for example a BarSeries needs to be generated for
-              the first data entry and LineSeries for the rest of the entries.
+* __CollectionIndex__ – gets or sets the index within the Source collection of data (view models) for which the current descriptor should be used. This property is useful when for example a BarSeries needs to be generated for the first data entry and LineSeries for the rest of the entries.
             
 
 Type-specific properties:

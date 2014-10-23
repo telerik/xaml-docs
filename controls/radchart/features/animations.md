@@ -158,7 +158,8 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	{{endregion}}
     
 #### __VB.NET__
-__{{region radchart-features-animations_2}}
+
+{{region radchart-features-animations_2}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AnimationSettings = New AnimationSettings()
 	radChart.DefaultView.ChartArea.AnimationSettings.ItemDelay = New TimeSpan( 0 )

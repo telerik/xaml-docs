@@ -12,7 +12,7 @@ position: 7
 
 
 
-The __RadChart__ exposes the __LegendStyle__ property of type __Style__. It is applied to the __ChartLegend__control inside the __RadChart__. You can also style the Legend Items by setting an appropriate style to the __LegendItemStyle__ of the __ChartLegend__ control.
+The __RadChart__ exposes the __LegendStyle__ property of type __Style__. It is applied to the __ChartLegend__ control inside the __RadChart__. You can also style the Legend Items by setting an appropriate style to the __LegendItemStyle__ of the __ChartLegend__ control.
 
 You have two options:
 
@@ -24,43 +24,28 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Styles
 
->
-
-The __ChartLegend__ and the __ChartLegendItem__ controls are located in the __Telerik.Windows.Controls.Charting__namespace of the __Telerik.Windows.Controls.Charting__assembly. In order to use them you have to declare it in XAML:
+>The __ChartLegend__ and the __ChartLegendItem__ controls are located in the __Telerik.Windows.Controls.Charting__ namespace of the __Telerik.Windows.Controls.Charting__ assembly. In order to use them you have to declare it in XAML:
 
 
-
-__Colorized Example Code__
-
-[Link...]()
-
-
-         
-      
-
+#### __XAML__
 xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting" XAMLLanguage Filtered SectionASP.NET
 
 When working in Expression Blend, the namespaces that are needed will be added automatically.
 
-Load your project in Expression Blend and open the User Control that holds the __RadChart__. You have to use a dummy controls in order to get the default styles. To create one find the __ChartLegend__ or the __ChartLegendItem__ control in the 'Assets' pane and draw one on the art board. In the 'Objects and Timeline' pane select the control__,__you've drawn and from the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+Load your project in Expression Blend and open the User Control that holds the __RadChart__. You have to use a dummy controls in order to get the default styles. To create one find the __ChartLegend__ or the __ChartLegendItem__ control in the 'Assets' pane and draw one on the art board. In the 'Objects and Timeline' pane select the control, you've drawn and from the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking 'OK', Expression Blend will generate the default value for the selected __Style__ in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
->tipTo change the fill of the legend item's marker set the __MarkerFill__ property of the __CHhrtLegendItem__ through its __Style__. For the stroke of the marker use the __Stroke__ property of the __ChartLegendItem__.{% if site.site_name == 'Silverlight' %}
+>tipTo change the fill of the legend item's marker set the __MarkerFill__ property of the __CHhrtLegendItem__ through its __Style__. For the stroke of the marker use the __Stroke__ property of the __ChartLegendItem__. {% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the targeted control__.__Their names indicate to which part of the appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-Here are the resources generated with the __ChartLegendStyle__:{% endif %}{% if site.site_name == 'Silverlight' %}
+Here are the resources generated with the __ChartLegendStyle__: {% endif %}{% if site.site_name == 'Silverlight' %}
 
+![](images/RadChart_Styles_and_Templates_Styling_ChartLegend_01.png){% endif %}
 
-
-
-         
-      ![](images/RadChart_Styles_and_Templates_Styling_ChartLegend_01.png){% endif %}
-
-____
 
 * __LegendForeground__ - a brush, that represent the foreground color of the __ChartLegend__.
 
@@ -76,11 +61,7 @@ ____
 
 Here are the resources generated with the __ChartLegendItemStyle__:{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadChart_Styles_and_Templates_Styling_ChartLegend_02.png){% endif %}
+![](images/RadChart_Styles_and_Templates_Styling_ChartLegend_02.png){% endif %}
 
 * __LegendForeground__ - a brush, that represents the foreground color of the __ChartLegendItem__.
 
@@ -123,9 +104,7 @@ After that set the __ChartLegendStyle__ to the __RadChart__.
 
 
 
->
-
-Don't forget to delete the dummy controls, when you finish editing the style.
+>Don't forget to delete the dummy controls, when you finish editing the style.
 
 Here is the XAML, generated for the __Styles__:
 

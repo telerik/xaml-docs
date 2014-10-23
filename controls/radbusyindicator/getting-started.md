@@ -11,38 +11,32 @@ position: 2
 # Getting Started
 
 
+The __RadBusyIndicator__ is a control which gives you the ability to notify the user that there is an ongoing process in the application. This tutorial will help you get started with the __RadBusyIndicator__ basics. 
 
-The __RadBusyIndicator__is a control which gives you the ability to notify the user that there is an ongoing process in the application. This tutorial will help you get started with the __RadBusyIndicator__ basics. 
+* [Create a RadBusyIndicator control](#create-a-radbusyindicator-control)
 
-* [Create a RadBusyIndicator control](#Create_a_RadBusyIndicator_control)
+* [Enable the RadBusyIndicator](#enable-the-radbusyindicator)
 
-* [Enable the RadBusyIndicator](#Enable_the_RadBusyIndicator)
+* [Styles and Templates](#styles-and-templates)
 
-* [Styles and Templates](#Styles_and_Templates)
-
-* [Working with the RadBusyIndicator](#Working_with_the_RadBusyIndicator_control)
+* [Working with the RadBusyIndicator](#working-with-the-radbusyindicator-control)
 
 ## Create a RadBusyIndicator control
 
-In order to add a __RadBusyIndicator__to your application, you have to simply create an instance of it in your XAML. 
+In order to add a __RadBusyIndicator__ to your application, you have to simply create an instance of it in your XAML. 
 
->
+>As the __RadBusyIndicator__ is located in the __Telerik.Windows.Controls__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add references to the following assembly to your project:
+>* __Telerik.Windows.Controls__
 
-As the __RadBusyIndicator__is located in the __Telerik.Windows.Controls__namespace of the __Telerik.Windows.Controls__assembly, you have to add references to the following assembly to your project:
-
-* __Telerik.Windows.Controls__
-
-You also have to declare the following namespace in your __UserControl:______
+You also have to declare the following namespace in your __UserControl__:
 
 #### __XAML__
 
 {{region radbusyindicator-getting-started_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
+{{endregion}}
 
-
-
- Here is a sample code:
+Here is a sample code:
 
 #### __XAML__
 
@@ -50,9 +44,7 @@ You also have to declare the following namespace in your __UserControl:______
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator">
 	    <!--Some Content-->
 	</telerik:RadBusyIndicator>
-	{{endregion}}
-
-
+{{endregion}}
 
 You can also create a __RadBusyIndicator__ in code-behind:
 
@@ -60,21 +52,15 @@ You can also create a __RadBusyIndicator__ in code-behind:
 
 {{region radbusyindicator-getting-started_2}}
 	RadBusyIndicator busyIndicator = new RadBusyIndicator();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radbusyindicator-getting-started_3}}
 	Dim busyIndicator As New RadBusyIndicator()
-	{{endregion}}
+{{endregion}}
 
-
-
->
-
-When you are using the __RadBusyIndicator__ control you always have to set its __Content__ property. This will be the content on top of which you want to visualize the __RadBusyIndicator__ control.
+>When you are using the __RadBusyIndicator__ control you always have to set its __Content__ property. This will be the content on top of which you want to visualize the __RadBusyIndicator__ control.
 
 ## Enable the RadBusyIndicator
 

@@ -45,11 +45,7 @@ If you don't want to use __No Data__ message, just set __ChartArea.IsNoDataMessa
 
 On the image below you can see the custom message displayed.
 
-
-
-
-         
-      ![](images/RadChart_Features_NoDataControl_01.png)
+![](images/RadChart_Features_NoDataControl_01.png)
 
 If you need further customizations, check [Styling the No Data Control]({%slug radchart-styling-and-appearance-styling-no-data-control%}).
 

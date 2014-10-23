@@ -10,56 +10,45 @@ position: 0
 
 # Changes
 
-
-
 This article describes the release history of the control.
 
-For the complete Release History of RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} go to
-        {% if site.site_name == 'Silverlight' %}[What's New Section](http://www.telerik.com/products/silverlight/whats-new.aspx){% endif %}{% if site.site_name == 'WPF' %}[What's New Section](http://www.telerik.com/products/wpf/whats-new.aspx){% endif %}.
-      
+For the complete Release History of RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} go to {% if site.site_name == 'Silverlight' %}[What's New Section](http://www.telerik.com/products/silverlight/whats-new.aspx){% endif %}{% if site.site_name == 'WPF' %}[What's New Section](http://www.telerik.com/products/wpf/whats-new.aspx){% endif %}. 
 
 ## Q1 2014
 
 ### What's New
 
-* Calendar performance improvements
-                
+* Calendar performance improvements                
 
 ### What's Fixed
 
-* When AreWeekNumbersVisible is false, not all months are displayed in YearView
-                
+* When AreWeekNumbersVisible is false, not all months are displayed in YearView                
 
 * If the current month is, for example, January 2014 and you change the year and go again into January, the Calendar actually goes into January 2014 (instead of the newly selected year)
-                {% if site.site_name == 'Silverlight' %}
 
+{% if site.site_name == 'Silverlight' %}
 * In "Single" SelectionMode when click and drag one day - two days are selected
-                  {% endif %}
+{% endif %}
 
 ## Q3 2013
 
 ### What's Fixed
 
 * The header navigation buttons do not work as expected when the properties DisplayDateStart or DisplayDateEnd
-                
 
 * Using Next button in RadCalendar is not working correctly when Columns are more than one
-                
 
 * When Rows or Columns of the control are above one, the left keyboard navigation is incorrect
-                
 
 ## Q2 2013
 
 ### What's New
 
 * Keyboard navigation improvements
-                
 
 ### What's Fixed
 
 * The Automation ID of the date buttons cannot be found when make a test using CodedUI
-                
 
 ## Q1 2013
 

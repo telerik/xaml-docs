@@ -10,13 +10,7 @@ position: 4
 
 # Template and Style Selectors
 
-
-
-## 
-
 The __RadContextMenu__ and the __RadMenuItem__ controls come with a set of selector properties. Typically, you use a template or style selector when you have more than one data template or style defined for the same type of objects.
-
->tipTo learn how to use selectors, be sure to read the common topics about [Template Selectors](http://www.telerik.com/help/silverlight/common-data-binding-template-selectors.html) and [Style Selectors](http://www.telerik.com/help/silverlight/common-data-binding-style-selectors.html).
 
 Here is a list of the selectors provided by the __RadContextMenu__ control:
 
@@ -24,11 +18,7 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 
 * __ItemContainerStyleSelector -__ used to select the __Style__ that is applied to the child __RadMenuItems__.
 
-And a list of the selectors provided by the __RadMenuItem__ control:{% if site.site_name == 'Silverlight' %}
-
->tipTo learn more about the __RadMenuItems__, please take a look at the [RadMenu help content](http://www.telerik.com/help/silverlight/radmenu-overview.html).{% endif %}{% if site.site_name == 'WPF' %}
-
->tipTo learn more about the __RadMenuItems__, please take a look at the [RadMenu help content](http://www.telerik.com/help/wpf/radmenu-overview.html).{% endif %}
+And a list of the selectors provided by the __RadMenuItem__ control:
 
 * __HeaderTemplateSelector__ - used to select the __DataTemplate__ that is set to its __HeaderTemplate__ property.
 

@@ -2,8 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
         <title>{{ page.page_title || page.title }}</title>
-        <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico"/>
+		
+        <link href="{{site.baseurl}}/favicon.ico?Version=2014" rel="shortcut icon" />
+		
         {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
         <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
         {% stylesheet styles %}
@@ -16,6 +19,18 @@
         {% javascript app %}
 		{% javascript prettify %}
         {% javascript branding %}
+		
+		<!--[if lt IE 9]>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
     </head>
     <body class="faux-columns">
         <!-- Google Tag Manager -->
@@ -25,6 +40,7 @@
         <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', '{{site.google_tag_manager}}');</script>
         <!-- End Google Tag Manager -->
         <header id="page-header">
+			<span class="toggle-nav"><span></span></span>
             {% include header.html %}
         </header>
 

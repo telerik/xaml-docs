@@ -10,10 +10,6 @@ position: 1
 
 # Select  the clicked Item of a RadTreeView
 
-
-
-## 
-
 This tutorial will show you how to select the item that was clicked, while opening the __RadContextMenu__. In order to achieve this, you have to do the following things:
 
 * Handle the __Opened__ event of the __RadContextMenu__
@@ -49,9 +45,7 @@ Before starting, here is a sample __RadTreeView__ with a sample __RadContextMenu
 	    </telerik:RadTreeViewItem>
 	    <telerik:RadTreeViewItem Header="Category5" />
 	</telerik:RadTreeView>
-	{{endregion}}
-
-
+{{endregion}}
 
 To handle the __Opened__ event attach an event handler to it.
 
@@ -64,9 +58,7 @@ To handle the __Opened__ event attach an event handler to it.
 	    <telerik:RadMenuItem Header="Menu Option 2" />
 	    <telerik:RadMenuItem Header="Menu Option 3" />
 	</telerik:RadContextMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -74,20 +66,16 @@ To handle the __Opened__ event attach an event handler to it.
 	private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
 	{
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_3}}
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetClickedElement<T>()__ method of the __RadContextMenu__.
+In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetClickedElement\<T\>()__ method of the __RadContextMenu__.
 
 #### __C#__
 
@@ -96,9 +84,7 @@ In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetCl
 	{
 	    RadTreeViewItem item = this.radContextMenu.GetClickedElement<RadTreeViewItem>();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -106,9 +92,7 @@ In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetCl
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	 Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 The last thing to do is to set the __SelectedItem__ property of the __RadTreeView__ to the __instance__of the __RadTreeView__ item that has been clicked.
 
@@ -125,9 +109,7 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 	        this.radTreeView.SelectedItem = item;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -138,9 +120,7 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 	  Me.radTreeView.SelectedItem = item
 	 End If
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

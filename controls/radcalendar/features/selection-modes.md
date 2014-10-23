@@ -10,10 +10,6 @@ position: 2
 
 # Selection Modes
 
-
-
-## 
-
 The Calendar supports three selection modes: __Single, Multiple and Extended__, the default selection mode is __Single__.
 
 The following snippet creates a Calendar with Extended selection mode:
@@ -22,9 +18,7 @@ The following snippet creates a Calendar with Extended selection mode:
 
 {{region radcalendar-selection-modes_0}}
 	<telerik:RadCalendar SelectionMode="Extended" />
-	{{endregion}}
-
-
+{{endregion}}
 
 In __Single Selection mode__ only one date can be selected. Note that the SelectedDate can be null as well, which means that no date is selected. Keyboard movement selects an item.
 
@@ -35,5 +29,3 @@ __Extended Selection mode__ is best suited for selection date ranges. It support
 A Calendar in Extended selection mode:
 
 ![calendar selection Modes 1](images/calendar_selectionModes1.png)
-
-

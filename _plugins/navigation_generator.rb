@@ -11,6 +11,7 @@ module Jekyll
             site.pages.each do |page|
                 category = page.data['category']
 
+                next if page.data['publish'] == false
                 next unless category
 
                 node = categories[category]
@@ -33,6 +34,7 @@ module Jekyll
                         if index == segments.size - 1
                             item['position'] = page.data['position'] if page.data['position']
                             item['text'] = page.data['title']
+                            item['spriteCssClass'] = 'article'
                         else
                             path = segments[0..index].join('/')
                             navigation_entry =  @navigation.find { |key, value| path =~ key }

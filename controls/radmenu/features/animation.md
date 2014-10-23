@@ -11,14 +11,9 @@ site_name: Silverlight
 
 # Animation
 
+The attached properties of the Telerik __AnimationManager__ allow you to apply animation to the expanding and collapsing of the __RadMenuItems__. By default there is one animation defined and it applies to the expanding of the __RadMenuItem__.        
 
-
-## 
-
-The attached properties of the Telerik __AnimationManager__ allow you to apply animation to the expanding and collapsing of the __RadMenuItems__. By default there is one animation defined and it applies to the expanding of the __RadMenuItem__.
-        
-
->tipIn order to use the __AnimationManager__you have to add the following namespace:xmlns:telerikAnimation="clr-namespace:Telerik.Windows.Controls.Animation;assembly=Telerik.Windows.Controls" 
+>tipIn order to use the __AnimationManager__you have to add the following namespace: *xmlns:telerikAnimation="clr-namespace:Telerik.Windows.Controls.Animation;assembly=Telerik.Windows.Controls"* 
 
 Here is the default animation value.
 
@@ -37,36 +32,26 @@ Here is the default animation value.
 	    </telerikAnimation:AnimationManager.AnimationSelector>
 	    ...
 	</telerik:RadMenu>
-	{{endregion}}
+{{endregion}}
 
+The animation which the __AnimationManager__ provides is of type __SlideAnimation__. This type of animation is used for hiding and showing popups. It exposes the following properties:        
 
+* __AnimationName__ - the name of the animation.          
 
-The animation which the __AnimationManager__ provides is of type __SlideAnimation.__This type of animation is used for hiding and showing popups.____It exposes the following properties:
-        
+* __Direction__ - the direction of the animation. Indicates whether the animated object is sliding in or out of view.          
 
-* __AnimationName__ - the name of the animation.
-          
+* __SlideMode__ - the mode of the animation. __Top__ value indicates that the direction is from top to bottom. __Bottom__ value indicates the opposite.          
 
-* __Direction__ - the direction of the animation. Indicates whether the animated object is sliding in or out of view.
-          
+* __SpeedRatio__ - the coefficient that is applied to the animation duration.          
 
-* __SlideMode__ - the mode of the animation. __Top__ value indicates that the direction is from top to bottom. __Bottom__ value indicates the opposite.
-          
+* __TargetName__ - the name of the control that the animation should affect.          
 
-* __SpeedRatio__ - the coefficient that is applied to the animation duration.
-          
-
-* __TargetName__ - the name of the control that the animation should affect.
-          
-
-In order to add an animation for the collapsing of the popup you have to define one more __SlideAnimation__ in the scope of the __AnimationSelector__and set its properties to the appropriate values. Here is an example how to do this.
-        
+In order to add an animation for the collapsing of the popup you have to define one more __SlideAnimation__ in the scope of the __AnimationSelector__ and set its properties to the appropriate values. Here is an example how to do this.        
 
 #### __XAML__
 
 {{region radmenu-features-animation_1}}
-	<telerik:RadMenu VerticalAlignment="Top"
-	                           HorizontalAlignment="Left">
+	<telerik:RadMenu VerticalAlignment="Top" HorizontalAlignment="Left">
 	    <telerikAnimation:AnimationManager.AnimationSelector>
 	        <telerikAnimation:AnimationSelector>
 	            <telerikAnimation:SlideAnimation Direction="In"
@@ -83,9 +68,7 @@ In order to add an animation for the collapsing of the popup you have to define 
 	    </telerikAnimation:AnimationManager.AnimationSelector>
 	    ...
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

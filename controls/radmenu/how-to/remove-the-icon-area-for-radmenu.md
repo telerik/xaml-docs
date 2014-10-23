@@ -10,8 +10,6 @@ position: 4
 
 # How to remove and modify the Icon area for RadMenu
 
-
-
 This article shows how to remove the Icon area and also how to modify it in order to fit different sized Icons.
 
 * [How to remove the menu Icon area](#how-to-remove-the-menu-icon)
@@ -30,9 +28,7 @@ Since Q2 2010 __RadMenu__ has a property for defining the width of the column, w
 
 ## How to modify the menu Icon area
 
-By default all of the MenuItems has equal space reserved for an Icon. With the Q2 2013 version of the controls there is a new property named __IconColumnWidth__ which enables 
-        setting a custom Icon width on each __RadMenuItem/RadMenuGroupItem__.         
-        
+By default all of the MenuItems has equal space reserved for an Icon. With the Q2 2013 version of the controls there is a new property named __IconColumnWidth__ which enables setting a custom Icon width on each __RadMenuItem/RadMenuGroupItem__.
 
 ![Rad Menu How To How to remove and modify the Icon area](images/RadMenu_HowTo_How_to_remove_and_modify_the_Icon_area.jpg)
 
@@ -46,9 +42,7 @@ By default all of the MenuItems has equal space reserved for an Icon. With the Q
 	        <telerik:RadMenuItem Header="Large" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="55" Height="55" />
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

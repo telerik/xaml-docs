@@ -11,21 +11,19 @@ position: 3
 # Use Commands with the RadContextMenu
 
 
+As the __RadMenuItem__ implements the __ICommandSource__ interface, you are able to use any kind of commands that inherit from the __ICommand__ interface with it. This tutorial will show you how to use the __RadContextMenu__ with __RoutedUICommands__ combined with the __MVVM__ pattern. Two commands are going to be exposed - one for moving an item in a ListBox up and one for moving an item down. The following things will come in focus:      
 
-As the __RadMenuItem__ implements the __ICommandSource__ interface, you are able to use any kind of commands that inherit from the __ICommand__ interface with it. This tutorial will show you how to use the __RadContextMenu__ with __RoutedUICommands__ combined with the __MVVM__ pattern. Two commands are going to be exposed - one for moving an item in a ListBox up and one for moving an item down. The following things will come in focus:
-      
+* [Attaching a RadContextMenu to a ListBox control](#attaching-a-radcontextmenu-to-a-listbox-control)
 
-* [Attaching a RadContextMenu to a ListBox control](#Attaching_a_RadContextMenu_to_a_ListBox_control)
+* [Populating the ListBox with data via a ViewModel](#populating-the-listbox-with-data-via-a-viewmodel)
 
-* [Populating the ListBox with data via a ViewModel](#Populating_the_ListBox_with_data_via_a_ViewModel)
+* [Selecting the right-clicked ListBoxItem](#selecting-the-right-clicked-listboxitem)
 
-* [Selecting the right-clicked ListBoxItem](#Selecting_the_right-clicked_ListBoxItem)
+* [Preparing the RoutedUICommands](#preparing-the-routeduicommands)
 
-* [Preparing the RoutedUICommands](#Preparing_the_RoutedUICommands)
+* [Creating the CommandBindings](#creating-the-commandbindings)
 
-* [Creating the CommandBindings](#Creating_the_CommandBindings)
-
-* [Setting the CommandBindings](#Setting_the_CommandBindings)
+* [Setting the CommandBindings](#setting-the-commandbindings)
 
 ## Attaching a RadContextMenu to a ListBox control
 
@@ -41,16 +39,13 @@ Before getting to the commands, you have to prepare the UI on which they will ge
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</ListBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 Having the UI prepared, you have to add some data to it.
 
 ## Populating the ListBox with data via a ViewModel
 
-As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for your __UserControl__, which will control its behavior. In it you will store the data which the __View__ is using. Here is the declaration of the ViewModel class. It has a constructor, a method that initializes the items for the __ListBox__ and an __Items__ property, that stores them. Additionally create a __SelectedItem__ property that will hold the selected item of the __ListBox__.
-        
+As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for your __UserControl__, which will control its behavior. In it you will store the data which the __View__ is using. Here is the declaration of the ViewModel class. It has a constructor, a method that initializes the items for the __ListBox__ and an __Items__ property, that stores them. Additionally create a __SelectedItem__ property that will hold the selected item of the __ListBox__.        
 
 #### __C#__
 
@@ -99,9 +94,7 @@ As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for y
 	        this.Items = items;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -143,12 +136,9 @@ As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for y
 	  Me.Items = items
 	 End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-In the constructor of the __UserControl__ you have to create an instance of the __ViewModel__, store it in a field and pass it as a __DataContext__ of the entire __UserControl__.
-        
+In the constructor of the __UserControl__ you have to create an instance of the __ViewModel__, store it in a field and pass it as a __DataContext__ of the entire __UserControl__.        
 
 #### __C#__
 
@@ -160,9 +150,7 @@ In the constructor of the __UserControl__ you have to create an instance of the 
 	    this.viewModel = new ExampleViewModel();
 	    this.DataContext = viewModel;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -173,12 +161,9 @@ In the constructor of the __UserControl__ you have to create an instance of the 
 	 Me.viewModel = New ExampleViewModel()
 	 Me.DataContext = viewModel
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-In the XAML you have to set the __SelectedItem__, the __DisplayMemberPath__ and the __ItemsSource__ properties of the __ListBox__ in order to visualize the data.
-        
+In the XAML you have to set the __SelectedItem__, the __DisplayMemberPath__ and the __ItemsSource__ properties of the __ListBox__ in order to visualize the data.        
 
 #### __XAML__
 
@@ -192,14 +177,11 @@ In the XAML you have to set the __SelectedItem__, the __DisplayMemberPath__ and 
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</ListBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Selecting the right-clicked ListBoxItem
 
-Before continuing, there is one more thing to be done. When right-clicking to open the __RadContextMenu__, the clicked item should get selected, or if no item was clicked, the selection should be removed. This is done by handling the __Opened__ event of the __RadContextMenu__.
-        
+Before continuing, there is one more thing to be done. When right-clicking to open the __RadContextMenu__, the clicked item should get selected, or if no item was clicked, the selection should be removed. This is done by handling the __Opened__ event of the __RadContextMenu__.        
 
 #### __XAML__
 
@@ -214,8 +196,7 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</ListBox>
-	{{endregion}}
-
+{{endregion}}
 
 
 #### __C#__
@@ -233,9 +214,7 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 	        this.listBox.SelectedItem = null;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -248,14 +227,11 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 	  Me.listBox.SelectedItem = Nothing
 	 End If
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Preparing the RoutedUICommands
 
-The next step is to create your commands. They will be host by the __ViewModel__.
-        
+The next step is to create your commands. They will be host by the __ViewModel__.        
 
 #### __C#__
 
@@ -270,9 +246,7 @@ The next step is to create your commands. They will be host by the __ViewModel__
 	    get;
 	    private set;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -289,12 +263,9 @@ The next step is to create your commands. They will be host by the __ViewModel__
 	 Private Set
 	 End Set
 	End Property
-	{{endregion}}
+{{endregion}}
 
-
-
-Initialize them in the constructor of the __ViewModel__:
-        
+Initialize them in the constructor of the __ViewModel__:        
 
 #### __C#__
 
@@ -305,9 +276,7 @@ Initialize them in the constructor of the __ViewModel__:
 	    this.MoveDownCommand = new RoutedUICommand( "Move Down", "MoveDown", typeof( ExampleViewModel ) );
 	    this.InitItems();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -317,9 +286,7 @@ Initialize them in the constructor of the __ViewModel__:
 	 Me.MoveDownCommand = New RoutedUICommand("Move Down", "MoveDown", GetType(ExampleViewModel))
 	 Me.InitItems()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 Bind them in the __View__.
         
@@ -341,9 +308,7 @@ Bind them in the __View__.
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</ListBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 You will also need methods that will get called when the command is executed. In the next section is explained how to connect the methods to the command. Here are sample methods for the two commands.
 
@@ -374,9 +339,7 @@ You will also need methods that will get called when the command is executed. In
 	    this.Items.Insert( index + 1, item as DataItem );
 	    this.SelectedItem = item;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -401,9 +364,7 @@ You will also need methods that will get called when the command is executed. In
 	 Me.Items.Insert(index + 1, TryCast(item, DataItem))
 	 Me.SelectedItem = item
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Creating the CommandBindings
 
@@ -420,9 +381,7 @@ In order to use the commands in the UI you have to provide a __CommandBinding__ 
 	    bindings.Add( new CommandBinding( this.MoveDownCommand, this.MoveDown ) );
 	    return bindings;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -433,15 +392,13 @@ In order to use the commands in the UI you have to provide a __CommandBinding__ 
 	 bindings.Add(New CommandBinding(Me.MoveDownCommand, Me.MoveDown))
 	 Return bindings
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Setting the CommandBindings
 
 In the __View__ get the __CommandBindingsCollection__ and set it through the __CommandManager__.
-        {% if site.site_name == 'Silverlight' %}
 
+{% if site.site_name == 'Silverlight' %}
 #### __C#__
 
 {{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_18}}
@@ -452,9 +409,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 	    this.DataContext = viewModel;
 	    CommandManager.SetCommandBindings( this, this.viewModel.GetCommandBindings() );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -465,10 +420,10 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 	 Me.DataContext = viewModel
 	 CommandManager.SetCommandBindings(Me, Me.viewModel.GetCommandBindings())
 	End Sub
-	{{endregion}}
+{{endregion}}
+{% endif %}
 
-{% endif %}{% if site.site_name == 'WPF' %}
-
+{% if site.site_name == 'WPF' %}
 #### __C#__
 
 {{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_20}}
@@ -484,9 +439,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 	        CommandManager.RegisterClassCommandBinding(typeof(ListBoxItem), commandBinding);
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -501,8 +454,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 			CommandManager.RegisterClassCommandBinding(GetType(ListBoxItem), commandBinding)
 		Next commandBinding
 	End Sub
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
 # See Also

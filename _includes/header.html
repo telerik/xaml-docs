@@ -1,21 +1,41 @@
- <div id="page-header">
 {% if site.site_name == 'Silverlight' %}
-	<div id="logo-bar-sl">
-		<a href="http://www.telerik.com" target="_blank" title="UI for Silverlight">
-			<span>UI for Silverlight</span>
-		</a>
-	</div> 
+<div id="logo-bar-sl">
+	<a href="/devtools/silverlight/" title="UI for Silverlight">
+		<span>UI for Silverlight</span>
+	</a>
+</div> 
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-	<div id="logo-bar">
-		<a href="http://www.telerik.com" target="_blank" title="UI for WPF">
-			<span>UI for WPF</span>
-		</a>
-	</div> 
-{% endif %}
-	<div id="page-search">
-        {% include search.html %}
-    </div>
+<div id="logo-bar">
+	<a href="/devtools/wpf/" title="UI for WPF">
+		<span>UI for WPF</span>
+	</a>
 </div> 
+{% endif %}
+<div id="page-search">
+	{% include search.html %}
+</div>
+
+<span class="show-search">
+	<span class="k-icon k-i-search"></span>
+</span>
+
+<div class="nav-buttons">
+{% if site.site_name == 'WPF' %}
+	<a href="http://demos.telerik.com/wpf/" title="WPF Demos" target="_blank" class="btn demos-btn">Demos</a>	
+	<a href="http://www.telerik.com/wpf/" title="About UI for WPF" target="_blank" class="btn about-btn">About</a>
+	<a href="http://www.telerik.com/purchase/individual/wpf.aspx" title="Pricing" target="_blank" class="btn pricing-btn">Pricing</a>
+	<a href="http://www.telerik.com/products/wpf/download.aspx" title="Try now" target="_blank" class="btn btn-primary">Try now</a>
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+	<a href="http://demos.telerik.com/silverlight/" title="Silverlight Demos" target="_blank" class="btn demos-btn">Demos</a>	
+	<a href="http://www.telerik.com/silverlight/" title="About UI for Silverlight" target="_blank" class="btn about-btn">About</a>
+	<a href="http://www.telerik.com/purchase/individual/silverlight.aspx" title="Pricing" target="_blank" class="btn pricing-btn">Pricing</a>
+	<a href="http://www.telerik.com/products/silverlight/download.aspx" title="Try now" target="_blank" class="btn btn-primary">Try now</a>
+{% endif %}
+</div>
+
+
+
 

@@ -17,10 +17,8 @@ body, html {
 }
 
 body {
-    
     color: #555;
     font: 400 14px Arial, Helvetica, sans-serif;
-    min-width: 1230px;
     position: relative;
 }
 
@@ -35,14 +33,30 @@ a img {
     font-size: 12px;
 }
 
+#page-header:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 #page-header a {
     text-decoration: none;
 }
 
 #logo-bar {
     font-size: 14px;
-	height: 80px;
-	background: url('../images/telerik_logo_wpf.png') 30px center no-repeat;
+	float: left;
+    margin-bottom: 1.717em;
+    margin-left: 1.833em;
+    margin-top: 1.617em;
+}
+
+#logo-bar a {
+	display: inline-block;
+	background: url('../images/telerik_logo_wpf.png') 0 center no-repeat;
+	height: 33px;
+	color: #fff;
+	width: 236px;
 }
 
 #logo-bar span {
@@ -52,15 +66,12 @@ a img {
 #logo-bar-sl {
     font-size: 14px;
 	height: 80px;
-	background: url('../images/telerik_logo_sl.png') 30px center no-repeat;
+	background: url('../images/telerik_logo_sl.png') 0 center no-repeat;
+	width:215px;
 }
 
 #logo-bar-sl span {
 	display: none;
-}
-
-#logo-bar a {
-    color: #fff;
 }
 
 .nav-buttons {
@@ -68,23 +79,23 @@ a img {
 }
 
 .btn {
-    color: #fff;
+	background-clip: padding-box;
     background-color: #2a2d33;
     border: 1px solid #505156;
-    background-clip: padding-box;
-    position: relative;
-    display: inline-block;
-    padding: 0.667em 2.000em;
-    line-height: 0.933em;
-    transition-property: background-color, color;
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
     border-radius: 2px;
-    -webkit-appearance: none;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
     font-size: 15px;
     font-weight: bold;
-    text-align: center;
+    line-height: 0.933em;
     margin: 1.467em 0.267em;
+    padding: 0.667em 2em;
+    position: relative;
+    text-align: center;
+    transition-duration: 0.2s;
+    transition-property: background-color, color;
+    transition-timing-function: ease;
 }
 
 .btn:hover {
@@ -138,6 +149,38 @@ a img {
 
 /* Search */
 
+.toggle-nav {
+    width: 24px; 
+    height: 24px;
+    background: transparent; 
+    display: none; 
+    position: relative;
+    margin-left: 1.833em;
+    cursor: pointer;
+}
+
+#page-search {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
+    padding: 0;
+    right: 514px;
+    text-align: right;
+    left: 20%;
+}
+
+#page-search.search-visibility {
+    background-color: #2a2d33;
+    display: block;
+    left: 1.83em;
+    margin-top: 0;
+    position: relative;
+    right: 1.83em;
+    top: -1.7em;
+    width: calc(100% - 3.666em);
+}
+
 #page-search form > table {
     border: 1px solid #D9D9D9;
 }
@@ -173,16 +216,6 @@ a img {
     margin: 0 8px;
 }
 
-#page-header #page-search {
-    margin: 0;
-    width: 450px;
-	position: absolute;
-	top: 10px;
-	right: 0px;
-    background-color: transparent;
-    padding: 0;
-}
-
 #page-search .gsc-control-cse {
     background: none;
     border: 0;
@@ -205,6 +238,17 @@ a img {
     padding: 13px 13px 12px;
     background: none;
     opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/* IE 5-7 */
+	filter: alpha(opacity=0);
+	/* Safari 1.x */
+	-khtml-opacity: 0;
+}
+
+#page-search > div {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
 }
 
 #page-header #page-search input.gsc-search-button {
@@ -234,7 +278,7 @@ a img {
 }
 #page-nav .k-icon,
 #page-nav .k-sprite {
- width: 18px;
+ width: 16px;
 }
 
 #page-nav .k-plus { background: url(../images/close.png) no-repeat; }
@@ -276,6 +320,10 @@ a img {
 #page-nav .k-state-selected,
 #page-nav .k-state-selected a {
     color: #fff;
+}
+
+#page-nav.nav-visibility {
+	display: block;
 }
 
 /* Table of contents */
@@ -400,6 +448,13 @@ a img {
 
 .faux-columns {
     background: #fff;
+}
+
+#page-inner-content {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+	clear: both;
 }
 
 #page-inner-content:after {
@@ -712,10 +767,142 @@ article h1:first-of-type:before {
 
 #page-article article {
     max-width: 930px;
-	
-    padding: 15px 1em 0 3em;
+	padding: 15px 1em 0 3em;
 }
 
 header, nav, section, article, aside, footer {
     display: block;
+} 
+
+.show-search {
+	background: url("../images/search-24.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: none;
+    min-height: 24px;
+    min-width: 24px;
+} 
+
+@media (max-width: 1200px) {
+    #page-nav {
+       width: 30%; 
+    }
+    
+    #markdown-toc,
+    #page-article { 
+        width: 70%; 
+    }
+    
+    #page-search {
+        left: 30%;
+    }
+
+    .btn.pricing-btn {
+        display: none;
+    }
+
+    #page-search {
+        right: 390px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width:800px) {
+    body {
+        min-width: initial;
+    }
+
+    .faux-columns {
+        background-image: none;
+    }
+
+    #markdown-toc {
+        border-bottom: none;
+    }
+
+    .nav-buttons,
+    #page-nav,
+    #page-tabs,
+    #page-top #page-search {
+        display: none;
+    }
+
+    #page-nav {
+        min-width: 250px;
+    }
+
+    div#page-inner-content {
+        bottom: 0;
+    }
+
+    #page-article {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #page-article h1 {
+        margin-top: 1em;
+    }
+
+    .toggle-nav {
+        display: inline-block;
+    }
+
+    #logo-bar {
+       float: none;
+       display: inline-block;
+       margin-left: 1em;
+    }
+
+    #page-search {
+        width: 30%;
+        left: auto;
+        display: none;
+        background-color: #2a2d33;
+    }
+
+    #page-search > div {
+        padding: 0 3.83em 0 0;    
+    }
+
+    .toggle-nav span { 
+        position: absolute; 
+    }
+    
+    .toggle-nav span, 
+    .toggle-nav span:before,
+    .toggle-nav span:after {    
+      border-radius: 1px;
+      height: 3px;
+      width: 24px;
+      background: #fff;
+      position: absolute;
+      display: block;
+      content: '';
+    }
+
+    .toggle-nav span:before {
+      top: 16px;
+    }
+
+    .toggle-nav span:after {
+      bottom: -8px; 
+    }
+        
+    .show-search {
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        top: 27px;
+        padding: 0;
+        right: 1.833em;
+        text-align: right;
+        left: auto;
+        cursor: pointer;
+    }
+	
+
+    footer {
+        display: none;
+    }
 }

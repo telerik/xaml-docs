@@ -114,5 +114,3 @@ $(function(){
         $("#page-inner-content").toggleClass("move-inner-content");
     });
 });
-
-$

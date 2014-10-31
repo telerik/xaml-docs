@@ -12,14 +12,12 @@ position: 2
 
 
 
-GridLine annotations are lines or circles that cross the chart grid at location 
-        on the axis, specified by their __Value__ property.
+GridLine annotations are lines or circles that cross the chart grid at location on the axis, specified by their __Value__ property.
     
 
 ## Cartesian GridLine Annotation
 
-In the case of the CartesianChart, the GridLine represents a vertical or horizontal line 
-          that crosses the entire plot area.
+In the case of the CartesianChart, the GridLine represents a vertical or horizontal line that crosses the entire plot area.
         
 
 Here is what __CartesianGridLineAnnotation__ looks like:
@@ -36,8 +34,7 @@ Here is what __CartesianGridLineAnnotation__ looks like:
 
 ## Polar Axis GridLine Annotation
 
-Polar Axis GridLines represent concentric circles that cross the polar axis at the 
-          corresponding __Value__.
+Polar Axis GridLines represent concentric circles that cross the polar axis at the corresponding __Value__.
         
 
 Here is what __PolarAxisGridLineAnnotation__ looks like:
@@ -85,36 +82,26 @@ Common:
 Cartesian:
         
 
-* __Axis__The Cartesian GridLine Annotation needs to be associated with horizontal or vertical axis explicitly.
+* __Axis__ The Cartesian GridLine Annotation needs to be associated with horizontal or vertical axis explicitly.
             
 
-* __Value__ (of type object)
-            The place on the associated axis where the annotation crosses it.
-            *When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and
-              when it is a CategoricalAxis - a category.
+* __Value__ (of type object) The place on the associated axis where the annotation crosses it. When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and when it is a CategoricalAxis - a category.
             
 
-* __Label__The string that is displayed in the label.
+* __Label__ The string that is displayed in the label.
             
 
-* __LabelDefinition__Defines the position of the annotation label, check the
-              [Annotation Labels]({%slug radchartview-annotations-labels%}) 
-              help topic for more details.
+* __LabelDefinition__ Defines the position of the annotation label, check the[Annotation Labels]({%slug radchartview-annotations-labels%}) help topic for more details.
             
 
 Polar:
         
 
-* __Value__ (of type double)
-            Specifies the location on the polar axis (the radius), where the grid line will cross.
+* __Value__ (of type double) Specifies the location on the polar axis (the radius), where the grid line will cross.
             
 
 Radial:
         
 
-* __Value__ (of type object)
-            Specifies the location on the radial axis, where the grid line will cross.
-            *When the radial axis is NumericRadialAxis a numeric value is expected and when it is a CategoricalRadialAxis - a category.
+* __Value__ (of type object) Specifies the location on the radial axis, where the grid line will cross. When the radial axis is NumericRadialAxis a numeric value is expected and when it is a CategoricalRadialAxis - a category.
             
-
-# See Also

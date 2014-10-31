@@ -51,64 +51,36 @@ Type-specific properties:
         
 
 * __CategoricalSeriesDescriptor__
-<table><tr><td>
 
-CategoryPath</td><td>
+1. CategoryPath - path to the Category of the data item.
 
-path to the Category of the data item</td></tr><tr><td>
-
-ValuePath</td><td>
-
-path to the Value of the data item</td></tr></table>
+2. ValuePath - path to the Value of the data item.
 
 * __OhlcSeriesDescriptor__
-<table><tr><td>
 
-OpenPath</td><td>
+1. OpenPath - path to the Open value of the data item.
 
-path to the Open value of the data item</td></tr><tr><td>
+2. HighPath - path to the High value of the data item.
 
-HighPath</td><td>
+3. LowPath - path to the Low value of the data item.
 
-path to the High value of the data item</td></tr><tr><td>
-
-LowPath</td><td>
-
-path to the Low value of the data item</td></tr><tr><td>
-
-ClosePath</td><td>
-
-path to the Close value of the data item</td></tr></table>
+4. ClosePath - path to the Close value of the data item.
 
 * __PolarSeriesDescriptor__
-<table><tr><td>
 
-ValuePath</td><td>
+1. ValuePath - path to the Value of the data item.
 
-path to the Value of the data item</td></tr><tr><td>
-
-Anglepath</td><td>
-
-path to the Angle value of the data item</td></tr></table>
+2. Anglepath - path to the Angle value of the data item.
 
 * __RadarSeriesDescriptor__
-<table><tr><td>
 
-CategoryPath</td><td>
+1. CategoryPath - path to the Category of the data item.
 
-path to the Category of the data item</td></tr><tr><td>
-
-ValuePath</td><td>
-
-path to the Value of the data item</td></tr></table>
+2. ValuePath - path to the Value of the data item.
 
 ## Example
 
-In the following example the chart is populated by a collection of 3 items, thus creating 3 series.
-          There is a CategoricalSeriesDescriptor with CollectionIndex=2 and a style with TargetType="LineSeries".
-          This effectively means that there will be a LineSeries, populated by the third item in the collection.
-          There is another CategoricalSeriesDescriptor which is responsible for creating BarSeries
-          for the rest of the items in the collection.
+In the following example the chart is populated by a collection of 3 items, thus creating 3 series. There is a CategoricalSeriesDescriptor with CollectionIndex=2 and a style with TargetType="LineSeries". This effectively means that there will be a LineSeries, populated by the third item in the collection. There is another CategoricalSeriesDescriptor which is responsible for creating BarSeries for the rest of the items in the collection.
         
 
 #### __XAML__

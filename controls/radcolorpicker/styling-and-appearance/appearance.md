@@ -17,8 +17,7 @@ position: 1
 You can customize the appearance of a __RadColorPicker__ by choosing which of the parts to be visible.
         
 
-1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__,
-              otherwise you should set it to false:
+1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__, otherwise you should set it to false:
             
 
 #### __XAML__
@@ -45,37 +44,8 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
 		Dim colorPicker As New RadColorPicker()
 	colorPicker.NoColorVisibility = Visibility.Visible
 		' colorPicker.NoColorVisibility= Visibility.Collapsed;
-	#End Region
-	
-	#Region "radcolorpicker-appearance_2"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.StandardPaletteVisibility = Visibility.Visible
-		' colorPicker.StandardPaletteVisibility = Visibility.Collapsed;
-	#End Region
-	
-	#Region "radcolorpicker-appearance_4"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		' colorPicker.HeaderPaletteVizibility = Visibility.Collapsed;
-	#End Region
-	
-	#Region "radcolorpicker-appearance_6"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.StandardPaletteHeaderText = "StandardPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_8"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.MainPaletteHeaderText = "MainPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_10"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.NoColorText = "No color Text"
-	#End Region
-	
-	End Class
-
+	{{endregion}}
+    
 ![No Color Field](images/NoColorField.png)
 
 1. You can use __StandardPaletteVisibility__ and __HeaderPaletteVisibility__ in order to set the visibility of the corresponding palettes:
@@ -107,32 +77,7 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
 		Dim colorPicker As New RadColorPicker()
 	colorPicker.StandardPaletteVisibility = Visibility.Visible
 		' colorPicker.StandardPaletteVisibility = Visibility.Collapsed;
-	#End Region
-	
-	#Region "radcolorpicker-appearance_4"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		' colorPicker.HeaderPaletteVizibility = Visibility.Collapsed;
-	#End Region
-	
-	#Region "radcolorpicker-appearance_6"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.StandardPaletteHeaderText = "StandardPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_8"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.MainPaletteHeaderText = "MainPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_10"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.NoColorText = "No color Text"
-	#End Region
-	
-	End Class
-
-
+	{{endregion}}
 
 * __HeaderPaletteVisibility__
 
@@ -160,24 +105,7 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
 		Dim colorPicker As New RadColorPicker()
 	colorPicker.HeaderPaletteVisibility = Visibility.Visible
 		' colorPicker.HeaderPaletteVizibility = Visibility.Collapsed;
-	#End Region
-	
-	#Region "radcolorpicker-appearance_6"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.StandardPaletteHeaderText = "StandardPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_8"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.MainPaletteHeaderText = "MainPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_10"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.NoColorText = "No color Text"
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}
 
@@ -189,7 +117,7 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
 #### __XAML__
 
 {{region radcolorpicker-appearance_7}}
-	        <telerik:RadColorPicker StandardPaletteHeaderText="StandardPalette     header" />
+	        <telerik:RadColorPicker StandardPaletteHeaderText="StandardPalette header" />
 	{{endregion}}
 
 
@@ -208,19 +136,7 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
 {{region radcolorpicker-appearance_6}}
 		Dim colorPicker As New RadColorPicker()
 	colorPicker.StandardPaletteHeaderText = "StandardPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_8"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.MainPaletteHeaderText = "MainPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_10"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.NoColorText = "No color Text"
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -259,15 +175,10 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
 {{region radcolorpicker-appearance_10}}
 		Dim colorPicker As New RadColorPicker()
 	colorPicker.NoColorText = "No color Text"
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
-
-1. __RadColorPicker__ is a stylable control. You can customize the look of the
-              RadSplitButton. In order to do this you should use
-              __SplitButtonStyle__ property.
+1. __RadColorPicker__ is a stylable control. You can customize the look of the RadSplitButton. In order to do this you should use __SplitButtonStyle__ property.
             
 
 * __SplitButtonStyle__ - this property should be used to control the style of the split button.

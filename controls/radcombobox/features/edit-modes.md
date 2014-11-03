@@ -69,6 +69,4 @@ The __RadComboBox__ exposes a boolean property named __StaysOpenOnEdit__. When t
 
  * [Selection]({%slug radcombobox-features-selection%})
 
- * [DataBinding]({%slug radcombobox-features-databinding%})
-
  * [Filtering]({%slug radcombobox-features-filtering%})

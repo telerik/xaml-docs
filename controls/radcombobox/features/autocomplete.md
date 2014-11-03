@@ -20,9 +20,9 @@ The purpose of this tutorial is to show you how to configure the autocomplete fe
 
 * [Using custom ItemTemplate](#using-custom-itemtemplate)
 
-* [Using TextSearch.TextPath property](#using-textsearch.textpath)
+* [Using TextSearch.TextPath property](#using-textsearchtextpath)
 
-* [Using TextSearch.AutoCompleteTimeout property](#using-textsearch.autocompletetimeout-property)
+* [Using TextSearch.AutoCompleteTimeout property](#using-textsearchautocompletetimeout-property)
 
 * [Disable autocomplete](#disable-autocomplete)
 
@@ -122,7 +122,5 @@ By default the autocomplete feature of __RadComboBox__ is always enabled. In ord
 # See Also
 
  * [Selection]({%slug radcombobox-features-selection%})
-
- * [DataBinding]({%slug radcombobox-features-databinding%})
 
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})

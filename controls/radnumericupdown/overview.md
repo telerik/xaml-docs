@@ -18,14 +18,10 @@ This control provides a rich user experience by allowing users to define various
 
 __RadNumericUpDown__ can be used in UpDown mode that uses paired arrow-buttons to increment or decrement a certain value, i.e. a scroll position or a number displayed in a companion control without showing a text box. To accomplish this feature you should set the __ShowTextBox__ property to __false__.
 
-Moreover, __RadNumericUpDown__ can be fully declared both in xaml and code behind, and extensively customized in __Microsoft Expression Blend__. However, changing the control template of __RadNumericUpDown__ may impact its functionality in case some required parts are missed. For more details about required parts in the control template as well as appearance and styling you should refer to the [Styling and Appearance]({%slug radnumericupdown-styling-and-appearance-overview%}) section of this help. 
+Moreover, __RadNumericUpDown__ can be fully declared both in xaml and code behind, and extensively customized in __Microsoft Expression Blend__. However, changing the control template of __RadNumericUpDown__ may impact its functionality in case some required parts are missed. For more details about required parts in the control template as well as appearance and styling you should refer to the Styles and Templates section of this help. 
 
 # See Also
 
- * [Features]({%slug radnumericupdown-features-overview%})
-
- * [Styling and appearance]({%slug radnumericupdown-styling-and-appearance-overview%})
-
  * [Required parts]({%slug radnumericupdown-required-parts%})
 
- * [HowTo]({%slug radnumericupdown-how-to-overview%})
+ * [HowTo]({%slug radnumericupdown-howto-events-wpf%})

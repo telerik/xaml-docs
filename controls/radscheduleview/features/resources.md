@@ -20,7 +20,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
 * [Assigning ResourceType to a ResourceTypeCollection](#assigning-resourcetype-to-a-resourcetypecollection)
 
-* [Assigning a Resource to a ResourceType (group)](#assigning-a-resource-to-a-resourcetype-(group))
+* [Assigning a Resource to a ResourceType (group)](#assigning-a-resource-to-a-resourcetype-group)
 
 * [Grouping appointments by Resources](#grouping-appointments-by-resources)
 

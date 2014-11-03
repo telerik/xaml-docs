@@ -14,9 +14,9 @@ This tutorial will walk you through the creation of a __RadWindow__ and will sho
 
 * [Declare a RadWindow](#declare-a-radwindow)
 
-* [Show the RadWindow](#show-the-radWindow)
+* [Show the RadWindow](#show-the-radwindow)
 
-* [Add content to the RadWindow](#add-content-to-the-radWindow)
+* [Add content to the RadWindow](#add-content-to-the-radwindow)
 
 * [Use predefined windows](#use-predefined-windows)
 

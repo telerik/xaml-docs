@@ -34,7 +34,7 @@ To bind the __RadContextMenu__ to a collection of business objects, you should u
 
 ## Data Templates
 
-The __ItemsSource__ property allows the __RadContextMenu__ to be bound to any collection that implements the __IEnumerable__ interface. For each item in the collection, a container of type __RadMenuItem__is created. By using the __ItemTemplate__, __ItemContainerStyle__ and __TemplateSelectors__ you can control the appearance of the dynamically created items.
+The __ItemsSource__ property allows the __RadContextMenu__ to be bound to any collection that implements the __IEnumerable__ interface. For each item in the collection, a container of type __RadMenuItem__ is created. By using the __ItemTemplate__, __ItemContainerStyle__ and __TemplateSelectors__ you can control the appearance of the dynamically created items.
 
 Besides the __RadContextMenu's ItemTemplate__ property, you could use the __DisplayMemberPath__ property for controlling the appearance of the created items.
 

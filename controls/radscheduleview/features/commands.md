@@ -34,11 +34,11 @@ __RadScheduleView__ exposes its functionality through various commands that can 
 
 * [SetTimelineViewMode Command](#settimelineviewmode-command)
 
-* [IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands](#increasevisibledatelarge-/--decreasevisibledatelarge-commands)
+* [IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands](#increasevisibledatelarge---decreasevisibledatelarge-commands)
 
 * [SetAppointmentImportance Command](#setappointmentimportance-command)
 
-* [GoToPreviousAppointment / GoToNextAppointment Commands](#gotopreviousappointment-/-gotonextappointment-commands)
+* [GoToPreviousAppointment / GoToNextAppointment Commands](#gotopreviousappointment--gotonextappointment-commands)
 
 ## CreateAppointment / CreateAppointmentWithDialog Commands
 

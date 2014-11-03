@@ -12,11 +12,11 @@ position: 10
 
 
 
-Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}) or [CustomGridLine]({%slug radchart-features-annotations-custom-gridline%}) allows you to customize their appearance using the *Background*, *Stroke* or *StrokeThickness* properties. However it is common scenario that you would like to have __Label__or __Tooltip__for your annotations and this is what this help topic will demonstrate.
+Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}) or [CustomGridLine]({%slug radchart-features-annotations-custom-gridline%}) allows you to customize their appearance using the *Background*, *Stroke* or *StrokeThickness* properties. However it is common scenario that you would like to have __Label__ or __Tooltip__ for your annotations and this is what this help topic will demonstrate.
 
->The article demonstrates how to set Tooltip and Label for MarkedZone but the approach is the same for the other Annotations.__Adding Tooltip__
+>The article demonstrates how to set Tooltip and Label for MarkedZone but the approach is the same for the other Annotations. __Adding Tooltip__
 
-__1.__ To be able to see the Tooltips for MarkedZones you should re-template the Chart Area and put the Annotations Layer within the Zoom Layer. Then by using *TooltipService.ToolTip* property of the MarkedZone you can set custom tooltip:
+##### 1. To be able to see the Tooltips for MarkedZones you should re-template the Chart Area and put the Annotations Layer within the Zoom Layer. Then by using *TooltipService.ToolTip* property of the MarkedZone you can set custom tooltip:
 
 #### __XAML__
 
@@ -101,7 +101,7 @@ __1.__ To be able to see the Tooltips for MarkedZones you should re-template the
 
 
 
-__2.__ Set the re-templated ChartArea Style to the RadChart. Then create new __MarkedZone__ and set custom string for it's *TooltipService.ToolTip* property:
+##### 2. Set the re-templated ChartArea Style to the RadChart. Then create new __MarkedZone__ and set custom string for it's *TooltipService.ToolTip* property:
 
 #### __XAML__
 
@@ -158,7 +158,7 @@ __2.__ Set the re-templated ChartArea Style to the RadChart. Then create new __M
 
 ## Adding Label
 
-__1.__  You can show any text in annotation zone by re-templating it and adding *TextBlock* in it's *ControlTemplate.* For this purpose the Rectangle and the newly added* TextBlock* are placed in a Grid*. *The retemplated* MarkedZone's Style* is as follows*:***
+##### 1.  You can show any text in annotation zone by re-templating it and adding *TextBlock* in it's *ControlTemplate*. For this purpose the Rectangle and the newly added *TextBlock* are placed in a Grid. *The retemplated MarkedZone's Style* is as follows*:
 
 #### __XAML__
 
@@ -187,7 +187,7 @@ __1.__  You can show any text in annotation zone by re-templating it and adding 
 
 Additionally the __TextWrapping__ property of the MarkedZone's Text Block is set to __Wrap__ - this way the overflowed text does not clips.
 
-__2.__ Set the newly created Style to your MarkedZone and provide Label's content using the DataContext property:
+##### 2. Set the newly created Style to your MarkedZone and provide Label's content using the DataContext property:
 
 #### __XAML__
 
@@ -198,12 +198,7 @@ __2.__ Set the newly created Style to your MarkedZone and provide Label's conten
 
 
 The result image shows the tooltip and the label:
-
-
-
-
-         
-      ![](images/RadChart_HowToAnnotation_tooltip_and_label.png)
+![](images/RadChart_HowToAnnotation_tooltip_and_label.png)
 
 The same can be achieved with __CustomGridLines__ like this:
 
@@ -241,5 +236,4 @@ The same can be achieved with __CustomGridLines__ like this:
 
 
 Note that the position of the TextBlock is controlled via X1 and Y1 properties (the starting point of the GridLine) as taken using TemplateBinding. The result can be seen below:
-
-![Rad Chart How To Annotation custom Gridline label](images/RadChart_HowToAnnotation_customGridline_label.PNG)
+![](images/RadChart_HowToAnnotation_customGridline_label.PNG)

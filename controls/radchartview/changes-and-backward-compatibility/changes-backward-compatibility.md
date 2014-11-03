@@ -15,8 +15,7 @@ position: 1
 This article describes the __breaking changes__ introduced in __RadChartView__.
       
 
-## 
-        Q1 2014
+## Q1 2014
       
 
 __Changed__

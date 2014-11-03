@@ -10,7 +10,7 @@ position: 2
 
 # Understanding Appointments
 
->Before reading this tutorial you should get familiar with the Visual Structure of the standard __RadScheduleView__control and its Views and Dialogs.
+>Before reading this tutorial you should get familiar with the Visual Structure of the standard __RadScheduleView__ control and its Views and Dialogs.
 
 To learn how to manipulate run time the appointments displayed by the __RadScheduleView__, read the following topics:
 

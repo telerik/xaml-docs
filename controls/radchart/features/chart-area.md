@@ -11,18 +11,9 @@ position: 12
 # Chart Area
 
 
-
-## 
-
 __ChartArea__ is the place, where the chart graphic is drawn. The __ChartArea__ represents a layout region of the __RadChart__ control that holds certain chart series and axis data. Additionally, the __ChartArea__ exposes events for customizing the [tooltips]({%slug radchart-features-tooltips%}) and making the chart more [interactive]({%slug radchart-features-interactivity%}).
 
-
-
-
-
-
-         
-      ![](images/RadChart_Features_ChartArea_01.png)
+![](images/RadChart_Features_ChartArea_01.png)
 
 As you can see on the image above, the __ChartArea__ has two [axes]({%slug radchart-features-axes-overview%}) - X and Y. By default X- and Y-axes are shown for all chart types except for those, which do not have axes at all - Pie and Doughnut charts.
 
@@ -34,10 +25,18 @@ Use the __PlotAreaAxisXStyle__ and the __PlotAreaAxisYStyle__ properties to set 
 
 __RadChart__ also allows you to specify how to format the labels by specifying __ChartArea.LabelFormatBehavior__. The __LabelFormatBehaviour__ enumeration has three values: __HumanReadable__(default), __Scientific__ and __None__. The table below shows how the values will be formatted for the first two options. When __None__ is used the values are converted using __ToString()__ manner:
 
-____
-<table> <tr><td><b>Value</b></td><td><b>HumanReadable</b></td><td><b>Scientific</b></td></tr><tr><td>100</td><td>100</td><td>1.0E+2</td></tr><tr><td>100,000</td><td>100 k</td><td>1.0E+5</td></tr><tr><td>100,000,000</td><td>100 mil</td><td>1.0E+8</td></tr><tr><td>100,000,000,000</td><td>100 bil</td><td>1.0E+11</td></tr><tr><td>100,000,000,000,000</td><td>100 tri</td><td>1.0E+14</td></tr><tr><td>1,000,000,000,000,000</td><td>1000 tri</td><td>1.0E+15</td></tr></table>
 
-When you set the label format behavior, all the labels (axes, series item labels, tooltips) will be formatted using the logic shown above. However, if you set [Format Expressions]({%slug radchart-features-format-expressions%}) to an element, then this expression will override the selected __LabelFormatBehavior__. For example, set the format behavior to __Scientific__, but for __X-Axis__ set __DefaultLabelFormat__to "__MMM__":
+|Value|    HumanReadable|    Scientific|
+|-----|-----------------|--------------|
+|100|    100|    1.00E+02|
+|100,000|    100 k|    1.00E+05|
+|100,000,000|    100 mil|    1.00E+08|
+|100,000,000,000|    100 bil|    1.00E+11|
+|100,000,000,000,000|    100 tri|    1.00E+14|
+|1,000,000,000,000,000|    1000 tri|    1.00E+15|
+
+
+When you set the label format behavior, all the labels (axes, series item labels, tooltips) will be formatted using the logic shown above. However, if you set [Format Expressions]({%slug radchart-features-format-expressions%}) to an element, then this expression will override the selected __LabelFormatBehavior__. For example, set the format behavior to __Scientific__, but for __X-Axis__ set __DefaultLabelFormat__ to "__MMM__":
 
 #### __XAML__
 
@@ -63,8 +62,6 @@ When you set the label format behavior, all the labels (axes, series item labels
 	</telerikChart:radChart>
 	{{endregion}}
 
-
-
 #### __C#__
 
 {{region radchart-features-chart-area_1}}
@@ -77,8 +74,6 @@ When you set the label format behavior, all the labels (axes, series item labels
 	...
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-features-chart-area_2}}
@@ -90,15 +85,9 @@ When you set the label format behavior, all the labels (axes, series item labels
 	radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Between
 	{{endregion}}
 
-
-
 On the image below you can see how the __Y-Axis__ and the series item labels are formatted when __LayoutFormatBehavior__ is set to __HumanReadable__, while the __X-Axis__ is formatted using custom [Format Expressions]({%slug radchart-features-format-expressions%}):
 
-
-
-
-         
-      ![](images/RadChart_Features_ChartArea_20.png)
+![](images/RadChart_Features_ChartArea_20.png)
 
 # See Also
 

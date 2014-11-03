@@ -1,28 +1,39 @@
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
+using System.IO;
 using System.Linq;
-using System.Windows;
+using System.Windows.Controls;
+using Telerik.Windows.Zip;
 
-namespace WpfApplication1
+namespace RadZipLibraryDocumentationSourceCode.Examples.CompressStream
 {
-	/// <summary>
-	/// Interaction logic for App.xaml
-	/// </summary>
-	public partial class App : Application
-	{
-	}
+    public partial class Default_Cs : UserControl
+    {
+        private void CompressStream(Stream outputStream, Stream inputStream)
+        {
+            #region radziplibrary-compress-stream_0
+            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
+            {
+                // write to compressed stream
+            }
+            #endregion
 
-#region radziplibrary-compress-stream_0
-ZipOutputStream zipOutputStream = new ZipOutputStream(memoryStream);
-#endregion
+            #region radziplibrary-compress-stream_1
+            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
+            {
+                inputStream.CopyTo(compressedStream);
+                compressedStream.Flush();
+            }
+            #endregion
+        }
 
-#region radziplibrary-compress-stream_2
-ZipOutputStream zipOutputStream = new ZipOutputStream(memoryStream, ZipCompression.Deflate64);
-#endregion
-
-#region radziplibrary-compress-stream_4
-ZipInputStream inputStream = new ZipInputStream(compressedStream);
-#endregion
+        private void DecompressStream(Stream outputStream, Stream inputStream)
+        {
+            #region radziplibrary-compress-stream_2
+            using (CompressedStream compressedStream = new CompressedStream(inputStream, StreamOperationMode.Read, new DeflateSettings()))
+            {
+                compressedStream.CopyTo(outputStream);
+            }
+            #endregion
+        }
+    }
 }

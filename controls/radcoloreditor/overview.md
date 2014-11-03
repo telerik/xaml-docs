@@ -16,8 +16,8 @@ position: 0
 
 ## 
 
-Thank you for choosing Telerik __RadColorEditor!__![radcoloreditor-overview](images/radcoloreditor-overview.png)
+Thank you for choosing Telerik __RadColorEditor!__ 
 
-__RadColorEditor__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} is a lightweight UI component that allows users to select color from a custom  
-					palette of colors.
-				
+![radcoloreditor-overview](images/radcoloreditor-overview.png)
+
+__RadColorEditor__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} is a lightweight UI component that allows users to select color from a custom  palette of colors.

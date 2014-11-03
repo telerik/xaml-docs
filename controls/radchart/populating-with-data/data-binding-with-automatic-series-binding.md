@@ -12,11 +12,11 @@ position: 5
 
 
 
-One of the features of the __RadChart__ is the automatic series mapping. With automatic series mapping, you can easily create a chart by simply setting the __RadChart.ItemsSource__ to the data source you have. __RadChart__ will create a chart series for every numeric field in the data source by mapping the numeric value to the __DataPointMember.YValue__ field for each respective series. The type of the chart depends on the__RadChart.DefaultSeriesDefinition__ property and by default it is set to __BarSeriesDefinition__.
+One of the features of the __RadChart__ is the automatic series mapping. With automatic series mapping, you can easily create a chart by simply setting the __RadChart.ItemsSource__ to the data source you have. __RadChart__ will create a chart series for every numeric field in the data source by mapping the numeric value to the __DataPointMember.YValue__ field for each respective series. The type of the chart depends on the __RadChart.DefaultSeriesDefinition__ property and by default it is set to __BarSeriesDefinition__.
 
->Note that SeriesDefinition set through the __RadChart.DefaultSeriesDefinition__property does not support change notifications i.e. if you try to change a __RadChart.DefaultSeriesDefinition__property after the control is databound, it will not have any effect till the next rebind operation. The recommended approach in this scenario would be to use unique __SeriesMapping.SeriesDefinition__or alternatively you can access the generated DataSeries directly (i.e. RadChart.DefaultView.ChartArea.DataSeries[i]) and update its __DataSeries.Definition__properties.
+>Note that SeriesDefinition set through the __RadChart.DefaultSeriesDefinition__ property does not support change notifications i.e. if you try to change a __RadChart.DefaultSeriesDefinition__ property after the control is databound, it will not have any effect till the next rebind operation. The recommended approach in this scenario would be to use unique __SeriesMapping.SeriesDefinition__ or alternatively you can access the generated DataSeries directly (i.e. RadChart.DefaultView.ChartArea.DataSeries[i]) and update its __DataSeries.Definition__ properties.
 
-The purpose of this tutorial is to show you how to use __RadChart__with __Automatic Series Mappings__. The following cases will be examined:
+The purpose of this tutorial is to show you how to use __RadChart__ with __Automatic Series Mappings__. The following cases will be examined:
 
 * [Binding to an array of integers](#Binding_to_an_Array_of_Integers)
 
@@ -44,13 +44,9 @@ Take a look at this simple array declaration:
 
 
 
-If you set it to the __ItemsSource__property of the __RadChart__control, you will have the following result:
+If you set it to the __ItemsSource__ property of the __RadChart__ control, you will have the following result:
 
-
-
-
-         
-      ![](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_01.png)
+![](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_01.png)
 
 #### __C#__
 
@@ -70,7 +66,7 @@ If you set it to the __ItemsSource__property of the __RadChart__control, you wil
 
 ## Binding to a List of Business Objects
 
-If you have a list of business objects and you set it to the __ItemsSource__property of the __RadChart__ control, the result will be one chart series per numeric property:
+If you have a list of business objects and you set it to the __ItemsSource__ property of the __RadChart__ control, the result will be one chart series per numeric property:
 
 #### __C#__
 
@@ -187,11 +183,7 @@ Where the structure of the __Manufacturer__ class is:
 
 The result is shown on the next figure.
 
-
-
-
-         
-      ![](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_02.png)
+![](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_02.png)
 
 As you can see, automatic series mapping can be useful for simple data. However, if you need more data binding options, take a look at the [Data Binding with Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) topic and the [Data Binding to Nested Collections]({%slug radchart-populating-with-data-data-binding-to-nested-collections%}) topic.
 

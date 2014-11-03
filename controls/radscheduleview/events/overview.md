@@ -69,7 +69,7 @@ __RadScheduleView__ exposes the following events regarding the data manipulation
 
 	1. The __sender__ argument contains the __RadScheduleView__. This argument is of type object, but can be cast to the __RadScheduleView__ type.
 
-	1. An __AppointmentDeletingEventArgs__object. Via the __AppointmentDeletingEventArgs__ you can access the following properties:
+	1. An __AppointmentDeletingEventArgs__ object. Via the __AppointmentDeletingEventArgs__ you can access the following properties:
 
 		* __Appointment__ - gets the appointment that is going to be deleted. This property is read-only.
 

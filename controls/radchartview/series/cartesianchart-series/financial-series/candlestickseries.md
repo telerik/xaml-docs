@@ -18,7 +18,8 @@ This is a typical financial series that can be used to visualize the state of a 
 
 You can use the following definition to display a simple CandlestickSeries
 
-	
+#### XAML
+	{{region radchartview-candlestickseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -38,7 +39,7 @@ You can use the following definition to display a simple CandlestickSeries
                 </telerik:CandlestickSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-candlestickseries](images/radchartview-series-candlestickseries.png)
 
 # See Also

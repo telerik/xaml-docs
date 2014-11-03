@@ -17,12 +17,7 @@ position: 2
 __RadColorPicker__ is a control that displays  a set of palettes from which the user can select a single color.
 		
 
->In order to use __RadColorPicker__ in your projects you have to add references to the following two assemblies
-		  
-
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Controls.Input__
+>In order to use __RadColorPicker__ in your projects you have to add references to the following two assemblies <br/> * __Telerik.Windows.Controls__ <br/> * __Telerik.Windows.Controls.Input__
 
 It has a __SelectedColor__ property, which is of __Color__ type and it is used to store selected color value.
 		
@@ -56,101 +51,8 @@ where the __telerik__ alias point to the following namespace:
 {{region radcolorpicker-getting-started_0}}
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.SelectedColor = Colors.Red
-	#End Region
-	#Region "radcolorpicker-getting-started_2"
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	#Region "radcolorpicker-getting-started_3"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.MainPalette = ColorPreset.Grayscale
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_5"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPalette = ColorPreset.Office
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_7"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPalette = ColorPreset.Standard
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_9"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.StandardPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_11"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.HeaderPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_13"
-		Dim colorPicker As New RadColorPicker()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.MainPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_15"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_17"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownClosed += New EventHandler(colorPicker_DropDownClosed)
-	
-		Private Sub colorPicker_DropDownClosed(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownClosed event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_19"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownOpened += New EventHandler(colorPicker_DropDownOpened)
-	
-		Private Sub colorPicker_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownOpened event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_21"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.Click += New EventHandler(colorPicker_Click)
-	
-		Private Sub colorPicker_Click(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the Click event
-		End Sub
-	#End Region
-	
-	
-	End Class
-
-
-
+	{{endregion}}
+    
 Whenever a color is selected the __SelectedColorChanged__ event is raised:
 		
 
@@ -177,91 +79,7 @@ Whenever a color is selected the __SelectedColorChanged__ event is raised:
 			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
 			Dim selectedColor As Color = colorPicker.SelectedColor
 		End Sub
-	#End Region
-	#Region "radcolorpicker-getting-started_3"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.MainPalette = ColorPreset.Grayscale
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_5"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPalette = ColorPreset.Office
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_7"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPalette = ColorPreset.Standard
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_9"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.StandardPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_11"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.HeaderPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_13"
-		Dim colorPicker As New RadColorPicker()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.MainPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_15"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_17"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownClosed += New EventHandler(colorPicker_DropDownClosed)
-	
-		Private Sub colorPicker_DropDownClosed(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownClosed event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_19"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownOpened += New EventHandler(colorPicker_DropDownOpened)
-	
-		Private Sub colorPicker_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownOpened event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_21"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.Click += New EventHandler(colorPicker_Click)
-	
-		Private Sub colorPicker_Click(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the Click event
-		End Sub
-	#End Region
-	
-	
-	End Class
-
+	{{endregion}}
 
 
 ## Populating
@@ -294,86 +112,7 @@ You can populate the __RadColorSelector__  with any of the built-in palettes usi
 {{region radcolorpicker-getting-started_3}}
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.MainPalette = ColorPreset.Grayscale
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_5"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPalette = ColorPreset.Office
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_7"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPalette = ColorPreset.Standard
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_9"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.StandardPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_11"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.HeaderPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_13"
-		Dim colorPicker As New RadColorPicker()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.MainPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_15"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_17"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownClosed += New EventHandler(colorPicker_DropDownClosed)
-	
-		Private Sub colorPicker_DropDownClosed(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownClosed event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_19"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownOpened += New EventHandler(colorPicker_DropDownOpened)
-	
-		Private Sub colorPicker_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownOpened event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_21"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.Click += New EventHandler(colorPicker_Click)
-	
-		Private Sub colorPicker_Click(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the Click event
-		End Sub
-	#End Region
-	
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -402,81 +141,7 @@ You can populate the __RadColorSelector__  with any of the built-in palettes usi
 {{region radcolorpicker-getting-started_5}}
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.HeaderPalette = ColorPreset.Office
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_7"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPalette = ColorPreset.Standard
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_9"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.StandardPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_11"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.HeaderPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_13"
-		Dim colorPicker As New RadColorPicker()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.MainPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_15"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_17"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownClosed += New EventHandler(colorPicker_DropDownClosed)
-	
-		Private Sub colorPicker_DropDownClosed(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownClosed event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_19"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownOpened += New EventHandler(colorPicker_DropDownOpened)
-	
-		Private Sub colorPicker_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownOpened event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_21"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.Click += New EventHandler(colorPicker_Click)
-	
-		Private Sub colorPicker_Click(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the Click event
-		End Sub
-	#End Region
-	
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -505,79 +170,7 @@ You can populate the __RadColorSelector__  with any of the built-in palettes usi
 {{region radcolorpicker-getting-started_7}}
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.StandardPalette = ColorPreset.Standard
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_9"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.StandardPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_11"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.HeaderPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_13"
-		Dim colorPicker As New RadColorPicker()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.MainPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_15"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_17"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownClosed += New EventHandler(colorPicker_DropDownClosed)
-	
-		Private Sub colorPicker_DropDownClosed(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownClosed event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_19"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownOpened += New EventHandler(colorPicker_DropDownOpened)
-	
-		Private Sub colorPicker_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownOpened event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_21"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.Click += New EventHandler(colorPicker_Click)
-	
-		Private Sub colorPicker_Click(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the Click event
-		End Sub
-	#End Region
-	
-	
-	End Class
-
-
-
+	{{endregion}}
 If you prefer to use your own collection of Colors you can always use __HeaderPaletteItemsSource__, __MainPaletteItemsSource__ and __StandardPaletteItemsSource__.
 		
 
@@ -616,67 +209,7 @@ If you prefer to use your own collection of Colors you can always use __HeaderPa
 		colors1.Add(Colors.Green)
 		colors1.Add(Colors.Blue)
 		colorPicker.StandardPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_11"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.HeaderPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_13"
-		Dim colorPicker As New RadColorPicker()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.MainPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_15"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_17"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownClosed += New EventHandler(colorPicker_DropDownClosed)
-	
-		Private Sub colorPicker_DropDownClosed(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownClosed event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_19"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownOpened += New EventHandler(colorPicker_DropDownOpened)
-	
-		Private Sub colorPicker_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownOpened event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_21"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.Click += New EventHandler(colorPicker_Click)
-	
-		Private Sub colorPicker_Click(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the Click event
-		End Sub
-	#End Region
-	
-	
-	End Class
-
+	{{endregion}}
 
 
 * __HeaderPaletteItemSource__ property
@@ -714,57 +247,7 @@ If you prefer to use your own collection of Colors you can always use __HeaderPa
 		colors1.Add(Colors.Green)
 		colors1.Add(Colors.Blue)
 		colorPicker.HeaderPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_13"
-		Dim colorPicker As New RadColorPicker()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.MainPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_15"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_17"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownClosed += New EventHandler(colorPicker_DropDownClosed)
-	
-		Private Sub colorPicker_DropDownClosed(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownClosed event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_19"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownOpened += New EventHandler(colorPicker_DropDownOpened)
-	
-		Private Sub colorPicker_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownOpened event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_21"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.Click += New EventHandler(colorPicker_Click)
-	
-		Private Sub colorPicker_Click(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the Click event
-		End Sub
-	#End Region
-	
-	
-	End Class
-
+	{{endregion}}
 
 
 * __MainPaletteItemSource__ property
@@ -800,69 +283,23 @@ If you prefer to use your own collection of Colors you can always use __HeaderPa
 		colors1.Add(Colors.Green)
 		colors1.Add(Colors.Blue)
 		colorPicker.MainPaletteItemsSource = colors1
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_15"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
-	
-		Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-			Dim selectedColor As Color = colorPicker.SelectedColor
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_17"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownClosed += New EventHandler(colorPicker_DropDownClosed)
-	
-		Private Sub colorPicker_DropDownClosed(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownClosed event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_19"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.DropDownOpened += New EventHandler(colorPicker_DropDownOpened)
-	
-		Private Sub colorPicker_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the DropDownOpened event
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-getting-started_21"
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.Click += New EventHandler(colorPicker_Click)
-	
-		Private Sub colorPicker_Click(ByVal sender As Object, ByVal e As EventArgs)
-			' handle the Click event
-		End Sub
-	#End Region
-	
-	
-	End Class
-
-
-
-
-
-
+	{{endregion}}
 
 ## Events
 
-* __SelectedColorChanged____RadColorPicker__ has __SelectedColor__ property which is of __Color__ type and is used to store selected color value. Whenever a color is selected __SelectedColorChanged__ event is raised.
+* __SelectedColorChanged__ __RadColorPicker__ has __SelectedColor__ property which is of __Color__ type and is used to store selected color value. Whenever a color is selected __SelectedColorChanged__ event is raised.
 			
 
-* __DropDownClosed__Raised when the SplitButton is closed.
+* __DropDownClosed__ Raised when the SplitButton is closed.
 			
 
-* __DropDownOpening__Raised when the SplitButton is about to be opened.
+* __DropDownOpening__ Raised when the SplitButton is about to be opened.
 			
 
-* __DropDownOpened__Raised when the SplitButton is opened.
+* __DropDownOpened__ Raised when the SplitButton is opened.
 			
 
-* __Click__Raised when the left part of the SplitButton is clicked.
+* __Click__ Raised when the left part of the SplitButton is clicked.
 			
 
 ## Properties

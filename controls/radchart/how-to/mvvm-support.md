@@ -315,7 +315,7 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 * A BarChart will be used. 
 
 
-* The __Grade__property will be displayed on the ordinate. 
+* The __Grade__ property will be displayed on the ordinate. 
 
 
 * The __Name__ property will be displayed on the absciss. 
@@ -408,16 +408,11 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 
 
 The result so far can be seen on the image below: 
-
-
-
-
-         
-      ![](images/RadChart_HowToMVVM_020.PNG)
+![](images/RadChart_HowToMVVM_020.PNG)
 
 * The final step is to bind the __GradeColor__ property of the __PersonViewModel__ business object to the background of a single bar.
 
-In order to change the background of each bar from the chart, you need to use the __CreateItemStyleDelegate__property of the __RadChart__. For more information read [here]({%slug radchart-styling-and-appearance-custom-item-style%}).
+In order to change the background of each bar from the chart, you need to use the __CreateItemStyleDelegate__ property of the __RadChart__. For more information read [here]({%slug radchart-styling-and-appearance-custom-item-style%}).
 
 Here is the method that will be passed to the delegate.
 
@@ -480,12 +475,7 @@ To pass this method to the __RadChart__ use its __CustomItemStyleDelegate__ prop
 Set this property into the __MVVM_Loaded__ handler.
 
 Here is the final result: 
-
-
-
-
-         
-      ![](images/RadChart_HowToMVVM_030.PNG)
+![](images/RadChart_HowToMVVM_030.PNG)
 
 Additionally you may want to remove the Background from the SeriesItemsLabels. This can be achieved by retemplating the default Style so that the Background applied to the Labels is Transparent and setting the Foreground to Black for example:
 
@@ -561,12 +551,7 @@ Don't forget to apply the Style to the SeriesItemLabelStyle property of the Seri
 
 
 The result:
-
-
-
-
-         
-      ![](images/RadChart_HowToMVVM_040.PNG)
+![](images/RadChart_HowToMVVM_040.PNG)
 
 # See Also
 

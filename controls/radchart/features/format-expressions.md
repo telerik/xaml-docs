@@ -13,7 +13,27 @@ position: 9
 
 
 __RadChart__ supports format expressions, which you can use to format the series items labels, axes labels and tooltip texts. Besides the [standard](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx), the [custom](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) numeric and the [date/time](http://msdn.microsoft.com/en-us/library/97x6twsz.aspx) format strings, __RadChart__ supports chart specific format mechanism that allows you to insert context-specific data. To do that, use one of the following tokens:
-<table> <tr><td><b>Token</b></td><td><b>Use for</b></td><td><b>Value</b></td></tr><tr><td>#Y</td><td>Series Items Label, Tooltip</td><td>DataPoint.YValue</td></tr><tr><td>#X</td><td>Series Items Label, Tooltip</td><td>DataPoint.XValue</td></tr><tr><td>#XCAT</td><td>Series Items Label, Tooltip</td><td>DataPoint.XCategory</td></tr><tr><td>#HIGH</td><td>Series Items Label, Tooltip</td><td>DataPoint.High</td></tr><tr><td>#LOW</td><td>Series Items Label, Tooltip</td><td>DataPoint.Low</td></tr><tr><td>#OPEN</td><td>Series Items Label, Tooltip</td><td>DataPoint.Open</td></tr><tr><td>#CLOSE</td><td>Series Items Label, Tooltip</td><td>DataPoint.Close</td></tr><tr><td>#BUBBLESIZE</td><td>Series Items Label, Tooltip</td><td>DataPoint.BubbleSize</td></tr><tr><td>#LABEL</td><td>Series Items Label, Tooltip</td><td>DataPoint.Label</td></tr><tr><td>#LEGENDLABEL</td><td>Series Items Label, Tooltip</td><td>DataPoint.LegendLabel</td></tr><tr><td>#TOOLTIP</td><td>Series Items Label, Tooltip</td><td>DataPoint.Tooltip</td></tr><tr><td>#SERIESLABEL</td><td>Series Items Label, Tooltip</td><td>DataSeries.LegendLabel</td></tr><tr><td>#%</td><td>Series Items Label, Tooltip</td><td>DataPoint.YValue / (The sum of all YValues in the current data series)</td></tr><tr><td>#STSUM</td><td>Series Items Label, Tooltip</td><td>Represents the sum of all stacked items for a given index.</td></tr><tr><td>#STPERCENT</td><td>Series Items Label, Tooltip</td><td>The percent representation of the value of a given item with respect to all stacked items for the respective index.</td></tr><tr><td>#DATAITEM.<PropertyName></td><td>Series Items Label, Tooltip</td><td>Use it to access the DataPoint.DataItem and read the value from a property of the underlying business object.</td></tr><tr><td>#VAL</td><td>X-Axis, Y-Axis</td><td>TickPoint.Value. This will work only when formatting axis labels.</td></tr></table>
+
+|Token|    Use for|    Value|
+|-----|-----------|---------|
+|#Y|    Series Items Label, Tooltip    |DataPoint.YValue|
+|#X|    Series Items Label, Tooltip    |DataPoint.XValue|
+|#XCAT|    Series Items Label, Tooltip     |DataPoint.XCategory|
+|#HIGH|     Series Items Label, Tooltip     |DataPoint.High|
+|#LOW|    Series Items Label, Tooltip    |DataPoint.Low|
+|#OPEN|    Series Items Label, Tooltip    |DataPoint.Open|
+|#CLOSE|    Series Items Label, Tooltip    |DataPoint.Close|
+|#BUBBLESIZE|    Series Items Label, Tooltip    |DataPoint.BubbleSize|
+|#LABEL|     Series Items Label, Tooltip    |DataPoint.Label|
+|#LEGENDLABEL|     Series Items Label, Tooltip    |DataPoint.LegendLabel|
+|#TOOLTIP|     Series Items Label, Tooltip    |DataPoint.Tooltip|
+|#SERIESLABEL|    Series Items Label, Tooltip     |DataSeries.LegendLabel|
+|#%|    Series Items Label, Tooltip    |DataPoint.YValue / (The sum of all YValues in the current data series)|
+|#STSUM|    Series Items Label, Tooltip	|Represents the sum of all stacked items for a given index.|
+|#STPERCENT|     Series Items Label, Tooltip     |The percent representation of the value of a given item with respect to all stacked items for the respective index.|
+|#DATAITEM.|     Series Items Label, Tooltip     |Use it to access the DataPoint.DataItem and read the value from a property of the underlying business object.|
+|#VAL|     X-Axis, Y-Axis     |TickPoint.Value. This will work only when formatting axis labels.|
+
 
 As you can see, each token consists of two parts: __number sign "#"__ and __name__. Additionally, in a curly braces, you can specify the format of the value if needed.
 
@@ -178,8 +198,6 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 	End Class
 	{{endregion}}
 
-
-
 Take a look at the code snippet below and see how to define custom label format strings for your __RadChart__.
 
 #### __XAML__
@@ -242,8 +260,6 @@ Take a look at the code snippet below and see how to define custom label format 
 	radChart.SeriesMappings.Add( seriesMapping );
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-features-format-expressions_4}}
@@ -263,8 +279,6 @@ Take a look at the code snippet below and see how to define custom label format 
 	radChart.SeriesMappings.Add(seriesMapping)
 	{{endregion}}
 
-
-
 The specified label formats are:
 
 * The __X-Axis__ format is set to "__dd-MMM__". It does not use any tokens, just the standard __DateTime__ formatting to show the day and the three letter abbreviation of the month.
@@ -273,28 +287,29 @@ The specified label formats are:
 
 * The series item labels are showing the value from the __DataPoint.Close__ property formatted as currency: "__#Y{C2}__".
 
-* The tooltip is formatted to show two rows. On the first row, the __High__and the __Low__values are shown, while on the second - the volume. When the format string is set declaratively, you have to use "&#x0a;" for new line. When it is set in the code behind - "\n":
+* The tooltip is formatted to show two rows. On the first row, the __High__ and the __Low__ values are shown, while on the second - the volume. When the format string is set declaratively, you have to use "&#x0a;" for new line. When it is set in the code behind - "\n":
 
 * "__High/Low: #DATAITEM.High{C4}/#DATAITEM.Low{C4}&#x0a;Volume: #DATAITEM.Volume{#,###,###,##0}"__
 
 * "__High/Low: #DATAITEM.High{C4}/#DATAITEM.Low{C4}\nVolume: #DATAITEM.Volume{#,###,###,##0}"__
 
-The result is shown on the image below. Note that the __YValue__is bound to the __Close__ property of the underlying business object, while the tooltip using the __#DATAITEM__ token extracts the values from from the __High__, __Low__and __Volume__ properties and then applies the specified format:
-
-
-
-
-         
+The result is shown on the image below. Note that the __YValue__ is bound to the __Close__ property of the underlying business object, while the tooltip using the __#DATAITEM__ token extracts the values from from the __High__, __Low__ and __Volume__ properties and then applies the specified format:
+ 
       ![](images/RadChart_Features_FormatExpressions_010.png)
 
->
-
-The __#TOOLTIP__ token is intended to be used when formatting items labels via __ItemLabelFormat__. This token returns the value from the __DataPoint.Tooltip__ property. More about tooltip formatting see [here]({%slug radchart-features-tooltips%}).
+>The __#TOOLTIP__ token is intended to be used when formatting items labels via __ItemLabelFormat__. This token returns the value from the __DataPoint.Tooltip__ property. More about tooltip formatting see [here]({%slug radchart-features-tooltips%}).
 
 On the table below you can see some more examples of format expressions:
 
+|Expression|	Result|
+|----------|----------|
+|C4|	1234.211|
+|#,##0.00|	1,234.21|
+|#VAL{C2}|	$1,234.21| 
+|Open: #OPEN{C2}|	Open: $1234.21|
+|#%{p}|	12.34%|
+|Volume: #DATAITEM.Volume{#,###,##0}|	Volume: 1,234,567|
 
-<table> <tr><td><b>Expression</b></td><td><b>Result</b></td></tr><tr><td>C4</td><td>1234.2110</td></tr><tr><td>#,##0.00</td><td>1,234.21</td></tr><tr><td>#VAL{C2}</td><td>$1234.21</td></tr><tr><td>Open: #OPEN{C2}</td><td>Open: $1234.21</td></tr><tr><td>#%{p}</td><td>12.34 %</td></tr><tr><td>Volume: #DATAITEM.Volume{#,###,##0}</td><td>Volume: 1,234,567</td></tr></table>
 
 
 

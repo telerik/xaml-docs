@@ -12,15 +12,12 @@ position: 3
 
 
 
-Plot Band Annotation is a stripe, crossing its corresponding axis,
-        specified by the __From__ and
-        __To__ properties.
+Plot Band Annotation is a stripe, crossing its corresponding axis, specified by the __From__ and __To__ properties.
       
 
 ## Cartesian PlotBand Annotation
 
-Cartesian PlotBand annotation is either a horizontal or a vertical stripe that crosses
-          from start to end the vertical or the horizontal axis respectively.
+Cartesian PlotBand annotation is either a horizontal or a vertical stripe that crosses from start to end the vertical or the horizontal axis respectively.
         
 
 Here is what __CartesianPlotBandAnnotation__ looks like:
@@ -56,8 +53,7 @@ Here is what __PolarAxisPlotBandAnnotation__ looks like:
 Radial Axis PlotBand annotations represent visually a sector of the circle (pie slice).
         
 
-A plotband starting from *180* degrees and ending in
-          *270* degrees will look like this:
+A plotband starting from *180* degrees and ending in *270* degrees will look like this:
         
 
 #### __XAML__
@@ -68,9 +64,7 @@ A plotband starting from *180* degrees and ending in
 
 ![](images/RadChartView-annotations-polar-plotband-180-270.png)
 
-If you wonder how to annotate the bigger segment from the image above, then you
-          should switch the __From__ and __To__ 
-          values. Voilà:
+If you wonder how to annotate the bigger segment from the image above, then you should switch the __From__ and __To__ values.
         
 
 #### __XAML__
@@ -97,47 +91,32 @@ Common:
 Cartesian:
         
 
-* __Axis__The Cartesian PlotBand annotation needs to be associated with horizontal or vertical axis explicitly.
+* __Axis__ The Cartesian PlotBand annotation needs to be associated with horizontal or vertical axis explicitly.
             
 
-* __From__ (of type object)
-            The starting point for the plot band.
-            *When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and when it is a CategoricalAxis - a category.
+* __From__ (of type object) The starting point for the plot band. When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and when it is a CategoricalAxis - a category.
             
 
-* __To__ (of type object)
-            The ending point for the plot band.
-            *When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and when it is a CategoricalAxis - a category.
+* __To__ (of type object) The ending point for the plot band.*When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and when it is a CategoricalAxis - a category.
             
 
-* __Label__The string, defining the label.
+* __Label__ The string, defining the label.
             
 
-* __LabelDefinition__Defines the position of the annotation label, check the
-              [Annotation Labels]({%slug radchartview-annotations-labels%})
-              help topic for more details.
+* __LabelDefinition__ Defines the position of the annotation label, check the [Annotation Labels]({%slug radchartview-annotations-labels%}) help topic for more details.
             
 
 Polar:
         
 
-* __From__ (of type double)
-            The starting point for the plot band.
-            __To__ (of type double)
-            The ending point for the plot band.
+* __From__ (of type double) The starting point for the plot band. __To__ (of type double) The ending point for the plot band.
             
 
 Radial:
         
 
-* __From__ (of type object)
-            The starting point for the plot band.
-            *When the radial axis is NumericRadialAxis a numeric value is expected and when it is a CategoricalRadialAxis - a category.
+* __From__ (of type object) The starting point for the plot band. When the radial axis is NumericRadialAxis a numeric value is expected and when it is a CategoricalRadialAxis - a category.
             
 
-* __To__ (of type object)
-            The ending point for the plot band.
-            *When the radial axis is NumericRadialAxis a numeric value is expected and when it is a CategoricalRadialAxis - a category.
+* __To__ (of type object) The ending point for the plot band. When the radial axis is NumericRadialAxis a numeric value is expected and when it is a CategoricalRadialAxis - a category.
             
-
-# See Also

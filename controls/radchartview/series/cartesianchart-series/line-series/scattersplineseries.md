@@ -18,8 +18,8 @@ This series is visualized on the screen as a smooth line connecting all __DataPo
 ## Declaratively defined series
 
 You can use the following definition to display a simple ScatterSplineSeries
-
-	
+#### XAML
+	{{region radchartview-scattersplineseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:LinearAxis/>
@@ -41,7 +41,7 @@ You can use the following definition to display a simple ScatterSplineSeries
                 </telerik:ScatterSplineSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-scattersplineseries](images/radchartview-series-scattersplineseries.png)
 
 # See Also

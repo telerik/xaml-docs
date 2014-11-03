@@ -65,7 +65,7 @@ Two lines of code are important here:
 
 There are two things you should do in order to use __RadScheduleView__ control:
 
-1. First is to set a __ViewDefinition__to the __RadScheduleView__ control.
+1. First is to set a __ViewDefinition__ to the __RadScheduleView__ control.
 
 1. Second is to set a collection of Appointments for __AppointmentsSource__.
 

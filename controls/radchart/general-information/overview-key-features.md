@@ -10,15 +10,7 @@ position: 0
 
 # Key Features
 
-
-
-## ____
-
-
-
-
-         
-      ![](images/RadChart_KeyFeatures_1.png)
+![](images/RadChart_KeyFeatures_1.png)
 
 __RadChart__ key features:
 
@@ -32,7 +24,7 @@ __RadChart__ key features:
 To support new data binding scenarios, Telerik RadChart provides automated data binding to Nested Collections. 
 
 
-* __Tooltip support -__Telerik Chart allows adding tooltips to your charts for better visualization of your data. The tooltips can easily show the actual numbers behind the chart or even another chart. [Read more]({%slug radchart-features-tooltips%})
+* __Tooltip support__ - Telerik Chart allows adding tooltips to your charts for better visualization of your data. The tooltips can easily show the actual numbers behind the chart or even another chart. [Read more]({%slug radchart-features-tooltips%})
 
 * __Completely Stylable and Templatable__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart is a 100% lookless control providing full support for Expression Blend.  All 2D series, charts and axis elements can be dropped independently in Blend and styled individually. Furthermore the control ships with several pre-defined skins, which will help you, deliver a consistent look and feel in your application. Restyling RadChart with the available themes is as simple as changing a single property. 
 The added custom style properties for all major chart elements and all series facilitate using custom user styles. See [Styling and Appearance]({%slug radchart-styling-and-appearance-overview%}) and [Templating](13DD5D60-0C6A-4ABE-B72F-27A3F1E14807). 
@@ -47,7 +39,7 @@ The added custom style properties for all major chart elements and all series fa
 
 * __MVVM Support__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart can be integrated with the Model-View-ViewModel (MVVM) pattern to get better control over chart customization. The control exposes fully separated functionality from appearance, thus providing you the power to completely restyle it without changing a single line of code. [See an example](http://demos.telerik.com/silverlight/default.aspx#Chart/MVVM)
 
-* __Advanced X Axis Capabilities -__ to make the horizontal axis more intelligent and to improve the way horizontal axis handles user data, several new features are introduced: 
+* __Advanced X Axis Capabilities__ - to make the horizontal axis more intelligent and to improve the way horizontal axis handles user data, several new features are introduced: 
 
 
 * __Ticks Distance__ - allows you to provide your own custom interval for tick marks. 
@@ -61,7 +53,7 @@ The added custom style properties for all major chart elements and all series fa
 with LabelStep=2 will look like
 1………..3……….5……….7……….9
 
-* __Strict Mode for X Axis__ -Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart features a so-called "strict mode" for bar series. All XValues will be respected and bars will be positioned according to their XValues. If, however, you don't have any series items with XValues then RadChart will resume standard sequential ordering of each item. The following supporting features are available: 
+* __Strict Mode for X Axis__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart features a so-called "strict mode" for bar series. All XValues will be respected and bars will be positioned according to their XValues. If, however, you don't have any series items with XValues then RadChart will resume standard sequential ordering of each item. The following supporting features are available: 
 
 
 * __Automatic range calculation__ - given in "strict" mode, the horizontal axis is able to calculate its MinValue and MaxValue such as no data is left behind. 
@@ -79,12 +71,10 @@ the information is presented clearly and neatly.
 * __Multiple Y Axes__ - this feature allows you to present series of different scale on the same chart. The scale of each added Y axis corresponds to the associated data series and auto adjusts its range. 
 
 
-* __Negative values__- __RadChart__provides full negative values support for all relevant two-dimensional series types.
+* __Negative values__ - __RadChart__ provides full negative values support for all relevant two-dimensional series types.
 
 
-
-* __Easily Customizable Series__- with Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart you can easily change the appearance of series: for example you can make the Bar series use Button controls to visualize data with a very simple change or just use the MVVM model and change the color of each bar.____
-
+* __Easily Customizable Series__- with Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart you can easily change the appearance of series: for example you can make the Bar series use Button controls to visualize data with a very simple change or just use the MVVM model and change the color of each bar.
 
 
 * __Chart Extending__ - __RadChart__ supports extensibility mechanism for the creation of custom chart extensions (tools) via the [Extensible Object Pattern](http://msdn.microsoft.com/en-us/library/ms733816.aspx). This pattern enables an object to participate in custom behavior, such as registering for events, or watching state transitions. 

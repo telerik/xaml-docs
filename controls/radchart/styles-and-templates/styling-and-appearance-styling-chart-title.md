@@ -12,7 +12,7 @@ position: 2
 
 
 
-The __RadChart Title__can be styled by creating an appropriate __Style__ and setting it to the __TitleStyle__ property of the __RadChart__. 
+The __RadChart Title__ can be styled by creating an appropriate __Style__ and setting it to the __TitleStyle__ property of the __RadChart__. 
 
 You have two options:
 
@@ -24,9 +24,7 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Style
 
->
-
-The __ChartTitle__control is located in the __Telerik.Windows.Controls.Charting__namespace of the __Telerik.Windows.Controls.Charting__assembly. In order to use it you have to declare it in XAML:
+>The __ChartTitle__ control is located in the __Telerik.Windows.Controls.Charting__ namespace of the __Telerik.Windows.Controls.Charting__ assembly. In order to use it you have to declare it in XAML:
 
 #### __XAML__
 
@@ -38,17 +36,15 @@ The __ChartTitle__control is located in the __Telerik.Windows.Controls.Charting_
 
 When working in Expression Blend, the namespaces that are needed will be added automatically.
 
-Load your project in Expression Blend and open the User Control that holds the __RadChart__. You have to use a dummy control in order to get the default style. To create one find the __ChartTitle__control in the 'Assets' pane and draw one on the art board. In the 'Objects and Timeline' pane select the __ChartTitle,__you've drawn and from the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+Load your project in Expression Blend and open the User Control that holds the __RadChart__. You have to use a dummy control in order to get the default style. To create one find the __ChartTitle__ control in the 'Assets' pane and draw one on the art board. In the 'Objects and Timeline' pane select the __ChartTitle__, you've drawn and from the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __ChartTitle__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __ChartTitle__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __ChartTitle.__Their names indicate to which part of the __ChartTitle__appearance they are assigned.{% endif %}
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __ChartTitle__. Their names indicate to which part of the __ChartTitle__ appearance they are assigned.{% endif %}
 
-{% if site.site_name == 'Silverlight' %}
-
-__![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_01.png)__{% endif %}
+{% if site.site_name == 'Silverlight' %}![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_01.png){% endif %}
 
 * __ChartTitleBackground__ - a brush, that represents the background color of the __ChartTitle__.
 
@@ -70,7 +66,7 @@ __![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_01.png)__{% endif 
 
 * __ChartTitleStyle__ - the __Style__, applied to the __ChartTitle__ control.
 
-To apply the style to the real control, set it to the __TitleStyle__property of the __RadChart__.
+To apply the style to the real control, set it to the __TitleStyle__ property of the __RadChart__.
 
 #### __XAML__
 
@@ -81,27 +77,15 @@ To apply the style to the real control, set it to the __TitleStyle__property of 
 
 
 
->
-
-Don't forget to delete the dummy __ChartTitle__control, when you finish editing the style.{% if site.site_name == 'Silverlight' %}
+>Don't forget to delete the dummy __ChartTitle__ control, when you finish editing the style.{% if site.site_name == 'Silverlight' %}
 
 Here is an example of the described resources modified.{% endif %}{% if site.site_name == 'Silverlight' %}
-
-
-
-
-         
-      ![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
 And here is the snapshot of the result.{% endif %}{% if site.site_name == 'Silverlight' %}
+![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_03.png){% endif %}
 
-
-
-
-         
-      ![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_03.png){% endif %}
-
-Here is the final XAML for the __Style__after the modifications:
+Here is the final XAML for the __Style__ after the modifications:
 
 #### __XAML__
 

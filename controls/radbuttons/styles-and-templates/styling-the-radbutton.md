@@ -10,12 +10,9 @@ position: 3
 
 # Styling the RadButton
 
+The __RadButton__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 
-
-The __RadButton__can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
-
->tipBefore reading this topic, you might find it useful to get familiar with the
-      [template structure of the RadButton](B6227BAF-51F3-46F2-9E66-C07EB599A4E0#RadButton).
+>tipBefore reading this topic, you might find it useful to get familiar with the [template structure of the RadButton](B6227BAF-51F3-46F2-9E66-C07EB599A4E0#RadButton).
 
 You have two options:
 
@@ -27,25 +24,18 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Style
 
-To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadButton__. In the 'Objects and Timeline' pane select the __RadButton__you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadButton__. In the 'Objects and Timeline' pane select the __RadButton__ you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
 
 
-
-         
-      ![](images/Buttons_Button_CreateStyle.png)
+![](images/Buttons_Button_CreateStyle.png)
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __RadButton__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __RadButton__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadButton.__Their names indicate to which part of the __RadButton__appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
-
-
-
-
-         
-      ![](images/Buttons_Button_Resources.png){% endif %}
+{% if site.site_name == 'Silverlight' %}If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadButton.__ Their names indicate to which part of the __RadButton__ appearance they are assigned.{% endif %}
+{% if site.site_name == 'Silverlight' %}![](images/Buttons_Button_Resources.png){% endif %}
 
 * __ControlOuterBorder_Normal__ - a brush that represents the outer border color of the button, when it is in __Normal__ state.
 

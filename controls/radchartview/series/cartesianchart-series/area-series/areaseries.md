@@ -16,11 +16,10 @@ The AreaSeries behave like the LineSeries but it also allows the area between th
 
 ## Declaratively defined series
 
+ You can use the following definition to display a simple AreaSeries:        
 
-          You can use the following definition to display a simple AreaSeries:
-        
-
-	
+#### XAML
+{{region radchartview-areaseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -42,7 +41,7 @@ The AreaSeries behave like the LineSeries but it also allows the area between th
                 </telerik:AreaSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-areaseries](images/radchartview-series-areaseries.png)
 
 # See Also

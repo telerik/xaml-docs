@@ -18,7 +18,8 @@ This is a typical financial series that can be used to visualize the state of a 
 
 You can use the following definition to display a simple OhlcSeries
 
-	
+#### XAML
+	{{region radchartview-ohlcseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -38,7 +39,7 @@ You can use the following definition to display a simple OhlcSeries
                 </telerik:OhlcSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-ohlcseries](images/radchartview-series-ohlcseries.png)
 
 # See Also

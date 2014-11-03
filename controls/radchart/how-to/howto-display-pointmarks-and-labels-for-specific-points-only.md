@@ -17,12 +17,11 @@ position: 7
 This help article will show you how to show PointMarks and Labels for specific points of Line Chart due to some condition - on every fifth day (assuming that on XAxis you have days of the month displayed). 
 
 
-
 >To learn more about showing DateTime values on XAxis please read the [DateTime support]({%slug radchart-features-datetime-support%}) section.
 
 * Create a new class named __Data__, which implements the __INotifyPropertyChanged__ interface. It will be used as an __ItemsSource__ for the chart control. The class has three properties:
 
-__- Date__ - will be displayed on the X axis. 
+- __Date__ - will be displayed on the X axis. 
 
 - __YValue__ - will be displayed on the Y axis.
 
@@ -168,8 +167,6 @@ __- Date__ - will be displayed on the X axis.
 	   End Sub
 	End Class
 	{{endregion}}
-
-
 
 
 

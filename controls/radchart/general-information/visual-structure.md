@@ -16,12 +16,7 @@ This section defines terms and concepts used in the scope of __RadChart__ you ha
 
 ## Default layout
 
-The structure of the __RadChart__ control is based on three major elements: [ChartTitle]({%slug radchart-features-chart-title%}), [ChartArea]({%slug radchart-features-chart-area%}) and [ChartLegend]({%slug radchart-features-chart-legend%}). These elements are common for all chart types. The illustration below shows the default chart layout and the positions of the chart’s elements:
-
-
-
-
-         
+The structure of the __RadChart__ control is based on three major elements: [ChartTitle]({%slug radchart-features-chart-title%}), [ChartArea]({%slug radchart-features-chart-area%}) and [ChartLegend]({%slug radchart-features-chart-legend%}). These elements are common for all chart types. The illustration below shows the default chart layout and the positions of the chart’s elements: 
       ![](images/RadChart_GeneralInformation_VisualStructure_01.png)
 
 ## Chart Title
@@ -30,18 +25,8 @@ Usually the __ChartTitle__ is used to display a simple text about the chart disp
 
 ## Chart Area
 
-The __ChartArea__ is where your graphics is drawn. Unlike the __ChartTitle__, __ChartArea__ consists of other elements:
-
-
-
-
-         
-      ![](images/RadChart_GeneralInformation_VisualStructure_02.png)
-
-
-
-
-         
+The __ChartArea__ is where your graphics is drawn. Unlike the __ChartTitle__, __ChartArea__ consists of other elements: 
+      ![](images/RadChart_GeneralInformation_VisualStructure_02.png) 
       ![](images/RadChart_GeneralInformation_VisualStructure_03.png)
 
 In most cases a chart area has the following structure:
@@ -56,15 +41,11 @@ In most cases a chart area has the following structure:
 
 * [Minor grid lines]({%slug radchart-features-axes-striplines-and-gridlines%}) - grid lines for the minor ticks. Valid for X-axis only.
 
-## Chart Legend
-
-
-
-
-         
-      ![](images/RadChart_GeneralInformation_VisualStructure_04.png)
+## Chart Legend 
 
 The __ChartLegend__ element contains a header, where explanation text is shown and a list of legend items - one for each data series displayed on a __ChartArea__ associated with the __ChartLegend__. [Read more]({%slug radchart-features-chart-legend%})
+
+ ![](images/RadChart_GeneralInformation_VisualStructure_04.png)
 
 # See Also
 

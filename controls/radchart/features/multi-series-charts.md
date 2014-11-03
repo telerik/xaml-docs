@@ -17,11 +17,7 @@ position: 6
 __RadChart__ provides support of multi-series charts. This is useful, when you want to display two or more charts bound to different data series on the same chart area. Usually these data series are semantically related and putting them together allows the user to compare the values easily.
 
 On the snapshot below, the Turnover is represented by line chart, while the Expenses - by bar chart. As you can see, it is much easier to compare both of the values visually.
-
-
-
-
-         
+ 
       ![](images/RadChart_Features_MultiseriesCharts_01.png)
 
 Here is the sample XAML source code used to create this chart declaratively:
@@ -71,8 +67,6 @@ Here is the sample XAML source code used to create this chart declaratively:
 	   </telerikCharting:DataSeries>
 	</telerikCharting:ChartArea.DataSeries>
 	{{endregion}}
-
-
 
 However, if you want to create this chart in the code-behind take a look at the [Creating Chart in Code Behind]({%slug radchart-populating-with-data-creating-chart-in-code-behind%}) topic. If you prefer to use data binding, take a look at the [Data Binding with Automatic Series Mappings]({%slug radchart-populating-with-data-data-binding-with-automatic-series-binding%}) topic and the [Data Binding with Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) topic. To learn how to create a chart with multiple chart areas read the [Data Binding to Many Chart Areas]({%slug radchart-populating-with-data-data-binding-to-many-chart-areas%}) topic.
 

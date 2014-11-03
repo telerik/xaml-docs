@@ -162,6 +162,12 @@ navigation:
     controls/radmenu/features:
         title: Features
         position: 6
+    controls/dragdropmanager/behaviors:
+        title: Behaviors
+        position: 6
+    controls/dragdropmanager/howto:
+        title: How To
+        position: 7
 ## X3 Controls End
 
 ## X2 Controls Start

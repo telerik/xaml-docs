@@ -14,8 +14,7 @@ position: 1
 
 ## Selection
 
-* __RadColorSelector__ has a __SelectedColor__ property, which is of type __Color__
-							and it is used to store selected color value.
+* __RadColorSelector__ has a __SelectedColor__ property, which is of type __Color__ and it is used to store selected color value.
 						
 
 #### __XAML__
@@ -45,58 +44,7 @@ where __telerik__ points to the following namespace:
 {{region colorselector-populating_0}}
 		Dim colorSelector As New RadColorSelector()
 		colorSelector.SelectedColor = Colors.Red
-	#End Region
-	#Region "colorselector-populating_2"
-		colorSelector.SelectedColorChanged += New EventHandler(colorSelector_SelectedColorChanged)
-	
-		Private Sub colorSelector_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Dim selector As RadColorSelector = TryCast(sender, RadColorSelector)
-			Dim selectedColor As Color = selector.SelectedColor
-		End Sub
-	#End Region
-	#Region "colorselector-populating_3"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.MainPalette = ColorPreset.Grayscale
-	#End Region
-	#Region "colorselector-populating_5"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPalette = ColorPreset.Office
-	#End Region
-	#Region "colorselector-populating_7"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPalette = ColorPreset.Standard
-	#End Region
-	#Region "colorselector-populating_9"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPaletteVisibility = Visibility.Visible
-		Dim colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		_colorSelector.StandardPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_11"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPaletteVisibility = Visibility.Visible
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.HeaderPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_13"
-		Dim colorSelector As New RadColorSelector()
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.MainPaletteItemsSource = _colors
-	#End Region
-	
-	
-	End Class
-
-
+	{{endregion}}
 
 * Whenever a color is selected the __SelectedColorChanged__ event is raised:
 						
@@ -124,56 +72,10 @@ where __telerik__ points to the following namespace:
 			Dim selector As RadColorSelector = TryCast(sender, RadColorSelector)
 			Dim selectedColor As Color = selector.SelectedColor
 		End Sub
-	#End Region
-	#Region "colorselector-populating_3"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.MainPalette = ColorPreset.Grayscale
-	#End Region
-	#Region "colorselector-populating_5"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPalette = ColorPreset.Office
-	#End Region
-	#Region "colorselector-populating_7"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPalette = ColorPreset.Standard
-	#End Region
-	#Region "colorselector-populating_9"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPaletteVisibility = Visibility.Visible
-		Dim colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		_colorSelector.StandardPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_11"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPaletteVisibility = Visibility.Visible
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.HeaderPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_13"
-		Dim colorSelector As New RadColorSelector()
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.MainPaletteItemsSource = _colors
-	#End Region
-	
-	
-	End Class
-
-
-
+	{{endregion}}
 ## Populating
 
-You can populate the __RadColorSelector__ with any of the built-in palettes using the __ColorPreset__
-					enumeration. It has __HeaderPalette__, __MainPalette__ and __StandardPalette__
-					properties, which represent the corresponding parts of the selector.
+You can populate the __RadColorSelector__ with any of the built-in palettes using the __ColorPreset__ enumeration. It has __HeaderPalette__, __MainPalette__ and __StandardPalette__ properties, which represent the corresponding parts of the selector.
 				
 
 * __MainPalette__ property:
@@ -201,45 +103,7 @@ You can populate the __RadColorSelector__ with any of the built-in palettes usin
 {{region colorselector-populating_3}}
 		Dim colorSelector As New RadColorSelector()
 		colorSelector.MainPalette = ColorPreset.Grayscale
-	#End Region
-	#Region "colorselector-populating_5"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPalette = ColorPreset.Office
-	#End Region
-	#Region "colorselector-populating_7"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPalette = ColorPreset.Standard
-	#End Region
-	#Region "colorselector-populating_9"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPaletteVisibility = Visibility.Visible
-		Dim colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		_colorSelector.StandardPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_11"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPaletteVisibility = Visibility.Visible
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.HeaderPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_13"
-		Dim colorSelector As New RadColorSelector()
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.MainPaletteItemsSource = _colors
-	#End Region
-	
-	
-	End Class
-
+	{{endregion}}
 
 
 * __HeaderPalette__ property:
@@ -267,41 +131,7 @@ You can populate the __RadColorSelector__ with any of the built-in palettes usin
 {{region colorselector-populating_5}}
 		Dim colorSelector As New RadColorSelector()
 		colorSelector.HeaderPalette = ColorPreset.Office
-	#End Region
-	#Region "colorselector-populating_7"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPalette = ColorPreset.Standard
-	#End Region
-	#Region "colorselector-populating_9"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPaletteVisibility = Visibility.Visible
-		Dim colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		_colorSelector.StandardPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_11"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPaletteVisibility = Visibility.Visible
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.HeaderPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_13"
-		Dim colorSelector As New RadColorSelector()
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.MainPaletteItemsSource = _colors
-	#End Region
-	
-	
-	End Class
-
+	{{endregion}}
 
 
 * __StandardPalette__ property:
@@ -329,41 +159,10 @@ You can populate the __RadColorSelector__ with any of the built-in palettes usin
 {{region colorselector-populating_7}}
 		Dim colorSelector As New RadColorSelector()
 		colorSelector.StandardPalette = ColorPreset.Standard
-	#End Region
-	#Region "colorselector-populating_9"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPaletteVisibility = Visibility.Visible
-		Dim colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		_colorSelector.StandardPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_11"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPaletteVisibility = Visibility.Visible
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.HeaderPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_13"
-		Dim colorSelector As New RadColorSelector()
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.MainPaletteItemsSource = _colors
-	#End Region
-	
-	
-	End Class
+	{{endregion}}
 
 
-
-* If you prefer to use your own collection of __Colors__ you can always use __HeaderPaletteItemsSource__,
-							__MainPaletteItemsSource__ and __StandardPaletteItemsSource__.
+* If you prefer to use your own collection of __Colors__ you can always use __HeaderPaletteItemsSource__, __MainPaletteItemsSource__ and __StandardPaletteItemsSource__.
 						
 
 * __StandardPaletteItemSource__ property
@@ -401,28 +200,7 @@ You can populate the __RadColorSelector__ with any of the built-in palettes usin
 		_colors.Add(Colors.Green)
 		_colors.Add(Colors.Blue)
 		_colorSelector.StandardPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_11"
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPaletteVisibility = Visibility.Visible
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.HeaderPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_13"
-		Dim colorSelector As New RadColorSelector()
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.MainPaletteItemsSource = _colors
-	#End Region
-	
-	
-	End Class
-
+	{{endregion}}
 
 
 * __HeaderPaletteItemSource__ property
@@ -460,18 +238,7 @@ You can populate the __RadColorSelector__ with any of the built-in palettes usin
 		_colors.Add(Colors.Green)
 		_colors.Add(Colors.Blue)
 		colorSelector.HeaderPaletteItemsSource = _colors
-	#End Region
-	#Region "colorselector-populating_13"
-		Dim colorSelector As New RadColorSelector()
-		Dim _colors As New Collection(Of Color)()
-		_colors.Add(Colors.Red)
-		_colors.Add(Colors.Green)
-		_colors.Add(Colors.Blue)
-		colorSelector.MainPaletteItemsSource = _colors
-	#End Region
-	
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -508,9 +275,4 @@ You can populate the __RadColorSelector__ with any of the built-in palettes usin
 		_colors.Add(Colors.Green)
 		_colors.Add(Colors.Blue)
 		colorSelector.MainPaletteItemsSource = _colors
-	#End Region
-	
-	
-	End Class
-
-
+	{{endregion}}

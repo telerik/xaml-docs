@@ -14,9 +14,7 @@ position: 1
 
 ## 
 
-This section defines terms and concepts used in the scope of __RadColorPicker__you have to get 
-        familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe
-        your issue better.{% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}
+This section defines terms and concepts used in the scope of __RadColorPicker__you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better.{% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}
 
 * __Split Button__
 

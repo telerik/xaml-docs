@@ -16,10 +16,12 @@ This article will show you how to use the __RadColorPicker__ in MVVM scenarios. 
 	  
 
 The final result will look like this:
-	  ![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
+
+
+ ![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
 
 ## 
-		Prepare the MainViewModel
+Prepare the MainViewModel
 	  
 
 For the purpose of this example we will create a __ColorModel__ class and three __ObservableCollections__ of ColorModel which will be named as follows: *StandardPaletteColors*, *MainPaletteColors* and *HeaderPaletteColors*. The __ColorModel__ class will expose a *CustomColor* property of type __Color__.
@@ -75,96 +77,7 @@ For the purpose of this example we will create a __ColorModel__ class and three 
 				End Set
 			End Property
 		End Class
-	#End Region
-	#Region "radcolorpicker-howto-binding-object_4"
-		Public Class MainViewModel
-			Inherits ViewModelBase
-	#Region "PrivateFilds"
-			Private m_mainPaletteColors As ObservableCollection(Of ColorModel)
-			Private m_headerPaletteColors As ObservableCollection(Of ColorModel)
-			Private m_standardPaletteColors As ObservableCollection(Of ColorModel)
-	#End Region
-	
-	#Region "Constructor"
-			Public Sub New()
-				m_mainPaletteColors = New ObservableCollection(Of ColorModel)()
-				m_headerPaletteColors = New ObservableCollection(Of ColorModel)()
-				m_standardPaletteColors = New ObservableCollection(Of ColorModel)()
-	
-				GenerateSampleData()
-			End Sub
-	#End Region
-	
-	#Region "GenerateSampleData"
-			Private Sub GenerateSampleData()
-				Dim rand As New Random()
-				For i As Integer = 0 To 49
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)))
-				 }
-					Me.m_mainPaletteColors.Add(color_1)
-				Next
-	
-				For i As Integer = 0 To 9
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)))
-				 }
-					Me.m_headerPaletteColors.Add(color_1)
-				Next
-	
-				For i As Integer = 0 To 9
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)))
-				 }
-					Me.m_standardPaletteColors.Add(color_1)
-				Next
-			End Sub
-	#End Region
-	
-	#Region "Properties"
-			Public Property MainPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_mainPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_mainPaletteColors <> value Then
-						Me.m_mainPaletteColors = value
-						Me.OnPropertyChanged("MainPaletteColors")
-					End If
-				End Set
-			End Property
-	
-			Public Property StandardPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_standartPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_standardPaletteColors <> value Then
-						Me.m_standardPaletteColors = value
-						Me.OnPropertyChanged("StandardPaletteColors")
-					End If
-				End Set
-			End Property
-	
-			Public Property HeaderPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_headerPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_headerPaletteColors <> value Then
-						Me.m_headerPaletteColors = value
-						Me.OnPropertyChanged("HeaderPaletteColors")
-					End If
-				End Set
-			End Property
-	#End Region
-		End Class
-	#End Region
-	#Region "radcolorpicker-howto-binding-object_6"
-		Me.DataContext = New MainViewModel()
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -176,10 +89,10 @@ Next we will define the __MainViewModel__ which will wrap and fill the collectio
 {{region radcolorpicker-howto-binding-object_3}}
 	public class MainViewModel : ViewModelBase
 	{
-		#region PrivateFilds
 		private ObservableCollection<ColorModel> mainPaletteColors;
 		private ObservableCollection<ColorModel> headerPaletteColors;
 		private ObservableCollection<ColorModel> standardPaletteColors;
+    }
 	{{endregion}}
 
 
@@ -189,92 +102,10 @@ Next we will define the __MainViewModel__ which will wrap and fill the collectio
 {{region radcolorpicker-howto-binding-object_4}}
 		Public Class MainViewModel
 			Inherits ViewModelBase
-	#Region "PrivateFilds"
 			Private m_mainPaletteColors As ObservableCollection(Of ColorModel)
 			Private m_headerPaletteColors As ObservableCollection(Of ColorModel)
 			Private m_standardPaletteColors As ObservableCollection(Of ColorModel)
-	#End Region
-	
-	#Region "Constructor"
-			Public Sub New()
-				m_mainPaletteColors = New ObservableCollection(Of ColorModel)()
-				m_headerPaletteColors = New ObservableCollection(Of ColorModel)()
-				m_standardPaletteColors = New ObservableCollection(Of ColorModel)()
-	
-				GenerateSampleData()
-			End Sub
-	#End Region
-	
-	#Region "GenerateSampleData"
-			Private Sub GenerateSampleData()
-				Dim rand As New Random()
-				For i As Integer = 0 To 49
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)))
-				 }
-					Me.m_mainPaletteColors.Add(color_1)
-				Next
-	
-				For i As Integer = 0 To 9
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)))
-				 }
-					Me.m_headerPaletteColors.Add(color_1)
-				Next
-	
-				For i As Integer = 0 To 9
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)))
-				 }
-					Me.m_standardPaletteColors.Add(color_1)
-				Next
-			End Sub
-	#End Region
-	
-	#Region "Properties"
-			Public Property MainPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_mainPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_mainPaletteColors <> value Then
-						Me.m_mainPaletteColors = value
-						Me.OnPropertyChanged("MainPaletteColors")
-					End If
-				End Set
-			End Property
-	
-			Public Property StandardPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_standartPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_standardPaletteColors <> value Then
-						Me.m_standardPaletteColors = value
-						Me.OnPropertyChanged("StandardPaletteColors")
-					End If
-				End Set
-			End Property
-	
-			Public Property HeaderPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_headerPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_headerPaletteColors <> value Then
-						Me.m_headerPaletteColors = value
-						Me.OnPropertyChanged("HeaderPaletteColors")
-					End If
-				End Set
-			End Property
-	#End Region
-		End Class
-	#End Region
-	#Region "radcolorpicker-howto-binding-object_6"
-		Me.DataContext = New MainViewModel()
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 
 
@@ -292,17 +123,12 @@ Then we can set this model as __DataContext__ of the __RadColorPicker__. Go in y
 
 {{region radcolorpicker-howto-binding-object_6}}
 		Me.DataContext = New MainViewModel()
-	#End Region
-	
-	End Class
-
-
+	{{endregion}}
 
 After this is done we can prepare the View of our application.
 		
 
-## 
-		Prepare the View
+## Prepare the View
 	  
 
 We will use customized __Path__ to visualize the different colors. In order to do this we will define a custom __DataTemplate__ as the __PaletteItemsTemplate__ property of the __RadColorPicker__. Also, we will bind our collections (defined in the MainViewModel) to each of the following properties of the control: __HeaderPaletteItemsSource__, __MainPaletteItemsSource__ and __StandardPaletteItemsSource__.
@@ -346,6 +172,7 @@ These steps can be implemented with the following code:
 		  
 
 The final result should be similar to the following one:
+
 		![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
 
 # See Also

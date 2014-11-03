@@ -18,7 +18,8 @@ The ScatterSplineAreaSeries behave like the ScatterSplineSeries but it also allo
 
 You can use the following definition to display a simple ScatterSplineAreaSeries:
 
-	
+#### XAML
+	{{region radchartview-scattersplineareaseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:LinearAxis />
@@ -40,7 +41,7 @@ You can use the following definition to display a simple ScatterSplineAreaSeries
                 </telerik:ScatterSplineAreaSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-scattersplineareaseries](images/radchartview-series-scattersplineareaseries.png)
 
 # See Also

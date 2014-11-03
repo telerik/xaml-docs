@@ -16,9 +16,9 @@ position: 2
 
 In order to improve the readiness of the chart you may want to add a grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes for better readability. Depending on the chart that you use (RadCartesianChart or RadPolarChart) there are two types CartesianChartGrid and PolarChartGrid that you can play with to add a decoration over the plot area.
 
-* [CartesianChartGrid](#CartesianChartGrid)
+* CartesianChartGrid
 
-* [PolarChartGrid](#PolarChartGrid)CartesianChartGrid__CartesianChartGrid__ supports __MajorLinesVisibility__ and __StripLinesVisibility__ properties.
+* #PolarChartGrid
       Both properties can be set to XY, X , Y or None (the default one). For example the following code snippet demonstrates how the line chart will look like with its MajorLinesVisibility set to XY:
       
 
@@ -56,11 +56,7 @@ To enable striplines you should set some brushes. There is no limitation for the
 
 ![](images/RadChartView-chart_stripes.PNG)PolarChartGrid
 
-__PolarChartGrid__ supports __GridLineVisibility__ and __StripesVisibility.__
-                Both properties can be set to Radial and/or Polar axis and to None of them.
-                The GridLines have default color and you may see them by simply choose one of the GridLineVisibility values.
-                Stripes on the other side need color to be displayed i.e. you should set some brushes.
-                Similar to the Striplines of RadCartesianGrid, there is no limitation for the number or type of brushes you may use. Here's an example:
+__PolarChartGrid__ supports __GridLineVisibility__ and __StripesVisibility.__ Both properties can be set to Radial and/or Polar axis and to None of them. The GridLines have default color and you may see them by simply choose one of the GridLineVisibility values. Stripes on the other side need color to be displayed i.e. you should set some brushes. Similar to the Striplines of RadCartesianGrid, there is no limitation for the number or type of brushes you may use. Here's an example:
               
 
 #### __XAML__

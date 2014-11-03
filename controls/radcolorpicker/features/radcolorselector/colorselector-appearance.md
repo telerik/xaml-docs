@@ -14,12 +14,10 @@ position: 2
 
 ## 
 
-You can customize the appearance of a RadColorSelector by choosing which of
-					the parts to be visible.
+You can customize the appearance of a RadColorSelector by choosing which of the parts to be visible.
 				
 
-1. You can set the __NoColorVisibility__property to __Visibility.Visible__to view the __NoColorField__,
-							otherwise you should set it to false:
+1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__, otherwise you should set it to false:
 						
 
 #### __XAML__
@@ -46,42 +44,11 @@ You can customize the appearance of a RadColorSelector by choosing which of
 		Dim selector As New RadColorSelector()
 		selector.NoColorVisibility = Visibility.Visible
 		' selector.NoColorVisibility= Visibility.Collapsed
-	#End Region
-	
-	#Region "colorselector-appearance_2"
-		Dim selector As New RadColorSelector()
-		selector.StandardPaletteVisibility = Visibility.Visible
-		' selector.StandardPaletteVisibility = Visibility.Collapsed
-	#End Region
-	
-	#Region "colorselector-appearance_4"
-		Dim selector As New RadColorSelector()
-		selector.HeaderPaletteVisibility = Visibility.Visible
-		' selector.HeaderPaletteVisibility =Visibility.Collapsed
-	#End Region
-	
-	#Region "colorselector-appearance_6"
-		Dim selector As New RadColorSelector()
-		selector.StandardPaletteHeaderText = "header"
-	#End Region
-	
-	#Region "colorselector-appearance_8"
-		Dim selector As New RadColorSelector()
-		selector.MainPaletteHeaderText = "header"
-	#End Region
-	
-	#Region "colorselector-appearance_10"
-		Dim selector As New RadColorSelector()
-		selector.NoColorText = "No Color Text"
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 ![No Color Field](images/NoColorField.png)
 
-1. You can use __StandardPaletteVisibility__ and
-							__HeaderPaletteVisibility__ in order to set the visibility of the
-							corresponding palettes:
+1. You can use __StandardPaletteVisibility__ and __HeaderPaletteVisibility__ in order to set the visibility of the corresponding palettes:
 						
 
 * __StandardPaletteVisibility__
@@ -110,31 +77,7 @@ You can customize the appearance of a RadColorSelector by choosing which of
 		Dim selector As New RadColorSelector()
 		selector.StandardPaletteVisibility = Visibility.Visible
 		' selector.StandardPaletteVisibility = Visibility.Collapsed
-	#End Region
-	
-	#Region "colorselector-appearance_4"
-		Dim selector As New RadColorSelector()
-		selector.HeaderPaletteVisibility = Visibility.Visible
-		' selector.HeaderPaletteVisibility =Visibility.Collapsed
-	#End Region
-	
-	#Region "colorselector-appearance_6"
-		Dim selector As New RadColorSelector()
-		selector.StandardPaletteHeaderText = "header"
-	#End Region
-	
-	#Region "colorselector-appearance_8"
-		Dim selector As New RadColorSelector()
-		selector.MainPaletteHeaderText = "header"
-	#End Region
-	
-	#Region "colorselector-appearance_10"
-		Dim selector As New RadColorSelector()
-		selector.NoColorText = "No Color Text"
-	#End Region
-	
-	End Class
-
+	{{endregion}}
 
 
 * __HeaderPaletteVisibility__
@@ -163,28 +106,9 @@ You can customize the appearance of a RadColorSelector by choosing which of
 		Dim selector As New RadColorSelector()
 		selector.HeaderPaletteVisibility = Visibility.Visible
 		' selector.HeaderPaletteVisibility =Visibility.Collapsed
-	#End Region
-	
-	#Region "colorselector-appearance_6"
-		Dim selector As New RadColorSelector()
-		selector.StandardPaletteHeaderText = "header"
-	#End Region
-	
-	#Region "colorselector-appearance_8"
-		Dim selector As New RadColorSelector()
-		selector.MainPaletteHeaderText = "header"
-	#End Region
-	
-	#Region "colorselector-appearance_10"
-		Dim selector As New RadColorSelector()
-		selector.NoColorText = "No Color Text"
-	#End Region
-	
-	End Class
-
+	{{endregion}}
+    
 {% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}
 
-1. You can set different text for
-							__StandardPalette__ header text , __MainPalette__
-							header text and __NoColorText__.
+1. You can set different text for __StandardPalette__ header text , __MainPalette__ header text and __NoColorText__.
 						

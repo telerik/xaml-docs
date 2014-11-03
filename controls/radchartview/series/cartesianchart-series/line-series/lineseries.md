@@ -18,7 +18,8 @@ This series is visualized on the screen as a straight line connecting all __Data
 
 You can use the following definition to display a simple LineSeries
 
-	
+#### XAML
+{{region radchartview-lineseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -40,7 +41,7 @@ You can use the following definition to display a simple LineSeries
                 </telerik:LineSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-lineseries](images/radchartview-series-lineseries.png)
 
 # See Also

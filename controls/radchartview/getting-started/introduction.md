@@ -35,7 +35,7 @@ The task of this help article is to guide you on your way of creating a chart fr
 
 * __Telerik.Windows.Controls.Chart__
 
-* __Telerik.Windows.DataVisualization__You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}{% if site.site_name == 'WPF' %}
+* __Telerik.Windows.DataVisualization__ You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}{% if site.site_name == 'WPF' %}
 
 >In order to use __RadChartView__ in your projects you have to add references to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Chart__<br/>* __Telerik.Windows.DataVisualization__<br/>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}
 

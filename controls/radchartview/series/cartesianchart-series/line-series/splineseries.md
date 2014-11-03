@@ -18,8 +18,8 @@ This series is visualized on the screen as a smooth line connecting all __DataPo
 ## Declaratively defined series
 
 You can use the following definition to display a simple SplineSeries
-
-	
+#### XAML
+	{{region radchartview-series-splineseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -41,7 +41,7 @@ You can use the following definition to display a simple SplineSeries
                 </telerik:SplineSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-splineseries](images/radchartview-series-splineseries.png)
 
 # See Also

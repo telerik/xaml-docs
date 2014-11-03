@@ -12,8 +12,7 @@ position: 1
 
 
 
-Both RadCartesianChart and RadPolarChart contain an __Annotations__ collection 
-        which holds all the annotations plotted against the chart.
+Both RadCartesianChart and RadPolarChart contain an __Annotations__ collection which holds all the annotations plotted against the chart.
       
 
 >The RadChartView will visualize annotations only if it populated with data.
@@ -21,9 +20,7 @@ Both RadCartesianChart and RadPolarChart contain an __Annotations__ collection
 
 ## Adding Cartesian Annotations
 
-When adding GridLine or PlotBand annotations to RadCartesianChart, you have to explicitly set 
-          their __Axis__ property to either the vertical or the horizontal axis. That way the annotation
-          knows what its orientation is, and also, the exact coordinates on which it has to be rendered.
+When adding GridLine or PlotBand annotations to RadCartesianChart, you have to explicitly set their __Axis__ property to either the vertical or the horizontal axis. That way the annotation knows what its orientation is, and also, the exact coordinates on which it has to be rendered.
         
 
 #### __XAML__
@@ -92,10 +89,7 @@ When adding GridLine or PlotBand annotations to RadCartesianChart, you have to e
 
 ## Adding Polar Annotations
 
-When adding GridLine or PlotBand annotations to RadPolarChart, you do not need to set their 
-          axis association as it is implicitly resolved by their respective type. For example, 
-          PolarAxisGridLineAnnotation is implicitly associated with the polar axis, while 
-          RadialAxisPlotBandAnnotation is implicitly associated with the radial axis.
+When adding GridLine or PlotBand annotations to RadPolarChart, you do not need to set their axis association as it is implicitly resolved by their respective type. For example, PolarAxisGridLineAnnotation is implicitly associated with the polar axis, while RadialAxisPlotBandAnnotation is implicitly associated with the radial axis.
         
 
 #### __XAML__
@@ -152,6 +146,3 @@ When adding GridLine or PlotBand annotations to RadPolarChart, you do not need t
 	})
 	{{endregion}}
 
-
-
-# See Also

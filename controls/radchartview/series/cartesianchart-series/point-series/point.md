@@ -18,8 +18,8 @@ This series is visualized on the screen as separate points representing each of 
 ## Declaratively defined series
 
 You can use the following definition to display a simple PointSeries
-
-	
+#### XAML
+	{{region radchartview-pointseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -41,7 +41,7 @@ You can use the following definition to display a simple PointSeries
                 </telerik:PointSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-pointseries](images/radchartview-series-pointseries.png)
 
 # See Also

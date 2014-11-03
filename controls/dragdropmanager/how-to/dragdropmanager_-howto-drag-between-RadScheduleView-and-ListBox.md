@@ -10,10 +10,6 @@ position: 3
 
 # Drag between RadScheduleView and ListBox
 
-
-
-## 
-
 In this article we will describe how to enable dragging between ScheduleView and ListBox using DragDropManager infrastructure.
 Since RadScheduleView uses DragDropManager for its dragging operations, it enables dragging within the control and to external controls without additional code.
 We need to add the logic that will allow drag and drop from ListBox. 
@@ -30,25 +26,19 @@ Firstly, we define ListBox and bind it to sample data. We also allow dropping to
 	        </Style>
 	   </ListBox.Resources>
 	</ListBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_1}}
 	SampleListBox.ItemsSource = new ObservableCollection<Appointment>();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_2}}
 	SampleListBox.ItemsSource = New ObservableCollection(Of Appointment)()
-	{{endregion}}
-
-
+{{endregion}}
 
 Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handlers to initialize and perform the drag and drop process in the ListBox. We need DragDropCompleted to handle removing the items when item is dragged from ListBox. Also we use DragOver handler to disable drop over the ListBox when drag has started from the same LisBox:
 
@@ -102,9 +92,7 @@ Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handl
 	    }
 	    args.Handled = true;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -150,9 +138,7 @@ Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handl
 	 End If
 	 args.Handled = True
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally, we add a ScheduleView and bind it to a sample data:
 
@@ -164,9 +150,7 @@ Finally, we add a ScheduleView and bind it to a sample data:
 	         <telerik:MonthViewDefinition />
 	    </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -174,9 +158,7 @@ Finally, we add a ScheduleView and bind it to a sample data:
 	ScheduleView.AppointmentsSource = new ObservableCollection<Appointment>(
 	                from c in Enumerable.Range(0, 10)
 	                select new Appointment { Start = DateTime.Now.AddDays(c % 5), End = DateTime.Now.AddDays(c % 5).AddHours(2), Subject = "Event " + c });
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -186,14 +168,8 @@ Finally, we add a ScheduleView and bind it to a sample data:
 	 Key .[End] = DateTime.Now.AddDays(c Mod 5).AddHours(2), _
 	 Key .Subject = "Event " & Convert.ToString(c) _
 	})
-	{{endregion}}
-
-
+{{endregion}}
 
 The resultant application should look as follows:
 
-
-
-
-         
-      ![](images/DragDropManager_ScheduleViewToListBox.png)
+![](images/DragDropManager_ScheduleViewToListBox.png)

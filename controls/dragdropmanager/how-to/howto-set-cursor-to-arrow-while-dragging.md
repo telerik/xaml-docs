@@ -10,10 +10,6 @@ position: 1
 
 # Set Cursor to Arrow while Dragging
 
-
-
-## 
-
 The cursor displayed on dragging with DragDropManager is derived from the DragDropEffects set in DragInitialize event. However, you are free to override it and define it based on your specific requirements. For the purpose you may use the GiveFeedback event. 
 
 An example for such an implementation is illustrated below:
@@ -29,9 +25,7 @@ An example for such an implementation is illustrated below:
 	      args.SetCursor(Cursors.Arrow);
 	      args.Handled = true;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -41,8 +35,4 @@ An example for such an implementation is illustrated below:
 	   args.SetCursor(Cursors.Arrow)
 	   args.Handled = True
 	End Sub
-	{{endregion}}
-
-
-
-
+{{endregion}}

@@ -19,7 +19,6 @@ The following article describes the __ActiveSections__ property / feature of the
 Since Q2 2012 SP, __RadColorEditor__ provides __ActiveSections__ property of type __ActiveSectionTypes__ which is a flag enum with the following possible values:
         
 			
-
 * __SaturationValuePad [1]__
 
 * __HueSaturationPad [2]__
@@ -45,7 +44,7 @@ In XAML , just list your ActiveSections with comma, for example like so:
 		
 This code produces the following result:
 
-	![active Sections 2](images/activeSections2.png)
+![active Sections 2](images/activeSections2.png)
     
 In code behind you have to use the bitwise or:
 

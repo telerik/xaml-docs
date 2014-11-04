@@ -15,17 +15,14 @@ position: 0
 __RadDiagram__ gives you the ability to rotate shapes by dragging their __Rotation Thumb__ or by changing their __RotationAngle__ property.
 	  
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. The
-		  {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-		  article describes how to set the theme as an application theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. The {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article describes how to set the theme as an application theme.
 		
 
 ## Enable/Disable Rotation
 
-By default the __RadDiagram__ is enabled for rotation manipulation. In order to disable this functionality, you can set
-		  __IsRotationEnabled__ to __False__
+By default the __RadDiagram__ is enabled for rotation manipulation. In order to disable this functionality, you can set __IsRotationEnabled__ to __False__
 
-	
+	#### __XAML__
 		  <telerik:RadDiagram IsRotationEnabled="False">
 		  <telerik:RadDiagramShape
 		  Geometry="{telerik:CommonShape ShapeType=CloudShape}"
@@ -40,7 +37,7 @@ By default the __RadDiagram__ is enabled for rotation manipulation. In order to 
 You can rotate shapes by using their __RotationAngle__ property:
 		
 
-	
+	#### __XAML__
 		  <telerik:RadDiagram>
 		  <telerik:RadDiagramShape Geometry="{telerik:CommonShape ShapeType=CloudShape}"
 		  RotationAngle="45"

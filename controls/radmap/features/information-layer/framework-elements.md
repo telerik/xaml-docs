@@ -59,11 +59,7 @@ Here is an example of a __Border__ that holds a __TextBlock__ with some informat
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Features_FrameworkElement_01.png)
+\![](images/RadMap_Features_FrameworkElement_01.png)
 
 # See Also
 

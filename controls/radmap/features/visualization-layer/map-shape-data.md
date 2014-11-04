@@ -12,75 +12,41 @@ position: 3
 
 
 
-The previous visualization engine based on the InformationLayer class
-        provides you with a set of shape objects, which are specifically
-        designed to work with the RadMap:  MapEllipse, MapLine, MapPolygon,
-        MapPolyline, MapRectangle and MapPath. All these classes are combination
-        of the geographical data and visualization objects. This approach has
-        several problems. For example, it makes impossible to create map shapes
-        in a background thread and has limited support for input events.
+The previous visualization engine based on the InformationLayer class provides you with a set of shape objects, which are specifically designed to work with the RadMap:  MapEllipse, MapLine, MapPolygon, MapPolyline, MapRectangle and MapPath. All these classes are combination of the geographical data and visualization objects. This approach has several problems. For example, it makes impossible to create map shapes in a background thread and has limited support for input events.
       
 
-The visualization engine based on the VisualizationLayer class introduces a new
-        approach that separates the geographical data and its visualization. The new map
-        shape data classes are not dependency objects. This allows them to be created
-        in the background thread. The unified map shape visualization engine allows
-        attaching to any input event supported by the
-        [ContentPresenter](http://msdn.microsoft.com/en-us/library/system.windows.controls.contentpresenter.aspx)
-        class to the map shape visual presentation.
+The visualization engine based on the VisualizationLayer class introduces a new approach that separates the geographical data and its visualization. The new map shape data classes are not dependency objects. This allows them to be created in the background thread. The unified map shape visualization engine allows attaching to any input event supported by the [ContentPresenter](http://msdn.microsoft.com/en-us/library/system.windows.controls.contentpresenter.aspx) class to the map shape visual presentation.
       
 
 You will be able to find equivalents to most of the Shapes available in WPF/Silverlight.
       
 
->To learn more about the different ways of customizing the shape apperance, please check the
-          [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%}) topic.
+>To learn more about the different ways of customizing the shape apperance, please check the [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%}) topic.
         
 
-The map shape data can be used identically to their visual element counterparts.
-        This topic will focus briefly on showing you how to use the most
-        important of them:
+The map shape data can be used identically to their visual element counterparts. This topic will focus briefly on showing you how to use the most important of them:
       
 
 1. EllipseData
-          
-
 1. LineData
-          
-
 1. PathData
-          
-
 1. PolygonData
-          
-
 1. PolylineData
-          
-
 1. RectangleData
-          
 
 ## EllipseData
 
->In contrast with MapEllipse which is used with InformationLayer the Width and Height of the
-            EllipseData are given in the spatial reference units (degrees by default) instead of
-            current distance unit (mile or kilometer).
+>In contrast with MapEllipse which is used with InformationLayer the Width and Height of the EllipseData are given in the spatial reference units (degrees by default) instead of current distance unit (mile or kilometer).
           
 
-To use the EllipseData in your visualization layer you have to set the
-          following of its properties:
+To use the EllipseData in your visualization layer you have to set the following of its properties:
         
-
 * Location - represents the location on the map on which the ellipse will be displayed.
             
-
-* Width / Height - represent the width / height of the ellipse in spatial reference
-              units (degrees by default).
+* Width / Height - represent the width / height of the ellipse in spatial reference units (degrees by default).
             
-
 >Note that the top left corner coincides with the given location.
           
-
 Here it is an example:
         
 
@@ -151,10 +117,7 @@ Here it is an example:
 
 ## LineData
 
-The most important properties of the LineData class are the __Point1__
-          and __Point2__ properties, which are of type Location.
-          They define the start and the end points of the line.
-          Here is an example:
+The most important properties of the LineData class are the __Point1__ and __Point2__ properties, which are of type Location. They define the start and the end points of the line. Here is an example:
         
 
 #### __XAML__
@@ -218,8 +181,7 @@ The most important properties of the LineData class are the __Point1__
 
 ## PathData
 
-The PathData provides equivalents of the standard Geometry and Segment classes in WPF/Silverlight.
-          Here is an example that uses LineSegmentData:
+The PathData provides equivalents of the standard Geometry and Segment classes in WPF/Silverlight. Here is an example that uses LineSegmentData:
         
 
 #### __XAML__
@@ -370,8 +332,7 @@ The PathData provides equivalents of the standard Geometry and Segment classes i
 
 ## PolygonData
 
-The difference between the standard Polygon and the PolygonData is that the
-          Points property of the PolygonData is a set of Locations. Here is an example:
+The difference between the standard Polygon and the PolygonData is that the Points property of the PolygonData is a set of Locations. Here is an example:
         
 
 #### __XAML__
@@ -449,8 +410,7 @@ The difference between the standard Polygon and the PolygonData is that the
 
 ## PolylineData
 
-The difference between the standard Polyline and the PolylineData is that the Points
-          property of the PolylineData is a set of Locations. Here is an example:
+The difference between the standard Polyline and the PolylineData is that the Points property of the PolylineData is a set of Locations. Here is an example:
         
 
 #### __XAML__
@@ -525,20 +485,16 @@ The difference between the standard Polyline and the PolylineData is that the Po
 
 ## RectangleData
 
-To use the RectangleData in your visualization layer you have to set the
-          following properties:
+To use the RectangleData in your visualization layer you have to set the following properties:
         
 
 * Location - represents the location on the map, to which the ellipse is bound.
             
 
-* Width / Height - represent the width / height of the ellipse. Just like the
-              Width and Height properties of the EllipseData class, they are specified in
-              spatial reference units (degrees by default).
+* Width / Height - represent the width / height of the ellipse. Just like the Width and Height properties of the EllipseData class, they are specified in spatial reference units (degrees by default).
             
 
-* RadiusX / RadiusY - represent the radius of the rectangle corners. Measured in
-              spatial reference units.
+* RadiusX / RadiusY - represent the radius of the rectangle corners. Measured in spatial reference units.
             
 
 >Note that the top left corner coincides with the given location.
@@ -617,5 +573,3 @@ Here it is an example:
 	{{endregion}}
 
 ![radmap-visualization-layer-map-shape-data-rectangle](images/radmap-visualization-layer-map-shape-data-rectangle.png)
-
-# See Also

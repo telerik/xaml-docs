@@ -12,20 +12,16 @@ position: 6
 
 
 
-__RadDiagram__ gives you the ability to control the __Z-Order__ of shapes and connections by using their
-		__ZIndex__ property. You can also use __RadDiagramCommands__ in order to increase/decrease __ZIndex__ of the selected __RadDiagramItems__ simultaneously.
+__RadDiagram__ gives you the ability to control the __Z-Order__ of shapes and connections by using their __ZIndex__ property. You can also use __RadDiagramCommands__ in order to increase/decrease __ZIndex__ of the selected __RadDiagramItems__ simultaneously.
 	  
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-		  {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-		  article you can find more information on how to set an application-wide theme.
-		
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
 
 ## Using the ZIndex property
 
 Consider the following code:
 		
-
+#### __XAML__
 {{region raddiagrams-features-zorder-1}}
 	        <telerik:RadDiagram x:Name="diagram" Grid.Row="1">
 	            <telerik:RadDiagramShape x:Name="shape1" 
@@ -68,16 +64,14 @@ Consider the following code:
 	{{endregion}}
 
 
-
-We have reversed the natural ZOrder of the 3 Shapes. On the other hand, the connection on the right is on top of the shapes and connection on the left is below them:
-		![Rad Diagrams-Features-ZIndex](images/RadDiagrams-Features-ZIndex.png)
+We have reversed the natural ZOrder of the 3 Shapes. On the other hand, the connection on the right is on top of the shapes and connection on the left is below them: 
+![Rad Diagrams-Features-ZIndex](images/RadDiagrams-Features-ZIndex.png)
 
 ## Using the RadDiagram Commands
 
-__RadDiagram__ provides a set of predefined commands for manipulating the selected items' ZIndices. __"BringForward"__ and __"SendBackward"__ allow you to increase/decrease the Z-Indices of the selected RadDiagramItems.
-		  If you need to bring the selected item(s) on top of all other items or below them, you can use __"BringToFront"__ and __"SentToback"__:
+__RadDiagram__ provides a set of predefined commands for manipulating the selected items' ZIndices. __"BringForward"__ and __"SendBackward"__ allow you to increase/decrease the Z-Indices of the selected RadDiagramItems. If you need to bring the selected item(s) on top of all other items or below them, you can use __"BringToFront"__ and __"SentToback"__:
 		
-
+#### __XAML__
 {{region raddiagrams-features-zorder-0}}
 	    <Grid>
 	        <Grid.RowDefinitions>
@@ -138,12 +132,11 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 	{{endregion}}
 
 
-
-This way configured, the two buttons are ready to bring to front or sent to back the selected items of the __RadDiagram__:
-		![raddiagrams-features-zindex-bringup 1](images/raddiagrams-features-zindex-bringup1.png)
+This way configured, the two buttons are ready to bring to front or sent to back the selected items of the __RadDiagram__: 
+![raddiagrams-features-zindex-bringup 1](images/raddiagrams-features-zindex-bringup1.png)
 
 Here is the result of selecting the shape with ZIndex = 1 and clicking the left button:
-		![raddiagrams-features-zindex-bringup 2](images/raddiagrams-features-zindex-bringup2.png)
+![raddiagrams-features-zindex-bringup 2](images/raddiagrams-features-zindex-bringup2.png)
 
 # See Also
 

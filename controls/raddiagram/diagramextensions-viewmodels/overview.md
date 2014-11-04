@@ -24,7 +24,8 @@ This section provides information regarding these __ViewModels__. Below you can 
 		
 
 ItemViewModels Inheritance Model
-          ![raddiagram-data-itemviewmodels-hierarchy](images/raddiagram-data-itemviewmodels-hierarchy.png)
+
+![raddiagram-data-itemviewmodels-hierarchy](images/raddiagram-data-itemviewmodels-hierarchy.png)
 
 * [ItemViewModelBase]({%slug raddiagram-data-itemviewmodels%}) - a __ViewModel__ designed to describe a few common properties of the __RadDiagramItems__.
 			
@@ -41,7 +42,8 @@ ItemViewModels Inheritance Model
 * [HierarchicalNodeViewModel]({%slug raddiagram-data-hierarchicalnodeviewmodel%}) - a __ViewModel__ designed to describe a hierarchical __RadDiagramShape__.
 			
 
-GraphSource ViewModels Inheritance Model![raddiagram-data-graphsource-hierarchy](images/raddiagram-data-graphsource-hierarchy.png)
+GraphSource ViewModels Inheritance Model
+![raddiagram-data-graphsource-hierarchy](images/raddiagram-data-graphsource-hierarchy.png)
 
 * [GraphSourceBase]({%slug raddiagram-data-graphsourcebase%}) - a __ViewModel__ designed to describe a sample __GraphSource__ implementation. Please note that this GraphSource type doesn't support TwoWay binding operation. This means that it shouldn't be used in __RadDiagram__ that has to provide any drag, drop or clipboard operations.
 			

@@ -12,8 +12,7 @@ position: 10
 
 
 
-The __RadMap__ provides Graph Colorizer which sets filling to the Map shapes using the coloring of graph approach as its name implies. 
-        In short when any 2 shapes which have common border they will be colored differently.
+The __RadMap__ provides Graph Colorizer which sets filling to the Map shapes using the coloring of graph approach as its name implies. In short when any 2 shapes which have common border they will be colored differently.
 
 The Graph Colorizer has two major properties: __ShapeFillCollection__ and __HighlightFillCollection__. The ShapeFillCollection specifies a collection of the MapShapeFill instances for the shape fillings. This property is content property, so the shape fillings can be set in XAML directly as children of the GraphColorizer element. The HighlightFillCollection property specifies a collection of the MapShapeFill instances for the shapes highlighting.
 

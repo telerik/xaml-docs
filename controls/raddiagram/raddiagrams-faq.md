@@ -38,8 +38,7 @@ Having the above information in mind and considering the wide range of scenarios
 This is why __RadDiagram__ can articulate a wide variety of diagramming tasks but at the same time it does not focus on any type in particular. The graph layout and internal engine managing shapes and connections is not geared to anything in particular while there are definitely shortcuts possible if some knowledge (properties) of the to-be displayed data is known. That is, if your application is all about tree graphs and large hierarchies then there are ways in which the tree-layout code could be optimized in function of the data you wish to display. For example, testing for graph cycles in the layout could be omitted if the data is guaranteed to be acyclic. There are on many levels ways in which a custom implementation could give specific applications a performance or scalability boost.
 		
 
-[ This blog post](http://www.orbifold.net/default/telerik-raddiagram-scalability-and-performance/)
-		  digs deeper into the matters of scalability and performance of the __RadDiagram__ and it also tries to answer the question *How  to display huge diagrams and keep the interactivity to the max. *
+[ This blog post](http://www.orbifold.net/default/telerik-raddiagram-scalability-and-performance/) digs deeper into the matters of scalability and performance of the __RadDiagram__ and it also tries to answer the question *How  to display huge diagrams and keep the interactivity to the max. *
 
 ## Q: How to display the DiagramToolbox items in a PanelBar
 
@@ -51,7 +50,7 @@ If you want to display galleries with __DiagramShapes__ in different panels, you
 The __Diagramming Framework__ provides a built-in __SettingsPane__ that allows the users to examine and modify the settings of the diagramming items. It can be displayed through the __ItemInformationAdorner.AdditionalContent__ attached property:
 		
 
-	
+	#### __XAML__
 <telerik:RadDiagram x:Name="xDiagram">
     <primitives:ItemInformationAdorner.AdditionalContent>
         <telerik:SettingsPane Diagram="{Binding ElementName=xDiagram}"/>
@@ -112,22 +111,19 @@ The Conenction Routing feature can be enabled through the __RadDiagram RouteConn
 You can trigger a grouping operation through the __Ctrl+G__ key combination. And you can ungroup a grouped set of items using the __Ctrl+U__ combination. Please refer to the [Keyboard Support article]({%slug raddiagrams-features-shortcuts%}) for further information.
 	  
 
-## 
-		Q: How to dynamically create a polyline connection
+## Q: How to dynamically create a polyline connection
 	  
 
 If you hold down the __Ctrl__ key and click on a __Polyline__ connection, you will be able to dynamically create connection points. These points can then be used to change the path of the connection. In order to remove a connection point, you can hold the __Ctrl__ key and click on the point. Please refer to the [DiagramConnections]({%slug raddiagrams-features-connections%}) tutorial to get a better understanding of the connection types and their features.
 		
 
-## 
-		Q: How to dynamically duplicate a selected DiagramItem
+## Q: How to dynamically duplicate a selected DiagramItem
 	  
 
 You can dynamically duplicate a selected __RadDiagramItem__ through the __Ctrl+D__ key combination. Please refer to the [Keyboard Support article]({%slug raddiagrams-features-shortcuts%}) for further information.
 		
 
-## 
-		Q: How to slightly move the selected item/items on the diagramming surface
+## Q: How to slightly move the selected item/items on the diagramming surface
 	  
 
 You can slightly move (nudge) the currently selected item or items using the __Ctrl+arrow__ key combination. The __Ctrl+Shift+arrow__ key combination, on the other hand, nudges the selection five times more. Please refer to the [Keyboard Support article]({%slug raddiagrams-features-shortcuts%}) for further information.

@@ -306,7 +306,7 @@ First, if we need to only restrict the position of the mouse while dragging a sh
 	Public Overrides Sub Drag(ByVal newPoint As Point)
 	    Dim dragPoint As Point = newPoint
 	
-	    'if the mouse position during a drag operation should be restricted within the DragAllowedArea
+	    'if the mouse position during a drag operation should be restricted within the DragAllowedArea'
 	    If Me.DragAllowedArea <> Rect.Empty AndAlso (Not Me.DragAllowedArea.Contains(newPoint)) Then
 	        'calculate the proper position of the dragPoint
 	        Dim X As Double = dragPoint.X
@@ -372,10 +372,10 @@ However, if the user wants to configure the shapes to be entirely moved only wit
 
 {{region raddiagram-howto-customize-dragging-3}}
 	Private ReadOnly diagram As RadDiagram
-	'this method gets the bounds of the selected DiagramItems 
+	'this method gets the bounds of the selected DiagramItems '
 	Private Function GetSelectionBounds() As Rect
 	    If Me.UseRotaitonBounds Then
-	        'find the selection bounds after a rotation
+	        'find the selection bounds after a rotation'
 	        Dim result As Rect = Rect.Empty
 	        For Each item In Me.diagram.SelectedItems
 	            Dim container = Me.diagram.ContainerGenerator.ContainerFromItem(item)
@@ -389,7 +389,7 @@ However, if the user wants to configure the shapes to be entirely moved only wit
 	
 	        Return result
 	    Else
-	        'or get the default selection bounds
+	        'or get the default selection bounds'
 	        Return Me.diagram.SelectionBounds
 	    End If
 	End Function
@@ -482,26 +482,26 @@ Then we can use the __GetSelectionBounds()__ method in the logic that customizes
 	Public Overrides Sub Drag(ByVal newPoint As Point)
 	    Dim dragPoint As Point = newPoint
 	
-	    'if the actual bounds of the shape should be within the DragAllowedArea
+	    'if the actual bounds of the shape should be within the DragAllowedArea'
 	    If Me.IsRestrictedToBounds Then
-	        'get the bounds of the selected RadDiagramItems
+	        'get the bounds of the selected RadDiagramItems'
 	        Dim selectionBounds = Me.GetSelectionBounds()
-	        'find the drag offset by comparing the coordinates of the last and the new drag position 
+	        'find the drag offset by comparing the coordinates of the last and the new drag position '
 	        Dim offset = New Vector(newPoint.X - Me.lastPoint.X, newPoint.Y - Me.lastPoint.Y)
-	        'calculate the new bounds of the dragged selected items
+	        'calculate the new bounds of the dragged selected items'
 	        Dim newBounds = New Rect(selectionBounds.X + offset.X, selectionBounds.Y + offset.Y, selectionBounds.Width, selectionBounds.Height)
 	
-	        'if there is no predefined draggable area or 
-	        'if the bounds of the dragged selected items are within the predefined draggable area
-	        'invoke the default implementation of the DraggingService Drag() method
+	        'if there is no predefined draggable area or '
+	        'if the bounds of the dragged selected items are within the predefined draggable area'
+	        'invoke the default implementation of the DraggingService Drag() method'
 	        If Me.DragAllowedArea = Rect.Empty OrElse Me.DragAllowedArea.Contains(newBounds) Then
 	            MyBase.Drag(newPoint)
 	            Me.lastPoint = dragPoint
 	            Return
 	        End If
 	
-	        'if the bounds of the selected items is outside the bounds of the draggable area, 
-	        'recalculate the coordinates of the drag point to make sure the bounds of the selected items is inside the draggable area 
+	        'if the bounds of the selected items is outside the bounds of the draggable area, '
+	        'recalculate the coordinates of the drag point to make sure the bounds of the selected items is inside the draggable area '
 	        If Me.DragAllowedArea.Left > newBounds.Left Then
 	            dragPoint = New Point(dragPoint.X - (newBounds.Left - Me.DragAllowedArea.Left), dragPoint.Y)
 	        ElseIf Me.DragAllowedArea.Right < newBounds.Right Then
@@ -601,26 +601,26 @@ No matter which restriction approach we implement (restricting the drag based on
 	    Dim dragPoint As Point = newPoint
 	
 	    If Me.IsOn Then
-	        'if the actual bounds of the shape should be within the DragAllowedArea
+	        'if the actual bounds of the shape should be within the DragAllowedArea'
 	        If Me.IsRestrictedToBounds Then
-	            'get the bounds of the selected RadDiagramItems
+	            'get the bounds of the selected RadDiagramItems'
 	            Dim selectionBounds = Me.GetSelectionBounds()
-	            'find the drag offset by comparing the coordinates of the last and the new drag position 
+	            'find the drag offset by comparing the coordinates of the last and the new drag position '
 	            Dim offset = New Vector(newPoint.X - Me.lastPoint.X, newPoint.Y - Me.lastPoint.Y)
-	            'calculate the new bounds of the dragged selected items
+	            'calculate the new bounds of the dragged selected items'
 	            Dim newBounds = New Rect(selectionBounds.X + offset.X, selectionBounds.Y + offset.Y, selectionBounds.Width, selectionBounds.Height)
 	
-	            'if there is no predefined draggable area or 
-	            'if the bounds of the dragged selected items are within the predefined draggable area
-	            'invoke the default implementation of the DraggingService Drag() method
+	            'if there is no predefined draggable area or '
+	            'if the bounds of the dragged selected items are within the predefined draggable area'
+	            'invoke the default implementation of the DraggingService Drag() method'
 	            If Me.DragAllowedArea = Rect.Empty OrElse Me.DragAllowedArea.Contains(newBounds) Then
 	                MyBase.Drag(newPoint)
 	                Me.lastPoint = dragPoint
 	                Return
 	            End If
 	
-	            'if the bounds of the selected items is outside the bounds of the draggable area, 
-	            'recalculate the coordinates of the drag point to make sure the bounds of the selected items is inside the draggable area 
+	            'if the bounds of the selected items is outside the bounds of the draggable area, '
+	            'recalculate the coordinates of the drag point to make sure the bounds of the selected items is inside the draggable area '
 	            If Me.DragAllowedArea.Left > newBounds.Left Then
 	                dragPoint = New Point(dragPoint.X - (newBounds.Left - Me.DragAllowedArea.Left), dragPoint.Y)
 	            ElseIf Me.DragAllowedArea.Right < newBounds.Right Then
@@ -633,7 +633,7 @@ No matter which restriction approach we implement (restricting the drag based on
 	                dragPoint = New Point(dragPoint.X, dragPoint.Y - (newBounds.Bottom - Me.DragAllowedArea.Bottom))
 	            End If
 	        Else
-	            'if the mouse position during a drag operation should be restricted within the DragAllowedArea
+	            'if the mouse position during a drag operation should be restricted within the DragAllowedArea'
 	            If Me.DragAllowedArea <> Rect.Empty AndAlso (Not Me.DragAllowedArea.Contains(newPoint)) Then
 	                'calculate the proper position of the dragPoint
 	                Dim X As Double = dragPoint.X
@@ -654,9 +654,9 @@ No matter which restriction approach we implement (restricting the drag based on
 	            End If
 	        End If
 	    End If
-	    'invoke the base implementation of the DraggingService Drag() method with the calculated proper coordinates of the dragPoint  
+	    'invoke the base implementation of the DraggingService Drag() method with the calculated proper coordinates of the dragPoint  '
 	    MyBase.Drag(dragPoint)
-	    'update the lastPosition property to always keep track of the last drag position
+	    'update the lastPosition property to always keep track of the last drag position'
 	    Me.lastPoint = dragPoint
 	End Sub
 	{{endregion}}
@@ -682,7 +682,7 @@ We also need to make sure that the __lastPoint__ property has the coordinates of
 #### __VB.NET__
 
 {{region raddiagram-howto-customize-dragging-7}}
-	'override this method to get the coordinates of the point where the drag started
+	'override this method to get the coordinates of the point where the drag started'
 	Public Overrides Sub InitializeDrag(ByVal point As Point)
 	    Me.lastPoint = point
 	    MyBase.InitializeDrag(point)
@@ -750,30 +750,30 @@ Finally, we need to configure the diagram to use our custom dragging implementat
 	End Sub
 	
 	Private Sub InitializeNewServices()
-	    'initialize MyDragging 
+	    'initialize MyDragging '
 	    Me.newDraggingService = New MyDragging(Me.diagram)
-	    'create a binding with Path=IsOn
+	    'create a binding with Path=IsOn'
 	    Dim binding As New Binding("IsOn")
-	    'use the newDraggingService as a source of the binding
+	    'use the newDraggingService as a source of the binding'
 	    binding.Source = Me.newDraggingService
 	    binding.Mode = BindingMode.TwoWay
-	    'apply the binding on the toggleDrag RadToggleButton
+	    'apply the binding on the toggleDrag RadToggleButton'
 	    Me.toggleDrag.SetBinding(RadToggleButton.IsCheckedProperty, binding)
 	
-	    'create a binding with Path=IsRestrictedToBounds
+	    'create a binding with Path=IsRestrictedToBounds'
 	    binding = New Binding("IsRestrictedToBounds")
-	    'use the newDraggingService as a source of the binding
+	    'use the newDraggingService as a source of the binding'
 	    binding.Source = Me.newDraggingService
 	    binding.Mode = BindingMode.TwoWay
-	    'apply the binding on the IsRestrictedToBounds RadToggleButton
+	    'apply the binding on the IsRestrictedToBounds RadToggleButton'
 	    Me.IsRestrictedToBounds.SetBinding(RadToggleButton.IsCheckedProperty, binding)
 	
-	    'create a binding with Path=UseRotaitonBounds
+	    'create a binding with Path=UseRotaitonBounds'
 	    binding = New Binding("UseRotaitonBounds")
-	    'use the newDraggingService as a source of the binding
+	    'use the newDraggingService as a source of the binding'
 	    binding.Source = Me.newDraggingService
 	    binding.Mode = BindingMode.TwoWay
-	    'apply the binding on the useRotaitonBounds RadToggleButton
+	    'apply the binding on the useRotaitonBounds RadToggleButton'
 	    Me.useRotaitonBounds.SetBinding(RadToggleButton.IsCheckedProperty, binding)
 	End Sub
 	{{endregion}}

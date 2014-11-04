@@ -52,11 +52,11 @@ If you want to disable the user from zooming and panning, you have to set the fo
 
 
 
-Additionally as the UI navigation control is represented by the __MapNavigation__control, you are able to use it outside the __RadMap__ and place it somewhere around it. In this case you have to either hide the original one by using the __NavigationVisibility__property of the __RadMap__ or the __UseDefaultLayout__ one.
+Additionally as the UI navigation control is represented by the __MapNavigation__ control, you are able to use it outside the __RadMap__ and place it somewhere around it. In this case you have to either hide the original one by using the __NavigationVisibility__ property of the __RadMap__ or the __UseDefaultLayout__ one.
 
 >tipSetting the __UseDefaultLayout__ property to __False__ will hide all of the UI controls inside the __RadMap__. To learn more click [here]({%slug radmap-features-default-layout%}).
 
-In order to use the __MapNavigation__outside of the __RadMap__ you have to set its __MapControl__ property to the respective __RadMap__ instance. Additionally you can handle its __CenterButtonClick__ event and implement your custom logic in the event handler. Here is an example:
+In order to use the __MapNavigation__ outside of the __RadMap__ you have to set its __MapControl__ property to the respective __RadMap__ instance. Additionally you can handle its __CenterButtonClick__ event and implement your custom logic in the event handler. Here is an example:
 
 #### __XAML__
 
@@ -76,11 +76,7 @@ In order to use the __MapNavigation__outside of the __RadMap__ you have to set i
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Features_Navigation_01.png)
+![](images/RadMap_Features_Navigation_01.png)
 
 # See Also
 

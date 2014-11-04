@@ -29,5 +29,3 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Populating with data__ - This example aims to demonstrate the data binding feature of RadHeatMap. You can bind the RadHeatMap to any source that implements one of the following interfaces:   - IEnumerable - supports simple iteration of a collection. See the MSDN article for more on IEnumerable.   - ICollection - extends IEnumerable and supports size, enumerator, and synchronization methods for collections.   - IList - extends ICollection and is the base class for lists. {% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

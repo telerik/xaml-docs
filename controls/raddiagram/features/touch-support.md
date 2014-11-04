@@ -18,30 +18,14 @@ __RadDiagram__ touch support is controlled through the __SupportTouchGestures__ 
 	
 
 ## Supported Touch Gestures
-<table><th><tr><td>
 
-Gesture</td><td>
+|Gesture|RadDiagram Action|
+|-------|-----------------|
+|Pinch|Zoom|
+|Swipe|Pan|
+|Tap|Select|
+|Tap and Move|Drags selected RadDiagramItem/s|
+|Tap, Hold and Move|Rectangle Selection|
 
-RadDiagram Action</td></tr></th><tr><td>
-
-Pinch</td><td>
-
-Zoom</td></tr><tr><td>
-
-Swipe</td><td>
-
-Pan</td></tr><tr><td>
-
-Tap</td><td>
-
-Select</td></tr><tr><td>
-
-Tap and Move</td><td>
-
-Drags selected <b>RadDiagramItem/s</b></td></tr><tr><td>
-
-Tap, Hold and Move</td><td>
-
-Rectangle Selection</td></tr></table>
 
 # See Also

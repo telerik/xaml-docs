@@ -12,15 +12,15 @@ position: 4
 
 
 
-The__RadMap__ provides support for stunning map overlays through its KML-import feature. Once you have the desired set of features (place marks, images, polygons, textual descriptions, etc.) encoded in KML, you can easily import the data and visualize it through the __RadMap__control. In this way you can easily visualize complex shapes like country's borders on the map and fill the separate shapes with different colors in order to achieve a sort of grouping.
+The __RadMap__ provides support for stunning map overlays through its KML-import feature. Once you have the desired set of features (place marks, images, polygons, textual descriptions, etc.) encoded in KML, you can easily import the data and visualize it through the __RadMap__ control. In this way you can easily visualize complex shapes like country's borders on the map and fill the separate shapes with different colors in order to achieve a sort of grouping.
 
 >tipTo learn more about the __KML__ you can read [here](http://code.google.com/apis/kml/documentation/).
 
 This topic will explain the following:
 
-* [Reading KML files with RadMap](#Reading_KML_files_with_RadMap)
+* [Reading KML files with RadMap](#reading-kml-files-with-radmap)
 
-* [Manual Shape Reading](#Manual_Shape_Reading)
+* [Manual Shape Reading](#manual-shape-reading)
 
 ## Reading KML files with RadMap
 
@@ -62,9 +62,9 @@ To pass the desired KML file you have to use the __Source__ property of the __Ma
 
 ## Manual Shape Reading
 
-The __RadMap__ allows you to manually read the file, by which you are able to get the shapes collection, without to automatically insert it into the layer. For this purpose you have to use the __KMLReader__static class.
+The __RadMap__ allows you to manually read the file, by which you are able to get the shapes collection, without to automatically insert it into the layer. For this purpose you have to use the __KMLReader__ static class.
 
-First of all read the Shapefile as a resource stream. Note that the file must have its __BuildAction__ set to __Resource__. After that call the static__Read()__ method of the __KMLReader__class and pass the resource stream to it. It returns a list of __FrameworkElement__ objects, which you can directly add to the __InformationLayer__ of the __RadMap__.
+First of all read the Shapefile as a resource stream. Note that the file must have its __BuildAction__ set to __Resource__. After that call the static __Read()__ method of the __KMLReader__ class and pass the resource stream to it. It returns a list of __FrameworkElement__ objects, which you can directly add to the __InformationLayer__ of the __RadMap__.
 
 #### __XAML__
 
@@ -103,16 +103,11 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	 Next element
 	End Sub
 	{{endregion}}
-
-
-
+    
+    
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Features_KMLDataImport_01.png)
+![](images/RadMap_Features_KMLDataImport_01.png)
 
 # See Also
 

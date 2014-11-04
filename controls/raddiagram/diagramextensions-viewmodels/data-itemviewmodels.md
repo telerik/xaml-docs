@@ -24,8 +24,9 @@ The __ItemViewModelBase__ class is designed to serve as a base __ViewModel__ tha
 		
 
 
-                  ItemViewModelBase Inheritance Model
-              ![raddiagram-data-itemviewmodelbase](images/raddiagram-data-itemviewmodelbase.png)
+ItemViewModelBase Inheritance Model
+                  
+![raddiagram-data-itemviewmodelbase](images/raddiagram-data-itemviewmodelbase.png)
 
 __ItemViewModelBase__ exposes one constructor - ItemViewModelBase() that initializes a new instance of the class.
 	  
@@ -34,28 +35,13 @@ __ItemViewModelBase__ exposes one constructor - ItemViewModelBase() that initial
 
 The __ItemViewModelBase__ class exposes the following properties:
 		
-<table><th><tr><td>
+|Name|Description|
+|----|-----------|
+|Visibility|Gets or sets the Visibility of an item. It is of type Visibility.|
+|Position|Gets or sets the coordinates of a Point that represents the position of an item on the diagramming surface.|
+|Content|Gets or sets an object that represents the content of an item.|
+|IsSelected|Gets or sets a Boolean value indicating whether an item is selected.|
 
-Name</td><td>
-
-Description</td></tr></th><tr><td>
-
-<b>Visibility</b></td><td>
-
-Gets or sets the Visibility of an item. It is of type <b>Visibility</b>.
-			</td></tr><tr><td>
-
-<b>Position</b></td><td>
-
-Gets or sets the coordinates of a <b>Point</b> that represents the position of an item on the diagramming surface.</td></tr><tr><td>
-
-<b>Content</b></td><td>
-
-Gets or sets an <b>object</b> that represents the content of an item.</td></tr><tr><td>
-
-<b>IsSelected</b></td><td>
-
-Gets or sets a <b>Boolean</b> value indicating whether an item is selected.</td></tr></table>
 
 # See Also
 

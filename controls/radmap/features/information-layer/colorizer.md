@@ -16,15 +16,15 @@ The __Colorizer__ feature of the __InformationLayer__ allows you to colorize the
 
 In order to allow you to color the shapes depending on a condition, the __InformationLayer__ class exposes the __Colorizer__ property, which is of type __ColorMeasureScale__. This section will explain the usage of this object and its main features:
 
-* [Using the ColorMeasureScale object](#Using_the_ColorMeasureScale_object)
+* [Using the ColorMeasureScale object](#using-the-colormeasurescale_object)
 
-* [Extended Data Property](#Extended_Data_Property)
+* [Extended Data Property](#extended-data-property)
 
-* [Mode](#Colors)
+* [Mode](#mode)
 
-* [Colors](#Colors)
+* [Colors](#colors)
 
-* [Ranges](#Ranges)
+* [Ranges](#ranges)
 
 ## Using the ColorMeasureScale object
 
@@ -84,11 +84,11 @@ The __ColorMeasureScale__ splits the values passed through its __ExtendedPropert
 
 * __Step__ - specifies that the data will get split in ranges with step between them equal to __X__. The __X__ is equal to the value of the __TickMarkStep__ property of the __ColorMeasureScale__ object.
 
-* __Ranges__ - specifies that the filling of the ranges will be calculated automatically by the __ColorMeasureScale__colorizer.
+* __Ranges__ - specifies that the filling of the ranges will be calculated automatically by the __ColorMeasureScale__ colorizer.
 
-* __RangesPredefinedColors__ - specifies that the __ColorMeasureScale__colorizer will use filling settings which are set in the MapRange definition.
+* __RangesPredefinedColors__ - specifies that the __ColorMeasureScale__ colorizer will use filling settings which are set in the MapRange definition.
 
->tipWhen using the __InformationLayer__ object together with a __MapShapeReader__ object, the latter one automatically pass information about the __Min__ and __Max Values__of the __ColorMeasureScale__. In this case you have to only use the __Mode__ and one of the two additional properties. When you are using manually generated shapes, you have to create the ranges manually. To learn more read the [Ranges](#Ranges) section in this topic.
+>tipWhen using the __InformationLayer__ object together with a __MapShapeReader__ object, the latter one automatically pass information about the __Min__ and __Max Values__of the __ColorMeasureScale__. In this case you have to only use the __Mode__ and one of the two additional properties. When you are using manually generated shapes, you have to create the ranges manually. To learn more read the [Ranges](#ranges) section in this topic.
 
 Here is an example of a __ColorMeasureScale__ with __7__ ranges:
 
@@ -180,9 +180,9 @@ And the following demonstrates the __ColorMeasureScale__ with __RangesPredefined
 
 The __ColorMeasureScale__ can apply a different color to each range it creates. You are able to specify the desired set of colors not only for the normal fill of the shapes, but for the highlighted one too. This is done by using the __ShapeFillCollection__ and __HighlightFillCollection__ properties. They are collections of __MapShapeFill__ objects.
 
->If you are creating the ranges manually, you can pass the __MapShapeFill__ object directly to the __MapRange__ object. To learn more read the [Ranges](#Ranges) section.
+>If you are creating the ranges manually, you can pass the __MapShapeFill__ object directly to the __MapRange__ object. To learn more read the [Ranges](#ranges) section.
 
->tipTo learn more about the __MapShapeFill__ object read [here](#Using_the_MapShapeFill_object_on_the_control_level).
+>tipTo learn more about the __MapShapeFill__ object read [here](#using-the-mapshapefill-object-on-the-control-level).
 
 Add the desired colors inside the collections and they will be applied in their respective order.
 
@@ -245,7 +245,7 @@ NOTE that with the approach shown above any 2 shapes (even if they are neighbour
 
 The ranges for the __ColorMeasureScale__ can be defined in several different ways. The first one is by only using the __Mode__ and the __TickMarkCount__ or __TickMarkStep__ property. This approach is applicable when using the __InformationLayer__ object together with a __MapShapeReader__ object. Here is an example:
 
->tipTo learn more about the __Mode__ property read the [Mode](#Mode) section.
+>tipTo learn more about the __Mode__ property read the [Mode](#mode) section.
 
 #### __XAML__
 
@@ -366,7 +366,7 @@ Another approach that extends the previous one is to handle the __PrepareComplet
 	Private Sub ColorMeasureScale_PrepareCompleted(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Map.ShapeColorizerEventArgs)
 	 Dim scale As ColorMeasureScale = TryCast(sender, ColorMeasureScale)
 	 If scale IsNot Nothing Then
-	  'this lines of code modify the second last item and remove the last item.
+	  'this lines of code modify the second last item and remove the last item.'
 	  scale.RangeCollection(scale.RangeCollection.Count - 2).MaxValue = scale.RangeCollection.Last().MaxValue
 	  scale.RangeCollection.Remove(scale.RangeCollection.Last())
 	 End If

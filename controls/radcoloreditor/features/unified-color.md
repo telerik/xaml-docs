@@ -12,7 +12,7 @@ position: 2
 
 
 
-__RadColorEditor’s UnifiedColor__property represents an entity that exposes all the values of a color in the different color models.
+__RadColorEditor’s UnifiedColor__ property represents an entity that exposes all the values of a color in the different color models.
 
 ## 
 

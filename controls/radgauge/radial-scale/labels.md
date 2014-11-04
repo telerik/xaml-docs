@@ -15,7 +15,8 @@ position: 2
 ## 
 
 Tick labels are shown for major tick marks. You can set label location around scale bar, font properties (like family, size and foreground), format of the label, or even change whole control template for label. 
-        Here is an example:
+
+Here is an example:
 
 #### __XAML__
 
@@ -54,9 +55,7 @@ __SurroundOut__
 
 
 
-You can use the GaugeRange element on a radial scale to re-color labels automatically.
-        The RadialScale has the boolean LabelUseRangeColor property. 
-        If it is True, then each label within the range uses a color according to the specified range's LabelForeground property:
+You can use the GaugeRange element on a radial scale to re-color labels automatically. The RadialScale has the boolean LabelUseRangeColor property. If it is True, then each label within the range uses a color according to the specified range's LabelForeground property:
 
 ![](images/RadialScaleLabelRangeColor.png)
 

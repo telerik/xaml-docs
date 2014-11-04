@@ -14,9 +14,7 @@ position: 8
 
 ## 
 
-RadMap provides a rich set of [geocoordinate-enabled shapes]({%slug radmap-features-map-shapes%}) that can be defined and displayed onto the map surface. There are scenarios, however, where you would like to do more than just position a shape onto the map.
-        This help topic will demonstrate how to manipulate each individual segment of line/polyline/polygon shape based on mouse input from the user.
-        For example we will select (highlight) a Line segment of the Polyline and set a green color for it. The Polyline itself will be colored blue and on click it will become red. All these customizations will be made through styles:
+RadMap provides a rich set of [geocoordinate-enabled shapes]({%slug radmap-features-map-shapes%}) that can be defined and displayed onto the map surface. There are scenarios, however, where you would like to do more than just position a shape onto the map. This help topic will demonstrate how to manipulate each individual segment of line/polyline/polygon shape based on mouse input from the user. For example we will select (highlight) a Line segment of the Polyline and set a green color for it. The Polyline itself will be colored blue and on click it will become red. All these customizations will be made through styles:
 
 #### __XAML__
 
@@ -67,43 +65,43 @@ Now we will create a sample polyline and add it to the first information layer. 
 #### __C#__
 
 {{region radmap-how-to-select-map-shapes_2}}
-	  private bool initialized;
-	
-	        // selected segment and polyline 
-	        private MapLine selectedLine;
-	        private MapPolyline selectedPolyline;
-	
-	        public MainPage()
-	        {
-	            InitializeComponent();
-	        }
-	
-	        private void radMap_InitializeCompleted(object sender, EventArgs e)
-	        {
-	            if (!initialized)
-	            {
-	                initialized = true;
-	
-	                this.BuildPolyline();
-	            }
-	        }
-	
-	        private void BuildPolyline()
-	        {
-	            LocationCollection points = new LocationCollection();
-	            points.Add(new Location(40, -100));
-	            points.Add(new Location(41, -101));
-	            points.Add(new Location(40, -102));
-	            points.Add(new Location(43, -103));
-	            points.Add(new Location(45, -97));
-	
-	            MapPolyline polyline = new MapPolyline();
-	            polyline.Points = points;
-	            this.SetDefaultStyle(polyline);
-	
-	            this.polylineLayer.Items.Add(polyline);
-	            this.BuildLines(polyline);
-	        }
+    private bool initialized;
+
+    // selected segment and polyline 
+    private MapLine selectedLine;
+    private MapPolyline selectedPolyline;
+
+    public MainPage()
+    {
+        InitializeComponent();
+    }
+
+    private void radMap_InitializeCompleted(object sender, EventArgs e)
+    {
+        if (!initialized)
+        {
+            initialized = true;
+
+            this.BuildPolyline();
+        }
+    }
+
+    private void BuildPolyline()
+    {
+        LocationCollection points = new LocationCollection();
+        points.Add(new Location(40, -100));
+        points.Add(new Location(41, -101));
+        points.Add(new Location(40, -102));
+        points.Add(new Location(43, -103));
+        points.Add(new Location(45, -97));
+
+        MapPolyline polyline = new MapPolyline();
+        polyline.Points = points;
+        this.SetDefaultStyle(polyline);
+
+        this.polylineLayer.Items.Add(polyline);
+        this.BuildLines(polyline);
+    }
 	{{endregion}}
 
 
@@ -111,92 +109,91 @@ Now we will create a sample polyline and add it to the first information layer. 
 #### __VB.NET__
 
 {{region radmap-how-to-select-map-shapes_3}}
-	   Private initialized As Boolean
-	
-			' selected segment and polyline 
-			Private selectedLine As MapLine
-			Private selectedPolyline As MapPolyline
-	
-			Public Sub New()
-				InitializeComponent()
-			End Sub
-	
-			Private Sub radMap_InitializeCompleted(ByVal sender As Object, ByVal e As EventArgs)
-				If Not initialized Then
-					initialized = True
-	
-					Me.BuildPolyline()
-				End If
-			End Sub
-	
-			Private Sub BuildPolyline()
-				Dim points As New LocationCollection()
-				points.Add(New Location(40, -100))
-				points.Add(New Location(41, -101))
-				points.Add(New Location(40, -102))
-				points.Add(New Location(43, -103))
-				points.Add(New Location(45, -97))
-	
-				Dim polyline As New MapPolyline()
-				polyline.Points = points
-				Me.SetDefaultStyle(polyline)
-	
-				Me.polylineLayer.Items.Add(polyline)
-				Me.BuildLines(polyline)
-			End Sub
+Private initialized As Boolean
+
+    ' selected segment and polyline 
+    Private selectedLine As MapLine
+    Private selectedPolyline As MapPolyline
+
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+
+    Private Sub radMap_InitializeCompleted(ByVal sender As Object, ByVal e As EventArgs)
+        If Not initialized Then
+            initialized = True
+
+            Me.BuildPolyline()
+        End If
+    End Sub
+
+    Private Sub BuildPolyline()
+        Dim points As New LocationCollection()
+        points.Add(New Location(40, -100))
+        points.Add(New Location(41, -101))
+        points.Add(New Location(40, -102))
+        points.Add(New Location(43, -103))
+        points.Add(New Location(45, -97))
+
+        Dim polyline As New MapPolyline()
+        polyline.Points = points
+        Me.SetDefaultStyle(polyline)
+
+        Me.polylineLayer.Items.Add(polyline)
+        Me.BuildLines(polyline)
+    End Sub
 	{{endregion}}
 
 
 
-And now to the essential part of our scenario. Add a Line over each segment of the polyline. This is easy since the polyline itself was created from a set of predefined points(locations).
-        To be able to change the appearance of the polyline or its segments on click we’ll attach a __MouseLeftButtonDown__ event on the line:
+And now to the essential part of our scenario. Add a Line over each segment of the polyline. This is easy since the polyline itself was created from a set of predefined points(locations). To be able to change the appearance of the polyline or its segments on click we’ll attach a __MouseLeftButtonDown__ event on the line:
 
 #### __C#__
 
 {{region radmap-how-to-select-map-shapes_4}}
-	   private void BuildLines(MapPolyline polyline)
-	        {
-	            for (int i = 0; i < polyline.Points.Count - 1; i++)
-	            {
-	                Location point1 = polyline.Points[i];
-	                Location point2 = polyline.Points[i + 1];
-	                MapLine line = new MapLine()
-	                {
-	                    Point1 = point1,
-	                    Point2 = point2
-	                };
-	
-	                this.SetDefaultStyle(line);
-	
-	                line.MouseLeftButtonDown += new MouseButtonEventHandler(line_MouseLeftButtonDown);
-	                line.Tag = polyline;
-	
-	                this.lineLayer.Items.Add(line);
-	            }
-	        }
-	
-	        private void line_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-	        {
-	            MapLine line = sender as MapLine;
-	            if (line != null)
-	            {
-	                if (this.selectedLine != null)
-	                {
-	                    this.SetDefaultStyle(this.selectedLine);
-	                }
-	
-	                if (this.selectedPolyline != null)
-	                {
-	                    this.SetDefaultStyle(this.selectedPolyline);
-	                }
-	
-	                this.selectedLine = line;
-	                this.selectedPolyline = line.Tag as MapPolyline;
-	
-	                this.SetSelectedStyle(this.selectedLine);
-	                this.SetSelectedStyle(this.selectedPolyline);
-	            }
-	        }
+private void BuildLines(MapPolyline polyline)
+    {
+        for (int i = 0; i < polyline.Points.Count - 1; i++)
+        {
+            Location point1 = polyline.Points[i];
+            Location point2 = polyline.Points[i + 1];
+            MapLine line = new MapLine()
+            {
+                Point1 = point1,
+                Point2 = point2
+            };
+
+            this.SetDefaultStyle(line);
+
+            line.MouseLeftButtonDown += new MouseButtonEventHandler(line_MouseLeftButtonDown);
+            line.Tag = polyline;
+
+            this.lineLayer.Items.Add(line);
+        }
+    }
+
+    private void line_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+        MapLine line = sender as MapLine;
+        if (line != null)
+        {
+            if (this.selectedLine != null)
+            {
+                this.SetDefaultStyle(this.selectedLine);
+            }
+
+            if (this.selectedPolyline != null)
+            {
+                this.SetDefaultStyle(this.selectedPolyline);
+            }
+
+            this.selectedLine = line;
+            this.selectedPolyline = line.Tag as MapPolyline;
+
+            this.SetSelectedStyle(this.selectedLine);
+            this.SetSelectedStyle(this.selectedPolyline);
+        }
+    }
 	{{endregion}}
 
 
@@ -246,29 +243,29 @@ In event's body you check whether the selected shape is line or the whole polyli
 #### __C#__
 
 {{region radmap-how-to-select-map-shapes_6}}
-	  private void SetDefaultStyle(MapShape shape)
-	        {
-	            if (shape is MapLine)
-	            {
-	                shape.Style = this.Resources["defaultLineStyle"] as Style;
-	            }
-	            else
-	            {
-	                shape.Style = this.Resources["defaultPolylineStyle"] as Style;
-	            }
-	        }
-	
-	        private void SetSelectedStyle(MapShape shape)
-	        {
-	            if (shape is MapLine)
-	            {
-	                shape.Style = this.Resources["selectedLineStyle"] as Style;
-	            }
-	            else
-	            {
-	                shape.Style = this.Resources["selectedPolylineStyle"] as Style;
-	            }
-	        } 
+    private void SetDefaultStyle(MapShape shape)
+    {
+        if (shape is MapLine)
+        {
+            shape.Style = this.Resources["defaultLineStyle"] as Style;
+        }
+        else
+        {
+            shape.Style = this.Resources["defaultPolylineStyle"] as Style;
+        }
+    }
+
+    private void SetSelectedStyle(MapShape shape)
+    {
+        if (shape is MapLine)
+        {
+            shape.Style = this.Resources["selectedLineStyle"] as Style;
+        }
+        else
+        {
+            shape.Style = this.Resources["selectedPolylineStyle"] as Style;
+        }
+    } 
 	{{endregion}}
 
 

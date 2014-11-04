@@ -18,12 +18,9 @@ This section is intended to give you a broad understanding of the possible ways 
 You can modify the look of the __RadDiagram__ and its elements either by changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and add your own elements. However, when changing the control template you should be careful to include all required parts.
 	  
 
-## 
-
-Read the following topics to learn more:
+## Read the following topics to learn more:
 
 * [Customize Appearance]({%slug raddiagram-styling-appearance%})
 
 * [Styling and Style Selectors]({%slug raddiagram-styling-selectors%})
 
-# See Also

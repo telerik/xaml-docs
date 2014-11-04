@@ -10,10 +10,6 @@ position: 2
 
 # Create Menu Button with RadContextMenu and ToggleButton
 
-
-
-## 
-
 In some scenarios you need to have a button that displays additional options upon clicking. This tutorial will show you how to achieve such drop-down button behavior using only a __ToggleButton__ and a __RadContextMenu__. The two things you have to do are the following:
 
 * Attach a __RadContextMenu__ to the __ToggleButton__
@@ -36,11 +32,9 @@ Here is the final code snippet.
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</ToggleButton>
-	{{endregion}}
+{{endregion}}
 
-
-
-The things you have to make attention to here are: how the __RadContextMenu__ is attached to the __ToggleButton__ and the __ElementBinding__ applied to the __ToggleButton's____IsChecked__ property.
+The things you have to make attention to here are: how the __RadContextMenu__ is attached to the __ToggleButton__ and the __ElementBinding__ applied to the __ToggleButton's__ __IsChecked__ property.
 
 ![](images/RadContextMenu_How_To_Menu_Button_01.png)
 

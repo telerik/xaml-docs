@@ -14,9 +14,9 @@ To bind the __RadComboBox__ to a collection of business objects, you should use 
 
 The following tutorial will guide you how to bind a __RadComboBox__ to a collection of business objects. Two cases will be shown:
 
-* [Using custom ItemTemplate](#Using_Custom_ItemTemplate)
+* [Using custom ItemTemplate](#using-custom-itemtemplate)
 
-* [Using DisplayMemberPath property](#Using_DisplayMemberPath)
+* [Using DisplayMemberPath property](#using-displaymemberpath)
 
 >tipBefore reading this tutorial you should get familiar with the [Data Binding]({%slug radcombobox-populating-with-data-binding-support-overview%}) support of the __RadComboBox__ control.
 

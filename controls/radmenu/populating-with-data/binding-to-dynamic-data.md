@@ -10,10 +10,7 @@ position: 3
 
 # Binding to Dynamic Data
 
-
-
-The data displayed in the __RadMenu__ has a hierarchical structure (similar to the __RadTreeView__). This means that each item may come with a set of items on its own. For that reason you have to use the __HierarchicalDataTemplate__. This tutorial will walk you through the most important steps in creating, configuring and applying a __HierarchicalDataTemplate__ to your __RadMenu__, as follows:
-      
+The data displayed in the __RadMenu__ has a hierarchical structure (similar to the __RadTreeView__). This means that each item may come with a set of items on its own. For that reason you have to use the __HierarchicalDataTemplate__. This tutorial will walk you through the most important steps in creating, configuring and applying a __HierarchicalDataTemplate__ to your __RadMenu__, as follows:      
 
 * [Preparing the data](#preparing-the-data)
 
@@ -48,9 +45,7 @@ For this tutorial the following sample class will be used:
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -80,21 +75,15 @@ For this tutorial the following sample class will be used:
 	  End Set
 	 End Property
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 The __MenuItem__ class holds the information for the menu items.
-        
 
 * __Text__ - represents the text value for the item.
-            
 
 * __IconUrl__ - represents the url of the image that represents the icon of the menu item.
-            
 
 * __SubItems__ - a collection of the sub menu items of the current menu item.
-            
 
 On the next step a sample method, which creates the sample data, is needed. Here is one:
 
@@ -141,9 +130,7 @@ On the next step a sample method, which creates the sample data, is needed. Here
 	    items.Add( viewItem );
 	    return items;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -165,12 +152,9 @@ On the next step a sample method, which creates the sample data, is needed. Here
 	 items.Add(viewItem)
 	 Return items
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally, pass the generated collection to the __ItemsSource__ of the __RadMenu__.
-        
 
 #### __C#__
 
@@ -180,9 +164,7 @@ Finally, pass the generated collection to the __ItemsSource__ of the __RadMenu__
 	    InitializeComponent();
 	    this.radMenu.ItemsSource = this.GetMenuItems();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -191,16 +173,11 @@ Finally, pass the generated collection to the __ItemsSource__ of the __RadMenu__
 	 InitializeComponent()
 	 Me.radMenu.ItemsSource = Me.GetMenuItems()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Creating and Applying the ItemContainerStyle
 
-In order to visualize the data in __RadMenu__ you can use *ItemContainerStyle* property. When used in combination with *ItemsSource*, the Style is applied on all
-          __RadMenuItems__. The only thing you have to do is set the bindings for the needed properties. For the "Icon" you will have to use "IconTemplate" as shown below. When you bind the "Icon" property to the "IconUrl", its value will
-          be passed to the DataTemplate and used as a Source of an image.
-        
+In order to visualize the data in __RadMenu__ you can use *ItemContainerStyle* property. When used in combination with *ItemsSource*, the Style is applied on all __RadMenuItems__. The only thing you have to do is set the bindings for the needed properties. For the "Icon" you will have to use "IconTemplate" as shown below. When you bind the "Icon" property to the "IconUrl", its value will be passed to the DataTemplate and used as a Source of an image.        
 
 #### __XAML__
 
@@ -217,22 +194,19 @@ In order to visualize the data in __RadMenu__ you can use *ItemContainerStyle* p
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 So its time to define __RadMenu__ and set "ItemContainerStyle" property:
         
-
 #### __XAML__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_8}}
 	<telerik:RadMenu x:Name="radMenu" ItemContainerStyle="{StaticResource MenuItemStyle}"/>
-	{{endregion}}
+{{endregion}}
 
+Here is a snapshot of the final result:
 
-
-Here is a snapshot of the final result.![](images/RadMenu_Populating_with_Data_Binding_to_Dynamic_Data_02.png)
+![](images/RadMenu_Populating_with_Data_Binding_to_Dynamic_Data_02.png)
 
 # See Also
 

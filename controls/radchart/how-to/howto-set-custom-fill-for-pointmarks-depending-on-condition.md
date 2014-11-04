@@ -18,7 +18,7 @@ It is common scenario that you would like to customize the appearance of the Poi
 
 * Create a new class named __Data__, which implements the __INotifyPropertyChanged__ interface. It will be used as an __ItemsSource__ for the chart control. The class has three properties:
 
-__- Date__ - will be displayed on the X axis. 
+- __Date__ - will be displayed on the X axis. 
 
 - __YValue__ - will be displayed on the Y axis.
 
@@ -319,11 +319,4 @@ The chart is populated with data in code-behind using [Manual Series Mappings]({
 
 
 The result can be seen on the image below:
-
-
-
-
-
-
-         
-      ![](images/RadChart_HowTo_PointMarksCustomFill.PNG)
+![](images/RadChart_HowTo_PointMarksCustomFill.PNG)

@@ -99,7 +99,7 @@ dd {
 }
 pre {
 	font-family: Consolas, Courier, monospace;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .topicContent {

@@ -10,10 +10,6 @@ position: 2
 
 # Prevent Dragging Off the Screen
 
-
-
-## 
-
 With its default settings, the __RadWindow__ can be dragged off the screen by the user. To prevent the user from dragging the __RadWindow__ off the screen you have to set the __IsRestricted__ property of the __RadWindow__ to __True__.
 
 #### __C#__
@@ -21,18 +17,14 @@ With its default settings, the __RadWindow__ can be dragged off the screen by th
 {{region radwindow-how-to-prevent-dragging-off-the-screen_0}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.IsRestricted = true;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radwindow-how-to-prevent-dragging-off-the-screen_1}}
 	Dim radWindow As New RadWindow()
 	radWindow.IsRestricted = True
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

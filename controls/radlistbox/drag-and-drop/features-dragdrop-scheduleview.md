@@ -10,8 +10,6 @@ position: 1
 
 # Drag-Drop between RadListBox and RadScheduleView
 
-
-
 This help topic will explain in details the drag-drop functionality between RadListBox and RadScheduleView controls.
 
 ## Drag-Drop between RadListBox and RadScheduleView
@@ -20,13 +18,7 @@ To enable drag and drop between RadListBox and RadScheduleView, we should conver
 
 We will go through a simple example to illustrate the approach. RadListBox is bound to a collection of Customer objects which will be converted to Appointments and vice versa.
 
-
-
-* 
-
-Create a Customer class:
-
-
+* Create a Customer class:
 
 #### __C#__
 
@@ -45,15 +37,9 @@ Create a Customer class:
 			};
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-Create a ViewModel that initializes the ListBox ItemsSource and the ScheduleView AppointmentsSource and populate them with simple data:
-
-
+* Create a ViewModel that initializes the ListBox ItemsSource and the ScheduleView AppointmentsSource and populate them with simple data:
 
 #### __C#__
 
@@ -84,15 +70,9 @@ Create a ViewModel that initializes the ListBox ItemsSource and the ScheduleView
 		};
 	
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-Create AppointmentToCustomerConverter class that inherits DataConverter:
-
-
+* Create AppointmentToCustomerConverter class that inherits DataConverter:
 
 #### __C#__
 
@@ -116,15 +96,9 @@ Create AppointmentToCustomerConverter class that inherits DataConverter:
 			return null;
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-Create custom ScheduleViewDragDropBehavior that inherits ScheduleViewDragDropBehavior:
-
-
+* Create custom ScheduleViewDragDropBehavior that inherits ScheduleViewDragDropBehavior:
 
 #### __C#__
 
@@ -149,15 +123,9 @@ Create custom ScheduleViewDragDropBehavior that inherits ScheduleViewDragDropBeh
 			return base.ConvertDraggedData(data);
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-Create a RadListBoxItem Style that will enable the drag of the RadListBoxItem controls:
-
-
+* Create a RadListBoxItem Style that will enable the drag of the RadListBoxItem controls:
 
 #### __XAML__
 
@@ -165,15 +133,9 @@ Create a RadListBoxItem Style that will enable the drag of the RadListBoxItem co
 	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
 		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-The final configuration of the two controls in XAML should look like:
-
-
+* The final configuration of the two controls in XAML should look like:
 
 #### __XAML__
 
@@ -202,13 +164,15 @@ The final configuration of the two controls in XAML should look like:
 			<local:ScheduleViewDragDropBehavior />
 		</telerik:RadScheduleView.DragDropBehavior>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the end result:
 
-![radlistbox features dragdrop 3](images/radlistbox_features_dragdrop_3.png)![radlistbox features dragdrop 4](images/radlistbox_features_dragdrop_4.png)![radlistbox features dragdrop 5](images/radlistbox_features_dragdrop_5.png)
+![radlistbox features dragdrop 3](images/radlistbox_features_dragdrop_3.png)
+
+![radlistbox features dragdrop 4](images/radlistbox_features_dragdrop_4.png)
+
+![radlistbox features dragdrop 5](images/radlistbox_features_dragdrop_5.png)
 
 # See Also
 

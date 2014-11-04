@@ -10,8 +10,6 @@ position: 1
 
 # SDK Examples
 
-
-
 The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/master/) provides additional demos for most of the Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls. The examples demonstrate many specific user case scenarios, that might be really helpful. In this article you can find the complete list of all SDK examples for __RadTreeView__.
 
 ## List of all RadTreeView SDK examples:{% if site.site_name == 'WPF' %}
@@ -55,5 +53,3 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Tree list view bring item into view__ - TreeListBringItem sample demonstrates how you can bring a particular, deeply nested TreeListViewRow into view. This might be helpful if you need a fast hierarchy control with many nested levels and RadTreeView is slow in your particular scenario with bring into view. This example is configured in such way that the TreeListView behaves and feels much like RadTreeView. The first button will bring an item which is 20 levels deep with updating the UI on every level expansion. The second button will update the UI only when the bring operation is finished. Please have in mind that running the application without debugger (Ctrl + F5 when in VS) will result in faster user experience. {% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

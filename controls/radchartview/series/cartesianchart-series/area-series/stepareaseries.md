@@ -18,7 +18,8 @@ The StepAreaSeries behave like the StepLineSeries but it also allows the area be
 
 You can use the following definition to display a simple StepAreaSeries:
 
-	
+#### XAML
+	{{region radchartview-stepareaseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -40,7 +41,7 @@ You can use the following definition to display a simple StepAreaSeries:
                 </telerik:StepAreaSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-steplineareaseries](images/radchartview-series-steplineareaseries.png)
 
 # See Also

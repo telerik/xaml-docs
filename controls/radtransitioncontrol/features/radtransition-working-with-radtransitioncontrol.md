@@ -10,21 +10,19 @@ position: 0
 
 # Working with the RadTransitionControl
 
-
-
 Tha __RadTransitionControl__ is a __ContentControl__ that can apply a transition effect to its content, when it gets changed. The content of the __RadTransitionControl__ can vary from simple strings to complex __UserControls__, as for any __ContentControl__. The transition effect can be chosen among the built-in ones or you can create a custom one.
 
 >tipFor a quick review of the basic features in a sample scenario you can take a look at the [Getting Started]({%slug radtransition-getting-started%}) topic.
 
 To learn more about the __RadTransitionControl__ features, you can take a look at the following sections inside this topic:
 
-* [Content](#Content)
+* [Content](#content)
 
-* [Transitions](#Transitions)
+* [Transitions](#transitions)
 
-* [Transition Duration](#Transition_Duration)
+* [Transition Duration](#transition-duration)
 
-* [Transition Ease](#Transition_Ease)
+* [Transition Ease](#transition-easing)
 
 ## Content
 
@@ -41,9 +39,7 @@ In order to set the content of the __RadTransitionControl__ you have to use its 
 	            Width="320"
 	            Height="240" />
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 You can also bind the __Content__ of the __RadTransitionControl__ to a data object and use the __ContentTemplate__ property to define a __DataTemplate__ to visualize the object. To learn more about data binding inside __RadTransitionControl__ read the [Data Binding]({%slug radtransition-features-data-binding%}) topic.
 
@@ -51,15 +47,13 @@ You can also bind the __Content__ of the __RadTransitionControl__ to a data obje
 
 When the content of the __RadTransitionControl__ gets changed, the control can apply a transition effect to the change. By default there is no effect specified and in order to specify one you have to use the __Transition__ property.
 
->tipThere are several built-in transition effects, which are located in the __Telerik.Windows.Control.TransitionEffects__namespace of the __Telerik.Windows.Controls__ assembly. In order to use them you have to add the following namespace declaration:
+>tipThere are several built-in transition effects, which are located in the __Telerik.Windows.Control.TransitionEffects__ namespace of the __Telerik.Windows.Controls__ assembly. In order to use them you have to add the following namespace declaration:
 
 #### __XAML__
 
 {{region radtransition-features-working-with-radtransitioncontrol_1}}
 	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -69,9 +63,7 @@ When the content of the __RadTransitionControl__ gets changed, the control can a
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 To learn more about the different built-in transition effects or how to create your own, read the [Transitions]({%slug radtransition-features-transitions%}) topic.
 
@@ -83,17 +75,18 @@ The duration of the transition effect is determined by the __Duration__ property
 
 {{region radtransition-features-working-with-radtransitioncontrol_3}}
 	<telerik:RadTransitionControl x:Name="radTransitionControl" Duration="00:00:03" />
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Transition Easing
 
-The __RadTransitionControl__ allows you to apply an easing function to the transition effect. The easing functions make the animation much more realistic and smoother. There is a set of predefined easing functions in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} and you are allowed to create custom ones, too.{% if site.site_name == 'Silverlight' %}
+The __RadTransitionControl__ allows you to apply an easing function to the transition effect. The easing functions make the animation much more realistic and smoother. There is a set of predefined easing functions in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} and you are allowed to create custom ones, too.
 
->tipTo learn more about the easing functions read [here](http://msdn.microsoft.com/en-us/library/cc189019%28VS.95%29.aspx#easing_functions).{% endif %}{% if site.site_name == 'WPF' %}
-
->tipTo learn more about the easing functions read [here](http://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx).{% endif %}
+{% if site.site_name == 'Silverlight' %}
+>tipTo learn more about the easing functions read [here](http://msdn.microsoft.com/en-us/library/cc189019%28VS.95%29.aspx#easing_functions).
+{% endif %}
+{% if site.site_name == 'WPF' %}
+>tipTo learn more about the easing functions read [here](http://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx).
+{% endif %}
 
 By default there is no easing function specified for the __RadTransitionControl__. To specify one you have to set the __Easing__ property to the desired function.
 
@@ -105,9 +98,7 @@ By default there is no easing function specified for the __RadTransitionControl_
 	        <BackEase EasingMode="EaseInOut" Amplitude="0.5" />
 	    </telerik:RadTransitionControl.Easing>
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

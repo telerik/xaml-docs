@@ -17,13 +17,9 @@ This series of articles will give an overview of the Palette colorization mechan
 
 ## Overview
 
-The __palette__ is a set of predefined Fills and Strokes which can be used to set
-          the coloring of a chart much easier then setting explicitly the colors for each bar or slice.
-          RadChartView brings you the options to define your own palettes and to use the
-          ones we have prepared for you as well. This is how the "Warm" palette can be
-          used for a simple PieChart:
+The __palette__ is a set of predefined Fills and Strokes which can be used to set the coloring of a chart much easier then setting explicitly the colors for each bar or slice. RadChartView brings you the options to define your own palettes and to use the ones we have prepared for you as well. This is how the "Warm" palette can be used for a simple PieChart:
         
-
+{{region radchartview-pallete}}
 	
           <telerik:RadPieChart Palette="Warm">
             <telerik:PieSeries>
@@ -34,7 +30,7 @@ The __palette__ is a set of predefined Fills and Strokes which can be used to se
               </telerik:PieSeries.DataPoints>
             </telerik:PieSeries>
           </telerik:RadPieChart>
-        
+        {{endregion}}
 
 
 
@@ -46,4 +42,4 @@ Here is a snapshot of the example:
 Currently RadChartView has 15 predefined palettes, each with 8 colors:
         ![Rad Chart View-palettes-introduction-1](images/RadChartView-palettes-introduction-1.png)
 
-# See Also
+

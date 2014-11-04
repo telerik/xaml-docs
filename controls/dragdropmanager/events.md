@@ -10,8 +10,6 @@ position: 3
 
 # Events
 
-
-
 __DragDropManager__ supports an event driven model. Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations. The following tables summarize the standard drag-and-drop events.  
 
 ## Drag Source Events
@@ -46,16 +44,13 @@ __DragDropManager__ supports an event driven model. Both the drag source and the
 
 * __PreviewDrop__ - Tunneling version of Drop.
 
-
-
 ## How to attach DragDrop Events
 
 The code snippet below illustrates how to attach to the DragDrop events:
 
 #### __C#__
 
-{{region dragdropmanager-events_0}}
-	
+{{region dragdropmanager-events_0}}	
 	DragDropManager.AddDragInitializeHandler(source, new  Windows.DragDrop.DragInitializeEventHandler(OnDragInitialized));
 	DragDropManager.AddDragDropCompletedHandler(source, new DragDropCompletedEventHandler(OnDragDropCompleted));
 	DragDropManager.AddGiveFeedbackHandler(source, new Windows.DragDrop.GiveFeedbackEventHandler(OnGiveFeedBack));
@@ -90,11 +85,8 @@ The code snippet below illustrates how to attach to the DragDrop events:
 	
 	private void OnElementDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
-	}
-	
-	{{endregion}}
-
-
+	}	
+{{endregion}}
 
 #### __VB.NET__
 
@@ -126,10 +118,5 @@ The code snippet below illustrates how to attach to the DragDrop events:
 	    End Sub
 	
 	Private Sub OnElementDragLeave(sender As Object, e As DragEventArgs)
-	    End Sub
-	
-	{{endregion}}
-
-
-
-
+	    End Sub	
+{{endregion}}

@@ -10,18 +10,11 @@ position: 3
 
 # Orientation and DropDownPlacement
 
-
-
 The __RadMenu__ exposes a set of properties, which allow you to specify its orientation and placement of the drop-down sub-menus. They are as follows:
-      
 
-* [
-            Orientation
-          ](#orientation)
+* [Orientation](#orientation)
 
-* [
-            DropDownPlacement
-          ](#dropdownplacement)
+* [DropDownPlacement](#dropdownplacement)
 
 ## Orientation
 
@@ -33,7 +26,7 @@ The __RadMenu__ control can have its layout oriented in two directions - horizon
 
 To modify the orientation you just have to set the __Orientation__ property to one of the following values:
 
-* __Horizontal__(default)
+* __Horizontal__ (default)
 
 * __Vertical__
 
@@ -45,32 +38,23 @@ Here is an example of a __vertically__ oriented __RadMenu.__
 	<telerik:RadMenu Orientation="Vertical">
 	    ...
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![Rad Menu Features Orientation and Drop Down Placement 02](images/RadMenu_Features_Orientation_and_DropDownPlacement_02.png)
 
 ## DropDownPlacement
 
-If there are any sub-menus in the __RadMenu__ their dropdown position can be specified through the
-          __DropDownPlacement__ property of the __RadMenuItem__. It has the following values:
-        
+If there are any sub-menus in the __RadMenu__ their dropdown position can be specified through the __DropDownPlacement__ property of the __RadMenuItem__. It has the following values:
 
 * __Auto__ - positions the dropdown of the sub-menu automatically.
-          
 
 * __Bottom__ - displays the nested __RadMenuItems__ below the parent RadMenuItem.
-          
 
 * __Left__ - displays the nested __RadMenuItems__ on the left of the parent RadMenuItem.
-          
 
 * __Right__ - displays the nested __RadMenuItems__ on the right of the parent RadMenuItem.
-          
 
 * __Top__ - displays the nested __RadMenuItems__ above the parent RadMenuItem.
-          
 
 Here is an example:
 
@@ -89,9 +73,7 @@ Here is an example:
 	    </telerik:RadMenuItem>
 	    ...
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![Rad Menu Features Orientation and Drop Down Placement 03](images/RadMenu_Features_Orientation_and_DropDownPlacement_03.png)
 

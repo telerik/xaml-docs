@@ -10,18 +10,11 @@ position: 0
 
 # Menu Items
 
-
-
-In __RadMenu__ basically there are three types of menu items which provide different ways
-        to display the data in a hierarchical structure. They are as follows:
-      
+In __RadMenu__ basically there are three types of menu items which provide different ways to display the data in a hierarchical structure. They are as follows:      
 
 ## RadMenuItem
 
-__RadMenuItem__ is the main menu item in __RadMenu__. It is used for the top-level menu
-          and each __RadMenuItem__ can have other RadMenuItems as children in order to create sub-menus.
-          Its __Header__ property accepts plain text as well as other objects, it can be set the following ways:
-        
+__RadMenuItem__ is the main menu item in __RadMenu__. It is used for the top-level menu and each __RadMenuItem__ can have other RadMenuItems as children in order to create sub-menus. Its __Header__ property accepts plain text as well as other objects, it can be set the following ways:       
 
 #### __XAML__
 
@@ -43,30 +36,19 @@ __RadMenuItem__ is the main menu item in __RadMenu__. It is used for the top-lev
 	    </telerik:RadMenuItem>
 	    ...
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 And here is the result:
 
 ![Rad Menu Features Menu Items 01](images/RadMenu_Features_MenuItems_01.png)
 
-You can also set an Icon of __RadMenuItem__ which is done by its __Icon__ property. The
-          property accepts an object.
-        
+You can also set an Icon of __RadMenuItem__ which is done by its __Icon__ property. The property accepts an object.       
 
->For more detailed information about setting an Icon to __RadMenuItem__, please check the 
-          [Icons]({%slug radmenu-features-icons%}) article.
+>For more detailed information about setting an Icon to __RadMenuItem__, please check the [Icons]({%slug radmenu-features-icons%}) article.
 
 ## RadMenuGroupItem
 
-__RadMenuGroupItem__ inherits from __RadMenuItem__ class and it is used as container of a 
-          __RadMenuItem__ dropdown. In other words any UI element can be placed inside of __RadMenuGroupItem__. 
-          By default the background color of __RadMenuGroupItem__ is White and there is no Icon
-          area with different color unlike __RadMenuItem__, so you can easily use different sized Icons in the dropdown.
-          In addition to this __RadMenuGroupItem__ also has a __Header__ property which is displayed 
-          on the top of all the group items.
-        
+__RadMenuGroupItem__ inherits from __RadMenuItem__ class and it is used as container of a __RadMenuItem__ dropdown. In other words any UI element can be placed inside of __RadMenuGroupItem__. By default the background color of __RadMenuGroupItem__ is White and there is no Icon area with different color unlike __RadMenuItem__, so you can easily use different sized Icons in the dropdown. In addition to this __RadMenuGroupItem__ also has a __Header__ property which is displayed on the top of all the group items.
 
 #### __XAML__
 
@@ -81,9 +63,7 @@ __RadMenuGroupItem__ inherits from __RadMenuItem__ class and it is used as conta
 	        </telerik:RadMenuGroupItem>
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 And this is the result:
 
@@ -91,10 +71,7 @@ And this is the result:
 
 ## RadMenuSeparatorItem
 
-__RadMenuSeparatorItem__ also inherits from __RadMenuItem__. It is a menu item used
-          to separate __RadMenuItems__/__RadMenuGroupItems__. Its orientation can be horizontal and 
-          vertical and it is automatically set depending on the menu orientation.
-      
+__RadMenuSeparatorItem__ also inherits from __RadMenuItem__. It is a menu item used to separate __RadMenuItems__/__RadMenuGroupItems__. Its orientation can be horizontal and vertical and it is automatically set depending on the menu orientation.
 
 #### __XAML__
 
@@ -104,26 +81,16 @@ __RadMenuSeparatorItem__ also inherits from __RadMenuItem__. It is a menu item u
 	    <telerik:RadMenuSeparatorItem />
 	    ...
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![Rad Menu Features Menu Items 03](images/RadMenu_Features_MenuItems_03.png)
 
 # See Also
 
- * [
-        Icons
-      ]({%slug radmenu-features-icons%})
+ * [Icons]({%slug radmenu-features-icons%})
 
- * [
-        Orientation and DropDownPlacement
-      ]({%slug radmenu-features-orientation%})
+ * [Orientation and DropDownPlacement]({%slug radmenu-features-orientation%})
 
- * [
-        Checkable Items
-      ]({%slug radmenu-features-checkable-items%})
+ * [Checkable Items]({%slug radmenu-features-checkable-items%})
 
- * [
-        Commands
-      ]({%slug radmenu-features-commands%})
+ * [Commands]({%slug radmenu-features-commands%})

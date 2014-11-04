@@ -139,4 +139,3 @@ __Specific Properties__
 * __Series__ - This property is of type __PresenterCollection<PieSeries>__ and it gets the collection containing all the series presented by the control.
             
 
-# See Also

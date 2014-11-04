@@ -10,21 +10,15 @@ position: 1
 
 # Use with Prism
 
-
-
-## 
-
 The __RadTransitionControl__ can be used together with __Prism__ for defining regions. As it derives directly from the __ContentControl__, it is used in the same way as the __ContentControl__. Just set its __RegionName__ attached property to mark it as a region.
 
->tipIn order to access the __RegionName__ attached property you have to declare the following namespace:
+In order to access the __RegionName__ attached property you have to declare the following namespace:
 
 #### __XAML__
 
 {{region radtransition-how-to-use-with-prism_0}}
 	xmlns:Regions="clr-namespace:Microsoft.Practices.Composite.Presentation.Regions;assembly=Microsoft.Practices.Composite.Presentation"
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -35,11 +29,9 @@ The __RadTransitionControl__ can be used together with __Prism__ for defining re
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
+{{endregion}}
 
-
-
->tipYou can find more about __Prism__[here](http://compositewpf.codeplex.com/).
+>tipYou can find more about __Prism__ [here](http://compositewpf.codeplex.com/).
 
 # See Also
 

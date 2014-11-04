@@ -10,10 +10,6 @@ position: 0
 
 # Overview
 
-
-
-## Prerequisites
-
 The walkthrough in this section is intended for users who are familiar with developing applications for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} by using Visual Studio and know how to work with Telerik RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. You need the following components to complete this walkthrough:
 
 * Visual Studio 2010
@@ -26,10 +22,7 @@ Prior knowledge of the following concepts is also helpful, but not required to c
 
 * [WCF RIA Services](http://msdn.microsoft.com/en-us/library/ee707344%28v=VS.91%29.aspx){% endif %}
 
-* Entity Data Models and the ADO.NET Entity Framework. For more information, see 
-      		[Entity Data Model](http://msdn.microsoft.com/en-us/library/ee382825.aspx)
-      		and [Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx).
-      		
+* Entity Data Models and the ADO.NET Entity Framework. For more information, see [Entity Data Model](http://msdn.microsoft.com/en-us/library/ee382825.aspx) and [Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx).      		
 
 # See Also
 

@@ -10,7 +10,7 @@ position: 2
 
 # In Code-Behind
 
-This tutorial will walk you through the common tasks of [adding](#Adding_RadComboBoxItems) and [removing](#Removing_RadComboBoxItems) __RadComboBoxItems__ programmatically.
+This tutorial will walk you through the common tasks of [adding](#adding-radcomboboxitems) and [removing](#removing-radcomboboxitems) __RadComboBoxItems__ programmatically.
 
 Here is a regular __RadComboBox__ declaration without items:
 

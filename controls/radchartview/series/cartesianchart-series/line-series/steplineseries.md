@@ -18,8 +18,8 @@ This series is visualized on the screen as a line connecting all __DataPoints__.
 ## Declaratively defined series
 
 You can use the following definition to display a simple StepLineSeries
-
-	
+#### XAML
+	{{region radchartview-steplineseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -41,7 +41,7 @@ You can use the following definition to display a simple StepLineSeries
                 </telerik:StepLineSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-steplineseries](images/radchartview-series-steplineseries.png)
 
 # See Also

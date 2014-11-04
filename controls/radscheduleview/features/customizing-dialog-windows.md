@@ -10,14 +10,12 @@ position: 17
 
 # Customizing Dialog Windows
 
-
-
->To customize the ScheduleView dialogs, e.g. the window content, please read the following article:
-  		[Custom Dialogs]({%slug radscheduleview-features-custom-dialogs%})
+>To customize the ScheduleView dialogs, e.g. the window content, please read the following article: 
+[Custom Dialogs]({%slug radscheduleview-features-custom-dialogs%})
 
 The dialogs in RadScheduleView are displayed by default in RadWindow instances. The RadWindow properties can be customized or it can be entirely replaced with any other ContentControl.
-RadScheduleView uses the __IScheduleViewDialogHostFactory__ and __IScheduleViewDialogHost__ interfaces to abstract the dialog hosts and their generation. The default implementation of the IScheduleViewDialogHostFactory interface that creates RadWindow instances is named ScheduleViewDialogHostFactory.
 
+RadScheduleView uses the __IScheduleViewDialogHostFactory__ and __IScheduleViewDialogHost__ interfaces to abstract the dialog hosts and their generation. The default implementation of the IScheduleViewDialogHostFactory interface that creates RadWindow instances is named ScheduleViewDialogHostFactory.
 
 ## Customizing RadWindow properties
 
@@ -36,9 +34,7 @@ Create a new class, deriving from ScheduleViewDialogHostFactory and override the
 	        return host;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 Configure RadScheduleView to use the new class:
 
@@ -50,17 +46,14 @@ Configure RadScheduleView to use the new class:
 			<local:CustomScheduleViewDialogHostFactory />
 		</telerik:RadScheduleView.SchedulerDialogHostFactory>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Replacing RadWindow with ChildWindowWindow
 
 Create a new class, deriving from {% if site.site_name == 'WPF' %}Window{% endif %}{% if site.site_name == 'Silverlight' %}ChildWindow{% endif %} and implement the __IScheduleViewDialogHost__ interface:
-    {% if site.site_name == 'WPF' %}
 
+{% if site.site_name == 'WPF' %}
 #### __C#__
-
 {{region radscheduleview-features-customizing-dialog-windows_2}}
 	public class WindowDialogHost : Window, IScheduleViewDialogHost
 	{
@@ -94,12 +87,11 @@ Create a new class, deriving from {% if site.site_name == 'WPF' %}Window{% endif
 			}
 		}
 	}
-	{{endregion}}
+{{endregion}}
+{% endif %}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
+{% if site.site_name == 'Silverlight' %}
 #### __C#__
-
 {{region radscheduleview-features-customizing-dialog-windows_3}}
 	public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
 	{
@@ -137,15 +129,13 @@ Create a new class, deriving from {% if site.site_name == 'WPF' %}Window{% endif
 			this.Show();
 		}
 	}
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
 Create a new class and implement the __IScheduleViewDialogHostFactory__:
-    {% if site.site_name == 'WPF' %}
-
+    
+{% if site.site_name == 'WPF' %}
 #### __C#__
-
 {{region radscheduleview-features-customizing-dialog-windows_5}}
 	public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
 	{
@@ -162,14 +152,12 @@ Create a new class and implement the __IScheduleViewDialogHostFactory__:
 	        };
 	        return window;
 	    }
-	}
-	
-	{{endregion}}
+	}	
+{{endregion}}
+{% endif %}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
+{% if site.site_name == 'Silverlight' %}
 #### __C#__
-
 {{region radscheduleview-features-customizing-dialog-windows_4}}
 	public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactory
 	{
@@ -184,12 +172,10 @@ Create a new class and implement the __IScheduleViewDialogHostFactory__:
 	        return window;
 	     }    
 	}
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
-Configure RadScheduleView to use the new factory:
-    
+Configure RadScheduleView to use the new factory:    
 
 #### __XAML__
 
@@ -199,12 +185,11 @@ Configure RadScheduleView to use the new factory:
 			<local:CustomScheduleViewDialogHostFactory />
 		</telerik:RadScheduleView.SchedulerDialogHostFactory>
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'WPF' %}
-
-         
-      		![radscheduleview customizingdialogs wpf](images/radscheduleview_customizingdialogs_wpf.png){% endif %}{% if site.site_name == 'Silverlight' %}
-
-         
-      		![radscheduleview customizingdialogs](images/radscheduleview_customizingdialogs.png){% endif %}
+![radscheduleview customizingdialogs wpf](images/radscheduleview_customizingdialogs_wpf.png)
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+![radscheduleview customizingdialogs](images/radscheduleview_customizingdialogs.png)
+{% endif %}

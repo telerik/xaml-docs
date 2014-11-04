@@ -10,10 +10,6 @@ position: 6
 
 # Commands
 
-
-
-## 
-
 The __RadMenuItem__ control provides you with a standard __ICommandSource__ implementation. This means that you can bind your items to commands that will get executed when an item is clicked. For this purpose you can use the following properties.
 
 * __Command__ - gets the command that will be executed when the command source is invoked. 

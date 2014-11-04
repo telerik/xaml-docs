@@ -10,40 +10,30 @@ position: 3
 
 # How to configure the VisibleRange
 
-
-
 The built-in __RadScheduleView__ ViewDefinitions have specific ways to determine what the visible range will be when the CurrentDate property is set:
-			
-<table><th><tr><td>Type</td><td>VisibleRangeStart</td><td>VisibleDays</td></tr></th><tr><td>DayViewDefinition</td><td>CurrentDate</td><td>1</td></tr><tr><td>WeekViewDefinition</td><td>The first day of the week, containing CurrentDate</td><td>7</td></tr><tr><td>MonthViewDefinition</td><td>The first day of the first week of the month, containing CurrentDate</td><td>42</td></tr><tr><td>TimelineViewDefinition</td><td>CurrentDate</td><td>7</td></tr></table>
 
-
+Type	|	VisibleRangeStart	|	VisibleDays
+---	|	---	|	---
+DayViewDefinition	|	CurrentDate	|	1
+WeekViewDefinition	|	The first day of the week, containing CurrentDate	|	7
+MonthViewDefinition	|	The first day of the first week of the month, containing CurrentDate	|	42
+TimelineViewDefinition	|	CurrentDate	|	7
 
 >The VisibleRangeEnd is VisibleRangeStart+VisibleDays for all view definitions.
 
-
-
 >tipThe easiest way to create a WeekViewDefinition that behaves like the DayViewDefinition is to use a DayViewDefinition and set its VisibleDays=7.
 
-## 
-
-For advanced customization of the VisibleRange the ViewDefinitionBase class provides two virtual methods:
-				
+For advanced customization of the VisibleRange the ViewDefinitionBase class provides two virtual methods:				
 
 #### __C#__
 
 {{region radscheduleview-features-viewdefinitions-configure-visiblerange_0}}
 	protected virtual DateTime GetVisibleRangeStart (DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
-	
+
 	protected virtual DateTime GetVisibleRangeEnd(DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
-	
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-For example, the following class represents a MonthViewDefinition that starts from the first week of CurrentDate:
-   				
+For example, the following class represents a MonthViewDefinition that starts from the first week of CurrentDate:   				
 
 #### __C#__
 
@@ -55,11 +45,7 @@ For example, the following class represents a MonthViewDefinition that starts fr
 			return CalendarHelper.GetFirstDayOfWeek(currentDate, firstDayOfWeek.Value);
 		}
 	}
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 Since VisibleDays is 42 by default, this CustomMonthViewDefinition will display 6 weeks, as the standard MonthViewDefinition does.
 
@@ -73,6 +59,4 @@ Here is how to use the CustomMonthViewDefinition:
 			<local:CustomMonthViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}

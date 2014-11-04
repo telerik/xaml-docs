@@ -19,7 +19,8 @@ This series is visualized on the screen as a straight line connecting all __Data
 
 You can use the following definition to display a simple ScatterLineSeries
 
-	
+#### XAML
+	{{region radchartview-scatterlineseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:LinearAxis/>
@@ -41,7 +42,7 @@ You can use the following definition to display a simple ScatterLineSeries
                 </telerik:ScatterLineSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-scatterlineseries](images/radchartview-series-scatterlineseries.png)
 
 # See Also

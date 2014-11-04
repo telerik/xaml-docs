@@ -18,12 +18,7 @@ site_name: WPF
 The purpose of this tutorial is to show you how to integrate __RadChart__ and __RadContextMenu__ so they can nicely work together.
 
 The final result should look like the snapshot below.
-
-
-
-
-         
-      ![](images/RadChart_HowToRadContextMenuIntegration_010_WPF.png)
+![](images/RadChart_HowToRadContextMenuIntegration_010_WPF.png)
 
 Basically, the approach that will be demonstrated here combines the [MVVM support of RadChart]({%slug radchart-how-to-mvvm-support%}) with [RadChart data-binding]({%slug radchart-populating-with-data-data-binding-support-overview%}), and the data-binding functionality supported by the __RadMenu__ (__RadContextMenu__) control.
 
@@ -686,11 +681,11 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 You should note several things in the above code snippet:
 
-* Notice that the __ContextMenu__ is data bound to a property of your chart DatabItem instance. The __ChartDataItem__object exposes the desired menu items' structure (i.e. the chart control is data bound to a List of __ChartDataItem__ objects, and the __ChartDataItem__ class exposes __MenuItems__ property. __{Binding____DataItem.MenuItems}__ holds a reference to a specific __ChartDataItem__ instance).
+* Notice that the __ContextMenu__ is data bound to a property of your chart DatabItem instance. The __ChartDataItem__ object exposes the desired menu items' structure (i.e. the chart control is data bound to a List of __ChartDataItem__ objects, and the __ChartDataItem__ class exposes __MenuItems__ property. __{Binding____DataItem.MenuItems}__ holds a reference to a specific __ChartDataItem__ instance).
 
 * The __RadContextMenu__ can support hierarchical Menu structure as well (as with stand-alone Menu you need to create a __HierarchicalDataTemplate__ that specifies the __ItemsSource__, __ItemTemplate__ and other properties of the item's children).
 
-* For WPF you can use the __style binding__mechanism that allows you to bind properties of an item container (__RadMenuItem__, __RadTreeViewItem__, etc.) to the properties of the data object. Also you should set the __ItemContainerStyle__ property of the __RadContextMenu__.
+* For WPF you can use the __style binding__mechanism that allows you to bind properties of an item container ( __RadMenuItem__, __RadTreeViewItem__, etc.) to the properties of the data object. Also you should set the __ItemContainerStyle__ property of the __RadContextMenu__.
 
 The code snippet below shows you the full XAML code:
 

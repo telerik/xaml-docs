@@ -15,7 +15,7 @@ position: 17
 ## 
 
 There are scenarios in which you have too much Items in the Chart Legend. Since the Legend is trying to visualize all of them this causes to reduced space for the Chart. Even if you set a Width for the Chart Legend the items maybe chopped off (not quite visible).
-One possible solution is to decrease FontSize value of text and retemplate the LegendItemMarker to decreaze it's size too. This help topic will demonstrate another approach - how to add *ScrollViewer *(horizontal or/and vertical) in order to be able to show large number of chart legend items in a limited space.
+One possible solution is to decrease FontSize value of text and retemplate the LegendItemMarker to decreaze it's size too. This help topic will demonstrate another approach - how to add *ScrollViewer* (horizontal or/and vertical) in order to be able to show large number of chart legend items in a limited space.
 For the purpose you should retemplate the default Legend Style and add ScrollViewer in it:
 
 #### __XAML__
@@ -134,9 +134,6 @@ The sample Chart shown below has [LegendDisplayMode](http://www.telerik.com/help
 	{{endregion}}
 
 
-
-
-
 #### __VB.NET__
 
 {{region radchart-howto-customize-chart-legend-add-scrollviewer_2}}
@@ -158,13 +155,4 @@ The sample Chart shown below has [LegendDisplayMode](http://www.telerik.com/help
 
 
 The result can be seen on the following picture:
-
-
-
-
-
-
-         
-      ![](images/RadChart_HowTo_ScrollViewer.PNG)
-
-
+![](images/RadChart_HowTo_ScrollViewer.PNG)

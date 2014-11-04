@@ -10,11 +10,7 @@ position: 3
 
 # Styling the GroupHeaders
 
-
-
-It is a common scenario to use resources in RadScheduleView and group the appointments according to the resource they are assigned to. 
-        This article discussed how the GroupHeaders can be customized. Also it explains the use of GroupHeaderStyleSelector in order to apply separate styles to the GroupHeaders.
-      
+It is a common scenario to use resources in RadScheduleView and group the appointments according to the resource they are assigned to. This article discussed how the GroupHeaders can be customized. Also it explains the use of GroupHeaderStyleSelector in order to apply separate styles to the GroupHeaders.      
 
 Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Room” Resources:
 
@@ -48,64 +44,39 @@ Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Roo
 	        <telerik:TimelineViewDefinition />
 	    </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 This article will cover the following topics:
 
-* [How to generate and use the GroupHeaderStyleSelector;](#generate-and-use-groupheaderstyleselector)
+* [How to generate and use the GroupHeaderStyleSelector;](#generate-and-use-the-groupheaderstyleselector)
 
-* [How to create a custom GroupHeaderStyleSelector.](#create-custom-groupheaderstyleselector)
+* [How to create a custom GroupHeaderStyleSelector.](#create-a-custom-groupheaderstyleselector)
 
 ## Generate and use the GroupHeaderStyleSelector
 
-Any change on the appearance of a GroupHeader depends on the GroupHeaderStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical.
-        
+Any change on the appearance of a GroupHeader depends on the GroupHeaderStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical.        
 
 The GroupHeaderStyleSelector contains the following styles:
 
 * HorizontalGroupHeaderStyle, HorizontalBottomLevelGroupHeaderStyle
 
-
-
-
-         
-      ![](images/radscheduleview_horizontalgroupheaderstyle.png)
+![](images/radscheduleview_horizontalgroupheaderstyle.png)
 
 * HorizontalTodayGroupHeaderStyle, HorizontalBottomLevelTodayGroupHeaderStyle
 
-
-
-
-         
-      ![](images/radscheduleview_horizontaltodaygroupheaderstyle.png)
+![](images/radscheduleview_horizontaltodaygroupheaderstyle.png)
 
 * VerticalGroupHeaderStyle, VerticalBottomLevelGroupHeaderStyle
 
-
-
-
-         
-      ![](images/radscheduleview_verticalgroupheaderstyle.png)
+![](images/radscheduleview_verticalgroupheaderstyle.png)
 
 * VerticalTodayGroupHeaderStyle,  VerticalBottomLevelTodayGroupHeaderStyle
 
-
-
-
-         
-      ![](images/radscheduleview_verticaltodaygroupheaderstyle.png)
+![](images/radscheduleview_verticaltodaygroupheaderstyle.png)
 
 * MonthViewWeekGroupStyle, MonthViewBottomLevelWeekGroupStyle
 
-
-
-
-         
-      ![](images/radscheduleview_monthviewweekgroupstyle.png)
-
-
+![](images/radscheduleview_monthviewweekgroupstyle.png)
 
 Choose one of the following approaches to obtain the source code of GroupHeaderStyleSelector:
 
@@ -125,72 +96,70 @@ The end result should include the following:
 	<!-- Brushes -->
 	...
 	<!-- Styles-->
-			<ControlTemplate x:Key="GroupHeaderButtonControlTemplate" TargetType="local:GroupHeaderButton">
-				...
-			</ControlTemplate>
-	
-			<Style x:Key="GroupHeaderButtonStyle" TargetType="local:GroupHeaderButton">
-				...
-			</Style>
-	
-			<local:NullToBooleanConverter x:Key="NullToBooleanConverter" />
-			<ControlTemplate x:Key="GroupHeaderTemplate"  TargetType="local:GroupHeader">
-				...
-			</ControlTemplate>
-	
-			<Style x:Key="GroupHeaderBaseStyle" TargetType="local:GroupHeader">
-				...
-			</Style>
-			<Style TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}" />
-	
-			<Style x:Key="HorizontalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="HorizontalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="HorizontalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="VerticalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="VerticalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="VerticalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="VerticalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="MonthViewWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<Style x:Key="MonthViewBottomLevelWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-				...
-			</Style>
-			<!-- GroupHeaderStyleSelector -->
-			<local:OrientedGroupHeaderStyleSelector x:Key="GroupHeaderStyleSelector"
-				HorizontalStyle="{StaticResource HorizontalGroupHeaderStyle}"
-				HorizontalTodayStyle="{StaticResource HorizontalTodayGroupHeaderStyle}"
-				HorizontalBottomLevelStyle="{StaticResource HorizontalBottomLevelGroupHeaderStyle}"
-				HorizontalTodayBottomLevelStyle="{StaticResource HorizontalBottomLevelTodayGroupHeaderStyle}"
-				
-				VerticalStyle="{StaticResource VerticalGroupHeaderStyle}"
-				VerticalTodayStyle="{StaticResource VerticalTodayGroupHeaderStyle}"
-				VerticalBottomLevelStyle="{StaticResource VerticalBottomLevelGroupHeaderStyle}"
-				VerticalTodayBottomLevelStyle="{StaticResource VerticalBottomLevelTodayGroupHeaderStyle}"
-				
-				MonthViewWeekGroupStyle="{StaticResource MonthViewWeekGroupStyle}"
-				MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}">
-			</local:OrientedGroupHeaderStyleSelector>
-	{{endregion}}
+	<ControlTemplate x:Key="GroupHeaderButtonControlTemplate" TargetType="local:GroupHeaderButton">
+		...
+	</ControlTemplate>
 
+	<Style x:Key="GroupHeaderButtonStyle" TargetType="local:GroupHeaderButton">
+		...
+	</Style>
 
+	<local:NullToBooleanConverter x:Key="NullToBooleanConverter" />
+	<ControlTemplate x:Key="GroupHeaderTemplate"  TargetType="local:GroupHeader">
+		...
+	</ControlTemplate>
+
+	<Style x:Key="GroupHeaderBaseStyle" TargetType="local:GroupHeader">
+		...
+	</Style>
+	<Style TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}" />
+
+	<Style x:Key="HorizontalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="HorizontalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="HorizontalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="VerticalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="VerticalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="VerticalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="VerticalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="MonthViewWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<Style x:Key="MonthViewBottomLevelWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		...
+	</Style>
+	<!-- GroupHeaderStyleSelector -->
+	<local:OrientedGroupHeaderStyleSelector x:Key="GroupHeaderStyleSelector"
+		HorizontalStyle="{StaticResource HorizontalGroupHeaderStyle}"
+		HorizontalTodayStyle="{StaticResource HorizontalTodayGroupHeaderStyle}"
+		HorizontalBottomLevelStyle="{StaticResource HorizontalBottomLevelGroupHeaderStyle}"
+		HorizontalTodayBottomLevelStyle="{StaticResource HorizontalBottomLevelTodayGroupHeaderStyle}"
+		
+		VerticalStyle="{StaticResource VerticalGroupHeaderStyle}"
+		VerticalTodayStyle="{StaticResource VerticalTodayGroupHeaderStyle}"
+		VerticalBottomLevelStyle="{StaticResource VerticalBottomLevelGroupHeaderStyle}"
+		VerticalTodayBottomLevelStyle="{StaticResource VerticalBottomLevelTodayGroupHeaderStyle}"
+		
+		MonthViewWeekGroupStyle="{StaticResource MonthViewWeekGroupStyle}"
+		MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}">
+	</local:OrientedGroupHeaderStyleSelector>
+{{endregion}}
 
 Note the use of the local namespace from the raw source:
 
@@ -198,9 +167,7 @@ Note the use of the local namespace from the raw source:
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_2}}
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
-	{{endregion}}
-
-
+{{endregion}}
 
 The selector is applied to our instance of RadScheduleView:
 
@@ -208,9 +175,7 @@ The selector is applied to our instance of RadScheduleView:
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_3}}
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" GroupHeaderStyleSelector="{StaticResource GroupHeaderStyleSelector}">
-	{{endregion}}
-
-
+{{endregion}}
 
 Now we can apply any customization to the GroupHeaders and watch the change. Let’s for example modify __HorizontalBottomLevelStyle__ – change the color and style of the headers:
 
@@ -224,17 +189,11 @@ Now we can apply any customization to the GroupHeaders and watch the change. Let
 		<Setter Property="Foreground" Value="Red"/>
 		<Setter Property="FontStyle" Value="Italic"/>
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
-
-
-
-         
-      ![](images/radscheduleview_horizontalgroupheaderstyleexample.png)
+![](images/radscheduleview_horizontalgroupheaderstyleexample.png)
 
 ## Create a custom GroupHeaderStyleSelector
 
@@ -265,11 +224,7 @@ In order to set different styles to the different Resource GroupHeaders , we sho
 	        return base.SelectStyle(item, container, activeViewDeifinition);
 	    }
 	}
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -307,9 +262,7 @@ In order to set different styles to the different Resource GroupHeaders , we sho
 	        Return MyBase.SelectStyle(item, container, activeViewDeifinition)
 	    End Function
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Add the Styles to the XAML:
 
@@ -329,9 +282,7 @@ Add the Styles to the XAML:
 	          </Style>
 	      </local:CustomGroupHeaderStyleSelector.DateStyle>
 	</local:CustomGroupHeaderStyleSelector>
-	{{endregion}}
-
-
+{{endregion}}
 
 And finally set the GroupHeaderStyleSelector property of the RadScheduleView:
 
@@ -339,14 +290,6 @@ And finally set the GroupHeaderStyleSelector property of the RadScheduleView:
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_8}}
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}"   GroupHeaderStyleSelector="{StaticResource CustomGroupHeaderStyleSelector}">
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-
-
-         
-      ![](images/radscheduleview_customgroupheaderexample.png)
+![](images/radscheduleview_customgroupheaderexample.png)

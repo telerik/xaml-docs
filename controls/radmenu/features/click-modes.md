@@ -10,10 +10,6 @@ position: 10
 
 # Click Modes
 
-
-
-## 
-
 By default if an item in the __RadMenu__ control is clicked, the menu gets closed. You are able to control this behavior by setting the __StaysOpenOnClick__ property of the __RadMenuItem__. The default value is __False__.
 
 If you set this property to __True__, the menu won't get closed upon a click on the item.
@@ -21,11 +17,8 @@ If you set this property to __True__, the menu won't get closed upon a click on 
 #### __XAML__
 
 {{region radmenu-features-click-modes_0}}
-	<telerik:RadMenuItem Header="Sidebar"
-	                     StaysOpenOnClick="True" />
-	{{endregion}}
-
-
+	<telerik:RadMenuItem Header="Sidebar" StaysOpenOnClick="True" />
+{{endregion}}
 
 ![](images/RadMenu_Click_Modes_01.png)
 

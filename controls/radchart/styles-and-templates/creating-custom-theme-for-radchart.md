@@ -26,7 +26,7 @@ If you want to completely change to look and feel of the __RadChart__ control, y
 
 * [Telerik Approach](http://www.telerik.com/help/silverlight/common-styling-apperance-themes-custom-theme-project-telerik-approach.html)
 
-Note that when using the __Telerik Custom Theme Approach__to create a new theme, you have to copy and paste the file containing the default theme for the __RadChart__. This is described in the 4th step of the tutorial in the [respective topic](http://www.telerik.com/help/silverlight/common-styling-apperance-themes-custom-theme-project-telerik-approach.html).
+Note that when using the __Telerik Custom Theme Approach__ to create a new theme, you have to copy and paste the file containing the default theme for the __RadChart__. This is described in the 4th step of the tutorial in the [respective topic](http://www.telerik.com/help/silverlight/common-styling-apperance-themes-custom-theme-project-telerik-approach.html).
 
 However the __RadChart__ control requires a few additional steps here. The __Chart.xaml__ file that contains the default styles and resources for the __RadChart__, contains also a set of storyboards. There is one set for each of the built-in themes. In order to use your custom theme with the __RadChart__ you have to define such a set of storyboards for your theme too. You can easily copy one of the already existing sets, and just change the names of the storyboards.
 
@@ -232,5 +232,3 @@ Here is a code snippet containing all the storyboards named for the __MyTheme__.
 	</Storyboard>
 	<!-- Custom Theme Animation END -->
 	{{endregion}}
-
-

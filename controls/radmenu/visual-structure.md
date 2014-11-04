@@ -30,7 +30,7 @@ When a menu item is selected it gets expanded and its sub items appear. See the 
 
 * __Icon__ - part of the __RadMenuItem__ that allows you to display a picture.
 
-* __Popup____Area__ - the part of the __RadMenuItem__ that contains the child __RadMenuItems__. It appears only when the parent __RadMenuItem__ is selected.
+* __Popup__ __Area__ - the part of the __RadMenuItem__ that contains the child __RadMenuItems__. It appears only when the parent __RadMenuItem__ is selected.
 
 >tipFor more detailed descriptions of the required parts of the control please take a look at the [Templates Structure]({%slug radmenu-styles-and-templates-templates-structure%}) topic.
 

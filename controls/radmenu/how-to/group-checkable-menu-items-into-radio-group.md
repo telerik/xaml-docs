@@ -55,7 +55,7 @@ Here is a sample __RadMenu__ and one of its items has two radio groups. Notice t
 
 ## Handling the ItemClick Event
 
-The next step is to handle the __ItemClick__ event of the __RadMenu.__It gets fired each time an item gets clicked__.__
+The next step is to handle the __ItemClick__ event of the __RadMenu.__ It gets fired each time an item gets clicked __.__
 
 #### __XAML__
 
@@ -236,7 +236,7 @@ When having __RadMenu__ with dynamic data in it, the logic remains the same, but
 	End Class
 {{endregion}}
 
-These properties should be bound in the __Style__for the __RadMenuItem__ container to its respective properties:
+These properties should be bound in the __Style__ for the __RadMenuItem__ container to its respective properties:
 
 #### __XAML__
 

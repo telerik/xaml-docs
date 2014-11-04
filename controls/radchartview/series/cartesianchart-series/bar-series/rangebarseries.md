@@ -19,7 +19,8 @@ This series is visualized on the screen as separate rectangles representing each
 
 You can use the following definition to display a simple RangeBarSeries
 
-	
+#### XAML
+	{{region radchartview-rangebarseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -41,7 +42,7 @@ You can use the following definition to display a simple RangeBarSeries
                 </telerik:RangeBarSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-rangebarseries](images/radchartview-series-rangebarseries.png)
 
 # See Also

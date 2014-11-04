@@ -39,10 +39,8 @@ The Marker is a scale indicator that points to a value along a scale. It is a sm
 The Marker supports the following features:
 
 1. Layout 
-			
 
 1. You can set location of the Marker relative to a scale bar using Location property.
-					
 
 1. Outside - the marker is located at left of the scale
 

@@ -15,9 +15,7 @@ position: 1
 In __RadDiagram__ you can easily pan, zoom in or out of your current diagramming structure. This tutorial will get you familiar with the pan and zoom implementation within the __Diagramming Framework__.
             
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-                    {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-                    article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
                 
 
 ## Pan
@@ -31,19 +29,16 @@ In order to start a panning operation you need to either hold down the __Ctrl ke
 You can also activate the __Pan__[ MouseTool]({%slug raddiagrams-features-mouse-tools%}) to start a pan operation simply by dragging the current viewport with the mouse.
                 
 
-## 
-                Pan Animation
+## Pan Animation
             
 
 The __DiagrammingFramework__ also provides a built-in pan animation. By default this animation isn't activated which means that you have to manually activate it in case you need to utilize it in your solution. The animation can be set through the __DiagramAnimations.IsPanAnimationEnabled__ attached property.
                 
+#### __XAML__
 
-	
-                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-                    ...
-                  <telerik:RadDiagram telerik:DiagramAnimations.IsPanAnimationEnabled="True" />
-                  
-
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    ...
+    <telerik:RadDiagram telerik:DiagramAnimations.IsPanAnimationEnabled="True" />
 
 
 ## Pan Events
@@ -57,8 +52,7 @@ __RadDiagram__ exposes two panning events:
 * The __sender__ argument that contains the __RadDiagram__ instance that fired the event.
                                 
 
-* A {% if site.site_name == 'WPF' %}[PositionChangedRoutedEventArgs](http://www.telerik.com/help/wpf/t_telerik_windows_controls_diagrams_positionchangedroutedeventargs.html){% endif %}{% if site.site_name == 'Silverlight' %}[PositionChangedRoutedEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_diagrams_positionchangedroutedeventargs.html){% endif %} object that provides information regarding the current and the next position of the diagram through the __OldPosition__ and __NewPosition__ properties.
-                                This event can be handled to cancel a particular pan operation. For that purpose the __PositionChangedRoutedEventArgs Handled__ property needs to be set to __True__.
+* A {% if site.site_name == 'WPF' %}[PositionChangedRoutedEventArgs](http://www.telerik.com/help/wpf/t_telerik_windows_controls_diagrams_positionchangedroutedeventargs.html){% endif %}{% if site.site_name == 'Silverlight' %}[PositionChangedRoutedEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_diagrams_positionchangedroutedeventargs.html){% endif %} object that provides information regarding the current and the next position of the diagram through the __OldPosition__ and __NewPosition__ properties. This event can be handled to cancel a particular pan operation. For that purpose the __PositionChangedRoutedEventArgs Handled__ property needs to be set to __True__.
                         
 
 * __Pan__ - this event is raised by the __RadDiagram__ to inform that a pan operation has completed. Its event handler receives two arguments:
@@ -254,17 +248,16 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 
 ![raddiagram-features-zoom-methods](images/raddiagram-features-zoom-methods.png)
 
-## 
-                Zoom Animation
+## Zoom Animation
             
 
 The __DiagrammingFramework__ also provides a built-in zoom animation. By default this animation is activated, but you can easily deactivate and activate it again through the __DiagramAnimations.IsZoomAnimationEnabled__ attached property.
                 
 
-	
-                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-                    ...
-                  <telerik:RadDiagram telerik:DiagramAnimations.IsZoomAnimationEnabled="True" />
+	#### __XAML__
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    ...
+  <telerik:RadDiagram telerik:DiagramAnimations.IsZoomAnimationEnabled="True" />
                   
 
 
@@ -292,8 +285,7 @@ __RadDiagram__ exposes two zooming events:
 * __ZoomPoint__ - a __Point__ value representing the center point of the zoom operation.
                                         
 
-* __IsAnimationRunning__ - a __boolean__ value indicating whether a zoom animation is currently running.
-                                        This event can be handled to cancel a particular zoom operation. For that purpose the __DiagramZoomEventArgs Handled__ property needs to be set to __True__.
+* __IsAnimationRunning__ - a __boolean__ value indicating whether a zoom animation is currently running. This event can be handled to cancel a particular zoom operation. For that purpose the __DiagramZoomEventArgs Handled__ property needs to be set to __True__.
                         
 
 * __ZoomChanged__ - this event is raised by the __RadDiagram__ to inform that a zoom operation has completed. Its event handler receives two arguments:
@@ -302,11 +294,7 @@ __RadDiagram__ exposes two zooming events:
 * The __sender__ argument that contains the __RadDiagram__ instance that fired the event.
                                 
 
-* A {% if site.site_name == 'WPF' %}[
-                                                RadRoutedPropertyChangedEventArgs<double>
-                                            ](http://www.telerik.com/help/wpf/t_telerik_windows_radroutedpropertychangedeventargs_1.html){% endif %}{% if site.site_name == 'Silverlight' %}[
-                                                RadRoutedPropertyChangedEventArgs<double>
-                                            ](http://www.telerik.com/help/silverlight/t_telerik_windows_radroutedpropertychangedeventargs_1.html){% endif %} object that provides information regarding the old and the new value of the diagram zoom through the __OldValue__ and __NewValue__ properties.
+* A {% if site.site_name == 'WPF' %}[RadRoutedPropertyChangedEventArgs<double>](http://www.telerik.com/help/wpf/t_telerik_windows_radroutedpropertychangedeventargs_1.html){% endif %}{% if site.site_name == 'Silverlight' %}[RadRoutedPropertyChangedEventArgs<double>](http://www.telerik.com/help/silverlight/t_telerik_windows_radroutedpropertychangedeventargs_1.html){% endif %} object that provides information regarding the old and the new value of the diagram zoom through the __OldValue__ and __NewValue__ properties.
                                 
 
 >Please note that if you handle the __PreviewZoom__ event, the __ZoomChanged__ event will not be fired at all.
@@ -326,8 +314,7 @@ __RadDiagram__ also allows you to auto fit its items using the following methods
 __RadDiagram__ also exposes an __AutoFit__ command. In order to use it in your solution, you can follow the steps outlined in the [Commands]({%slug raddiagrams-features-commands%}) tutorial.
 		  
 
-## 
-                Customizing the Zoom operation
+## Customizing the Zoom operation
             
 
 As described above, the zoom operation uses an arithmetic progression to increase/decrease the zoom. By default the common difference used to build the progression is 0.5. This is why once you start zooming in, the __RadDiagram Zoom__ value changes like follows: 1->1.5->2->2.5...
@@ -336,7 +323,7 @@ As described above, the zoom operation uses an arithmetic progression to increas
 If you need to change the default behavior, the best place to plug-in and customize that logic, is the __RadDiagram PreviewZoom__ event. Below we will examine two examples of a customized zoom:
                 
 
-1. __Zooming RadDiagram using a geometric progression__ so that the __Zoom__ value changes in the following manner: 1->1.5->2.25->3.75... This means that we need to use a common ratio of 1.5:
+##### 1. Zooming RadDiagram using a geometric progression so that the __Zoom__ value changes in the following manner: 1->1.5->2.25->3.75... This means that we need to use a common ratio of 1.5:
                         
 
 #### __XAML__
@@ -389,7 +376,7 @@ If you need to change the default behavior, the best place to plug-in and custom
 
 
 
-1. __Zooming RadDiagram using a custom set of zoom values:__
+##### 2. Zooming RadDiagram using a custom set of zoom values:
 
 #### __XAML__
 

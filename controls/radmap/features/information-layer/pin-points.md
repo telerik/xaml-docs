@@ -12,30 +12,25 @@ position: 6
 
 
 
-The __MapPinPoint__ class is designed to represent __Point__
-        objects from __KML__ files. However, it can be also used outside the
-        __KML__ context in order to mark points of interest (POIs)
-        or something else.
+The __MapPinPoint__ class is designed to represent __Point__ objects from __KML__ files. However, it can be also used outside the __KML__ context in order to mark points of interest (POIs) or something else.
       
 
 This topic will focus on the following:
 
-* [Adding a MapPinPoint](#Adding_a_MapPinPoint)
+* [Adding a MapPinPoint](#adding-a-mappinpoint)
 
-* [Configuring the MapPinPoint](#Configuring_the_MapPinPoint)
+* [Configuring the MapPinPoint](#configuring-the-mappinpoint)
 
-* [Setting MapPinPoint's Content](#Setting_MapPinPoints_Content)
+* [Setting MapPinPoint's Content](#setting-mappinpoints-content)
 
-* [Modifying the MapPinPoint's appearance](#Modifying_the_MapPinPoints_appearance)
+* [Modifying the MapPinPoint's appearance](#modifying-the-mappinpoints-appearance)
 
 ## Adding a MapPinPoint
 
-To insert a pin point on your map you have to add a __MapPinPoint__ object to
-          your __InformationLayer__.
+To insert a pin point on your map you have to add a __MapPinPoint__ object to your __InformationLayer__.
         
 
->tipTo learn more about the __Information Layer__ read
-            [here]({%slug radmap-features-information-layer%}).
+>tipTo learn more about the __Information Layer__ read [here]({%slug radmap-features-information-layer%}).
           
 
 Here is an example.
@@ -57,9 +52,7 @@ Here is an example.
 
 ## Configuring the MapPinPoint
 
-In order to configure the position of the __MapPinPoint__ you have to
-          set the __Location__ attached property of the
-          __MapLayer__ class. Here is an example:
+In order to configure the position of the __MapPinPoint__ you have to set the __Location__ attached property of the __MapLayer__ class. Here is an example:
         
 
 #### __XAML__
@@ -77,12 +70,10 @@ In order to configure the position of the __MapPinPoint__ you have to
 
 
 
-In order to position the pin point more precisely you can use the __MapLayer.HotSpot__
-          attached property. Here is an example.
+In order to position the pin point more precisely you can use the __MapLayer.HotSpot__ attached property. Here is an example.
         
 
->tipTo learn more about the __HotSpot__ functionality read
-            [here]({%slug radmap-features-hot-spots%}).
+>tipTo learn more about the __HotSpot__ functionality read [here]({%slug radmap-features-hot-spots%}).
           
 
 #### __XAML__
@@ -109,11 +100,7 @@ With these values defined, the __MapPinPoint__ will be placed above the location
 
 ## Setting MapPinPoint's Content
 
-By default the __MapPinPoint__ exposes two properties that allow you
-          to set its content. The __Text__ property allows you to specify
-          a string for the __MapPinPoint__ and the
-          __ImageSource__ allows you to specify
-          an image to display.
+By default the __MapPinPoint__ exposes two properties that allow you to set its content. The __Text__ property allows you to specify a string for the __MapPinPoint__ and the __ImageSource__ allows you to specify an image to display.
         
 
 Here is an example.
@@ -139,12 +126,13 @@ Here is an example.
 
 
 
-Here is a snapshot of the result.![](images/RadMap_Features_PinPoints_01.png)
+Here is a snapshot of the result.
+
+![](images/RadMap_Features_PinPoints_01.png)
 
 ## Modifying the MapPinPoint's appearance
 
-As you can see in the previous section the __MapPinPoint__ doesn't look very good.
-          In order to boost its appearance you can use the standard properties:
+As you can see in the previous section the __MapPinPoint__ doesn't look very good. In order to boost its appearance you can use the standard properties:
         
 
 * __Background__
@@ -182,7 +170,9 @@ Here is an example.
 
 
 
-Here is a snapshot of the final result.![](images/RadMap_Features_PinPoints_02.png)
+Here is a snapshot of the final result.
+
+![](images/RadMap_Features_PinPoints_02.png)
 
 # See Also
 

@@ -20,7 +20,7 @@ Along with [tooltip]({%slug radchartview-features-tooltip%}) and [pan/zoom]({%sl
 
 The last capability of the the trackball behavior is to display a small popup, similar to the tooltip, in order to provide more detailed information about the closest points to the track ball line's cross section, as can be seen in the screenshot above.
 
-The ChartTrackballBehavior exposes three properties and an event. These are __ShowTrackInfo__, __ShowIntersectionPoints__, __SnapMode__and the event is called __TrackInfoUpdated__. ShowTrackInfo and ShowIntersectionPoints enable and disable the popup and the intersection circles respectively. It is important to note that the intersection points can be visually modified by ChartSeries' __TrackBallTemplate__ property and can therefore have an arbitrary visualization. The track info can also be specified as a different template and this can be done with ChartSeries' __TrackInfoTemplate__ property. Below is an example of how to modify the track ball and track info templates. The color of the track ball line can be modified via RadChartView's __TrackBallLineStyle__ property. It is of type Style and it must target the PolyLine class because the trackball behavior uses a PolyLine internally.
+The ChartTrackballBehavior exposes three properties and an event. These are __ShowTrackInfo__, __ShowIntersectionPoints__, __SnapMode__ and the event is called __TrackInfoUpdated__. ShowTrackInfo and ShowIntersectionPoints enable and disable the popup and the intersection circles respectively. It is important to note that the intersection points can be visually modified by ChartSeries' __TrackBallTemplate__ property and can therefore have an arbitrary visualization. The track info can also be specified as a different template and this can be done with ChartSeries' __TrackInfoTemplate__ property. Below is an example of how to modify the track ball and track info templates. The color of the track ball line can be modified via RadChartView's __TrackBallLineStyle__ property. It is of type Style and it must target the PolyLine class because the trackball behavior uses a PolyLine internally.
 
 __Specifying a custom TrackBallTemplate__
 
@@ -187,9 +187,4 @@ ChartTrackballBehavior provides a TrackInfoUpdated event which fires as the user
 	End Sub
 	{{endregion}}
 
-
-
-
-
-       
-            ![Rad Charting Kit-chart behaviors trackballinfoupdated](images/radchartview-chart_behaviors_trackballinfoupdated.png)
+![Rad Charting Kit-chart behaviors trackballinfoupdated](images/radchartview-chart_behaviors_trackballinfoupdated.png)

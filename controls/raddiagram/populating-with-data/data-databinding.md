@@ -25,7 +25,7 @@ The following article will show you how to bind the __RadDiagram__ to ViewModel 
 In order to bind a __RadDiagram__ successfully you have to use its __GraphSource__ property and create a collection that implements the __IGraphSource__ or __IGraphSource<T>.__
 		  The __IGraphSource__ interface basically describes the elements (items and links (or nodes or edges)) of an __MVVM__ graph source.
 		
-
+#### __C#__
 {{region raddiagram-data-databinding-0}}
 	public interface IGraphSource
 	{
@@ -40,7 +40,7 @@ In order to bind a __RadDiagram__ successfully you have to use its __GraphSource
 	}
 	{{endregion}}
 
-
+#### __VB.NET__
 
 {{region raddiagram-data-databinding-0}}
 	Public Interface IGraphSource
@@ -58,7 +58,7 @@ In order to bind a __RadDiagram__ successfully you have to use its __GraphSource
 
 
 So let's start with creating a ViewModel for the nodes of our Graph (Diagram). We will create the class PascalNode that will have 'Position' property of type Point and 'PascalNumber' of type int:
-
+#### __C#__
 {{region raddiagram-data-databinding-1}}
 	public class PascalNode
 	{
@@ -76,7 +76,7 @@ So let's start with creating a ViewModel for the nodes of our Graph (Diagram). W
 	{{endregion}}
 
 
-
+#### __VB.NET__
 {{region raddiagram-data-databinding-1}}
 	Public Class PascalNode
 	    Public Property Position() As Point
@@ -88,7 +88,7 @@ So let's start with creating a ViewModel for the nodes of our Graph (Diagram). W
 
 Now we need a ViewModel for the edges (links) of the Graph. Let's call it PascalEdge. Note that this class must implement the __ILink<PascalNode>__ interface:
 		
-
+#### __C#__
 {{region raddiagram-data-databinding-2}}
 	public class PascalEdge : ILink<PascalNode>
 	{
@@ -130,7 +130,7 @@ Now we need a ViewModel for the edges (links) of the Graph. Let's call it Pascal
 	{{endregion}}
 
 
-
+#### __VB.NET__
 {{region raddiagram-data-databinding-2}}
 	Public Class PascalEdge
 	    Implements ILink(Of PascalNode)
@@ -160,7 +160,7 @@ Now we need a ViewModel for the edges (links) of the Graph. Let's call it Pascal
 
 
 Now we can successfully create an IGraphSource class to hold collection of nodes and edges:
-
+#### __C#__
 {{region raddiagram-data-databinding-3}}
 	public class PascalTriangleGraphSource : IGraphSource
 	{
@@ -195,7 +195,7 @@ Now we can successfully create an IGraphSource class to hold collection of nodes
 	{{endregion}}
 
 
-
+#### __VB.NET__
 {{region raddiagram-data-databinding-3}}
 	Public Class PascalTriangleGraphSource
 	    Implements IGraphSource
@@ -241,7 +241,7 @@ Now we can successfully create an IGraphSource class to hold collection of nodes
 
 
 Our next step is to create a function that accepts integer as a parameter and fills the GraphSource collection with PascalNodes and PascalEdges:
-
+#### __C#__
 {{region raddiagram-data-databinding-4}}
 	const int ROOT_X_Position = 400;
 	const int ROOT_Y_Position = 20;
@@ -297,7 +297,7 @@ Our next step is to create a function that accepts integer as a parameter and fi
 	{{endregion}}
 
 
-
+#### __VB.NET__
 {{region raddiagram-data-databinding-4}}
 	Private Const ROOT_X_Position As Integer = 400
 	Private Const ROOT_Y_Position As Integer = 20
@@ -347,10 +347,9 @@ Our next step is to create a function that accepts integer as a parameter and fi
 
 ## Configuring XAML
 
-Now let's take care of our Shapes and Connections' look and feel. We have to bind the Shapes' Position property and define ContentTemplate to show the PascalNumber. On the other hand, we have to create an empty ContentTemplate for the Connections if we don't want the default one - the name of the ViewModel's class shown in a TextBlock.
-		  We will also define a TargetCapType for the edges.
+Now let's take care of our Shapes and Connections' look and feel. We have to bind the Shapes' Position property and define ContentTemplate to show the PascalNumber. On the other hand, we have to create an empty ContentTemplate for the Connections if we don't want the default one - the name of the ViewModel's class shown in a TextBlock. We will also define a TargetCapType for the edges.
 		
-
+#### __XAML__
 {{region raddiagram-data-databinding-0}}
 	  <Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
@@ -394,21 +393,21 @@ Now let's take care of our Shapes and Connections' look and feel. We have to bin
 
 The final step is to bind the View to the ViewModels:
 		
-
+#### __C#__
 	
 		  this.diagram.GraphSource = CreatePascalTriangleGraphSource(7);
 		
 
 
 
-	
+	#### __VB.NET__
 		  Me.diagram.GraphSource = CreatePascalTriangleGraphSource(7)
 		
 
 
 
 Below you can see the result - __Pascal____Triangle__ with seven levels represented by __RadDiagram__:
-		![raddiagrams populating with data data binding](images/raddiagrams_populating_with_data_data_binding.png)
+![raddiagrams populating with data data binding](images/raddiagrams_populating_with_data_data_binding.png)
 
 ## Two-Way MVVM
 
@@ -417,11 +416,9 @@ In Q2 2012 we improved the MVVM support by adding two-way changes, i.e. changes 
 In order to make use of the two-way binding the data source should implement the __IObservableGraphSource__ interface which extends the __IGraphSource__ interface with some methods called by __RadDiagram__ when Items are added or removed in the diagram.
 		
 
-The simplest way to use the __IObservableGraphSource__ is via its default implementation in the Extensions library.
-		  The __ObservableGraphSourceBase__ contains Add and Remove methods which can and should be overriden to make sure that any changes in the view (__RadDiagram__ canvas), will be reflected in the ViewModel.
-		  Let's take a simple example. Define first a data entity called Person:
+The simplest way to use the __IObservableGraphSource__ is via its default implementation in the Extensions library. The __ObservableGraphSourceBase__ contains Add and Remove methods which can and should be overriden to make sure that any changes in the view (__RadDiagram__ canvas), will be reflected in the ViewModel. Let's take a simple example. Define first a data entity called Person:
 		
-
+#### __C#__
 {{region raddiagram-data-databinding-5}}
 	public class Person : NodeViewModelBase 
 	{ 
@@ -451,7 +448,7 @@ The simplest way to use the __IObservableGraphSource__ is via its default implem
 	{{endregion}}
 
 
-
+#### __VB.NET__
 {{region raddiagram-data-databinding-5}}
 	Public Class Person
 		Inherits NodeViewModelBase
@@ -478,7 +475,7 @@ The simplest way to use the __IObservableGraphSource__ is via its default implem
 
 
 Next, define a graph source deriving from the __ObservableGraphSourceBase<TNode,TLink>__ class as follows:
-
+#### __C#__
 {{region raddiagram-data-databinding-6}}
 	public class DataStore : ObservableGraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>> 
 		{ 
@@ -497,7 +494,7 @@ Next, define a graph source deriving from the __ObservableGraphSourceBase<TNode,
 		}
 	{{endregion}}
 
-
+#### __VB.NET__
 
 {{region raddiagram-data-databinding-6}}
 	Public Class DataStore
@@ -520,7 +517,7 @@ Next, define a graph source deriving from the __ObservableGraphSourceBase<TNode,
 
 
 This model is bound to a RadTreeView and a RadDiagram in XAML:
-
+#### __XAML__
 {{region raddiagram-data-databinding-1}}
 	<telerik:RadDiagram x:Name="diagram" GraphSource="{Binding }" />
 	
@@ -543,7 +540,7 @@ An item has been created in the MVVM model (the empty treeview item) as a result
 
 For this purpose you need to override the AddNode method in the Datastore, for example:
 
-	
+	#### __C#__
 		  public override void AddNode(NodeViewModelBase node)
 		  {
 		  if (!(node is Person)) node = new Person("New Person!");
@@ -551,9 +548,7 @@ For this purpose you need to override the AddNode method in the Datastore, for e
 		  }
 		
 
-
-
-	
+#### __VB.NET__
 		  Public Overrides Sub AddNode(node As NodeViewModelBase)
 		  If Not (TypeOf node Is Person) Then
 		  node = New Person("New Person!")
@@ -561,10 +556,9 @@ For this purpose you need to override the AddNode method in the Datastore, for e
 		  MyBase.AddNode(node)
 		  End Sub
 		
+Below you can see the desired result:
 
-
-
-Below you can see the desired result:![raddiagram-databindig-mvvm-2way 3](images/raddiagram-databindig-mvvm-2way3.png)
+![raddiagram-databindig-mvvm-2way 3](images/raddiagram-databindig-mvvm-2way3.png)
 
 # See Also
 

@@ -155,10 +155,10 @@ To be able to change the selected element(s) appearance we'll use Selection Pale
 
 
 
-A sample result can be seen below:![Rad Chart View-chart selection](images/RadChartView-chart_selection.PNG)
+A sample result can be seen below:
+![Rad Chart View-chart selection](images/RadChartView-chart_selection.PNG)
 
-Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where
-          we can easily determine the datapoint clicked, the series it belongs to and was it selected or de-selected:
+Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where we can easily determine the datapoint clicked, the series it belongs to and was it selected or de-selected:
         
 
 #### __C#__
@@ -222,8 +222,7 @@ Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where
 
 
 
->For Line/Area/Spline/SplineArea series selection refers to selecting the pointmarks and is therefore triggered when clicking any of the corresponding pointmarks.
-            You will need to define a PointMarkTemplate so the item can be selected. For example:
+>For Line/Area/Spline/SplineArea series selection refers to selecting the pointmarks and is therefore triggered when clicking any of the corresponding pointmarks. You will need to define a PointMarkTemplate so the item can be selected. For example:
           
 
 #### __XAML__
@@ -240,8 +239,7 @@ Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where
 
 
 
-In order distinguish the selected point from the not-selected one (for example to change the Ellipse color) in the SelectionChanged event you 
-          will have to get the series's ContentPresenter:
+In order distinguish the selected point from the not-selected one (for example to change the Ellipse color) in the SelectionChanged event you will have to get the series's ContentPresenter:
         
 
 #### __C#__

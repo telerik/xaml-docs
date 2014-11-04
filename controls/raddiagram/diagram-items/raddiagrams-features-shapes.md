@@ -17,15 +17,13 @@ This tutorial will walk you through the functionality and the main features of t
 
 ## Overview
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-			{% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-			article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
 		  
 
 The __RadDiagramShape__ is an object that describes the nodes of the diagram. You can configure its form using the __Geometry__ property as it allows you to define a custom geometry:
 		
 
-	
+	#### __XAML__
             <telerik:RadDiagramShape Width="80"
                                      Height="80"
                                      Geometry="M16.35,6.39 C16.28,7.36 12.26,20.45 12.26,20.45 L20.56,20.45 C20.56,20.45 16.64,7.54 16.53,6.39 z M12.30,0.50 L20.97,0.50 L32.50,33.50 L24.54,33.50 L22.23,26.16 L10.70,26.16 L8.42,33.50 L0.50,33.50 z"
@@ -37,34 +35,33 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram. Yo
 or to use one of the predefined shape geometries:
 		
 
-	
-<telerik:RadDiagramShape x:Name="ConditionShape"
-                Width="80"
-                Height="80"
-                Content="condition"
-                FontWeight="Bold"
-                Geometry="{telerik:FlowChartShape ShapeType=PredefinedShape}"
-                Position="160,80" />
+	#### __XAML__
+    <telerik:RadDiagramShape x:Name="ConditionShape"
+                    Width="80"
+                    Height="80"
+                    Content="condition"
+                    FontWeight="Bold"
+                    Geometry="{telerik:FlowChartShape ShapeType=PredefinedShape}"
+                    Position="160,80" />
 		  
 
 
 
-	
-RadDiagramShape shape = new RadDiagramShape();
-shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape);
+	#### __C#__
+    RadDiagramShape shape = new RadDiagramShape();
+    shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape);
 		  
 
 
 
-	
-Dim shape As New RadDiagramShape()
-shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape)
+	#### __VB.NET__
+    Dim shape As New RadDiagramShape()
+    shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape)
 		  
 
 
 
->The __ShapeFactory__ class allows you to get a shape geometry from the __enums__ with predefined shapes. This way you can create a __RadDiagramShape__ in code-behind still taking advantage of the predefined list of shapes.
-		  The predefined shapes can be accesses in code-behind through the following enumerations:
+>The __ShapeFactory__ class allows you to get a shape geometry from the __enums__ with predefined shapes. This way you can create a __RadDiagramShape__ in code-behind still taking advantage of the predefined list of shapes. The predefined shapes can be accesses in code-behind through the following enumerations:
 
 * __ArrowShapeType__ - describes all ArrowShapes
 			  
@@ -72,8 +69,8 @@ shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShap
 * __CommonShapeType__ - describes all CommonShapes
 			  
 
-* __FlowChartShapeType__ - describes all FlowChartShapes
-			  ![Rad Diagram Features Shapes Predefined Shape](images/RadDiagram_Features_Shapes_PredefinedShape.png)
+* __FlowChartShapeType__ - describes all FlowChartShapes 
+![Rad Diagram Features Shapes Predefined Shape](images/RadDiagram_Features_Shapes_PredefinedShape.png)
 
 ## Diagramming Framework Predefined Shape Geometries
 
@@ -81,253 +78,200 @@ __Telerik Diagramming Framework__ provides three types of predefined shape geome
 		
 
 ### ArrowShapes
-<table>
-				A list of all predefined ArrowShapes:
-			  <tr><td>
+* A list of all predefined ArrowShapes:
+			
 
-Arrow1![Rad Diagram Features Shapes Arrow 1](images/RadDiagram_Features_Shapes_Arrow1.png)
+__Arrow1__ ![Rad Diagram Features Shapes Arrow 1](images/RadDiagram_Features_Shapes_Arrow1.png)
 
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=Arrow1}" />					  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=Arrow1}" />					  
 					  
 
-</td><td>
+__Arrow2__ ![Rad Diagram Features Shapes Arrow 2](images/RadDiagram_Features_Shapes_Arrow2.png)
 
-Arrow2![Rad Diagram Features Shapes Arrow 2](images/RadDiagram_Features_Shapes_Arrow2.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=Arrow2}" />				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=Arrow2}" />				  
 					  
 
-</td><td>
-
-Arrow3![Rad Diagram Features Shapes Arrow 3](images/RadDiagram_Features_Shapes_Arrow3.png)
+__Arrow3 __ ![Rad Diagram Features Shapes Arrow 3](images/RadDiagram_Features_Shapes_Arrow3.png)
 
 	
 <telerik:RadDiagramShape 
   Geometry="{telerik:ArrowShape ShapeType=Arrow3}" />				  
 					  
 
-</td></tr><tr><td>
-
-Arrow4![Rad Diagram Features Shapes Arrow 4](images/RadDiagram_Features_Shapes_Arrow4.png)
+__Arrow4__ ![Rad Diagram Features Shapes Arrow 4](images/RadDiagram_Features_Shapes_Arrow4.png)
 
 	
 <telerik:RadDiagramShape 
   Geometry="{telerik:ArrowShape ShapeType=Arrow4}" />				  
 					  
 
-</td><td>
+__Arrow5__ ![Rad Diagram Features Shapes Arrow 5](images/RadDiagram_Features_Shapes_Arrow5.png)
 
-Arrow5![Rad Diagram Features Shapes Arrow 5](images/RadDiagram_Features_Shapes_Arrow5.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=Arrow5}"/>				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=Arrow5}"/>				  
 					  
 
-</td><td>
+__Arrow6__ ![Rad Diagram Features Shapes Arrow 6](images/RadDiagram_Features_Shapes_Arrow6.png)
 
-Arrow6![Rad Diagram Features Shapes Arrow 6](images/RadDiagram_Features_Shapes_Arrow6.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=Arrow6}" />				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=Arrow6}" />				  
 					  
 
-</td></tr><tr><td>
+__Arrow7__ ![Rad Diagram Features Shapes Arrow 7](images/RadDiagram_Features_Shapes_Arrow7.png)
 
-Arrow7![Rad Diagram Features Shapes Arrow 7](images/RadDiagram_Features_Shapes_Arrow7.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=Arrow7}"/>				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=Arrow7}"/>				  
 					  
 
-</td><td>
+__Arrow8__ ![Rad Diagram Features Shapes Arrow 8](images/RadDiagram_Features_Shapes_Arrow8.png)
 
-Arrow8![Rad Diagram Features Shapes Arrow 8](images/RadDiagram_Features_Shapes_Arrow8.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=Arrow8}"/>				  
+        #### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=Arrow8}"/>				  
 					  
 
-</td><td>
+__DoubleArrow1__ ![Rad Diagram Features Shapes Double Arrow 1](images/RadDiagram_Features_Shapes_DoubleArrow1.png)
 
-DoubleArrow1![Rad Diagram Features Shapes Double Arrow 1](images/RadDiagram_Features_Shapes_DoubleArrow1.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=DoubleArrow1}" />				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=DoubleArrow1}" />				  
 					  
 
-</td></tr><tr><td>
+__DoubleArrow2__ ![Rad Diagram Features Shapes Double Arrow 2](images/RadDiagram_Features_Shapes_DoubleArrow2.png)
 
-DoubleArrow2![Rad Diagram Features Shapes Double Arrow 2](images/RadDiagram_Features_Shapes_DoubleArrow2.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=DoubleArrow2}" />				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=DoubleArrow2}" />				  
 					  
 
-</td><td>
+__DoubleArrow3__ ![Rad Diagram Features Shapes Double Arrow 3](images/RadDiagram_Features_Shapes_DoubleArrow3.png)
 
-DoubleArrow3![Rad Diagram Features Shapes Double Arrow 3](images/RadDiagram_Features_Shapes_DoubleArrow3.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=DoubleArrow3}" />				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=DoubleArrow3}" />				  
 					  
 
-</td><td>
+__DoubleArrow4__ ![Rad Diagram Features Shapes Double Arrow 4](images/RadDiagram_Features_Shapes_DoubleArrow4.png)
 
-DoubleArrow4![Rad Diagram Features Shapes Double Arrow 4](images/RadDiagram_Features_Shapes_DoubleArrow4.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=DoubleArrow4}" />				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=DoubleArrow4}" />				  
 					  
 
-</td></tr><tr><td>
+__DoubleArrow5__ ![Rad Diagram Features Shapes Double Arrow 5](images/RadDiagram_Features_Shapes_DoubleArrow5.png)
 
-DoubleArrow5![Rad Diagram Features Shapes Double Arrow 5](images/RadDiagram_Features_Shapes_DoubleArrow5.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:ArrowShape ShapeType=DoubleArrow5}" />				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:ArrowShape ShapeType=DoubleArrow5}" />				  
 					  
-
-</td><td></td><td></td></tr></table>
 
 ### CommonShapes
-<table>
-				A list of all predefined CommonShapes:
-			  <tr><td>
+* A list of all predefined CommonShapes:
+                
+__CloudShape__ ![Rad Diagram Features Shapes Cloud Shape](images/RadDiagram_Features_Shapes_CloudShape.png)
 
-CloudShape![Rad Diagram Features Shapes Cloud Shape](images/RadDiagram_Features_Shapes_CloudShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=CloudShape}" />				  
 					  
 
-</td><td>
+__Cross2Shape__ ![Rad Diagram Features Shapes Cross 2 Shape](images/RadDiagram_Features_Shapes_Cross2Shape.png)
 
-Cross2Shape![Rad Diagram Features Shapes Cross 2 Shape](images/RadDiagram_Features_Shapes_Cross2Shape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=Cross2Shape}"/>				  
 					  
 
-</td><td>
+__CrossShape__ ![Rad Diagram Features Shapes Cross Shape](images/RadDiagram_Features_Shapes_CrossShape.png)
 
-CrossShape![Rad Diagram Features Shapes Cross Shape](images/RadDiagram_Features_Shapes_CrossShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=CrossShape}" />				  
 					  
 
-</td></tr><tr><td>
+__EllipseShape__ ![Rad Diagram Features Shapes Ellipse Shape](images/RadDiagram_Features_Shapes_EllipseShape.png)
 
-EllipseShape![Rad Diagram Features Shapes Ellipse Shape](images/RadDiagram_Features_Shapes_EllipseShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=EllipseShape}" />				  
 					  
 
-</td><td>
+__HexagonShape__ ![Rad Diagram Features Shapes Hexagon Shape](images/RadDiagram_Features_Shapes_HexagonShape.png)
 
-HexagonShape![Rad Diagram Features Shapes Hexagon Shape](images/RadDiagram_Features_Shapes_HexagonShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=HexagonShape}"/>				  
 					  
 
-</td><td>
+__OctagonShape__ ![Rad Diagram Features Shapes Octagon Shape](images/RadDiagram_Features_Shapes_OctagonShape.png)
 
-OctagonShape![Rad Diagram Features Shapes Octagon Shape](images/RadDiagram_Features_Shapes_OctagonShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=OctagonShape}" />				  
 					  
 
-</td></tr><tr><td>
+__PentagonShape__ ![Rad Diagram Features Shapes Pentagon Shape](images/RadDiagram_Features_Shapes_PentagonShape.png)
 
-PentagonShape![Rad Diagram Features Shapes Pentagon Shape](images/RadDiagram_Features_Shapes_PentagonShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+        #### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=PentagonShape}" />				  
 					  
 
-</td><td>
+__RectangleShape__ ![Rad Diagram Features Shapes Rectangle Shape](images/RadDiagram_Features_Shapes_RectangleShape.png)
 
-RectangleShape![Rad Diagram Features Shapes Rectangle Shape](images/RadDiagram_Features_Shapes_RectangleShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=RectangleShape}"/>				  
 					  
 
-</td><td>
+__RightTriangleShape__ ![Rad Diagram Features Shapes Right Triangle Shape](images/RadDiagram_Features_Shapes_RightTriangleShape.png)
 
-RightTriangleShape![Rad Diagram Features Shapes Right Triangle Shape](images/RadDiagram_Features_Shapes_RightTriangleShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=RightTriangleShape}" />				  
 					  
 
-</td></tr><tr><td>
+__RoundedRectangleShape__ ![Rad Diagram Features Shapes Rounded Rectangle Shape](images/RadDiagram_Features_Shapes_RoundedRectangleShape.png)
 
-RoundedRectangleShape![Rad Diagram Features Shapes Rounded Rectangle Shape](images/RadDiagram_Features_Shapes_RoundedRectangleShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=RoundedRectangleShape}" />				  
 					  
 
-</td><td>
+__Star5Shape__ ![Rad Diagram Features Shapes Star 5 Shape](images/RadDiagram_Features_Shapes_Star5Shape.png)
 
-Star5Shape![Rad Diagram Features Shapes Star 5 Shape](images/RadDiagram_Features_Shapes_Star5Shape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=Star5Shape}"/>				  
 					  
 
-</td><td>
+__Star6Shape__ ![Rad Diagram Features Shapes Star 6 Shape](images/RadDiagram_Features_Shapes_Star6Shape.png)
 
-Star6Shape![Rad Diagram Features Shapes Star 6 Shape](images/RadDiagram_Features_Shapes_Star6Shape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:CommonShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:CommonShape 
 					 ShapeType=Star6Shape}" />				  
 					  
 
-</td></tr><tr><td>
-
-Star7Shape![Rad Diagram Features Shapes Star 7 Shape](images/RadDiagram_Features_Shapes_Star7Shape.png)
+__Star7Shape__ ![Rad Diagram Features Shapes Star 7 Shape](images/RadDiagram_Features_Shapes_Star7Shape.png)
 
 	
 <telerik:RadDiagramShape 
@@ -335,9 +279,7 @@ Star7Shape![Rad Diagram Features Shapes Star 7 Shape](images/RadDiagram_Features
 					 ShapeType=Star7Shape}" />				  
 					  
 
-</td><td>
-
-TriangleShape![Rad Diagram Features Shapes Triangle Shape](images/RadDiagram_Features_Shapes_TriangleShape.png)
+__TriangleShape__ ![Rad Diagram Features Shapes Triangle Shape](images/RadDiagram_Features_Shapes_TriangleShape.png)
 
 	
 <telerik:RadDiagramShape 
@@ -348,361 +290,287 @@ TriangleShape![Rad Diagram Features Shapes Triangle Shape](images/RadDiagram_Fea
 </td><td></td></tr></table>
 
 ### FlowChartShapes
-<table>
-				A list of all predefined FlowChartShapes:
-			  <tr><td>
+* A list of all predefined FlowChartShapes:
+__BeginLoopShape__ ![Rad Diagram Features Shapes Begin Loop Shape](images/RadDiagram_Features_Shapes_BeginLoopShape.png)
 
-BeginLoopShape![Rad Diagram Features Shapes Begin Loop Shape](images/RadDiagram_Features_Shapes_BeginLoopShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=BeginLoopShape}" />				  
 					  
 
-</td><td>
+__CardShape__ ![Rad Diagram Features Shapes Card Shape](images/RadDiagram_Features_Shapes_CardShape.png)
 
-CardShape![Rad Diagram Features Shapes Card Shape](images/RadDiagram_Features_Shapes_CardShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=CardShape}"/>				  
 					  
 
-</td><td>
+__CollateShape__ ![Rad Diagram Features Shapes Collate Shape](images/RadDiagram_Features_Shapes_CollateShape.png)
 
-CollateShape![Rad Diagram Features Shapes Collate Shape](images/RadDiagram_Features_Shapes_CollateShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=CollateShape}" />				  
 					  
 
-</td></tr><tr><td>
+__CreateRequestShape__ ![Rad Diagram Features Shapes Create Request Shape](images/RadDiagram_Features_Shapes_CreateRequestShape.png)
 
-CreateRequestShape![Rad Diagram Features Shapes Create Request Shape](images/RadDiagram_Features_Shapes_CreateRequestShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=CreateRequestShape}" />				  
 					  
 
-</td><td>
+__Database1Shape__ ![Rad Diagram Features Shapes Database 1 Shape](images/RadDiagram_Features_Shapes_Database1Shape.png)
 
-Database1Shape![Rad Diagram Features Shapes Database 1 Shape](images/RadDiagram_Features_Shapes_Database1Shape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=Database1Shape}"/>				  
 					  
 
-</td><td>
+__Database2Shape__ ![Rad Diagram Features Shapes Database 2 Shape](images/RadDiagram_Features_Shapes_Database2Shape.png)
 
-Database2Shape![Rad Diagram Features Shapes Database 2 Shape](images/RadDiagram_Features_Shapes_Database2Shape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=Database2Shape}" />				  
 					  
 
-</td></tr><tr><td>
+__Database3Shape__ ![Rad Diagram Features Shapes Database 3 Shape](images/RadDiagram_Features_Shapes_Database3Shape.png)
 
-Database3Shape![Rad Diagram Features Shapes Database 3 Shape](images/RadDiagram_Features_Shapes_Database3Shape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape
 					 ShapeType=Database3Shape}"/>				  
 					  
 
-</td><td>
+__DataShape__ ![Rad Diagram Features Shapes Data Shape](images/RadDiagram_Features_Shapes_DataShape.png)
 
-DataShape![Rad Diagram Features Shapes Data Shape](images/RadDiagram_Features_Shapes_DataShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DataShape}" />				  
 					  
 
-</td><td>
+__DataStoreShape__ ![Rad Diagram Features Shapes Data Store Shape](images/RadDiagram_Features_Shapes_DataStoreShape.png)
 
-DataStoreShape![Rad Diagram Features Shapes Data Store Shape](images/RadDiagram_Features_Shapes_DataStoreShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DataStoreShape}" />				  
 					  
 
-</td></tr><tr><td>
+__DecisionShape__ ![Rad Diagram Features Shapes Decision Shape](images/RadDiagram_Features_Shapes_DecisionShape.png)
 
-DecisionShape![Rad Diagram Features Shapes Decision Shape](images/RadDiagram_Features_Shapes_DecisionShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DecisionShape}"/>				  
 					  
 
-</td><td>
+__DelayShape__ ![Rad Diagram Features Shapes Delay Shape](images/RadDiagram_Features_Shapes_DelayShape.png)
 
-DelayShape![Rad Diagram Features Shapes Delay Shape](images/RadDiagram_Features_Shapes_DelayShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DelayShape}" />				  
 					  
 
-</td><td>
+__DevidedProcessShape__ ![Rad Diagram Features Shapes Devided Process Shape](images/RadDiagram_Features_Shapes_DevidedProcessShape.png)
 
-DevidedProcessShape![Rad Diagram Features Shapes Devided Process Shape](images/RadDiagram_Features_Shapes_DevidedProcessShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DevidedProcessShape}" />				  
 					  
 
-</td></tr><tr><td>
+__DirectDataShape__ ![Rad Diagram Features Shapes Direct Data Shape](images/RadDiagram_Features_Shapes_DirectDataShape.png)
 
-DirectDataShape![Rad Diagram Features Shapes Direct Data Shape](images/RadDiagram_Features_Shapes_DirectDataShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DirectDataShape}"/>				  
 					  
 
-</td><td>
+__DisplayShape__ ![Rad Diagram Features Shapes Display Shape](images/RadDiagram_Features_Shapes_DisplayShape.png)
 
-DisplayShape![Rad Diagram Features Shapes Display Shape](images/RadDiagram_Features_Shapes_DisplayShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DisplayShape}" />				  
 					  
 
-</td><td>
+__DocumentShape__ ![Rad Diagram Features Shapes Document Shape](images/RadDiagram_Features_Shapes_DocumentShape.png)
 
-DocumentShape![Rad Diagram Features Shapes Document Shape](images/RadDiagram_Features_Shapes_DocumentShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DocumentShape}" />				  
 					  
 
-</td></tr><tr><td>
+__DuplicatingShape__ ![Rad Diagram Features Shapes Duplicating Shape](images/RadDiagram_Features_Shapes_DuplicatingShape.png)
 
-DuplicatingShape![Rad Diagram Features Shapes Duplicating Shape](images/RadDiagram_Features_Shapes_DuplicatingShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=DuplicatingShape}"/>				  
 					  
 
-</td><td>
+__ExternalDataShape__ ![Rad Diagram Features Shapes External Data Shape](images/RadDiagram_Features_Shapes_ExternalDataShape.png)
 
-ExternalDataShape![Rad Diagram Features Shapes External Data Shape](images/RadDiagram_Features_Shapes_ExternalDataShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=ExternalDataShape}" />				  
 					  
 
-</td><td>
+__FeedbackShape__ ![Rad Diagram Features Shapes Feedback Shape](images/RadDiagram_Features_Shapes_FeedbackShape.png)
 
-FeedbackShape![Rad Diagram Features Shapes Feedback Shape](images/RadDiagram_Features_Shapes_FeedbackShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=FeedbackShape}" />				  
 					  
+__FramedRectangleShape__ ![Rad Diagram Features Shapes Framed Rectangle Shape](images/RadDiagram_Features_Shapes_FramedRectangleShape.png)
 
-</td></tr><tr><td>
-
-FramedRectangleShape![Rad Diagram Features Shapes Framed Rectangle Shape](images/RadDiagram_Features_Shapes_FramedRectangleShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=FramedRectangleShape}"/>				  
 					  
 
-</td><td>
+__InternalStorageShape__ ![Rad Diagram Features Shapes Internal Storage Shape](images/RadDiagram_Features_Shapes_InternalStorageShape.png)
 
-InternalStorageShape![Rad Diagram Features Shapes Internal Storage Shape](images/RadDiagram_Features_Shapes_InternalStorageShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=InternalStorageShape}" />				  
 					  
 
-</td><td>
+__LinedDocumentShape__ ![Rad Diagram Features Shapes Lined Document Shape](images/RadDiagram_Features_Shapes_LinedDocumentShape.png)
 
-LinedDocumentShape![Rad Diagram Features Shapes Lined Document Shape](images/RadDiagram_Features_Shapes_LinedDocumentShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=LinedDocumentShape}" />				  
 					  
 
-</td></tr><tr><td>
+__LoopLimitShape__ ![Rad Diagram Features Shapes Loop Limit Shape](images/RadDiagram_Features_Shapes_LoopLimitShape.png)
 
-LoopLimitShape![Rad Diagram Features Shapes Loop Limit Shape](images/RadDiagram_Features_Shapes_LoopLimitShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=LoopLimitShape}"/>				  
 					  
 
-</td><td>
+__ManualInputShape__ ![Rad Diagram Features Shapes Manual Input Shape](images/RadDiagram_Features_Shapes_ManualInputShape.png)
 
-ManualInputShape![Rad Diagram Features Shapes Manual Input Shape](images/RadDiagram_Features_Shapes_ManualInputShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=ManualInputShape}" />				  
 					  
 
-</td><td>
+__ManualOperationShape__ ![Rad Diagram Features Shapes Manual Operation Shape](images/RadDiagram_Features_Shapes_ManualOperationShape.png)
 
-ManualOperationShape![Rad Diagram Features Shapes Manual Operation Shape](images/RadDiagram_Features_Shapes_ManualOperationShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=ManualOperationShape}" />				  
 					  
 
-</td></tr><tr><td>
+__MessageFromUserShape__ ![Rad Diagram Features Shapes Message From User Shape](images/RadDiagram_Features_Shapes_MessageFromUserShape.png)
 
-MessageFromUserShape![Rad Diagram Features Shapes Message From User Shape](images/RadDiagram_Features_Shapes_MessageFromUserShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=MessageFromUserShape}"/>				  
 					  
 
-</td><td>
+__MessageToUserShape__ ![Rad Diagram Features Shapes Message To User Shape](images/RadDiagram_Features_Shapes_MessageToUserShape.png)
 
-MessageToUserShape![Rad Diagram Features Shapes Message To User Shape](images/RadDiagram_Features_Shapes_MessageToUserShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=MessageToUserShape}" />				  
 					  
 
-</td><td>
+__MicroformProcessingShape__ ![Rad Diagram Features Shapes Microform Processing Shape](images/RadDiagram_Features_Shapes_MicroformProcessingShape.png)
 
-MicroformProcessingShape![Rad Diagram Features Shapes Microform Processing Shape](images/RadDiagram_Features_Shapes_MicroformProcessingShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=MicroformProcessingShape}" />				  
 					  
 
-</td></tr><tr><td>
+__MicroformRecordingShape__ ![Rad Diagram Features Shapes Microform Recording Shape](images/RadDiagram_Features_Shapes_MicroformRecordingShape.png)
 
-MicroformRecordingShape![Rad Diagram Features Shapes Microform Recording Shape](images/RadDiagram_Features_Shapes_MicroformRecordingShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=MicroformRecordingShape}"/>				  
 					  
 
-</td><td>
+__MultipleDocumentShape__ ![Rad Diagram Features Shapes Multiple Document Shape](images/RadDiagram_Features_Shapes_MultipleDocumentShape.png)
 
-MultipleDocumentShape![Rad Diagram Features Shapes Multiple Document Shape](images/RadDiagram_Features_Shapes_MultipleDocumentShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=MultipleDocumentShape}" />				  
 					  
 
-</td><td>
+__OffPageConnectionShape__ ![Rad Diagram Features Shapes Off Page Connection Shape](images/RadDiagram_Features_Shapes_OffPageConnectionShape.png)
 
-OffPageConnectionShape![Rad Diagram Features Shapes Off Page Connection Shape](images/RadDiagram_Features_Shapes_OffPageConnectionShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=OffPageConnectionShape}" />				  
 					  
 
-</td></tr><tr><td>
+__OffPageLinkShape__ ![Rad Diagram Features Shapes Off Page Link Shape](images/RadDiagram_Features_Shapes_OffPageLinkShape.png)
 
-OffPageLinkShape![Rad Diagram Features Shapes Off Page Link Shape](images/RadDiagram_Features_Shapes_OffPageLinkShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=OffPageLinkShape}"/>				  
 					  
 
-</td><td>
+__OffPageReflectionShape__ ![Rad Diagram Features Shapes Off Page Reflection Shape](images/RadDiagram_Features_Shapes_OffPageReflectionShape.png)
 
-OffPageReflectionShape![Rad Diagram Features Shapes Off Page Reflection Shape](images/RadDiagram_Features_Shapes_OffPageReflectionShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=OffPageReflectionShape}" />				  
 					  
 
-</td><td>
+__OrShape__ ![Rad Diagram Features Shapes Or Shape](images/RadDiagram_Features_Shapes_OrShape.png)
 
-OrShape![Rad Diagram Features Shapes Or Shape](images/RadDiagram_Features_Shapes_OrShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=OrShape}" />				  
 					  
 
-</td></tr><tr><td>
+__PaperTapeShape__ ![Rad Diagram Features Shapes Paper Tape Shape](images/RadDiagram_Features_Shapes_PaperTapeShape.png)
 
-PaperTapeShape![Rad Diagram Features Shapes Paper Tape Shape](images/RadDiagram_Features_Shapes_PaperTapeShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=PaperTapeShape}"/>				  
 					  
 
-</td><td>
+__PredefinedShape__ ![Rad Diagram Features Shapes Predefined Shape](images/RadDiagram_Features_Shapes_PredefinedShape.png)
 
-PredefinedShape![Rad Diagram Features Shapes Predefined Shape](images/RadDiagram_Features_Shapes_PredefinedShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=PredefinedShape}"  />				  
 					  
 
-</td><td>
-
-PreparationShape![Rad Diagram Features Shapes Preparation Shape](images/RadDiagram_Features_Shapes_PreparationShape.png)
+__PreparationShape__ ![Rad Diagram Features Shapes Preparation Shape](images/RadDiagram_Features_Shapes_PreparationShape.png)
 
 	
 <telerik:RadDiagramShape 
@@ -710,97 +578,79 @@ PreparationShape![Rad Diagram Features Shapes Preparation Shape](images/RadDiagr
 					 ShapeType=PreparationShape}" />				  
 					  
 
-</td></tr><tr><td>
+__PrimitiveFromCallShape__ ![Rad Diagram Features Shapes Primitive From Call Shape](images/RadDiagram_Features_Shapes_PrimitiveFromCallShape.png)
 
-PrimitiveFromCallShape![Rad Diagram Features Shapes Primitive From Call Shape](images/RadDiagram_Features_Shapes_PrimitiveFromCallShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=PrimitiveFromCallShape}"/>				  
 					  
 
-</td><td>
+__PrimitiveToCallShape__ ![Rad Diagram Features Shapes Primitive To Call Shape](images/RadDiagram_Features_Shapes_PrimitiveToCallShape.png)
 
-PrimitiveToCallShape![Rad Diagram Features Shapes Primitive To Call Shape](images/RadDiagram_Features_Shapes_PrimitiveToCallShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=PrimitiveToCallShape}"  />				  
 					  
 
-</td><td>
+__SequentialDataShape__ ![Rad Diagram Features Shapes Sequential Data Shape](images/RadDiagram_Features_Shapes_SequentialDataShape.png)
 
-SequentialDataShape![Rad Diagram Features Shapes Sequential Data Shape](images/RadDiagram_Features_Shapes_SequentialDataShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=SequentialDataShape}" />				  
 					  
 
-</td></tr><tr><td>
+__SortShape__ ![Rad Diagram Features Shapes Sort Shape](images/RadDiagram_Features_Shapes_SortShape.png)
 
-SortShape![Rad Diagram Features Shapes Sort Shape](images/RadDiagram_Features_Shapes_SortShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=SortShape}"/>				  
 					  
 
-</td><td>
+__StartShape__ ![Rad Diagram Features Shapes Start Shape](images/RadDiagram_Features_Shapes_StartShape.png)
 
-StartShape![Rad Diagram Features Shapes Start Shape](images/RadDiagram_Features_Shapes_StartShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
-					 ShapeType=StartShape}"  />				  
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
+                         ShapeType=StartShape}"  />				  
 					  
 
-</td><td>
+__StoredDataShape![Rad Diagram Features Shapes Stored Data Shape](images/RadDiagram_Features_Shapes_StoredDataShape.png)
 
-StoredDataShape![Rad Diagram Features Shapes Stored Data Shape](images/RadDiagram_Features_Shapes_StoredDataShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=StoredDataShape}" />				  
 					  
 
-</td></tr><tr><td>
+__SummingJunctionShape__ ![Rad Diagram Features Shapes Summing Junction Shape](images/RadDiagram_Features_Shapes_SummingJunctionShape.png)
 
-SummingJunctionShape![Rad Diagram Features Shapes Summing Junction Shape](images/RadDiagram_Features_Shapes_SummingJunctionShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=SummingJunctionShape}"/>				  
 					  
 
-</td><td>
+__TerminatorShape__ ![Rad Diagram Features Shapes Terminator Shape](images/RadDiagram_Features_Shapes_TerminatorShape.png)
 
-TerminatorShape![Rad Diagram Features Shapes Terminator Shape](images/RadDiagram_Features_Shapes_TerminatorShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=TerminatorShape}"  />				  
 					  
 
-</td><td>
+__TransmittalTapeShape__ ![Rad Diagram Features Shapes Transmittal Tape Shape](images/RadDiagram_Features_Shapes_TransmittalTapeShape.png)
 
-TransmittalTapeShape![Rad Diagram Features Shapes Transmittal Tape Shape](images/RadDiagram_Features_Shapes_TransmittalTapeShape.png)
-
-	
-<telerik:RadDiagramShape 
-  Geometry="{telerik:FlowChartShape 
+	#### __XAML__
+    <telerik:RadDiagramShape 
+      Geometry="{telerik:FlowChartShape 
 					 ShapeType=TransmittalTapeShape}" />				  
 					  
 
-</td></tr></table>
+
 
 ## Setting the Position of a Shape
 
@@ -855,11 +705,10 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 
 ![Rad Diagram Features Shapes Custom Content](images/RadDiagram_Features_Shapes_CustomContent.png)
 
-* Bind the __Content__ to a business property:
-			For the purpose of this tutorial, let's define a sample business class and set it as the __DataContext__ of the {% if site.site_name == 'Silverlight' %}UserControl{% endif %}{% if site.site_name == 'WPF' %}Window{% endif %}.
+* Bind the __Content__ to a business property: For the purpose of this tutorial, let's define a sample business class and set it as the __DataContext__ of the {% if site.site_name == 'Silverlight' %}UserControl{% endif %}{% if site.site_name == 'WPF' %}Window{% endif %}.
 			
 
-	
+	#### __C#__
     public class EmployeeViewModel
     {
         public string ImagePath { get; set; }
@@ -879,7 +728,7 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 
 
 
-	
+	#### __VB.NET__
 	Public Class EmployeeViewModel
 		Public Property ImagePath() As String
 		Public Property JobPosition() As String
@@ -908,7 +757,8 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 	    </Grid>
 	{{endregion}}
 
-![Rad Diagram Features Shapes Data Binding](images/RadDiagram_Features_Shapes_DataBinding.png)When you bind the __Content__ to a business class, the __RadDiagramShape__ will display the result of the business item __ToString()__ method. If you bind to a business property, then the value of the property will be displayed as the content of the shape.
+![Rad Diagram Features Shapes Data Binding](images/RadDiagram_Features_Shapes_DataBinding.png)
+When you bind the __Content__ to a business class, the __RadDiagramShape__ will display the result of the business item __ToString()__ method. If you bind to a business property, then the value of the property will be displayed as the content of the shape.
 			
 
 * If you want to customize the visual representation of the bound property, you can take advantage of the __RadDiagramShape ContentTemplate__ property:
@@ -971,7 +821,7 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 ## Connectors
 
 Each __RadDiagramShape__ has 5 default connectors - Top, Right, Bottom, Left and Auto. Those are the predefined points where you can connect a __RadDiagramConnection__ to the shape.
-		![Rad Diagram Features Shapes Connectors](images/RadDiagram_Features_Shapes_Connectors.png)
+![Rad Diagram Features Shapes Connectors](images/RadDiagram_Features_Shapes_Connectors.png)
 
 * __Top__ - the connector point positioned in the middle of the top border of a shape
 			
@@ -1046,8 +896,8 @@ Telerik __RadDiagramShape__ supports rotation. You can get or set the rotation a
 
 ### Edit Mode
 
-You can set the __RadDiagramShape__ in edit mode using the __IsInEditMode__ property. By default when a shape enters edit mode, the __RadDiagramShape.Content__ is displayed inside a __TextBox__ control so that you can change its value.
-			![Rad Diagram Features Shapes Edit String](images/RadDiagram_Features_Shapes_EditString.png)
+You can set the __RadDiagramShape__ in edit mode using the __IsInEditMode__ property. By default when a shape enters edit mode, the __RadDiagramShape.Content__ is displayed inside a __TextBox__ control so that you can change its value. 
+![Rad Diagram Features Shapes Edit String](images/RadDiagram_Features_Shapes_EditString.png)
 
 If the __RadDiagramShape.Content__ property is bound to a business item, you can set the connection __EditTemplate__ to define how the business item will be edited. For example if we use the __BusinessItem__ class, defined above, as a __DataContext__ of the __RadDiagram__, we can set up the following connection:
 			

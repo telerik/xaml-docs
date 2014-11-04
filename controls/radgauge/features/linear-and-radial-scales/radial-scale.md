@@ -22,17 +22,17 @@ The __RadialScale__ control allows you to display a scale of radial form. Typica
 
 Here is the list of the __RadialScale__ features:
 
-* [Multiplier](#Multiplier)
+* [Multiplier](#multiplier)
 
-* [Scale Center](#Scale_Center)
+* [Scale Center](#scale-center)
 
-* [Label Rotation Mode](#Label_Rotation_Mode)
+* [Label Rotation Mode](#label-rotation-mode)
 
-* [Scale Radius](#Scale_Radius)
+* [Scale Radius](#scale-radius)
 
-* [Start Angle](#Start_Angle)
+* [Start Angle](#start-angle)
 
-* [Sweep Angle](#Sweep_Angle)
+* [Sweep Angle](#sweep-angle)
 
 ## Multiplier
 
@@ -114,11 +114,7 @@ Here is a snapshot of the result.
 
 ## Scale Radius
 
-You can specify the radius of the __RadialScale__. 
-        This is done via the __Radius__ property. 
-        The value of the __Radius__ property is relative to the cell size of the scale. 
-        For example if you set the radius to be __1.2__, the width/height of the scale will be 20% larger than the width/height of the parent container. 
-        Here is an example of such __RadialScale__.
+You can specify the radius of the __RadialScale__. This is done via the __Radius__ property. The value of the __Radius__ property is relative to the cell size of the scale. For example if you set the radius to be __1.2__, the width/height of the scale will be 20% larger than the width/height of the parent container. Here is an example of such __RadialScale__.
 
 >tipTo learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 

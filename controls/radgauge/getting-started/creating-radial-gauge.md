@@ -15,38 +15,24 @@ position: 0
 One of the gauges you can create with the __RadGauge__ control, is a radial gauge. It is represented by a circle container with a scale in it. Additionally it can display various indicators that point to a certain value off the scale. This topic will guide you in creating a trivial radial gauge and will explain the following:
       
 
-* [Defining a RadialGauge](#Defining_a_RadialGauge)
+* [Defining a RadialGauge](#defining-a-radialgauge)
 
-* [Defining a RadialScale](#Defining_a_RadialScale)
+* [Defining a RadialScale](#defining-a-radialscale)
 
-* [Defining an Indicator](#Defining_an_Indicator)
+* [Defining an Indicator](#defining-an-indicator)
 
-* [Set Indicator's Position](#Set_Indicator's_Position)
+* [Set Indicator's Position](#set-indicators-position)
 
-* [Configuring the Gauge](#Configuring_the_Gauge)
+* [Configuring the Gauge](#configuring-the-gauge)
 
 ## Defining a RadialGauge
 
->
+>In order to use the __RadGauge__ control and its components you have to reference the following assemblies:<br/>* __Telerik.Windows.Controls.DataVisualization.dll__<br/>* __Telerik.Windows.Controls.dll__
+
+The radial gauge type is represented by the __RadRadialGauge__ class. The __RadRadialGauge__ control is used for wrapping radial scales. You can place one or more __RadialScale__ objects inside of it. Here is an example of an instance of the __RadRadialGauge__ control with dimensions __300x300__.
 
 
-              In order to use the __RadGauge__ control and its components you have to reference the following assemblies:
-            
-
-* __Telerik.Windows.Controls.DataVisualization.dll__
-
-* __Telerik.Windows.Controls.dll__
-
-
-          The radial gauge type is represented by the __RadRadialGauge__ class. The __RadRadialGauge__ control is used for wrapping radial scales. You can place one or more __RadialScale__ objects inside of it. Here is an example of an instance of the __RadRadialGauge__ control with dimensions __300x300__.
-        
-
->
-
-
-
-
-              To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
+>To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
             
 
 #### __XAML__
@@ -61,8 +47,7 @@ One of the gauges you can create with the __RadGauge__ control, is a radial gaug
 
 In order to define a scale inside the RadialGauge control you have to use the RadialScale control. The RadialGauge works as an ItemsControl, which takes RadialScale controls as items. This means that you can have more than one scale inside the radial gauge. Here is an example of a single RadialScale.
 
->tip
-          To learn more about the usage of the __RadialScale__ control read the [Radial Scale]({%slug radgauge-features-radial-scale%}) topic.
+>tipTo learn more about the usage of the __RadialScale__ control read the [Radial Scale]({%slug radgauge-features-radial-scale%}) topic.
         
 
 #### __XAML__
@@ -82,16 +67,11 @@ In order to define a scale inside the RadialGauge control you have to use the Ra
 
 Here is a snapshot of the result.
 
-
-
-
-               
-            ![](images/RadGauge_GettingStarted_RadialGauge_02.png)
+![](images/RadGauge_GettingStarted_RadialGauge_02.png)
 
 ## Defining an Indicator
 
-
-          The __RadialScale__ control allows you to display different types of indicators that point to a value off the scale. To specify an indicator use the Indicators property, which is of type __UIElementCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example of RadialScale that uses a __Needle__ indicator to mark the current value as well as __Pinpoint__ to mark the center of the Gauge
+The __RadialScale__ control allows you to display different types of indicators that point to a value off the scale. To specify an indicator use the Indicators property, which is of type __UIElementCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example of RadialScale that uses a __Needle__ indicator to mark the current value as well as __Pinpoint__ to mark the center of the Gauge
         
 
 #### __XAML__
@@ -115,16 +95,11 @@ Here is a snapshot of the result.
 
 Here is a snapshot of the result.
 
-
-
-
-               
-            ![](images/RadGauge_GettingStarted_RadialGauge_03.png)
+![](images/RadGauge_GettingStarted_RadialGauge_03.png)
 
 ## Set Indicator's Position
 
-
-          To make the indicator point to a certain value from the scale, you have to use the __Value__ property of the indicator. Here is an example.
+To make the indicator point to a certain value from the scale, you have to use the __Value__ property of the indicator. Here is an example.
         
 
 #### __XAML__
@@ -149,11 +124,7 @@ Here is a snapshot of the result.
 
 Here is a snapshot of the result.
 
-
-
-
-               
-            ![](images/RadGauge_GettingStarted_RadialGauge_04.png)
+![](images/RadGauge_GettingStarted_RadialGauge_04.png)
 
 ## Configuring the Gauge
 

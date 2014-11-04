@@ -477,16 +477,14 @@ a img {
 	width: 80%;
 }
 
-#page-article h1:before {
-    border-top: 2px solid #ebecee;
+#page-article h1:after {
+    border-bottom: 2px solid #ebecee;
     content: " ";
     display: block;
     font-size: 0;
     height: 1px;
     position: relative;
-    top: -15px;
     width: 100%;
-
 }
 
 #page-article h1 {
@@ -635,9 +633,9 @@ a.footer-links:hover {
 }
 
 .quick-links {
-     padding-top: 1.917em;
-     padding-bottom: 1em;
-     padding-left: 36px;
+	padding-top: 1.917em;
+	padding-bottom: 1em;
+	padding-left: 36px;
 }
 
 #logo-bar ul {
@@ -735,35 +733,29 @@ h4 {
 	font-weight: normal;
 }
 
-article h1:first-of-type:before {
-	margin-top: 0px !important;
-	top: 50px !important;
-}
-
 #page-article table {
-                border: 1px solid #2CB144;
-                border-collapse: collapse;
+	border: 1px solid #2CB144;
+	border-collapse: collapse;
 }
 
 #page-article table th {
-                background: #2CB144;
-                color: #fff;
+	background: #2CB144;
+	color: #fff;
 }
 
 #page-article table tr:nth-child(2n) td {
-                background: #F6F3EA;
+	background: #F6F3EA;
 }
 
 #page-article table th, #page-article table td {
-                padding: 3px 5px;
-                text-align: left;
+	padding: 3px 5px;
+	text-align: left;
 }
 
 #page-article table td {
     border: 1px solid #e1e5ea;
     color: #555; 
 }
-
 
 #page-article article {
     max-width: 930px;
@@ -852,6 +844,7 @@ header, nav, section, article, aside, footer {
        float: none;
        display: inline-block;
        margin-left: 1em;
+	   width: 0px;
     }
 
     #page-search {

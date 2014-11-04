@@ -17,7 +17,7 @@ position: 2
 In this sample you are going to create and visualize your data using simple line chart. 
         This line chart will be based on some predefined static data declared in XAML or code-behind.
 
-First we'll declare our chart which is represented by the__RadCartesianChart__ class. Here is the XAML declaration:
+First we'll declare our chart which is represented by the __RadCartesianChart__ class. Here is the XAML declaration:
         
 
 #### __XAML__
@@ -28,9 +28,7 @@ First we'll declare our chart which is represented by the__RadCartesianChart__ c
 
 
 
-The next thing that needs to be done is to define the chart’s axes. We need to set a horizontal axis and a vertical axis. 
-          They can differ from each other. For example the horizontal axis might be a plain numerical axis while the vertical axis can be 
-          logarithmic or some other fancy type. Here is how we define the axes:
+The next thing that needs to be done is to define the chart’s axes. We need to set a horizontal axis and a vertical axis. They can differ from each other. For example the horizontal axis might be a plain numerical axis while the vertical axis can be logarithmic or some other fancy type. Here is how we define the axes:
         
 
 #### __XAML__
@@ -49,10 +47,7 @@ The next thing that needs to be done is to define the chart’s axes. We need to
 
 
 
-Now we have a chart with two axes but no data. In order to visualize data we will need to have some visualization for it. 
-          The presentation of the data itself is achieved by declaring chart series inside our chart and filling these series with data points. 
-          Each chart series visualizes its data point collection in a different way. RadChart supports a few series out of the box the simplest of which is the line series.
-          Here is how we define the line series:
+Now we have a chart with two axes but no data. In order to visualize data we will need to have some visualization for it. The presentation of the data itself is achieved by declaring chart series inside our chart and filling these series with data points. Each chart series visualizes its data point collection in a different way. RadChart supports a few series out of the box the simplest of which is the line series. Here is how we define the line series:
         
 
 #### __XAML__
@@ -76,8 +71,7 @@ Now we have a chart with two axes but no data. In order to visualize data we wil
 
 
 
-Now with this XAML things don’t look exactly right. There is nothing on screen. This is normal, we have not filled the series with data points yet. 
-          Here is how we can fill the series with data points:
+Now with this XAML things don’t look exactly right. There is nothing on screen. This is normal, we have not filled the series with data points yet. Here is how we can fill the series with data points:
         
 
 #### __XAML__
@@ -154,14 +148,10 @@ The same can be achieved in code-behind only:
 
 
 
-This is all we need - a chart object with axes specifically chosen to provide an intuitive coordinate system.
-          Then we add a series object to visualize our set of data points and finally we fill the series with data. The result should look like this:
+This is all we need - a chart object with axes specifically chosen to provide an intuitive coordinate system. Then we add a series object to visualize our set of data points and finally we fill the series with data. The result should look like this:
         ![Rad Charting Kit-radchart introduction](images/radchartview-chart_introduction.PNG)
 
-The chart can be further customized. For example you may want to add a grid-like visuals which support horizontal and vertical lines, 
-          associated with axis ticks and horizontal and vertical stripes for better readability.
-          This can be achieved with the __RadCartesianGrid__ and his properties __MajorLinesVisibility__ 
-          and __StripLinesVisibility__. Both properties can be set to XY, X , Y or None (the default one).
+The chart can be further customized. For example you may want to add a grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes for better readability. This can be achieved with the __RadCartesianGrid__ and his properties __MajorLinesVisibility__ and __StripLinesVisibility__. Both properties can be set to XY, X , Y or None (the default one).
         
 
 #### __XAML__
@@ -194,5 +184,3 @@ To enable striplines you should set some brushes:
 	    </telerik:CartesianChartGrid.XStripeBrushes>
 	</telerik:CartesianChartGrid>
 	{{endregion}}
-
-

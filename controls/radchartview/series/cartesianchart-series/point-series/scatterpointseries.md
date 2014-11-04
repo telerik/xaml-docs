@@ -18,8 +18,8 @@ This series is visualized on the screen as separate points representing each of 
 ## Declaratively defined series
 
 You can use the following definition to display a simple ScatterPointSeries
-
-	
+#### XAML
+	{{region radchartview-scatterpointseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:LinearAxis/>
@@ -41,7 +41,7 @@ You can use the following definition to display a simple ScatterPointSeries
                 </telerik:ScatterPointSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-scatterpointseries](images/radchartview-series-scatterpointseries.png)
 
 # See Also

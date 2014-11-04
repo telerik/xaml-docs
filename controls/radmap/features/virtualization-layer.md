@@ -12,52 +12,38 @@ position: 12
 
 
 
-The Virtualization Layer can be used to visualize large data sources due to its superior performance,
-        compared to the Information Layer or the Dynamic Layer.
+The Virtualization Layer can be used to visualize large data sources due to its superior performance, compared to the Information Layer or the Dynamic Layer.
       
 
 ## 
 
-Similarly to the Dynamic Layer, the Virtualization Layer raises an items request event 
-          when the zoom or center property is changed. The difference is that it processes that 
-          request within the background thread, that way freeing the UI thread.
+Similarly to the Dynamic Layer, the Virtualization Layer raises an items request event when the zoom or center property is changed. The difference is that it processes that request within the background thread, that way freeing the UI thread.
         
 
 The Virtualization Layer exposes the following properties:
         
 
-* __RenderWhileMotion__ - boolean property indicating whether the layer
-              should request and render items while the user is zooming or scrolling.
+* __RenderWhileMotion__ - boolean property indicating whether the layer should request and render items while the user is zooming or scrolling.
             
 
-* __ZoomLevelGridList__ - collection of ZoomLevelGrids that are used to specify the
-              [map devision](#map-division).
+* __ZoomLevelGridList__ - collection of ZoomLevelGrids that are used to specify the [map devision](#map-division).
             
 
-* __VirtualizationSource__ - used to specify the item source of the layer.
-              Expects an object of type that implements __IMapVirtualizationSource__.
+* __VirtualizationSource__ - used to specify the item source of the layer. Expects an object of type that implements __IMapVirtualizationSource__.
             
 
 ## Map Division
 
-Like the DynamicLayer, the Virtualization requires a division of the map space in regions. The division
-          of map space is defined using the VirtualizationLayer.ZoomLevelGridList collection.
-          Each ZoomLevelGrid should define a minimum zoom level for its division. The maximum zoom
-          level for a grid is the minimum zoom layer of the next grid in the list.
-          Also each zoom level is divided in a grid of latitude/longitude divisions.
+Like the DynamicLayer, the Virtualization requires a division of the map space in regions. The division of map space is defined using the VirtualizationLayer.ZoomLevelGridList collection. Each ZoomLevelGrid should define a minimum zoom level for its division. The maximum zoom level for a grid is the minimum zoom layer of the next grid in the list. Also each zoom level is divided in a grid of latitude/longitude divisions.
         
 
-The ZoomLevelGrid provides the __CellWidth__ and __CellHeight__
-          properties which allow specifying the size of cell on the map in pixels. By default the cell has a size
-          which equals the size of tile (256x256) which is usually used by the map providers like Bing and OpenStreet.
+The ZoomLevelGrid provides the __CellWidth__ and __CellHeight__ properties which allow specifying the size of cell on the map in pixels. By default the cell has a size which equals the size of tile (256x256) which is usually used by the map providers like Bing and OpenStreet.
         
 
-Specifying the size of cell for the zoom level affects to a number of requests to a Virtualization
-          Source which is depended on the viewport size of the map.
+Specifying the size of cell for the zoom level affects to a number of requests to a Virtualization Source which is depended on the viewport size of the map.
         
 
->importantIf the requests are performed slowly (for example they use a service which has low performance) you can
-            increase the cell size to lower the number of requests.
+>importantIf the requests are performed slowly (for example they use a service which has low performance) you can increase the cell size to lower the number of requests.
           
 
 Here is a sample Virtualization Layer declaration:
@@ -80,32 +66,19 @@ Here is a sample Virtualization Layer declaration:
 
 ## Virtualization Source
 
-The data provided to the __VirtualizationLayer__ should be wrapped in a
-          class that implements the __IMapVirtualizationSource__ interface.
-          This interface contains a __BackgroundItemsRequest()__ method,
-          which is used by the __VirtualizationLayer__ to
-          request new data, whenever the zoom level or the region changes.
+The data provided to the __VirtualizationLayer__ should be wrapped in a class that implements the __IMapVirtualizationSource__ interface. This interface contains a __BackgroundItemsRequest()__ method, which is used by the __VirtualizationLayer__ to request new data, whenever the zoom level or the region changes.
         
 
->When there are no __ZoomLevelGrid__s that satisfy the current zoom level,
-            no request would be made. Also when the changed value of the zoom level or the region
-            stays in the range of a __ZoomLevelGrid__ or one of it cells,
-            no request is made neither. In the current case, for example, when the zoom
-            level is 1 or 2, no requests would be made, because there is no grid which
-            represent this range. When the value is bigger than 6, requests would be
-            made only when the grid cell changes, because the gird is defined for
-            the range from 6 to the maximal zoom level.
+>When there are no __ZoomLevelGrid__  that satisfy the current zoom level, no request would be made. Also when the changed value of the zoom level or the region stays in the range of a __ZoomLevelGrid__ or one of it cells, no request is made neither. In the current case, for example, when the zoom level is 1 or 2, no requests would be made, because there is no grid which represent this range. When the value is bigger than 6, requests would be made only when the grid cell changes, because the gird is defined for the range from 6 to the maximal zoom level.
           
 
-The __BackgroundItemsRequestEventArgs__
-          provides the following properties:
+The __BackgroundItemsRequestEventArgs__ provides the following properties:
         
 
 * __Layer__ - reference to the layer that is requesting items.
             
 
-* __minZoom__ - represents the minimum zoom level of the currently 
-              active __ZoomGrid__.
+* __minZoom__ - represents the minimum zoom level of the currently active __ZoomGrid__.
             
 
 * __upperLeft__ - represents the upper left corner of the currently visible region.
@@ -114,12 +87,10 @@ The __BackgroundItemsRequestEventArgs__
 * __lowerRight__ - represents the lower right corner of the currently visible region.
             
 
-* __CompleteItemsRequest__ - represents an __Action__, which
-              is responsible to pass the desired item back to the __VirtualizationLayer__.
+* __CompleteItemsRequest__ - represents an __Action__, which is responsible to pass the desired item back to the __VirtualizationLayer__.
             
 
-In the __BackgroundItemsRequest()__ method you have to implement your logic for getting the desired items.
-          The items can be represented by static and dynamic data as well.
+In the __BackgroundItemsRequest()__ method you have to implement your logic for getting the desired items. The items can be represented by static and dynamic data as well.
         
 
 Here is an example of how to implement simple static functionality in the __BackgroundItemsRequest()__ method.
@@ -209,7 +180,7 @@ Here is an example of how to implement simple static functionality in the __Back
 		Private m_SofiaEllipse As Ellipse
 	
 		Public Sub New()
-			'Exectued ot UI thread
+			'Exectued ot UI thread'
 			BulgariaEllipse = New Ellipse()
 			BulgariaEllipse.Width = 15
 			BulgariaEllipse.Height = 15
@@ -249,8 +220,7 @@ Here is an example of how to implement simple static functionality in the __Back
 
 
 
-You can set the virtualization source to a new instance of the *MapVirtualizationSource*
-          and create a new definition for the __OpenStreetMap__ provider:
+You can set the virtualization source to a new instance of the *MapVirtualizationSource* and create a new definition for the __OpenStreetMap__ provider:
         
 
 #### __C#__
@@ -280,10 +250,11 @@ You can set the virtualization source to a new instance of the *MapVirtualizatio
 
 The result:
 
-ZoomLevel = 3:![Rad Map Features Virtualization Layer 01](images/RadMap_Features_VirtualizationLayer_01.png)
+ZoomLevel = 3:
 
-ZoomLevel = 6:![Rad Map Features Virtualization Layer 02](images/RadMap_Features_VirtualizationLayer_02.png)
+![Rad Map Features Virtualization Layer 01](images/RadMap_Features_VirtualizationLayer_01.png)
 
+ZoomLevel = 6:
 
+![Rad Map Features Virtualization Layer 02](images/RadMap_Features_VirtualizationLayer_02.png)
 
-# See Also

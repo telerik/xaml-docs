@@ -18,7 +18,8 @@ Like most WPF controls, the __RadCloudUpload__ also allows you to customize it i
 ## RadCloudUpload Template structure
 
 This section will explain the structure of the __RadUpload__'s template. Here is a snapshot of the template generated in Expression Blend.
-        ![cloudupload template structure](images/cloudupload_template_structure.png)
+
+![cloudupload template structure](images/cloudupload_template_structure.png)
 
 It contains the following parts:
 
@@ -73,7 +74,9 @@ It contains the following parts:
 * __[RadButton]__ - *Clear* represents the __Clear__ button which hosts the clear path.
                   
 
-## Styling the RadCloudUpload![cloudupload styling](images/cloudupload_styling.png)
+## Styling the RadCloudUpload
+
+![cloudupload styling](images/cloudupload_styling.png)
 
 * CloudUpload_Background - a brush that represents the background of the __RadCloudUpload__ control.
 

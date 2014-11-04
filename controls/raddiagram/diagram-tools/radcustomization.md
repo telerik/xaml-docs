@@ -89,8 +89,5 @@ In order to create a custom tool, you can create a new class using one of the fo
 * Create a class that derives from the __ToolBase__ class and implements the __IMouseListener__ and/or __IKeyboardListener__ interfaces.
 			
 
-* Create a class that implements the {% if site.site_name == 'Silverlight' %}[ITool](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_itool.html){% endif %}{% if site.site_name == 'WPF' %}[ITool](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_itool.html){% endif %}
-			  interface and one or both of the __IMouseListener__ and __IKeyboardListener__ interfaces.
+* Create a class that implements the {% if site.site_name == 'Silverlight' %}[ITool](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_itool.html){% endif %}{% if site.site_name == 'WPF' %}[ITool](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_itool.html){% endif %} interface and one or both of the __IMouseListener__ and __IKeyboardListener__ interfaces.
 			
-
-# See Also

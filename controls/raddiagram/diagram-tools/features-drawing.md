@@ -21,15 +21,15 @@ The __Path Tool__ and __Pencil Tool__ of the __RadDiagram__ enable you to create
 * __Pencil Tool__ - this tool allows you to perform free hand drawing thus creating various custom shapes. It is not active by default.
 		  
 
-You can examine the full power of this feature in the
-		{% if site.site_name == 'Silverlight' %}[Diagrams Drawing demo](http://demos.telerik.com/silverlight/#Diagrams/Drawing){% endif %}{% if site.site_name == 'WPF' %}[Diagrams Drawing demo](http://demos.telerik.com/wpf/#Diagrams/Drawing){% endif %}.
-	  ![raddiagram-features-drawing](images/raddiagram-features-drawing.png)
+You can examine the full power of this feature in the {% if site.site_name == 'Silverlight' %}[Diagrams Drawing demo](http://demos.telerik.com/silverlight/#Diagrams/Drawing){% endif %}{% if site.site_name == 'WPF' %}[Diagrams Drawing demo](http://demos.telerik.com/wpf/#Diagrams/Drawing){% endif %}.
+
+![raddiagram-features-drawing](images/raddiagram-features-drawing.png)
 
 ## Getting Started
 
 In order to use the Path Tool or Pencil Tool in the RadDiagram, you have to set the __ActiveTool__ property. Its default value is PointerTool.
 		
-
+#### __C#__
 	
         private void Button_Click_PathTool(object sender, RoutedEventArgs e)
 		{
@@ -43,7 +43,7 @@ In order to use the Path Tool or Pencil Tool in the RadDiagram, you have to set 
 		  
 
 
-
+#### __VB.NET__
 	
        Private Sub Button_Click_PathTool(sender As Object, e As RoutedEventArgs)
 	      Me.diagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.PathTool
@@ -56,8 +56,7 @@ In order to use the Path Tool or Pencil Tool in the RadDiagram, you have to set 
 
 
 
-When the __Path Tool__is active you click on the RadDiagram and this way you create the polyline points. When you need to finish the drawing you just have to press the Enter key.
-		  When the __Pencil Tool__ is active you click the __Mouse Left Button Down__ and move the mouse, this way draw your custom shape. On Mouse Up the shape is added to the Shapes collection of the RadDiagram.
+When the __Path Tool__ is active you click on the RadDiagram and this way you create the polyline points. When you need to finish the drawing you just have to press the Enter key. When the __Pencil Tool__ is active you click the __Mouse Left Button Down__ and move the mouse, this way draw your custom shape. On Mouse Up the shape is added to the Shapes collection of the RadDiagram.
 		
 
 ## Customizing Drawing Tools
@@ -65,13 +64,13 @@ When the __Path Tool__is active you click on the RadDiagram and this way you cre
 You are able to set the __Fill__, __Stroke__, __StrokeThickness__ of the shapes you draw via the following attached properties:
 		
 
-	
+	#### __XAML__
 		  xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
 		
 
 
 
-	
+	#### __XAML__
 		  <telerik:RadDiagram x:Name="diagram"
 		  primitives:DrawingAdorner.Fill="Blue"
 		  primitives:DrawingAdorner.Stroke="Orange"
@@ -86,7 +85,7 @@ When you use __Path Tool__you can choose the way the polylines are intersected v
 FillRule takes one of the following values: __EvenOdd__ or __NonZero__. For more information about the FillRule you can visit [this MSDN article](http://msdn.microsoft.com/en-us/library/system.windows.media.pathgeometry.fillrule.aspx).
 		
 
-	
+	#### __XAML__
 		  primitives:DrawingAdorner.FillRule="EvenOdd"
 		
 
@@ -95,7 +94,7 @@ FillRule takes one of the following values: __EvenOdd__ or __NonZero__. For more
 The IsShapeFilled and IsShapeClosed properties determine whether the shapes will have Fill and whether the first and last editing points of the shape you draw will be automatically linked.
 		
 
-	
+	#### __XAML__
 		  primitives:DrawingAdorner.IsShapeClosed="False"
 		  primitives:DrawingAdorner.IsShapeFilled="False"
 		

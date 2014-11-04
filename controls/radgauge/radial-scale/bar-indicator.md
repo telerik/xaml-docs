@@ -43,27 +43,25 @@ The Bar indicator supports the following features:
 
 1. Layout 
 
-
 1. You can set location of the Bar indicator relative to a scale bar using telerik:ScaleObject.Location property.
  For example, "Outside" 
 
-         
-      ![](images/RadialBarOutside.png), "Inside"  
 
+![](images/RadialBarOutside.png)
 
-         
-      ![](images/RadialBarInside.png) or "OverCenter" 
+ "Inside"  
 
+![](images/RadialBarInside.png)
 
-         
-      ![](images/RadialBarOverCenter.png)
+ or "OverCenter" 
+
+![](images/RadialBarOverCenter.png)
 
 1. telerik:ScaleObject.Offset relative to a scale bar.
 
 1. The thickness of the Bar indicator is controlled by StartWidth and EndWidth properties.
 
 1. Appearance 
-
 
 1. The Brush used for the filled part is controlled by Background property.
 
@@ -77,10 +75,13 @@ The Bar indicator supports the following features:
 
 1. The refresh rate allows calculating the displayed value using values which are assigned during the specified interval according to the specified method.
 
-There are several ways how you can change color of the bar indicator. By default you set it using "Background" property. But sometimes it is useful to change color of the bar indicator according to the value it points to.
-        RadGauge supports this feature for the bar indicators. You can configure bar indicator to use the color of the range which contains indicator's value. For example:
+There are several ways how you can change color of the bar indicator. By default you set it using "Background" property. But sometimes it is useful to change color of the bar indicator according to the value it points to. RadGauge supports this feature for the bar indicators. You can configure bar indicator to use the color of the range which contains indicator's value. For example:
 
-![](images/RadialBarRange2550.png) or ![](images/RadialBarRange5075.png)
+![](images/RadialBarRange2550.png) 
+
+or 
+
+![](images/RadialBarRange5075.png)
 
 To do it you need add few ranges to your scale and specify background of the indicator for every range. Then you should set UseRangeColor property of the bar indicator to true:
 

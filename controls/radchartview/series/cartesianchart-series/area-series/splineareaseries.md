@@ -18,7 +18,8 @@ The SplineAreaSeries behave like the SplineSeries but it also allows the area be
 
 You can use the following definition to display a simple SplineAreaSeries:
 
-	
+#### XAML
+	{{region radchartview-splineareaseries}}
             <telerik:RadCartesianChart Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -40,7 +41,7 @@ You can use the following definition to display a simple SplineAreaSeries:
                 </telerik:SplineAreaSeries>
             </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>
-
+{{endregion}}
 ![radchartview-series-splineareaseries](images/radchartview-series-splineareaseries.png)
 
 # See Also

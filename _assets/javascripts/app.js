@@ -46,8 +46,28 @@ function navigationTemplate(root) {
 function preventParentSelection(e) {
     if (this.dataItem(e.node).hasChildren) {
         e.preventDefault();
-        this.toggle(e.node);
+        this.toggle(e.node);		
     }
+}
+
+function onExpand(e) {
+	var item = this.dataItem(e.node);
+	
+	if(!item.hasChildren)
+	{
+		var elementTop = $(e.node).offset().top;
+		var treeScrollTop = $("#page-nav").scrollTop();
+
+		var treeTop = $("#page-nav").offset().top;
+		
+		console.log("elementTop " + elementTop);
+		console.log("treeScrollTop " + treeScrollTop);
+		console.log("treeTop " + treeTop);
+		
+		$("#page-nav").animate({
+			scrollTop: ((treeScrollTop + elementTop) - treeTop) / 2
+		});
+	}
 }
 
 $(function(){

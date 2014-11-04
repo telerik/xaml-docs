@@ -20,7 +20,7 @@ This article describes the __TextTool__ that was exposed with the Q1 2013 releas
 The __TextTool__ allows you to enter the edit mode of a __RadDiagramItem__ as soon as you click on it. Furthermore, you can use this tool to draw text shapes. As it isn't active by default, you can use the __RadDiagram ActiveTool__ property to activate it in XAML:
 		
 
-	
+	#### __XAML__
 		  <telerik:RadDiagram x:Name="xDiagram" ActiveTool="TextTool"/>
 		  
 
@@ -28,13 +28,13 @@ The __TextTool__ allows you to enter the edit mode of a __RadDiagramItem__ as so
 
 or in code-behind:
 
-	
+	#### __C#__
 		  xDiagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool;
 		  
 
 
 
-	
+	#### __VB.NET__
 		  xDiagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool
 		  
 
@@ -43,7 +43,7 @@ or in code-behind:
 Let's consider the following sample __RadDiagram__ definition:
 		
 
-	
+	#### __XAML__
         <telerik:RadDiagram x:Name="xDiagram" ActiveTool="TextTool">
             <telerik:RadDiagramShape Content="RectangleShape" Position="50,50" />
         </telerik:RadDiagram>
@@ -51,10 +51,12 @@ Let's consider the following sample __RadDiagram__ definition:
 
 
 
-In it we have one shape and a TextTool activated by default. This is why as soon as you click on the shape, you will enter its edit mode. This way you can easily modify its content.![Rad Diagram Tools Text Tool](images/RadDiagram_Tools_TextTool.png)
+In it we have one shape and a TextTool activated by default. This is why as soon as you click on the shape, you will enter its edit mode. This way you can easily modify its content.
+![Rad Diagram Tools Text Tool](images/RadDiagram_Tools_TextTool.png)
 
 And what is more, as soon as you activate the __TextTool__, you can dynamically create a text shape by dragging a rectangle on the diagramming surface:
-		![Rad Diagram Tools Text Shape](images/RadDiagram_Tools_TextShape.png)
+
+![Rad Diagram Tools Text Shape](images/RadDiagram_Tools_TextShape.png)
 
 # See Also
 

@@ -28,7 +28,5 @@ The __RadExpander__ control exposes a __ClickMode__ property to allow you to det
 * __Hover__ - specifies that the content should be expanded when the mouse pointer hovers over the __RadExpander.Header__. 
 			
 
-The default value of the __ClickMode__ property is __Release__ which means that by 
-		default the __RadExpander__ control is expanded when the left mouse button is released after a click on the header or when 
-		the __Enter__ or __Space__ keys are released while focusing the header.
+The default value of the __ClickMode__ property is __Release__ which means that by  default the __RadExpander__ control is expanded when the left mouse button is released after a click on the header or when  the __Enter__ or __Space__ keys are released while focusing the header.
 	  

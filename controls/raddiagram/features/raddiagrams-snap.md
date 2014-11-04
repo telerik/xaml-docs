@@ -15,8 +15,7 @@ position: 3
 __RadDiagram__ gives you the ability to __Align__ the selected RadDiagramItems or __Snap__ them with DiagramCommands.
             
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-                    {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
                     article you can find more information on how to set an application-wide theme.
                 
 
@@ -25,8 +24,7 @@ __RadDiagram__ gives you the ability to __Align__ the selected RadDiagramItems o
 The __Align__ DiagramCommand makes the Selected Items align to Top, Bottom, Left, Right, Middle or Center.
                 
 
-Note that the __IsSnapToGridEnabled__ property of the RadDiagram must be set to True (default).)
-                    Below you can see an example code of how to use the Align Command:
+Note that the __IsSnapToGridEnabled__ property of the RadDiagram must be set to True (default). Below you can see an example code of how to use the Align Command:
                 
 
 #### __XAML__
@@ -66,8 +64,7 @@ You can give argument to the Align Command with the __CommandParameter__ propert
 
 
 
->Please keep in mind that you cannot use __HorizontalAlignment__ and __VerticalAlignment__ of the RadDiagramItem because the Diagram is created over a Canvas.
-                        In other word, use only the Position property.
+>Please keep in mind that you cannot use __HorizontalAlignment__ and __VerticalAlignment__ of the RadDiagramItem because the Diagram is created over a Canvas. In other word, use only the Position property.
                     
 
 ## Snap To Grid
@@ -78,10 +75,7 @@ The __RadDiagram__ snapping features allow you to move the diagram items exactly
 In the __RadDiagram__ the snapping is enabled by default and in order to disable it, you can set the __IsSnapToGridEnabled__ property to __False__. Also, please note that the default value of the __RadDiagram SnapX__ and __SnapY__ properties is 20, but you can change it to any integer greater than or equal to 1.
                 
 
-Once the snapping is enabled, when a __DiagramItem__ is dragged its X and Y coordinates increase or decrease with the __SnapX__ and __SnapY__ value. Below you can see the selected item being snapped with the
-                    [
-                        Snap Command
-                    ]({%slug raddiagrams-features-commands%}).
+Once the snapping is enabled, when a __DiagramItem__ is dragged its X and Y coordinates increase or decrease with the __SnapX__ and __SnapY__ value. Below you can see the selected item being snapped with the [Snap Command]({%slug raddiagrams-features-commands%}).
                 
 
 #### __XAML__
@@ -115,7 +109,8 @@ You are also able to snap items to other items while dragging. You can enable th
                     
 
 The __SnapToItems__ feature is visualized through a set of thin indication lines helping you snap the dragged item/s to other static items:
-                ![raddiagram-features-align-snaptoitems](images/raddiagram-features-align-snaptoitems.png)
+
+![raddiagram-features-align-snaptoitems](images/raddiagram-features-align-snaptoitems.png)
 
 ## SnappingEngine
 

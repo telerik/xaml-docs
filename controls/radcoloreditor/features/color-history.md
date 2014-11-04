@@ -45,11 +45,7 @@ The __RadColorEditor__ control enables you to keep track of the previously selec
 	        </ItemsControl.ItemsPanel>
 	    </ItemsControl>
 	</StackPanel>
-	{{endregion}}
-
-
-							<image xlink:href="radcoloreditor-features-color-history"/>
-						
+	{{endregion}}					
 
 * __HistoryCapacity__ - this property is of type __int__. It gets/set the number of previously used colors to be stored in the __ColorHistory__ collection.
 					

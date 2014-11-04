@@ -12,54 +12,41 @@ position: 14
 
 
 
-The __RadMap__ provides unified geocoding architecture,
-        which uses the functionality of the different geocoding services. This allows
-        you to easily convert a location point to an address and the opposite -
-        address to a location point.
+The __RadMap__ provides unified geocoding architecture, which uses the functionality of the different geocoding services. This allows you to easily convert a location point to an address and the opposite - address to a location point.
       
 
 This topic will focus on the following:
 
-* [Geocode Providers](#Geocode_Providers)
+* [Geocode Providers](#geocode-providers)
 
-* [Using BingGeocodeProvider](#Using_BingGeocodeProvider)
+* [Using BingGeocodeProvider](#using-bingGeocodeProvider)
 
-* [Geocode and Reverse Geocode](#Geocode_and_Reverse_Geocode)
+* [Geocode and Reverse Geocode](#geocode-and-reverse-geocode)
 
-* [Results](#Results)
+* [Results](#results)
 
 ## Geocode Providers
 
-The __Geocode Providers__ are very similar to the
-          __Map Providers__. They make calls to the
-          respective services in order to provide a certain functionality.
+The __Geocode Providers__ are very similar to the __Map Providers__. They make calls to the respective services in order to provide a certain functionality.
         
 
 Here is a list of the currently available geocode providers:
 
-* __BingGeocodeProvider__ - allows you to perform
-              geocode actions via the __Bing Maps__.
+* __BingGeocodeProvider__ - allows you to perform geocode actions via the __Bing Maps__.
             
 
 ## Using BingGeocodeProvider
 
-In order to use the __BingGeocodeProvider__ you have to
-          create an instance of it and handle its __GeocodeCompleted__
-          event. Also you have to set the following properties:
+In order to use the __BingGeocodeProvider__ you have to create an instance of it and handle its __GeocodeCompleted__ event. Also you have to set the following properties:
         
 
-* __ApplicationId__ - this represents a key, which allows
-            you to use the __Bing Maps__ services. It should be the
-            same key as the one you use with the __BingMapProvider__ class.
+* __ApplicationId__ - this represents a key, which allows you to use the __Bing Maps__ services. It should be the same key as the one you use with the __BingMapProvider__ class.
             
 
->Without supplying a valid key you won't be able to visualize the map
-                inside the __RadMap__ control. In order to learn
-                how to obtain one, please read [this article](http://msdn.microsoft.com/en-us/library/ee681900.aspx).
+>Without supplying a valid key you won't be able to visualize the map inside the __RadMap__ control. In order to learn how to obtain one, please read [this article](http://msdn.microsoft.com/en-us/library/ee681900.aspx).
               
 
-* __MapControl__ - represents the instance of the
-              __RadMap__, which should be associated with the geocode provider.
+* __MapControl__ - represents the instance of the __RadMap__, which should be associated with the geocode provider.
             
 
 Here is an example:
@@ -101,25 +88,15 @@ Here is an example:
 
 ## Geocode and Reverse Geocode
 
-The __Geocode__ feature allows you to perform both
-          location to address and address to location conversion. This allows you
-          to provide the user with the specific address of a location he/she has chosen,
-          or provide him/her with coordinates of the address he/she is interested in.
+The __Geocode__ feature allows you to perform both location to address and address to location conversion. This allows you to provide the user with the specific address of a location he/she has chosen, or provide him/her with coordinates of the address he/she is interested in.
         
 
 ## Geocode
 
-If you want to convert an address to a location you have to call the
-          __GeocodeAsync()__ method of the
-          __BingGeocodeProvider__ and pass a
-          __GeocodeRequest__ to it. The
-          __GeocodeRequest__ should contain the desired address,
-          which to get converted to a location point.
+If you want to convert an address to a location you have to call the __GeocodeAsync()__ method of the __BingGeocodeProvider__ and pass a __GeocodeRequest__ to it. The __GeocodeRequest__ should contain the desired address, which to get converted to a location point.
         
 
-For example, you can use an UI that consists of a __TextBox__
-          named "__InputBox__" and a button, upon which click
-          a geocode action should be executed.
+For example, you can use an UI that consists of a __TextBox__ named "__InputBox__" and a button, upon which click a geocode action should be executed.
         
 
 #### __XAML__
@@ -142,12 +119,10 @@ For example, you can use an UI that consists of a __TextBox__
 
 
 
-Here is how the code for the button's __Click__
-          event handler should look.
+Here is how the code for the button's __Click__ event handler should look.
         
 
->tipThis is very similar to the usage of the __SearchRequest__,
-            so you are able to provide the user with an input box in order to enter the desired address.
+>tipThis is very similar to the usage of the __SearchRequest__, so you are able to provide the user with an input box in order to enter the desired address.
           
 
 #### __C#__
@@ -177,22 +152,13 @@ Here is how the code for the button's __Click__
 
 ## Reverse Geocode
 
-If you want to convert a location point to an address you have to
-          call the __ReverseGeocodeAsync()__ method of
-          the __BingGeocodeProvider__ and pass a
-          __ReverseGeocodeRequest__ to it. The
-          __GeocodeRequest__ should contain the
-          desired location, which to be converted to an address.
+If you want to convert a location point to an address you have to call the __ReverseGeocodeAsync()__ method of the __BingGeocodeProvider__ and pass a __ReverseGeocodeRequest__ to it. The __GeocodeRequest__ should contain the desired location, which to be converted to an address.
         
 
-For example, you can use the __MapMouseDoubleClick__
-          event to implement a logic that executes a reverse geocode action.
-          In this way the user would be able to get the address of the
-          location, he had clicked.
+For example, you can use the __MapMouseDoubleClick__ event to implement a logic that executes a reverse geocode action. In this way the user would be able to get the address of the location, he had clicked.
         
 
->tipYou can find more information about the __Map Double Click__ feature
-            [here]({%slug radmap-features-click-modes%}).
+>tipYou can find more information about the __Map Double Click__ feature [here]({%slug radmap-features-click-modes%}).
           
 
 #### __XAML__
@@ -205,8 +171,7 @@ For example, you can use the __MapMouseDoubleClick__
 
 
 
-Here is how the code for the __MapMouseDoubleClick__
-          event handler should look like.
+Here is how the code for the __MapMouseDoubleClick__ event handler should look like.
         
 
 #### __C#__
@@ -236,24 +201,13 @@ Here is how the code for the __MapMouseDoubleClick__
 
 ## Results
 
-The results from the geocode services are held by the
-          __GeocodeResponse__ object inside the
-          __GeocodeCompletedEventArgs__ of the handler
-          for the __GeocodeCompleted__ event.
-          In case you are using reverse geocode, you will most certainly get only one result.
-          If you use normal geocode, you can get more than one result,
-          depending on the exactness of the query.
+The results from the geocode services are held by the __GeocodeResponse__ object inside the __GeocodeCompletedEventArgs__ of the handler for the __GeocodeCompleted__ event. In case you are using reverse geocode, you will most certainly get only one result. If you use normal geocode, you can get more than one result, depending on the exactness of the query.
         
 
->tipIf you need more information you can take a look at the
-            [GeocodeResponse](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_map_geocoderesponse.html)
-            and
-            [GeocodeResult](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_map_geocoderesult.html)
-            classes in the API Reference.
+>tipIf you need more information you can take a look at the [GeocodeResponse](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_map_geocoderesponse.html) and [GeocodeResult](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_map_geocoderesult.html) classes in the API Reference.
           
 
-To get the results you have to simply iterate the collection. Here is an
-          example, which shows a __MessageBox__ for each result.
+To get the results you have to simply iterate the collection. Here is an example, which shows a __MessageBox__ for each result.
         
 
 #### __C#__
@@ -282,7 +236,9 @@ To get the results you have to simply iterate the collection. Here is an
 
 
 
-Here is a snapshot of the result.![](images/RadMap_Features_Geocode_01.png)
+Here is a snapshot of the result.
+
+![](images/RadMap_Features_Geocode_01.png)
 
 # See Also
 

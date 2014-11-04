@@ -312,6 +312,14 @@ navigation:
     controls/radimageeditor/how-to:
         title: How To
         position: 4
+    "*radspreadsheet":
+        title: RadSpreadsheet
+    controls/radspreadsheet/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2		
+    controls/radspreadsheet/howto:
+        title: How To
+        position: 6		
 ## Centaur Controls End
 
 ## X1 Controls Start

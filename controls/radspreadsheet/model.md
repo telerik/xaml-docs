@@ -5,14 +5,14 @@ description: Model
 slug: radspreadsheet-model
 tags: model
 published: True
-position: 5
+position: 6
 ---
 
 # Model
 
 
 
->important__RadSpreadsheet__ operates with a rich document model that is completely decoupled from UI. The documentation of the model can be found in the RadSpreadProcessing section of the documentation [here]({%slug radspreadprocessing-overview%}).
+>important__RadSpreadsheet__ operates with a rich document model that is completely decoupled from UI. The documentation of the model can be found in the RadSpreadProcessing section of the documentation [here](7f891fd1-de4f-42d9-9ce7-7f6fed6ef726).
         
 
 The primary document that the model uses to manipulate and store data is called a __workbook__. Each __workbook__ contains at least one __worksheet__ that is defined as a collection of cells organized in rows and columns. A __worksheet__ can also be viewed as a tabular working surface that you use to enter and organize your data. Typically, a single __workbook__ holds together several __worksheets__ that contain related information. For example, a workbook named *Annual Budget* can contain four worksheets that split the data for each quarter.

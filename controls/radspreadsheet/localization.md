@@ -5,7 +5,7 @@ description: Localization
 slug: radspreadsheet-localization
 tags: localization
 published: True
-position: 6
+position: 7
 ---
 
 # Localization
@@ -15,7 +15,7 @@ position: 6
 The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the __RadSpreadsheet__
         control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything. You can find more information
         on the localization of the Telerik IU Suite
-        [here]({%slug common-localization%}).
+        [here](B0F77598-F54B-4ACA-B3EE-A38FF9B41BB8).
       
 
 There are two ways to implement the localization - using Resource files or a custom localization manager.

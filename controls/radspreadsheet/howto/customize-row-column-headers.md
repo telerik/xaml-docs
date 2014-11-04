@@ -1,0 +1,69 @@
+---
+title: Customize Row and Column Headers
+page_title: Customize Row and Column Headers
+description: Customize Row and Column Headers
+slug: radspreadsheet-howto-customize-row-column-headers
+tags: customize,row,and,column,headers
+published: True
+position: 1
+---
+
+# Customize Row and Column Headers
+
+
+
+Giving your data meaningful names helps you better understand it. For example, if your document contains a column with the first names of your employees, the column name A does not help you understand the meaning of the data contained in that column. For the same reason you probably will have one header row in the document that will store the names of your columns. But when a user scrolls down the content of the header row will be hidden and the user will not see the names.
+      
+
+It will be useful if you can set the column heading name when the first row is not visible like shown in the below image.
+      ![Rad Spreadsheet How To Customize Row and Column Headers 01](images/RadSpreadsheet_HowTo_Customize_Row_and_Column_Headers_01.png)
+
+## Change the Row and Column Headings
+
+Each worksheet has a property called __RenderNameConverter__, which provides a mechanism for changing the row and column headings for UI purposes, including PDF export and [Printing]({%slug radspreadsheet-ui-printing%}). All you need to do is create a custom name converter and assign an instance of it to the RenderNameConverter property. The converter class must inherit from __HeaderNameRenderingConverterBase__.
+        
+
+__Example 1__ shows a simple implementation for the converter class used for creating the snapshots above.
+        
+
+#### __[C#] Example 1: Create Custom Name Converter__
+
+{{region radspreadsheet-howto-customize-row-column-headers_0}}
+	    public class CustomNameConverter : HeaderNameRenderingConverterBase
+	    {
+	        protected override string ConvertColumnIndexToNameOverride(HeaderNameRenderingConverterContext context, int columnIndex)
+	        {
+	            if (columnIndex == 0 &&
+	                context.VisibleRange.FromIndex.RowIndex >= 1 && context.VisibleRange.FromIndex.RowIndex <= 5)
+	            {
+	                return "First Name";
+	            }
+	
+	            return base.ConvertColumnIndexToNameOverride(context, columnIndex);
+	        }
+	    }
+	{{endregion}}
+
+
+
+After implementing your custom name converter you need to instantiate it and assign it to the worksheet __RenderNameConverter__ property. __Example 2__ sets a new instance of the CustomNameConverter created in __Example 1__ to a __RadSpreadsheet__'s worksheet.
+        
+
+#### __[C#] Example 2: Instantiate and Assign Custom Converter__
+
+{{region radspreadsheet-howto-customize-row-column-headers_1}}
+	            this.radSpreadsheet.Workbook.Worksheets[0].HeaderNameRenderingConverter = new CustomNameConverter();
+	{{endregion}}
+
+
+
+That's it. The column heading is changed.
+        
+
+>tipYou can download a runnable project of the previous example from our online SDK repository
+            [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
+          
+
+# See Also
+
+ * [Hide Row and Column Headers and Gridlines]({%slug radspreadsheet-howto-hide-row-column-headers-and-gridlines%})

@@ -20,17 +20,17 @@ The __RadMap__ control provides you with a set of shape objects, which are speci
 
 As the shapes are used identical to their counterparts, this topic will focus briefly on showing you how to use the most important of them:
 
-* [MapLine](#MapLine)
+* [MapLine](#mapline)
 
-* [MapRectangle](#MapRectangle)
+* [MapRectangle](#maprectangle)
 
-* [MapEllipse](#MapEllipse)
+* [MapEllipse](#mapellipse)
 
-* [MapPolyline](#MapPolyline)
+* [MapPolyline](#mappolyline)
 
-* [MapPolygon](#MapPolygon)
+* [MapPolygon](#mappolygon)
 
-* [MapPath](#MapPath)
+* [MapPath](#mappath)
 
 
 
@@ -60,8 +60,7 @@ The most important things when using the __MapLine__ object are the __Point1__ a
 
 
 
-         
-      ![](images/RadMap_Features_MapShapes_01.png)
+![](images/RadMap_Features_MapShapes_01.png)
 
 ## MapRectangle
 
@@ -107,8 +106,7 @@ Here is an example.
 
 
 
-         
-      ![](images/RadMap_Features_MapShapes_02.png)
+![](images/RadMap_Features_MapShapes_02.png)
 
 ## MapEllipse
 
@@ -148,8 +146,7 @@ Here is an example.
 
 
 
-         
-      ![](images/RadMap_Features_MapShapes_03.png)
+![](images/RadMap_Features_MapShapes_03.png)
 
 ## MapPolyline
 
@@ -172,10 +169,7 @@ The only difference between the standard __Polyline__ and the __MapPolyline__ is
 
 
 
-
-
-         
-      ![](images/RadMap_Features_MapShapes_04.png)
+![](images/RadMap_Features_MapShapes_04.png)
 
 ## MapPolygon
 
@@ -204,10 +198,7 @@ The only difference between the standard __Polygon__ and the __MapPolygon__ is t
 
 
 
-
-
-         
-      ![](images/RadMap_Features_MapShapes_05.png)
+![](images/RadMap_Features_MapShapes_05.png)
 
 ## MapPath
 
@@ -252,7 +243,7 @@ Except the __MapPath__ class you also have an analog for each standard __Geometr
 
 
 
-__![](images/RadMap_Features_MapShapes_06.png)__
+![](images/RadMap_Features_MapShapes_06.png)
 
 # See Also
 

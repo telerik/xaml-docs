@@ -63,5 +63,3 @@ The __Diagramming Framework__ provides a list of constants that are applied thro
 
 * __StartDragDelta__ - The minimum distance that a mouse move operation has to cover to start a drag action. The default value of this constant is 4px.
 			
-
-# See Also

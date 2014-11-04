@@ -20,7 +20,9 @@ Thank you for choosing __RadCloudUpload__.
 
 This section defines terms and concepts used in the scope of __RadCloudUpload__ you have to get familiar with prior to continue reading this help.
 
-Below you can see a snapshot and explanation of the main visual elements of the __RadCloudUpload__ control.![cloudupload visual structure](images/cloudupload_visual_structure.png)
+Below you can see a snapshot and explanation of the main visual elements of the __RadCloudUpload__ control.
+
+![cloudupload visual structure](images/cloudupload_visual_structure.png)
 
 The structure of a __RadCloudUpload__ consists of the following main elements:
 

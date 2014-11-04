@@ -17,7 +17,7 @@ position: 2
 You can customize the appearance of a RadColorSelector by choosing which of the parts to be visible.
 				
 
-1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__, otherwise you should set it to false:
+##### 1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__, otherwise you should set it to false:
 						
 
 #### __XAML__
@@ -48,7 +48,7 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 
 ![No Color Field](images/NoColorField.png)
 
-1. You can use __StandardPaletteVisibility__ and __HeaderPaletteVisibility__ in order to set the visibility of the corresponding palettes:
+##### 2. You can use __StandardPaletteVisibility__ and __HeaderPaletteVisibility__ in order to set the visibility of the corresponding palettes:
 						
 
 * __StandardPaletteVisibility__
@@ -110,5 +110,5 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
     
 {% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}
 
-1. You can set different text for __StandardPalette__ header text , __MainPalette__ header text and __NoColorText__.
+##### 3. You can set different text for __StandardPalette__ header text , __MainPalette__ header text and __NoColorText__.
 						

@@ -16,16 +16,17 @@ position: 0
 
 You are able to configure the displaying of the different tick types on the scale. For each of the Ticks - Minor, Middle or Major you can configure the following:
 
-* [Size](#Size)
+* [Size](#size)
 
-* [Location](#Location)
+* [Location](#location)
 
-* [Appearance](#Appearance)Size
+* [Appearance](#appearance)
 
-To specify the size of all major ticks you should use the __MajorTickRelativeWidth__ and __MajorTickRelativeHeight__ properties of the respective __Scale__ object. 
-        You can use the __MinorTickRelativeWidth__ and __MinorTickRelativeHeight__ properties to change the size of the minor ticks or the __MiddleTickRelativeWidth__ and __MiddleTickRelativeHeight__ properties to change the size of the middle ticks respectively.
-        The tick's size is relative to the cell size of the scale.
-        Here is an example:
+## Size
+
+To specify the size of all major ticks you should use the __MajorTickRelativeWidth__ and __MajorTickRelativeHeight__ properties of the respective __Scale__ object.  You can use the __MinorTickRelativeWidth__ and __MinorTickRelativeHeight__ properties to change the size of the minor ticks or the __MiddleTickRelativeWidth__ and __MiddleTickRelativeHeight__ properties to change the size of the middle ticks respectively. The tick's size is relative to the cell size of the scale.
+
+Here is an example:
 
 >tipTo learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
@@ -43,7 +44,9 @@ To specify the size of all major ticks you should use the __MajorTickRelativeWid
 
 Here is a snapshot of the result.
 
-![](images/RadGauge_Features_Ticks_Size_01.png)Location
+![](images/RadGauge_Features_Ticks_Size_01.png)
+
+## Location
 
 The __TickProperties__ class exposes a __Location__ property, which allows you to specify the location of the ticks towards the scale.
 
@@ -67,7 +70,9 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-![](images/RadGauge_Features_Ticks_Location_01.png)Appearance
+![](images/RadGauge_Features_Ticks_Location_01.png)
+
+## Appearance
 
 The __TickProperties__ objects provide you with two ways of modifying the ticks' appearance:
 

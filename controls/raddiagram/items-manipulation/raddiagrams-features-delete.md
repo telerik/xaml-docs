@@ -15,9 +15,7 @@ position: 4
 __RadDiagram__ gives you the ability to remove __RadDiagramItems__ interactively, programmatically or with DiagramCommands.
 	  
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-		  {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-		  article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
 		
 
 ## Removing Items Interactively
@@ -31,14 +29,14 @@ Below you can see the result of delete operation over the selected RadDiagramIte
 You can remove RadDiagramItems in code behind by using the __RadDiagram.Items__ collection and its __Remove()__ or __RemoveAt()__ methods:
 		
 
-	
+	#### __C#__
 			this.diagram.Items.RemoveAt(3);
 			this.diagram.Items.Remove(this.diagram.SelectedItems);
 		  
 
 
 
-	
+	#### __VB.NET__
 			Me.diagram.Items.RemoveAt(3)
 			Me.diagram.Items.Remove(Me.diagram.SelectedItems)
 		  

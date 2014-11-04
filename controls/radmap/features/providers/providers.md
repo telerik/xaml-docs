@@ -15,17 +15,17 @@ position: 0
 The __RadMap__ control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently the __RadMap__ control supports a few providers:
       
 
-* [Bing Maps](#Bing_Maps)
+* [Bing Maps](#bing-maps)
 
-* [ArcGIS](#ArcGIS)
+* [ArcGIS](#arcgis-online-services)
 
-* [OpenStreet Maps](#OpenStreet_Maps)
+* [OpenStreet Maps](#openstreet-maps)
 
-* [Empty Provider](#Empty_Provider)
+* [Empty Provider](#empty-provider)
 
-* [UriImageProvider](#Image_Provider)
+* [UriImageProvider](#uriimageprovider)
 
-* [BingMapTrafficProvider](#Bing_Traffic)
+* [BingMapTrafficProvider](#bing-maps-traffic-provider)
 
 
 
@@ -59,80 +59,61 @@ The [Bing Maps](http://www.bing.com/maps/) can be used via the __BingMapProvider
 Here is an example of a __BingMapProvider__ definition:
         
 
-	
-          <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-            <telerik:RadMap.Provider>
-              <telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
-            </telerik:RadMap.Provider>
-          </telerik:RadMap>
+#### __XAML__
+      <telerik:RadMap x:Name="radMap" ZoomLevel="1">
+        <telerik:RadMap.Provider>
+          <telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
+        </telerik:RadMap.Provider>
+      </telerik:RadMap>
 
 
 
-	
-          BingMapProvider bingMap = new BingMapProvider( MapMode.Aerial, true, "key" );
-          this.radMap.Provider = bingMap;
+#### __C#__
+      BingMapProvider bingMap = new BingMapProvider( MapMode.Aerial, true, "key" );
+      this.radMap.Provider = bingMap;
 
 
 
-	
-          Dim bingMap As New BingMapProvider(MapMode.Aerial, True, "key")
-          Me.radMap.Provider = bingMap
+#### __VB__
+      Dim bingMap As New BingMapProvider(MapMode.Aerial, True, "key")
+      Me.radMap.Provider = bingMap
 
 
 
-Here is an example of a __BingRestMapProvider__ definition:
-        
 
-	
-          <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-            <telerik:RadMap.Provider>
-              <telerik:BingRestMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
-            </telerik:RadMap.Provider>
-          </telerik:RadMap>
+Here is a snapshot of the map that appears.
 
-
-
-	
-          BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Aerial, true, "key" );
-          this.radMap.Provider = bingMap;
-
-
-
-	
-          Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
-          Me.radMap.Provider = bingMap
-
-
-
-Here is a snapshot of the map that appears.![Rad Map Features Providers 01](images/RadMap_Features_Providers_01.png)
+![Rad Map Features Providers 01](images/RadMap_Features_Providers_01.png)
 
 ## OpenStreet Maps
 
 The [Open Street Maps](http://www.openstreetmap.org/) can be used via the __OpenStreetMapProvider__ class. 
         
 
-	
-          <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-            <telerik:RadMap.Provider>
-              <telerik:OpenStreetMapProvider />
-            </telerik:RadMap.Provider>
-          </telerik:RadMap>
+#### __XAML__
+      <telerik:RadMap x:Name="radMap" ZoomLevel="1">
+        <telerik:RadMap.Provider>
+          <telerik:OpenStreetMapProvider />
+        </telerik:RadMap.Provider>
+      </telerik:RadMap>
 
 
 
-	
-          OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider();
-          this.radMap.Provider = openStreetMap;
+#### __C#__
+      OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider();
+      this.radMap.Provider = openStreetMap;
 
 
 
-	
-          Dim openStreetMap As New OpenStreetMapProvider()
-          Me.radMap.Provider = openStreetMap
+#### __VB__
+      Dim openStreetMap As New OpenStreetMapProvider()
+      Me.radMap.Provider = openStreetMap
 
 
 
-Here is a snapshot of the map that appears.![Rad Map Features Providers 02](images/RadMap_Features_Providers_02.png)
+Here is a snapshot of the map that appears.
+
+![Rad Map Features Providers 02](images/RadMap_Features_Providers_02.png)
 
 ## Empty Provider
 
@@ -153,15 +134,15 @@ To learn more about the UriImageProvider [read here]({%slug radmap-features-urii
 
 Since Q2 2011 the well known Bing Maps Traffic implementation that shows the consequences of traffic incidents and construction sites as color-coded overlays for both sides of the street is now supported with RadMap control.
 
-The provider can be used together with __BingMapsProvider__or __OpenStreetMapProvider__ the way it's shown below:____
+The provider can be used together with __BingMapsProvider__ or __OpenStreetMapProvider__ the way it's shown below:
 
-	
-          <telerik:RadMap x:Name="RadMap1" Center="40.7254808779182,-73.9034722532031" ZoomLevel="11">
-            <telerik:RadMap.Providers>
-              <telerik:OpenStreetMapProvider />
-              <telerik:BingMapTrafficProvider />
-            </telerik:RadMap.Providers>
-          </telerik:RadMap>
+#### __XAML__
+      <telerik:RadMap x:Name="RadMap1" Center="40.7254808779182,-73.9034722532031" ZoomLevel="11">
+        <telerik:RadMap.Providers>
+          <telerik:OpenStreetMapProvider />
+          <telerik:BingMapTrafficProvider />
+        </telerik:RadMap.Providers>
+      </telerik:RadMap>
 
 
 
@@ -184,30 +165,32 @@ The [ArcGIS online services](http://www.esri.com/software/arcgis/arcgisonline/ma
 
 1. Topographic
 
-	
-          <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-            <telerik:RadMap.Provider>
-              <telerik:ArcGisMapProvider Mode="Physical" />
-            </telerik:RadMap.Provider>
-          </telerik:RadMap>
+#### __XAML__
+      <telerik:RadMap x:Name="radMap" ZoomLevel="1">
+        <telerik:RadMap.Provider>
+          <telerik:ArcGisMapProvider Mode="Physical" />
+        </telerik:RadMap.Provider>
+      </telerik:RadMap>
 
 
 
-	
-          ArcGisMapProvider provider = new ArcGisMapProvider();
-          provider.Mode = ArcGisMapMode.Physical;
-          this.radMap.Provider = provider;
+#### __C#__
+      ArcGisMapProvider provider = new ArcGisMapProvider();
+      provider.Mode = ArcGisMapMode.Physical;
+      this.radMap.Provider = provider;
 
 
 
-	
-          Dim provider As New ArcGisMapProvider ()
-          provider.Mode = ArcGisMapMode.Physical
-          Me.radMap.Provider = provider
+#### __VB__
+      Dim provider As New ArcGisMapProvider ()
+      provider.Mode = ArcGisMapMode.Physical
+      Me.radMap.Provider = provider
 
 
 
-Here is a snapshot of the map that appears.![Rad Map Features Providers 04](images/RadMap_Features_Providers_04.png)
+Here is a snapshot of the map that appears.
+
+![Rad Map Features Providers 04](images/RadMap_Features_Providers_04.png)
 
 # See Also
 

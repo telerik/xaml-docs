@@ -23,5 +23,3 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Custom telerik backend services provider__ - This code sample demonstrates one possible approach to implementing a custom Telerik Backend Services upload provider and using it with the RadCloudUpload.
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

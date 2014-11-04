@@ -52,5 +52,3 @@ This article describes the release history of the __RadColorEditor__ control
 * Fixed: Problem with dynamic change of implicit themes
 
 * Fixed: HSV (only thumb, pad and hue slider) does not respect the SelectedColor on start-up
-
-# See Also

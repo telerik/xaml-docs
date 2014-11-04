@@ -14,27 +14,23 @@ position: 1
 
 Like most controls, the __RadMap__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can also template parts of it. This topic will make you familiar with the template structures of the:
 
-* [RadMap](#RadMap)
+* [RadMap](#radMap)
 
-* [MapCommandBar](#MapCommandBar)
+* [MapCommandBar](#mapCommandBar)
 
-* [MapNavigation](#MapNavigation)
+* [MapNavigation](#mapNavigation)
 
-* [MapZoomBar](#MapZoomBar)
+* [MapZoomBar](#mapZoomBar)
 
-* [MapScale](#MapScale)
+* [MapScale](#mapScale)
 
-* [MapMouseLocationIndicator](#MapMouseLocationIndicator)
+* [MapMouseLocationIndicator](#mapMouseLocationIndicator)
 
 >For more information about templating and how to modify the default templates of the __RadControls__ read [the common topics](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html) on this matter.
 
 ## RadMap
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_TemplateStructure_01.png)
+![](images/RadMap_StylesAndTemplates_TemplateStructure_01.png)
 
 * __[Grid]__ - layouts the elements of the __RadMap's__ template and is of type __Grid__.
 
@@ -62,11 +58,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapCommandBar
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_TemplateStructure_02.png)
+![](images/RadMap_StylesAndTemplates_TemplateStructure_02.png)
 
 * __PART_MapCommandDropDown__ - represents the __CommandBar__ and is of type __RadDropDownButton__. In order to change the appearance of the popup, modify the value of its __DropDownContent__ property.
 
@@ -80,11 +72,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapNavigation
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_TemplateStructure_03.png)
+![](images/RadMap_StylesAndTemplates_TemplateStructure_03.png)
 
 * __mapNavigation__ - layouts the elements of the __MapNavigation's__ template and is of type __Grid__.
 
@@ -108,11 +96,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapZoomBar
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_TemplateStructure_04.png)
+![](images/RadMap_StylesAndTemplates_TemplateStructure_04.png)
 
 * __mapNavigation__ - layouts the elements of the __MapZoomBar's__ template and is of type __Grid__.
 
@@ -124,11 +108,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapScale
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_TemplateStructure_05.png)
+![](images/RadMap_StylesAndTemplates_TemplateStructure_05.png)
 
 * __[Grid]__ - layouts the elements of the __MapScale's__ template and is of type __Grid__.
 
@@ -142,11 +122,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapMouseLocationIndicator
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_TemplateStructure_06.png)
+![](images/RadMap_StylesAndTemplates_TemplateStructure_06.png)
 
 * __[Grid]__ - layouts the elements of the __MapMouseLocationIndicator's__ template and is of type __Grid__.
 

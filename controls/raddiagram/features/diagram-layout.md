@@ -15,9 +15,7 @@ position: 10
 __Layout__ in the __RadDiagram__ refers to the way the __Shapes__ are arranged on the diagramming surface. __RadDiagram__ provides a dozen of Layout algorithms which can be easily customized.
 	  
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-		  {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-		  article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
 		
 
 ## Sugiyama Layout
@@ -30,8 +28,7 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 
 * use the __RadDiagram Layout()__ method:
 			  
-
-	
+#### __XAML__
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -48,29 +45,25 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
     </Grid>			  
 			  
 
-
-
-	
-private void Layout(object sender, RoutedEventArgs e)
-{
-    diagram.Layout();
-}			  
+#### __C#__
+    private void Layout(object sender, RoutedEventArgs e)
+    {
+        diagram.Layout();
+    }			  
 			  
 
+#### __VB.NET__
 
-
-	
-Private Sub Layout(sender As Object, e As RoutedEventArgs)
-	diagram.Layout()
-End Sub			  
+    Private Sub Layout(sender As Object, e As RoutedEventArgs)
+        diagram.Layout()
+    End Sub			  
 			  
 
 
 
 * use the __DiagramCommands Layout__ command:
 			  
-
-	
+#### __XAML__
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -92,6 +85,7 @@ End Sub
 
 The __Layout()__ method provides two optional parameters - the type of the Layout (Sugiyama or Tree) and the corresponding layout settings (SugiyamaSettings or TreeLayoutSettings):
 
+#### __C#__
 {{region raddiagram-features-layout-0}}
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
@@ -107,7 +101,7 @@ The __Layout()__ method provides two optional parameters - the type of the Layou
 	}
 	{{endregion}}
 
-
+#### __VB.NET__
 
 {{region raddiagram-features-layout-0}}
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
@@ -156,26 +150,27 @@ The Tree Layout Type organizes a diagram in a tree-like fashion. There are eight
 			  
 
 Below you can see a snapshots of random diagrams laid out with Tree Layout types:
-<table><tr><td>
 
-<b>Tree-down:</b></td><td>![raddiagram-features-layout-tree-down](images/raddiagram-features-layout-tree-down.png)</td></tr><tr><td>
 
-<b>Tree-up:</b></td><td>![raddiagram-features-layout-tree-up](images/raddiagram-features-layout-tree-up.png)</td></tr><tr><td>
+* Tree-down: ![raddiagram-features-layout-tree-down](images/raddiagram-features-layout-tree-down.png) 
 
-<b>Tree-left:</b></td><td>![raddiagram-features-layout-tree-left](images/raddiagram-features-layout-tree-left.png)</td></tr><tr><td>
+* Tree-up: ![raddiagram-features-layout-tree-up](images/raddiagram-features-layout-tree-up.png) 
 
-<b>Tree-right:</b></td><td>![raddiagram-features-layout-tree-right](images/raddiagram-features-layout-tree-right.png)</td></tr><tr><td>
+* Tree-left: ![raddiagram-features-layout-tree-left](images/raddiagram-features-layout-tree-left.png) 
 
-<b>Mindmap-vertical:</b></td><td>![raddiagram-features-layout-mindmap-vertical](images/raddiagram-features-layout-mindmap-vertical.png)</td></tr><tr><td>
+* Tree-right: ![raddiagram-features-layout-tree-right](images/raddiagram-features-layout-tree-right.png) 
 
-<b>Mindmap-horizontal:</b></td><td>![raddiagram-features-layout-mindmap-horizontal](images/raddiagram-features-layout-mindmap-horizontal.png)</td></tr><tr><td>
+* Mindmap-vertical: ![raddiagram-features-layout-mindmap-vertical](images/raddiagram-features-layout-mindmap-vertical.png) 
 
-<b>Tip-over tree:</b></td><td>![raddiagram-features-layout-tipovertree](images/raddiagram-features-layout-tipovertree.png)</td></tr><tr><td>
+* Mindmap-horizontal: ![raddiagram-features-layout-mindmap-horizontal](images/raddiagram-features-layout-mindmap-horizontal.png) 
 
-<b>Radial:</b></td><td>![raddiagram-features-layout-radial](images/raddiagram-features-layout-radial.png)</td></tr></table>
+* Tip-over tree: ![raddiagram-features-layout-tipovertree](images/raddiagram-features-layout-tipovertree.png) 
+
+* Radial: ![raddiagram-features-layout-radial](images/raddiagram-features-layout-radial.png)
 
 Here is how this could be achieved in code behind.	
 
+#### __C#__
 {{region raddiagram-features-layout-1}}
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
@@ -189,7 +184,7 @@ Here is how this could be achieved in code behind.
 	}
 	{{endregion}}
 
-
+#### __VB.NET__
 
 {{region raddiagram-features-layout-1}}
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
@@ -211,7 +206,9 @@ __Component Layout and Settings__
 One important aspect with respect to diagram layout is the concept of graph component. If a diagram consists of separate sub-diagrams with no connection between them they are called components of a diagram.
 		
 
-When applying a diagram layout to a diagram consisting of one or more components a layout is applied to each components and thereafter the components are organized in a grid.![raddiagram-features-layout-gridcomponent](images/raddiagram-features-layout-gridcomponent.png)
+When applying a diagram layout to a diagram consisting of one or more components a layout is applied to each components and thereafter the components are organized in a grid.
+
+![raddiagram-features-layout-gridcomponent](images/raddiagram-features-layout-gridcomponent.png)
 
 The splitting in components is automatic and the grid layout of the components applied to both the tree layout and the layered layout types.
 
@@ -221,7 +218,7 @@ The grid layout has the following settings which are both present as part of the
 * __ComponentMargin:__ the margin each component has in the grid layout.
 			  
 
-* __ComponentsGridWidth:__the total width of the grid wherein the components are laid out.
+* __ComponentsGridWidth:__ the total width of the grid wherein the components are laid out.
 			  
 
 * __TotalMargin:__ the margin around the (virtual) grid.
@@ -280,12 +277,14 @@ __Tree layout settings__
 			  
 
 Below you can see the explanation of the main __TreeLayout Settings__ for the base 4 types (Up, Down, Left, Right) + TipOverTree.
-		![raddiagram-features-layout-settings](images/raddiagram-features-layout-settings.png)
+
+![raddiagram-features-layout-settings](images/raddiagram-features-layout-settings.png)
 
 Below you can see how the __KeepComponentsInOneRadialLayout__ actually works when you have more than one component:
-		![raddiagram-features-layout-radiallayout](images/raddiagram-features-layout-radiallayout.png)
 
-# See Also
+![raddiagram-features-layout-radiallayout](images/raddiagram-features-layout-radiallayout.png)
+
+## See Also
 
  * [Populating with Data]({%slug raddiagram-data-overview%})
 

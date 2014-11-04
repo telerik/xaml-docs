@@ -12,7 +12,7 @@ position: 7
 
 
 
-The __MapMouseLocationIndicator__exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
+The __MapMouseLocationIndicator__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 
 You have two options:
 
@@ -24,21 +24,17 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Style
 
->tipAs the __MapMouseLocationIndicator__control is part of the template of the __RadMap__, you can edit the __RadMap's__ template and directly style that instance of the control. More about styling the __RadMap__ can be found [here]({%slug radmap-styling-and-templates-styling-the-radmap%}).
+>tipAs the __MapMouseLocationIndicator__ control is part of the template of the __RadMap__, you can edit the __RadMap's__ template and directly style that instance of the control. More about styling the __RadMap__ can be found [here]({%slug radmap-styling-and-templates-styling-the-radmap%}).
 
-To copy the default styles, load your project in Expression Blend and open the User Control that holds the __MapMouseLocationIndicator__. In the 'Objects and Timeline' pane, select the __MapMouseLocationIndicator__that you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+To copy the default styles, load your project in Expression Blend and open the User Control that holds the __MapMouseLocationIndicator__. In the 'Objects and Timeline' pane, select the __MapMouseLocationIndicator__ that you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __MapMouseLocationIndicator__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __MapMouseLocationIndicator__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __MapMouseLocationIndicator____.__ Their names indicate to which part of the __MapMouseLocationIndicator__appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __MapMouseLocationIndicator__. Their names indicate to which part of the __MapMouseLocationIndicator__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_01.png){% endif %}
+![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_01.png){% endif %}
 
 * __MapScaleForeground__ - a brush that represents the foreground color of the control.
 
@@ -54,23 +50,15 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * __MapScaleLabelOuterCornerRadius__ - represents the corner radius of the outer border of the control.
 
-* __MapMouseLocationIndicatorStyle__ - represents the __Style__ applied to the __MapMouseLocationIndicator__control.{% if site.site_name == 'Silverlight' %}
+* __MapMouseLocationIndicatorStyle__ - represents the __Style__ applied to the __MapMouseLocationIndicator__ control.{% if site.site_name == 'Silverlight' %}
 
 Here is an example of these resources modified:{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
 And here is a snapshot of the result.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_03.png){% endif %}
+![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_03.png){% endif %}
 
 # See Also
 

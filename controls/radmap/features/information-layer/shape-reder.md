@@ -20,17 +20,17 @@ The __RadMap__ allows you to read data from several data formats and wrap it in 
 
 This topic will explain the following:
 
-* [Reading Files](#Reading_Files)
+* [Reading Files](#reading-files)
 
-* [Specifying a Tooltip](#Specifying_a_Tooltip)
+* [Specifying a Tooltip](#specifying-a-tooltip)
 
-* [Clearing the Layer](#Clearing_the_Layer)
+* [Clearing the Layer](#clearing-the-layer)
 
-* [Styling the Shapes](#Styling_the_Shapes)
+* [Styling the Shapes](#styling-the-shapes)
 
 ## Reading Files
 
-The __RadMap__ control supports the visualization of __ESRI Shapefiles__and KML Data. It reads the data via the __MapShapeReader__ class implemented in the __Information Layer__.
+The __RadMap__ control supports the visualization of __ESRI Shapefiles__ and KML Data. It reads the data via the __MapShapeReader__ class implemented in the __Information Layer__.
 
 #### __XAML__
 
@@ -78,15 +78,14 @@ To learn how to specify the files for each of the types read the respective topi
 
 ## Specifying a Tooltip
 
-The __MapShapeReader__ object can use the data in the .dbf file and display it in a tooltip for the respective shape.
-           In order to allow you to configure the tooltip's appearance and content, The __MapShapeReader__ class exposes the following properties:
+The __MapShapeReader__ object can use the data in the .dbf file and display it in a tooltip for the respective shape. In order to allow you to configure the tooltip's appearance and content, The __MapShapeReader__ class exposes the following properties:
         
 
-* [ToolTipFormat](#ToolTipFormat) - allows you to specify the format string for the tooltip. This is the simplest way to configure the tooltip, when having a one-line tooltip scenario.
+* [ToolTipFormat](#tooltipformat) - allows you to specify the format string for the tooltip. This is the simplest way to configure the tooltip, when having a one-line tooltip scenario.
 
-* [ToolTipStyle](#ToolTipStyle) - allows you to apply a Style that targets the ToolTip control.
+* [ToolTipStyle](#tooltipstyle) - allows you to apply a Style that targets the ToolTip control.
 
-* [ToolTipTemplate](#ToolTipTemplate) - allows you to define a DataTemplate for the tooltip. This one is used when more complex, multiline and styled tooltip scenarios.
+* [ToolTipTemplate](#tooltiptemplate) - allows you to define a DataTemplate for the tooltip. This one is used when more complex, multiline and styled tooltip scenarios.
 
 ## ToolTipFormat
 
@@ -122,14 +121,6 @@ Here is an examples for different __ToolTipFormat__ values.
 	this.informationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
 	{{endregion}}
 
-
-
-
-
-
-
-
-
 #### __VB.NET__
 
 {{region radmap-features-information-layer-shape-reder_5}}
@@ -140,11 +131,7 @@ Here is an examples for different __ToolTipFormat__ values.
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Shapefiles_01.png)
+![](images/RadMap_Shapefiles_01.png)
 
 
 
@@ -166,37 +153,24 @@ Here is a snapshot of the result.
 	</telerik:RadMap>
 	{{endregion}}
 
-
-
-
-
+    
 #### __C#__
 
 {{region radmap-features-information-layer-shape-reder_7}}
 	this.informationLayer.Reader.ToolTipFormat = "{SQKM|F2} sq.km.";
 	{{endregion}}
 
-
-
+    
 #### __VB.NET__
 
 {{region radmap-features-information-layer-shape-reder_8}}
 	Me.informationLayer.Reader.ToolTipFormat = "{SQKM|F2} sq.km.";
 	{{endregion}}
 
-
-
-
-
-
-
+    
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Shapefiles_02.png)
+![](images/RadMap_Shapefiles_02.png)
 
 ## Multiple formatted property values
 
@@ -235,24 +209,15 @@ Here is a snapshot of the result.
 	{{endregion}}
 
 
-
-
-
-
-
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Shapefiles_03.png)
+![](images/RadMap_Shapefiles_03.png)
 
 ## ToolTipStyle
 
 The __ToolTipStyle__ property allows you to specify a Style of the tooltip that gets displayed. The Style should target the ToolTip control. Here is an example.
 
->tipTo learn how to modify the color of the shapes like on the snapshot below, you have to read the [Styling the Shapes](#Styling_the_Shapes) section.
+>tipTo learn how to modify the color of the shapes like on the snapshot below, you have to read the [Styling the Shapes](#styling-the-shapes) section.
 
 #### __XAML__
 
@@ -283,11 +248,7 @@ The __ToolTipStyle__ property allows you to specify a Style of the tooltip that 
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Shapefiles_04.png)
+![](images/RadMap_Shapefiles_04.png)
 
 ## ToolTipTemplate
 
@@ -327,11 +288,7 @@ In this case the __DataTemplate__ takes as __DataContext__ the entire Extended D
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Shapefiles_05.png)
+![](images/RadMap_Shapefiles_05.png)
 
 ## Clearing the Layer
 
@@ -339,7 +296,7 @@ When adding the read shapes to the layer, the __MapShapeReader__ is able to clea
 
 ## Styling the Shapes
 
-To modify the appearance of the shapes in terms of __Fill__, __Stroke__ etc. you can either use the [HighlightFill and Shape Fill](#Using_the_MapShapeFill_object_on_the_layer_level) properties of the __InformationLayer__ or use the [Colorizer]({%slug radmap-features-colorizer%}) property of the __InformationLayer__.
+To modify the appearance of the shapes in terms of __Fill__, __Stroke__ etc. you can either use the [HighlightFill and Shape Fill](#using-the-mapshapefill-object-on-the-layer-level) properties of the __InformationLayer__ or use the [Colorizer]({%slug radmap-features-colorizer%}) property of the __InformationLayer__.
 
 # See Also
 

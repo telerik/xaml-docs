@@ -14,11 +14,11 @@ position: 5
 
 When using __MapShape__ objects there are several ways to control their appearance:
 
-* [Using the trivial properties](#Using_the_trivial_properties)
+* [Using the trivial properties](#using-the-trivial-properties)
 
-* [Using the MapShapeFill object on the control level](#Using_the_MapShapeFill_object_on_the_control_level)
+* [Using the MapShapeFill object on the control level](#using-the-mapshapefill-object-on-the-control-level)
 
-* [Using the MapShapeFill object on the layer level](#Using_the_MapShapeFill_object_on_the_layer_level)
+* [Using the MapShapeFill object on the layer level](#using-the-mapshapefill-object-on-the-layer-level)
 
 >tipAnother way to define the appearance of the shapes inside a layer is to use the [Colorizer]({%slug radmap-features-colorizer%}) property of the InformationLayer.
 
@@ -52,13 +52,8 @@ Here is an example.
 
 
 Here is a snapshot of the result.
-        
 
-
-
-
-         
-      ![](images/RadMap_Features_ShapeAppearance_01.png)
+![](images/RadMap_Features_ShapeAppearance_01.png)
 
 ## Using the MapShapeFill object on the control level
 
@@ -96,11 +91,7 @@ The two properties are of  type __MapShapeFill__. The __MapShapeFill__ object al
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Features_ShapeAppearance_02.png)
+![](images/RadMap_Features_ShapeAppearance_02.png)
 
 ## Using the MapShapeFill object on the layer level
 
@@ -143,11 +134,7 @@ The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object all
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Features_ShapeAppearance_03.png)
+![](images/RadMap_Features_ShapeAppearance_03.png)
 
 # See Also
 

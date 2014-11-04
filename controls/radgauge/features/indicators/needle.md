@@ -16,15 +16,15 @@ The needle is one of the indicator types, that the __RadGauge__ control introduc
 
 >tipTo learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
 
-Here is a list of the __Needle__control's specific features:
+Here is a list of the __Needle__ control's specific features:
 
-* [Tail Height](#Tail_Height)
+* [Tail Height](#tail-height)
 
 The __Needle__ control is represented by an arrow that points to a value from the scale. The appearance and the shape of it can be easily modified. To learn how read the Styling the Needle topic.
 
 >tipYou can change the background and the border color of the needle via its __Background__ and __BorderBrush__ properties.
 
->The __Needle__indicator should be used only in radial scales.
+>The __Needle__ indicator should be used only in radial scales.
 
 Here is an example of a __Needle__ definition.
 

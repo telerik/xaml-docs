@@ -62,7 +62,6 @@ The State Indicator is a shape with arbitrary size located anywhere in the scale
 The State indicator supports the following features:
 
 1. Layout
-          
 
 1. The 'RelativeX' property specifies the position of Numeric Indicator left side relative to a scale width. 
 
@@ -76,7 +75,6 @@ The State indicator supports the following features:
 1. The 'RelativeWidth' property specifies width of the Numeric Indicator relative to a scale height. 
 
 1. Appearance
-          
 
 1. The default State Indicator template exposes the Background, BorderBrush and StrokeThickness properties for easy customizations.
 

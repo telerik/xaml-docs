@@ -12,21 +12,20 @@ position: 0
 
 
 
-The __Numeric Indicator__ is used for displaying numeric values as digits. 
-      It does not inherit the __IndicatorBase__ class as the other indicators do, but provides functionality similar to theirs. Here is a list of the features of the __Numeric Indicator__:
+The __Numeric Indicator__ is used for displaying numeric values as digits. It does not inherit the __IndicatorBase__ class as the other indicators do, but provides functionality similar to theirs. Here is a list of the features of the __Numeric Indicator__:
       
 
-* [Number Positions](#Number_Positions)
+* [Number Positions](#number-positions)
 
-* [Size](#Size)
+* [Size](#size)
 
-* [Placement](#Placement)
+* [Placement](#placement)
 
-* [Corner Radius](#Corner_Radius)
+* [Corner Radius](#corner-radius)
 
-* [Display Value Format](#Display_Value_Format)
+* [Display Value Format](#display-value-format)
 
-* [Value](#Value)
+* [Value](#value)
 
 As appearance it is similar to the display of the digital clock. It can be used with any of the scales provided by the __gauge__ control.
 
@@ -38,14 +37,10 @@ By default the __Numeric Indicator__ won't display its values. You have to defin
 
 * __HexagonalNumberPosition__ - the digit get displayed via 7 hexagonal segments.
 
-* __FontNumberPosition__ - the digit is displayed as characters. In this case the values of the various font properties, like __FontFamily__, __FontSize__, __FontWeight__ etc., get applied. The font properties can be set to the indicator itself. In this case they will get applied to all of the FontNumberPosition controls in it. You can apply it directly to the FontNumberPosition control as well, in order to have different appearance for each position.
-        
-        The number position objects derive from the __ContentControl__ and expose one additional property:
+* __FontNumberPosition__ - the digit is displayed as characters. In this case the values of the various font properties, like __FontFamily__, __FontSize__, __FontWeight__ etc., get applied. The font properties can be set to the indicator itself. In this case they will get applied to all of the FontNumberPosition controls in it. You can apply it directly to the FontNumberPosition control as well, in order to have different appearance for each position. The number position objects derive from the __ContentControl__ and expose one additional property:
         
 
-* __CornerRadius__ - specifies the radius of the corners of the control.
-          
-        Also you can use the __ScaleObject.RelativeWidth__ to specify the width of the control relatively to the scale which contains the numeric indicator.
+* __CornerRadius__ - specifies the radius of the corners of the control. Also you can use the __ScaleObject.RelativeWidth__ to specify the width of the control relatively to the scale which contains the numeric indicator.
         
 
 >tipUsing the __BorderBrush__ and the __BorderThickness__ properties of the __NumberPosition__ control you can outline the positions.
@@ -154,11 +149,7 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_Features_NumericIndicator_02.png)
+![](images/RadGauge_Features_NumericIndicator_02.png)
 
 ## Placement
 
@@ -195,11 +186,7 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_Features_NumericIndicator_03.png)
+![](images/RadGauge_Features_NumericIndicator_03.png)
 
 ## Corner Radius
 

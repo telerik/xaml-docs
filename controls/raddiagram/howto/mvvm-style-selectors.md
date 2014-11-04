@@ -19,9 +19,7 @@ This article describes how to use StyleSelectors in an MVVM application to apply
 For the purpose of this tutorial, we will populate the __RadDiagram__ control with three different node types and a custom link implementation.
 		
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-			{% if site.site_name == 'Silverlight' %}[Implicit Styles](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html#Applying_Theme_Globally){% endif %}{% if site.site_name == 'WPF' %}[Implicit Styles](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html#Applying_Theme_Globally){% endif %}
-			article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Implicit Styles](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html#Applying_Theme_Globally){% endif %}{% if site.site_name == 'WPF' %}[Implicit Styles](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html#Applying_Theme_Globally){% endif %} article you can find more information on how to set an application-wide theme.
 		  
 
 Let's start by creating __RectangleNode, EllipseNode__ and __DecisionNode__ classes to describe the __RadDiagramShapes__:
@@ -161,7 +159,7 @@ Now that our items' ViewModels are defined, we have to create a collection of it
 In this example we will use the __ObservableGraphSourceBase<TNode,TLink>__ class to create a custom __GraphSource__ implementation as this will allow us to take advantage of the predefined __AddNode(), AddLink(), CreateNode(), CreateLink(), RemoveNode()__ and __RemoveLink()__ methods. This way we won't have to explicitly define a custom add/create/remove logic for our business items.
 		
 
-	
+	#### __C#__
     public class GraphSource : ObservableGraphSourceBase<NodeViewModelBase, Link>
     {
     }		  
@@ -169,7 +167,7 @@ In this example we will use the __ObservableGraphSourceBase<TNode,TLink>__ class
 
 
 
-	
+	#### __VB.NET__
 	Public Class GraphSource
 		Inherits ObservableGraphSourceBase(Of NodeViewModelBase, Link)
 	End Class	  
@@ -178,7 +176,7 @@ In this example we will use the __ObservableGraphSourceBase<TNode,TLink>__ class
 
 
 Let's define the items in the __GraphSource__ to describe the following process workflow:
-		![Rad Diagram How To Style Selectors Goal](images/RadDiagram_HowTo_StyleSelectors_Goal.png)
+![Rad Diagram How To Style Selectors Goal](images/RadDiagram_HowTo_StyleSelectors_Goal.png)
 
 #### __C#__
 

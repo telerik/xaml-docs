@@ -20,10 +20,6 @@ The following article will show how you can save the RadDiagram in IsolatedStora
 
 Let's first configure our XAML. We'll keep it simple - two buttons for Save and Load and a Diagram with one shape.
 
-
-
-
-
 In code behind we are using the Click event handlers of our Save/Load Buttons. On Save, we get an __IsolatedStorage__ and create a folder and a file in it.
 		
 
@@ -31,14 +27,6 @@ Then we use the __RadDiagram.Save()__ - this returns a string with the serialize
 		
 
 On Load, we open the created file from storage and use __StreamReader__ and __RadDiagram.Load()__ method.
-		
-
-
-
-
-
-
-
 
 
 # See Also

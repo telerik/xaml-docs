@@ -12,9 +12,9 @@ position: 2
 
 
 
-You can control the alignment of the __RadExpander__control through the __HorizontalAlignment__ and __VerticalAlignment__ properties. Moreover, if you need to further customize the __RadExpander__'s __Content__ alignment you can take advantage of the __HorizontalContentAlignment__ and __VerticalContentAlignment__ properties. And if you want to control the alignment of the __RadExpander__'s __Header__, you can use the __HorizontalHeaderAlignment__and __VerticalHeaderAlignment__properties. By default all these properties are set to __Stretch__ so that the __RadExpander__ control is always stretch thus taking up all available space.
+You can control the alignment of the __RadExpander__ control through the __HorizontalAlignment__ and __VerticalAlignment__ properties. Moreover, if you need to further customize the __RadExpander__'s __Content__ alignment you can take advantage of the __HorizontalContentAlignment__ and __VerticalContentAlignment__ properties. And if you want to control the alignment of the __RadExpander__'s __Header__, you can use the __HorizontalHeaderAlignment__ and __VerticalHeaderAlignment__ properties. By default all these properties are set to __Stretch__ so that the __RadExpander__ control is always stretch thus taking up all available space.
 
->The alignment properties depend on the __ExpandDirection__of the control. Therefore before setting the alignment properties, you should carefully plan how you need to render the control depending on the available area as well as the __ExpandDirection__of the control. 
+>The alignment properties depend on the __ExpandDirection__ of the control. Therefore before setting the alignment properties, you should carefully plan how you need to render the control depending on the available area as well as the __ExpandDirection__ of the control. 
 
 
 
@@ -61,7 +61,7 @@ You can control the alignment of the __RadExpander__control through the __Horizo
 
 ## HorizontalAlignment and VerticalAlignment properties
 
-You can control the vertical and horizontal alignment of the control through the __HorizontalAlignment__ and __VerticalAlignment__ properties. By default both properties are set to __Stretch.__However, if you want the control to take up only as much space as it needs, you can define the __VerticalAlignment__ and __HorizontalAlignment__ properties accordingly to the __ExpandDirection__ of the control:
+You can control the vertical and horizontal alignment of the control through the __HorizontalAlignment__ and __VerticalAlignment__ properties. By default both properties are set to __Stretch.__ However, if you want the control to take up only as much space as it needs, you can define the __VerticalAlignment__ and __HorizontalAlignment__ properties accordingly to the __ExpandDirection__ of the control:
 
 #### __XAML__
 
@@ -108,7 +108,7 @@ You can control the vertical and horizontal alignment of the control through the
 
 ## HorizontalContentAlignment and VerticalContentAlignment properties
 
-You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ properties to control how the __RadExpander's____Content__ will be rendered. For example you can use the properties to set the __RadExpander's____Content__ to take up only as much space as it needs:
+You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ properties to control how the __RadExpander's__ __Content__ will be rendered. For example you can use the properties to set the __RadExpander's__ __Content__ to take up only as much space as it needs:
 
 #### __XAML__
 
@@ -173,9 +173,9 @@ You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ 
 
 ## HorizontalHeaderAlignment and VerticalHeader alignment properties
 
-You can control how to render the __RadExpander's____Header__ through the __HorizontalHeaderAlignment__ and __VerticalHeaderAlignment__ properties. These properties should be set accordingly to the __ExpandDirection__ value. 
+You can control how to render the __RadExpander's__ __Header__ through the __HorizontalHeaderAlignment__ and __VerticalHeaderAlignment__ properties. These properties should be set accordingly to the __ExpandDirection__ value. 
 
-If the __RadExpander's____ExpandDirection__ is __Up__ or __Down__, you can control the __Header's__ alignment through the __HorizontalHeaderAlignment.__ The property exposes the following enumeration: 
+If the __RadExpander's__ __ExpandDirection__ is __Up__ or __Down__, you can control the __Header's__ alignment through the __HorizontalHeaderAlignment.__ The property exposes the following enumeration: 
 
 * __Center__ - the __RadExpander.Header's__ content will be centered in the header part of the __RadExpander ControlTemplate__
 
@@ -222,7 +222,7 @@ If the __RadExpander's____ExpandDirection__ is __Up__ or __Down__, you can contr
 
 ![](images/RadExpander_Features_Alignment_HorizontalHeaderAlignment.png)
 
-If the __RadExpander's____ExpandDirection__ is __Right__ or __Left__, you can control the position of the __Header's__ content through the __VerticalHeaderAlignment__ property. The property exposes the following enumeration: 
+If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can control the position of the __Header's__ content through the __VerticalHeaderAlignment__ property. The property exposes the following enumeration: 
 
 * __Center__ - the __RadExpander.Header's__ content will be centered in the header part of the __RadExpander ControlTemplate__
 

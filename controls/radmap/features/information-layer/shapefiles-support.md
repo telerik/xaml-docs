@@ -18,9 +18,9 @@ The __ESRI Shapefiles__or simply the shapefiles are popular format for storing g
 
 This topic will explain the following:
 
-* [Reading Shapefiles with RadMap](#Reading_Shapefiles_with_RadMap)
+* [Reading Shapefiles with RadMap](#reading-shapefiles-with-radmap)
 
-* [Manual Shape Reading](#Manual_Shape_Reading)
+* [Manual Shape Reading](#manual-shape-reading)
 
 ## Reading Shapefiles with RadMap
 
@@ -67,7 +67,7 @@ To pass the desired shapefile you have to use the __Source__ property of the __M
 
 The __RadMap__ allows you to manually read the file, by which you are able to get the shapes collection, without to automatically insert it into the layer. For this purpose you have to use the __ShapeFileReader__ static class.
 
-First of all read the Shapefile as a resource stream. Note that the file must have its __BuildAction__ set to __Resource__. After that call the static__Read()__ method of the __ShapefileReader__ class and pass the resource stream to it. It returns a list of __FrameworkElement__ objects, which you can directly add to the __InformationLayer__ of the __RadMap__.
+First of all read the Shapefile as a resource stream. Note that the file must have its __BuildAction__ set to __Resource__. After that call the static __Read()__ method of the __ShapefileReader__ class and pass the resource stream to it. It returns a list of __FrameworkElement__ objects, which you can directly add to the __InformationLayer__ of the __RadMap__.
 
 #### __C#__
 

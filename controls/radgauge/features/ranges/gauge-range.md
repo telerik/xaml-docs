@@ -18,17 +18,17 @@ The __Gauge__ control allows you to define ranges for your scales. The range is 
 
 The topic will explain the following: 
 
-* [Max and Min Value](#Max_and_Min_Value)
+* [Max and Min Value](#max-and-min-value)
 
-* [Width](#Width)
+* [Width](#width)
 
-* [Range Appearance](#Range_Appearance)
+* [Range Appearance](#range_appearance)
 
-* [Indicator Appearance](#Indicator_Appearance)
+* [Indicator Appearance](#indicator_appearance)
 
-* [Labels Appearance](#Labels_Appearance)
+* [Labels Appearance](#labels_appearance)
 
-* [Ticks Appearance](#Ticks_Appearance)
+* [Ticks Appearance](#ticks_appearance)
 
 ## Max and Min Value
 
@@ -207,16 +207,10 @@ Here is a snapshot fo the result.
 
 ## IndicatorColorMixSensitivity
 
-The IndicatorColorMixSensitivity property is used to colorize bar indicator.
-          This feature is typical for the [Bar Indicators]({%slug radgauge-features-indicators-bar-indicators-basics%}).
+The IndicatorColorMixSensitivity property is used to colorize bar indicator. This feature is typical for the [Bar Indicators]({%slug radgauge-features-indicators-bar-indicators-basics%}).
         
 
-This property is applicable when RangeColorMode property of the indicator is set to MixedColor (works for both radial and linear scales),
-          HorizontalGradient or VerticalGradient (work for linear scale only). The IndicatorColorMixSensitivity property indicates how the colors of
-          two ranges (previous and current) are mixed to create the background of the indicator. Its value can be a double between 0 and 1.
-          For example, if the BarIndicator has its RangeColorMode set to MixedColor and range's IndicatorColorMixSensitivity property is set to 0.5 then 
-          the bar indicator will use mixed color from both current and previous ranges. 
-          The mixed color will be used when indicator takes a value from the range start and up to the half of it.
+This property is applicable when RangeColorMode property of the indicator is set to MixedColor (works for both radial and linear scales), HorizontalGradient or VerticalGradient (work for linear scale only). The IndicatorColorMixSensitivity property indicates how the colors of two ranges (previous and current) are mixed to create the background of the indicator. Its value can be a double between 0 and 1. For example, if the BarIndicator has its RangeColorMode set to MixedColor and range's IndicatorColorMixSensitivity property is set to 0.5 then the bar indicator will use mixed color from both current and previous ranges. The mixed color will be used when indicator takes a value from the range start and up to the half of it.
         
 
 This sample demonstrates how the indicator changes its background in this case:
@@ -347,9 +341,3 @@ Here is an example, where only the major ticks use the range's color for them.
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
 	{{endregion}}
-
-
-
-Here is a snapshot of the result.
-
-

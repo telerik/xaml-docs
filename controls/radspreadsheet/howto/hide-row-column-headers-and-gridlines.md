@@ -24,8 +24,7 @@ The __RadWorksheetEditor__ exposes a Boolean property __ShowRowColumnHeadings__.
 
 {{region radspreadsheet-howto-hide-row-column-headers-and-gridlines_0}}
 	            this.radSpreadsheet.ActiveWorksheetEditor.ShowRowColumnHeadings = false;
-	{{endregion}}
-
+{{endregion}}
 
 
 ## Show or Hide Gridlines
@@ -37,12 +36,11 @@ If you want to show or hide the gridlines of __RadSpreadsheet__ just set the __S
 
 {{region radspreadsheet-howto-hide-row-column-headers-and-gridlines_1}}
 	            this.radSpreadsheet.ActiveWorksheetEditor.ShowGridlines = false;
-	{{endregion}}
+{{endregion}}
 
 
 
->tipYou can download a runnable project of the previous example from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
           
 
 # See Also

@@ -16,7 +16,8 @@ Giving your data meaningful names helps you better understand it. For example, i
       
 
 It will be useful if you can set the column heading name when the first row is not visible like shown in the below image.
-      ![Rad Spreadsheet How To Customize Row and Column Headers 01](images/RadSpreadsheet_HowTo_Customize_Row_and_Column_Headers_01.png)
+
+![Rad Spreadsheet How To Customize Row and Column Headers 01](images/RadSpreadsheet_HowTo_Customize_Row_and_Column_Headers_01.png)
 
 ## Change the Row and Column Headings
 
@@ -42,7 +43,7 @@ __Example 1__ shows a simple implementation for the converter class used for cre
 	            return base.ConvertColumnIndexToNameOverride(context, columnIndex);
 	        }
 	    }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -60,8 +61,7 @@ After implementing your custom name converter you need to instantiate it and ass
 That's it. The column heading is changed.
         
 
->tipYou can download a runnable project of the previous example from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
           
 
 # See Also

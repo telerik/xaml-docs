@@ -10,19 +10,18 @@ position: 0
 
 # Carousel Items
 
-
-
 ## Overview
 
 RadCarousel tries to mimic the familiar API of a standard WPF __ItemsControl__. When displaying data, the control will wrap visible data items in a __CarouselItem__ control that provides the visual representation of carousel items. In addition to providing the visual representation of data items, __CarouselItem__ controls are also the entry point for data-related properties such as the ones supporting item selection.
 
 ## Customization
 
-Using the fact that all data items are automatically wrapped inside a __CarouselItem__you can change an item's appearance by using WPF styles targeting __CarouselItem__controls. Here is how to do that and present your carousel items inside two nested Border elements:
+Using the fact that all data items are automatically wrapped inside a __CarouselItem__ you can change an item's appearance by using WPF styles targeting __CarouselItem__ controls. Here is how to do that and present your carousel items inside two nested Border elements:
 
 #### __XAML__
 
 {{region carousel-items_0}}
+
 	<Style TargetType="{x:Type telerik:CarouselItem}">
 	    <Setter Property="Template" >
 	        <Setter.Value>
@@ -70,6 +69,7 @@ The above style will make all carousel items look identical. If you need selecti
 #### __XAML__
 
 {{region carousel-items_1}}
+
 	<ControlTemplate.Triggers>
 	    <Trigger Property="IsSelected" Value="True" >
 	        <Setter TargetName="CarouselItemMainBorder" Property="Background">
@@ -100,11 +100,12 @@ The above style will make all carousel items look identical. If you need selecti
 
 ##  Data Record Presenters
 
-Remember the __ContentPresenter__control that we used in our __CarouselItem__control template? It will not display the data items directly, but will use a __CarouselDataRecordPresenter__control to do its job. The data record presenter works closely with the RadCarousel data engine and wraps a data item object. You Here is how you can create a custom style to modify the __CarouselDataRecordPresenter__template and customize the way your data is presented:
+Remember the __ContentPresenter__ control that we used in our __CarouselItem__ control template? It will not display the data items directly, but will use a __CarouselDataRecordPresenter__ control to do its job. The data record presenter works closely with the RadCarousel data engine and wraps a data item object. You Here is how you can create a custom style to modify the __CarouselDataRecordPresenter__ template and customize the way your data is presented:
 
 #### __XAML__
 
 {{region carousel-items_2}}
+
 	<Style TargetType="{x:Type telerik:CarouselDataRecordPresenter}">
 	    <Setter Property="Template">
 	        <Setter.Value>

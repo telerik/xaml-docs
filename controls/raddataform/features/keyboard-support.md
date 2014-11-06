@@ -42,8 +42,7 @@ Here is the list of the keys that are supported:
 
 ## Custom Keyboard Command Provider
 
-RadDataForm provides an easy MVVM-friendly approach for customization of its default commands' logic. More information can be found on [Customizing Commands help article]({%slug raddataform-customize-commands%}).
-          However, if you want to extend the way RadDataForm handles a particular key you could create your own custom command provider and predefine the behaviour for that key.
+RadDataForm provides an easy MVVM-friendly approach for customization of its default commands' logic. More information can be found on [Customizing Commands help article]({%slug raddataform-customize-commands%}). However, if you want to extend the way RadDataForm handles a particular key you could create your own custom command provider and predefine the behaviour for that key.
         
 
 The approach for accomplishing the purpose is to create a separate class, inherit the DataFormCommandProvider and overriding the ProvideCommandsForKey(KeyEventArgs args) method. In this way only the undesired behavior can be adjusted according to your requirements.
@@ -53,6 +52,7 @@ The class responsible for customizing the keyboard navigation should to be simil
 #### __C#__
 
 {{region raddataform-features-keyboard-support_1}}
+
 	    class CustomKeyboardCommandProvider : DataFormCommandProvider
 	    {
 	        public CustomKeyboardCommandProvider()
@@ -100,6 +100,7 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 #### __XAML__
 
 {{region raddataform-features-keyboard-support_0}}
+
 	    <Window.Resources>
 	        <my:CustomKeyboardCommandProvider x:Key="CustomProvider"/>
 	    </Window.Resources>
@@ -114,6 +115,7 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 #### __C#__
 
 {{region raddataform-features-keyboard-support_2}}
+
 	    this.RadDataForm1.CommandProvider = new CustomKeyboardCommandProvider(this.RadDataForm1);
 	{{endregion}}
 

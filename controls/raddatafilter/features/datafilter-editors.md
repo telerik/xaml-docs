@@ -32,11 +32,7 @@ The following list shows the default editors of different types of data:
 
 * __Boolean__ - the default editor is a __CheckBox.__
 
-
-
-
-         
-      ![](images/RadDataFilter_Features_FilterEditors_01.png)
+ ![](images/RadDataFilter_Features_FilterEditors_01.png)
 
 You can see a running demo [here](http://demos.telerik.com/silverlight/#DataFilter/DefaultEditors)
           . 

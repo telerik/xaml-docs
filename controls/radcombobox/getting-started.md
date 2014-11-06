@@ -36,8 +36,8 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 
 ## Add RadComboBox
 
-* Open the __Asset Library__ (*Window->Assets*) in Expression Blend and start writing the name of the __RadComboBox__in the search box.
-
+* Open the __Asset Library__ (*Window->Assets*) in Expression Blend and start writing the name of the __RadComboBox__ in the search box.
+ 
 ![](images/RadComboBox_GettingStarted_010.png)
 
 * Drag a __RadComboBox__ on the artboard.

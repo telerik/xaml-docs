@@ -20,27 +20,17 @@ Like most controls, the __RadDataPager__ also allows you to template it in order
 
 * [Numeric Button](#Numeric_Button)
 
->For more information about templating and how to modify the default templates of the __RadControls__ read 
-        {% if site.site_name == 'Silverlight' %}[the common topics ](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html){% endif %}{% if site.site_name == 'WPF' %}[the common topics ](http://www.telerik.com/help/wpf/common-styling-appearance-edit-control-templates-blend.html){% endif %}
-        on this matter.
+>For more information about templating and how to modify the default templates of the __RadControls__ read {% if site.site_name == 'Silverlight' %}[the common topics ](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html){% endif %}{% if site.site_name == 'WPF' %}[the common topics ](http://www.telerik.com/help/wpf/common-styling-appearance-edit-control-templates-blend.html){% endif %} on this matter.
 
 ## RadDataPager
 
-
-
-
-         
-      ![](images/RadDataPager_Styles_and_Templates_01.png)
+![](images/RadDataPager_Styles_and_Templates_01.png)
 
 * __DataPagerPresenter__ - wraps the entire UI of the __RadDataPager__ and is of type __DataPagerPresenter__.
 
 ## DataPagerPresenter
 
-
-
-
-         
-      ![](images/RadDataPager_Styles_and_Templates_02.png)
+![](images/RadDataPager_Styles_and_Templates_02.png)
 
 * __[Border]__ - wraps the visual and layout elements of the __DataPagerPresenter's__ template and is of type __Border__. It is responsible for the background and the border color of the __DataPagerPresenter__.
 
@@ -92,11 +82,7 @@ Like most controls, the __RadDataPager__ also allows you to template it in order
 
 ## Numeric Button
 
-
-
-
-         
-      ![](images/RadDataPager_Styles_and_Templates_03.png)
+![](images/RadDataPager_Styles_and_Templates_03.png)
 
 >The numeric buttons are of type __RadRadioButton__.
 

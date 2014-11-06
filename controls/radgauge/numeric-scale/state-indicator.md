@@ -14,8 +14,7 @@ position: 2
 
 ## 
 
-The State Indicator is a shape with arbitrary size located anywhere in the scale. If the state indicator's value puts into one of the scale ranges then shape is filled with brush of this range.
-        To add a state indicator to the scale you have to include the StateIndicator element to the NumericScale.Indicators:
+The State Indicator is a shape with arbitrary size located anywhere in the scale. If the state indicator's value puts into one of the scale ranges then shape is filled with brush of this range. To add a state indicator to the scale you have to include the StateIndicator element to the NumericScale.Indicators:
 
 #### __XAML__
 
@@ -59,7 +58,6 @@ The State indicator supports the following features:
 
 1. Layout 
 
-
 1. The 'telerik:ScaleObject.RelativeX' property specifies the position of Numeric Indicator left side relative to a scale width.
 
 1. The 'telerik:ScaleObject.RelativeY' property specifies the position of Numeric Indicator top side relative to a scale height.
@@ -69,7 +67,6 @@ The State indicator supports the following features:
 1. The 'telerik:ScaleObject.RelativeWidth' property specifies the width of the Numeric Indicator relative to a scale height.
 
 1. Appearance 
-
 
 1. The standard Telerik provided State Indicator templates allow using the BorderBrush and the StrokeThickness properties to draw a border.
 

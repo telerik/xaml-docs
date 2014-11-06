@@ -22,34 +22,27 @@ This article describes how to customize the appearance of the __RadDiagram__,__R
 You can control the background settings of the diagramming surface through the following set of properties:
 
 * __IsBackgroundSurfaceVisible__ - a __Boolean__ property that determines whether the background surface of the __RadDiagram__ should be displayed. When set to __true__ both the background grid and the [Preview Pages canvas](a0973f36-f74e-44df-ac8f-d124c3e948aa#PagesPreview) are displayed. Its default value is __true__.
-				![Rad Diagram Styling Background Surface](images/RadDiagram_Styling_BackgroundSurface.png)
+![Rad Diagram Styling Background Surface](images/RadDiagram_Styling_BackgroundSurface.png)
 
 * __Background__ - this property is of type __Brush__ and it controls the fill of the __RadDiagram__ background.
-				![Rad Diagram Styling Background](images/RadDiagram_Styling_Background.png)
+![Rad Diagram Styling Background](images/RadDiagram_Styling_Background.png)
 
 The settings and appearance of the __RadDiagram__ background grid are controlled through the following set of attached properties:
 			  
 
->You can access the __BackgroundGrid__ attached properties through an alias pointing to the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace:
-			  
-				  xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
-				or by adding a using for the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace in your code-behind file.
+>You can access the __BackgroundGrid__ attached properties through an alias pointing to the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace:  xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams" or by adding a using for the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace in your code-behind file.
 			  
 
 * __BackgroundGrid.IsGridVisible__ - this is a __Boolean__ property that controls the visibility of the background grid. Its default value is __True__.
 				
 
-	
- <telerik:RadDiagram primitives:BackgroundGrid.IsGridVisible="True" />					  
+	#### __XAML__
+    <telerik:RadDiagram primitives:BackgroundGrid.IsGridVisible="True" />					  
 				
-
-
-
 * __BackgroundGrid.IsDynamic__ - this is a __Boolean__ property that determines whether the background grid should be moved and resized accordingly to the __RadDiagram__ viewport changes (panning and zooming). Its default value is __True__ thus enabling the background grid to reflect the changes implemented by a pan and/or a zoom operation.
 				
-
-	
- <telerik:RadDiagram primitives:BackgroundGrid.IsDynamic="True" />					  
+#### __XAML__
+    <telerik:RadDiagram primitives:BackgroundGrid.IsDynamic="True" />					  
 				
 
 
@@ -57,8 +50,8 @@ The settings and appearance of the __RadDiagram__ background grid are controlled
 * __BackgroundGrid.CellSize__ - this property is of type __Size__ and it controls the size of the cells in the __RadDiagram.GraphPaper__ surface. The default value of this property is a size of __20x20__ units.
 				
 
-	
- <telerik:RadDiagram primitives:BackgroundGrid.CellSize="40,40" />					  
+	#### __XAML__
+    <telerik:RadDiagram primitives:BackgroundGrid.CellSize="40,40" />					  
 					  
 
 
@@ -66,8 +59,8 @@ The settings and appearance of the __RadDiagram__ background grid are controlled
 * __BackgroundGrid.LineStroke__ - this property is of type __Brush__ and it specifies how the cells outline is painted.
 				
 
-	
-<telerik:RadDiagram primitives:BackgroundGrid.LineStroke="Red" />  					  
+	#### __XAML__
+    <telerik:RadDiagram primitives:BackgroundGrid.LineStroke="Red" />  					  
 					  
 
 ![Rad Diagram Styling Line Stroke](images/RadDiagram_Styling_LineStroke.png)
@@ -78,8 +71,8 @@ The settings and appearance of the __RadDiagram__ background grid are controlled
 * __BackgroundGrid.LineStrokeThickness__ - this property is of type __double__ and it gets or sets the thickness of the __RadDiagram__ background grid lines.
 				
 
-	
-<telerik:RadDiagram primitives:BackgroundGrid.LineThickness="5" />					  
+	#### __XAML__
+    <telerik:RadDiagram primitives:BackgroundGrid.LineThickness="5" />					  
 					  
 
 ![Rad Diagram Styling Line Thickness](images/RadDiagram_Styling_LineThickness.png)
@@ -93,13 +86,13 @@ The __RadDiagram__ exposes a set of properties that allow you to control which D
 			
 
 * __IsInformationAdornerVisible__ - a __Boolean__ property that controls the visibility of the __InformationAdorner__ of the __RadDiagram__. The __InformationAdorner__ displays information about the diagram's elements settings like current position and rotation angle. The default value of the __IsInformationAdornerVisible__ property is __true__.
-				![Rad Diagram Styling Info Adorner](images/RadDiagram_Styling_InfoAdorner.png)
+![Rad Diagram Styling Info Adorner](images/RadDiagram_Styling_InfoAdorner.png)
 
 * __IsManipulationAdornerVisible__ - a __Boolean__ property that controls the visibility of the __ManipulationAdorner__ of the __RadDiagram__. The __ManipulationAdorner__ visualizes the resizing and rotation thumbs of the __RadDiagram__ elements. It also visualizes selections. The default value of the __IsManipulationAdornerVisible__ property is __true__.
-				![Rad Diagram Styling Manipulation Adorner](images/RadDiagram_Styling_ManipulationAdorner.png)
+![Rad Diagram Styling Manipulation Adorner](images/RadDiagram_Styling_ManipulationAdorner.png)
 
 * __IsConnectorsManipulationEnabled__ - a __Boolean__ property that controls the visibility of the __RadDiagram__ elements connectors. The default value of the property is __true__.
-				![Rad Diagram Styling Connectors Visibility](images/RadDiagram_Styling_ConnectorsVisibility.png)
+![Rad Diagram Styling Connectors Visibility](images/RadDiagram_Styling_ConnectorsVisibility.png)
 
 The __RadDiagram__ also contains __AlignmentAdorner__. This adorner provides visual feedback about the alignment of the Diagramming elements.
 			
@@ -107,9 +100,9 @@ The __RadDiagram__ also contains __AlignmentAdorner__. This adorner provides vis
 >The __AlignmentAdorner__ definition is placed in the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace. This is why in order to control its settings, you need to add an alias to that namespace:
 			  
 
-	
-xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
-<telerik:RadDiagram primitives:AlignmentAdorner.VerticalLineStroke="Blue"/>				 
+	#### __XAML__
+    xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
+    <telerik:RadDiagram primitives:AlignmentAdorner.VerticalLineStroke="Blue"/>				 
 				 
 
 
@@ -185,6 +178,4 @@ You can easily customize the visual appearance of the __RadDiagramConnection__ b
 			
 
 * __Background__ - gets or sets the brush that specifies the __SourceCap__ and __TargetCap__ inner background.
-			
 
-# See Also

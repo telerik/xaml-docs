@@ -14,23 +14,14 @@ position: 2
 
 ## 
 
-The Telerik __RadChart__supports great integration with other controls. This tutorial will show you how to integrate __RadChart__ with __RadGridView__.
+The Telerik __RadChart__ supports great integration with other controls. This tutorial will show you how to integrate __RadChart__ with __RadGridView__.
 
 The final result should look like the snapshots below: 
+![](images/RadChart_HowToGridIntegration_001.PNG)
 
+![](images/RadChart_HowToGridIntegration_005.PNG)
 
-
-
-         
-      ![](images/RadChart_HowToGridIntegration_001.PNG)
-
-
-
-
-         
-      ![](images/RadChart_HowToGridIntegration_005.PNG)
-
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 * Here is the initial staging: 
 
@@ -58,17 +49,11 @@ The final result should look like the snapshots below:
 	</Grid>
 	{{endregion}}
 
+![](images/RadChart_HowToGridIntegration_010.PNG)
 
+On the left side you have a __RadGridView__, where the __UnitPrice__ and __UnitsInStock__ properties from the Products table in the Northwind database will be displayed. When you select a single row, a bar chart will be generated to compare both of the parameters. If you select several rows, then a line chart will be generated.
 
-
-
-
-         
-      ![](images/RadChart_HowToGridIntegration_010.PNG)
-
-On the left side you have a __RadGridView__, where the __UnitPrice__and __UnitsInStock__properties from the Products table in the Northwind database will be displayed. When you select a single row, a bar chart will be generated to compare both of the parameters. If you select several rows, then a line chart will be generated.
-
-* Populate the __RadGridView__control with all products from the Northwind database. Here is a sample code how to do that:
+* Populate the __RadGridView__ control with all products from the Northwind database. Here is a sample code how to do that:
 
 #### __C#__
 
@@ -202,7 +187,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__and __UnitsI
 
 
 
-Declare the __NorthwindDataSource__class as a resource in your application and set it as an __ItemsSource__ for the gridview. 
+Declare the __NorthwindDataSource__ class as a resource in your application and set it as an __ItemsSource__ for the gridview. 
 
 #### __XAML__
 
@@ -227,13 +212,9 @@ Declare the __NorthwindDataSource__class as a resource in your application and s
 
 Here is the result so far: 
 
+![](images/RadChart_HowToGridIntegration_020.PNG)
 
-
-
-         
-      ![](images/RadChart_HowToGridIntegration_020.PNG)
-
-* The next step is to build the bar chart (comparing the __UnitPrice__and __UnitsInStock__parameters) depending on the selected row(s) in the gridview.
+* The next step is to build the bar chart (comparing the __UnitPrice__ and __UnitsInStock__ parameters) depending on the selected row(s) in the gridview.
 
 * Attach to the __SelectionChanged__ event of the __RadGridView__.
 
@@ -352,7 +333,7 @@ Here is the result so far:
 
 
 
-* The __SetChartItemsSource__method does only one thing - it sets the __ItemsSource__ of the chart. 
+* The __SetChartItemsSource__ method does only one thing - it sets the __ItemsSource__ of the chart. 
 
 #### __C#__
 
@@ -377,19 +358,11 @@ Here is the result so far:
 
 Here is the final result, when you select single row from the grid view: 
 
-
-
-
-         
-      ![](images/RadChart_HowToGridIntegration_030.PNG)
+![](images/RadChart_HowToGridIntegration_030.PNG)
 
 And when you select multiple rows:
 
-
-
-
-         
-      ![](images/RadChart_HowToGridIntegration_040.PNG)
+![](images/RadChart_HowToGridIntegration_040.PNG)
 
 # See Also
 

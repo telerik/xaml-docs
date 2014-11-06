@@ -12,15 +12,14 @@ position: 2
 
 
 
-## Handling SelectionChanged event for the DataFormComboBoxField
+DataFormComboBoxField does not have a SelectionChanged event itself. In case you need such an event to implement your additional logic, you can handle the SelectionChanged event of its editing element (RadComboBox). For example the code to do so is available bellow:
 
-DataFormComboBoxField does not have a SelectionChanged event itself. In case you need such an event to implement your additional logic, you can handle the SelectionChanged event of its editing element (RadComboBox). For example the code to do so is available bellow:{% if site.site_name == 'WPF' %}
-
-
+{% if site.site_name == 'WPF' %}
 
 #### __C#__
 
 {{region raddataform-howto-selectionchanged-comboboxfield_1}}
+
 	    public MainWindow()
 	    {
 	        InitializeComponent();
@@ -38,11 +37,10 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
 #### __C#__
 
 {{region raddataform-howto-selectionchanged-comboboxfield_2}}
+
 	    public MainPage()
 	    {
 	        InitializeComponent();
@@ -59,9 +57,8 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 	{{endregion}}
 
 
-
 >You should add a using statement to __Telerik.Windows__ namespace in order to be able to add the handler.
-            {% endif %}
+ {% endif %}
 
 You can see that with the code snippet above I check if there are any items being unselected (through the RemovedItems.Count). This ensures that the event will not be handled on the initial loading when a default item has been selected. 
         

@@ -11,10 +11,6 @@ site_name: Silverlight
 
 # How to use the Events
 
-
-
-## 
-
 RadNumericUpDown inherits several common events that can be used to improve the functionality of the control.
 
 Here is a brief list of all events exposed by __RadNumericUpDown__.
@@ -53,32 +49,26 @@ Here is an example of how to use the __ValueChanged__ event that is raised whene
 
 {{region radnumericupdown-howto-events_0}}
 	public void Events()
-	        {
-	            RadNumericUpDown numeric = new RadNumericUpDown();
-	            numeric.ValueChanged += new RoutedPropertyChangedEventHandler<double>(OnNumericValueChanged);
-	            numeric.Value = 10;
-	        }
-	        private void OnNumericValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-	        {
-	             RadWindow.Alert(String.Format("New value: {0}, Old value: {1}", e.NewValue, e.OldValue));
-	        }
-	{{endregion}}
-
-
+	{
+		RadNumericUpDown numeric = new RadNumericUpDown();
+		numeric.ValueChanged += new RoutedPropertyChangedEventHandler<double>(OnNumericValueChanged);
+		numeric.Value = 10;
+	}
+	private void OnNumericValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+	{
+		 RadWindow.Alert(String.Format("New value: {0}, Old value: {1}", e.NewValue, e.OldValue));
+	}
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radnumericupdown-howto-events_1}}
 	Private Sub Events()
-	        Dim numeric As RadNumericUpDown = New RadNumericUpDown
-	        AddHandler numeric.ValueChanged, AddressOf OnNumericValueChanged
-	        numeric.Value = 10;
-	    End Sub
-	    Private Sub OnNumericValueChanged(ByVal sender As Object, ByVal e As RoutedPropertyChangedEventArgs(Of double))
-	        RadWindow.Alert(String.Format("New value: {0}, Old value: {1}", e.NewValue, e.OldValue))
-	    End Sub
-	{{endregion}}
-
-
-
-
+		Dim numeric As RadNumericUpDown = New RadNumericUpDown
+		AddHandler numeric.ValueChanged, AddressOf OnNumericValueChanged
+		numeric.Value = 10;
+	End Sub
+	Private Sub OnNumericValueChanged(ByVal sender As Object, ByVal e As RoutedPropertyChangedEventArgs(Of double))
+		RadWindow.Alert(String.Format("New value: {0}, Old value: {1}", e.NewValue, e.OldValue))
+	End Sub
+{{endregion}}

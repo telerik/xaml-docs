@@ -12,8 +12,7 @@ position: 0
 
 
 
-Annotations are visual elements that can be used highlight certain areas on the plot area and denote
-        statistical significance.
+Annotations are visual elements that can be used highlight certain areas on the plot area and denote statistical significance.
       
 
 ## 

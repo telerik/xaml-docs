@@ -36,10 +36,7 @@ position: 3
 
 {{region paletteview-populating_1}}
 		Dim colorPaletteView As New RadColorPaletteView()
-	#End Region
-	
-	
-	End Class
+		{{endregion}}
 
 
 
@@ -83,25 +80,8 @@ You can use the __Palette__ property of __RadColorPaletteView__ to populate the 
 {{region paletteview-populating_3}}
 		Dim colorPaletteView As New RadColorPaletteView()
 		colorPaletteView.Palette = ColorPreset.Office
-	#End Region
-	
-	#Region "paletteview-populating_5"
-		Dim colorPaletteView As New RadColorPaletteView()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPaletteView.ItemsSource = colors1
-	#End Region
-	#Region "paletteview-populating_1"
-		Dim colorPaletteView As New RadColorPaletteView()
-	#End Region
-	
-	
-	End Class
-
-
-
+	{{endregion}}
+    
 __RadColorPaletteView__  also allows binding to various datasource types through the __ItemSource__ property.
 				
 
@@ -135,12 +115,4 @@ __RadColorPaletteView__  also allows binding to various datasource types through
 		colors1.Add(Colors.Green)
 		colors1.Add(Colors.Blue)
 		colorPaletteView.ItemsSource = colors1
-	#End Region
-	#Region "paletteview-populating_1"
-		Dim colorPaletteView As New RadColorPaletteView()
-	#End Region
-	
-	
-	End Class
-
-
+	{{endregion}}

@@ -10,13 +10,11 @@ position: 3
 
 # Hide the Maximize and Minimize buttons
 
-
-
 If you want to hide the Minimize and Maximize buttons you have two options:
 
-* [Use the ResizeMode property](#Use_the_ResizeMode_property)
+* [Use the ResizeMode property](#use-the-resizemode-property)
 
-* [Hide the buttons in the RadWindow's ControlTemplate](#Hide_the_buttons_in_the_RadWindows_ControlTemplate)
+* [Hide the buttons in the RadWindow's ControlTemplate](#hide-the-buttons-in-the-radwindows-controltemplate)
 
 ## Use the ResizeMode property
 
@@ -28,9 +26,9 @@ To learn more about resizing the __RadWindow__ read [here]({%slug radwindow-feat
 
 ## Hide the buttons in the RadWindow's ControlTemplate
 
-Before continuing you have to get familiar with the [RadWindow's template structure]({%slug radwindow-styles-and-templates-template-structure%}) and [how to edit the default template](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html) for the __RadWindow__.
+Before continuing you have to get familiar with the [RadWindow's template structure]({%slug radwindow-styles-and-templates-template-structure%}) and [how to edit the ControlTemplates]({%slug styling-apperance-editing-control-templates%}).
 
-After getting familiar with the template and preparing it for editing via Expression Blend, the only thing left is to locate the __Button__ controls that represent the __Minimize__ and the __Maximize__ buttons and to set their __Visibility__ to __Collapsed__. These buttons have their __Name__ properties set to __PART_MinimizeButton__ and __PART_MaximizeButton__.
+After getting familiar with the template and preparing it for editing, the only thing left is to locate the __Button__ controls that represent the __Minimize__ and the __Maximize__ buttons and to set their __Visibility__ to __Collapsed__. These buttons have their __Name__ properties set to __PART_MinimizeButton__ and __PART_MaximizeButton__.
 
 # See Also
 

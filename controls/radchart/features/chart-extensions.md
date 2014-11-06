@@ -98,7 +98,7 @@ __RadChart__ provides out-of-the-box a custom __CameraExtension__ that follows t
 
 * The mouse event handlers use the 2D input to produce the resultant 3D transforms for zooming and rotation.
 
-* These transforms are then applied to the __ChartArea____Visual3D__ in order to actually zoom / rotate the __ChartArea__ in the 3D space.
+* These transforms are then applied to the __ChartArea Visual3D__ in order to actually zoom / rotate the __ChartArea__ in the 3D space.
 
 # See Also
 

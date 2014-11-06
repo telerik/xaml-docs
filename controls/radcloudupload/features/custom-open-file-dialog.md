@@ -16,16 +16,16 @@ position: 4
 
 ## 
 
-The __RadCloudUpload__ exposes the __CreateOpenFileDialog__ property. It is of type __Func<__ and can be used to get or set a custom open file dialog. You can use this property to restrict users to upload certain type of files.
+The __RadCloudUpload__ exposes the __CreateOpenFileDialog__ property. It is of type __Func<[OpenFileDialog](http://msdn.microsoft.com/en-us/library/microsoft.win32.openfiledialog%28v=vs.110%29.aspx)>__ and can be used to get or set a custom open file dialog. You can use this property to restrict users to upload certain type of files.
         
 
-	
-            xCloud.CreateOpenFileDialog = () =>
-            {
-                OpenFileDialog ofd = new OpenFileDialog();
-                ofd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-                return ofd;
-            };
+#### __XAML__
+    xCloud.CreateOpenFileDialog = () =>
+    {
+        OpenFileDialog ofd = new OpenFileDialog();
+        ofd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+        return ofd;
+    };
 
 
 

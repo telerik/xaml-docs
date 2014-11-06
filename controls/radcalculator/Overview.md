@@ -15,14 +15,8 @@ position: 0
 ## 
 
 {% if site.site_name == 'Silverlight' %}
-
-
-						   
-					  ![Rad Calculator Silverlight](images/RadCalculator_Silverlight.png){% endif %}{% if site.site_name == 'WPF' %}
-
-
-						   
-					  ![Rad Calculator WPF](images/RadCalculator_WPF.png){% endif %}
+![Rad Calculator Silverlight](images/RadCalculator_Silverlight.png){% endif %}{% if site.site_name == 'WPF' %}
+![Rad Calculator WPF](images/RadCalculator_WPF.png){% endif %}
 
 
 
@@ -36,34 +30,26 @@ __![Rad Calculator-Overview](images/RadCalculator-Overview.png)__
 __RadCalculator__ key features list:
 			  
 
-* 
-					  Basic calculations - addition, subtraction, multiplication, division.
+*  Basic calculations - addition, subtraction, multiplication, division.
 				  
 
-* 
-					  Additional calculations like - negate, squate root, reciprocal.
+*  Additional calculations like - negate, squate root, reciprocal.
 				  
 
-* 
-					 Keyboard support.
+*  Keyboard support.
 				  
 
-* 
-					 Memory functionality.
+*  Memory functionality.
 				  
 
-* 
-					  Clear entry, clear all, delere functionality.
+*  Clear entry, clear all, delere functionality.
 				  
 
-* 
-					  Customized functions.
+*  Customized functions.
 				  
 
-* 
-					 UI Automation Support
+*  UI Automation Support
 				  
 
-* 					 
-						  All Telerik controls for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} support styling with Expression Blend					  
+*  All Telerik controls for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} support styling with Expression Blend					  
 				  

@@ -25,13 +25,12 @@ The manual series mapping offers you the following opportunities:
 * To set labels of the chart series.
 
 * To bind to [nested collections]({%slug radchart-populating-with-data-data-binding-to-nested-collections%}).
-			
 
 * To create [categorical charts]({%slug radchart-features-categorical-charts%}).
-			
 
 >Note that series definitions set through the __SeriesMapping.SeriesDefinition__ property provide full support for change notifications with the exception of grouping scenarios i.e. if you will be dynamically changing the series appearance (e.g. SeriesDefinition.Appearance.Fill / Stroke properties), the recommended approach would be to assign unique SeriesDefinition instance to each SeriesMapping instance in your chart control.
-			For grouping scenarios you can access the generated DataSeries directly (i.e. RadChart.DefaultView.ChartArea.DataSeries[i]) and update its __DataSeries.Definition__ properties.
+
+For grouping scenarios you can access the generated DataSeries directly (i.e. RadChart.DefaultView.ChartArea.DataSeries[i]) and update its __DataSeries.Definition__ properties.
 			
 
 >Note that you cannot reuse series definitions in this scenario (i.e. assign single definition instance to multiple mappings) as changing a definition property would be propagated to all series (e.g. you have 3 series mappings that hold reference to single BarSeriesDefinition -- setting any SeriesMapping.SeriesDefinition.Appearance.Fill to Purple, would case all 3 series to change their color to Purple and that is hardly the expected result).
@@ -40,10 +39,9 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 		
 
 >The chart types that require multiple data fields, like __Stick__ or __CandleStick__, need manual series mapping in order to operate correctly.
-		  
 
-1. Create a new business object and name it __TradeData__.
-			
+
+##### 1. Create a new business object and name it __TradeData__.
 
 #### __C#__
 
@@ -406,9 +404,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	{{endregion}}
 
 
-
-1. Add a new __RadChart__ declaration.
-			
+##### 2. Add a new __RadChart__ declaration.
 
 #### __XAML__
 
@@ -429,11 +425,9 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-1. In order to map to such kind of business objects, you have to create a new instance of __SeriesMapping__. Set the __SeriesMapping.SeriesDefinition__ property to the chart type you want to use - in this case __CandleStickSeriesDefinition__.
-			
+##### 3. In order to map to such kind of business objects, you have to create a new instance of __SeriesMapping__. Set the __SeriesMapping.SeriesDefinition__ property to the chart type you want to use - in this case __CandleStickSeriesDefinition__.
 
 >tipYou can find a full list of supported chart types [here]({%slug radchart-features-chart-types-2d-charts%}).
-			  
 
 #### __XAML__
 
@@ -451,13 +445,11 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-1. Add several __ItemMappings__ - one for each of the properties that take part in the candlestick chart type. For each __ItemMapping__ must be set the following properties:
-			
+##### 4. Add several __ItemMappings__ - one for each of the properties that take part in the candlestick chart type. For each __ItemMapping__ must be set the following properties:
 
-1. __DataPointMember__
+##### 5. __DataPointMember__
 
-1. __FieldName__ - specifies from where the data should be taken.
-				
+##### 6. __FieldName__ - specifies from where the data should be taken.
 
 #### __XAML__
 
@@ -495,8 +487,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-1. Set the ItemsSource property of the __RadChart__ control.
-			
+##### 7. Set the ItemsSource property of the __RadChart__ control.
 
 #### __C#__
 
@@ -516,9 +507,10 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-1. The final result should look like the snapshot below.![](images/RadChart_PopulatingWithData_ManualSeriesMapping_01.png)
+##### 8. The final result should look like the snapshot below.
+![](images/RadChart_PopulatingWithData_ManualSeriesMapping_01.png)
 
-1. The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
+##### 9. The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
 
 #### __C#__
 

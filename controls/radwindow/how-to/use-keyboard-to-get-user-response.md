@@ -10,10 +10,6 @@ position: 0
 
 # Use Keyboard to Get User Response
 
-
-
-## 
-
 When you have an application that uses __RadWindow__ to get user response, it's common to alleviate the user experience by giving the user a chance to use the keyboard. For example, it's natural to accept response button by clicking the keyboard __Enter__ button, and respectively to cancel response by pressing the __ESC__ button. __RadWindow__ addresses this issue by the __ResponseButton__ attached property.
 
 __ResponseButton__ is an attached property that specifies the behavior of the default buttons part of __RadWindow__ upon keystrokes.
@@ -53,9 +49,7 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	        </StackPanel>
 	    </Grid>
 	</telerik:RadWindow>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -70,9 +64,7 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	    this.DialogResult = false;
 	    this.Close();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -85,9 +77,7 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	 Me.DialogResult = False
 	 Me.Close()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

@@ -26,19 +26,20 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 ## Adding RadDataForm to the Project
 
-* 
-            Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
+* Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
           
 
-* 
-            Add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Controls.Data__, __Telerik.Windows.Controls.Input__ and __Telerik.Windows.Data__;
+* Add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Controls.Data__, __Telerik.Windows.Controls.Input__ and __Telerik.Windows.Data__;
           
 
-* Add the RadDataForm as demonstrated below:{% if site.site_name == 'Silverlight' %}
+* Add the RadDataForm as demonstrated below:
+
+{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
 {{region raddataform-getting-started_0}}
+
 	<UserControl x:Class="RadDataForm_SL.MainPage"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -58,6 +59,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 #### __XAML__
 
 {{region raddataform-getting-started_1}}
+
 	<Window x:Class="RadDataForm_WPF.MainWindow"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -81,6 +83,7 @@ Two lines of code are important here:
 #### __XAML__
 
 {{region raddataform-getting-started_2}}
+
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
@@ -91,6 +94,7 @@ Two lines of code are important here:
 #### __XAML__
 
 {{region raddataform-getting-started_3}}
+
 	<Grid x:Name="LayoutRoot" Background="White">
 	  <telerik:RadDataForm x:Name="DataForm1" />
 	 </Grid>
@@ -100,11 +104,7 @@ Two lines of code are important here:
 
 Now if you run the application, you have the empty RadDataForm:
 
-
-
-
-               
-            ![](images/radDataForm_emptyForm.png)
+ ![](images/radDataForm_emptyForm.png)
 
 
 
@@ -115,6 +115,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 #### __C#__
 
 {{region raddataform-getting-started_4}}
+
 	public class Employee 
 	 {  
 	  public string FirstName
@@ -161,6 +162,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 #### __VB.NET__
 
 {{region raddataform-getting-started_5}}
+
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -235,6 +237,7 @@ In the example above Gender is of type enum:
 #### __C#__
 
 {{region raddataform-getting-started_6}}
+
 	public enum Gender
 	 {
 	  Female,
@@ -247,6 +250,7 @@ In the example above Gender is of type enum:
 #### __VB.NET__
 
 {{region raddataform-getting-started_7}}
+
 	Public Enum Gender
 	 Female
 	 Male
@@ -265,6 +269,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 #### __C#__
 
 {{region raddataform-getting-started_8}}
+
 	public MainPage()
 	  {
 	   InitializeComponent();
@@ -278,6 +283,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 #### __VB.NET__
 
 {{region raddataform-getting-started_9}}
+
 	    Dim employee As New Employee() With { _
 	     .FirstName = "Sarah", _
 	     .LastName = "Blake", _
@@ -295,11 +301,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 After you run the application you should see the following:
 
-
-
-
-               
-            ![](images/RadDataForm_bindToSingleItem.png)
+ ![](images/RadDataForm_bindToSingleItem.png)
 
 ## Binding RadDataForm to a collection of custom objects
 
@@ -308,6 +310,7 @@ We will extend the class Employee by a single static method - GetEmployees() tha
 #### __C#__
 
 {{region raddataform-getting-started_10}}
+
 	public class Employee
 	{
 	
@@ -331,6 +334,7 @@ We will extend the class Employee by a single static method - GetEmployees() tha
 #### __VB.NET__
 
 {{region raddataform-getting-started_11}}
+
 	Public Class Employee
 	
 	 Public Sub New()
@@ -386,6 +390,7 @@ Afterwards, all you need to do is to set the ItemsSource of the RadDataForm:
 #### __C#__
 
 {{region raddataform-getting-started_12}}
+
 	public MainPage()
 	  {
 	   InitializeComponent();   
@@ -398,6 +403,7 @@ Afterwards, all you need to do is to set the ItemsSource of the RadDataForm:
 #### __VB.NET__
 
 {{region raddataform-getting-started_13}}
+
 	Public Sub New()
 	 InitializeComponent()
 	 Me.DataForm1.ItemsSource = Employee.GetEmployees()
@@ -408,11 +414,7 @@ Afterwards, all you need to do is to set the ItemsSource of the RadDataForm:
 
 On running the application, you should see the following:
 
-
-
-
-               
-            ![](images/RadDataForm_bindToCollection.png)
+![](images/RadDataForm_bindToCollection.png)
 
 
 

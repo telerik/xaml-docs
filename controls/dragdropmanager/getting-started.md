@@ -10,14 +10,9 @@ position: 2
 
 # Getting Started
 
-
-
-## 
-
 This article will demonstrate a basic implementation of the DragDropManager by dragging between two ListBoxes. 
 
->tipIn order to use DragDropManager you have to add reference to __Telerik.Windows.Controls__ assembly.
-          
+>tipIn order to use DragDropManager you have to add reference to __Telerik.Windows.Controls__ assembly.          
 
 Firstly, for the purpose of this tutorial we will create a business object ApplicationInfo, which will expose a couple of properties as well as a sample collection for populating the ListBoxes. The structure of the class used in this example is shown on the next code snippets:
 
@@ -25,76 +20,74 @@ Firstly, for the purpose of this tutorial we will create a business object Appli
 
 {{region dragdropmanager-getting-started_0}}
 	public class ApplicationInfo
-	    {
-	        public Double Price
-	        {
-	            get;
-	            set;
-	        }
-	        public String IconPath
-	        {
-	            get;
-	            set;
-	        }
-	        public String Name
-	        {
-	            get;
-	            set;
-	        }
-	        public String Author
-	        {
-	            get;
-	            set;
-	        }
-	        public static ObservableCollection<ApplicationInfo> GenerateApplicationInfos()
-	        {
-	            ObservableCollection<ApplicationInfo> result = new ObservableCollection<ApplicationInfo>();
-	            ApplicationInfo info1 = new ApplicationInfo();
-	            info1.Name = "Large Collider";
-	            info1.Author = "C.E.R.N.";
-	            info1.IconPath = @"img/Atom.png";
-	            result.Add(info1);
-	            ApplicationInfo info2 = new ApplicationInfo();
-	            info2.Name = "Paintbrush";
-	            info2.Author = "Imagine Inc.";
-	            info2.IconPath = @"img/Brush.png";
-	            result.Add(info2);
-	            ApplicationInfo info3 = new ApplicationInfo();
-	            info3.Name = "Lively Calendar";
-	            info3.Author = "Control AG";
-	            info3.IconPath = @"img/CalendarEvents.png";
-	            result.Add(info3);
-	            ApplicationInfo info4 = new ApplicationInfo();
-	            info4.Name = "Fire Burning ROM";
-	            info4.Author = "The CD Factory";
-	            info4.IconPath = @"img/CDBurn.png";
-	            result.Add(info4);
-	            ApplicationInfo info5 = new ApplicationInfo();
-	            info5.Name = "Fav Explorer";
-	            info5.Author = "Star Factory";
-	            info5.IconPath = @"img/favorites.png";
-	            result.Add(info5);
-	            ApplicationInfo info6 = new ApplicationInfo();
-	            info6.Name = "IE Fox";
-	            info6.Author = "Open Org";
-	            info6.IconPath = @"img/Connected.png";
-	            result.Add(info6);
-	            ApplicationInfo info7 = new ApplicationInfo();
-	            info7.Name = "Charting";
-	            info7.Author = "AA-AZ inc";
-	            info7.IconPath = @"img/ChartDot.png";
-	            result.Add(info7);
-	            ApplicationInfo info8 = new ApplicationInfo();
-	            info8.Name = "SuperPlay";
-	            info8.Author = "EB Games";
-	            info8.IconPath = @"img/Games.png";
-	            result.Add(info8);
-	            return result;
-	        }
-	    }
-	{{endregion}}
-
-
+	{
+		public Double Price
+		{
+			get;
+			set;
+		}
+		public String IconPath
+		{
+			get;
+			set;
+		}
+		public String Name
+		{
+			get;
+			set;
+		}
+		public String Author
+		{
+			get;
+			set;
+		}
+		public static ObservableCollection<ApplicationInfo> GenerateApplicationInfos()
+		{
+			ObservableCollection<ApplicationInfo> result = new ObservableCollection<ApplicationInfo>();
+			ApplicationInfo info1 = new ApplicationInfo();
+			info1.Name = "Large Collider";
+			info1.Author = "C.E.R.N.";
+			info1.IconPath = @"img/Atom.png";
+			result.Add(info1);
+			ApplicationInfo info2 = new ApplicationInfo();
+			info2.Name = "Paintbrush";
+			info2.Author = "Imagine Inc.";
+			info2.IconPath = @"img/Brush.png";
+			result.Add(info2);
+			ApplicationInfo info3 = new ApplicationInfo();
+			info3.Name = "Lively Calendar";
+			info3.Author = "Control AG";
+			info3.IconPath = @"img/CalendarEvents.png";
+			result.Add(info3);
+			ApplicationInfo info4 = new ApplicationInfo();
+			info4.Name = "Fire Burning ROM";
+			info4.Author = "The CD Factory";
+			info4.IconPath = @"img/CDBurn.png";
+			result.Add(info4);
+			ApplicationInfo info5 = new ApplicationInfo();
+			info5.Name = "Fav Explorer";
+			info5.Author = "Star Factory";
+			info5.IconPath = @"img/favorites.png";
+			result.Add(info5);
+			ApplicationInfo info6 = new ApplicationInfo();
+			info6.Name = "IE Fox";
+			info6.Author = "Open Org";
+			info6.IconPath = @"img/Connected.png";
+			result.Add(info6);
+			ApplicationInfo info7 = new ApplicationInfo();
+			info7.Name = "Charting";
+			info7.Author = "AA-AZ inc";
+			info7.IconPath = @"img/ChartDot.png";
+			result.Add(info7);
+			ApplicationInfo info8 = new ApplicationInfo();
+			info8.Name = "SuperPlay";
+			info8.Author = "EB Games";
+			info8.IconPath = @"img/Games.png";
+			result.Add(info8);
+			return result;
+		}
+	}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -181,16 +174,13 @@ Firstly, for the purpose of this tutorial we will create a business object Appli
 	  Return result
 	 End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
+Then we need to define our ListBoxes with suitable ItemTemplates. We also enable dragging the ListBoxItems (through style) and allow drop to each of the ListBoxes (through setting AllowDrop property):
 
-
-Then we need to define our ListBoxes with suitable ItemTemplates. We also enable dragging the ListBoxItems (through style) and allow drop to each of the ListBoxes
-          (through setting AllowDrop property):
-        {% if site.site_name == 'Silverlight' %}
+{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
-
 {{region dragdropmanager-getting-started_2}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	      <Grid.Resources>
@@ -212,9 +202,10 @@ Then we need to define our ListBoxes with suitable ItemTemplates. We also enable
 	       <ListBox x:Name="MyAppList" Background="Gray" Grid.Column="1"  
 	                ItemTemplate="{StaticResource ApplicationTemplate}" AllowDrop="True"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
@@ -239,20 +230,12 @@ Then we need to define our ListBoxes with suitable ItemTemplates. We also enable
 	       <ListBox x:Name="MyAppList" Background="Gray" Grid.Column="1"  
 	                ItemTemplate="{StaticResource ApplicationTemplate}" AllowDrop="True"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
 >To use the DragDropManager and its components in XAML you have to declare the following namespace:
-          
-
-#### __XAML__
-
-{{region dragdropmanager-getting-started_4}}
-	 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
-
+>	*xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"*
 
 Afterwards we need to set the ItemsSource of the controls:
 
@@ -261,18 +244,14 @@ Afterwards we need to set the ItemsSource of the controls:
 {{region dragdropmanager-getting-started_3}}
 	ApplicationList.ItemsSource = ApplicationInfo.GenerateApplicationInfos();
 	MyAppList.ItemsSource = new ObservableCollection<ApplicationInfo>();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region dragdropmanager-getting-started_4}}
 	ApplicationList.ItemsSource = ApplicationInfo.GenerateApplicationInfos()
 	MyAppList.ItemsSource = New ObservableCollection(Of ApplicationInfo)()
-	{{endregion}}
-
-
+{{endregion}}
 
 Now, we need to attach Drag-Drop event handlers:
 
@@ -289,11 +268,8 @@ Now, we need to attach Drag-Drop event handlers:
 	DragDropManager.AddDragDropCompletedHandler(MyAppList, OnDragCompleted);
 	
 	DragDropManager.AddDropHandler(ApplicationList, OnDrop);
-	DragDropManager.AddDropHandler(MyAppList, OnDrop);
-	
-	{{endregion}}
-
-
+	DragDropManager.AddDropHandler(MyAppList, OnDrop);	
+{{endregion}}
 
 #### __VB.NET__
 
@@ -308,14 +284,10 @@ Now, we need to attach Drag-Drop event handlers:
 	DragDropManager.AddDragDropCompletedHandler(MyAppList, New DragDropCompletedEventHandler(AddressOf OnDragDropCompleted))
 	
 	DragDropManager.AddDropHandler(ApplicationList, New DropEventHandler(AddressOf OnDrop))
-	DragDropManager.AddDropHandler(MyAppList, New DropEventHandler(AddressOf OnDrop))
-	
-	{{endregion}}
-
-
+	DragDropManager.AddDropHandler(MyAppList, New DropEventHandler(AddressOf OnDrop))	
+{{endregion}}
 
 Then on DragInitialize we define the data that will be dragged as well as the visual representation. We also set DragDropEffects to all to allow drop on all scenarios.
-
 
 #### __C#__
 
@@ -329,9 +301,7 @@ Then on DragInitialize we define the data that will be dragged as well as the vi
 	    args.Data = payload;
 	    args.DragVisual = new ContentControl { Content = data, ContentTemplate = LayoutRoot.Resources["ApplicationTemplate"] as DataTemplate };
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -344,9 +314,7 @@ Then on DragInitialize we define the data that will be dragged as well as the vi
 		args.Data = payload
 		args.DragVisual = New ContentControl With {.Content = data, .ContentTemplate = TryCast(LayoutRoot.Resources("ApplicationTemplate"), DataTemplate)}
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 We also set mouse cursor to be arrow:
 
@@ -358,8 +326,7 @@ We also set mouse cursor to be arrow:
 	    args.SetCursor(Cursors.Arrow);
 	    args.Handled = true;
 	}
-	{{endregion}}
-
+{{endregion}}
 
 
 #### __VB.NET__
@@ -369,11 +336,11 @@ We also set mouse cursor to be arrow:
 	 args.SetCursor(Cursors.Arrow)
 	 args.Handled = True
 	End Sub
-	{{endregion}}
+{{endregion}}
 
+Finally, we add logic, that will be executed when drag and drop operations finish:
 
-
-Finally, we add logic, that will be executed when drag and drop operations finish:{% if site.site_name == 'Silverlight' %}
+{% if site.site_name == 'Silverlight' %}
 
 #### __C#__
 
@@ -389,9 +356,7 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 	    var data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData");
 	    ((IList)(sender as ListBox).ItemsSource).Remove(data);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -405,9 +370,10 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 		Dim data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData")
 		CType((TryCast(sender, ListBox)).ItemsSource, IList).Remove(data)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 
 #### __C#__
 
@@ -423,9 +389,7 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 	    var data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData");
 	    ((IList)(sender as ListBox).ItemsSource).Remove(data);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -439,6 +403,8 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 		Dim data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData")
 		CType((TryCast(sender, ListBox)).ItemsSource, IList).Remove(data)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-{% endif %}![](images/DragDropManager_DragBetweenListBoxes.png)
+{% endif %}
+
+![](images/DragDropManager_DragBetweenListBoxes.png)

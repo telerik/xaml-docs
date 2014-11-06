@@ -10,37 +10,31 @@ position: 1
 
 # Getting Started
 
-
-
 The __RadTransitionControl__ derives form the __ContentControl__ and its purpose is to visualize some content (__UserControls__, __UIElements__, __Data__ etc). Additionally it can apply transition effects upon changing its content. This tutorial will help you to get started with the __RadTransitionControl__ basics. It will show you how to:
 
-* [Add a RadTransitionControl to your application](#Add_a_RadTransitionControl_to_your_application)
+* [Add a RadTransitionControl to your application](#add-a-radtransitioncontrol-to-your-application)
 
-* [Display Images listed in a ListBox](#Display_Images_listed_in_a_ListBox)
+* [Display Images listed in a ListBox](#display-images-listed-in-a-listbox)
 
-* [Apply transitions when the Image is changed](#Apply_transitions_when_the_Image_is_changed)
+* [Apply transitions when the Image is changed](#apply-transitions-when-the-image-is-changed)
 
 ## Add a RadTransitionControl to your application
 
 In order to add a __RadTransitionControl__ to your application, you have to simply create an instance of it in your XAML. Here is a sample code:
 
->As the __RadTransitionControl__ is located in the __Telerik.Windows.Controls__namespace of the __Telerik.Windows.Controls__assembly, you have to add the following namespace declaration in your __UserControl__:
+>As the __RadTransitionControl__ is located in the __Telerik.Windows.Controls__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add the following namespace declaration in your __UserControl__:
 
 #### __XAML__
 
 {{region radtransition-getting-started_4}}
 	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
 {{region radtransition-getting-started_0}}
 	<telerik:RadTransitionControl x:Name="radTransitionControl" />
-	{{endregion}}
-
-
+{{endregion}}
 
 >The __RadTransitionControl__ doesn't have any visual elements, so if it has no content, nothing will be visualized.
 
@@ -56,9 +50,7 @@ Here is a sample __ListBox__ definition, which is populated with objects of type
 	<ListBox x:Name="PhotosListBox"
 	            DisplayMemberPath="Name"
 	            ItemsSource="{Binding PhotosCollection}" />
-	{{endregion}}
-
-
+{{endregion}}
 
 The content of the __RadTransitionControl__ should be represented by the __SelectedItem__ of the __ListBox__. This can be done by using element to element binding.
 
@@ -89,9 +81,7 @@ The content of the __RadTransitionControl__ should be represented by the __Selec
 	        </telerik:RadTransitionControl.ContentTemplate>
 	    </telerik:RadTransitionControl>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 If you run your application at this point, the content of the __RadTransitionControl__ should change when you select an item in the __ListBox__. Note that no transition will apply. This is because there is no transition effect set to the __RadTransitionControl__. Read the next section to learn how to set transition effects.
 
@@ -101,15 +91,13 @@ The __RadTransitionControl__ automatically detects when the content is changed a
 
 >tipTo learn more about the transitions in the __RadTransitionControl__ read [this topic]({%slug radtransition-features-transitions%}).
 
->As the built-in transition effects are located in the __Telerik.Windows.Controls.TransitionEffects__namespace of the __Telerik.Windows.Controls__assembly, you have to add the following namespace declaration in your __UserControl__:
+>As the built-in transition effects are located in the __Telerik.Windows.Controls.TransitionEffects__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add the following namespace declaration in your __UserControl__:
 
 #### __XAML__
 
 {{region radtransition-getting-started_5}}
 	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls" 
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -120,17 +108,11 @@ The __RadTransitionControl__ automatically detects when the content is changed a
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 Now, if you run your application and select an image from the list, you should see the transition upon the content change.
 
-
-
-
-         
-      ![](images/RadTransition_Getting_Started_01.png)
+![](images/RadTransition_Getting_Started_01.png)
 
 # See Also
 

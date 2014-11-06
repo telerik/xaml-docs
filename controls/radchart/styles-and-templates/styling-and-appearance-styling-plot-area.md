@@ -20,7 +20,7 @@ Open your __RadChart__ project in Expression Blend and select the __RadChart__ y
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking the "OK" button, a style with target type __ClipPanel__will be created. In the 'Properties' pane the properties available for the style will be loaded. You can modify them to get the desired appearance.
+After clicking the "OK" button, a style with target type __ClipPanel__ will be created. In the 'Properties' pane the properties available for the style will be loaded. You can modify them to get the desired appearance.
 
 Your next step is to set the created style to the PlotAreaStyle property of the ChartArea and delete the dummy control.
 
@@ -42,11 +42,7 @@ Your next step is to set the created style to the PlotAreaStyle property of the 
 
 Here is a snapshot of the sample result.
 
-
-
-
-         
-      ![](images/RadChart_StylingPlotArea_06.png)
+![](images/RadChart_StylingPlotArea_06.png)
 
 Here is the final XAML for the __Style__:
 

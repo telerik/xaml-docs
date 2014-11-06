@@ -18,7 +18,7 @@ This feature allows you to create a custom style and apply it to a number of cha
 
 The delegate accepts four parameters:
 
-* __Control item__ - represents the chart item that is currently processed. This could be either a derivative of the __BaseChartItem__ (__Bar__, __Bubble__, __Pie__, __Stick__, etc.), or a derivative of the __SelfDrawingSeries__(__LineSeries__, __SplineSeries__, __AreaSeries__, __SplineAreaSeries__, etc). or a __SeriesItemLabel__, or a __ChartLegendItem__.
+* __Control item__ - represents the chart item that is currently processed. This could be either a derivative of the __BaseChartItem__ ( __Bar__, __Bubble__, __Pie__, __Stick__, etc.), or a derivative of the __SelfDrawingSeries__ ( __LineSeries__, __SplineSeries__, __AreaSeries__, __SplineAreaSeries__, etc). or a __SeriesItemLabel__, or a __ChartLegendItem__.
 
 * __Style style__ - represents the style that would be applied to the respective chart item by default. You can use it to set the __Style.BasedOn__ property of the style created by the delegate.
 
@@ -28,9 +28,7 @@ The delegate accepts four parameters:
 
 To set the delegate you have to use the __CreateItemStyleDelegate__ property. Here is an example of how to set it.
 
->
-
-The __Style style__ argument will have the following __TargetType__ depending on the different values of the __Control item__ argument:
+>The __Style style__ argument will have the following __TargetType__ depending on the different values of the __Control item__ argument:
 
 * BaseChartItem - __Shape__
 
@@ -234,7 +232,4 @@ The *LegendItemStyle* used :
 
 The picture below demonstrates the result:
  
-
-
-         
-      ![](images/RadChart_Styling_and_Appearance_Custom_Item_Style_01.png)
+ ![](images/RadChart_Styling_and_Appearance_Custom_Item_Style_01.png)

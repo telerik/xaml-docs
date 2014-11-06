@@ -10,13 +10,11 @@ position: 5
 
 # Close the RadWindow Through its Content
 
-
-
 To close the __RadWindow__ through its content you have to get the instance of the __RadWindow__ and call its __Close()__ method. This tutorial will handle two possible scenarios:
 
-* [When the content is directly set to the RadWindow](#Content_directly_set_to_the_RadWindow)
+* [When the content is directly set to the RadWindow](#content-directly-set-to-the-radwindow)
 
-* [When the content is represented by a UserControl](#Content_represented_by_a_UserControl)
+* [When the content is represented by a UserControl](#content-represented-by-a-usercontrol)
 
 ## Content, directly set to the RadWindow
 
@@ -38,11 +36,35 @@ Here is a sample __RadWindow__, used as user control, with a button in it:
 	                VerticalAlignment="Center" />
 	    </Grid>
 	</telerik:RadWindow>
-	{{endregion}}
-
-
+{{endregion}}
 
 As the button is in the same control like the __RadWindow__, you can get the __RadWindow__ instance in the code-behind. In order to close the window through the button you have to attach to its __Click__ event and call the __Close()__ method of the __RadWindow__.
+
+#### __XAML__
+
+{{region radwindow-how-to-close-the-radwidnow-through-its-content_1}}
+	<Button Content="Close me!"
+	        Click="Button_Click"
+	        HorizontalAlignment="Center"
+	        VerticalAlignment="Center" />
+{{endregion}}
+
+#### __C#__
+
+{{region radwindow-how-to-close-the-radwidnow-through-its-content_2}}
+	private void Button_Click( object sender, RoutedEventArgs e )
+	{
+	    this.Close();
+	}
+{{endregion}}
+
+#### __VB.NET__
+
+{{region radwindow-how-to-close-the-radwidnow-through-its-content_3}}
+	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
+	 Me.Close()
+	End Sub
+{{endregion}}
 
 >tipInstead of event handler you can use a __RadButton__ with the __Close__ command for the __RadWindow__. Here is an example:
 
@@ -53,63 +75,13 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 	                   HorizontalAlignment="Center"
 	                   VerticalAlignment="Center"
 	                   Command="telerik:WindowCommands.Close" />
-	{{endregion}}
-
-
-
-#### __XAML__
-
-{{region radwindow-how-to-close-the-radwidnow-through-its-content_1}}
-	<Button Content="Close me!"
-	        Click="Button_Click"
-	        HorizontalAlignment="Center"
-	        VerticalAlignment="Center" />
-	{{endregion}}
-
-
-
-#### __C#__
-
-{{region radwindow-how-to-close-the-radwidnow-through-its-content_2}}
-	private void Button_Click( object sender, RoutedEventArgs e )
-	{
-	    this.Close();
-	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radwindow-how-to-close-the-radwidnow-through-its-content_3}}
-	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
-	 Me.Close()
-	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Content, represented by a UserControl
 
-In this scenario the __Button__ is placed inside a __UserControl__, which is passed as the __Content__ of the __RadWindow__. In this case you cannot access the __RadWindow__ directly from the __UserControl__ as it is not aware of its existance. In order to close the __RadWindow__ when the button is clicked, you have to use the__ParentOfType<T>()__ extension method to get the __RadWindow__ instance.
+In this scenario the __Button__ is placed inside a __UserControl__, which is passed as the __Content__ of the __RadWindow__. In this case you cannot access the __RadWindow__ directly from the __UserControl__ as it is not aware of its existance. In order to close the __RadWindow__ when the button is clicked, you have to use the __ParentOfType\<T\>()__ extension method to get the __RadWindow__ instance.
 
->tipInstead of event handler you can use a __RadButton__ with the __Close__ command for the __RadWindow__. Here is an example:
-
-__Colorized Example Code__
-
-[Link...]()
-
-
-         
-      
-
-
-
-	
-
-ASP.NET
-
->tipThe __ParentOfType<T>()__ is available when you use the __Telerik.Windows.Controls__namespace from the __Telerik.Windows.Controls__. It returns the first element of this type up in the __Visual Tree__.
+>tipThe __ParentOfType\<T\>()__ is available when you use the __Telerik.Windows.Controls__ namespace from the __Telerik.Windows.Controls__. It returns the first element of this type up in the __Visual Tree__.
 
 #### __C#__
 
@@ -119,9 +91,7 @@ ASP.NET
 	    RadWindow window = this.ParentOfType<RadWindow>();
 	    window.Close();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -130,9 +100,7 @@ ASP.NET
 	 Dim window As RadWindow = Me.ParentOfType(Of RadWindow)()
 	 window.Close()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

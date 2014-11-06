@@ -14,7 +14,7 @@ position: 13
 
 ## 
 
-There is a set of predefined __PointMark__shapes, but you are allowed to create your own via templating the __PointMark__ control. To learn more about the predefined shapes and how to manipulate them take a look at the [Chart Point Marks]({%slug radchart-features-chart-point-marks%}) topic.
+There is a set of predefined __PointMark__ shapes, but you are allowed to create your own via templating the __PointMark__ control. To learn more about the predefined shapes and how to manipulate them take a look at the [Chart Point Marks]({%slug radchart-features-chart-point-marks%}) topic.
 
 >tipTo learn more about styling the point marks read [here]({%slug radchart-styling-and-appearance-styling-point-marks%}).
 
@@ -94,11 +94,7 @@ After that set the created __PointMark__ style to the __DefaultSeriesDefinition_
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadChart_TemplatingPointMarks_06.png)
+![](images/RadChart_TemplatingPointMarks_06.png)
 
 Here is the resulting XAML for the __PointMarkItem's Style__:
 
@@ -127,5 +123,3 @@ Here is the resulting XAML for the __PointMarkItem's Style__:
 	    </Setter>
 	</Style>
 	{{endregion}}
-
-

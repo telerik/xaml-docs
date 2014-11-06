@@ -17,13 +17,13 @@ The __RadMap__ provides unified route search architecture which uses functionali
 
 This topic will focus on the following:
 
-* [Routing Providers](#Routing_Providers)
+* [Routing Providers](#routing-providers)
 
-* [Using BingRouteProvider](#Using_BingRouteProvider)
+* [Using BingRouteProvider](#using-bingrouteprovider)
 
-* [Executing Routing](#Executing_Routing)
+* [Executing Routing](#executing-routing)
 
-* [Routing Result](#Routing_Result)
+* [Routing Result](#routing-result)
 
 ## Routing Providers
 
@@ -113,13 +113,7 @@ Here is an example:
 In order to execute a routing action you have to call the __CalculateRouteAsync()__ method of the __BingRouteProvider__ and pass a __RouteRequest__ as its argument. The __RouteRequest__ should contain the points which should take part in the desired order. To pass the location points to the request argument just use its __Waypoints__ property.
         
 
->tipYou are able to specify different options for the route calculation via the __Options__
-            property of the request, which is of type __RouteOptions__. To learn more about
-            the __RouteOptions__ class and its members read
-
-            {% if site.site_name == 'Silverlight' %}[this](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_map_routeoptions.html){% endif %}{% if site.site_name == 'WPF' %}[this](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_map_routeoptions.html){% endif %}
-
-            topic.
+>tipYou are able to specify different options for the route calculation via the __Options__ property of the request, which is of type __RouteOptions__. To learn more about the __RouteOptions__ class and its members read {% if site.site_name == 'Silverlight' %}[this](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_map_routeoptions.html){% endif %}{% if site.site_name == 'WPF' %}[this](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_map_routeoptions.html){% endif %} topic.
           
 
 Here is an example:
@@ -232,15 +226,7 @@ Here is an example:
 The result from the routing services is held by the __RouteResponse__ object inside the __RoutingCompletedEventArgs__ of the handler for the __RoutingCompleted__ event.
         
 
->tipIf you need more information you can take a look at the
-
-            {% if site.site_name == 'Silverlight' %}[GeocodeResponse](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_map_geocoderesponse.html){% endif %}{% if site.site_name == 'WPF' %}[GeocodeResponse](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_map_geocoderesponse.html){% endif %}
-            
-            and
-            
-            {% if site.site_name == 'Silverlight' %}[GeocodeResult](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_map_geocoderesult.html){% endif %}{% if site.site_name == 'WPF' %}[GeocodeResult](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_map_geocoderesult.html){% endif %}
-            
-            classes in the API Reference.
+>tipIf you need more information you can take a look at the {% if site.site_name == 'Silverlight' %}[GeocodeResponse](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_map_geocoderesponse.html){% endif %}{% if site.site_name == 'WPF' %}[GeocodeResponse](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_map_geocoderesponse.html){% endif %} and {% if site.site_name == 'Silverlight' %}[GeocodeResult](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_map_geocoderesult.html){% endif %}{% if site.site_name == 'WPF' %}[GeocodeResult](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_map_geocoderesult.html){% endif %} classes in the API Reference.
           
 
 To get the result you have to access the __Points__ collection of the __Result.RoutePath__ object. Here is an example where the result is displayed by a __MapPolyline__ via the __RadMap__'s visualization layer.
@@ -281,35 +267,31 @@ To get the result you have to access the __Points__ collection of the __Result.R
 #### __VB.NET__
 
 {{region radmap-features-routing_6}}
-	    Private Sub RouteProvider_RoutingCompleted(sender As Object, e As RoutingCompletedEventArgs)
-	        Me.findRouteButton.IsEnabled = True
-	
-	        Dim routeResponse As RouteResponse = TryCast(e.Response, RouteResponse)
-	        If routeResponse IsNot Nothing AndAlso routeResponse.[Error] Is Nothing Then
-	            If routeResponse.Result IsNot Nothing AndAlso routeResponse.Result.RoutePath IsNot Nothing Then
-	                Dim routeLine As New PolylineData() With { _
-	                    .Points = routeResponse.Result.RoutePath.Points, _
-	                    .ShapeFill = New MapShapeFill() With { _
-	                        .Stroke = New SolidColorBrush(Colors.Red), _
-	                        .StrokeThickness = 2 _
-	                    } _
-	                }
-	
-	                Me.routeLayer.Items.Add(routeLine)
-	            End If
-	        End If
-	    End Sub
+    Private Sub RouteProvider_RoutingCompleted(sender As Object, e As RoutingCompletedEventArgs)
+        Me.findRouteButton.IsEnabled = True
+
+        Dim routeResponse As RouteResponse = TryCast(e.Response, RouteResponse)
+        If routeResponse IsNot Nothing AndAlso routeResponse.[Error] Is Nothing Then
+            If routeResponse.Result IsNot Nothing AndAlso routeResponse.Result.RoutePath IsNot Nothing Then
+                Dim routeLine As New PolylineData() With { 
+                    .Points = routeResponse.Result.RoutePath.Points, 
+                    .ShapeFill = New MapShapeFill() With { 
+                        .Stroke = New SolidColorBrush(Colors.Red), 
+                        .StrokeThickness = 2 
+                    } 
+                }
+
+                Me.routeLayer.Items.Add(routeLine)
+            End If
+        End If
+    End Sub
 	{{endregion}}
 
 
 
 Here is a snapshot of the result.
 
-
-
-
-               
-            ![Rad Map Features Routing 01](images/RadMap_Features_Routing_01.png)
+![Rad Map Features Routing 01](images/RadMap_Features_Routing_01.png)
 
 # See Also
 

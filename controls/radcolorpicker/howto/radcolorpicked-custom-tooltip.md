@@ -78,96 +78,7 @@ For the purpose of this article we will use:
 			End Property
 			Private m_ToolTipString As String
 		End Class
-	#End Region
-	#Region "radcolorpicker-howto-custom-tooltip_4"
-		Public Class MainViewModel
-			Inherits ViewModelBase
-	#Region "PrivateFilds"
-			Private m_mainPaletteColors As ObservableCollection(Of ColorModel)
-			Private m_headerPaletteColors As ObservableCollection(Of ColorModel)
-			Private m_standardPaletteColors As ObservableCollection(Of ColorModel)
-	#End Region
-	
-	#Region "Constructor"
-			Public Sub New()
-				m_mainPaletteColors = New ObservableCollection(Of ColorModel)()
-				m_headerPaletteColors = New ObservableCollection(Of ColorModel)()
-				m_standardPaletteColors = New ObservableCollection(Of ColorModel)()
-	
-				GenerateSampleData()
-			End Sub
-	#End Region
-	
-	#Region "GenerateSampleData"
-			Private Sub GenerateSampleData()
-				Dim rand As New Random()
-				For i As Integer = 0 To 49
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255))), _
-				  .ToolTipString = "Custom ToolTip " + i
-				 }
-					Me.m_mainPaletteColors.Add(color_1)
-				Next
-	
-				For i As Integer = 0 To 9
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255))), _
-				  .ToolTipString = "Custom ToolTip " + i
-				 }
-					Me.m_headerPaletteColors.Add(color_1)
-				Next
-	
-				For i As Integer = 0 To 9
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255))), _
-				  .ToolTipString = "Custom ToolTip " + i
-				 }
-					Me.m_standardPaletteColors.Add(color_1)
-				Next
-			End Sub
-	#End Region
-	
-	#Region "Properties"
-			Public Property MainPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_mainPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_mainPaletteColors <> value Then
-						Me.m_mainPaletteColors = value
-						Me.OnPropertyChanged("MainPaletteColors")
-					End If
-				End Set
-			End Property
-	
-			Public Property StandardPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_standardPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_standardPaletteColors <> value Then
-						Me.m_standardPaletteColors = value
-						Me.OnPropertyChanged("StandardPaletteColors")
-					End If
-				End Set
-			End Property
-	
-			Public Property HeaderPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_headerPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_headerPaletteColors <> value Then
-						Me.m_headerPaletteColors = value
-						Me.OnPropertyChanged("HeaderPaletteColors")
-					End If
-				End Set
-			End Property
-	#End Region
-		End Class
-	#End Region
-	End Class
-
+	{{endregion}}
 
 
 * three different collections of ColorModel which will be used for the [HeaderPalette]({%slug radcolorpicker-structure%}), [MainPalette]({%slug radcolorpicker-structure%}) and [StandardPalette]({%slug radcolorpicker-structure%})
@@ -180,10 +91,10 @@ For the purpose of this article we will use:
 {{region radcolorpicker-howto-custom-tooltip_3}}
 	public class MainViewModel : ViewModelBase
 	{
-		#region PrivateFilds
 		private ObservableCollection<ColorModel> mainPaletteColors;
 		private ObservableCollection<ColorModel> headerPaletteColors;
 		private ObservableCollection<ColorModel> standardPaletteColors;
+    }
 	{{endregion}}
 
 
@@ -193,93 +104,10 @@ For the purpose of this article we will use:
 {{region radcolorpicker-howto-custom-tooltip_4}}
 		Public Class MainViewModel
 			Inherits ViewModelBase
-	#Region "PrivateFilds"
 			Private m_mainPaletteColors As ObservableCollection(Of ColorModel)
 			Private m_headerPaletteColors As ObservableCollection(Of ColorModel)
 			Private m_standardPaletteColors As ObservableCollection(Of ColorModel)
-	#End Region
-	
-	#Region "Constructor"
-			Public Sub New()
-				m_mainPaletteColors = New ObservableCollection(Of ColorModel)()
-				m_headerPaletteColors = New ObservableCollection(Of ColorModel)()
-				m_standardPaletteColors = New ObservableCollection(Of ColorModel)()
-	
-				GenerateSampleData()
-			End Sub
-	#End Region
-	
-	#Region "GenerateSampleData"
-			Private Sub GenerateSampleData()
-				Dim rand As New Random()
-				For i As Integer = 0 To 49
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255))), _
-				  .ToolTipString = "Custom ToolTip " + i
-				 }
-					Me.m_mainPaletteColors.Add(color_1)
-				Next
-	
-				For i As Integer = 0 To 9
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255))), _
-				  .ToolTipString = "Custom ToolTip " + i
-				 }
-					Me.m_headerPaletteColors.Add(color_1)
-				Next
-	
-				For i As Integer = 0 To 9
-					Dim color__1 As New ColorModel() With {
-				  .CustomColor = Color.FromArgb(255, CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255)), CByte(rand.[Next](0, 255))), _
-				  .ToolTipString = "Custom ToolTip " + i
-				 }
-					Me.m_standardPaletteColors.Add(color_1)
-				Next
-			End Sub
-	#End Region
-	
-	#Region "Properties"
-			Public Property MainPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_mainPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_mainPaletteColors <> value Then
-						Me.m_mainPaletteColors = value
-						Me.OnPropertyChanged("MainPaletteColors")
-					End If
-				End Set
-			End Property
-	
-			Public Property StandardPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_standardPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_standardPaletteColors <> value Then
-						Me.m_standardPaletteColors = value
-						Me.OnPropertyChanged("StandardPaletteColors")
-					End If
-				End Set
-			End Property
-	
-			Public Property HeaderPaletteColors() As ObservableCollection(Of ColorModel)
-				Get
-					Return Me.m_headerPaletteColors
-				End Get
-				Set(value As ObservableCollection(Of ColorModel))
-					If Me.m_headerPaletteColors <> value Then
-						Me.m_headerPaletteColors = value
-						Me.OnPropertyChanged("HeaderPaletteColors")
-					End If
-				End Set
-			End Property
-	#End Region
-		End Class
-	#End Region
-	End Class
-
-
+	{{endregion}}
 
 Then you have to set the MainViewModel as __DataContext__ of the RadColorPicker control. In order to set the customized string as a tool tip you can use the __PaletteItemsTemplate__ property to set a customized DataTemplate. In this template you can use the __ToolTipService__ and bind the __ToolTip__ property to your customized string.
 			
@@ -308,9 +136,5 @@ Then you have to set the MainViewModel as __DataContext__ of the RadColorPicker 
 
 
 The result will be similar to the picture below:
-			![Rad Color Picker How To Custom Tool Tip](images/RadColorPicker_HowTo_CustomToolTip.png)
 
-You can download a sample runnable project here.
-			
-
-# See Also
+![Rad Color Picker How To Custom Tool Tip](images/RadColorPicker_HowTo_CustomToolTip.png)

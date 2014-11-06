@@ -12,58 +12,43 @@ position: 13
 
 
 
-The __RadMap__ control allows you to implement search functionality,
-        that will allow the user to search for a specific location on the map. The search is
-        performed by using __Search Providers__, which communicate with
-        the respective __Map Provider's__ services. With this feature
-        available you are able to build an UI that allows the user to input search
-        criteria and execute a search.
+The __RadMap__ control allows you to implement search functionality, that will allow the user to search for a specific location on the map. The search is performed by using __Search Providers__, which communicate with the respective __Map Provider's__ services. With this feature available you are able to build an UI that allows the user to input search criteria and execute a search.
       
 
 This topic will focus on the following:
 
-* [Search Providers](#Search_Providers)
+* [Search Providers](#search-providers)
 
-* [Using the BingSearchProvider](#Using_the_BingSearchProvider)
+* [Using the BingSearchProvider](#using-the-bingsearchprovider)
 
-* [Search Results](#Search_Results)
+* [Search Results](#search-results)
 
-* [Search Region](#Search_Region)
+* [Search Region](#search-region)
 
-* [Alternate Search Regions](#Alternate_Search_Regions)
+* [Alternate Search Regions](#alternate-search-regions)
 
 ## Search Providers
 
-The __Search Providers__ are very similar to the
-          __Map Providers__. They make calls to the
-          respective services in order to provide a certain functionality.
+The __Search Providers__ are very similar to the __Map Providers__. They make calls to the respective services in order to provide a certain functionality.
         
 
 Here is a list of the currently available search providers:
 
-* __BingSearchProvider__ - allows you to perform search via
-              the __Bing Maps__.
+* __BingSearchProvider__ - allows you to perform search via the __Bing Maps__.
             
 
 ## Using the BingSearchProvider
 
-In order to use the __BingSearchProvider__ you have to create an instance
-          of it and handle its __SearchCompleted__ event. You also have to set
-          the following properties:
+In order to use the __BingSearchProvider__ you have to create an instance of it and handle its __SearchCompleted__ event. You also have to set the following properties:
         
 
-* __ApplicationId__ - this represents a key, which allows you to use the
-              __Bing Maps__ services. It should be the same key as the one you use
-              with the __BingMapProvider__ class.
+* __ApplicationId__ - this represents a key, which allows you to use the __Bing Maps__ services. It should be the same key as the one you use with the __BingMapProvider__ class.
             
 
->Without supplying a valid key you won't be able to visualize the map inside the
-                __RadMap__ control. In order to learn how to obtain one, please read
-                [this article](http://msdn.microsoft.com/en-us/library/ee681900.aspx).
+>Without supplying a valid key you won't be able to visualize the map inside the __RadMap__ control. In order to learn how to obtain one, please read [this article](http://msdn.microsoft.com/en-us/library/ee681900.aspx).
               
 
-* __MapControl__ - represents the instance of the __RadMap__,
-              which should be associated with the search provider.
+* __MapControl__ - represents the instance of the __RadMap__, which should be associated with the search provider.
             
 
 Here is an example:
@@ -105,16 +90,10 @@ Here is an example:
 
 
 
-In order to execute search you have to call the __SearchAsync()__
-          method of the __BingSearchProvider__ and pass a
-          __SearchRequest__ object to it. For example, if you have UI
-          that consists of a __TextBox__ named "__SearchBox__"
-          and a button, upon which click a search should be executed, here is how the code for the
-          button's __Click__ event handler should look.
+In order to execute search you have to call the __SearchAsync()__ method of the __BingSearchProvider__ and pass a __SearchRequest__ object to it. For example, if you have UI that consists of a __TextBox__ named "__SearchBox__" and a button, upon which click a search should be executed, here is how the code for the button's __Click__ event handler should look.
         
 
->tipTo learn more about the __SearchRequest__ class, please read
-            {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_map_bingsearchservice_searchresponse.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_map_wpfbingsearchservice_searchresponse.html){% endif %}.
+>tipTo learn more about the __SearchRequest__ class, please read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_map_bingsearchservice_searchresponse.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_map_wpfbingsearchservice_searchresponse.html){% endif %}.
           
 
 #### __XAML__
@@ -225,32 +204,16 @@ In order to execute search you have to call the __SearchAsync()__
 
 ## Search Results
 
-The results of the executed search are held by the __SearchResponse__
-          object inside the __SearchCompletedEventArgs__ of the handler
-          for the __SearchCompleted__ event. You can easily iterate the
-          collection and wrap each result in a custom class, which to be  later displayed in
-          the __VisualizationLayer__ of the __RadMap__
-          via __DataBinding__.
+The results of the executed search are held by the __SearchResponse__ object inside the __SearchCompletedEventArgs__ of the handler for the __SearchCompleted__ event. You can easily iterate the collection and wrap each result in a custom class, which to be  later displayed in the __VisualizationLayer__ of the __RadMap__ via __DataBinding__.
         
 
->To learn more about __Data Binding__, you can read the respective
-            [topic]({%slug radmap-visualization-layer-data-binding%}). In it you can
-            also find the __DataTemplate__ and the custom __MapItem__
-            class used in the examples below.
+>To learn more about __Data Binding__, you can read the respective [topic]({%slug radmap-visualization-layer-data-binding%}). In it you can also find the __DataTemplate__ and the custom __MapItem__ class used in the examples below.
           
 
-Here is an example on how to access the __SearchResults__ collection,
-          iterate its items and pass them to the __VisualizationLayer__.
+Here is an example on how to access the __SearchResults__ collection, iterate its items and pass them to the __VisualizationLayer__.
         
 
->Note that the items in the __SearchResultCollection__ collection represent map
-            location smaller than a region, e.g. restaurants, theaters, etc. In case the search
-            query represents a region this collection will be empty and the __SearchRegion__
-            will represent the search result, e.g. Paris, Amsterdam, etc. Also note that even when the
-            __SearchResultCollection__ has items, the __SearchRegion__
-            will still be available and will represent the region to which the results belong.
-            In the next section, you can see how to make use of the
-            __SearchRegion__ in both cases.
+>Note that the items in the __SearchResultCollection__ collection represent map location smaller than a region, e.g. restaurants, theaters, etc. In case the search query represents a region this collection will be empty and the __SearchRegion__ will represent the search result, e.g. Paris, Amsterdam, etc. Also note that even when the __SearchResultCollection__ has items, the __SearchRegion__ will still be available and will represent the region to which the results belong. In the next section, you can see how to make use of the __SearchRegion__ in both cases.
           
 
 #### __C#__
@@ -299,32 +262,19 @@ Here is an example on how to access the __SearchResults__ collection,
 
 
 
-Here is a snapshot of the result.![Rad Map Features Search 01](images/RadMap_Features_Search_01.png)
+Here is a snapshot of the result.
+
+![Rad Map Features Search 01](images/RadMap_Features_Search_01.png)
 
 ## Search Region
 
-The __Search Region__ represents the region in which the
-          results are located. If the __SearchResultCollection__
-          is empty, the __SearchRegion__ itself might be counted
-          as a result. For example, a search query of "Chinese restaurants in San Francisco" would
-          return several __SearchResults__ and a
-          __SearchRegion__ representing San Francisco. If you search
-          for "San Francisco", the search would return empty __SearchResultsCollection__,
-          but the __SearchRegion__ will be equal to San Francisco.
+The __Search Region__ represents the region in which the results are located. If the __SearchResultCollection__ is empty, the __SearchRegion__ itself might be counted as a result. For example, a search query of "Chinese restaurants in San Francisco" would return several __SearchResults__ and a __SearchRegion__ representing San Francisco. If you search for "San Francisco", the search would return empty __SearchResultsCollection__, but the __SearchRegion__ will be equal to San Francisco.
         
 
-One of the most important features of the __Search Region__ is the
-          __BoundingArea__. It allows you to get a shape representing the
-          region. By using a __MapShapeData__ object you can easily
-          display it on the map via the __VisualizationLayer__.
-          Here is an example for such a shape, which appears when the __SearchResultCollection__
-          is not empty. The MapShape will surround the results. The following code
-          snippet is an extension of the one in the previous section.
+One of the most important features of the __Search Region__ is the __BoundingArea__. It allows you to get a shape representing the region. By using a __MapShapeData__ object you can easily display it on the map via the __VisualizationLayer__. Here is an example for such a shape, which appears when the __SearchResultCollection__ is not empty. The MapShape will surround the results. The following code snippet is an extension of the one in the previous section.
         
 
->tipNote that by using the __GeocodeLocation.BestView__ property
-            of the __SearchRegion__ you are able to set the view of the
-            map at the most suitable location and zoom level.
+>tipNote that by using the __GeocodeLocation.BestView__ property of the __SearchRegion__ you are able to set the view of the map at the most suitable location and zoom level.
           
 
 #### __C#__
@@ -332,7 +282,6 @@ One of the most important features of the __Search Region__ is the
 {{region radmap-features-search_6}}
 	private void Provider_SearchCompleted(object sender, SearchCompletedEventArgs args)
 	{
-	
 		this.itemCollection.Clear();
 		SearchResultCollection results = args.Response.ResultSets.First().Results;
 	    SearchRegion region = args.Response.ResultSets.First().SearchRegion;
@@ -386,55 +335,55 @@ One of the most important features of the __Search Region__ is the
 #### __VB.NET__
 
 {{region radmap-features-search_7}}
-	    Private Sub Provider_SearchCompleted(sender As Object, args As SearchCompletedEventArgs)
-	
-	        Me.itemCollection.Clear()
-	        Dim results As SearchResultCollection = args.Response.ResultSets.First().Results
-	        Dim region As SearchRegion = args.Response.ResultSets.First().SearchRegion
-	        If results.Count > 0 Then
-	            Me.radMap.SetView(region.GeocodeLocation.BestView)
-	            For Each result As SearchResultBase In args.Response.ResultSets(0).Results
-	                Dim item As New MapItem() With { _
-	                    .Title = result.Name, _
-	                    .Location = result.LocationData.Locations(0) _
-	                }
-	                Me.itemCollection.Add(item)
-	            Next
-	        Else
-	            If region IsNot Nothing Then
-	                Me.radMap.SetView(region.GeocodeLocation.BestView)
-	                If region.GeocodeLocation.Address IsNot Nothing AndAlso region.GeocodeLocation.Locations.Count > 0 Then
-	                    For Each location As Location In region.GeocodeLocation.Locations
-	                        Dim item As New MapItem()
-	
-	                        item.Location = location
-	                        Me.itemCollection.Add(item)
-	                    Next
-	
-	                    ' Set the bounding area
-	                    If args.Response.ResultSets(0).SearchRegion.BoundingArea IsNot Nothing Then
-	                        Dim boundingArea As MapShapeData = args.Response.ResultSets(0).SearchRegion.BoundingAreaData
-	                        boundingArea.ShapeFill = New MapShapeFill() With { _
-	                            .Stroke = New SolidColorBrush(Colors.Red), _
-	                            .StrokeThickness = 1 _
-	                        }
-	                        Me.regionLayer.Items.Add(boundingArea)
-	                    End If
-	                End If
-	            End If
-	        End If
-	    End Sub
+    Private Sub Provider_SearchCompleted(sender As Object, args As SearchCompletedEventArgs)
+
+        Me.itemCollection.Clear()
+        Dim results As SearchResultCollection = args.Response.ResultSets.First().Results
+        Dim region As SearchRegion = args.Response.ResultSets.First().SearchRegion
+        If results.Count > 0 Then
+            Me.radMap.SetView(region.GeocodeLocation.BestView)
+            For Each result As SearchResultBase In args.Response.ResultSets(0).Results
+                Dim item As New MapItem() With { _
+                    .Title = result.Name, _
+                    .Location = result.LocationData.Locations(0) _
+                }
+                Me.itemCollection.Add(item)
+            Next
+        Else
+            If region IsNot Nothing Then
+                Me.radMap.SetView(region.GeocodeLocation.BestView)
+                If region.GeocodeLocation.Address IsNot Nothing AndAlso region.GeocodeLocation.Locations.Count > 0 Then
+                    For Each location As Location In region.GeocodeLocation.Locations
+                        Dim item As New MapItem()
+
+                        item.Location = location
+                        Me.itemCollection.Add(item)
+                    Next
+
+                    ' Set the bounding area'
+                    If args.Response.ResultSets(0).SearchRegion.BoundingArea IsNot Nothing Then
+                        Dim boundingArea As MapShapeData = args.Response.ResultSets(0).SearchRegion.BoundingAreaData
+                        boundingArea.ShapeFill = New MapShapeFill() With { _
+                            .Stroke = New SolidColorBrush(Colors.Red), _
+                            .StrokeThickness = 1 _
+                        }
+                        Me.regionLayer.Items.Add(boundingArea)
+                    End If
+                End If
+            End If
+        End If
+    End Sub
 	{{endregion}}
 
 
 
-Here is a snapshot of the result.![Rad Map Features Search 02](images/RadMap_Features_Search_02.png)
+Here is a snapshot of the result.
 
-If the __SearchResultCollection__ is empty and the
-          __SearchRegion__ is different than null, you might
-          want to display it as a result. In this case, you have to use its
-          __GeocodeLocation.Locations__ collection.
-          Here is an example.
+![Rad Map Features Search 02](images/RadMap_Features_Search_02.png)
+
+If the __SearchResultCollection__ is empty and the __SearchRegion__ is different than null, you might want to display it as a result. In this case, you have to use its __GeocodeLocation.Locations__ collection.
+
+Here is an example.
         
 
 #### __C#__
@@ -474,34 +423,31 @@ If the __SearchResultCollection__ is empty and the
 
 {{region radmap-features-search_9}}
 	Private Sub searchProvider_SearchCompleted(sender As Object, e As SearchCompletedEventArgs)
-	        Me.itemCollection.Clear()
-	        Dim results As SearchResultCollection = args.Response.ResultSets.First().Results
-	        Dim region As SearchRegion = args.Response.ResultSets.First().SearchRegion
-	        'code that runs when there are available results.
-	        If results.Count > 0 Then
-	        Else
-	            If region IsNot Nothing Then
-	                Me.radMap.SetView(region.GeocodeLocation.BestView)
-	                If region.GeocodeLocation.Address IsNot Nothing AndAlso region.GeocodeLocation.Locations.Count > 0 Then
-	                    For Each location As Location In region.GeocodeLocation.Locations
-	                        Dim item As New MapItem()
-	                        item.Location = location
-	                        Me.itemCollection.Add(item)
-	                    Next
-	                End If
-	            End If
-	        End If
-	    End Sub
+        Me.itemCollection.Clear()
+        Dim results As SearchResultCollection = args.Response.ResultSets.First().Results
+        Dim region As SearchRegion = args.Response.ResultSets.First().SearchRegion
+        'code that runs when there are available results.'
+        If results.Count > 0 Then
+        Else
+            If region IsNot Nothing Then
+                Me.radMap.SetView(region.GeocodeLocation.BestView)
+                If region.GeocodeLocation.Address IsNot Nothing AndAlso region.GeocodeLocation.Locations.Count > 0 Then
+                    For Each location As Location In region.GeocodeLocation.Locations
+                        Dim item As New MapItem()
+                        item.Location = location
+                        Me.itemCollection.Add(item)
+                    Next
+                End If
+            End If
+        End If
+    End Sub
 	{{endregion}}
 
 ![Rad Map Features Search 03](images/RadMap_Features_Search_03.png)
 
 ## Alternate Search Regions
 
-The search response might also contain a set of additional __SearchRegion__
-          objects that might be potential results. You can easily iterate them and add them either
-          to a separate __VisualizationLayer__ or to a __ListBox__,
-          which will list them as "Did you mean ..." options, for example.
+The search response might also contain a set of additional __SearchRegion__ objects that might be potential results. You can easily iterate them and add them either to a separate __VisualizationLayer__ or to a __ListBox__, which will list them as "Did you mean ..." options, for example.
         
 
 #### __C#__
@@ -528,7 +474,7 @@ The search response might also contain a set of additional __SearchRegion__
 	Private Sub searchProvider_SearchCompleted(sender As Object, e As SearchCompletedEventArgs)
 	 Dim alternateRegions As SearchRegionCollection = e.Response.ResultSets.First().AlternateSearchRegions
 	 If alternateRegions.Count > 0 Then
-	    ' implement AlternateSearchRegions logic here.
+	    ' implement AlternateSearchRegions logic here.'
 	  For Each region As SearchRegion In alternateRegions
 	  Next
 	 End If

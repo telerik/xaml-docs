@@ -46,6 +46,4 @@ The categorical axis displays a range of categories and the values that determin
 
 
 
-
-
 ![](images/radchartview-chart_axes_categoricalaxis.png)

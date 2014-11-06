@@ -18,14 +18,13 @@ In this topic we will demonstrate how to create charts, where each individual it
 The following chart series will be used for this article:
       
 
-* [Bar Series](#Bar_Series)
+* [Bar Series](#bar-series)
 
-* [Scatter Point Series](#ScatterPoint_Series)
+* [Scatter Point Series](#scatter-point-series)
 
-* [Pie Series](#Pie_Series)
+* [Pie Series](#pie-series)
 
-## 
-        Bar Series
+## Bar Series
       
 
 Here is our sample Bar Chart XAML declaration:
@@ -139,10 +138,7 @@ And here is our example data object:
 
 
 
-In order to create a binding between the bar series items and a property of the ItemSource items we have to create a PointTemplate.
-          In this point template we need to create a binding between the Fill of the Bar and the fore mentioned property, which in our
-          case is named Color. This is done like this:
-        
+In order to create a binding between the bar series items and a property of the ItemSource items we have to create a PointTemplate. In this point template we need to create a bindingbetween the Fill of the Bar and the fore mentioned property, which in our case is named Color. This is done like this:
 
 #### __XAML__
 
@@ -221,8 +217,7 @@ Let's create some data so we can test the result:
 And here is the final result:
         ![Result](images/RadChartView-binding_colors_0.png)
 
-## 
-        Scatter Point Series
+## Scatter Point Series
       
 
 The only difference between color binding the series items of Bar series and Scatter Point series is the PointTemplate.
@@ -248,8 +243,7 @@ In the case Scatter Point series we will use an ellipse:
 The result:
         ![Result](images/RadChartView-binding_colors_1.png)
 
-## 
-        Pie Series
+## Pie Series
       
 
 The approach with Pie Series is slighly different because you have to create a Style that targets the Path

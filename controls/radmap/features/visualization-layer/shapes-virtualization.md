@@ -76,12 +76,12 @@ The following example demonstrates how to use the __UI Virtualization__ feature 
 
 When you will try to load this file using the shape-file reader directly like the code below then the performance of zooming and panning will be very low.
 
-	
-          <telerik:VisualizationLayer x:Name="visualizationLayer" UseBitmapCache="False">
-            <telerik:VisualizationLayer.Reader>
-              <telerik:AsyncShapeFileReader Source="/ShapeVirtualization;component/Resources/County.shp" />
-            </telerik:VisualizationLayer.Reader>
-          </telerik:VisualizationLayer>
+#### __XAML__
+      <telerik:VisualizationLayer x:Name="visualizationLayer" UseBitmapCache="False">
+        <telerik:VisualizationLayer.Reader>
+          <telerik:AsyncShapeFileReader Source="/ShapeVirtualization;component/Resources/County.shp" />
+        </telerik:VisualizationLayer.Reader>
+      </telerik:VisualizationLayer>
 
 
 
@@ -90,52 +90,52 @@ Such performance is a reason to use the __Map Shapes Virtualization__ to improve
 
 If it is acceptable for your application just to restrict the zoom level, then it is possible to use built-in __MapShapeDataVirtualizationSource__. First you need to configure the __ZoomLevelGridList__ property. It can be configured to show counties from the zoom level 8 when the rendering is quite fast. It could be done with the following XAML code:
         
-
+#### __XAML__
 {{region radmap-visualization-layer-shapes-virtualization_0}}
-	        <UserControl x:Class="ShapeVirtualization.MainPage"
-	                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	                     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	                     d:DesignHeight="300"
-	                     d:DesignWidth="400"
-	                     mc:Ignorable="d">
-	            <Grid x:Name="LayoutRoot" Background="White">
-	                <telerik:RadBusyIndicator x:Name="busyIndicator">
-	                    <telerik:RadMap x:Name="radMap"
-	                                    Center="40,-100"
-	                                    MinZoomLevel="8"
-	                                    ZoomLevel="8">
-	                        <telerik:RadMap.Provider>
-	                            <telerik:OpenStreetMapProvider />
-	                        </telerik:RadMap.Provider>
-	                        <telerik:VisualizationLayer x:Name="visualizationLayer">
-	                            <telerik:VisualizationLayer.ZoomLevelGridList>
-	                                <telerik:ZoomLevelGrid MinZoom="8" />
-	                                <telerik:ZoomLevelGrid MinZoom="9" />
-	                                <telerik:ZoomLevelGrid MinZoom="10" />
-	                            </telerik:VisualizationLayer.ZoomLevelGridList>
-	                            <telerik:VisualizationLayer.VirtualizationSource>
-	                                <telerik:MapShapeDataVirtualizationSource x:Name="mapShapeDataVirtualizationSource">
-	                                    <telerik:MapShapeDataVirtualizationSource.Reader>
-	                                        <telerik:AsyncShapeFileReader Source="/ShapeVirtualization;component/Resources/County.shp" ToolTipFormat="{}{COUNTY} ({STATE})" />
-	                                    </telerik:MapShapeDataVirtualizationSource.Reader>
-	                                </telerik:MapShapeDataVirtualizationSource>
-	                            </telerik:VisualizationLayer.VirtualizationSource>
-	                        </telerik:VisualizationLayer>
-	                    </telerik:RadMap>
-	                </telerik:RadBusyIndicator>
-	            </Grid>
-	        </UserControl>
-	
+    <UserControl x:Class="ShapeVirtualization.MainPage"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                 d:DesignHeight="300"
+                 d:DesignWidth="400"
+                 mc:Ignorable="d">
+        <Grid x:Name="LayoutRoot" Background="White">
+            <telerik:RadBusyIndicator x:Name="busyIndicator">
+                <telerik:RadMap x:Name="radMap"
+                                Center="40,-100"
+                                MinZoomLevel="8"
+                                ZoomLevel="8">
+                    <telerik:RadMap.Provider>
+                        <telerik:OpenStreetMapProvider />
+                    </telerik:RadMap.Provider>
+                    <telerik:VisualizationLayer x:Name="visualizationLayer">
+                        <telerik:VisualizationLayer.ZoomLevelGridList>
+                            <telerik:ZoomLevelGrid MinZoom="8" />
+                            <telerik:ZoomLevelGrid MinZoom="9" />
+                            <telerik:ZoomLevelGrid MinZoom="10" />
+                        </telerik:VisualizationLayer.ZoomLevelGridList>
+                        <telerik:VisualizationLayer.VirtualizationSource>
+                            <telerik:MapShapeDataVirtualizationSource x:Name="mapShapeDataVirtualizationSource">
+                                <telerik:MapShapeDataVirtualizationSource.Reader>
+                                    <telerik:AsyncShapeFileReader Source="/ShapeVirtualization;component/Resources/County.shp" ToolTipFormat="{}{COUNTY} ({STATE})" />
+                                </telerik:MapShapeDataVirtualizationSource.Reader>
+                            </telerik:MapShapeDataVirtualizationSource>
+                        </telerik:VisualizationLayer.VirtualizationSource>
+                    </telerik:VisualizationLayer>
+                </telerik:RadMap>
+            </telerik:RadBusyIndicator>
+        </Grid>
+    </UserControl>
+
 	{{endregion}}
 
 
 
 To start loading the shape-file you should invoke the __MapShapeDataVirtualizationSource.ReadAsync__ method:
         
-
+#### __C#__
 {{region radmap-visualization-layer-shapes-virtualization_1}}
 	using System.Windows;
 	using System.Windows.Controls;
@@ -161,7 +161,7 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 	{{endregion}}
 
 
-
+#### __VB__
 {{region radmap-visualization-layer-shapes-virtualization_2}}
 	Imports System.Windows
 	Imports System.Windows.Controls
@@ -188,7 +188,7 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 
 If your application cannot limit zoom level and it requires that some data still be visible on the low zoom levels (1 – 7) then you can use approach which show different sets of shapes for different zoom levels. For example, you can show the map of USA states for lower zoom levels (1-7). In this case you should design your own custom virtualization source class which will show data depend on the zoom level. The sample code below uses the “usa_states” shape-file which is also used in the [United States](http://demos.telerik.com/silverlight/#Map/Shapefile/UnitedStates) demo.
         
-
+#### __C#__
 {{region radmap-visualization-layer-shapes-virtualization_3}}
 	using System;
 	using System.Collections.Generic;
@@ -328,7 +328,7 @@ If your application cannot limit zoom level and it requires that some data still
 	{{endregion}}
 
 
-
+#### __VB__
 {{region radmap-visualization-layer-shapes-virtualization_4}}
 	Imports System.Collections.Generic
 	Imports System.Linq
@@ -345,10 +345,7 @@ If your application cannot limit zoom level and it requires that some data still
 	            Public Sub New()
 	                Me.StartRead()
 	            End Sub
-	
-	            ''' <summary>
-	            ''' Gets or sets the layer this virtualization source belongs to.
-	            ''' </summary>
+                
 	            Private Property Layer() As VisualizationLayer
 	                Get
 	                    If Me.m_layer IsNot Nothing AndAlso Me.m_layer.IsAlive Then
@@ -378,10 +375,10 @@ If your application cannot limit zoom level and it requires that some data still
 	                    Dim query As IEnumerable(Of ExtendedDataProvider)
 	
 	                    If e.MinZoom < 8 Then
-	                        ' Sate zoom level 
+	                        ' Sate zoom level '
 						query = From item In Me.sateData Where Me.ShouldBeAdded(e.Region, item)item
 	                    Else
-	                        ' County zoom level
+	                        ' County zoom level'
 						query = From item In Me.countyData Where Me.ShouldBeAdded(e.Region, item)item
 	                    End If
 	
@@ -442,48 +439,48 @@ If your application cannot limit zoom level and it requires that some data still
 The sample code of the custom virtualization source class is below.
 
 This class can be used in the XAML code like the following way:
-
+#### __XAML__
 {{region radmap-visualization-layer-shapes-virtualization_5}}
-	        <UserControl x:Class="ShapeVirtualization.MainPage"
-	                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	                     xmlns:local="clr-namespace:ShapeVirtualization"
-	                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	                     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	                     d:DesignHeight="300"
-	                     d:DesignWidth="400"
-	                     mc:Ignorable="d">
-	            <Grid x:Name="LayoutRoot" Background="White">
-	                <Grid.Resources>
-	                    <local:ShapeDataVirtualizer x:Key="VirtualizationSource" />
-	                </Grid.Resources>
-	                <telerik:RadBusyIndicator x:Name="busyIndicator">
-	                    <telerik:RadMap x:Name="radMap"
-	                                    Center="40,-100"
-	                                    ZoomLevel="5">
-	                        <telerik:RadMap.Provider>
-	                            <telerik:OpenStreetMapProvider />
-	                        </telerik:RadMap.Provider>
-	                        <telerik:VisualizationLayer x:Name="visualizationLayer" VirtualizationSource="{StaticResource VirtualizationSource}">
-	                            <telerik:VisualizationLayer.ZoomLevelGridList>
-	                                <telerik:ZoomLevelGrid MinZoom="1" />
-	                                <telerik:ZoomLevelGrid MinZoom="2" />
-	                                <telerik:ZoomLevelGrid MinZoom="3" />
-	                                <telerik:ZoomLevelGrid MinZoom="4" />
-	                                <telerik:ZoomLevelGrid MinZoom="5" />
-	                                <telerik:ZoomLevelGrid MinZoom="6" />
-	                                <telerik:ZoomLevelGrid MinZoom="7" />
-	
-	                                <telerik:ZoomLevelGrid MinZoom="8" />
-	                                <telerik:ZoomLevelGrid MinZoom="9" />
-	                                <telerik:ZoomLevelGrid MinZoom="10" />
-	                            </telerik:VisualizationLayer.ZoomLevelGridList>
-	                        </telerik:VisualizationLayer>
-	                    </telerik:RadMap>
-	                </telerik:RadBusyIndicator>
-	            </Grid>
-	        </UserControl>
+    <UserControl x:Class="ShapeVirtualization.MainPage"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:local="clr-namespace:ShapeVirtualization"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                 d:DesignHeight="300"
+                 d:DesignWidth="400"
+                 mc:Ignorable="d">
+        <Grid x:Name="LayoutRoot" Background="White">
+            <Grid.Resources>
+                <local:ShapeDataVirtualizer x:Key="VirtualizationSource" />
+            </Grid.Resources>
+            <telerik:RadBusyIndicator x:Name="busyIndicator">
+                <telerik:RadMap x:Name="radMap"
+                                Center="40,-100"
+                                ZoomLevel="5">
+                    <telerik:RadMap.Provider>
+                        <telerik:OpenStreetMapProvider />
+                    </telerik:RadMap.Provider>
+                    <telerik:VisualizationLayer x:Name="visualizationLayer" VirtualizationSource="{StaticResource VirtualizationSource}">
+                        <telerik:VisualizationLayer.ZoomLevelGridList>
+                            <telerik:ZoomLevelGrid MinZoom="1" />
+                            <telerik:ZoomLevelGrid MinZoom="2" />
+                            <telerik:ZoomLevelGrid MinZoom="3" />
+                            <telerik:ZoomLevelGrid MinZoom="4" />
+                            <telerik:ZoomLevelGrid MinZoom="5" />
+                            <telerik:ZoomLevelGrid MinZoom="6" />
+                            <telerik:ZoomLevelGrid MinZoom="7" />
+
+                            <telerik:ZoomLevelGrid MinZoom="8" />
+                            <telerik:ZoomLevelGrid MinZoom="9" />
+                            <telerik:ZoomLevelGrid MinZoom="10" />
+                        </telerik:VisualizationLayer.ZoomLevelGridList>
+                    </telerik:VisualizationLayer>
+                </telerik:RadMap>
+            </telerik:RadBusyIndicator>
+        </Grid>
+    </UserControl>
 	
 	{{endregion}}
 
@@ -491,9 +488,11 @@ This class can be used in the XAML code like the following way:
 
 In the snapshots below you can see how the above example will be displayed with different ZoomLevel settings.
 
-The result at ZoomLevel 7:![radmap-visualization-layer-shapes-virtualization 1](images/radmap-visualization-layer-shapes-virtualization_1.png)
+The result at ZoomLevel 7:
+![radmap-visualization-layer-shapes-virtualization 1](images/radmap-visualization-layer-shapes-virtualization_1.png)
 
-The result at ZoomLevel 8:![radmap-visualization-layer-shapes-virtualization 2](images/radmap-visualization-layer-shapes-virtualization_2.png)
+The result at ZoomLevel 8:
+![radmap-visualization-layer-shapes-virtualization 2](images/radmap-visualization-layer-shapes-virtualization_2.png)
 
 # See Also
 

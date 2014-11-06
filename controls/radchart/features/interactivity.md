@@ -21,7 +21,7 @@ The main __ChartArea__ events that you can use to implement some kind of interac
 
 * __ItemToolTipClosing__ and __ItemToolTipOpening__ - use to customize the __ToolTip__ behavior. For more, see [ToolTips]({%slug radchart-features-tooltips%}).
 
-The example below shows a text box with some details when a candle is clicked. __ItemClick__event is also used to implement [drill-down charts]({%slug radchart-how-to-drill-down-chart%}).
+The example below shows a text box with some details when a candle is clicked. __ItemClick__ event is also used to implement [drill-down charts]({%slug radchart-how-to-drill-down-chart%}).
 
 #### __XAML__
 
@@ -66,11 +66,7 @@ The example below shows a text box with some details when a candle is clicked. _
 
 On the snapshot below you can see the __MessageBox__ shown when the user has clicked on a candle. The formatted text message takes detailed information from the underlying business object, which is accessible through the __ChartItemClickEventArgs.DataPoint.DataItem__.
 
-
-
-
-         
-      ![](images/RadChart_Features_Interactivity_01.png)
+![](images/RadChart_Features_Interactivity_01.png)
 
 ## Programmatically select items in ChartArea
 

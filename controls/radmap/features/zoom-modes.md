@@ -26,29 +26,29 @@ You are able to modify the preset Labels like this:
 
 {{region radmap-features-zoom-modes_0}}
 	public MainPage()
-	        {
-	            InitializeComponent();
-	            this.radMap.InitializeCompleted += new EventHandler(radMap_InitializeCompleted);
-	        }
-	        private void radMap_InitializeCompleted(object sender, EventArgs e)
-	        {
-	            this.SetCustomZoomLevelLabel(18, "My Level");
-	        }
-	
-	        private void SetCustomZoomLevelLabel(int zoomLevel, string label)
-	        {
-	            CommandDescription description = (from cmd in this.radMap.MapZoomBar.Commands
-	                                              where (int)cmd.CommandParameter == zoomLevel
-	                                              select cmd).FirstOrDefault();
-	            if (description != null)
-	            {
-	                RoutedUICommand command = description.Command as RoutedUICommand;
-	                if (command != null)
-	                {
-	                    command.Text = label;
-	                }
-	            }
-	        }
+    {
+        InitializeComponent();
+        this.radMap.InitializeCompleted += new EventHandler(radMap_InitializeCompleted);
+    }
+    private void radMap_InitializeCompleted(object sender, EventArgs e)
+    {
+        this.SetCustomZoomLevelLabel(18, "My Level");
+    }
+
+    private void SetCustomZoomLevelLabel(int zoomLevel, string label)
+    {
+        CommandDescription description = (from cmd in this.radMap.MapZoomBar.Commands
+                                          where (int)cmd.CommandParameter == zoomLevel
+                                          select cmd).FirstOrDefault();
+        if (description != null)
+        {
+            RoutedUICommand command = description.Command as RoutedUICommand;
+            if (command != null)
+            {
+                command.Text = label;
+            }
+        }
+    }
 	{{endregion}}
 
 
@@ -82,11 +82,7 @@ You are able to modify the preset Labels like this:
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Features_ZoomModes_01.png)
+![](images/RadMap_Features_ZoomModes_01.png)
 
 To disable the user from zooming, set the __ZoomBarVisibility__ property of the __RadMap__ to __Collapsed__. Additionally you have to disable the default zooming performed on double click or mouse wheel. To do this, set he __MouseDoubleClickMode__ to __None__ and the __IsMouseWheelZoomEnabled__ to __False__.
 
@@ -102,11 +98,11 @@ To disable the user from zooming, set the __ZoomBarVisibility__ property of the 
 
 
 
-Note that the UI control is represented by the __MapZoomBar__control. You are able to use it outside the __RadMap__ and place it somewhere around it. In this case you have to either hide the original one by using the __ZoomBarVisibility__ property of the __RadMap__ or the __UseDefaultLayout__ one.
+Note that the UI control is represented by the __MapZoomBar__ control. You are able to use it outside the __RadMap__ and place it somewhere around it. In this case you have to either hide the original one by using the __ZoomBarVisibility__ property of the __RadMap__ or the __UseDefaultLayout__ one.
 
 >tipSetting the __UseDefaultLayout__ property to __False__ will hide all of the UI controls inside the __RadMap__. To learn more read [here]({%slug radmap-features-default-layout%}).
 
-In order to use the __MapZoomBar__outside the __RadMap__ you have to set its __MapControl__ property to the respective __RadMap__ instance. Here is an example:
+In order to use the __MapZoomBar__ outside the __RadMap__ you have to set its __MapControl__ property to the respective __RadMap__ instance. Here is an example:
 
 #### __XAML__
 
@@ -126,11 +122,7 @@ In order to use the __MapZoomBar__outside the __RadMap__ you have to set its __M
 
 The snapshot of the result:
 
-
-
-
-         
-      ![](images/RadMap_Features_ZoomModes_02.png)
+![](images/RadMap_Features_ZoomModes_02.png)
 
 # See Also
 

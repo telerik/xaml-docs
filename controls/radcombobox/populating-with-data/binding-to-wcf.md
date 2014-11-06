@@ -14,7 +14,7 @@ The purpose of this tutorial is to show you how to populate a __RadComboBox__ wi
 
 * [Using plain methods call in the code-behind](#Using_Plain_Methods_Call_in_the_Code-Behind)
 
-* [Using MVVM approach](#Using_MVVM_Approach)
+* [Using MVVM approach](#using-mvvm-approach)
 
 >This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
@@ -122,7 +122,7 @@ Run your demo, the result can be seen on the next image:
 
 ## Using MVVM Approach
 
-This section will show you how to populate your __RadComboBox__control in a MVVM manner. The __RadComboBox__ will be bound to a data source object, that has a property __Products__. When the control is loaded, all products from the __Products__ table in the Northwind database are loaded asynchronously.
+This section will show you how to populate your __RadComboBox__ control in a MVVM manner. The __RadComboBox__ will be bound to a data source object, that has a property __Products__. When the control is loaded, all products from the __Products__ table in the Northwind database are loaded asynchronously.
 
 * Create a new class named __NorthwindDataSource__.
 
@@ -143,9 +143,9 @@ This section will show you how to populate your __RadComboBox__control in a MVVM
 
 * Add a reference to your WCF Service
 
-* In the __NorthwindDataSource__class add a reference to an __ObservableCollection__of __Products__.
+* In the __NorthwindDataSource__ class add a reference to an __ObservableCollection__ of __Products__.
 
-* In the __NorthwindDataSource__class add a reference to your WCF Service client:
+* In the __NorthwindDataSource__ class add a reference to your WCF Service client:
 
 #### __C#__
 

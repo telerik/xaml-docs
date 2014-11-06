@@ -57,11 +57,11 @@ Once you generate the style for RadComboBox, you will find the ButtonChrome in t
 #### __XAML__
 
 {{region radcombobox-styles-templates-modifying-brushes_0}}
-<telerik:RadToggleButton x:Name="PART_DropDownButton" ClickMode="Press" Foreground="{TemplateBinding Foreground}" IsTabStop="False" Margin="0" Padding="0" telerik:StyleManager.Theme="{StaticResource Theme}">
-	...
-		<Telerik_Windows_Controls_Chromes:ButtonChrome x:Name="ButtonChrome" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Grid.ColumnSpan="2" CornerRadius="{StaticResource SplitButton_SpanCornerRadius}" RenderPressed="{TemplateBinding IsDropDownOpen}" RenderFocused="{TemplateBinding IsFocused}" telerik:StyleManager.Theme="{StaticResource Theme}" Style="{StaticResource ButtonChromeStyle1}"/>
-	...
-</telerik:RadToggleButton>
+	<telerik:RadToggleButton x:Name="PART_DropDownButton" ClickMode="Press" Foreground="{TemplateBinding Foreground}" IsTabStop="False" Margin="0" Padding="0" telerik:StyleManager.Theme="{StaticResource Theme}">
+		...
+			<Telerik_Windows_Controls_Chromes:ButtonChrome x:Name="ButtonChrome" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Grid.ColumnSpan="2" CornerRadius="{StaticResource SplitButton_SpanCornerRadius}" RenderPressed="{TemplateBinding IsDropDownOpen}" RenderFocused="{TemplateBinding IsFocused}" telerik:StyleManager.Theme="{StaticResource Theme}" Style="{StaticResource ButtonChromeStyle1}"/>
+		...
+	</telerik:RadToggleButton>
 {{endregion}}
 
 Replace the ButtonChrome with any visual elements needed to build your UI and to implement all needed visual states.
@@ -72,17 +72,16 @@ Replace the ButtonChrome with any visual elements needed to build your UI and to
 #### __XAML__
 
 {{region radcombobox-styles-templates-modifying-brushes_1}}
-<telerik:RadToggleButton x:Name="PART_DropDownButton" ClickMode="Press" Foreground="{TemplateBinding Foreground}" IsTabStop="False" Margin="0" Padding="0" telerik:StyleManager.Theme="{StaticResource Theme}">
-	...
-
-	<Border x:Name="NormalBackground" Background="{StaticResource MyNormal_BackgroundBrush}" Grid.ColumnSpan="2" 
-				 BorderBrush="{StaticResource MyNormal_BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" />
-	<Border x:Name="MouseOverBackground" Background="{StaticResource MyMouseOver_BackgroundBrush}" Grid.ColumnSpan="2" Visibility="Collapsed"
-				 BorderBrush="{StaticResource MyMouseOver_BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" />
-	<Border x:Name="DropDownBackground" Background="{StaticResource MyDropDown_BackgroundBrush}" Grid.ColumnSpan="2" Visibility="Collapsed"
-				  BorderBrush="{StaticResource MyDropDown_BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" />
-	...
-</telerik:RadToggleButton>	
+	<telerik:RadToggleButton x:Name="PART_DropDownButton" ClickMode="Press" Foreground="{TemplateBinding Foreground}" IsTabStop="False" Margin="0" Padding="0" telerik:StyleManager.Theme="{StaticResource Theme}">
+		...
+		<Border x:Name="NormalBackground" Background="{StaticResource MyNormal_BackgroundBrush}" Grid.ColumnSpan="2" 
+					 BorderBrush="{StaticResource MyNormal_BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" />
+		<Border x:Name="MouseOverBackground" Background="{StaticResource MyMouseOver_BackgroundBrush}" Grid.ColumnSpan="2" Visibility="Collapsed"
+					 BorderBrush="{StaticResource MyMouseOver_BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" />
+		<Border x:Name="DropDownBackground" Background="{StaticResource MyDropDown_BackgroundBrush}" Grid.ColumnSpan="2" Visibility="Collapsed"
+					  BorderBrush="{StaticResource MyDropDown_BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" />
+					  ...
+	</telerik:RadToggleButton>
 {{endregion}}
 {% endif %}
 
@@ -90,60 +89,60 @@ Replace the ButtonChrome with any visual elements needed to build your UI and to
 #### __XAML__
 
 {{region radcombobox-styles-templates-modifying-brushes_2}}
-<VisualStateManager.VisualStateGroups>
-	<VisualStateGroup x:Name="CommonStates">
+	<VisualStateManager.VisualStateGroups>
+		<VisualStateGroup x:Name="CommonStates">
+			...
+			<VisualState x:Name="MouseOver">
+				<Storyboard>
+					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="NormalBackground">
+						<DiscreteObjectKeyFrame KeyTime="0:0:0">
+							<DiscreteObjectKeyFrame.Value>
+								<Visibility>Collapsed</Visibility>
+							</DiscreteObjectKeyFrame.Value>
+						</DiscreteObjectKeyFrame>
+					</ObjectAnimationUsingKeyFrames>
+					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="MouseOverBackground">
+						<DiscreteObjectKeyFrame KeyTime="0:0:0">
+							<DiscreteObjectKeyFrame.Value>
+								<Visibility>Visible</Visibility>
+							</DiscreteObjectKeyFrame.Value>
+						</DiscreteObjectKeyFrame>
+					</ObjectAnimationUsingKeyFrames>
+					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="DropDownIcon">
+						<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonIconForeground_MouseOver}"/>
+					</ObjectAnimationUsingKeyFrames>
+					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="DropDownIcon">
+						<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonIconBackground_MouseOver}"/>
+					</ObjectAnimationUsingKeyFrames>
+				</Storyboard>
+			</VisualState>
+			<VisualState x:Name="DropDownOpen">
+				<Storyboard>
+					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="NormalBackground">
+						<DiscreteObjectKeyFrame KeyTime="0:0:0">
+							<DiscreteObjectKeyFrame.Value>
+								<Visibility>Collapsed</Visibility>
+							</DiscreteObjectKeyFrame.Value>
+						</DiscreteObjectKeyFrame>
+					</ObjectAnimationUsingKeyFrames>
+					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="DropDownBackground">
+						<DiscreteObjectKeyFrame KeyTime="0:0:0">
+							<DiscreteObjectKeyFrame.Value>
+								<Visibility>Visible</Visibility>
+							</DiscreteObjectKeyFrame.Value>
+						</DiscreteObjectKeyFrame>
+					</ObjectAnimationUsingKeyFrames>
+					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="DropDownIcon">
+						<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonIconForeground_Pressed}"/>
+					</ObjectAnimationUsingKeyFrames>
+					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="DropDownIcon">
+						<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonIconBackground_Pressed}"/>
+					</ObjectAnimationUsingKeyFrames>
+				</Storyboard>
+			</VisualState>
+		</VisualStateGroup>
 		...
-		<VisualState x:Name="MouseOver">
-			<Storyboard>
-				<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="NormalBackground">
-					<DiscreteObjectKeyFrame KeyTime="0:0:0">
-						<DiscreteObjectKeyFrame.Value>
-							<Visibility>Collapsed</Visibility>
-						</DiscreteObjectKeyFrame.Value>
-					</DiscreteObjectKeyFrame>
-				</ObjectAnimationUsingKeyFrames>
-				<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="MouseOverBackground">
-					<DiscreteObjectKeyFrame KeyTime="0:0:0">
-						<DiscreteObjectKeyFrame.Value>
-							<Visibility>Visible</Visibility>
-						</DiscreteObjectKeyFrame.Value>
-					</DiscreteObjectKeyFrame>
-				</ObjectAnimationUsingKeyFrames>
-				<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="DropDownIcon">
-					<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonIconForeground_MouseOver}"/>
-				</ObjectAnimationUsingKeyFrames>
-				<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="DropDownIcon">
-					<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonIconBackground_MouseOver}"/>
-				</ObjectAnimationUsingKeyFrames>
-			</Storyboard>
-		</VisualState>
-		<VisualState x:Name="DropDownOpen">
-			<Storyboard>
-				<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="NormalBackground">
-					<DiscreteObjectKeyFrame KeyTime="0:0:0">
-						<DiscreteObjectKeyFrame.Value>
-							<Visibility>Collapsed</Visibility>
-						</DiscreteObjectKeyFrame.Value>
-					</DiscreteObjectKeyFrame>
-				</ObjectAnimationUsingKeyFrames>
-				<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="DropDownBackground">
-					<DiscreteObjectKeyFrame KeyTime="0:0:0">
-						<DiscreteObjectKeyFrame.Value>
-							<Visibility>Visible</Visibility>
-						</DiscreteObjectKeyFrame.Value>
-					</DiscreteObjectKeyFrame>
-				</ObjectAnimationUsingKeyFrames>
-				<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="DropDownIcon">
-					<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonIconForeground_Pressed}"/>
-				</ObjectAnimationUsingKeyFrames>
-				<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="DropDownIcon">
-					<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonIconBackground_Pressed}"/>
-				</ObjectAnimationUsingKeyFrames>
-			</Storyboard>
-		</VisualState>
-	</VisualStateGroup>
-	...
-</VisualStateManager.VisualStateGroups>
+	</VisualStateManager.VisualStateGroups>
 {{endregion}}
 {% endif %}
 

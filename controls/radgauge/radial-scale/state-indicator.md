@@ -48,12 +48,7 @@ The State Indicator is a shape with arbitrary size located anywhere in the scale
 	{{endregion}}
 
 
-
-
-
-
-         
-      ![](images/RadialScaleStateIndicator.png)
+![](images/RadialScaleStateIndicator.png)
 
 The State indicator supports the following features:
 

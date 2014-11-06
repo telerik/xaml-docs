@@ -12,22 +12,19 @@ position: 9
 
 
 
-The __RadGauge__ control allows you to bind it to a set of values, which to be displayed consecutive one after another.
-        This feature is implemented via the indicator of the scale and its __ValueSource__ property.
-        It is of type __IEnumerable__ and accepts the set of values you want to display.
+The __RadGauge__ control allows you to bind it to a set of values, which to be displayed consecutive one after another. This feature is implemented via the indicator of the scale and its __ValueSource__ property. It is of type __IEnumerable__ and accepts the set of values you want to display.
       
 
-Additionally the indicators expose an API which allows you to control the display of the values in the __ValueSource__ collection.
-        Via this API you can do the following:
+Additionally the indicators expose an API which allows you to control the display of the values in the __ValueSource__ collection. Via this API you can do the following:
       
 
-* [Start Playback](#Start_Playback)
+* [Start Playback](#start-playback)
 
-* [Stop Playback](#Stop_Playback)
+* [Stop Playback](#stop-playback)
 
-* [Move Next](#Move_Next)
+* [Move Next](#move-next)
 
-* [Move Previous](#Move_Previous)
+* [Move Previous](#move-previous)
 
 Here is the __RadGauge__ instance and the sample value collection, which will be used throughout the examples in this topic:
       
@@ -57,23 +54,7 @@ Here is the __RadGauge__ instance and the sample value collection, which will be
 	    InitializeComponent();
 	    ObservableCollection<double> values = new ObservableCollection<double>()
 	    { 
-	        10,
-	        15,
-	        25,
-	        17,
-	        40,
-	        50,
-	        60,
-	        70,
-	        25,
-	        15,
-	        5,
-	        10,
-	        12,
-	        18,
-	        29,
-	        37,
-	        92,
+	        10,15,25,17,40,50,60,70,25,15,5,10,12,18,29,37,92
 	    };
 	    this.radialBar.ValueSource = values;
 	}
@@ -157,8 +138,7 @@ To stop the automatic playback of the values you have simply to call the __StopP
 
 ## Move Next
 
-The indicator's API also allows you to manually navigate through the values collection. On of the methods exposed is the __MoveNext()__ one.
-          It changes the displayed value to the next value in the collection, if present. Here is an example.
+The indicator's API also allows you to manually navigate through the values collection. On of the methods exposed is the __MoveNext()__ one. It changes the displayed value to the next value in the collection, if present. Here is an example.
         
 
 #### __C#__
@@ -184,8 +164,7 @@ The indicator's API also allows you to manually navigate through the values coll
 
 ## Move Previous
 
-The __MovePrevious()__method is the other one used for manual naviagtion through the values collection.
-          It displays the value previous to the current one. Here is an example.
+The __MovePrevious()__ method is the other one used for manual naviagtion through the values collection. It displays the value previous to the current one. Here is an example.
         
 
 #### __C#__
@@ -211,8 +190,7 @@ The __MovePrevious()__method is the other one used for manual naviagtion through
 
 ## Specifying the duration for each value
 
-If you want every one of the values to be displayed a specific period of time you can use a colleciton PlaybackData objects as the ValueSource for the indicator.
-          Every PlaybackData can specify own interval between values using __Duration__ property.
+If you want every one of the values to be displayed a specific period of time you can use a colleciton PlaybackData objects as the ValueSource for the indicator. Every PlaybackData can specify own interval between values using __Duration__ property.
         
 
 Here is an example (a slight modification of the previous one):

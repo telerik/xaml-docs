@@ -39,7 +39,7 @@ The __RadDiagramThumbnail__ control provides a preview of the overall layout of 
 You can define the __RadDiagramThumbnail__ in xaml or in your code-behind. In both cases, in order to synchronize it with your diagram, you need to set its __Diagram__ property accordingly.
 	  
 
-	
+	#### __XAML__
     <Grid x:Name="LyoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -62,26 +62,24 @@ You can define the __RadDiagramThumbnail__ in xaml or in your code-behind. In bo
 		  
 
 
-
+#### __C#__
 	
-RadDiagramThumbnail xDiagramThumbnail= new RadDiagramThumbnail() { Diagram = this.xDiagram };
-...
-this.LayoutRoot.Children.Add(xDiagramThumbnail);		  
+    RadDiagramThumbnail xDiagramThumbnail= new RadDiagramThumbnail() { Diagram = this.xDiagram };
+    ...
+    this.LayoutRoot.Children.Add(xDiagramThumbnail);		  
 		  
 
 
 
-	
-Dim xDiagramThumbnail As New RadDiagramThumbnail() With { .Diagram = Me.xDiagram }
-...
-Me.LayoutRoot.Children.Add(xDiagramThumbnail)		  
+	#### __VB.NET__
+    Dim xDiagramThumbnail As New RadDiagramThumbnail() With { .Diagram = Me.xDiagram }
+    ...
+    Me.LayoutRoot.Children.Add(xDiagramThumbnail)		  
 		  
 
 ![Rad Diagram Extensions Thumbnail](images/RadDiagram_Extensions_Thumbnail.png)
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-			{% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-			article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
 		  
 
 If you need to update the __RadDiagramThumbnail__ viewport, you can take advantage of the __RefreshThumbnail()__ method.
@@ -92,7 +90,7 @@ If you need to update the __RadDiagramThumbnail__ viewport, you can take advanta
 The __RadDiagramThumbnail__ indicates the current viewport of the __RadDiagram__ through a __Red Rectangle__ element. You can change the style of this rectangle by applying a custom style on it. The __RadDiagramThumbnail__ control exposes a __ViewportStyle__ property which you can use to change the __Stroke__ and the __StrokeThickness__ of the Viewport rectangle.
 		
 
-	
+	#### __XAML__
         <telerik:RadDiagramThumbnail x:Name="xThumbnail"
                                      Grid.Row="1"
                                      Diagram="{Binding ElementName=xDiagram}">
@@ -119,9 +117,10 @@ The __RadDiagramThumbnail__ can be styled by creating an appropriate Style and s
 * To copy the default style of the control and modify it.
 
 In order to implement the second one, you have to load your project in Expression Blend and open the view that holds the __RadDiagramThumbnail__. In the 'Objects and Timeline' pane select the thumbnail you want to style.
-		![Rad Diagram Extensions Thumbnail Blend](images/RadDiagram_Extensions_Thumbnail_Blend.png)
+![Rad Diagram Extensions Thumbnail Blend](images/RadDiagram_Extensions_Thumbnail_Blend.png)
 
-From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed. ![Rad Diagram Extensions Thumbnail Style](images/RadDiagram_Extensions_Thumbnail_Style.png)
+From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed. 
+![Rad Diagram Extensions Thumbnail Style](images/RadDiagram_Extensions_Thumbnail_Style.png)
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 		  
@@ -130,7 +129,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 		
 
 You can modify these properties to achieve the desired appearance. However most of the visual parts of the __RadDiagramThumbnail__  have to be styled in its template. To modify it select the style in the *'Objects and Timeline'* pane, right-click on it and choose *Edit Template -> Edit Current*. In the same pane the element parts for the __RadDiagramThumbnail's__ template will get loaded.
-	  ![Rad Diagram Extensions Thumbnail Template](images/RadDiagram_Extensions_Thumbnail_Template.png)
+![Rad Diagram Extensions Thumbnail Template](images/RadDiagram_Extensions_Thumbnail_Template.png)
 
 # See Also
 

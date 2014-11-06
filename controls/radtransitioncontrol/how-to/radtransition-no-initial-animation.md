@@ -10,10 +10,6 @@ position: 3
 
 # No Initial Animation
 
-
-
-## 
-
 Some developers want to play different animation or no animation the first time Content is set. This may due to loading remote data or just a matter of graphic, animation or interaction design. You could easily achieve that by setting different transition on interrupted or completed. For example you could set the initial duration of a transition to be 0:0:0 like this in XAML:
 
 #### __XAML__
@@ -24,9 +20,7 @@ Some developers want to play different animation or no animation the first time 
 				 TransitionStatusChanged="RadTransitionControl_TransitionStatusChanged">
 	...
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 And then in code behind set the duration to a reasonable time span after the first content appears:
 
@@ -39,8 +33,5 @@ And then in code behind set the duration to a reasonable time span after the fir
 		{
 			this.TransitionControl.Duration = new TimeSpan(0, 0, 1);
 		}
-	}
-	
-	{{endregion}}
-
-
+	}	
+{{endregion}}

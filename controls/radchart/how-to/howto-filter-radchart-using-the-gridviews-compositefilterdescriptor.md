@@ -18,7 +18,7 @@ The __RadChart__ allows you to programmatically filter its data as demonstrated 
 
 This help topic will demonstrate how to create a GridView and draw a Chart with the filtered data from the GridView.
 
-__1.__ Create a List of Business objects that will be used to populate the Chart and the GridView.
+##### 1. Create a List of Business objects that will be used to populate the Chart and the GridView.
 
 #### __C#__
 
@@ -89,7 +89,7 @@ __1.__ Create a List of Business objects that will be used to populate the Chart
 
 
 
-__2.__ Create the GridView and the Chart in *XAML*:
+##### 2. Create the GridView and the Chart in *XAML*:
 
 #### __XAML__
 
@@ -392,29 +392,12 @@ The code-behind:
 >tipThe code snippets above were taken from a Silverlight project but are absolutely applicable for WPF scenarios.
 
 The bound non-filtered data looks like this:
-
-
-
-
-         
-      ![](images/RadChart_HowToOriginal.PNG)
+![](images/RadChart_HowToOriginal.PNG)
 
 
 
 Filter the data by Value1 column:
-
-
-
-
-         
-      ![](images/RadChart_HowTo_Filter.PNG)
+![](images/RadChart_HowTo_Filter.PNG)
 
 The filtered data:
-
-
-
-
-         
-      ![](images/RadChart_HowTo_FilteredChart.PNG)
-
-
+![](images/RadChart_HowTo_FilteredChart.PNG)

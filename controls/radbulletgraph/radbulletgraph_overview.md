@@ -14,15 +14,8 @@ position: 0
 
 ## 
 
-{% if site.site_name == 'Silverlight' %}
-
-
-				 
-			![](images/RadBulletGraph_Overview_01.png){% endif %}{% if site.site_name == 'WPF' %}
-
-
-				 
-			![](images/RadBulletGraph_Overview_01_WPF.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![](images/RadBulletGraph_Overview_01.png){% endif %}
+{% if site.site_name == 'WPF' %}![](images/RadBulletGraph_Overview_01_WPF.png){% endif %}
 
 Thank you for choosing Telerik __RadBulletGraph__!
 
@@ -43,12 +36,7 @@ __Key features:__
 
 __RadBulletGraph elements__
 
-The following screenshot demonstrates the elements available in the Bullet graph control:
-
-
-
-
-         
+The following screenshot demonstrates the elements available in the Bullet graph control: 
       ![](images/radbulletgraphelements.png)
 
 __Types of Bullet graphs__

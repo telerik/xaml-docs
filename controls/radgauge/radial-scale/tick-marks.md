@@ -143,10 +143,7 @@ The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it
 
 ## Custom Tick Marks
 
-The RadGauge control provides very flexible standard tick marks and labels, but sometimes it is necessary to show additional 
-        tick marks and labels in particular scale position. Custom tick marks allow you to do it. Custom tick marks can be placed at a 
-        specific value (shown at value 25 in the images below) by setting the Value property. Just like the major and minor tick marks, 
-        the look of the custom tick marks can be fully customized.
+The RadGauge control provides very flexible standard tick marks and labels, but sometimes it is necessary to show additional tick marks and labels in particular scale position. Custom tick marks allow you to do it. Custom tick marks can be placed at a specific value (shown at value 25 in the images below) by setting the Value property. Just like the major and minor tick marks, the look of the custom tick marks can be fully customized.
 
 The additional tick marks are defined in the CustomItems collection of the RadialScale:
 

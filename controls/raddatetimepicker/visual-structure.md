@@ -26,7 +26,7 @@ When the drop down button is selected:
 
 * __Clock__ – is the __DateTimePickerClock__ control holding the time items.
 
-* __DropDownButton__ - is the __RadDropDownButton__ which shows or hides the __RadDateTimePicker__items. This element is always visible.
+* __DropDownButton__ - is the __RadDropDownButton__ which shows or hides the __RadDateTimePicker__ items. This element is always visible.
 
 * __Preview ToolTip__ – is a __ContentControl__ which tries to guess your input, while the you are entering text in the control. Also it shows an error message when the __RadDateTimePicker__ is not able to parse the input text.
 

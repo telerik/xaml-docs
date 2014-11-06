@@ -10,21 +10,17 @@ position: 2
 
 # Styling the TimeRulerItems
 
-
-
-The __RadScheduleView__ control offers a wide range of customizable TimeRulerItems. The term TimeRulerItem in RadScheduleView encompasses the following elements: ticks and lines, date group item headers, day and expand buttons in month view.
-      
+The __RadScheduleView__ control offers a wide range of customizable TimeRulerItems. The term TimeRulerItem in RadScheduleView encompasses the following elements: ticks and lines, date group item headers, day and expand buttons in month view.      
 
 This article discusses how to use the TimeRulerItemStyleSelector to customize the appearance of TimeRulerItems. We will dig further into the customization process and create a custom TimeRulerItemStyleSelector, as well. This article covers the following topics:
 
-* [How to generate and use the TimeRulerItemStyleSelector](#generate-and-use-timeruleritemstyleselector)
+* [How to generate and use the TimeRulerItemStyleSelector](#generate-and-use-the-timeruleritemstyleselector)
 
-* [How to create a custom TimeRulerItemStyleSelector](#create-custom-timeruleritemstyleselector)
+* [How to create a custom TimeRulerItemStyleSelector](#create-a-custom-timeruleritemstyleselector)
 
 ## Generate and use the TimeRulerItemStyleSelector
 
-Any change on the appearance of a TimeRulerItem depends on the TimeRulerItemStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical. The TimeRulerItemStyleSelector contains the following styles:
-        
+Any change on the appearance of a TimeRulerItem depends on the TimeRulerItemStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical. The TimeRulerItemStyleSelector contains the following styles:        
 
 * ExpandMonthViewButtonStyle: 
 
@@ -66,53 +62,31 @@ Any change on the appearance of a TimeRulerItem depends on the TimeRulerItemStyl
 
 ![radscheduleview timeruler 10](images/radscheduleview_timeruler_10.PNG)
 
-
-
 * TimeRulerMonthViewGroupItemStyle: 
 
 ![radscheduleview timeruler 11](images/radscheduleview_timeruler_11.PNG)
 
-
-
 * TimeRulerMonthViewItemStyle: 
 
-
-
 ![radscheduleview timeruler 12](images/radscheduleview_timeruler_12.PNG)
-
-
 
 * TimeRulerMonthViewTodayItemStyle: 
 
 ![radscheduleview timeruler 13](images/radscheduleview_timeruler_13.PNG)
 
-
-
 There are two ways to obtain the source code of RadScheduleView TimeRulerItemStyleSelector: from RadControls installation folder and from the generated template for RadScheduleView in Expression Blend.
-        
 
 __Get TimeRulerItemStyleSelector source code from RadControls installation folder__
 
 Navigate to the installation folder of RadControls on your computer. Go into the Themes folder and select the theme that you have chosen to use as a customization base for RadScheduleView. Drill down to find the __ScheduleView.xaml__ file in the directory that corresponds to your theme. From this resource dictionary extract the __TimeRulerItemStyleSelector__ and the resources it uses, such as brushes and styles, into your own project. 
-        
-
-
 
 __Get TimeRulerItemStyleSelector from RadScheduleView control template__
 
 Generate the RadScheduleView template from Expression Blend by right clicking the control and selecting __Edit Template > Edit a Copy__. Search for the TimeRulerItemStyleSelector and copy the selector together with all needed resources, into your own project.
-        
-
-
 
 ![](images/timeruler_13.PNG)
 
-
-
 After choosing one of the two approaches the end result should include the following:
-        
-
-
 
 #### __XAML__
 
@@ -180,11 +154,8 @@ After choosing one of the two approaches the end result should include the follo
 				MinorVerticalTickStyle="{StaticResource MinorVerticalTimeRulerItemStyle}"
 				HorizontalLineStyle="{StaticResource TimeRulerLineStyle}"
 				VerticalLineStyle="{StaticResource TimeRulerLineStyle}">
-			</local:OrientedTimeRulerItemStyleSelector>
-			
-	{{endregion}}
-
-
+			</local:OrientedTimeRulerItemStyleSelector>			
+{{endregion}}
 
 Note the use of the __local__ namespace from the raw source:
 
@@ -192,9 +163,7 @@ Note the use of the __local__ namespace from the raw source:
 
 {{region radscheduleview-styles-and-templates-styling-timeruleritems_1}}
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
-	{{endregion}}
-
-
+{{endregion}}
 
 The selector is applied to our instance of RadScheduleView:
 
@@ -202,9 +171,7 @@ The selector is applied to our instance of RadScheduleView:
 
 {{region radscheduleview-styles-and-templates-styling-timeruleritems_2}}
 	<telerik:RadScheduleView TimeRulerItemStyleSelector="{StaticResource TimeRulerItemStyleSelector}" AppointmentsSource="{Binding Appointments}" />
-	{{endregion}}
-
-
+{{endregion}}
 
 Now that all TimeRulerItem styles are in place, we can apply any desired customizations and watch the TimeRulerItems change. Let’s modify the __TimeRulerGroupItemStyle__, for example – make the item bold and with a different font color:
 
@@ -235,11 +202,8 @@ Now that all TimeRulerItem styles are in place, we can apply any desired customi
 						</ControlTemplate>
 					</Setter.Value>
 				</Setter>
-			</Style>
-	
-	{{endregion}}
-
-
+			</Style>	
+{{endregion}}
 
 The TimeRulerGroupItemStyle has been modified:
 
@@ -255,33 +219,29 @@ Because both lines share one and the same __TimeRulerLineStyle__, in order to st
 
 To create a custom TimeRulerItemStyleSelector, inherit the __OrientedTimeRulerItemStyleSelector__ and override the __SelectStyle__ method. Also, prepare two properties of type Style that will hold the new styles:
 
-
-
 #### __C#__
 
 {{region radscheduleview-styles-and-templates-styling-timeruleritems_4}}
 	public class CustomTimeRulerItemStyleSelector : OrientedTimeRulerItemStyleSelector
-	    {
-	        public Style MinorTickLineStyle { get; set;}
-	        public Style MajorTickLineStyle { get; set; }
-	
-	        public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDeifinition)
-	        {
-	            if (container is TimeRulerLine)
-	            {
-	                TickData tick = item as TickData;
-	                if (tick.Type == TickType.Major)
-	                {
-	                    return MajorTickLineStyle;
-	                }
-	                return MinorTickLineStyle;
-	            }
-	            return base.SelectStyle(item, container, activeViewDeifinition);
-	        }    }
-	{{endregion}}
+	{
+		public Style MinorTickLineStyle { get; set;}
+		public Style MajorTickLineStyle { get; set; }
 
-
-
+		public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDeifinition)
+		{
+			if (container is TimeRulerLine)
+			{
+				TickData tick = item as TickData;
+				if (tick.Type == TickType.Major)
+				{
+					return MajorTickLineStyle;
+				}
+				return MinorTickLineStyle;
+			}
+			return base.SelectStyle(item, container, activeViewDeifinition);
+	    }
+	}
+{{endregion}}
 
 
 #### __VB.NET__
@@ -318,9 +278,7 @@ To create a custom TimeRulerItemStyleSelector, inherit the __OrientedTimeRulerIt
 	  Return MyBase.SelectStyle(item, container, activeViewDeifinition)
 	 End Function
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipIf you need to take advantage of the __activeViewDefinition__ in the body of the SelectStyle method, it is important to inherit the __OrientedTimeRulerItemStyleSelector__, which is located in __Telerik.Windows.Controls__ namespace, rather than the regular StyleSelector class.
 
@@ -338,90 +296,86 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 
 {{region radscheduleview-styles-and-templates-styling-timeruleritems_6}}
 	<local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle>
-	                <Style TargetType="scheduleView:TimeRulerLine">
-	                    <Setter Property="BorderBrush" Value="LightCoral" />
-	                    <Setter Property="Background" Value="White" />
-	                    <Setter Property="Template">
-	                        <Setter.Value>
-	                            <ControlTemplate TargetType="scheduleView:TimeRulerLine">
-	                                <Border x:Name="LineVisual" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 0 0">
-	                                    <VisualStateManager.VisualStateGroups>
-	                                         ...
-	                                    </VisualStateManager.VisualStateGroups>
-	                                </Border>
-	                            </ControlTemplate>
-	                        </Setter.Value>
-	                    </Setter>
-	                </Style>
-	            </local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle> 
-	
-	            <local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
-	                <Style TargetType="scheduleView:TimeRulerLine">
-	                    <Setter Property="BorderBrush" Value="Khaki" />
-	                    <Setter Property="BorderThickness" Value="2" />
-	                    <Setter Property="Background" Value="White" />
-	                    <Setter Property="Template">
-	                        <Setter.Value>
-	                            <ControlTemplate TargetType="scheduleView:TimeRulerLine">
-	                                <Border x:Name="LineVisual" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 0 0">
-	                                    <VisualStateManager.VisualStateGroups>
-	                                         ...
-	                                    </VisualStateManager.VisualStateGroups>
-	                                </Border>
-	                            </ControlTemplate>
-	                        </Setter.Value>
-	                    </Setter>
-	                </Style>
+		<Style TargetType="scheduleView:TimeRulerLine">
+			<Setter Property="BorderBrush" Value="LightCoral" />
+			<Setter Property="Background" Value="White" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="scheduleView:TimeRulerLine">
+						<Border x:Name="LineVisual" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 0 0">
+							<VisualStateManager.VisualStateGroups>
+								 ...
+							</VisualStateManager.VisualStateGroups>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle> 
+
+	<local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
+		<Style TargetType="scheduleView:TimeRulerLine">
+			<Setter Property="BorderBrush" Value="Khaki" />
+			<Setter Property="BorderThickness" Value="2" />
+			<Setter Property="Background" Value="White" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="scheduleView:TimeRulerLine">
+						<Border x:Name="LineVisual" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 0 0">
+							<VisualStateManager.VisualStateGroups>
+								 ...
+							</VisualStateManager.VisualStateGroups>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>	
 	</local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
-	{{endregion}}
+{{endregion}}
+{% endif %}
 
-{% endif %}{% if site.site_name == 'WPF' %}
-
+{% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-styling-timeruleritems_7}}
-	
-			<local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle>
-				<Style TargetType="scheduleView:TimeRulerLine">
-					<Setter Property="BorderBrush" Value="LightCoral" />
-					<Setter Property="Background" Value="White" />
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="scheduleView:TimeRulerLine">
-								<Border x:Name="LineVisual" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 0 0"/>
-								<ControlTemplate.Triggers>
-									<Trigger Property="Orientation" Value="Horizontal">
-										<Setter TargetName="LineVisual" Property="BorderThickness" Value="1 0 0 0" />
-									</Trigger>
-								</ControlTemplate.Triggers>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle>
-	
-			<local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
-				<Style TargetType="scheduleView:TimeRulerLine">
-					<Setter Property="BorderBrush" Value="Khaki" />
-					<Setter Property="Background" Value="White" />
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="scheduleView:TimeRulerLine">
-								<Border x:Name="LineVisual" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 0 0"/>
-								<ControlTemplate.Triggers>
-									<Trigger Property="Orientation" Value="Horizontal">
-										<Setter TargetName="LineVisual" Property="BorderThickness" Value="1 0 0 0" />
-									</Trigger>
-								</ControlTemplate.Triggers>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
-	{{endregion}}
+{{region radscheduleview-styles-and-templates-styling-timeruleritems_7}}	
+	<local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle>
+		<Style TargetType="scheduleView:TimeRulerLine">
+			<Setter Property="BorderBrush" Value="LightCoral" />
+			<Setter Property="Background" Value="White" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="scheduleView:TimeRulerLine">
+						<Border x:Name="LineVisual" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 0 0"/>
+						<ControlTemplate.Triggers>
+							<Trigger Property="Orientation" Value="Horizontal">
+								<Setter TargetName="LineVisual" Property="BorderThickness" Value="1 0 0 0" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle>
 
+	<local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
+		<Style TargetType="scheduleView:TimeRulerLine">
+			<Setter Property="BorderBrush" Value="Khaki" />
+			<Setter Property="Background" Value="White" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="scheduleView:TimeRulerLine">
+						<Border x:Name="LineVisual" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 0 0"/>
+						<ControlTemplate.Triggers>
+							<Trigger Property="Orientation" Value="Horizontal">
+								<Setter TargetName="LineVisual" Property="BorderThickness" Value="1 0 0 0" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
+{{endregion}}
 {% endif %}
 
 ![](images/timeruler_12.PNG)
-
-

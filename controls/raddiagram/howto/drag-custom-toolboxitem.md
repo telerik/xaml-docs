@@ -15,9 +15,7 @@ position: 11
 This tutorial describes how to implement a drag/drop operation between a custom data-bound __RadDiagramToolbox__ and a __RadDiagram__.
             
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-                    {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-                    article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
                 
 
 ## 
@@ -65,7 +63,7 @@ If you run the application at this stage, you will be able to drag shapes from t
                 
 
 Once a __RadDiagram__ instance receives a drop of a __DiagramDropInfo__ object, it uses the [SerializationService](1479043d-76bd-44ee-9f6c-7d1acd000767#SerializationService) to retrieve the settings of the dragged __RadDiagramItem__ and to create a new item in its __Items__ or __GraphSource__ collection.
-                ![raddiagram-howto-customtoolbox-drop](images/RadDiagram_HowTo_CustomToolbox_Drop.png)
+![raddiagram-howto-customtoolbox-drop](images/RadDiagram_HowTo_CustomToolbox_Drop.png)
 
 However, please note that the dragged shapes don't keep their original __Geometry__ once dropped. Instead the drop operation creates a rectangular shape in the __RadDiagram__. This is due to the fact that the __SerializaionService__ does not serialize the __Geometry__ property of a __RadDiagram(Container)Shape__. Instead, you need to manually serialize the property and retrieve it after the drop operation.
                 
@@ -198,10 +196,9 @@ Now that we have configured the __Geometry__ property serialization, we can go a
 
 
 If you run the project now, you will be able to drag shapes from the toolbox and drop them in the diagram. The shapes will keep their __Geometry__ and they will display the original __Header__ data property as their __Content__.
-            ![raddiagram-howto-customtoolboxdrop-content](images/raddiagram-howto-customtoolboxdrop-content.png)
+![raddiagram-howto-customtoolboxdrop-content](images/raddiagram-howto-customtoolboxdrop-content.png)
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository
-						[here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomToolboxDragDrop__.
+>tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomToolboxDragDrop__.
 					
 
 # See Also

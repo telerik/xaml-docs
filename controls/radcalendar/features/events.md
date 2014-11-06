@@ -10,10 +10,6 @@ position: 1
 
 # Events
 
-
-
-## 
-
 The __RadCalendar__ exposes three events that can be handled: __SelectionChanged__, __DisplayDateChanged__ and __DisplayModeChanged__. The events are routed events but can also be handled like normal events: 
 
 #### __C#__
@@ -36,9 +32,7 @@ The __RadCalendar__ exposes three events that can be handled: __SelectionChanged
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -47,9 +41,7 @@ The __RadCalendar__ exposes three events that can be handled: __SelectionChanged
 	    <telerik:RadCalendar x:Name="calendar" SelectionMode="Extended"/>
 	    <TextBlock x:Name="message" />
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 The real power of the __RoutedEvents__ lies in the fact that they can be handled by any parent in the visual tree of the element that raised them.  
 
@@ -69,6 +61,4 @@ The following example shows how to sign up for the __SelectionChanged__ event at
 	private void OnCalendarSelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
 	{
 	}
-	{{endregion}}
-
-
+{{endregion}}

@@ -18,7 +18,7 @@ The purpose of this tutorial is to show you how to populate __RadChart__ with da
 
 __In order to bind RadChart to nested collections:__
 
-1. Create a new business object and name it __TradeData__.
+##### 1. Create a new business object and name it __TradeData__.
 
 
 #### __C#__
@@ -605,7 +605,7 @@ __In order to bind RadChart to nested collections:__
 
 
 
-1. Add a new __RadChart__ declaration.
+##### 2. Add a new __RadChart__ declaration.
 
 
 #### __XAML__
@@ -627,7 +627,7 @@ __In order to bind RadChart to nested collections:__
 
 
 
-1. The key here is to use the __SeriesMapping.CollectionIndex__property. __RadChart__ support nested collections via __SeriesMapping.CollectionIndex__ property. This property allows the chart to be data bound to a collection/array nested inside another collection/array. The index used is the index of the internal collection inside the __ItemsSource__.
+##### 3. The key here is to use the __SeriesMapping.CollectionIndex__property. __RadChart__ support nested collections via __SeriesMapping.CollectionIndex__ property. This property allows the chart to be data bound to a collection/array nested inside another collection/array. The index used is the index of the internal collection inside the __ItemsSource__.
 
 
 #### __XAML__
@@ -669,7 +669,7 @@ __In order to bind RadChart to nested collections:__
 
 
 
-1. Set the ItemsSource property of the __RadChart__ control.
+##### 4. Set the ItemsSource property of the __RadChart__ control.
 
 
 #### __C#__
@@ -694,15 +694,11 @@ __In order to bind RadChart to nested collections:__
 
 
 
-1. The final result should look like the snapshot below.
+##### 5. The final result should look like the snapshot below.
 
+![](images/RadChart_PopulatingWithData_NestedCollections_01.png)
 
-
-
-         
-      ![](images/RadChart_PopulatingWithData_NestedCollections_01.png)
-
-1. The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
+##### 6. The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
 
 
 #### __C#__

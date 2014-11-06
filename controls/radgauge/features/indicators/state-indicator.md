@@ -12,11 +12,9 @@ position: 4
 
 
 
-The __State Indicator__ is a shape with arbitrary size located anywhere in the scale. It gets colored in the same color as the range to which the indicator's value belong. Via the __ScaleObject.RelativeWidth__ and __ScaleObject.RelativeHeight__ attachable properties of the indicator you can specify its size. To position it, use the __ScaleObject.RelativeX__ and __ScaleObject.RelativeY__attachable properties.
+The __State Indicator__ is a shape with arbitrary size located anywhere in the scale. It gets colored in the same color as the range to which the indicator's value belong. Via the __ScaleObject.RelativeWidth__ and __ScaleObject.RelativeHeight__ attachable properties of the indicator you can specify its size. To position it, use the __ScaleObject.RelativeX__ and __ScaleObject.RelativeY__ attachable properties.
 
->
-
-All these properties are relative to the cell size of the gauge. To learn more about it read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic. 
+>these properties are relative to the cell size of the gauge. To learn more about it read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic. 
 
 >tipTo learn more about the common features for the RadGauge's indicators, read the [Basics]({%slug radgauge-features-indicators-bar-indicators-basics%}) topic.
 

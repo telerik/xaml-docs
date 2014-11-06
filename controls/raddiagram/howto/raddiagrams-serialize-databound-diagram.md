@@ -20,8 +20,7 @@ This article shows how to serialize and deserialize the __RadDiagram__ in MVVM s
 
 ## ISerializableGraphSource and SerializableGraphSourceBase
 
-When you need to serialize / deserialize a data-bound __RadDiagram__, you have to use a __GraphSource__ which implements the
-		  __ISerializableGraphSource__ interface from the __Telerik.Windows.Diagrams.Core__ namespace.
+When you need to serialize / deserialize a data-bound __RadDiagram__, you have to use a __GraphSource__ which implements the __ISerializableGraphSource__ interface from the __Telerik.Windows.Diagrams.Core__ namespace.
 		
 
 #### __C#__
@@ -39,9 +38,7 @@ When you need to serialize / deserialize a data-bound __RadDiagram__, you have t
 
 
 
-[
-			IObservableGraphSource
-		  ](fc9e271b-5722-47de-bbee-fa87afb7f2e0#Two-Way-Mvvm) enables the two-way binding capabilities of the RadDiagram. __ISerializableGraphSource__ (from __Telerik.Windows.Controls.Diagrams.Extensions.ViewModels__ namespace) extends it with Serialization and Deserialization methods for "Links" and "Nodes".
+[IObservableGraphSource](fc9e271b-5722-47de-bbee-fa87afb7f2e0#Two-Way-Mvvm) enables the two-way binding capabilities of the RadDiagram. __ISerializableGraphSource__ (from __Telerik.Windows.Controls.Diagrams.Extensions.ViewModels__ namespace) extends it with Serialization and Deserialization methods for "Links" and "Nodes".
 		
 
 Similarly, the [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%}) class extends the __ObservableGraphSourceBase__.
@@ -432,14 +429,10 @@ Fianlly, we have to define the __RadDiagram CommandBindings__ execution methods:
 
 Now let's see a possible use case with this set of Diagram configuration and ViewModels:![raddiagram-features-serialization-serializable](images/raddiagram-features-serialization-serializable.png)
 
->tipYou can download a runnable project demonstrating a similar approach from our online SDK repository
-				  [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.
+>tipYou can download a runnable project demonstrating a similar approach from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.
 			  
 
->importantPlease note that copy/pasting requires additional effort. Pasting a copied node, for example, means that you have to override
-				  the [
-					  AddNode
-				  ](fc9e271b-5722-47de-bbee-fa87afb7f2e0#Two-Way-Mvvm) method of the [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%}) and provide a new unique __Id__ for the new __NodeViewModel__.
+>importantPlease note that copy/pasting requires additional effort. Pasting a copied node, for example, means that you have to override the [AddNode](fc9e271b-5722-47de-bbee-fa87afb7f2e0#Two-Way-Mvvm) method of the [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%}) and provide a new unique __Id__ for the new __NodeViewModel__.
 			  
 
 # See Also

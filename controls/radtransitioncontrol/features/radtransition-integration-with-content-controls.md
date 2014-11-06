@@ -10,31 +10,16 @@ position: 4
 
 # Integration with Content Controls
 
+The __RadTransitionControl__ can be easily integrated in other more complex __ContentControls__ in order to extend their functionality. For example - __ScrollViewer__, __HeaderedContentControl__ etc.
 
-
-## 
-
-
-
-The __RadTransitionControl__ can be easily integrated in other more complex __ContentControls__ in order to extend their functionality. For example - __ScrollViewer__, __HeaderedContentControl__etc.
-
->tipYou can also integrate the __RadTransitionControl__in any control that somehow visualizes content.
+>tipYou can also integrate the __RadTransitionControl__ in any control that somehow visualizes content.
 
 To integrate a __RadTransitionControl__ with a more complex __ContentControl__, you have to replace the __ContentControl__ or the __ContentPresenter__ of the latter one __ControlTemplate__ with an instance of the __RadTransitionControl__ and to configure the __TemplateBindings__ for the __Content__ and the __ContentTemplate__ properties.
 
 Here is an example with the __HeaderedContentControl__. Take a look at the default __ControlTemplate__:
 
->
-
-In order to use the __HeaderedContentControl__ you have to add the following namespace to your __UserControl__:
-
-#### __XAML__
-
-{{region radtransition-features-integration-with-content-controls_0}}
-	xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
-	{{endregion}}
-
-
+>In order to use the __HeaderedContentControl__ you have to add the following namespace to your __UserControl__:
+>	*xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"*
 
 #### __XAML__
 
@@ -55,9 +40,7 @@ In order to use the __HeaderedContentControl__ you have to add the following nam
 	                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
 	    </StackPanel>
 	</ControlTemplate>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -78,25 +61,17 @@ In order to use the __HeaderedContentControl__ you have to add the following nam
 	                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
 	    </StackPanel>
 	</ControlTemplate>
-	{{endregion}}
-
-
+{{endregion}}
 
 The first __ContentPresenter__ is responsible for the header and the second one - for the content. Replace the second one with the __RadTransitionControl__ and preserve the __TemplateBindings__.
 
->
-
-
-
-In order to use the __RadTransitionControl__you have to add the following namespace to your __UserControl__:
+>In order to use the __RadTransitionControl__ you have to add the following namespace to your __UserControl__:
 
 #### __XAML__
 
 {{region radtransition-features-integration-with-content-controls_3}}
 	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -119,9 +94,7 @@ In order to use the __RadTransitionControl__you have to add the following namesp
 	
 	    </StackPanel>
 	</ControlTemplate>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -144,27 +117,14 @@ In order to use the __RadTransitionControl__you have to add the following namesp
 	
 	    </StackPanel>
 	</ControlTemplate>
-	{{endregion}}
-
-
+{{endregion}}
 
 Next, configure the __RadTransitionControl__ to match your needs. For example, define its __Transition__.
 
 >tipTo learn more about working with the __RadTransitionControl__ read [this topic]({%slug radtransition-features-working-with-radtransitioncontrol%}). To learn more about transition effects read the [Transitions]({%slug radtransition-features-transitions%}) topic.
 
->
-
-
-
-In order to use the____built-in __transition effects__ you have to add the following namespace to your __UserControl__:
-
-#### __XAML__
-
-{{region radtransition-features-integration-with-content-controls_6}}
-	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
-	{{endregion}}
-
-
+>In order to use the built-in __transition effects__ you have to add the following namespace to your __UserControl__:
+>	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
 
 #### __XAML__
 
@@ -179,9 +139,7 @@ In order to use the____built-in __transition effects__ you have to add the follo
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

@@ -10,23 +10,17 @@ position: 1
 
 # Create Scrollable Menus
 
+A scrolling functionality can be added to a RadMenu which displays a long list of items or the number of the visible items should be limited. The process to do that is very simple and straightforward. This article will demonstrate the process.      
 
+## Use DropDownHeight property      
 
-A scrolling functionality can be added to a RadMenu which displays a long list of items or the number of the visible items should be 
-        limited. The process to do that is very simple and straightforward. This article will demonstrate the process.
-      
+Each __RadMenuItem__ has __DropDownHeight__ property. The value of the property shows the height of RadMenuItem's submenu. If you set it, but the submenu __RadMenuItems__ don't fit in this size, you will see two buttons which can be used to scroll through your collection:
 
-## 
-        Use DropDownHeight property
-      
-
-Each __RadMenuItem__ has __DropDownHeight__ property. The value of the property shows the height of RadMenuItem's
-          submenu. If you set it, but the submenu __RadMenuItems__ don't fit in this size, you will see two buttons which can be used to scroll 
-          through your collection:
-        ![Rad Menu How to Create Scrollable Menus 01](images/RadMenu_How_to_Create_Scrollable_Menus_01.jpg)
+![Rad Menu How to Create Scrollable Menus 01](images/RadMenu_How_to_Create_Scrollable_Menus_01.jpg)
 
 The property can be set to any nested submenu __RadMenuItem__ in order to control the height of its content:
-        ![Rad Menu How to Create Scrollable Menus 02](images/RadMenu_How_to_Create_Scrollable_Menus_02.jpg)
+
+![Rad Menu How to Create Scrollable Menus 02](images/RadMenu_How_to_Create_Scrollable_Menus_02.jpg)
 
 Here's a simple code that shows how to use the __DropDownHeight__ property:
 
@@ -44,16 +38,11 @@ Here's a simple code that shows how to use the __DropDownHeight__ property:
 	        <!--Define all items -->
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-	{{endregion}}
+{{endregion}}
 
-
-
-## 
-        Scrolling in RadMenuGroupItem
-      
+## Scrolling in RadMenuGroupItem      
 
 If you are using __RadMenuGroupItem__ you can control the scrolling inside via ScrollViewer's attached properties - VerticalScrollBarVisibility and HorizontalScrollBarVisibility.
-        
 
 #### __XAML__
 
@@ -65,7 +54,7 @@ If you are using __RadMenuGroupItem__ you can control the scrolling inside via S
 	        </telerik:RadMenuGroupItem>
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Menu How to Create Scrollable Menus 03](images/RadMenu_How_to_Create_Scrollable_Menus_03.jpg)
 

@@ -12,25 +12,15 @@ position: 1
 
 
 
-When displaying a map, you might also want to overlay some additional information. As we've
-        previously seen (in the [Introduction]({%slug radmap-visualization-layer-introduction%}) help topic)
-        we can define this information statically in XAML. However, it would be much more
-        practical to use the VisualizationLayer's data binding capabilities to
-        dynamically load and display map markers.
+When displaying a map, you might also want to overlay some additional information. As we've previously seen (in the [Introduction]({%slug radmap-visualization-layer-introduction%}) help topic) we can define this information statically in XAML. However, it would be much more practical to use the VisualizationLayer's data binding capabilities to dynamically load and display map markers.
       
 
 ## 
 
-The VisualizationLayer simulates functionality of the __ItemsControl__
-          class so in order to display your map data dynamically you just have to treat the
-          VisualizationLayer as a typical ItemsControl. This means you have to use its
-          __ItemsSource__ and __ItemTemplate__
-          properties. You can also make a use of the __ItemTemplateSelector__
-          property, in order to implement advanced visualization depending on the data item.
+The VisualizationLayer simulates functionality of the __ItemsControl__ class so in order to display your map data dynamically you just have to treat the VisualizationLayer as a typical ItemsControl. This means you have to use its __ItemsSource__ and __ItemTemplate__ properties. You can also make a use of the __ItemTemplateSelector__ property, in order to implement advanced visualization depending on the data item.
         
 
-When loading your map data dynamically there are several attached properties that you
-          can use in order to position and display the marker on its proper place:
+When loading your map data dynamically there are several attached properties that you can use in order to position and display the marker on its proper place:
         
 
 * __MapLayer.Location__ - represents the latitude and the longitude of the map point.
@@ -42,16 +32,13 @@ When loading your map data dynamically there are several attached properties tha
 * __ZoomRange__ - represents the range of zoom levels for which the element should be visible.
             
 
-* __MinScale__ – represents minimum scale factor which will be applied to the framework
-              element when it has BaseZoomLevel property set and we zoom out map control.
+* __MinScale__ – represents minimum scale factor which will be applied to the framework element when it has BaseZoomLevel property set and we zoom out map control.
             
 
-* __MaxScale__ – represents maximum scale factor which will be applied to the framework
-              element when it has BaseZoomLevel property set and we zoom in map control.
+* __MaxScale__ – represents maximum scale factor which will be applied to the framework element when it has BaseZoomLevel property set and we zoom in map control.
             
 
-In order to provide the needed data to the visualization layer, you have to create a
-          collection of business objects, which represent the desired data.
+In order to provide the needed data to the visualization layer, you have to create a collection of business objects, which represent the desired data.
         
 
 Let's first define the business class that represent's our objects:
@@ -227,9 +214,7 @@ Let's first define the business class that represent's our objects:
 
 
 
-The next step is to define how we want to visualize our data items through
-          the ItemTemplate property of the VisualizationLayer and set the desired bindings
-          in it. In the current example, the marker will be represented by an ellipse:
+The next step is to define how we want to visualize our data items through the ItemTemplate property of the VisualizationLayer and set the desired bindings in it. In the current example, the marker will be represented by an ellipse:
         
 
 #### __XAML__
@@ -370,7 +355,3 @@ The last thing to do is to retrieve the data and set it as the ItemsSource the V
 		End Function
 	End Class
 	{{endregion}}
-
-
-
-# See Also

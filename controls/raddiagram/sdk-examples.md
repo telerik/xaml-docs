@@ -91,5 +91,3 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Style selectors__ - This example demonstrates how to use MVVM to create a collection of shapes and connections in the RadDiagram control and take advantage of the ShapeStyleSelector and ConnectionStyleSelector properties to apply different styles on the shapes and the connections based on their type.{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

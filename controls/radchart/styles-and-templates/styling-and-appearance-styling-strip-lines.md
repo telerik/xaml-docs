@@ -12,7 +12,7 @@ position: 4
 
 
 
-The strip lines are part of the axes items and are represented by the __StripLine and AlternateStripLine__ controls. There are two types of strip lines - Horizontal and Vertical. Each of them contains alternating Lines - one with Gray color by default (called__AlternateStripLine__) and the other is Transparent (called just __StripLine__). 
+The strip lines are part of the axes items and are represented by the __StripLine and AlternateStripLine__ controls. There are two types of strip lines - Horizontal and Vertical. Each of them contains alternating Lines - one with Gray color by default (called __AlternateStripLine__) and the other is Transparent (called just __StripLine__). 
 
 To be able to modify the colors of these lines you should use the following Styles:
 
@@ -47,15 +47,7 @@ To be able to modify the colors of these lines you should use the following Styl
 
 
 
-__Tip Box__
-
-
-         
-      
-
-
-
-Set the created Styles to the __AxisY.AxisStyles__(for modifying the color of the __Horizontal__striplines) or __AxisX.AxisStyles__(for __Vertical__striplines)property of your RadChart like this:
+>Set the created Styles to the __AxisY.AxisStyles__ (for modifying the color of the __Horizontal__ striplines) or __AxisX.AxisStyles__ (for __Vertical__ striplines) property of your RadChart like this:
 
 #### __C#__
 
@@ -94,9 +86,4 @@ Set the created Styles to the __AxisY.AxisStyles__(for modifying the color of th
 
 
 Here is a snapshot of the result:
-
-
-
-
-         
-      ![](images/RadChart_Styling_and_Appearance_Custom_StripLines_01.PNG)
+![](images/RadChart_Styling_and_Appearance_Custom_StripLines_01.PNG)

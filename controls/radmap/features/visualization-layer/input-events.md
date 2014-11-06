@@ -16,29 +16,19 @@ position: 4
 
 ## 
 
-The visualization engine based on the VisualizationLayer class separates
-          geographical data and its visualization. The map shape data classes
-          aren’t dependency objects. It means that you can’t attach input events
-          to these classes directly. Instead you can attach events to the map
-          shape visualization. It allows assigning of any input events supported
-          by ContentPresenter to the map shape visual presentation.
+The visualization engine based on the VisualizationLayer class separates geographical data and its visualization. The map shape data classes aren’t dependency objects. It means that you can’t attach input events to these classes directly. Instead you can attach events to the map shape visualization. It allows assigning of any input events supported by ContentPresenter to the map shape visual presentation.
         
 
 The VisualizationLayer class provides 2 events:
         
 
-1. __MapShapeVisualizationCreated__ – occurs when
-              map shape visualization object is created. Can be used to
-              attach event handlers.
+1. __MapShapeVisualizationCreated__ – occurs when map shape visualization object is created. Can be used to attach event handlers.
             
 
-1. __MapShapeVisualizationRemoved__ – occurs when
-              map shape visualization object is removed. Can be used to
-              detach event handlers.
+1. __MapShapeVisualizationRemoved__ – occurs when map shape visualization object is removed. Can be used to detach event handlers.
             
 
-Here it is an example which attaches MouseEnter and MouseLeave
-          events to the map shape visualization object:
+Here it is an example which attaches MouseEnter and MouseLeave events to the map shape visualization object:
         
 
 #### __XAML__
@@ -128,7 +118,7 @@ Here it is an example which attaches MouseEnter and MouseLeave
 {{region radmap_visualization_layer_input_events_0}}
 	Private Sub MapShapeVisualizationCreated(sender As Object, e As MapShapeOperationEventArgs)
 		If e.Visualization IsNot Nothing Then
-			' Attach mouse events to the map shape visualization.
+			' Attach mouse events to the map shape visualization.'
 			AddHandler e.Visualization.MouseEnter, AddressOf Me.Visualization_MouseEnter
 			AddHandler e.Visualization.MouseLeave, AddressOf Me.Visualization_MouseLeave
 			End If
@@ -136,14 +126,14 @@ Here it is an example which attaches MouseEnter and MouseLeave
 	
 	Private Sub MapShapeVisualizationRemoved(sender As Object, e As MapShapeOperationEventArgs)
 		If e.Visualization IsNot Nothing Then
-			' Detach mouse events to the map shape visualization.
+			' Detach mouse events to the map shape visualization.'
 			RemoveHandler e.Visualization.MouseEnter, AddressOf Me.Visualization_MouseEnter
 			RemoveHandler e.Visualization.MouseLeave, AddressOf Me.Visualization_MouseLeave
 		End If
 	End Sub
 	
 	Private Sub Visualization_MouseEnter(sender As Object, e As MouseEventArgs)
-		' Highlight shape when mouse enter.
+		' Highlight shape when mouse enter.'
 		Dim elt As FrameworkElement = TryCast(sender, FrameworkElement)
 		If elt IsNot Nothing Then
 			Dim data As MapShapeData = TryCast(elt.DataContext, MapShapeData)
@@ -152,7 +142,7 @@ Here it is an example which attaches MouseEnter and MouseLeave
 	End Sub
 	
 	Private Sub Visualization_MouseLeave(sender As Object, e As MouseEventArgs)
-		' Use regular fill when mouse leave the shape.
+		' Use regular fill when mouse leave the shape.'
 		Dim elt As FrameworkElement = TryCast(sender, FrameworkElement)
 		If elt IsNot Nothing Then
 			Dim data As MapShapeData = TryCast(elt.DataContext, MapShapeData)
@@ -160,7 +150,3 @@ Here it is an example which attaches MouseEnter and MouseLeave
 		End If
 	End Sub
 	{{endregion}}
-
-
-
-# See Also

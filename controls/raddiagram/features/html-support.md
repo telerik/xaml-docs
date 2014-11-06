@@ -29,7 +29,7 @@ Next, you need to add a __DIV__ container to host the rendered SVG like so:
 				
 
 	
-		  <div id="surface"></div>
+    <div id="surface"></div>
 		  
 
 
@@ -37,10 +37,10 @@ Next, you need to add a __DIV__ container to host the rendered SVG like so:
 Finally, you need to load the saved XML diagram in the container: 
 
 	
-<script  type="text/javascript"> 
-	var surface = $("#surface"); 
-	surface.kendoDiagram({ url: "http://yourserver.com/Diagram.xml" }); 
-</script>
+    <script  type="text/javascript"> 
+        var surface = $("#surface"); 
+        surface.kendoDiagram({ url: "http://yourserver.com/Diagram.xml" }); 
+    </script>
 		  
 
 
@@ -51,15 +51,16 @@ You can find the code implementation of the __Html support__ along with some use
 >Please note that the __radDiagram.js__ file is an open source implementation that you can change to better fit your requirements.
 					
 
-If you decide to use the open source JavaScript code to display a RadDiagram serialization xml in an SVG, you can also examine the
-					{% if site.site_name == 'Silverlight' %}[Diagrams FirstLook](http://demos.telerik.com/silverlight/#Diagrams/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[Diagrams->FirstLook](http://demos.telerik.com/wpf/#Diagrams/FirstLook){% endif %} example and specifically the __ExportToHtml__ button. If you download the demo solutions, you will be able to take a closer look at the export implementation which basically creates an __html__ file using the scripts described above and displaying the SVG form of the diagrams in a __div__ element.
+If you decide to use the open source JavaScript code to display a RadDiagram serialization xml in an SVG, you can also examine the {% if site.site_name == 'Silverlight' %}[Diagrams FirstLook](http://demos.telerik.com/silverlight/#Diagrams/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[Diagrams->FirstLook](http://demos.telerik.com/wpf/#Diagrams/FirstLook){% endif %} example and specifically the __ExportToHtml__ button. If you download the demo solutions, you will be able to take a closer look at the export implementation which basically creates an __html__ file using the scripts described above and displaying the SVG form of the diagrams in a __div__ element.
 				
 
 If, for example, you open the __FloorPlan__ sample in the Diagrams FirstLook demo:
-				![Rad Diagram html diagram Floor Plan](images/RadDiagram_html_diagramFloorPlan.png)
+
+![Rad Diagram html diagram Floor Plan](images/RadDiagram_html_diagramFloorPlan.png)
 
 Using the __Export to Html__ button you will be able to create an html file displaying an SVG representation of the floor plan:
-				![Rad Diagram html svg Floor Plan](images/RadDiagram_html_svgFloorPlan.png)
+
+![Rad Diagram html svg Floor Plan](images/RadDiagram_html_svgFloorPlan.png)
 
 ## Limitations
 
@@ -81,6 +82,4 @@ Using the __Export to Html__ button you will be able to create an html file disp
 						
 
 * __Custom templates are not supported.__ The JavaScript importer has no access to the XAML templates defined outside the XML file and as such has no knowledge of how to render custom content. This is why the SVG renderer is mostly functional when using basic geometric shapes.
-						
-
-# See Also
+					

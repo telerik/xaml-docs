@@ -14,16 +14,16 @@ position: 0
 
 ## Latest Release Notes
 
-You can check the latest Release Notes
-          {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
+You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
-## 
-		Changes for Telerik RadDataForm for SilverlightWPF Q2 2014
-	  What's New
+## Q2 2014
+{% if site.site_name == 'Silverlight' %}
+### What's New
 
 * (Silverlight only) Added support for string format for dynamic properties 
-					
-			  What's Fixed
+
+{% endif %}
+### What's Fixed
 			
 
 * Memory leak in DataFormComboBoxField
@@ -41,336 +41,261 @@ You can check the latest Release Notes
 * Design-time NullReferenceException in CanMoveCurrentToFirstExecute()
 				
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q1 2014
+##  Q1 2014
       
-              What's Fixed
-            
+### What's Fixed            
 
-* 
-                  Fixed: An exception is thrown on changing the theme using StyleManager
+*  An exception is thrown on changing the theme using StyleManager
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q3 2013
+##  Q3 2013
       
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: CanDelete and CanAdd properties are not correctly set when CurrentItem is bound and no ItemsSource is set.
+*  CanDelete and CanAdd properties are not correctly set when CurrentItem is bound and no ItemsSource is set.
                 
 
-* 
-                  Fixed:When DataForm and GridView use ICollectionView synchronization and the grid is filtered and has only one item, DataForm navigation buttons are not all disabled
+* When DataForm and GridView use ICollectionView synchronization and the grid is filtered and has only one item, DataForm navigation buttons are not all disabled
                 
 
-* 
-                  Fixed: No data field is generated for dynamic property with null value
+*  No data field is generated for dynamic property with null value
                 
 
-* 
-                  Fixed: ArgumentNullException in CollectionHelper.AreEqual
+*  ArgumentNullException in CollectionHelper.AreEqual
                 
 
-* 
-                  Fixed: ArgumentOutOfRangeException is thrown when items are deleted
+*  ArgumentOutOfRangeException is thrown when items are deleted
                 
 
-* 
-                  Fixed: TextBox editors jump in edit mode (Windows8 and Office2013 themes)
+*  TextBox editors jump in edit mode (Windows8 and Office2013 themes)
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q2 2013
+##  Q2 2013
       
-              What's Added
+### What's Added
             
 
-* 
-                  Added: German localization
+*  German localization
                 
 
-* 
-                  Added: TypeConverter support
+*  TypeConverter support
                 
 
-* 
-                  Added:  Keyboard navigation + extandability through a command provider
+*  Keyboard navigation + extandability through a command provider
                 
 
-* 
-                  Added:  Improve MVVM support by adding command provider support
+*  Improve MVVM support by adding command provider support
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: Corresponding navigation buttons are not active when AutoCommit="False", an item has been edited and delete button is clicked
+* Corresponding navigation buttons are not active when AutoCommit="False", an item has been edited and delete button is clicked
                 
 
-* 
-                  Fixed: RadDataForm with AutoCommit="False" gets into erroneous state when navigating away from unmodified item in edit mode
+*  RadDataForm with AutoCommit="False" gets into erroneous state when navigating away from unmodified item in edit mode
                 
 
-* 
-                  Fixed: NullReferenceException caused by Add button when GridView is filtered and has collection synchronization with DataForm
+*  NullReferenceException caused by Add button when GridView is filtered and has collection synchronization with DataForm
                 
 
-* 
-                  Fixed: Editors in manually-generated data fields does not get the default theme
+*  Editors in manually-generated data fields does not get the default theme
                 
 
-* 
-                  Fixed: LabelStyle DependencyProperty is not registered correctly
+*  LabelStyle DependencyProperty is not registered correctly
                 
 
-* 
-                  Fixed: Cancel button should be enabled even if there are not pending changes
+*  Cancel button should be enabled even if there are not pending changes
                 
 
-* 
-                  Fixed: RadDataForm throws-design time exception in VS2012 WPF, when CustomCommandProvider is used
+*  RadDataForm throws-design time exception in VS2012 WPF, when CustomCommandProvider is used
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q1 2013
+## Q1 2013
       
-              What's Added
+### What's Added
             
 
-* 
-                  Added: XML comment and access modifier
+*  XML comment and access modifier
                 
 
-* 
-                  Added: Nullable enum support for auto-generated fields
+*  Nullable enum support for auto-generated fields
                 
 
-* 
-                  Added: MVVM improvements
+* MVVM improvements
                 
 
-* 
-                  Added: CommandProvider support
+*  CommandProvider support
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: CurrentItem is not updated on moving back/forth if form has been unloaded/ reloaded
+*  CurrentItem is not updated on moving back/forth if form has been unloaded/ reloaded
                 
 
-* 
-                  Fixed: Cannot properly apply a new ControlTemplate through the ValidationSummaryStyle property
+*  Cannot properly apply a new ControlTemplate through the ValidationSummaryStyle property
                 
 
-* 
-                  Fixed: Occasionally fields hang in readonly state when ApplicationTheme is set
+*  Occasionally fields hang in readonly state when ApplicationTheme is set
                 
 
-* 
-                  Fixed: Navigation through the items if there is group descriptor applied to the source collection
+*  Navigation through the items if there is group descriptor applied to the source collection
                 
 
-* 
-                  Fixed: AddNewItem sets the DataForm into edit mode when RadDataForm and RadGridView are bound to the same source and grouping is applied
+*  AddNewItem sets the DataForm into edit mode when RadDataForm and RadGridView are bound to the same source and grouping is applied
                 
 
-* 
-                  Fixed: CurrentItem is not properly updated when items are asynchronously loadeds
+*  CurrentItem is not properly updated when items are asynchronously loadeds
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q3 2012 SP1
+##  Q3 2012 SP1
       
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: Cannot properly apply a new ControlTemplate through the __ValidationSummaryStyle__ property.
+* Cannot properly apply a new ControlTemplate through the ValidationSummaryStyle property
                 
 
-* 
-                  Fixed: __CurrentItem__ is not updated on moving back/forth if form has been unloaded/ reloaded.
+* CurrentItem is not updated on moving back/forth if form has been unloaded/ reloaded
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q3 2012
+##  Q3 2012
       
-              What's Added
+### What's Added
             
 
-* 
-                  Added: __EnablePropertyChangedBasedCancel__ - property to disable __PropertyChanged__ -based cancelling.
+* EnablePropertyChangedBasedCancel - property to disable PropertyChanged-based cancelling
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: Initial values of cancelled properties are no longer cached.
+* Initial values of cancelled properties are no longer cached
                 
 
-* 
-                  Fixed: Wrong registration of the __LabelStyle DependencyProperty__ .
+* Wrong registration of the LabelStyle DependencyProperty
                 
 
-* 
-                  Fixed: Adding new item is disabled if the source is set after data form is created.
+*  Adding new item is disabled if the source is set after data form is created
                 
 
-* 
-                  Fixed: Memory leak when reloading a __DataForm__  multiple times.
+*  Memory leak when reloading a DataForm  multiple times
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q2 2012 SP2
+## Q2 2012 SP2
       
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: Adding new item is disabled if the source is set after data form is created.
+*  Adding new item is disabled if the source is set after data form is created
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q2 2012 SP1
+##  Q2 2012 SP1
       
-              What's Added
+### What's Added
             
 
-* 
-                  Added: __French__ localization.
+* French localization.
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: __ArgumentNullException__ is thrown when firing __PropertyChanged__ with  __null__.
+* ArgumentNullException is thrown when firing PropertyChanged with  null
                 
 
-* 
-                  Fixed: __AutoEdit__ mode.
+* AutoEdit mode
                 
 
-* 
-                  Fixed: __CurrentCulture__ and __CurrentUICulture__ are now respected.
+* CurrentCulture and CurrentUICulture are now respected
                 
 
-* 
-                  Fixed: the wrong registration of the __LabelStyle DependencyProperty__.
+* The wrong registration of the LabelStyle DependencyProperty
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q2 2012
+##  Q2 2012
       
-              What's Added
+### What's Added
             
 
-* 
-                  Added: __IsComboboxEditable__ property for __DataFormComboBoxField__.
+* IsComboboxEditable property for DataFormComboBoxField
                 
 
-* 
-                  Added: __DataTemplateSelectors__ support.
+* DataTemplateSelectors support
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: Error with a binding validation error that is not associated with any field.
+* Error with a binding validation error that is not associated with any field
                 
 
-* 
-                  Fixed: __OK__ and __Cancel__ Buttons are not enabled if you change nullable int value.
+* OK and Cancel Buttons are not enabled if you change nullable int value
                 
 
-* 
-                  Fixed: An exception try/catched with __CancelEdit__ mechanism when __RadDataForm__ is bound to __DataTable__.
+*  An exception try/catched with CancelEdit mechanism when RadDataForm is bound to DataTable
                 
 
-* 
-                  Fixed: __BindingExpressionPath__ errors with __CommandButtonsVisiblity__ are now fixed.
+* BindingExpressionPath errors with CommandButtonsVisiblity are now fixed
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q1 2012 SP1
+##  Q1 2012 SP1
       
-              What's Added
+### What's Added
             
 
-* 
-                  Added: __INotifyPropertyChanged__ cancelling mechanism (__IEditableObject__ cancelling has higher priority)
+* INotifyPropertyChanged cancelling mechanism (IEditableObject cancelling has higher priority)
                 
 
-* 
-                  Added: __LabelTemplate__ (__DataTemplate__) property in the __DataFormDataField__ class
+* LabelTemplate (DataTemplate) property in the DataFormDataField class
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: __Cancelling__ new item do not work in some occasions when __AutoCommit__ is true.
+* Cancelling new item do not work in some occasions when AutoCommit is true
                 
 
-* 
-                  Fixed: __Navigation buttons__ do not get disabled when __AutoCommit__ is false and there are uncommitted pending changes.
+* Navigation buttons do not get disabled when AutoCommit is false and there are uncommitted pending changes
                 
 
-* 
-                  Fixed: Navigating to another item commits changes when __AutoCommit__ is false.
+* Navigating to another item commits changes when AutoCommit is false
                 
 
-* 
-                  Fixed: Cancel edit for a new, already committed item, leads to an “empty” item, when __AutoCommit__ is true.
+* Cancel edit for a new, already committed item, leads to an “empty” item, when AutoCommit is true
                 
 
-* 
-                  Fixed:  Item level validation errors display property name instead of label in the validation summary.
+* Item level validation errors display property name instead of label in the validation summary
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q1 2012
+##  Q1 2012
       
-              What's Added
+### What's Added
             
 
-* 
-                  Added: Improved item-level validation for __RIA__ entities
+* Improved item-level validation for RIA entities
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: Autogenerated __DataFormDataFields__ (TextBox) do not update their __UI__ properly when item is a __FormatException__ occurs and __IEditableObject__. __CancelEdit__ is invoked.
+* Autogenerated DataFormDataFields (TextBox) do not update their UI properly when item is a FormatException occurs and IEditableObject. CancelEdit is invoked
                 
 
-* 
-                  Fixed: In some isolated cases, validation errors permanently block __RadDatform__’s commit operation.
+* In some isolated cases, validation errors permanently block RadDatform’s commit operation
                 
 
-* 
-                  Fixed: In some cases, item-level validation errors are not properly removed from the validation summary.
+* In some cases, item-level validation errors are not properly removed from the validation summary
                 
 
-* 
-                  Fixed: __IsThreeState__ property of __DataFormCheckBoxField__ is not respected.
+* IsThreeState property of DataFormCheckBoxField is not respected
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q3 2011 SP1
+## Q3 2011 SP1
       
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: __RadDataForm__ validation
+* RadDataForm validation
                 
 
-## 
-        Changes for Telerik RadDataForm for SilverlightWPF Q1 2011
+##  Q1 2011
       
 
-* 
-                  The Telerik __RadDataForm__ has been just added to the Telerik WPF suite.
+* RadDataForm has been just added to the Telerik WPF suite.
                 

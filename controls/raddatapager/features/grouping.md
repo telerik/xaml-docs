@@ -11,9 +11,6 @@ position: 8
 # Paging before Grouping
 
 
-
-## 
-
 There are two ways to do grouping with paging. One is to __group before paging__ and other is to __page before grouping__. The first one is the default behaviour.
         
 
@@ -21,7 +18,7 @@ The idea behind the second approach is to do the paging before the grouping so t
         
 
 If you would like to implement the second approach, then I would suggest you to check the
-          {% if site.site_name == 'Silverlight' %}[Paging before Grouping Demo](http://demos.telerik.com/silverlight/#GridView/PagingBeforeGrouping){% endif %}{% if site.site_name == 'WPF' %}[Paging before Grouping Demo](http://demos.telerik.com/wpf){% endif %}
+   {% if site.site_name == 'Silverlight' %}[Paging before Grouping Demo](http://demos.telerik.com/silverlight/#GridView/PagingBeforeGrouping){% endif %}{% if site.site_name == 'WPF' %}[Paging before Grouping Demo](http://demos.telerik.com/wpf){% endif %}
 
 # See Also
 

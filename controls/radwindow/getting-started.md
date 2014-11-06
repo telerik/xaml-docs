@@ -10,36 +10,33 @@ position: 4
 
 # Getting Started
 
-
-
 This tutorial will walk you through the creation of a __RadWindow__ and will show you how to:
 
-* [Declare a RadWindow](#Declare_a_RadWindow)
+* [Declare a RadWindow](#declare-a-radwindow)
 
-* [Show the RadWindow](#Show_the_RadWindow)
+* [Show the RadWindow](#show-the-radwindow)
 
-* [Add content to the RadWindow](#Add_content_to_the_RadWindow)
+* [Add content to the RadWindow](#add-content-to-the-radwindow)
 
-* [Use predefined windows](#Use_predefined_windows)
+* [Use predefined windows](#use-predefined-windows)
 
 ## Declare a RadWindow
 
-
-
->In order to use __RadWindow__control in your projects you have to add references to the following assemblies:
+>In order to use __RadWindow__ control in your projects you have to add references to the following assemblies:
 
 * __Telerik.Windows.Controls__
 
-* __Telerik.Windows.Controls.Navigation__{% if site.site_name == 'WPF' %}
+* __Telerik.Windows.Controls.Navigation__
 
-* __Telerik.Windows.Data__{% endif %}You can find more info 
-            {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html){% endif %}.
+{% if site.site_name == 'WPF' %}
+* __Telerik.Windows.Data__
+{% endif %}
 
-
+You can find more info {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html){% endif %}.
 
 Here is an example of declaring a __RadWindow__.
 
->It's not a good practice do declare your __RadWindow__as visual element in XAML. The only scenario, when it is meaningful to use the __RadWindow__ in XAML, is when it represents the entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
+>It's not a good practice do declare your __RadWindow__ as visual element in XAML. The only scenario, when it is meaningful to use the __RadWindow__ in XAML, is when it represents the entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
 #### __C#__
 
@@ -47,9 +44,7 @@ Here is an example of declaring a __RadWindow__.
 	RadWindow radWindow = new RadWindow();
 	radWindow.Width = 400;
 	radWindow.Height = 300;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -57,13 +52,11 @@ Here is an example of declaring a __RadWindow__.
 	Dim radWindow As New RadWindow()
 	radWindow.Width = 400
 	radWindow.Height = 300
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Show the RadWindow
 
-To open the __RadWindow__ you have to call its__Show()__ method. Here is an example.
+To open the __RadWindow__ you have to call its __Show()__ method. Here is an example.
 
 >tipIn order to make the window modal you have to call the __ShowDialog()__ method. To learn more about modal windows read [here]({%slug radwindow-features-modal-windows%}).
 
@@ -71,17 +64,13 @@ To open the __RadWindow__ you have to call its__Show()__ method. Here is an exam
 
 {{region radwindow-getting-started_2}}
 	radWindow.Show();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radwindow-getting-started_3}}
 	radWindow.Show()
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadWindow_GettingStarted_01.png)
 
@@ -101,9 +90,7 @@ To add content to the __RadWindow__ you have to use the __Content__ property or 
 	Grid grid = new Grid();
 	grid.Background = new SolidColorBrush( Color.FromArgb( 255, 240, 255, 255 ) );
 	radWindow.Content = grid;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -111,9 +98,7 @@ To add content to the __RadWindow__ you have to use the __Content__ property or 
 	Dim grid As New Grid()
 	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
 	radWindow.Content = grid
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadWindow_GettingStarted_02.png)
 
@@ -125,29 +110,21 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 
 * __Alert()__ - shows an alert dialog. This method has 3 overloads. To learn more read [here]({%slug radwindow-features-predefined-dialogs%}).
 
-
 #### __C#__
 
 {{region radwindow-getting-started_6}}
 	RadWindow.Alert( "Hello!" );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radwindow-getting-started_7}}
 	RadWindow.Alert( "Hello!" )
-	{{endregion}}
+{{endregion}}
 
-
-
-
-         
-      ![](images/RadWindow_GettingStarted_03.png)
+![](images/RadWindow_GettingStarted_03.png)
 
 * __Confirm()__ - shows a confirm dialog. This method has 2 overloads. To learn more read [here]({%slug radwindow-features-predefined-dialogs%}).
-
 
 #### __C#__
 
@@ -156,9 +133,7 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 	{
 	    Content = "Are you sure?"
 	} );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -166,16 +141,11 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Are you sure?"
 	RadWindow.Confirm(parameters)
-	{{endregion}}
+{{endregion}}
 
-
-
-
-         
-      ![](images/RadWindow_GettingStarted_04.png)
+![](images/RadWindow_GettingStarted_04.png)
 
 * __Prompt()__ - shows a prompt dialog. This method has 3 overloads. To learn more read [here]({%slug radwindow-features-predefined-dialogs%}).
-
 
 #### __C#__
 
@@ -184,9 +154,7 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 	{
 	    Content = "Enter your name:"
 	} );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -194,13 +162,9 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Enter your name:"
 	RadWindow.Confirm(parameters)
-	{{endregion}}
+{{endregion}}
 
-
-
-
-         
-      ![](images/RadWindow_GettingStarted_05.png)
+![](images/RadWindow_GettingStarted_05.png)
 
 # See Also
 

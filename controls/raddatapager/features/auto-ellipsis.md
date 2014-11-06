@@ -14,7 +14,7 @@ position: 6
 
 ## 
 
->tipIf you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
+>If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
 
 The __AutoEllipsis__ appears when the __PageCount__ is greater than the __NumericButtonCount__. You can specify where the __AutoEllipsis__ is allowed to appear by setting the __AutoEllipsisMode__property to one of the following values: 
 
@@ -31,6 +31,8 @@ Here is an example of a __RadDataPager__ control with an __AutoEllipsisMode__ se
 #### __XAML__
 
 {{region raddatapager-features-auto-ellipsis_0}}
+	
+
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="3"
 	                        DisplayMode="All"
@@ -38,12 +40,7 @@ Here is an example of a __RadDataPager__ control with an __AutoEllipsisMode__ se
 	{{endregion}}
 
 
-
-
-
-
-         
-      ![](images/RadDataPager_Features_AutoEllipsis_01.png)
+![](images/RadDataPager_Features_AutoEllipsis_01.png)
 
 # See Also
 

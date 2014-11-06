@@ -11,15 +11,7 @@ site_name: WPF
 
 # InputGestureText
 
-
-
-The __InputGestureText__ property of __RadMenuItem__ is used to display an
-        input gesture that will execute the command tied to the specified item. It is placed right after the Header text of menu item. When
-        using the predefined ApplicationCommands the __InputGestureText__ is displayed automatically. If you are using a
-        custom Command the __InputGestureText__ property should be set to the required shortcut manually.
-      
-
-## 
+The __InputGestureText__ property of __RadMenuItem__ is used to display an input gesture that will execute the command tied to the specified item. It is placed right after the Header text of menu item. When using the predefined ApplicationCommands the __InputGestureText__ is displayed automatically. If you are using a custom Command the __InputGestureText__ property should be set to the required shortcut manually.   
 
 The following example demonstrates the use of the __InputGestureText__ property:
 
@@ -50,9 +42,7 @@ The following example demonstrates the use of the __InputGestureText__ property:
 	        <telerik:RadMenuItem Header="Custom Command" Command="{Binding MyCommand}" InputGestureText="Ctrl+P" />
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-	{{endregion}}
-
-
+{{endregion}}
 
 And here is a snapshot of the result.
 
@@ -60,14 +50,8 @@ And here is a snapshot of the result.
 
 # See Also
 
- * [
-        Commands
-      ]({%slug radmenu-features-commands%})
+ * [Commands]({%slug radmenu-features-commands%})
 
- * [
-        Menu Items
-      ]({%slug radmenu-features-menuitems%})
+ * [Menu Items]({%slug radmenu-features-menuitems%})
 
- * [
-        Icons
-      ]({%slug radmenu-features-icons%})
+ * [Icons]({%slug radmenu-features-icons%})

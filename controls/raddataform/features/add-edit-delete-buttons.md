@@ -72,7 +72,4 @@ Similarly if the item is editable and the DataForm is enabled, the "Edit" button
 RadDataForm supports editing of types that does not implement the IEditableObject or INotifyPropertyChange interfaces. Still, please note that in this case you cannot take advantage of the cancel edit feature and the "Cancel" button will not be enabled. 
         
 
->tipYou can find a detailed explanation on how to implement the IEditableObject in this:
-            [msdn article](http://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx)
-
-# See Also
+>You can find a detailed explanation on how to implement the IEditableObject in this: [msdn article](http://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx)

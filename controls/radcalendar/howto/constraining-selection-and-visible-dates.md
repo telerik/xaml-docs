@@ -10,10 +10,6 @@ position: 1
 
 # Constraining Selection and Visible Dates
 
-
-
-## 
-
 When certain dates are to be hidden or should not be selected by the user, the Calendar can hide or disable specific date ranges.
 
 The following timeline shows how the selection and display ranges should relate to each other. All dates should fall between the __MinDate__ and __MaxDate__, If __DisplayDateStart__/__End__ are set, the __SelectableDates__ range and all the selected dates must fall within it.
@@ -24,7 +20,7 @@ In the following example the Calendar has DisplayDateStart set to 6 Aug, while t
 
 ![calendar display Selectable Date Start 1](images/calendar_displaySelectableDateStart1.png)
 
-The __RadCalendar__ has several static methods (__IsDisplayDateValid__, __IsDisplayDateStartValid__, __IsDisplayDateEndValid__, __IsSelectableDateStartValid__, __IsSelectableDateEndValid__ ) that can check whether the desired values are valid for the given calendar, for example:
+The __RadCalendar__ has several static methods (__IsDisplayDateValid__, __IsDisplayDateStartValid__, __IsDisplayDateEndValid__, __IsSelectableDateStartValid__, __IsSelectableDateEndValid__) that can check whether the desired values are valid for the given calendar, for example:
 
 #### __C#__
 
@@ -41,9 +37,6 @@ The __RadCalendar__ has several static methods (__IsDisplayDateValid__, __IsDisp
 	{
 	    calendar.SelectableDateStart = DateTime.Today.AddDays(-5);
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-To add constraints for specific dates, use the __TemplateSelector__ properties. 
-        
+To add constraints for specific dates, use the __TemplateSelector__ properties.

@@ -18,12 +18,7 @@ site_name: Silverlight
 The purpose of this tutorial is to show you how to integrate __RadChart__ and __RadContextMenu__ so they can nicely work together.
 
 The final result should look like the snapshot below.
-
-
-
-
-         
-      ![](images/RadChart_HowToRadContextMenuIntegration_010.png)
+![](images/RadChart_HowToRadContextMenuIntegration_010.png)
 
 Basically, the approach that will be demonstrated here combines the [MVVM support of RadChart]({%slug radchart-how-to-mvvm-support%}) with [RadChart data-binding]({%slug radchart-populating-with-data-data-binding-support-overview%}), and the data-binding functionality supported by the __RadMenu__ (__RadContextMenu__) control.
 
@@ -673,11 +668,11 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 You should note several things in the above code snippet:
 
-* Notice that the __ContextMenu__ is data bound to a property of your chart DatabItem instance. The __ChartDataItem__object exposes the desired menu items' structure (i.e. the chart control is data bound to a List of __ChartDataItem__ objects, and the __ChartDataItem__ class exposes __MenuItems__ property. __{Binding____DataItem.MenuItems}__ holds a reference to a specific __ChartDataItem__ instance).
+* Notice that the __ContextMenu__ is data bound to a property of your chart DatabItem instance. The __ChartDataItem__ object exposes the desired menu items' structure (i.e. the chart control is data bound to a List of __ChartDataItem__ objects, and the __ChartDataItem__ class exposes __MenuItems__ property. __{Binding____DataItem.MenuItems}__ holds a reference to a specific __ChartDataItem__ instance).
 
 * The __RadContextMenu__ can support hierarchical Menu structure as well (as with stand-alone Menu you need to create a __HierarchicalDataTemplate__ that specifies the __ItemsSource__, __ItemTemplate__ and other properties of the item's children).
 
-* For Silverlight you can use the __ContainerBindings__ mechanism implemented by Telerik that allows you to bind properties of an item container (__RadMenuItem__, __RadTreeViewItem__, etc.) to the properties of the data object. The container bindings are always set through a __DataTemplate__ or __HierarchicalDataTemplate__.
+* For Silverlight you can use the __ContainerBindings__ mechanism implemented by Telerik that allows you to bind properties of an item container ( __RadMenuItem__, __RadTreeViewItem__, etc.) to the properties of the data object. The container bindings are always set through a __DataTemplate__ or __HierarchicalDataTemplate__.
 
 The code snippet below shows you the full XAML code:
 
@@ -823,10 +818,10 @@ The code snippet below shows you the full XAML code:
 {{region radchart-howto-integration-radcontextmenu_14}}
 	Me.DataContext = New ChartViewModel()
 	private void OnContextMenuClick(Object sender, Telerik.Windows.RadRoutedEventArgs e)
-	   ' Get the clicked item
+	   ' Get the clicked item'
 	   Dim menuItem As MenuItem = TryCast((TryCast(e.OriginalSource, RadMenuItem)).Header, MenuItem)
 	   If menuItem.Text = "Foo 0" Then
-	         '...
+	         '...'
 	   End If
 	{{endregion}}
 

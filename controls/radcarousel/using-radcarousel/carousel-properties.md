@@ -11,19 +11,14 @@ position: 2
 # Controlling RadCarousel Appearance
 
 
-
-## 
-
 __ScrollBar Visibility Settings__
 
 The scrolling functionality of RadCarousel employs standard WPF ScrollBar controls. Their visibility can be controlled through the __VerticalScrollBarVisibility__ and __HorizontalScrollBarVisibility__ properties. Scrolling in RadCarousel is two-directional - items moving towards the end point of the path or in the opposite direction, regardless of the scroll bar being used. Thus deciding whether to use a horizontal or a vertical (or none at all) scroll bar is purely a matter of personal preference.
 
 
-
 __Reflection Settings__
 
 RadCarousel has the ability to reflect its items thus giving them a pseudo 3D look and feel. The way the reflection is rendered can be controlled through the __ReflectionSettings__ class and its members. This object holds settings for manually adjusting the reflection: the distance to the visual element, the opacity, size, visibility, angle, etc.
-
 
 
 __Using Panels in RadCarousel__
@@ -35,11 +30,9 @@ RadCarousel depends on Panel controls for laying out its children (similar to WP
 Once a panel control is set, getting access to it can be achieved by using the Panel property. This property returns an object of type Panel.
 
 
-
 Another way of getting the panel is by using the FindCarouselPanel() function that returns an instance of RadCarouselPanel (if used) or null.
 
 This function should be used if the panel set as an items panel of the RadCarousel control is the default RadCarouselPanel or any other custom carousel panel that derives from it.
-
 
 
 __Automatic Generation of Data Templates__

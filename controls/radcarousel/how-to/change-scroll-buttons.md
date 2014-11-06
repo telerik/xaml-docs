@@ -11,23 +11,20 @@ site_name: WPF
 
 # Change the predefined scroll buttons
 
+RadCarousel does provide a built-in scroll bar that enables you to move the items left, right or directly to the last or first page. However, if the default view does not meet your requirements, you may easily predefine them and change their style. Basically, you need to take a couple of steps:
 
-
-## 
-
-The RadCarousel does provide a built-in scroll bar that enables you to move the items left, right or directly to the last or first page. However, if the default view does not meet your requirements, you may easily predefine them and change their style. Basically, you need to take a couple of steps:
-
-* Set the HorizontalScrollBarVisibility property of the RadCarousel to "Hidden";
+* Set the HorizontalScrollBarVisibility property of RadCarousel to "Hidden";
 
 * Define the required CarouselScrollButtons and handle their Click events;
 
-* Specify the ResourceDictionary so that the Themer is applied correctly.
+* Specify the ResourceDictionary so that the Theme is applied correctly.
 
 Finally, the implementation should be as follows:
 
 #### __XAML__
 
 {{region radcarousel-how-to-change-scroll-buttons_0}}
+
 	<Window.Resources>
 	 <ResourceDictionary>
 	  <ResourceDictionary.MergedDictionaries>
@@ -59,6 +56,7 @@ Finally, the implementation should be as follows:
 #### __C#__
 
 {{region radcarousel-how-to-change-scroll-buttons_1}}
+
 	private void pageDownButton_Click(object sender, RoutedEventArgs e)
 	 {
 	  this.RadCarousel1.FindCarouselPanel().PageDown();
@@ -82,6 +80,7 @@ Finally, the implementation should be as follows:
 #### __VB.NET__
 
 {{region radcarousel-how-to-change-scroll-buttons_2}}
+
 	Private Sub pageDownButton_Click(sender As Object, e As RoutedEventArgs)
 	 Me.RadCarousel1.FindCarouselPanel().PageDown()
 	End Sub
@@ -99,12 +98,7 @@ Finally, the implementation should be as follows:
 
 
 Once you are done, the RadCarousel should be visualized as the image below:
-
-
-
-
-         
-      ![](images/RadCarousel_ChangeScrollButtons.png)
+![](images/RadCarousel_ChangeScrollButtons.png)
 
 Still, you are free to change the style of the buttons just as you want them to be. 
 

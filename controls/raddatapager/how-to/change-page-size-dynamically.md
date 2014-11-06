@@ -10,10 +10,6 @@ position: 3
 
 # Change PageSize dynamically
 
-
-
-## 
-
 Generally, the page size of a RadDataPager can be set by the corresponding PageSize property. However, in some cases you may require it to be changed dynamically in run time. 
 
 So, if for example you want to use a RadComboBox for changing the size and you want it defined in the template of the RadDataPager, you need to do a couple of things;
@@ -22,7 +18,7 @@ So, if for example you want to use a RadComboBox for changing the size and you w
 
 #### __C#__
 
-{{region raddatapager-change-page-size-dynamically_0}}
+	{{region raddatapager-change-page-size-dynamically_0}}
 	public class CountConverter : IValueConverter
 	 {
 	  public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -51,7 +47,7 @@ So, if for example you want to use a RadComboBox for changing the size and you w
 
 #### __VB.NET__
 
-{{region raddatapager-change-page-size-dynamically_1}}
+	{{region raddatapager-change-page-size-dynamically_1}}
 	Public Class CountConverter
 	 Implements IValueConverter
 	 Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object
@@ -78,7 +74,7 @@ So, if for example you want to use a RadComboBox for changing the size and you w
 
 #### __XAML__
 
-{{region raddatapager-change-page-size-dynamically_2}}
+	{{region raddatapager-change-page-size-dynamically_2}}
 	<StackPanel Grid.Column="1" Margin="5,0" Orientation="Horizontal" Visibility="{Binding PagerControlsVisibility.TextControlVisibility, RelativeSource={RelativeSource TemplatedParent}}">
 	          <telerik:RadComboBox ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource countConverter}}" SelectedValue="{Binding PageSize, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" x:Name="radComboBox" />  
 	</StackPanel>
@@ -90,7 +86,7 @@ So, if for example you want to use a RadComboBox for changing the size and you w
 
 #### __XAML__
 
-{{region raddatapager-change-page-size-dynamically_3}}
+	{{region raddatapager-change-page-size-dynamically_3}}
 	<Grid x:Name="LayoutRoot" DataContext="{Binding Source={StaticResource SampleDataSource}}">
 	    <Grid.RowDefinitions>
 	 <RowDefinition Height="auto"/>
@@ -108,11 +104,8 @@ So, if for example you want to use a RadComboBox for changing the size and you w
 Once you created all the necessary elements, your application should be displayed as follows:
 
 
-
-
-         
-      ![](images/RadDataPager_ChangePageSizeDynamically.png)
+![](images/RadDataPager_ChangePageSizeDynamically.png)
 
 
 
->tipYou may download a full runnable sample project illustrating the approach described in this [Code Library](http://www.telerik.com/community/code-library/silverlight/datapager/dynamically-change-the-pagesize-of-raddatapager.aspx).
+>You may download a full runnable sample project illustrating the approach described in this [Code Library](http://www.telerik.com/community/code-library/silverlight/datapager/dynamically-change-the-pagesize-of-raddatapager.aspx).

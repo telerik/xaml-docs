@@ -74,6 +74,3 @@ Below you can see an example of how all those resources can be modified:
 
 
 
-Once they are modified, RadCalculator will look like:
-
-![Rad Calculator-Modified](images/RadCalculator-Modified.png)

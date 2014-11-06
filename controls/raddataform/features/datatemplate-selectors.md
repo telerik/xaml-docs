@@ -11,11 +11,9 @@ position: 2
 # DataTemplate Selectors
 
 
-
 This article shows how to conditionally load different __ReadOnly/Edit DataTemplates__, according to __RadDataForm’s CurrentItem__. For some additional information on __DataTemplateSelectors__, please refer to [General FAQ]({%slug common-faq%}) documentation article.
       
 
-## 
 
 >__DataTemplate selectors__ affect both __RadDataForm’s__ auto-generated fields and manually defined ones.
 
@@ -25,6 +23,7 @@ For this tutorial we will extend our example from the [Getting Started]({%slug r
 #### __[XAML] Example 1: In the EditTemplateSelector property of RadDataForm we define custom DataTemplateSelector templates.__
 
 {{region raddataform-datatemplate-selectors_0}}
+
 			<<Grid>
 				<Grid.Resources>
 					<DataTemplate x:Key="MyTemplate">
@@ -80,11 +79,13 @@ For this tutorial we will extend our example from the [Getting Started]({%slug r
 
 
 Here we define a __DataTemplateSelector__(__Example 2__):
-		{% if site.site_name == 'WPF' %}
+
+{% if site.site_name == 'WPF' %}
 
 #### __[C#] Example 2:__
 
 {{region raddataform-datatemplate-selectors_0}}
+
 		public class EmployeesEditTemplateSelector : Telerik.Windows.Controls.DataTemplateSelector
 		{
 			public override DataTemplate SelectTemplate(object item, DependencyObject container)
@@ -114,6 +115,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 #### __[VB.NET] Example 2:__
 
 {{region raddataform-datatemplate-selectors_0}}
+
 	Public Class EmployeesEditTemplateSelector
 			Inherits Telerik.Windows.Controls.DataTemplateSelector
 	
@@ -138,6 +140,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 #### __[C#] Example 2:__
 
 {{region raddataform-datatemplate-selectors_1}}
+
 		public class EmployeesEditTemplateSelector : System.Windows.Controls.DataTemplateSelector
 		{
 			public override DataTemplate SelectTemplate(object item, DependencyObject container)
@@ -189,15 +192,15 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 {% endif %}
 
-As a result when __RadDataForm__ is in edit mode the background color of the *"Salary" *__DataFormDataField__ will change to red (__Figure 1__), when the employee's salary is greater than 2500 or blue when it is less.
+As a result when __RadDataForm__ is in edit mode the background color of the *"Salary"* __DataFormDataField__ will change to red (__Figure 1__), when the employee's salary is greater than 2500 or blue when it is less.
 		
 
 __Figure 1:__ Displays the red template as the employee's salary is greater than 2500.
-		  ![raddataform-templateselector](images/raddataform-templateselector.png)
+
+![raddataform-templateselector](images/raddataform-templateselector.png)
 
 >An analogical approach should be used to set a __ReadOnlyTemplateSelector__.
           
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository
-			[here](https://github.com/telerik/xaml-sdk), after navigating to __DataForm/DataTemplateSelector__.
+>You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __DataForm/DataTemplateSelector__.
 		  

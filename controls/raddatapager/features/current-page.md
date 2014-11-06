@@ -11,12 +11,9 @@ position: 4
 # Current Page
 
 
+>If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
 
-## 
-
->tipIf you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
-
-The __RadDataPager__ manages the current page internally depending on the user actions, but you are also able to modify it from the outside. For this purpose the __RadDataPager__ exposes the __PageIndex__ property. It contains the index of the currently selected page.
+ __RadDataPager__ manages the current page internally depending on the user actions, but you are also able to modify it from the outside. For this purpose the __RadDataPager__ exposes the __PageIndex__ property. It contains the index of the currently selected page.
 
 >The __PageIndex__ has a start value of 0, which means that the first page has index equal to 0, the second - to 1, the third - to 2, etc.
 
@@ -26,7 +23,7 @@ Before getting to the XAML code for the example you'll have to first create a co
 
 #### __C#__
 
-{{region raddatapager-features-current-page_0}}
+	{{region raddatapager-features-current-page_0}}
 	public class IndexToNumberConverter : IValueConverter
 	{
 	    public object Convert( object value, Type targetType, object parameter, CultureInfo culture )
@@ -44,7 +41,7 @@ Before getting to the XAML code for the example you'll have to first create a co
 
 #### __VB.NET__
 
-{{region raddatapager-features-current-page_1}}
+	{{region raddatapager-features-current-page_1}}
 	Public Class IndexToNumberConverter
 	 Implements IValueConverter
 	 Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
@@ -62,7 +59,7 @@ Here is the XAML for the example.
 
 #### __XAML__
 
-{{region raddatapager-features-current-page_2}}
+	{{region raddatapager-features-current-page_2}}
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <Grid.RowDefinitions>
@@ -97,13 +94,7 @@ Here is the XAML for the example.
 	</Grid>
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadDataPager_Features_CurrentPage_01.png)
+![](images/RadDataPager_Features_CurrentPage_01.png)
 
 # See Also
 

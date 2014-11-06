@@ -11,9 +11,6 @@ position: 0
 # Filter RadGridView
 
 
-
-## 
-
 See this [article](90344268-B620-46B6-9613-DCBD8466948B#Filter_RadGridView) for more information.
         
 

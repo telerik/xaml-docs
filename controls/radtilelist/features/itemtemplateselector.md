@@ -10,13 +10,10 @@ position: 1
 
 # ItemTemplateSelector
 
-
-
 This article will show you how to conditionally apply a different data template to RadTileList tiles using the ItemTemplateSelector property.      
       
 
-Assume we have a gridview bound to a collection of clubs. Each club has a property StadiumCapacity. 
-      What we want to achieve is to apply one data template if the capacity is greater than 50 000 and another otherwise:
+Assume we have a gridview bound to a collection of clubs. Each club has a property StadiumCapacity.  What we want to achieve is to apply one data template if the capacity is greater than 50 000 and another otherwise:
       
 
 ![Rad Tile List Item Template Selector](images/RadTileList_ItemTemplateSelector.png)
@@ -33,6 +30,7 @@ To do so follow these steps:
 #### __C#__
 
 {{region radtilelist-itemtemplateselector_0}}
+
 	    public class MyTileTemplateSelector : DataTemplateSelector
 	    {
 	        public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
@@ -67,6 +65,7 @@ In this case we have two different DataTemplates that could be applied - bigStad
 #### __XAML__
 
 {{region radtilelist-itemtemplateselector-1}}
+
 	  <my:MyTileTemplateSelector x:Key="myTileTemplateSelector">
 	            <my:MyTileTemplateSelector.bigStadium>
 	                <DataTemplate>
@@ -115,7 +114,8 @@ In this case we have two different DataTemplates that could be applied - bigStad
 #### __XAML__
 
 {{region radtilelist-itemtemplateselector-2}}
-	  <telerik:RadTileList  x:Name="RadTileList" 
+
+	<telerik:RadTileList  x:Name="RadTileList" 
 	                        ItemTemplateSelector="{StaticResource myTileTemplateSelector}" 
 	                        ItemsSource="{Binding Clubs}"
 	                        ScrollViewer.HorizontalScrollBarVisibility="Visible"/>

@@ -11,44 +11,34 @@ position: 3
 # Visual Structure
 
 
-
-## Visual Structure
-
 __RadCollectionNavigator__ displays two sets of buttons, separated into two groups according to the purpose of their commands: Navigation and Editing.
         
 
 The  __navigation buttons__ come as it follows:
         
 
-* 
-            Move to first item
+* Move to first item
           
 
-* 
-            Move to previous item
+* Move to previous item
           
 
-* 
-            Move to next item
+* Move to next item
           
 
-* 
-            Move to last item
+* Move to last item
           
 
 And the __editing buttons__:
         
 
-* 
-            Add new item
+* Add new item
           
 
-* 
-            Edit current item
+* Edit current item
           
 
-* 
-            Delete item
+* Delete item
           
 
 

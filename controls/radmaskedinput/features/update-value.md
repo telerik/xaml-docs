@@ -20,13 +20,13 @@ The __UpdateValueEvent__ property of the __RadMaskedTextInput__ controls allows 
 
 {{region radmaskedinput-features-update-value_0}}
 	<!--  Setting UpdateValueEvent to LostFocus  -->
-	        <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
-	                                Mask="c3"
-	                                UpdateValueEvent="LostFocus" />
+    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
+                            Mask="c3"
+                            UpdateValueEvent="LostFocus" />
 	<!--  Setting UpdateValueEvent to PropertyChanged  -->
-	        <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput2" 
-	                                Mask="c3"
-	                                UpdateValueEvent="PropertyChanged" />
+    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput2" 
+                            Mask="c3"
+                            UpdateValueEvent="PropertyChanged" />
 	{{endregion}}
 
 

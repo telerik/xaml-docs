@@ -19,16 +19,16 @@ In the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls if in t
 #### __XAML__
 
 {{region radmaskedinput-howto-allow-skip-placeholders_0}}
-	        <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
-	                                       HorizontalAlignment="Center"
-	                                       Culture="en-US"
-	                                       EmptyContent="Enter digits"
-	                                       Mask="#9.0"
-	                                       SelectionOnFocus="SelectAll"
-	                                       SpinMode="PositionAndValue"
-	                                       TextMode="PlainText"
-	                                       UpdateValueEvent="LostFocus"
-	                                       Value="12345" />
+    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
+                                   HorizontalAlignment="Center"
+                                   Culture="en-US"
+                                   EmptyContent="Enter digits"
+                                   Mask="#9.0"
+                                   SelectionOnFocus="SelectAll"
+                                   SpinMode="PositionAndValue"
+                                   TextMode="PlainText"
+                                   UpdateValueEvent="LostFocus"
+                                   Value="12345" />
 	{{endregion}}
 
 
@@ -40,17 +40,17 @@ However, if you need to define a consecutive input so that entering a new digit 
 #### __XAML__
 
 {{region radmaskedinput-howto-allow-skip-placeholders_1}}
-	        <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
-	                                       HorizontalAlignment="Center"
-	                                       AllowSkipPlaceholders="False"
-	                                       Culture="en-US"
-	                                       EmptyContent="Enter digits"
-	                                       Mask="#9.0"
-	                                       SelectionOnFocus="SelectAll"
-	                                       SpinMode="PositionAndValue"
-	                                       TextMode="PlainText"
-	                                       UpdateValueEvent="LostFocus"
-	                                       Value="12345" />
+    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
+                                   HorizontalAlignment="Center"
+                                   AllowSkipPlaceholders="False"
+                                   Culture="en-US"
+                                   EmptyContent="Enter digits"
+                                   Mask="#9.0"
+                                   SelectionOnFocus="SelectAll"
+                                   SpinMode="PositionAndValue"
+                                   TextMode="PlainText"
+                                   UpdateValueEvent="LostFocus"
+                                   Value="12345" />
 	{{endregion}}
 
 

@@ -13,12 +13,4 @@ position: 0
 
 
 ## Telerik RadMaskedInput suite of controls - Q3 2011
-      The value of the 	
-      {% if site.site_name == 'Silverlight' %}__TabNavigation__{% endif %}{% if site.site_name == 'WPF' %}__KeyboardNavigation.TabNavigation__{% endif %}
-	property isn't used in the __RadMaskedInput__ controls tab navigation implementation. 
-	From now on you need to set the __SectionsNavigationMode__ property in order to 
-	configure the tab navigation in the __RadMaskedInput__ controls. You can find
-	more information about the __SectionsNavigationMode__ property in the 
-		[Keyboard and Mouse Support]({%slug radmaskedinput-features-keyboard-mouse%})
-	 article.
-      
+The value of the {% if site.site_name == 'Silverlight' %} __TabNavigation__ {% endif %}{% if site.site_name == 'WPF' %} __KeyboardNavigation.TabNavigation__ {% endif %} property isn't used in the __RadMaskedInput__ controls tab navigation implementation. From now on you need to set the __SectionsNavigationMode__ property in order to configure the tab navigation in the __RadMaskedInput__ controls. You can find more information about the __SectionsNavigationMode__ property in the [Keyboard and Mouse Support]({%slug radmaskedinput-features-keyboard-mouse%}) article.

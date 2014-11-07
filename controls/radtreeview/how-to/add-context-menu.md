@@ -10,17 +10,12 @@ position: 9
 
 # Add Context Menu
 
-
-
 Telerik RadControls provide a very powerful __ContextMenu__ control, that supports right click, modifier keys and that can be easily attached to any visual element. In this article you will see how to attach __RadContextMenu__ to a data-bound __RadTreeView__ and perform actions on the clicked treeview items, depending on the selection in the context menu.
-	  
 
-## 
-
-Here you can see how the end result will look like: ![](images/RadTreeView_HowToAddContextMenu_001.png)
+Here you can see how the end result will look like: 
+![](images/RadTreeView_HowToAddContextMenu_001.png)
 
 For the purpose of this tutorial we will use the following __TreeView__ declaration:
-		
 
 #### __XAML__
 
@@ -51,17 +46,13 @@ For the purpose of this tutorial we will use the following __TreeView__ declarat
 			</Grid>
 	{{endregion}}
 
-
-
 >The __local__ alias is pointing to the namespace where the __RadTreeViewSampleData__ class is defined.
-			
 
-For more information about setting the __ItemsSource__property and data binding read the topic about [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
-		
+For more information about setting the __ItemsSource__ property and data binding read the topic about [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
 
 Having the above declaration, you may want to add a context menu only on the items of type "League". Then you will need to update your __League__:
-		{% if site.site_name == 'Silverlight' %}
-
+		
+{% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
 {{region radtreeview-how-to-add-context-menu_1}}
@@ -78,9 +69,10 @@ Having the above declaration, you may want to add a context menu only on the ite
 					</telerik:RadContextMenu.ContextMenu>
 				</TextBlock>
 			</telerik:HierarchicalDataTemplate>
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
@@ -103,7 +95,6 @@ Having the above declaration, you may want to add a context menu only on the ite
 {% endif %}
 
 Next, we need to add a handler for the __RadContextMenu.Opened__ event, where we will use the GetClickedElement<T> extension method to get the clicked __RadTreeViewItem__:
-		
 
 #### __C#__
 
@@ -116,8 +107,6 @@ Next, we need to add a handler for the __RadContextMenu.Opened__ event, where we
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-how-to-add-context-menu_7}}
@@ -128,10 +117,7 @@ Next, we need to add a handler for the __RadContextMenu.Opened__ event, where we
 		End Sub
 	{{endregion}}
 
-
-
-Now, we can handle the click events of the __RadMenuItems__. To  add a handler for these __Click__ events, add the following line in the user control constructor:
-		
+Now, we can handle the click events of the __RadMenuItems__. To  add a handler for these __Click__ events, add the following line in the user control constructor:		
 
 #### __C#__
 
@@ -139,21 +125,15 @@ Now, we can handle the click events of the __RadMenuItems__. To  add a handler f
 	this.radTreeView.AddHandler( RadMenuItem.ClickEvent, new RoutedEventHandler( OnContextMenuClick ) );
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-how-to-add-context-menu_3}}
 	Me.radTreeView.[AddHandler](RadMenuItem.ClickEvent, New RoutedEventHandler(AddressOf OnContextMenuClick))
 	{{endregion}}
 
-
-
 >The __AddHandler()__ extension method is defined in the __Telerik.Windows__ namespace. You should add “__using Telerik.Windows;__” on top of your code behind if you don’t already have it.
-		  
 
 The __OnContextMenuClick()__ method uses the clicked __RadTreeViewItem__ and performs the selected action:
-		
 
 #### __C#__
 
@@ -179,9 +159,7 @@ The __OnContextMenuClick()__ method uses the clicked __RadTreeViewItem__ and per
 				break;
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -205,16 +183,13 @@ The __OnContextMenuClick()__ method uses the clicked __RadTreeViewItem__ and per
 					Exit Select
 			End Select
 		End Sub
-	{{endregion}}
+{{endregion}}
 
 
-
-Here is the final result: ![](images/RadTreeView_HowToAddContextMenu_010.png)
+Here is the final result: 
+![](images/RadTreeView_HowToAddContextMenu_010.png)
 
 # See Also
-
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
-
  * [Disable Drop at Specific Location]({%slug radtreeview-how-to-disable-drop-specific-location%})
-
  * [Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection]({%slug radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection%})

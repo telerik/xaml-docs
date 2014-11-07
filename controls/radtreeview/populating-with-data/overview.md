@@ -10,14 +10,9 @@ position: 0
 
 # Overview
 
-
-
-## 
-
 In order to display items, you have to populate the __RadTreeView__ control with some data. You can do this in two ways:
 
 * Manually, by adding items to the __Items__ collection.
-
 * With data binding, by using the __ItemsSource__ property.
 
 >You can't have items added manually to the __Items__ collection and set the __ItemsSource__ at the same time.
@@ -26,9 +21,9 @@ In this section you will find:
 
 * [DataBinding - Overview]({%slug radtreeview-populating-with-data-overview%}) - here you will find information about the supported data sources and __RadTreeView's__ data binding basics.
 
-* [Populating with Data - Declaratively]({%slug radtreeview-populating-with-data-declaratively%}) - explains how to populate your __RadTreeView__control with some static data in XAML.
+* [Populating with Data - Declaratively]({%slug radtreeview-populating-with-data-declaratively%}) - explains how to populate your __RadTreeView__ control with some static data in XAML.
 
-* [Populating with Data - In Code-Behind]({%slug radtreeview-populating-with-data-in-code-behind%}) - explains how to populate your __RadTreeView__control with some static data programmatically.
+* [Populating with Data - In Code-Behind]({%slug radtreeview-populating-with-data-in-code-behind%}) - explains how to populate your __RadTreeView__ control with some static data programmatically.
 
 * [Populating RadTreeView with Dynamic Data]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}) - explains how to use __Hierarchical Data Templates__.
 

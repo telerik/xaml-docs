@@ -10,18 +10,13 @@ position: 25
 
 # Expand and Select Item with Load on Demand Enabled RadTreeView
 
-
-
-## 
-
 This tutorial will demonstrate you how to __expand__ and __select__ an item when the __RadTreeView__ is in load on demand mode (__IsLoadOnDemandEnabled__ property is set to __True__).
-        
 
-For the purpose of this topic a __RadTreeView__ which is data bound to a business object will be used. The next several code snippets show you the __RadTreeView__declaration and the business object structure.
-        {% if site.site_name == 'Silverlight' %}
+For the purpose of this topic a __RadTreeView__ which is data bound to a business object will be used. The next several code snippets show you the __RadTreeView__ declaration and the business object structure.
+
+{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
-
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_0}}
 	        <Grid>
 	            <Grid.Resources>
@@ -50,12 +45,12 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 	                <TextBox x:Name="userInput" />
 	            </StackPanel>
 	        </Grid>
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 
 #### __XAML__
-
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_22}}
 	        <Grid>
 	            <Grid.Resources>
@@ -84,15 +79,13 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 	                <TextBox x:Name="userInput" />
 	            </StackPanel>
 	        </Grid>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
 The data source for the radtreeview will be consisted of __DataItems__, only.
-        
 
 #### __C#__
-
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_1}}
 	public class DataItem : ViewModelBase
 	    {
@@ -123,12 +116,9 @@ The data source for the radtreeview will be consisted of __DataItems__, only.
 	            }
 	        }
 	    }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_2}}
 	Public Class DataItem
 	        Inherits ViewModelBase
@@ -153,29 +143,21 @@ The data source for the radtreeview will be consisted of __DataItems__, only.
 	            End Get
 	        End Property
 	    End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Set a __DataItem__ instance to the __ItemsSource__ property of the __RadTreeView__ and create some simple data like in the code snippet below.
-        
+Set a __DataItem__ instance to the __ItemsSource__ property of the __RadTreeView__ and create some simple data like in the code snippet below.        
 
 #### __C#__
-
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_3}}
 	this.treeView.ItemsSource = Enumerable.Range(1, 10).Select(i => new DataItem()
 	{
 	    Title = string.Format("Item {0}", i)
 	}).ToList();
-	{{endregion}}
-
-
+{{endregion}}
 
 The actual loading on demand of the business items can be implemented in the getter of the __Children__ property of the __DataItem__ class. The LoadOnDemand feature of the RadTreeView control is used to visualize the expander icon in the front of each RadTreeViewItem. We do not use the built-in LoadOnDemand event to load the business items into the control. Instead the HierarchicalDataTemplate will trigger the getter of its ItemsSource property whenever the expander is clicked. For demonstration purposes we will load fixed number of business data every time the getter is triggered and the __children__ field is not yet instantiated.
-        
 
 #### __C#__
-
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_16}}
 	public List<DataItem> Children
 	{
@@ -193,12 +175,9 @@ The actual loading on demand of the business items can be implemented in the get
 	        return this.children;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
-
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_17}}
 	Public ReadOnly Property Children() As List(Of DataItem)
 	        Get
@@ -214,15 +193,11 @@ The actual loading on demand of the business items can be implemented in the get
 	            Return Me.children
 	        End Get
 	    End Property
-	{{endregion}}
-
-
+{{endregion}}
 
 The next step is to implement the custom logic for creating the path in order to use the [BringPathIntoView()]({%slug radtreeview-features-treeviewitem-bring-into-view-support%}) method.
-        
 
 #### __C#__
-
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_18}}
 	private void Button_Click_1(object sender, RoutedEventArgs e)
 	{
@@ -268,9 +243,7 @@ The next step is to implement the custom logic for creating the path in order to
 	    }
 	    return path.TrimEnd('\\');
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
 
@@ -313,17 +286,12 @@ The next step is to implement the custom logic for creating the path in order to
 	        Next
 	        Return path.TrimEnd("\"c)
 	    End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 The final result after bringing *Item 2.3.1.4* should look like this
-        ![Rad Tree View How To Expand And Select Item](images/RadTreeView_HowTo_ExpandAndSelectItem.png)
+![Rad Tree View How To Expand And Select Item](images/RadTreeView_HowTo_ExpandAndSelectItem.png)
 
 # See Also
-
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
-
  * [Work with Selection]({%slug radtreeview-how-to-how-to-work-with-selection%})
-
  * [Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item]({%slug radtreeview-how-to-get-previous-next-parent-sibling-node%})

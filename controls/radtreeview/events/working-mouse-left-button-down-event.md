@@ -10,8 +10,6 @@ position: 2
 
 # Working with MouseLeftButtonDown Event
 
-
-
 The purpose of this tutorial is to show you how to handle the __MouseLeftButtonDown__ event of the __RadTreeView/Item__. 
 
 ## Attaching to the MouseLeftButtonDown Event
@@ -24,9 +22,7 @@ Probably the first solution crossing your mind is to attach to the __MouseLeftBu
 	<telerik:RadTreeView x:Name="radTreeView" MouseLeftButtonDown="radTreeView_MouseLeftButtonDown"/>
 	{{endregion}}
 
-
-
-And this is the most straight-forward way to do it. However, if you use the above approach, you __won't be able__ to track the __MouseLeftButtonDown__ event. The reason - by design, the __RadTreeView____items__ mark the __MouseLeftButtonDown__ event as __handled__.
+And this is the most straight-forward way to do it. However, if you use the above approach, you __won't be able__ to track the __MouseLeftButtonDown__ event. The reason - by design, the __RadTreeView__ items mark the __MouseLeftButtonDown__ event as __handled__.
 
 Telerik RadControls API allows you to also listen for events that have been already handled. You should attach to the __MouseLeftButtonDown__ event using the __AddHandler__ extension methods. Check out the code snippet below and be sure that you are using/importing the __Telerik.Windows__ namespace.
 
@@ -41,8 +37,6 @@ Telerik RadControls API allows you to also listen for events that have been alre
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-events-working-mouse-left-button-down-event_2}}
@@ -53,10 +47,6 @@ Telerik RadControls API allows you to also listen for events that have been alre
 	End Sub
 	{{endregion}}
 
-
-
 # See Also
-
  * [Events - Overview]({%slug radtreeview-events-overview%})
-
  * [Working with ItemPrepared Event]({%slug radtreeview-events-working-with-item-prepared-event%})

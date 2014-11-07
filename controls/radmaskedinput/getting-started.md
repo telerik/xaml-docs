@@ -19,12 +19,10 @@ The __RadMaskedInput__ controls use a mask to distinguish between proper and imp
 
 * Optional input characters. 
 
-* 
-					The type of input expected at a given position in the mask; for example, a digit, or an alphabetic or alphanumeric character.
+* The type of input expected at a given position in the mask; for example, a digit, or an alphabetic or alphanumeric character.
 				
 
-* 
-					Mask literals, or characters that should appear directly in the __RadMaskedInput__ control; for example, the hyphens (-) in a phone number, or the currency symbol in a price.
+* Mask literals, or characters that should appear directly in the __RadMaskedInput__ control; for example, the hyphens (-) in a phone number, or the currency symbol in a price.
 				
 
 When a __RadMaskedInput__ control is displayed at run time, it represents the mask as a series of prompt characters and optional literal characters. Each editable mask position, representing a required or optional input, is shown with a single placeholder character. For example, the number sign (#) is used as a placeholder for a numeric character input. You can use the [Placeholder]({%slug radmaskedinput-features-placeholder%}) property to specify a custom placeholder character. The [EmptyContent]({%slug radmaskedinput-features-watermark%}) property could be used to determine what will be displayed when the user specifies a null value and the control loses its focus.
@@ -56,42 +54,11 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 * __[RadMaskedDateTimeInput]({%slug radmaskedinput-features-controls-datetime%})__ - the control is used to display __DateTime__ values. This is why its __Value__ property is of type __System.DateTime?__.
 					
 
-## Declare RadMaskedInput controls{% if site.site_name == 'Silverlight' %}
+## Declare RadMaskedInput controls
 
->
+>{% if site.site_name == 'Silverlight' %}In order to use the __RadMaskedInput__ controls in your projects you have to add references to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Input__<br/>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}{% if site.site_name == 'WPF' %}In order to use the __RadMaskedInput__ controls in your projects you have to add references to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Input__<br/>* __Telerik.Windows.Data__<br/>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}
 
-
-								In order to use the __RadMaskedInput__ controls in your projects you have to add references to the following assemblies:
-							
-
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Controls.Input__
-
-
-								You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-							{% endif %}{% if site.site_name == 'WPF' %}
-
->
-
-
-
-
-								In order to use the __RadMaskedInput__ controls in your projects you have to add references to the following assemblies:
-							
-
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Controls.Input__
-
-* __Telerik.Windows.Data__
-
-
-								You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
-							{% endif %}
-
-
-					After adding references to the aforementioned dlls, you can declare a new __RadMaskedInput__ control as any normal {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control.
+After adding references to the aforementioned dlls, you can declare a new __RadMaskedInput__ control as any normal {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control.
 				
 
 #### __XAML__
@@ -116,14 +83,12 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 ## Set the Mask Property
 
 
-				  Although each __RadMaskedInput__ component is designed to work with specific type of input, you can further restrict the entered value through the __Mask__ property. 
+Although each __RadMaskedInput__ component is designed to work with specific type of input, you can further restrict the entered value through the __Mask__ property. 
 				
 
-* __Mask__ - gets or sets a string of characters that constrain user input. The __Mask__ property may contain literals and special mask characters. You can use the back slash (\) character to escape any special mask characters so that they are displayed as literals.
+* __Mask__ - gets or sets a string of characters that constrain user input. The __Mask__ property may contain literals and special mask characters. You can use the back slash character to escape any special mask characters so that they are displayed as literals.
 					
-
-
-					The following code example initializes the __RadMaskedDateTimeInput__ to accept a date in a long date format.
+The following code example initializes the __RadMaskedDateTimeInput__ to accept a date in a long date format.
 				
 
 #### __XAML__
@@ -136,8 +101,7 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 
 ## Change the Default Placeholder Character
 
-
-					The __Placeholder__ property represents the character displayed in any blank space defined by a __Mask__ character. By default the character is an underscore (_).
+The __Placeholder__ property represents the character displayed in any blank space defined by a __Mask__ character. By default the character is an underscore.
 				
 
 #### __XAML__
@@ -152,12 +116,9 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 
 ## Change the Culture
 
-
-					The __Culture__ property allows you to set the current language and culture from a drop-down list at design-time or to assign a new __CultureInfo__ instance at run-time.
+The __Culture__ property allows you to set the current language and culture from a drop-down list at design-time or to assign a new __CultureInfo__ instance at run-time.
 				
-
-
-					The following code example initializes the __RadMaskedDateTimeInput__ to accept a Bulgarian date in a long date format.
+The following code example initializes the __RadMaskedDateTimeInput__ to accept a Bulgarian date in a long date format.
 				
 
 #### __XAML__
@@ -172,16 +133,12 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 
 ![](images/RadMaskedInput_getting_started_culture_datetime.png)
 
->tip
-
-
-						For more information check out the following [Globalization Support]({%slug radmaskedinput-features-globalization%}) topic.
+>tipFor more information check out the following [Globalization Support]({%slug radmaskedinput-features-globalization%}) topic.
 					
 
 ## Set Watermark
 
-
-					You can set a watermark content to the __RadMaskedInput__controls____by using the __EmptyContent__ and the __EmptyContentTemplate__ properties. When the __Value__ of a __RadMaskedTextInput__ control is null or empty the __EmptyContent__ will be displayed.
+You can set a watermark content to the __RadMaskedInput__ controls by using the __EmptyContent__ and the __EmptyContentTemplate__ properties. When the __Value__ of a __RadMaskedTextInput__ control is null or empty the __EmptyContent__ will be displayed.
 				
 
 #### __XAML__

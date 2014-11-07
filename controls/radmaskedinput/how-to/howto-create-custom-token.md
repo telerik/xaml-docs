@@ -12,15 +12,12 @@ position: 3
 
 
 
-You can find a list of all built-in mask tokens that you can use when defining the mask of the __RadMaskedInput__ controls
-				in the
-				[Mask Tokens]({%slug radmaskedinput-features-mask-tokens%}) article. However, when your scenario requirements cannot be implemented using the built-in tokens, you can create a custom mask token to better fit your needs.
+You can find a list of all built-in mask tokens that you can use when defining the mask of the __RadMaskedInput__ controls in the [Mask Tokens]({%slug radmaskedinput-features-mask-tokens%}) article. However, when your scenario requirements cannot be implemented using the built-in tokens, you can create a custom mask token to better fit your needs.
 			
 
 ## 
 
-In order to create a custom mask token, you need to define a new class that should implement the
-					{% if site.site_name == 'Silverlight' %}[ ITokenValidationRule](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_maskedinput_tokens_itokenvalidationrule.html){% endif %}{% if site.site_name == 'WPF' %}[ ITokenValidationRule](http://www.telerik.com/help/wpf/t_telerik_windows_controls_maskedinput_tokens_itokenvalidationrule.html){% endif %} interface.
+In order to create a custom mask token, you need to define a new class that should implement the {% if site.site_name == 'Silverlight' %}[ ITokenValidationRule](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_maskedinput_tokens_itokenvalidationrule.html){% endif %}{% if site.site_name == 'WPF' %}[ ITokenValidationRule](http://www.telerik.com/help/wpf/t_telerik_windows_controls_maskedinput_tokens_itokenvalidationrule.html){% endif %} interface.
 				
 
 #### __C#__
@@ -31,9 +28,6 @@ In order to create a custom mask token, you need to define a new class that shou
 	
 	public class CustomToken : ITokenValidationRule
 	{
-	
-		#region ITokenValidationRule Members
-	
 		public bool IsRequired
 		{
 			get { throw new NotImplementedException(); }
@@ -58,7 +52,7 @@ In order to create a custom mask token, you need to define a new class that shou
 		{
 			get { throw new NotImplementedException(); }
 		}
-	
+	}
 	{{endregion}}
 
 
@@ -72,8 +66,6 @@ In order to create a custom mask token, you need to define a new class that shou
 	Public Class CustomToken
 		Implements ITokenValidationRule
 	
-	#Region "ITokenValidationRule Members"
-	
 		Public ReadOnly Property IsRequired() As Boolean
 			Get
 				Throw New NotImplementedException()
@@ -101,137 +93,12 @@ In order to create a custom mask token, you need to define a new class that shou
 				Throw New NotImplementedException()
 			End Get
 		End Property
-	
-	#End Region
 	End Class
-	#End Region
 	
-	#Region "radmaskedinput-howto-create-custom-tokens-1"
-	Imports System.Linq
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Public Class CustomToken
-		Implements ITokenValidationRule
-	#Region "ITokenValidationRule Members"
-	
-		Public ReadOnly Property IsRequired() As Boolean
-			Get
-				Return False
-			End Get
-		End Property
-	
-		Public Function IsValid(ByVal ch As Char) As Boolean
-			Throw New NotImplementedException()
-		End Function
-	
-		Public ReadOnly Property Token() As Char
-			Get
-				Return "$"c
-			End Get
-		End Property
-	
-		Public ReadOnly Property Type() As TokenTypes
-			Get
-				Return TokenTypes.AlphaNumeric
-			End Get
-		End Property
-	
-		Private myValidChars As String = "0123456789#*"
-		Public ReadOnly Property ValidChars() As String
-			Get
-				Return myValidChars
-			End Get
-		End Property
-	
-	#End Region
-	End Class
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-2"
-	Public Function IsValid(ByVal ch As Char) As Boolean
-		Return ValidChars.Contains(ch)
-	End Function
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-3"
-	Imports System.Linq
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Public Class CustomToken
-		Implements ITokenValidationRule
-	#Region "ITokenValidationRule Members"
-	
-		Public ReadOnly Property IsRequired() As Boolean
-			Get
-				Return False
-			End Get
-		End Property
-	
-		Public Function IsValid(ByVal ch As Char) As Boolean
-			Return ValidChars.Contains(ch)
-		End Function
-	
-		Public ReadOnly Property Token() As Char
-			Get
-				Return "$"c
-			End Get
-		End Property
-	
-		Public ReadOnly Property Type() As TokenTypes
-			Get
-				Return TokenTypes.AlphaNumeric
-			End Get
-		End Property
-	
-		Private myValidChars As String = "0123456789#*"
-		Public ReadOnly Property ValidChars() As String
-			Get
-				Return myValidChars
-			End Get
-		End Property
-	
-	#End Region
-	End Class
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-4"
-	Imports System.Windows.Controls
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Namespace MaskedInputSample
-		Partial Public Class MainPage
-			Inherits UserControl
-			Public Sub New()
-				TokenLocator.AddCustomValidationRule(New CustomToken())
-				InitializeComponent()
-			End Sub
-		End Class
-	End Namespace
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-5"
-	Imports System.Windows.Controls
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Namespace MaskedInputSample
-		Partial Public Class MainWindow
-			Inherits Window
-			Public Sub New()
-				TokenLocator.AddCustomValidationRule(New CustomToken())
-				InitializeComponent()
-			End Sub
-		End Class
-	End Namespace
-	#End Region
-	
-
-
-
 Then you can start configuring the custom token through the following properties:
 					
 
-* __IsRequired__- this property is of type __bool__
-							and it defines if the value that the token represents is a required input.
+* __IsRequired__- this property is of type __bool__ and it defines if the value that the token represents is a required input.
 						
 
 * __Token__ - this property is of type __char__ and it keeps the char that represents the custom mask token.
@@ -260,8 +127,6 @@ Then you can start configuring the custom token through the following properties
 	
 	public class CustomToken : ITokenValidationRule
 	{
-		#region ITokenValidationRule Members
-	
 		public bool IsRequired
 		{
 			get { return false; }
@@ -287,7 +152,7 @@ Then you can start configuring the custom token through the following properties
 		{
 			get { return myValidChars; }
 		}
-	
+	}
 	{{endregion}}
 
 
@@ -300,7 +165,6 @@ Then you can start configuring the custom token through the following properties
 	
 	Public Class CustomToken
 		Implements ITokenValidationRule
-	#Region "ITokenValidationRule Members"
 	
 		Public ReadOnly Property IsRequired() As Boolean
 			Get
@@ -330,91 +194,8 @@ Then you can start configuring the custom token through the following properties
 				Return myValidChars
 			End Get
 		End Property
-	
-	#End Region
 	End Class
-	#End Region
 	
-	#Region "radmaskedinput-howto-create-custom-tokens-2"
-	Public Function IsValid(ByVal ch As Char) As Boolean
-		Return ValidChars.Contains(ch)
-	End Function
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-3"
-	Imports System.Linq
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Public Class CustomToken
-		Implements ITokenValidationRule
-	#Region "ITokenValidationRule Members"
-	
-		Public ReadOnly Property IsRequired() As Boolean
-			Get
-				Return False
-			End Get
-		End Property
-	
-		Public Function IsValid(ByVal ch As Char) As Boolean
-			Return ValidChars.Contains(ch)
-		End Function
-	
-		Public ReadOnly Property Token() As Char
-			Get
-				Return "$"c
-			End Get
-		End Property
-	
-		Public ReadOnly Property Type() As TokenTypes
-			Get
-				Return TokenTypes.AlphaNumeric
-			End Get
-		End Property
-	
-		Private myValidChars As String = "0123456789#*"
-		Public ReadOnly Property ValidChars() As String
-			Get
-				Return myValidChars
-			End Get
-		End Property
-	
-	#End Region
-	End Class
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-4"
-	Imports System.Windows.Controls
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Namespace MaskedInputSample
-		Partial Public Class MainPage
-			Inherits UserControl
-			Public Sub New()
-				TokenLocator.AddCustomValidationRule(New CustomToken())
-				InitializeComponent()
-			End Sub
-		End Class
-	End Namespace
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-5"
-	Imports System.Windows.Controls
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Namespace MaskedInputSample
-		Partial Public Class MainWindow
-			Inherits Window
-			Public Sub New()
-				TokenLocator.AddCustomValidationRule(New CustomToken())
-				InitializeComponent()
-			End Sub
-		End Class
-	End Namespace
-	#End Region
-	
-
-
-
 When you define the properties that describe the custom token, you need to implement a logic that controls whether the entered character is valid for that custom token. This logic should be placed in the __IsValid()__ method, that should validate the user input to return a bool value.
 				
 
@@ -435,82 +216,7 @@ When you define the properties that describe the custom token, you need to imple
 	Public Function IsValid(ByVal ch As Char) As Boolean
 		Return ValidChars.Contains(ch)
 	End Function
-	#End Region
 	
-	#Region "radmaskedinput-howto-create-custom-tokens-3"
-	Imports System.Linq
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Public Class CustomToken
-		Implements ITokenValidationRule
-	#Region "ITokenValidationRule Members"
-	
-		Public ReadOnly Property IsRequired() As Boolean
-			Get
-				Return False
-			End Get
-		End Property
-	
-		Public Function IsValid(ByVal ch As Char) As Boolean
-			Return ValidChars.Contains(ch)
-		End Function
-	
-		Public ReadOnly Property Token() As Char
-			Get
-				Return "$"c
-			End Get
-		End Property
-	
-		Public ReadOnly Property Type() As TokenTypes
-			Get
-				Return TokenTypes.AlphaNumeric
-			End Get
-		End Property
-	
-		Private myValidChars As String = "0123456789#*"
-		Public ReadOnly Property ValidChars() As String
-			Get
-				Return myValidChars
-			End Get
-		End Property
-	
-	#End Region
-	End Class
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-4"
-	Imports System.Windows.Controls
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Namespace MaskedInputSample
-		Partial Public Class MainPage
-			Inherits UserControl
-			Public Sub New()
-				TokenLocator.AddCustomValidationRule(New CustomToken())
-				InitializeComponent()
-			End Sub
-		End Class
-	End Namespace
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-5"
-	Imports System.Windows.Controls
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Namespace MaskedInputSample
-		Partial Public Class MainWindow
-			Inherits Window
-			Public Sub New()
-				TokenLocator.AddCustomValidationRule(New CustomToken())
-				InitializeComponent()
-			End Sub
-		End Class
-	End Namespace
-	#End Region
-	
-
-
-
 Finally our custom token will have the following dfinition: 
 
 #### __C#__
@@ -521,8 +227,6 @@ Finally our custom token will have the following dfinition:
 	
 	public class CustomToken : ITokenValidationRule
 	{
-		#region ITokenValidationRule Members
-	
 		public bool IsRequired
 		{
 			get { return false; }
@@ -548,7 +252,7 @@ Finally our custom token will have the following dfinition:
 		{
 			get { return myValidChars; }
 		}
-	
+	}
 	{{endregion}}
 
 
@@ -560,9 +264,7 @@ Finally our custom token will have the following dfinition:
 	Imports Telerik.Windows.Controls.MaskedInput.Tokens
 	
 	Public Class CustomToken
-		Implements ITokenValidationRule
-	#Region "ITokenValidationRule Members"
-	
+		Implements ITokenValidationRule	
 		Public ReadOnly Property IsRequired() As Boolean
 			Get
 				Return False
@@ -591,47 +293,9 @@ Finally our custom token will have the following dfinition:
 				Return myValidChars
 			End Get
 		End Property
-	
-	#End Region
 	End Class
-	#End Region
 	
-	#Region "radmaskedinput-howto-create-custom-tokens-4"
-	Imports System.Windows.Controls
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Namespace MaskedInputSample
-		Partial Public Class MainPage
-			Inherits UserControl
-			Public Sub New()
-				TokenLocator.AddCustomValidationRule(New CustomToken())
-				InitializeComponent()
-			End Sub
-		End Class
-	End Namespace
-	#End Region
-	
-	#Region "radmaskedinput-howto-create-custom-tokens-5"
-	Imports System.Windows.Controls
-	Imports Telerik.Windows.Controls.MaskedInput.Tokens
-	
-	Namespace MaskedInputSample
-		Partial Public Class MainWindow
-			Inherits Window
-			Public Sub New()
-				TokenLocator.AddCustomValidationRule(New CustomToken())
-				InitializeComponent()
-			End Sub
-		End Class
-	End Namespace
-	#End Region
-	
-
-
-
-In order to use this custom token in the __MaskedInput__ controls, you have to add it in the __MaskedInput.Tokens__ using the 
-					{% if site.site_name == 'Silverlight' %}[ TokenLocator](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_maskedinput_tokens_tokenlocator.html){% endif %}{% if site.site_name == 'WPF' %}[ TokenLocator](http://www.telerik.com/help/wpf/t_telerik_windows_controls_maskedinput_tokens_tokenlocator.html){% endif %} class
-					{% if site.site_name == 'Silverlight' %}[ AddCustomValidationRule()](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_maskedinput_tokens_tokenlocator_addcustomvalidationrule.html){% endif %}{% if site.site_name == 'WPF' %}[ AddCustomValidationRule()](http://www.telerik.com/help/wpf/m_telerik_windows_controls_maskedinput_tokens_tokenlocator_addcustomvalidationrule.html){% endif %} method. This method takes as an argument an object of type __ITokenValidationRule__ so you can pass the custom token.
+In order to use this custom token in the __MaskedInput__ controls, you have to add it in the __MaskedInput.Tokens__ using the {% if site.site_name == 'Silverlight' %}[ TokenLocator](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_maskedinput_tokens_tokenlocator.html){% endif %}{% if site.site_name == 'WPF' %}[ TokenLocator](http://www.telerik.com/help/wpf/t_telerik_windows_controls_maskedinput_tokens_tokenlocator.html){% endif %} class {% if site.site_name == 'Silverlight' %}[ AddCustomValidationRule()](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_maskedinput_tokens_tokenlocator_addcustomvalidationrule.html){% endif %}{% if site.site_name == 'WPF' %}[ AddCustomValidationRule()](http://www.telerik.com/help/wpf/m_telerik_windows_controls_maskedinput_tokens_tokenlocator_addcustomvalidationrule.html){% endif %} method. This method takes as an argument an object of type __ITokenValidationRule__ so you can pass the custom token.
 				
 
 After the custom token is added in the Tokens collection of the __RadMaskedInput__ controls, you can use it in the __RadMaskedTextInput__ control definition:

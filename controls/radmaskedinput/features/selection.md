@@ -15,16 +15,16 @@ position: 3
 The purpose of this tutorial is to walk you through the common task of configuring __RadMaskedInput__ control for working with selection. The following "selection" features will be demonstrated:
 			
 
-* [SelectionOnFocus](#SelectionOnFocus)
+* [SelectionOnFocus](#selectiononfocus)
 
-* [SelectionLength and SelectionStart](#SelectionLength_and_SelectionStart)
+* [SelectionLength and SelectionStart](#selectionlength-and-selectionstart)
 
 ## SelectionOnFocus
 
 The __SelectionOnFocus__ property of the __RadMaskedInput__ controls allows you to specify what will happen with the cursor when the control gets focus. The values for the __SelectionOnFocus__ property are predefined in the __SelectionOnFocus__ enumeration. It exposes the following members:
 				
 
-* __SelectAll -__ once a __RadMaskedInput__ control is focused, it will select its whole text. 
+* __SelectAll__ - once a __RadMaskedInput__ control is focused, it will select its whole text. 
 						
 
 #### __XAML__
@@ -35,7 +35,7 @@ The __SelectionOnFocus__ property of the __RadMaskedInput__ controls allows you 
 
 
 
-* __CaretToBeginning -__once a __RadMaskedInput__ control is focused, the cursor will be positioned at its beginning.
+* __CaretToBeginning__ - once a __RadMaskedInput__ control is focused, the cursor will be positioned at its beginning.
 						
 
 #### __XAML__
@@ -46,7 +46,7 @@ The __SelectionOnFocus__ property of the __RadMaskedInput__ controls allows you 
 
 
 
-* __CaretToEnd -__ once a __RadMaskedInput__ control is focused, the cursor will be positioned at its end.
+* __CaretToEnd__ - once a __RadMaskedInput__ control is focused, the cursor will be positioned at its end.
 						
 
 #### __XAML__
@@ -57,13 +57,13 @@ The __SelectionOnFocus__ property of the __RadMaskedInput__ controls allows you 
 
 
 
-* __Unchanged -__ when a __RadMaskedInput__ control is focused, the position of the cursor won't be changed. This is the __default value__ for the __SelectionOnFocus__ property.
+* __Unchanged__ - when a __RadMaskedInput__ control is focused, the position of the cursor won't be changed. This is the __default value__ for the __SelectionOnFocus__ property.
 					
 
-* __Default -__when a __RadMaskedInput__ control is focused, the __SelectionOnFocus__ behavior depends on the type of the control. In the __RadMaskedDateTimeInput__ and __RadMaskedTextInput__ the __Default____SelectionOnFocus__ behavior won't change the position of the curser (the __Unchanged SelectionOnFocus__ behavior is applied). In the __RadMaskedNumericInput__ and the __RadMaskedCurrencyInput__ controls the __Default SelectionOnFocus__ behavior will place the curser before the decimal point.
+* __Default__ - when a __RadMaskedInput__ control is focused, the __SelectionOnFocus__ behavior depends on the type of the control. In the __RadMaskedDateTimeInput__ and __RadMaskedTextInput__ the __Default__ __SelectionOnFocus__ behavior won't change the position of the curser (the __Unchanged SelectionOnFocus__ behavior is applied). In the __RadMaskedNumericInput__ and the __RadMaskedCurrencyInput__ controls the __Default SelectionOnFocus__ behavior will place the curser before the decimal point.
 					
 
-* __DefaultSelectAll -__this property changes the __SelectionOnFocus__ behavior of the control depending on the source of the focus. If a __MaskedInputControl__ is focused on mouse click, the __Default____SelectionOnFocus__ behavior will be used. If, on the other hand, a __MaskedInputControl__ is focused using the __Tab__ key, the __SelectAll____SelectionOnFocus__ behavior will be used.
+* __DefaultSelectAll__ - this property changes the __SelectionOnFocus__ behavior of the control depending on the source of the focus. If a __MaskedInputControl__ is focused on mouse click, the __Default__ __SelectionOnFocus__ behavior will be used. If, on the other hand, a __MaskedInputControl__ is focused using the __Tab__ key, the __SelectAll__ __SelectionOnFocus__ behavior will be used.
 					
 
 ## SelectionLength and SelectionStart
@@ -74,7 +74,7 @@ The __SelectionStart__ property gets or sets the starting point of the selected 
 #### __XAML__
 
 {{region radmaskedinput-features-selection_3}}
-	        <telerik:RadMaskedTextInput Mask="###-###-###" x:Name="radMaskedTextInput" GotFocus="radMaskedTextInput_GotFocus"/>
+    <telerik:RadMaskedTextInput Mask="###-###-###" x:Name="radMaskedTextInput" GotFocus="radMaskedTextInput_GotFocus"/>
 	{{endregion}}
 
 

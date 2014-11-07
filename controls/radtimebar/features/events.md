@@ -10,35 +10,20 @@ position: 2
 
 # Events
 
-
-
-## 
-
 You can handle the following events when using the __RadTimeBar__ for a very rich user experience with the control:
 
-·          __GroupIntervalChanged__
+* __GroupIntervalChanged__ - fires when interval groups drill level changed.
 
-Fires when interval groups drill level changed.
+* __HoveredPeriodChanged__ - fires when the time period hovered changes.
 
-·          __HoveredPeriodChanged__
+* __ItemIntervalChanged__ - fires when the interval items drill level changed. 
 
-Fires when the time period hovered changes.
+* __VisiblePeriodChanged__ - fires when the period that is currently visible has changed as we scroll and zoom within the control.
 
-·          __ItemIntervalChanged__
+* __SelectionChanged__ - fires when the time period selected has changed.
 
-Fires when the interval items drill level changed. 
-
-·          __VisiblePeriodChanged__
-
-Fires when the period that is currently visible has changed as we scroll and zoom within the control.
-
-·          __SelectionChanged__
-
-Fires when the time period selected has changed.
-
-
-        For example you can get the current item interval using the __TimeBar.ItemIntervalChanged__ event via the __TimeBar.CurrentItemInterval__ property.
-        This event will also fire on initial load, when the best current item interval is set.
+For example you can get the current item interval using the __TimeBar.ItemIntervalChanged__ event via the __TimeBar.CurrentItemInterval__ property.
+This event will also fire on initial load, when the best current item interval is set.
         
 
 #### __C#__
@@ -80,5 +65,5 @@ Fires when the time period selected has changed.
 	{{endregion}}
 
 
-        The same approach is applicable for groups - In order to get the current group interval you can use __TimeBar.GroupIntervalChanged__ event and __TimeBar.CurrentGroupInterval__ property respectively.
+The same approach is applicable for groups - In order to get the current group interval you can use __TimeBar.GroupIntervalChanged__ event and __TimeBar.CurrentGroupInterval__ property respectively.
       

@@ -11,8 +11,7 @@ position: 3
 # Styling the FilterControl
 
 
-
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the FilterControl](40A684F2-83E5-4F3F-83E0-72359B8E802D#FilterControl).
+>Before reading this topic, you might find it useful to get familiar with the [Template Structure of the FilterControl](40A684F2-83E5-4F3F-83E0-72359B8E802D#FilterControl).
         
 
 The __FilterControl__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
@@ -21,12 +20,14 @@ The __FilterControl__ exposes a __Style__ property which allows you to apply a s
 ## Modifying the Default Style
 
 Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow the article on [different approaches on how to extract the ControlTemplates]({%slug styling-apperance-editing-control-templates%}).
-        ![](images/RadDataFilter_StylesAndTemplates_StylingTheFilterControl_01.png)
 
-* __FilterControl_InnerBorder__ - a brush, that represents the color of the inner border of the __FilterControl__.
+![](images/RadDataFilter_StylesAndTemplates_StylingTheFilterControl_01.png)
+
+
+* __FilterControl_InnerBorder__ a brush, that represents the color of the inner border of the __FilterControl__.
             
 
-* __RemoveFilterButton_Background_Over__ - a brush, that represents the background color of the __Delete__ button, when the mouse is over it.
+*  __RemoveFilterButton_Background_Over__ - a brush, that represents the background color of the __Delete__ button, when the mouse is over it.
             
 
 * __RemoveFilterButton_Background_Pressed__ - a brush, that represents the background color of the __Delete__ button, when it gets clicked.

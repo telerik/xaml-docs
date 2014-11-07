@@ -85,5 +85,3 @@ Start your demo and write "al" in the __input box__. Now only items, which text 
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})
 
  * [AutoComplete]({%slug radcombobox-features-autocomplete%})
-
- * [DataBinding]({%slug radcombobox-features-databinding%})

@@ -61,7 +61,6 @@ controls/radgridview/troubleshooting/gridview-paging.md,
 controls/radgridview/troubleshooting/gridview-elementname-binding.md,
 controls/radmenu/features/animation.md,
 controls/radmenu/features/boundaries-detection.md,
-controls/radmenu/styles-and-templates/visual-states.md,
 controls/radnumericupdown/howto/events.md,
 controls/radribbonview/features/ribbon-controls/ribbon-window-sl.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier.md,
@@ -151,6 +150,24 @@ navigation:
         position: 6
     controls/radscheduleview/populating-with-data/binding-to-database:
         title: Binding To Database
+    controls/radcontextmenu/changes-and-backwards-compatibility:
+        title: Changes and Backwards Compatibility
+        position: 5
+    controls/radcontextmenu/features:
+        title: Features
+        position: 6
+    controls/radmenu/changes-and-backwards-compatibility:
+        title: Changes and Backwards Compatibility
+        position: 5
+    controls/radmenu/features:
+        title: Features
+        position: 6
+    controls/dragdropmanager/behaviors:
+        title: Behaviors
+        position: 6
+    controls/dragdropmanager/howto:
+        title: How To
+        position: 7
 ## X3 Controls End
 
 ## X2 Controls Start
@@ -297,10 +314,6 @@ navigation:
         position: 4
 ## Centaur Controls End
 
-## X1 Controls Start
-
-## X1 Controls End
-
 ## Common Start
     controls:
         title: Controls
@@ -343,6 +356,42 @@ navigation:
     "api-reference":
         title: "Api Reference"
 ## Common End
+
+## X1 Controls Start
+    controls/radcalculator:
+        title: RadCalculator
+    controls/radcalculator/style-and-templates:
+        title: Style and Templates
+    controls/radcarousel:
+        title: RadCarousel
+    controls/radcarousel/changes-and-backward-compability:
+        title: Changes and Backward Compability  
+    controls/radcarousel/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radcarousel/using-radcarousel:
+        title: Using RadCarousel
+    controls/radcarousel/using-radcarouselpanel:
+        title: Using RadCarouselPanel
+    controls/radcollectionnavigator:
+        title: RadCollectionNavigator
+    controls/radcollectionnavigator/changes-and-backward-compability:
+        title: Changes and Backward Compability 
+    controls/raddatafilter:
+        title: RadDataFilter
+    controls/raddataform:
+        title: RadDataForm
+    controls/raddataform/localization:
+        title: Localization
+    controls/raddataform/validation:
+        title: Validation
+    controls/raddatapager:
+        title: RadDataPager
+    controls/raddatapager/changes-and-backward-compability:
+        title: Changes and Backward Compability
+    controls/radgridview:
+        title: RadGridView
+## X1 Controls End
+
 
 ## Api Reference Start
     "*system.windows":

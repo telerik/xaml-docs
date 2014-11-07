@@ -12,7 +12,7 @@ position: 2
 
 
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadDataPager](F5C4E9B4-C7FC-42DC-96E1-8942116A8AA5#RadDataPager) and the [Template Structure of the DataPagerPresenter](F5C4E9B4-C7FC-42DC-96E1-8942116A8AA5#DataPagerPresenter).
+>Before reading this topic, you might find it useful to get familiar with the [Template Structure of the RadDataPager](F5C4E9B4-C7FC-42DC-96E1-8942116A8AA5#RadDataPager) and the [Template Structure of the DataPagerPresenter](F5C4E9B4-C7FC-42DC-96E1-8942116A8AA5#DataPagerPresenter).
 
 The __RadDataPager__exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 
@@ -28,7 +28,7 @@ This topic will show you how to perform the second one.
 
 To copy the default styles, load your project in Expression Blend and open the User Control that holds the __RadDataPager__. In the 'Objects and Timeline' pane select the __RadDataPager__you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking 'OK', Expression Blend will generate the default style of the __RadDataPager__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
@@ -39,10 +39,7 @@ As the UI of the __RadDataPager__ is wrapped in the __DataPagerPresenter__ contr
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadDataPager____.__ Their names indicate to which part of the __RadDataPager__appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
 
-
-
-         
-      ![](images/RadDataPager_Styles_and_Templates_StylingTheRadDataPager_01.png){% endif %}
+![](images/RadDataPager_Styles_and_Templates_StylingTheRadDataPager_01.png){% endif %}
 
 * __RadPager_Indicator__ - represents the brush for the indicators inside the First, Last, Previous, Next buttons.
 

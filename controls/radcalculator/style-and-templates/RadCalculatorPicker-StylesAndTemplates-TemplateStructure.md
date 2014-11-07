@@ -15,8 +15,7 @@ position: 2
 Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, RadCalculatorPicker allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it.
 		  
 
->tip
-			  To learn how to style {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadControls read the common topics about Styling and Appearance. If you are new to the controls, they will give you the basic knowledge about it.
+>To learn how to style {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadControls read the common topics about Styling and Appearance. If you are new to the controls, they will give you the basic knowledge about it.
 		  
 
 ## RadCalculatorPicker Template Structure:

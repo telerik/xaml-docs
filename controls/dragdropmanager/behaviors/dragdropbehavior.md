@@ -10,14 +10,13 @@ position: 0
 
 # DragDropBehavior
 
-
+In this article you can find information about the DragDropBehavior class.
 
 ## DragDropBehavior
 
 The DragDropBehavior is the base class of the Telerik drag-drop behaviors and provides the high level API for handling drag-drop operations. Its methods are automatically called when the corresponding drag-drop event occurs. The DragDropBehavior class inherits from DependencyObject and thus can be bound to other objects.
 
->When deriving from DragDropBehavior it is advisable not to keep any state in the class, in the form of member variables, because the DragDropBehavior could potentially be shared between several controls.
-      	
+>When deriving from DragDropBehavior it is advisable not to keep any state in the class, in the form of member variables, because the DragDropBehavior could potentially be shared between several controls.      	
 
 The most important methods of DragDropBehavior are:
 
@@ -33,26 +32,21 @@ The most important methods of DragDropBehavior are:
 
 ## DragDropState
 
-The context for each of the DragDropBehavior methods is provided in the form of a DragDropState object. It contains references to the source control’s ItemsSource, destination control’s ItemsSource and the dragged items.
-      
+The context for each of the DragDropBehavior methods is provided in the form of a DragDropState object. It contains references to the source control’s ItemsSource, destination control’s ItemsSource and the dragged items.      
 
 To determine whether the drag source and the drop target are the same control you could use the IsSameControl property.
 
->When the context is the drag source control, the DestinationItemsSource property will be undefined; when the context is the drop target control, the SourceItemsSource property will be undefined. In other words, you should use SourceAppointmentsSource only in CanStartDrag and DragDropCompleted/DragDropCanceled, and DestinationAppointmentsSource only in Drop and CanDrop.
-      
+>When the context is the drag source control, the DestinationItemsSource property will be undefined; when the context is the drop target control, the SourceItemsSource property will be undefined. In other words, you should use SourceAppointmentsSource only in CanStartDrag and DragDropCompleted/DragDropCanceled, and DestinationAppointmentsSource only in Drop and CanDrop.      
 
 ## IDragVisualProvider
 
-The IDragVisualProvider interface should be implemented in a class when you want to customize the drag visual element, that is moved with the mouse cursor.
-      	
+The IDragVisualProvider interface should be implemented in a class when you want to customize the drag visual element, that is moved with the mouse cursor.      	
 
 * CreateDragVisual – inside this method you should create and return an element that will represent the dragged data.
 
 * GetDragVisualOffset – inside this method you should calculate the offset between the mouse cursor and the drag visual element.
 
 Both methods above receive a single parameter of type DragVisualProviderState, that contains information about the drag operation.
-
-
 
 There are several default implementations of IDragVisualProvider:
 
@@ -72,6 +66,4 @@ In both cases GetConvertToFormats() should return formats acceptable by the targ
 
 >The DataObjectHelper class provides helper methods for retrieving data from the provided DataObject, that work in both Full and Partial trust modes.
 
->tipYou can download some runnable projects from our online SDK repository
-              [here](https://github.com/telerik/xaml-sdk), the examples are listed bellow __DragDrop__ folder.
-            
+>tipYou can download some runnable projects from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the examples are listed bellow __DragDrop__ folder.

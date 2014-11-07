@@ -79,3 +79,7 @@
     width: 100%;
 	overflow: hidden !important;
 }
+
+#page-inner-content.move-inner-content {
+    top: 126px;
+}

@@ -10,30 +10,21 @@ position: 1
 
 # Formatting
 
+This article will explain in details the different formatting option of __RadNumericUpDown__.
 
-
-## 
-        Using ValueFormat
-      
+## Using ValueFormat      
 
 RadNumericUpDown has the ability to format its value in three different formats specified by the __ValueFormat__ property.
-        
 
 Here is a brief description of each value in the ValueFormat enumerator property.
 
 * __Numeric__ - used for numeric values without specific formatting, the default value is taken from the current culture of Windows. The specific Numeric format is described by all members of __NumberFormatInfo__ starting with __Numeric__ prefix.
-            
 
 * __Currency -__ used for currency values, the default currency formatting is taken from the current culture of Windows. The specific Currency format is described by all members of __NumberFormatInfo__ starting with __Currency__ prefix.
-            
 
 * __Percentage__ - used for percentage values, the default percentage value is taken from the current culture of Windows. The specific Percentage format is described by all members of __NumberFormatInfo__ starting with __Percentage__ prefix.
-            
 
-
-
-The following examples shows how to use ValueFormat and __NumberFormatInfo__ properties to achieve the deserved format:
-        
+The following examples shows how to use ValueFormat and __NumberFormatInfo__ properties to achieve the deserved format:        
 
 * __ValueFormat set to Numeric__
 
@@ -49,9 +40,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	   //ContentText is "16"
 	   return numeric;
 	 }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -67,9 +56,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	   
 	   return numeric
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -85,9 +72,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	            </telerik:RadNumericUpDown>
 	        </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 * __ValueFormat set to Currency__
 
@@ -103,9 +88,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	   //ContentText is "$15.50"
 	   return numeric;
 	 }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -121,9 +104,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	       
 	        Return numeric
 	    End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -139,9 +120,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	        </telerik:RadNumericUpDown>
 	    </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 * __ValueFormat set to Percentage__
 
@@ -157,27 +136,23 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	   //ContentText is "%1500.5"
 	   return numeric;
 	 }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radnumericupdown-formatting_1-3}}
-	    Private Function TestMethod() As RadNumericUpDown
-	        Dim numeric As RadNumericUpDown = New RadNumericUpDown
-	        numeric.Value = 15.5
-	        numeric.ValueFormat = ValueFormat.Percentage
-	        numeric.NumberFormatInfo = New NumberFormatInfo() With {
-	            .PercentDecimalDigits = 1
-	        }
-	    //the display result is "%1500.5"
-	
-	        Return numeric
-	    End Function
-	{{endregion}}
+	Private Function TestMethod() As RadNumericUpDown
+		Dim numeric As RadNumericUpDown = New RadNumericUpDown
+		numeric.Value = 15.5
+		numeric.ValueFormat = ValueFormat.Percentage
+		numeric.NumberFormatInfo = New NumberFormatInfo() With {
+			.PercentDecimalDigits = 1
+		}
+	//the display result is "%1500.5"
 
-
+		Return numeric
+	End Function
+{{endregion}}
 
 #### __XAML__
 
@@ -193,17 +168,11 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	        </telerik:RadNumericUpDown>
 	    </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 For custom formatting __RadNumericUpDown__ exposes additional property that is only used with the __Numeric__ value of __ValueFormat__. __CustomUnit__ is used to customize your formatting in case all the others type of formatting don't meet your needs.
-        
 
-
-
-Here is a simple example of how to use __CustomUnit__ property:
-        
+Here is a simple example of how to use __CustomUnit__ property:        
 
 #### __C#__
 
@@ -218,9 +187,7 @@ Here is a simple example of how to use __CustomUnit__ property:
 	   //the display result is "10.00 meters"
 	   return numeric;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -236,19 +203,16 @@ Here is a simple example of how to use __CustomUnit__ property:
 	  //the display result is "10.00 meters"
 	  return numeric
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-## 
-        Using CustomUnit
-      
+## Using CustomUnit      
 
 By design when the __ValueFormat__ property of the RadNumericUpDown control is set to __Percentage__ the input is parsed as follows:
         
-<table>
-            Parsing when using ValueFormat="Percentage"
-          <th><tr><td>Input</td><td>Parsed value</td></tr></th><tr><td>1</td><td>100.00 %</td></tr><tr><td>45</td><td>4 500,00 %</td></tr></table>
+Input	|	Parsed value
+---	|	---
+1	|	100.00%
+45	|	4 500,00 %
 
 The above parsing is correct and useful when using the value of the RadNumericUpDown to solve percentage of other values. In many other cases the desired parsing would be to show the input value directly as percentages. Meaning that entering 1 would lead to 1% not 100%. In order to achieve this parsing all that is needed is to set the __Minimum__, __Maximum__ and __CustomUnit__ properties of the control as follows:
         
@@ -259,49 +223,41 @@ The above parsing is correct and useful when using the value of the RadNumericUp
 	<telerik:RadNumericUpDown Minimum="0"
 	                          Maximum="100"
 	                          CustomUnit="%"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 The next table show examples of the input parsing when setting the above properties:
-        
-<table>
-            Parsing when using ValueFormat="Percentage"
-          <th><tr><td>Input</td><td>Parsed value</td></tr></th><tr><td>1</td><td>1.00 %</td></tr><tr><td>45</td><td>45,00 %</td></tr></table>
+       
+Input	|	Parsed value
+---	|	---
+1	|	1.00%
+45	|	45,00 %
 
 >When using the described approach and want to solve the percentages of other values using the value of the RadNumericUpDown make sure to divide it by 100 first.
-          
 
-## 
-        Hide Trailing Zeros
-      
+## Hide Trailing Zeros    
 
-__RadNumericUpDown__ provides property named __HideTrailingZeros__ which removes the digits after
-          the decimal separator when they are all zeros. For example if you have the following __RadNumericUpDown__ with two decimal digits and value set to 42:
-        
+__RadNumericUpDown__ provides property named __HideTrailingZeros__ which removes the digits after the decimal separator when they are all zeros. For example if you have the following __RadNumericUpDown__ with two decimal digits and value set to 42:        
 
 #### __XAML__
 
 {{region radnumericupdown-formatting-5}}
 	<telerik:RadNumericUpDown NumberDecimalDigits="2" Value="42" />
-	{{endregion}}
+{{endregion}}
 
+It will look the following way:
 
+![Rad Numeric Up Down Features Formatting 01](images/RadNumericUpDown_Features_Formatting_01.png)
 
-It will look the following way:![Rad Numeric Up Down Features Formatting 01](images/RadNumericUpDown_Features_Formatting_01.png)
-
-If you set the __HideTrailingZeros__ property to True as shown below:
-        
+If you set the __HideTrailingZeros__ property to True as shown below:       
 
 #### __XAML__
 
 {{region radnumericupdown-formatting-6}}
 	<telerik:RadNumericUpDown NumberDecimalDigits="2" Value="42" HideTrailingZeros="True" />
-	{{endregion}}
+{{endregion}}
 
+This will be result:
 
+![Rad Numeric Up Down Features Formatting 02](images/RadNumericUpDown_Features_Formatting_02.png)
 
-This will be result:![Rad Numeric Up Down Features Formatting 02](images/RadNumericUpDown_Features_Formatting_02.png)
-
->The default value of the property is __False__ - if there are trailing zeros they would be visible.
-          
+>The default value of the property is __False__ - if there are trailing zeros they would be visible.         

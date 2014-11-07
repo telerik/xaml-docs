@@ -40,9 +40,9 @@ The purpose of this tutorial is to show you:
 
 * The main methods exposed by the __RecurrencePattern__ class:          
 
-	* [Copy()](#copy())
+	* [Copy()](#copy)
 
-	* [CopyFrom](#CopyFrom)
+	* [CopyFrom](#copyfrom)
 
 * [Examples](#examples) - show you how to combine the exposed by the __RecurrencePattern__ class properties to configure repeating appointments with ultimate flexibility. The following cases will be examined:          
 

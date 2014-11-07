@@ -11,7 +11,6 @@ position: 3
 # Binding to Dynamic Data
 
 
-
 The data displayed in the __RadContextMenu__ has a hierarchical structure (similar to the __RadTreeView__). This means that each item may come with a set of items on its own. For that reason you have to use the __ItemContainerStyle__. This tutorial will walk you through the most important steps in creating, configuring and applying __ItemContainerStyle__ to your __RadContextMenu__.
 
 ## Preparing the Data
@@ -53,9 +52,7 @@ For this tutorial the following sample class will be used:
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -70,9 +67,7 @@ For this tutorial the following sample class will be used:
 		Public Property Command() As ICommand
 		Public Property SubItems() As ObservableCollection(Of MenuItem)
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 The __MenuItem__ class holds the information for the menu items.
 
@@ -82,11 +77,9 @@ The __MenuItem__ class holds the information for the menu items.
 
 * __SubItems__ - a collection of the sub menu items of the current menu item.
 
-* __IsSeparator__ - indicates whether the item is a separator.{% if site.site_name == 'Silverlight' %}
+* __IsSeparator__ - indicates whether the item is a separator.
 
->tipTo learn more about the separator items and the __RadMenuItems__, please take a look at the [RadMenu help content](http://www.telerik.com/help/silverlight/radmenu-overview).{% endif %}{% if site.site_name == 'WPF' %}
-
->tipTo learn more about the separator items and the __RadMenuItems__, please take a look at the [RadMenu help content](http://www.telerik.com/help/wpf/radmenu-overview).{% endif %}
+>tipTo learn more about the separator items and the __RadMenuItems__, please take a look at the [RadMenu help content]({%slug radmenu-overview%}).
 
 Next, a sample method is needed, which creates the sample data. Here is one:
 
@@ -127,9 +120,7 @@ Next, a sample method is needed, which creates the sample data. Here is one:
 	
 	    return items;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -149,9 +140,7 @@ Next, a sample method is needed, which creates the sample data. Here is one:
 	
 		Return items
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally, pass the generated collection to the __DataContext__.
 
@@ -163,9 +152,7 @@ Finally, pass the generated collection to the __DataContext__.
 	    InitializeComponent();
 	    this.radContextMenu.ItemsSource = this.GetMenuItems();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -174,9 +161,7 @@ Finally, pass the generated collection to the __DataContext__.
 	 InitializeComponent()
 	 Me.radContextMenu.ItemsSource = Me.GetMenuItems()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Creating and Applying the ItemContainerStyle
 
@@ -199,9 +184,7 @@ In order to visualize the data in the __RadContextMenu__ control you have to use
 	    <Setter Property="ItemsSource" Value="{Binding SubItems}"/>
 	    <Setter Property="Command" Value="{Binding Command}"/>
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 >When setting the __ItemTemplate__ or __ItemContainerStyle__ properties of the __RadContextMenu__, they will get inherited in the hierarchy, unless they are not explicitly set.
 
@@ -217,11 +200,11 @@ In order to use the created style with __RadContextMenu__ control, you have to s
 	                                ItemContainerStyle="{StaticResource MenuItemContainer}" />
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-	{{endregion}}
+{{endregion}}
 
+Here is a snapshot of the result.
 
-
-Here is a snapshot of the result.![](images/RadContextMenu_Populating_with_Data_Dynamic_Items_02.png)
+![](images/RadContextMenu_Populating_with_Data_Dynamic_Items_02.png)
 
 # See Also
 

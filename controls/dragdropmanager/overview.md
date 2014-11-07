@@ -10,11 +10,12 @@ position: 0
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![Drag Drop Manger SL](images/DragDropManger_SL.png){% endif %}{% if site.site_name == 'WPF' %}
-
-![Drag Drop Manger WPF](images/DragDropManger_WPF.png){% endif %}
-
-
+{% if site.site_name == 'Silverlight' %}
+![Drag Drop Manger SL](images/DragDropManger_SL.png)
+{% endif %}
+{% if site.site_name == 'WPF' %}
+![Drag Drop Manger WPF](images/DragDropManger_WPF.png)
+{% endif %}
 
 DragDropManager offers intuitive API similar to Microsoft DragDrop, enabling drag-drop in multiple scenarios.
 
@@ -30,11 +31,6 @@ DragDropManager offers intuitive API similar to Microsoft DragDrop, enabling dra
 
 * __Integrations between applications__ – DragDropManager has build-in support for dragging from and to external programs (WPF), allowing easy interaction between applications.
 
+Check out the online demos at {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#DragAndDrop/FirstLook](http://demos.telerik.com/silverlight/#DragAndDrop/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[WPF Demos (DragDropManager/FirstLook) ](http://demos.telerik.com/wpf){% endif %}
 
-
-Check out the online demos at
-          {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#DragAndDrop/FirstLook](http://demos.telerik.com/silverlight/#DragAndDrop/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[WPF Demos (DragDropManager/FirstLook) ](http://demos.telerik.com/wpf){% endif %}
-
->tipYou can download some runnable projects from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the examples are listed bellow __DragDrop__ folder.
-          
+>tipYou can download more runnable projects from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the examples are listed bellow __DragDrop__ folder.         

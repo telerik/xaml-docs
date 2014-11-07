@@ -10,29 +10,13 @@ position: 2
 
 # Tooltips
 
+__RadTimeline__ supports tooltips for its items. You can specify a tooltip template and display the details of the item itself. The purpose of this topic is to show you how this can be achieved.
 
+The tooltip is triggered by setting the __ToolTipTemplate__ property and is used to visualize arbitrary information per data point. The user has full control over the visualization of the tooltip itself and over the information that the tooltip will display.
 
-## 
+For the purpose we'll need a timeline, which is bound to a collection of custom objects. The objects in the data source will be used directly as values for the Timeline items as well as content for our tooltips. You can learn how to bind the Timeline from our [DataBinding]({%slug radtimeline-databinding%}) topic as well as the [MVVM support]({%slug radtimeline-mvvm-support%}) topic.        
 
-__RadTimeline__ supports tooltips for its items. You can specify a tooltip template and display the details of the item itself.
-          The purpose of this topic is to show you how this can be achieved.
-        
-
-The tooltip is triggered by setting the __ToolTipTemplate__ property and is used to visualize arbitrary information per data point.
-          The user has full control over the visualization of the tooltip itself and over the information that the tooltip will display.
-        
-
-For the purpose we'll need a timeline, which is bound to a collection of custom objects.
-          The objects in the data source will be used directly as values for the Timeline items as well as content for our tooltips.
-          You can learn how to bind the Timeline from our 
-          [DataBinding]({%slug radtimeline-databinding%}) topic as well 
-          as the [MVVM support]({%slug radtimeline-mvvm-support%}) topic.
-        
-
-We create a sample class with two properties - Duration of TimeSpan type and Date of DateTime type.
-          Then set values for the properties and create a method that returns a collection of business objects. 
-          This way the Timeline will be able to display information about the currently hovered data point via the ToolTipTemplate.
-        
+We create a sample class with two properties - Duration of TimeSpan type and Date of DateTime type. Then set values for the properties and create a method that returns a collection of business objects. This way the Timeline will be able to display information about the currently hovered data point via the ToolTipTemplate.
 
 #### __C#__
 
@@ -65,9 +49,7 @@ We create a sample class with two properties - Duration of TimeSpan type and Dat
 			return result;
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -95,13 +77,9 @@ We create a sample class with two properties - Duration of TimeSpan type and Dat
 			Return result
 		End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Our *ViewModel* class consists of a single property - the collection of business objects that will be used as itemssource for the Timeline.
-          In the constructor of the class call the GetData method we previously created in our Product class with as many items as you want to generate for your Timeline.
-        
+Our *ViewModel* class consists of a single property - the collection of business objects that will be used as itemssource for the Timeline. In the constructor of the class call the GetData method we previously created in our Product class with as many items as you want to generate for your Timeline.
 
 #### __C#__
 
@@ -130,9 +108,7 @@ Our *ViewModel* class consists of a single property - the collection of business
 			this.Data = Product.GetData(15);
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -156,9 +132,7 @@ Our *ViewModel* class consists of a single property - the collection of business
 				Me.Data = Product.GetData(15)
 			End Sub
 	   End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Now we need to define our tooltip behavior and set its tooltip template. It will display the value of the hovered Timeline item.
 
@@ -203,13 +177,11 @@ Now we need to define our tooltip behavior and set its tooltip template. It will
 	            </telerik:RadTimeline.Intervals>
 	        </telerik:RadTimeline>
 	    </Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
-Aside from binding the Timeline, we added a binding converter. Its purpose is to show you how you may set custom foreground for the tooltip information based on condition.
-          You may find the DurationToBrushConverter implementations in the code snippet below:
-        
+Aside from binding the Timeline, we added a binding converter. Its purpose is to show you how you may set custom foreground for the tooltip information based on condition. You may find the DurationToBrushConverter implementations in the code snippet below:        
 
 #### __C#__
 
@@ -235,9 +207,7 @@ Aside from binding the Timeline, we added a binding converter. Its purpose is to
 			throw new NotImplementedException();
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -259,10 +229,7 @@ Aside from binding the Timeline, we added a binding converter. Its purpose is to
 				Throw New NotImplementedException()
 			End Function
 	 End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 A sample tooltip can be seen below:
-
 ![Rad Time Line-tooltip](images/RadTimeLine-tooltip.PNG)

@@ -10,11 +10,7 @@ position: 1
 
 # Create Custom Filter Editors
 
-
-
-## 
-
->tipYou can see a running demo {% if site.site_name == 'Silverlight' %}[here](http://demos.telerik.com/silverlight/#DataFilter/CustomEditors){% endif %}{% if site.site_name == 'WPF' %}[here](http://demos.telerik.com/wpf/?DataFilter/CustomEditors){% endif %}. 
+>You can see a running demo {% if site.site_name == 'Silverlight' %}[here](http://demos.telerik.com/silverlight/#DataFilter/CustomEditors){% endif %}{% if site.site_name == 'WPF' %}[here](http://demos.telerik.com/wpf/?DataFilter/CustomEditors){% endif %}. 
 
 If you want to specify a custom filter editor you can do it by using the __EditorTemplateSelector__ property of the control. Once the editor (custom or default) has been created, you can add the final touch to it by attaching to the __EditorCreated__ event.
 
@@ -27,7 +23,7 @@ This topic will show you how to use a __RadComboBox__ as a filter editor. For th
 * __EditorTemplateSelector__ - this class will represent the actual template selector. It should inherit the __DataTemplateSelector__ class and override its __SelectTemplate()__ method. It also should contain a collection of __EditorTemplateRule__ objects.
 In the override for the __SelectTemplate()__ method you should iterate the collection of __EditorTemplateRule__ objects and return the __DataTemplate__ appropriate for the currently created editor.
 
->tipAt the end of the topic you can find the code for the __Employee__ business object used in this example and some sample data of this type.
+>At the end of the topic you can find the code for the __Employee__ business object used in this example and some sample data of this type.
 
 In the XAML you have to create an instance of the selector, define its rules collection and set it to the __RadDataFilter__. Also you have to attach an event handler for the __RadDataFilter's____EditorCreated__ event. In it you can add your final touches to the editor. In this example this will be represented by populating the __RadComboBox__ with items. If you take a look at the defined rule, you can see that the __Title__ property has been associated with the __ComboBoxEditor__ template. This means that whenever the __Title__ is selected as a filtering member a __RadComboBox__ editor will appear.
 
@@ -39,6 +35,7 @@ In the XAML you have to create an instance of the selector, define its rules col
 #### __XAML__
 
 {{region raddatafilter-how-to-create-custom-filter-editors_4}}
+
 	<UserControl.Resources>
 	    <DataTemplate x:Key="ComboBoxEditor">
 	        <telerik:RadComboBox SelectedValue="{Binding Value, Mode=TwoWay, FallbackValue=null}"
@@ -74,7 +71,6 @@ In the XAML you have to create an instance of the selector, define its rules col
 	{{endregion}}
 
 
-
 Here is the code behind of the example. The most important thing in it is the event handler for the __EditorCreated__ event. In it you can fill the __RadComboBox__ editor with the desired data. 
 
 As you can see by using the switch statement you can extend the logic for additional custom editors by adding more cases.
@@ -82,6 +78,7 @@ As you can see by using the switch statement you can extend the logic for additi
 #### __C#__
 
 {{region raddatafilter-how-to-create-custom-filter-editors_5}}
+
 	public partial class CustomFilterEditorsSample : UserControl
 	{
 	    public CustomFilterEditorsSample()
@@ -110,6 +107,7 @@ As you can see by using the switch statement you can extend the logic for additi
 #### __VB.NET__
 
 {{region raddatafilter-how-to-create-custom-filter-editors_6}}
+
 	Public Partial Class CustomFilterEditorsSample
 	 Inherits UserControl
 	 Public Sub New()
@@ -139,17 +137,14 @@ As you can see by using the switch statement you can extend the logic for additi
 
 Here is a snapshot of the final result:
 
-
-
-
-         
-      ![](images/RadDataFilter_How_To_CreateCustomFilterEditors_01.png)
+ ![](images/RadDataFilter_How_To_CreateCustomFilterEditors_01.png)
 
 Here is the code for the Employee object and the sample data.
 
 #### __C#__
 
 {{region raddatafilter-how-to-create-custom-filter-editors_7}}
+
 	public class Employee
 	{
 	    public Employee( string name, string companyName, string title )
@@ -181,6 +176,7 @@ Here is the code for the Employee object and the sample data.
 #### __VB.NET__
 
 {{region raddatafilter-how-to-create-custom-filter-editors_8}}
+
 	Public Class Employee
 	 Public Sub New(name As String, companyName As String, title As String)
 	  Me.Name = name
@@ -222,6 +218,7 @@ Here is the code for the Employee object and the sample data.
 #### __C#__
 
 {{region raddatafilter-how-to-create-custom-filter-editors_9}}
+
 	ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
 	employees.Add( new Employee( "Maria Anders", "Alfreds Futterkiste", "Sales Representative" ) );
 	employees.Add( new Employee( "Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner" ) );
@@ -240,6 +237,7 @@ Here is the code for the Employee object and the sample data.
 #### __VB.NET__
 
 {{region raddatafilter-how-to-create-custom-filter-editors_10}}
+
 	Dim employees As New ObservableCollection(Of Employee)()
 	employees.Add(New Employee("Maria Anders", "Alfreds Futterkiste", "Sales Representative"))
 	employees.Add(New Employee("Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner"))
@@ -252,5 +250,3 @@ Here is the code for the Employee object and the sample data.
 	employees.Add(New Employee("Elizabeth Lincoln", "Bottom-Dollar Markets", "Accounting manager"))
 	employees.Add(New Employee("Victoria Ashworth", "B's Beverages", "Sales representative"))
 	{{endregion}}
-
-

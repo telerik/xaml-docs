@@ -12,7 +12,7 @@ position: 4
 
 
 
-The __MapNavigation__exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
+The __MapNavigation__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 
 You have two options:
 
@@ -24,23 +24,19 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Style
 
->tipAs the __MapNavigation__control is part of the template of the __RadMap__, you can edit the __RadMap's__ template and directly style that instance of the control. More about styling the __RadMap__ can be found [here]({%slug radmap-styling-and-templates-styling-the-radmap%}).
+>tipAs the __MapNavigation__ control is part of the template of the __RadMap__, you can edit the __RadMap's__ template and directly style that instance of the control. More about styling the __RadMap__ can be found [here]({%slug radmap-styling-and-templates-styling-the-radmap%}).
 
-To copy the default styles, load your project in Expression Blend and open the User Control that holds the __MapNavigation__. In the 'Objects and Timeline' pane, select the __MapNavigation__you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+To copy the default styles, load your project in Expression Blend and open the User Control that holds the __MapNavigation__. In the 'Objects and Timeline' pane, select the __MapNavigation__ you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __MapNavigation__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __MapNavigation__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __MapNavigation____.__ Their names indicate to which part of the __MapNavigation__appearance they are assigned.{% endif %}
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __MapNavigation__. Their names indicate to which part of the __MapNavigation__ appearance they are assigned.{% endif %}
 
 >To change the button's default toggled and hover colors, you have to edit their default styles.{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_StylingMapNavigation_01.png){% endif %}
+![](images/RadMap_StylesAndTemplates_StylingMapNavigation_01.png){% endif %}
 
 * __ControlOuterBorderVertical_Normal__ - a brush that represents the border color of the buttons inside the __MapNavigation's__ template.
 
@@ -92,19 +88,11 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 Here is an example of these resources modified:{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_StylingMapNavigation_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![](images/RadMap_StylesAndTemplates_StylingMapNavigation_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
 And here is a snapshot of the result.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_StylingMapNavigation_03.png){% endif %}
+![](images/RadMap_StylesAndTemplates_StylingMapNavigation_03.png){% endif %}
 
 # See Also
 

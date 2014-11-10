@@ -23,59 +23,30 @@ This article describes the __NodeViewModelBase__ defined in the Diagramming Exte
 __NodeViewModelBase__ is a __ViewModel__ designed to serve as a base __ViewModel__ for __RadDiagramShapes__ in a data-bound __RadDiagram__. The class is defined to expose properties that allow you to track and save the state of a shape in business models. It derives from the  [ItemViewModelBase]({%slug raddiagram-data-itemviewmodels%}) class.
 		
 
-
-                  NodeViewModelBase Inheritance Model
-              ![raddiagram-data-nodeviewmodel](images/raddiagram-data-nodeviewmodel.png)
+NodeViewModelBase Inheritance Model
+![raddiagram-data-nodeviewmodel](images/raddiagram-data-nodeviewmodel.png)
 
 __NodeViewModelBase__ has a single constructor - NodeViewModelBase() that initializes a new instance of the class.
 		
 
 ## Properties
-<table>Properties<th><tr><td>
 
-Name</td><td>
+Properties
+|Name|Description|
+|----|-----------|
+|Width|Gets or sets a Double value indicating the Width of the represented shape.|
+|Height|Gets or sets a Double value indicating the Height of the represented shape.|
+|RotationAngle|Gets or sets a Double value indicating the rotation angle of the represented shape.|
 
-Description</td></tr></th><tr><td>
+Inherited Properties
 
-<b>Width</b></td><td>
+|Name|Description|
+|----|-----------|
+|Visibility|Gets or sets the Visibility of the represented shape. The property is of type Visibility.|
+|Position|Gets or sets the coordinates of a Point that represents the position of the represented shape.|
+|Content|Gets or sets an object that represents the content of a shape.|
+|IsSelected|Gets or sets a boolean value indicating whether the represented shape is selected.|
 
-Gets or sets a <b>Double</b> value indicating the <b>Width</b> of the represented shape.
-			  </td></tr><tr><td>
-
-<b>Height</b></td><td>
-
-Gets or sets a <b>Double</b> value indicating the <b>Height</b> of the represented shape.
-			  </td></tr><tr><td>
-
-<b>RotationAngle</b></td><td>
-
-Gets or sets a <b>Double</b> value indicating the rotation angle of the represented shape.
-			  </td></tr></table>
-<table>Inherited Properties:<th><tr><td>
-
-Name</td><td>
-
-Description</td></tr></th><tr><td>
-
-<b>Visibility</b></td><td>
-
-Gets or sets the Visibility of the represented shape. The property is of type <b>Visibility</b>.
-			  </td></tr><tr><td>
-
-<b>Position</b></td><td>
-
-Gets or sets the coordinates of a <b>Point</b> that represents the position of the represented shape.
-			  </td></tr><tr><td>
-
-<b>Content</b></td><td>
-
-Gets or sets an <b>object</b> that represents the content of a shape.
-			  </td></tr><tr><td>
-
-<b>IsSelected</b></td><td>
-
-Gets or sets a <b>boolean</b> value indicating whether the represented shape is selected.
-			  </td></tr></table>
 
 # See Also
 

@@ -12,7 +12,7 @@ position: 0
 
 
 
-The __PersistenceFramework__allows you to save the layout of __UIElements__ in an isolated storage. For that purpose the __telerik:PersistenceManager.StorageId__ attached property has to be set for each __UIElement__ that will be persisted.
+The __PersistenceFramework__ allows you to save the layout of __UIElements__ in an isolated storage. For that purpose the __telerik:PersistenceManager.StorageId__ attached property has to be set for each __UIElement__ that will be persisted.
 	  
 
 ## 
@@ -87,7 +87,7 @@ The property is used to create a file in the isolated storage for each persisted
 In order to save the persisted properties in an isolated storage, you can use the __IsolatedStorageProvider.__It exposes the following members:
 		
 
-* __SaveToStorage()__- the method that saves the __UIElement__ properties in the associated file in the isolated storage
+* __SaveToStorage()__ - the method that saves the __UIElement__ properties in the associated file in the isolated storage
 			
 
 * __LoadFromStorage()__ - the method that loads the persisted properties from the __UIElement's__ associated file
@@ -96,7 +96,7 @@ In order to save the persisted properties in an isolated storage, you can use th
 * __QuotaRequested__ - is an event. When the application requests a larger quota from the isolated storage, the user is prompted to allow or deny the request. The __QuotaRequested__ event is fired when the user makes a choice. The event receives two arguments:
 			
 
-* A __sender__ argument that receives the __IsolatedStorageProvider__that is requesting the additional quota
+* A __sender__ argument that receives the __IsolatedStorageProvider__ that is requesting the additional quota
 				
 
 * A __QuotaRequestedEventArgs__ object that gives access to:
@@ -111,9 +111,7 @@ In order to save the persisted properties in an isolated storage, you can use th
 * __RequestedBytes__ - a property of type __long__ that represents the size of the requested quota
 					
 
->When you are using the __IsolatedStorageProvider__, you can check the persistence storage
-			and the controls that are persisted using the __PersistenceManager.GetStorage()__static method.
-			It returns an object of type __ObjectStorage__ that exposes the following properties:
+>When you are using the __IsolatedStorageProvider__, you can check the persistence storage and the controls that are persisted using the __PersistenceManager.GetStorage()__ static method.It returns an object of type __ObjectStorage__ that exposes the following properties:
 		  
 
 * __Count__ - this property is of type __int__ and it gets the number of persisted objects.
@@ -158,10 +156,14 @@ In order to save the persisted properties in an isolated storage, you can use th
 
 
 The __IsolatedStorageProvider.SaveToStorage()__ method will save the properties of all controls for which the __telerik:PersistenceManager.StorageId__ attached property is set. In the above example all properties of the __RadTreeView__ and the __ContentControl__ will be saved:
-		![](images/PersistenceFramework_IsolatedStorage_Initial.png)
 
-1. Expand Condiments and select Gula Malacca. Add description for the item in the Details ContentControl. Then hit Save:![](images/PersistenceFramework_IsolatedStorage_Save.png)
+![](images/PersistenceFramework_IsolatedStorage_Initial.png)
 
-2. Now change the layout of the UserControl - for example collapse Condiments and expand Confections. Then Select Maxilaku and add description for it. ![](images/PersistenceFramework_IsolatedStorage_Change.png)
+1. Expand Condiments and select Gula Malacca. Add description for the item in the Details ContentControl. Then hit Save:
+![](images/PersistenceFramework_IsolatedStorage_Save.png)
 
-3. If you want to retrieve the previous state of the controls in your page, all you need to do is hit Load:![](images/PersistenceFramework_IsolatedStorage_Load.png)
+2. Now change the layout of the UserControl - for example collapse Condiments and expand Confections. Then Select Maxilaku and add description for it. 
+![](images/PersistenceFramework_IsolatedStorage_Change.png)
+
+3. If you want to retrieve the previous state of the controls in your page, all you need to do is hit Load:
+![](images/PersistenceFramework_IsolatedStorage_Load.png)

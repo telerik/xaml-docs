@@ -14,9 +14,7 @@ position: 1
 
 ## 
 
-Telerik __RadSlider__ control exposes properties that allow you to customize 
-        different parts of the control without changing the entire __ControlTemplate__ of the 
-        __Slider__.
+Telerik __RadSlider__ control exposes properties that allow you to customize different parts of the control without changing the entire __ControlTemplate__ of the __Slider__.
 
 * __ThumbStyle__ – the style for the single __Thumb__
 

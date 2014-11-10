@@ -14,23 +14,23 @@ position: 0
 
 The __GraphicScale__ class is used as a base class for the LinearScale and the RadialScale classes. It provides common functionality for the both scales. This topic will explain you the major features of the GraphicScale class. Here is a list of them:
 
-* [Scale Offsets](#Scale_Offsets)
+* [Scale Offsets](#scale-offsets)
 
-* [Scale Width](#Scale_Width)
+* [Scale Width](#scale-width)
 
-* [Interactivity](#Interactivity)
+* [Interactivity](#interactivity)
 
-* [Logarithmic Scale](#Logarithmic_Scale)
+* [Logarithmic Scale](#logarithmic-scale)
 
-* [Reversed Scale](#Reversed_Scale)
+* [Reversed Scale](#reversed-scale)
 
-* [Show First and Last Label](#Show_First_and_Last_Label)
+* [Show First and Last Label](#show-first-and-last-label)
 
-* [Ranges](#Ranges)
+* [Ranges](#ranges)
 
-* [Labels](#Labels)
+* [Labels](#labels)
 
-* [Ticks](#Ticks)
+* [Ticks](#ticks)
 
 >The __ScaleBase__ class cannot be used on its own as a scale. You should use either the [Radial]({%slug radgauge-features-radial-scale%}) or [Linear Scales]({%slug radgauge-features-scales-linear-scale%}).
 
@@ -61,11 +61,7 @@ The scales display values depending on their __Min__ and __Max__ properties. How
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_Features_BaseScale_01.png)
+![](images/RadGauge_Features_BaseScale_01.png)
 
 ## Scale Width
 
@@ -96,11 +92,7 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_Features_BaseScale_02.png)
+![](images/RadGauge_Features_BaseScale_02.png)
 
 ## Interactivity
 
@@ -124,18 +116,13 @@ The __Interactivity__ feature allows the user to interact with the scale. Enabli
 
 ## Logarithmic Scale
 
-Both radial and linear scales have Distribution property which specify value distribution along the scale (linear, logarithmic, exponential and etc.). This property is defined in the GraphicScale class and have type of the IValueDistribution interface.
-        This interface converts real scale value (given as value between Min and Max property of the scale) to the relative value (value in the [0...1] interval) which represents relative position of the value along the scale and vice versa. It also possible to calculate value for the tick mark using its
-        index and total number of ticks. Currently there are 3 basic implementations of this interface:
+Both radial and linear scales have Distribution property which specify value distribution along the scale (linear, logarithmic, exponential and etc.). This property is defined in the GraphicScale class and have type of the IValueDistribution interface. This interface converts real scale value (given as value between Min and Max property of the scale) to the relative value (value in the [0...1] interval) which represents relative position of the value along the scale and vice versa. It also possible to calculate value for the tick mark using its index and total number of ticks. Currently there are 3 basic implementations of this interface:
 
-* __Regular__ - the default distribution which is represented by linear function.
-          See the first example below.
+* __Regular__ - the default distribution which is represented by linear function. See the first example below.
 
-* __Range logarithmic__ - the distribution which maps logarithmic function on any value range (i.e. tick marks have close values at the beginning of the range and wide distance at the end of range). It corresponds to the IsLogarithmic mode in the old implementation.
-          See the second example below.
+* __Range logarithmic__ - the distribution which maps logarithmic function on any value range (i.e. tick marks have close values at the beginning of the range and wide distance at the end of range). It corresponds to the IsLogarithmic mode in the old implementation. See the second example below.
 
-* __Classic logarithmic__ – the distribution which is represented by logarithmic function. It represents classic meaning of the logarithmic scale. In contrast to the range logarithmic distribution it can’t be used on arbitrary value range, but on the positive numbers only.
-          See the third example below.
+* __Classic logarithmic__ – the distribution which is represented by logarithmic function. It represents classic meaning of the logarithmic scale. In contrast to the range logarithmic distribution it can’t be used on arbitrary value range, but on the positive numbers only. See the third example below.
 
 >tipThe default value for the __LogarithmicBase__ property is __10__.
 
@@ -164,11 +151,7 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_Features_BaseScale_04.png)
+![](images/RadGauge_Features_BaseScale_04.png)
 
 ## Show First and Last Label
 
@@ -197,31 +180,16 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_Features_BaseScale_05.png)
+![](images/RadGauge_Features_BaseScale_05.png)
 
 ## Ranges
 
-The __RadGauge__ control allows you to define ranges for your scales. 
-        The range is used for wrapping a specific section of the scale, that meets a condition. 
-        To allow you to use ranges with the different types of scales, the __RadGauge__ control 
-        provides you with a scale specific range objects. To learn more about working with ranges, 
-        read the [Ranges]({%slug radgauge-features-ranges-gauge-range%}) section of the documentation.
+The __RadGauge__ control allows you to define ranges for your scales. The range is used for wrapping a specific section of the scale, that meets a condition. To allow you to use ranges with the different types of scales, the __RadGauge__ control provides you with a scale specific range objects. To learn more about working with ranges, read the [Ranges]({%slug radgauge-features-ranges-gauge-range%}) section of the documentation.
 
 ## Labels
 
-The __GraphicScale__ class allows you to modify and configure the labels displayed next to the ticks of the scales. 
-        This is done by using the set of the __LabelXXXX__ properties 
-        (i.e. *LabelLocation*, *LabelOffset*, 
-        *LabelTemplate* and so on) of the scale. 
-        To learn more about configuring the labels, read the [Labels]({%slug radgauge-features-labels-basics%}) section of the documentation.
+The __GraphicScale__ class allows you to modify and configure the labels displayed next to the ticks of the scales. This is done by using the set of the __LabelXXXX__ properties (i.e. *LabelLocation*, *LabelOffset*, *LabelTemplate* and so on) of the scale. To learn more about configuring the labels, read the [Labels]({%slug radgauge-features-labels-basics%}) section of the documentation.
 
 ## Ticks
 
-The __GraphicScale__ class exposes three sets of properties - __MajorTickXXXX__, 
-        __MiddleTickXXXX__, __MinorTickXXXX__. 
-        They are used to configure the displaying of the different tick types on the scale. 
-        To learn more about configuring the ticks read the [Ticks]({%slug radgauge-features-ticks-basics%}) section of the documentation.
+The __GraphicScale__ class exposes three sets of properties - __MajorTickXXXX__, __MiddleTickXXXX__, __MinorTickXXXX__. They are used to configure the displaying of the different tick types on the scale. To learn more about configuring the ticks read the [Ticks]({%slug radgauge-features-ticks-basics%}) section of the documentation.

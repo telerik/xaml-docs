@@ -21,6 +21,7 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 #### __C#__
 
 {{region raddataform-integrate-with-radgridview_0}}
+
 	public class Employee : INotifyPropertyChanged
 	 {  
 	  public event PropertyChangedEventHandler PropertyChanged;
@@ -141,6 +142,7 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 #### __VB.NET__
 
 {{region raddataform-integrate-with-radgridview_1}}
+
 	Public Class Employee
 	 Implements INotifyPropertyChanged
 	 Public Event PropertyChanged As PropertyChangedEventHandler
@@ -273,6 +275,7 @@ The definition of the of the RadGridView may be as follows:
 #### __XAML__
 
 {{region raddataform-integrate-with-radgridview_2}}
+
 	<telerik:RadGridView x:Name="RadGridView1" IsReadOnly="True" ItemsSource="{Binding Employees}" 
 	                             CanUserFreezeColumns="False" RowIndicatorVisibility="Collapsed" 
 	                             Height="500"  Width="700"
@@ -292,6 +295,7 @@ Afterwards, all you have to do is to set the ItemsSource of the grid:
 #### __C#__
 
 {{region raddataform-integrate-with-radgridview_3}}
+
 	public MainPage()
 	  {
 	   InitializeComponent();   
@@ -304,6 +308,7 @@ Afterwards, all you have to do is to set the ItemsSource of the grid:
 #### __VB.NET__
 
 {{region raddataform-integrate-with-radgridview_4}}
+
 	Public Sub New()
 	 InitializeComponent()
 	 Me.RadGridView1.ItemsSource = Employee.GetEmployees()
@@ -314,11 +319,7 @@ Afterwards, all you have to do is to set the ItemsSource of the grid:
 
 Once you define all the required parts, you will see the following:
 
-
-
-
-         
-      ![](images/RadDataForm_IntegrationWithRadGridView.png)
+ ![](images/RadDataForm_IntegrationWithRadGridView.png)
 
 As mentioned previously, the implementation of the INotifyPropertyChanged Interface ensures that the changes made while editing with the RadDataForm will be immediately reflected in the corresponding item. 
 

@@ -59,7 +59,7 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 		Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
 	End Sub
 	Private Sub RadOutlookBar1_PreviewSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-		'use the Handled property to prevent the selection           
+		'use the Handled property to prevent the selection'
 	End Sub
 {{endregion}}
 
@@ -100,14 +100,11 @@ The following properties are related to the selection mechanism of the __RadOutl
 
 * __SelectedContent__ - get the selected content
 
-There are also the following properties related to the styling of the
-selected content and item:
+There are also the following properties related to the styling of the selected content and item:
 
-* __SelectedContentTemplate__ - template for the selected
-    content.
+* __SelectedContentTemplate__ - template for the selected content.
 
-* __SelectedContentTemplateSelector__ - template selector
-    for the selected content
+* __SelectedContentTemplateSelector__ - template selector for the selected content
 
 # See Also
 

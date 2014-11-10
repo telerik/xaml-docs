@@ -12,7 +12,7 @@ position: 13
 
 
 
-The __MapShape__ object exposes a property called __ExtendedData__. It allows you to attach additional data to the shape. For example, if a shape represents a country on the map, you can use the __ExtendedData__ property to attach information about the country such as Area, Capitol, Population etc. Later this data can be accessed through the __ExtendedData__property.
+The __MapShape__ object exposes a property called __ExtendedData__. It allows you to attach additional data to the shape. For example, if a shape represents a country on the map, you can use the __ExtendedData__ property to attach information about the country such as Area, Capitol, Population etc. Later this data can be accessed through the __ExtendedData__ property.
 
 >tipTo learn more about the __MapShape__ objects read [here]({%slug radmap-features-map-shapes%}).
 
@@ -20,17 +20,17 @@ The __MapShape__ object exposes a property called __ExtendedData__. It allows yo
 
 This topic will explain the following:
 
-* [Extended Data and MapShapeReader](#Extended_Data_and_MapShapeReader)
+* [Extended Data and MapShapeReader](#extended-data-and-mapshapereader)
 
-* [Manual Extended Data creation](#Manual_Extended_Data_creation)
+* [Manual Extended Data creation](#manual-extended-data-creation)
 
-* [Extended Data Converter](#Extended_Data_Converter)
+* [Extended Data Converter](#extended-data-converter)
 
 ## Extended Data and MapShapeReader
 
 When generating shapes automatically from the various data formats via __MapShapeReader__, the __Extended Data__ gets automatically extracted from the files and stored inside the __ExtendedData__ property. This way you can directly use it where needed.
 
->tipTo learn more about the __MapShapeReader__object read [here]({%slug radmap-features-information-layer-shape-reder%}).
+>tipTo learn more about the __MapShapeReader__ object read [here]({%slug radmap-features-information-layer-shape-reder%}).
 
 ## Manual Extended Data creation
 
@@ -84,20 +84,20 @@ In case you are manually generating the shapes inside a layer, you have to manua
 #### __VB.NET__
 
 {{region radmap-features-extended-data_2}}
-	' Create extended property set.
-	' It can be shared between the number
-	' of the map shapes.
+	' Create extended property set.'
+	' It can be shared between the number'
+	' of the map shapes.'
 	Dim propertySet As New ExtendedPropertySet()
 	propertySet.RegisterProperty("Name", "City Name", GetType(String), String.Empty)
 	propertySet.RegisterProperty("Population", "Population", GetType(Integer), 0)
 	Dim sofiaEllipse As New MapEllipse() With {.ShapeFill = New MapShapeFill() With {.Stroke = New SolidColorBrush(Colors.Red), .StrokeThickness = 2, .Fill = New SolidColorBrush(Colors.Transparent)}, .Width = 20, .Height = 20, .Location = New Location(42.6957539183824, 23.3327663758679)}
-	' Create extended data for the ellipse
-	' using existing property set.
+	' Create extended data for the ellipse'
+	' using existing property set.'
 	Dim sofiaData As New ExtendedData(propertySet)
-	' Set the extended properties.
+	' Set the extended properties.'
 	sofiaData.SetValue("Name", "Sofia")
 	sofiaData.SetValue("Population", 1300000)
-	' Assign extended data to the map shape.
+	' Assign extended data to the map shape.'
 	sofiaEllipse.ExtendedData = sofiaData
 	Me.informationLayer.Items.Add(sofiaEllipse)
 	{{endregion}}
@@ -106,7 +106,7 @@ In case you are manually generating the shapes inside a layer, you have to manua
 
 ## Extended Data Converter
 
-To access the data stored in the__ExtendedData__ property simply bind directly to it and use the __ExtendedDataConverter__class, that comes out of the box with the __RadMap__. To get the desired value you have to also pass the name of the respective property from the set as the __ConverterParameter__. Here is an example, based on the one in the previous section:
+To access the data stored in the __ExtendedData__ property simply bind directly to it and use the __ExtendedDataConverter__ class, that comes out of the box with the __RadMap__. To get the desired value you have to also pass the name of the respective property from the set as the __ConverterParameter__. Here is an example, based on the one in the previous section:
 
 >tipYou can pass a string to the ConvertParameter that combines the values of two or more properties from the Extended Data. To learn how to compose your format string read the [following topic](#ToolTipFormat).
 
@@ -168,7 +168,7 @@ To access the data stored in the__ExtendedData__ property simply bind directly t
 	sofiaData.SetValue("Name", "Sofia")
 	sofiaData.SetValue("Population", 1300000)
 	sofiaEllipse.ExtendedData = sofiaData
-	' Assign tooltip which uses the extended properties.
+	' Assign tooltip which uses the extended properties.'
 	Dim _tooltip As New ToolTip()
 	Dim tooltipBinding As New Binding() With {.Converter = New ExtendedDataConverter(), .ConverterParameter = "{Name}: {Population} people", .Source = sofiaEllipse.ExtendedData}
 	_tooltip.SetBinding(ToolTip.ContentProperty, tooltipBinding)
@@ -180,8 +180,4 @@ To access the data stored in the__ExtendedData__ property simply bind directly t
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadMap_Features_ExtendedData_01.png)
+![](images/RadMap_Features_ExtendedData_01.png)

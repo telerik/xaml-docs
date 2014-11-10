@@ -542,13 +542,13 @@ In order to customize the appearance of each __Content__ of the __RadFluidConten
 Now that we have all prerequisites in place, we can start working on the semantic zoom logic. We need to bind the __RadFluidContentControl State__ property to a business property in order to manually control it based on the __RadDiagram Zoom__. Now if you go back to the *CustomNode* class definition, you can see that we've defined a *CurrentDisplayMode* property and an __ItemDisplayMode Enum__ to describe the current state of a __RadDiagramShape__. But in a real-life application, we will need to synchronize the state of all items so that they can change together. This is why we can create a business property in our *MainViewModel* that reflects the __ItemDisplayMode__ of all __RadDiagramShapes__.
 		
 
-	
+	#### __C#__
         public ItemDisplayMode ItemsCurrentDisplayMode { get; set; }	
 	  
 
 
 
-	
+	#### __VB.NET__
 	Private m_ItemsCurrentDisplayMode As ItemDisplayMode
 	Public Property ItemsCurrentDisplayMode() As ItemDisplayMode
 		Get
@@ -780,8 +780,5 @@ Finally, we need to change the __RadDiagram__ and __RadFluidContentControl__ def
 If you run the application now, you should be able to dynamically change the content of the sample __RadDiagramShape__ while zooming in or out of the __RadDiagram__.
 		![Rad Diagram Semantic Zoom Fluid Content](images/RadDiagram_SemanticZoom_FluidContent.png)
 
-A semantic zoom feature is implemented in the
-		  {% if site.site_name == 'Silverlight' %}[OrgChart demo](http://demos.telerik.com/silverlight/#Diagrams/OrgChart){% endif %}{% if site.site_name == 'WPF' %}[Diagrams->OrgChart demo](http://demos.telerik.com/wpf/#Diagrams/OrgChart){% endif %} solution.
-		
+A semantic zoom feature is implemented in the {% if site.site_name == 'Silverlight' %}[OrgChart demo](http://demos.telerik.com/silverlight/#Diagrams/OrgChart){% endif %}{% if site.site_name == 'WPF' %}[Diagrams->OrgChart demo](http://demos.telerik.com/wpf/#Diagrams/OrgChart){% endif %} solution.
 
-# See Also

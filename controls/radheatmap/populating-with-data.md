@@ -35,9 +35,7 @@ The result is shown below:
 
 ## Vertical definition
 
-We'll set the months as __HeaderPath__ of our HeatMap.
-		  Thus the months supplied by the Month property of our underlying source will be visualized as column headers.
-		  For each row we'll display the Temperature and Rain values of the corresponding month:
+We'll set the months as __HeaderPath__ of our HeatMap. Thus the months supplied by the Month property of our underlying source will be visualized as column headers. For each row we'll display the Temperature and Rain values of the corresponding month:
 		
 
 #### __XAML__

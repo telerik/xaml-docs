@@ -19,22 +19,20 @@ __Routing__ - a mechanism using algorithms to make sure that the connections don
 Routing in __RadDiagram__ is only available if the __RadDiagram RouteConnections__ property is set to __True__.  Please note that its default value is __False__ and you need to explicitly declare you want to enable the routing features.
 		  
 
-	
-<Grid>
-  <Grid.Resources>
-	<Style TargetType="telerik:RadDiagramConnection">
-	  <Setter Property="ConnectionType" Value="Polyline"/>
-	</Style>
-  </Grid.Resources>
-  <telerik:RadDiagram RouteConnections="True"/>
-</Grid>
+	#### __XAML__
+    <Grid>
+      <Grid.Resources>
+        <Style TargetType="telerik:RadDiagramConnection">
+          <Setter Property="ConnectionType" Value="Polyline"/>
+        </Style>
+      </Grid.Resources>
+      <telerik:RadDiagram RouteConnections="True"/>
+    </Grid>
 		  
 
 ![raddiagram-features-routing 1](images/raddiagram-features-routing1.png)
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-			{% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-			article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
 		  
 
 The routing algorithm can be parametrized using the __DiagramConstants.RoutingGridSize__ constant that has a default value of __40__ units.
@@ -48,9 +46,7 @@ This value indicates the size of the cells of the underlying grid used by the al
 ## OrgTreeRouter
 	  
 
-The __OrgTreeRouter__ is __LayoutType__ - based router that performs a hierarchical routing between parent and child shape.
-		  When a shape is being dragged, it removes only the crossings between the connection and its source and target shapes.
-		  It should be used when following conditions are satisfied:
+The __OrgTreeRouter__ is __LayoutType__ - based router that performs a hierarchical routing between parent and child shape. When a shape is being dragged, it removes only the crossings between the connection and its source and target shapes. It should be used when following conditions are satisfied:
 		
 
 * The __IsConnectorsManipulationEnabled__ is set to false.
@@ -59,7 +55,7 @@ The __OrgTreeRouter__ is __LayoutType__ - based router that performs a hierarchi
 * The __LayoutType__ is among the following 5 - __TipOverTree__, __TreeDown__, __TreeUp__, __TreeLeft__, __TreeRight__.
 
 In order to use the OrgTreeRouter , you have to instantiate an OrgTreeRouter object and set it as current Router of the RadDiagram via the RoutingService:
-
+#### __C#__
 {{region raddiagram-features-routing-0}}
 	public MainPage()
 	{
@@ -73,7 +69,7 @@ In order to use the OrgTreeRouter , you have to instantiate an OrgTreeRouter obj
 	}
 	{{endregion}}
 
-
+#### __VB.NET__
 
 {{region raddiagram-features-routing-0}}
 	Public Sub New()
@@ -91,7 +87,7 @@ In order to use the OrgTreeRouter , you have to instantiate an OrgTreeRouter obj
 The TreeLayoutType points to the type of Layout you wish to use. The routing logic is based on this LayoutType.
 
 The ConnectionOuterSpacing is the Minimum Margin between the Parent/Child Shape and the connection.
-
+#### __XAML__
 {{region raddiagram-features-routing-0}}
 	<telerik:RadDiagram IsManipulationAdornerVisible="False" IsConnectorsManipulationEnabled="False" 
 					x:Name="diagram" Width="1000" Height="500" Grid.Row="1" RouteConnections="True">
@@ -117,18 +113,17 @@ The ConnectionOuterSpacing is the Minimum Margin between the Parent/Child Shape 
 
 
 
-Below you can see these shapes after TreeDown Layout operation performed on the Diagram.![raddiagram-features-routing 2](images/raddiagram-features-routing2.png)
+Below you can see these shapes after TreeDown Layout operation performed on the Diagram.
+
+![raddiagram-features-routing 2](images/raddiagram-features-routing2.png)
 
 The OrgTreeRouter is used in our __ClassDiagram__ and __OrgChart__ samples of RadDiagram.
 
 ## OrgTreeRouter : TipOverTreeRouter
 	  
 
-When the TreeLayoutType is set to TipOverTree, the OrgTreeRouter uses a special kind of router - the TipOverTreeRouter.
-		It produces best visual results when a custom connectors are added in the bottom-left part of the shapes.
-		In the following lines we will create a quick sample demonstrating the TipOverTree routing and how to configure it properly.
-		Lets first define some shapes:
-
+When the TreeLayoutType is set to TipOverTree, the OrgTreeRouter uses a special kind of router - the TipOverTreeRouter. It produces best visual results when a custom connectors are added in the bottom-left part of the shapes. In the following lines we will create a quick sample demonstrating the TipOverTree routing and how to configure it properly. Lets first define some shapes:
+#### __XAML__
 {{region raddiagram-features-routing-1}}
 	<Grid.Resources>
 				<Style TargetType="telerik:RadDiagramConnection">
@@ -172,7 +167,7 @@ On a button's click event handler we will perform 3 base steps:
 * Create TreeLayoutSettings and configure it.
 
 * Create Router and assign it to be the default one.
-
+#### __C#__
 {{region raddiagram-features-routing-3}}
 		private void RadButton_Click(object sender, RoutedEventArgs e)
 			{
@@ -206,7 +201,7 @@ On a button's click event handler we will perform 3 base steps:
 			}
 	{{endregion}}
 
-
+#### __VB.NET__
 
 {{region raddiagram-features-routing-3}}
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
@@ -240,7 +235,9 @@ On a button's click event handler we will perform 3 base steps:
 
 
 
-Here is a possible result in Windows8 theme:![raddiagram-features-routing 3](images/raddiagram-features-routing3.png)
+Here is a possible result in Windows8 theme:
+
+![raddiagram-features-routing 3](images/raddiagram-features-routing3.png)
 
 ## Custom Router
 	  
@@ -249,7 +246,7 @@ In the following section we will create a custom Router. This way we will be abl
 
 Lets first create some items:
 
-	
+	#### __XAML__
 		  <telerik:RadDiagram x:Name="diagram">
 		  <telerik:RadDiagramShape Position="100 100" Width="100" Height="30" Content="Shape A" x:Name="shapeA"/>
 		  <telerik:RadDiagramShape Position="300 100" Width="100" Height="30" Content="Shape B" x:Name="shapeB"/>
@@ -261,7 +258,7 @@ Lets first create some items:
 
 Now we have to create class that implements the __IRouter__interface and override the GetRoutePoints() method:
 		
-
+#### __C#__
 {{region raddiagram-features-routing-1}}
 	public class CustomRouter : IRouter
 	{
@@ -281,7 +278,7 @@ Now we have to create class that implements the __IRouter__interface and overrid
 	}
 	{{endregion}}
 
-
+#### __VB.NET__
 
 {{region raddiagram-features-routing-1}}
 	Public Class CustomRouter
@@ -306,20 +303,22 @@ Now we have to create class that implements the __IRouter__interface and overrid
 Please note that we only have to add in the list the route points, no need to add the start and the end point of the connection.
 
 The final step is to make our Router the current one of the Diagram. This is done via Diagram's Routing Service;
+#### __C#__
+{{region raddiagram-features-routing-2}}
+	this.diagram.RoutingService.Router = new CustomRouter();
+	{{endregion}}
 
+
+#### __VB.NET__
 {{region raddiagram-features-routing-2}}
 	this.diagram.RoutingService.Router = new CustomRouter();
 	{{endregion}}
 
 
 
-{{region raddiagram-features-routing-2}}
-	this.diagram.RoutingService.Router = new CustomRouter();
-	{{endregion}}
+Below you can see a possible output (Windows8 theme is applied). The custom points that router creates are marked with 1,2,3,4:
 
-
-
-Below you can see a possible output (Windows8 theme is applied). The custom points that router creates are marked with 1,2,3,4:![raddiagram-features-customrouter](images/raddiagram-features-customrouter.png)
+![raddiagram-features-customrouter](images/raddiagram-features-customrouter.png)
 
 # See Also
 

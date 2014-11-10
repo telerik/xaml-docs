@@ -24,7 +24,9 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
 >For more information about templating and how to modify the default templates of the __RadControls__ read the article on [different approaches on how to extract the ControlTemplates]({%slug styling-apperance-editing-control-templates%}).
         
 
-## RadDataFilter![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_01.png)
+## RadDataFilter
+
+![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_01.png)
 
 * __[ScrollViewer]__ - wraps the elements of the __RadDataFilter's__ template and enables scrolling, when the __RadDataFilter__ exceeds the available space. It is of type __ScrollViewer__.
             
@@ -32,7 +34,8 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
 * __[DataFilterPresenter]__ - represents the control that wraps the visual elements of the __RadDataFilter__. It is of type __DataFilterPresenter__ and inherits the __HeaderedItemsControl__.
             
 
-## DataFilterPresenter![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_02.png)
+## DataFilterPresenter
+![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_02.png)
 
 * __[Border]__
 
@@ -45,7 +48,8 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
 * __Items__ - displays the items of the __DataFilterPresenter__ and is of type __ItemsPresenter__.
             
 
-## FilterControl![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_03.png)
+## FilterControl
+![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_03.png)
 
 * __OuterBorder__ - represents the color of the outer border of the __FilterControl__ and is of type __Border__.
             

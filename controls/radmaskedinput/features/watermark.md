@@ -30,7 +30,7 @@ In the following example, the user is asked to enter four digits:
 
 
 
-When an empty string is entered, then the default __Placeholder__(the character used to represent the absence of user input in a __RadMaskedInput__ control)____will be displayed.
+When an empty string is entered, then the default __Placeholder__(the character used to represent the absence of user input in a __RadMaskedInput__ control) will be displayed.
 				
 
 ![](images/RadMaskedTextBox_Features_Watermark_Default.png)
@@ -105,13 +105,10 @@ Similarly, you can use the __EmptyContentTemplate__ property for the same sort o
 
 ![](images/RadMaskedTextBox_Features_Watermark_WatermarkTextBox_Customized.png)
 
->tip
-					You can see a live demo demonstrating the __EmptyContent__property [here](http://demos.telerik.com/silverlight/#MaskedInput/MaskedTextInput).
+>tipYou can see a live demo demonstrating the __EmptyContent__ property [here](http://demos.telerik.com/silverlight/#MaskedInput/MaskedTextInput).
 				
 
->tip
-					For more information about the __RadWatermarkTextBox__ control, check out the
-					{% if site.site_name == 'Silverlight' %}[RadWatermarkTextBox Overview](http://www.telerik.com/help/silverlight/radwatermarktextbox-overview.html){% endif %}{% if site.site_name == 'WPF' %}[RadWatermarkTextBox Overview](http://www.telerik.com/help/wpf/radwatermarktextbox-overview.html){% endif %} topic.
+>tipFor more information about the __RadWatermarkTextBox__ control, check out the{% if site.site_name == 'Silverlight' %}[RadWatermarkTextBox Overview](http://www.telerik.com/help/silverlight/radwatermarktextbox-overview.html){% endif %}{% if site.site_name == 'WPF' %}[RadWatermarkTextBox Overview](http://www.telerik.com/help/wpf/radwatermarktextbox-overview.html){% endif %} topic.
 				
 
 # See Also

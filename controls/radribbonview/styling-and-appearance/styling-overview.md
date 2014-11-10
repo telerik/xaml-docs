@@ -14,7 +14,7 @@ position: 0
 
 ## 
 
-The __RadRibbonView__is a fully stylable control. It allows you to easily apply styles to the individual components. The Styling and Appearance chapter provides you with a list of resources that show you how to create, modify and apply styles for each of the __RadRibbonView__components.
+The __RadRibbonView__ is a fully stylable control. It allows you to easily apply styles to the individual components. The Styling and Appearance chapter provides you with a list of resources that show you how to create, modify and apply styles for each of the __RadRibbonView__ components.
 				
 
 >To learn how to style the __RadControls__ read the common topics about Styling and Appearance. If you are new to the technology, these topics will give you the basic knowledge about them.

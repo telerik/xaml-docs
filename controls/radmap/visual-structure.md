@@ -14,7 +14,7 @@ position: 2
 
 ## 
 
-__RadMap__is a visual control that allows you to visualize rich geographical information, to zoom and to pan smoothly to any corner of the earth.
+__RadMap__ is a visual control that allows you to visualize rich geographical information, to zoom and to pan smoothly to any corner of the earth.
         
 
 This section defines the terms and concepts used in the scope of the __RadMap__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadMap__ control.
@@ -36,9 +36,10 @@ This section defines the terms and concepts used in the scope of the __RadMap__ 
             
 
 Here is a more detailed visual structure of the __Commands Bar__:
-        ![](images/RadMap_VisualStruture_02.png)
 
-* __Hide Button__ - hides the __Toolbar__upon clicking.
+![](images/RadMap_VisualStruture_02.png)
+
+* __Hide Button__ - hides the __Toolbar__ upon clicking.
             
 
 * __Navigation Buttons__ - allow the user to pan up/down and left/right.

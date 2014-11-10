@@ -14,7 +14,7 @@ position: 2
 
 ## 
 
-The __PersistenceFramework__allows you to save the layout of __UIElements__ in a stream. The __PersistenceManager__ exposes the following methods that persist the data in a stream:
+The __PersistenceFramework__ allows you to save the layout of __UIElements__ in a stream. The __PersistenceManager__ exposes the following methods that persist the data in a stream:
 		
 
 * __Save__ - this method saves the data in a stream. It should receive the __UIElement__ object which properties will be persisted. It returns the stream with the persisted data.
@@ -114,6 +114,5 @@ The persisted visual state of the __RadTreeView__ control can be restored using 
 
 
 
->tip
-		  Please keep in mind that before loading the persisted data from a stream, you need to make sure that the stream's position matches the beginning of the persisted bytes. In case when the persisted data is saved in a new stream, before loading it, you should set the __Stream.Position__ to __0L__.
+>tipPlease keep in mind that before loading the persisted data from a stream, you need to make sure that the stream's position matches the beginning of the persisted bytes. In case when the persisted data is saved in a new stream, before loading it, you should set the __Stream.Position__ to __0L__.
 		

@@ -27,7 +27,8 @@ Create flexible and interactive Diagramming layouts for your rich data-visualiza
 
 * architect data-visualization and data analysis Diagramming structures
 
-* further enhance and customize your geographic maps solutions![Rad Diagram Overview](images/RadDiagram_Overview.png)
+* further enhance and customize your geographic maps solutions
+![Rad Diagram Overview](images/RadDiagram_Overview.png)
 
 This is a list with short descriptions of the top-of-the-line features of __Telerik's Diagramming Framework__:
 		

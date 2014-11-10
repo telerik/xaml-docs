@@ -15,20 +15,17 @@ site_name: WPF
 
 ## 
 
-The goal of this tutorial is to create a tab control with editable headers of the tab items. The idea is to allow runtime 
-        change of the tab item's header text as shown on the snapshot below.![](images/RadTabControl_HowTo_EditableHeaders.png)
+The goal of this tutorial is to create a tab control with editable headers of the tab items. The idea is to allow runtime change of the tab item's header text as shown on the snapshot below.
+![](images/RadTabControl_HowTo_EditableHeaders.png)
 
 For the purpose of this example, you will need to create an empty WPF Application project and open it in Visual Studio.
 
->If you copy and paste the source code directly from this XAML examples, don't forget to change __xmlns:example__ 
-          alias to import the namespace used in your project.
+>If you copy and paste the source code directly from this XAML examples, don't forget to change __xmlns:example__ alias to import the namespace used in your project.
           
 
-First add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Controls.Navigation__ and 
-        __Telerik.Windows.Data.__
+First add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Controls.Navigation__ and __Telerik.Windows.Data.__
 
-Then create a new class __EditableTabHeaderControl__ that derives from __ContentControl__ 
-        and leave it empty for now.
+Then create a new class __EditableTabHeaderControl__ that derives from __ContentControl__ and leave it empty for now.
 
 #### __C#__
 
@@ -89,11 +86,7 @@ Create a __new style__for the __EditableTabHeader__ control.
 
 
 
-In the XAML code above a new style is created for the __EditableTabHeaderControl__ and this style will be the
-        default template for that control. The template is made of __ContentPresenter__, __TextBox__ 
-        and a trigger for __EditMode__. When the control is in __EditMode__ the content presenter
-        control is hidden and the text box is made visible, while in the __ViewMode__ the control will have its default 
-        appearance.
+In the XAML code above a new style is created for the __EditableTabHeaderControl__ and this style will be the default template for that control. The template is made of __ContentPresenter__, __TextBox__ and a trigger for __EditMode__. When the control is in __EditMode__ the content presenter control is hidden and the text box is made visible, while in the __ViewMode__ the control will have its default appearance.
 
 Add the following implementation to the code behind of the __EditableTabHeaderControl__ class.
 
@@ -147,65 +140,60 @@ Add the following implementation to the code behind of the __EditableTabHeaderCo
 #### __VB.NET__
 
 {{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_4}}
-		<TemplatePart(Name:="PART_EditArea", Type:=GetType(TextBox))>
-		Public Class EditableTabHeaderControl
-			Inherits ContentControl
-			Shared Sub New()
-				DefaultStyleKeyProperty.OverrideMetadata(GetType(EditableTabHeaderControl), New FrameworkPropertyMetadata(GetType(EditableTabHeaderControl)))
-			End Sub
-	
-			Private textBox As TextBox
-	
-			Public Shared IsInEditModeProperty As DependencyProperty = DependencyProperty.Register("IsInEditMode", GetType([Boolean]), GetType(EditableTabHeaderControl))
-	
-			Public Property IsInEditMode() As Boolean
-				Get
-					Return CBool(Me.GetValue(IsInEditModeProperty))
-				End Get
-				Set(value As Boolean)
-					Me.SetValue(IsInEditModeProperty, value)
-				End Set
-			End Property
-	
-			Public Overrides Sub OnApplyTemplate()
-				MyBase.OnApplyTemplate()
-	
-				Me.textBox = TryCast(Me.Template.FindName("PART_EditArea", Me), TextBox)
-				AddHandler Me.textBox.LostFocus, AddressOf textBox_LostFocus
-				AddHandler Me.MouseDoubleClick, AddressOf EditableTabHeaderControl_MouseDoubleClick
-			End Sub
-	
-			Private Sub textBox_LostFocus(sender As Object, e As RoutedEventArgs)
-				Me.IsInEditMode = False
-			End Sub
-	
-			Private Sub EditableTabHeaderControl_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs)
-				If e.LeftButton = MouseButtonState.Pressed Then
-					Me.IsInEditMode = True
-				End If
-			End Sub
-	
-		End Class
+    <TemplatePart(Name:="PART_EditArea", Type:=GetType(TextBox))>
+    Public Class EditableTabHeaderControl
+        Inherits ContentControl
+        Shared Sub New()
+            DefaultStyleKeyProperty.OverrideMetadata(GetType(EditableTabHeaderControl), New FrameworkPropertyMetadata(GetType(EditableTabHeaderControl)))
+        End Sub
+
+        Private textBox As TextBox
+
+        Public Shared IsInEditModeProperty As DependencyProperty = DependencyProperty.Register("IsInEditMode", GetType([Boolean]), GetType(EditableTabHeaderControl))
+
+        Public Property IsInEditMode() As Boolean
+            Get
+                Return CBool(Me.GetValue(IsInEditModeProperty))
+            End Get
+            Set(value As Boolean)
+                Me.SetValue(IsInEditModeProperty, value)
+            End Set
+        End Property
+
+        Public Overrides Sub OnApplyTemplate()
+            MyBase.OnApplyTemplate()
+
+            Me.textBox = TryCast(Me.Template.FindName("PART_EditArea", Me), TextBox)
+            AddHandler Me.textBox.LostFocus, AddressOf textBox_LostFocus
+            AddHandler Me.MouseDoubleClick, AddressOf EditableTabHeaderControl_MouseDoubleClick
+        End Sub
+
+        Private Sub textBox_LostFocus(sender As Object, e As RoutedEventArgs)
+            Me.IsInEditMode = False
+        End Sub
+
+        Private Sub EditableTabHeaderControl_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                Me.IsInEditMode = True
+            End If
+        End Sub
+
+    End Class
 	{{endregion}}
 
 
 
 The major changes in the implementation of the __EditableTabHeaderControl__ are:
 
-* An attribute of type __TemplatePart__ placed right above the class definition. With this attribute
-          you identify the types of the named parts that are used for templating.
+* An attribute of type __TemplatePart__ placed right above the class definition. With this attribute you identify the types of the named parts that are used for templating.
 
 * New dependency property __IsInEditMode__ of __Boolean__ type was added.
 
-* One text box field declaration. The text box field is initialized with the reference from the text box defined in the 
-          template when the base method __OnApplyTemplate()__ is invoked.
+* One text box field declaration. The text box field is initialized with the reference from the text box defined in the template when the base method __OnApplyTemplate()__ is invoked.
 
-* An event handler for the __MouseDoubleClick__ event is added. When the user makes a double click
-          with his left mouse button, then the control is in __edit mode__. That automatically triggers the states of the
-          content presenter and the text box.
+* An event handler for the __MouseDoubleClick__ event is added. When the user makes a double click with his left mouse button, then the control is in __edit mode__. That automatically triggers the states of the content presenter and the text box.
 
-* An event handler for the __LostFocus__event of the text box is added. When the user presses the "tab" 
-          keyboard and the text box lost its focus, the control restore its initial appearance.
+* An event handler for the __LostFocus__ event of the text box is added. When the user presses the "tab" keyboard and the text box lost its focus, the control restore its initial appearance.
 
 Add a new __RadTabControl__ declaration.
 
@@ -277,56 +265,55 @@ Add a new __RadTabControl__ declaration.
 #### __VB.NET__
 
 {{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_7}}
-		Imports Telerik.Windows.Controls
-	
-		Class MainWindow
-			Public Sub New()
-				InitializeComponent()
-	
-				radTabControl.ItemsSource = Enumerable.Range(1, 5).[Select](Function(num) New TabItemModel() With
-				  {
-				 .Name = [String].Format("Header {0}", num),
-				 .Content = [String].Format("Content {0}", num)
-				   })
-			End Sub
-	
-		End Class
-		Public Class TabItemModel
-			Inherits ViewModelBase
-			Private _name As [String]
-			Private _content As [String]
-	
-			Public Property Name() As [String]
-				Get
-					Return Me._name
-				End Get
-				Set(value As [String])
-					If Me._name <> value Then
-						Me._name = value
-						OnPropertyChanged("Name")
-					End If
-				End Set
-			End Property
-	
-			Public Property Content() As [String]
-				Get
-					Return Me._content
-				End Get
-				Set(value As [String])
-					If Me._content <> value Then
-						Me._content = value
-						OnPropertyChanged("Content")
-					End If
-				End Set
-			End Property
-	
-		End Class
+    Imports Telerik.Windows.Controls
+
+    Class MainWindow
+        Public Sub New()
+            InitializeComponent()
+
+            radTabControl.ItemsSource = Enumerable.Range(1, 5).[Select](Function(num) New TabItemModel() With
+              {
+             .Name = [String].Format("Header {0}", num),
+             .Content = [String].Format("Content {0}", num)
+               })
+        End Sub
+
+    End Class
+    Public Class TabItemModel
+        Inherits ViewModelBase
+        Private _name As [String]
+        Private _content As [String]
+
+        Public Property Name() As [String]
+            Get
+                Return Me._name
+            End Get
+            Set(value As [String])
+                If Me._name <> value Then
+                    Me._name = value
+                    OnPropertyChanged("Name")
+                End If
+            End Set
+        End Property
+
+        Public Property Content() As [String]
+            Get
+                Return Me._content
+            End Get
+            Set(value As [String])
+                If Me._content <> value Then
+                    Me._content = value
+                    OnPropertyChanged("Content")
+                End If
+            End Set
+        End Property
+
+    End Class
 	{{endregion}}
 
 
 
-Define the __RadTabControl____ItemTemplate__ and __ContentTemplate__
-        properties:
+Define the __RadTabControl__ __ItemTemplate__ and __ContentTemplate__ properties:
 
 #### __XAML__
 
@@ -351,6 +338,5 @@ Define the __RadTabControl____ItemTemplate__ and __ContentTemplate__
 
 
 
-Run your demo. Double click on the Tab's __Header__ will switch them in __Edit____Mode__. 
-        Loosing the focus (pressing the "tab" key) will switch the Tab's Header in its default (__ViewMode__) appearance.
+Run your demo. Double click on the Tab's __Header__ will switch them in __Edit__ __Mode__. Loosing the focus (pressing the "tab" key) will switch the Tab's Header in its default (__ViewMode__) appearance.
         

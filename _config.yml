@@ -322,10 +322,6 @@ navigation:
         position: 6		
 ## Centaur Controls End
 
-## X1 Controls Start
-
-## X1 Controls End
-
 ## Common Start
     controls:
         title: Controls
@@ -368,6 +364,42 @@ navigation:
     "api-reference":
         title: "Api Reference"
 ## Common End
+
+## X1 Controls Start
+    controls/radcalculator:
+        title: RadCalculator
+    controls/radcalculator/style-and-templates:
+        title: Style and Templates
+    controls/radcarousel:
+        title: RadCarousel
+    controls/radcarousel/changes-and-backward-compability:
+        title: Changes and Backward Compability  
+    controls/radcarousel/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radcarousel/using-radcarousel:
+        title: Using RadCarousel
+    controls/radcarousel/using-radcarouselpanel:
+        title: Using RadCarouselPanel
+    controls/radcollectionnavigator:
+        title: RadCollectionNavigator
+    controls/radcollectionnavigator/changes-and-backward-compability:
+        title: Changes and Backward Compability 
+    controls/raddatafilter:
+        title: RadDataFilter
+    controls/raddataform:
+        title: RadDataForm
+    controls/raddataform/localization:
+        title: Localization
+    controls/raddataform/validation:
+        title: Validation
+    controls/raddatapager:
+        title: RadDataPager
+    controls/raddatapager/changes-and-backward-compability:
+        title: Changes and Backward Compability
+    controls/radgridview:
+        title: RadGridView
+## X1 Controls End
+
 
 ## Api Reference Start
     "*system.windows":

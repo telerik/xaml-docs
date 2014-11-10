@@ -14,33 +14,23 @@ position: 1
 
 One of the gauges you can create with the __RadGauge__ control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally it can display various indicators that point to a certain value off the scale. This topic will guide you in creating a trivial linear gauge and will explain the following:
 
-* [Defining a LinearGauge](#Defining_a_LinearGauge)
+* [Defining a LinearGauge](#defining-a-linear-gauge)
 
-* [Defining a LinearScale](#Defining_a_LinearScale)
+* [Defining a LinearScale](#defining-a-linearscale)
 
-* [Defining an Indicator](#Defining_an_Indicator)
+* [Defining an Indicator](#defining-an-indicator)
 
-* [Set Indicator's Position](#Set_Indicator's_Position)
+* [Set Indicator's Position](#set-indicators-position)
 
-* [Configuring the Gauge](#Configuring_the_Gauge)
+* [Configuring the Gauge](#configuring-the-gauge)
 
 ## Defining a Linear Gauge
 
->
-
-In order to use the __RadGauge__ control and its components you have to reference the following assemblies:
-
-* __Telerik.Windows.Controls.DataVisualization.dll__
-
-* __Telerik.Windows.Controls.dll__
+>In order to use the __RadGauge__ control and its components you have to reference the following assemblies:<br/>* __Telerik.Windows.Controls.DataVisualization.dll__<br/>* __Telerik.Windows.Controls.dll__
 
 The linear gauge type is represented by the __HorizontalLinearGauge__ or __VerticalLinearGauge__ class. You can use either of them to have vertical or horizontal orientated gauges. The linear gauge control is used for wrapping linear scales. You can place one or more __LinearScale__ objects inside of it. Here is an example of an instance of the __LinearGauge__ control with dimensions __100x300__.
 
->
-
-
-
-To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
+>To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
 
 #### __XAML__
 
@@ -76,11 +66,7 @@ In order to define a scale inside the __LinearGauge__ control you have to use th
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_GettingStarted_LinearGauge_02.png)
+![](images/RadGauge_GettingStarted_LinearGauge_02.png)
 
 ## Defining an Indicator
 
@@ -112,9 +98,7 @@ The __LinearScale__ control allows you to display different types of indicators 
 
 Here is a snapshot of the result.
 
-
-         
-      ![](images/RadGauge_GettingStarted_LinearGauge_03.png)
+![](images/RadGauge_GettingStarted_LinearGauge_03.png)
 
 ## Set Indicator's Position
 
@@ -147,11 +131,7 @@ To make the indicator point to a certain value off the scale, you have to use th
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_GettingStarted_LinearGauge_04.png)
+![](images/RadGauge_GettingStarted_LinearGauge_04.png)
 
 ## Configuring the Gauge
 

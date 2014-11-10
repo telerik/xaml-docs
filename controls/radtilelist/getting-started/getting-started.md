@@ -28,16 +28,15 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 * Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project
 
-* 
-            Add references to the assemblies: __Telerik.Windows.Controls__ and __Telerik.Windows.Data__
+* Add references to the assemblies: __Telerik.Windows.Controls__ and __Telerik.Windows.Data__
 
-* 
-            Add RadTileList as demonstrated below:
-          {% if site.site_name == 'Silverlight' %}
+* Add RadTileList as demonstrated below:
+{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
 {{region radtilelist-getting-started_0}}
+
 	<UserControl x:Class="RadTileList_SL.MainPage"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -59,6 +58,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 #### __XAML__
 
 {{region radtilelist-getting-started_1}}
+
 	<Window x:Class="RadTileList_WPF.MainWindow"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -84,6 +84,7 @@ Two lines of code are important here:
 #### __XAML__
 
 {{region radtilelist-getting-started_2}}
+
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
@@ -94,6 +95,7 @@ Two lines of code are important here:
 #### __XAML__
 
 {{region radtilelist-getting-started_3}}
+
 	<Grid x:Name="LayoutRoot" Background="White">
 	  <telerik:RadTileList x:Name="TileList1">
 	       <telerik:Tile/>
@@ -134,26 +136,16 @@ There are three types of Tiles:
 
 ![Rad Tile List Getting Started Tile Types image WPF](images/RadTileList_GettingStarted_TileTypes_image_WPF.png){% endif %}
 
->
-          The default Tile's type is - __Double__.
+>The default Tile's type is - __Double__.
         
 
 ## Change the Default Theme
 
-You can set the theme of the RadTileList to one of the predefined themes for the RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
+You can set the theme of the RadTileList to one of the predefined themes for the Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
         
 
-Read the 
-			[
-			  Setting a Theme (Using Implicit Styles)
-			]({%slug styling-apperance-implicit-styles-overview%})
-          and
-			[
-			  Editing Control Templates
-			]({%slug styling-apperance-editing-control-templates%})          
-          articles for more information.
+Read the 	[Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})and[Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) articles for more information.
         
 
-To see the different themes of RadTileList please check our  
-       [Theming](http://demos.telerik.com/silverlight/#TileList/Theming) online example. 
+To see the different themes of RadTileList please check our  [Theming](http://demos.telerik.com/silverlight/#TileList/Theming) online example. 
         

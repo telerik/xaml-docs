@@ -241,7 +241,7 @@ Now that we have our first view defined, we need to register it in the Initializ
 
 {{region How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_5}}
 	Public Sub Initialize()
-		' Register views here.
+		' Register views here.'
 		Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
 																	Return New ModuleAView()
 																	End Function)
@@ -421,7 +421,6 @@ You can add the __RadTreeView__ as a content to a __RadOutlookBarItem__:
 
 
 Now, instead of having an __ItemHeader__ property, you can create a property of type __RadOutlookBarItem__ and return a reference to __outlookBarItem1__:
-				
 
 #### __C#__
 
@@ -461,7 +460,6 @@ Now, instead of having an __ItemHeader__ property, you can create a property of 
 {{endregion}}
 
 In the __Initialize()__ method of __ModuleA__.cs we will use the previously created __OutlookBarItem__ property:
-				
 
 #### __C#__
 
@@ -482,7 +480,7 @@ In the __Initialize()__ method of __ModuleA__.cs we will use the previously crea
 
 {{region How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_13}}
 	Public Sub Initialize()
-		' Register views here.
+		' Register views here.'
 		Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
 																	Return New ModuleAView().OutlookBarItem
 																	End Function)
@@ -490,7 +488,7 @@ In the __Initialize()__ method of __ModuleA__.cs we will use the previously crea
 {{endregion}}
 
 
-Remove __DisplayMemeberPath__ from __RadOutlookBar__’s definition in __ShellView.xaml__ and run the project. If you get the following error, then we are on the right track.
+Remove __DisplayMemeberPath__ from __RadOutlookBar’s__ definition in __ShellView.xaml__ and run the project. If you get the following error, then we are on the right track.
 
 ![](images/RadOutlookBar_Prism_14.png)
 

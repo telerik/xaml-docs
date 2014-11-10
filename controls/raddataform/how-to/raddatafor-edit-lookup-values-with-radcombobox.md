@@ -12,8 +12,6 @@ position: 1
 
 
 
-## 
-
 __RadDataForm__ gives you the opportunity to edit the current item's properties directly as well as displaying and using lookup ones. This is easily achievable by using a RadComboBox and defining its required properties. 
 
 For the purpose of this tutorial we will create two quite simple classes - Person and Country:
@@ -21,6 +19,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 #### __C#__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_0}}
+
 	public class Person
 	 {
 	  public string FirstName { get; set; }
@@ -39,6 +38,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 #### __VB.NET__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_1}}
+
 	Public Class Person
 	 Public Property FirstName() As String
 	  Get
@@ -92,11 +92,14 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 
 
 
-Afterwards, we may add the source of the RadDataForm:{% if site.site_name == 'Silverlight' %}
+Afterwards, we may add the source of the RadDataForm:
+
+{% if site.site_name == 'Silverlight' %}
 
 #### __C#__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_2}}
+
 	public MainPage()
 	  {
 	   InitializeComponent();
@@ -114,6 +117,7 @@ Afterwards, we may add the source of the RadDataForm:{% if site.site_name == 'Si
 #### __C#__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_3}}
+
 	public MainWindow()
 	  {
 	   InitializeComponent();
@@ -133,6 +137,7 @@ Afterwards, we may add the source of the RadDataForm:{% if site.site_name == 'Si
 #### __VB.NET__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_4}}
+
 	Public Sub New()
 	 InitializeComponent()
 	 Dim persons As New List(Of Person)()
@@ -165,6 +170,7 @@ Now, in order to edit the lookup values we have to do two things:
 #### __C#__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_5}}
+
 	private List<Country> GetCountries()
 	  {
 	   List<Country> countries = new List<Country>();
@@ -181,6 +187,7 @@ Now, in order to edit the lookup values we have to do two things:
 #### __VB.NET__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_6}}
+
 	Private Function GetCountries() As List(Of Country)
 	 Dim countries As New List(Of Country)()
 	 countries.Add(New Country() With { _
@@ -212,6 +219,7 @@ Now, in order to edit the lookup values we have to do two things:
 #### __C#__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_7}}
+
 	private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
 	  {
 	   if (e.PropertyName == "CountryID")
@@ -232,6 +240,7 @@ Now, in order to edit the lookup values we have to do two things:
 #### __VB.NET__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_8}}
+
 	Private Sub RadDataForm_AutoGeneratingField(sender As Object, e As Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs)
 	 If e.PropertyName = "CountryID" Then
 	  e.DataField = New DataFormComboBoxField() With { _
@@ -249,18 +258,15 @@ Now, in order to edit the lookup values we have to do two things:
 
 
 Once you run the application, you will have to see the following view:
-
-
-
-
-         
-      ![](images/RadDataForm_EditLookupValues.png)
+  
+![](images/RadDataForm_EditLookupValues.png)
 
 2. Scenario 2 - define the template for the ReadOnlyTemplate, EditTemplate and NewItemTemplate: 
 
 #### __XAML__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_9}}
+
 	<UserControl.Resources>
 	 <my:MyViewModel x:Key="MyViewModel" />
 	</UserControl.Resources>

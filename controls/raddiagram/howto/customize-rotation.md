@@ -214,13 +214,14 @@ And now we can use the __newRotationService__ instance and register it through t
 
 
 
-If you run the solution now, the __rotationStep__ will display a value of __45__. This is why you will be able to rotate the __RadDiagramShapes__ with __45°__ on every step.![raddiagram-howto-custom-rotation-def Value](images/raddiagram-howto-custom-rotation-defValue.png)
+If you run the solution now, the __rotationStep__ will display a value of __45__. This is why you will be able to rotate the __RadDiagramShapes__ with __45°__ on every step.
+
+![raddiagram-howto-custom-rotation-def Value](images/raddiagram-howto-custom-rotation-defValue.png)
 
 And if you enter a __RotationStep__ of __90__, you will be able to rotate the __RadDiagramShapes__ with __90°__ on every step.
-				![raddiagram-howto-custom-rotation](images/raddiagram-howto-custom-rotation.png)
+![raddiagram-howto-custom-rotation](images/raddiagram-howto-custom-rotation.png)
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository
-						[here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
+>tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
 					
 
 # See Also

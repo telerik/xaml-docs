@@ -20,8 +20,7 @@ This article describes the __GraphSourceBase<TNode, TLink>__ class defined in th
 
 ## Overview
 
-The __GraphSourceBase<TNode, TLink>__ class is designed to serve as a base __ViewModel__ that represents the collections of nodes and shapes in a data-bound __RadDiagram__. In a __RadDiagram__ you always need to consider the fact that it consists of different types of items - __RadDiagramConnections__ and __RadDiagramShapes__. This is why the __RadDiagram GraphSource__ should be set to an instance of a class that implements the
-		  {% if site.site_name == 'Silverlight' %}[IGraphSource](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_igraphsource_1.html){% endif %}{% if site.site_name == 'WPF' %}[IGraphSource](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_igraphsource_1.html){% endif %} interface. This interface defines two collections - one with Items and one with Links.
+The __GraphSourceBase<TNode, TLink>__ class is designed to serve as a base __ViewModel__ that represents the collections of nodes and shapes in a data-bound __RadDiagram__. In a __RadDiagram__ you always need to consider the fact that it consists of different types of items - __RadDiagramConnections__ and __RadDiagramShapes__. This is why the __RadDiagram GraphSource__ should be set to an instance of a class that implements the{% if site.site_name == 'Silverlight' %}[IGraphSource](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_igraphsource_1.html){% endif %}{% if site.site_name == 'WPF' %}[IGraphSource](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_igraphsource_1.html){% endif %} interface. This interface defines two collections - one with Items and one with Links.
 		
 
 The __GraphSourceBase__ class implements the __IGraphSource__ interface and it also provides methods that work with the __Items__ and __Links__ collections. 
@@ -30,7 +29,8 @@ The __GraphSourceBase__ class implements the __IGraphSource__ interface and it a
 >Please keep in mind that in the __GraphSourceBase<TNode, TLink>__ implementation, __TLink__ should derive from the {% if site.site_name == 'Silverlight' %}[ILink<T>](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_ilink_1.html){% endif %}{% if site.site_name == 'WPF' %}[ILink<T>](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_ilink_1.html){% endif %} interface.
 		
 
-GraphSourceBase<TNode, TLink> Inheritance Model![raddiagram-data-graphsource](images/raddiagram-data-graphsource.png)
+GraphSourceBase<TNode, TLink> Inheritance Model
+![raddiagram-data-graphsource](images/raddiagram-data-graphsource.png)
 
 __GraphSourceBase__ has one constructor - GraphSourceBase() that initializes a new instance of the class.
 		
@@ -39,66 +39,26 @@ __GraphSourceBase__ has one constructor - GraphSourceBase() that initializes a n
 
 __GraphSourceBase__ exposes the following properties:
 		
-<table><th><tr><td>
+|Name|Description|
+|----|-----------|
+|InternalItems|Gets the internal ObservableCollection of business nodes.|
+|InternalLinks|Gets the internal ObservableCollection of business links.|
+|Items|Gets an IEnumerable collection of business nodes.|
+|Links|Gets an IEnumerable collection of business links.|
 
-Name</td><td>
-
-Description</td></tr></th><tr><td>
-
-<b>InternalItems</b></td><td>
-
-Gets the internal <b>ObservableCollection</b> of business nodes.
-			  </td></tr><tr><td>
-
-<b>InternalLinks</b></td><td>
-
-Gets the internal <b>ObservableCollection</b> of business links.
-			  </td></tr><tr><td>
-
-<b>Items</b></td><td>
-
-Gets an <b>IEnumerable</b> collection of business nodes.
-			  </td></tr><tr><td>
-
-<b>Links</b></td><td>
-
-Gets an <b>IEnumerable</b> collection of business links.
-			  </td></tr></table>
 
 ## Methods
 
 __GraphSourceBase__ exposes the following virtual methods:
 		
-<table><th><tr><td>
+|Name|Description|
+|----|-----------|
+|AddNode(TNode)|Adds a specified business node to the InternalItems collection.|
+|AddLink(TLink)|Adds a specified business link to the InternalLinks collection.|
+|RemoveLink(TLink)|Removes a specified business link from the InternalLinks collection and returns a boolean value indicating whether the operation was successful.|
+|RemoveItem(TNode)|Removes a specified business node from the InternalItems collection and returns a boolean value indicating whether the operation was successful.|
+|Clear|Removes all nodes and links from the InternalItems and InternalLinks collections.|
 
-Name</td><td>
-
-Description</td></tr></th><tr><td>
-
-<b>AddNode(TNode)</b></td><td>
-
-Adds a specified business node to the <b>InternalItems</b> collection.
-			  </td></tr><tr><td>
-
-<b>AddLink(TLink)</b></td><td>
-
-Adds a specified business link to the <b>InternalLinks</b> collection.
-			  </td></tr><tr><td>
-
-<b>RemoveLink(TLink)</b></td><td>
-
-Removes a specified business link from the <b>InternalLinks</b> collection and returns a boolean value indicating whether the operation was successful.
-			  </td></tr><tr><td>
-
-<b>RemoveItem(TNode)</b></td><td>
-
-Removes a specified business node from the <b>InternalItems</b> collection and returns a boolean value indicating whether the operation was successful.
-			  </td></tr><tr><td>
-
-<b>Clear</b></td><td>
-
-Removes all nodes and links from the <b>InternalItems</b>	and <b>InternalLinks</b> collections.
-			  </td></tr></table>
 
 >Please note that in your solution it is best to create a custom class deriving from __GraphSourceBase__. Once you do so, you will be able to override all of the above virtual methods and describe a custom __RadDiagram GraphSource__ implementation.
 		  

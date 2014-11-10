@@ -18,11 +18,11 @@ There is no special container for the numeric scale, as for the radial or linear
 
 Here is the list of the __NumericScale__ features:
 
-* [Max and Min Values](#Max_and_Min_Values)
+* [Max and Min Values](#max-and-min-values)
 
-* [Multiplier](#Multiplier)
+* [Multiplier](#multiplier)
 
-* [Indicators](#Indicators)
+* [Indicators](#indicators)
 
 ## Max and Min Values
 

@@ -11,7 +11,6 @@ position: 3
 # Styling the Numeric Buttons
 
 
-
 The __RadDataPager__exposes a __NumericButtonStyle__ property which allows you to apply a style to it and modify its appearance.
 
 You have two options:
@@ -26,7 +25,7 @@ If you want to use this approach you have to create a __Style__ that targets the
 
 #### __XAML__
 
-{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_0}}
+	{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_0}}
 	<telerik:BooleanToVisibilityConverter x:Name="BooleanToVisibilityConverter" />
 	<Style x:Key="buttonStyle"
 	        TargetType="ButtonBase">
@@ -54,11 +53,9 @@ If you want to use this approach you have to create a __Style__ that targets the
 	</Style>
 	{{endregion}}
 
-
-
 #### __C#__
 
-{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_1}}
+	{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_1}}
 	public class BooleanToVisibilityConverter : IValueConverter
 	{
 	  public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -76,7 +73,7 @@ If you want to use this approach you have to create a __Style__ that targets the
 
 #### __VB.NET__
 
-{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_2}}
+	{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_2}}
 	Public Class BooleanToVisibilityConverter
 	 Implements IValueConverter
 	 Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object
@@ -89,11 +86,9 @@ If you want to use this approach you have to create a __Style__ that targets the
 	{{endregion}}
 
 
-
 >Note that in this template the content of the buttons is not displayed. Because of this, the user cannot make a difference between the auto ellipsis button and a page index button. When not displaying the content, it is recommended not to use auto ellipsis and to display all of the numeric buttons at once. In order to do this just set the __AutoEllipsisMode__ property to __None__ and set the __NumericButtonCount__ property to the respective count of the buttons.
 
-In order to change the appearance of the button when it gets current you bind to the __IsCurrent__ property of the __DataContext__ of the numeric button. This __DataContext__ is of type 
-        {% if site.site_name == 'Silverlight' %}[PageViewModel](http://www.telerik.com/help/silverlight/telerik.windows.controls.data-telerik.windows.controls.data.datapager.pageviewmodel_members.html){% endif %}{% if site.site_name == 'WPF' %}[PageViewModel](http://www.telerik.com/help/wpf/telerik.windows.controls.data-telerik.windows.controls.data.datapager.pageviewmodel_members.html){% endif %}.
+In order to change the appearance of the button when it gets current you bind to the __IsCurrent__ property of the __DataContext__ of the numeric button. This __DataContext__ is of type {% if site.site_name == 'Silverlight' %}[PageViewModel](http://www.telerik.com/help/silverlight/telerik.windows.controls.data-telerik.windows.controls.data.datapager.pageviewmodel_members.html){% endif %}{% if site.site_name == 'WPF' %}[PageViewModel](http://www.telerik.com/help/wpf/telerik.windows.controls.data-telerik.windows.controls.data.datapager.pageviewmodel_members.html){% endif %}.
 
 >Note that for changing the appearance of the button depending on its state, you can also use its __VisualStates__, which can be seen and modified in its default template. To see how to get the default template read the next section of the topic.
 
@@ -101,7 +96,7 @@ In order to change the appearance of the button when it gets current you bind to
 
 ## Modifying the default Style
 
->tipYou might find it useful to get familiar with the [template structure of the numeric button](F5C4E9B4-C7FC-42DC-96E1-8942116A8AA5#Numeric_Button).
+>You might find it useful to get familiar with the [template structure of the numeric button](F5C4E9B4-C7FC-42DC-96E1-8942116A8AA5#Numeric_Button).
 
 To modify the default style for the numeric buttons you have to get the default __Style__ for the __RadDataPager__. To learn how, read the [Styling the RadDataPager]({%slug raddatapager-styles-and-templates-styling-the-raddatapager%}) topic.
 
@@ -109,7 +104,7 @@ Here is the default XAML for the numeric buttons' __Style__ and its resources.
 
 #### __XAML__
 
-{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_3}}
+	{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_3}}
 	<LinearGradientBrush x:Key="RadPager_Page_TopShadow"
 	                        EndPoint="0.5,1"
 	                        StartPoint="0.5,0">

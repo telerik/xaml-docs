@@ -19,16 +19,16 @@ By default the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls
 #### __XAML__
 
 {{region radmaskedinput-howto-number-groups-separator_0}}
-	        <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
-	                                       HorizontalAlignment="Center"
-	                                       Culture="en-US"
-	                                       EmptyContent="Enter digits"
-	                                       Mask="#9.0"
-	                                       SelectionOnFocus="SelectAll"
-	                                       SpinMode="PositionAndValue"
-	                                       TextMode="PlainText"
-	                                       UpdateValueEvent="LostFocus"
-	                                       Value="12345" />
+    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
+                                   HorizontalAlignment="Center"
+                                   Culture="en-US"
+                                   EmptyContent="Enter digits"
+                                   Mask="#9.0"
+                                   SelectionOnFocus="SelectAll"
+                                   SpinMode="PositionAndValue"
+                                   TextMode="PlainText"
+                                   UpdateValueEvent="LostFocus"
+                                   Value="12345" />
 	{{endregion}}
 
 
@@ -40,19 +40,17 @@ If you need to remove the thousands separator, you can set the __AutoFillNumberG
 #### __XAML__
 
 {{region radmaskedinput-howto-number-groups-separator_1}}
-	        <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
-	                                       HorizontalAlignment="Center"
-	                                       AutoFillNumberGroupSeparators="False"
-	                                       Culture="en-US"
-	                                       EmptyContent="Enter digits"
-	                                       Mask="#9.0"
-	                                       SelectionOnFocus="SelectAll"
-	                                       SpinMode="PositionAndValue"
-	                                       TextMode="PlainText"
-	                                       UpdateValueEvent="LostFocus"
-	                                       Value="12345" />
+    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
+                                   HorizontalAlignment="Center"
+                                   AutoFillNumberGroupSeparators="False"
+                                   Culture="en-US"
+                                   EmptyContent="Enter digits"
+                                   Mask="#9.0"
+                                   SelectionOnFocus="SelectAll"
+                                   SpinMode="PositionAndValue"
+                                   TextMode="PlainText"
+                                   UpdateValueEvent="LostFocus"
+                                   Value="12345" />
 	{{endregion}}
-
-
 
 ![](images/radmaskedinput_howto_remove_thousands_separator.png)

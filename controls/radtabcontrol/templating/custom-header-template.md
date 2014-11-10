@@ -50,14 +50,13 @@ Let's first define the __DataTemplates__ in the Application’s resources (__App
 
 This will allow you to access them easily from the __HeaderSelector__ as shown below:
 
-	
-			DataTemplate dataTemplate = (DataTemplate)Application.Current.Resources["DataTemplateKey"];
+#### __C#__
+    DataTemplate dataTemplate = (DataTemplate)Application.Current.Resources["DataTemplateKey"];
 		  
 
+#### __VB__
 
-
-	
-			Dim dataTemplate As DataTemplate = DirectCast(Application.Current.Resources("DataTemplateKey"), DataTemplate)
+    Dim dataTemplate As DataTemplate = DirectCast(Application.Current.Resources("DataTemplateKey"), DataTemplate)
 		  
 
 
@@ -68,19 +67,19 @@ Next, create a class file and name it __HeaderSelector__. The __HeaderSelector__
 #### __C#__
 
 {{region radtabcontrol-templating-custom-header-template_0}}
-	    public class HeaderSelector : Telerik.Windows.Controls.DataTemplateSelector
-	    {
-	    }
-	{{endregion}}
+    public class HeaderSelector : Telerik.Windows.Controls.DataTemplateSelector
+    {
+    }
+    {{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtabcontrol-templating-custom-header-template_1}}
-		Public Class HeaderSelector
-			Inherits Telerik.Windows.Controls.DataTemplateSelector
-		End Class
+    Public Class HeaderSelector
+        Inherits Telerik.Windows.Controls.DataTemplateSelector
+    End Class
 	{{endregion}}
 
 
@@ -91,20 +90,20 @@ Override the __SelectTemplate__ method and implement your custom logic in it. Th
 #### __C#__
 
 {{region radtabcontrol-templating-custom-header-template_2}}
-	    public class HeaderSelector : DataTemplateSelector
-	    {
-	        public override DataTemplate SelectTemplate(object item, DependencyObject container)
-	        {
-	            if (item is Animal)
-	            {
-	                return Application.Current.Resources["AnimalDataTemplate"] as DataTemplate;
-	            }
-	            else
-	            {
-	                return Application.Current.Resources["PlantDataTemplate"] as DataTemplate;
-	            }
-	        }
-	    }
+    public class HeaderSelector : DataTemplateSelector
+    {
+        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+        {
+            if (item is Animal)
+            {
+                return Application.Current.Resources["AnimalDataTemplate"] as DataTemplate;
+            }
+            else
+            {
+                return Application.Current.Resources["PlantDataTemplate"] as DataTemplate;
+            }
+        }
+    }
 	{{endregion}}
 
 
@@ -112,16 +111,16 @@ Override the __SelectTemplate__ method and implement your custom logic in it. Th
 #### __VB.NET__
 
 {{region radtabcontrol-templating-custom-header-template_3}}
-		Public Class HeaderSelector
-			Inherits Telerik.Windows.Controls.DataTemplateSelector
-			Public Overrides Function SelectTemplate(item As Object, container As DependencyObject) As DataTemplate
-				If TypeOf item Is Animal Then
-					Return TryCast(Application.Current.Resources("AnimalDataTemplate"), DataTemplate)
-				Else
-					Return TryCast(Application.Current.Resources("PlantDataTemplate"), DataTemplate)
-				End If
-			End Function
-		End Class
+    Public Class HeaderSelector
+        Inherits Telerik.Windows.Controls.DataTemplateSelector
+        Public Overrides Function SelectTemplate(item As Object, container As DependencyObject) As DataTemplate
+            If TypeOf item Is Animal Then
+                Return TryCast(Application.Current.Resources("AnimalDataTemplate"), DataTemplate)
+            Else
+                Return TryCast(Application.Current.Resources("PlantDataTemplate"), DataTemplate)
+            End If
+        End Function
+    End Class
 	{{endregion}}
 
 

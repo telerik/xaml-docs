@@ -14,8 +14,7 @@ position: 1
 
 ## 
 
-__RadSlider's____Orientation__ property can be set to either __Horizontal__
-          or __Vertical__.
+__RadSlider's__ __Orientation__ property can be set to either __Horizontal__ or __Vertical__.
 
 #### __XAML__
 

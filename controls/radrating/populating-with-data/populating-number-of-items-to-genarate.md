@@ -25,7 +25,7 @@ Here is a regular __RadRating__ declaration:
 	{{endregion}}
 
 
-        and __telerik__ points to: __<xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" />__
+where __telerik__ points to: __<xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" />__
 
 ![](images/rating_default.png)
 
@@ -34,7 +34,7 @@ If you want to set a specific number of rating items you should set the __Number
 #### __XAML__
 
 {{region populating-number-of-items-to-genarate_1}}
-	        <telerik:RadRating x:Name="radRating" NumberOfItemsToGenerate="3" />
+    <telerik:RadRating x:Name="radRating" NumberOfItemsToGenerate="3" />
 	{{endregion}}
 
 

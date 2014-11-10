@@ -19,8 +19,7 @@ __RadDiagram__ provides 3 collections that store the DiagramItems - "__Items__",
 
 Below you can see a description of the 3 collections:
 
-* __RadDiagram.Items__ - inherits from Telerik.Windows.Diagrams.Core.DiagramItemCollection. The DiagramItemCollection
-			  inherits from System.Collections.ObjectModel.ObservableCollection<object>. This mean that you are able to add everything in the Items collection. For example, if you add a Button in the Items, the ItemContainerGenerator of the RadDiagram will create a RadDiagramShape which wraps the Button and will add the generated shape in the Shapes collection.
+* __RadDiagram.Items__ - inherits from Telerik.Windows.Diagrams.Core.DiagramItemCollection. The DiagramItemCollection inherits from System.Collections.ObjectModel.ObservableCollection<object>. This mean that you are able to add everything in the Items collection. For example, if you add a Button in the Items, the ItemContainerGenerator of the RadDiagram will create a RadDiagramShape which wraps the Button and will add the generated shape in the Shapes collection.
 			
 
 * __RadDiagram.Shapes__ - inherits from Telerik.Windows.Diagrams.Core.ShapeCollection. The ShapeCollection inherits from System.Collections.ObjectModel.ReadOnlyCollection <Telerik.Windows.Diagrams.Core.IShape>
@@ -33,17 +32,14 @@ Below you can see a description of the 3 collections:
 
 Here you can see a possible way to iterate the Shapes or Connection of the RadDiagram:
 
-	
+#### __C#__
 		    this.diagram.Shapes.ToList().ForEach(x =>
 		  {
 		  //your custom logic goes here
 		  (x as RadDiagramShape).Content = "Shape";
 		  });
-		  
 
-
-
-	
+#### __VB.NET__
 		   Me.diagram.Shapes.ToList().ForEach(Function(x)
 		  'your custom logic goes here
 		  TryCast(x, RadDiagramShape).Content = "Shape"
@@ -57,31 +53,27 @@ Here you can see a possible way to iterate the Shapes or Connection of the RadDi
 The __RadDiagram__ exposes two extension methods which you can use to iterate through the incoming and outgoing connections of a shape:
 		
 
-* 
-			  public static IEnumerable<IConnection> GetOutgoingConnectionsForShape(this IGraph graph, IShape shape)
+* public static IEnumerable<IConnection> GetOutgoingConnectionsForShape(this IGraph graph, IShape shape)
 			  
 
-* 
-				public static IEnumerable<IConnection> GetIncomingConnectionsForShape(this IGraph graph, IShape shape)</legacyBold>
+* public static IEnumerable<IConnection> GetIncomingConnectionsForShape(this IGraph graph, IShape shape)</legacyBold>
 				
 
 In order to take advatnage of these methods you need to add a using statement for the __Telerik.Windows.Diagrams.Core__ namespace in your code-behind file. Then you'll be able to access both methods through a __RadDiagram__ instance:
 		
 
+	#### __C#__
+    using Telerik.Windows.Diagrams.Core;
+    ...
+    xDiagram.GetOutgoingConnectionsForShape(shape);
+    xDiagram.GetIncomingConnectionsForShape(shape);
+
+#### __VB.NET__
 	
-using Telerik.Windows.Diagrams.Core;
-...
-xDiagram.GetOutgoingConnectionsForShape(shape);
-xDiagram.GetIncomingConnectionsForShape(shape);
-		  
-
-
-
-	
-Imports Telerik.Windows.Diagrams.Core
-...
-xDiagram.GetOutgoingConnectionsForShape(shape)
-xDiagram.GetIncomingConnectionsForShape(shape)		  
+    Imports Telerik.Windows.Diagrams.Core
+    ...
+    xDiagram.GetOutgoingConnectionsForShape(shape)
+    xDiagram.GetIncomingConnectionsForShape(shape)		  
 		  
 
 

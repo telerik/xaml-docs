@@ -13,13 +13,7 @@ site_name: Silverlight
 
 
 
-## 
-
-
-
-
-         
-      ![](images/RadDataPager_How_To_PageDomainDataSource_01.png)
+ ![](images/RadDataPager_How_To_PageDomainDataSource_01.png)
 
 If you are using the __WCF RIA Services__ and the __DomainDataSource,__ you probably know that the [DomainDataSource.Data](http://msdn.microsoft.com/en-us/library/system.windows.controls.domaindatasource.data%28VS.91%29.aspx) property is in fact an instance of the [DomainDataSourceView](http://msdn.microsoft.com/en-us/library/system.windows.controls.ria.domaindatasourceview%28VS.91%29.aspx) class. This class implements a handful of useful interfaces:
 
@@ -31,7 +25,7 @@ If you are using the __WCF RIA Services__ and the __DomainDataSource,__ you prob
 
 * [IEditableCollectionView](http://msdn.microsoft.com/en-us/library/system.componentmodel.ieditablecollectionview.aspx)
 
-* __IPagedCollectionViewhttp://msdn.microsoft.com/en-us/library/system.componentmodel.ipagedcollectionview%28VS.95%29.aspx__
+* [PagedCollectionView](http://msdn.microsoft.com/en-us/library/system.componentmodel.ipagedcollectionview%28VS.95%29.aspx)
 
 * [INotifyPropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx)
 
@@ -39,7 +33,7 @@ If you are using the __WCF RIA Services__ and the __DomainDataSource,__ you prob
 
 #### __XAML__
 
-{{region raddatapager-how-to-page-domaindatasource_0}}
+	{{region raddatapager-how-to-page-domaindatasource_0}}
 	<riaControls:DomainDataSource x:Name="invoicesDataSource"
 	                              AutoLoad="True"
 	                              QueryName="GetInvoicesQuery">

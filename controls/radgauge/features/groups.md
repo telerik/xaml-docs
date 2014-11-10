@@ -12,20 +12,10 @@ position: 8
 
 
 
-There are common scenarios when 1 scale can have few group of ranges (some electric measurement devices, for example) and few 
-      groups of indicators, which change its appearance depending on the group of ranges it works with. 
-      For example, sound volume indicator on the sound amplifier. The scale have 1 range group with green, 
-      yellow and red segments which indicate sound volume, and 1 range group with transparent and red ranges which serves as overload 
-      indicator (it turns on when sound volume is close to the end of the scale). 
-      The first range list has 4 bar indicators which show sound volume for 4 channels, the second range list - 4 state indicators which show overload 
-      status for 4 channels. In this case we need 2 range groups and 2 indicator groups.
+There are common scenarios when 1 scale can have few group of ranges (some electric measurement devices, for example) and few groups of indicators, which change its appearance depending on the group of ranges it works with. For example, sound volume indicator on the sound amplifier. The scale have 1 range group with green, yellow and red segments which indicate sound volume, and 1 range group with transparent and red ranges which serves as overload indicator (it turns on when sound volume is close to the end of the scale). The first range list has 4 bar indicators which show sound volume for 4 channels, the second range list - 4 state indicators which show overload status for 4 channels. In this case we need 2 range groups and 2 indicator groups.
       
 
-The gauge control allows creation of the indicator and range groups. 
-      To create range group we should add __GaugeRangeGroup__ element to the ranges of the scale object.
-      To create indicators group we should add __IndicatorGroup__ element to the indicators of the scale object. 
-      We can specify which group of ranges will be used by group of indicators. To do it we should use the __Ranges__ property of 
-      the __IndicatorsGroup__ element. The following XAML creates gauge which implements the functionality described above:
+The gauge control allows creation of the indicator and range groups. To create range group we should add __GaugeRangeGroup__ element to the ranges of the scale object. To create indicators group we should add __IndicatorGroup__ element to the indicators of the scale object. We can specify which group of ranges will be used by group of indicators. To do it we should use the __Ranges__ property of the __IndicatorsGroup__ element. The following XAML creates gauge which implements the functionality described above:
       
 
 #### __XAML__
@@ -139,49 +129,49 @@ In this example the ranges itself are invisible. In the case when we need to hav
 #### __XAML__
 
 {{region radgauge-features-groups_1}}
-	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale Radius="0.99"
-	                         RangeLocation="Outside">
-	        <telerik:RadialScale.Ranges>
-	            <telerik:GaugeRange Min="0" Max="50"
-	                                StartWidth="0.01" 
-	                                Background="#FF3AC015"
-	                                IndicatorBackground="#FF3AC015"
-	                                IndicatorColorMixSensitivity="2" />
-	            <telerik:GaugeRange Min="50" Max="80"
-	                                StartWidth="0.01" 
-	                                Background="#FFD9ED27"
-	                                IndicatorBackground="#FFD9ED27"
-	                                IndicatorColorMixSensitivity="2" />
-	            <telerik:GaugeRange Min="80" Max="100"
-	                                StartWidth="0.01" 
-	                                Background="#FFE50000"
-	                                IndicatorBackground="#FFE50000"
-	                                IndicatorColorMixSensitivity="2"/>
-	            <telerik:GaugeRangeGroup x:Name="overload" 
-	                                     Location="Inside">
-	                <telerik:GaugeRange Min="0" Max="50"
-	                                    StartWidth="0.01"
-	                                    Background="#FF767676"
-	                                    IndicatorBackground="#FF767676" />
-	                <telerik:GaugeRange Min="50" Max="100"
-	                                    StartWidth="0.01"
-	                                    Background="#FFD6D4D4"
-	                                    IndicatorBackground="#FFD6D4D4" />
-	            </telerik:GaugeRangeGroup>
-	        </telerik:RadialScale.Ranges>
-	        <telerik:RadialScale.Indicators>
-	            <telerik:Marker telerik:ScaleObject.Location="OverOutside"
-	                            UseRangeColor="True"
-	                            Value="85" />
-	            <telerik:IndicatorGroup Ranges="{Binding ElementName=overload}">
-	                <telerik:Marker telerik:ScaleObject.Location="OverOutside"
-	                                UseRangeColor="True"
-	                                Value="20" />
-	            </telerik:IndicatorGroup>
-	        </telerik:RadialScale.Indicators>
-	    </telerik:RadialScale>
-	</telerik:RadRadialGauge>
+    <telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
+        <telerik:RadialScale Radius="0.99"
+                             RangeLocation="Outside">
+            <telerik:RadialScale.Ranges>
+                <telerik:GaugeRange Min="0" Max="50"
+                                    StartWidth="0.01" 
+                                    Background="#FF3AC015"
+                                    IndicatorBackground="#FF3AC015"
+                                    IndicatorColorMixSensitivity="2" />
+                <telerik:GaugeRange Min="50" Max="80"
+                                    StartWidth="0.01" 
+                                    Background="#FFD9ED27"
+                                    IndicatorBackground="#FFD9ED27"
+                                    IndicatorColorMixSensitivity="2" />
+                <telerik:GaugeRange Min="80" Max="100"
+                                    StartWidth="0.01" 
+                                    Background="#FFE50000"
+                                    IndicatorBackground="#FFE50000"
+                                    IndicatorColorMixSensitivity="2"/>
+                <telerik:GaugeRangeGroup x:Name="overload" 
+                                         Location="Inside">
+                    <telerik:GaugeRange Min="0" Max="50"
+                                        StartWidth="0.01"
+                                        Background="#FF767676"
+                                        IndicatorBackground="#FF767676" />
+                    <telerik:GaugeRange Min="50" Max="100"
+                                        StartWidth="0.01"
+                                        Background="#FFD6D4D4"
+                                        IndicatorBackground="#FFD6D4D4" />
+                </telerik:GaugeRangeGroup>
+            </telerik:RadialScale.Ranges>
+            <telerik:RadialScale.Indicators>
+                <telerik:Marker telerik:ScaleObject.Location="OverOutside"
+                                UseRangeColor="True"
+                                Value="85" />
+                <telerik:IndicatorGroup Ranges="{Binding ElementName=overload}">
+                    <telerik:Marker telerik:ScaleObject.Location="OverOutside"
+                                    UseRangeColor="True"
+                                    Value="20" />
+                </telerik:IndicatorGroup>
+            </telerik:RadialScale.Indicators>
+        </telerik:RadialScale>
+    </telerik:RadRadialGauge>
 	{{endregion}}
 
 

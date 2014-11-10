@@ -26,12 +26,10 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 ## Adding RadCalculator to the Project
 
-* 
-					  Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
+* Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
 				  
 
-* 
-					  Add references to the assemblies __Telerik.Windows.Controls__ and __Telerik.Windows.Controls.Input__;
+*  Add references to the assemblies __Telerik.Windows.Controls__ and __Telerik.Windows.Controls.Input__;
 				  
 
 * Add the RadCalculator as demonstrated below:{% if site.site_name == 'Silverlight' %}
@@ -39,6 +37,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 #### __XAML__
 
 {{region radcalculator-getting-started_0}}
+
 	<UserControl x:Class="RadCalculator.MainPage"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -59,6 +58,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 #### __XAML__
 
 {{region radcalculator-getting-started_1}}
+
 	<Window x:Class="RadCalculator.MainWindow"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -83,7 +83,8 @@ Two lines of code are important here:
 #### __XAML__
 
 {{region radcalculator-getting-started_2}}
-			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
 
@@ -93,7 +94,8 @@ Two lines of code are important here:
 #### __XAML__
 
 {{region radcalculator-getting-started_3}}
-			<telerik:RadCalculator />
+
+	<telerik:RadCalculator />
 	{{endregion}}
 
 

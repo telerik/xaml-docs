@@ -38,7 +38,7 @@ The __ItemsSource__ property allows the __RadMenu__ to be bound to any collectio
 
 Besides the __RadMenu's ItemTemplate__ property, you could use the __DisplayMemberPath__ property for controlling the appearance of the created items.
 
->tipIf neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, the content of the item would be set to the value returned by the__ToString()__ method of the business object.
+>tipIf neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, the content of the item would be set to the value returned by the __ToString()__ method of the business object.
 
 # See Also
 

@@ -24,12 +24,10 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 ## Adding RadCalculatorPicker to the Project
 
-* 
-					  Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
+* Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
 				  
 
-* 
-					  Add references to the assemblies __Telerik.Windows.Controls__ and __Telerik.Windows.Controls.Input__;
+* Add references to the assemblies __Telerik.Windows.Controls__ and __Telerik.Windows.Controls.Input__;
 				  
 
 * Add the RadCalculatorPicker as demonstrated below:{% if site.site_name == 'Silverlight' %}
@@ -37,6 +35,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 #### __XAML__
 
 {{region radcalculatorpicker-getting-started_0}}
+
 	<UserControl x:Class="RadCalculatorPicker.MainPage"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -57,6 +56,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 #### __XAML__
 
 {{region radcalculatorpicker-getting-started_1}}
+
 	<Window x:Class="RadCalculatorPicker.MainWindow"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -81,7 +81,8 @@ Two lines of code are important here:
 #### __XAML__
 
 {{region radcalculatorpicker-getting-started_2}}
-			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
 
@@ -91,7 +92,8 @@ Two lines of code are important here:
 #### __XAML__
 
 {{region radcalculatorpicker-getting-started_3}}
-			<telerik:RadCalculatorPicker Height="30" Width="200" />	
+
+	<telerik:RadCalculatorPicker Height="30" Width="200" />	
 	{{endregion}}
 
 
@@ -109,27 +111,28 @@ RadCalculatorPicker can be embeded as an editing element. In this case we will d
 #### __XAML__
 
 {{region radcalculatorpicker-getting-started_4}}
-			<telerik:RadGridView Name="clubsGrid" CanUserFreezeColumns="False" 
-								 ShowGroupPanel="False" RowIndicatorVisibility="Collapsed"
-								 ItemsSource="{Binding Clubs}"
-								 ColumnWidth="*"
-								 AutoGenerateColumns="False">
-				<telerik:RadGridView.Columns>
-					<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>				
-					<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-												Header="Stadium" 
-												DataFormatString="{}{0:N0}">
-						<telerik:GridViewDataColumn.CellEditTemplate>
-							<DataTemplate>
-								<telerik:RadCalculatorPicker Value="{Binding StadiumCapacity,Mode=TwoWay}" />
-							</DataTemplate>
-						</telerik:GridViewDataColumn.CellEditTemplate>
-					</telerik:GridViewDataColumn>
-					<telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
-												Header="Est." 
-												DataFormatString="{}{0:yyyy}"/>
-				</telerik:RadGridView.Columns>
-			</telerik:RadGridView>
+
+	<telerik:RadGridView Name="clubsGrid" CanUserFreezeColumns="False" 
+						 ShowGroupPanel="False" RowIndicatorVisibility="Collapsed"
+						 ItemsSource="{Binding Clubs}"
+						 ColumnWidth="*"
+						 AutoGenerateColumns="False">
+		<telerik:RadGridView.Columns>
+			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>				
+			<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
+										Header="Stadium" 
+										DataFormatString="{}{0:N0}">
+				<telerik:GridViewDataColumn.CellEditTemplate>
+					<DataTemplate>
+						<telerik:RadCalculatorPicker Value="{Binding StadiumCapacity,Mode=TwoWay}" />
+					</DataTemplate>
+				</telerik:GridViewDataColumn.CellEditTemplate>
+			</telerik:GridViewDataColumn>
+			<telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
+										Header="Est." 
+										DataFormatString="{}{0:yyyy}"/>
+		</telerik:RadGridView.Columns>
+	</telerik:RadGridView>
 	{{endregion}}
 
 

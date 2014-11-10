@@ -23,7 +23,7 @@ The purpose of this tutorial is to introduce you the __RadCollapsiblePanel__.
 
 ## RadCollapsiblePanel - Fundamentals
 
-The __RadCollapsiblePanel__is very similar to the __StackPanel__. However, it has one distinctive feature - this panel is not aware about the active size variant. Instead, it always tries to lay out its children in the small space provided. If it is not possible, it lays them horizontally.
+The __RadCollapsiblePanel__ is very similar to the __StackPanel__. However, it has one distinctive feature - this panel is not aware about the active size variant. Instead, it always tries to lay out its children in the small space provided. If it is not possible, it lays them horizontally.
 		
 
 >tip__RadCollapsiblePanel__ arranges itself automatically according to the __RibbonGroup__ size.
@@ -31,11 +31,14 @@ The __RadCollapsiblePanel__is very similar to the __StackPanel__. However, it ha
 
 The panel has three states, which are quite self-explanatory:
 
-* __Large__![](images/RibbonView_CollapsiblePanel_Large.png)
+* __Large__
+![](images/RibbonView_CollapsiblePanel_Large.png)
 
-* __Medium__![](images/RibbonView_CollapsiblePanel_Medium.png)
+* __Medium__
+![](images/RibbonView_CollapsiblePanel_Medium.png)
 
-* __Small__![](images/RibbonView_CollapsiblePanel_Small.png)
+* __Small__
+![](images/RibbonView_CollapsiblePanel_Small.png)
 
 >tipIf you refer to the Microsoft Office Word product, you will note that a similar layout behavior is used at the "Insert" tab. It is full of groups of three large buttons (e.g. the "Illustrations" group), laid out horizontally, which then become small buttons laid out vertically, when the group is shrunk. You could use the __RadRibbonCollapsible__ panel to achieve such an effect, combined with the resizing characteristics of the [RadRibbonButtons]({%slug radribbonview-buttons-overview%}).
 		  
@@ -48,28 +51,28 @@ By default the __RadCollapsiblePanel__ displays 3 buttons while in __Medium__ or
 #### __XAML__
 
 {{region radribbonview-collapsible-panel-0}}
-	        <telerik:RadRibbonView Title="Sample"
-	                               ApplicationButtonImageSource="AppIcon.png"
-	                               telerik:RadCollapsiblePanel.SmallButtonsPerColumn="2">
-	            <telerik:RadRibbonTab Header="Home">
-	                <telerik:RadRibbonGroup Header="Clipboard">
-	                    <telerik:RadCollapsiblePanel>
-	                        <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
-	                                                 CollapseToSmall="WhenGroupIsSmall"
-	                                                 SmallImage="/Images/RibbonView/FirstLook/cut.png"
-	                                                 Text="Cut" />
-	                        <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
-	                                                 CollapseToSmall="WhenGroupIsSmall"
-	                                                 SmallImage="/Images/RibbonView/FirstLook/copy.png"
-	                                                 Text="Copy" />
-	                        <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
-	                                                 CollapseToSmall="WhenGroupIsSmall"
-	                                                 SmallImage="/Images/RibbonView/FirstLook/formatpainter.png"
-	                                                 Text="Format Painter" />
-	                    </telerik:RadCollapsiblePanel>
-	                </telerik:RadRibbonGroup>
-	            </telerik:RadRibbonTab>
-	        </telerik:RadRibbonView>
+    <telerik:RadRibbonView Title="Sample"
+                           ApplicationButtonImageSource="AppIcon.png"
+                           telerik:RadCollapsiblePanel.SmallButtonsPerColumn="2">
+        <telerik:RadRibbonTab Header="Home">
+            <telerik:RadRibbonGroup Header="Clipboard">
+                <telerik:RadCollapsiblePanel>
+                    <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
+                                             CollapseToSmall="WhenGroupIsSmall"
+                                             SmallImage="/Images/RibbonView/FirstLook/cut.png"
+                                             Text="Cut" />
+                    <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
+                                             CollapseToSmall="WhenGroupIsSmall"
+                                             SmallImage="/Images/RibbonView/FirstLook/copy.png"
+                                             Text="Copy" />
+                    <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
+                                             CollapseToSmall="WhenGroupIsSmall"
+                                             SmallImage="/Images/RibbonView/FirstLook/formatpainter.png"
+                                             Text="Format Painter" />
+                </telerik:RadCollapsiblePanel>
+            </telerik:RadRibbonGroup>
+        </telerik:RadRibbonTab>
+    </telerik:RadRibbonView>
 	{{endregion}}
 
 ![Rad Ribbon View Collapsible Panel Buttons Per Column](images/RadRibbonView_CollapsiblePanel_ButtonsPerColumn.png)
@@ -83,7 +86,7 @@ It is important to note that if the height of the __RibbonView__ cannot display 
 ### ItemSpacing
 
 In __RadRibbonView__ you can also control the space between every two buttons in the __RadCollapsiblePanel__ while they are in __Small__ or __Medium__ states. This can be done through the __RadCollapsiblePanel.ItemSpacing__ attached property. It is of type __Int__ and its default value is 0.
-			![Rad Ribbon View Collapsible Panel Item Spacing](images/RadRibbonView_CollapsiblePanel_ItemSpacing.png)
+![Rad Ribbon View Collapsible Panel Item Spacing](images/RadRibbonView_CollapsiblePanel_ItemSpacing.png)
 
 ## Using RadCollapsiblePanel
 

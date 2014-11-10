@@ -17,30 +17,16 @@ position: 2
 The __RadExpander__ is a __HeaderedContentControl__ and we can initialize both its __Header__ and __Content__ properties.
                 {% if site.site_name == 'Silverlight' %}
 
->In order to use __RadExpander__ in your projects you need to add reference to the following assemblies:
+>In order to use __RadExpander__ in your projects you need to add reference to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Navigation__ <br/>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
                             
 
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Controls.Navigation__ 
-
-You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-                            
-
-#### __XAML____
+#### __XAML__
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
                         
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
->In order to use __RadExpander__ in your projects you need to add reference to the following assemblies:
-                            
-
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Controls.Navigation__
-
-* __Telerik.Windows.Data__ You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+>In order to use __RadExpander__ in your projects you need to add reference to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Navigation__<br/>* __Telerik.Windows.Data__<br/> You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
                             
 
 #### __XAML__

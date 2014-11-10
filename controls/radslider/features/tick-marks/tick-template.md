@@ -14,7 +14,7 @@ position: 2
 
 ## 
 
-Changing the look of the tick marks can be done by setting the __TickTemplate__property, which is of type __DataTemplate__.
+Changing the look of the tick marks can be done by setting the __TickTemplate__ property, which is of type __DataTemplate__.
 
 #### __XAML__
 

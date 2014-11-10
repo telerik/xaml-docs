@@ -13,21 +13,17 @@ site_name: Silverlight
 
 
 
-The __RadRibbonWindow__ control is used to define a specialized window that is pre-configured with a
-      __RadRibbonView__ to emulate MS Office UI in Silverlight. 
+The __RadRibbonWindow__ control is used to define a specialized window that is pre-configured with a__RadRibbonView__ to emulate MS Office UI in Silverlight. 
 
-An application that will use the new __RadRibbonWindow__ should be configured to run in out-of-browser mode 
-      and also to require elevated trust permissions with one of these options: No Border or Borderless Round Corners (the preferred one).
-      This tutorial will walk you through the task of defining a RadRibbonWindow in your application.
+An application that will use the new __RadRibbonWindow__ should be configured to run in out-of-browser mode and also to require elevated trust permissions with one of these options: No Border or Borderless Round Corners (the preferred one). This tutorial will walk you through the task of defining a RadRibbonWindow in your application.
 
 ## Configuration
 
-First you need to configure your Silverlight project. Right click on it and choose __Properties__.
-        Then you should enable the out of browser option:![](images/RibbonView_RibbonWindowSL_Config.png)
+First you need to configure your Silverlight project. Right click on it and choose __Properties__. Then you should enable the out of browser option:
+![](images/RibbonView_RibbonWindowSL_Config.png)
 
-Then you need to click on the __Out-of-Browser Settings…__button and check the 
-        Require Elevated Trust. Also, make sure that the
-        WindowStyle is Borderless Round Corners: ![](images/RibbonView_RibbonWindowSL_OOBConfig.png)
+Then you need to click on the __Out-of-Browser Settings…__ button and check the Require Elevated Trust. Also, make sure that the WindowStyle is Borderless Round Corners: 
+![](images/RibbonView_RibbonWindowSL_OOBConfig.png)
 
 ## Define the RadRibbonWindow in the application
 
@@ -73,11 +69,14 @@ Then you need to click on the __Out-of-Browser Settings…__button and check the
 
 
 
-Now, when you hit F5 you should get the following result:![](images/RibbonView_RibbonWindowSL_BrowserExample.png)
+Now, when you hit F5 you should get the following result:
+![](images/RibbonView_RibbonWindowSL_BrowserExample.png)
 
-In order to run the project in OOB you need to install it:![](images/RibbonView_RibbonWindowSL_Install.png)
+In order to run the project in OOB you need to install it:
+![](images/RibbonView_RibbonWindowSL_Install.png)
 
-Then you should get the final result:![](images/RibbonView_RibbonWindowSL_Example.png)
+Then you should get the final result:
+![](images/RibbonView_RibbonWindowSL_Example.png)
 
 ## Themes
 
@@ -101,5 +100,4 @@ Please note that the default __RadRibbonWindow__ implicit style cannot be applie
 
 ![Rad Ribbon View Ribbon WindowWPF Windows 7 Theme](images/RadRibbonView_RibbonWindowWPF_Windows7Theme.png)
 
-More information and a sample project using the __RadRibbonWindow__ for Silverlight, can be 
-        found [here](http://blogs.telerik.com/silverlightteam/posts/10-11-08/radribbonwindow-for-silverlight-oob.aspx).
+More information and a sample project using the __RadRibbonWindow__ for Silverlight, can be found [here](http://blogs.telerik.com/silverlightteam/posts/10-11-08/radribbonwindow-for-silverlight-oob.aspx).

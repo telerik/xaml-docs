@@ -23,9 +23,7 @@ This topic covers the specific events exposed by the __RadSlider__ control.
 * The __sender__ argument contains the __RadSlider__. This argument is of type object, but can be cast to the __RadSlider__ type.
 				
 
-* A
-				  {% if site.site_name == 'Silverlight' %}[RadDragStartedEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_raddragstartedeventargs.html){% endif %}{% if site.site_name == 'WPF' %}[RadDragStartedEventArgs](http://www.telerik.com/help/wpf/t_telerik_windows_controls_raddragstartedeventargs.html){% endif %}
-				  object.
+* A {% if site.site_name == 'Silverlight' %}[RadDragStartedEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_raddragstartedeventargs.html){% endif %}{% if site.site_name == 'WPF' %}[RadDragStartedEventArgs](http://www.telerik.com/help/wpf/t_telerik_windows_controls_raddragstartedeventargs.html){% endif %} object.
 				
 
 * __DragDelta__ - occurs one or multiple times while a user drags a __Thumb__ control with the mouse. The event handler receives two arguments:
@@ -34,9 +32,7 @@ This topic covers the specific events exposed by the __RadSlider__ control.
 * The __sender__ argument contains the __RadSlider__. This argument is of type object, but can be cast to the __RadSlider__ type.
 				
 
-* A
-				  {% if site.site_name == 'Silverlight' %}[RadDragDeltaEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_raddragdeltaeventargs.html){% endif %}{% if site.site_name == 'WPF' %}[RadDragDeltaEventArgs](	http://www.telerik.com/help/wpf/t_telerik_windows_controls_raddragdeltaeventargs.html){% endif %}
-				  object.
+* A {% if site.site_name == 'Silverlight' %}[RadDragDeltaEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_raddragdeltaeventargs.html){% endif %}{% if site.site_name == 'WPF' %}[RadDragDeltaEventArgs](	http://www.telerik.com/help/wpf/t_telerik_windows_controls_raddragdeltaeventargs.html){% endif %} object.
 				
 
 * __DragCompleted__ - occurs when a user completes a drag operation of a __Thumb__ control with the mouse.  The event handler receives two arguments:
@@ -45,9 +41,7 @@ This topic covers the specific events exposed by the __RadSlider__ control.
 * The __sender__ argument contains the __RadSlider__. This argument is of type object, but can be cast to the __RadSlider__ type.
 				
 
-* A
-				  {% if site.site_name == 'Silverlight' %}[RadDragCompletedEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_raddragcompletedeventargs.html){% endif %}{% if site.site_name == 'WPF' %}[RadDragCompletedEventArgs](http://www.telerik.com/help/wpf/t_telerik_windows_controls_raddragcompletedeventargs.html){% endif %}
-				  object.
+* A {% if site.site_name == 'Silverlight' %}[RadDragCompletedEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_raddragcompletedeventargs.html){% endif %}{% if site.site_name == 'WPF' %}[RadDragCompletedEventArgs](http://www.telerik.com/help/wpf/t_telerik_windows_controls_raddragcompletedeventargs.html){% endif %} object.
 				
 
 ## Selection Events

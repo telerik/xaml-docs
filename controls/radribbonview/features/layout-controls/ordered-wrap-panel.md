@@ -12,14 +12,13 @@ position: 0
 
 
 
-One of the most important features of the __RadRibbonView__is the dynamic layout resizing. It refers to the __RadRibbonView__'s ability to optimize its layout depending on how much space is available. This process can't be automated, however, the __RadRibbonView__'s API makes your life easier by providing you with two built-in layout containers - __RadOrderedWrapPanel__ and [RadCollapsiblePanel]({%slug radribbonview-collapsible-panel%}). You should use one of these panels to specify how you would like the resizing to occur.
+One of the most important features of the __RadRibbonView__ is the dynamic layout resizing. It refers to the __RadRibbonView__'s ability to optimize its layout depending on how much space is available. This process can't be automated, however, the __RadRibbonView__'s API makes your life easier by providing you with two built-in layout containers - __RadOrderedWrapPanel__ and [RadCollapsiblePanel]({%slug radribbonview-collapsible-panel%}). You should use one of these panels to specify how you would like the resizing to occur.
 			
 
 The purpose of this tutorial is to introduce the __RadOrderedWrapPanel__.
 			
 
->tip
-				Consider reading the [Resizing]({%slug radribbonview-resizing%}) topic, which is tightly connected with the __RadOrderedWrapPanel__.
+>tipConsider reading the [Resizing]({%slug radribbonview-resizing%}) topic, which is tightly connected with the __RadOrderedWrapPanel__.
 			
 
 ## RadOrderedWrapPanel - Fundamentals
@@ -28,20 +27,23 @@ __RadOrderedWrapPanel__ is used together with __RadButtonGroup__ to create a lay
 				
 
 * __Normal__ state.
-						![](images/RadRibbonView_Ordered_WrapPanel.png)The __RadOrderedWrapPanel__ displays its children along __two__ horizontal lines in the __normal__ state.
+
+![](images/RadRibbonView_Ordered_WrapPanel.png)
+The __RadOrderedWrapPanel__ displays its children along __two__ horizontal lines in the __normal__ state.
 						
 
->tip
-							When there is enough space, the __RadOrderedWrapPanel__ always tries to layout its children in __Normal__ state.
+>tipWhen there is enough space, the __RadOrderedWrapPanel__ always tries to layout its children in __Normal__ state.
 						
 
 * __Compressed__ state
-						![](images/RadRibbonView_Ordered_WrapPanel_Compressed.png)In the __compressed__ state the __RadOrderedWrapPanel__ displays its children along __three__ horizontal lines, thus achieving a more compact and tightly packed structure.
+
+![](images/RadRibbonView_Ordered_WrapPanel_Compressed.png)
+In the __compressed__ state the __RadOrderedWrapPanel__ displays its children along __three__ horizontal lines, thus achieving a more compact and tightly packed structure.
 						
 
 >tipIf you refer to the Microsoft Office Word product, you will note that a similar layout behavior is used by the "Font" and "Paragraph" groups.
 
-You have the ability to specify when the Panel should go into the __Compressed__ state by using the __RadOrderedWrapPanel__'s__CompressedThreshold__property__.__Its values are predefined in the __CollapseThreshold__ enumeration, which exposes the following fields:
+You have the ability to specify when the Panel should go into the __Compressed__ state by using the __RadOrderedWrapPanel__'s __CompressedThreshold__ property. Its values are predefined in the __CollapseThreshold__ enumeration, which exposes the following fields:
 				
 
 * __Never__ - the panel never goes in __Compressed__ state.
@@ -158,7 +160,7 @@ The next example demonstrates how to build a "Font" like __RadRibbonGroup__ usin
 
 ## Setting RadOrderedWrapPanel's CompressedThreshold Property
 
-The __CompressedThreshold__property allows you to specify when the panel goes into __Compressed__ mode. For example, you may set this property to __CollapseThreshold.Never__.
+The __CompressedThreshold__  property allows you to specify when the panel goes into __Compressed__ mode. For example, you may set this property to __CollapseThreshold.Never__.
 				
 
 #### __XAML__
@@ -178,9 +180,9 @@ The __RadOrderedWrapPanel__'s __CompressedItemsOrder__ property allows you to ch
 				
 
 The next snapshot shows you the wrap panel from the first example in __compressed__ state. The __CompressedItemsOrder__ property is not set. The different RadButton groups are marked with indexes from 0 to 4 (there are 5 button groups).
-				![](images/RadRibbonView_Ordered_WrapPanel_NormalOrder.png)
+![](images/RadRibbonView_Ordered_WrapPanel_NormalOrder.png)
 
-For example, you may wish to change the groups order. In this case you should set the __RadOrderedWrapPanel__'s __CompressedItemsOrder__property__.__ You can do it in XAML by specifying a comma-delimited list of integers like in the example below.
+For example, you may wish to change the groups order. In this case you should set the __RadOrderedWrapPanel__'s __CompressedItemsOrder__ property. You can do it in XAML by specifying a comma-delimited list of integers like in the example below.
 				
 
 #### __XAML__
@@ -191,4 +193,5 @@ For example, you may wish to change the groups order. In this case you should se
 
 
 
-And the result is shown on the next snapshot. Note how the order of the groups is altered.![](images/RadRibbonView_Ordered_WrapPanel_CompressedOrder.png)
+And the result is shown on the next snapshot. Note how the order of the groups is altered.
+![](images/RadRibbonView_Ordered_WrapPanel_CompressedOrder.png)

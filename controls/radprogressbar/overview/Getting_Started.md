@@ -14,13 +14,7 @@ position: 2
 
 ## 
 
->
-
-In order to use __RadProgressBar__ control in your projects you have to add a reference to the __Telerik.Windows.Controls__ assembly. {% if site.site_name == 'WPF' %}
-
-You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %}
-
-You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
+>In order to use __RadProgressBar__ control in your projects you have to add a reference to the __Telerik.Windows.Controls__ assembly.<br/>{% if site.site_name == 'WPF' %}You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
 
 Getting started with the __RadProgressBar__ control is pretty straightforward. To begin with, you should include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create the __RadProgressBar__ control in *C#* and *XAML* code:
 
@@ -56,7 +50,3 @@ You may need to change the __Minimum__ and __Maximum__ values of the control by 
 {{region Getting_Started_3}}
 	<telerik:RadProgressBar Minimum="10" Maximum="20" />
 	{{endregion}}
-
-
-
-

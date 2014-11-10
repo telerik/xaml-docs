@@ -15,14 +15,13 @@ position: 2
 Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadSlider__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can template parts of it or even independent controls related to it.
 			
 
->tip
-				For more information about templating and how to modify the default templates of the __RadControls__ read [the common topics](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html){% if site.site_name == 'Silverlight' %}{% endif %}[the common topics](http://www.telerik.com/help/wpf/common-styling-appearance-edit-control-templates-blend.html) on this matter.
+>tipFor more information about templating and how to modify the default templates of the __RadControls__ read [the common topics](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html){% if site.site_name == 'Silverlight' %}{% endif %}[the common topics](http://www.telerik.com/help/wpf/common-styling-appearance-edit-control-templates-blend.html) on this matter.
 			
 
 ##  RadSlider Template Structure
 
 This section will explain the structure of the __RadSlider__'s template. Here is a snapshot of the template generated in Expression Blend.
-				![](images/radslider_styles_template_structure.png)
+![](images/radslider_styles_template_structure.png)
 
 It contains the following parts:
 
@@ -48,7 +47,7 @@ It contains the following parts:
 
 * __SingleThumbHost__ - is of type __Thumb__ and represents the single thumb of the __RadSlider__
 
-* __RangeThumbsPanel__ - is the __StackPanel__ that hosts the __SelectionRange__elements
+* __RangeThumbsPanel__ - is the __StackPanel__ that hosts the __SelectionRange__ elements
 												
 
 * __RangeStartThumb__ - is of type __Thumb__ and represents the __SelectionStart__ thumb in a selection range

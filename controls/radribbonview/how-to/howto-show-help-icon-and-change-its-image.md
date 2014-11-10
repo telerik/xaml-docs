@@ -46,7 +46,7 @@ In order to manage the visibility of the help button, the developer should use t
 		  
 
 The help button is shown in the right part of the ribbon view.
-		![Rad Ribbon View How To Show And Change Help Button](images/RadRibbonView_HowTo_ShowAndChange_Help_Button.png)
+![Rad Ribbon View How To Show And Change Help Button](images/RadRibbonView_HowTo_ShowAndChange_Help_Button.png)
 
 ## Change the Help Button Image
 
@@ -57,7 +57,3 @@ To set a different icon from the default one, you should use the __HelpButtonIma
 {{region radribbonview-howto-show-and-change-help-button_3}}
 	<telerik:RadRibbonView x:Name="xRibbonView" HelpButtonImageSource="myHelpButton.png"/>
 	{{endregion}}
-
-
-
-# See Also

@@ -14,7 +14,7 @@ position: 1
 
 ## 
 
-This section defines terms and concepts used in the scope of __RadProgressBar__you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. For more detailed descriptions of the required parts of the control please visit the [Required Parts]({%slug radprogressbar-required-template-parts%}) section.  
+This section defines terms and concepts used in the scope of __RadProgressBar__ you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. For more detailed descriptions of the required parts of the control please visit the [Required Parts]({%slug radprogressbar-required-template-parts%}) section.  
 
 ![](images/RadProgressBar_structure.png)
 

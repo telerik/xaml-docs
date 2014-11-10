@@ -10,12 +10,9 @@ position: 3
 
 # Enable and Disable Items
 
-
-
 By using the API of the __RadTreeView__ control you can easily disable or enable a node. You can set the boolean property __IsEnabled__ to each one of the following objects:
 
 * __RadTreeView__
-
 * __RadTreeViewItem__
 
 This tutorial will walk you through the common tasks of __enabling__ and __disabling__ treeview item(s) declaratively and programmatically.
@@ -44,8 +41,6 @@ And here is the XAML declaration:
 	</telerik:RadTreeView>
 	{{endregion}}
 
-
-
 By default all items in the treeview are enabled (their __IsEnabled__ property is set to __True__). That means you can select, expand, collapse, drag and drop these items. If you want to disable a specific item, just add the following attribute to the treeview item declaration: 
 
 #### __XAML__
@@ -53,8 +48,6 @@ By default all items in the treeview are enabled (their __IsEnabled__ property i
 {{region radtreeview-feautres-treeviewitem-enable-disable-items_1}}
 	<telerik:RadTreeViewItem IsEnabled="False"/>
 	{{endregion}}
-
-
 
 If you want to disable the whole treeview then add the same attribute to the treeview declaration. On the next snapshot the whole treeview is disabled. 
 
@@ -78,8 +71,6 @@ Here is the XAML declaration. Note that if you set the __IsEnabled__ property to
 	</telerik:RadTreeView>
 	{{endregion}}
 
-
-
 ## Enable and Disable Items Programmatically
 
 In order to disable a treeview item, you have to set the __IsEnabled__ property of an instance of the __RadTreeViewItem__ class. 
@@ -93,8 +84,6 @@ In order to disable a treeview item, you have to set the __IsEnabled__ property 
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-enable-disable-items_4}}
@@ -102,9 +91,7 @@ In order to disable a treeview item, you have to set the __IsEnabled__ property 
 	    radTreeViewItemSoccer.IsEnabled = False
 	End Sub
 	{{endregion}}
-
-
-
+	
 If you want to disable the whole treeview then you have to set the __IsEnabled__ property of an instance of the __RadTreeView__ class. 
 
 #### __C#__
@@ -116,8 +103,6 @@ If you want to disable the whole treeview then you have to set the __IsEnabled__
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-enable-disable-items_6}}
@@ -126,9 +111,7 @@ If you want to disable the whole treeview then you have to set the __IsEnabled__
 	End Sub
 	{{endregion}}
 
-
-
->tipConsider disabling treeview items in XAML instead of code-behind whenever it's possible. This includes situations when you know what items you need to disable at design time.
+>tip Consider disabling treeview items in XAML instead of code-behind whenever it's possible. This includes situations when you know what items you need to disable at design time.
 
 ## Events 
 
@@ -141,8 +124,6 @@ Both __RadTreeView__ and __RadTreeViewItem__ offer you __IsEnabledChanged__ even
 	    x:Name="radTreeViewItemSoccer" IsEnabledChanged="radTreeViewItemSoccer_IsEnabledChanged"/>
 	{{endregion}}
 
-
-
 You can also attach to the __IsEnabledChanged__ event in the code-behind.
 
 #### __C#__
@@ -151,24 +132,15 @@ You can also attach to the __IsEnabledChanged__ event in the code-behind.
 	this.radTreeViewItemSoccer.IsEnabledChanged += new DependencyPropertyChangedEventHandler( radTreeViewItemSoccer_IsEnabledChanged );
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-enable-disable-items_9}}
 	AddHandler Me.radTreeViewItemSoccer.IsEnabledChanged, AddressOf radTreeViewItemSoccer_IsEnabledChanged
 	{{endregion}}
 
-
-
 # See Also
-
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})
-
  * [Item Images]({%slug radtreeview-feautres-treeviewitem-item-images%})
-
  * [Working with selection]({%slug radtreeview-feautres-treeviewitem-selection%})
-
  * [Expanding and Collapsing Items]({%slug radtreeview-feautres-treeviewitem-expanding-and-collapsing-items%})
-
  * [BringIntoView Support]({%slug radtreeview-features-treeviewitem-bring-into-view-support%})

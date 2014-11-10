@@ -10,26 +10,16 @@ position: 11
 
 # Iterate Through TreeViewItems
 
-
-
-## 
-
-Telerik __RadTreeView__class inherits from __ItemsControl__. The __Items__collection of the __ItemsControl__is a collection of data objects, __not__ from __RadTreeViewItem__s. There is a very important concept about the items and item containers. When you bind an __ItemsControl__you have your data items populating the __Items__collection of the control. The containers are the __visual presentations__of those data items (in this case the containers are the __RadTreeViewItem__s). Containers are not created automatically when the __ItemsControl__is bound, but are created __asynchronously and only when needed__. For example in the case with the TreeView, the containers are not being created until their parent is expanded.
-		
+Telerik __RadTreeView__ class inherits from __ItemsControl__. The __Items__ collection of the __ItemsControl__ is a collection of data objects, __not__ from __RadTreeViewItems__. There is a very important concept about the items and item containers. When you bind an __ItemsControl__ you have your data items populating the __Items__ collection of the control. The containers are the __visual presentations__ of those data items (in this case the containers are the __RadTreeViewItems__). Containers are not created automatically when the __ItemsControl__ is bound, but are created __asynchronously and only when needed__. For example in the case with the TreeView, the containers are not being created until their parent is expanded.
 
 So how you can get the container from the data item? Or in this case - how to get the RadTreeViewItem from your data object which you receive when traversing the Items collection?
 
-There are several helper methods that can be used. Each ItemsControl has a Property named __ItemContainerGenerator__. It is of type __ItemContainerGenerator__ . This class has the following methods that can help you in this case:
-		
+There are several helper methods that can be used. Each ItemsControl has a Property named __ItemContainerGenerator__. It is of type __ItemContainerGenerator__. This class has the following methods that can help you in this case:		
 
 * __DependencyObject.ContainerFromIndex(int index)__ - returns the Container for the given index from the Items collection.
-		  
-
-* __DependencyObject.ContainerFromItem(object item)__-  returns the Container for the given data item from the Items collection.
-		  
+* __DependencyObject.ContainerFromItem(object item)__ -  returns the Container for the given data item from the Items collection.
 
 So here is an example about how to get access to all of the Containers in the __RadTreeView__:
-		
 
 The item container may be null if it isn't still generated from the runtime. That's why you should access the containers when your control is generated and added to the visual tree. 
 
@@ -37,15 +27,13 @@ The item container may be null if it isn't still generated from the runtime. Tha
 
 {{region radtreeview-how-to-iterate-through-treeviewitems_0}}
 	this.Loaded += new RoutedEventHandler( IterateTreeViewItems_Loaded );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtreeview-how-to-iterate-through-treeviewitems_1}}
 	AddHandler Me.Loaded, AddressOf IterateTreeViewItems_Loaded
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -89,9 +77,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 	    }
 	    return allItems;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -131,9 +117,11 @@ The item container may be null if it isn't still generated from the runtime. Tha
 			Next
 			Return allItems
 		End Function
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+
+{% if site.site_name == 'WPF' %}
 
 #### __C#__
 
@@ -175,9 +163,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 	    }
 	    return allItems;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -217,16 +203,12 @@ The item container may be null if it isn't still generated from the runtime. Tha
 			Next
 			Return allItems
 		End Function
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
 # See Also
-
  * [Bind to a Selected Item]({%slug radtreeview-how-to-bind-selected-item%})
-
  * [Add Context Menu]({%slug radtreeview-how-to-add-context-menu%})
-
  * [Bind RadTreeView to Self-Referencing Data]({%slug radtreeview-how-to-bind-to-self-referencing-data%})
-
  * [Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection]({%slug radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection%})

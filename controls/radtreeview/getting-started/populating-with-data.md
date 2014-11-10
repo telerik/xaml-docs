@@ -14,7 +14,7 @@ There are several ways to populate a treeview with treeview items and they are:
 
 * [Declaratively]({%slug radtreeview-populating-with-data-declaratively%}) in your XAML code - suitable for cases when the treeview items structure is known during the implementation phase and does not change in time.
 
-* [Programmatically]({%slug radtreeview-populating-with-data-in-code-behind%}) from the code-behind____- use when the treeview structure can be changed during run-time by the user or other application logic.
+* [Programmatically]({%slug radtreeview-populating-with-data-in-code-behind%}) from the code-behind - use when the treeview structure can be changed during run-time by the user or other application logic.
 
 * Using [data binding]({%slug radtreeview-populating-with-data-data-binding-to-xml%}) - use when the treeview structure is described in data module.
 

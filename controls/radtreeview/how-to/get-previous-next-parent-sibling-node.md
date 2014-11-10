@@ -10,20 +10,13 @@ position: 2
 
 # Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item
 
-
-
-The __RadTreeViewItem__class exposes properties which allow you to access:
+The __RadTreeViewItem__ class exposes properties which allow you to access:
 
 * Previous node
-
 * Previous sibling node
-
 * Next node
-
 * Next sibling node
-
 * Parent node
-
 * Root node
 
 Here is a simple treeview declaration: 
@@ -49,19 +42,15 @@ Here is a simple treeview declaration:
 	</telerik:RadTreeView>
 	{{endregion}}
 
-
-
 ![](images/RadTreeView_HowToGetPreviousNextSiblingParentNode_010.PNG)
 
-For example, you should attach to the __SelectionChanged__event and in the event handler get the selected items. Find the treeview declaration and add the following attribute: 
+For example, you should attach to the __SelectionChanged__ event and in the event handler get the selected items. Find the treeview declaration and add the following attribute: 
 
 #### __XAML__
 
 {{region radtreeview-how-to-get-previous-next-parent-sibling-node_1}}
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView" SelectionChanged="radTreeView_SelectionChanged">
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -74,9 +63,7 @@ For example, you should attach to the __SelectionChanged__event and in the event
 	    ObservableCollection<Object> selectedItems = treeView.SelectedItems;
 	    RadTreeViewItem item = selectedItems[ 0 ] as RadTreeViewItem;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -90,13 +77,11 @@ For example, you should attach to the __SelectionChanged__event and in the event
 	
 	    Dim item As RadTreeViewItem = TryCast(selectedItems(0), RadTreeViewItem)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Accessing the PreviousItem and PreviousSiblingItem 
 
-When you want to get the previous item in the hierarchy (no matter the level) you need to use the __PreviousItem__property, while the __PreviousSiblingItem__property will return you the previous item on the same level. For example:
+When you want to get the previous item in the hierarchy (no matter the level) you need to use the __PreviousItem__ property, while the __PreviousSiblingItem__ property will return you the previous item on the same level. For example:
 
 * If you select the treeview item with header "Road Cycling", then the __PreviousItem__ property will return you the treeview item with header "Cycling", while the __PreviousSiblingItem__ property will return you null.
 
@@ -119,8 +104,6 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-how-to-get-previous-next-parent-sibling-node_5}}
@@ -139,11 +122,9 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 	End Sub
 	{{endregion}}
 
-
-
 ## Accessing the NextItem and NextSiblingItem 
 
-When you want to get the next item in the hierarchy (no matter the level) you need to use the __NextItem__property, while the __NextSiblingItem__property will return you the next item on the same level. For example:
+When you want to get the next item in the hierarchy (no matter the level) you need to use the __NextItem__ property, while the __NextSiblingItem__ property will return you the next item on the same level. For example:
 
 * If you select the treeview item with header "Soccer", then the __NextItem__ property will return you the treeview item with header "Tennis", while the __NextSiblingItem__ property will return you null.
 
@@ -169,8 +150,6 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 	}
 	{{endregion}}
 
-
-
 #### __XAML__
 
 {{region radtreeview-how-to-get-previous-next-parent-sibling-node_7}}
@@ -193,11 +172,9 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 	End Sub
 	{{endregion}}
 
-
-
 ## Accessing the ParentItem and RootItem 
 
-If you want to get the parent item of the currently selected item, you should use the __ParentItem__property. If you want to get the root item of the treeview, you should use the __RootItem__property. For example:
+If you want to get the parent item of the currently selected item, you should use the __ParentItem__ property. If you want to get the root item of the treeview, you should use the __RootItem__ property. For example:
 
 * If you select the treeview item with header "Soccer", then the __ParentItem__ property will return you the treeview item with header "Football", while the __RootItem__ property will return you the treeview item with header "Sport Categories".
 
@@ -227,8 +204,6 @@ If you want to get the parent item of the currently selected item, you should us
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-how-to-get-previous-next-parent-sibling-node_9}}
@@ -255,12 +230,7 @@ If you want to get the parent item of the currently selected item, you should us
 	End Sub
 	{{endregion}}
 
-
-
 # See Also
-
  * [Expand and Collapse Items]({%slug radtreeview-how-to-expand-and-collapse-items%})
-
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
-
  * [Add Check Boxes (Radio Buttons) Next to Each Item]({%slug radtreeview-how-to-add-checkboxes-next-to-each-item%})

@@ -320,6 +320,11 @@ navigation:
     controls/radspreadsheet/howto:
         title: How To
         position: 6		
+    "*radspellchecker":
+        title: RadSpellChecker		
+    controls/radspellchecker/styles-and-templates:
+        title: Styles and Templates
+        position: 4				
 ## Centaur Controls End
 
 ## Common Start

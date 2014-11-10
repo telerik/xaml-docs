@@ -325,10 +325,7 @@ __MaskTokenN.F__
 For instance: 
 #### __XAML__
      <telerik:RadMaskedNumericInput Mask="#3.2" />
-		  
-
-
-
+     
 # See Also
 
  * [Common Features]({%slug radmaskedinput-features-common%})

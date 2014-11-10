@@ -16,10 +16,11 @@ position: 0
 
 ## 
 
-Thank you for choosing Telerik __RadSlider__!
-				![](images/RadSlider.png)
+Thank you for choosing Telerik __RadSlider__ !
 
-__RadSlider__is a flexible UI component that allows users to select a value from a defined range. The control is completely customizable in terms of appearance and offers numerous configuration options like orientation, small change, mouse wheel support, selection range, snap to tick, tick placement, tick template, etc.
+![](images/RadSlider.png)
+
+__RadSlider__ is a flexible UI component that allows users to select a value from a defined range. The control is completely customizable in terms of appearance and offers numerous configuration options like orientation, small change, mouse wheel support, selection range, snap to tick, tick placement, tick template, etc.
 				
 
 __Key Features:__

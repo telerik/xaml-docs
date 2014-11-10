@@ -14,7 +14,7 @@ position: 2
 
 The __RadRibbonToggleButton__ represents an extension of the __RadToggleButton__. It provides an easier interaction with the __RadRibbonView__ control. What is special about the __RadRibbonToggleButton__ is that it has two states - checked and unchecked. To switch between these states just click on it.
 
->tipTo learn more about the __RadToggleButtonButton__ control read its documentation.__RadRibbonToggleButton__
+>tipTo learn more about the __RadToggleButtonButton__ control read its documentation. __RadRibbonToggleButton__
 
 #### __XAML__
 
@@ -30,10 +30,10 @@ The __RadRibbonToggleButton__ represents an extension of the __RadToggleButton__
 
 
 
->tipAs all buttons in the __RadRibbonView__'s set slightly expose the same functionality, take a look at the 
-      [Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#Common_Functionality) topic.
+>tipAs all buttons in the __RadRibbonView__'s set slightly expose the same functionality, take a look at the [Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#Common_Functionality) topic.
 
-This button has its initial size set to __Large__ and its text label set to __"Symbol"__. As the __IsAutoSize__ property is set to __True__ the button will change its size depending on the __RadRibbonGroup's__ size. The button will also never collapse to its __Medium__ size and will collapse to its __Small__ size when the __RadRibbonGroup__ collapses to __Medium__.![](images/RibbonView_Buttons_ToggleButton.png)
+This button has its initial size set to __Large__ and its text label set to __"Symbol"__. As the __IsAutoSize__ property is set to __True__ the button will change its size depending on the __RadRibbonGroup's__ size. The button will also never collapse to its __Medium__ size and will collapse to its __Small__ size when the __RadRibbonGroup__ collapses to __Medium__.
+![](images/RibbonView_Buttons_ToggleButton.png)
 
 ## Handling Changes in the the Button's Checked State
 
@@ -82,8 +82,7 @@ Besides the __Click__ event, the __RadRibbonToggleButton__ control exposes two a
 
 
 
->tipTo learn how to handle ribbon bar button clicks take a look at the 
-        section from the [Buttons Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#HandlingButtonClicks) topic.
+>tipTo learn how to handle ribbon bar button clicks take a look at the section from the [Buttons Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#HandlingButtonClicks) topic.
 
 # See Also
 

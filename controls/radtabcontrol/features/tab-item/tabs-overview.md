@@ -19,27 +19,16 @@ __RadTabControl__ is a container for multiple tab items. Each tab item represent
 
 Here is a list of most important tab item features:
 
-* 
-						The appearance of a tab items can be changed using either
-						[styling](02D713F5-8D1E-488F-A1F7-5164A5994BD8#ItemContainerStyle_Property) or [templates]({%slug radtabcontrol-templating-overview%}). You can set the specific templates using the properties 
-						[ControlTemplate](B96B3919-5054-49FD-86BD-28DAF1B0DCD7#ChangeControlTemplate), 
-						[HeaderTemplate](B96B3919-5054-49FD-86BD-28DAF1B0DCD7#SettingHeaderTemplate) or
-						[ContentTemplate](B96B3919-5054-49FD-86BD-28DAF1B0DCD7#SettingContentTemplate).
+* The appearance of a tab items can be changed using either [styling](02D713F5-8D1E-488F-A1F7-5164A5994BD8#ItemContainerStyle_Property) or [templates]({%slug radtabcontrol-templating-overview%}). You can set the specific templates using the properties [ControlTemplate](B96B3919-5054-49FD-86BD-28DAF1B0DCD7#ChangeControlTemplate), [HeaderTemplate](B96B3919-5054-49FD-86BD-28DAF1B0DCD7#SettingHeaderTemplate) or [ContentTemplate](B96B3919-5054-49FD-86BD-28DAF1B0DCD7#SettingContentTemplate).
 					
 
-* [Populate]({%slug radtabcontrol-populating-with-tabs%}) your tab control with tab items using one of the following approaches 
-						[declaratively](3859445F-543F-4DAE-B6B1-C051D166419A#Adding_And_Removing_Tabs_Declaratively),
-						[programmatically](3859445F-543F-4DAE-B6B1-C051D166419A#Adding_And_Removing_Tabs_Programmatically), 
-						using [data binding]({%slug radtabcontrol-populating-data-binding%}) or 
-						[using Blend](5CF866DE-453C-48CF-A4EB-2A4F717AD728#AddNewTabItem).
+* [Populate]({%slug radtabcontrol-populating-with-tabs%}) your tab control with tab items using one of the following approaches [declaratively](3859445F-543F-4DAE-B6B1-C051D166419A#Adding_And_Removing_Tabs_Declaratively), [programmatically](3859445F-543F-4DAE-B6B1-C051D166419A#Adding_And_Removing_Tabs_Programmatically), using [data binding]({%slug radtabcontrol-populating-data-binding%}) or [using Blend](5CF866DE-453C-48CF-A4EB-2A4F717AD728#AddNewTabItem).
 					
 
-* 
-						Control the way the tab strip is positioned using the __RadTabControl__ property __TabStripPosition__ as shown [here]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%}).
+* Control the way the tab strip is positioned using the __RadTabControl__ property __TabStripPosition__ as shown [here]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%}).
 					
 
-* 
-						Control the way the tab items are oriented using the __RadTabControl__ property __TabOrientation__ as shown [here]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%}).
+* Control the way the tab items are oriented using the __RadTabControl__ property __TabOrientation__ as shown [here]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%}).
 					
 
 # See Also

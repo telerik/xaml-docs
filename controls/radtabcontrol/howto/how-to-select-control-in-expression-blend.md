@@ -14,12 +14,9 @@ position: 7
 
 ## 
 
-To select control click__Selection____(__in the Toolbox, and then select the control on the artboard. You may have to click 
-        the object several times if its parent container is not already activated. Double-clicking an object on the artboard when you are 
-        using the Selection tool, activates the object's parent container.
+To select control click__Selection__ (in the Toolbox, and then select the control on the artboard. You may have to click the object several times if its parent container is not already activated. Double-clicking an object on the artboard when you are using the Selection tool, activates the object's parent container.
 
-The other way to select a control is to click it in the __Interaction__ panel under
-        __Objects and Timeline__.
+The other way to select a control is to click it in the __Interaction__ panel under __Objects and Timeline__.
 
 # See Also
 

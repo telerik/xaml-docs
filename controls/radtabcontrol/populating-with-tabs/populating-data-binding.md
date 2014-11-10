@@ -95,7 +95,7 @@ When no __ItemTemplate__ is defined the __DisplayMemberPath__ is used to determi
 
 
 
->If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the tab would be set to the value returned by the__ToString()__ method.
+>If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the tab would be set to the value returned by the __ToString()__ method.
 					
 
 # See Also

@@ -19,18 +19,13 @@ position: 0
 Thank you for choosing Telerik __RadTabControl__!
 				
 
-__RadTabControl__ is a flexible navigation component, used to build
-					tabbed interfaces in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} applications. Thanks to the related 
-					__RadTabItem__ control, you can organize your controls into different
-					content pages, thus improving the overall user experience (UX) of your applications.
+__RadTabControl__ is a flexible navigation component, used to build tabbed interfaces in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} applications. Thanks to the related __RadTabItem__ control, you can organize your controls into different content pages, thus improving the overall user experience (UX) of your applications.
 				
 
 __RabTabControl__ is part of the powerful Telerik navigation controls framework, which includes such controls as [RadToolBar](http://www.telerik.com/help/silverlight/radtoolbar-overview.html), [RadTreeView](http://www.telerik.com/help/silverlight/radtreeview-overview.html), [RadPanelBar](http://www.telerik.com/help/silverlight/radpanelbar-overview.html), [RadWindow](http://www.telerik.com/help/silverlight/radwindow-getting-started.html), [RadMenu](http://www.telerik.com/help/silverlight/radmenu-overview.html), [RadCube](http://www.telerik.com/help/silverlight/radcube-overview.html) and more.
 				
 
-As every RadControl for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}, 
-					__RadTabControl__ comes with a set of pre-defined themes or you can design your own templates for a completely custom look using
-					Expression Blend.
+As every RadControl for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %},  __RadTabControl__ comes with a set of pre-defined themes or you can design your own templates for a completely custom look using Expression Blend.
 				
 
 ![](images/RadTabControl_Overview_020.png)
@@ -60,8 +55,7 @@ __RadTabControl__ key features list:
 
 A complete list with all key features can be found [here]({%slug radtabcontrol-key-features%})
 
-Check out the online demo at:
-					{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#TabControl/FirstLook](http://demos.telerik.com/silverlight/#TabControl/FirstLook){% endif %}{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
+Check out the online demo at: {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#TabControl/FirstLook](http://demos.telerik.com/silverlight/#TabControl/FirstLook){% endif %}{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
 
 # See Also
 

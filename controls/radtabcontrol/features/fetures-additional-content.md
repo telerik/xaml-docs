@@ -37,6 +37,6 @@ The __RadTabControl__ exposes an __AdditionalContent__ property of type object. 
 		  
 
 The final result looks like this:
-	  ![radtabcontrol features additional-content](images/radtabcontrol_features_additional-content.png)
+![radtabcontrol features additional-content](images/radtabcontrol_features_additional-content.png)
 
 # See Also

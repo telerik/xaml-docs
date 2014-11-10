@@ -77,8 +77,7 @@ Setting the __IsMinimizable__ property to __False__ will disable the __Minimizat
 
 ## Setting the IsMinimized property
 
-The __IsMinimized__ property allows you to manually control the state of the __RadOutlookBar__. When set to the __RadOutlookBar__ 
-        is minimized:
+The __IsMinimized__ property allows you to manually control the state of the __RadOutlookBar__. When set to the __RadOutlookBar__ is minimized:
 
 #### __XAML__
 
@@ -107,7 +106,7 @@ The __IsMinimized__ property allows you to manually control the state of the __R
 
 ##  Setting the MinimizedWidth property
 
-The default value of the __MinimizedWidth__property is 30. However, you can change that size to better fit your scenario:
+The default value of the __MinimizedWidth__ property is 30. However, you can change that size to better fit your scenario:
 
 #### __XAML__
 

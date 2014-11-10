@@ -13,13 +13,12 @@ site_name: WPF
 
 
 
-The __RadRibbonView____ContextualTabs__ are of type __RadRibbonTab__ and they can be styled by creating an appropriate __Style__ and setting it to the __RadRibbonView.ContextualTabsStyle__ property.
+The __RadRibbonView__ __ContextualTabs__ are of type __RadRibbonTab__ and they can be styled by creating an appropriate __Style__ and setting it to the __RadRibbonView.ContextualTabsStyle__ property.
 			
 
 You have two options:
 
-* 
-					To create an empty style and set it up on your own.
+* To create an empty style and set it up on your own.
 				
 
 * To copy the default style of the control and modify it. 
@@ -29,12 +28,13 @@ This topic will show you how to perform the second one.
 ## Modifying the Default Style
 
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonView__ whose __ContextualTabs__ you want to style.
-				![](images/RibbonView_Styling_ContextualTabs_Locate.png)
+![](images/RibbonView_Styling_ContextualTabs_Locate.png)
 
 From the menu choose *Object -> Edit Additional Templates -> Edit ContextualTabsStyle -> Edit a Copy*.
-				![](images/RibbonView_Styling_ContextualTabs_EditStyle.png)
+![](images/RibbonView_Styling_ContextualTabs_EditStyle.png)
 
-You will be prompted for the name of the style and where to be placed.![](images/RibbonView_Styling_ContextualTabs_CreateStyle.png)
+You will be prompted for the name of the style and where to be placed.
+![](images/RibbonView_Styling_ContextualTabs_CreateStyle.png)
 
 >If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -42,7 +42,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 				
 
 In the 'Objects and Timeline' pane the element parts for the __ContextualTab's__ template will get loaded.
-				![](images/RibbonView_Styling_ContextualTabs_ControlTemplate.png)
+![](images/RibbonView_Styling_ContextualTabs_ControlTemplate.png)
 
 * __RootPanel__ - a __Grid__ control that represents the main layout control in the __ContextualTab's__ template.
 						
@@ -78,6 +78,5 @@ In the 'Objects and Timeline' pane the element parts for the __ContextualTab's__
 
 * __[ItemsPresenter]__ - an __ItemsPresenter__ control used to display the __ContextualTab.Content__
 
->tip
-					If you want to modify the default style of the __RibbonScrollViewer__ control, you can follow the approach described in [this article]({%slug radribbonview-styling-ribbonscrollviewer%}).
+>tipIf you want to modify the default style of the __RibbonScrollViewer__ control, you can follow the approach described in [this article]({%slug radribbonview-styling-ribbonscrollviewer%}).
 				

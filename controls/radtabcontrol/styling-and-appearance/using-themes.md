@@ -20,16 +20,12 @@ __RadTabControl__ uses themes to control the overall look-and-feel of the contro
 				
 
 __RadTabControl__ comes with a number of predefined themes as part of the __RadControls__:
-			
-
-
-									 __Summer__![](images/RadTabControl_Figure_00260.png)
-
-
-										 __Office Black__![](images/RadTabControl_Figure_00270.png)
-
-
-								 __Vista__![](images/RadTabControl_Figure_00280.png)
+__Summer__
+![](images/RadTabControl_Figure_00260.png)
+__Office Black__
+![](images/RadTabControl_Figure_00270.png)
+ __Vista__
+![](images/RadTabControl_Figure_00280.png)
 
 ## Using the Default Theme
 
@@ -77,7 +73,7 @@ or declare it as a static resource in the UserControl’s resources or the Appli
 
 >tipDeclaring the theme in the Application’s resources (App.xaml) makes it reusable everywhere in the application, while the theme declared in the UserControl’s resources is only available for the particular UserControl.
 
-In the managed code we apply themes to controls by using the static __SetTheme()__ method of the __Style manager -____StyleManager.SetTheme(DependencyObject element, Theme value)__;
+In the managed code we apply themes to controls by using the static __SetTheme()__ method of the __Style manager__ - __StyleManager.SetTheme(DependencyObject element, Theme value)__;
 				
 
 #### __C#__
@@ -100,8 +96,7 @@ In the managed code we apply themes to controls by using the static __SetTheme()
 
 
 
->tip
-					By using the same approaches you can apply Telerik themes to the standard controls as well. Custom themes can also be created and applied via the __StyleManager__.
+>tipBy using the same approaches you can apply Telerik themes to the standard controls as well. Custom themes can also be created and applied via the __StyleManager__.
 				
 
 ## Applying a Theme to the Whole Application
@@ -143,28 +138,28 @@ or
 
 
 
->Applying a theme to the whole application will only affect the RadControls. If you want to apply the theme to the standard controls, you will have to set it to each of them using the __StyleManager____attached property__ or the __StyleManager____class__ in code-behind.
+>Applying a theme to the whole application will only affect the RadControls. If you want to apply the theme to the standard controls, you will have to set it to each of them using the __StyleManager__ __attached property__ or the __StyleManager__ __class__ in code-behind.
 					
 
 >tipYou have to set the application theme as early as possible. The most suitable locations are the __Application.Startup__ event or in the __UserControl’s constructor__:
 					
 
-	
-						private void Application_Startup( object sender, StartupEventArgs e )
-						{
-							new VistaTheme().IsApplicationTheme = true;
-							this.RootVisual = new Page();
-						}
+#### __C#__
+    private void Application_Startup( object sender, StartupEventArgs e )
+    {
+        new VistaTheme().IsApplicationTheme = true;
+        this.RootVisual = new Page();
+    }
 					
 
 
 
-	
-						Private Sub Application_Startup(ByVal o As Object, ByVal e As StartupEventArgs) Handles Me.Startup
-							Dim theme As New VistaTheme()
-							theme.IsApplicationTheme = True
-							Me.RootVisual = New MainPage()
-						End Sub
+#### __VB__
+    Private Sub Application_Startup(ByVal o As Object, ByVal e As StartupEventArgs) Handles Me.Startup
+        Dim theme As New VistaTheme()
+        theme.IsApplicationTheme = True
+        Me.RootVisual = New MainPage()
+    End Sub
 					
 
 

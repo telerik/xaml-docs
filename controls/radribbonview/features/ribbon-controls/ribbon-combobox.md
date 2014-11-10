@@ -15,17 +15,15 @@ position: 7
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ may consist of various elements, one of which is the __Ribbon ComboBox__. This topic discusses concepts fundamental to the __Ribbon ComboBox__ at first and then goes into the usage of the __RadRibbonComboBox__ class and its features.
 			
 
->tip
-				Before proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.
+>tipBefore proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.
 			
 
 ## Ribbon ComboBox - Fundamentals
 
-A __Ribbon ComboBox__ is very similar to the standard __RadComboBox__that ships with the Telerik RadControls. However, it is designed to be hosted on a ribbon control.
-				![](images/RadRibbonView_ComboBox_Overview.png)
+A __Ribbon ComboBox__ is very similar to the standard __RadComboBox__ that ships with the Telerik RadControls. However, it is designed to be hosted on a ribbon control.
+![](images/RadRibbonView_ComboBox_Overview.png)
 
->tip
-					The class that represents the Ribbon ComboBox is __Telerik.Windows.Controls.RadRibbonComboBox__.
+>tipThe class that represents the Ribbon ComboBox is __Telerik.Windows.Controls.RadRibbonComboBox__.
 				
 
 __RadRibbonComboBox__ derives directly from the __RadComboBox__. It is populated with instances of __RadRibbonComboBoxItem__.
@@ -72,7 +70,7 @@ Adding a __RadRibbonComboBox__ to a __RadRibbonGroup__ is an extremely simple pr
 
 ![](images/RadRibbonView_ComboBox_Sample.png)
 
-The __RadRibbonView__ is a complex control and the __Ribbon ComboBox__is only a small part of it. The __RadRibbonView__ consists of various elements such as:
+The __RadRibbonView__ is a complex control and the __Ribbon ComboBox__ is only a small part of it. The __RadRibbonView__ consists of various elements such as:
 				
 
 * [Application Menu]({%slug radribbonview-applicationmenu%})

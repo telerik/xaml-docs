@@ -12,7 +12,7 @@ position: 3
 
 
 
-This tutorial will walk you through the common tasks of [adding](#Adding_RadRatingItems) and [removing ](#Removing_RadRatingItems)__RadRatingItems__ programmatically.
+This tutorial will walk you through the common tasks of [adding](#Adding_RadRatingItems) and [removing ](#Removing_RadRatingItems) __RadRatingItems__ programmatically.
 			
 
 Here is a regular __RadRating__ declaration:
@@ -26,23 +26,22 @@ Here is a regular __RadRating__ declaration:
 	{{endregion}}
 
 
-			and __telerik__ points to: __<xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" />__![](images/rating_default.png)
+where __telerik__ points to: __<xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" />__
+
+![](images/rating_default.png)
 
 ## Adding RadRatingItems
 
 In order to add new rating items to a __RadRating__ control, you have to perform several simple steps:
 				
 
-* 
-						Create an instance of the __RadRatingItem__ class
+* Create an instance of the __RadRatingItem__ class
 					
 
-* 
-						Set its properties such as __Content__ if you need so
+* Set its properties such as __Content__ if you need so
 					
 
-* 
-						Add it to the __RadRating__'s __Items__ collection
+* Add it to the __RadRating__'s __Items__ collection
 					
 
 #### __C#__
@@ -64,24 +63,21 @@ In order to add new rating items to a __RadRating__ control, you have to perform
 
 
 The result is shown on the image below:
-					![](images/rating_wit_6_items.png)
+
+![](images/rating_wit_6_items.png)
 
 In order to clear the default rating items and add new you have to add one additional step to the previous:
 
-* 
-						Clear the __Items__ collection of the __RadRating__ control
+* Clear the __Items__ collection of the __RadRating__ control
 					
 
-* 
-						Create an instance of the __RadRatingItem__ class
+* Create an instance of the __RadRatingItem__ class
 					
 
-* 
-						Set its properties such as __Content__ if you need so
+* Set its properties such as __Content__ if you need so
 					
 
-* 
-						Add it to the __RadRating__'s __Items__ collection
+* Add it to the __RadRating__'s __Items__ collection
 					
 
 #### __C#__
@@ -113,7 +109,8 @@ In order to clear the default rating items and add new you have to add one addit
 
 
 The result is shown on the image below:
-					![](images/rating_with__2_items.png)
+
+![](images/rating_with__2_items.png)
 
 >tipConsider declaring rating items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 

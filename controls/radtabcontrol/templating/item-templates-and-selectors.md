@@ -21,18 +21,19 @@ The __ItemTemplate__ property is used to configure the template for the header o
 		
 
 Select the __RadTabControl__, which __ItemTemplate__ you want to set.
-		![](images/RadTabControl_Figure_00400.png)
+![](images/RadTabControl_Figure_00400.png)
 
 Right-click on it or right-click in the scene explorer and choose *Edit Additional Templates -> Edit Generated Items -> Create Empty*.
-		![](images/RadTabControl_Figure_00410.png)
+![](images/RadTabControl_Figure_00410.png)
 
-Choose a name for the data template and where to be defined in:![](images/RadTabControl_Figure_00420.png)
+Choose a name for the data template and where to be defined in:
+![](images/RadTabControl_Figure_00420.png)
 
 >tipDefining the template in the Application section makes it reusable from everywhere in the application.
 		  
 
 Drag and drop the controls you need for the template and configure their properties. In the example are used an __Image__ and a __TextBlock__ controls:
-		![](images/RadTabControl_Figure_00430.png)
+![](images/RadTabControl_Figure_00430.png)
 
 #### __XAML__
 
@@ -52,19 +53,19 @@ Drag and drop the controls you need for the template and configure their propert
 
 
 To configure the binding for the __Source__ property of the __Image control__, select it in the “*Object and Timeline*” pane.
-		![](images/RadTabControl_Figure_00440.png)
+![](images/RadTabControl_Figure_00440.png)
 
 Go to the “*Properties*” pane and find the __Source__ property in the 'Common properties' section.
-		![](images/RadTabControl_Figure_00450.png)
+![](images/RadTabControl_Figure_00450.png)
 
 Click the empty square right of it to open the context menu for the property and choose __DataBinding__ to open the "*Create Data Binding*" dialog.
-		![](images/RadTabControl_Figure_00460.png)
+![](images/RadTabControl_Figure_00460.png)
 
 >tipIf you are familiar with the binding syntax you can also choose __Custom Expression__ and manually write the binding.
 		  
 
 In the "*Create Data Binding*" dialog choose the __Explicit DataContext__ tab and check the __Use custom path expression__ box. In the field write the name of the property you want to bind to. Click "*Finish*".
-		![](images/RadTabControl_Figure_00470.png)
+![](images/RadTabControl_Figure_00470.png)
 
 Do the same for the __Text__ property of the __TextBlock__.
 		
@@ -96,7 +97,7 @@ You can also define the bindings manually in XAML:
 
 
 When you start the application with configured __ItemsSource__ ([read more here]({%slug radtabcontrol-populating-binding-to-collection%})) you should see a similar result:
-		![](images/RadTabControl__ItemTemplate.png)
+![](images/RadTabControl__ItemTemplate.png)
 
 >tipAlthough it is clearer when defining the __DataTemplate__ in the control, it’s a good practice to place it within the resources, in case you want to reuse it later.
 		  
@@ -268,14 +269,11 @@ Override the __SelectTemplate__ method and implement your custom logic in it. Th
 
 >tipYou can define your __DataTemplates__ in the Application’s resources (__App.xaml__), so you can easily access them  from the __ItemSelector:__
 
-	
-			  DataTemplate dataTemplate = ( DataTemplate )Application.Current.Resources[ "DataTemplateKey" ];
+#### __C#__
+    DataTemplate dataTemplate = ( DataTemplate )Application.Current.Resources[ "DataTemplateKey" ];
 		  
-
-
-
-	
-			Dim dataTemplate As DataTemplate = DirectCast(Application.Current.Resources("DataTemplateKey"), DataTemplate)
+#### __VB__
+    Dim dataTemplate As DataTemplate = DirectCast(Application.Current.Resources("DataTemplateKey"), DataTemplate)
 		  
 
 

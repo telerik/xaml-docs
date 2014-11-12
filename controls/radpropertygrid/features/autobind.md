@@ -18,12 +18,7 @@ DataTemplate reusing techniques – AutoBind attached behavior
 
 The need of reusable DataTemplates is a common scenario with quite few universal viable solutions. The AutoBind attached behavior enables RadPropertyGrid to use a single DataTemplate resource as an EditorTemplate value for multiple PropertyDefinitions without any additional effort on the users’ side.
 
-{% if site.site_name == 'Silverlight' %}[Here](
-                http://www.telerik.com/help/silverlight/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html
-              ){% endif %}{% if site.site_name == 'WPF' %}[Here](
-                http://www.telerik.com/help/wpf/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html
-              ){% endif %}
-          is the API reference for the AutoBindBehaviour.
+{% if site.site_name == 'Silverlight' %}[Here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html){% endif %}{% if site.site_name == 'WPF' %}[Here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html){% endif %}is the API reference for the AutoBindBehaviour.
         
 
 Here is a small example with RadPropertyGrid that has its Item property bound to a Button:
@@ -31,7 +26,7 @@ Here is a small example with RadPropertyGrid that has its Item property bound to
 
 #### __XAML__
 
-{{region radpropertygrid-autobind_0}}
+	{{region radpropertygrid-autobind_0}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	        <Grid.Resources>
 	            <DataTemplate x:Key="editorTemplate">
@@ -68,9 +63,6 @@ TwoWay binding with the AutoBindBehavior is supported for the following types:
 * Primitive types
             
 
-* Enum
-            
-
 * String
             
 
@@ -83,7 +75,13 @@ TwoWay binding with the AutoBindBehavior is supported for the following types:
 * DateTime
             
 
+* Enum
+            
+
 * Color
+            
+
+* TimeSpan
             
 
 ## How does it work?
@@ -94,5 +92,7 @@ AutoBind behavior would work with any type of FrameworkElements that are parts o
           
 
 # See Also
+
+ * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})
 
  * [DataTemplateSelector]({%slug radpropertygrid-datatemplateselector%})

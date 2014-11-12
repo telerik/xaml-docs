@@ -17,7 +17,6 @@ position: 6
 RadPropertyGrid now supports editing bit flag enum by exposing a new editor – __FlagEnumEditor__. It enables the user to store any combination of the values that are defined in the enumerator list:
 
 
-
 ![Rad Property Grid Flag Enum Editor 5](images/RadPropertyGrid_FlagEnumEditor_5.png)
 
 You can define flag enum by setting __FlagsAttribute__ as follows:
@@ -27,7 +26,7 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 
 #### __C#__
 
-{{region radpropertygrid-flagenumeditor_0}}
+	{{region radpropertygrid-flagenumeditor_0}}
 	[Flags]
 	public enum Permissions
 		{
@@ -42,7 +41,7 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 
 #### __VB__
 
-{{region radpropertygrid-flagenumeditor_1}}
+	{{region radpropertygrid-flagenumeditor_1}}
 	    <Flags()> _
 	    Public Enum Permissions
 	        Read = 1
@@ -72,14 +71,10 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 Each element should contain name and a value (which should be degree of 2 – 1, 2, 4, 8, 16, etc.).
         
 
->You can find more information about enum and flag enum in
-              [this article](
-                  http://msdn.microsoft.com/en-us/library/cc138362.aspx
-                ).
+>You can find more information about enum and flag enum in [this article](http://msdn.microsoft.com/en-us/library/cc138362.aspx).
             
 
-Once you define your flag enum, you can edit it in __RadPropertyGrid__ as follows:
-        
+Once you define your flag enum, you can edit it in __RadPropertyGrid__ as follows:       
 
 
 
@@ -92,7 +87,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 #### __C#__
 
-{{region radpropertygrid-flagenumeditor_2}}
+	{{region radpropertygrid-flagenumeditor_2}}
 	namespace RPG_WPF
 	{
 	    [Flags]
@@ -111,7 +106,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 #### __VB__
 
-{{region radpropertygrid-flagenumeditor_3}}
+	{{region radpropertygrid-flagenumeditor_3}}
 	Namespace RPG_WPF
 	        <Flags()> _
 	        Public Enum Permissions
@@ -136,7 +131,7 @@ You can manually define your __FlagEnumEditor__ in the __XAML__, like so:
 
 #### __XAML__
 
-{{region radpropertygrid-flagenumeditor_5}}
+	{{region radpropertygrid-flagenumeditor_5}}
 	     xmlns:my="clr-namespace:RPG_WPF"
 	{{endregion}}
 
@@ -144,7 +139,7 @@ You can manually define your __FlagEnumEditor__ in the __XAML__, like so:
 
 #### __XAML__
 
-{{region radpropertygrid-flagenumeditor_4}}
+	{{region radpropertygrid-flagenumeditor_4}}
 	<telerik:PropertyDefinition Binding="{Binding Permission}"> 
 	                        <telerik:PropertyDefinition.EditorTemplate> 
 	                            <DataTemplate> 
@@ -157,9 +152,8 @@ You can manually define your __FlagEnumEditor__ in the __XAML__, like so:
 
 
 Thus your __FlagEnumEditor__ will look like:
+
         
-
-
 
 ![Rad Property Grid Flag Enum Editor 3](images/RadPropertyGrid_FlagEnumEditor_3.png)
 

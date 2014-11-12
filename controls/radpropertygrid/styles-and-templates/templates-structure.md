@@ -88,70 +88,58 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 * __[Border]__ - represents the inner border and the background of the row, when the mouse is over it and is of type Border.
 
 
-
-
-
-
-         
-      ![](images/RadPropertyGrid_PropertyGridFieldTemplate.png)
+ ![](images/RadPropertyGrid_PropertyGridFieldTemplate.png)
 
 
 
 ## Modifying RadPropertyGrid Template
 
-When extracting the control template with MS Blend (as demonstrated in this  [ common article ]({%slug common-styling-appearance-edit-control-templates-blend%})) some dependency properties of controls that are defined in DataTemplates, does not have their values extracted correctly.
-          You have two options:
+When extracting the control template with MS Blend (as demonstrated in this  [ common article ](DEFFEE22-110A-407B-94C3-61A49AC7F8B2)) some dependency properties of controls that are defined in DataTemplates, does not have their values extracted correctly. You have two options:
         
 
-1. Manually extract the template template from the Themes files we ship with every installation. You can find it together with all the other templates used for the PropertyGrid inside "Telerik.Windows.Controls.Data.xaml" file browsing to "InstallationFolder\Themes\OfficeBlack\Themes" folder.
+* Manually extract the template template from the Themes files we ship with every installation. You can find it together with all the other templates used for the PropertyGrid inside "Telerik.Windows.Controls.Data.xaml" file browsing to "InstallationFolder\Themes\OfficeBlack\Themes" folder.
             
 
-1. Extract the template with Blend and manually add the missing __ItemsSource Bindings__ for the ItemsControl defined for the four templates.
+*  Extract the template with Blend and manually add the missing __ItemsSource Bindings__ for the ItemsControl defined for the four templates.
                 You can find instructions on how to fix the missing Bindings bellow:
               
 
-1. Under __FlatRenderingTemplate__:
+*  Under __FlatRenderingTemplate__:
                    
 
 #### __XAML__
 
-{{region radpropertygrid-styles-and-templates-templates-structure_0}}
+	{{region radpropertygrid-styles-and-templates-templates-structure_0}}
 	<telerik:ItemsControl ItemsSource="{Binding}" VirtualizingStackPanel.VirtualizationMode="Standard" IsTabStop="False">
 	{{endregion}}
 
-
-
-1. Under __FlatTemplate__:
+*   Under __FlatTemplate__:
                   
 
 #### __XAML__
 
-{{region radpropertygrid-styles-and-templates-templates-structure_1}}
+	{{region radpropertygrid-styles-and-templates-templates-structure_1}}
 	<ItemsControl ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}" IsTabStop="False">
 	{{endregion}}
 
 
 
-1. Under __GroupTemplate__:
+*  Under __GroupTemplate__:
                     
 
 #### __XAML__
 
-{{region radpropertygrid-styles-and-templates-templates-structure_2}}
+	{{region radpropertygrid-styles-and-templates-templates-structure_2}}
 	<ItemsControl ItemsSource="{Binding ., Converter={StaticResource GroupingItemsSourceConverter}}">
 	{{endregion}}
 
 
 
-1. Under __VirtualizedFlatTemplate__:
+*  Under __VirtualizedFlatTemplate__:
                   
 
 #### __XAML__
 
-{{region radpropertygrid-styles-and-templates-templates-structure_3}}
+	{{region radpropertygrid-styles-and-templates-templates-structure_3}}
 	<ItemsControl ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}" VirtualizingStackPanel.VirtualizationMode="Standard" IsTabStop="False">
 	{{endregion}}
-
-
-
-

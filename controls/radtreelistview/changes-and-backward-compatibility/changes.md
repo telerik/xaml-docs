@@ -14,365 +14,275 @@ position: 0
 
 ## Latest Release Notes
 
-You can check the latest Release Notes
-          {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
+You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
-## 
-        Q2 2014
-      
+##  Q2 2014
+### What's New      
 
-* 
-            Added: TreeListView Connecting Lines. For more information, you can check the [Connecting Lines]({%slug radtreelistview-features-treelines%}) article.
+*	TreeListView Connecting Lines. For more information, you can check the [Connecting Lines]({%slug radtreelistview-features-treelines%}) article.
+
+### What's Fixed          
+
+*	Wrong indentation of the new row.
           
 
-* 
-            Fixed: Wrong indentation of the new row.
+*	Checkbox editors in all types of GridView columns jump to the left in edit mode.
           
 
-* 
-            Fixed: Checkbox editors in all types of GridView columns jump to the left in edit mode.
+*  The AutomationControlType of RadTreeListViewAutomationPeer is updated to DataGrid.
           
 
-* 
-            Fixed: The AutomationControlType of RadTreeListViewAutomationPeer is updated to DataGrid.
+*  Output errors when AutoExpandItems is bound to IsChecked of an external checkbox.
           
 
-* 
-            Fixed: Output errors when AutoExpandItems is bound to IsChecked of an external checkbox.
+*  TreeListViewRowCoreValidationStyle is throwing design time exception in Office2013 theme.
           
 
-* 
-            Fixed: TreeListViewRowCoreValidationStyle is throwing design time exception in Office2013 theme.
-          
+## Q1 2014
+### What's New       
 
-## 
-        Q1 2014
-      
-
-* 
-              Added (Q3 2013 SP1): Design for invalid-edit mode state of the new row.
+*  Added (Q3 2013 SP1): Design for invalid-edit mode state of the new row.
             
 
-* 
-              Added (Q3 2013 SP1): All editors are now stretched relative to its parent row height.
+*  Added (Q3 2013 SP1): All editors are now stretched relative to its parent row height.
             
 
-* 
-              Added (Q3 2013 SP1): Lightweight templates visual optimizations.
+*  Added (Q3 2013 SP1): Lightweight templates visual optimization.
+       
+### What's Fixed     
+
+*  Cannot drop on last item in TreeListView.
             
 
-* 
-              Fixed: Cannot drop on last item in TreeListView.
+*  GridViewToggleButton's Foreground in RadTreeListView is not correct in Windows8 theme.
             
 
-* 
-              Fixed: GridViewToggleButton's Foreground in RadTreeListView is not correct in Windows8 theme.
+##  Q3 2013      
+
+You can check the  Release Notes for __Q3 2013__ {% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q3-2013-version-2013-3-1016-432255941.aspx#treelistview){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q3-2013-version-2013-3-1016-2120428450.aspx#treelistview){% endif %}
+
+## Q2 2013      
+
+You can check the  Release Notes for __Q2 2013__ {% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q2-2013-version-2013-2-0611-3259441291.aspx#treelistview){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q2-2013-version-2013-2-0611.aspx#treelistview){% endif %}
+
+## Q1 2013      
+
+You can check the Release Notes for __Q1 2013__ {% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q1-2013-version-2013-1-0220-963710774.aspx#treelistview){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q1-2013-version-2013-1-0220.aspx#treelistview){% endif %}
+
+##  Q3 2012       
+### What's New
             
 
-## 
-        Q3 2013
-      
-
-You can check the  Release Notes for __Q3 2013__{% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q3-2013-version-2013-3-1016-432255941.aspx#treelistview){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q3-2013-version-2013-3-1016-2120428450.aspx#treelistview){% endif %}
-
-## 
-        Q2 2013
-      
-
-You can check the  Release Notes for __Q2 2013__{% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q2-2013-version-2013-2-0611-3259441291.aspx#treelistview){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q2-2013-version-2013-2-0611.aspx#treelistview){% endif %}
-
-## 
-        Q1 2013
-      
-
-You can check the Release Notes for __Q1 2013__{% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q1-2013-version-2013-1-0220-963710774.aspx#treelistview){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q1-2013-version-2013-1-0220.aspx#treelistview){% endif %}
-
-## 
-        Q3 2012 
-      
-              What's New
+*  __Virtualization__ for merged headers. Improved initial load time and scrolling performance.
+                
+### What's Fixed
             
 
-* 
-                  Added: __Virtualization__ for merged headers. Improved initial load time and scrolling performance.
+*  __RadTreeListView__ will not expand child items properly with alternation and load on demand. __ParentRow__ also now properly initialized.
                 
-              What's Fixed
+
+*  __NullRefException__ on pasting to an empty __GridViewDataControl__.
+                
+
+*  __IsExpandable__ not applied correctly with __AlternateRowStyle__ and __AlternateRowStyleSelector__.
+                
+
+*  Exception when dynamically adding a column group that does not have a matching column.
+                
+
+*  Issues when using __MaskedInput__ controls in __CellEditTemplates__.
+                
+
+*  Aggregate function applied twice in the __Column Footer__ when a function is reused for more than one column.
+                
+
+*  When bound to __CollectionViewSource__ all cells in a combo box column displayed the same values after edit (in a theme different than ***Office_Black***)
+                
+
+*  Scrolling orientation of common headers was not correctly set for the virtualized items.
+                
+
+*  When a column's custom __FilteringControl__ is replaced with a new one at runtime, a reference to the old one remains which leads to incorrect behavior.
+                
+
+*  Validation issue when __ValidatesOnDataErrors__ is set to "__InViewMode__".
+                
+
+*  __Focus__ issue with __TextBox__ in __CellTemplate__ and theme is different from __Office_Black e.NewValue__ inside __CellValidating__ event args is not set properly when fast scrolling is performed (via __KeyDown__).
+                
+
+*  __Current cell__ scrolled horizontally in certain situations, even when under frozen column.
+                
+
+*  Expand button clipping with different row height.
+                
+
+*  __System.ArgumentNullException__ with underscores in distinct values.
+                
+
+*  Common column headers were partially rendered for columns of the viewport in (after scrolling into view)
+                
+
+## Q2 2012 SP2
+### What's Fixed
             
 
-* 
-                  Fixed: __RadTreeListView__ will not expand child items properly with alternation and load on demand. __ParentRow__ also now properly initialized.
+*   __NullRefException__ on pasting to an empty  __GridViewDataControl__
+
+*   __RadTreeListView__ will not expand child items properly with alternation and load on demand.  __ParentRow__ also now properly initialized.
                 
 
-* 
-                  Fixed: __NullRefException__ on pasting to an empty __GridViewDataControl__.
+*   __IsExpandable__ not applied correctly with  __AlternateRowStyle__ and  __AlternateRowStyleSelector__.
                 
 
-* 
-                  Fixed: __IsExpandable__ not applied correctly with __AlternateRowStyle__ and __AlternateRowStyleSelector__.
+*  Exception when dynamically adding a column group that does not have a matching column.
                 
 
-* 
-                  Fixed: Exception when dynamically adding a column group that does not have a matching column.
+*  Issues when using  __MaskedInput__ controls in  __CellEditTemplates__.
                 
 
-* 
-                  Fixed: Issues when using __MaskedInput__ controls in __CellEditTemplates__.
+*  Aggregate function applied twice in the  __Column Footer__ when a function is reused for more than one column.
                 
 
-* 
-                  Fixed: Aggregate function applied twice in the __Column Footer__ when a function is reused for more than one column.
+*  When bound to  __CollectionViewSource__ all cells in a combo box column displayed the same values after edit (in a theme different than Office_Black)
                 
 
-* 
-                  Fixed: When bound to __CollectionViewSource__ all cells in a combo box column displayed the same values after edit (in a theme different than __Office_Black__)
+*  Scrolling orientation of common headers was not correctly set for the virtualized items.
                 
 
-* 
-                  Fixed: Scrolling orientation of common headers was not correctly set for the virtualized items.
+*  When a column's custom  __FilteringControl__ is replaced with a new one at runtime, a reference to the old one remains which leads to incorrect behavior.
                 
 
-* 
-                  Fixed: When a column's custom __FilteringControl__ is replaced with a new one at runtime, a reference to the old one remains which leads to incorrect behavior.
+*  Validation issue when  __ValidatesOnDataErrors__ is set to " __InViewMode__".
                 
 
-* 
-                  Fixed: Validation issue when __ValidatesOnDataErrors__ is set to "__InViewMode__".
+*  Focus issue with  __TextBox__ in  __CellTemplate__ and theme is different from  __Office_Black__ e.NewValue inside  __CellValidating__ event args is not set properly when fast scrolling is performed (via  __KeyDown__).
                 
 
-* 
-                  Fixed: __Focus__ issue with __TextBox__ in __CellTemplate__ and theme is different from __Office_Black e.NewValue__ inside __CellValidating__ event args is not set properly when fast scrolling is performed (via __KeyDown__).
+*  Current cell scrolled horizontally in certain situations, even when under frozen column.
                 
 
-* 
-                  Fixed: __Current cell__ scrolled horizontally in certain situations, even when under frozen column.
+*  Expand button clipping with different row height.
                 
 
-* 
-                  Fixed: Expand button clipping with different row height.
+*   __System.ArgumentNullException__ with underscores in distinct values.
                 
 
-* 
-                  Fixed: __System.ArgumentNullException__ with underscores in distinct values.
+*  Common column headers were partially rendered for columns of the viewport in (after scrolling into view).
                 
 
-* 
-                  Fixed: Common column headers were partially rendered for columns of the viewport in (after scrolling into view)
-                
-
-## 
-        Q2 2012 SP2
-      
-              What's Fixed
+## Q2 2012 SP1
+### What's New
             
 
-* 
-                  Fixed:  __NullRefException__ on pasting to an empty  __GridViewDataControl__
-
-* 
-                  Fixed:  __RadTreeListView__ will not expand child items properly with alternation and load on demand.  __ParentRow__ also now properly initialized.
+*  __Virtualization__ for merged headers
                 
-
-* 
-                  Fixed:  __IsExpandable__ not applied correctly with  __AlternateRowStyle__ and  __AlternateRowStyleSelector__.
-                
-
-* 
-                  Fixed: Exception when dynamically adding a column group that does not have a matching column.
-                
-
-* 
-                  Fixed: Issues when using  __MaskedInput__ controls in  __CellEditTemplates__.
-                
-
-* 
-                  Fixed: Aggregate function applied twice in the  __Column Footer__ when a function is reused for more than one column.
-                
-
-* 
-                  Fixed: When bound to  __CollectionViewSource__ all cells in a combo box column displayed the same values after edit (in a theme different than Office_Black)
-                
-
-* 
-                  Fixed: Scrolling orientation of common headers was not correctly set for the virtualized items.
-                
-
-* 
-                  Fixed: When a column's custom  __FilteringControl__ is replaced with a new one at runtime, a reference to the old one remains which leads to incorrect behavior.
-                
-
-* 
-                  Fixed: Validation issue when  __ValidatesOnDataErrors__ is set to " __InViewMode__".
-                
-
-* 
-                  Fixed: Focus issue with  __TextBox__ in  __CellTemplate__ and theme is different from  __Office_Black__ e.NewValue inside  __CellValidating__ event args is not set properly when fast scrolling is performed (via  __KeyDown__).
-                
-
-* 
-                  Fixed: Current cell scrolled horizontally in certain situations, even when under frozen column.
-                
-
-* 
-                  Fixed: Expand button clipping with different row height.
-                
-
-* 
-                  Fixed:  __System.ArgumentNullException__ with underscores in distinct values.
-                
-
-* 
-                  Fixed: Common column headers were partially rendered for columns of the viewport in (after scrolling into view).
-                
-
-## 
-       Q2 2012 SP1
-      
-              What's New
+### What's Fixed
             
 
-* 
-                  Added: __Virtualization__ for merged headers
+*  Memory leak fix for __DoubleClick__ event
                 
-              What's Fixed
+
+*  __TreeListViewDragCue____VisualStates__ not changing is now fixed
+                
+
+*  Exception on theme change with custom __Header__/__Footer__ is now fixed
+                
+
+*  __SelectedItem__ binding does not work at first time (when set before __RadGridView.DataLoad__) is now fixed
+                
+
+*  __SelectedUnfocusedState__ improved for all themes
+                
+
+*  Improved initial load time and scrolling performance
+                
+
+*  Wrong selection state combining actions __select item__, __unfocus grid__, __scroll grid__
+
+*  Positioning of the __BetweenItems____Cue__ with rows with different height is now fixed
+                
+
+## Q2 2012
+### What's New
             
 
-* 
-                  Fixed: Memory leak fix for __DoubleClick__ event
+*  Delete key behavior with  __RadGridView.SelectionUnit = "Cell"__ improved.
                 
 
-* 
-                  Fixed: __TreeListViewDragCue____VisualStates__ not changing is now fixed
+* __GridViewRow____SelectedUnfocused__ state
                 
 
-* 
-                  Fixed: Exception on theme change with custom __Header__/__Footer__ is now fixed
+* Validation improvement to support better various validation scenarios.
                 
 
-* 
-                  Fixed: __SelectedItem__ binding does not work at first time (when set before __RadGridView.DataLoad__) is now fixed
-                
-
-* 
-                  Fixed: __SelectedUnfocusedState__ improved for all themes
-                
-
-* 
-                  Fixed: Improved initial load time and scrolling performance
-                
-
-* 
-                  Fixed: Wrong selection state combining actions __select item__, __unfocus grid__, __scroll grid__
-
-* 
-                  Fixed: Positioning of the __BetweenItems____Cue__ with rows with different height is now fixed
-                
-
-## 
-        Q2 2012
-      
-              What's New
-            
-
-* 
-                  Delete key behavior with  __RadGridView.SelectionUnit = "Cell"__ improved.
-                
-
-* 
-                  Added:  __GridViewRow____SelectedUnfocused__ state
-                
-
-* 
-                  Validation improvement to support better various validation scenarios.
-                
-
-* 
-                  Expand/collapse performance optimized.
+* Expand/collapse performance optimized.
                 
 
 * __Frozen column splitter__ behavior improved.
                 
 
-* 
-                  Added: __TimeSpan__ property filtering support
+*  __TimeSpan__ property filtering support
                 
 
 * __Aggregates__ fixed to work hierarchically.
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: __Frozen column splitter__ not correctly positioned in Metro theme is now fixed.
+*  __Frozen column splitter__ not correctly positioned in Metro theme is now fixed.
                 
 
-* 
-                  Fixed: __Copy__ and __Paste__ commands are executed if other modifiers than __Control__ are pressed is now fixed.
+*  __Copy__ and __Paste__ commands are executed if other modifiers than __Control__ are pressed is now fixed.
                 
 
-* 
-                  Fixed: Child collections not resolved correctly is now fixed.
+*  Child collections not resolved correctly is now fixed.
                 
 
-* 
-                  Fixed: __HierarchyExpandButton.Clip__ is now fixed
+*  __HierarchyExpandButton.Clip__ is now fixed
                 
 
-* 
-                  Fixed: Now filtering will work properly with __DataLoadMode="Asynchronous"__
+*  Now filtering will work properly with __DataLoadMode="Asynchronous"__
 
-* 
-                  Fixed: Wrong background of __frozen column splitter__ in __Expression_Dark__ theme is now fixed.
+*  Wrong background of __frozen column splitter__ in __Expression_Dark__ theme is now fixed.
                 
 
-## 
-        Q1 2012 SP1
+## Q1 2012 SP1
       
-              What's New
+### What's New
             
 
-* 
-                  Added: __HierarchyIndent__ property
+*  __HierarchyIndent__ property
                 
-              What's Fixed
+### What's Fixed
             
 
-* 
-                  Fixed: __IsBusy__ is now fixed
+*  __IsBusy__ is now fixed
                 
 
-## 
-        Q3 2011 SP1
+## Q3 2011 SP1
+### What's New
+            
+
+*  __RadTreeListView____AutoExpandItems__ property
+                
+### What's Fixed
+            
+
+*  __RadTreeListView__ filtering not working correctly
+                
+
+## Q3 2011
       
-              What's New
+### What's New
             
 
-* 
-                  Added: __RadTreeListView____AutoExpandItems__ property
-                
-              What's Fixed
-            
-
-* 
-                  Fixed: __RadTreeListView__ filtering not working correctly
+*  Row resizing functionality
                 
 
-## 
-        Q3 2011
-      
-              What's New
-            
-
-* 
-                  Added:  Row resizing functionality
+*  Memory and performance optimizations.
                 
 
-* 
-                  Memory and performance optimizations.
-                
-
-* 
-                  Added: New property AutoLoadHierarhy
-                  
-
->The new property is false by default - when set to true the treelist will initialize the entire hierarchy when __ItemsSource__ is assigned.
+*  New property AutoLoadHierarhy 
+  >The new property is ___false___ by default - when set to ___true___ the __TreeListView__ will initialize the entire hierarchy when __ItemsSource__ is assigned.
                     

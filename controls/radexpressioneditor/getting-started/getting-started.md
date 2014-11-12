@@ -12,11 +12,11 @@ position: 0
 
 
 
-This tutorial will walk your through the creation of a sample application that contains RadExpressionEditor and will show you how to: 
+This tutorial will walk your through the creation of a sample application that contains __RadExpressionEditor__ and will show you how to: 
 
-* Use RadExpressionEditor in your project;
+* Use __RadExpressionEditor__ in your project;
 
-* Utilize RadExpressionEditor with other RadControls.
+* Utilize __RadExpressionEditor__ with other __RadControls__.
 
 ## Adding RadExpressionEditor to the project
 
@@ -36,7 +36,7 @@ This tutorial will walk your through the creation of a sample application that c
 
 
 
-* Add the RadExpressionEditor as demonstrated below:
+* Add the __RadExpressionEditor__ as demonstrated below:
 
 #### __XAML__
 
@@ -53,7 +53,7 @@ This tutorial will walk your through the creation of a sample application that c
 	  <telerik:RadExpressionEditor x:Name="expressionEditor" />
 	 </Grid>
 	</UserControl>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -72,17 +72,17 @@ This tutorial will walk your through the creation of a sample application that c
 	  <telerik:RadExpressionEditor x:Name="expressionEditor" />
 	 </Grid>
 	</Window>
-	{{endregion}}
+{{endregion}}
 
 
 
-Now, if you run the application, you will see a RadExpressionEditor:
+Now, if you run the application, you will see a __RadExpressionEditor__:
 
 ![](images/RadExpressionEditor_GettingStarted.png)
 
 ## Binding RadExpressionEditor
 
-The scenario we will try to create here would be to implement a RadExpressionEditor as an advanced manual filter for RadGridView. For that purpose, we will firstly create a new class Employee with a couple of exposed properties and a method creating sample data:
+The scenario we will try to create here would be to implement a __RadExpressionEditor__ as an advanced manual filter for __RadGridView__. For that purpose, we will firstly create a new class __Employee__ with a couple of exposed properties and a method creating sample data:
 
 #### __C#__
 
@@ -132,7 +132,7 @@ The scenario we will try to create here would be to implement a RadExpressionEdi
 	   return employees;
 	  }
 	 }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -233,11 +233,11 @@ The scenario we will try to create here would be to implement a RadExpressionEdi
 	  Return employees
 	 End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
-In our case we will create a simple ViewModel taking care for the connection between our model and view. It will be set as the DataContext of our small application.
+In our case we will create a simple __ViewModel__ taking care for the connection between our model and view. It will be set as the __DataContext__ of our small application.
 
 #### __C#__
 
@@ -275,11 +275,11 @@ In our case we will create a simple ViewModel taking care for the connection bet
 	  End Get
 	 End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
-Once we declared our business object and the corresponding ViewModel, we can define our RadExpressionEditor and bind it appropriately. 
+Once we declared our business object and the corresponding __ViewModel__, we can define our __RadExpressionEditor__ and bind it appropriately. 
 
 #### __XAML__
 
@@ -307,7 +307,7 @@ Once we declared our business object and the corresponding ViewModel, we can def
 	                                     ExpressionChanged="ExpressionEditor_ExpressionChanged"/>
 	   </Grid>
 	</UserControl>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -337,13 +337,13 @@ Once we declared our business object and the corresponding ViewModel, we can def
 	                                     ExpressionChanged="ExpressionEditor_ExpressionChanged"/>
 	  </Grid>
 	</Window>
-	{{endregion}}
+{{endregion}}
 
 
 
 
 
-The functionality for defining a filter for the RadGridView will be implemented in the handler of the ExpressionChanged event of the  RadExpressionEditor:  
+The functionality for defining a filter for the __RadGridView__ will be implemented in the handler of the __ExpressionChanged__ event of the  __RadExpressionEditor__:  
 
 #### __C#__
 
@@ -367,7 +367,7 @@ The functionality for defining a filter for the RadGridView will be implemented 
 	    }    
 	   }
 	  }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -387,15 +387,15 @@ The functionality for defining a filter for the RadGridView will be implemented 
 	  End If
 	 End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
-On running the application and testing the functionality of adding a filter descriptor for the RadGridView, you should see the following:
+On running the application and testing the functionality of adding a filter descriptor for the __RadGridView__, you should see the following:
 
 ![](images/RadExpressionEditor_GettingStarted2.png)![](images/RadExpressionEditor_GettingStarted3.png)
 
-Still, using the Calculation Panel and the items in each Category, you are empowered to create far more complex filtering expressions.  
+Still, using the __Calculation Panel__ and the items in each __Category__, you are empowered to create far more complex filtering expressions.  
 
->RadExpressionEditor provides support for dynamic objects with ICustomTypeProvider (.NET 4.5) or ICustomTypeDescriptor implementation. It will scan the object's properties and show them in the Fields list.
+>__RadExpressionEditor__ provides support for dynamic objects with __ICustomTypeProvider__ (.NET 4.5) or __ICustomTypeDescriptor__ implementation. It will scan the object's properties and show them in the __Fields list__.
           

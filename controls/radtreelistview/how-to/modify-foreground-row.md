@@ -12,17 +12,17 @@ position: 1
 
 
 
-This help article explains how to modify the foreground color of TreeListViewRow on selecting it or hovering over it.
+This help article explains how to modify the foreground color of __TreeListViewRow__ on selecting it or hovering over it.
 
 ## 
 
-Every row shows a set of GridViewCells. In order to change the foreground of all the GridViewCells when their parent row is hovered/selected you should predefine the template of TreeListViewRow and access the part __DataCellsPresenter__. This element is a plain presenter used to display the cells contained in a row.
+Every row shows a set of __GridViewCells__. In order to change the foreground of all the __GridViewCells__ when their parent row is hovered/selected you should predefine the template of __TreeListViewRow__ and access the part __DataCellsPresenter__. This element is a plain presenter used to display the cells contained in a row.
         
 
-You should then add an additional animation to the default hover/selection states of a row and manipulate the Foreground property of __PART_DataCellsPresenter__.
+You should then add an additional animation to the default hover/selection states of a row and manipulate the Foreground property of **PART_DataCellsPresenter**.
         
 
-For sample code you can check this [article]({%slug gridview-how-to-modify-foreground-row%}) for RadGridView. 
+For sample code you can check this [article]({%slug gridview-how-to-modify-foreground-row%}) for __RadGridView__. 
         
 
 # See Also

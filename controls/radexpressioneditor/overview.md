@@ -40,5 +40,4 @@ __RadExpressinEditor__ key features list:
 
 
 
-Check out our online demo at 
-          {% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook](http://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook){% endif %}
+Check out our online demo at {% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook](http://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook){% endif %}

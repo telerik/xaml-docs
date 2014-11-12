@@ -1,0 +1,43 @@
+<UserControl x:Class="RadialMenuExample.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="400">
+
+    <StackPanel x:Name="LayoutRoot" Background="White">
+
+<!-- #region radradialmenu-features-radialmenuitems_0 -->  
+<telerik:RadRadialMenu>
+    <telerik:RadRadialMenuItem Header="File" ToolTipContent="Click to open the File menu" >
+        <telerik:RadRadialMenuItem.IconContent>
+            <Path Data="F1M13,16L23,16L23,15C23,14 24,13 25,13L32,13C33,13 35,14.8 35,16L35,32L13,32L13,16z" 
+                Fill="#FF79B200" 
+                Height="16" 
+                Width="19" 
+                Stretch="Fill" 
+                Margin="0 0 0 4"/>
+        </telerik:RadRadialMenuItem.IconContent>
+    </telerik:RadRadialMenuItem>
+     ...
+</telerik:RadRadialMenu>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-features-radialmenuitems_1 -->
+<telerik:RadRadialMenuItem Header="Upload">              
+    <telerik:RadRadialMenuItem Header="Upload" GroupName="UploadGroup" />           
+    <telerik:RadRadialMenuItem Header="Download" GroupName="UploadGroup" />                    
+</telerik:RadRadialMenuItem>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-features-configuration_2 -->
+
+<!-- #endregion -->
+</StackPanel>
+
+</UserControl>
+
+
+

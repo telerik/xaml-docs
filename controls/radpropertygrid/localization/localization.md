@@ -18,35 +18,28 @@ The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% end
 Here is a list of the supported languages:
       
 
-* 
-          English
+* English
+  
+
+* German
+  
+
+* Spanish
+  
+
+* French
+  
+
+* Italian
+  
+
+* Dutch
+  
+
+* Turkish
         
 
-* 
-          German
-        
-
-* 
-          Spanish
-        
-
-* 
-          French
-        
-
-* 
-          Italian
-        
-
-* 
-          Dutch
-        
-
-* 
-          Turkish
-        
-
->tip__To learn more about the ways to localize the RadControls please read the common topic about__
+>tipTo learn more about the ways to localize the RadControls please read the common topic about
 
 ## Resource Keys
 

@@ -35,7 +35,7 @@ The following examples show how the RadPropertyGrid will look like when the new 
 
 #### __XAML__
 
-{{region radpropertygrid-features-readonlyeditorstate_0}}
+	{{region radpropertygrid-features-readonlyeditorstate_0}}
 	<telerik:RadPropertyGrid 
 	            x:Name="rpg"
 	            Item="{Binding Employee}"
@@ -48,7 +48,7 @@ The following examples show how the RadPropertyGrid will look like when the new 
 
 #### __XAML__
 
-{{region radpropertygrid-features-readonlyeditorstate_1}}
+	{{region radpropertygrid-features-readonlyeditorstate_1}}
 	<telerik:RadPropertyGrid 
 	            x:Name="rpg"
 	            Item="{Binding Employee}"

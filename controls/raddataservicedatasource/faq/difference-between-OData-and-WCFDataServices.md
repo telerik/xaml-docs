@@ -16,6 +16,6 @@ position: 0
 
 __Q:__ What is the difference between __OData__ and __WCF Data Services__?
 
-__A:__ OData is a __protocol__ for querying data, while __WCF Data Services__ is one particular __implementation__ of this protocol. WCF Data Services (formerly known as "ADO.NET Data Services") is a component of the .NET Framework that enables you to create services that use the Open Data Protocol (OData) to expose and consume data over the Web or intranet by using the semantics of representational state transfer (REST).
+__A:__ __OData__ is a __protocol__ for querying data, while __WCF Data Services__ is one particular __implementation__ of this protocol. __WCF Data Services__ (formerly known as ___"ADO.NET Data Services"___) is a component of the __.NET Framework__ that enables you to create services that use the __Open Data Protocol__ (___OData___) to expose and consume data over the __Web__ or intranet by using the semantics of representational state transfer (___REST___).
 
 

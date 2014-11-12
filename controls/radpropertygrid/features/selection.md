@@ -26,8 +26,7 @@ RadPropertyGrid provides three selection modes, which allow you to manipulate th
 * __Extended__ - items are added to the selection only by combining the mouse clicks with the __Ctrl__ or __Shift__ key.
           
 
->tip
-          Pressing __Ctrl+A__ will select all items.
+>tip Pressing __Ctrl+A__ will select all items.
         
 
 ## Selected items

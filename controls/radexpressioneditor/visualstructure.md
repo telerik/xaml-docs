@@ -15,7 +15,6 @@ position: 1
 ## 
 
 This section defines the terms and concepts used in the scope of the __RadExpressionEditor__ that you have to get familiar with prior to continue reading this help. They can also be useful when contacting with the support service in order to better describe your issue. Below you can see snapshot and explanations of the main states and visual elements of the standard __RadExpressionEditor__ control.
-
          
 ![](images/RadExpressionEditor_VisualStructure.png)
 
@@ -27,7 +26,7 @@ This section defines the terms and concepts used in the scope of the __RadExpres
 
 * __Editor Categories__ - lists all the available categories; 
 
-* __Selected Category Items__ - lists the items in the selected category from the Editor Categories;
+* __Selected Category Items__ - lists the items in the selected category from the __Editor Categories__;
 
 * __Description Panel__ - provides a brief description of the selected item;
 

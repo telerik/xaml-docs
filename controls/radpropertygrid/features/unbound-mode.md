@@ -21,10 +21,9 @@ When non-auto-generated PropertyDefinitions are used, RadPropertyGrid relies on 
 The following examples illustrate two possible hierarchies based on the following class definitions:
 
 
-
 #### __C#__
 
-{{region radpropertygrid-unbound-mode_2}}
+	{{region radpropertygrid-unbound-mode_2}}
 	    public class Employee
 	    {
 	        public string Name { get; set; }
@@ -43,7 +42,7 @@ The following examples illustrate two possible hierarchies based on the followin
 
 #### __VB.NET__
 
-{{region radpropertygrid-unbound-mode_3}}
+	{{region radpropertygrid-unbound-mode_3}}
 	    Public Class Employee
 	        Public Property Name() As String
 	            Get
@@ -103,7 +102,7 @@ And the sample data:
 
 #### __C#__
 
-{{region radpropertygrid-unbound-mode_4}}
+	{{region radpropertygrid-unbound-mode_4}}
 	    public MainPage()
 	        {
 	            InitializeComponent();
@@ -124,7 +123,7 @@ And the sample data:
 
 #### __VB.NET__
 
-{{region radpropertygrid-unbound-mode_5}}
+	{{region radpropertygrid-unbound-mode_5}}
 	   Public Sub New()
 	        InitializeComponent()
 	        Me.rpg.Item = New Employee()
@@ -150,11 +149,11 @@ Example 1:
 
 #### __XAML__
 
-{{region radpropertygrid-unbound-mode_0}}
+	{{region radpropertygrid-unbound-mode_0}}
 	<telerik:RadPropertyGrid x:Name="rpg" 
-	                                 AutoGenerateBindingPaths="False" 
-	                                 AutoGeneratePropertyDefinitions="False" 
-	                                 NestedPropertiesVisibility="Visible">
+                             AutoGenerateBindingPaths="False" 
+                             AutoGeneratePropertyDefinitions="False" 
+                             NestedPropertiesVisibility="Visible">
 	            <telerik:RadPropertyGrid.PropertyDefinitions>
 	                <telerik:PropertyDefinition DisplayName="Employee Info">
 	                    <telerik:PropertyDefinition.NestedProperties>
@@ -185,11 +184,11 @@ Example 2:
 
 #### __XAML__
 
-{{region radpropertygrid-unbound-mode_1}}
+	{{region radpropertygrid-unbound-mode_1}}
 	<telerik:RadPropertyGrid x:Name="rpg" 
-	                                 AutoGenerateBindingPaths="False" 
-	                                 AutoGeneratePropertyDefinitions="False" 
-	                                 NestedPropertiesVisibility="Visible">
+                             AutoGenerateBindingPaths="False" 
+                             AutoGeneratePropertyDefinitions="False" 
+                             NestedPropertiesVisibility="Visible">
 	            <telerik:RadPropertyGrid.PropertyDefinitions>
 	                <telerik:PropertyDefinition DisplayName="Name" Binding="{Binding Name}" >
 	                    <telerik:PropertyDefinition.NestedProperties>
@@ -207,9 +206,4 @@ Example 2:
 	{{endregion}}
 
 
-
-
-
 ![Rad Property Grid Unboud Mode 2](images/RadPropertyGrid_UnboudMode2.png)
-
-# See Also

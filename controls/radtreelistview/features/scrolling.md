@@ -26,6 +26,5 @@ __RadTreeListView__ provides two scrolling modes, which allow you to manipulate 
 By default the __ScrollMode__ property is set to the __RealTime__ mode.
 		
 
-As __RadTreeListView__ directly inherits the __RadGridView__ it uses its scrolling mechanism. __RadGridView__ allows you to implement programmatic scrolling. To learn more read the
-		  [Scroll to a particular row or column]({%slug gridview-scroll-item%}) article in __RadGridView's__ documentation.
+As __RadTreeListView__ directly inherits the __RadGridView__ it uses its scrolling mechanism. __RadGridView__ allows you to implement programmatic scrolling. To learn more read the [Scroll to a particular row or column]({%slug gridview-scroll-item%}) article in __RadGridView's__ documentation.
 		

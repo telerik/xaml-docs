@@ -1,0 +1,65 @@
+<UserControl x:Class="RadialMenuExample.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="400">
+
+    <StackPanel x:Name="LayoutRoot" Background="White">
+
+<!-- #region radradialmenu-styles-and-templates-styling-radialmenu_0 -->  
+<UserControl.Resources>
+	<Style x:Key="CustomContentMenuStyle" TargetType="Rectangle" BasedOn="{StaticResource ContentMenuStyle}">
+        <Setter Property="Fill" Value="Yellow" />           
+    </Style>
+    
+	<Style x:Key="CustomNavigationMenuStyle" TargetType="Rectangle" BasedOn="{StaticResource NavigationMenuStyle}">
+        <Setter Property="Fill" Value="Blue"/>            
+    </Style>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-styles-and-templates-styling-radialmenu_1 -->
+<telerik:RadRadialMenu ContentMenuBackgroundStyle="{StaticResource CustomContentMenuStyle}"
+                       NavigationMenuBackgroundStyle="{StaticResource CustomNavigationMenuStyle}">
+...
+</telerik:RadRadialMenu>					   
+<!-- #endregion -->
+
+<!-- #region radradialmenu-styles-and-templates-styling-radialmenu_2 -->  
+<UserControl.Resources>
+<Style TargetType="telerik:NavigationItemButton" BasedOn="{StaticResource NavigationItemButtonStyle}">
+    <Setter Property="Background" Value="Yellow"/>
+    <Setter Property="BorderBrush" Value="Orange"/>
+    <Setter Property="Foreground" Value="Orange"/>
+    <Setter Property="BorderThickness" Value="4"/>       
+</Style>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-styles-and-templates-styling-radialmenu_3 -->  
+<UserControl.Resources>
+<Style TargetType="telerik:VisualStatesItemPresenter" BasedOn="{StaticResource VisualStatesItemPresenterStyle}">        
+     <Setter Property="Background" Value="Blue"/>
+</Style>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-styles-and-templates-styling-radialmenu_4 -->
+<UserControl.Resources>
+<Style TargetType="telerik:VisualStatesItemPresenter" BasedOn="{StaticResource VisualStatesItemPresenterStyle}">        
+    <Setter Property="Background" Value="Blue"/>
+    <Setter Property="ThicknessFactor" Value="0.4" />
+    <Setter Property="ArrowThicknessFactor" Value="0.5" />
+</Style>
+</UserControl.Resources>
+<!-- #endregion -->
+
+</StackPanel>
+
+</UserControl>
+
+
+

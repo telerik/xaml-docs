@@ -1,0 +1,36 @@
+<UserControl x:Class="RadialMenuExample.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="400">
+
+    <StackPanel x:Name="LayoutRoot" Background="White">
+
+<!-- #region radradialmenu-commands-radialmenuitem_1 -->  
+<UserControl.Resources>
+    <local:CustomItemCommand x:Key="CustomItemCommand"/>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-commands-radialmenuitem_2 -->
+<telerik:RadRadialMenu>
+    <telerik:RadRadialMenuItem Header="Item 1" Command="{StaticResource CustomItemCommand}" 
+            CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+    <telerik:RadRadialMenuItem Header="Item 2" Command="{StaticResource CustomItemCommand}" 
+            CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+    <telerik:RadRadialMenuItem Header="Item 3" Command="{StaticResource CustomItemCommand}" 
+            CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+</telerik:RadRadialMenu>
+<!-- #endregion -->
+
+
+
+</StackPanel>
+
+</UserControl>
+
+
+

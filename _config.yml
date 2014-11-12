@@ -11,6 +11,7 @@ installation-and-deployment/installing-telerik-ui-on-your-computer/installation-
 installation-and-deployment/installing-telerik-ui-on-your-computer/for-silverlight-vs-extensions-releases.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-hotfix.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-license-limitations.md,
+installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-nuget.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox.md,
@@ -108,6 +109,8 @@ navigation:
         title: RadMenu
     controls/radnumericupdown:
         title: RadNumericUpDown
+    controls/radradialmenu:
+        title: RadRadialMenu
     controls/radscheduleview:
         title: RadScheduleView
     controls/radtimepicker:
@@ -168,6 +171,9 @@ navigation:
     controls/dragdropmanager/howto:
         title: How To
         position: 7
+    controls/radradialmenu/commands:
+        title: Commands
+        position: 5
 ## X3 Controls End
 
 ## X2 Controls Start

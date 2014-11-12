@@ -324,7 +324,22 @@ navigation:
         title: RadSpellChecker		
     controls/radspellchecker/styles-and-templates:
         title: Styles and Templates
-        position: 4				
+        position: 4	
+    "*radziplibrary":
+        title: RadZipLibrary
+    "*radpdfviewer":
+        title: RadPdfViewer
+    controls/radpdfviewer/document-model:
+        title: Document Model
+        position: 6
+    controls/radpdfviewer/ui:
+        title: UI
+        position: 7
+    controls/radpdfviewer/customization-and-extensibility:
+        title: Customization and Extensibility
+        position: 8
+    controls/radpdfviewer/document-model/text:
+        title: Text
 ## Centaur Controls End
 
 ## Common Start

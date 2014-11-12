@@ -35,55 +35,55 @@ Implementing this interface allows you to create a fully functioning document pr
 * __Owner:__Тhis property is of type __Telerik.Windows.Documents.UI.IFixedDocumentViewer__ and is implemented by __RadPdfViewer__. The owner of your document presenter is the instance of __RadPdfViewer__ that uses the presenter.
             
 
-* __PointerHandlersController:__This property is of type __Telerik.Windows.Documents.Fixed.UI.PointerHandlers.PointerHandlersController__ and the member is responsible for the behavior of __RadPdfViewer__ after mouse or touch events.
+* __PointerHandlersController:__ This property is of type  __Telerik.Windows.Documents.Fixed.UI.PointerHandlers.PointerHandlersController__ and the member is responsible for the behavior of __RadPdfViewer__ after mouse or touch events.
             
 
-* __CurrentPage:__The property gets the current RadFixedPage.
+* __CurrentPage:__ The property gets the current RadFixedPage.
             
 
-* __ShowSelectionMarkers():__The method shows the selection markers.
+* __ShowSelectionMarkers():__ The method shows the selection markers.
             
 
-* __HideSelectionMarkers():__The method hides the selection markers.
+* __HideSelectionMarkers():__ The method hides the selection markers.
             
 
-* __GetLocationFromViewPoint(Point viewpoint, out RadFixedPage page, out Point location):__Obtains the document location from the provided page and view point.
+* __GetLocationFromViewPoint(Point viewpoint, out RadFixedPage page, out Point location):__ Obtains the document location from the provided page and view point.
             
 
-* __GetViewPointFromLocation(RadFixedPage page, Point location, out Point viewpoint):__Obtains the view point from the provided page and document location.
+* __GetViewPointFromLocation(RadFixedPage page, Point location, out Point viewpoint):__ Obtains the view point from the provided page and document location.
             
 
-* __PageUp():__Navigates to the previous page.
+* __PageUp():__ Navigates to the previous page.
             
 
-* __PageDown():__Navigates to the next page.
+* __PageDown():__ Navigates to the next page.
             
 
-* __GoToPage (int pageNumber):__Navigates to the provided page number.
+* __GoToPage (int pageNumber):__ Navigates to the provided page number.
             
 
-* __GoToDestination(Destination destination):__Navigates to the provided destination.
+* __GoToDestination(Destination destination):__ Navigates to the provided destination.
             
 
-* __InvalidateMeasure():__Invalidates the measurement state.
+* __InvalidateMeasure():__ Invalidates the measurement state.
             
 
-* __InvalidateArrange():__Invalidates the arrangement state.
+* __InvalidateArrange():__ Invalidates the arrangement state.
             
 
-* __UpdatePresenterLayout():__Updates the presenter layout.
+* __UpdatePresenterLayout():__ Updates the presenter layout.
             
 
-* __Initialize(IFixedDocumentViewer owner):__Initializes the document presenter with the provided owner.
+* __Initialize(IFixedDocumentViewer owner):__ Initializes the document presenter with the provided owner.
             
 
-* __Initialize(IFixedDocumentViewer owner, IFixedDocumentPresenter presenter):__Initializes the document presenter with the provided owner and another document presenter.
+* __Initialize(IFixedDocumentViewer owner, IFixedDocumentPresenter presenter):__ Initializes the document presenter with the provided owner and another document presenter.
             
 
-* __Release():__Releases the resources used by the document presenter.
+* __Release():__ Releases the resources used by the document presenter.
             
 
-* __CurrentPageChanged:__This event is fired when the current page is changed.
+* __CurrentPageChanged:__ This event is fired when the current page is changed.
             
 
 ## Inheriting FixedDocumentPresenterBase
@@ -91,31 +91,31 @@ Implementing this interface allows you to create a fully functioning document pr
 The __FixedDocumentPresenterBase__ class implements all the members from __IFixedDocumentPresenter__ but also allows the inheriting class to override those members with custom functionality. Some members of this class are abstract and need to be overridden in the inheriting classes:
         
 
-* __PagesLayoutManager:__The property is of type __Telerik.Windows.Documents.Fixed.Layout.PagesLayoutManagerBase__ and is responsible for the way pages are laid out in the document.
+* __PagesLayoutManager:__ The property is of type __Telerik.Windows.Documents.Fixed.Layout.PagesLayoutManagerBase__  and is responsible for the way pages are laid out in the document.
             
 
-* __CurrentNo:__The number of the current page.
+* __CurrentNo:__ The number of the current page.
             
 
-* __VisiblePages:__A collection of the currently visible pages in the viewport of __RadPdfViewer__.
+* __VisiblePages:__ A collection of the currently visible pages in the view port of __RadPdfViewer__.
             
 
-* __GetLocationFromViewPoint(Point viewpoint, out RadFixedPage page, out Point location):__Obtains the document location from the provided view point.
+* __GetLocationFromViewPoint(Point viewpoint, out RadFixedPage page, out Point location):__ Obtains the document location from the provided view point.
             
 
-* __UpdateScrollOffsetFromPosition(TextPosition position):__Updates the scroll offset from the provided position.
+* __UpdateScrollOffsetFromPosition(TextPosition position):__ Updates the scroll offset from the provided position.
             
 
 __PagesLayoutManagerBase__ is an abstract class that is responsible for the layout of the document pages. The class provides the following abstract members:
         
 
-* __UpdateLayout(Size viewportSize):__This method updates the pages layout based on the provided viewport.
+* __UpdateLayout(Size viewportSize):__ This method updates the pages layout based on the provided view port.
             
 
-* __GetPagesLayoutInfos():__Returns a collection of the layout info for all the pages in the document.
+* __GetPagesLayoutInfos():__ Returns a collection of the layout info for all the pages in the document.
             
 
-* __Release():__Releases the resources of the layout manager.
+* __Release():__ Releases the resources of the layout manager.
             
 
 ## Creating a Custom Presenter
@@ -136,8 +136,7 @@ __Step 1:__ Create a class responsible for the page layout which inherits the ab
 	        ...
 	        }
 	    }
-	{{endregion}}
-
+{{endregion}}
 
 
 __Step 2:__ Add a new class for your custom presenter that inherits the abstract __FixedDocumentPresenterBase__ class which on its hand inherits the __IFixedDocumentPresenter__ interface.
@@ -185,7 +184,7 @@ __Step 3:__ Implement all members of the __FixedDocumentPresenterBase__ class to
 	            }
 	        }
 	    }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -212,7 +211,7 @@ __Step 4:__ Create a class which inherits the abstract __PagesLayoutManagerBase_
 	            ...
 	        }
 	    }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -230,7 +229,7 @@ __Step 5:__ Override the __PagesLayoutManagerBase__ property and set its field t
 	        {
 	            this.pageLayoutInfos = new List<SinglePageInfo>();
 	        }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -241,12 +240,11 @@ __Step 6:__ Register the custom document presenter like in the following code-sn
 
 {{region radpdfviewer-customization-and-extensibility-custom-document-presenter_4}}
 	        this.pdfViewer.RegisterPresenter("CustomPresenterName", new CustomSinglePagePresenter());
-	{{endregion}}
+{{endregion}}
 
 
 
-An example demonstrating how to create and register a custom document presenter could be downloaded at our SDK repository
-          [here](https://github.com/telerik/xaml-sdk).
+An example demonstrating how to create and register a custom document presenter could be downloaded at our SDK repository [here](https://github.com/telerik/xaml-sdk).
         
 
 # See Also

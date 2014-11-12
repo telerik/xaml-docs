@@ -12,8 +12,7 @@ position: 0
 
 
 
-This topic summarizes the new functionality introduced in the viewer with helpful links to places in the documentation that describe in greater
-        detail the new functionality and how it can be used.
+This topic summarizes the new functionality introduced in the viewer with helpful links to places in the documentation that describe in greater detail the new functionality and how it can be used.
       
 
 ## What's New in 2014 Q1 - 2014.1.0226
@@ -70,8 +69,7 @@ This topic summarizes the new functionality introduced in the viewer with helpfu
 
 * Implemented clipping
 
-* Introduced commands and bindings to UI. Added customizable toolbar UI as a separate control.
-              [Read more]({%slug radpdfviewer-wiring-ui%})
+* Introduced commands and bindings to UI. Added customizable toolbar UI as a separate control. [Read more]({%slug radpdfviewer-wiring-ui%})
 
 * Support for color spaces
 
@@ -89,5 +87,4 @@ In 2012 Q1 SP1 - 2012.1.0326 there are some additional enhancements:
 
 * Enable Display PDF in RadBook scenario.
 
-* A demo on the integration between RadPdfViewer and RadBook.
-              {% if site.site_name == 'Silverlight' %}[Online demo](http://demos.telerik.com/silverlight/#PdfViewer/Integration/RadBookIntegration){% endif %}{% if site.site_name == 'WPF' %}[Click-once demos](http://demos.telerik.com/wpf/){% endif %}
+* A demo on the integration between RadPdfViewer and RadBook. {% if site.site_name == 'Silverlight' %}[Online demo](http://demos.telerik.com/silverlight/#PdfViewer/Integration/RadBookIntegration){% endif %}{% if site.site_name == 'WPF' %}[Click-once demos](http://demos.telerik.com/wpf/){% endif %}

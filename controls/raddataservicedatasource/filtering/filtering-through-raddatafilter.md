@@ -14,11 +14,12 @@ position: 2
 
 ## 
 
-If you bind RadDataFilter.__Source__ to RadDataServiceDataSource.__DataView__, you will get automatic server-side filtering. When the user defines his filtering criteria through RadDataFilter’s UI, RadDataFilter will automatically transfer the resulting FilterDescriptors to RadDataServiceDataSource. If RadDataServiceDataSource.AutoLoad is true, the control will automatically go to the server and get the data that matches these FilterDescriptors. 
+If you bind __RadDataFilter.Source__ to __RadDataServiceDataSource.DataView__, you will get automatic server-side filtering. When the user defines his filtering criteria through __RadDataFilter’s__ UI, __RadDataFilter__ will automatically transfer the resulting __FilterDescriptors__ to __RadDataServiceDataSource__. If __RadDataServiceDataSource.AutoLoad__ is ___true___, the control will automatically go to the server and get the data that matches these __FilterDescriptors__. 
 
 #### __XAML__
 
 {{region raddataservicedatasource-filtering-filtering-through-raddatafilter_0}}
+
 	<Grid x:Name="LayoutRoot" Background="White">
 	 <Grid.RowDefinitions>
 	  <RowDefinition Height="Auto"/>
@@ -34,7 +35,7 @@ If you bind RadDataFilter.__Source__ to RadDataServiceDataSource.__DataView__, y
 	    IsBusy="{Binding IsBusy, ElementName=customersDataSource}" 
 	    ShowGroupPanel="False"/> 
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -42,12 +43,8 @@ If you bind RadDataFilter.__Source__ to RadDataServiceDataSource.__DataView__, y
 
 On running the application, you may perform the following:
 
+![](images/RadDataServiceDataSource_FiteringThroughRadDataFilter.png)
 
-
-
-         
-      ![](images/RadDataServiceDataSource_FiteringThroughRadDataFilter.png)
-
-
+>caution If __AutoLoad__ is ___false___, the descriptors will be transferred to __RadDataServiceDataSource__, but no trip to the server will be made until the __Load__ method is called.
 
 

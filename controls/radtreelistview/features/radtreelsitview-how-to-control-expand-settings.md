@@ -13,24 +13,22 @@ position: 2
 
 
 Since __Q1 2013__ release, __RadTreeListView__ has two new properties - __IsExpandedBinding__ and __IsExpandableBinding__ which can be used to synchronize its expanded and expandable states with your view-model.
+>cation Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported. You can consider using [IsExpandedBinding](#use-of-isexpandedbinding) property instead.
 
 ## Use of IsExpandedBinding
 
-IsExpandedBinding property can be used to show you whether a TreeListView's row is expanded or not.
+__IsExpandedBinding__ property can be used to show you whether a __TreeListView's__ row is expanded or not.
         
 
 Follow these steps to accomplish the task:
 
-1. For the purpose of this tutorial we will add a boolean property - IsExpanded to our WarehouseItem collection:
-        
+1. For the purpose of this tutorial we will add a boolean property - __IsExpanded__ to our __WarehouseItem__ collection:  
+	>Please, note that our __WarehouseItem__ class implements the __INotifyPropertyChanged__ interface.        
 
->Please, note that our WarehouseItem class implements the __INotifyPropertyChanged__ interface.
-          
+	#### __C#__
+	{{region radtreelsitview-how-to-use-of-IsExpandedBinding_and_IsExpandableBinding_2}}
 
-#### __C#__
-
-{{region radtreelsitview-how-to-use-of-IsExpandedBinding_and_IsExpandableBinding_2}}
-	public class WarehouseItem : INotifyPropertyChanged
+		public class WarehouseItem : INotifyPropertyChanged
 	    {
 	        public event PropertyChangedEventHandler PropertyChanged;
 	
@@ -88,13 +86,13 @@ Follow these steps to accomplish the task:
 	        {
 	            this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
 	        }
-	{{endregion}}
+{{endregion}}
 
 
 
-#### __VB.NET__
-
+	#### __VB.NET__
 {{region radtreelsitview-how-to-use-of-IsExpandedBinding_and_IsExpandableBinding_3}}
+
 	    Public Class WarehouseItem
 	        Implements INotifyPropertyChanged
 	        Public Event PropertyChanged As PropertyChangedEventHandler
@@ -140,17 +138,17 @@ Follow these steps to accomplish the task:
 	            Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
 	        End Sub
 	    End Class
-	{{endregion}}
+{{endregion}}
 
 
 
-2. Add RadTreeListView as demonstrated below:
+2. Add __RadTreeListView__ as demonstrated below:
         
 
-#### __XAML__
+	#### __XAML__
+	{{region radtreelsitview-how-to-use-of-IsExpandedBinding_and_IsExpandableBinding_0}}
 
-{{region radtreelsitview-how-to-use-of-IsExpandedBinding_and_IsExpandableBinding_0}}
-	<telerik:RadTreeListView x:Name="radTreeListView"
+		<telerik:RadTreeListView x:Name="radTreeListView"
 	                                 IsExpandedBinding="{Binding IsExpanded, Mode=TwoWay}"
 	                                 AutoGenerateColumns="False">
 	            <telerik:RadTreeListView.ChildTableDefinitions>
@@ -163,21 +161,20 @@ Follow these steps to accomplish the task:
 	                                    Header="Is Expanded" />
 	            </telerik:RadTreeListView.Columns>
 	        </telerik:RadTreeListView>
-	{{endregion}}
+{{endregion}}
 
 
 
 3. Here is a snapshot of the result:
-        ![Rad Tree List View radtreelistview how-to-isexpanded 01png](images/RadTreeListView_radtreelistview_how-to-isexpanded_01png.PNG)
 
->tipA complete example of using RadTreeListView's IsExpandedBinding property is available in
-          {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TreeListView/IsExpanded){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's IsExpanded demo](http://demos.telerik.com/wpf/){% endif %}.
+![Rad Tree List View radtreelistview how-to-isexpanded 01png](images/RadTreeListView_radtreelistview_how-to-isexpanded_01png.PNG)
+
+>tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TreeListView/IsExpanded){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's IsExpanded demo](http://demos.telerik.com/wpf/){% endif %}.
           
 
 ## Use of IsExpandableBinding
 
-The use of IsExpandableBinding would be similar as shown for the IsExpandedBinding.
+The use of __IsExpandableBinding__ would be similar as shown for the __IsExpandedBinding__.
 
->tipA complete example of using RadTreeListView's IsExpandedBinding property is available in
-          {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TreeListView/OnDemandDataLoading){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's OnDemandDataLoading demo](http://demos.telerik.com/wpf/){% endif %}.
+>tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TreeListView/OnDemandDataLoading){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's OnDemandDataLoading demo](http://demos.telerik.com/wpf/){% endif %}.
           

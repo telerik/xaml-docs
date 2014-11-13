@@ -21,14 +21,19 @@ In order to have the validation rules defined through the IDataErrorInfo interfa
 #### __C#__
 
 
-
-
+	{{region radpropertygrid-features-validation_1}}
+	void rpg_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
+	{
+ 	   (e.PropertyDefinition.Binding as Binding).ValidatesOnDataErrors = true;
+ 	   (e.PropertyDefinition.Binding as Binding).NotifyOnValidationError = true;
+	}
+	{{endregion}}
 
 You can define the validation rules like so:
 
 #### __C#__
 
-{{region radpropertygrid-features-validation_2}}
+	{{region radpropertygrid-features-validation_2}}
 	        public string this[string columnName]
 	        {
 	            get
@@ -58,24 +63,49 @@ In order to have the validation rules defined through DataAnnotations respected,
 
 #### __C#__
 
-
-
-
+	{{region radpropertygrid-features-validation_3}}
+	void rpg_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
+	{
+	    (e.PropertyDefinition.Binding as Binding).ValidatesOnExceptions = true;
+	}
+	{{endregion}}
 
 For example you can define the Required DataAnnotations attribute like so:
 
 #### __C#__
 
+	{{region radpropertygrid-features-validation_4}}
+	[Required(ErrorMessage = "This field is Required.")]
+	public string RequiredField
+	{
+	    get { return requiredField; }
+	    set
+	    {
+	        requiredField = value;
+	        ValidateProperty("RequiredField", value);
+	        this.OnPropertyChanged("RequiredField");
+	    }
+	}
 
-
+	{{endregion}}
 
 
 You may notice that there is a call to a ValidateProperty method. You will have to define such a method like this:
 
 #### __C#__
 
-
-
+	{{region radpropertygrid-features-validation_4}}
+	public void ValidateProperty(string propName, object value)
+	{
+	    var result = new List<System.ComponentModel.DataAnnotations.ValidationResult>();
+	    Validator.TryValidateProperty(value, new ValidationContext(this, null, null) { MemberName = propName }, result);
+	
+	    if (result.Count > 0)
+	    {
+	        throw new ValidationException(result[0].ErrorMessage);
+	    }
+	}
+	{{endregion}}
 
 
 # See Also

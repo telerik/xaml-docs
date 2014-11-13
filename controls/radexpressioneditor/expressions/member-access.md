@@ -14,24 +14,14 @@ position: 1
 
 ## 
 
-You may access each member just as you do in C# and VB.NET.
+You may access each member just as you do in __C#__ and __VB.NET__.
 
-A simple expression such as “Salary> 2500” will try to resolve the Salary property on the parameter of the generated LambdaExpression:
+A simple expression such as __“Salary > 2500”__ will try to resolve the __Salary__ property on the parameter of the generated __LambdaExpression__:
+        
+![](images/RadExpressionEditor_MemberAccess.png)
 
+Nested member access is also possible. For instance, __“Tasks.Count”__ will access the __Count__ property of the value of the __Tasks__ property in the expression’s parameter:
 
-
-
-         
-      ![](images/RadExpressionEditor_MemberAccess.png)
-
-
-
-Nested member access is also possible. For instance, “Tasks.Count” will access the Count property of the value of the Tasks property in the expression’s parameter:
-
-
-
-
-         
-      ![](images/RadExpressionEditor_NestedMemberAccess.png)
+![](images/RadExpressionEditor_NestedMemberAccess.png)
 
 

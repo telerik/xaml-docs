@@ -14,7 +14,7 @@ position: 1
 
 ## 
 
->If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
+>tip If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
 
 The __RadDataPager__ allows you to decide which of its visual elements to be visible. This is done via the __PagerDisplayModes__ enumeration and the __DisplayMode__ property. 
 
@@ -59,11 +59,12 @@ Here is an example of a __RadDataPager__ that displays the previous, next and nu
 
 #### __XAML__
 
-	{{region raddatapager-features-display-modes_0}}
+{{region raddatapager-features-display-modes_0}}
+
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="5"
 	                        DisplayMode="PreviousNextNumeric" />
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDataPager_Features_DisplayModes_01.png)
 
@@ -71,11 +72,12 @@ If the combination of visual elements doesn't exist in the enumeration, you can 
 
 #### __XAML__
 
-	{{region raddatapager-features-display-modes_1}}
+{{region raddatapager-features-display-modes_1}}
+
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="5"
 	                        DisplayMode="PreviousNext,Text" />
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDataPager_Features_DisplayModes_02.png)
 

@@ -18,20 +18,16 @@ The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% end
 Here is a list of the supported languages:
       
 
-* 
-          English
+*  __English__
         
 
-* 
-          German
+*  __German__
         
 
-* 
-          Spanish
+*  __Spanish__
         
 
-* 
-          French
+*  __French__
         
 
 >tip__To learn more about the ways in which to localize the RadControls, please read the common topic about__{% if site.site_name == 'Silverlight' %}[Localization](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[Localization](http://www.telerik.com/help/wpf/common-localization.html){% endif %}__.__

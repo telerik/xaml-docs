@@ -20,7 +20,7 @@ Here is a simple PropertyDefinition declaration:
 
 #### __XAML__
 
-{{region radpropertygrid-howto-readonly-propertydefinitions_0}}
+	{{region radpropertygrid-howto-readonly-propertydefinitions_0}}
 	                <telerik:PropertyDefinition 
 	                            Binding="{Binding FirstName}" 
 	                            DisplayName="First Name"

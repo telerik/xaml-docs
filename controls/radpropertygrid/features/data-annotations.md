@@ -30,11 +30,9 @@ Using Data Annotations you can categories different properties into separate gro
 
 First, for the purpose of this tutorial, we will create a new class Employee with a couple of properties:
 
-
-
 #### __C#__
 
-{{region radpropertygrid-data-annotations_1}}
+	{{region radpropertygrid-data-annotations_1}}
 	     public class Employee
 	    {       
 	        public string FirstName { get; set; }
@@ -50,7 +48,7 @@ First, for the purpose of this tutorial, we will create a new class Employee wit
 
 #### __VB__
 
-{{region radpropertygrid-data-annotations_2}}
+	{{region radpropertygrid-data-annotations_2}}
 	    Public Class Employee
 	        Public Property FirstName() As String
 	            Get
@@ -113,13 +111,10 @@ First, for the purpose of this tutorial, we will create a new class Employee wit
 
 
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to RadPropertyGrid:
-        
-
-
 
 #### __C#__
 
-{{region radpropertygrid-data-annotations_3}}
+	{{region radpropertygrid-data-annotations_3}}
 	this.propertyGrid1.Item = new Employee()
 	            {
 	                FirstName = "Sarah",
@@ -135,7 +130,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 #### __VB__
 
-{{region radpropertygrid-data-annotations_4}}
+	{{region radpropertygrid-data-annotations_4}}
 	    Me.PropertyGrid1.Item = New Employee() With { _
 	  .FirstName = "Sarah", _
 	  .LastName = "Blake", _
@@ -147,12 +142,11 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 
 
-The declaration of RadPropertyGrid control inside the Grid:
-        
+The declaration of RadPropertyGrid control inside the Grid:        
 
 #### __XAML__
 
-{{region radpropertygrid-data-annotations_0}}
+	{{region radpropertygrid-data-annotations_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
 	{{endregion}}
 
@@ -165,35 +159,29 @@ After you run the application you should see the following:
 
 ## Data Annotations with RadPropertyGrid
 
->important
-          If you want to use Data Annotations in your application, you have to add a reference to System.ComponentModel.DataAnnotations assembly.
+>importantIf you want to use Data Annotations in your application, you have to add a reference to System.ComponentModel.DataAnnotations assembly.
         
 
 With Data Annotations you can apply attributes to the members of the class that specify how the data is displayed. RadPropertyGrid supports different Data Annotations:
 
-* 
-            Display - this is recommended attribute type to use. You can use its properties:
-            
+* Display - this is recommended attribute type to use. You can use its properties:
+ 
 
-* 
-                Name - The value of Name will be used in RadPropertyGrid instead of the PropertyName.
-              
+* Name - The value of Name will be used in RadPropertyGrid instead of the PropertyName.
+   
 
-* 
-                Description - will be used in when you want to define a description of the Property.
-              
+* Description - will be used in when you want to define a description of the Property.
+   
 
-* 
-                GroupName -  will be used when you want to categorise different properties into separate groups.
-              
+* GroupName -  will be used when you want to categorise different properties into separate groups.
+   
 
-* 
-                Order - will be used when you want to set Property's display order.
+* Order - will be used when you want to set Property's display order.
               Here is a sample how to set DataAnnotation with Display attribute:
 
 #### __C#__
 
-{{region radpropertygrid-data-annotations_5}}
+	{{region radpropertygrid-data-annotations_5}}
 	         //Rename the StartingDate property to Year in the UI
 	         [Display(Name = "Year")]
 	         public DateTime StartingDate { get; set; }
@@ -209,13 +197,12 @@ With Data Annotations you can apply attributes to the members of the class that 
 
 
 
-* 
-            Browsable - with this attribute you can define whether an item should be visible or not.
+* Browsable - with this attribute you can define whether an item should be visible or not.
             
 
 #### __C#__
 
-{{region radpropertygrid-data-annotations_7}}
+	{{region radpropertygrid-data-annotations_7}}
 	         //Hide StartingDate from the UI
 	        [Browsable(false)]
 	        public DateTime StartingDate { get; set; }
@@ -223,13 +210,12 @@ With Data Annotations you can apply attributes to the members of the class that 
 
 
 
-* 
-            ReadOnly- set a property as read-only.
+* ReadOnly- set a property as read-only.
             
 
 #### __C#__
 
-{{region radpropertygrid-data-annotations_9}}
+	{{region radpropertygrid-data-annotations_9}}
 	         //Set StartingDate as Read-Only
 	        [ReadOnly(true)]
 	        public DateTime StartingDate { get; set; }
@@ -242,7 +228,7 @@ So let's modify our simple Employee class and see the result in RadPropertGrid.
 
 #### __C#__
 
-{{region radpropertygrid-data-annotations_11}}
+	{{region radpropertygrid-data-annotations_11}}
 	        [Display(Description = "Employee's first name.", GroupName="Personal Information")]
 	        public string FirstName { get; set; }        
 	        [Display(Description = "Employee's last name.", GroupName="Personal Information")]

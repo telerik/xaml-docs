@@ -18,14 +18,16 @@ The __RadTreeListView__ displays the data in the same way as the __RadGridView__
 
 >Please note that the __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
 
->Consider using the __RadTreeListView__ for displaying only a homogeneous data. For heterogeneous data use the
-          [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
+
+>tip Consider using the __RadTreeListView__ for displaying only a homogeneous data. For heterogeneous data use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
 
 The thing that you should use in order to display your data in the __RadTreeListView__ is the __ChildTableDefinitions__ property. In the context of the __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__class, but the __TreeListViewTableDefinition__ one. It exposes an __ItemSource__ property which should be bound to the property that represents the next level of hierarchy. 
 
 >This property should have the same name at each level of the hierarchy. 
 
 >As the hierarchical data in the __RadTreeListView__ is displayed in one and the same table, each level of the hierarchy will share one and the same set of columns. This means that your data should provide the needed members at each level of the hierarchy.
+
+>caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported. You can consider using [IsExpandedBinding]({%slug radtreelsitview-how-to-control-expand-settings%}) property instead.
 
 >tipYou can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
         
@@ -61,43 +63,48 @@ In order to use the __RadTreeListView__ in XAML, you have to declare the followi
 #### __XAML__
 
 {{region radtreeliestview-getting-started_0}}
+
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __XAML__
 
 {{region radtreeliestview-getting-started_1}}
+
 	<telerik:RadTreeListView x:Name="radTreeListView">
 	</telerik:RadTreeListView>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
 {{region radtreeliestview-getting-started_2}}
+
 	RadTreeListView radTreeListView = new RadTreeListView();
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreeliestview-getting-started_3}}
+
 	Dim radTreeListView As New RadTreeListView()
-	{{endregion}}
+{{endregion}}
 
 
 
 ## Prepare a Sample Data
 
-For this example we will use a collection that represents the contents of a warehouse. It will contain __WarehouseItem__ objects. Each WarehouseItem will have a __Name__, a __Count__ and a collection of WarehouseItem objects. Here is the class definition.
+For this example we will use a collection that represents the contents of a warehouse. It will contain __WarehouseItem__ objects. Each WarehouseItem will have a __Name__, a __Count__ and a collection of __WarehouseItem__ objects. Here is the class definition.
 
 #### __C#__
 
 {{region radtreeliestview-getting-started_4}}
+
 	public class WarehouseItem
 	{
 	    public WarehouseItem( string name, int count )
@@ -122,13 +129,14 @@ For this example we will use a collection that represents the contents of a ware
 	        set;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreeliestview-getting-started_5}}
+
 	Public Class WarehouseItem
 	 Public Sub New(name As String, count As Integer)
 	  Me.Name = name
@@ -163,7 +171,7 @@ For this example we will use a collection that represents the contents of a ware
 	 End Property
 	 Private m_Count As Integer
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -172,6 +180,7 @@ Here is also an example class that dynamically creates the sample data.
 #### __C#__
 
 {{region radtreeliestview-getting-started_6}}
+
 	public class WarehouseService
 	{
 	    public static ObservableCollection<WarehouseItem> GetWarehouseData()
@@ -198,13 +207,14 @@ Here is also an example class that dynamically creates the sample data.
 	        return data;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreeliestview-getting-started_7}}
+
 	Public Class WarehouseService
 	 Public Shared Function GetWarehouseData() As ObservableCollection(Of WarehouseItem)
 	  Dim data As New ObservableCollection(Of WarehouseItem)()
@@ -229,7 +239,7 @@ Here is also an example class that dynamically creates the sample data.
 	  Return data
 	 End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -240,16 +250,18 @@ In order to display your data, you have to set it to the __ItemsSource__ propert
 #### __C#__
 
 {{region radtreeliestview-getting-started_8}}
+
 	this.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData();
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreeliestview-getting-started_9}}
+
 	Me.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData()
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -258,20 +270,22 @@ At this point, only the first level of the hierarchical data will get displayed 
 #### __XAML__
 
 {{region radtreeliestview-getting-started_10}}
+
 	<telerik:RadTreeListView x:Name="radTreeListView">
 	    <telerik:RadTreeListView.ChildTableDefinitions>
 	        <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
 	    </telerik:RadTreeListView.ChildTableDefinitions>
 	</telerik:RadTreeListView>
-	{{endregion}}
+{{endregion}}
 
 
 
-By default the __RadTreeListView__ will auto-generate the columns for your data, by creating a column for each property. In order to prevent this you have to set the __AutogenerateColumns__ property to __False__ and to manually add the desired columns to the __Columns__ collection of the control.
+By default the __RadTreeListView__ will auto-generate the columns for your data, by creating a column for each property. In order to prevent this you have to set the __AutogenerateColumns__ property to ___False___ and to manually add the desired columns to the __Columns__ collection of the control.
 
 #### __XAML__
 
 {{region radtreeliestview-getting-started_11}}
+
 	<telerik:RadTreeListView x:Name="radTreeListView"
 	                            AutoGenerateColumns="False">
 	    <telerik:RadTreeListView.ChildTableDefinitions>
@@ -284,20 +298,18 @@ By default the __RadTreeListView__ will auto-generate the columns for your data,
 	                                    Header="Count" />
 	    </telerik:RadTreeListView.Columns>
 	</telerik:RadTreeListView>
-	{{endregion}}
+{{endregion}}
 
 
 
->tip
-
-The __RadTreeListView__ can use the same columns as the __RadGridView__. To learn more about the different types of columns read here.
+>tip The __RadTreeListView__ can use the same columns as the __RadGridView__. To learn more about the different types of columns read here.
         
 
->tip
+>tip To change the column, which holds the tree view UI, use the __HierarchyColumnIndex__ property.
 
-To change the column, which holds the tree view UI, use the __HierarchyColumnIndex__ property.
+Here is a snapshot of the result.
 
-Here is a snapshot of the result.![](images/RadTreeListView_GettingStarted_01.png)
+![](images/RadTreeListView_GettingStarted_01.png)
 
 # See Also
 

@@ -14,12 +14,10 @@ position: 11
 
 As of __Q2 2013__ we have introduced a new property of RadPropertyGrid - RenderMode. It represents RadPropertyGrid's layout render mode and has two options:
 
-1. __Hierarchical__:
-          It is the default one and it will nest the PropertyFields into one another, when you have [Nested PropertyDefinitions]({%slug radpropertygrid-nested-properties%}) or grouping.
+1. __Hierarchical__: It is the default one and it will nest the PropertyFields into one another, when you have [Nested PropertyDefinitions]({%slug radpropertygrid-nested-properties%}) or grouping.
         
 
-1. __Flat__: This mode represents our new layout mechanism for RadPropertyGrid, which rely entirely on flat rendering of its elements.
-          This allows to virtualize the grouping process which leads to a very good perfromance when RadPropertyGrid is grouped and has a lot of data.
+2. __Flat__: This mode represents our new layout mechanism for RadPropertyGrid, which rely entirely on flat rendering of its elements.This allows to virtualize the grouping process which leads to a very good perfromance when RadPropertyGrid is grouped and has a lot of data.
         
 
 
@@ -32,10 +30,10 @@ There are a number of benefits of using the __Flat__ render mode. Some are liste
 1. __Faster layout rendering and scrolling time for grouped PropertyGrid__.
         
 
-1. __Support UI Virtualization for grouping scenarios__.
+2. __Support UI Virtualization for grouping scenarios__.
         
 
-1. __Keyboard Navigation__.
+3. __Keyboard Navigation__.
         
 
 # See Also

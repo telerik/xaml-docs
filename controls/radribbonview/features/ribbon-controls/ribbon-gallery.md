@@ -314,7 +314,7 @@ However, in order to properly display header items in the __RadRibbonGallery__, 
 
 ![Rad Ribbon View Ribbon Gallery Headers](images/RadRibbonView_RibbonGallery_Headers.png)
 
->The__telerikRibbonViewPrimitives__ alias points to the __Telerik.Windows.Controls.RibbonView.Primitives__<br/> namespace:xmlns:telerikRibbonViewPrimitives="clr-namespace:Telerik.Windows.Controls.RibbonView.Primitives;assembly=Telerik.Windows.Controls.RibbonView"
+>The __telerikRibbonViewPrimitives__ alias points to the __Telerik.Windows.Controls.RibbonView.Primitives__<br/> namespace:xmlns:telerikRibbonViewPrimitives="clr-namespace:Telerik.Windows.Controls.RibbonView.Primitives;assembly=Telerik.Windows.Controls.RibbonView"
 
 ## Setting RadRibbonGallery's PopupLaunchButtonVisibility
 

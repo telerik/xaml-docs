@@ -12,14 +12,11 @@ position: 6
 
 
 
-The __RadTileView__ allows customization of the position of its items. There are two properties that 
-      control the position of a __RadTileViewItem__ - __Visibility__ and 
-      __Position__.
+The __RadTileView__ allows customization of the position of its items. There are two properties that control the position of a __RadTileViewItem__ - __Visibility__ and __Position__.
 
 ##  Setting the RadTileViewItem Visibility 
 
-The __Visibility__ property of the __TileViewItem__ allows you to choose 
-        which items to be displayed at any given moment. 
+The __Visibility__ property of the __TileViewItem__ allows you to choose which items to be displayed at any given moment. 
 
 #### __XAML__
 
@@ -44,16 +41,13 @@ The __Visibility__ property of the __TileViewItem__ allows you to choose
 	  <TextBlock Text="Item6 Content" />
 	 </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radtileview_positioning_visibility.png)
 
 ## Controlling the RadTileViewItem Position
 
-The __Position__ property of the __TileViewItems__ controls the positions of 
-        the __Restored__ and/or __Minimized__ items. However, if there is a
-        __Maximized__ item, by default it will be on __Position__ 0. Therefore setting another
-        __RadTileViewItem____Position__ to 0, will maximize this item instead. 
+The __Position__ property of the __TileViewItems__ controls the positions of the __Restored__ and/or __Minimized__ items. However, if there is a __Maximized__ item, by default it will be on __Position__ 0. Therefore setting another __RadTileViewItem Position__ to 0, will maximize this item instead. 
 
 #### __XAML__
 
@@ -78,7 +72,7 @@ The __Position__ property of the __TileViewItems__ controls the positions of
 	  <TextBlock Text="Item6 Content" />
 	 </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radtileview_positioning_position.png)
 

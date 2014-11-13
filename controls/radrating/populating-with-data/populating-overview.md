@@ -23,7 +23,7 @@ In order to display items, you have to populate the __RadRating__ control with s
 * Set a value to the __NumberOfItemsToGenerate__ property of the __RadRating__ control
 		  
 
-* Manually, by adding items to the __Items__collection
+* Manually, by adding items to the __Items__ collection
 		  
 
 * With data binding, by using the __ItemsSource__ property

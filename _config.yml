@@ -303,7 +303,9 @@ navigation:
     controls/radtileview:
         title: RadTileView
     controls/radtoolbar:
-        title: RadToolbar
+        title: RadToolBar
+    controls/radtooltip:
+        title: RadToolTip
     controls/radtimebar:
         title: RadTimeBar
     controls/radtimeline:

@@ -12,7 +12,7 @@ position: 2
 
 
 
-This section defines the terms and concepts used in the scope of __RadButtons__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadButton__ controls.
+This section defines the terms and concepts used in the scope of __RadButtons__that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadButton__ controls.
 
 ## RadButton
 
@@ -21,6 +21,19 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 * __Content__ - represents the content of the button.
 
 * __Button Part__ - represents the active part of the control.
+
+## RadPathButton
+
+![Rad Path Button](images/RadPathButton.png)
+
+* __Content__ - represents the content of the button.
+            
+
+* __Path__ - represents the Path of the control.
+            
+
+* __Button Part__ - represents the active part of the control.
+            
 
 ## RadDropDownButton
 
@@ -54,11 +67,11 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 * __Button__ - represents the active part of the control.
 
-* __Drop Down Part__ - represents the part which opens the popup.
+* __Drop Down Part__- represents the part which opens the popup.
 
-* __Drop Down Popup__ - represents the drop down popup.
+* __Drop Down Popup__- represents the drop down popup.
 
-* __Drop Down Content__ - represents the content of the drop down popup.
+* __Drop Down Content__- represents the content of the drop down popup.
 
 ## RadToggleButton
 

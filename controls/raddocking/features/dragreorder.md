@@ -10,8 +10,6 @@ position: 7
 
 # DragReorder of Tabs
 
-
-
 With the official Q3 2012 release of RadControls we introduced the __DragReorder__ feature of __RadDocking__ control. This feature will help end users to easily reorder existing __RadPanes__ in a specific __RadPaneGroup__.
 
 ## Enabling and Disabling DragReorder
@@ -20,20 +18,24 @@ By default the __DragReorder__ feature is disabled. In order to enable it you wi
 
 The next code snippet shows how to enable the DragReorder feature:
 
-
-
 #### __XAML__
 
 {{region raddocking-features-dragreorder-0}}
 	<telerik:RadDocking AllowDragReorder="True">
 	    ...
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 The following screenshots demonstrate the behavior of RadDocking when DragReorder feature is enabled:
 
-* When RadPaneGroup is in DocumentHost:![raddocking-features-dragreorder-1](images/raddocking-features-dragreorder-1.png)![raddocking-features-dragreorder-2](images/raddocking-features-dragreorder-2.png)
+* When RadPaneGroup is in DocumentHost:
 
-* When RadPaneGroup is not in DocumentHost:![raddocking-features-dragreorder-3](images/raddocking-features-dragreorder-3.png)![raddocking-features-dragreorder-4](images/raddocking-features-dragreorder-4.png)
+![raddocking-features-dragreorder-1](images/raddocking-features-dragreorder-1.png)
+
+![raddocking-features-dragreorder-2](images/raddocking-features-dragreorder-2.png)
+
+* When RadPaneGroup is not in DocumentHost:
+
+![raddocking-features-dragreorder-3](images/raddocking-features-dragreorder-3.png)
+
+![raddocking-features-dragreorder-4](images/raddocking-features-dragreorder-4.png)

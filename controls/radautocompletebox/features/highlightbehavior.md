@@ -10,21 +10,13 @@ position: 3
 
 # Highlight Behavior
 
-
-
-With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadAutoCompleteBox__
-        provides a brand new __HighlightBehavior__ feature. Now it is possible to choose which item of the filtered items by the __RadAutoCompleteBox__ to
-        be highlighted depending on a custom logic.
-      
+With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadAutoCompleteBox__ provides a brand new __HighlightBehavior__ feature. Now it is possible to choose which item of the filtered items by the __RadAutoCompleteBox__ to be highlighted depending on a custom logic.
 
 ## Implementing Custom HighlightBehavior
 
-The following example will demonstrate how to implement a custom __HighlightBehavior__ that will always highlight the last matching item unless the entered text completely matches
-          an item from the ItemsSource of __RadAutoCompleteBox__. The ItemsSource should contain items of type Item with a Name property used as a __DisplayMemberPath__.
-        
+The following example will demonstrate how to implement a custom __HighlightBehavior__ that will always highlight the last matching item unless the entered text completely matches an item from the ItemsSource of __RadAutoCompleteBox__. The ItemsSource should contain items of type Item with a Name property used as a __DisplayMemberPath__.
 
 Firstly you would need to create a custom class that inherits from the default __HighlightBehavior__ of __RadAutoCompleteBox__:
-        
 
 #### __C#__
 
@@ -33,9 +25,7 @@ Firstly you would need to create a custom class that inherits from the default _
 	{
 	
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
 
@@ -44,13 +34,9 @@ Firstly you would need to create a custom class that inherits from the default _
 		Inherits HighlightBehavior
 	
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Next thing you have to do is to override the __FindHighlightedIndex()__ method of the behavior and implement the needed custom logic. For
-          this scenario you will need to return the index of the last item of the filtered items if there isn't exact match:
-        
+Next thing you have to do is to override the __FindHighlightedIndex()__ method of the behavior and implement the needed custom logic. For this scenario you will need to return the index of the last item of the filtered items if there isn't exact match:
 
 #### __C#__
 
@@ -74,9 +60,7 @@ Next thing you have to do is to override the __FindHighlightedIndex()__ method o
 	    // return the index of the last item from the filtered items 
 	    return items.Count - 1;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
 
@@ -97,18 +81,13 @@ Next thing you have to do is to override the __FindHighlightedIndex()__ method o
 		' return the index of the last item from the filtered items 
 		Return items.Count - 1
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipIf you don't want to highlight any of the filtered items you should return __-1__ in the __FindHighlightedIndex()__ method.
-          
 
 >If the returned index from the __FindHighlightedIndex()__ method goes out of range - no item will be highlighted (the index of the highlighted item will be set to -1).
-          
 
 After the behavior is implemented you have to set it as __HighlightBehavior__ of __RadAutoCompleteBox__ as shown below:
-        
 
 #### __XAML__
 
@@ -116,20 +95,17 @@ After the behavior is implemented you have to set it as __HighlightBehavior__ of
 	<telerik:RadAutoCompleteBox ItemsSource="{Binding Items}"
 	                            DisplayMemberPath="Name"
 	                            HighlightBehavior="{StaticResource MyHighlightBehavior}" />
-	{{endregion}}
-
-
+{{endregion}}
 
 The following figures demonstrate the final result:
-        
 
+Figure 1: When there isn't exact match the last filtered item is highlighted.
 
-            Figure 1: When there isn't exact match the last filtered item is highlighted.
-          ![radautocompletebox-features-highlightbehavior-2](images/radautocompletebox-features-highlightbehavior-2.png)
+![radautocompletebox-features-highlightbehavior-2](images/radautocompletebox-features-highlightbehavior-2.png)
 
+Figure 2: When there is exact match the matched item is highlighted.
 
-            Figure 2: When there is exact match the matched item is highlighted.
-          ![radautocompletebox-features-highlightbehavior-3](images/radautocompletebox-features-highlightbehavior-3.png)
+![radautocompletebox-features-highlightbehavior-3](images/radautocompletebox-features-highlightbehavior-3.png)
 
 # See Also
 

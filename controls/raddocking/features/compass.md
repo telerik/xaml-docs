@@ -10,8 +10,6 @@ position: 4
 
 # Compass
 
-
-
 The __Compass__ element makes the whole docking process much easier, faster and precise. Thanks to it you can re-arrange the panes of your working plot within a few seconds by just using [drag and drop]({%slug raddocking-features-drag-and-drop%}). The compass menu appears only when the user is dragging a pane, marking the possible docking positions within the root container and the container on which the mouse is currently over. 
 
 >The menu that marks the docking positions within the container underneath the mouse is called __Compass__, while the one that marks the possible docking positions within the root container is called __RootCompass__.
@@ -32,9 +30,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 	Compass compass = new Compass();
 	compass.IsBottomIndicatorVisible = false;
 	compass.IsCenterIndicatorVisible = false;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -42,9 +38,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 	Dim compass As Compass = New Compass()
 	compass.IsBottomIndicatorVisible = False
 	compass.IsCenterIndicatorVisible = False
-	{{endregion}}
-
-
+{{endregion}}
 
 The compass is a completely stylable control that can be easily customized. To learn more take a look at the [Styling the Compass]({%slug raddocking-styling-the-compass%}) topic. 
 
@@ -64,9 +58,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 	RootCompass rootCompass = new RootCompass();
 	rootCompass.IsLeftIndicatorVisible = false;
 	rootCompass.IsRightIndicatorVisible = false;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -74,9 +66,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 	Dim rootCompass As RootCompass = New RootCompass()
 	rootCompass.IsLeftIndicatorVisible = False
 	rootCompass.IsRightIndicatorVisible = False
-	{{endregion}}
-
-
+{{endregion}}
 
 The root compass is a completely stylable control that can be easily customized. To learn more take a look at the [Styling the RootCompass]({%slug raddocking-styling-the-root-compass%}) topic.
 
@@ -101,9 +91,7 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 	        e.Compass.Background = new SolidColorBrush( Colors.Red );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -121,17 +109,11 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 	        e.Compass.Background = New SolidColorBrush(Colors.Red)
 	    End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 And the result:
 
-
-
-
-         
-      ![](images/RadDocking_Features_Compass_030.png)
+![](images/RadDocking_Features_Compass_030.png)
 
 # See Also
 

@@ -10,9 +10,7 @@ position: 6
 
 # Drag and Drop
 
-
-
-The __Drag and Drop__compatibilities of the __RadDocking__control allow you to re-arange the panes in a complete __WYSIWYG__manner. When the process of dragging starts, the [Compass]({%slug raddocking-features-compass%}) menu appears to help you dock/undock your panes. 
+The __Drag and Drop__ compatibilities of the __RadDocking__ control allow you to re-arange the panes in a complete __WYSIWYG__ manner. When the process of dragging starts, the [Compass]({%slug raddocking-features-compass%}) menu appears to help you dock/undock your panes. 
 
 Below you can find several step-by-step tutorials for the most common operations that can be accomplished via drag and drop.
 
@@ -22,20 +20,13 @@ Below you can find several step-by-step tutorials for the most common operations
 
 1. Click on the pane's header and start dragging it to the container you wish to dock your pane to. 
 
-
 1. As soon as your mouse enters a container, the __Compass__ appears right in its middle. 
-
 
 1. While keeping the mouse button down, position your mouse cursor over the __compass indicator__ that points to the area you wish to dock your pane to. Notice how the possible Dropping Area is highlighted. 
 
-
 1. Drop the pane and see how it is docked in the highlighted area.
 
-
-
-
-         
-      ![](images/RadDocking_Features_Drag_and_Drop_010.png)
+	![](images/RadDocking_Features_Drag_and_Drop_010.png)
 
 As you can see you have dragged your pane over the Compass' right indicator which leads to highlighting the respective dropping area inside the underlying container.
 
@@ -45,20 +36,13 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 1. Click on the pane's header and start dragging it. 
 
-
 1. The __Root Compass__ appears. 
-
 
 1. While keeping the mouse button down, position your mouse cursor over the __root compass indicator__ that points to the area you wish to dock your pane to. Notice how the possible Dropping Area is highlighted. 
 
-
 1. Drop the pane and see how it is docked in the highlighted area.
 
-
-
-
-         
-      ![](images/RadDocking_Features_Drag_and_Drop_020.png)
+	![](images/RadDocking_Features_Drag_and_Drop_020.png)
 
 >Note that the [Root Compass](#Root_Compass) always marks the possible docking positions only for the root container.
 
@@ -66,20 +50,13 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 1. Click on the pane's header and start dragging it to the container you wish to dock your pane to. 
 
-
 1. As soon as your mouse enters a container, the __Compass__ appears right in its middle. 
-
 
 1. While keeping the mouse button down, position your mouse cursor over the __compass' center indicator__. Notice how the whole container is highlighted as Dropping Area. 
 
-
 1. Drop the pane and see how it is docked as a new tab.
 
-
-
-
-         
-      ![](images/RadDocking_Features_Drag_and_Drop_030.png)
+	![](images/RadDocking_Features_Drag_and_Drop_030.png)
 
 >tipTo dock a pane to a [Tabbed Document]({%slug raddocking-features-pane-groups%}), drag and drop it over the center indicator of the [Compass](#Compass).
 
@@ -87,17 +64,11 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 1. Click on the docked pane's header and start dragging it. 
 
-
 1. While keeping the mouse button down, position your mouse cursor outside any __Compass__ elements. 
-
 
 1. Drop the pane and notice that it is undocked and placed as a separate window ([ToolWindow]({%slug raddocking-features-tool-window%})).
 
-
-
-
-         
-      ![](images/RadDocking_Features_Drag_and_Drop_040.png)
+	![](images/RadDocking_Features_Drag_and_Drop_040.png)
 
 >tipTo undock a pane and make it floatable, just drag it out of its current place and drop it outside any compass indicator.
 

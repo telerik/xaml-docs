@@ -10,13 +10,9 @@ position: 4
 
 # Special Slots
 
-
-
 __RadGanttView__ provides __SpecialSlotsGenerator__ property which can be used to mark certain intervals along the visible range of the control as special slots.
-      
 
 SpecialSlotsGenerator is of type __IRangeGenerator__ and can be set to any of the following types:
-      
 
 * [SingleRangeGenerator;](#singlerangegenerator)
 
@@ -30,8 +26,6 @@ We will go through each of them separately.
 
 SingleRangeGenerator applies a single special slot to the whole visible range of RadGanttView. It can be set like this:
 
-
-
 #### __XAML__
 
 {{region radganttview-specialslots_0}}
@@ -40,9 +34,7 @@ SingleRangeGenerator applies a single special slot to the whole visible range of
 			<telerik:SingleRangeGenerator />
 		</telerik:RadGanttView.SpecialSlotsGenerator>
 	</telerik:RadGanttView>
-	{{endregion}}
-
-
+{{endregion}}
 
 And here is the end result:
 
@@ -58,8 +50,6 @@ WeekDaysGenerator allows you to set special slots on certain week days. It provi
 
 So it can be used to mark the working days, for example:
 
-
-
 #### __XAML__
 
 {{region radganttview-specialslots_1}}
@@ -68,17 +58,13 @@ So it can be used to mark the working days, for example:
 			<telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
 		</telerik:RadGanttView.SpecialSlotsGenerator>
 	</telerik:RadGanttView>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![ganttview specialslots 2](images/ganttview_specialslots_2.png)
 
 ## Custom IRangeGenerator
 
 You just need to create a custom class which implements __IRangeGenerator__ interface and implement GetRanges method which receives as a parameter the current VisibleRange of the GanttView:
-
-
 
 #### __C#__
 
@@ -97,15 +83,10 @@ You just need to create a custom class which implements __IRangeGenerator__ inte
 				}
 			}
 		}
-	}
-	
-	{{endregion}}
-
-
+}
+{{endregion}}
 
 Set the newly created class to the SpecialSlotsGenerator property:
-
-
 
 #### __XAML__
 
@@ -115,14 +96,10 @@ Set the newly created class to the SpecialSlotsGenerator property:
 			<local:CustomRangeGenerator />
 		</telerik:RadGanttView.SpecialSlotsGenerator>
 	</telerik:RadGanttView>
-	{{endregion}}
-
-
+{{endregion}}
 
 And the result is the following:
 
 ![ganttview specialslots 3](images/ganttview_specialslots_3.png)
 
-You can check the GanttView Special Slots example at 
-   			{% if site.site_name == 'Silverlight' %}[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#GanttView/Programming/SpecialSlots){% endif %}{% if site.site_name == 'WPF' %}[RadControls for WPF demos](http://demos.telerik.com/wpf/){% endif %}.   			
-   			 
+You can check the GanttView Special Slots example at {% if site.site_name == 'Silverlight' %}[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#GanttView/Programming/SpecialSlots){% endif %}{% if site.site_name == 'WPF' %}[RadControls for WPF demos](http://demos.telerik.com/wpf/){%endif%}.

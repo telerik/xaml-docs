@@ -10,21 +10,11 @@ position: 1
 
 # GanttView Styles
 
+__RadGanttView__ supports styling only with Implicit Styles. You can check how to set a theme to the control in [this topic]({%slug radganttview-styles-and-templates-setting-theme%}). Using implicit styles makes it much easier to customize different parts of the control.
 
+>Before proceeding, check the {% if site.site_name == 'Silverlight' %}[Implicit Style](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'WPF' %}[Implicit Style](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %} article.
 
-__RadGanttView__ supports styling only with Implicit Styles. You can check how to set a theme to the control in [this topic]({%slug radganttview-styles-and-templates-setting-theme%}).
-				Using implicit styles makes it much easier to customize different parts of the control.
-			
-
->Before proceeding, check the
-					{% if site.site_name == 'Silverlight' %}[Implicit Style](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'WPF' %}[Implicit Style](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %} article.
-				
-
-## 
-
-You can modify the look of the __RadGanttView__ and its elements separately by simply creating an implicit style with the correct TargetType.
-					Also you will have the option to create a Style based on the default Style for a certain element.
-				
+You can modify the look of the __RadGanttView__ and its elements separately by simply creating an implicit style with the correct TargetType. Also you will have the option to create a Style based on the default Style for a certain element.
 
 Let’s for example have a GanttView control defined like this:
 
@@ -49,19 +39,17 @@ Let’s for example have a GanttView control defined like this:
 			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 		</telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
+The following scheme shows the name of each element  that can be styled:
 
-
-The following scheme shows the name of each element  that can be styled:![ganttview styles 01](images/ganttview_styles_01.png)
+![ganttview styles 01](images/ganttview_styles_01.png)
 
 In the next screenshots we will focus on the Columns part of the GanttView control:
-				
 
 >CellHighlight and TreeCellHighlight are used for both highlighted and selected states of the Cell/TreeCell respectively.
 
 If we have CellTemplate and/or CellEditTemplate defined, the generated containers are different. For example, let&s change our GanttView Columns like this:
-				
 
 #### __XAML__
 
@@ -96,11 +84,11 @@ If we have CellTemplate and/or CellEditTemplate defined, the generated container
 			...
 		</telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
+The containers in the grid will be Cell/TreeCell instead of SimpleCell/SimpleTreeCell. Also the containers for editing will be CellEditing/TreeCellEditing:
 
-
-The containers in the grid will be Cell/TreeCell instead of SimpleCell/SimpleTreeCell. Also the containers for editing will be CellEditing/TreeCellEditing:![ganttview styles 09](images/ganttview_styles_09.png)
+![ganttview styles 09](images/ganttview_styles_09.png)
 
 In case we have SpecialSlots defined:
 
@@ -113,22 +101,50 @@ In case we have SpecialSlots defined:
 			<telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
 		</telerik:RadGanttView.SpecialSlotsGenerator>
 	</telerik:RadGanttView>
-	
-	{{endregion}}
+{{endregion}}
 
+We can style them as well:
 
+![ganttview styles 02](images/ganttview_styles_02.png)
 
-We can style them as well:![ganttview styles 02](images/ganttview_styles_02.png)
+The next screenshots show all the elements used for DragDrop and Resize functionality of the control:
 
-The next screenshots show all the elements used for DragDrop and Resize functionality of the control:![ganttview styles 03](images/ganttview_styles_03.png)![ganttview styles 04](images/ganttview_styles_04.png)![ganttview styles 05](images/ganttview_styles_05.png)
+![ganttview styles 03](images/ganttview_styles_03.png)![ganttview styles 04](images/ganttview_styles_04.png)
+
+![ganttview styles 05](images/ganttview_styles_05.png)
 
 In the following table you will find the corresponding TargetType for each of these elements:
-				
-<table><th><tr><td>
 
-Element</td><td>
-
-TargetType</td></tr></th><tr><td>Relation</td><td>RelationContainer</td></tr><tr><td>Event</td><td>EventContainer</td></tr><tr><td>Summary</td><td>SummaryContainer</td></tr><tr><td>Milestone</td><td>MilestoneContainer</td></tr><tr><td>ColumnHeader</td><td>ColumnHeaderContainer</td></tr><tr><td>SimpleCell</td><td>SimpleCellContainer</td></tr><tr><td>Cell</td><td>CellContainer</td></tr><tr><td>CellHighlight</td><td>CellHighlightContainer</td></tr><tr><td>CellEditing</td><td>CellEditingContainer</td></tr><tr><td>SimpleTreeCell</td><td>SimpleTreeCellContainer</td></tr><tr><td>TreeCell</td><td>TreeCellContainer</td></tr><tr><td>TreeCellHighlight</td><td>TreeCellHighlightContainer</td></tr><tr><td>TreeCellEditing</td><td>TreeCellEditingContainer</td></tr><tr><td>BorderContainer</td><td>BorderContainer</td></tr><tr><td>AlternatingBorderContainer</td><td>AlternatingBorderContainer</td></tr><tr><td>SpecialSlot</td><td>SpecialSlotContainer</td></tr><tr><td>GroupTick</td><td>GroupTickContainer</td></tr><tr><td>MinorTick</td><td>MinorTickContainer</td></tr><tr><td>MajorTick</td><td>MajorTickContainer</td></tr><tr><td>CurrentHourTick</td><td>CurrentHourTickContainer</td></tr><tr><td>RowHighlight</td><td>RowHighlightContainer</td></tr><tr><td>RowSelection</td><td>RowSelectionContainer</td></tr><tr><td>DragResizeSlotHighlight</td><td>DragResizeSlotHighlightContainer</td></tr><tr><td>DragResizeMilestoneSlotHighlight</td><td>DragResizeMilestoneSlotHighlightContainer</td></tr><tr><td>DragResizeSummarySlotHighlight</td><td>DragResizeSummarySlotHighlightContainer</td></tr><tr><td>GanttDragResizeVisualCue</td><td>GanttDragResizeVisualCue</td></tr><tr><td>GanttPresenterSplitter</td><td>GanttPresenterSplitter</td></tr><tr><td>ExpandToggleButton</td><td>ToggleButton</td></tr></table>
+<b>Element<b/>	|	<b>TargetType<b/>
+---	|	---
+Relation	|	RelationContainer
+Event	|	EventContainer
+Summary	|	SummaryContainer
+Milestone	|	MilestoneContainer
+ColumnHeader	|	ColumnHeaderContainer
+SimpleCell	|	SimpleCellContainer
+Cell	|	CellContainer
+CellHighlight	|	CellHighlightContainer
+CellEditing	|	CellEditingContainer
+SimpleTreeCell	|	SimpleTreeCellContainer
+TreeCell	|	TreeCellContainer
+TreeCellHighlight	|	TreeCellHighlightContainer
+TreeCellEditing	|	TreeCellEditingContainer
+BorderContainer	|	BorderContainer
+AlternatingBorderContainer	|	AlternatingBorderContainer
+SpecialSlot	|	SpecialSlotContainer
+GroupTick	|	GroupTickContainer
+MinorTick	|	MinorTickContainer
+MajorTick	|	MajorTickContainer
+CurrentHourTick	|	CurrentHourTickContainer
+RowHighlight	|	RowHighlightContainer
+RowSelection	|	RowSelectionContainer
+DragResizeSlotHighlight	|	DragResizeSlotHighlightContainer
+DragResizeMilestoneSlotHighlight	|	DragResizeMilestoneSlotHighlightContainer
+DragResizeSummarySlotHighlight	|	DragResizeSummarySlotHighlightContainer
+GanttDragResizeVisualCue	|	GanttDragResizeVisualCue
+GanttPresenterSplitter	|	GanttPresenterSplitter
+ExpandToggleButton	|	ToggleButton
 
 ## Examples
 
@@ -151,11 +167,11 @@ So, let’s create the following implicit style:
 		<Setter Property="Foreground" Value="White" />
 		<Setter Property="Background" Value="Navy" />		
 	</Style>
-	{{endregion}}
+{{endregion}}
 
+This will lead to the following result:
 
-
-This will lead to the following result:![ganttview styles 06](images/ganttview_styles_06.png)
+![ganttview styles 06](images/ganttview_styles_06.png)
 
 ### Setting implicit style to a certain element
 
@@ -187,8 +203,6 @@ In case you need to further customize an element, you could create an implicit s
 			</Setter.Value>
 		</Setter>
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 After adding this Style, the element will look like this:![ganttview styles 07](images/ganttview_styles_07.png)

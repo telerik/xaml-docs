@@ -77,7 +77,8 @@ controls/radtoolbar/overview/structure.md,
 controls/radtoolbar/overview/declaration.md,
 controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigation-framework.md,
 controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
-controls/radtreeview/how-to/howto-bind-treeview.md,]
+controls/radtreeview/how-to/howto-bind-treeview.md,
+controls/radcoverflow]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -99,6 +100,8 @@ navigation:
         title: RadCalendar
     controls/radcontextmenu:
         title: RadContextMenu
+    controls/radcoverflow:
+        title: RadCoverFlow
     controls/raddocking:
         title: RadDocking
     controls/radganttview:
@@ -174,6 +177,24 @@ navigation:
     controls/radradialmenu/commands:
         title: Commands
         position: 5
+    controls/raddocking/features/panes:
+        title: Panes
+        position: 0
+    controls/raddocking/theming:
+        title: Theming
+        position: 95
+    controls/radganttview/features/columns:
+        title: Columns
+        position: 0	
+    controls/radganttview/features/drag-and-drop:
+        title: Drag and Drop
+        position: 3
+    controls/radganttview/features/items:
+        title: Items
+        position: 1			
+    controls/radganttview/features/timeruler:
+        title: TimeRuler
+        position: 2	
 ## X3 Controls End
 
 ## X2 Controls Start

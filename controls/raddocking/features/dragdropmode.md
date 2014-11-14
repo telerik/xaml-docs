@@ -10,8 +10,6 @@ position: 8
 
 # DragDropMode
 
-
-
 With the official Q1 2013 release of RadControls we introduced a new DragDrop mode for the Docking control which enables dragging and dropping panes without being able to leave them floating.
 
 This behavior can be turned on with the new __DragDropMode__ property which is of Enum type and can be set to any of the following values:
@@ -24,17 +22,13 @@ The following snippets show how __DragDropMode__ property can be set in XAML and
 	<telerik:RadDocking x:Name="radDocking" DragDropMode="Deferred">
 		...
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region raddocking-features-dragdropmode_1}}
 	radDocking.DragDropMode = DockingDragDropMode.Deferred;
-	{{endregion}}
-
-
+{{endregion}}
 
 Let's, for example, have the following RadDocking definition:
 
@@ -50,9 +44,7 @@ Let's, for example, have the following RadDocking definition:
 			</telerik:RadPaneGroup>
 		</telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 Note how the dragging of "Pane1" looks in both DragDropModes:![docking features-dragdropmode 1](images/docking_features-dragdropmode_1.png)
 

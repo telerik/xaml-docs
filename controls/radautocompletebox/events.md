@@ -5,7 +5,7 @@ description: Events
 slug: radautocompletebox-events
 tags: events
 published: True
-position: 6
+position: 100
 ---
 
 # Events

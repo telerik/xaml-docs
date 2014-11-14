@@ -26,7 +26,7 @@ __RadDataFilter__ is a control that allows you to filter your data. It allows yo
 
 ## Adding RadDataFilter
 
-In order to use __RadDataFilter__in your project, you need to add references to the following assemblies:
+In order to use __RadDataFilter__ in your project, you need to add references to the following assemblies:
 
 * __Telerik.Windows.Controls.Data.dll__
 
@@ -41,6 +41,7 @@ To use the __RadDataFilter__ in the XAML you have to add the following namespace
 #### __XAML__
 
 {{region datafilter-getting-started_0}}
+
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
@@ -49,6 +50,7 @@ To use the __RadDataFilter__ in the XAML you have to add the following namespace
 #### __XAML__
 
 {{region datafilter-getting-started_1}}
+
 	<telerik:RadDataFilter x:Name="radDataFilter" />
 	{{endregion}}
 
@@ -56,8 +58,7 @@ To use the __RadDataFilter__ in the XAML you have to add the following namespace
 
 ## Configuring the RadDataFilter
 
-
-          You can configure __RadDataFilter__ via the properties that it exposes. You can do the following:
+You can configure __RadDataFilter__ via the properties that it exposes. You can do the following:
 
 * Use __DataAnotations__ to mark the members of your business objects. [Read more]({%slug raddatafilter-features-data-annotations%})
 
@@ -78,6 +79,7 @@ The collection in this example will hold business objects of type __Employee__. 
 #### __C#__
 
 {{region datafilter-getting-started_2}}
+
 	public class Employee
 	{
 	    public Employee( string name, string companyName, string title )
@@ -109,6 +111,7 @@ The collection in this example will hold business objects of type __Employee__. 
 #### __VB.NET__
 
 {{region datafilter-getting-started_3}}
+
 	Public Class Employee
 	 Public Sub New(name As String, companyName As String, title As String)
 	  Me.Name = name
@@ -152,6 +155,7 @@ After that, you create your __RadDataFilter__.
 #### __XAML__
 
 {{region datafilter-getting-started_4}}
+
 	<telerik:RadDataFilter x:Name="radDataFilter" />
 	{{endregion}}
 
@@ -162,6 +166,7 @@ Prepare a simple collection of employees and pass it to the __Source__ property 
 #### __C#__
 
 {{region datafilter-getting-started_5}}
+
 	ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
 	employees.Add( new Employee( "Maria Anders", "Alfreds Futterkiste", "Sales Representative" ) );
 	employees.Add( new Employee( "Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner" ) );
@@ -181,6 +186,7 @@ Prepare a simple collection of employees and pass it to the __Source__ property 
 #### __VB.NET__
 
 {{region datafilter-getting-started_6}}
+
 	Dim employees As New ObservableCollection(Of Employee)()
 	employees.Add(New Employee("Maria Anders", "Alfreds Futterkiste", "Sales Representative"))
 	employees.Add(New Employee("Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner"))
@@ -201,14 +207,13 @@ After the collection has been passed to the __Source__ property, the user will b
 
 ## Filter RadGridView
 
-__RadGridView__ can be filtered through its __RadGridView.Items__ collection.
-          The collection in this example holds business objects of type Employee. You should pass it to the __ItemsSource__ property of __RadGridView__.
-          After that, you can create your __RadDataFilter__ and bind its __RadDataFilter.Source__ property to the RadGridView.Items collection using ElementName Binding
+__RadGridView__ can be filtered through its __RadGridView.Items__ collection. The collection in this example holds business objects of type Employee. You should pass it to the __ItemsSource__ property of __RadGridView__. After that, you can create your __RadDataFilter__ and bind its __RadDataFilter.Source__ property to the RadGridView.Items collection using ElementName Binding.
         
 
 #### __XAML__
 
 {{region datafilter-getting-started_7}}
+
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <Grid.RowDefinitions>
@@ -235,10 +240,7 @@ __RadGridView__ can be filtered through its __RadGridView.Items__ collection.
 
 ![](images/RadDataFilter_GettingStarted_01.png)
 
->
-
-
-            You __can't use__ both RadDataFilter and RadGridView's __built in filtering__  because they are automatically synchronized with each other.
+>You __can't use__ both RadDataFilter and RadGridView's __built in filtering__  because they are automatically synchronized with each other.
           
 
 ## Exposing the Filtered Collection
@@ -248,6 +250,7 @@ The filtered collection inside the __RadDataFilter__ can be accessed via the __F
 #### __XAML__
 
 {{region datafilter-getting-started_8}}
+
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <Grid.RowDefinitions>

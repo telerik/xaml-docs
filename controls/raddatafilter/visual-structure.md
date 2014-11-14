@@ -11,18 +11,11 @@ position: 2
 # Visual Structure
 
 
-
-## 
-
 __RadDataFilter__ allows you to create complex filter criteria within unlimited number of filter conditions combined by logical operators. You can easily add nested filter criteria by clicking on the button for adding nested operators.
 
 This section defines the terms and concepts used in the scope of the __RadDataFilter__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to better describe your issue. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadDataFilter__ control.
 
-
-
-
-         
-      ![](images/RadDataFilter_VisualStructure_01.png)
+![](images/RadDataFilter_VisualStructure_01.png)
 
 * __Root Operator__ - represents the root filter operator. Any other operator gets nested under it.
 
@@ -48,7 +41,7 @@ This section defines the terms and concepts used in the scope of the __RadDataFi
 
 * __Match Case Button__ - represents a button that toggles the Match Case functionality.
 
->tipPlease check the [End-User Capabilities]({%slug datafilter-end-user-manual%}) topic for more information on how to create filter conditions via the UI. 
+>Please check the [End-User Capabilities]({%slug datafilter-end-user-manual%}) topic for more information on how to create filter conditions via the UI. 
 
 # See Also
 

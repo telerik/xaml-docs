@@ -16,23 +16,21 @@ This help article illustrates how to define your own DataField type.
 
 You can do it by overriding the GetControl() and GetControlBindingProperty() methods of the control. 
 
->
-        Note that this approach can be used to create a custom DataField of any kind!
+> Note that this approach can be used to create a custom DataField of any kind!
       
 
 For this purpose you have to create a new class:
       
 
-* 
-          DataFormNumericUpDownField - this class overrides the GetControl() and  GetControlBindingProperty() methods of the control.
+*  DataFormNumericUpDownField - this class overrides the GetControl() and  GetControlBindingProperty() methods of the control.
         
 
-Here is the code for the DataFormNumericUpDownField class:        
-      
+Here is the code for the DataFormNumericUpDownField class:              
 
 #### __C#__
 
 {{region raddataform-defining-custom-datafields_0}}
+
 	    public class DataFormNumericUpDownField : DataFormDataField
 	    {
 	        protected override DependencyProperty GetControlBindingProperty()
@@ -66,6 +64,7 @@ Initialize a RadDataForm in XAML:
 #### __XAML__
 
 {{region raddataform-defining-custom-datafields_2}}
+
 	<telerik:RadDataForm x:Name="DataForm1" AutoGeneratingField="RadDataForm_AutoGeneratingField" />
 	{{endregion}}
 
@@ -77,6 +76,7 @@ After that, you can handle DataForm's AutoGeneratingField event and set the cust
 #### __C#__
 
 {{region raddataform-defining-custom-datafields_1}}
+
 	    private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
 			{
 				if (e.DataField.Label.Equals("Number"))
@@ -96,6 +96,7 @@ Initialize a RadDataForm in XAML:
 #### __XAML__
 
 {{region raddataform-defining-custom-datafields_3}}
+
 	<Grid>
 	        <Grid.Resources>
 	            <DataTemplate x:Key="MyTemplate">

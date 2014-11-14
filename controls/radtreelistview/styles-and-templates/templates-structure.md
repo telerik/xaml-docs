@@ -12,119 +12,106 @@ position: 1
 
 
 
-This section is intended to give a broad understanding of the possible ways for modifying the appearance of the RadTreeListView and its elements. This can be achieved either by using the resources exposed by the API or by changing the appropriate ControlTemplates. Once you decide on the later, you will be able to reorder some of the template parts or add your own elements. However, in this case you should be careful to include all required parts. 
+This section is intended to give a broad understanding of the possible ways for modifying the appearance of the __RadTreeListView__ and its elements. This can be achieved either by using the resources exposed by the API or by changing the appropriate __ControlTemplates__. Once you decide on the later, you will be able to reorder some of the template parts or add your own elements. However, in this case you should be careful to include all required parts. 
 
 Basically, this topic will make you familiar with:
 
-* RadTreeListView Template Structure;
+* [RadTreeListView Template Structure](#radtreelistview);
 
-* TreeListViewRow Template Structure;
+* [TreeListViewRow Template Structure](#treelistviewrow);
 
-As the RadTreeListView inherits RadGridView, it uses the same styling mechanism and the rest of the templates are equal. You may take a look at the 
-        {% if site.site_name == 'Silverlight' %}[Styles and Templates](http://www.telerik.com/help/silverlight/radgridview-styles-and-templates-templates-structure.html){% endif %}{% if site.site_name == 'WPF' %}[Styles and Templates](http://www.telerik.com/help/wpf/radgridview-styles-and-templates-templates-structure.html){% endif %}
-        section of the RadGridView for further reference.
+As the __RadTreeListView__ inherits __RadGridView__, it uses the same styling mechanism and the rest of the templates are equal. You may take a look at the [Styles and Templates]({%slug radgridview-styles-and-templates-templates-structure%}) section of the __RadGridView__ for further reference.
       
 
->tip
-        For more information about templating and how to modify the default template of the RadControls read 
-        {% if site.site_name == 'Silverlight' %}[the common topics](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html){% endif %}{% if site.site_name == 'WPF' %}[the common topics](http://www.telerik.com/help/wpf/common-styling-appearance-edit-control-templates-blend.html){% endif %}
-        on this matter.
+>tip For more information about templating and how to modify the default template of the RadControls read [the common topics]({%slug styling-apperance-editing-control-templates%}) on this matter.
       
 
 ## RadTreeListView
 
+![](images/TreeLisView_TreeListViewStructure.png)
 
+* **PART_MasterGridContainer** - hosts the elements of the template. It is of type Border and represents the border of the __RadGridView__.
 
+* __HierarchyBackground__ - provides columns and rows for the template elements. It is of type __Grid__ and represents the background of the __RadTreeListView__. 
 
-               
-            ![](images/TreeLisView_TreeListViewStructure.png)
+* **PART_ITemsScrollViewer** - represent the control that handles the different types of rows(e.g. Header Row, Footer Row, New Row) and is of type __GridViewScrollViewer__.
 
-* PART_MasterGridContainer - hosts the elements of the template. It is of type Border and represents the border of the RadGridView.
+* **PART_TreeListViewVirtualizingPanel** - displays the data items of the __RadTreeListView__ and is of type __GridViewVirtualizingPanel__.
 
-* HierarchyBackground - provides columns and rows for the template elements. It is of type Grid and represents the background of the RadTreeListView. 
+* **PART_ScrollPositionIndicator** - represents the scrolling indicator that appears when using deferred scrolling in the __RadTreeListView__ and is of type __ScrollPositionIndicator__.
 
-* PART_ITemsScrollViewer - represent the control that handles the different types of rows(e.g. Header Row, Footer Row, New Row) and is of type GridViewScrollViewer.
+* **PART_FrozenColumnsPreview** - represents the drag preview of the draggable element that is used for freezing the __RadTreeListView__.
 
-* PART_TreeListViewVirtualizingPanel - displays the data items of the RadTreeListView and is of type GridViewVirtualizingPanel.
+* **PART_GridViewLoadingIndicator** - represents the indicator that appears when the __RadTreeListView__ is loading its data.
 
-* PART_ScrollPositionIndicator - represents the scrolling indicator that appears when using deferred scrolling in the RadTreeListView and is of type ScrollPositionIndicator.
-
-* PART_FrozenColumnsPreview - represents the drag preview of the draggable element that is used for freezing the RadTreeListView.
-
-* PART_GridViewLoadingIndicator - represents the indicator that appears when the RadTreeListView is loading its data.
-
-* DragBetweenItemsFeedback - represents the RadTreeListView DragVisualCue that is enabled when the following properties are set to True - IsDragDropEnabled, IsDragPreviewEnabled, IsDragToolTipEnabled.  
+* __DragBetweenItemsFeedback__ - represents the __RadTreeListView DragVisualCue__ that is enabled when the following properties are set to ___True___ - __IsDragDropEnabled__, __IsDragPreviewEnabled, IsDragToolTipEnabled__.  
 
 ## TreeListViewRow
 
+![](images/TreeLisView_TreeListViewRowStructure.png)
 
 
 
-               
-            ![](images/TreeLisView_TreeListViewRowStructure.png)
+* __Grid__ - host the element of the __TreeListViewRow__ template and it of type __SelectiveScrollingGrid__.
 
+* __SelectionBackground__ - represents the default background of the row and is of type __Border__.
 
+* **Background_Over** - represents the outer border of the row, when the mouse is over it and is of type __Border__.
 
-* Grid - host the element of the TreeListViewRow template and it of type SelectiveScrollingGrid.
+* __[Border]__ - represents the inner border and the background of the row, when the mouse is over and is of type __Border__.
 
-* SelectionBackground - represents the default background of the row and is of type Border.
+* **Background_Selected** - represents the outre border of the row, when it is selected and is of type __Border__.
 
-* Background_Over - represents the outer border of the row, when the mouse is over it and is of type Border.
+* __[Border]__ - represents the inner border and the background of the row, when it is selected and is of type __Border__.
 
-* [Border] - represents the inner border and the background of the row, when the mouse is over and is of type Border.
+* **Background_Invalid** - represent the outer border of the row, when it is invalid and is of type __Border__.
 
-* Background_Selected - represents the outre border of the row, when it is selected and is of type Border.
+* __[Border]__ - represent the inner border and the background of the row, when it is invalid and is of type __Border__.
 
-* [Border] - represents the inner border and the background of the row, when it is selected and is of type Border.
+* __[GridViewToggleButton]__ - represents the button that expands the row and is of type __GridViewToggleButton__.
 
-* Background_Invalid - represent the outer border of the row, when it is invalid and is of type Border.
+* __[Border]__ 
 
-* [Border] - represent the inner border and the background of the row, when it is invalid and is of type Border.
+* **PART_DataCellsPresenter** - displays the cells of the row and is of type __TreeListCellsPanel__.
 
-* [GridViewToggleButton] - represents the button that expands the row and is of type GridViewToggleButton.
+* **PART_RowBorder** - represents the border at the bottom of the row and is of type __Border__.
 
-* [Border] 
+* __[Border]__ - represents the border and the background of the hierarchy container and is of type __Border__.
 
-* PART_DataCellsPresenter - displays the cells of the row and is of type TreeListCellsPanel.
+* **PART_HierarchyChildPresenter** - displays the hierarchy children and is of type __ContentPresenter__.
 
-* PART_RowBorder - represents the border at the bottom of the row and is of type Border.
+* **PART_DetailsPResenter** - represents the row's details and is of type __DetailsPresenter__.
 
-* [Border] -represents the border and the background of the hierarchy container and is of type Border.
+* **PART_IndicatorPResenter** - hosts the elements of the row's indicator and represents its outer border. It is of type __Border__.
 
-* PART_HierarchyChildPresenter - displays the hierarchy children and is of type ContentPresenter.
+* __[Border]__ - represents the inner border and the background of the row's indicator and is of type __Border__.
 
-* PART_DetailsPResenter - represents the row's details and is of type DetailsPresenter.
+* __[Grid]__ - hosts the different indicators and is of type __Grid__.
 
-* PART_IndicatorPResenter - hosts the elements of the row's indicator and represents its outer border. It is of type Border.
+* __ErrorIndicator__ - hosts the __Paths__ for the indicator, when the row is invalid. It is of type __Grid__.
 
-* [Border] - represents the inner border and the background of the row's indicator and is of type Border.
+* __[Path]__
 
-* [Grid] - hosts the different indicators and is of type Grid.
+* __[Path]__
 
-* ErrorIndicator - hosts the Paths for the indicator, when the row is invalid. It is of type Grid.
+* __[Path]__
 
-* [Path]
+* __NavigationIndicator__ - hosts the __Paths__ for the indicator, when the row is selected. It is of type __Grid__.
 
-* [Path]
+* __[Path]__
 
-* [Path]
+* __[Path]__
 
-* NavigationIndicator - hosts the Paths for the indicator, when the row is selected. It is of type Grid.
+* __[Path]__
 
-* [Path]
+* __EditIndicator__ - hosts the Paths for the indicator, when the row is being edited. It is of type __Grid__.
 
-* [Path]
-
-* [Path]
-
-* EditIndicator - hosts the Paths for the indicator, when the row is being edited. It is of type Grid.
-
-* [Path]
-
-* [Path]
-
-* [Path]
-
-* [Path] 
+* __[Path]__
+  
+* __[Path]__
+  
+* __[Path]__
+  
+* __[Path]__ 
 
 

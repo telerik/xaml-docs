@@ -206,36 +206,26 @@ Below you can see how the MaskedInputs are being validated:
 
 {% if site.site_name == 'Silverlight' %}![Rad Masked Input-Validation-Data AnnotationsSL](images/RadMaskedInput-Validation-DataAnnotationsSL.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Masked Input-Validation-Data AnnotationsWPF](images/RadMaskedInput-Validation-DataAnnotationsWPF.png){% endif %}
 
->tip
-		  You can see a live demo demonstrating the __DataValidation__feature [here](http://demos.telerik.com/silverlight/#MaskedInput/Validation).
-		
-
->
+>tipYou can see a live demo demonstrating the __DataValidation__ feature [here](http://demos.telerik.com/silverlight/#MaskedInput/Validation).
 
 
 
 The RadMaskedInput controls support two properties that allow you to further customize your DataValidation scenarios:
 
 * __IsMaskValid__ - when this property is __False__, the entered input is invalid
-			  
 
 * __IsValidationHintVisisble__ - this property allows you to turn on and off the __MaskedInput__ controls validation hint
-			  
 
->tip
-
-
-			The data annotation attributes fall into three categories: validation attributes, display attributes, and data modeling attributes. You can find more info [here](http://msdn.microsoft.com/en-us/library/dd901590%28v=vs.95%29.aspx).
+>tipThe data annotation attributes fall into three categories: validation attributes, display attributes, and data modeling attributes. You can find more info [here](http://msdn.microsoft.com/en-us/library/dd901590%28v=vs.95%29.aspx).
 		  
 
-
-			You can find example with __RegularExpression__ attribute in the following section.
+You can find example with __RegularExpression__ attribute in the following section.
 		  
 
 ## Regular Expressions
 
 
-		  The __MaskedInput__suite of controls allow validation through __Regular Expressions__. In order to implement __regex__validation you will need a view model implementing the __INotifyPropertyChanged__interface. For the purpose of this tutorial we will define a ViewModel that contains Email and WebAddress properties. For each property we will apply a regular expression to validate the user's input in the __MaskedInput__control that will display the property accordingly.
+The __MaskedInput__ suite of controls allow validation through __Regular Expressions__. In order to implement __regex__ validation you will need a view model implementing the __INotifyPropertyChanged__ interface. For the purpose of this tutorial we will define a ViewModel that contains Email and WebAddress properties. For each property we will apply a regular expression to validate the user's input in the __MaskedInput__ control that will display the property accordingly.
 		
 
 First, we need a view model:
@@ -337,23 +327,13 @@ First, we need a view model:
 
 
 
->important
-
-
-			Note that you have to invoke the __Validator.ValidateProperty__ method before setting a new value in the property setter.
+>importantNote that you have to invoke the __Validator.ValidateProperty__ method before setting a new value in the property setter.
 		  
 
 
-		  In the above __MaskedInputViewModel__implementation it is important to note the
-		  __regular expressions__that validate the Email and WebAddress properties, as well as the custom
-		  __ErrorMessage__that is defined for each property. In order to  apply such attributes that specify validation rules,
-		  you need to add a reference to the
-		  {% if site.site_name == 'Silverlight' %}[System.ComponentModel.DataAnnotations](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations%28v=vs.95%29.aspx){% endif %}{% if site.site_name == 'WPF' %}[System.ComponentModel.DataAnnotations](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx){% endif %}
-		  namespace.
+In the above __MaskedInputViewModel__ implementation it is important to note the __regular expressions__ that validate the Email and WebAddress properties, as well as the custom __ErrorMessage__ that is defined for each property. In order to  apply such attributes that specify validation rules, you need to add a reference to the {% if site.site_name == 'Silverlight' %}[System.ComponentModel.DataAnnotations](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations%28v=vs.95%29.aspx){% endif %}{% if site.site_name == 'WPF' %}[System.ComponentModel.DataAnnotations](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx){% endif %} namespace.
 		
-
-
-		  Then you can define the __RadMaskedInput__controls that will display the Email and WebAddress business properties:
+Then you can define the __RadMaskedInput__ controls that will display the Email and WebAddress business properties:
 		
 
 #### __XAML__
@@ -366,14 +346,9 @@ First, we need a view model:
 
 
 
->important
-
-
-			Note that you have set __AllowInvalidValues__ to True. This ensures that the Setter of the properties will be fired even if the DataAnnotaion Validation does not succeed.
+>importantNote that you have set __AllowInvalidValues__ to True. This ensures that the Setter of the properties will be fired even if the DataAnnotaion Validation does not succeed.
 		  
-
-
-		  And finally you need to set the __MaskedInputViewModel__as __DataContext__ of the __MaskedTextInput__controls:
+And finally you need to set the __MaskedInputViewModel__ as __DataContext__ of the __MaskedTextInput__ controls:
 		
 
 #### __XAML__
@@ -408,5 +383,3 @@ First, we need a view model:
 	    </Grid>
 	</UserControl>
 	{{endregion}}
-
-

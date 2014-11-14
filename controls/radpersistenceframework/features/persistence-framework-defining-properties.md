@@ -78,7 +78,7 @@ The __PropertyTypeMetadata__ class exposes the following members:
 * __TypeString__ - is of type string and allows you to set the type of the properties that should be persisted in XAML.
 			
 
-* __ShouldSerialize() -__ this method evaluates the __PropertyTypeMetadata__ properties to decide whether a property should or shouldn't be persisted
+* __ShouldSerialize()__ - this method evaluates the __PropertyTypeMetadata__ properties to decide whether a property should or shouldn't be persisted
 			
 
 ## SerializationMetadataCollection
@@ -98,7 +98,7 @@ The __SerializationMetadataCollection__ also exposes an __Operator__ property th
 The __SerializationMetadataCollection__ class exposes the following methods:
 		
 
-* __ShouldSerialize() -__the method evaluates each __SerializationMetadataCollection__ item in order to determine which properties should be persisted.
+* __ShouldSerialize()__ - the method evaluates each __SerializationMetadataCollection__ item in order to determine which properties should be persisted.
 			
 
 For example in the __RadTreeView__ definition we can define only the __IsExpanded__ and __IsSelected__ properties to be persisted:
@@ -156,5 +156,3 @@ Or you can define all properties to be persisted except the __IsSelected__ prope
 	...
 	</telerik:RadTreeView>
 	{{endregion}}
-
-

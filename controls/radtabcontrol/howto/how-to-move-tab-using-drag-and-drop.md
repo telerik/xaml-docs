@@ -14,9 +14,7 @@ position: 0
 
 ## 
 
-Set the __RadTabControl__'s property __AllowDragReorder__ to 
-        __True__ or __False__ to allow/disallow the user to reorder the tab items of your tab 
-        control using __Drag & Drop__.
+Set the __RadTabControl__'s property __AllowDragReorder__ to __True__ or __False__ to allow/disallow the user to reorder the tab items of your tab control using __Drag & Drop__.
 
 #### __XAML__
 
@@ -47,9 +45,9 @@ The same behavior can be enabled/disabled in the code-behind.
 #### __VB.NET__
 
 {{region radtabcontrol-how-to-move-tab-using-drag-and-drop_2}}
-		Private Sub EnableReordering()
-			radTabControl.AllowDragReorder = True
-		End Sub
+    Private Sub EnableReordering()
+        radTabControl.AllowDragReorder = True
+    End Sub
 	{{endregion}}
 
 

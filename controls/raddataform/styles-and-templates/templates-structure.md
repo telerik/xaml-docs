@@ -10,9 +10,7 @@ position: 1
 
 # Templates Structure
 
-
-
-Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the RadDataForm allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with:
+Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, RadDataForm allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with:
 
 * RadDataForm Template Structure
 
@@ -20,7 +18,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 * CollectionNavigator Template Structure
 
->tipFor more information about templating and how to modify the default templates of the RadControls read the common topics on the matter.
+>For more information about templating and how to modify the default templates of the RadControls read the common topics on the matter.
 
 ## RadDataForm
 
@@ -55,8 +53,6 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 * __PART_CancelButton__ - represents the CancelButton and is of type RadButton
 
 * __Background_Disabled__ - represents the background of the RadDataForm in disabled state and is of type Border.
-
-
 
 
 

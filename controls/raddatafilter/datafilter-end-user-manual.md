@@ -11,7 +11,6 @@ position: 5
 # End User Manual
 
 
-
 __RadDataFilter__ allows you to create complex filter criteria within unlimited number of filter conditions combined by logical operators.  
 
 The following article will show you how to:
@@ -26,19 +25,11 @@ To create a filter condition you need to define the column/field, the operator (
 
 If no filtering has been applied, __RadDataFilter__ will contain the root operator only.
 
-
-
-
-         
-      ![](images/RadDataFilter_End_User_Manual_01.png)
+ ![](images/RadDataFilter_End_User_Manual_01.png)
 
 To add your first filter criteria - click on the green plus sign on the right side. It will create a new row with several elements.
 
-
-
-
-         
-      ![](images/RadDataFilter_End_User_Manual_02.png)
+ ![](images/RadDataFilter_End_User_Manual_02.png)
 
 The first DropDown contains all the data fields/columns of the data source, to which __RadDataFilter__ is bound. They are automatically populated, so you do not need to do any code to get them. The second dropdown shows the available logical operators that could be applied against the type of the selected field. For example the text field will have the __Contains__ or __Starts With__ operators, while the __DateTime__ field will have __Is Greater Than__ operators.
 
@@ -46,11 +37,7 @@ Now that we have the field and the operator we need to provide the value. Just t
 
 To do so, just click on the __And__ root operator to switch it to __Or__ and then press the green plus sign to add another filter row.
 
-
-
-
-         
-      ![](images/RadDataFilter_End_User_Manual_03.png)
+ ![](images/RadDataFilter_End_User_Manual_03.png)
 
 ## Build Complex Filter Criteria
 
@@ -72,38 +59,21 @@ The groups are combined by the same OR operator. After the filter groups have be
 
 Change the root logical operator to OR. To do this, click the current AND operator and it will switch to OR.
 
-
-
-
-         
-      ![](images/RadDataFilter_End_User_Manual_04.png)
+![](images/RadDataFilter_End_User_Manual_04.png)
 
 Add a new filter condition group by clicking the green plus sign. This will create a new filtering row. To create a group - click on its button. 
 
 ![](images/datafilter_create_group.png)
 
-
-
-       
-      ![](images/RadDataFilter_End_User_Manual_05.png)
+![](images/RadDataFilter_End_User_Manual_05.png)
 
 Now change the field column from __Quantity__ to __OrderDate__ and the filter operator from *Is equal to* to *Is greater than or equal to* and select the proper date from the built-in calendar.
 
-**
-
-
-
-
-         
-      ![](images/RadDataFilter_End_User_Manual_06.png)
+ ![](images/RadDataFilter_End_User_Manual_06.png)
 
 Now the first group is done, let's create the second one. Click on the green plus sign next to the OR operator to create the next group. Follow step 2 from above to add two conditions to the group.
 
-
-
-
-         
-      ![](images/RadDataFilter_End_User_Manual_07.png)
+ ![](images/RadDataFilter_End_User_Manual_07.png)
 
 That's it. The following filter criteria has been applied to the __RadDataFilter__:
 

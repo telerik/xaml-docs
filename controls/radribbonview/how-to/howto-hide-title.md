@@ -43,7 +43,7 @@ In order to do this, you need to set the __RadRibbonView__'s __TitleBarVisibilit
 
 
 The result is shown on the next image - the title is hidden.
-		![Rad Ribbon View How To Hide The Title](images/RadRibbonView_HowTo_HideTheTitle.png)
+![Rad Ribbon View How To Hide The Title](images/RadRibbonView_HowTo_HideTheTitle.png)
 
 >The __QuckAccessToolBar__ will be also hidden.
 		  

@@ -14,11 +14,12 @@ position: 1
 
 ## 
 
-If you bind RadDataPager.Source to RadDataServiceDataSource.DataView, you will get automatic server-side paging. The two controls will automatically communicate with each other thanks to the IPagedCollectionView interface which both respect:
+If you bind __RadDataPager.Source__ to __RadDataServiceDataSource.DataView__, you will get automatic server-side paging. The two controls will automatically communicate with each other thanks to the __IPagedCollectionView__ interface which both respect:
 
 #### __XAML__
 
 {{region raddataservicedatasource-paging-paging-through-raddatapager_0}}
+
 	<Grid x:Name="LayoutRoot" Background="White">
 	 <Grid.RowDefinitions>
 	  <RowDefinition Height="*"/>
@@ -34,16 +35,12 @@ If you bind RadDataPager.Source to RadDataServiceDataSource.DataView, you will g
 	     ShowGroupPanel="False"/>  
 	 <telerik:RadDataPager Grid.Row="1" Source="{Binding DataView, ElementName=customersDataSource}" PageSize="10"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
 In this case on running the application the following will be visualized:
 
-
-
-
-         
-      ![](images/RadDataServiceDataSource_PagingThroughRadDataPager.png)
+![](images/RadDataServiceDataSource_PagingThroughRadDataPager.png)
 
 

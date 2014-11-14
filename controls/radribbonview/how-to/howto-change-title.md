@@ -12,7 +12,8 @@ position: 5
 
 
 
-The purpose of this topic is to show you how to change the __RadRibbonView__'s __Title__![Rad Ribbon View How To Change The Title](images/RadRibbonView_HowTo_ChangeTheTitle.png)
+The purpose of this topic is to show you how to change the __RadRibbonView__'s __Title__
+![Rad Ribbon View How To Change The Title](images/RadRibbonView_HowTo_ChangeTheTitle.png)
 
 ## 
 

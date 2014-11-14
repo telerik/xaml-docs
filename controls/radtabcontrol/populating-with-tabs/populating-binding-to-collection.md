@@ -20,8 +20,7 @@ The purpose of this tutorial is to show you how to bind a __RadTabControl__ to a
 When you want the tabs of the __RadTabControl__ to be automatically generated on the basis of a collection, use the __ItemsSource__ property.
 				
 
-* 
-						Create a new class named __Person__. The class' structure is shown on the next code-snippet.
+* Create a new class named __Person__. The class' structure is shown on the next code-snippet.
 						
 
 #### __C#__
@@ -82,8 +81,7 @@ When you want the tabs of the __RadTabControl__ to be automatically generated on
 
 
 
-* 
-						Create a new class named __ViewModel__, like the example below:
+* Create a new class named __ViewModel__, like the example below:
 						
 
 #### __C#__
@@ -133,11 +131,9 @@ When you want the tabs of the __RadTabControl__ to be automatically generated on
 	End Class
 	{{endregion}}
 
-As you can see the __ViewModel__ class has a reference to an observable collection of __Person__ objects. In fact this will be set to the __ItemsSource__ property of the __RadTabControl__.
-						Also that in the class' constructor the collection is initialized with some sample data.
+As you can see the __ViewModel__ class has a reference to an observable collection of __Person__ objects. In fact this will be set to the __ItemsSource__ property of the __RadTabControl__. Also that in the class' constructor the collection is initialized with some sample data.
 
-* 
-						Declare your __ViewModel__ as a resource.
+* Declare your __ViewModel__ as a resource.
 						
 
 #### __XAML__
@@ -150,8 +146,7 @@ As you can see the __ViewModel__ class has a reference to an observable collecti
 
 
 
-* 
-						Set the __ItemsSource__property of the __RadTabControl__.
+* Set the __ItemsSource__ property of the __RadTabControl__.
 						
 
 #### __XAML__
@@ -161,11 +156,12 @@ As you can see the __ViewModel__ class has a reference to an observable collecti
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Persons}"/>
 	{{endregion}}
 
-Run your demo. The result should be similar to the next image.![](images/RadTabControl_Populating_BindingToCollection_010.png)The reason for this result is that the __RadTabControl__ "still doesn't know" how to display these business objects. You need to "say" explicitly what to be displayed as a __Header__using either the __DisplayMemberPath__property or setting the __HeaderTemplate__ property. Additionally you need to set a __ContentTemplate__.
+Run your demo. The result should be similar to the next image.
+![](images/RadTabControl_Populating_BindingToCollection_010.png)
+The reason for this result is that the __RadTabControl__ "still doesn't know" how to display these business objects. You need to "say" explicitly what to be displayed as a __Header__ using either the __DisplayMemberPath__ property or setting the __HeaderTemplate__ property. Additionally you need to set a __ContentTemplate__.
 						
 
-* 
-						Set the __DisplayMemberPath__ property of the __RadTabControl__ to "Name".
+* Set the __DisplayMemberPath__ property of the __RadTabControl__ to "Name".
 						
 
 #### __XAML__
@@ -176,10 +172,10 @@ Run your demo. The result should be similar to the next image.![](images/RadTabC
 	    DisplayMemberPath="Name"/>
 	{{endregion}}
 
-The result should look like the image below.![](images/RadTabControl_Populating_BindingToCollection_020.png)
+The result should look like the image below.
+![](images/RadTabControl_Populating_BindingToCollection_020.png)
 
-* 
-						The final step is to create a __DataTemplate__ and set it as a __ContentTemplate__.
+* The final step is to create a __DataTemplate__ and set it as a __ContentTemplate__.
 						
 
 #### __XAML__
@@ -205,7 +201,9 @@ The result should look like the image below.![](images/RadTabControl_Populating_
 	</Grid>
 	{{endregion}}
 
-The final result is shown on the next image:![](images/RadTabControl_Populating_BindingToCollection_030.png)When the __ItemsSource__ is specified, __RadTabItem__ containers are generated for each item in the collection. By using the template properties of the __RadTabControl__ and the __RadTabItem__ you can control the appearance and the visualization of the items in the collection. [Read more about templates here]({%slug radtabcontrol-templating-overview%}).
+The final result is shown on the next image:
+![](images/RadTabControl_Populating_BindingToCollection_030.png)
+When the __ItemsSource__ is specified, __RadTabItem__ containers are generated for each item in the collection. By using the template properties of the __RadTabControl__ and the __RadTabItem__ you can control the appearance and the visualization of the items in the collection. [Read more about templates here]({%slug radtabcontrol-templating-overview%}).
 						
 
 # See Also

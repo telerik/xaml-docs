@@ -10,18 +10,12 @@ position: 2
 
 # Item Images
 
-
-
 __RadTreeView__ gives you the ability to define images for each item state. This tutorial will walk you through the following common tasks:
 
 * Setting the base images directory.
-
 * Setting the default image for a treeview item.
-
 * Setting image when the item is selected.
-
 * Setting image when the item is expanded.
-
 * Using different images from client bin, relative directory, dll.
 
 For the purpose of this tutorial, the treeview defined in the next XAML snippet will be used: 
@@ -46,8 +40,6 @@ For the purpose of this tutorial, the treeview defined in the next XAML snippet 
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
 	{{endregion}}
-
-
 
 ![](images/RadTreeView_TreeViewItemImages_001.PNG)
 
@@ -85,8 +77,6 @@ When you store all your images for the TreeView into a single folder you can use
 	</telerik:RadTreeView>
 	{{endregion}}
 
-
-
 The result is: 
 
 ![](images/RadTreeView_TreeViewItemImages_010.PNG)
@@ -107,71 +97,61 @@ When setting the __DefaultImageSrc__, __ExpandedImageSrc__ and __SelectedImageSr
 
 * set the path to the image as a string 
 
-#### __C#__
+	#### __C#__
 
-{{region radtreeview-feautres-treeviewitem-item-images_2}}
-	private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
-	{
-	 e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png";
-	 e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png";
-	 e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"; 
-	}
-	{{endregion}}
+	{{region radtreeview-feautres-treeviewitem-item-images_2}}
+		private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
+		{
+		 e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png";
+		 e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png";
+		 e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"; 
+		}
+		{{endregion}}
 
+	#### __VB.NET__
 
-
-#### __VB.NET__
-
-{{region radtreeview-feautres-treeviewitem-item-images_3}}
-	Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
-		e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png"
-		e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png"
-		e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"
-	End Sub
-	{{endregion}}
-
-
+	{{region radtreeview-feautres-treeviewitem-item-images_3}}
+		Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
+			e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png"
+			e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png"
+			e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"
+		End Sub
+		{{endregion}}
 
 or
 
 * set the path using an object of type __BitmapImage__
 
-____
+	#### __C#__
 
-#### __C#__
-
-{{region radtreeview-feautres-treeviewitem-item-images_4}}
-	private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
-	{
-	 BitmapImage defaultImage = new BitmapImage(new Uri("Icon1.png", UriKind.Relative));
-	 e.PreparedItem.DefaultImageSrc = defaultImage;
-	 BitmapImage expandedImage = new BitmapImage(new Uri("Icon2.png", UriKind.Relative));
-	 e.PreparedItem.ExpandedImageSrc = expandedImage;
-	 BitmapImage selectedImage = new BitmapImage(new Uri("Icon3.png", UriKind.Relative));
-	 e.PreparedItem.SelectedImageSrc = selectedImage;
-	}
-	{{endregion}}
+	{{region radtreeview-feautres-treeviewitem-item-images_4}}
+		private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
+		{
+		 BitmapImage defaultImage = new BitmapImage(new Uri("Icon1.png", UriKind.Relative));
+		 e.PreparedItem.DefaultImageSrc = defaultImage;
+		 BitmapImage expandedImage = new BitmapImage(new Uri("Icon2.png", UriKind.Relative));
+		 e.PreparedItem.ExpandedImageSrc = expandedImage;
+		 BitmapImage selectedImage = new BitmapImage(new Uri("Icon3.png", UriKind.Relative));
+		 e.PreparedItem.SelectedImageSrc = selectedImage;
+		}
+		{{endregion}}
 
 
 
 
 
-#### __VB.NET__
+	#### __VB.NET__
 
-{{region radtreeview-feautres-treeviewitem-item-images_5}}
-	Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
-		Dim defaultImage As New BitmapImage(New Uri("Icon1.png", UriKind.Relative))
-		e.PreparedItem.DefaultImageSrc = defaultImage
-		Dim expandedImage As New BitmapImage(New Uri("Icon2.png", UriKind.Relative))
-		e.PreparedItem.ExpandedImageSrc = expandedImage
-		Dim selectedImage As New BitmapImage(New Uri("Icon3.png", UriKind.Relative))
-		e.PreparedItem.SelectedImageSrc = selectedImage
-	End Sub
-	{{endregion}}
-
-
-
-
+	{{region radtreeview-feautres-treeviewitem-item-images_5}}
+		Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
+			Dim defaultImage As New BitmapImage(New Uri("Icon1.png", UriKind.Relative))
+			e.PreparedItem.DefaultImageSrc = defaultImage
+			Dim expandedImage As New BitmapImage(New Uri("Icon2.png", UriKind.Relative))
+			e.PreparedItem.ExpandedImageSrc = expandedImage
+			Dim selectedImage As New BitmapImage(New Uri("Icon3.png", UriKind.Relative))
+			e.PreparedItem.SelectedImageSrc = selectedImage
+		End Sub
+		{{endregion}}
 
 ## Using Images from the Client Bin Directory or a Relative Directory
 
@@ -189,8 +169,6 @@ For example, see these cases:
 	ImagesBaseDir="/Examples/Common/Images/Vista Icons/"
 	{{endregion}}
 
-
-
 Which means that the "Examples" directory is located in the same directory where the .XAP file is placed and the images are located in the "Vista Icons" directory. 
 
 ## Using Images from the .XAP file
@@ -202,13 +180,8 @@ Sometimes your images may be packed in the .XAP file. In this case you have the 
 * If the images are placed in a directory, then you should set the __ImagesBaseDir__ with a relative path.
 
 # See Also
-
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})
-
  * [Enable and Disable Items]({%slug radtreeview-feautres-treeviewitem-enable-disable-items%})
-
  * [Working with Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
-
  * [Expanding and Collapsing Items]({%slug radtreeview-feautres-treeviewitem-expanding-and-collapsing-items%})
-
  * [BringIntoView Support]({%slug radtreeview-features-treeviewitem-bring-into-view-support%})

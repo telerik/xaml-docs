@@ -17,11 +17,9 @@ position: 0
 Thank you for choosing Telerik __RadPdfViewer__!
       
 
-__RadPdfViewer__ is a control that is able to display PDF files natively in 
-               {% if site.site_name == 'Silverlight' %}
-        Silverlight{% endif %}{% if site.site_name == 'WPF' %}
-         WPF{% endif %}.
-      ![Rad Pdf Viewer radpdfviewer overview 02](images/RadPdfViewer_radpdfviewer_overview_02.png)
+__RadPdfViewer__ is a control that is able to display PDF files natively in {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %} WPF{% endif %}. 
+
+![Rad Pdf Viewer radpdfviewer overview 02](images/RadPdfViewer_radpdfviewer_overview_02.png)
 
 ## 
 

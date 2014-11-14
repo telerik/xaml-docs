@@ -31,7 +31,7 @@ Here is a regular __RadRating__ declaration:
 
 ![](images/rating_default.png)
 
-In order to add rating items you need to use the __RadRating's____Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadRatingItems__. For example, insert the following lines to the declaration of your __RadRating__ and see how it will change.
+In order to add rating items you need to use the __RadRating's__ __Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadRatingItems__. For example, insert the following lines to the declaration of your __RadRating__ and see how it will change.
 
 #### __XAML__
 

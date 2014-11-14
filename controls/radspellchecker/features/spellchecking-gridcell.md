@@ -47,7 +47,7 @@ After that you can set the attached property telerik:RadGridViewSpellCheckHelper
 	      </telerik:GridViewDataColumn>
 	   </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -101,7 +101,7 @@ Here is an example of the XAML:
 	      </telerik:GridViewDataColumn>
 	   </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-	{{endregion}}
+{{endregion}}
 
 
 

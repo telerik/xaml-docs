@@ -12,16 +12,12 @@ position: 3
 
 
 
-The __RadTreeListView__ API offers __ScrollIntoView__ support through the following methods:
+The __RadTreeListView API__ offers __ScrollIntoView__ support through the following methods:
 	  
 
-* [
-			  ScrollIntoViewAsync()
-			](#scrollintoviewasync())
+* [ScrollIntoViewAsync()](#scrollintoviewasync())
 
-* [
-			  ScrollIntoView()
-			](#scrollintoview())
+* [ScrollIntoView()](#scrollintoview())
 
 The goal of this tutorial is to demonstrate how you can bring a particular, deeply nested __TreeListViewRow__ into view. This might be helpful if you need a fast hierarchy control with many nested levels and __RadTreeView__ is slow in your particular scenario with bring into view. This example is configured in such way that __RadTreeListView__ behaves and feels much like __RadTreeView__.
 	  
@@ -45,6 +41,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 #### __XAML__
 
 {{region radtreelistview-how-to-scrollintoview-0}}
+
 	<Grid x:Name="LayoutRoot" Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="40" />
@@ -92,7 +89,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 							   Content="Expand in a Loop and Then Scroll" />
 		</StackPanel>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -102,6 +99,7 @@ The next step is to define the business object.
 #### __C#__
 
 {{region radtreelistview-how-to-scrollintoview-0}}
+
 	public class DataItem : ViewModelBase
 	    {
 	        private string name;
@@ -144,13 +142,14 @@ The next step is to define the business object.
 	            }
 	        }
 	    }
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreelistview-how-to-scrollintoview-0}}
+
 	Public Class DataItem
 		Inherits ViewModelBase
 	
@@ -187,7 +186,7 @@ The next step is to define the business object.
 				End Get
 			End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -197,6 +196,7 @@ What comes next, is to populate with data.
 #### __C#__
 
 {{region radtreelistview-how-to-scrollintoview-1}}
+
 	public partial class Example : UserControl
 	{
 		DateTime listBringStart;
@@ -219,13 +219,14 @@ What comes next, is to populate with data.
 			this.treeList.ItemsSource = list;
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreelistview-how-to-scrollintoview-1}}
+
 	Partial Public Class Example
 		Inherits UserControl
 	
@@ -246,20 +247,19 @@ What comes next, is to populate with data.
 			Me.treeList.ItemsSource = list
 		End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
 ## ScrollIntoViewAsync()
 
-Clicking the first button will bring an item which is 20 levels deep with updating the UI on every level expansion. For this purpose we will use the
-		  {% if site.site_name == 'Silverlight' %}[ScrollIntoViewAsync (Object dataItem, Action(FrameworkElement) scrollFinishedCallback, bool expandItem)](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_radtreelistview_scrollintoviewasync_1.html){% endif %}{% if site.site_name == 'WPF' %}[ScrollIntoViewAsync (Object dataItem, Action(FrameworkElement) scrollFinishedCallback, bool expandItem)](http://www.telerik.com/help/wpf/m_telerik_windows_controls_radtreelistview_scrollintoviewasync_1.html){% endif %}
-		   method, which scrolls the row containing the data item into view in an asynchronous manner.
+Clicking the first button will bring an item which is 20 levels deep with updating the UI on every level expansion. For this purpose we will use the {% if site.site_name == 'Silverlight' %}[ScrollIntoViewAsync (Object dataItem, Action(FrameworkElement) scrollFinishedCallback, bool expandItem)](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_radtreelistview_scrollintoviewasync_1.html){% endif %}{% if site.site_name == 'WPF' %}[ScrollIntoViewAsync (Object dataItem, Action(FrameworkElement) scrollFinishedCallback, bool expandItem)](http://www.telerik.com/help/wpf/m_telerik_windows_controls_radtreelistview_scrollintoviewasync_1.html){% endif %} method, which scrolls the row containing the data item into view in an asynchronous manner.
 		
 
 #### __C#__
 
 {{region radtreelistview-how-to-scrollintoview-2}}
+
 	private void RadButton_Click_1(object sender, RoutedEventArgs e)
 	{
 		this.listBringStart = DateTime.Now;
@@ -276,13 +276,14 @@ Clicking the first button will bring an item which is 20 levels deep with updati
 		var newItem = item.Children[85];
 		this.treeList.ScrollIntoViewAsync(item, (f) => { ScrollIntoViewRecursive(++level, newItem); }, true);
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreelistview-how-to-scrollintoview-2}}
+
 	Private Sub RadButton_Click_1(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Me.listBringStart = Date.Now
 		Me.ScrollIntoViewRecursive(0, list(85))
@@ -299,20 +300,19 @@ Clicking the first button will bring an item which is 20 levels deep with updati
 			ScrollIntoViewRecursive(level, newItem)
 		End Sub, True)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
 ## ScrollIntoView()
 
-Clicking the second button will update the UI only when the bring operation is finished. Here we are using the
-		  {% if site.site_name == 'Silverlight' %}[ScrollIntoView(Object dataItem, bool expandItem)](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_radtreelistview_scrollintoview.html){% endif %}{% if site.site_name == 'WPF' %}[ScrollIntoView(Object dataItem, bool expandItem)](http://www.telerik.com/help/wpf/m_telerik_windows_controls_radtreelistview_scrollintoview.html){% endif %}
-		   method, which scrolls the row containing the data item into view.
+Clicking the second button will update the UI only when the bring operation is finished. Here we are using the {% if site.site_name == 'Silverlight' %}[ScrollIntoView(Object dataItem, bool expandItem)](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_radtreelistview_scrollintoview.html){% endif %}{% if site.site_name == 'WPF' %}[ScrollIntoView(Object dataItem, bool expandItem)](http://www.telerik.com/help/wpf/m_telerik_windows_controls_radtreelistview_scrollintoview.html){% endif %} method, which scrolls the row containing the data item into view.
 		
 
 #### __C#__
 
 {{region radtreelistview-how-to-scrollintoview-3}}
+
 	private void RadButton_Click_2(object sender, RoutedEventArgs e)
 	{
 		DateTime startTime = DateTime.Now;
@@ -328,13 +328,14 @@ Clicking the second button will update the UI only when the bring operation is f
 		DateTime end = DateTime.Now;
 		MessageBox.Show(end.Subtract(startTime).TotalSeconds.ToString() + " sec.");
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreelistview-how-to-scrollintoview-3}}
+
 	Private Sub RadButton_Click_2(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim startTime As Date = Date.Now
 	
@@ -348,15 +349,14 @@ Clicking the second button will update the UI only when the bring operation is f
 		Dim [end] As Date = Date.Now
 		MessageBox.Show([end].Subtract(startTime).TotalSeconds.ToString() & " sec.")
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
->tipPlease have in mind that running the application without debugger (Ctrl + F5 when in VS) will result in faster user experience.
+>tipPlease have in mind that running the application without debugger (__Ctrl + F5__ when in VS) will result in faster user experience.
 		  
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository 
-			[here](https://github.com/telerik/xaml-sdk), after navigating to TreeView/TreeListViewBringItemIntoView.
+>tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to ___TreeView/TreeListViewBringItemIntoView___.
 		  
 
 # See Also

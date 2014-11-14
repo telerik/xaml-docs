@@ -20,13 +20,11 @@ RadCollectionNavigator’s main purpose is to expose some of ICollectionView/IEd
 >In order to use it you need to add references to the assemblies Telerik.Windows.Data and Telerik.Windows.Controls.Data.
 
 And here is a simple example with a ListBox:
-      
-
-
 
 #### __XAML__
 
 {{region collectionnavigator_getting_started_0}}
+
 	<Grid x:Name="LayoutRoot" 
 	          Background="White">
 			<Grid.DataContext>
@@ -48,10 +46,6 @@ And here is a simple example with a ListBox:
 	{{endregion}}
 
 
-
-The result:
-        
+The result:     
 
 ![collectionnavigator 02](images/collectionnavigator_02.png)
-
-# See Also

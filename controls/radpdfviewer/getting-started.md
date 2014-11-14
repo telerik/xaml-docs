@@ -12,13 +12,7 @@ position: 2
 
 
 
-__RadPdfViewer__ is a control that allows you to display PDF files natively in
-        {% if site.site_name == 'Silverlight' %}
-          Silverlight
-        {% endif %}{% if site.site_name == 'WPF' %}
-          WPF
-        {% endif %}.
-        This topic will help you to quickly get started using the control. It will focus on the following:
+__RadPdfViewer__ is a control that allows you to display PDF files natively in {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %}. This topic will help you to quickly get started using the control. It will focus on the following:
       
 
 * [Adding the Required Assembly References](#assembly-references)
@@ -29,13 +23,7 @@ __RadPdfViewer__ is a control that allows you to display PDF files natively in
 
 ## Assembly References
 
-The assembly references you need to have in your
-          {% if site.site_name == 'Silverlight' %}
-            Silverlight
-          {% endif %}{% if site.site_name == 'WPF' %}
-            WPF
-          {% endif %}
-          project are as follows:
+The assembly references you need to have in your {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project are as follows:
         
 
 * Telerik.Windows.Controls.dll
@@ -54,8 +42,7 @@ If you would like to include a RadToolBar, similar to the NavigationPanel in the
 
 * Telerik.Windows.Controls.Navigation.dll
 
-As of Q3 2013 you can also take advantage of some RadPdfViewer-specific controls such as FindDialog and PercentComboBox. In order to use them you
-          need to the following references to your project:
+As of Q3 2013 you can also take advantage of some RadPdfViewer-specific controls such as FindDialog and PercentComboBox. In order to use them you need to the following references to your project:
         
 
 * Telerik.Windows.Controls.Input.dll
@@ -76,7 +63,7 @@ The first thing you need to do is declare the Telerik namespace.
 
 {{region radpdfviewer-getting-started_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"     
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -88,7 +75,7 @@ After that you can add a bare-bone RadPdfViewer like this:
 	<Grid>
 	    <telerik:RadPdfViewer x:Name="pdfViewer"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -102,10 +89,10 @@ The navigation panel that the PdfViewer had in its template in the beta version 
 #### __XAML__
 
 {{region radpdfviewer-getting-started_2}}
-	        <telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
+	<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
 	   …
 	</telerik:RadToolBar>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -120,19 +107,17 @@ You can then add buttons, comboboxes, etc. bound to the respective command descr
 	            </ToolTipService.ToolTip>
 	            <Image Source="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/open.png" Stretch="None" />
 	        </telerik:RadButton>
-	{{endregion}}
+{{endregion}}
 
 
-
->tipFor the whole configuration of a RadToolBar with all commands of the viewer, you can refer to
-            [this article]({%slug radpdfviewer-wiring-ui%}) and you can find more information about the command descriptors 
-            [here]({%slug radpdfviewer-command-descriptors%}).
+>tipFor the whole configuration of a RadToolBar with all commands of the viewer, you can refer to [this article]({%slug radpdfviewer-wiring-ui%}) and you can find more information about the command descriptors  [here]({%slug radpdfviewer-command-descriptors%}).
           
 
 ## 
 
-Having configured __RadPdfViewer__ in this way, it is ready to use.
-          Additional options, such as showing a PDF document when the viewer is loaded or binding the document,
-          are described in the article
-          [Showing a File]({%slug radpdfviewer-showing-a-file%}).
+Having configured __RadPdfViewer__ in this way, it is ready to use. Additional options, such as showing a PDF document when the viewer is loaded or binding the document, are described in the article [Showing a File]({%slug radpdfviewer-showing-a-file%}).
         
+
+# See Also
+* [Showing a File]({%slug radpdfviewer-showing-a-file%})
+* [Wiring UI]({%slug radpdfviewer-wiring-ui%})

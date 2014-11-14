@@ -23,7 +23,5 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Expand items into view__ - This example demonstrates how to expand and scroll into view an item or group of nested items.
               {% endif %}
 
->You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The __SDK Samples Browser__ application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
           
-
-# See Also

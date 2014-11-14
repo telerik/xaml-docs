@@ -20,8 +20,7 @@ Clicking the filtering icon in the column headers opens a menu with the distinct
 
 >Only the values at the highest level of the hierarchy are included in the distinct filter list.
 
-In order to filter __TreeListView__'s low level nodes directly through the distinct values listbox, you can manually set its __ItemsSource__.
-          Just subscribe to the __DistinctValuesLoading__ event of __TreeListView__ and set the __e.ItemsSource__ to the collection you want to show.
+In order to filter __TreeListView__'s low level nodes directly through the distinct values listbox, you can manually set its __ItemsSource__. Just subscribe to the __DistinctValuesLoading__ event of __TreeListView__ and set the __e.ItemsSource__ to the collection you want to show.
         
 
 For example:
@@ -29,17 +28,16 @@ For example:
 #### __C#__
 
 {{region radtreeliestview-getting-started_10}}
+
 	private void radTreeListView_DistinctValuesLoading(object sender, GridView.GridViewDistinctValuesLoadingEventArgs e)
 	{
 	    e.ItemsSource = WarehouseService.GetNames();
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
-As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its filtering mechanism. The __RadGridView__ allows you to implement programmatic filtering, custom filtering and more. To learn more read the 
-          {% if site.site_name == 'Silverlight' %}[respective topics](http://www.telerik.com/help/silverlight/gridview-filtering-basic.html){% endif %}{% if site.site_name == 'WPF' %}[respective topics](http://www.telerik.com/help/wpf/gridview-filtering-basic.html){% endif %}
-        in the __RadGridView's__ documentation.
+As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its filtering mechanism. The __RadGridView__ allows you to implement programmatic filtering, custom filtering and more. To learn more read the [respective topics]({%slug gridview-filtering-basic%}) in the __RadGridView's__ documentation.
 
 # See Also
 

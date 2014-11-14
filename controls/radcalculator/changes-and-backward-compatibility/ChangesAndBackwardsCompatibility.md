@@ -12,8 +12,7 @@ position: 0
 
 
 
-##  Telerik RadCalculator for  WPFSilverlight Q3 2011
+## Q3 2011
 
-* 
-					  The Telerik RadCalculator has been just added to the Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite.
+* The Telerik RadCalculator has been just added to the Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite
 				  

@@ -1,0 +1,56 @@
+<UserControl x:Class="RadialMenuExample.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="400">
+
+    <StackPanel x:Name="LayoutRoot" Background="White">
+
+<!-- #region radradialmenu-features-contextmenu_0 -->  
+<TextBox Text="Some Text">
+    <telerik:RadRadialMenu.RadialContextMenu>
+        <telerik:RadRadialMenu ShowEventName="GotFocus" HideEventName="LostFocus">
+            <telerik:RadRadialMenuItem Header="Item 1" />
+            <telerik:RadRadialMenuItem Header="Item 2" />
+            <telerik:RadRadialMenuItem Header="Item 3" />
+        </telerik:RadRadialMenu>
+    </telerik:RadRadialMenu.RadialContextMenu>
+</TextBox>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-features-contextmenu_1 -->
+<TextBox Text="Some Text">
+    <telerik:EventToCommandBehavior.EventBindings>
+        <telerik:EventBinding EventName="GotFocus" Command="{x:Static telerik:RadialMenuCommands.Show}" />
+        <telerik:EventBinding EventName="LostFocus" Command="{x:Static telerik:RadialMenuCommands.Hide}" />
+    </telerik:EventToCommandBehavior.EventBindings>
+    <telerik:RadRadialMenu.RadialContextMenu>
+        <telerik:RadRadialMenu>
+           ...
+        </telerik:RadRadialMenu>
+    </telerik:RadRadialMenu.RadialContextMenu>
+</TextBox>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-features-contextmenu_2 -->
+<TextBox Text="Some Text">
+    <TextBox.InputBindings>
+        <KeyBinding Modifiers="Control" Key="M" Command="{x:Static telerik:RadialMenuCommands.Show}" />                
+        <KeyBinding Key="Escape" Command="{x:Static telerik:RadialMenuCommands.Hide}" />
+    </TextBox.InputBindings>
+    <telerik:RadRadialMenu.RadialContextMenu>
+        <telerik:RadRadialMenu>
+            ...
+        </telerik:RadRadialMenu>
+    </telerik:RadRadialMenu.RadialContextMenu>
+</TextBox>
+<!-- #endregion -->
+</StackPanel>
+
+</UserControl>
+
+
+

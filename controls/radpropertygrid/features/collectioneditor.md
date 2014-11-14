@@ -10,22 +10,15 @@ position: 5
 
 # CollectionEditors
 
-
-
-
-
 ## Overview
 
 __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that provide UI for editing collections and their items. Currently they are used in the domain of RadPropertyGrid as default editors for IEnumerable type-compatible properties, but they can be successfully used out of this context as standalone editors:
 
-
-
 #### __XAML__
 
-{{region radpropertygrid-collectioneditor_0}}
+	{{region radpropertygrid-collectioneditor_0}}
 	  <telerik:CollectionEditor Source="{Binding Players}" 
-	                                  Header="Players" />
-	
+	                            Header="Players" />
 	
 	{{endregion}}
 
@@ -42,20 +35,16 @@ __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that pro
 Both of them are located in the Telerik.Windows.Controls.Data assembly (Telerik.Windows.Controls.Data.PropertyGrid namespace) and depend on the following RadControls assemblies
         
 
-* 
-              Telerik.Windows.Data
-            
+* Telerik.Windows.Data
+  
 
-* 
-              Telerik.Windows.Controls
-            
+* Telerik.Windows.Controls
+  
 
-* 
-              Telerik.Windows.Controls.Data
-            
+* Telerik.Windows.Controls.Data
+  
 
-* 
-              Telerik.Windows.Control.Input
+* Telerik.Windows.Control.Input
             
 
 The mentioned namespace is mapped to the Telerik Uri namespace
@@ -63,7 +52,7 @@ The mentioned namespace is mapped to the Telerik Uri namespace
 
 #### __XAML__
 
-{{region radpropertygrid-collectioneditor_1}}
+	{{region radpropertygrid-collectioneditor_1}}
 	   http://schemas.telerik.com/2008/xaml/presentation
 	{{endregion}}
 
@@ -77,20 +66,13 @@ CollectionEditor relies on the IEditableCollectionView interface. In case that t
 The following listed commands, defined in the CollectionEditorCommands class, invoke their IEditableCollectionView method counterparts, when they are executed:
         
 
-* 
-            MoveCurrentToNext
-          
+* MoveCurrentToNext
+ 
 
-* 
-            MoveCurrentToPrevious
-          
+* MoveCurrentToPrevious
+ 
 
-* 
-            AddNew
-          
+* AddNew
+ 
 
-* 
-            Delete
-          
-
-# See Also
+* Delete

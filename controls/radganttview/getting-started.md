@@ -10,8 +10,6 @@ position: 1
 
 # Getting Started
 
-
-
 This tutorial will walk you through the creation of a sample application that contains __RadGanttView__ and will show you how to:
 
 * [Add RadGanttView to your project](#add-radganttview-to-your-project)
@@ -21,20 +19,15 @@ This tutorial will walk you through the creation of a sample application that co
 * [Bind the GanttView to a simple Tasks collection](#bind-the-ganttview)
 
 >In order to use the __RadGanttView__ control in your projects you have to add references to the following assemblies:
-   	  
-
-* Telerik.Windows.Controls
-
-* Telerik.Windows.Controls.GanttView
-
-* Telerik.Windows.Scheduling.Core
+>	* Telerik.Windows.Controls
+>	* Telerik.Windows.Controls.GanttView
+>	* Telerik.Windows.Scheduling.Core
 
 ## Add RadGanttView to your project
 
 * Create new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project.
 
 * Now add a __RadGanttView__ control to the user control. You can add the control by dragging it from the Toolbox and dropping it over the XAML or do it manually by writing the XAML code that is shown below. 
-       		
 
 #### __XAML__
 
@@ -47,18 +40,15 @@ This tutorial will walk you through the creation of a sample application that co
 	         <telerik:RadGanttView x:Name="ganttView" />
 	      </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Now if you run the application you will see an empty GanttView:
-       		![ganttview gettingstarted 010](images/ganttview_gettingstarted_010.png)
+
+![ganttview gettingstarted 010](images/ganttview_gettingstarted_010.png)
 
 ## Define columns
 
 You should manually define the columns of the data grid in order to show additional details of the task:
-
-
 
 #### __XAML__
 
@@ -70,17 +60,13 @@ You should manually define the columns of the data grid in order to show additio
 			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 		</telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
-
-
->Check the [Columns Overview]({%slug radganttview-features-columns-types%}) topic for more information about the columns of the data grid.    	 
-    	 
+>Check the [Columns Overview]({%slug radganttview-features-columns-types%}) topic for more information about the columns of the data grid.    
 
 ## Bind the GanttView
 
 * In order to populate your GanttView control with some sample data, first you should create a collection of __GanttTask__ objects: 
-      	
 
 #### __C#__
 
@@ -96,12 +82,9 @@ You should manually define the columns of the data grid in order to show additio
 	};
 	
 	var Tasks = new ObservableCollection<GanttTask>() { mainTask };
-	{{endregion}}
-
-
+{{endregion}}
 
 * Then bind Tasks collection to __TasksSource__ property of the RadGanttView:
-      	
 
 #### __XAML__
 
@@ -110,8 +93,6 @@ You should manually define the columns of the data grid in order to show additio
 	...
 	</telerik:RadGanttView>
 	{{endregion}}
-
-
 
 Now run your application and see the result:
 

@@ -10,25 +10,17 @@ position: 10
 
 # Save/Load Layout
 
-
-
 When building complex layout with __RadDocking,__ the users will often expect to persist the layout from one session to another. This can be easily achieved with the advanced Save/Load layout mechanism of the __RadDocking__.
-      
 
 The purpose of this tutorial is to show how to use the Save/Load layout mechanism of the __RadDocking__. The following cases will be examined:
-      
 
 * Saving layout
-          
 
 * Loading layout
-          
 
 * Using events to manage the save/load process
-          
 
 Create a new application and add the following initial __RadDocking__ declaration.
-      
 
 #### __XAML__
 
@@ -97,19 +89,17 @@ Create a new application and add the following initial __RadDocking__ declaratio
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_Features_SaveLoadLayout_010.png)
 
 ## Saving Layout
 
-__RadDocking__gives you the ability to store the entire layout in a stream containing XML. In order to do that you need to use the __SaveLayout__method of an instance of the __RadDocking__ control. Additionally, you can choose to save the stream elsewhere, in a textbox, or directly in the file system.
-        
+__RadDocking__ gives you the ability to store the entire layout in a stream containing XML. In order to do that you need to use the __SaveLayout__ method of an instance of the __RadDocking__ control. Additionally, you can choose to save the stream elsewhere, in a textbox, or directly in the file system.
 
 Perform the following steps:
 
-Set the __RadDocking.SerializationTag__attached property for each one of the panes in your xaml declaration.
-        
+Set the __RadDocking.SerializationTag__ attached property for each one of the panes in your xaml declaration.
 
 #### __XAML__
 
@@ -139,13 +129,12 @@ Set the __RadDocking.SerializationTag__attached property for each one of the pan
 	...
 	<telerik:RadPane Header="Pane Top 1"
 	                        telerik:RadDocking.SerializationTag="PaneTop1">
-	{{endregion}}
+{{endregion}}
 
+Use the __SaveLayout__ method of the __RadDocking__ class. The following example demonstrates how to save the __RadDocking__ layout in the IsolatedStorage. The generated XML is returned as well.
 
-
-Use the __SaveLayout__method of the __RadDocking__ class. The following example demonstrates how to save the __RadDocking__ layout in the IsolatedStorage. The generated XML is returned as well.
-        {% if site.site_name == 'Silverlight' %}
-
+{% if site.site_name == 'Silverlight' %}
+		
 #### __C#__
 
 {{region raddocking-features-save-load-layout_2}}
@@ -166,9 +155,7 @@ Use the __SaveLayout__method of the __RadDocking__ class. The following example 
 	    // Return the generated XML
 	    return xml;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -187,7 +174,7 @@ Use the __SaveLayout__method of the __RadDocking__ class. The following example 
 	 ' Return the generated XML
 	 Return xml
 	End Function
-	{{endregion}}
+{{endregion}}
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
@@ -211,9 +198,7 @@ Use the __SaveLayout__method of the __RadDocking__ class. The following example 
 	    // Return the generated XML
 	    return xml;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -232,7 +217,7 @@ Use the __SaveLayout__method of the __RadDocking__ class. The following example 
 	 ' Return the generated XML
 	 Return xml
 	End Function
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
@@ -288,34 +273,24 @@ Here is how the result XML will look like for the above example:
 	        </RadSplitContainer>
 	    </SplitContainers>
 	</RadDocking>
-	{{endregion}}
+{{endregion}}
 
-
-
->tipThere are two steps you should perform in order to save your layout (and one more that is optional):
-
-1. 
-              Mark all __RadPanes__ with the __RadDocking.SerializationTag__.
-            
-
-1. 
-              Use the __SaveLayout__method of the __RadDocking__to save your layout in a stream.
-            
-
-1. (Optional) Save the stream in the isolated storage.
+>There are two steps you should perform in order to save your layout (and one more that is optional):
+>	1. Mark all __RadPanes__ with the __RadDocking.SerializationTag__.
+>	1. Use the __SaveLayout__ method of the __RadDocking__ to save your layout in a stream.
+>	1. (Optional) Save the stream in the isolated storage.
 
 >When you load the layout, all the elements that are not marked with __SerializationTag__ property are removed and new components are created instead. That is the reason why you should mark your panes with the __SerializationTag__ attribute.
-          
 
 ## Load Layout
 
 In order to load the docking layout you need to do absolutely the same things but in reverse order.
 
 * First, load the stream (e.g. from the isolated storage).
-            
 
-* Second, use the __LoadLayout__method of the __RadDocking__ control.
-            {% if site.site_name == 'Silverlight' %}
+* Second, use the __LoadLayout__ method of the __RadDocking__ control.
+
+{% if site.site_name == 'Silverlight' %}
 
 #### __C#__
 
@@ -331,9 +306,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -346,7 +319,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 	  End Using
 	 End Using
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
@@ -364,82 +337,63 @@ In order to load the docking layout you need to do absolutely the same things bu
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region raddocking-features-save-load-layout_6_1}}
 	Private Sub LoadLayout()
-	 ' Load your layot from the isolated storage.
+	 'Load your layot from the isolated storage.
 	 Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
 	  Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
 	   Me.radDocking.LoadLayout(isoStream)
 	  End Using
 	 End Using
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
 ## Events
 
-The __RadDocking__API offers you six events for managing the save/load layout behavior:
-        
+The __RadDocking__ API offers you six events for managing the save/load layout behavior:
 
-* __ElementLoading__ - raised when a docking element (__Pane__, __PaneGroup__or __SplitContainer__) is about to be loaded.
-            
+* __ElementLoading__ - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be loaded.
 
-* __ElementLoaded__- raised after a docking element (__Pane__, __PaneGroup__or __SplitContainer__) is loaded.
-            
+* __ElementLoaded__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is loaded.
 
-* __ElementSaving__ - raised when a docking element (__Pane__, __PaneGroup__or __SplitContainer__) is about to be saved.
-            
+* __ElementSaving__ - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved.
 
-* __ElementSaved__ - raised after a docking element (__Pane__, __PaneGroup__or __SplitContainer__) is saved.
-            
+* __ElementSaved__ - raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is saved.
 
-* __ElementCleaning__- raised when a docking element (__Pane__, __PaneGroup__or __SplitContainer__) is about to be cleaned.
-            
+* __ElementCleaning__- raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be cleaned.
 
-* __ElementCleaned__- raised after a docking element (__Pane__, __PaneGroup__or __SplitContainer__) is cleaned.
-            
+* __ElementCleaned__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is cleaned.
 
-The type of the event arguments for the __ElementLoading__event is __Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs__. The type of the event arguments for the other five events is: __Telerik.Windows.Controls.LayoutSerializationEventArgs.__Via both of the event arguments you get access to the following properties:
-        
+The type of the event arguments for the __ElementLoading__ event is __Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs__. The type of the event arguments for the other five events is: __Telerik.Windows.Controls.LayoutSerializationEventArgs.__ Via both of the event arguments you get access to the following properties:
 
 * __AffectedElement__- this is the currently loaded\saved pane.
-            
 
 * __AffectedElementSerializationTag__- this is the currently loaded\save serialization tag. In the previous example if you attach to any of the events, then the first time when the __AffectedElementSerializationTag__ is fired, it will have the value "LayoutXml".
-            
 
 >tipThe __Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs__ allows you to point out an instance to be used as a newly loaded control. This could be useful if you need to create the instances yourself.
-          
 
 >You have the ability to "say" whether these event to be fired or not, when the __SerializationTag__ is __not specified__. You should use the second overload of the __LoadLayout__ and __SaveLayout__ methods.
-          
 
 #### __C#__
 
 {{region raddocking-features-save-load-layout_7}}
 	public void SaveLayout( Stream destination, bool raiseEventsIfNoSerializationTag );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region raddocking-features-save-load-layout_8}}
 	Public Sub SaveLayout(ByVal destination As Stream, ByVal raiseEventsIfNoSerializationTag As Boolean)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >By default when you use the __SaveLayout__ method only the layout (without the content) will be saved. That's why the most common use of the fourth events is to save (respectively load) the pane's content. In order to see how to do that take a look at the [Save/Load the Content of the Panes]({%slug raddocking-save-load-the-content-of-the-panes%}) topic.
-          
 
 # See Also
 

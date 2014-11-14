@@ -10,18 +10,13 @@ position: 3
 
 # Highlighting Items
 
-
-
-With __RadGanttView__ you can easily highlight certain tasks in order to make them distinguishable on the Gantt chart.
-      They can be, for example, late tasks or tasks participating in the critical path.
+With __RadGanttView__ you can easily highlight certain tasks in order to make them distinguishable on the Gantt chart.They can be, for example, late tasks or tasks participating in the critical path.
 
 In this topic we will explain how you can define a collection of highlighted tasks and bind it to the __HighlightedItemsSource__ property of the __RadGanttView__.
-      
 
 >Before proceding with the tutorial, check [Implementing View-ViewModel]({%slug radganttview-populating-with-data-viewmodel%}) topic where it is explained how to bind the GanttView with a ViewModel.
 
 * First, define a property in the ViewModel which should hold the highlighted tasks:
-      
 
 #### __C#__
 
@@ -51,12 +46,9 @@ In this topic we will explain how you can define a collection of highlighted tas
 		}
 	...
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 * Then add the needed tasks to the HighlightedTasks:
-      
 
 #### __C#__
 
@@ -66,12 +58,9 @@ In this topic we will explain how you can define a collection of highlighted tas
 		...
 		this.HighlightedTasks = new ObservableCollection<GanttTask>() { Tasks[0], Tasks[2] };
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 * Finally, bind the HighlightedTasks to __HighlightedItemsSource__ property:
-       
 
 #### __XAML__
 
@@ -79,9 +68,7 @@ In this topic we will explain how you can define a collection of highlighted tas
 	<telerik:RadGanttView x:Name="ganttView" 
 			TasksSource="{Binding Tasks}" 
 			HighlightedItemsSource="{Binding HighlightedTasks}" />
-	{{endregion}}
-
-
+{{endregion}}
 
 The end result should look like this:
 

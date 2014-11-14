@@ -10,12 +10,11 @@ position: 9
 
 # Nested RadDocking Support
 
-
-
 Even though the layout of __RadDocking__ is very agile and could be used to easily achieve many different layouts sometimes a more complex one is desired.
         In such scenarios it is possible to use nested __RadDocking__ instances which provide multiple __DocumentHosts__, multiple level of docking compass restriction and
         inner tabs inside __RadPanes__.
-      ![Features Nested Docking 01](images/Features_NestedDocking_01.png)
+		
+![Features Nested Docking 01](images/Features_NestedDocking_01.png)
 
 ## Overview
 
@@ -25,14 +24,12 @@ With the Q1 2014 release of UI for {% if site.site_name == 'WPF' %}WPF {% endif 
           with __DocumentHost__ inside of the __RadPane__ and easily achieve tabbed navigation using the __RadPanes__
           in the __DocumentHost__. Some of the possible to achieve scenarios will be shown in this section as well as a simple *Getting Started* example.
         
-
 ## Getting Started
 
 Implementing nested __RadDockings__ is quite intuitive and straightforward. Let’s start from the scratch here and achieve the already mentioned
           __RadPane__ with tabs inside. At the beginning you will need a __RadDocking__ control, with
           __DocumentHost__ and two __RadPanes__ inside:
         
-
 #### __C#__
 
 {{region raddocking-features-nested-docking_0}}
@@ -46,13 +43,10 @@ Implementing nested __RadDockings__ is quite intuitive and straightforward. Let�
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 Afterwards you will only have to add a new instance of __RadDocking__ inside of the first __RadPane__ as shown below:
-        
-
+    
 #### __C#__
 
 {{region raddocking-features-nested-docking_1}}
@@ -73,9 +67,7 @@ Afterwards you will only have to add a new instance of __RadDocking__ inside of 
 	    </telerik:RadPane>
 	    ...
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 This will be the final result:![Features Nested Docking 02](images/Features_NestedDocking_02.png)
 
@@ -91,30 +83,22 @@ The nested __RadDocking__ layouts can be easily saved and loaded using the built
           each of them afterwards. The direction of the loading operation should be from the inner __RadDockings__ to the outer ones in order to avoid
           any issues when loading floating __RadPanes/RadPaneGroups__.
         
-
 >tipFor more details you can check the [Save/Load Layout]({%slug raddocking-features-save-load-layout%}) article.
           
-
->tipYou can download a runnable sample project demonstrating Save/Load Nested Docking Layouts from our online SDK repository:
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __Docking/NestedDockingSaveLoadLayout__.
+>tipYou can download a runnable sample project demonstrating Save/Load Nested Docking Layouts from our online SDK repository:[here](https://github.com/telerik/xaml-sdk), the example is listed as __Docking/NestedDockingSaveLoadLayout__.
           
-
 ## Not Supported Scenarios
 
 With the initial release of the nested __RadDockings__ there are a few not supported scenarios:
         
-
 * Nested scenarios in the autohide areas – due to dragging issues when __RadDocking__ is placed in an unpinned __RadPane__.
               In order to avoid that you could either disable the dragging within the inner __RadDocking__ (you just need to set CanFloat=”False” to each __RadPane__)
               or the __RadPane__ which holds it should be always pinned.
             
-
 * Drag and drop of RadPanes between two RadDocking instances.
             
-
 * Deferred DragDropMode is not supported in the nested __RadDockings__.
             
-
 # See Also[Panes](a97c7e77-5e76-4dfa-9cd5-9f8a382ddfe0)
 
  * [Pane Groups]({%slug raddocking-features-pane-groups%})

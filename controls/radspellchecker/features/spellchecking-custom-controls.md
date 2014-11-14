@@ -12,21 +12,24 @@ position: 2
 
 
 
-## 
 
-__RadSpellChecker__ supports Custom Controls. Internally it holds a dictionary matching a Type to an instance of a class deriving from __IControlSpellChecker__. These instances are loaded through MEF. So if you implement this interface you can use RadSpellChecker with your own controls.
+__RadSpellChecker__ supports Custom Controls. Internally it holds a dictionary matching a Type to an instance of a class deriving from __IControlSpellChecker__. These instances are loaded through MEF. Ultimately, if you implement this interface you can use __RadSpellChecker__ with your own controls.
 
-__Implementing IControlSpellChecker__
+##  __Implementing IControlSpellChecker__
 
-1. __Properties:__Type __SupportedControlType__ { get; } – the Type of the control implementing IControlSpellCheckerControl __CurrentControl__ { get; set; } – a reference to the controlIIgnoredWordDictionary __IgnoredWords__ { get; set; } – a collection where all the ignored words are storedISpellChecker __SpellChecker__ { get; } – an instance of a class implementing ISpellChecker(you can use DocumentSpellChecker or a custom class of yours).  
+* __Properties__:
 
->
+Type __SupportedControlType__ { get; }: The Type of the control implementing IControlSpellChecker
 
-The __Telerik.Windows.Documents.Proofing__assembly contains an abstract class named __ControlSpellCheckerBase__which derives from __IControlSpellChecker__and implements the last two properties (__IgnoredWords__and __SpellChecker__). If the implementation in the abstract class proves to be fit for your control, you can derive from this class instead.
+Control __CurrentControl__ { get; set; }: A reference to the control
 
-1. 
+IIgnoredWordDictionary __IgnoredWords__ { get; set; }: A collection where all the ignored words are stored
 
-__Methods:__
+ISpellChecker __SpellChecker__ { get; }: An instance of a class implementing ISpellChecker(you can use DocumentSpellChecker or a custom class of yours).  
+
+> The __Telerik.Windows.Documents.Proofing__ assembly contains an abstract class named __ControlSpellCheckerBase__ which derives from __IControlSpellChecker__ and implements the last two properties (__IgnoredWords__ and __SpellChecker__). If the implementation in the abstract class proves to be fit for your control, you can derive from this class instead.
+
+* __Methods:__
 
 IWordInfo __MoveToNextError__() - searches the control for the next error(if there is one) and selects the wrong word.
 void ChangeCurrentWord(string suggestion) - gets the selected word and replaces it with the right one selected by the user.

@@ -42,6 +42,6 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 * __Worksheet editor ContextMenu__ - This examples sets up a simple menu with several commands: cut, copy, paste, clear contents. Also the menu has two items allow the user to insert and delete cells respectively. {% endif %}
 
->You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
+>You can also check the [SDK Samples Browser](04a05d1d-932d-44a9-be12-f252b6deddf8) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
 
 # See Also

@@ -16,19 +16,17 @@ __RadPdfViewer__ supports selection both through the UI and programmatically.
 
 ## Selection through the UI
 
-In order to be able to select text from the UI, __RadPdfViewer__ must be in TextSelection mode. The mode of the viewer is specified by the
-        __Mode__ property, which could be set as follows:
+In order to be able to select text from the UI, __RadPdfViewer__ must be in TextSelection mode. The mode of the viewer is specified by the __Mode__ property, which could be set as follows:
 
 #### __C#__
 
 {{region radpdfviewer-text-text-selection_0}}
 	this.pdfViewer.Mode = Telerik.Windows.Documents.Fixed.UI.FixedDocumentViewerMode.TextSelection;
-	{{endregion}}
+{{endregion}}
 
 
 
->More information on the different modes of the viewer can be found in
-	   			[this article]({%slug radpdfviewer-viewer-modes%}).
+>More information on the different modes of the viewer can be found in [this article]({%slug radpdfviewer-viewer-modes%}).
 	        
 
 ## Programmatic Selection
@@ -39,16 +37,10 @@ All methods, properties and events relevant to the discussed functionality are c
         
 
 * Properties:
-
-* __StartPosition__ - the TextPosition at which the selection starts. More information on TextPositions can be found
-        			[here]({%slug radpdfviewer-viewer-modes%}).
-        		
-
-* __EndPosition__ - the TextPosition denoting the end of the selection respectively.
-
-* __IsEmpty__ - a boolean property showing if there is selection in the current document.
-
-* Methods:The methods for manipulating the selection include:
+    * __StartPosition__: the TextPosition at which the selection starts. More information on TextPositions can be found [here]({%slug radpdfviewer-text-text-position%}).
+    * __EndPosition__: The TextPosition denoting the end of the selection respectively.
+    * __IsEmpty__: A boolean property showing if there is selection in the current document.
+* Methods:<br/>The methods for manipulating the selection include:
 
 #### __C#__
 
@@ -62,10 +54,9 @@ All methods, properties and events relevant to the discussed functionality are c
 	
 	public string GetSelectedText()
 	public void GetSelectedTextAsync(Action<string> callback)
-	{{endregion}}
+{{endregion}}
 
-Their names show clearly the action they execute.Here is an example showing how the functionality of __TextPositions__ can be combined with that of __TextSelection__
-        	in order to select the word that the caret is currently positioned in:
+Their names show clearly the action they execute.Here is an example showing how the functionality of __TextPositions__ can be combined with that of __TextSelection__ in order to select the word that the caret is currently positioned in:
 
 #### __C#__
 
@@ -76,18 +67,15 @@ Their names show clearly the action they execute.Here is an example showing how 
 	end.MoveToCurrentWordEnd();
 	this.pdfViewer.Document.Selection.SetSelection(start, end);
 	MessageBox.Show(this.pdfViewer.Document.Selection.GetSelectedText());
-	{{endregion}}
+{{endregion}}
 
 
 
->There are no genuine words in PDF, so the viewer uses a greedy text recognition method. That is why it is not guaranteed that it
-        		would find the exact start and end position of a word.
+>There are no genuine words in PDF, so the viewer uses a greedy text recognition method. That is why it is not guaranteed that it would find the exact start and end position of a word.
 
 * Events:
-
-* __SelectionChanging__ - occurs when you start to select part of the text.
-
-* __SelectionChanged__ - occurs when you have finished changing the current selection.
+    * __SelectionChanging__ - occurs when you start to select part of the text.
+    * __SelectionChanged__ - occurs when you have finished changing the current selection.
 
 # See Also
 

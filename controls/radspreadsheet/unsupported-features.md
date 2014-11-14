@@ -5,7 +5,7 @@ description: Unsupported Features
 slug: radspreadsheet-unsupported-features
 tags: unsupported,features
 published: True
-position: 7
+position: 8
 ---
 
 # Unsupported Features
@@ -23,10 +23,6 @@ This article lists some of the popular features available in Microsoft Office Op
 * Tables;
 
 * Data visualization;
-
-* Filtering;
-
-* Sorting;
 
 * Grouping;
 
@@ -48,4 +44,3 @@ This article lists some of the popular features available in Microsoft Office Op
 
 * Auto sum.
 
-# See Also

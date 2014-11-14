@@ -15,7 +15,19 @@ position: 1
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
       
 
-## What's Different in 2014 Q1 - 2014.1.0226
+## What's Different in 2014 Q3
+
+### Changed
+
+The __IsEnabled__ property of the WorkbookHistory class is changed to be by default false. . It is set to true when the Workbook is assigned to a RadSpreadsheet.
+            
+
+### What to do now
+
+If you are modifying a Workbook without showing it in RadSpreadsheet and need to preserve the history, set the IsEnabled property to true.
+            
+
+## What's Different in 2014 Q1
 
 ### Changed
 

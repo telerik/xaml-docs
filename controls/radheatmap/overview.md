@@ -15,10 +15,10 @@ position: 0
 ## 
 
 {% if site.site_name == 'Silverlight' %}
-
+![](images/heatmap_sl_46_text.png)
 {% endif %}{% if site.site_name == 'WPF' %}
 
-![](images/RadHeatMap_overview_01WPF.png){% endif %}
+![](images/heatmap_wpf_46_text.png){% endif %}
 
 
 

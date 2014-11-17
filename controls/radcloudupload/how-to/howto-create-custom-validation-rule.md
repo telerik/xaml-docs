@@ -33,7 +33,7 @@ If the built-in validation rule does not cover your requirements, you can create
       }
     }
 
-#### __VB__
+#### __VB.NET__
     Public Class MyValidationRule
         Inherits ValidationRule
         Public Overrides Function Validate(value As Object, cultureInfo As System.Globalization.CultureInfo) As ValidationResult

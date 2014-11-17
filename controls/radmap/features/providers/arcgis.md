@@ -49,7 +49,7 @@ The following example of the __ArcGisMapProvider__ definition uses the __Physica
 
 
 
-#### __VB__	
+#### __VB.NET__	
       Dim provider As New ArcGisMapProvider ()
       provider.Mode = ArcGisMapMode.Physical
       Me.radMap.Provider = provider

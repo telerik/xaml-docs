@@ -101,7 +101,7 @@ In the button's Click event handler we display a __RadExpander__ control which h
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-use-isrecentcolorsactive_3}}
     Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
@@ -129,7 +129,7 @@ Finaly in the confirmation's button Click event handler we implement the selecti
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-use-isrecentcolorsactive_5}}
     Private Sub OK_RadButton_Click(sender As Object, e As RoutedEventArgs)

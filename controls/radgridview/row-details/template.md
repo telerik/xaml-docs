@@ -10,14 +10,10 @@ position: 1
 
 # Row Details Template
 
-
-
 The __Row Details__ template is defined through the __RowDetailsTemplate__ property of the __RadGridView__.
-	  
 
 >tipTo learn how to manage the displaying of the __Row Details__ read [this topic]({%slug radgridview-row-details-visibility%}).
-		
-
+	
 ## Basic RowDetails Template
 
 Here is an example for a basic row details template (__Example 1__). You can observe the result in __Figure 1__.
@@ -26,6 +22,7 @@ Here is an example for a basic row details template (__Example 1__). You can obs
 #### __[XAML] Example 1: Definition of Basic RowDetails Template__
 
 {{region radgridview-row-details-template_0}}
+
 	<telerik:RadGridView x:Name="radGridView"
 	                         RowDetailsVisibilityMode="VisibleWhenSelected">
 	    <telerik:RadGridView.RowDetailsTemplate>
@@ -39,23 +36,20 @@ Here is an example for a basic row details template (__Example 1__). You can obs
 	    </telerik:RadGridView.RowDetailsTemplate>
 	    ...
 	</telerik:RadGridView>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 __Figure 1:__ Displays the result of the applied __Basic RowDetails Template__.
-			![gridview-row-details-template-basic](images/gridview-row-details-template-basic.png)
+
+![gridview-row-details-template-basic](images/gridview-row-details-template-basic.png)
 
 ## Complex RowDetails Template
 
 Here is an example for a complex row details template (__Example 2__). You can observe the result in __Figure 1__.
-		
 
 #### __[XAML] Example 2: Definition of Complex RowDetails Template__
 
 {{region radgridview-row-details-template_1}}
+
 	<Grid>
 		<Grid.Resources>
 			<my:MyViewModel x:Key="MyViewModel"/>
@@ -90,14 +84,10 @@ Here is an example for a complex row details template (__Example 2__). You can o
 			</telerik:RadGridView.Columns>
 		</telerik:RadGridView>
 	</Grid>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 __Figure 2:__ Displays the result of the applied __Complex RowDetails Template__.
-			![gridview-row-details-template-complex](images/gridview-row-details-template-complex.png)
+![gridview-row-details-template-complex](images/gridview-row-details-template-complex.png)
 
 # See Also
 

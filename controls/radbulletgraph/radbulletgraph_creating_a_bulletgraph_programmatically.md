@@ -128,12 +128,6 @@ The full source code for creating Horizontal BulletGraph in code-behind:
 	}
 
 	#region protected static SolidColorBrush CombineAlphaAndColorInSolidColorBrush(double opacity, string color)
-	/// <summary>
-	/// adds the alpha (opacity) value to the front of the color string
-	/// </summary>
-	/// <param name="opacity"></param>
-	/// <param name="color"></param>
-	/// <returns></returns>
 	protected static SolidColorBrush CombineAlphaAndColorInSolidColorBrush(double opacity, string color)
 	{
 		SolidColorBrush theAnswer = new SolidColorBrush();
@@ -196,24 +190,18 @@ The full source code for creating Horizontal BulletGraph in code-behind:
 	Me.LayoutRoot.Children.Add(horizontalBulletGraph)
 	End Sub
 	#Region "protected static SolidColorBrush CombineAlphaAndColorInSolidColorBrush(double opacity, string color)"
-	''' <summary>
-	''' adds the alpha (opacity) value to the front of the color string
-	''' </summary>
-	''' <param name="opacity"></param>
-	''' <param name="color"></param>
-	''' <returns></returns>
 	Protected Shared Function CombineAlphaAndColorInSolidColorBrush(ByVal opacity As Double, ByVal color As String) As SolidColorBrush
 	Dim theAnswer As New SolidColorBrush()
-	' deal with opacity
+	' deal with opacity'
 	If opacity > 1.0 Then
 	opacity = 1.0
 	End If
 	If opacity < 0.0 Then
 	opacity = 0.0
 	End If
-	' get the hex value of the alpha chanel (opacity):
+	' get the hex value of the alpha chanel (opacity):'
 	Dim a As Byte = CByte(Convert.ToInt32(255 * opacity))
-	' deal with the color
+	' deal with the color'
 	Try
 	Dim r As Byte = CByte(Convert.ToUInt32(color.Substring(1, 2), 16))
 	Dim g As Byte = CByte(Convert.ToUInt32(color.Substring(3, 2), 16))
@@ -230,4 +218,5 @@ The full source code for creating Horizontal BulletGraph in code-behind:
 
 
 The result: 
-      ![](images/radbulletgraph_databinding.PNG)
+
+![](images/radbulletgraph_databinding.PNG)

@@ -54,7 +54,7 @@ This will allow you to access them easily from the __HeaderSelector__ as shown b
     DataTemplate dataTemplate = (DataTemplate)Application.Current.Resources["DataTemplateKey"];
 		  
 
-#### __VB__
+#### __VB.NET__
 
     Dim dataTemplate As DataTemplate = DirectCast(Application.Current.Resources("DataTemplateKey"), DataTemplate)
 		  

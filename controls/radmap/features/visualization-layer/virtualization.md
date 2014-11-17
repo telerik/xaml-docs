@@ -193,7 +193,7 @@ Here is an example of how to implement simple virtualization source:
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radmap-visualization-layer-virtualization_1}}
 	    Public Class MyVirtualizationSource

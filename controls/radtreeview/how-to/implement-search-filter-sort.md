@@ -61,7 +61,7 @@ For more details examine the following code:
 			}  
 {{endregion}}
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-howto-implement-search-filter-sort_1}}
 		'the RadTreeView.ItemsSource collection is traversed to find an item by a provided name'
@@ -125,7 +125,7 @@ Below you can examine the implementation of these two methods:
 			}
 {{endregion}}
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-howto-implement-search-filter-sort_3}}
 		'the SampleDataSource collection is dynamically filtered to display only those items matching the filter criteria'
@@ -185,7 +185,7 @@ The sort functionality is triggered when the selection of the __ComboBox__ is ch
 			}     
 {{endregion}}
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-howto-implement-search-filter-sort_5}}
 		'When the Sorting ComboBox selection is changed, the SampleDataSource collection is sorted accordingly'     

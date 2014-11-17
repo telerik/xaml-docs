@@ -34,7 +34,7 @@ In order to manage the visibility of the help button, the developer should use t
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radribbonview-howto-show-and-change-help-button_2}}
 	xRibbonView.HelpButtonVisibility = Visibility.Visible;

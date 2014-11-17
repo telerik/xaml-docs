@@ -36,7 +36,7 @@ The RadRibbonView exposes a string property named __Title__, which should be use
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radribbonview-howto-change-title_2}}
 	xRibbonView.Title = "RadRibbonView Demo";

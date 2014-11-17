@@ -138,7 +138,7 @@ If you feel more confident working with code than working with markup, you can a
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radchart-introduction_4vb}}
 	    Dim chart As New RadCartesianChart()
@@ -172,7 +172,7 @@ In order to produce the same result you need to add using statements for the req
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radchart-introduction_5vb}}
 	    Imports Telerik.Charting

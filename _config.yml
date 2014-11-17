@@ -62,6 +62,7 @@ controls/radgridview/troubleshooting/gridview-paging.md,
 controls/radgridview/troubleshooting/gridview-elementname-binding.md,
 controls/radmenu/features/animation.md,
 controls/radmenu/features/boundaries-detection.md,
+controls/radmediaplayer,
 controls/radnumericupdown/howto/events.md,
 controls/radribbonview/features/ribbon-controls/ribbon-window-sl.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier.md,
@@ -281,6 +282,8 @@ navigation:
         title: RadColorSelector
     controls/radcolorpicker/styling-and-appearance:
         title: Appearance
+    controls/raddatabar:
+        title: RadDataBar
     controls/raddiagram:
         title: RadDiagram
     controls/raddiagram/diagram-items:
@@ -309,6 +312,8 @@ navigation:
         title: RadOutlookbar
     controls/radpanelbar:
         title: RadPanelBar
+    controls/radprogressbar:
+        title: RadProgressBar
     controls/radpersistenceframework:
         title: RadPersistenceFramework
     controls/radrating:
@@ -331,6 +336,8 @@ navigation:
         title: RadTimeBar
     controls/radtimeline:
         title: RadTimeline
+    controls/radtreemap:
+        title: RadTreeMap
     controls/radtreeview:
         title: RadTreeView		
 ## X2 Controls End

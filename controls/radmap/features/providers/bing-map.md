@@ -53,7 +53,7 @@ Here is an example of a __BingMapProvider__ definition:
 
 
 
-#### __VB__
+#### __VB.NET__
       Dim bingMap As New BingMapProvider(MapMode.Aerial, True, "key")
       Me.radMap.Provider = bingMap
 
@@ -89,7 +89,7 @@ Here is an example of the __Road Mode__ definition:
 
 
 
-#### __VB__
+#### __VB.NET__
       Dim bingMap As New BingMapProvider(MapMode.Road, True, "key")
       Me.radMap.Provider = bingMap
 
@@ -124,7 +124,7 @@ Here is an example of the __Birdseye Mode__ definition:
 
 
 
-#### __VB__
+#### __VB.NET__
       Dim bingMap As New BingMapProvider(MapMode.Birdseye, True, "key")
       Me.radMap.Provider = bingMap
 
@@ -154,7 +154,7 @@ The __BingRestMapProvider__ uses other way to connect Bing Maps imagery service 
 
 
 
-    #### __VB__
+    #### __VB.NET__
       Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
       Me.radMap.Provider = bingMap
 

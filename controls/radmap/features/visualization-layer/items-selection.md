@@ -136,7 +136,7 @@ In this section we demonstrate how the items selection can be implemented for th
 	{{endregion}}
 
 
-#### __VB__
+#### __VB.NET__
 {{region radmap-visualization-layer-items-selection_2}}
     Public Class MapItem
         Implements INotifyPropertyChanged
@@ -310,7 +310,7 @@ We will subscribe to the __VisualizationLayer.SelectionChanged__ event in order 
 	{{endregion}}
 
 
-#### __VB__
+#### __VB.NET__
 {{region radmap-visualization-layer-items-selection_5}}
     Partial Public Class SelectLocations
         Inherits UserControl
@@ -539,7 +539,7 @@ The __VisualizationLayer__ class provides several methods which can be used to s
 	{{endregion}}
 
 
-#### __VB__
+#### __VB.NET__
 {{region radmap-visualization-layer-items-selection_9}}
 	    Private Sub ShowSelectedItems(sender As Object, e As RoutedEventArgs)
 	        Dim condition As String = Me.filter.Text.Trim()

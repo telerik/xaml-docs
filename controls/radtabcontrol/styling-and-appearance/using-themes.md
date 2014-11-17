@@ -154,7 +154,7 @@ or
 
 
 
-#### __VB__
+#### __VB.NET__
     Private Sub Application_Startup(ByVal o As Object, ByVal e As StartupEventArgs) Handles Me.Startup
         Dim theme As New VistaTheme()
         theme.IsApplicationTheme = True

@@ -34,6 +34,8 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Radio Button__ - mimics the functionality of the radio button, but has more flexibility in its design. [Read More]({%slug radbutton-features-radio-button%})
 
+* __Path Button__ - derives from RadButton, but provides the ability to set a Path alongside its content. [Read More]({%slug radbuttons-features-pathbutton%})
+
 * __Command Support__ - full implementation of the Command pattern is available by using __RadButtons__. You can build complex UIs and keep your code simple by using Commands. [Read more]({%slug radbuttons-features-commands%})
 
 * __VS Plug-in for Testing RadControls__ - Finally an [automated testing tool](http://www.telerik.com/products/web-testing-tools.aspx) built for developers. Record cross-browser tests, customize them in code within Visual Studio or convert them to unit tests. Even more, WebUI Test Studio is the best way to test RadControls for ASP.NET AJAX or Silverlight. The powerful test recorder automatically detects the controls and exposes commonly used verifications. [Read more](http://www.telerik.com/products/web-testing-tools.aspx)

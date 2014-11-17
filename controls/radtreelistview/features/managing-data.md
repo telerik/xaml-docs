@@ -12,11 +12,9 @@ position: 5
 
 
 
-Telerik's __RadTreeListView__allows you not only to display sets of data, but also to manage them. You are able to use the standard operations - __Insert__, __Update__ and __Delete__. You can also validate the data. Besides using this functionality, you are able to control it via the several events raised at the most important key points of the operation.
+Telerik's __RadTreeListView__ allows you not only to display sets of data, but also to manage them. You are able to use the standard operations - __Insert__, __Update__ and __Delete__. You can also validate the data. Besides using this functionality, you are able to control it via the several events raised at the most important key points of the operation.
 
->tipAs the __RadTreeListView__ directly inherits the __RadGridView__ it uses the same data management mechanism. To learn more read the 
-        {% if site.site_name == 'Silverlight' %}[respective topics](http://www.telerik.com/help/silverlight/gridview-managing-data-overview.html){% endif %}{% if site.site_name == 'WPF' %}[respective topics](http://www.telerik.com/help/wpf/gridview-managing-data-overview.html){% endif %}
-          in the __RadGridView's__ documentation.
+>tipAs the __RadTreeListView__ directly inherits the __RadGridView__ it uses the same data management mechanism. To learn more read the [respective topics]({%slug gridview-managing-data-overview%}) in the __RadGridView's__ documentation.
 
 ## Managing Collections
 
@@ -24,13 +22,13 @@ Some data sources, such as those implementing __INotifyCollectionChanged__ (__Ob
 
 ## Adding New Entries
 
-The adding of new entires is achieved via the __GridViewNewRow__ control, which appears when the user hits the "Insert" key or when the developer initiates an add operation.
+The adding of new entries is achieved via the __GridViewNewRow__ control, which appears when the user hits the "Insert" key or when the developer initiates an add operation.
 
 >As for now the __RadTreeListView__ is not capable of automatically adding items to any level of the hierarchy. If you use the default approach, the items will be added to the root level. Still you are able to add items by manually adding the item to the source collection at the level you want.
 
 ## Updating an Entry
 
-The updating of entries takes place in the same cell, where the data is displayed. Only one item and only one cell in it can be edited at a time. You are able to restrict certain cells or the entire grid from being edited. In order to edit a cell, the user can hit the "F2" key or the developer can initialize an edit operation. 
+The updating of entries takes place in the same cell, where the data is displayed. Only one item and only one cell in it can be edited at a time. You are able to restrict certain cells or the entire grid from being edited. In order to edit a cell, the user can hit the __"F2"__ key or the developer can initialize an edit operation. 
 
 ## Deleting an Entry
 

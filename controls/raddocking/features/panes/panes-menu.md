@@ -10,10 +10,6 @@ position: 4
 
 # Pane's Menu
 
-
-
-## 
-
 Each __RadPane__ has a menu, which allow you to perform certain actions against the __RadPane__. By default the __RadMenu__ has the following items:
 
 * __Floating__ - makes the __RadPane__ floating.
@@ -26,11 +22,7 @@ Each __RadPane__ has a menu, which allow you to perform certain actions against 
 
 * __Hide__ - hides the __RadPane__.
 
-
-
-
-         
-      ![](images/RadDocking_Features_Panes_Pane_Menu_01.png)
+![](images/RadDocking_Features_Panes_Pane_Menu_01.png)
 
 You can modify the menu by using the __ContextMenuTemplate__ property of the __RadPane__. It is of type __DataTemplate__ and is expected to contain a __RadContextMenu__. Here is an example:
 
@@ -48,9 +40,7 @@ You can modify the menu by using the __ContextMenuTemplate__ property of the __R
 	        </DataTemplate>
 	    </telerik:RadPane.ContextMenuTemplate>
 	</telerik:RadPane>
-	{{endregion}}
-
-
+{{endregion}}
 
 To make the menu items functional you can use the predefined __RadDocking__ commands, which are located in the __RadDockingCommands__ class:
 
@@ -72,17 +62,13 @@ To make the menu items functional you can use the predefined __RadDocking__ comm
 
 Here is the final code:
 
->
-
-The __RadDockingCommands__ class is located in the __Telerik.Windows.Controls__namepsace of the__Telerik.Windows.Controls__assembly. To use it in XAML you have to declare the following namespace:
+>The __RadDockingCommands__ class is located in the __Telerik.Windows.Controls__ namepsace of the __Telerik.Windows.Controls__ assembly. To use it in XAML you have to declare the following namespace:
 
 #### __XAML__
 
 {{region raddocking-features-panes-panes-menu_1}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -101,12 +87,6 @@ The __RadDockingCommands__ class is located in the __Telerik.Windows.Controls__n
 	    </telerik:RadPane.ContextMenuTemplate>
 	    <TextBlock Text="Some simple text here" />
 	</telerik:RadPane>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadDocking_Features_Panes_Pane_Menu_02.png)
+![](images/RadDocking_Features_Panes_Pane_Menu_02.png)

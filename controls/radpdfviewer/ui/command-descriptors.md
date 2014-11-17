@@ -12,9 +12,7 @@ position: 1
 
 
 
-__RadPdfViewer__'s command descriptors are wrappers of its predefined set of commands. They were introduced as a
-        way to easily enable/disable the commands based on the currend document state. This comes in handy in the creation of UI for the viewer such 
-        as a toolbar, context menu, etc.
+__RadPdfViewer__'s command descriptors are wrappers of its predefined set of commands. They were introduced as a way to easily enable/disable the commands based on the current document state. This comes in handy in the creation of UI for the viewer such as a toolbar, context menu, etc.
       
 
 The __CommandDescriptor__ class contains 2 public properties:
@@ -53,7 +51,7 @@ This example creates a custom command by inheriting from the __FixedDocumentView
 	            this.Viewer.ScaleFactor = width / pageWidth;
 	        }
 	    }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -74,42 +72,17 @@ This example creates a custom command by inheriting from the __FixedDocumentView
 	            Me.Viewer.ScaleFactor = width / pageWidth
 	        End Sub
 	    End Class
-	    '#EndRegion
-	
-	    '#Region radpdfviewer-command-descriptors_1
-	    Public Class FitToWidthCommand
-	        Inherits FixedDocumentViewerCommandBase
-	        Private Const PageMargin As Double = 20
-	
-	        Public Sub New(fixedDocumentViewerBase As FixedDocumentViewerBase)
-	            MyBase.New(fixedDocumentViewerBase)
-	        End Sub
-	
-	        Public Overrides Sub Execute(parameter As Object)
-	            Dim width As Double = Me.Viewer.ActualWidth - 2 * PageMargin
-	            Dim pageWidth As Double = Me.Viewer.CurrentPage.ActualWidth
-	            Me.Viewer.ScaleFactor = width / pageWidth
-	        End Sub
-	    End Class
-	    '#EndRegion
-	
-	    '#Region radpdfviewer-command-descriptors_2
-	    Me.customCommandDescriptors = New CustomCommandDescriptors(Me.viewer)
-	    '#EndRegion
-	End Class
+{{endregion}}
 
 
 
-Further, you can create a respective command descriptor with the custom command and use it for the purposes of your application. This can
-          be achieved in one of the following ways:
+Further, you can create a respective command descriptor with the custom command and use it for the purposes of your application. This can be achieved in one of the following ways:
         
 
-* Create a class inheriting from the __DefaultCommandDescriptors__ class which implements the default command
-              descriptors and add a property of type __CommandDescriptor__ to it.
+* Create a class inheriting from the __DefaultCommandDescriptors__ class which implements the default command descriptors and add a property of type __CommandDescriptor__ to it.
             
 
-* Create a class inheriting from the __CommandDescriptors__ class which does not implement the default command
-              descriptors and implement them yourself.
+* Create a class inheriting from the __CommandDescriptors__ class which does not implement the default command descriptors and implement them yourself.
             
 
 The below snippet demosntrates how you can use the first of the mentioned methods of creating a command descriptor.
@@ -136,7 +109,7 @@ The below snippet demosntrates how you can use the first of the mentioned method
 	            this.fitToWidthCommandDescriptor = new CommandDescriptor(new FitToWidthCommand(fixedDocumentViewerBase));
 	        }
 	    }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -157,24 +130,18 @@ The below snippet demosntrates how you can use the first of the mentioned method
 	            Me.Viewer.ScaleFactor = width / pageWidth
 	        End Sub
 	    End Class
-	    '#EndRegion
-	
-	    '#Region radpdfviewer-command-descriptors_2
-	    Me.customCommandDescriptors = New CustomCommandDescriptors(Me.viewer)
-	    '#EndRegion
-	End Class
+{{endregion}}
 
 
 
-Once the custom command descriptors are implemented you just need to set __RadPdfViewer__'s
-          __CommandDescriptors__ property.
+Once the custom command descriptors are implemented you just need to set __RadPdfViewer__'s __CommandDescriptors__ property.
         
 
 #### __C#__
 
 {{region radpdfviewer-command-descriptors_2}}
 	      this.customCommandDescriptors = new CustomCommandDescriptors(this.viewer);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -182,13 +149,9 @@ Once the custom command descriptors are implemented you just need to set __RadPd
 
 {{region radpdfviewer-command-descriptors_2}}
 	    Me.customCommandDescriptors = New CustomCommandDescriptors(Me.viewer)
-	    '#EndRegion
-	End Class
+{{endregion}}
 
 
 
->tipYou can download a runnable project of the previous example from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / CustomCommandDescriptor__.
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / CustomCommandDescriptor__.
           
-
-# See Also

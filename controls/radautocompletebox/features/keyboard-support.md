@@ -10,8 +10,6 @@ position: 4
 
 # Keyboard Support
 
-
-
 ## Keyboard Shortcuts
 
 Using the keyboard you can perform some of the most common tasks. This section describes the keyboard shortcuts used by RadAutoCompleteBox.

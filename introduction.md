@@ -11,14 +11,16 @@ position: 1
 # Introduction
 
 {% if site.site_name == 'Silverlight' %}
+![UI for SL logo](images/UI_for_SL_logo.png)
+{% endif %}
 
-![UI for SL logo](images/UI_for_SL_logo.png){% endif %}{% if site.site_name == 'WPF' %}
-
-![UI for WPF logo](images/UI_for_WPF_logo.png){% endif %}
+{% if site.site_name == 'WPF' %}
+![UI for WPF logo](images/UI_for_WPF_logo.png)
+{% endif %}
 
 Thank you for choosing Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
-			{% if site.site_name == 'Silverlight' %}
 
+{% if site.site_name == 'Silverlight' %}
 UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 100 UI controls for building rich line-of-business Silverlight applications.
 
 Sharing the same codebase with Telerik WPF controls, the Silverlight controls offer a clean and intuitive API, Blend support and powerful theming capabilities that will radically improve your RIA development.
@@ -59,7 +61,7 @@ Telerik UI for Silverlight features the following controls:
 
 * [ContextMenu]({%slug contextmenu-overview1%})
 
-* [CoverFlow](A05FA553-15D2-4326-904D-541FF74AA414)
+* [CoverFlow]({%slug coverflow-overview%})
 
 * [DataBar]({%slug raddatabar-overview%})
 
@@ -125,6 +127,8 @@ Telerik UI for Silverlight features the following controls:
 
 * [PropertyGrid]({%slug radpropertygrid-overview%})
 
+* [RadialMenu]({%slug radradialmenu-overview%})
+
 * [Rating]({%slug radrating-overview%})
 
 * [RibbonView]({%slug radribbonview-overview%})
@@ -171,10 +175,11 @@ Telerik UI for Silverlight features the following controls:
 
 * [Window]({%slug radwindow-overview%})
 
-* [ZipLibrary]({%slug radziplibrary-overview%}){% endif %}{% if site.site_name == 'WPF' %}
+* [ZipLibrary]({%slug radziplibrary-overview%})
+{% endif %}
 
-UI for WPF is a complete commercial toolset for building next-generation line of business and kiosk applications for Windows Presentation Foundation. Leveraging the amazing potential of this platform as well as many years of excellence in presentation layer technologies, Telerik UI for WPF controls provide a high-performance, visually appealing, and highly customizable shortcut to the world of engaging user experiences.
-        
+{% if site.site_name == 'WPF' %}
+UI for WPF is a complete commercial toolset for building next-generation line of business and kiosk applications for Windows Presentation Foundation. Leveraging the amazing potential of this platform as well as many years of excellence in presentation layer technologies, Telerik UI for WPF controls provide a high-performance, visually appealing, and highly customizable shortcut to the world of engaging user experiences.        
 
 Telerik UI for WPF features the following controls:
 
@@ -276,6 +281,8 @@ Telerik UI for WPF features the following controls:
 
 * [PropertyGrid]({%slug radpropertygrid-overview%})
 
+* [RadialMenu]({%slug radradialmenu-overview%})
+
 * [Rating]({%slug radrating-overview%})
 
 * [RibbonView]({%slug radribbonview-overview%})
@@ -328,9 +335,7 @@ Throughout this article, you will find the following sections that describe all 
 
 ## Licensing
 
-License agreement and detailed information about different licenses and which one you should purchase is explained in the 
-          {% if site.site_name == 'WPF' %}[Licensing](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s){% endif %}{% if site.site_name == 'Silverlight' %}[Licensing](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s){% endif %} section.
-				
+License agreement and detailed information about different licenses and which one you should purchase is explained in the {% if site.site_name == 'WPF' %}[Licensing](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s){% endif %}{% if site.site_name == 'Silverlight' %}[Licensing](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s){% endif %} section.				
 
 ## Installation and Deployment
 

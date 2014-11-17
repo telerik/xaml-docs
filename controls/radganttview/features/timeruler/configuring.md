@@ -10,11 +10,7 @@ position: 0
 
 # Configuring the TimeRuler
 
-
-
 This topic describes how you can configure the TimeRuler of the GanttView control. There are two key properties you can use:
-
-
 
 * [PixelLength property](#pixellength-property)
 
@@ -29,49 +25,43 @@ With the __PixelLength__ property you  can specify how much time is displayed in
 Here are some examples:
 
 * The default behavior:
-      		
 
 #### __XAML__
 
 {{region radganttview-features-timeruler-configuring_0}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">		
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
 ![ganttview-timeruler 1](images/ganttview-timeruler_1.png)
 
 * Setting PixelLength to 1h:
-      		
 
 #### __XAML__
 
 {{region radganttview-features-timeruler-configuring_1}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="01:00:00">		
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
 ![ganttview-timeruler 2](images/ganttview-timeruler_2.png)
 
 * Setting PixelLength to 15min:
-      		
 
 #### __XAML__
 
 {{region radganttview-features-timeruler-configuring_2}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:15:00">		
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
 ![ganttview-timeruler 3](images/ganttview-timeruler_3.png)
 
 ## TimeRulerLines property
 
 Using the __TimeRulerLines__ property you could customize the count, the type and the intervals of the time ruler lines in RadGanttView. There are three types of lines:  __GroupTickLine__, __MajorTickLine__  and __MinorTickLine__, each having different styling and default properties.
-    		
 
 Here is a simple example:
-
-
 
 #### __XAML__
 
@@ -89,9 +79,7 @@ Here is a simple example:
 			</telerik:MinorTickLine>
 		</telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
-	{{endregion}}
-
-
+{{endregion}}
 
 And the result is:
 
@@ -99,56 +87,51 @@ And the result is:
 
 Each time ruler line has  a collection of __TickIntervals__ objects. The most important properties of the __TickInterval__ object are:
 
-
-
 * Interval  - it is of enum type and can be set to any of the following values:
-   						
 
-* OneSecond
+	* OneSecond
 
-* FiveSeconds
+	* FiveSeconds
 
-* TenSeconds
+	* TenSeconds
 
-* FifteenSeconds
+	* FifteenSeconds
 
-* ThirtySeconds
+	* ThirtySeconds
 
-* OneMinute
+	* OneMinute
 
-* FiveMinutes
+	* FiveMinutes
 
-* TenMinutes
+	* TenMinutes
 
-* TenMinutes
+	* TenMinutes
 
-* ThirtyMinutes
+	* ThirtyMinutes
 
-* OneHour
+	* OneHour
 
-* TwoHours
+	* TwoHours
 
-* ThreeHours
+	* ThreeHours
 
-* SixHours
+	* SixHours
 
-* TwelveHours
+	* TwelveHours
 
-* OneDay
+	* OneDay
 
-* OneWeek
+	* OneWeek
 
-* OneMonth
+	* OneMonth
 
-* OneYear
+	* OneYear
 
 * FormatString  - you can set the format of the text for the tick interval.
 
 * MinLength – sets the min length needed for the tick to be shown.
 
 Let’s have the example modified like this:
-
-
 
 #### __XAML__
 
@@ -163,20 +146,19 @@ Let’s have the example modified like this:
 			</telerik:MajorTickLine>
 		</telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
-	{{endregion}}
-
-
+{{endregion}}
 
 And the time ruler will have only GroupTickLine and MajorTickLine with formatted text:
 
 ![ganttview-timeruler 5](images/ganttview-timeruler_5.png)
 
->tipYou can have more than one TickInterval for a time ruler line – the GanttView will select the most suitable according to each TickInterval’s Interval and MinLength properties as well as PixelLength property of the control.
-   			 Let’s modify the example like this:
+>You can have more than one TickInterval for a time ruler line – the GanttView will select the most suitable according to each TickInterval’s Interval and MinLength properties as well as PixelLength property of the control.
 
-#### __XAML__
+>Let’s modify the example like this:
 
-{{region radganttview-features-timeruler-configuring_5}}
+>#### __XAML__
+
+>{{region radganttview-features-timeruler-configuring_5}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:20:00">
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>
@@ -188,13 +170,13 @@ And the time ruler will have only GroupTickLine and MajorTickLine with formatted
 			</telerik:MajorTickLine>
 		</telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
-	{{endregion}}
+>{{endregion}}
 
-Note that we’ve set two TickIntervals for the MajorTickLine.  So when PixelLength is set to 20min, the result will be the following:![ganttview-timeruler 6](images/ganttview-timeruler_6.png)If we change the PixelLength to 40min, the Week interval will be chosen:
+>Note that we’ve set two TickIntervals for the MajorTickLine.  So when PixelLength is set to 20min, the result will be the following:![ganttview-timeruler 6](images/ganttview-timeruler_6.png)If we change the PixelLength to 40min, the Week interval will be chosen:
 
-#### __XAML__
+>#### __XAML__
 
-{{region radganttview-features-timeruler-configuring_6}}
+>{{region radganttview-features-timeruler-configuring_6}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:40:00">
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>
@@ -206,10 +188,8 @@ Note that we’ve set two TickIntervals for the MajorTickLine.  So when PixelLen
 			</telerik:MajorTickLine>
 		</telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
-	{{endregion}}
+>{{endregion}}
 
-![ganttview-timeruler 7](images/ganttview-timeruler_7.png)
+>![ganttview-timeruler 7](images/ganttview-timeruler_7.png)
 
-You can check the GanttView TimeRuler example at 
-   			{% if site.site_name == 'Silverlight' %}[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#GanttView/Configuration/TimeRuler){% endif %}{% if site.site_name == 'WPF' %}[RadControls for WPF demos](http://demos.telerik.com/wpf/){% endif %}
-   			to see the time ruler properties in action. 
+You can check the GanttView TimeRuler example at {% if site.site_name == 'Silverlight' %}[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#GanttView/Configuration/TimeRuler){% endif %}{% if site.site_name == 'WPF' %}[RadControls for WPF demos](http://demos.telerik.com/wpf/){% endif %} to see the time ruler properties in action. 

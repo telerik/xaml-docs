@@ -34,10 +34,10 @@ Here is a list of the properties which can be used to change the colors of the _
 #### __C#__
 
 {{region radpanelbar-changing-colors_1}}
-			RadPanelBar myPanelBar = new RadPanelBar()
-			{
-				Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xBA, 0xDD, 0x27))
-			};
+    RadPanelBar myPanelBar = new RadPanelBar()
+    {
+        Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xBA, 0xDD, 0x27))
+    };
 	{{endregion}}
 
 
@@ -45,9 +45,9 @@ Here is a list of the properties which can be used to change the colors of the _
 #### __VB.NET__
 
 {{region radpanelbar-changing-colors_1}}
-		Dim myPanelBar As New RadPanelBar() With {
-		 .Background = New SolidColorBrush(Color.FromArgb(&HFF, &HBA, &HDD, &H27))
-		}
+    Dim myPanelBar As New RadPanelBar() With {
+     .Background = New SolidColorBrush(Color.FromArgb(&HFF, &HBA, &HDD, &H27))
+    }
 	{{endregion}}
 
 
@@ -66,7 +66,7 @@ Here is a list of the properties which can be used to change the colors of the _
 #### __C#__
 
 {{region radpanelbar-changing-colors_3}}
-			myPanelBar.Foreground = new SolidColorBrush(Colors.Red);
+    myPanelBar.Foreground = new SolidColorBrush(Colors.Red);
 	{{endregion}}
 
 
@@ -74,10 +74,13 @@ Here is a list of the properties which can be used to change the colors of the _
 #### __VB.NET__
 
 {{region radpanelbar-changing-colors_4}}
-		myPanelBar.Foreground = New SolidColorBrush(Colors.Red)
+    myPanelBar.Foreground = New SolidColorBrush(Colors.Red)
 	{{endregion}}
 
-*Before:*![Rad Panel Bar foreground before](images/RadPanelBar_foreground_before.png)*After:*![Rad Panel Bar foreground after](images/RadPanelBar_foreground_after.png)
+*Before:*
+![Rad Panel Bar foreground before](images/RadPanelBar_foreground_before.png)
+*After:*
+![Rad Panel Bar foreground after](images/RadPanelBar_foreground_after.png)
 
 * __BorderBrush__ - changes the border brush of the control if its border thickness is set to a value greater than 0 i.e. the border is visible.
 			
@@ -93,8 +96,8 @@ Here is a list of the properties which can be used to change the colors of the _
 #### __C#__
 
 {{region radpanelbar-changing-colors_6}}
-			myPanelBar.BorderThickness = new Thickness(2);
-			myPanelBar.BorderBrush = new SolidColorBrush(Colors.Red);
+    myPanelBar.BorderThickness = new Thickness(2);
+    myPanelBar.BorderBrush = new SolidColorBrush(Colors.Red);
 	{{endregion}}
 
 
@@ -102,11 +105,14 @@ Here is a list of the properties which can be used to change the colors of the _
 #### __VB.NET__
 
 {{region radpanelbar-changing-colors_7}}
-		myPanelBar.BorderThickness = New Thickness(2)
-		myPanelBar.BorderBrush = New SolidColorBrush(Colors.Red)
+    myPanelBar.BorderThickness = New Thickness(2)
+    myPanelBar.BorderBrush = New SolidColorBrush(Colors.Red)
 	{{endregion}}
 
-*Before:*![Rad Panel Bar foreground before](images/RadPanelBar_foreground_before.png)*After:*![Rad Panel Bar border red](images/RadPanelBar_border_red.png)
+*Before:*
+![Rad Panel Bar foreground before](images/RadPanelBar_foreground_before.png)
+*After:*
+![Rad Panel Bar border red](images/RadPanelBar_border_red.png)
 
 These are the changes that can be achieved by using properties only. In case you need to do some further color adjustments to the default template, you will need to create your own custom control template(s).
 

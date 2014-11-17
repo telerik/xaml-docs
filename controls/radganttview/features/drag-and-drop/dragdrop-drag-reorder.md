@@ -10,13 +10,9 @@ position: 1
 
 # Drag Reorder
 
-
-
 In the __RadGanttView__ control there are multiple build-in features that are related to dragging and dropping with the mouse such as the task __dragging__, __resizing__ and __reordering__ of tasks in the [GridView part]({%slug radganttview-visual-structure%}) of the control.
-            
 
 The drag reorder of tasks in the [GridView part]({%slug radganttview-visual-structure%}) of the RadGanttView control is done via dragging and dropping the row which is associate with the task. You can start the reorder functionality for any task by click and move of any cell of the task’s row.
-            
 
 ## Basic Drag Reorder Functionality
 
@@ -24,47 +20,44 @@ The built-in reorder feature provides multiple drop location in order to support
                 
 
 * Drop above another task (the drop cue is displayed above the “Gantt Demos” task):
-                        ![radganttview-dragdrop-drag-reorder-1](images/radganttview-dragdrop-drag-reorder-1.jpg)
+
+![radganttview-dragdrop-drag-reorder-1](images/radganttview-dragdrop-drag-reorder-1.jpg)
 
 * Drop below another task (the drop cue is displayed below the “Gantt Demos” task):
-                        ![radganttview-dragdrop-drag-reorder-2](images/radganttview-dragdrop-drag-reorder-2.jpg)
+
+![radganttview-dragdrop-drag-reorder-2](images/radganttview-dragdrop-drag-reorder-2.jpg)
 
 * Drop inside another task (the drop cue is displayed in the middle of the “Gantt Demos” task):
-                        ![radganttview-dragdrop-drag-reorder-3](images/radganttview-dragdrop-drag-reorder-3.jpg)
+
+![radganttview-dragdrop-drag-reorder-3](images/radganttview-dragdrop-drag-reorder-3.jpg)
 
 * Drop a parent task inside one of its children tasks (the drop cue is not displayed and the restricted drop icon is shown in the drag visual):
-                        ![radganttview-dragdrop-drag-reorder-4](images/radganttview-dragdrop-drag-reorder-4.jpg)
+
+![radganttview-dragdrop-drag-reorder-4](images/radganttview-dragdrop-drag-reorder-4.jpg)
 
 * Dragging a task (the “Documentation Iteration” task) that has inner tasks will drag the entire series of tasks not only the parent task:
-                        ![radganttview-dragdrop-drag-reorder-5](images/radganttview-dragdrop-drag-reorder-5.jpg)![radganttview-dragdrop-drag-reorder-6](images/radganttview-dragdrop-drag-reorder-6.jpg)
+
+![radganttview-dragdrop-drag-reorder-5](images/radganttview-dragdrop-drag-reorder-5.jpg)![radganttview-dragdrop-drag-reorder-6](images/radganttview-dragdrop-drag-reorder-6.jpg)
 
 ## Custom GanttDragDropBehavior
 
 The RadGattView control provides an easy way of customizing the drag and drop of its tasks in its Timeline and GridView part with the use of its __DragDropBehavior__. You can read more about how to customize the drag/drop and resizing of tasks in the Timeline part of the GanttView control [here]({%slug radganttview-dragdrop-overview%}). This help article will focus on how to create custom DragDropBehavior in order to control the drag reordering of tasks in the GridView part of the control.
-                
 
-In order to create custom DragDropBehavior there are two possible approaches that could be used:
-                
+In order to create custom DragDropBehavior there are two possible approaches that could be used:  
 
-* Create a class that inherits the __GanttDragDropBehavior__ class and override its CanDrop, Drop, CanStartDrag, CreateInstanceOverride and GetReorderDropPosition methods.
-                        
+* Create a class that inherits the __GanttDragDropBehavior__ class and override its CanDrop, Drop, CanStartDrag, CreateInstanceOverride and GetReorderDropPosition methods.  
 
-or
-                
+or 
 
 * Create a class that implements the __ISchedulingDragDropBehavior__ interface and implement its methods.
-                        
 
 ### Disable Drag Reorder for Specific Tasks
 
 The next example will demonstrate how to create a custom GanttDragDropBehavior that will disable the drag reorder of some tasks in the RadGanttView control.
-                        
 
 >Before proceeding with this help article you should get familiar with [Custom GanttTask]({%slug radganttview-features-items-custom-gantttask%}) and [Implementing View-ViewModel]({%slug radganttview-populating-with-data-viewmodel%}).
-                            
 
 * First you will need to create a custom GanttTask and add a Boolean field that will represent the drag reorder state of the task:
-                                
 
 #### __C#__
 
@@ -90,12 +83,9 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 * After that you will need to create the custom DragDropBehavior with one of the previously mentioned approaches. In the __CanStartDrag__ method you can use the __SchedulingDragDropState__ to determine if the drag and drop operation is in the GridView or the Timeline part of the control with the use of the Boolean __IsReorderOperation__ property. If the value of that property is true the drag drop operation is triggered in the [GridView part]({%slug radganttview-visual-structure%}) of the control:
-                                
 
 #### __C#__
 
@@ -112,12 +102,9 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 	        return base.CanStartDrag(state);
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 * After populating the control with some sample data the declared in the xaml control should look like this:
-                                
 
 #### __XAML__
 
@@ -135,15 +122,13 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 	        <telerik:ColumnDefinition MemberBinding="{Binding IsDragReorderAllowed}" Header="Is Drag Reorder Allowed" Width="AutoHeaderAndContent"/>
 	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-	{{endregion}}
-
-
+{{endregion}}
 
 The local namespace is the namespace of the project.
-                        
 
 The next screenshots show the final result:
-                        ![radganttview-dragdrop-drag-reorder-7](images/radganttview-dragdrop-drag-reorder-7.jpg)![radganttview-dragdrop-drag-reorder-8](images/radganttview-dragdrop-drag-reorder-8.jpg)
+
+![radganttview-dragdrop-drag-reorder-7](images/radganttview-dragdrop-drag-reorder-7.jpg)![radganttview-dragdrop-drag-reorder-8](images/radganttview-dragdrop-drag-reorder-8.jpg)
 
 # See Also
 

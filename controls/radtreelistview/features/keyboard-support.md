@@ -14,7 +14,7 @@ position: 14
 
 ## 
 
-__RadTreeListView__exposes several useful properties and events, which can help you to control the keyboard interaction and to get notified when keyboard events occur. Moreover, by using the keyboard you can perform some of the most common tasks:
+__RadTreeListView__ exposes several useful properties and events, which can help you to control the keyboard interaction and to get notified when keyboard events occur. Moreover, by using the keyboard you can perform some of the most common tasks:
 
 * Change the __selection__ - use the __arrow__ keys to change your selection. To select multiple rows hold the __Shift\Ctrl__ key pressed and use the arrow keys or the mouse to select the desired rows. 
 
@@ -26,6 +26,4 @@ __RadTreeListView__exposes several useful properties and events, which can help 
 
 * __Cancel cell edit__ - press __Escape__ while the cell is in edit mode. This will rollback the changes you've made. 
 
-As the __RadTreeListView__ directly inherits the __RadGridView__ it handles the keyboard in the same way. To learn more read the 
-        {% if site.site_name == 'Silverlight' %}[respective topic](http://www.telerik.com/help/silverlight/gridview-overview-keyboard-support.html){% endif %}{% if site.site_name == 'WPF' %}[respective topic](http://www.telerik.com/help/wpf/gridview-overview-keyboard-support.html){% endif %}
-          in the __RadGridView's__ documentation.
+As the __RadTreeListView__ directly inherits the __RadGridView__ it handles the keyboard in the same way. To learn more read the [respective topic]({%slug gridview-overview-keyboard-support%}) in the __RadGridView's__ documentation.

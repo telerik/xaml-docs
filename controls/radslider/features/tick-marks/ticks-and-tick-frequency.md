@@ -14,11 +14,7 @@ position: 0
 
 ## 
 
-The __Ticks__ property allows you to place marks(ticks) along the track in a 
-        __non-uniform__ manner, unlike the __TickFrequency__ property 
-        which places the ticks on equal intervals. The __Ticks__ property is of type 
-        __DoubleCollection__ and its default value is null. This property has to be combined 
-        with setting __TickPlacement__ to something different than __None__.
+The __Ticks__ property allows you to place marks(ticks) along the track in a __non-uniform__ manner, unlike the __TickFrequency__ property which places the ticks on equal intervals. The __Ticks__ property is of type __DoubleCollection__ and its default value is null. This property has to be combined with setting __TickPlacement__ to something different than __None__.
         
 
 #### __XAML__
@@ -61,7 +57,7 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a
 
 ![](images/radslider_features_ticks_custom.png)
 
-The __TickFrequency__ property on the other hand allows you to place marks(ticks) along the track in a __uniform__ manner. On the example bellow, since the __Maximum__is 10 and the __TickFrequency__ is 2, this means that there will be tick marks at 0, 2, 4, 6, 8 and 10.
+The __TickFrequency__ property on the other hand allows you to place marks(ticks) along the track in a __uniform__ manner. On the example bellow, since the __Maximum__ is 10 and the __TickFrequency__ is 2, this means that there will be tick marks at 0, 2, 4, 6, 8 and 10.
 
 #### __XAML__
 

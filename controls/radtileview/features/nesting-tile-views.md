@@ -10,12 +10,7 @@ position: 5
 
 # Nesting TileViews
 
-
-
-## 
-
-__RadTileView__ support nesting. You can nest different __TileViews__ in order to achieve
-          complex layouts. Check the example below:
+__RadTileView__ support nesting. You can nest different __TileViews__ in order to achieve complex layouts. Check the example below:
 
 #### __XAML__
 
@@ -50,14 +45,11 @@ __RadTileView__ support nesting. You can nest different __TileViews__ in order t
 	        <TextBlock Text="Item6 Content"/>
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
+{{endregion}}
 
 ![Nested RadTileView](images/tileview_nesting.png)
 
 # See Also
-
  * [Getting Started]({%slug radtileview-getting-started%})
-
  * [Minimizing And Maximizing]({%slug radtileview-minimizing-and-maximizing%})
-
  * [Visual Structure]({%slug radtileview-visual-structure%})

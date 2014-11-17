@@ -12,7 +12,7 @@ position: 5
 
 
 
-Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon cotnrol used in Microsoft Office. The __RadRibbonView__consists of various elements, one of which is the __Ribbon Group__. This topic discusses concepts fundamental to the __Ribbon Group__ at first and then goes into the usage of the __RadRibbonGroup__ class and its features.
+Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon cotnrol used in Microsoft Office. The __RadRibbonView__ consists of various elements, one of which is the __Ribbon Group__. This topic discusses concepts fundamental to the __Ribbon Group__ at first and then goes into the usage of the __RadRibbonGroup__ class and its features.
 	  
 
 >tipBefore proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.
@@ -22,40 +22,44 @@ Telerik __RadRibbonView__ provides a simple and consistent way for building inte
 
 * [Layout Resizing](#layout-resizing)
 
-The __RadRibbonView__ helps end-users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in__logical groups__ that are collected together under specific [tabs]({%slug radribbonview-ribbon-tab%}). Or in other words - the __Ribbon Group__lets you categorize the commands to be displayed for the end-users.
+The __RadRibbonView__ helps end-users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in __logical groups__ that are collected together under specific [tabs]({%slug radribbonview-ribbon-tab%}). Or in other words - the __Ribbon Group__ lets you categorize the commands to be displayed for the end-users.
 		
 
-__Ribbon Groups__are defined into the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}). A single __Ribbon Tab__ usually contains many __Ribbon Groups__ to layout its content.
-		![](images/RibbonView_Group_Overview.png)
+__Ribbon Groups__ are defined into the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}). A single __Ribbon Tab__ usually contains many __Ribbon Groups__ to layout its content.
+![](images/RibbonView_Group_Overview.png)
 
 Each Ribbon Group may have a __Header__ and a __Dialog Launcher__. The __Dialog Launcher__ appears in the bottom right corner of the group.
-		![](images/RibbonView_Group_Parts.png)
+![](images/RibbonView_Group_Parts.png)
 
 >tipThe class that represents the ribbon group is __Telerik.Windows.Controls.RadRibbonGroup__.
 		  
 
-The __RadRibbonGroup__is a [HeaderedItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.headereditemscontrol.aspx) and is the main part of the layout mechanism of the __RadRibbonView__.
+The __RadRibbonGroup__ is a [HeaderedItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.headereditemscontrol.aspx) and is the main part of the layout mechanism of the __RadRibbonView__.
 		
 
 ## Layout Resizing
 
-One of the most important feature of the __RadRibbonGroup__ is the __dynamic resizing__. It refers to the ability of the __RadRibbonView__to optimize its layout depending on how much space is available.
+One of the most important feature of the __RadRibbonGroup__ is the __dynamic resizing__. It refers to the ability of the __RadRibbonView__ to optimize its layout depending on how much space is available.
 		
 
-Each __RadRibbonGroup__ in a __RadRibbonTab__may have four possible sizes (__Variants__):
+Each __RadRibbonGroup__ in a __RadRibbonTab__ may have four possible sizes (__Variants__):
 		
 
 * __Large__ - this is the default size (__Variant__).
-			![](images/RibbonView_Group_Large.png)
 
->tipThe __RadRibbonGroups__assumes their __DefaultVariant__ (which by default is __Large__) state whenever they can.
+![](images/RibbonView_Group_Large.png)
+
+>tipThe __RadRibbonGroups__ assumes their __DefaultVariant__ (which by default is __Large__) state whenever they can.
 			  
 
-* __Medium__![](images/RibbonView_Group_Medium.png)
+* __Medium__
+![](images/RibbonView_Group_Medium.png)
 
-* __Small__![](images/RibbonView_Group_Small.png)
+* __Small__
+![](images/RibbonView_Group_Small.png)
 
-* __Collapsed__![](images/RibbonView_Group_Collapsed.png)
+* __Collapsed__
+![](images/RibbonView_Group_Collapsed.png)
 
 For more information about the layout resizing mechanism, please refer to the [Resizing]({%slug radribbonview-resizing%}) topic. Check out the rest of the topic which is entirely dedicated to the __RadRibbonGroup__.
 		
@@ -119,8 +123,7 @@ Any group can have a dialog launcher button which appears in the bottom right co
 
 ## Adding Content to the Ribbon Groups
 
-The __RadRibbonGroup__is a [HeaderedItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.headereditemscontrol.aspx). Which means that the __RadRibbonGroup__contains a heading (or title) and multiple items. You already learned how to
-		  [set](#adding-ribbon-groups-to-a-radribbonview-control) the __Header__ property. Now it's time to add some content to the __RadRibbonGroup__. You should do this using the __RadRibbonGroup__'s __Items__ property. The next example shows you how to build the "Clipboard" __RadRibbonGroup__.
+The __RadRibbonGroup__ is a [HeaderedItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.headereditemscontrol.aspx). Which means that the __RadRibbonGroup__ contains a heading (or title) and multiple items. You already learned how to [set](#adding-ribbon-groups-to-a-radribbonview-control) the __Header__ property. Now it's time to add some content to the __RadRibbonGroup__. You should do this using the __RadRibbonGroup__'s __Items__ property. The next example shows you how to build the "Clipboard" __RadRibbonGroup__.
 		
 
 #### __XAML__
@@ -181,15 +184,15 @@ The __RadRibbonGroup__is a [HeaderedItemsControl](http://msdn.microsoft.com/en-u
 
 ## Setting Screen Tip
 
-The Telerik __RadRibbonView__'s API allows you to associate screen tips with each one of the __RibbonGroup__s. For more information, take a look at the [Screen Tips]({%slug radribbonview-screentips%}) topic.
+The Telerik __RadRibbonView__'s API allows you to associate screen tips with each one of the __RibbonGroup__. For more information, take a look at the [Screen Tips]({%slug radribbonview-screentips%}) topic.
 		
 
 ## Specifying Group Variants
 
-Each __RadRibbonGroup__ in a __RadRibbonTab__may have four possible sizes (__Variants__): __Large__, __Medium__, __Small__ and __Collapsed__. __Collapsed__ groups always look the same - only the __Header__ and an __image__ are shown.
-		![](images/RibbonView_Group_CollapsedGroups.png)
+Each __RadRibbonGroup__ in a __RadRibbonTab__ may have four possible sizes (__Variants__): __Large__, __Medium__, __Small__ and __Collapsed__. __Collapsed__ groups always look the same - only the __Header__ and an __image__ are shown.
+![](images/RibbonView_Group_CollapsedGroups.png)
 
-The resizing of the elements is defined per __RadRibbonTab__. The resizing behavior of the tab is defined by setting the __Variant__ collection to each of its __RadRibbonGroups__ and is based on __priorities__. By default, if no __priorities__ are set to the __Variants__ of the __RibbonGroups,__ they will be resized from __right to left__. In order to customize the order by which the groups will be resized, the developer needs to specify a __Priority__ for each of the __RibbonGroup____Variants__.
+The resizing of the elements is defined per __RadRibbonTab__. The resizing behavior of the tab is defined by setting the __Variant__ collection to each of its __RadRibbonGroups__ and is based on __priorities__. By default, if no __priorities__ are set to the __Variants__ of the __RibbonGroups,__ they will be resized from __right to left__. In order to customize the order by which the groups will be resized, the developer needs to specify a __Priority__ for each of the __RibbonGroup__ __Variants__.
 		
 
 For more information and explanations about the __Variants__ and __Priorities__, take a look at the [Resizing]({%slug radribbonview-resizing%}) topic.
@@ -218,7 +221,7 @@ Any group can have a dialog launcher button. When you want to handle the click o
 The __LaunchDialog__ event handler receives two arguments:
 		
 
-* The sender argument contains the __RadRibbonGroup__. This argument is of type __object__, but can be cast to the __RadRibbonGroup__type.
+* The sender argument contains the __RadRibbonGroup__. This argument is of type __object__, but can be cast to the __RadRibbonGroup__ type.
 			
 
 * The second argument is a __RadRoutedEventArgs__ object.
@@ -227,7 +230,7 @@ The __LaunchDialog__ event handler receives two arguments:
 For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview]({%slug radribbonview-events-overview%}) topic.
 		
 
-The __RadRibbonView__ is a complex control and the __ribbon groups__are only a small part of it. The __RadRibbonView__ consists of various elements such as:
+The __RadRibbonView__ is a complex control and the __ribbon groups__ are only a small part of it. The __RadRibbonView__ consists of various elements such as:
 		
 
 * [Application Menu]({%slug radribbonview-applicationmenu%})

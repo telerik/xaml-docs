@@ -10,8 +10,6 @@ position: 5
 
 # GanttTask Deadline
 
-
-
 With the official Q2 2014 release of UI for WPF/SL you will have the option to use the __Deadline__ property of the __GanttTask__ and visualize an indicator showing whether the task is expired.  
 
 This help topic will describe the Deadline property in more details as well as how you could customize its behavior.
@@ -32,9 +30,7 @@ __Example 1__ shows how the Deadline can be set.
 	    Deadline = new DateTime(2014,6,9),
 	    Title = "Gantt Rendering"
 	};
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
 
@@ -45,9 +41,7 @@ __Example 1__ shows how the Deadline can be set.
 		.Deadline = New DateTime(2014, 6, 9), _
 		.Title = "Gantt Rendering" _
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 When the __End__ time is before the set __Deadline__ of the Task, the Indicator is in green color, however, as soon as you expand the task after the __End__, the Indicator is replaced with one that has red color.
 
@@ -62,7 +56,6 @@ There may be cases when you need to add different logic for marking tasks as exp
 In order to change this behavior, you will need to create a custom GanttTask and override its __CheckIsExpired__  method. __Example 2__ demonstrates how to override this method, so that the task is marked as expired only when its __Start__ property goes after the set __Deadline__:
 
 __Example 2__ shows how to override CheckIsExpired method.
-        
 
 #### __C#__
 
@@ -74,9 +67,7 @@ __Example 2__ shows how to override CheckIsExpired method.
 	        return this.Deadline < this.Start;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
 
@@ -87,15 +78,17 @@ __Example 2__ shows how to override CheckIsExpired method.
 			Return Me.Deadline < Me.Start
 		End Function
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 __Figure 2__ and __Figure 3__ show the result:
 
-Figure 2: Even if the End is after the Deadline, the task is not marked as expired.![ganttview gantttaskdeadline 02](images/ganttview_gantttaskdeadline_02.png)
+Figure 2: Even if the End is after the Deadline, the task is not marked as expired.
 
-Figure 3: As soon as the Start goes after the Deadline, the task is marked as delayed.![ganttview gantttaskdeadline 03](images/ganttview_gantttaskdeadline_03.png)
+![ganttview gantttaskdeadline 02](images/ganttview_gantttaskdeadline_02.png)
+
+Figure 3: As soon as the Start goes after the Deadline, the task is marked as delayed.
+
+![ganttview gantttaskdeadline 03](images/ganttview_gantttaskdeadline_03.png)
 
 # See Also
 

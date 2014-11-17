@@ -10,43 +10,39 @@ position: 4
 
 # Expanding and Collapsing Items
 
-
-
 This tutorial will walk you through the following common tasks:
 
-* [Expanding and collapsing items](#Expanding_and_Collapsing_Items_Declaratively)
+* [Expanding and collapsing items](#expanding-and-collapsing-items-declaratively)
 
-* [Expanding and collapsing items recursively](#Expanding_and_Collapsing_All_TreeView_Items)
+* [Expanding and collapsing items recursively](#expanding-and-collapsing-treeview-items-recursively)
 
-* [Expanding only a single branch of the treeview at once](#Expanding_Only_a_Single_Branch_of_the_TreeView)
+* [Expanding only a single branch of the treeview at once](#expanding-only-a-single-branch-of-the-treeview)
 
-* [Expanding an item by path](#Expand_an_Item_By_Path)
+* [Expanding an item by path](#expand-an-item-by-path)
 
-* [Expanding an item by using the ItemContainerStyle property](#Expand_an_Item_by_Using_the_ItemContainerStyle)
+* [Expanding an item by using the ItemContainerStyle property](#expand-an-item-by-using-the-itemcontainerstyle)
 
-* [Changing the expand on click mode](#Expand_on_Single_or_Double_Click)
+* [Changing the expand on click mode](#expand-on-single-or-double-click)
 
-* [Events](#Events)
+* [Events](#events)
 
-* [Styling the expander](#Styling_the_Expander)
+* [Styling the expander](#styling-the-expander)
 
-* [Expand all nodes at start](#Expand_All_Nodes_at_Start)
+* [Expand all nodes at start](#expand-all-nodes-at-start)
 
-* [Binding the IsExpanded property to a property of a business object](#Binding_the_IsExpanded_Property)
+* [Binding the IsExpanded property to a property of a business object](#binding-the-isexpanded-property)
 
 ## Expanding and Collapsing Items Declaratively 
 
 To __expand__ a treeview item you need to set the __IsExpanded__ attribute to __True__. Conversely, in order to __collapse__ an item you should set the __IsExpanded__ attribute to __False__. 
 
->tipThe default value of the __IsExpanded__ property is __False__.
+>tip The default value of the __IsExpanded__ property is __False__.
 
 #### __XAML__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_0}}
 	<telerik:RadTreeViewItem x:Name="radTreeViewItem" Header="Sport Categories" IsExpanded="True">
 	{{endregion}}
-
-
 
 In order to __expand__ a treeview item in the code-behind you need to set the __IsExpanded__ property of an instance of the __RadTreeViewItem__ class to __True__. If you want to __collapse__ a treeview item in the code-behind, the same property should be set to __False__. 
 
@@ -63,8 +59,6 @@ In order to __expand__ a treeview item in the code-behind you need to set the __
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_2}}
@@ -75,14 +69,12 @@ In order to __expand__ a treeview item in the code-behind you need to set the __
 	    radTreeViewItem.IsExpanded = False
 	End Sub
 	{{endregion}}
-
-
-
+	
 ## Expanding and Collapsing TreeView Items Recursively
 
-The __RadTreeView__ and __RadTreeViewItem__classes offer two methods for expanding and collapsing all nodes recursively. In order to __expand__ all nodes use the __ExpandAll()__ method and respectively use  the __CollapseAll()__ method - to collapse all nodes.
+The __RadTreeView__ and __RadTreeViewItem__ classes offer two methods for expanding and collapsing all nodes recursively. In order to __expand__ all nodes use the __ExpandAll()__ method and respectively use  the __CollapseAll()__ method - to collapse all nodes.
 
-If you use the __ExpandAll()__\__CollapseAll()__ method of the __RadTreeView__ class then the whole tree will be expanded\collapsed. For example, add the following lines of code to expand or collapse all nodes: 
+If you use the __ExpandAll()__ \ __CollapseAll()__ method of the __RadTreeView__ class then the whole tree will be expanded\collapsed. For example, add the following lines of code to expand or collapse all nodes: 
 
 #### __C#__
 
@@ -97,8 +89,6 @@ If you use the __ExpandAll()__\__CollapseAll()__ method of the __RadTreeView__ c
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_4}}
@@ -109,10 +99,6 @@ If you use the __ExpandAll()__\__CollapseAll()__ method of the __RadTreeView__ c
 	    radTreeView.CollapseAll()
 	End Sub
 	{{endregion}}
-
-
-
-
 
 >The __ExpandAll()__ and __CollapseAll()__ methods work only after the first level items have been loaded. This is visible only when the treeview is bound. Therefore it should be called only in or after the __Loaded__ event.
 
@@ -126,23 +112,17 @@ If you want the __RadTreeView__ to automatically close all the nodes __that are 
 	<telerik:RadTreeView x:Name="radTreeView" IsSingleExpandPath="True">
 	{{endregion}}
 
-
-
 #### __C#__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_6}}
 	radTreeView.IsSingleExpandPath = true;
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_7}}
 	radTreeView.IsSingleExpandPath = true
 	{{endregion}}
-
-
 
 Now when you try to expand a new branch from the tree, all of the other expanded branches that are not on the path of the expanded node will be collapsed.
 
@@ -173,8 +153,6 @@ Imagine, you have the following __RadTreeView__ declaration:
 	</telerik:RadTreeView>
 	{{endregion}}
 
-
-
 In this example the treeview item with __Header__ "Cycling" will be expanded. First, you need to create a path by the string representations of the Headers using some separator (for this example "|" will be used as a separator). Second, you should invoke the __ExpandItemByPath__ method of an instance of the __RadTreeView__ class.
 
 Here is an example: 
@@ -189,8 +167,6 @@ Here is an example:
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_10}}
@@ -199,8 +175,6 @@ Here is an example:
 	    radTreeView.ExpandItemByPath(path, "|")
 	End Sub
 	{{endregion}}
-
-
 
 And here is the result: 
 
@@ -218,9 +192,7 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 	    radTreeView.ExpandItemByPath( path );
 	}
 	{{endregion}}
-
-
-
+	
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_12}}
@@ -230,8 +202,6 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 	    radTreeView.ExpandItemByPath( path )
 	End Sub
 	{{endregion}}
-
-
 
 ## Expand an Item by Using the ItemContainerStyle
 
@@ -249,8 +219,6 @@ If you want to expand the nodes on a single click, then you need to set the __Is
 	<telerik:RadTreeView x:Name="radTreeView" IsExpandOnSingleClickEnabled="True">
 	{{endregion}}
 
-
-
 If you want to expand the nodes on a double click, then you need to set the __IsExpandOnDblClickEnabled__ attribute to __True__. 
 
 #### __XAML__
@@ -258,8 +226,6 @@ If you want to expand the nodes on a double click, then you need to set the __Is
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_14}}
 	<telerik:RadTreeView x:Name="radTreeView" IsExpandOnDblClickEnabled="True">
 	{{endregion}}
-
-
 
 The same properties can be used in the code-behind. See the next code lines: 
 
@@ -276,8 +242,6 @@ The same properties can be used in the code-behind. See the next code lines:
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_16}}
@@ -288,13 +252,11 @@ The same properties can be used in the code-behind. See the next code lines:
 	End Sub
 	{{endregion}}
 
-
-
 >The default behavior of the __RadTreeView__ is to expand the items on double click.
 
 ## Events
 
-The Telerik __RadTreeView__ and __RadTreeViewItem__ classes____offer you four events for managing the expanding and collapsing processes. These events are available both on the __RadTreeView__ and on the __RadTreeViewItem__ classes. 
+The Telerik __RadTreeView__ and __RadTreeViewItem__ classes offer you four events for managing the expanding and collapsing processes. These events are available both on the __RadTreeView__ and on the __RadTreeViewItem__ classes. 
 
 #### __XAML__
 
@@ -305,8 +267,6 @@ The Telerik __RadTreeView__ and __RadTreeViewItem__ classes____offer you four ev
 						PreviewCollapsed="radTreeView_PreviewCollapsed"
 						Collapsed="radTreeView_Collapsed">
 	{{endregion}}
-
-
 
 The __PreviewExpanded__ event occurs when the treeview item is about to be expanded. The __Expanded__ event is fired when the treeview item is already expanded. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__.
 
@@ -324,62 +284,56 @@ There are several ways to expand all nodes automatically at start:
 
 * If your __RadTreeView__ is [data bound to a business object]({%slug radtreeview-populating-with-data-data-binding-to-object%}), then the best solution is to use __ItemContainerStyle__.
 
-#### __XAML__
+	#### __XAML__
 
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_18}}
-	<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
-		<Setter Property="IsExpanded" Value="True"/>
-	</Style>
-	....
-	<telerik:RadTreeView x:Name="radTreeView" ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-	{{endregion}}
-
-
+	{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_18}}
+		<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
+			<Setter Property="IsExpanded" Value="True"/>
+		</Style>
+		....
+		<telerik:RadTreeView x:Name="radTreeView" ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
+		{{endregion}}
 
 * If your __RadTreeView__ is populated declaratively, then the best solution is to use a __Style__. You should create a style by setting the __IsExpanded__ property to __True__ and then setting it to all __RadTreeViewItems__.
 
-#### __XAML__
+	#### __XAML__
 
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_19}}
-	<Style x:Key="RadTreeViewItemStyle" TargetType="telerik:RadTreeViewItem">
-		<Setter Property="IsExpanded" Value="True"/>
-	</Style>
-	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
-		<telerik:RadTreeViewItem Header="Sport Categories" Style="{StaticResource RadTreeViewItemStyle}">
-			<telerik:RadTreeViewItem Header="Football" Style="{StaticResource RadTreeViewItemStyle}">
-				<telerik:RadTreeViewItem Header="Futsal" Style="{StaticResource RadTreeViewItemStyle}"/>
-				<telerik:RadTreeViewItem Header="Soccer" Style="{StaticResource RadTreeViewItemStyle}"/>
+	{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_19}}
+		<Style x:Key="RadTreeViewItemStyle" TargetType="telerik:RadTreeViewItem">
+			<Setter Property="IsExpanded" Value="True"/>
+		</Style>
+		<telerik:RadTreeView Margin="8" x:Name="radTreeView">
+			<telerik:RadTreeViewItem Header="Sport Categories" Style="{StaticResource RadTreeViewItemStyle}">
+				<telerik:RadTreeViewItem Header="Football" Style="{StaticResource RadTreeViewItemStyle}">
+					<telerik:RadTreeViewItem Header="Futsal" Style="{StaticResource RadTreeViewItemStyle}"/>
+					<telerik:RadTreeViewItem Header="Soccer" Style="{StaticResource RadTreeViewItemStyle}"/>
+				</telerik:RadTreeViewItem>
 			</telerik:RadTreeViewItem>
-		</telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-	{{endregion}}
-
-
+		</telerik:RadTreeView>
+		{{endregion}}
 
 * If you are using Silverlight 4, then you could take advantage of the __Implicit Styles__. For example, notice how the previous example is modified - the __x:Key__ is omitted. You should also not set the __Style__ property of the __RadTreeViewItem__.
 
-#### __XAML__
+	#### __XAML__
 
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_20}}
-	<Style TargetType="telerik:RadTreeViewItem">
-		<Setter Property="IsExpanded" Value="True"/>
-	</Style>
-	...
-	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
-		<telerik:RadTreeViewItem Header="Sport Categories">
-			<telerik:RadTreeViewItem Header="Football">
-				<telerik:RadTreeViewItem Header="Futsal"/>
-				<telerik:RadTreeViewItem Header="Soccer"/>
+	{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_20}}
+		<Style TargetType="telerik:RadTreeViewItem">
+			<Setter Property="IsExpanded" Value="True"/>
+		</Style>
+		...
+		<telerik:RadTreeView Margin="8" x:Name="radTreeView">
+			<telerik:RadTreeViewItem Header="Sport Categories">
+				<telerik:RadTreeViewItem Header="Football">
+					<telerik:RadTreeViewItem Header="Futsal"/>
+					<telerik:RadTreeViewItem Header="Soccer"/>
+				</telerik:RadTreeViewItem>
 			</telerik:RadTreeViewItem>
-		</telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-	{{endregion}}
-
-
+		</telerik:RadTreeView>
+		{{endregion}}
 
 ## Binding the IsExpanded Property
 
-A very common issue is to have the __RadTreeViewItem__'s __IsExpanded__property bound to a property of a custom business object. The easiest way to achieve this is to use __Style Binding__. For example, imagine that your business object has a boolean property named __IsExpanded__. And you want to bind the __IsExpanded__property of this business object to the __IsExpanded__property of the __RadTreeViewItem__. Then check out the code snippet below, it demonstrates how to achieve this.{% if site.site_name == 'Silverlight' %}
+A very common issue is to have the __RadTreeViewItem__'s __IsExpanded__ property bound to a property of a custom business object. The easiest way to achieve this is to use __Style Binding__. For example, imagine that your business object has a boolean property named __IsExpanded__. And you want to bind the __IsExpanded__property of this business object to the __IsExpanded__ property of the __RadTreeViewItem__. Then check out the code snippet below, it demonstrates how to achieve this.{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
@@ -421,15 +375,9 @@ A very common issue is to have the __RadTreeViewItem__'s __IsExpanded__property 
 For a complete demo, please refer to the [How to Bind RadTreeView to Hierarchical Data and Use Style Binding]({%slug radtreeview-howto-bind-hierarchical-data-style-binding%}) topic.
 
 # See Also
-
  * [Expand and Collapse Items]({%slug radtreeview-how-to-expand-and-collapse-items%})
-
  * [Item Images]({%slug radtreeview-feautres-treeviewitem-item-images%})
-
  * [Enable and Disable Items]({%slug radtreeview-feautres-treeviewitem-enable-disable-items%})
-
  * [Working with Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
-
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})
-
  * [BringIntoView Support]({%slug radtreeview-features-treeviewitem-bring-into-view-support%})

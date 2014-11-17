@@ -10,23 +10,15 @@ position: 10
 
 # Bind to a Selected Item
 
-
-
-## 
-
 __RadTreeView__ exposes __SelectedItem__ property, which is a __DependencyProperty__ and can be used in a data binding.
-		
 
 #### __XAML__
 
 {{region radtreeview-how-to-bind-selected-item_0}}
 	<telerik:RadTreeView SelectedItem="{Binding SelectedItem, Mode=TwoWay}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 If you want to bind to the __RadTreeViewItem__'s __IsSelected__ property when your treeview is [data bound to an object]({%slug radtreeview-populating-with-data-data-binding-to-object%}), then you need to use an __ItemContainerStyle__.
-		
 
 #### __XAML__
 
@@ -40,12 +32,7 @@ If you want to bind to the __RadTreeViewItem__'s __IsSelected__ property when yo
 	</telerik:RadTreeView>
 	{{endregion}}
 
-
-
 # See Also
-
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
-
  * [Add Context Menu]({%slug radtreeview-how-to-add-context-menu%})
-
  * [Change the Default Height of a TreeViewItem]({%slug radtreeview-how-to-change-default-height-treeviewitem%})

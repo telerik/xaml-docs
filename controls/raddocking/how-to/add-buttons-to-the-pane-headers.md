@@ -10,8 +10,6 @@ position: 1
 
 # How to Add Buttons to the Pane Header
 
-
-
 The purpose of this tutorial is to walk you through the common task of adding buttons to the pane header and attaching some behavior to them.
 
 >tipFor more information about the __RadPane__ and its visual elements, read [here](raddocking-panes-radpane.html).
@@ -32,13 +30,13 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_HowTo_AddHeaderButton_020.png)
 
 ## Adding Buttons to the Pane Header 
 
-In order to add additional elements to the pane header, you need to set the __TitleTemplate__of the __RadPane__.
+In order to add additional elements to the pane header, you need to set the __TitleTemplate__ of the __RadPane__.
 
 Create a new data template in your XAML. For example, see the next declaration:
 
@@ -57,9 +55,7 @@ Create a new data template in your XAML. For example, see the next declaration:
 	                           Content="Float!" />
 	    </Grid>
 	</DataTemplate>
-	{{endregion}}
-
-
+{{endregion}}
 
 Change your XAML declaration and set the __TitleTemplate__ property of the __RadPane__.
 
@@ -75,11 +71,11 @@ Change your XAML declaration and set the __TitleTemplate__ property of the __Rad
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking.DocumentHost>
-	{{endregion}}
+{{endregion}}
 
+Now you will get a result which is the same as the final one. The only difference is that when you click the button nothing will happen.
 
-
-Now you will get a result which is the same as the final one. The only difference is that when you click the button nothing will happen.![](images/RadDocking_HowTo_AddHeaderButton_030.png)
+![](images/RadDocking_HowTo_AddHeaderButton_030.png)
 
 ## Adding a Behavior
 
@@ -101,25 +97,16 @@ In order to add a behavior to the button, you should use the command mechanism. 
 	                           Content="Float!" />
 	    </Grid>
 	</DataTemplate>
-	{{endregion}}
+{{endregion}}
 
-
-
->tipThis is the complete list of the exposed __RadDocking__ commands:
-
-* Close
-
-* ContextMenuOpen
-
-* Floating
-
-* Dockable
-
-* PaneHeaderMenuOpen
-
-* Pin
-
-* TabbedDocument
+>This is the complete list of the exposed __RadDocking__ commands:
+>	* Close
+>	* ContextMenuOpen
+>	* Floating
+>	* Dockable
+>	* PaneHeaderMenuOpen
+>	* Pin
+>	* TabbedDocument
 
 Of course you may need to do something more complex than just one of the standard actions. In this situation you might prefer implementing your own commands.
 

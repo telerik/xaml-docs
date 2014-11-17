@@ -45,8 +45,7 @@ This is an example how to subscribe the event and handle the exception if there 
 	                // The document contains a filter which is not supported.
 	            }
 	        }
-	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -77,4 +76,3 @@ The __Telerik.Windows.Documents.Fixed.OnExceptionEventArgs__ has an Exception pr
 * __NotSupportedXObjectTypeException__ – this exception is thrown if the document contains a XObject type which is not supported by RadPdfViewer.  
             
 
-# See Also

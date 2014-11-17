@@ -10,19 +10,16 @@ position: 4
 
 # Unbound Mode
 
-
-
-## 
-
 There are scenarios, in which you might want to use the __RadDataFilter__ only for its UI without passing any data to it. This scenarios will require you to use the __RadDataFilter's____Unbound Mode__ feature. The usage of this feature consists in manually setting some of the __RadDataFilter's__ properties and handling events.
 
-The example in this topic will show you a __RadGridView__bound to a list of __Employee__ objects. A __RadDataFilter__ will be used as UI to filter the data, but the filtering itself will be done outside the __RadDataFilter__ via manipulation of __FilterDescriptor__ objects.
+The example in this topic will show you a __RadGridView__ bound to a list of __Employee__ objects. A __RadDataFilter__ will be used as UI to filter the data, but the filtering itself will be done outside the __RadDataFilter__ via manipulation of __FilterDescriptor__ objects.
 
-Here is the XAML for the example. In it you can see a __RadGridView__and a __RadDataFilter__.
+Here is the XAML for the example. In it you can see a __RadGridView__ and a __RadDataFilter__.
 
 #### __XAML__
 
 {{region raddatafilter-features-unbound-mode_0}}
+
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <Grid.RowDefinitions>
@@ -49,11 +46,12 @@ When in __Unbound Mode__, __RadDataFilter__ has no __Source__. The developer ins
 
 Here is the code-behind for the example. In it you should take notice at the instantiation of the __ItemPropertyDefinition__ class and the objects passed to its constructor as arguments. Also take a closer look at the code inside the event handler for the __FilterDescriptors__ collection's __CollectionChanged__ event. In it is implemented the actual filtering. This is done by synchronizing the __FilterDescriptors__ collection of the __RadDataFilter__ with the one of the __RadDataGridView__.
 
->tipAt the end of the topic you can find the code for the __Employee__ class, used in the example.
+>At the end of the topic you can find the code for the __Employee__ class, used in the example.
 
 #### __C#__
 
 {{region raddatafilter-features-unbound-mode_1}}
+
 	    public UnboundModeSample()
 	    {
 	        InitializeComponent();
@@ -83,6 +81,7 @@ Here is the code-behind for the example. In it you should take notice at the ins
 #### __VB.NET__
 
 {{region raddatafilter-features-unbound-mode_2}}
+
 	    Public Sub New()
 	        InitializeComponent()
 	        Dim nameDefinition As New ItemPropertyDefinition("Name", GetType(String), "Employee's Name")
@@ -108,6 +107,7 @@ Here is also the code for the __Employee__ class, used in the example.
 #### __C#__
 
 {{region raddatafilter-features-unbound-mode_3}}
+
 	public class Employee
 	{
 	    public Employee( string name, string companyName, string title )
@@ -139,6 +139,7 @@ Here is also the code for the __Employee__ class, used in the example.
 #### __VB.NET__
 
 {{region raddatafilter-features-unbound-mode_4}}
+
 	Public Class Employee
 	    Public Sub New(name As String, companyName As String, title As String)
 	        Me.Name = name

@@ -11,10 +11,7 @@ position: 1
 # Page RadGridView
 
 
-
-## 
-
-See this [article](FDBBFA08-24CE-4FE6-AFEE-DAFEC25A9C0D#Paging_RadGridView) for more information.
+See this [article]({%slug raddatapager-getting-started#Paging_RadGridView%}) for more information.
 
 # See Also
 

@@ -15,14 +15,13 @@ position: 9
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ consists of various elements, one of which are the __Screen Tips__. This topic discusses concepts fundamental to the __Screen Tips__ at first and then goes into the usage of the __ScreenTip__ class and its features.
 			
 
->tip
-				Before proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.
+>tipBefore proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.
 			
 
 ## Screen Tips - Fundamentals
 
-__Screen Tip__is a UI feature in which a small window appears when the __mouse cursor__is hovered over an icon or a ribbon element (command). The __popup__window will provide details that explain the command's function. In some instances, though, the __Screen Tip__ will display only the item's name. When the mouse is moved away from the ribbon element, the __Screen Tip__ will disappear from view.
-				![](images/RadRibbonView_ScreenTip_Overview.png)
+__Screen Tip__ is a UI feature in which a small window appears when the __mouse cursor__ is hovered over an icon or a ribbon element (command). The __popup__ window will provide details that explain the command's function. In some instances, though, the __Screen Tip__ will display only the item's name. When the mouse is moved away from the ribbon element, the __Screen Tip__ will disappear from view.
+![](images/RadRibbonView_ScreenTip_Overview.png)
 
 __RadRibbonView__ fully supports the Microsoft Office guidelines for screen tip implementation. You can set a screen tip to any element (command) in the __RadRibbonView__.
 				
@@ -40,21 +39,19 @@ The __ScreenTip__ is a __ToolTip__ (it derives from __ToolTip__), which consists
 					
 
 * __Icon__ - specifies the image of the screen tip.
-					![](images/RadRibbonView_ScreenTip_Elements.png)
+![](images/RadRibbonView_ScreenTip_Elements.png)
 
 ## Adding Screen Tip
 
 This section shows how to attach a screen tip to a __RadRibbon__ element.
 				
 
->tip
-					You can attach __Screen Tip__ to __each one__ of the __RadRibbon__ elements.
+>tipYou can attach __Screen Tip__ to __each one__ of the __RadRibbon__ elements.
 				
 
 The following subsections are included:
 
-When you want to set a screen tip, you need to use the __ScreenTip__ attached property.
-				Setting Title
+When you want to set a screen tip, you need to use the __ScreenTip__ attached property. Setting Title
 
 The first element you may want to specify is the title of the screen tip. In this case you need to use the __ScreenTip__'s __Title__ property. The next example demonstrates how to set a screen tip to a [Ribbon Group]({%slug radribbonview-ribbon-group%}).
 							
@@ -94,7 +91,8 @@ The same operation can be done in the code-behind, too. You need to invoke the _
 
 
 You can see a screen tip with only __Title__ property set like it is on the next snapshot.
-							![](images/RadRibbonView_ScreenTip_Title.png)Setting Description
+![](images/RadRibbonView_ScreenTip_Title.png)
+Setting Description
 
 When you want to set the description of the screen tip, you need to use the __ScreenTip__'s __Description__ property. The next example demonstrates how to do that.
 							
@@ -137,7 +135,9 @@ The same operation can be done in the code-behind, too. You need to invoke the _
 
 
 You can see a screen tip with __Title__ and __Description__ properties set like on the next snapshot.
-							![](images/RadRibbonView_ScreenTip_Decription.png)Setting Icon
+![](images/RadRibbonView_ScreenTip_Decription.png)
+
+Setting Icon
 
 The last but not least element of the screen tip is its image (icon). It is set through the __ScreenTip__'s __Icon__ property.
 							
@@ -182,9 +182,10 @@ The same operation can be done in the code-behind, too. You need to invoke the _
 
 
 
-The result is shown on the next snapshot.![](images/RadRibbonView_ScreenTip_Icon.png)
+The result is shown on the next snapshot.
+![](images/RadRibbonView_ScreenTip_Icon.png)
 
-The __RadRibbonView__ is a complex control and the __screen tips__are only a small part of it. The __RadRibbonView__consists of various elements such as:
+The __RadRibbonView__ is a complex control and the __screen tips__ are only a small part of it. The __RadRibbonView__ consists of various elements such as:
 							
 
 * [Application Menu]({%slug radribbonview-applicationmenu%})

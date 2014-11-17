@@ -14,45 +14,29 @@ position: 3
 
 ## 
 
-RadExpressionEditor allows you to use different constants for defining the expression you want. There are several types supported by the control:
+__RadExpressionEditor__ allows you to use different constants for defining the expression you want. There are several types supported by the control:
 
-* Numeric constants - you may define just a simple numeric expression like:
+* __Numeric constants__ - you may define just a simple numeric expression like:
+        
+![](images/RadExpressionEditor_NumericConstants.png)
 
 
 
+* __String constants__ - they need to be surrounded by double quotation marks:
+        
+![](images/RadExpressionEditor_StringConstants.png)
 
+
+
+* __DateTime constants__ - they need to be surrounded by hashes:
          
-      ![](images/RadExpressionEditor_NumericConstants.png)
+![](images/RadExpressionEditor_DataTimeConstants.png)
 
 
 
-* String constants - they need to be surrounded by double quotation marks:
-
-
-
-
+* __Boolean constants__ - they can be defined as __"True"__ / __"False"__ values. In the same way you may define null constant - __"null"__.
          
-      ![](images/RadExpressionEditor_StringConstants.png)
-
-
-
-* DateTime constants - they need to be surrounded by hashes:
-
-
-
-
-         
-      ![](images/RadExpressionEditor_DataTimeConstants.png)
-
-
-
-* Boolean constants - they can be defined as "True"/ "False" values. In the same way you may define null constant - "null".
-
-
-
-
-         
-      ![](images/RadExpressionEditor_BooleanConstants.png)
+![](images/RadExpressionEditor_BooleanConstants.png)
 
 
 

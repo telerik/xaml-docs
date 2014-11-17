@@ -1,0 +1,36 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <!--  #region radmediaplayer-radmediaitem_0  -->
+        <telerik:RadMediaPlayer x:Name="telerik" 
+                                FullScreenChanged="telerik_FullScreenChanged"
+                                IsChaptersPanelPinned="True"
+                                IsVideoPanelPinned="True"
+                                SelectedIndex="0">
+            <telerik:RadMediaItem Source="http: //ecn.channel9.msdn.com/o9/pdc09/wmv/CL16.wmv" VideoStretch="None">
+                <telerik:RadMediaItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Margin="8">
+                            <TextBlock FontWeight="Normal" Text="Name: " />
+                            <TextBlock Margin="4" 
+                                       FontWeight="Bold"
+                                       Text="Optimizing for Performance with the Windows Performance Toolkit" />
+                        </StackPanel>
+                        <StackPanel Margin="8">
+                            <TextBlock FontWeight="Normal" Text="Genre: " />
+                            <TextBlock Margin="4" 
+                                       FontWeight="Bold"
+                                       Text="Tech Video" />
+                        </StackPanel>
+                    </StackPanel>
+                </telerik:RadMediaItem.Header>
+            </telerik:RadMediaItem>
+        </telerik:RadMediaPlayer>
+        <!--  #endregion  -->
+</Grid>
+</UserControl>

@@ -14,46 +14,43 @@ position: 4
 
 ## 
 
-RadExpressionEditor allows you to benefit from the Lambda expressions as well. However, in this case the syntax is slightly different.  
+__RadExpressionEditor__ allows you to benefit from the __Lambda expressions__ as well. However, in this case the syntax is slightly different.  
 
 While the C# Lambda looks like:
 
 #### __C#__
 
 {{region radexpressioneditor-expressions-lambdas_0}}
+
 	item => item.Salary
-	{{endregion}}
+{{endregion}}
 
 
 
-the equivalent expression in RadExpressionEditor should be defined like:
+the equivalent expression in __RadExpressionEditor__ should be defined like:
 
 #### __XAML__
 
 {{region radexpressioneditor-expressions-lambdas_1}}
+
 	“Salary”
-	{{endregion}}
+{{endregion}}
+
+
+![](images/RadExpressionEditor_Lambda.png)
 
 
 
+The __Result preview__ displays the result of the expression.
 
-
-
-         
-      ![](images/RadExpressionEditor_Lambda.png)
-
-
-
-The Result preview displays the result of the expression.
-
-Furthermore, you may also define nested Lambdas. For example the LINQ expression:
+Furthermore, you may also define __nested Lambdas__. For example the __LINQ expression__:
 
 #### __C#__
 
 {{region radexpressioneditor-expressions-lambdas_2}}
-	item => item.Tasks.Where(param0 => param0.SubTasks.Count > 2)
-	{{endregion}}
 
+	item => item.Tasks.Where(param0 => param0.SubTasks.Count > 2)
+{{endregion}}
 
 
 is equivalent to:
@@ -61,21 +58,17 @@ is equivalent to:
 #### __XAML__
 
 {{region radexpressioneditor-expressions-lambdas_3}}
+
 	Tasks.Where(SubTasks.Count > 20)
-	{{endregion}}
+{{endregion}}
+
+
+![](images/RadExpressionEditor_NestedLambda.png)
 
 
 
+In the example above each __Employee__ has a property __Tasks__ and each __Task__ on its own has a property of __SubTasks__. The __Result preview__ displays the count of the __SubTasks__ properties which has more than one items.
 
-
-
-         
-      ![](images/RadExpressionEditor_NestedLambda.png)
-
-
-
-In the example above each Employee has a property Tasks and each Task on its own has a property of SubTasks. The Result preview displays the count of the SubTasks properties which has more than one items.
-
->The Where function in this example is actually the Enumerable.Where(source, predicate) extension method. Because the predicate parameter is a lambda, RadExpressionEditor automatically creates a second, nested, lambda from the string expression when parsing. This is valid for all RadExpressionEditor functions which take a lambda parameter.
+>The __Where__ function in this example is actually the __Enumerable.Where(source, predicate)__ extension method. Because the predicate parameter is a lambda, __RadExpressionEditor__ automatically creates a second, nested, lambda from the string expression when parsing. This is valid for all __RadExpressionEditor__ functions which take a lambda parameter.
 
 

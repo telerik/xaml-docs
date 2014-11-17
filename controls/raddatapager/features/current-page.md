@@ -11,22 +11,19 @@ position: 4
 # Current Page
 
 
+>tip If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
 
-## 
-
->tipIf you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
-
-The __RadDataPager__ manages the current page internally depending on the user actions, but you are also able to modify it from the outside. For this purpose the __RadDataPager__ exposes the __PageIndex__ property. It contains the index of the currently selected page.
+ __RadDataPager__ manages the current page internally depending on the user actions, but you are also able to modify it from the outside. For this purpose the __RadDataPager__ exposes the __PageIndex__ property. It contains the index of the currently selected page.
 
 >The __PageIndex__ has a start value of 0, which means that the first page has index equal to 0, the second - to 1, the third - to 2, etc.
 
 You can use this property to get or set the current page of the __RadDataPager__, whenever needed. Note that you have to use it after the __Source__ property has been set. Otherwise it will get reset after the __Source__ has been set or changed. Here is an example of a __TextBlock__, that serves as a title for a __RadGridView__. The __TextBlock__ is bound to the __PageIndex__ property of the __RadDataPager__.
 
-Before getting to the XAML code for the example you'll have to first create a converter for the PageIndex. Its purpose is to synchronize the index with the logical page number.
+Before getting to the XAML code for the example you'll have to first create a converter for the __PageIndex__. Its purpose is to synchronize the index with the logical page number.
 
 #### __C#__
-
 {{region raddatapager-features-current-page_0}}
+
 	public class IndexToNumberConverter : IValueConverter
 	{
 	    public object Convert( object value, Type targetType, object parameter, CultureInfo culture )
@@ -38,13 +35,13 @@ Before getting to the XAML code for the example you'll have to first create a co
 	        return ( int )value - 1;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
-
 {{region raddatapager-features-current-page_1}}
+
 	Public Class IndexToNumberConverter
 	 Implements IValueConverter
 	 Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
@@ -54,15 +51,15 @@ Before getting to the XAML code for the example you'll have to first create a co
 	  Return CInt(value) - 1
 	 End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
 Here is the XAML for the example.
 
 #### __XAML__
-
 {{region raddatapager-features-current-page_2}}
+
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <Grid.RowDefinitions>
@@ -95,15 +92,9 @@ Here is the XAML for the example.
 	                            PageSize="5"
 	                            Margin="0,10,0,0" />
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadDataPager_Features_CurrentPage_01.png)
+![](images/RadDataPager_Features_CurrentPage_01.png)
 
 # See Also
 

@@ -161,7 +161,7 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 	{{endregion}}
 
 
-#### __VB__
+#### __VB.NET__
 {{region radmap-visualization-layer-shapes-virtualization_2}}
 	Imports System.Windows
 	Imports System.Windows.Controls
@@ -328,7 +328,7 @@ If your application cannot limit zoom level and it requires that some data still
 	{{endregion}}
 
 
-#### __VB__
+#### __VB.NET__
 {{region radmap-visualization-layer-shapes-virtualization_4}}
 	Imports System.Collections.Generic
 	Imports System.Linq

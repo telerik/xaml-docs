@@ -11,11 +11,8 @@ site_name: WPF
 
 # Command Support
 
-
-
 The purpose of this article is to introduce you the command support of the __RadTreeViewItems__.
 	  
-
 ## Overview
 
 The __RadTreeViewItem__ exposes a __Command__ property of type __ICommand__. You can use this property to trigger custom logic defined in your business object. Furthermore, you can set the __CommandExecutionTrigger__ property. This property is an enumeration which controls whether the command should be executed after a __Click__ or a __DoubleClick__ on the corresponding __RadTreeViewItem__.
@@ -27,11 +24,8 @@ In this section we will demonstrate how you can trigger custom logic implemented
 		
 
 * __Header__ of type __string__
-
 * __Children__ of type __ObservableCollection<ItemModel>__
-
 * __EditCommand__ of type __DelegateCommand__
-
 * __IsInEditMode__ of type __bool__
 
 >The __ViewModelBase__ class implements the __INotifyPropertyChanged__ interface.
@@ -84,7 +78,7 @@ In this section we will demonstrate how you can trigger custom logic implemented
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-features-command-support_1}}
 		Public Class ItemModel
@@ -190,7 +184,7 @@ Furthermore, we can create a __ViewModel__ class which will fill and expose an _
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-features-command-support_3}}
 		Public Class ViewModel
@@ -288,5 +282,3 @@ In MVVM scenarios it is best to use a __Style__ to set the __Command__ and __Com
 	{{endregion}}
 
 {% endif %}
-
-# See Also

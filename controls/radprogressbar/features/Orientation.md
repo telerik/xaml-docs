@@ -38,20 +38,10 @@ __RadProgressBar__ has an __Orientation__ property which can be set to either *H
 {{region Orientation_0}}
 		Dim progressBar As New RadProgressBar()
 		progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal
-	#End Region
-	
-	#Region "Orientation_2"
-		Dim progressBar As New RadProgressBar()
-		progressBar.Orientation = System.Windows.Controls.Orientation.Vertical
-	#End Region
-	
-	End Class
-
 
 
 ![](images/progress_horizontal.jpg)
 
-*Fig. 1 Horizontal ProgressBar*
 
 #### __XAML__
 
@@ -75,14 +65,10 @@ __RadProgressBar__ has an __Orientation__ property which can be set to either *H
 {{region Orientation_2}}
 		Dim progressBar As New RadProgressBar()
 		progressBar.Orientation = System.Windows.Controls.Orientation.Vertical
-	#End Region
-	
-	End Class
 
 
 
 ![](images/progress_vertical.jpg)
 
-*Fig. 2 Vertical ProgressBar*
 
 Note that whenever you change the __Orientation__ property, it will make sense to also change the height and width of the control since the property only changes the direction in which __RadProgressBar__ is filled.

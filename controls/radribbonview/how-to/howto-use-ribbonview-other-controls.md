@@ -12,8 +12,7 @@ position: 10
 
 
 
-## 
-		Use RadRibbonView with RadCalendar
+## Use RadRibbonView with RadCalendar
 	  
 
 The purpose of this tutorial is to show you how to integrate a __RadCalendar__ with a __RadRibbonView__. The solution is to set the __RadCalendar__ as a drop down content of a __RadRibbonSplitButton__. The next example demonstrates how to do that.
@@ -40,10 +39,9 @@ The purpose of this tutorial is to show you how to integrate a __RadCalendar__ w
 
 
 Here is the result:
-		![Rad Ribbon View How To Use Rad Calendar 01](images/RadRibbonView_HowTo_Use_RadCalendar_01.png)
+![Rad Ribbon View How To Use Rad Calendar 01](images/RadRibbonView_HowTo_Use_RadCalendar_01.png)
 
-## 
-		Use RadRibbonView with DataPicker
+## Use RadRibbonView with DataPicker
 	  
 
 Except the controls associated with the __RadRibbonView__, like RadRibbonButton, RadRibbonGallery, RadRibbonComboBox, you can place other controls in the __RadRibbonGroups__. Here is an example of adding a __RadDatePicker__ control inside a __RadRibbonGroup__.
@@ -65,10 +63,9 @@ Except the controls associated with the __RadRibbonView__, like RadRibbonButton,
 
 
 The result is the following:
-		![Rad Ribbon View How To Use Rad Calendar 02](images/RadRibbonView_HowTo_Use_RadCalendar_02.png)
+![Rad Ribbon View How To Use Rad Calendar 02](images/RadRibbonView_HowTo_Use_RadCalendar_02.png)
 
-## 
-		Integrate a RadColorPicker Directly Into a Ribbon Group
+## Integrate a RadColorPicker Directly Into a Ribbon Group
 	  
 
 The next example demonstrates how to integrate a __RadColorPicker__ directly into a __Ribbon Group__.
@@ -89,10 +86,9 @@ The next example demonstrates how to integrate a __RadColorPicker__ directly int
 
 
 And the result is:
-		![Rad Ribbon View How To Use Color Picker 01](images/RadRibbonView_HowTo_Use_ColorPicker_01.png)
+![Rad Ribbon View How To Use Color Picker 01](images/RadRibbonView_HowTo_Use_ColorPicker_01.png)
 
-## 
-		Integrate a RadColorSelector as a Part of a RadRibbonDropDownButton
+## Integrate a RadColorSelector as a Part of a RadRibbonDropDownButton
 	  
 
 Integrating a __RadColorSelector__ with a __RadRibbonDropDownButton__ is a simple task. See the next code-snippet.
@@ -117,6 +113,4 @@ Integrating a __RadColorSelector__ with a __RadRibbonDropDownButton__ is a simpl
 
 
 The __RadColorSelector__ is set as a __DropDownContent__ of the __RadRibbonDropDownButton__.
-		![Rad Ribbon View How To Use Color Picker 02](images/RadRibbonView_HowTo_Use_ColorPicker_02.png)
-
-# See Also
+![Rad Ribbon View How To Use Color Picker 02](images/RadRibbonView_HowTo_Use_ColorPicker_02.png)

@@ -1,0 +1,79 @@
+<UserControl x:Class="RadialMenuExample.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="400">
+
+    <StackPanel x:Name="LayoutRoot" Background="White">
+
+<!-- #region radradialmenu-styles-and-templates-styling-radialmenubutton_0 -->  
+<UserControl.Resources>
+    <Style x:Key="RadialMenuButtonStyle" TargetType="telerik:RadialMenuButton">
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="BorderBrush" Value="{StaticResource RadialMenuButtonBorderBrush}"/>
+        <Setter Property="Background" Value="{StaticResource RadialMenuButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource RadialMenuButtonForegroundBrush}"/>
+        <Setter Property="MinWidth" Value="0"/>
+        <Setter Property="Width" Value="45"/>
+        <Setter Property="Height" Value="45"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="ContentTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                ...
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BackContentTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                ...
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="telerikRadialMenu:RadialMenuButton">
+                   ...
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+	</Style>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-styles-and-templates-styling-radialmenubutton_1 -->
+ <Style TargetType="telerik:RadialMenuButton" BasedOn="{StaticResource RadialMenuButtonStyle}">      
+    <Setter Property="Background" Value="#FF00B7E0" />
+    <Setter Property="ContentTemplate">
+		<Setter.Value>
+            <DataTemplate>
+                <Image Source="28-star.png" Height="24" Width="24" />
+             </DataTemplate>
+        </Setter.Value>
+    </Setter>
+    <Setter Property="BackContentTemplate">
+        <Setter.Value>
+            <DataTemplate>
+                 <TextBlock Text="BACK" Margin="0 4 0 0" FontFamily="Segoe UI Semibold" FontSize="10"/>
+            </DataTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+<!-- #endregion -->
+
+
+
+</StackPanel>
+
+</UserControl>
+
+
+

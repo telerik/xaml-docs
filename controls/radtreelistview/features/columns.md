@@ -16,29 +16,27 @@ position: 1
 
 As the __RadTreeListView__ directly inherits the __RadGridView,__ it makes use of the same set of columns:
 
-* {% if site.site_name == 'Silverlight' %}[Data Column](http://www.telerik.com/help/silverlight/radgridview-columns-column-types-data-column.html){% endif %}{% if site.site_name == 'WPF' %}[Data Column](http://www.telerik.com/help/wpf/radgridview-columns-column-types-data-column.html){% endif %}
+* [Data Column]({%slug radgridview-columns-column-types-data-column%})
 
-* {% if site.site_name == 'Silverlight' %}[ComboBox Column](http://www.telerik.com/help/silverlight/radgridview-columns-column-types-combobox-column.html){% endif %}{% if site.site_name == 'WPF' %}[ComboBox Column](http://www.telerik.com/help/wpf/radgridview-columns-column-types-combobox-column.html){% endif %}
+* [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%})
 
-* {% if site.site_name == 'Silverlight' %}[Image Column](http://www.telerik.com/help/silverlight/radgridview-columns-columntypes-image-column.html){% endif %}{% if site.site_name == 'WPF' %}[Image Column](http://www.telerik.com/help/wpf/radgridview-columns-columntypes-image-column.html){% endif %}
+* [Image Column]({%slug radgridview-columns-columntypes-image-column%})
 
-* {% if site.site_name == 'Silverlight' %}[Select Column](http://www.telerik.com/help/silverlight/radgridview-columns-column-types-select-column.html){% endif %}{% if site.site_name == 'WPF' %}[Select Column](http://www.telerik.com/help/wpf/radgridview-columns-column-types-select-column.html){% endif %}
+* [Select Column]({%slug radgridview-columns-column-types-select-column%})
 
-* {% if site.site_name == 'Silverlight' %}[Hyperlink Column](http://www.telerik.com/help/silverlight/radgridview-columns-column-types-hyperlink-column.html){% endif %}{% if site.site_name == 'WPF' %}[Hyperlink Column](http://www.telerik.com/help/wpf/radgridview-columns-column-types-hyperlink-column.html){% endif %}
+* [Hyperlink Column]({%slug radgridview-columns-column-types-hyperlink-column%})
 
-* {% if site.site_name == 'Silverlight' %}[Dynamic Hyperlink Column](http://www.telerik.com/help/silverlight/radgridview-columns-column-types-dynamic-hyperlink-column.html){% endif %}{% if site.site_name == 'WPF' %}[Dynamic Hyperlink Column](http://www.telerik.com/help/wpf/radgridview-columns-column-types-dynamic-hyperlink-column.html){% endif %}
+* [Dynamic Hyperlink Column]({%slug radgridview-columns-column-types-dynamic-hyperlink-column%})
 
-* {% if site.site_name == 'Silverlight' %}[MaskedTextBox Column](http://www.telerik.com/help/silverlight/radgridview-columns-column-types-masked-textbox-column.html){% endif %}{% if site.site_name == 'WPF' %}[MaskedTextBox Column](http://www.telerik.com/help/wpf/radgridview-columns-column-types-masked-textbox-column.html){% endif %}
+* [MaskedInputBox Column]({%slug radgridview-columns-column-types-masked-input-column%})
 
-* {% if site.site_name == 'Silverlight' %}[Toggle RowDetails Column](http://www.telerik.com/help/silverlight/radgridview-columns-column-types-toggle-rowdetails-column.html){% endif %}{% if site.site_name == 'WPF' %}[Toggle RowDetails Column](http://www.telerik.com/help/wpf/radgridview-columns-column-types-toggle-rowdetails-column.html){% endif %}
+* [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%})
 
-You can also reorder, resize or freeze the columns, manage their headers and footers, and customize their appearance. To learn more read the 
-        {% if site.site_name == 'Silverlight' %}[respective topics](http://www.telerik.com/help/silverlight/gridview-columns-overview.html){% endif %}{% if site.site_name == 'WPF' %}[respective topics](http://www.telerik.com/help/wpf/gridview-columns-overview.html){% endif %} in the __RadGridView's__ documentation.
-
+You can also reorder, resize or freeze the columns, manage their headers and footers, and customize their appearance. To learn more read the [respective topics]({%slug gridview-columns-overview %}) in the __RadGridView's__ documentation.
 
 
-Now you can merge the column headers. To learn more read the 
-        {% if site.site_name == 'Silverlight' %}[topic](http://www.telerik.com/help/silverlight/gridview-columns-column-headers.html){% endif %}{% if site.site_name == 'WPF' %}[topic](http://www.telerik.com/help/wpf/gridview-columns-column-headers.html){% endif %} in the __RadGridView's__ documentation.
+
+Now you can merge the column headers. To learn more read the [topic]({%slug gridview-columns-column-headers%}) in the __RadGridView's__ documentation.
         
 
 # See Also

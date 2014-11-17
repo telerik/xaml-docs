@@ -18,10 +18,9 @@ Telerik __RadRibbonView__ provides a simple and consistent way for building inte
 				
 
 The __Separator__ is extremely simple element and it allows you to logically separate elements in [Application Menu]({%slug radribbonview-applicationmenu%}).
-				![](images/RadRibbonView_Separator_Overview.png)
+![](images/RadRibbonView_Separator_Overview.png)
 
->tip
-					The class that represents the separator element is __Telerik.Windows.Controls.Separator__.
+>tipThe class that represents the separator element is __Telerik.Windows.Controls.Separator__.
 				
 
 The next example demonstrates how to add a __Separator__ to an __ApplicationMenu__ object.

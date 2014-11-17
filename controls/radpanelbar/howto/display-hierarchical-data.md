@@ -12,7 +12,7 @@ position: 2
 
 
 
-__RadPanelBarItem__ inherits from __HeaderedItemsControl__therefore it can display hierarchical data, e.g. collections that contain other collections.
+__RadPanelBarItem__ inherits from __HeaderedItemsControl__ therefore it can display hierarchical data, e.g. collections that contain other collections.
 		
 
 ## 
@@ -94,16 +94,12 @@ The class has four properties:
 						  
 
 * Property __Price__ which is of type double.
-								  
 
 * Property __CreatedOn__ which is of type DateTime.
-								  
 
 * Property __Title__ which is of type string.
-								  
 
-* Property __RelatedItems__ which is a collection of objects. These are the child items.
-								  Add a static method to the class which aims to create some mock-up data:
+* Property __RelatedItems__ which is a collection of objects. These are the child items. Add a static method to the class which aims to create some mock-up data:
 
 #### __C#__
 
@@ -158,7 +154,7 @@ The class has four properties:
 
 
 
-1. Declare a __HierarchicalDataTemplate__{% if site.site_name == 'Silverlight' %}
+1. Declare a __HierarchicalDataTemplate__ {% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
@@ -206,7 +202,7 @@ The class has four properties:
 
 {% endif %}
 
-1. Define the __RadPanelBar__and set its __ItemTemplate__ property
+1. Define the __RadPanelBar__ and set its __ItemTemplate__ property
 					  
 
 #### __XAML__

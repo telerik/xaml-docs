@@ -18,11 +18,7 @@ __RadDataForm__ allows you to easily display, update and navigate through data. 
 
 This section defines the terms and concepts used in the scope of the __RadDataForm__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to better describe your issue. Below you can see snapshot and explanations of the main states and visual elements of the standard __RadDataForm__ control.
 
-
-
-
-         
-      ![](images/dataForm_VisualStructure.png)
+ ![](images/dataForm_VisualStructure.png)
 
 * __Header__ - enables you to set the appropriate header for the RadDataForm 
 

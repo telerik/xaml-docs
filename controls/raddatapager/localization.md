@@ -18,45 +18,32 @@ The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% end
 Here is a list of the supported languages:
       
 
-* 
-          English
+* __English__
+  
+
+* __German__
+  
+
+* __Spanish__
+  
+
+* __French__
+  
+
+* __Italian__
+  
+
+* __Dutch__
+  
+
+* __Turkish__
         
 
-* 
-          German
-        
-
-* 
-          Spanish
-        
-
-* 
-          French
-        
-
-* 
-          Italian
-        
-
-* 
-          Dutch
-        
-
-* 
-          Turkish
-        
-
->tipTo learn more about the ways to localize the RadControls please read the common topic about 
-      {% if site.site_name == 'Silverlight' %}[Localization](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[Localization](http://www.telerik.com/help/wpf/common-localization.html){% endif %}
-        .
+>tipTo learn more about the ways to localize the RadControls please read the common topic about   {% if site.site_name == 'Silverlight' %}[Localization](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[Localization](http://www.telerik.com/help/wpf/common-localization.html){% endif %}.
 
 Below you may see the resource keys and the strings they are associated with.
 
-
-
-
-         
-      ![](images/RadDataPager_Localization.png)
+ ![](images/RadDataPager_Localization.png)
 
 ## Resource Keys
 

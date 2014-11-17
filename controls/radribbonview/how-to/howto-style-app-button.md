@@ -16,7 +16,8 @@ position: 11
 
 ## 
 
-The default look of the application button is an empty rectangular button similar to the one on the next snapshot:![Rad Ribbon View How To Style The Application Button 02](images/RadRibbonView_HowTo_StyleTheApplicationButton_02.png)
+The default look of the application button is an empty rectangular button similar to the one on the next snapshot:
+![Rad Ribbon View How To Style The Application Button 02](images/RadRibbonView_HowTo_StyleTheApplicationButton_02.png)
 
 When you want to set a picture in this button you can use the __ApplicationButtonImageSource__ property. The result may look like this
 		
@@ -44,6 +45,3 @@ Also for further customization you can set the following properties:
 			
 
 * IsApplicationButtonEnabled
-			
-
-# See Also

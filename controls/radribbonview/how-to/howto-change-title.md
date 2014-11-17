@@ -12,7 +12,8 @@ position: 5
 
 
 
-The purpose of this topic is to show you how to change the __RadRibbonView__'s __Title__![Rad Ribbon View How To Change The Title](images/RadRibbonView_HowTo_ChangeTheTitle.png)
+The purpose of this topic is to show you how to change the __RadRibbonView__'s __Title__
+![Rad Ribbon View How To Change The Title](images/RadRibbonView_HowTo_ChangeTheTitle.png)
 
 ## 
 
@@ -35,7 +36,7 @@ The RadRibbonView exposes a string property named __Title__, which should be use
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radribbonview-howto-change-title_2}}
 	xRibbonView.Title = "RadRibbonView Demo";

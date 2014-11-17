@@ -10,8 +10,6 @@ position: 3
 
 # Programmatic Selection
 
-
-
 Besides the built-in selection functionality, you are able to use a programmatic approach to select the data in the __RadGridView__. The __RadGridView__ exposes several properties which allow you to manipulate the selected data. You are able to:
 
 * [Set the selected item](#SelectedItem)
@@ -26,10 +24,8 @@ Besides the built-in selection functionality, you are able to use a programmatic
 
 * [Deselect all of the items](#Deselecting_All_Items)
 
->tipYou can download a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel
-          [here](https://github.com/telerik/xaml-sdk), the example is listed as __GridView/BindingSelectedItemsFromViewModel__.
+>tipYou can download a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel [here](https://github.com/telerik/xaml-sdk), the example is listed as __GridView/BindingSelectedItemsFromViewModel__.
         
-
 ## SelectedItem
 
 To access the data item of the selected row use the __SelectedItem__ property. It changes its value every time when the row selection changes and exposes the object to which the row is bound. You can use it when the __SelectionUnit__ is set to __FullRow__ (default), otherwise it is null.
@@ -37,42 +33,36 @@ To access the data item of the selected row use the __SelectedItem__ property. I
 #### __C#__
 
 {{region radgridview-selection-programmatic-selection_0}}
+
 	Employee e = this.radGridView.SelectedItem as Employee;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-selection-programmatic-selection_1}}
+
 	Dim e As Employee = TryCast(Me.radGridView.SelectedItem, Employee)
-	{{endregion}}
-
-
+{{endregion}}
 
 You can also set the __SelectedItem__ to an item in the __RadGridView's__ data source and it will get automatically selected. For example, if you want on a certain action the first item in your __RadGridView__ to be selected, you can do the following.
 
 #### __C#__
 
 {{region radgridview-selection-programmatic-selection_2}}
+
 	this.radGridView.SelectedItem = ( ( ObservableCollection<Employee> )this.radGridView.ItemsSource ).First();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-selection-programmatic-selection_3}}
+
 	Me.radGridView.SelectedItem = (DirectCast(Me.radGridView.ItemsSource, ObservableCollection(Of Employee))).First()
-	{{endregion}}
-
-
+{{endregion}}
 
 Just make sure that the data is already loaded in the gridview (e.g. you can use the above code in the __DataLoaded__ event of the RadGridView)
 
-
-
->tipYou can also make another control like __ListBox__ or __ComboBox__ to pass the __SelectedItem__ to the __RadGridView__. This can be combined with the [disabling the end-user selection](.html#Disabling_Selection), so the data inside the __RadGridView__ might be selected via another control.
+>tipYou can also make another control like __ListBox__ or __ComboBox__ to pass the __SelectedItem__ to the __RadGridView__. 
 
 ## CurrentItem
 
@@ -83,22 +73,20 @@ You can also set the __CurrentItem__to an item in the __RadGridView's__ data sou
 #### __C#__
 
 {{region radgridview-selection-programmatic-selection_4}}
+
 	this.radGridView.CurrentItem = ( ( ObservableCollection<Employee> )this.radGridView.ItemsSource ).First();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-selection-programmatic-selection_5}}
+
 	Me.radGridView.CurrentItem = (DirectCast(Me.radGridView.ItemsSource, ObservableCollection(Of Employee))).First()
-	{{endregion}}
+{{endregion}}
 
+>tipYou can also make another control like __ListBox__ or __ComboBox__ to pass the __CurrentItem__ to the __RadGridView__.
 
-
->tipYou can also make another control like __ListBox__ or __ComboBox__ to pass the __CurrentItem__ to the __RadGridView__. This can be combined with the [disabling the end-user selection](.html#Disabling_Selection), so the data inside the __RadGridView__ might be browsed via another control.
-
->Prior to Q2 2010 version, the current item was synchronized with the selected item. As a result, the __first row__ of the GridView was __selected initially__. To prevent this, you would simply need to set the __IsSynchronizedWithCurrentItem__ property of RadGridView to __False.__In __Q2 2010__ version, the __IsSynchronizedWithCurrentItem__ is null by default - SelectedItem is synchronized with the CurrentItem only if CollectionView is used as ItemsSource
+>Prior to Q2 2010 version, the current item was synchronized with the selected item. As a result, the __first row__ of the GridView was __selected initially__. To prevent this, you would simply need to set the __IsSynchronizedWithCurrentItem__ property of RadGridView to __False__. In __Q2 2010__ version, the __IsSynchronizedWithCurrentItem__ is null by default - SelectedItem is synchronized with the CurrentItem only if CollectionView is used as ItemsSource
 
 ## SelectedItems
 
@@ -109,6 +97,7 @@ The __SelectedItems__ is a collection of data items, which holds the currently s
 #### __C#__
 
 {{region radgridview-selection-programmatic-selection_6}}
+
 	public void DeselectItem( object itemToDeselect )
 	{
 	    this.radGridView.SelectedItems.Remove( itemToDeselect );
@@ -117,22 +106,19 @@ The __SelectedItems__ is a collection of data items, which holds the currently s
 	{
 	    this.radGridView.SelectedItems.Add( itemToSelect );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-selection-programmatic-selection_7}}
+
 	Public Sub DeselectItem(itemToDeselect As Object)
 	 Me.radGridView.SelectedItems.Remove(itemToDeselect)
 	End Sub
 	Public Sub SelectItem(itemToSelect As Object)
 	 Me.radGridView.SelectedItems.Add(itemToSelect)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >If you add more than one item in the __SelectedItems__ while the selection mode is single, the selection will disappear. Consider working with the collection only when you are using __Multiple__ or __Extended__ selection mode.
 
@@ -145,6 +131,7 @@ Represents a collection of __GridViewCellInfo__ objects which represent the busi
 #### __C#__
 
 {{region radgridview-selection-programmatic-selection_8}}
+
 	GridViewCellInfo cellToSelect = new GridViewCellInfo(item, column, this.radGridView);
 	public void SelectCell(GridViewCellInfo cellToSelect  )
 	{
@@ -154,13 +141,12 @@ Represents a collection of __GridViewCellInfo__ objects which represent the busi
 	{
 	    this.radGridView.SelectedCells.Remove( cellToSelect  );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-selection-programmatic-selection_9}}
+
 	    Private cellToSelect As New GridViewCellInfo(item, column, Me.radGridView)
 	    Public Sub SelectCell(cellToSelect As GridViewCellInfo)
 	        Me.radGridView.SelectedCells.Add(cellToSelect)
@@ -168,11 +154,7 @@ Represents a collection of __GridViewCellInfo__ objects which represent the busi
 	    Public Sub DeselectCell(cellToSelect As GridViewCellInfo)
 	        Me.radGridView.SelectedCells.Remove(cellToSelect)
 	    End Sub
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 ## Selecting All Items
 
@@ -181,18 +163,16 @@ The __RadGridView__ control exposes a __SelectAll()__ method, which allows you t
 #### __C#__
 
 {{region radgridview-selection-programmatic-selection_10}}
+
 	this.radGridView.SelectAll();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-selection-programmatic-selection_11}}
+
 	Me.radGridView.SelectAll()
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Deselecting All Items
 
@@ -201,38 +181,32 @@ There are two ways to remove the selection. The first one is to set the __Select
 #### __C#__
 
 {{region radgridview-selection-programmatic-selection_12}}
+
 	this.radGridView.SelectedItem = null;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-selection-programmatic-selection_13}}
+
 	Me.radGridView.SelectedItem = Nothing
-	{{endregion}}
-
-
+{{endregion}}
 
 The second one is to call the __Clear()__ method of the __SelectedItems__ collection.
 
 #### __C#__
 
 {{region radgridview-selection-programmatic-selection_14}}
+
 	this.radGridView.SelectedItems.Clear();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-selection-programmatic-selection_15}}
+
 	Me.radGridView.SelectedItems.Clear()
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 # See Also
 

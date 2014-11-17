@@ -5,22 +5,14 @@ description: Styling the Indent Cells in RadGridView
 slug: radgridview-styling-indent-cells
 tags: styling,the,indent,cells,in,radgridview
 published: True
-position: 16
+position: 17
 ---
 
 # Styling the Indent Cells in RadGridView
 
-
-
-## 
-
 RadGridView does expose different indicators and indent cells depending on its current state - being grouped, in a hierarchy, or displaying the corresponding footers. Generally, the structure is as follows:
 
-
-
-
-         
-      ![](images/RadGridView_StyleIndicators1.png)
+![](images/RadGridView_StyleIndicators1.png)
 
 RadGridView exposes four different indent cells:
 
@@ -36,20 +28,10 @@ Similar to the rest of the PART elements, you may alter their appearance by crea
 
 Furthermore, RadGridView exposes five indicator presenters each of them belonging to the corresponding row - GridViewRow, GridViewHeaderRow, GridViewGroupRow, GridViewGroupFooterRow and GridViewFooterRow. You may edit each of them by accessing the template of the row and modify the Border element named PART_IndicatorPresenter as illustrated below:
 
-
-
-
-         
-      ![](images/RadGridView_HeaderRowIndicator.png)
-
-**
+![](images/RadGridView_HeaderRowIndicator.png)
 
 After editing each of the indent cells or indicator presenters, the RadGridView will be displayed as follows:
 
-
-
-
-         
-      ![](images/RadGridView_IndentCells2.png)
+![](images/RadGridView_IndentCells2.png)
 
 

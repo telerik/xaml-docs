@@ -11,11 +11,7 @@ position: 12
 # Masked Input Column
 
 
-
-## 
-
-The __GridViewMaskedInputColumn__ derives from the __GridViewBoundColumnBase__, which means that it inherits all of the functionality too.
-          In edit mode every field of the column will be represented by a  [RadMaskedInput]({%slug radmaskedinput-overview%}) control depending on what __MaskType__ is set, unless a __CellEditTemplate__ is defined for the column.
+The __GridViewMaskedInputColumn__ derives from the __GridViewBoundColumnBase__, which means that it inherits all of the functionality too. In edit mode every field of the column will be represented by a  [RadMaskedInput]({%slug radmaskedinput-overview%}) control depending on what __MaskType__ is set, unless a __CellEditTemplate__ is defined for the column.
         
 
 This is a list with short descriptions of the editors which will be created based on MaskType property setting:
@@ -37,22 +33,21 @@ __Example 1: Define a GridViewMaskedInputColumn:__
 #### __XAML__
 
 {{region radgridview-columns-column-types-masked-input-column_0}}
-	        <telerik:RadGridView x:Name="radGridView"
-	                 AutoGenerateColumns="False">
-	            <telerik:RadGridView.Columns>
-	                <telerik:GridViewMaskedInputColumn DataMemberBinding="{Binding OrderNO}" 
-	                                   Header="Order No."
-	                                   UniqueName="OrederNo"
-	                                   MaskType="Standard"
-	                                   Mask="SO#####"/>
-	            </telerik:RadGridView.Columns>
-	        </telerik:RadGridView>
-	{{endregion}}
 
+	<telerik:RadGridView x:Name="radGridView"
+	         AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewMaskedInputColumn 
+				DataMemberBinding="{Binding OrderNO}" 
+				Header="Order No."
+				UniqueName="OrederNo"
+				MaskType="Standard"
+				Mask="SO#####"/>
+	    </telerik:RadGridView.Columns>
+	</telerik:RadGridView>
+{{endregion}}
 
 
 # See Also
-
- * [RadMaskedInput Overview]({%slug radmaskedinput-overview%})
-
- * [How to migrate from the RadMaskedTextBox to the RadMaskedInput]({%slug radmaskedinput-migrating%})
+* [RadMaskedInput Overview]({%slug radmaskedinput-overview%})
+* [How to migrate from the RadMaskedTextBox to the RadMaskedInput]({%slug radmaskedinput-migrating%})

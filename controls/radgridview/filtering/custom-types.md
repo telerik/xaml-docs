@@ -10,8 +10,6 @@ position: 7
 
 # Filtering Custom Types
 
-
-
 If you want to filter a column that is __data-bound to a custom type__, you need to make sure that your custom type meets certain criteria. This article is a step-by-step tutorial on how to implement your __own filtering__ for the custom type.
 
 ## Define a sample data
@@ -43,12 +41,9 @@ Add one or more sections with content
 	        this.name = name;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-## 
-        Implement IEquatable
+## Implement IEquatable
       
 
 The first thing that you need to do is implement the IEquatable interface. It has a single method called Equals.
@@ -56,6 +51,7 @@ The first thing that you need to do is implement the IEquatable interface. It ha
 #### __C#__
 
 {{region radgridview-filtering-custom-types_2}}
+
 	public class Person : IEquatable<Person>
 	{
 	    private readonly string name;
@@ -87,9 +83,7 @@ The first thing that you need to do is implement the IEquatable interface. It ha
 	        return StringComparer.Ordinal.Equals(this.Name, other.Name);
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Override Object.Equals(Object) and Object.GetHashCode
 
@@ -98,6 +92,7 @@ Next, you need to override Object.Equals(Object) and Object.GetHashCode. MSDN st
 #### __C#__
 
 {{region radgridview-filtering-custom-types_4}}
+
 	public override bool Equals(object obj)
 	{
 	    return ((IEquatable<Person>)this).Equals(obj as Person);
@@ -107,9 +102,7 @@ Next, you need to override Object.Equals(Object) and Object.GetHashCode. MSDN st
 	{
 	    return this.Name.GetHashCode() ^ this.Age.GetHashCode();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Override ToString
 
@@ -118,22 +111,21 @@ You need to override the ToString method of your type so that distinct values an
 #### __C#__
 
 {{region radgridview-filtering-custom-types_6}}
+
 	public override string ToString()
 	{
 	    return this.Name;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Define a TypeConverter for string conversions
 
 When RadGridView encounters a custom type it will use a plain TextBox for the field filter editors. The strings that user enters have to be converted to your custom type and vice versa. This can be achieved by specifying a TypeConverter on your class.
         
-
 #### __C#__
 
 {{region radgridview-filtering-custom-types_8}}
+
 	public class PersonConverter : TypeConverter
 	{
 	    public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
@@ -180,13 +172,10 @@ When RadGridView encounters a custom type it will use a plain TextBox for the fi
 	
 	[TypeConverter(typeof(PersonConverter))]
 	public class Person : IEquatable<Person>
-	{{endregion}}
-
-
+{{endregion}}
 
 If the plain TextBox does not suit your needs, you can provide your own field filter editor by overriding the GridViewColumn.CreateFieldFilterEditor method. You will no longer need a TypeConverter if your custom field filter editor is able to produce instances of your custom type. You only need to data-bind your editor’s significant property to a property called Value residing on its DataContext. The UnsetValue singleton is used for deactivating a filter. Here is what a custom field filter editor may look like:
         
-
 #### __C#__
 
 {{region radgridview-filtering-custom-types_10}}
@@ -232,9 +221,7 @@ If the plain TextBox does not suit your needs, you can provide your own field fi
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 Of course, you don’t need to do that for a DateTime column, since RadGridView does it out-of-the-box. This is just an illustration of how to wire your custom field filter editor.
 
@@ -245,6 +232,7 @@ If you want to see the comparison filter operators (Is Less Than, etc.) you shou
 #### __C#__
 
 {{region radgridview-filtering-custom-types_12}}
+
 	public static bool operator <(Person left, Person right)
 	{
 	    return left.Age < right.Age;
@@ -264,9 +252,7 @@ If you want to see the comparison filter operators (Is Less Than, etc.) you shou
 	{
 	    return left.Age >= right.Age;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 This is all you need to do in order to enable filtering for your custom type.
         

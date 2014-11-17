@@ -10,10 +10,6 @@ position: 2
 
 # Simple Filter Descriptors
 
-
-
-## 
-
 >Note that when programmatically filtering the __RadGridView__ via the __FilterDescriptor__ class, the UI filtering mechanism won't be affected. This means that the UI filtering will be applied only to the already filtered data, not to the entire data source of the __RadGridView__. In order to combine the both of them, you have to use __IColumnFilterDescriptor__ instead of __FilterDescriptor__ or __CompositeFilterDescritpor__. Learn more by reading [this article]({%slug radgridview-filtering-icolumn-filter-descriptors%}).
 
 And now you can create a descriptor:
@@ -21,37 +17,34 @@ And now you can create a descriptor:
 #### __XAML__
 
 {{region radgridview-filtering-simple-filter-descriptors_1}}
+
 	<telerik:FilterDescriptor Member="Country"
-	                              Operator="IsEqualTo"
-	                              Value="Germany"
-	                              IsCaseSensitive="True" />
-	{{endregion}}
-
-
+                              Operator="IsEqualTo"
+                              Value="Germany"
+                              IsCaseSensitive="True" />
+{{endregion}}
 
 #### __C#__
 
 {{region radgridview-filtering-simple-filter-descriptors_2}}
+
 	FilterDescriptor descriptor = new FilterDescriptor();
 	descriptor.Member = "Country";
 	descriptor.Operator = FilterOperator.IsEqualTo;
 	descriptor.Value = "Germany";
 	descriptor.IsCaseSensitive = true;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-filtering-simple-filter-descriptors_3}}
+
 	Dim descriptor As New FilterDescriptor()
 	descriptor.Member = "Country"
 	descriptor.Operator = FilterOperator.IsEqualTo
 	descriptor.Value = "Germany"
 	descriptor.IsCaseSensitive = True
-	{{endregion}}
-
-
+{{endregion}}
 
 * The __Member__ property defines the property, which values will be filtered.
 
@@ -66,6 +59,7 @@ To use the created descriptor to filter the data in the __RadGridView__ you have
 #### __XAML__
 
 {{region radgridview-filtering-simple-filter-descriptors_4}}
+
 	<telerik:RadGridView x:Name="radGridView">
 	    <telerik:RadGridView.FilterDescriptors>
 	        <telerikData:FilterDescriptor Member="Country"
@@ -74,27 +68,23 @@ To use the created descriptor to filter the data in the __RadGridView__ you have
 	                                      IsCaseSensitive="True" />
 	    </telerik:RadGridView.FilterDescriptors>
 	</telerik:RadGridView>
-	{{endregion}}
-
-
+{{endregion}}
 
 When you add a new descriptor to the collection, the data is automatically filtered according to it.
 
 #### __C#__
 
 {{region radgridview-filtering-simple-filter-descriptors_5}}
+
 	this.radGridView.FilterDescriptors.Add( descriptor );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radgridview-filtering-simple-filter-descriptors_6}}
+
 	Me.radGridView.FilterDescriptors.Add(descriptor)
-	{{endregion}}
-
-
+{{endregion}}
 
 After running the application with this descriptor defined, the __RadGridView__ data will be filtered by the Country column and the result will be the same as if you have clicked on the filter icon in the Country column header and have selected "Germany" as filtering value. 
 

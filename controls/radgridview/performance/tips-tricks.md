@@ -10,12 +10,6 @@ position: 1
 
 # Tips and Tricks
 
-
-
-## 
-
-
-
 The __RadGridView__ API allows you to tweak your application for optimal performance. If you are a developer who wants to use __RadGridView__, you should be familiar with the following features regarding the performance exposed by the __RadGridView__:
 
 * The __RadGridView__ API supports __UI Virtualization__, which processes only information loaded in the viewable area, which reduces the memory footprint of the application and speeds up loading time thus enhancing additionally the UI performance. [Read more]({%slug radgridview-features-ui-virtualization%})
@@ -43,7 +37,7 @@ The __RadGridView__ API allows you to tweak your application for optimal perform
 * If applicable, try to stick to the default templates and avoid overriding templates of rows and cells.
             
 
-* As of __Q1 2012 SP1__ you have the option to disable the Telerik StyleManager and to style the controls using Implicit Styles. There are a number of benefits of using implicit styles over the Telerik StyleManager. For more information, please refer to the respective [help article]({%slug styling-apperance-implicit-styles-overview%}).
+* As of __Q1 2012 SP1__ you have the option to disable the Telerik StyleManager and to style the controls using Implicit Styles. There are a number of benefits of using implicit styles over the Telerik StyleManager. For more information, please refer to the respective [help article](f7b879d9-62ca-42c3-a919-983c7cbc79a2).
             
 
 * Avoid using of __RowStyle__ and/or __AlternateRowStyle__ - use implicit styles instead. 
@@ -59,7 +53,7 @@ The __RadGridView__ API allows you to tweak your application for optimal perform
                 - Telerik controls in these themes use resources, which are linked to a one major singleton that contains the colors used in them. Such an approach slows down the performance of virtualized components, such as RadGridView. You can consider applying the __Lightweight Templates__ in order to speed up the performance of RadGridView. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
               
 
-* As of __Q2 2014 SP__ release we introduced the option to __turn off the generating of the automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the AutomationMode property to Disabled.
+* As of __Q2 2014 SP__ release we introduced the option to __turn off the generating of the automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support](cabea947-6b4f-43bb-a5ba-f44d4d8ae1cc) article on how to set the AutomationMode property to Disabled.
             
 
 * __TouchManager__ -  another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support](737cc59b-2828-49eb-be56-3bac4b9ad992#States) article.

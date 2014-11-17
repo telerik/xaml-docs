@@ -11,11 +11,7 @@ position: 0
 # Basic Column
 
 
-
-## 
-
-__GridViewColumn__ is the base column type on top of which the other columns are built. It provides the common functionality typical for the __RadGridView's__ columns. You are able to add aggregate functions to display their result in the column footers, manage the headers and cells, apply different styling for the its header and cells, reorder it, etc.  The most common usage of this type of column is when you want to define a column that doesn't bind to any data. Such a column is frequently referred as “[unbound]({%slug gridview-columns-bound-unbound-columns%})” column. A typical usage of such column involves setting the __CellStyle__/__CellTemplate__ properties in order to place custom content within the cells such as buttons, checkboxes or even composite user controls rather than displaying data from the items source.
-          You can check the [Setting CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%}) article for more information on how to define your own CellTemplate or CellEditTemplate.
+__GridViewColumn__ is the base column type on top of which the other columns are built. It provides the common functionality typical for the __RadGridView's__ columns. You are able to add aggregate functions to display their result in the column footers, manage the headers and cells, apply different styling for the its header and cells, reorder it, etc.  The most common usage of this type of column is when you want to define a column that doesn't bind to any data. Such a column is frequently referred as “[unbound]({%slug gridview-columns-bound-unbound-columns%})” column. A typical usage of such column involves setting the __CellStyle__/__CellTemplate__ properties in order to place custom content within the cells such as buttons, checkboxes or even composite user controls rather than displaying data from the items source. You can check the [Setting CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%}) article for more information on how to define your own CellTemplate or CellEditTemplate.
         
 
 Here is a list of the most important properties and how they can be used.
@@ -103,13 +99,14 @@ Here is how to define a column of this type.
 #### __XAML__
 
 {{region radgridview-columns-column-types-basic-column_0}}
+
 	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
+	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewColumn />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -119,17 +116,19 @@ Here is how to define a column of this type.
 #### __C#__
 
 {{region radgridview-columns-column-types-basic-column_1}}
+
 	GridViewColumn column = new GridViewColumn();
 	this.radGridView.Columns.Add( column );
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radgridview-columns-column-types-basic-column_2}}
+
 	Dim column As New GridViewColumn()
 	Me.radGridView.Columns.Add( column )
-	{{endregion}}
+{{endregion}}
 
 

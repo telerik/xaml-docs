@@ -1,0 +1,88 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region gridview-managing-data-editors_0 -->
+<telerik:GridViewDataColumn DataMemberBinding="{Binding Shipped, Mode=TwoWay}"
+                                Header="Shipped?" />
+<!-- #endregion -->
+
+<!-- #region gridview-managing-data-editors_1 -->
+<telerik:GridViewDataColumn DataMemberBinding="{Binding Shipped, Mode=TwoWay}"
+                                Header="Shipped?"
+                                UniqueName="Shipped">
+			<telerik:GridViewDataColumn.EditorSettings>
+				<telerik:CheckBoxEditorSettings />
+			</telerik:GridViewDataColumn.EditorSettings>
+</telerik:GridViewDataColumn>
+<!-- #endregion -->
+
+<!-- #region gridview-managing-data-editors_4 -->
+<telerik:GridViewDataColumn DataMemberBinding="{Binding OrderDate, Mode=TwoWay}"
+                                Header="Order Date"
+                                UniqueName="OrderDate">
+			<telerik:GridViewDataColumn.EditorSettings>
+				<telerik:DatePickerEditorSettings />
+			</telerik:GridViewDataColumn.EditorSettings>
+</telerik:GridViewDataColumn>
+<!-- #endregion -->
+
+<!-- #region gridview-managing-data-editors_7 -->
+<telerik:GridViewComboBoxColumn x:Name="ComboBoxColumn"
+                                    UniqueName="Country"
+                                    DataMemberBinding="{Binding Country, Mode=TwoWay}">
+			<telerik:GridViewComboBoxColumn.EditorSettings>
+				<telerik:ComboBoxEditorSettings />
+			</telerik:GridViewComboBoxColumn.EditorSettings>
+</telerik:GridViewComboBoxColumn>
+<!-- #endregion -->
+
+<!-- #region gridview-managing-data-editors_10 -->
+<telerik:GridViewComboBoxColumn x:Name="ComboBoxColumn"
+                                    UniqueName="Country"
+                                    DataMemberBinding="{Binding Country, Mode=TwoWay}">
+			<telerik:GridViewComboBoxColumn.EditorSettings>
+				<telerik:ComboBoxEditorSettings ItemsSourceBinding="{Binding AvailableCountries}" />
+			</telerik:GridViewComboBoxColumn.EditorSettings>
+</telerik:GridViewComboBoxColumn>
+<!-- #endregion -->
+
+<!-- #region gridview-managing-data-editors_11 -->
+<telerik:GridViewComboBoxColumn x:Name="ComboBoxColumn"
+                                    UniqueName="Country"
+                                    DataMemberBinding="{Binding Country, Mode=TwoWay}">
+			<telerik:GridViewComboBoxColumn.EditorSettings>
+				<telerik:ComboBoxEditorSettings ItemsSourceBinding="{Binding AvailableCountries}"
+                                            DisplayMemberPath="Name"
+                                            SelectedValuePath="Id" />
+			</telerik:GridViewComboBoxColumn.EditorSettings>
+</telerik:GridViewComboBoxColumn>
+<!-- #endregion -->
+
+<!-- #region gridview-managing-data-editors_12 -->
+<telerik:GridViewDataColumn DataMemberBinding="{Binding OrderNO, Mode=TwoWay}"
+                                Header="Order No."
+                                UniqueName="OrederNo">
+			<telerik:GridViewDataColumn.EditorSettings>
+				<telerik:TextBoxEditorSettings />
+			</telerik:GridViewDataColumn.EditorSettings>
+</telerik:GridViewDataColumn>
+<!-- #endregion -->
+
+<!-- #region gridview-managing-data-editors_15 -->
+<telerik:GridViewDataColumn DataMemberBinding="{Binding OrderNO, Mode=TwoWay}"
+                                Header="Order No."
+                                UniqueName="OrederNo">
+			<telerik:GridViewDataColumn.EditorSettings>
+				<telerik:MaskedTextBoxEditorSettings MaskType="Standard" Mask="aaaaaaa"  />
+			</telerik:GridViewDataColumn.EditorSettings>
+</telerik:GridViewDataColumn>
+<!-- #endregion -->
+</Grid>
+</UserControl>

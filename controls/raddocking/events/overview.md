@@ -1,0 +1,106 @@
+---
+title: Overview
+page_title: Overview
+description: Overview
+slug: raddocking-events-overview
+tags: overview
+published: True
+position: 0
+---
+
+# Overview
+
+This topic covers the specific events exposed by the __RadDocking__ control. The events are grouped by their general purpose.
+
+* __State Changed Events__
+
+	* __ActivePaneChanged__- Occurs when the ActivePane is changed. The type of the passed event arguments is __ActivePaneChangedEventArgs__.
+	
+		* __ActivePaneChangedEventArgs__ – Exposes information about NewPane (activated) and OldPane (deactivated).
+		
+	* __PaneStateChanged__- This event is fired whenever the state of the RadPane is changed (e.g. pin, unpin, close, show, etc.).
+	
+* __Pin\Unpin Events__
+
+	* __PreviewUnpin__- Occurs before the RadPane is unpinned. The type of the passed event arguments is __StateChangeEventArgs__.
+	
+	* __Unpin__- Occurs when the RadPane is unpinned. The type of the passed event arguments is __StateChangeEventArgs__.
+	
+	* __PreviewPin__- Occurs before the RadPane is pinned. The type of the passed event arguments is __StateChangeEventArgs__.
+	
+	* __Pin__- Occurs when the RadPane is pinned. The type of the passed event arguments is __StateChangeEventArgs__.
+	
+	* __PreviewUnpin__- Occurs before the RadPane is unpinned. The type of the passed event arguments is __StateChangeEventArgs__.
+	
+	* __Unpin__- Occurs when the RadPane is unpinned. The type of the passed event arguments is __StateChangeEventArgs__.
+
+	* __PreviewPin__- Occurs before the RadPane is pinned. The type of the passed event arguments is __StateChangeEventArgs__.
+	
+	* __Pin__- Occurs when the RadPane is pinned. The type of the passed event arguments is __StateChangeEventArgs__.
+	
+>For example, when you [unpin]({%slug raddocking-panes-pinned-unpinned-panes%}) a RadPane, then the fired events are:                   
+>	* __PreviewUnpin__
+>	* __Unpin__
+>	* __PaneStateChanged__ - All events are listed in the order of firing.
+ 
+* __Show\Hide Events__
+
+	* __PreviewShow__ - Occurs before the RadPane is shown.
+
+	* __Show__ - Occurs when the RadPane is shown.
+
+	* __PreviewClose__ - Occurs before the RadPane is closed.
+	
+	* __Close__- Occurs when the RadPane is closed.
+
+	* __PreviewWindowClose__ - Occurs before the ToolWindow is closed.
+
+	* __WindowClose__ - Occurs when the ToolWindow is closed.
+
+>tipThe __PreviewClose__ and __Close__ events are fired, whenever you press the [Close]({%slug raddocking-visual-structure%}) button.
+
+>tipThe __PreviewShow__ and __Show__ events are fired, when you invoke the __ShowAllPanes__ method of the __RadPaneGroup__ class. This method will show all hidden panes.
+
+>When you are closing a floatable window, then the "close" events are fired in the following order:
+> 	* __PreviewWindowClose__
+> 	* __PreviewClose__
+> 	* __WindowClose__
+> 	* __Close__
+
+* __Compass Events__
+
+	* __PreviewShowCompass__ - Occurs when the [Compass]({%slug raddocking-features-compass%}) is shown.
+
+* __Save\Load Layout Events__
+
+	* __ElementLoading__- raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be loaded.
+
+	* __ElementLoaded__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is loaded.
+
+	* __ElementSaving__ - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved.
+
+	* __ElementSaved__ - raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is saved.
+
+	* __ElementCleaning__- raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be cleaned.
+
+	* __ElementCleaned__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is cleaned.
+
+>tipElements are __cleaned just before loading__ the layout - this operation is performed to prepare the Docking control for the new layout.
+
+>tipFor more information about saving and loading __RadDocking__ layout take a look at the [Save\Load Layout]({%slug raddocking-features-save-load-layout%}) topic.
+
+* __Other Events__
+
+	* __Loaded__- Occurs when the __RadDocking__ has been constructed and added to the object tree.
+
+	* __LayoutUpdated__ - Occurs when the layout of the visual tree changes.
+
+# See Also
+
+ * [RadPane]({%slug raddocking-panes-radpane%})
+
+ * [RadDocumentPane]({%slug raddocking-panes-raddocumentpane%})
+
+ * [Docked/Floating Panes]({%slug raddocking-features-panes-docked-floating-panes%})
+
+ * [Pinned/Unpinned Panes]({%slug raddocking-panes-pinned-unpinned-panes%})

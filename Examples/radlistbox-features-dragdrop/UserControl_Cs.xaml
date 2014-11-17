@@ -1,0 +1,85 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+<!-- #region radlistbox-features-dragdrop_0 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+<!-- #endregion -->
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+<!-- #region radlistbox-features-dragdrop_1 -->
+<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
+	<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+</Style>
+<!-- #endregion -->
+
+<!-- #region radlistbox-features-dragdrop_2 -->
+<telerik:RadListBox ItemContainerStyle="{StaticResource DraggableListBoxItem}">
+	<telerik:RadListBox.DragDropBehavior>
+		<telerik:ListBoxDragDropBehavior />
+	</telerik:RadListBox.DragDropBehavior>
+</telerik:RadListBox>
+<!-- #endregion -->
+
+<!-- #region radlistbox-features-dragdrop_3 -->
+<telerik:RadListBox.DragVisualProvider>
+	<telerik:ScreenshotDragVisualProvider />
+</telerik:RadListBox.DragVisualProvider>
+<!-- #endregion -->
+
+<!-- #region radlistbox-features-dragdrop_6 -->
+<telerik:RadListBox ItemsSource="{Binding Products}" ItemContainerStyle="{StaticResource DraggableListBoxItem}">
+	<telerik:RadListBox.DragVisualProvider>
+		<telerik:ScreenshotDragVisualProvider />
+	</telerik:RadListBox.DragVisualProvider>
+	<telerik:RadListBox.DragDropBehavior>
+		<telerik:ListBoxDragDropBehavior />
+	</telerik:RadListBox.DragDropBehavior>
+	<telerik:RadListBox.DataConverter>
+		<local:ManagerToCustomerConverter />
+	</telerik:RadListBox.DataConverter>
+</telerik:RadListBox>
+
+<telerik:RadListBox ItemsSource="{Binding Orders}" />
+<!-- #endregion -->
+
+</Grid>
+</UserControl>
+
+
+
+<!-- #region radlistbox-features-dragdrop_4 -->
+<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
+	<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+</Style>
+<!-- #endregion -->
+
+<!-- #region radlistbox-features-dragdrop_5 -->
+<telerik:RadListBox x:Name="ListBox"
+					ItemsSource="{Binding CustomersSource}" 
+					DisplayMemberPath="Name" 
+					ItemContainerStyle="{StaticResource DraggableListBoxItem}">
+	<telerik:RadListBox.DragVisualProvider>
+		<telerik:ScreenshotDragVisualProvider />
+	</telerik:RadListBox.DragVisualProvider>
+	<telerik:RadListBox.DataConverter>
+		<local:AppointmentToCustomerConverter />
+	</telerik:RadListBox.DataConverter>
+	<telerik:RadListBox.DragDropBehavior>
+		<telerik:ListBoxDragDropBehavior />
+	</telerik:RadListBox.DragDropBehavior>
+</telerik:RadListBox>
+
+<telerik:RadScheduleView x:Name="scheduleView" 
+							AppointmentsSource="{Binding AppointmentsSource}">
+	<telerik:RadScheduleView.ViewDefinitions>
+		<telerik:DayViewDefinition />
+	</telerik:RadScheduleView.ViewDefinitions>
+	<telerik:RadScheduleView.DragDropBehavior>
+		<local:ScheduleViewDragDropBehavior />
+	</telerik:RadScheduleView.DragDropBehavior>
+</telerik:RadScheduleView>
+<!-- #endregion -->

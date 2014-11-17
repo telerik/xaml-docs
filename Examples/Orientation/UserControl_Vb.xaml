@@ -1,0 +1,19 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region Orientation_1 -->
+<telerik:RadProgressBar Value="35" Height="30" Width="150" Orientation="Horizontal" />
+<!-- #endregion -->
+
+<!-- #region Orientation_3 -->
+<telerik:RadProgressBar Value="35" Height="150" Width="30" Orientation="Vertical" />
+<!-- #endregion -->
+</Grid>
+</UserControl>

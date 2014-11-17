@@ -1,0 +1,80 @@
+﻿<!--  #region raddiagram-features-undo-redo_0  -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <telerik:RadButton Margin="5,0"
+                               Click="Undo"
+                               Content="Undo" />
+            <telerik:RadButton Margin="5,0"
+                               Click="Redo"
+                               Content="Redo" />
+        </StackPanel>
+        <telerik:RadDiagram x:Name="diagram"
+                            Grid.Row="1"
+                            Margin="5">
+            <telerik:RadDiagramShape x:Name="Shape1"
+                                     Content="Shape 1"
+                                     Position="80,20" />
+            <telerik:RadDiagramShape x:Name="Shape2"
+                                     Content="Shape 2"
+                                     Position="320,20" />
+
+            <telerik:RadDiagramConnection SourceCapType="Arrow6Filled"
+                                          Target="{Binding ElementName=Shape1}"
+                                          TargetCapType="Arrow1Filled"
+                                          StartPoint="5,40" />
+            <telerik:RadDiagramConnection Source="{Binding ElementName=Shape1}"
+                                          SourceCapType="Arrow5"
+                                          Target="{Binding ElementName=Shape2}"
+                                          TargetCapType="Arrow5Filled" />
+            <telerik:RadDiagramConnection Source="{Binding ElementName=Shape2}"
+                                          SourceCapType="Arrow6"
+                                          TargetCapType="Arrow6Filled"
+                                          EndPoint="480,40" />
+        </telerik:RadDiagram>
+    </Grid>
+<!--  #endregion  -->
+<!--  #region raddiagram-features-undo-redo_1  -->
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <telerik:RadButton Margin="5,0"
+                               Command="telerik:DiagramCommands.Undo"
+                               CommandTarget="{Binding ElementName=diagram}"
+                               Content="Undo" />
+            <telerik:RadButton Margin="5,0"
+                               Command="telerik:DiagramCommands.Redo"
+                               CommandTarget="{Binding ElementName=diagram}"
+                               Content="Redo" />
+        </StackPanel>
+        <telerik:RadDiagram x:Name="diagram"
+                            Grid.Row="1"
+                            Margin="5">
+            <telerik:RadDiagramShape x:Name="Shape1"
+                                     Content="Shape 1"
+                                     Position="80,20" />
+            <telerik:RadDiagramShape x:Name="Shape2"
+                                     Content="Shape 2"
+                                     Position="320,20" />
+
+            <telerik:RadDiagramConnection SourceCapType="Arrow6Filled"
+                                          Target="{Binding ElementName=Shape1}"
+                                          TargetCapType="Arrow1Filled"
+                                          StartPoint="5,40" />
+            <telerik:RadDiagramConnection Source="{Binding ElementName=Shape1}"
+                                          SourceCapType="Arrow5"
+                                          Target="{Binding ElementName=Shape2}"
+                                          TargetCapType="Arrow5Filled" />
+            <telerik:RadDiagramConnection Source="{Binding ElementName=Shape2}"
+                                          SourceCapType="Arrow6"
+                                          TargetCapType="Arrow6Filled"
+                                          EndPoint="480,40" />
+        </telerik:RadDiagram>
+    </Grid>
+<!--  #endregion  -->

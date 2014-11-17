@@ -1,0 +1,196 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-populating-with-data-item-template_0 -->
+<UserControl.Resources>
+    <DataTemplate x:Key="Team">
+        <Grid>
+        </Grid>
+    </DataTemplate>
+    <telerik:HierarchicalDataTemplate x:Key="Division">
+        <Grid>
+        </Grid>
+    </telerik:HierarchicalDataTemplate>
+    <telerik:HierarchicalDataTemplate x:Key="League">
+        <Grid>
+        </Grid>
+    </telerik:HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+    <telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-template_1 -->
+<telerik:HierarchicalDataTemplate x:Key="League">
+    <Grid d:DesignWidth="93" d:DesignHeight="26">
+     <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="0.323*"/>
+      <ColumnDefinition Width="0.677*"/>
+     </Grid.ColumnDefinitions>
+     <Image Stretch="None"/>
+     <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap"/>
+    </Grid>
+</telerik:HierarchicalDataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-template_2 -->
+<telerik:HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions, Mode=OneWay}"
+        ItemTemplate="{StaticResource Division}">
+    <Grid d:DesignWidth="93" d:DesignHeight="26">
+     <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="0.323*"/>
+      <ColumnDefinition Width="0.677*"/>
+     </Grid.ColumnDefinitions>
+     <Image Source="{Binding ImageUrl, Mode=OneWay}"/>
+     <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+    </Grid>
+</telerik:HierarchicalDataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-template_3 -->
+<UserControl.Resources>
+    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
+    <DataTemplate x:Key="Team">
+       <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.323*"/>
+                <ColumnDefinition Width="0.677*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
+            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+        </Grid>
+    </DataTemplate>
+    <telerik:HierarchicalDataTemplate x:Key="Division"
+        ItemsSource="{Binding Teams, Mode=OneWay}"
+        ItemTemplate="{StaticResource Team}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.323*"/>
+                <ColumnDefinition Width="0.677*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
+            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+        </Grid>
+    </telerik:HierarchicalDataTemplate>
+    <telerik:HierarchicalDataTemplate x:Key="League" 
+        ItemsSource="{Binding Divisions, Mode=OneWay}"
+        ItemTemplate="{StaticResource Division}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.323*"/>
+                <ColumnDefinition Width="0.677*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
+            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+        </Grid>
+    </telerik:HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+    <telerik:RadTreeView x:Name="radTreeView" Margin="8"
+       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
+       ItemTemplate="{StaticResource League}" />
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-template_4 -->
+<UserControl.Resources>
+    <DataTemplate x:Key="Team">
+        <Grid>
+        </Grid>
+    </DataTemplate>
+    <HierarchicalDataTemplate x:Key="Division">
+        <Grid>
+        </Grid>
+    </HierarchicalDataTemplate>
+    <HierarchicalDataTemplate x:Key="League">
+        <Grid>
+        </Grid>
+    </HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+    <telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-template_5 -->
+<HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions, Mode=OneWay}"
+        ItemTemplate="{StaticResource Division}">
+    <Grid d:DesignWidth="93" d:DesignHeight="26">
+     <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="0.323*"/>
+      <ColumnDefinition Width="0.677*"/>
+     </Grid.ColumnDefinitions>
+     <Image Source="{Binding ImageUrl, Mode=OneWay}"/>
+     <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+    </Grid>
+</HierarchicalDataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-template_6 -->
+<HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions, Mode=OneWay}"
+        ItemTemplate="{StaticResource Division}">
+    <Grid d:DesignWidth="93" d:DesignHeight="26">
+     <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="0.323*"/>
+      <ColumnDefinition Width="0.677*"/>
+     </Grid.ColumnDefinitions>
+     <Image Source="{Binding ImageUrl, Mode=OneWay}"/>
+     <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+    </Grid>
+</HierarchicalDataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-template_7 -->
+<UserControl.Resources>
+    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
+    <DataTemplate x:Key="Team">
+       <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.323*"/>
+                <ColumnDefinition Width="0.677*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
+            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+        </Grid>
+    </DataTemplate>
+    <HierarchicalDataTemplate x:Key="Division"
+        ItemsSource="{Binding Teams, Mode=OneWay}"
+        ItemTemplate="{StaticResource Team}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.323*"/>
+                <ColumnDefinition Width="0.677*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
+            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+        </Grid>
+    </HierarchicalDataTemplate>
+    <HierarchicalDataTemplate x:Key="League" 
+        ItemsSource="{Binding Divisions, Mode=OneWay}"
+        ItemTemplate="{StaticResource Division}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.323*"/>
+                <ColumnDefinition Width="0.677*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
+            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
+        </Grid>
+    </HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+    <telerik:RadTreeView x:Name="radTreeView" Margin="8"
+       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
+       ItemTemplate="{StaticResource League}" />
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

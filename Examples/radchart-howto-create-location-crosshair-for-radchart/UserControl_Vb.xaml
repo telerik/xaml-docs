@@ -1,0 +1,18 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-howto-create-location-crosshair-for-radchart_4 -->
+<StackPanel Orientation="Horizontal" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,100,0">
+          <TextBlock Text="{Binding X, StringFormat=X: \\cf2 {0:N2\\cf2 }}" Width="50" Margin="0,0,15,0" />
+          <TextBlock Text="{Binding Y, StringFormat=Y: \\cf2 {0:N2\\cf2 }}" Width="50" />
+      </StackPanel>
+<!-- #endregion -->
+</Grid>
+</UserControl>

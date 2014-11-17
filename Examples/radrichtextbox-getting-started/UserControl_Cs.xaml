@@ -1,0 +1,29 @@
+<UserControl x:Class="GettingStarted.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        
+        <!-- #region radrichtextbox-getting-started_0 -->
+        <telerik:RadRichTextBox x:Name="radRichTextBox" />
+        <!-- #endregion -->
+
+        <!-- #region radrichtextbox-getting-started_3 -->
+        <StackPanel Orientation="Horizontal">
+            <ToggleButton Content="B"
+            x:Name="BoldButton"
+            Click="BoldButton_Click" />
+            <ToggleButton Content="I"
+            x:Name="ItalicButton"
+            Click="ItalicButton_Click" />
+            <ToggleButton Content="U"
+            x:Name="UnderlineButton"
+            Click="UnderlineButton_Click" />
+        </StackPanel>
+        <!-- #endregion -->
+    </Grid>
+</UserControl>

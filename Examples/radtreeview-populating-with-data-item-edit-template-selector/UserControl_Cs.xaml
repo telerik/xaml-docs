@@ -1,0 +1,133 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-populating-with-data-item-edit-template-selector_0 -->
+<UserControl.Resources>
+    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
+    <DataTemplate x:Key="Team">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding TeamName}" Foreground="{Binding TeamColor}"/>
+            <TextBlock Text=" | Count#"/>
+            <TextBlock Text="{Binding Count}"/>
+        </StackPanel>
+    </DataTemplate>
+    <telerik:HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
+        ItemsSource="{Binding Teams}">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding DivisionName}" Foreground="{Binding DivisionColor}"/>
+            <TextBlock Text=" | Count#"/>
+            <TextBlock Text="{Binding Count}"/>
+        </StackPanel>
+    </telerik:HierarchicalDataTemplate>
+    <telerik:HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
+        ItemsSource="{Binding Divisions}">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding LeagueName}" Foreground="{Binding LeagueColor}"/>
+            <TextBlock Text=" | Count#"/>
+            <TextBlock Text="{Binding Count}"/>
+        </StackPanel>
+    </telerik:HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+    <telerik:RadTreeView x:Name="radTreeView"
+           IsEditable="True" Margin="8"
+           ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
+           ItemTemplate="{StaticResource League}"/>
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-edit-template-selector_1 -->
+<DataTemplate x:Key="LeagueItemEditTemplate">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Text="{Binding LeagueName, Mode=TwoWay}"/>
+            <telerik:RadMaskedTextBox MaskType="Numeric" Mask="#" Value="{Binding Count, Mode=OneWay}"/>
+        </StackPanel>
+    </Grid>
+</DataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-edit-template-selector_2 -->
+<DataTemplate x:Key="DivisionItemEditTemplate">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <telerik:RadMaskedTextBox MaskType="Numeric" Mask="#" Value="{Binding Count, Mode=OneWay}"/>
+            <TextBox Text="{Binding DivisionName, Mode=TwoWay}"/>
+        </StackPanel>
+    </Grid>
+</DataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-edit-template-selector_3 -->
+<DataTemplate x:Key="TeamItemEditTemplate">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Text="{Binding TeamName, Mode=TwoWay}"/>
+            <TextBlock Text=" | "/>
+            <telerik:RadMaskedTextBox MaskType="Numeric" Mask="#" Value="{Binding Count, Mode=OneWay}"/>
+        </StackPanel>
+    </Grid>
+</DataTemplate>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-edit-template-selector_8 -->
+<UserControl.Resources>
+<sampleData:LeagueItemEditTemplateSelector x:Key="myEditDataTemplateSelector"
+    LeagueTemplate="{StaticResource LeagueItemEditTemplate}"
+    DivisionTemplate="{StaticResource DivisionItemEditTemplate}"
+    TeamTemplate="{StaticResource TeamItemEditTemplate}"/>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-edit-template-selector_9 -->
+<telerik:RadTreeView x:Name="radTreeView"
+   IsEditable="True" Margin="8"
+   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
+   ItemTemplate="{StaticResource League}"
+   ItemEditTemplate="{x:Null}"
+   ItemEditTemplateSelector="{StaticResource myEditDataTemplateSelector}"/>
+<!-- #endregion -->
+
+<!-- #region radtreeview-populating-with-data-item-edit-template-selector_10 -->
+<UserControl.Resources>
+    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
+    <DataTemplate x:Key="Team">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding TeamName}" Foreground="{Binding TeamColor}"/>
+            <TextBlock Text=" | Count#"/>
+            <TextBlock Text="{Binding Count}"/>
+        </StackPanel>
+    </DataTemplate>
+    <HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
+        ItemsSource="{Binding Teams}">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding DivisionName}" Foreground="{Binding DivisionColor}"/>
+            <TextBlock Text=" | Count#"/>
+            <TextBlock Text="{Binding Count}"/>
+        </StackPanel>
+    </HierarchicalDataTemplate>
+    <HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
+        ItemsSource="{Binding Divisions}">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding LeagueName}" Foreground="{Binding LeagueColor}"/>
+            <TextBlock Text=" | Count#"/>
+            <TextBlock Text="{Binding Count}"/>
+        </StackPanel>
+    </HierarchicalDataTemplate>
+</UserControl.Resources>
+<Grid x:Name="LayoutRoot" Background="White">
+    <telerik:RadTreeView x:Name="radTreeView"
+           IsEditable="True" Margin="8"
+           ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
+           ItemTemplate="{StaticResource League}"/>
+</Grid>
+<!-- #endregion -->
+</Grid>
+</UserControl>

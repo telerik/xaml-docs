@@ -1,0 +1,90 @@
+<UserControl x:Class="UserControl_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-static-data_0 -->
+xmlns:chart="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Chart"
+xmlns:chartEngine="clr-namespace:Telerik.Charting;assembly=Telerik.Windows.Controls.Chart"
+<!-- #endregion -->
+
+<!-- #region radchart-static-data_1 -->
+<telerik:RadCartesianChart x:Name="chart"/>
+<!-- #endregion -->
+
+<!-- #region radchart-static-data_2 -->
+<telerik:RadCartesianChart x:Name="chart">
+    <telerik:RadCartesianChart.HorizontalAxis>
+        <telerik:CategoricalAxis/>
+    </telerik:RadCartesianChart.HorizontalAxis>
+    <telerik:RadCartesianChart.VerticalAxis>
+        <telerik:LinearAxis Maximum="100"/>
+    </telerik:RadCartesianChart.VerticalAxis>
+</telerik:RadCartesianChart>
+<!-- #endregion -->
+
+<!-- #region radchart-static-data_3 -->
+<telerik:RadCartesianChart x:Name="chart">
+   <telerik:RadCartesianChart.HorizontalAxis>
+       <telerik:CategoricalAxis/>
+   </telerik:RadCartesianChart.HorizontalAxis>
+   <telerik:RadCartesianChart.VerticalAxis>
+      <telerik:LinearAxis Maximum="100"/>
+   </telerik:RadCartesianChart.VerticalAxis>
+   <telerik:RadCartesianChart.Series>
+      <telerik:LineSeries Stroke="Orange"
+                        StrokeThickness="2">
+   </telerik:RadCartesianChart.Series>
+</telerik:RadCartesianChart>
+<!-- #endregion -->
+
+<!-- #region radchart-static-data_4 -->
+<telerik:RadCartesianChart x:Name="chart">
+   <telerik:RadCartesianChart.HorizontalAxis>
+       <telerik:CategoricalAxis/>
+   </telerik:RadCartesianChart.HorizontalAxis>
+   <telerik:RadCartesianChart.VerticalAxis>
+       <telerik:LinearAxis Maximum="100"/>
+   </telerik:RadCartesianChart.VerticalAxis>
+   <telerik:RadCartesianChart.Series>
+       <telerik:LineSeries Stroke="Orange"
+                         StrokeThickness="2">
+          <telerik:LineSeries.DataPoints>
+              <telerik:CategoricalDataPoint Value="20"/>
+              <telerik:CategoricalDataPoint Value="40"/>
+              <telerik:CategoricalDataPoint Value="35"/>
+              <telerik:CategoricalDataPoint Value="40"/>
+              <telerik:CategoricalDataPoint Value="30"/>
+              <telerik:CategoricalDataPoint Value="50"/>
+          </telerik:LineSeries.DataPoints>
+       </telerik:LineSeries>
+   </telerik:RadCartesianChart.Series>
+</telerik:RadCartesianChart>
+<!-- #endregion -->
+
+<!-- #region radchart-static-data_6 -->
+<telerik:RadCartesianChart.Grid>
+   <telerik:CartesianChartGrid MajorLinesVisibility="XY" />
+</telerik:RadCartesianChart.Grid>
+<!-- #endregion -->
+
+<!-- #region radchart-static-data_7 -->
+<telerik:CartesianChartGrid MajorLinesVisibility="XY" StripLinesVisibility="XY" IsTabStop="False">
+    <telerik:CartesianChartGrid.YStripeBrushes>
+    <SolidColorBrush Color="#FFD7D7D7" Opacity="0.3" />
+    <SolidColorBrush Color="Transparent" />
+    </telerik:CartesianChartGrid.YStripeBrushes>
+    <telerik:CartesianChartGrid.XStripeBrushes>
+    <SolidColorBrush Color="#FFD7D7D7" Opacity="0.3" />
+    <SolidColorBrush Color="Transparent" />
+    </telerik:CartesianChartGrid.XStripeBrushes>
+</telerik:CartesianChartGrid>
+<!-- #endregion -->
+
+</Grid>
+</UserControl>

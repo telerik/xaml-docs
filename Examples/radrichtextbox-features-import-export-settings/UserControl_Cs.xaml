@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <!-- #region radrichtextbox-features-import-export-settings_0->
+        <telerik:HtmlDataProvider x:Name="htmlDataProvider"
+                                RichTextBox="{Binding ElementName=radRichTextBox}"
+                                Html="{Binding ElementName=TextBox1, Path=Text, Mode=TwoWay}">
+            <telerik:HtmlDataProvider.FormatProvider>
+                <telerik:HtmlFormatProvider>
+                    <telerik:HtmlFormatProvider.ImportSettings>
+                        <telerik:HtmlImportSettings  UseDefaultStylesheetForFontProperties="True" />
+                    </telerik:HtmlFormatProvider.ImportSettings>
+                    <telerik:HtmlFormatProvider.ExportSettings>
+                        <telerik:HtmlExportSettings   DocumentExportLevel="Fragment" 
+                                                        ImageExportMode="None"
+                                                        ExportFontStylesAsTags="True"
+                                                        ExportStyleMetadata="False"
+                                                        StyleRepositoryExportMode="ExportStylesAsCssClasses"
+                                                        StylesExportMode="Inline"
+                                                    />
+                    </telerik:HtmlFormatProvider.ExportSettings>
+                </telerik:HtmlFormatProvider>
+            </telerik:HtmlDataProvider.FormatProvider>
+        </telerik:HtmlDataProvider>
+<!-- #endregion -->
+
+        <!--#region radrichtextbox-features-import-export-settings_1-->
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+xmlns:telerikHtml="clr-namespace:Telerik.Windows.Documents.FormatProviders.Html;assembly=Telerik.Windows.Documents.FormatProviders.Html"
+xmlns:telerikHtmlInDocs="clr-namespace:Telerik.Windows.Documents.FormatProviders.Html;assembly=Telerik.Windows.Documents"
+        <!--#endregion-->
+    </Grid>
+</UserControl>

@@ -1,0 +1,18 @@
+﻿<!--  #region raddiagram-howto-customize-rotation-0  -->
+<telerik:RadDiagram x:Name="diagram" IsSnapToGridEnabled="False">
+	<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=BeginLoopShape}"
+							 Position="400 300" />
+	<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=ExternalDataShape}"
+							 Position="500 400" />
+</telerik:RadDiagram>
+<!--  #endregion  -->
+<!--  #region raddiagram-howto-customize-rotation-1  -->
+<StackPanel Width="200" HorizontalAlignment="Left">
+	<TextBlock FontSize="16"
+			   FontWeight="Bold"
+			   Text="Rotating: " />
+	<TextBox x:Name="rotationStep"
+			 MaxWidth="160"
+			 Text="" />
+</StackPanel>
+<!--  #endregion  -->

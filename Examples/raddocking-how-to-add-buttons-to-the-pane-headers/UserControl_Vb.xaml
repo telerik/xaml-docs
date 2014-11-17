@@ -1,0 +1,68 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddocking-how-to-add-buttons-to-the-pane-headers_0 -->
+<telerik:RadDocking x:Name="radDocking">
+    <telerik:RadDocking.DocumentHost>
+        <telerik:RadSplitContainer>
+            <telerik:RadPaneGroup x:Name="radPaneGroup">
+                <telerik:RadPane Title="Pane 1">
+                    <TextBlock Text="Some simple text here"/>
+                </telerik:RadPane>
+            </telerik:RadPaneGroup>
+        </telerik:RadSplitContainer>
+    </telerik:RadDocking.DocumentHost>
+</telerik:RadDocking>
+<!-- #endregion -->
+
+<!-- #region raddocking-how-to-add-buttons-to-the-pane-headers_1 -->
+<DataTemplate x:Key="TitleTemplate">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ContentPresenter Content="{Binding}"
+                          Margin="0,0,75,0" />
+        <telerik:RadButton Grid.Column="1"
+                           Content="Float!" />
+    </Grid>
+</DataTemplate>
+<!-- #endregion -->
+
+<!-- #region raddocking-how-to-add-buttons-to-the-pane-headers_2 -->
+<telerik:RadDocking.DocumentHost>
+    <telerik:RadSplitContainer>
+        <telerik:RadPaneGroup x:Name="radPaneGroup">
+            <telerik:RadPane TitleTemplate="{StaticResource TitleTemplate}" Title="Pane 1">
+                <TextBlock Text="Some simple text here"/>
+            </telerik:RadPane>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>
+</telerik:RadDocking.DocumentHost>
+<!-- #endregion -->
+
+<!-- #region raddocking-how-to-add-buttons-to-the-pane-headers_3 -->
+<DataTemplate x:Key="TitleTemplate">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ContentPresenter Content="{Binding}"
+                          Margin="0,0,75,0" />
+        <telerik:RadButton Grid.Column="1"
+                           Command="telerik:RadDockingCommands.Floating"
+                           Content="Float!" />
+    </Grid>
+</DataTemplate>
+<!-- #endregion -->
+</Grid>
+</UserControl>

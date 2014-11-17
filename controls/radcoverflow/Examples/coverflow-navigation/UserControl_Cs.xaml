@@ -1,0 +1,60 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region coverflow-navigation_0 -->
+<StackPanel x:Name="LayoutRoot">
+       <telerik:RadCoverFlow x:Name="cover" Height="600" >
+              <telerik:RadCoverFlowItem Background="White"/>
+              <telerik:RadCoverFlowItem Background="Red"/>
+              <telerik:RadCoverFlowItem Background="Green"/>
+              <telerik:RadCoverFlowItem Background="Yellow"/>
+              <telerik:RadCoverFlowItem Background="Blue"/>
+              <telerik:RadCoverFlowItem Background="Pink"/>
+       </telerik:RadCoverFlow></StackPanel>
+<!-- #endregion -->
+
+<!-- #region coverflow-navigation_1 -->
+<telerik:RadSlider Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}"/>
+<!-- #endregion -->
+
+<!-- #region coverflow-navigation_2 -->
+<telerik:RadSlider Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}" Minimum="0" 
+		Maximum="{Binding Items.Count, ElementName=cover}"/>
+<!-- #endregion -->
+
+<!-- #region coverflow-navigation_4 -->
+<UserControl.Resources>
+       <local:IntToIntValueConverter x:Key="IntToIntValueConverter"/>
+</UserControl.Resources>
+<StackPanel x:Name="LayoutRoot">
+       <telerik:RadCoverFlow x:Name="cover" Height="600">
+              <telerik:RadCoverFlowItem Background="White"/>
+              <telerik:RadCoverFlowItem Background="Red"/>
+              <telerik:RadCoverFlowItem Background="Green"/>
+              <telerik:RadCoverFlowItem Background="Yellow"/>
+              <telerik:RadCoverFlowItem Background="Blue"/>
+              <telerik:RadCoverFlowItem Background="Pink"/>
+       </telerik:RadCoverFlow>
+       <telerik:RadSlider Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}" Minimum="0" 
+		Maximum="{Binding Items.Count, ElementName=cover, Converter={StaticResource IntToIntValueConverter}, ConverterParameter=-1}"/>
+</StackPanel>
+<!-- #endregion -->
+
+<!-- #region coverflow-navigation_5 -->
+<ScrollBar Orientation="Horizontal" Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}" Minimum="0" 
+		Maximum="{Binding Items.Count, ElementName=cover, Converter={StaticResource IntToIntValueConverter}, ConverterParameter=-1}"/>
+<!-- #endregion -->
+
+<!-- #region coverflow-navigation_6 -->
+<telerik:RadNumericUpDown ShowTextBox="False" Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}" Minimum="0" 
+		Maximum="{Binding Items.Count, ElementName=cover, Converter={StaticResource IntToIntValueConverter}, ConverterParameter=-1}"/>
+<!-- #endregion -->
+</Grid>
+</UserControl>

@@ -1,0 +1,35 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+
+<!-- #region radtimeline_howto_expand_collapse_groups-0 -->
+<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
+    <Setter Property="IsExpanded" Value="True" />
+</Style>
+<!-- #endregion -->
+
+<!-- #region radtimeline_howto_expand_collapse_groups-1 -->
+<local:GroupKeyToIsExpandedConverter x:Key="groupKeyToIsExpandedConverter" />
+<sys:String x:Key="InitiallyExpandedGroup">Group2</sys:String>
+
+<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
+    <Setter Property="IsExpanded" Value="{Binding GroupKey, Converter={StaticResource groupKeyToIsExpandedConverter}, ConverterParameter={StaticResource InitiallyExpandedGroup}}" />
+</Style>
+<!-- #endregion -->
+
+<!-- #region radtimeline_howto_expand_collapse_groups-2 -->
+<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
+    <Setter Property="local:TimelineItemGroupControlBehavior.ExpandedGroupKey" Value="{Binding SelectedItem.Group, ElementName=RadTimeline1}" />
+    <Setter Property="telerik:AnimationManager.IsAnimationEnabled" Value="False" />
+</Style>
+<!-- #endregion -->
+
+<!-- #region radtimeline_howto_expand_collapse_groups-3 -->
+
+</Grid>
+</UserControl>

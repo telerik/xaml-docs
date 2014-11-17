@@ -1,0 +1,125 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+        <!--  #region radribbonview-keyboard-support_0  -->
+        <telerik:RadRibbonView x:Name="radRibbonView" 
+                               ApplicationName="RibbonViewApplication"
+                               telerik:KeyTipService.IsKeyTipsEnabled="True" />
+        <!--  #endregion  -->
+
+        <!--  #region radribbonview-keyboard-support_1  -->
+        <telerik:RadRibbonView x:Name="radRibbonView" 
+                               ApplicationName="RibbonViewApplication"
+                               telerik:KeyTipService.IsKeyTipsEnabled="True">
+            <telerik:RadRibbonView.Backstage>
+                <telerik:RadRibbonBackstage telerik:KeyTipService.AccessText="B" />
+            </telerik:RadRibbonView.Backstage>
+        </telerik:RadRibbonView>
+        <!--  #endregion  -->
+
+        <!--  #region radribbonview-keyboard-support_2  -->
+        <telerik:RadRibbonView x:Name="radRibbonView" 
+                               ApplicationName="RibbonViewApplication"
+                               telerik:KeyTipService.AccessKey="Ctrl+Alt+Z"
+                               telerik:KeyTipService.IsKeyTipsEnabled="True">
+            ...
+        </telerik:RadRibbonView>
+        <!--  #endregion  -->
+
+        <!--  #region radribbonview-keyboard-support_3  -->
+        <telerik:RadRibbonTab Header="Home" telerik:KeyTipService.AccessText="H">
+            <telerik:RadRibbonGroup Header="Group 1.1" telerik:KeyTipService.AccessText="A">
+                <telerik:RadRibbonButton x:Name="HomeButton1" 
+                                         Click="HomeButton1_Click"
+                                         telerik:KeyTipService.AccessText="Z"
+                                         Text="HomeButton 1">
+                    <telerik:KeyTipService.Activation>
+                        <telerik:KeyTipActivation Activated="KeyTipActivation_Activated" />
+                    </telerik:KeyTipService.Activation>
+                </telerik:RadRibbonButton>
+                ...
+            </telerik:RadRibbonGroup>
+            ...
+        </telerik:RadRibbonTab>
+        <!--  #endregion  -->
+
+        <!--  #region radribbonview-keyboard-support_6  -->
+        <telerik:RadRibbonView x:Name="radRibbonView" telerik:KeyTipService.IsKeyTipsEnabled="True">
+            <telerik:RadRibbonView.Backstage>
+                <telerik:RadRibbonBackstage telerik:KeyTipService.AccessText="B" />
+            </telerik:RadRibbonView.Backstage>
+            <telerik:RadRibbonView.QuickAccessToolBar>
+                <telerik:QuickAccessToolBar>
+                    <telerik:RadRibbonButton Foreground="Gray" 
+                                             telerik:KeyTipService.AccessText="S"
+                                             Text="Save" />
+                    <telerik:RadRibbonButton Foreground="Gray" 
+                                             telerik:KeyTipService.AccessText="U"
+                                             Text="Undo" />
+                    <telerik:RadRibbonButton Foreground="Gray" 
+                                             telerik:KeyTipService.AccessText="P"
+                                             Text="Print" />
+                </telerik:QuickAccessToolBar>
+            </telerik:RadRibbonView.QuickAccessToolBar>
+            <telerik:RadRibbonTab Header="Home" telerik:KeyTipService.AccessText="H">
+                <telerik:RadRibbonGroup Header="Group 1.1" telerik:KeyTipService.AccessText="A">
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="Z" Text="HomeButton 1" />
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="X" Text="HomeButton 2" />
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="C" Text="HomeButton 3" />
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Group 1.2" telerik:KeyTipService.AccessText="S">
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="W" Text="HomeButton 4" />
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="E" Text="HomeButton 5" />
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="R" Text="HomeButton 6" />
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Group 1.3" telerik:KeyTipService.AccessText="D">
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="G" Text="HomeButton 7" />
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="M" Text="HomeButton 8" />
+                    <telerik:RadRibbonButton telerik:KeyTipService.AccessText="N" Text="HomeButton 9" />
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+            <telerik:RadRibbonTab Header="Options" telerik:KeyTipService.AccessText="O">...</telerik:RadRibbonTab>
+        </telerik:RadRibbonView>
+        <!--  #endregion  -->
+
+        <!--  #region radribbonview-keyboard-support_7  -->
+        <SolidColorBrush x:Key="RibbonBarKeyTips_OuterBorderBrush" Color="#FF848484" />
+        <SolidColorBrush x:Key="RibbonBarKeyTips_Background" Color="#FFD9D9D9" />
+        <SolidColorBrush x:Key="RibbonBarKeyTips_InnerBorderBrush" Color="#FFFFFFFF" />
+        <Style TargetType="Telerik_Windows_Controls_RibbonView_KeyTips:KeyTipControl">
+            <Setter Property="MinWidth" Value="16" />
+            <Setter Property="MinHeight" Value="16" />
+            <Setter Property="IsHitTestVisible" Value="False" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{StaticResource RibbonBarKeyTips_OuterBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource RibbonBarKeyTips_Background}" />
+            <Setter Property="Padding" Value="2 -2 2 -1" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Telerik_Windows_Controls_RibbonView_KeyTips:KeyTipControl">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="1">
+                            <Border BorderBrush="{StaticResource RibbonBarKeyTips_InnerBorderBrush}" BorderThickness="1">
+                                <ContentPresenter Margin="{TemplateBinding Padding}" 
+                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                            </Border>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--  #endregion  -->
+</Grid>
+</UserControl>

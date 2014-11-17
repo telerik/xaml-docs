@@ -1,0 +1,55 @@
+﻿<!--  #region raddiagrams-howto-serialize-databound-diagram-0 -->
+<Grid>
+    <Grid.Resources>
+        <DataTemplate x:Key="ShapeContentTemplate">
+            <TextBlock Text="{Binding Title}" />
+        </DataTemplate>
+        <Style x:Key="OrgChartShapeStyle" TargetType="telerik:RadDiagramShape">
+            <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
+            <Setter Property="ContentTemplate" Value="{StaticResource ShapeContentTemplate}" />
+            <Setter Property="EditTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBox Text="{Binding Title, Mode=TwoWay}" />
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="telerik:RadDiagramConnection">
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="SourceConnectorPosition" Value="Bottom" />
+            <Setter Property="TargetConnectorPosition" Value="Top" />
+        </Style>
+    </Grid.Resources>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="30" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+        <telerik:RadButton Width="100"
+                            Height="30"
+                            Command="telerik:DiagramCommands.Save"
+                            CommandTarget="{Binding ElementName=xDiagram}"
+                            Content="Save" />
+        <telerik:RadButton Width="100"
+                            Height="30"
+                            Command="telerik:DiagramCommands.Open"
+                            CommandTarget="{Binding ElementName=xDiagram}"
+                            Content="Load" />
+    </StackPanel>
+    <telerik:RadDiagram x:Name="xDiagram"
+                        Grid.Row="1"
+                        ShapeStyle="{StaticResource OrgChartShapeStyle}">
+        <telerik:RadDiagram.CommandBindings>
+            <CommandBinding CanExecute="CommandBinding_CanExecute"
+                            Command="telerik:DiagramCommands.Save"
+                            Executed="CommandBinding_Executed_Save" />
+            <CommandBinding Command="telerik:DiagramCommands.Open" Executed="CommandBinding_Executed_Open" />
+        </telerik:RadDiagram.CommandBindings>
+    </telerik:RadDiagram>
+</Grid>
+<!--  #endregion  -->

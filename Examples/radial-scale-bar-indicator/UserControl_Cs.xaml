@@ -1,0 +1,82 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radial-scale-bar-indicator_0 -->
+<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
+    <telerik:RadialScale>
+        <telerik:RadialScale.Indicators>
+            <telerik:BarIndicator
+                    Value="70"
+                    StartWidth="0.1"
+                    EndWidth="0.1"
+                    EmptyFill="Transparent"
+                    Background="Yellow"
+                    BorderBrush="Transparent"
+                    StrokeThickness="0"
+                    telerik:ScaleObject.Location="Outside">
+            </telerik:BarIndicator>
+        </telerik:RadialScale.Indicators>
+    </telerik:RadialScale>
+</telerik:RadRadialGauge>
+<!-- #endregion -->
+
+<!-- #region radial-scale-bar-indicator_1 -->
+<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
+    <telerik:RadialScale>
+        <telerik:RadialScale.Ranges>
+            <telerik:GaugeRange Min="0" Max="25"
+                StartWidth="0.05"
+                EndWidth="0.05"
+                Background="Blue"
+                TickBackground="Blue"
+                LabelForeground="Blue"
+                IndicatorBackground="Blue" />
+            <telerik:GaugeRange Min="25" Max="50"
+                StartWidth="0.05"
+                EndWidth="0.05"
+                Background="SkyBlue"
+                TickBackground="SkyBlue"
+                LabelForeground="SkyBlue"
+                IndicatorBackground="SkyBlue" />
+            <telerik:GaugeRange Min="50" Max="75"
+                StartWidth="0.05"
+                EndWidth="0.05"
+                Background="Green"
+                TickBackground="Green"
+                LabelForeground="Green"
+                IndicatorBackground="Green" />
+            <telerik:GaugeRange Min="75" Max="100"
+                StartWidth="0.05"
+                EndWidth="0.05"
+                Background="Yellow"
+                TickBackground="Yellow"
+                LabelForeground="Yellow"
+                IndicatorBackground="Yellow" />
+        </telerik:RadialScale.Ranges>
+        <telerik:RadialScale.Indicators>
+            <telerik:BarIndicator Name="radialBar" 
+                UseRangeColor="True" 
+                RangeColorMode="Default"
+                Value="70" />
+        </telerik:RadialScale.Indicators>
+    </telerik:RadialScale>
+</telerik:RadRadialGauge>
+<!-- #endregion -->
+
+<!-- #region radial-scale-bar-indicator_2 -->
+<telerik:RadialScale.Indicators telerik:StyleManager.Theme="Windows8">
+	<telerik:BarIndicator Name="radialBar" 
+		UseRangeColor="True" 
+		RangeColorMode="ProportionalBrush"
+		Value="70" />
+ </telerik:RadialScale.Indicators>
+<!-- #endregion -->
+</Grid>
+</UserControl>

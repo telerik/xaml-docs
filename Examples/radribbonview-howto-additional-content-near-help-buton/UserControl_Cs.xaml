@@ -1,0 +1,11 @@
+<!-- #region radribbonview-howto-additional-content-near-help-buton_0 -->
+<telerik:RadRibbonView x:Name="xRibbonView" HelpButtonVisibility="Visible">
+    <telerik:RadRibbonView.TabStripAdditionalContent>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="1"/>
+            <Button Content="2"/>
+            <Button Content="3"/>
+        </StackPanel>
+    </telerik:RadRibbonView.TabStripAdditionalContent>
+</telerik:RadRibbonView>
+<!-- #endregion -->

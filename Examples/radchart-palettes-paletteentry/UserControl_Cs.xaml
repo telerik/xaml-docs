@@ -1,0 +1,53 @@
+<UserControl x:Class="WpfApplication1.UserControl_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchartview-palettes-paletteentry_0 -->
+<telerik:RadCartesianChart >
+    <telerik:RadCartesianChart.Palette>
+        <telerik:ChartPalette>
+            <telerik:ChartPalette.GlobalEntries>
+                <telerik:PaletteEntry Fill="#FF1FAFD3" Stroke="#FF1FAFD3" AdditionalFill="#FF01FFFF" AdditionalStroke="#0055BF"/>
+                <telerik:PaletteEntry Fill="#FFC32E0A" Stroke="#FFC32E0A" AdditionalFill="#FFE85F2E" AdditionalStroke="#7D1A00"/>
+            </telerik:ChartPalette.GlobalEntries>
+        </telerik:ChartPalette>
+    </telerik:RadCartesianChart.Palette>
+
+    <telerik:RadCartesianChart.HorizontalAxis>
+        <telerik:CategoricalAxis/>
+    </telerik:RadCartesianChart.HorizontalAxis>
+    <telerik:RadCartesianChart.VerticalAxis>
+        <telerik:LinearAxis/>
+    </telerik:RadCartesianChart.VerticalAxis>
+
+    <telerik:CandlestickSeries>
+        <telerik:CandlestickSeries.DataPoints>
+            <telerik:OhlcDataPoint Category="Mon" Open="9" High="10" Low="7" Close="8"/>
+            <telerik:OhlcDataPoint Category="Tue" Open="8.5" High="11" Low="8" Close="10"/>
+            <telerik:OhlcDataPoint Category="Wed" Open="9" High="10" Low="7" Close="8"/>
+            <telerik:OhlcDataPoint Category="Thu" Open="8" High="11" Low="8" Close="10"/>
+            <telerik:OhlcDataPoint Category="Fri" Open="8" High="9.5" Low="7.5" Close="8.5"/>
+        </telerik:CandlestickSeries.DataPoints>
+    </telerik:CandlestickSeries>
+
+    <telerik:CandlestickSeries>
+        <telerik:CandlestickSeries.DataPoints>
+            <telerik:OhlcDataPoint Category="Mon" Low="1" High="5" Open="2" Close="4"/>
+            <telerik:OhlcDataPoint Category="Tue" Low="3" High="7" Open="6" Close="4"/>
+            <telerik:OhlcDataPoint Category="Wed" Low="3" High="6" Open="4" Close="5"/>
+            <telerik:OhlcDataPoint Category="Thu" Low="3" High="7" Open="6" Close="4.5"/>
+            <telerik:OhlcDataPoint Category="Fri" Low="3" High="7" Open="5.5" Close="4"/>
+        </telerik:CandlestickSeries.DataPoints>
+    </telerik:CandlestickSeries>
+
+</telerik:RadCartesianChart>
+<!-- #endregion -->
+
+</Grid>
+</UserControl>

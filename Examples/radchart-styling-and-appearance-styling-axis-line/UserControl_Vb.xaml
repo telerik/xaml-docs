@@ -1,0 +1,56 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radchart-styling-and-appearance-styling-axis-line_0 -->
+<Grid x:Name="LayoutRoot"
+      Background="White">
+    ...
+    <Line />
+</Grid>
+<!-- #endregion -->
+
+<!-- #region radchart-styling-and-appearance-styling-axis-line_3 -->
+<Style x:Key="AxisLineStyle" TargetType="Line">
+ <Setter Property="Stroke" Value="Orange"/>
+ <Setter Property="StrokeThickness" Value="5"/>
+</Style>
+<!-- #endregion -->
+
+<!-- #region radchart-styling-and-appearance-styling-axis-line_4 -->
+<telerik:RadChart x:Name="RadChart1">
+            <telerik:RadChart.DefaultView>
+                <charting:ChartDefaultView>
+                    <charting:ChartDefaultView.ChartArea>
+                        <charting:ChartArea x:Name="Area" LegendName="legend">
+                            <charting:ChartArea.DataSeries >
+                                <charting:DataSeries LegendLabel="Series1" >
+                                    <charting:DataPoint XCategory="Jan" YValue="100"></charting:DataPoint>
+                                    <charting:DataPoint XCategory="Feb" YValue="10"></charting:DataPoint>
+                                    <charting:DataPoint XCategory="Mar" YValue="40"></charting:DataPoint>
+                                    <charting:DataPoint XCategory="Apr" YValue="89"></charting:DataPoint>
+                                </charting:DataSeries>
+                                <charting:DataSeries LegendLabel="Series2">
+                                    <charting:DataPoint XCategory="Jan" YValue="70"></charting:DataPoint>
+                                    <charting:DataPoint XCategory="Feb" YValue="31"></charting:DataPoint>
+                                    <charting:DataPoint XCategory="Mar" YValue="67"></charting:DataPoint>
+                                    <charting:DataPoint XCategory="Apr" YValue="54"></charting:DataPoint>
+                                </charting:DataSeries>
+                            </charting:ChartArea.DataSeries>
+                        </charting:ChartArea>
+                    </charting:ChartDefaultView.ChartArea>
+                    <charting:ChartDefaultView.ChartLegend>
+                        <charting:ChartLegend x:Name="legend"></charting:ChartLegend>
+                    </charting:ChartDefaultView.ChartLegend>
+                </charting:ChartDefaultView>
+            </telerik:RadChart.DefaultView>
+        </telerik:RadChart>
+<!-- #endregion -->
+</Grid>
+</UserControl>

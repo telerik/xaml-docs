@@ -1,0 +1,50 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+
+
+<!-- #region common-event-to-command-behavior_01 -->
+<telerik:RadListBox ItemsSource="{Binding ListBoxItems}" />
+<!-- #endregion -->
+
+<!-- #region common-event-to-command-behavior_02 -->
+<telerik:RadListBox x:Name="ListBox" ItemsSource="{Binding ListBoxItems}">
+    <telerik:EventToCommandBehavior.EventBindings>
+        <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseEnter" />
+    </telerik:EventToCommandBehavior.EventBindings>
+</telerik:RadListBox>
+<!-- #endregion -->
+
+<!-- #region common-event-to-command-behavior_03 -->
+<telerik:EventToCommandBehavior.EventBindings>
+    <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True" />
+</telerik:EventToCommandBehavior.EventBindings>
+<!-- #endregion -->
+
+<!-- #region common-event-to-command-behavior_04 -->
+<telerik:EventToCommandBehavior.EventBindings>
+    <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True"
+                          CommandParameter="This is a command parameter!"/>
+</telerik:EventToCommandBehavior.EventBindings>
+<!-- #endregion -->
+
+<!-- #region common-event-to-command-behavior_05 -->
+<telerik:EventToCommandBehavior.EventBindings>
+    <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True"
+                        PassEventArgsToCommand="True" />
+</telerik:EventToCommandBehavior.EventBindings>
+<!-- #endregion -->
+
+<!-- #region common-event-to-command-behavior_06 -->
+<telerik:EventToCommandBehavior.EventBindings>
+    <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True" />
+    <telerik:EventBinding Command="{Binding AnotherCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True" />
+</telerik:EventToCommandBehavior.EventBindings>
+<!-- #endregion -->
+    </Grid>
+</UserControl>

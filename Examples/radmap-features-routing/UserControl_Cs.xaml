@@ -1,0 +1,48 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radmap-features-routing_0 -->
+<telerik:RadMap Name="radMap">
+	<telerik:RadMap.Provider>
+		<telerik:OpenStreetMapProvider />
+	</telerik:RadMap.Provider>
+	<telerik:VisualizationLayer Name="wayPointsLayer" />
+	<telerik:VisualizationLayer Name="routeLayer"
+								UseBitmapCache="False"/>
+</telerik:RadMap>
+<!-- #endregion -->
+
+<!-- #region radmap-features-routing_1 -->
+ <telerik:RadMap Name="radMap"
+				Center="47,15"
+				ZoomLevel="5" 
+				MapMouseClick="MapMouseClick">
+	<telerik:RadMap.Provider>
+		<telerik:OpenStreetMapProvider />
+	</telerik:RadMap.Provider>
+	<telerik:VisualizationLayer Name="wayPointsLayer" />
+	<telerik:VisualizationLayer Name="routeLayer"
+								UseBitmapCache="False"/>
+</telerik:RadMap>
+
+<StackPanel Grid.Column="1">
+	<telerik:RadButton Name="findRouteButton" 
+					   Content="Find Route" 
+					   Click="FindRouteClicked" 
+					   Margin="0,2" />
+
+	<telerik:RadButton Name="clearButton" 
+					   Content="Clear Route" 
+					   Click="ClearRouteClicked" 
+					   Margin="0,2" />
+</StackPanel>
+<!-- #endregion -->
+</Grid>
+</UserControl>

@@ -1,0 +1,60 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radcolorpicker-getting-started_1 -->
+<xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"/>
+...
+<telerik:RadColorPicker SelectedColor="Red" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_4 -->
+<telerik:RadColorPicker MainPalette="Grayscale" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_6 -->
+<telerik:RadColorPicker HeaderPalette="Office" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_8 -->
+<telerik:RadColorPicker StandardPalette="Standard" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_10 -->
+<telerik:RadColorPicker
+                StandardPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_12 -->
+<telerik:RadColorPicker
+                HeaderPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_14 -->
+<telerik:RadColorPicker
+                MainPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_16 -->
+<telerik:RadColorPicker SelectedColorChanged="colorPicker_SelectedColorChanged" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_18 -->
+<telerik:RadColorPicker DropDownClosed="colorPicker_DropDownClosed" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_20 -->
+<telerik:RadColorPicker DropDownOpened="colorPicker_DropDownOpened" />
+<!-- #endregion -->
+
+<!-- #region radcolorpicker-getting-started_22 -->
+<telerik:RadColorPicker Click="RadColorPicker_Click" />
+<!-- #endregion -->
+</Grid>
+</UserControl>

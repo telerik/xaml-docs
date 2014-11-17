@@ -1,0 +1,54 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtreeview-feautres-treeviewitem-item-images_0 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView">
+    <telerik:RadTreeViewItem Header="Sport Categories">
+        <telerik:RadTreeViewItem Header="Football">
+            <telerik:RadTreeViewItem Header="Futsal"/>
+            <telerik:RadTreeViewItem Header="Soccer"/>
+        </telerik:RadTreeViewItem>
+        <telerik:RadTreeViewItem Header="Tennis">
+            <telerik:RadTreeViewItem Header="Table Tennis"/>
+        </telerik:RadTreeViewItem>
+        <telerik:RadTreeViewItem Header="Cycling">
+            <telerik:RadTreeViewItem Header="Road Cycling"/>
+            <telerik:RadTreeViewItem Header="Indoor Cycling"/>
+            <telerik:RadTreeViewItem Header="Mountain Bike"/>
+        </telerik:RadTreeViewItem>
+    </telerik:RadTreeViewItem>
+</telerik:RadTreeView>
+<!-- #endregion -->
+
+<!-- #region radtreeview-feautres-treeviewitem-item-images_1 -->
+<telerik:RadTreeView Margin="8" x:Name="radTreeView"
+    ImagesBaseDir="/Examples/Common/Images/Vista Icons/">
+    <telerik:RadTreeViewItem Header="Sport Categories" DefaultImageSrc="Icon1.png">
+        <telerik:RadTreeViewItem Header="Football" DefaultImageSrc="Icon2.png">
+            <telerik:RadTreeViewItem Header="Futsal" DefaultImageSrc="Icon3.png"/>
+            <telerik:RadTreeViewItem Header="Soccer" DefaultImageSrc="Icon4.png"/>
+        </telerik:RadTreeViewItem>
+        <telerik:RadTreeViewItem Header="Tennis" DefaultImageSrc="Icon5.png">
+            <telerik:RadTreeViewItem Header="Table Tennis" DefaultImageSrc="Icon6.png"/>
+        </telerik:RadTreeViewItem>
+        <telerik:RadTreeViewItem Header="Cycling" DefaultImageSrc="Icon7.png" ExpandedImageSrc="Icon11.png">
+            <telerik:RadTreeViewItem Header="Road Cycling" DefaultImageSrc="Icon8.png"/>
+            <telerik:RadTreeViewItem Header="Indoor Cycling" DefaultImageSrc="Icon9.png" SelectedImageSrc="Icon10.png"/>
+            <telerik:RadTreeViewItem Header="Mountain Bike"/>
+        </telerik:RadTreeViewItem>
+    </telerik:RadTreeViewItem>
+</telerik:RadTreeView>
+<!-- #endregion -->
+
+<!-- #region radtreeview-feautres-treeviewitem-item-images_6 -->
+ImagesBaseDir="/Examples/Common/Images/Vista Icons/"
+<!-- #endregion -->
+</Grid>
+</UserControl>

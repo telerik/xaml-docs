@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+
+<!-- #region gridview-grouping-how-to-modify-grouptemplates_0 -->
+<telerik:GridViewDataColumn.GroupHeaderTemplate>
+    <DataTemplate>
+        <StackPanel>
+            <TextBlock Foreground="#FFED7971"
+                 Text="Test Key" />
+            <TextBlock Foreground="#FFED7971"
+                 Text="{Binding Group.Key}" />
+        </StackPanel>
+    </DataTemplate>
+ </telerik:GridViewDataColumn.GroupHeaderTemplate>
+<!-- #endregion -->
+
+<!-- #region gridview-grouping-how-to-modify-grouptemplates_1 -->
+<telerik:RadGridView.GroupHeaderTemplate>
+    <DataTemplate>
+        <StackPanel>
+            <TextBlock Foreground="#FFED7971"
+                 Text="Test Key" />
+            <TextBlock Foreground="#FFED7971"
+                 Text="{Binding Group.Key}" />
+        </StackPanel>
+    </DataTemplate>
+ </telerik:RadGridView.GroupHeaderTemplate>
+<!-- #endregion -->
+
+<!-- #region gridview-grouping-how-to-modify-grouptemplates_2 -->
+<Style TargetType="telerik:GridViewGroupRow">
+   <Setter Property="ShowHeaderAggregates" Value="False"/>
+</Style>
+<!-- #endregion -->
+    
+    </Grid>
+</UserControl>

@@ -1,0 +1,57 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region raddocking-features-panes-docked-floating-panes_0 -->
+<telerik:RadDocking x:Name="radDocking">
+    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="DockedRight">
+        <telerik:RadPaneGroup x:Name="radPaneGroup">
+            <telerik:RadPane x:Name="radPane" Header="Docked Pane">
+                <TextBlock Text="Docked Pane."></TextBlock>
+            </telerik:RadPane>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>
+</telerik:RadDocking>
+<!-- #endregion -->
+
+<!-- #region raddocking-features-panes-docked-floating-panes_5 -->
+<telerik:RadDocking x:Name="radDocking">    <telerik:RadSplitContainer x:Name="radSplitContainer1" InitialPosition="FloatingDockable">
+        <telerik:RadPaneGroup x:Name="radPaneGroup1">
+            <telerik:RadPane x:Name="radPane1" Header="Floating Pane">
+                <TextBlock TextWrapping="Wrap" Text="Floating pane hosted in a ToolWindow."></TextBlock>
+            </telerik:RadPane>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer>    <telerik:RadSplitContainer x:Name="radSplitContainer2" InitialPosition="FloatingDockable">
+        <telerik:RadPaneGroup x:Name="radPaneGroup2">
+            <telerik:RadPane x:Name="radPane2" Header="Floating Pane">
+                <TextBlock TextWrapping="Wrap" Text="Floating pane hosted in a ToolWindow."></TextBlock>
+            </telerik:RadPane>
+        </telerik:RadPaneGroup>
+    </telerik:RadSplitContainer></telerik:RadDocking>
+<!-- #endregion -->
+
+<!-- #region raddocking-features-panes-docked-floating-panes_8 -->
+<telerik:RadPane x:Name="radPane" CanFloat="False"/>
+<!-- #endregion -->
+
+<!-- #region raddocking-features-panes-docked-floating-panes_10 -->
+<telerik:RadSplitContainer x:Name="radSplitContainer1" InitialPosition="FloatingDockable"
+    telerik:RadDocking.FloatingLocation="50,50"
+    telerik:RadDocking.FloatingSize="200,200">
+
+    <telerik:RadPaneGroup x:Name="radPaneGroup1">
+        <telerik:RadPane x:Name="radPane1" Header="Floating Pane">
+            <TextBlock TextWrapping="Wrap" Text="Floating pane hosted in a ToolWindow."></TextBlock>
+        </telerik:RadPane>
+    </telerik:RadPaneGroup>
+
+</telerik:RadSplitContainer>
+<!-- #endregion -->
+</Grid>
+</UserControl>

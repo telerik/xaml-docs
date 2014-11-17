@@ -1,0 +1,289 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radribbonview-ribbon-backstage_0 -->
+<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application" IsBackstageOpen="True">
+ ...
+</telerik:RadRibbonView>
+<!-- #endregion -->
+
+<!-- #region radribbonview-ribbon-backstage_1 -->
+<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
+    <telerik:RadRibbonView.Backstage>
+        <telerik:RadRibbonBackstage />
+    </telerik:RadRibbonView.Backstage>
+</telerik:RadRibbonView>
+<!-- #endregion -->
+
+<!-- #region radribbonview-ribbon-backstage_4 -->
+<telerik:RadRibbonView x:Name="radRibbonView" 
+                        Title="My Title"
+                        ApplicationButtonContent="File"
+                        ApplicationName="My Application">
+    <telerik:RadRibbonView.Backstage>
+        <telerik:RadRibbonBackstage>
+            <telerik:RadRibbonBackstageItem Header="Save" />
+            <telerik:RadRibbonBackstageItem Header="Save As" />
+            <telerik:RadRibbonBackstageItem Header="Open" />
+            <telerik:RadRibbonBackstageItem Header="Recent" />
+            <telerik:RadRibbonBackstageItem Header="New" />
+            <telerik:RadRibbonBackstageItem Header="Options" />
+            <telerik:RadRibbonBackstageItem Header="Exit" />
+        </telerik:RadRibbonBackstage>
+    </telerik:RadRibbonView.Backstage>
+</telerik:RadRibbonView>
+<!-- #endregion -->
+
+<!-- #region radribbonview-ribbon-backstage_5 -->
+<telerik:RadRibbonView x:Name="radRibbonView" 
+                        Title="My Title"
+                        ApplicationName="My Application">
+    <telerik:RadRibbonView.Backstage>
+        <telerik:RadRibbonBackstage>
+            <telerik:RadRibbonBackstageItem CloseOnClick="False" 
+                                            Header="Save"
+                                            Icon="Images/Save.png"
+                                            IsSelectable="False" />
+            <telerik:RadRibbonBackstageItem Header="Save As" 
+                                            Icon="Images/SaveAs.png"
+                                            IsSelectable="False" />
+            <telerik:RadRibbonBackstageItem Header="Open" 
+                                            Icon="Images/Open.png"
+                                            IsSelectable="False" />
+            <telerik:RadRibbonBackstageItem Header="Separator" IsGroupSeparator="True" />
+            <telerik:RadRibbonBackstageItem Header="Recent" IsDefault="True">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="15 15 0 0">
+                        <TextBlock Margin="0 0 0 2" 
+                                    FontSize="14"
+                                    FontWeight="Bold"
+                                    Text="Recent Documents" />
+                        <Rectangle Height="1">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush MappingMode="Absolute" SpreadMethod="Repeat" StartPoint="0,0.5" EndPoint="4,0.5">
+                                    <GradientStop Offset="0" Color="#40000000" />
+                                    <GradientStop Offset="0.5" Color="#40000000" />
+                                    <GradientStop Offset="0.501" Color="Transparent" />
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <ItemsControl Margin="0 4 0 0">
+                            <telerik:RadRibbonButton Width="285">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/Document.png" />
+                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
+                                        <TextBlock Margin="0 0 0 2" Text="RadRibbonViewSpecifications" />
+                                        <TextBlock Foreground="DimGray" Text="c:\Users\afuller\Documents" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </telerik:RadRibbonButton>
+                            <telerik:RadRibbonButton Width="285">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/Document.png" />
+                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
+                                        <TextBlock Margin="0 0 0 2" Text="RadRibbonBackstageSpecifications" />
+                                        <TextBlock Foreground="DimGray" Text="c:\Users\afuller\Documents" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </telerik:RadRibbonButton>
+                            <telerik:RadRibbonButton Width="285">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/Document.png" />
+                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
+                                        <TextBlock Margin="0 0 0 2" Text="RadRibbonBackstageItemSpecifications" />
+                                        <TextBlock Foreground="DimGray" Text="c:\Users\afuller\Documents" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </telerik:RadRibbonButton>
+                            <telerik:RadRibbonButton Width="285">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/Document.png" />
+                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
+                                        <TextBlock Margin="0 0 0 2" Text="DevReach 2010" />
+                                        <TextBlock Foreground="DimGray" Text="c:\My Documents" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </telerik:RadRibbonButton>
+                        </ItemsControl>
+                    </StackPanel>
+                    <Rectangle Grid.Column="1" 
+                                Width="1"
+                                Margin="10, 5">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Offset="0" Color="#10000000" />
+                                <GradientStop Offset="0.15" Color="#40000000" />
+                                <GradientStop Offset="0.95" Color="#40000000" />
+                                <GradientStop Offset="1" Color="#10000000" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <StackPanel Grid.Column="2" Margin="5 15 7 0">
+                        <TextBlock Margin="0 0 0 2" 
+                                    FontSize="14"
+                                    FontWeight="Bold"
+                                    Text="Recent Places" />
+                        <Rectangle Height="1">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush MappingMode="Absolute" SpreadMethod="Repeat" StartPoint="0,0.5" EndPoint="4,0.5">
+                                    <GradientStop Offset="0" Color="#40000000" />
+                                    <GradientStop Offset="0.5" Color="#40000000" />
+                                    <GradientStop Offset="0.501" Color="Transparent" />
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <ItemsControl Margin="0 4 0 0">
+                            <telerik:RadRibbonButton Width="285">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/Document.png" />
+                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
+                                        <TextBlock Margin="0 0 0 2" Text="My Documents" />
+                                        <TextBlock Foreground="DimGray" Text="c:\Users\afuller\Documents" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </telerik:RadRibbonButton>
+                            <telerik:RadRibbonButton Width="285">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/Document.png" />
+                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
+                                        <TextBlock Margin="0 0 0 2" Text="Downloads" />
+                                        <TextBlock Foreground="DimGray" Text="c:\Users\afuller\Downloads" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </telerik:RadRibbonButton>
+                        </ItemsControl>
+                    </StackPanel>
+                </Grid>
+            </telerik:RadRibbonBackstageItem>
+            <telerik:RadRibbonBackstageItem Header="New" IsSelected="True">
+                <StackPanel Margin="15 15 0 0">
+                    <TextBlock Margin="0 0 0 2" 
+                                FontSize="14"
+                                FontWeight="Bold"
+                                Text="Available Templates" />
+                    <Rectangle Height="1">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush MappingMode="Absolute" SpreadMethod="Repeat" StartPoint="0,0.5" EndPoint="4,0.5">
+                                <GradientStop Offset="0" Color="#40000000" />
+                                <GradientStop Offset="0.5" Color="#40000000" />
+                                <GradientStop Offset="0.501" Color="Transparent" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <ItemsControl>
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <telerik:RadWrapPanel />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <telerik:RadRibbonButton>
+                            <Grid Width="80">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Images/DocTemplateNew.png" Stretch="None" />
+                                <TextBlock Grid.Row="1" 
+                                            Margin="2"
+                                            HorizontalAlignment="Center"
+                                            Text="Blank Document"
+                                            TextWrapping="Wrap" />
+                            </Grid>
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton>
+                            <Grid Width="80">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Images/DocTemplateBlogPost.png" Stretch="None" />
+                                <TextBlock Grid.Row="1" 
+                                            Margin="2"
+                                            HorizontalAlignment="Center"
+                                            Text="Blog Post"
+                                            TextWrapping="Wrap" />
+                            </Grid>
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton>
+                            <Grid Width="80">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Images/DocTemplateRecent.png" Stretch="None" />
+                                <TextBlock Grid.Row="1" 
+                                            Margin="2"
+                                            HorizontalAlignment="Center"
+                                            Text="Recent Templates"
+                                            TextWrapping="Wrap" />
+                            </Grid>
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton>
+                            <Grid Width="80">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Images/DocTemplateSamples.png" Stretch="None" />
+                                <TextBlock Grid.Row="1" 
+                                            Margin="2"
+                                            HorizontalAlignment="Center"
+                                            Text="Sample Templates"
+                                            TextWrapping="Wrap" />
+                            </Grid>
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton>
+                            <Grid Width="80">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Images/DocTemplateMy.png" Stretch="None" />
+                                <TextBlock Grid.Row="1" 
+                                            Margin="2"
+                                            HorizontalAlignment="Center"
+                                            Text="My Templates"
+                                            TextWrapping="Wrap" />
+                            </Grid>
+                        </telerik:RadRibbonButton>
+                        <telerik:RadRibbonButton>
+                            <Grid Width="80">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Images/DocTemplateNewBasedOn.png" Stretch="None" />
+                                <TextBlock Grid.Row="1" 
+                                            Margin="2"
+                                            HorizontalAlignment="Center"
+                                            Text="New from Existing"
+                                            TextWrapping="Wrap" />
+                            </Grid>
+                        </telerik:RadRibbonButton>
+                    </ItemsControl>
+                </StackPanel>
+            </telerik:RadRibbonBackstageItem>
+            <telerik:RadRibbonBackstageItem Header="Exit" 
+                                            Icon="Images/Exit.png"
+                                            IsSelectable="False" />
+        </telerik:RadRibbonBackstage>
+    </telerik:RadRibbonView.Backstage>
+    <telerik:RadRibbonTab Header="Home" />
+    <telerik:RadRibbonTab Header="View" />
+    <telerik:RadRibbonTab Header="Text" />
+</telerik:RadRibbonView>
+<!-- #endregion -->
+</Grid>
+</UserControl>

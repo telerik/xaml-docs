@@ -1,0 +1,66 @@
+<UserControl x:Class="WpfApplication1.Default_Cs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radrichtextbox-features-working-with-radrichtextbox_0 -->
+<telerik:RadRichTextBox x:Name="radRichTextBox" />
+<!-- #endregion -->
+
+<!-- #region radrichtextbox-features-working-with-radrichtextbox_1 -->
+<telerik:RadRichTextBox x:Name="radRichTextBox" Width="500" Height="500"
+                        CurrentSpanStyleChanged="radRichTextBox_CurrentSpanStyleChanged">
+    <telerik:RadDocument LayoutMode="Paged">
+        <telerik:Section PageMargin="10, 10, 10, 10">
+            <telerik:Paragraph>
+                <telerik:ImageInline Width="236" Height="50" UriSource="/Silverlight.Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png" />
+            </telerik:Paragraph>
+            <telerik:Paragraph TextAlignment="Center">
+                <telerik:Span Text="Thank you for choosing Telerik" />
+                <telerik:Span FontWeight="Bold" Text="&#160;RadRichTextBox!" />
+            </telerik:Paragraph>
+            <telerik:Paragraph>
+                <telerik:Span FontWeight="Bold" Text="RadRichTextBox" />
+                <telerik:Span Text="&#160;is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs) etc." />
+            </telerik:Paragraph>
+            <telerik:Table LayoutMode="AutoFit">
+                <telerik:TableRow>
+                    <telerik:TableCell>
+                        <telerik:Paragraph>
+                            <telerik:Span Text="Cell 1" />
+                        </telerik:Paragraph>
+                    </telerik:TableCell>
+                    <telerik:TableCell>
+                        <telerik:Paragraph>
+                            <telerik:Span Text="Cell 2" />
+                        </telerik:Paragraph>
+                    </telerik:TableCell>
+                </telerik:TableRow>
+                <telerik:TableRow>
+                    <telerik:TableCell ColumnSpan="2">
+                        <telerik:Paragraph>
+                            <telerik:Span Text="Cell 3" />
+                        </telerik:Paragraph>
+                    </telerik:TableCell>
+                </telerik:TableRow>
+            </telerik:Table>
+        </telerik:Section>
+    </telerik:RadDocument>
+</telerik:RadRichTextBox>
+<!-- #endregion -->
+
+<!-- #region radrichtextbox-features-working-with-radrichtextbox_2 -->
+<ToggleButton Content="B" x:Name="BoldButton" Click="BoldButton_Click" />
+<!-- #endregion -->
+
+<!-- #region radrichtextbox-features-working-with-radrichtextbox_3 -->
+xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+<!-- #endregion -->
+
+</Grid>
+</UserControl>

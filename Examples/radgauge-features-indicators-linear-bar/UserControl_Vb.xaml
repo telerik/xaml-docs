@@ -1,0 +1,100 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radgauge-features-indicators-linear-bar_0 -->
+<telerik:LinearGauge x:Name="linearGauge"
+                        Width="100"
+                        Height="300">
+    <telerik:LinearScale x:Name="linearScale"
+                            Min="1"
+                            Max="12">
+        <telerik:IndicatorList>
+            <telerik:LinearBar Value="6" />
+        </telerik:IndicatorList>
+    </telerik:LinearScale>
+</telerik:LinearGauge>
+<!-- #endregion -->
+
+<!-- #region radgauge-features-indicators-linear-bar_1 -->
+<telerik:LinearGauge x:Name="linearGauge"
+                        Width="100"
+                        Height="300">
+    <telerik:LinearScale x:Name="linearScale"
+                            Min="0"
+                            Max="12"
+                            IsInteractive="True">
+        <telerik:LinearScale.Ranges>
+            <telerik:LinearRange Background="AliceBlue"
+                                    Min="0"
+                                    Max="4"
+                                    StartWidth="0.01"
+                                    EndWidth="0.03"
+                                    IndicatorBackground="AliceBlue" />
+            <telerik:LinearRange Background="LightBlue"
+                                    Min="4"
+                                    Max="8"
+                                    StartWidth="0.03"
+                                    EndWidth="0.05"
+                                    IndicatorBackground="LightBlue" />
+            <telerik:LinearRange Background="DeepSkyBlue"
+                                    Min="8"
+                                    Max="12"
+                                    StartWidth="0.05"
+                                    EndWidth="0.07"
+                                    IndicatorBackground="DeepSkyBlue" />
+        </telerik:LinearScale.Ranges>
+        <telerik:IndicatorList>
+            <telerik:LinearBar RangeColorMode="VerticalGradient"
+                                RangeColorGradientOrientation="Top"
+                                UseRangeColor="True" />
+        </telerik:IndicatorList>
+    </telerik:LinearScale>
+</telerik:LinearGauge>
+<!-- #endregion -->
+
+<!-- #region radgauge-features-indicators-linear-bar_2 -->
+<telerik:LinearGauge x:Name="linearGauge"
+                        Width="100"
+                        Height="300">
+    <telerik:LinearScale x:Name="linearScale"
+                            Min="0"
+                            Max="12"
+                            IsInteractive="True">
+        <telerik:LinearScale.Ranges>
+            <telerik:LinearRange Background="AliceBlue"
+                                    Min="0"
+                                    Max="4"
+                                    StartWidth="0.01"
+                                    EndWidth="0.03"
+                                    IndicatorBackground="AliceBlue" />
+            <telerik:LinearRange Background="LightBlue"
+                                    Min="4"
+                                    Max="8"
+                                    StartWidth="0.03"
+                                    EndWidth="0.05"
+                                    IndicatorBackground="LightBlue" />
+            <telerik:LinearRange Background="DeepSkyBlue"
+                                    Min="8"
+                                    Max="12"
+                                    StartWidth="0.05"
+                                    EndWidth="0.07"
+                                    IndicatorBackground="DeepSkyBlue" />
+        </telerik:LinearScale.Ranges>
+        <telerik:IndicatorList>
+            <telerik:LinearBar Value="10"
+                                RangeColorMode="ProportionalGradient"
+                                RangeColorSmoothing="1"
+                                UseRangeColor="True" />
+        </telerik:IndicatorList>
+    </telerik:LinearScale>
+</telerik:LinearGauge>
+<!-- #endregion -->
+</Grid>
+</UserControl>

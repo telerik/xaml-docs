@@ -1,0 +1,53 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radtransition-how-to-use-with-silverlight-navigation-framework_0 -->
+xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+<!-- #endregion -->
+
+<!-- #region radtransition-how-to-use-with-silverlight-navigation-framework_1 -->
+<UserControl.Resources>
+    <ControlTemplate x:Name="FrameTemplate"
+                        TargetType="navigation:Frame">
+    </ControlTemplate>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radtransition-how-to-use-with-silverlight-navigation-framework_2 -->
+<UserControl.Resources>
+    <ControlTemplate x:Name="FrameTemplate"
+                        TargetType="navigation:Frame">
+        <telerik:RadTransitionControl Content="{TemplateBinding Content}"
+                                        ContentTemplate="{TemplateBinding ContentTemplate}">
+        </telerik:RadTransitionControl>
+    </ControlTemplate>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radtransition-how-to-use-with-silverlight-navigation-framework_3 -->
+<UserControl.Resources>
+    <ControlTemplate x:Name="FrameTemplate"
+                        TargetType="navigation:Frame">
+        <telerik:RadTransitionControl Content="{TemplateBinding Content}"
+                                        ContentTemplate="{TemplateBinding ContentTemplate}">
+            <telerik:RadTransitionControl.Transition>
+                <telerikTransitions:MotionBlurredZoomTransition />
+            </telerik:RadTransitionControl.Transition>
+        </telerik:RadTransitionControl>
+    </ControlTemplate>
+</UserControl.Resources>
+<!-- #endregion -->
+
+<!-- #region radtransition-how-to-use-with-silverlight-navigation-framework_4 -->
+<navigation:Frame x:Name="MainFrame"
+                    Template="{StaticResource FrameTemplate}" />
+<!-- #endregion -->
+</Grid>
+</UserControl>

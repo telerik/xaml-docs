@@ -1,0 +1,41 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region radribbonview-resizing_0 -->
+<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title"
+        ApplicationButtonContent="File" ApplicationName="My Application">
+    <telerik:RadRibbonTab Header="Home">
+        <telerik:RadRibbonGroup Header="Clipboard">
+            <telerik:RadRibbonGroup.Variants>
+                <telerik:GroupVariant Variant="Small" Priority="1" />
+                <telerik:GroupVariant Variant="Collapsed" Priority="5" />
+            </telerik:RadRibbonGroup.Variants>
+        </telerik:RadRibbonGroup>
+        <telerik:RadRibbonGroup Header="Image">
+            <telerik:RadRibbonGroup.Variants>
+                <telerik:GroupVariant Variant="Small" Priority="2" />
+                <telerik:GroupVariant Variant="Collapsed" Priority="6" />
+            </telerik:RadRibbonGroup.Variants>
+        </telerik:RadRibbonGroup>
+        <telerik:RadRibbonGroup Header="Tools">
+            <telerik:RadRibbonGroup.Variants>
+                <telerik:GroupVariant Variant="Collapsed" Priority="8" />
+            </telerik:RadRibbonGroup.Variants>
+        </telerik:RadRibbonGroup>
+        <telerik:RadRibbonGroup Header="Brushes">
+            <telerik:RadRibbonGroup.Variants>
+                <telerik:GroupVariant Variant="Medium" Priority="2" />
+            </telerik:RadRibbonGroup.Variants>
+        </telerik:RadRibbonGroup>
+    </telerik:RadRibbonTab>
+</telerik:RadRibbonView>
+<!-- #endregion -->
+</Grid>
+</UserControl>

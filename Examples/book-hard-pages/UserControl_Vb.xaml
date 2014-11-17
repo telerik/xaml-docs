@@ -1,0 +1,73 @@
+<UserControl x:Class="Default_Vb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            
+    
+<!-- #region book-hard-pages_0 -->
+<UserControl x:Class="BookHardPaper.MainPage"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+ <UserControl.Resources>
+  <DataTemplate x:Key="LeftPageTemplate">
+   <Grid>
+    <Image Source="page1.jpg" Stretch="None" />
+   </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="RightPageTemplate">
+   <Grid>
+    <Image Source="page2.jpg" Stretch="None" />
+   </Grid>
+  </DataTemplate>
+ </UserControl.Resources>
+ <Grid x:Name="LayoutRoot" Background="White">
+  <telerik:RadBook x:Name="book1" Width="544" Height="444"
+    LeftPageTemplate="{StaticResource LeftPageTemplate}"
+    RightPageTemplate="{StaticResource RightPageTemplate}" FirstPagePosition="Right"
+    HardPages="All" />
+ </Grid>
+</UserControl>
+<!-- #endregion -->
+
+<!-- #region book-hard-pages_1 -->
+<telerik:RadBook x:Name="book1" Width="544" Height="444" FirstPagePosition="Right"
+    RightPageIndex="0" HardPages="Custom">
+ <telerik:RadBookItem IsHardPaper="True">
+  <Grid>
+   <Image Source="page1.jpg" Stretch="None" />
+  </Grid>
+ </telerik:RadBookItem>
+ <telerik:RadBookItem IsHardPaper="True">
+  <Grid>
+   <Image Source="page2.jpg" Stretch="None" />
+  </Grid>
+ </telerik:RadBookItem>
+ <telerik:RadBookItem>
+  <Grid>
+   <Image Source="page1.jpg" Stretch="None" />
+  </Grid>
+ </telerik:RadBookItem>
+ <telerik:RadBookItem>
+  <Grid>
+   <Image Source="page2.jpg" Stretch="None" />
+  </Grid>
+ </telerik:RadBookItem>
+ <telerik:RadBookItem IsHardPaper="True">
+  <Grid>
+   <Image Source="page1.jpg" Stretch="None" />
+  </Grid>
+ </telerik:RadBookItem>
+ <telerik:RadBookItem IsHardPaper="True">
+  <Grid>
+   <Image Source="page2.jpg" Stretch="None" />
+  </Grid>
+ </telerik:RadBookItem>
+</telerik:RadBook>
+<!-- #endregion -->
+</Grid>
+</UserControl>

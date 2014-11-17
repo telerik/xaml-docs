@@ -1,0 +1,55 @@
+﻿<!--#region raddiagram-howto-radcontrols-in-shape-0 -->
+<Grid x:Name="LayoutRoot" Background="White">
+	<Grid.RowDefinitions>
+		<RowDefinition Height="Auto" />
+		<RowDefinition Height="*" />
+	</Grid.RowDefinitions>
+	<TextBlock HorizontalAlignment="Center" Text="Hosting Telerik controls in shapes" />
+	<telerik:RadDiagram x:Name="diagram" 
+						Grid.Row="1" 
+						Grid.RowSpan="1" 
+						ActiveTool="PointerTool" 
+						Background="White"
+						IsBackgroundSurfaceVisible="false" 
+						Zoom="1">
+	</telerik:RadDiagram>
+</Grid>
+<!--#endregion -->
+<!--#region raddiagram-howto-radcontrols-in-shape-1 -->
+<Grid x:Name="LayoutRoot" Background="White">
+	<Grid.RowDefinitions>
+		<RowDefinition Height="Auto" />
+		<RowDefinition Height="*" />
+	</Grid.RowDefinitions>
+	<TextBlock HorizontalAlignment="Center" Text="Hosting Telerik controls in shapes" />
+	<telerik:RadDiagram x:Name="diagram" 
+						Grid.Row="1" 
+						Grid.RowSpan="1" 
+						ActiveTool="PointerTool" 
+						Background="White"
+						IsBackgroundSurfaceVisible="false" 
+						Zoom="1">
+		<telerik:RadDiagramShape x:Name="gridShape" 
+								Position="600,50" 
+								UseGlidingConnector="true"
+								HorizontalContentAlignment="Stretch" 
+								VerticalContentAlignment="Stretch">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="30" />
+					<RowDefinition />
+				</Grid.RowDefinitions>
+				<TextBlock Text="Dragging area" HorizontalAlignment="Center" FontSize="16" />
+				<telerik:RadGridView ItemsSource="{Binding}" 
+									Grid.Row="1" 
+									Background="LightBlue"
+									BorderBrush="SteelBlue" />
+			</Grid>
+		</telerik:RadDiagramShape>
+	</telerik:RadDiagram>
+</Grid>
+<!--#endregion -->
+<!--#region raddiagram-howto-radcontrols-in-shape-2 -->
+<!--#endregion -->
+<!--#region raddiagram-howto-radcontrols-in-shape-3 -->
+<!--#endregion -->

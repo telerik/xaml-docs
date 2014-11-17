@@ -15,6 +15,7 @@ position: 0
 
 
 ## 
+![cloudupload overview](images/cloudupload_wpf_46_text.png)
 
 The __RadCouldUpload__ control can be used in scenarios when our customers need to allow their users to upload files to a cloud storage provider. This control can be configured to upload files to different storage providers.
         
@@ -28,7 +29,7 @@ This is a list with short description of the top-of-the-line features of Telerik
             
 
 * __Automatic Upload__ - automatically upload the files right after the latter have been selected in the “Open” dialog.
-            ![cloudupload overview](images/cloudupload_overview.png)
+![cloudupload overview](images/cloudupload_overview.png)
 
 In order to use the __RadCloudUpload__ in your projects you have to add references to the following assemblies:
         

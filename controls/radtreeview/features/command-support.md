@@ -78,7 +78,7 @@ In this section we will demonstrate how you can trigger custom logic implemented
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-features-command-support_1}}
 		Public Class ItemModel
@@ -184,7 +184,7 @@ Furthermore, we can create a __ViewModel__ class which will fill and expose an _
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-features-command-support_3}}
 		Public Class ViewModel

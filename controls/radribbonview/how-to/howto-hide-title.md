@@ -34,7 +34,7 @@ In order to do this, you need to set the __RadRibbonView__'s __TitleBarVisibilit
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radribbonview-howto-hide-title_2}}
 	xRibbonView.TitleBarVisibility = Visibility.Collapsed;

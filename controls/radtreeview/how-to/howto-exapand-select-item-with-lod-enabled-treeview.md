@@ -177,7 +177,7 @@ The actual loading on demand of the business items can be implemented in the get
 	}
 {{endregion}}
 
-#### __VB__
+#### __VB.NET__
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_17}}
 	Public ReadOnly Property Children() As List(Of DataItem)
 	        Get
@@ -245,7 +245,7 @@ The next step is to implement the custom logic for creating the path in order to
 	}
 {{endregion}}
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_19}}
 	

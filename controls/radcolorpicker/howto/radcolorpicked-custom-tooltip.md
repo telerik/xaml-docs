@@ -50,7 +50,7 @@ For the purpose of this article we will use:
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-custom-tooltip_2}}
 		Public Class ColorModel
@@ -99,7 +99,7 @@ For the purpose of this article we will use:
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-custom-tooltip_4}}
 		Public Class MainViewModel

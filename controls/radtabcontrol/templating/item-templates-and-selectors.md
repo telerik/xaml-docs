@@ -272,7 +272,7 @@ Override the __SelectTemplate__ method and implement your custom logic in it. Th
 #### __C#__
     DataTemplate dataTemplate = ( DataTemplate )Application.Current.Resources[ "DataTemplateKey" ];
 		  
-#### __VB__
+#### __VB.NET__
     Dim dataTemplate As DataTemplate = DirectCast(Application.Current.Resources("DataTemplateKey"), DataTemplate)
 		  
 

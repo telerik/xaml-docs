@@ -27,7 +27,7 @@ With our __Q3 2014__ official release we introduced the RadPathButton control. I
 #### __C#__
 	RadPathButton pathButton = new RadPathButton() { PathGeometry = new EllipseGeometry() { RadiusX = 10, RadiusY = 10 } };
 
-#### __VB__
+#### __VB.NET__
 
 	Dim pathButton As New RadPathButton() With {
         Key .PathGeometry = New EllipseGeometry() With {
@@ -49,7 +49,7 @@ To achieve the same results through code you can use our __GeometryParser__
 	RadPathButton pathButton = new RadPathButton() { PathGeometry = GeometryParser.GetGeometry("M3,7L9,7L9,4L13,8L9,12L9,9L3,9z") };
 
 
-#### __VB__
+#### __VB.NET__
 	Dim pathButton As New RadPathButton() With {
         Key .PathGeometry = GeometryParser.GetGeometry("M3,7L9,7L9,4L13,8L9,12L9,9L3,9z")
     }
@@ -66,7 +66,7 @@ The __RadPathButton__ exposes the __ContentPlacement__ property. It is of type _
 	RadPathButton pathButton = new RadPathButton() { Content = "Path button", ContentPlacement = Dock.Right };
 
 
-#### __VB__
+#### __VB.NET__
 	Dim pathButton As New RadPathButton() With {
         Key .Content = "Path button",
         Key .ContentPlacement = Dock.Right

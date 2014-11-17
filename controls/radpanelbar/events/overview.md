@@ -226,7 +226,7 @@ __RadPanelBar__exposes the following events regarding the drag and drop:
 
 
 
-#### __VB__
+#### __VB.NET__
     Private Sub RadPanelBar_PreviewDragEnded(sender As Object, e As RadPanelBarDragEndedEventArgs)
     e.Handled = True
     End Sub

@@ -142,7 +142,7 @@ Next step is to set up your business model. First you can create an __ItemViewMo
 	}
 {{endregion}}
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtileview-howto-change-headers-background_6}}
 	Public Class ItemViewModel
@@ -254,7 +254,7 @@ After your __ItemViewModel__ is ready, you can define a collection of items. Cre
 	}
 {{endregion}}
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtileview-howto-change-headers-background_8}}
 	Public Class MainViewModel
@@ -306,7 +306,7 @@ Finally, you can set the __MainViewModel__ as __DataContext__ of your applicatio
 	this.DataContext = new MainViewModel();
 {{endregion}}
 
-#### __VB__
+#### __VB.NET__
 
 {{region radtileview-howto-change-headers-background_10}}
 	Me.DataContext = New MainViewModel()

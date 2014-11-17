@@ -78,7 +78,7 @@ The greatest advantage of this control is that users can visualize a custom path
     }
 
 
-#### __VB__
+#### __VB.NET__
 
 	Private Sub pathButton_Click(sender As Object, e As RoutedEventArgs)
     'implement your logic here.'

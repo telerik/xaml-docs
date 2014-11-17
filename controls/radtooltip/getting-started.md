@@ -67,7 +67,7 @@ The same configuration can be achieved from code like this:
 
 
 
-#### __VB__
+#### __VB.NET__
     RadToolTipService.SetToolTipContent(Me.ellipse, "RadToolTip enables you to specify&#x0a;tooltips on various UI controls.")
     RadToolTipService.SetPlacement(Me.ellipse, System.Windows.Controls.Primitives.PlacementMode.Center)
 

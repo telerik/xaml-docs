@@ -29,7 +29,7 @@ It contains the following parts:
 
 * __outerGrid__ - is of type __Grid__ and represents the layout root for the template.
 						
-* __[Border]__ - hosts the __RadBreadcrumb__control elements and is of type __Border__.
+* __[Border]__ - hosts the __RadBreadcrumb__ control elements and is of type __Border__.
 							
 * __image__ - is of type __Image__ and represents the __BreadcrumbItems Image__.
 

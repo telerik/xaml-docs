@@ -12,7 +12,7 @@ position: 2
 
 
 
-This section defines the terms and concepts used in the scope of __RadButtons__that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadButton__ controls.
+This section defines the terms and concepts used in the scope of __RadButtons__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadButton__ controls.
 
 ## RadButton
 

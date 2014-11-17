@@ -48,7 +48,7 @@ Here is an example of a __RadButton__ that executes some logic when it is clicke
 
 {{region radbuttons-getting-started_2}}
 	Private Sub radButton_Click(sender As Object, e As RoutedEventArgs)
-	 'implement your logic here.
+	 'implement your logic here.'
 	End Sub
 	{{endregion}}
 
@@ -138,7 +138,7 @@ Here is an example of several __RadRadioButtons__ placed in two groups.
 
 ## RadSplitButton
 
-Here is an example of a __RadSplitButton__ definition, where a __ListBox__ control is used to display a list of items in the __RadSplitButton____DropDownContent__. The __Content__ of the __RadSplitButton__ is bound to the __SelectedItem__ of the __ListBox__.
+Here is an example of a __RadSplitButton__ definition, where a __ListBox__ control is used to display a list of items in the __RadSplitButton__ __DropDownContent__. The __Content__ of the __RadSplitButton__ is bound to the __SelectedItem__ of the __ListBox__.
 
 #### __XAML__
 

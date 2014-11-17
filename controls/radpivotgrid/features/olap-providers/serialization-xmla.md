@@ -10,20 +10,13 @@ position: 3
 
 # Serialize XmlaDataProvider
 
-
-
-In this article we will show you how to serialize and deserialize XmlaDataProvider and all of its settings.
-        You can use this feature to save the current state of the provider and load it next time the application is started.
-      
+In this article we will show you how to serialize and deserialize XmlaDataProvider and all of its settings. You can use this feature to save the current state of the provider and load it next time the application is started.      
 
 ## Serialize XmlaDataProvider with DataContractSerializer
 
-We've added the DataContract attribute to all classes used by XmlaDataProvider. So you can easily serialize it by using DataContractSerializer. Below you will find out
-          how to create a serializer and use it with __RadPivotGrid__.
-        
+We've added the DataContract attribute to all classes used by XmlaDataProvider. So you can easily serialize it by using DataContractSerializer. Below you will find out how to create a serializer and use it with __RadPivotGrid__.        
 
-So lets create a simple class that we'll use to save (when serializing) and load (when deserializing) DataProviderSettings. You have to add the DataContract attribute to the new class and DataMember attribute for its properties.
-        
+So lets create a simple class that we'll use to save (when serializing) and load (when deserializing) DataProviderSettings. You have to add the DataContract attribute to the new class and DataMember attribute for its properties.        
 
 #### __C#__
 
@@ -49,9 +42,7 @@ So lets create a simple class that we'll use to save (when serializing) and load
 	    [DataMember]
 	    public PivotAxis AggregatesPosition { get; set; }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -76,14 +67,9 @@ So lets create a simple class that we'll use to save (when serializing) and load
 		<DataMember> _
 		Public Property AggregatesPosition() As PivotAxis
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-The next step is to implement the serializer. When serializing the provider, you have to create an instance of *DataProviderSettings* class and set all of the properties.
-          After that you can serialize the instance to a file or a stream. When using DataContractSerializer you have to give a collection of KnownTypes to the serializer. That's why we've created a new __XmlaPivotSerializationHelper__
-          class which has a static member - KnownTypes. It consits of all types you'll need in order to serialize XmlaDataProvider. Here's an example how to implement your own serializer:
-        
+The next step is to implement the serializer. When serializing the provider, you have to create an instance of *DataProviderSettings* class and set all of the properties. After that you can serialize the instance to a file or a stream. When using DataContractSerializer you have to give a collection of KnownTypes to the serializer. That's why we've created a new __XmlaPivotSerializationHelper__ class which has a static member - KnownTypes. It consits of all types you'll need in order to serialize XmlaDataProvider. Here's an example how to implement your own serializer:        
 
 #### __C#__
 
@@ -164,8 +150,7 @@ The next step is to implement the serializer. When serializing the provider, you
 	            dataProvider.Settings.AggregatesLevel = (result as DataProviderSettings).AggregatesLevel;
 	        }
 	    }
-	}
-	
+	}	
 	
 	public class XmlaProviderSerializer : DataProviderSerializer
 	{
@@ -177,9 +162,7 @@ The next step is to implement the serializer. When serializing the provider, you
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -243,8 +226,7 @@ The next step is to implement the serializer. When serializing the provider, you
 				dataProvider.Settings.AggregatesLevel = (TryCast(result, DataProviderSettings)).AggregatesLevel
 			End If
 		End Sub
-	End Class
-	
+	End Class	
 	
 	Public Class XmlaProviderSerializer
 		Inherits DataProviderSerializer
@@ -255,12 +237,9 @@ The next step is to implement the serializer. When serializing the provider, you
 			End Get
 		End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-So the last step is to serialize the provider and deserialize it:
-        
+So the last step is to serialize the provider and deserialize it:        
 
 #### __C#__
 
@@ -274,25 +253,21 @@ So the last step is to serialize the provider and deserialize it:
 	//deserialization
 	XmlaProviderSerializer provider = new XmlaProviderSerializer();
 	provider.Deserialize(this.pivot.DataProvider, this.lastSerializedProvider);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radpivotgrid-features-serialization-xmla_3}}
 	Dim lastSerializadProvider As String
 	
-	'serializiation
+	'serializiation'
 	Dim provider As New XmlaProviderSerializer()
 	Me.lastSerializedProvider = provider.Serialize(Me.pivot.DataProvider)
 	
-	'deserialization
+	'deserialization'
 	Dim provider As New XmlaProviderSerializer()
 	provider.Deserialize(Me.pivot.DataProvider, Me.lastSerializedProvider)
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

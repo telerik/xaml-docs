@@ -174,6 +174,15 @@ navigation:
     controls/radradialmenu/commands:
         title: Commands
         position: 5
+    controls/radpivotgrid/features/localdatasourceprovider:
+        title: LocalDataSourceProvider
+    controls/radpivotgrid/features/olap-providers:
+        title: OLAP Providers
+    controls/radpivotgrid/features/queryabledataprovider:
+        title: QueryableDataProvider
+    controls/radpivotgrid/radpivotfieldlist:
+        title: RadPivotFieldList
+        position: 3
 ## X3 Controls End
 
 ## X2 Controls Start

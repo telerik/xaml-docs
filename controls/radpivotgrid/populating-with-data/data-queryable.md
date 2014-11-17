@@ -11,25 +11,15 @@ site_name: WPF
 
 # Using QueryableDataProvider
 
-
-
-__QueryableDataProvider__ is one of the data source providers that can be used with __RadPivotGrid__ and __RadPivotFieldList__.
-        __QueryableDataProvider__ provides an easy way to use data from database with __RadPivotGrid__. In fact any collection that implements *IQueryable* interface
-        can be used as a source of __QueryableDataProvider__.
-      
+__QueryableDataProvider__ is one of the data source providers that can be used with __RadPivotGrid__ and __RadPivotFieldList__. __QueryableDataProvider__ provides an easy way to use data from database with __RadPivotGrid__. In fact any collection that implements *IQueryable* interface can be used as a source of __QueryableDataProvider__.      
 
 ## Defining QueryableDataProvider
 
-You can define the __QueryableDataProvider__	as a *StaticResource* in your XAML if it will be used in more than one controls (for example if you have __RadPivotGrid__
-          and __RadPivotFieldList__ controls in your application) or define it directly for any of the controls you are planning to use:
-        
+You can define the __QueryableDataProvider__ as a *StaticResource* in your XAML if it will be used in more than one controls (for example if you have __RadPivotGrid__ and __RadPivotFieldList__ controls in your application) or define it directly for any of the controls you are planning to use:        
 
->importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the
-            __QueryableDataProvider__ in your XAML.
-          
+>importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __QueryableDataProvider__ in your XAML.          
 
-* Defined as a *StaticResource* and used in __RadPivotGrid__ and __RadPivotFieldList__:
-            
+* Defined as a *StaticResource* and used in __RadPivotGrid__ and __RadPivotFieldList__:            
 
 #### __XAML__
 
@@ -47,12 +37,9 @@ You can define the __QueryableDataProvider__	as a *StaticResource* in your XAML 
 	    <pivot:RadPivotGrid Name="radPivotGrid" DataProvider="{StaticResource QueryableDataProvider}">
 	    <pivot:RadPivotFieldList Name="radPivotFieldList" Grid.Column="1"  DataProvider="{StaticResource QueryableDataProvider}"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-
-
-You can also create an object of type __QueryableDataProvider__ in the background and after that to use it for your controls:
-        
+You can also create an object of type __QueryableDataProvider__ in the background and after that to use it for your controls:        
 
 #### __C#__
 
@@ -60,9 +47,7 @@ You can also create an object of type __QueryableDataProvider__ in the backgroun
 	QueryableDataProvider queryableDataProvider = new QueryableDataProvider();
 	this.radPivotGrid1.DataProvider = queryableDataProvider;
 	this.radPivotFieldList1.DataProvider = queryableDataProvider;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -70,15 +55,11 @@ You can also create an object of type __QueryableDataProvider__ in the backgroun
 	Dim queryableDataProvider As New QueryableDataProvider()
 	Me.radPivotGrid1.DataProvider = queryableDataProvider
 	Me.radPivotFieldList1.DataProvider = queryableDataProvider
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding Data to QueryableDataProvider
 
-The __QueryableDataProvider__ has *Source* property and it is mandatory to set it if you want to display any data.
-          *Source* can be any instance of a class that implements IQueryable interface.
-        
+The __QueryableDataProvider__ has *Source* property and it is mandatory to set it if you want to display any data. *Source* can be any instance of a class that implements IQueryable interface.        
 
 #### __C#__
 
@@ -87,9 +68,7 @@ The __QueryableDataProvider__ has *Source* property and it is mandatory to set i
 	queryableDataProvider.Source = MyCollection;
 	this.radPivotGrid1.DataProvider = queryableDataProvider;
 	this.radPivotFieldList1.DataProvider = queryableDataProvider;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -98,19 +77,15 @@ The __QueryableDataProvider__ has *Source* property and it is mandatory to set i
 	queryableDataProvider.Source = MyCollection
 	Me.radPivotGrid1.DataProvider = queryableDataProvider
 	Me.radPivotFieldList1.DataProvider = queryableDataProvider
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding Group Descriptions Collections
 
-The __QueryableDataProvider__ is using four different collections for the data that it holds:
-        
+The __QueryableDataProvider__ is using four different collections for the data that it holds:        
 
-* __RowGroupDescription__ - the data added to this description will be shown as rows headers in __RadPivotGrid__ and __RadPivotFieldList__.
-              The properties can be defined as QueryablePropertyGroupDescription, QueryableDateTimeGroupDescription, QueryableDoubleGroupDescription or you can create custom implementation of QueryableGroupDescription class.
-            Here's how to define the __RowGroupDescriptions__ in your application:
-            
+* __RowGroupDescription__ - the data added to this description will be shown as rows headers in __RadPivotGrid__ and __RadPivotFieldList__. The properties can be defined as QueryablePropertyGroupDescription, QueryableDateTimeGroupDescription, QueryableDoubleGroupDescription or you can create custom implementation of QueryableGroupDescription class. 
+
+Here's how to define the __RowGroupDescriptions__ in your application:            
 
 #### __XAML__
 
@@ -120,9 +95,7 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	    <pivot:QueryableDoubleGroupDescription PropertyName="Freight" />
 	    <pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" />
 	</pivot:QueryableDataProvider.RowGroupDescriptions>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -142,9 +115,7 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	    queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription);
 	    queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription);
 	};
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -163,14 +134,11 @@ The __QueryableDataProvider__ is using four different collections for the data t
 		queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription)
 		queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription)
 	End Using
-	{{endregion}}
+{{endregion}}
 
+* __ColumnGroupDescription__ - the data added to this description will be shown as columns headers in __RadPivotGrid__ and __RadPivotFieldList__. The properties can be defined as QueryablePropertyGroupDescription, QueryableDateTimeGroupDescription, QueryableDoubleGroupDescription or you can create custom implementation of QueryableGroupDescription class. 
 
-
-* __ColumnGroupDescription__ - the data added to this description will be shown as columns headers in __RadPivotGrid__ and __RadPivotFieldList__.
-              The properties can be defined as QueryablePropertyGroupDescription, QueryableDateTimeGroupDescription, QueryableDoubleGroupDescription or you can create custom implementation of QueryableGroupDescription class.
-            Here's how to define the __ColumnGroupDescriptions__ in your application:
-            
+Here's how to define the __ColumnGroupDescriptions__ in your application:            
 
 #### __XAML__
 
@@ -178,9 +146,7 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	<pivot:QueryableDataProvider.ColumnGroupDescriptions>
 	    <pivot:QueryableDoubleGroupDescription PropertyName="Freight"/>
 	</pivot:QueryableDataProvider.ColumnGroupDescriptions>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -188,9 +154,7 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	QueryableDoubleGroupDescription doubleGroupDescription = new QueryableDoubleGroupDescription();
 	doubleGroupDescription.PropertyName = "Freight";
 	queryableDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -198,14 +162,11 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	Dim doubleGroupDescription As New DoubleGroupDescription()
 	doubleGroupDescription.PropertyName = "Freight"
 	queryableDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription)
-	{{endregion}}
+{{endregion}}
 
+* __AggregateDescriptions__ - the data added to this description will be aggregated and included in __RadPivotGrid__ as Cells. The properties can be defined as QueryablePropertyAggregateDescription or you can create custom implementation of QueryableAggregateDescription class.
 
-
-* __AggregateDescriptions__ - the data added to this description will be aggregated and included in __RadPivotGrid__ as Cells.
-              The properties can be defined as QueryablePropertyAggregateDescription or you can create custom implementation of QueryableAggregateDescription class.
-            Here's how to define the __AggregateDescriptions__ in your application:
-            
+Here's how to define the __AggregateDescriptions__ in your application:            
 
 #### __XAML__
 
@@ -214,9 +175,7 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	    <pivot:QueryablePropertyAggregateDescription AggregateFunction="Count" StringFormat="C" PropertyName="Freight"/>
 	    <pivot:QueryablePropertyAggregateDescription PropertyName="ShipVia"/>
 	</pivot:QueryableDataProvider.AggregateDescriptions>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -235,9 +194,7 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	    queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription);
 	    queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription);
 	};
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -254,13 +211,9 @@ The __QueryableDataProvider__ is using four different collections for the data t
 		queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription)
 		queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription)
 	End Using
-	{{endregion}}
+{{endregion}}
 
-
-
-* __FilterDescriptions__ - the data added to this description will be filtered and after that included in __RadPivotGrid__.
-              The properties can be defined as QueryablePropertyFilterDescription or you can create custom implementation of QueryableFilterDescription class.
-            
+* __FilterDescriptions__ - the data added to this description will be filtered and after that included in __RadPivotGrid__. The properties can be defined as QueryablePropertyFilterDescription or you can create custom implementation of QueryableFilterDescription class.            
 
 #### __XAML__
 
@@ -272,9 +225,7 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	        </pivot:QueryablePropertyFilterDescription.Condition>
 	    </pivot:QueryablePropertyFilterDescription>
 	</pivot:QueryableDataProvider.FilterDescriptions>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -287,9 +238,7 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	freightFilterDescription.Condition = intervalCondition;
 	
 	queryableDataProvider.FilterDescriptions.Add(freightFilterDescription);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -302,36 +251,24 @@ The __QueryableDataProvider__ is using four different collections for the data t
 	freightFilterDescription.Condition = intervalCondition
 	
 	queryableDataProvider.FilterDescriptions.Add(freightFilterDescription)
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding Property Descriptions
 
 All property description classes are inheriting the abstract class DescriptionBase. That's why all of them have the following properties:
 
-* __PropertyName__ - this is the most important property. It must be set to the property of the data that will be represent with this property description.
-            
+* __PropertyName__ - this is the most important property. It must be set to the property of the data that will be represent with this property description.            
 
-* __CustomName__ - sets the name that will be shown instead of the property name in __RadPivotGrid__ and __RadPivotFieldList__.
-            
+* __CustomName__ - sets the name that will be shown instead of the property name in __RadPivotGrid__ and __RadPivotFieldList__.            
 
 Here is a list of the property descriptions that you can use:
 
-* __QueryablePropertyGroupDescription__ - available for RowGroupDescriptions and ColumnGroupDescriptions.
-            
+* __QueryablePropertyGroupDescription__ - available for RowGroupDescriptions and ColumnGroupDescriptions.            
 
-* __QueryableDoubleGroupDescription__ - available for RowGroupDescriptions and ColumnGroupDescriptions. Used when the data is of numeric type. One of the imporant properties is *Step*
-              - it is used to define the size of the generated groups.
-            
+* __QueryableDoubleGroupDescription__ - available for RowGroupDescriptions and ColumnGroupDescriptions. Used when the data is of numeric type. One of the imporant properties is *Step* - it is used to define the size of the generated groups.           
 
-* __QueryableDateTimeGroupDescription__ - available for RowGroupDescriptions and ColumnGroupDescriptions. Used when the data is of type DateTime. Very useful is *Step* property
-              where you can set if the grouping should be on year, quarter, month or day.
-            
+* __QueryableDateTimeGroupDescription__ - available for RowGroupDescriptions and ColumnGroupDescriptions. Used when the data is of type DateTime. Very useful is *Step* property where you can set if the grouping should be on year, quarter, month or day.            
 
-* __QueryablePropertyFilterDescription__ - available for FilterDescriptions only. The important property here is *Condition* as the filtering is done based on it.
-              You can use four conditions: QueryableComparisonCondition, QueryableIntervalCondition, QueryableSetCondition, QueryableTextCondition, QueryableItemsFilterCondition.
-            
+* __QueryablePropertyFilterDescription__ - available for FilterDescriptions only. The important property here is *Condition* as the filtering is done based on it. You can use four conditions: QueryableComparisonCondition, QueryableIntervalCondition, QueryableSetCondition, QueryableTextCondition, QueryableItemsFilterCondition.            
 
-* __QueryablePropertyAggregateDescription__ - available for AggregateDescriptions only. You have to define the *AggregateFunction* that will be used. You have five predefined functions - Average, Count, Min, Max and Sum.
-            
+* __QueryablePropertyAggregateDescription__ - available for AggregateDescriptions only. You have to define the *AggregateFunction* that will be used. You have five predefined functions - Average, Count, Min, Max and Sum.            

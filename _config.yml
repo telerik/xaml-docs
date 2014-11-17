@@ -77,7 +77,8 @@ controls/radtoolbar/overview/structure.md,
 controls/radtoolbar/overview/declaration.md,
 controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigation-framework.md,
 controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
-controls/radtreeview/how-to/howto-bind-treeview.md,]
+controls/radtreeview/how-to/howto-bind-treeview.md,
+controls/radcoverflow]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -99,6 +100,8 @@ navigation:
         title: RadCalendar
     controls/radcontextmenu:
         title: RadContextMenu
+    controls/radcoverflow:
+        title: RadCoverFlow
     controls/raddocking:
         title: RadDocking
     controls/radganttview:
@@ -174,6 +177,24 @@ navigation:
     controls/radradialmenu/commands:
         title: Commands
         position: 5
+    controls/raddocking/features/panes:
+        title: Panes
+        position: 0
+    controls/raddocking/theming:
+        title: Theming
+        position: 95
+    controls/radganttview/features/columns:
+        title: Columns
+        position: 0	
+    controls/radganttview/features/drag-and-drop:
+        title: Drag and Drop
+        position: 3
+    controls/radganttview/features/items:
+        title: Items
+        position: 1			
+    controls/radganttview/features/timeruler:
+        title: TimeRuler
+        position: 2	
 ## X3 Controls End
 
 ## X2 Controls Start
@@ -320,6 +341,34 @@ navigation:
     controls/radimageeditor/how-to:
         title: How To
         position: 4
+    "*radspreadsheet":
+        title: RadSpreadsheet
+    controls/radspreadsheet/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2		
+    controls/radspreadsheet/howto:
+        title: How To
+        position: 6		
+    "*radspellchecker":
+        title: RadSpellChecker		
+    controls/radspellchecker/styles-and-templates:
+        title: Styles and Templates
+        position: 4	
+    "*radziplibrary":
+        title: RadZipLibrary
+    "*radpdfviewer":
+        title: RadPdfViewer
+    controls/radpdfviewer/document-model:
+        title: Document Model
+        position: 6
+    controls/radpdfviewer/ui:
+        title: UI
+        position: 7
+    controls/radpdfviewer/customization-and-extensibility:
+        title: Customization and Extensibility
+        position: 8
+    controls/radpdfviewer/document-model/text:
+        title: Text
 ## Centaur Controls End
 
 ## Common Start

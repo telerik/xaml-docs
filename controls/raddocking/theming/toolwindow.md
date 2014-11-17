@@ -10,10 +10,6 @@ position: 3
 
 # Theming the ToolWindow
 
-
-
-## 
-
 To modify the appearance of the ToolWindow you __have__ to create a custom theme and place a style that targets the __ToolWindow__ control in it. The topic assumes that you have already created {% if site.site_name == 'WPF' %}a theme with{% endif %}{% if site.site_name == 'WPF' %}{% endif %}a __ResourceDictionary__ that will host the styles and the resources for your custom theme. If not take a look at the overview section about [creating the theme](#CreatingTheme). The topic also assumes that you have created the style that will be used for the __ToolWindow__ control. To learn how to style it take a look at the [Styling the ToolWindow]({%slug raddocking-theming-toolwindow%}) topic.
 
 Copy the created style with all of the resources it uses and place it in the __ResourceDictionary__ that represents the theme for your __RadDocking__ control.
@@ -28,9 +24,7 @@ Copy the created style with all of the resources it uses and place it in the __R
 	        ...
 	    </Style>
 	</ResourceDictionary>
-	{{endregion}}
-
-
+{{endregion}}
 
 The next step is to declare the required namespaces in the resource dictionary.
 
@@ -42,7 +36,7 @@ The next step is to declare the required namespaces in the resource dictionary.
 	                    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	      ...
 	</ResourceDictionary>
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -54,7 +48,7 @@ Finally, in order to make the style default for all of the __ToolWindow__ contro
 	<Style TargetType="telerik:ToolWindow">
 	        ...
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -68,9 +62,7 @@ To apply the theme go to the UserControl that hosts your __RadDocking__ control 
 	    InitializeComponent();
 	    StyleManager.SetTheme( this.radDocking, new Theme( new Uri( "/RadDockingSample;component/Themes/RadDockingTheme.xaml", UriKind.Relative ) ) );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -79,7 +71,7 @@ To apply the theme go to the UserControl that hosts your __RadDocking__ control 
 	    InitializeComponent()
 	    StyleManager.SetTheme(Me.radDocking, New Theme(New Uri("/RadDockingSample;component/Themes/RadDockingTheme.xaml", UriKind.Relative)))
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'WPF' %}
 
@@ -92,7 +84,7 @@ Finally in order to make the style default for all of the __ToolWindow__controls
 	       TargetType="{x:Type telerik:ToolWindow}">
 	    ...
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'WPF' %}
 
@@ -100,11 +92,7 @@ To see how to apply the theme read [here](#ApplyingTheme).{% endif %}
 
 Here is a snapshot of a sample result.
 
-
-
-
-         
-      ![](images/RadDocking_ThemingToolWindow_01.png)
+![](images/RadDocking_ThemingToolWindow_01.png)
 
 # See Also
 

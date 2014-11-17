@@ -10,17 +10,13 @@ position: 2
 
 # Customizing the CellEditTemplate
 
-
-
 The __CellEditTemplate__ is the Template that is displayed when the cell is in edit mode. The edit mode is entered by double clicking a specific cell. It could easily be customized by setting it to any valid DataTemplate.
-      
 
 >Note that when the cell is in edit mode and is scrolled out of the visible range, the changes made to it will be applied to the task.
 
 ## 
 
 The next example will demonstrate how to customize the CellEditTemplate of the __Title__, __Start__ and __End__ columns so that those fields are editable.
-        
 
 The xaml of the GanttView should look like this:
 
@@ -54,15 +50,15 @@ The xaml of the GanttView should look like this:
 			</telerik:ColumnDefinition>
 		</telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __GanttView / CustomCellTemplates__.
 
+The next screenshots show the final result:
 
->tipYou can download a runnable project of the previous example from our online SDK repository
-                  [here](https://github.com/telerik/xaml-sdk), the example is listed as __GanttView / CustomCellTemplates__.
-              
+![radganttview-features-columns-edit-template-1](images/radganttview-features-columns-edit-template-1.png)
 
-The next screenshots show the final result:![radganttview-features-columns-edit-template-1](images/radganttview-features-columns-edit-template-1.png)![radganttview-features-columns-edit-template-2](images/radganttview-features-columns-edit-template-2.png)
+![radganttview-features-columns-edit-template-2](images/radganttview-features-columns-edit-template-2.png)
 
 # See Also
 

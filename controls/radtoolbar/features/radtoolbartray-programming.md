@@ -10,62 +10,28 @@ position: 3
 
 # ToolBarTray HowTo
 
-
-
 ## Object instantiation
 
 #### __XAML__
 
 {{region radtoolbartray-programming_1}}
-		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	    <telerik:RadToolBarTray />
-	{{endregion}}
-
-
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	<telerik:RadToolBarTray />
+{{endregion}}
 
 #### __C#__
 
 {{region radtoolbartray-programming_0}}
-	using Telerik.Windows.Controls;
-	
+	using Telerik.Windows.Controls;	
 	RadToolBarTray toolBarTray = new RadToolBarTray();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtoolbartray-programming_0}}
-		Imports Telerik.Windows.Controls
-	
-		Dim toolBarTray As New RadToolBarTray()
-	#End Region
-	
-	#Region "radtoolbartray-programming_2"
-		Imports Telerik.Windows.Controls
-	
-		Dim toolBarTray As New RadToolBarTray()
-		Dim toolBar As New RadToolBar()
-		Me.LayoutRoot.Children.Add(toolBarTray)
-		toolBarTray.Items.Add(toolBar)
-	#End Region
-	
-	#Region "radtoolbartray-programming_4"
-		Imports Telerik.Windows.Controls
-	
-		Dim toolBarTray As New RadToolBarTray()
-		Dim toolBar1 As New RadToolBar()
-		Me.LayoutRoot.Children.Add(toolBarTray)
-		toolBarTray.Items.Add(toolBar1)
-		toolBarTray.IsLocked = False
-		RadToolBarTray.SetIsLocked(toolBarTray, True)
-		If RadToolBarTray.GetIsLocked(toolBar1) Then
-		End If
-	#End Region
-	
-	End Class
-
-
+	Imports Telerik.Windows.Controls	
+	Dim toolBarTray As New RadToolBarTray()
+{{endregion}}	
 
 ## Add Items
 
@@ -81,9 +47,7 @@ position: 3
 	            </Button>
 	        </telerik:RadToolBar>
 	    </telerik:RadToolBarTray>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -94,47 +58,24 @@ position: 3
 	RadToolBar toolBar = new RadToolBar();
 	this.LayoutRoot.Children.Add(toolBarTray);
 	toolBarTray.Items.Add(toolBar);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtoolbartray-programming_2}}
-		Imports Telerik.Windows.Controls
-	
-		Dim toolBarTray As New RadToolBarTray()
-		Dim toolBar As New RadToolBar()
-		Me.LayoutRoot.Children.Add(toolBarTray)
-		toolBarTray.Items.Add(toolBar)
-	#End Region
-	
-	#Region "radtoolbartray-programming_4"
-		Imports Telerik.Windows.Controls
-	
-		Dim toolBarTray As New RadToolBarTray()
-		Dim toolBar1 As New RadToolBar()
-		Me.LayoutRoot.Children.Add(toolBarTray)
-		toolBarTray.Items.Add(toolBar1)
-		toolBarTray.IsLocked = False
-		RadToolBarTray.SetIsLocked(toolBarTray, True)
-		If RadToolBarTray.GetIsLocked(toolBar1) Then
-		End If
-	#End Region
-	
-	End Class
+	Imports Telerik.Windows.Controls
 
+	Dim toolBarTray As New RadToolBarTray()
+	Dim toolBar As New RadToolBar()
+	Me.LayoutRoot.Children.Add(toolBarTray)
+	toolBarTray.Items.Add(toolBar)
+{{endregion}}
 
+## The IsLocked Attached Property			
 
-## 
-				The IsLocked Attached Property
-			
+The default value of the __IsLocked__ attached property is __False__. It gets or sets a value that indicates whether the __RadToolBars__ can be moved inside a __RadToolBarTray__.				
 
-The default value of the __IsLocked__ attached property is __False__. It gets or sets a value that indicates whether the __RadToolBars__ can be moved inside a __RadToolBarTray__.
-				
-
->There are corresponding methods __GetIsLocked__ and __SetIsLocked__ to access the __IsLocked__ property for the specified element.
-					
+> There are corresponding methods __GetIsLocked__ and __SetIsLocked__ to access the __IsLocked__ property for the specified element.					
 
 #### __XAML__
 
@@ -143,9 +84,7 @@ The default value of the __IsLocked__ attached property is __False__. It gets or
 	    <telerik:RadToolBarTray IsLocked="False">
 	        <telerik:RadToolBar telerik:RadToolBarTray.IsLocked="True" />
 	    </telerik:RadToolBarTray>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -161,25 +100,19 @@ The default value of the __IsLocked__ attached property is __False__. It gets or
 	if (RadToolBarTray.GetIsLocked(toolBar1))
 	{
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtoolbartray-programming_4}}
-		Imports Telerik.Windows.Controls
-	
-		Dim toolBarTray As New RadToolBarTray()
-		Dim toolBar1 As New RadToolBar()
-		Me.LayoutRoot.Children.Add(toolBarTray)
-		toolBarTray.Items.Add(toolBar1)
-		toolBarTray.IsLocked = False
-		RadToolBarTray.SetIsLocked(toolBarTray, True)
-		If RadToolBarTray.GetIsLocked(toolBar1) Then
-		End If
-	#End Region
-	
-	End Class
+	Imports Telerik.Windows.Controls
 
-
+	Dim toolBarTray As New RadToolBarTray()
+	Dim toolBar1 As New RadToolBar()
+	Me.LayoutRoot.Children.Add(toolBarTray)
+	toolBarTray.Items.Add(toolBar1)
+	toolBarTray.IsLocked = False
+	RadToolBarTray.SetIsLocked(toolBarTray, True)
+	If RadToolBarTray.GetIsLocked(toolBar1) Then
+	End If
+{{endregion}}

@@ -10,8 +10,6 @@ position: 2
 
 # SDK Examples
 
-
-
 The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/master/) provides additional demos for most of the Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls. The examples demonstrate many specific user case scenarios, that might be really helpful. In this article you can find the complete list of all SDK examples for __RadAutoCompleteBox__.
 
 ## List of all RadAutoCompleteBox SDK examples:{% if site.site_name == 'WPF' %}
@@ -20,13 +18,11 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 * __Custom drop down item template__ - This example demonstrates how to create a custom DropDownItemTemplate for the RadAutoCompleteBox control in Silverlight and WPF.
 
-* __Custom HighlightBehavior__ - 
-This example demonstrates how to implement a custom HighlightBehavior which is always highlighting the last of the matching items unless there is an exact match.
+* __Custom HighlightBehavior__ - This example demonstrates how to implement a custom HighlightBehavior which is always highlighting the last of the matching items unless there is an exact match.
 
 * __Highlight matching items text__ - This example demonstrates how to achieve highlighting of the matched items text in the RadAutoCompleteBox control's drop down portion.
 
-* __MinimumPopulateDelay example__ - 
-This example demonstrates how to implement minimum delay before the built-in filtering of the control is triggered. For better user experience a RadBusyIndicator is added in order to give feedback that the delay is triggered and is running.
+* __MinimumPopulateDelay example__ - This example demonstrates how to implement minimum delay before the built-in filtering of the control is triggered. For better user experience a RadBusyIndicator is added in order to give feedback that the delay is triggered and is running.
 When deleting the inputted text by pressing the 'Backspace' keyboard key the DropDown of the control is immediately closed and the populating (filtering) is terminated. In those scenarios if a populate (filtering) with the current SearchText should be triggered all that is needed is for the 'Enter' keyboard key to be pressed.
 
 * __No match filtering behavior__ - This example demonstrates how to customize the FilteringBehavior of the cotnrol for Silverlight and WPF. With the custom filtering behavior if the control has the focus or there isn't a matched item when typing in the control  the drop down portion of the control will be populated with the entire ItemsSource collection. Try typing in for example  'London', the drop down will be populated no matter that there isn't a matched item.
@@ -43,13 +39,11 @@ When deleting the inputted text by pressing the 'Backspace' keyboard key the Dro
 
 * __Custom drop down item template__ - This example demonstrates how to create a custom DropDownItemTemplate for the RadAutoCompleteBox control in Silverlight and WPF.
 
-* __Custom HighlightBehavior__ - 
-This example demonstrates how to implement a custom HighlightBehavior which is always highlighting the last of the matching items unless there is an exact match.
+* __Custom HighlightBehavior__ - This example demonstrates how to implement a custom HighlightBehavior which is always highlighting the last of the matching items unless there is an exact match.
 
 * __Highlight matching items text__ - This example demonstrates how to achieve highlighting of the matched items text in the RadAutoCompleteBox control's drop down portion.
 
-* __MinimumPopulateDelay example__ - 
-This example demonstrates how to implement minimum delay before the built-in filtering of the control is triggered. For better user experience a RadBusyIndicator is added in order to give feedback that the delay is triggered and is running.
+* __MinimumPopulateDelay example__ - This example demonstrates how to implement minimum delay before the built-in filtering of the control is triggered. For better user experience a RadBusyIndicator is added in order to give feedback that the delay is triggered and is running.
 When deleting the inputted text by pressing the 'Backspace' keyboard key the DropDown of the control is immediately closed and the populating (filtering) is terminated. In those scenarios if a populate (filtering) with the current SearchText should be triggered all that is needed is for the 'Enter' keyboard key to be pressed.
 
 * __No match filtering behavior__ - This example demonstrates how to customize the FilteringBehavior of the cotnrol for Silverlight and WPF. With the custom filtering behavior if the control has the focus or there isn't a matched item when typing in the control  the drop down portion of the control will be populated with the entire ItemsSource collection. Try typing in for example  'London', the drop down will be populated no matter that there isn't a matched item.

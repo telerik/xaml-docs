@@ -10,10 +10,6 @@ position: 1
 
 # Required Parts
 
-
-
-## 
-
 #### __C#__
 
 {{region radtoolbar-template-parts_0}}
@@ -23,20 +19,11 @@ position: 1
 	[TemplatePart(Name = "PART_OverflowPanel", Type = typeof(StackPanel))]
 	[TemplatePart(Name = "PART_Overflow", Type = typeof(Popup))]
 	public partial class RadToolBar : ItemsControl
-	{{endregion}}
-
-
+{{endregion}}
 
 The default control template of the __RadToolBar__ consists the following parts:
 
-
 * __PART_DropdownButton__: this element is responsible to open/close the __Overflow__ area.
-
 * __PART_StripPanel__: this element serves as a place holder for all visible items.
-
-* __PART_OverflowPanel__: this element serves as a place holder for all items not fitted in 
-            __Strip__ panel.
-
-* __PART_Overflow__: this element holds the __Overflow__ panel and is responsible for 
-            all the pop-up management.
-
+* __PART_OverflowPanel__: this element serves as a place holder for all items not fitted in __Strip__ panel.
+* __PART_Overflow__: this element holds the __Overflow__ panel and is responsible for all the pop-up management.

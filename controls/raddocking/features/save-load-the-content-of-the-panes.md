@@ -10,15 +10,11 @@ position: 11
 
 # Save/Load the Content of the Panes
 
-
-
-## 
-
 This tutorial will walk you through the common tasks of saving the content of the panes.
 
 __RadDocking__ cannot save the __Content__ of the panes itself. It only remembers the properties of the panes, the groups and the split containers and the way they are changed.
 
-Tha Save/Load layout mechanism matches the __SerializationTag__of the saved pane with the __SerializationTag__of the pane that is already created. It works for the static panes, because when your application loads, the XAML parser creates correctly all the static panes and their contents. The dynamic panes are created by the __RadDocking__ control and it doesn't know what content to put in them.
+Tha Save/Load layout mechanism matches the __SerializationTag__ of the saved pane with the __SerializationTag__ of the pane that is already created. It works for the static panes, because when your application loads, the XAML parser creates correctly all the static panes and their contents. The dynamic panes are created by the __RadDocking__ control and it doesn't know what content to put in them.
 
 For the purpose of this tutorial the following __RadDocking__ declaration will be used:
 
@@ -36,17 +32,11 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
+![](images/RadDocking_Features_SaveLoadPaneContent_010.png)
 
-
-
-
-
-         
-      ![](images/RadDocking_Features_SaveLoadPaneContent_010.png)
-
-You can save the panes' content by handling the __ElementLoaded__event of the __RadDocking__ control and setting the content of the newly created pane yourself.
+You can save the panes' content by handling the __ElementLoaded__ event of the __RadDocking__ control and setting the content of the newly created pane yourself.
 
 Attach to the __ElementLoaded__ event of the __RadDocking__ element.
 
@@ -54,9 +44,7 @@ Attach to the __ElementLoaded__ event of the __RadDocking__ element.
 
 {{region raddocking-save-load-the-content-of-the-panes_1}}
 	<telerik:RadDocking x:Name="radDocking" ElementLoaded="radDocking_ElementLoaded">
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -69,9 +57,7 @@ Attach to the __ElementLoaded__ event of the __RadDocking__ element.
 	        pane.Content = this.GetPaneContent( e.AffectedElementSerializationTag );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -82,12 +68,10 @@ Attach to the __ElementLoaded__ event of the __RadDocking__ element.
 	            pane.Content = Me.GetPaneContent(e.AffectedElementSerializationTag)
 	        End If
 	    End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >importantThe __GetPaneContent()__ method needs to be implemented with the specific user custom logic.
-              
+
 
 # See Also
 

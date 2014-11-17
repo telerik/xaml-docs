@@ -61,7 +61,7 @@ Telerik UI for Silverlight features the following controls:
 
 * [ContextMenu]({%slug contextmenu-overview1%})
 
-* [CoverFlow](A05FA553-15D2-4326-904D-541FF74AA414)
+* [CoverFlow]({%slug coverflow-overview%})
 
 * [DataBar]({%slug raddatabar-overview%})
 

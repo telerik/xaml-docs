@@ -10,8 +10,6 @@ position: 0
 
 # Overview
 
-
-
 In order to display items in __RadAutoCompleteBox__, you have to populate the control with some data. You can achieve this by using the ItemsSource property.
 
 >You cannot add items declaratively in RadAutoCompleteBox control.

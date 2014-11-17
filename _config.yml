@@ -302,12 +302,16 @@ navigation:
         title: RadGauge
     controls/radheatmap:
         title: RadHeatMap
+    controls/radhtmlplaceholder:
+        title: RadHtmlPlaceHolder
     controls/radlegend:
         title: RadLegend
     controls/radmap:
         title: RadMap
     controls/radmaskedinput:
         title: RadMaskedInput
+    controls/radmediaplayer:
+        title: RadMediaPlayer
     controls/radoutlookbar:
         title: RadOutlookbar
     controls/radpanelbar:
@@ -339,7 +343,9 @@ navigation:
     controls/radtreemap:
         title: RadTreeMap
     controls/radtreeview:
-        title: RadTreeView		
+        title: RadTreeView
+    controls/radupload:
+        title: RadUpload
 ## X2 Controls End
 
 ## Centaur Controls Start

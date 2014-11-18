@@ -33,7 +33,8 @@ __Example 1:__ RadPropertyGrid with manually defined PropertyDefinitions
 
 #### __XAML__
 
-	{{region radpropertygrid-scrolling_0}}
+{{region radpropertygrid-scrolling_0}}
+
 	<Grid>
 	  <Grid.RowDefinitions>
 	    <RowDefinition Height="*"/>
@@ -55,11 +56,11 @@ __Example 1:__ RadPropertyGrid with manually defined PropertyDefinitions
 	      Margin="5"
 	      HorizontalAlignment="Left"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
-As to assigning the __Item of RadPropertyGrid__, please check the __Binding RadPropertyGrid to an item__ section in [Getting Started with RadPropertyGrid](07F77841-3BC1-4AEA-A46A-DECB93D1C724#Binding_RadPropertyGrid) help article.
+As to assigning the __Item of RadPropertyGrid__, please check the __Binding RadPropertyGrid to an item__ section in [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) help article.
         
 
 You can see the result after starting the program on __Figure 1__:
@@ -75,7 +76,8 @@ __Example 2:__ Scrolling to a particular PropertyDefinition and selecting it
 
 #### __C#__
 
-	{{region radpropertygrid-scrolling_1}}
+{{region radpropertygrid-scrolling_1}}
+
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
 	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x=>x.DisplayName == "IsMarried").FirstOrDefault();
@@ -84,20 +86,21 @@ __Example 2:__ Scrolling to a particular PropertyDefinition and selecting it
 	        PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, new Action<PropertyGridField>(f => f.IsSelected = true));
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB__
 
-	{{region radpropertygrid-scrolling_1}}
+{{region radpropertygrid-scrolling_1}}
+
 	    Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
 	        Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
 	        If propertyDefinition IsNot Nothing Then
 	            PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, New Action(Of PropertyGridField)(Function(f) InlineAssignHelper(f.IsSelected, True)))
 	        End If
 	    End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -124,7 +127,8 @@ __Example 3:__ Scrolling to a particular PropertyDefinition and selecting it
 
 #### __C#__
 
-	{{region radpropertygrid-scrolling_1}}
+{{region radpropertygrid-scrolling_1}}
+
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
 	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x=>x.DisplayName == "IsMarried").FirstOrDefault();
@@ -133,20 +137,21 @@ __Example 3:__ Scrolling to a particular PropertyDefinition and selecting it
 	        PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, new Action<PropertyGridField>(f => f.IsSelected = true));
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB__
 
-	{{region radpropertygrid-scrolling_1}}
+{{region radpropertygrid-scrolling_1}}
+
 	    Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
 	        Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
 	        If propertyDefinition IsNot Nothing Then
 	            PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, New Action(Of PropertyGridField)(Function(f) InlineAssignHelper(f.IsSelected, True)))
 	        End If
 	    End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

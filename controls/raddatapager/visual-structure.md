@@ -19,7 +19,7 @@ This section defines the terms and concepts used in the scope of the __RadDataPa
 
 * __Previous Page Button__ - this button decrements the Pager's current page index and brings it on the previous page of data.
 
-* __Num____eric Page Buttons__ - this set of buttons lists the available pages and allows the user to go directly to the desired one. The toggled button marks the current page.
+* __Numeric Page Buttons__ - this set of buttons lists the available pages and allows the user to go directly to the desired one. The toggled button marks the current page.
 
 * __Next Page Button__ - this button increments the Pager's current page index and brings it on the next page of data.
 

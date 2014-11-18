@@ -195,7 +195,16 @@ navigation:
         position: 1			
     controls/radganttview/features/timeruler:
         title: TimeRuler
-        position: 2	
+        position: 2
+    controls/radpivotgrid/features/localdatasourceprovider:
+        title: LocalDataSourceProvider
+    controls/radpivotgrid/features/olap-providers:
+        title: OLAP Providers
+    controls/radpivotgrid/features/queryabledataprovider:
+        title: QueryableDataProvider
+    controls/radpivotgrid/radpivotfieldlist:
+        title: RadPivotFieldList
+        position: 3
 ## X3 Controls End
 
 ## X2 Controls Start

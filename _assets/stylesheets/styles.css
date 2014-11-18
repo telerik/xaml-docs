@@ -43,7 +43,8 @@ a img {
     text-decoration: none;
 }
 
-#logo-bar {
+#logo-bar,
+#logo-bar-sl {
     font-size: 14px;
 	float: left;
     margin-bottom: 1.717em;
@@ -51,7 +52,8 @@ a img {
     margin-top: 1.617em;
 }
 
-#logo-bar a {
+#logo-bar a,
+#logo-bar-sl a {
 	display: inline-block;
 	background: url('../images/telerik_logo_wpf.png') 0 center no-repeat;
 	height: 33px;
@@ -63,11 +65,8 @@ a img {
 	display: none;
 }
 
-#logo-bar-sl {
-    font-size: 14px;
-	height: 80px;
+#logo-bar-sl a{
 	background: url('../images/telerik_logo_sl.png') 0 center no-repeat;
-	width:215px;
 }
 
 #logo-bar-sl span {
@@ -638,18 +637,21 @@ a.footer-links:hover {
 	padding-left: 36px;
 }
 
-#logo-bar ul {
+#logo-bar ul,
+#logo-bar-sl ul {
     list-style: none;
     display: inline-block;
     margin: 0;
     padding: 0;
 }
 
-#logo-bar li {
+#logo-bar li,
+#logo-bar-sl li  {
     display: inline-block;
     vertical-align: middle;
 }
-#logo-bar li::before {
+#logo-bar li::before,
+#logo-bar-sl li::before {
     content: "";
     display: inline-block;
     height: 40px;
@@ -840,7 +842,8 @@ header, nav, section, article, aside, footer {
         display: inline-block;
     }
 
-    #logo-bar {
+    #logo-bar,
+	#logo-bar-sl {
        float: none;
        display: inline-block;
        margin-left: 1em;
@@ -857,7 +860,7 @@ header, nav, section, article, aside, footer {
     #page-search > div {
         padding: 0 3.83em 0 0;    
     }
-
+	
     .toggle-nav span { 
         position: absolute; 
     }
@@ -892,8 +895,7 @@ header, nav, section, article, aside, footer {
         text-align: right;
         left: auto;
         cursor: pointer;
-    }
-	
+    }	
 
     footer {
         display: none;

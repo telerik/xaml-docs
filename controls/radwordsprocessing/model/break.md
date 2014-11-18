@@ -5,7 +5,7 @@ description: Break
 slug: radwordsprocessing-model-break
 tags: break
 published: True
-position: 11
+position: 12
 ---
 
 # Break
@@ -35,9 +35,9 @@ __Example 1__ shows how to create a __Break__ element and add it to a [Paragraph
 #### __[C#] Example 1: Create Break__
 
 {{region radwordsprocessing-model-break_0}}
-	            Break br = new Break(document);
-	            paragraph.Inlines.Add(br);
-	{{endregion}}
+    Break br = new Break(document);
+    paragraph.Inlines.Add(br);
+{{endregion}}
 
 
 
@@ -50,8 +50,8 @@ __Example 2__ shows how you can change the type of the break created in __Exampl
 #### __[C#] Example 2: Change BreakType__
 
 {{region radwordsprocessing-model-break_1}}
-	            br.BreakType = BreakType.PageBreak;
-	{{endregion}}
+    br.BreakType = BreakType.PageBreak;
+{{endregion}}
 
 
 
@@ -64,9 +64,9 @@ __Example 3__ shows how you can insert a break through __RadFlowDocumentEditor__
 #### __[C#] Example 3: Insert break using RadFlowDocumentEditor__
 
 {{region radwordsprocessing-model-break_2}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	            Break br = editor.InsertBreak(BreakType.PageBreak);
-	{{endregion}}
+    RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+    Break br = editor.InsertBreak(BreakType.PageBreak);
+{{endregion}}
 
 
 
@@ -76,22 +76,16 @@ The __Break__ element exposes several properties that allow you to customize it.
         
 
 * __BreakType__: Specifies the type of the break.
-            
 
 * __TextWrappingRestartLocation__: Specifies the text wrapping restart location. This property affects the restart location only if __BreakType__ is set to __LineBreak__, otherwise it is ignored. The possible values are:
-            
 
-* __NextLine__: Specifies that the line break advances the text to the next line in the document.
-                
+    * __NextLine__: Specifies that the line break advances the text to the next line in the document.
 
-* __NextFullLine__: Specifies that the line break advances the text to the next line in the document which is not interrupted by any floating objects.
-                
+    * __NextFullLine__: Specifies that the line break advances the text to the next line in the document which is not interrupted by any floating objects.
 
-* __NextTextRegionUnblockedOnLeft__: Specifies that the line break advances the text to the next line in the document which is not interrupted by any floating objects on the left.
-                
+    * __NextTextRegionUnblockedOnLeft__: Specifies that the line break advances the text to the next line in the document which is not interrupted by any floating objects on the left.
 
-* __NextTextRegionUnblockedOnRight__: Specifies that the line break advances the text to the next line in the document which is not interrupted by any floating objects on the right.
-                
+    * __NextTextRegionUnblockedOnRight__: Specifies that the line break advances the text to the next line in the document which is not interrupted by any floating objects on the right.
 
 __Example 4__ shows how you can insert a Break through __RadFlowDocumentEditor__ and modify it later.
         
@@ -99,12 +93,12 @@ __Example 4__ shows how you can insert a Break through __RadFlowDocumentEditor__
 #### __[C#] Example 4: Customize a break__
 
 {{region radwordsprocessing-model-break_3}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	
-	            Break br = editor.InsertBreak(BreakType.PageBreak);
-	            br.BreakType = BreakType.LineBreak;
-	            br.TextWrappingRestartLocation = TextWrappingRestartLocation.NextFullLine;
-	{{endregion}}
+    RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+
+    Break br = editor.InsertBreak(BreakType.PageBreak);
+    br.BreakType = BreakType.LineBreak;
+    br.TextWrappingRestartLocation = TextWrappingRestartLocation.NextFullLine;
+{{endregion}}
 
 
 

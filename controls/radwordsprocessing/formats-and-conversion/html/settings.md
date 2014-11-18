@@ -5,7 +5,7 @@ description: Settings
 slug: radwordsprocessing-formats-and-conversion-html-settings
 tags: settings
 published: True
-position: 3
+position: 4
 ---
 
 # Settings
@@ -50,26 +50,24 @@ The event can be used to override the process of loading of external resources â
 __Example 1__ shows how you can create and apply specific import settings.
             
 
-#### __[C#] Example 1: Create HtmlImportSettings __
-
+#### __[C#] Example 1: Create HtmlImportSettings__
 {{region radwordsprocessing-formats-and-conversion-html-settings_0}}
-	            HtmlFormatProvider provider = new HtmlFormatProvider();
-	            HtmlImportSettings importSettings = new HtmlImportSettings();
-	
-	            importSettings.GenericFonts.Serif = new ThemableFontFamily("Baskerville");
-	
-	            byte[] data = this.GetImageData();
-	            provider.ImportSettings.LoadFromUri += (s, e) =>
-	            {
-	                if (e.Uri == "test.jpg")
-	                {
-	                    e.SetData(data);
-	                }
-	            };
-	
-	            provider.ImportSettings = importSettings;
-	
-	{{endregion}}
+    HtmlFormatProvider provider = new HtmlFormatProvider();
+    HtmlImportSettings importSettings = new HtmlImportSettings();
+
+    importSettings.GenericFonts.Serif = new ThemableFontFamily("Baskerville");
+
+    byte[] data = this.GetImageData();
+    provider.ImportSettings.LoadFromUri += (s, e) =>
+    {
+        if (e.Uri == "test.jpg")
+        {
+            e.SetData(data);
+        }
+    };
+
+    provider.ImportSettings = importSettings;
+{{endregion}}
 
 
 
@@ -77,6 +75,11 @@ __Example 1__ shows how you can create and apply specific import settings.
 
 The export settings are represented by the __HtmlExportSettings__ class. The settings which you can specify are as follows:
         
+
+### BordersMinimalThickness
+
+Specifies the minimal exported thickness of the borders of tables and table cells. This could be useful as some browsers cannot properly visualize thin borders (below 1px or similar). The default value is 0, equivalent to exporting all borders with their actual thickness.
+            
 
 ### DocumentExportLevel
 
@@ -94,7 +97,7 @@ Specifies the export level of the document using the __DocumentExportLevel__ enu
 Specifies whether the exported document should be indented (formatted with spaces). The default value is __false__, as this ensures minimum size as opposed to human-readability.
             
 
-### ImageExportMode
+### ImagesExportMode
 
 This property is used to control how images are exported. The available options are as external file or as embedded images.
             
@@ -176,24 +179,25 @@ The event is only raised when the __StylesExportMode__ property is set to __Exte
 __Example 2__ demonstrates how you can create export settings.
             
 
-#### __[C#] Example 2: Create HtmlExportSettings __
+#### __[C#] Example 2: Create HtmlExportSettings__
 
 {{region radwordsprocessing-formats-and-conversion-html-settings_1}}
-	            HtmlFormatProvider provider = new HtmlFormatProvider();
-	            HtmlExportSettings exportSettings = new HtmlExportSettings();
-	
-	            byte[] data = null;
-	            exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
-	            exportSettings.IndentDocument = true;
-	            exportSettings.ImageExporting += (s, e) =>
-	            {
-	                e.Source = "test.jpg";
-	                data = e.Image.ImageSource.Data;
-	                e.Handled = true;
-	            };
-	
-	            provider.ExportSettings = exportSettings;
-	{{endregion}}
+    HtmlFormatProvider provider = new HtmlFormatProvider();
+    HtmlExportSettings exportSettings = new HtmlExportSettings();
+
+    byte[] data = null;
+    exportSettings.BordersMinimalThickness = 1;
+    exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
+    exportSettings.IndentDocument = true;
+    exportSettings.ImageExporting += (s, e) =>
+    {
+        e.Source = "test.jpg";
+        data = e.Image.ImageSource.Data;
+        e.Handled = true;
+    };
+
+    provider.ExportSettings = exportSettings;
+{{endregion}}
 
 
 

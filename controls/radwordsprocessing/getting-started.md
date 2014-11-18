@@ -37,8 +37,7 @@ Here is a list of assemblies that contain the __RadWordsProcessing__ functionali
 
 ## Creating RadFlowDocument from Code
 
-Here is how to create a [RadFlowDocument]({%slug radwordsprocessing-model-radflowdocument%}) and insert some text content with the help of
-          [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}).
+Here is how to create a [RadFlowDocument]({%slug radwordsprocessing-model-radflowdocument%}) and insert some text content with the help of [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}).
         
 
 #### __C#__
@@ -47,7 +46,7 @@ Here is how to create a [RadFlowDocument]({%slug radwordsprocessing-model-radflo
 	            RadFlowDocument document = new RadFlowDocument();
 	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
 	            editor.InsertText("Hello world!");
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -62,8 +61,7 @@ You need to add using directive to the following namespaces:
 
 ## Exporting RadFlowDocument to Docx
 
-Exporting the document to Docx file can be achieved with the [DocxFormatProvider]({%slug radwordsprocessing-formats-and-conversion-docx-docxformatprovider%}). Here
-          is how to create a provider instance and save a document with it:
+Exporting the document to Docx file can be achieved with the [DocxFormatProvider]({%slug radwordsprocessing-formats-and-conversion-docx-docxformatprovider%}). Here is how to create a provider instance and save a document with it:
         
 
 #### __C#__
@@ -74,7 +72,7 @@ Exporting the document to Docx file can be achieved with the [DocxFormatProvider
 	                DocxFormatProvider provider = new DocxFormatProvider();
 	                provider.Export(document, output);
 	            }
-	{{endregion}}
+{{endregion}}
 
 
 

@@ -10,50 +10,29 @@ position: 2
 
 # Export
 
-
-
-__RadPivotGrid__ offers you great export capabilities. __RadPivotGrid__ has GenerateExport method, which you can use to export the data to different formats. In this article we'll show you
-        how to export __RadPivotGrid__ to the following formats: xlsx (Microsoft Excel), docx (Microsoft Word), pdf and HTML. 
-      
+__RadPivotGrid__ offers you great export capabilities. __RadPivotGrid__ has GenerateExport method, which you can use to export the data to different formats. In this article we'll show you how to export __RadPivotGrid__ to the following formats: xlsx (Microsoft Excel), docx (Microsoft Word), pdf and HTML.       
 
 ## Common Export Explanation
 
-__RadPivotGrid__ has *GenerateExport* method. It is of type *PivotExportModel* and is used to generate the data that will be exported.
-          No matter which output format you have chosen, you will have to call the GenerateExport method. The *PivotExportModel* holds Row and Column count and information about different properties
-          of each cell.
-        
+__RadPivotGrid__ has *GenerateExport* method. It is of type *PivotExportModel* and is used to generate the data that will be exported. No matter which output format you have chosen, you will have to call the GenerateExport method. The *PivotExportModel* holds Row and Column count and information about different properties of each cell.        
 
-__RadPivotGrid__ will be exported with all rows and columns expanded, no matter if you have collapsed some of them. If you want to export to docx, pdf or HTML format, you will have to use __RadRichTextBox__ and set
-          its Document property. More information is available in the article below.
-        
+__RadPivotGrid__ will be exported with all rows and columns expanded, no matter if you have collapsed some of them. If you want to export to docx, pdf or HTML format, you will have to use __RadRichTextBox__ and set its Document property. More information is available in the article below.        
 
->importantIf you want to use export to specific format, you will have to add additional assemblies to your application. In the article below you will find more information which assemblies you need for particular export type.
-          
+>importantIf you want to use export to specific format, you will have to add additional assemblies to your application. In the article below you will find more information which assemblies you need for particular export type.          
 
->To export __RadPivotGrid__ with all colors and fonts applied, you have to set the QuickStyle property. It is set to default value when __RadPivotGrid__ is loaded, so if you have not set it, you must show the pivot at least once before exporting it.
-          
+>To export __RadPivotGrid__ with all colors and fonts applied, you have to set the QuickStyle property. It is set to default value when __RadPivotGrid__ is loaded, so if you have not set it, you must show the pivot at least once before exporting it.          
 
 ## Export To Excel
 
 >In order to use Export to xlsx (Excel) format, you will have to add reference to the following assemblies:
-          
+>	* __Telerik.Windows.Documents.Spreadsheet__
+>	* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml__
 
-* __Telerik.Windows.Documents.Spreadsheet__
+In order to export __RadPivotGrid__ to xlsx format (Excel file), you have to use __XlsxFormatProvider__ from *Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx* namespace. The __XlsxFormatProvider__ has *Export* method, which has two arguments - first one is a Workbook that has to be exported and the second one is the output stream. In our case we'll create a simple Workbook (instance of *Telerik.Windows.Documents.Spreadsheet.Model.Workbook*) with a single Worksheet (instance of *Telerik.Windows.Documents.Spreadsheet.Model.Workbook*) in it.        
 
-* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml__
+Our first task is to get needed information from __RadPivotGrid__ by using Export method. After that we'll create a new Workbook and new Stylesheet. By using the information from the Export method, we'll set the cells in the stylesheet and we'll set the FontSize, FontFamily, Fill, Indent, Value, Borders, etc. The final step is to use the __XlsxFormatProvider__ and its Export method, which will help us to create the xlsx file.        
 
-In order to export __RadPivotGrid__ to xlsx format (Excel file), you have to use __XlsxFormatProvider__ from*Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx* namespace. The __XlsxFormatProvider__
-          has *Export* method, which has two arguments - first one is a Workbook that has to be exported and the second one is the output stream. In our case we'll create a simple Workbook (instance of *Telerik.Windows.Documents.Spreadsheet.Model.Workbook*) with
-          a single Worksheet (instance of *Telerik.Windows.Documents.Spreadsheet.Model.Workbook*) in it.
-        
-
-Our first task is to get needed information from __RadPivotGrid__ by using Export method. After that we'll create a new Workbook and new Stylesheet. By using the information from the Export method, we'll set the cells in the stylesheet and we'll set the FontSize, FontFamily, Fill, Indent, Value, Borders, etc.
-          The final step is to use the __XlsxFormatProvider__ and its Export method, which will help us to create the xlsx file.
-        
-
->You can use the method below and call it on a click of a button for example. By using it, __RadPivotGrid__ will be exported with the same fonts and colors as it is in your application.
-            You can remove the properties, which you do not want to export (for example fill, indent or alignment).
-          
+>You can use the method below and call it on a click of a button for example. By using it, __RadPivotGrid__ will be exported with the same fonts and colors as it is in your application. You can remove the properties, which you do not want to export (for example fill, indent or alignment).         
 
 #### __C#__
 
@@ -228,9 +207,7 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 	
 	    return null;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -375,369 +352,17 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 	
 		Return Nothing
 	End Function
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_2"
-	Private Function GenerateRadDocument() As RadDocument
-		Dim export = pivot.GenerateExport()
-		Dim rowCount As Integer = export.RowCount
-		Dim columnCount As Integer = export.ColumnCount
-	
-		Dim document As New RadDocument()
-		document.SectionDefaultPageMargin = New Telerik.Windows.Documents.Layout.Padding(10)
-		document.LayoutMode = DocumentLayoutMode.Paged
-		document.SectionDefaultPageOrientation = PageOrientation.Landscape
-		document.Style.SpanProperties.FontFamily = pivot.FontFamily
-		document.Style.SpanProperties.FontSize = pivot.FontSize
-		document.Style.ParagraphProperties.SpacingAfter = 0
-	
-		Dim section = New Telerik.Windows.Documents.Model.Section()
-		document.Sections.Add(section)
-		section.Blocks.Add(New Paragraph())
-	
-		Dim table = New Table(rowCount, columnCount)
-		section.Blocks.Add(table)
-	
-		Dim tableRows = table.Rows.ToArray()
-		For Each cellInfo In export.Cells
-			Dim rowStartIndex As Integer = cellInfo.Row
-			Dim rowEndIndex As Integer = rowStartIndex + cellInfo.RowSpan - 1
-			Dim columnStartIndex As Integer = cellInfo.Column
-			Dim columnEndIndex As Integer = columnStartIndex + cellInfo.ColumnSpan - 1
-	
-			Dim value = cellInfo.Value
-			Dim text = Convert.ToString(value)
-			If Not String.IsNullOrWhiteSpace(text) Then
-				Dim cells = tableRows(rowStartIndex).Cells.ToArray()
-				Dim cell = cells(columnStartIndex)
-				Dim paragraph As New Paragraph()
-				cell.Blocks.Add(paragraph)
-				Dim span = New Span(text)
-				paragraph.Inlines.Add(span)
-				paragraph.TextAlignment = GetTextAlignment(cellInfo.TextAlignment)
-	
-				If cellInfo.FontWeight.HasValue Then
-					span.FontWeight = cellInfo.FontWeight.Value
-				End If
-	
-				Dim foreColor As Color
-				If GetColor(cellInfo.Foreground, foreColor) Then
-					span.ForeColor = foreColor
-				End If
-	
-				cell.VerticalAlignment = GetVerticalAlignment(cellInfo.VerticalAlignment)
-				paragraph.LeftIndent = cellInfo.Indent * 20
-			End If
-	
-			Dim borderThickness = cellInfo.BorderThickness
-			Dim borderBrush = cellInfo.BorderBrush
-			Dim background = cellInfo.Background
-	
-			Dim backColor As Color
-			Dim hasBackground As Boolean = GetColor(cellInfo.Background, backColor)
-	
-			If cellInfo.RowSpan > 1 AndAlso cellInfo.ColumnSpan > 1 Then
-				For k As Integer = rowStartIndex To rowEndIndex
-					Dim cells = tableRows(k).Cells.ToArray()
-					For j As Integer = columnStartIndex To columnEndIndex
-						Dim cell = cells(j)
-						If hasBackground Then
-							cell.Background = backColor
-						End If
-	
-						cell.Borders = GetCellBorders(borderThickness, borderBrush, cell.Borders, k, rowStartIndex, rowEndIndex, j, columnStartIndex, columnEndIndex, hasBackground)
-					Next j
-	
-				Next k
-			ElseIf cellInfo.RowSpan > 1 Then
-				For j As Integer = rowStartIndex To rowEndIndex
-					' TODO: check when ColumnSpan > 1;
-					Dim cell = tableRows(j).Cells.ToArray()(columnStartIndex)
-	
-					Dim position As Position = If(j = rowStartIndex, Position.First, (If(j = rowEndIndex, Position.Last, Position.Middle)))
-	
-					cell.Borders = GetCellBorders(borderThickness, borderBrush, position, cell.Borders, True, cellInfo.Background IsNot Nothing)
-					If hasBackground Then
-						cell.Background = backColor
-					End If
-				Next j
-			ElseIf cellInfo.ColumnSpan > 1 Then
-				Dim cells = tableRows(rowStartIndex).Cells.ToArray()
-				For j As Integer = columnStartIndex To columnEndIndex
-					' TODO: check when RowSpan > 1;
-					Dim cell = cells(j)
-	
-					Dim position As Position = If(j = columnStartIndex, Position.First, (If(j = columnEndIndex, Position.Last, Position.Middle)))
-					If hasBackground Then
-						cell.Background = backColor
-					End If
-	
-					cell.Borders = GetCellBorders(borderThickness, borderBrush, position, cell.Borders, False, hasBackground)
-				Next j
-			End If
-		Next cellInfo
-	
-		Return document
-	End Function
-	
-	Private Enum Position
-		First
-		Middle
-		Last
-	End Enum
-	
-	Private Function GetColor(ByVal brush As Brush, ByRef color As Color) As Boolean
-		Dim solidBrush As SolidColorBrush = TryCast(brush, SolidColorBrush)
-		If solidBrush IsNot Nothing Then
-			color = solidBrush.Color
-			Return True
-		End If
-	
-		color = Colors.White
-		Return False
-	End Function
-	
-	Private Function GetCellBorders(ByVal borderThickness? As Thickness, ByVal borderBrush As Brush, ByVal cellBorders As TableCellBorders, ByVal rowIndex As Integer, ByVal rowStartIndex As Integer, ByVal rowEndIndex As Integer, ByVal columnIndex As Integer, ByVal columnStartIndex As Integer, ByVal columnEndIndex As Integer, ByVal hasBackground As Boolean) As TableCellBorders
-		Dim borderBrushColor As Color
-		GetColor(borderBrush, borderBrushColor)
-	
-		If Not borderThickness.HasValue Then
-			Return New TableCellBorders(New Telerik.Windows.Documents.Model.Border(BorderStyle.None))
-		End If
-	
-		Dim thickness = borderThickness.Value
-		Dim topBorder As Telerik.Windows.Documents.Model.Border = cellBorders.Top
-		Dim bottomBorder As Telerik.Windows.Documents.Model.Border = cellBorders.Bottom
-		Dim leftBorder As Telerik.Windows.Documents.Model.Border = cellBorders.Left
-		Dim rightBorder As Telerik.Windows.Documents.Model.Border = cellBorders.Right
-	
-		If rowIndex = rowStartIndex Then
-			topBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Top), BorderStyle.Single, borderBrushColor)
-		End If
-	
-		If rowIndex = rowEndIndex Then
-			bottomBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Bottom), BorderStyle.Single, borderBrushColor)
-		End If
-	
-		If rowStartIndex < rowIndex AndAlso rowIndex < rowEndIndex Then
-			topBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Top)
-			bottomBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Bottom)
-		End If
-	
-		If columnIndex = columnStartIndex Then
-			leftBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Left), BorderStyle.Single, borderBrushColor)
-		End If
-	
-		If columnIndex = columnEndIndex Then
-			rightBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Right), BorderStyle.Single, borderBrushColor)
-		End If
-	
-		If columnStartIndex < columnIndex AndAlso columnIndex < columnEndIndex Then
-			leftBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Left)
-			rightBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Right)
-		End If
-	
-		Return New TableCellBorders(leftBorder, topBorder, rightBorder, bottomBorder)
-	End Function
-	
-	Private Function GetCellBorders(ByVal borderThickness? As Thickness, ByVal borderBrush As Brush, ByVal cellBorders As TableCellBorders, ByVal rowIndex As Integer, ByVal rowStartIndex As Integer, ByVal rowEndIndex As Integer, ByVal columnIndex As Integer, ByVal columnStartIndex As Integer, ByVal columnEndIndex As Integer, ByVal hasBackground As Boolean) As TableCellBorders
-		Dim borderBrushColor As Color
-		GetColor(borderBrush, borderBrushColor)
-	
-		If Not borderThickness.HasValue Then
-			Return New TableCellBorders(New Telerik.Windows.Documents.Model.Border(BorderStyle.None))
-		End If
-	
-		Dim thickness = borderThickness.Value
-		Dim topBorder As Telerik.Windows.Documents.Model.Border = cellBorders.Top
-		Dim bottomBorder As Telerik.Windows.Documents.Model.Border = cellBorders.Bottom
-		Dim leftBorder As Telerik.Windows.Documents.Model.Border = cellBorders.Left
-		Dim rightBorder As Telerik.Windows.Documents.Model.Border = cellBorders.Right
-	
-		If rowIndex = rowStartIndex Then
-			topBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Top), BorderStyle.Single, borderBrushColor)
-		End If
-	
-		If rowIndex = rowEndIndex Then
-			bottomBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Bottom), BorderStyle.Single, borderBrushColor)
-		End If
-	
-		If rowStartIndex < rowIndex AndAlso rowIndex < rowEndIndex Then
-			topBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Top)
-			bottomBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Bottom)
-		End If
-	
-		If columnIndex = columnStartIndex Then
-			leftBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Left), BorderStyle.Single, borderBrushColor)
-		End If
-	
-		If columnIndex = columnEndIndex Then
-			rightBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Right), BorderStyle.Single, borderBrushColor)
-		End If
-	
-		If columnStartIndex < columnIndex AndAlso columnIndex < columnEndIndex Then
-			leftBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Left)
-			rightBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Right)
-		End If
-	
-		Return New TableCellBorders(leftBorder, topBorder, rightBorder, bottomBorder)
-	End Function
-	
-	Private Function GetCellBorders(ByVal borderThickness? As Thickness, ByVal borderBrush As Brush, ByVal position As Position, ByVal cellBorders As TableCellBorders, ByVal isRow As Boolean, ByVal hasBackground As Boolean) As TableCellBorders
-		Dim borderBrushColor As Color
-		GetColor(borderBrush, borderBrushColor)
-	
-		If Not borderThickness.HasValue Then
-			Return New TableCellBorders(New Telerik.Windows.Documents.Model.Border(BorderStyle.None))
-		End If
-	
-		Dim thickness = borderThickness.Value
-		If isRow Then
-			Dim leftBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Left), BorderStyle.Single, borderBrushColor)
-			Dim rightBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Right), BorderStyle.Single, borderBrushColor)
-			Dim topBorder As Telerik.Windows.Documents.Model.Border
-			Dim bottomBorder As Telerik.Windows.Documents.Model.Border
-			Select Case position
-				Case Position.First
-					topBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Top), BorderStyle.Single, borderBrushColor)
-					bottomBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Bottom)
-	
-				Case Position.Middle
-					topBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Top)
-					bottomBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Bottom)
-	
-				Case Else
-					topBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Top)
-					bottomBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Bottom), BorderStyle.Single, borderBrushColor)
-			End Select
-	
-			Return New TableCellBorders(leftBorder, topBorder, rightBorder, bottomBorder)
-		Else
-			Dim topBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Top), BorderStyle.Single, borderBrushColor)
-			Dim bottomBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Bottom), BorderStyle.Single, borderBrushColor)
-			Dim leftBorder As Telerik.Windows.Documents.Model.Border
-			Dim rightBorder As Telerik.Windows.Documents.Model.Border
-			Select Case position
-				Case Position.First
-					leftBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Left), BorderStyle.Single, borderBrushColor)
-					rightBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Right)
-	
-				Case Position.Middle
-					leftBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Left)
-					rightBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Right)
-	
-				Case Else
-					leftBorder = If(hasBackground, New Telerik.Windows.Documents.Model.Border(BorderStyle.None), cellBorders.Left)
-	
-					rightBorder = New Telerik.Windows.Documents.Model.Border(CSng(thickness.Right), BorderStyle.Single, borderBrushColor)
-			End Select
-	
-			Return New TableCellBorders(leftBorder, topBorder, rightBorder, bottomBorder)
-		End If
-	End Function
-	
-	Private Function GetVerticalAlignment(ByVal verticalAlignment As VerticalAlignment) As Telerik.Windows.Documents.Layout.RadVerticalAlignment
-		Select Case verticalAlignment
-			Case VerticalAlignment.Bottom
-				Return Telerik.Windows.Documents.Layout.RadVerticalAlignment.Bottom
-	
-			Case VerticalAlignment.Stretch, VerticalAlignment.Center
-				Return Telerik.Windows.Documents.Layout.RadVerticalAlignment.Center
-	
-			Case Else
-				Return Telerik.Windows.Documents.Layout.RadVerticalAlignment.Top
-		End Select
-	End Function
-	
-	Private Function GetTextAlignment(ByVal textAlignment As TextAlignment) As Telerik.Windows.Documents.Layout.RadTextAlignment
-		Select Case textAlignment
-			Case TextAlignment.Center
-				Return Telerik.Windows.Documents.Layout.RadTextAlignment.Center
-	
-			Case TextAlignment.Justify
-				Return Telerik.Windows.Documents.Layout.RadTextAlignment.Justify
-	
-			Case TextAlignment.Right
-				Return Telerik.Windows.Documents.Layout.RadTextAlignment.Right
-	
-			Case Else
-				Return Telerik.Windows.Documents.Layout.RadTextAlignment.Left
-		End Select
-	End Function
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_3"
-	Private Shared Sub SaveFile(ByVal dialog As SaveFileDialog, ByVal provider As IDocumentFormatProvider, ByVal document As RadDocument)
-		Dim result = dialog.ShowDialog()
-		If result = True Then
-			Try
-				Using stream = dialog.OpenFile()
-					provider.Export(document, stream)
-				End Using
-			Catch ex As IOException
-				MessageBox.Show(ex.Message)
-			End Try
-		End If
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_4"
-	Private Sub WordExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		richTextBox.Document = document
-	
-		Dim provider = New DocxFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "docx"
-		dialog.Filter = "Word document (docx) | *.docx |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_5"
-	Private Sub PdfExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New PdfFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "pdf"
-		dialog.Filter = "Pdf document (pdf) | *.pdf |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_6"
-	Private Sub HtmlExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New HtmlFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "html"
-		dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
-
-
+{{endregion}}
 
 ## Export To Word, Pdf and HTML
 
 >In order to Export to docx, pdf or HTML format, you will have to add reference to the following assemblies:
-          
+>	* __Telerik.Windows.Documents__
+>	* __Telerik.Windows.Documents.Core__Based on the format you have selected, you have to add reference to one more assembly. More information is available in the sections below.
 
-* __Telerik.Windows.Documents__
+No matter which of these three formats you have chosen, you will have to create a new __RadDocument__, which will hold the content, that will be exported. After that, you have to set this __RadDocument__ instance to the Document property of __RadRichTextBox__. This __RadRichTextBox__ must be visualized in order to be able to export its data. To generate __RadDocument__ you can use the code below:        
 
-* __Telerik.Windows.Documents.Core__Based on the format you have selected, you have to add reference to one more assembly. More information is available in the sections below.
-
-No matter which of these three formats you have chosen, you will have to create a new __RadDocument__, which will hold the content, that will be exported. After that, you have to set this __RadDocument__ instance
-          to the Document property of __RadRichTextBox__. This __RadRichTextBox__ must be visualized in order to be able to export its data. To generate __RadDocument__ you can use the code below:
-        
-
->tipYou can put __RadRichTextBox__ as a content of a __RadWindow__ and use the window as PrintPreview dialog. You can check a full implementation of this solution in our
-            {% if site.site_name == 'Silverlight' %}[Export](http://demos.telerik.com/silverlight/#PivotGrid/Export){% endif %}{% if site.site_name == 'WPF' %}[Export](http://demos.telerik.com/wpf/){% endif %} demo. If you do not want to show PrintPreview dialog, you can set the visibility of the window to collapsed.
-          
+>tipYou can put __RadRichTextBox__ as a content of a __RadWindow__ and use the window as PrintPreview dialog. You can check a full implementation of this solution in our {% if site.site_name == 'Silverlight' %}[Export](http://demos.telerik.com/silverlight/#PivotGrid/Export){% endif %}{% if site.site_name == 'WPF' %}[Export](http://demos.telerik.com/wpf/){% endif %} demo. If you do not want to show PrintPreview dialog, you can set the visibility of the window to collapsed.          
 
 #### __C#__
 
@@ -1035,9 +660,7 @@ No matter which of these three formats you have chosen, you will have to create 
 	            return Telerik.Windows.Documents.Layout.RadTextAlignment.Left;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -1328,66 +951,9 @@ No matter which of these three formats you have chosen, you will have to create 
 				Return Telerik.Windows.Documents.Layout.RadTextAlignment.Left
 		End Select
 	End Function
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_3"
-	Private Shared Sub SaveFile(ByVal dialog As SaveFileDialog, ByVal provider As IDocumentFormatProvider, ByVal document As RadDocument)
-		Dim result = dialog.ShowDialog()
-		If result = True Then
-			Try
-				Using stream = dialog.OpenFile()
-					provider.Export(document, stream)
-				End Using
-			Catch ex As IOException
-				MessageBox.Show(ex.Message)
-			End Try
-		End If
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_4"
-	Private Sub WordExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		richTextBox.Document = document
-	
-		Dim provider = New DocxFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "docx"
-		dialog.Filter = "Word document (docx) | *.docx |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_5"
-	Private Sub PdfExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New PdfFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "pdf"
-		dialog.Filter = "Pdf document (pdf) | *.pdf |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_6"
-	Private Sub HtmlExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New HtmlFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "html"
-		dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
+{{endregion}}
 
-
-
-Here is a simple method, that will export the document to the specified file stream. This method is used in all of the below cases.
-        
+Here is a simple method, that will export the document to the specified file stream. This method is used in all of the below cases.        
 
 #### __C#__
 
@@ -1410,9 +976,7 @@ Here is a simple method, that will export the document to the specified file str
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -1429,54 +993,13 @@ Here is a simple method, that will export the document to the specified file str
 			End Try
 		End If
 	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_4"
-	Private Sub WordExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		richTextBox.Document = document
-	
-		Dim provider = New DocxFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "docx"
-		dialog.Filter = "Word document (docx) | *.docx |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_5"
-	Private Sub PdfExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New PdfFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "pdf"
-		dialog.Filter = "Pdf document (pdf) | *.pdf |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_6"
-	Private Sub HtmlExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New HtmlFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "html"
-		dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
+{{endregion}}
 
-Export To Word
+### Export To Word
 
->In order to use Export to Word functionality, you will have to add reference to the __Telerik.Windows.Documents.FormatProviders.OpenXml__ assembly.
-                
+>In order to use Export to Word functionality, you will have to add reference to the __Telerik.Windows.Documents.FormatProviders.OpenXml__ assembly.                
 
-After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__.
-                Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.
+After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__. Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.
               
 
 #### __C#__
@@ -1493,9 +1016,7 @@ After you've generated the document (instance of __RadDocument__) you have to se
 	    dialog.Filter = "Word document (docx) | *.docx |All Files (*.*) | *.*";
 	    SaveFile(dialog, provider, document);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -1510,42 +1031,13 @@ After you've generated the document (instance of __RadDocument__) you have to se
 		dialog.Filter = "Word document (docx) | *.docx |All Files (*.*) | *.*"
 		SaveFile(dialog, provider, document)
 	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_5"
-	Private Sub PdfExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New PdfFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "pdf"
-		dialog.Filter = "Pdf document (pdf) | *.pdf |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_6"
-	Private Sub HtmlExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New HtmlFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "html"
-		dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
+{{endregion}}
 
-Export To Pdf
+### Export To Pdf
 
->In order to use Export to pdf functionality, you will have to add reference to the __Telerik.Windows.Documents.FormatProviders.Pdf__ assembly.
-                
+>In order to use Export to pdf functionality, you will have to add reference to the __Telerik.Windows.Documents.FormatProviders.Pdf__ assembly.                
 
-After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__.
-                Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.
-              
+After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__. Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.              
 
 #### __C#__
 
@@ -1561,9 +1053,7 @@ After you've generated the document (instance of __RadDocument__) you have to se
 	    dialog.Filter = "Pdf document (pdf) | *.pdf |All Files (*.*) | *.*";
 	    SaveFile(dialog, provider, document);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -1578,29 +1068,13 @@ After you've generated the document (instance of __RadDocument__) you have to se
 		dialog.Filter = "Pdf document (pdf) | *.pdf |All Files (*.*) | *.*"
 		SaveFile(dialog, provider, document)
 	End Sub
-	' #End Region
-	
-	' #Region "radpivotgrid-features-export_6"
-	Private Sub HtmlExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim document As RadDocument = GenerateRadDocument()
-		rtb.Document = document
-	
-		Dim provider = New HtmlFormatProvider()
-		Dim dialog As New SaveFileDialog()
-		dialog.DefaultExt = "html"
-		dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*"
-		SaveFile(dialog, provider, document)
-	End Sub
-	' #End Region
+{{endregion}}
 
-Export To HTML
+### Export To HTML
 
 >In order to use Export to HTML functionality, you will have to add reference to the __Telerik.Windows.Documents.FormatProviders.Html__ assembly.
-                
 
-After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__.
-                Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.
-              
+After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__. Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.              
 
 #### __C#__
 
@@ -1616,9 +1090,7 @@ After you've generated the document (instance of __RadDocument__) you have to se
 	    dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*";
 	    SaveFile(dialog, provider, document);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -1633,9 +1105,7 @@ After you've generated the document (instance of __RadDocument__) you have to se
 		dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*"
 		SaveFile(dialog, provider, document)
 	End Sub
-	' #End Region
-
-
+{{endregion}}
 
 # See Also
 

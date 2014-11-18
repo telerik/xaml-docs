@@ -10,20 +10,11 @@ position: 0
 
 # Templating Headers and Cells
 
-
-
-__RadPivotGrid__ provides few options to template its cells and headers out of the box. You can either apply one template to all of them using the __CellTemplate__,
-        __RowHeaderTemplate__ and __ColumnHeaderTemplate__ properties of __RadPivotGrid__. Or you can use the __CellTemplateSelector__,
-        __RowHeaderTemplateSelector__ and __ColumnHeaderTemplateSelector__ properties in order to implement custom TemplateSelector and template the headers and cells per condition.
-        This article will show you how to improve the __RadPivotGrid__ appearance by applying custom Templates and implementing custom TemplateSelectors.
-      
+__RadPivotGrid__ provides few options to template its cells and headers out of the box. You can either apply one template to all of them using the __CellTemplate__, __RowHeaderTemplate__ and __ColumnHeaderTemplate__ properties of __RadPivotGrid__. Or you can use the __CellTemplateSelector__, __RowHeaderTemplateSelector__ and __ColumnHeaderTemplateSelector__ properties in order to implement custom TemplateSelector and template the headers and cells per condition. This article will show you how to improve the __RadPivotGrid__ appearance by applying custom Templates and implementing custom TemplateSelectors.      
 
 ## Using Custom Cell and Header Templates
 
-The __CellTemplate__, __RowHeaderTemplate__ and __ColumnHeaderTemplate__ properties of __RadPivotGrid__ will help you to easily 
-          apply a custom template to all of the cells or to all of the column and row headers. You would simply need to define the needed DataTemplates and apply them to __RadPivotGrid__. For example if 
-          you need to have green cells and headers with Italic FontStyle you will need to define the following templates:
-        
+The __CellTemplate__, __RowHeaderTemplate__ and __ColumnHeaderTemplate__ properties of __RadPivotGrid__ will help you to easily apply a custom template to all of the cells or to all of the column and row headers. You would simply need to define the needed DataTemplates and apply them to __RadPivotGrid__. For example if you need to have green cells and headers with Italic FontStyle you will need to define the following templates:        
 
 #### __XAML__
 
@@ -40,9 +31,7 @@ The __CellTemplate__, __RowHeaderTemplate__ and __ColumnHeaderTemplate__ propert
 			<TextBlock Text="{Binding Data, Mode=OneWay}" FontStyle="Italic" Margin="4 0 0 0"  VerticalAlignment="Center" />
 		</DataTemplate>
 	</UserControl.Resources>  
-	{{endregion}}
-
-
+{{endregion}}
 
 And apply them as shown below:
 
@@ -52,24 +41,17 @@ And apply them as shown below:
 	<pivot:RadPivotGrid CellTemplate="{StaticResource CellTemplate}" 
 						RowHeaderTemplate="{StaticResource HeaderTemplate}" 
 						ColumnHeaderTemplate="{StaticResource HeaderTemplate}" />
-	{{endregion}}
-
-
+{{endregion}}
 
 __Figure 1__ demonstrates the final result.
-        
 
+Figure 1: Custom cell and header templates.
 
-            Figure 1: Custom cell and header templates.
-          ![Rad Pivot Grid Styles And Templates Templating Cells 03](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_03.png)
+![Rad Pivot Grid Styles And Templates Templating Cells 03](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_03.png)
 
 ## Using Custom CellTemplateSelector
 
-Implementing a custom __CellTemplateSelector__ allows you to apply different templates per a condition. For example depending on the cell value you can change its Background
-          in order to indicate lower or higher value than a certain one. To get it started you would need to create a new class inheriting from the __DataTemplateSelector__ class and define
-          the two Templates - one for the lower values and one for the higher ones. Afterwards you have to override the __SelectTemplate__ and implement the needed custom logic. So finally the
-          custom __CellTemplateSelector__ should look the following way:
-        
+Implementing a custom __CellTemplateSelector__ allows you to apply different templates per a condition. For example depending on the cell value you can change its Background in order to indicate lower or higher value than a certain one. To get it started you would need to create a new class inheriting from the __DataTemplateSelector__ class and define the two Templates - one for the lower values and one for the higher ones. Afterwards you have to override the __SelectTemplate__ and implement the needed custom logic. So finally the custom __CellTemplateSelector__ should look the following way:        
 
 #### __C#__
 
@@ -103,9 +85,7 @@ Implementing a custom __CellTemplateSelector__ allows you to apply different tem
 	        return base.SelectTemplate(item, container);
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
 
@@ -134,12 +114,9 @@ Implementing a custom __CellTemplateSelector__ allows you to apply different tem
 	        Return MyBase.SelectTemplate(item, container)
 	    End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Next thing to do is to define the required templates in the XAML as shown below:
-        
+Next thing to do is to define the required templates in the XAML as shown below:        
 
 #### __XAML__
 
@@ -166,38 +143,26 @@ Next thing to do is to define the required templates in the XAML as shown below:
 	        </local:CellTemplateSelector.RedTemplate>
 	    </local:CellTemplateSelector>
 	</UserControl.Resources>  
-	{{endregion}}
+{{endregion}}
 
-
-
-And the last step would be to assign the __CellTemplateSelector__ to __RadPivotGrid__:
-        
+And the last step would be to assign the __CellTemplateSelector__ to __RadPivotGrid__:        
 
 #### __XAML__
 
 {{region radpivotgrid-styles-and-templates-templating-cells_2}}
 	<pivot:RadPivotGrid x:Name="pivotGrid" CellTemplateSelector="{StaticResource CellTemplateSelector}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 You can see the final result on __Figure 2__.
-        
 
+Figure 2: Cells with values below 1000 are colored in red and the other cells in green using CellTemplateSelector.
+![Rad Pivot Grid Styles And Templates Templating Cells 01](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_01.png)
 
-            Figure 2: Cells with values below 1000 are colored in red and the other cells in green using CellTemplateSelector.
-          ![Rad Pivot Grid Styles And Templates Templating Cells 01](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_01.png)
-
->tipYou can download a runnable project of the previous example from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomCellTemplate__.
-          
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomCellTemplate__.          
 
 ## Using Custom HeaderTemplateSelectors
 
-By implementing a custom __HeaderTemplateSelector__ you are able to modify the templates only of the column header cells or row header cells. In this section you will see how to add
-          images in the different header cells. Firstly you will need to create custom __HeaderTemplateSelector__ that inherits from __DataTemplateSelector__ and define a DataTemplate
-          which will be used for the Product header cells. The selector should look as shown below:
-        
+By implementing a custom __HeaderTemplateSelector__ you are able to modify the templates only of the column header cells or row header cells. In this section you will see how to add images in the different header cells. Firstly you will need to create custom __HeaderTemplateSelector__ that inherits from __DataTemplateSelector__ and define a DataTemplate which will be used for the Product header cells. The selector should look as shown below:        
 
 #### __C#__
 
@@ -220,9 +185,7 @@ By implementing a custom __HeaderTemplateSelector__ you are able to modify the t
 	        return base.SelectTemplate(item, container);
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
 
@@ -244,12 +207,9 @@ By implementing a custom __HeaderTemplateSelector__ you are able to modify the t
 			Return MyBase.SelectTemplate(item, container)
 		End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Next thing to do is to define the required templates in the XAML the folloing way:
-        
+Next thing to do is to define the required templates in the XAML the following way:        
 
 #### __XAML__
 
@@ -269,12 +229,9 @@ Next thing to do is to define the required templates in the XAML the folloing wa
 	        </DataTemplate>
 	    </local:HeaderTemplateSelector.ProductTemplate>
 	</local:HeaderTemplateSelector>
-	{{endregion}}
+{{endregion}}
 
-
-
-Using an IValueConverter you will be able to return the path for the needed image depending content of the header cell:
-        
+Using an IValueConverter you will be able to return the path for the needed image depending content of the header cell:        
 
 #### __C#__
 
@@ -292,9 +249,7 @@ Using an IValueConverter you will be able to return the path for the needed imag
 	        throw new NotImplementedException();
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB__
 
@@ -311,33 +266,23 @@ Using an IValueConverter you will be able to return the path for the needed imag
 			Throw New NotImplementedException()
 		End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Finaly you will have to assing the HeaderTemplateSelector to the __RowHeaderTemplateSelector__ and __ColumnHeaderTemplateSelector__ properties of
-          __RadPivotGrid__.
-        
+Finaly you will have to assing the HeaderTemplateSelector to the __RowHeaderTemplateSelector__ and __ColumnHeaderTemplateSelector__ properties of __RadPivotGrid__.       
 
 #### __XAML__
 
 {{region radpivotgrid-styles-and-templates-templating-cells_4}}
 	<pivot:RadPivotGrid RowHeaderTemplateSelector="{StaticResource HeaderTemplateSelector}" 
 					    ColumnHeaderTemplateSelector="{StaticResource HeaderTemplateSelector}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 You can see the final result on __Figure 3__.
-        
 
+Figure 3: Header cells with different images.
+![Rad Pivot Grid Styles And Templates Templating Cells 02](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_02.png)
 
-            Figure 3: Header cells with different images.
-          ![Rad Pivot Grid Styles And Templates Templating Cells 02](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_02.png)
-
->tipYou can download a runnable project of the previous example from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomHeaderTemplate__.
-          
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomHeaderTemplate__.          
 
 # See Also
 

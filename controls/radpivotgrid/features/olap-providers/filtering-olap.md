@@ -10,64 +10,45 @@ position: 1
 
 # Group Filtering
 
-
-
 In this article we will show you how to apply different filters on your RowGroupDescriptions and ColumnGroupDescriptions when your data is from OLAP Cube.
-      3
 
 ## Filter Types
 
-The Data in __RadPivotGrid__ can be filtered based on several conditions to give you a view on specific details or just to make the report shorter.
-          There are two types of filters you may use on your __RowGroupDescriptions__/__ColumnGroupDescriptions__.
-        
+The Data in __RadPivotGrid__ can be filtered based on several conditions to give you a view on specific details or just to make the report shorter. There are two types of filters you may use on your __RowGroupDescriptions__/__ColumnGroupDescriptions__.        
 
-* __Label filter__ - filters the report based on the Header name.
-            
+* __Label filter__ - filters the report based on the Header name.            
 
-* __Value filter__ - filters the report based on one of the aggregates used.
-            
+* __Value filter__ - filters the report based on one of the aggregates used.            
 
 Here is the initial state of __RadPivotGrid__ that we will use to show how different filters will change the report.
-        ![Rad Pivot Grid Features Filtering OLAP 01](images/RadPivotGrid_Features_Filtering_OLAP_01.png)
+
+![Rad Pivot Grid Features Filtering OLAP 01](images/RadPivotGrid_Features_Filtering_OLAP_01.png)
 
 ## Label Filter
 
-The __LabelFilter__ is used for filtering the data based on the Headers (row or column). The LabelFilter is using one of the following conditions:
-        
+The __LabelFilter__ is used for filtering the data based on the Headers (row or column). The LabelFilter is using one of the following conditions:        
 
-* __equals__ - showing only groups which header fully match the parameter we pass.
-            
+* __equals__ - showing only groups which header fully match the parameter we pass.            
 
 * __does not equal__ - showing all groups which header does NOT match the parameter we pass.
             
+* __contains__ - showing only groups which header contains the parameter we pass.            
 
-* __contains__ - showing only groups which header contains the parameter we pass.
-            
+* __does not contain__ - showing only groups which header does NOT contain the parameter we pass.            
 
-* __does not contain__ - showing only groups which header does NOT contain the parameter we pass.
-            
+>important*Equals* and *does not equal* are case sensitive and are using string comparison between the unique name of the member (defined in the Cube itself) and the passed parameters. *Contains* and *does not contain* are not case sensitive.        
 
->important*Equals* and *does not equal* are case sensitive and are using string comparison between the unique name of the member (defined in the Cube itself) and the passed parameters. 
-            *Contains* and *does not contain* are not case sensitive.
-        
+So if we apply a __LabelFilter__ on the Category ColumnGroupDescription with condition *contains* and parameter *"C"* we will receive the following result:
 
-So if we apply a __LabelFilter__ on the Category ColumnGroupDescription with condition *contains* and parameter
-          *"C"* we will receive the following result:
-        ![Rad Pivot Grid Features Filtering OLAP 02](images/RadPivotGrid_Features_Filtering_OLAP_02.png)Defining Label Filter
+![Rad Pivot Grid Features Filtering OLAP 02](images/RadPivotGrid_Features_Filtering_OLAP_02.png)
 
-__Label Filter__ can be defined in the __XAML__, code behind or even at runtime by using __RadPivotFieldList__.
-                To apply Label Filter you should set it to the *GroupFilter* property of *XmlaGroupDescription*{% if site.site_name == 'WPF' %}
-                  / *AdomdGroupDescription*{% endif %}.
-                To define Label Filter, use the __OlapLabelGroupFilter__ class from __Telerik.Pivot.Core.Filtering__ namespace. Each __OlapLabelGroupFilter__ must have a *Condition* defined. The *Condition* can be:
-              
+### Defining Label Filter
 
-* __OlapComparisonCondition__ - used to compare the Header with the value set in the *Than* property based on the *Condition* property. *OlapComparisonCondition* is used
-                    for "equals" and "does not equal" comparison. The value in *Than* property is case-sensitive.
-                  
+__Label Filter__ can be defined in the __XAML__, code behind or even at runtime by using __RadPivotFieldList__. To apply Label Filter you should set it to the *GroupFilter* property of *XmlaGroupDescription*{% if site.site_name == 'WPF' %} / *AdomdGroupDescription*{% endif %}. To define Label Filter, use the __OlapLabelGroupFilter__ class from __Telerik.Pivot.Core.Filtering__ namespace. Each __OlapLabelGroupFilter__ must have a *Condition* defined. The *Condition* can be:             
 
-* __OlapTextCondition__ - used when you want to filter the data based on a string value defined in *Pattern* property. The *Comparison* property can have the values "contains" or "does not contain". The value of 
-                    *Pattern* property is not case-sensitive.
-                
+* __OlapComparisonCondition__ - used to compare the Header with the value set in the *Than* property based on the *Condition* property. *OlapComparisonCondition* is used for "equals" and "does not equal" comparison. The value in *Than* property is case-sensitive.                 
+
+* __OlapTextCondition__ - used when you want to filter the data based on a string value defined in *Pattern* property. The *Comparison* property can have the values "contains" or "does not contain". The value of *Pattern* property is not case-sensitive.                
 
 #### __XAML__
 
@@ -95,9 +76,7 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	        </pivot:OlapLabelGroupFilter>
 	    </pivot:XmlaGroupDescription.GroupFilter>
 	</pivot:XmlaGroupDescription>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -113,9 +92,7 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	OlapLabelGroupFilter labelGroupFilter2 = new OlapLabelGroupFilter();
 	labelGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.Equals, Than = "[Product].[Category].&[3]" };
 	groupDescription2.GroupFilter = labelGroupFilter2;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -131,12 +108,10 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	Dim labelGroupFilter2 As New OlapLabelGroupFilter()
 	labelGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.Equals, .Than = "[Product].[Category].&[3]"}
 	groupDescription2.GroupFilter = labelGroupFilter2
-	{{endregion}}
-
+{{endregion}}
 {% if site.site_name == 'WPF' %}
 
-If you use __AdomdDataProvider__:
-                
+If you use __AdomdDataProvider__:                
 
 #### __XAML__
 
@@ -164,9 +139,7 @@ If you use __AdomdDataProvider__:
 	        </pivot:OlapLabelGroupFilter>
 	    </pivot:AdomdGroupDescription.GroupFilter>
 	</pivot:AdomdGroupDescription>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -182,9 +155,7 @@ If you use __AdomdDataProvider__:
 	OlapLabelGroupFilter labelGroupFilter2 = new OlapLabelGroupFilter();
 	labelGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.Equals, Than = "[Product].[Category].&[3]" };
 	groupDescription2.GroupFilter = labelGroupFilter2;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -200,16 +171,12 @@ If you use __AdomdDataProvider__:
 	Dim labelGroupFilter2 As New OlapLabelGroupFilter()
 	labelGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.Equals, .Than = "[Product].[Category].&[3]"}
 	groupDescription2.GroupFilter = labelGroupFilter2
-	{{endregion}}
+{{endregion}}
+{% endif %}
 
-{% endif %}Label Filters for user-defined hierarchies
+### Label Filters for user-defined hierarchies
 
-OLAP dimensions consist of attribute hierarchies and user-defined hierarchies.
-                User-defined hierarchies have different levels and with __RadPivotGrid__ you can apply LabelFilter on each of the levels. To do this you should use *Levels* property of __XmlaGroupDescription__{% if site.site_name == 'WPF' %}
-                  / __AdomdGroupDescription__{% endif %}.
-                *Levels* property is collection of __XmlaLevelGroupDescriptions__{% if site.site_name == 'WPF' %}
-                  / __AdomdGroupDescriptions__{% endif %}. Each of the LevelGroupDescriptions has its own *MemberName* and *GroupFilter* properties:
-              
+OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. User-defined hierarchies have different levels and with __RadPivotGrid__ you can apply LabelFilter on each of the levels. To do this you should use *Levels* property of __XmlaGroupDescription__{% if site.site_name == 'WPF' %} / __AdomdGroupDescription__{% endif %}. *Levels* property is collection of __XmlaLevelGroupDescriptions__{% if site.site_name == 'WPF' %} / __AdomdGroupDescriptions__{% endif %}. Each of the LevelGroupDescriptions has its own *MemberName* and *GroupFilter* properties:              
 
 #### __XAML__
 
@@ -241,9 +208,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies.
 	        </pivot:XmlaLevelGroupDescription>
 	    </pivot:XmlaGroupDescription.Levels>
 	</pivot:XmlaGroupDescription>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -264,9 +229,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies.
 	labelGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.Equals, Than = "[Promotion].[Promotions].[Category].&[Reseller].&[Excess Inventory]" };
 	levelGroupDescription2.GroupFilter = labelGroupFilter2;
 	groupDescription.Levels.Add(levelGroupDescription2);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -287,10 +250,9 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies.
 	labelGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.Equals, .Than = "[Promotion].[Promotions].[Category].&[Reseller].&[Excess Inventory]"}
 	levelGroupDescription2.GroupFilter = labelGroupFilter2
 	groupDescription.Levels.Add(levelGroupDescription2)
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'WPF' %}
-
 If you use __AdomdDataProvider:__
 
 #### __XAML__
@@ -323,9 +285,7 @@ If you use __AdomdDataProvider:__
 	        </pivot:AdomdLevelGroupDescription>
 	    </pivot:AdomdGroupDescription.Levels>
 	</pivot:AdomdGroupDescription>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -346,9 +306,7 @@ If you use __AdomdDataProvider:__
 	labelGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.Equals, Than = "[Promotion].[Promotions].[Category].&[Reseller].&[Excess Inventory]" };
 	levelGroupDescription2.GroupFilter = labelGroupFilter2;
 	groupDescription.Levels.Add(levelGroupDescription2);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -369,61 +327,44 @@ If you use __AdomdDataProvider:__
 	labelGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.Equals, .Than = "[Promotion].[Promotions].[Category].&[Reseller].&[Excess Inventory]"}
 	levelGroupDescription2.GroupFilter = labelGroupFilter2
 	groupDescription.Levels.Add(levelGroupDescription2)
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
->tipThe value of "Than" property is the unique name of the member (defined in OLAP Cube). As you are unable to use & in XAML, you have to use &amp; which will be parsed to &.
-                  You have to define *sys* namespace: __xmlns:sys="clr-namespace:System;assembly=mscorlib"__.
-                
+>tipThe value of "Than" property is the unique name of the member (defined in OLAP Cube). As you are unable to use & in XAML, you have to use &amp; which will be parsed to &. You have to define *sys* namespace: __xmlns:sys="clr-namespace:System;assembly=mscorlib"__.                
 
 ## Value Filter
 
-__Value Filter__ is applied on __RowGroupDescriptions__/__ColumnGroupDescriptions__ based on the *GrandTotals* of one of the Aggregation descriptions used in
-          the application. To apply value filter you have to use one of the predefined conditions:
-        
+__Value Filter__ is applied on __RowGroupDescriptions__/__ColumnGroupDescriptions__ based on the *GrandTotals* of one of the Aggregation descriptions used in the application. To apply value filter you have to use one of the predefined conditions:        
 
-* __equals__ - show only members for which the selected measure fully matches the passed parameter.
-            
+* __equals__ - show only members for which the selected measure fully matches the passed parameter.            
 
-* __does not equal__ - show all members for which the selected measure does NOT match the passed parameter.
-            
+* __does not equal__ - show all members for which the selected measure does NOT match the passed parameter.            
 
-* __is greater than__ - show only members for which the selected measure is greater than the passed parameter.
-            
+* __is greater than__ - show only members for which the selected measure is greater than the passed parameter.            
 
-* __is greater than or equal to__ - show only members for which the selected measure is greater or equal to the passed parameter.
-            
+* __is greater than or equal to__ - show only members for which the selected measure is greater or equal to the passed parameter.            
 
-* __is less than__ - show only members for which the selected measure is smaller than the parameter we pass.
-            
+* __is less than__ - show only members for which the selected measure is smaller than the parameter we pass.            
 
-* __is less than or equal to__ - show only members for which the selected measure is smaller or equal to the passed parameter.
-            
+* __is less than or equal to__ - show only members for which the selected measure is smaller or equal to the passed parameter.            
 
-* __is between__ - show only members for which the selected measure is between the two passed parameters.
-            
+* __is between__ - show only members for which the selected measure is between the two passed parameters.            
 
-* __is not between__ - show only members for which the selected measure is NOT between the two passed parameters.
-            
+* __is not between__ - show only members for which the selected measure is NOT between the two passed parameters.            
 
->important__Value Filter__ is filtering the groups by number comparison between the *GrandTotals* of the groups and the parameters we pass, while __Label Filter__ is a string filter.
-          
+>important__Value Filter__ is filtering the groups by number comparison between the *GrandTotals* of the groups and the parameters we pass, while __Label Filter__ is a string filter.          
 
-So if we apply a __Value Filter__ on the *Category* ColumnGroupDescription, set condition *"is greater than"* for the AggregateDescription Reseller Order Quantity  and pass as parameter value 50000
-          we will notice that two of the groups are missing because their *GrandTotal* is less than 50 000.
-        ![Rad Pivot Grid Features Filtering OLAP 03](images/RadPivotGrid_Features_Filtering_OLAP_03.png)Defining Value Filter
+So if we apply a __Value Filter__ on the *Category* ColumnGroupDescription, set condition *"is greater than"* for the AggregateDescription Reseller Order Quantity  and pass as parameter value 50000 we will notice that two of the groups are missing because their *GrandTotal* is less than 50 000.
 
-__Value Filter__ can be defined in __XAML__, code behind or at runtime by using __RadPivotFieldList__.
-                Defining in the code is using *ValueGroupFilter* class from __Telerik.Pivot.Core__ namespace. Each object of this type
-                must have *Condition* defined. *Condition* can be any of these:
-              
+![Rad Pivot Grid Features Filtering OLAP 03](images/RadPivotGrid_Features_Filtering_OLAP_03.png)
 
-* __ComparisonCondition__ - used to compare the Header with the value set in the *Than* property based on the *Condition* property.
-                  
+### Defining Value Filter
 
-* __IntervalCondition__ - used when you want to show only data that is (not) between two values set in the *From* and *To* properties based on the *Condition* property.
-                  
+__Value Filter__ can be defined in __XAML__, code behind or at runtime by using __RadPivotFieldList__. Defining in the code is using *ValueGroupFilter* class from __Telerik.Pivot.Core__ namespace. Each object of this type must have *Condition* defined. *Condition* can be any of these:              
+
+* __ComparisonCondition__ - used to compare the Header with the value set in the *Than* property based on the *Condition* property.                  
+
+* __IntervalCondition__ - used when you want to show only data that is (not) between two values set in the *From* and *To* properties based on the *Condition* property.                  
 
 #### __XAML__
 
@@ -446,9 +387,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	        </pivot:OlapValueGroupFilter>
 	    </pivot:XmlaGroupDescription.GroupFilter>
 	</pivot:XmlaGroupDescription>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -466,9 +405,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter2.AggregateIndex = 0;
 	valueGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.IsGreaterThan, Than = 50000 };
 	groupDescription2.GroupFilter = valueGroupFilter2;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -485,12 +422,10 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter2.AggregateIndex = 0
 	valueGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.IsGreaterThan, .Than = 50000}
 	groupDescription2.GroupFilter = valueGroupFilter2
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'WPF' %}
-
-If you use __AdomdDataProvider__:
-                
+If you use __AdomdDataProvider__:                
 
 #### __XAML__
 
@@ -513,9 +448,7 @@ If you use __AdomdDataProvider__:
 	        </pivot:OlapValueGroupFilter>
 	    </pivot:AdomdGroupDescription.GroupFilter>
 	</pivot:AdomdGroupDescription>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -533,9 +466,7 @@ If you use __AdomdDataProvider__:
 	valueGroupFilter2.AggregateIndex = 0;
 	valueGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.IsGreaterThan, Than = 50000 };
 	groupDescription2.GroupFilter = valueGroupFilter2;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -555,14 +486,11 @@ If you use __AdomdDataProvider__:
 	groupDescription2.GroupFilter = valueGroupFilter2
 	{{endregion}}
 
-{% endif %}Value Filters for user-defined hierarchies
+{% endif %}
 
-OLAP dimensions consist of attribute hierarchies and user-defined hierarchies.
-                User-defined hierarchies have different levels and with __RadPivotGrid__ you can apply Value Filter on each of the levels. To do this you should use *Levels* property of __XmlaGroupDescription__{% if site.site_name == 'WPF' %}
-                  / __AdomdGroupDescription__{% endif %}.
-                *Levels* property is collection of __XmlaLevelGroupDescriptions__{% if site.site_name == 'WPF' %}
-                  / __AdomdGroupDescriptions__{% endif %}. Each of the LevelGroupDescriptions has its own *MemberName* and *GroupFilter* properties:
-              
+### Value Filters for user-defined hierarchies
+
+OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. User-defined hierarchies have different levels and with __RadPivotGrid__ you can apply Value Filter on each of the levels. To do this you should use *Levels* property of __XmlaGroupDescription__{% if site.site_name == 'WPF' %} / __AdomdGroupDescription__{% endif %}. *Levels* property is collection of __XmlaLevelGroupDescriptions__{% if site.site_name == 'WPF' %} / __AdomdGroupDescriptions__{% endif %}. Each of the LevelGroupDescriptions has its own *MemberName* and *GroupFilter* properties:              
 
 #### __XAML__
 
@@ -590,9 +518,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies.
 	        </pivot:XmlaLevelGroupDescription>
 	    </pivot:XmlaGroupDescription.Levels>
 	</pivot:XmlaGroupDescription>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -615,9 +541,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies.
 	valueGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.IsGreaterThan, Than = 300 };
 	levelGroupDescription2.GroupFilter = valueGroupFilter2;
 	groupDescription.Levels.Add(levelGroupDescription2);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -640,10 +564,9 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies.
 	valueGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.IsGreaterThan, .Than = 300}
 	levelGroupDescription2.GroupFilter = valueGroupFilter2
 	groupDescription.Levels.Add(levelGroupDescription2)
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'WPF' %}
-
 If you use __AdomdDataProvider:__
 
 #### __XAML__
@@ -672,9 +595,7 @@ If you use __AdomdDataProvider:__
 	        </pivot:AdomdLevelGroupDescription>
 	    </pivot:AdomdGroupDescription.Levels>
 	</pivot:AdomdGroupDescription>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -697,9 +618,7 @@ If you use __AdomdDataProvider:__
 	valueGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.IsGreaterThan, Than = 300 };
 	levelGroupDescription2.GroupFilter = valueGroupFilter2;
 	groupDescription.Levels.Add(levelGroupDescription2);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -722,18 +641,18 @@ If you use __AdomdDataProvider:__
 	valueGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.IsGreaterThan, .Than = 300}
 	levelGroupDescription2.GroupFilter = valueGroupFilter2
 	groupDescription.Levels.Add(levelGroupDescription2)
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
 ## Applying filter at runtime
 
-You can apply any of the filters at runtime by using __RadPivotFieldList__. When you click on any of the RowGroupDescriptions or ColumnGroupDescriptions
-          you will see a menu with several options. Two of them are used for filtering: *"Label Filter"* and *"Value Filter"*:
-        ![Rad Pivot Grid Features Filtering OLAP 04](images/RadPivotGrid_Features_Filtering_OLAP_04.png)
+You can apply any of the filters at runtime by using __RadPivotFieldList__. When you click on any of the RowGroupDescriptions or ColumnGroupDescriptions you will see a menu with several options. Two of them are used for filtering: *"Label Filter"* and *"Value Filter"*:
+
+![Rad Pivot Grid Features Filtering OLAP 04](images/RadPivotGrid_Features_Filtering_OLAP_04.png)
 
 When you choose any of them a new Dialog window will help you to adjust the needed attributes. Note that you can always remove applied filters by using the additional option from the drop-down content:
-        ![Rad Pivot Grid Features Filtering OLAP 05](images/RadPivotGrid_Features_Filtering_OLAP_05.png)
+
+![Rad Pivot Grid Features Filtering OLAP 05](images/RadPivotGrid_Features_Filtering_OLAP_05.png)
 
 # See Also
 

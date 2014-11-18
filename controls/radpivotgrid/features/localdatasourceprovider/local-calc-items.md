@@ -10,19 +10,11 @@ position: 9
 
 # Calculated Items
 
-
-
-A calculated item is a new item in a row or column field in which the values are the result of a custom calculation. In this case, the calculated item’s formula references one or more items in the same field.
-        By using Calculated Items you are able to extend __RadPivotGrid__ with additional items that are not part of the data source.
-      
+A calculated item is a new item in a row or column field in which the values are the result of a custom calculation. In this case, the calculated item’s formula references one or more items in the same field. By using Calculated Items you are able to extend __RadPivotGrid__ with additional items that are not part of the data source.      
 
 ## Defining Calculated Item
 
-With __RadPivotGrid__ you are able to create different Groups that will be shown in Rows and Columns. But in some cases you may need to show additional items for specific group.
-          In this case you may use Calculated Items. Calculated Items are added to a group description and they have access to different items from the same group. For example, lets say we want to calculate
-          the average sales made by some of the salespeople, but not all of them. First we have to create a concrete class that implements the abstract *CalculatedItem* class.
-          For this purpose the new class must implement GetValue method. In our scenario we'll show the average sales of four of the salespeople:
-        
+With __RadPivotGrid__ you are able to create different Groups that will be shown in Rows and Columns. But in some cases you may need to show additional items for specific group. In this case you may use Calculated Items. Calculated Items are added to a group description and they have access to different items from the same group. For example, lets say we want to calculate the average sales made by some of the salespeople, but not all of them. First we have to create a concrete class that implements the abstract *CalculatedItem* class. For this purpose the new class must implement GetValue method. In our scenario we'll show the average sales of four of the salespeople:        
 
 #### __C#__
 
@@ -47,9 +39,7 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 	        return new DoubleAggregateValue(average);
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -70,12 +60,9 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 			Return New DoubleAggregateValue(average)
 		End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-As you can see the Calculated Item will show the average sales of four people. Now we just have to add it to the PropertyGroupDescription. In our case this will be the Salesperson group:
-        
+As you can see the Calculated Item will show the average sales of four people. Now we just have to add it to the PropertyGroupDescription. In our case this will be the Salesperson group:        
 
 #### __XAML__
 
@@ -87,9 +74,7 @@ As you can see the Calculated Item will show the average sales of four people. N
 			</pivot:PropertyGroupDescription.CalculatedItems>
 		</pivot:PropertyGroupDescription>
 	</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -100,9 +85,7 @@ As you can see the Calculated Item will show the average sales of four people. N
 	calculatedItem.GroupName = "Average Sales (Men)";
 	propertyGroupDescription.CalculatedItems.Add(calculatedItem);
 	dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -113,13 +96,11 @@ As you can see the Calculated Item will show the average sales of four people. N
 	calculatedItem.GroupName = "Average Sales (Men)"
 	propertyGroupDescription.CalculatedItems.Add(calculatedItem)
 	dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription)
-	{{endregion}}
+{{endregion}}
 
 ![Rad Pivot Grid Features Local Calc Items 01](images/RadPivotGrid_Features_Local_Calc_Items_01.png)
 
->importantIf you need to add a Calculated Item of type DateTimeGroupDescription or DoubleGroupDescription you will need to pass a specific object to the GetAggregateValue()
-            method instead of just string with the group name. For the DateTimeGroupDescription you have to use the following types depending the step used in the description:            
-          
+>importantIf you need to add a Calculated Item of type DateTimeGroupDescription or DoubleGroupDescription you will need to pass a specific object to the GetAggregateValue() method instead of just string with the group name. For the DateTimeGroupDescription you have to use the following types depending the step used in the description:                      
 
 * SecondGroup
 
@@ -135,16 +116,11 @@ As you can see the Calculated Item will show the average sales of four people. N
 
 * QuarterGroup
 
-* YearGroupAs for the DoubleGroupDescription you would need to use an object of type DoubleGroup.
-          
+* YearGroupAs for the DoubleGroupDescription you would need to use an object of type DoubleGroup.          
 
 ## Add Calculated Items at runtime
 
-Calculated items can be added only to Group Descriptions. If you are using __RadPivotFieldList__ the users can remove
-          the group for which you've added calculated items and this way the calculated items will be removed as well. Adding the same group in rows or columns will not show 
-          the calculated items anymore. In order to add them again you have to use *PrepareDescriptionForField*
-          event of LocalDataSourceProvider and add the calculated items to the description:
-        
+Calculated items can be added only to Group Descriptions. If you are using __RadPivotFieldList__ the users can remove the group for which you've added calculated items and this way the calculated items will be removed as well. Adding the same group in rows or columns will not show the calculated items anymore. In order to add them again you have to use *PrepareDescriptionForField* event of LocalDataSourceProvider and add the calculated items to the description:
 
 #### __C#__
 
@@ -163,9 +139,7 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -181,15 +155,11 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 			End If
 		End If
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Solve Order
 
-If you have calculated items in both rows and columns group descriptions, you have to define which of them will be used for the intersected cells. That's why each Calculated Item has *SolveOrder*
-          property - when a cell is an intersection between two calculated items the one with higher solve order will be used.
-        
+If you have calculated items in both rows and columns group descriptions, you have to define which of them will be used for the intersected cells. That's why each Calculated Item has *SolveOrder* property - when a cell is an intersection between two calculated items the one with higher solve order will be used.        
 
 #### __XAML__
 
@@ -209,9 +179,7 @@ If you have calculated items in both rows and columns group descriptions, you ha
 	        </pivot:PropertyGroupDescription.CalculatedItems>
 	    </pivot:PropertyGroupDescription>
 	</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -232,9 +200,7 @@ If you have calculated items in both rows and columns group descriptions, you ha
 	
 	dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
 	dataProvider.RowGroupDescriptions.Add(countryGroupDescription);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -255,16 +221,15 @@ If you have calculated items in both rows and columns group descriptions, you ha
 	
 	dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
 	dataProvider.RowGroupDescriptions.Add(countryGroupDescription)
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
-        ![Rad Pivot Grid Features Local Calc Items 02](images/RadPivotGrid_Features_Local_Calc_Items_02.png)
 
-As you can see the intersected cell between the two calculated items has value 500 as the CA calculated item has higher solve order. If we change the solve order of Men Average Sales to a higher value,
-        for example 5, here is how __RadPivotGrid__ will look like:
-      ![Rad Pivot Grid Features Local Calc Items 03](images/RadPivotGrid_Features_Local_Calc_Items_03.png)
+![Rad Pivot Grid Features Local Calc Items 02](images/RadPivotGrid_Features_Local_Calc_Items_02.png)
+
+As you can see the intersected cell between the two calculated items has value 500 as the CA calculated item has higher solve order. If we change the solve order of Men Average Sales to a higher value, for example 5, here is how __RadPivotGrid__ will look like:
+
+![Rad Pivot Grid Features Local Calc Items 03](images/RadPivotGrid_Features_Local_Calc_Items_03.png)
 
 # See Also
 

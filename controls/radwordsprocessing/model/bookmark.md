@@ -5,7 +5,7 @@ description: Bookmark
 slug: radwordsprocessing-model-bookmark
 tags: bookmark
 published: True
-position: 12
+position: 13
 ---
 
 # Bookmark
@@ -29,11 +29,11 @@ __Example 1__ shows how to create a __Bookmark__ and add its BookmarkRangeStart 
 #### __[C#] Example 1: Add Bookmark to Paragraph__
 
 {{region radwordsprocessing-model-bookmark_0}}
-	            Bookmark bookmark = new Bookmark(document, "MyBookmark");
-	            paragraph.Inlines.Add(bookmark.BookmarkRangeStart);
-	            paragraph.Inlines.AddRun("text");
-	            paragraph.Inlines.Add(bookmark.BookmarkRangeEnd);
-	{{endregion}}
+    Bookmark bookmark = new Bookmark(document, "MyBookmark");
+    paragraph.Inlines.Add(bookmark.BookmarkRangeStart);
+    paragraph.Inlines.AddRun("text");
+    paragraph.Inlines.Add(bookmark.BookmarkRangeEnd);
+{{endregion}}
 
 
 
@@ -46,9 +46,9 @@ Inserting a __Bookmark__ in the document can also be done with through the [RadF
 #### __[C#] Example 2: Insert Bookmark using RadFlowDocumentEditor__
 
 {{region radwordsprocessing-model-bookmark_1}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	            Bookmark bookmark = editor.InsertBookmark("MyBookmark");
-	{{endregion}}
+    RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+    Bookmark bookmark = editor.InsertBookmark("MyBookmark");
+{{endregion}}
 
 
 
@@ -66,8 +66,8 @@ __Example 3__ demonstrates how you can delete the bookmark created in __Example 
 #### __[C#] Example 2: Delete Bookmark using RadFlowDocumentEditor__
 
 {{region radwordsprocessing-model-bookmark_2}}
-	            editor.DeleteBookmark("MyBookmark");
-	{{endregion}}
+    editor.DeleteBookmark("MyBookmark");
+{{endregion}}
 
 
 

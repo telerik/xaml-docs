@@ -382,15 +382,44 @@ navigation:
         title: RadPdfViewer
     controls/radpdfviewer/document-model:
         title: Document Model
-        position: 6
+        position: 5
     controls/radpdfviewer/ui:
         title: UI
-        position: 7
+        position: 6
     controls/radpdfviewer/customization-and-extensibility:
         title: Customization and Extensibility
-        position: 8
+        position: 7
     controls/radpdfviewer/document-model/text:
         title: Text
+    "*radwordsprocessing":
+        title: RadWordsProcessing
+    controls/radwordsprocessing/model:
+        title: Model
+        position: 4
+    controls/radwordsprocessing/formats-and-conversion:
+        title: Formats and Conversion
+        position: 5
+    controls/radwordsprocessing/editing:
+        title: Editing
+        position: 6
+    controls/radwordsprocessing/concepts:
+        title: Concepts
+        position: 7
+    controls/radwordsprocessing/formats-and-conversion/docx:
+        title: Docx
+        position: 1
+    controls/radwordsprocessing/formats-and-conversion/rtf:
+        title: Rtf
+        position: 2
+    controls/radwordsprocessing/formats-and-conversion/html:
+        title: Html
+        position: 3
+    controls/radwordsprocessing/formats-and-conversion/plain-text:
+        title: Plain text
+        position: 4
+    controls/radwordsprocessing/concepts/fields:
+        title: Fields
+        position: 0
 ## Centaur Controls End
 
 ## Common Start

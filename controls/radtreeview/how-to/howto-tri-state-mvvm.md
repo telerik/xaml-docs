@@ -76,7 +76,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 			}
 		}
-		{{endregion}}
+	{{endregion}}
 
 	#### __VB.NET__
 
@@ -122,7 +122,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End Property
 			End Class
 		End Namespace
-		{{endregion}}
+	{{endregion}}
 
 	> Please note that the CategoryViewModel class inherits from the {% if site.site_name == 'Silverlight' %}[Telerik.Windows.Controls.ViewModelBase](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_viewmodelbase.html){% endif %}{% if site.site_name == 'WPF' %}[Telerik.Windows.Controls.ViewModelBase](http://www.telerik.com/help/wpf/t_telerik_windows_controls_viewmodelbase.html){% endif %} class. It provides support for property change notifications and we need to notify the __RadTreeViewItems__ when the __IsChecked__ property is changed. 			  
 
@@ -230,7 +230,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				this.parentItem.IsChecked = parentIsChecked;
 			}
 		}
-		{{endregion}}
+	{{endregion}}
 
 	#### __VB.NET__
 
@@ -248,18 +248,18 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 			End Set
 		End Property
 		Private Sub UpdateCheckState()
-			' update all children:
+			' update all children: '
 			If Me.SubCategories.Count <> 0 Then
 				Me.UpdateChildrenCheckState()
 			End If
-			'update parent item
+			'update parent item '
 			If Me.parentItem IsNot Nothing Then
 				Dim parentIsChecked? As Boolean = Me.parentItem.DetermineCheckState()
 				Me.parentItem.IsChecked = parentIsChecked
 		
 			End If
 		End Sub
-		{{endregion}}
+	{{endregion}}
 
 * Now our __CategoryViewModel__ logic is almost complete. However, if you take a closer look at the __IsChecked__ property setter implementation, you will notice that the __UpdateCheckState()__ method will cause the setter to be executed multiple times for the same item. This is why we'll have to implement a reentrancy check:
 
@@ -287,7 +287,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 			}
 		}
-		{{endregion}}
+	{{endregion}}
 
 	#### __VB.NET__
 
@@ -310,7 +310,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End If
 			End Set
 		End Property
-		{{endregion}}
+	{{endregion}}
 
 * So finally the __CategoryViewModel__ looks like that:
 
@@ -427,7 +427,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 			}
 		}
-		{{endregion}}
+	{{endregion}}
 
 	#### __VB.NET__
 
@@ -485,11 +485,11 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End Sub
 		
 				Private Sub UpdateCheckState()
-					' update all children:
+					' update all children: '
 					If Me.SubCategories.Count <> 0 Then
 						Me.UpdateChildrenCheckState()
 					End If
-					'update parent item
+					'update parent item '
 					If Me.parentItem IsNot Nothing Then
 						Dim parentIsChecked? As Boolean = Me.parentItem.DetermineCheckState()
 						Me.parentItem.IsChecked = parentIsChecked
@@ -520,7 +520,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End Function
 			End Class
 		End Namespace
-		{{endregion}}
+	{{endregion}}
 
 * As the items ViewModel is ready, we can create a __MainViewModel__ to define a collection of __CategoryViewModel__ objects that will be used as the __RadTreeView.ItemsSource__.
 
@@ -590,7 +590,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 			}
 		}
-		{{endregion}}
+	{{endregion}}
 
 	#### __VB.NET__
 
@@ -635,7 +635,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End Sub
 			End Class
 		End Namespace
-		{{endregion}}
+	{{endregion}}
 
 * Finally we need to set up the __RadTreeView__ control and its __ItemTemplate__. Please note that we won't use the __RadTreeView__ check-box support, but instead we will define a __CheckBox__ in the __ItemTemplate__ of the control. 
 			
@@ -659,7 +659,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				</telerik:RadTreeView.ItemTemplate>
 			</telerik:RadTreeView>
 		</Grid>
-		{{endregion}}
+	{{endregion}}
 
 	{% endif %}
 	{% if site.site_name == 'WPF' %}
@@ -682,7 +682,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				</telerik:RadTreeView.ItemTemplate>
 			</telerik:RadTreeView>
 		</Grid>
-		{{endregion}}
+	{{endregion}}
 
 	{% endif %}
 

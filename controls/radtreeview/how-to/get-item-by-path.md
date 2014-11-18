@@ -84,8 +84,8 @@ For example, see the following situation - you want to retrieve the treeview ite
 	#### __VB.NET__
 		AddHandler Me.radTreeView.Loaded, AddressOf radTreeView_Loaded
 		Private Sub radTreeView_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-			' If the treeview is data bound, use the
-			' GetItemByPath method here - when the treeview has already loaded.
+			' If the treeview is data bound, use the '
+			' GetItemByPath method here - when the treeview has already loaded. '
 		End Sub
 
 	>Note that, invoking the __GetItemByPath()__ method will expand the target item without animation, regardless the value of the [AnimationManager.IsAnimationEnabled]({%slug radtreeview-how-to-disable-default-animation%}) property.
@@ -101,7 +101,7 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 	    radTreeView.PathSeparator = "|";
 	    RadTreeViewItem targetItem = radTreeView.GetItemByPath( path );
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -111,7 +111,7 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 	    radTreeView.PathSeparator = "|"
 	    Dim targetItem As RadTreeViewItem = radTreeView.GetItemByPath(path)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 >The __RadTreeView__ has __ExpandItemByPath()__ method which internally uses the __GetItemByPath()__, and in addition expands the item
 

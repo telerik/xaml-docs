@@ -146,11 +146,11 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 							StartPath="Date"
 							DurationPath="Duration"                
 							ItemsSource="{Binding Data}">
-					<telerik:RadTimeline.Intervals>
-						<telerik:YearInterval />
-						<telerik:MonthInterval />
-						<telerik:WeekInterval />
-						<telerik:DayInterval />
-					</telerik:RadTimeline.Intervals>
-				</telerik:RadTimeline>
-		{{endregion}}
+			<telerik:RadTimeline.Intervals>
+				<telerik:YearInterval />
+				<telerik:MonthInterval />
+				<telerik:WeekInterval />
+				<telerik:DayInterval />
+			</telerik:RadTimeline.Intervals>
+		</telerik:RadTimeline>
+	{{endregion}}

@@ -38,31 +38,33 @@ Here is a list of the most important properties which are used by __BingMapProvi
 Here is an example of a __BingMapProvider__ definition:
         
 
-	
-          <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-            <telerik:RadMap.Provider>
-              <telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
-            </telerik:RadMap.Provider>
-          </telerik:RadMap>
+#### __XAML__
+      <telerik:RadMap x:Name="radMap" ZoomLevel="1">
+        <telerik:RadMap.Provider>
+          <telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
+        </telerik:RadMap.Provider>
+      </telerik:RadMap>
 
 
 
-	
-          BingMapProvider bingMap = new BingMapProvider( MapMode.Aerial, true, "key" );
-          this.radMap.Provider = bingMap;
+#### __C#__
+      BingMapProvider bingMap = new BingMapProvider( MapMode.Aerial, true, "key" );
+      this.radMap.Provider = bingMap;
 
 
 
-	
-          Dim bingMap As New BingMapProvider(MapMode.Aerial, True, "key")
-          Me.radMap.Provider = bingMap
+#### __VB.NET__
+      Dim bingMap As New BingMapProvider(MapMode.Aerial, True, "key")
+      Me.radMap.Provider = bingMap
 
 
 
-Here is a snapshot of the map that appears.![Rad Map Features Providers 01](images/RadMap_Features_Providers_01.png)
+Here is a snapshot of the map that appears.
+![Rad Map Features Providers 01](images/RadMap_Features_Providers_01.png)
 
 You can disable labels using the __IsLabelVisible__ property. When you set it to *False* value then the labels disappear. Here is a snapshot of the Aerial mode for Bing Map Provider when the labels are invisible:
-        ![Rad Map Features Providers 01 nolabels](images/RadMap_Features_Providers_01_nolabels.png)
+
+![Rad Map Features Providers 01 nolabels](images/RadMap_Features_Providers_01_nolabels.png)
 
 ## Road Mode
 
@@ -72,29 +74,30 @@ The *Road* mode of Bing Maps ignores the __IsLabelVisible__ property. For this m
 Here is an example of the __Road Mode__ definition:
         
 
-	
-          <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-            <telerik:RadMap.Provider>
-              <telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Road" IsLabelVisible="True"/>
-            </telerik:RadMap.Provider>
-          </telerik:RadMap>
+#### __XAML__
+      <telerik:RadMap x:Name="radMap" ZoomLevel="1">
+        <telerik:RadMap.Provider>
+          <telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Road" IsLabelVisible="True"/>
+        </telerik:RadMap.Provider>
+      </telerik:RadMap>
 
 
 
-	
-          BingMapProvider bingMap = new BingMapProvider( MapMode.Road, true, "key" );
-          this.radMap.Provider = bingMap;
+#### __C#__
+      BingMapProvider bingMap = new BingMapProvider( MapMode.Road, true, "key" );
+      this.radMap.Provider = bingMap;
 
 
 
-	
-          Dim bingMap As New BingMapProvider(MapMode.Road, True, "key")
-          Me.radMap.Provider = bingMap
+#### __VB.NET__
+      Dim bingMap As New BingMapProvider(MapMode.Road, True, "key")
+      Me.radMap.Provider = bingMap
 
 
 
 Here is a snapshot of the __Road__ mode for __Bing Map Provider__:
-        ![Rad Map Features Providers Bing Map Road](images/RadMap_Features_Providers_BingMap_Road.png)
+
+![Rad Map Features Providers Bing Map Road](images/RadMap_Features_Providers_BingMap_Road.png)
 
 ## Birdseye Mode
 
@@ -106,53 +109,54 @@ The __Bing Map Provider__ also supports the *Birdseye* mode. This mode can be us
 
 Here is an example of the __Birdseye Mode__ definition:
 
-	
-          <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-            <telerik:RadMap.Provider>
-              <telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Birdseye" IsLabelVisible="True"/>
-            </telerik:RadMap.Provider>
-          </telerik:RadMap>
+#### __XAML__
+      <telerik:RadMap x:Name="radMap" ZoomLevel="1">
+        <telerik:RadMap.Provider>
+          <telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Birdseye" IsLabelVisible="True"/>
+        </telerik:RadMap.Provider>
+      </telerik:RadMap>
 
 
 
-	
-          BingMapProvider bingMap = new BingMapProvider( MapMode.Birdseye, true, "key" );
-          this.radMap.Provider = bingMap;
+#### __C#__
+      BingMapProvider bingMap = new BingMapProvider( MapMode.Birdseye, true, "key" );
+      this.radMap.Provider = bingMap;
 
 
 
-	
-          Dim bingMap As New BingMapProvider(MapMode.Birdseye, True, "key")
-          Me.radMap.Provider = bingMap
+#### __VB.NET__
+      Dim bingMap As New BingMapProvider(MapMode.Birdseye, True, "key")
+      Me.radMap.Provider = bingMap
 
 
 
 Here is a snapshot of the __Birdseye__ mode for __Bing Map Provider__:
-        ![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Providers_BingMap_Birdseye.png)
+
+![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Providers_BingMap_Birdseye.png)
 
 ## BingRestMapProvider
 
 The __BingRestMapProvider__ uses other way to connect Bing Maps imagery service (REST), but it can be configured identically the __BingMapProvider__.
       
 
-	
-          <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-            <telerik:RadMap.Provider>
-              <telerik:BingRestMapProvider ApplicationId=" Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
-            </telerik:RadMap.Provider>
-          </telerik:RadMap>
+    #### __XAML__
+      <telerik:RadMap x:Name="radMap" ZoomLevel="1">
+        <telerik:RadMap.Provider>
+          <telerik:BingRestMapProvider ApplicationId=" Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
+        </telerik:RadMap.Provider>
+      </telerik:RadMap>
 
 
 
-	
-          BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Aerial, true, "key" );
-          this.radMap.Provider = bingMap;
+    #### __C#__
+      BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Aerial, true, "key" );
+      this.radMap.Provider = bingMap;
 
 
 
-	
-          Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
-          Me.radMap.Provider = bingMap
+    #### __VB.NET__
+      Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
+      Me.radMap.Provider = bingMap
 
 
 

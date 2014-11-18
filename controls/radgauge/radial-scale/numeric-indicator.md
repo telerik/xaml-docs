@@ -57,7 +57,6 @@ The Numeric indicator supports the following features:
 
 1. Layout 
 
-
 1. The 'telerik.ScaleObject.RelativeX' property specifies the position of Numeric Indicator left side relative to a scale size.
 
 1. The 'telerik:ScaleObject.RelativeY' property specifies the position of Numeric Indicator top side relative to a scale size.
@@ -67,7 +66,6 @@ The Numeric indicator supports the following features:
 1. The 'telerik.ScaleObject.RelativeWidth' property specifies width of the Numeric Indicator relative to a scale size.
 
 1. Appearance 
-
 
 1. The 'Format' property specifies position of decimal point.
 

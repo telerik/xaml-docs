@@ -12,15 +12,15 @@ position: 0
 
 
 
-This topic covers the specific events exposed by the __RadMaskedInput__controls.
+This topic covers the specific events exposed by the __RadMaskedInput__ controls.
 
 ## 
 
-All __RadMaskedInput__controls raise the following specific events:
+All __RadMaskedInput__ controls raise the following specific events:
 
-* __ValueChanging__ - occurs when a __RadMaskedInput__control's __Value__ property is about to be changed.
+* __ValueChanging__ - occurs when a __RadMaskedInput__ control's __Value__ property is about to be changed.
 
-* __ValueChanged__ - occurs when a __RadMaskedInput__control's __Value__ property has changed.
+* __ValueChanged__ - occurs when a __RadMaskedInput__ control's __Value__ property has changed.
 
 # See Also
 

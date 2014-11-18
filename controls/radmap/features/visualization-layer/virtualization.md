@@ -60,9 +60,11 @@ Specifying the size of а cell for the zoom level affects a number of requests t
 The data provided to the __VisualizationLayer__ should be wrapped in a class that implements the __IMapItemsVirtualizationSource__ interface. This interface contains a __MapItemsRequest__ method, which is used by the __VisualizationLayer__ to request new data whenever the __ZoomLevel__ or __Center__ properties of the __RadMap__ control are changed. The number of requests depends on the number of the grid cells visualized in the current viewport of the control. Below you can see examples of different viewports.
         
 
-If the cell size is 256x256 pixels (the default one) and there are 9 cells in the viewport of the control - 9 requests will be sent to the virtualization source whenever this geographical region comes into the view.![Rad Map visualization layer virtualization](images/RadMap_visualization_layer_virtualization.png)
+If the cell size is 256x256 pixels (the default one) and there are 9 cells in the viewport of the control - 9 requests will be sent to the virtualization source whenever this geographical region comes into the view.
+![Rad Map visualization layer virtualization](images/RadMap_visualization_layer_virtualization.png)
 
-In this case only 6 requests will be sent to the virtualization source whenever this geographical region comes into the view.![Rad Map visualization layer virtualization 2](images/RadMap_visualization_layer_virtualization_2.png)
+In this case only 6 requests will be sent to the virtualization source whenever this geographical region comes into the view.
+![Rad Map visualization layer virtualization 2](images/RadMap_visualization_layer_virtualization_2.png)
 
 Here is an example of how to implement simple virtualization source:
 
@@ -191,7 +193,7 @@ Here is an example of how to implement simple virtualization source:
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radmap-visualization-layer-virtualization_1}}
 	    Public Class MyVirtualizationSource
@@ -230,7 +232,7 @@ Here is an example of how to implement simple virtualization source:
 	            End If
 	
 	            If minZoom = 9 Then
-	                ' request areas
+	                ' request areas'
 	                Dim list As List(Of StoreLocation) =
 	                    Me.GetStores(upperLeft.Latitude,
 	                                 upperLeft.Longitude,
@@ -316,70 +318,70 @@ Here is a sample of the __VisualizationLayer__ declaration with UI Virtualizatio
 #### __XAML__
 
 {{region radmap-visualization-layer-virtualization_2}}
-	        <UserControl x:Class="TestMapFeatures.Views.VisualizationLayer.Virtualization.ItemsVirtualization"
-	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-				 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-				 xmlns:local="clr-namespace:TestMapFeatures.Views.VisualizationLayer.Virtualization"
-	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-	             mc:Ignorable="d" 
-	             d:DesignHeight="300" d:DesignWidth="300">
-	            <UserControl.Resources>
-	                <DataTemplate x:Key="AreaTemplate">
-	                    <Ellipse telerik:MapLayer.Location="{Binding Location}"
-						 Width="20" Height="20"
-						 VerticalAlignment="Stretch"
-						 HorizontalAlignment="Center"
-						 Fill="Red" />
-	                </DataTemplate>
-	
-	                <DataTemplate x:Key="MarketTemplate">
-	                    <Rectangle telerik:MapLayer.Location="{Binding Location}"
-						   Width="20" Height="20"
-						   VerticalAlignment="Stretch"
-						   HorizontalAlignment="Center"
-						   Stroke="Orange"
-						   StrokeThickness="8"
-						   Fill="#01000000" />
-	                </DataTemplate>
-	
-	                <DataTemplate x:Key="StoreTemplate">
-	                    <Ellipse telerik:MapLayer.Location="{Binding Location}"
-						 Width="20" Height="20"
-						 VerticalAlignment="Stretch"
-						 HorizontalAlignment="Center"
-						 Stroke="Green"
-						 StrokeThickness="3"
-						 Fill="#01000000" />
-	                </DataTemplate>
-	
-	                <local:StoreTemplateSelector x:Key="StoreTemplateSelector"
-										 AreaTemplate="{StaticResource AreaTemplate}"
-										 MarketTemplate="{StaticResource MarketTemplate}"
-										 StoreTemplate="{StaticResource StoreTemplate}"/>
-	
-	                <local:MyVirtualizationSource x:Key="MyVirtualizationSource" />
-	            </UserControl.Resources>
-	            <Grid>
-	                <telerik:RadMap x:Name="radMap"
-							ZoomLevel="4"
-							Center="37.684297,-99.06924">
-	                    <telerik:RadMap.Provider>
-	                        <telerik:OpenStreetMapProvider />
-	                    </telerik:RadMap.Provider>
-	                    <telerik:VisualizationLayer x:Name="visualizationLayer"
-											ItemTemplateSelector="{StaticResource StoreTemplateSelector}"
-											VirtualizationSource="{StaticResource MyVirtualizationSource}">
-	                        <telerik:VisualizationLayer.ZoomLevelGridList>
-	                            <telerik:ZoomLevelGrid MinZoom="3" />
-	                            <telerik:ZoomLevelGrid MinZoom="9" />
-	                        </telerik:VisualizationLayer.ZoomLevelGridList>
-	                    </telerik:VisualizationLayer>
-	                </telerik:RadMap>
-	
-	            </Grid>
-	        </UserControl>
+    <UserControl x:Class="TestMapFeatures.Views.VisualizationLayer.Virtualization.ItemsVirtualization"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+         xmlns:local="clr-namespace:TestMapFeatures.Views.VisualizationLayer.Virtualization"
+         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+         mc:Ignorable="d" 
+         d:DesignHeight="300" d:DesignWidth="300">
+        <UserControl.Resources>
+            <DataTemplate x:Key="AreaTemplate">
+                <Ellipse telerik:MapLayer.Location="{Binding Location}"
+                 Width="20" Height="20"
+                 VerticalAlignment="Stretch"
+                 HorizontalAlignment="Center"
+                 Fill="Red" />
+            </DataTemplate>
+
+            <DataTemplate x:Key="MarketTemplate">
+                <Rectangle telerik:MapLayer.Location="{Binding Location}"
+                   Width="20" Height="20"
+                   VerticalAlignment="Stretch"
+                   HorizontalAlignment="Center"
+                   Stroke="Orange"
+                   StrokeThickness="8"
+                   Fill="#01000000" />
+            </DataTemplate>
+
+            <DataTemplate x:Key="StoreTemplate">
+                <Ellipse telerik:MapLayer.Location="{Binding Location}"
+                 Width="20" Height="20"
+                 VerticalAlignment="Stretch"
+                 HorizontalAlignment="Center"
+                 Stroke="Green"
+                 StrokeThickness="3"
+                 Fill="#01000000" />
+            </DataTemplate>
+
+            <local:StoreTemplateSelector x:Key="StoreTemplateSelector"
+                                 AreaTemplate="{StaticResource AreaTemplate}"
+                                 MarketTemplate="{StaticResource MarketTemplate}"
+                                 StoreTemplate="{StaticResource StoreTemplate}"/>
+
+            <local:MyVirtualizationSource x:Key="MyVirtualizationSource" />
+        </UserControl.Resources>
+        <Grid>
+            <telerik:RadMap x:Name="radMap"
+                    ZoomLevel="4"
+                    Center="37.684297,-99.06924">
+                <telerik:RadMap.Provider>
+                    <telerik:OpenStreetMapProvider />
+                </telerik:RadMap.Provider>
+                <telerik:VisualizationLayer x:Name="visualizationLayer"
+                                    ItemTemplateSelector="{StaticResource StoreTemplateSelector}"
+                                    VirtualizationSource="{StaticResource MyVirtualizationSource}">
+                    <telerik:VisualizationLayer.ZoomLevelGridList>
+                        <telerik:ZoomLevelGrid MinZoom="3" />
+                        <telerik:ZoomLevelGrid MinZoom="9" />
+                    </telerik:VisualizationLayer.ZoomLevelGridList>
+                </telerik:VisualizationLayer>
+            </telerik:RadMap>
+
+        </Grid>
+    </UserControl>
 	{{endregion}}
 
 
@@ -393,9 +395,11 @@ In the above sample, for example, when the __ZoomLevel__ is 1 or 2, no requests 
 In the snapshots below you can see how the above example will be displayed with different __ZoomLevel__ settings
         
 
-The result at ZoomLevel 3![radmap-visualization-layer-virtualization](images/radmap-visualization-layer-virtualization.png)
+The result at ZoomLevel 3:
+![radmap-visualization-layer-virtualization](images/radmap-visualization-layer-virtualization.png)
 
-The result at ZoomLevel 9![radmap-visualization-layer-virtualization-zoomed](images/radmap-visualization-layer-virtualization-zoomed.png)
+The result at ZoomLevel 9:
+![radmap-visualization-layer-virtualization-zoomed](images/radmap-visualization-layer-virtualization-zoomed.png)
 
 # See Also
 

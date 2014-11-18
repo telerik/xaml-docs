@@ -12,7 +12,7 @@ position: 2
 
 
 
-The __RadMap__exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
+The __RadMap__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 
 You have two options:
 
@@ -28,15 +28,11 @@ To copy the default styles, load your project in Expression Blend and open the U
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __RadMap__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __RadMap__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list, you will find the brushes, styles and templates needed to change the visual appearance of the __RadMap____.__ Their names indicate to which part of the __RadMap__appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list, you will find the brushes, styles and templates needed to change the visual appearance of the __RadMap__. Their names indicate to which part of the __RadMap__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_StylingRadMap_01.png){% endif %}
+![](images/RadMap_StylesAndTemplates_StylingRadMap_01.png){% endif %}
 
 * __MapBackground__ - a brush that represents the background color of the __RadMap__ control.
 
@@ -58,11 +54,7 @@ Here is an example of these resource modified:{% endif %}{% if site.site_name ==
 
 And here is a snapshot of the final result.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadMap_StylesAndTemplates_StylingRadMap_03.png){% endif %}
+![](images/RadMap_StylesAndTemplates_StylingRadMap_03.png){% endif %}
 
 # See Also
 

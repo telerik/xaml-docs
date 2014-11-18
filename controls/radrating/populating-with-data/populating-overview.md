@@ -17,20 +17,16 @@ position: 0
 In order to display items, you have to populate the __RadRating__ control with some data. You can do this in four ways:
 		
 
-* 
-			You just add new __RadRating__ and it comes with its default 5 rating items [stars]
+* You just add new __RadRating__ and it comes with its default 5 rating items [stars]
 		  
 
-* 
-			Set a value to the __NumberOfItemsToGenerate__ property of the __RadRating__ control
+* Set a value to the __NumberOfItemsToGenerate__ property of the __RadRating__ control
 		  
 
-* 
-			Manually, by adding items to the __Items__collection
+* Manually, by adding items to the __Items__ collection
 		  
 
-* 
-			With data binding, by using the __ItemsSource__ property
+* With data binding, by using the __ItemsSource__ property
 		  
 
 In this section you will find:

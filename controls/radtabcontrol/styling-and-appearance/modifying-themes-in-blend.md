@@ -13,7 +13,7 @@ site_name: Silverlight
 
 
 
-Themes can be modified either by changing the properties of the __RadTabControl__or by modifying its __ControlTemplate__.
+Themes can be modified either by changing the properties of the __RadTabControl__ or by modifying its __ControlTemplate__.
 			
 
 ## Modifying the Theme via Style
@@ -55,7 +55,7 @@ To apply the style just set the style property of the tab control in XAML pointi
 
 
 
->tipIt’s best for styles to be defined in the __UserControl’s__ resources or in the __Application’s__ resources.____
+>tipIt’s best for styles to be defined in the __UserControl’s__ resources or in the __Application’s__ resources.
 
 ## Modifying the Theme via the ControlTemplate
 
@@ -66,13 +66,16 @@ To modify the __ControlTemplate__ of the __RadTabControl__ in Expression Blend f
 				
 
 Select the __RadTabControl__ you want to modify.
-				![](images/RadTabControl_Figure_00290.png)
+![](images/RadTabControl_Figure_00290.png)
 
-Right-click on the __RadTabControl__ and choose __Edit Control Parts -> Edit a Copy.__![](images/RadTabControl_Figure_00300.png)
+Right-click on the __RadTabControl__ and choose __Edit Control Parts -> Edit a Copy.__
+![](images/RadTabControl_Figure_00300.png)
 
-Choose a name for the template and where to define it.![](images/RadTabControl_Figure_00310.png)
+Choose a name for the template and where to define it.
+![](images/RadTabControl_Figure_00310.png)
 
-Modify the controls of the template or add additional if needed.![](images/RadTabControl_Figure_00320.png)
+Modify the controls of the template or add additional if needed.
+![](images/RadTabControl_Figure_00320.png)
 
 If you take a look at the XAML in Visual Studio you will see a lot of code. There are several __Brushes__ defined and several __ControlTemplates__, followed by a __Style__. These four templates are used by the __Top__-, __Right__-, __Bottom-__ and __LeftTemplate__ properties ([more about them here]({%slug radtabcontrol-left-top-right-bottom-templates%})). As a default template is used the __TopTemplate__ value:
 				

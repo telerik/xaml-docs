@@ -10,29 +10,20 @@ position: 0
 
 # Overview
 
-
-
 In __RadGanttView__ displaying the Tasks fields is done with the use of different columns. There are two types of columns that could be defined in the control: __TreeColumn__ and a normal __Column__. The TreeColumn is a special type of column that is used to visualize the tasks and their children as a tree. Both types of columns have the following customizable Templates: CellTemplate, CellEditTemplate, CellHighlightTemplate and CellSelectionTemplate.
 
->Before proceeding with the following example you should get familiar with [Implementing View-ViewModel]({%slug radganttview-populating-with-data-viewmodel%}).
-        
+>Before proceeding with the following example you should get familiar with [Implementing View-ViewModel]({%slug radganttview-populating-with-data-viewmodel%}). 
 
->importantWith our official Q1 2013 release of __RadGanttView__ you can set each ColumnDefinition’s Width to a set of predefined values (__50__, __100__, __150__, __200__, __250__, __300__, __AutoHeader__ and __AutoHeaderAndContent__). The AutoHeader and AutoHeaderAndContent calculate the necessary Width automatically in the code of the control.
-        
+<!-- -->
 
-* The 50 to 300 values are predefined values in inches.
-            
-
-* The AutoHeader is a predefined value that will set the Width of the ColumnDefinition to the __Width__ that is required in order to render its Header.
-            
-
-* The AutoHeaderAndContent is a predefined value that will set the Width of the ColumnDefinition to the Width that is required in order to render its Header and content. If one is bigger than the other the bigger value will be used.
-            
+>With our official Q1 2013 release of __RadGanttView__ you can set each ColumnDefinition’s Width to a set of predefined values (__50__, __100__, __150__, __200__, __250__, __300__, __AutoHeader__ and __AutoHeaderAndContent__). The AutoHeader and AutoHeaderAndContent calculate the necessary Width automatically in the code of the control.
+>	* The 50 to 300 values are predefined values in inches.
+>	* The AutoHeader is a predefined value that will set the Width of the ColumnDefinition to the __Width__ that is required in order to render its Header.
+>	* The AutoHeaderAndContent is a predefined value that will set the Width of the ColumnDefinition to the Width that is required in order to render its Header and content. If one is bigger than the other the bigger value will be used.
 
 In order to define columns in the RadGanttView control all that is needed is to add them to the Columns collection of the control.
 
 * First you will need to declare the RadGanttView control and populate it with some data:
-          
 
 #### __XAML__
 
@@ -41,12 +32,9 @@ In order to define columns in the RadGanttView control all that is needed is to 
 						  VerticalAlignment="Top"
 						  VisibleRange="{Binding VisibleTime}">
 	</telerik:RadGanttView>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Then define the needed columns to the Columns collection of the control:
-          
 
 #### __XAML__
 
@@ -60,12 +48,9 @@ In order to define columns in the RadGanttView control all that is needed is to 
 			<telerik:ColumnDefinition/>
 		</telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
-
-
-* Finally set the Header, MemberBinding and any other properties of the columns:
-          
+* Finally set the Header, MemberBinding and any other properties of the columns: 
 
 #### __XAML__
 
@@ -79,11 +64,11 @@ In order to define columns in the RadGanttView control all that is needed is to 
 			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 		</telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
+The next screenshot shows the final result:
 
-
-The next screenshot shows the final result:![radganttview-features-columns-overview](images/radganttview-features-columns-overview.png)
+![radganttview-features-columns-overview](images/radganttview-features-columns-overview.png)
 
 # See Also
 

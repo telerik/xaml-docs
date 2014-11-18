@@ -10,8 +10,6 @@ position: 2
 
 # Split Container
 
-
-
 The __RadSplitContainer__ allows you to use movable bars to divide the displayed area into resizable parts. With the __RadDocking__'s __SplitContainers__ you can build complex layouts like the one on the snapshot below. Some practical examples of such layouts are Explorer-like and Outlook-like interfaces.
 
 ![](images/RadDocking_Features_SplitContainer_010.png)
@@ -70,7 +68,7 @@ When you want to achieve __vertically__ oriented layout, you need to set the __O
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_Features_SplitContainer_020.png)
 
@@ -94,11 +92,11 @@ When you want to achieve __horizontally__ oriented layout, you need to set the _
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
+Then the result will be:
 
-
-Then the result will be:![](images/RadDocking_Features_SplitContainer_030.png)
+![](images/RadDocking_Features_SplitContainer_030.png)
 
 ## Setting the Orientation Property in the Code-Behind
 
@@ -113,9 +111,7 @@ The __RadSplitContainer__'s __Orientation__ can also be set in the code-behind.
 	{
 	    radSplitContainer.Orientation = Orientation.Vertical;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -123,9 +119,7 @@ The __RadSplitContainer__'s __Orientation__ can also be set in the code-behind.
 	Private Sub SetOrientationToVertical()
 	    radSplitContainer.Orientation = Orientation.Vertical
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 * Setting the __Orientation__ property to __Horizontal__
 
@@ -136,9 +130,7 @@ The __RadSplitContainer__'s __Orientation__ can also be set in the code-behind.
 	{
 	    radSplitContainer.Orientation = Orientation.Horizontal;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -146,9 +138,7 @@ The __RadSplitContainer__'s __Orientation__ can also be set in the code-behind.
 	Private Sub SetOrientationToHorizontal()
 	    radSplitContainer.Orientation = Orientation.Horizontal
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipThe default __Orientation__ for the __RadSplitContainer__ is __Horizontal__.
 
@@ -176,7 +166,7 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_Features_SplitContainer_040.png)
 
@@ -198,7 +188,7 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_Features_SplitContainer_050.png)
 
@@ -220,7 +210,7 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_Features_SplitContainer_060.png)
 
@@ -242,7 +232,7 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_Features_SplitContainer_070.png)
 
@@ -264,7 +254,7 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_Features_SplitContainer_080.png)
 
@@ -286,7 +276,7 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadDocking_Features_SplitContainer_090.png)
 
@@ -305,9 +295,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	{
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedLeft;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -315,9 +303,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	Private Sub SetInitialPositionToLeft()
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedLeft
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 * __DockedTop__
 
@@ -328,9 +314,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	{
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedTop;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -338,9 +322,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	Private Sub SetInitialPositionToTop()
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedTop
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 * __DockedRight__
 
@@ -351,9 +333,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	{
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedRight;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -361,9 +341,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	Private Sub SetInitialPositionToRight()
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedRight
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 * __DockedBottom__
 
@@ -374,9 +352,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	{
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedBottom;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -384,9 +360,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	Private Sub SetInitialPositionToBottom()
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedBottom
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 * __FloatingOnly__
 
@@ -397,9 +371,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	{
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.FloatingOnly;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -407,9 +379,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	Private Sub SetInitialPositionToFloatingOnly()
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.FloatingOnly
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 * __FloatingDockable__
 
@@ -420,9 +390,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	{
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.FloatingDockable;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -430,9 +398,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 	Private Sub SetInitialPositionToFloatingDockable()
 	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.FloatingDockable
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipPlace each [RadPane]({%slug raddocking-panes-radpane%}) ([RadPaneGroup]({%slug raddocking-features-pane-groups%})) in a separate split container to have the power to initially dock them as desired using the __InitialPosition__ property.
 
@@ -450,9 +416,7 @@ You can set the initial size of your split containers using the attached propert
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 On the snapshot you can see that the pane titled "Left Pane" has width set to 80, while its height is equal to the height of the container to which it is docked, ignoring the height specified by the __DockingPanel.InitialSize__ property.![](images/RadDocking_Features_SplitContainer_100.png)
 
@@ -479,9 +443,7 @@ For this purpose you need to set the __RadDocking.FloatingSize__ attached proper
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 >Note that the __InitialPosition__ must be set either to __FloatingOnly__ or __FloatingDockable__. Otherwise setting the __RadDocking.FloatingSize__ attached property will not affect the size of the split container.
 
@@ -491,10 +453,8 @@ For this purpose you need to set the __RadDocking.FloatingSize__ attached proper
 
 Similarly to the initial floating size you have the ability to set the __initial floating location__ of the __RadSplitContainer__.
         
-
 For this purpose you need to set the __RadDocking.FloatingLocation__ attached property like it is shown in the example below:
         
-
 #### __XAML__
 
 {{region raddocking-features-split-container_26}}
@@ -512,9 +472,7 @@ For this purpose you need to set the __RadDocking.FloatingLocation__ attached pr
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 >Note that the __InitialPosition__ must be set either to __FloatingOnly__ or __FloatingDockable__. Otherwise setting the __RadDocking.FloatingLocation__ attached property will not affect the location of the split container.
 
@@ -524,7 +482,6 @@ For this purpose you need to set the __RelativeSize__ attached property of the _
     		By using this property you can proportionally divide the width or the hight occupied by two or more __RadSplitContainers__ placed in the same RadSplitContainer. 
     		For example, if you have two split containtainers, the first one should occupy 1/3 of the available width and the second - the remaining 2/3, you have to set this proportion (1:2) in their widths as it is shown in the code snippet below.
         	
-
 #### __XAML__
 
 {{region raddocking-features-split-container_27}}
@@ -542,7 +499,7 @@ For this purpose you need to set the __RelativeSize__ attached property of the _
 			</telerik:RadSplitContainer>
 		</telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
 ![](images/Features_Panes_Tabbed_030.png)
 
@@ -554,9 +511,9 @@ In order to add a pane group or another split container in the code-behind, you 
 
 ## Other Important Properties Exposed by the RadSplitContainer
 
-* __IsInDocumentHost__ - read-only boolean property. Returns whether the current __RadPaneGroup__ is placed in [DocumentHost]({%slug raddocking-features-document-host%}). ____
+* __IsInDocumentHost__ - read-only boolean property. Returns whether the current __RadPaneGroup__ is placed in [DocumentHost]({%slug raddocking-features-document-host%}).
 
-* __IsInToolWindow__ - read-only boolean property. Returns whether the current __RadPaneGroup__ is in [Tool Window]({%slug raddocking-features-tool-window%}). ____
+* __IsInToolWindow__ - read-only boolean property. Returns whether the current __RadPaneGroup__ is in [Tool Window]({%slug raddocking-features-tool-window%}).
 
 * __SplitterPosition__ - read-only property. Returns the current dock position of the __RadSplitContainer__. If the container is in floatable window, the return value is null.  
 

@@ -14,33 +14,23 @@ position: 2
 
 One of the gauges you can create with the __RadGauge__ control, is a numeric gauge. It is represented by a container with a numerical scale in it. The numerical scale uses a numerical indicator to display the desired value. This topic will guide you in creating a trivial numeric gauge and will explain the following:
 
-* [Defining a Numeric Gauge](#Defining_a_Numeric_Gauge)
+* [Defining a Numeric Gauge](#defining-a-numeric-gauge)
 
-* [Defining a NumericScale](#Defining_a_NumericScale)
+* [Defining a NumericScale](#defining-a-numericscale)
 
-* [Defining a Numeric Indicator](#Defining_a_Numeric_Indicator)
+* [Defining a Numeric Indicator](#defining-a-numeric-indicator)
 
-* [Set Indicator's Position](#Set_Indicator's_Position)
+* [Set Indicator's Position](#set-indicators-position)
 
-* [Configuring the Gauge](#Configuring_the_Gauge)
+* [Configuring the Gauge](#configuring-the-gauge)
 
 ## Defining a Numeric Gauge
 
->
-
-In order to use the __RadGauge__ control and its components you have to reference the following assemblies:
-
-* __Telerik.Windows.Controls.DataVisualization.dll__
-
-* __Telerik.Windows.Controls.dll__
+>In order to use the __RadGauge__ control and its components you have to reference the following assemblies:<br/>* __Telerik.Windows.Controls.DataVisualization.dll__<br/>* __Telerik.Windows.Controls.dll__
 
 There is no special container for the numeric scale, as for the radial or linear scales. However you can use any of the 9 radial gauge and 2 linear gauge controls to wrap the __NumericScale__ control. Additionally you can put NumericScale to the Grid container too. Here is an example:
 
->
-
-
-
-To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
+>To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
 
 #### __XAML__
 

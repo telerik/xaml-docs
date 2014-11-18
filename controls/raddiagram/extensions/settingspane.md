@@ -76,8 +76,7 @@ The __SettingsPane__ has a default view that can be used out-of-the-box in scena
 * __SettingsPaneStyleControl__ - representing the content of the __Style__ tab
 				
 
-* __SettingsPaneTextControl__ - representing the content of the __Text__ tab
-				Furthermore, the content of each control is described in its __ControlTemplate__. This is why in order to change the existing content of a __SettingsPane__ tab, you need to edit the __ControlTemplate__ of the appropriate control.
+* __SettingsPaneTextControl__ - representing the content of the __Text__ tab Furthermore, the content of each control is described in its __ControlTemplate__. This is why in order to change the existing content of a __SettingsPane__ tab, you need to edit the __ControlTemplate__ of the appropriate control.
 			
 
 ## Events
@@ -110,63 +109,61 @@ __RadDiagram__ exposes two events that come in handy while working with the defa
 
 The __SettingsPane ControlTemplate__ consists of the following elements:
 		
-<table><tr><td>![Rad Diagram Settings Pane Templated Structure](images/RadDiagram_SettingsPane_TemplatedStructure.png)</td><td>
+![Rad Diagram Settings Pane Templated Structure](images/RadDiagram_SettingsPane_TemplatedStructure.png)
 
-* 
+* __RootBorder__ - a __Border__ that represents the main layout control in the __SettingsPane__
 
-* <b>RootBorder</b> - a <b>Border</b> that represents the main layout control in the <b>SettingsPane</b>
-
-* <b>[Grid]</b> - a <b>Grid</b> that hosts the <b>SettingsPane ControlTemplate</b> elements
+* __[Grid]__ - a __Grid__ that hosts the __SettingsPane ControlTemplate__ elements
 					  
 
-* <b>[Canvas]</b> - a <b>Canvas</b> that hosts the <b>ToggleButton</b> element
+* __[Canvas]__ - a __Canvas__ that hosts the __ToggleButton__ element
 						  
 
-* <b>ToggleButton</b> - a <b>RadToggleButton</b> control that represents an inactive <b>SettingsPane</b>. Once this button is clicked, the <b>SettingsPaneView</b> gets activated and displayed.
+* __ToggleButton__ - a __RadToggleButton__ control that represents an inactive __SettingsPane__. Once this button is clicked, the __SettingsPaneView__ gets activated and displayed.
 							  
 
-* <b>Popup</b> - a <b>Popup</b> control that represents the active <b>SettingsPane</b>
+* __Popup__ - a __Popup__ control that represents the active __SettingsPane__
 
-* <b>[Grid]</b> - a <b>Grid</b> panel that hosts the elements of the active <b>SettingsPane</b>
+* __[Grid]__ - a __Grid__ panel that hosts the elements of the active __SettingsPane__
 
-* <b>[Path]</b> - a <b>Path</b> that represents the callout element of the active <b>SettingsPane</b>
+* __[Path]__ - a __Path__ that represents the callout element of the active __SettingsPane__
 
-* <b>DropShadowEffect</b> - a <b>DropShadowEffect</b>
+* __DropShadowEffect__ - a __DropShadowEffect__
 
-* <b>[Rectangle]</b> - a <b>Rectangle</b> element
+* __[Rectangle]__ - a __Rectangle__ element
 								  
 
-* <b>[Border]</b> - a <b>Border</b> control wrapping the content of the active <b>SettingsPane</b>
+* __[Border]__ - a __Border__ control wrapping the content of the active __SettingsPane__
 
-* <b>SettingsPaneView</b> - a <b>SettingsPaneView</b> control representing the content of the active <b>SettingsPane</b></td></tr></table>
+* __SettingsPaneView__ - a __SettingsPaneView__ control representing the content of the active __SettingsPane__
 
 ## SettingsPaneView ControlTemplate Structure
 
 The __SettingsPaneView__ represents the default content of the __RadDiagram SettingsPane__. This means that if you need to add or remove any tabs from the __SettingsPane__, you'll have to add or remove them from the __SettingsPaneView__ control. You can examine the __SettingsPaneView ControlTemplate__ structure below:
 		
-<table><tr><td>![Rad Diagram Settings Pane View Templated Structure](images/RadDiagram_SettingsPaneView_TemplatedStructure.png)</td><td>
+![Rad Diagram Settings Pane View Templated Structure](images/RadDiagram_SettingsPaneView_TemplatedStructure.png)
 
-* <b>[Border]</b> - a <b>Border</b> control that hosts the content of the <b>SettingsPaneView</b>
+* __[Border]__ - a __Border__ control that hosts the content of the __SettingsPaneView__
 
-* <b>TabControl</b> - a <b>RadTabControl</b> that represents the content of the <b>SettingsPaneView</b>
+* __TabControl__ - a __RadTabControl__ that represents the content of the __SettingsPaneView__
 
-* <b>DropShadowEffect</b> - a <b>DropShadowEffect</b>
+* __DropShadowEffect__ - a __DropShadowEffect__
 
-* <b>[RadTabItem]</b> - a <b>RadTabItem</b> control that represents the <b>Home</b> tab in the <b>SettingsPaneView</b>
+* __[RadTabItem]__ - a __RadTabItem__ control that represents the __Home__ tab in the __SettingsPaneView__
 
-* <b>SettingsPaneHomeControl</b> - a <b>SettingsPaneHomeControl</b> that represents the content of the <b>Home</b> tab in the <b>SettingsPaneView</b>
+* __SettingsPaneHomeControl__ - a __SettingsPaneHomeControl__ that represents the content of the __Home__ tab in the __SettingsPaneView__
 
-* <b>[RadTabItem]</b> - a <b>RadTabItem</b> control that represents the <b>Size</b> tab in the <b>SettingsPaneView</b>
+* __[RadTabItem]__ - a __RadTabItem__ control that represents the __Size__ tab in the __SettingsPaneView__
 
-* <b>SettingsPaneSizeControl</b> - a <b>SettingsPaneSizeControl</b> that represents the content of the <b>Size</b> tab in the <b>SettingsPaneView</b>
+* __SettingsPaneSizeControl__ - a __SettingsPaneSizeControl__ that represents the content of the __Size__ tab in the __SettingsPaneView__
 
-* <b>[RadTabItem]</b> - a <b>RadTabItem</b> control that represents the <b>Style</b> tab in the <b>SettingsPaneView</b>
+* __[RadTabItem]__ - a __RadTabItem__ control that represents the __Style__ tab in the __SettingsPaneView__
 
-* <b>SettingsPaneStyleControl</b> - a <b>SettingsPaneStyleControl</b> that represents the content of the <b>Style</b> tab in the <b>SettingsPaneView</b>
+* __SettingsPaneStyleControl__ - a __SettingsPaneStyleControl__ that represents the content of the __Style__ tab in the __SettingsPaneView__
 
-* <b>[RadTabItem]</b> - a <b>RadTabItem</b> control that represents the <b>Text</b> tab in the <b>SettingsPaneView</b>
+* __[RadTabItem]__ - a __RadTabItem__ control that represents the __Text__ tab in the __SettingsPaneView__
 
-* <b>SettingsPaneTextControl</b> - a <b>SettingsPaneTextControl</b> that represents the content of the <b>Text</b> tab in the <b>SettingsPaneView</b></td></tr></table>
+* __SettingsPaneTextControl__ - a __SettingsPaneTextControl__ that represents the content of the __Text__ tab in the __SettingsPaneView__</td></tr></table>
 
 >tipPlease note that the content of each tab is represented by a different control. And __Telerik Diagramming Framework__ comes with a predefined style for each of these controls. This means that in order to modify the content of each tab in a __SettingsPane__, you need to actually modify the default __ControlTemplate__ of the appropriate control:
 		  
@@ -181,6 +178,3 @@ The __SettingsPaneView__ represents the default content of the __RadDiagram Sett
 			  
 
 * __SettingsPaneTextControl__ - representing the content of the __Text__ tab
-			  
-
-# See Also

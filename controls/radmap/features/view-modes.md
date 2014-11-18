@@ -63,16 +63,15 @@ Here is an example:
 
 
 
-Additionally as the UI control is represented by the __MapCommandBar__control, you are able use it outside the __RadMap__ and place it somewhere around it. In this case you have to either hide the original one by using the __CommandBarVisibility__ property of the __RadMap__ or the __UseDefaultLayout__ one.
+Additionally as the UI control is represented by the __MapCommandBar__ control, you are able use it outside the __RadMap__ and place it somewhere around it. In this case you have to either hide the original one by using the __CommandBarVisibility__ property of the __RadMap__ or the __UseDefaultLayout__ one.
         
 
->tip
-          Setting the __UseDefaultLayout__ property to __False__ will hide all of the UI controls inside the __RadMap__. To learn more read [here]({%slug radmap-features-default-layout%}).
+>tipSetting the __UseDefaultLayout__ property to __False__ will hide all of the UI controls inside the __RadMap__. To learn more read [here]({%slug radmap-features-default-layout%}).
         
 
-In order to use the __MapCommandBar__ outside of the __RadMap__ you have to 
-          set its __MapControl__ property to the respective __RadMap__ instance. 
-          Here is an example:
+In order to use the __MapCommandBar__ outside of the __RadMap__ you have to set its __MapControl__ property to the respective __RadMap__ instance. 
+
+Here is an example:
         
 
 #### __XAML__
@@ -94,7 +93,9 @@ In order to use the __MapCommandBar__ outside of the __RadMap__ you have to
 
 
 
-Here is a snapshot of the result.![](images/RadMap_Features_ViewModes_02.png)
+Here is a snapshot of the result.
+
+![](images/RadMap_Features_ViewModes_02.png)
 
 # See Also
 

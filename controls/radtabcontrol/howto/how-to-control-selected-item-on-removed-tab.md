@@ -12,28 +12,21 @@ position: 14
 
 
 
-The __RadTabControl__ allows you to control the selection behavior of the control in case the
-      __SelectedItem__ is removed. 
+The __RadTabControl__ allows you to control the selection behavior of the control in case the __SelectedItem__ is removed. 
 
 ## SelectedItemRemoveBehaviour property
 
-The __SelectedItemRemoveBehaviour__ property allows you to choose which __RadTabItem__ 
-        should be selected next in case the currently selected __RadTabItem__ is removed. The property is enumeration of
-        type __SelectedItemRemoveBehaviour__ and it exposes the following members:
+The __SelectedItemRemoveBehaviour__ property allows you to choose which __RadTabItem__ should be selected next in case the currently selected __RadTabItem__ is removed. The property is enumeration of type __SelectedItemRemoveBehaviour__ and it exposes the following members:
 
 * __SelectNone__ - use it to set the __RadTabControl.SelectedItem__ to null 
 
-* __SelectFirst__ - use it to select the first item of the __RadTabControl.Items__ 
-            collection
+* __SelectFirst__ - use it to select the first item of the __RadTabControl.Items__ collection
 
-* __SelectLast__ - use it to select the last item of the __RadTabControl.Items__ 
-            collection
+* __SelectLast__ - use it to select the last item of the __RadTabControl.Items__ collection
 
-* __SelectPrevious__ - use it to select the __RadTabItem__ positioned before the 
-            __SelectedItem__ in the __RadTabControl.Items__ collection
+* __SelectPrevious__ - use it to select the __RadTabItem__ positioned before the __SelectedItem__ in the __RadTabControl.Items__ collection
 
-* __SelectNext__ - use it to select the __RadTabItem__ positioned after the 
-            __SelectedItem__ in the __RadTabControl.Items__ collection
+* __SelectNext__ - use it to select the __RadTabItem__ positioned after the __SelectedItem__ in the __RadTabControl.Items__ collection
 
 # See Also
 

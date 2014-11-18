@@ -55,7 +55,7 @@ For the purpose of this example we will create a __ColorModel__ class and three 
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-binding-object_2}}
 		Public Class ColorModel
@@ -97,7 +97,7 @@ Next we will define the __MainViewModel__ which will wrap and fill the collectio
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-binding-object_4}}
 		Public Class MainViewModel
@@ -119,7 +119,7 @@ Then we can set this model as __DataContext__ of the __RadColorPicker__. Go in y
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-binding-object_6}}
 		Me.DataContext = New MainViewModel()
@@ -143,27 +143,27 @@ These steps can be implemented with the following code:
 #### __XAML__
 
 {{region radcolorpicker-howto-binding-object_0}}
-	        <Grid>
-			<Grid.Resources>
-				<DataTemplate x:Key="PaletteItemsTemplate">
-					<Path Data="M8,6 C8.5522861,6 9.000001,6.4477153 9.000001,7 C9.000001,7.5522847
-						  8.5522861,8 8.000001,8 C7.4477162,8 7.000001,7.5522847 7.000001,7
-						  C7.000001,6.4477153 7.4477162,6 8.000001,6 z M3,0 L8,4 C6.3431458,4
-						  5,5.3431458 5,7 C5,8.6568546 6.3431458,10 8,10 C9.6568546,10 11,8.6568546
-						  11,7 C11,5.3431458 9.6568546,4 8,4 L13,0 L11,6 L16,10 L10,10 L8,16 L6,10
-						  L0,10 L5,6 z ">
-						<Path.Fill>
-							<SolidColorBrush Color="{Binding CustomColor}" />
-						</Path.Fill>
-					</Path>
-				</DataTemplate>
-			</Grid.Resources>
-			<telerik:RadColorPicker ColorPropertyPath="CustomColor"
-			                        HeaderPaletteItemsSource="{Binding HeaderPaletteColors}"
-			                        MainPaletteItemsSource="{Binding MainPaletteColors}"
-			                        PaletteItemsTemplate="{StaticResource PaletteItemsTemplate}"
-			                        StandardPaletteItemsSource="{Binding StandartPaletteColors}" />
-		</Grid>
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="PaletteItemsTemplate">
+                <Path Data="M8,6 C8.5522861,6 9.000001,6.4477153 9.000001,7 C9.000001,7.5522847
+                      8.5522861,8 8.000001,8 C7.4477162,8 7.000001,7.5522847 7.000001,7
+                      C7.000001,6.4477153 7.4477162,6 8.000001,6 z M3,0 L8,4 C6.3431458,4
+                      5,5.3431458 5,7 C5,8.6568546 6.3431458,10 8,10 C9.6568546,10 11,8.6568546
+                      11,7 C11,5.3431458 9.6568546,4 8,4 L13,0 L11,6 L16,10 L10,10 L8,16 L6,10
+                      L0,10 L5,6 z ">
+                    <Path.Fill>
+                        <SolidColorBrush Color="{Binding CustomColor}" />
+                    </Path.Fill>
+                </Path>
+            </DataTemplate>
+        </Grid.Resources>
+        <telerik:RadColorPicker ColorPropertyPath="CustomColor"
+                                HeaderPaletteItemsSource="{Binding HeaderPaletteColors}"
+                                MainPaletteItemsSource="{Binding MainPaletteColors}"
+                                PaletteItemsTemplate="{StaticResource PaletteItemsTemplate}"
+                                StandardPaletteItemsSource="{Binding StandartPaletteColors}" />
+    </Grid>
 	{{endregion}}
 
 
@@ -173,7 +173,7 @@ These steps can be implemented with the following code:
 
 The final result should be similar to the following one:
 
-		![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
+![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
 
 # See Also
 

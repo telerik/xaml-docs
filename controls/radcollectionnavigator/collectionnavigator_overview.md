@@ -10,8 +10,6 @@ position: 1
 
 # Overview
 
-
-
 {% if site.site_name == 'WPF' %}
 
 ![collectionsnavigator wpf 46 text](images/collectionsnavigator_wpf_46_text.png){% endif %}{% if site.site_name == 'Silverlight' %}

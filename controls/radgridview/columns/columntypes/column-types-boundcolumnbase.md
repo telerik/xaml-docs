@@ -11,9 +11,6 @@ position: 1
 # BoundColumnBase
 
 
-
-## 
-
 The __GridViewBoundColumnBase__ derives from the __GridViewColumn__, which means that it inherits all of the functionality too. In addition it allows you to easily bind data, format it and edit it using editors. When the columns of the __RadGridView__ are auto generated they are of this type.
 
 Here is a list of the most important properties and methods.
@@ -47,6 +44,7 @@ The following example iterates all cells in all visible columns of the gridview 
 #### __C#__
 
 {{region radgridview-columns-column-types-boundcolumnbase_0}}
+
 	var visibleColumns = RadGridView1.Columns.OfType<GridViewBoundColumnBase>()
 	                     .Where(c => c.IsVisible)
 	                     .OrderBy(c => c.DisplayIndex).ToList();
@@ -57,7 +55,7 @@ The following example iterates all cells in all visible columns of the gridview 
 	     var value = visibleColumns[j].GetValueForItem(RadGridView1.Items[i]);
 	  }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 

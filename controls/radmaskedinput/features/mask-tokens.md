@@ -178,13 +178,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	</StackPanel>
 	{{endregion}}
 
-
-
-
-
-
-				   
-				![](images/radmaskedinput_features_tokens_datetime.png)
+![](images/radmaskedinput_features_tokens_datetime.png)
 
 ### 2. Custom DateTime Format Codes
 
@@ -229,7 +223,7 @@ When standard date codes are too restrictive, you can create your own custom for
 * __m, mm__ - Minute token
 			  
 
-* __s____,ss__ - Second token
+* __s__ __,ss__ - Second token
 			  
 
 * __t__ - The first character in the AM/PM designator.
@@ -289,12 +283,7 @@ When standard date codes are too restrictive, you can create your own custom for
 
 ![](images/radmaskedinput_features_tokens_datetime_custom.png)
 
->
-
-
-				  If you use the __yy__ mask token, you need to keep in mind that the two letter year section will represent date time objects between the years of 1929 and 2029. Basically the __RadMaskedDateTimeInput__ control uses the __Culture__ settings and specifically the __Calendar.TwoDigitYearMax__ property to distinguish the year that is entered in the control based on its last two digits.
-				  You can find more information
-				  [here](http://msdn.microsoft.com/en-us/library/system.globalization.calendar.twodigityearmax.aspx).
+>If you use the __yy__ mask token, you need to keep in mind that the two letter year section will represent date time objects between the years of 1929 and 2029. Basically the __RadMaskedDateTimeInput__ control uses the __Culture__ settings and specifically the __Calendar.TwoDigitYearMax__ property to distinguish the year that is entered in the control based on its last two digits. You can find more information [here](http://msdn.microsoft.com/en-us/library/system.globalization.calendar.twodigityearmax.aspx).
 				
 
 ## Modifier Tokens
@@ -313,10 +302,7 @@ When standard date codes are too restrictive, you can create your own custom for
 
 
 
->important
-
-
-			Please note that the  "<" and ">" must be escaped in XAML, otherwise  the Visual Studio might throw an error.
+>importantPlease note that the  "<" and ">" must be escaped in XAML, otherwise  the Visual Studio might throw an error.
 		  
 
 ![](images/radmaskedinput_features_tokens_modifier.png)
@@ -327,23 +313,19 @@ When you customize a mask you should keep in mind that the Mask is basically str
 
 __MaskTokenN.F__
 
-* __MaskToken -__MaskToken restricting the input characters
+* __MaskToken__ - MaskToken restricting the input characters
 			
 
-* __N -__Number of input characters, not required
+* __N__ - Number of input characters, not required
 			
 
-* __F -__Number of input digits after the decimal point, not required
+* __F__ - Number of input digits after the decimal point, not required
 			
 
 For instance: 
-
-	
-			<telerik:RadMaskedNumericInput Mask="#3.2" />
-		  
-
-
-
+#### __XAML__
+     <telerik:RadMaskedNumericInput Mask="#3.2" />
+     
 # See Also
 
  * [Common Features]({%slug radmaskedinput-features-common%})

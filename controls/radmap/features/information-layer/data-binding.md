@@ -20,9 +20,9 @@ In order to display your map data dynamically you just have to treat the __Infor
 
 There are two approaches you can use:
 
-* [directly bind the appropriate attached properties in the DataTemplate](#Using_Data_Binding_in_the_DataTemplate)
+* [directly bind the appropriate attached properties in the DataTemplate](#using-data-binding-in-the-datatemplate)
 
-* [use DataMappings](#Using_DataMappings)
+* [use DataMappings](#using-datamappings)
 
 ## Using Data Binding in the DataTemplate
 
@@ -122,13 +122,11 @@ By using this approach you have to define mappings between the data fields and t
 
 >tipThe __DataMember__ enumeration used for the ValueMember value allows you to map not only the __Location__, __ZoomLevel__ and __ZoomRange__. You can also map __Latitude__, __Longitude__, __ZoomRangeMin__ and __ZoomRangeMax__. Which means that your business object can provide simple double properties for these values instead of the complex __Location__ and __ZoomRange__ ones.
 
->
-
-In this example, the same __ItemTemplate__, business object and sample data will be used as in the example from the previous section of this topic. 
+>In this example, the same __ItemTemplate__, business object and sample data will be used as in the example from the previous section of this topic. 
 
 The code for the business object and for the sample data can be found at the [end of the topic](#sample_code).
 
-To learn how and when to set the __ItemsSource__ of the __InformationLayer__, please read [the previous section](#Using_Data_Binding_in_the_DataTemplate).
+To learn how and when to set the __ItemsSource__ of the __InformationLayer__, please read [the previous section](#using-data-binding-in-the-datatemplate).
 
 #### __XAML__
 

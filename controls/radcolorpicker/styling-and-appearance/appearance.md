@@ -17,7 +17,7 @@ position: 1
 You can customize the appearance of a __RadColorPicker__ by choosing which of the parts to be visible.
         
 
-1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__, otherwise you should set it to false:
+##### 1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__, otherwise you should set it to false:
             
 
 #### __XAML__
@@ -48,7 +48,7 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
     
 ![No Color Field](images/NoColorField.png)
 
-1. You can use __StandardPaletteVisibility__ and __HeaderPaletteVisibility__ in order to set the visibility of the corresponding palettes:
+##### 2. You can use __StandardPaletteVisibility__ and __HeaderPaletteVisibility__ in order to set the visibility of the corresponding palettes:
             
 
 * __StandardPaletteVisibility__
@@ -109,7 +109,7 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
 
 {% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}
 
-1. You can set different text for __StandardPalette__ header text, __MainPalette__ header text and __NoColorText__.
+##### 3. You can set different text for __StandardPalette__ header text, __MainPalette__ header text and __NoColorText__.
             
 
 * __StandardPaletteHeaderText__
@@ -178,7 +178,7 @@ You can customize the appearance of a __RadColorPicker__ by choosing which of th
 	{{endregion}}
 
 
-1. __RadColorPicker__ is a stylable control. You can customize the look of the RadSplitButton. In order to do this you should use __SplitButtonStyle__ property.
+##### 4. __RadColorPicker__ is a stylable control. You can customize the look of the RadSplitButton. In order to do this you should use __SplitButtonStyle__ property.
             
 
 * __SplitButtonStyle__ - this property should be used to control the style of the split button.

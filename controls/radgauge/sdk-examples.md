@@ -313,5 +313,3 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Ticks size__ - To specify the size of all major ticks you should use the MajorTickRelativeWidth and MajorTickRelativeHeight properties of the respective Scale object. You can use the MinorTickRelativeWidth and MinorTickRelativeHeight properties to change the size of the minor ticks or the MiddleTickRelativeWidth and MiddleTickRelativeHeight properties to change the size of the middle ticks respectively. The tick's size is relative to the cell size of the scale.{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

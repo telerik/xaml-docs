@@ -10,8 +10,6 @@ position: 6
 
 # SDK Examples
 
-
-
 The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/master/) provides additional demos for most of the Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls. The examples demonstrate many specific user case scenarios, that might be really helpful. In this article you can find the complete list of all SDK examples for __RadDocking__.
 
 ## List of all RadDocking SDK examples:{% if site.site_name == 'WPF' %}
@@ -40,8 +38,7 @@ This example demonstrates how to use a custom DockingPanesFactory in order to ad
 The issue is caused because the Application.Current is Specific for WPF Application.
 Therefore when using WPF controls in WinForms Application it needs to be initialized an instance of WPF Application. This shoud be done in the WinForms Application.
 
-* __Floating Panes taskbar icons__ - 
-This example demonstrates how to show the floating Panes in the taskbar and set a default icon or a specific icon for specific Panes.
+* __Floating Panes taskbar icons__ - This example demonstrates how to show the floating Panes in the taskbar and set a default icon or a specific icon for specific Panes.
 
 * __MDI Layout__ - 
 This example demonstrates how to achieve MDI layout with the Docking control.
@@ -166,5 +163,3 @@ This example shows how to implement the main functionality of RadDocking using M
  - Custom Compass logic{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

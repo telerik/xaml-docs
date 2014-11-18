@@ -20,7 +20,9 @@ The article focuses on the following topics:
 
 * [Rotation Using Command Descriptors](#rotation-using-command-descriptors)
 
-* [Rotation Using RadPdfViewer](#rotation-using-radpdfviewer)![Rad Pdf Viewer Rotation](images/RadPdfViewer_Rotation.png)
+* [Rotation Using RadPdfViewer](#rotation-using-radpdfviewer)
+ 
+![Rad Pdf Viewer Rotation](images/RadPdfViewer_Rotation.png)
 
 ## Rotation Using Command Descriptors
 
@@ -47,7 +49,7 @@ Here is an example usage of those command descriptors:
 {{region radpdfviewer-rotation_0}}
 	        <telerik:RadButton Content="Clockwise" Command="{Binding ElementName=radPdfViewer, Path=CommandDescriptors.RotateClockwiseCommandDescriptor.Command}"/>
 	        <telerik:RadButton Content="Counterclockwise" Command="{Binding ElementName=radPdfViewer, Path=CommandDescriptors.RotateCounterClockwiseCommandDescriptor.Command}" />
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -63,7 +65,7 @@ __RotationAngle__ is an enumeration that specifies the angle at which the docume
 
 {{region radpdfviewer-rotation_1}}
 	    this.viewer.SetRotationAngle(RotationAngle.Degrees180);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -74,8 +76,6 @@ The current angle at which the pages are rotated can be retrieved using the read
 
 {{region radpdfviewer-rotation_2}}
 	    RotationAngle currentAngle = this.viewer.RotationAngle;
-	{{endregion}}
+{{endregion}}
 
 
-
-# See Also

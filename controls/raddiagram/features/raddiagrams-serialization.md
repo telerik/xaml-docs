@@ -12,20 +12,17 @@ position: 7
 
 
 
-__RadDiagram Framework__ allows you to serialize (save) your current diagram in an XML string and later deserialize it (load).
-				You can achieve this with the __RadDiagram.Save()__ and __RadDiagram.Load(string serializationString)__ methods. You may also use the DiagramCommands __Save__ and __Open__.
+__RadDiagram Framework__ allows you to serialize (save) your current diagram in an XML string and later deserialize it (load). You can achieve this with the __RadDiagram.Save()__ and __RadDiagram.Load(string serializationString)__ methods. You may also use the DiagramCommands __Save__ and __Open__.
 			
 
 ## Save And Load A RadDiagram
 
-In the code below you can see how to save and load a __RadDiagram__ using Commands.
-					Please note that before saving the current diagramming structure, it is best to check whether there are any items to save:
+In the code below you can see how to save and load a __RadDiagram__ using Commands. Please note that before saving the current diagramming structure, it is best to check whether there are any items to save:
 				
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-						{% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-						article you can find more information on how to set an application-wide theme.
-					{% if site.site_name == 'Silverlight' %}
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
+
+{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
@@ -129,7 +126,7 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region raddiagrams_features_serialization_0}}
 	Private diagramXMLString As String
@@ -156,8 +153,7 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 
 ![raddiagrams features serialization](images/raddiagrams_features_serialization.png)
 
->Please note that the Content of the Shapes and the Connections is serialized as String. This means that if you have control like ListBox or TreeView as a
-						Content , it will be not serialized successfully.
+>Please note that the Content of the Shapes and the Connections is serialized as String. This means that if you have control like ListBox or TreeView as a Content , it will be not serialized successfully.
 					
 
 ## Extending RadDiagram Serialization

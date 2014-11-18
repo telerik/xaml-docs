@@ -10,21 +10,17 @@ position: 1
 
 # Clear Functionality
 
-
-
 __RadCalculator__ supports all native clear functionality the end user is accustomed with.
 		  
-
-## 
 
 * __Delete__ - deletes the last digit from the displayed number.
 				  
 
 * __Clear Entry (CE)__ - clears the current input value:
-					  ![Rad Calculator-Clears Entry](images/RadCalculator-ClearsEntry.png)
+![Rad Calculator-Clears Entry](images/RadCalculator-ClearsEntry.png)
 
 * __Clear (C)__ - clears the input value, the calculated value and the history:
-					  ![Rad Calculator-Clears](images/RadCalculator-Clears.png)
+![Rad Calculator-Clears](images/RadCalculator-Clears.png)
 
 # See Also
 

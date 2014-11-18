@@ -18,11 +18,7 @@ RadPropertyGrid provides an easy and versatile approach to processing data objec
 
 This section defines the terms and concepts used in the scope of the RadPropertyGrid that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to better describe your issue. Below you can see snapshot and explanations of the main states and visual elements of the standard RadPropertyGrid control.
 
-
-
-
-         
-      ![](images/RadPropertyGrid_VisualStructure.png)
+![Rad Property Grid Visual Structure](images/RadPropertyGrid_VisualStructure.PNG)
 
 
 

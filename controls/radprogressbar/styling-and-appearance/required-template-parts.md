@@ -14,10 +14,9 @@ position: 1
 
 ## 
 
-The control template of __RadProgressBar__ contains a number of elements needed for the correct functioning of
-					the control. This section will explain the structure of the RadProgressBar's template. Here is a snapshot of the
-					template generated in Expression Blend.
-				![Rad Progress Bar Template Structure](images/RadProgressBar_TemplateStructure.png)
+The control template of __RadProgressBar__ contains a number of elements needed for the correct functioning of the control. This section will explain the structure of the RadProgressBar's template. Here is a snapshot of the template generated in Expression Blend.
+
+![Rad Progress Bar Template Structure](images/RadProgressBar_TemplateStructure.png)
 
 Here is a short description of some of the elements included in the default control template:
 

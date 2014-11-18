@@ -12,9 +12,7 @@ position: 3
 
 
 
-There are three __FixedDocumentViewerModes__ which specify
-        the behavior of __RadPdfViewer__ when you left-click in the document
-        and move the mouse around (without releasing the left button of the mouse):
+There are three __FixedDocumentViewerModes__ which specify the behavior of __RadPdfViewer__ when you left-click in the document and move the mouse around (without releasing the left button of the mouse):
       
 
 * None – the control does nothing;
@@ -25,10 +23,13 @@ There are three __FixedDocumentViewerModes__ which specify
 
 ## Specify the Viewer Mode Using UI
 
-The viewer mode can be changed using the "default" UI that RadPdfViewer uses (as shown in the picture).![Rad Pdf Viewer Viewer Modes 02](images/RadPdfViewer_ViewerModes_02.png)
+The viewer mode can be changed using the "default" UI that RadPdfViewer uses (as shown in the picture).
 
-The code of the buttons can be declared as follows:{% if site.site_name == 'Silverlight' %}
+![Rad Pdf Viewer Viewer Modes 02](images/RadPdfViewer_ViewerModes_02.png)
 
+The code of the buttons can be declared as follows:
+
+{% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
 {{region radpdfviewer-viewer-modes_0}}
@@ -52,10 +53,9 @@ The code of the buttons can be declared as follows:{% if site.site_name == 'Silv
 	</telerik:RadToolBar>
 	
 	<telerik:RadPdfViewer Grid.Row="1" x:Name="pdfViewer" DefaultFormatProviderSettings="ReadAllAtOnce" DocumentSource="/PdfViewerDemo;component/SampleData/test.pdf" />
-	{{endregion}}
-
-{% endif %}{% if site.site_name == 'WPF' %}
-
+{{endregion}}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 #### __XAML__
 
 {{region radpdfviewer-viewer-modes_1}}
@@ -79,8 +79,7 @@ The code of the buttons can be declared as follows:{% if site.site_name == 'Silv
 	</telerik:RadToolBar>
 	
 	<telerik:RadPdfViewer Grid.Row="1" x:Name="pdfViewer" DefaultFormatProviderSettings="ReadAllAtOnce" DocumentSource="/PdfViewerDemo;component/SampleData/test.pdf" />
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
 Note that the RadToolBar control is bound to the CommandDescriptorss property of the PDF viewer.
@@ -92,7 +91,7 @@ The declarations of the namespaces used in the snippet above are:
 {{region radpdfviewer-viewer-modes_2}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	xmlns:converters="clr-namespace:Telerik.Windows.Documents.Converters;assembly=Telerik.Windows.Controls.FixedDocumentViewers"
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -104,12 +103,9 @@ The mode of the viewer is set using the Mode property, e.g.:
 
 {{region radpdfviewer-viewer-modes_0}}
 	  this.pdfViewer.Mode = Telerik.Windows.Documents.Fixed.UI.FixedDocumentViewerMode.TextSelection;
-	{{endregion}}
+{{endregion}}
 
 
 
-As the Mode property is a DependencyProperty, you could also bound it to different properties,
-          depending on the logic of your application.
-        
+As the Mode property is a DependencyProperty, you could also bound it to different properties, depending on the logic of your application.
 
-# See Also

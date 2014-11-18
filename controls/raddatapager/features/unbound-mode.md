@@ -11,18 +11,15 @@ position: 7
 # Unbound Mode
 
 
-
-## 
-
-There are scenarios, in which you might want to use the __RadDataPager__ only for its UI without passing any data to it. This scenarios will require you to use the __RadDataPager's____Unbound Mode__ feature. The use of this feature consists in setting some of the __RadDataPager's__ properties manually and handling a few events.
+There are scenarios, in which you might want to use the __RadDataPager__ only for its UI without passing any data to it. This scenarios will require you to use the RadDataPager's __Unbound Mode__ feature. The use of this feature consists in setting some of the __RadDataPager's__ properties manually and handling a few events.
 
 The example in this topic will show you a __ListBox__ bound to a list of integers. A __RadDataPager__ will be used as UI to page the data, but the paging itself will be done outside of the __RadDataPager__ via __LINQ__ extension methods.
 
 Here is the XAML for the example. In it you can see a __ListBox__ and a __RadDataPager__ with its __PageSize__ property set. The other important thing is the event handler attached to the __PageIndexChanged__ event.
 
 #### __XAML__
-
 {{region raddatapager-features-unbound-mode_0}}
+
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <Grid.RowDefinitions>
@@ -36,17 +33,16 @@ Here is the XAML for the example. In it you can see a __ListBox__ and a __RadDat
 	                            Margin="0,10,0,0"
 	                            PageIndexChanged="radDataPager_PageIndexChanged" />
 	</Grid>
-	{{endregion}}
-
+{{endregion}}
 
 
 Now take a look at the code-behind. There is a simple list of integers, which will serve as a dummy data. The keypoints here are to set the __ItemCount__ property of the __DataPager__ to the count of your data. In this way the UI will display correct information to the user. The next point is to set the __ItemsSource__ of the __ListBox__ to an appropriate value and the last one is to implement the custom paging logic inside the handler for the __PageIndexChanged__ event.
 
->tipIf you want to implement some logic before the __PageIndex__ gets changed, you can attach an event handler to the __PageIndexChanging__ event.
+>tip If you want to implement some logic before the __PageIndex__ gets changed, you can attach an event handler to the __PageIndexChanging__ event.
 
 #### __C#__
-
 {{region raddatapager-features-unbound-mode_1}}
+
 	public partial class UnboundModeSample : UserControl
 	{
 	    private List<int> data;
@@ -65,13 +61,12 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 	        }
 	    }
 	}
-	{{endregion}}
-
+{{endregion}}
 
 
 #### __VB.NET__
-
 {{region raddatapager-features-unbound-mode_2}}
+
 	Public Partial Class UnboundModeSample
 	 Inherits UserControl
 	 Implements IView
@@ -88,8 +83,7 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 	  End If
 	 End Sub
 	End Class
-	{{endregion}}
-
+{{endregion}}
 
 
 # See Also

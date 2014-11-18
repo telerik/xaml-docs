@@ -33,7 +33,7 @@ __Example 1:__ RadPropertyGrid with manually defined PropertyDefinitions
 
 #### __XAML__
 
-{{region radpropertygrid-scrolling_0}}
+	{{region radpropertygrid-scrolling_0}}
 	<Grid>
 	  <Grid.RowDefinitions>
 	    <RowDefinition Height="*"/>
@@ -59,14 +59,15 @@ __Example 1:__ RadPropertyGrid with manually defined PropertyDefinitions
 
 
 
-As to assigning the __Item of RadPropertyGrid__, please check the __Binding RadPropertyGrid to an item__ section in 
-          [Getting Started with RadPropertyGrid](07F77841-3BC1-4AEA-A46A-DECB93D1C724#Binding_RadPropertyGrid) help article.
+As to assigning the __Item of RadPropertyGrid__, please check the __Binding RadPropertyGrid to an item__ section in [Getting Started with RadPropertyGrid](07F77841-3BC1-4AEA-A46A-DECB93D1C724#Binding_RadPropertyGrid) help article.
         
 
 You can see the result after starting the program on __Figure 1__:
         
 
-Figure 1: RadPropertyGrid in sorted mode with some fields not currently visible![Rad Property Grid Scroll Sorted 1](images/RadPropertyGrid_Scroll_Sorted_1.png)
+Figure 1: RadPropertyGrid in sorted mode with some fields not currently visible
+
+![Rad Property Grid Scroll Sorted 1](images/RadPropertyGrid_Scroll_Sorted_1.png)
 
 Then, click on __Scroll field into view__ button and execute the following code:
 
@@ -74,7 +75,7 @@ __Example 2:__ Scrolling to a particular PropertyDefinition and selecting it
 
 #### __C#__
 
-{{region radpropertygrid-scrolling_1}}
+	{{region radpropertygrid-scrolling_1}}
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
 	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x=>x.DisplayName == "IsMarried").FirstOrDefault();
@@ -89,7 +90,7 @@ __Example 2:__ Scrolling to a particular PropertyDefinition and selecting it
 
 #### __VB__
 
-{{region radpropertygrid-scrolling_1}}
+	{{region radpropertygrid-scrolling_1}}
 	    Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
 	        Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
 	        If propertyDefinition IsNot Nothing Then
@@ -123,7 +124,7 @@ __Example 3:__ Scrolling to a particular PropertyDefinition and selecting it
 
 #### __C#__
 
-{{region radpropertygrid-scrolling_1}}
+	{{region radpropertygrid-scrolling_1}}
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
 	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x=>x.DisplayName == "IsMarried").FirstOrDefault();
@@ -138,7 +139,7 @@ __Example 3:__ Scrolling to a particular PropertyDefinition and selecting it
 
 #### __VB__
 
-{{region radpropertygrid-scrolling_1}}
+	{{region radpropertygrid-scrolling_1}}
 	    Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
 	        Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
 	        If propertyDefinition IsNot Nothing Then
@@ -156,7 +157,7 @@ Figure 4: RadPropertyGrid after scrolling to a particular PropertyDefinition and
 
 ## ScrollIntoViewAsync with nested properties
 
-When ScrollIntoView is __invoked for a__. You can find more information on how to define nested PropertyDefinitions in the article on [Nested Properties]({%slug radpropertygrid-nested-properties%}).
+When ScrollIntoView is invoked for a nested PropertyDefinition, its parent’s field gets expanded. You can find more information on how to define nested PropertyDefinitions in the article on [Nested Properties]({%slug radpropertygrid-nested-properties%}).
         
 
 To guarantee that such operations will be successfully executed, both root and nested PropertyDefinitions should have a valid Binding set.

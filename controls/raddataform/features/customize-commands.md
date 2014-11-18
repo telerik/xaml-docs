@@ -25,6 +25,7 @@ The methods listed bellow identify the logic that is executed when a certain com
 #### __C#__
 
 {{region raddataform-customize-commands_0}}
+
 	void MoveCurrentToFirst()
 	void MoveCurrentToLast()
 	void MoveCurrentToNext()
@@ -43,6 +44,7 @@ With the help of those methods you can identify whether a certain command can be
 #### __C#__
 
 {{region raddataform-customize-commands_1}}
+
 	bool CanMoveCurrentToFirstExecute()
 	bool CanMoveCurrentToLastExecute()
 	bool CanMoveCurrentToNextExecute()
@@ -56,8 +58,7 @@ With the help of those methods you can identify whether a certain command can be
 
 
 
-A runnable demo that utilizes the code from this article can be found on
-          {% if site.site_name == 'Silverlight' %}[this online demo](http://demos.telerik.com/silverlight/#DataForm/CustomCommandsProvider){% endif %}{% if site.site_name == 'WPF' %}[the DataForm's CustomCommandsProvider demo](http://demos.telerik.com/wpf/){% endif %}.
+A runnable demo that utilizes the code from this article can be found on {% if site.site_name == 'Silverlight' %}[this online demo](http://demos.telerik.com/silverlight/#DataForm/CustomCommandsProvider){% endif %}{% if site.site_name == 'WPF' %}[the DataForm's CustomCommandsProvider demo](http://demos.telerik.com/wpf/){% endif %}.
         
 
 ## Designing a custom CommandProvider
@@ -67,6 +68,7 @@ The first step is to create your own class that inherits from DataFormCommandPro
 #### __C#__
 
 {{region raddataform-customize-commands_2}}
+
 	public class CustomCommandProvider : DataFormCommandProvider
 	{
 		public CustomCommandProvider() : base(null)
@@ -94,6 +96,7 @@ We aim at changing their execution logic, in order to start editing the item, as
 #### __C#__
 
 {{region raddataform-customize-commands_3}}
+
 	protected override void MoveCurrentToNext()
 	{
 		if (this.DataForm != null)
@@ -123,6 +126,7 @@ A common requirement for data form is to add __confirmation message boxes when C
 #### __C#__
 
 {{region raddataform-customize-commands_4}}
+
 	protected override void CommitEdit()
 	{
 		MessageBoxResult result = MessageBox.Show("Commit changes for the current edit item?", "CommitEdit confirmation", MessageBoxButton.OKCancel);
@@ -157,6 +161,7 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 #### __XAML__
 
 {{region raddataform-customize-commands_10}}
+
 	 <Window.Resources>
 	    <my:CustomCommandProvider x:Key="CustomProvider"/>
 	</Window.Resources>
@@ -171,9 +176,6 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 #### __C#__
 
 {{region raddataform-customize-commands_5}}
+
 	this.RadDataForm1.CommandProvider = new CustomCommandProvider(this.RadDataForm1);
 	{{endregion}}
-
-
-
-# See Also

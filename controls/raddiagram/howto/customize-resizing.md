@@ -232,8 +232,7 @@ Since we added two __RadToggleButtons__ in our view, we need to define two __boo
 
 
 
->Please note that the __CalculateNewDelta()__ method returns a result of type __Point__. However, this result doesn't describe coordinates of a point, but a delta value representing the change that should be applied on __RadDiagramItem(s)__ size. This delta is calculated based on the resizing direction specified by the resizing thumb being used, the coordinates of the mouse when the resize was initiated, the coordinates of the mouse when the operation was finished and the rotation angle. The __X__ porperty of the calculated result reflects the change in the __Width__ of the manipulated item, while the __Y__ property value reflects the change that has to be applied on the __Height__ of the item.
-					This is why when you override the __CalculateNewDelta()__ method to return a __Point__ with __X__ and __Y__ properties set to __0__, you tell __RadDiagram__ that there is no change in the size of the manipulated __RadDiagramItem(s)__.
+>Please note that the __CalculateNewDelta()__ method returns a result of type __Point__. However, this result doesn't describe coordinates of a point, but a delta value representing the change that should be applied on __RadDiagramItem(s)__ size. This delta is calculated based on the resizing direction specified by the resizing thumb being used, the coordinates of the mouse when the resize was initiated, the coordinates of the mouse when the operation was finished and the rotation angle. The __X__ porperty of the calculated result reflects the change in the __Width__ of the manipulated item, while the __Y__ property value reflects the change that has to be applied on the __Height__ of the item. This is why when you override the __CalculateNewDelta()__ method to return a __Point__ with __X__ and __Y__ properties set to __0__, you tell __RadDiagram__ that there is no change in the size of the manipulated __RadDiagramItem(s)__.
 					
 
 If you take a look at the custom __CalculateNewDelta()__ method implementation, you can note that the logic is straight-forward. It takes into account the values of the __CanResizeWidth__ and __CanResizeHeight__ properties to decide whether there should be a change in the __Width__ or __Height__ of the manipulated item. If both boolean properties are set to __false__, then the __CalculateNewDelta()__ method returns a result of __Point(0,0)__ which indicates that there are no changes in the size of the manipulated shape. This way the initiated resizing is ignored and the actual size of the manipulated shape is not changed.
@@ -344,13 +343,12 @@ And now we can use the __newResizingService__ instance and register it through t
 
 
 If you run the solution now the resizing buttons will be checked thus allowing all resizing operations.
-				![raddiagram-howto-custom-resizing-allowed](images/raddiagram-howto-custom-resizing-allowed.png)
+![raddiagram-howto-custom-resizing-allowed](images/raddiagram-howto-custom-resizing-allowed.png)
 
 However, as soon as you uncheck any of the buttons, the related resizing operation will be denied. For instance, if you click the __CanResizeWidth__ button, you will not be able to change the __Width__ of the __RadDiagramShapes__. And as soon as you also uncheck the __CanResizeHeight__ button, the __Height__ will also be locked.
 				
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository
-						[here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
+>tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
 					
 
 # See Also

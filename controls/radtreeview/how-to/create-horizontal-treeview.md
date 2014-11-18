@@ -10,10 +10,6 @@ position: 12
 
 # Create Horizontal TreeView
 
-
-
-## 
-
 This tutorial will show you how to create a __RadTreeView__ with horizontal orientation.
 
 Here is an ordinary treeview declaration: 
@@ -39,13 +35,11 @@ Here is an ordinary treeview declaration:
 	</telerik:RadTreeView>
 	{{endregion}}
 
-
-
 ![](images/RadTreeView_HowToCreateHorizontalTreeView_001.PNG)
 
-In order to create a horizontal treeview you need to set the __ItemContainerStyle__property of the __RadTreeView__and the __RadTreeViewItem__.
+In order to create a horizontal treeview you need to set the __ItemContainerStyle__ property of the __RadTreeView__ and the __RadTreeViewItem__.
 
-Declare the following style in the resources of your application. It will set the __ItemsPanel__to a __StackPanel__with __Horizontal__orientation: 
+Declare the following style in the resources of your application. It will set the __ItemsPanel__ to a __StackPanel__ with __Horizontal__ orientation: 
 
 #### __XAML__
 
@@ -61,9 +55,7 @@ Declare the following style in the resources of your application. It will set th
 	</Style>
 	{{endregion}}
 
-
-
-Apply this style to the __ItemContainerStyle__of the treeview and each treeview item. 
+Apply this style to the __ItemContainerStyle__ of the treeview and each treeview item. 
 
 #### __XAML__
 
@@ -84,18 +76,12 @@ Apply this style to the __ItemContainerStyle__of the treeview and each treeview 
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is the result: 
-
+Here is the result:
 ![](images/RadTreeView_HowToCreateHorizontalTreeView_010.PNG)
 
 # See Also
-
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})
-
  * [Templated Nodes]({%slug radtreeview-styles-and-templates-templated-nodes%})
-
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})

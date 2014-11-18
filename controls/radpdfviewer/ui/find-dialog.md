@@ -33,7 +33,7 @@ There are three possible input parameters that determine the results of the sear
             
 
 This is how the Find Dialog looks:
-        ![Rad Pdf Viewer Find Dialog](images/RadPdfViewer_Find_Dialog.png)
+![Rad Pdf Viewer Find Dialog](images/RadPdfViewer_Find_Dialog.png)
 
 ## Adding the FindDialog to a project
 
@@ -47,8 +47,7 @@ First of all, it is obligatory to register a new find dialog using the Extensibi
 
 {{region radpdfviewer-find-dialog}}
 		ExtensibilityManager.RegisterFindDialog(new FindDialog());
-	{{endregion}}
-
+{{endregion}}
 
 
 The __ShowFindDialogCommand__ handles the opening of the find dialog. This command is bound to the __Ctrl+F__ shortcut key combination (__Apple+F__ for Mac) in RadPdfViewer.
@@ -57,7 +56,7 @@ The __ShowFindDialogCommand__ handles the opening of the find dialog. This comma
 ## Creating a custom find dialog
 
 RadPdfViewer offers an easy way to create a custom find dialog which suits best to different user’s needs and desires.
-        
+
 
 In order to achieve this, should be created a class which inherits the __IFindDialog__ interface with its __ShowDialog__ method.
         
@@ -72,12 +71,9 @@ In order to achieve this, should be created a class which inherits the __IFindDi
 	            ...
 	        }
 	    }
-	{{endregion}}
+{{endregion}}
 
 
 
->tipFind a runnable project example demonstrating this functionality in our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / CustomFindDialog__.
+>tipFind a runnable project example demonstrating this functionality in our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / CustomFindDialog__.
           
-
-# See Also

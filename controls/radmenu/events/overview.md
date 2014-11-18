@@ -19,7 +19,7 @@ The __RadMenu__ control raises the following specific event:
 
 * __ItemClick__ - occurs each time an item in the __RadMenu__ gets clicked. The event handler receives two arguments:            
 
-	* The sender argument contains the __RadMenu__. This argument is of type object, but can be cast to the __RadMenu__type.              
+	* The sender argument contains the __RadMenu__. This argument is of type object, but can be cast to the __RadMenu__ type.              
 
 	* A __RadRoutedEventArgs__ object.              
 
@@ -51,7 +51,7 @@ The __RadMenuItem__ raises the following specific events:
 
 * __SubmenuOpened__ - occurs each time the child items of the item get displayed. The event handler receives two arguments:
 
-	* The sender argument contains the __RadMenuItem__. This argument is of type object, but can be cast to the __RadMenuItem__type.
+	* The sender argument contains the __RadMenuItem__. This argument is of type object, but can be cast to the __RadMenuItem__ type.
 
 	* A __RadRoutedEventArgs__ object.
 

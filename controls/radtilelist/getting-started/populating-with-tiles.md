@@ -14,12 +14,10 @@ position: 1
 
 This tutorial will walk your through the population of __RadTileList__ and will show you how:
 
-* 
-          Populate __RadTileList__ with a collection of custom objects
+* Populate __RadTileList__ with a collection of custom objects
         
 
-* 
-          Populate __RadTileList__ with custom Tiles
+* Populate __RadTileList__ with custom Tiles
         
 
 ## Populating RadTileList with a collection of custom objects
@@ -29,6 +27,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 #### __C#__
 
 {{region radtilelist-getting-started_4}}
+
 	public class Employee 
 	 {  
 	  public string FirstName
@@ -59,6 +58,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 #### __VB.NET__
 
 {{region radtilelist-getting-started_5}}
+
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -101,8 +101,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 
 
 
->
-          Note that in case you want to be notified on the changes made on the data item, the class Employee should implement __INotifyPropertyChanged__ Interface and raise the __PropertyChanged__ event every time a property value changes.
+>Note that in case you want to be notified on the changes made on the data item, the class Employee should implement __INotifyPropertyChanged__ Interface and raise the __PropertyChanged__ event every time a property value changes.
         
 
 Once the class Employee is defined, we will extend it by a single static method - GetEmployees() that will return an ObservableCollection, containing several hard-coded employees:
@@ -111,9 +110,9 @@ Once the class Employee is defined, we will extend it by a single static method 
 #### __C#__
 
 {{region radtilelist-getting-started_6}}
+
 	public class Employee
 	{
-	
 	  public Employee()
 	  { }
 	
@@ -134,6 +133,7 @@ Once the class Employee is defined, we will extend it by a single static method 
 #### __VB.NET__
 
 {{region radtilelist-getting-started_7}}
+
 	Public Class Employee
 	
 	 Public Sub New()
@@ -177,6 +177,7 @@ Secondly, you must define RadTileList's ItemTemplate, like so:
 #### __XAML__
 
 {{region radtilelist-getting-started_10}}
+
 	 <telerik:RadTileList x:Name="RadTileList" ScrollViewer.HorizontalScrollBarVisibility="Visible">
 	            <telerik:RadTileList.ItemTemplate>
 	                <DataTemplate>
@@ -207,8 +208,7 @@ Secondly, you must define RadTileList's ItemTemplate, like so:
 
 
 
->
-         Please note that you can show/hide the horizontal scrollbar by setting the ScrollViewer.HorizontalScrollBarVisibility attached property.
+> Please note that you can show/hide the horizontal scrollbar by setting the ScrollViewer.HorizontalScrollBarVisibility attached property.
         
 
 Afterwards, all you need to do is to set the ItemsSource of the RadTileList:
@@ -216,6 +216,7 @@ Afterwards, all you need to do is to set the ItemsSource of the RadTileList:
 #### __C#__
 
 {{region radtilelist-getting-started_8}}
+
 	public MainPage()
 	  {
 	   InitializeComponent();   
@@ -228,6 +229,7 @@ Afterwards, all you need to do is to set the ItemsSource of the RadTileList:
 #### __VB.NET__
 
 {{region radtilelist-getting-started_9}}
+
 	Public Sub New()
 	 InitializeComponent()
 	        Me.RadTileList.ItemsSource = Employee.GetEmployees()
@@ -238,6 +240,5 @@ Afterwards, all you need to do is to set the ItemsSource of the RadTileList:
 
 ## Populating RadTileList with custom Tiles
 
-A typical usage of __Custom RadTileList's Tiles__ is available on
-          {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TileList/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[ our WPF demos](http://demos.telerik.com/wpf/){% endif %}.
+A typical usage of __Custom RadTileList's Tiles__ is available on {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TileList/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[ our WPF demos](http://demos.telerik.com/wpf/){% endif %}.
         

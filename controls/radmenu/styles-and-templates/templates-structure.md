@@ -178,7 +178,7 @@ It contains the following parts:
 
 ## Submenu Item Template
 
-This section will explain the structure of the __RadMenuItem's__Submenu Item template. Here is a snapshot of the template generated in Expression Blend.        
+This section will explain the structure of the __RadMenuItem's__ Submenu Item template. Here is a snapshot of the template generated in Expression Blend.        
 
 ![](images/RadMenu_Styles_and_Templates_Structure_05.png)
 
@@ -204,7 +204,7 @@ It contains the following parts:
 
 ## Separator Template
 
-This section will explain the structure of the __RadMenuItem's__Separator template. Here is a snapshot of the template generated in Expression Blend.
+This section will explain the structure of the __RadMenuItem's__ Separator template. Here is a snapshot of the template generated in Expression Blend.
 
 ![](images/RadMenu_Styles_and_Templates_Structure_06.png)
 

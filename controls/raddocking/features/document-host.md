@@ -10,11 +10,9 @@ position: 5
 
 # Document Host
 
+The __DocumentHost__ is meant to be the default container for the editable documents in your application. By default it occupies the whole central area of the __RadDocking__ control and each newly added pane is docked as a new tab page inside of it.
 
-
-The __DocumentHost__ is meant to be the default container for the editable documents in your application. By default it occupies the whole central area of the 
-        __RadDocking__control and each newly added pane is docked as a new tab page inside of it.
-      ![](images/RadDocking_Features_DocumentHost_010.png)
+![](images/RadDocking_Features_DocumentHost_010.png)
 
 Here is the XAML declaration of the above structure.
 
@@ -38,29 +36,22 @@ Here is the XAML declaration of the above structure.
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
-
-
->tipSince the __DocumentHost__is meant to host the editable documents in your application, it is good idea to use [RadDocumentPanes]({%slug raddocking-panes-raddocumentpane%}) instead of [RadPanes]({%slug raddocking-panes-radpane%}).
+>tipSince the __DocumentHost__ is meant to host the editable documents in your application, it is good idea to use [RadDocumentPanes]({%slug raddocking-panes-raddocumentpane%}) instead of [RadPanes]({%slug raddocking-panes-radpane%}).
         
-
 >Placing __RadPaneGroup__ directly in the __DocumentHost__ is not a supported scenario in the RadDocking control. The RadPaneGroup needs to be placed in a __RadSplitContainer__.
         
-
 ## Modifying DocumentHost
 
 The __DocumentHost__ is part of the template of the __RadDocking__ control. To learn how to modify it, take a look at the [Templating the RadDocking]({%slug raddocking-styles-and-templates-templating-the-raddocking%}) topic.
         
-
 ## Setting the CloseButtonPosition
 
 You could easily set the close button position of the Panes that are placed in the DocumentHost by setting the __CloseButtonPosition__ property of the __RadDocking__ control to one of the three built-in predefined settings (InGroup, InPane and InPaneAndGroup).
         
-
 The next code snippet shows how to set the CloseButtonPosition to InPane:
         
-
 #### __XAML__
 
 {{region raddocking-features-document-host_1}}
@@ -81,21 +72,21 @@ The next code snippet shows how to set the CloseButtonPosition to InPane:
 			</telerik:RadSplitContainer>
 		</telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 The next descriptions describe the built-in predefined CloseButtonPosition settings and their visual representation when they are set:
         
-
 1. __InGroup__ – this is the default value of the CloseButtonPosition property which causes the close button of the currently active Pane in the PaneGroup to be visible in the top right corner of the PaneGroup
-            ![raddocking-features-document-host-2](images/raddocking-features-document-host-2.png)
+
+	![raddocking-features-document-host-2](images/raddocking-features-document-host-2.png)
 
 1. __InPane__ – places separate close button for each Pane in their tab
-            ![raddocking-features-document-host-3](images/raddocking-features-document-host-3.png)
+
+	![raddocking-features-document-host-3](images/raddocking-features-document-host-3.png)
 
 1. __InPaneAndGroup__ – places separate close button for each Pane in their tab and a close button for the currently active Pane in the PaneGroup in the top right corner of the group.
-            ![raddocking-features-document-host-4](images/raddocking-features-document-host-4.png)
+
+	![raddocking-features-document-host-4](images/raddocking-features-document-host-4.png)
 
 # See Also
 

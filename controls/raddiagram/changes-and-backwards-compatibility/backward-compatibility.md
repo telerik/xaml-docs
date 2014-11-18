@@ -15,8 +15,7 @@ position: 0
 This article describes the __breaking changes__ introduced in the __RadDiagram__ framework.
 	  
 
-## 
-		Q1 2014
+## Q1 2014
 	  
 
 __Changed__
@@ -56,7 +55,7 @@ We also improved our MVVM mechanism and the following method should not be used 
 In Q1 2013 our __RadDiagramContainerShapes__ are also refactored.	We added style and style selectors properties and we also improved the drop behavior. The __ContainerLayout__ property is marked __Obsolete__ and you can consider that it is always set to __Auto__.
 		
 
-The __Print__ Command from __DiagramCommands__ is marked __Obsolete__. You have to use the __Print Command__ from Telerik.Windows.Controls.Diagrams.Extensions.DiagramExtensionCommands. Setting its CommandParameter to __True__will activate our PrintPreviewDialog from the Diagram Extensions.
+The __Print__ Command from __DiagramCommands__ is marked __Obsolete__. You have to use the __Print Command__ from Telerik.Windows.Controls.Diagrams.Extensions.DiagramExtensionCommands. Setting its CommandParameter to __True__ will activate our PrintPreviewDialog from the Diagram Extensions.
 		
 
 __GeometryFactory__ class is marked __Obsolete__ and will be deleted in Q2 2013. The methods in it are also available in the class __GeometryExtensions__.
@@ -73,7 +72,7 @@ With the Q3 2012 release we introduced the following set of changes in the __Dia
 * The __CommandNames.ResizeShapes__ constant is now renamed to __CommandNames.ResizeItems__.
 			
 
-* The order of the arguments in the __RotatingEventArgs__ class constructor - __RotatingEventArgs(Double oldPosition, Double newPosition,__ are changed to __RotatingEventArgs(__
+* The order of the arguments in the __RotatingEventArgs__ class constructor - __RotatingEventArgs(Double oldPosition, Double newPosition,__ are changed to __RotatingEventArgs__
 
 * The __RotateRoutedEventArgs__ class constructor - __RotateRoutedEventArgs(RoutedEvent routedEvent, IEnumerable<IDiagramItem> items, Double oldPostion, Double newPostion)__ is removed. You can instead use the other constructors of the class to create an instance of it.
 			
@@ -116,7 +115,7 @@ And we changed the name of the device-independent pixels measurement unit from _
 
 ## Q2 2012
 
-With its official release, the Diagramming framework extends its __Connectors__ support by adding the possibility to create custom connectors. However, in order to implement this feature we had to remove the __ConnectorPosition__ enumeration. Instead the position of a connector can now be defined through a __string__ property. But as we wanted to limit the effect of this breaking change, we matched the members of the enumeration to string constants, which are internally resolved to allow you to set up the __RadDiagramConnection.Source(Target)ConnectorPosition__ as__Auto, Left, Right, Top__ or __Bottom__ as before. Below you can find all __RadDiagram__ members affected by the changes in the connectors implementation:
+With its official release, the Diagramming framework extends its __Connectors__ support by adding the possibility to create custom connectors. However, in order to implement this feature we had to remove the __ConnectorPosition__ enumeration. Instead the position of a connector can now be defined through a __string__ property. But as we wanted to limit the effect of this breaking change, we matched the members of the enumeration to string constants, which are internally resolved to allow you to set up the __RadDiagramConnection.Source(Target)ConnectorPosition__ as __Auto, Left, Right, Top__ or __Bottom__ as before. Below you can find all __RadDiagram__ members affected by the changes in the connectors implementation:
 		
 
 * The __ConnectorPosition__ enumeration is removed
@@ -188,6 +187,4 @@ The other changes introduced in the Diagramming tools' implementation are listed
 ## Q1 2012 SP1
 
 The __Xml__ property of the __RadDiagramShapeBase__ is removed. Instead you should use the __GetXml()__ method. The reason behind this change is to avoid the performance impact when using the getter of the property.
-		
 
-# See Also

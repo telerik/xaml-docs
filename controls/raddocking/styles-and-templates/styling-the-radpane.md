@@ -10,8 +10,6 @@ position: 3
 
 # Styling the RadPane
 
-
-
 The __RadPane__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.
 
 You have two options:
@@ -34,26 +32,17 @@ If you go to the 'Resources' pane, you will see the list of all resources genera
 
 For example, select the __Background__ property and modify it. This will change the background of the __RadPane__'s header when it is not selected.{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_04_05_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingRadPane_04_05_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 You can change the __BorderBrush__ and the __Foreground__ properties the same way.{% endif %}{% if site.site_name == 'Silverlight' %}
 
 Here are some of these resources:{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_05.png){% endif %}
+![](images/RadDocking_StylingRadPane_05.png){% endif %}
 
 * __DocumentTabChromeStyle__ - the style containing all the visual states concerning the pane.
 
 * __PaneDocumentHostTemplate__ - contains a grid which includes the following:
-               
 
 * __Chrome__ - is of type __ButtonChrome__ and has a default style __DocumentTabChromeStyle__ which exposes many editable resources which will change the pane's appearance.
 
@@ -101,59 +90,33 @@ Here is an example of the described resources modified.{% endif %}{% if site.sit
 
 {% if site.site_name == 'Silverlight' %}
 
-
-				 
-			![](images/RadDocking_StylingRadPane_06.png){% endif %}{% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingRadPane_06.png){% endif %}{% endif %}{% if site.site_name == 'WPF' %}
 
 To modify the __Background__ of the __RadPane__'s header when it is selected, you have to modify the template of the __RadPane__. To do that click on the palette-like breadcrumb icon and choose *Edit Template -> Edit Current.*{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_06_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingRadPane_06_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 Go to the 'Triggers' pane and select the following trigger.{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_07_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingRadPane_07_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 It is responsible for changing the background of the __RadPane__'s Header when it is pinned. When the trigger is selected every change you made will be recorded by it. So from the 'Objects and Timeline' pane select the __outerBorder__ control.{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_08_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingRadPane_08_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 Modify its __Background__ property.{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_09_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingRadPane_09_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 You can modify the other triggers the same way depending on your liking.{% endif %}{% if site.site_name == 'WPF' %}
 
 Note that the __RadPane__ control exposes four templates - Top, Left, Right and Bottom. The default template is the value of the Bottom one. To modify the other templates return to the stile by clicking again on the pallette-like breadcrumb icon.{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_10_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingRadPane_10_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 To access the other templates select *Object -> Edit Additional Templates* from the menu.{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_11_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingRadPane_11_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 After finishing the modifications, set the style to the desired __RadPanes__.{% endif %}
 
@@ -162,27 +125,15 @@ After finishing the modifications, set the style to the desired __RadPanes__.{% 
 {{region raddocking-styling-the-radpane_0}}
 	<telerik:RadPane Style="{StaticResource RadPaneStyle}">
 	</telerik:RadPane>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the final result.{% if site.site_name == 'Silverlight' %}
 
+![](images/RadDocking_StylingRadPane_12.png)
 
+![](images/RadDocking_StylingRadPane_13.png){% endif %}{% if site.site_name == 'WPF' %}
 
-
-         
-      ![](images/RadDocking_StylingRadPane_12.png)
-
-
-         
-      ![](images/RadDocking_StylingRadPane_13.png){% endif %}{% if site.site_name == 'WPF' %}
-
-
-
-
-         
-      ![](images/RadDocking_StylingRadPane_12_WPF.png){% endif %}
+![](images/RadDocking_StylingRadPane_12_WPF.png){% endif %}
 
 # See Also
 

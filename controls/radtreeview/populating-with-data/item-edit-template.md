@@ -10,14 +10,11 @@ position: 10
 
 # ItemEditTemplate
 
+Telerik __RadTreeView__ also supports __ItemEditTemplate__. This tutorial will walk you through the common task of creating and applying __ItemEditTemplate__.
 
+For the purpose of this tutorial will be used the following __RadTreeView__ declaration: 
 
-## 
-
-Telerik __RadTreeView__also supports __ItemEditTemplate__. This tutorial will walk you through the common task of creating and applying __ItemEditTemplate__.
-
-For the purpose of this tutorial will be used the following __RadTreeView__ declaration: {% if site.site_name == 'Silverlight' %}
-
+{% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
 {{region radtreeview-populating-with-data-item-edit-template_0}}
@@ -63,7 +60,8 @@ For the purpose of this tutorial will be used the following __RadTreeView__ decl
 	</Grid>
 	{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
@@ -119,36 +117,26 @@ __ItemEditTemplate Property__
 In this tutorial an __ItemEditTemplate__ will be created with Expression Blend.
 
 * Open your application and [select]({%slug radtreeview-how-to-select-item-in-expression-blend%}) the treeview control.
-
-
-
-![](images/RadTreeView_TemplatingItemEditTemplate_010.PNG)
+	![](images/RadTreeView_TemplatingItemEditTemplate_010.PNG)
 
 * Right-click on it or right-click in the scene explorer and choose EditAdditionalTemplates->Edit ItemEditTemplate->Create Empty. 
-
-![](images/RadTreeView_TemplatingItemEditTemplate_020.PNG)
+	![](images/RadTreeView_TemplatingItemEditTemplate_020.PNG)
 
 * Choose a name for the data template and where to be defined in:
+	![](images/RadTreeView_TemplatingItemEditTemplate_030.PNG)
 
-![](images/RadTreeView_TemplatingItemEditTemplate_030.PNG)
+	>Defining the template in the Application section makes it reusable from everywhere in the application.
 
->
+* Drag and drop the controls you need for the template and configure their properties. In the example are used a __TextBox__ and a __RadMaskedTextBox__
+	![](images/RadTreeView_TemplatingItemEditTemplate_040.PNG)
 
-Defining the template in the Application section makes it reusable from everywhere in the application.____
+* Configure the binding for the __Text__ property of the __TextBox__, and for the __Value__ property of the __RadMaskedTextBox__. 
+	![](images/RadTreeView_TemplatingItemEditTemplate_050.PNG)
 
-* Drag and drop the controls you need for the template and configure their properties. In the example are used a __TextBox__and a __RadMaskedTextBox__
+* Bind the __TextBox Text__ property to the __Name__ property of the business object and set the binding to be __TwoWay__. 
+	![](images/RadTreeView_TemplatingItemEditTemplate_060.PNG)
 
-![](images/RadTreeView_TemplatingItemEditTemplate_040.PNG)
-
-* Configure the binding for the __Text__property of the __TextBox__, and for the __Value__property of the __RadMaskedTextBox__. 
-
-![](images/RadTreeView_TemplatingItemEditTemplate_050.PNG)
-
-* Bind the __TextBox__Text property to the __Name__property of the business object and set the binding to be __TwoWay__. 
-
-![](images/RadTreeView_TemplatingItemEditTemplate_060.PNG)
-
-* Do the same for the __Value__property of the __RadMaskedTextBox__.
+* Do the same for the __Value__ property of the __RadMaskedTextBox__.
 
 Here is the final XAML:
 
@@ -175,18 +163,11 @@ Here is the final XAML:
 	   ItemEditTemplate="{StaticResource LeagueItemEditTemplate}"/>
 	{{endregion}}
 
-
-
 ![](images/RadTreeView_TemplatingItemEditTemplate_070.PNG)
 
->
-
-Don't forget to set the __IsEditable__property of your __RadTreeView__to __True__.
+>Don't forget to set the __IsEditable__ property of your __RadTreeView__ to __True__.
 
 # See Also
-
  * [ItemEditTemplateSelector]({%slug radtreeview-populating-with-data-item-edit-template-selector%})
-
  * [ItemTemplate]({%slug radtreeview-populating-with-data-item-template%})
-
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

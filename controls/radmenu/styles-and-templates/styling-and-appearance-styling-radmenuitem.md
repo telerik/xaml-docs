@@ -38,9 +38,9 @@ You will be prompted for the name of the style and where to be placed.
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __RadMenuItem__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
+After clicking 'OK', Expression Blend will generate the default style of the __RadMenuItem__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadMenuItem.__Their names indicate to which part of the __RadMenuItem's__appearance they are assigned.          
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadMenuItem.__ Their names indicate to which part of the __RadMenuItem's__ appearance they are assigned.          
 
 ![](images/RadMenu_Styles_and_Templates_RadMenuItem_01.png)
 
@@ -98,7 +98,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * __SubMenuHeaderTemplate__ - the template applied to the item when it is of type __Submenu Header__.
 
-* __SubMenuItemTemplate__ - the template applied to the item, when it is of type__Submenu Item__.
+* __SubMenuItemTemplate__ - the template applied to the item, when it is of type __Submenu Item__.
 
 * __RadMenuItemSeparatorTopStroke__ - a brush that represents the color of the top separator part.
 

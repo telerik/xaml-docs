@@ -10,11 +10,7 @@ position: 16
 
 # Bind RadTreeView to Self-Referencing Data
 
-
-
-## 
-
-This tutorial will show you how to display in a __RadTreeView__ flat, self-referencing data, loaded from a database, that has properties __ID__and __ParentID__(or similar) which define the hierarchy. 
+This tutorial will show you how to display in a __RadTreeView__ flat, self-referencing data, loaded from a database, that has properties __ID__ and __ParentID__ (or similar) which define the hierarchy. 
 
 Consider the following very simple data object:
 
@@ -49,8 +45,6 @@ Consider the following very simple data object:
 	    }
 	}
 	{{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -100,9 +94,7 @@ Consider the following very simple data object:
 				Me.Owner = collection
 			End Sub
 		End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Those data objects are added into a special __DataItemCollection__ class, that inherits __ObservableCollection<T>__ and overrides __SetItem(), InsertItem(), RemoveItem()__ and __ClearItems()__ methods. In each override we call __AdoptItem()__ and __DiscardItem()__, respectively, which set the __Owner__ property of the __DataItem__ class: 
 
@@ -143,9 +135,7 @@ Those data objects are added into a special __DataItemCollection__ class, that i
 	        item.SetOwner( null );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -182,13 +172,12 @@ Those data objects are added into a special __DataItemCollection__ class, that i
 				item.SetOwner(Nothing)
 			End Sub
 		End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Normally when you load your data objects from a service in your application, you will have auto-generated partial classes, that are relatively easy to extend. 
 
 Now we are ready to data-bind our __RadTreeView__:
+
 {% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
@@ -200,9 +189,10 @@ Now we are ready to data-bind our __RadTreeView__:
 	  ItemsSource="{Binding Converter={StaticResource HierarchyConverter}}">
 	    <TextBlock Text="{Binding Text}" />
 	</telerik:HierarchicalDataTemplate>
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
@@ -213,7 +203,7 @@ Now we are ready to data-bind our __RadTreeView__:
 	  ItemsSource="{Binding Converter={StaticResource HierarchyConverter}}">
 	    <TextBlock Text="{Binding Text}" />
 	</HierarchicalDataTemplate>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
@@ -223,12 +213,9 @@ Now we are ready to data-bind our __RadTreeView__:
 	<telerik:RadTreeView x:Name="radTreeView"
 	 ItemTemplate="{StaticResource ItemTemplate}"
 	 ItemsSource="{Binding Converter={StaticResource HierarchyConverter}}"/>
-	{{endregion}}
+{{endregion}}
 
-
-
-There is one non-standard thing: all __ItemsSource__bindings are made through a
-        __ValueConverter__. This __ValueConverter__will create the "real" hierarchy for us: 
+There is one non-standard thing: all __ItemsSource__ bindings are made through a __ValueConverter__. This __ValueConverter__ will create the "real" hierarchy for us: 
 
 #### __C#__
 
@@ -256,9 +243,7 @@ There is one non-standard thing: all __ItemsSource__bindings are made through a
 	        throw new NotImplementedException();
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -267,13 +252,13 @@ There is one non-standard thing: all __ItemsSource__bindings are made through a
 			Implements IValueConverter
 	
 			Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object Implements IValueConverter.Convert
-				' We are binding an item
+				' We are binding an item'
 				Dim item As DataItem = TryCast(value, DataItem)
 				If item IsNot Nothing Then
 					Return item.Owner.Where(Function(i) i.ParentId = item.Id)
 				End If
 	
-				' We are binding the treeview
+				' We are binding the treeview'
 				Dim items As DataItemCollection = TryCast(value, DataItemCollection)
 				If items IsNot Nothing Then
 					Return items.Where(Function(i) i.ParentId = 0)
@@ -287,11 +272,9 @@ There is one non-standard thing: all __ItemsSource__bindings are made through a
 			End Function
 	
 		End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-When a __DataItem__object is passed as value, we are binding a __TreeViewItem__, so the __Convert()__method will return all __DataItem__objects from the __Owner__collection that have __ParentID__equal to the __ID__of the passed __DataItem__. When a __DataItemCollection__is passed, we are binding the __RadTreeView__, so the __Convert()__method will return the root-level __DataItem__objects, that have __ParentID=0__. Of course, it is up to you to decide whether you want a single, or separate converters for both of the cases. I did it in this way for simplicity, but if you want, you could split the code into two classes.
+When a __DataItem__ object is passed as value, we are binding a __TreeViewItem__, so the __Convert()__ method will return all __DataItem__ objects from the __Owner__ collection that have __ParentID__ equal to the __ID__ of the passed __DataItem__. When a __DataItemCollection__ is passed, we are binding the __RadTreeView__, so the __Convert()__ method will return the root-level __DataItem__ objects, that have __ParentID=0__. Of course, it is up to you to decide whether you want a single, or separate converters for both of the cases. I did it in this way for simplicity, but if you want, you could split the code into two classes.
 
 Finally, let's populate the treeview with some data: 
 
@@ -313,9 +296,7 @@ Finally, let's populate the treeview with some data:
 	 new DataItem () { Text = "Item 3.2", Id = 12, ParentId = 3 },
 	 new DataItem () { Text = "Item 3.3", Id = 13, ParentId = 3 }
 	};
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -334,18 +315,12 @@ Finally, let's populate the treeview with some data:
 		New DataItem () With {.Text = "Item 3.2", .Id = 12, .ParentId = 3}, 
 		New DataItem () With {.Text = "Item 3.3", .Id = 13, .ParentId = 3} 
 													}
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result: 
-
 ![](images/RadTreeView_HowToBindToSelfReferencingData_010.PNG)
 
 # See Also
-
  * [Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection]({%slug radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection%})
-
  * [Enable the Horizontal and Vertical Scrollbars]({%slug radtreeview-how-to-enable-horizontal-vertical-scrollbar%})
-
  * [Disable Drop at Specific Location]({%slug radtreeview-how-to-disable-drop-specific-location%})

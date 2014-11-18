@@ -11,41 +11,32 @@ position: 6
 # Localization
 
 
-
 The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} allows you to localize __RadDataFilter__ control.
       
 
 Here is a list of the supported languages:
       
 
-* 
-          English
+* English
         
 
-* 
-          German
+* German
         
 
-* 
-          Spanish
+* Spanish
         
 
-* 
-          French
+* French
         
 
 
 
->tipTo learn more about the ways to localize the RadControls please read the common topic about 
+>To learn more about the ways to localize the RadControls please read the common topic about 
       {% if site.site_name == 'Silverlight' %}[Localization](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[Localization](http://www.telerik.com/help/wpf/common-localization.html){% endif %}.
 
 Below you may see some of the resource keys and the strings they are associated with them.
 
-
-
-
-         
-      ![](images/RadDataFilter_Localization.png)
+![](images/RadDataFilter_Localization.png)
 
 ## Resource Keys
 

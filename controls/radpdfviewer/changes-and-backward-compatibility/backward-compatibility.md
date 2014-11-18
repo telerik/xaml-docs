@@ -18,8 +18,7 @@ This article lists the breaking changes and how they can be fixed when upgrading
 
 ### Changed
 
-__Telerik.Windows.Documents.Fixed.UI.MouseHandlers.MouseHandlersController__ is renamed to
-              __Telerik.Windows.Documents.Fixed.UI.PointerHandlers.PointerHandlersController__
+__Telerik.Windows.Documents.Fixed.UI.MouseHandlers.MouseHandlersController__ is renamed to __Telerik.Windows.Documents.Fixed.UI.PointerHandlers.PointerHandlersController__
 
 ### What to do now
 
@@ -48,16 +47,10 @@ There are no breaking changes in this version of the control.
 
 ## What's Different in 2013 Q1 - 2013.1.0220
 
-There are some breaking changes concerning the references you have to add to your project. A reference to __Telerik.Windows.Documents.Core__
-          is now required. More information on the assemly references can be found [here]({%slug radpdfviewer-getting-started%}).
+There are some breaking changes concerning the references you have to add to your project. A reference to __Telerik.Windows.Documents.Core__ is now required. More information on the assemly references can be found [here]({%slug radpdfviewer-getting-started%}).
         
 
 ## What's Different in 2012 Q1 - 2012.1.0215
 
-In 2012 Q1 the Navigation Panel of RadPdfViewer is excluded from the template of the control.
-          This is done because the PdfViewer now exposes commands which can be bound to using Different UI.
-          In order to achieve the old look, you can declare a RadToolBar as described in the article
-          [Wiring UI]({%slug radpdfviewer-wiring-ui%}).
+In 2012 Q1 the Navigation Panel of RadPdfViewer is excluded from the template of the control. This is done because the PdfViewer now exposes commands which can be bound to using Different UI. In order to achieve the old look, you can declare a RadToolBar as described in the article [Wiring UI]({%slug radpdfviewer-wiring-ui%}).
         
-
-# See Also

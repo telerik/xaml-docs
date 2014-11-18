@@ -20,11 +20,11 @@ The __LinearScale__ control allows you to display a scale of linear form. Typica
 
 Here is the list of the __LinearScale__ features:
 
-* [Orientation](#Orientation)
+* [Orientation](#orientation)
 
-* [Relative Size](#Relative_Size)
+* [Relative Size](#relative_size)
 
-* [Placement](#Placement)
+* [Placement](#placement)
 
 ## Orientation
 
@@ -62,13 +62,11 @@ Here is an example of a __LinearScale__ with vertical orientation.
 
 Both results can be seen below:
 
-
-
 ![Rad Gauge Features Linear Scale hor 01](images/RadGauge_Features_LinearScale_hor01.PNG)
 
 ## Relative Size
 
-The __Relative Size__feature allows you to specify the size of the scale towards its container. This can be done by using the __RelativeHeight__ and __RelativeWidth__ property of the __LinearScale__. For example a value of __RelativeHeight = 1__ will make the scale have a scale equal to the height of the container and a value of __RelativeWidth = 1__ will make the scale have a width equal to the width of the container.
+The __Relative Size__ feature allows you to specify the size of the scale towards its container. This can be done by using the __RelativeHeight__ and __RelativeWidth__ property of the __LinearScale__. For example a value of __RelativeHeight = 1__ will make the scale have a scale equal to the height of the container and a value of __RelativeWidth = 1__ will make the scale have a width equal to the width of the container.
 
 >Note that when using the LinearScale in horizontal mode, the value of the RelativeHeight property will get applied to the width of the container.
 
@@ -91,11 +89,7 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![Rad Gauge radgauge features linearscale 02](images/RadGauge_Features_LinearScale_02.png)
+![Rad Gauge radgauge features linearscale 02](images/RadGauge_Features_LinearScale_02.png)
 
 ## Placement
 
@@ -126,8 +120,4 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_Features_LinearScale_03.png)
+![](images/RadGauge_Features_LinearScale_03.png)

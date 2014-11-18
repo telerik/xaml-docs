@@ -10,19 +10,15 @@ position: 3
 
 # Change PageSize dynamically
 
+Generally, the page size of a __RadDataPager__ can be set by the corresponding __PageSize__ property. However, in some cases you may require it to be changed dynamically in run time. 
 
+So, if for example you want to use a __RadComboBox__ for changing the size and you want it defined in the template of the __RadDataPager__, you need to do a couple of things;
 
-## 
-
-Generally, the page size of a RadDataPager can be set by the corresponding PageSize property. However, in some cases you may require it to be changed dynamically in run time. 
-
-So, if for example you want to use a RadComboBox for changing the size and you want it defined in the template of the RadDataPager, you need to do a couple of things;
-
-* Define an IValueConverter responsible for adding items in the RadComboBox depending on the number of data items in RadGridView:
+* Define an __IValueConverter__ responsible for adding items in the __RadComboBox__ depending on the number of data items in __RadGridView__:
 
 #### __C#__
-
 {{region raddatapager-change-page-size-dynamically_0}}
+
 	public class CountConverter : IValueConverter
 	 {
 	  public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -45,13 +41,13 @@ So, if for example you want to use a RadComboBox for changing the size and you w
 	   return value;
 	  }
 	 }
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
-
 {{region raddatapager-change-page-size-dynamically_1}}
+
 	Public Class CountConverter
 	 Implements IValueConverter
 	 Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object
@@ -70,27 +66,27 @@ So, if for example you want to use a RadComboBox for changing the size and you w
 	  Return value
 	 End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
-* Predefine the template of the RadDataPager and bind the SelectedValue of the RadComboBox to the PageSize property of the RadDataPager:
+* Predefine the template of the __RadDataPager__ and bind the __SelectedValue__ of the __RadComboBox__ to the __PageSize__ property of the __RadDataPager__:
 
 #### __XAML__
-
 {{region raddatapager-change-page-size-dynamically_2}}
+
 	<StackPanel Grid.Column="1" Margin="5,0" Orientation="Horizontal" Visibility="{Binding PagerControlsVisibility.TextControlVisibility, RelativeSource={RelativeSource TemplatedParent}}">
 	          <telerik:RadComboBox ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource countConverter}}" SelectedValue="{Binding PageSize, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" x:Name="radComboBox" />  
 	</StackPanel>
-	{{endregion}}
+{{endregion}}
 
 
 
-* Set the updates style to the RadDataPager:
+* Set the updates style to the __RadDataPager__:
 
 #### __XAML__
-
 {{region raddatapager-change-page-size-dynamically_3}}
+
 	<Grid x:Name="LayoutRoot" DataContext="{Binding Source={StaticResource SampleDataSource}}">
 	    <Grid.RowDefinitions>
 	 <RowDefinition Height="auto"/>
@@ -101,18 +97,15 @@ So, if for example you want to use a RadComboBox for changing the size and you w
 	                          IsTotalItemCountFixed="True" 
 	                          Style="{StaticResource RadDataPagerStyle1}"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
 Once you created all the necessary elements, your application should be displayed as follows:
 
 
-
-
-         
-      ![](images/RadDataPager_ChangePageSizeDynamically.png)
+![](images/RadDataPager_ChangePageSizeDynamically.png)
 
 
 
->tipYou may download a full runnable sample project illustrating the approach described in this [Code Library](http://www.telerik.com/community/code-library/silverlight/datapager/dynamically-change-the-pagesize-of-raddatapager.aspx).
+>tip You may download a full runnable sample project illustrating the approach described in this [Code Library](http://www.telerik.com/community/code-library/silverlight/datapager/dynamically-change-the-pagesize-of-raddatapager.aspx).

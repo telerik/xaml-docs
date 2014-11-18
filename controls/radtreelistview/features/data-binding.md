@@ -14,8 +14,7 @@ position: 4
 
 Displaying data in the __RadGridView__ depends on the data binding mechanism. The entry point for the data to be bound is the __ItemsSource__ property, which you must set in order to display data in your __RadGridView__ control. 
 
->tipFor additional information regarding data binding and populating the __RadTreeListView__ with data you can check the respective topics in the 
-      {% if site.site_name == 'Silverlight' %}[RadGridView's documentation](http://www.telerik.com/help/silverlight/gridview-data-overview.html){% endif %}{% if site.site_name == 'WPF' %}[RadGridView's documentation](http://www.telerik.com/help/wpf/gridview-data-overview.html){% endif %}.
+>tipFor additional information regarding data binding and populating the __RadTreeListView__ with data you can check the respective topics in the [RadGridView's documentation]({%slug gridview-data-overview%}).
 
 ## Setting the ItemsSource property
 
@@ -24,16 +23,18 @@ As a typical data control the __RadGridView__ displays data by binding to a sour
 #### __C#__
 
 {{region radtreelistview-features-data-binding_0}}
+
 	this.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData();
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radtreelistview-features-data-binding_1}}
+
 	Me.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData()
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -47,11 +48,12 @@ Introduced to the __System.ComponentModel__ namespace collection views are fully
 
 ## Binding the Columns
 
-The data in the __RadGridView__ is separated in columns. There are different types of columns, displaying different types of data. Usually the data is displayed in __GridViewDataColumns__, which can be manually generated, too. In order to display the data in it you can bind its DataMemberBinding property. Here is an example of a manually defined column.
+The data in the __RadGridView__ is separated in columns. There are different types of columns, displaying different types of data. Usually the data is displayed in __GridViewDataColumns__, which can be manually generated, too. In order to display the data in it you can bind its __DataMemberBinding__ property. Here is an example of a manually defined column.
 
 #### __XAML__
 
 {{region radtreelistview-features-data-binding_2}}
+
 	<telerik:RadTreeListView x:Name="radTreeListView"
 	                            AutoGenerateColumns="False">
 	    <telerik:RadTreeListView.Columns>
@@ -61,26 +63,27 @@ The data in the __RadGridView__ is separated in columns. There are different typ
 	                                    Header="Count" />
 	    </telerik:RadTreeListView.Columns>
 	</telerik:RadTreeListView>
-	{{endregion}}
+{{endregion}}
 
 
 
 ## Binding the TreeListViewTableDefinitions
 
-In order to display the hierarchical data the __RadTreeListView__ uses child table definition of type TreeListViewTableDefinition. In order to display the underlying items in the hierarchy you have to bind its ItemsSource to the appropriate property.
+In order to display the hierarchical data the __RadTreeListView__ uses child table definition of type __TreeListViewTableDefinition__. In order to display the underlying items in the hierarchy you have to bind its __ItemsSource__ to the appropriate property.
 
->Note that a table definition will be generated for each row and it will have the same DataContext as the row. So you have to bind to the property, marking the collection that contains the next level of the hierarchy. This property should have the same name at each level of the hierarchy. 
+>Note that a table definition will be generated for each row and it will have the same __DataContext__ as the row. So you have to bind to the property, marking the collection that contains the next level of the hierarchy. This property should have the same name at each level of the hierarchy. 
 
 #### __XAML__
 
 {{region radtreelistview-features-data-binding_3}}
+
 	<telerik:RadTreeListView x:Name="radTreeListView">
 	    <telerik:RadTreeListView.ChildTableDefinitions>
 	        <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}">
 	        </telerik:TreeListViewTableDefinition>
 	    </telerik:RadTreeListView.ChildTableDefinitions>
 	</telerik:RadTreeListView>
-	{{endregion}}
+{{endregion}}
 
 
 

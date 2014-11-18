@@ -10,10 +10,6 @@ position: 0
 
 # Global Styles
 
-
-
-## 
-
 Global styles allow easy styling of any control and this topic will show you how to redefine the visual appearance of the carousel items using this technique.
 Similarly to all __ItemsControls__, the RadCarousel has an item container, called __CarouselItem__ that serves as a wrapper for the data that gets visualized. First we will create a new style for the item container and after that we will create a new style for the data itself.
 
@@ -21,14 +17,13 @@ In order to override the default style of the container item we have to create a
 
 >For this example we will be using the __Customers__ table of the Northwind database. 
 
->
-
-Namespace mapping:
+>Namespace mapping:
 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
 #### __XAML__
 
 {{region carousel-global-styles_0}}
+
 	<Style TargetType="{x:Type telerik:CarouselItem}">
 	    <Setter Property="Height" Value="200"/>
 	    <Setter Property="Width" Value="400"/>
@@ -46,14 +41,9 @@ xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
 
+Now __CarouselItems__ will look like this:
 
-Now __CarouselItem__s will look like this:
-
-
-
-
-         
-      ![](images/ellipse.PNG)
+![](images/ellipse.PNG)
 
 One very important thing to note here is the __ContentPresenter__ that we have included in the new template – it will host the elements that define the visual representation of our data entities.
 
@@ -62,6 +52,7 @@ Now that we have styled the __CarouselItem__ we need to create a new style for t
 #### __XAML__
 
 {{region carousel-global-styles_1}}
+
 	<Style TargetType="{x:Type telerik:CarouselDataRecordPresenter}">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -84,20 +75,11 @@ Now that we have styled the __CarouselItem__ we need to create a new style for t
 
 Overall this is a very simple style which will display the contact name, the country, the city, and the address of each customer that is listed in the Customers table. The most interesting parts of this style are the binding that are defined for every __Label__ object. Since the data context of every __CarouselDataRecordPresenter__ is a __DataRow__ we use the indexer of each row to bind to a specific column of the Customers table.
 
-Here is the result:
-
-
-
-
-         
-      ![](images/ellipse2.PNG)
-
+Here is the result:   
+ ![](images/ellipse2.PNG)
 
 
 Now the only thing left to do is to run the carousel and see the ellipses in action:
-
-
-         
-      ![](images/ellipseCarousel_thumb.PNG)
+ ![](images/ellipseCarousel_thumb.PNG)
 
 

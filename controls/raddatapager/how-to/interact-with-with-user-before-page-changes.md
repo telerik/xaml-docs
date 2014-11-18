@@ -10,30 +10,24 @@ position: 2
 
 # Interact with the User before the Page Changes
 
-
-
-## 
-
 While developing an UI, which contains paging, you might want to ensure that there are no unfinished actions by the user, such as unsubmitted data, data in edit mode and others, on the current page. In this case, it's common to prompt the users if they surely want to continue. If the user refuses to continue, you should prevent the paging from happening. The place, where the prompt should be implemented, is the event handler for the __PageIndexChanging__ event.
 
 Here is an example of a __RadDataPager__ that shows a __MessageBox__ before changing the page when a condition is met.
 
 #### __XAML__
-
 {{region raddatapager-how-to-interact-with-with-user-before-page-changes_0}}
+
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        Grid.Row="1"
 	                        PageSize="5"
 	                        DisplayMode="All"
 	                        IsTotalItemCountFixed="True"
 	                        Margin="0,10,0,0" PageIndexChanging="radDataPager_PageIndexChanging" />
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region raddatapager-how-to-interact-with-with-user-before-page-changes_1}}
+
 	private bool myCondition;
 	private void radDataPager_PageIndexChanging( object sender, PageIndexChangingEventArgs e )
 	{
@@ -46,13 +40,12 @@ Here is an example of a __RadDataPager__ that shows a __MessageBox__ before chan
 	        }
 	    }
 	}
-	{{endregion}}
-
+{{endregion}}
 
 
 #### __VB.NET__
-
 {{region raddatapager-how-to-interact-with-with-user-before-page-changes_2}}
+
 	Private myCondition As Boolean
 	Private Sub radDataPager_PageIndexChanging(sender As Object, e As PageIndexChangingEventArgs)
 	 If myCondition Then
@@ -62,15 +55,9 @@ Here is an example of a __RadDataPager__ that shows a __MessageBox__ before chan
 	  End If
 	 End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadDataPager_How_To_Interact_With_The_User_01.png)
+![](images/RadDataPager_How_To_Interact_With_The_User_01.png)
 
 # See Also
 

@@ -13,21 +13,15 @@ site_name: WPF
 
 
 
-The __RadRibbonWindow__ control is used to replace the __Window__ control that represents
-		the root UI of a WPF application. Its purpose is to allow a smoother UI when hosting the __RadRibbonView__
-		at the root level of the application.
+The __RadRibbonWindow__ control is used to replace the __Window__ control that represents the root UI of a WPF application. Its purpose is to allow a smoother UI when hosting the __RadRibbonView__ at the root level of the application.
 	  
 
 ## 
 
-In the trivial case if you place a __RadRibbonView__ in the __MainWindow__ of your WPF
-		  application you'll see the following result.
-		![](images/RadRibbonView_Window_WPF.png)
+In the trivial case if you place a __RadRibbonView__ in the __MainWindow__ of your WPF application you'll see the following result. 
+![](images/RadRibbonView_Window_WPF.png)
 
-You will have two title bars which makes the UI messy. The __RadRibbonWindow__ integrates with
-		  the __RadRibbonView__ and prevents this. In order to use the __RadRibbonWindow__ you have to
-		  replace the __Window__ control in your __MainWindow__ class with the
-		  __RadRibbonWindow__ one.
+You will have two title bars which makes the UI messy. The __RadRibbonWindow__ integrates with the __RadRibbonView__ and prevents this. In order to use the __RadRibbonWindow__ you have to replace the __Window__ control in your __MainWindow__ class with the __RadRibbonWindow__ one.
 		
 
 #### __XAML__
@@ -73,7 +67,8 @@ You will have two title bars which makes the UI messy. The __RadRibbonWindow__ i
 
 
 
-Here is a snapshot of the result.![](images/RadRibbonView_RibbonWindow_Wpf.png)
+Here is a snapshot of the result.
+![](images/RadRibbonView_RibbonWindow_Wpf.png)
 
 By default when you add a __RadRibbonView__ in a __RadRibbonWindow__, the components are integrated together to create a seamless UI experience. For that purpose the __QuickAccessToolbar__ as well as the __ApplicationName__  and the __Title__ of the __RadRibbonView__ are displayed in the title tray of the __RadRibbonWindow__. In this case the value of the __RadRibbonWindow Title__ is ignored.
 		
@@ -157,8 +152,7 @@ By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can a
 		Public Sub New()
 			InitializeComponent()
 		End Sub
-	End Class
-	#End Region
+	End 
 
 
 

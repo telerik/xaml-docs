@@ -8,9 +8,9 @@ published: True
 position: 1
 ---
 
-#Backward Compatibility
+# Backward Compatibility
 
-###RadTreeView - Q1 2013
+### RadTreeView - Q1 2013
 
 With the Q1 2013 release, the RadioButtons logic implemented in the __RadTreeView__ is obsoleted. This means that the following list of properties are obsoleted:
 

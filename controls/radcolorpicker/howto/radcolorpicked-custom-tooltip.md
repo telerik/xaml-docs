@@ -50,7 +50,7 @@ For the purpose of this article we will use:
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-custom-tooltip_2}}
 		Public Class ColorModel
@@ -99,7 +99,7 @@ For the purpose of this article we will use:
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-custom-tooltip_4}}
 		Public Class MainViewModel
@@ -137,7 +137,4 @@ Then you have to set the MainViewModel as __DataContext__ of the RadColorPicker 
 
 The result will be similar to the picture below:
 
-			![Rad Color Picker How To Custom Tool Tip](images/RadColorPicker_HowTo_CustomToolTip.png)
-
-You can download a sample runnable project here.
-			
+![Rad Color Picker How To Custom Tool Tip](images/RadColorPicker_HowTo_CustomToolTip.png)

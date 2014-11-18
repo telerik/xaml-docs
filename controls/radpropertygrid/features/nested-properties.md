@@ -14,13 +14,12 @@ position: 0
 
 ## 
 
-The PropertyGrid can show nested PropertyDefinitions.
-          In order to enable the nested properties support you need to set the RadPropertyGrid's __NestedPropertiesVisibility__ property to "Visible". That way you will be able to modify any editable child properties of reference types.
+The PropertyGrid can show nested PropertyDefinitions. In order to enable the nested properties support you need to set the RadPropertyGrid's __NestedPropertiesVisibility__ property to "Visible". That way you will be able to modify any editable child properties of reference types.
         
 
 #### __XAML__
 
-{{region radpropertygrid-getting-started-getting-started_7}}
+	{{region radpropertygrid-getting-started-getting-started_7}}
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding}"
 	 NestedPropertiesVisibility="Visible" />
 	{{endregion}}
@@ -29,7 +28,7 @@ The PropertyGrid can show nested PropertyDefinitions.
 
 #### __C#__
 
-{{region radpropertygrid-getting-started-getting-started_8}}
+	{{region radpropertygrid-getting-started-getting-started_8}}
 	 DataContext = new Order()
 	            {
 	                OrderDate = new DateTime(1996, 7, 5),
@@ -58,7 +57,7 @@ The PropertyGrid can show nested PropertyDefinitions.
 
 #### __VB.NET__
 
-{{region radpropertygrid-getting-started-getting-started_9}}
+	{{region radpropertygrid-getting-started-getting-started_9}}
 	    DataContext = New Order() With { _
 		.OrderDate = New DateTime(1996, 7, 5), _
 		.ShippedDate = New DateTime(1996, 8, 16), _
@@ -81,27 +80,15 @@ The PropertyGrid can show nested PropertyDefinitions.
 
 
 
-For a full example please check this
-          {% if site.site_name == 'Silverlight' %}[
-                demo
-              ](
-                http://demos.telerik.com/silverlight/#PropertyGrid/NestedPropertyDefinitions
-              ){% endif %}{% if site.site_name == 'WPF' %}[
-                demo
-              ](
-                http://demos.telerik.com/wpf/#PropertyGrid/NestedPropertyDefinitions
-              ){% endif %}
-          about NestedPropertyDefinitions.
+For a full example please check this {% if site.site_name == 'Silverlight' %}[demo](http://demos.telerik.com/silverlight/#PropertyGrid/NestedPropertyDefinitions){% endif %}{% if site.site_name == 'WPF' %}[demo](http://demos.telerik.com/wpf/#PropertyGrid/NestedPropertyDefinitions){% endif %} about NestedPropertyDefinitions.
         
 
-
-
-You can __define a nested property__ like so:
+You can define a nested property like so:
         
 
 #### __XAML__
 
-{{region radpropertygrid-nested-properties_0}}
+	{{region radpropertygrid-nested-properties_0}}
 	  <telerik:RadPropertyGrid x:Name="PropertyGrid1" 
 	                           AutoGeneratePropertyDefinitions="False" 
 	                           NestedPropertiesVisibility="Visible">
@@ -120,8 +107,7 @@ You can __define a nested property__ like so:
 >After __Q1 2012__ searching in the nested hierarchy is supported.
           
 
->Before __Q1 2012__ the NestedPropertiesVisibility property has modes __FlatMode__ and
-            __NestedPropertiesMode__.
+>Before __Q1 2012__ the NestedPropertiesVisibility property has modes __FlatMode__ and __NestedPropertiesMode__.
           
 
 # See Also

@@ -143,7 +143,3 @@ Here is a sample code snippet that demonstrates zoom level customization:
 	 Me.RadMap1.MapZoomBar.RegisterSetZoomLevelCommand(zoomLevel, label, TryCast(Me.LayoutRoot.Resources("CustomCommandDataTemplate"), DataTemplate), New Uri(imagePath, UriKind.RelativeOrAbsolute))
 	End Sub
 	{{endregion}}
-
-
-
-

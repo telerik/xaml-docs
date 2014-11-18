@@ -14,8 +14,7 @@ position: 8
 
 ## Keyboard Support Overview
 
-Using the __Telerik Diagramming Framework__ allows you to trigger most of its features using key combinations.
-		  Below you can find a list of all supported key combinations and information about the features they trigger:
+Using the __Telerik Diagramming Framework__ allows you to trigger most of its features using key combinations. Below you can find a list of all supported key combinations and information about the features they trigger:
 		
 
 * You can use the __Ctrl__ key to change the active mouse tool in the __RadDiagram__. The default tool is the __PointerTool__ but holding down the __Ctrl__ key allows you to use the __PanTool__.
@@ -72,27 +71,20 @@ Using the __Telerik Diagramming Framework__ allows you to trigger most of its fe
 These key gestures are defined in the __RadDiagram InputBindings__ collection. You can easily add and remove items from that collection thus creating custom key combinations.
 		
 
-For example if you want to create a custom key combination that triggers the __DiagramCommands.Layout__ command, you can add a new __KeyBinding__ to the __RadDiagram InputBindings__collection as follows:
+For example if you want to create a custom key combination that triggers the __DiagramCommands.Layout__ command, you can add a new __KeyBinding__ to the __RadDiagram InputBindings__ collection as follows:
 	  
-
+#### __XAML__
 	
-<telerik:RadDiagram x:Name="diagram" />		  
+    <telerik:RadDiagram x:Name="diagram" />		  
 		  
-
-
-
+#### __C#__
 	
-diagram.InputBindings.Add(new KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control));		  
+    diagram.InputBindings.Add(new KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control));		  
 		  
+#### __VB.NET__ 
 
-
-
-	
-diagram.InputBindings.Add(New KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control))		  
+    diagram.InputBindings.Add(New KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control))		  
 		  
-
-
-
 # See Also
 
  * [Getting Started]({%slug raddiagram-getting-started%})

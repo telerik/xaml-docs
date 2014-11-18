@@ -12,7 +12,7 @@ position: 7
 
 
 
-In addition to the standard keyboard input, __RadMaskedInput__controls deliver the convenience of desktop applications with support for arrow-key navigation:
+In addition to the standard keyboard input, __RadMaskedInput__ controls deliver the convenience of desktop applications with support for arrow-key navigation:
       
 
 * Left/Right arrows - move the cursor one position to the left/right.
@@ -25,18 +25,16 @@ In addition to the standard keyboard input, __RadMaskedInput__controls deliver t
 
 ##  Spin Behavior
 
-The spin behavior in the __RadMaskedInput__ controls could be controlled by setting the __SpinMode__property.
-        
-
+The spin behavior in the __RadMaskedInput__ controls could be controlled by setting the __SpinMode__ property.
 
 
 The __SpinMode__ property is enumeration that exposed the following values:
         
 
-* __Position__ - spins the position affecting only the value on that position. For example if you spin up the last position of the following numeric value in a __RadMaskedNumericInput -__ 999, the result will be 990
+* __Position__ - spins the position affecting only the value on that position. For example if you spin up the last position of the following numeric value in a __RadMaskedNumericInput__ - 999, the result will be 990
             
 
-* __PositionAndValue__ - spins the position affecting the value of the RadMaskedInput control. For example if you spin up the last position of the following numeric value in a __RadMaskedNumericInput -__ 999, the result will be 1000
+* __PositionAndValue__ - spins the position affecting the value of the RadMaskedInput control. For example if you spin up the last position of the following numeric value in a __RadMaskedNumericInput__ - 999, the result will be 1000
             
 
 * __None__ - disables the spin behavior
@@ -93,8 +91,7 @@ Below you can find further explanations about the tab navigation between several
 Once you turn off the sections tab navigation, you can set up the following properties to control the overall tab navigation within a __RadMaskedInput__ control:
         
 
-* __IsTabStop__ - All __RadMaskedInput__ controls derive from the native __Control__ class and therefore they all expose an
-              {% if site.site_name == 'Silverlight' %}[IsTabStop](http://msdn.microsoft.com/en-us/library/system.windows.controls.control.istabstop(v=vs.95).aspx){% endif %}{% if site.site_name == 'WPF' %}[IsTabStop](http://msdn.microsoft.com/en-us/library/system.windows.controls.control.istabstop(v=vs.110).aspx){% endif %} property. However, when using this property you need to consider the fact that our controls actually are constructed of two native __TextBoxes__ which are placed one over another in their default template. One of them is used to visualize the content of the control when it is not focused. Also, that __TextBox__ can not receive the focus (its __IsTabStop__ property set to __False__). The other __TextBox__ component (called for short *"EditorTextBox"*) is visualized (and focused) when users try to change the __Value__ of the __RadMaskedInput__ control. Hence, if the native __IsTabStop__ property of the __RadMaskedInput__ control is set to __False__ the control itself will be restricted to receive focus. Please note that users will still be allowed to change the content of the control, since the EditorTextBox will be able to receive the focus.
+* __IsTabStop__ - All __RadMaskedInput__ controls derive from the native __Control__ class and therefore they all expose an {% if site.site_name == 'Silverlight' %}[IsTabStop](http://msdn.microsoft.com/en-us/library/system.windows.controls.control.istabstop(v=vs.95).aspx){% endif %}{% if site.site_name == 'WPF' %}[IsTabStop](http://msdn.microsoft.com/en-us/library/system.windows.controls.control.istabstop(v=vs.110).aspx){% endif %} property. However, when using this property you need to consider the fact that our controls actually are constructed of two native __TextBoxes__ which are placed one over another in their default template. One of them is used to visualize the content of the control when it is not focused. Also, that __TextBox__ can not receive the focus (its __IsTabStop__ property set to __False__). The other __TextBox__ component (called for short *"EditorTextBox"*) is visualized (and focused) when users try to change the __Value__ of the __RadMaskedInput__ control. Hence, if the native __IsTabStop__ property of the __RadMaskedInput__ control is set to __False__ the control itself will be restricted to receive focus. Please note that users will still be allowed to change the content of the control, since the EditorTextBox will be able to receive the focus.
             
 
 * __MaskedInputExtensions.IsEditorTabStop__ - this property is introduced in the __Q3 2013__ release and it controls whether the *EditorTextBox* is allowed to receive the focus.
@@ -128,48 +125,13 @@ The following snippet demonstrates how both properties can be used to restrict t
 
 The following table represents all possible combinations between the two properties and the number of the necessary __Tab__ (or __Shift + Tab__) key strokes to focus different controls:
         
-<table><tr><td>
+|IsEditorTabStop|IsTabStop|Next control|The RadMaskedInput control|
+|---------------|---------|------------|--------------------------|
+|True (default)|False (default)|2|1|
+|FALSE|FALSE|1|-|
+|TRUE|TRUE|3|2|
+|FALSE|TRUE|2|-|
 
-<b>IsEditorTabStop</b></td><td>
-
-<b>IsTabStop</b></td><td>
-
-Next control</td><td>
-
-The <b>RadMaskedInput</b> control
-              </td></tr><tr><td>
-
-True (default)</td><td>
-
-False (default)</td><td>
-
-2</td><td>
-
-1</td></tr><tr><td>
-
-False</td><td>
-
-False</td><td>
-
-1</td><td>
-
--</td></tr><tr><td>
-
-True</td><td>
-
-True</td><td>
-
-3</td><td>
-
-2</td></tr><tr><td>
-
-False</td><td>
-
-True</td><td>
-
-2</td><td>
-
--</td></tr></table>
 
 Basically, the __IsEditorTabStop__ property controls the focus of *EditorTextBox* and the native __IsTabStop__ property controls the focus of the __RadMaskedInput__ control itself.
         

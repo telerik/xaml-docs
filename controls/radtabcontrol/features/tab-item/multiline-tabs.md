@@ -14,11 +14,7 @@ position: 1
 
 ## 
 
-Multi-line tabs can be created using the __IsBreak__ property of the
-        __RadTabItem__. The property is of __Boolean__ type and the possible values are
-        __True__ or __False__. If it’s __True__, then the next tab items you
-        add will be placed on a new line inserted right above the item which property __IsBreak__ is set to 
-        __True__; if it’s __False__, no break is inserted.
+Multi-line tabs can be created using the __IsBreak__ property of the __RadTabItem__. The property is of __Boolean__ type and the possible values are __True__ or __False__. If it’s __True__, then the next tab items you add will be placed on a new line inserted right above the item which property __IsBreak__ is set to __True__; if it’s __False__, no break is inserted.
 
 ![](images/RadTabControl_Figure_00650.png)
 
@@ -34,8 +30,7 @@ Multi-line tabs can be created using the __IsBreak__ property of the
 
 
 
-In the above example the property __IsBreak__ of the tab item "Colors" is set to 
-        __True__ and the next tab item "Quote" is placed on a new line above all other tab items.
+In the above example the property __IsBreak__ of the tab item "Colors" is set to __True__ and the next tab item "Quote" is placed on a new line above all other tab items.
 
 # See Also
 

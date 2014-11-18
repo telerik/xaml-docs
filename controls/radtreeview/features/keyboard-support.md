@@ -10,30 +10,19 @@ position: 10
 
 # Keyboard Support
 
+__RadTreeView__ allows you to navigate through the nodes without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation, editing, expanding, collapsing and selecting the nodes.
 
-
-__RadTreeView__allows you to navigate through the nodes without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation, editing, expanding, collapsing and selecting the nodes.
-
-__RadTreeView__provides first class keyboard support. Here is the list of the keys that are supported:
+__RadTreeView__ provides first class keyboard support. Here is the list of the keys that are supported:
 
 * __ARROW KEYS__ - navigate in the tree
-
 * __PageUp, PageDown__ - page the __RadTreeViewItems__ in the view port area
-
 * __End, Home__ - go to last/first visible item
-
 * __ENTER__ - if in edit mode - set the new item value, else toggle collapsed/expanded state
-
 * __ESC__ - cancel edit or drag
-
 * __MULTIPLY__ - Expand all child items
-
 * __DIVIDE__ - Collapse all child items
-
 * __ADD, SUBSTRACT__ - expand/collapse selected item
-
 * __F2, SPACE__ - start edit mode
-
 * __CTRL, SHIFT__ - multiple item selection
 
 __RadTreeView__ exposes several useful properties and events, which can help you control the keyboard interaction and get notified when a key is up or down.
@@ -47,10 +36,9 @@ Set the __IsTabStop__ property to include/exclude the control in the tab navigat
 ## Events 
 
 * __KeyDown__ - Get notofied when the user has pressed a keyboard key.
-
 * __KeyUp__ - Get notified when the user has released a keyboard key.
 
->tipTo obtain the pressed key, the object that raised the event or some other information, use the instance of __System.Windows.Input.KeyEventArgs__ passed as a parameter to the event handler method.
+>tip To obtain the pressed key, the object that raised the event or some other information, use the instance of __System.Windows.Input.KeyEventArgs__ passed as a parameter to the event handler method.
 
 In the example below you can see how to attach to __KeyDown__ and __KeyUp__ events and how to specify a value for the __TabNavigation__ property from your XAML. 
 
@@ -90,10 +78,6 @@ The implementation of both of the event handlers __radTreeView_KeyDown__ and __r
 	End Sub
 	{{endregion}}
 
-
-
 # See Also
-
  * [Mouse Support]({%slug radtreeview-features-mouse-support%})
-
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})

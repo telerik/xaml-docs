@@ -10,9 +10,7 @@ position: 3
 
 # Getting Started
 
-
-
->tipTo learn more about the concepts behind the __RadDataPager__ you can read the [Paging Essentials]({%slug raddapager-features-paging-essentials%}) topic first.
+>To learn more about the concepts behind the __RadDataPager__ you can read the [Paging Essentials]({%slug raddapager-features-paging-essentials%}) topic first.
 
 The __RadDataPager__ is a control that allows you to split your data into pages and display it in a user friendly way. This topic will help you to quickly get started using the control. It will focus on the following:
 
@@ -28,7 +26,7 @@ The __RadDataPager__ is a control that allows you to split your data into pages 
 
 ## Adding RadDataPager
 
-In order to use __RadDataPager__in your project, you need to add references to the following assemblies:
+In order to use __RadDataPager__ in your project, you need to add references to the following assemblies:
 
 * __Telerik.Windows.Controls.dll__
 
@@ -36,23 +34,22 @@ In order to use __RadDataPager__in your project, you need to add references to t
 
 * __Telerik.Windows.Data.dll__
 
-After adding references to the aforementioned dlls, you can declare a new __RadDataPager__ as any normal Silverlight/WPF control.
+After adding references to the aforementioned dlls, you can declare a new __RadDataPager__ as any normal __Silverlight/WPF__ control.
 
->To use the __RadDataPager__ in the XAML you have to add the following namespace declaration:xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+>To use the __RadDataPager__ in the XAML you have to add the following namespace declaration: __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__ 
 
 #### __XAML__
 
 {{region raddatapager-getting-started_0}}
+
 	<telerik:RadDataPager x:Name="radDataPager" />
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Configuring the RadDataPager
 
 __RadDataPager__ allows to be configured via the properties it exposes. You can do the following:
 
-* Manage the size of the pages via the __PageSize__property. [Read more]({%slug raddatapager-features-page-size%})
+* Manage the size of the pages via the __PageSize__ property. [Read more]({%slug raddatapager-features-page-size%})
 
 * Show and hide visual elements of a pager via the __DisplayMode__ property. [Read more]({%slug raddatapager-features-display-modes%})
 
@@ -63,7 +60,7 @@ __RadDataPager__ allows to be configured via the properties it exposes. You can 
 __RadGridView__ can be paged through its __RadGridView.Items__ collection which implements the __IPagedCollectionView__ interface.
           
 
-The collection in this example holds business objects of type Employee. You should pass it to the __ItemsSource__ property of __RadGridView__.
+The collection in this example holds business objects of type __Employee__. You should pass it to the __ItemsSource__ property of __RadGridView__.
          
 
 After that, you create your __RadDataPager__ and bind its __RadDataPager.Source__ property to the __RadGridView.Items__ collection using __ElementName Binding__.
@@ -72,6 +69,7 @@ After that, you create your __RadDataPager__ and bind its __RadDataPager.Source_
 #### __XAML__
 
 {{region raddatapager-getting-started_7}}
+
 	<Grid x:Name="LayoutRoot"
 	        Background="White">    
 	    <Grid.RowDefinitions>
@@ -91,15 +89,9 @@ After that, you create your __RadDataPager__ and bind its __RadDataPager.Source_
 	                          Source="{Binding Items, ElementName=radGridView}"
 	                          PageSize="5" />
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-               
-            ![](images/RadDataPager_GettingStarted_01.png)
+ ![](images/RadDataPager_GettingStarted_01.png)
 
 ## Paging a Collection
 
@@ -117,7 +109,7 @@ Create your __RadDataPager__ and make some basic configurations to it.
 
 #### __XAML__
 
-{{region raddatapager-getting-started_3}}
+	{{region raddatapager-getting-started_3}}
 	<telerik:RadDataPager x:Name="radDataPager"
 	                      PageSize="5" 
 	                      Source="{Binding Clubs}"/>
@@ -130,13 +122,14 @@ After the collection is passed to the __Source__ property, it will get split int
 
 ## Exposing the Paged Collection
 
->tipInstead of using the __PagedSource__ property you can also wrap your collection in an __IPagedCollectionView__ before passing it to the __Source__ property. To learn more read [this topic]({%slug raddatapager-features-source-and-paged-source%}).
+>tip Instead of using the __PagedSource__ property you can also wrap your collection in an __IPagedCollectionView__ before passing it to the __Source__ property. To learn more read [this topic]({%slug raddatapager-features-source-and-paged-source%}).
 
 The paged collection inside the __RadDataPager__ can be accessed via the __PagedSource__ property. It exposes the set of data belonging to the current page. Here is an example of a __ListBox__ that displays the data paged by the __RadDataPager__.
 
 #### __XAML__
 
 {{region raddatapager-getting-started_6}}
+
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <Grid.RowDefinitions>
@@ -152,15 +145,9 @@ The paged collection inside the __RadDataPager__ can be accessed via the __Paged
 	                            Margin="0,10,0,0" 
 	                            Source="{Binding Clubs}"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![Rad Data Pager Getting Started 02](images/RadDataPager_GettingStarted_02.PNG)
+ ![Rad Data Pager Getting Started 02](images/RadDataPager_GettingStarted_02.PNG)
 
 # See Also
 

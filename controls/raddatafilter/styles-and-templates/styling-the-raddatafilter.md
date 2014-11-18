@@ -11,7 +11,7 @@ position: 2
 # Styling the RadDataFilter
 
 
->Before reading this topic, you might find it useful to get familiar with the  [Template Structure of the RadDataFilter](40A684F2-83E5-4F3F-83E0-72359B8E802D#RadDataFilter) and the [Template Structure of the DataFilterPresenter](40A684F2-83E5-4F3F-83E0-72359B8E802D#DataFilterPresenter).
+>Before reading this topic, you might find it useful to get familiar with the  [Template Structure of the RadDataFilter]({%slug raddatafilter-styles-and-templates-template-structure%}) and the [Template Structure of the DataFilterPresenter]({%slug raddatafilter-styles-and-templates-template-structure%}).
         
 
 The __RadDataFilter__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
@@ -27,7 +27,7 @@ To copy the default styles, load your project in Expression Blend and open the U
 
 >If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __RadDataFilter__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
+After clicking ___'OK'___, Expression Blend will generate the default style of the __RadDataFilter__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
         
 
 As the UI of the __RadDataPager__ is wrapped in the __DataFilterPresenter__ control, you have to style it, too. It can be found in the __ControlTemplate__ for the __RadDataFilter__. Bring the __ControlTemplate__ into edit by returning to the main scene, selecting the __RadDataPager__ and choosing from the menu *Object -> Edit Template -> Edit Current*. Select the __DataFilterPresenter__ control and from the menu choose *Object -> Edit Style -> Edit a Copy. *This will generate the default style for it in the __Resources__ section.

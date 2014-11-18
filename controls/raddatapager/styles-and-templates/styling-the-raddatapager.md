@@ -12,9 +12,9 @@ position: 2
 
 
 
->Before reading this topic, you might find it useful to get familiar with the [Template Structure of the RadDataPager]({%slug raddatapager-styles-and-templates-template-structure#RadDataPager%}) and the [Template Structure of the DataPagerPresenter]({%slug raddatapager-styles-and-templates-template-structure#DataPagerPresenter%}).
+>Before reading this topic, you might find it useful to get familiar with the [Template Structure of the RadDataPager]({%slug raddatapager-styles-and-templates-template-structure%}) and the [Template Structure of the DataPagerPresenter]({%slug raddatapager-styles-and-templates-template-structure%}).
 
-The __RadDataPager__exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
+The __RadDataPager__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 
 You have two options:
 
@@ -30,13 +30,13 @@ To copy the default styles, load your project in __Expression Blend__ and open t
 
 >If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking ___'OK'___, __Expression Blend__ will generate the default style of the __RadDataPager__control in the __Resources__ section of your __User Control__. The properties available for the style will be loaded in the ___'Properties'___ pane and you will be able to modify their default values. You can also edit the generated __XAML__ in the __XAML View__ or in __Visual Studio__.
+After clicking ___'OK'___, __Expression Blend__ will generate the default style of the __RadDataPager__ control in the __Resources__ section of your __User Control__. The properties available for the style will be loaded in the ___'Properties'___ pane and you will be able to modify their default values. You can also edit the generated __XAML__ in the __XAML View__ or in __Visual Studio__.
 
 As the UI of the __RadDataPager__ is wrapped in the __DataPagerPresenter__ control, you have to style it, too. It is to be found in the __ControlTemplate__ for the __RadDataPager__. Bring the __ControlTemplate__ into edit by returning to the main scene, selecting the __RadDataPager__ and choosing form the menu ***Object -> Edit Template -> Edit Current***. Select the __DataPagerPresenter__ control and from the menu choose ***Object -> Edit Style -> Edit a Copy***. This will generate the default style for it in the __Resources__ section.
 
 >If you want to just style the numeric buttons, you don't need to generate the style for the __DataPagerPresenter__ control. The resources responsible for the buttons get generated with the __RadDataPager's__ style.{% if site.site_name == 'Silverlight' %}
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadDataPager____.__ Their names indicate to which part of the __RadDataPager__appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadDataPager__. Their names indicate to which part of the __RadDataPager__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
 
 ![](images/RadDataPager_Styles_and_Templates_StylingTheRadDataPager_01.png)

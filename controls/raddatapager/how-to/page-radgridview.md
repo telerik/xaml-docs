@@ -11,13 +11,11 @@ position: 1
 # Page RadGridView
 
 
-See this [article]({%slug raddatapager-getting-started#Paging_RadGridView%}) for more information.
+See this [article]({%slug raddatapager-getting-started%}) for more information.
 
 # See Also
 
  * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
-
- * [Page DomainDataSource]({%slug raddatapager-how-to-page-domaindatasource%})
 
  * [Source and Paged Source]({%slug raddatapager-features-source-and-paged-source%})
 

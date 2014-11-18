@@ -10,7 +10,7 @@ position: 8
 
 # ItemTemplate
 
-When binding your __RadTreeView__ to a collection, you are able to configure the visualization of the data and the appearance of the __RadTreeViewItems via the __ItemTemplate__ and the __ItemTemplateSelectior__ properties. 
+When binding your __RadTreeView__ to a collection, you are able to configure the visualization of the data and the appearance of the __RadTreeViewItems__ via the __ItemTemplate__ and the __ItemTemplateSelectior__ properties. 
 
 If you want to read about the __ItemTemplateSelector__, see the main topic [ItemTemplateSelector]({%slug radtreeview-populating-with-data-item-template-selector%}).
 
@@ -23,65 +23,65 @@ The final result should look like the snapshot below:
 	* Add a __RadTreeView__ in your XAML. 
 	* Create two empty hierarchical data templates and one empty data template in your application resources as it is shown in the XAML below: 
 	
-	{% if site.site_name == 'Silverlight' %}
-	#### __XAML__
+		{% if site.site_name == 'Silverlight' %}
+		#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-template_0}}
-		<UserControl.Resources>
-		
-			<DataTemplate x:Key="Team">
-				<Grid>
-				</Grid>
-			</DataTemplate>
-		
-			<telerik:HierarchicalDataTemplate x:Key="Division">
-				<Grid>
-				</Grid>
-			</telerik:HierarchicalDataTemplate>
-		
-			<telerik:HierarchicalDataTemplate x:Key="League">
-				<Grid>
-				</Grid>
-			</telerik:HierarchicalDataTemplate>
-		
-		</UserControl.Resources>
-		
-		<Grid x:Name="LayoutRoot" Background="White">
-			<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
-		</Grid>
-		{{endregion}}
+		{{region radtreeview-populating-with-data-item-template_0}}
+			<UserControl.Resources>
+			
+				<DataTemplate x:Key="Team">
+					<Grid>
+					</Grid>
+				</DataTemplate>
+			
+				<telerik:HierarchicalDataTemplate x:Key="Division">
+					<Grid>
+					</Grid>
+				</telerik:HierarchicalDataTemplate>
+			
+				<telerik:HierarchicalDataTemplate x:Key="League">
+					<Grid>
+					</Grid>
+				</telerik:HierarchicalDataTemplate>
+			
+			</UserControl.Resources>
+			
+			<Grid x:Name="LayoutRoot" Background="White">
+				<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
+			</Grid>
+			{{endregion}}
 
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
+		{% endif %}
+		{% if site.site_name == 'WPF' %}
 
-	#### __XAML__
+		#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-template_4}}
-		<UserControl.Resources>
-		
-			<DataTemplate x:Key="Team">
-				<Grid>
-				</Grid>
-			</DataTemplate>
-		
-			<HierarchicalDataTemplate x:Key="Division">
-				<Grid>
-				</Grid>
-			</HierarchicalDataTemplate>
-		
-			<HierarchicalDataTemplate x:Key="League">
-				<Grid>
-				</Grid>
-			</HierarchicalDataTemplate>
-		
-		</UserControl.Resources>
-		
-		<Grid x:Name="LayoutRoot" Background="White">
-			<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
-		</Grid>
-		{{endregion}}
+		{{region radtreeview-populating-with-data-item-template_4}}
+			<UserControl.Resources>
+			
+				<DataTemplate x:Key="Team">
+					<Grid>
+					</Grid>
+				</DataTemplate>
+			
+				<HierarchicalDataTemplate x:Key="Division">
+					<Grid>
+					</Grid>
+				</HierarchicalDataTemplate>
+			
+				<HierarchicalDataTemplate x:Key="League">
+					<Grid>
+					</Grid>
+				</HierarchicalDataTemplate>
+			
+			</UserControl.Resources>
+			
+			<Grid x:Name="LayoutRoot" Background="White">
+				<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
+			</Grid>
+			{{endregion}}
 
-	{% endif %}
+		{% endif %}
 
 * Open your page in Expression Blend.
 

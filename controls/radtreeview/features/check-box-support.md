@@ -117,7 +117,7 @@ To see the Item check state in the code-behind you should use the __CheckState__
 
 * __On__ - the treeview item is checked.
 * __Off__ - the treeview item is not checked.			
-* __Indeterminate__ - the treeview item has items that are checked and items that are not checked. This state is available only when the __RadTreeView____IsTriStateMode__ property is set to __True__.			
+* __Indeterminate__ - the treeview item has items that are checked and items that are not checked. This state is available only when the __RadTreeView IsTriStateMode__ property is set to __True__.			
 
 >The __ToggleState__ enumeration is a part of the __System.Windows.Automation__ namespace.		  
 
@@ -172,4 +172,7 @@ And here is the result:
 
 The __PreviewUnchecked__ event is fired when the treeview item is about to be unchecked. The __Unchecked__ event occurs when the treeview item is unchecked. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__.
 
->The __RadRoutedEventArgs__ class is part of the Telerik.Windows namespace. For a full list of the exposed by the __RadTreeView__ events, please refer to the [Events - Overview]({%slug radtreeview-events-overview%}) topic.
+>The __RadRoutedEventArgs__ class is part of the Telerik.Windows namespace. 
+
+<!-- -->
+>For a full list of the exposed by the __RadTreeView__ events, please refer to the [Events - Overview]({%slug radtreeview-events-overview%}) topic.

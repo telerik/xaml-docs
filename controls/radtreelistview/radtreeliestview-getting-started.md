@@ -21,7 +21,7 @@ The __RadTreeListView__ displays the data in the same way as the __RadGridView__
 
 >tip Consider using the __RadTreeListView__ for displaying only a homogeneous data. For heterogeneous data use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
 
-The thing that you should use in order to display your data in the __RadTreeListView__ is the __ChildTableDefinitions__ property. In the context of the __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__class, but the __TreeListViewTableDefinition__ one. It exposes an __ItemSource__ property which should be bound to the property that represents the next level of hierarchy. 
+The thing that you should use in order to display your data in the __RadTreeListView__ is the __ChildTableDefinitions__ property. In the context of the __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__ class, but the __TreeListViewTableDefinition__ one. It exposes an __ItemSource__ property which should be bound to the property that represents the next level of hierarchy. 
 
 >This property should have the same name at each level of the hierarchy. 
 
@@ -34,11 +34,11 @@ The thing that you should use in order to display your data in the __RadTreeList
 
 This topic will explain you how to:
 
-* [Add RadTreeListView to your application](#Add_RadTreeListView_to_your_application)
+* [Add RadTreeListView to your application](#add-radtreelistview-to-your-application)
 
-* [Prepare a Sample Data](#Prepare_a_Sample_Data)
+* [Prepare a Sample Data](#prepare-a-sample-data)
 
-* [Display the Data in the RadTreeListView](#Display_the_Data_in_the_RadTreeListView)
+* [Display the Data in the RadTreeListView](#display-the-data-in-the-radtreelistview)
 
 ## Add RadTreeListView to your application
 
@@ -54,7 +54,7 @@ In order to use the __RadTreeListView__ in your application you should add refer
 
 >The current version of __RadTreeListView__ (the one that inherits GridViewDataControl) is built on top of __Silverlight 4__. 
 
-Here is an example of how to instantiate a __RadTreeListView__in both XAML and code.
+Here is an example of how to instantiate a __RadTreeListView__ in both XAML and code.
 
 >
 

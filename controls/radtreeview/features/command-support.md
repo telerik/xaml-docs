@@ -34,203 +34,195 @@ In this section we will demonstrate how you can trigger custom logic implemented
 #### __C#__
 
 {{region radtreeview-features-command-support_0}}
-			public class ItemModel : ViewModelBase
+	public class ItemModel : ViewModelBase
+	{
+		private bool inInEditMode;
+		public bool IsInEditMode
+		{
+			get
 			{
-				private bool inInEditMode;
-				public bool IsInEditMode
-				{
-					get
-					{
-						return this.inInEditMode;
-					}
-					set
-					{
-						if (this.inInEditMode != value)
-						{
-							this.inInEditMode = value;
-							this.OnPropertyChanged("IsInEditMode");
-						}
-					}
-				}
-	
-				private string header;
-				public string Header
-				{
-					get
-					{
-						return this.header;
-					}
-					set
-					{
-						if (this.header != value)
-						{
-							this.header = value;
-							this.OnPropertyChanged("Header");
-						}
-					}
-				}
-	
-				public DelegateCommand EditCommand { get; set; }
-	
-				public ObservableCollection<ItemModel> Children { get; set; }
+				return this.inInEditMode;
 			}
-	{{endregion}}
+			set
+			{
+				if (this.inInEditMode != value)
+				{
+					this.inInEditMode = value;
+					this.OnPropertyChanged("IsInEditMode");
+				}
+			}
+		}
 
+		private string header;
+		public string Header
+		{
+			get
+			{
+				return this.header;
+			}
+			set
+			{
+				if (this.header != value)
+				{
+					this.header = value;
+					this.OnPropertyChanged("Header");
+				}
+			}
+		}
 
+		public DelegateCommand EditCommand { get; set; }
+
+		public ObservableCollection<ItemModel> Children { get; set; }
+	}
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtreeview-features-command-support_1}}
-		Public Class ItemModel
-			Inherits ViewModelBase
-			Private inInEditMode As Boolean
-			Public Property IsInEditMode() As Boolean
-				Get
-					Return Me.inInEditMode
-				End Get
-				Set(value As Boolean)
-					If Me.inInEditMode <> value Then
-						Me.inInEditMode = value
-						Me.OnPropertyChanged("IsInEditMode")
-					End If
-				End Set
-			End Property
-	
-			Private m_header As String
-			Public Property Header() As String
-				Get
-					Return Me.m_header
-				End Get
-				Set(value As String)
-					If Me.m_header <> value Then
-						Me.m_header = value
-						Me.OnPropertyChanged("Header")
-					End If
-				End Set
-			End Property
-	
-			Public Property EditCommand() As DelegateCommand
-				Get
-					Return m_EditCommand
-				End Get
-				Set(value As DelegateCommand)
-					m_EditCommand = Value
-				End Set
-			End Property
-			Private m_EditCommand As DelegateCommand
-	
-			Public Property Children() As ObservableCollection(Of ItemModel)
-				Get
-					Return m_Children
-				End Get
-				Set(value As ObservableCollection(Of ItemModel))
-					m_Children = Value
-				End Set
-			End Property
-			Private m_Children As ObservableCollection(Of ItemModel)
-		End Class
-	{{endregion}}
+	Public Class ItemModel
+		Inherits ViewModelBase
+		Private inInEditMode As Boolean
+		Public Property IsInEditMode() As Boolean
+			Get
+				Return Me.inInEditMode
+			End Get
+			Set(value As Boolean)
+				If Me.inInEditMode <> value Then
+					Me.inInEditMode = value
+					Me.OnPropertyChanged("IsInEditMode")
+				End If
+			End Set
+		End Property
 
+		Private m_header As String
+		Public Property Header() As String
+			Get
+				Return Me.m_header
+			End Get
+			Set(value As String)
+				If Me.m_header <> value Then
+					Me.m_header = value
+					Me.OnPropertyChanged("Header")
+				End If
+			End Set
+		End Property
 
+		Public Property EditCommand() As DelegateCommand
+			Get
+				Return m_EditCommand
+			End Get
+			Set(value As DelegateCommand)
+				m_EditCommand = Value
+			End Set
+		End Property
+		Private m_EditCommand As DelegateCommand
+
+		Public Property Children() As ObservableCollection(Of ItemModel)
+			Get
+				Return m_Children
+			End Get
+			Set(value As ObservableCollection(Of ItemModel))
+				m_Children = Value
+			End Set
+		End Property
+		Private m_Children As ObservableCollection(Of ItemModel)
+	End Class
+{{endregion}}
 
 Furthermore, we can create a __ViewModel__ class which will fill and expose an __Items__ collection of type __ObservableCollection<ItemModel>__. Also, this class will hold the custom logic which will be triggered by the command of the __RadTreeViewItem__
 
 #### __C#__
 
 {{region radtreeview-features-command-support_2}}
-			public class ViewModel
+	public class ViewModel
+	{
+		public ViewModel()
+		{
+			this.Items = new ObservableCollection<ItemModel>();
+			this.GenerateItems();
+		}
+
+		public ObservableCollection<ItemModel> Items { get; set; }
+
+		private void GenerateItems()
+		{
+			ObservableCollection<ItemModel> children;
+			for (byte j = 1; j < 5; j++)
 			{
-				public ViewModel()
+				children = new ObservableCollection<ItemModel>();
+				for (byte i = 1; i < 4; i++)
 				{
-					this.Items = new ObservableCollection<ItemModel>();
-					this.GenerateItems();
-				}
-	
-				public ObservableCollection<ItemModel> Items { get; set; }
-	
-				private void GenerateItems()
-				{
-					ObservableCollection<ItemModel> children;
-					for (byte j = 1; j < 5; j++)
+					children.Add(new ItemModel()
 					{
-						children = new ObservableCollection<ItemModel>();
-						for (byte i = 1; i < 4; i++)
-						{
-							children.Add(new ItemModel()
-							{
-								Header = string.Format("Child {0} of root {1}", i, j),
-								EditCommand = new DelegateCommand((x) => this.OnEditCommandExecute(x))
-							});
-						}
-						this.Items.Add(new ItemModel()
-						{
-							Header = string.Format("Root Item {0}", j),
-							Children = children,
-							EditCommand = new DelegateCommand((x) => this.OnEditCommandExecute(x))
-						});
-					}
+						Header = string.Format("Child {0} of root {1}", i, j),
+						EditCommand = new DelegateCommand((x) => this.OnEditCommandExecute(x))
+					});
 				}
-	
-				private void OnEditCommandExecute(object sender)
+				this.Items.Add(new ItemModel()
 				{
-					var item = sender as ItemModel;
-					if (item != null)
-					{
-						item.IsInEditMode = true;
-					}
-				}
+					Header = string.Format("Root Item {0}", j),
+					Children = children,
+					EditCommand = new DelegateCommand((x) => this.OnEditCommandExecute(x))
+				});
 			}
-	{{endregion}}
+		}
 
-
+		private void OnEditCommandExecute(object sender)
+		{
+			var item = sender as ItemModel;
+			if (item != null)
+			{
+				item.IsInEditMode = true;
+			}
+		}
+	}
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtreeview-features-command-support_3}}
-		Public Class ViewModel
-			Public Sub New()
-				Me.Items = New ObservableCollection(Of ItemModel)()
-				Me.GenerateItems()
-			End Sub
-	
-			Public Property Items() As ObservableCollection(Of ItemModel)
-				Get
-					Return m_Items
-				End Get
-				Set(value As ObservableCollection(Of ItemModel))
-					m_Items = Value
-				End Set
-			End Property
-			Private m_Items As ObservableCollection(Of ItemModel)
-	
-			Private Sub GenerateItems()
-				Dim children As ObservableCollection(Of ItemModel)
-				For j As Byte = 1 To 4
-					children = New ObservableCollection(Of ItemModel)()
-					For i As Byte = 1 To 3
-						children.Add(New ItemModel() With {
-							.Header = String.Format("Child {0} of root {1}", i, j),
-							.EditCommand = New DelegateCommand(Function(x) Me.OnEditCommandExecute(x))
-						})
-					Next
-					Me.Items.Add(New ItemModel() With {
-						.Header = String.Format("Root Item {0}", j),
-						.Children = children,
+	Public Class ViewModel
+		Public Sub New()
+			Me.Items = New ObservableCollection(Of ItemModel)()
+			Me.GenerateItems()
+		End Sub
+
+		Public Property Items() As ObservableCollection(Of ItemModel)
+			Get
+				Return m_Items
+			End Get
+			Set(value As ObservableCollection(Of ItemModel))
+				m_Items = Value
+			End Set
+		End Property
+		Private m_Items As ObservableCollection(Of ItemModel)
+
+		Private Sub GenerateItems()
+			Dim children As ObservableCollection(Of ItemModel)
+			For j As Byte = 1 To 4
+				children = New ObservableCollection(Of ItemModel)()
+				For i As Byte = 1 To 3
+					children.Add(New ItemModel() With {
+						.Header = String.Format("Child {0} of root {1}", i, j),
 						.EditCommand = New DelegateCommand(Function(x) Me.OnEditCommandExecute(x))
 					})
 				Next
-			End Sub
-	
-			Private Sub OnEditCommandExecute(sender As Object)
-				Dim item = TryCast(sender, ItemModel)
-				If item IsNot Nothing Then
-					item.IsInEditMode = True
-				End If
-			End Sub
-		End Class
-	{{endregion}}
+				Me.Items.Add(New ItemModel() With {
+					.Header = String.Format("Root Item {0}", j),
+					.Children = children,
+					.EditCommand = New DelegateCommand(Function(x) Me.OnEditCommandExecute(x))
+				})
+			Next
+		End Sub
 
-
+		Private Sub OnEditCommandExecute(sender As Object)
+			Dim item = TryCast(sender, ItemModel)
+			If item IsNot Nothing Then
+				item.IsInEditMode = True
+			End If
+		End Sub
+	End Class
+{{endregion}}
 
 In MVVM scenarios it is best to use a __Style__ to set the __Command__ and __CommandExecutionTrigger__ properties of the __RadTreeViewItems__. For this purpose we will also allow the editing of items and we will use the boolean __IsInEditMode__ property defined in the custom __ItemModel__ class to set the corresponding __RadTreeViewItem__ in edit mode. This will be done in the __OnEditCommandExecute()__ method implemented in the __ViewModel__ class. In order to differ the item that invokes the command we can pass each __RadTreeViewItem's DataContext__ as __CommandParameter__ to the method where custom logic will be implemented. In order to achieve this we can use the __RelativeSource__ binding.
 		{% if site.site_name == 'WPF' %}
@@ -238,47 +230,48 @@ In MVVM scenarios it is best to use a __Style__ to set the __Command__ and __Com
 #### __XAML__
 
 {{region radtreeview-features-command-support_4}}
-	        <Grid>
-	            <Grid.Resources>
-	                <HierarchicalDataTemplate x:Key="HDT" ItemsSource="{Binding Children}">
-	                    <TextBlock Text="{Binding Header, Mode=TwoWay}" />
-	                </HierarchicalDataTemplate>
-	                <Style TargetType="telerik:RadTreeViewItem">
-	                    <Setter Property="Command" Value="{Binding EditCommand}" />
-	                    <Setter Property="CommandParameter" Value="{Binding}" />
-	                    <Setter Property="CommandExecutionTrigger" Value="DoubleClick" />
-	                    <Setter Property="IsInEditMode" Value="{Binding IsInEditMode, Mode=TwoWay}" />
-	                </Style>
-	            </Grid.Resources>
-	            <telerik:RadTreeView IsEditable="True"
-	                             IsExpandOnDblClickEnabled="False"
-	                             ItemTemplate="{StaticResource HDT}"
-	                             ItemsSource="{Binding Items}" />
-	        </Grid>
-	{{endregion}}
+	<Grid>
+		<Grid.Resources>
+			<HierarchicalDataTemplate x:Key="HDT" ItemsSource="{Binding Children}">
+				<TextBlock Text="{Binding Header, Mode=TwoWay}" />
+			</HierarchicalDataTemplate>
+			<Style TargetType="telerik:RadTreeViewItem">
+				<Setter Property="Command" Value="{Binding EditCommand}" />
+				<Setter Property="CommandParameter" Value="{Binding}" />
+				<Setter Property="CommandExecutionTrigger" Value="DoubleClick" />
+				<Setter Property="IsInEditMode" Value="{Binding IsInEditMode, Mode=TwoWay}" />
+			</Style>
+		</Grid.Resources>
+		<telerik:RadTreeView IsEditable="True"
+						 IsExpandOnDblClickEnabled="False"
+						 ItemTemplate="{StaticResource HDT}"
+						 ItemsSource="{Binding Items}" />
+	</Grid>
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
 {{region radtreeview-features-command-support_5}}
-	        <Grid>
-	            <Grid.Resources>
-	                <telerik:HierarchicalDataTemplate x:Key="HDT" ItemsSource="{Binding Children}">
-	                    <TextBlock Text="{Binding Header, Mode=TwoWay}" />
-	                </telerik:HierarchicalDataTemplate>
-	                <Style TargetType="telerik:RadTreeViewItem">
-	                    <Setter Property="Command" Value="{Binding EditCommand}" />
-	                    <Setter Property="CommandParameter" Value="{Binding}" />
-	                    <Setter Property="CommandExecutionTrigger" Value="DoubleClick" />
-	                    <Setter Property="IsInEditMode" Value="{Binding IsInEditMode, Mode=TwoWay}" />
-	                </Style>
-	            </Grid.Resources>
-	            <telerik:RadTreeView IsEditable="True"
-	                             IsExpandOnDblClickEnabled="False"
-	                             ItemTemplate="{StaticResource HDT}"
-	                             ItemsSource="{Binding Items}" />
-	        </Grid>
-	{{endregion}}
+	<Grid>
+		<Grid.Resources>
+			<telerik:HierarchicalDataTemplate x:Key="HDT" ItemsSource="{Binding Children}">
+				<TextBlock Text="{Binding Header, Mode=TwoWay}" />
+			</telerik:HierarchicalDataTemplate>
+			<Style TargetType="telerik:RadTreeViewItem">
+				<Setter Property="Command" Value="{Binding EditCommand}" />
+				<Setter Property="CommandParameter" Value="{Binding}" />
+				<Setter Property="CommandExecutionTrigger" Value="DoubleClick" />
+				<Setter Property="IsInEditMode" Value="{Binding IsInEditMode, Mode=TwoWay}" />
+			</Style>
+		</Grid.Resources>
+		<telerik:RadTreeView IsEditable="True"
+						 IsExpandOnDblClickEnabled="False"
+						 ItemTemplate="{StaticResource HDT}"
+						 ItemsSource="{Binding Items}" />
+	</Grid>
+{{endregion}}
 
 {% endif %}

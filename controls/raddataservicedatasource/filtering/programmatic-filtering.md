@@ -54,7 +54,7 @@ You can build infinitely nested hierarchies of filters by using the __CompositeF
 	cfd.LogicalOperator = FilterCompositionLogicalOperator.Or;
 	FilterDescriptor f1 = new FilterDescriptor("City", FilterOperator.IsEqualTo, "Berlin");
 	cfd.FilterDescriptors.Add(f1);
-	FilterDescriptor f2 = new FilterDescriptor("City", FilterOperator.IsEqualTo, "Madrid);
+	FilterDescriptor f2 = new FilterDescriptor("City", FilterOperator.IsEqualTo, "Madrid");
 	cfd.FilterDescriptors.Add(f2);
 	this.radDataServiceDataSource.FilterDescriptors.Add(cfd);
 {{endregion}}

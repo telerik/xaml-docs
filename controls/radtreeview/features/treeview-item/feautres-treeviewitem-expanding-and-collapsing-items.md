@@ -13,23 +13,14 @@ position: 4
 This tutorial will walk you through the following common tasks:
 
 * [Expanding and collapsing items](#expanding-and-collapsing-items-declaratively)
-
 * [Expanding and collapsing items recursively](#expanding-and-collapsing-treeview-items-recursively)
-
 * [Expanding only a single branch of the treeview at once](#expanding-only-a-single-branch-of-the-treeview)
-
 * [Expanding an item by path](#expand-an-item-by-path)
-
 * [Expanding an item by using the ItemContainerStyle property](#expand-an-item-by-using-the-itemcontainerstyle)
-
 * [Changing the expand on click mode](#expand-on-single-or-double-click)
-
 * [Events](#events)
-
 * [Styling the expander](#styling-the-expander)
-
 * [Expand all nodes at start](#expand-all-nodes-at-start)
-
 * [Binding the IsExpanded property to a property of a business object](#binding-the-isexpanded-property)
 
 ## Expanding and Collapsing Items Declaratively 
@@ -42,7 +33,7 @@ To __expand__ a treeview item you need to set the __IsExpanded__ attribute to __
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_0}}
 	<telerik:RadTreeViewItem x:Name="radTreeViewItem" Header="Sport Categories" IsExpanded="True">
-	{{endregion}}
+{{endregion}}
 
 In order to __expand__ a treeview item in the code-behind you need to set the __IsExpanded__ property of an instance of the __RadTreeViewItem__ class to __True__. If you want to __collapse__ a treeview item in the code-behind, the same property should be set to __False__. 
 
@@ -57,7 +48,7 @@ In order to __expand__ a treeview item in the code-behind you need to set the __
 	{
 	    radTreeViewItem.IsExpanded = false;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -68,7 +59,7 @@ In order to __expand__ a treeview item in the code-behind you need to set the __
 	Private Sub CollapseTreeViewItem()
 	    radTreeViewItem.IsExpanded = False
 	End Sub
-	{{endregion}}
+{{endregion}}
 	
 ## Expanding and Collapsing TreeView Items Recursively
 
@@ -87,7 +78,7 @@ If you use the __ExpandAll()__ \ __CollapseAll()__ method of the __RadTreeView__
 	{
 	    radTreeView.CollapseAll();
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -98,7 +89,7 @@ If you use the __ExpandAll()__ \ __CollapseAll()__ method of the __RadTreeView__
 	Private Sub CollapseAllTreeViewItems()
 	    radTreeView.CollapseAll()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 >The __ExpandAll()__ and __CollapseAll()__ methods work only after the first level items have been loaded. This is visible only when the treeview is bound. Therefore it should be called only in or after the __Loaded__ event.
 
@@ -110,19 +101,19 @@ If you want the __RadTreeView__ to automatically close all the nodes __that are 
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_5}}
 	<telerik:RadTreeView x:Name="radTreeView" IsSingleExpandPath="True">
-	{{endregion}}
+{{endregion}}
 
 #### __C#__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_6}}
 	radTreeView.IsSingleExpandPath = true;
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_7}}
 	radTreeView.IsSingleExpandPath = true
-	{{endregion}}
+{{endregion}}
 
 Now when you try to expand a new branch from the tree, all of the other expanded branches that are not on the path of the expanded node will be collapsed.
 
@@ -151,7 +142,7 @@ Imagine, you have the following __RadTreeView__ declaration:
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+{{endregion}}
 
 In this example the treeview item with __Header__ "Cycling" will be expanded. First, you need to create a path by the string representations of the Headers using some separator (for this example "|" will be used as a separator). Second, you should invoke the __ExpandItemByPath__ method of an instance of the __RadTreeView__ class.
 
@@ -165,7 +156,7 @@ Here is an example:
 	    string path = "Sport Categories|Cycling|Indoor Cycling";
 	    radTreeView.ExpandItemByPath( path, "|" );
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -174,7 +165,7 @@ Here is an example:
 	    Dim path As String = "Sport Categories|Cycling|Indoor Cycling"
 	    radTreeView.ExpandItemByPath(path, "|")
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 And here is the result: 
 
@@ -191,7 +182,7 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 	    radTreeView.PathSeparator = "|";
 	    radTreeView.ExpandItemByPath( path );
 	}
-	{{endregion}}
+{{endregion}}
 	
 #### __VB.NET__
 
@@ -201,7 +192,7 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 	    radTreeView.PathSeparator = "|"
 	    radTreeView.ExpandItemByPath( path )
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 ## Expand an Item by Using the ItemContainerStyle
 
@@ -217,7 +208,7 @@ If you want to expand the nodes on a single click, then you need to set the __Is
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_13}}
 	<telerik:RadTreeView x:Name="radTreeView" IsExpandOnSingleClickEnabled="True">
-	{{endregion}}
+{{endregion}}
 
 If you want to expand the nodes on a double click, then you need to set the __IsExpandOnDblClickEnabled__ attribute to __True__. 
 
@@ -225,7 +216,7 @@ If you want to expand the nodes on a double click, then you need to set the __Is
 
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_14}}
 	<telerik:RadTreeView x:Name="radTreeView" IsExpandOnDblClickEnabled="True">
-	{{endregion}}
+{{endregion}}
 
 The same properties can be used in the code-behind. See the next code lines: 
 
@@ -240,7 +231,7 @@ The same properties can be used in the code-behind. See the next code lines:
 	{
 	    radTreeView.IsExpandOnDblClickEnabled = true;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -250,7 +241,7 @@ The same properties can be used in the code-behind. See the next code lines:
 	End Sub Private Sub ExpandOnDoubleClick()
 	    radTreeView.IsExpandOnDblClickEnabled = True
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 >The default behavior of the __RadTreeView__ is to expand the items on double click.
 
@@ -266,7 +257,7 @@ The Telerik __RadTreeView__ and __RadTreeViewItem__ classes offer you four event
 						Expanded="radTreeView_Expanded"
 						PreviewCollapsed="radTreeView_PreviewCollapsed"
 						Collapsed="radTreeView_Collapsed">
-	{{endregion}}
+{{endregion}}
 
 The __PreviewExpanded__ event occurs when the treeview item is about to be expanded. The __Expanded__ event is fired when the treeview item is already expanded. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__.
 
@@ -292,7 +283,7 @@ There are several ways to expand all nodes automatically at start:
 		</Style>
 		....
 		<telerik:RadTreeView x:Name="radTreeView" ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-		{{endregion}}
+	{{endregion}}
 
 * If your __RadTreeView__ is populated declaratively, then the best solution is to use a __Style__. You should create a style by setting the __IsExpanded__ property to __True__ and then setting it to all __RadTreeViewItems__.
 
@@ -310,7 +301,7 @@ There are several ways to expand all nodes automatically at start:
 				</telerik:RadTreeViewItem>
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
-		{{endregion}}
+	{{endregion}}
 
 * If you are using Silverlight 4, then you could take advantage of the __Implicit Styles__. For example, notice how the previous example is modified - the __x:Key__ is omitted. You should also not set the __Style__ property of the __RadTreeViewItem__.
 
@@ -329,11 +320,11 @@ There are several ways to expand all nodes automatically at start:
 				</telerik:RadTreeViewItem>
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
-		{{endregion}}
+	{{endregion}}
 
 ## Binding the IsExpanded Property
 
-A very common issue is to have the __RadTreeViewItem__'s __IsExpanded__ property bound to a property of a custom business object. The easiest way to achieve this is to use __Style Binding__. For example, imagine that your business object has a boolean property named __IsExpanded__. And you want to bind the __IsExpanded__property of this business object to the __IsExpanded__ property of the __RadTreeViewItem__. Then check out the code snippet below, it demonstrates how to achieve this.{% if site.site_name == 'Silverlight' %}
+A very common issue is to have the __RadTreeViewItem__'s __IsExpanded__ property bound to a property of a custom business object. The easiest way to achieve this is to use __Style Binding__. For example, imagine that your business object has a boolean property named __IsExpanded__. And you want to bind the __IsExpanded__ property of this business object to the __IsExpanded__ property of the __RadTreeViewItem__. Then check out the code snippet below, it demonstrates how to achieve this.{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
@@ -349,9 +340,10 @@ A very common issue is to have the __RadTreeViewItem__'s __IsExpanded__ property
 	<telerik:RadTreeView ItemsSource="{Binding Source={StaticResource TreeViewDataSource}}" 
 						 ItemTemplate="{StaticResource MyViewModelTemplate}"
 						 ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
@@ -368,7 +360,7 @@ A very common issue is to have the __RadTreeViewItem__'s __IsExpanded__ property
 						ItemsSource="{Binding Source={StaticResource TreeViewDataSource}}" 
 						ItemTemplate="{StaticResource MyViewModelTemplate}"
 						ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 

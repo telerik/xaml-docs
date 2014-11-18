@@ -15,9 +15,9 @@ position: 3
 The __RadTreeListView API__ offers __ScrollIntoView__ support through the following methods:
 	  
 
-* [ScrollIntoViewAsync()](#scrollintoviewasync())
+* [ScrollIntoViewAsync()](#scrollintoviewasync)
 
-* [ScrollIntoView()](#scrollintoview())
+* [ScrollIntoView()](#scrollintoview)
 
 The goal of this tutorial is to demonstrate how you can bring a particular, deeply nested __TreeListViewRow__ into view. This might be helpful if you need a fast hierarchy control with many nested levels and __RadTreeView__ is slow in your particular scenario with bring into view. This example is configured in such way that __RadTreeListView__ behaves and feels much like __RadTreeView__.
 	  

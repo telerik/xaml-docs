@@ -105,7 +105,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	
 	    radTreeView.Items.Add(category)
 	
-	    ' Adding child items
+	    ' Adding child items '
 	    Dim product As New RadTreeViewItem()
 	    product.Header = "Product1.1"
 	
@@ -122,7 +122,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	
 	    radTreeView.Items.Add(category)
 	
-	    ' Adding child items
+	    ' Adding child items '
 	    product = New RadTreeViewItem()
 	    product.Header = "Product2.1"
 	

@@ -164,10 +164,11 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 				End If
 			End If
 		End Sub
-	{{endregion}} 
+	{{endregion}}
 
 5. The end result should be similar to the snapshot below: 
-![Rad Tree View-DnDVisual Deny Drop](images/RadTreeView-DnDVisualDenyDrop.png)
+
+	![Rad Tree View-DnDVisual Deny Drop](images/RadTreeView-DnDVisualDenyDrop.png)
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/DenyDropVisualFeedback__.
 

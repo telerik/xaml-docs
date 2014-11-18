@@ -301,8 +301,6 @@ Here is the result:
 ![](images/RadTreeView_StylingAppearanceStylingExpander_070.png)
 {% endif %}
 
-
-
 {% if site.site_name == 'WPF' %}
 
 If you need to change only the icon that is used to expand an item, you can use the __ExpanderStyle__ property of the __RadTreeView__. The icon is a __ToggleButton__, so any style that can be applied to a ToggleButton can be applied to the icon too.
@@ -354,7 +352,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 			<Setter Property="IsTabStop" Value="False" />
 			<Setter Property="Cursor" Value="Hand"/>
 		</Style>
-		{{endregion}}
+	{{endregion}}
 
 * Next, we need to change the __Template__ property of the __ToggleButton__ (Expander). Add the following elements to your Template:			
 
@@ -385,7 +383,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
+	{{endregion}}
 
 * Set the __ExpanderStyle__ property of your treeview:
 
@@ -409,7 +407,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</telerik:RadTreeViewItem>
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
-		{{endregion}}
+	{{endregion}}
 
 	As you can see from the next figure, the expander of the treeview is changed: 
 	![](images/RadTreeView_StylingAppearanceStylingExpander_100.png)
@@ -468,7 +466,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
+	{{endregion}}
 
 	The __ButtonOver__ grid will be animated when the mouse is position over the expander.
 		  
@@ -508,9 +506,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</Trigger.ExitActions>
 			</Trigger>
 		</ControlTemplate.Triggers>
-		{{endregion}}
-
-
+	{{endregion}}
 
 	When the mouse is over the expander the "ButtonOver" element must be visualized (set its Opacity property to 1), while the "Button" element must be hidden (set its Opacity property to 0). Respectively, when the mouse leaves the expander area, then the opposite operations must be performed. Here is how the "EnterActions" and "ExitActions" for the __IsMouseOver__  trigger should look like:
 			  
@@ -536,31 +532,31 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</BeginStoryboard>
 			</Trigger.ExitActions>
 		</Trigger>
-		{{endregion}}
+	{{endregion}}
 
-When the __ToggleButton__ is checked, then the "CollapseVisualOver" and "CollapseVisual" elements must be hidden (set their Opacity property to 0). When the ToggleButton is __checked__, then the both elements must be visualized (set their Opacity property to 1). Here is how the "EnterActions" and "ExitActions" for the __IsChecked__ trigger should look like:
+	When the __ToggleButton__ is checked, then the "CollapseVisualOver" and "CollapseVisual" elements must be hidden (set their Opacity property to 0). When the ToggleButton is __checked__, then the both elements must be visualized (set their Opacity property to 1). Here is how the "EnterActions" and "ExitActions" for the __IsChecked__ trigger should look like:
 
-#### __XAML__
+	#### __XAML__
 
-{{region radtreeview-styling-and-appearance-styling-expander_13}}
-	<Trigger Property="IsChecked" Value="True">
-	    <Trigger.EnterActions>
-	        <BeginStoryboard>
-	            <Storyboard>
-	                <DoubleAnimation Storyboard.TargetName="CollapsedVisualOver" Storyboard.TargetProperty="(UIElement.Opacity)" To="0"/>
-	                <DoubleAnimation Storyboard.TargetName="CollapsedVisual" Storyboard.TargetProperty="(UIElement.Opacity)" To="0"/>
-	            </Storyboard>
-	        </BeginStoryboard>
-	    </Trigger.EnterActions>
-	    <Trigger.ExitActions>
-	        <BeginStoryboard>
-	            <Storyboard>
-	                <DoubleAnimation Storyboard.TargetName="CollapsedVisualOver" Storyboard.TargetProperty="(UIElement.Opacity)" To="1"/>
-	                <DoubleAnimation Storyboard.TargetName="CollapsedVisual" Storyboard.TargetProperty="(UIElement.Opacity)" To="1"/>
-	            </Storyboard>
-	        </BeginStoryboard>
-	    </Trigger.ExitActions>
-	</Trigger>
+	{{region radtreeview-styling-and-appearance-styling-expander_13}}
+		<Trigger Property="IsChecked" Value="True">
+			<Trigger.EnterActions>
+				<BeginStoryboard>
+					<Storyboard>
+						<DoubleAnimation Storyboard.TargetName="CollapsedVisualOver" Storyboard.TargetProperty="(UIElement.Opacity)" To="0"/>
+						<DoubleAnimation Storyboard.TargetName="CollapsedVisual" Storyboard.TargetProperty="(UIElement.Opacity)" To="0"/>
+					</Storyboard>
+				</BeginStoryboard>
+			</Trigger.EnterActions>
+			<Trigger.ExitActions>
+				<BeginStoryboard>
+					<Storyboard>
+						<DoubleAnimation Storyboard.TargetName="CollapsedVisualOver" Storyboard.TargetProperty="(UIElement.Opacity)" To="1"/>
+						<DoubleAnimation Storyboard.TargetName="CollapsedVisual" Storyboard.TargetProperty="(UIElement.Opacity)" To="1"/>
+					</Storyboard>
+				</BeginStoryboard>
+			</Trigger.ExitActions>
+		</Trigger>
 	{{endregion}}
 
 And here is the complete XAML for the "ControlTemplate.Triggers" section:
@@ -606,7 +602,7 @@ And here is the complete XAML for the "ControlTemplate.Triggers" section:
 	        </Trigger.ExitActions>
 	    </Trigger>
 	</ControlTemplate.Triggers>
-	{{endregion}}
+{{endregion}}
 
 > With the same success and effectiveness you could use Expression Blend for adding interactivity. Since the operations in this example are pretty simple I decided to write the triggers by hand.
 

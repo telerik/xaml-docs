@@ -2579,4 +2579,3 @@ kramdown:
     toc_levels: 2..3
     smart_quotes: ["quot", "quot", "quot", "quot"]
     input: GFM
-

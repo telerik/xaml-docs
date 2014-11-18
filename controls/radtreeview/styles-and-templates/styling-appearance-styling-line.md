@@ -29,16 +29,16 @@ After clicking OK, a style for your __RadTreeViewItem__ control will be created.
 
 * Modify the __TreeView_LineColor__ resource, which represents the __Stroke__ of the horizontal and vertical lines connecting the nodes. For example, change the color to __Red__. 
 
-![](images/RadTreeView_StylingAndAppearance_StylingLines_050.png)
+	![](images/RadTreeView_StylingAndAppearance_StylingLines_050.png)
 
 * Finally, go back to your XAML and set the __ItemContainerStyle__ property to the just created style. 
 
-#### __XAML__
+	#### __XAML__
 
-{{region radtreeview-styling-appearance-styling-line_0}}
-	<telerik:RadTreeView x:Name="radTreeView" IsLineEnabled="True"
-	    ItemContainerStyle="{StaticResource RadTreeViewItemStyle}"
-	    ItemTemplate="{StaticResource RadTreeViewItemTemplate}"/>
+	{{region radtreeview-styling-appearance-styling-line_0}}
+		<telerik:RadTreeView x:Name="radTreeView" IsLineEnabled="True"
+			ItemContainerStyle="{StaticResource RadTreeViewItemStyle}"
+			ItemTemplate="{StaticResource RadTreeViewItemTemplate}"/>
 	{{endregion}}
 
 >Don't forget to delete the created dummy control.

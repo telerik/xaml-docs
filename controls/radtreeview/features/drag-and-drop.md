@@ -98,6 +98,7 @@ The __Drag and Drop__ operation contains three visual elements (tooltips):
 * Drag Preview
 * Drag Tooltip
 * Drop Preview Line
+
 ![Rad Tree View-Drag Drop-Visual Elements](images/RadTreeView-DragDrop-VisualElements.png)
 
 More details about how to disable each one of the elements you will find later in the topic.
@@ -112,7 +113,7 @@ To allow multiple items to be dragged at one time, you need to set the __Selecti
 	<telerik:RadTreeView x:Name="radTreeView" 
 						 IsDragDropEnabled="True" 
 						 SelectionMode="Multiple">
-	{{endregion}}
+{{endregion}}
 
 Dragging multiple nodes at once can be enabled in the code-behind. In order to do so, you need to set the __SelectionMode__ property of an instance of the __RadTreeView__ class to __Multiple__ or __Extended__.
 		
@@ -124,7 +125,7 @@ Dragging multiple nodes at once can be enabled in the code-behind. In order to d
 	{
 	    radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -132,7 +133,7 @@ Dragging multiple nodes at once can be enabled in the code-behind. In order to d
 	Private Sub EnableDragOfMultipleNodes()
 	    radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 Here is the result: 
 ![Rad Tree View-Drag Drop-Multiple Drag](images/RadTreeView-DragDrop-MultipleDrag.png)
@@ -394,10 +395,10 @@ The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ e
 
 {{region radtreeview-features-drag-and-drop_25}}
 	Private Sub radTreeView_DragEnded(ByVal sender As Object, ByVal e As RadTreeViewDragEndedEventArgs)
-	    ' Get the dragged items.
+	    ' Get the dragged items. '
 	    Dim draggedItems As Collection(Of [Object]) = e.DraggedItems
 	
-	    ' Get the drop position.
+	    ' Get the drop position. '
 	    Dim dropPosition__1 As DropPosition = e.DropPosition
 	    Select Case dropPosition__1
 	        Case DropPosition.After
@@ -411,13 +412,13 @@ The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ e
 	            Exit Select
 	    End Select
 	
-	    ' Get is canceled
+	    ' Get is canceled '
 	    Dim isCanceled As Boolean = e.IsCanceled
 	
-	    ' Target drop item
+	    ' Target drop item '
 	    Dim targetDropItem As RadTreeViewItem = e.TargetDropItem
 	    If targetDropItem.Header.ToString() = "Tennis" Then
-	        ' Do something
+	        ' Do something '
 	    End If
 	End Sub
 	{{endregion}}
@@ -469,9 +470,7 @@ When a drag operation starts, __RadTreeView__ creates an object of type __TreeVi
 	{
 	    radTreeView.IsDragPreviewEnabled = false;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -479,12 +478,9 @@ When a drag operation starts, __RadTreeView__ creates an object of type __TreeVi
 	Private Sub DisableDragPreview()
 	    radTreeView.IsDragPreviewEnabled = False
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-The __TreeViewDragDropOptions__ class exposes the following properties:
-		
+The __TreeViewDragDropOptions__ class exposes the following properties:		
 
 * __DropAction__ - Gets or sets the drop action that should be executed when drag drop operation completes. It is an enumeration of type __DropAction__ that exposes the following members:
 
@@ -508,9 +504,7 @@ The __TreeViewDragDropOptions__ class exposes the following properties:
 			var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
 			options.DropAction = DropAction.Copy;
 		}
-		{{endregion}}
-
-
+	{{endregion}}
 
 	#### __VB.NET__
 
@@ -518,7 +512,8 @@ The __TreeViewDragDropOptions__ class exposes the following properties:
 		Private Sub EnableDragAndDrop()
 			radTreeView.IsDragDropEnabled = True
 		End Sub
-		{{endregion}}
+	{{endregion}}
+	
 * __DropPosition__ - Gets or sets the drop position of the dragged items. It is an enumeration of type __DropPosition__ that provides the following members:
 	* __Before__ - indicates that the dragged items will be dropped before the target.
 	* __Inside__ - indicates that the dragged items will be dropped inside the target.

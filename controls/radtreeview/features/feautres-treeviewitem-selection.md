@@ -39,17 +39,13 @@ If you want to select an item you need to set the __RadTreeViewItem__'s __IsSele
 
 {{region radtreeview-feautres-treeviewitem-selection_1}}
 	radTreeViewItem.IsSelected = true;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtreeview-feautres-treeviewitem-selection_2}}
 	radTreeViewItem.IsSelected = True
-	{{endregion}}
-
-
+{{endregion}}
 
 >Note, that the code snippets above cover scenario when your __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) (with static data). If you want to bind the __IsSelected__ property to a property of a custom business object, check out the [Binding the IsSelected Property](#Binding_the_IsSelected_Property) section at the end of this topic.
 		  
@@ -58,7 +54,6 @@ If you want to select an item you need to set the __RadTreeViewItem__'s __IsSele
 ## Selecting an Item by Using the SelectedItems Collection
 
 Another way to select a treeview item programmatically is to add it to the __SelectedItems__ collection of the __RadTreeView__ class. There are two possible cases here, depending on how the __RadTreeView__ is populated.
-		
 
 * If your __RadTreeView__ is populated declaratively in XAML (with static data), then the __SelectedItems__ collection will contain instances of the __RadTreeViewItem__ class.
 
@@ -66,13 +61,13 @@ Another way to select a treeview item programmatically is to add it to the __Sel
 
 	{{region radtreeview-feautres-treeviewitem-selection_3}}
 		radTreeView.SelectedItems.Add( radTreeViewItem );
-		{{endregion}}
+	{{endregion}}
 
 	#### __VB.NET__
 
 	{{region radtreeview-feautres-treeviewitem-selection_4}}
 		radTreeView.SelectedItems.Add(radTreeViewItem)
-		{{endregion}}
+	{{endregion}}
 
 * In case your __RadTreeView__ is [data bound to a business object]({%slug radtreeview-populating-with-data-data-binding-to-object%}), then the situation is different. The __SelectedItems__ collection will contain instances of your business object.
 		  
@@ -81,13 +76,13 @@ Another way to select a treeview item programmatically is to add it to the __Sel
 
 	{{region radtreeview-feautres-treeviewitem-selection_5}}
 		radTreeView.SelectedItems.Add( myViewModel );
-		{{endregion}}
+	{{endregion}}
 
 	#### __VB.NET__
 
 	{{region radtreeview-feautres-treeviewitem-selection_6}}
 		radTreeView.SelectedItems.Add(myViewModel)
-		{{endregion}}
+	{{endregion}}
 
 <a id="Changing_the_Selection_Mode"></a>
 ## Changing the Selection Mode
@@ -179,7 +174,7 @@ For example, the next code snippet will change the __FontSize__ of the selected 
 	{
 	    ( e.Source as RadTreeViewItem ).FontSize = 14;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -187,7 +182,7 @@ For example, the next code snippet will change the __FontSize__ of the selected 
 	Private Sub radTreeView_Selected(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
 	    TryCast(e.Source, RadTreeViewItem).FontSize = 14
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 The __PreviewUnselected__ event is fired just before the currently selected item is unselected. The __Unselected__ event occurs when the treeview item is already unselected. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__.
 
@@ -214,19 +209,19 @@ In order to hangle a change in the selection you need to use the __SelectionChan
 
 {{region radtreeview-feautres-treeviewitem-selection_12}}
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-	    ' Get a reference to the treeview
+	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
 	
-	    ' Get the currently selected items
+	    ' Get the currently selected items '
 	    Dim selectedItems As ObservableCollection(Of [Object]) = treeView.SelectedItems
 	
-	    ' Get the newly added items to the collection
+	    ' Get the newly added items to the collection '
 	    Dim addedItems As IList = e.AddedItems
 	
-	    ' Get the removed items from the collection
+	    ' Get the removed items from the collection '
 	    Dim removedItems As IList = e.RemovedItems
 	End Sub
-	{{endregion}}
+{{endregion}}
 	
 > Four out of the five events (__PreviewSelected, Selected, PreviewUnselected__ and __Unselected__) are exposed by both __RadTreeView__ and __RadTreeViewItem__ classes. While the __SelectionChanged__ event is available only in the __RadTreeView__ class.
 
@@ -258,7 +253,7 @@ Imagine that you have a business object named __MyViewModel__, with three member
 	        set;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -294,7 +289,7 @@ Imagine that you have a business object named __MyViewModel__, with three member
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -308,7 +303,7 @@ Imagine that you have a business object named __MyViewModel__, with three member
 	        </telerik:HierarchicalDataTemplate>
 	    </telerik:RadTreeView.ItemTemplate>
 	</telerik:RadTreeView>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
@@ -324,7 +319,7 @@ Imagine that you have a business object named __MyViewModel__, with three member
 	        </HierarchicalDataTemplate>
 	    </telerik:RadTreeView.ItemTemplate>
 	</telerik:RadTreeView>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
@@ -353,7 +348,7 @@ A very common issue is to have the __RadTreeViewItem__'s __IsSelected__ property
 	....
 	<telerik:RadTreeView ItemsSource="{Binding Source={StaticResource TreeViewDataSource}}" 
 	    ItemTemplate="{StaticResource MyViewModelTemplate}"/>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
@@ -374,7 +369,7 @@ A very common issue is to have the __RadTreeViewItem__'s __IsSelected__ property
 	    ItemsSource="{Binding Source={StaticResource TreeViewDataSource}}" 
 	    ItemTemplate="{StaticResource MyViewModelTemplate}"
 	    ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 

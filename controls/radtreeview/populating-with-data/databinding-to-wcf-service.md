@@ -304,25 +304,25 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 	The body of the exposed __LoadProductsByCategoryId()__ method is shown on the code snippet below.
 		
-		#### __C#__
-			[OperationContract]
-			public List<Products> LoadProductsByCategoryId( int categoryId )
-			{
-				NorthwindEntities ent = new NorthwindEntities();
-				var q = from p in ent.Products
-						where p.Categories.CategoryID == categoryId
-						orderby p.ProductName
-						select p;
-				return q.ToList();
-			}
+	#### __C#__
+		[OperationContract]
+		public List<Products> LoadProductsByCategoryId( int categoryId )
+		{
+			NorthwindEntities ent = new NorthwindEntities();
+			var q = from p in ent.Products
+					where p.Categories.CategoryID == categoryId
+					orderby p.ProductName
+					select p;
+			return q.ToList();
+		}
 
-		#### __VB.NET__
-			<OperationContract>
-			Public Function LoadProductsByCategoryId(categoryId As Integer) As List(Of Products)
-				Dim ent As New NorthwindEntities()
-				Dim q = From p In ent.Products Where p.Categories.CategoryID = categoryIdOrder By p.ProductNamep
-				Return q.ToList()
-			End Function
+	#### __VB.NET__
+		<OperationContract>
+		Public Function LoadProductsByCategoryId(categoryId As Integer) As List(Of Products)
+			Dim ent As New NorthwindEntities()
+			Dim q = From p In ent.Products Where p.Categories.CategoryID = categoryIdOrder By p.ProductNamep
+			Return q.ToList()
+		End Function
 
 * Add the following code to the load on demand event handler, which you declared on step 1. 
 
@@ -342,7 +342,7 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 				item.IsLoadOnDemandEnabled = false;
 			}
 		}
-		{{endregion}}
+	{{endregion}}
 
 	#### __VB.NET__
 
@@ -357,7 +357,7 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 				item.IsLoadOnDemandEnabled = False
 			End If
 		End Sub
-		{{endregion}}
+	{{endregion}}
 
 	>When there are no items to add, and you want to prevent the __LoadOnDemand__ event to fire again, set the __IsLoadOnDemandEnabled__ property to __False__ to the __RadTreeViewItem__ that has fired the __LoadOnDemand__ event.
 

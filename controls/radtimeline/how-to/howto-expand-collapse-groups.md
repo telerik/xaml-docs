@@ -10,16 +10,11 @@ position: 0
 
 # Expand and Collapse Timeline groups
 
-
-
 This help topic will provide an overview of the methods for collapsing and expanding Timeline groups.
-      
 
 ## Expand All Groups at Start
 
-You can expand all groups of items in the RadTimeline
-          control, using an implicit Style Setter. For example:
-        
+You can expand all groups of items in the RadTimeline control, using an implicit Style Setter. For example:
 
 #### __XAML__
 
@@ -27,15 +22,11 @@ You can expand all groups of items in the RadTimeline
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="True" />
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Expand A Group at Start
 
-In case you want to expand a specific group initially,
-          you can use a Converter. For example:
-        
+In case you want to expand a specific group initially, you can use a Converter. For example:        
 
 #### __XAML__
 
@@ -46,9 +37,7 @@ In case you want to expand a specific group initially,
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="{Binding GroupKey, Converter={StaticResource groupKeyToIsExpandedConverter}, ConverterParameter={StaticResource InitiallyExpandedGroup}}" />
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -68,9 +57,7 @@ In case you want to expand a specific group initially,
 	
 	    return false;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -87,16 +74,11 @@ In case you want to expand a specific group initially,
 	
 		Return False
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Expand And Collapse Groups through binding (attached property)
 
-There are scenarios, in which the expanded and collapsed state of
-          the groups of timeline items depends on a certain condition
-          In this case, you can use an attached behavior.
-        
+There are scenarios, in which the expanded and collapsed state of the groups of timeline items depends on a certain condition In this case, you can use an attached behavior.
 
 #### __XAML__
 
@@ -105,9 +87,7 @@ There are scenarios, in which the expanded and collapsed state of
 	    <Setter Property="local:TimelineItemGroupControlBehavior.ExpandedGroupKey" Value="{Binding SelectedItem.Group, ElementName=RadTimeline1}" />
 	    <Setter Property="telerik:AnimationManager.IsAnimationEnabled" Value="False" />
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -133,9 +113,7 @@ There are scenarios, in which the expanded and collapsed state of
 	
 	    timelineGroup.IsExpanded = string.Equals(timelineGroup.Header, (string)e.NewValue);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -158,8 +136,4 @@ There are scenarios, in which the expanded and collapsed state of
 	
 		timelineGroup.IsExpanded = String.Equals(timelineGroup.Header, DirectCast(e.NewValue, String))
 	End Sub
-	{{endregion}}
-
-
-
-# See Also
+{{endregion}}

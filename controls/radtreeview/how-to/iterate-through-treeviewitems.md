@@ -87,10 +87,10 @@ The item container may be null if it isn't still generated from the runtime. Tha
 		End Sub
 	
 		Private Sub GetContainers()
-			' gets all nodes from the TreeView  
+			' gets all nodes from the TreeView  '
 			Dim allTreeContainers As Collection(Of RadTreeViewItem) = GetAllItemContainers(Me.radTreeView)
 	
-			' gets all nodes (recursively) for the first node  
+			' gets all nodes (recursively) for the first node  '
 			Dim firstNode As RadTreeViewItem = TryCast(Me.radTreeView.ItemContainerGenerator.ContainerFromIndex(0), RadTreeViewItem)
 			If firstNode IsNot Nothing Then
 				Dim firstNodeContainers As Collection(Of RadTreeViewItem) = GetAllItemContainers(firstNode)
@@ -102,11 +102,11 @@ The item container may be null if it isn't still generated from the runtime. Tha
 			Dim allItems As New Collection(Of RadTreeViewItem)()
 	
 			For i As Integer = 0 To itemsControl.Items.Count - 1
-				' try to get the item Container  
+				' try to get the item Container  '
 				Dim childItemContainer As RadTreeViewItem = TryCast(itemsControl.ItemContainerGenerator.ContainerFromIndex(i), RadTreeViewItem)
 	
 				' the item container maybe null if it is still not generated from the runtime  
-				If childItemContainer IsNot Nothing Then
+				If childItemContainer IsNot Nothing Then'
 					allItems.Add(childItemContainer)
 	
 					Dim childItems As Collection(Of RadTreeViewItem) = GetAllItemContainers(childItemContainer)
@@ -173,10 +173,10 @@ The item container may be null if it isn't still generated from the runtime. Tha
 		End Sub
 	
 		Private Sub GetContainers()
-			' gets all nodes from the TreeView  
+			' gets all nodes from the TreeView  '
 			Dim allTreeContainers As Collection(Of RadTreeViewItem) = GetAllItemContainers(Me.radTreeView)
 	
-			' gets all nodes (recursively) for the first node  
+			' gets all nodes (recursively) for the first node  '
 			Dim firstNode As RadTreeViewItem = TryCast(Me.radTreeView.ItemContainerGenerator.ContainerFromIndex(0), RadTreeViewItem)
 			If firstNode IsNot Nothing Then
 				Dim firstNodeContainers As Collection(Of RadTreeViewItem) = GetAllItemContainers(firstNode)
@@ -188,10 +188,10 @@ The item container may be null if it isn't still generated from the runtime. Tha
 			Dim allItems As New Collection(Of RadTreeViewItem)()
 	
 			For i As Integer = 0 To itemsControl.Items.Count - 1
-				' try to get the item Container  
+				' try to get the item Container  '
 				Dim childItemContainer As RadTreeViewItem = TryCast(itemsControl.ItemContainerGenerator.ContainerFromIndex(i), RadTreeViewItem)
 	
-				' the item container maybe null if it is still not generated from the runtime  
+				' the item container maybe null if it is still not generated from the runtime  '
 				If childItemContainer IsNot Nothing Then
 					allItems.Add(childItemContainer)
 	

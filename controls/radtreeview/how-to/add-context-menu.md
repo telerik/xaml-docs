@@ -20,31 +20,31 @@ For the purpose of this tutorial we will use the following __TreeView__ declarat
 #### __XAML__
 
 {{region radtreeview-how-to-add-context-menu_0}}
-			<UserControl.Resources>
-	
-				<local:RadTreeViewSampleData x:Key="DataSource" />
-	
-				<DataTemplate x:Key="Division">
-					<TextBlock Text="{Binding Name}" />
-				</DataTemplate>
-	
-				<HierarchicalDataTemplate x:Key="League"
-				                          ItemsSource="{Binding Divisions}"
-				                          ItemTemplate="{StaticResource Division}">
-					<TextBlock Text="{Binding Name}" />
-				</HierarchicalDataTemplate>
-	
-			</UserControl.Resources>
-	
-			<Grid x:Name="LayoutRoot" Background="White">
-	
-				<telerik:RadTreeView x:Name="radTreeView"
-				                     ItemsSource="{Binding Source={StaticResource DataSource},
-				                                           Path=LeaguesDataSource}"
-				                     ItemTemplate="{StaticResource League}" />
-	
-			</Grid>
-	{{endregion}}
+	<UserControl.Resources>
+
+		<local:RadTreeViewSampleData x:Key="DataSource" />
+
+		<DataTemplate x:Key="Division">
+			<TextBlock Text="{Binding Name}" />
+		</DataTemplate>
+
+		<HierarchicalDataTemplate x:Key="League"
+								  ItemsSource="{Binding Divisions}"
+								  ItemTemplate="{StaticResource Division}">
+			<TextBlock Text="{Binding Name}" />
+		</HierarchicalDataTemplate>
+
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+
+		<telerik:RadTreeView x:Name="radTreeView"
+							 ItemsSource="{Binding Source={StaticResource DataSource},
+												   Path=LeaguesDataSource}"
+							 ItemTemplate="{StaticResource League}" />
+
+	</Grid>
+{{endregion}}
 
 >The __local__ alias is pointing to the namespace where the __RadTreeViewSampleData__ class is defined.
 
@@ -56,19 +56,19 @@ Having the above declaration, you may want to add a context menu only on the ite
 #### __XAML__
 
 {{region radtreeview-how-to-add-context-menu_1}}
-			<telerik:HierarchicalDataTemplate x:Key="League"
-			                                  ItemsSource="{Binding Divisions}"
-			                                  ItemTemplate="{StaticResource Division}">
-				<TextBlock Text="{Binding Name}">
-					<telerik:RadContextMenu.ContextMenu>
-						<telerik:RadContextMenu Opened="RadContextMenu_Opened">
-							<telerik:RadMenuItem Header="New Child" />
-							<telerik:RadMenuItem Header="New Sibling" />
-							<telerik:RadMenuItem Header="Delete" />
-						</telerik:RadContextMenu>
-					</telerik:RadContextMenu.ContextMenu>
-				</TextBlock>
-			</telerik:HierarchicalDataTemplate>
+	<telerik:HierarchicalDataTemplate x:Key="League"
+									  ItemsSource="{Binding Divisions}"
+									  ItemTemplate="{StaticResource Division}">
+		<TextBlock Text="{Binding Name}">
+			<telerik:RadContextMenu.ContextMenu>
+				<telerik:RadContextMenu Opened="RadContextMenu_Opened">
+					<telerik:RadMenuItem Header="New Child" />
+					<telerik:RadMenuItem Header="New Sibling" />
+					<telerik:RadMenuItem Header="Delete" />
+				</telerik:RadContextMenu>
+			</telerik:RadContextMenu.ContextMenu>
+		</TextBlock>
+	</telerik:HierarchicalDataTemplate>
 {{endregion}}
 
 {% endif %}
@@ -77,20 +77,20 @@ Having the above declaration, you may want to add a context menu only on the ite
 #### __XAML__
 
 {{region radtreeview-how-to-add-context-menu_8}}
-	        <HierarchicalDataTemplate x:Key="League"
-			                                  ItemsSource="{Binding Divisions}"
-			                                  ItemTemplate="{StaticResource Division}">
-	            <TextBlock Text="{Binding Name}">
-					<telerik:RadContextMenu.ContextMenu>
-						<telerik:RadContextMenu Opened="RadContextMenu_Opened">
-							<telerik:RadMenuItem Header="New Child" />
-							<telerik:RadMenuItem Header="New Sibling" />
-							<telerik:RadMenuItem Header="Delete" />
-						</telerik:RadContextMenu>
-					</telerik:RadContextMenu.ContextMenu>
-	            </TextBlock>
-	        </HierarchicalDataTemplate>
-	{{endregion}}
+	<HierarchicalDataTemplate x:Key="League"
+									  ItemsSource="{Binding Divisions}"
+									  ItemTemplate="{StaticResource Division}">
+		<TextBlock Text="{Binding Name}">
+			<telerik:RadContextMenu.ContextMenu>
+				<telerik:RadContextMenu Opened="RadContextMenu_Opened">
+					<telerik:RadMenuItem Header="New Child" />
+					<telerik:RadMenuItem Header="New Sibling" />
+					<telerik:RadMenuItem Header="Delete" />
+				</telerik:RadContextMenu>
+			</telerik:RadContextMenu.ContextMenu>
+		</TextBlock>
+	</HierarchicalDataTemplate>
+{{endregion}}
 
 {% endif %}
 
@@ -112,10 +112,10 @@ Next, we need to add a handler for the __RadContextMenu.Opened__ event, where we
 {{region radtreeview-how-to-add-context-menu_7}}
 	Private clickedElement As RadTreeViewItem
 		Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
-			' Find the tree item that is associated with the clicked context menu item
+			' Find the tree item that is associated with the clicked context menu item '
 			clickedElement = TryCast(sender, RadContextMenu).GetClickedElement(Of RadTreeViewItem)()
 		End Sub
-	{{endregion}}
+{{endregion}}
 
 Now, we can handle the click events of the __RadMenuItems__. To  add a handler for these __Click__ events, add the following line in the user control constructor:		
 
@@ -123,13 +123,13 @@ Now, we can handle the click events of the __RadMenuItems__. To  add a handler f
 
 {{region radtreeview-how-to-add-context-menu_2}}
 	this.radTreeView.AddHandler( RadMenuItem.ClickEvent, new RoutedEventHandler( OnContextMenuClick ) );
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtreeview-how-to-add-context-menu_3}}
 	Me.radTreeView.[AddHandler](RadMenuItem.ClickEvent, New RoutedEventHandler(AddressOf OnContextMenuClick))
-	{{endregion}}
+{{endregion}}
 
 >The __AddHandler()__ extension method is defined in the __Telerik.Windows__ namespace. You should add “__using Telerik.Windows;__” on top of your code behind if you don’t already have it.
 
@@ -165,7 +165,7 @@ The __OnContextMenuClick()__ method uses the clicked __RadTreeViewItem__ and per
 
 {{region radtreeview-how-to-add-context-menu_5}}
 	Private Sub OnContextMenuClick(sender As Object, args As RoutedEventArgs)
-			' Get the clicked context menu item
+			' Get the clicked context menu item '
 			Dim menuItem As RadMenuItem = TryCast(DirectCast(args, RadRoutedEventArgs).OriginalSource, RadMenuItem)
 	
 			Dim league As League = TryCast(clickedElement.Item, League)
@@ -184,7 +184,6 @@ The __OnContextMenuClick()__ method uses the clicked __RadTreeViewItem__ and per
 			End Select
 		End Sub
 {{endregion}}
-
 
 Here is the final result: 
 ![](images/RadTreeView_HowToAddContextMenu_010.png)

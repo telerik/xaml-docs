@@ -188,15 +188,16 @@ This tutorial will show you two of them:
 
 4. Set the __ItemsSource__ property of the __RadTreeView__.
 
-#### __XAML__
+	#### __XAML__
 
-{{region radtreeview-howto-bind-treeview-wpf_3}}
-	<telerik:RadTreeView x:Name="radTreeView" Margin="8"
-	    ItemsSource="{Binding Source={StaticResource XmlDataProvider}, XPath=Artist}"/>
-{{endregion}}
+	{{region radtreeview-howto-bind-treeview-wpf_3}}
+		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
+			ItemsSource="{Binding Source={StaticResource XmlDataProvider}, XPath=Artist}"/>
+	{{endregion}}  
 
 5. Run your demo. Here is the final result:
-![](images/RadTreeView_HowToBindTreeViewWPF_010.PNG)
+
+	![](images/RadTreeView_HowToBindTreeViewWPF_010.PNG)
 
 You can download this demo as project in our [CodeLibrary](http://www.telerik.com/community/code-library/wpf/treeview/radtreeview-using-xmldataprovider.aspx)
 
@@ -401,7 +402,7 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 						End Get
 					End Property
 				End Class
-		{{endregion}}
+		{{endregion}}  
 
 2. Configure the __CollectionViewSource__.
 
@@ -419,9 +420,9 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 					<PropertyGroupDescription PropertyName="Category"/>
 				</CollectionViewSource.GroupDescriptions>
 			</CollectionViewSource>
-		{{endregion}}
+		{{endregion}}  
 
-3. Create data templates.
+3. Create data templates.  
 
 	#### __XAML__
 
@@ -435,9 +436,9 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 				ItemTemplate="{StaticResource AnimalTemplate}">
 			<TextBlock Text="{Binding Path=Name}" FontWeight="Bold"/>
 		</HierarchicalDataTemplate>
-	{{endregion}}
+	{{endregion}}  
 
-4. Set the __RadTreeView__ to point to the __CollectionViewSource__.
+4. Set the __RadTreeView__ to point to the __CollectionViewSource__.  
 
 	#### __XAML__
 

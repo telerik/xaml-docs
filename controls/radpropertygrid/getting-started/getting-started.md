@@ -202,5 +202,4 @@ __SortAndGroupButtonsVisibility__ - sets the visibility mode of the sort and gro
 
 ## Localization
 
-Since Q3 SP1 2012 we have added Localization for CollectionEditor. Please check the common article about
-          {% if site.site_name == 'Silverlight' %}[Localization](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[Localization](http://www.telerik.com/help/wpf/common-localization.html){% endif %}
+Since __Q3 SP1 2012__ we have added Localization for __CollectionEditor__. Please check the common article about [Localization]({%slug common-localization%}).

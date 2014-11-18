@@ -15,7 +15,7 @@ position: 13
 RadPropertyGrid supports grouping. Its __IsGrouped__ property controls the current RadPropertyGrid's state. You can set it to __true__ and you will have RadPropertyGrid __initially grouped__. If you set it to __false__, then you will have RadProperty __sorted__. By default the control is shown as sorted.
       
 
->Please note all the groups will be auto expanded. In case you want to initially collapse a group, you can do this once RadPropertyGrid is loaded using a Dispatcher. Please refer to the [Expand/Collapse Groups](6bc25e12-7053-43d6-b612-bc147e1f0ccc#expand/collapse-groups) section below.
+>Please note all the groups will be auto expanded. In case you want to initially collapse a group, you can do this once RadPropertyGrid is loaded using a Dispatcher. Please refer to the [Expand/Collapse Groups](#expandcollapse-groups) section below.
         
 
 Another property you can configure is __SortAndGroupButtonsVisibility__. It sets the visibility mode of the sort and group buttons. By default the buttons will be visible.
@@ -26,7 +26,8 @@ For example, lets have the following declaration of the RadPropertyGrid control:
 
 #### __XAML__
 
-	{{region radpropertygrid-grouping_0}}
+{{region radpropertygrid-grouping_0}}
+
 	<telerik:RadPropertyGrid Grid.Row="0" x:Name="PropertyGrid1"
 	                                  RenderMode="Flat"
 	                                  AutoGeneratePropertyDefinitions="False"
@@ -38,7 +39,7 @@ For example, lets have the following declaration of the RadPropertyGrid control:
 	    <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
 	  </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -47,7 +48,8 @@ Its Item is set like so:
 
 #### __C#__
 
-	{{region radpropertygrid-grouping_0}}
+{{region radpropertygrid-grouping_0}}
+
 	Employee Employee = new Employee()
 	{
 	    FirstName = "Nancy",
@@ -57,7 +59,7 @@ Its Item is set like so:
 	};
 	this.PropertyGrid1.Item = Employee;
 	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -89,9 +91,10 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 #### __C#__
 
-	{{region radpropertygrid-grouping_2}}
+{{region radpropertygrid-grouping_2}}
+
 	this.PropertyGrid1.CollapseGroup("Group Name");
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -100,9 +103,10 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 #### __C#__
 
-	{{region radpropertygrid-grouping_3}}
+{{region radpropertygrid-grouping_3}}
+
 	this.PropertyGrid1.ExpandAllGroups();
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -111,9 +115,10 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 #### __C#__
 
-	{{region radpropertygrid-grouping_4}}
+{{region radpropertygrid-grouping_4}}
+
 	this.PropertyGrid1.CollapseAllGroups();
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -135,13 +140,14 @@ It has two methods:
 
 #### __C#__
 
-	{{region radpropertygrid-grouping_5}}
+{{region radpropertygrid-grouping_5}}
+
 	this.PropertyGrid1.GroupDefinitions.SuspendNotifications();
 	
 	// Execute additional logic
 	
 	this.PropertyGrid1.GroupDefinitions.ResumeNotifications();
-	{{endregion}}
+{{endregion}}
 
 
 

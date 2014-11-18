@@ -249,14 +249,13 @@ This tutorial will combine in itself the following:
 						End Set
 					End Property
 			End Class
-		{{endregion}}
+	{{endregion}}
 
 	The __Drive__ business object has a reference to an __ObservableCollection__ of objects. These are the childs' elements. In fact this collection will store all directories and files for the drive.
 
 	The next step is to create the model for the application.
 
 3. Create a new class named __ServiceFacade__. Add a reference to an __ObservableCollection__ of __Drives__.
-
 	#### __C#__
 
 	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_7}}
@@ -529,7 +528,7 @@ This tutorial will combine in itself the following:
 	Now run your demo. After applying the __Style__ you can see the difference. The drives which are not ready are disabled. Try to expand any of the enabled items - the LoadOnDemand event is fired.
 	![](images/RadTreeView_HowToWindowsExplorerTree_030_WPF.PNG)
 
-	You are one step closer to the final result. Next, you need to handle with load on demand event.
+	You are one step closer to the final result. Next, you need to handle with load on demand event.  
 
 6. Switch the code-behind and add the following code for the load on demand handler:
 
@@ -623,27 +622,27 @@ This tutorial will combine in itself the following:
 	#### __VB.NET__
 
 	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_22}}
-			Public Sub LoadChildren(ByVal d As Drive)
-				For Each directory As String In System.IO.Directory.GetDirectories(d.Name)
-					Dim directoryInfo As New DirectoryInfo(directory)
-					d.Children.Add(New Directory(directory, directoryInfo.Name))
-				Next
-				For Each file As String In System.IO.Directory.GetFiles(d.Name)
-					Dim fileInfo As New FileInfo(file)
-					d.Children.Add(New File(file, fileInfo.Name))
-				Next
-			End Sub
-		
-			Public Sub LoadChildren(ByVal d As Directory)
-				For Each directory As String In System.IO.Directory.GetDirectories(d.FullPath)
-					Dim directoryInfo As New DirectoryInfo(directory)
-					d.Children.Add(New Directory(directory, directoryInfo.Name))
-				Next
-				For Each file As String In System.IO.Directory.GetFiles(d.FullPath)
-					Dim fileInfo As New FileInfo(file)
-					d.Children.Add(New File(file, fileInfo.Name))
-				Next
-			End Sub
+		Public Sub LoadChildren(ByVal d As Drive)
+			For Each directory As String In System.IO.Directory.GetDirectories(d.Name)
+				Dim directoryInfo As New DirectoryInfo(directory)
+				d.Children.Add(New Directory(directory, directoryInfo.Name))
+			Next
+			For Each file As String In System.IO.Directory.GetFiles(d.Name)
+				Dim fileInfo As New FileInfo(file)
+				d.Children.Add(New File(file, fileInfo.Name))
+			Next
+		End Sub
+	
+		Public Sub LoadChildren(ByVal d As Directory)
+			For Each directory As String In System.IO.Directory.GetDirectories(d.FullPath)
+				Dim directoryInfo As New DirectoryInfo(directory)
+				d.Children.Add(New Directory(directory, directoryInfo.Name))
+			Next
+			For Each file As String In System.IO.Directory.GetFiles(d.FullPath)
+				Dim fileInfo As New FileInfo(file)
+				d.Children.Add(New File(file, fileInfo.Name))
+			Next
+		End Sub
 	{{endregion}}
 
 	Both of the overloads load the child items respectively for the __Drive__ object and for the __Directory__ object. However, we don't need to load children for the __Files__ objects and this is why we can set their __IsLoadOnDemandEnabled__ property to __False__. The best way to do this is to subscribe to the __ItemPrepared__ event of the __RadTreeView__ control and implement the following code:
@@ -670,7 +669,7 @@ This tutorial will combine in itself the following:
 			End Sub
 	{{endregion}}
 
-	The final step is to add __HierarchicalDataTemplate__(DataTemplate) and __Styles__ for the __Directory__ object and the __File__ object.		
+	The final step is to add __HierarchicalDataTemplate__(DataTemplate) and __Styles__ for the __Directory__ object and the __File__ object.  		
 
 7. Declare a new __HierarchicalDataTemplate__ for the __Directory__ object and a __DataTemplate__ for the __File__ object in your application resources:
 
@@ -685,7 +684,7 @@ This tutorial will combine in itself the following:
 			ItemsSource="{Binding Children}">
 			<TextBlock Text="{Binding Name}"/>
 		</HierarchicalDataTemplate>
-	{{endregion}}
+	{{endregion}}  
 
 8. Add two additional styles - one for the __Directory__ object and one for the __File__ object. Update your __ItemStyleSelector__ declaration - set the __DirectoryStyle__ and __FileStyle__ properties:
 
@@ -718,8 +717,7 @@ This tutorial will combine in itself the following:
 			FileStyle="{StaticResource FileItemStyle}"/>
 	{{endregion}}
 
-	The directory style is similar to the drive style. However, the style for the file object is a little different. It sets a different image.
-		
+	The directory style is similar to the drive style. However, the style for the file object is a little different. It sets a different image.		
 
 With the last declarations the WPF Windows Explorer TreeView is ready. Run your demo.
 ![](images/RadTreeView_HowToWindowsExplorerTree_040_WPF.PNG)

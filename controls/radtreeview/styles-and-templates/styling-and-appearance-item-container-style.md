@@ -90,7 +90,9 @@ For the purpose of this tutorial will be used the following treeview declaration
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
 ![](images/RadTreeView_TemplatingItemContainerStyle.PNG)
 
->tipDefining the style in the resources of the control or in the resources of the application, makes it reusable.__RadTreeViewItem HeaderTemplate__
+>tip Defining the style in the resources of the control or in the resources of the application, makes it reusable.
+
+__RadTreeViewItem HeaderTemplate__
 
 #### __XAML__
 

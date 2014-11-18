@@ -62,6 +62,7 @@ controls/radgridview/troubleshooting/gridview-paging.md,
 controls/radgridview/troubleshooting/gridview-elementname-binding.md,
 controls/radmenu/features/animation.md,
 controls/radmenu/features/boundaries-detection.md,
+controls/radmediaplayer,
 controls/radnumericupdown/howto/events.md,
 controls/radribbonview/features/ribbon-controls/ribbon-window-sl.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier.md,
@@ -77,7 +78,8 @@ controls/radtoolbar/overview/structure.md,
 controls/radtoolbar/overview/declaration.md,
 controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigation-framework.md,
 controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
-controls/radtreeview/how-to/howto-bind-treeview.md,]
+controls/radtreeview/how-to/howto-bind-treeview.md,
+controls/radcoverflow]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -99,6 +101,8 @@ navigation:
         title: RadCalendar
     controls/radcontextmenu:
         title: RadContextMenu
+    controls/radcoverflow:
+        title: RadCoverFlow
     controls/raddocking:
         title: RadDocking
     controls/radganttview:
@@ -174,15 +178,24 @@ navigation:
     controls/radradialmenu/commands:
         title: Commands
         position: 5
-    controls/radpivotgrid/features/localdatasourceprovider:
-        title: LocalDataSourceProvider
-    controls/radpivotgrid/features/olap-providers:
-        title: OLAP Providers
-    controls/radpivotgrid/features/queryabledataprovider:
-        title: QueryableDataProvider
-    controls/radpivotgrid/radpivotfieldlist:
-        title: RadPivotFieldList
+    controls/raddocking/features/panes:
+        title: Panes
+        position: 0
+    controls/raddocking/theming:
+        title: Theming
+        position: 95
+    controls/radganttview/features/columns:
+        title: Columns
+        position: 0	
+    controls/radganttview/features/drag-and-drop:
+        title: Drag and Drop
         position: 3
+    controls/radganttview/features/items:
+        title: Items
+        position: 1			
+    controls/radganttview/features/timeruler:
+        title: TimeRuler
+        position: 2	
 ## X3 Controls End
 
 ## X2 Controls Start
@@ -269,6 +282,8 @@ navigation:
         title: RadColorSelector
     controls/radcolorpicker/styling-and-appearance:
         title: Appearance
+    controls/raddatabar:
+        title: RadDataBar
     controls/raddiagram:
         title: RadDiagram
     controls/raddiagram/diagram-items:
@@ -287,16 +302,22 @@ navigation:
         title: RadGauge
     controls/radheatmap:
         title: RadHeatMap
+    controls/radhtmlplaceholder:
+        title: RadHtmlPlaceHolder
     controls/radlegend:
         title: RadLegend
     controls/radmap:
         title: RadMap
     controls/radmaskedinput:
         title: RadMaskedInput
+    controls/radmediaplayer:
+        title: RadMediaPlayer
     controls/radoutlookbar:
         title: RadOutlookbar
     controls/radpanelbar:
         title: RadPanelBar
+    controls/radprogressbar:
+        title: RadProgressBar
     controls/radpersistenceframework:
         title: RadPersistenceFramework
     controls/radrating:
@@ -312,13 +333,19 @@ navigation:
     controls/radtileview:
         title: RadTileView
     controls/radtoolbar:
-        title: RadToolbar
+        title: RadToolBar
+    controls/radtooltip:
+        title: RadToolTip
     controls/radtimebar:
         title: RadTimeBar
     controls/radtimeline:
         title: RadTimeline
+    controls/radtreemap:
+        title: RadTreeMap
     controls/radtreeview:
-        title: RadTreeView		
+        title: RadTreeView
+    controls/radupload:
+        title: RadUpload
 ## X2 Controls End
 
 ## Centaur Controls Start
@@ -327,11 +354,35 @@ navigation:
     controls/radimageeditor/how-to:
         title: How To
         position: 4
+    "*radspreadsheet":
+        title: RadSpreadsheet
+    controls/radspreadsheet/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2		
+    controls/radspreadsheet/howto:
+        title: How To
+        position: 6		
+    "*radspellchecker":
+        title: RadSpellChecker		
+    controls/radspellchecker/styles-and-templates:
+        title: Styles and Templates
+        position: 4	
+    "*radziplibrary":
+        title: RadZipLibrary
+    "*radpdfviewer":
+        title: RadPdfViewer
+    controls/radpdfviewer/document-model:
+        title: Document Model
+        position: 6
+    controls/radpdfviewer/ui:
+        title: UI
+        position: 7
+    controls/radpdfviewer/customization-and-extensibility:
+        title: Customization and Extensibility
+        position: 8
+    controls/radpdfviewer/document-model/text:
+        title: Text
 ## Centaur Controls End
-
-## X1 Controls Start
-
-## X1 Controls End
 
 ## Common Start
     controls:
@@ -375,6 +426,42 @@ navigation:
     "api-reference":
         title: "Api Reference"
 ## Common End
+
+## X1 Controls Start
+    controls/radcalculator:
+        title: RadCalculator
+    controls/radcalculator/style-and-templates:
+        title: Style and Templates
+    controls/radcarousel:
+        title: RadCarousel
+    controls/radcarousel/changes-and-backward-compability:
+        title: Changes and Backward Compability  
+    controls/radcarousel/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radcarousel/using-radcarousel:
+        title: Using RadCarousel
+    controls/radcarousel/using-radcarouselpanel:
+        title: Using RadCarouselPanel
+    controls/radcollectionnavigator:
+        title: RadCollectionNavigator
+    controls/radcollectionnavigator/changes-and-backward-compability:
+        title: Changes and Backward Compability 
+    controls/raddatafilter:
+        title: RadDataFilter
+    controls/raddataform:
+        title: RadDataForm
+    controls/raddataform/localization:
+        title: Localization
+    controls/raddataform/validation:
+        title: Validation
+    controls/raddatapager:
+        title: RadDataPager
+    controls/raddatapager/changes-and-backward-compability:
+        title: Changes and Backward Compability
+    controls/radgridview:
+        title: RadGridView
+## X1 Controls End
+
 
 ## Api Reference Start
     "*system.windows":
@@ -2492,4 +2579,3 @@ kramdown:
     toc_levels: 2..3
     smart_quotes: ["quot", "quot", "quot", "quot"]
     input: GFM
-

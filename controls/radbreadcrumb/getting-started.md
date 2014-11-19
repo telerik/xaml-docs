@@ -17,7 +17,7 @@ This tutorial will walk you through the creation of a __RadBreadcrumb__.
 
 ##  Define a Breadcrumb control
 
->In order to use __RadBreadcrumb__  in your projects you have to add references to the following assemblies:<br/> * __Telerik.Windows.Controls__ <br/> * __Telerik.Windows.Controls.Navigation__ {% if site.site_name == 'WPF' %} <br/> * __Telerik.Windows.Data__ <br/> You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
+>In order to use __RadBreadcrumb__  in your projects you have to add references to the following assemblies:<br/> * __Telerik.Windows.Controls__ <br/> * __Telerik.Windows.Controls.Navigation__ {% if site.site_name == 'WPF' %} <br/> * __Telerik.Windows.Data__ <br/> You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %}<br/>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
 
 A basic __RadBreadcrumb__ definition looks like this:
 		

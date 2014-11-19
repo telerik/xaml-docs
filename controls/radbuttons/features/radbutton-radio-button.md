@@ -85,7 +85,7 @@ Here is an example of handling the __Checked__ event of a button.
 
 {{region radbutton-features-radio-button_5}}
 	Private Sub RadRadioButton_Checked(sender As Object, e As RoutedEventArgs)
-	 'implement your logic here
+	 'implement your logic here'
 	End Sub
 	{{endregion}}
 

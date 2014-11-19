@@ -16,11 +16,7 @@ position: 0
 
 __Axes__ in a chart are used to display the dimensions of the data. The __X-axis__ and the __Y-axis__ are contained in the __ChartArea__ and can be customized in XAML or code-behind.
 
-
-
-
-         
-      ![](images/RadChart_Features_Axes_Overview_01.png)
+![](images/RadChart_Features_Axes_Overview_01.png)
 
 Both, __AxisX__ and __AxisY__ inherit __Axis__, thus sharing common properties, like:
 
@@ -129,12 +125,7 @@ The following example demonstrates how to use the common properties in XAML and 
 In the code snippet above, both the X and the Y axes are customized. The changes done for the __Y-axis__ are several, but probably the most important of them is that the range auto generation (__AutoRange = False__) for that axis is stopped and this is done manually by defining values for __MinValue__, __MaxValue__ and __Step.__ The result is __Y-axis__ with values starting from 100, ending at 200 with tick placed on each 5 units.
 
 The manual range definition is very useful feature because it allows you to justify the visualization of your axes better.
-
-
-
-
-         
-      ![](images/RadChart_Features_Axes_Overview_02.png)
+![](images/RadChart_Features_Axes_Overview_02.png)
 
 # See Also
 

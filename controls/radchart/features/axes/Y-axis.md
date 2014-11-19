@@ -16,11 +16,7 @@ position: 2
 
 This topic covers only the properties that are specific to the __Y-axis__. If you want to learn more about the properties that are common to both X and Y axes take a look at the [Axes Overview]({%slug radchart-features-axes-overview%}) topic.
 
-
-
-
-         
-      ![](images/RadChart_Features_Axes_Y_Axis_01.png)
+![](images/RadChart_Features_Axes_Y_Axis_01.png)
 
 Besides the common properties, __Y-axis__ has some specific properties, explained in the list below:
 
@@ -107,35 +103,15 @@ In the example below you can see how changing the __ExtensionDirection__ propert
 
 And here is a snapshot of the result. You can see how the Y-axis ticks are placed - there are four minor ticks between each 2 major ones. Moreover the visualization of the chart varies depending on the value specified for the __ExtendDirection__.
 
+![](images/RadChart_Features_Axes_Y_Axis_02.png)
 
+![](images/RadChart_Features_Axes_Y_Axis_03.png)
 
+![](images/RadChart_Features_Axes_Y_Axis_04.png)
 
-         
-      ![](images/RadChart_Features_Axes_Y_Axis_02.png)
+![](images/RadChart_Features_Axes_Y_Axis_05.png)
 
-
-
-
-         
-      ![](images/RadChart_Features_Axes_Y_Axis_03.png)
-
-
-
-
-         
-      ![](images/RadChart_Features_Axes_Y_Axis_04.png)
-
-
-
-
-         
-      ![](images/RadChart_Features_Axes_Y_Axis_05.png)
-
-
-
-
-         
-      ![](images/RadChart_Features_Axes_Y_Axis_06.png)
+![](images/RadChart_Features_Axes_Y_Axis_06.png)
 
 # See Also
 

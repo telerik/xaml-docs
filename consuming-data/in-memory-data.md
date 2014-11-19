@@ -19,7 +19,7 @@ The purpose of this tutorial is to show you how to create in-memory data and use
 
 * Setting it as a data source/data context in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application.
 
->This tutorial will use objects and data from the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use objects and data from the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 ## Creating In-Memory Data
 
@@ -112,7 +112,7 @@ There are numerous ways to set in-memory data as data source:
 
 {{region consuming-data-in-memory-data_4}}
 	radTreeView.ItemsSource = categories
-	' Or
+	' Or'
 	radTreeView.DataContext = categories
 	{{endregion}}
 

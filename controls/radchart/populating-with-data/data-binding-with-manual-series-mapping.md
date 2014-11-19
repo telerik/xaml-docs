@@ -41,7 +41,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 >The chart types that require multiple data fields, like __Stick__ or __CandleStick__, need manual series mapping in order to operate correctly.
 
 
-##### 1. Create a new business object and name it __TradeData__.
+1 . Create a new business object and name it __TradeData__.
 
 #### __C#__
 
@@ -404,7 +404,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	{{endregion}}
 
 
-##### 2. Add a new __RadChart__ declaration.
+2 . Add a new __RadChart__ declaration.
 
 #### __XAML__
 
@@ -425,7 +425,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-##### 3. In order to map to such kind of business objects, you have to create a new instance of __SeriesMapping__. Set the __SeriesMapping.SeriesDefinition__ property to the chart type you want to use - in this case __CandleStickSeriesDefinition__.
+3 . In order to map to such kind of business objects, you have to create a new instance of __SeriesMapping__. Set the __SeriesMapping.SeriesDefinition__ property to the chart type you want to use - in this case __CandleStickSeriesDefinition__.
 
 >tipYou can find a full list of supported chart types [here]({%slug radchart-features-chart-types-2d-charts%}).
 
@@ -445,11 +445,11 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-##### 4. Add several __ItemMappings__ - one for each of the properties that take part in the candlestick chart type. For each __ItemMapping__ must be set the following properties:
+4 . Add several __ItemMappings__ - one for each of the properties that take part in the candlestick chart type. For each __ItemMapping__ must be set the following properties:
 
-##### 5. __DataPointMember__
+5 . __DataPointMember__
 
-##### 6. __FieldName__ - specifies from where the data should be taken.
+6 . __FieldName__ - specifies from where the data should be taken.
 
 #### __XAML__
 
@@ -487,7 +487,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-##### 7. Set the ItemsSource property of the __RadChart__ control.
+7 . Set the ItemsSource property of the __RadChart__ control.
 
 #### __C#__
 
@@ -507,10 +507,10 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-##### 8. The final result should look like the snapshot below.
+8 . The final result should look like the snapshot below.
 ![](images/RadChart_PopulatingWithData_ManualSeriesMapping_01.png)
 
-##### 9. The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
+9 . The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
 
 #### __C#__
 

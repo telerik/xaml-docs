@@ -788,7 +788,7 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 	    Dim stockToolTip As New StockToolTipControl()
 	    stockToolTip.ChangeNetPercent = 1 - (tradeData.Close / tradeData.Open)
 	    stockToolTip.Volume = tradeData.Volume
-	    'The next three properties shows some fictional data to illustrate the idea
+	    'The next three properties shows some fictional data to illustrate the idea'
 	    stockToolTip.OneYearTargetEst = tradeData.Close * 1.1
 	    stockToolTip.PERatio = 16.8R
 	    stockToolTip.ForwardingPE = 17.93

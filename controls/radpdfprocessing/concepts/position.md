@@ -15,7 +15,7 @@ position: 4
 The __Position__ property exposed by the __PositionContentElement__ abstract class is used for manipulating the position of elements.
       
 
->tipYou can find a diagram representing the structure in __RadPdfProcessing__[here]({%slug radpdfprocessing-model%}).
+>tipYou can find a diagram representing the structure in __RadPdfProcessing__ [here]({%slug radpdfprocessing-model-general-information%}).
         
 
 The position is represented by the __IPosition__ interface which provides the following methods:
@@ -71,10 +71,10 @@ __Example 1__ shows how transformations can be appended.
 #### __[C#] Example 1: Trasform MatrixPosition__
 
 {{region radpdfprocessing-concepts-position_0}}
-	            MatrixPosition matrixPosition = new MatrixPosition();
-	            matrixPosition.Translate(20, 20); // Translates the position by (20, 20)
-	            matrixPosition.Translate(30, 30); // Translates the position by (30, 30).
-	{{endregion}}
+    MatrixPosition matrixPosition = new MatrixPosition();
+    matrixPosition.Translate(20, 20); // Translates the position by (20, 20)
+    matrixPosition.Translate(30, 30); // Translates the position by (30, 30).
+{{endregion}}
 
 
 
@@ -104,10 +104,10 @@ __Example 2__ shows how transformations overwrite the previous transformations o
 #### __[C#] Example 2: Trasform SimplePosition__
 
 {{region radpdfprocessing-concepts-position_1}}
-	            SimplePosition simplePosition = new SimplePosition();
-	            simplePosition.Translate(20, 20); // Translates the position by (30, 30).
-	            simplePosition.Translate(30, 30); // Translates the position by (20, 20) overwriting the previous translations.
-	{{endregion}}
+    SimplePosition simplePosition = new SimplePosition();
+    simplePosition.Translate(20, 20); // Translates the position by (30, 30).
+    simplePosition.Translate(30, 30); // Translates the position by (20, 20) overwriting the previous translations.
+{{endregion}}
 
 
 
@@ -116,6 +116,6 @@ The resulting simple position was translated both horizontally and vertically by
 
 # See Also
 
- * [Model]({%slug radpdfprocessing-model%})
+ * [Model]({%slug radpdfprocessing-model-general-information%})
 
  * [FixedContentEditor]({%slug radpdfprocessing-editing-fixedcontenteditor%})

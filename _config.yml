@@ -391,7 +391,7 @@ navigation:
         position: 7
     controls/radpdfviewer/document-model/text:
         title: Text
-         controls/radspreadprocessing/working-with-workbooks:
+    controls/radspreadprocessing/working-with-workbooks:
         title: Working with Workbooks
         position: 3
     "*radspreadprocessing":
@@ -464,6 +464,23 @@ navigation:
     controls/radwordsprocessing/concepts/fields:
         title: Fields
         position: 0
+    "*radpdfprocessing":
+        title: RadPdfProcessing
+    controls/radpdfprocessing/model:
+        title: Model
+        position: 4
+    controls/radpdfprocessing/formats-and-conversion:
+        title: Formats and Conversion
+        position: 5
+    controls/radpdfprocessing/formats-and-conversion/pdf:
+        title: Pdf
+        position: 0
+    controls/radpdfprocessing/editing:
+        title: Editing
+        position: 6
+    controls/radpdfprocessing/concepts:
+        title: Concepts
+        position: 7
 ## Centaur Controls End
 
 ## Common Start

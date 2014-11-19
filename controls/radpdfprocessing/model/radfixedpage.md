@@ -5,14 +5,14 @@ description: RadFixedPage
 slug: radpdfprocessing-model-radfixedpage
 tags: radfixedpage
 published: True
-position: 1
+position: 2
 ---
 
 # RadFixedPage
 
 
 
-__RadFixedPage__ conforms to the __IContentRootElement__ interface and is the root element of all fixed content elements in the document model. __Figure 1__ in the [Model]({%slug radpdfprocessing-model%}) article  demonstrates in details the structure of the document model.
+__RadFixedPage__ conforms to the __IContentRootElement__ interface and is the root element of all fixed content elements in the document model. __Figure 1__ in the [Model]({%slug radpdfprocessing-model-general-information%}) article  demonstrates in details the structure of the document model.
       
 
 This article covers the following topics:
@@ -39,9 +39,7 @@ __RadFixedPage__ exposes the following properties:
 * __Size__: Property of type Size representing the size of the page.
             
 
-* __Rotation__: Property of type
-              [Rotation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_fixed_model_data_rotation.html)
-              representing the page rotation.
+* __Rotation__: Property of type [Rotation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_fixed_model_data_rotation.html) representing the page rotation.
             
 
 __Example 1__ demonstrates how to create a new __RadFixedPage__ instance and add it to the __Pages__ collection of __RadFixedDocument__.
@@ -50,10 +48,10 @@ __Example 1__ demonstrates how to create a new __RadFixedPage__ instance and add
 #### __[C#] Example 1: Create RadFixedPage and add it to a document.__
 
 {{region radpdfprocessing-model-radfixedpage_0}}
-	            RadFixedDocument document = new RadFixedDocument();
-	            RadFixedPage page = new RadFixedPage();
-	            document.Pages.Add(page);
-	{{endregion}}
+    RadFixedDocument document = new RadFixedDocument();
+    RadFixedPage page = new RadFixedPage();
+    document.Pages.Add(page);
+{{endregion}}
 
 
 
@@ -73,13 +71,13 @@ __Example 2__ shows how to add a previously created ContentElement in a __RadFix
 #### __[C#] Example 2: Add content element to RadFixedPage__
 
 {{region radpdfprocessing-model-radfixedpage_1}}
-	            RadFixedPage page = new RadFixedPage();
-	            page.Content.Add(contentElement);
-	{{endregion}}
+    RadFixedPage page = new RadFixedPage();
+    page.Content.Add(contentElement);
+{{endregion}}
 
 
 
-You can also use the __Add[Element]()__ methods of RadFixedPages's __Content__ property. The respective methods - AddPath(), AddTextFragment(), AddImage(), create the element, add it to the page and return it for your convenience.
+You can also use the __Add\[Element]()__ methods of RadFixedPages's __Content__ property. The respective methods - AddPath(), AddTextFragment(), AddImage(), create the element, add it to the page and return it for your convenience.
             
 
 ### Add Annotation
@@ -93,15 +91,13 @@ __Example 3__ shows how to add a previously created annotation in a __RadFixedPa
 #### __[C#] Example 3: Add annotation to RadFixedPage__
 
 {{region radpdfprocessing-model-radfixedpage_2}}
-	            RadFixedPage page = new RadFixedPage();
-	            page.Annotations.Add(annotation);
-	{{endregion}}
+    RadFixedPage page = new RadFixedPage();
+    page.Annotations.Add(annotation);
+{{endregion}}
 
 
 
-The other possible approach is using the __AddLink()__ method of the __Annotations__ property. The method creates the link, adds it to the page and returns it. More information on the topic is available in the
-              
-              Annotation article.
+The other possible approach is using the __AddLink()__ method of the __Annotations__ property. The method creates the link, adds it to the page and returns it. More information on the topic is available in the [Annotation]({%slug radpdfprocessing-model-annotations-and-destinations%}) article.
             
 
 ### Modifying Properties
@@ -115,16 +111,16 @@ __Example 4__ shows how you can change the __Rotation__ and __Size__ properties 
 #### __[C#] Example 4: Add annotation to RadFixedPage__
 
 {{region radpdfprocessing-model-radfixedpage_3}}
-	            RadFixedPage page = new RadFixedPage();
-	            page.Rotation = Rotation.Rotate270;
-	            page.Size = new Size(792, 1128);
-	{{endregion}}
+    RadFixedPage page = new RadFixedPage();
+    page.Rotation = Rotation.Rotate270;
+    page.Size = new Size(792, 1128);
+{{endregion}}
 
 
 
 # See Also
 
- * [Model]({%slug radpdfprocessing-model%})
+ * [Model]({%slug radpdfprocessing-model-general-information%})
 
  * [RadFixedDocument]({%slug radpdfprocessing-model-radfixeddocument%})
 

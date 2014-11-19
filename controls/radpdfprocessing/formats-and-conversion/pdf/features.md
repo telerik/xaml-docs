@@ -5,7 +5,7 @@ description: Features
 slug: radpdfprocessing-formats-and-conversion-pdf-features
 tags: features
 published: True
-position: 0
+position: 1
 ---
 
 # Features
@@ -15,16 +15,16 @@ position: 0
 Below you can find a list of all the features that are supported by PdfFormatProvider.
 
 ## 
-<table><th><tr><td>
+<table><tr><th>
 
 Feature
-                </td><td>
+                </th><th>
 
 Supported
-                </td><td>
+                </th><th>
 
 Comment
-                </td></tr></th><tr><td>
+                </th></tr><tr><td>
 
 <b>
                   Text Formatting

@@ -335,6 +335,8 @@ navigation:
         title: RadZipLibrary
     "*radpdfviewer":
         title: RadPdfViewer
+    "*radspreadprocessing":
+        title: RadSpreadProcessing
     controls/radpdfviewer/document-model:
         title: Document Model
         position: 6
@@ -346,6 +348,48 @@ navigation:
         position: 8
     controls/radpdfviewer/document-model/text:
         title: Text
+    controls/radspreadprocessing/working-with-workbooks:
+        title: Working with Workbooks
+        position: 3
+    controls/radspreadprocessing/working-with-worksheets:
+        title: Working with Worksheets
+        position: 4
+    controls/radspreadprocessing/working-with-rows-and-columns:
+        title: Working with Rows and Columns
+        position: 5
+    controls/radspreadprocessing/working-with-cells:
+        title: Working with Cells
+        position: 6
+    controls/radspreadprocessing/formats-and-conversion:
+        title: Formats and Conversion
+        position: 7
+    controls/radspreadprocessing/features:
+        title: Features
+        position: 8
+    controls/radspreadprocessing/formats-and-conversion/xlsx:
+        title: Xlsx
+        position: 2
+    controls/radspreadprocessing/formats-and-conversion/pdf:
+        title: Pdf
+        position: 3
+    controls/radspreadprocessing/formats-and-conversion/csv:
+        title: Csv
+        position: 4
+    controls/radspreadprocessing/formats-and-conversion/txt:
+        title: Txt
+        position: 5
+    controls/radspreadprocessing/features/fill-data-automatically:
+        title: Fill Data Automatically
+        position: 0
+    controls/radspreadprocessing/features/formulas:
+        title: Formulas
+        position: 1
+    controls/radspreadprocessing/features/protection:
+        title: Protection
+        position: 2
+    controls/radspreadprocessing/features/styling:
+        title: Styling
+        position: 3
 ## Centaur Controls End
 
 ## Common Start

@@ -11,11 +11,11 @@ site_name: Silverlight
 
 # DomainDataSource Support
 
-The purpose of this tutorial is to show you how to populate a __RadGridView__with data using __DomainDataSource__.  
+The purpose of this tutorial is to show you how to populate __RadGridView__ with data using __DomainDataSource__.  
 
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
-* Add a new __RadGridView__declaration in your XAML: 
+* Add a new __RadGridView__ declaration in your XAML: 
 
 #### __XAML__
 
@@ -26,7 +26,7 @@ The purpose of this tutorial is to show you how to populate a __RadGridView__wit
 
 The gridview will be bound to a __DomainDataSource__. When the control is loaded all customers from the Customers table in the Northwind database are loaded asynchronously.
 
-*  Declare a new __DomainDataSource__object in the resources of your application. Set its __DomainContext__property to an existing __RIA Service__. 
+*  Declare a new __DomainDataSource__ object in the resources of your application. Set its __DomainContext__ property to an existing __RIA Service__. 
 
 #### __XAML__
 

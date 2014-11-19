@@ -80,7 +80,7 @@ This section covers the following properties:
 
 * __RowIndicatorVisibility__ - show\hide the row indicators, located on left of each row. 
 
-* __RowDetailsVisibilityMode__ - control the way by which row details are visualized. Choose one of the three possible values defined in the __GridViewRowDetailsVisibilityMode__ enumeration: __Collapsed__, __Visible__ and __VisibleWhenSelected__. ____
+* __RowDetailsVisibilityMode__ - control the way by which row details are visualized. Choose one of the three possible values defined in the __GridViewRowDetailsVisibilityMode__ enumeration: __Collapsed__, __Visible__ and __VisibleWhenSelected__. 
 
 * __AlternationCount__ - control the alternate rows. Usually you need to set it to 2, so every second row will have alternating style applied.
 

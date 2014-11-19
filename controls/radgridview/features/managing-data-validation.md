@@ -56,6 +56,7 @@ RadGridView exposes a property - ValidatesOnDataErrors that controls the way the
 
 >Setting the ValidateOnDataErrors property will not affect the UI validation provided by the CellValidating and RowValidating events.
 
+
 {% if site.site_name == 'WPF' %}
 >Telerik.Windows.Data.INotifyDataErrorInfo interface was created for WPF 4.0. version since System.ComponentModel.INotifyDataErrorInfo was available for Silverlight only. If using WPF 4.5, please reference System.ComponentModel.INotifyDataErrorInfo instead.
 {% endif %}
@@ -297,7 +298,8 @@ The code snippet below shows you how to use __DataAnnotations__ in order to vali
 #### __VB.NET__
 
 {{region gridview-managing-data-validation_10}}
-<Required()> _
+
+	<Required()> _
 	Public Property OrderNO() As String
 	    Get
 	        Return Me.orderNo
@@ -358,5 +360,5 @@ Although GitHub is a very well-known platform we saw a better and easier approac
 
  * [Validation errors not cleared]({%slug gridview-troubleshooting-validation-stays%})
 
- * [Validation Events]({%slug gridview-events-validation%})>
+ * [Validation Events]({%slug gridview-events-validation%})
     

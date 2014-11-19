@@ -10,7 +10,7 @@ position: 6
 
 # Enable\Disable Grid Elements
 
-__RadGridView__ is an advanced {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control, that allows you to enable\disable its different parts. You can set the boolean property __IsEnabled__to each one of the following objects:
+__RadGridView__ is an advanced control, that allows you to enable\disable its different parts. You can set the boolean property __IsEnabled__ to each one of the following objects:
 
 * __RadGridView__
 

@@ -76,10 +76,10 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * Validation Events ([Read more]({%slug gridview-events-validation%}))
         
 
-* Filtering Events ([Read more]({%slug gridview-filtering-basics%}))
+* Filtering Events ([Read more]({%slug gridview-filtering-basic%}))
         
 
-* Sorting Events ([Read more](({%slug gridview-sorting-basics%}))
+* Sorting Events ([Read more]({%slug gridview-sorting-basics%}))
         
 
 * __Sorting__ - occurs when the grid data is about to be sorted. The type of the passed event arguments is __GridViewSortingEventArgs__.

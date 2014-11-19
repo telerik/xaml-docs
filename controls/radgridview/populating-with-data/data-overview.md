@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-The Telerik __RadGridView__can be populated with data in any of the following ways:
+The Telerik __RadGridView__ can be populated with data in any of the following ways:
 {% if site.site_name == 'Silverlight' %}
 
 * [Using in-memory Data]({%slug gridview-in-memory-date%})

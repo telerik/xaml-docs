@@ -13,10 +13,10 @@ position: 8
 There are two events that are raised, when the data in RadGridView is __grouped from the UI__.
       
 
-* [Grouping event](#Grouping)- it is raised before the data is grouped. 
+* [Grouping event](#grouping-event)- it is raised before the data is grouped. 
           
 
-* [Grouped event](#Grouped) - it is raised when the data has been already grouped.
+* [Grouped event](#grouped-event) - it is raised when the data has been already grouped.
           
 
 There are two events that are raised, when a user __expands/collapses a group row__ in RadGridView.
@@ -74,7 +74,7 @@ Via the __Telerik.Windows.Controls.GridViewGroupingEventArgs__ of the __Grouping
 
 * __SortDirection__ - either ascending or descending
 
-* __DisplayContent -__the display content
+* __DisplayContent__ - the display content
 
 * __Index__ of the descriptor in the __GroupDescriptors__ collection
 

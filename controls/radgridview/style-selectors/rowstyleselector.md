@@ -125,7 +125,7 @@ In this case we have two different styles that could be applied - __BigStadiumSt
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
-If you are using our [Implicit Themes](%slug styling-apperance-implicit-styles-overview%), you should base the style on the one defined for the corresponding theme:
+If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme:
 
 #### __XAML__
 

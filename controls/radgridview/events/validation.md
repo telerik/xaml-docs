@@ -16,15 +16,15 @@ The validation events are meant to support the data validation of the user input
 Currently the validation occurs on row and cell level. To get notified, you can use the following events exposed by the __RadGridView__ control:
       
 
-* [Validation Events Lifecycle](44E2C0C7-1C59-4E66-9C3F-0B12BB89F423#validation-events-lifecycle)
+* [Validation Events Lifecycle](#validation-events-lifecycle)
 
-* [CellValidating](44E2C0C7-1C59-4E66-9C3F-0B12BB89F423#cellvalidating-event)
+* [CellValidating](#cellvalidating-event)
 
-* [CellValidated](44E2C0C7-1C59-4E66-9C3F-0B12BB89F423#cellvalidated-event)
+* [CellValidated](#cellvalidated-event)
 
-* [RowValidating](44E2C0C7-1C59-4E66-9C3F-0B12BB89F423#rowvalidating-event)
+* [RowValidating](#rowvalidating-event)
 
-* [RowValidated](44E2C0C7-1C59-4E66-9C3F-0B12BB89F423#rowvalidated-event)
+* [RowValidated](#rowvalidated-event)
 
 ## Validation Events Lifecycle
 
@@ -135,7 +135,9 @@ The code snippet below checks whether the value entered in the "CountryId" colum
 {{endregion}}
 
 
-And here is how the error message is displayed:![](images/RadGridView_Events_Validation_010.png)
+And here is how the error message is displayed:
+
+![](images/RadGridView_Events_Validation_010.png)
 
 ## CellValidated Event
 

@@ -105,7 +105,7 @@ To learn more about the selection events go to [this help topic]({%slug gridview
 
 ## Customizing Selection
 
-{% if site.site_name == 'Silverlight' %}To modify the selection color you have to modify the style of the __RadGridView__ rows. To learn more about how to do it take a look at the {% endif %}[Styling a Row]({%slug gridview-styling-a-row%}){% if site.site_name == 'Silverlight' %} topic.{% endif %}
+To modify the selection color you have to modify the style of the __RadGridView__ rows. To learn more about how to do it take a look at the [Styling a Row]({%slug gridview-styling-a-row%}) topic.
 
 # See Also
 
@@ -113,6 +113,6 @@ To learn more about the selection events go to [this help topic]({%slug gridview
 
  * [Programmatic Selection]({%slug radgridview-selection-programmatic-selection%})
 
- * [Basic Filtering]({%slug gridview-basic-filtering2%})
+ * [Basic Filtering]({%slug gridview-filtering-basic%})
 
- * [Programmatic Filtering]({%slug gridview-programmatic-filtering%})
+ * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

@@ -22,17 +22,16 @@ Here are some possible reasons:
  
 * __CellTemplates__ - using CellTemplates is a time consuming operation. If applicable, try to stick to the Default Templates.
 
-* As of __Q1 2012 SP1__ you have the option to disable the Telerik StyleManager and to style the controls using Implicit Styles. There are a number of benefits of using implicit styles over the Telerik StyleManager. For more information, please refer to this [help article](f7b879d9-62ca-42c3-a919-983c7cbc79a2).
+* As of __Q1 2012 SP1__ you have the option to disable the Telerik StyleManager and to style the controls using Implicit Styles. There are a number of benefits of using implicit styles over the Telerik StyleManager. For more information, please refer to this [help article]({%slug styling-apperance-implicit-styles-overview%}).
 
 * __DataLoadMode="Asynchronous"__ - using this mode is not recommended, it leads to potential problems. Please do not use it.
 
-* __Degraded performance with Windows8, Windows8Touch and Office2013 Themes__
-              - you can consider applying the lightweight templates in order to speed up the performance of RadGridView. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
+* __Degraded performance with Windows8, Windows8Touch and Office2013 Themes__ - you can consider applying the lightweight templates in order to speed up the performance of RadGridView. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
   
-* __TouchManager__ -  another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support](737cc59b-2828-49eb-be56-3bac4b9ad992#States) article.
+* __TouchManager__ -  another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
             
 
-* As of __Q2 2014 SP__ release we introduced the option to __turn off the generating of the automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support](cabea947-6b4f-43bb-a5ba-f44d4d8ae1cc) article on how to set the AutomationMode property to Disabled.
+* As of __Q2 2014 SP__ release we introduced the option to __turn off the generating of the automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the AutomationMode property to Disabled.
 
 * __Alternation__ (setting AlternationCount) is a very slow operation. Avoid it unless it is definetely needed. __AlternateRowStyle__ - using AlternateRowStyle is a time consuming operation. If you just need to set the background of the alternating rows we recommend using the __AlternateRowBackground__ property.
             
@@ -64,7 +63,7 @@ Recommended (using implicit Style):
 	</Grid>
 {{endregion}}
 
-You can also refer to this [help article](f7b879d9-62ca-42c3-a919-983c7cbc79a2) on Implicit Styles and NoXaml binaries.
+You can also refer to this [help article]({%slug styling-apperance-implicit-styles-overview%}) on Implicit Styles and NoXaml binaries.
         
 
 >As of __2013 Q2 SP__ we have introduced __Lightweight Templates__ for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%})

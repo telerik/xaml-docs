@@ -52,7 +52,7 @@ Special axis that expects each data point to provide a System.DateTime structure
 Special axis which is a fixed line in a system of polar coordinates from which the polar angle, θ, is measured anticlockwise. You may read more about it in [Polar Axis]({%slug radchartview-axes-polaraxis%}) topic.
 
 2.1.1.7 Radial Axis
-Special axis used by RadPolarChart with [Radar Series]({%slug radchartview-series-radarseries%}).
+Special axis used by RadPolarChart with Radar Series.
 
 * __Categorical__ - positions catgories/labels around the circumference of the circle.
 

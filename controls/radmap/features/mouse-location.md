@@ -53,8 +53,6 @@ Here is a snapshot of the result.
 
  * [Click Modes]({%slug radmap-features-click-modes%})
 
- * [View Modes]({%slug radmap-features-view-modes%})
-
  * [Zoom Modes]({%slug radmap-features-zoom-modes%})
 
  * [Distance and Scale]({%slug radmap-features-dsitance-and-scale%})

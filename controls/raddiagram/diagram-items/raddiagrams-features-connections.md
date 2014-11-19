@@ -110,10 +110,10 @@ You can also attach a connection to a source and target shape using the __RadDia
 You can control the connection type through the __ConnectionType__ property. As an enumeration of type  __Telerik.Windows.Diagrams.Core.ConnectionType__, it exposes the following members:
 		
 
-* __Polyline__ - this type allows you to define multiple points a connection has to pass through. By default such a connection have two points it has to pass through - its source connector(or __StartPoint__) and its target connector(or __EndPoint__). This is why by default the __Polyline ConnectionType__visualizes a straight connection.
+* __Polyline__ - this type allows you to define multiple points a connection has to pass through. By default such a connection have two points it has to pass through - its source connector (or __StartPoint__) and its target connector (or __EndPoint__). This is why by default the __Polyline ConnectionType__ visualizes a straight connection.
 			
 
-	#### __XAML__
+#### __XAML__
     <Grid>
         <telerik:RadDiagram>
             <telerik:RadDiagramShape x:Name="xShape1" Content="Shape1"  Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}" Position="250,100" />
@@ -131,7 +131,7 @@ Sample of a straight Polyline connection between two shapes:
 If you want to change the route of the connection, you can add connection points in runtime while pressing the __Ctrl__ key and using the mouse to place points on the connection. You can move each point around the diagramming surface to create a curved connection. You can also explicitly define the connection points in code-behind through the __RadDiagramConnection.ConnectionPoints__ property. You can populate the __ConnectionPoints__ collection with objects of type __Point__:
 			
 
-	#### __XAML__
+#### __XAML__
     <telerik:RadDiagram>
         <telerik:RadDiagramShape x:Name="xShape1"
                                     Content="Shape1"
@@ -151,7 +151,7 @@ If you want to change the route of the connection, you can add connection points
 
 
 
-	#### __C#__
+#### __C#__
     xConnection.ConnectionPoints.Add(new Point(300, 140));
     xConnection.ConnectionPoints.Add(new Point(420, 200));
     xConnection.ConnectionPoints.Add(new Point(440, 300));			  
@@ -159,7 +159,7 @@ If you want to change the route of the connection, you can add connection points
 
 
 
-	#### __VB.NET__
+#### __VB.NET__
     xConnection.ConnectionPoints.Add(New Point(300, 140))
     xConnection.ConnectionPoints.Add(New Point(420, 200))
     xConnection.ConnectionPoints.Add(New Point(440, 300))			  
@@ -170,38 +170,37 @@ If you want to change the route of the connection, you can add connection points
 Sample of a curved Polyline connection:
 ![Rad Diagram Connections Curved Connection](images/RadDiagram_Connections_CurvedConnection.png)
 
->tipYou can use a default routing algorithm to automatically create connection points and route your connections. This basically ensures that the diagramming framework will use a routing algorithm to make sure that the path of the connection won't collide with any shapes. In order to use this feature, you can set the __RadDiagram RouteConnections__ property to __True__. Please refer to the [Routing]({%slug raddiagram-features-routing%}) tutorial for more information on the routing algorithm.
-			  If you want to use a rounded polyline connection, you can set the __RadDiagram ConnectionRoundedCorners__ to __True__.
+>tipYou can use a default routing algorithm to automatically create connection points and route your connections. This basically ensures that the diagramming framework will use a routing algorithm to make sure that the path of the connection won't collide with any shapes. In order to use this feature, you can set the __RadDiagram RouteConnections__ property to __True__. Please refer to the [Routing]({%slug raddiagram-features-routing%}) tutorial for more information on the routing algorithm. If you want to use a rounded polyline connection, you can set the __RadDiagram ConnectionRoundedCorners__ to __True__.
 			
 
 #### __XAML__
 
 {{region raddiagram_features_connection_5}}
-	        <telerik:RadDiagram x:Name="xDiagram" ConnectionRoundedCorners="True">
-	            <telerik:RadDiagramShape x:Name="xShape1"
-	                                     Content="Shape1"
-	                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-	                                     Position="240,260" />
-	            <telerik:RadDiagramShape x:Name="xShape2"
-	                                     Content="Shape2"
-	                                     Geometry="{telerik:FlowChartShape ShapeType=DataStoreShape}"
-	                                     GlidingStyle="Rectangle"
-	                                     Position="600,80"
-	                                     UseGlidingConnector="True" />
-	            <telerik:RadDiagramShape x:Name="xShape3"
-	                                     Content="Shape3"
-	                                     Geometry="{telerik:FlowChartShape ShapeType=DataStoreShape}"
-	                                     Position="600,380" />
-	            <telerik:RadDiagramConnection ConnectionType="Polyline"
-	                                          Source="{Binding ElementName=xShape1}"
-	                                          SourceConnectorPosition="Top"
-	                                          Target="{Binding ElementName=xShape2}"/>
-	            <telerik:RadDiagramConnection ConnectionType="Polyline"
-	                                          Source="{Binding ElementName=xShape1}"
-	                                          SourceConnectorPosition="Bottom"
-	                                          Target="{Binding ElementName=xShape3}" />
-	
-	        </telerik:RadDiagram>
+    <telerik:RadDiagram x:Name="xDiagram" ConnectionRoundedCorners="True">
+        <telerik:RadDiagramShape x:Name="xShape1"
+                                 Content="Shape1"
+                                 Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                                 Position="240,260" />
+        <telerik:RadDiagramShape x:Name="xShape2"
+                                 Content="Shape2"
+                                 Geometry="{telerik:FlowChartShape ShapeType=DataStoreShape}"
+                                 GlidingStyle="Rectangle"
+                                 Position="600,80"
+                                 UseGlidingConnector="True" />
+        <telerik:RadDiagramShape x:Name="xShape3"
+                                 Content="Shape3"
+                                 Geometry="{telerik:FlowChartShape ShapeType=DataStoreShape}"
+                                 Position="600,380" />
+        <telerik:RadDiagramConnection ConnectionType="Polyline"
+                                      Source="{Binding ElementName=xShape1}"
+                                      SourceConnectorPosition="Top"
+                                      Target="{Binding ElementName=xShape2}"/>
+        <telerik:RadDiagramConnection ConnectionType="Polyline"
+                                      Source="{Binding ElementName=xShape1}"
+                                      SourceConnectorPosition="Bottom"
+                                      Target="{Binding ElementName=xShape3}" />
+
+    </telerik:RadDiagram>
 	{{endregion}}
 
 ![Rad Diagram Connections Rounded Polyline](images/RadDiagram_Connections_RoundedPolyline.png)
@@ -215,26 +214,26 @@ Sample of a curved Polyline connection:
 Illustration of a Bezier connection definition points:![Rad Diagram Connections Bezier Connection](images/RadDiagram_Connections_BezierConnection.png)The __RadDiagramConnection.BezierTension__ parameter defines the curve that will be produced for a given set of end and handle points. The following illustration shows four Bezier connections defined by the same set of end and handle points:
 			
 
-	#### __XAML__
-        <telerik:RadDiagram x:Name="xDiagram" Margin="50">
-            <telerik:RadDiagramShape x:Name="xShape1"
-                                Content="Shape1"
-                                Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-                                Position="50,50" />
-            <telerik:RadDiagramShape x:Name="xShape2"
-                                Content="Shape2"
-                                Geometry="{telerik:FlowChartShape ShapeType=DataStoreShape}"
-                                Position="450,100" />
-            <telerik:RadDiagramConnection ConnectionType="Bezier" BezierTension="3"
-                                    Source="{Binding ElementName=xShape1}"
-                                    Target="{Binding ElementName=xShape2}" Stroke="Red"/>
-            <telerik:RadDiagramConnection ConnectionType="Bezier" BezierTension="9"
-                                    Source="{Binding ElementName=xShape1}"
-                                    Target="{Binding ElementName=xShape2}" Stroke="Blue"/>
-            <telerik:RadDiagramConnection ConnectionType="Bezier" BezierTension="16"
-                                    Source="{Binding ElementName=xShape1}"
-                                    Target="{Binding ElementName=xShape2}" Stroke="Green"/>
-        </telerik:RadDiagram>			  
+#### __XAML__
+    <telerik:RadDiagram x:Name="xDiagram" Margin="50">
+        <telerik:RadDiagramShape x:Name="xShape1"
+                            Content="Shape1"
+                            Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                            Position="50,50" />
+        <telerik:RadDiagramShape x:Name="xShape2"
+                            Content="Shape2"
+                            Geometry="{telerik:FlowChartShape ShapeType=DataStoreShape}"
+                            Position="450,100" />
+        <telerik:RadDiagramConnection ConnectionType="Bezier" BezierTension="3"
+                                Source="{Binding ElementName=xShape1}"
+                                Target="{Binding ElementName=xShape2}" Stroke="Red"/>
+        <telerik:RadDiagramConnection ConnectionType="Bezier" BezierTension="9"
+                                Source="{Binding ElementName=xShape1}"
+                                Target="{Binding ElementName=xShape2}" Stroke="Blue"/>
+        <telerik:RadDiagramConnection ConnectionType="Bezier" BezierTension="16"
+                                Source="{Binding ElementName=xShape1}"
+                                Target="{Binding ElementName=xShape2}" Stroke="Green"/>
+    </telerik:RadDiagram>			  
 			  
 
 
@@ -244,23 +243,25 @@ Illustration of a Bezier connection tension parameter:
 By default when you create a Bezier connection and attach its endpoints to __RadDiagramShapes__, the position of the handle points of the connection will be calculated based on the connector positions. Both handle points will be added to the __RadDiagramConnection.ConnectionPoints__ collection. The following snapshot illustrates the default direction of the Bezier connection handles based on the position of the connector to which the connection is attached.
 			
 
-Illustration of a Bezier connection default handle points directions:![Rad Diagram Connections Bezier Def Handles](images/RadDiagram_Connections_BezierDefHandles.png)The offset between a Bezier connection handle point and its corresponding endpoint is controlled thorough the __BezierAutoOffset DiagramConstants__. Its default value is 30px, but you can change it to better fit your needs:
+Illustration of a Bezier connection default handle points directions:
+![Rad Diagram Connections Bezier Def Handles](images/RadDiagram_Connections_BezierDefHandles.png)
+The offset between a Bezier connection handle point and its corresponding endpoint is controlled thorough the __BezierAutoOffset DiagramConstants__. Its default value is 30px, but you can change it to better fit your needs:
 			
 
-	#### __C#__
+#### __C#__
     DiagramConstants.BezierAutoOffset = 40;			  
 			  
 
 
 
-	#### __VB.NET__
+#### __VB.NET__
     DiagramConstants.BezierAutoOffset = 40			  
 			  
 
 When attaching a Besizer connection to a __RadDiagramShape__ you need to consider if it is attached to a built-in connector or to a custom connector. If the connection is attached to a custom connector, then you will have to manually set the position of the Bezier handle points. You can change the position of the points after you access them from the __RadDiagramConnection.ConnectionPoints__ collection, but you will also have to set the __RadDiagramConnection.IsModified__ property to __True__ to apply the changes:
 			
 
-	#### __C#__
+#### __C#__
     this.xDiagram.Connections[0].ConnectionPoints[0] = new Point(100, 100);
     this.xDiagram.Connections[0].ConnectionPoints[1] = new Point(220, 200);
     this.xDiagram.Connections[0].IsModified = true;			  
@@ -268,7 +269,7 @@ When attaching a Besizer connection to a __RadDiagramShape__ you need to conside
 
 
 
-	#### __VB.NET__
+#### __VB.NET__
     Me.xDiagram.Connections(0).ConnectionPoints(0) = New Point(100, 100)
     Me.xDiagram.Connections(0).ConnectionPoints(1) = New Point(220, 200)
     Me.xDiagram.Connections(0).IsModified = True			  
@@ -277,13 +278,13 @@ When attaching a Besizer connection to a __RadDiagramShape__ you need to conside
 If you don't want to manually traverse the __ConnectionPoints__ collection and then set the __IsModified__ property, you can use the __RadDiagramConnection.SetBezierHandles(Point,Point)__ method. It facilitates the definition of custom coordinates for the two handle points of a Bezier connection:
 			
 
-	#### __C#__
+#### __C#__
     (this.xDiagram.Connections[0] as RadDiagramConnection).SetBezierHandles(new Point(100, 100), new Point(220, 200));	  
 			  
 
 
 
-	#### __VB.NET__
+#### __VB.NET__
     TryCast(Me.xDiagram.Connections(0), RadDiagramConnection).SetBezierHandles(New Point(100, 100), New Point(220, 200))
 			  
 
@@ -298,17 +299,18 @@ If you don't want to manually traverse the __ConnectionPoints__ collection and t
 
 * “bottom”
 
-* “up”the __Bezier Connection__ handle points will point at the direction indicated by the respective string.
-			  On the other hand, if you attach a __Bezier Connection__ to a custom connector which name doesn't indicate a direction, the handle points of the connection will match the start and end point of the connection.
+* “up”the __Bezier Connection__ handle points will point at the direction indicated by the respective string. On the other hand, if you attach a __Bezier Connection__ to a custom connector which name doesn't indicate a direction, the handle points of the connection will match the start and end point of the connection.
 			  
 
 * __Spline__ - this connection type represents a cardinal spline. The connection is specified by an array of points - the connection passes smoothly through each point in the array; there are no sharp corners and no abrupt changes in the tightness of the curve. The following illustration shows a set of points and a spline connection that passes through each point in the set.
 			
 
-Sample of a Spline connection:![Rad Diagram Connections Spline Connection](images/RadDiagram_Connections_SplineConnection.png)In order to set the array of points, you will have to populate the __RadDiagram.ConnectionPoints__ collection. You can do that manually in code-behind:
+Sample of a Spline connection:
+![Rad Diagram Connections Spline Connection](images/RadDiagram_Connections_SplineConnection.png)
+In order to set the array of points, you will have to populate the __RadDiagram.ConnectionPoints__ collection. You can do that manually in code-behind:
 			
 
-	#### __XAML__
+#### __XAML__
     <telerik:RadDiagram x:Name="xDiagram" >
         <telerik:RadDiagramShape x:Name="xShape1"
                                 Content="Shape1"
@@ -334,7 +336,7 @@ Sample of a Spline connection:![Rad Diagram Connections Spline Connection](image
 
 
 
-	#### __VB.NET__
+#### __VB.NET__
     Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(140, 20))
     Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(250, 150))
     Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(350, 50))	  			  
@@ -347,9 +349,10 @@ Sample of a Spline connection:![Rad Diagram Connections Spline Connection](image
 ## CapTypes
 * CapTypes enumeration members:
 
-__None__: ![Rad Diagram Features Cap Type None](images/RadDiagram_Features_CapType_None.png)
+__None__:
+![Rad Diagram Features Cap Type None](images/RadDiagram_Features_CapType_None.png)
 
-	 #### __XAML__
+ #### __XAML__
 		<telerik:RadDiagramConnection
             SourceCapType="None"
             TargetCapType="None"
@@ -361,112 +364,121 @@ __None__: ![Rad Diagram Features Cap Type None](images/RadDiagram_Features_CapTy
 
 __Arrow1__: ![Rad Diagram Features Cap Type Arrow 1](images/RadDiagram_Features_CapType_Arrow1.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow1"
-            TargetCapType="Arrow1"
-            StartPoint="10,30"
-            EndPoint="80,30" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow1"
+        TargetCapType="Arrow1"
+        StartPoint="10,30"
+        EndPoint="80,30" />
 
 
-__Arrow1Filled___ ![Rad Diagram Features Cap Type Arrow 1 Filled](images/RadDiagram_Features_CapType_Arrow1Filled.png)
+__Arrow1Filled___
+ ![Rad Diagram Features Cap Type Arrow 1 Filled](images/RadDiagram_Features_CapType_Arrow1Filled.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow1Filled"
-            TargetCapType="Arrow1Filled"
-            StartPoint="10,60"
-            EndPoint="80,60" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow1Filled"
+        TargetCapType="Arrow1Filled"
+        StartPoint="10,60"
+        EndPoint="80,60" />
 				
 
-__Arrow2__ ![Rad Diagram Features Cap Type Arrow 2](images/RadDiagram_Features_CapType_Arrow2.png)
+__Arrow2__ 
+![Rad Diagram Features Cap Type Arrow 2](images/RadDiagram_Features_CapType_Arrow2.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow2"
-            TargetCapType="Arrow2"
-            StartPoint="10,90"
-            EndPoint="80,90" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow2"
+        TargetCapType="Arrow2"
+        StartPoint="10,90"
+        EndPoint="80,90" />
 				
 
-__Arrow2Filled__ ![Rad Diagram Features Cap Type Arrow 2 Filled](images/RadDiagram_Features_CapType_Arrow2Filled.png)
+__Arrow2Filled__ 
+![Rad Diagram Features Cap Type Arrow 2 Filled](images/RadDiagram_Features_CapType_Arrow2Filled.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow2Filled"
-            TargetCapType="Arrow2Filled"
-            StartPoint="10,120"
-            EndPoint="80,120" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow2Filled"
+        TargetCapType="Arrow2Filled"
+        StartPoint="10,120"
+        EndPoint="80,120" />
 			  
 
-__Arrow3__ ![Rad Diagram Features Cap Type Arrow 3](images/RadDiagram_Features_CapType_Arrow3.png)
+__Arrow3__ 
+![Rad Diagram Features Cap Type Arrow 3](images/RadDiagram_Features_CapType_Arrow3.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow3"
-            TargetCapType="Arrow3"
-            StartPoint="10,150"
-            EndPoint="80,150" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow3"
+        TargetCapType="Arrow3"
+        StartPoint="10,150"
+        EndPoint="80,150" />
 			  
 
-__Arrow4__![Rad Diagram Features Cap Type Arrow 4](images/RadDiagram_Features_CapType_Arrow4.png)
+__Arrow4__
+![Rad Diagram Features Cap Type Arrow 4](images/RadDiagram_Features_CapType_Arrow4.png)
 
 #### __XAML__	
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow4"
-            TargetCapType="Arrow4"
-            StartPoint="10,180"
-            EndPoint="80,180" />
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow4"
+        TargetCapType="Arrow4"
+        StartPoint="10,180"
+        EndPoint="80,180" />
 				
 
-__Arrow4Filled__ ![Rad Diagram Features Cap Type Arrow 4 Filled](images/RadDiagram_Features_CapType_Arrow4Filled.png)
+__Arrow4Filled__ 
+![Rad Diagram Features Cap Type Arrow 4 Filled](images/RadDiagram_Features_CapType_Arrow4Filled.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow4Filled"
-            TargetCapType="Arrow4Filled"
-            StartPoint="10,210"
-            EndPoint="80,210" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow4Filled"
+        TargetCapType="Arrow4Filled"
+        StartPoint="10,210"
+        EndPoint="80,210" />
 			  
 
-__Arrow5__ ![Rad Diagram Features Cap Type Arrow 5](images/RadDiagram_Features_CapType_Arrow5.png)
+__Arrow5__ 
+![Rad Diagram Features Cap Type Arrow 5](images/RadDiagram_Features_CapType_Arrow5.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow5"
-            TargetCapType="Arrow5"
-            StartPoint="10,240"
-            EndPoint="80,240" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow5"
+        TargetCapType="Arrow5"
+        StartPoint="10,240"
+        EndPoint="80,240" />
 				
 
-__Arrow5Filled__ ![Rad Diagram Features Cap Type Arrow 5 Filled](images/RadDiagram_Features_CapType_Arrow5Filled.png)
+__Arrow5Filled__ 
+![Rad Diagram Features Cap Type Arrow 5 Filled](images/RadDiagram_Features_CapType_Arrow5Filled.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow5Filled"
-            TargetCapType="Arrow5Filled"
-            StartPoint="10,270"
-            EndPoint="80,270" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow5Filled"
+        TargetCapType="Arrow5Filled"
+        StartPoint="10,270"
+        EndPoint="80,270" />
 				
 
-__Arrow6__ ![Rad Diagram Features Cap Type Arrow 6](images/RadDiagram_Features_CapType_Arrow6.png)
+__Arrow6__ 
+![Rad Diagram Features Cap Type Arrow 6](images/RadDiagram_Features_CapType_Arrow6.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow6"
-            TargetCapType="Arrow6"
-            StartPoint="10,300"
-            EndPoint="80,300" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow6"
+        TargetCapType="Arrow6"
+        StartPoint="10,300"
+        EndPoint="80,300" />
 				
 
 __Arrow6Filled__ ![Rad Diagram Features Cap Type Arrow 6 Filled](images/RadDiagram_Features_CapType_Arrow6Filled.png)
 
-	#### __XAML__
-		<telerik:RadDiagramConnection
-            SourceCapType="Arrow6Filled"
-            TargetCapType="Arrow6Filled"
-            StartPoint="10,330"
-            EndPoint="80,330" />
+#### __XAML__
+    <telerik:RadDiagramConnection
+        SourceCapType="Arrow6Filled"
+        TargetCapType="Arrow6Filled"
+        StartPoint="10,330"
+        EndPoint="80,330" />
 				
 
 
@@ -481,32 +493,32 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 #### __XAML__
 
 {{region raddiagram_features_connection_0}}
-	    <Grid>
-	        <telerik:RadDiagram>
-	            <telerik:RadDiagramShape
-	                x:Name="ConditionShape"
-	                Width="80"
-	                Height="80"
-	                Content="condition"
-	                FontWeight="Bold"
-	                Geometry="{telerik:FlowChartShape ShapeType=DecisionShape}"
-	                Position="160,80" />
-	            <telerik:RadDiagramShape
-	                x:Name="StatementShape1"
-	                Width="100"
-	                Content="statement(s)"
-	                FontWeight="Bold"
-	                Position="60,280" />
-	            <telerik:RadDiagramConnection
-	                Content="if condition is false"
-	                FontWeight="Bold"
-	                Source="{Binding ElementName=ConditionShape}"
-	                SourceConnectorPosition="Bottom"
-	                StrokeThickness="2"
-	                Target="{Binding ElementName=StatementShape1}"
-	                TargetCapType="Arrow1Filled" />
-	        </telerik:RadDiagram>
-	    </Grid>
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape
+                x:Name="ConditionShape"
+                Width="80"
+                Height="80"
+                Content="condition"
+                FontWeight="Bold"
+                Geometry="{telerik:FlowChartShape ShapeType=DecisionShape}"
+                Position="160,80" />
+            <telerik:RadDiagramShape
+                x:Name="StatementShape1"
+                Width="100"
+                Content="statement(s)"
+                FontWeight="Bold"
+                Position="60,280" />
+            <telerik:RadDiagramConnection
+                Content="if condition is false"
+                FontWeight="Bold"
+                Source="{Binding ElementName=ConditionShape}"
+                SourceConnectorPosition="Bottom"
+                StrokeThickness="2"
+                Target="{Binding ElementName=StatementShape1}"
+                TargetCapType="Arrow1Filled" />
+        </telerik:RadDiagram>
+    </Grid>
 	{{endregion}}
 
 ![Rad Diagram Features Connection String Content](images/RadDiagram_Features_Connection_StringContent.png)
@@ -517,63 +529,62 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 #### __XAML__
 
 {{region raddiagram_features_connection_1}}
-	    <Grid>
-	        <telerik:RadDiagram>
-	            <telerik:RadDiagramShape x:Name="ConditionShape"
-	                                     Width="80"
-	                                     Height="80"
-	                                     Content="condition"
-	                                     FontWeight="Bold"
-	                                     Geometry="{telerik:FlowChartShape ShapeType=DecisionShape}"
-	                                     Position="160,80" />
-	            <telerik:RadDiagramShape x:Name="StatementShape1"
-	                                     Width="100"
-	                                     Content="statement(s)"
-	                                     FontWeight="Bold"
-	                                     Position="60,280" />
-	            <telerik:RadDiagramConnection FontWeight="Bold"
-	                                          Source="{Binding ElementName=ConditionShape}"
-	                                          SourceConnectorPosition="Bottom"
-	                                          StrokeThickness="2"
-	                                          Target="{Binding ElementName=StatementShape1}"
-	                                          TargetCapType="Arrow1Filled">
-	                <telerik:RadDiagramConnection.Content>
-	                    <Grid>
-	                        <Grid.RowDefinitions>
-	                            <RowDefinition />
-	                            <RowDefinition />
-	                            <RowDefinition />
-	                        </Grid.RowDefinitions>
-	                        <StackPanel Margin="3" Orientation="Horizontal">
-	                            <TextBlock Text="StrokeThickness: " />
-	                            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=StrokeThickness}" />
-	                        </StackPanel>
-	                        <StackPanel Grid.Row="1"
-	                                    Margin="3"
-	                                    Orientation="Horizontal">
-	                            <TextBlock Text="StartPoint: " />
-	                            <TextBlock Margin="0,0,4,0" Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=StartPoint}" />
-	                        </StackPanel>
-	                        <StackPanel Grid.Row="2"
-	                                    Margin="3"
-	                                    Orientation="Horizontal">
-	                            <TextBlock Text="EndPoint: " />
-	                            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=EndPoint}" />
-	                        </StackPanel>
-	                    </Grid>
-	                </telerik:RadDiagramConnection.Content>
-	            </telerik:RadDiagramConnection>
-	        </telerik:RadDiagram>
-	    </Grid>
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape x:Name="ConditionShape"
+                                     Width="80"
+                                     Height="80"
+                                     Content="condition"
+                                     FontWeight="Bold"
+                                     Geometry="{telerik:FlowChartShape ShapeType=DecisionShape}"
+                                     Position="160,80" />
+            <telerik:RadDiagramShape x:Name="StatementShape1"
+                                     Width="100"
+                                     Content="statement(s)"
+                                     FontWeight="Bold"
+                                     Position="60,280" />
+            <telerik:RadDiagramConnection FontWeight="Bold"
+                                          Source="{Binding ElementName=ConditionShape}"
+                                          SourceConnectorPosition="Bottom"
+                                          StrokeThickness="2"
+                                          Target="{Binding ElementName=StatementShape1}"
+                                          TargetCapType="Arrow1Filled">
+                <telerik:RadDiagramConnection.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <StackPanel Margin="3" Orientation="Horizontal">
+                            <TextBlock Text="StrokeThickness: " />
+                            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=StrokeThickness}" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="1"
+                                    Margin="3"
+                                    Orientation="Horizontal">
+                            <TextBlock Text="StartPoint: " />
+                            <TextBlock Margin="0,0,4,0" Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=StartPoint}" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="2"
+                                    Margin="3"
+                                    Orientation="Horizontal">
+                            <TextBlock Text="EndPoint: " />
+                            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadDiagramConnection}, Path=EndPoint}" />
+                        </StackPanel>
+                    </Grid>
+                </telerik:RadDiagramConnection.Content>
+            </telerik:RadDiagramConnection>
+        </telerik:RadDiagram>
+    </Grid>
 	{{endregion}}
 
 ![Rad Diagram Features Connection UIControls](images/RadDiagram_Features_Connection_UIControls.png)
 
-* Bind the __Content__ to a business property:
-			For the purpose of this tutorial, let's define a sample business class and set it as the __DataContext__ of the {% if site.site_name == 'Silverlight' %}UserControl{% endif %}{% if site.site_name == 'WPF' %}Window{% endif %}.
+* Bind the __Content__ to a business property: For the purpose of this tutorial, let's define a sample business class and set it as the __DataContext__ of the {% if site.site_name == 'Silverlight' %}UserControl{% endif %}{% if site.site_name == 'WPF' %}Window{% endif %}.
 			
 
-	#### __C#__
+#### __C#__
 	 public class DataItem : ViewModelBase
         {
             private string ipAddress;
@@ -593,7 +604,7 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 
 
 
-	#### __VB.NET__
+#### __VB.NET__
     Public Class DataItem
         Inherits ViewModelBase
         Private m_ipAddress As String
@@ -616,26 +627,26 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 #### __XAML__
 
 {{region raddiagram_features_connection_2}}
-	    <Grid>
-	        <telerik:RadDiagram>
-	            <telerik:RadDiagramShape x:Name="ConditionShape"
-	                                     Height="30"
-	                                     Content="Router"
-	                                     FontWeight="Bold"
-	                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-	                                     Position="80,80" />
-	            <telerik:RadDiagramShape x:Name="StatementShape1"
-	                                     Content="PC 1"
-	                                     FontWeight="Bold"
-	                                     Position="120,220" />
-	            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
-	                                          Content="{Binding IpAddress}"
-	                                          FontWeight="Bold"
-	                                          Source="{Binding ElementName=ConditionShape}"
-	                                          Target="{Binding ElementName=StatementShape1}"
-	                                          TargetCapType="Arrow1Filled" />
-	        </telerik:RadDiagram>
-	    </Grid>
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape x:Name="ConditionShape"
+                                     Height="30"
+                                     Content="Router"
+                                     FontWeight="Bold"
+                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                                     Position="80,80" />
+            <telerik:RadDiagramShape x:Name="StatementShape1"
+                                     Content="PC 1"
+                                     FontWeight="Bold"
+                                     Position="120,220" />
+            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
+                                          Content="{Binding IpAddress}"
+                                          FontWeight="Bold"
+                                          Source="{Binding ElementName=ConditionShape}"
+                                          Target="{Binding ElementName=StatementShape1}"
+                                          TargetCapType="Arrow1Filled" />
+        </telerik:RadDiagram>
+    </Grid>
 	{{endregion}}
 
 ![Rad Diagram Features Connection Binding](images/RadDiagram_Features_Connection_Binding.png)
@@ -646,35 +657,35 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 #### __XAML__
 
 {{region raddiagram_features_connection_3}}
-	    <Grid>
-	        <telerik:RadDiagram>
-	            <telerik:RadDiagramShape x:Name="ConditionShape"
-	                                     Height="30"
-	                                     Content="Router"
-	                                     FontWeight="Bold"
-	                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-	                                     Position="80,80" />
-	            <telerik:RadDiagramShape x:Name="StatementShape1"
-	                                     Content="PC 1"
-	                                     FontWeight="Bold"
-	                                     Position="120,220" />
-	            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
-	                                          Content="{Binding IpAddress}"
-	                                          FontWeight="Bold"
-	                                          Source="{Binding ElementName=ConditionShape}"
-	                                          Target="{Binding ElementName=StatementShape1}"
-	                                          TargetCapType="Arrow1Filled">
-	                <telerik:RadDiagramConnection.ContentTemplate>
-	                    <DataTemplate>
-	                        <StackPanel Margin="-60,5,0,0" Orientation="Horizontal">
-	                            <TextBlock Text="Interface: " />
-	                            <TextBlock Text="{Binding}" />
-	                        </StackPanel>
-	                    </DataTemplate>
-	                </telerik:RadDiagramConnection.ContentTemplate>
-	            </telerik:RadDiagramConnection>
-	        </telerik:RadDiagram>
-	    </Grid>
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape x:Name="ConditionShape"
+                                     Height="30"
+                                     Content="Router"
+                                     FontWeight="Bold"
+                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                                     Position="80,80" />
+            <telerik:RadDiagramShape x:Name="StatementShape1"
+                                     Content="PC 1"
+                                     FontWeight="Bold"
+                                     Position="120,220" />
+            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
+                                          Content="{Binding IpAddress}"
+                                          FontWeight="Bold"
+                                          Source="{Binding ElementName=ConditionShape}"
+                                          Target="{Binding ElementName=StatementShape1}"
+                                          TargetCapType="Arrow1Filled">
+                <telerik:RadDiagramConnection.ContentTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="-60,5,0,0" Orientation="Horizontal">
+                            <TextBlock Text="Interface: " />
+                            <TextBlock Text="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </telerik:RadDiagramConnection.ContentTemplate>
+            </telerik:RadDiagramConnection>
+        </telerik:RadDiagram>
+    </Grid>
 	{{endregion}}
 
 ![Rad Diagram Features Connection Content Template](images/RadDiagram_Features_Connection_ContentTemplate.png)
@@ -710,38 +721,38 @@ If the __RadDiagramConnection.Content__ property is bound to a business item, yo
 #### __XAML__
 
 {{region raddiagram_features_connection_4}}
-	    <Grid>
-	        <telerik:RadDiagram>
-	            <telerik:RadDiagramShape x:Name="ConditionShape"
-	                                     Height="30"
-	                                     Content="Router"
-	                                     FontWeight="Bold"
-	                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-	                                     Position="80,80" />
-	            <telerik:RadDiagramShape x:Name="StatementShape1"
-	                                     Width="100"
-	                                     Content="PC 1"
-	                                     FontWeight="Bold"
-	                                     Position="120,220" />
-	            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
-	                                          Content="{Binding}"
-	                                          FontWeight="Bold"
-	                                          Source="{Binding ElementName=ConditionShape}"
-	                                          Target="{Binding ElementName=StatementShape1}"
-	                                          TargetCapType="Arrow1Filled">
-	                <telerik:RadDiagramConnection.ContentTemplate>
-	                    <DataTemplate>
-	                        <TextBlock Text="{Binding IpAddress}" />
-	                    </DataTemplate>
-	                </telerik:RadDiagramConnection.ContentTemplate>
-	                <telerik:RadDiagramConnection.EditTemplate>
-	                    <DataTemplate>
-	                        <TextBox Text="{Binding IpAddress}" />
-	                    </DataTemplate>
-	                </telerik:RadDiagramConnection.EditTemplate>
-	            </telerik:RadDiagramConnection>
-	        </telerik:RadDiagram>
-	    </Grid>
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramShape x:Name="ConditionShape"
+                                     Height="30"
+                                     Content="Router"
+                                     FontWeight="Bold"
+                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
+                                     Position="80,80" />
+            <telerik:RadDiagramShape x:Name="StatementShape1"
+                                     Width="100"
+                                     Content="PC 1"
+                                     FontWeight="Bold"
+                                     Position="120,220" />
+            <telerik:RadDiagramConnection VerticalContentAlignment="Top"
+                                          Content="{Binding}"
+                                          FontWeight="Bold"
+                                          Source="{Binding ElementName=ConditionShape}"
+                                          Target="{Binding ElementName=StatementShape1}"
+                                          TargetCapType="Arrow1Filled">
+                <telerik:RadDiagramConnection.ContentTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding IpAddress}" />
+                    </DataTemplate>
+                </telerik:RadDiagramConnection.ContentTemplate>
+                <telerik:RadDiagramConnection.EditTemplate>
+                    <DataTemplate>
+                        <TextBox Text="{Binding IpAddress}" />
+                    </DataTemplate>
+                </telerik:RadDiagramConnection.EditTemplate>
+            </telerik:RadDiagramConnection>
+        </telerik:RadDiagram>
+    </Grid>
 	{{endregion}}
 
 ![Rad Diagram Features Connection Edit Template](images/RadDiagram_Features_Connection_EditTemplate.png)

@@ -45,10 +45,10 @@ __Example 1__ demonstrates how you can create an RgbColor and assign it as Fill 
 #### __[C#] Example 1: Create RgbColor__
 
 {{region radpdfprocessing-concepts-colors-and-color-spaces_0}}
-	            RgbColor magenta = new RgbColor(255, 0, 255);
-	            Path path = new Path();
-	            path.Fill = magenta;
-	{{endregion}}
+    RgbColor magenta = new RgbColor(255, 0, 255);
+    Path path = new Path();
+    path.Fill = magenta;
+{{endregion}}
 
 
 
@@ -68,12 +68,6 @@ Gradient provides a smooth transition between colors across an area which is pai
 * __EndPoint__: __Point__ object representing the ending two-dimensional coordinates of the gradient.
                 
 
-* __StartColor__: __SimpleColor__ object representing the starting color of the gradient.
-                
-
-* __EndColor__: __SimpleColor__ object representing the ending color of the gradient.
-                
-
 * __ExtendBefore__: Specifies whether to extend the gradient beyond the starting point.
                 
 
@@ -83,9 +77,7 @@ Gradient provides a smooth transition between colors across an area which is pai
 * __Background__: __SimpleColor__ object representing the background color.
                 
 
-* __GradientStops__: A collection of
-                  [GradientStop](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_colorspaces_gradientstop.html)
-                  objects representing the gradient stops.
+* __GradientStops__: A collection of [GradientStop](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_colorspaces_gradientstop.html) objects representing the gradient stops collection.
                 
 
 The __Gradient__ class is inherited by the following classes
@@ -97,10 +89,10 @@ The __Gradient__ class is inherited by the following classes
 * __RadialGradient__: Defines a blend between two circles, optionally extended beyond the boundary circles by continuing the boundary colors. The __RadialGradient__ class exposes the following properties:
                 
 
-* __StartRadius__: Decimal number determining the radius of the starting circle.
+ * __StartRadius__: Decimal number determining the radius of the starting circle.
                     
 
-* __EndRadius__: Decimal number determining the radius of the ending circle.
+ * __EndRadius__: Decimal number determining the radius of the ending circle.
                     
 
 __Example 2__ shows hot to create a LinearGradient and assing it as the FillColor of a [FixedContentEditor]({%slug radpdfprocessing-editing-fixedcontenteditor%}).
@@ -109,22 +101,23 @@ __Example 2__ shows hot to create a LinearGradient and assing it as the FillColo
 #### __[C#] Example 2: Create LinearGradient__
 
 {{region radpdfprocessing-concepts-colors-and-color-spaces_1}}
-	            FixedContentEditor containerEditor = new FixedContentEditor(container);
-	
-	            LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
-	            linearGradient.StartColor = new RgbColor(0, 207, 0);
-	            linearGradient.EndColor = new RgbColor(0, 102, 204);
-	
-	            containerEditor.GraphicProperties.FillColor = linearGradient;
-	            containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));
-	{{endregion}}
+    FixedContentEditor containerEditor = new FixedContentEditor(container);
+
+    LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
+    linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
+    linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 0));
+
+    containerEditor.GraphicProperties.FillColor = linearGradient;
+    containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));
+{{endregion}}
 
 
 
 The gradient created in __Example 2__ is shown in __Figure 1__.
             
 
-Figure 1: LinearGradient![Rad Pdf Processing Concepts Colors And Color Spaces 01](images/RadPdfProcessing_Concepts_Colors_And_Color_Spaces_01.png)
+Figure 1: LinearGradient
+![Rad Pdf Processing Concepts Colors And Color Spaces 01](images/RadPdfProcessing_Concepts_Colors_And_Color_Spaces_01.png)
 
 ### Tiling Pattern
 
@@ -149,18 +142,16 @@ A tiling pattern consists of a small graphical figure called a pattern cell. Pai
 * __Position__: The position of the tiling pattern.
                 
 
-* __TilingType__: Property of type
-                  [TilingType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_fixed_model_colorspaces_tilingtype.html)
-                  that represents the tiling type.The possible values are:
+* __TilingType__: Property of type [TilingType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_fixed_model_colorspaces_tilingtype.html) that represents the tiling type.The possible values are:
                 
 
-* __AllowSmallDistortion__: Pattern cells are spaces consistently. To achieve this, the pattern cell might be slightly distorted by making small adjustments to the __HorizontalSpacing__ and __VerticalSpacing__.
+ * __AllowSmallDistortion__: Pattern cells are spaces consistently. To achieve this, the pattern cell might be slightly distorted by making small adjustments to the __HorizontalSpacing__ and __VerticalSpacing__.
                     
 
-* __NoDistortion__: Pattern cells are not distorted, but the spacing between pattern cells may vary. This achieves the spacing requested by __HorizontalSpacing__ and __VerticalSpacing__ on average, but not necessarily for each individual pattern cell.
+ * __NoDistortion__: Pattern cells are not distorted, but the spacing between pattern cells may vary. This achieves the spacing requested by __HorizontalSpacing__ and __VerticalSpacing__ on average, but not necessarily for each individual pattern cell.
                     
 
-* __FastTiling__: Pattern cells are spaced consistently as in __AllowSmallDistortion__ type but with additional distortion permitted to enable a more efficient painting.
+ * __FastTiling__: Pattern cells are spaced consistently as in __AllowSmallDistortion__ type but with additional distortion permitted to enable a more efficient painting.
                     
 
 The __TilingBase__ class is inherited from the following classes:
@@ -178,24 +169,25 @@ Since the __TilingBase__ class implements the __IContentRootElement__ interface 
 #### __[C#] Example 2: Create Tiling__
 
 {{region radpdfprocessing-concepts-colors-and-color-spaces_2}}
-	            FixedContentEditor containerEditor = new FixedContentEditor(container);
-	
-	            Tiling tiling = new Tiling(new Rect(0, 0, 10, 10));
-	            FixedContentEditor tilingEditor = new FixedContentEditor(tiling);
-	            tilingEditor.GraphicProperties.IsStroked = false;
-	            tilingEditor.GraphicProperties.FillColor = new RgbColor(128, 28, 43);
-	            tilingEditor.DrawRectangle(new Rect(2, 2, 5, 7));
-	
-	            containerEditor.GraphicProperties.FillColor = tiling;
-	            containerEditor.DrawCircle(new Point(30, 30), 20);
-	{{endregion}}
+    FixedContentEditor containerEditor = new FixedContentEditor(container);
+
+    Tiling tiling = new Tiling(new Rect(0, 0, 10, 10));
+    FixedContentEditor tilingEditor = new FixedContentEditor(tiling);
+    tilingEditor.GraphicProperties.IsStroked = false;
+    tilingEditor.GraphicProperties.FillColor = new RgbColor(128, 28, 43);
+    tilingEditor.DrawRectangle(new Rect(2, 2, 5, 7));
+
+    containerEditor.GraphicProperties.FillColor = tiling;
+    containerEditor.DrawCircle(new Point(30, 30), 20);
+{{endregion}}
 
 
 
 The tiling created in __Example 3__ is shown in __Figure 2__.
             
 
-Figure 2: Tiling![Rad Pdf Processing Concepts Colors And Color Spaces 02](images/RadPdfProcessing_Concepts_Colors_And_Color_Spaces_02.png)
+Figure 2: Tiling
+![Rad Pdf Processing Concepts Colors And Color Spaces 02](images/RadPdfProcessing_Concepts_Colors_And_Color_Spaces_02.png)
 
 # See Also
 

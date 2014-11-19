@@ -23,7 +23,4 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Pdf viewer integration__ - This project demonstrates how to integrate RadPdfProcessing with RadPdfViewer
             
 
->You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-          
-
-# See Also
+>You can also check the [SDK Samples Browser](%slug sdk-samples-browser%) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

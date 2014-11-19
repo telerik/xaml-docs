@@ -5,7 +5,7 @@ description: Path
 slug: radpdfprocessing-model-path
 tags: path
 published: True
-position: 4
+position: 6
 ---
 
 # Path
@@ -30,10 +30,10 @@ __Example 1__ shows how you can create a Path, assign a predefined Geometry to i
 #### __[C#] Example 1: Create Path and add it to container.__
 
 {{region radpdfprocessing-model-path_0}}
-	            Path path = new Path();
-	            path.Geometry = geometry;
-	            container.Content.Add(path); 
-	{{endregion}}
+    Path path = new Path();
+    path.Geometry = geometry;
+    container.Content.Add(path); 
+{{endregion}}
 
 
 
@@ -43,9 +43,9 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 #### __[C#] Example 2: Add Path to container.__
 
 {{region radpdfprocessing-model-path_1}}
-	            Path path = container.Content.AddPath();
-	            path.Geometry = geometry;
-	{{endregion}}
+    Path path = container.Content.AddPath();
+    path.Geometry = geometry;
+{{endregion}}
 
 
 
@@ -75,25 +75,25 @@ You can modify a __Path__ element using the properties the class exposes. The pr
 * __StrokeLineCap__: Specifies the shape which is used at the ends of open paths when they are stroked.
             
 
-* __Flat__: Flat line cap.
+ * __Flat__: Flat line cap.
                 
 
-* __Round__: Round line cap.
+ * __Round__: Round line cap.
                 
 
-* __Square__: Square line cap.
+ * __Square__: Square line cap.
                 
 
 * __StrokeLineJoin__: Specifies the shape to be used at the corners of paths that are stroked. Join styles are significant only at the points where consecutive segments of a path connect at an angle.
             
 
-* __Bevel__: Produces a diagonal corner.
+ * __Bevel__: Produces a diagonal corner.
                 
 
-* __Miter__: Produces a sharp corner. If the segments meet at too sharp angle, a bevel join is used instead.
+ * __Miter__: Produces a sharp corner. If the segments meet at too sharp angle, a bevel join is used instead.
                 
 
-* __Bevel__: Produces a smooth, circular arc between the lines.
+ * __Bevel__: Produces a smooth, circular arc between the lines.
                 
 
 * __StrokeDashArray__: The pattern of dashes and gaps used to stroke paths.

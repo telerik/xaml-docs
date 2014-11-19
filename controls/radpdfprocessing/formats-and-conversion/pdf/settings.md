@@ -5,7 +5,7 @@ description: Settings
 slug: radpdfprocessing-formats-and-conversion-pdf-settings
 tags: settings
 published: True
-position: 2
+position: 3
 ---
 
 # Settings
@@ -30,15 +30,15 @@ __Example 1__ shows how you can create a __PdfImportSettings__ object and assign
 #### __[C#] Example 1: Import Settings__
 
 {{region radpdfprocessing-formats-and-conversion-pdf-settings_0}}
-	            PdfFormatProvider provider = new PdfFormatProvider();
-	            PdfImportSettings settings = new PdfImportSettings();
-	            settings.UserPasswordNeeded += (s, a) =>
-	            {
-	                a.Password = "D0cum3ntP4ssw0rd";
-	            };
-	
-	            provider.ImportSettings = settings;
-	{{endregion}}
+    PdfFormatProvider provider = new PdfFormatProvider();
+    PdfImportSettings settings = new PdfImportSettings();
+    settings.UserPasswordNeeded += (s, a) =>
+    {
+        a.Password = "D0cum3ntP4ssw0rd";
+    };
+
+    provider.ImportSettings = settings;
+{{endregion}}
 
 
 
@@ -68,13 +68,13 @@ __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign 
 #### __[C#] Example 2: Export Settings__
 
 {{region radpdfprocessing-formats-and-conversion-pdf-settings_1}}
-	            PdfFormatProvider provider = new PdfFormatProvider();
-	            PdfExportSettings settings = new PdfExportSettings();
-	            settings.IsEncrypted = true;
-	            settings.UserPassword = "D0cum3ntP4ssw0rd";
-	            settings.ImageQuality = ImageQuality.High;
-	
-	            provider.ExportSettings = settings;
-	{{endregion}}
+    PdfFormatProvider provider = new PdfFormatProvider();
+    PdfExportSettings settings = new PdfExportSettings();
+    settings.IsEncrypted = true;
+    settings.UserPassword = "D0cum3ntP4ssw0rd";
+    settings.ImageQuality = ImageQuality.High;
+
+    provider.ExportSettings = settings;
+{{endregion}}
 
 

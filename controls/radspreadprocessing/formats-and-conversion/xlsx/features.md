@@ -5,7 +5,7 @@ description: Features
 slug: radspreadprocessing-formats-and-conversion-xlsx-features
 tags: features
 published: True
-position: 0
+position: 1
 ---
 
 # Features
@@ -16,606 +16,1084 @@ Below you can find list with all features that are supported by XlsxFormatProvid
       
 
 ## 
-<table><th><tr><td>
+<table>
+		<tr>
+			<th>
 
 Feature
-                </td><td>
+
+			</th>
+			<th>
 
 Supported
-                </td><td>
+
+			</th>
+			<th>
 
 Comment
-                </td></tr></th><tr><td>
 
-<b>
-                  Text Formatting
-                </b></td><td></td><td></td></tr><tr><td>
+			</th>
+		</tr>
+	<tr>
+		<td>
+
+			<b>
+
+Text Formatting
+
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Font Family
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Font Size
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Font Color
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Bold
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Italic
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Underline
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Text Horizontal Alignment
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Text Vertical Alignment
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Text Wrapping
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Indent
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
 
-<b>
-                  Cells
-                </b></td><td></td><td></td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
+
+			<b>
+
+Cells
+
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Merge Cells
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Number Format
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Borders
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Pattern Fills
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Gradient Fills
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Cell Locked State
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
 
-<b>
-                  Cell Styles
-                </b></td><td></td><td></td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
+
+			<b>
+
+Cell Styles
+
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Style Name
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Include Number Format Option
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Include Alignment Option
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Include Font Properties Option
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Include Borders Option
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Include Fills Option
-              </td><td>
+
+		</td>
+		<td>
 
 Yes
-              </td><td>
 
-</td></tr><tr><td>
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Include Protection Option
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Themes
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Document Theme
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Color Scheme
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Font Scheme
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Hyperlinks
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Web page
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Place in document
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 E-mail address
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Workbook protection
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Structure protection option
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Windows protection option
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Worksheet protection
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Allow Changes In Cells/Rows/Columns Format Option
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Allow Inserting Rows/Columns Option
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Allow Deleting Rows/Columns Option
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Allow Sort Option
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Allow Filter Option
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Formulas
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Formula Values
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Names
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Defined Names
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Shapes
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Floating Images
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Position
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Size
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Rotation
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Page Setup
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Page Size
-              </td><td>
+		</td>
+		<td>
 
 Partial
-              </td><td>
+		</td>
+		<td>
 
 No support for custom page size
-              </td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Page Margins
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Page Orientation
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Page Breaks
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Print Area
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Page Order
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Scale Factor
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Show/Hide Row and Column Headings
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Show/Hide Gridlines
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Center Horizontally/Vertically
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   View State
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Scale Factor
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Selection State
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Scroll Position
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Freeze Panes
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Sorting
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Values Sort Condition
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Cell Color Sort Condition
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Font Color Sort Condition
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Custom Sort Condition
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Sort Order and Custom Lists
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
-<b>
+			<b>
                   Filtering
-                </b></td><td></td><td></td></tr><tr><td>
+			</b>
+		</td>
+		<td/>
+		<td/>
+	</tr>
+	<tr>
+		<td>
 
 Selected Values Filter
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Custom Filter
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Dynamic Filter
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Top10 Filter
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Font Color Filter
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr><tr><td>
+		</td>
+	</tr>
+	<tr>
+		<td>
 
 Cell Color Filter
-              </td><td>
+		</td>
+		<td>
 
 Yes
-              </td><td>
+		</td>
+		<td>
 
-</td></tr></table>
+		</td>
+	</tr>
+</table>

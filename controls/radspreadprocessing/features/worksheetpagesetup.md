@@ -29,8 +29,7 @@ This article aims to present the WorksheetPageSetup API and demonstrate how to u
 Through the Worksheet's __WorksheetPageSetup__ property you may change the following worksheet's page setup properties:
         
 
-* __PaperType__: Specify paper type using the
-              [PaperType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_model_papertypes.html)
+* __PaperType__: Specify paper type using the [PaperType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_model_papertypes.html)
               enumeration.
             
 
@@ -64,7 +63,8 @@ Through the Worksheet's __WorksheetPageSetup__ property you may change the follo
 __Figures 1 and 2__ show an example of Worksheet's page setup usage. In the example we have spreadsheet data that has bigger width than height. Previewing the print pages with the default settings we can see that it doesn't fit well as the print content is split in 2 pages.
         
 
-Figure 1: Initial Print Preview of Data![Rad Spread Processing Features Worksheet Page Setup 01](images/RadSpreadProcessing_Features_WorksheetPageSetup_01.png)
+Figure 1: Initial Print Preview of Data
+![Rad Spread Processing Features Worksheet Page Setup 01](images/RadSpreadProcessing_Features_WorksheetPageSetup_01.png)
 
 In order to fit the print content better we use the Worksheet's page setup and change page orientation as well as the scale factor and some additional print settings. __Example 1__ shows the code that needs to be executed.
         
@@ -72,20 +72,21 @@ In order to fit the print content better we use the Worksheet's page setup and c
 #### __[C#] Example 1: Use WorksheetPageSetup__
 
 {{region radspreadprocessing-features-worksheetpagesetup_0}}
-	            WorksheetPageSetup pageSetup = workbook.ActiveWorksheet.WorksheetPageSetup;
-	
-	            pageSetup.PaperType = PaperTypes.A4;
-	            pageSetup.PageOrientation = PageOrientation.Landscape;
-	            pageSetup.ScaleFactor = new Size(0.9, 0.9);
-	            pageSetup.CenterHorizontally = true;
-	{{endregion}}
+    WorksheetPageSetup pageSetup = workbook.ActiveWorksheet.WorksheetPageSetup;
+
+    pageSetup.PaperType = PaperTypes.A4;
+    pageSetup.PageOrientation = PageOrientation.Landscape;
+    pageSetup.ScaleFactor = new Size(0.9, 0.9);
+    pageSetup.CenterHorizontally = true;
+{{endregion}}
 
 
 
 As a result we managed to fit the data in to a single page with size A4 as shown in __Figure 2__.
         
 
-Figure 2: Result After Page Setup![Rad Spread Processing Features Worksheet Page Setup 02](images/RadSpreadProcessing_Features_WorksheetPageSetup_02.png)
+Figure 2: Result After Page Setup
+![Rad Spread Processing Features Worksheet Page Setup 02](images/RadSpreadProcessing_Features_WorksheetPageSetup_02.png)
 
 ## Using Print Area
 
@@ -113,18 +114,19 @@ The example shown in __Figures 3__ demonstrates how to use Worksheet's print are
 #### __[C#] Example 2: Set PrintArea__
 
 {{region radspreadprocessing-features-worksheetpagesetup_1}}
-	            PrintArea printArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea;
-	
-	            printArea.SetPrintArea(new CellRange[]
-	            {
-	                new CellRange(0, 0, 4, 8),
-	                new CellRange(1, 1, 25, 3)
-	            });
-	{{endregion}}
+    PrintArea printArea = workbook.ActiveWorksheet.WorksheetPageSetup.PrintArea;
+
+    printArea.SetPrintArea(new CellRange[]
+    {
+        new CellRange(0, 0, 4, 8),
+        new CellRange(1, 1, 25, 3)
+    });
+{{endregion}}
 
 
 
-Figure 3: Resulting PrintArea Preview![Rad Spread Processing Features Worksheet Page Setup 03](images/RadSpreadProcessing_Features_WorksheetPageSetup_03.png)
+Figure 3: Resulting PrintArea Preview
+![Rad Spread Processing Features Worksheet Page Setup 03](images/RadSpreadProcessing_Features_WorksheetPageSetup_03.png)
 
 ## Using Page Breaks
 
@@ -161,7 +163,8 @@ Through WorksheetPageSetup's __PageBreaks__ property you can manipulate the page
 __Figure 4__ shows a preview of large amount of data.
         
 
-Figure 4: Initial Preview of Data![Rad Spread Processing Features Worksheet Page Setup 04](images/RadSpreadProcessing_Features_WorksheetPageSetup_04.png)
+Figure 4: Initial Preview of Data
+![Rad Spread Processing Features Worksheet Page Setup 04](images/RadSpreadProcessing_Features_WorksheetPageSetup_04.png)
 
 In order to separate semantically-correct the print data onto several pages we are going to place horizontal page breaks at the place where we need the splitting to happen. __Example 3__ shows exactly how this can be achieved:
         
@@ -169,20 +172,21 @@ In order to separate semantically-correct the print data onto several pages we a
 #### __[C#] Example 3: Insert PageBreaks__
 
 {{region radspreadprocessing-features-worksheetpagesetup_2}}
-	            PageBreaks pageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks;
-	
-	            pageBreaks.TryInsertHorizontalPageBreak(5, 0);
-	            pageBreaks.TryInsertHorizontalPageBreak(8, 0);
-	            pageBreaks.TryInsertHorizontalPageBreak(11, 0);
-	            pageBreaks.TryInsertHorizontalPageBreak(14, 0);
-	            pageBreaks.TryInsertHorizontalPageBreak(17, 0);
-	            pageBreaks.TryInsertHorizontalPageBreak(20, 0);
-	            pageBreaks.TryInsertHorizontalPageBreak(23, 0);
-	{{endregion}}
+    PageBreaks pageBreaks = workbook.ActiveWorksheet.WorksheetPageSetup.PageBreaks;
+
+    pageBreaks.TryInsertHorizontalPageBreak(5, 0);
+    pageBreaks.TryInsertHorizontalPageBreak(8, 0);
+    pageBreaks.TryInsertHorizontalPageBreak(11, 0);
+    pageBreaks.TryInsertHorizontalPageBreak(14, 0);
+    pageBreaks.TryInsertHorizontalPageBreak(17, 0);
+    pageBreaks.TryInsertHorizontalPageBreak(20, 0);
+    pageBreaks.TryInsertHorizontalPageBreak(23, 0);
+{{endregion}}
 
 
 
 As a result from inserting these horizontal page breaks we have eight pages to print. The first one is shown in __Figure 5__.
         
 
-Figure 5: Result of PageBreaks![Rad Spread Processing Features Worksheet Page Setup 05](images/RadSpreadProcessing_Features_WorksheetPageSetup_05.png)
+Figure 5: Result of PageBreaks
+![Rad Spread Processing Features Worksheet Page Setup 05](images/RadSpreadProcessing_Features_WorksheetPageSetup_05.png)

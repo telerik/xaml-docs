@@ -5,7 +5,7 @@ description: Settings
 slug: radspreadprocessing-formats-and-conversion-csv-settings
 tags: settings
 published: True
-position: 1
+position: 2
 ---
 
 # Settings
@@ -38,11 +38,11 @@ __Example 1__ shows how to create and specify particular setting to a CsvFormatP
 #### __[C#] Example 1: Use CsvSettings__
 
 {{region radspreadprocessing-formats-and-conversion-csv-settings_0}}
-	                CsvFormatProvider provider = new CsvFormatProvider();
-	                provider.Settings.Delimiter = ';';
-	                provider.Settings.Quote = '^';
-	                provider.Settings.HasHeaderRow = true;
-	                provider.Settings.Encoding = new ASCIIEncoding(); 
-	{{endregion}}
+    CsvFormatProvider provider = new CsvFormatProvider();
+    provider.Settings.Delimiter = ';';
+    provider.Settings.Quote = '^';
+    provider.Settings.HasHeaderRow = true;
+    provider.Settings.Encoding = new ASCIIEncoding(); 
+{{endregion}}
 
 

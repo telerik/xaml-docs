@@ -53,11 +53,11 @@ __Example 1__ sets the Value of cell A1 to "Total":
 #### __[C#] Example 1: Set string value__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_16}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            worksheet.Cells[0, 0].SetValue("Total");
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    worksheet.Cells[0, 0].SetValue("Total");
+{{endregion}}
 
 
 
@@ -70,12 +70,12 @@ __Example 2__ creates a NumberCellValue with value 3.14 and assigns it to cell A
 #### __[C#] Example 2: Create NumberCellValue__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_5}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            ICellValue value = CellValueFactory.Create(3.14);
-	            worksheet.Cells[0, 0].SetValue(value);
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    ICellValue value = CellValueFactory.Create(3.14);
+    worksheet.Cells[0, 0].SetValue(value);
+{{endregion}}
 
 
 
@@ -88,9 +88,9 @@ __Example 3__ retrieves the value created in Example 2.
 #### __[C#] Example 3: Retrieve cell value__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_17}}
-	            RangePropertyValue<ICellValue> rangeValue = worksheet.Cells[0, 0].GetValue();
-	            ICellValue value = rangeValue.Value;
-	{{endregion}}
+    RangePropertyValue<ICellValue> rangeValue = worksheet.Cells[0, 0].GetValue();
+    ICellValue value = rangeValue.Value;
+{{endregion}}
 
 
 
@@ -100,8 +100,7 @@ Note that the GetValue() method does not return an ICellValue directly, but it p
 * __IsIndeterminate__: The Boolean property indicates whether the Value property is consistent among all cells in the specified CellSelection. If all cells have one and the same Value, __IsIndeterminate__ is set to false. However, if the Value property varies throughout the cells in the CellSelection, the IsIndetermine property is set to true and the __Value__ property of the __RangePropertyValue<ICellValue>__ instance is set to its default value – __EmptyCellValue__.
             
 
-* __Value__: If the __IsIndeterminate__ property is set to false, __Value__ holds the ICellValue of the whole CellSelection region. If the __IsIndeterminate__ property is set to true, then the cells in the CellSelection region contain
-              different values and the Value property is set to its default – __EmptyCellValue__.
+* __Value__: If the __IsIndeterminate__ property is set to false, __Value__ holds the ICellValue of the whole CellSelection region. If the __IsIndeterminate__ property is set to true, then the cells in the CellSelection region contain different values and the Value property is set to its default – __EmptyCellValue__.
             
 
 ## Empty Cell Value
@@ -118,10 +117,10 @@ __Example 4__ clears the value of cell A1:
 #### __[C#] Example 4: Clear value__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_1}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].ClearValue();
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].ClearValue();
+{{endregion}}
 
 
 
@@ -136,11 +135,11 @@ __Example 5__ sets the values of cells A1 and B1 to true and false BooleanCellVa
 #### __[C#] Example 5: Set boolean value__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_2}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].SetValue(true);
-	            worksheet.Cells[0, 1].SetValue(false);
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].SetValue(true);
+    worksheet.Cells[0, 1].SetValue(false);
+{{endregion}}
 
 
 
@@ -153,13 +152,13 @@ __Example 6__ illustrates how to create a BooleanCellValue using the CellValueFa
 #### __[C#] Example 6: Create a BooleanCellValue using CellValueFactory__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_3}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            ICellValue booleanCellValueTrue = CellValueFactory.Create(true);
-	            ICellValue booleanCellValueFalse = CellValueFactory.Create(false);
-	            worksheet.Cells[0, 0].SetValue(booleanCellValueTrue);
-	            worksheet.Cells[0, 1].SetValue(booleanCellValueFalse);
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    ICellValue booleanCellValueTrue = CellValueFactory.Create(true);
+    ICellValue booleanCellValueFalse = CellValueFactory.Create(false);
+    worksheet.Cells[0, 0].SetValue(booleanCellValueTrue);
+    worksheet.Cells[0, 1].SetValue(booleanCellValueFalse);
+{{endregion}}
 
 
 
@@ -177,10 +176,10 @@ __Example 7__ shows how to set the value of cell A1 to 1.23.
 #### __[C#] Example 7: Set number cell value__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_4}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].SetValue("1.23");
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].SetValue("1.23");
+{{endregion}}
 
 
 
@@ -193,10 +192,10 @@ __Example 8__ sets the value of cell A1 to 6 October 1987 (in culture "en-US"). 
 #### __[C#] Example 8: Set date as number cell value__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_8}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].SetValue("10/06/1987");
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].SetValue("10/06/1987");
+{{endregion}}
 
 
 
@@ -211,8 +210,7 @@ Applied format:   m/d/yyyy
 The __FormulaCellValue__ contains a value of type __RadExpression__, which represents an arithmetic expression, built-up by constants, operators, cell references and functions. The CellValueType of FormulaCellValues is Formula and their RawValue should start with an equal sign (=).
         
 
-Again, there are a couple of approaches to set a FormulaCellValue to a cell: invoking the __Setvalue()__ method with a string and passing to the SetValue() method an ICellValue instance that is retrieved through the __Create()__ method of the __CellValueFactory__ class. Note, however, that both methods produce a FormulaCellValue only if the current CellValueFormat is not Text. If the format of the cell is Text, the
-          SetValue() and Create() methods produce a TextCellValue. That said, if you would like to use present formula values as strings, you can set the CellValueFormat property of the specified cell before you input the values.
+Again, there are a couple of approaches to set a FormulaCellValue to a cell: invoking the __Setvalue()__ method with a string and passing to the SetValue() method an ICellValue instance that is retrieved through the __Create()__ method of the __CellValueFactory__ class. Note, however, that both methods produce a FormulaCellValue only if the current CellValueFormat is not Text. If the format of the cell is Text, the SetValue() and Create() methods produce a TextCellValue. That said, if you would like to use present formula values as strings, you can set the CellValueFormat property of the specified cell before you input the values.
         
 
 You can set a FormulaCellValue through the SetValue() method by passing a string that starts with an equal sign (=).
@@ -224,10 +222,10 @@ __Example 9__ shows how you can create a formula that refers to another cell.
 #### __[C#] Example 9: Create formula referring to another cell__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_13}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].SetValue("=A2");
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].SetValue("=A2");
+{{endregion}}
 
 
 
@@ -243,10 +241,10 @@ __Example 10__ illustrates the use of the SUM built-in function.
 #### __[C#] Example 10: Use built-in function__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_14}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].SetValue("=SUM(A2, 3)");
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].SetValue("=SUM(A2, 3)");
+{{endregion}}
 
 
 
@@ -259,15 +257,15 @@ __Example 11__ creates a FormulaCellValue using the CellValueFactory class.
 #### __[C#] Example 11: Create FormulaCellValue__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_18}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellIndex cellIndex = new CellIndex(0, 0);
-	
-	            ICellValue cellValue;
-	            CellValueFormat newFormatValue;
-	            CellValueFactory.Create("=A2 + B2", worksheet, cellIndex, CellValueFormat.GeneralFormat, out cellValue, out newFormatValue);
-	            worksheet.Cells[cellIndex].SetValue(cellValue);
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellIndex cellIndex = new CellIndex(0, 0);
+
+    ICellValue cellValue;
+    CellValueFormat newFormatValue;
+    CellValueFactory.Create("=A2 + B2", worksheet, cellIndex, CellValueFormat.GeneralFormat, out cellValue, out newFormatValue);
+    worksheet.Cells[cellIndex].SetValue(cellValue);
+{{endregion}}
 
 
 
@@ -285,10 +283,10 @@ __Example 12__ sets the value of cell A1 to the string "some test":
 #### __[C#] Example 12: Set TextCellValue__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_19}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].SetValue("some text");
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].SetValue("some text");
+{{endregion}}
 
 
 
@@ -301,11 +299,11 @@ __Example 13__ enters the string "=1+2" into a cell, however, because of the app
 #### __[C#] Example 13: Explicitly apply tect value type__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_20}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].SetFormat(new CellValueFormat("@"));
-	            worksheet.Cells[0, 0].SetValue("=1+2");
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].SetFormat(new CellValueFormat("@"));
+    worksheet.Cells[0, 0].SetValue("=1+2");
+{{endregion}}
 
 
 
@@ -318,15 +316,15 @@ __Example 14__ enters the string "=1+2" into a cell and applies cell value forma
 #### __[C#] Example 14: Creates TextCellValue__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_21}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellIndex cellIndex = new CellIndex(0, 0);
-	
-	            ICellValue cellValue;
-	            CellValueFormat newFormatValue;
-	            CellValueFactory.Create("=1 + 2", worksheet, cellIndex, new CellValueFormat("@"), out cellValue, out newFormatValue);
-	            worksheet.Cells[cellIndex].SetValue(cellValue);
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellIndex cellIndex = new CellIndex(0, 0);
+
+    ICellValue cellValue;
+    CellValueFormat newFormatValue;
+    CellValueFactory.Create("=1 + 2", worksheet, cellIndex, new CellValueFormat("@"), out cellValue, out newFormatValue);
+    worksheet.Cells[cellIndex].SetValue(cellValue);
+{{endregion}}
 
 
 

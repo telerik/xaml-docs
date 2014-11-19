@@ -5,7 +5,7 @@ description: Settings
 slug: radspreadprocessing-formats-and-conversion-txt-settings
 tags: settings
 published: True
-position: 1
+position: 2
 ---
 
 # Settings
@@ -35,10 +35,10 @@ __Example 1__ shows how to create and specify particular setting to a TxtFormatP
 #### __[C#] Example 1: Use TxtSettings__
 
 {{region radspreadprocessing-formats-and-conversion-Txt-settings_0}}
-	                TxtFormatProvider provider = new TxtFormatProvider();
-	                provider.Settings.Delimiter = ';';
-	                provider.Settings.Quote = '^';
-	                provider.Settings.HasHeaderRow = true;
-	{{endregion}}
+    TxtFormatProvider provider = new TxtFormatProvider();
+    provider.Settings.Delimiter = ';';
+    provider.Settings.Quote = '^';
+    provider.Settings.HasHeaderRow = true;
+{{endregion}}
 
 

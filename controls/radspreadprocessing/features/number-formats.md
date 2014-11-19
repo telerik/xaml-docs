@@ -58,12 +58,14 @@ The document model exposes the following categories of predefined formats:
 As previously explained, the number format does not change the value of the cell, only its appearance. In __Figure 1__ the value of the cell is set to a double number with a lot of digits after the decimal separator. When entered the default format here is __General__.
         
 
-Figure 1: General format![Rad Spread Processing Features Number Formatting 01](images/RadSpreadProcessing_Features_Number_Formatting_01.png)
+Figure 1: General format
+![Rad Spread Processing Features Number Formatting 01](images/RadSpreadProcessing_Features_Number_Formatting_01.png)
 
 If you need to specify the amount of digits after the decimal separator, you can take advantage of __Number__ formatting. For example, applying a number format that uses a thousand separator and limits the decimal places produces the following result:
         
 
-Figure 2: Number format![Rad Spread Processing Features Number Formatting 02](images/RadSpreadProcessing_Features_Number_Formatting_02.png)
+Figure 2: Number format
+![Rad Spread Processing Features Number Formatting 02](images/RadSpreadProcessing_Features_Number_Formatting_02.png)
 
 The format string applied in __Figure 1__ is __#,##0.00__.
         
@@ -71,13 +73,14 @@ The format string applied in __Figure 1__ is __#,##0.00__.
 __Number__ formatting is not restricted to number values. The following example illustrates how to apply format to text values. Column *A* in the worksheet below contains the textual representation of the numbers 1-5:
         
 
-Figure 3: Textual representation in Number format![Rad Spread Processing Features Number Formatting 03](images/RadSpreadProcessing_Features_Number_Formatting_03.png)
+Figure 3: Textual representation in Number format
+![Rad Spread Processing Features Number Formatting 03](images/RadSpreadProcessing_Features_Number_Formatting_03.png)
 
-To alter the values, so that each of them contains the string "apple" after the number, you can use the "@ apples" format string.
-          The "@" wild card is replaced with the text of the cell in the result string. The result will be the following:
+To alter the values, so that each of them contains the string "apple" after the number, you can use the "@ apples" format string. The "@" wild card is replaced with the text of the cell in the result string. The result will be the following:
         
 
-Figure 3: Textual representation in Number format with format string![Rad Spread Processing Features Number Formatting 04](images/RadSpreadProcessing_Features_Number_Formatting_04.png)
+Figure 4: Textual representation in Number format with format string
+![Rad Spread Processing Features Number Formatting 04](images/RadSpreadProcessing_Features_Number_Formatting_04.png)
 
 ## Applying a Number Format
 
@@ -90,20 +93,20 @@ __Exam0ple 1__ demonstrates how to apply scientific format to cell *A1* and perc
 #### __[C#] Example 1: Apply format__
 
 {{region radspreadprocessing-features-number-formats_0}}
-	        public void ApplyFormat()
-	        {
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            CellSelection cellSelectionA1 = worksheet.Cells[new CellIndex(0, 0)];
-	            CellValueFormat scientificFormat = new CellValueFormat("0.00E+00");
-	            cellSelectionA1.SetFormat(scientificFormat);
-	
-	            CellSelection cellSelectionA2B3 = worksheet.Cells[new CellRange(new CellIndex(1, 0), new CellIndex(2, 1))];
-	            CellValueFormat percentageFormat = new CellValueFormat("0.00%");
-	            cellSelectionA2B3.SetFormat(percentageFormat);
-	        }
-	{{endregion}}
+    public void ApplyFormat()
+    {
+        Workbook workbook = new Workbook();
+        Worksheet worksheet = workbook.Worksheets.Add();
+
+        CellSelection cellSelectionA1 = worksheet.Cells[new CellIndex(0, 0)];
+        CellValueFormat scientificFormat = new CellValueFormat("0.00E+00");
+        cellSelectionA1.SetFormat(scientificFormat);
+
+        CellSelection cellSelectionA2B3 = worksheet.Cells[new CellRange(new CellIndex(1, 0), new CellIndex(2, 1))];
+        CellValueFormat percentageFormat = new CellValueFormat("0.00%");
+        cellSelectionA2B3.SetFormat(percentageFormat);
+    }
+{{endregion}}
 
 
 
@@ -116,24 +119,23 @@ You can retrieve the number format of any cell selection using the __GetFormat()
 * __Value__: Holds the __CellValueFormat__ for the cells. If the __IsIndeterminate__ property is set to false, __Value__ contains __CellValueFormat__ of the whole __CellSelection__ region. If the __IsIndeterminate__ property is set to true, this indicates that the __CellValueFormat__ is not the same for all cells in the __CellSelection__ and the __Value__ property is set to the default __CellValueFormat__.
             
 
-__Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cell range
-          *A2:B3*:
+__Example 2__ demonstrates how to get the __Number__ format of cell *A1* and cell range *A2:B3*:
         
 
 #### __[C#] Example 2: Get Number format__
 
 {{region radspreadprocessing-features-number-formats_1}}
-	        public void GetFormat()
-	        {
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            CellSelection cellSelectionA1 = worksheet.Cells[new CellIndex(0, 0)];
-	            CellSelection cellSelectionA2B3 = worksheet.Cells[new CellRange(new CellIndex(1, 0), new CellIndex(2, 1))];
-	
-	            CellValueFormat cellSelectioA1Format = cellSelectionA1.GetFormat().Value;
-	            CellValueFormat cellSelectioA2Format = cellSelectionA2B3.GetFormat().Value;
-	        }
-	{{endregion}}
+    public void GetFormat()
+    {
+        Workbook workbook = new Workbook();
+        Worksheet worksheet = workbook.Worksheets.Add();
+
+        CellSelection cellSelectionA1 = worksheet.Cells[new CellIndex(0, 0)];
+        CellSelection cellSelectionA2B3 = worksheet.Cells[new CellRange(new CellIndex(1, 0), new CellIndex(2, 1))];
+
+        CellValueFormat cellSelectioA1Format = cellSelectionA1.GetFormat().Value;
+        CellValueFormat cellSelectioA2Format = cellSelectionA2B3.GetFormat().Value;
+    }
+{{endregion}}
 
 

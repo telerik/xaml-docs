@@ -29,20 +29,10 @@ This topic will cover how to:
 >tipFor the purpose of this tutorial the __Northwind__ database will be used, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en)
 
 Add a new LINQ to SQL mapping.
-
-
-
-
-         
-      ![Common Linq To Sql 010](images/Common_LinqToSql_010.png)
+![Common Linq To Sql 010](images/Common_LinqToSql_010.png)
 
 Using the LINQ to SQL designer you can easily create a representation of the sample Northwind database like the one below:
-
-
-
-
-         
-      ![Common Linq To Sql 020](images/Common_LinqToSql_020.png)
+![Common Linq To Sql 020](images/Common_LinqToSql_020.png)
 
 ## Query an Entity from the Database
 
@@ -102,7 +92,7 @@ The code below demonstrates how to grab a single __Product__ object from the dat
 
 ## Insert a New Record(s) in the Database
 
-The code below shows you how to create a new __Category__ object. Then how to create two new __Products__and associate them with the __Category__. Finally, all three objects are saved in the database.
+The code below shows you how to create a new __Category__ object. Then how to create two new __Products__ and associate them with the __Category__. Finally, all three objects are saved in the database.
 
 #### __C#__
 

@@ -78,28 +78,28 @@ Now that the document model is ready, you can add a Button that will function as
 
 {{region radchart-features-export-to-pdf_4}}
 	private void Export_Click(object sender, System.Windows.RoutedEventArgs e)
-	        {
-	            SaveFileDialog dialog = new SaveFileDialog();
-	            dialog.DefaultExt = "*.pdf";
-	            dialog.Filter = "Adobe PDF Document (*.pdf)|*.pdf";
-	
-	            if (dialog.ShowDialog() == true)
-	            {
-	                {
-	                    RadDocument document = this.CreateDocument();
-	                    document.LayoutMode = DocumentLayoutMode.Paged;
-	                    document.Measure(RadDocument.MAX_DOCUMENT_SIZE);
-	                    document.Arrange(new RectangleF(PointF.Empty, document.DesiredSize));
-	
-	                    PdfFormatProvider provider = new PdfFormatProvider();
-	
-	                    using (Stream output = dialog.OpenFile())
-	                    {
-	                        provider.Export(document, output);
-	                    }
-	                }
-	            }
-	        }
+    {
+        SaveFileDialog dialog = new SaveFileDialog();
+        dialog.DefaultExt = "*.pdf";
+        dialog.Filter = "Adobe PDF Document (*.pdf)|*.pdf";
+
+        if (dialog.ShowDialog() == true)
+        {
+            {
+                RadDocument document = this.CreateDocument();
+                document.LayoutMode = DocumentLayoutMode.Paged;
+                document.Measure(RadDocument.MAX_DOCUMENT_SIZE);
+                document.Arrange(new RectangleF(PointF.Empty, document.DesiredSize));
+
+                PdfFormatProvider provider = new PdfFormatProvider();
+
+                using (Stream output = dialog.OpenFile())
+                {
+                    provider.Export(document, output);
+                }
+            }
+        }
+    }
 	{{endregion}}
 
 
@@ -107,23 +107,20 @@ Now that the document model is ready, you can add a Button that will function as
 #### __VB.NET__
 
 {{region radchart-features-export-to-pdf_5}}
-	    Private Sub Export_Click(ByVal sender As Object, ByVal e As System.Windows.RoutedEventArgs)
-	        Dim dialog As New SaveFileDialog()
-	        dialog.DefaultExt = "*.pdf"
-	        dialog.Filter = "Adobe PDF Document (*.pdf)|*.pdf"
-	        If dialog.ShowDialog() = True Then
-	            Dim document As RadDocument = Me.CreateDocument()
-	            document.LayoutMode = DocumentLayoutMode.Paged
-	            document.Measure(RadDocument.MAX_DOCUMENT_SIZE)
-	            document.Arrange(New RectangleF(PointF.Empty, document.DesiredSize))
-	            Dim provider As New PdfFormatProvider()
-	            Using output As Stream = dialog.OpenFile()
-	                provider.Export(document, output)
-	            End Using
-	        End If
-	    End Sub
+    Private Sub Export_Click(ByVal sender As Object, ByVal e As System.Windows.RoutedEventArgs)
+        Dim dialog As New SaveFileDialog()
+        dialog.DefaultExt = "*.pdf"
+        dialog.Filter = "Adobe PDF Document (*.pdf)|*.pdf"
+        If dialog.ShowDialog() = True Then
+            Dim document As RadDocument = Me.CreateDocument()
+            document.LayoutMode = DocumentLayoutMode.Paged
+            document.Measure(RadDocument.MAX_DOCUMENT_SIZE)
+            document.Arrange(New RectangleF(PointF.Empty, document.DesiredSize))
+            Dim provider As New PdfFormatProvider()
+            Using output As Stream = dialog.OpenFile()
+                provider.Export(document, output)
+            End Using
+        End If
+    End Sub
 	{{endregion}}
 
-
-
-## 

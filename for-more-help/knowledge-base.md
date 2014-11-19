@@ -14,8 +14,6 @@ position: 0
 
 ## 
 
-The Telerik __Knowledge Base__, 
-        [http://www.telerik.com/support/kb.aspx](http://www.telerik.com/support/kb.aspx)        
-        , lets you browse and search articles for a solution to your problem.
+The Telerik __Knowledge Base__, [http://www.telerik.com/support/kb.aspx](http://www.telerik.com/support/kb.aspx) , lets you browse and search articles for a solution to your problem.
 
 

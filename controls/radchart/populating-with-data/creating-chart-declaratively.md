@@ -16,15 +16,15 @@ In some situations you might want to create a chart declaratively - in XAML. Thi
 
 This tutorial will walk you through the common tasks of:
 
-* [Adding RadChart and setting the DefaultView property](#Adding_RadChart_and_Setting_the_DefaultView_Property)
+* [Adding RadChart and setting the DefaultView property](#adding-radchart-and-setting-the-defaultview-property)
 
-* [Adding ChartTitle](#Adding_ChartTitle)
+* [Adding ChartTitle](#adding-charttitle)
 
-* [Adding ChartLegend](#Adding_ChartLegend)
+* [Adding ChartLegend](#adding-chartlegend)
 
-* [Adding ChartArea](#Adding_ChartArea)
+* [Adding ChartArea](#adding-chartarea)
 
-* [Adding DataSeries](#Adding_DataSeries)
+* [Adding DataSeries](#adding-dataseries)
 
 >In order to use __RadChart__ control in your projects you have to add references to __Telerik.Windows.Controls.Charting.dll__.
 
@@ -47,9 +47,9 @@ In your XAML file, add a new __RadChart__ declaration and make a new instance of
 
 
 
->To use __RadChart__in your XAML file, add a reference to the following namespaces:__xmlns:telerikChart="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Charting"__ and   __xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"__
+>To use __RadChart__ in your XAML file, add a reference to the following namespaces: __xmlns:telerikChart="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Charting"__ and   __xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"__
 
-The __ChartDefaultView__contains [ChartTitle]({%slug radchart-features-chart-title%}), [ChartLegend]({%slug radchart-features-chart-legend%}) and [ChartArea]({%slug radchart-features-chart-area%}) and you have to use them to build the chart in the way you need. The next several sections will show you how to set these properties.
+The __ChartDefaultView__ contains [ChartTitle]({%slug radchart-features-chart-title%}), [ChartLegend]({%slug radchart-features-chart-legend%}) and [ChartArea]({%slug radchart-features-chart-area%}) and you have to use them to build the chart in the way you need. The next several sections will show you how to set these properties.
 
 ## Adding ChartTitle
 
@@ -102,7 +102,7 @@ Add a __ChartLegend__ declaration to your default view declaration. If you want 
 
 ## Adding ChartArea
 
-The third step in the populating a __RadChart__with data is adding a __ChartArea__.
+The third step in the populating a __RadChart__ with data is adding a __ChartArea__.
 
 >Note that to show the __DataSeries__ in the legend you have to also set the __ChartArea.LegendName__ property with the name of the __ChartLegend__ you want.
 
@@ -139,7 +139,7 @@ The __ChartArea__ has a list of __DataSeries__, where you have to add one __Data
 
 The __DataPoint__ class represents a single piece of data that is visualized in a chart series. For each __DataPoint__, you can define several values depending on the chart type: __XValue__ and __YValue__, __High__ and __Low__, __Open__ and __Close__, etc. These values are used later to visually calculate and draw the chart graphic.
 
-Other properties of __DataPoint__ are the __LegendLable__and the __LegendFormat.__ The first one specifies the text displayed in the __ChartLegend__ related to that __DataSeries,__ while the second one defines the format of the labels.
+Other properties of __DataPoint__ are the __LegendLable__ and the __LegendFormat.__ The first one specifies the text displayed in the __ChartLegend__ related to that __DataSeries,__ while the second one defines the format of the labels.
 
 The XAML bellow defines __LineSeriesDefinition__, that represents the line chart showing the Turnover for year 2009. The data is defined as __DataPoints__, where __Y-Axis__ (__YValue__) is set with the desired value. The second data series is __BarSeriesDefinition__ for the Expenses defined in a similar way.
 

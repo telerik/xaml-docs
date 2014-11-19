@@ -21,14 +21,12 @@ The color scheme applied in the Windows8 theme has its drawbacks as the brushes 
 
 __Exception:__
 
-System.InvalidOperationException was unhandled by user code
-          Message=Cannot access Freezable 'System.Windows.Media.SolidColorBrush' across threads because it cannot be frozen.
+System.InvalidOperationException was unhandled by user code Message=Cannot access Freezable 'System.Windows.Media.SolidColorBrush' across threads because it cannot be frozen.
         
 
 __Solution:__
 
-To fix the issue, you should just call the Freeze method on the PalleteInstance of the Windows8Colors.
-          Telerik.Windows.Controls.Windows8Palette.Palette.Freeze();
+To fix the issue, you should just call the Freeze method on the PalleteInstance of the Windows8Colors. Telerik.Windows.Controls.Windows8Palette.Palette.Freeze();
           
 
 # See Also

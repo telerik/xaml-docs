@@ -52,15 +52,15 @@ The most straight-forward way to read data from XML document is to deserialize i
 {{region consuming-data-using-xml_1}}
 	Private Function RetrieveData() As XmlNodeItemList
 	    Dim xmlDocument As String = "/DataSource/XmlData.xml"
-	    ' 1. Get the resource stream for the file located in the application package.
+	    ' 1. Get the resource stream for the file located in the application package.'
 	    Dim xmlStream As Stream = Application.GetResourceStream(New Uri(xmlDocument, UriKind.Relative)).Stream
-	    ' 1. Get the stream for the file located on the local hard drive.
+	    ' 1. Get the stream for the file located on the local hard drive.'
 	    Dim xmlStream As Stream = File.Open(xmlDocument, FileMode.Open)
-	    ' 2. Create a new instance of the XmlSerializer class.
+	    ' 2. Create a new instance of the XmlSerializer class.'
 	    Dim serializer As New XmlSerializer(GetType(XmlNodeItemList))
-	    ' 3. Create a new instance of the StreamReader class.
+	    ' 3. Create a new instance of the StreamReader class.'
 	    Dim reader As New StreamReader(xmlStream)
-	    ' 4. Deserialize the data
+	    ' 4. Deserialize the data'
 	    Dim list As XmlNodeItemList = DirectCast(serializer.Deserialize(reader), XmlNodeItemList)
 	End Function
 	{{endregion}}
@@ -93,18 +93,18 @@ On the next step you can use standard query operators to read the XML. Here is a
 
 {{region consuming-data-using-xml_4}}
 	List<Person> personsList =   
-	    ( from person in myXml.Descendants( "person" )   
-	      where (( string )person.Element( "address" ).Attribute( "country" )).Equals( "Bulgaria" )
-	      select new Person()
-	      {   
-	          FirstName = person.Element( "firstName" ).Value,
-	          LastName = person.Element( "lastName" ).Value,
-	          Address = new Location()
-	          {  
-	              City = person.Element( "address" ).Attribute( "city" ).Value,
-	              Country = person.Element( "address" ).Attribute( "country" ).Value
-	          }  
-	      } ).ToList();
+    ( from person in myXml.Descendants( "person" )   
+      where (( string )person.Element( "address" ).Attribute( "country" )).Equals( "Bulgaria" )
+      select new Person()
+      {   
+          FirstName = person.Element( "firstName" ).Value,
+          LastName = person.Element( "lastName" ).Value,
+          Address = new Location()
+          {  
+              City = person.Element( "address" ).Attribute( "city" ).Value,
+              Country = person.Element( "address" ).Attribute( "country" ).Value
+          }  
+      } ).ToList();
 	{{endregion}}
 
 
@@ -121,7 +121,7 @@ On the next step you can use standard query operators to read the XML. Here is a
 
 ## Reading Data with XMLReader 
 
-The following example navigates through a stream to determine the current node type, and then uses  __XmlWriter__to output the  __XmlReader__content. 
+The following example navigates through a stream to determine the current node type, and then uses  __XmlWriter__ to output the  __XmlReader__ content. 
 
 #### __C#__
 
@@ -169,7 +169,7 @@ The following example navigates through a stream to determine the current node t
 	    ws.Indent = True
 	    Using writer As XmlWriter = XmlWriter.Create(output, ws)
 	
-	        ' Parse the file and display each of the nodes.
+	        ' Parse the file and display each of the nodes.'
 	        While reader.Read()
 	            Select Case reader.NodeType
 	                Case XmlNodeType.Element

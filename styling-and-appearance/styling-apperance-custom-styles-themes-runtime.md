@@ -22,7 +22,7 @@ Generally the resources in a merged dictionary occupy a location in the resource
 As an example, you can follow the steps bellow:
         
 
-1. Create a new application and add the required assemblies from the Binaries.NoXaml folder located in the Telerik UI installation folder. You should also include the theme assemblies:
+1 Create a new application and add the required assemblies from the Binaries.NoXaml folder located in the Telerik UI installation folder. You should also include the theme assemblies:
         
 
 * Telerik.Windows.Controls.dll
@@ -37,7 +37,7 @@ As an example, you can follow the steps bellow:
 * Telerik.Windows.Themes.Office_Blue.dll
             
 
-2. Add the needed resource dictionaries for the default theme in App.xaml:
+2 Add the needed resource dictionaries for the default theme in App.xaml:
 
 #### __XAML__
 
@@ -57,20 +57,20 @@ As an example, you can follow the steps bellow:
 
 >Initially we merge the ResourceDictionaries for the "Office_Black" Theme.
 
-3. Add few controls of your choice to the layout root of your application. And also two buttons which we will use to switch between two of the themes. 
+3 Add few controls of your choice to the layout root of your application. And also two buttons which we will use to switch between two of the themes. 
 
 #### __XAML__
 
 {{region styling-apperance-custom-styles-themes-runtime_2}}
 	<Grid x:Name="LayoutRoot" Background="White">
-	        <Grid.RowDefinitions>
-	            <RowDefinition Height="*"/>
-	            <RowDefinition Height="auto"/>
-	        </Grid.RowDefinitions>
-	            <telerik:RadButton Content="Button" VerticalAlignment="Center" Width="100"/>
-	        <StackPanel Grid.Row="1" Orientation="Horizontal">
-	            <Button x:Name="Office_Black" Margin="5" Content="Office_Black" Click="Office_Black_Click"/>
-	            <Button x:Name="Office_Blue" Margin="5" Content="Office_Blue" Click="Office_Blue_Click"/>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="auto"/>
+    </Grid.RowDefinitions>
+        <telerik:RadButton Content="Button" VerticalAlignment="Center" Width="100"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button x:Name="Office_Black" Margin="5" Content="Office_Black" Click="Office_Black_Click"/>
+            <Button x:Name="Office_Blue" Margin="5" Content="Office_Blue" Click="Office_Blue_Click"/>
 		</StackPanel>
 	</Grid>
 	
@@ -78,7 +78,7 @@ As an example, you can follow the steps bellow:
 
 
 
-4. Now we need to add our custom styles in a separate resource dictionary with name CustomStyles.xaml, contained in Themes folder of your project with name CustomStyles_SL (CustomStyles_WPF). This custom ResourceDictionary will have the following content:
+4 Now we need to add our custom styles in a separate resource dictionary with name CustomStyles.xaml, contained in Themes folder of your project with name CustomStyles_SL (CustomStyles_WPF). This custom ResourceDictionary will have the following content:
 
 #### __XAML__
 
@@ -95,7 +95,7 @@ As an example, you can follow the steps bellow:
 
 
 
-5. In our example we will use the simplest way to change the theme at runtime – using the Click event of each of these Buttons. Upon click, we will clear merged dictionaries from the application resources and merge new resource dictionaries from the theme assemblies with our custom styles contained in Custom Styles.xaml:
+5 In our example we will use the simplest way to change the theme at runtime – using the Click event of each of these Buttons. Upon click, we will clear merged dictionaries from the application resources and merge new resource dictionaries from the theme assemblies with our custom styles contained in Custom Styles.xaml:
 
 #### __C#__
 
@@ -148,6 +148,6 @@ As an example, you can follow the steps bellow:
 
 
 The result based on the above code will the one illustrated on the image below:
-        ![styling-apperance-custom-style](images/styling-apperance-custom-style.png)
+![styling-apperance-custom-style](images/styling-apperance-custom-style.png)
 
 # See Also

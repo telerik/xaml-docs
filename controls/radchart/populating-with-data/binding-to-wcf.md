@@ -89,13 +89,13 @@ Creating the WCF Service:
 {{region radchart-populating-with-data-binding-to-wcf_3}}
 	<ServiceContract(Namespace = ""), AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)>
 	Public Class Service2
-	            <OperationContract>
-	            Public Function LoadTop10Products() As List(Of Product)
-	                  Dim db As New DataClasses1DataContext()
-	                  Dim query = From c In db.Products
-	                              Select c
-	                  Return query.Take(10).ToList()
-	            End Function
+        <OperationContract>
+        Public Function LoadTop10Products() As List(Of Product)
+              Dim db As New DataClasses1DataContext()
+              Dim query = From c In db.Products
+                          Select c
+              Return query.Take(10).ToList()
+        End Function
 	End Class
 	{{endregion}}
 

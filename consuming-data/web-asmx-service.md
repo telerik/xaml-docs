@@ -21,8 +21,7 @@ The purpose of this tutorial is to show you how to make a call to a Web Service 
 
 * Making {% if site.site_name == 'Silverlight' %}asynchronous{% endif %} call to the service.{% if site.site_name == 'Silverlight' %}
 
-* 
-         Consuming the service result.
+* Consuming the service result.
         {% endif %}
 
 >The process of developing a Web Service is beyond the scope of this tutorial. For more information read [here](http://msdn.microsoft.com/en-us/library/t745kdsh.aspx).
@@ -38,30 +37,13 @@ For the purpose of this tutorial will be used a service that exposes the followi
 The first step is to add a new service reference to your application. In order to do that you need to perform the following steps:
 
 * Select the "__References__" folder, right click with your mouse button and choose "__Add Service Reference...__"
-
-
-
-
-         
-      ![Common Consuming Data Web Service 010](images/Common_ConsumingDataWebService_010.png)
+![Common Consuming Data Web Service 010](images/Common_ConsumingDataWebService_010.png)
 
 * A popup window appears, hit the __Discover__ button to find the web service or enter the service location. Press 'OK' to add it.
+![Common Consuming Data Web Service 020](images/Common_ConsumingDataWebService_020.png)
 
-
-
-
-         
-      ![Common Consuming Data Web Service 020](images/Common_ConsumingDataWebService_020.png)
-
->
-
-You have the ability to choose the type of the collections that the service returns. In order to do that you need to open the __Service Reference Settings__ dialog from the __Advanced__ button.
-
-
-
-
-         
-      ![Common Consuming Data Web Service 030](images/Common_ConsumingDataWebService_030.png)
+>You have the ability to choose the type of the collections that the service returns. In order to do that you need to open the __Service Reference Settings__ dialog from the __Advanced__ button.
+![Common Consuming Data Web Service 030](images/Common_ConsumingDataWebService_030.png)
 
 When a service reference is added to a project, any types defined in the service are generated in the local project. In many cases, this creates duplicate types when a service uses common .NET Framework types or when types are defined in a shared library. To avoid this problem, types in referenced assemblies are shared by default. If you want to disable type sharing for one or more assemblies, you can do so in the __Service Reference Settings__ dialog.
 
@@ -87,9 +69,7 @@ Creating new instance of the service is pretty simple process.
 
 
 
->
-
-Don't forget to give a meaningful name for your Web Service namespace. In the previous example the namespace is "WebService".
+>Don't forget to give a meaningful name for your Web Service namespace. In the previous example the namespace is "WebService".
 
 ## Making Asynchronous Call to the Service{% if site.site_name == 'Silverlight' %}
 

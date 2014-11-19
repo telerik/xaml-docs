@@ -14,7 +14,7 @@ position: 3
 
 ## 
 
-The __RadChart__ provides you with an __API__ for navigating between the hierarchy levels when using its drill down feature. It can be used via the __HierarchicalManager__ property of the __RadChart__. The HierarchyManger tracks the history of the user navigation through the data. Using its __Back()__ and __Forward()__methods you can enable him to go back through the levels of hierarchy or forward when he wants to follow the same navigation line.
+The __RadChart__ provides you with an __API__ for navigating between the hierarchy levels when using its drill down feature. It can be used via the __HierarchicalManager__ property of the __RadChart__. The HierarchyManger tracks the history of the user navigation through the data. Using its __Back()__ and __Forward()__ methods you can enable him to go back through the levels of hierarchy or forward when he wants to follow the same navigation line.
 
 Here is an example of two buttons, which call the respective methods.
 

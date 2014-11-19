@@ -14,7 +14,7 @@ position: 8
 
 ## 
 
-__RadChart__'s [DefaultView]({%slug radchart-features-default-view%}) provides you with layout that consists of [Chart Title]({%slug radchart-features-chart-title%}), [Chart Area]({%slug radchart-features-chart-area%}) and [Chart Legend]({%slug radchart-features-chart-legend%}). However, in some cases, you might need to have more than one __ChartArea__ in order to display two or more charts separately. Of course, you will also need to use data binding via [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}) in order to populate the __RadChart__ with data.
+__RadChart's__ [DefaultView]({%slug radchart-features-default-view%}) provides you with layout that consists of [Chart Title]({%slug radchart-features-chart-title%}), [Chart Area]({%slug radchart-features-chart-area%}) and [Chart Legend]({%slug radchart-features-chart-legend%}). However, in some cases, you might need to have more than one __ChartArea__ in order to display two or more charts separately. Of course, you will also need to use data binding via [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}) in order to populate the __RadChart__ with data.
 
 ![](images/RadChart_PopulatingWithData_ManyChartAreas_10.png)
 
@@ -140,7 +140,7 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	'Creating new instance of RadChart control
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	....
-	'Creating Grid with two rows and two columns to host two ChartTitles and two ChartAreas
+	'Creating Grid with two rows and two columns to host two ChartTitles and two ChartAreas'
 	Dim chartLayout As New Grid()
 	chartLayout.Margin = New Thickness(10, 10, 0, 20)
 	chartLayout.RowDefinitions.Add(New RowDefinition())
@@ -149,32 +149,32 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	radChart.Content = chartLayout
 	chartLayout.ColumnDefinitions.Add(New ColumnDefinition())
 	chartLayout.ColumnDefinitions.Add(New ColumnDefinition())
-	'Creating ChartTitle for the left chart
+	'Creating ChartTitle for the left chart'
 	Dim chartTitle As New Telerik.Windows.Controls.Charting.ChartTitle()
 	chartTitle.Margin = New Thickness(0, 0, 0, 10)
 	chartTitle.HorizontalAlignment = HorizontalAlignment.Center
 	chartTitle.Content = "Year 2008"
 	chartLayout.Children.Add(chartTitle)
-	'Creating ChartArea of for the left chart
+	'Creating ChartArea of for the left chart'
 	Dim chartArea1 As New Telerik.Windows.Controls.Charting.ChartArea()
 	chartArea1.Name = "webBrowsersShare2008Chart"
 	chartLayout.Children.Add(chartArea1)
 	Grid.SetRow(chartArea1, 1)
-	'Creating ChartTitle for the right chart
+	'Creating ChartTitle for the right chart'
 	chartTitle = New Telerik.Windows.Controls.Charting.ChartTitle()
 	chartTitle.Margin = New Thickness(0, 0, 0, 10)
 	chartTitle.HorizontalAlignment = HorizontalAlignment.Center
 	chartTitle.Content = "Year 2009"
 	chartLayout.Children.Add(chartTitle)
 	Grid.SetColumn(chartTitle, 1)
-	'Creating ChartArea of for the right chart
+	'Creating ChartArea of for the right chart'
 	Dim chartArea2 As New Telerik.Windows.Controls.Charting.ChartArea()
 	chartArea2 = New Telerik.Windows.Controls.Charting.ChartArea()
 	chartArea2.Name = "webBrowsersShare2009Chart"
 	chartLayout.Children.Add(chartArea2)
 	Grid.SetRow(chartArea2, 1)
 	Grid.SetColumn(chartArea2, 1)
-	'Creating series mapping for the first chart and link it to the left ChartArea
+	'Creating series mapping for the first chart and link it to the left ChartArea'
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.CollectionIndex = 0
 	seriesMapping.ChartAreaName = "webBrowsersShare2008Chart"
@@ -182,7 +182,7 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	seriesMapping.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
 	seriesMapping.ItemMappings.Add(New ItemMapping("Description", DataPointMember.Label))
 	radChart.SeriesMappings.Add(seriesMapping)
-	'Creating series mapping for the first chart and link it to the right ChartArea
+	'Creating series mapping for the first chart and link it to the right ChartArea'
 	seriesMapping = New SeriesMapping()
 	seriesMapping.CollectionIndex = 1
 	seriesMapping.ChartAreaName = "webBrowsersShare2009Chart"

@@ -22,13 +22,7 @@ The purpose of this tutorial is to show you how to make a call to an ADO.NET Dat
 
 >The process of developing an ADO.NET Data Service is beyond the scope of this tutorial. For more information read [here](http://msdn.microsoft.com/en-us/library/cc907912.aspx).
 
->
-
-This tutorial will use the following product and technology:
-
-* __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
-
-* ADO.NET Entity Framework - used to create an Entity Data Model representation of the Northwind database.
+>This tutorial will use the following product and technology:<br/>* __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).<br/>* ADO.NET Entity Framework - used to create an Entity Data Model representation of the Northwind database.
 
 >tipThe Telerik __OpenAccess__ ORM also supports excellent integration with ADO.NET Data Services.
 
@@ -37,32 +31,13 @@ This tutorial will use the following product and technology:
 The first step is to add a new service reference to your application. In order to do that you need to perform the following steps:
 
 * Select the "__References__" folder, right click with your mouse button and choose "__Add Service Reference...__"
-
-
-
-
-         
-      ![Common Consuming Data Ado Net Data Service 010](images/Common_ConsumingDataAdoNetDataService_010.png)
+![Common Consuming Data Ado Net Data Service 010](images/Common_ConsumingDataAdoNetDataService_010.png)
 
 * A popup window appears, hit the __Discover__ button to find the web service or enter the service location. Press OK to add it. 
+![Common Consuming Data Ado Net Data Service 020](images/Common_ConsumingDataAdoNetDataService_020.png)
 
-
-
-
-         
-      ![Common Consuming Data Ado Net Data Service 020](images/Common_ConsumingDataAdoNetDataService_020.png)
-
->
-
-
-
-You have the ability to choose the type of the collections that the service returns. In order to do that you need to open the __Service Reference Settings__ dialog from the __Advanced__ button.
-
-
-
-
-         
-      ![Common Consuming Data Ado Net Data Service 030](images/Common_ConsumingDataAdoNetDataService_030.png)
+>You have the ability to choose the type of the collections that the service returns. In order to do that you need to open the __Service Reference Settings__ dialog from the __Advanced__ button.
+![Common Consuming Data Ado Net Data Service 030](images/Common_ConsumingDataAdoNetDataService_030.png)
 
 When a service reference is added to a project, any types defined in the service are generated in the local project. In many cases, this creates duplicate types when a service uses common .NET Framework types or when types are defined in a shared library. To avoid this problem, types in referenced assemblies are shared by default. If you want to disable type sharing for one or more assemblies, you can do so in the __Service Reference Settings__ dialog.
 
@@ -75,10 +50,10 @@ Once the ADO.NET data service is added all needed assemblies will be included in
 {{region consuming-data-ado-net-data-service_0}}
 	NorthwindEntities northwindEntity = new NorthwindEntities( new Uri( "http://localhost:54248/Services/SampleAdoNetDataService.svc/" ) );
 	{{endregion}}
-
-__{{region consuming-data-ado-net-data-service_1}}
+#### __VB.NET__
+{{region consuming-data-ado-net-data-service_1}}
 	Dim northwindEntity As New NorthwindEntities(New Uri("http://localhost:54248/Services/SampleAdoNetDataService.svc/"))
-	{{endregion}}__
+	{{endregion}}
 
 __NorthwindEntities__ represents the runtime context of a given data service. While data services themselves are stateless, the context is not, so state on the client is maintained between interactions in order to support features such as identity resolution and optimistic concurrency.  
 

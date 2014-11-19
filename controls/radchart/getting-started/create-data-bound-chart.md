@@ -223,7 +223,7 @@ There are two things you should pay attention to: First is the declaration of th
 	Me.radChart.ItemsSource = Me.CreateData()
 	{{endregion}}
 
-In the source code above one instance of the class __SeriesMapping__ is created with two __ItemMappings__, one for __X-axis__ and one for __Y-axis__. __X-axis__ is bound to the __ProductSales.Month__ property, while __Y-axis__ is bound to __ProductSales.Quantity__ property. Both properties are numeric, that's why their __DataPointMember__ property is set to __XValue__ and __YValue__ respectively. If you want to bind your __X-axis__ to string values read [Categorical Charts]({%slug radchart-features-categorical-charts%}) or read [below](#Creating_Categorical_Chart).
+In the source code above one instance of the class __SeriesMapping__ is created with two __ItemMappings__, one for __X-axis__ and one for __Y-axis__. __X-axis__ is bound to the __ProductSales.Month__ property, while __Y-axis__ is bound to __ProductSales.Quantity__ property. Both properties are numeric, that's why their __DataPointMember__ property is set to __XValue__ and __YValue__ respectively. If you want to bind your __X-axis__ to string values read [Categorical Charts]({%slug radchart-features-categorical-charts%}) or read below.
 
 * And the last step is to set the __ItemSource__ of the __RadChart__ control to the collection returned by the __GetData__ method. You can insert this call inside your Constructor right after the __InitializeComponent()__ method call.
 
@@ -253,8 +253,8 @@ Now if you run your application, the result should be similar to the below snaps
 * [Y-Axis]({%slug radchart-features-axes-y-axis%}) shows the sold quantity values. 
 
 
-* Spline connects all dots in one smooth graphic. For more series definitions (Line, Bar, CandleStick etc.) read [[!] 2D Charts](radchart-features-chart-types-2D-charts.html) or [[!] 3D Charts](radchart-features-chart-types-3D-charts.html).  
-      ![](images/RadChart_GettingStarted_DataBoundChart_03.png)
+* Spline connects all dots in one smooth graphic
+![](images/RadChart_GettingStarted_DataBoundChart_03.png)
 
 ## Creating Categorical Chart
 

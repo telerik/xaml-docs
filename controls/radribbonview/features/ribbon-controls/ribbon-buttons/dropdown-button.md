@@ -29,10 +29,6 @@ Here is a sample definition of a __RadRibbonDropDownButton__ without having any 
 	                                 SmallImage="Icons/16/paste.png"
 	                                 Text="Paste" />
 	{{endregion}}
-
-
-
->tipAs all buttons in the __RadRibbonView__'s set slightly expose the same functionality, take a look at the [Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#Common_Functionality) topic.
 			
 
 This button has its initial size set to __Large__ and its text label set to __"Paste"__.
@@ -131,10 +127,6 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 	End Sub
 	{{endregion}}
 
-
-
->tipTo learn how to handle ribbon bar button clicks take a look at the [Buttons Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#HandlingButtonClicks) topic.
-				
 
 # See Also
 

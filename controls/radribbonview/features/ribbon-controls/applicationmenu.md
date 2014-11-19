@@ -20,10 +20,8 @@ Telerik __RadRibbonView__ provides a simple and consistent way for building inte
 
 ## Application Menu - Fundamentals
 
-The __Application Menu__ is equivalent to the __File__ menu of the traditional menu 
-					UIs. By default it is represented by the rectangular button (named __Application Button__) on the upper-left
-					corner of the __RadRibbonView__ control.
-				![](images/RibbonView_ApplicationMenu_AppButton.png)
+The __Application Menu__ is equivalent to the __File__ menu of the traditional menu UIs. By default it is represented by the rectangular button (named __Application Button__) on the upper-left corner of the __RadRibbonView__ control.
+![](images/RibbonView_ApplicationMenu_AppButton.png)
 
 The __Application Menu__ appears when a user __clicks__ the __Application Button__. This menu displays controls used to perform actions on the entire document, like Save, Print and Send. The __Application Menu__ also provides a list of recent documents, access to application options for changing user settings and preferences, and application exit. 
 ![](images/RibbonView_ApplicationMenu_Structure.png)
@@ -294,7 +292,7 @@ Three ordinary __RadRibbonButtons__, one __RadRibbonSplitButton__ and one __RadR
 The second element you may want to initialize when building an application menu is the __Content__. This is the right pane of the application menu. To populate it you should use the __ApplicationMenu__'s __Content__ property and set the content you like.
 				
 
-The next example shows you how to set the __ApplicationMenu__'s __Content__ property. Note that in this example the [initialization](adding-menu-items#adding-menu-items) of the menu items is skipped.
+The next example shows you how to set the __ApplicationMenu__'s __Content__ property. Note that in this example the [initialization](#adding-menu-items) of the menu items is skipped.
 				
 
 #### __XAML__
@@ -382,7 +380,7 @@ The last element of the application menu is the __Footer Content__. This is the 
 
 
 
-In this example, it is assumed that you are familiar with initializing the menu items and content of the application menu. If not, check out the previous two sections where the process of adding [menu items](adding-menu-items#adding-menu-items) and [content](Adding_Menu_Items#adding-content) is described. The result of the last example is shown on the snapshot below. 
+In this example, it is assumed that you are familiar with initializing the menu items and content of the application menu. If not, check out the previous two sections where the process of adding [menu items](#adding-menu-items) and [content](#adding-content) is described. The result of the last example is shown on the snapshot below. 
 ![](images/RibbonView_ApplicationMenu_Footer.png)
 
 ## Hiding the Application Menu

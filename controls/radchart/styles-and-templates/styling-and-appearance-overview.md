@@ -60,4 +60,4 @@ Read the following articles to learn how to:
 
  * [Styling the Chart Title]({%slug radchart-styling-and-appearance-styling-chart-title%})
 
- * [Styling the Axes - Overview]({%slug radchart-styling-and-appearance-styling-axes-overview%})[Templating - Overview](13DD5D60-0C6A-4ABE-B72F-27A3F1E14807)
+ * [Styling the Axes - Overview]({%slug radchart-styling-and-appearance-styling-axes-overview%})

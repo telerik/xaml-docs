@@ -14,7 +14,6 @@ position: 6
 
 The __RadSplitButton__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 
->tipBefore reading this topic, you might find it useful to get familiar with the [template structure of the RadSplitButton](B6227BAF-51F3-46F2-9E66-C07EB599A4E0#RadSplitButton).
 
 You have two options:
 

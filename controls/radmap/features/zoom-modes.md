@@ -130,8 +130,6 @@ The snapshot of the result:
 
  * [Click Modes]({%slug radmap-features-click-modes%})
 
- * [View Modes]({%slug radmap-features-view-modes%})
-
  * [Mouse Location]({%slug radmap-features-mouse-location%})
 
  * [Default Layout]({%slug radmap-features-default-layout%})

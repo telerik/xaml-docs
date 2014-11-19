@@ -57,8 +57,6 @@ Here is a more detailed visual structure of the __Commands Bar__:
 
  * [Template Structure]({%slug radmap-styles-and-templates-template-structure%})
 
- * [View Modes]({%slug radmap-features-view-modes%})
-
  * [Navigation]({%slug radmap-features-navigation%})
 
  * [Mouse Location]({%slug radmap-features-mouse-location%})

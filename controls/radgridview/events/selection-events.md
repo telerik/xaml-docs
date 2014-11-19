@@ -11,10 +11,9 @@ position: 5
 # Selection
 
 
-There are a couple of events relevant to the selection in the gridview: __SelectionChanging,____SelectionChanged__, __CurrentCellChanged, SelectedCellChanging__ and __SelectedCellChanged__. The sequence of the events depends on the __SelectionUnit__ property:
+There are a couple of events relevant to the selection in the gridview: __SelectionChanging, SelectionChanged, CurrentCellChanged, SelectedCellChanging and SelectedCellChanged__. The sequence of the events depends on the __SelectionUnit__ property:
 
 * __FullRow__ - the __SelectionChanged__ is fired first and after that the __CurrentCellChanged__ event fires. 
-
 
 * __Cell__ - the __SelectedCellChanged__ is fired first and after that the __CurrentCellChanged__ event fires T
 
@@ -52,7 +51,7 @@ It is fired once a selection is about to be performed and a change in the Select
 {{endregion}}
 
 
-The __SelectionChangingEventArgs__ exposes the following specific properties:__AddedItems__ - a collection of the item(s) that has/have been added to the selection.__RemovedItems__ - a collection of the item(s) that has/have been removed from the selection.__IsCancelable__ - gets a value that indicates whether the event is cancelable.__Cancel__ - a boolean property that enables canceling the selection. 
+__SelectionChangingEventArgs__ exposes the following specific properties:__AddedItems__ - a collection of the item(s) that has/have been added to the selection.__RemovedItems__ - a collection of the item(s) that has/have been removed from the selection.__IsCancelable__ - gets a value that indicates whether the event is cancelable.__Cancel__ - a boolean property that enables canceling the selection. 
 
 ## SelectionChanged event
 
@@ -92,7 +91,7 @@ The __SelectionChangedEventArgs__ class exposes the following specific propertie
 
 * __RemovedItems__ - a collection of the item(s) that has/have been removed from the selection.
 
-* __DataControl__ - an instance of the __RadGridView__ that has fired the event. 
+* __DataControl__ - an instance of __RadGridView__ that has fired the event. 
 
 ## CurrentCellChanged event
 

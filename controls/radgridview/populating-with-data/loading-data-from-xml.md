@@ -10,7 +10,7 @@ position: 3
 
 # Loading Data from XML
 
-In order to bind the __RadGridView__to a XML you will need to convert the XML to a collection and then to bind that collection using the __ItemsSource__property of the __RadGridView__. This tutorial will show you how to do this.
+In order to bind the __RadGridView__ to a XML you will need to convert the XML to a collection and then to bind that collection using the __ItemsSource__ property of __RadGridView__. This tutorial will show you how to do this.
 
 The final result should look like the snapshot below:  
 
@@ -91,7 +91,7 @@ The final result should look like the snapshot below:
 	End Class
 {{endregion}}
 
-* Create a new class named __XmlNodeItemList__, which derives from __ObservableCollection__of __XmlNodeItem__. This is a collection that will be created from the XML file. The __RadGridView__will be bound to this collection. 
+* Create a new class named __XmlNodeItemList__, which derives from __ObservableCollection__ of __XmlNodeItem__. This is a collection that will be created from the XML file. __RadGridView__ will be bound to this collection. 
 
 #### __C#__
 
@@ -184,7 +184,7 @@ The final result should look like the snapshot below:
 	End Class
 {{endregion}}
 
-* The next step is to declare the __RadGridViewXmlDataSource__as a resource in your application. 
+* The next step is to declare the __RadGridViewXmlDataSource__ as a resource in your application. 
 
 #### __XAML__
 
@@ -196,7 +196,7 @@ The final result should look like the snapshot below:
 	</UserControl.Resources>
 {{endregion}}
 
-* Update your __RadGridView__ declaration - set the __ItemsSource__property. 
+* Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
 #### __XAML__
 

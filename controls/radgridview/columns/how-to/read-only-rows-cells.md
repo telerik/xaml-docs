@@ -14,7 +14,7 @@ This article shows how to control which rows or cells to be read only.
 
 Before __Q2 2010 SP2__, the RadGridView had only one property to control the read-only state - __IsReadOnly__, which either enables or disables editing at gridview level. The only solution was to subscribe to the [BeginningEdit]({%slug gridview-events-edit%}) event and cancel it if you do not want to edit a particular cell.
 
-In Q2 2010 SP2, we added a new property - __IsReadOnlyBinding__at a gridview and a column level. You can bind it to a boolean property of your business object. Here is how it works depending on where it is set:
+In Q2 2010 SP2, we added a new property - __IsReadOnlyBinding__ at a gridview and a column level. You can bind it to a boolean property of your business object. Here is how it works depending on where it is set:
 
 ## IsReadOnlyBinding at RadGridView level [Read Only Rows]
 

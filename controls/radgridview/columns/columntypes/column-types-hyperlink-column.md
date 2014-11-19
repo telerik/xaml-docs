@@ -11,7 +11,7 @@ position: 7
 # Hyperlink Column
 
 
-The __GridViewHyperlinkColumn__ derives from the __GridViewBoundColumnBase__class and its content is represented by a __HyperlinkButton__ control. The bound value is automatically displayed as a link.
+__GridViewHyperlinkColumn__ derives from the __GridViewBoundColumnBase__ class and its content is represented by a __HyperlinkButton__ control. The bound value is automatically displayed as a link.
 
 Here is a list of the most important properties.
 

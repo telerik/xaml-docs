@@ -10,7 +10,7 @@ position: 7
 
 # Loading Data from ADO.NET Services
 
-The purpose of this tutorial is to show you how to populate a __RadGridView__ with data from an __ADO.NET Data Service__in two ways:
+The purpose of this tutorial is to show you how to populate a __RadGridView__ with data from an __ADO.NET Data Service__ in two ways:
 
 * A straight-forward way - [plain method calls](#Plain_Method_Calls). 
 
@@ -118,7 +118,7 @@ Run your demo, the result can be seen on the next image:
 
 ## Using MVVM Approach
 
-This section will show you how to populate your __RadGridView__ control in a MVVM manner. The __RadGridView__ will be bound to a data source object, that has a property __Customers__. When the control is loaded all customers from the Customers table in the Northwind database are loaded{% if site.site_name == 'Silverlight' %} asynchronously{% endif %}.
+This section will show you how to populate your __RadGridView__ control in a MVVM manner. __RadGridView__ will be bound to a data source object, that has a property __Customers__. When the control is loaded all customers from the Customers table in the Northwind database are loaded{% if site.site_name == 'Silverlight' %} asynchronously{% endif %}.
 
 * Create a new class named __NorthwindDataSource__. 
 

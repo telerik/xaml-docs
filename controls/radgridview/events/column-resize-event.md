@@ -14,11 +14,11 @@ position: 6
 
 As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when the user changes the column's width - __ColumnWidthChanging__ and __ColumnWidthChanged__. 
 
-* [Column Width Change events lifecycle](#lifecycle)
+* [Column Width Change events lifecycle](#column-width-change-events-lifecycle)
 
-* [ColumnWidthChanging event](#changing)
+* [ColumnWidthChanging event](#columnwidthchanging-event)
 
-* [ColumnWidthChanged event](#changed)
+* [ColumnWidthChanged event](#columnwidthchanged-event)
 
 ## Column Width Change events lifecycle
 

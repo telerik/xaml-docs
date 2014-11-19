@@ -16,11 +16,11 @@ This tutorial will show you how use a RadContextMenu with a RadGridView
 
 It will show you how to do the following:
 
-* [Define_a_RadContextMenu](#Define_a_RadContextMenu)
+* [Define_a_RadContextMenu](#define-a-radcontextmenu-with-menuitems)
 
-* [Create_a_Style_for_GridViewHeaderCell](#Create_a_Style_for_GridViewHeaderCell)
+* [Create_a_Style_for_GridViewHeaderCell](#create-a-style-for-the-column-headers)
 
-* [Define_the_RadGridView](#Define_the_RadGridView)
+* [Define_the_RadGridView](#define-the-radgridview)
 
 * [Result](#Result)
 

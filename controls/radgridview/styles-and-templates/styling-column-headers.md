@@ -13,7 +13,7 @@ position: 7
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewHeaderCell control]({%slug radgridview-styles-and-templates-templates-structure%}).
 
-The __RadGridView Header Cells__can be styled by creating an appropriate __Style__ and setting it to the __HeaderCellStyle__ property of the __GridViewColumns__. 
+__RadGridView's Header Cells__ can be styled by creating an appropriate __Style__ and setting it to the __HeaderCellStyle__ property of the __GridViewColumns__. 
 
 You have two options:
 
@@ -25,7 +25,7 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Style
 
->__GridViewHeaderCell__ control is located in the __Telerik.Windows.Controls.GridView__ namespace of the __Telerik.Windows.Controls.GridView__ assembly. 
+>__GridViewHeaderCell__ control is located in the __Telerik.Windows.Controls.GridView__ namespace of __Telerik.Windows.Controls.GridView__ assembly. 
 
 When working in Expression Blend, the namespaces that are needed will be added automatically.
 
@@ -35,7 +35,7 @@ Load your project in Expression Blend and open the User Control that holds the _
 
 After clicking 'OK', Expression Blend will generate the default style of the __GridViewHeaderCell__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __GridViewHeaderCell__. Their names indicate to which part of the __GridViewHeaderCell__appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of __GridViewHeaderCell__. Their names indicate to which part of the __GridViewHeaderCell__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
 ![](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_01.png){% endif %}
 

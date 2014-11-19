@@ -14,11 +14,11 @@ The delete events are ment to support the deleting data process. They occur when
 
 Currently the delete events occur once for all the rows to be deleted. To get notified use the following events exposed by the __RadGridView__ control:
 
-* [Delete Events Lifecycle](#deleteEventsLifecycle)
+* [Delete Events Lifecycle](#delete-events-lifecycle)
 
-* [Deleting event](#deletingEvent)
+* [Deleting event](#deleting-event)
 
-* [Deleted event](#deletedEvent)
+* [Deleted event](#deleted-event)
 
 ## Delete Events Lifecycle
 

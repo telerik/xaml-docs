@@ -21,7 +21,7 @@ These techniques, combined with the outstanding LINQ-based data engine, guarante
 
 >The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of user interface (UI) elements are generated from a larger number of data items based on which items are visible on-screen. Generating many UI elements when only a few elements might be on the screen can adversely affect the performance of your application.
 
-The following tutorial shows how to bind to a collection of business objects and virtualize the items displayed in a __RadGridView__ element using the __EnableColumnVirtualization__and __EnableRowVirtualization__ property.
+The following tutorial shows how to bind to a collection of business objects and virtualize the items displayed in a __RadGridView__ element using the __EnableColumnVirtualization__ and __EnableRowVirtualization__ property.
         
 >tipBy default they are both set to True.     
 
@@ -60,7 +60,7 @@ The __RadGridView__ is populated with 500 000 rows.
 
 ## Disable Column Virtualization
 
-In order to disable the UI __Column__ Virtualization behavior, you should set the __EnableColumnVirtualization__property of the __RadGridView__ to __False__. See the example below:
+In order to disable the UI __Column Virtualization__ behavior, you should set the __EnableColumnVirtualization__property of the __RadGridView__ to __False__. See the example below:
 
 #### __XAML__
 
@@ -72,7 +72,7 @@ In order to disable the UI __Column__ Virtualization behavior, you should set th
 
 ## Disable Row Virtualization
 
-In order to disable the UI __Row__Virtualization behavior, you should set the __EnableRowVirtualization__ property of the __RadGridView__ to __False__. See the example below:
+In order to disable the UI __Row Virtualization__ behavior, you should set the __EnableRowVirtualization__ property of the __RadGridView__ to __False__. See the example below:
 
 #### __XAML__
 

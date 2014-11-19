@@ -14,7 +14,7 @@ position: 10
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewGroupFooterCell control]({%slug radgridview-styles-and-templates-templates-structure%}).
 
-The __RadGridView Group Footers__can be styled by creating an appropriate __Style__ and setting it to the __GroupFooterCellStyle__ property of the __GridViewColumns__. 
+The __RadGridView Group Footers__ can be styled by creating an appropriate __Style__ and setting it to the __GroupFooterCellStyle__ property of the __GridViewColumns__. 
 
 You have two options:
 
@@ -31,9 +31,9 @@ Load your project in Expression Blend and open the User Control that holds the _
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __GridViewGroupFooterCell__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __GridViewGroupFooterCell__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __GridViewGroupFooterCell.__Their names indicate to which part of the __GridViewGroupFooterCell__appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __GridViewGroupFooterCell__. Their names indicate to which part of the __GridViewGroupFooterCell__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
 ![](images/RadGridView_Styles_and_Templates_Styling_GridViewFooterCell_01.png){% endif %}
 
@@ -43,7 +43,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * __GridViewGroupFooterCellStyle__ - the default __Style__ of the __GridViewGroupFooterCellStyle__.
 
-To apply the style to the real footers, set it to the __GroupFooterCellStyle__ property of the __RadGridView__columns.
+To apply the style to the real footers, set it to the __GroupFooterCellStyle__ property of the __RadGridView__ columns.
 
 #### __XAML__
 
@@ -56,7 +56,7 @@ To apply the style to the real footers, set it to the __GroupFooterCellStyle__ p
 
 >Don't forget to delete the dummy __GridViewFooterCell__ control, when you finish editing the style.
 
->tipBy default the footers are hidden. To show them set the __ShowGroupFooters__ property of the __RadGridView__to __True__. More information you can find [here]({%slug gridview-group-footers%}).{% if site.site_name == 'Silverlight' %}
+>tipBy default the footers are hidden. To show them set the __ShowGroupFooters__ property of __RadGridView__ to __True__. More information you can find [here]({%slug gridview-group-footers%}).{% if site.site_name == 'Silverlight' %}
 
 Here is an example of the described resources modified.{% endif %}{% if site.site_name == 'Silverlight' %}
 

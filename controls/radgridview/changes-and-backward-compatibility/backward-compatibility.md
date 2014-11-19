@@ -10,9 +10,6 @@ position: 1
 
 # Backward Compatibility
 
-
-Release history of the control
-
 ## Latest Release Notes
 
 You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
@@ -63,7 +60,7 @@ __What to do now:__
 GridViewIndicatorCell and its style consequently have not been used for a long time.
         
 
-You can check the full Release Notes for __Q3 2013__{% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q3-2013-version-2013-3-1016-432255941.aspx){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q3-2013-version-2013-3-1016-2120428450.aspx){% endif %}
+You can check the full Release Notes for __Q3 2013__{% if site.site_name == 'Silverlight' %} [ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q3-2013-version-2013-3-1016-432255941.aspx){% endif %}{% if site.site_name == 'WPF' %} [ here.](http://www.telerik.com/products/wpf/whats-new/release-history/q3-2013-version-2013-3-1016-2120428450.aspx){% endif %}
 
 ## Q2 2013
       
@@ -77,7 +74,7 @@ __What to do now:__
 
 You can use DragDropManager.
 
-You can check the full Release Notes for __Q2 2013__{% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q2-2013-version-2013-2-0611-3259441291.aspx#gridview){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q2-2013-version-2013-2-0611.aspx#gridview){% endif %}
+You can check the full Release Notes for __Q2 2013__{% if site.site_name == 'Silverlight' %} [ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q2-2013-version-2013-2-0611-3259441291.aspx#gridview){% endif %}{% if site.site_name == 'WPF' %} [ here.](http://www.telerik.com/products/wpf/whats-new/release-history/q2-2013-version-2013-2-0611.aspx#gridview){% endif %}
 
 ## Q1 2013
       
@@ -85,7 +82,7 @@ You can check the full Release Notes for __Q2 2013__{% if site.site_name == 'Sil
 There are no breaking changes introduced with that official version.
         
 
-You can check the full Release Notes for __Q1 2013__{% if site.site_name == 'Silverlight' %}[here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q1-2013-version-2013-1-0220-963710774.aspx#gridview){% endif %}{% if site.site_name == 'WPF' %}[here.](http://www.telerik.com/products/wpf/whats-new/release-history/q1-2013-version-2013-1-0220.aspx#gridview){% endif %}
+You can check the full Release Notes for __Q1 2013__{% if site.site_name == 'Silverlight' %} [ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes/q1-2013-version-2013-1-0220-963710774.aspx#gridview){% endif %}{% if site.site_name == 'WPF' %} [ here.](http://www.telerik.com/products/wpf/whats-new/release-history/q1-2013-version-2013-1-0220.aspx#gridview){% endif %}
 
 ## Q3 2012 SP
       

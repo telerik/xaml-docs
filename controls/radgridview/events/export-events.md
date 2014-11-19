@@ -12,13 +12,13 @@ position: 4
 
 As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when you export data from the gridview - __ElementExporting__ and __ElementExported__. __ElementExporting__ is a direct replacement of the __Exporting__ event which is used before Q1 2010 SP2. The __Exporting__ event will be obsoleted in __Q2 2010__.
 
-* [Export events lifecycle](#lifecycle)
+* [Export events lifecycle](#export-events-life-cycle)
 
-* [ElementExporting event](#Exporting)
+* [ElementExporting event](#elementexporting-event)
 
-* [InitializingExcelMLStyles event (ExcelML only)](#InitializingExcelMLStyles)
+* [InitializingExcelMLStyles event (ExcelML only)](#events-initializingexcelmlstyles-excelml-only)
 
-* [ElementExported event](#Exported)
+* [ElementExported event](#elementexported-event)
 
 ## Export events life-cycle
 

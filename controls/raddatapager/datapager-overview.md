@@ -10,13 +10,11 @@ position: 0
 
 # Overview
 
-<table> 
-<tr><td>RELATED VIDEOS</td></tr>
-<tr><td> In this video we will look at some of the features and functionality of __RadDataPager__ and how you can start using it in your Silverlight or WPF applications today.(Runtime: 03:01)
+## RELATED VIDEOS
+ In this video we will look at some of the features and functionality of __RadDataPager__ and how you can start using it in your Silverlight or WPF applications today.(Runtime: 03:01)
 
-![](images/datapager_introduction_video.png)
-[Link...](http://tv.telerik.com/watch/silverlight/introduction-to-raddatapager)
-</td></tr></table>
+![](images/datapager_introduction_video.png)(http://tv.telerik.com/watch/silverlight/introduction-to-raddatapager)
+
 
 
 {% if site.site_name == 'Silverlight' %}

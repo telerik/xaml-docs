@@ -5,15 +5,14 @@ description: Errors
 slug: radspreadprocessing-features-formulas-errors
 tags: errors
 published: True
-position: 3
+position: 4
 ---
 
 # Errors
 
 
 
-In some cases formula values may return errors. For example, it might have happened that you entered an invalid algebraic expression, or maybe you are
-        referencing a cell that does not exist. The specific error value which is returned can hint the cause of the issue and, therefore, facilitate the process of finding a solution.
+In some cases formula values may return errors. For example, it might have happened that you entered an invalid algebraic expression, or maybe you are referencing a cell that does not exist. The specific error value which is returned can hint the cause of the issue and, therefore, facilitate the process of finding a solution.
       
 
 ## 

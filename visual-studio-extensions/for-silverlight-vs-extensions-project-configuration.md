@@ -25,9 +25,9 @@ The quickest way to have such a project is using the __New Project Wizard__ in V
 
 For convenience the same project templates could be found under the __Visual C# -> Silverlight and Visual Basic -> Silverlight__ nodes. 
 
-After you click the __OK__button, you get the __Project Configuration Wizard__, provided by the Telerik UI for Silverlight Visual Studio Extensions. The wizard detects all the installed distributions of UI for Silverlight and lists them in a combo box. You can select a distribution which you want to be applied to your project. The wizard helps you manage the references to the UI for Silverlight that will be added to your application as well. 
+After you click the __OK__ button, you get the __Project Configuration Wizard__, provided by the Telerik UI for Silverlight Visual Studio Extensions. The wizard detects all the installed distributions of UI for Silverlight and lists them in a combo box. You can select a distribution which you want to be applied to your project. The wizard helps you manage the references to the UI for Silverlight that will be added to your application as well. 
 
-You can access the Project Configuration Wizard through the __Telerik__menu when you need to configure your Telerik Silverlight application or you need to convert an existing Silverlight application to a Telerik Silverlight application. These depend on the active project in the Visual Studio Solution Explorer: 
+You can access the Project Configuration Wizard through the __Telerik__ menu when you need to configure your Telerik Silverlight application or you need to convert an existing Silverlight application to a Telerik Silverlight application. These depend on the active project in the Visual Studio Solution Explorer: 
 
 __Configure Telerik Silverlight Application__
 
@@ -48,28 +48,22 @@ The Project Configuration Wizard lets you tune your project's use of UI for Silv
 The Project Configuration Wizard’s first page lets you:
         
 
-* 
-            Select a Telerik UI version from the list of versions detected on your system
+* Select a Telerik UI version from the list of versions detected on your system
           
 
-* 
-            Navigate to a folder you’ve manually downloaded and extracted a hotfix by clicking the __Browse__button
+* Navigate to a folder you’ve manually downloaded and extracted a hotfix by clicking the __Browse__ button
           
 
-* 
-            Download the latest versions available on our website using the __Download__button
+* Download the latest versions available on our website using the __Download__ button
           
 
-* 
-            Choose whether you want to copy the referenced assemblies to your solution folder
+* Choose whether you want to copy the referenced assemblies to your solution folder
           
 
-* 
-            Choose whether you want to use implicit styles or not ([more information]({%slug styling-apperance-implicit-styles-overview%}))
+* Choose whether you want to use implicit styles or not ([more information]({%slug styling-apperance-implicit-styles-overview%}))
           
 
-* 
-            Specify which assemblies your project would use. When selecting a UI for Silverlight assembly all dependent controls are selected automatically and vice-versa
+* Specify which assemblies your project would use. When selecting a UI for Silverlight assembly all dependent controls are selected automatically and vice-versa
           
 
 >The list of available assemblies might be empty in cases where the installed version of UI for Silverlight does not match the Silverlight version your project targets. For instance, you will not be offered any assemblies if you attempt to create a project targeting Silverlight 4.
@@ -79,35 +73,28 @@ The Project Configuration Wizard’s first page lets you:
 Through the Project Configuration Wizard’s second page you can:
         
 
-* 
-            Select the way you want themes to be applied in your project
+* Select the way you want themes to be applied in your project
             
 
-* 
-                via referencing theme assemblies
+* via referencing theme assemblies
               
 
-* 
-                via adding theme xaml files to your project (only available when using implicit styles)
+* via adding theme xaml files to your project (only available when using implicit styles)
               
 
-* 
-            Select the theme(s) you wish your to use
+* Select the theme(s) you wish your to use
           
 
 When you click the Finish button:
         
 
-* 
-            The selected assembly references get added to your project
+* The selected assembly references get added to your project
           
 
-* 
-            The necessary theme xaml files get included in your project
+* The necessary theme xaml files get included in your project
           
 
-* 
-            A default application-wide theme gets set if you select theming based on implicit styles. The first selected theme will be used for a default theme in case you select multiple themes
+* A default application-wide theme gets set if you select theming based on implicit styles. The first selected theme will be used for a default theme in case you select multiple themes
           
 
 # See Also

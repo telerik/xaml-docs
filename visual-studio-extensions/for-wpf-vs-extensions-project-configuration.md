@@ -27,13 +27,9 @@ __Configure Telerik WPF Application__
 
 ![VSExtentions WPF Overview Menu Configure](images/VSExtentions_WPF_OverviewMenuConfigure.png)
 
-
-
 __Convert to Telerik WPF Application__
 
 ![VSExtentions WPF Overview Menu Convert](images/VSExtentions_WPF_OverviewMenuConvert.png)
-
-
 
 Both menus have their context menu counterparts accessed by right clicking on the project you want to convert or configure. 
 
@@ -44,28 +40,22 @@ The Project Configuration Wizard lets you tune your project's use of UI for Wpf.
 The Project Configuration Wizard’s first page lets you:
         
 
-* 
-            Select a Telerik UI version from the list of versions detected on your system
+* Select a Telerik UI version from the list of versions detected on your system
           
 
-* 
-            Navigate to a folder you’ve manually downloaded and extracted a hotfix by clicking the __Browse__button.
+* Navigate to a folder you’ve manually downloaded and extracted a hotfix by clicking the __Browse__ button.
           
 
-* 
-            Download the latest versions available on our website using the __Download__button
+* Download the latest versions available on our website using the __Download__ button
           
 
-* 
-            Choose whether you want to copy the referenced assemblies to your solution folder
+* Choose whether you want to copy the referenced assemblies to your solution folder
           
 
-* 
-            Choose whether you want to use implicit styles or not ([more information]({%slug styling-apperance-implicit-styles-overview%}))
+* Choose whether you want to use implicit styles or not ([more information]({%slug styling-apperance-implicit-styles-overview%}))
           
 
-* 
-            Specify which assemblies your project would use. When selecting a UI for WPF assembly all dependent controls are selected automatically and vice-versa.
+* Specify which assemblies your project would use. When selecting a UI for WPF assembly all dependent controls are selected automatically and vice-versa.
           
 
 >The Project Configuration Wizard’s second page is only available if you choose to use theming based on implicit styles. The default UI for WPF theming mechanism does not require any special project configuration.
@@ -78,35 +68,28 @@ The Project Configuration Wizard’s first page lets you:
 Through the Project Configuration Wizard’s second page you can:
         
 
-* 
-            Select the way you want themes to be applied in your project
+* Select the way you want themes to be applied in your project
             
 
-* 
-                via referencing theme assemblies
+* via referencing theme assemblies
               
 
-* 
-                via adding theme xaml files to your project
+* via adding theme xaml files to your project
               
 
-* 
-            Select the theme(s) you wish your to use
+* Select the theme(s) you wish your to use
           
 
 When you click the Finish button:
         
 
-* 
-            The selected assembly references get added to your project
+* The selected assembly references get added to your project
           
 
-* 
-            The necessary theme xaml files get included in your project
+* The necessary theme xaml files get included in your project
           
 
-* 
-            A default application-wide theme gets set if you select theming based on implicit styles. The first selected theme will be used for a default theme in case you select multiple themes
+* A default application-wide theme gets set if you select theming based on implicit styles. The first selected theme will be used for a default theme in case you select multiple themes
           
 
 # See Also

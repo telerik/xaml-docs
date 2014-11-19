@@ -177,12 +177,7 @@ The following sample code will show you how this can be achieved:
 
 
 Note the __IsInverse__ property of the YAxis which is __false__ by default. Turned on it will reverse the axis. The picture shows it in action:
-
-
-
-
-         
-      ![](images/RadChart_Features_Axes_InverseAxis.PNG)
+![](images/RadChart_Features_Axes_InverseAxis.PNG)
 
 For a sample with databound Chart - take a look at our Inverse Axis [demo](http://demos.telerik.com/silverlight/#Chart/InverseAxis).
 
@@ -202,14 +197,6 @@ Optionally you may inverse the XAxis too - it will display the categories from D
 	telerikChart.DefaultView.ChartArea.AxisX.IsInverse = true
 	{{endregion}}
 
-
-
-Voila:
-
-
-
-
-         
-      ![](images/RadChart_Features_Axes_InverseXAxis.PNG)
+![](images/RadChart_Features_Axes_InverseXAxis.PNG)
 
 

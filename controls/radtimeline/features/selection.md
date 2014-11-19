@@ -129,13 +129,13 @@ __Extended SelectionMode__
 In the Extended selection mode case, the user can select timeline items in the following manner:
 
 * When the CTRL key is not pressed
-* One timeline item is selected at a time and previous selection is cleared.
-* Clicking on the empty space between timeline items clears the selection.
-* Range selection by click-and-drag clears previous selection.
+	* One timeline item is selected at a time and previous selection is cleared.
+	* Clicking on the empty space between timeline items clears the selection.
+	* Range selection by click-and-drag clears previous selection.
 * When the CTRL key is pressed, the user can extend the current selection
-* Clicking a timeline item toggles its selected state.
-* Clicking the empty space between timeline items preserves current selection.
-* Range selection by click-and-drag extends current selection with the newly selected timeline items.
+	* Clicking a timeline item toggles its selected state.
+	* Clicking the empty space between timeline items preserves current selection.
+	* Range selection by click-and-drag extends current selection with the newly selected timeline items.
 
 The following example demonstrates how to enable the __Extended__ selection mode for a timeline control:
 

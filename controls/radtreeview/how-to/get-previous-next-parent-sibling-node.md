@@ -40,7 +40,7 @@ Here is a simple treeview declaration:
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadTreeView_HowToGetPreviousNextSiblingParentNode_010.PNG)
 
@@ -69,10 +69,10 @@ For example, you should attach to the __SelectionChanged__ event and in the even
 
 {{region radtreeview-how-to-get-previous-next-parent-sibling-node_3}}
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-	    ' Get a reference to the treeview
+	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
 	
-	    ' Get the currently selected items
+	    ' Get the currently selected items '
 	    Dim selectedItems As ObservableCollection(Of [Object]) = treeView.SelectedItems
 	
 	    Dim item As RadTreeViewItem = TryCast(selectedItems(0), RadTreeViewItem)
@@ -102,25 +102,25 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 	    RadTreeViewItem previousItem = item.PreviousItem;
 	    RadTreeViewItem previousSiblingItem = item.PreviousSiblingItem;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtreeview-how-to-get-previous-next-parent-sibling-node_5}}
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-	    ' Get a reference to the treeview
+	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
 	
-	    ' Get the currently selected items
+	    ' Get the currently selected items '
 	    Dim selectedItems As ObservableCollection(Of [Object]) = treeView.SelectedItems
 	
 	    Dim item As RadTreeViewItem = TryCast(selectedItems(0), RadTreeViewItem)
 	
-	    ' Get the previous item and the previous sibling item
+	    ' Get the previous item and the previous sibling item '
 	    Dim previousItem As RadTreeViewItem = item.PreviousItem
 	    Dim previousSiblingItem As RadTreeViewItem = item.PreviousSiblingItem
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 ## Accessing the NextItem and NextSiblingItem 
 
@@ -148,29 +148,29 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 	    RadTreeViewItem nextItem = item.NextItem;
 	    RadTreeViewItem nextSiblingItem = item.NextSiblingItem;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __XAML__
 
 {{region radtreeview-how-to-get-previous-next-parent-sibling-node_7}}
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-	    ' Get a reference to the treeview
+	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
 	
-	    ' Get the currently selected items
+	    ' Get the currently selected items '
 	    Dim selectedItems As ObservableCollection(Of [Object]) = treeView.SelectedItems
 	
 	    Dim item As RadTreeViewItem = TryCast(selectedItems(0), RadTreeViewItem)
 	
-	    ' Get the previous item and the previous sibling item
+	    ' Get the previous item and the previous sibling item '
 	    Dim previousItem As RadTreeViewItem = item.PreviousItem
 	    Dim previousSiblingItem As RadTreeViewItem = item.PreviousSiblingItem
 	
-	    ' Get the next item and the next sibling item
+	    ' Get the next item and the next sibling item '
 	    Dim nextItem As RadTreeViewItem = item.NextItem
 	    Dim nextSiblingItem As RadTreeViewItem = item.NextSiblingItem
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 ## Accessing the ParentItem and RootItem 
 
@@ -202,33 +202,33 @@ If you want to get the parent item of the currently selected item, you should us
 	    RadTreeViewItem parentItem = item.ParentItem;
 	    RadTreeViewItem rootItem = item.RootItem;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtreeview-how-to-get-previous-next-parent-sibling-node_9}}
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-	    ' Get a reference to the treeview
+	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
 	
-	    ' Get the currently selected items
+	    ' Get the currently selected items '
 	    Dim selectedItems As ObservableCollection(Of [Object]) = treeView.SelectedItems
 	
 	    Dim item As RadTreeViewItem = TryCast(selectedItems(0), RadTreeViewItem)
 	
-	    ' Get the previous item and the previous sibling item
+	    ' Get the previous item and the previous sibling item '
 	    Dim previousItem As RadTreeViewItem = item.PreviousItem
 	    Dim previousSiblingItem As RadTreeViewItem = item.PreviousSiblingItem
 	
-	    ' Get the next item and the next sibling item
+	    ' Get the next item and the next sibling item '
 	    Dim nextItem As RadTreeViewItem = item.NextItem
 	    Dim nextSiblingItem As RadTreeViewItem = item.NextSiblingItem
 	
-	    ' Get the parent item and the root item
+	    ' Get the parent item and the root item '
 	    Dim parentItem As RadTreeViewItem = item.ParentItem
 	    Dim rootItem As RadTreeViewItem = item.RootItem
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 # See Also
  * [Expand and Collapse Items]({%slug radtreeview-how-to-expand-and-collapse-items%})

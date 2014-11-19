@@ -24,7 +24,7 @@ To display the data from the __WCF Data Service__, create a new WPF application 
 
 1. Select the __WPF Application__ project template.
 
-1. In the __Name__ box, type ___NorthwindExplorer___ and click __OK__. __Visual Studio__ adds the ___NorthwindExplorer___ project to the solution.
+1. In the __Name__ box, type ***NorthwindExplorer*** and click __OK__. __Visual Studio__ adds the ___NorthwindExplorer___ project to the solution.
 
 1. On the __Data__ menu, click __Show Data Sources__. The __Data Sources__ window opens.
 
@@ -86,7 +86,7 @@ To display the data from the __WCF Data Service__, create a new __Silverlight__ 
 
 1. Select the ___Silverlight Application___ project template.
 
-1. In the __Name__ box, type ___NorthwindExplorer__ and click ___OK___. The ___New Silverlight Application Wizard___ opens.
+1. In the __Name__ box, type ___NorthwindExplorer___ and click ___OK___. The ___New Silverlight Application Wizard___ opens.
 
 1. __Uncheck__ the __Web site__ check-box and click ___OK___. __Visual Studio__ adds the ___NorthwindExplorer___ project to the solution.
  ![Rad Data Service Data Source newsilverlightapplication 01](images/RadDataServiceDataSource_newsilverlightapplication01.PNG)

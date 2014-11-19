@@ -34,18 +34,18 @@ The __RowSelection__ class exposes __CanInsert()__ and __Insert()__ methods that
 #### __[C#] Example 1: Insert rows__
 
 {{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_0}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            int index = 2;
-	            int itemCount = 3;
-	
-	            if (worksheet.Rows.CanInsert(index, itemCount))
-	            {
-	                RowSelection selection = worksheet.Rows[index, index + itemCount];
-	                selection.Insert();
-	            }
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    int index = 2;
+    int itemCount = 3;
+
+    if (worksheet.Rows.CanInsert(index, itemCount))
+    {
+        RowSelection selection = worksheet.Rows[index, index + itemCount];
+        selection.Insert();
+    }
+{{endregion}}
 
 
 
@@ -60,15 +60,15 @@ The __RowSelection__ class exposes a __Remove()__ method that performs the remov
 #### __[C#] Example 2: Remove rows__
 
 {{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_1}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            int index = 2;
-	            int itemCount = 3;
-	
-	            RowSelection selection = worksheet.Rows[index, index + itemCount];
-	            selection.Remove();
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    int index = 2;
+    int itemCount = 3;
+
+    RowSelection selection = worksheet.Rows[index, index + itemCount];
+    selection.Remove();
+{{endregion}}
 
 
 
@@ -83,18 +83,18 @@ The __ColumnSelection__ class exposes __CanInsert()__ and __Insert()__ methods t
 #### __[C#] Example 3: Insert columns__
 
 {{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_2}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            int index = 2;
-	            int itemCount = 3;
-	
-	            if (worksheet.Columns.CanInsert(index, itemCount))
-	            {
-	                ColumnSelection selection = worksheet.Columns[index, index + itemCount];
-	                selection.Insert();
-	            }
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    int index = 2;
+    int itemCount = 3;
+
+    if (worksheet.Columns.CanInsert(index, itemCount))
+    {
+        ColumnSelection selection = worksheet.Columns[index, index + itemCount];
+        selection.Insert();
+    }
+{{endregion}}
 
 
 
@@ -109,14 +109,14 @@ The __ColumnSelection__ class exposes a __Remove()__ method that executes the re
 #### __[C#] Example 4: Remove columns__
 
 {{region radspreadprocessing-working-with-rows-and-columns-insert-and-remove_3}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            int index = 2;
-	            int itemCount = 3;
-	
-	            ColumnSelection selection = worksheet.Columns[index, index + itemCount];
-	            selection.Remove();
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    int index = 2;
+    int itemCount = 3;
+
+    ColumnSelection selection = worksheet.Columns[index, index + itemCount];
+    selection.Remove();
+{{endregion}}
 
 

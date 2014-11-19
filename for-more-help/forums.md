@@ -14,8 +14,6 @@ position: 1
 
 ## 
 
-The Telerik __Product Forums__, 
-        [http://www.telerik.com/community/forums.aspx](http://www.telerik.com/community/forums.aspx)        
-        , provide a place where you can communicate and consult with other people who use Telerik products.
+The Telerik __Product Forums__, [http://www.telerik.com/community/forums.aspx](http://www.telerik.com/community/forums.aspx) , provide a place where you can communicate and consult with other people who use Telerik products.
 
 

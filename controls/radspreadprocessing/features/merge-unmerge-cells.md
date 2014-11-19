@@ -29,20 +29,22 @@ __Example 1__ constructs a worksheet that will be used as a starting point in th
 #### __[C#] Example 1: Construct worksheet__
 
 {{region radspreadprocessing-features-merge-unmerge-cells_8}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Cells[0, 0].SetValue("A1");
-	            worksheet.Cells[1, 0].SetValue("A2");
-	            worksheet.Cells[0, 1].SetValue("B1");
-	            worksheet.Cells[1, 1].SetValue("B2");
-	{{endregion}}
+
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Cells[0, 0].SetValue("A1");
+    worksheet.Cells[1, 0].SetValue("A2");
+    worksheet.Cells[0, 1].SetValue("B1");
+    worksheet.Cells[1, 1].SetValue("B2");
+{{endregion}}
 
 
 
 __Figure 1__ shows the result of the snippet in __Example 1__.
         
 
-Figure 1: Worksheet![Rad Spread Processing Features Merge Unmerge Cells 01](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_01.png)
+Figure 1: Worksheet
+![Rad Spread Processing Features Merge Unmerge Cells 01](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_01.png)
 
 __Example 2__ illustrates how to perform a merge operation on the cell region *A1:B2*.
         
@@ -50,15 +52,14 @@ __Example 2__ illustrates how to perform a merge operation on the cell region *A
 #### __[C#] Example 2: Perform merge operation__
 
 {{region radspreadprocessing-features-merge-unmerge-cells_0}}
-	
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellIndex A1Cell = new CellIndex(0, 0);
-	            CellIndex B2Cell = new CellIndex(1, 1);
-	
-	            worksheet.Cells[A1Cell, B2Cell].Merge();
-	
-	{{endregion}}
+
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellIndex A1Cell = new CellIndex(0, 0);
+    CellIndex B2Cell = new CellIndex(1, 1);
+
+    worksheet.Cells[A1Cell, B2Cell].Merge();
+{{endregion}}
 
 
 
@@ -68,7 +69,8 @@ As a result of the merge, the four cells appear as one. The content of the newly
 __Figure 2__ demonstrates the result of __Example 2__ executed over the worksheet created in __Example 1__.
         
 
-Figure 2: Merge operation result![Rad Spread Processing Features Merge Unmerge Cells 02.](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_02..png)
+Figure 2: Merge operation result
+![Rad Spread Processing Features Merge Unmerge Cells 02.](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_02..png)
 
 Let’s see how the __MergeAcross()__ method will change the same region in the original worksheet:
         
@@ -80,13 +82,13 @@ __Example 3__ illustrates how to perform a merge operation on the cell region *A
 
 {{region radspreadprocessing-features-merge-unmerge-cells_1}}
 	
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellIndex A1Cell = new CellIndex(0, 0);
-	            CellIndex B2Cell = new CellIndex(1, 1);
-	            worksheet.Cells[A1Cell, B2Cell].MergeAcross();
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellIndex A1Cell = new CellIndex(0, 0);
+    CellIndex B2Cell = new CellIndex(1, 1);
+    worksheet.Cells[A1Cell, B2Cell].MergeAcross();
 	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -96,7 +98,8 @@ Note that unlike __Merge()__, the __MergeAcross()__ method creates a new cell fo
 __Figure 3__ demonstrates the result of __Example 3__ executed over the worksheet created in __Example 1__.
         
 
-Figure 3: Merge across operation result![Rad Spread Processing Features Merge Unmerge Cells 03](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_03.png)
+Figure 3: Merge across operation result
+![Rad Spread Processing Features Merge Unmerge Cells 03](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_03.png)
 
 If you now try to merge a cell range that intersects with another merged cell range, a third merged cell range will be produced out of the top-left and bottom-right cells of the two ranges.
         
@@ -108,13 +111,13 @@ __Example 4__ merges across the region *A1:B2* and then performs another merge o
 
 {{region radspreadprocessing-features-merge-unmerge-cells_2}}
 	
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellIndex B2Cell = new CellIndex(1, 1);
-	            CellIndex C3Cell = new CellIndex(2, 2);
-	            worksheet.Cells[B2Cell, C3Cell].Merge();
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellIndex B2Cell = new CellIndex(1, 1);
+    CellIndex C3Cell = new CellIndex(2, 2);
+    worksheet.Cells[B2Cell, C3Cell].Merge();
 	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -124,7 +127,8 @@ The result is a merged cell that ranges from *A1* to *C3*.
 __Figure 4__ demonstrates the result of __Example 4__ executed over the worksheet created in __Example 1__.
         
 
-Figure 4: Merge cell range with merged cell range result![Rad Spread Processing Features Merge Unmerge Cells 04](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_04.png)
+Figure 4: Merge cell range with merged cell range result
+![Rad Spread Processing Features Merge Unmerge Cells 04](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_04.png)
 
 ## Get Merged Cell Ranges
 
@@ -142,10 +146,9 @@ __Example 5__ checks if cell A1 is in a merged region.
 #### __[C#] Example 5: Check if cell is in merged cell range__
 
 {{region radspreadprocessing-features-merge-unmerge-cells_3}}
-	            CellIndex A1CellIndex = new CellIndex(0, 0);
-	            bool isA1merged = worksheet.Cells.GetIsMerged(A1CellIndex);
-	
-	{{endregion}}
+    CellIndex A1CellIndex = new CellIndex(0, 0);
+    bool isA1merged = worksheet.Cells.GetIsMerged(A1CellIndex);
+{{endregion}}
 
 
 
@@ -160,11 +163,10 @@ __Example 6__ shows how to use TryGetContainingMergedRange() method.
 #### __[C#] Example 6: Try get merged cell range__
 
 {{region radspreadprocessing-features-merge-unmerge-cells_4}}
-	            CellIndex A1CellIndex = new CellIndex(0, 0);
-	            CellRange mergedCellRange;
-	            bool canGetContainingMergedCellRange = worksheet.Cells.TryGetContainingMergedRange(A1CellIndex, out mergedCellRange);
-	
-	{{endregion}}
+    CellIndex A1CellIndex = new CellIndex(0, 0);
+    CellRange mergedCellRange;
+    bool canGetContainingMergedCellRange = worksheet.Cells.TryGetContainingMergedRange(A1CellIndex, out mergedCellRange);
+{{endregion}}
 
 
 
@@ -179,12 +181,11 @@ __Example 7__ shows how to use GetContainingMergedRanges() method.
 #### __[C#] Example 7: Get all containing merged ranges in a range__
 
 {{region radspreadprocessing-features-merge-unmerge-cells_5}}
-	            CellIndex A1CellIndex = new CellIndex(0, 0);
-	            CellIndex N33CellIndex = new CellIndex(32, 13);
-	            CellRange A1N33CellRange = new CellRange(A1CellIndex, N33CellIndex);
-	            IEnumerable<CellRange> containingMergedCellRanges = worksheet.Cells.GetContainingMergedRanges(A1N33CellRange);
-	
-	{{endregion}}
+    CellIndex A1CellIndex = new CellIndex(0, 0);
+    CellIndex N33CellIndex = new CellIndex(32, 13);
+    CellRange A1N33CellRange = new CellRange(A1CellIndex, N33CellIndex);
+    IEnumerable<CellRange> containingMergedCellRanges = worksheet.Cells.GetContainingMergedRanges(A1N33CellRange);
+{{endregion}}
 
 
 
@@ -199,12 +200,10 @@ __Example 8__ shows how to get all merged ranges in a worksheet.
 #### __[C#] Example 8: Get all merged ranges__
 
 {{region radspreadprocessing-features-merge-unmerge-cells_6}}
-	
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            IEnumerable<CellRange> mergedCellRanges = worksheet.Cells.GetMergedCellRanges();
-	
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    IEnumerable<CellRange> mergedCellRanges = worksheet.Cells.GetMergedCellRanges();
+{{endregion}}
 
 
 
@@ -213,7 +212,8 @@ __Example 8__ shows how to get all merged ranges in a worksheet.
 Once a cell is merged, the API offers an easy way to split it back to its composing cells. This is achieved through the __Unmerge()__ method of the __CellSelection__ class. When this method is invoked it unmerges all merged cell ranges that intersect with the selected cell range. For example, consider the worksheet in __Figure 5__ that has the regions *A1:B2* and *D4:E5* merged.
         
 
-Figure 5: Sample worksheet![Rad Spread Processing Features Merge Unmerge Cells 05](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_05.png)
+Figure 5: Sample worksheet
+![Rad Spread Processing Features Merge Unmerge Cells 05](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_05.png)
 
 __Example 9__ invokes the __Unmerge()__ method for the region *B2:D4* of the worksheet from __Figure 5__, which intersects with the two merged ranges.
         
@@ -221,16 +221,16 @@ __Example 9__ invokes the __Unmerge()__ method for the region *B2:D4* of the wor
 #### __[C#] Example 9: Unmerge cells__
 
 {{region radspreadprocessing-features-merge-unmerge-cells_7}}
-	            CellIndex B2CellIndex = new CellIndex(1, 1);
-	            CellIndex D4CellIndex = new CellIndex(3, 3);
-	            CellRange B2D4CellSelection = new CellRange(B2CellIndex, D4CellIndex);
-	            worksheet.Cells[B2D4CellSelection].Unmerge();
-	
-	{{endregion}}
+    CellIndex B2CellIndex = new CellIndex(1, 1);
+    CellIndex D4CellIndex = new CellIndex(3, 3);
+    CellRange B2D4CellSelection = new CellRange(B2CellIndex, D4CellIndex);
+    worksheet.Cells[B2D4CellSelection].Unmerge();
+{{endregion}}
 
 
 
 __Figure 6__ shows that as a result, the two ranges are unmerged.
         
 
-Figure 6: Result of unmerge action![Rad Spread Processing Features Merge Unmerge Cells 06](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_06.png)
+Figure 6: Result of unmerge action
+![Rad Spread Processing Features Merge Unmerge Cells 06](images/RadSpreadProcessing_Features_Merge_Unmerge_Cells_06.png)

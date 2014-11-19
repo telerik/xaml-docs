@@ -49,13 +49,13 @@ __Example 1__ shows how to retrieve and change the height of several rows.
 #### __[C#] Example 1: Change row heigth__
 
 {{region radspreadprocessing-working-with-rows-and-columns-resizing_0}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            RowSelection rowSelection = worksheet.Rows[5, 7];
-	            double rowsHeight = rowSelection.GetHeight().Value.Value;
-	            rowSelection.SetHeight(new RowHeight(rowsHeight + 50, true));
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    RowSelection rowSelection = worksheet.Rows[5, 7];
+    double rowsHeight = rowSelection.GetHeight().Value.Value;
+    rowSelection.SetHeight(new RowHeight(rowsHeight + 50, true));
+{{endregion}}
 
 
 
@@ -67,12 +67,12 @@ The autofit feature offers a handy approach for resizing multiple rows, so that 
 #### __[C#] Example 2: Fit height of rows__
 
 {{region radspreadprocessing-working-with-rows-and-columns-resizing_1}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            RowSelection rowSelection = worksheet.Rows[5, 7];
-	            rowSelection.AutoFitHeight();
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    RowSelection rowSelection = worksheet.Rows[5, 7];
+    rowSelection.AutoFitHeight();
+{{endregion}}
 
 
 
@@ -102,13 +102,13 @@ __Example 3__ shows how to retrieve and change the width of several columns.
 #### __[C#] Example 3: Change columns width__
 
 {{region radspreadprocessing-working-with-rows-and-columns-resizing_2}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            ColumnSelection columnSelection = worksheet.Columns[5, 7];
-	            double columnWidth = columnSelection.GetWidth().Value.Value;
-	            columnSelection.SetWidth(new ColumnWidth(columnWidth + 50, true));
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    ColumnSelection columnSelection = worksheet.Columns[5, 7];
+    double columnWidth = columnSelection.GetWidth().Value.Value;
+    columnSelection.SetWidth(new ColumnWidth(columnWidth + 50, true));
+{{endregion}}
 
 
 
@@ -120,12 +120,12 @@ The autofit feature offers a handy approach for resizing multiple columns, so th
 #### __[C#] Example 4: Fit width of columns__
 
 {{region radspreadprocessing-working-with-rows-and-columns-resizing_3}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            ColumnSelection columnSelection = worksheet.Columns[5, 7];
-	            columnSelection.AutoFitWidth();
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    ColumnSelection columnSelection = worksheet.Columns[5, 7];
+    columnSelection.AutoFitWidth();
+{{endregion}}
 
 
 
@@ -135,11 +135,11 @@ Another way to auto fit column widths is to use the __ExpandToFitNumberValuesWid
 #### __[C#] Example 5: Fit with ExpandToFitNumberValuesWidth()__
 
 {{region radspreadprocessing-working-with-rows-and-columns-resizing_4}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            ColumnSelection columnSelection = worksheet.Columns[5, 7];
-	            columnSelection.ExpandToFitNumberValuesWidth();
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    ColumnSelection columnSelection = worksheet.Columns[5, 7];
+    columnSelection.ExpandToFitNumberValuesWidth();
+{{endregion}}
 
 

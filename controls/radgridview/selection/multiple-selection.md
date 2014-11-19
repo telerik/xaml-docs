@@ -36,7 +36,7 @@ The __RadGridView__ allows the user to select more than one item from the displa
 	Me.radGridView.SelectionMode = System.Windows.Controls.SelectionMode.Extended
 {{endregion}}
 
-Users will be able to select multiple records using the common key modifiers - __Shift__ and __Ctrl__. Hold __Shift__ to select a range of grid rows - click on the first one and holding the __Shift__ key, click on the last row in the range. __RadGridView__ will select all rows between those two. You can select a set of grid rows (not necessarily neighboring). Hold the __Ctrl__ key and click on the rows which you want to be selected. The same rules apply to the cells if the [SelectionUnit](95D98659-5436-4CF0-8CEC-7C16469C3F61#selectionUnits) property is set to __Cell__.
+Users will be able to select multiple records using the common key modifiers - __Shift__ and __Ctrl__. Hold __Shift__ to select a range of grid rows - click on the first one and holding the __Shift__ key, click on the last row in the range. __RadGridView__ will select all rows between those two. You can select a set of grid rows (not necessarily neighboring). Hold the __Ctrl__ key and click on the rows which you want to be selected. The same rules apply to the cells if the [SelectionUnit]({%slug gridview-selection-basics%}) property is set to __Cell__.
 
 >tipPressing __Ctrl+A__ will select all items.
 
@@ -79,8 +79,8 @@ You can access all selected rows (or data items) through the __SelectedItems__ c
 
  * [Programmatic Selection]({%slug radgridview-selection-programmatic-selection%})
 
- * [Basic Filtering]({%slug gridview-basic-filtering2%})
+ * [Basic Filtering]({%slug gridview-filtering-basic%})
 
- * [Programmatic Filtering]({%slug gridview-programmatic-filtering%})
+ * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})
 
  * [Multiple-column Sorting]({%slug gridview-multiple-column-sorting%})

@@ -48,9 +48,9 @@ __Example 1__ shows hot to create a RectangleGeometry.
 #### __[C#] Example 1: Create RectangleGeometry__
 
 {{region radpdfprocessing-concepts-geometry_0}}
-	            RectangleGeometry rectangleGeometry = new RectangleGeometry();
-	            rectangleGeometry.Rect = new Rect(10, 5, 400, 300);
-	{{endregion}}
+    RectangleGeometry rectangleGeometry = new RectangleGeometry();
+    rectangleGeometry.Rect = new Rect(10, 5, 400, 300);
+{{endregion}}
 
 
 
@@ -65,10 +65,10 @@ PathGeometry represents a complex shape that may be composed of curves and lines
 * __FillRule__: Specifies how the intersecting areas contained in the PathGeometry are combined.
             
 
-* __EvenOdd__: Determines whether a point is inside a path by drawing a ray from that point in any direction and simply counting the number of path segments that cross the ray. If the number is odd, the point is inside. If even, the point is outside.
+ * __EvenOdd__: Determines whether a point is inside a path by drawing a ray from that point in any direction and simply counting the number of path segments that cross the ray. If the number is odd, the point is inside. If even, the point is outside.
                 
 
-* __Nonzero__: Determines whether a given point is inside a path by conceptually drawing a ray from that point to infinity in any direction and then examining the places where a segment of the path crosses the ray. Starting with a count of zero, the rule adds one each time a path segment crosses the ray from left to right and subtracts one each time a segment crosses from right to left. After counting all the crossings, if the result is zero, the point is outside the path. Otherwise, it is inside.
+ * __Nonzero__: Determines whether a given point is inside a path by conceptually drawing a ray from that point to infinity in any direction and then examining the places where a segment of the path crosses the ray. Starting with a count of zero, the rule adds one each time a path segment crosses the ray from left to right and subtracts one each time a segment crosses from right to left. After counting all the crossings, if the result is zero, the point is outside the path. Otherwise, it is inside.
                 
 
 __Example 2__ shows how to create a PathGeometry which consists of line segments and bezier segments.
@@ -77,17 +77,17 @@ __Example 2__ shows how to create a PathGeometry which consists of line segments
 #### __[C#] Example 2: Create PathGeometry __
 
 {{region radpdfprocessing-concepts-geometry_1}}
-	            PathGeometry pathGeometry = new PathGeometry();
-	            PathFigure pathFigure = pathGeometry.Figures.AddPathFigure();
-	            pathFigure.StartPoint = new Point(5, 5);
-	            LineSegment lineSegment = pathFigure.Segments.AddLineSegment();
-	            lineSegment.Point = new Point(205, 5);
-	            BezierSegment bezierSegment = pathFigure.Segments.AddBezierSegment();
-	            bezierSegment.Point1 = new Point(105, 50);
-	            bezierSegment.Point2 = new Point(130, 105);
-	            bezierSegment.Point3 = new Point(100, 200);
-	            pathFigure.IsClosed = true;
-	{{endregion}}
+    PathGeometry pathGeometry = new PathGeometry();
+    PathFigure pathFigure = pathGeometry.Figures.AddPathFigure();
+    pathFigure.StartPoint = new Point(5, 5);
+    LineSegment lineSegment = pathFigure.Segments.AddLineSegment();
+    lineSegment.Point = new Point(205, 5);
+    BezierSegment bezierSegment = pathFigure.Segments.AddBezierSegment();
+    bezierSegment.Point1 = new Point(105, 50);
+    bezierSegment.Point2 = new Point(130, 105);
+    bezierSegment.Point3 = new Point(100, 200);
+    pathFigure.IsClosed = true;
+{{endregion}}
 
 
 

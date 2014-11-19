@@ -5,7 +5,7 @@ description: Using CsvFormatProvider
 slug: radspreadprocessing-formats-and-conversion-csv-csvformatprovider
 tags: using,csvformatprovider
 published: True
-position: 0
+position: 1
 ---
 
 # Using CsvFormatProvider
@@ -26,20 +26,20 @@ __Example 1__ shows how to import a CSV file using a __FileStream__. The code as
 #### __[C#] Example 1: Import CSV File__
 
 {{region radspreadprocessing-formats-and-conversion-csv-csvformatprovider_0}}
-	                string fileName = "FileName.csv";
-	                if (!File.Exists(fileName))
-	                {
-	                    throw new FileNotFoundException(String.Format("File {0} was not found!", fileName));
-	                }
-	
-	                Workbook workbook;
-	                IWorkbookFormatProvider formatProvider = new CsvFormatProvider();
-	
-	                using (FileStream input = new FileStream(fileName, FileMode.Open))
-	                {
-	                    workbook = formatProvider.Import(input);
-	                }
-	{{endregion}}
+    string fileName = "FileName.csv";
+    if (!File.Exists(fileName))
+    {
+        throw new FileNotFoundException(String.Format("File {0} was not found!", fileName));
+    }
+
+    Workbook workbook;
+    IWorkbookFormatProvider formatProvider = new CsvFormatProvider();
+
+    using (FileStream input = new FileStream(fileName, FileMode.Open))
+    {
+        workbook = formatProvider.Import(input);
+    }
+{{endregion}}
 
 
 
@@ -51,16 +51,16 @@ __Example 2__ demonstrates how to export an existing Workbook to a CSV file. The
 #### __[C#] Example 2: Export CSV File__
 
 {{region radspreadprocessing-formats-and-conversion-csv-csvformatprovider_1}}
-	                Workbook workbook = new Workbook();
-	                workbook.Worksheets.Add();
-	
-	                string fileName = "SampleFile.csv";
-	                IWorkbookFormatProvider formatProvider = new CsvFormatProvider();
-	
-	                using (FileStream output = new FileStream(fileName, FileMode.Create))
-	                {
-	                    formatProvider.Export(workbook, output);
-	                }
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    workbook.Worksheets.Add();
+
+    string fileName = "SampleFile.csv";
+    IWorkbookFormatProvider formatProvider = new CsvFormatProvider();
+
+    using (FileStream output = new FileStream(fileName, FileMode.Create))
+    {
+        formatProvider.Export(workbook, output);
+    }
+{{endregion}}
 
 

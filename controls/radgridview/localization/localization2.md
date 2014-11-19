@@ -12,7 +12,7 @@ position: 0
 
 
 
-The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} allows you to localize __RadGridView__ control. 
+The built-in localization mechanism in the platform allows you to localize __RadGridView__ control. 
 
 Here is a list of the supported languages:
       
@@ -30,7 +30,7 @@ Here is a list of the supported languages:
 
 ![Rad Grid View Localization 4](images/RadGridView_Localization_4.png)
 
->tip__To learn more about the ways to localize the RadControls please read the common topic on [Localization](B0F77598-F54B-4ACA-B3EE-A38FF9B41BB8).
+>tip__To learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
 
 >__In order to dynamically localize the GridView at runtime, you should recreate it.__
 

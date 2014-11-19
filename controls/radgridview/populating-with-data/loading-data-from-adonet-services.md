@@ -325,7 +325,7 @@ Run your demo, the result can be seen on the next picture:
 
 ![](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
 
->tipIf you need to define the columns manually take a look at the [Defining Columns](0AE6DD74-8F95-4625-9083-A42F3F9217BD#Manual_Columns_Definition) topic.
+>tipIf you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
 
 # See Also
 

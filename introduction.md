@@ -105,7 +105,7 @@ Telerik UI for Silverlight features the following controls:
 
 * [MaskedInput]({%slug radmaskedinput-overview%})
 
-* [MediaPlayer]({%slug radmediaplayer-overview%S})
+* [MediaPlayer]({%slug radmediaplayer-overview%})
 
 * [Menu]({%slug radmenu-overview%})
 

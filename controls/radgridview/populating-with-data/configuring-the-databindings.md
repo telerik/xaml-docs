@@ -12,7 +12,7 @@ position: 1
 
 ## Setting the ItemsSource
 
-As a typical data control the __RadGridView__ displays data by binding to a source and generating visual elements for each item in it. The first thing you have to do is to set the __ItemsSource__ property of the __RadGridView__.
+As a typical data control the __RadGridView__ displays data by binding to a source and generating visual elements for each item in it. The first thing you have to do is to set the __ItemsSource__ property of __RadGridView__.
 
 #### __C#__
 

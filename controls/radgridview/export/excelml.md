@@ -67,7 +67,7 @@ You can define the Style when __InitializingExcelMLStyles__ event is raised. For
 	e.Styles.Add(style);
 {{endregion}}
 
-You can check the [article]({%slug gridview-export-events2%}) for more information on how to define an ExcelMLStyle.
+You can check the [article]({%slug gridview-export-events%}) for more information on how to define an ExcelMLStyle.
           
 
 >__InitializingExcelMLStyles__ event will be only raised when exporting with ExportFormat.ExcelML

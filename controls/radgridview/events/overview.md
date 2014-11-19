@@ -76,10 +76,10 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * Validation Events ([Read more]({%slug gridview-events-validation%}))
         
 
-* Filtering Events ([Read more](58E28F2D-0079-457E-AD57-EB837D43C2BE#Events))
+* Filtering Events ([Read more]({%slug gridview-filtering-basics%}))
         
 
-* Sorting Events ([Read more](FFEF9E84-B518-4DF1-819B-247298BAA176#Events))
+* Sorting Events ([Read more](({%slug gridview-sorting-basics%}))
         
 
 * __Sorting__ - occurs when the grid data is about to be sorted. The type of the passed event arguments is __GridViewSortingEventArgs__.
@@ -88,7 +88,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __Sorted__ - occurs when the grid data has been sorted. The type of the passed event arguments is __GridViewSortedEventArgs__.
           
 
-* Grouping ([Read more](435984A5-EE5A-485B-9803-8A024F49EF11#Events))
+* Grouping ([Read more]({%slug gridview-grouping-basics%}))
            
 
 * __Grouping__ - occurs when the grid data is about to be grouped. The type of the passed event arguments is __GridViewGroupingEventArgs__.

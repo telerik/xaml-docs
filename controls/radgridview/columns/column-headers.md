@@ -80,7 +80,7 @@ The header of the column hosts the built-in filtering mechanism, which allows yo
 
 ![](images/RadGridView_ColumnHeaders_5.png)
 
-To learn more about the filtering functionality take a look at the [Basic Filtering]({%slug gridview-basic-filtering2%}) topic in the Filtering chapter.
+To learn more about the filtering functionality take a look at the [Basic Filtering]({%slug gridview-basic-filtering%}) topic in the Filtering chapter.
 
 ## Grouping
 

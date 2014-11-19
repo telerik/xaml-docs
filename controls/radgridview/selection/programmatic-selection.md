@@ -214,6 +214,6 @@ The second one is to call the __Clear()__ method of the __SelectedItems__ collec
 
  * [Multiple Selection]({%slug gridview-multiple-selection%})
 
- * [Programmatic Filtering]({%slug gridview-programmatic-filtering%})
+ * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})
 
  * [Programmatic Sorting]({%slug gridview-sorting-programmatic%})

@@ -56,10 +56,10 @@ controls/radgridview/features/gridview-overview-paging.md,
 controls/radgridview/populating-with-data/gridview-loading-data-from-ria-services.md,
 controls/radgridview/populating-with-data/gridview-domaindatasource-support.md,
 controls/radgridview/populating-with-data/gridview-loading-data-from-web-services.md,
-controls/radgridview/paging/gridview-using-silverlight-datapager.md,
 controls/radgridview/hierarchical-gridview/how-to/gridview-create-hierarchical-grid-with-ria.md,
 controls/radgridview/troubleshooting/gridview-paging.md,
 controls/radgridview/troubleshooting/gridview-elementname-binding.md,
+controls/radgridview/paging/using-silverlight-datapager.md,
 controls/radmenu/features/animation.md,
 controls/radmenu/features/boundaries-detection.md,
 controls/radmediaplayer,
@@ -80,7 +80,7 @@ controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigati
 controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
 controls/radtreeview/how-to/howto-bind-treeview.md,
 controls/radcoverflow,
-controls/domaindatasource,]
+controls/raddomaindatasource,]
 
 navigation:
 ## List your directory names and order here, like this:

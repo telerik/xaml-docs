@@ -46,8 +46,6 @@ To learn more about customizing the point marks read the [Styling the Point Mark
 
  * [Styling the Point Marks]({%slug radchart-styling-and-appearance-styling-point-marks%})
 
- * [Templating the Point Marks]({%slug radchart-templating-point-marks%})[Templating Series Overview](69211D95-033D-42E8-A657-6FA9FAE5C71B)
-
  * [Chart Area]({%slug radchart-features-chart-area%})
 
  * [Data Binding Support Overview]({%slug radchart-populating-with-data-data-binding-support-overview%})

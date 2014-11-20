@@ -36,12 +36,12 @@ A container can be compared with a __HeaderedItemsControl__ but is also a true d
 
 The __RadDiagramContainerShape__ header is controlled via the __Content__ property:
 
-	
-<Grid>
-    <telerik:RadDiagram>
-        <telerik:RadDiagramContainerShape Content="Container" />
-    </telerik:RadDiagram>
-</Grid>
+#### __XAML__
+    <Grid>
+        <telerik:RadDiagram>
+            <telerik:RadDiagramContainerShape Content="Container" />
+        </telerik:RadDiagram>
+    </Grid>
 			  
 
 ![Rad Diagram Features Containers Content](images/RadDiagram_Features_Containers_Content.png)
@@ -93,10 +93,10 @@ You can also populate it manually in xaml:
 
 Or in code-behind:
 
-	#### __C#__
+#### __C#__
     containerShape.Items.Add(new RadDiagramShape() { Content = "Shape 1"});			  
 
-	#### __VB.NET__
+#### __VB.NET__
     containerShape.Items.Add(New RadDiagramShape() With {.Content = "Shape 1"})	  
 			  
 
@@ -105,7 +105,7 @@ Or in code-behind:
 You can also populate the __RadDiagramContainerShape__ from a collection of business items. You can use the __ItemsSource__ property to bind it to your data objects. For example, if the __RadDiagram.DataContext__ contains a collection of business nodes:
 		  
 
-	#### __C#__
+#### __C#__
     public class MainViewModel
     {
         public ObservableCollection<NodeViewModelBase> Nodes { get; set; }
@@ -132,7 +132,8 @@ You can also populate the __RadDiagramContainerShape__ from a collection of busi
             this.xDiagram.DataContext = new MainViewModel();
         }
     }
-			  
+    
+    
 #### __VB.NET__
     Public Class MainViewModel
         Public Property Nodes() As ObservableCollection(Of NodeViewModelBase)
@@ -169,22 +170,22 @@ You can also populate the __RadDiagramContainerShape__ from a collection of busi
 You can display that collection in a __RadDiagramContainerShape__:
 		  
 
-	#### __XAML__
-        <telerik:RadDiagram x:Name="xDiagram">
-            <telerik:RadDiagram.ShapeStyle>
-                <Style TargetType="telerik:RadDiagramShape">
-                    <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
-                </Style>
-            </telerik:RadDiagram.ShapeStyle>
-            <telerik:RadDiagram.ShapeTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Content}" />
-                </DataTemplate>
-            </telerik:RadDiagram.ShapeTemplate>
-            <telerik:RadDiagramContainerShape x:Name="cShape"
-                                        Content="Container"
-                                        ItemsSource="{Binding Nodes}" />
-        </telerik:RadDiagram>			  
+#### __XAML__
+    <telerik:RadDiagram x:Name="xDiagram">
+        <telerik:RadDiagram.ShapeStyle>
+            <Style TargetType="telerik:RadDiagramShape">
+                <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
+            </Style>
+        </telerik:RadDiagram.ShapeStyle>
+        <telerik:RadDiagram.ShapeTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding Content}" />
+            </DataTemplate>
+        </telerik:RadDiagram.ShapeTemplate>
+        <telerik:RadDiagramContainerShape x:Name="cShape"
+                                    Content="Container"
+                                    ItemsSource="{Binding Nodes}" />
+    </telerik:RadDiagram>			  
 			  
 
 ![Rad Diagram Container Shape Items Source](images/RadDiagram_ContainerShape_ItemsSource.png)
@@ -202,28 +203,29 @@ With Q2 2013, you can make your __RadDiagramContainerShape__ collapsible. In ord
 For instance, if you take the above __RadDiagramContainerShape__ data-bound definition, you can extend it to set the __IsCollapsible__ property to __True__ in the following manner:
 	  
 
-	#### __XAML__
-        <telerik:RadDiagram x:Name="xDiagram">
-            <telerik:RadDiagram.ShapeStyle>
-                <Style TargetType="telerik:RadDiagramShape">
-                    <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
-                </Style>
-            </telerik:RadDiagram.ShapeStyle>
-            <telerik:RadDiagram.ShapeTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Content}" />
-                </DataTemplate>
-            </telerik:RadDiagram.ShapeTemplate>
-            <telerik:RadDiagramContainerShape x:Name="cShape"
-                                              Content="Container"
-                                              IsCollapsible="True"
-                                              ItemsSource="{Binding Nodes}" />
-        </telerik:RadDiagram>		  
+#### __XAML__
+    <telerik:RadDiagram x:Name="xDiagram">
+        <telerik:RadDiagram.ShapeStyle>
+            <Style TargetType="telerik:RadDiagramShape">
+                <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
+            </Style>
+        </telerik:RadDiagram.ShapeStyle>
+        <telerik:RadDiagram.ShapeTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding Content}" />
+            </DataTemplate>
+        </telerik:RadDiagram.ShapeTemplate>
+        <telerik:RadDiagramContainerShape x:Name="cShape"
+                                          Content="Container"
+                                          IsCollapsible="True"
+                                          ItemsSource="{Binding Nodes}" />
+    </telerik:RadDiagram>		  
 			  
 
 
 
-This should result in the following layout:![Rad Diagram Container Shape Collapsible](images/RadDiagram_ContainerShape_Collapsible.png)
+This should result in the following layout:
+![Rad Diagram Container Shape Collapsible](images/RadDiagram_ContainerShape_Collapsible.png)
 
 Below you can find a list of all __RadDiagramContainerShape__ members that are related to the collapsible feature of the shape:
 	  
@@ -237,7 +239,7 @@ Below you can find a list of all __RadDiagramContainerShape__ members that are r
 * __CollapsedContent__ - gets or sets an __object__ that defines the content displayed inside a collapsed __RadDiagramContainerShape__.
 		  
 
-	#### __XAML__
+#### __XAML__
     <telerik:RadDiagram x:Name="xDiagram">
         <telerik:RadDiagram.ShapeStyle>
             <Style TargetType="telerik:RadDiagramShape">
@@ -297,7 +299,7 @@ You can easily customize the visual appearance of the __RadDiagramContainerShape
 * __BorderThickness__ - gets or sets the width of the __RadDiagramContainerShape__ outline.
 			
 
->tipYou can use the __RadDiagram.ContainerShapeStyle__ property to explicitly apply a style on all __RadDiagramContainerShapes__ in a __RadDiagram__ instance. [Read more](2ab56752-2384-426a-926c-34fc2108c2e6#ContainerShapeStyle).
+>tipYou can use the __RadDiagram.ContainerShapeStyle__ property to explicitly apply a style on all __RadDiagramContainerShapes__ in a __RadDiagram__ instance.
 		  
 
 # See Also

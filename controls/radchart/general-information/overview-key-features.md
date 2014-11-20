@@ -27,7 +27,7 @@ To support new data binding scenarios, Telerik RadChart provides automated data 
 * __Tooltip support__ - Telerik Chart allows adding tooltips to your charts for better visualization of your data. The tooltips can easily show the actual numbers behind the chart or even another chart. [Read more]({%slug radchart-features-tooltips%})
 
 * __Completely Stylable and Templatable__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart is a 100% lookless control providing full support for Expression Blend.  All 2D series, charts and axis elements can be dropped independently in Blend and styled individually. Furthermore the control ships with several pre-defined skins, which will help you, deliver a consistent look and feel in your application. Restyling RadChart with the available themes is as simple as changing a single property. 
-The added custom style properties for all major chart elements and all series facilitate using custom user styles. See [Styling and Appearance]({%slug radchart-styling-and-appearance-overview%}) and [Templating](13DD5D60-0C6A-4ABE-B72F-27A3F1E14807). 
+The added custom style properties for all major chart elements and all series facilitate using custom user styles.
 
 
 * __Animations and Interactivity__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart offers rich animations out-of-the-box. With the provided events you are able to build the interactivity you need like drill down charts or customized tooltips. 

@@ -22,7 +22,7 @@ Binding to __RadChart__ involves the following three properties:
 * __RadChart.SeriesMappings__ - a collection containing __SeriesMapping__ elements. __SeriesMapping__ defines the chart's type and how to map the data from the data source to the chart's [DataPoint]({%slug radchart-populating-with-data-overview%})s. Each __SeriesMapping__ contains a collection of __ItemMapping__ objects, each one defining how the properties of the data source elements map to the values required by the chart (__YValue__, __XValue__, __XCat__, etc.). __RadChart__ also supports automatic binding mode (when no series mappings are defined). Please take a look at the [Data Binding with Automatic Series Mappings]({%slug radchart-populating-with-data-data-binding-with-automatic-series-binding%}) and [Data Binding with Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) topics for more information. 
 
 
-* __RadChart.DefaultSeriesDefinition__ - gets or sets the default series type for a data bound chart. Check the supported [chart types](FE53F487-EA12-4E29-A7DB-1B273E094065) for more information.
+* __RadChart.DefaultSeriesDefinition__ - gets or sets the default series type for a data bound chart.
 
 ## Supported Data Sources
 

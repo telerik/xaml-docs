@@ -79,7 +79,8 @@ controls/radtoolbar/overview/declaration.md,
 controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigation-framework.md,
 controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
 controls/radtreeview/how-to/howto-bind-treeview.md,
-controls/radcoverflow]
+controls/radcoverflow,
+controls/domaindatasource,]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -483,6 +484,55 @@ navigation:
         position: 7
 ## Centaur Controls End
 
+## X1 Controls Start
+    controls/radcalculator:
+        title: RadCalculator
+    controls/radcalculator/style-and-templates:
+        title: Style and Templates
+    controls/radcarousel:
+        title: RadCarousel
+    controls/radcarousel/changes-and-backward-compability:
+        title: Changes and Backward Compability  
+    controls/radcarousel/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radcarousel/using-radcarousel:
+        title: Using RadCarousel
+    controls/radcarousel/using-radcarouselpanel:
+        title: Using RadCarouselPanel
+    controls/radcollectionnavigator:
+        title: RadCollectionNavigator
+    controls/radcollectionnavigator/changes-and-backward-compability:
+        title: Changes and Backward Compability 
+    controls/raddatafilter:
+        title: RadDataFilter
+    controls/raddataform:
+        title: RadDataForm
+    controls/raddataform/localization:
+        title: Localization
+    controls/raddataform/validation:
+        title: Validation
+    controls/raddatapager:
+        title: RadDataPager
+    controls/raddatapager/changes-and-backward-compability:
+        title: Changes and Backward Compability
+    controls/radgridview:
+        title: RadGridView
+    controls/raddataservicedatasource:
+        title: RadDataServiceDataSource
+    controls/radentityframeworkdatasource:
+        title: RadEntityFrameWorkDataSource
+    controls/radexpressioneditor:
+        title: RadExpressionEditor   
+    controls/radpropertygrid:
+        title: RadPropertyGrid
+    controls/radtilelist:
+        title: RadTileList
+    controls/radtreelistview:
+        title: RadTreeListView
+    controls/raddomaindatasource:
+        title: RadDomainDataSource
+## X1 Controls End
+
 ## Common Start
     controls:
         title: Controls
@@ -525,42 +575,6 @@ navigation:
     "api-reference":
         title: "Api Reference"
 ## Common End
-
-## X1 Controls Start
-    controls/radcalculator:
-        title: RadCalculator
-    controls/radcalculator/style-and-templates:
-        title: Style and Templates
-    controls/radcarousel:
-        title: RadCarousel
-    controls/radcarousel/changes-and-backward-compability:
-        title: Changes and Backward Compability  
-    controls/radcarousel/styling-and-appearance:
-        title: Styling and Appearance
-    controls/radcarousel/using-radcarousel:
-        title: Using RadCarousel
-    controls/radcarousel/using-radcarouselpanel:
-        title: Using RadCarouselPanel
-    controls/radcollectionnavigator:
-        title: RadCollectionNavigator
-    controls/radcollectionnavigator/changes-and-backward-compability:
-        title: Changes and Backward Compability 
-    controls/raddatafilter:
-        title: RadDataFilter
-    controls/raddataform:
-        title: RadDataForm
-    controls/raddataform/localization:
-        title: Localization
-    controls/raddataform/validation:
-        title: Validation
-    controls/raddatapager:
-        title: RadDataPager
-    controls/raddatapager/changes-and-backward-compability:
-        title: Changes and Backward Compability
-    controls/radgridview:
-        title: RadGridView
-## X1 Controls End
-
 
 ## Api Reference Start
     "*system.windows":

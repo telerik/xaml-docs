@@ -11,8 +11,6 @@ site_name: Silverlight
 
 # Trial License Limitations
 
-
-
 The following topic will explain you the main differences between the licenses available for the Telerik UI for Silverlight and the limitations of the __Trial License__.
 
 Currently there are two types of licenses used for UI for Silverlight:
@@ -35,9 +33,6 @@ The free trial licenses of all Telerik products are fully functional and will wo
 
 The trial licenses will occasionally display the following message on your application:
         
-
-
-
 Telerik UI for Silverlight trial version. Copyright Telerik © 2002-2014. To remove this message, please, purchase a developer version.
 
 # See Also

@@ -11,39 +11,26 @@ site_name: Silverlight
 
 # Namespace Declaration
 
-
-
 The following topic will show you how to manually declare a namespace in XAML.
 
-## 
-
-Almost all Telerik controls can be found in a special URI namespace. You can use only this namespace to access all controls from Telerik assemblies that you
-        	are referring in your application. You cannot access controls from assemblies that you are not referring.
+Almost all Telerik controls can be found in a special URI namespace. You can use only this namespace to access all controls from Telerik assemblies that you are referring in your application. You cannot access controls from assemblies that you are not referring.
         
-
->There are only few controls which are in another namespace. These are RadPivotGrid and RadPivotFieldList and their namespace is:
-        		xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"
+>There are only few controls which are in another namespace. These are RadPivotGrid and RadPivotFieldList and their namespace is: xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"
         	
-
 * Create a new [Silverlight Application]({%slug installation-adding-to-application-create-application-and-adding-control%}).
           	
-
 * Add references to the __Telerik DLLs__ in the Solution Explorer.
-          	![Common Installing Namespace Declaration 011](images/Common_InstallingNamespaceDeclaration_011.png)
+![Common Installing Namespace Declaration 011](images/Common_InstallingNamespaceDeclaration_011.png)
 
 * Open the __MainPage.xaml__.
-          	
-
+   	
 * Go to the __UserControl__ tag and write:
           	
-
 #### __XAML__
 
 {{region installation-adding-application-namespace-declaration_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
-
+{{endregion}}
 
 Or you can select it from the IntelliSense in XAML.![Common Installing Namespace Declaration 012](images/Common_InstallingNamespaceDeclaration_012.png)
 
@@ -65,9 +52,7 @@ Or you can select it from the IntelliSense in XAML.![Common Installing Namespace
 	        
 	    </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Now you should be able to declare any controls existing in this namespace and which is in the assemblies you have added in your project. An example of __RadTreeView__ declaration is shown below.
 
@@ -87,9 +72,7 @@ Or you can select it from the IntelliSense in XAML.![Common Installing Namespace
 	        <telerik:RadTreeView/>
 	    </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 >If you wonder which control in which assembly belongs to, read the main topic about [Controls Dependencies]({%slug installation-installing-controls-dependencies%}).
 

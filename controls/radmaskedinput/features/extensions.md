@@ -17,8 +17,7 @@ The __MaskedInputExtensions__ class allows you to further customize the __Masked
 
 ## Control the Minimum and Maximum Value
 
-* The __MaskedInputExtensions.Maximum__ property allows you to define the maximum value that can be entered in the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__
-              controls.
+* The __MaskedInputExtensions.Maximum__ property allows you to define the maximum value that can be entered in the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls.
             
 
 #### __XAML__

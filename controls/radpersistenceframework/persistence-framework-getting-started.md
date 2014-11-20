@@ -12,18 +12,10 @@ position: 3
 
 
 
-The __PersistenceFramework__allows you to save the visual state of your application either in an isolated storage or in a Stream.
+The __PersistenceFramework__ allows you to save the visual state of your application either in an isolated storage or in a Stream.
 	  
 
->In order to use the __PersistenceFramework__in your application, you need to add a reference to the following assemblies:
-		
-
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.PersistenceFramework__You can find more info
-		  {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-		  {% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
-		  {% endif %}
+>In order to use the __PersistenceFramework__ in your application, you need to add a reference to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.PersistenceFramework__ <br/> You can find more info {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html). {% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}
 
 ## Persisted Types
 
@@ -75,7 +67,7 @@ In order to save the application's layout properties in an isolated storage, you
 
 
 
-The above definition will prepare the __RadTreeView__control and all its UI related properties to be persisted. The __PersistenceManager__ uses the __IsolatedStorageProvider__ to store and load data to and from an isolated storage. This is why in order to save the __RadTreeView__'s UI properties, you can use the __IsolatedStorageProvider.SaveToStorage()__ method__:__
+The above definition will prepare the __RadTreeView__ control and all its UI related properties to be persisted. The __PersistenceManager__ uses the __IsolatedStorageProvider__ to store and load data to and from an isolated storage. This is why in order to save the __RadTreeView__'s UI properties, you can use the __IsolatedStorageProvider.SaveToStorage()__ method__:__
 
 #### __C#__
 
@@ -100,7 +92,7 @@ And in order to restore the saved __RadTreeView__ layout, you can call the __Iso
 
 ## Defining PersistenceManager that stores the layout data in a stream
 
-If you want to save the layout of a UI control in a stream, you can take advantage of the __PersistenceManager____Save()__ and __Load()__ methods. The __PersistenceManager.Save(object obj)__method saves the object's properties in a stream. The __PersistenceManager.____Load(object obj, Stream stream)__ method restores the properties from the stream, and if possible applies them to the object. So if you have a __RadTreeView__ definition:
+If you want to save the layout of a UI control in a stream, you can take advantage of the __PersistenceManager Save()__ and __Load()__ methods. The __PersistenceManager.Save(object obj)__ method saves the object's properties in a stream. The __PersistenceManager.Load(object obj, Stream stream)__ method restores the properties from the stream, and if possible applies them to the object. So if you have a __RadTreeView__ definition:
 		
 
 #### __XAML__
@@ -188,5 +180,3 @@ Later the layout of the __RadTreeView__ can be restored through the __Load()__ m
 		manager.Load(treeView, stream)
 	End Sub
 	{{endregion}}
-
-

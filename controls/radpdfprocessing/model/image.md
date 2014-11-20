@@ -5,7 +5,7 @@ description: Image
 slug: radpdfprocessing-model-image
 tags: image
 published: True
-position: 3
+position: 4
 ---
 
 # Image
@@ -15,9 +15,9 @@ position: 3
 __Image__ is a content element which contains an image source and represents an image.
       
 
-* [Inserting an Image](№Inserting_an_Image)
+* [Inserting an Image](#Inserting_an_Image)
 
-* [Modifying an Image](№Modifying_an_Image)
+* [Modifying an Image](#Modifying_an_Image)
 
 ## Inserting an Image
 
@@ -30,9 +30,9 @@ __Example 1__ shows how to initialize an Image object and add it to a previously
 #### __[C#] Example 1: Create Image__
 
 {{region radpdfprocessing-model-image_0}}
-	            Image image = new Image();
-	            container.Content.Add(image);
-	{{endregion}}
+    Image image = new Image();
+    container.Content.Add(image);
+{{endregion}}
 
 
 
@@ -42,9 +42,9 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 #### __[C#] Example 2: Add Image to container__
 
 {{region radpdfprocessing-model-image_1}}
-	            Image image = container.Content.AddImage();
-	            Image imageWithSource = container.Content.AddImage(imageSource);
-	{{endregion}}
+    Image image = container.Content.AddImage();
+    Image imageWithSource = container.Content.AddImage(imageSource);
+{{endregion}}
 
 
 

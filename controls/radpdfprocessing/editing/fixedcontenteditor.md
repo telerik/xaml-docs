@@ -5,7 +5,7 @@ description: FixedContentEditor
 slug: radpdfprocessing-editing-fixedcontenteditor
 tags: fixedcontenteditor
 published: True
-position: 0
+position: 4
 ---
 
 # FixedContentEditor
@@ -34,8 +34,8 @@ __FixedContentEditor__ is always associated to a single __IContentRootElement__ 
 #### __[C#] Example 1: Create FixedContentEditor__
 
 {{region radpdfprocessing-editing-fixedcontenteditor_0}}
-	            FixedContentEditor editor = new FixedContentEditor(contentRootElement);
-	{{endregion}}
+    FixedContentEditor editor = new FixedContentEditor(contentRootElement);
+{{endregion}}
 
 
 
@@ -48,8 +48,8 @@ __Example 2__ demonstrates how you can create а FixedContentEditor with specifi
 #### __[C#] Example 2: Create FixedContentEditor with Specific IPosition__
 
 {{region radpdfprocessing-editing-fixedcontenteditor_1}}
-	            FixedContentEditor editor = new FixedContentEditor(contentRootElement, initialPosition);
-	{{endregion}}
+    FixedContentEditor editor = new FixedContentEditor(contentRootElement, initialPosition);
+{{endregion}}
 
 
 
@@ -66,42 +66,40 @@ Inserting а [TextFragment]({%slug radpdfprocessing-model-textfragment%}) can be
 #### __[C#] Example 3: Insert TextFragment__
 
 {{region radpdfprocessing-editing-fixedcontenteditor_2}}
-	            editor.DrawText("First text fragment.");
-	{{endregion}}
+    editor.DrawText("First text fragment.");
+{{endregion}}
 
 
 
 __Figure 1__ shows the result of __Example 3__.
             
 
-Figure 1: TextFragment Result![Rad Pdf Processing Editing Fixed Content Editor 01](images/RadPdfProcessing_Editing_FixedContentEditor_01.png)
+Figure 1: TextFragment Result
+![Rad Pdf Processing Editing Fixed Content Editor 01](images/RadPdfProcessing_Editing_FixedContentEditor_01.png)
 
 ### Inserting Paragraph
 
-__Example 4__ shows how you can start a new paragraph with the __BeginText()__ method.
+__Example 4__ shows how you can use the __Block__ object to draw a paragraph.
             
 
 #### __[C#] Example 4: Insert Paragraph__
 
 {{region radpdfprocessing-editing-fixedcontenteditor_3}}
-	            using (editor.BeginText())
-	            {
-	                editor.DrawText("First sentence.");
-	                editor.DrawText("Second sentence.");
-	            }
-	{{endregion}}
+    Block block = new Block();
+    block.InsertText("First sentence.");
+    block.InsertText("Second sentence.");
+    editor.DrawBlock(block);
+{{endregion}}
 
 
 
 __Figure 2__ shows the result of __Example 4__.
             
 
-Figure 2: Paragraph![Rad Pdf Processing Editing Fixed Content Editor 02](images/RadPdfProcessing_Editing_FixedContentEditor_02.png)
+Figure 2: Paragraph
+![Rad Pdf Processing Editing Fixed Content Editor 02](images/RadPdfProcessing_Editing_FixedContentEditor_02.png)
 
-The __BeginText()__ method returns an IDisposable object, which ends the paragraph when disposed. A paragraph can also be ended using the __EndText()__ method.
-            
-
->tipBuilding a paragraph with the FixedContentEditor is much simpler than creating TextFragments yourself. The __BeginText()__ method would flow the content of a paragraph for you if this is necessary.
+>tipBuilding a paragraph with the FixedContentEditor is much simpler than creating TextFragments yourself. The [Block]({%slug radpdfprocessing-editing-block%}) object would flow the content of a paragraph for you if this is necessary.
               
 
 ### Inserting Image
@@ -109,11 +107,11 @@ The __BeginText()__ method returns an IDisposable object, which ends the paragra
 __FixedContentEditor__ provides several overloads for inserting an [Image]({%slug radpdfprocessing-model-image%}).
             
 
-__public void DrawImage(Stream stream, ImageFormat imageFormat);__
+__public void DrawImage(Stream stream);__
 
-__public void DrawImage(Stream stream, ImageFormat imageFormat, double width, double height);__
+__public void DrawImage(Stream stream, double width, double height);__
 
-__public void DrawImage(Stream stream, ImageFormat imageFormat, Size size);__
+__public void DrawImage(Stream stream, Size size);__
 
 __public void DrawImage(ImageSource source);__
 
@@ -127,15 +125,16 @@ __Example 5__ shows how you can add an image created from a Stream.
 #### __[C#] Example 5: Insert Image__
 
 {{region radpdfprocessing-editing-fixedcontenteditor_4}}
-	            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
-	            {
-	                editor.DrawImage(stream, ImageFormat.Jpeg, new Size(118, 28));
-	            }
-	{{endregion}}
+    using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
+    {
+        editor.DrawImage(stream, new Size(118, 28));
+    }
+{{endregion}}
 
 
 
-Figure 3: Image Result![Rad Pdf Processing Editing Fixed Content Editor 04](images/RadPdfProcessing_Editing_FixedContentEditor_04.png)
+Figure 3: Image Result
+![Rad Pdf Processing Editing Fixed Content Editor 04](images/RadPdfProcessing_Editing_FixedContentEditor_04.png)
 
 ### Inserting Geometries
 
@@ -163,8 +162,8 @@ __Example 6__ shows how you can add an ellipse using one of FixedContentEditor's
 #### __[C#] Example 6: Insert Ellipse__
 
 {{region radpdfprocessing-editing-fixedcontenteditor_5}}
-	            editor.DrawEllipse(new Point(250, 70), 136, 48);
-	{{endregion}}
+    editor.DrawEllipse(new Point(250, 70), 136, 48);
+{{endregion}}
 
 
 
@@ -182,7 +181,7 @@ __public IDisposable PushClipping(Rect clip)__: Inserts a new clipping defined f
 __public Clipping PopClipping()__: Pops the last clipping, which was inserted with the editor.
             
 
-When the returned __xIDisposable__ object from the __PushClipping()__ method is disposed, the clipping is popped from the clippings in the editor.
+When the returned __IDisposable__ object from the __PushClipping()__ method is disposed, the clipping is popped from the clippings in the editor.
             
 
 When a new clipping is pushed, it is set as a clipping to the current clipping in the editor. __Example 7__ shows how a clipping can be pushed:
@@ -191,154 +190,119 @@ When a new clipping is pushed, it is set as a clipping to the current clipping i
 #### __[C#] Example 7: Push Clipping__
 
 {{region radpdfprocessing-editing-fixedcontenteditor_6}}
-	            string visibleText = "The last word in this text is";
-	            string text = string.Format("{0} clipped.", visibleText); //The last word in this text is clipped.
-	            Size visisibleTextSize = editor.MeasureText(visibleText);
-	
-	            using (editor.PushClipping(new Rect(new Point(0, 0), visisibleTextSize)))
-	            {
-	                editor.DrawText(text);
-	            }
-	{{endregion}}
+    string visibleText = "The last word in this text is";
+    string text = string.Format("{0} clipped.", visibleText); //The last word in this text is clipped.
+    Block block = new Block();
+    block.InsertText(visibleText);
+    Size visisibleTextSize = block.Measure();
+
+    using (editor.PushClipping(new Rect(new Point(0, 0), visisibleTextSize)))
+    {
+        editor.DrawText(text);
+    }
+{{endregion}}
 
 
 
 __Figure 4__ shows the result of __Example 7__.
             
 
-Figure 4: Clipping Result![Rad Pdf Processing Editing Fixed Content Editor 03](images/RadPdfProcessing_Editing_FixedContentEditor_03.png)
+Figure 4: Clipping Result
+![Rad Pdf Processing Editing Fixed Content Editor 03](images/RadPdfProcessing_Editing_FixedContentEditor_03.png)
+
+### Inserting Table
+
+__FixedContentEditor__ exposes __DrawTable()__ method which allows you to easily position and draw tabular data in the PDF document. You can specify the size you need to fit the table in by using the appropriate overload of the __DrawTable()__ method.
+            
+
+__Example 8__ generates a table and draws it in some fixed size.
+            
+
+#### __[C#] Example 8: Insert Table__
+
+{{region radpdfprocessing-editing-fixedcontenteditor_8}}
+    Table table = new Table();
+    Border border = new Border();
+    table.DefaultCellProperties.Borders = new TableCellBorders(border, border, border, border);
+    table.DefaultCellProperties.Padding = new Thickness(10);
+    TableRow firstRow = table.Rows.AddTableRow();
+    firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("First cell");
+    firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Second cell");
+    firstRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Third cell");
+    TableRow secondRow = table.Rows.AddTableRow();
+    secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Forth cell");
+    secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Fifth cell");
+    secondRow.Cells.AddTableCell().Blocks.AddBlock().InsertText("Sixth cell");
+
+    RadFixedDocument document = new RadFixedDocument();
+    RadFixedPage page = document.Pages.AddPage();
+    FixedContentEditor editor = new FixedContentEditor(page);
+    editor.Position.Translate(10, 10);
+    editor.DrawTable(table, new Size(180, double.PositiveInfinity));
+{{endregion}}
+
+![Rad Pdf Processing Editing Fixed Content Editor 06](images/RadPdfProcessing_Editing_FixedContentEditor_06.png)
 
 ## Positioning
 
-The [Position]({%slug radpdfprocessing-concepts-position%})  property exposed by __FixedContentEditor__ allows an easy way to manipulate the position of inserted content elements.
+The [Position]({%slug radpdfprocessing-concepts-position%}) property exposed by __FixedContentEditor__ allows an easy way to manipulate the position of inserted content elements.
         
 
-The code in __Example 8__ shows how to manipulate the position of the inserted content elements and __Figure 5__ shows the result of the code.
+The code in __Example 9__ shows how to manipulate the position of the inserted content elements and __Figure 5__ shows the result of the code.
         
 
-#### __[C#] Example 8: Scale and Rotate Content__
+#### __[C#] Example 9: Scale and Rotate Content__
 
 {{region radpdfprocessing-editing-fixedcontenteditor_7}}
-	            editor.Position.Scale(1.5, 0.5);
-	            editor.Position.Rotate(10);
-	            editor.DrawText("Image:");
-	            editor.Position.Translate(0, 20);
-	            using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
-	            {
-	                editor.DrawImage(stream, ImageFormat.Jpeg, new Size(118, 28));
-	            }
-	{{endregion}}
+    editor.Position.Scale(1.5, 0.5);
+    editor.Position.Rotate(10);
+    editor.DrawText("Image:");
+    editor.Position.Translate(0, 20);
+    using (Stream stream = this.GetResourceStream("Telerik_logo.jpg"))
+    {
+        editor.DrawImage(stream, new Size(118, 28));
+    }
+{{endregion}}
 
 
 
-Figure 5: Positioning Result![Rad Pdf Processing Editing Fixed Content Editor 05](images/RadPdfProcessing_Editing_FixedContentEditor_05.png)
+Figure 5: Positioning Result
+![Rad Pdf Processing Editing Fixed Content Editor 05](images/RadPdfProcessing_Editing_FixedContentEditor_05.png)
+
+More detailed information about tables is avaialble in the [Table]({%slug radpdfprocessing-editing-table%}) documentation article.
+        
 
 ## Changing Current Styles
 
-When you use the draw methods of the __FixedContentEditor__, it creates different content elements. You can control the look of the newly created elements with the following properties:
+__FixedContentEditor__ has some properties and methods that affect how it will be rendered:
         
 
-* __GraphicProperties__: These properties are used to hold the graphics control parameters. The following parameters can be modified:
+* __TextProperties and GraphicProperties__: Responsible for the properties of text and graphics. For more information see the [Text and Graphic Properties]({%slug radpdfprocessing-editing-text-and-graphic-properties%}) article.
             
 
-* __IsFilled__: Specifies whether content elements should be filled.
-                
-
-* __IsStroked__: Specified whether content elements should be stroked.
-                
-
-* __FillColor__: The color which should be used to fill the content elements.
-                
-
-* __IsStroked__: Specified whether content elements should be stroked.
-                
-
-* __StrokeColor__: The color which should be used to stroke the content elements.
-                
-
-* __StrokeThickness__: The width of the stroke outline of content elements.
-                
-
-* __MiterLimit__: The miter limit for graphic elements.
-                
-
-* __StrokeDashOffset__: The dash array for graphic elements.
-                
-
-* __StrokeDashArray__: The stroke dash array for graphic elements.
-                
-
-* __StrokeLineJoin__: The stroke line join for graphic elements.
-                
-
-* __StrokeLineCap__: The stroke line cap for graphic elements.
-                
-
-* __TextProperties__: These properties are used to hold the parameters used for text fragments. The following parameters can be modified:
+* __SaveTextProperties()__: Saves the TextProperties. It returns an IDisposable object which calls RestoreTextProperties() when disposed and can be used in using statement.
             
 
-* __TextDecoration__: Property of type
-                  [TextDecoration](http://www.telerik.com/help/wpf/t_telerik_windows_documents_fixed_model_text_textdecorations.html)
-                  which specifies the text decorations for inserted text. The possible values are __None__ and __Underline__.
-                
+* __RestoreTextProperties()__: Restores the TextProperties.
+            
 
-* __CharacterSpacing__: The character spacing for text fragments.
-                
+* __SaveGraphicProperties()__: Saves the GraphicProperties. It returns an IDisposable object which calls RestoreGraphicProperties() when disposed and can be used in using statement.
+            
 
-* __WordSpacing__: The word spacing for text fragments.
-                
+* __RestoreGraphicProperties()__: Restores the GrahpicProperties.
+            
 
-* __HorizontalScaling__: The horizontal scaling for text fragments.
-                
+* __SaveProperties()__: Saves both the text and the graphic properties. It returns an IDisposable object which calls RestoreProperties() when disposed and can be used in using statement.
+            
 
-* __FontSize__: The font size for text fragments.
-                
-
-* __RenderingMode__: The rendering mode for text fragments.
-                
-
-* __TextRise__: The text rise for text fragments.
-                
-
-* __LineHeight__: The height for each line of the inserted text.
-                
-
-* __TextBlockHeigh__: The height of the test block which holds the inserted text.
-                
-
-* __TextBlockWidth__: The width of the text block which holds the inserted text.
-                
-
-* __Font__: The font for the inserted text.
-                
-
-* __HorizontalAlignment__: The horizontal positioning of the inserted text in the text block.
-                
-
-* __VerticalAlignment__: The vertical positioning of the inserted text in the text block.
-                
-
-__FixedContentEditor__ exposes the following methods which can be used to save the current properties:
-        
-
-__public IDisposable SaveTextProperties()__: Saves the current text properties.
-        
-
-__public IDisposable SaveGraphicProperties()__: Saves the current graphic properties.
-        
-
-Both methods return an IDisposable object, which restores the previously saved properties when disposed. The previously saved properties can also be restored using the following methods:
-        
-
-__public void RestoreGraphicProperties()__: Restores the previously saved graphic properties.
-        
-
-__public void RestoreTextProperties()__: Restores the previously saved text properties.
-        
+* __RestoreProperties()__: Restores both text and graphic properties.
+            
 
 # See Also
 
  * [RadFixedPage]({%slug radpdfprocessing-model-radfixedpage%})
+
+ * [Block]({%slug radpdfprocessing-editing-block%})
 
  * [Position]({%slug radpdfprocessing-concepts-position%})
 
@@ -349,3 +313,5 @@ __public void RestoreTextProperties()__: Restores the previously saved text prop
  * [Geometry]({%slug radpdfprocessing-concepts-geometry%})
 
  * [Clipping]({%slug radpdfprocessing-concepts-clipping%})
+
+ * [Table]({%slug radpdfprocessing-editing-table%})

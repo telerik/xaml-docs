@@ -14,8 +14,7 @@ position: 1
 
 >Before proceeding with this tutorial, please first read the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) help article.
 
-By utilizing the theming mechanism with implicit styles, you can change the theme of Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls at runtime without recreating the UI.  
-      All you need to do is remove the current merged dictionaries and then  add the merged dictionaries of another theme to your application resources in code-behind:
+By utilizing the theming mechanism with implicit styles, you can change the theme of Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls at runtime without recreating the UI. All you need to do is remove the current merged dictionaries and then  add the merged dictionaries of another theme to your application resources in code-behind:
       
 
 
@@ -35,10 +34,10 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 ## 
 
-1. Add the required assemblies from the Binaries.NoXaml folder located in the Telerik UI installation folder. You must also include the theme assemblies:
-       	 ![Dynamic Switch Themes dlls](images/DynamicSwitchThemes_dlls.png)
+1 Add the required assemblies from the Binaries.NoXaml folder located in the Telerik UI installation folder. You must also include the theme assemblies:
+![Dynamic Switch Themes dlls](images/DynamicSwitchThemes_dlls.png)
 
-1. Add the needed resource dictionaries for the default theme in App.xaml:
+2 Add the needed resource dictionaries for the default theme in App.xaml:
        	
 
 #### __XAML__
@@ -58,8 +57,7 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 
 
-1. 
-          Add a few controls of your choice to the page. In this example, we will add a grid, a stackpanel, a RadComboBox, a RadDateTimePicker and three buttons RadButtons to switch between three of the themes.
+3 Add a few controls of your choice to the page. In this example, we will add a grid, a stackpanel, a RadComboBox, a RadDateTimePicker and three buttons RadButtons to switch between three of the themes.
         
 
 #### __XAML__
@@ -93,8 +91,7 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 
 
-1. The example will use the simplest way to change the theme at runtime – it will use the Click event of each of the three RadButtons. 
-       	Upon click, we will clear merged dictionaries from the application resources and merge new resource dictionaries from the theme assemblies:
+4 The example will use the simplest way to change the theme at runtime – it will use the Click event of each of the three RadButtons. Upon click, we will clear merged dictionaries from the application resources and merge new resource dictionaries from the theme assemblies:
        
 
 #### __C#__
@@ -136,11 +133,14 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 
 
-1. Figures 1-3 show the result:      
+5 Figures 1-3 show the result:      
       	  
 
-Figure 1: Click the Office Black button to show a black and grey theme.![Dynamic Switch Themes 01](images/DynamicSwitchThemes_01.png)
+Figure 1: Click the Office Black button to show a black and grey theme.
+![Dynamic Switch Themes 01](images/DynamicSwitchThemes_01.png)
 
-Figure 2: The Windows8 theme shows a different set of colors for all controls – the flat styling of Windows 8.![Dynamic Switch Themes 02](images/DynamicSwitchThemes_02.png)
+Figure 2: The Windows8 theme shows a different set of colors for all controls – the flat styling of Windows 8.
+![Dynamic Switch Themes 02](images/DynamicSwitchThemes_02.png)
 
-Figure 3: And finally, the Windows 7 theme shows a blue-grey gradient set of colors for the controls.![Dynamic Switch Themes 03](images/DynamicSwitchThemes_03.png)
+Figure 3: And finally, the Windows 7 theme shows a blue-grey gradient set of colors for the controls.
+![Dynamic Switch Themes 03](images/DynamicSwitchThemes_03.png)

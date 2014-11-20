@@ -10,14 +10,11 @@ position: 0
 
 # Getting Started
 
-
-
 __RadDocking__ is an advanced {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control providing full Blend support. From within the visual environment of Blend, you can easily perform various tasks such as editing control properties, modifying themes, creating and modifying templates and more.
 
 This tutorial will walk you through the creation of a __RadDocking__ and will show how to:
 
 * Add __RadDocking__ in a control using Expression Blend. 
-
 
 * Add panes and setting their properties (__Header__, __CanUserClose__, __CanFloat__, etc.). 
 
@@ -25,41 +22,25 @@ This tutorial will walk you through the creation of a __RadDocking__ and will sh
 
 For the purpose of this tutorial, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Blend.
 
->
+>In order to use __RadDocking__ control in your projects you have to add references to {% if site.site_name == 'Silverlight' %}
 
-In order to use __RadDocking__ control in your projects you have to add references to ____{% if site.site_name == 'Silverlight' %}
-
-* Telerik.Windows.Controls.dll
-
-* Telerik.Windows.Controls.Navigation.dll
-
-* Telerik.Windows.Controls.Docking.dll{% endif %}{% if site.site_name == 'WPF' %}
-
-* Telerik.Windows.Controls.dll
-
-* Telerik.Windows.Controls.Navigation.dll
-
-* Telerik.Windows.Controls.Docking.dll
-
-* Telerik.Windows.Data.dll{% endif %}
+>	* Telerik.Windows.Controls.dll
+>	* Telerik.Windows.Controls.Navigation.dll
+>	* Telerik.Windows.Controls.Docking.dll{% endif %}{% if site.site_name == 'WPF' %}
+>	* Telerik.Windows.Controls.dll
+>	* Telerik.Windows.Controls.Navigation.dll
+>	* Telerik.Windows.Controls.Docking.dll
+>	* Telerik.Windows.Data.dll{% endif %}
 
 ## Adding RadDocking
 
 Open the __Asset__ Library (Window->Assets) in Expression Blend and start writing the name of the __RadDocking__ in the search box. 
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_010.png)
+![](images/RadDocking_GettingStarted_GettingStarted_010.png)
 
 Drag a __RadDocking__ control on the art board. 
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_020.png)
+![](images/RadDocking_GettingStarted_GettingStarted_020.png)
 
 As a result you can see the __RadDocking__. The underlaying XAML is pretty simple and looks like this:
 
@@ -67,13 +48,11 @@ As a result you can see the __RadDocking__. The underlaying XAML is pretty simpl
 
 {{region raddocking-getting-started2_0}}
 	<telerik:RadDocking/>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding DocumentHost
 
-The [Document Host]({%slug raddocking-features-document-host%}) is ment to be the default container for the editable documents in your application. By default it occupies the whole central area of the __RadDocking__control and each newly added pane is docked as a new tab page inside it. Switch to the XAML view (*View -> Active Document View -> XAML View*) and add a __DocumentHost__ to the __RadDocking__. In order to do that you need to set the __RadDocking.DocumentHost__ property.
+The [Document Host]({%slug raddocking-features-document-host%}) is ment to be the default container for the editable documents in your application. By default it occupies the whole central area of the __RadDocking__ control and each newly added pane is docked as a new tab page inside it. Switch to the XAML view (*View -> Active Document View -> XAML View*) and add a __DocumentHost__ to the __RadDocking__. In order to do that you need to set the __RadDocking.DocumentHost__ property.
 
 #### __XAML__
 
@@ -82,9 +61,7 @@ The [Document Host]({%slug raddocking-features-document-host%}) is ment to be th
 	    <telerik:RadDocking.DocumentHost>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding RadSplitContainer
 
@@ -101,9 +78,7 @@ Below you can see how to add a __RadSplitContainer__ inside the __DocumentHost__
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding RadPaneGroup
 
@@ -120,9 +95,7 @@ Before adding panes to your __RadDocking__ declaration you need to add [RadPaneG
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding RadPanes
 
@@ -143,45 +116,28 @@ Before adding panes to your __RadDocking__ declaration you need to add [RadPaneG
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
-
+{{endregion}}
 
 
 So far your dock should look like the snapshot below:
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_030.png)
+![](images/RadDocking_GettingStarted_GettingStarted_030.png)
 
 ## Setting the Header Property
 
 Select the first tabbed pane.
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_040.png)
+![](images/RadDocking_GettingStarted_GettingStarted_040.png)
 
 Set its [Header](#Header) property to "Description".
 
+![](images/RadDocking_GettingStarted_GettingStarted_050.png)
 
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_050.png)
-
-Repeat the same procedure for the second tabbed pane - set its __Header__ property to "NotDraggable__"__.
+Repeat the same procedure for the second tabbed pane - set its __Header__ property to __"NotDraggable"__.
 
 Here is the result so far:
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_060.png)
+![](images/RadDocking_GettingStarted_GettingStarted_060.png)
 
 The XAML is pretty simple and can be seen on the next figure:
 
@@ -200,11 +156,9 @@ The XAML is pretty simple and can be seen on the next figure:
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
-
-
->tip__The DocumentHost control is not a required element.__Make an experiment, remove it from the XAML above and run your application to see how the application changes.
+>tip __The DocumentHost control is not a required element.__ Make an experiment, remove it from the XAML above and run your application to see how the application changes.
 
 ## Setting CanFloat Property
 
@@ -212,11 +166,7 @@ As you suggest the second pane (with __Header__ "NonDraggable") cannot be [dragg
 
 Select the second tabbed pane and set the __CanFloat__ property to __false__.
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_070.png)
+![](images/RadDocking_GettingStarted_GettingStarted_070.png)
 
 #### __XAML__
 
@@ -233,25 +183,15 @@ Select the second tabbed pane and set the __CanFloat__ property to __false__.
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 Run your demo and try to [drag and drop]({%slug raddocking-features-drag-and-drop%}) the "Description" pane. You will end up with a floatable window. Now try to drag and drop the "NonDraggable" window.
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_080.png)
+![](images/RadDocking_GettingStarted_GettingStarted_080.png)
 
 Note the [visual indicators]({%slug raddocking-features-compass%}) which appear while you are dragging the "Description" pane - these visual indicators are called the [Compass]({%slug raddocking-features-compass%}) menu.
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_090.png)
+![](images/RadDocking_GettingStarted_GettingStarted_090.png)
 
 The __RadDocking__ gives you the ability to style them in the way you want. For more information read [here]({%slug raddocking-styling-the-compass%}).
 
@@ -276,15 +216,9 @@ Go back to the design surface in Expression Blend. Switch to the XAML view (View
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_100.png)
+![](images/RadDocking_GettingStarted_GettingStarted_100.png)
 
 ## Adding Pinned Panes
 
@@ -331,28 +265,17 @@ Add several panes and set their __Header__ like it is in the XAML below.
 	    </telerik:RadSplitContainer>
 	
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
+>Two things must be mentioned in the above code snippet:
 
+>	1. Note that the three [RadSplitContainers]({%slug raddocking-features-split-container%}) you added are not hosted in __DocumentHost__. The result will be that these splitters can be initially docked to any side of the dock area. 
 
->
-
-
-
-Two things must be mentioned in the above code snippet:
-
-1. Note that the three [RadSplitContainers]({%slug raddocking-features-split-container%}) you added are not hosted in __DocumentHost__. The result will be that these splitters can be initially docked to any side of the dock area. 
-
-
-1. Note the __InitialPosition__property. It indicates where the splitter to be initially docked.
+>	1. Note the __InitialPosition__ property. It indicates where the splitter to be initially docked.
 
 Here is how the final result should look like:
 
-
-
-
-         
-      ![](images/RadDocking_GettingStarted_GettingStarted_110.png)
+![](images/RadDocking_GettingStarted_GettingStarted_110.png)
 
 If you need further customizations of the RadDocking you can take a look at some of the following topics:
 
@@ -388,14 +311,10 @@ If you need to dive deeper in the __RadDocking__ structure, consider any of the 
 
 * What are the [RadPane]({%slug raddocking-panes-radpane%}) and the [RadDocumentPane]({%slug raddocking-panes-raddocumentpane%})? 
 
-
 * [Docked]({%slug raddocking-features-panes-docked-floating-panes%}), [Pinned]({%slug raddocking-panes-pinned-unpinned-panes%}), [Floating]({%slug raddocking-features-panes-docked-floating-panes%}), [Unpinned]({%slug raddocking-panes-pinned-unpinned-panes%}) and [Grouped]({%slug raddocking-features-pane-groups%}) panes. 
-
 
 * What is [Compass]({%slug raddocking-features-compass%})? 
 
-
 * What is [Tool Window]({%slug raddocking-features-tool-window%})? 
-
 
 * What is [Split Container]({%slug raddocking-features-split-container%})?

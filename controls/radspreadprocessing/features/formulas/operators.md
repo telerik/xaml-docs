@@ -5,7 +5,7 @@ description: Operator
 slug: radspreadprocessing-features-formulas-operators
 tags: operator
 published: True
-position: 0
+position: 1
 ---
 
 # Operator
@@ -19,9 +19,9 @@ This article lists and explains all supported operators.
 
 The document model supports four groups of operators: arithmetic, comparison, text and reference.
         
-<table><th><tr><td>
+<table><tr><th>
 
-Arithmetic Operators</td><td></td></tr></th><tr><td>
+Arithmetic Operators</th><th></th></tr><tr><td>
 
 + (Plus sign)</td><td>
 
@@ -46,19 +46,29 @@ Percent (10%)</td></tr><tr><td>
 ^ (Caret)</td><td>
 
 Exponentiation (5^2)</td></tr></table>
-<table><th><tr><td>
+<table>
+<tr>
+<th>
 
-Comparison Operators</td><td></td></tr></th><tr><td>
+Comparison Operators
+</th>
+<th></th>
+</tr>
+</th>
+<tr>
+<td>
 
 =</td><td>
 
 Equal to (A1=3)</td></tr><tr><td>
 
-></td><td>
+>
+</td><td>
 
 Greater than (A1>4)</td></tr><tr><td>
 
-<</td><td>
+&lt;
+</td><td>
 
 Less than (A1<5)</td></tr><tr><td>
 
@@ -66,23 +76,23 @@ Less than (A1<5)</td></tr><tr><td>
 
 Greater than or equal to (A1>=6)</td></tr><tr><td>
 
-<=</td><td>
+&lt;=</td><td>
 
 Less than or equal to (A1<=7)</td></tr><tr><td>
 
-<></td><td>
+&lt;></td><td>
 
 Not equal to (A1<>8)</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Concatenation Operator</td><td></td></tr></th><tr><td>
+Concatenation Operator</th><th></th></tr><tr><td>
 
 & (Ampersand)</td><td>
 
 Concatenates text values ("Rad"&"Spreadsheet")</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Reference Operator</td><td></td></tr></th><tr><td>
+Reference Operator</th><th></th></tr><tr><td>
 
 : (Colon)</td><td>
 
@@ -122,17 +132,17 @@ Addition and subtraction</td></tr><tr><td>
 
 Concatenates two strings</td></tr><tr><td>
 
-= (Equal)
+= (Equal) <br />
 
-> (Greater than)
+> (Greater than) <br />
 
-< (Less than)
+&lt; (Less than) <br />
 
->= (Greater than or equal to)
+>= (Greater than or equal to) <br />
 
-<= (Less than or equal to)
+&lt;= (Less than or equal to)  <br />
 
-<> (Not equal)</td><td>
+&lt;> (Not equal)</td><td>
 
 Comparison operators</td></tr></table>
 

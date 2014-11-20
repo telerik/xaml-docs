@@ -16,8 +16,7 @@ This article explains how to apply a Theme for a control you have additionally e
 
 ## 
 
-When you are setting the theme to your extended control using StyleManager, you have to set the __DefaultStyleKey__ in the OnInitialized method.
-          This is needed as we are using a composite key to set the theme per control.
+When you are setting the theme to your extended control using StyleManager, you have to set the __DefaultStyleKey__ in the OnInitialized method. This is needed as we are using a composite key to set the theme per control.
         
 
 Lets say you have a custom control that inherits RadGridView. The snippet below demonstrates how to set any Telerik theme to it:

@@ -16,6 +16,7 @@ Worksheets in the document model consist of cells organized in rows and columns.
       
 
 * [Insert Cells](#insert-cells)
+* [Remove Cells](#remove-cells)
 
 ## Insert Cells
 
@@ -32,18 +33,18 @@ The __CellSelection__ class exposes an __Insert()__ method that takes one argume
 
 {{region radspreadprocessing-working-with-cells-insert-remove-cells_0}}
 	
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    CellRange range = new CellRange(1, 1, 10, 10);
+    CellSelection selection = worksheet.Cells[range];
+
+    if (selection.CanInsertOrRemove(range, ShiftType.Right))
+    {
+        selection.Insert(InsertShiftType.Right);
+    }
 	
-	            CellRange range = new CellRange(1, 1, 10, 10);
-	            CellSelection selection = worksheet.Cells[range];
-	
-	            if (selection.CanInsertOrRemove(range, ShiftType.Right))
-	            {
-	                selection.Insert(InsertShiftType.Right);
-	            }
-	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -62,17 +63,17 @@ The __CellSelection__ class exposes a __Remove()__ method that takes one argumen
 
 {{region radspreadprocessing-working-with-cells-insert-remove-cells_1}}
 	
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    CellRange range = new CellRange(1, 1, 10, 10);
+    CellSelection selection = worksheet.Cells[range];
+
+    if (selection.CanInsertOrRemove(range, ShiftType.Up))
+    {
+        selection.Remove(RemoveShiftType.Up);
+    }
 	
-	            CellRange range = new CellRange(1, 1, 10, 10);
-	            CellSelection selection = worksheet.Cells[range];
-	
-	            if (selection.CanInsertOrRemove(range, ShiftType.Up))
-	            {
-	                selection.Remove(RemoveShiftType.Up);
-	            }
-	
-	{{endregion}}
+{{endregion}}
 
 

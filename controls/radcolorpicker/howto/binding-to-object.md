@@ -55,7 +55,7 @@ For the purpose of this example we will create a __ColorModel__ class and three 
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-binding-object_2}}
 		Public Class ColorModel
@@ -97,7 +97,7 @@ Next we will define the __MainViewModel__ which will wrap and fill the collectio
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-binding-object_4}}
 		Public Class MainViewModel
@@ -119,7 +119,7 @@ Then we can set this model as __DataContext__ of the __RadColorPicker__. Go in y
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-binding-object_6}}
 		Me.DataContext = New MainViewModel()

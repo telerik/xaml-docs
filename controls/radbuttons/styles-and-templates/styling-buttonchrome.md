@@ -12,9 +12,7 @@ position: 2
 
 
 
-The __ButtonChrome__ control was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. 
-     If you're using an older version fo the RadControl, this article will help you style the __ButtonChrome__ control. 
-     It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
+The __ButtonChrome__ control was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. If you're using an older version fo the RadControl, this article will help you style the __ButtonChrome__ control. It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 
 You have two options:
 

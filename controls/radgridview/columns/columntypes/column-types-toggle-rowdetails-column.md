@@ -11,9 +11,6 @@ position: 10
 # Toggle RowDetails Column
 
 
-
-## 
-
 The __GridViewToggleRowDetailsColumn__ derives from the __GridViewColumn__ class, which means that it isn't used  to display data. The column is represented by an __GridViewToggleButton__ control. Clicking on it will show the __RowDetails__ if they are available. More about row details can be found [here]({%slug radgridview-row-details-overview%}).
 
 >You should either use the __RadGridView.RowDetailsVisibilityMode__ property to control the state of __all grid rows__ or use a __GridViewToggleRowDetailsColumn__ to control the state of __each individual row__. Since the __GridViewToggleRowDetailsColumn__ operates on the respective __GridViewRow.DetailsVisibilityProperty__, having a __RadGridView.RowDetailsVisibilityMode__ different from collapsed might lead to unexpected results.
@@ -29,6 +26,7 @@ Here it is shown how to declare a column of this type.
 #### __XAML__
 
 {{region radgridview-columns-column-types-toggle-rowdetails-column_0}}
+
 	<telerik:RadGridView x:Name="radGridView"
 	                         AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -36,12 +34,6 @@ Here it is shown how to declare a column of this type.
 	        ...
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadGridView_ColumnTypes_10.png)
+![](images/RadGridView_ColumnTypes_10.png)

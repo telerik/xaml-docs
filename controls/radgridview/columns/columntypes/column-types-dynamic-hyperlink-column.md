@@ -10,10 +10,6 @@ position: 8
 
 # Dynamic Hyperlink Column
 
-
-
-## 
-
 The __GridViewDynamicHyperlinkColumn__ derives from the __GridViewBoundColumnBase__class. Except the binding to the desired property of your business object it allows you to easily specify an URL for the hyperlink that hosts the content.
 
 Here is a list of the most important properties.
@@ -29,21 +25,17 @@ Here is how to define a column of such type.
 #### __XAML__
 
 {{region radgridview-columns-column-types-dynamic-hyperlink-column_0}}
+
 	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
+	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDynamicHyperlinkColumn DataMemberBinding="{Binding Name}"
-	                                 NavigateUrlMemberPaths="TeamUrl"
-	                                 NavigateUrlFormatString="{} http://oficialleaguesite.com/{0}"
-	                                 TargetName="_blank" />
+	        <telerik:GridViewDynamicHyperlinkColumn 
+				 DataMemberBinding="{Binding Name}"
+				 NavigateUrlMemberPaths="TeamUrl"
+				 NavigateUrlFormatString="{} http://oficialleaguesite.com/{0}"
+				 TargetName="_blank" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadGridView_ColumnTypes_9.png)
+![](images/RadGridView_ColumnTypes_9.png)

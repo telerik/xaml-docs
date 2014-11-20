@@ -5,7 +5,7 @@ description: Using PdfFormatProvider
 slug: radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider
 tags: using,pdfformatprovider
 published: True
-position: 1
+position: 2
 ---
 
 # Using PdfFormatProvider
@@ -39,13 +39,13 @@ __Example 1__ shows how to use __PdfFormatProvider__ to export a Workbook to a f
 #### __[C#] Example 1: PdfFormatProvider Export Example__
 
 {{region radspreadprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
-	                PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
-	                using (Stream output = GetFileStream())
-	                {
-	                    Workbook workbook = CreateSampleWorkbook();
-	                    pdfFormatProvider.Export(workbook, output);
-	                }
-	{{endregion}}
+    PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
+    using (Stream output = GetFileStream())
+    {
+        Workbook workbook = CreateSampleWorkbook();
+        pdfFormatProvider.Export(workbook, output);
+    }
+{{endregion}}
 
 
 

@@ -10,9 +10,12 @@ position: 0
 
 # Overview
 
-
-
-{% if site.site_name == 'Silverlight' %}![Rad Gantt View Overview 010 SL](images/RadGanttView_Overview_010_SL.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Gantt View Overview 010 WPF](images/RadGanttView_Overview_010_WPF.png){% endif %}
+{% if site.site_name == 'Silverlight' %}
+![Rad Gantt View Overview 010 SL](images/RadGanttView_Overview_010_SL.png)
+{% endif %}
+{% if site.site_name == 'WPF' %}
+![Rad Gantt View Overview 010 WPF](images/RadGanttView_Overview_010_WPF.png)
+{% endif %}
 
 Telerik __RadGanttView__ is a control used for managing and visualization project planning data in a MVVM friendly way.
 
@@ -32,8 +35,4 @@ __Key features__ list includes:
 
 * __Silverlight/WPF Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} GanttView shares a single codebase with its {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %} counterpart. This means that you can achieve close to 100% code reuse for your GanttView logic if you have parallel Silverlight/WPF development. 
 
-You can check __RadGanttView__ demos at
-     	{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/#GanttView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
-      .
-
-# See Also
+You can check __RadGanttView__ demos at {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/#GanttView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}

@@ -10,14 +10,11 @@ position: 2
 
 # Styling the RadTreeViewItem
 
-
-
 The __RadTreeViewItem__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.
 
 You have two options:
 
 * To create an empty style and set it up on your own.
-
 * To copy the default style of the control and modify it.
 
 This topic will show you how to perform the second one.
@@ -30,16 +27,13 @@ Load your project in Expression Blend and open the User Control that holds the _
 
 * You can also use the __ItemContainerStyle__ property of the __RadTreeView__, when you have dynamic items. In this way you have to set the style only once and it will be applied to all of the __RadTreeViewItems__. To copy the default style via the __ItemContainerStyle__ property select the __RadTreeView__ holding the items and choose *Object -> Edit Additional Styles -> Edit Generated Item Container (ItemContainerStyle) -> Edit a Copy* from the menu.
 
+	>When using __ItemContainerStyle__ with static items, it will get applied only to the direct children of the __RadTreeView__ - the top-level items. If you want their child items to have the same style you have to manually set the __ItemContainerStyle__ property of their parents.
 
->
+	>When using the __ItemContainerStyle__ with dynamic items, its value gets inherited through the hierarchy thanks to the __HierarchicalDataTemplate__. You are free to break the inheritance, when needed, by using multiple nested __HierarchicalDataTemplates__ and by setting the __ItemContainerStyle__ property of each of them.
 
-When using __ItemContainerStyle__ with static items, it will get applied only to the direct children of the __RadTreeView__ - the top-level items. If you want their child items to have the same style you have to manually set the __ItemContainerStyle__ property of their parents.
+	>Choosing the style for an item depending on its position in the hierarchy can be done by using the __ItemContainerStyleSelector__ property. Read more about selectors [here]({%slug radtreeview-populating-with-data-item-container-style-selector%}).
 
-When using the __ItemContainerStyle__ with dynamic items, its value gets inherited through the hierarchy thanks to the __HierarchicalDataTemplate__. You are free to break the inheritance, when needed, by using multiple nested __HierarchicalDataTemplates__ and by setting the __ItemContainerStyle__ property of each of them.
-
-Choosing the style for an item depending on its position in the hierarchy can be done by using the __ItemContainerStyleSelector__ property. Read more about selectors [here]({%slug radtreeview-populating-with-data-item-container-style-selector%}).
-
->tipTo see an example of defining the __ItemContainerStyle__ look [here]({%slug radtreeview-styling-and-appearance-item-container-style%}).
+	>tip To see an example of defining the __ItemContainerStyle__ look [here]({%slug radtreeview-styling-and-appearance-item-container-style%}).
 
 You will be prompted for the name of the style and where to be placed. 
 

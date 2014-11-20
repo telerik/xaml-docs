@@ -17,7 +17,7 @@ site_name: WPF
 
 An important feature in the Visual Studio Extensions is the __Project Upgrade Wizard__.
 
-The Upgrade Wizard (started by using the __Telerik > UI for WPF > Upgrade Wizard__ menu item) is used to change the version of __UI for WPF__your project uses. 
+The Upgrade Wizard (started by using the __Telerik > UI for WPF > Upgrade Wizard__ menu item) is used to change the version of __UI for WPF__ your project uses. 
 
 In addition to the pure assembly reference change, the upgrade wizard provides several important features: 
 
@@ -29,10 +29,7 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 * Current project backup. 
 
-On the first step the wizard lists all projects from the solution, which use UI for WPF.
-        You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, 
-        not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder
-        (useful when utilizing a build server or working on a project collaboratively):
+On the first step the wizard lists all projects from the solution, which use UI for WPF. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively):
 
 ![VSExtentions WPF Upgrade Wizard](images/VSExtentions_WPF_UpgradeWizard.png)
 

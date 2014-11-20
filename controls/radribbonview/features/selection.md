@@ -13,14 +13,14 @@ position: 3
 
 
 __RadRibbonView__ supports single __RadRibbonTab__ selection. You can select it either run-time by clicking with your mouse on the appropriate tab header or programmatically via the properties described below.
-			![](images/RibbonView_Selection_Overview.png)
+![](images/RibbonView_Selection_Overview.png)
 
 ## Properties
 
 * __RadRibbonView.SelectedItem__ - sets or gets the currently selected ribbon tab item.
 						
 
->If the __RadRibbonView__ control is bound to a custom collection, then the property __SelectedItem__ will not return __RadRibbonTab__as you might expect, but item of the type the source collection contains.
+>If the __RadRibbonView__ control is bound to a custom collection, then the property __SelectedItem__ will not return __RadRibbonTab__ as you might expect, but item of the type the source collection contains.
 							
 
 * __RadRibbonView.SelectedTab__ - gets the currently selected __RadRibbonTab__ container.
@@ -37,33 +37,28 @@ __RadRibbonView__ supports single __RadRibbonTab__ selection. You can select it 
 * __PreviewSelectionChanged -__ event raised when the tab selection is about to be done. The __PreviewSelectionChanged__ event handler receives two arguments:
 						
 
-* 
-								The __sender__ argument contains the __RadRibbonView.__ This argument is of type __object__, but can be cast to the __RadRibbonView__ type.
+* The __sender__ argument contains the __RadRibbonView.__ This argument is of type __object__, but can be cast to the __RadRibbonView__ type.
 							
 
-* 
-								The second argument is __RadSelectionChangedEventArgs__ containing all additional information about the event:
+* The second argument is __RadSelectionChangedEventArgs__ containing all additional information about the event:
 								
 
-* __AddedItems -__ an __IList__ collection of the selected items
+* __AddedItems__ - an __IList__ collection of the selected items
 									
 
-* __RemovedItems -__ an __IList__ collection of the unselected items
+* __RemovedItems__ - an __IList__ collection of the unselected items
 									
 
->tip
-							You can cancel the selection by setting the __RadSelectionChangedEventArgs__'s __Handled__ property to __True__.
+>tipYou can cancel the selection by setting the __RadSelectionChangedEventArgs__'s __Handled__ property to __True__.
 						
 
 * __SelectionChanged__ - event raised after the tab selection is done. The __SelectionChanged__ event handler receives two arguments:
 						
 
-* 
-								The sender argument contains the __RadRibbonView__. This argument is of type __object__, but can be cast to the __RadRibbonView__ type.
+* The sender argument contains the __RadRibbonView__. This argument is of type __object__, but can be cast to the __RadRibbonView__ type.
 							
 
-* 
-								The second argument is __RadSelectionChangedEventArgs__ containing all additional information about the event:
+* The second argument is __RadSelectionChangedEventArgs__ containing all additional information about the event:
 								
 
 * __AddedItems__ - an __IList__ collection of the selected items
@@ -117,21 +112,21 @@ Below is a sample implementation of both of the event handlers:
 
 {{region radribbonview-selection_2}}
 	Private Sub radRibbonView_PreviewSelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
-	 ' Get the ribbonView
+	 ' Get the ribbonView'
 	 Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)
-	 'Get the selected items
+	 'Get the selected items'
 	 Dim selectedItems As IList = e.AddedItems
-	 'Get the unselected items
+	 'Get the unselected items'
 	 Dim unselectedItems As IList = e.RemovedItems
-	 ' Cancel the selection
+	 ' Cancel the selection'
 	 e.Handled = True
 	End Sub
 	Private Sub radRibbonView_SelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
-	 ' Get the ribbonView
+	 ' Get the ribbonView'
 	 Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)
-	 'Get the selected items
+	 'Get the selected items'
 	 Dim selectedItems As IList = e.AddedItems
-	 'Get the unselected items
+	 'Get the unselected items'
 	 Dim unselectedItems As IList = e.RemovedItems
 	End Sub
 	{{endregion}}

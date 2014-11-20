@@ -5,7 +5,7 @@ description: Model
 slug: radspreadsheet-model
 tags: model
 published: True
-position: 5
+position: 6
 ---
 
 # Model
@@ -19,7 +19,8 @@ The primary document that the model uses to manipulate and store data is called 
       
 
 The following diagram illustrates how different parts of the document model fit together:
-      ![Rad Spreadsheet Model 02](images/RadSpreadsheet_Model_02.png)
+
+![Rad Spreadsheet Model 02](images/RadSpreadsheet_Model_02.png)
 
 The documentation of RadSpreadsheet's document model contains several *Working with ** sections that illustrate general concepts about Workbooks, Worksheets, Cells, and Rows and Columns respectively. Each of these folders covers the fundaments of the class and provides examples about the CRUD operations of the object.
       

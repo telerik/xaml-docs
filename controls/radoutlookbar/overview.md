@@ -24,7 +24,6 @@ Telerik __RadOutlookBar__ control lets you deliver Outlook's navigational bar to
 
 ![RadOutlookBAr](images/outlook_overview.png)
 
-____
 
 __RadOutlookBar__ key features list:
 				

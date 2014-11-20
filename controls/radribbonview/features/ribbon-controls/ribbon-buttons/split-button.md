@@ -30,19 +30,15 @@ Here is a sample definition of a __RadRibbonSplitButton__ without having any dro
 	                              Text="Paste" />
 	{{endregion}}
 
-
-
->tipAs all buttons in the __RadRibbonView__'s set mostly expose the same functionality, take a look at the
-		  [Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#Common_Functionality) topic for more information.
 		
 
 ## 
 
 This button has its initial size set to __Large__ and its text label set to __"Paste"__.
-		![](images/RibbonView_Buttons_SplitButton.png)
+![](images/RibbonView_Buttons_SplitButton.png)
 
 But if the size of the button is __Medium__, then it will look like this:
-		![Rad Ribbon View Split Button Medium Size](images/RadRibbonView_SplitButton_MediumSize.png)
+![Rad Ribbon View Split Button Medium Size](images/RadRibbonView_SplitButton_MediumSize.png)
 
 Please note that the __Text__ value of the button is displayed in its button part. If you want to modify that behavior and display the __Text__ in the DropDownPart of the button, then you can use the __IsTextInMiddleButton__ property. If set to __False__, this property will make sure the button displays its __Text__ in the DropDownPart of the __RibbonSplitButon__.
 		
@@ -129,22 +125,16 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 
 {{region radribbonview-split-button_4}}
 	Private Sub RadRibbonSplitButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
-	
 	End Sub
 	
 	Private Sub RadRibbonSplitButton_DropDownOpened(sender As Object, e As RoutedEventArgs)
-	
 	End Sub
 	
 	Private Sub RadRibbonSplitButton_DropDownOpening(sender As Object, e As RoutedEventArgs)
-	
 	End Sub
 	{{endregion}}
 
 
-
->tipTo learn how to handle ribbon bar button clicks take a look at the
-			[Buttons Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#HandlingButtonClicks) topic.
 		  
 
 # See Also

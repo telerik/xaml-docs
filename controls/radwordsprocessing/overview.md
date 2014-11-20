@@ -35,4 +35,3 @@ Some of the features are:
 * Variety of built-in themes and styles.
             
 
-# See Also

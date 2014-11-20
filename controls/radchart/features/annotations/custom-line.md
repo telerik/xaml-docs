@@ -18,7 +18,7 @@ The __Custom Line__ annotation allows you to place a straight line at a specific
 
 In order to define the line you have to set the __Slope__ and/or the __YIntercept__ properties. The function which draws the custom line is __y = mx + b__, where '__m__' is the __Slope__ and '__b__' is __YIntercept__.
 
-The __Slope__is defined as the ratio of the rise of the line (i.e. how much the line rises vertically) to the run of line (i.e. how much the line runs horizontally). 
+The __Slope__ is defined as the ratio of the rise of the line (i.e. how much the line rises vertically) to the run of line (i.e. how much the line runs horizontally). 
 
 The point(s) where the graph of a function intersects with the *y*-axis are called the __Y__
 
@@ -94,12 +94,7 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 
 
 Here is a snapshot of the final result.
-
-
-
-
-         
-      ![](images/RadChart_Features_Annotations_CustomLine_01.png)
+![](images/RadChart_Features_Annotations_CustomLine_01.png)
 
 ##  How to draw a Custom Line Parallel to one of the Axes
 
@@ -116,11 +111,6 @@ To make your custom line parallel to one of the two Axes you should set the *Slo
 
 
 The result can be seen below:
-
-
-
-
-         
-      ![](images/RadChart_Features_Annotations_CustomLine_02.PNG)
+![](images/RadChart_Features_Annotations_CustomLine_02.PNG)
 
 >When the Custom Line should be parallel to the XAxis, its Slope should be set to __0__

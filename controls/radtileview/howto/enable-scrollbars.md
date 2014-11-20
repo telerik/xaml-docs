@@ -10,10 +10,7 @@ position: 1
 
 # Enable the Horizontal and Vertical ScrollBars
 
-
-
 For example, you may have the following __RadTileView__ declaration:
-			
 
 #### __XAML__
 
@@ -47,14 +44,11 @@ For example, you may have the following __RadTileView__ declaration:
 	        <TextBlock Text="Item9 Content" />
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Enable Restored Items ScrollBars
 
-In order to enable the horizontal and/or vertical scrollbar for the restored tiles you need to set the rows and columns size large enough to exceed the viewport of the __RadTileView__control.
-				
+In order to enable the horizontal and/or vertical scrollbar for the restored tiles you need to set the rows and columns size large enough to exceed the viewport of the __RadTileView__ control.
 
 #### __XAML__
 
@@ -88,14 +82,13 @@ In order to enable the horizontal and/or vertical scrollbar for the restored til
 	        <TextBlock Text="Item9 Content" />
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radtileview_howto_enable_scrollbars.png)
 
 ## Enable Minimized Items ScrollBar
 
-In order to enable the minimized items __ScrollBar__, you need to set the __MinimizedRowHeight__or __MinimizedColumnWidth__properties thus limiting the size of the minimized tiles:
-				
+In order to enable the minimized items __ScrollBar__, you need to set the __MinimizedRowHeight__ or __MinimizedColumnWidth__ properties thus limiting the size of the minimized tiles:
 
 #### __XAML__
 
@@ -129,13 +122,13 @@ In order to enable the minimized items __ScrollBar__, you need to set the __Mini
 	        <TextBlock Text="Item9 Content" />
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radtileview_howto_enable_minimized_scrollbar.png)
 
 ## Enable AutoScrolling
 
-In order to allow automatic scrolling while dragging a __RadTileViewItem__, you need to set the __RadTileView IsAutoScrollingEnabled__ property to__True.__
+In order to allow automatic scrolling while dragging a __RadTileViewItem__, you need to set the __RadTileView IsAutoScrollingEnabled__ property to __True.__
 
 #### __XAML__
 
@@ -169,8 +162,6 @@ In order to allow automatic scrolling while dragging a __RadTileViewItem__, you 
 	        <TextBlock Text="Item9 Content" />
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Once this property is set, you will be able to drag an item near the end of the viewable area and keep it there for a moment thus starting the automatic scrolling.

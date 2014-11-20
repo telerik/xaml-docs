@@ -10,9 +10,7 @@ position: 4
 
 # Lines Support
 
-
-
-The __RadTreeView__ allows you to enable connected lines between the nodes of a treeview. By default the connecting lines between the nodes are not enabled (they are not visible). You should use a single property to do so - __IsLineEnabled__and set it to __True__.
+The __RadTreeView__ allows you to enable connected lines between the nodes of a treeview. By default the connecting lines between the nodes are not enabled (they are not visible). You should use a single property to do so - __IsLineEnabled__ and set it to __True__.
 
 #### __XAML__
 
@@ -39,9 +37,6 @@ You can also control the visibility of the lines between the root items (the ite
 Take a look at the [Styling the Lines]({%slug radtreeview-styling-appearance-styling-line%}) topic in the Styling and Appearance section.
 
 # See Also
-
  * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
-
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})
-
  * [UI Virtualization]({%slug radtreeview-features-ui-virtualization%})

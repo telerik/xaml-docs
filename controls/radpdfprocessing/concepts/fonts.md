@@ -17,8 +17,7 @@ __RadPdfProcessing__ uses fonts represented by __FontBase__ objects to specify t
 
 ## Standard Fonts
 
-There are 14 standard fonts that are not embedded in the document when you use them. These fonts can accessed through the
-          [FontsRepository](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_fonts_fontsrepository.html) class and are listed below.
+There are 14 standard fonts that are not embedded in the document when you use them. These fonts can accessed through the [FontsRepository](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_fonts_fontsrepository.html) class and are listed below.
         
 
 * Helvetica
@@ -65,8 +64,8 @@ __Example 1__ demonstrates how you can use the RegisterFont() method.
 #### __[C#] Example 1: Register font__
 
 {{region radpdfprocessing-concepts-fonts_0}}
-	            FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data);
-	{{endregion}}
+    FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data);
+{{endregion}}
 
 
 
@@ -81,18 +80,22 @@ __Example 2__ shows how to create a font using the FontsRepository.
 #### __[C#] Example 2: Create FontBase__
 
 {{region radpdfprocessing-concepts-fonts_1}}
-	            FontBase font;
-	            bool success = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, out font);
-	{{endregion}}
+    FontBase font;
+    bool success = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, out font);
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 
 >Creating a font that is not present in the repository with the code from __Example 2__ is going to fail.
-                {% endif %}{% if site.site_name == 'WPF' %}
+
+{% endif %}{% if site.site_name == 'WPF' %}
 
 >You can create fonts that are not explicitly registered. Creating a font that is not registered in the repository with the code from __Example 2__ tries to find the font from the ones installed on the machine.
-                {% endif %}
 
-# See Also[FontsRepository](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_fonts_fontsrepository.html)
+{% endif %}
+
+# See Also
+
+ * [FontsRepository](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_fonts_fontsrepository.html)
 
  * [TextFragment]({%slug radpdfprocessing-model-textfragment%})

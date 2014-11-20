@@ -42,22 +42,12 @@ The __IsIndeterminate__ property specifies whether the control is in __InDetermi
 #### __VB.NET__
 
 {{region IsIndeterminate_0}}
-		Dim progressBar As New RadProgressBar()
-		progressBar.IsIndeterminate = False
-	#End Region
-	
-	#Region "IsIndeterminate_2"
-		Dim progressBar As New RadProgressBar()
-		progressBar.IsIndeterminate = True
-	#End Region
-	
-	End Class
-
-
+    Dim progressBar As New RadProgressBar()
+    progressBar.IsIndeterminate = False
 
 ![](images/progress_horizontal.jpg)
 
-*Fig. 1 Determinate ProgressBar*
+
 
 #### __XAML__
 
@@ -79,14 +69,8 @@ The __IsIndeterminate__ property specifies whether the control is in __InDetermi
 #### __VB.NET__
 
 {{region IsIndeterminate_2}}
-		Dim progressBar As New RadProgressBar()
-		progressBar.IsIndeterminate = True
-	#End Region
-	
-	End Class
-
-
+    Dim progressBar As New RadProgressBar()
+    progressBar.IsIndeterminate = True
 
 ![](images/progress_indeterminate.jpg)
 
-*Fig. 2 Indeterminate ProgressBar*

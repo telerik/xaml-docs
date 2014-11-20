@@ -45,8 +45,7 @@ Telerik __WPF controls__support the following themes:
 
 * __Windows8Touch__
 
->The __Silverlight themes__ are located in separate assemblies so that the size of the control assembly is optimized (smaller).
-        The __WPF themes__ are embedded in the control assemblies.
+>The __Silverlight themes__ are located in separate assemblies so that the size of the control assembly is optimized (smaller). The __WPF themes__ are embedded in the control assemblies.
         
 
 In order to use one of the themes with the StyleManager you need to create a new WPF application or open an existing one and add a references to the assemblies with the desired Telerik __WPF controls__.
@@ -125,19 +124,20 @@ You can also choose to change the theme for the Telerik WPF controls in code-beh
 __Figure 1__ shows the result of this approach.
         
 
-Figure 1: RadSlider with Vista theme applied![Common Styling Theming Setting Built In Theme 020 WPF](images/Common_StylingThemingSettingBuiltInTheme_020_WPF.png)
+Figure 1: RadSlider with Vista theme applied
+![Common Styling Theming Setting Built In Theme 020 WPF](images/Common_StylingThemingSettingBuiltInTheme_020_WPF.png)
 
 ## Setting Application-Wide Built-in Theme in the Code-Behind
 
 Changing the application theme is similar to changing the theme of single controls in WPF. However, changing the application theme has a much bigger impact as it affects all controls in the scope of your application. You should use the constructor of your application to set the desired theme. The steps below describe how to change the application theme:
         
 
-1. Open your existing application or create a new one.
+1 Open your existing application or create a new one.
         
 
-2. Open __MainWindow.xaml.cs__
+2 Open __MainWindow.xaml.cs__
 
->In this case __MainWindow.xaml.cs__is your entry point for the application. If you wonder which is your startup window, open the __App.xaml__file and see the __StartupUri__attribute:
+>In this case __MainWindow.xaml.cs__ is your entry point for the application. If you wonder which is your startup window, open the __App.xaml__ file and see the __StartupUri__ attribute:
           
 
 #### __XAML__
@@ -155,7 +155,7 @@ Changing the application theme is similar to changing the theme of single contro
 
 
 
-3. Declare the following code __before the InitializeComponent()__ call, depending on the name of your theme as follows:
+3 Declare the following code __before the InitializeComponent()__ call, depending on the name of your theme as follows:
         
 
 #### __C#__
@@ -174,7 +174,7 @@ Changing the application theme is similar to changing the theme of single contro
 
 
 
-4. After properly executing the steps your __MainWindow__ class should be similar to __Example 2__:
+4 After properly executing the steps your __MainWindow__ class should be similar to __Example 2__:
         
 
 #### __[C#] Example 2: Set application-specific theme__

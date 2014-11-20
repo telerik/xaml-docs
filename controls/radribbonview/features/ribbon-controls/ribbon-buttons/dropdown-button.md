@@ -29,16 +29,10 @@ Here is a sample definition of a __RadRibbonDropDownButton__ without having any 
 	                                 SmallImage="Icons/16/paste.png"
 	                                 Text="Paste" />
 	{{endregion}}
-
-
-
->tip
-				As all buttons in the __RadRibbonView__'s set slightly expose the same functionality, take a look at the 
-					[Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#Common_Functionality) topic.
 			
 
-This button has its initial size set to __Large__and____its text label set to __"Paste"__.
-			![](images/RibbonView_Buttons_DropDownButton.png)
+This button has its initial size set to __Large__ and its text label set to __"Paste"__.
+![](images/RibbonView_Buttons_DropDownButton.png)
 
 ## Setting the Drop Down Content
 
@@ -78,7 +72,7 @@ To set the popup content you have to simply set the __DropDownContent__ property
 
 ## Handling the Drop Down Events
 
-Besides the __Click__event, the __RadRibbonDropDownButton__ exposes several drop down related events:
+Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several drop down related events:
 				
 
 * __DropDownClosed__ - fires after the popup area has been closed.
@@ -124,23 +118,15 @@ Besides the __Click__event, the __RadRibbonDropDownButton__ exposes several drop
 
 {{region radribbonview-dropdown-button_4}}
 	Private Sub RadRibbonDropDownButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
-	
 	End Sub
 	
 	Private Sub RadRibbonDropDownButton_DropDownOpened(sender As Object, e As RoutedEventArgs)
-	
 	End Sub
 	
 	Private Sub RadRibbonDropDownButton_DropDownOpening(sender As Object, e As RoutedEventArgs)
-	
 	End Sub
 	{{endregion}}
 
-
-
->tip
-					To learn how to handle ribbon bar button clicks take a look at the [Buttons Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#HandlingButtonClicks) topic.
-				
 
 # See Also
 

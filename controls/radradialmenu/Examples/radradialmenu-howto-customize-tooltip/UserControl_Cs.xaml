@@ -1,0 +1,68 @@
+<UserControl x:Class="RadialMenuExample.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="400">
+
+    <StackPanel x:Name="LayoutRoot" Background="White">
+
+<!-- #region radradialmenu-howto-customize-tooltip_0 -->  
+<telerik:RadRadialMenu ShowToolTip="False">
+     ...
+</telerik:RadRadialMenu>
+<!-- #endregion -->
+
+<!-- #region radradialmenu-howto-customize-tooltip_1 -->
+<telerik:RadRadialMenu>
+    <telerik:RadRadialMenuItem Header="Font 1">
+        <telerik:RadRadialMenuItem.ToolTipContent>
+            <TextBlock Text="Arial Narrow"
+                FontFamily="Arial Narrow" />
+        </telerik:RadRadialMenuItem.ToolTipContent>
+    </telerik:RadRadialMenuItem>
+	...
+</telerik:RadRadialMenu>
+<!-- #endregion -->
+
+
+<!-- #region radradialmenu-howto-customize-tooltip_2 -->
+<Style TargetType="telerik:MenuToolTip" BasedOn="{StaticResource MenuToolTipStyle}">
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="telerik:MenuToolTip">
+                <StackPanel Orientation="Horizontal" Background="White">
+					<Ellipse Width="4"
+                        Height="4"
+                        Fill="Blue"
+                        Margin="1" />
+                    <TextBlock Text="{TemplateBinding Content}"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        FontFamily="Segoe UI Semibold"
+                        Foreground="Blue"
+                        Margin="4,0,4,0" />
+                    <Ellipse Width="4"
+                        Height="4"
+                        Fill="Blue"
+                        Margin="1" />
+                </StackPanel>
+            </ControlTemplate>
+	    </Setter.Value>
+    </Setter>
+</Style>
+<!-- #endregion -->
+        
+<!-- #region radradialmenu-howto-customize-tooltip_3 -->
+<telerik:RadRadialMenu PreviewToolTipOpen="RadRadialMenu_PreviewToolTipOpen">
+    ...
+</telerik:RadRadialMenu> 
+ <!-- #endregion -->       
+</StackPanel>
+
+</UserControl>
+
+
+

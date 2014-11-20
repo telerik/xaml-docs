@@ -12,7 +12,7 @@ position: 0
 
 
 
-This tutorial will walk you through the common tasks of __adding__ and __removing____RadTabItem__ to __RadTabControl__ programmatically and declaratively.
+This tutorial will walk you through the common tasks of __adding__ and __removing__ __RadTabItem__ to __RadTabControl__ programmatically and declaratively.
 			
 
 ## Adding And Removing Tabs Programmatically
@@ -72,9 +72,8 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 
 ## Adding And Removing Tabs Declaratively
 
-
-							 This is snapshot of a regular __RadTabControl__ with four tab items.
-						![](images/RadTabControl_Figure_00240.png)
+This is snapshot of a regular __RadTabControl__ with four tab items.
+![](images/RadTabControl_Figure_00240.png)
 
 And here is its XAML declaration:
 
@@ -94,10 +93,10 @@ And here is its XAML declaration:
 Each one of the __RadTabItem__ nodes in the example above represents declaration of a single tab item that will be created and added to your tab control at run time. Just insert or delete __RadTabItem__ child nodes to/from your tab control declaration and see how the tab structure changes.
 				
 
-For example insert the following line __<telerik:RadTabItem Header="New Tab Item"/>__after the "Web Sites" tab item and new tab item will be added to the tab control.
-				![](images/RadTabControl_Figure_00250.png)
+For example insert the following line __<telerik:RadTabItem Header="New Tab Item"/>__ after the "Web Sites" tab item and new tab item will be added to the tab control.
+![](images/RadTabControl_Figure_00250.png)
 
->tipConsider declaring tabs in XAML instead of adding them by code whenever it’s possible. This includes situations when you know what tabs you need at design time.Declaring tabs in XAML is also a preferable choice when you are working with a designer that will style the control using Expression Blend.____
+>tipConsider declaring tabs in XAML instead of adding them by code whenever it’s possible. This includes situations when you know what tabs you need at design time.Declaring tabs in XAML is also a preferable choice when you are working with a designer that will style the control using Expression Blend.
 
 # See Also
 

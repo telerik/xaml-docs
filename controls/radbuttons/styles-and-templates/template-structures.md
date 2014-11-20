@@ -111,7 +111,7 @@ Here is a snapshot from Expression Blend.
 
 The template contains the following parts.
 
-* __[Grid]__ - hosts the layout of the __RadSplitButton__and is of type __Grid__.
+* __[Grid]__ - hosts the layout of the __RadSplitButton__ and is of type __Grid__.
 
 * __OuterBorder__ - a  __Border__ control that represents the outer border of the __RadSplitButton__.
 
@@ -129,7 +129,7 @@ The template contains the following parts.
 
 * __DropDownPopup__ - represents the drop down area and is of type __Popup__.
 
-* __[Grid]__ - a __Grid__ control that hosts the __RadSplitButton.DropDownContent__elements.
+* __[Grid]__ - a __Grid__ control that hosts the __RadSplitButton.DropDownContent__ elements.
 
 * __DropDownPopupBorder__ - represents the background and the border of the drop down area and is of type __Border__.
 
@@ -156,10 +156,10 @@ The template contains the following parts.
 
 * __InnerBorder__ - a __Border__ control that represents the background and the inner border of the __RadToggleButton__
 
-* __CheckedVisual -__a __Border__ control that represents the outer border of the __RadToggleButton__, when it is checked
+* __CheckedVisual__ - a __Border__ control that represents the outer border of the __RadToggleButton__, when it is checked
 								
 
-* __InnerCheckedVisual -__a __Border__ control that represents the background and the inner border of the __RadToggleButton__, when it is checked
+* __InnerCheckedVisual__ - a __Border__ control that represents the background and the inner border of the __RadToggleButton__, when it is checked
 									
 
 * __Content__ - displays the button's content and is of type __ContentPresenter__.

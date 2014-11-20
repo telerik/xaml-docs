@@ -29,5 +29,3 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Generate documents__ - This project demonstrates how to use RadSpreadProcessing to generate document from scratch and export it to a file.{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

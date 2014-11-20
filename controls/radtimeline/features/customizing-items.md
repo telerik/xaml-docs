@@ -11,10 +11,10 @@ position: 3
 # Customizing Items
 
 There are two ways you can change the template for the __RadTimeline__ items. You can either customize them with the use of ItemTemplateSelector, or with a  __TimelineItemTemplate / TimelineInstantItemTemplate__ property. This help article will walk you through these two approaches:
-* [TimelineItemTemplate / TimelineInstantItemTemplate property](#TimelineItemTemplate_/_TimelineInstantItemTemplate_property)
-* [ItemTemplateSelector](#ItemTemplateSelector)
+* [TimelineItemTemplate / TimelineInstantItemTemplate property](#timelineitemtemplate/timelineinstantitemtemplate-property)
+* [ItemTemplateSelector](#itemtemplateselector)
 
-__TimelineItemTemplate and TimelineInstantItemTemplate__
+## TimelineItemTemplate and TimelineInstantItemTemplate 
 
 > The items with duration can be customized in the same manner as the instant items. To shed more light on the difference between these two items types, you may check the [DataBinding]({%slug radtimeline-databinding%}) topic.
 
@@ -118,7 +118,7 @@ The following example demonstrates how you can add custom Framework Element (Rec
 You may see the result below:
 ![Rad Time Line customizing items 01](images/RadTimeLine_customizing_items_01.PNG)
 
-__ItemTemplateSelector__
+## ItemTemplateSelector
 
 Using ItemTemplateSelector is another approach for customizing the __RadTimeline__ items. Aside from the previous one - here a single property is used to change the appearance of both duration and instant item types. This example will demonstrate how you may set the DataTemplates we used in the previous section.            
 

@@ -21,7 +21,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 >* __Telerik.Windows.Controls__
 >* __Telerik.Windows.Controls.Navigation__
 
-You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
+>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
@@ -30,11 +30,10 @@ You can find more info [here](http://www.telerik.com/help/silverlight/installati
 >* __Telerik.Windows.Controls.Navigation__
 >* __Telerik.Windows.Data__
 
-You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
 {% endif %}
 
 ## Create RadTreeView using Expression Blend
-
 * Open the __Assets Library__(*Window->Assets*) in Expression Blend and start writing the name of the __RadTreeView__ control in the search box.
 
 	![](images/RadTreeView_GettinStarted_001.png)
@@ -48,21 +47,10 @@ You can find more info [here](http://www.telerik.com/help/wpf/installation-insta
 	{{region radtreeview-getting-started_0}}
 		<telerik:RadTreeView Margin="8" Background="#FFAD9292"/>
 		{{endregion}}
-
-	>tip You might wonder where this "telerik", in front of the tag __RadTreeView__, came from. Well, this is the name of the namespace you give when you import the appropriate assembly into the XAML file.	
-	>	<UserControl
-	>			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	>			............... 
-	>			x:Class="CSharp.RadTreeView.Getting_Started.GettingStarted">
-	>			...............
-	>	</UserControl>
 	
+	> You might wonder where this "telerik", in front of the tag __RadTreeView__, came from. Well, this is the name of the namespace you give when you import the appropriate assembly into the XAML file.
+	>     `<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">`
 	
-	<!-- -->
-	> Put the following line in your program:
-	> 
-	>     printf("Hello, world.");
-		
 * So far there is an empty __RadTreeView__ containing no items.
 
 ## Add and remove items (RadTreeViewItem controls) and setting their Header property
@@ -101,7 +89,6 @@ Open Expression Blend and [select]({%slug radtreeview-how-to-select-item-in-expr
 		* On the first new item, set the __Header__ property to "__Futsal__". 
 		* On the second new item, set the __Header__ property to "__Soccer__". 
 		* Click "__OK__" to confirm the changes and to close the dialog.
-
 		* On the second new item, set the __Header__ property to "__Tennis__". 
 		* On the third new item, set the __Header__ property to "__Cycling__".
 
@@ -226,8 +213,6 @@ Find the declaration of the __RadTreeView__ and add the following attribute:
 {{region radtreeview-getting-started_5}}
 	telerik:StyleManager.Theme="Vista"
 	{{endregion}}
-
-
 
 Start the application.
 

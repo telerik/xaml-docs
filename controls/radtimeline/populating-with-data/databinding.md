@@ -21,38 +21,36 @@ This article will demonstrate the binding of both. Let's start with our business
 #### __C#__
 
 {{region radtimeline-databinding_0}}
-		public class Product
-		{
-			public IEnumerable<Item> Data { get; set; }
-	
-			public DateTime StartDate { get; set; }
-			public DateTime EndDate { get; set; }
-		}
-	
-		public class Item
-		{
-			public TimeSpan Duration { get; set; }
-			public DateTime Date { get; set; }
-		}
-	{{endregion}}
+	public class Product
+	{
+		public IEnumerable<Item> Data { get; set; }
 
+		public DateTime StartDate { get; set; }
+		public DateTime EndDate { get; set; }
+	}
 
+	public class Item
+	{
+		public TimeSpan Duration { get; set; }
+		public DateTime Date { get; set; }
+	}
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtimeline-databinding_0}}
-		Public Class Product
-			Public Property Data() As IEnumerable(Of Item)
-	
-			Public Property StartDate() As Date
-			Public Property EndDate() As Date
-		End Class
-	
-		Public Class Item
-			Public Property Duration() As TimeSpan
-			Public Property [Date]() As Date
-		End Class
-	{{endregion}}
+	Public Class Product
+		Public Property Data() As IEnumerable(Of Item)
+
+		Public Property StartDate() As Date
+		Public Property EndDate() As Date
+	End Class
+
+	Public Class Item
+		Public Property Duration() As TimeSpan
+		Public Property [Date]() As Date
+	End Class
+{{endregion}}
 
 Now we'll need to set values to the newly created properties and assign an instance of our class (the so called business object) to the DataContext that will be used to bind the RadTimeline:        
 
@@ -83,7 +81,7 @@ Now we'll need to set values to the newly created properties and assign an insta
 		
 		this.DataContext = new Product() { Data = items, StartDate = startDate, EndDate = endDate, };
 	}	
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -108,7 +106,7 @@ Now we'll need to set values to the newly created properties and assign an insta
 	
 		Me.DataContext = New Product() With {.Data = items, .StartDate = startDate, .EndDate = endDate}
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 The following XAML creates a RadTimeline and binds it to our prepared collection of data using the properties mentioned in our [Properties]({%slug radtimeline-properties%}) topic.        
 
@@ -130,9 +128,7 @@ The following XAML creates a RadTimeline and binds it to our prepared collection
 			<telerik:DayInterval />
 		</telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	{{endregion}}
-
-
+{{endregion}}
 
 The result can be seen below:
 

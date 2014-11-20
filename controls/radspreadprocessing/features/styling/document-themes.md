@@ -25,8 +25,7 @@ The document model comes with a number of predefined themes called Document them
 
 ## Color Schemes
 
-A color scheme has a unique name and contains a number of predefined colors. Its representation in the document model is the __ThemeColorScheme__ class. A scheme defines twelve colors and each of these is assigned a sole
-          __ThemeColorType__. The following list contains all __ThemeColorType__ values:
+A color scheme has a unique name and contains a number of predefined colors. Its representation in the document model is the __ThemeColorScheme__ class. A scheme defines twelve colors and each of these is assigned a sole __ThemeColorType__. The following list contains all __ThemeColorType__ values:
         
 
 * background1
@@ -62,21 +61,21 @@ __Example 1__ demonstrates how to create a __ThemeColorScheme__ object. Note tha
 #### __[C#] Example 1: __
 
 {{region radspreadprocessing-features-styling-document-themes_0}}
-	            ThemeColorScheme colorScheme = new ThemeColorScheme(
-	                "Mine",
-	                Colors.Black,     // background 1
-	                Colors.Blue,      // text 1
-	                Colors.Brown,     // background 2
-	                Colors.Cyan,      // text 2
-	                Colors.DarkGray,  // accent 1
-	                Colors.Gray,      // accent 2
-	                Colors.Green,     // accent 3
-	                Colors.LightGray, // accent 4
-	                Colors.Magenta,   // accent 5
-	                Colors.Orange,    // accent 6
-	                Colors.Purple,    // hyperlink
-	                Colors.Red);      // followedHyperlink
-	{{endregion}}
+    ThemeColorScheme colorScheme = new ThemeColorScheme(
+        "Mine",
+        Colors.Black,     // background 1
+        Colors.Blue,      // text 1
+        Colors.Brown,     // background 2
+        Colors.Cyan,      // text 2
+        Colors.DarkGray,  // accent 1
+        Colors.Gray,      // accent 2
+        Colors.Green,     // accent 3
+        Colors.LightGray, // accent 4
+        Colors.Magenta,   // accent 5
+        Colors.Orange,    // accent 6
+        Colors.Purple,    // hyperlink
+        Colors.Red);      // followedHyperlink
+{{endregion}}
 
 
 
@@ -107,8 +106,8 @@ __Example 2__ shows how you can create a ThemableColor:
 #### __[C#] Example 2: Create ThemableColor__
 
 {{region radspreadprocessing-features-styling-document-themes_1}}
-	            ThemableColor themableColor = new ThemableColor(ThemeColorType.Accent1);
-	{{endregion}}
+    ThemableColor themableColor = new ThemableColor(ThemeColorType.Accent1);
+{{endregion}}
 
 
 
@@ -130,11 +129,11 @@ __Example 3__ illustrates how to create a __ThemeFontScheme__ object.
 #### __[C#] Example 3: Create ThemeFontScheme__
 
 {{region radspreadprocessing-features-styling-document-themes_2}}
-	            ThemeFontScheme fontScheme = new ThemeFontScheme(
-	                "Mine",
-	                "Times New Roman",  // latinMajor
-	                "Arial");           // latinMinor
-	{{endregion}}
+    ThemeFontScheme fontScheme = new ThemeFontScheme(
+        "Mine",
+        "Times New Roman",  // latinMajor
+        "Arial");           // latinMinor
+{{endregion}}
 
 
 
@@ -156,8 +155,8 @@ __Example 4__ shows how to create a ThemableFontFamily.
 #### __[C#] Example 4: Create ThemableFontFamily__
 
 {{region radspreadprocessing-features-styling-document-themes_3}}
-	            ThemableFontFamily themableFont = new ThemableFontFamily(ThemeFontType.Major);
-	{{endregion}}
+    ThemableFontFamily themableFont = new ThemableFontFamily(ThemeFontType.Major);
+{{endregion}}
 
 
 
@@ -172,8 +171,8 @@ __Example 5__ demonstrates how to use create a DocumentTheme using the color sch
 #### __[C#] Example 5: Create DocumentTheme__
 
 {{region radspreadprocessing-features-styling-document-themes_4}}
-	            DocumentTheme theme = new DocumentTheme("Mine", colorScheme, fontScheme);
-	{{endregion}}
+    DocumentTheme theme = new DocumentTheme("Mine", colorScheme, fontScheme);
+{{endregion}}
 
 
 
@@ -186,8 +185,8 @@ __Example 6__ shows how you can create a document theme using the predefined col
 #### __[C#] Example 6: Create DocumentTheme from predefined schemes__
 
 {{region radspreadprocessing-features-styling-document-themes_5}}
-	            DocumentTheme theme = new DocumentTheme("From predefined schemes", PredefinedThemeSchemes.ColorSchemes[0], PredefinedThemeSchemes.FontSchemes[5]);
-	{{endregion}}
+    DocumentTheme theme = new DocumentTheme("From predefined schemes", PredefinedThemeSchemes.ColorSchemes[0], PredefinedThemeSchemes.FontSchemes[5]);
+{{endregion}}
 
 
 
@@ -200,10 +199,10 @@ __Example 7__ changes the theme of a newly created workbook.
 #### __[C#] Example 7: Change DocumentTheme.__
 
 {{region radspreadprocessing-features-styling-document-themes_6}}
-	            Workbook workbook = new Workbook();
-	            workbook.Worksheets.Add();
-	            workbook.Theme = theme;
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    workbook.Worksheets.Add();
+    workbook.Theme = theme;
+{{endregion}}
 
 
 
@@ -215,18 +214,18 @@ In order to get the actual value from __ThemableColor__ or __ThemableFontFamily_
 #### __[C#] Example 8: Get actual color__
 
 {{region radspreadprocessing-features-styling-document-themes_7}}
-	            Color actualColor = themableColor.GetActualValue(theme);
-	            // the actual color is the same as Accent1 color of the colorScheme
-	{{endregion}}
+    Color actualColor = themableColor.GetActualValue(theme);
+    // the actual color is the same as Accent1 color of the colorScheme
+{{endregion}}
 
 
 
 #### __[C#] Example 9: Get actual font__
 
 {{region radspreadprocessing-features-styling-document-themes_8}}
-	            var actualFont = themableFont.GetActualValue(theme);
-	            // the actualFont is the same as the Major font of the fontScheme
-	{{endregion}}
+    var actualFont = themableFont.GetActualValue(theme);
+    // the actualFont is the same as the Major font of the fontScheme
+{{endregion}}
 
 
 

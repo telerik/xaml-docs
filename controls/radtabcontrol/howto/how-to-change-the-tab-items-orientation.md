@@ -14,8 +14,7 @@ position: 3
 
 ## 
 
-See how to change the tab orientation
-        [here](5CF866DE-453C-48CF-A4EB-2A4F717AD728#Set_Tab_Orientation).
+See how to change the tab orientation [here]({%slug how-to-change-the-position-of-the-tab-strip-of-RadTabControl%}).
         
 
 # See Also

@@ -44,14 +44,7 @@ Here is a __RadChart__ declaration before setting the __ShouldFlattenSeries__ pr
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
 	{{endregion}}
-
-
-
-
-
-
-         
-      ![](images/RadChart_Features_FlattenedSeries_01.png)
+![](images/RadChart_Features_FlattenedSeries_01.png)
 
 Here is the same __RadChart__ after setting the property to __True__.
 
@@ -90,13 +83,7 @@ Here is the same __RadChart__ after setting the property to __True__.
 	End Sub
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_Features_FlattenedSeries_02.png)
+![](images/RadChart_Features_FlattenedSeries_02.png)
 
 ## Dynamic Series Flattening
 

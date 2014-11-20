@@ -216,11 +216,14 @@ Finally, set the DataValidationViewModel to the UserControl's __DataContext__ pr
 
 
 
-Run the demo and fill all fields with valid data. As you can see no validation errors occur.![](images/radmaskedinput_validation.png)
+Run the demo and fill all fields with valid data. As you can see no validation errors occur.
+
+![](images/radmaskedinput_validation.png)
 
 Next try to fill some improper data.
 
-{% if site.site_name == 'Silverlight' %}![](images/radmaskedinput_validation_error.png){% endif %}{% if site.site_name == 'WPF' %}![Validation Tool TipWPF](images/RadMaskedInput-Validation-ValidationToolTipWPF.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![](images/radmaskedinput_validation_error.png){% endif %}
+{% if site.site_name == 'WPF' %}![Validation Tool TipWPF](images/RadMaskedInput-Validation-ValidationToolTipWPF.png){% endif %}
 
 # See Also
 

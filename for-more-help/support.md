@@ -14,7 +14,6 @@ position: 2
 
 ## 
 
-You can contact Telerik support with a technical question using your Client.NET account: 
-        [http://www.telerik.com/support.aspx](http://www.telerik.com/support.aspx).
+You can contact Telerik support with a technical question using your Client.NET account:  [http://www.telerik.com/support.aspx](http://www.telerik.com/support.aspx).
 
 

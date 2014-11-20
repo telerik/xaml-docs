@@ -10,33 +10,24 @@ position: 0
 
 # Getting Started
 
+## Adding the RadTileView to the page
 
+{% if site.site_name == 'Silverlight' %}
+> In order to use __RadTileView__ control in your projects you have to add references to the following assemblies:
+>	- __Telerik.Windows.Controls__
+>	- __Telerik.Windows.Controls.Navigation__
 
-## Adding the RadTileView to the page{% if site.site_name == 'Silverlight' %}
+> You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
+{% endif %}
 
->In order to use __RadTileView__ control in your projects you have to add references to the following assemblies:
-						
+{% if site.site_name == 'WPF' %}
+> In order to use __RadTileView__ control in your projects you have to add references to the following assemblies:
+>	- __Telerik.Windows.Controls__
+>	- __Telerik.Windows.Controls.Navigation__
+>	- __Telerik.Windows.Data__
 
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Controls.Navigation__You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-						{% endif %}{% if site.site_name == 'WPF' %}
-
->
-
-
-							In order to use __RadTileView__ control in your projects you have to add references to the following assemblies:
-						
-
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Controls.Navigation__
-
-* __Telerik.Windows.Data__
-
-
-							You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
-						{% endif %}
+> You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+{% endif %}
 
 #### __XAML__
 
@@ -59,17 +50,13 @@ position: 0
 	        </telerik:RadTileView>
 	    </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 As you can see from the image below the items are in restored state by default.
 
 ##  Setting maximized item
 
-
-					To set an item in maximized state you can use the __TileState__ property and set its value to __Maximized__.
-				
+To set an item in maximized state you can use the __TileState__ property and set its value to __Maximized__.				
 
 #### __XAML__
 
@@ -85,24 +72,16 @@ As you can see from the image below the items are in restored state by default.
 	        <TextBlock Text="Item3 Content"/>
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
-
-
+{{endregion}}
 
 As you can see from the image below Item1 is now in maximized state.
 
 ## Setting minimized position
 
-
-					To set the minimized area positions use the __MinimizedItemsPosition__ property. It is an enumeration with the following values:
-				
-
+To set the minimized area positions use the __MinimizedItemsPosition__ property. It is an enumeration with the following values:				
 * __Left__
-
 * __Top__
-
 * __Right__
-
 * __Bottom__
 
 #### __XAML__
@@ -119,16 +98,12 @@ As you can see from the image below Item1 is now in maximized state.
 	        <TextBlock Text="Item3 Content"/>
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
+{{endregion}}
 
 ![Tile View - minimized items position](images/tileview_Step3.png)
 
 # See Also
-
  * [Visual Structure]({%slug radtileview-visual-structure%})
-
  * [Minimizing And Maximizing]({%slug radtileview-minimizing-and-maximizing%})
-
  * [Rows and Columns]({%slug radtileview-rows-and-columns%})
-
  * [Fluid Content Control]({%slug radtileview-fluid-content-control%})

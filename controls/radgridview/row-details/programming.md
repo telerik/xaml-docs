@@ -10,10 +10,6 @@ position: 4
 
 # Programming
 
-
-
-## 
-
 The __RadGridView__ control exposes several events regarding the __RowDetails__:
 
 >tipMore about the events that the __RadGridView__ exposes, can be found [here]({%slug gridview-events-overview%}).
@@ -27,8 +23,9 @@ For example, if you have a __RadGridView__ with the following __RowDetailsTempla
 #### __XAML__
 
 {{region radgridview-row-details-programming_0}}
+
 	<telerik:RadGridView x:Name="radGridView"
-	                        LoadingRowDetails="radGridView_LoadingRowDetails">
+	                     LoadingRowDetails="radGridView_LoadingRowDetails">
 	   <telerik:RadGridView.RowDetailsTemplate>
 	       <DataTemplate>
 	           <StackPanel Orientation="Horizontal">
@@ -39,15 +36,14 @@ For example, if you have a __RadGridView__ with the following __RowDetailsTempla
 	   </telerik:RadGridView.RowDetailsTemplate>
 	    ...
 	</telerik:RadGridView>
-	{{endregion}}
-
-
+{{endregion}}
 
 You can change the __StackPanel__'s __Background__ depending on is the row alternating:
 
 #### __C#__
 
 {{region radgridview-row-details-programming_1}}
+
 	private void radGridView_LoadingRowDetails( object sender, GridViewRowDetailsEventArgs e )
 	{
 	    StackPanel element = e.DetailsElement as StackPanel;
@@ -60,9 +56,7 @@ You can change the __StackPanel__'s __Background__ depending on is the row alter
 	        element.Background = new SolidColorBrush( Colors.White );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -76,19 +70,13 @@ You can change the __StackPanel__'s __Background__ depending on is the row alter
 	        element.Background = New SolidColorBrush(Colors.White)
 	    End If
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 * __UnloadingRowDetails__ - when the__Row Details____DataTemplate__ is modified or deleted, the __UnloadingRowDetails__ event is raised in case you need to perform some cleanup for the old template before the new one is loaded.
 
 * __RowDetailsVisiblityChanged__- It is fired each time the row details are shown or hidden, i.e. by selecting or deselecting the row. Via the __GridViewRowDetailsEventArgs__ you could access the just loaded __DetailsElement__, the respective __GridViewRow__ (Row) as well as the __Visibility__ of the row details. 
 
-
-
 >tipTo manually change the visibility of a row - set its __DetailsVisibility__ property to either Visibility.Collapsed or Visibility.Visible
-
-
 
 # See Also
 

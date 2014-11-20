@@ -60,8 +60,8 @@ __Example 1__ shows how you can create a workbook and add a new worksheet to it.
 #### __[C#] Example 1: Create Workbook__
 
 {{region radspreadprocessing-getting-started_0}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
 	{{endregion}}
 
 
@@ -72,8 +72,8 @@ You can then create a [CellSelection]({%slug radspreadprocessing-working-with-ce
 #### __[C#] Example 2: Set Value of Cell__
 
 {{region radspreadprocessing-getting-started_1}}
-	            CellSelection selection = worksheet.Cells[1, 1]; //B2 cell
-	            selection.SetValue("Hello RadSpreadProcessing");
+    CellSelection selection = worksheet.Cells[1, 1]; //B2 cell
+    selection.SetValue("Hello RadSpreadProcessing");
 	{{endregion}}
 
 
@@ -86,13 +86,13 @@ The __RadSpreadProcessing__ library supports a variety of formats to which you c
 #### __[C#] Example 3: Export to Xlsx__
 
 {{region radspreadprocessing-getting-started_2}}
-	            string fileName = "Hello.xlsx";
-	            IWorkbookFormatProvider formatProvider = new XlsxFormatProvider();
-	
-	            using (FileStream input = new FileStream(fileName, FileMode.Open))
-	            {
-	                workbook = formatProvider.Import(input);
-	            }
+    string fileName = "Hello.xlsx";
+    IWorkbookFormatProvider formatProvider = new XlsxFormatProvider();
+
+    using (FileStream input = new FileStream(fileName, FileMode.Open))
+    {
+        workbook = formatProvider.Import(input);
+    }
 	{{endregion}}
 
 

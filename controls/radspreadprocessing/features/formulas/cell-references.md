@@ -5,7 +5,7 @@ description: Cell References
 slug: radspreadprocessing-features-formulas-cell-references
 tags: cell,references
 published: True
-position: 1
+position: 2
 ---
 
 # Cell References
@@ -29,10 +29,10 @@ __Example 1__ creates a workbook with a single worksheet before setting the valu
 #### __[C#] Example 1: Set reference value__
 
 {{region radspreadprocessing-features-formulas-cell-references_0}}
-	            Workbook workbook = new Workbook();
-	            workbook.Worksheets.Add();
-	            workbook.ActiveWorksheet.Cells[0, 2].SetValue("=A1+B1");
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    workbook.Worksheets.Add();
+    workbook.ActiveWorksheet.Cells[0, 2].SetValue("=A1+B1");
+{{endregion}}
 
 
 
@@ -45,13 +45,13 @@ __Example 2__ adds a worksheet to the workbook and renames the newly created ins
 #### __[C#] Example 2: Set reference value from another sheet__
 
 {{region radspreadprocessing-features-formulas-cell-references_1}}
-	            workbook.Worksheets.Add();
-	            Worksheet sheet1 = workbook.Worksheets[0];
-	            Worksheet samsWorksheet = workbook.Worksheets[1];
-	            samsWorksheet.Name = "Sam'sWorksheet";
-	
-	            sheet1.Cells[0, 0].SetValue("='Sam''sWorksheet'!B2");
-	{{endregion}}
+    workbook.Worksheets.Add();
+    Worksheet sheet1 = workbook.Worksheets[0];
+    Worksheet samsWorksheet = workbook.Worksheets[1];
+    samsWorksheet.Name = "Sam'sWorksheet";
+
+    sheet1.Cells[0, 0].SetValue("='Sam''sWorksheet'!B2");
+{{endregion}}
 
 
 
@@ -64,22 +64,24 @@ __Example 3__ demonstrates how to add a reference to a whole cell range.
 #### __[C#] Example 3: Set reference to cell range__
 
 {{region radspreadprocessing-features-formulas-cell-references_2}}
-	            sheet1.Cells[2, 2].SetValue("=SUM(A1:B2)");
-	            samsWorksheet.Cells[0, 0].SetValue("=PRODUCT(D3:F5)");
-	{{endregion}}
+    sheet1.Cells[2, 2].SetValue("=SUM(A1:B2)");
+    samsWorksheet.Cells[0, 0].SetValue("=PRODUCT(D3:F5)");
+{{endregion}}
 
 
 
 ## Cell Reference Types
 
 Based on whether a reference relates to the referenced cell or the cell that holds the reference, the reference falls in one of the following categories: absolute, relative, mixed. This relation also determines the behavior of the cell reference when the formula that contains it is copied.
-        Absolute Cell References
+
+#### __Absolute Cell References__
 
 Absolute cell references require a dollar sign ($) to be placed before the column letter and row number, e.g. *$A$1, $BC$100*. References of this type are bound to the cell they reference. When you copy the formula that holds the reference and paste it to another location, the reference still points to the same cell. Also, if the formula is a subject to auto fill, the newly produced formulas contain references to one and the same cell.
             
 
 If cell B2 has the value =$A$1*12 and you copy and paste the contents of B2 in cell D10, the pasted formula will again point to A1 and, in fact, the string value of D10 will be exactly the same as in B2 =$A$1*12.
-            Relative Cell References
+
+#### __Relative Cell References__
 
 Unlike absolute references, relative cell references are based on their position relative to the cell holding the reference. The relative reference is specified through the horizontal and vertical offset between the referenced cell and the cell that contains the reference using the latter as a starting point. Thus, when a formula holding relative reference is copied and pasted, the newly created formula points to a cell with same horizontal and vertical offset as specified in the original expression.
             
@@ -88,7 +90,8 @@ For example, if cell C2 contains the value =A1 and you copy cell C2 and paste it
             
 
 In certain cases, the newly created value might relate to a cell that goes beyond the boundaries of the worksheet. For example, if B2 has the value =A1 and we paste its value in cell A2, the new expression will try to find a cell that is one row above and one column to the left of A2. Since such a cell does not exist, the value of A2 is changed to reference error (__#REF!__). This error indicates that the cell reference is not correct.
-            Mixed Cell References
+
+#### __Mixed Cell References__
 
 A mixed cell reference specifies its row as absolute and its column as relative or vice versa. Upon copy/paste mixed cell references keep their absolute part unchanged and translate only the relative part. For instance, if B1 contains the value =SUM(A$1:A1) and we paste the value in the range B1:B5, each of the newly produced values will hold the sum of all cells in the column A between A1 and the current row. Note that if you move the contents of B1 to a cell in another column, say E2, the new value will translate the columns of both references =SUM(D$1:D2).
             

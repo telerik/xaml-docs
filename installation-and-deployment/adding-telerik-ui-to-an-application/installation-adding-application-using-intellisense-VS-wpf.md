@@ -11,14 +11,11 @@ site_name: WPF
 
 # Using IntelliSense in Visual Studio
 
-
-
 Visual Studio automatically enables [IntelliSense](http://en.wikipedia.org/wiki/IntelliSense) - it detects all classes, properties and methods in the __DLL__ file.
 
 ## Using IntelliSense when Declaring Namespace
 
 When declaring a namespace you can select from the IntelliSense in XAML any namespace which is available:
-
 ![Common Installing Namespace Declaration 012 WPF](images/Common_InstallingNamespaceDeclaration_012_WPF.png)
 
 For more information about declaring namespaces read [here]({%slug installation-adding-application-namespace-declaration-wpf%}).

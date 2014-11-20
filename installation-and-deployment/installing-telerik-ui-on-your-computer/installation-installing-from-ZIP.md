@@ -11,17 +11,12 @@ site_name: Silverlight
 
 # Installing UI for Silverlight from ZIP File
 
-
-
 The following topic describes what steps you should perform in order to install Telerik UI for Silverlight manually from a __ZIP__ file. The [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29) is used for manual (advanced) installs and upgrading/updating purposes.
       
-
 >tipFor more information about which installation package you need to install, read [here]({%slug installation-installing-which-file-do-i-need%}).
         
-
 >tipFor more information about the system requirements, read [here]({%slug installation-system-requirements%}).
-        
-
+    
 With the Q1 2014 release we no longer provide the full ZIP package. Instead you could download the Hotfix ZIP and if needed download the Themes separately. In the following sections we will go through the download process for Q1 2014 release as well as the previous versions.
 
 ## From Q1 2014 afterwards
@@ -30,22 +25,21 @@ With the Q1 2014 release we no longer provide the full ZIP package. Instead you 
 
 In order to download the latest ZIP file, follow the instructions below:
 
-* 
-                Log into your [Telerik account](http://www.telerik.com/account.aspx).
+* Log into your [Telerik account](http://www.telerik.com/account.aspx).
               
 
-* 
-                Click __Products  & Subscriptions__ and then select UI for Silverlight from the dropdown (or Trial downloads if you are a trial user).
-              ![Common Installing FromMSIFiles 005](images/Common_InstallingFromMSIFiles_005.png)
+* Click __Products  & Subscriptions__ and then select UI for Silverlight from the dropdown (or Trial downloads if you are a trial user).
+![Common Installing FromMSIFiles 005](images/Common_InstallingFromMSIFiles_005.png)
 
 >If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products  & Subscriptions dropdown.
-              ![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
+>![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
 
-* Click "Download Installer and other resources" button.![Common Installing Download Button](images/Common_Installing_Download_Button.png)
+* Click "Download Installer and other resources" button.
+![Common Installing Download Button](images/Common_Installing_Download_Button.png)
 
 >Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite.
-              Scroll to "UI for Silverlight" product. Click "Browse all product files" to go to the details download page.
-              ![Common Installing FromMSIFiles 009](images/Common_InstallingFromMSIFiles_009.png)
+>Scroll to "UI for Silverlight" product. Click "Browse all product files" to go to the details download page.
+>![Common Installing FromMSIFiles 009](images/Common_InstallingFromMSIFiles_009.png)
 
 * Click "Manual installation" link.![Common Installing FromZIPFile 031](images/Common_InstallingFromZIPFile_031.png)
 
@@ -56,44 +50,36 @@ In order to download the latest ZIP file, follow the instructions below:
 Once the archived folders are extracted you will probably note the following folder structure:
 
 * __Binaries__ - the standard binaries including theme dlls.
-              
-
+             
 * __Binaries.NoXaml__ - binaries without XAML.
               
-
 * __LicenseAgreements__
 
 * __Themes.Implicit__ - implicit styles friendly XAML.
               
-
 >importantWith the Q1 2014 release we no longer provide the Themes and pdb files within the installation package. You could download them separately from the UI for Silverlight download page in your [Telerik account](http://www.telerik.com/account.aspx).
               
-
 >The Silverlight Demos application can be downloaded from the UI for Silverlight download page (in the [Telerik account](http://www.telerik.com/account.aspx)) as a separate ZIP file as well.
               
-
 ## Before Q1 2014
 
 ### Downloading ZIP Package
 
 In order to download the latest ZIP file, follow the instructions below:
 
-* 
-                Log into your [Telerik account](http://www.telerik.com/account.aspx).
-              
+* Log into your [Telerik account](http://www.telerik.com/account.aspx).     
 
-* 
-                Click __Products  & Subscriptions__ and then select UI for Silverlight from the dropdown (or Trial downloads if you are a trial user).
-              ![Common Installing FromMSIFiles 005](images/Common_InstallingFromMSIFiles_005.png)
+* Click __Products  & Subscriptions__ and then select UI for Silverlight from the dropdown (or Trial downloads if you are a trial user).
+![Common Installing FromMSIFiles 005](images/Common_InstallingFromMSIFiles_005.png)
 
 >If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products  & Subscriptions dropdown.
-              ![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
+>![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
 
 * Click "Download Installer and other resources" button.![Common Installing Download Button](images/Common_Installing_Download_Button.png)
 
 >Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite.
-              Scroll to "UI for Silverlight" product. Click "Browse all product files" to go to the details download page.
-              ![Common Installing FromMSIFiles 009](images/Common_InstallingFromMSIFiles_009.png)
+>Scroll to "UI for Silverlight" product. Click "Browse all product files" to go to the details download page.
+>![Common Installing FromMSIFiles 009](images/Common_InstallingFromMSIFiles_009.png)
 
 * Click "Manual installation" link.![Common Installing FromZIPFile 030](images/Common_InstallingFromZIPFile_030.PNG)
 
@@ -103,19 +89,15 @@ In order to download the latest ZIP file, follow the instructions below:
 
 Once the archived folders are extracted you will probably note the following folder structure:
 
-* __Binaries__ - the standard binaries including theme dlls.
-              
+* __Binaries__ - the standard binaries including theme dlls.              
 
-* __Binaries.NoXaml__ - binaries without XAML.
-              
+* __Binaries.NoXaml__ - binaries without XAML.              
 
 * __LicenseAgreements__
 
-* __Themes__ - the standard styles for all Telerik themes.
-              
+* __Themes__ - the standard styles for all Telerik themes.              
 
-* __Themes.Implicit__ - implicit styles friendly XAML.
-              
+* __Themes.Implicit__ - implicit styles friendly XAML.              
 
 >You can install the Demos separately, downloading the 'Demos Automatic Installation" from your account.
 

@@ -10,54 +10,27 @@ position: 12
 
 # Telerik Analytics Integration
 
-
-
-When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution. 
-        With Q3 2013 release UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides integrated support for 
-        [Telerik Analytics](http://www.telerik.com/analytics). Using Analytics you will be able to trace certain features of the controls and get statistics about their usage.
+When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution. With Q3 2013 release UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides integrated support for [Telerik Analytics](http://www.telerik.com/analytics). Using Analytics you will be able to trace certain features of the controls and get statistics about their usage.
       
-
-In order to use this service, first you should login to the [Telerik Platform](https://platform.telerik.com/), create an Analytics project and get a unique product key for your application. For more information please check out the [
-            Introduction to Telerik Analytics
-          ](
-            http://docs.telerik.com/platform/analytics/getting-started/introduction
-          ) topic.
+In order to use this service, first you should login to the [Telerik Platform](https://platform.telerik.com/), create an Analytics project and get a unique product key for your application. For more information please check out the [Introduction to Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction) topic.
       
-
-Then you can create a new Telerik
-        {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} Application with enabled Analytics support or you can enable it in an existing project. 
+Then you can create a new Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} Application with enabled Analytics support or you can enable it in an existing project. 
       
-
 Both options are explained in details below.
       
-
-## 
-        How to create a new project supporting Analytics
-      
-
-Using the
-          {% if site.site_name == 'WPF' %}[Telerik Visual Extensions]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}){% endif %}{% if site.site_name == 'Silverlight' %}[Telerik Visual Extensions]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}){% endif %} you can quickly create an application configured to use UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}.
+## How to create a new project supporting Analytics
+     
+Using the {% if site.site_name == 'WPF' %}[Telerik Visual Extensions]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}){% endif %}{% if site.site_name == 'Silverlight' %}[Telerik Visual Extensions]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}){% endif %} you can quickly create an application configured to use UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}.
         
-      
-
 After including the needed Telerik assemblies and setting a theme in the __New Project Wizard__, you will reach the following configuration screen:
-        ![eqatec install 3](images/eqatec_install3.png)
+![eqatec install 3](images/eqatec_install3.png)
 
-Enable the option for  __Analytics support__ and __Finish__ the setup.
-        
+Enable the option for  __Analytics support__ and __Finish__ the setup.        
 
->Please make sure that you have specified the correct key you got after registering your application on
-            [
-                https://platform.telerik.com/
-              ](
-                https://platform.telerik.com/
-              ).
+>Please make sure that you have specified the correct key you got after registering your application on [https://platform.telerik.com/](https://platform.telerik.com/).
           
-
-The wizard references two additional Telerik assemblies ( __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__
-          and initializes the __Telerik.Windows.Analytics.TraceMonitor__ used to track the controls features usage in the App.xaml.cs file, the generated code will look like this:
+The wizard references two additional Telerik assemblies ( __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__ ) and initializes the __Telerik.Windows.Analytics.TraceMonitor__ used to track the controls features usage in the App.xaml.cs file, the generated code will look like this:
         
-
 #### __C#__
 
 {{region eqatec-analytics-application-integration_0}}
@@ -70,53 +43,32 @@ The wizard references two additional Telerik assemblies ( __EQATEC.Analytics.Mon
 	    //<telerik:RadButton Content="Click me" Height="50" telerik:Analytics.Name="DownloadButton" />
 	    //For more information go to: http://www.telerik.com/help/wpf/eqatec-analytics-application-integration.html
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 where [product_key] will be replaced with the entered in the __New Project Wizard__ value.
 
 >tipThe code related to Telerik Analytics is commented when a new project is created without enabling the Analytics option.
-          
-
-## 
-        How to add support to existing applications
+    
+## How to add support to existing applications
       
-
-First, you will need to reference the __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__ in your application. 
-        Note that these dlls are distributed together with the other assemblies in the UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} suite.        
+First, you will need to reference the __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__ in your application. Note that these dlls are distributed together with the other assemblies in the UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} suite.        
       
-
-Then in order to configure the project to support Analytics, please add the the following code in the constructor of the App class:
-        
+Then in order to configure the project to support Analytics, please add the the following code in the constructor of the App class:        
 
 #### __C#__
 
 {{region eqatec-analytics-application-integration_1}}
-	        public App()
-	        {           
-	            var analyticsMonitor = Telerik.Windows.Analytics.TraceMonitor.Initialize(this, [product_key]);
-	        }
-	{{endregion}}
+	public App()
+	{           
+	     var analyticsMonitor = Telerik.Windows.Analytics.TraceMonitor.Initialize(this, [product_key]);
+	}
+{{endregion}}
 
+where [product_key] should be replaced with the __product key__ you got after registering your application on [https://platform.telerik.com/](https://platform.telerik.com/)
 
-
-where [product_key] should be replaced with the __product key__ you got after registering your application on
-          [
-              https://platform.telerik.com/
-            ](
-              https://platform.telerik.com/
-            )
-
-## 
-        How Analytics works
+## How Analytics works
       
-
-This section demonstrates how Analytics work with Telerik controls. Let’s, for example, create a test application registered as AnalyticsTestApp in the [
-              Telerik Platform
-            ](
-              https://platform.telerik.com/
-            ). Add a few controls that support Analytics to it:
+This section demonstrates how Analytics work with Telerik controls. Let’s, for example, create a test application registered as AnalyticsTestApp in the [Telerik Platform](https://platform.telerik.com/). Add a few controls that support Analytics to it:
         
 
 #### __XAML__
@@ -131,15 +83,11 @@ This section demonstrates how Analytics work with Telerik controls. Let’s, for
 	    </telerik:RadComboBox> 
 	    <telerik:RadButton Content="Select" Click="Select_Click" /> 
 	</StackPanel> 
-	{{endregion}}
-
-
+{{endregion}}
 
 All that is needed is to set the __telerik:Analytics.Name__ attached property to the used in the example RadComboBox and RadButton. Note that the set values will then be used in the __dashboard__.
         
-
-Here is the updated code:
-        
+Here is the updated code:        
 
 #### __XAML__
 
@@ -153,47 +101,79 @@ Here is the updated code:
 	    </telerik:RadComboBox> 
 	    <telerik:RadButton telerik:Analytics.Name="SelectButton" Content="Select" Click="Select_Click" /> 
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 To trace the features please follow the next steps:
 
-* 
-              Run the project with the provided code
+* Run the project with the provided code
+       
+* Select an item from the ComboBox and click the Button
             
-
-* 
-              Select an item from the ComboBox and click the Button
+* Close the application.
             
+* Go to the Analytics Project Dashboard
+         
+*  Select the __Live__ link:
 
-* 
-              Close the application.
-            
-
-* 
-              Go to the Analytics Project Dashboard
-            
-
-* 
-              Select the __Live__ link:
-            ![eqatec dashboard 1](images/eqatec_dashboard_1.png)
+![eqatec dashboard 1](images/eqatec_dashboard_1.png)
 
 The next screen will list the live usage sessions:
-        ![eqatec dashboard 2](images/eqatec_dashboard_2.png)
+![eqatec dashboard 2](images/eqatec_dashboard_2.png)
 
 Clicking on the __Session__ link will show additional details about the session including the exact features used:
-        ![eqatec dashboard 3](images/eqatec_dashboard_3.png)
+![eqatec dashboard 3](images/eqatec_dashboard_3.png)
 
 ![eqatec dashboard 3 1](images/eqatec_dashboard_3_1.png)
 
 If you go to the __Feature Use link__ in the Dashboard panel, you will find information and statistics for the registered features for different periods of time:
-        ![eqatec dashboard 4](images/eqatec_dashboard_4.png)
+![eqatec dashboard 4](images/eqatec_dashboard_4.png)
 
-## Traceable features in UI for WPFSilverlight
+## Traceable features in UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
 
 Currently only few controls support analytics out of the box. Note that only user interactions will be tracked - initial values and values from Bindings are not supported.
 
 You can find below a list of the controls and their features that support tracing:
         
-<table><th><tr><td>Feature</td><td>Feature Name</td></tr></th><tr><td><b>RadBusyIndicator</b></td><td></td></tr><tr><td>Show</td><td>ShowIndicator</td></tr><tr><td></td><td></td></tr><tr><td><b>RadComboBox</b></td><td></td></tr><tr><td>SelectionChanged</td><td>SelectionChanged</td></tr><tr><td>DropDownOpened</td><td>DropDownOpened</td></tr><tr><td>DropDownClosed</td><td>DropDownClosed</td></tr><tr><td></td><td></td></tr><tr><td><b>RadContextMenu</b></td><td></td></tr><tr><td>Open</td><td>Opened</td></tr><tr><td>Close</td><td>Closed</td></tr><tr><td>Click</td><td>Click</td></tr><tr><td></td><td></td></tr><tr><td><b>RadDropDownButton</b></td><td></td></tr><tr><td>DropDownOpened</td><td>DropDownOpened</td></tr><tr><td>DropDownClosed</td><td>DropDownClosed</td></tr><tr><td></td><td></td></tr><tr><td><b>RadExpander</b></td><td></td></tr><tr><td>Expanded</td><td>Expanded</td></tr><tr><td>Collapsed</td><td>Collapsed</td></tr><tr><td></td><td></td></tr><tr><td><b>RadGridView</b></td><td></td></tr><tr><td>Sort</td><td>Sorted</td></tr><tr><td>Group</td><td>Grouped</td></tr><tr><td>Filter</td><td>Filtered</td></tr><tr><td></td><td></td></tr><tr><td><b>RadMenu</b></td><td></td></tr><tr><td>Click</td><td>Click</td></tr><tr><td></td><td></td></tr><tr><td><b>RadRadioButton</b></td><td></td></tr><tr><td>Checked</td><td>Checked</td></tr><tr><td>UnChecked</td><td>UnChecked</td></tr><tr><td></td><td></td></tr><tr><td><b>RadRichTextBox</b></td><td></td></tr><tr><td>Open Document</td><td>Open Document</td></tr><tr><td>Save Document</td><td>Save Document</td></tr><tr><td>Print</td><td>Print</td></tr><tr><td></td><td></td></tr><tr><td><b>RadSpreadsheet</b></td><td></td></tr><tr><td>Open Document</td><td>Open Document</td></tr><tr><td>Save Document</td><td>Save Document</td></tr><tr><td>Load Image</td><td>LoadImage</td></tr><tr><td>Save Image</td><td>SaveImage</td></tr><tr><td></td><td></td></tr><tr><td><b>RadToggleButton</b></td><td></td></tr><tr><td>Checked</td><td>Checked</td></tr><tr><td>UnChecked</td><td>UnChecked</td></tr><tr><td></td><td></td></tr><tr><td><b>RadTreeListView</b></td><td></td></tr><tr><td>Sort</td><td>Sorted</td></tr><tr><td>Group</td><td>Grouped</td></tr><tr><td>Filter</td><td>Filtered</td></tr></table>
+Feature	|	Feature Name
+---	|	---
+__RadBusyIndicator__	|	
+Show	|	ShowIndicator
+__RadComboBox__	|	
+SelectionChanged	|	SelectionChanged
+DropDownOpened	|	DropDownOpened
+DropDownClosed	|	DropDownClosed	
+__RadContextMenu__	|	
+Open	|	Opened
+Close	|	Closed
+Click	|	Click
+__RadDropDownButton__|	
+DropDownOpened	|	DropDownOpened
+DropDownClosed	|	DropDownClosed
+__RadExpander__ |	
+Expanded	|	Expanded
+Collapsed	|	Collapsed
+__RadGridView__	|	
+Sort	|	Sorted
+Group	|	Grouped
+Filter	|	Filtered
+__RadMenu__	|	
+Click	|	Click
+__RadRadioButton__ |	
+Checked	|	Checked
+UnChecked	|	UnChecked	
+__RadRichTextBox__	|	
+Open Document	|	Open Document
+Save Document	|	Save Document
+Print	|	Print
+__RadSpreadsheet__ |	
+Open Document	|	Open Document
+Save Document	|	Save Document
+Load Image	|	LoadImage
+Save Image	|	SaveImage	
+__RadToggleButton__	|	
+Checked	|	Checked
+UnChecked	|	UnChecked
+__RadTreeListView__	|	
+Sort	|	Sorted
+Group	|	Grouped
+Filter	|	Filtered

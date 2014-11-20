@@ -11,8 +11,6 @@ site_name: WPF
 
 # Installing UI for WPF from MSI File
 
-
-
 The following topic describes what steps you should perform in order to install Telerik UI for WPF from a __MSI__ file. 
 
 The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for easy and automatic installation of a product. The MSI installs the suite on your computer to a folder named Telerik in your Program Files, automatically creating the necessary virtual folders and projects.
@@ -36,15 +34,15 @@ In order to download the latest MSI file, follow the instructions below:
 * Click __Products & Subscriptions__ and then select UI for WPF from the dropdown (or Trial downloads if you are a trial user).![Common Installing FromMSIFiles 005 WPF](images/Common_InstallingFromMSIFiles_005_WPF.png)
 
 >If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown. 
-        	![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
+>![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
 
 * Click "Download Installer and other resources" button.
 
 ![Common Installing Download Button](images/Common_Installing_Download_Button.png)
 
 >Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite.
-			Scroll to "UI for WPF" product. Click "Browse all product files" to go to the detailed download page.
-            ![Common Installing FromMSIFiles 009 WPF](images/Common_InstallingFromMSIFiles_009_WPF.png)
+>Scroll to "UI for WPF" product. Click "Browse all product files" to go to the detailed download page.
+>![Common Installing FromMSIFiles 009 WPF](images/Common_InstallingFromMSIFiles_009_WPF.png)
 
 * Click Automatic installation.
 

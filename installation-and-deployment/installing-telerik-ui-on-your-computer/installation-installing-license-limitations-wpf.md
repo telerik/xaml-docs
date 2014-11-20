@@ -11,8 +11,6 @@ site_name: WPF
 
 # Trial License Limitations
 
-
-
 The following topic will explain you the main differences between the licenses available for the Telerik UI for WPF and the limitations of the __Trial License__.
 
 Currently there are two types of licenses used for UI for WPF:
@@ -34,8 +32,6 @@ The free trial licenses of all Telerik products are fully functional and will wo
 ## Trial Error Messages
 
 The trial licenses will occasionally display the following message on your application:
-
-
 
 Telerik UI for WPF trial version. Copyright Telerik © 2002-2014. To remove this message, please, purchase a developer version.
 

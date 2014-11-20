@@ -11,39 +11,26 @@ site_name: WPF
 
 # Namespace Declaration
 
-
-
 The following topic will show you how to manually declare a namespace in XAML.
 
-## 
-
-Almost all Telerik controls can be found in a special URI namespace. You can use only this namespace to access all controls from Telerik assemblies that you
-        	are referring in your application. You cannot access controls from assemblies that you are not referring.
+Almost all Telerik controls can be found in a special URI namespace. You can use only this namespace to access all controls from Telerik assemblies that you are referring in your application. You cannot access controls from assemblies that you are not referring.
         
-
->There are only few controls which are in another namespace. These are RadPivotGrid and RadPivotFieldList and their namespace is:
-        		xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"
+>There are only few controls which are in another namespace. These are RadPivotGrid and RadPivotFieldList and their namespace is: xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"
         	
-
 * Create a new [WPF Application]({%slug installation-adding-to-application-create-application-and-adding-control-wpf%}).
-          	
-
+    	
 * Add references to the __Telerik DLLs__ in the Solution Explorer.
-          	![Common Installing Namespace Declaration 011 WPF](images/Common_InstallingNamespaceDeclaration_011_WPF.png)
+![Common Installing Namespace Declaration 011 WPF](images/Common_InstallingNamespaceDeclaration_011_WPF.png)
 
 * Open the __MainWindow.xaml__.
-          	
-
+   	
 * Go to the __Window__ tag and write: 
           	
-
 #### __XAML__
 
 {{region installation-adding-application-namespace-declaration-wpf_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
-
+{{endregion}}
 
 Or you can select from the IntelliSense in XAML:
 
@@ -62,9 +49,7 @@ Or you can select from the IntelliSense in XAML:
 	    <Grid>
 	    </Grid>
 	</Window>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Now you should be able to declare any controls existing in this namespace and which is in the assemblies you have added in your project. An example of RadTreeView declaration is shown below.
 
@@ -80,9 +65,7 @@ Or you can select from the IntelliSense in XAML:
 	        <telerik:RadTreeView/>
 	    </Grid>
 	</Window>
-	{{endregion}}
-
-
+{{endregion}}
 
 >If you wonder which control in which assembly belongs to, read the main topic about [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}).
 

@@ -10,7 +10,7 @@ position: 3
 
 # Self-Referencing GridView
 
-Except displaying hierarchical data and applying some custom criteria about when the subset of data to be displayed, the __RadGridView__ allows you to define a relation that points back to the same table. In the cases when the hierarchical data is build from one type of items you can use a self referencing __RadGridView__ to display the data.
+Except displaying hierarchical data and applying some custom criteria about when the subset of data to be displayed, __RadGridView__ allows you to define a relation that points back to the same table. In the cases when the hierarchical data is build from one type of items you can use a self referencing __RadGridView__ to display the data.
 
 This tutorial illustrates building a self-referencing hierarchy.
 
@@ -70,7 +70,7 @@ You can build a self-refencing hierarchy by performing the following steps:
 	</telerik:RadGridView>
 {{endregion}}
 
-* Set the __Relation__property of the __GridViewTableDefinition__ to an instance of the __TableRelation__ class and set its __IsSelfReference__ property to __True__.
+* Set the __Relation__ property of __GridViewTableDefinition__ to an instance of the __TableRelation__ class and set its __IsSelfReference__ property to __True__.
 
 #### __XAML__
 

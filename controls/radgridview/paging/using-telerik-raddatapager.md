@@ -88,7 +88,7 @@ Here is a list of the most important features of the __RadDataPager__:
 
 * __Both__ - displays AutoEllipsis before and after the Numeric Buttons.
 
-* __None -__doesn't display AutoEllipsis.
+* __None__ - doesn't display AutoEllipsis.
 
 * __Display Modes__ - by setting the __DisplayMode__ property you can specify which of the Pager Buttons and Visuals to be visible.
 

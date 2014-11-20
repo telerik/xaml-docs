@@ -14,11 +14,11 @@ __RadGridView__ exposes __group footers__ features which provide the option to r
 
 This tutorial will walk you through the common tasks of:
 
-* [Enabling the group footers functionality](#Enable_Group_Footers_Functionality)
+* [Enabling the group footers functionality](#enable-group-footers-functionality)
 
-* [Setting the group footers content](#Set_the_Group_Footers_Content)
+* [Setting the group footers content](#set-the-group-footers-content)
 
-* [Styling the group footers](#Styling_Group_Footers)
+* [Styling the group footers](#styling-group-footers)
 
 >Before continuing with this topic make sure that you are familiar with the [Visual Structure]({%slug gridview-visual-structure%}) of the __RadGridView__.
 
@@ -80,7 +80,7 @@ The same operation can be done in the code-behind.
 
 * Using the __GroupFootersTemplate__.
 
-If you want your group footers to have a static content, simply set the __GroupFootersTemplate__property.
+If you want your group footers to have a static content, simply set the __GroupFootersTemplate__ property.
 
 #### __XAML__
 

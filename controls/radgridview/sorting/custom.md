@@ -10,7 +10,7 @@ position: 2
 
 # Custom Sorting
 
-Although __RadGridView__ provides a fully functional sorting mechanism, it can sometimes be slow or ineffective, compared to other sorting mechanisms (database server, LINQ extension methods, manually working with the __SortDescriptors__ collection etc.). To benefit from them you have to bypass the existing sorting functionality of the __RadGridView__.
+Although __RadGridView__ provides a fully functional sorting mechanism, it can sometimes be slow or ineffective, compared to other sorting mechanisms (database server, LINQ extension methods, manually working with the __SortDescriptors__ collection etc.). To benefit from them you have to bypass the existing sorting functionality of __RadGridView__.
 
 >You can set the __SortMemberPath__ property of the column to specify the name of the property the data in the column will be sorted by.
         
@@ -62,11 +62,11 @@ Take a look at the __GridViewSortingEventArgs__ argument of the event handler. T
         
 * __DataControl__ - this one holds the instance of the __RadGridView__ owning the column that was clicked and is going to be sorted.
             
-* __Cancel__ - this boolean property defines whether the internal handling of the sorting event should be canceled. The default value is __False__, which means that the event will be handled internally by the __RadGridView__ and the built-in sorting functionality will be executed. If you set it to __True__ the event won't be handled by the __RadGridView__ and the built-in sorting functionality will be bypassed.
+* __Cancel__ - this boolean property defines whether the internal handling of the sorting event should be canceled. The default value is __False__, which means that the event will be handled internally by __RadGridView__ and the built-in sorting functionality will be executed. If you set it to __True__ the event won't be handled by the __RadGridView__ and the built-in sorting functionality will be bypassed.
 
 * __OldSortingState__ - defines the current sorting state of the column being sorted.
 
-* __NewSortingState -__defines the new sorting state of the column and controls the sorting indicator of the column's header. Even if you don't want the built-in sorting functionality to be executed you have to properly set this property, otherwise the visual state of the sort indicator won't match the sort state of the data.
+* __NewSortingState__ - defines the new sorting state of the column and controls the sorting indicator of the column's header. Even if you don't want the built-in sorting functionality to be executed you have to properly set this property, otherwise the visual state of the sort indicator won't match the sort state of the data.
 
 * __Column__ - the gridview column which is being sorted.
 

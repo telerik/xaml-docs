@@ -26,7 +26,7 @@ You have two options here:
 
 2. This method manipulates the [XAML of the filtering control]({%slug radgridview-styles-and-templates-templates-structure%}) to reduce the height of the distinct values listbox. This way you will have both the distinct values listbox and the other field filtering controls.
 
-You need to find the __PART_DistinctValuesList__listbox and set its MaxHeight property to a smaller value, e.g. MaxHeight="100". If you make the Filtering style implicit - it will be applied to all filtering controls of the gridview. Here is the result it produces:
+You need to find the __PART_DistinctValuesList__ listbox and set its MaxHeight property to a smaller value, e.g. MaxHeight="100". If you make the Filtering style implicit - it will be applied to all filtering controls of the gridview. Here is the result it produces:
 
 ![](images/troubleshooting_filtering_boundaries_gridview4.png)
 

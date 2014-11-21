@@ -17,15 +17,15 @@ The purpose of this tutorial is to show you how to set a built-in theme to __UI_
 
 This topic contains the following sections:
 
-* [Setting instance-specific built-in theme in XAML](#Setting_Instance-Specific_Built-In_Theme_in_XAML)
+* [Setting instance-specific built-in theme in XAML](#setting-a-theme-with-stylemanager)
 
-* [Setting instance-specific built-in theme in the code-behind](#Setting_Instance-Specific_Built-In_Theme_in_the_Code-Behind)
+* [Setting instance-specific built-in theme in the code-behind](#setting-instance-specific-built-in-theme-in-xaml)
 
-* [Setting application-wide built-in theme in the code-behind](#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind)
+* [Setting application-wide built-in theme in the code-behind](#setting-instance-specific-built-in-theme-in-the-code-behind)
 
-* [Create a custom theme](#Create_a_Custom_Theme)
+* [Create a custom theme](#create-a-custom-theme)
 
->Currently Telerik __Silverlight controls__support the following themes:
+>Currently Telerik __Silverlight controls__ support the following themes:
 
 * __Office Black__ - this is the __default__ theme. No assembly is required for it.
 
@@ -35,11 +35,11 @@ This topic contains the following sections:
 
 * __Expression Dark__ - requires __Telerik.Windows.Themes.Expression_Dark.dll__.
 
-* __Summer__- requires __Telerik.Windows.Themes.Summer.dll__.
+* __Summer__ - requires __Telerik.Windows.Themes.Summer.dll__.
 
-* __Vista__- requires __Telerik.Windows.Themes.Vista.dll__.
+* __Vista__ - requires __Telerik.Windows.Themes.Vista.dll__.
 
-* __Windows 7__- requires __Telerik.Windows.Themes.Windows7.dll__.
+* __Windows 7__ - requires __Telerik.Windows.Themes.Windows7.dll__.
 
 * __Transparent__ - requires __Telerik.Windows.Themes.Transparent.dll__
 
@@ -57,7 +57,8 @@ This topic contains the following sections:
 
 * Browse Binaries (Bin) folder.
 
-* Select the assembly that references your theme as it is shown above.![Common Styling Theming Setting Built In Theme 010](images/Common_StylingThemingSettingBuiltInTheme_010.png)
+* Select the assembly that references your theme as it is shown above.
+![Common Styling Theming Setting Built In Theme 010](images/Common_StylingThemingSettingBuiltInTheme_010.png)
 
 Now you are ready to use the themes either for a single control or for all controls in your application scope.
 
@@ -116,7 +117,8 @@ You can also choose to change the theme for the Telerik Silverlight controls in 
 
 
 
-The result of both approaches will be similar and can be seen on the next figure.![Common Styling Theming Setting Built In Theme 020](images/Common_StylingThemingSettingBuiltInTheme_020.png)
+The result of both approaches will be similar and can be seen on the next figure.
+![Common Styling Theming Setting Built In Theme 020](images/Common_StylingThemingSettingBuiltInTheme_020.png)
 
 ## Setting Application-Wide Built-In Theme in the Code-Behind
 
@@ -128,7 +130,7 @@ To change the application theme in code-behind you should follow the instruction
 
 * Open __MainPage.xaml.cs__
 
->In this case __MainPage.xaml.cs__is your entry point for the application. If you wonder which is your startup page, open the __App.xaml.cs__file and see the __Application_Startup__event handler:
+>In this case __MainPage.xaml.cs__ is your entry point for the application. If you wonder which is your startup page, open the __App.xaml.cs__ file and see the __Application_Startup__ event handler:
 
 #### __C#__
 
@@ -248,13 +250,13 @@ To change the application theme in code-behind you should follow the instruction
 
 This section contains the following subsections:
 
-* [Create a new theme project and add styles (XAML) for the controls you want to style](#Create_a_New_Theme_Project_and_Add_Styles_for_Controls_You_Want_to_Style).
+* [Create a new theme project and add styles (XAML) for the controls you want to style](#create-a-new-theme-project-and-add-styles-for-controls-you-want-to-style).
 
-* [Using the Theme class](#Using_the_Theme_Class). This approach is used for the creation of the built-in themes for __UI for Silverlight__.
+* [Using the Theme class](#using-the-theme-class). This approach is used for the creation of the built-in themes for __UI for Silverlight__.
 
 ## Create a New Theme Project and Add Styles for Controls You Want to Style
 
-* Create a new __Silverlight Class Library__project.
+* Create a new __Silverlight Class Library__ project.
 
 * Add a new __Silverlight Resource Dictionary__. Here you should define the styles for the controls you want to style.
 
@@ -286,7 +288,7 @@ In the above code snippet it is assumed that:
 
 ## Using the Theme Class
 
-* Create a new __Silverlight Class Library__project.
+* Create a new __Silverlight Class Library__ project.
 
 * Add a new __Silverlight Resource Dictionary__. Here you should define the styles for the controls you want to style.
 

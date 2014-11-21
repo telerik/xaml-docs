@@ -29,7 +29,7 @@ Here it is shown how to declare a column of this type.
 
 ![](images/RadGridView_ColumnTypes_7.png)
 
-If you set the __SelectionMode__property of the __RadGridView__ to either__Extended__ or__Multiple__, you will be able to select more than one row by clicking on the desired check box or to select all the rows by clicking on the check box in the header.
+If you set the __SelectionMode__ property of the __RadGridView__ to either __Extended__ or __Multiple__, you will be able to select more than one row by clicking on the desired check box or to select all the rows by clicking on the check box in the header.
 
 #### __XAML__
 

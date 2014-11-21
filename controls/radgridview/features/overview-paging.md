@@ -56,7 +56,7 @@ To connect the __RadGridView__ with a __DataPager__ you need to perform a few si
 {{endregion}}
 
 
-* Set the newly created __QueryableCollectionView__ instance as an __ItemsSource/____Source__ of the __RadGridView/____DataPager__. 
+* Set the newly created __QueryableCollectionView__ instance as an __ItemsSource/Source__ of the __RadGridView/DataPager__. 
 
 #### __C#__
 

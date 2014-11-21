@@ -23,7 +23,7 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 ## Highlights of features and functionality
 
-##### 1. __Performance__ - exceptional performance, intuitive and easy-to-use model and pixel-perfectness were some of the major tasks we have set for the __RadChartView__ control.						
+1 __Performance__ - exceptional performance, intuitive and easy-to-use model and pixel-perfectness were some of the major tasks we have set for the __RadChartView__ control.
 
 * We have separated the chart into several layers, where the core one is totally platform agnostic and is built on top of our custom logical tree. We call this layer the “View Model” of the chart.								
 
@@ -35,7 +35,7 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 * We use __Canvas__ – the only XAML panel that does not invalidate measure automatically. When a redraw of some charting part is required, we simply update the __Width__, __Height__ and __Canvas.Left__, __Canvas.Top__ properties of the corresponding visual. A simple test proved that calling __InvalidateMeasure__ of the canvas upon a change in the ViewModel degrades performance about 10 times.								
 
-##### 2. __Architecture__- a number of chart controls built for a specific purpose vs one monolith control (provides cleaner, simpler, and relevant API)						
+2 __Architecture__- a number of chart controls built for a specific purpose vs one monolith control (provides cleaner, simpler, and relevant API)
 
 * __DataBinding__ - The presentation of the data itself in both controls is achieved by declaring chart series and filling these series with data points. The significant difference is that in __RadChartView__ the chart __Series__ utilize different visualization techiques based on the data points it represents. This is why in __RadChartView__ the Series expose an __ItemsSource__ property which has to be used to populate each __Series__ with data.								
 
@@ -69,7 +69,7 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 	* __Chart Legend__ - __RadChartView__ does not ship with a built-in legend. However, you can easily integrate the __RadLegend__ control in it.[Read More]({%slug radchartview-features-radlegend-support%})
 
-##### 3. __Behaviors__ - both __RadChartView__ and __RadChart__ support *Selection*, *Tooltip* and *Scroll and Zoom* behaviors. However, on top of that the __RadChartView__ exposes a __TrackBall__ behavior:						
+3 __Behaviors__ - both __RadChartView__ and __RadChart__ support *Selection*, *Tooltip* and *Scroll and Zoom* behaviors. However, on top of that the __RadChartView__ exposes a __TrackBall__ behavior:
 
 * [TrackBall Behavior]({%slug radchartview-features-trackball%}) (or also known as a current value indicator) is a behavior available only within the __RadChartView__. It displays a vertical line across the charting plot area that comes with visual indicators (circles by default) at the points where the trackball line crosses the visualization of a __Series__ objects.								
 
@@ -81,9 +81,10 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 ##### 4. __Sampling__ 
 
-When the chart is populated with thousands of business items, the visual representation might not be that clear. It is possible that there are two or more DataPoints shown with a very close Y and X values. This is when sampling comes in handy. The sampling engine visualizes a subset of the original data. By combining the items, so that the __DataPoints__ are limited to a certain number (200 by default). In a data-bound __RadChart__ sampling is turned on by default and is activated as soon as the __DataPoints__ number exceeds 200. However, in some cases you might have to implement a custom sampling function that determines how to combine the values of two __DataPoints__. __RadChartView__ takes that idea on another level. Instead of providing a sampling mechanism after plotting the data, the control allows you to use a [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) component to sample the business data beforehand. The [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) component supports both index-based and __DateTime__ sampling.						
+4 __Sampling__When the chart is populated with thousands of business items, the visual representation might not be that clear. It is possible that there are two or more DataPoints shown with a very close Y and X values. This is when sampling comes in handy. The sampling engine visualizes a subset of the original data. By combining the items, so that the __DataPoints__ are limited to a certain number (200 by default). In a data-bound __RadChart__ sampling is turned on by default and is activated as soon as the __DataPoints__ number exceeds 200. However, in some cases you might have to implement a custom sampling function that determines how to combine the values of two __DataPoints__. __RadChartView__ takes that idea on another level. Instead of providing a sampling mechanism after plotting the data, the control allows you to use a [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) component to sample the business data beforehand. The [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) component supports both index-based and __DateTime__ sampling.
 
 ##### 5. __Appearance__. 
+5 __Appearance__. Unline RadChart, the __RadChartView__ control comes with a built-in set of palettes which you can use to easily customize the look and feel of your charting components. You can examine and try all available palettes in the {% if site.site_name == 'Silverlight' %}[Appearance example](http://demos.telerik.com/silverlight/#ChartView/Palettes){% endif %}{% if site.site_name == 'WPF' %}[Appearance example](http://demos.telerik.com/wpf/#ChartView/Palettes) after navigating to the __ChartView__ control, in the *Overview* section{% endif %}.
 
 Unline RadChart, the __RadChartView__ control comes with a built-in set of palettes which you can use to easily customize the look and feel of your charting components. You can examine and try all available palettes in the {% if site.site_name == 'Silverlight' %}[Appearance example](http://demos.telerik.com/silverlight/#ChartView/Palettes){% endif %}{% if site.site_name == 'WPF' %}[Appearance example](http://demos.telerik.com/wpf/#ChartView/Palettes) after navigating to the __ChartView__ control, in the *Overview* section{% endif %}.						
 

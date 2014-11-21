@@ -180,27 +180,27 @@ You can check the Release Notes for __Q1 2013__ {% if site.site_name == 'Silverl
 ### What's Fixed
             
 
-*  Memory leak fix for __DoubleClick__ event
+*  Memory leak fix for __DoubleClick__ event.
                 
 
-*  __TreeListViewDragCue____VisualStates__ not changing is now fixed
+*  __TreeListViewDragCue__ __VisualStates__ not changing is now fixed.
                 
 
-*  Exception on theme change with custom __Header__/__Footer__ is now fixed
+*  Exception on theme change with custom __Header__/__Footer__ is now fixed.
                 
 
-*  __SelectedItem__ binding does not work at first time (when set before __RadGridView.DataLoad__) is now fixed
+*  __SelectedItem__ binding does not work at first time (when set before __RadGridView.DataLoad__) is now fixed.
                 
 
-*  __SelectedUnfocusedState__ improved for all themes
+*  __SelectedUnfocusedState__ improved for all themes.
                 
 
-*  Improved initial load time and scrolling performance
+*  Improved initial load time and scrolling performance.
                 
 
-*  Wrong selection state combining actions __select item__, __unfocus grid__, __scroll grid__
+*  Wrong selection state combining actions __select item__, __unfocus grid__, __scroll grid__.
 
-*  Positioning of the __BetweenItems____Cue__ with rows with different height is now fixed
+*  Positioning of the __BetweenItems__ __Cue__ with rows with different height is now fixed.
                 
 
 ## Q2 2012
@@ -210,7 +210,7 @@ You can check the Release Notes for __Q1 2013__ {% if site.site_name == 'Silverl
 *  Delete key behavior with  __RadGridView.SelectionUnit = "Cell"__ improved.
                 
 
-* __GridViewRow____SelectedUnfocused__ state
+* __GridViewRow__ __SelectedUnfocused__ state.
                 
 
 * Validation improvement to support better various validation scenarios.
@@ -264,7 +264,7 @@ You can check the Release Notes for __Q1 2013__ {% if site.site_name == 'Silverl
 ### What's New
             
 
-*  __RadTreeListView____AutoExpandItems__ property
+*  __RadTreeListView__ __AutoExpandItems__ property
                 
 ### What's Fixed
             

@@ -26,7 +26,7 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Style
 
-To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadGridView__. In the 'Objects and Timeline' pane select the __RadGridView__you want to style. From the menu choose *Object -> Edit Additional Styles -> __GroupPanelStyle__ -> Edit a Copy *or *Object -> Edit Additional Styles -> __GroupPanelItemStyle__ -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadGridView__. In the 'Objects and Timeline' pane select the __RadGridView__ you want to style. From the menu choose *Object -> Edit Additional Styles -> __GroupPanelStyle__ -> Edit a Copy *or *Object -> Edit Additional Styles -> __GroupPanelItemStyle__ -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 

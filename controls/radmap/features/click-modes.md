@@ -86,8 +86,6 @@ If you want to implement a custom behavior for one or both of them, just set the
 
  * [Navigation]({%slug radmap-features-navigation%})
 
- * [View Modes]({%slug radmap-features-view-modes%})
-
  * [Zoom Modes]({%slug radmap-features-zoom-modes%})
 
  * [Distance and Scale]({%slug radmap-features-dsitance-and-scale%})

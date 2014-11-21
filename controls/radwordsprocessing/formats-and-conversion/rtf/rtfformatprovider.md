@@ -5,15 +5,14 @@ description: Using RtfFormatProvider
 slug: radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider
 tags: using,rtfformatprovider
 published: True
-position: 1
+position: 2
 ---
 
 # Using RtfFormatProvider
 
 
 
-__RtfFormatProvider__ makes it easy to import and export __RadFlowDocument__ to/from RTF format,
-        preserving the entire document structure and formatting.
+__RtfFormatProvider__ makes it easy to import and export __RadFlowDocument__ to/from RTF format, preserving the entire document structure and formatting.
       
 
 All you have to do in order to use __RtfFormatProvider__ is add references to the assemblies listed below:
@@ -36,12 +35,12 @@ The following code snippet shows how to use __RtfFormatProvider__ to import an R
 #### __C#__
 
 {{region radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_0}}
-	            RtfFormatProvider provider = new RtfFormatProvider();
-	            using (Stream input = File.OpenRead("Sample.rtf"))
-	            {
-	                RadFlowDocument document = provider.Import(input);
-	            }
-	{{endregion}}
+    RtfFormatProvider provider = new RtfFormatProvider();
+    using (Stream input = File.OpenRead("Sample.rtf"))
+    {
+        RadFlowDocument document = provider.Import(input);
+    }
+{{endregion}}
 
 
 
@@ -51,9 +50,9 @@ And here is how you can import a document from string containing the RTF documen
 #### __C#__
 
 {{region radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_1}}
-	            RtfFormatProvider provider = new RtfFormatProvider();
-	            RadFlowDocument document = provider.Import(input);
-	{{endregion}}
+    RtfFormatProvider provider = new RtfFormatProvider();
+    RadFlowDocument document = provider.Import(input);
+{{endregion}}
 
 
 
@@ -71,13 +70,13 @@ The following snippet shows how to use __RtfFormatProvider__ to export __RadFlow
 #### __C#__
 
 {{region radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_2}}
-	            RtfFormatProvider provider = new RtfFormatProvider();
-	            using (Stream output = File.Create("sample.rtf"))
-	            {
-	                RadFlowDocument document = CreateRadFlowDocument();
-	                provider.Export(document, output);
-	            }
-	{{endregion}}
+    RtfFormatProvider provider = new RtfFormatProvider();
+    using (Stream output = File.Create("sample.rtf"))
+    {
+        RadFlowDocument document = CreateRadFlowDocument();
+        provider.Export(document, output);
+    }
+{{endregion}}
 
 
 
@@ -87,10 +86,10 @@ You can also export the document to a string and preserve it in a database.
 #### __C#__
 
 {{region radwordsprocessing-formats-and-conversion-rtf-rtfformatprovider_3}}
-	            RtfFormatProvider provider = new RtfFormatProvider();
-	            RadFlowDocument document = CreateRadFlowDocument();
-	            string output = provider.Export(document);
-	{{endregion}}
+    RtfFormatProvider provider = new RtfFormatProvider();
+    RadFlowDocument document = CreateRadFlowDocument();
+    string output = provider.Export(document);
+{{endregion}}
 
 
 

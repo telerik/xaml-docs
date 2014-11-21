@@ -61,7 +61,3 @@ It contains the following parts:
 
 * __Content__ - is of type __ContentPresenter__ and is used to display the value of the __RadExpander.Content__ property.
 													
-
-# See Also
-
- * [Visual Structure]({%slug radexpander-structure%})

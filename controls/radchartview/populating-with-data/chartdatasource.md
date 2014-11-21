@@ -76,10 +76,6 @@ Note how the ItemsSource property of the Chart is bound to the ChartDataSource a
 {{region radchart-chartdatasource_2}}
 		 public class SimpleViewModel : DependencyObject
 	    {
-	           Random r = new Random();
-	        /// <summary>
-	        /// Identifies the <see cref="Data"/> dependency property.
-	        /// </summary>
 	        public static readonly DependencyProperty DataProperty = DependencyProperty.Register("Data",
 	            typeof(ObservableCollection<SalesInfo>),
 	            typeof(SimpleViewModel),
@@ -127,9 +123,6 @@ Note how the ItemsSource property of the Chart is bound to the ChartDataSource a
 		Public Class SimpleViewModel
 		 Inherits DependencyObject
 			   Private r As New Random()
-			''' <summary> '''
-			''' Identifies the <see cref="Data"/> dependency property. '''
-			''' </summary> '''
 			Public Shared ReadOnly DataProperty As DependencyProperty = DependencyProperty.Register("Data", GetType(ObservableCollection(Of SalesInfo)), GetType(SimpleViewModel), New PropertyMetadata(Nothing))
 	
 			Public Property Data() As RadObservableCollection(Of SalesInfo)

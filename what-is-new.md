@@ -10,15 +10,5 @@ position: 2
 
 # What's New
 
-
-
-## {% if site.site_name == 'Silverlight' %}
-
-For information about new functionality, improvements and fixes, [visit the official Telerik website](http://www.telerik.com/support/whats-new/silverlight).{% endif %}{% if site.site_name == 'WPF' %}
-
-For information about new functionality, improvements and fixes, [visit the official Telerik website](http://www.telerik.com/support/whats-new/wpf).
-          {% endif %}
-
-
-
-
+{% if site.site_name == 'Silverlight' %}For information about new functionality, improvements and fixes, [visit the official Telerik website](http://www.telerik.com/support/whats-new/silverlight).{% endif %}
+{% if site.site_name == 'WPF' %}For information about new functionality, improvements and fixes, [visit the official Telerik website](http://www.telerik.com/support/whats-new/wpf).{% endif %}

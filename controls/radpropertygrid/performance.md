@@ -35,10 +35,10 @@ __RadPropertyGrid’s__ API allows you to tweak your application for optimal per
 * __RadPropertyGrid__with applied __Windows8__,__Windows8Touch__ or __Office2013 Theme__ - Telerik controls in these themes use resources, which are dynamically loaded. Thus this approach slows down the performance of virtualized components, such as __RadPropertyGrid__.
 			
 
-* As of __Q2 2014 SP__ release we introduced the option to turn off the generating of the automation peers through the new global __AutomationMode__ property of the __AutomationManager__. You can check the [UI Automation Support](cabea947-6b4f-43bb-a5ba-f44d4d8ae1cc) article on how to set the __AutomationMode__ property to __Disabled__.
+* As of __Q2 2014 SP__ release we introduced the option to turn off the generating of the automation peers through the new global __AutomationMode__ property of the __AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the __AutomationMode__ property to __Disabled__.
 			
 
-* __TouchManager__ – another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support](737cc59b-2828-49eb-be56-3bac4b9ad992#States) article.
+* __TouchManager__ – another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
 			
 
 * As of __Q1 2012__ release we have introduced the option to enable / disable searching in nested properties through the __SearchInNestedProperties__ property of __RadPropertyGrid__ (the default value is __False__). Setting it to __True__, can lead to degraded performance, when you have a lot of visible nested properties.
@@ -52,4 +52,6 @@ __RadPropertyGrid’s__ API allows you to tweak your application for optimal per
 
 # See Also
 
- * [UI Virtualization]({%slug radpropertygrid-virtualization%})[](737cc59b-2828-49eb-be56-3bac4b9ad992#States)[](f7b879d9-62ca-42c3-a919-983c7cbc79a2)
+ * [UI Virtualization]({%slug radpropertygrid-virtualization%})
+ * [Touch Support]({%slug touch-support%})
+ * [Setting a Theme(Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

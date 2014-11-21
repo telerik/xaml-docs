@@ -30,9 +30,6 @@ Here is a sample definition of a __RadRibbonSplitButton__ without having any dro
 	                              Text="Paste" />
 	{{endregion}}
 
-
-
->tipAs all buttons in the __RadRibbonView__'s set mostly expose the same functionality, take a look at the [Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#Common_Functionality) topic for more information.
 		
 
 ## 
@@ -138,8 +135,6 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 	{{endregion}}
 
 
-
->tipTo learn how to handle ribbon bar button clicks take a look at the [Buttons Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#HandlingButtonClicks) topic.
 		  
 
 # See Also

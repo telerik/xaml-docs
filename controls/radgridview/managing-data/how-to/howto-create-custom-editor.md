@@ -10,9 +10,9 @@ position: 0
 
 # Create Custom Editor with RadGridView
 
-The purpose of this tutorial is to show you how to create a custom editor with __RadGridView__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. If you need a custom editor to edit a specific data, you can use one of the following approaches:
+The purpose of this tutorial is to show you how to create a custom editor with __RadGridView__. If you need a custom editor to edit a specific data, you can use one of the following approaches:
 
-* Use __CellEditTemplate__ property of the __GridViewColumn__.
+* Use __CellEditTemplate__ property of __GridViewColumn__.
 
 * Create a custom column by inheriting from __GridViewBoundColumnBase__.
 
@@ -36,6 +36,7 @@ This tutorial will demonstrate you the second approach by creating a column with
 #### __VB.NET__
 
 {{region radgridview-howto-create-custom-editor_1}}
+
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 	End Class
@@ -212,7 +213,7 @@ In this method an instance of a __RadColorPicker__ control is created and return
 You should set __BindingMode__ to __TwoWay__, because this is an editor and you need to update data property which is bound to the parent __GridViewColumn__. The __NotifyOnValidationError__ and __ValidatesOnExceptions__ properties are related to validation engine (if any error or exception occurs while you set new value to the data object will result as validation error and editor will enter into invalid state (if editor has such state)).
 Set __UpdateSourceTrigger__ to __Explicit__ and allow __RadGridView__ to validate and update the value of the data item at the right moment. Of course every __TwoWay__ binding requires a path, so you take the path from the __DataMemberBinding__ property.
 
-Another interesting line of the __CreateCellEditElement()__method is: __cellEditElement.MainPalette = this.MainPalette__. This line shows how you can transfer properties from column to the actual editor. In order to allow such properties and transfer them to custom column instance you have to override __CopyPropertiesFrom()__ method.
+Another interesting line of the __CreateCellEditElement()__ method is: __cellEditElement.MainPalette = this.MainPalette__. This line shows how you can transfer properties from column to the actual editor. In order to allow such properties and transfer them to custom column instance you have to override __CopyPropertiesFrom()__ method.
 
 * __CopyPropertiesFrom()__
 
@@ -416,23 +417,18 @@ Here is the full code for __RadColorPickerColumn__ class:
 {{region radgridview-howto-create-custom-editor_14}}
 
 	<Grid x:Name="LayoutRoot" Background="White">
-	
 	    <Grid.Resources>
 	        <example:ColorToBrushConverter x:Key="colorToBrushConverter" />
-	    </Grid.Resources>
-	
+	    </Grid.Resources>	
 	    <telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
 	        <telerik:RadGridView.Columns>
 	            <telerik:GridViewDataColumn UniqueName="FirstName" DataMemberBinding="{Binding FirstName}" Header="FirstName" />
 	            <telerik:GridViewDataColumn UniqueName="LastName" DataMemberBinding="{Binding LastName}" Header="LastName" />
 	            <telerik:GridViewDataColumn UniqueName="Age" DataMemberBinding="{Binding Age}" Header="Age" />
-	
-	            <example:RadColorPickerColumn UniqueName="FavouriteColor" DataMemberBinding="{Binding FavouriteColor}" 
-	                                        Header="FavouriteColor" MainPalette="ReallyWebSafe"/>
-	
+
+	            <example:RadColorPickerColumn UniqueName="FavouriteColor" DataMemberBinding="{Binding FavouriteColor}" Header="FavouriteColor" MainPalette="ReallyWebSafe"/>
 	        </telerik:RadGridView.Columns>
 	    </telerik:RadGridView>
-	
 	</Grid>
 {{endregion}}
 
@@ -442,7 +438,7 @@ The final result should be similar to the image below:
 
 ## Integrating the RadColorPickerColumn into the Validation and Editing Engine
 
-In order to integrate the __RadColorPickerColumn__ into the __RadGridView__ validation and editing engine, you should override two additional methods:
+In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s validation and editing engine, you should override two additional methods:
 
 * __UpdateSourceWithEditorValue()__
 

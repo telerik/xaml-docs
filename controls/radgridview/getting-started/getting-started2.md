@@ -44,9 +44,9 @@ __Example 1:__ Adding a __RadGridView__ manually in XAML.
 
 {{region gridview-getting-started2_0}}
 
-   <Grid x:Name="LayoutRoot" Background="White">
-        <telerik:RadGridView x:Name="radGridView" />
-   </Grid>
+	<Grid x:Name="LayoutRoot" Background="White">
+		<telerik:RadGridView x:Name="radGridView" />
+	</Grid>
 {{endregion}}
 
 Two lines code from Example 1 are important here:

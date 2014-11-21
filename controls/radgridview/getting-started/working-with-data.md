@@ -50,7 +50,7 @@ To display the data in the __RadGridView__ you have to set it to its __ItemsSour
 
 The __ItemsSource__ property takes any collection that implements __IEnumerable__.
 
-When set to the __ItemsSource__property the data appears in the form of columns. The columns are bound to the data in the __ItemsSource__. By default you don't have to explicitly define the columns, as they will be auto generated. If you want, you are allowed to define the columns manually and specify the bindings for each one. To learn more about the columns take a look at the [Grid Columns]({%slug gridview-columns-overview%}) topic.
+When set to the __ItemsSource__ property the data appears in the form of columns. The columns are bound to the data in the __ItemsSource__. By default you don't have to explicitly define the columns, as they will be auto generated. If you want, you are allowed to define the columns manually and specify the bindings for each one. To learn more about the columns take a look at the [Grid Columns]({%slug gridview-columns-overview%}) topic.
 
 Via the functionality implemented by the columns you can [sort]({%slug gridview-sorting-basics%}), [filter]({%slug gridview-basic-filtering2%}), [group]({%slug gridview-grouping-basics%}){% if site.site_name == 'Silverlight' %} or {% endif %}[page your data]({%slug gridview-overview-paging%}).
 
@@ -60,7 +60,7 @@ If the data you want to display is hierarchical you can still display it in an a
 
 ## Managing Data
 
-Except displaying sets of data, Telerik's __RadGridView__ allows you to manage them. You are able to execute the standard operations - __Insert__, __Update__and __Delete__, also you can validate the data. Besides using this functionality you are able to control it via the several events raised at the most important key-points of the action. 
+Except displaying sets of data, Telerik's __RadGridView__ allows you to manage them. You are able to execute the standard operations - __Insert__, __Update__ and __Delete__, also you can validate the data. Besides using this functionality you are able to control it via the several events raised at the most important key-points of the action. 
 
 You can find more about managing data in __RadGridView__ [here]({%slug gridview-managing-data-overview%}) or you can check out the following topics:
 

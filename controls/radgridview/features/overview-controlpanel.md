@@ -64,6 +64,5 @@ For example:
 {{endregion}}
 
 
->tipYou can download a __runnable solution__ showing how to define ControlPanelItems from our online SDK repository
-[here](https://github.com/telerik/xaml-sdk/), the example is listed under __GridView/ControlPanel__.
+>tipYou can download a __runnable solution__ showing how to define ControlPanelItems from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed under __GridView/ControlPanel__.
     

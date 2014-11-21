@@ -16,13 +16,13 @@ position: 1
 
 There are several ways to populate a tab control with tab items and they are:
 
-* [Declaratively](3859445F-543F-4DAE-B6B1-C051D166419A#Adding_And_Removing_Tabs_Declaratively)__in your XAML code__ – suitable for cases when the tab items structure is known during the implementation phase and does not change in time.
+* Declaratively __in your XAML code__ – suitable for cases when the tab items structure is known during the implementation phase and does not change in time.
 					
 
-* [Programmatically](3859445F-543F-4DAE-B6B1-C051D166419A#Adding_And_Removing_Tabs_Programmatically)__from the code-behind__ – use when the tab structure can be changed during run time by the user or other application logic.
+* Programmatically __from the code-behind__ – use when the tab structure can be changed during run time by the user or other application logic.
 					
 
-* __Using__[data binding]({%slug radtabcontrol-populating-data-binding%})__again from the code-behind__ - use when the tab structure is described in data model.
+* __Using [data binding]({%slug radtabcontrol-populating-data-binding%})__ again from the code-behind - use when the tab structure is described in data model.
 					
 
 Each one of the approaches described above is applicable for certain cases and that’s why you have to choose the one that best fits your requirements.

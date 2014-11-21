@@ -12,9 +12,7 @@ position: 0
 
 
 
-UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} gives the option to disable the Telerik StyleManager and to style the controls using
-        implicit styles (e.g. Style without x:Key attribute).  There are a number of benefits of using implicit styles over the Telerik StyleManager.
-        Some are listed below:
+UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} gives the option to disable the Telerik StyleManager and to style the controls using implicit styles (e.g. Style without x:Key attribute).  There are a number of benefits of using implicit styles over the Telerik StyleManager. Some are listed below:
       
 
 * Custom themes are now much easier  - created only via merged dictionaries
@@ -34,11 +32,9 @@ After installing UI for {% if site.site_name == 'Silverlight' %}Silverlight{% en
 
 * __Themes.Implicit__ – implicit styles friendly XAML.
 
->With Q1 2014 the __Themes__ folder, containing the stanadard themes used with StyleManager, are not provided in the installation package anymore.
-        However, they can be separately downloaded  from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} download page in your [Telerik account](http://www.telerik.com/account.aspx).
+>With Q1 2014 the __Themes__ folder, containing the stanadard themes used with StyleManager, are not provided in the installation package anymore. However, they can be separately downloaded  from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} download page in your [Telerik account](http://www.telerik.com/account.aspx).
 
-You may still apply a theme using our theming mechanism through utilizing the standard Telerik StyleManager and referencing binaries from the Binaries folder of 
-        your personal installation. The approach of creating custom themes and modifying the default Telerik themes, via the Telerik StyleManager remains the same.
+You may still apply a theme using our theming mechanism through utilizing the standard Telerik StyleManager and referencing binaries from the Binaries folder of your personal installation. The approach of creating custom themes and modifying the default Telerik themes, via the Telerik StyleManager remains the same.
       
 
 You may read more about this following this link:
@@ -59,11 +55,7 @@ This article explains details on using implicit styles with Telerik UI and cover
 
 ## Applying theme globally in your application
 
-The newly included Themes.Implicit folder lists resource dictionaries by assembly name. These resource dictionaries contain implicit styles and relevant needed resources.
-          They can be merged in the resources of your application (in App.xaml) and as a result will be applied implicitly on any control
-          that does not have a __local__ Style set.  For example, if you need to style a control from Telerik.Windows.Controls.dll, you
-          need the  Telerik.Windows.Controls.xaml resource dictionary. You will find such a file in each theme folder inside the Themes.Implicit folder.
-          The file structure is illustrated below:
+The newly included Themes.Implicit folder lists resource dictionaries by assembly name. These resource dictionaries contain implicit styles and relevant needed resources. They can be merged in the resources of your application (in App.xaml) and as a result will be applied implicitly on any control that does not have a __local__ Style set.  For example, if you need to style a control from Telerik.Windows.Controls.dll, you need the  Telerik.Windows.Controls.xaml resource dictionary. You will find such a file in each theme folder inside the Themes.Implicit folder. The file structure is illustrated below:
         
 
 * …/Themes.Implicit/<platform>/OfficeBlack/Themes/Telerik.Windows.Controls.xaml
@@ -72,8 +64,7 @@ The newly included Themes.Implicit folder lists resource dictionaries by assembl
 
 * Etc.
 
-As a general rule of thumb you should merge the .xaml files for each assembly reference you have in your project. For example if you
-          include Telerik.Windows.Controls.Docking.dll, you also need NoXAML references to:
+As a general rule of thumb you should merge the .xaml files for each assembly reference you have in your project. For example if you include Telerik.Windows.Controls.Docking.dll, you also need NoXAML references to:
         
 
 * Telerik.Windows.Controls.dll
@@ -91,13 +82,13 @@ So you need to add the xaml for all these assemblies from the selected theme:
 
 * Telerik.Windows.Controls.Docking.xaml
 
->If you copy the xaml files in your project, please make sure that they are with the proper build action. Generally  it should be Resource, but for the Telerik.Windows.Controls.RibbonView.xaml the build action should be Page. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in 
-          [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
+>If you copy the xaml files in your project, please make sure that they are with the proper build action. Generally  it should be Resource, but for the Telerik.Windows.Controls.RibbonView.xaml the build action should be Page. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
 
 ## Basing styles on theme style
 
 Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} follows a naming convention and every control has a style formed by the name of the control type  follow a *naming convention* and every control  has a style formed by the name of the control type followed by  a “Style” suffix.
-          For example, for the __RadComboBox__  there is a style with x:Key=”RadComboBoxStyle”. See the code in __Example 2__ .
+
+For example, for the __RadComboBox__  there is a style with x:Key=”RadComboBoxStyle”. See the code in __Example 2__ .
         
 
 
@@ -105,12 +96,12 @@ Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% 
 #### __[XAML] Example 2: Custom styles for RadComboBox__
 
 {{region styling-apperance-implicit-styles-overview_5}}
-		<Style x:Key="CustomStyle" TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
-			<Setter Property="Foreground" Value="Green" />
-		</Style>
-		<Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
-			<Setter Property="Foreground" Value="Red" />
-		</Style>
+    <Style x:Key="CustomStyle" TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
+        <Setter Property="Foreground" Value="Green" />
+    </Style>
+    <Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
+        <Setter Property="Foreground" Value="Red" />
+    </Style>
 	{{endregion}}
 
 
@@ -126,12 +117,12 @@ We will apply implicit styles from the Windows8 theme on the RadComboBox in our 
         
               
 
-Figure 1: Copy the needed .xaml in the project![implicit styles 1](images/implicit_styles_1.png)
+Figure 1: Copy the needed .xaml in the project
+![implicit styles 1](images/implicit_styles_1.png)
 
 >The build action should be Resource for most of the xaml files, but Page for the Telerik.Windows.Controls.RibbonView.xaml one.
 
-* 
-            The next step is to merge these ResourceDictionaries in the App.xaml file as shown in __Example 3__.          
+* The next step is to merge these ResourceDictionaries in the App.xaml file as shown in __Example 3__.          
             
 
 #### __[XAML] Example 3: Merging the ResourceDictionaries__
@@ -154,12 +145,10 @@ Figure 1: Copy the needed .xaml in the project![implicit styles 1](images/implic
 
 
 
-* 
-            And here is the result:
-            ![implicit styles 2](images/implicit_styles_2.png)
+* And here is the result:
+![implicit styles 2](images/implicit_styles_2.png)
 
-With implicit styles now being an integrated part of Telerik theming mechanism, it is easier than ever to create a custom style based on a theme.
-          Simply base your custom style on the needed control using the name of the control and the suffix “Style” as a StaticResource Key.
+With implicit styles now being an integrated part of Telerik theming mechanism, it is easier than ever to create a custom style based on a theme. Simply base your custom style on the needed control using the name of the control and the suffix “Style” as a StaticResource Key.
         
 
 __Example 4__ shows how to create two custom styles for __RadComboBox__ based on the Windows8 theme using the project above (the one with x:Key set).         
@@ -167,7 +156,7 @@ __Example 4__ shows how to create two custom styles for __RadComboBox__ based on
 
 
 
-#### __[XAML] Example 4: Add custom styles for RadComboBox __
+#### __[XAML] Example 4: Add custom styles for RadComboBox__
 
 {{region styling-apperance-implicit-styles-overview_1}}
 	<Application.Resources>
@@ -206,7 +195,8 @@ If you have three __RadComboBoxes__ as shown in __Example 5__.
 The __RadComboBox__ instances will be displayed as shown in __Figure 3__.
         
 
-Figure 3: RadComboBox instances with custom styles.![implicit styles 3](images/implicit_styles_3.png)
+Figure 3: RadComboBox instances with custom styles.
+![implicit styles 3](images/implicit_styles_3.png)
 
 ## Implicit Styles guidelines for all assemblies
 

@@ -22,7 +22,7 @@ Let's first start with some definitions:
 
 * __SelectedItem__ - this is the data item (business object) of the __selected row__. 
 
-* __CurrentItem__ - holds the data item (business object) of the row which currently __holds the focus.__It may or may not coincide with the selected row.
+* __CurrentItem__ - holds the data item (business object) of the row which currently __holds the focus__. It may or may not coincide with the selected row.
 
 With versions prior to Q2 2010, the __current item was synchronized with the selected item__ by default. As a result, the __first row__ of the GridView was __initially selected__.
 

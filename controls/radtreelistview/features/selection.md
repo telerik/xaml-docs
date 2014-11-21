@@ -26,7 +26,7 @@ The __RadTreeListView__ provides three selection modes, which allow you to manip
 
 ## Selection Units
 
-The __RadTreeListView__provides two selection units, which allow you to manipulate what units are selected when you interact with the grid. This is controlled by the __SelectionUnit__ enumeration property which has the following entries:
+The __RadTreeListView__ provides two selection units, which allow you to manipulate what units are selected when you interact with the grid. This is controlled by the __SelectionUnit__ enumeration property which has the following entries:
 
 * __FullRow__ - this is the default value. Clicking within the cells will select the row.
 

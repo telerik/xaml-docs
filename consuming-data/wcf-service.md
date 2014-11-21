@@ -37,34 +37,13 @@ For the purpose of this tutorial will be used a service that exposes the followi
 The first step is to add a new service reference to your application. In order to do that you need to perform the following steps:
 
 * Select the "__References__" folder, right click with your mouse button and choose "__Add Service Reference...__"
-
-
-
-
-
-
-         
-      ![Common Consuming Data Wcf Service 010](images/Common_ConsumingDataWcfService_010.png)
+![Common Consuming Data Wcf Service 010](images/Common_ConsumingDataWcfService_010.png)
 
 *  A popup window appears; hit the __Discover__ button to find the web service or enter the service location. Press OK to add it. 
+![Common Consuming Data Wcf Service 020](images/Common_ConsumingDataWcfService_020.png)
 
-
-
-
-         
-      ![Common Consuming Data Wcf Service 020](images/Common_ConsumingDataWcfService_020.png)
-
->
-
-You have the ability to choose the type of the collections that the service returns. In order to do that you need to open the __Service Reference Settings__ dialog from the __Advanced__ button.
-
-
-
-
-         
-      ![Common Consuming Data Wcf Service 030](images/Common_ConsumingDataWcfService_030.png)
-
-
+>You have the ability to choose the type of the collections that the service returns. In order to do that you need to open the __Service Reference Settings__ dialog from the __Advanced__ button.
+![Common Consuming Data Wcf Service 030](images/Common_ConsumingDataWcfService_030.png)
 
 When a service reference is added to a project, any types defined in the service are generated in the local project. In many cases, this creates duplicate types when a service uses common .NET Framework types or when types are defined in a shared library. To avoid this problem, types in referenced assemblies are shared by default. If you want to disable type sharing for one or more assemblies, you can do so in the __Service Reference Settings__ dialog.
 

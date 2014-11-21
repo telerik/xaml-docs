@@ -200,10 +200,9 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	{{endregion}}
     
 __The image below is a snapshot taken in the middle of the animation.__
- 
-      ![](images/RadChart_Features_Animations_01.png)
+![](images/RadChart_Features_Animations_01.png)
 
-__AnimationSettings__ are a simple and easy way to control your animations. However, if you need further customizations, you should consider using [templates](13DD5D60-0C6A-4ABE-B72F-27A3F1E14807).
+__AnimationSettings__ are a simple and easy way to control your animations. However, if you need further customizations, you should consider using templates.
 
 To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __ChartArea.EnableStripLinesAnimation__ properties to __False:__
 

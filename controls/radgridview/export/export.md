@@ -116,7 +116,7 @@ In addition,__RadGridView__ provides a built-in methods to get the content of yo
 
 * __ExcelML__ - the content of the __RadGridView__ is exported to Excel XML format. In order to export to this format use the __ToExcelML()__ method.
 
->The export methods (__ToHtml()__, __ToCsv()__, __ToText()__and __ToExcelML()__) are implemented in the class __ExportExtension__ as extension methods to the standard __RadGridView__ control. In order to see and call these methods you have to import the __Telerik.Windows.Controls__ namespace.
+>The export methods (__ToHtml()__, __ToCsv()__, __ToText()__ and __ToExcelML()__) are implemented in the class __ExportExtension__ as extension methods to the standard __RadGridView__ control. In order to see and call these methods you have to import the __Telerik.Windows.Controls__ namespace.
 
 #### __C#__
 
@@ -142,7 +142,7 @@ In addition,__RadGridView__ provides a built-in methods to get the content of yo
 
 As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when you export data from RadGridView - __ElementExporting__ and __ElementExported__. 
 
-__ElementExporting__ is a direct replacement of the __Exporting__ event which is used before Q1 2010 SP2. The __Exporting__ event was obsoleted with __Q2 2010. You can__use the events to __format or modify the exported data__.
+__ElementExporting__ is a direct replacement of the __Exporting__ event which is used before Q1 2010 SP2. The __Exporting__ event was obsoleted with __Q2 2010__. You can use the events to format or modify the exported data.
 
 
 As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with 

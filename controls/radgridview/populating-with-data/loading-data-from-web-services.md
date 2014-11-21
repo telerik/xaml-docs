@@ -47,7 +47,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	Dim serviceClient As New SampleWebServiceSoapClient()
 {{endregion}}
 
->tipFor more information about how to add a reference to a Web Service and how to create a new instance of a Web Service client,  take a look at the [Consuming Web Service](http://www.telerik.com/help/silverlight/consuming-data-web-asmx-service.html)[Consuming Web Service](http://www.telerik.com/help/wpf/consuming-data-web-asmx-service.html)topic.
+>tipFor more information about how to add a reference to a Web Service and how to create a new instance of a Web Service client,  take a look at the [Consuming Web Service](http://www.telerik.com/help/silverlight/consuming-data-web-asmx-service.html)[Consuming Web Service](http://www.telerik.com/help/wpf/consuming-data-web-asmx-service.html) topic.
 
 The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects.
 
@@ -171,7 +171,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	End Class
 {{endregion}}
 
->tipFor more information about how to add a reference to a Web Service and how to create a new instance of a Web Service client, take a look at the [Consuming Web Service](http://www.telerik.com/help/silverlight/consuming-data-web-asmx-service.html)[Consuming Web Service](http://www.telerik.com/help/wpf/consuming-data-web-asmx-service.html) topic.
+>tipFor more information about how to add a reference to a Web Service and how to create a new instance of a Web Service client, take a look at the [Consuming Web Service](http://www.telerik.com/help/silverlight/consuming-data-web-asmx-service.html)[Consuming Web Service](http://www.telerik.com/help/wpf/consuming-data-web-asmx-service.html)   topic.
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Customers__ from the database:
 
@@ -267,7 +267,7 @@ Run your demo, the result can be seen on the next picture:
 
 ![](images/RadGridView_PopulatingWithDataLoadFromWeb_010.PNG)
 
->tipIf you need to define the columns manually take a look at the [Defining Columns](0AE6DD74-8F95-4625-9083-A42F3F9217BD#Manual_Columns_Definition) topic.
+>tipIf you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
 
 # See Also
 

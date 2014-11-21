@@ -127,9 +127,9 @@ Note how the ItemsSource property of the Chart is bound to the ChartDataSource a
 		Public Class SimpleViewModel
 		 Inherits DependencyObject
 			   Private r As New Random()
-			''' <summary>
-			''' Identifies the <see cref="Data"/> dependency property.
-			''' </summary>
+			''' <summary> '''
+			''' Identifies the <see cref="Data"/> dependency property. '''
+			''' </summary> '''
 			Public Shared ReadOnly DataProperty As DependencyProperty = DependencyProperty.Register("Data", GetType(ObservableCollection(Of SalesInfo)), GetType(SimpleViewModel), New PropertyMetadata(Nothing))
 	
 			Public Property Data() As RadObservableCollection(Of SalesInfo)
@@ -181,12 +181,11 @@ Note how the ItemsSource property of the Chart is bound to the ChartDataSource a
 
 
 By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 4 bars, where each bar repesents a period of 5 days. The result is shown on the image below:
-                ![Rad Chart View-chart chartdatasource](images/RadChartView-chart_chartdatasource.PNG)
+![Rad Chart View-chart chartdatasource](images/RadChartView-chart_chartdatasource.PNG)
 
 ## Use custom aggregate function
 
-By default *RadChartView* calculates an Average of the given values when Sampling is used. You can however use different aggregate functions like Sum, Min, Max and etc.
-                
+By default *RadChartView* calculates an Average of the given values when Sampling is used. You can however use different aggregate functions like Sum, Min, Max and etc.                
 
 For the purpose you should inherit from the specific ChartSeries class that you are using and override the following protected methods to use different aggregate functions:
                 

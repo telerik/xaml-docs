@@ -10,10 +10,6 @@ position: 1
 
 # Tooltip
 
-
-
-## 
-
 RadChartView provides a tooltip behavior which can be used to visualize arbitrary information related to a data point. The tooltip is triggered by setting the __ToolTipTemplate__ property of __ChartToolTipBehavior__ to a valid DataTemplate object during design-time and positioning the mouse cursor down somewhere on the chart during run-time. If the user hovers directly over a data point, the tooltip will display information for this particular data point.      
 
 
@@ -29,39 +25,39 @@ First we will need a chart, which is bound to a collection of custom objects (re
 
 {{region radchart-features-tooltip_5}}
 	public class ProfitDifferenceContext
-	    {
-	        public string Quarter
-	        {
-	            get;
-	            set;
-	        }
-	        public double Profit
-	        {
-	            get;
-	            set;
-	        }
-	        public object PreviousQuarter
-	        {
-	            get;
-	            set;
-	        }
-	        public double PreviousDifference
-	        {
-	            get;
-	            set;
-	        }
-	        public object NextQuarter
-	        {
-	            get;
-	            set;
-	        }
-	        public double NextDifference
-	        {
-	            get;
-	            set;
-	        }
-	    }
-	{{endregion}}
+	{
+		public string Quarter
+		{
+			get;
+			set;
+		}
+		public double Profit
+		{
+			get;
+			set;
+		}
+		public object PreviousQuarter
+		{
+			get;
+			set;
+		}
+		public double PreviousDifference
+		{
+			get;
+			set;
+		}
+		public object NextQuarter
+		{
+			get;
+			set;
+		}
+		public double NextDifference
+		{
+			get;
+			set;
+		}
+	}
+{{endregion}}
 
 
 
@@ -131,72 +127,69 @@ First we will need a chart, which is bound to a collection of custom objects (re
 	        End Set
 	    End Property    
 	End Class
-	{{endregion}}
+{{endregion}}
 
 We should set data to the values so that it will be able to display information about the currently hovered data point via the ToolTipTemplate.
 
 #### __C#__
 
 {{region radchart-features-tooltip_7}}
-	  public MainPage()
-	        {
-	            InitializeComponent();
-	            List<ProfitDifferenceContext> items = CreateItems();
-	            this.chart.Series[0].ItemsSource = items;
-	        }
-	
-	        private List<ProfitDifferenceContext> CreateItems()
-	        {
-	            List<ProfitDifferenceContext> items = new List<ProfitDifferenceContext>();
-	            Random r = new Random();
-	            const int itemsCount = 4;
-	            for (int i = 0; i < itemsCount; i++)
-	            {
-	                ProfitDifferenceContext profitDiffContext = new ProfitDifferenceContext()
-	                {
-	                    Quarter = string.Format("Q{0}", i + 1),
-	                    Profit = r.Next(1, 20),
-	                };
-	                items.Add(profitDiffContext);
-	            }
-	            for (int i = 0; i < itemsCount; i++)
-	            {
-	                ProfitDifferenceContext profitDiffContext = items[i];
-	                if (i > 0)
-	                {
-	                    ProfitDifferenceContext prevPoint = items[i - 1];
-	                    profitDiffContext.PreviousDifference = profitDiffContext.Profit - prevPoint.Profit;
-	                    profitDiffContext.PreviousQuarter = prevPoint.Quarter;
-	                }
-	                if (i < itemsCount - 1)
-	                {
-	                    ProfitDifferenceContext nextPoint = items[i + 1];
-	                    profitDiffContext.NextDifference = nextPoint.Profit - nextPoint.Profit;
-	                    profitDiffContext.NextQuarter = nextPoint.Quarter;
-	                }
-	            }
-	            return items;
-	        }
-	{{endregion}}
+	public MainPage()
+	{
+		InitializeComponent();
+		List<ProfitDifferenceContext> items = CreateItems();
+		this.chart.Series[0].ItemsSource = items;
+	}
 
-
+	private List<ProfitDifferenceContext> CreateItems()
+	{
+		List<ProfitDifferenceContext> items = new List<ProfitDifferenceContext>();
+		Random r = new Random();
+		const int itemsCount = 4;
+		for (int i = 0; i < itemsCount; i++)
+		{
+			ProfitDifferenceContext profitDiffContext = new ProfitDifferenceContext()
+			{
+				Quarter = string.Format("Q{0}", i + 1),
+				Profit = r.Next(1, 20),
+			};
+			items.Add(profitDiffContext);
+		}
+		for (int i = 0; i < itemsCount; i++)
+		{
+			ProfitDifferenceContext profitDiffContext = items[i];
+			if (i > 0)
+			{
+				ProfitDifferenceContext prevPoint = items[i - 1];
+				profitDiffContext.PreviousDifference = profitDiffContext.Profit - prevPoint.Profit;
+				profitDiffContext.PreviousQuarter = prevPoint.Quarter;
+			}
+			if (i < itemsCount - 1)
+			{
+				ProfitDifferenceContext nextPoint = items[i + 1];
+				profitDiffContext.NextDifference = nextPoint.Profit - nextPoint.Profit;
+				profitDiffContext.NextQuarter = nextPoint.Quarter;
+			}
+		}
+		return items;
+	}
+{{endregion}}
 
 #### __XAML__
 
 {{region radchart-features-tooltip_0}}
-	<telerik:RadCartesianChart x:Name="chart">
-	
-	            <telerik:RadCartesianChart.HorizontalAxis>
-	                <telerik:CategoricalAxis/>
-	            </telerik:RadCartesianChart.HorizontalAxis>
-	
-	            <telerik:RadCartesianChart.VerticalAxis>
-	                <telerik:LinearAxis/>
-	            </telerik:RadCartesianChart.VerticalAxis>
-	
-	            <telerik:BarSeries CategoryBinding="Quarter" ValueBinding="Profit"/>
+	<telerik:RadCartesianChart x:Name="chart">	
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+
+		<telerik:BarSeries CategoryBinding="Quarter" ValueBinding="Profit"/>
 	</telerik:RadCartesianChart>
-	{{endregion}}
+{{endregion}}
 
 Now we need to define our tooltip behavior and set its tool tip template. It will display the value of the selected data point and also how this value relates to the previous and next quarters.
 
@@ -204,53 +197,51 @@ Now we need to define our tooltip behavior and set its tool tip template. It wil
 
 {{region radchart-features-tooltip_1}}
 	<telerik:RadCartesianChart.Behaviors>
-	                <telerik:ChartTooltipBehavior Placement="Top" VerticalOffset="20" />
-	            </telerik:RadCartesianChart.Behaviors>
-	            <telerik:RadCartesianChart.TooltipTemplate>
-	                <DataTemplate>
-	                    <Grid>
-	                        <Path Data="M-1236,-441 L-1180,-441 -1180,-424 -1228,-424 -1230.5,-420 -1233,-424 -1236,-424 z"
-	                                  Stretch="Fill" Fill="Beige" Stroke="Gray" StrokeThickness="2"/>
-	                            <StackPanel Margin="5,5,5,18">
-	                                <StackPanel Orientation="Horizontal">
-	                                    <TextBlock Text="Profit for "
-	                          FontWeight="Bold" FontSize="11"/>
-	                                    <TextBlock Text="{Binding Path=DataItem.Quarter}" FontWeight="Bold" FontSize="11"/>
-	                                    <TextBlock Text=": $" FontWeight="Bold" FontSize="11"/>
-	                                    <TextBlock Text="{Binding Path=DataItem.Profit}" FontWeight="Bold" FontSize="11"/>
-	                                    <TextBlock Text=" billion" FontWeight="Bold" FontSize="11"/>
-	                                </StackPanel>
-	                                <StackPanel Orientation="Horizontal"
-	                        Visibility="{Binding Path=DataItem.PreviousQuarter, Converter={StaticResource QuarterToVisibilityConverter}}">
-	                                    <TextBlock Text="Compared to "/>
-	                                    <TextBlock Text="{Binding Path=DataItem.PreviousQuarter}"/>
-	                                    <TextBlock Text=": "/>
-	                                    <TextBlock Text="$"
-	                          Foreground="{Binding Path=DataItem.PreviousDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
-	                                    <TextBlock Text="{Binding Path=DataItem.PreviousDifference}"
-	                          Foreground="{Binding Path=DataItem.PreviousDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
-	                                    <TextBlock Text=" billion"
-	                          Foreground="{Binding Path=DataItem.PreviousDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
-	                                </StackPanel>
-	                                <StackPanel Orientation="Horizontal"
-	                        Visibility="{Binding Path=DataItem.NextQuarter, Converter={StaticResource QuarterToVisibilityConverter}}">
-	                                    <TextBlock Text="Compared to "/>
-	                                    <TextBlock Text="{Binding Path=DataItem.NextQuarter}"/>
-	                                    <TextBlock Text=": "/>
-	                                    <TextBlock Text="$"
-	                          Foreground="{Binding Path=DataItem.NextDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
-	                                    <TextBlock Text="{Binding Path=DataItem.NextDifference}"
-	                          Foreground="{Binding Path=DataItem.NextDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
-	                                    <TextBlock Text=" billion"
-	                          Foreground="{Binding Path=DataItem.NextDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
-	                                </StackPanel>
-	                            </StackPanel>
-	                    </Grid>
-	                </DataTemplate>
-	            </telerik:RadCartesianChart.TooltipTemplate>
-	{{endregion}}
-
-
+		<telerik:ChartTooltipBehavior Placement="Top" VerticalOffset="20" />
+	</telerik:RadCartesianChart.Behaviors>
+	<telerik:RadCartesianChart.TooltipTemplate>
+		<DataTemplate>
+			<Grid>
+				<Path Data="M-1236,-441 L-1180,-441 -1180,-424 -1228,-424 -1230.5,-420 -1233,-424 -1236,-424 z"
+						  Stretch="Fill" Fill="Beige" Stroke="Gray" StrokeThickness="2"/>
+					<StackPanel Margin="5,5,5,18">
+						<StackPanel Orientation="Horizontal">
+							<TextBlock Text="Profit for "
+				  FontWeight="Bold" FontSize="11"/>
+							<TextBlock Text="{Binding Path=DataItem.Quarter}" FontWeight="Bold" FontSize="11"/>
+							<TextBlock Text=": $" FontWeight="Bold" FontSize="11"/>
+							<TextBlock Text="{Binding Path=DataItem.Profit}" FontWeight="Bold" FontSize="11"/>
+							<TextBlock Text=" billion" FontWeight="Bold" FontSize="11"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal"
+				Visibility="{Binding Path=DataItem.PreviousQuarter, Converter={StaticResource QuarterToVisibilityConverter}}">
+							<TextBlock Text="Compared to "/>
+							<TextBlock Text="{Binding Path=DataItem.PreviousQuarter}"/>
+							<TextBlock Text=": "/>
+							<TextBlock Text="$"
+				  Foreground="{Binding Path=DataItem.PreviousDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
+							<TextBlock Text="{Binding Path=DataItem.PreviousDifference}"
+				  Foreground="{Binding Path=DataItem.PreviousDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
+							<TextBlock Text=" billion"
+				  Foreground="{Binding Path=DataItem.PreviousDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal"
+				Visibility="{Binding Path=DataItem.NextQuarter, Converter={StaticResource QuarterToVisibilityConverter}}">
+							<TextBlock Text="Compared to "/>
+							<TextBlock Text="{Binding Path=DataItem.NextQuarter}"/>
+							<TextBlock Text=": "/>
+							<TextBlock Text="$"
+				  Foreground="{Binding Path=DataItem.NextDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
+							<TextBlock Text="{Binding Path=DataItem.NextDifference}"
+				  Foreground="{Binding Path=DataItem.NextDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
+							<TextBlock Text=" billion"
+				  Foreground="{Binding Path=DataItem.NextDifference, Converter={StaticResource ProfitToBrushConverter}}"/>
+						</StackPanel>
+					</StackPanel>
+			</Grid>
+		</DataTemplate>
+	</telerik:RadCartesianChart.TooltipTemplate>
+{{endregion}}
 
 Here are the binding converters and their implementations:
 
@@ -261,9 +252,7 @@ Here are the binding converters and their implementations:
 	       <local:ProfitToBrushConverter x:Key="ProfitToBrushConverter"/>
 	       <local:QuarterToVisibilityConverter x:Key="QuarterToVisibilityConverter"/>
 	</telerik:RadCartesianChart.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -304,9 +293,7 @@ Here are the binding converters and their implementations:
 	        throw new NotImplementedException();
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -349,9 +336,7 @@ Here are the binding converters and their implementations:
 	        Throw New NotImplementedException
 	    End Function
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 The result can be seen below:
 

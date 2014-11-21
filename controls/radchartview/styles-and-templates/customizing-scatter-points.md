@@ -10,10 +10,6 @@ position: 3
 
 # Customizing Scatter Points
 
-
-
-## 
-
 RadChart allows that you set custom shape for the Scatter points (items of the [ScatterPoint]({%slug radchartview-series-scatterseries%}) series) via DataTemplate. However there are cases where we would like each point in our scatter series to have different shape or color. This is where you should use the *PointTemplateSelector* property.
         
 
@@ -306,7 +302,7 @@ For our scenario where we would like different shape for the pointmarks, this me
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_6}}
 
-	'NOTE: This code snippet uses implicit typing. You will need to set 'Option Infer On' in the VB file or set 'Option Infer' at the project level:
+	'NOTE: This code snippet uses implicit typing. You will need to set 'Option Infer On' in the VB file or set 'Option Infer' at the project level: '
 	
 	  Public Class ScatterPointTemplateSelector
 		  Inherits DataTemplateSelector

@@ -10,10 +10,6 @@ position: 0
 
 # Create Data-Bound Chart
 
-
-
-## 
-
 __Populating RadChart with Data__
 
 
@@ -157,13 +153,11 @@ and whenever we update a product's sold quantity, the chart will be updated. For
 	barSeries.ItemsSource = products;
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-series-databinding_7}}
 	Dim products As ObservableCollection(Of Product) = New ObservableCollection(Of Product)
-	' fill collection
+	' fill collection '
 	Dim nameBinding As PropertyNameDataPointBinding = New PropertyNameDataPointBinding
 	nameBinding.PropertyName = "Name"
 	Dim genericBinding As GenericDataPointBinding(Of Product, Double) = New GenericDataPointBinding(Of Product, Double)
@@ -172,18 +166,13 @@ and whenever we update a product's sold quantity, the chart will be updated. For
 	barSeries.ValueBinding = genericBinding
 	barSeries.ItemsSource = dataSource
 	{{endregion}}
-
-
-
+	
  The only requirement left for the code above to work is that our Product class needs to implement __INotifyPropertyChanged__ and raise the PropertyChanged event when its QuantitySold property changes.
 
-
-
 __Binding in XAML__
-          The series in a chart can also be bound through XAML* assuming the DataContext of our series is the data source:
+
+The series in a chart can also be bound through XAML* assuming the DataContext of our series is the data source:
 For example:
-
-
 
 #### __C#__
 
@@ -194,9 +183,7 @@ For example:
 	    ChartSeries barSeries = this.chart.Series[0];
 	    barSeries.DataContext = new double[] { 20, 30, 50, 10, 60, 40, 20, 80 };
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -212,9 +199,7 @@ For example:
 	dataSource(7) = 80
 	Dim barSeries As ChartSeries = Me.chart.Series(0)
 	barSeries.DataContext = dataSource
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -240,4 +225,4 @@ For example:
 	      </telerik:BarSeries>
 	   </telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-	{{endregion}}
+{{endregion}}

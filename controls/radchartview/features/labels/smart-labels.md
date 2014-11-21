@@ -33,7 +33,7 @@ As you can see the labels are hard to read in such cases. The smart label strate
 
 ![radchartview-enabled-smart-labels](images/radchartview-enabled-smart-labels.png)
 
-You can find this feature demonstrated in our {% if site.site_name == 'Silverlight' %}online [SmartLabels](http://demos.telerik.com/silverlight/#ChartView/SmartLabels) demo{% endif %}{% if site.site_name == 'WPF' %}[WPFdemos](http://demos.telerik.com/wpf/)ChartView -> SmartLabels example{% endif %}.
+You can find this feature demonstrated in our {% if site.site_name == 'Silverlight' %}online [SmartLabels](http://demos.telerik.com/silverlight/#ChartView/SmartLabels) demo{% endif %}{% if site.site_name == 'WPF' %}[WPFdemos](http://demos.telerik.com/wpf/) ChartView -> SmartLabels example{% endif %}.
         
 
 ## Using Smart Labels in RadPieChart

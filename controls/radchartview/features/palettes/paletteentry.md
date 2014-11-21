@@ -10,33 +10,16 @@ position: 2
 
 # Palette Entry
 
-
-
-## 
-
-Each palette contains PaletteEntries which expose the following properties:
-        
+Each palette contains PaletteEntries which expose the following properties:        
 
 * Fill
-
 * Stroke
-
 * AdditionalFill
-
 * AdditionalStroke
 
-__Fill__ and __Stroke__ are the most commonly used properties 
-          which affect most of the series in __RadChartView__. The other two are more 
-          specific and are not relevant for all types of series. In the OhlcSeries the properties 
-          __Open__ and __Close__ define two types of sticks, 
-          depending on which of these properties has a bigger value. One of these types takes its color 
-          from __Stroke__ and the other - from __AdditionalStroke__. 
-          Similarly the __AdditionalFill__ property affects the CandlestickSeries.
-        
+__Fill__ and __Stroke__ are the most commonly used properties which affect most of the series in __RadChartView__. The other two are more specific and are not relevant for all types of series. In the OhlcSeries the properties __Open__ and __Close__ define two types of sticks, depending on which of these properties has a bigger value. One of these types takes its color from __Stroke__ and the other - from __AdditionalStroke__. Similarly the __AdditionalFill__ property affects the CandlestickSeries.        
 
-Here is an example of how to use the __AdditionalFill__ and __AdditionalStroke__ properties
-          in CandlestickSeries:
-        
+Here is an example of how to use the __AdditionalFill__ and __AdditionalStroke__ properties in CandlestickSeries:        
 
 #### __XAML__
 
@@ -79,11 +62,7 @@ Here is an example of how to use the __AdditionalFill__ and __AdditionalStroke__
 	    </telerik:CandlestickSeries>
 	
 	</telerik:RadCartesianChart>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the example:
-        ![Rad Chart View-palettes-paletteentry-0](images/RadChartView-palettes-paletteentry-0.png)
-
-# See Also
+![Rad Chart View-palettes-paletteentry-0](images/RadChartView-palettes-paletteentry-0.png)

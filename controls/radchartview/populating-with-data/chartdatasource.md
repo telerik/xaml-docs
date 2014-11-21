@@ -178,8 +178,7 @@ By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 
 
 ## Use custom aggregate function
 
-By default *RadChartView* calculates an Average of the given values when Sampling is used. You can however use different aggregate functions like Sum, Min, Max and etc.
-                
+By default *RadChartView* calculates an Average of the given values when Sampling is used. You can however use different aggregate functions like Sum, Min, Max and etc.                
 
 For the purpose you should inherit from the specific ChartSeries class that you are using and override the following protected methods to use different aggregate functions:
                 

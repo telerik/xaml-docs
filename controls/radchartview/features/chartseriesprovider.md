@@ -51,32 +51,22 @@ Type-specific properties:
         
 
 * __CategoricalSeriesDescriptor__
-
-1. CategoryPath - path to the Category of the data item.
-
-2. ValuePath - path to the Value of the data item.
+	1. CategoryPath - path to the Category of the data item.
+	2. ValuePath - path to the Value of the data item.
 
 * __OhlcSeriesDescriptor__
-
-1. OpenPath - path to the Open value of the data item.
-
-2. HighPath - path to the High value of the data item.
-
-3. LowPath - path to the Low value of the data item.
-
-4. ClosePath - path to the Close value of the data item.
+	1. OpenPath - path to the Open value of the data item.
+	2. HighPath - path to the High value of the data item.
+	3. LowPath - path to the Low value of the data item.
+	4. ClosePath - path to the Close value of the data item.
 
 * __PolarSeriesDescriptor__
-
-1. ValuePath - path to the Value of the data item.
-
-2. Anglepath - path to the Angle value of the data item.
-
+	1. ValuePath - path to the Value of the data item.
+	2. Anglepath - path to the Angle value of the data item.
+	
 * __RadarSeriesDescriptor__
-
-1. CategoryPath - path to the Category of the data item.
-
-2. ValuePath - path to the Value of the data item.
+	1. CategoryPath - path to the Category of the data item.
+	2. ValuePath - path to the Value of the data item.
 
 ## Example
 
@@ -293,5 +283,3 @@ In the following example the chart is populated by a collection of 3 items, thus
 	{{endregion}}
 
 ![Rad Chart View-chartseriesprovider-0](images/RadChartView-chartseriesprovider-0.png)
-
-# See Also

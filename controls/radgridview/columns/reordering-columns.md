@@ -10,7 +10,7 @@ position: 10
 
 # Reordering Columns
 
-The __RadGridView__ control supports column reordering and it can be done by the user in run-time. The user has just to drag the desired column's header at the desired position among the other headers and drop it there.
+__RadGridView__ control supports column reordering and it can be done by the user in run-time. The user has just to drag the desired column's header at the desired position among the other headers and drop it there.
 
 ![](images/RadGridView_ReorderingColumns_1.png)
 
@@ -36,7 +36,7 @@ You can find the possible values you can assign for it bellow:
 
 ## Disabling Reordering
 
-There are two ways to disable reordering. The first one is to disable it on __RadGridView__ level by setting the __CanUserReorderColumns__property to __False__, which means that none of the columns will be re-orderable.
+There are two ways to disable reordering. The first one is to disable it on __RadGridView__ level by setting the __CanUserReorderColumns__ property to __False__, which means that none of the columns will be re-orderable.
 
 #### __XAML__
 

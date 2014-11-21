@@ -11,5 +11,3 @@ position: 6
 # Filter a Column Programmatically
 
 See this [article]({%slug gridview-filtering-programmatic%}) for more information.
-
-# See Also

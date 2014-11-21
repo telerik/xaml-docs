@@ -14,7 +14,7 @@ position: 4
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewCell control]({%slug radgridview-styles-and-templates-templates-structure%}).
 
-__RadGridView Cells__can be styled by creating an appropriate __Style__ and setting it to the __CellStyle__ property of the __GridViewColumns__. 
+__RadGridView Cells__ can be styled by creating an appropriate __Style__ and setting it to the __CellStyle__ property of the __GridViewColumns__. 
 
 You have two options:
 
@@ -35,7 +35,7 @@ Load your project in Expression Blend and open the User Control that holds the _
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __GridViewCell__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __GridViewCell__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __GridViewCell__. Their names indicate to which part of the __GridViewCell__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
@@ -49,13 +49,14 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * __GridViewCellTemplate__ - the __ControlTemplate__, applied to the __GridViewCell__ control.
 
-* __GridViewCellStyle__- the __Style__, applied to the __GridViewCell__ control.
+* __GridViewCellStyle__ - the __Style__, applied to the __GridViewCell__ control.
 
 To apply the style to the real cells, set it to the __CellStyle__ property of the __RadGridView__ columns.
 
 #### __XAML__
 
 {{region gridview-styling-cell_1}}
+
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
                                 Header="Name"
                                 CellStyle="{StaticResource GridViewCellStyle}" />

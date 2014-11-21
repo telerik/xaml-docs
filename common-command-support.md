@@ -29,8 +29,7 @@ Today there are several Command frameworks that can be found for Silverlight. Ea
 
 ## Command Classes
 
-In its essence a command is an object that can be notified when a command should be executed and can be used to check whether a command can be executed. This similarity is shared between all commands because they implement the built-in ICommand interface:
-        
+In its essence a command is an object that can be notified when a command should be executed and can be used to check whether a command can be executed. This similarity is shared between all commands because they implement the built-in ICommand interface:        
 
 #### __C#__
 
@@ -38,13 +37,11 @@ In its essence a command is an object that can be notified when a command should
 	public interface ICommand
 	{
 		event EventHandler CanExecuteChanged;
-	
+
 		bool CanExecute(object parameter);
 		void Execute(object parameter);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 The RoutedUICommand represents a command that uses routed events to notify when it has executed and to check whether it can execute. In order to use these commands more effectively an understanding of how routed events work is needed.
         
@@ -57,9 +54,8 @@ Commands are commonly created as public static fields so that they can be easily
 #### __C#__
 
 {{region creating-RoutedCommand_2}}
-	public static RoutedUICommand MyCommand = new RoutedUICommand ("My Command Text", "MyCommand", typeof(MainPage));
-	
-	{{endregion}}
+	public static RoutedUICommand MyCommand = new RoutedUICommand ("My Command Text", "MyCommand", typeof(MainPage));	
+{{endregion}}
 
 
 
@@ -70,10 +66,9 @@ Then a command can be used by setting the command property on any of the RadButt
 #### __XAML__
 
 {{region set-Command-property_0}}
-	        <telerik:RadButton Command="MainPage.MyCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
-	        <telerik:RadMenuItem Command="MainPage.MyCommand" Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
-	{{endregion}}
-
+	<telerik:RadButton Command="MainPage.MyCommand" Content="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+	<telerik:RadMenuItem Command="MainPage.MyCommand" Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}"/>
+{{endregion}}
 
 
 Note how the command is specifies with the name of the type where it was defined and the name of the static field. Then the content of the button and the menu item are bound to the command text that was specified in its constructor.

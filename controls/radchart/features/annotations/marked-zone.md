@@ -18,11 +18,11 @@ The Marked Zone feature allows you to place a rectangle inside the __ChartArea__
 
 >tipYou can place more than one __MarkedZone__in your __ChartArea__.
 
->The__StartX, EndX, StartY__and __EndY__ are of type __double__. Therefore, if the respective axis displays __DateTime__ values, you have to pass converted to OLE Automation dates to them. For more information see [DateTime.ToOADate()](http://msdn.microsoft.com/en-us/library/system.datetime.tooadate(VS.95).aspx). 
+>The __StartX, EndX, StartY__ and __EndY__ are of type __double__. Therefore, if the respective axis displays __DateTime__ values, you have to pass converted to OLE Automation dates to them. For more information see [DateTime.ToOADate()](http://msdn.microsoft.com/en-us/library/system.datetime.tooadate(VS.95).aspx). 
 
-In order to customize the appearance of the __MarkedZone__you can simply set its __Background__ property, __Stroke__ (will change its color) and its __StrokeThickness__ (will change the thickness of the line).
+In order to customize the appearance of the __MarkedZone__ you can simply set its __Background__ property, __Stroke__ (will change its color) and its __StrokeThickness__ (will change the thickness of the line).
 
->tipIf you have multiple y-axes, you can specify to which the __MarkedZone__should be applied by setting the __x:Name__ value of the appropriate __Y-Axis__ to the __YAxisName__ property of the __MarkedZone__.
+>tipIf you have multiple y-axes, you can specify to which the __MarkedZone__ should be applied by setting the __x:Name__ value of the appropriate __Y-Axis__ to the __YAxisName__ property of the __MarkedZone__.
 
 The following code snippet demonstrates a RadChart with LineSeries that will be used as base for adding MarkedZones over:
 
@@ -153,14 +153,7 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(yellowZone)
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(greenZone)
 	{{endregion}}
-
-
-
-
-
-
-         
-      ![](images/RadChart_Features_Annotations_MarkedZone_01.png)
+![](images/RadChart_Features_Annotations_MarkedZone_01.png)
 
 Here is an example of a marked zone that is limited in both directions.
 
@@ -191,11 +184,7 @@ Here is an example of a marked zone that is limited in both directions.
 
 >tipThis can be done in code behind too!
 
-
-
-
-         
-      ![](images/RadChart_Features_Annotations_MarkedZone_02.png)
+![](images/RadChart_Features_Annotations_MarkedZone_02.png)
 
 The Marked Zones can overlap each other. In such case their __Z-Index__ will be used to determine which will appear above. Here is an example.
 
@@ -230,11 +219,7 @@ The Marked Zones can overlap each other. In such case their __Z-Index__ will be 
 
 >tipThis can be done in code behind too!
 
-
-
-
-         
-      ![](images/RadChart_Features_Annotations_MarkedZone_03.png)
+![](images/RadChart_Features_Annotations_MarkedZone_03.png)
 
 Additional customizations can be done via the __ElementStyle__ property. It gets applied to the __Rectangle__ element that visually represents the __MarkedZone__. Via this style you can set the __StrokeDashArray__ property for example.
 
@@ -273,9 +258,4 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 
 
 >tipThis can be done in code behind too!
-
-
-
-
-         
-      ![](images/RadChart_Features_Annotations_MarkedZone_04.png)
+![](images/RadChart_Features_Annotations_MarkedZone_04.png)

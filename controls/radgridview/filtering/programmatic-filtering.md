@@ -20,7 +20,7 @@ Besides the built-in filtering functionality you are able to use a programmatic 
 
 # See Also
 
- * [Basic Filtering]({%slug gridview-basic-filtering2%})
+ * [Basic Filtering]({%slug gridview-basic-filtering%})
 
  * [Cascading Distinct Values]({%slug gridview-filtering-cascading-distinct-values%})
 

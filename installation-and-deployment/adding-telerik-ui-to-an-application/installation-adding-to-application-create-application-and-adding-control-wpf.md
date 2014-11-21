@@ -11,14 +11,8 @@ site_name: WPF
 
 # Creating an Application and Adding UI for WPF
 
-
-
-The following topic describes what steps you should perform in order to add the Telerik RadControls for Silverlight in your application.
-      		There are two ways to do this - first one is to install RadControls Extensions for VisualStudio which is the easiest and preferrable way.
-      		The second one is by adding the necessary assemblies as references in your application. No matter which of the two manners you will choose, you will be able
-      		to use the Toolbox to create your application.
+The following topic describes what steps you should perform in order to add the Telerik RadControls for Silverlight in your application. There are two ways to do this - first one is to install RadControls Extensions for VisualStudio which is the easiest and preferrable way. The second one is by adding the necessary assemblies as references in your application. No matter which of the two manners you will choose, you will be able to use the Toolbox to create your application.
       
-
 ## Creating Application with Visual Studio Extensions installed
 
 * Open [Microsoft Visual Studio 2012]({%slug installation-system-requirements%}).
@@ -27,9 +21,8 @@ The following topic describes what steps you should perform in order to add the 
 
 >You can choose __.Net Framework 4.0__ or __.Net Framework 4.5__ for your application.
 
-* On the next step you can choose which assemblies to add to your application. For example if you intend to use __RadGridView__ in your application you can
-    					check __Telerik.Windows.Controls.GridView__ assembly and all other required dlls will be checked automatically.
-    				![Common Installing Creating Application 013 WPF](images/Common_InstallingCreatingApplication_013_WPF.png)
+* On the next step you can choose which assemblies to add to your application. For example if you intend to use __RadGridView__ in your application you can check __Telerik.Windows.Controls.GridView__ assembly and all other required dlls will be checked automatically.
+![Common Installing Creating Application 013 WPF](images/Common_InstallingCreatingApplication_013_WPF.png)
 
 * After doing this your application should look like this:
 
@@ -46,17 +39,14 @@ The following topic describes what steps you should perform in order to add the 
 		<Grid x:Name="LayoutRoot">
 		</Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Creating Application without Visual Studio Extensions installed
 
 * Open [Microsoft Visual Studio 2012]({%slug installation-system-requirements%}).
           	
-
 * Create a new WPF Application.
-          	![Common Installing Creating Application 011 WPF](images/Common_InstallingCreatingApplication_011_WPF.png)
+![Common Installing Creating Application 011 WPF](images/Common_InstallingCreatingApplication_011_WPF.png)
 
 >You can choose __.Net Framework 4.0__ or __.Net Framework 4.5__ for your application.
 
@@ -84,9 +74,7 @@ The following topic describes what steps you should perform in order to add the 
 	        <telerik:RadTreeView></telerik:RadTreeView>
 	    </Grid>
 	</Window>
-	{{endregion}}
-
-
+{{endregion}}
 
 >Note that after dropping a control, Visual Studio automatically creates a namespace that points to the appropriate assembly. If you want to manually set up a namespace take a look at the [Namespace Declaration]({%slug installation-installing-controls-dependencies-wpf%}) topic.
 

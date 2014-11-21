@@ -16,8 +16,9 @@ This article will show you how to style conditionally RadGridView cells using th
 >tipTo learn the basics about __StyleSelectors__ please check [this article]({%slug gridview-style-selectors-overview%}).
 		  
 
-Assume we have a __GridView__ bound to a collection of clubs. Each club has a property __StadiumCapacity__. What we want to achieve is to set the background color of the StadiumCapacity cells to Red if the capacity is greater than 50 000 or yellow otherwise:![](images/gridview_cellstyleselector.png)
+Assume we have a __GridView__ bound to a collection of clubs. Each club has a property __StadiumCapacity__. What we want to achieve is to set the background color of the StadiumCapacity cells to Red if the capacity is greater than 50 000 or yellow otherwise:
 
+![](images/gridview_cellstyleselector.png)
 
 
 To do so follow these steps:
@@ -126,7 +127,7 @@ In this case we have two different styles that could be applied - __BigStadiumSt
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
-If you are using our [Implicit Themes](%slug styling-apperance-implicit-styles-overview%), you should base the style on the one defined for the corresponding theme:
+If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme:
 
 #### __XAML__
 

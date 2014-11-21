@@ -515,5 +515,5 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 # See Also
 
  * [Styles and Templates Overview]({%slug gridview-stylines-and-templates-overview%})
- * [Setting a Theme](%slug styling-apperance-implicit-styles-overview%)
- * [Editing Control Templates](%slug styling-apperance-editing-control-templates%)
+ * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

@@ -115,7 +115,7 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
 	End Function
 	 DataContext = view
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
@@ -139,7 +139,8 @@ That way only filtering through the Field Filters will be enabled. You can check
 
 Check out the WPF Demos [here.](http://demos.telerik.com/wpf/)
 
-You can also check this [blog.](http://blogs.telerik.com/vladimirenchev/posts/10-10-20/data-virtualization-for-your-silverlight-and-wpf-applications.aspx){% endif %}{% if site.site_name == 'Silverlight' %}
+You can also check this [blog.](http://blogs.telerik.com/vladimirenchev/posts/10-10-20/data-virtualization-for-your-silverlight-and-wpf-applications.aspx){% endif %}
+{% if site.site_name == 'Silverlight' %}
 
 Check out the online demo [here.](http://demos.telerik.com/silverlight/#DataVirtualization/FirstLook)
 

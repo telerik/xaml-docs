@@ -29,7 +29,7 @@ The extensions handle the following major points in the development with __UI fo
 
 __Visual Studio Extensions__ for __UI for Silverlight__ are distributed with the __UI for Silverlight__ installer. They can be downloaded and installed as separate product from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/) for Visual Studio 2010 and later. The extensions support Visual Studio 2010 and 2012, handling Silverlight 5 applications. 
 
-The __Visual Studio Extensions__ can be accessed through the __Telerik | UI for Silverlight__menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a Silverlight Application as well.
+The __Visual Studio Extensions__ can be accessed through the __Telerik | UI for Silverlight__ menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a Silverlight Application as well.
 
 __No selected project in Visual Studio__
 

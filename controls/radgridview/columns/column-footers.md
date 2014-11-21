@@ -54,11 +54,11 @@ Because it is of type object, you are not limited to just using plain text. For 
 {{endregion}}
 
 
-__![](images/RadGridView_ColumnFooters_2.png)__
+![](images/RadGridView_ColumnFooters_2.png)
 
 ## Showing the Column Footers
 
-By default the column footers are hidden, so in order to make them visible you have to set the __ShowColumnFooters__property of the __RadGridView__ to __True__.
+By default the column footers are hidden, so in order to make them visible you have to set the __ShowColumnFooters__ property to __True__.
 
 #### __XAML__
 

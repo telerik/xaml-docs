@@ -22,12 +22,3 @@ Thank you for choosing Telerik __RadExpander__!
 ![](images/RadExpander.png)
 
 __RadExpander__ is a flexible control that helps you save space and achieve an easier navigation through your site. You can place the expander anywhere on your page and embed any content inside the drop-down area. __RadExpander__ also gives you the control over its __ExpandDirection__ to let you adjust the control as per your custom layout.
-				
-
-# See Also
-
- * [Features]({%slug radexpander-features-overview%})
-
- * [HowTo]({%slug radexpander-howto-overview%})
-
- * [Template Structure]({%slug radexpander-styles-templates-template-structure%})

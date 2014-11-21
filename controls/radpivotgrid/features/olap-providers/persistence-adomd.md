@@ -11,24 +11,17 @@ site_name: WPF
 
 # Persist AdomdDataProvider
 
-
-
-In this article we will show you how to persist the current state of __AdomdDataProvider__ via Telerik's RadPersistenceFramework.
-      
+In this article we will show you how to persist the current state of __AdomdDataProvider__ via Telerik's RadPersistenceFramework.      
 
 ## Persistence Framework
 
-In this article we will show you how to serialize and deserialize AdomdDataProvider and all of its settings via __RadPersistenceFramework__.
-          You can use this feature to save the current state of the provider and load it next time the application is started.
-        
+In this article we will show you how to serialize and deserialize AdomdDataProvider and all of its settings via __RadPersistenceFramework__. You can use this feature to save the current state of the provider and load it next time the application is started.        
 
 ## Persist AdomdDataProvider
 
-We've added the DataContract attribute to all classes used by AdomdDataProvider. So you can easily serialize it by using DataContractSerializer.
-        
+We've added the DataContract attribute to all classes used by AdomdDataProvider. So you can easily serialize it by using DataContractSerializer.        
 
-So lets create a simple class that we'll use to save and load DataProviderSettings. You have to add the DataContract attribute to the new class and DataMember attribute for its properties.
-        
+So lets create a simple class that we'll use to save and load DataProviderSettings. You have to add the DataContract attribute to the new class and DataMember attribute for its properties.        
 
 #### __C#__
 
@@ -54,9 +47,7 @@ So lets create a simple class that we'll use to save and load DataProviderSettin
 	    [DataMember]
 	    public PivotAxis AggregatesPosition { get; set; }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -81,17 +72,9 @@ So lets create a simple class that we'll use to save and load DataProviderSettin
 		<DataMember> _
 		Public Property AggregatesPosition() As PivotAxis
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-The next step is to create a new class, which implements __Telerik.Windows.Persistence.Services.IValueProvider__.
-          *IValueProvider* has two methods that you will have to implement - *ProvideValue* and *RestoreValue*. The first one is used when
-          the data is saved. The second one is used when the data is restored from a previously saved state.
-          When saving the provider, you have to create an instance of *DataProviderSettings* class and set all of the properties.
-          After that you can save the instance to a file or a stream. When using DataContractSerializer you have to give a collection of KnownTypes to the serializer. That's why we've created a new __PivotSerializationHelper__
-          class which has a static member - KnownTypes. It consits of all types you'll need in order to serialize AdomdDataProvider. Here's an example how to implement it:
-        
+The next step is to create a new class, which implements __Telerik.Windows.Persistence.Services.IValueProvider__. *IValueProvider* has two methods that you will have to implement - *ProvideValue* and *RestoreValue*. The first one is used when the data is saved. The second one is used when the data is restored from a previously saved state. When saving the provider, you have to create an instance of *DataProviderSettings* class and set all of the properties. After that you can save the instance to a file or a stream. When using DataContractSerializer you have to give a collection of KnownTypes to the serializer. That's why we've created a new __PivotSerializationHelper__ class which has a static member - KnownTypes. It consits of all types you'll need in order to serialize AdomdDataProvider. Here's an example how to implement it:        
 
 #### __C#__
 
@@ -185,9 +168,7 @@ The next step is to create a new class, which implements __Telerik.Windows.Persi
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -265,12 +246,9 @@ The next step is to create a new class, which implements __Telerik.Windows.Persi
 			End Get
 		End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-So the last step is to register a persistence provider and implement the logic to save and load the state of AdomdDataProvider:
-        
+So the last step is to register a persistence provider and implement the logic to save and load the state of AdomdDataProvider:        
 
 #### __C#__
 
@@ -286,9 +264,7 @@ So the last step is to register a persistence provider and implement the logic t
 	this.stream.Position = 0;
 	PersistenceManager manager = new PersistenceManager();
 	manager.Load(this.pivotGrid.DataProvider, this.stream);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -296,16 +272,12 @@ So the last step is to register a persistence provider and implement the logic t
 	Dim stream As Stream = New MemoryStream()
 	
 	ServiceProvider.RegisterPersistenceProvider(Of IValueProvider)(GetType(AdomdDataProvider), New AdomdValueProvider())
-	'saving
+	'saving'
 	Dim manager As New PersistenceManager()
 	Me.stream = manager.Save(Me.pivotGrid.DataProvider)
 	
-	'loading 
+	'loading'
 	Me.stream.Position = 0
 	Dim manager As New PersistenceManager()
 	manager.Load(Me.pivotGrid.DataProvider, Me.stream)
-	{{endregion}}
-
-
-
-# See Also
+{{endregion}}

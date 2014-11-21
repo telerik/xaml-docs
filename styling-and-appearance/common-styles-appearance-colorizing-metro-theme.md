@@ -17,14 +17,13 @@ This article will show you how to easily modify __Windows8__ and __Windows8Touch
 
 ## Colorizing Windows8 and Windows8Touch Theme
 
-When Telerik developed the *Windows8* theme, we needed of as little as 6 brushes for our controls.
-          Exceptions are the Charts, ScheduleView etc. that use some additional colors for their chart series, time markers and categories.
+When Telerik developed the *Windows8* theme, we needed of as little as 6 brushes for our controls. Exceptions are the Charts, ScheduleView etc. that use some additional colors for their chart series, time markers and categories.
         
 
-All Telerik controls use brushes that are linked to one major singleton object that contains the colors to be used for the __Windows8__/__Windows8Touch__ theme. They are public so you can easily modify the colors of the theme at one single point.
+All Telerik controls use brushes that are linked to one major singleton object that contains the colors to be used for the __Windows8__ / __Windows8Touch__ theme. They are public so you can easily modify the colors of the theme at one single point.
         
 
-You can change the __Windows8__/__Windows8Touch__ colors by setting properties as shown in __Example 1__.
+You can change the __Windows8__ / __Windows8Touch__ colors by setting properties as shown in __Example 1__.
         
 
 __Example 1__: You can change colors in the Windows8 and Windows8Touch theme by setting the properites of the Palette object.
@@ -51,17 +50,13 @@ __Example 1__: You can change colors in the Windows8 and Windows8Touch theme by 
 
 
 
-The most important brush, __AccentColor__, controls the colors of headers and selected items. The __MainColor__ brush controls the backgrounds.
-          Other brushes are used at various places but as long as you do not pick same colors for different brushes, your design will be all right.
+The most important brush, __AccentColor__, controls the colors of headers and selected items. The __MainColor__ brush controls the backgrounds. Other brushes are used at various places but as long as you do not pick same colors for different brushes, your design will be all right.
         
 
 With the PaletteInstance being a DependencyObject you are able to even animate the colors at runtime.
 
-
-
-
-            Figure 1: Some of the possible looks you will be able to easily achieve.
-          ![Common Metro Theme Colors](images/Common_Metro_Theme_Colors.png)
+Figure 1: Some of the possible looks you will be able to easily achieve.
+![Common Metro Theme Colors](images/Common_Metro_Theme_Colors.png)
 
 You can use the following brushes in your application to style your own interface using colors consistent to the __Windows8__ theme:
         
@@ -155,24 +150,17 @@ __Example 2__ shows how to use the resources to achieve the style of the buttons
 	</UserControl>
 	{{endregion}}
 
-
-
-
-            Figure 2 shows the result of styling your own interface (Example 2).
-          ![Common Windows 8 Colors 01](images/Common_Windows8_Colors_01.png)
+Figure 2 shows the result of styling your own interface (Example 2).
+![Common Windows 8 Colors 01](images/Common_Windows8_Colors_01.png)
 
 ## Changing Fonts
 
-All Telerik controls use resources that are linked to one major singleton object that contains the __FontSize__ and __FontFamily__ properties used for both themes.
-          Those properties are public so you can easily modify those theme resources at one single point.
-          The property for the most commonly used FontSize in both themes is named __FontSize__ and the property for most commonly used FontFamily resource is named __FontFamily__
-          and it is set to Segoe UI. Bigger FontSizes are used for headers and footers while smaller FontSizes are used for complex controls such as __RibbonView__, __Gauge__ etc.
-          __Example 3__, shown after the note below, shows these resources and their default values for the  __Windows8Theme__. You can modify each of them based on your needs.
-        {% if site.site_name == 'WPF' %}
+All Telerik controls use resources that are linked to one major singleton object that contains the __FontSize__ and __FontFamily__ properties used for both themes. Those properties are public so you can easily modify those theme resources at one single point. The property for the most commonly used FontSize in both themes is named __FontSize__ and the property for most commonly used FontFamily resource is named __FontFamily__ and it is set to Segoe UI. Bigger FontSizes are used for headers and footers while smaller FontSizes are used for complex controls such as __RibbonView__, __Gauge__ etc. 
 
->importantWhen you change these resources, you should ensure that the __Windows8ResourceDictionary__/__Windows8TouchResourceDictionary__ is merged to App.xaml in
-              the following way:
-            
+__Example 3__, shown after the note below, shows these resources and their default values for the  __Windows8Theme__. You can modify each of them based on your needs.
+{% if site.site_name == 'WPF' %}
+>importantWhen you change these resources, you should ensure that the __Windows8ResourceDictionary__ / __Windows8TouchResourceDictionary__ is merged to App.xaml in the following way:
+             
 
 #### __XAML__
 
@@ -220,8 +208,7 @@ __Example 3__: Setting __FontSize__ and __FontFamily__ properties to use in Wind
 
 
 
-The official Q1 2013 release of __Telerik UI for__ introduced features that allow you to dynamically change the __FontSize__ and __FontFamily__ properties of all components for __Windows8__ and __Windows8Touch__ themes.
-          As __Example 4__ shows, you can change the default __FontFamily__ from "Segoe" to "Calibri" and the __FontSize__ from 12 to 22 on a click of a button.
+The official Q1 2013 release of __Telerik UI for__ introduced features that allow you to dynamically change the __FontSize__ and __FontFamily__ properties of all components for __Windows8__ and __Windows8Touch__ themes. As __Example 4__ shows, you can change the default __FontFamily__ from "Segoe" to "Calibri" and the __FontSize__ from 12 to 22 on a click of a button.
         
 
 __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the click of a button.
@@ -262,10 +249,8 @@ __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the c
 
 __Figure 3__ shows a comparison of the application before and after the button is clicked.
         
-
-
-            Figure 3: You can click a button to change FontSize.
-          ![Common Windows 8 Font Change 01](images/Common_Windows8_FontChange_01.png)
+Figure 3: You can click a button to change FontSize.
+![Common Windows 8 Font Change 01](images/Common_Windows8_FontChange_01.png)
 
 # See Also
 

@@ -61,10 +61,4 @@ In order to use properly these descriptors you just have to set the appropriate 
 	</telerik:RadChart>
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_Features_DateTimeGrouping_01.png)
+![](images/RadChart_Features_DateTimeGrouping_01.png)

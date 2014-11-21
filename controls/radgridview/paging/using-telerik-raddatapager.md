@@ -88,13 +88,13 @@ Here is a list of the most important features of the __RadDataPager__:
 
 * __Both__ - displays AutoEllipsis before and after the Numeric Buttons.
 
-* __None -__doesn't display AutoEllipsis.
+* __None__ - doesn't display AutoEllipsis.
 
 * __Display Modes__ - by setting the __DisplayMode__ property you can specify which of the Pager Buttons and Visuals to be visible.
 
 ## Integrating RadDataPager with RadGridView
 
-See this [article](FDBBFA08-24CE-4FE6-AFEE-DAFEC25A9C0D#Paging_RadGridView) for more information.
+See this [article]({%slug raddatapager-getting-started%}) for more information.
 
 ## Using RadDataPager together with DomainDataSource
 
@@ -131,6 +131,6 @@ __RadDataPager__ can be used together with __DomainDataSource__ provided by the 
 
  * [Basic Grouping]({%slug gridview-grouping-basics%})
 
- * [Basic Filtering]({%slug gridview-basic-filtering2%})
+ * [Basic Filtering]({%slug gridview-filtering-basic%})
 
  * [Basic Selection]({%slug gridview-selection-basics%})

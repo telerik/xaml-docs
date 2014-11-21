@@ -121,7 +121,7 @@ The UI thread will not block and will continue executing normally since loading 
 
 ## Cancelling the Request
 
-While you are waiting for data to return you can always call the __CancelLoad__ method or execute the __CancelLoadCommand.__This will cancel the current load request. In order to test this functionality, you might want to increase the fake server delay I have placed in __NorthwindDomainService__:
+While you are waiting for data to return you can always call the __CancelLoad__ method or execute the __CancelLoadCommand.__ This will cancel the current load request. In order to test this functionality, you might want to increase the fake server delay I have placed in __NorthwindDomainService__:
 
 #### __C#__
 
@@ -145,6 +145,6 @@ Once the server returns the data, the __QDSCV__ will detect this and update itse
 
 __RadDomainDataSource__ has a property called __AutoLoad__. If AutoLoad is true, a load request is made each time something that affects the query changes. The changes that will trigger an auto-load include changes in the __FilterDescriptors__, __SortDescriptors__, __GroupDescriptors__, and __QueryParameters__. Furthermore, data is automatically reloaded when the __PageIndex__ or __PageSize__ change. Changing the page index will __always__ load the new page of data regardless of the __AutoLoad__ setting.
 
-When __AutoLoad__ is false, it is your responsibility to request a load, for example on a button click. This can be done either through the __Load__ method or by using the __LoadCommand__if you are a __MVVM__ person. Additionally, there is a property called __LoadDelay__which determines the delay between the time a change that prompts an automatic load occurs and the time the subsequent __Load__ [Link...](http://msdn.microsoft.com/en-us/library/system.windows.controls.domaindatasource.load%28v=VS.91%29.aspx) is invoked.
+When __AutoLoad__ is ___false___, it is your responsibility to request a load, for example on a button click. This can be done either through the __Load__ method or by using the __LoadCommand__ if you are a __MVVM__ person. Additionally, there is a property called __LoadDelay__ which determines the delay between the time a change that prompts an automatic load occurs and the time the subsequent __Load__ [Link...](http://msdn.microsoft.com/en-us/library/system.windows.controls.domaindatasource.load%28v=VS.91%29.aspx) is invoked.
 
 

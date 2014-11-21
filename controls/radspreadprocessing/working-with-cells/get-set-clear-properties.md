@@ -38,10 +38,10 @@ __Example 1__ creates a selection for cells in the range A1:F6.
 #### __[C#] Example 1: Create CellSelection A1:F6__
 
 {{region radspreadprocessing-working-with-cells-get-set-clear-properties_0}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+{{endregion}}
 
 
 
@@ -103,14 +103,14 @@ __Example 2__ illustrates how to use these methods on the region A1:F6:
 #### __[C#] Example 2: Use GetIsBold(), SetIsBold() and ClearIsBold() methods__
 
 {{region radspreadprocessing-working-with-cells-get-set-clear-properties_1}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
-	
-	            selection.SetIsBold(true);
-	            bool isBold = selection.GetIsBold().Value;
-	            selection.ClearIsBold();
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+
+    selection.SetIsBold(true);
+    bool isBold = selection.GetIsBold().Value;
+    selection.ClearIsBold();
+{{endregion}}
 
 
 
@@ -131,12 +131,12 @@ __Example 3__ illustrates who to retrieve the value of cell B2:
 #### __[C#] Example 3: Retrieve value of cell__
 
 {{region radspreadprocessing-working-with-cells-get-set-clear-properties_7}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellSelection selection = worksheet.Cells[1, 1];
-	
-	            ICellValue cellValue = selection.GetValue().Value;
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellSelection selection = worksheet.Cells[1, 1];
+
+    ICellValue cellValue = selection.GetValue().Value;
+{{endregion}}
 
 
 
@@ -149,22 +149,22 @@ __Example 4__ demonstrates how to set the value of a given selection.
 #### __[C#] Example 4: Set value of CellSelection__
 
 {{region radspreadprocessing-working-with-cells-get-set-clear-properties_2}}
-	            // set DateTime value
-	            selection.SetValue(DateTime.Now);
-	
-	            // set double value
-	            selection.SetValue(51.345);
-	
-	            // set ICellValue
-	            ICellValue value = worksheet.Cells[5, 5].GetValue().Value;
-	            selection.SetValue(value);
-	
-	            // set string value
-	            selection.SetValue("Total");
-	
-	            // set formula value
-	            selection.SetValue("=C1+C10");
-	{{endregion}}
+    // set DateTime value
+    selection.SetValue(DateTime.Now);
+
+    // set double value
+    selection.SetValue(51.345);
+
+    // set ICellValue
+    ICellValue value = worksheet.Cells[5, 5].GetValue().Value;
+    selection.SetValue(value);
+
+    // set string value
+    selection.SetValue("Total");
+
+    // set formula value
+    selection.SetValue("=C1+C10");
+{{endregion}}
 
 
 
@@ -179,42 +179,41 @@ __Example 5__ demonstrates how to set the value of the Borders of the regions B2
 #### __[C#] Example 5: Set value of Borders__
 
 {{region radspreadprocessing-working-with-cells-get-set-clear-properties_3}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            ThemableColor purple = new ThemableColor(Color.FromRgb(155, 89, 182));
-	            ThemableColor darkBlue = new ThemableColor(Color.FromRgb(44, 62, 80));
-	
-	            CellBorders purpleBorders = new CellBorders(new CellBorder(CellBorderStyle.Dotted, purple));
-	            worksheet.Cells[1, 1, 2, 2].SetBorders(purpleBorders);
-	
-	            CellBorders darkBlueBorders = new CellBorders(
-	                new CellBorder(CellBorderStyle.Medium, darkBlue),   // Left border
-	                new CellBorder(CellBorderStyle.Medium, darkBlue),   // Top border
-	                new CellBorder(CellBorderStyle.Medium, darkBlue),   // Right border
-	                new CellBorder(CellBorderStyle.Medium, darkBlue),   // Bottom border
-	                new CellBorder(CellBorderStyle.Thin, purple),       // Inside horizontal border
-	                new CellBorder(CellBorderStyle.Thin, purple),       // Inside vertical border
-	                new CellBorder(CellBorderStyle.None, darkBlue),     // Diagonal up border
-	                new CellBorder(CellBorderStyle.None, darkBlue));    // Diagonal down border
-	
-	            worksheet.Cells[1, 4, 2, 5].SetBorders(darkBlueBorders);
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    ThemableColor purple = new ThemableColor(Color.FromRgb(155, 89, 182));
+    ThemableColor darkBlue = new ThemableColor(Color.FromRgb(44, 62, 80));
+
+    CellBorders purpleBorders = new CellBorders(new CellBorder(CellBorderStyle.Dotted, purple));
+    worksheet.Cells[1, 1, 2, 2].SetBorders(purpleBorders);
+
+    CellBorders darkBlueBorders = new CellBorders(
+        new CellBorder(CellBorderStyle.Medium, darkBlue),   // Left border
+        new CellBorder(CellBorderStyle.Medium, darkBlue),   // Top border
+        new CellBorder(CellBorderStyle.Medium, darkBlue),   // Right border
+        new CellBorder(CellBorderStyle.Medium, darkBlue),   // Bottom border
+        new CellBorder(CellBorderStyle.Thin, purple),       // Inside horizontal border
+        new CellBorder(CellBorderStyle.Thin, purple),       // Inside vertical border
+        new CellBorder(CellBorderStyle.None, darkBlue),     // Diagonal up border
+        new CellBorder(CellBorderStyle.None, darkBlue));    // Diagonal down border
+
+    worksheet.Cells[1, 4, 2, 5].SetBorders(darkBlueBorders);
+{{endregion}}
 
 
 
 The result of __Example 5__ is demonstrated in __Figure 1__:
         
 
-Figure 1: Resulting Borders![Rad Spread Processing Working With Cells Get Set Clear Properties 01](images/RadSpreadProcessing_Working_With_Cells_Get_Set_Clear_Properties_01.png)
+Figure 1: Resulting Borders
+![Rad Spread Processing Working With Cells Get Set Clear Properties 01](images/RadSpreadProcessing_Working_With_Cells_Get_Set_Clear_Properties_01.png)
 
 ## Fill Property
 
 The __Fill__ property uses an __IFill__ object for getting and setting its property value. The document model supports two types of fills that are represented through the __PatternFill__ and __GradientFill__ classes, both of which conform to the __IFill__ interface.
         
 
-As its name suggests, the __PatternFill__ object is used to fill the background of a region of cells using a repeated pattern of shapes. To create a PatternFill instance, you need to specify the type of the pattern, the background color and pattern color of the fill. You can choose between
-          [ eighteen types of patterns](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_patterntype.html)
-          , such as HorizontalStripe, DiagonalCrossHatch, Gray75Percent and many more. The PatternFill object also allows you to set the background of a cell to a solid color.
+As its name suggests, the __PatternFill__ object is used to fill the background of a region of cells using a repeated pattern of shapes. To create a PatternFill instance, you need to specify the type of the pattern, the background color and pattern color of the fill. You can choose between [eighteen types of patterns](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_patterntype.html), such as HorizontalStripe, DiagonalCrossHatch, Gray75Percent and many more. The PatternFill object also allows you to set the background of a cell to a solid color.
         
 
 __Example 6__ creates two PatternFill objects with a DiagonalStripe and Solid PatternType respectively.
@@ -223,25 +222,24 @@ __Example 6__ creates two PatternFill objects with a DiagonalStripe and Solid Pa
 #### __[C#] Example 6: Create and set PatternFill__
 
 {{region radspreadprocessing-working-with-cells-get-set-clear-properties_4}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	
-	            PatternFill diagonalStripePatternFill = new PatternFill(PatternType.DiagonalStripe, Color.FromRgb(231, 76, 60), Color.FromRgb(241, 196, 15));
-	            worksheet.Cells[0, 0, 0, 5].SetFill(diagonalStripePatternFill);
-	
-	            PatternFill solidPatternFill = new PatternFill(PatternType.Solid, Color.FromRgb(46, 204, 113), Colors.Transparent);
-	            worksheet.Cells[1, 0, 5, 5].SetFill(solidPatternFill);
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+
+    PatternFill diagonalStripePatternFill = new PatternFill(PatternType.DiagonalStripe, Color.FromRgb(231, 76, 60), Color.FromRgb(241, 196, 15));
+    worksheet.Cells[0, 0, 0, 5].SetFill(diagonalStripePatternFill);
+
+    PatternFill solidPatternFill = new PatternFill(PatternType.Solid, Color.FromRgb(46, 204, 113), Colors.Transparent);
+    worksheet.Cells[1, 0, 5, 5].SetFill(solidPatternFill);
+{{endregion}}
 
 
 
 The result of >Example 6 is illustrated in __Figure 2__
 
-Figure 2: Applied PatternFill![Rad Spread Processing Working With Cells Get Set Clear Properties 02](images/RadSpreadProcessing_Working_With_Cells_Get_Set_Clear_Properties_02.png)
+Figure 2: Applied PatternFill
+![Rad Spread Processing Working With Cells Get Set Clear Properties 02](images/RadSpreadProcessing_Working_With_Cells_Get_Set_Clear_Properties_02.png)
 
-The __GradientFill__ is used to set the background of a region of cell to a gradual blending of two colors. To create a GradientFill, you need to specify a
-          [GradientType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_gradienttype.html)
-          , and the two colors that will blend.
+The __GradientFill__ is used to set the background of a region of cell to a gradual blending of two colors. To create a GradientFill, you need to specify a [GradientType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_gradienttype.html), and the two colors that will blend.
         
 
 __Example 7__ assigns the region A1:F1 a smooth horizontal green gradient.
@@ -250,20 +248,21 @@ __Example 7__ assigns the region A1:F1 a smooth horizontal green gradient.
 #### __[C#] Example 7: Create and set GradientFill__
 
 {{region radspreadprocessing-working-with-cells-get-set-clear-properties_5}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            worksheet.Rows[0].SetHeight(new RowHeight(50, true));
-	
-	            GradientFill greenGradientFill = new GradientFill(GradientType.Horizontal, Color.FromRgb(46, 204, 113), Color.FromRgb(0, 134, 56));
-	            worksheet.Cells[0, 0, 0, 5].SetFill(greenGradientFill);
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    worksheet.Rows[0].SetHeight(new RowHeight(50, true));
+
+    GradientFill greenGradientFill = new GradientFill(GradientType.Horizontal, Color.FromRgb(46, 204, 113), Color.FromRgb(0, 134, 56));
+    worksheet.Cells[0, 0, 0, 5].SetFill(greenGradientFill);
+{{endregion}}
 
 
 
 The result of __Example 7__ is illustrated in __Figure 3__:
         
 
-Figure 3: Applied GradientFill![Rad Spread Processing Working With Cells Get Set Clear Properties 03](images/RadSpreadProcessing_Working_With_Cells_Get_Set_Clear_Properties_03.png)
+Figure 3: Applied GradientFill
+![Rad Spread Processing Working With Cells Get Set Clear Properties 03](images/RadSpreadProcessing_Working_With_Cells_Get_Set_Clear_Properties_03.png)
 
 ## Indent Property
 
@@ -276,16 +275,18 @@ __Example 8__ snippet shows how to use those methods:
 #### __[C#] Example 8: Increase and decrease indent__
 
 {{region radspreadprocessing-working-with-cells-get-set-clear-properties_6}}
-	            Workbook workbook = new Workbook();
-	            Worksheet worksheet = workbook.Worksheets.Add();
-	            CellSelection selection = worksheet.Cells[0, 0, 5, 5];
-	
-	            selection.IncreaseIndent();
-	            selection.DecreaseIndent();
-	{{endregion}}
+    Workbook workbook = new Workbook();
+    Worksheet worksheet = workbook.Worksheets.Add();
+    CellSelection selection = worksheet.Cells[0, 0, 5, 5];
+
+    selection.IncreaseIndent();
+    selection.DecreaseIndent();
+{{endregion}}
 
 
 
 # See Also
 
- * [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%})[PatternType Enumeration](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_patterntype.html)[GradientType Enumeration](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_gradienttype.html)
+ * [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%})
+ * [PatternType Enumeration](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_patterntype.html)
+ * [GradientType Enumeration](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_gradienttype.html)

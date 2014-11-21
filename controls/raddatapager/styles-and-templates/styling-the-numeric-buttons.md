@@ -11,7 +11,7 @@ position: 3
 # Styling the Numeric Buttons
 
 
-The __RadDataPager__exposes a __NumericButtonStyle__ property which allows you to apply a style to it and modify its appearance.
+The __RadDataPager__ exposes a __NumericButtonStyle__ property which allows you to apply a style to it and modify its appearance.
 
 You have two options:
 
@@ -96,7 +96,7 @@ In order to change the appearance of the button when it gets current you bind to
 
 ## Modifying the default Style
 
->You might find it useful to get familiar with the [template structure of the numeric button]({%slug raddatapager-styles-and-templates-template-structure#Numeric_Button%}).
+>You might find it useful to get familiar with the [template structure of the numeric button]({%slug raddatapager-styles-and-templates-template-structure%}).
 
 To modify the default style for the numeric buttons you have to get the default __Style__ for the __RadDataPager__. To learn how, read the [Styling the RadDataPager]({%slug raddatapager-styles-and-templates-styling-the-raddatapager%}) topic.
 

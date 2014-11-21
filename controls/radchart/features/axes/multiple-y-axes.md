@@ -14,15 +14,15 @@ position: 3
 
 ## 
 
-__RadChart__supports multiple __Y axes__. It may be required when series of a different scale should be presented on the same graph. The only thing you have to do is to specify which axis to be used for each series definition.
+__RadChart__ supports multiple __Y axes__. It may be required when series of a different scale should be presented on the same graph. The only thing you have to do is to specify which axis to be used for each series definition.
 
-To add more __Y axes__ to a [ChartArea]({%slug radchart-features-chart-area%}), use __ChartArea.AdditionalYAxes__ collection. Just create a new instance of __AxisY__, set a name using __AxisY.AxisName__ property and add it to the collection. Add as many__Y axes__ as you need. __RadChart__ will arrange them one after the other. See [Axes Overview]({%slug radchart-features-axes-overview%}) and [Y-Axis]({%slug radchart-features-axes-y-axis%}) for more information.
+To add more __Y axes__ to a [ChartArea]({%slug radchart-features-chart-area%}), use __ChartArea.AdditionalYAxes__ collection. Just create a new instance of __AxisY__, set a name using __AxisY.AxisName__ property and add it to the collection. Add as many __Y axes__ as you need. __RadChart__ will arrange them one after the other. See [Axes Overview]({%slug radchart-features-axes-overview%}) and [Y-Axis]({%slug radchart-features-axes-y-axis%}) for more information.
 
-Now, having the required number of additional__Y-Axis__, you have to link each data series to the appropriate __Y-Axis__. To do that, simply use the __ISeriesDefinition.AxisName__ property and set the name of the __Y-Axis__. If you leave this property empty, __RadChart__ will use the default __Y-Axis__.
+Now, having the required number of additional __Y-Axis__, you have to link each data series to the appropriate __Y-Axis__. To do that, simply use the __ISeriesDefinition.AxisName__ property and set the name of the __Y-Axis__. If you leave this property empty, __RadChart__ will use the default __Y-Axis__.
 
 The following example demonstrates how to add another __Y-Axis__ and link it to a series definition. In this example, [SeriesMapping/ItemMappingis]({%slug radchart-populating-with-data-data-binding-support-overview%}) is used to bind the data:
 
-* First, a new __AxisY__ is added to __ChartArea.AdditionalYAxes__ with __AxisY.AxisName__set to "AxisY_South". 
+* First, a new __AxisY__ is added to __ChartArea.AdditionalYAxes__ with __AxisY.AxisName__ set to "AxisY_South". 
 
 
 * Second, two series mappings are defined with __CollectionIndex__ set to 0 and 1. See [Data Binding to Many Chart Areas]({%slug radchart-populating-with-data-data-binding-to-many-chart-areas%}) for more information. 
@@ -124,7 +124,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	axisY.Title = "Kilowatt [kW]"
 	radChart.DefaultView.ChartArea.AdditionalYAxes.Add(axisY)
 	....
-	'Series mapping for the collection with index 0
+	'Series mapping for the collection with index 0'
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.CollectionIndex = 0
 	seriesMapping.LegendLabel = "North [MW]"
@@ -132,7 +132,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	seriesMapping.SeriesDefinition.ShowItemLabels = False
 	seriesMapping.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
 	radChart.SeriesMappings.Add(seriesMapping)
-	'Series mapping for the collection with index 1
+	'Series mapping for the collection with index 1'
 	seriesMapping = New SeriesMapping()
 	seriesMapping.CollectionIndex = 1
 	seriesMapping.LegendLabel = "South [kW]"
@@ -148,11 +148,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 
 As you can see on the snapshot below, the chart contains two series - one for the energy consumption for the northern part of a country and another one for the southern part. The first one is bound to the default __Y-Axis__ and its scale is in Megawatt. The second one is linked to the additionally added __Y-axis__ and the data is in Kilowatts:
 
-
-
-
-         
-      ![](images/RadChart_Features_Axes_MultipleYAxes_20.png)
+![](images/RadChart_Features_Axes_MultipleYAxes_20.png)
 
 # See Also
 

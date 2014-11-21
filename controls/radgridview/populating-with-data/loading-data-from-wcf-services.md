@@ -10,15 +10,15 @@ position: 6
 
 # Loading Data from WCF Services
 
-The purpose of this tutorial is to show you how to populate a __RadGridView__with data from a __WCF Service__in two ways:
+The purpose of this tutorial is to show you how to populate __RadGridView__with data from a __WCF Service__ in two ways:
 
 * A straight-forward way - [plain method calls](#Plain_Method_Calls). 
 
 * [Using MVVM approach](#Using_MVVM_Approach)
 
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
-Before proceeding further with this tutorial you need to create a new application and add a __RadGridView__declaration in your XAML: 
+Before proceeding further with this tutorial you need to create a new application and add a __RadGridView__ declaration in your XAML: 
 
 #### __XAML__
 
@@ -105,7 +105,7 @@ Run your demo, the result can be seen on the next image:
 
 ## Using MVVM Approach
 
-This section will show you how to populate your __RadGridView__control in a MVVM manner. The __RadGridView__ will be bound to a data source object, that has a property __Customers__. When the control is loaded all customers from the Customers table in the Northwind database are loaded asynchronously.
+This section will show you how to populate your __RadGridView__ control in a MVVM manner. The __RadGridView__ will be bound to a data source object, that has a property __Customers__. When the control is loaded all customers from the Customers table in the Northwind database are loaded asynchronously.
 
 * Create a new class named __NorthwindDataSource__. 
 
@@ -274,7 +274,7 @@ Run your demo, the result can be seen on the next picture:
 
 ![](images/RadGridView_PopulatingWithDataLoadFromWcf_010.PNG)
 
->tipIf you need to define the columns manually take a look at the [Defining Columns](0AE6DD74-8F95-4625-9083-A42F3F9217BD#Manual_Columns_Definition) topic.
+>tipIf you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
 
 # See Also
 

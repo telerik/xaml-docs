@@ -11,7 +11,7 @@ position: 12
 # Masked Input Column
 
 
-The __GridViewMaskedInputColumn__ derives from the __GridViewBoundColumnBase__, which means that it inherits all of the functionality too. In edit mode every field of the column will be represented by a  [RadMaskedInput]({%slug radmaskedinput-overview%}) control depending on what __MaskType__ is set, unless a __CellEditTemplate__ is defined for the column.
+__GridViewMaskedInputColumn__ derives from the __GridViewBoundColumnBase__, which means that it inherits all of the functionality too. In edit mode every field of the column will be represented by a  [RadMaskedInput]({%slug radmaskedinput-overview%}) control depending on what __MaskType__ is set, unless a __CellEditTemplate__ is defined for the column.
         
 
 This is a list with short descriptions of the editors which will be created based on MaskType property setting:
@@ -25,7 +25,7 @@ This is a list with short descriptions of the editors which will be created base
 
 * __MaskType="Currency"__ -the __RadMaskedCurrencyInput__ control allows broad customization of culture-aware currency values. [Read more]({%slug radmaskedinput-features-controls-currency%})
 
-For example add a __GridViewMaskedInputColumn__ that represents the OrderNumber for an Order object. The OrderNumber should not be more than 7 symbols. As it allows both text and digits use the __Standard____MaskType__ and set "SO#####" as __Mask__.
+For example add a __GridViewMaskedInputColumn__ that represents the OrderNumber for an Order object. The OrderNumber should not be more than 7 symbols. As it allows both text and digits use the __Standard MaskType__ and set "SO#####" as __Mask__.
         
 
 __Example 1: Define a GridViewMaskedInputColumn:__

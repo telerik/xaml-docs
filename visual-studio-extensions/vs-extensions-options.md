@@ -22,12 +22,11 @@ The __Options__ dialog contains two sets of options that affect the __UI for__
 
 ![VSExtentions Options Dialog General](images/VSExtentions_OptionsDialogGeneral.png)
 
-The settings under the __General__category affect all of the installed __Telerik Visual Studio Extensions__.
+The settings under the __General__ category affect all of the installed __Telerik Visual Studio Extensions__.
 
 ## Project setup
 
-__Add referenced assemblies to solution and source control__
-          - Sets the default value for the __Add referenced assemblies to solution__ option in the Project Configuration Wizard
+__Add referenced assemblies to solution and source control__ - Sets the default value for the __Add referenced assemblies to solution__ option in the Project Configuration Wizard
         
 
 ## Project Upgrade Notifications for Detected Local Distributions
@@ -59,4 +58,4 @@ __Include internal builds in Latest Version update and retrieval__– When enabl
 
 ## Notifications
 
-__Show me a message when a newer version is available on__[www.telerik.com](http://www.telerik.com) – When enabled, you will receive notifications if a new version of __UI for__ is available on the Telerik website.
+__Show me a message when a newer version is available on [www.telerik.com](http://www.telerik.com) – When enabled, you will receive notifications if a new version of __UI for__ is available on the Telerik website.

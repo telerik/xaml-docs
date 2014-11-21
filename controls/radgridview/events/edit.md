@@ -15,21 +15,21 @@ The edit events are ment to support the editing data process. They occur when th
 
 Currently the edit events occur on row and cell level. To get notified use the following events exposed by the __RadGridView__ control:
 
-* [Edit Events Lifecycle](#Edit_Events_Lifecycle)
+* [Edit Events Lifecycle](#edit-events-lifecycle)
 
-* [BeginningEdit](#BeginningEdit_Event)
+* [BeginningEdit](#beginningedit-event)
 
-* [PreparingCellForEdit](#PreparingCellForEdit_Event)
+* [PreparingCellForEdit](#preparingcellforedit-event)
 
-* [PreparedCellForEdit](#PreparedCellForEdit_Event)
+* [PreparedCellForEdit](#preparedcellforedit-event)
 
-* [CellEditEnded](#CellEditEnded_Event)
+* [CellEditEnded](#celleditended-event)
 
-* [RowEditEnded](#RowEditEnded_Event)
+* [RowEditEnded](#roweditended-event)
 
 ## Edit Events Lifecycle
 
-It is important to know that each one of the edit events is fired only when the user is trying to edit data in the __RadGridView__ control.
+It is important to know that each one of the edit events is fired only when the user is trying to edit data in __RadGridView__ control.
 
 The __BeginningEdit__ event always occurs when the user is about to edit the data. The __BeginningEdit__ event allows you to stop the edit process by setting the boolean property __Cancel__ to __True__. Note that regarding the fact that the edit process is cancelled, the __BeginningEdit__ event will still be raised. If not canceled, the __PreparingCellForEdit__ event is fired. You can access the default editing element there and set its properties if needed. The PreparingCellForEdit can be canceled too, thus preventing the __PreparedCellForEdit__ event to fire.
 
@@ -128,7 +128,7 @@ The example below uses the __BeginningEdit__ event to show a tool tip when the u
 
 The PreparingCellForEdit event fires after the __BeginningEdit__ event. It allows you to access the default editor and initialize some of its properties if needed. The event handler receives two arguments:
 
-* The __sender__ argument contains the __RadGridView__. This argument is of type object, but can be cast to the __RadGridView__ type.
+* The __sender__ argument contains __RadGridView__. This argument is of type object, but can be cast to the __RadGridView__ type.
 
 * A __GridViewPreparingCellForEditEventArgs__ object. This object has the following properties:
 
@@ -313,7 +313,7 @@ The __RowEditEnded__ event occurs when row validation passed successfully and ne
 
 * __Edit__
 
-You can subscribe to the __RowEditEnded__event declaratively or runtime like this:
+You can subscribe to the __RowEditEnded__ event declaratively or runtime like this:
 
 #### __XAML__
 

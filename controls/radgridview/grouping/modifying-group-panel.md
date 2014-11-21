@@ -10,9 +10,9 @@ position: 6
 
 # Modifying the Group Panel
 
-__RadGridView__ exposes two properties - __GroupPanelBackground__ and __GroupPanelForeground__which allow you to make basic modifications of the__Group Panel__ (area).
+__RadGridView__ exposes two properties - __GroupPanelBackground__ and __GroupPanelForeground__ which allow you to make basic modifications of the__Group Panel__ (area).
 
->tipThe __RadGridView__ also exposes two style properties - __GroupPanelStyle__ and __GroupPanelItemStyle__. To learn how to use them in order to style the__Group Panel__ read [here]({%slug radgridview-styles-and-templates-styling-the-group-panel%}).
+>tipThe __GridView__ also exposes two style properties - __GroupPanelStyle__ and __GroupPanelItemStyle__. To learn how to use them in order to style the __Group Panel__ read [here]({%slug radgridview-styles-and-templates-styling-the-group-panel%}).
 
 >[Here]({%slug gridview-visual-structure%}) you can read more information about the visual structure of the __RadGridView__.
 
@@ -56,8 +56,8 @@ Check out the following topics which explain in great details the __RadGridView_
 
 # See Also
 
- * [Basic Filtering]({%slug gridview-basic-filtering2%})
+ * [Basic Filtering]({%slug gridview-filtering-basic%})
 
- * [Programmatic Filtering]({%slug gridview-programmatic-filtering%})
+ * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})
 
  * [Multiple Selection]({%slug gridview-multiple-selection%})

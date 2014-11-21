@@ -78,5 +78,5 @@ The AutoBind attached behavior enables RadPropertyGrid to use a single DataTempl
 
 * __Validation__ - RadPropertyGrid supports validation through IDataErrorInfo and also through DataAnnotations. This example demonstrates how to implement such validation.{% endif %}
 
->You can also check the [SDK Samples Browser](04a05d1d-932d-44a9-be12-f252b6deddf8) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
 

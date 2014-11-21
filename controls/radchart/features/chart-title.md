@@ -89,7 +89,7 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 	border.CornerRadius = New CornerRadius( 5 )
 	border.BorderBrush = New SolidColorBrush(Color.FromArgb( 255, 173, 216, 230 ))
 	border.Child = New TextBlock()
-	'Set the content of the ChartTitle
+	'Set the content of the ChartTitle'
 	radChart.DefaultView.ChartTitle.Content = border
 	{{endregion}}
 

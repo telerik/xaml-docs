@@ -5,7 +5,7 @@ description: Settings
 slug: radspreadprocessing-format-and-conversion-pdf-settings
 tags: settings
 published: True
-position: 2
+position: 3
 ---
 
 # Settings
@@ -35,9 +35,9 @@ The following example shows how to export the Entire Workbook without ignoring t
 #### __[C#] Example 1: Export Entire Workbook__
 
 {{region radspreadprocessing-formats-and-conversion-pdf-settings_0}}
-	                PdfFormatProvider provider = new PdfFormatProvider();
-	                provider.ExportSettings = new PdfExportSettings(ExportWhat.EntireWorkbook, false);
-	{{endregion}}
+    PdfFormatProvider provider = new PdfFormatProvider();
+    provider.ExportSettings = new PdfExportSettings(ExportWhat.EntireWorkbook, false);
+{{endregion}}
 
 
 
@@ -47,14 +47,14 @@ The following example shows how to export only two selected ranges from the acti
 #### __[C#] Example 2: Export Selection__
 
 {{region radspreadprocessing-formats-and-conversion-pdf-settings_1}}
-	                CellRange[] rangesToExport = new CellRange[]
-	                {
-	                    new CellRange(2, 3, 10, 15),
-	                    new CellRange(4, 5, 8, 20)
-	                };
-	
-	                PdfFormatProvider provider = new PdfFormatProvider();
-	                provider.ExportSettings = new PdfExportSettings(rangesToExport);
-	{{endregion}}
+    CellRange[] rangesToExport = new CellRange[]
+    {
+        new CellRange(2, 3, 10, 15),
+        new CellRange(4, 5, 8, 20)
+    };
+
+    PdfFormatProvider provider = new PdfFormatProvider();
+    provider.ExportSettings = new PdfExportSettings(rangesToExport);
+{{endregion}}
 
 

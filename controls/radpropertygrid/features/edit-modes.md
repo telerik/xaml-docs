@@ -16,7 +16,7 @@ RadPropertyGrid exposes an __EditMode property of type PropertyGridEditMode__, w
 
 ## Edit Modes
 
-As to configuring __RadPropertyGrid__ and assigning an __Item for it__, please check the [Getting Started with RadPropertyGrid](07F77841-3BC1-4AEA-A46A-DECB93D1C724#Binding_RadPropertyGrid) help article.
+As to configuring __RadPropertyGrid__ and assigning an __Item for it__, please check the [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) help article.
         
 
 ### Default
@@ -64,9 +64,10 @@ __Example 2:__ RadPropertyGrid with Single EditMode
 
 #### __XAML__
 
-	{{region radpropertygrid-edit-modes_1}}
+{{region radpropertygrid-edit-modes_1}}
+
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" RenderMode="Flat" EditMode="Single">
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -94,24 +95,26 @@ __Example 1:__ Canceling the edit as BeginningEdit event is raised
 
 #### __C#__
 
-	{{region radpropertygrid-edit-modes_0}}
+{{region radpropertygrid-edit-modes_0}}
+
 	void RpgBeginningEdit(object sender, PropertyGridBeginningEditEventArgs e)
 	{
 	    // Custom logic
 		e.Cancel = true;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB__
 
-	{{region radpropertygrid-edit-modes_0}}
+{{region radpropertygrid-edit-modes_0}}
+
 	    Private Sub RpgBeginningEdit(sender As Object, e As PropertyGridBeginningEditEventArgs)
 	        ' Custom logic
 	        e.Cancel = True
 	    End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

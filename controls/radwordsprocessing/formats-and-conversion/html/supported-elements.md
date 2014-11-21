@@ -5,7 +5,7 @@ description: Supported Html Elements
 slug: radwordsprocessing-formats-and-conversion-html-supported-elements
 tags: supported,html,elements
 published: True
-position: 1
+position: 2
 ---
 
 # Supported Html Elements
@@ -16,16 +16,10 @@ This article lists all HTML elements that are supported by __HtmlFormatProvider_
       
 
 ## 
-<table><th><tr><td>
-
-HTML Element
-                </td><td>
-
-Supported
-                </td><td>
-
-Comment
-                </td></tr></th><tr><td>
+<table><tr><th>
+HTML Element</th><th>
+Supported</th><th>
+Comment</th></tr><tr><td>
 <table><tr><td>
 
 <b>Text Formatting</b></td></tr><tr><td>

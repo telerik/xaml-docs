@@ -12,17 +12,17 @@ position: 3
 
 Besides the built-in selection functionality, you are able to use a programmatic approach to select the data in the __RadGridView__. The __RadGridView__ exposes several properties which allow you to manipulate the selected data. You are able to:
 
-* [Set the selected item](#SelectedItem)
+* [Set the selected item](#selecteditem)
 
-* [Set the current item](#CurrentItem)
+* [Set the current item](#currentitem)
 
-* [Add or remove items to/from the selection](#SelectedItems)
+* [Add or remove items to/from the selection](#selecteditems)
 
-* [Set the selected cell](#selectedCells)
+* [Set the selected cell](#selectedcells)
 
-* [Select all of the items](#Selecting_All_Items)
+* [Select all of the items](#selecting-all-items)
 
-* [Deselect all of the items](#Deselecting_All_Items)
+* [Deselect all of the items](#deselecting-all-items)
 
 >tipYou can download a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel [here](https://github.com/telerik/xaml-sdk), the example is listed as __GridView/BindingSelectedItemsFromViewModel__.
         

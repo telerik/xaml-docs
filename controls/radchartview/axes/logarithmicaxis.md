@@ -10,11 +10,7 @@ position: 1
 
 # Logarithmic Axis
 
-
-
-## 
-
-You can specify the logarithmic base via the* LogarithmBase * property
+You can specify the logarithmic base via the *LogarithmBase* property
 
 Below is a XAML snippet that demonstrates how to create a logarithmic axis:
 
@@ -26,6 +22,4 @@ Below is a XAML snippet that demonstrates how to create a logarithmic axis:
 	      <telerik:LogarithmicAxis LogarithmBase="2"/>
 	   </telerik:RadCartesianChart.HorizontalAxis>
 	</telerik:RadCartesianChart>
-	{{endregion}}
-
-
+{{endregion}}

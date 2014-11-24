@@ -11,8 +11,6 @@ site_name: Silverlight
 
 # Installing UI for Silverlight from MSI File
 
-
-
 The following topic describes what steps you should perform in order to install Telerik UI for Silverlight from a __MSI__ file.
 
 The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for an easy and automatic installation of a product. The MSI installs the suite on your computer to a folder named Telerik in your Program Files, automatically creating the necessary virtual folders and projects.
@@ -39,13 +37,14 @@ In order to download the latest MSI file, follow the instructions below:
 
 ![Common Installing FromMSIFiles 005](images/Common_InstallingFromMSIFiles_005.png)
 
->If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
+>If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
+>![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
 
 * Click "Download Installer and other resources" button.![Common Installing Download Button](images/Common_Installing_Download_Button.png)
 
 >Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite.
-			Scroll to "UI for Silverlight" product. Click "Browse all product files" to go to the detailed download page.
-            ![Common Installing FromMSIFiles 009](images/Common_InstallingFromMSIFiles_009.png)
+>Scroll to "UI for Silverlight" product. Click "Browse all product files" to go to the detailed download page.
+>![Common Installing FromMSIFiles 009](images/Common_InstallingFromMSIFiles_009.png)
 
 * Click Silverlight 5 - Automatic installation.![Common Installing FromMSIFiles 008](images/Common_InstallingFromMSIFiles_008.png)
 
@@ -96,8 +95,7 @@ If you open the installation folder ( __C:\Program Files\Telerik\UI for Silverli
 * __LicenseAgreements__
 
 * __Themes.Implicit__ - implicit styles friendly XAML.
-          
-
+        
 * __VSExtensions__
 
 >importantWith the Q1 2014 release we no longer provide the Themes and pdb files within the installation package. You could download them separately from the UI for Silverlight download page in your [Telerik account](http://www.telerik.com/account.aspx).

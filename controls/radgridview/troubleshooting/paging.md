@@ -64,5 +64,7 @@ Add an __OrderBy__ clause in your query at server side or define a __SortDescrip
 # See Also
 
  * [Using Telerik RadDataPager]({%slug radgridview-paging-using-telerik-raddatapager%})
-
+ 
+{% if site.site_name == 'Silverlight' %}
  * [Using Silverlight DataPager]({%slug gridview-paging-using-silverlight-datapager%})
+{% endif %}

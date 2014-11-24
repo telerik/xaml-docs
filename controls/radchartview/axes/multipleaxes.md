@@ -10,10 +10,6 @@ position: 6
 
 # Multiple Axes
 
-
-
-## 
-
 Since Q1 2012 RadChartView supports multiple axes. It may be required when series of a different scale should be presented on the same graph. Additional horizontal / vertical axes can be specified through the CartesianSeries.HorizontalAxis / VerticalAxis properties.
 
 This help article will demonstrate the different scenarios in which you may use the multiple axes feature.
@@ -30,7 +26,9 @@ This help article will demonstrate the different scenarios in which you may use 
 
 >You may have both multiple Vertical and multiple Horizontal axes in the same chart. There is no limit in the number of the axes that can be used.
 
-It is now easier than ever to customize each axis separately. For example you may colorize all axis elements (line, ticks, labels and title) simultaneously with a single __Axis.ElementBrush__ property. You may also specify the position of horizontal / vertical axes through the __Axis.HorizontalLocation__ / __VerticalLocation__ enumeration properties respectively. The usage of these properties is shown in the scenarios below.Two Vertical Axes
+It is now easier than ever to customize each axis separately. For example you may colorize all axis elements (line, ticks, labels and title) simultaneously with a single __Axis.ElementBrush__ property. You may also specify the position of horizontal / vertical axes through the __Axis.HorizontalLocation__ / __VerticalLocation__ enumeration properties respectively. The usage of these properties is shown in the scenarios below.
+
+#### Two Vertical Axes
 
 This is one of the most common scenarios - two or more chart series that have a common Vertical Axis. Please take a look at the following example where two line series has their own vertical axis and share a common horizontal axis.
               
@@ -77,7 +75,9 @@ This is one of the most common scenarios - two or more chart series that have a 
 
 
 
-![Rad Chart View-chart axes twoverticalaxes](images/RadChartView-chart_axes_twoverticalaxes.PNG)Two Horizontal Axes
+![Rad Chart View-chart axes twoverticalaxes](images/RadChartView-chart_axes_twoverticalaxes.PNG)
+
+#### Two Horizontal Axes
 
 This is one of the most common scenarios - two or more chart series that have a common Vertical Axis. Please take a look at the following example where two line series has their own vertical axis and share a common horizontal axis.
               
@@ -126,7 +126,7 @@ This is one of the most common scenarios - two or more chart series that have a 
 
 ![Rad Chart View-chart axes twohorizontalaxes](images/RadChartView-chart_axes_twohorizontalaxes.PNG)
 
-Shared Horizontal Axis
+#### Shared Horizontal Axis
 
 There are cases where you would like to have two horizontal axes and a common vertical axis. For example you may want one of your series to be plotted on categorical axis while another one - on a linear axis.{% if site.site_name == 'Silverlight' %} To achieve this you should create an axis collection (a simple class that inherits __System.Collections.ObjectModel.Collection<Axis>__). Add it as a static resource in XAML and you may reuse for each series that will share a common axis.
               
@@ -247,7 +247,7 @@ There are cases where you would like to have two horizontal axes and a common ve
 
 ![Rad Chart View-chart axes sharedhorizontalaxis](images/RadChartView-chart_axes_sharedhorizontalaxis.PNG)
 
-Shared Vertical Axis
+#### Shared Vertical Axis
 
 The approach is absolutely the same as the one presented in Sharing Horizontal Axis amongst series section. Here's an example:{% if site.site_name == 'Silverlight' %}
 

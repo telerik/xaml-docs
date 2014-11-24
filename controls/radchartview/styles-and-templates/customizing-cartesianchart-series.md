@@ -10,9 +10,7 @@ position: 0
 
 # Customizing CartesianChart Series
 
-
-This article demonstrates how you can change the default look of the __RadCartesianChart__ series.
-      
+This article demonstrates how you can change the default look of the __RadCartesianChart__ series.      
 
 ## Customizing Point Series
 
@@ -33,7 +31,6 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
     </telerik:PointSeries.DefaultVisualStyle>
   
 {{endregion}}
-
 
 >tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
 
@@ -56,7 +53,6 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
     </telerik:ScatterPointSeries.DefaultVisualStyle>
   
 {{endregion}}
-
 
 >tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
 

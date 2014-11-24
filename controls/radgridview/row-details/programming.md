@@ -14,9 +14,9 @@ The __RadGridView__ control exposes several events regarding the __RowDetails__:
 
 >tipMore about the events that the __RadGridView__ exposes, can be found [here]({%slug gridview-events-overview%}).
 
-* __LoadingRowDetails__- the __LoadingRowDetails__ event is raised immediately after the __FrameworkElement__ has been loaded from the __Row Details____DataTemplate__. It is raised the __very first time__the row details are about to be shown. Once this event has been fired, it will never fire again for that row. However, if the row is recycled and then realized, it starts its "life" again, this event will be fired again the first time the details are about to be shown.
+* __LoadingRowDetails__- the __LoadingRowDetails__ event is raised immediately after the __FrameworkElement__ has been loaded from the __Row Details DataTemplate__. It is raised the __very first time__ the row details are about to be shown. Once this event has been fired, it will never fire again for that row. However, if the row is recycled and then realized, it starts its "life" again, this event will be fired again the first time the details are about to be shown.
 
-The __GridViewRowDetailsEventArgs__ provide access to the __FrameworkElement__ that has been just loaded (__DetailsElement__) as well as to the respective __GridViewRow__ (__Row__). Use this event if you want to modify the __FrameworkElement__ in any way before it is displayed.
+The __GridViewRowDetailsEventArgs__ provide access to the __FrameworkElement__ that has been just loaded (__DetailsElement__) as well as to the respective __GridViewRow(Row)__. Use this event if you want to modify the __FrameworkElement__ in any way before it is displayed.
 
 For example, if you have a __RadGridView__ with the following __RowDetailsTemplate__:
 
@@ -38,7 +38,7 @@ For example, if you have a __RadGridView__ with the following __RowDetailsTempla
 	</telerik:RadGridView>
 {{endregion}}
 
-You can change the __StackPanel__'s __Background__ depending on is the row alternating:
+You can change the __StackPanel's Background__ depending on is the row alternating:
 
 #### __C#__
 
@@ -72,9 +72,9 @@ You can change the __StackPanel__'s __Background__ depending on is the row alter
 	End Sub
 {{endregion}}
 
-* __UnloadingRowDetails__ - when the__Row Details____DataTemplate__ is modified or deleted, the __UnloadingRowDetails__ event is raised in case you need to perform some cleanup for the old template before the new one is loaded.
+* __UnloadingRowDetails__ - when the __Row Details DataTemplate__ is modified or deleted, the __UnloadingRowDetails__ event is raised in case you need to perform some cleanup for the old template before the new one is loaded.
 
-* __RowDetailsVisiblityChanged__- It is fired each time the row details are shown or hidden, i.e. by selecting or deselecting the row. Via the __GridViewRowDetailsEventArgs__ you could access the just loaded __DetailsElement__, the respective __GridViewRow__ (Row) as well as the __Visibility__ of the row details. 
+* __RowDetailsVisiblityChanged__ - It is fired each time the row details are shown or hidden, i.e. by selecting or deselecting the row. Via the __GridViewRowDetailsEventArgs__ you could access the just loaded __DetailsElement__, the respective __GridViewRow__ (Row) as well as the __Visibility__ of the row details. 
 
 >tipTo manually change the visibility of a row - set its __DetailsVisibility__ property to either Visibility.Collapsed or Visibility.Visible
 

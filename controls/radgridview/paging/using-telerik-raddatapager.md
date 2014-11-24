@@ -14,11 +14,11 @@ position: 0
 
 You can page the data of your __RadGridView__ via the Telerik __RadDataPager__. It provides a lot of features, so you can easily configure and manage the paging of the data. This topic will make you familiar with the following:
 
-* [RadDataPager's Features](#RadDataPager's_Features)
+* [RadDataPager's Features](#raddatapagers-features)
 
-* [Integrating RadDataPager with RadGridView](#Integrating_RadDataPager_with_RadGridView)
+* [Integrating RadDataPager with RadGridView](#integrating-raddatapager-with-radgridview)
 
-* [Using RadDataPager together with DomainDataSource](#Using_RadDataPager_together_with_DomainDataSource)
+* [Using RadDataPager together with DomainDataSource](#using-raddatapager-together-with-domaindatasource)
 
 ## RadDataPager's Features
 
@@ -88,7 +88,7 @@ Here is a list of the most important features of the __RadDataPager__:
 
 * __Both__ - displays AutoEllipsis before and after the Numeric Buttons.
 
-* __None -__doesn't display AutoEllipsis.
+* __None__ - doesn't display AutoEllipsis.
 
 * __Display Modes__ - by setting the __DisplayMode__ property you can specify which of the Pager Buttons and Visuals to be visible.
 
@@ -125,8 +125,6 @@ __RadDataPager__ can be used together with __DomainDataSource__ provided by the 
 
 # See Also
 
- * [Using Silverlight DataPager]({%slug gridview-paging-using-silverlight-datapager%})
-
  * [Basic Sorting]({%slug gridview-sorting-basics%})
 
  * [Basic Grouping]({%slug gridview-grouping-basics%})
@@ -134,3 +132,6 @@ __RadDataPager__ can be used together with __DomainDataSource__ provided by the 
  * [Basic Filtering]({%slug gridview-filtering-basic%})
 
  * [Basic Selection]({%slug gridview-selection-basics%})
+{% if site.site_name == 'Silverlight' %}
+ * [Using Silverlight DataPager]({%slug gridview-paging-using-silverlight-datapager%})
+{% endif %}

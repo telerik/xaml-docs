@@ -14,9 +14,9 @@ You might notice a reduced performance of the RadGridView control.
 
 Here are some possible reasons:
 
-* The GridView is placed in a control that measures its children with __infinity -__such controls are ScrollViewer, StackPanel (when vertical it measures with infinite height and when horizontal - with infinite width), and Grid with RowDefinition Height="Auto" or ColumnDefinition Width="Auto". When RadGridView (or any other grid) is measured with infinity __virtualization is turned off__ which results in reduced performance. Modify your code so that RadGridView is placed in a container that will not measure it with infinity and the performance will be back to normal.
+* The GridView is placed in a control that measures its children with __infinity__ - such controls are ScrollViewer, StackPanel (when vertical it measures with infinite height and when horizontal - with infinite width), and Grid with RowDefinition Height="Auto" or ColumnDefinition Width="Auto". When RadGridView (or any other grid) is measured with infinity __virtualization is turned off__ which results in reduced performance. Modify your code so that RadGridView is placed in a container that will not measure it with infinity and the performance will be back to normal.
 
-* __Binding to complex properties__ - If you bind to complex property (sub property) the __RadGridView__ have to use bindings to get the value for the cell. The better performance will be achieved if you bind to a simple property because we will use the .Net expression API to get the value.    
+* __Binding to complex properties__ - If you bind to complex property (sub property) __RadGridView__ have to use bindings to get the value for the cell. The better performance will be achieved if you bind to a simple property because we will use the .Net expression API to get the value.    
 
 * __Converters__ - calling converters will slow down the performance.
  

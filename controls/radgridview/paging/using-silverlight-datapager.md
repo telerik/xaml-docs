@@ -11,7 +11,7 @@ site_name: Silverlight
 
 # Using Silverlight DataPager
 
-The Telerik __RadGridView__ supports a great integration with the standard Silverlight __DataPager__. The purpose of this tutorial is to show you how to connect the Toolkit's __DataPager__ with the __RadGridView__.
+__RadGridView__ supports a great integration with the standard Silverlight __DataPager__. The purpose of this tutorial is to show you how to connect the Toolkit's __DataPager__ with the __RadGridView__.
 
 >__DataPager__ is part of the __System.Windows.Controls__ namespace in the __System.Windows.Controls.Data__ assembly.
 
@@ -35,7 +35,7 @@ For the purpose of this tutorial the following __RadGridView__ declaration will 
 
 As you can see the grid view is populated with some initial data.
 
->tipIn this example the __RadGridView__ is bound to a collection of objects. For more information about populating __RadGridView__ with __in-memory data__, read [here]({%slug gridview-in-memory-date%}).
+>tipIn this example RadGridView__ is bound to a collection of objects. For more information about populating __RadGridView__ with __in-memory data__, read [here]({%slug gridview-in-memory-date%}).
 
 In order to use the __DataPager__ with __RadGridView__, you need to perform the following steps:
 
@@ -68,7 +68,7 @@ In order to use the __DataPager__ with __RadGridView__, you need to perform the 
 
 >The __QueryableCollectionView__ implements __IPagedCollectionView__ interface like the __PagedCollectionView.__ However, the __QueryableCollectionView__ enables extended support for filtering in the grid.
 
-* Set the newly created __QueryableCollectionView__ instance as an __ItemsSource__\__Source__ of the __RadGridView__ and __DataPager__.
+* Set the newly created __QueryableCollectionView__ instance as an __ItemsSource\Source__ of __RadGridView__ and __RadDataPager__.
 
 #### __C#__
 

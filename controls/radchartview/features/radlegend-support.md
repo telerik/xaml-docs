@@ -10,12 +10,7 @@ position: 5
 
 # RadLegend Support
 
-
-
 This topic will give you an overview of the RadLegend support that RadChartView provides.
-      
-
-## 
 
 The chart exposes a LegendItems property which is to be passed to the RadLegend. The LegendItems collection is empty by default and no legend items will be generated for a series unless the LegendSettings property of the series is set. The chart, as it is the legend items provider, sets the Title, MarkerStroke, MarkerFill and MarkerGeometry internally in correspondance to the legend settings of the series.
         
@@ -72,8 +67,6 @@ The example below demonstrates the cooperation between the RadLegend and RadCart
 	                       HorizontalAlignment="Right" 
 	                       VerticalAlignment="Top" />
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Chart View-features-radlegend-support-0](images/RadChartView-features-radlegend-support-0.png)
-
-# See Also

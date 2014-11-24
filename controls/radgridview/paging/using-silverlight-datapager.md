@@ -11,7 +11,7 @@ site_name: Silverlight
 
 # Using Silverlight DataPager
 
-Telerik __RadGridView__ supports a great integration with the standard Silverlight __DataPager__. The purpose of this tutorial is to show you how to connect the Toolkit's __DataPager__ with the __RadGridView__.
+__RadGridView__ supports a great integration with the standard Silverlight __DataPager__. The purpose of this tutorial is to show you how to connect the Toolkit's __DataPager__ with the __RadGridView__.
 
 >__DataPager__ is part of the __System.Windows.Controls__ namespace in the __System.Windows.Controls.Data__ assembly.
 

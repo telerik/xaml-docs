@@ -543,6 +543,8 @@ navigation:
         title: Managing Data
     controls/radgridview/paging:
         title: Paging
+    controls/radgridview/performance:
+        title: Performance
     controls/radgridview/row-details:
         title: Row Details
     controls/radgridview/rows:

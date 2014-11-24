@@ -517,14 +517,80 @@ navigation:
         title: Changes and Backward Compability
     controls/radgridview:
         title: RadGridView
+    controls/radgridview/clipboard:
+        title: Clipboard
+    controls/radgridview/columns:
+        title: Columns
+    controls/radgridview/columns/columntypes:
+        title: Column Types
+    controls/radgridview/commands:
+        title: Commands
+    controls/radgridview/export:
+        title: Export
+    controls/radgridview/export/troubleshooting:
+        title: Troubleshooting
+    controls/radgridview/filtering:
+        title: Filtering
+    controls/radgridview/filtering/faq:
+        title: FAQ
+    controls/radgridview/grouping:
+        title: Grouping
+    controls/radgridview/hierarchical-gridview:
+        title: Hierarchical GridView
+    controls/radgridview/localization:
+        title: Localization
+    controls/radgridview/managing-data:
+        title: Managing Data
+    controls/radgridview/paging:
+        title: Paging
+    controls/radgridview/row-details:
+        title: Row Details
+    controls/radgridview/rows:
+        title: Rows
+    controls/radgridview/selection:
+        title: Selection
+    controls/radgridview/sorting:
+        title: Sorting
+    controls/radgridview/style-selectors:
+        title: Style Selectors
+    controls/radgridview/template-selectors:
+        title: Template Selectors
+    controls/radgridview/troubleshooting:
+        title: Troubleshooting
+    controls/radgridview/filtering:
+        title: Filtering
+    controls/radgridview/filtering:
+        title: Filtering
+    controls/radgridview/filtering:
+        title: Filtering
     controls/raddataservicedatasource:
         title: RadDataServiceDataSource
+    controls/raddataservicedatasource/crud:
+        title: CRUD
+    controls/raddataservicedatasource/faq:
+        title: FAQ
+    controls/raddataservicedatasource/filtering:
+        title: Filtering
+    controls/raddataservicedatasource/grouping:
+        title: Grouping
+    controls/raddataservicedatasource/loading:
+        title: Loading
+    controls/raddataservicedatasource/mvvm:
+        title: MVVM
+    controls/raddataservicedatasource/paging:
+        title: Paging
+    controls/raddataservicedatasource/sorting:
+        title: Sorting
     controls/radentityframeworkdatasource:
         title: RadEntityFrameWorkDataSource
     controls/radexpressioneditor:
-        title: RadExpressionEditor   
+        title: RadExpressionEditor 
+    controls/radexpressioneditor/expressions:
+        title: Expressions   
     controls/radpropertygrid:
         title: RadPropertyGrid
+    controls/radpropertygrid/localization:
+        title: Localization
     controls/radtilelist:
         title: RadTileList
     controls/radtreelistview:

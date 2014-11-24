@@ -604,6 +604,7 @@ navigation:
 ## Common Start
     controls:
         title: Controls
+        position: 22
     "*overview":
         title: Overview
         position: 1
@@ -642,6 +643,47 @@ navigation:
         position: 80
     "api-reference":
         title: "Api Reference"
+        position: 23
+    "xamlflix-step-by-step-guide":
+        title: "XAMLflix Step-by-Step Guide"
+        position: 15
+    "licensing":
+        title: "Licensing"
+        position: 16
+    "installation-and-deployment":
+        title: "Installation and Deployment"
+        position: 17
+    "consuming-data":
+        title: "Consuming Data"
+        position: 18
+    "styling-and-appearance":
+        title: "Styling and Appearance"
+        position: 20
+    "visual-studio-extensions":
+        title: "Visual Studio Extensions"
+        position: 21
+    "for-more-help":
+        title: "For More Help"
+        position: 24
+    "installation-and-deployment/installing-telerik-ui-on-your-computer":
+        title: "Installing Telerik UI on your Computer"
+        position: 2
+    "installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox":
+        title: "Adding Telerik UI to Visual Studio Toolbox"
+        position: 3
+    "installation-and-deployment/adding-telerik-ui-to-an-application":
+        title: "Adding Telerik UI to an Application"
+        position: 4	
+    "installation-and-deployment/upgrading-instructions":
+        title: "Upgrading Instructions"
+        position: 5
+    "installation-and-deployment/deploying-telerik-ui":
+        title: "Deploying Telerik UI"
+        position: 6
+    "styling-and-appearance/stylemanager":
+        title: "StyleManager"
+    "styling-and-appearance/troubleshooting":
+        title: "Troubleshooting"
 ## Common End
 
 ## Api Reference Start

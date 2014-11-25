@@ -16,19 +16,19 @@ position: 4
 
 The Scenario templates’ purpose is to let you quickly start using UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} in your existing projects. You can use the following steps to use our Scenario templates.
 
-1. Open the __Add New Item dialog__, just as you usually do when adding a new Item to your project and select the __Telerik Scenario__Item template or use the __Add Telerik Scenario__menu item
+1 Open the __Add New Item dialog__, just as you usually do when adding a new Item to your project and select the __Telerik Scenario__ Item template or use the __Add Telerik Scenario__ menu item
 
 {% if site.site_name == 'Silverlight' %}![VSExtentions SL Scenario Wizard Menu 2](images/VSExtentions_SL_ScenarioWizardMenu2.png){% endif %}
 
 {% if site.site_name == 'WPF' %}![VSExtentions WPF Scenario Wizard Menu 2](images/VSExtentions_WPF_ScenarioWizardMenu2.png){% endif %}
 
-2. Click __Add__
+2 Click __Add__
 
 {% if site.site_name == 'Silverlight' %}![VSExtentions SL Scenario Wizard Add New Item](images/VSExtentions_SL_ScenarioWizardAddNewItem.png){% endif %}
 
 {% if site.site_name == 'WPF' %}![VSExtentions WPF Scenario Wizard Add Item](images/VSExtentions_WPF_ScenarioWizardAddItem.png){% endif %}
 
-3. Select a scenario in the __Telerik Scenario Wizard__and click __Finish__
+3 Select a scenario in the __Telerik Scenario Wizard__ and click __Finish__
 
 {% if site.site_name == 'Silverlight' %}![VSExtentions SL Scenario Wizard](images/VSExtentions_SL_ScenarioWizard.png){% endif %}
 
@@ -38,7 +38,7 @@ The Scenario templates’ purpose is to let you quickly start using UI for {% if
 
 * __Page__ – Creates a basic Page, ready to use with UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}
 
-* __RadWindow__ – Creates a new __RadWindow__ item. __RadWindow__ lets you create __Child__ and __Dialogs____Windows__, which can have their appearance and content customized. 
+* __RadWindow__ – Creates a new __RadWindow__ item. __RadWindow__ lets you create __Child__ and __Dialogs Windows__, which can have their appearance and content customized. 
 
 * __RadPane__ – Creates a new __RadPane__ item. __RadPane__ is the main content unit of the __RadDocking__ control.
 

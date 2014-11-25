@@ -10,10 +10,6 @@ position: 2
 
 # Watermark
 
-
-
-## 
-
 You can set a watermark content to your __RadDateTimePicker__ control. This watermark is a text field which will be visible when the __RadDateTimePicker__ is not focussed and empty, i.e. no value has been selected.
 
 The Watermark is represented by a regular __RadWatermarkTextBox__ control. You can use the following properties to alter its content:
@@ -22,7 +18,7 @@ The Watermark is represented by a regular __RadWatermarkTextBox__ control. You c
 
 * __DateTimeWatermarkTemplate__ - will set the __WatermarkTemplate__ of the actual __RadWatermarkTextBox__ control.
 
->tipTo read more about the __RadWatermarkTextBox__ take a look [here](http://www.telerik.com/help/silverlight/radmaskedtextbox-features-using-rad-watermark-text-box.html).
+>tipTo read more about the __RadWatermarkTextBox__ take a look [here]({%slug radwatermarktextbox-overview%}).
 
 The __DateTimeWatermarkContent__ is the simplest way to change the watermark's content. For example:
 
@@ -30,15 +26,9 @@ The __DateTimeWatermarkContent__ is the simplest way to change the watermark's c
 
 {{region raddatetimepicker-features-watermark_0}}
 	<telerik:RadDateTimePicker DateTimeWatermarkContent="Enter departure date">
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/dateTimePicker_features_watermark_020.png)
+![](images/dateTimePicker_features_watermark_020.png)
 
 If you want to further customize the watermark you need to set the __DateTimeWatermarkTemplate__. This property is of type __DataTemplate__ and lets you take full control of the watermark representation. For example:
 
@@ -55,17 +45,11 @@ If you want to further customize the watermark you need to set the __DateTimeWat
 	           </DataTemplate>
 	      </telerik:RadDateTimePicker.DateTimeWatermarkTemplate>  
 	</telerik:RadDateTimePicker>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result:
 
-
-
-
-         
-      ![](images/dateTimePicker_features_watermark_010.png)
+![](images/dateTimePicker_features_watermark_010.png)
 
 # See Also
 

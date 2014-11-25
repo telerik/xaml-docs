@@ -15,22 +15,15 @@ position: 4
 The __RadMap__ control allows you to display rich geographical information from various sources, including Microsoft Bing Maps, as well as to overlay the map with your own custom data. This topic will help you to quickly get started using the control. It will focus on the following:
       
 
-* [Creating a RadMap](#Creating_a_RadMap)
+* [Creating a RadMap](#creating-a-radmap)
 
-* [Specifying a Provider](#Specifying_a_Provider)
+* [Specifying a Provider](#specifying-a-provider)
 
-* [Displaying Data](#Displaying_Data)
+* [Displaying Data](#displaying-data)
 
 ## Creating a RadMap
 
->In order to use __RadMap__ in your projects you have to add references to the following assemblies:
-          
-
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Data__
-
-* __Telerik.Windows.Controls.DataVisualization__You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
+>In order to use __RadMap__ in your projects you have to add references to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Data__<br/>* __Telerik.Windows.Controls.DataVisualization__<br/>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
             
 
 After adding references to the aforementioned dlls, you can declare a new __RadMap__ as any normal Silverlight/WPF control.
@@ -39,7 +32,7 @@ After adding references to the aforementioned dlls, you can declare a new __RadM
 #### __XAML__
 
 {{region radmap-getting-started_1}}
-	        <telerik:RadMap x:Name="radMap" />
+    <telerik:RadMap x:Name="radMap" />
 	{{endregion}}
 
 
@@ -94,7 +87,7 @@ This example will use __Bing Maps__ as its provider. In order to do that you hav
 
 
 
-Using the third overload of the __BingMapProvider's__constructor, allows you to pass some starting parameters:
+Using the third overload of the __BingMapProvider's__ constructor, allows you to pass some starting parameters:
         
 
 * the starting view mode of the map - aerial.
@@ -104,11 +97,12 @@ Using the third overload of the __BingMapProvider's__constructor, allows you to 
 * a __Bing Maps__ specific key.
             
 
->In order to use the __Bing Maps__ with the __RadMap__ control, you have to provide a valid __Bing Maps Key__. To learn how to obtain such a key, read [this topic](http://msdn.microsoft.com/en-us/library/ee681900.aspx). Note that the __Bing Map won't____appear__ in your __RadMap__ control, without supplying the key.
+>In order to use the __Bing Maps__ with the __RadMap__ control, you have to provide a valid __Bing Maps Key__. To learn how to obtain such a key, read [this topic](http://msdn.microsoft.com/en-us/library/ee681900.aspx). Note that the __Bing Map won't__ __appear__ in your __RadMap__ control, without supplying the key.
           
 
 After specifying the provider, you should be able to see the respective map appear in the __RadMap__ control.
-        ![](images/RadMap_GettingStarted_01.png)
+
+![](images/RadMap_GettingStarted_01.png)
 
 ## Displaying Data
 

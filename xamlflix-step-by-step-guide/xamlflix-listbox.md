@@ -10,50 +10,44 @@ position: 7
 
 # RadListBox
 
-
-
 This tutorial will introduce the __RadListBox__ control, part of the Telerik suite of XAML controls.
 
 ## Setting Up The Project
 
 To begin, open Visual Studio and click on the Telerik menu option.  Under *RadControls For Silverlight* click on *Create New Telerik Project*.  Name your project, accept Silverlight 5 and in the *Project Configuration Wizard* dialog check Controls, as shown in figure 1.
 
-Figure 1![xamlflix listbox 1](images/xamlflix_listbox_1.png)
+Figure 1
+![xamlflix listbox 1](images/xamlflix_listbox_1.png)
 
 When you click ok, the necessary assembly is added to the References as shown in figure 2
 
-Figure 2![xamlflix listbox 2](images/xamlflix_listbox_2.png)
+Figure 2
+![xamlflix listbox 2](images/xamlflix_listbox_2.png)
 
 Your application will open to MainPage.xaml and, thanks to the Telerik Visual Studio extensions, the namespace __telerik__ will already have been created in the XAML heading.
 
-	
-<UserControl x:Class="RadBarCode.GettingStarted.MainPage"
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-		mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
-		  
+#### __XAML__
+	<UserControl x:Class="RadBarCode.GettingStarted.MainPage"
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+			
+We need some data to work with. We’ll create an Employee class to represent (surprise!) employees of a company.
 
-
-
-We need some data to work with. We’ll create an Employee class to represent (surprise!) employees of a company.  
-
-	
-public class Employee
- {
-     public string PathData { get; set; }
-     public string FirstName { get; set; }
-     public string LastName { get; set; }
- }
-		
-
-
+#### __C#__
+	public class Employee
+	{
+		public string PathData { get; set; }
+		public string FirstName { get; set; }
+		public string LastName { get; set; }
+	}
 
 The PathData holds a path to an avatar for the Employee.  We also need an EmployeeService to generate a set of Employee instances (we recommend you download this from the associated source code).  Here’s an excerpt from the service,
-
 	
+#### __C#__
     public class EmployeeService
     {
         public static ObservableCollection<Employee> GetEmployees()
@@ -69,107 +63,85 @@ The PathData holds a path to an avatar for the Employee.  We also need an Employ
             employee.FirstName = "Ana";
             employee.LastName = "Trujillo";
             employees.Add(employee);
-		  
-
-
 
 Switching to MainPage.xaml we want to layout how we’re going to display the items in the listBox.  For that we’ll need to add an ItemTemplate with a DataTemplate inside it.
 
-	
-<telerik:RadListBox Name="xRadListBox" Margin="50" >
-    <telerik:RadListBox.ItemTemplate>
-        <DataTemplate>
-        </DataTemplate>
-    </telerik:RadListBox.ItemTemplate>
-</telerik:RadListBox>
-		
-
-
+#### __XAML__
+	<telerik:RadListBox Name="xRadListBox" Margin="50" >
+		<telerik:RadListBox.ItemTemplate>
+			<DataTemplate>
+			</DataTemplate>
+		</telerik:RadListBox.ItemTemplate>
+	</telerik:RadListBox>
 
 Inside the DataTemplate we’ll create a Grid with two columns, in the ratio of 1:4
-
 	
-<Grid>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="1*" />
-        <ColumnDefinition Width="4*" />
-    </Grid.ColumnDefinitions>
-		  
-
-
+#### __XAML__
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="1*" />
+			<ColumnDefinition Width="4*" />
+		</Grid.ColumnDefinitions>
 
 The first item in the Grid is the Path, which will be in column 0,
 
-	
-<Path Data="{Binding PathData}" Fill="Red" Width="50" Height="50" Margin="10" HorizontalAlignment="Center" />		  
-		  
-
-
+#### __XAML__
+	<Path Data="{Binding PathData}" Fill="Red" Width="50" Height="50" Margin="10" HorizontalAlignment="Center" />
 
 The second item in the Grid is a stack panel in column 1 that holds the first and last name.
 
-	
-<StackPanel Grid.Column="1">
-    <TextBlock Text="{Binding FirstName}" />
-    <TextBlock Text="{Binding LastName}"/>
-</StackPanel>
-		  
-
-
+#### __XAML__
+	<StackPanel Grid.Column="1">
+		<TextBlock Text="{Binding FirstName}" />
+		<TextBlock Text="{Binding LastName}"/>
+	</StackPanel>
 
 The binding needs a data source. Since this is a list box, we can accomplish that by assigning a collection to the ItemsSource property, which we’ll do in the Loaded event handler in the code-behind,
 
-	
-public MainPage()
- {
-     InitializeComponent();
-     Loaded += new RoutedEventHandler(MainPage_Loaded);
- }
+#### __C#__
+	public MainPage()
+	 {
+		 InitializeComponent();
+		 Loaded += new RoutedEventHandler(MainPage_Loaded);
+	 }
 
- void MainPage_Loaded(object sender, RoutedEventArgs e)
- {
-     xRadListBox.ItemsSource = EmployeeService.GetEmployees();
- }
-		  
-
-
-
+	 void MainPage_Loaded(object sender, RoutedEventArgs e)
+	 {
+		 xRadListBox.ItemsSource = EmployeeService.GetEmployees();
+	 }
+	 
 The result is a list box with two columns: icon on the left and name on the right, as shown in figure 3,
 
-Figure 3![xamlflix listbox 3](images/xamlflix_listbox_3.png)
+Figure 3
+![xamlflix listbox 3](images/xamlflix_listbox_3.png)
 
 ## Searching and Selecting
 
 Return to the example shown above, but remove the ItemTemplate entirely and instead, add a DisplayMemberPath attribute, 
 
-	
-<telerik:RadListBox DisplayMemberPath="FirstName" Name="xRadListBox" Margin="50" />
-		  
-
-
+#### __XAML__
+	<telerik:RadListBox DisplayMemberPath="FirstName" Name="xRadListBox" Margin="50" />
 
 If you run the application now, the list box will be filled with the first name of all 15 of the items generated by the Employee service.
 
 To enable searching, you’ll need to modify the RadListBox declaration by adding
 
+#### __XAML__
+	IsTextSearchEnabled="True"
 	
-IsTextSearchEnabled="True"		  
-		  
-
-
-
 And setting the TextSearchMode as shown in figure 4
 
-Figure 4![xamlflix listbox 4](images/xamlflix_listbox_4.png)
+Figure 4
+![xamlflix listbox 4](images/xamlflix_listbox_4.png)
 
 Assuming we choose StartsWith, when looking at the __RadListBox__ you can begin typing and the selection will jump to the first matching entry. As you type you can narrow down to the entry you have in mind.
 
 To control whether the user can select only a single value or multiple values, you can set the SelectionMode, as shown in figure 5,
 
-Figure 5![xamlflix listbox 5](images/xamlflix_listbox_5.png)
+Figure 5
+![xamlflix listbox 5](images/xamlflix_listbox_5.png)
 
 Assuming you choose Multiple, the user can control-select multiple items, as shown in figure 6,
 
-Figure 6![xamlflix listbox 6](images/xamlflix_listbox_6.png)
-
-# See Also
+Figure 6
+![xamlflix listbox 6](images/xamlflix_listbox_6.png)

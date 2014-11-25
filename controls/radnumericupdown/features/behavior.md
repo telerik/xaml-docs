@@ -11,10 +11,6 @@ site_name: WPF
 
 # Behavior
 
-
-
-## 
-
 There are several properties that describe the behavior of __RadNumericUpDown__.
 
 Here is a brief list of all behavior properties defined in RadNumericUpDown.

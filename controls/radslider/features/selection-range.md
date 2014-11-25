@@ -25,7 +25,7 @@ __RadSlider__ supports the functionality of having two thumbs, thus enabling ran
 
 ![](images/radslider_features_default_range.png)
 
-Modifying the range can be done either via the __SelectionStart__ and __SelectionEnd__properties or through the __Selection__ property.
+Modifying the range can be done either via the __SelectionStart__ and __SelectionEnd__ properties or through the __Selection__ property.
         
 
 * __SelectionStart__ - sets the start of the selection range and is of type __double__
@@ -40,7 +40,7 @@ Modifying the range can be done either via the __SelectionStart__ and __Selectio
 
 
 
-* __Selection__ - is of type __SelectionRange<double>__ and it sets __Start__and __End__ double values to define the selection range
+* __Selection__ - is of type __SelectionRange<double>__ and it sets __Start__ and __End__ double values to define the selection range
             
 
 #### __C#__

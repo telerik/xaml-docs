@@ -23,11 +23,11 @@ The purpose of this tutorial is to show you how to use DomainDataSource in the c
 
 * Consuming the result.
 
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 ## Adding DomainDataSource Control
 
-The __DomainDataSource__control can be found in the __System.Web.Ria.Controls__ assembly and you have to declare the property namespace in order to use it: 
+The __DomainDataSource__ control can be found in the __System.Web.Ria.Controls__ assembly and you have to declare the property namespace in order to use it: 
 
 #### __XAML__
 
@@ -50,7 +50,7 @@ Next, just add a new __DomainDataSource__ declaration to your resources:
 
 ## Configuring DomainDataSource Control
 
-After declaring DomainDataSource control you should configure it to work with the already existing __DomainService__ class. The only thing you have to do is to set the __DomainContext__property:
+After declaring DomainDataSource control you should configure it to work with the already existing __DomainService__ class. The only thing you have to do is to set the __DomainContext__ property:
 
 #### __XAML__
 
@@ -66,7 +66,7 @@ After declaring DomainDataSource control you should configure it to work with th
 
 ## Loading Data
 
-After setting the __DomainContext__property, you should specify the __QueryName__ - this is an existing method in your __DomainService__class which loads and returns data (in the example it is the __GetCategories()__method, which loads all categories____from the Northwind database):
+After setting the __DomainContext__ property, you should specify the __QueryName__ - this is an existing method in your __DomainService__ class which loads and returns data (in the example it is the __GetCategories()__ method, which loads all categories from the Northwind database):
 
 #### __XAML__
 
@@ -82,25 +82,20 @@ After setting the __DomainContext__property, you should specify the __QueryName_
 
 ## Consuming the Result
 
-Once the data is loaded and returned to your client application, the __LoadedData__event is fired. Via the __LoadedDataEventArgs__you have access to the following data:
+Once the data is loaded and returned to your client application, the __LoadedData__ event is fired. Via the __LoadedDataEventArgs__ you have access to the following data:
 
-* __AllEntities__property - gets all loaded entities.
+* __AllEntities__ - gets all loaded entities.
 
-* __Cancelled__property - gets a value indicating whether the asynchronous call has been canceled.
+* __Cancelled__ - gets a value indicating whether the asynchronous call has been canceled.
 
-* __Entities__property - gets all top entities loaded.
+* __Entities__ - gets all top entities loaded.
 
-* __Error__property - gets a value indicating which error occurred during an asynchronous operation.
+* __Error__ - gets a value indicating which error occurred during an asynchronous operation.
 
-* __TotalEntityCount__property - gets the total server entity count for the query.
+* __TotalEntityCount__ - gets the total server entity count for the query.
 
-* __UserState__property - gets the unique value for the asynchronous task.
+* __UserState__ - gets the unique value for the asynchronous task.
 
-
-
-
-         
-      
 
 Here is a sample code showing how to handle the LoadedData event: 
 
@@ -123,7 +118,7 @@ Here is a sample code showing how to handle the LoadedData event:
 {{region consuming-data-domain-datasource-support_5}}
 	Private Sub DomainDataSource_LoadedData(ByVal sender As Object, ByVal e As LoadedDataEventArgs)
 	    For Each c As Categories In e.AllEntities
-	        ' Process the data
+	        ' Process the data'
 	    Next
 	End Sub
 	{{endregion}}

@@ -10,19 +10,13 @@ position: 5
 
 # Open the DropDown When the Control Gets Focus
 
-
-
-## 
-
 __RadComboBox__'s API gives you the ability to open the __DropDown__ when the control gets focus. In order to enable this behavior you should set the __RadComboBox__'s  __OpenDropDownOnFocus__ property to __True__.
 
 #### __XAML__
 
 {{region radcombobox-howto-open-dropdown-get-focus_0}}
 	<telerik:RadComboBox x:Name="radComboBox" OpenDropDownOnFocus="True"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 >tipThe default value of the __RadComboBox__'s __OpenDropDownOnFocus__ property is __False__.
 

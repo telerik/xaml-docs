@@ -11,12 +11,7 @@ position: 2
 # Keyboard Support
 
 
-
 __RadCalculator__ does allow you to use all relevant keys on your keyboard and insert any valid input or perform easily the operations.
-
-## 
-
-
 
 The supported keys are as follows:
 
@@ -31,7 +26,7 @@ The supported keys are as follows:
 * __Add key (+)__ - allows performing addition both from the keyboard and the numeric pad.
 			  
 
-* __Substract key (-)__ - allows performing substraction both from the keyboard and the numeric pad.
+* __Substract key (-)__ - allows performing substraction subtraction both from the keyboard and the numeric pad.
 			  
 
 * __Multiply key (*)__ - allows performing multiplication both from the keyboard and the numeric pad.

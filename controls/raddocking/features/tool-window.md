@@ -10,21 +10,13 @@ position: 3
 
 # Tool Window
 
-
-
 __ToolWindow__ is the container control that hosts all panes when in floating state. Every time you drag a pane and undock it, a new instance of the class __Telerik.Windows.Controls.Docking.ToolWindow__ is created to host that pane for you.
 
->
-
-The implementation of the __RadDocking__ never requires you to work with __ToolWindows__ directly, rather than with the pane hosted inside. For example, to make a __ToolWindow__ not closable just set the property __CanUserClose__ of the hosted pane to __False__.
+>The implementation of the __RadDocking__ never requires you to work with __ToolWindows__ directly, rather than with the pane hosted inside. For example, to make a __ToolWindow__ not closable just set the property __CanUserClose__ of the hosted pane to __False__.
 
 On the snapshot below you can see two ToolWindows with pane inside of each one.
 
-
-
-
-         
-      ![](images/RadDocking_Features_ToolWindow_010.png)
+![](images/RadDocking_Features_ToolWindow_010.png)
 
 If you need to find out how to declare such a floating structure take a look at the [Floating Panes](#Floating_Panes) topic.
 

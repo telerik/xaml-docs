@@ -13,7 +13,7 @@ position: 2
 
 
 __RadDiagramNavigationPane__ wraps the __RadDiagramThumbnail__ control and gives you the ability to easily __Pan__, __Autofit__ and __Zoom__ the RadDiagram.
-	  ![raddiagram-extensions-navigationpane](images/raddiagram-extensions-navigationpane.png)
+![raddiagram-extensions-navigationpane](images/raddiagram-extensions-navigationpane.png)
 
 >importantIn order to use the __RadDiagramNavigationPane__ control in your projects you have to add references to the following assemblies:
 		
@@ -32,9 +32,7 @@ __RadDiagramNavigationPane__ wraps the __RadDiagramThumbnail__ control and gives
 
 * Telerik.Windows.Data{% endif %}
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-		  {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-		  article you can find information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find information on how to set an application-wide theme.
 		
 
 ## Working with DiagramNavigationPane
@@ -54,7 +52,7 @@ RadDiagramNavigationPane is consisted of:
 In order to use with the DiagramNavigationPane you have to bind its Diagram property to a RadDiagram:
 		
 
-	
+	#### __XAML__
 		  <telerik:RadDiagram x:Name="diagram" />
 		  <telerik:RadDiagramNavigationPane Diagram="{Binding ElementName=diagram}"
 		  HorizontalAlignment="Left"
@@ -70,7 +68,7 @@ If you work with bigger diagrams, your application performance will be better if
 If Visible, the DiagramThumbnail refreshes on every new shape prepared in the RadDiagram which slows down your overall performance.
 
 By setting the __IsExpanded__ property of the NavigationPane to __False__, the Thumbnail is initially collapsed and these refresh operations are not done.
-		![raddiagram-extension-navigationpane-collapsed](images/raddiagram-extension-navigationpane-collapsed.png)
+![raddiagram-extension-navigationpane-collapsed](images/raddiagram-extension-navigationpane-collapsed.png)
 
 >Make sure that when you use big number of shapes in the RadDiagrams, the DiagramNavigationPane is initially collapsed.
 
@@ -94,8 +92,8 @@ You are able to customize the look and feel of the DiagramNavigationPane by usin
 You can also hide the AutoFitButton by using the __IsAutofitButtonVisible__ property and set it to False.
 		
 
-This way the AutoFitButton will be collapsed in both the mini mode and the expanded mode of the DiagramNavigationPane.
-		![raddiagram-extensions-navigationpane-autofitcollapsed](images/raddiagram-extensions-navigationpane-autofitcollapsed.png)
+This way the AutoFitButton will be collapsed in both the mini mode and the expanded mode of the DiagramNavigationPane. 
+![raddiagram-extensions-navigationpane-autofitcollapsed](images/raddiagram-extensions-navigationpane-autofitcollapsed.png)
 
 # See Also
 

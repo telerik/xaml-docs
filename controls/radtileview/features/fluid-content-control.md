@@ -10,18 +10,11 @@ position: 2
 
 # Fluid Content Control
 
+This article will make you familiar with the __RadFluidContentControl__ and its properties.
 
+__RadFluidContentControl__ exposes three content properties - __Content__, __SmallContent__ and __LargeContent__. Only one of these three properties is visible at any given time. The way the visible content is changed is determined by the two available threshold properties - __NormalToLargeThreshold__ and __NormalToSmallThreshold__. The __NormalToSmallThreshold__ is used to determine when the small content will be shown, in the cases when the __NormalContent__ is currently visible and vice versa. Alternatively, the __NormalToLargeThreshold__ property controls when the normal content will be hidden and the __LargeContent__ shown.                
 
-This article will make you familear with the __RadFluidContentControl__ and its properties.
-            
-
-## 
-
-__RadFluidContentControl__ exposes three content properties - __Content__, __SmallContent__ and __LargeContent__. Only one of these three properties is visible at any given time. The way the visible content is changed is determined by the two available threshold properties - __NormalToLargeThreshold__ and __NormalToSmallThreshold__. The __NormalToSmallThreshold__ is used to determine when the small content will be shown, in the cases when the __NormalContent__ is currently visible and vice versa. Alternatively, the __NormalToLargeThreshold__ property controls when the normal content will be hidden and the __LargeContent__ shown.
-                
-
-Consider a case where there are three visual elements that should be shown depending on the available space - __SmallContent__(200px X 200px), __NormalContent__(400px X 400px) and __LargeContent__(600px X 600px).
-                
+Consider a case where there are three visual elements that should be shown depending on the available space - __SmallContent__ (200px X 200px), __NormalContent__(400px X 400px) and __LargeContent__(600px X 600px).                
 
 #### __XAML__
 
@@ -48,9 +41,7 @@ Consider a case where there are three visual elements that should be shown depen
 	  </Border>
 	 </telerik:RadFluidContentControl.LargeContent>
 	</telerik:RadFluidContentControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 Next, suitable values for the corresponding thresholds should be set. What follows is an explanation on why such values have been chosen.
 
@@ -66,20 +57,15 @@ Next, suitable values for the corresponding thresholds should be set. What follo
 	   <!--Large Content-->
 	
 	</telerik:RadFluidContentControl>
-	{{endregion}}
+{{endregion}}
 
+* __NormalToSmallThreshold(400px X 400px)__ - setting it to the size of the normal content means that as soon as enough space __(400px X 400px)__ is available, the normal content will be shown. Alternatively, the control will hide the normal content (and show the small content) as soon as the available size is not enough to properly render the normal content.                        
 
-
-* __NormalToSmallThreshold(400px X 400px)__ - setting it to the size of the normal content means that as soon as enough space__(400px X 400px)__ is available, the normal content will be shown. Alternatively, the control will hide the normal content (and show the small content) as soon as the available size is not enough to properly render the normal content.
-                        
-
-* __NormalToLargeThreshold(600px X 600px)__ - setting it to the size of the large content means that as soon as enough space__(600px X 600px)__ is available, the large content will be shown. Alternatively, the control will hide the large content (and show the normal content) as soon as the available size is not enough to properly render the large content.
-                        
+* __NormalToLargeThreshold(600px X 600px)__ - setting it to the size of the large content means that as soon as enough space __(600px X 600px)__ is available, the large content will be shown. Alternatively, the control will hide the large content (and show the normal content) as soon as the available size is not enough to properly render the large content.
 
 In case you need to specify only the width or height of a threshold, you can set the other value to 0 - this way it will be disregarded.
 
-If you choose to use __RadFluidContentControl__ with __RadTileView__, an additional property can be taken into consideration - __ContentChangeMode__. __RadFluidContentControl's____ContentChangeMode__ property allows to manually change the __State__ of the control, and thus the visible content. Setting the property to "__Manual__", tells __RadFluidContentControl__ to completely disregard its threshold properties, thus making you responsible for switching the visible content. Setting the property to "__Automatic__" makes the control use the thresholds again.
-                
+If you choose to use __RadFluidContentControl__ with __RadTileView__, an additional property can be taken into consideration - __ContentChangeMode__. __RadFluidContentControl's ContentChangeMode__ property allows to manually change the __State__ of the control, and thus the visible content. Setting the property to "__Manual__", tells __RadFluidContentControl__ to completely disregard its threshold properties, thus making you responsible for switching the visible content. Setting the property to "__Automatic__" makes the control use the thresholds again.
 
 #### __XAML__
 
@@ -145,9 +131,7 @@ If you choose to use __RadFluidContentControl__ with __RadTileView__, an additio
 	  </telerik:RadFluidContentControl>
 	 </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -175,34 +159,28 @@ If you choose to use __RadFluidContentControl__ with __RadTileView__, an additio
 	  }
 	 }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radtileview-fluid-content-control_3}}
-		Private Sub RadTileView_TileStateChanged(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
-			Dim item As RadTileViewItem = TryCast(e.Source, RadTileViewItem)
-			If item IsNot Nothing Then
-				Dim fluidControl As RadFluidContentControl = TryCast(item.Content, RadFluidContentControl)
-				If fluidControl IsNot Nothing Then
-					Select Case item.TileState
-						Case TileViewItemState.Maximized
-							fluidControl.State = FluidContentControlState.Large
-							Exit Select
-						Case TileViewItemState.Minimized
-							fluidControl.State = FluidContentControlState.Small
-							Exit Select
-						Case TileViewItemState.Restored
-							fluidControl.State = FluidContentControlState.Normal
-							Exit Select
-					End Select
-				End If
+	Private Sub RadTileView_TileStateChanged(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
+		Dim item As RadTileViewItem = TryCast(e.Source, RadTileViewItem)
+		If item IsNot Nothing Then
+			Dim fluidControl As RadFluidContentControl = TryCast(item.Content, RadFluidContentControl)
+			If fluidControl IsNot Nothing Then
+				Select Case item.TileState
+					Case TileViewItemState.Maximized
+						fluidControl.State = FluidContentControlState.Large
+						Exit Select
+					Case TileViewItemState.Minimized
+						fluidControl.State = FluidContentControlState.Small
+						Exit Select
+					Case TileViewItemState.Restored
+						fluidControl.State = FluidContentControlState.Normal
+						Exit Select
+				End Select
 			End If
-		End Sub
-	#End Region
-	
-	End Class
-
-
+		End If
+	End Sub
+{{endregion}}

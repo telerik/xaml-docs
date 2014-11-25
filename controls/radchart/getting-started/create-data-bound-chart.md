@@ -12,7 +12,9 @@ position: 0
 
 
 
-__RadChart__ is an advanced {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control providing full Blend support. From within the visual environment of Blend, you can easily perform various tasks such as edit control properties, modify themes, create and modify templates and more.
+__RadChart__ is an advanced 
+{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
+{% if site.site_name == 'WPF' %}WPF{% endif %} control providing full Blend support. From within the visual environment of Blend, you can easily perform various tasks such as edit control properties, modify themes, create and modify templates and more.
 
 This tutorial will walk you through the creation of a __RadChart__ and will show how to:
 
@@ -24,19 +26,19 @@ This tutorial will walk you through the creation of a __RadChart__ and will show
 
 >Before reading this tutorial you should get familiar with the [Visual Structure]({%slug radchart-general-information-visual-structure%}) of the standard __RadChart__ control and its elements.
 
-For the purpose of this tutorial, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Blend.
+For the purpose of this tutorial, you will need to create an empty 
+{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
+{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Blend.
 
 ## Adding RadChart
 
 * Open the __Asset Library__ (*Window->Assets*) in Expression Blend and start writing the name of the __RadChart__ in the search box.
 
-__![](images/RadChart_GettingStarted_DataBoundChart_01.png)__
+ ![](images/RadChart_GettingStarted_DataBoundChart_01.png)
 
 * Drag a __RadChart__ on the artboard.
 
 As result you can see the __RadChart__ with some demo data displayed. The underlaying XAML is pretty simple and looks like this:
-
-
 
 #### __XAML__
 
@@ -51,11 +53,7 @@ As result you can see the __RadChart__ with some demo data displayed. The underl
 	</UserControl>
 	{{endregion}}
 
-
-
-
-
-There are two things you should pay attention to: First is the declaration of the __Telerik.Windows.Controls__ namespace from __Telerik.Windows.Controls.Charting__assembly and the second is the declaration of the __RadChart__ control itself.
+There are two things you should pay attention to: First is the declaration of the __Telerik.Windows.Controls__ namespace from __Telerik.Windows.Controls.Charting__ assembly and the second is the declaration of the __RadChart__ control itself.
 
 ## Creating Custom Data Object
 
@@ -89,8 +87,6 @@ There are two things you should pay attention to: First is the declaration of th
 	    }
 	}
 	{{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -158,8 +154,6 @@ There are two things you should pay attention to: First is the declaration of th
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-getting-started-create-data-bound-chart_4}}
@@ -183,8 +177,6 @@ There are two things you should pay attention to: First is the declaration of th
 	End Function
 	{{endregion}}
 
-
-
 ## Binding the RadChart
 
 * Now after you have the needed data object it is time to configure and bind the __RadChart__ to the appropriate properties of the __ProductSales__ class. It can be done using __SeriesMapping/ItemMapping__ from XAML or code-behind, but in most cases it is better to do it declaratively.
@@ -207,8 +199,6 @@ There are two things you should pay attention to: First is the declaration of th
 	</telerikChart:RadChart>
 	{{endregion}}
 
-
-
 #### __C#__
 
 {{region radchart-getting-started-create-data-bound-chart_6}}
@@ -220,8 +210,6 @@ There are two things you should pay attention to: First is the declaration of th
 	radChart.SeriesMappings.Add( seriesMapping );
 	this.radChart.ItemsSource = this.CreateData();
 	{{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -235,9 +223,7 @@ There are two things you should pay attention to: First is the declaration of th
 	Me.radChart.ItemsSource = Me.CreateData()
 	{{endregion}}
 
-
-
-In the source code above one instance of the class __SeriesMapping__ is created with two __ItemMappings__, one for __X-axis__ and one for __Y-axis__. __X-axis__ is bound to the __ProductSales.Month__ property, while __Y-axis__ is bound to __ProductSales.Quantity__ property. Both properties are numeric, that's why their __DataPointMember__ property is set to __XValue__ and __YValue__ respectively. If you want to bind your __X-axis__ to string values read [Categorical Charts]({%slug radchart-features-categorical-charts%}) or read [below](#Creating_Categorical_Chart).
+In the source code above one instance of the class __SeriesMapping__ is created with two __ItemMappings__, one for __X-axis__ and one for __Y-axis__. __X-axis__ is bound to the __ProductSales.Month__ property, while __Y-axis__ is bound to __ProductSales.Quantity__ property. Both properties are numeric, that's why their __DataPointMember__ property is set to __XValue__ and __YValue__ respectively. If you want to bind your __X-axis__ to string values read [Categorical Charts]({%slug radchart-features-categorical-charts%}) or read below.
 
 * And the last step is to set the __ItemSource__ of the __RadChart__ control to the collection returned by the __GetData__ method. You can insert this call inside your Constructor right after the __InitializeComponent()__ method call.
 
@@ -247,15 +233,11 @@ In the source code above one instance of the class __SeriesMapping__ is created 
 	this.radChart.ItemsSource = this.CreateData();
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-getting-started-create-data-bound-chart_9}}
 	Me.radChart.ItemsSource = Me.CreateData()
 	{{endregion}}
-
-
 
 Now if you run your application, the result should be similar to the below snapshot. Note that:
 
@@ -271,13 +253,8 @@ Now if you run your application, the result should be similar to the below snaps
 * [Y-Axis]({%slug radchart-features-axes-y-axis%}) shows the sold quantity values. 
 
 
-* Spline connects all dots in one smooth graphic. For more series definitions (Line, Bar, CandleStick etc.) read [[!] 2D Charts](radchart-features-chart-types-2D-charts.html) or [[!] 3D Charts](radchart-features-chart-types-3D-charts.html).
-
-
-
-
-         
-      ![](images/RadChart_GettingStarted_DataBoundChart_03.png)
+* Spline connects all dots in one smooth graphic
+![](images/RadChart_GettingStarted_DataBoundChart_03.png)
 
 ## Creating Categorical Chart
 
@@ -289,15 +266,11 @@ The __X-axis__ can be further customized by replacing the month numbers (1, 2, 3
 	<telerikCharting:ItemMapping DataPointMember="XCategory" FieldName="MonthName"/>
 	{{endregion}}
 
-
-
 #### __C#__
 
 {{region radchart-getting-started-create-data-bound-chart_11}}
 	seriesMapping.ItemMappings.Add( new ItemMapping( "MonthName", DataPointMember.XCategory ) );
 	{{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -306,13 +279,7 @@ The __X-axis__ can be further customized by replacing the month numbers (1, 2, 3
 	{{endregion}}
 
 
-
 And here is the same chart but this time showing month names as categories for the __X-axis__ instead of the month numbers.
-
-
-
-
-         
       ![](images/RadChart_GettingStarted_DataBoundChart_04.png)
 
 >tipTo make the x-Axis labels more readable you can use one of the label features provided by the __XAxis__ class. For more information read [here]({%slug radchart-features-axes-x-axis%}).
@@ -321,31 +288,23 @@ If you need further customizations of the chart you can take a look at some of t
 
 * Change the [Layout Mode]({%slug radchart-features-layout-mode%}) of the chart. 
 
-
 * Format your labels using [Format Expressions]({%slug radchart-features-format-expressions%}). 
-
 
 * Change your [Chart Point-marks]({%slug radchart-features-chart-point-marks%}). 
 
-
 * Improve your [Interactivity]({%slug radchart-features-interactivity%}) using [ToolTips]({%slug radchart-features-tooltips%}). 
-
 
 * Customize your [Chart Title]({%slug radchart-features-chart-title%}), [Chart Legend]({%slug radchart-features-chart-legend%}) or [Chart Area]({%slug radchart-features-chart-area%}). 
 
-
 * Show [Multi-series Charts]({%slug radchart-features-multi-series-charts%}). 
-
 
 * Customize the chart [Animations]({%slug radchart-features-animations%}). 
 
-
 * Change the [Striplines and Gridlines]({%slug radchart-features-axes-striplines-and-gridlines%}) of both axes. 
-
 
 * [Creating Chart with Custom Layout](#Creating_Chart_with_Custom_Layout)
 
-If you need to know more about __RadChart__data binding, take a look at the following topics:
+If you need to know more about __RadChart__ data binding, take a look at the following topics:
 
 * [Data Binding Support Overview]({%slug radchart-populating-with-data-data-binding-support-overview%})
 

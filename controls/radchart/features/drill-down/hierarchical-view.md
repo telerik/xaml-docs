@@ -134,26 +134,26 @@ Here is a method that generates some sample data for you.
 {{region radchart-features-drill-down-hierarchical-view_6}}
 	private List<Company> GetChartData()
 	{
-	    return new List<Company>() { 
-	        new Company() { 
-	            Name="ToyYoda",
-	            Sales = new ModelSalesCollection() { 
-	                new ModelSales("Coolla", 120000),
-	                new ModelSales("Coolla", 115000),
-	                new ModelSales("Veso", 89000),
-	                new ModelSales("Veso", 79000)
-	            }
-	        },
-	        new Company() { 
-	            Name="Marda",
-	            Sales =new ModelSalesCollection() {
-	                new ModelSales("Tree", 145000),
-	                new ModelSales("Tree", 132000),
-	                new ModelSales("Six", 121000),
-	                new ModelSales("Six", 111000)
-	            }
-	        }
-	    };
+        return new List<Company>() { 
+            new Company() { 
+                Name="ToyYoda",
+                Sales = new ModelSalesCollection() { 
+                    new ModelSales("Coolla", 120000),
+                    new ModelSales("Coolla", 115000),
+                    new ModelSales("Veso", 89000),
+                    new ModelSales("Veso", 79000)
+                }
+            },
+            new Company() { 
+                Name="Marda",
+                Sales =new ModelSalesCollection() {
+                    new ModelSales("Tree", 145000),
+                    new ModelSales("Tree", 132000),
+                    new ModelSales("Six", 121000),
+                    new ModelSales("Six", 111000)
+                }
+            }
+        };
 	}
 	{{endregion}}
 

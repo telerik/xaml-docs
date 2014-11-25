@@ -22,9 +22,9 @@ You can modify the look of the __RadChart__ by either changing some of the resou
 
 >tipTo learn more about templating the __RadControls__ read the [common topic](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html) regarding templating.
 
->Note that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>Note that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "__PART__".
 
-To learn how to style {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__RadControls__ read the common topics about __Styling and Appearance__. If you are new to the controls they will give you the basic knowledge about it.
+To learn how to style {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} __RadControls__ read the common topics about __Styling and Appearance__. If you are new to the controls they will give you the basic knowledge about it.
 
 Read the following articles to learn how to:
 
@@ -60,4 +60,4 @@ Read the following articles to learn how to:
 
  * [Styling the Chart Title]({%slug radchart-styling-and-appearance-styling-chart-title%})
 
- * [Styling the Axes - Overview]({%slug radchart-styling-and-appearance-styling-axes-overview%})[Templating - Overview](13DD5D60-0C6A-4ABE-B72F-27A3F1E14807)
+ * [Styling the Axes - Overview]({%slug radchart-styling-and-appearance-styling-axes-overview%})

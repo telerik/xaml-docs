@@ -1,0 +1,69 @@
+---
+title: Configuration
+page_title: Configuration
+description: Configuration
+slug: radradialmenu-features-configuration
+tags: configuration
+published: True
+position: 1
+---
+
+# Configuration
+
+This help topic describes the basic properties used to configure the way __RadRadialMenu__ looks & behaves.
+
+We will go through the following sections:
+
+* [Open the RadialMenu](#open-the-radialmenu)
+
+* [Change the StartAngle property](#change-the-startangle-property)
+
+* [Change the Radius properties](#change-the-radius-properties)
+
+### Open the RadialMenu
+
+Initially __RadRadialMenu__ is closed, you should click on the __RadialMenuButton__ in order to open it and show its items. __IsOpen__ boolean property of the __RadialMenu__ allows you to make it open by default. __Example 1__ shows how __IsOpen__ can be set.          
+
+#### __[XAML] Example 1: Setting IsOpen property__
+
+{{region radradialmenu-features-configuration_0}}
+	<telerik:RadRadialMenu IsOpen="True">
+	 ...
+	</telerik:RadRadialMenu>
+{{endregion}}
+
+### Change the StartAngle property
+
+__StartAngle__ property is used to set the angle at which the first __RadRadialMenuItem__ will be positioned.            
+
+#### __[XAML] Example 2: Setting StartAngle property__
+
+{{region radradialmenu-features-configuration_1}}
+	<telerik:RadRadialMenu IsOpen="True" StartAngle="180" >
+	    <telerik:RadRadialMenuItem Header="Item 1" />
+	    <telerik:RadRadialMenuItem Header="Item 2" />
+	    <telerik:RadRadialMenuItem Header="Item 3" />
+	</telerik:RadRadialMenu>
+{{endregion}}
+
+__Figure 1__ shows how the __RadialMenu__ looks with different settings of the StartAngle property.            
+
+Figure 1: Setting StartAngle property
+![Rad Radial Menu Configuration 01](images/RadRadialMenu_Configuration_01.png)
+
+### Change the Radius properties
+
+__RadRadialMenu__ provides the following Radius properties:
+
+* __InnerRadiusFactor__ - defines the inner radius of the panel holding all __RadRadialMenuItems__ as a fraction of the size of __RadRadialMenu__ control. The value should be between 0 and 1. If the passed value lies outside this range, it is automatically set to the nearest boundary value.                
+
+* __InnerNavigationRadiusFactor__ - defines the inner radius of the panel holding the __NavigationItemButton__ items as a fraction of the size of __RadRadialMenu__ control. The value should be between 0 and 1. If the passed value lies outside this range, it is automatically set to the nearest boundary value.                
+
+* __OuterRadiusFactor__ - defines the outer radius of the panel holding the __NavigationItemButton__ items as a fraction of the size of __RadRadialMenu__ control. The value should be between 0 and 1. If the passed value lies outside this range, it is automatically set to the nearest boundary value.               
+
+Figure 2: Radius Properties
+![Rad Radial Menu Configuration 02](images/RadRadialMenu_Configuration_02.png)
+
+# See Also
+
+ * [Visual Structure]({%slug radradialmenu-visual-structure%})

@@ -5,7 +5,7 @@ description: Comment
 slug: radwordsprocessing-model-comment
 tags: comment
 published: True
-position: 13
+position: 14
 ---
 
 # Comment
@@ -16,7 +16,6 @@ A __Comment__ holds annotation markers which specify for which range of document
       
 
 * __CommentRangeStart__: Specifies the start of a comment annotation.
-          
 
 * __CommentRangeEnd__: Specifies the end of a comment annotation.
           
@@ -29,11 +28,11 @@ __Example 1__ shows how to create a __Comment__ and add its CommentRangeStart an
 #### __[C#] Example 1: Add Comment to Paragraph__
 
 {{region radwordsprocessing-model-comment_0}}
-	            Comment comment = document.Comments.AddComment();
-	            paragraph.Inlines.Add(comment.CommentRangeStart);
-	            paragraph.Inlines.AddRun("text");
-	            paragraph.Inlines.Add(comment.CommentRangeEnd);
-	{{endregion}}
+    Comment comment = document.Comments.AddComment();
+    paragraph.Inlines.Add(comment.CommentRangeStart);
+    paragraph.Inlines.AddRun("text");
+    paragraph.Inlines.Add(comment.CommentRangeEnd);
+{{endregion}}
 
 
 
@@ -46,8 +45,8 @@ __Example 2__ showsh ow you can insert a previously created __Comment__ object i
 #### __[C#] Example 2: Insert previously created Comment__
 
 {{region radwordsprocessing-model-comment_1}}
-	            editor.InsertComment(comment);
-	{{endregion}}
+    editor.InsertComment(comment);
+{{endregion}}
 
 
 
@@ -57,11 +56,11 @@ __Example 3__ demonstrates how you can use another overload of __RadFlowDocument
 #### __[C#] Example 3: Insert Comment around Run__
 
 {{region radwordsprocessing-model-comment_2}}
-	            RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-	
-	            Run run = editor.InsertText("text");
-	            editor.InsertComment("My sample comment.", run, run);
-	{{endregion}}
+    RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+
+    Run run = editor.InsertText("text");
+    editor.InsertComment("My sample comment.", run, run);
+{{endregion}}
 
 
 
@@ -71,19 +70,15 @@ The __Comment__ class exposes several properties which allow you to customize in
         
 
 * __Author__: Property of type string specifying the author of the comment.
-            
 
 * __Initials__:  Property of type string specifying the author' initials.
-            
 
 * __Date__: DateTime property showing the moment the comment was created.
             
 
 ## Operating with a Comment
 
-Comment derives BlockContainerBase
-          [BlockContainerBase](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_blockcontainerbase.html)
-          , inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug radwordsprocessing-model-paragraph%})  and [Table]({%slug radwordsprocessing-model-table%}) objects to that collection.
+Comment derives BlockContainerBase [BlockContainerBase](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_blockcontainerbase.html), inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug radwordsprocessing-model-paragraph%}) and [Table]({%slug radwordsprocessing-model-table%}) objects to that collection.
         
 
 __Example 4__ shows how you can add a Table to a Comment.
@@ -92,9 +87,9 @@ __Example 4__ shows how you can add a Table to a Comment.
 #### __[C#] Example 4: Add Blocks to a Comment__
 
 {{region radwordsprocessing-model-comment_3}}
-	            Paragraph paragraph = comment.Blocks.AddParagraph();
-	            Table table = comment.Blocks.AddTable();
-	{{endregion}}
+    Paragraph paragraph = comment.Blocks.AddParagraph();
+    Table table = comment.Blocks.AddTable();
+{{endregion}}
 
 
 

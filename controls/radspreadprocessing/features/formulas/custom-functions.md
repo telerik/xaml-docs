@@ -5,7 +5,7 @@ description: Custom Functions
 slug: radspreadprocessing-features-formulas-custom-functions
 tags: custom,functions
 published: True
-position: 4
+position: 5
 ---
 
 # Custom Functions
@@ -15,25 +15,15 @@ position: 4
 This article provides information about the possible approaches for creating a custom function. It contains the following sections:
       
 
-* [
-              Inheriting FunctionBase Abstract Class
-            ](#inheriting-functionbase-abstract-class)
+* [Inheriting FunctionBase Abstract Class](#inheriting-functionbase-abstract-class)
 
-* [
-              Functions Inheritance Tree
-            ](#functions-inheritance-tree)
+* [Functions Inheritance Tree](#functions-inheritance-tree)
 
-* [
-              ArgumentConversionRules
-            ](#argumentconversionrules)
+* [ArgumentConversionRules](#argumentconversionrules)
 
-* [
-              FunctionInfo
-            ](#functioninfo)
+* [FunctionInfo](#functioninfo)
 
-* [
-              Custom Function Examples
-            ](#custom-function-examples)
+* [Custom Function Examples](#custom-function-examples)
 
 ## Inheriting FunctionBase abstract class
 
@@ -64,8 +54,8 @@ __Example 1__ shows how to register a function class ArgumentsFunction, inherito
 #### __[C#] Example 1: Register custom function__
 
 {{region radspreadprocessing-features-formulas-custom-functions_0}}
-	            FunctionManager.RegisterFunction(new ArgumentsFunction());
-	{{endregion}}
+    FunctionManager.RegisterFunction(new ArgumentsFunction());
+{{endregion}}
 
 
 
@@ -77,7 +67,8 @@ The document model provides an inheritance tree of classes providing ready to us
 __Figure 1__ the base abstract function classes.
         
 
-Figure 1: Functiona Inheritance![Rad Spread Processing Features Formulas Custom Functions 01](images/RadSpreadProcessing_Features_Formulas_Custom_Functions_01.png)
+Figure 1: Functiona Inheritance
+![Rad Spread Processing Features Formulas Custom Functions 01](images/RadSpreadProcessing_Features_Formulas_Custom_Functions_01.png)
 
 * __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method which handles the logic when invalid arguments count is inputted by the user. By inheriting __FunctionBase__ you must override the __EvaluateOverride(RadExpression[] arguments)__ method, so you need to handle the whole logic of converting __RadExpression__ arguments to function arguments.
             
@@ -132,11 +123,7 @@ ArgumentConversionRules has the following properties:
 * __ArrayArgument__: The ArrayArgumentInterpretaion.
             
 
-The value of these properties are from the enumerations
-          [ArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_argumentinterpretation.html)
-          and
-          [ArrayArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_arrayargumentinterpretation.html)
-          and they are set through the constructor of __ArgumentConversionRules__. The default values of these interpretations in the constructor are accordingly __ArgumentInterpretation.UseAsIs__ and __ArrayArgumentInterpretation.UseFirstElement__.
+The value of these properties are from the enumerations [ArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_argumentinterpretation.html) and [ArrayArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_arrayargumentinterpretation.html) and they are set through the constructor of __ArgumentConversionRules__. The default values of these interpretations in the constructor are accordingly __ArgumentInterpretation.UseAsIs__ and __ArrayArgumentInterpretation.UseFirstElement__.
         
 
 __Example 2__ creates an instance of ArgumentConversionRules:
@@ -145,14 +132,14 @@ __Example 2__ creates an instance of ArgumentConversionRules:
 #### __[C#] Example 2: Create ArgumentConversionRules__
 
 {{region radspreadprocessing-features-formulas-custom-functions_1}}
-	        public static readonly ArgumentConversionRules BoolFunctionConversion = new ArgumentConversionRules(
-	                    emptyIndirectArgument: ArgumentInterpretation.Ignore,
-	                    textNumberDirectArgument: ArgumentInterpretation.TreatAsError,
-	                    textNumberIndirectArgument: ArgumentInterpretation.Ignore,
-	                    nonTextNumberDirectArgument: ArgumentInterpretation.TreatAsError,
-	                    nonTextNumberIndirectArgument: ArgumentInterpretation.Ignore,
-	                    arrayArgument: ArrayArgumentInterpretation.UseAllElements);
-	{{endregion}}
+    public static readonly ArgumentConversionRules BoolFunctionConversion = new ArgumentConversionRules(
+                emptyIndirectArgument: ArgumentInterpretation.Ignore,
+                textNumberDirectArgument: ArgumentInterpretation.TreatAsError,
+                textNumberIndirectArgument: ArgumentInterpretation.Ignore,
+                nonTextNumberDirectArgument: ArgumentInterpretation.TreatAsError,
+                nonTextNumberIndirectArgument: ArgumentInterpretation.Ignore,
+                arrayArgument: ArrayArgumentInterpretation.UseAllElements);
+{{endregion}}
 
 
 
@@ -213,23 +200,23 @@ __Example 3__ shows how to create an instance of FunctionInfo class.
 #### __[C#] Example 3: Create FunctionInfo__
 
 {{region radspreadprocessing-features-formulas-custom-functions_2}}
-	            string functionName = "ADD";
+    string functionName = "ADD";
+
+    string description = "Adds all the numbers in range of cells.";
+
+    IEnumerable<ArgumentInfo> requiredArguments = new ArgumentInfo[]
+    {
+        new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
+    };
+
+    IEnumerable<ArgumentInfo> optionalArguments = new ArgumentInfo[]
+    {
+        new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
+    };
+
+    FunctionInfo sumFunctionInfo = new FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, true);
 	
-	            string description = "Adds all the numbers in range of cells.";
-	
-	            IEnumerable<ArgumentInfo> requiredArguments = new ArgumentInfo[]
-		        {
-			        new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
-		        };
-	
-	            IEnumerable<ArgumentInfo> optionalArguments = new ArgumentInfo[]
-		        {
-			        new ArgumentInfo("Number", "number1, number2,... are the numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.", ArgumentType.Number),
-		        };
-	
-	            FunctionInfo sumFunctionInfo = new FunctionInfo(functionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, 254, true);
-	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -248,54 +235,54 @@ __Example 4__ shows how to create the 'ARGUMENTS' function.
 
 {{region radspreadprocessing-features-formulas-custom-functions_3}}
 	
-	    public class Arguments : FunctionBase
-	    {
-	        public static readonly string FunctionName = "ARGUMENTS";
-	        private static readonly FunctionInfo Info;
-	
-	        public override string Name
-	        {
-	            get
-	            {
-	                return FunctionName;
-	            }
-	        }
-	
-	        public override FunctionInfo FunctionInfo
-	        {
-	            get
-	            {
-	                return Info;
-	            }
-	        }
-	
-	        static Arguments()
-	        {
-	            string description = "Returns number of used arguments.";
-	
-	            IEnumerable<ArgumentInfo> requiredArguments = new ArgumentInfo[]
-			{
-				new ArgumentInfo("First", "First argument.", ArgumentType.Any),
-				new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
-				new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
-			};
-	
-	            IEnumerable<ArgumentInfo> optionalArguments = new ArgumentInfo[]
-			{
-				new ArgumentInfo("First", "First argument.", ArgumentType.Any),
-				new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
-				new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
-			};
-	
-	            Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount: 3);
-	        }
-	
-	        protected override RadExpression EvaluateOverride(RadExpression[] arguments)
-	        {
-	            return new NumberExpression(arguments.Length);
-	        }
-	    }
-	{{endregion}}
+    public class Arguments : FunctionBase
+    {
+        public static readonly string FunctionName = "ARGUMENTS";
+        private static readonly FunctionInfo Info;
+
+        public override string Name
+        {
+            get
+            {
+                return FunctionName;
+            }
+        }
+
+        public override FunctionInfo FunctionInfo
+        {
+            get
+            {
+                return Info;
+            }
+        }
+
+        static Arguments()
+        {
+            string description = "Returns number of used arguments.";
+
+            IEnumerable<ArgumentInfo> requiredArguments = new ArgumentInfo[]
+		{
+			new ArgumentInfo("First", "First argument.", ArgumentType.Any),
+			new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
+			new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
+		};
+
+            IEnumerable<ArgumentInfo> optionalArguments = new ArgumentInfo[]
+		{
+			new ArgumentInfo("First", "First argument.", ArgumentType.Any),
+			new ArgumentInfo("Second", "Second argument.", ArgumentType.Any),
+			new ArgumentInfo("Third", "Third argument.", ArgumentType.Any),
+		};
+
+            Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount: 3);
+        }
+
+        protected override RadExpression EvaluateOverride(RadExpression[] arguments)
+        {
+            return new NumberExpression(arguments.Length);
+        }
+    }
+{{endregion}}
 
 
 
@@ -308,48 +295,49 @@ __Example 5__ shows how to create the 'E' function.
 #### __[C#] Example 5: Create E function__
 
 {{region radspreadprocessing-features-formulas-custom-functions_4}}
-	    public class E : FunctionBase
-	    {
-	        public static readonly string FunctionName = "E";
-	        private static readonly FunctionInfo Info;
-	
-	        public override string Name
-	        {
-	            get
-	            {
-	                return FunctionName;
-	            }
-	        }
-	
-	        public override FunctionInfo FunctionInfo
-	        {
-	            get
-	            {
-	                return Info;
-	            }
-	        }
-	
-	        static E()
-	        {
-	            string description = "Returns the Napier's constant.";
-	
-	            Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description);
-	        }
-	
-	        protected override RadExpression EvaluateOverride(RadExpression[] arguments)
-	        {
-	            return NumberExpression.E;
-	        }
-	    }
-	{{endregion}}
+    public class E : FunctionBase
+    {
+        public static readonly string FunctionName = "E";
+        private static readonly FunctionInfo Info;
+
+        public override string Name
+        {
+            get
+            {
+                return FunctionName;
+            }
+        }
+
+        public override FunctionInfo FunctionInfo
+        {
+            get
+            {
+                return Info;
+            }
+        }
+
+        static E()
+        {
+            string description = "Returns the Napier's constant.";
+
+            Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description);
+        }
+
+        protected override RadExpression EvaluateOverride(RadExpression[] arguments)
+        {
+            return NumberExpression.E;
+        }
+    }
+{{endregion}}
 
 
 
->tipYou can download a runnable project of the previous and several other examples of custom functions from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk)
-            , the example is listed as Spreadsheet / CustomFunctions .
+>tip You can download a runnable project of the previous and several other examples of custom functions from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as Spreadsheet / CustomFunctions .
           
 
 # See Also
 
- * [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%})[ArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_argumentinterpretation.html)[ArrayArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_arrayargumentinterpretation.html)[CustomFunctions SDK](https://github.com/telerik/xaml-sdk)
+ * [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%})
+ * [ArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_argumentinterpretation.html)
+ * [ArrayArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_arrayargumentinterpretation.html)
+ * [CustomFunctions SDK](https://github.com/telerik/xaml-sdk)

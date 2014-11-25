@@ -14,7 +14,7 @@ position: 13
 
 ## 
 
-__RadTreeListView__exposes several useful events, which can help you to control the mouse interaction and to get notified when mouse events occur. Moreover, by using the mouse you can perform some of the most common tasks:
+__RadTreeListView__ exposes several useful events, which can help you to control the mouse interaction and to get notified when mouse events occur. Moreover, by using the mouse you can perform some of the most common tasks:
 
 * Change the __selection.__
 
@@ -30,6 +30,4 @@ __RadTreeListView__exposes several useful events, which can help you to control 
 
 * Start\End cell __editing.__
 
-As the __RadTreeListView__ directly inherits the __RadGridView__ it handles the mouse in the same way. To learn more read the 
-        {% if site.site_name == 'Silverlight' %}[respective topic](http://www.telerik.com/help/silverlight/gridview-overview-mouse-support.html){% endif %}{% if site.site_name == 'WPF' %}[respective topic](http://www.telerik.com/help/wpf/gridview-overview-mouse-support.html){% endif %}
-        in the __RadGridView's__ documentation.
+As the __RadTreeListView__ directly inherits the __RadGridView__ it handles the mouse in the same way. To learn more read the [respective topic]({%slug gridview-overview-mouse-support%}) in the __RadGridView's__ documentation.

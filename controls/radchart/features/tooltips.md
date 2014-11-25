@@ -415,11 +415,7 @@ You can set the __ShowItemToolTips__ property to __True__ declaratively or in th
 
 On the snapshot below you can see the default tooltip for the __CandleStick__ chart type:
 
-
-
-
-         
-      ![](images/RadChart_Features_ToolTips.png)
+![](images/RadChart_Features_ToolTips.png)
 
 The default tooltip depends on the type of the __RadChart__:
 
@@ -469,11 +465,7 @@ You can also bind to __DataPoint.Tooltip__ property, using [SeriesMapping/ItemMa
 
 And on the snapshot below you can see that the tooltip for each data point is taken directly from the __Close__ property of the underlying __TradeData__, ignoring the value specified in __ItemToolTipFormat__. 
 
-
-
-
-         
-      ![](images/RadChart_Features_ToolTips_03.png)
+![](images/RadChart_Features_ToolTips_03.png)
 
 ##  Formatting the Tooltip
 
@@ -546,11 +538,7 @@ You can construct more complex tooltips combining several tokens, for example: _
 
 The snapshot below shows the customized tooltip:
 
-
-
-
-         
-      ![](images/RadChart_Features_ToolTips_05.png)
+![](images/RadChart_Features_ToolTips_05.png)
 
 
 
@@ -800,7 +788,7 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 	    Dim stockToolTip As New StockToolTipControl()
 	    stockToolTip.ChangeNetPercent = 1 - (tradeData.Close / tradeData.Open)
 	    stockToolTip.Volume = tradeData.Volume
-	    'The next three properties shows some fictional data to illustrate the idea
+	    'The next three properties shows some fictional data to illustrate the idea'
 	    stockToolTip.OneYearTargetEst = tradeData.Close * 1.1
 	    stockToolTip.PERatio = 16.8R
 	    stockToolTip.ForwardingPE = 17.93
@@ -813,11 +801,7 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 
 As you can see, the new instance of __StockToolTipControl__ is created, initialized and set to __toolTip.Content__:
 
-
-
-
-         
-      ![](images/RadChart_Features_ToolTips_20.png)
+![](images/RadChart_Features_ToolTips_20.png)
 
 >tipCheck out how a [Drill Down Chart]({%slug radchart-how-to-drill-down-chart%}) is created using customized tooltip. 
 

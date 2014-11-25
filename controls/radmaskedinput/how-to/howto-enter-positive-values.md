@@ -12,15 +12,11 @@ position: 2
 
 
 
-You can control the values entered in the __RadMaskedNumericInput__ and
-      __RadMaskedCurrencyInput__ controls to allow only positive input.
+You can control the values entered in the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls to allow only positive input.
 
 ## 
 
-You can use the __MaskedInputExtensions.Minimum__ attached property
-        to define 0 as the minimum value that can be entered in the __RadMaskedNumericInput__ and
-      __RadMaskedCurrencyInput__ controls. 
-      This way you will restrict the user to only entering positive values in the controls.
+You can use the __MaskedInputExtensions.Minimum__ attached property to define 0 as the minimum value that can be entered in the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls. This way you will restrict the user to only entering positive values in the controls.
 
 #### __XAML__
 
@@ -41,8 +37,7 @@ You can use the __MaskedInputExtensions.Minimum__ attached property
 
 
 
-You can find more information about the __MaskedInputExtensions__ class properties 
-      in the [MaskedInputExtensions]({%slug radmaskedinput-features-extensions%}) article.
+You can find more information about the __MaskedInputExtensions__ class properties in the [MaskedInputExtensions]({%slug radmaskedinput-features-extensions%}) article.
 
 # See Also
 

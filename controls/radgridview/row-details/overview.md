@@ -10,8 +10,6 @@ position: 0
 
 # Overview
 
-
-
 Each __RadGridView__ row is capable of presenting additional information by means of a __Row Details__. The __Row Details__ is a __DataTemplate__ defined on the grid- or row-level and is used for displaying data without affecting the dimensions of the row and the cells within it.
 
 One of the advantages of using a __Row Details__ template is that it can be displayed for the selected row only, thus providing a more compact layout. Another benefit of __Row Details__ is the option of placing the __Details Presenter__ outside the __RadGridView__, which provides more room for traditional rows without depriving the user of the additional information.
@@ -19,13 +17,10 @@ One of the advantages of using a __Row Details__ template is that it can be disp
 ![](images/RadGridView_RowDetails_1.png)
 
 >tipTo easily expand / collapse the __Row Details__ you can use the [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
-		
-
+	
 >tipThe row and the row details share the same data context, so you are free to bind the elements in your template to any of the properties of the data item. To learn more about the __Row Details template__ read [here]({%slug radgridview-row-details-template%}).
-		
-
+	
 >tipIn order to not scroll the RowDetails when horizontally scrolling the parent RadGridView, you should set __AreRowDetailsFrozen="True"__ for it.
-      
 
 This chapter will make you familiar with the specifics around the __Row Details__. The following things will get explained:
 

@@ -10,10 +10,6 @@ position: 8
 
 # Binding to XML
 
-
-
-## 
-
 The purpose of this tutorial is to show you how to bind a __RadComboBox__ control to a data defined in a XML file. In a few words, the operations you need to perform are to convert the XML to a collection of business objects and then bind that collection using the __ItemsSource__ property of the __RadComboBox__.
 
 The final result should look like the snapshot below:
@@ -40,9 +36,7 @@ The next code snippet shows the XML declaration, used in this tutorial:
 	    <XmlNodeItem Team="Ajax" Country="Holland"/>
 	    <XmlNodeItem Team="Olimpic M" Country="France"/>
 	</Items>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Add a new __RadComboBox__ declaration in your XAML.
 
@@ -50,9 +44,7 @@ The next code snippet shows the XML declaration, used in this tutorial:
 
 {{region radcombobox-populating-with-data-binding-xml_1}}
 	<telerik:RadComboBox x:Name="radComboBox" Width="200"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Create a new class named __XmlNodeItem__. This class is pretty simple and it represents a separate node from the XML document. Its properties are __Team__ and __Country__. Both of the properties are of type string. Here is the source code:
 
@@ -75,9 +67,7 @@ The next code snippet shows the XML declaration, used in this tutorial:
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -105,11 +95,9 @@ The next code snippet shows the XML declaration, used in this tutorial:
 	            End Set
 	        End Property
 	    End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-* Create a new class named __XmlNodeItemList__, which derives from __ObservableCollection__ of __XmlNodeItem__. This is a collection that will be created from the XML file. The __RadComboBox__will be bound to this collection.
+* Create a new class named __XmlNodeItemList__, which derives from __ObservableCollection__ of __XmlNodeItem__. This is a collection that will be created from the XML file. The __RadComboBox__ will be bound to this collection.
 
 #### __C#__
 
@@ -125,9 +113,7 @@ The next code snippet shows the XML declaration, used in this tutorial:
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -141,9 +127,7 @@ The next code snippet shows the XML declaration, used in this tutorial:
 	            Next
 	        End Sub
 	    End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Create a new class named __RadComboBoxXmlDataSource__, which derives from __XmlNodeItemList__. Practically, this will be the data source for the __RadComboBox__. The class takes a path to the XML file and deserializes the data in the private method __RetrieveData()__.
 
@@ -175,9 +159,7 @@ Create a new class named __RadComboBoxXmlDataSource__, which derives from __XmlN
 	        return list;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -203,13 +185,9 @@ Create a new class named __RadComboBoxXmlDataSource__, which derives from __XmlN
 	            Return list
 	        End Function
 	    End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 * The next step is to declare the __RadComboBoxXmlDataSource__ as a resource in your application. Don't pass a valid string url to the __Source__ property.
-
-
 
 #### __XAML__
 
@@ -217,11 +195,7 @@ Create a new class named __RadComboBoxXmlDataSource__, which derives from __XmlN
 	<UserControl.Resources>
 	    <example:RadComboBoxDataSource x:Key="DataSource"  Source="RadComboBoxBindingToXml.xml"/>
 	</UserControl.Resources>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 * Update your __RadComboBox__ declaration - set the __ItemsSource__ property.
 
@@ -229,9 +203,7 @@ Create a new class named __RadComboBoxXmlDataSource__, which derives from __XmlN
 
 {{region radcombobox-populating-with-data-binding-xml_9}}
 	<telerik:RadComboBox x:Name="radComboBox" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 * The last step is to create a custom __DateTemplate__ and set it to the __RadComboBox__'s __ItemTemplate__ property. Without it, the __RadComboBox__ won't know how to interpret the data source.
 
@@ -248,9 +220,7 @@ Create a new class named __RadComboBoxXmlDataSource__, which derives from __XmlN
 	        <TextBlock Text=")"/>
 	    </StackPanel>
 	</DataTemplate>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Update your __RadComboBox__ declaration for the last time and set its __ItemTemplate__ property.
 
@@ -258,9 +228,7 @@ Create a new class named __RadComboBoxXmlDataSource__, which derives from __XmlN
 
 {{region radcombobox-populating-with-data-binding-xml_11}}
 	<telerik:RadComboBox x:Name="radComboBox" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}}" ItemTemplate="{StaticResource ComboBoxCustomTemplate}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 The result is shown on the snapshot below.
 

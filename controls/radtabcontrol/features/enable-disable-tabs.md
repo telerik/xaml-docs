@@ -14,8 +14,7 @@ position: 3
 
 ## 
 
-If you want to enable or disable specific tab item(s) you have to use the __Boolean__ property __IsEnabled__ of 
-        the class __RadTabItem__. You can set it from your code-behind, XAML or in Blend.
+If you want to enable or disable specific tab item(s) you have to use the __Boolean__ property __IsEnabled__ of the class __RadTabItem__. You can set it from your code-behind, XAML or in Blend.
 
 #### __XAML__
 
@@ -46,10 +45,10 @@ If you want to enable or disable specific tab item(s) you have to use the __Bool
 {{region radtabcontrol-enable-disable-tabs_2}}
 	Dim newTabItem As New RadTabItem()
 	newTabItem.Header = "Disabled Item"
-	' Add the newly created tab item to
-	‘ some existing tab control “TabControl”
+	' Add the newly created tab item to'
+	' some existing tab control “TabControl”'
 	radTabControl.Items.Add(newTabItem)
-	‘ Disable the newly created tab item
+	' Disable the newly created tab item'
 	newTabItem.IsEnabled = False
 	{{endregion}}
 

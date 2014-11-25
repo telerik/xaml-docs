@@ -12,13 +12,13 @@ position: 9
 
 
 
-The purpose of this tutorial is to show you how to populate a __RadChart__with data from a __WCF Service__in two ways:
+The purpose of this tutorial is to show you how to populate a __RadChart__ with data from a __WCF Service__ in two ways:
 
 * A straight-forward way - [plain method calls](#Plain_Method_Calls).
 
 * [Using MVVM approach](#Using_MVVM_Approach)
 
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadChart__ declaration in your XAML: 
 
@@ -31,15 +31,15 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 
 
-The chart control will be populated with the top 10 products from the Northwind database. On the __Y axis__the __UnitPrice__property will be displayed.
+The chart control will be populated with the top 10 products from the Northwind database. On the __Y axis__ the __UnitPrice__ property will be displayed.
 
-* Add a new __SeriesMapping__to your chart declaration and set the __LegendLabel__property to "Products UnitPrice".
+* Add a new __SeriesMapping__ to your chart declaration and set the __LegendLabel__ property to "Products UnitPrice".
 
-* Add a new __ItemMapping__and set the following properties:
+* Add a new __ItemMapping__ and set the following properties:
 
-* __FieldName__to __UnitPrice__
+* __FieldName__ to __UnitPrice__
 
-* __DataPointMember__to __YValue__
+* __DataPointMember__ to __YValue__
 
 #### __XAML__
 
@@ -61,11 +61,7 @@ Creating the WCF Service:
 
 * Add a new item "LINQ to SQL Classes" inside the web server project. Use the .dbml’s designer and drag the *Products *table onto the design surface:
 
-
-
-
-         
-      ![](images/RadChart_PopulatingWithDatabindingToWcf_dbml.PNG)
+![](images/RadChart_PopulatingWithDatabindingToWcf_dbml.PNG)
 
 * Then add a new item "Silverlight-enabled WCF Service" to the server project. In the *.svc.cs* file add the following Linq query to get the first 10 Products from the table:
 
@@ -93,13 +89,13 @@ Creating the WCF Service:
 {{region radchart-populating-with-data-binding-to-wcf_3}}
 	<ServiceContract(Namespace = ""), AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)>
 	Public Class Service2
-	            <OperationContract>
-	            Public Function LoadTop10Products() As List(Of Product)
-	                  Dim db As New DataClasses1DataContext()
-	                  Dim query = From c In db.Products
-	                              Select c
-	                  Return query.Take(10).ToList()
-	            End Function
+        <OperationContract>
+        Public Function LoadTop10Products() As List(Of Product)
+              Dim db As New DataClasses1DataContext()
+              Dim query = From c In db.Products
+                          Select c
+              Return query.Take(10).ToList()
+        End Function
 	End Class
 	{{endregion}}
 
@@ -183,17 +179,13 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 
 Run your demo, the result can be seen on the next image:
 
-
-
-
-         
-      ![](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
+![](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
 
 
 
 ## Using MVVM Approach
 
-This section will show you how to populate your __RadChart__control in a MVVM manner.
+This section will show you how to populate your __RadChart__ control in a MVVM manner.
 
 * Create a new class named __NorthwindDataSource__. 
 
@@ -218,9 +210,9 @@ This section will show you how to populate your __RadChart__control in a MVVM ma
 
 * Add a reference to your WCF Service.
 
-* In the __NorthwindDataSource__class add a reference to an __ObservableCollection__of __Products__.
+* In the __NorthwindDataSource__ class add a reference to an __ObservableCollection__ of __Products__.
 
-* In the __NorthwindDataSource__class add a reference to your WCF Service client.
+* In the __NorthwindDataSource__ class add a reference to your WCF Service client.
 
 #### __C#__
 
@@ -270,7 +262,7 @@ This section will show you how to populate your __RadChart__control in a MVVM ma
 
 >tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
 
-* Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Products__from the database:
+* Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Products__ from the database:
 
 #### __C#__
 
@@ -351,7 +343,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 
 
-* ____ Update your chart declaration - set the __ItemsSource__ property. 
+* Update your chart declaration - set the __ItemsSource__ property. 
 
 #### __XAML__
 
@@ -372,11 +364,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 Here it is shown how the final result should look like: 
 
-
-
-
-         
-      ![](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
+![](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
 
 # See Also
 

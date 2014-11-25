@@ -18,7 +18,7 @@ position: 11
 
 The following example will demonstrate how to bind two Line Series - the first one with Manual Series Mapping and the second one with the new feature:
 
-1. Create new *Business Object*:
+1 . Create new *Business Object*:
 
 #### __C#__
 
@@ -89,7 +89,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 
 
-2. Create a new class named __MyViewModel__, which implements the __ViewModelBase__ interface. It's property *Data* will be used as ItemsSource for the Chart (to bind the First Line using [Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) approach) and the *MappingData* will be ItemsSource for the second Line.
+2 . Create a new class named __MyViewModel__, which implements the __ViewModelBase__ interface. It's property *Data* will be used as ItemsSource for the Chart (to bind the First Line using [Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) approach) and the *MappingData* will be ItemsSource for the second Line.
 
 #### __C#__
 
@@ -180,7 +180,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 
 
-3. Add new RadChart declaration.
+3 . Add new RadChart declaration.
 
 #### __XAML__
 
@@ -208,13 +208,9 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 >The key here is to disable the Default Layout of the RadChart and manually set the two SeriesMappings in common ChartArea - done with providing same name to the Chart Area with "ChartAreaName" property. Otherwise the "No Data Series" default message will appear over the two Line Series.
 
-4. The final result should look like the snapshot below:
+4 . The final result should look like the snapshot below:
 
-
-
-
-         
-      ![](images/RadChart_PopulatingWithData_SMItemsSource.png)
+![](images/RadChart_PopulatingWithData_SMItemsSource.png)
 
 
 

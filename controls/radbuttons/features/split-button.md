@@ -28,10 +28,7 @@ Basically the __RadSplitButton__ is a UI combination of the __RadButton__ and th
 You can instantiate your __RadSplitButton__ in both XAML and code. Here is an example:
 		
 
->The __RadSplitButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly. {% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
-
-Then in XAML you have to declare the namespace:
-xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+>The __RadSplitButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly. {% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %} <br/> Then in XAML you have to declare the namespace: xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
 #### __XAML__
 
@@ -113,9 +110,9 @@ You can allow the __RadSplitButton__ to automatically display its __DropDownCont
 You can easily customize the __RadSplitButton__ by using the following properties:
 		
 
-* __ButtonPartStyle__ - gets/sets the style of the __RadButton__ that represents the ButtonPart of the __RadSplitButton__
+* __ButtonPartStyle__ - gets/sets the style of the __RadButton__ that represents the ButtonPart of the __RadSplitButton__.
 
-* __CornerRadius__ - this property is of type __CornerRadius__ and it controls the __CornerRadius__ of the __RadSplitButton__control
+* __CornerRadius__ - this property is of type __CornerRadius__ and it controls the __CornerRadius__ of the __RadSplitButton__ control.
 
 * __CloseOnEscape__ - specifies whether the drop down should be closed when the __ESC__ key gets pressed. The default value is __True__.
 
@@ -133,17 +130,17 @@ You can easily customize the __RadSplitButton__ by using the following propertie
 
 * __DropDownWidth__ - specifies the width of the drop down area.
 
-* __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the __RadSplitButton__ control in normal state
+* __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the __RadSplitButton__ control in normal state.
 
-* __IsButtonPartVisible__ - gets/sets whether the button part is visible
+* __IsButtonPartVisible__ - gets/sets whether the button part is visible.
 
-* __IsChecked__ - get/sets the checked state of the button when its __ButtonPart__ behaves like a __ToggleButton__
+* __IsChecked__ - get/sets the checked state of the button when its __ButtonPart__ behaves like a __ToggleButton__.
 
 * __IsOpen__ - gets or sets whether the __DropDownContent__ of the button is opened.
 
-* __ToggleCornerRadius__ - gets/sets the __CornerRadius__ of the __RadSplitButton.ButtonPart__ when it behaves like a __ToggleButton__
+* __ToggleCornerRadius__ - gets/sets the __CornerRadius__ of the __RadSplitButton.ButtonPart__ when it behaves like a __ToggleButton__.
 
-* __TogglePartStyle__ - gets/sets the style of the __RadToggleButton__ that represents the ButtonPart of the __RadSplitButton__, when it behaves like a __ToggleButton__
+* __TogglePartStyle__ - gets/sets the style of the __RadToggleButton__ that represents the ButtonPart of the __RadSplitButton__, when it behaves like a __ToggleButton__.
 
 # See Also
 

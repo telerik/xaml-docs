@@ -29,5 +29,3 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Zip integration__ - This example demonstrates the integration between the Persistence framework and the Zip library for providing an output stream object with compressed size.{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

@@ -10,9 +10,7 @@ position: 2
 
 # In Code-Behind
 
-
-
-This tutorial will walk you through the common tasks of [adding](#Adding_RadComboBoxItems) and [removing](#Removing_RadComboBoxItems)__RadComboBoxItems__ programmatically.
+This tutorial will walk you through the common tasks of [adding](#adding-radcomboboxitems) and [removing](#removing-radcomboboxitems) __RadComboBoxItems__ programmatically.
 
 Here is a regular __RadComboBox__ declaration without items:
 
@@ -21,9 +19,7 @@ Here is a regular __RadComboBox__ declaration without items:
 {{region radcombobox-populating-with-data-in-code-behind_0}}
 	<telerik:RadComboBox x:Name="radComboBox" Width="200">
 	</telerik:RadComboBox>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding RadComboBoxItems
 
@@ -45,9 +41,7 @@ In order to add new combo box items to a __RadComboBox__ control, you have to pe
 	comboBoxItem = new RadComboBoxItem();
 	comboBoxItem.Content = "Brickell Avenue";
 	this.radComboBox.Items.Add( comboBoxItem );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -59,17 +53,11 @@ In order to add new combo box items to a __RadComboBox__ control, you have to pe
 	comboBoxItem = New RadComboBoxItem()
 	comboBoxItem.Content = "Brickell Avenue"
 	Me.radComboBox.Items.Add(comboBoxItem)
-	{{endregion}}
-
-
+{{endregion}}
 
 The result is shown on the image below:
 
-
-
-
-         
-      ![](images/RadComboBox_PopulatingWithData_InCodeBehind_010.png)
+![](images/RadComboBox_PopulatingWithData_InCodeBehind_010.png)
 
 >tipConsider declaring combo box items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 
@@ -84,9 +72,7 @@ In order to remove a specific __RadComboBoxItem__, you should remove it from the
 	{
 	    this.radComboBox.Items.Remove( itemToRemove );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -94,9 +80,7 @@ In order to remove a specific __RadComboBoxItem__, you should remove it from the
 	Private Sub RemoveComboBoxItem(ByVal itemToRemove As RadComboBoxItem)
 	    Me.radComboBox.Items.Remove(itemToRemove)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

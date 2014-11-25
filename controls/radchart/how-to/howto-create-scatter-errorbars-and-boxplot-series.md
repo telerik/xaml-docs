@@ -20,7 +20,7 @@ This help topic will demonstrate how to create BoxPlot and Scatter ErrorBars by 
 
 The BoxPlot have five number summaries: the smallest observation (sample minimum), lower quartile(Q1), median (Q2), upper quartile(Q3), and largest observation (sample maximum). For the purpose the Open, Close, High and Low values of the CandleStick will be used with retemplating the Series Definition to add the additional Median Line visual. You will also need to create custom CandleStick / CandleStickSeriesDefinition pair of classes (to calculate the necessary coordinates for the additional Line).
 
-__1.__ Add the additional Line visual(s) in the default template of the CandleStick Chart type: 
+##### 1. Add the additional Line visual(s) in the default template of the CandleStick Chart type: 
 
 - A new part with Name “*PART_CustomLine*” is added for the Median Line (percentile) that is to be shown:
 
@@ -65,8 +65,7 @@ __1.__ Add the additional Line visual(s) in the default template of the CandleSt
 	{{endregion}}
 
 
-
-__2.__ Create new *CustomCandleStick* class that inherits the *CandleStick* class and set the CustomLine as set in the template as Parametric Line. A few more methods are added in order to calculate the necessary coordinates for the additional Line visual, so that it can be positioned on the Plot Area:
+##### 2. Create new *CustomCandleStick* class that inherits the *CandleStick* class and set the CustomLine as set in the template as Parametric Line. A few more methods are added in order to calculate the necessary coordinates for the additional Line visual, so that it can be positioned on the Plot Area:
 
 - void UpdateParametricLinesParameters() – overridden from the CandleStick class 
 
@@ -74,7 +73,7 @@ __2.__ Create new *CustomCandleStick* class that inherits the *CandleStick* clas
 
 - DataRange CalculateRange(double value)
 
-__3.__ Create new class that inherits the *CandleStickSeriesDefinition* class and override the CreateChartItem() method so that the *CustomCandleStick* becomes a brand new Series Definition.
+##### 3. Create new class that inherits the *CandleStickSeriesDefinition* class and override the CreateChartItem() method so that the *CustomCandleStick* becomes a brand new Series Definition.
 
 The following code snippet demonstrates the steps in action:
 
@@ -215,12 +214,7 @@ The following code snippet demonstrates the steps in action:
 
 
 The result is shown below:
-
-
-
-
-         
-      ![](images/RadChart_HowToBoxPlot.png)
+![](images/RadChart_HowToBoxPlot.png)
 
 ## Scatter Error Bar:
 
@@ -260,13 +254,10 @@ The first one is Vertical and the second one is Horizontal Line (with X1 and X2 
 
 - Create new *ScatterErrorBar* class that inherits the *ScatterPoint* class and register the dependency properties there. A few more methods are added in order to accommodate the necessary coordinate calculations for the additional visual elements that will be added to the template:
 
-__1.__ void CreatePoints(Size arrangedBounds) – overridden from the ScatterPoint class
-
-__2.__ double CalculateMinValueY(Size arrangedBounds)
-
-__3.__ double CalculateMaxValueY(Size arrangedBounds)
-
-__4.__ DataRange CalculateRange(double value)
+1. void CreatePoints(Size arrangedBounds) – overridden from the ScatterPoint class
+2. double CalculateMinValueY(Size arrangedBounds)
+3. double CalculateMaxValueY(Size arrangedBounds)
+4. DataRange CalculateRange(double value)
 
 - Create new *ScatterErrorSeriesDefinition* by inheriting the *ScatterSeriesDefinition* class and override the CreateChartItem() method that returns the ScatterErrorBar class. This way you create brand new Series Definition -ScatterErrorBar that is used as TargetType in the Style mentioned above. You can create a ScatterErrorBar Chart by setting YValue for the Scatterpoint and MinValue and MaxValue that will be used to position the crossing Lines.
 
@@ -543,13 +534,4 @@ The following code snippet demonstrates the steps above in action:
 
 
 The result is shown below:
-
-
-
-
-         
-      ![](images/RadChart_HowToScatterErrorBar.png)
-
-
-
-
+![](images/RadChart_HowToScatterErrorBar.png)

@@ -10,8 +10,6 @@ position: 19
 
 # SlotSelectionBehavior
 
-
-
 In RadScheduleView there are plugin selection behaviors that make it possible to customize the logic behind all selections in the control. There are selection behaviors like AppointmentSelectionBehavior, SlotSelectionBehavior etc.
 
 SlotSelectionBehavior is responsible for executing the selection logic of slots in the control. The behavior can be customized in order to implement behaviors for selecting all of the empty slots between two appointments, skipping slots when selecting restricted slots etc.
@@ -22,13 +20,7 @@ When selecting a slot in RadScheduleView the default SlotSelectionBehavior depen
 
 This tutorial will go through the steps needed to create a custom SlotSelectionBehavior in the scenario when the selected slot needs to be equal to one hour.
 
-
-
-* 
-
-Create a custom SlotSelectionBehavior class that inherits SlotSelectionBehavior class:
-
-
+* Create a custom SlotSelectionBehavior class that inherits SlotSelectionBehavior class:
 
 #### __C#__
 
@@ -36,15 +28,9 @@ Create a custom SlotSelectionBehavior class that inherits SlotSelectionBehavior 
 	public class CustomSlotSelectionBehavior : SlotSelectionBehavior
 	{
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-Override the GetSelectionOverride method:
-
-
+* Override the GetSelectionOverride method:
 
 #### __C#__
 
@@ -57,14 +43,9 @@ Override the GetSelectionOverride method:
 			return base.GetSelectionOverride(state, newSlotSelection);
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-
-All that is left is to attach the newly create custom behavior to the ScheduleView control:
-
+* All that is left is to attach the newly create custom behavior to the ScheduleView control:
 
 
 #### __XAML__
@@ -77,13 +58,9 @@ All that is left is to attach the newly create custom behavior to the ScheduleVi
 		</telerik:RadScheduleView.SlotSelectionBehavior>
 		...
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally the ScheduleView control in the XAML should look like this:
-
-
 
 #### __XAML__
 
@@ -97,35 +74,23 @@ Finally the ScheduleView control in the XAML should look like this:
 			<local:CustomSlotSelectionBehavior/>
 		</telerik:RadScheduleView.SlotSelectionBehavior>
 	</telerik:RadScheduleView>
-	{{endregion}}
-
-
+{{endregion}}
 
 The end result is:
 
-
-
-* 
-
-With the default SlotSelectionBehavior:
+* With the default SlotSelectionBehavior:
 
 ![radscheduleview features slot selection behavior 0](images/radscheduleview_features_slot_selection_behavior_0.png)
 
-* 
-
-With the default SlotSelectionBehavior (creating new appointment with double click on a slot):
+* With the default SlotSelectionBehavior (creating new appointment with double click on a slot):
 
 ![radscheduleview features slot selection behavior 1](images/radscheduleview_features_slot_selection_behavior_1.png)
 
-* 
-
-With the custom SlotSelectionBehavior:
+* With the custom SlotSelectionBehavior:
 
 ![radscheduleview features slot selection behavior 2](images/radscheduleview_features_slot_selection_behavior_2.png)
 
-* 
-
-With the custom SlotSelectionBehavior (creating new appointment with double click on a slot):
+* With the custom SlotSelectionBehavior (creating new appointment with double click on a slot):
 
 ![radscheduleview features slot selection behavior 3](images/radscheduleview_features_slot_selection_behavior_3.png)
 

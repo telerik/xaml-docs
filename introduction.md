@@ -11,14 +11,16 @@ position: 1
 # Introduction
 
 {% if site.site_name == 'Silverlight' %}
+![UI for SL logo](images/UI_for_SL_logo.png)
+{% endif %}
 
-![UI for SL logo](images/UI_for_SL_logo.png){% endif %}{% if site.site_name == 'WPF' %}
-
-![UI for WPF logo](images/UI_for_WPF_logo.png){% endif %}
+{% if site.site_name == 'WPF' %}
+![UI for WPF logo](images/UI_for_WPF_logo.png)
+{% endif %}
 
 Thank you for choosing Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
-			{% if site.site_name == 'Silverlight' %}
 
+{% if site.site_name == 'Silverlight' %}
 UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 100 UI controls for building rich line-of-business Silverlight applications.
 
 Sharing the same codebase with Telerik WPF controls, the Silverlight controls offer a clean and intuitive API, Blend support and powerful theming capabilities that will radically improve your RIA development.
@@ -59,7 +61,7 @@ Telerik UI for Silverlight features the following controls:
 
 * [ContextMenu]({%slug contextmenu-overview1%})
 
-* [CoverFlow](A05FA553-15D2-4326-904D-541FF74AA414)
+* [CoverFlow]({%slug coverflow-overview%})
 
 * [DataBar]({%slug raddatabar-overview%})
 
@@ -91,7 +93,7 @@ Telerik UI for Silverlight features the following controls:
 
 * [HeatMap]({%slug radheatmap-overview%})
 
-* [HtmlPlaceHolder](73A24B9A-F40D-4FE1-BA02-FD79B41510B8)
+* [HtmlPlaceHolder]({%slug radhtmlplaceholder-overview%})
 
 * [ImageEditor]({%slug radimageeditor-overview%})
 
@@ -103,7 +105,7 @@ Telerik UI for Silverlight features the following controls:
 
 * [MaskedInput]({%slug radmaskedinput-overview%})
 
-* [MediaPlayer](DE2DDA7F-B534-4942-96FB-30A71490A0B3)
+* [MediaPlayer]({%slug radmediaplayer-overview%})
 
 * [Menu]({%slug radmenu-overview%})
 
@@ -124,6 +126,8 @@ Telerik UI for Silverlight features the following controls:
 * [ProgressBar]({%slug radprogressbar-overview%})
 
 * [PropertyGrid]({%slug radpropertygrid-overview%})
+
+* [RadialMenu]({%slug radradialmenu-overview%})
 
 * [Rating]({%slug radrating-overview%})
 
@@ -165,16 +169,17 @@ Telerik UI for Silverlight features the following controls:
 
 * [TreeView]({%slug radtreeview-overview2%})
 
-* [Upload](4707C284-0090-4217-B566-ABB3339CB848)
+* [Upload]({%slug radupload-overview%})
 
 * [WaterMarkBox]({%slug radwatermarktextbox-overview%})
 
 * [Window]({%slug radwindow-overview%})
 
-* [ZipLibrary]({%slug radziplibrary-overview%}){% endif %}{% if site.site_name == 'WPF' %}
+* [ZipLibrary]({%slug radziplibrary-overview%})
+{% endif %}
 
-UI for WPF is a complete commercial toolset for building next-generation line of business and kiosk applications for Windows Presentation Foundation. Leveraging the amazing potential of this platform as well as many years of excellence in presentation layer technologies, Telerik UI for WPF controls provide a high-performance, visually appealing, and highly customizable shortcut to the world of engaging user experiences.
-        
+{% if site.site_name == 'WPF' %}
+UI for WPF is a complete commercial toolset for building next-generation line of business and kiosk applications for Windows Presentation Foundation. Leveraging the amazing potential of this platform as well as many years of excellence in presentation layer technologies, Telerik UI for WPF controls provide a high-performance, visually appealing, and highly customizable shortcut to the world of engaging user experiences.        
 
 Telerik UI for WPF features the following controls:
 
@@ -276,6 +281,8 @@ Telerik UI for WPF features the following controls:
 
 * [PropertyGrid]({%slug radpropertygrid-overview%})
 
+* [RadialMenu]({%slug radradialmenu-overview%})
+
 * [Rating]({%slug radrating-overview%})
 
 * [RibbonView]({%slug radribbonview-overview%})
@@ -328,69 +335,41 @@ Throughout this article, you will find the following sections that describe all 
 
 ## Licensing
 
-License agreement and detailed information about different licenses and which one you should purchase is explained in the 
-          {% if site.site_name == 'WPF' %}[Licensing](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s){% endif %}{% if site.site_name == 'Silverlight' %}[Licensing](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s){% endif %} section.
-				
+License agreement and detailed information about different licenses and which one you should purchase is explained in the {% if site.site_name == 'WPF' %}[Licensing](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s){% endif %}{% if site.site_name == 'Silverlight' %}[Licensing](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s){% endif %} section.				
 
 ## Installation and Deployment
 
-To learn how to install UI for {% if site.site_name == 'Silverlight' %}
-						Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} and for comprehensive list of our controls and their assemblies you can visit the
-					[Installation and Deployment]({%slug installation-installing-which-file-do-i-need%})
-					section.
+To learn how to install UI for {% if site.site_name == 'Silverlight' %}Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} and for comprehensive list of our controls and their assemblies you can visit the [Installation and Deployment]({%slug installation-installing-which-file-do-i-need%}) section.
 				
 
 ## Consuming Data
 
-To learn more about the different approaches for populating the Telerik UI for {% if site.site_name == 'Silverlight' %}
-          Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
+To learn more about the different approaches for populating the Telerik UI for {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
        	
 
 ## Styling and Appearance
 
-To find how to customize the look of UI for {% if site.site_name == 'Silverlight' %}
-						Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} using tools such as Expression Blend and information on how to use our predefined themes visit the
-						[Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
+To find how to customize the look of UI for {% if site.site_name == 'Silverlight' %} Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
 				
 
-If you need further assistance you can post your question in the 
-				{% if site.site_name == 'Silverlight' %}[Silverlight forums](http://www.telerik.com/community/forums/silverlight.aspx){% endif %}{% if site.site_name == 'WPF' %}[WPF forums](http://www.telerik.com/community/forums/wpf.aspx){% endif %} or use the 
-				[online ticketing system](https://www.telerik.com/account/login.aspx?ReturnUrl=%2faccount%2fsupport-tickets%2favailable-support-list.aspx).
+If you need further assistance you can post your question in the {% if site.site_name == 'Silverlight' %}[Silverlight forums](http://www.telerik.com/community/forums/silverlight.aspx){% endif %}{% if site.site_name == 'WPF' %}[WPF forums](http://www.telerik.com/community/forums/wpf.aspx){% endif %} or use the [online ticketing system](https://www.telerik.com/account/login.aspx?ReturnUrl=%2faccount%2fsupport-tickets%2favailable-support-list.aspx).
 
 ## Related Links{% if site.site_name == 'Silverlight' %}
 
-* 
-							UI for Silverlight product page -
-							[http://www.telerik.com/products/silverlight/overview.aspx](http://www.telerik.com/products/silverlight/overview.aspx)
+* UI for Silverlight product page - [http://www.telerik.com/products/silverlight/overview.aspx](http://www.telerik.com/products/silverlight/overview.aspx)
 
-* 
-						UI for Silverlight demos -
-							[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)
+* UI for Silverlight demos - [http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)
 
-* 
-							Documentation and Help -
-							[http://www.telerik.com/help/silverlight](http://www.telerik.com/help/silverlight)
+* Documentation and Help - [http://www.telerik.com/help/silverlight](http://www.telerik.com/help/silverlight)
 
-* 
-							Latest news for UI for Silverlight -
-							[http://www.telerik.com/support/whats-new/silverlight](http://www.telerik.com/support/whats-new/silverlight){% endif %}{% if site.site_name == 'WPF' %}
+* Latest news for UI for Silverlight - [http://www.telerik.com/support/whats-new/silverlight](http://www.telerik.com/support/whats-new/silverlight){% endif %}{% if site.site_name == 'WPF' %}
 
-* 
-							UI for WPF product page -
-							[http://www.telerik.com/products/wpf/overview.aspx](http://www.telerik.com/products/wpf/overview.aspx)
+* UI for WPF product page - [http://www.telerik.com/products/wpf/overview.aspx](http://www.telerik.com/products/wpf/overview.aspx)
 
-* 
-							UI for WPF demos -
-							[ http://demos.telerik.com/wpf/ ]( http://demos.telerik.com/wpf/ )
+* UI for WPF demos - [ http://demos.telerik.com/wpf/ ]( http://demos.telerik.com/wpf/ )
 
-* 
-							Latest news for UI for WPF -
-							[http://www.telerik.com/support/whats-new/wpf](http://www.telerik.com/support/whats-new/wpf){% endif %}
+* Latest news for UI for WPF - [http://www.telerik.com/support/whats-new/wpf](http://www.telerik.com/support/whats-new/wpf){% endif %}
 
-* 
-						Essential support -
-						[http://www.telerik.com/support](http://www.telerik.com/support)
+* Essential support - [http://www.telerik.com/support](http://www.telerik.com/support)
 
-* 
-						Creative ideas –
-						[http://blogs.telerik.com](http://blogs.telerik.com)
+* Creative ideas – [http://blogs.telerik.com](http://blogs.telerik.com)

@@ -17,6 +17,7 @@ You can organize the Tiles into groups using Tile's property - Group. It is of t
 #### __XAML__
 
 {{region radtilelist-grouping-0}}
+
 	<Grid.Resources>
 	     <telerik:TileGroup Header="Continent" x:Key="Group1" />
 	</Grid.Resources>
@@ -31,6 +32,7 @@ You can organize the Tiles into groups using Tile's property - Group. It is of t
 #### __C#__
 
 {{region radtilelist-grouping_3}}
+
 	     TileGroup tileGroupA = new TileGroup() { Header = "Married" };
 	     private void RadTileList_AutoGeneratingTile(object sender, AutoGeneratingTileEventArgs e)
 	        {
@@ -49,6 +51,7 @@ If you want to specify the look and feel of a group, you can use RadTileList's  
 #### __XAML__
 
 {{region radtilelist-grouping-1}}
+
 	 <telerik:RadTileList GroupTemplate="{StaticResource GroupTemplate}">
 	{{endregion}}
 
@@ -59,6 +62,7 @@ Here is the full code:
 #### __XAML__
 
 {{region radtilelist-grouping-2}}
+
 	<Grid>
 	        <Grid.Resources>
 	            <DataTemplate x:Key="GroupTemplate">                

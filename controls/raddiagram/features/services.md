@@ -26,30 +26,29 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 * __RegisterDefaultServices()__ - this method registers the default Diagramming services. However, please note that the __RadDiagram__ constructor internally calls this method during initialization. This is why the method is usefull mostly in scenarios where custom services are registered within a __RadDiagram__ instance and you need to dynamically revert back to the default services.
 			
 
-	
+	#### __C#__
 			  xDiagram.ServiceLocator.RegisterDefaultServices();
 			
 
 
 
-	
+	#### __VB.NET__
 			  xDiagram.ServiceLocator.RegisterDefaultServices()
 			
 
 
 
-* __GetService<T>()__ where __T__ represents a service interface - this method returns a service instance used by a __RadDiagram__. The type parameter allows you to specify the interface of the service you need to access.
-			For example, if you want to get the resizing service currently used in a RadDiagram instance, you need to ask for the service implementing the __IResizingService__ interface:
+* __GetService<T>()__ where __T__ represents a service interface - this method returns a service instance used by a __RadDiagram__. The type parameter allows you to specify the interface of the service you need to access. For example, if you want to get the resizing service currently used in a RadDiagram instance, you need to ask for the service implementing the __IResizingService__ interface:
 			
 
-	
-xDiagram.ServiceLocator.GetService<IResizingService>();
+	#### __C#__
+    xDiagram.ServiceLocator.GetService<IResizingService>();
 			  
 
 
 
-	
-xDiagram.ServiceLocator.GetService(Of IResizingService)()
+	#### __VB.NET__
+    xDiagram.ServiceLocator.GetService(Of IResizingService)()
 			  
 
 
@@ -57,46 +56,46 @@ xDiagram.ServiceLocator.GetService(Of IResizingService)()
 * __Register<T>(T service)__ - this method allows you to register a new service in a __RadDiagram__. Please note that the type parameter __T__ represents the service interface type, while the method argument allows you to provide a new service class.
 			For instance, if you create a custom resizing service, you can register it in a __RadDiagram__ instance:
 			
-
+#### __C#__
 	
-public class CustomResizingService : ResizingService
-{
-    public CustomResizingService(IGraphInternal graph):base(graph)
+    public class CustomResizingService : ResizingService
     {
-    }
-	   
-	...
-}	
-	
-public partial class Services : UserControl
-{
-    public Services()
+        public CustomResizingService(IGraphInternal graph):base(graph)
+        {
+        }
+           
+        ...
+    }	
+        
+    public partial class Services : UserControl
     {
-        InitializeComponent();
-		
-        xDiagram.ServiceLocator.Register<IResizingService>(new CustomResizingService(this.xDiagram));
+        public Services()
+        {
+            InitializeComponent();
+            
+            xDiagram.ServiceLocator.Register<IResizingService>(new CustomResizingService(this.xDiagram));
+        }
     }
-}
 			  
 
 
-
+#### __VB.NET__
 	
-Public Class CustomResizingService
-	Inherits ResizingService
-	Public Sub New(graph As IGraphInternal)
-		MyBase.New(graph)
-	End Sub
-End Class
+    Public Class CustomResizingService
+        Inherits ResizingService
+        Public Sub New(graph As IGraphInternal)
+            MyBase.New(graph)
+        End Sub
+    End Class
 
-Public Partial Class Services
-	Inherits UserControl
-	Public Sub New()
-		InitializeComponent()
+    Public Partial Class Services
+        Inherits UserControl
+        Public Sub New()
+            InitializeComponent()
 
-		xDiagram.ServiceLocator.Register(Of IResizingService)(New CustomResizingService(Me.xDiagram))
-	End Sub
-End Class			  
+            xDiagram.ServiceLocator.Register(Of IResizingService)(New CustomResizingService(Me.xDiagram))
+        End Sub
+    End Class			  
 			  
 
 
@@ -284,5 +283,3 @@ The __VirtualizationService__ manages the virtualization of the diagramming item
 
 * __Virtualize__ - this method virtualizes a list of specified items.
 			
-
-# See Also

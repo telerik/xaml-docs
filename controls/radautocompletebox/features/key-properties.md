@@ -10,8 +10,6 @@ position: 0
 
 # Key Properties
 
-
-
 The purpose of this help article is to show you the key properties of __RadAutoCompleteBox__ control. The topic includes the following properties:
 
 * [Setting the ItemsSource](#setting-the-itemssource)

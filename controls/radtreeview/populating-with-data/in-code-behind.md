@@ -10,9 +10,7 @@ position: 3
 
 # In Code-Behind
 
-
-
-This tutorial will walk you through the common tasks of __adding__ and __removing____RadTreeViewItem__s____programmatically.  
+This tutorial will walk you through the common tasks of __adding__ and __removing RadTreeViewItems__ programmatically.  
 
 Here is a snapshot of a regular treeview without treeview items: 
 
@@ -24,11 +22,9 @@ Here is a snapshot of a regular treeview without treeview items:
 	<telerik:RadTreeView x:Name="radTreeView" Background="Bisque" Margin="8"/>
 	{{endregion}}
 
-
-
 ## Adding TreeView Items 
 
-In order to add new treeview items to a treeview control, first you have to create an instance of the __RadTreeViewItem__class, set its properties like __Header__, __Foreground__, etc., and then add it to the treeview items collection. 
+In order to add new treeview items to a treeview control, first you have to create an instance of the __RadTreeViewItem__ class, set its properties like __Header__, __Foreground__, etc., and then add it to the treeview items collection. 
 
 #### __C#__
 
@@ -45,8 +41,6 @@ In order to add new treeview items to a treeview control, first you have to crea
 	    radTreeView.Items.Add( category );
 	}
 	{{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -66,9 +60,7 @@ In order to add new treeview items to a treeview control, first you have to crea
 	End Sub
 	{{endregion}}
 
-
-
-In order to create your hierarchical structure deeper, you just need to add __RadTreeViewItem__child nodes to any of the previously declared items. For example, here is the same __AddTreeViewItems()__ method, but this time a little more extended: 
+In order to create your hierarchical structure deeper, you just need to add __RadTreeViewItem__ child nodes to any of the previously declared items. For example, here is the same __AddTreeViewItems()__ method, but this time a little more extended: 
 
 #### __C#__
 
@@ -103,8 +95,6 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-populating-with-data-in-code-behind_4}}
@@ -115,7 +105,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	
 	    radTreeView.Items.Add(category)
 	
-	    ' Adding child items
+	    ' Adding child items '
 	    Dim product As New RadTreeViewItem()
 	    product.Header = "Product1.1"
 	
@@ -132,7 +122,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	
 	    radTreeView.Items.Add(category)
 	
-	    ' Adding child items
+	    ' Adding child items '
 	    product = New RadTreeViewItem()
 	    product.Header = "Product2.1"
 	
@@ -145,13 +135,10 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	End Sub
 	{{endregion}}
 
-
-
 This will be the result if you execute the __AddTreeViewItems()__ method: 
-
 ![](images/RadTreeView_PopulatingWithDataCodeBehind___010.PNG)
 
->tipConsider declaring treeview items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
+>tip Consider declaring treeview items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 
 ## Removing TreeView Items 
 
@@ -166,8 +153,6 @@ In order to remove a treeview item you have to remove it from the treeview items
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radtreeview-populating-with-data-in-code-behind_6}}
@@ -176,18 +161,10 @@ In order to remove a treeview item you have to remove it from the treeview items
 	End Sub
 	{{endregion}}
 
-
-
 # See Also
-
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})
-
  * [Populating with Data - Declaratively]({%slug radtreeview-populating-with-data-declaratively%})
-
  * [Binding to XML]({%slug radtreeview-populating-with-data-data-binding-to-xml%})
-
  * [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%})
-
  * [Binding to WCF Service]({%slug radtreeview-populating-with-data-databinding-to-wcf-service%})
-
  * [Binding to ADO.NET Data Service]({%slug radtreeview-populating-with-data-databinding-to-adonet-service%})

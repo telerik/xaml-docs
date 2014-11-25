@@ -19,8 +19,9 @@ position: 0
 Thank you for choosing Telerik __RadRibbonView__!
 				
 
-Telerik {% if site.site_name == 'Silverlight' %}Silverlight {% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %}__RibbonView__is an easy-to-use implementation of the Microsoft Office 2010 “ribbon” UI, which allows you to codelessly organize the navigation functionality of your application into a single compact toolbar control. Its popup engine, dynamic resizing and powerful customization capabilities make the  {% if site.site_name == 'Silverlight' %}Silverlight {% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} RibbonView your shortcut to creating powerful navigation systems.
-				![](images/RibbonView_overview_office.jpg)
+Telerik {% if site.site_name == 'Silverlight' %}Silverlight {% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} __RibbonView__ is an easy-to-use implementation of the Microsoft Office 2010 “ribbon” UI, which allows you to codelessly organize the navigation functionality of your application into a single compact toolbar control. Its popup engine, dynamic resizing and powerful customization capabilities make the  {% if site.site_name == 'Silverlight' %}Silverlight {% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} RibbonView your shortcut to creating powerful navigation systems.
+
+![](images/RibbonView_overview_office.jpg)
 
 __RadRibbonView__ key features list:
 				

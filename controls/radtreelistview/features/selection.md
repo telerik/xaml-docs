@@ -12,11 +12,11 @@ position: 9
 
 
 
-The __RadTreeListView__provides you with a selection functionality, which allows the user to select one or more items from the data displayed by the control.
+The __RadTreeListView__ provides you with a selection functionality, which allows the user to select one or more items from the data displayed by the control.
 
 ## Selection Modes
 
-The __RadTreeListView__provides three selection modes, which allow you to manipulate the type of selection. This is controlled by the __SelectionMode__ enumeration property which has the following entries:
+The __RadTreeListView__ provides three selection modes, which allow you to manipulate the type of selection. This is controlled by the __SelectionMode__ enumeration property which has the following entries:
 
 * __Single__ - only one item can be selected at a time. __(default value)__
 
@@ -26,7 +26,7 @@ The __RadTreeListView__provides three selection modes, which allow you to manipu
 
 ## Selection Units
 
-The __RadTreeListView__provides two selection units, which allow you to manipulate what units are selected when you interact with the grid. This is controlled by the __SelectionUnit__ enumeration property which has the following entries:
+The __RadTreeListView__ provides two selection units, which allow you to manipulate what units are selected when you interact with the grid. This is controlled by the __SelectionUnit__ enumeration property which has the following entries:
 
 * __FullRow__ - this is the default value. Clicking within the cells will select the row.
 
@@ -34,18 +34,17 @@ The __RadTreeListView__provides two selection units, which allow you to manipula
 
 ## Selected items
 
-__RadTreeListView__provides several properties to get the data behind the selected items - __SelectedItem__, __SelectedItems__ and __SelectedCells__. 
+__RadTreeListView__ provides several properties to get the data behind the selected items - __SelectedItem__, __SelectedItems__ and __SelectedCells__. 
 
-* __SelectedItem__ - the business object that sits behind the selected row. You can use it when the __SelectionUnit__ is set to __FullRow__ (default), otherwise it is null. 
+* __SelectedItem__ - the business object that sits behind the selected row. You can use it when the __SelectionUnit__ is set to __FullRow__ (default), otherwise it is ___null___. 
 
 * __SelectedItems__ - a collection of the business objects that sits behind the selected rows. You can use it when the __SelectionUnit__ is set to __FullRow__ (default), otherwise it is null. It will contain more than one item when the __SelectionMode__ is either __Multiple__ or __Extended__. 
 
-* __SelectedCells__ - a collection of __GridViewCellInfo__ objects which represent the business object and the column of the selected cell/cells. You can use it when the __SelectionUnit__ is set to __Cell__, otherwise it is null.
+* __SelectedCells__ - a collection of __GridViewCellInfo__ objects which represent the business object and the column of the selected cell/cells. You can use it when the __SelectionUnit__ is set to __Cell__, otherwise it is ___null___.
 
 
 
-As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its selection mechanism. The __RadGridView__ allows you to implement programmatic selection, multiple selection and more. To learn more read the
-          [respective topics]({%slug gridview-selection-basics%}) in the __RadGridView's__ documentation.
+As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its selection mechanism. The __RadGridView__ allows you to implement programmatic selection, multiple selection and more. To learn more read the [respective topics]({%slug gridview-selection-basics%}) in the __RadGridView's__ documentation.
 
 # See Also
 

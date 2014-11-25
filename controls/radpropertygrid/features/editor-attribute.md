@@ -55,7 +55,7 @@ For the purposes of this example, the definition of RadPropertyGrid is:
 
 #### __XAML__
 
-{{region radpropertygrid-editor-attribute_0}}
+	{{region radpropertygrid-editor-attribute_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid" Item="{Binding Captain}" />
 	{{endregion}}
 
@@ -66,7 +66,7 @@ The property __Captain__ is defined in the ViewModel as follows:
 
 #### __C#__
 
-{{region radpropertygrid-editor-attribute_1}}
+	{{region radpropertygrid-editor-attribute_1}}
 	private Player captain;
 	public Player Captain
 	{
@@ -94,7 +94,7 @@ For example:
 
 #### __C#__
 
-{{region radpropertygrid-editor-attribute_2}}
+	{{region radpropertygrid-editor-attribute_2}}
 	
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl)]
 	public PhoneNumber PhoneNumber
@@ -119,10 +119,9 @@ For example:
 
 It will look like:
         
+Figure 1: EditorAtrribute with editorType specified
 
-
-              Figure 1: EditorAtrribute with editorType specified
-          ![Rad Property Grid Custom Editor](images/RadPropertyGrid_CustomEditor.png)
+![Rad Property Grid Custom Editor](images/RadPropertyGrid_CustomEditor.png)
 
 ## EditorAttribute(Type editorType, EditorStyle editorStyle)
 
@@ -130,7 +129,7 @@ public EditorAttribute(Type editorType, EditorStyle editorStyle) – the type of
 
 #### __C#__
 
-{{region radpropertygrid-editor-attribute_3}}
+	{{region radpropertygrid-editor-attribute_3}}
 	
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl), Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.DropDown)]
 	public PhoneNumber PhoneNumber
@@ -155,9 +154,9 @@ public EditorAttribute(Type editorType, EditorStyle editorStyle) – the type of
 
 In this case PhoneEditorControl will be defined in a DropDownEditor control and it will look like:
 
+Figure 2: EditorAtrribute with editorType and editorStyle specified
 
-            Figure 2: EditorAtrribute with editorType and editorStyle specified
-          ![Rad Property Grid Custom Editor In Drop Down](images/RadPropertyGrid_CustomEditorInDropDown.png)
+![Rad Property Grid Custom Editor In Drop Down](images/RadPropertyGrid_CustomEditorInDropDown.png)
 
 ## EditorAttribute(Type editorType, string targetProperty)
 
@@ -190,10 +189,9 @@ In this case the property from your business object – Number – will be bound
 
 The result will be:
         
+Figure 3: EditorAtrribute with editorType and targetProperty specified
 
-
-          Figure 3: EditorAtrribute with editorType and targetProperty specified
-        ![Rad Property Grid Target Property](images/RadPropertyGrid_TargetProperty.png)
+![Rad Property Grid Target Property](images/RadPropertyGrid_TargetProperty.png)
 
 ## EditorAttribute(Type editorType, string targetProperty, EditorStyle editorStyle)
 
@@ -201,7 +199,7 @@ public EditorAttribute(Type editorType, string targetProperty, EditorStyle edito
 
 #### __C#__
 
-{{region radpropertygrid-editor-attribute_5}}
+	{{region radpropertygrid-editor-attribute_5}}
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
 	public string Name
 	{
@@ -216,17 +214,13 @@ public EditorAttribute(Type editorType, string targetProperty, EditorStyle edito
 		}
 	}
 	
-	
 	{{endregion}}
-
-
 
 It will look like:
         
+ Figure 4: EditorAtrribute with editorType, targetProperty and editorStyle specified
 
-
-            Figure 4: EditorAtrribute with editorType, targetProperty and editorStyle specified
-          ![Rad Property Grid Custom Editor In Modal](images/RadPropertyGrid_CustomEditorInModal.png)
+ ![Rad Property Grid Custom Editor In Modal](images/RadPropertyGrid_CustomEditorInModal.png)
 
 ## Definitions
 
@@ -234,7 +228,7 @@ The definition of the Custom editor __PhoneEditorControl__ is:
 
 #### __XAML__
 
-{{region radpropertygrid-editor-attribute_1}}
+	{{region radpropertygrid-editor-attribute_1}}
 	<UserControl x:Class="RadPropertyGrid_EditorAttribute.PhoneEditorControl"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -266,7 +260,7 @@ The definition of the __PhoneNumber__ class is:
 
 #### __C#__
 
-{{region radpropertygrid-editor-attribute_6}}
+	{{region radpropertygrid-editor-attribute_6}}
 	public class PhoneNumber : INotifyPropertyChanged
 	{
 		private string countryCode;
@@ -336,114 +330,114 @@ The definition of the __PhoneNumber__ class is:
 The definition of the __Player business object__ used for the example is:
 
 #### __C#__
-
-{{region radpropertygrid-editor-attribute_7}}
+	
+	{{region radpropertygrid-editor-attribute_7}}
 	public class Player : INotifyPropertyChanged
 	{
-	public event PropertyChangedEventHandler PropertyChanged;
-	
-	private string name;
-	private int number;
-	private Position position;
-	private string country;
-	private PhoneNumber phoneNumber;
-	
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
-	public string Name
-	{
-		get { return this.name; }
-		set
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		private string name;
+		private int number;
+		private Position position;
+		private string country;
+		private PhoneNumber phoneNumber;
+		
+		[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
+		public string Name
 		{
-			if (value != this.name)
+			get { return this.name; }
+			set
 			{
-				this.name = value;
-				this.OnPropertyChanged("Name");
+				if (value != this.name)
+				{
+					this.name = value;
+					this.OnPropertyChanged("Name");
+				}
 			}
 		}
-	}
-	
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(RadNumericUpDown), "Value")]
-	public int Number
-	{
-		get { return this.number; }
-		set
+		
+		[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(RadNumericUpDown), "Value")]
+		public int Number
 		{
-			if (value != this.number)
+			get { return this.number; }
+			set
 			{
-				this.number = value;
-				this.OnPropertyChanged("Number");
+				if (value != this.number)
+				{
+					this.number = value;
+					this.OnPropertyChanged("Number");
+				}
 			}
 		}
-	}
-	
-	public Position Position
-	{
-		get { return this.position; }
-		set
+		
+		public Position Position
 		{
-			if (value != this.position)
+			get { return this.position; }
+			set
 			{
-				this.position = value;
-				this.OnPropertyChanged("Position");
+				if (value != this.position)
+				{
+					this.position = value;
+					this.OnPropertyChanged("Position");
+				}
+			}
+		}	
+		[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl), Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.DropDown)]
+		public PhoneNumber PhoneNumber
+		{
+			get
+			{
+				return this.phoneNumber;
+			}
+			set
+			{
+				if (this.phoneNumber != value)
+				{
+					this.phoneNumber = value;
+					this.OnPropertyChanged("PhoneNumber");
+				}
 			}
 		}
-	}	
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl), Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.DropDown)]
-	public PhoneNumber PhoneNumber
-	{
-		get
+		
+		public string Country
 		{
-			return this.phoneNumber;
-		}
-		set
-		{
-			if (this.phoneNumber != value)
+			get { return this.country; }
+			set
 			{
-				this.phoneNumber = value;
-				this.OnPropertyChanged("PhoneNumber");
+				if (value != this.country)
+				{
+					this.country = value;
+					this.OnPropertyChanged("Country");
+				}
 			}
 		}
-	}
-	
-	public string Country
-	{
-		get { return this.country; }
-		set
+		
+		public Player()
 		{
-			if (value != this.country)
+		
+		}
+		
+		public Player(string name, int number, Position position, string country)
+		{
+			this.name = name;
+			this.number = number;
+			this.position = position;
+			this.country = country;
+		}
+		
+		protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
+		{
+			PropertyChangedEventHandler handler = this.PropertyChanged;
+			if (handler != null)
 			{
-				this.country = value;
-				this.OnPropertyChanged("Country");
+				handler(this, args);
 			}
 		}
-	}
-	
-	public Player()
-	{
-	
-	}
-	
-	public Player(string name, int number, Position position, string country)
-	{
-		this.name = name;
-		this.number = number;
-		this.position = position;
-		this.country = country;
-	}
-	
-	protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
-	{
-		PropertyChangedEventHandler handler = this.PropertyChanged;
-		if (handler != null)
+		
+		private void OnPropertyChanged(string propertyName)
 		{
-			handler(this, args);
+			this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
 		}
-	}
-	
-	private void OnPropertyChanged(string propertyName)
-	{
-		this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-	}
 	
 	}
 	

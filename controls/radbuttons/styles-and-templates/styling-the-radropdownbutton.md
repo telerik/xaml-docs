@@ -12,10 +12,8 @@ position: 4
 
 
 
-The __RadDropDownButton__can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
+The __RadDropDownButton__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 
->tipBefore reading this topic, you might find it useful to get familiar with the 
-       [template structure of the RadDropDownButton](B6227BAF-51F3-46F2-9E66-C07EB599A4E0#RadDropDownButton).
 
 You have two options:
 
@@ -27,17 +25,17 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Style
 
-To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadDropDownButton__. In the 'Objects and Timeline' pane select the __RadDropDownButton__you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadDropDownButton__. In the 'Objects and Timeline' pane select the __RadDropDownButton__ you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
 ![](images/Buttons_DropDownButton_CreateStyle.png)
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking 'OK', Expression Blend will generate the default style of the __RadDropDownButton__control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+After clicking 'OK', Expression Blend will generate the default style of the __RadDropDownButton__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadDropDownButton.__Their names indicate to which part of the __RadDropDownButton__appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+{% if site.site_name == 'Silverlight' %}If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadDropDownButton.__ Their names indicate to which part of the __RadDropDownButton__ appearance they are assigned.{% endif %}
 
-![](images/Buttons_DropDownButton_Resources.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![](images/Buttons_DropDownButton_Resources.png){% endif %}
 
 * __ControlOuterBorder_Normal__ - a brush that represents the outer border color of the button, when it is in __Normal__ state.
 
@@ -87,7 +85,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * __ControlElement_Active__ - a brush that represents the fill color of the drop down indicator, when the drop down is opened.
 
-* {% if site.site_name == 'Silverlight' %}__RadDropDownButtonStyle__ - the default __Style__ for the __RadDropDownButton__.{% endif %}
+* {% if site.site_name == 'Silverlight' %}__RadDropDownButtonStyle__ - the default __Style__ for the __RadDropDownButton__. {% endif %}
 
 # See Also
 

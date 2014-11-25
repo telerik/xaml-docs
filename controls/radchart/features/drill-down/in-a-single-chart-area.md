@@ -64,14 +64,6 @@ The usage of a single chart area for displaying hierarchical data in a drill dow
 
 Here are snapshots of the result - one for the first hierarchy level and one after clicking on the ToyYoda bar.
 
+![](images/RadChart_Features_DrillDown_SingleChartArea_01.png)
 
-
-
-         
-      ![](images/RadChart_Features_DrillDown_SingleChartArea_01.png)
-
-
-
-
-         
-      ![](images/RadChart_Features_DrillDown_SingleChartArea_02.png)
+![](images/RadChart_Features_DrillDown_SingleChartArea_02.png)

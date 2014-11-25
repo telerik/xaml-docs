@@ -12,18 +12,13 @@ position: 5
 
 
 
-__RadTabControl__ exposes several useful properties and events, which can help you to control the keyboard 
-        interaction and to get notified when a key is up or down.
+__RadTabControl__ exposes several useful properties and events, which can help you to control the keyboard interaction and to get notified when a key is up or down.
 
 ## Properties 
 
-Set the __IsTabStop__ property to include/exclude the control in the tab navigation cycle. If this property
-        is set to __True__, then the control will be included; if it is __False__ it will be skipped.
+Set the __IsTabStop__ property to include/exclude the control in the tab navigation cycle. If this property is set to __True__, then the control will be included; if it is __False__ it will be skipped.
 
-* The__TabIndex__ property defines the index of the control in the tab navigation cycle. 
-          The lower the number, the earlier the control will be focused while navigating using the Tab key. If you set this property, do not 
-          forget to set __IsTabStop__ to __True__. Once focused, you can navigate through
-          the tab pages using the left and right arrow keys. 
+* The__TabIndex__ property defines the index of the control in the tab navigation cycle. The lower the number, the earlier the control will be focused while navigating using the Tab key. If you set this property, do not forget to set __IsTabStop__ to __True__. Once focused, you can navigate through the tab pages using the left and right arrow keys. 
 
 ## Events
 
@@ -31,8 +26,7 @@ Set the __IsTabStop__ property to include/exclude the control in the tab navigat
 
 * __KeyUp__– get notified when the user has released a keyboard key.
 
->tipTo obtain the pressed key, the object that raised the event or some other information, use the instance of
-          __System.Windows.Input.KeyEventArgs__ passed as a parameter to the event handler method.
+>tipTo obtain the pressed key, the object that raised the event or some other information, use the instance of __System.Windows.Input.KeyEventArgs__ passed as a parameter to the event handler method.
 
 #### __XAML__
 
@@ -43,8 +37,7 @@ Set the __IsTabStop__ property to include/exclude the control in the tab navigat
 
 
 
-The implementation of both event handlers __tabControl_KeyDown__ and __tabControl_KeyUp__
-        is located in the code-behind file and looks like this:
+The implementation of both event handlers __tabControl_KeyDown__ and __tabControl_KeyUp__ is located in the code-behind file and looks like this:
 
 #### __C#__
 

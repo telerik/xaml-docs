@@ -38,17 +38,15 @@ The Marker supports the following features:
 1. You can set location of the Marker relative to a scale bar using a telerik:ScaleObject.Location property.
  For example, "Outside" 
 
+![](images/RadialMarkerLocationOutside.png)
 
-         
-      ![](images/RadialMarkerLocationOutside.png), "Inside" 
+"Inside" 
 
+![](images/RadialMarkerLocationInside.png)
 
-         
-      ![](images/RadialMarkerLocationInside.png) or "OverCenter" 
+ or "OverCenter" 
 
-
-         
-      ![](images/RadialMarkerLocationOverCenter.png)
+![](images/RadialMarkerLocationOverCenter.png)
 
 1. telerik:ScaleObject.Offset relative to a scale bar.
 
@@ -56,8 +54,9 @@ The Marker supports the following features:
 
 1. telerik:ScaleObject.RelativeWidth that specifies a width of the Marker given as part of the container size.
 
-1. The standard Telerik provided Marker templates allow to use the BorderBrush and the BorderThickness properties to drawing a border.
-          NOTE: The left of BorderThickness property is applied for the border around a Marker. Styles provided by Telerik allow using of the most popular form of Markers. You can change template of the Marker to setup desirable appearance.
+1. The standard Telerik provided Marker templates allow to use the BorderBrush and the BorderThickness properties to drawing a border. 
+
+>The left of BorderThickness property is applied for the border around a Marker. Styles provided by Telerik allow using of the most popular form of Markers. You can change template of the Marker to setup desirable appearance.
 
 1. The Marker can be snapped along to scale ticks or to specified interval.
 

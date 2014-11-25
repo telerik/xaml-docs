@@ -12,16 +12,14 @@ position: 4
 
 
 
-The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the __RadSpellChecker__ control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything. You can find more information on the localization of the Telerik UISuite
-        {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/common-localization.html){% endif %}.
+The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the __RadSpellChecker__ control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything. You can find more information on the localization of the Telerik UI Suite {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/common-localization.html){% endif %}.
       
 
 There are two ways to implement the localization - using Resource files or a custom localization manager.
 
 ## Localization Using Resource Files
 
-You can base your localization on the standard resource files provided by the .NET framework. For that purpose you will have to create a separate .ResX file for each one of the languages that your application will support.
-          Imagine that you want to translate your application into English, German and Dutch. In that regard, you will have to add three new resource files to your project:
+You can base your localization on the standard resource files provided by the .NET framework. For that purpose you will have to create a separate .ResX file for each one of the languages that your application will support. Imagine that you want to translate your application into English, German and Dutch. In that regard, you will have to add three new resource files to your project:
         
 
 * RadSpellChecker.resx - this resource file will store the English (default) resources for the spell-checker control. Set the __AccessModifier__ property to __Public__.
@@ -93,7 +91,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 	{
 	   ResourceManager = RadSpellCheckerResources.ResourceManager
 	};
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -110,15 +108,14 @@ If you rely on culture settings to load the right resources automatically, you h
 
 ## Localization Using Custom Localization Manager
 
-__Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls.
-          To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.
+__Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.
         
 
 #### __C#__
 
 {{region radspellchecker-localization_0}}
 	LocalizationManager.Manager = new CustomLocalizationManager();
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -156,7 +153,7 @@ What is left in order to fulfil the localization is to override the method __Get
 	       return base.GetStringOverride(key);
 	   }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -177,8 +174,7 @@ Of course, if you don't want to hard-code your translation inside the source cod
 	   }
 	   return base.GetStringOverride(key);
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
-# See Also

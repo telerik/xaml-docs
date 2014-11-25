@@ -43,8 +43,7 @@ area. The following properties are related to the size of those two areas:
 
 ## Handle when item changes its position in the RadOutlookBar
 
-To handle the changes in the position of the item you can subscribe to the
-__ItemPositionChanged__ event in the way showed below:
+To handle the changes in the position of the item you can subscribe to the __ItemPositionChanged__ event in the way showed below:
 
 #### __XAML__
 

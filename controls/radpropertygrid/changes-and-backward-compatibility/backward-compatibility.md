@@ -14,46 +14,37 @@ position: 1
 
 ## Latest Release Notes
 
-You can check the latest Release Notes
-          {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
+You can check the latest Release Notes{% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
-## 
-        Breaking changes for Telerik RadPropertyGrid  Q1 2014
+##  Q1 2014
       
 
-* 
-            Changed: CollectionEditor's default IsReadOnly state to ReadOnly, instead of Disabled
+* Changed: CollectionEditor's default IsReadOnly state to ReadOnly, instead of Disabled
           
 
-## 
-        Breaking changes for Telerik RadPropertyGrid  Q1 2013
+##  Q1 2013
       
 
-* 
-            PropertyDefinition's Binding property is now of type BindingBase
+* PropertyDefinition's Binding property is now of type BindingBase
           
 
-* 
-            Obsolete: SelectedField property of RadPropertyGrid (SelectedPropertyDefinition should be used instead)
+* Obsolete: SelectedField property of RadPropertyGrid (SelectedPropertyDefinition should be used instead)
           
 
-* 
-            Changed: PropertyDefinitionsCollection is now ObservableItemCollection. Performance tip: Notifications should be suspended when bulk insert operations are executed
+* Changed: PropertyDefinitionsCollection is now ObservableItemCollection. Performance tip: Notifications should be suspended when bulk insert operations are executed
           
 
-## 
-        Breaking changes for Telerik RadPropertyGrid  Q3 2012
+## Q3 2012
       
 
-* 
-            Public method __Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition.DFSFilter__ is removed. It has never been supposed to be public.
+* Public method __Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition.DFSFilter__ is removed. It has never been supposed to be public.
           
 
-## Breaking changes for Telerik RadPropertyGrid  Q2 2012 SP1
+## Q2 2012 SP1
 
 * __OrderIndex__  is now __DependencyProperty__
 
-## Breaking changes for Telerik RadPropertyGrid  Q2 2012
+##  Q2 2012
 
 * __AutoBindBehavior__ now supports source different from __RadPropertyGrid__'s Item.
           
@@ -61,18 +52,18 @@ You can check the latest Release Notes
 * __PropertyGridField__ editor will use a __TwoWay__ binding if such is specified in its  __PropertyDefinition__.
           
 
-## Breaking changes for Telerik RadPropertyGrid  Q1 2012 SP1
+## Q1 2012 SP1
     
 
 * __PropertyDefinition’s IsReadonly__ property is now a __DependencyProperty__.
           
 
-## Breaking changes for Telerik RadPropertyGrid Q1 2012
+## Q1 2012
 
 * __NestedPropertiesVisibility__ is now of type __System.Windows.Visibility__.
           
 
-## Telerik RadPropertyGrid Q2 2011 Beta
+## Q2 2011 Beta
 
 The Telerik RadPropertyGrid has been just added to the Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite.
         

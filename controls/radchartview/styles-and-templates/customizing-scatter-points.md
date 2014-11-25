@@ -10,27 +10,19 @@ position: 3
 
 # Customizing Scatter Points
 
-
-
-## 
-
-RadChart allows that you set custom shape for the Scatter points (items of the
-          [ScatterPoint]({%slug radchartview-series-scatterseries%}) series) via DataTemplate.
-          However there are cases where we would like each point in our scatter series to have different shape or color.
-          This is where you should use the *PointTemplateSelector* property.
+RadChart allows that you set custom shape for the Scatter points (items of the [ScatterPoint]({%slug radchartview-series-scatterseries%}) series) via DataTemplate. However there are cases where we would like each point in our scatter series to have different shape or color. This is where you should use the *PointTemplateSelector* property.
         
 
-The following example demonstrates how you can add a custom Framework Element (Rectangle, Ellipse and etc.)
-          to present the scatter points and set different color per each point based on condition defined by PointTemplateSelector.
+The following example demonstrates how you can add a custom Framework Element (Rectangle, Ellipse and etc.) to present the scatter points and set different color per each point based on condition defined by PointTemplateSelector.
         
 
-We'll get started with a class with two properties - X and Y. They will be used to represent the coordinates of each point on the Chart.
-          We'll also need a method that will return Brush with color based on the YValue of our business objects.
+We'll get started with a class with two properties - X and Y. They will be used to represent the coordinates of each point on the Chart. We'll also need a method that will return Brush with color based on the YValue of our business objects.
         
 
 #### __C#__
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_1}}
+
 	public class ChartData
 	{
 		private readonly Brush Red = new SolidColorBrush(Colors.Red);
@@ -68,10 +60,10 @@ We'll get started with a class with two properties - X and Y. They will be used 
 	{{endregion}}
 
 
-
 #### __VB.NET__
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_2}}
+
 	 Public Class ChartData
 		Private ReadOnly Red As Brush = New SolidColorBrush(Colors.Red)
 		Private ReadOnly Orange As Brush = New SolidColorBrush(Colors.Orange)
@@ -100,21 +92,18 @@ We'll get started with a class with two properties - X and Y. They will be used 
 	{{endregion}}
 
 
-
 Our next task is to create a ViewModel. For the purpose - create new class that inherits the ViewModelBase abstract class.
         
 
 >ViewModelBase class is part of the Telerik.Windows.Controls.dll
 
-What we'll need to add in it - a property of type List of ChartData.
-          It will be used as data source for our scatterpoint series.
-          We'll populate the newly created collection with some data in a method that is called GetData.
-          In the constructor of the ViewModel class call the GetData method we created in our ChartData class.
+What we'll need to add in it - a property of type List of ChartData. It will be used as data source for our scatterpoint series. We'll populate the newly created collection with some data in a method that is called GetData. In the constructor of the ViewModel class call the GetData method we created in our ChartData class.
         
 
 #### __C#__
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_3}}
+
 	public class ViewModel : ViewModelBase
 	{
 		private List<ChartData> data;
@@ -154,11 +143,10 @@ What we'll need to add in it - a property of type List of ChartData.
 	}
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_4}}
+
 	Public Class ViewModel
 		Inherits ViewModelBase
 			Private data As List(Of ChartData)
@@ -192,16 +180,13 @@ What we'll need to add in it - a property of type List of ChartData.
 	{{endregion}}
 
 
-
-It's time to create our ScatterPoint series in XAML and populate it with data. It is beyond the scope of this
-          topic to describe how you can populate the series.
-          Please refer to our [Create Data-Bound Chart]({%slug radchartview-series-databinding%})
-          topic for details.
+It's time to create our ScatterPoint series in XAML and populate it with data. It is beyond the scope of this topic to describe how you can populate the series. Please refer to our [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) topic for details.
         
 
 #### __XAML__
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_0}}
+
 	<UserControl.DataContext>
 		<local:ViewModel />
 	</UserControl.DataContext>
@@ -237,20 +222,18 @@ It's time to create our ScatterPoint series in XAML and populate it with data. I
 	{{endregion}}
 
 
-
 Up to now you should have a ScatterPoint series with elliptical shape where the color of each point comes from a propery of the underlying Business object.
-        ![Rad Chart View-custom colored scatter points](images/RadChartView-custom_colored_scatter_points.PNG)
+
+![Rad Chart View-custom colored scatter points](images/RadChartView-custom_colored_scatter_points.PNG)
 
 
-
-For our scenario where we would like different shape for the pointmarks, this means that we should create different DataTemplates.
-          We need to create a selector class which will dictate an ellipse or rectangle template to be set per condition.
-          It should inherit the DataTemplateSelector class and define the condition by overriding its SelectTemplate method. The source code is below:
+For our scenario where we would like different shape for the pointmarks, this means that we should create different DataTemplates. We need to create a selector class which will dictate an ellipse or rectangle template to be set per condition. It should inherit the DataTemplateSelector class and define the condition by overriding its SelectTemplate method. The source code is below:
         
 
 #### __XAML__
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_7}}
+
 	<UserControl.Resources>
 		<local:ScatterPointTemplateSelector x:Key="templateSelector" />
 	</UserControl.Resources>
@@ -290,11 +273,10 @@ For our scenario where we would like different shape for the pointmarks, this me
 	</Grid>
 	{{endregion}}
 
-
-
 #### __C#__
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_5}}
+
 	  public class ScatterPointTemplateSelector : DataTemplateSelector
 	    {
 	        public override DataTemplate SelectTemplate(object item, DependencyObject container)
@@ -316,12 +298,11 @@ For our scenario where we would like different shape for the pointmarks, this me
 	    }
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchartview-styles-and-templates-customizing-scatter-points_6}}
-	'NOTE: This code snippet uses implicit typing. You will need to set 'Option Infer On' in the VB file or set 'Option Infer' at the project level:
+
+	'NOTE: This code snippet uses implicit typing. You will need to set 'Option Infer On' in the VB file or set 'Option Infer' at the project level: '
 	
 	  Public Class ScatterPointTemplateSelector
 		  Inherits DataTemplateSelector
@@ -340,6 +321,4 @@ For our scenario where we would like different shape for the pointmarks, this me
 	  End Class
 	{{endregion}}
 
-
-
-Voilà:![Rad Chart View-custom scatter points](images/RadChartView-custom_scatter_points.PNG)
+![Rad Chart View-custom scatter points](images/RadChartView-custom_scatter_points.PNG)

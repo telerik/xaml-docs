@@ -5,101 +5,153 @@ description: Compressing a Stream
 slug: radziplibrary-compress-stream
 tags: compressing,a,stream
 published: True
-position: 0
+position: 2
 ---
 
 # Compressing a Stream
 
 
 
-Have you ever wondered how to compress a stream that you need to send over the internet? Telerik __Zip Library__ can significantly facilitate your efforts in implementing such scenarios.
+Telerik __RadZipLibrary__ can significantly facilitate your efforts in compress a stream, for example to send it over the internet. The library provides __CompressedStream__ class that is designed to compress and decompress streams.
+      
 
-Telerik __Zip Library__ provides two classes that are designed to compress and decompress streams - __ZipOutputStream__ and __ZipInputStream__.
+This article covers the following topics:
+      
+
+* [API Overview](#api-overview)
+
+* [Compressing a Stream](#compressing-a-stream)
+
+* [Decompressing a Stream](#decompressing-a-stream)
+
+* [CompressedStream Properties](#compressedstream-properties)
+
+## API Overview
+
+__CompressedStream__ class allows you to compress and decompress a stream. You need to initialize the class using one of the constructor overloads.
+        
+
+* __CompressedStream(Stream baseStream, StreamOperationMode mode, CompressionSettings settings)__
+
+* __CompressedStream(Stream baseStream, StreamOperationMode mode,CompressionSettings settings, bool useCrc32, EncryptionSettings encryptionSettings)__
+
+The parameters accepted by the constructors serve the following functions:
+        
+
+* __Stream baseStream__: A reference to a stream where the compressed result will be written when compressing data or the compressed stream that needs to be decompressed when decompressing data.
+            
+
+* __StreamOperationMode mode__: Specifies the operation mode of the compressed stream – __Write__ for compressing data and __Read__ for decompressing.
+            
+
+* __CompressionSettings settings__: The settings used for the compression. The compression settings can be of type DeflateSettings, LzmaSettings and StoreSettings. You can read more on the topic in the [Compression Settings]({%slug radziplibrary-compression-settings%}) article.
+            
+
+* __bool useCrc32__: Indicates whether to use CRC32 (true) or Adler32 (false) checksum algorithm.
+            
+
+* __EncryptionSettings encryptionSettings__: Specifies the encryptions settings that will be used. If __null__ value is passed, encryption is not performed. More information on the topic is available in the [Protect ZipArchive]({%slug radziplibrary-protect-ziparchive%}) article.
+            
 
 ## Compressing a Stream
 
-The __ZipOutputStream__ class allows you to compress a stream.
+You can create a compressed stream by initializing new instance of the __CompressedStream__ class and passing as a parameter the stream in which the compressed data will be written. You need to specify the operation mode to __Wrtie__ and the compression settings that should be used.
+        
 
-You can create a compressed stream by initializing a new instance of the __ZipOutputStream__ class and passing the uncompressed stream as a parameter.
-
-#### __C#__
+#### __[C#] Example 1: Write to Compressed Stream__
 
 {{region radziplibrary-compress-stream_0}}
-	ZipOutputStream zipOutputStream = new ZipOutputStream(memoryStream);
+	            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
+	            {
+	                // write to compressed stream
+	            }
 	{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Write to Compressed Stream__
+
+{{region radziplibrary-compress-stream_0}}
+				Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
+					' write to compressed stream
+				End Using
+	{{endregion}}
+
+
+
+If you want to compress a specific stream (*inputStream*), you need to copy it to the compressed stream that you've created.
+        
+
+#### __[C#] Example 2: Write Stream to Compressed Stream__
 
 {{region radziplibrary-compress-stream_1}}
-	Dim zipOutputStream As New ZipOutputStream(memoryStream)
+	            using (CompressedStream compressedStream = new CompressedStream(outputStream, StreamOperationMode.Write, new DeflateSettings()))
+	            {
+	                inputStream.CopyTo(compressedStream);
+	                compressedStream.Flush();
+	            }
 	{{endregion}}
 
 
 
-While initializing an instance of the __ZipOutputStream__ class, you can also pass as a parameter a __ZipCompression__ method. 
+#### __[VB.NET] Example 2: Write Stream to Compressed Stream__
 
-#### __C#__
-
-{{region radziplibrary-compress-stream_2}}
-	ZipOutputStream zipOutputStream = new ZipOutputStream(memoryStream, ZipCompression.Deflate64);
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radziplibrary-compress-stream_3}}
-	Dim zipOutputStream As New ZipOutputStream(memoryStream, ZipCompression.Deflate64)
-	{{endregion}}
+{{region radziplibrary-compress-stream_1}}
+				Using compressedStream As New CompressedStream(outputStream, StreamOperationMode.Write, New DeflateSettings())
+					inputStream.CopyTo(compressedStream)
+					compressedStream.Flush()
+				End Using
+		{{endregion}}
 
 
-
-The __ZipCompression__ method defines the level of compression to be used during the initialization of the compressed stream. 
-
-##  ZipOutputStream properties
-
-The __ZipOutputStream__ class derives from the __Stream__ class and therefore it supports all __Stream__ class properties. However, it also exposes a set of properties that provide further information about the compressed stream:
-
-* __BaseStream__ - gets the stream that is compressed. This property is of type __Stream__.
-
-* __Checksum__- gets the checksum of the compressed stream. This property is of type __int__.
-
-* __CompressedSize__- gets the compressed size of the stream. This property is of type __int__.
-
-* __UncompressedSize__- gets the uncompressed size of the stream. This property is of type __int__.
-
-## ZipOutputStream methods
-
-Since the __ZipOutputStream__ class derives from the __Stream__ class its support all __Stream__ class methods. It also exposes a __Cancel()__ method that can be used to stop the compression.
 
 ## Decompressing a Stream
 
-The __ZipInputStream__ class allows you to decompress a stream. In order to decompress a __Stream__ object, you can create a new instance of the __ZipInputStream__ class passing the compressed stream as a parameter.
+Decompressing a stream is just as simple as compressing it. All you need to do is to create new instance of __CompressedStream__ class and pass it the stream from which the compressed data will be extracted, operation mode __Read__, and the compression settings that need to be used.
+        
 
-#### __C#__
+#### __[C#] Example 3: Decompressed Stream__
 
-{{region radziplibrary-compress-stream_4}}
-	ZipInputStream inputStream = new ZipInputStream(compressedStream);
+{{region radziplibrary-compress-stream_2}}
+	            using (CompressedStream compressedStream = new CompressedStream(inputStream, StreamOperationMode.Read, new DeflateSettings()))
+	            {
+	                compressedStream.CopyTo(outputStream);
+	            }
 	{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Decompressed Stream__
 
-{{region radziplibrary-compress-stream_5}}
-	Dim inputStream As New ZipInputStream(compressedStream)
+{{region radziplibrary-compress-stream_2}}
+				Using compressedStream As New CompressedStream(inputStream, StreamOperationMode.Read, New DeflateSettings())
+					compressedStream.CopyTo(outputStream)
+				End Using
 	{{endregion}}
 
 
 
-## ZipInputStream properties
+## CompressedStream Properties
 
-The __ZipInputStream__ class derives from the __Stream__ class and therefore it supports all __Stream__ class properties. However, it also exposes a set of properties that provide further information about the decompressed stream:
+The CompressedStream class derives from the Stream class and therefore it supports all its properties. However, it also exposes a set of properties that provide further information about the compressed stream.
+        
 
-* __BaseStream__ - gets the stream that is decompressed. This property is of type __Stream__.
+* __BaseStream__: Property is of type
+              [Stream](http://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx)
+              which obtains the stream that is compressed.
+            
 
-* __CompressedSize__- gets the compressed size of the stream. This property is of type __int__.
+* __Checksum__: Numeric value representing the checksum of the compressed stream.
+            
 
-* __UncompressedSize__- gets the uncompressed size of the stream. This property is of type __int__.
+* __CompressedSize__: The size of the compressed stream.
+            
+
+* __Length__: The uncompressed size of the stream.
+            
+
+# See Also
+
+ * [Protect ZipArchive]({%slug radziplibrary-protect-ziparchive%})
+
+ * [Compression Settings]({%slug radziplibrary-compression-settings%})

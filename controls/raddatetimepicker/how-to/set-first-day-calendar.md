@@ -10,10 +10,6 @@ position: 2
 
 # How to set the first day of the week
 
-
-
-## 
-
 The purpose of this tutorial is to show you how to modify the default order of the days in the calendar view of your __RadDateTimePicker__ control.
 
 You do this through the __RadDateTimePicker__ control's __Culture__ property. 
@@ -22,17 +18,15 @@ You do this through the __RadDateTimePicker__ control's __Culture__ property.
 
 {{region raddatetimepicker-how-to-set-first-day-calendar_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 For the purpose of this example, after defining your __RadDateTimePicker__ control you extend the user control's constructor located in the code behind file:
 
-* Create a __DateTimeFormatInfo__ object specifying the value of a property called __FirstDayOfWeek.__This property is used to indicate the first day of the week. 
+* Create a __DateTimeFormatInfo__ object specifying the value of a property called __FirstDayOfWeek__. This property is used to indicate the first day of the week. 
 
-* To make your __RadDateTimePicker__ control work with this __DateTimeFormatInfo__ object you have to assign it to a __CultureInfo's____DateTimeFormat__ property. 
+* To make your __RadDateTimePicker__ control work with this __DateTimeFormatInfo__ object you have to assign it to a __CultureInfo's DateTimeFormat__ property. 
 
-* Finally you have to assign the __CultureInfo__ object to the __Culture__ property of your __RadDateTimePicker__control.
+* Finally you have to assign the __CultureInfo__ object to the __Culture__ property of your __RadDateTimePicker__ control.
 
 #### __C#__
 
@@ -46,9 +40,7 @@ For the purpose of this example, after defining your __RadDateTimePicker__ contr
 	    cultureInfo.DateTimeFormat = dateInfo;
 	    this.radDateTimePicker.Culture = cultureInfo;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -61,17 +53,11 @@ For the purpose of this example, after defining your __RadDateTimePicker__ contr
 	 cultureInfo.DateTimeFormat = dateInfo
 	 Me.radDateTimePicker.Culture = cultureInfo
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the final result:
 
-
-
-
-         
-      ![](images/dateTimePicker_how_to_set_first_week_day_calendar_010.png)
+![](images/dateTimePicker_how_to_set_first_week_day_calendar_010.png)
 
 # See Also
 

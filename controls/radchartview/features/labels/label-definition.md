@@ -10,11 +10,7 @@ position: 0
 
 # Label Definition
 
-
-
 The series of the __RadChartView__ control expose mechanisum for customizing the visualized labels. This article will introduce it to you.
-
-## 
 
 If you wish to customize the default labels of the chart series, you could use Label Definition.
 
@@ -51,39 +47,40 @@ All the properties of a __ChartSeriesLabelDefinition__ are listed here:
 
 The example below shows how to bind the label's content to a custom property from your business model. Two Label Definitions are added for each data item.
 
-	
-        <telerik:RadCartesianChart x:Name="myChart"
-		                           Width="500"
-		                           Height="300">
-			<telerik:RadCartesianChart.VerticalAxis>
-				<telerik:LinearAxis />
-			</telerik:RadCartesianChart.VerticalAxis>
-			<telerik:RadCartesianChart.HorizontalAxis>
-				<telerik:CategoricalAxis />
-			</telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:BarSeries ShowLabels="True" CategoryBinding="Category" ValueBinding="Value">
-				<telerik:BarSeries.LabelDefinitions>
-					<telerik:ChartSeriesLabelDefinition HorizontalAlignment="Center" VerticalAlignment="Center" >
-						<telerik:ChartSeriesLabelDefinition.Template>
-							<DataTemplate>
-								<TextBlock Foreground="DarkBlue" Text="{Binding DataItem.LabelProperty}" />
-							</DataTemplate>
-						</telerik:ChartSeriesLabelDefinition.Template>
-					</telerik:ChartSeriesLabelDefinition>
-					<telerik:ChartSeriesLabelDefinition HorizontalAlignment="Center" VerticalAlignment="Top">
-						<telerik:ChartSeriesLabelDefinition.Template>
-							<DataTemplate>
-								<TextBlock Foreground="Black" Text="{Binding DataItem.Value}" />
-							</DataTemplate>
-						</telerik:ChartSeriesLabelDefinition.Template>
-					</telerik:ChartSeriesLabelDefinition>
-				</telerik:BarSeries.LabelDefinitions>
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart>
+#### XAML
+{{region radchartview-label-definition}}
+	<telerik:RadCartesianChart x:Name="myChart"
+							   Width="500"
+							   Height="300">
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis />
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis />
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:BarSeries ShowLabels="True" CategoryBinding="Category" ValueBinding="Value">
+			<telerik:BarSeries.LabelDefinitions>
+				<telerik:ChartSeriesLabelDefinition HorizontalAlignment="Center" VerticalAlignment="Center" >
+					<telerik:ChartSeriesLabelDefinition.Template>
+						<DataTemplate>
+							<TextBlock Foreground="DarkBlue" Text="{Binding DataItem.LabelProperty}" />
+						</DataTemplate>
+					</telerik:ChartSeriesLabelDefinition.Template>
+				</telerik:ChartSeriesLabelDefinition>
+				<telerik:ChartSeriesLabelDefinition HorizontalAlignment="Center" VerticalAlignment="Top">
+					<telerik:ChartSeriesLabelDefinition.Template>
+						<DataTemplate>
+							<TextBlock Foreground="Black" Text="{Binding DataItem.Value}" />
+						</DataTemplate>
+					</telerik:ChartSeriesLabelDefinition.Template>
+				</telerik:ChartSeriesLabelDefinition>
+			</telerik:BarSeries.LabelDefinitions>
+		</telerik:BarSeries>
+	</telerik:RadCartesianChart>
+{{endregion}}
 
-
-
-	
+#### C#
+{{region radchartview-label-definition_2}}
     public class Data
     {
         public string Category { get; set; }
@@ -102,13 +99,13 @@ The example below shows how to bind the label's content to a custom property fro
         }
     }
 
-
-
 	this.myChart.Series[0].ItemsSource = Data.CreateData();
 
+{{endregion}}
 
+The final result of this example should look similar to the next picture.
 
-The final result of this example should look similar to the next picture.![radchartview-features-labeldefinitions](images/radchartview-features-labeldefinitions.png)
+![radchartview-features-labeldefinitions](images/radchartview-features-labeldefinitions.png)
 
 # See Also
 

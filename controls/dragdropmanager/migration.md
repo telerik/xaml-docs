@@ -10,9 +10,7 @@ position: 5
 
 # DragDropManager Migration
 
-
-
-
+The article explains the events of the __DragDropManager__.
 
 ## Events and API migration
 
@@ -20,10 +18,7 @@ The event that was fired when the drag Starts was __DragQuery__ for the RadDragA
 
 Bellow is the code for the DragQuery event is its corresponding code for the OnDragInitialize event:
 
-
-
 #### __C#__
-
 {{region dragdropmanager-migration_0}}
 	private void OnDragQuery( object sender, DragDropQueryEventArgs e )
 	{
@@ -40,14 +35,9 @@ Bellow is the code for the DragQuery event is its corresponding code for the OnD
 	    }
 	    e.QueryResult = true;
 	}
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region dragdropmanager-migration_1}}
 	private void OnDragInitialize(object sender, DragInitializeEventArgs args)
 	{
@@ -60,21 +50,13 @@ Bellow is the code for the DragQuery event is its corresponding code for the OnD
 	
 	    // Coresponds to the cue setting (e.Options.DragCue)
 	    args.DragVisual = new ContentControl { Content = args.Data, ContentTemplate = LayoutRoot.Resources["ApplicationTemplate"] as DataTemplate };
-	}
-	
-	{{endregion}}
-
-
+	}	
+{{endregion}}
 
 The event corresponding to the __DragInfo__ event in RadDragAndDropManager is now __DragDropComplete__. The __DragDropComplete__ event is the equivalent of the __DragQuery with status DropComplete__.
-        
-
-
 
 #### __C#__
-
-{{region dragdropmanager-migration_2}}
-	
+{{region dragdropmanager-migration_2}}	
 	private void OnDragInfo( object sender, DragDropEventArgs e )
 	{
 	    ListBoxItem listBoxItem = e.Options.Source as ListBoxItem;
@@ -88,16 +70,10 @@ The event corresponding to the __DragInfo__ event in RadDragAndDropManager is no
 	            itemsSource.Remove( payload );
 	        }
 	    }
-	}
-	
-	{{endregion}}
-
-
-
-
+	}	
+{{endregion}}
 
 #### __C#__
-
 {{region dragdropmanager-migration_3}}
 	public void OnDragCompleted(object sender, Telerik.Windows.DragDrop.DragDropCompletedEventArgs args)
 	{
@@ -112,16 +88,10 @@ The event corresponding to the __DragInfo__ event in RadDragAndDropManager is no
 				sourceItems.Remove(draggedData);
 			}
 		}
-	}
-	
-	{{endregion}}
-
-
+	}	
+{{endregion}}
 
 The __Drop__ event in DragDropManager corresponds to the __DropInfo event with status DropCompleted__.
-        
-
-
 
 #### __C#__
 
@@ -135,14 +105,9 @@ The __Drop__ event in DragDropManager corresponds to the __DropInfo event with s
 	        if ( !itemsSource.Contains( payload ) )
 	            itemsSource.Add( payload );
 	}
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region dragdropmanager-migration_5}}
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs args)
 	{
@@ -155,20 +120,13 @@ The __Drop__ event in DragDropManager corresponds to the __DropInfo event with s
 			destinationItems.Add(draggedData);
 		}
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-The __DragInfo__ event corresponds to the __GiveFeedback__ event. Basically the GiveFeedback event can be used on the DragSource control to update the Cursor, and the DragEffects for the DragOperation.
-        
+The __DragInfo__ event corresponds to the __GiveFeedback__ event. Basically the GiveFeedback event can be used on the DragSource control to update the Cursor, and the DragEffects for the DragOperation.        
 
 The __DropInfo__ event corresponds to the __DragOver__ event of DradDropManager. The __DragOver__ event can be used as a replacement for the __DropQuery/Info__ events for various purposes, one of which is to __update the AllowedEffects__ for the drag drop operation.  Works both on Source and Destination.
-        
-
-
 
 #### __C#__
-
 {{region dragdropmanager-migration_6}}
 	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
@@ -177,72 +135,38 @@ The __DropInfo__ event corresponds to the __DragOver__ event of DradDropManager.
 			e.Effects = DragDropEffects.None;
 					e.Handled = true;
 		}
-	}
-	
-	{{endregion}}
+	}	
+{{endregion}}
 
-
-
-The __CancelDrag__ event corresponds to the __QueryContinueDrag__ event. The CancelDrag() method logic can be replaced by subscribing to the QueryContinueDrag event and manipulating the Action property in the QueryContinueEventArgs.
-        
+The __CancelDrag__ event corresponds to the __QueryContinueDrag__ event. The CancelDrag() method logic can be replaced by subscribing to the QueryContinueDrag event and manipulating the Action property in the QueryContinueEventArgs.        
 
 The control cursor can be set in the GiveFeedbackEventArgs.
-        
-
-
 
 #### __C#__
-
-{{region dragdropmanager-migration_7}}
-	
+{{region dragdropmanager-migration_7}}	
 	private void OnGiveFeedback(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs args)
 	{
 	    args.SetCursor(Cursors.Arrow);
 	    args.Handled = true;
-	}
-	
-	{{endregion}}
-
-
+	}	
+{{endregion}}
 
 ## Events without analogue
 
+* PreviewGiveFeedback
 
+* PreviewQueryContinueDrag
 
-* 
-              PreviewGiveFeedback
-            
+* PreviewDragEnter
 
-* 
-              PreviewQueryContinueDrag
-            
+* PreviewDragLeave
 
-* 
-              PreviewDragEnter
-            
+* PreviewDragOver
 
-* 
-              PreviewDragLeave
-            
-
-* 
-              PreviewDragOver
-            
-
-* 
-              PreviewDrop
-            
+* PreviewDrop
 
 ## Missing Functionality
 
+* There is no AutoScrollBehavior out of the box
 
-
-* 
-              There is no AutoScrollBehavior out of the box
-            
-
-* 
-              There is no DragArrow Cue
-            
-
-# See Also
+* There is no DragArrow Cue

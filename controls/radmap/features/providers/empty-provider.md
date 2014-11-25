@@ -14,11 +14,11 @@ position: 3
 
 ## 
 
-The __Empty Provider__is a provider which doesn't connect to any real imagery services (Virtual Earth, Google etc). It provides definitions and methods which can be used to calculate positions of the framework elements, map shapes and pin points. By using this provider you can create map-relative applications which do not require visibility of the real map data (landscapes or roads), but which require visible elements to be positioned according to the geographical coordinates.
+The __Empty Provider__ is a provider which doesn't connect to any real imagery services (Virtual Earth, Google etc). It provides definitions and methods which can be used to calculate positions of the framework elements, map shapes and pin points. By using this provider you can create map-relative applications which do not require visibility of the real map data (landscapes or roads), but which require visible elements to be positioned according to the geographical coordinates.
 
->tipThe__Empty Provider__ can be combined together with the [KML Data Import]({%slug radmap-features-kml-data-import%}) feature of __RadMap__.
+>tipThe __Empty Provider__ can be combined together with the [KML Data Import]({%slug radmap-features-kml-data-import%}) feature of __RadMap__.
 
->tipThe __Empty Provider__ can be combined together with the [Shapefile Support]({%slug radmap-features-shapefiles-support%}) feature of __RadMap__.Note that if you are loading shapefiles created for OSGB36 (National Grid UK) or EPSG:900913 (Mercator, meters), you also need to set the __EmptyProvider.Projection__property to __OSGB1936Projection__or __EPSG900913Projection__ respectively.
+>tipThe __Empty Provider__ can be combined together with the [Shapefile Support]({%slug radmap-features-shapefiles-support%}) feature of __RadMap__. Note that if you are loading shapefiles created for OSGB36 (National Grid UK) or EPSG:900913 (Mercator, meters), you also need to set the __EmptyProvider.Projection__ property to __OSGB1936Projection__ or __EPSG900913Projection__ respectively.
 
 Here is an example of creating an __EmptyProivder__ and setting it to the __RadMap__.
 

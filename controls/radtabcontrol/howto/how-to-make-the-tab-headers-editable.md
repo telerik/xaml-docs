@@ -15,20 +15,18 @@ site_name: Silverlight
 
 ## 
 
-The goal of this tutorial is to create a tab control with editable headers of the tab items. The idea is to allow runtime change of the tab item's header text as shown on the snapshot below.![](images/RadTabControl_HowTo_EditableHeaders.png)
+The goal of this tutorial is to create a tab control with editable headers of the tab items. The idea is to allow runtime change of the tab item's header text as shown on the snapshot below.
+![](images/RadTabControl_HowTo_EditableHeaders.png)
 
 For the purpose of this example, you will need to create an empty Silverlight Application project and open it in Visual Studio.
         
 
->If you copy and paste the source code directly from this XAML examples, don't forget to change 
-           __xmlns:example__ alias to import the namespace used in your project.
+>If you copy and paste the source code directly from this XAML examples, don't forget to change __xmlns:example__ alias to import the namespace used in your project.
           
 
-First add references to the assemblies __Telerik.Windows.Controls__ and 
-        __Telerik.Windows.Controls.Navigation.__
+First add references to the assemblies __Telerik.Windows.Controls__ and __Telerik.Windows.Controls.Navigation.__
 
-Then create a new Silverlight Templated Control - __EditableTabHeader__ that derives from 
-        __ContentControl__ and leave it empty for now.
+Then create a new Silverlight Templated Control - __EditableTabHeader__ that derives from __ContentControl__ and leave it empty for now.
 
 #### __C#__
 
@@ -57,7 +55,7 @@ Then create a new Silverlight Templated Control - __EditableTabHeader__ that der
 
 
 
-Create a __new style__for the __EditableTabHeader__ control.
+Create a __new style__ for the __EditableTabHeader__ control.
 
 #### __XAML__
 
@@ -109,12 +107,7 @@ Create a __new style__for the __EditableTabHeader__ control.
 
 
 
-In the XAML code above we create new style for the EditableTabHeader control and this style will be the default 
-        template for that control. The template is made of __ContentPresenter__, __TextBox__ and 
-        a state group __EditStates__with two new states __EditMode__ and 
-        __ViewMode__. The "EditMode" state contains a storyboard that hides the content presenter control and makes the
-        text box visible, while the __ViewMode__ state does nothing, which means that when the control is in this state
-        it will have its default appearance. 
+In the XAML code above we create new style for the EditableTabHeader control and this style will be the default template for that control. The template is made of __ContentPresenter__, __TextBox__ and a state group __EditStates__with two new states __EditMode__ and __ViewMode__. The "EditMode" state contains a storyboard that hides the content presenter control and makes the text box visible, while the __ViewMode__ state does nothing, which means that when the control is in this state it will have its default appearance. 
 
 Add the following implementation to the code behind of the __EditableTabHeader__ class.
 
@@ -274,24 +267,18 @@ Add the following implementation to the code behind of the __EditableTabHeader__
 
 The major changes in the implementation of the __EditableTabHeader__ control are:
 
-* The control contract definition is done using two attributes of type "TemplateVisualState" placed right above the class
-          definition. With this contract we declare all of the existing states and parts for that control.
+* The control contract definition is done using two attributes of type "TemplateVisualState" placed right above the class definition. With this contract we declare all of the existing states and parts for that control.
 
 * New dependency property __IsInEditMode__ of __Boolean__ type was added.
 
-* One text box field declaration plus three additional fields related to the editing. The text box field is initialized
-          with the reference from the text box defined in the template when the base method __OnApplyTemplate__ is invoked.
+* One text box field declaration plus three additional fields related to the editing. The text box field is initialized with the reference from the text box defined in the template when the base method __OnApplyTemplate__ is invoked.
           
 
-* Call back method __OnIsInEditModeChanged__ invoked every time the value of the dependency property
-          __IsInEditMode__ is changed. This method changes the state of the control depending on the value of the
-          __IsInEditMode__ property.
+* Call back method __OnIsInEditModeChanged__ invoked every time the value of the dependency property __IsInEditMode__ is changed. This method changes the state of the control depending on the value of the __IsInEditMode__ property.
 
-* The method __OnMouseLeftButtonDown__was overridden to move the control from View to 
-          EditMode state and vice versa depending on some internal logic for edit.
+* The method __OnMouseLeftButtonDown__ was overridden to move the control from View to EditMode state and vice versa depending on some internal logic for edit.
 
-Now you can add a RadTabControl to the MainPage.xaml and __EditableTabHeader__ control to define 
-        the __TabItems__ Header:
+Now you can add a RadTabControl to the MainPage.xaml and __EditableTabHeader__ control to define the __TabItems__ Header:
 
 #### __XAML__
 
@@ -326,14 +313,9 @@ Now you can add a RadTabControl to the MainPage.xaml and __EditableTabHeader__ c
 
 
 
-In the XAML code above we create new rad tab control and predefine its __ItemTempalte__ and 
-        __ItemContainerStyle__. In the __ItemContainerStyle__ definition we set the
-        __HeaderTemplate__ of the control to the __EditableTabHeader__ control.
-        __EditableTabHeader__ control will use automatically the default template defined in the 
-       __Themes\Generic.xaml__ file.
+In the XAML code above we create new rad tab control and predefine its __ItemTempalte__ and __ItemContainerStyle__. In the __ItemContainerStyle__ definition we set the __HeaderTemplate__ of the control to the __EditableTabHeader__ control. __EditableTabHeader__ control will use automatically the default template defined in the __Themes\Generic.xaml__ file.
 
-Open the appropriate __MainPage.xaml__ code behind class and paste the following content to bind and
-        populate the tab control to a collection of the custom object __TabItemModel__:
+Open the appropriate __MainPage.xaml__ code behind class and paste the following content to bind and populate the tab control to a collection of the custom object __TabItemModel__:
 
 #### __C#__
 

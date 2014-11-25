@@ -18,25 +18,25 @@ The indicator controls, except the __NumericIndicator__, derive from the __Indic
 
 It will explain the following:
 
-* [Animating the Indicator](#Animating_the_Indicator)
+* [Animating the Indicator](#animating-the-indicator)
 
-* [Refreshing the Indicator](#Refreshing_the_Indicator)
+* [Refreshing the Indicator](#refreshing-the-indicator)
 
-* [Snapping the Indicator](#Snapping_the_Indicator)
+* [Snapping the Indicator](#snapping-the-indicator)
 
-* [Indicator's Size](#Indicators_Size)
+* [Indicator's Size](#indicators-size)
 
-* [Indicator's Value](#Indicators_Value)
+* [Indicator's Value](#indicators-value)
 
-* [Using the Range Color](#Using_the_Range_Color)
+* [Using the Range Color](#using-the-range-color)
 
-* [Value's Source](#Values_Source)
+* [Value's Source](#values-source)
 
 >tipTo learn more about the __Numeric Indicator__, read [this topic]({%slug radgauge-features-indicators-numeric-indicator%}).
 
 ## Animating the Indicator
 
-When the value of the indicator gets changed, it will get positioned on the appropriate place on the scale. By default the indicator will directly go to the respective position, but you are able to make this transition smoother by animating it. To do it, just enable the indicators animation by setting the __IsAnimated__ property to __True__and set the __Duration__ property to the desired value. Here is an example.
+When the value of the indicator gets changed, it will get positioned on the appropriate place on the scale. By default the indicator will directly go to the respective position, but you are able to make this transition smoother by animating it. To do it, just enable the indicators animation by setting the __IsAnimated__ property to __True__ and set the __Duration__ property to the desired value. Here is an example.
 
 #### __XAML__
 
@@ -56,23 +56,12 @@ When the value of the indicator gets changed, it will get positioned on the appr
 
 ## Refreshing the Indicator
 
-In a scenario where the gauge is used to visualize the 
-        changing of a particular value, the indicator should get updated whenever the value changes.
-        This can be done by simply setting the __Value__ property of the indicator to the new value. 
-        However in some scenarios you may have multiple value changes in a very short period of time. 
-        This would make the indicator go through several values very fast and make the gauge harder for observing. 
-        In this case you can use the __Refresh__ feature of the indicator. 
-        It consists in updating the indicator position only at a specific interval of time and displaying a value 
-        calculated on the basis of all the values that have occurred in the interval.
+In a scenario where the gauge is used to visualize the changing of a particular value, the indicator should get updated whenever the value changes. This can be done by simply setting the __Value__ property of the indicator to the new value. However in some scenarios you may have multiple value changes in a very short period of time. This would make the indicator go through several values very fast and make the gauge harder for observing. In this case you can use the __Refresh__ feature of the indicator. It consists in updating the indicator position only at a specific interval of time and displaying a value calculated on the basis of all the values that have occurred in the interval.
 
-To implement this feature you have to use the __RefreshRate__ and __RefreshMode__ properties.
-        	The first one represents the interval of time between two updates. It is of type TimeSpan.
-        	[Here](http://msdn.microsoft.com/en-us/library/se73z7b9.aspx)
-			you can read about the format, that TimeSpan.Parse() uses.
-        	The second one specifies the way the final value gets calculated. You can choose between the following:
+To implement this feature you have to use the __RefreshRate__ and __RefreshMode__ properties. The first one represents the interval of time between two updates. It is of type TimeSpan. [Here](http://msdn.microsoft.com/en-us/library/se73z7b9.aspx) you can read about the format, that TimeSpan.Parse() uses. The second one specifies the way the final value gets calculated. You can choose between the following:
         
 
-* __None____(default)__ - disables refreshing.
+* __None__ __(default)__ - disables refreshing.
 
 * __Average__ - displays the average of the values, that occurred in the interval.
 
@@ -102,7 +91,7 @@ Here is an example.
 
 The __Snapping__ feature allows the gauge to display values only for a fixed positions or values which match a specific interval. An example for snapping is the following scenario - you are interested to point values 5 and 10 on the gauge, and want all the values between 5 and 10 to be shown as the closest from these two (i.e. 6 will be shown as 5 and 9 will be shown as 10). 
 
-When using a scale that has its [Interactivity](#Interactivity) feature enabled, the snapping will configure the movement of the indicator along the scale. 
+When using a scale that has its [Interactivity](http://www.telerik.com/help/wpf/radgauge-features-indicators-basics.html#Interactivity) feature enabled, the snapping will configure the movement of the indicator along the scale. 
 
 In order to enable and configure the __Snapping__ you have to use the __SnapType__ property, which can be set to the following values:
 

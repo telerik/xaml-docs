@@ -12,10 +12,7 @@ position: 5
 
 
 
-__Style property__ is part of the style system, used to hold information about a formatting value of the document elements. It
-        can be used to check if the value is local or it is inherited from base style. Information about how the style system works and how values are
-        inherited from base styles can be found in the Style Evaluation and Inheritance section of the [Styles]({%slug radwordsprocessing-concepts-styles%})
-        article.
+__Style property__ is part of the style system, used to hold information about a formatting value of the document elements. It can be used to check if the value is local or it is inherited from base style. Information about how the style system works and how values are inherited from base styles can be found in the Style Evaluation and Inheritance section of the [Styles]({%slug radwordsprocessing-concepts-styles%}) article.
       
 
 * [Style Property Implementation Overview](#style-property-implementation-overview)
@@ -28,11 +25,7 @@ __Style property__ is part of the style system, used to hold information about a
 
 ## Style Property Implementation Overview
 
-Style properties are exposed through
-          [IStyleProperty<T>](
-              http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html
-            )
-          interface, which contains the following properties and methods:
+Style properties are exposed through [IStyleProperty<T>]( http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html ) interface, which contains the following properties and methods:
         
 
 * __LocalValue__: Used to get or set the local value. If it is not set, the value is __null__.
@@ -41,44 +34,33 @@ Style properties are exposed through
 * __HasLocalValue__: Returns value indicating whether the style property has local value.
             
 
-* __GetActualValue()__: Returns the actual value of the property. This value is evaluated on every call by the style system
-              using the evaluation rules described [Styles]({%slug radwordsprocessing-concepts-styles%}).
+* __GetActualValue()__: Returns the actual value of the property. This value is evaluated on every call by the style system using the evaluation rules described [Styles]({%slug radwordsprocessing-concepts-styles%}).
             
 
 * __ClearValue()__: Clears the local value.
             
 
-* __PropertyDefinition__: The [property definition](#style-property-definitions) is exposed through the
-              [IStylePropertyDefinition](
-                  http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html
-                )
-              interface and specifies some details for the style property as:
+* __PropertyDefinition__: The [property definition](#style-property-definitions) is exposed through the [IStylePropertyDefinition]( http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html) interface and specifies some details for the style property as:
             
 
-* __PropertyName__: Returns the name of the style property.
+    * __PropertyName__: Returns the name of the style property.
                 
 
-* __StylePropertyType__: Returns the type of the style property.
+    * __StylePropertyType__: Returns the type of the style property.
                 
 
-* __Validation__: Used to determine if a value is valid for this style property.
+    * __Validation__: Used to determine if a value is valid for this style property.
                 
 
-* __GetDefaultValueAsObject()__: This method returns the default value as object.
+    * __GetDefaultValueAsObject()__: This method returns the default value as object.
                 
 
-Some of the style properties always contain local value and are normally referred to as local style properties. They are used only by the document
-          elements and their values are not respected by styles and style inheritance .
+Some of the style properties always contain local value and are normally referred to as local style properties. They are used only by the document elements and their values are not respected by styles and style inheritance .
         
 
 ## Style Property Definitions
 
-Style property definition is represented from the __StylePropertyDefinition<T>__ class and can be accessed from the style
-          property itself (through its base interface __IStylePropertyDefinition__) or as a static member of
-          [Run]({%slug radwordsprocessing-model-run%}), [Paragraph]({%slug radwordsprocessing-model-paragraph%}),
-          [Table]({%slug radwordsprocessing-model-table%}), [TableRow]({%slug radwordsprocessing-model-tablerow%}) and
-          [TableCell]({%slug radwordsprocessing-model-tablecell%}) document elements. Style property definitions specify the following details of the style
-          property:
+Style property definition is represented from the __StylePropertyDefinition<T>__ class and can be accessed from the style property itself (through its base interface __IStylePropertyDefinition__) or as a static member of [Run]({%slug radwordsprocessing-model-run%}), [Paragraph]({%slug radwordsprocessing-model-paragraph%}), [Table]({%slug radwordsprocessing-model-table%}), [TableRow]({%slug radwordsprocessing-model-tablerow%}) and [TableCell]({%slug radwordsprocessing-model-tablecell%}) document elements. Style property definitions specify the following details of the style property:
         
 
 * __PropertyName__: Specifies the name of the style property.
@@ -87,9 +69,7 @@ Style property definition is represented from the __StylePropertyDefinition<T>__
 * __DefaultValue__: Specifies the default value of the style property.
             
 
-* __StylePropertyType__: Specifies the type of the style property as
-              [StylePropertyType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_stylepropertytype.html)
-              enumeration.
+* __StylePropertyType__: Specifies the type of the style property as [StylePropertyType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_stylepropertytype.html) enumeration.
             
 
 * __Validation__: Used to determine if a value is valid for the style property associated with this style property definition.
@@ -99,9 +79,7 @@ Style property definition is represented from the __StylePropertyDefinition<T>__
 
 ### Style properties in document elements
 
-Document elements expose sets of style properties through the __Properties__ property. For convenience style properties can
-              be also used through CLR shorthand properties exposed directly from the document elements. Shorthand property getter gets the
-              *actual value* of the property, while property setter sets the *local* value of the property.
+Document elements expose sets of style properties through the __Properties__ property. For convenience style properties can be also used through CLR shorthand properties exposed directly from the document elements. Shorthand property getter gets the *actual value* of the property, while property setter sets the *local* value of the property.
             
 
 Here is example for equivalent getting of a value with CLR property and style property:
@@ -110,9 +88,9 @@ Here is example for equivalent getting of a value with CLR property and style pr
 #### __C#__
 
 {{region radwordsprocessing-concepts-style-properties_0}}
-	            bool keepOnOnePageActualValueShorthand = paragraph.KeepOnOnePage;
-	            bool keepOnOnePageActualValue = paragraph.Properties.KeepOnOnePage.GetActualValue().Value;
-	{{endregion}}
+    bool keepOnOnePageActualValueShorthand = paragraph.KeepOnOnePage;
+    bool keepOnOnePageActualValue = paragraph.Properties.KeepOnOnePage.GetActualValue().Value;
+{{endregion}}
 
 
 
@@ -122,17 +100,15 @@ Here is example for equivalent setting of a value with CLR property and style pr
 #### __C#__
 
 {{region radwordsprocessing-concepts-style-properties_1}}
-	            paragraph.KeepOnOnePage = true;
-	            paragraph.Properties.KeepOnOnePage.LocalValue = true;
-	{{endregion}}
+    paragraph.KeepOnOnePage = true;
+    paragraph.Properties.KeepOnOnePage.LocalValue = true;
+{{endregion}}
 
 
 
 ### Style properties in styles
 
-The style properties in a style are accessible through the following property sets: __CharacterProperties__,
-              __ParagraphProperties__, __TableProperties__, __TableRowProperties__ and
-              __TableCellProperties__.
+The style properties in a style are accessible through the following property sets: __CharacterProperties__, __ParagraphProperties__, __TableProperties__, __TableRowProperties__ and __TableCellProperties__.
             
 
 Here is a code snippet illustrating how to get the local value of a style property in style:
@@ -152,15 +128,14 @@ Here is a code snippet illustrating how to get the actual value of style propert
 #### __C#__
 
 {{region radwordsprocessing-concepts-style-properties_3}}
-	            bool keepOnOnePage = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value;
-	{{endregion}}
+    bool keepOnOnePage = style.ParagraphProperties.KeepOnOnePage.GetActualValue().Value;
+{{endregion}}
 
 
 
 ## Style Properties Default Values
 
-The default values of all style properties are available in their [StylePropertyDefinitions](Style_Property_Definitions) and
-          cannot be changed. To set the default values of properties for particular document you can change the default styles for the document.
+The default values of all style properties are available in their [StylePropertyDefinitions](Style_Property_Definitions) and cannot be changed. To set the default values of properties for particular document you can change the default styles for the document.
         
 
 The following code snippet illustrates how to get the default value for a style property:
@@ -169,20 +144,20 @@ The following code snippet illustrates how to get the default value for a style 
 #### __C#__
 
 {{region radwordsprocessing-concepts-style-properties_4}}
-	            bool keepOnOnePageDefaultValue = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value;
-	{{endregion}}
+    bool keepOnOnePageDefaultValue = Paragraph.KeepOnOnePagePropertyDefinition.DefaultValue.Value;
+{{endregion}}
 
 
 
 Following is a list of all available style properties and their default values:
         
-<table><th><tr><td>
+<table><tr><th>
 
-Name</td><td>
+Name</th><th>
 
-Description</td><td>
+Description</th><th>
 
-Default Value</td></tr></th><tr><td>
+Default Value</th></tr><tr><td>
 
 <b>CharacterProperties</b></td><td></td><td></td></tr><tr><td>
 
@@ -396,9 +371,7 @@ A value indicating the additional indentation which shall be applied to the firs
 
 HangingIndent</td><td>
 
-A value which shall be removed from the indentation of the first line of the paragraph,
-                by moving the indentation on the first line back towards the beginning of the direction of text flow.
-              </td><td>
+A value which shall be removed from the indentation of the first line of the paragraph, by moving the indentation on the first line back towards the beginning of the direction of text flow. </td><td>
 
 0</td></tr><tr><td>
 
@@ -666,6 +639,5 @@ PrintLayout</td></tr></table>
 
 # See Also
 
- * [Styles]({%slug radwordsprocessing-concepts-styles%})[IStyleProperty<T> API Reference](
-          http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html
-        )[IStylePropertyDefinition API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html)
+ * [Styles]({%slug radwordsprocessing-concepts-styles%})
+ * [IStyleProperty<T> API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html)[IStylePropertyDefinition API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html)

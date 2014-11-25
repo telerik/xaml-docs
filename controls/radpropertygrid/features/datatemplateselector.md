@@ -17,8 +17,7 @@ position: 3
 The __DataTemplateSelector__ approach enables conditional selection of __DataTemplates__, based on information provided by the respective bound data item. 
          
 
-{% if site.site_name == 'Silverlight' %}[Here](http://www.telerik.com/help/silverlight/gridview-template-selectors-overview.html){% endif %}{% if site.site_name == 'WPF' %}[Here](http://www.telerik.com/help/wpf/gridview-template-selectors-overview.html){% endif %}
-          is an article that provides some additional, more extensive information on __DataTemplateSelectors__.
+{% if site.site_name == 'Silverlight' %}[Here](http://www.telerik.com/help/silverlight/gridview-template-selectors-overview.html){% endif %}{% if site.site_name == 'WPF' %}[Here](http://www.telerik.com/help/wpf/gridview-template-selectors-overview.html){% endif %} is an article that provides some additional, more extensive information on __DataTemplateSelectors__.
         
 
 ## DataTemplateSelectors in RadPropertyGrid
@@ -27,8 +26,7 @@ __RadPropertyGrid__ enables its users to implement conditional editor __DataTemp
 
 #### __C#__
 
-{{region radpropertygrid-datatemplateselector_1}}
-	    
+	{{region radpropertygrid-datatemplateselector_1}}	    
 	    public class Customer
 	    {
 	        public string FirstName { get; set; }
@@ -63,7 +61,7 @@ __RadPropertyGrid__ enables its users to implement conditional editor __DataTemp
 
 #### __VB__
 
-{{region radpropertygrid-datatemplateselector_2}}
+	{{region radpropertygrid-datatemplateselector_2}}
 	    Public Class Customer
 	        Public Property FirstName() As String
 	            Get
@@ -142,7 +140,7 @@ __RadPropertyGrid__ enables its users to implement conditional editor __DataTemp
 
 #### __XAML__
 
-{{region radpropertygrid-datatemplateselector_0}}
+	{{region radpropertygrid-datatemplateselector_0}}
 			<Window x:Class="YourProjectNamespace.MainWindow"
 			        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -175,7 +173,7 @@ __RadPropertyGrid__ enables its users to implement conditional editor __DataTemp
 
 #### __XAML__
 
-{{region radpropertygrid-datatemplateselector_1}}
+	{{region radpropertygrid-datatemplateselector_1}}
 			<UserControl x:Class="YourProjectNamespace.MainPage"
 			             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

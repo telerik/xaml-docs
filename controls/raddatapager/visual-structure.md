@@ -11,22 +11,15 @@ position: 2
 # Visual Structure
 
 
+This section defines the terms and concepts used in the scope of the __RadDataPager__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadDataPager__ control.
 
-## 
-
-This section defines the terms and concepts used in the scope of the __RadDataPager__that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadDataPager__control.
-
-
-
-
-         
-      ![](images/RadDataPager_VisualStructure_01.png)
+ ![](images/RadDataPager_VisualStructure_01.png)
 
 * __First Page Button__ - this button brings the pager on the first page of data.
 
 * __Previous Page Button__ - this button decrements the Pager's current page index and brings it on the previous page of data.
 
-* __Num____eric Page Buttons__- this set of buttons lists the available pages and allows the user to go directly to the desired one. The toggled button marks the current page.
+* __Numeric Page Buttons__ - this set of buttons lists the available pages and allows the user to go directly to the desired one. The toggled button marks the current page.
 
 * __Next Page Button__ - this button increments the Pager's current page index and brings it on the next page of data.
 

@@ -18,7 +18,7 @@ The Custom Gridline allows you to place a vertical or horizontal gridline at a s
 
 >tipYou can place more than one __CustomGridLine__ in your __ChartArea__.
 
->The__XIntercept__and the __YIntercept__ are of type __double__. Therefore, if the respective axis displays __DateTime__ values, you have to pass converted to OLE Automation dates to them. For more information see [DateTime.ToOADate()](http://msdn.microsoft.com/en-us/library/system.datetime.tooadate(VS.95).aspx). 
+>The __XIntercept__ and the __YIntercept__ are of type __double__. Therefore, if the respective axis displays __DateTime__ values, you have to pass converted to OLE Automation dates to them. For more information see [DateTime.ToOADate()](http://msdn.microsoft.com/en-us/library/system.datetime.tooadate(VS.95).aspx). 
 
 In order to customize the appearance of the __CustomGridLine__ you can simply set its __Stroke__ (will change its color) and its __StrokeThickness__ (will change the thickness of the line).
 
@@ -71,13 +71,7 @@ Here is an example:
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(gridline)
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_Features_Annotations_CustomGridLine_01.png)
+![](images/RadChart_Features_Annotations_CustomGridLine_01.png)
 
 Additional customizations can be done via the __ElementStyle__ property. It gets applied to the __Line__ element that visually represents the __CustomGridLine__. Via this style you can set the __StrokeDashArray__ property for example.
 
@@ -114,9 +108,4 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 
 
 >tipThis can be done in code behind too.
-
-
-
-
-         
-      ![](images/RadChart_Features_Annotations_CustomGridLine_02.png)
+![](images/RadChart_Features_Annotations_CustomGridLine_02.png)

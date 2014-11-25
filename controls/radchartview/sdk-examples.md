@@ -167,5 +167,3 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __Track ball like annotations__ - This sdk example demonstrates how to use annotations in order to achieve a TrackBall-Like effect. These annotaions can be synced between two or more charts and you can apply a custom behavior such as key navigation(left/right).{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
-
-# See Also

@@ -26,7 +26,7 @@ __RadRating__ is a flexible UI component that allows users to intuitively rate b
 
 __Key features:__
 
-* __Number of items__ - By setting a value to the __NumberOfItemsToGenerate__property you can easily choose number of items the user can rate from
+* __Number of items__ - By setting a value to the __NumberOfItemsToGenerate__ property you can easily choose number of items the user can rate from
 		  
 
 * __Read only mode__ – You can set the __IsReadOnly__ property to true if you want to have a rating which cannot be modified.

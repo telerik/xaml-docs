@@ -12,29 +12,26 @@ position: 3
 
 
 
-The __Linear__ and the __Radial____Bars__derive from the __BarIndicator__ class. Because of that they provide some common functionality. This topic will focus on the common features between these indicators.
+The __Linear__ and the __Radial__ __Bars__ derive from the __BarIndicator__ class. Because of that they provide some common functionality. This topic will focus on the common features between these indicators.
 
 >tipThe __BarIndicator__ class inherits the __IndicatorBase__ class, which is a base class for all indicators, except the __NumericIndicator__. To learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
 
->For the examples in this article a __LinearBar__indicator will be used, but the examples can be applied to the __RadialBar__ one as well.
+>For the examples in this article a __LinearBar__ indicator will be used, but the examples can be applied to the __RadialBar__ one as well.
 
 It will explain the following:
 
-* [Empty Fill](#Empty_Fill)
+* [Empty Fill](#empty-fill)
 
-* [Indicator Width](#Indicators_Width)
+* [Indicator Width](#indicators-width)
 
-* [Range Color Mode](#Range_Color_Mode)
+* [Range Color Mode](#range-color-mode)
 
 ## Empty Fill
 
-The __Empty____Fill__ feature allows you to specify a color for the empty part of the indicator, 
-        which streches from the selected value to the other end of the scale. To do this simply use the __EmptyFill__ property. 
-        It is used as any other __Brush__ property. Here is an example.
+The __Empty__ __Fill__ feature allows you to specify a color for the empty part of the indicator, which streches from the selected value to the other end of the scale. To do this simply use the __EmptyFill__ property. It is used as any other __Brush__ property. Here is an example.
         
 
->tipAdditionally you can use the __BorderBrush__ and __StrokeThickness__ 
-        properties to display a stroke around the entire bar.
+>tipAdditionally you can use the __BorderBrush__ and __StrokeThickness__ properties to display a stroke around the entire bar.
         
 
 #### __XAML__
@@ -63,11 +60,7 @@ The __Empty____Fill__ feature allows you to specify a color for the empty part o
 
 Here is a snapshot of the result.
 
-
-
-
-         
-      ![](images/RadGauge_Features_BarIndicators_Basics_01.png)
+![](images/RadGauge_Features_BarIndicators_Basics_01.png)
 
 ## Indicator's Width
 
@@ -96,10 +89,7 @@ Here is an example.
 
 Here is a snapshot of the result:
 
-
-
-         
-      ![](images/RadGauge_Features_BarIndicators_Basics_02.png)
+![](images/RadGauge_Features_BarIndicators_Basics_02.png)
 
 ## Range Color Mode
 
@@ -123,8 +113,7 @@ As the __Bar Indicators__ cover the range from the start of the scale to the sel
 
 * __VerticalGradient__- the bar is colored in the color provided by the current range. When it enters a new range, its color becomes a vertical gradient, consisting of the colors of the new and the previous ranges. Entering further in the new range, the bar becomes smoothly colored in the color provided by the current range.
 
->When using Gradient RangeColorMode-s, in order for the gradients between ranges to be observable,
-        you have specify a value for the __RangeColorSmoothing__ property.
+>When using Gradient RangeColorMode-s, in order for the gradients between ranges to be observable, you have specify a value for the __RangeColorSmoothing__ property.
 		
 
 Here is an example.

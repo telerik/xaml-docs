@@ -10,27 +10,20 @@ position: 30
 
 # Implement Search, Filter and Sort
 
-
-
 This article will demonstrate how you can implement __searching__, __filtering__ and __sorting__ on __RadTreeView__ data. The final result will look like this:
-	  ![radtreeview-search-filter-sort-overview](images/radtreeview-search-filter-sort-overview.png)
+![radtreeview-search-filter-sort-overview](images/radtreeview-search-filter-sort-overview.png)
 
->The purpose of this article is to demonstrate how you can implement additional logic to the RadTreeView control. This is why we will skip the definition of our models and view-model. For more detailed information you can scroll down to the end of the article and find a link to a downloadable, ready to run project.
-		
+>The purpose of this article is to demonstrate how you can implement additional logic to the RadTreeView control. This is why we will skip the definition of our models and view-model. For more detailed information you can scroll down to the end of the article and find a link to a downloadable, ready to run project.		
 
-The __RadTreeView__ is a data-driven control, designed to display large amounts of hierarchical data and it does not provide searching, filtering and sorting functionality out of the box. Hence, such operations should be implemented on the data it represents. Below you can find sample implementation of:
-	  
+The __RadTreeView__ is a data-driven control, designed to display large amounts of hierarchical data and it does not provide searching, filtering and sorting functionality out of the box. Hence, such operations should be implemented on the data it represents. Below you can find sample implementation of:	  
 
 * [Searching](#searching)
-
 * [Filtering](#filtering)
-
 * [Sorting](#sorting)
 
 ## Searching
 
 The searching functionality is triggered when the *Search* button is pressed. Basically, we first get the entered text in the first __TextBox__ and then we search if the __Name__ of each __Category__ contains it. If nothing is found - we search in that Category's __Products__. When an existing item is found it is selected and brought into the view port of the RadTreeView.
-		
 
 For more details examine the following code:
 
@@ -66,14 +59,12 @@ For more details examine the following code:
 				}
 				isFiltered = false;
 			}  
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-howto-implement-search-filter-sort_1}}
-		'the RadTreeView.ItemsSource collection is traversed to find an item by a provided name 
+		'the RadTreeView.ItemsSource collection is traversed to find an item by a provided name'
 		Private Sub Search(sender As Object, e As RoutedEventArgs)
 			If Not String.IsNullOrEmpty(searchTextBox.Text) Then
 				searchText = searchTextBox.Text.ToLower()
@@ -96,17 +87,13 @@ For more details examine the following code:
 			End If
 			isFiltered = False
 		End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Filtering
 
 The filtering functionality is triggered immediately when the text of the second __TextBox__ is changed. The first step, again, is to get the text that is entered into the *filterTextBox*. After that, we call a helper method (which will also be used in the sorting functionality) that accepts as arguments a collection to sort and a filter string and returns a new filtered collection. With the help of that method we change the __ItemsSource__ of the RadTreeView control so that it visualizes only the items that contain the filtering criteria.
-		
 
 Below you can examine the implementation of these two methods:
-		
 
 #### __C#__
 
@@ -136,14 +123,12 @@ Below you can examine the implementation of these two methods:
 				}
 				return new ObservableCollection<Category>(collection.Where(cat => (cat.Name.ToLower().Contains(filterText) && cat.Products.Count == 0) || cat.Products.Count > 0));
 			}
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-howto-implement-search-filter-sort_3}}
-		'the SampleDataSource collection is dynamically filtered to display only those items matching the filter criteria   
+		'the SampleDataSource collection is dynamically filtered to display only those items matching the filter criteria'
 		Private Sub filterTextBox_TextChanged(sender As Object, e As TextChangedEventArgs)
 			If Not [String].IsNullOrEmpty(filterTextBox.Text) Then
 				filterText = If(filterTextBox.Text = " Enter product name", "", filterTextBox.Text)
@@ -155,21 +140,18 @@ Below you can examine the implementation of these two methods:
 			isFiltered = True
 		End Sub
 	
-		'this method filters a business collection   
+		'this method filters a business collection'
 		Private Function FilterCollection(collection As ObservableCollection(Of Category), filterText As String) As ObservableCollection(Of Category)
 			For Each category As Category In collection
 				category.Products = New ObservableCollection(Of Product)(category.Products.Where(Function(p) p.Name.ToLower().Contains(filterText)))
 			Next
 			Return New ObservableCollection(Of Category)(collection.Where(Function(cat) (cat.Name.ToLower().Contains(filterText) AndAlso cat.Products.Count = 0) OrElse cat.Products.Count > 0))
 		End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Sorting
 
 The sort functionality is triggered when the selection of the __ComboBox__ is changed. When the __SelectionChanged__ event occurs we check the __SelectedItem.__ and based on its __Value__, we sort the __RadTreeView.__ collection.
-		
 
 #### __C#__
 
@@ -201,14 +183,12 @@ The sort functionality is triggered when the selection of the __ComboBox__ is ch
 				}
 				isFiltered = false;
 			}     
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB__
+#### __VB.NET__
 
 {{region radtreeview-howto-implement-search-filter-sort_5}}
-		'When the Sorting ComboBox selection is changed, the SampleDataSource collection is sorted accordingly        
+		'When the Sorting ComboBox selection is changed, the SampleDataSource collection is sorted accordingly'     
 		Private Sub sortingComboBox_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
 			If TryCast(sortingComboBox.SelectedItem, RadComboBoxItem).Content.Equals("Category name") Then
 				If filterText IsNot Nothing Then
@@ -224,18 +204,11 @@ The sort functionality is triggered when the selection of the __ComboBox__ is ch
 				End If
 			End If
 			isFiltered = False
-		End Sub
-	
-	{{endregion}}
+		End Sub	
+{{endregion}}
 
-
-
->tipYou can download a runnable project demonstrating this approach from our online SDK repository. Please open
-			[this link](https://github.com/telerik/xaml-sdk) and navigate to __TreeView / FilterSearchSort__.
-		  
+>tipYou can download a runnable project demonstrating this approach from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to __TreeView / FilterSearchSort__.
 
 # See Also
-
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
-
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})

@@ -16,7 +16,7 @@ position: 3
 
 The following article will demonstrate how to create a simple Horizontal Bullet graph programmatically but the approach is the same for the Vertical Bullet graph too.
 
-__1.__ The first thing you have to do is to create a new instance of the __RadHorizontalBulletGraph__class in the code and add it to a parent control:
+__1.__ The first thing you have to do is to create a new instance of the __RadHorizontalBulletGraph__ class in the code and add it to a parent control:
 
 #### __C#__
 
@@ -42,25 +42,25 @@ __2.__ Configure the BulletGraph by setting sample values for it's [properties](
 
 {{region radbulletgraph_creating_a_bulletgraph_programmatically_2}}
 	horizontalBulletGraph.AutoRange = false;
-	            horizontalBulletGraph.Width = 300;
-	            horizontalBulletGraph.Height = 60;
-	            horizontalBulletGraph.Minimum = 0;
-	            horizontalBulletGraph.Maximum = 100;
-	            horizontalBulletGraph.FeaturedMeasure = 60d;
-	            horizontalBulletGraph.ComparativeMeasure = 65d;
-	            horizontalBulletGraph.ProjectedValue = 75d;
-	            QualitativeRange range = new QualitativeRange();
-	            range.Value = 50;
-	            range.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#A8A8A8");
-	            horizontalBulletGraph.QualitativeRanges.Add(range);
-	            QualitativeRange range1 = new QualitativeRange();
-	            range1.Value = 70;
-	            range1.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#C6C8C8");
-	            horizontalBulletGraph.QualitativeRanges.Add(range1);
-	            QualitativeRange range2 = new QualitativeRange();
-	            range2.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#E8E8E8");
-	            horizontalBulletGraph.QualitativeRanges.Add(range2);
-	{{endregion}}
+	horizontalBulletGraph.Width = 300;
+	horizontalBulletGraph.Height = 60;
+	horizontalBulletGraph.Minimum = 0;
+	horizontalBulletGraph.Maximum = 100;
+	horizontalBulletGraph.FeaturedMeasure = 60d;
+	horizontalBulletGraph.ComparativeMeasure = 65d;
+	horizontalBulletGraph.ProjectedValue = 75d;
+	QualitativeRange range = new QualitativeRange();
+	range.Value = 50;
+	range.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#A8A8A8");
+	horizontalBulletGraph.QualitativeRanges.Add(range);
+	QualitativeRange range1 = new QualitativeRange();
+	range1.Value = 70;
+	range1.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#C6C8C8");
+	horizontalBulletGraph.QualitativeRanges.Add(range1);
+	QualitativeRange range2 = new QualitativeRange();
+	range2.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#E8E8E8");
+	horizontalBulletGraph.QualitativeRanges.Add(range2);
+{{endregion}}
 
 
 
@@ -86,7 +86,7 @@ __2.__ Configure the BulletGraph by setting sample values for it's [properties](
 	Dim range2 As New QualitativeRange()
 	range2.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#E8E8E8")
 	horizontalBulletGraph.QualitativeRanges.Add(range2)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -100,71 +100,65 @@ The full source code for creating Horizontal BulletGraph in code-behind:
 
 {{region radbulletgraph_creating_a_bulletgraph_programmatically_4}}
 	public MainPage()
-	        {
-	            InitializeComponent();
-	            RadHorizontalBulletGraph horizontalBulletGraph = new RadHorizontalBulletGraph();
-	
-	            horizontalBulletGraph.AutoRange = false;
-	            horizontalBulletGraph.Width = 300;
-	            horizontalBulletGraph.Height = 60;
-	            horizontalBulletGraph.Minimum = 0;
-	            horizontalBulletGraph.Maximum = 100;
-	            horizontalBulletGraph.FeaturedMeasure = 60d;
-	            horizontalBulletGraph.ComparativeMeasure = 65d;
-	            horizontalBulletGraph.ProjectedValue = 75d;
-	            QualitativeRange range = new QualitativeRange();
-	            range.Value = 50;
-	            range.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#A8A8A8");
-	            horizontalBulletGraph.QualitativeRanges.Add(range);
-	            QualitativeRange range1 = new QualitativeRange();
-	            range1.Value = 70;
-	            range1.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#C6C8C8");
-	            horizontalBulletGraph.QualitativeRanges.Add(range1);
-	            QualitativeRange range2 = new QualitativeRange();
-	            range2.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#E8E8E8");
-	            horizontalBulletGraph.QualitativeRanges.Add(range2);
-	            this.LayoutRoot.Children.Add(horizontalBulletGraph);
-	
-	        }
-	
-	        #region protected static SolidColorBrush CombineAlphaAndColorInSolidColorBrush(double opacity, string color)
-	        /// <summary>
-	        /// adds the alpha (opacity) value to the front of the color string
-	        /// </summary>
-	        /// <param name="opacity"></param>
-	        /// <param name="color"></param>
-	        /// <returns></returns>
-	        protected static SolidColorBrush CombineAlphaAndColorInSolidColorBrush(double opacity, string color)
-	        {
-	            SolidColorBrush theAnswer = new SolidColorBrush();
-	            // deal with opacity
-	
-	            if (opacity > 1.0)
-	                opacity = 1.0;
-	
-	            if (opacity < 0.0)
-	                opacity = 0.0;
-	
-	            // get the hex value of the alpha chanel (opacity):
-	            byte a = (byte)(Convert.ToInt32(255 * opacity));
-	             // deal with the color
-	
-	            try
-	            {
-	                byte r = (byte)(Convert.ToUInt32(color.Substring(1, 2), 16));
-	                byte g = (byte)(Convert.ToUInt32(color.Substring(3, 2), 16));
-	                byte b = (byte)(Convert.ToUInt32(color.Substring(5, 2), 16));
-	
-	                theAnswer.Color = Color.FromArgb(a, r, g, b);
-	            }
-	            catch
-	            {
-	                theAnswer.Color = Color.FromArgb(255, 255, 0, 0);
-	            }
-	
-	            return theAnswer;
-	        }
-	{{endregion}}
+	{
+		InitializeComponent();
+		RadHorizontalBulletGraph horizontalBulletGraph = new RadHorizontalBulletGraph();
+
+		horizontalBulletGraph.AutoRange = false;
+		horizontalBulletGraph.Width = 300;
+		horizontalBulletGraph.Height = 60;
+		horizontalBulletGraph.Minimum = 0;
+		horizontalBulletGraph.Maximum = 100;
+		horizontalBulletGraph.FeaturedMeasure = 60d;
+		horizontalBulletGraph.ComparativeMeasure = 65d;
+		horizontalBulletGraph.ProjectedValue = 75d;
+		QualitativeRange range = new QualitativeRange();
+		range.Value = 50;
+		range.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#A8A8A8");
+		horizontalBulletGraph.QualitativeRanges.Add(range);
+		QualitativeRange range1 = new QualitativeRange();
+		range1.Value = 70;
+		range1.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#C6C8C8");
+		horizontalBulletGraph.QualitativeRanges.Add(range1);
+		QualitativeRange range2 = new QualitativeRange();
+		range2.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#E8E8E8");
+		horizontalBulletGraph.QualitativeRanges.Add(range2);
+		this.LayoutRoot.Children.Add(horizontalBulletGraph);
+
+	}
+
+	#region protected static SolidColorBrush CombineAlphaAndColorInSolidColorBrush(double opacity, string color)
+	protected static SolidColorBrush CombineAlphaAndColorInSolidColorBrush(double opacity, string color)
+	{
+		SolidColorBrush theAnswer = new SolidColorBrush();
+		// deal with opacity
+
+		if (opacity > 1.0)
+			opacity = 1.0;
+
+		if (opacity < 0.0)
+			opacity = 0.0;
+
+		// get the hex value of the alpha chanel (opacity):
+		byte a = (byte)(Convert.ToInt32(255 * opacity));
+		 // deal with the color
+
+		try
+		{
+			byte r = (byte)(Convert.ToUInt32(color.Substring(1, 2), 16));
+			byte g = (byte)(Convert.ToUInt32(color.Substring(3, 2), 16));
+			byte b = (byte)(Convert.ToUInt32(color.Substring(5, 2), 16));
+
+			theAnswer.Color = Color.FromArgb(a, r, g, b);
+		}
+		catch
+		{
+			theAnswer.Color = Color.FromArgb(255, 255, 0, 0);
+		}
+
+		return theAnswer;
+	}
+{{endregion}}
 
 
 
@@ -196,24 +190,18 @@ The full source code for creating Horizontal BulletGraph in code-behind:
 	Me.LayoutRoot.Children.Add(horizontalBulletGraph)
 	End Sub
 	#Region "protected static SolidColorBrush CombineAlphaAndColorInSolidColorBrush(double opacity, string color)"
-	''' <summary>
-	''' adds the alpha (opacity) value to the front of the color string
-	''' </summary>
-	''' <param name="opacity"></param>
-	''' <param name="color"></param>
-	''' <returns></returns>
 	Protected Shared Function CombineAlphaAndColorInSolidColorBrush(ByVal opacity As Double, ByVal color As String) As SolidColorBrush
 	Dim theAnswer As New SolidColorBrush()
-	' deal with opacity
+	' deal with opacity'
 	If opacity > 1.0 Then
 	opacity = 1.0
 	End If
 	If opacity < 0.0 Then
 	opacity = 0.0
 	End If
-	' get the hex value of the alpha chanel (opacity):
+	' get the hex value of the alpha chanel (opacity):'
 	Dim a As Byte = CByte(Convert.ToInt32(255 * opacity))
-	' deal with the color
+	' deal with the color'
 	Try
 	Dim r As Byte = CByte(Convert.ToUInt32(color.Substring(1, 2), 16))
 	Dim g As Byte = CByte(Convert.ToUInt32(color.Substring(3, 2), 16))
@@ -225,14 +213,10 @@ The full source code for creating Horizontal BulletGraph in code-behind:
 	Return theAnswer
 	End Function
 	#End Region
-	{{endregion}}
+{{endregion}}
 
 
 
-The result:
+The result: 
 
-
-
-
-         
-      ![](images/radbulletgraph_databinding.PNG)
+![](images/radbulletgraph_databinding.PNG)

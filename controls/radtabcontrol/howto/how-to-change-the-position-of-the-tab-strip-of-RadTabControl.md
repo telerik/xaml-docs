@@ -14,9 +14,8 @@ position: 6
 
 ## 
 
-The [tab strip placement]({%slug radtabcontrol-visual-structure%}) can be controlled via the 
-        property __TabStripPlacement__. It allows you to define the exact position where the tab strip should appear 
-        using the __Telerik.Windows.Controls.Dock__ enumeration. The four possible choices are:![](images/RadTabControl_Figure_00660.png)
+The [tab strip placement]({%slug radtabcontrol-visual-structure%}) can be controlled via the property __TabStripPlacement__. It allows you to define the exact position where the tab strip should appear using the __Telerik.Windows.Controls.Dock__ enumeration. The four possible choices are:
+![](images/RadTabControl_Figure_00660.png)
 
 #### __XAML__
 

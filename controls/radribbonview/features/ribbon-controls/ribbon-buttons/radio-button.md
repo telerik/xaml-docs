@@ -18,8 +18,7 @@ The __RadRibbonRadioButton__ represents an extension of the __RadRadioButton__. 
 >Note that ones the button has been checked, it stays in the checked state unless another radio button in the same __RadRibbonGroup__ is clicked. If the button is used alone, it can be unchecked after it has been selected once.
 				
 
->tip
-				To learn more about the __RadRibbonRadioButton__control read its documentation.
+>tipTo learn more about the __RadRibbonRadioButton__ control read its documentation.
 			
 
 Here is a sample definition of a __RadRibbonRadioButton__:
@@ -38,14 +37,10 @@ Here is a sample definition of a __RadRibbonRadioButton__:
 	{{endregion}}
 
 
-
->tip
-				As all buttons in the __RadRibbonView__'s set slightly expose the same functionality, take a look at the
-			 [Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#Common_Functionality) topic.
 			
 
 This button has its initial size set to __Large__ and its text label set to __"Equation"__. As the __IsAutoSize__ property is set to __True__, the button will change its size depending on the __RadRibbonGroup's__ size. The button will also never collapse to its __Medium__ size and will collapse to its __Small__ size when the __RadRibbonGroup__ collapses to __Medium__.
-			![](images/RibbonView_Buttons_RadioButton.png)
+![](images/RibbonView_Buttons_RadioButton.png)
 
 Here is an example of a __RadRibbonGroup__ that contains two __RadRibbonRadioButtons__.
 			
@@ -111,20 +106,14 @@ Besides the __Click__ event, the __RadRibbonRadioButton__ control exposes two ad
 
 {{region radribbonview-radio-button_4}}
 	Private Sub RadRibbonToggleButton_Checked(sender As Object, e As RoutedEventArgs)
-	
 	End Sub
 	
 	Private Sub RadRibbonToggleButton_Unchecked(sender As Object, e As RoutedEventArgs)
-	
 	End Sub
 	{{endregion}}
 
 
 
->tip
-					To learn how to handle ribbon bar button clicks take a look at the
-					section from the [Buttons Overview](52A27133-EF8C-41E8-9D59-4AE2FA7AEC47#HandlingButtonClicks) topic.
-				
 
 # See Also
 

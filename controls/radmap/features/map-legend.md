@@ -14,9 +14,9 @@ position: 16
 
 The __RadMap__ control introduces the __MapLegend__ object. It allows you to display a legend for a particular __Information Layer__ inside the __RadMap__ control. This topic will explain you the following:
 
-* [Using the MapLegend object](#Using_the_MapLegend_object)
+* [Using the MapLegend object](#using-the-maplegend-object)
 
-* [Configuring the Map Legend](#Configuring_the_Map_Legend)
+* [Configuring the Map Legend](#configuring-the-map-legend)
 
 ## Using the MapLegend object
 
@@ -117,13 +117,9 @@ At this point the __MapLegend__ is not connected to the __RadMap__ and the __Rad
 
 Here is a snapshot of the result.
 
->tipTo learn how to configure the appearance of the __MapLegend__ and its items read the [next](#Configuring_the_Map_Legend) section.
+>tipTo learn how to configure the appearance of the __MapLegend__ and its items read the [next](#configuring-the-map-legend) section.
 
-
-
-
-         
-      ![](images/RadMap_Features_MapLegend_01.png)
+![](images/RadMap_Features_MapLegend_01.png)
 
 ## Configuring the Map Legend
 
@@ -181,11 +177,7 @@ Here is an example of a __MapLegend__ configured via these properties.
 
 Here is a snapshot of the result. 
 
-
-
-
-         
-      ![](images/RadMap_Features_MapLegend_02.png)
+![](images/RadMap_Features_MapLegend_02.png)
 
 # See Also
 

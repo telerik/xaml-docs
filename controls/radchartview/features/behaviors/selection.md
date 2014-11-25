@@ -58,9 +58,7 @@ You may read how to create a databound Series in [Create Data-Bound Chart]({%slu
 	    </telerik:RadCartesianChart.VerticalAxis>
 	
 	</telerik:RadCartesianChart>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -102,42 +100,38 @@ You may read how to create a databound Series in [Create Data-Bound Chart]({%slu
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radchart-features-selection_2}}
 	public MainWindow()
-		   Public Sub New()
-				InitializeComponent()
-				Dim series = TryCast(RadChart1.Series(0), ScatterPointSeries)
-				series.XValueBinding = New PropertyNameDataPointBinding("XValue")
-				series.YValueBinding = New PropertyNameDataPointBinding("YValue")
-				series.ItemsSource = Me.GetData()
-		   End Sub
-	
-			Private Function GetData() As List(Of ChartData)
-				Dim rand As New Random()
-				Dim data As New List(Of ChartData)()
-	
-				For i As Integer = 1 To 29
-					data.Add(New ChartData() With {.XValue = i, .YValue = rand.Next(10, 100)})
-				Next i
-	
-				Return data
-			End Function
-		}
-	
-		Public Class ChartData
-			Public Property XValue() As Double
-	
-			Public Property YValue() As Double
-		End Class
-	{{endregion}}
+	   Public Sub New()
+			InitializeComponent()
+			Dim series = TryCast(RadChart1.Series(0), ScatterPointSeries)
+			series.XValueBinding = New PropertyNameDataPointBinding("XValue")
+			series.YValueBinding = New PropertyNameDataPointBinding("YValue")
+			series.ItemsSource = Me.GetData()
+	   End Sub
 
+		Private Function GetData() As List(Of ChartData)
+			Dim rand As New Random()
+			Dim data As New List(Of ChartData)()
 
+			For i As Integer = 1 To 29
+				data.Add(New ChartData() With {.XValue = i, .YValue = rand.Next(10, 100)})
+			Next i
+
+			Return data
+		End Function
+	}
+
+	Public Class ChartData
+		Public Property XValue() As Double
+
+		Public Property YValue() As Double
+	End Class
+{{endregion}}
 
 To be able to change the selected element(s) appearance we'll use Selection Palette:
 
@@ -151,15 +145,12 @@ To be able to change the selected element(s) appearance we'll use Selection Pale
 	        </telerik:ChartPalette.GlobalEntries>
 	    </telerik:ChartPalette>
 	</telerik:RadCartesianChart.SelectionPalette>
-	{{endregion}}
+{{endregion}}
 
+A sample result can be seen below:
+![Rad Chart View-chart selection](images/RadChartView-chart_selection.PNG)
 
-
-A sample result can be seen below:![Rad Chart View-chart selection](images/RadChartView-chart_selection.PNG)
-
-Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where
-          we can easily determine the datapoint clicked, the series it belongs to and was it selected or de-selected:
-        
+Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where we can easily determine the datapoint clicked, the series it belongs to and was it selected or de-selected:        
 
 #### __C#__
 
@@ -188,42 +179,37 @@ Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where
 	        //Your code here...
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radchart-features-selection_4}}
 	Private Sub RadChart1_SelectionChanged(sender As Object, e As ChartSelectionChangedEventArgs)
-	    'Handle selection of the current point
+	    'Handle selection of the current point '
 	    If e.AddedPoints.Count > 0 Then
-	        ' Get the data point.
+	        ' Get the data point. '
 	        Dim addedPoint = e.AddedPoints(0)
-	        ' Get the series.
+	        ' Get the series. '
 	        Dim series = TryCast(addedPoint.Presenter, ScatterPointSeries)
 	
-	        'Your code here...
+	        'Your code here... '
 			
 	    End If
 	
-	    'Handle de-selection of the current point
+	    'Handle de-selection of the current point '
 	    If e.RemovedPoints.Count > 0 Then
-	        ' Get the data point.
+	        ' Get the data point. '
 	        Dim removedPoint = e.RemovedPoints(0)
-	        ' Get the series.
+	        ' Get the series. '
 	
-	        'Your code here...
+	        'Your code here... '
 			
 	        Dim series = TryCast(removedPoint.Presenter, LineSeries)
 	    End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
->For Line/Area/Spline/SplineArea series selection refers to selecting the pointmarks and is therefore triggered when clicking any of the corresponding pointmarks.
-            You will need to define a PointMarkTemplate so the item can be selected. For example:
+>For Line/Area/Spline/SplineArea series selection refers to selecting the pointmarks and is therefore triggered when clicking any of the corresponding pointmarks. You will need to define a PointMarkTemplate so the item can be selected. For example:
           
 
 #### __XAML__
@@ -236,13 +222,9 @@ Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where
 	        </DataTemplate>
 	    </telerik:LineSeries.PointTemplate>
 	</telerik:LineSeries>
-	{{endregion}}
+{{endregion}}
 
-
-
-In order distinguish the selected point from the not-selected one (for example to change the Ellipse color) in the SelectionChanged event you 
-          will have to get the series's ContentPresenter:
-        
+In order distinguish the selected point from the not-selected one (for example to change the Ellipse color) in the SelectionChanged event you will have to get the series's ContentPresenter:        
 
 #### __C#__
 
@@ -281,37 +263,33 @@ In order distinguish the selected point from the not-selected one (for example t
 	        ellipseElement.Fill = new SolidColorBrush(Colors.Yellow);
 	    }    
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radchart-features-selection_6}}
 	Private Sub RadChart1_SelectionChanged(sender As Object, e As ChartSelectionChangedEventArgs)   
-	    'Handle selection of the current point
+	    'Handle selection of the current point '
 	    If e.AddedPoints.Count > 0 Then
 	        Dim addedPoint = e.AddedPoints(0)
 	        Dim series = TryCast(addedPoint.Presenter, LineSeries)
 	        Dim pointPresenter = series.ChildrenOfType(Of ContentPresenter)().Where(Function(cp) cp.Tag = addedPoint).FirstOrDefault()
 	        Dim ellipseElement = pointPresenter.ChildrenOfType(Of Ellipse)().FirstOrDefault()
 	
-	        'Do whatever you want with it :)
+	        'Do whatever you want with it :) '
 	        ellipseElement.Fill = New SolidColorBrush(Colors.Red)
 	    End If
 		
-		'Handle de-selection of the current point
+		'Handle de-selection of the current point '
 	    If e.RemovedPoints.Count > 0 Then
 	        Dim removedPoint = e.RemovedPoints(0)
 	        Dim series = TryCast(removedPoint.Presenter, LineSeries)
 	        Dim pointPresenter = series.ChildrenOfType(Of ContentPresenter)().Where(Function(cp) cp.Tag = removedPoint).FirstOrDefault()
 	        Dim ellipseElement = pointPresenter.ChildrenOfType(Of Ellipse)().FirstOrDefault()
 	
-	        'Do whatever you want with it :)
+	        'Do whatever you want with it :) '
 	        ellipseElement.Fill = New SolidColorBrush(Colors.Yellow)
 	    End If
 	End Sub
 	
-	{{endregion}}
-
-
+{{endregion}}

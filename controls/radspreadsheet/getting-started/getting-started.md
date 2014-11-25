@@ -25,8 +25,7 @@ It contains the following sections:
 
 ## Assembly References
 
-The assemblies that contain the implementation of __RadSpreadsheet__
-          and must be referenced in order to use the control are:
+The assemblies that contain the implementation of __RadSpreadsheet__ and must be referenced in order to use the control are:
         
 
 * Telerik.Windows.Controls.dll
@@ -101,13 +100,8 @@ Then, all that is left is to add the __Spreadsheet__ component to the page:
 
 
 
-__RadSpreadsheet__ is easy to integrate with all kinds of UI thanks to the commanding mechanism that it employs.
-          If you would like to use the control with a [RadRibbonView]({%slug radribbonview-overview%}), which shows the full potential of the control,
-          you can refer to the SDK repository.
+__RadSpreadsheet__ is easy to integrate with all kinds of UI thanks to the commanding mechanism that it employs. If you would like to use the control with a [RadRibbonView]({%slug radribbonview-overview%}), which shows the full potential of the control, you can refer to the SDK repository.
         
 
->tipYou can download a runnable project of the previous example from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / FirstLook__.
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / FirstLook__.
           
-
-# See Also

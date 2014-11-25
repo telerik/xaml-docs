@@ -10,31 +10,19 @@ position: 7
 
 # DateTimeGroupDescription
 
-
-
 In this article we will show you how to use DateTimeGroupDescription with your DateTime and DateTimeOffset data.
 
 ## DateTimeGroupDescription
 
-When using LocalDataSourceProvider you can choose between three types of group description - *PropertyGroupDescription, DoubleGroupDescription* and *DateTimeGroupDescription*
-          (or implement your own group description, which inherits PropertyGroupDescriptionBase). 
-        
+When using LocalDataSourceProvider you can choose between three types of group description - *PropertyGroupDescription, DoubleGroupDescription* and *DateTimeGroupDescription* (or implement your own group description, which inherits PropertyGroupDescriptionBase).        
 
-__DateTimeGroupDescription__ is used when you want to group your data by property of type *DateTime* or *DateTimeOffset*.
-          __DateTimeGroupDescription__ has the following properties:
-      
+__DateTimeGroupDescription__ is used when you want to group your data by property of type *DateTime* or *DateTimeOffset*. __DateTimeGroupDescription__ has the following properties:      
 
-* __PropertyName__ - defines the name of the property by which the data will be grouped. It is mandatory to set a value.
-            
+* __PropertyName__ - defines the name of the property by which the data will be grouped. It is mandatory to set a value.            
 
-* __Step__ - defines the grouping interval. Default value is Year, but you can change it to one of the following: Quarter, Month, Week, Day, Hour, Minute, Second.
-              If you have the following dates: 01-01-2013 and 20-02-2013 and you set Step to Year, the two values will be in one group - 2013. But if you change the step to Month, the values will be in two
-              different groups - January and February.
-            
+* __Step__ - defines the grouping interval. Default value is Year, but you can change it to one of the following: Quarter, Month, Week, Day, Hour, Minute, Second. If you have the following dates: 01-01-2013 and 20-02-2013 and you set Step to Year, the two values will be in one group - 2013. But if you change the step to Month, the values will be in two different groups - January and February.            
 
-When you have a property of type DateTime (DateTimeOffset), you can create several DateTimeGroupDescriptions with different steps. You may also create a PropertyGroupDescription - this way the DateTime will be treated as
-          a string and grouped as such. All of them can be used simultaneously. You can add the description in RowGroupDescriptions or ColumnGroupDescriptions collections of LocalDataSourceProvider.
-        
+When you have a property of type DateTime (DateTimeOffset), you can create several DateTimeGroupDescriptions with different steps. You may also create a PropertyGroupDescription - this way the DateTime will be treated as a string and grouped as such. All of them can be used simultaneously. You can add the description in RowGroupDescriptions or ColumnGroupDescriptions collections of LocalDataSourceProvider.        
 
 #### __XAML__
 
@@ -44,9 +32,7 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
 	    <pivot:PropertyGroupDescription PropertyName="Date"/>
 	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -64,9 +50,7 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription1);
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2);
 	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -84,27 +68,21 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription1)
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2)
 	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription)
-	{{endregion}}
+{{endregion}}
 
 
 
-__RadPivotFieldList__ automatically detects properties of type DateTime (DateTimeOffset) and creates a special folder in the FieldTree for each of the properties. The name of the folder is the name of the property.
-          By default inside the folder you will find out the following structure:
-        ![Rad Pivot Grid Features Date Time Group 01](images/RadPivotGrid_Features_DateTimeGroup_01.png)
+__RadPivotFieldList__ automatically detects properties of type DateTime (DateTimeOffset) and creates a special folder in the FieldTree for each of the properties. The name of the folder is the name of the property. By default inside the folder you will find out the following structure:
 
-As you can see, the folder gives you the ability to select different steps for your DateTimeGroupDescription at runtime and use them simultaneously. The names of the items are a combination of the property name and a step.
-          Only the last item in the folder has different name - it conatins only the property name. When you drag it, you will add the data as PropertyGroupDescription.
-        
+![Rad Pivot Grid Features Date Time Group 01](images/RadPivotGrid_Features_DateTimeGroup_01.png)
+
+As you can see, the folder gives you the ability to select different steps for your DateTimeGroupDescription at runtime and use them simultaneously. The names of the items are a combination of the property name and a step. Only the last item in the folder has different name - it conatins only the property name. When you drag it, you will add the data as PropertyGroupDescription.        
 
 ## Modify FieldTree of RadPivotFieldList
 
-By default __RadPivotFieldList__ will show the following steps in its FieldTree for each DateTimeGroupDescription: Year, Month, Quarter, Week, Day (you will also see additional item, which will create PropertyGroupDescription instead of DateTimeGroupDescription).
-          But you can set three more steps - Hour, Minute, Second. So how to show them in __RadPivotFieldList__?
-        
+By default __RadPivotFieldList__ will show the following steps in its FieldTree for each DateTimeGroupDescription: Year, Month, Quarter, Week, Day (you will also see additional item, which will create PropertyGroupDescription instead of DateTimeGroupDescription). But you can set three more steps - Hour, Minute, Second. So how to show them in __RadPivotFieldList__?        
 
-The solution of this problem is to use AddingContainerNode event of LocalDataSourceFieldDescriptionsProvider. In this event you will receive all items from the FieldTree and you will be able to modify which of them to be visible.
-          In order to use this event you have to create a new instance of LocalDataSourceFieldDescriptionsProvider and set LocalDataSourceProvider's FieldDescriptionProvider to this instance. You can do this in XAML or in code behind:
-        
+The solution of this problem is to use AddingContainerNode event of LocalDataSourceFieldDescriptionsProvider. In this event you will receive all items from the FieldTree and you will be able to modify which of them to be visible. In order to use this event you have to create a new instance of LocalDataSourceFieldDescriptionsProvider and set LocalDataSourceProvider's FieldDescriptionProvider to this instance. You can do this in XAML or in code behind:        
 
 #### __XAML__
 
@@ -114,9 +92,7 @@ The solution of this problem is to use AddingContainerNode event of LocalDataSou
 	        <pivot:LocalDataSourceFieldDescriptionsProvider AddingContainerNode="LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded_1"/>
 	    </pivot:LocalDataSourceProvider.FieldDescriptionsProvider>
 	</pivot:LocalDataSourceProvider>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -126,9 +102,7 @@ The solution of this problem is to use AddingContainerNode event of LocalDataSou
 	var descriptionProvider = new LocalDataSourceFieldDescriptionsProvider();
 	descriptionProvider.AddingContainerNode += LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded;
 	dataProvider.FieldDescriptionsProvider = descriptionProvider;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -138,16 +112,11 @@ The solution of this problem is to use AddingContainerNode event of LocalDataSou
 	Dim descriptionProvider = New LocalDataSourceFieldDescriptionsProvider()
 	descriptionProvider.AddingContainerNode += LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded
 	dataProvider.FieldDescriptionsProvider = descriptionProvider
-	{{endregion}}
+{{endregion}}
 
+By using the ContainerNodeEventArgs you are able to access the information foreach ContainerNode in the FieldTree, its children. You can decide whether to include each of the children by using AutoGenerateField property. If you want you can remove the whole container (the folder) from the UI, by setting e.Cancel = true:       
 
-
-By using the ContainerNodeEventArgs you are able to access the information foreach ContainerNode in the FieldTree, its children. You can decide whether to include each of the children by using AutoGenerateField property. If you want you can remove the whole container (the folder)
-          from the UI, by setting e.Cancel = true:
-        
-
-* __Add children to the container node (folder)__ - for example you may add Hour Step to the FieldTree:
-            
+* __Add children to the container node (folder)__ - for example you may add Hour Step to the FieldTree:            
 
 #### __C#__
 
@@ -168,9 +137,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -187,12 +154,9 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 			Next containerNode
 		End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-* __Remove children from the container node (folder)__ - for example you may remove Year Step to the FieldTree:
-            
+* __Remove children from the container node (folder)__ - for example you may remove Year Step to the FieldTree:            
 
 #### __C#__
 
@@ -213,9 +177,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -232,12 +194,9 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 			Next containerNode
 		End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-* __Remove the whole container node (folder) from the FieldTree__:
-            
+* __Remove the whole container node (folder) from the FieldTree__:            
 
 #### __C#__
 
@@ -250,9 +209,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	        e.Cancel = true;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -263,12 +220,9 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 			e.Cancel = True
 		End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-* __Remove the whole container node (folder) from the FieldTree and show a single DateTime with chosen Step:__:
-            
+* __Remove the whole container node (folder) from the FieldTree and show a single DateTime with chosen Step:__:            
 
 #### __C#__
 
@@ -283,9 +237,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	        e.ContainerNode = fin;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -298,9 +250,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 			e.ContainerNode = fin
 		End If
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

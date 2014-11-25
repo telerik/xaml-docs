@@ -10,12 +10,10 @@ position: 0
 
 # Implement Drag and Drop Between TreeView and GridView
 
+The goal of this tutorial is to show you how to implement drag and drop between __RadTreeView__ and __RadGridView__.	  
 
-
-The goal of this tutorial is to show you how to implement drag and drop between __RadTreeView__ and __RadGridView__.
-	  
-
-The final result should look like this ![Rad Tree View-DnDTree Grid-Result](images/RadTreeView-DnDTreeGrid-Result.png)
+The final result should look like this: 
+![Rad Tree View-DnDTree Grid-Result](images/RadTreeView-DnDTreeGrid-Result.png)
 
 ## Implement Drag and Drop Between TreeView and GridView 
 
@@ -24,17 +22,13 @@ For the purpose of this example, you will need to create an empty application pr
 The first step is to add references to the following assemblies:
 
 * __Telerik.Windows.Controls.Navigation__
-
 * __Telerik.Windows.Controls.GridView__
-
 * __Telerik.Windows.Controls__
-
 * __Telerik.Windows.Data__
 
-Then you can define the controls in your view. As the purpose of this tutorial is to demonstrate how to implement drag and drop operations, we won't focus on the definitions of the controls in xaml. However, please note to set the __RadTreeView IsDragDropEnabled__ property to __true__.
-		
+Then you can define the controls in your view. As the purpose of this tutorial is to demonstrate how to implement drag and drop operations, we won't focus on the definitions of the controls in xaml. However, please note to set the __RadTreeView IsDragDropEnabled__ property to __true__.		
 
->importantWith Q2 2013 __RadTreeView__ supports two drag/drop modes - the __Legacy__ mode using the deprecated RadDragAndDropManager, and a __New__ mode that utilizes the __DragDropManager__. In this tutorial we'll be using the new mode, so please set the __TreeViewSettings.DragDropExecutionMode__ attached property to __New__ in the __RadTreeView__ definition.
+>important With Q2 2013 __RadTreeView__ supports two drag/drop modes - the __Legacy__ mode using the deprecated RadDragAndDropManager, and a __New__ mode that utilizes the __DragDropManager__. In this tutorial we'll be using the new mode, so please set the __TreeViewSettings.DragDropExecutionMode__ attached property to __New__ in the __RadTreeView__ definition.
 		  {% if site.site_name == 'Silverlight' %}
 
 #### __XAML__

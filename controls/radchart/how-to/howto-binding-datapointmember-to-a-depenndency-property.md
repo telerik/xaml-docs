@@ -128,11 +128,7 @@ Set the DataContext property to List of MyObject class after the InitializeCompo
 
 Here is the final result: 
 
-
-
-
-         
-      ![](images/RadChart_HowToDependencyProperty.PNG)
+![](images/RadChart_HowToDependencyProperty.PNG)
 
 >tipYou should move the focus out of the Text box in Silverlight to be able to see the new value of the Bar. 
 

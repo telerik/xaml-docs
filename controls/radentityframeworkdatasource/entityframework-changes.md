@@ -14,36 +14,32 @@ position: 1
 
 ## Latest Release Notes
 
-You can check the latest Release Notes
-            [ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx)
+You can check the latest Release Notes [ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx)
 
-## 
-        Changes for RadEntityFrameworkDataSource for WPF Q3 SP 2013
-      
-
-* Added: Support for EntityFramework 6.0 (Telerik.Windows.Controls.EntityFramework60 assembly was introduced)
+## Q3 SP 2013      
+### What's new
+* __Support for EntityFramework 6.0__ (Telerik.Windows.Controls.EntityFramework60 assembly was introduced)
             
 
-## 
-        Changes for RadEntityFrameworkDataSource for WPF Q1 2013
-      
+## Q1 2013
+### What's new      
 
-* Added: __RadEntityFrameworkDataSource.DbContext__ property (for __Entity Framework 5.0__ + __.NET Framework 4.5__ only)
+* __RadEntityFrameworkDataSource.DbContext__ property (for __Entity Framework 5.0__ + __.NET Framework 4.5__ only)
         
-
-* Fixed: Insert does not work correctly in grouped scenario and the grid is bound to __EntityFrameworkDataSource__.
+### What's fixed
+* Insert does not work correctly in grouped scenario and the grid is bound to __EntityFrameworkDataSource__.
        
 
-## 
-        Changes for RadEntityFrameworkDataSource for WPF Q3 2012 SP1
-      
+## Q3 2012 SP1
+### What's new         
 
-* Added: __RadEntityFrameworkDataSource.DbContext__ property (for __Entity Framework 5.0__ + __.NET Framework 4.5__ only)
+* __RadEntityFrameworkDataSource.DbContext__ property (for __Entity Framework 5.0__ + __.NET Framework 4.5__ only)
+
+### What's fixed        
+
+* Insert does not work correctly in grouped scenario and the grid is bound to __EntityFrameworkDataSource__.
         
 
-* Fixed: Insert does not work correctly in grouped scenario and the grid is bound to __EntityFrameworkDataSource__.
-        
-
-## RadEntityFrameworkDataSource for WPF Q3 2011
-
-* The RadEntityFrameworkDataSource control has just been added to the RadControls for WPF suite.
+## Q3 2011
+### What's new  
+* __RadEntityFrameworkDataSource__ control has just been added to the __UI for WPF__ suite.

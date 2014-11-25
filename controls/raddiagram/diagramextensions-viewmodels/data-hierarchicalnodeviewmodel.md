@@ -32,64 +32,25 @@ __HierarchicalNodeViewModel__ has a single constructor - HierarchicalNodeViewMod
 
 The __HierarchicalNodeViewModel__ class exposes the following properties:
 		
-<table><th><tr><td>
+|Name|Description|
+|----|----|
+|Children|Gets or sets an ObservableCollection of HierarchicalNodeViewModel items that represent the children of the current node.|
+|HasChildren|Gets a Boolean value indicating whether a HierarchicalNodeViewModel item has any children.|
 
-Name</td><td>
-
-Description</td></tr></th><tr><td>
-
-<b>Children</b></td><td>
-
-Gets or sets an <b>ObservableCollection</b> of <b>HierarchicalNodeViewModel</b> items that represent the children of the current node.
-			</td></tr><tr><td>
-
-<b>HasChildren</b></td><td>
-
-Gets a Boolean value indicating whether a <b>HierarchicalNodeViewModel</b> item has any children.
-			</td></tr></table>
 
 And as the class derives from the __NodeViewModelBase__, it also inherits all of its properties:
 		
-<table>Inherited Properties<th><tr><td>
+Inherited Properties
+|Name|Description|
+|----|-----------|
+|Width|Gets or sets a Double value indicating the Width of the represented shape.|
+|Height|Gets or sets a Double value indicating the Height of the represented shape.|
+|RotationAngle|Gets or sets a Double value indicating the rotation angle of the represented shape.|
+|Visibility|Gets or sets the Visibility of the represented shape. The property is of type Visibility.|
+|Position|Gets or sets the coordinates of a Point that represents the position of the represented shape.|
+|Content|Gets or sets an object that represents the content of a shape.|
+|IsSelected|Gets or sets a Boolean value indicating whether the represented shape is selected.|
 
-Name</td><td>
-
-Description</td></tr></th><tr><td>
-
-<b>Width</b></td><td>
-
-Gets or sets a <b>Double</b> value indicating the <b>Width</b> of the represented shape.
-			  </td></tr><tr><td>
-
-<b>Height</b></td><td>
-
-Gets or sets a <b>Double</b> value indicating the <b>Height</b> of the represented shape.
-			  </td></tr><tr><td>
-
-<b>RotationAngle</b></td><td>
-
-Gets or sets a <b>Double</b> value indicating the rotation angle of the represented shape.
-			  </td></tr><tr><td>
-
-<b>Visibility</b></td><td>
-
-Gets or sets the Visibility of the represented shape. The property is of type <b>Visibility</b>.
-			  </td></tr><tr><td>
-
-<b>Position</b></td><td>
-
-Gets or sets the coordinates of a <b>Point</b> that represents the position of the represented shape.
-			  </td></tr><tr><td>
-
-<b>Content</b></td><td>
-
-Gets or sets an <b>object</b> that represents the content of a shape.
-			  </td></tr><tr><td>
-
-<b>IsSelected</b></td><td>
-
-Gets or sets a <b>Boolean</b> value indicating whether the represented shape is selected.
-			  </td></tr></table>
 
 # See Also
 

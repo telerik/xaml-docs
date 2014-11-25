@@ -281,5 +281,3 @@ This article describes the release history of the RadDiagram framework
 * Feature: Allow bringing item(s) into view  
 
 * Feature: New Diagram Extensions Assembly that contains new controls, features and extensions of the Diagramming framework like a Thumbnail a.k.a. Mini Map, Print Preview , Ruler, Built-in Toolbox and Built-in Settings Pane.
-
-# See Also

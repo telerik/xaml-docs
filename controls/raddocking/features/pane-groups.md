@@ -10,15 +10,11 @@ position: 1
 
 # Pane Groups
 
-
-
 Each __RadPane__ provides built-in grouping functionality that allows you to place multiple panes inside a single container by organizing them in separate tab pages, similarly to the __RadTabControl__.
 
 Each __RadPane__ can be grouped along with other __RadPanes__ inside of a single container like it is shown in the snapshot below.
 
-
-
->In order to group your panes, you should use the __Telerik.Windows.Controls.RadPaneGroup__class.
+>In order to group your panes, you should use the __Telerik.Windows.Controls.RadPaneGroup__ class.
 
 The following cases will be examined:
 
@@ -46,8 +42,6 @@ The following cases will be examined:
 
 You can group panes during run-time by simply [dragging]({%slug raddocking-features-drag-and-drop%}) the pane to the desired container.
 
-
-
 ## Grouping Panes Programmatically
 
 In order to group two or more panes, you should add them to the __RadPaneGroup__'s __Items__ collection like in the example below.
@@ -65,9 +59,7 @@ In order to group two or more panes, you should add them to the __RadPaneGroup__
 	
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 The same operation can be done in the code-behind. You can group panes using the __RadPaneGroup__'s __Items__ collection through procedural code:
 
@@ -80,9 +72,7 @@ The same operation can be done in the code-behind. You can group panes using the
 	    pane3.Header = "Properties";
 	    Group1.Items.Add( pane3 );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -92,9 +82,7 @@ The same operation can be done in the code-behind. You can group panes using the
 	    pane3.Header = "Properties"
 	    Group1.Items.Add(pane3)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Removing Panes Run-Time
 
@@ -115,9 +103,7 @@ You can remove panes using procedural code in two ways:
 	{
 	    Group1.Items.Remove( paneToRemove );
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -125,9 +111,7 @@ You can remove panes using procedural code in two ways:
 	Private Sub RemovePane(RadPane paneToRemove)
 	    Group1.Items.Remove(paneToRemove)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 * Using the __RemoveFromParent__ method of the __RadPane__ class
 
@@ -138,9 +122,7 @@ You can remove panes using procedural code in two ways:
 	{
 	    paneToRemove.RemoveFromParent();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -148,13 +130,11 @@ You can remove panes using procedural code in two ways:
 	Private Sub RemovePane(RadPane paneToRemove)
 	    paneToRemove.RemoveFromParent()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Hiding All Panes
 
-The __RadPaneGroup__ class exposes __HideAllPanes__method, which allows you to hide all visible panes belonging to the group.
+The __RadPaneGroup__ class exposes __HideAllPanes__ method, which allows you to hide all visible panes belonging to the group.
 
 #### __C#__
 
@@ -163,9 +143,7 @@ The __RadPaneGroup__ class exposes __HideAllPanes__method, which allows you to h
 	{
 	    Group1.HideAllPanes();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -173,15 +151,13 @@ The __RadPaneGroup__ class exposes __HideAllPanes__method, which allows you to h
 	Private Sub HideAllPanes()
 	    Group1.HideAllPanes()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >__HideAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
 ## Showing All Panes
 
-The __RadPaneGroup__ class exposes __ShowAllPanes__method, which allows you to show all hidden panes belonging to the group.
+The __RadPaneGroup__ class exposes __ShowAllPanes__ method, which allows you to show all hidden panes belonging to the group.
 
 #### __C#__
 
@@ -190,9 +166,7 @@ The __RadPaneGroup__ class exposes __ShowAllPanes__method, which allows you to s
 	{
 	    Group1.ShowAllPanes();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -200,9 +174,7 @@ The __RadPaneGroup__ class exposes __ShowAllPanes__method, which allows you to s
 	Private Sub ShowAllPanes()
 	    Group1.ShowAllPanes()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >__ShowAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
@@ -210,7 +182,7 @@ The __RadPaneGroup__ class exposes __ShowAllPanes__method, which allows you to s
 
 ## Pinning All Panes
 
-The __RadPaneGroup__ class exposes __PinAllPanes__method, which allows you to pin all panes belonging to the group.
+The __RadPaneGroup__ class exposes __PinAllPanes__ method, which allows you to pin all panes belonging to the group.
 
 #### __C#__
 
@@ -219,9 +191,7 @@ The __RadPaneGroup__ class exposes __PinAllPanes__method, which allows you to pi
 	{
 	    Group1.PinAllPanes();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -229,15 +199,13 @@ The __RadPaneGroup__ class exposes __PinAllPanes__method, which allows you to pi
 	Private Sub PinAllPanes()
 	    Group1.PinAllPanes()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >__PinAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event has been fired.
 
 ## Unpining All Panes
 
-The __RadPaneGroup__ class exposes __UnpinAllPanes__method, which allows you to unpin all panes belonging to the group.
+The __RadPaneGroup__ class exposes __UnpinAllPanes__ method, which allows you to unpin all panes belonging to the group.
 
 #### __C#__
 
@@ -246,9 +214,7 @@ The __RadPaneGroup__ class exposes __UnpinAllPanes__method, which allows you to 
 	{
 	    Group1.UnpinAllPanes();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -256,9 +222,7 @@ The __RadPaneGroup__ class exposes __UnpinAllPanes__method, which allows you to 
 	Private Sub UnpinAllPanes()
 	    Group1.UnpinAllPanes()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >__UnpinAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
@@ -281,13 +245,9 @@ The sizes of the __RadPaneGroups__ that are not directly set in the __RadDocking
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the result. As you can see, the first pane group occupies 1/3 of the available width, while the second occupies the rest 2/3. The height specified is ignored because the groups have the same height as the __RadSplitContainer__ in which they are hosted.
-
-
 
 ## Other Properties and Methods Exposed by the RadPaneGroup class
 

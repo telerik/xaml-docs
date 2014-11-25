@@ -10,15 +10,13 @@ position: 5
 
 # Icons
 
-
-
 The __RadMenu__ allows you to display an icon for each of the menu items. It can be done by setting the __Icon__ property of the __RadMenuItem__. This property is of type __Image__, so you have to provide an element of type __Image__ for it.
 
 As there are two ways to populate the __RadMenu__ with data, this topic will explain you how to set this property in both of them.
 
-* [Setting the Icon of a Static Item](#Setting_the_Icon_of_a_Static_Item)
+* [Setting the Icon of a Static Item](#setting-the-icon-of-a-static-item)
 
-* [Setting the Icon of a Dynamic Item](#Setting_the_Icon_of_a_Dynamic_Item)
+* [Setting the Icon of a Dynamic Item](#setting-the-icon-of-a-dynamic-item)
 
 ## Setting the Icon of a Static Item
 
@@ -35,9 +33,7 @@ By using static items you can directly access the __Icon__ property of each item
 	               Stretch="None" />
 	    </telerik:RadMenuItem.Icon>
 	</telerik:RadMenuItem>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the result.
 
@@ -77,9 +73,7 @@ The specific here is that your data item should expose a property of type __Imag
 	
 	    ...
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -101,9 +95,7 @@ The specific here is that your data item should expose a property of type __Imag
 	 End Property
 	 ...
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 The result is the same.
 

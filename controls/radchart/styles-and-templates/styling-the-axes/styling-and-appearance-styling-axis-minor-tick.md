@@ -14,7 +14,7 @@ position: 3
 
 ## 
 
-The axis minor tick lines are part of the chart axis and are represented by the __Line__ control. To create a style for them in Expression Blend use a dummy control and after modifying it, set it to the __AxisStyles__complex property of the __Axis__.
+The axis minor tick lines are part of the chart axis and are represented by the __Line__ control. To create a style for them in Expression Blend use a dummy control and after modifying it, set it to the __AxisStyles__ complex property of the __Axis__.
 
 Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ control you have to go to the XAML view. To do that select *View -> Active Document View -> XAML View* from the menu. Declare a __Line__ control in your XAML.
 
@@ -27,8 +27,6 @@ Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ co
 	    <Line />
 	</Grid>
 	{{endregion}}
-
-
 
 To go back to the design view select *View -> Active Document View -> Design View* from the menu. In the 'Objects and Timeline' pane select the newly created __Line__ control. And select *Object -> Edit Style -> Create Empty* from the menu*. *You will be prompted for the name of the style and where to be placed within your application.
 
@@ -47,8 +45,6 @@ After finishing with the changes, it is time to set the style to the __MinorTick
 	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TickLineStyle = this.Resources[ "AxisYTickStyle" ] as Style;
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radchart-styling-and-appearance-styling-axis-minor-tick_3}}
@@ -61,12 +57,7 @@ After finishing with the changes, it is time to set the style to the __MinorTick
 >tipSetting the styles for the y-axis is done analogically via the __AxisY__ property of the __ChartArea__.
 
 >tipTo learn how to style the primary ticks take a look at the [Styling the Axis Tick]({%slug radchart-styling-and-appearance-styling-axis-tick%}) topic.
-
-
-
-
-         
-      ![](images/RadChart_StylingAxisMinorTickLines_03.png)
+![](images/RadChart_StylingAxisMinorTickLines_03.png)
 
 Here is the final XAML for the __Styles:__
 

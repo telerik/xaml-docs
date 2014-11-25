@@ -10,27 +10,15 @@ position: 7
 
 # Styling the Visual Cue
 
-
-
-## 
-
 The dropping area that you see, when rearranging the containers in the __RadDocking__ control, is represented by the __VisualCue__ control. Therefore you can't directly create a style for it in Expression Blend and you have to use a dummy control to create the style.
 
-Open your __RadDocking__project in Expression Blend and select the __RadDocking__you want to modify. On the same scene you should place a __VisualCue__ control, that will be used as a dummy. To do so choose the Assets tab. From the 'Controls -> All' section select the __VisualCue__ control:
+Open your __RadDocking__ project in Expression Blend and select the __RadDocking__ you want to modify. On the same scene you should place a __VisualCue__ control, that will be used as a dummy. To do so choose the Assets tab. From the 'Controls -> All' section select the __VisualCue__ control:
 
-
-
-
-         
-      ![](images/RadDocking_StylingVisualCue_01.png)
+![](images/RadDocking_StylingVisualCue_01.png)
 
 With your mouse create a new instance of the control on the scene:
 
-
-
-
-         
-      ![](images/RadDocking_StylingVisualCue_02.png)
+![](images/RadDocking_StylingVisualCue_02.png)
 
 >After drawing the __VisualCue__, you won't be able to see it on the scene.
 
@@ -42,11 +30,7 @@ After clicking OK, a style for your __VisualCue__ control will be created and th
 
 Go to the 'Resources' pane and see the resources generated for your style. {% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingVisualCue_05.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![](images/RadDocking_StylingVisualCue_05.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
 * __Compass_VisualCue_Background__ - is a brush representing the controls's background color.
 
@@ -58,27 +42,15 @@ Go to the 'Resources' pane and see the resources generated for your style. {% en
 
 Here is an example of the above resources modified:{% endif %}{% if site.site_name == 'Silverlight' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingVisualCue_06.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingVisualCue_06.png){% endif %}{% if site.site_name == 'WPF' %}
 
 Select the __Background__ property and change its value. This will change the color of the __VisualCue__.{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingVisualCue_05_06_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
+![](images/RadDocking_StylingVisualCue_05_06_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 Select the __BorderBrush__ property and change its value. This will change the color of the border of the __VisualCue__.{% endif %}{% if site.site_name == 'WPF' %}
 
-
-
-
-         
-      ![](images/RadDocking_StylingVisualCue_07_08_WPF.png){% endif %}
+![](images/RadDocking_StylingVisualCue_07_08_WPF.png){% endif %}
 
 After finishing with your modifications, remove the dummy control and set the style to the __RadDocking__'s __VisualCueStyle__ property.
 
@@ -89,17 +61,11 @@ After finishing with your modifications, remove the dummy control and set the st
 	                         VisualCueStyle="{StaticResource VisualCueStyle}">
 	    ...
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the final result.
 
-
-
-
-         
-      ![](images/RadDocking_StylingVisualCue_09.png)
+![](images/RadDocking_StylingVisualCue_09.png)
 
 # See Also
 

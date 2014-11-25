@@ -10,18 +10,15 @@ position: 5
 
 # RadGanttView
 
-
-
-This tutorial will introduce __RadGanttView__, part of the Telerik suite of XAML controls.
-      
+This tutorial will introduce __RadGanttView__, part of the Telerik suite of XAML controls.      
 
 ## Setting Up The Project
 
 To begin, open Visual Studio and click on the Telerik menu option. Under *RadControls For Silverlight* click on *Create New Telerik Project*.  Name your project, accept Silverlight 5 and in the *Project Configuration Wizard* dialog check *GanttView*.
-        ![xamlflix gantt 1](images/xamlflix_gantt_1.png)
 
-Your application will open to MainPage.xaml and, thanks to the Telerik Visual Studio extensions, the namespace __telerik__ will already have been created in the XAML heading.
-        
+![xamlflix gantt 1](images/xamlflix_gantt_1.png)
+
+Your application will open to MainPage.xaml and, thanks to the Telerik Visual Studio extensions, the namespace __telerik__ will already have been created in the XAML heading.        
 
 #### __XAML__
 
@@ -33,69 +30,50 @@ Your application will open to MainPage.xaml and, thanks to the Telerik Visual St
 	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
-	{{endregion}}
+{{endregion}}
 
-
-
-Add a __RadGanttView__  to the *Layout* grid in the XAML file,
-        
+Add a __RadGanttView__  to the *Layout* grid in the XAML file,        
 
 #### __XAML__
 
 {{region xamlflix_gantt_1}}
 	<telerik:RadGanttView Name="xGanttView" />
-	{{endregion}}
-
-
+{{endregion}}
 
 Open the code-behind file, where we will do three things,
 
 1. Define tasks to add to the __GanttView__
 
-1. Set the __PixelLength__ to determine how wide the display of each day will be
-            
+1. Set the __PixelLength__ to determine how wide the display of each day will be            
 
 1. Set the __VisibleRange__
 
-We set the visible range by providing an instance of __VisibleRange__ passing in a starting date and an ending date,
-        
+We set the visible range by providing an instance of __VisibleRange__ passing in a starting date and an ending date,        
 
 #### __C#__
 
 {{region xamlflix_ganttview_0}}
 	var d = DateTime.Today;
 	xGanttView.VisibleRange = new VisibleRange(d, d.AddMonths(2));
-	{{endregion}}
+{{endregion}}
 
-
-
-We set the __PixelLength__ by passing in a __TimeSpan__, as shown below:
-        
+We set the __PixelLength__ by passing in a __TimeSpan__, as shown below:        
 
 #### __C#__
 
 {{region xamlflix_ganttview_1}}
 	xGanttView.PixelLength = new TimeSpan(1, 0, 0, 0);
-	{{endregion}}
+{{endregion}}
 
-
-
-Finally, we need to add tasks (and sub-tasks) to the __GanttView__.
-          We start by creating an observable collection of __GanttTask__ objects,
-        
+Finally, we need to add tasks (and sub-tasks) to the __GanttView__. We start by creating an observable collection of __GanttTask__ objects,        
 
 #### __C#__
 
 {{region xamlflix_ganttview_2}}
 	var tasks = new ObservableCollection<GanttTask>();
-	{{endregion}}
+{{endregion}}
 
-
-
-Next, we'll create four "parent" tasks, each with a start, end and title.
-          For each "parent" task we'll create a set of child tasks based on the task's duration in days and add them to the Children collection of the "parent" GanttTask.
-          All main tasks should be added to the task ObservableCollection named tasks.
-        
+Next, we'll create four "parent" tasks, each with a start, end and title. For each "parent" task we'll create a set of child tasks based on the task's duration in days and add them to the Children collection of the "parent" GanttTask. All main tasks should be added to the task ObservableCollection named tasks.        
 
 #### __C#__
 
@@ -115,39 +93,31 @@ Next, we'll create four "parent" tasks, each with a start, end and title.
 	
 	    tasks.Add(gt);
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-Finally, add the __ObservableCollection__ as the __TasksSource__ for the __GanttView__,
-        
+Finally, add the __ObservableCollection__ as the __TasksSource__ for the __GanttView__,        
 
 #### __C#__
 
 {{region xamlflix_ganttview_4}}
 	xGanttView.TasksSource = tasks;
-	{{endregion}}
+{{endregion}}
 
-
-
-When you run the application you’ll see the tasks and subtasks, but because we set the __PixelLength__ to 1 day, you can’t see much detail.  Change the __PixelLength__ to 1 hour,
-        
+When you run the application you’ll see the tasks and subtasks, but because we set the __PixelLength__ to 1 day, you can’t see much detail.  Change the __PixelLength__ to 1 hour,       
 
 #### __C#__
 
 {{region xamlflix_ganttview_5}}
 	xGanttView.PixelLength = new TimeSpan(0, 1, 0, 0);
-	{{endregion}}
+{{endregion}}
 
+Run the application again and you should get a better view of the Gantt chart, complete with parent and child tasks and durations, as shown in figure 3,
 
-
-Run the application again and you should get a better view of the Gantt chart, complete with parent and child tasks and durations, as shown in figure 3,![xamlflix gantt 3](images/xamlflix_gantt_3.png)
+![xamlflix gantt 3](images/xamlflix_gantt_3.png)
 
 ## Relations
 
-Let’s establish a relationship among the various child tasks. Relationships add a link between tasks. To do so, first set the __PixelLength__
-          to 15 minutes. Then add the following code immediately after the creation of ChildGt:
-        
+Let’s establish a relationship among the various child tasks. Relationships add a link between tasks. To do so, first set the __PixelLength__ to 15 minutes. Then add the following code immediately after the creation of ChildGt:        
 
 #### __C#__
 
@@ -157,16 +127,15 @@ Let’s establish a relationship among the various child tasks. Relationships ad
 	    GanttTask prevGt = gt.Children[j - 1] as GanttTask;
 	    prevGt.Dependencies.Add(new Dependency { FromTask = childGT });
 	}
-	{{endregion}}
+{{endregion}}
 
+The result is that you can now get a better view of the relationships among the child tasks, as shown in figure 4,
 
-
-The result is that you can now get a better view of the relationships among the child tasks, as shown in figure 4,![xamlflix gantt 4](images/xamlflix_gantt_4.png)
+![xamlflix gantt 4](images/xamlflix_gantt_4.png)
 
 ## GanttViewHighlighting
 
-To examine __GanttViewHighlighting__ in depth, we’ll start a new project, very similar to the previous except this time we’ll also add __Telerik.Windows.Controls.Input__ to the references.
-        
+To examine __GanttViewHighlighting__ in depth, we’ll start a new project, very similar to the previous except this time we’ll also add __Telerik.Windows.Controls.Input__ to the references.        
 
 Add two rows and two columns to the Layoutroot as shown  below:
 
@@ -182,15 +151,9 @@ Add two rows and two columns to the Layoutroot as shown  below:
 	    <ColumnDefinition />
 	</Grid.ColumnDefinitions>
 	<telerik:RadGanttView Name="xGanttView" Grid.ColumnSpan="2" />
-	{{endregion}}
+{{endregion}}
 
-
-
-Let’s start by creating the __ViewModel__ class.
-          Name it *GanttVM* and be sure to set it to derive from __ViewModelBase__
-          (a base for ViewModel classes provided by the Telerik library). Declare an observable collection of *GanttTask* objects
-          and initialize it in the constructor.
-        
+Let’s start by creating the __ViewModel__ class. Name it *GanttVM* and be sure to set it to derive from __ViewModelBase__ (a base for ViewModel classes provided by the Telerik library). Declare an observable collection of *GanttTask* objects and initialize it in the constructor.
 
 #### __C#__
 
@@ -205,12 +168,9 @@ Let’s start by creating the __ViewModel__ class.
 	        this.LoadTasks();
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-The *LoadTasks* method will be based on the code used in the previous example,
-        
+The *LoadTasks* method will be based on the code used in the previous example,        
 
 #### __C#__
 
@@ -243,20 +203,15 @@ The *LoadTasks* method will be based on the code used in the previous example,
 	        this.Tasks.Add(gt);
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-Declare a property of type *VisibleRange*,
-        
+Declare a property of type *VisibleRange*,       
 
 #### __C#__
 
 {{region xamlflix_ganttview_9}}
 	public VisibleRange GanttRange { get; set; }
-	{{endregion}}
-
-
+{{endregion}}
 
 And initialize that property in the constructor:
 
@@ -264,9 +219,7 @@ And initialize that property in the constructor:
 
 {{region xamlflix_ganttview_10}}
 	this.GanttRange = new VisibleRange(DateTime.Today, DateTime.Today.AddMonths(2));
-	{{endregion}}
-
-
+{{endregion}}
 
 In this case we've initialized it to start today and to span two months.
 
@@ -276,9 +229,7 @@ Build the application just to make sure there are no errors or typos. Return to 
 
 {{region xamlflix_gantt_3}}
 	xmlns:local="clr-namespace:GanttChartMVVM"
-	{{endregion}}
-
-
+{{endregion}}
 
 You’ll use this to create a resource to hold the VM,
 
@@ -288,23 +239,17 @@ You’ll use this to create a resource to hold the VM,
 	<UserControl.Resources>
 	    <local:GanttVM x:Key="xVM" />
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
-
-
-This lets us set the __DataContext__ in the *LayoutRoot*,
-        
+This lets us set the __DataContext__ in the *LayoutRoot*,        
 
 #### __XAML__
 
 {{region xamlflix_gantt_5}}
 	<Grid x:Name="LayoutRoot" DataContext="{StaticResource xVM}">
-	{{endregion}}
+{{endregion}}
 
-
-
-We’re now ready to update the bindings on the __RadGanttView__,
-        
+We’re now ready to update the bindings on the __RadGanttView__,        
 
 #### __XAML__
 
@@ -313,9 +258,7 @@ We’re now ready to update the bindings on the __RadGanttView__,
 	                      Grid.ColumnSpan="2"
 	                      TasksSource="{Binding Tasks}"
 	                      VisibleRange="{Binding GanttRange}" />
-	{{endregion}}
-
-
+{{endregion}}
 
 You should now see the GanttChart in the designer. If not, try rebuilding the application.
 
@@ -330,14 +273,11 @@ Let’s add a slider control to our application,
 	                   Maximum="30000000000" 
 	                   Value="18000000000" 
 	                   Margin="5,10" />
-	{{endregion}}
-
-
+{{endregion}}
 
 The extremely large values are because we’ll be converting these values to ticks for a timespan.
 
-Create a new class *TicksToTimespanConverter* and add the following code,
-        
+Create a new class *TicksToTimespanConverter* and add the following code,        
 
 #### __C#__
 
@@ -354,9 +294,7 @@ Create a new class *TicksToTimespanConverter* and add the following code,
 	        throw new NotImplementedException();
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 Build the application.
 
@@ -369,12 +307,9 @@ Add the converter to the resources in MainPage.xaml,
 	    <local:GanttVM x:Key="xVM" />
 	    <local:TicksToTimeSpanConverter x:Key="xConverter" />
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
-
-
-We can now add the binding for the PixelLength to the __RadGanttView__ in the XAML,
-        
+We can now add the binding for the PixelLength to the __RadGanttView__ in the XAML,        
 
 #### __XAML__
 
@@ -384,14 +319,13 @@ We can now add the binding for the PixelLength to the __RadGanttView__ in the XA
 	        TasksSource="{Binding Tasks}" 
 	        VisibleRange="{Binding GanttRange}" 
 	        PixelLength="{Binding ElementName=xRadSlider, Path=Value, Converter={StaticResource xConverter}}"/>
-	{{endregion}}
+{{endregion}}
 
+Run the application. We now have a slider at the bottom which works to zoom in and out on our Gantt chart, as shown in figure 5
 
+![xamlflix gantt 5](images/xamlflix_gantt_5.png)
 
-Run the application. We now have a slider at the bottom which works to zoom in and out on our Gantt chart, as shown in figure 5![xamlflix gantt 5](images/xamlflix_gantt_5.png)
-
-We’re now going to add a toggle button which will turn highlighting on and off. We’re using the RadTogglebutton and __RadSlider__ which are part of the suite of Telerik tools for Silverlight and WPF
-        
+We’re now going to add a toggle button which will turn highlighting on and off. We’re using the RadTogglebutton and __RadSlider__ which are part of the suite of Telerik tools for Silverlight and WPF        
 
 #### __XAML__
 
@@ -402,12 +336,9 @@ We’re now going to add a toggle button which will turn highlighting on and off
 	    HorizontalAlignment="Center"
 	    VerticalAlignment="Center"
 	    Content="Highlight" />
-	{{endregion}}
+{{endregion}}
 
-
-
-We need a public property to bind the __IsChecked__ attribute to.  Open the *ViewModel* and add the following property,
-        
+We need a public property to bind the __IsChecked__ attribute to.  Open the *ViewModel* and add the following property,       
 
 #### __C#__
 
@@ -425,12 +356,9 @@ We need a public property to bind the __IsChecked__ attribute to.  Open the *Vie
 	         }
 	     }
 	 }
-	{{endregion}}
+{{endregion}}
 
-
-
-You can now update the __ToggleButton__’s __IsChecked__ property,
-        
+You can now update the __ToggleButton__’s __IsChecked__ property,        
 
 #### __XAML__
 
@@ -442,9 +370,7 @@ You can now update the __ToggleButton__’s __IsChecked__ property,
 	    VerticalAlignment="Center"
 	    Content="Highlight"
 	    IsChecked="{Binding CheckedValue, Mode=TwoWay}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 The toggle button doesn’t yet affect the highlighting.  First thing we need is another collection, just of the highlighted tasks,
 
@@ -452,9 +378,7 @@ The toggle button doesn’t yet affect the highlighting.  First thing we need is
 
 {{region xamlflix_ganttview_14}}
 	public ObservableCollection<GanttTask> HighlightedTasks { get; set; }
-	{{endregion}}
-
-
+{{endregion}}
 
 Initialize that collection in the constructor,
 
@@ -462,14 +386,9 @@ Initialize that collection in the constructor,
 
 {{region xamlflix_ganttview_15}}
 	this.HighlightedTasks = new ObservableCollection<GanttTask>();	
-	{{endregion}}
+{{endregion}}
 
-
-
-We need a method to make the highlighting happen. If the argument is null, we just return.
-          Otherwise, we clear the collection and if the argument is true, for this demo, we’ll randomly add tasks
-          and children to the list of highlighted tasks. The method should look like below:
-        
+We need a method to make the highlighting happen. If the argument is null, we just return. Otherwise, we clear the collection and if the argument is true, for this demo, we’ll randomly add tasks and children to the list of highlighted tasks. The method should look like below:       
 
 #### __C#__
 
@@ -494,24 +413,17 @@ We need a method to make the highlighting happen. If the argument is null, we ju
 	        }
 	    }  
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-Returning to the property __CheckedValue__, after we set the value we’ll call *ToggleHighlight*,
-        
+Returning to the property __CheckedValue__, after we set the value we’ll call *ToggleHighlight*,        
 
 #### __C#__
 
 {{region xamlflix_ganttview_17}}
 	this.ToggleHighlight(CheckedValue);		
-	{{endregion}}
+{{endregion}}
 
-
-
-Now that we have a collection of the tasks we want to highlight, return to the XAML and in the definition for the __GanttView__
-          we add one more attribute,
-        
+Now that we have a collection of the tasks we want to highlight, return to the XAML and in the definition for the __GanttView__ we add one more attribute,        
 
 #### __XAML__
 
@@ -521,12 +433,11 @@ Now that we have a collection of the tasks we want to highlight, return to the X
 	                VisibleRange="{Binding GanttRange}"
 	                PixelLength="{Binding ElementName=xRadSlider, Path=Value, Converter={StaticResource xConverter}}"
 	                HighlightedItemsSource="{Binding HighlightedTasks}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Run the application, click the *Highlight* button and scroll down until you find the highlighted task and children, as shown in figure 6,
-        ![xamlflix gantt 6](images/xamlflix_gantt_6.png)
+
+![xamlflix gantt 6](images/xamlflix_gantt_6.png)
 
 Clicking the toggle button a second time will make the highlighting disappear.
 
@@ -535,9 +446,7 @@ Clicking the toggle button a second time will make the highlighting disappear.
 Let’s create a custom __GanttTask__ so that we can add criteria to that task that does not exist in the default.
         
 
-We’ll create a new class called *TeamGanttTask*.
-          The new class will inherit from the default __GanttTask__ and should have two constructors that our base class needs:
-        
+We’ll create a new class called *TeamGanttTask*. The new class will inherit from the default __GanttTask__ and should have two constructors that our base class needs:        
 
 #### __C#__
 
@@ -552,12 +461,9 @@ We’ll create a new class called *TeamGanttTask*.
 	        base(startDate, endDate, title)
 	    {}
 	}	
-	{{endregion}}
+{{endregion}}
 
-
-
-Add a new property to the custom *TeamGanttTask*,
-        
+Add a new property to the custom *TeamGanttTask*,       
 
 #### __C#__
 
@@ -575,9 +481,7 @@ Add a new property to the custom *TeamGanttTask*,
 	         }
 	     }
 	}	  	
-	{{endregion}}
-
-
+{{endregion}}
 
 We’ll use this new property to create custom business logic to control highlighting.
 
@@ -588,9 +492,7 @@ Add two new observable collections to the VM,
 {{region xamlflix_ganttview_20}}
 	public ObservableCollection<TeamGanttTask> TeamTasks { get; set; }
 	public ObservableCollection<TeamGanttTask> HighlightedTeamTasks { get; set; }	  	
-	{{endregion}}
-
-
+{{endregion}}
 
 Don’t forget to modify the initialization in the constructor,
 
@@ -599,9 +501,7 @@ Don’t forget to modify the initialization in the constructor,
 {{region xamlflix_ganttview_21}}
 	this.TeamTasks = new ObservableCollection<TeamGanttTask>();
 	this.HighlightedTeamTasks = new ObservableCollection<TeamGanttTask>();  	
-	{{endregion}}
-
-
+{{endregion}}
 
 We’ll also modify LoadTasks to LoadTeamTasks,
 
@@ -610,13 +510,9 @@ We’ll also modify LoadTasks to LoadTeamTasks,
 {{region xamlflix_ganttview_22}}
 	//LoadTasks();
 	this.LoadTeamTasks();	
-	{{endregion}}
+{{endregion}}
 
-
-
-Copy and paste *LoadTasks* to the new method, *LoadTeamTasks* and make
-          the appropriate substitutions (e.g., TeamGanttTask for GanttTask).
-        
+Copy and paste *LoadTasks* to the new method, *LoadTeamTasks* and make the appropriate substitutions (e.g., TeamGanttTask for GanttTask).        
 
 Next, set the new property on the ChildGanttTask, childGT.TeamID,
 
@@ -653,9 +549,7 @@ Next, set the new property on the ChildGanttTask, childGT.TeamID,
 	        TeamTasks.Add(gt);
 	    }
 	}	
-	{{endregion}}
-
-
+{{endregion}}
 
 Don’t forget to update the binding in MainPage.xaml,
 
@@ -667,9 +561,7 @@ Don’t forget to update the binding in MainPage.xaml,
 	                VisibleRange="{Binding GanttRange}"
 	                PixelLength="{Binding ElementName=xRadSlider, Path=Value, Converter={StaticResource xConverter}}"
 	                HighlightedItemsSource="{Binding HighlightedTeamTasks}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Before we proceed we need a new property to hold the selectedTask,
 
@@ -689,9 +581,7 @@ Before we proceed we need a new property to hold the selectedTask,
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 Returning to MainPage.xaml we’ll use that new property for a new binding,
 
@@ -704,14 +594,9 @@ Returning to MainPage.xaml we’ll use that new property for a new binding,
 	                PixelLength="{Binding ElementName=xRadSlider, Path=Value, Converter={StaticResource xConverter}}"
 	                HighlightedItemsSource="{Binding HighlightedTeamTasks}"
 	                SelectedItem="{Binding SelectedTask, Mode=TwoWay}" />
-	{{endregion}}
+{{endregion}}
 
-
-
-Finally, we just need to update our highlighting logic to work with our new TeamTasks.
-          Copy and paste ToggleHighlight to ToggleTeamHighlight.
-          You will need to iterate through the tasks and find the children where the teamID matches the selected team id:
-        
+Finally, we just need to update our highlighting logic to work with our new TeamTasks. Copy and paste ToggleHighlight to ToggleTeamHighlight. You will need to iterate through the tasks and find the children where the teamID matches the selected team id:        
 
 #### __C#__
 
@@ -742,10 +627,6 @@ Finally, we just need to update our highlighting logic to work with our new Team
 	        }
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-Run the application and select a child.
-          Toggle the Highlight button and all the children on the same team are highlighted as well.
-        
+Run the application and select a child. Toggle the Highlight button and all the children on the same team are highlighted as well.       

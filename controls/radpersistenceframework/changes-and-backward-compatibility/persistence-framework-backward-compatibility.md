@@ -14,8 +14,7 @@ position: 0
 
 ## RadPersistenceFramework for Q3 2011
 
-The __PersistenceManager.GetStorage()__ method returns an object of type
-		  __ObjectStorage__ that exposes the following properties:
+The __PersistenceManager.GetStorage()__ method returns an object of type __ObjectStorage__ that exposes the following properties:
 		
 
 * __Count__ - this property is of type __int__ and it gets the number of persisted objects.
@@ -27,6 +26,5 @@ The __PersistenceManager.GetStorage()__ method returns an object of type
 * __Keys__ - this property gets the collection of the persisted objects' __StorageId__ values.
 			
 
-You can find more information about the __GetStorage()__method in the
-		  [Isolated Storage]({%slug persistence-framework-isolated-storage%}) article.
+You can find more information about the __GetStorage()__ method in the [Isolated Storage]({%slug persistence-framework-isolated-storage%}) article.
 		

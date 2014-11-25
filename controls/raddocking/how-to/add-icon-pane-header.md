@@ -10,11 +10,7 @@ position: 5
 
 # How to Add Icon to the RadPane's Header
 
-
-
-## 
-
-The purpose of this tutorial is to show you how to add an icon to the __RadPane's____Header__.
+The purpose of this tutorial is to show you how to add an icon to the __RadPane's__ __Header__.
 
 For the purpose of this tutorial the following __RadDocking__ declaration will be used:
 
@@ -40,15 +36,9 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 	    </telerik:RadSplitContainer>
 	
 	</telerik:RadDocking>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadDocking_HowTo_AddPaneHeaderIcon_010.png)
+![](images/RadDocking_HowTo_AddPaneHeaderIcon_010.png)
 
 In order to add an icon to the __RadPane's__ header, you should create a custom data template and set it to the __HeaderTemplate__ property of the __RadPane__. Consider the following example.
 
@@ -65,9 +55,7 @@ In order to add an icon to the __RadPane's__ header, you should create a custom 
 	    </DataTemplate>
 	
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 Set the created data template to the __HeaderTemplate__ property of the __RadPane__.
 
@@ -94,17 +82,11 @@ Set the created data template to the __HeaderTemplate__ property of the __RadPan
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is the final result:
 
-
-
-
-         
-      ![](images/RadDocking_HowTo_AddPaneHeaderIcon_020.png)
+![](images/RadDocking_HowTo_AddPaneHeaderIcon_020.png)
 
 # See Also
 

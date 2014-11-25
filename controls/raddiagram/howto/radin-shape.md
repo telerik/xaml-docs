@@ -87,7 +87,8 @@ Next, we can add a __RadDiagramShape__ that contains a __RadGridView__ component
 
 
 
-If you run the solution at this point, you should get the following diagramming structure:![raddiagram-howto-radcontrols-empty-gridview](images/raddiagram-howto-radcontrols-empty-gridview.png)
+If you run the solution at this point, you should get the following diagramming structure:
+![raddiagram-howto-radcontrols-empty-gridview](images/raddiagram-howto-radcontrols-empty-gridview.png)
 
 And as our __RadGridView__ is currently empty, we can go ahead and populate it with sample data. For that purpose, we first need to define a custom data class - let's name it *ProductSales*:
         
@@ -217,7 +218,7 @@ Next in our code-behind we can create a method that returns a list of __ProductS
 
 
 Now if we run the solution we will have a populated __RadGridView__ control inside the __RadDiagramShape__.
-        ![raddiagram-howto-radcontrols-gridview](images/raddiagram-howto-radcontrols-gridview.png)
+![raddiagram-howto-radcontrols-gridview](images/raddiagram-howto-radcontrols-gridview.png)
 
 We can also define a shape in the code-behind file and set its content to any RadControl. Please have a look at the example below as it demonstrates how to create a __RadDiagramShape__ and use a __RadCalendar__ in its __Content__:
         
@@ -286,7 +287,7 @@ We can also define a shape in the code-behind file and set its content to any Ra
 
 
 Running the project now should display two shapes within the __RadDiagram__ instance:
-        ![raddiagram-howto-radcontrols](images/raddiagram-howto-radcontrols.png)
+![raddiagram-howto-radcontrols](images/raddiagram-howto-radcontrols.png)
 
 Finally, we can connect these shapes using a single connection. Let's set it up in the __OnLoaded()__ method implementation:
         
@@ -333,8 +334,5 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 
 ![raddiagram-howto-radcontrols-link](images/raddiagram-howto-radcontrols-link.png)
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository
-            [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/ControlShape__.
+>tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/ControlShape__.
           
-
-# See Also

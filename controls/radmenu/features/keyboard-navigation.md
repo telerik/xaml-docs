@@ -10,10 +10,6 @@ position: 12
 
 # Keyboard Navigation
 
-
-
-## 
-
 Along with its other features, __RadMenu__ supports keyboard navigation. You can easily navigate through the items by just pressing the arrow keys on your keyboard. On the image bellow you can see a demonstration of different key presses and the result of them.
 
 ![](images/RadMenu_Keyboard_Navigation_01.png)

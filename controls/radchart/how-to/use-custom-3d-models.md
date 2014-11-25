@@ -27,11 +27,7 @@ Basically there are three steps involved in the utilization of a custom 3D model
 
 Here is a sample xaml export obtained by processing a custom 3D star model (produced by step 1.) with the Reader3ds library (step 2.):
 
-
-
-
-         
-      ![](images/RadChart_How_To_Use_Custom_3D_Models_01.png)
+![](images/RadChart_How_To_Use_Custom_3D_Models_01.png)
 
 #### __XAML__
 
@@ -153,7 +149,7 @@ Here is a sample xaml export obtained by processing a custom 3D star model (prod
 
 
 
-Take a look at step 3 - the actual incorporation of the custom 3D model in the chart control. First, you need some background on how the __RadChart__ control works when visualizing the __3D BarSeries__type. 
+Take a look at step 3 - the actual incorporation of the custom 3D model in the chart control. First, you need some background on how the __RadChart__ control works when visualizing the __3D BarSeries__ type. 
 
 __RadChart__ uses innovative approach to incorporate custom 3D controls and item controls (WPF does not implement such controls out-of-the box). In effect the __3D BarSeries__ (__3D ItemsControl__) renders a number of 3D bar-like control primitives (3D controls). What you need to do in order to customize the appearance of the individual 3D controls is to set the __Bar3DSeriesDefinition.ItemStyle__ property to a custom Style that defines the desired star model. You can do this by creating the actual series definition itself:
 
@@ -323,9 +319,7 @@ Here is the actual template that follows this pattern:
 
 
 
->
-
-Note that in order to display the stars with correct height (like the default __3D Bars__), a __ScaleTransform3D__ has been applied that binds the __ScaleY__ property like this:
+>Note that in order to display the stars with correct height (like the default __3D Bars__), a __ScaleTransform3D__ has been applied that binds the __ScaleY__ property like this:
 
 #### __XAML__
 
@@ -336,9 +330,4 @@ Note that in order to display the stars with correct height (like the default __
 
 
 Here is the resultant 3D bar series that uses the custom 3D star model instead of the default 3D bar model:
-
-
-
-
-         
-      ![](images/RadChart_How_To_Use_Custom_3D_Models_02.png)
+![](images/RadChart_How_To_Use_Custom_3D_Models_02.png)

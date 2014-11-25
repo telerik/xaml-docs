@@ -34,14 +34,11 @@ After adding reference to the aforementioned dlls, you can use the static class 
 	{
 	   RadSpellChecker.Check(this.textBox1, SpellCheckingMode.WordByWord);
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
-For the RadSpellChecker to work properly there is just one more thing you need to provide: 
-        a class deriving from RadDictionary which loads a .TDF file containing a dictionary for a specific language. 
-        Such a class is defined in “__Telerik.Windows.Documents.Proofing.Dictionaries.En-US__” included in Telerik UI.
-        It contains a dictionary you can use in order to spell check in English. If you reference it in your project, it will be loaded automatically by MEF. 
+For the RadSpellChecker to work properly there is just one more thing you need to provide: a class deriving from RadDictionary which loads a .TDF file containing a dictionary for a specific language. Such a class is defined in “__Telerik.Windows.Documents.Proofing.Dictionaries.En-US__” included in Telerik UI. It contains a dictionary you can use in order to spell check in English. If you reference it in your project, it will be loaded automatically by MEF. 
 
 ## Using RadSpellChecker with RadGridView or DataGrid
 
@@ -55,7 +52,7 @@ You can use RadSpellChecker for those controls by adding an attached property to
 
 {{region radspellchecker-getting-started_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
+{{endregion}}
 
 
 

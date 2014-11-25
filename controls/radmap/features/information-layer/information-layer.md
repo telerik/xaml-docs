@@ -27,17 +27,18 @@ The __InformationLayer__ allows you to display additional data on top of the dis
             
 
 * __InformationLayer.RegionMode__ – Gets or sets the geographic region size mode. It can be “Static” or “Dynamic” (default). “Static” means that region has constant geographic location and size which are specified in the Region” property. “Dynamic” means that location and size of the region is calculated when items are added or removed to/from information layer.
-            If elements are grouped into several regions on the map then it is recommended to use several information layers (one per region).
+
+If elements are grouped into several regions on the map then it is recommended to use several information layers (one per region).
 
 This topic will make you familiar with the following:
 
-* [InformationLayer Item Types](#InformationLayer_Item_Types)
+* [InformationLayer Item Types](#informationlayer-item-types)
 
-* [Adding an Item](#Adding_an_Item)
+* [Adding an Item](#adding-an-item)
 
-* [Positioning an Item](#Positioning_an_Item)
+* [Positioning an Item](#positioning-an-item)
 
-* [Binding Items](#Binding_Items)
+* [Binding Items](#binding-items)
 
 * [InformationLayer and InitializedCompleted](#InformationLayer_and_InitializedCompleted)
 
@@ -132,7 +133,7 @@ Here is an example for an __Ellipse__, positioned above Sofia, Bulgaria and visi
 >If you are using a more complex composition of UI Elements, these properties should be set to the one that represent the root. For example, if you have a __Grid__, which layouts an __Ellipse__ and a __TextBlock__, you have to set the attached properties to the __Grid__.
           
 
->Note that the location of the element on the map coincides with its top left corner, not with its center. To change the position of the element towards the location you can use its __HorizontalAlignment__ or __VerticalAlignment__ properties or use the __HotSpot__feature. To learn how read [here]({%slug radmap-features-hot-spots%}).
+>Note that the location of the element on the map coincides with its top left corner, not with its center. To change the position of the element towards the location you can use its __HorizontalAlignment__ or __VerticalAlignment__ properties or use the __HotSpot__ feature. To learn how read [here]({%slug radmap-features-hot-spots%}).
           
 
 #### __XAML__
@@ -159,7 +160,9 @@ Here is an example for an __Ellipse__, positioned above Sofia, Bulgaria and visi
 
 
 
-Here is a snapshot of the result:![](images/RadMap_Features_InformationLayer_01.png)
+Here is a snapshot of the result:
+
+![](images/RadMap_Features_InformationLayer_01.png)
 
 ## Binding Items
 

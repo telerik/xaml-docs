@@ -20,11 +20,11 @@ The default layout of the __RadMap__ is represented by the UI controls that appe
 
 * __Scale__ control - __ScaleVisibility__
 
-* __Command____Bar__ control - __CommandBarVisibility__
+* __Command__ __Bar__ control - __CommandBarVisibility__
 
 * __Mouse__ Location control - __MouseLocationIndicatorVisibility__
 
-* __Zoom____Bar__ control - __ZoomBarVisibility__
+* __Zoom__ __Bar__ control - __ZoomBarVisibility__
 
 In case you want to hide all of the controls and create your own custom layout, you don't have to set each of these properties, you can simply set the __UseDefaultLayout__ property of the __RadMap__ to __False__.
 
@@ -44,8 +44,6 @@ To learn how to use each of the __RadMap__ controls independent and outside of i
 
 * [Distance and Scale]({%slug radmap-features-dsitance-and-scale%})
 
-* [View Modes]({%slug radmap-features-view-modes%})
-
 * [Zoom Modes]({%slug radmap-features-zoom-modes%})
 
 * [Mouse Location]({%slug radmap-features-mouse-location%})
@@ -55,8 +53,6 @@ To learn how to use each of the __RadMap__ controls independent and outside of i
  * [Navigation]({%slug radmap-features-navigation%})
 
  * [Click Modes]({%slug radmap-features-click-modes%})
-
- * [View Modes]({%slug radmap-features-view-modes%})
 
  * [Zoom Modes]({%slug radmap-features-zoom-modes%})
 

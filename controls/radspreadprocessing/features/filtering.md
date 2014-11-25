@@ -102,7 +102,8 @@ The __GetValue()__ method provides the value which the __ShouldShowValue()__ met
 The diagram in __Figure 1__ shows the different types of filters, which inherit the __IFilter__ interface, and the classes which implement them:
         
 
-Figure 1![Rad Spread Processing Filtering 01](images/RadSpreadProcessing_Filtering_01.png)
+Figure 1
+![Rad Spread Processing Filtering 01](images/RadSpreadProcessing_Filtering_01.png)
 
 ## ValuesCollectionFilter
 
@@ -127,15 +128,15 @@ __Example 1__ shows how to create a __ValuesCollectionFilter__.
 #### __[C#] Example 1: Create ValuesCollectionFilter__
 
 {{region radspreadprocessing-features-filtering_0}}
-	            IEnumerable<string> stringItems = new List<string>() { "test", "1%", "1.0" };
-	            IEnumerable<DateGroupItem> dateItems = new List<DateGroupItem>()
-	            {
-	                new DateGroupItem(2013),
-	                new DateGroupItem(2014, 3)
-	            };
-	
-	            ValuesCollectionFilter filter = new ValuesCollectionFilter(0, stringItems, dateItems, true);
-	{{endregion}}
+    IEnumerable<string> stringItems = new List<string>() { "test", "1%", "1.0" };
+    IEnumerable<DateGroupItem> dateItems = new List<DateGroupItem>()
+    {
+        new DateGroupItem(2013),
+        new DateGroupItem(2014, 3)
+    };
+
+    ValuesCollectionFilter filter = new ValuesCollectionFilter(0, stringItems, dateItems, true);
+{{endregion}}
 
 
 
@@ -159,10 +160,10 @@ Other than the members of the __IFilter__ interface, the __CustomFilter__ class 
 * __LogicalOperator__: The logical operator which determines the logical relationship between the critera. It can have two values:
             
 
-* And
+	* And
                 
 
-* Or
+	* Or
                 
 
 The criteria is represented by the __CustomFilterCriteria__ class. Each criteria contains the following:
@@ -174,17 +175,17 @@ The criteria is represented by the __CustomFilterCriteria__ class. Each criteria
 * __ComparisonOperator__: The operator which indicates how the cell value should compare to the FilterValue. The comparison operator can be:
             
 
-* EqualsTo
+	* EqualsTo
 
-* GreaterThan
+	* GreaterThan
 
-* GreaterThanOrEqualsTo
+	* GreaterThanOrEqualsTo
 
-* LessThan
+	* LessThan
 
-* LessThanOrEqualsTo
+	* LessThanOrEqualsTo
 
-* NotEqualsTo
+	* NotEqualsTo
 
 __Example 2__ shows how to create a custom filter.
         
@@ -192,12 +193,10 @@ __Example 2__ shows how to create a custom filter.
 #### __[C#] Example 2: Create CustomFilter__
 
 {{region radspreadprocessing-features-filtering_1}}
-	            CustomFilterCriteria critera1 =
-	new CustomFilterCriteria(ComparisonOperator.EqualsTo, "Test string");
-	            CustomFilterCriteria critera2 =
-	            new CustomFilterCriteria(ComparisonOperator.GreaterThan, "-5");
-	            CustomFilter filter = new CustomFilter(0, critera1, LogicalOperator.Or, critera2);
-	{{endregion}}
+    CustomFilterCriteria critera1 = new CustomFilterCriteria(ComparisonOperator.EqualsTo, "Test string");
+    CustomFilterCriteria critera2 = new CustomFilterCriteria(ComparisonOperator.GreaterThan, "-5");
+    CustomFilter filter = new CustomFilter(0, critera1, LogicalOperator.Or, critera2);
+{{endregion}}
 
 
 
@@ -215,16 +214,16 @@ Other than the members of the __IFilter__ interface, the __TopFilter__ class exp
 * __TopFilterType__: The value indicating whether the filter should display the top or bottom values and whether the number of values will be indicated as a number of items or as percent of the total number of items. The top filter type can be:
             
 
-* TopNumber
+	* TopNumber
                 
 
-* BottomNumber
+	* BottomNumber
                 
 
-* TopPercent
+	* TopPercent
                 
 
-* BottomPercent
+	* BottomPercent
                 
 
 * __Value__: The number of items or the percent of the total number of items which will be displayed by the filter.
@@ -236,8 +235,8 @@ __Example 3__ shows how to create a top filter.
 #### __[C#] Example 3: Create TopFilter__
 
 {{region radspreadprocessing-features-filtering_2}}
-	            TopFilter filter = new TopFilter(0, TopFilterType.BottomPercent, 30);
-	{{endregion}}
+    TopFilter filter = new TopFilter(0, TopFilterType.BottomPercent, 30);
+{{endregion}}
 
 
 
@@ -252,9 +251,7 @@ The dynamic filter is a filter which shows or hides the rows in the column it fi
 Other than the members of the __IFilter__ interface, the __DynamicFilter__ class exposes only one property specific to it:
         
 
-* __DynamicFilterType__: The type of the dynamic filter, which determines what condition the filter should use to filter the column it is assigned to. The dynamic filter type can be used from the values of the
-              [DynamicFilterType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_filtering_dynamicfiltertype.html)
-              enumaration.
+* __DynamicFilterType__: The type of the dynamic filter, which determines what condition the filter should use to filter the column it is assigned to. The dynamic filter type can be used from the values of the [DynamicFilterType](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_model_filtering_dynamicfiltertype.html) enumaration.
             
 
 __Example 4__ demonstrates how to create a dynamic filter.
@@ -263,9 +260,8 @@ __Example 4__ demonstrates how to create a dynamic filter.
 #### __[C#] Example 4: Create DynamicFilter__
 
 {{region radspreadprocessing-features-filtering_3}}
-	            DynamicFilter filter = new DynamicFilter(0, DynamicFilterType.LastWeek);
-	{{endregion}}
-
+    DynamicFilter filter = new DynamicFilter(0, DynamicFilterType.LastWeek);
+{{endregion}}
 
 
 The filter will show only the values which are dates and which fall within the week prior to the application of the filter.
@@ -288,9 +284,9 @@ __Example 5__ demonstrates how to create a fore color filter.
 #### __[C#] Example 5: Create ForeColorFilter__
 
 {{region radspreadprocessing-features-filtering_4}}
-	            ThemableColor color = new ThemableColor(Colors.Red);
-	            ForeColorFilter filter = new ForeColorFilter(0, color);
-	{{endregion}}
+    ThemableColor color = new ThemableColor(Colors.Red);
+    ForeColorFilter filter = new ForeColorFilter(0, color);
+{{endregion}}
 
 
 
@@ -314,9 +310,9 @@ __Example 6__ shows hot to create a fill color filter.
 #### __[C#] Example 6: Create FillColorFilter__
 
 {{region radspreadprocessing-features-filtering_5}}
-	            IFill fill = new PatternFill(PatternType.Solid, Colors.Red, Colors.Red);
-	            FillColorFilter filter = new FillColorFilter(0, fill);
-	{{endregion}}
+    IFill fill = new PatternFill(PatternType.Solid, Colors.Red, Colors.Red);
+    FillColorFilter filter = new FillColorFilter(0, fill);
+{{endregion}}
 
 
 
@@ -334,11 +330,11 @@ In order to set a filter on a range, you need to follow the steps below:
 #### __[C#] Example 7: Set FilterRange__
 
 {{region radspreadprocessing-features-filtering_6}}
-	            Worksheet worksheet = workbook.ActiveWorksheet;
-	
-	            CellRange filterRange = new CellRange(0, 1, 5, 2);
-	            worksheet.Filter.FilterRange = filterRange;
-	{{endregion}}
+    Worksheet worksheet = workbook.ActiveWorksheet;
+
+    CellRange filterRange = new CellRange(0, 1, 5, 2);
+    worksheet.Filter.FilterRange = filterRange;
+{{endregion}}
 
 
 
@@ -348,8 +344,8 @@ In order to set a filter on a range, you need to follow the steps below:
 #### __[C#] Example 8: Create DynamicFilter__
 
 {{region radspreadprocessing-features-filtering_7}}
-	            DynamicFilter filter = new DynamicFilter(1, DynamicFilterType.AboveAverage);
-	{{endregion}}
+    DynamicFilter filter = new DynamicFilter(1, DynamicFilterType.AboveAverage);
+{{endregion}}
 
 The relative index specified in the constructor is 1, which means that the filter will be set on the second column of the range, that is, column C.
             
@@ -360,8 +356,8 @@ The relative index specified in the constructor is 1, which means that the filte
 #### __[C#] Example 9: Set Filter__
 
 {{region radspreadprocessing-features-filtering_8}}
-	            worksheet.Filter.SetFilter(filter);
-	{{endregion}}
+    worksheet.Filter.SetFilter(filter);
+{{endregion}}
 
 
 
@@ -371,15 +367,15 @@ Alternatively, you can set the filter through the cell selection like in __Examp
 #### __[C#] Example 10: Set Filter through Selection__
 
 {{region radspreadprocessing-features-filtering_9}}
-	            worksheet.Cells[filterRange].Filter(filter);
-	{{endregion}}
+    worksheet.Cells[filterRange].Filter(filter);
+{{endregion}}
 
 
 
 >Keep in mind that the first row of the FilterRange is reserved for column headers and will not be included in the actual filtering.
           
 
->tipNote that the filter cannot be set before the range. Attempting to do so will cause an exception.
+>tip Note that the filter cannot be set before the range. Attempting to do so will cause an exception.
           
 
 ## Reapplying a Filter
@@ -390,8 +386,8 @@ When a filter is set it is automatically applied. The application of a filter ha
 #### __[C#] Example 11: Set FilterRange__
 
 {{region radspreadprocessing-features-filtering_10}}
-	            worksheet.Filter.ReapplyFilter(1);
-	{{endregion}}
+    worksheet.Filter.ReapplyFilter(1);
+{{endregion}}
 
 
 
@@ -418,8 +414,8 @@ As is the case with the __ReapplyFilter()__ method, you can remove a filter by i
 #### __[C#] Example 12: Remove Filter__
 
 {{region radspreadprocessing-features-filtering_11}}
-	            bool success = worksheet.Filter.RemoveFilter(1);
-	{{endregion}}
+    bool success = worksheet.Filter.RemoveFilter(1);
+{{endregion}}
 
 
 

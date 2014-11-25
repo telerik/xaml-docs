@@ -10,31 +10,19 @@ position: 1
 
 # Implementing View-ViewModel 
 
-
-
-## 
-
 The purpose of this tutorial is to show you how to bind a __RadScheduleView__ with a ViewModel.
-        
 
 >Before reading this tutorial you should get familiar with the [Data Binding]({%slug radscheduleview-populating-with-data-data-binding-support-overview%}) support of the __RadScheduleView__ control.
-          
 
-* 
-            Add a new __RadScheduleView__ declaration in your XAML
-            
+* Add a new __RadScheduleView__ declaration in your XAML
 
 #### __XAML__
 
 {{region radscheduleview-populating-with-data-implementing-view-model_0}}
 	<telerik:RadScheduleView />
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Create a new class named __MyViewModel__.
-            
+* Create a new class named __MyViewModel__.
 
 #### __C#__
 
@@ -42,28 +30,20 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	public class MyViewModel
 	{
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radscheduleview-populating-with-data-implementing-view-model_2}}
 	Public Class MyViewModel
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            In the __MyViewModel__class add two properties:
-            
+* In the __MyViewModel__ class add two properties:
 
 1. __Appointments__ - we will bind the __AppointmentsSource__ property of the __RadScheduleView__ to this property.
-              
 
-1. __ResourcesTypes__- we will bind the __ResourceTypesSource__property of the __RadScheduleView__ to this property.
-              
+1. __ResourcesTypes__ - we will bind the __ResourceTypesSource__ property of the __RadScheduleView__ to this property.
 
 #### __C#__
 
@@ -92,9 +72,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	        this.resourceTypes= value;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -119,13 +97,9 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 			Me.m_ResourceTypes = value
 		End Set
 	End Property
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Let's create a method in the ViewModel that generates some Resources:
-            
+* Let's create a method in the ViewModel that generates some Resources:            
 
 #### __C#__
 
@@ -152,9 +126,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	    result.Add(speakerType);
 	    return result;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -177,13 +149,9 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	 result.Add(speakerType)
 	 Return result
 	End Function
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            All we have to do is to initialize the __resourceTypes__ and __appointments__ fields:
-            
+* All we have to do is to initialize the __resourceTypes__ and __appointments__ fields:            
 
 #### __C#__
 
@@ -193,9 +161,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	    this.resourceTypes = this.GenerateResourceTypes();
 	    this.appointments = new ObservableCollection<Appointment>();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -204,12 +170,9 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	 Me.resourceTypes = Me.GenerateResourceTypes()
 	 Me.appointments = New ObservableCollection(Of Appointment)()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            The ViewModel is complete. Now, let's return to the View. Add some __ViewDefinitions__, __GroupDescriptionsSource__ and bind the __AppointmentsSource__ and __ResourceTypes__
+* The ViewModel is complete. Now, let's return to the View. Add some __ViewDefinitions__, __GroupDescriptionsSource__ and bind the __AppointmentsSource__ and __ResourceTypes__
 
 #### __XAML__
 
@@ -229,29 +192,21 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	        </telerik:GroupDescriptionCollection>
 	    </telerik:RadScheduleView.GroupDescriptionsSource>
 	</telerik:RadScheduleView>
-	{{endregion}}
+{{endregion}}
 
-
-
-* 
-            Finally, set the DataContext:
-            
+* Finally, set the DataContext:            
 
 #### __C#__
 
 {{region radscheduleview-populating-with-data-implementing-view-model_10}}
 	this.DataContext = new MyViewModel();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region radscheduleview-populating-with-data-implementing-view-model_11}}
 	Me.DataContext = New MyViewModel()
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
 

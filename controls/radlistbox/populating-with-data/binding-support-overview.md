@@ -10,8 +10,6 @@ position: 3
 
 # Data Binding Support Overview
 
-
-
 Data binding allows you to establish a link between the UI and the underlying business logic and to keep them synchronized. It means that when a value is changed in the business layer, that change is automatically populated to the UI and vice versa. Of course, in order for this to work, you have to implement the proper notification or to use objects that have already implemented it.
 
 Binding to __RadListBox__ involves the following property:
@@ -26,10 +24,8 @@ To bind the __RadListBox__ to a collection of business objects, you should use i
 
 ## Data Templates
 
-The __ItemsSource__ property allows the __RadListBox__to be bound to any collection that implements the __IEnumerable__ interface. For each item in the collection, a container of type __RadListBoxItem__is created. By using the __ItemTemplate__, __ItemContainerStyle__ and __TemplateSelectors__ you can control the appearance of the dynamically created items.
+The __ItemsSource__ property allows the __RadListBox__ to be bound to any collection that implements the __IEnumerable__ interface. For each item in the collection, a container of type __RadListBoxItem__ is created. By using the __ItemTemplate__, __ItemContainerStyle__ and __TemplateSelectors__ you can control the appearance of the dynamically created items.
 
-Besides the __RadListBox's____ItemTemplate__ property, you could use the __DisplayMemberPath__ property for controlling the appearance of the created items.
+Besides the __RadListBox's ItemTemplate__ property, you could use the __DisplayMemberPath__ property for controlling the appearance of the created items.
 
->tipIf neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, the content of the item would be set to the value returned by the__ToString()__ method of the business object.
-
-# See Also
+>tipIf neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, the content of the item would be set to the value returned by the __ToString()__ method of the business object.

@@ -5,7 +5,7 @@ description: RadFixedDocument
 slug: radpdfprocessing-model-radfixeddocument
 tags: radfixeddocument
 published: True
-position: 0
+position: 1
 ---
 
 # RadFixedDocument
@@ -42,8 +42,8 @@ __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
 #### __[C#] Example 1: Create RadFixedDocument__
 
 {{region radpdfprocessing-model-radfixeddocument_0}}
-	            RadFixedDocument document = new RadFixedDocument();
-	{{endregion}}
+    RadFixedDocument document = new RadFixedDocument();
+{{endregion}}
 
 
 
@@ -58,8 +58,8 @@ __Example 2__ adds a page to the document created in __Example 1__.
 #### __[C#] Example 2: Add page to RadFixedDocument__
 
 {{region radpdfprocessing-model-radfixeddocument_1}}
-	            RadFixedPage page = document.Pages.AddPage();
-	{{endregion}}
+    RadFixedPage page = document.Pages.AddPage();
+{{endregion}}
 
 
 
@@ -72,16 +72,18 @@ __Example 3__ creates a page and adds it to the document created in __Example 1_
 #### __[C#] Example 3: Create and add a page to RadFixedDocument__
 
 {{region radpdfprocessing-model-radfixeddocument_2}}
-	            RadFixedPage page = new RadFixedPage();
-	            document.Pages.Add(page);
-	{{endregion}}
+    RadFixedPage page = new RadFixedPage();
+    document.Pages.Add(page);
+{{endregion}}
 
 
 
-# See Also[RadFixedDocument API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_radfixeddocument.html)[RadFixedDocument API Reference](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_fixed_model_radfixeddocument.html)
+# See Also
 
- * [Model]({%slug radpdfprocessing-model%})
+* [RadFixedDocument API Reference](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_fixed_model_radfixeddocument.html)
 
- * [RadFixedPage]({%slug radpdfprocessing-model-radfixedpage%})
+* [Model]({%slug radpdfprocessing-model-general-information%})
 
- * [Annotations and Destinations]({%slug radpdfprocessing-model-annotations-and-destinations%})
+* [RadFixedPage]({%slug radpdfprocessing-model-radfixedpage%})
+
+* [Annotations and Destinations]({%slug radpdfprocessing-model-annotations-and-destinations%})

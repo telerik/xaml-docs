@@ -16,7 +16,7 @@ position: 25
 
 >This feature is available in data bound scenarios only!
 
-The __RadChart__ allows you to programmatically sort its data. This is achieved via the __SortDescriptors__ property of the __RadChart__or the __SortDescriptors__ property of the __SeriesMapping__. This collection allows you to use descriptors which define the sorting member and the sorting direction for the data to which the __RadChart__ is bound. As this is a collection, you are able not only to add, but to remove or clear the entries in it, too.
+The __RadChart__ allows you to programmatically sort its data. This is achieved via the __SortDescriptors__ property of the __RadChart__ or the __SortDescriptors__ property of the __SeriesMapping__. This collection allows you to use descriptors which define the sorting member and the sorting direction for the data to which the __RadChart__ is bound. As this is a collection, you are able not only to add, but to remove or clear the entries in it, too.
 
 The items in this collection are of type __ChartSortDescriptor__. It exposes two important properties:
 
@@ -28,11 +28,7 @@ Basically the sorting in the context of the __RadChart__ represents the way in w
 
 Here is an example of a chart without sorting descriptors.
 
-
-
-
-         
-      ![](images/RadChart_Features_Sorting_01.png)
+![](images/RadChart_Features_Sorting_01.png)
 
 Here is an example of implementing sorting.
 
@@ -79,12 +75,8 @@ Here is an example of implementing sorting.
 	Me.radChart.SortDescriptors.Add( descriptor ) )
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_Features_Sorting_02.png)
+    
+Here is a snapshot of the result.
+    ![](images/RadChart_Features_Sorting_02.png)
 
 

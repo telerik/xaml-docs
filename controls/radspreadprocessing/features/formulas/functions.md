@@ -5,7 +5,7 @@ description: Functions
 slug: radspreadprocessing-features-formulas-functions
 tags: functions
 published: True
-position: 2
+position: 3
 ---
 
 # Functions
@@ -25,9 +25,9 @@ For example, the formula *=SUM(1, A2)* adds one to the value of cell A2. Note th
 
 The document model supports the following functions:
         
-<table><th><tr><td>
+<table><tr><th>
 
-Date and Time Functions</td><td></td></tr></th><tr><td>
+Date and Time Functions</th><th></th></tr><tr><td>
 
 DATE</td><td>
 
@@ -72,9 +72,9 @@ Returns the serial number of today's date</td></tr><tr><td>
 YEAR</td><td>
 
 Converts a serial number to a year</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Engineering Functions</td><td></td></tr></th><tr><td>
+Engineering Functions</th><th></th></tr><tr><td>
 
 BESSELI</td><td>
 
@@ -291,9 +291,9 @@ Converts an octal number to decimal</td></tr><tr><td>
 OCT2HEX</td><td>
 
 Converts an octal number to hexadecimal</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Financial Functions</td><td></td></tr></th><tr><td>
+Financial Functions</th><th></th></tr><tr><td>
 
 ACCRINTM</td><td>
 
@@ -482,9 +482,9 @@ Returns the annual yield for a discounted security; for example, a Treasury bill
 YIELDMAT</td><td>
 
 Returns the annual yield of a security that pays interest at maturity</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Information Functions</td><td></td></tr></th><tr><td>
+Information Functions</th><th></th></tr><tr><td>
 
 ERROR.TYPE</td><td>
 
@@ -549,9 +549,9 @@ Returns the error value #N/A</td></tr><tr><td>
 TYPE</td><td>
 
 Returns a number indicating the data type of a value</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Logical Functions</td><td></td></tr></th><tr><td>
+Logical Functions</th><th></th></tr><tr><td>
 
 AND</td><td>
 
@@ -580,9 +580,9 @@ Returns the logical value TRUE</td></tr><tr><td>
 XOR</td><td>
 
 Returns a logical exclusive OR of all arguments</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Lookup and Reference Functions</td><td></td></tr></th><tr><td>
+Lookup and Reference Functions</th><th></th></tr><tr><td>
 
 HYPERLINK</td><td>
 
@@ -595,9 +595,9 @@ Uses an index to choose a value from a reference or array</td></tr><tr><td>
 LOOKUP</td><td>
 
 Looks up values in a vector or array</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Math and Trigonometry Functions</td><td></td></tr></th><tr><td>
+Math and Trigonometry Functions</th><th></th></tr><tr><td>
 
 ABS</td><td>
 
@@ -838,9 +838,9 @@ Returns the hyperbolic tangent of a number</td></tr><tr><td>
 TRUNC</td><td>
 
 Truncates a number to an integer</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Statistical Functions</td><td></td></tr></th><tr><td>
+Statistical Functions</th><th></th></tr><tr><td>
 
 AVERAGE</td><td>
 
@@ -893,9 +893,9 @@ Calculates standard deviation based on the entire population</td></tr><tr><td>
 STDEVPA</td><td>
 
 Calculates standard deviation based on the entire population, including numbers, text, and logical values</td></tr></table>
-<table><th><tr><td>
+<table><tr><th>
 
-Text Functions</td><td></td></tr></th><tr><td>
+Text Functions</th><th></th></tr><tr><td>
 
 CHAR</td><td>
 

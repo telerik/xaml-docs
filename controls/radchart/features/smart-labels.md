@@ -20,7 +20,7 @@ For charts that have many data points or data points with values close to one an
 
 ## Enable/Disable Smart Labels feature
 
-The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnabled__of the __ChartArea__ property.
+The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnabled__ of the __ChartArea__ property.
 
 #### __XAML__
 
@@ -56,7 +56,7 @@ The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnable
 
 ## Configure the Smart Labels feature
 
-You are able to configure the setting of the Smart Labels feature by using the __LabelSettings__ property of the series definitions. For the most series this property is of type __LabelSettings__. For the __BarSeriesDefinition__ it is of type __BarLabelSettings__and for the __PieSereisDefinition__ and the __DoughnutSeriesDefinition__ it is of type __RadialLabelSettings__.
+You are able to configure the setting of the Smart Labels feature by using the __LabelSettings__ property of the series definitions. For the most series this property is of type __LabelSettings__. For the __BarSeriesDefinition__ it is of type __BarLabelSettings__ and for the __PieSereisDefinition__ and the __DoughnutSeriesDefinition__ it is of type __RadialLabelSettings__.
 
 ## LabelSettings
 
@@ -115,14 +115,10 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 	Me.radChart.DefaultSeriesDefinition = New LineSeriesDefinition()
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
 	{{endregion}}
+    
+    
 
-
-
-
-
-
-         
-      ![](images/RadChart_Features_SmartLabels_01.png)
+![](images/RadChart_Features_SmartLabels_01.png)
 
 ## BarLabelSettings
 
@@ -189,13 +185,8 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_Features_SmartLabels_02.png)
+    
+![](images/RadChart_Features_SmartLabels_02.png)
 
 ## RadialLabelSettings
 
@@ -228,7 +219,6 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 	{{endregion}}
 
 
-
 #### __C#__
 
 {{region radchart-features-smart-labels_10}}
@@ -239,8 +229,7 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 	pieSeries.LabelSettings = radialSettings;
 	this.radChart.DefaultSeriesDefinition = pieSeries;
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
-	{{endregion}}
-
+{{endregion}}
 
 
 #### __VB.NET__
@@ -255,10 +244,5 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
 	{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadChart_Features_SmartLabels_03.png)
+Here is a snapshot of the result.
+ ![](images/RadChart_Features_SmartLabels_03.png)

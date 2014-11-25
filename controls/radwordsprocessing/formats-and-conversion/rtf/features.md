@@ -5,7 +5,7 @@ description: Features
 slug: radwordsprocessing-formats-and-conversion-rtf-features
 tags: features
 published: True
-position: 0
+position: 1
 ---
 
 # Features
@@ -15,16 +15,10 @@ position: 0
 Below you can find list with all features that are supported by RtfFormatProvider.
 
 ## 
-<table><th><tr><td>
-
-Feature
-                </td><td>
-
-Supported
-                </td><td>
-
-Comment
-                </td></tr></th><tr><td>
+<table><tr><th>Feature</th><th>
+Supported</th><th>
+Comment</th></tr>
+<tr><td>
 
 <b>
                   Text Formatting
@@ -420,6 +414,22 @@ Yes
 
 </td></tr><tr><td>
 
+Merge fields
+              </td><td>
+
+Yes
+              </td><td>
+
+</td></tr><tr><td>
+
+Document Variables
+              </td><td>
+
+Yes
+              </td><td>
+
+</td></tr><tr><td>
+
 Other Fields
               </td><td>
 
@@ -466,5 +476,3 @@ Yes
               </td><td>
 
 </td></tr></table>
-
-# See Also

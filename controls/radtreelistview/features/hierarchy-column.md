@@ -21,8 +21,8 @@ By default the first column contains the tree view UI. In order to change the co
 Here is an example.
 
 #### __XAML__
-
 {{region radtreelistview-features-hierarchy-column_0}}
+
 	<telerik:RadTreeListView x:Name="radTreeListView"
 	                            AutoGenerateColumns="False"
 	                            HierarchyColumnIndex="1">
@@ -37,15 +37,9 @@ Here is an example.
 	                                    Header="Count" />
 	    </telerik:RadTreeListView.Columns>
 	</telerik:RadTreeListView>
-	{{endregion}}
+{{endregion}}
 
-
-
-
-
-
-         
-      ![](images/RadTreeListView_HierarchyColumn_01.png)
+![](images/RadTreeListView_HierarchyColumn_01.png)
 
 # See Also
 

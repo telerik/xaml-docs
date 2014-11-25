@@ -14,7 +14,9 @@ position: 4
 
 This article will show you how to use the __IsRecentColorsActive__ property of the __RadColorPicker__ control.
 
-The final result should look like this![Rad Color Picker How To Use Is Recent Colors Active](images/RadColorPicker_HowTo_Use_IsRecentColorsActive.png)
+The final result should look like this
+
+![Rad Color Picker How To Use Is Recent Colors Active](images/RadColorPicker_HowTo_Use_IsRecentColorsActive.png)
 
 ## 
 
@@ -99,57 +101,15 @@ In the button's Click event handler we display a __RadExpander__ control which h
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-use-isrecentcolorsactive_3}}
-		Dim timer As DispatcherTime
-		Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
-			Me.xColorPicker.IsDropDownOpen = False
-			Me.xExpander.Visibility = System.Windows.Visibility.Visible
-			timer = New DispatcherTimer()
-			timer.Interval = New TimeSpan(0, 0, 0, 0, 20)
-			timer.Tick += New EventHandler(timer_Tick)
-			timer.Start()
-		End Sub
-	
-		Private Sub timer_Tick(sender As Object, e As EventArgs)
-			Me.xExpander.IsExpanded = Not (Me.xExpander.IsExpanded)
-			timer.[Stop]()
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-howto-use-isrecentcolorsactive_5"
-		Private Sub OK_RadButton_Click(sender As Object, e As RoutedEventArgs)
-			Me.xColorPicker.SelectedColor = Me.xColorEditor.SelectedColor
-			timer.Start()
-			Me.xColorPicker.IsDropDownOpen = True
-			Me.xExpander.Visibility = System.Windows.Visibility.Collapsed
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-appearance_4"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		' colorPicker.HeaderPaletteVizibility = Visibility.Collapsed;
-	#End Region
-	
-	#Region "radcolorpicker-appearance_6"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.StandardPaletteHeaderText = "StandardPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_8"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.MainPaletteHeaderText = "MainPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_10"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.NoColorText = "No color Text"
-	#End Region
-	
-	End Class
-
+    Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
+        Me.xColorPicker.IsDropDownOpen = False
+        Me.xExpander.Opacity = 1
+        Me.xExpander.IsExpanded = True
+    End Sub
+{{endregion}}
 
 
 Finaly in the confirmation's button Click event handler we implement the selection logic of the customized color.
@@ -169,42 +129,16 @@ Finaly in the confirmation's button Click event handler we implement the selecti
 
 
 
-#### __VB__
+#### __VB.NET__
 
 {{region radcolorpicker-howto-use-isrecentcolorsactive_5}}
-		Private Sub OK_RadButton_Click(sender As Object, e As RoutedEventArgs)
-			Me.xColorPicker.SelectedColor = Me.xColorEditor.SelectedColor
-			timer.Start()
-			Me.xColorPicker.IsDropDownOpen = True
-			Me.xExpander.Visibility = System.Windows.Visibility.Collapsed
-		End Sub
-	#End Region
-	
-	#Region "radcolorpicker-appearance_4"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		' colorPicker.HeaderPaletteVizibility = Visibility.Collapsed;
-	#End Region
-	
-	#Region "radcolorpicker-appearance_6"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.StandardPaletteHeaderText = "StandardPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_8"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.MainPaletteHeaderText = "MainPaletteHeader"
-	#End Region
-	
-	#Region "radcolorpicker-appearance_10"
-		Dim colorPicker As New RadColorPicker()
-	colorPicker.NoColorText = "No color Text"
-	#End Region
-	
-	End Class
-
-
-
+    Private Sub OK_RadButton_Click(sender As Object, e As RoutedEventArgs)
+        Me.xColorPicker.SelectedColor = Me.xColorEditor.SelectedColor
+        Me.xExpander.IsExpanded = False
+        Me.xExpander.Opacity = 0
+        Me.xColorPicker.IsDropDownOpen = True
+    End Sub
+{{endregion}}
 ## 
 
 Now we are able to run the project and select a custom color following these steps:
@@ -218,5 +152,3 @@ Now we are able to run the project and select a custom color following these ste
 
 1. Your custom color will be added to the __RecentColors__ palette.
 			![Rad Color Picker How To Use Is Recent Colors Active 3](images/RadColorPicker_HowTo_Use_IsRecentColorsActive_3.png)
-
-# See Also

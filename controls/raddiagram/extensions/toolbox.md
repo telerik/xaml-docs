@@ -12,8 +12,7 @@ position: 1
 
 
 
-This article describes the main features and properties of the __RadDiagramToolbox__ control. You can examine the behavior of the control in the
-                {% if site.site_name == 'Silverlight' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/silverlight/#Diagrams/DesignToolbox){% endif %}{% if site.site_name == 'WPF' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/wpf/#Diagrams/DesignToolbox){% endif %}.
+This article describes the main features and properties of the __RadDiagramToolbox__ control. You can examine the behavior of the control in the {% if site.site_name == 'Silverlight' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/silverlight/#Diagrams/DesignToolbox){% endif %}{% if site.site_name == 'WPF' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/wpf/#Diagrams/DesignToolbox){% endif %}.
             
 
 >importantIn order to use the __RadDiagramToolbox__ control in your projects you have to add references to the following assemblies:
@@ -33,15 +32,13 @@ This article describes the main features and properties of the __RadDiagramToolb
 
 * Telerik.Windows.Data{% endif %}
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the
-                    {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}
-                    article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
                 
 
 ## Visual Structure And Properties
 
 The __Diagram Extensions__ include a __RadDiagramToolbox__ control. It is designed to display multiple galleries of __RadDiagramShapes__ in a single control. Below you can see a snapshot and explanation of the main visual elements of the control.
-                ![Rad Diagram Extensions Toolbox Overview](images/RadDiagram_Extensions_Toolbox_Overview.png)
+![Rad Diagram Extensions Toolbox Overview](images/RadDiagram_Extensions_Toolbox_Overview.png)
 
 The __RadDiagramToolbox__ exposes the following list of properties:
                 

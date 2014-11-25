@@ -73,10 +73,10 @@ If you want to implement a custom behavior for one or both of them, just set the
 
 {{region radmap-features-click-modes_3}}
 	Private Sub radMap_MapMouseClick(sender As Object, e As MapMouseRoutedEventArgs)
-	 'implement logic regarding single click here
+	 'implement logic regarding single click here'
 	End Sub
 	Private Sub radMap_MapMouseDoubleClick(sender As Object, e As MapMouseRoutedEventArgs)
-	 'implement logic regarding double click here
+	 'implement logic regarding double click here'
 	End Sub
 	{{endregion}}
 
@@ -85,8 +85,6 @@ If you want to implement a custom behavior for one or both of them, just set the
 # See Also
 
  * [Navigation]({%slug radmap-features-navigation%})
-
- * [View Modes]({%slug radmap-features-view-modes%})
 
  * [Zoom Modes]({%slug radmap-features-zoom-modes%})
 

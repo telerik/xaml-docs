@@ -5,7 +5,7 @@ description: TextFragment
 slug: radpdfprocessing-model-textfragment
 tags: textfragment
 published: True
-position: 2
+position: 3
 ---
 
 # TextFragment
@@ -30,9 +30,9 @@ __Example 1__ shows how you can initialize a TextFragment object and add it in a
 #### __[C#] Example 1: Create TextFragment and add it to container.__
 
 {{region radpdfprocessing-model-textfragment_0}}
-	            TextFragment fragment = new TextFragment();
-	            container.Content.Add(fragment);
-	{{endregion}}
+    TextFragment fragment = new TextFragment();
+    container.Content.Add(fragment);
+{{endregion}}
 
 
 
@@ -42,9 +42,9 @@ __Example 2__ demonstrates how to use one of the factory methods of the __Conten
 #### __[C#] Example 2: Add TextFragment to container__
 
 {{region radpdfprocessing-model-textfragment_1}}
-	            TextFragment textFragment = container.Content.AddTextFragment();
-	            TextFragment textFragmentWithText = container.Content.AddTextFragment("Text");
-	{{endregion}}
+    TextFragment textFragment = container.Content.AddTextFragment();
+    TextFragment textFragmentWithText = container.Content.AddTextFragment("Text");
+{{endregion}}
 
 
 
@@ -77,30 +77,28 @@ TextFragment exposes the following properties that can modify the look of the re
 * __RenderingMode__: Enumeration representing the way the text should be rendered. It can have on of the following values:
             
 
-* __Fill__: Fill text.
+ * __Fill__: Fill text.
                 
 
-* __Stroke__: Stroke text.
+ * __Stroke__: Stroke text.
                 
 
-* __FillAndStroke__: Fill, then stroke text.
+ * __FillAndStroke__: Fill, then stroke text.
                 
 
-* __None__: Neither fill nor stroke text (invisible).
+ * __None__: Neither fill nor stroke text (invisible).
                 
 
-* __FillAndAddToClippingPath__: Fill text and add to path for clipping (see above).
+ * __FillAndAddToClippingPath__: Fill text and add to path for clipping (see above).
                 
 
-* __StrokeAndAddToClippingPath__: Stroke text and add to path for clipping.
+ * __StrokeAndAddToClippingPath__: Stroke text and add to path for clipping.
+               
 
+ * __FillStrokeAndAddToClippingPath__: Fill, then stroke text and add to path for clipping
                 
 
-* __FillStrokeAndAddToClippingPath__: Fill, then stroke text and add to path for clipping
-                
-
-* __AddToClippingPath__: Add text to path for clipping.
-                The default value for this property is __Fill__.
+ * __AddToClippingPath__: Add text to path for clipping. The default value for this property is __Fill__.
             
 
 * __TextRise__: Specifies the distance, in unscaled text space units, to move the baseline up or down from its default location.

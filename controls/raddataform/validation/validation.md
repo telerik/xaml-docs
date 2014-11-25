@@ -18,11 +18,7 @@ RadDataForm provides data validation of the user input. Data Validation enables 
 
 Generally, the built-in validation will be performed once the edit has been committed and the RadDataForm will be visualized as follows:
 
-
-
-
-         
-      ![](images/RadDataForm_Validation1.png)
+![](images/RadDataForm_Validation1.png)
 
 In the case above the Framework handles the validation and it fails due to type incompatibility.
 
@@ -33,6 +29,7 @@ For example:
 #### __C#__
 
 {{region raddataform-validation_0}}
+
 	private void DataForm1_ValidatingItem(object sender, System.ComponentModel.CancelEventArgs e)
 	  {   
 	   var employer = this.DataForm1.CurrentItem as Employee;
@@ -48,6 +45,7 @@ For example:
 #### __VB.NET__
 
 {{region raddataform-validation_1}}
+
 	Private Sub DataForm1_ValidatingItem(sender As Object, e As System.ComponentModel.CancelEventArgs) 
 	 Dim employer = TryCast(Me.DataForm1.CurrentItem, Employee)
 	 If employer.Salary < 1000 Then
@@ -60,11 +58,7 @@ For example:
 
 In this case the RadDataForm will be displayed as the image below:
 
-
-
-
-         
-      ![](images/RadDataForm_Validation2.png)
+ ![](images/RadDataForm_Validation2.png)
 
 
 
@@ -102,6 +96,7 @@ Yet another approach applicable when defining custom fields is to specify the va
 #### __VB.NET__
 
 {{region raddataform-validation_3}}
+
 	Public Property StartingDate() As DateTime
 	 Get
 	  Return Me.startingDate
@@ -126,6 +121,7 @@ The definition of the DataFormDataField should be like follows:
 #### __XAML__
 
 {{region raddataform-validation_4}}
+
 	<telerik:DataFormDateField Label="Starting date" DataMemberBinding="{Binding StartingDate, Mode=TwoWay, ValidatesOnExceptions=True, NotifyOnValidationError=True}"/>
 	{{endregion}}
 
@@ -133,8 +129,4 @@ The definition of the DataFormDataField should be like follows:
 
 Once the validation is performed, the RadDataForm will be displayed as the image below:
 
-
-
-
-         
-      ![](images/RadDataForm_Validation3.png)
+ ![](images/RadDataForm_Validation3.png)

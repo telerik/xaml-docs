@@ -17,45 +17,39 @@ position: 1
 __ColorPreset__ is an enum that represent all built-in palettes.
 				
 
-You can use it to set  the __Palette__ property of RadColorPaletteView or
-					__HeaderPalette__/__StandardPalette__/__MainPalette__
-					properties of the __RadColorSelector__.
+You can use it to set  the __Palette__ property of RadColorPaletteView or __HeaderPalette__/__StandardPalette__/__MainPalette__ properties of the __RadColorSelector__.
 				
-
-	
-					public enum ColorPreset
-					{
-						None,
-						Default,
-						Standard,
-						Grayscale,
-						Web216,
-						ReallyWebSafe,
-						// MS word named presets below
-						Office,
-						Apex,
-						Aspect,
-						Civic,
-						Concourse,
-						Equity,
-						Flow,
-						Foundry,
-						Median,
-						Metro,
-						Module,
-						Opulent,
-						Oriel,
-						Origin,
-						Paper,
-						Solstice,
-						Technic,
-						Trek,
-						Urban,
-						Verve
-					}
-				
-
-
+#### __C#__
+    public enum ColorPreset
+    {
+        None,
+        Default,
+        Standard,
+        Grayscale,
+        Web216,
+        ReallyWebSafe,
+        // MS word named presets below
+        Office,
+        Apex,
+        Aspect,
+        Civic,
+        Concourse,
+        Equity,
+        Flow,
+        Foundry,
+        Median,
+        Metro,
+        Module,
+        Opulent,
+        Oriel,
+        Origin,
+        Paper,
+        Solstice,
+        Technic,
+        Trek,
+        Urban,
+        Verve
+    }
 
 #### __XAML__
 
@@ -84,8 +78,6 @@ You can use it to set  the __Palette__ property of RadColorPaletteView or
 		colorPaletteView.Palette = ColorPreset.Office
 		Dim colorSelector As New RadColorSelector()
 		colorSelector.MainPalette = ColorPreset.Office
-	#End Region
-	
-	End Class
+	{{endregion}}
 
 

@@ -14,9 +14,9 @@ position: 0
 
 ## 
 
-The engine that powers RadExpressionEditor enables us to parse a string into a LINQ expression, which can be consumed by any API accepting a LINQ expression.
+The engine that powers __RadExpressionEditor__ enables us to parse a string into a __LINQ expression__, which can be consumed by any __API__ accepting a __LINQ expression__.
 
-RadExpressionEditor always generates a LambdaExpression with one parameter. The type of the parameter is inferred from the value of the Item property of RadExpressionEditor instance. For more information on lambdas, please refer to the [Lambdas help topic]({%slug radexpressioneditor-expressions-lambdas%}).
+__RadExpressionEditor__ always generates a __LambdaExpression__ with one parameter. The type of the parameter is inferred from the value of the Item property of __RadExpressionEditor__ instance. For more information on lambdas, please refer to the [Lambdas help topic]({%slug radexpressioneditor-expressions-lambdas%}).
 Here are the basic concepts of the expression engine: 
 
 * [Member Access]({%slug radexpressioneditor-expressions-member-access%})

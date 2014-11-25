@@ -50,12 +50,12 @@ This document presenter displays the pages in a vertical order and is used by de
 
 {{region radpdfviewer-ui-document-presenters_0}}
 			this.radPdfViewer.FixedDocumentPresenter = this.viewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentPagesPresenter);
-	{{endregion}}
+{{endregion}}
 
 
 
-And here is the result:        
-        ![Rad Pdf Viewer Ui Document Presenters 01](images/RadPdfViewer_Ui_Document_Presenters_01.png)
+And here is the result: 
+![Rad Pdf Viewer Ui Document Presenters 01](images/RadPdfViewer_Ui_Document_Presenters_01.png)
 
 ## Using FixedDocumentSinglePageViewPresenter
 
@@ -66,12 +66,12 @@ This document presenter displays a single page inside the viewport. The page is 
 
 {{region radpdfviewer-ui-document-presenters_1}}
 			this.radPdfViewer.FixedDocumentPresenter = this.viewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentSinglePageViewPresenter);
-	{{endregion}}
+{{endregion}}
 
 
 
 The result is as follows:    
-        ![Rad Pdf Viewer Ui Document Presenters 02](images/RadPdfViewer_Ui_Document_Presenters_02.png)
+![Rad Pdf Viewer Ui Document Presenters 02](images/RadPdfViewer_Ui_Document_Presenters_02.png)
 
 # See Also
 

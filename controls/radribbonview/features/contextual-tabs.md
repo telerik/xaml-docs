@@ -12,7 +12,8 @@ position: 2
 
 
 
-A contextual tab allows you to provide the users with a certain UI when they are in a specific context or they have selected a specific element. The contextual tabs are organized in groups, so that the user can see multiple tabs available for specific context.![Rad Ribbon View Contextual Sample](images/RadRibbonView_Contextual_Sample.png)
+A contextual tab allows you to provide the users with a certain UI when they are in a specific context or they have selected a specific element. The contextual tabs are organized in groups, so that the user can see multiple tabs available for specific context.
+![Rad Ribbon View Contextual Sample](images/RadRibbonView_Contextual_Sample.png)
 
 The contextual groups are used to display tabs with a context-specific functionality. They get displayed only when this functionality is needed. This way the common UI in the __RadRibbonView__ becomes lighter while the specific functionality becomes easier to find as it is grouped and displayed on demand.
 	  
@@ -151,9 +152,7 @@ In order to data-bind the __ContextualGroups__ properties you can also use style
 
 
 
->tipYou can download a runnable project demonstrating this approach from our online SDK repository. Please open [this link](
-			  https://github.com/telerik/xaml-sdk
-			) and navigate to RibbonView/ContextualGroups-DataBinding.
+>tipYou can download a runnable project demonstrating this approach from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to RibbonView/ContextualGroups-DataBinding.
 		  
 
 __RadRibbonView__ exposes two methods that allow you to work with the __ContextualGroups ContainerGenerator__:
@@ -162,7 +161,7 @@ __RadRibbonView__ exposes two methods that allow you to work with the __Contextu
 * __ContainerFromContextualGroupItem()__ - returns the __RadRibbonContextualGroup__ corresponding to the given item.
 			
 
-* __ItemFromContextualGroupContainer()__ -returns the item that corresponds to the specified, generated __RadRibbonContextualGroup__.
+* __ItemFromContextualGroupContainer()__ - returns the item that corresponds to the specified, generated __RadRibbonContextualGroup__.
 			
 
 ## RibbonContextualGroup Properties
@@ -274,7 +273,8 @@ You can easily control the active groups from code-behind. For instance, the __I
 	End Sub
 	{{endregion}}
 
-![Rad Ribbon View Contextual Groups Activate 1](images/RadRibbonView_ContextualGroups_Activate1.png)![Rad Ribbon View Contextual Groups Activate 2](images/RadRibbonView_ContextualGroups_Activate2.png)
+![Rad Ribbon View Contextual Groups Activate 1](images/RadRibbonView_ContextualGroups_Activate1.png)
+![Rad Ribbon View Contextual Groups Activate 2](images/RadRibbonView_ContextualGroups_Activate2.png)
 
 # See Also
 

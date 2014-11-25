@@ -44,9 +44,9 @@ Here are some of these resources:{% endif %}{% if site.site_name == 'Silverlight
 
 * __PaneDocumentHostTemplate__ - contains a grid which includes the following:
 
-* __Chrome__ - is of type __ButtonChrome__ and has a default style __DocumentTabChromeStyle__ which exposes many editable resources which will change the pane's appearance.
+	* __Chrome__ - is of type __ButtonChrome__ and has a default style __DocumentTabChromeStyle__ which exposes many editable resources which will change the pane's appearance.
 
-* __HeaderElement__ - is of type __TabItemContentPresenter__ and represents the pane's header.{% if site.site_name == 'Silverlight' %}
+	* __HeaderElement__ - is of type __TabItemContentPresenter__ and represents the pane's header.{% if site.site_name == 'Silverlight' %}
 
 To easily change the pane's visual appearance you can modify the brushes used in the various pane's states.{% endif %}{% if site.site_name == 'Silverlight' %}
 
@@ -62,29 +62,17 @@ For each of the following states a couple of brushes are available:{% endif %}
 
 The available brushes are:{% endif %}
 
-* {% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __PaneTabInnerBorder__ - is the pane's header tab inner border in the specified state (from the list above).{% endif %}
 
-__PaneTabInnerBorder___ - is the pane's header tab inner border in the specified state (from the list above).{% endif %}
+* {% if site.site_name == 'Silverlight' %} __PaneTabOuterBorder__ - is the brush used for the pane's header tab outer boder in the specified state. {% endif %}
 
-* {% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __PaneTabBackground__- is the pane's header tab background brush in the specified state.{% endif %}
 
-__PaneTabOuterBorder___ - is the brush used for the pane's header tab outer boder in the specified state. {% endif %}
+* {% if site.site_name == 'Silverlight' %} __PaneTabInnerBorderVertical__ - is the pane's header tab inner border brush used when it is pinned vertically in the specified state.{% endif %}
 
-* {% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __PaneTabOuterBorderVertical__ - is the pane's header tab outer border brush used when it is pinned vertically in the specified state.{% endif %}
 
-__PaneTabBackground___- is the pane's header tab background brush in the specified state.{% endif %}
-
-* {% if site.site_name == 'Silverlight' %}
-
-__PaneTabInnerBorderVertical___ - is the pane's header tab inner border brush used when it is pinned vertically in the specified state.{% endif %}
-
-* {% if site.site_name == 'Silverlight' %}
-
-__PaneTabOuterBorderVertical___ - is the pane's header tab outer border brush used when it is pinned vertically in the specified state.{% endif %}
-
-* {% if site.site_name == 'Silverlight' %}
-
-__PaneTabBackgroundVertical___ - is the brush used for the pane's header tab background when it is pinned vertically in the specified state. {% endif %}{% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __PaneTabBackgroundVertical__ - is the brush used for the pane's header tab background when it is pinned vertically in the specified state. {% endif %}{% if site.site_name == 'Silverlight' %}
 
 Here is an example of the described resources modified.{% endif %}{% if site.site_name == 'Silverlight' %}
 

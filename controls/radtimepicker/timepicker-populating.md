@@ -33,7 +33,7 @@ The __SelectedTime__ property holds the selected time.
 
 __Populating:__
 
-You can limit the times that can be selected by setting the __StartTime__ and __EndTime__ properties. The __TimeInterval__property allows user to specify the interval between time slots available for selection. RadTimePicker also allows binding to various data source types through __ClockItemSource__ property.
+You can limit the times that can be selected by setting the __StartTime__ and __EndTime__ properties. The __TimeInterval__ property allows user to specify the interval between time slots available for selection. RadTimePicker also allows binding to various data source types through __ClockItemSource__ property.
 
 #### __XAML__
 
@@ -73,4 +73,4 @@ If you need a clock that takes less space, use the RadClock control which in its
 
 __Styling and Appearance:__
 
-The TimePicker control has __IconButtonStyle__ property that can be used to style the toggle button of the control and also support different layouts for the Clock using __ClockPanel__property. For more information see the Styling and Appearance section.
+The TimePicker control has __IconButtonStyle__ property that can be used to style the toggle button of the control and also support different layouts for the Clock using __ClockPanel__ property. For more information see the Styling and Appearance section.

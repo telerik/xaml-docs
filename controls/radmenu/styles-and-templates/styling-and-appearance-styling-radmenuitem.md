@@ -29,10 +29,8 @@ Load your project in Expression Blend and open the User Control that holds the _
 * You can also use the __ItemContainerStyle__ property of the __RadMenu__, when you have dynamic items. In this way you have to set the style only once and it will be applied to all of the __RadMenuItems__. To copy the default style via the __ItemContainerStyle__ property select the __RadMenu__ holding the items and choose *Object -> Edit Additional Styles -> Edit Generated Item Container (ItemContainerStyle) -> Edit a Copy *from the menu.            
 
 >When using __ItemContainerStyle__ with static items, it will get applied only to the direct children of the __RadMenu__ - the top-level items. If you want their child items to have the same style you have to manually set the __ItemContainerStyle__ property of their parents.
-
-When using the __ItemContainerStyle__ with dynamic items, its value gets inherited through the hierarchy thanks to the __HierarchicalDataTemplate__. You are free to break the inheritance, when needed, by using multiple nested __HierarchicalDataTemplates__ and by setting the __ItemContainerStyle__ property of each of them. To learn more about using __RadMenu__ with dynamic data read [here]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}).
-
-Choosing the style for an item depending on its position in the hierarchy can be done by using the __ItemContainerStyleSelector__ property. Read more about selectors [here]({%slug radmenu-populating-with-data-template-and-style-selectors%}).                
+>When using the __ItemContainerStyle__ with dynamic items, its value gets inherited through the hierarchy thanks to the __HierarchicalDataTemplate__. You are free to break the inheritance, when needed, by using multiple nested __HierarchicalDataTemplates__ and by setting the __ItemContainerStyle__ property of each of them. To learn more about using __RadMenu__ with dynamic data read [here]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}).
+>Choosing the style for an item depending on its position in the hierarchy can be done by using the __ItemContainerStyleSelector__ property. Read more about selectors [here]({%slug radmenu-populating-with-data-template-and-style-selectors%}).                
 
 You will be prompted for the name of the style and where to be placed. 
 

@@ -20,9 +20,9 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 * __Up\Down__ - the __Up__ and __Down Arrow__ keys have two functions depending on the state of the dropdown: 
 
-* When the dropdown of the __RadComboBox__ is __opened__, then pressing __Up\Down Arrows__ will change the __highlighted item__ in the list. 
+	* When the dropdown of the __RadComboBox__ is __opened__, then pressing __Up\Down Arrows__ will change the __highlighted item__ in the list. 
 
-* When the dropdown of the __RadComboBox__ is __closed__, then pressing __Up\Down Arrows__ will change the [SelectedItem](#Using_the_SelectedItem). 
+	* When the dropdown of the __RadComboBox__ is __closed__, then pressing __Up\Down Arrows__ will change the [SelectedItem](#Using_the_SelectedItem). 
 
 * __Left\Right__ - the __Left__ and __Right Arrow__ keys have the same functions as the __Up__ and __Down__. However, they will affect the selected\highlighted item only when the __RadComboBox__ is __not editable__ (the __IsEditable__ property is set to __False__). 
 
@@ -32,9 +32,9 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 * __Home\End__ - pressing the __Home\End__ keys will take effect only when the __RadComboBox__ is __not editable__ (the __IsEditable__ property is set to __False__). These keys have two functions depending on the dropdown state: 
 
-* When the dropdown of the __RadComboBox__ is __opened__, then pressing the __Home\End__ keys will change the __highlighted item__ to the first\last item in the list. 
+	* When the dropdown of the __RadComboBox__ is __opened__, then pressing the __Home\End__ keys will change the __highlighted item__ to the first\last item in the list. 
 
-* When the dropdown of the __RadComboBox__ is __closed__, then pressing the __Home\End__ keys will change the __selected item__ to the first\last item in the list. 
+	* When the dropdown of the __RadComboBox__ is __closed__, then pressing the __Home\End__ keys will change the __selected item__ to the first\last item in the list. 
 
 >tipPressing the __Home\End__ keys will affect the __selected\highlighted__ item only when the __IsEditable__ property is set to __False__.
 
@@ -49,8 +49,6 @@ Using the keyboard you can perform some of the most common tasks. This section d
 * The __TabIndex__ property defines the index of the control in the tab navigation cycle. The lower the number is, the earlier the control will be focused while navigating using the Tab key. If you set this property, do not forget to set __IsTabStop__ to __True__. 
 
 # See Also
-
- * [DataBinding]({%slug radcombobox-features-databinding%})
 
  * [Selection]({%slug radcombobox-features-selection%})
 

@@ -54,9 +54,9 @@ Regarding the __DropDownIcon__, you can modify the following resources:
 
 * __CalendarIcon__ - defines the default __ControlTemplate__ used for the __DropDownIcon__. Its default template contains two paths:
 
-* __CalendarIconBackground__ - is the background path.
+	* __CalendarIconBackground__ - is the background path.
 
-* __CalendarIconForeground__ - is the foreground path.
+	* __CalendarIconForeground__ - is the foreground path.
 
 * __ButtonIconBackground_Normal__ - is the background border brush applied to the CalendarIconBackground path.
 

@@ -23,5 +23,9 @@ Moreover, __RadNumericUpDown__ can be fully declared both in xaml and code behin
 # See Also
 
  * [Required parts]({%slug radnumericupdown-required-parts%})
-
+{% if site.site_name == 'WPF' %}
  * [HowTo]({%slug radnumericupdown-howto-events-wpf%})
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+* [HowTo]({%slug radnumericupdown-howto-events%})
+{% endif %}

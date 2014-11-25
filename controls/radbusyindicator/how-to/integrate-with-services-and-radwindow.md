@@ -160,17 +160,13 @@ Here is the sample data that is going to be retrieved:
 {{endregion}}
 
 * In code you can use the __BackgroundWorker__ to make your service calls in a different thread:
-            
 
-* Handle the __DoWork__ event to make the time consuming call.
-              
+	* Handle the __DoWork__ event to make the time consuming call.
 
-* Handle the __RunWorkerCompleted__ event to disable the __RadBusyIndicator__ and show the result.
-              
+	* Handle the __RunWorkerCompleted__ event to disable the __RadBusyIndicator__ and show the result.
 
 >In order to use the BackgroundWorker you will have to add the following using/import in your code:
-
-* System.ComponentModel
+>* System.ComponentModel
 
 #### __C#__
 

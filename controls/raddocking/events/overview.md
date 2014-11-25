@@ -41,7 +41,8 @@ This topic covers the specific events exposed by the __RadDocking__ control. The
 >For example, when you [unpin]({%slug raddocking-panes-pinned-unpinned-panes%}) a RadPane, then the fired events are:                   
 >	* __PreviewUnpin__
 >	* __Unpin__
->	* __PaneStateChanged__ - All events are listed in the order of firing.
+>	* __PaneStateChanged__ 
+>- All events are listed in the order of firing.
  
 * __Show\Hide Events__
 

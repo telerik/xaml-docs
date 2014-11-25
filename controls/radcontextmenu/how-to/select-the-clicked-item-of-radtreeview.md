@@ -94,7 +94,7 @@ In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetCl
 	End Sub
 {{endregion}}
 
-The last thing to do is to set the __SelectedItem__ property of the __RadTreeView__ to the __instance__of the __RadTreeView__ item that has been clicked.
+The last thing to do is to set the __SelectedItem__ property of the __RadTreeView__ to the __instance__ of the __RadTreeView__ item that has been clicked.
 
 >If you are having a dynamic data scenario, where the __RadTreeView__ is bound to a collection, you have to set the __SelectedItem__ property to the __DataContext__ of the clicked __RadTreeViewItem__.
 

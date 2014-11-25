@@ -24,7 +24,7 @@ You can do this by:
 
 * Handling the __ParseDateTimeValue__ event.
 
-* Get the user-entered value of the __RadDateTimePicker__ input box control using the __ParseDateTimeEventArgs__ parameter's __TextToParse__property.
+* Get the user-entered value of the __RadDateTimePicker__ input box control using the __ParseDateTimeEventArgs__ parameter's __TextToParse__ property.
 
 * Set the __ParseDateTimeEventArgs__ parameter's __Result__ property whenever the parsing is successful.
 

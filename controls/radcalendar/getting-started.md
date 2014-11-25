@@ -16,7 +16,7 @@ This article will show you how to create a simple calendar.
 >	1. __Telerik.Windows.Controls__
 >	2. __Telerik.Windows.Controls.Input__
 
-You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
+>You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
 
 1. Drag and Drop the Calendar control from the toolbox.
 

@@ -41,7 +41,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	        </telerik:RadDocument>
 	    </telerik:RadRichTextBox.Document>
 	</telerik:RadRichTextBox>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -55,7 +55,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	document.Sections.Add(section);
 	
 	this.radRichTextBox.Document = document;
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -69,7 +69,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	document.Sections.Add(section)
 	
 	Me.radRichTextBox.Document = document
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -89,7 +89,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	        </telerik:Section>
 	    </telerik:RadDocument>
 	</telerik:RadRichTextBox>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -105,7 +105,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	document.Sections.Add(section);
 	
 	this.radRichTextBox.Document = document;
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -121,7 +121,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	document.Sections.Add(section)
 	
 	Me.radRichTextBox.Document = document
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -137,7 +137,7 @@ The __Paragraph__exposes several properties that allow you to customize the layo
 
 * __Auto -__ the space between the lines is determined automatically.
 
-* __Exact -__ the space between the lines should equal to the value of the __LineSpacing__ property__.__
+* __Exact -__ the space between the lines should equal to the value of the __LineSpacing__ property.
 
 * __LeftIndent -__ represents the size of the indent to the left size of the __Paragraph__. The indent gets applied together with the respective margins to the layout.
 

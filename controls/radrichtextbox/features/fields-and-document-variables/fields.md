@@ -28,7 +28,6 @@ This topic contains the following sections:
 ## Field Types
 
 In RadDocument the base class for all fields is __CodeBasedField__. It is an abstract class that can be inherited from. Some of the implemented and ready-to-use field types are:
-        
 
 * __DateField__: Inserts the current date in one of the specified formats.
             
@@ -98,8 +97,8 @@ Insert a page field:
 #### __C#__
 
 {{region radrichtextbox-features-fields_0}}
-	            this.radRichTextBox.InsertField(new PageField());
-	{{endregion}}
+    this.radRichTextBox.InsertField(new PageField());
+{{endregion}}
 
 
 
@@ -111,9 +110,8 @@ Update a field:
 #### __C#__
 
 {{region radrichtextbox-features-fields_1}}
-	            this.radRichTextBox.UpdateField(fieldStart);
-	{{endregion}}
-
+    this.radRichTextBox.UpdateField(fieldStart);
+{{endregion}}
 
 
 You can also update all fields in the current document with the __UpdateAllFields()__ method of RadRichTextBox.
@@ -130,13 +128,16 @@ Priority can specified through the __FieldsUpdateManager__ static class. The fol
 #### __C#__
 
 {{region radrichtextbox-features-fields_2}}
-	            FieldsUpdateManager.RegisterFieldUpdatePriority(typeof(ReferenceField), 1000);
-	{{endregion}}
+    FieldsUpdateManager.RegisterFieldUpdatePriority(typeof(ReferenceField), 1000);
+{{endregion}}
 
+>tipHaving many different values for field priory is not recommended and may lead to performance degradation of the UpdateAllFields() method. The reason for this is that all fields with the same priority are updated in a batch update. Having more priority groups leads to execution of more batch updates.
 
 
 # See Also
 
  * [Custom Fields]({%slug radrichtextbox-features-custom-fields%})
 
- * [Mail Merge]({%slug radrichtextbox-features-mail-merge%})[CustomField SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomField)
+ * [Mail Merge]({%slug radrichtextbox-features-mail-merge%})
+ 
+ * [CustomField SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomField)

@@ -12,8 +12,7 @@ position: 0
 
 
 
-__UILayers__ provide an extensible approach to showing different parts of __RadRichTextBox__’s Document.
-        For example, there are separate layers showing the comments, the selection, the table borders, etc.
+__UILayers__ provide an extensible approach to showing different parts of __RadRichTextBox__’s Document. For example, there are separate layers showing the comments, the selection, the table borders, etc.
       
 
 The existing layers can be removed and additional ones can be defined to customize the presentation of different parts of the document.
@@ -28,12 +27,11 @@ All UILayers implement the __IUILayer__ interface. There is an abstract class, w
 
 {{region radrichtextbox-features-custom-ui-layers_0}}
 	public override void UpdateUIViewPortOverride(UILayerUpdateContext context)
-	{{endregion}}
+{{endregion}}
 
 
 
-You can use the context which is passed as a parameter to the method to get all visible layout boxes and perform your decorations and customizations on them.
-          You can also use the __Document__ property that your decoration layer inherits from __DecorationUILayerBase__ and everything that comes with it (like the current CaretPosition).
+You can use the context which is passed as a parameter to the method to get all visible layout boxes and perform your decorations and customizations on them. You can also use the __Document__ property that your decoration layer inherits from __DecorationUILayerBase__ and everything that comes with it (like the current CaretPosition).
         
 
 Last but not least, you should not forget to override the Name property of the layer like this:
@@ -48,7 +46,7 @@ Last but not least, you should not forget to override the Name property of the l
 	        return this.customLayerName;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -60,7 +58,7 @@ After having implemented the logic of your custom UI layer, you can plug it in t
 {{region radrichtextbox-features-custom-ui-layers_2}}
 	[CustomUILayersBuilder]
 	public class CustomLayersBuilder : UILayersBuilder
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -71,7 +69,7 @@ In this way, your custom layer will be utilized in all instances of __RadRichTex
 
 {{region radrichtextbox-features-custom-ui-layers_3}}
 	this.editor.UILayersBuilder = new CustomLayersBuilder();
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -85,13 +83,10 @@ All that is left is to specify the place of your layer, i.e. which layers should
 	{
 	    uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, new MyCustomLayer());
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
-There is a demo where all these steps have been implemented at:
-          {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation](http://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation){% endif %}{% if site.site_name == 'WPF' %}[Click-once demos](http://demos.telerik.com/wpf/){% endif %}
+There is a demo where all these steps have been implemented at:{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation](http://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation){% endif %}{% if site.site_name == 'WPF' %}[Click-once demos](http://demos.telerik.com/wpf/){% endif %}
           .
-        
-
-# See Also
+     

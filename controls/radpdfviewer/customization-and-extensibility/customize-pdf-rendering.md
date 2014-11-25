@@ -47,7 +47,7 @@ Fully supported</td>
 <td>Not supported</td></tr>
 </th>
 <tr><td>ASCII85Decode</td>
-<td>ASCIIHexDecode</td>
+<td></td>
 <td>JBIG2Decode</td></tr>
 <tr><td>LZWDecode</td>
 <td></td>

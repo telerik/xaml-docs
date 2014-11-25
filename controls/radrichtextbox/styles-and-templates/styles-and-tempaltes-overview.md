@@ -16,7 +16,7 @@ position: 0
 
 This section is intended to give you a broad understanding of the possible ways in which you can change the visual appearance of the __RadRichTextBox__. There is also comprehensive information about its __ControlTemplate__. You will need this information if you want to customize its appearance.
 
->To learn about how to change the control's theme, please read the common [Theming](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html) topic.
+>To learn about how to change the control's theme, please read the common [Theming]({%slug styling-apperance-implicit-styles-overview%}) topic.
 
 You can modify the look of the __RadRichTextBox__ by either changing some of the resources exposed by the API, or by modifying its __ControlTemplate__. In the control template you are allowed to reorder the template parts and to add your own elements. However, when changing the control template you should be careful to include all required parts.
 

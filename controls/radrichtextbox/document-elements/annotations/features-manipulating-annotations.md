@@ -28,8 +28,7 @@ The types of manipulations that can be performed on annotations include:
 
 ## Presentation
 
-By default all annotations are markup-only in the sense that they do not have any appearance. If you want to display a highlight, range brackets or anything else, you can use the UI layers feature of RadRichTextBox. You can read more about them in
-          [this article]({%slug radrichtextbox-features-custom-ui-layers%}).
+By default all annotations are markup-only in the sense that they do not have any appearance. If you want to display a highlight, range brackets or anything else, you can use the UI layers feature of RadRichTextBox. You can read more about them in [this article]({%slug radrichtextbox-features-custom-ui-layers%}).
         
 
 ## Methods for Retrieving Annotations
@@ -50,7 +49,7 @@ By default all annotations are markup-only in the sense that they do not have an
 	/// </summary>
 	public IEnumerable<T> GetAnnotationMarkersOfType<T>()
 	    where T : AnnotationMarkerBase
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -60,7 +59,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 {{region radrichtextbox-features-document-elements-annotations_3}}
 	Inline currentInline = this.editor.Document.CaretPosition.GetCurrentInline();
-	{{endregion}}
+{{endregion}}
 
 and then, check if this inline is contained in a range using one of the methods below:
 
@@ -82,7 +81,7 @@ and then, check if this inline is contained in a range using one of the methods 
 	/// <param name="inclusive">Specifies whether to return the inline itself if it is a TRangeStart.</param>
 	public IEnumerable<TRangeStart> GetContainingAnnotationRanges<TRangeStart>(Inline inline, bool inclusive = false)
 	    where TRangeStart : AnnotationRangeStart
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -108,8 +107,7 @@ and then, check if this inline is contained in a range using one of the methods 
 	/// <param name="inclusive">Specifies whether to return the inline itself if it is a TRangeStart.</param>
 	public IEnumerable<TRangeStart> GetContainingAnnotationRanges<TRangeStart>(Inline inline, Predicate<TRangeStart> filter, bool inclusive = false)
 	    where TRangeStart : AnnotationRangeStart
-	
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -127,7 +125,7 @@ Annotations can be inserted in the document using the following method of [RadDo
 	/// <param name="rangeStart">The annotation range start.</param>
 	/// <param name="rangeEnd">The annotation range end.</param>
 	public void InsertAnnotationRange(AnnotationRangeStart rangeStart, AnnotationRangeEnd rangeEnd)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -146,7 +144,7 @@ In order to delete an annotation, you need to obtain a reference to its range st
 	/// </summary>
 	/// <param name="rangeStart">The start of the range that is to be deleted.</param>
 	public void DeleteAnnotationRange(AnnotationRangeStart rangeStart)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -157,7 +155,7 @@ Note that this method will remove the annotation, but will keep its contents. In
 {{region radrichtextbox-features-document-elements-annotations_6}}
 	editor.Document.Selection.SelectAnnotationRange(start);
 	editor.Delete(false);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -183,7 +181,7 @@ Some user scenarios require that there would be an easy way to split annotation 
 	/// <param name="rangeStart">The annotation range start to be split.</param>
 	/// <param name="position">The position where the range start should be split.</param>
 	public void SplitAnnotationRange(AnnotationRangeStart rangeStart, DocumentPosition position)       
-	{{endregion}}
+{{endregion}}
 
 
 

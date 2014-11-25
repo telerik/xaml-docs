@@ -482,6 +482,39 @@ navigation:
     controls/radpdfprocessing/concepts:
         title: Concepts
         position: 7
+    "*radrichtextbox":
+        title: RadRichTextBox		
+    controls/radrichtextbox/getting-started:
+        title: Getting Started
+        position: 1
+    controls/radrichtextbox/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2
+    controls/radrichtextbox/document-elements:
+        title: Document Elements
+        position: 5
+    controls/radrichtextbox/features:
+        title: Features
+        position: 6
+    controls/radrichtextbox/import-export:
+        title: Import/Export
+        position: 7	
+    controls/radrichtextbox/ui-for-applying-rich-text-formatting:
+        title: UI for Applying Rich Text Formatting
+        position: 8
+    controls/radrichtextbox/troubleshooting:
+        title: Troubleshooting
+    controls/radrichtextbox/document-elements/annotations:
+        title: Annotations
+    controls/radrichtextbox/features/styles:
+        title: Styles
+        position: 12		
+    controls/radrichtextbox/features/fields-and-document-variables:
+        title: Fields and Document Variables
+        position: 17
+    controls/radrichtextbox/features/references:
+        title: References
+        position: 18		
 ## Centaur Controls End
 
 ## X1 Controls Start

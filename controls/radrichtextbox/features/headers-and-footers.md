@@ -15,8 +15,7 @@ position: 8
 __RadRichTextBox__ supports Headers and Footers in its document when in Paged [layout mode]({%slug radrichtextbox-features-layout-modes%}).
       
 
->Note that Headers and Footers are not persisted when exporting with HtmlFormatProvider
-          You can read more about this [here]({%slug radrichtextbox-features-import-export%})
+>Note that Headers and Footers are not persisted when exporting with HtmlFormatProvider You can read more about this [here]({%slug radrichtextbox-features-import-export%})
 
 The topic contains the following sections:
 
@@ -46,9 +45,9 @@ Here is an example how you can create a Header:
 #### __C#__
 
 {{region radrichtextbox-features-headers-and-footers_0}}
-	Header header = new Header() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of a Header, 
+	Header header = new Header() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument represents the content of a Header, 
 	                                                                                 //typically contains a few paragraphs
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -60,30 +59,27 @@ When it comes to using a Header created in this manner, this depends on the stat
 
 {{region radrichtextbox-features-headers-and-footers_1}}
 	section.Headers.Default = header;
-	{{endregion}}
+{{endregion}}
 
 
 
 * In a measured document (a document that has been previewed in the editor), you can change the Default page header of the first section like this:
 
-#### __C#__
-
-{{region radrichtextbox-features-headers-and-footers_2}}
-	this.editor.UpdateHeader(this.editor.Document.Sections.First, HeaderFooterType.Default, header);
+	#### __C#__
+	
+	{{region radrichtextbox-features-headers-and-footers_2}}
+		this.editor.UpdateHeader(this.editor.Document.Sections.First, HeaderFooterType.Default, header);
 	{{endregion}}
 
 
-
-All header/footer types - Default, First and Even are set identically. The only thing you should add when you set the First or Even Header/Footer of the document,
-          is to set the property of the section that notifies the document to use different Header/Footer than the default one using one of the following properties:
-        
-
-#### __C#__
-
-{{region radrichtextbox-features-headers-and-footers_3}}
-	this.editor.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
-	//or
-	this.editor.Document.HasDifferentEvenAndOddHeadersFooters = true;
+All header/footer types - Default, First and Even are set identically. The only thing you should add when you set the First or Even Header/Footer of the document, is to set the property of the section that notifies the document to use different Header/Footer than the default one using one of the following properties:
+     
+	#### __C#__
+	
+	{{region radrichtextbox-features-headers-and-footers_3}}
+		this.editor.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
+		//or
+		this.editor.Document.HasDifferentEvenAndOddHeadersFooters = true;
 	{{endregion}}
 
 
@@ -92,37 +88,37 @@ Setting the Footers can be done in the same way. Here is the respective code for
 
 * Creating a Footer:
 
-#### __C#__
-
-{{region radrichtextbox-features-headers-and-footers_4}}
-	Footer header = new Footer() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of the footer, 
+	#### __C#__
+	
+	{{region radrichtextbox-features-headers-and-footers_4}}
+		Footer header = new Footer() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of the footer, 
 	{{endregion}}
 
 
 
 * Setting the Footer to be used in a particular section:
 
-* In a non-measured document:
+    * In a non-measured document:
 
-#### __C#__
-
-{{region radrichtextbox-features-headers-and-footers_5}}
-	section.Footers.Default = footer;
-	{{endregion}}
-
-
-
-* In a measured document:
-
-#### __C#__
-
-{{region radrichtextbox-features-headers-and-footers_6}}
-	this.editor.UpdateFooter(this.editor.Document.Sections.First, HeaderFooterType.Default, footer);
-	{{endregion}}
+		#### __C#__
+		
+		{{region radrichtextbox-features-headers-and-footers_5}}
+			section.Footers.Default = footer;
+		{{endregion}}
 
 
 
-As for setting different footers for the first page or the even page, this is done by passing the respective parameter to the UpdateFooter method - HeaderFooterType.First or HeaderFooterType.Even and setting the corresponding property of the document/editor:
+    * In a measured document:
+
+		#### __C#__
+		
+		{{region radrichtextbox-features-headers-and-footers_6}}
+			this.editor.UpdateFooter(this.editor.Document.Sections.First, HeaderFooterType.Default, footer);
+		{{endregion}}
+
+
+
+As for setting different footers for the first page or the even page, this is done by passing the respective parameter to the UpdateFooter() method - HeaderFooterType.First or HeaderFooterType.Even and setting the corresponding property of the document/editor:
 
 #### __C#__
 
@@ -130,14 +126,13 @@ As for setting different footers for the first page or the even page, this is do
 	this.editor.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
 	//or
 	this.editor.Document.HasDifferentEvenAndOddHeadersFooters = true;
-	{{endregion}}
+{{endregion}}
 
 
 
 ## Disabling Headers and Footers
 
-Headers and footers are only present in Paged layout mode, so the easiest way to remove them is to change the layout mode. In case you wish
-          to show documents in paged mode and still disable headers and footers, you can do so by removing the UI layer responsible for their visualization - __HeaderFooterLayer__.
+Headers and footers are only present in Paged layout mode, so the easiest way to remove them is to change the layout mode. In case you wish to show documents in paged mode and still disable headers and footers, you can do so by removing the UI layer responsible for their visualization - __HeaderFooterLayer__.
         
 
 >tipThe concept of UI layers and their usage are explained in [this article]({%slug radrichtextbox-features-custom-ui-layers%}).
@@ -154,7 +149,7 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer);
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 

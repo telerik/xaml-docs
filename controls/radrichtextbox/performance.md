@@ -48,7 +48,7 @@ The performance can be hindered by the following factors:
 Large paragraphs can be a hindrance to the overall performance because paragraphs are the main unit of the measure and layout cycle. This means that most of the operations concerning changes in the document (e.g. when you insert, delete or format parts of the document) require an invalidation of the layout of the current paragraph. Therefore, the larger the paragraphs in the document, the worse the performance.
         
 
-Documents with such big paragraphs are sometimes created when one uses line breaks instead of new paragraphs. In MS Word and RadRichTextBox pressing Enter creates a new paragraph, while Shift + Enter inserts a line break. More often than not documents with line-breaks instead of new paragraphs are a result of incorrect code-behind generation of the document, or import of HTML which contains <br /> tags instead of paragraph elements <p></p> and can be easily avoided.
+Documents with such big paragraphs are sometimes created when one uses line breaks instead of new paragraphs. In MS Word and RadRichTextBox pressing Enter creates a new paragraph, while Shift + Enter inserts a line break. More often than not documents with line-breaks instead of new paragraphs are a result of incorrect code-behind generation of the document, or import of HTML which contains &lt;br /&gt; tags instead of paragraph elements <p></p> and can be easily avoided.
         
 
 In addition, words that are longer than one line can also hinder the performance. This is so because processing documents containing such words often results in invalidating large portions of the document. This type of performance issue can be observed when using languages where the words are not separated by intervals, e.g. Japanese, Chinese, etc.
@@ -65,15 +65,15 @@ The performance in versions *prior Q1 2014* was also hindered by the [UI layer](
 #### __C#__
 
 {{region radrichtextbox-performance_0}}
-	    class MyCustomUILayerBuilder : UILayersBuilder
-	    {
-	        protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
-	        {
-	            base.BuildUILayersOverride(uiLayerContainer);
-	            uiLayerContainer.UILayers.Remove(DefaultUILayers.TableCellBordersResizeLayer);
-	        }
-	    }
-	{{endregion}}
+    class MyCustomUILayerBuilder : UILayersBuilder
+    {
+        protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
+        {
+            base.BuildUILayersOverride(uiLayerContainer);
+            uiLayerContainer.UILayers.Remove(DefaultUILayers.TableCellBordersResizeLayer);
+        }
+    }
+{{endregion}}
 
 
 
@@ -89,5 +89,3 @@ The reason for the impact on the performance is that these elements are kept in 
 
 It is possible to add [headers and footers]({%slug radrichtextbox-features-headers-and-footers%}) for each section in the document. The same is also true for [Endnotes and Footnotes]({%slug radrichtextbox-features-footnotes-endnotes%}), as well as [Comments]({%slug radrichtextbox-features-comments%}). This provides the means for creating even richer documents, but also comes at a price. All this additional content is shown in separate instances of RadRichTextBox. Furthermore, the contents of the documents of the headers and footers have to be copied across all pages of the section, which may cause performance hindrance with large documents.
         
-
-# See Also

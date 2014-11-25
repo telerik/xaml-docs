@@ -12,18 +12,18 @@ position: 10
 
 {% if site.site_name == 'Silverlight' %}
 
-Telerik __RichTextBox__for Silverlight supports commands in a way that is similar to the commanding mechanism in WPF. It is only natural that some of these commands be triggered on key combinations. There are default key-bindings defined for the most widely used commands, namely:
-        {% endif %}{% if site.site_name == 'WPF' %}
+Telerik __RichTextBox__ for Silverlight supports commands in a way that is similar to the commanding mechanism in WPF. It is only natural that some of these commands be triggered on key combinations. There are default key-bindings defined for the most widely used commands, namely:
+{% endif %}{% if site.site_name == 'WPF' %}
 
 Telerik __RichTextBox__ for WPF supports the commanding mechanism in WPF. There are default key-bindings defined for the most widely used commands, namely:
-        {% endif %}
+{% endif %}
 
 ## 
-<table> <th><tr><td>
+<table> <tr><th>
 
-<b>Action</b></td><td>
+<b>Action</b></th><th>
 
-<b>Hotkey</b></td></tr></th><tr><td>
+<b>Hotkey</b></th></tr><tr><td>
 
 Copy</td><td>
 
@@ -169,9 +169,9 @@ ShowInsertHyperlinkDialog</td><td>
 
 Ctrl+K</td></tr></table>
 
-Now these key bindings can be overridden and customized to the liking of the user. What is more, new bindings can be added to both the Commands exposed through the RichTextBoxCommands class or to user-defined ones in a quite straight-forward way.
-          This is how it can be done in XAML:
-        {% if site.site_name == 'Silverlight' %}
+Now these key bindings can be overridden and customized to the liking of the user. What is more, new bindings can be added to both the Commands exposed through the RichTextBoxCommands class or to user-defined ones in a quite straight-forward way. This is how it can be done in XAML:
+        
+{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
@@ -188,7 +188,7 @@ Now these key bindings can be overridden and customized to the liking of the use
 			</telerik:InputBindingCollection>
 		</telerik:CommandManager.InputBindings>
 	</telerik:RadRichTextBox>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
@@ -205,11 +205,11 @@ Now these key bindings can be overridden and customized to the liking of the use
 			<KeyBinding Gesture="Ctrl+Space" Command="telerikDocs:RichTextBoxCommands.ShowManageBookmarksDialog"/>
 		</telerik:RadRichTextBox.InputBindings>
 	</telerik:RadRichTextBox>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
-Sometimes overriding the key bindings does not provide sufficient support, as depending on the language and the keyboard, different ModifierKeys are registered. For example, pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the PreviewEditorKeyDown event in the following way:{% if site.site_name == 'Silverlight' %}
+Sometimes overriding the key bindings does not provide sufficient support, as depending on the language and the keyboard, different ModifierKeys are registered. For example, pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the __PreviewEditorKeyDown__ event in the following way:{% if site.site_name == 'Silverlight' %}
 
 #### __C#__
 

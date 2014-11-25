@@ -15,8 +15,7 @@ position: 3
 The __RadDocument__ class can track the history of any actions taken against its content. In this way it allows an undo and redo functionality to be easily implemented. The history is implemented via the __DocumentHistory__ class and the __RadDocument__ exposes the __History__ property of this type. The __RadRichTextBox__ automatically adds and removes items from the history, when its API methods get called, but you are allowed to manually work with the history as well.
       
 
->tipTo learn more about the __DocumentHistory API__ read
-          {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_history_documenthistory.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_history_documenthistory.html){% endif %}
+>tipTo learn more about the __DocumentHistory API__ read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_history_documenthistory.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_history_documenthistory.html){% endif %}
           .
         
 
@@ -41,7 +40,7 @@ You can enable or disable the history for the __RadDocument__ via the __Enabled_
 
 {{region radrichtextbox-features-history_0}}
 	this.radRichTextBox.Document.History.Enabled = false;
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -49,7 +48,7 @@ You can enable or disable the history for the __RadDocument__ via the __Enabled_
 
 {{region radrichtextbox-features-history_1}}
 	Me.radRichTextBox.Document.History.Enabled = False
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -62,7 +61,7 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 
 {{region radrichtextbox-features-history_2}}
 	this.radRichTextBox.Document.History.Clear();
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -70,7 +69,7 @@ To clear the history you just have to call the __Clear()__ method of the __Docum
 
 {{region radrichtextbox-features-history_3}}
 	Me.radRichTextBox.Document.History.Clear()
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -90,7 +89,7 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 	{
 	    this.radRichTextBox.Redo();
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -103,7 +102,7 @@ To undo and redo some actions, you can call the __Undo()__ and __Redo()__ method
 	Private Sub RedoAction()
 	 Me.radRichTextBox.Redo()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -116,7 +115,7 @@ To change the history capacity you have to set the desired value of the __Depth_
 
 {{region radrichtextbox-features-history_6}}
 	this.radRichTextBox.Document.History.Depth = 500;
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -124,16 +123,13 @@ To change the history capacity you have to set the desired value of the __Depth_
 
 {{region radrichtextbox-features-history_7}}
 	Me.radRichTextBox.Document.History.Depth = 500
-	{{endregion}}
+{{endregion}}
 
 
 
 ## Preserve History Using RadDocumentEditor
 
-RadDocument has API of its own, but using it has a set of limitations. One of those limitations is that the methods of RadDocument
-          are not registered in the undo/redo stack. Thus, once such a method is used, the history stack is cleared and users will no longer
-          be able to undo and redo their previous changes. You can find detailed information on the topic
-          [here]({%slug radrichtextbox-features-raddocumenteditor%}).
+RadDocument has API of its own, but using it has a set of limitations. One of those limitations is that the methods of RadDocument are not registered in the undo/redo stack. Thus, once such a method is used, the history stack is cleared and users will no longer be able to undo and redo their previous changes. You can find detailed information on the topic [here]({%slug radrichtextbox-features-raddocumenteditor%}).
         
 
 # See Also

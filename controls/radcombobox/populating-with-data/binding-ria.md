@@ -11,13 +11,9 @@ site_name: Silverlight
 
 # Binding to RIA Service
 
+The purpose of this tutorial is to show you how to populate a __RadComboBox__ with data from a __.NET RIA Service__.
 
-
-## 
-
-The purpose of this tutorial is to show you how to populate a __RadComboBox__with data from a __.NET RIA Service__.
-
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 * Create a new application and add a __RadComboBox__ declaration in your XAML.
 
@@ -25,13 +21,11 @@ The purpose of this tutorial is to show you how to populate a __RadComboBox__wit
 
 {{region radcombobox-populating-with-data-binding-ria_0}}
 	<telerik:RadComboBox x:Name="radComboBox"/>
-	{{endregion}}
+{{endregion}}
 
+The __ComboBox__ will be bound to a __DomainDataSource__. When the control is loaded, all __Products__ from the __Products__ table in the Northwind database are loaded asynchronously.
 
-
-The __ComboBox__will be bound to a __DomainDataSource__. When the control is loaded, all __Products__from the __Products__ table in the Northwind database are loaded asynchronously.
-
-* Declare a new __DomainDataSource__object in the resources of your application. Set its __DomainContext__property to an existing __RIA Service__.
+* Declare a new __DomainDataSource__ object in the resources of your application. Set its __DomainContext__ property to an existing __RIA Service__.
 
 #### __XAML__
 
@@ -43,9 +37,7 @@ The __ComboBox__will be bound to a __DomainDataSource__. When the control is loa
 	        </ria:DomainDataSource.DomainContext>
 	    </ria:DomainDataSource>    
 	</UserControl.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 * Declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
 
@@ -68,11 +60,9 @@ The __ComboBox__will be bound to a __DomainDataSource__. When the control is loa
 	        </StackPanel>
 	    </DataTemplate>
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
-
-
-* Update your __RadComboBox__declaration - set the __ItemsSource__and __ItemTemplate__ properties.
+* Update your __RadComboBox__ declaration - set the __ItemsSource__ and __ItemTemplate__ properties.
 
 #### __XAML__
 
@@ -80,17 +70,11 @@ The __ComboBox__will be bound to a __DomainDataSource__. When the control is loa
 	<telerik:RadComboBox x:Name="radComboBox"
 	    ItemTemplate="{StaticResource CustomItemTemplate}"
 	    ItemsSource="{Binding Source={StaticResource DomainDataSource}, Path=Data}"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Run your demo, the result can be seen on the snapshot below:
 
-
-
-
-         
-      ![](images/RadComboBox_PopulatingWithData_BindingToRiaService_010.png)
+ ![](images/RadComboBox_PopulatingWithData_BindingToRiaService_010.png)
 
 # See Also
 

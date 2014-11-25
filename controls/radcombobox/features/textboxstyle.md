@@ -43,7 +43,7 @@ Now you will have to create a custom Style with TargetType TextBox which customi
 	</UserControl.Resources>
 {{endregion}}
 
->importantIf you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you would need to base that Style to the default __TextBoxStyle__ of __RadComboBox__ named _ComboBoxTextBoxStyle_.
+If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you would need to base that Style to the default __TextBoxStyle__ of __RadComboBox__ named _ComboBoxTextBoxStyle_.
 
 #### __XAML__
 

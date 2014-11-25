@@ -14,6 +14,10 @@ With the official Q1 2013 release of RadControls we introduced a new DragDrop mo
 
 This behavior can be turned on with the new __DragDropMode__ property which is of Enum type and can be set to any of the following values:
 
+* __Immediate__ - the default DragDrop behavior.
+
+* __Deferred__ - provides a completely different way of handling the drag and drop inside RadDocking. With it you can forbid floating of panes and at the same time allow dragging them.
+
 The following snippets show how __DragDropMode__ property can be set in XAML and in code-behind:
 
 #### __XAML__
@@ -46,9 +50,13 @@ Let's, for example, have the following RadDocking definition:
 	</telerik:RadDocking>
 {{endregion}}
 
-Note how the dragging of "Pane1" looks in both DragDropModes:![docking features-dragdropmode 1](images/docking_features-dragdropmode_1.png)
+Note how the dragging of "Pane1" looks in both DragDropModes:
 
-In the second case ( DragDropMode="Deferred"), "Pane1" can be made floating only through the ContextMenu:![docking features-dragdropmode 2](images/docking_features-dragdropmode_2.png)
+![docking features-dragdropmode 1](images/docking_features-dragdropmode_1.png)
+
+In the second case ( DragDropMode="Deferred"), "Pane1" can be made floating only through the ContextMenu:
+
+![docking features-dragdropmode 2](images/docking_features-dragdropmode_2.png)
 
 >In "Deferred" DragDropMode if the pane is dropped in the Docking space, it will return to its previous position.
 

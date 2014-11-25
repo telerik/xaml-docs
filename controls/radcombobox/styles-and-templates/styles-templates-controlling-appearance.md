@@ -31,5 +31,3 @@ There are many ways to customize the look and feel of your __RadComboBox__ contr
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})
 
  * [AutoComplete]({%slug radcombobox-features-autocomplete%})
-
- * [DataBinding]({%slug radcombobox-features-databinding%})

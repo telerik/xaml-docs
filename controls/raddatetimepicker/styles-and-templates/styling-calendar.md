@@ -82,13 +82,13 @@ Each of the left and right buttons' default templates contain the following elem
 
 For each of the described above common visual states, the following brushes are defined:
 
-* __HeaderButtonOuterBorder___*- *is the element's outer border when it is in the corresponding state (from those described above).
+* __HeaderButtonOuterBorder__ - is the element's outer border when it is in the corresponding state (from those described above).
 
-* __HeaderButtonInnerBorder___- is the element's inner border when it is in the corresponding state.
+* __HeaderButtonInnerBorder__- is the element's inner border when it is in the corresponding state.
 
-* __HeaderButtonBackground___ - is the element's background when it is in the corresponding state.
+* __HeaderButtonBackground__ - is the element's background when it is in the corresponding state.
 
-* __HeaderButtonIcon__* - *defines the left and right icon's appearance through in the corresponding state (from those described above) including the __Disabled__ state.
+* __HeaderButtonIcon__ - defines the left and right icon's appearance through in the corresponding state (from those described above) including the __Disabled__ state.
 
 Here is an example of the above resources modified:
 

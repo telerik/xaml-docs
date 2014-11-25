@@ -218,5 +218,3 @@ The result can be seen on the image below. All members of the __System.Windows.C
 # See Also
 
  * [AutoComplete]({%slug radcombobox-features-autocomplete%})
-
- * [DataBinding]({%slug radcombobox-features-databinding%})

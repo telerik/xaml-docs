@@ -20,13 +20,11 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 * __Custom list box drag drop behavior__ - This example demonstrates how to customize ListBoxDragDropBehavior of RadListBox. In the example the right ListBox control has the custom MyListBoxDragDropBehavior and when items are dragged/dropped from/in it an Alert massage is shown with the items details.
 
-* __Data conversion between two RadListBox controls__ - 
-This example demonstrates how to convert data when using drag and drop between two RadListBox controls. The left RadListBox control is bound to a collection of Customer object and the right one is bound to a collection of Project objects. The conversion is handled by two custom DataConverters.
+* __Data conversion between two RadListBox controls__ - This example demonstrates how to convert data when using drag and drop between two RadListBox controls. The left RadListBox control is bound to a collection of Customer object and the right one is bound to a collection of Project objects. The conversion is handled by two custom DataConverters.
 
 * __Drag and drop with ScheduleView__ - This example demonstrates how to achieve drag and drop functionality between RadListBox and RadScheduleView by creating AppointmentToCustomerConverter and CustomScheduleViewDragDropBehaviorfor Silverlight and WPF.
 
-* __Modified ListBoxDragVisualStyle__ - 
-This example demonstrates how to create a modified ListBoxDragVisualStyle in order to remove the before and after specifiers for Silverlight and WPF.
+* __Modified ListBoxDragVisualStyle__ - This example demonstrates how to create a modified ListBoxDragVisualStyle in order to remove the before and after specifiers for Silverlight and WPF.
 
 * __Selected items__ - This example demonstrates how to create an attached property that could be used in order to bind a collection of objects to the control  and use it as a collection of selected items for Silverlight and WPF.
 

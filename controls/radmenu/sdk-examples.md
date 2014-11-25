@@ -18,8 +18,7 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 * __Customization MVVM__ - Telerik Menu allows full customization of its items. In this example, thanks to the MVVM patterns and the custom style selectors, the submenu items represent rich content visualizing different view models.
 
-* __Q2 RadMenu Style__ - 
-This example demonstrates how to customize the RadMenuItem and RadMenu Styles in order to make the RadMenu control look like it was before the Q3 2013 release of RadMenu. The custom Styles can be found in the App.xaml of the project.
+* __Q2 RadMenu Style__ - This example demonstrates how to customize the RadMenuItem and RadMenu Styles in order to make the RadMenu control look like it was before the Q3 2013 release of RadMenu. The custom Styles can be found in the App.xaml of the project.
 
 * __Scrolling menu items__ - In this example you will find out how to use scrolling for RadMenuItem.
 

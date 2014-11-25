@@ -3,7 +3,7 @@ title: Telerik UI for WPF/Silverlight Documentation Repo
 publish: false
 ---
 
-# Kendo UI Public Documentation
+# Telerik UI for WPF/Silverlight Public Documentation
 
 Welcome to the GitHub repo for [Kendo UI](http://www.telerik.com/kendo-ui) documentation. This repository contains the source content — written in Markdown — that we use to power the Kendo UI Documentation at [docs.telerik.com/kendo-ui](http://docs.telerik.com/kendo-ui/). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.telerik.com/kendo-ui](http://docs.telerik.com/kendo-ui) where our content is prettified and searchable.
 

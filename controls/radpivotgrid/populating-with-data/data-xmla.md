@@ -162,6 +162,8 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 
 ## Defining Group Descriptions
 
+>caution When initializing the __XmlaDataProvider__ in the code behind it is a good idea to wrap all modifications in __BeginInit() - EndInit()__ section. This will cause only one refresh of the DataProvider and it will be when the EndInit() is reached. If you are applying only modifications (more than one) on already initialized __XmlaDataProvider__ you should use the DeferRefresh() method which will cause delay of the Refresh and this way all your changes will be applied simultaneously. More information for these methods is available in our [Populating with Data - Overview]({%slug radpivotgrid-populating-with-data%}) article.
+
 The __XmlaDataProvider__ is using four collections that are reflecting the visual representation of __RadPivotGrid__ and __RadPivotFieldList__:    		
 
 * __RowGroupDescriptions__ - the data added to this collection will show as Row Headers in __RadPivotGrid__. There is only one type of description that can be added to this collection - __XmlaGroupDescription__.    				

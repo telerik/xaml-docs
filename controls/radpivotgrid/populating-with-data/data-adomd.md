@@ -13,13 +13,18 @@ site_name: WPF
 
 In this article we will show how to use __AdomdDataProvider__ and use data from OLAP Cube for __RadPivotGrid__.
 
+>cautionWith the current release RadPivotGrid supports only Microsoft.AnalysisServices.AdomdClient version 10.0. You can download it from [here](http://www.microsoft.com/en-us/download/details.aspx?id=30440). After installing it, you will find the Microsoft.AnalysisServices.AdomdClient.dll under C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100.
+
 ## ADOMD.NET
 
 __ADOMD.NET__ is a Microsoft .NET Framework data provider that is designed to communicate with Microsoft SQL Server Analysis Services. __ADOMD.NET__ uses the XML for Analysis protocol to communicate with analytical data sources. More information about ADOMD can be found [here](http://msdn.microsoft.com/en-us/library/ms123483(v=sql.90).aspx).      		
 
 ## AdomdDataProvider
 
-__RadPivotGrid__ can use __AdomdDataProvider__ to get data from OLAP Cube.      		
+__RadPivotGrid__ can use __AdomdDataProvider__ to get data from OLAP Cube.     
+
+>You have to add reference to the following Telerik assembly to be able to use AdomdDataProvider in your application:
+>   * Telerik.Pivot.DataProviders.Adomd 		
 
 __AdomdDataProvider__ has several important properties that have to be defined in order to connect to OLAP Cube:      		
 
@@ -136,7 +141,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 
 ## Defining Group Descriptions
 
->cautionWhen initializing the AdomdDataProvider in the code behind it is a good idea to wrap all modifications in BeginInit() - EndInit() section. This will cause only one refresh of the DataProvider and it will be when the EndInit() is reached. If you are applying only modifications (more than one) on already initialized AdomdDataProvider you should use the DeferRefresh() method which will cause delay of the Refresh and this way all your changes will be applied simultaneously. More information for these methods is available in our Populating with Data article.
+>caution When initializing the __AdomdDataProvider__ in the code behind it is a good idea to wrap all modifications in __BeginInit() - EndInit()__ section. This will cause only one refresh of the DataProvider and it will be when the EndInit() is reached. If you are applying only modifications (more than one) on already initialized __AdomdDataProvider__ you should use the DeferRefresh() method which will cause delay of the Refresh and this way all your changes will be applied simultaneously. More information for these methods is available in our [Populating with Data - Overview]({%slug radpivotgrid-populating-with-data%}) article.
 
 The __AdomdDataProvider__ is using four collections that are reflecting the visual representation of __RadPivotGrid__ and __RadPivotFieldList__:    		
 

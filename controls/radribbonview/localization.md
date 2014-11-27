@@ -128,10 +128,8 @@ Of course, if you don't want to hard-code your translation inside the source cod
 	{
 	    switch( key )
 	    {
-	        //----------------------
 	        case "RibbonViewQATMinimize":
 	            return RibbonBarResources.RibbonBarQATMinimize;
-	        //----------------------
 	    }
 	    return base.GetStringOverride( key );
 	}
@@ -144,10 +142,8 @@ Of course, if you don't want to hard-code your translation inside the source cod
 {{region radribbonview-localization_5}}
 	Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
 	    Select Case key
-	        '----------------------'
 				Case "RibbonViewQATMinimize"
 					Return RibbonBarResources.RibbonBarQATMinimize
-					'----------------------'
 			End Select
 	    Return MyBase.GetStringOverride(key)
 	End Function

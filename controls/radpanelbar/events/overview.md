@@ -17,7 +17,7 @@ This topic covers the specific events exposed by the __RadPanelBar__control. The
 
 ## Click Events
 
-__RadPanelBar__exposes the following events when a __RadPanelBarItem__is clicked with the Mouse left button:
+__RadPanelBar__ exposes the following events when a __RadPanelBarItem__ is clicked with the Mouse left button:
 		
 
 * __ItemClick__ – raised on __MouseLeftButtonUp__ when a __RadPanelBarItem__ is clicked with Mouse left button.
@@ -26,7 +26,7 @@ __RadPanelBar__exposes the following events when a __RadPanelBarItem__is clicked
 * __ItemDoubleClick__ – raised on __MouseLeftButtonUp__ when a __RadPanelBarItem__ is double clicked with Mouse left button. The time slot between two clicks must be less than or equal to 300ms in order to be registered as a double click.
 			
 
-__RadPanelBarItem__exposes the following events:
+__RadPanelBarItem__ exposes the following events:
 		
 
 * __Click__ – raised on __MouseLeftButtonUp__ when the item is clicked with Mouse left button.
@@ -35,7 +35,7 @@ __RadPanelBarItem__exposes the following events:
 * __DoubleClick__ – raised on __MouseLeftButtonUp__ when the item is double clicked with Mouse left button. The time slot between the two clicks must be less than or equal to 300ms to register these clicks as a double click.
 			
 
-## Click Events sequence. 
+## Click Events sequence.  
 
 Currently a successful __RadPanelBarItem__ double click fires the following events:
 		
@@ -52,7 +52,7 @@ Currently a successful __RadPanelBarItem__ double click fires the following even
 
 ## Selection Events
 
-__RadPanelBar__exposes the following events regarding the selection:
+__RadPanelBar__ exposes the following events regarding the selection:
 		
 
 * __PreviewSelected__ - occurs before a child item is selected. The __PreviewSelected__ event handler receives two arguments:
@@ -165,7 +165,7 @@ __RadPanelBar__ exposes the following events regarding the expanding and collaps
 
 ## Drag and Drop Events
 
-__RadPanelBar__exposes the following events regarding the drag and drop:
+__RadPanelBar__ exposes the following events regarding the drag and drop:
 		
 
 * __PreviewDragStarted__ - occurs before the drag is started. The __PreviewDragStarted__ event handler receives two arguments:
@@ -198,7 +198,7 @@ __RadPanelBar__exposes the following events regarding the drag and drop:
 * __DragEnded__ - occurs when the drag has ended. The __DragEnded__ event handler receives two arguments:
 			
 
-* The sender argument contains the __RadPanelBar__. This argument is of type object, but can be cast to the __RadPanelBar__type.
+* The sender argument contains the __RadPanelBar__. This argument is of type object, but can be cast to the __RadPanelBar__ type.
 				
 
 * A __RadPanelBarDragEndedEventArgs__ object.
@@ -224,12 +224,7 @@ __RadPanelBar__exposes the following events regarding the drag and drop:
     }
       
 
-
-
 #### __VB.NET__
     Private Sub RadPanelBar_PreviewDragEnded(sender As Object, e As RadPanelBarDragEndedEventArgs)
     e.Handled = True
     End Sub
-		  
-
-

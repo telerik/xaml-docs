@@ -89,10 +89,10 @@ The __PersistenceManager.SerializationOptions__ property is of type __Serializat
 The __SerializationMetadataCollection__ also exposes an __Operator__ property that controls the relationship between its items. The __Operator__ property is a __LogicalOperator__ enumeration that exposes the following members:
 		
 
-* __And__ - a property should fulfill all conditions defined by the items in the __SerializationMetadataCollection__in order to be persisted
+* __And__ - a property should fulfill all conditions defined by the items in the __SerializationMetadataCollection__ in order to be persisted
 			
 
-* __Or__ - if a property fulfills even one of the conditions defined by the __SerializationMetadataCollection__items, it will be persisted
+* __Or__ - if a property fulfills even one of the conditions defined by the __SerializationMetadataCollection__ items, it will be persisted
 			
 
 The __SerializationMetadataCollection__ class exposes the following methods:

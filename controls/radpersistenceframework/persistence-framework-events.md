@@ -28,7 +28,7 @@ The __PersistenceError__ event is raised when an error occurs during the process
 
 ## PropertyPersisting
 
-The __PropertyPersisting__ event is raised before a property starts persisting. The __PropertyPersisting__event handler receives two arguments:
+The __PropertyPersisting__ event is raised before a property starts persisting. The __PropertyPersisting__ event handler receives two arguments:
 		
 
 * The __sender__ argument contains the __PersistenceManager__ object. This argument is of type __object__, but can be cast to the __PersistenceManager__ type.
@@ -42,7 +42,7 @@ The __PropertyPersisting__ event is raised before a property starts persisting. 
 The __PropertyPersisted__ event is raised when a property has been persisted. The __PropertyPersisted__ event handler receives two arguments:
 		
 
-* The __sender__ argument contains the __PersistenceManager__object. This argument is of type __object__, but can be cast to the __PersistenceManager__ type.
+* The __sender__ argument contains the __PersistenceManager__ object. This argument is of type __object__, but can be cast to the __PersistenceManager__ type.
 			  
 
 * A __PersistenceEventArgs__ object. Using this object you can find the the __Name__ of the persisted property and its __Path__.

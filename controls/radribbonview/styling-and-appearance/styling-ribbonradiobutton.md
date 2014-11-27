@@ -55,7 +55,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 * __RadRibbonBarButtonSelectedBackground__ - a brush that represents the background color of the __RadRibbonRadioButton__, when the button is toggled.
               
 
-* __RadRibbonBarButtonSelectedBorderInner -__a brush that represents the color of the __RadRibbonRadioButton's__ inner border, when the button is toggled.
+* __RadRibbonBarButtonSelectedBorderInner__ - a brush that represents the color of the __RadRibbonRadioButton's__ inner border, when the button is toggled.
               
 
 * __RadRibbonBarButtonOverBorder__ - a brush that represents the color of the __RadRibbonRadioButton's__ border, when the mouse is over it.

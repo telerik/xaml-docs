@@ -27,4 +27,4 @@ In order to get over this limitation, the __RadTabControl__ exposes a property t
 
 But if you set the __SupressSelectedContentTemplateReapplying__ property to __True__, then the __RadTabControl__ will still have one __ContentPresenter__ but it won't reset its __ContentTemplate__ whenever the selection is changed and this will allow you to place visual elements in the __RadTabControl.ItemsSource__ collection.
 
->Please keep in mind that if you set the __SupressSelectedContentTemplateReapplying__ property to __True__ the same __RadTabControl.ContentTemplate__ is applied to all __RadTabItems.__And if the __ControlTemplate__elements aren't databound, the same values will be displayed in all __RadTabItems__. 
+>Please keep in mind that if you set the __SupressSelectedContentTemplateReapplying__ property to __True__ the same __RadTabControl.ContentTemplate__ is applied to all __RadTabItems.__ And if the __ControlTemplate__ elements aren't databound, the same values will be displayed in all __RadTabItems__. 

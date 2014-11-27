@@ -49,7 +49,7 @@ Change the elements' properties untill you get the desired look.
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __GroupChrome__. Their names indicate to which part of the __GroupChrome's__ appearance they are assigned. 
 ![](images/RibbonView_Styling_GroupChrome_Resources.png)
 
-* __RibbonGroupHeaderBrush -__a brush that represents the __Foreground__ color of the __GroupChrome__ footer content
+* __RibbonGroupHeaderBrush__ - a brush that represents the __Foreground__ color of the __GroupChrome__ footer content
 					
 
 * __RibbonGroupNormalInnerBorderColor1__, __RibbonGroupNormalInnerBorderColor2__ - brushes that represent the color of the inner border of the __GroupChrome__.

@@ -107,7 +107,7 @@ Create a __new style__ for the __EditableTabHeader__ control.
 
 
 
-In the XAML code above we create new style for the EditableTabHeader control and this style will be the default template for that control. The template is made of __ContentPresenter__, __TextBox__ and a state group __EditStates__with two new states __EditMode__ and __ViewMode__. The "EditMode" state contains a storyboard that hides the content presenter control and makes the text box visible, while the __ViewMode__ state does nothing, which means that when the control is in this state it will have its default appearance. 
+In the XAML code above we create new style for the EditableTabHeader control and this style will be the default template for that control. The template is made of __ContentPresenter__, __TextBox__ and a state group __EditStates__ with two new states __EditMode__ and __ViewMode__. The "EditMode" state contains a storyboard that hides the content presenter control and makes the text box visible, while the __ViewMode__ state does nothing, which means that when the control is in this state it will have its default appearance. 
 
 Add the following implementation to the code behind of the __EditableTabHeader__ class.
 

@@ -26,13 +26,19 @@ layout: index
 				dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
 			});
         </script>
-		<script type="text/javascript">		
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item"><span class="k-in"><a href="{{site.baseurl}}/api/" target="_blank">API Reference</a></span></li>
+			</ul>
+		</div>
+		
+		<!--<script type="text/javascript">		
 			window.onload = function(){
 				var tree = $("#page-tree").data("kendoTreeView");
 				var selected = tree.select()
 				$("#page-nav").animate({scrollTop:selected.offset().top - $("#page-header").height() - $("#page-nav").height() / 2}, 300);				
 			}
-		</script>		
+		</script> -->		
     </div>
     <div id="page-article">       
         <article>

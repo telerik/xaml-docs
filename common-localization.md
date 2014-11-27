@@ -22,13 +22,13 @@ The purpose of this tutorial is to show you how to localize any resource string 
 
 This topic contains the following sections:
 
-* [What is LocalizationManager?](#What_is_LocalizationManager)
+* [What is LocalizationManager?](#what-is-localizationmanager)
 
-* [Resource keys](#Resource_Keys)
+* [Resource keys](#resource-keys)
 
-* [Localization using ResourceManager](#Localization_Using_ResourceManager)
+* [Localization using ResourceManager](#localization-using-resourcemanager)
 
-* [Localization using custom localization manager](#Localization_Using_Custom_Localization_Manager)
+* [Localization using custom localization manager](#localization-using-custom-localization-manager)
 
 ## What is LocalizationManager?
 

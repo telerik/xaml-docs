@@ -1,6 +1,7 @@
 destination: _site_SL
 exclude: [README.md,Gemfile,Gemfile.lock,
 coded-ui-support.md,
+common-partial-trust.md,
 installation-and-deployment/installation-system-requirements-wpf.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI-wpf.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP-wpf.md,

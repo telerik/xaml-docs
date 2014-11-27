@@ -19,7 +19,7 @@ We’re providing a common NuGet package containing all the assemblies from the 
         
 We will go through the following sections: 
 
-* [Downloading the NuGet packages](#downloading-the-NuGet-packages)
+* [Downloading the NuGet packages](#downloading-the-nuget-packages)
 
 * [Installing WPF Controls Package](#installing-wpf-controls-package)
 

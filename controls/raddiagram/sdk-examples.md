@@ -10,8 +10,6 @@ position: 3
 
 # SDK Examples
 
-
-
 The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/master/) provides additional demos for most of the Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls. The examples demonstrate many specific user case scenarios, that might be really helpful. In this article you can find the complete list of all SDK examples for __RadDiagram__.
 
 ## List of all RadDiagram SDK examples:{% if site.site_name == 'WPF' %}

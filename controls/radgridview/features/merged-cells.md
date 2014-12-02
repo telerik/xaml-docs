@@ -164,9 +164,6 @@ __Known limitations:__
 * Validation is currently not supported for merged cells
             
 
-* NewRowPosition=”Bottom” is not supported
-            
-
 ## Styling
 
 You can change the default settings by applying a style targeting the __GridViewMergedCell__ visual element.

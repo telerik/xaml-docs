@@ -5,7 +5,7 @@ description: Number Formatting
 slug: radspreadprocessing-features-number-formats
 tags: number,formatting
 published: True
-position: 10
+position: 11
 ---
 
 # Number Formatting

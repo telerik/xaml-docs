@@ -5,7 +5,7 @@ description: Filtering
 slug: radspreadprocessing-features-filtering
 tags: filtering
 published: True
-position: 13
+position: 14
 ---
 
 # Filtering

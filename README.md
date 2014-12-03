@@ -33,15 +33,24 @@ There are two ways you can contribute to the public Telerik UI for WPF/Silverlig
     - Fixing grammar, punctuation and other general errors is always appreciated. So are changes that expand on key ideas or correct errors in logic phrasing or otherwise. If your ambitions are greater, however, and you want to add completely new content to the site — like a new tutorial on using Kendo UI with an Atari 2600, for instance — we suggest you contact a member of the team first (or enter an issue!) to vet your idea. [Burke Holland](http://twitter.com/burkeholland), [Todd Anglin](http://twitter.com/toddanglin) and [Brandon Satrom](http://twitter.com/brandonsatrom) would all be happy to hear your idea and offer advice.
     - Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the live documentation site. Please don't edit the content in this section of a document.
 
-        ---
+         ---
+
         title: Introduction
-        page_title: Introduction
+
+        page_title: Introduction 
+
         description: Introduction
+
         slug: introduction
+
         tags: introduction
+
         published: True
+
         position: 1
-        ---
+
+         ---
+         
 
     - When adding content or making changes, please use only standard Markdown syntax, and make to preview your additions or changes before sending us a pull request. You can use an online tool like [Dillinger.io](http://dillinger.io/) or [Marked](http://markedapp.com/) on OSX to view what your changes will look like when ported to HTML.
 
@@ -54,16 +63,18 @@ There are two ways you can contribute to the public Telerik UI for WPF/Silverlig
 You can generate a static web site from the Telerik UI for WPF/Silverlight the documentation and browse it locally.
 
 For the WPF documentaion:
-        1. Clone the repository `git clone git@github.com:telerik/xaml-docs.git`
-        2. Run `bundle install` (you must have ruby and bundler installed beforehand)
-        3. Run `jekyll serve`
-        4. Open "http://localhost:4000/devtools/wpf" in your browser
+
+ 1. Clone the repository `git clone git@github.com:telerik/xaml-docs.git`
+ 2. Run `bundle install` (you must have ruby and bundler installed beforehand)
+ 3. Run `jekyll serve`
+ 4. Open "http://localhost:4000/devtools/wpf" in your browser
         
-For the WPF documentaion:
-        1. Clone the repository `git clone git@github.com:telerik/xaml-docs.git`
-        2. Run `bundle install` (you must have ruby and bundler installed beforehand)
-        3. Run `jekyll serve --config _config.yml,_silverlight.yml`
-        4. Open "http://localhost:4000/devtools/silverlight" in your browser
+For the Silverlight documentaion:
+
+ 1. Clone the repository `git clone git@github.com:telerik/xaml-docs.git`
+ 2. Run `bundle install` (you must have ruby and bundler installed beforehand)
+ 3. Run `jekyll serve --config _config.yml,_silverlight.yml`
+ 4. Open "http://localhost:4000/devtools/silverlight" in your browser
 
 ## License
 

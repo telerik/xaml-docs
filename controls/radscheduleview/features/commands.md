@@ -12,7 +12,7 @@ position: 9
 
 __RadScheduleView__ exposes its functionality through various commands that can be executed on its behalf. All commands are placed in the static class __RadScheduleViewCommands__. The purpose of this tutorial is to show you all of the commands exposed by the __RadScheduleViewCommands__ class and how to execute them.
 
-* [CreateAppointment / CreateAppointmentWithDialog Commands](#createappointment-/-createappointmentwithdialog-commands)
+* [CreateAppointment / CreateAppointmentWithDialog Commands](#createappointment--createappointmentwithdialog-commands)
 
 * [CreateInlineAppointment Command](#createinlineappointment-command)
 

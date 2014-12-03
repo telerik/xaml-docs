@@ -34,15 +34,11 @@ This article will cover the following examples:
 
 [Setting all the slots for a given resource to be read-only](#setting-all-the-slots-for-a-given-resource-to-be-read-only)
 
->importantIn some cases when using a big number of special slots there could be some __performance__ issues in the RadScheduleView control. In order to not lose performance when using Special and ReadOnly slots you should keep in mind the following measures:        
-
-* Populate the Slots that are in the visible range only.            
-
-* If a Slot is in multiple Resources at the same time do not create a separate Slot for each Resource but rather assign the Resources to the Slot.            
-
-* If a Slot is recurring do not create many different separate Slots but rather create a recurring one.            
-
-* Treat the Slots as Appointments, the same performance principals exist.            
+>In some cases when using a big number of special slots there could be some __performance__ issues in the RadScheduleView control. In order to not lose performance when using Special and ReadOnly slots you should keep in mind the following measures:      
+>	* Populate the Slots that are in the visible range only.       
+>	* If a Slot is in multiple Resources at the same time do not create a separate Slot for each Resource but rather assign the Resources to the Slot.     
+>	* If a Slot is recurring do not create many different separate Slots but rather create a recurring one.            
+>	* Treat the Slots as Appointments, the same performance principals exist.            
 
 ## Setting a separate Style for nonworking hours
 

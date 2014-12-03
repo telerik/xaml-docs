@@ -65,11 +65,11 @@ In order to customize the __ResizeHighlightStyle__ using Implicit Styles you wil
 
 	![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-1](images/radscheduleview-styles-and-templates-customizing-resize-drag-highlight-1.png)
 
-	## Customizing the DragDropHighlightStyle
+## Customizing the DragDropHighlightStyle
 
-	In order to customize the __DragDropHighlightStyle__ using Implicit Styles you will need to do step 1 and step 2 from the previous example and then:
+In order to customize the __DragDropHighlightStyle__ using Implicit Styles you will need to do step 1 and step 2 from the previous example and then:
 
-5. Create a Style that targets the __HighlightItem__, base it on the StaticResource DragDropHighlightStyle and set the Background property:
+1. Create a Style that targets the __HighlightItem__, base it on the StaticResource DragDropHighlightStyle and set the Background property:
 
 	#### __XAML__
 
@@ -79,7 +79,7 @@ In order to customize the __ResizeHighlightStyle__ using Implicit Styles you wil
 		</Style>
 	{{endregion}}
 
-6. Next we will need to set the newly created Style to the DragDropHighlightStyle of the ScheduleView control:
+2. Next we will need to set the newly created Style to the DragDropHighlightStyle of the ScheduleView control:
 
 	#### __XAML__
 

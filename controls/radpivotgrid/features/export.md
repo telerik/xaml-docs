@@ -358,7 +358,8 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 
 >In order to Export to docx, pdf or HTML format, you will have to add reference to the following assemblies:
 >	* __Telerik.Windows.Documents__
->	* __Telerik.Windows.Documents.Core__Based on the format you have selected, you have to add reference to one more assembly. More information is available in the sections below.
+>	* __Telerik.Windows.Documents.Core__ 
+>Based on the format you have selected, you have to add reference to one more assembly. More information is available in the sections below.
 
 No matter which of these three formats you have chosen, you will have to create a new __RadDocument__, which will hold the content, that will be exported. After that, you have to set this __RadDocument__ instance to the Document property of __RadRichTextBox__. This __RadRichTextBox__ must be visualized in order to be able to export its data. To generate __RadDocument__ you can use the code below:        
 

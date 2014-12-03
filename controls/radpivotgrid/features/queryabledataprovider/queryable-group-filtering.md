@@ -34,9 +34,7 @@ The __LabelFilter__ is used for filtering the data based on the Headers (row or 
 
 * __does not equal__ - showing all groups which header does NOT match the parameter we pass.            
 
-* __is greater than__ - show only groups which header is greater than the parameter we pass. Note that you should put in the whole header value which has to be matched.
-
-For example if you have headers *"Data1"*, *"Data2"*, *"Data3"* and you set this condition with parameter *"Data1"* you will see only *"Data2"* and *"Data3"* in __RadPivotGrid__, but if you set the parameter of the condition to *"Data"* then all of the groups will show as all of them *are greater than* "Data" by string comparison.            
+* __is greater than__ - show only groups which header is greater than the parameter we pass. Note that you should put in the whole header value which has to be matched. For example if you have headers *"Data1"*, *"Data2"*, *"Data3"* and you set this condition with parameter *"Data1"* you will see only *"Data2"* and *"Data3"* in __RadPivotGrid__, but if you set the parameter of the condition to *"Data"* then all of the groups will show as all of them *are greater than* "Data" by string comparison.            
 
 * __is greater than or equal to__ - showing only groups which header is greater or equal of the parameter we pass.            
 

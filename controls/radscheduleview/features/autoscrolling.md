@@ -18,11 +18,11 @@ This article covers the following topics:
 
 * [Customizing the auto scrolling:](#customizing-the-auto-scrolling-feature)
 
-* [ScrollStep;](#scrollstep)
+	* [ScrollStep;](#scrollstep)
 
-* [ScrollStepTime;](#scrollsteptime)
+	* [ScrollStepTime;](#scrollsteptime)
 
-* [ScrollAreaPadding.](#scrollareapadding)
+	* [ScrollAreaPadding.](#scrollareapadding)
 
 ## Enabling and disabling auto scrolling
 

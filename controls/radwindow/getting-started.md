@@ -23,16 +23,12 @@ This tutorial will walk you through the creation of a __RadWindow__ and will sho
 ## Declare a RadWindow
 
 >In order to use __RadWindow__ control in your projects you have to add references to the following assemblies:
-
-* __Telerik.Windows.Controls__
-
-* __Telerik.Windows.Controls.Navigation__
-
+>	* __Telerik.Windows.Controls__
+>	* __Telerik.Windows.Controls.Navigation__
 {% if site.site_name == 'WPF' %}
-* __Telerik.Windows.Data__
+>* __Telerik.Windows.Data__
 {% endif %}
-
-You can find more info {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html){% endif %}.
+>You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
 
 Here is an example of declaring a __RadWindow__.
 

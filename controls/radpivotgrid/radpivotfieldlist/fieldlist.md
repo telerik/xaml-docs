@@ -22,17 +22,17 @@ __Key Features:__
 
 * Using __RadContextMenu__ to apply modifications on __RadPivotGrid__ runtime:
 
-* Sorting ascending and descending
+	* Sorting ascending and descending
 
-* Apply Number Format from the predefined formats or create your own
+	* Apply Number Format from the predefined formats or create your own
 
-* Change currently used Aggregate function
+	* Change currently used Aggregate function
 
-* Applying different filters - Label, Value, Top10 filter
+	* Applying different filters - Label, Value, Top10 filter
 
-* Using different Calculations for GrandTotals
+	* Using different Calculations for GrandTotals
 
-* Using percent of GrandTotal instead showing the whole number.
+	* Using percent of GrandTotal instead showing the whole number.
 
 # See Also
 

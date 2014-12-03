@@ -109,6 +109,7 @@ As you can see the Calculated Item will show the average sales of four people. N
 >	* MonthGroup
 >	* QuarterGroup
 >	* YearGroup
+
 >As for the QueryableDoubleGroupDescription you would need to use an object of type DoubleGroup.          
 
 ## Add Calculated Items at runtime

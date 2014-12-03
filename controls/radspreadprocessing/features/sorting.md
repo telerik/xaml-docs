@@ -5,7 +5,7 @@ description: Sorting
 slug: radspreadprocessing-features-sorting
 tags: sorting
 published: True
-position: 14
+position: 15
 ---
 
 # Sorting

@@ -10,14 +10,9 @@ position: 0
 
 # Overview
 
-
-
 {% if site.site_name == 'Silverlight' %}![diagram sl 46 text](images/diagram_sl_46_text.png){% endif %}{% if site.site_name == 'WPF' %}![diagram wpf 46 text](images/diagram_wpf_46_text.png){% endif %}
 
-## 
-
-Thank you for choosing __Telerik Diagramming Framework__!
-		
+Thank you for choosing __Telerik Diagramming Framework__!		
 
 Create flexible and interactive Diagramming layouts for your rich data-visualization applications with __Telerik Diagramming Framework__. The framework toolset enables you to:
 
@@ -30,8 +25,7 @@ Create flexible and interactive Diagramming layouts for your rich data-visualiza
 * further enhance and customize your geographic maps solutions
 ![Rad Diagram Overview](images/RadDiagram_Overview.png)
 
-This is a list with short descriptions of the top-of-the-line features of __Telerik's Diagramming Framework__:
-		
+This is a list with short descriptions of the top-of-the-line features of __Telerik's Diagramming Framework__:		
 
 * __Powerful DataBinding Support__ - Telerik Diagramming Framework supports data binding to objects and collections out-of-the-box.[ Read more]({%slug raddiagram-data-overview%})
 
@@ -70,7 +64,5 @@ This is a list with short descriptions of the top-of-the-line features of __Tele
 * __Diagram Commands__ - Telerik Diagramming Framework expose a set of commands that allow you to easily implement  __RadDiagram__ interaction logic in MVVM solutions. [Read more]({%slug raddiagrams-features-commands%})
 
 # See Also
-
  * [Structure]({%slug raddiagram-structure%})
-
  * [Getting Started]({%slug raddiagram-getting-started%})

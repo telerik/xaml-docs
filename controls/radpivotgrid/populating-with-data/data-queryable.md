@@ -15,6 +15,9 @@ __QueryableDataProvider__ is one of the data source providers that can be used w
 
 ## Defining QueryableDataProvider
 
+> You have to add reference to the following __Telerik__ assembly to be able to use __QueryableDataProvider__ in your application:
+>	* __Telerik.Pivot.DataProviders.Queryable__
+
 You can define the __QueryableDataProvider__ as a *StaticResource* in your XAML if it will be used in more than one controls (for example if you have __RadPivotGrid__ and __RadPivotFieldList__ controls in your application) or define it directly for any of the controls you are planning to use:        
 
 >importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __QueryableDataProvider__ in your XAML.          
@@ -38,6 +41,8 @@ You can define the __QueryableDataProvider__ as a *StaticResource* in your XAML 
 	    <pivot:RadPivotFieldList Name="radPivotFieldList" Grid.Column="1"  DataProvider="{StaticResource QueryableDataProvider}"/>
 	</Grid>
 {{endregion}}
+
+>cautionIf you set different DataProviders for __RadPivotGrid__ and __RadPivotFieldList__ you will not be able to see any changes in __RadPivotGrid__ even when you change something in __RadPivotFieldList__. 
 
 You can also create an object of type __QueryableDataProvider__ in the background and after that to use it for your controls:        
 
@@ -80,6 +85,8 @@ The __QueryableDataProvider__ has *Source* property and it is mandatory to set i
 {{endregion}}
 
 ## Adding Group Descriptions Collections
+
+>caution When initializing the __QueryableDataProvider__ in the code behind it is a good idea to wrap all modifications in __BeginInit() - EndInit()__ section. This will cause only one refresh of the DataProvider and it will be when the EndInit() is reached. If you are applying only modifications (more than one) on already initialized __QueryableDataProvider__ you should use the DeferRefresh() method which will cause delay of the Refresh and this way all your changes will be applied simultaneously. More information for these methods is available in our [Populating with Data - Overview]({%slug radpivotgrid-populating-with-data%}) article.
 
 The __QueryableDataProvider__ is using four different collections for the data that it holds:        
 

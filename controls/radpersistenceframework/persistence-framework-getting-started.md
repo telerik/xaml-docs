@@ -67,7 +67,7 @@ In order to save the application's layout properties in an isolated storage, you
 
 
 
-The above definition will prepare the __RadTreeView__ control and all its UI related properties to be persisted. The __PersistenceManager__ uses the __IsolatedStorageProvider__ to store and load data to and from an isolated storage. This is why in order to save the __RadTreeView__'s UI properties, you can use the __IsolatedStorageProvider.SaveToStorage()__ method__:__
+The above definition will prepare the __RadTreeView__ control and all its UI related properties to be persisted. The __PersistenceManager__ uses the __IsolatedStorageProvider__ to store and load data to and from an isolated storage. This is why in order to save the __RadTreeView__'s UI properties, you can use the __IsolatedStorageProvider.SaveToStorage()__ method:
 
 #### __C#__
 

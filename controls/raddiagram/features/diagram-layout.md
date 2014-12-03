@@ -10,78 +10,64 @@ position: 10
 
 # Layout
 
+__Layout__ in the __RadDiagram__ refers to the way the __Shapes__ are arranged on the diagramming surface. __RadDiagram__ provides a dozen of Layout algorithms which can be easily customized.	  
 
-
-__Layout__ in the __RadDiagram__ refers to the way the __Shapes__ are arranged on the diagramming surface. __RadDiagram__ provides a dozen of Layout algorithms which can be easily customized.
-	  
-
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
-		
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.		
 
 ## Sugiyama Layout
 
-The __Sugiyama__ is a __layered__ layout type which organizes a diagram in layers and attempts to minimize the amount of crossings between the connections and the layers.
-		
+The __Sugiyama__ is a __layered__ layout type which organizes a diagram in layers and attempts to minimize the amount of crossings between the connections and the layers.		
 
-Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straightforward - just invoke the __RadDiagram.Layout()__ method or use the __Layout__ DiagramCommand:
-		
+Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straightforward - just invoke the __RadDiagram.Layout()__ method or use the __Layout__ DiagramCommand:		
 
 * use the __RadDiagram Layout()__ method:
 			  
-#### __XAML__
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-            <telerik:RadButton Margin="5,0"
-                               Click="Layout"
-                               Content="Layout" />
-        </StackPanel>
-        <telerik:RadDiagram x:Name="diagram"
-                            Grid.Row="1"
-                            Margin="5" />
-    </Grid>			  
-			  
+	#### __XAML__
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<telerik:RadButton Margin="5,0"
+								   Click="Layout"
+								   Content="Layout" />
+			</StackPanel>
+			<telerik:RadDiagram x:Name="diagram"
+								Grid.Row="1"
+								Margin="5" />
+		</Grid>		
 
-#### __C#__
-    private void Layout(object sender, RoutedEventArgs e)
-    {
-        diagram.Layout();
-    }			  
-			  
+	#### __C#__
+		private void Layout(object sender, RoutedEventArgs e)
+		{
+			diagram.Layout();
+		}		  
 
-#### __VB.NET__
+	#### __VB.NET__
 
-    Private Sub Layout(sender As Object, e As RoutedEventArgs)
-        diagram.Layout()
-    End Sub			  
-			  
-
-
+		Private Sub Layout(sender As Object, e As RoutedEventArgs)
+			diagram.Layout()
+		End Sub			  
 
 * use the __DiagramCommands Layout__ command:
 			  
-#### __XAML__
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-            <telerik:RadButton Margin="5,0"
-                               Command="telerik:DiagramCommands.Layout"
-                               CommandTarget="{Binding ElementName=diagram}"
-                               Content="LayoutCommand" />
-        </StackPanel>
-        <telerik:RadDiagram x:Name="diagram"
-                            Grid.Row="1"
-                            Margin="5" />
-    </Grid>		  
-			  
-
-
+	#### __XAML__
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<telerik:RadButton Margin="5,0"
+								   Command="telerik:DiagramCommands.Layout"
+								   CommandTarget="{Binding ElementName=diagram}"
+								   Content="LayoutCommand" />
+			</StackPanel>
+			<telerik:RadDiagram x:Name="diagram"
+								Grid.Row="1"
+								Margin="5" />
+		</Grid>		  
 
 The __Layout()__ method provides two optional parameters - the type of the Layout (Sugiyama or Tree) and the corresponding layout settings (SugiyamaSettings or TreeLayoutSettings):
 
@@ -99,7 +85,7 @@ The __Layout()__ method provides two optional parameters - the type of the Layou
 		};
 		this.diagram.Layout(LayoutType.Sugiyama, settings);
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -114,43 +100,32 @@ The __Layout()__ method provides two optional parameters - the type of the Layou
 		}
 		Me.diagram.Layout(LayoutType.Sugiyama, settings)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-Below you can see how random shapes and connections are being arranged with the given layout configuration:![raddiagram-features-layout-Sugiyama](images/raddiagram-features-layout-Sugiyama.png)
+Below you can see how random shapes and connections are being arranged with the given layout configuration:
+![raddiagram-features-layout-Sugiyama](images/raddiagram-features-layout-Sugiyama.png)
 
 ## Tree Layout
 
-The Tree Layout Type organizes a diagram in a tree-like fashion. There are eight additional subtypes of Tree Layout:
-		
+The Tree Layout Type organizes a diagram in a tree-like fashion. There are eight additional subtypes of Tree Layout:		
 
-* __Tree-down:__ - a standard hierarchical layout with node spreading from the root downwards.
-			  
+* __Tree-down:__ - a standard hierarchical layout with node spreading from the root downwards.			  
 
-* __Tree-up:__ - a standard hierarchical layout with node spreading from the root upwards.
-			  
+* __Tree-up:__ - a standard hierarchical layout with node spreading from the root upwards.			  
 
-* __Tree-left:__ - a standard hierarchical layout with node spreading from the root to the left.
-			  
+* __Tree-left:__ - a standard hierarchical layout with node spreading from the root to the left.			  
 
-* __Tree-right:__ - a standard hierarchical layout with node spreading from the root to the right.
-			  
+* __Tree-right:__ - a standard hierarchical layout with node spreading from the root to the right.			  
 
-* __Mindmap-vertical:__ - a classic mindmapping pattern with wings stacked vertically.
-			  
+* __Mindmap-vertical:__ - a classic mindmapping pattern with wings stacked vertically.			  
 
-* __Mindmap-horizontal:__ - a classic mindmapping pattern with wings stacked horizontally.
-			  
+* __Mindmap-horizontal:__ - a classic mindmapping pattern with wings stacked horizontally.			  
 
-* __Tip-over tree:__ - much like the tree-down layout but nodes are organized as standard trees from the first-child level on to reduce the spreading and usage of space.
-			  
+* __Tip-over tree:__ - much like the tree-down layout but nodes are organized as standard trees from the first-child level on to reduce the spreading and usage of space.			  
 
-* __Radial:__ - siblings are organized on circular level emanating from the center/root outwards.
-			  
+* __Radial:__ - siblings are organized on circular level emanating from the center/root outwards.			  
 
 Below you can see a snapshots of random diagrams laid out with Tree Layout types:
-
 
 * Tree-down: ![raddiagram-features-layout-tree-down](images/raddiagram-features-layout-tree-down.png) 
 
@@ -182,7 +157,7 @@ Here is how this could be achieved in code behind.
 		settings.Roots.Add(this.diagram.Shapes[0]);
 		this.diagram.Layout(LayoutType.Tree, settings);
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -195,16 +170,13 @@ Here is how this could be achieved in code behind.
 		settings.Roots.Add(Me.diagram.Shapes(0))
 		Me.diagram.Layout(LayoutType.Tree, settings)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Layout Settings
 
 __Component Layout and Settings__
 
 One important aspect with respect to diagram layout is the concept of graph component. If a diagram consists of separate sub-diagrams with no connection between them they are called components of a diagram.
-		
 
 When applying a diagram layout to a diagram consisting of one or more components a layout is applied to each components and thereafter the components are organized in a grid.
 
@@ -212,69 +184,49 @@ When applying a diagram layout to a diagram consisting of one or more components
 
 The splitting in components is automatic and the grid layout of the components applied to both the tree layout and the layered layout types.
 
-The grid layout has the following settings which are both present as part of the __SugiyamaLayoutSettings__ and the __TreeLayoutSettings__:
-		
+The grid layout has the following settings which are both present as part of the __SugiyamaLayoutSettings__ and the __TreeLayoutSettings__:	
 
-* __ComponentMargin:__ the margin each component has in the grid layout.
-			  
+* __ComponentMargin:__ the margin each component has in the grid layout.			  
 
-* __ComponentsGridWidth:__ the total width of the grid wherein the components are laid out.
-			  
+* __ComponentsGridWidth:__ the total width of the grid wherein the components are laid out.			  
 
-* __TotalMargin:__ the margin around the (virtual) grid.
-			  
+* __TotalMargin:__ the margin around the (virtual) grid.			  
 
 __Sugiyama specific settings__
 
-* __VerticalDistance__: the vertical spacing between the layers.
-			  
+* __VerticalDistance__: the vertical spacing between the layers.			  
 
-* __HorizontalDistance__: the horizontal spacing between the layers.
-			  
+* __HorizontalDistance__: the horizontal spacing between the layers.			  
 
 __Tree layout settings__
 
-* __TreeLayoutType__: the subtype of the tree layout: TreeDown, TreeUp, TreeLeft, TreeRight, TipOverTree, RadialTree, MindmapVertical, MindmapHorizontal. See the examples above for more details.
-			  
+* __TreeLayoutType__: the subtype of the tree layout: TreeDown, TreeUp, TreeLeft, TreeRight, TipOverTree, RadialTree, MindmapVertical, MindmapHorizontal. See the examples above for more details.			  
 
-* __VerticalSeparation__: (applies only to the four standard tree types  and the TipOverTree) the vertical separation between tree level.
-			  
+* __VerticalSeparation__: (applies only to the four standard tree types  and the TipOverTree) the vertical separation between tree level.			  
 
-* __HorizontalSeparation__: (applies only to the four standard tree types and the TipOverTree) the horizontal separation between siblings on the same level.
-			  
+* __HorizontalSeparation__: (applies only to the four standard tree types and the TipOverTree) the horizontal separation between siblings on the same level.			  
 
-* __UnderneathVerticalTopOffset__: (applies only to the TipOverTree type) the offset from the parent of the first child.
-			  
+* __UnderneathVerticalTopOffset__: (applies only to the TipOverTree type) the offset from the parent of the first child.			  
 
-* __UnderneathHorizontalOffset__: (applies only to the TipOverTree type) the horizontal offset between parent and child.
-			  
+* __UnderneathHorizontalOffset__: (applies only to the TipOverTree type) the horizontal offset between parent and child.			  
 
-* __UnderneathVerticalSeparation__: (applies only to the TipOverTree type) the vertical offset between subsequent children.
-			  
+* __UnderneathVerticalSeparation__: (applies only to the TipOverTree type) the vertical offset between subsequent children.			  
 
-* __Roots__: The Roots of the components. Use this collection of IShapes to set the roots of the trees in your diagram before layout.
-			  
+* __Roots__: The Roots of the components. Use this collection of IShapes to set the roots of the trees in your diagram before layout.			  
 
-* __TipOverTreeStartLevel__: this property applies only to the TipOverTree type and gets or sets the level from which a tip-over tree arrangement should be applied. A value of zero means that the children underneath the root will have a tip-over arrangement, a value of one means the grand-children of the root will have this applied and so on.
-			  
+* __TipOverTreeStartLevel__: this property applies only to the TipOverTree type and gets or sets the level from which a tip-over tree arrangement should be applied. A value of zero means that the children underneath the root will have a tip-over arrangement, a value of one means the grand-children of the root will have this applied and so on.			  
 
-* __RadialSeparation__: (applies only to the RadialTree type) the radial distance between levels.
-			  
+* __RadialSeparation__: (applies only to the RadialTree type) the radial distance between levels.			  
 
-* __RadialFirstLevelSeparation__: (applies only to the RadialTree type) the radial distance between the root and the first level.
-			  
+* __RadialFirstLevelSeparation__: (applies only to the RadialTree type) the radial distance between the root and the first level.			  
 
-* __KeepComponentsInOneRadialLayout__: (applies only to the RadialTree type) if set to true the default behavior of organizing components into a grid will be overridden and the components will be considered as part of one radial tree. To this end a virtual root will be added which unifies the different components. See the example below.
-			  
+* __KeepComponentsInOneRadialLayout__: (applies only to the RadialTree type) if set to true the default behavior of organizing components into a grid will be overridden and the components will be considered as part of one radial tree. To this end a virtual root will be added which unifies the different components. See the example below.			  
 
-* __StartRadialAngle__: The radial layout allows you to use a sector instead of the full 360 degrees. This start angle defines the beginning of this sector.
-			  
+* __StartRadialAngle__: The radial layout allows you to use a sector instead of the full 360 degrees. This start angle defines the beginning of this sector.			  
 
-* __EndRadialAngle__: This end angle defines the end of the sector used (the part of 360 degrees used).
-			  
+* __EndRadialAngle__: This end angle defines the end of the sector used (the part of 360 degrees used).			  
 
-* __AnimateTransitions__: This property allows you to animate the dynamic changes of a Diagram layout. When you set the value of the property to __True__ and dynamically change the layout settings of a Diagramming solution, an animation will be applied during the transition of the settings.
-			  
+* __AnimateTransitions__: This property allows you to animate the dynamic changes of a Diagram layout. When you set the value of the property to __True__ and dynamically change the layout settings of a Diagramming solution, an animation will be applied during the transition of the settings.			  
 
 Below you can see the explanation of the main __TreeLayout Settings__ for the base 4 types (Up, Down, Left, Right) + TipOverTree.
 
@@ -285,7 +237,5 @@ Below you can see how the __KeepComponentsInOneRadialLayout__ actually works whe
 ![raddiagram-features-layout-radiallayout](images/raddiagram-features-layout-radiallayout.png)
 
 ## See Also
-
  * [Populating with Data]({%slug raddiagram-data-overview%})
-
  * [Routing]({%slug raddiagram-features-routing%})

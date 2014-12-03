@@ -10,10 +10,7 @@ position: 0
 
 # Changes
 
-
-
 This article describes the release history of the __RadRibbonView__ control
-	  
 
 ## Q1 2014
 
@@ -63,37 +60,31 @@ This article describes the release history of the __RadRibbonView__ control
 
 * Add DataBinding Support for ContextualGroups/ContextualTabs
 
->tipThis feature is further described in the [Contextual Tabs]({%slug radribbonview-contextual-tabs%}) tutorial.
-				  
+	>tip This feature is further described in the [Contextual Tabs]({%slug radribbonview-contextual-tabs%}) tutorial.				  
 
 * Allow hiding the tab headers
 
->tipThis feature is further described in the [Ribbon Tab](B28AD160-10F3-4D23-9EE0-A46DF9B2DA6D#Adding_Tab_Items) tutorial.
-				  
+	>tip This feature is further described in the [Ribbon Tab](B28AD160-10F3-4D23-9EE0-A46DF9B2DA6D#Adding_Tab_Items) tutorial.				  
 
 * Implement Character Ellipses in the Title
 
 * Allow multiple gesture keys to be set
 
->tipThis feature is further described in the [Keyboard Support]({%slug radribbonview-keyboard-support%}) tutorial.
-				  
+	>tip This feature is further described in the [Keyboard Support]({%slug radribbonview-keyboard-support%}) tutorial.				  
 
 * The Title of the RadRibbonWindow should be created from the Title and ApplicationName strings of the RibbonView automatically
 
 * Allow easily customizing the ApplicationButton Width
 
->tipUse the __RadRibbonView ApplicationButtonStyle__ property to apply a custom __Width__ on the __ApplicationButton__ as described in the [Styling the ApplicationButton]({%slug radribbonview-styling-applicationbutton%}) tutorial.
-				  
+	>tip Use the __RadRibbonView ApplicationButtonStyle__ property to apply a custom __Width__ on the __ApplicationButton__ as described in the [Styling the ApplicationButton]({%slug radribbonview-styling-applicationbutton%}) tutorial.				  
 
 * Add ScreenTip for the Application Button
 
->tipUse the __RadRibbonView ApplicationButtonStyle__ property to set a __ScreenTip__ for the __ApplicationButton__.
-				  
+	>tip Use the __RadRibbonView ApplicationButtonStyle__ property to set a __ScreenTip__ for the __ApplicationButton__.				  
 
 * Ability to bind the screentip to text and image
 
->tipThis feature is further described in the [Screen Tips]({%slug radribbonview-screentips%}) tutorial.
-				  
+	>tip This feature is further described in the [Screen Tips]({%slug radribbonview-screentips%}) tutorial.				  
 
 ## Q2 2013
 
@@ -317,8 +308,7 @@ This article describes the release history of the __RadRibbonView__ control
 
 * Fixed: Resizing a RibbonView that contains an active contextual group containing at least one contextual tab, throws an exception
 
->You can examine the Q2 2012 release history in {% if site.site_name == 'Silverlight' %}[our site](http://www.telerik.com/products/silverlight/whats-new/release_notes/q2-2012-version-2012-2-607.aspx){% endif %}{% if site.site_name == 'WPF' %}[our site](http://www.telerik.com/products/wpf/whats-new/release-history/q2-2012-version-2012-2-607-2457892840.aspx){% endif %}.
-			  
+>You can examine the Q2 2012 release history in {% if site.site_name == 'Silverlight' %}[our site](http://www.telerik.com/products/silverlight/whats-new/release_notes/q2-2012-version-2012-2-607.aspx){% endif %}{% if site.site_name == 'WPF' %}[our site](http://www.telerik.com/products/wpf/whats-new/release-history/q2-2012-version-2012-2-607-2457892840.aspx){% endif %}.			  
 
 ## Q1 2012
 

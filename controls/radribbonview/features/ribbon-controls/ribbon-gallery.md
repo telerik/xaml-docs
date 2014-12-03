@@ -10,18 +10,13 @@ position: 6
 
 # Ribbon Gallery
 
+Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ may consist of various elements, one of which is the __Ribbon Gallery__. This topic discusses concepts fundamental to the __Ribbon Gallery__ at first and then goes into the usage of the __RadRibbonGallery__ class and its features.	  
 
-
-Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ may consist of various elements, one of which is the __Ribbon Gallery__. This topic discusses concepts fundamental to the __Ribbon Gallery__ at first and then goes into the usage of the __RadRibbonGallery__ class and its features.
-	  
-
->tipBefore proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.
-		
+>tip Before proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.		
 
 ## Ribbon Gallery - Fundamentals 
 
-__Galleries__ are simple, but a very powerful and flexible user interface concept. They are basically a scrollable list of items and the idea behind them is that each item shows the result of clicking it visually, rather than a static icon which points its purpose.
-		
+__Galleries__ are simple, but a very powerful and flexible user interface concept. They are basically a scrollable list of items and the idea behind them is that each item shows the result of clicking it visually, rather than a static icon which points its purpose.		
 
 The gallery is always rendered in two ways:
 
@@ -31,42 +26,32 @@ The gallery is always rendered in two ways:
 * Directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}).
 ![](images/RibbonView_Gallery_group.png)
 
->tipThe classes that represent the ribbon gallery are __Telerik.Windows.Controls.RadRibbonGallery__ and __Telerik.Windows.Controls.RadGallery__.
-		  
+>tip The classes that represent the ribbon gallery are __Telerik.Windows.Controls.RadRibbonGallery__ and __Telerik.Windows.Controls.RadGallery__.		  
 
-The __RadGallery__ is a special type of __ListBox__ (it derives from __ListBox__). The __RadGallery__ class is used when you want to add a ribbon gallery as a popup. One important feature of the __RadGallery__ is that it is __scrollable__. That's why you should always specify the [ViewportWidth](http://msdn.microsoft.com/en-us/library/system.windows.controls.scrollviewer.viewportwidth.aspx) and [ViewportHeight](http://msdn.microsoft.com/en-us/library/system.windows.controls.scrollviewer.viewportheight.aspx) properties. These two properties control the horizontal and vertical size of the content's viewport. On the other hand, the size of the items themselves is controlled by the __ItemWidth__ and __ItemHeight__ properties.
-		
+The __RadGallery__ is a special type of __ListBox__ (it derives from __ListBox__). The __RadGallery__ class is used when you want to add a ribbon gallery as a popup. One important feature of the __RadGallery__ is that it is __scrollable__. That's why you should always specify the [ViewportWidth](http://msdn.microsoft.com/en-us/library/system.windows.controls.scrollviewer.viewportwidth.aspx) and [ViewportHeight](http://msdn.microsoft.com/en-us/library/system.windows.controls.scrollviewer.viewportheight.aspx) properties. These two properties control the horizontal and vertical size of the content's viewport. On the other hand, the size of the items themselves is controlled by the __ItemWidth__ and __ItemHeight__ properties.		
 
->tipWhen you want to declare a ribbon gallery inside a [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%})/[RadRibbonSplitButton]({%slug radribbonview-split-button%}) use the __RadGallery__ class.
-		  
+>tip When you want to declare a ribbon gallery inside a [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%})/[RadRibbonSplitButton]({%slug radribbonview-split-button%}) use the __RadGallery__ class.		  
 
->tipWhen you use the __RadGallery__ class, you __should always specify__ the __ViewportWidht__ and __ViewportHeight__ properties.
-		  
+>tip When you use the __RadGallery__ class, you __should always specify__ the __ViewportWidht__ and __ViewportHeight__ properties.		  
 
-The __RadRibbonGallery__ is a special type of gallery (it derives from __RadGallery__ class), that is designed to be hosted directly in a __RadRibbonControl__. Like the normal __RadGallery__, it has __Viewport Width\Height__ and __Item Width\Height__. However, the viewport is constrained to the size of the ribbon itself.
-		
+The __RadRibbonGallery__ is a special type of gallery (it derives from __RadGallery__ class), that is designed to be hosted directly in a __RadRibbonControl__. Like the normal __RadGallery__, it has __Viewport Width\Height__ and __Item Width\Height__. However, the viewport is constrained to the size of the ribbon itself.		
 
->tipWhen you use the __RadRibbonGallery__ class, __do not specify__ the __ViewportWidth__ and __ViewportHeight__ properties.
-		  
+>tip When you use the __RadRibbonGallery__ class, __do not specify__ the __ViewportWidth__ and __ViewportHeight__ properties.		  
 
 The __RadRibbonGallery__ always should have a popup associated with it, otherwise the user won't be able to drop down the ribbon gallery. In the popup you may want to include a __RadMenu__ that has other additional options regarding the gallery. However, when you drop down a __RadRibbonGallery__ the items are automatically moved into the popup. So even if you specify a menu, the first item in the popup will be a gallery. On the other hand, while the items are hosted in the ribbon you can page up/down smoothly using the buttons inside the gallery.
 ![](images/RibbonView_Gallery_elements.png)
 
->tipWhen you want to declare a ribbon gallery directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}) use the __RadRibbonGallery__ class.
-		  
+>tip When you want to declare a ribbon gallery directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}) use the __RadRibbonGallery__ class.		  
 
 ## Adding Ribbon Galleries to a RadRibbonView Control
 
-Ribbon gallery can be always rendered in two ways - inside a [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%})/[RadRibbonSplitButton]({%slug radribbonview-split-button%}) or directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}).
-		
+Ribbon gallery can be always rendered in two ways - inside a [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%})/[RadRibbonSplitButton]({%slug radribbonview-split-button%}) or directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}).		
 
 ### Adding Ribbon Gallery Inside a RadRibbonDropDownButton/RadRibbonSplitButton
 
-When you want to declare a __Ribbon Gallery__ as popup inside a [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%})/[RadRibbonSplitButton]({%slug radribbonview-split-button%}), you should use the __RadGallery__ class. The next example demonstrates how to do that.
-			
+When you want to declare a __Ribbon Gallery__ as popup inside a [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%})/[RadRibbonSplitButton]({%slug radribbonview-split-button%}), you should use the __RadGallery__ class. The next example demonstrates how to do that.			
 
 #### __XAML__
-
 {{region radribbonview-ribbon-gallery-0}}
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -92,9 +77,7 @@ When you want to declare a __Ribbon Gallery__ as popup inside a [RadRibbonDropDo
 	        </telerik:RadRibbonGroup>
 	    </telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-	{{endregion}}
-
-
+{{endregion}}
 
 Note that when you use the __RadGallery__, you should specify the __ViewportWidth__ and __ViewportHeight__ properties. These two properties control the horizontal and vertical size of the content's viewport. On the other hand, the size of the items themselves is controlled by the __ItemWidth__ and __ItemHeight__ properties. The result from the example is shown on the next two snapshots.
 ![](images/RibbonView_Gallery_splitBtn.png)
@@ -104,11 +87,9 @@ When you press the popup launch button, the gallery is shown.
 
 ### Adding Ribbon Gallery Directly Into a Ribbon Group
 
-When you want to declare a __Ribbon Gallery__ directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}), you should use the __RadRibbonGallery__ class. Consider again the previous example, add an additional __RadRibbonGroup__ and declare a __RadRibbonGallery__ like in the example below.
-			
+When you want to declare a __Ribbon Gallery__ directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}), you should use the __RadRibbonGallery__ class. Consider again the previous example, add an additional __RadRibbonGroup__ and declare a __RadRibbonGallery__ like in the example below.			
 
 #### __XAML__
-
 {{region radribbonview-ribbon-gallery-1}}
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -171,9 +152,7 @@ When you want to declare a __Ribbon Gallery__ directly into a [Ribbon Group]({%s
 	        </telerik:RadRibbonGroup>
 	    </telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-	{{endregion}}
-
-
+{{endregion}}
 
 The result is shown on the image below.
 ![](images/RibbonView_Gallery_ribbongallery.png)
@@ -181,18 +160,15 @@ The result is shown on the image below.
 When you press the popup launch button, the gallery is shown. 
 ![](images/RibbonView_Gallery_ribbongallery_popup.png)
 
->tipWhile the items are hosted in the ribbon, you could __page up/down__ smoothly using the buttons beside the gallery.
-			  
+>tip While the items are hosted in the ribbon, you could __page up/down__ smoothly using the buttons beside the gallery.			  
 
 ## Adding Additional Menu Items to a RadGallery 
 
-The __RadGallery__ allows you to place in the popup additional menu options regarding the gallery. For that purpose you should use the __RadContextMenu__ control.
-		
+The __RadGallery__ allows you to place in the popup additional menu options regarding the gallery. For that purpose you should use the __RadContextMenu__ control.		
 
 The next code snippet demonstrates how to add additional menu items.
 
 #### __XAML__
-
 {{region radribbonview-ribbon-gallery-2}}
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -226,23 +202,18 @@ The next code snippet demonstrates how to add additional menu items.
 	        </telerik:RadRibbonGroup>
 	    </telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-	{{endregion}}
-
-
+{{endregion}}
 
 And the result is shown on the next image.
 ![](images/RibbonView_Gallery_group_contextMenu.png)
 
 ## Adding Additional Menu Items to a RadRibbonGallery
 
-You could also associate additional menu options with the __RadRibbonGallery__ popup. In contrast to the __RadGallery__ class, here the __RadRibbonGallery__ exposes a special property for that purpose - __PopupMenuItems__.
-		
+You could also associate additional menu options with the __RadRibbonGallery__ popup. In contrast to the __RadGallery__ class, here the __RadRibbonGallery__ exposes a special property for that purpose - __PopupMenuItems__.		
 
-In the next example several __RadMenuItem__ objects are added to the __RadRibbonGallery__'s __PopupMenuItems__ collection.
-		
+In the next example several __RadMenuItem__ objects are added to the __RadRibbonGallery__'s __PopupMenuItems__ collection.		
 
 #### __XAML__
-
 {{region radribbonview-ribbon-gallery-3}}
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -277,20 +248,17 @@ In the next example several __RadMenuItem__ objects are added to the __RadRibbon
 	        </telerik:RadRibbonGroup>
 	    </telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RibbonView_Gallery_ribbongallery_contextMenu.png)
 
 ## Adding Header RadRibbonGalleryItems
 
-You can visually group the __RadRibbonGallery__ items when the gallery is in open state. You can do that by defining some of the __RadRibbonGalleryItems__ as headers through the __IsHeader__ bool property.
-		
+You can visually group the __RadRibbonGallery__ items when the gallery is in open state. You can do that by defining some of the __RadRibbonGalleryItems__ as headers through the __IsHeader__ bool property.		
 
-However, in order to properly display header items in the __RadRibbonGallery__, you need to change its default __ItemsPanel__ to a __RibbonGalleryPanel__:
-		
+However, in order to properly display header items in the __RadRibbonGallery__, you need to change its default __ItemsPanel__ to a __RibbonGalleryPanel__:		
 
 #### __XAML__
-
 {{region radribbonview-ribbon-gallery-6}}
 	<telerik:RadRibbonGallery>
 	    <telerik:RadRibbonGallery.ItemsPanel>
@@ -310,81 +278,60 @@ However, in order to properly display header items in the __RadRibbonGallery__, 
 	    <telerik:RadGalleryItem Content="Item 3.1" />
 		<telerik:RadGalleryItem Content="Item 3.2" />
 	</telerik:RadRibbonGallery>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Ribbon View Ribbon Gallery Headers](images/RadRibbonView_RibbonGallery_Headers.png)
 
->The __telerikRibbonViewPrimitives__ alias points to the __Telerik.Windows.Controls.RibbonView.Primitives__<br/> namespace:xmlns:telerikRibbonViewPrimitives="clr-namespace:Telerik.Windows.Controls.RibbonView.Primitives;assembly=Telerik.Windows.Controls.RibbonView"
+>The __telerikRibbonViewPrimitives__ alias points to the __Telerik.Windows.Controls.RibbonView.Primitives__
+>`namespace:xmlns:telerikRibbonViewPrimitives="clr-namespace:Telerik.Windows.Controls.RibbonView.Primitives;assembly=Telerik.Windows.Controls.RibbonView"`
 
 ## Setting RadRibbonGallery's PopupLaunchButtonVisibility
 
-The __RadRibbonGallery__ class allows you to set the visibility of the launch popup button. The next example shows you how to set the __RadRibbonGallery__'s __PopupLaunchButtonVisibility__ property to __Visibility.Collapsed__.
-		
+The __RadRibbonGallery__ class allows you to set the visibility of the launch popup button. The next example shows you how to set the __RadRibbonGallery__'s __PopupLaunchButtonVisibility__ property to __Visibility.Collapsed__.		
 
 #### __XAML__
-
 {{region radribbonview-ribbon-gallery-4}}
 	<telerik:RadRibbonGallery Title="Quick Styles" x:Name="QuickStyles" ItemWidth="72" ItemHeight="56" PopupLaunchButtonVisibility="Collapsed">
 	 ...
 	</telerik:RadRibbonGallery>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RibbonView_Gallery_disable_popup.png)
 
 ## Working with Selection
 
-The __RadGallery__ derives directly from __ListBox__. So working with it is no different than using a standard __ListBox__ control. Here are the related properties regarding the selection:
-		
+The __RadGallery__ derives directly from __ListBox__. So working with it is no different than using a standard __ListBox__ control. Here are the related properties regarding the selection:		
 
-* __RadGallery.SelectedItem__ - specifies the selected gallery item.
-			
+* __RadGallery.SelectedItem__ - specifies the selected gallery item.		
 
-* __RadGallery.SelectedIndex__ - specifies the selected index.
-			
+* __RadGallery.SelectedIndex__ - specifies the selected index.			
 
-* __RadGalleryItem.IsSelected__ - specifies whether the item is selected or not.
-			
+* __RadGalleryItem.IsSelected__ - specifies whether the item is selected or not.			
 
-Also, to get notified about the change in the selection you can handle the __SelectionChanged__ event.
-		
+Also, to get notified about the change in the selection you can handle the __SelectionChanged__ event.		
 
 ## Events
 
-The __RadGallery__ class exposes two events - __ActivatePreview__ and __DeactivatePreview__.
-		
+The __RadGallery__ class exposes two events - __ActivatePreview__ and __DeactivatePreview__.		
 
-The __ActivatePreview__ event is raised when the mouse cursor is over the gallery item. The __ActivatePreview__ event handler receives two arguments:
-		
-
+The __ActivatePreview__ event is raised when the mouse cursor is over the gallery item. The __ActivatePreview__ event handler receives two arguments:		
 * The sender argument contains the __RadGallery__. This argument is of type __object__, but can be cast to the __RadGallery__ type.
-			
-
-* The second argument is a __RadRoutedEventArgs__ object.
-			
+* The second argument is a __RadRoutedEventArgs__ object.			
 
 The __DeactivatePreview__ event is raised when the mouse cursor leaves the gallery item. The __DeactivatePreview__ event handler receives two arguments:
-		
-
 * The sender argument contains the __RadGallery__. This argument is of type __object__, but can be cast to the __RadGallery__ type.
-			
+* The second argument is a __RadRoutedEventArgs__ object.			
 
-* The second argument is a __RadRoutedEventArgs__ object.
-			
-
->tipSince the __RadRibbonGallery__ inherits the __RadGallery__ class, you can handle the __ActivatePreview__ and __DeactivatePreview__ events in the __RadRibbonGallery__ control as well.
-		  
+>tip Since the __RadRibbonGallery__ inherits the __RadGallery__ class, you can handle the __ActivatePreview__ and __DeactivatePreview__ events in the __RadRibbonGallery__ control as well.		  
 
 #### __XAML__
-
 {{region radribbonview-ribbon-gallery-5}}
 	<telerik:RadRibbonGallery Title="Quick Styles" x:Name="QuickStyles" ItemWidth="72" ItemHeight="56" 
 	                          ActivatePreview="QuickStyles_ActivatePreview" 
 	                          DeactivatePreview="QuickStyles_DeactivatePreview">
 	 ...
 	</telerik:RadRibbonGallery>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -403,9 +350,7 @@ The __DeactivatePreview__ event is raised when the mouse cursor leaves the galle
 	 // Get the selected item
 	 RadGalleryItem selectedItem = gallery.SelectedItem as RadGalleryItem;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -424,40 +369,23 @@ The __DeactivatePreview__ event is raised when the mouse cursor leaves the galle
 		' Get the selected item'
 		Dim selectedItem As RadGalleryItem = TryCast(gallery.SelectedItem, RadGalleryItem)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview]({%slug radribbonview-events-overview%}) topic.
-		
+For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview]({%slug radribbonview-events-overview%}) topic.		
 
 The __RadRibbonView__ is a complex control and the __ribbon galleries__ are only a small part of it. The __RadRibbonView__ consists of various elements such as:
-		
-
 * [Application Menu]({%slug radribbonview-applicationmenu%})
-
 * [Backstage Menu]({%slug radribbonview-ribbon-backstage%})
-
 * [Quick Access ToolBar]({%slug radribbonview-qat%})
-
 * [Ribbon Tab]({%slug radribbonview-ribbon-tab%})
-
 * [Ribbon Group]({%slug radribbonview-ribbon-group%})
-
 * [RibbonButtons Overview]({%slug radribbonview-buttons-overview%})
-
 * [Ribbon ComboBox]({%slug radribbonview-ribbon-combobox%})
-
 * [Screen Tips]({%slug radribbonview-screentips%})
 
 # See Also
-
  * [Selection]({%slug radribbonview-selection%})
-
  * [Resizing]({%slug radribbonview-resizing%})
-
  * [Minimization]({%slug radribbonview-minimization%})
-
  * [Localization]({%slug radribbonview-localization%})
-
  * [Styling the RadRibbonGallery]({%slug radribbonview-styling-ribbongallery%})

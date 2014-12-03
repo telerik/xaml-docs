@@ -10,8 +10,6 @@ position: 2
 
 # Ribbon Backstage
 
-
-
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The new __Ribbon__ __Backstage__ control allows you to achieve a more native Office 2010 look and feel of your application.
 
 ## RibbonBackstage Fundamentals
@@ -21,44 +19,34 @@ The __RibbonBackstage__ appears when a user __clicks__ the __Application Button_
 By default the __Backstage__ isn't opened. In order to control its state you can set the __RadRibbonView__'s __IsBackstageOpen__ property.
 
 #### __XAML__
-
 {{region radribbonview-ribbon-backstage_0}}
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application" IsBackstageOpen="True">
 	 ...
 	</telerik:RadRibbonView>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Adding Backstage to the RadRibbonView
 
 In order to add a backstage to your __RadRibbonView__ control you need to set the __RadRibbonView__'s __Backstage__ property. The next several code-snippets show you how to do that in XAML, as well as in the code-behind.
 
 #### __XAML__
-
 {{region radribbonview-ribbon-backstage_1}}
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
 	    <telerik:RadRibbonView.Backstage>
 	        <telerik:RadRibbonBackstage />
 	    </telerik:RadRibbonView.Backstage>
 	</telerik:RadRibbonView>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radribbonview-ribbon-backstage_2}}
 	this.radRibbonView.Backstage = new RadRibbonBackstage();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radribbonview-ribbon-backstage_3}}
 	Me.radRibbonView.Backstage = New RadRibbonBackstage()
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadRibbonView_Backstage_Empty.png)
 
@@ -67,7 +55,6 @@ In order to add a backstage to your __RadRibbonView__ control you need to set th
 The __Backstage__ control derives from the __RadTabControl__. That fact allows you to easily customize it by adding/removing __BackstageItems__ (the __BackstageItem__ derives from a __RadTabItem__).
 
 #### __XAML__
-
 {{region radribbonview-ribbon-backstage_4}}
 	<telerik:RadRibbonView x:Name="radRibbonView" 
 	                        Title="My Title"
@@ -85,9 +72,7 @@ The __Backstage__ control derives from the __RadTabControl__. That fact allows y
 	        </telerik:RadRibbonBackstage>
 	    </telerik:RadRibbonView.Backstage>
 	</telerik:RadRibbonView>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## BackstageItem Properties
 
@@ -95,30 +80,21 @@ The __BackstageItem__ exposes the following properties that allow you to further
 
 * __IsSelectable__ - specifies whether an item can be selected. If you set this property to __False__, the item will behave like a __Button__. 
 
-
-
->If the __BackstageItem__ __IsSelectable__ property is set to __False__, you will be able to take advantage of the __Click()__ event of the item, as well as its __Command__ property.
+	>If the __BackstageItem__ __IsSelectable__ property is set to __False__, you will be able to take advantage of the __Click()__ event of the item, as well as its __Command__ property.
 
 * __IsDefault__ - specifies whether the item should be selected when the __Backstage__ is opened. 
 
-
-
->Please note that if you set the __IsDefault__ property of multiple __BackstageItems__ to __True__, the last one marked as default will be selected.
+	>Please note that if you set the __IsDefault__ property of multiple __BackstageItems__ to __True__, the last one marked as default will be selected.
 
 * __IsGroupSeparator__ - specifies whether an item is a group separator. Such items are used as a heading in order to differentiate a logical group of __BackstageItems__.
 
-
 * __Icon__ - gets or sets __BackstageItem__ icon 
-
 
 * __CloseOnClick__ - specifies whether the __Backstage__ will be closed when the item is clicked. 
 
-
-
->If the __BackstageItem__ is not selectable the __CloseOnClick__ property is set to __True__ by default. However, if the item is selectable, then the __CloseOnClick__ property won't affect its behavior.
+	>If the __BackstageItem__ is not selectable the __CloseOnClick__ property is set to __True__ by default. However, if the item is selectable, then the __CloseOnClick__ property won't affect its behavior.
 
 #### __XAML__
-
 {{region radribbonview-ribbon-backstage_5}}
 	<telerik:RadRibbonView x:Name="radRibbonView" 
 	                        Title="My Title"
@@ -362,11 +338,11 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	    <telerik:RadRibbonTab Header="View" />
 	    <telerik:RadRibbonTab Header="Text" />
 	</telerik:RadRibbonView>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadRibbonView_Backstage_Sample.png)
 
->tipThe __RadRibbonView__ exposes the __BackstageClippingElement__ property, that allows you to define the area over which the __Backstage__ will be displayed:
+The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that allows you to define the area over which the __Backstage__ will be displayed:
 
 #### __XAML__
      <Grid x:Name="LayoutRoot" Background="White">
@@ -396,32 +372,18 @@ The __BackstageItem__ exposes the following properties that allow you to further
         </Grid>
     </Grid>
 
-
-
 The __RadRibbonView__ is a complex control and the __backstage menu__ is only a small part of it. The __RadRibbonView__ consists of various elements such as:
-
 * [Application Menu]({%slug radribbonview-applicationmenu%})
-
 * [Quick Access ToolBar]({%slug radribbonview-qat%})
-
 * [Ribbon Tab]({%slug radribbonview-ribbon-tab%})
-
 * [Ribbon Group]({%slug radribbonview-ribbon-group%})
-
 * [Ribbon Gallery]({%slug radribbonview-ribbon-gallery%})
-
 * [RibbonButtons Overview]({%slug radribbonview-buttons-overview%})
-
 * [Ribbon ComboBox]({%slug radribbonview-ribbon-combobox%})
-
 * [Screen Tips]({%slug radribbonview-screentips%})
 
 Additional features that you may find interesting are:
-
 * [Selection]({%slug radribbonview-selection%})
-
 * [Resizing]({%slug radribbonview-resizing%})
-
 * [Minimization]({%slug radribbonview-minimization%})
-
 * [Localization]({%slug radribbonview-localization%})

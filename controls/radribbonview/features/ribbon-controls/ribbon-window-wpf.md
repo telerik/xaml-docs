@@ -11,21 +11,14 @@ site_name: WPF
 
 # Ribbon Window
 
-
-
 The __RadRibbonWindow__ control is used to replace the __Window__ control that represents the root UI of a WPF application. Its purpose is to allow a smoother UI when hosting the __RadRibbonView__ at the root level of the application.
-	  
-
-## 
 
 In the trivial case if you place a __RadRibbonView__ in the __MainWindow__ of your WPF application you'll see the following result. 
 ![](images/RadRibbonView_Window_WPF.png)
 
-You will have two title bars which makes the UI messy. The __RadRibbonWindow__ integrates with the __RadRibbonView__ and prevents this. In order to use the __RadRibbonWindow__ you have to replace the __Window__ control in your __MainWindow__ class with the __RadRibbonWindow__ one.
-		
+You will have two title bars which makes the UI messy. The __RadRibbonWindow__ integrates with the __RadRibbonView__ and prevents this. In order to use the __RadRibbonWindow__ you have to replace the __Window__ control in your __MainWindow__ class with the __RadRibbonWindow__ one.		
 
 #### __XAML__
-
 {{region radribbonview-ribbon-window-wpf_0}}
 	<telerik:RadRibbonWindow  x:Class="RibbonWindow.MainWindow"
 	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -36,12 +29,9 @@ You will have two title bars which makes the UI messy. The __RadRibbonWindow__ i
 	        <telerik:RadRibbonView />
 	    </Grid>
 	</telerik:RadRibbonWindow>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radribbonview-ribbon-window-wpf_1}}
 	public partial class MainWindow : RadRibbonWindow
 	{
@@ -50,12 +40,9 @@ You will have two title bars which makes the UI messy. The __RadRibbonWindow__ i
 	  InitializeComponent();
 	 }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radribbonview-ribbon-window-wpf_2}}
 	Public Partial Class MainWindow
 		Inherits RadRibbonWindow
@@ -63,21 +50,16 @@ You will have two title bars which makes the UI messy. The __RadRibbonWindow__ i
 			InitializeComponent()
 		End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the result.
 ![](images/RadRibbonView_RibbonWindow_Wpf.png)
 
-By default when you add a __RadRibbonView__ in a __RadRibbonWindow__, the components are integrated together to create a seamless UI experience. For that purpose the __QuickAccessToolbar__ as well as the __ApplicationName__  and the __Title__ of the __RadRibbonView__ are displayed in the title tray of the __RadRibbonWindow__. In this case the value of the __RadRibbonWindow Title__ is ignored.
-		
+By default when you add a __RadRibbonView__ in a __RadRibbonWindow__, the components are integrated together to create a seamless UI experience. For that purpose the __QuickAccessToolbar__ as well as the __ApplicationName__  and the __Title__ of the __RadRibbonView__ are displayed in the title tray of the __RadRibbonWindow__. In this case the value of the __RadRibbonWindow Title__ is ignored.		
 
-With __Q1 2014__ we introduced a new property, which you can use to control this behavior. The __IsTitleVisible__ property is of type __bool__ and it defines whether the __RadRibbonWindow Title__ should be displayed. The default value of the property is __false__, but when changed to __true__, it makes the __RibbonWindow__ display its own __Title__. In that case the __RadRibbonView__ title bar - the __QuickAccessToolbar, Title__ and __ApplicationName__ are displayed underneath the window's title.
-		
+With __Q1 2014__ we introduced a new property, which you can use to control this behavior. The __IsTitleVisible__ property is of type __bool__ and it defines whether the __RadRibbonWindow Title__ should be displayed. The default value of the property is __false__, but when changed to __true__, it makes the __RibbonWindow__ display its own __Title__. In that case the __RadRibbonView__ title bar - the __QuickAccessToolbar, Title__ and __ApplicationName__ are displayed underneath the window's title.		
 
 #### __XAML__
-
 {{region radribbonview-ribbon-window-wpf-1}}
 	<telerik:RadRibbonWindow x:Class="Example.MainWindow"
 	                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -114,17 +96,15 @@ With __Q1 2014__ we introduced a new property, which you can use to control this
 	        </telerik:RadRibbonView>
 	    </Grid>
 	</telerik:RadRibbonWindow>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Ribbon View Ribbon Window Visible Title](images/RadRibbonView_RibbonWindow_VisibleTitle.png)
 
 ## Themes
 
-By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can also apply any of the Telerik predefined themes. In order to do so you need to set the __RadRibbonWindow.IsWindowsThemeEnabled__ static property to __False__ in the static constructor of the __RadRibbonWindow__ or in the constructor of the __App__ class.
-		
+By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can also apply any of the Telerik predefined themes. In order to do so you need to set the __RadRibbonWindow.IsWindowsThemeEnabled__ static property to __False__ in the static constructor of the __RadRibbonWindow__ or in the constructor of the __App__ class.		
 
 #### __C#__
-
 {{region radribbonview-ribbon-window-wpf_2}}
 	public partial class MainWindow : RadRibbonWindow
 	{
@@ -137,12 +117,9 @@ By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can a
 			InitializeComponent();
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radribbonview-ribbon-window-wpf_1}}
 	Partial Public Class MainWindow
 		Inherits RadRibbonWindow
@@ -154,28 +131,20 @@ By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can a
 		End Sub
 	End 
 
-
-
 In order to apply a Telerik style on the __RadRibbonWindow__, it is best to use the implicit styling mechanism further described in the [Setting a Theme (Using Implicit Styles)](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html) tutorial.
-		
 
-Please note that the default __RadRibbonWindow__ implicit style cannot be applied on derived controls as their __Type__ is different than the one defined as a __TargetType__ in the implicit style. This is why in order to apply a Telerik predefined style on a __Window/UserControl__ deriving from __RadRibbonWindow__ you need to define a __Style__ targeting the __Window/UserControl__ type in the __Resources__ of the application. Make sure to define that style after merging the Telerik __ResourseDictionaries__ so that you can base it on the predefined __"RadRibbonWindowStyle"__.
-		
+Please note that the default __RadRibbonWindow__ implicit style cannot be applied on derived controls as their __Type__ is different than the one defined as a __TargetType__ in the implicit style. This is why in order to apply a Telerik predefined style on a __Window/UserControl__ deriving from __RadRibbonWindow__ you need to define a __Style__ targeting the __Window/UserControl__ type in the __Resources__ of the application. Make sure to define that style after merging the Telerik __ResourseDictionaries__ so that you can base it on the predefined __"RadRibbonWindowStyle"__.		
 
 #### __RibbonWindowStyle.xaml__
-
 {{region radribbonview-ribbon-window-wpf-2}}
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 						xmlns:local="clr-namespace:RibbonWindow_ImplicitStylesDemo">
 		<Style TargetType="local:MainWindow" BasedOn="{StaticResource RadRibbonWindowStyle}" />
 	</ResourceDictionary>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __App.xaml__
-
 {{region radribbonview-ribbon-window-wpf-3}}
 	<Application.Resources>
 	    <ResourceDictionary>
@@ -189,6 +158,6 @@ Please note that the default __RadRibbonWindow__ implicit style cannot be applie
 	        </ResourceDictionary.MergedDictionaries>
 	    </ResourceDictionary>
 	</Application.Resources>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Ribbon View Ribbon WindowWPF Windows 7 Theme](images/RadRibbonView_RibbonWindowWPF_Windows7Theme.png)

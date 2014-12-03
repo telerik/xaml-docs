@@ -34,6 +34,8 @@ Both __RadPivotGrid__ and __RadPivotFieldList__ have DataProvider property that 
 
 By default if you just set the DataProvider property you'll not see any visual representation of the data in __RadPivotGrid__, but you'll be able to see all of it in __RadPivotFieldList__ FieldBox. To see the data in __RadPivotGrid__ you can define your *RowGroupDescription*, *ColumnGroupDescription* and *AggregateDescription* and add some of the data properties in them. Another way is to drag (or check) the items in __RadPivotFieldList__ and move them between the lists in the bottom part of __RadPivotFieldList__.      	
 
+>caution __RadPivotFieldList__ is changing the DataProvider runtime and these changes are applied on __RadPivotGrid__ only if it is using the same DataProvider. The DataProvider is the link between these two controls.
+
 ## Data Provider Properties and  Group Descriptions
 
 ### Properties

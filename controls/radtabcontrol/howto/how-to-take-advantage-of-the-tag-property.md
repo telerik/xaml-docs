@@ -24,4 +24,3 @@ For example you can store some custom data like ID, type, name or anything else 
 
  * [How to Change the Tab Items Orientation]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%})
 
- * [How to Change the Tab Template]({%slug radtabcontrol-how-to-change-the-tab-template%})

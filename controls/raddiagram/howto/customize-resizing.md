@@ -10,21 +10,13 @@ position: 14
 
 # Disable Horizontal or Vertical Shape Resizing
 
+In __RadDiagram__ each __RadDiagramItem__ can be resized. This operation is internally implemented by a __ResizingService__.			
 
-
-In __RadDiagram__ each __RadDiagramItem__ can be resized. This operation is internally implemented by a __ResizingService__.
-			
-
->In order to learn more about the different Diagramming Services, you can examine the [Services]({%slug raddiagram-features-services%}) article.
-				
+>In order to learn more about the different Diagramming Services, you can examine the [Services]({%slug raddiagram-features-services%}) article.				
 
 In this tutorial we will examine a solution that allows the user to dynamically configure __RadDiagramShapes__ resizing and decide whether to allow horizontal and vertical resizing.
-			
 
-## 
-
-First we will create a sample __RadDiagram__ definition that has two __RadDiagramShape__ objects:
-				
+First we will create a sample __RadDiagram__ definition that has two __RadDiagramShape__ objects:				
 
 #### __XAML__
 
@@ -33,12 +25,9 @@ First we will create a sample __RadDiagram__ definition that has two __RadDiagra
 	    <telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=BeginLoopShape}" Position="400 300" />
 	    <telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=ExternalDataShape}" Position="500 400" />
 	</telerik:RadDiagram>
-	{{endregion}}
+{{endregion}}
 
-
-
-Next, we will add two __RadToggleButtons__ to provide the user with the option to turn on and off the vertical and horizontal resizing of a shape.
-				
+Next, we will add two __RadToggleButtons__ to provide the user with the option to turn on and off the vertical and horizontal resizing of a shape.			
 
 #### __XAML__
 
@@ -58,12 +47,9 @@ Next, we will add two __RadToggleButtons__ to provide the user with the option t
 								 Content="CanResizeHeight"
 								 IsChecked="True" />
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 Now that we've defined the content of our view, we can start describing the custom resizing implementation. And as we need to disable a resizing operation based on dynamically set values, we will have to customize the default resizing mechanism. This mechanism is controlled by the __ResizingService__ class which exposes a virtual method that calculates how to change the current size of a shape. Therefore we will start by creating a custom resizing service that derives from the __RadDiagram ResizingService__ and we will override the __CalculateNewDelta()__ method.
-				
 
 #### __C#__
 
@@ -80,9 +66,7 @@ Now that we've defined the content of our view, we can start describing the cust
 	        return base.CalculateNewDelta(newPoint);
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -99,12 +83,9 @@ Now that we've defined the content of our view, we can start describing the cust
 	        Return MyBase.CalculateNewDelta(newPoint)
 	    End Function
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Since we added two __RadToggleButtons__ in our view, we need to define two __boolean__ properties to track the checked state of these buttons and use them to control the result of the resizing operation.
-				
 
 #### __C#__
 
@@ -171,9 +152,7 @@ Since we added two __RadToggleButtons__ in our view, we need to define two __boo
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -187,7 +166,7 @@ Since we added two __RadToggleButtons__ in our view, we need to define two __boo
 	
 	    Public Sub New(ByVal owner As RadDiagram)
 	        MyBase.New(TryCast(owner, IGraphInternal))
-	        'Initialize the boolean properties that will control the availability of the resizing
+	        'Initialize the boolean properties that will control the availability of the resizing'
 	        Me.CanResizeWidth = True
 	        Me.CanResizeHeight = True
 	    End Sub
@@ -218,9 +197,9 @@ Since we added two __RadToggleButtons__ in our view, we need to define two __boo
 	    End Property
 	
 	    Protected Overrides Function CalculateNewDelta(ByVal newPoint As Point) As Point
-	        'calculate the size change using the defaul calulation mechanism
+	        'calculate the size change using the defaul calulation mechanism'
 	        Dim newDelta = MyBase.CalculateNewDelta(newPoint)
-	        'use the boolean properties to determine whether to apply any changes in the size of the manipulated item
+	        'use the boolean properties to determine whether to apply any changes in the size of the manipulated item'
 	        Return New Point(If(Me.CanResizeWidth, newDelta.X, 0), If(Me.CanResizeHeight, newDelta.Y, 0))
 	    End Function
 	
@@ -228,18 +207,13 @@ Since we added two __RadToggleButtons__ in our view, we need to define two __boo
 	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
 	    End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
+>Please note that the __CalculateNewDelta()__ method returns a result of type __Point__. However, this result doesn't describe coordinates of a point, but a delta value representing the change that should be applied on __RadDiagramItem(s)__ size. This delta is calculated based on the resizing direction specified by the resizing thumb being used, the coordinates of the mouse when the resize was initiated, the coordinates of the mouse when the operation was finished and the rotation angle. The __X__ porperty of the calculated result reflects the change in the __Width__ of the manipulated item, while the __Y__ property value reflects the change that has to be applied on the __Height__ of the item. This is why when you override the __CalculateNewDelta()__ method to return a __Point__ with __X__ and __Y__ properties set to __0__, you tell __RadDiagram__ that there is no change in the size of the manipulated __RadDiagramItem(s)__.					
 
+If you take a look at the custom __CalculateNewDelta()__ method implementation, you can note that the logic is straight-forward. It takes into account the values of the __CanResizeWidth__ and __CanResizeHeight__ properties to decide whether there should be a change in the __Width__ or __Height__ of the manipulated item. If both boolean properties are set to __false__, then the __CalculateNewDelta()__ method returns a result of __Point(0,0)__ which indicates that there are no changes in the size of the manipulated shape. This way the initiated resizing is ignored and the actual size of the manipulated shape is not changed.				
 
->Please note that the __CalculateNewDelta()__ method returns a result of type __Point__. However, this result doesn't describe coordinates of a point, but a delta value representing the change that should be applied on __RadDiagramItem(s)__ size. This delta is calculated based on the resizing direction specified by the resizing thumb being used, the coordinates of the mouse when the resize was initiated, the coordinates of the mouse when the operation was finished and the rotation angle. The __X__ porperty of the calculated result reflects the change in the __Width__ of the manipulated item, while the __Y__ property value reflects the change that has to be applied on the __Height__ of the item. This is why when you override the __CalculateNewDelta()__ method to return a __Point__ with __X__ and __Y__ properties set to __0__, you tell __RadDiagram__ that there is no change in the size of the manipulated __RadDiagramItem(s)__.
-					
-
-If you take a look at the custom __CalculateNewDelta()__ method implementation, you can note that the logic is straight-forward. It takes into account the values of the __CanResizeWidth__ and __CanResizeHeight__ properties to decide whether there should be a change in the __Width__ or __Height__ of the manipulated item. If both boolean properties are set to __false__, then the __CalculateNewDelta()__ method returns a result of __Point(0,0)__ which indicates that there are no changes in the size of the manipulated shape. This way the initiated resizing is ignored and the actual size of the manipulated shape is not changed.
-				
-
-Finally, we need to configure the __RadDiagram__ instance to use our custom resizing service instead of the default __ResizingService__. This is why we need to create a new instance of the __MyResizing__ class in the code-behind file of our view. Then we need to make sure that the __CanResizeWidth__ and __CanResizeHeight__ properties are used as binding paths for the __IsChecked__ properties of the two __RadToggleButtons__ we defined to control the user ability to resize a shape:
-				
+Finally, we need to configure the __RadDiagram__ instance to use our custom resizing service instead of the default __ResizingService__. This is why we need to create a new instance of the __MyResizing__ class in the code-behind file of our view. Then we need to make sure that the __CanResizeWidth__ and __CanResizeHeight__ properties are used as binding paths for the __IsChecked__ properties of the two __RadToggleButtons__ we defined to control the user ability to resize a shape:				
 
 #### __C#__
 
@@ -273,9 +247,7 @@ Finally, we need to configure the __RadDiagram__ instance to use our custom resi
 	    //apply the binding on the resizeHeight RadToggleButton
 	    this.resizeHeight.SetBinding(RadToggleButton.IsCheckedProperty, binding);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -289,30 +261,27 @@ Finally, we need to configure the __RadDiagram__ instance to use our custom resi
 	End Sub
 	
 	Private Sub InitializeNewServices()
-	    'initialize the newResizingService
+	    'initialize the newResizingService'
 	    Me.newResizingService = New MyResizing(Me.diagram)
-	    'create a binding with Path=CanResizeWidth
+	    'create a binding with Path=CanResizeWidth'
 	    Dim binding As New Binding("CanResizeWidth")
-	    'use the newResizingService as a source of the binding
+	    'use the newResizingService as a source of the binding'
 	    binding.Source = Me.newResizingService
 	    binding.Mode = BindingMode.TwoWay
-	    'apply the binding on the resizeWidth RadToggleButton
+	    'apply the binding on the resizeWidth RadToggleButton'
 	    Me.resizeWidth.SetBinding(RadToggleButton.IsCheckedProperty, binding)
 	
-	    'create a binding with Path=CanResizeHeight
+	    'create a binding with Path=CanResizeHeight'
 	    binding = New Binding("CanResizeHeight")
-	    'use the newResizingService as a source of the binding
+	    'use the newResizingService as a source of the binding'
 	    binding.Source = Me.newResizingService
 	    binding.Mode = BindingMode.TwoWay
-	    'apply the binding on the resizeHeight RadToggleButton
+	    'apply the binding on the resizeHeight RadToggleButton'
 	    Me.resizeHeight.SetBinding(RadToggleButton.IsCheckedProperty, binding)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 And now we can use the __newResizingService__ instance and register it through the __ServiceLocator__:
-				
 
 #### __C#__
 
@@ -324,9 +293,7 @@ And now we can use the __newResizingService__ instance and register it through t
 	    this.InitializeNewServices();
 	    this.diagram.ServiceLocator.Register<IResizingService>(this.newResizingService);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -334,29 +301,20 @@ And now we can use the __newResizingService__ instance and register it through t
 	Public Sub New()
 	    InitializeComponent()
 	
-	    Me.InitializeNewServices()
-	
+	    Me.InitializeNewServices()	
 	    Me.diagram.ServiceLocator.Register(Of IResizingService)(Me.newResizingService)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 If you run the solution now the resizing buttons will be checked thus allowing all resizing operations.
 ![raddiagram-howto-custom-resizing-allowed](images/raddiagram-howto-custom-resizing-allowed.png)
 
 However, as soon as you uncheck any of the buttons, the related resizing operation will be denied. For instance, if you click the __CanResizeWidth__ button, you will not be able to change the __Width__ of the __RadDiagramShapes__. And as soon as you also uncheck the __CanResizeHeight__ button, the __Height__ will also be locked.
-				
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
-					
+>tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
 
 # See Also
-
  * [Shapes]({%slug raddiagrams-features-shapes%})
-
  * [Resizing]({%slug raddiagrams-features-resizing%})
-
  * [Services]({%slug raddiagram-features-services%})
-
  * [Customize the Rotation Step]({%slug raddiagram-howto-customize-rotation%})

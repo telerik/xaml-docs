@@ -5,7 +5,7 @@ publish: false
 
 # Telerik UI for WPF/Silverlight Public Documentation
 
-Welcome to the GitHub repo for [Telerik UI for WPF](http://www.telerik.com/wpf) and [Telerik UI for Silverlight](http://www.telerik.com/silverlight) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik UI for WPF Documentation at [docs.telerik.com/devtools/wpf](http://docs.telerik.com/devtools/wpf) and Telerik UI for Silverlight Documentation at [docs.telerik.com/devtools/silverlight](http://docs.telerik.com/devtools/silverlight). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.telerik.com/devtools/wpf](http://docs.telerik.com/devtools/wpf)/[docs.telerik.com/devtools/silverlight](http://docs.telerik.com/devtools/silverlight) where our content is prettified and searchable.
+Welcome to the GitHub repo for [Telerik UI for WPF](http://www.telerik.com/wpf) and [Telerik UI for Silverlight](http://www.telerik.com/silverlight) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik UI for WPF Documentation at [docs.telerik.com/devtools/wpf](http://docs.telerik.com/devtools/wpf) and Telerik UI for Silverlight Documentation at [docs.telerik.com/devtools/silverlight](http://docs.telerik.com/devtools/silverlight). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.telerik.com/devtools/wpf](http://docs.telerik.com/devtools/wpf) / [docs.telerik.com/devtools/silverlight](http://docs.telerik.com/devtools/silverlight) where our content is prettified and searchable.
 
 We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.
 
@@ -33,18 +33,15 @@ There are two ways you can contribute to the public Telerik UI for WPF/Silverlig
     - Fixing grammar, punctuation and other general errors is always appreciated. So are changes that expand on key ideas or correct errors in logic phrasing or otherwise. If your ambitions are greater, however, and you want to add completely new content to the site — like a new tutorial on using Kendo UI with an Atari 2600, for instance — we suggest you contact a member of the team first (or enter an issue!) to vet your idea. [Burke Holland](http://twitter.com/burkeholland), [Todd Anglin](http://twitter.com/toddanglin) and [Brandon Satrom](http://twitter.com/brandonsatrom) would all be happy to hear your idea and offer advice.
     - Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the live documentation site. Please don't edit the content in this section of a document.
 
-         ---
-
-        nav_title: kendo.dataviz.ui.Chart
-
-        nav_position: 1
-
-        title: Configuration API and events of Kendo UI Chart
-
-        title: kendo.dataviz.ui.Chart
-
-
-         ---
+        ---
+        title: Introduction
+        page_title: Introduction
+        description: Introduction
+        slug: introduction
+        tags: introduction
+        published: True
+        position: 1
+        ---
 
     - When adding content or making changes, please use only standard Markdown syntax, and make to preview your additions or changes before sending us a pull request. You can use an online tool like [Dillinger.io](http://dillinger.io/) or [Marked](http://markedapp.com/) on OSX to view what your changes will look like when ported to HTML.
 
@@ -70,7 +67,7 @@ For the WPF documentaion:
 
 ## License
 
-The Telerik UI for WPF/Silverlight Documentation is licensed under an MIT license. This license applies to the markdown (.md) files in this site **ONLY**, and does not convey, override or modify any existing licenses covering the runtime source and components of Kendo UI. For information about available licenses for the Telerik UI for WPF click [here](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s) and for Telerik UI for Silverlight click [here](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s).
+The Telerik UI for WPF/Silverlight Documentation is licensed under an MIT license. This license applies to the markdown (.md) files in this site **ONLY**, and does not convey, override or modify any existing licenses covering the runtime source and components of Telerik UI for WPF/Silverlight. For information about available licenses for the Telerik UI for WPF click [here](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s) and for Telerik UI for Silverlight click [here](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s).
 
 ### MIT License
 

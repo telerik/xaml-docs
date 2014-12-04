@@ -22,52 +22,52 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 
 * use the __RadDiagram Layout()__ method:
 			  
-	#### __XAML__
-		<Grid>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="*" />
-			</Grid.RowDefinitions>
-			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-				<telerik:RadButton Margin="5,0"
-								   Click="Layout"
-								   Content="Layout" />
-			</StackPanel>
-			<telerik:RadDiagram x:Name="diagram"
-								Grid.Row="1"
-								Margin="5" />
-		</Grid>		
+#### __XAML__
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <telerik:RadButton Margin="5,0"
+                               Click="Layout"
+                               Content="Layout" />
+        </StackPanel>
+        <telerik:RadDiagram x:Name="diagram"
+                            Grid.Row="1"
+                            Margin="5" />
+    </Grid>		
 
-	#### __C#__
-		private void Layout(object sender, RoutedEventArgs e)
-		{
-			diagram.Layout();
-		}		  
+#### __C#__
+    private void Layout(object sender, RoutedEventArgs e)
+    {
+        diagram.Layout();
+    }		  
 
-	#### __VB.NET__
+#### __VB.NET__
 
-		Private Sub Layout(sender As Object, e As RoutedEventArgs)
-			diagram.Layout()
-		End Sub			  
+    Private Sub Layout(sender As Object, e As RoutedEventArgs)
+        diagram.Layout()
+    End Sub			  
 
 * use the __DiagramCommands Layout__ command:
 			  
-	#### __XAML__
-		<Grid>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="*" />
-			</Grid.RowDefinitions>
-			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-				<telerik:RadButton Margin="5,0"
-								   Command="telerik:DiagramCommands.Layout"
-								   CommandTarget="{Binding ElementName=diagram}"
-								   Content="LayoutCommand" />
-			</StackPanel>
-			<telerik:RadDiagram x:Name="diagram"
-								Grid.Row="1"
-								Margin="5" />
-		</Grid>		  
+#### __XAML__
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <telerik:RadButton Margin="5,0"
+                               Command="telerik:DiagramCommands.Layout"
+                               CommandTarget="{Binding ElementName=diagram}"
+                               Content="LayoutCommand" />
+        </StackPanel>
+        <telerik:RadDiagram x:Name="diagram"
+                            Grid.Row="1"
+                            Margin="5" />
+    </Grid>		  
 
 The __Layout()__ method provides two optional parameters - the type of the Layout (Sugiyama or Tree) and the corresponding layout settings (SugiyamaSettings or TreeLayoutSettings):
 
@@ -235,6 +235,21 @@ Below you can see the explanation of the main __TreeLayout Settings__ for the ba
 Below you can see how the __KeepComponentsInOneRadialLayout__ actually works when you have more than one component:
 
 ![raddiagram-features-layout-radiallayout](images/raddiagram-features-layout-radiallayout.png)
+
+## Properties and Methods
+The RadDiagram’s methods related with the Layout feature are the following ones:
+
+* __Layout()__ – of type void which organizes all the items in the RadDiagram using specified layout type and settings. By default the type is set to Sugiyama and the settings are set to null.  You can define your custom layout type and settings and use them with the method.
+* __LayoutAsync()__ – just like the __Layout()__ but acts _asynchronously_. This is why you should be careful when using this method. Keep in mind that it waits until all shapes, containers and connections are already generated and then gets executed within the following layout pass. 
+
+>Note: Choosing which method should be used depends on your custom scenario and requirements this is why no specific rule can be made. A good practice is to first evaluate how the __Layout()__ method works and then to move to the __LayoutAsync()__ if needed.
+
+The properties that are related with the same feature are:
+
+* __AutoLayout__ – Boolean property that controls whether the __RadDiagram__ should automatically layout the items hosted in it whenever a new item is added or removed.
+
+>Note: If you need to change the settings that are used when the automatic layout is triggered you should ones call the __LayoutAsync()__ method with the new settings. In other words, the automatic layout uses the last settings that are used in the context of the __RadDiagram__. By default this feature is disabled.
+
 
 ## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})

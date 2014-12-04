@@ -143,5 +143,5 @@ Using the sample custom interval above, you will get the following result:
 ![](images/radtimebar-features-custom-interval-types_01.jpg)
 
 # See Also
- * [Intervals Formatters]({%slug radtimeline-features-intervals-formatters%})
- * [Formatter Provider]({%slug radtimeline-features-formatter-provider%})
+ * [Intervals Formatters]({%slug radtimebar-features-intervals-formatters%})
+ * [Formatter Provider]({%slug radtimebar-features-formatter-provider%})

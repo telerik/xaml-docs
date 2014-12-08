@@ -18,8 +18,6 @@ __RadRichTextBox__ supports __UI Virtualization__, which enables it to processes
 
 # See Also
 
- * [Working with RadRichTextBox]({%slug radrichtextbox-features-working-with-radrichtextbox%})
-
  * [Import/Export]({%slug radrichtextbox-features-import-export%})
 
  * [Formatting API]({%slug radrichtextbox-features-formatting-api%})

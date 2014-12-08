@@ -243,8 +243,6 @@ Sometimes overriding the key bindings does not provide sufficient support, as de
 
 # See Also
 
- * [Working with RadRichTextBox]({%slug radrichtextbox-features-working-with-radrichtextbox%})
-
  * [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%})
 
  * [Formatting API]({%slug radrichtextbox-features-formatting-api%})

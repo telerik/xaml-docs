@@ -122,12 +122,12 @@ __What's Fixed__
 * Sorting functionality.
             
 
-* Export to PDF. You can find more information  [here](c6276abc-6c8b-4703-aeba-783e4b4506f5).
+* Export to PDF. You can find more information  [here]({%slug radspreadprocessing-formats-and-conversion-pdf-pdf%}).
             
 
 ## What's New in 2014 Q1 - 2014.1.0226
 
-* Images support. You can find more information [here]({%slug radspreadsheet-model-features-shapes-and-images%}).
+* Images support. You can find more information [here]({%slug radspreadprocessing-features-shapes-and-images%}).
             
 
 * Printing and UI for printing. You can find more information [here]({%slug radspreadsheet-ui-printing%}).
@@ -136,6 +136,5 @@ __What's Fixed__
 * Freeze panes. You can find more information [here]({%slug radspreadsheet-ui-freeze-panes%}).
             
 
-* Workbook and worksheet protection.You can find more information in these articles:
-              [Workbook Protection]({%slug radspreadsheet-model-features-protection-workbook%}), [Worksheet Protection]({%slug radspreadsheet-model-features-protection-worksheet%}).
+* Workbook and worksheet protection.You can find more information in these articles: [Workbook Protection]({%slug radspreadprocessing-features-protection-workbook%}), [Worksheet Protection]({%slug radspreadprocessing-features-protection-worksheet%}).
             

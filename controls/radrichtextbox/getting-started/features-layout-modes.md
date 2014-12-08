@@ -39,6 +39,4 @@ The __FlowNoWrap__ layout mode is similar to the __Flow__ layout mode, but it do
 
 # See Also
 
- * [Working with RadRichTextBox]({%slug radrichtextbox-features-working-with-radrichtextbox%})
-
  * [History]({%slug radrichtextbox-features-history%})

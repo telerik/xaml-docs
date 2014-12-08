@@ -92,6 +92,4 @@ The __RadRichTextBox__ control raises the following specific events:
 
  * [Getting Started]({%slug radrichtextbox-getting-started%})
 
- * [Working with RadRichTextBox]({%slug radrichtextbox-features-working-with-radrichtextbox%})
-
  * [Styles and Templates]({%slug radrichtextbox-styles-and-tempaltes-overview%})

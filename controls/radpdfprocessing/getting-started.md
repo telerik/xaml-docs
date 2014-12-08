@@ -88,4 +88,4 @@ Exporting to PDF format can be achieved with the __PdfFormatProvider__ class. __
 
  * [TextFragment]({%slug radpdfprocessing-model-textfragment%})
 
- * [PDF Format]({%slug radpdfprocessing-formats-and-conversion-pdf%})
+ * [PDF Format]({%slug radpdfprocessing-formats-and-conversion-pdf-pdf%})

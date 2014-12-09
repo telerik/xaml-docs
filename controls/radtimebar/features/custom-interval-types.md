@@ -10,7 +10,7 @@ position: 4
 
 # Custom Interval Types
 
-__RadTimeBar__ provides built-in support for a couple of predefined interval types ranging from milliseconds to centuries. For a full list of the predefined intervals, please refer to the [Interval Formatters]({%slug radtimebar-features-intervals-formatters%}) article. For all custom scenarios that the predefined intervals do not cover, the control supports custom interval type implementations.
+__RadTimeBar__ provides built-in support for a couple of predefined interval types ranging from milliseconds to centuries. For a full list of the predefined intervals, please refer to the [Interval Formatters]({%slug radtimebar-intervals-formatters%}) article. For all custom scenarios that the predefined intervals do not cover, the control supports custom interval type implementations.
 
 ## Using Custom Interval Types
 
@@ -143,5 +143,5 @@ Using the sample custom interval above, you will get the following result:
 ![](images/radtimebar-features-custom-interval-types_01.jpg)
 
 # See Also
- * [Intervals Formatters]({%slug radtimebar-features-intervals-formatters%})
+ * [Intervals Formatters]({%slug radtimebar-intervals-formatters%})
  * [Formatter Provider]({%slug radtimebar-features-formatter-provider%})

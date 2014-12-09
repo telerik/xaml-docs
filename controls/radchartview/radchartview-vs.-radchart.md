@@ -12,14 +12,11 @@ position: 2
 
 Since Q3 2011 we ship two separate charting controls - __RadChart__ and __RadChartView__. __RadChart__ allows you to visualize interactive, rich, animated charts and enables the end users to analyze complex data. It provides rich and mature functionality that covers a large spectrum of user case scenarios.			
 
-On the other hand, __RadChartView__ is a control that addresses some of the limitations and deficiencies that we have identified in the RadChart implementation over the years. Our [Overview]({%slug radchartview-overview%}) topic can walk you through all specifics of the __RadChartView__ control.
-			
+On the other hand, __RadChartView__ is a control that addresses some of the limitations and deficiencies that we have identified in the RadChart implementation over the years. Our [Overview]({%slug radchartview-overview%}) topic can walk you through all specifics of the __RadChartView__ control.			
 
-This help topic aims to compare the two controls and get you familiar with what you need to know when migrating from __RadChart__ to __RadChartView__.
-			
+This help topic aims to compare the two controls and get you familiar with what you need to know when migrating from __RadChart__ to __RadChartView__.			
 
->Generally we would encourage you to use the new __ChartView__ control for any new project development that you are starting now. As for your existing applications - the migration is possible but there is no straightforward migration path between __RadChart__ and __RadChartView__ due to the different approach taken in the development of __RadChartView__.
-				
+>Generally we would encourage you to use the new __ChartView__ control for any new project development that you are starting now. As for your existing applications - the migration is possible but there is no straightforward migration path between __RadChart__ and __RadChartView__ due to the different approach taken in the development of __RadChartView__.				
 
 ## Highlights of features and functionality
 
@@ -55,11 +52,11 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 	* Automatic Range - In __RadChart__ you had to manually set all three range properties - __MinValue__, __MaxValue__ and __Step__ of the axis whenever you needed to customize the automatically generated range. However, the __RadChartView__ implementation allows you to set only two of the above properties as it can calculate the last one internally based on the custom settings you applied.										
 
-* __Series__ - __RadChartView__ supports almost all __Series__ types known from __RadChart__ to help you create rich, visually-appealing presentations. However, there are several new features added:								
+* __Series__ - __RadChartView__ supports almost all [Series]({%slug radchartview-series-chartseries%}) types known from __RadChart__ to help you create rich, visually-appealing presentations. However, there are several new features added:								
 
 	* Financial Indicators - __RadChartView__ supports 20 of the most common financial indicators to complement the data visualization for all Cartesian Series types.										
 
-	* [Polar]({%slug radchartview-series-polarseries%}) and [Radar]({%slug radchartview-series-radarseries%}) Series - a two-dimensional charts presented in radial plot area in polar coordinates.										
+	* Polar and Radar Series - a two-dimensional charts presented in radial plot area in polar coordinates.										
 
 	* Combined Series - uniform __RadCartesianChart Series__ can be combined in either __Stacks__ or __Clusters__. Combinations are formed when multiple __DataPoints__ from different __Series__ fall within the same category. You can read more about this in the [Chart Series]({%slug radchartview-series-chartseries%}) topic.										
 

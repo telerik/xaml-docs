@@ -727,6 +727,5 @@ With the last declarations the WPF Windows Explorer TreeView is ready. Run your 
 >The initial load of the drives is a slower operation and can cause your application freezing. Consider adding some loading animation.
 
 # See Also
- * [Get the Underlying TreeView Item on MouseMove]({%slug radtreeview-how-to-get-underlying-on-mouse-move%})
  * [Bind RadTreeView to Self-Referencing Data]({%slug radtreeview-how-to-bind-to-self-referencing-data%})
  * [Disable Default Animation in RadTreeView]({%slug radtreeview-how-to-disable-default-animation%})

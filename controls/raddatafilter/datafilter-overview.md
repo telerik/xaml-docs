@@ -15,19 +15,14 @@ position: 0
 ## {% if site.site_name == 'Silverlight' %}![](images/RadDataFilter_SL.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadDataFilter_WPF.png){% endif %}
 
 
-<table> 
-<tr><td>RELATED VIDEOS</td></tr>
-<tr><td> In this video we will look at some of the features and functionality of RadDataFilter and how you can start using it in your Silverlight or WPF applications today.(Runtime: 03:35)
- ![](images/datafilter_introduction_video.png)
-
-[Link...](http://tv.telerik.com/watch/silverlight/introduction-to-raddatafilter)</td></tr>
-
-</table>
+<table> <tr><td>RELATED VIDEOS</td></tr><tr><td>In this video we will look at some of the features and functionality of RadDataFilter and how you can start using it in your Silverlight or WPF applications today.(Runtime: 03:35)
+<iframe title="link" width="480" height="390" src="http://tv.telerik.com/watch/silverlight/introduction-to-raddatafilter" frameborder="0" allowfullscreen></iframe>
+</td></tr></table>
 
 Thank you for choosing __RadDataFilter__!
         
 
-Building complex filter expressions in a breeze with Telerik __DataFilter__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. The control allows specifying expressions based on the data and collection type of the source fields. The intuitive UI of the control is designed to facilitate the end-user while empowering the developer to create related expressions with a few clicks.
+Building complex filter expressions in a breeze with Telerik __DataFilter__. The control allows specifying expressions based on the data and collection type of the source fields. The intuitive UI of the control is designed to facilitate the end-user while empowering the developer to create related expressions with a few clicks.
         
 ![](images/datafilter_overview.jpg)
 

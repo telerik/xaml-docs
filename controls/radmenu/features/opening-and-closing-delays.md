@@ -27,7 +27,9 @@ Here is an example of a __RadMenu__ with a delay before opening a menu equal to 
 # See Also
 
  * [Opening Modes]({%slug radmenu-features-opening-modes%})
-
+ 
+ {% if site.site_name == 'Silverlight' %}
  * [Animation]({%slug radmenu-features-animation%})
+  {% endif %}
 
  * [Click Modes]({%slug radmenu-features-click-modes%})

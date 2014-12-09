@@ -178,8 +178,9 @@ In order to learn how to use the __RadContextMenu__ and what capabilities it hol
 * [Opening and Closing Delays]({%slug radcontextmenu-features-opening-and-closing-delays%})
 
 * [Data Binding]({%slug radcontextmenu-features-data-binding%})
-
+{% if site.site_name == 'Silverlight' %}
 * [Boundaries Detection]({%slug radcontextmenu-features-boundaries-detection%})
+{% endif %}
 
 # See Also
 

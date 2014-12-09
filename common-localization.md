@@ -339,6 +339,4 @@ Of course, if you don't want to hard-code your translation inside your source co
 
 # See Also
 
- * [DataBinding - Overview]({%slug common-data-binding-overview%})
-
  * [Consuming Data - Overview]({%slug consuming-data-overview%})

@@ -10,23 +10,15 @@ position: 7
 
 # Mouse Support
 
-
-
 __RadRibbonView__ exposes several useful events, which can help you control the mouse interaction and get notified when mouse events occur. Moreover, by using the mouse you can perform some most common tasks, such as:
-			
 
-* __Execute actions__ - use your mouse to click any of the built-in or custom actions displayed by the __RadRibbonView__.
-				
+* __Execute actions__ - use your mouse to click any of the built-in or custom actions displayed by the __RadRibbonView__.				
 
-* __Minimize the ribbon bar__ - to toggle the minimization state of the __RadRibbonView__ just double click on any of its tab headers.
-				
+* __Minimize the ribbon bar__ - to toggle the minimization state of the __RadRibbonView__ just double click on any of its tab headers.				
 
 ## Events
 
 Here is a list of the mouse events exposed by the __RadRibbonView__ object:
-				
-
-
 
 * __MouseWheel__ - occurs when the user rotates the mouse wheel. The type of the passed event arguments is __MouseWheelEventArgs.__
 
@@ -42,50 +34,36 @@ Here is a list of the mouse events exposed by the __RadRibbonView__ object:
 
 * __LostMouseCapture__ - occurs when the object loses mouse capture. The type of the passed event arguments is __MouseEventArgs.__
 
-In the example below you can see how to attach to __MouseWheel__ event from XAML.
-				
+In the example below you can see how to attach to __MouseWheel__ event from XAML.				
 
 #### __XAML__
-
 {{region radribbonview-mouse-support_0}}
 	<telerik:RadRibbonView x:Name="radRibbonView" MouseWheel="radRibbonView_MouseWheel" />
-	{{endregion}}
+{{endregion}}
 
-
-
->tipIt is always a good practice to attach your event handlers in the XAML, whenever your application logic allows this.
+>tip It is always a good practice to attach your event handlers in the XAML, whenever your application logic allows this.
 
 And also from the code-behind:
 
 #### __C#__
-
 {{region radribbonview-mouse-support_1}}
 	radRibbonView.MouseWheel+=new MouseWheelEventHandler(radRibbonView_MouseWheel);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radribbonview-mouse-support_2}}
 	radRibbonView.MouseWheel += New MouseWheelEventHandler(radRibbonView_MouseWheel)
-	{{endregion}}
-
-
+{{endregion}}
 
 The implementation of the event handler __radRibbonView_MouseWheel()__ is located in the code-behind file (C# or VB.NET) and looks like this:
-				
 
 #### __C#__
-
 {{region radribbonview-mouse-support_3}}
 	private void radRibbonView_MouseWheel(object sender, MouseWheelEventArgs e)
 	{
-	 MessageBox.Show("The mouse wheel has changed: " + e.Delta);
+		MessageBox.Show("The mouse wheel has changed: " + e.Delta);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -93,8 +71,6 @@ The implementation of the event handler __radRibbonView_MouseWheel()__ is locate
 	Private Sub radRibbonView_MouseWheel(sender As Object, e As MouseWheelEventArgs)
 		MessageBox.Show("The mouse wheel has changed: " & Convert.ToString(e.Delta))
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-You can attach to the other mouse events in the same way.
+>You can attach to the other mouse events in the same way.

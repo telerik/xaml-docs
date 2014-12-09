@@ -29,14 +29,13 @@ __Key features__ list includes:
 	* Support for ADOMD access to OLAP Cube.
 
 	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.
-					
 
 	* QueryableDataProvider gives you the ability to execute all aggregations and calculations on the database server.
                 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-* Support for XMLA access to OLAP Cube.
+	* Support for XMLA access to OLAP Cube.
 
-* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.{% endif %}
+	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.{% endif %}
 
 * Built-in Aggregates: *Sum, Min, Max, Average, Count, etc.*
 

@@ -10,51 +10,40 @@ position: 2
 
 # Contextual Tabs
 
-
-
 A contextual tab allows you to provide the users with a certain UI when they are in a specific context or they have selected a specific element. The contextual tabs are organized in groups, so that the user can see multiple tabs available for specific context.
 ![Rad Ribbon View Contextual Sample](images/RadRibbonView_Contextual_Sample.png)
 
-The contextual groups are used to display tabs with a context-specific functionality. They get displayed only when this functionality is needed. This way the common UI in the __RadRibbonView__ becomes lighter while the specific functionality becomes easier to find as it is grouped and displayed on demand.
-	  
+The contextual groups are used to display tabs with a context-specific functionality. They get displayed only when this functionality is needed. This way the common UI in the __RadRibbonView__ becomes lighter while the specific functionality becomes easier to find as it is grouped and displayed on demand.	  
 
-To define contextual tabs in the __RadRibbonView__ control you have to first define their groups. You can do that declaratively, programmatically or using data-binding through the following properties:
-	  
+To define contextual tabs in the __RadRibbonView__ control you have to first define their groups. You can do that declaratively, programmatically or using data-binding through the following properties:	  
 
-* __ContextualGroups__ - gets or sets a collection of __RadRibbonContextualGroups__ used to generate the contextual groups. This collection can be populated declaratively in XAML or programmatically in code-behind.
-		  
+* __ContextualGroups__ - gets or sets a collection of __RadRibbonContextualGroups__ used to generate the contextual groups. This collection can be populated declaratively in XAML or programmatically in code-behind.		  
 
-#### __XAML__
+	#### __XAML__
 
-{{region radribbonview-contextual-tabs-3}}
-	<telerik:RadRibbonView x:Name="radRibbonView" 
-	                       Title="Document1"
-	                       ApplicationName="Telerik Word">
-	            <telerik:RadRibbonView.ContextualGroups>
-			<telerik:RadRibbonContextualGroup x:Name="ContextualGroup1" Header="Group 1"/>
-			<telerik:RadRibbonContextualGroup x:Name="ContextualGroup2" Header="Group 2"/>
-	            </telerik:RadRibbonView.ContextualGroups>
-	</telerik:RadRibbonView>
+	{{region radribbonview-contextual-tabs-3}}
+		<telerik:RadRibbonView x:Name="radRibbonView" 
+							   Title="Document1"
+							   ApplicationName="Telerik Word">
+					<telerik:RadRibbonView.ContextualGroups>
+				<telerik:RadRibbonContextualGroup x:Name="ContextualGroup1" Header="Group 1"/>
+				<telerik:RadRibbonContextualGroup x:Name="ContextualGroup2" Header="Group 2"/>
+					</telerik:RadRibbonView.ContextualGroups>
+		</telerik:RadRibbonView>
 	{{endregion}}
-
-
-
+	
 * __ContextualGroupsItemsSource__ - gets or sets an __IEnumerable__ collection of business items used to generate the contextual groups. You can bind this property to a collection of data items in XAML or populate it in code-behind.
-		  
 
-#### __XAML__
+	#### __XAML__
 
-{{region radribbonview-contextual-tabs-4}}
-	<telerik:RadRibbonView  ItemsSource="{Binding Tabs}" 
-							ContextualGroupsItemsSource="{Binding ContextualGroups}" />
+	{{region radribbonview-contextual-tabs-4}}
+		<telerik:RadRibbonView  ItemsSource="{Binding Tabs}" 
+								ContextualGroupsItemsSource="{Binding ContextualGroups}" />
 	{{endregion}}
-
-
 
 ## Adding Contextual RadRibbonTabs Declaratively
 
 In order to add contextual tabs, you need to define __RadRibbonTabs__ associated with contextual groups. The __RadRibbonTab__ control exposes a __ContextualGroupName__ property that allows you to associate it with a __ContextualGroup__.
-		
 
 #### __XAML__
 
@@ -84,23 +73,18 @@ In order to add contextual tabs, you need to define __RadRibbonTabs__ associated
 		</telerik:RadRibbonView.ContextualGroups>
 	</telerik:RadRibbonView>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 This is why it is important to set the __x:Name__ property of all __RadRibbonContextualGroups__ in the __RadRibbonView ContextualGroups__ collection, otherwise you won't be able to associate any __RibbonTabs__ with them.
-		
 
 ## Data-Binding Contextual Groups and Tabs
 
 In order to data-bind the __RadRibbonView__ to a collection of business items, you need to set its __ItemsSource__ property. This property is used to dynamically generate __RadRibbonTabs__. As the contextual tabs are __RadRibbonTabs__ associated with contextual groups, they are also generated through the data items in that collection. However, in order to make a dynamically generated __RadRibbonTab__ contextual, you need to define a style that sets the value of the __ContextualGroupName__ property.
-		{% if site.site_name == 'Silverlight' %}
+		
+{% if site.site_name == 'Silverlight' %}
+You can bind the __RadRibbonTab ContextualGroupName__ to a business property utilizing the __RadRibbonView ContextualTabsStyle__. This property is exposed to allow you to apply a style specifically targeting the contextual tabs.		  
 
-You can bind the __RadRibbonTab ContextualGroupName__ to a business property utilizing the __RadRibbonView ContextualTabsStyle__. This property is exposed to allow you to apply a style specifically targeting the contextual tabs.
-		  
-
->tipWhen you're using implicit styles, as described in the {% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %} tutorial, you need to base the custom __ContextualTabs__ style on the default __ContextualTabsStyle__.
-			
+>tip When you're using implicit styles, as described in the {% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %} tutorial, you need to base the custom __ContextualTabs__ style on the default __ContextualTabsStyle__.			
 
 #### __XAML__
 
@@ -115,12 +99,11 @@ You can bind the __RadRibbonTab ContextualGroupName__ to a business property uti
 	<telerik:RadRibbonView ContextualTabsStyle="{StaticResource ContextualTabsStyle}" 
 							ItemsSource="{Binding Tabs}" 
 							ContextualGroupsItemsSource="{Binding ContextualGroups}" />
-	{{endregion}}
+{{endregion}}
+{% endif %}
 
-{% endif %}{% if site.site_name == 'WPF' %}
-
-You can bind the __RadRibbonTab ContextualGroupName__ to a business property using a style setter. The __Style__ should target the __RadRibbonTab__ type.
-		  
+{% if site.site_name == 'WPF' %}
+You can bind the __RadRibbonTab ContextualGroupName__ to a business property using a style setter. The __Style__ should target the __RadRibbonTab__ type.		  
 
 #### __XAML__
 
@@ -129,18 +112,15 @@ You can bind the __RadRibbonTab ContextualGroupName__ to a business property usi
 		<Setter Property="Header" Value="{Binding Header}" />
 		<Setter Property="ContextualGroupName" Value="{Binding ContextualGroupName}" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
-Once you have the __ItemsSource__ collection properly data-bound, you will need to also bind the __ContextualGroupsItemsSource__.
-		
+Once you have the __ItemsSource__ collection properly data-bound, you will need to also bind the __ContextualGroupsItemsSource__.		
 
->Please note that the __Name__ property of the __RadRibbonContextualGroups__ cannot be data-bound in a style setter. This is why we exposed an attached property - __RadRibbonContextualGroup.GroupName__, which internally sets the __Name__ so that a tab can be associated to a contextual group.
-		  
+>Please note that the __Name__ property of the __RadRibbonContextualGroups__ cannot be data-bound in a style setter. This is why we exposed an attached property - __RadRibbonContextualGroup.GroupName__, which internally sets the __Name__ so that a tab can be associated to a contextual group.		  
 
-In order to data-bind the __ContextualGroups__ properties you can also use style bindings.
-		
+In order to data-bind the __ContextualGroups__ properties you can also use style bindings.		
 
 #### __XAML__
 
@@ -148,29 +128,21 @@ In order to data-bind the __ContextualGroups__ properties you can also use style
 	<Style TargetType="telerik:RadRibbonContextualGroup">
 		<Setter Property="telerik:RadRibbonContextualGroup.GroupName" Value="{Binding GroupName}" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
+>tip You can download a runnable project demonstrating this approach from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to RibbonView/ContextualGroups-DataBinding.		  
 
+__RadRibbonView__ exposes two methods that allow you to work with the __ContextualGroups ContainerGenerator__:		
 
->tipYou can download a runnable project demonstrating this approach from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to RibbonView/ContextualGroups-DataBinding.
-		  
+* __ContainerFromContextualGroupItem()__ - returns the __RadRibbonContextualGroup__ corresponding to the given item.			
 
-__RadRibbonView__ exposes two methods that allow you to work with the __ContextualGroups ContainerGenerator__:
-		
-
-* __ContainerFromContextualGroupItem()__ - returns the __RadRibbonContextualGroup__ corresponding to the given item.
-			
-
-* __ItemFromContextualGroupContainer()__ - returns the item that corresponds to the specified, generated __RadRibbonContextualGroup__.
-			
+* __ItemFromContextualGroupContainer()__ - returns the item that corresponds to the specified, generated __RadRibbonContextualGroup__.			
 
 ## RibbonContextualGroup Properties
 
-The __RadRibbonContextualGroup__ exposes a __Color__ property, which allows you to specify a color for the group. This color will not only be applied to the group's header, but to the header's of the tabs in this group.
-		
+The __RadRibbonContextualGroup__ exposes a __Color__ property, which allows you to specify a color for the group. This color will not only be applied to the group's header, but to the header's of the tabs in this group.		
 
-To make the __RadRibbonContextualGroup__ visible you have to set its __IsActive__ property to __True__. This should be done when a certain requirement is met by the user. This requirement should specify whether the specific functionality in the contextual tab is needed. For example if you have a contextual tab that should manipulate images, you'd want to show this tab only when the user has selected an image.
-		
+To make the __RadRibbonContextualGroup__ visible you have to set its __IsActive__ property to __True__. This should be done when a certain requirement is met by the user. This requirement should specify whether the specific functionality in the contextual tab is needed. For example if you have a contextual tab that should manipulate images, you'd want to show this tab only when the user has selected an image.		
 
 You can set these properties in the definition of declaratively defined __RadRibbonContextualGroups:__
 
@@ -190,9 +162,7 @@ You can set these properties in the definition of declaratively defined __RadRib
 											  Color="Orchid" />
 		</telerik:RadRibbonView.ContextualGroups>
 	</telerik:RadRibbonView>
-	{{endregion}}
-
-
+{{endregion}}
 
 or in an implicit style targeting the contextual groups:
 
@@ -205,12 +175,9 @@ or in an implicit style targeting the contextual groups:
 	    <Setter Property="Header" Value="{Binding Header}" />
 	    <Setter Property="IsActive" Value="{Binding IsActive}" />
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 You can easily control the active groups from code-behind. For instance, the __IsActive__ property of the declaratively defined contextual groups demonstrated above can be easily changed when clicking a button:
-		
 
 #### __XAML__
 
@@ -224,9 +191,7 @@ You can easily control the active groups from code-behind. For instance, the __I
 	            Content="Activate Group 2"
 	            Click="Group2Button_Click" />
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -245,9 +210,7 @@ You can easily control the active groups from code-behind. For instance, the __I
 	    if ( this.ContextualGroup1.IsActive )
 	        this.ContextualGroup1.IsActive = false;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -271,13 +234,11 @@ You can easily control the active groups from code-behind. For instance, the __I
 			Me.ContextualGroup1.IsActive = False
 		End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 ![Rad Ribbon View Contextual Groups Activate 1](images/RadRibbonView_ContextualGroups_Activate1.png)
 ![Rad Ribbon View Contextual Groups Activate 2](images/RadRibbonView_ContextualGroups_Activate2.png)
 
 # See Also
-
  * [Ribbon Tab]({%slug radribbonview-ribbon-tab%})
-
  * [Controlling Appearance]({%slug radribbonview-styling-controlling-appearance%})

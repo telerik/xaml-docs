@@ -100,23 +100,17 @@ As you can see the Calculated Item will show the average sales of four people. N
 
 ![Rad Pivot Grid Features Local Calc Items 01](images/RadPivotGrid_Features_Local_Calc_Items_01.png)
 
->importantIf you need to add a Calculated Item of type DateTimeGroupDescription or DoubleGroupDescription you will need to pass a specific object to the GetAggregateValue() method instead of just string with the group name. For the DateTimeGroupDescription you have to use the following types depending the step used in the description:                      
+>If you need to add a Calculated Item of type DateTimeGroupDescription or DoubleGroupDescription you will need to pass a specific object to the GetAggregateValue() method instead of just string with the group name. For the DateTimeGroupDescription you have to use the following types depending the step used in the description:                      
+>	* SecondGroup
+>	* MinuteGroup
+>	* HourGroup
+>	* DayGroup
+>	* WeekGroup
+>	* MonthGroup
+>	* QuarterGroup
+>	* YearGroup
 
-* SecondGroup
-
-* MinuteGroup
-
-* HourGroup
-
-* DayGroup
-
-* WeekGroup
-
-* MonthGroup
-
-* QuarterGroup
-
-* YearGroupAs for the DoubleGroupDescription you would need to use an object of type DoubleGroup.          
+>As for the DoubleGroupDescription you would need to use an object of type DoubleGroup.          
 
 ## Add Calculated Items at runtime
 

@@ -329,6 +329,10 @@ a img {
 	padding: 0 0 30px 30px;
 }
 
+#page-api .k-in {
+	margin: -2px;
+}
+
 /* Table of contents */
 
 #markdown-toc {

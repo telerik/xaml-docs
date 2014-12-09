@@ -15,6 +15,7 @@ RadTimePicker is a control that displays a time representation from which the us
 >In order to use __RadTimePicker__ control in your projects you have to add references to the following assemblies:
 >	1. __Telerik.Windows.Controls__
 >	1. __Telerik.Windows.Controls.Input__
+
 >	You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
 
 __HeaderText:__

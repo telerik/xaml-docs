@@ -12,6 +12,12 @@ position: 1
 
 This article will explain how you could set up the ScheduleView, so that the ViewDefintion is scrolled to specific time or a particular appointment/slot.  We will take a look at the following properties/methods of the control:
 
+* [FirstVisibleTIme property](#firstvisibletime-property)
+
+* [ScrollIntoView method](#scrollintoview-method)
+
+* [ScrollTimeRuler method](#scrolltimeruler-method)         
+
 ## FirstVisibleTime property
 
 __FirstVisibleTime__ property is of type TimeSpan and is used to scroll the TimeRuler of the ActiveViewDefinition to a specific time. 

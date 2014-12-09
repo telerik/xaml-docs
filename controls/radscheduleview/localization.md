@@ -83,8 +83,8 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 {{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
->If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, >if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__files. For the >__Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__or __Public__and for others - to __No code generation__. Then, open the project >file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
-><SupportedCultures>en;nl</SupportedCultures>
+>If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, >if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the >__Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others - to __No code generation__. Then, open the project >file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
+> <SupportedCultures>en;nl</SupportedCultures>
 {% endif %}
 
 Here is how the localized __RadScheduleView__ looks like:

@@ -10,11 +10,7 @@ position: 2
 
 # MaskedTextInput
 
-
-
-## 
-
-The __RadMaskedTextInput__ represents the basic control that can be used to restrict the input of currency values.
+The __RadMaskedTextInput__ represents the basic control that can be used to restrict the input of text values.
 
 >{% if site.site_name == 'Silverlight' %}In order to use the __RadMaskedCurrencyInput__ control in your projects you have to add references to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Input__<br/>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}{% if site.site_name == 'WPF' %} In order to use the __RadMaskedCurrencyInput__ control in your projects you have to add references tothe following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Input__<br/>* __Telerik.Windows.Data__<br/>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}
 

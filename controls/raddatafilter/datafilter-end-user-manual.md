@@ -15,9 +15,9 @@ __RadDataFilter__ allows you to create complex filter criteria within unlimited 
 
 The following article will show you how to:
 
-* [Build simple filter criteria](#Build_Simple_Filter_Criteria)
+* [Build simple filter criteria](#build-simple-filter-criteria)
 
-* [Build complex filter criteria](#Build_Complex_Filter_Criteria)
+* [Build complex filter criteria](#build-complex-filter-criteria)
 
 ## Build Simple Filter Criteria
 

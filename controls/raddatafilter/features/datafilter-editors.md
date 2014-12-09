@@ -14,9 +14,9 @@ position: 3
 
 The FilterEditors allow the users to input the value of their filter criteria in the __RadDataFilter__. This topic will make you familiar with the following:
 
-* [Built-in Filter Editors](#Built-in_Filter_Editors)
+* [Built-in Filter Editors](#built-in-filter-editors)
 
-* [Custom Filter Editors](#Custom_Filter_Editors)
+* [Custom Filter Editors](#custom-filter-editors)
 
 ## Built-in Filter Editors
 

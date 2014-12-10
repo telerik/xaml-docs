@@ -123,7 +123,9 @@ In order to learn how to use the __RadMenu__ and what capabilities it holds, rea
 
 * [Orientation]({%slug radmenu-features-orientation%})
 
+ {% if site.site_name == 'Silverlight' %}
 * [Animation]({%slug radmenu-features-animation%})
+ {% endif %}
 
 * [Commands]({%slug radmenu-features-commands%})
 
@@ -133,7 +135,9 @@ In order to learn how to use the __RadMenu__ and what capabilities it holds, rea
 
 * [Click Modes]({%slug radmenu-features-click-modes%})
 
+ {% if site.site_name == 'Silverlight' %}
 * [Boundaries Detection]({%slug radmenu-boundaries-detection%})
+ {% endif %}
 
 * [Keyboard Navigation]({%slug radmenu-keyboard-navigation%})
 

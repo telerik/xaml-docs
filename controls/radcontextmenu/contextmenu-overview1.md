@@ -36,7 +36,9 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Styling and Appearance__ - __RadContextMenu__ control can be fully customized using Expression Blend. There are also several pre-defined themes that can be used to style the menu control. [Read More]({%slug radcontextmenu-styles-and-templates-overview%})
 
+{% if site.site_name == 'Silverlight' %}
 * __Boundary Detection__ - __RadContextMenu__ detects the Silverlight plug-in boundaries and opens its child item-groups in the opposite direction when the screen boundaries are to be crossed. When there is not enough space in both directions, the control will adjust its items’ position in order to make them visible whenever this is possible. [Read More]({%slug radcontextmenu-features-boundaries-detection%})
+{% endif %}
 
 * __WPF/Silverlight Code Compatibility__ - The WPF Menu shares a single codebase with its Silverlight counterpart. This means that you can achieve close to 100% code reuse for your Menu logic if you have parallel WPF/Silverlight development.          
 

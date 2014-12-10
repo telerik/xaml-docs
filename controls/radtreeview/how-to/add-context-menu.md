@@ -191,4 +191,4 @@ Here is the final result:
 # See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Disable Drop at Specific Location]({%slug radtreeview-how-to-disable-drop-specific-location%})
- * [Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection]({%slug radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection%})
+ * [Bind RadTreeView to Hierarchical Data and Use Style Binding]({%slug radtreeview-howto-bind-hierarchical-data-style-binding%})

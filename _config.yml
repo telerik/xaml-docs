@@ -79,7 +79,8 @@ controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigati
 controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
 controls/radtreeview/how-to/howto-bind-treeview.md,
 controls/radcoverflow,
-controls/raddomaindatasource,]
+controls/raddomaindatasource,
+controls/radupload,]
 
 navigation:
 ## List your directory names and order here, like this:

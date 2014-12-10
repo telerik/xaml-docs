@@ -126,11 +126,11 @@ The final result should look like the snapshot below:
 
 	{% endif %}
 
-	To configure the binding for the __Source__ property of the __Image control__, [select]({%slug radtreeview-how-to-select-item-in-expression-blend%}) it in the "__Object and Timeline__" pane. 
+	To configure the binding for the __Source__ property of the __Image control__, select it in the "__Object and Timeline__" pane. 
 
 	![](images/RadTreeView_TemplatingItemTemplate_020.png)
 
-	Go to the "__Properties__" pane and [find]({%slug radtreeview-how-to-search-for-property-in-expression-blend%}) the __Source__ property in the __Common properties__ section. 
+	Go to the "__Properties__" pane and find the __Source__ property in the __Common properties__ section. 
 	![](images/RadTreeView_TemplatingItemTemplate_030.png)
 
 	Click the empty square that's on the right of it to open the context menu for the property and choose DataBinding to open the __"Create Data Binding"__ dialog

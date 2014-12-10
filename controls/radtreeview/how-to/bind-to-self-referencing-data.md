@@ -321,6 +321,6 @@ Here is the result:
 ![](images/RadTreeView_HowToBindToSelfReferencingData_010.PNG)
 
 # See Also
- * [Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection]({%slug radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection%})
+ * [Bind RadTreeView to Hierarchical Data and Use Style Binding]({%slug radtreeview-howto-bind-hierarchical-data-style-binding%})
  * [Enable the Horizontal and Vertical Scrollbars]({%slug radtreeview-how-to-enable-horizontal-vertical-scrollbar%})
  * [Disable Drop at Specific Location]({%slug radtreeview-how-to-disable-drop-specific-location%})

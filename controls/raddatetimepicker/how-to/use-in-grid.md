@@ -167,4 +167,6 @@ Here is the result:
 
  * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
 
+{% if site.site_name == 'Silverlight' %}
  * [How to use RadDateTimePicker in a DataForm]({%slug raddatetimepicker-how-to-use-in-dataform%})
+{% endif %}

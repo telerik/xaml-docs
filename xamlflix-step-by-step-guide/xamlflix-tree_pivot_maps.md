@@ -207,18 +207,18 @@ We’re then going to add TypeDefinitions,
 Next we’ll add TypeDefinition Mappings,
 
 #### __XAML__
-<telerik:RadTreeMap Name="xRadTreeMap"
-                    LayoutStrategy="Squarified">
-    <telerik:RadTreeMap.TypeDefinitions>
-        <telerik:TypeDefinition TargetTypeName="Folder"
-                                ValuePath="Size"
-                                LabelPath="Name"
-                                ChildrenPath="Children"
-                                ToolTipPath="Size">
-            <telerik:TypeDefinition.Mappings>
-                <telerik:BrushColorizer Brush="AliceBlue" />
-            </telerik:TypeDefinition.Mappings>              
-        </telerik:TypeDefinition>
+	<telerik:RadTreeMap Name="xRadTreeMap"
+						LayoutStrategy="Squarified">
+		<telerik:RadTreeMap.TypeDefinitions>
+			<telerik:TypeDefinition TargetTypeName="Folder"
+									ValuePath="Size"
+									LabelPath="Name"
+									ChildrenPath="Children"
+									ToolTipPath="Size">
+				<telerik:TypeDefinition.Mappings>
+			<telerik:BrushColorizer Brush="AliceBlue" />
+		</telerik:TypeDefinition.Mappings>
+	</telerik:TypeDefinition>
 
 That sets up the folder, next we need to set up the file,
 

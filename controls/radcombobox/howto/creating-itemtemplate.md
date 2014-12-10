@@ -18,6 +18,8 @@ To learn what is the difference between __ItemTemplate__ and __SelectionBoxTempl
 
  * [Setting up AutoComplete]({%slug radcombobox-setting-up-autocomplete%})
 
+ {% if site.site_name == 'Silverlight' %}
  * [Bind a RadComboBox to Enum Values]({%slug radcombobox-howto-bind-enum-values%})
+ {% endif %}
 
  * [RadComboBox Virtualization]({%slug radcombobox-howto-virtualization%})

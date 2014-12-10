@@ -39,4 +39,6 @@ In order to access the __RegionName__ attached property you have to declare the 
 
  * [Integration with Content Controls]({%slug radtransition-features-integration-with-content-controls%})
 
+  {% if site.site_name == 'Silverlight' %}
  * [Use with Silverlight Navigation Framework]({%slug radtransition-how-to-use-with-silverlight-navigation-framework%})
+ {% endif %}

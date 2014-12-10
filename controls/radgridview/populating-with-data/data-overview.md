@@ -48,4 +48,6 @@ You can also learn how to [Configure the Data Bindings]({%slug gridview-configur
 
  * [Loading Data from WCF Services]({%slug gridview-loading-data-from-wcf-services%})
 
- * [Loading Data from ADO.NET Services]({%slug gridview-loading-data-from-adonet-services%})[Loading Data from Web Services]({%slug gridview-loading-data-from-web-services%})
+ * [Loading Data from ADO.NET Services]({%slug gridview-loading-data-from-adonet-services%})
+ 
+ * [Loading Data from Web Services]({%slug gridview-loading-data-from-web-services%})

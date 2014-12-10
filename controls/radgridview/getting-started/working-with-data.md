@@ -19,14 +19,17 @@ To load the data means to fetch it to the __RadGridView__, so it can display it.
 * [Using in-memory Data]({%slug gridview-in-memory-date%})
 
 * [From XML]({%slug gridview-loading-data-from-xml%})
-
-* [From RIA Services]({%slug gridview-loading-data-from-ria-services%})
-
+ 
 * [From WCF Services]({%slug gridview-loading-data-from-wcf-services%})
 
 * [From ADO.NET Services]({%slug gridview-loading-data-from-adonet-services%})
 
+{% if site.site_name == 'Silverlight' %}
+
+* [From RIA Services]({%slug gridview-loading-data-from-ria-services%})
+
 * [From Web Services]({%slug gridview-loading-data-from-web-services%})
+{% endif %}
 
 ## Displaying Data
 
@@ -52,7 +55,7 @@ The __ItemsSource__ property takes any collection that implements __IEnumerable_
 
 When set to the __ItemsSource__ property the data appears in the form of columns. The columns are bound to the data in the __ItemsSource__. By default you don't have to explicitly define the columns, as they will be auto generated. If you want, you are allowed to define the columns manually and specify the bindings for each one. To learn more about the columns take a look at the [Grid Columns]({%slug gridview-columns-overview%}) topic.
 
-Via the functionality implemented by the columns you can [sort]({%slug gridview-sorting-basics%}), [filter]({%slug gridview-basic-filtering2%}), [group]({%slug gridview-grouping-basics%}){% if site.site_name == 'Silverlight' %} or {% endif %}[page your data]({%slug gridview-overview-paging%}).
+Via the functionality implemented by the columns you can [sort]({%slug gridview-sorting-basics%}), [filter]({%slug gridview-filtering-basic%}) or [group]({%slug gridview-grouping-basics%}) the data.
 
 Usually when you display data, there are cases when you don't want to put all your data in one row. The __RadGridView__ provides you with a __Row Details View__, which can display the additional information. To learn more take a look at the [Row Details]({%slug radgridview-row-details-overview%}) topics.
 

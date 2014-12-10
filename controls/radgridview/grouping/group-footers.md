@@ -151,5 +151,3 @@ Check out the following topics which explain in great details the __RadGridView_
  * [Basic Filtering]({%slug gridview-filtering-basic%})
 
  * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})
-
- * [Using Silverlight DataPager]({%slug gridview-paging-using-silverlight-datapager%})

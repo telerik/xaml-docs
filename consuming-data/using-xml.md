@@ -200,4 +200,6 @@ The following example navigates through a stream to determine the current node t
 
  * [In-Memory Data]({%slug consuming-data-in-memory-data%})
 
+{% if site.site_name == 'Silverlight' %} 
  * [DomainDataSource Support]({%slug consuming-data-domain-datasource-support%})
+{% endif %}

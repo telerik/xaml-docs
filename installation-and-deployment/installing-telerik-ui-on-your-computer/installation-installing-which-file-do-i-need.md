@@ -26,7 +26,7 @@ Each installation package comes in three types:
 
 The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for easy and automatic installation of a product. It installs the controls on your computer in a folder in your Program Files named Telerik, and automatically creates the necessary virtual folders and projects.
 
-For more information about how to install UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} from MSI file, read [here]({%slug installation-installing-from-msi%}).
+For more information about how to install UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} from MSI file, read [here]({%slug installation-installing-from-msi-wpf%}).
 
 >tipIf you already have Telerik UI installed from a MSI, you can safely install an updated version - the installer will keep your existing installation. The new files will be placed in a separate folder and the new installation does not damage the common installer files.
 
@@ -34,13 +34,13 @@ For more information about how to install UI for {% if site.site_name == 'Silver
 
 The [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29) is used to manual (advanced) installs and for upgrading/updating purposes.
 
-For more information about how to install Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} from ZIP file, read [here]({%slug installation-installing-from-zip%}).
+For more information about how to install Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} from ZIP file, read [here]({%slug installation-installing-from-zip-wpf%}).
 
 ## DLL Files Only (HOTFIX)
 
 __DLL Files Only__ are used for updating/upgrading a product to a newer version. This is a bare-bones upgrade option for the Telerik UI controls. The hotfix contains only those files that you need to replace in your project to upgrade to the new version.
 
-For more information about how to use HOTFIX DLL Files, read [here]({%slug installation-installing-hotfix%}).
+For more information about how to use HOTFIX DLL Files, read [here]({%slug installation-installing-hotfix-wpf%}).
 
 >tipThe latest __MSI__ and __ZIP__ packages available for download already have all updates/HOTFIXES applied. There is no need to update them further.
 
@@ -50,11 +50,13 @@ The Demos Application ZIP package does not include the Telerik assemblies, so in
       
 
 >tipIf you have multiple UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} installations on your machine the projects might sometimes reference an older installed version of the components. In that case you can run the {% if site.site_name == 'WPF' %}[Upgrade Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}){% endif %}{% if site.site_name == 'Silverlight' %}[Upgrade Wizard]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%}){% endif %} to update the referenced assemblies to use the latest version of the components in the projects you need to run.
-      
+   
+{% if site.site_name == 'Silverlight' %}   
 # See Also
 
  * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
-
+ 
  * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
 
  * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix%})
+ {% endif %}

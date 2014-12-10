@@ -126,6 +126,10 @@ In order to make a call to your service, you just need to invoke the exposed by 
 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
 
+ {% if site.site_name == 'Silverlight' %} 
  * [Consuming Web (asmx) Service]({%slug consuming-data-web-asmx-service%})
+{% endif %}
 
+ {% if site.site_name == 'Silverlight' %} 
  * [Consuming .NET RIA Service]({%slug consuming-data-net-ria-service%})
+ {% endif %}

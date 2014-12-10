@@ -20,7 +20,10 @@ Telerik __UI for__ can be populated with data in any of the following ways:
 
 * Populating with data from __ADO.NET Data Service__. [Read more]({%slug consuming-data-ado-net-data-service%})
 
-* Populating with data from __Web (asmx) Service__. [Read more]({%slug consuming-data-web-asmx-service%}){% if site.site_name == 'Silverlight' %}
+{% if site.site_name == 'Silverlight' %} 
+* Populating with data from __Web (asmx) Service__. [Read more]({%slug consuming-data-web-asmx-service%})
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
 
 * Populating with data from __.NET RIA Service__. [Read more]({%slug consuming-data-net-ria-service%})
 
@@ -36,7 +39,9 @@ Telerik __UI for__ can be populated with data in any of the following ways:
 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
 
+ {% if site.site_name == 'Silverlight' %} 
  * [Consuming Web (asmx) Service]({%slug consuming-data-web-asmx-service%})
+ {% endif %}
 
  * [Using XML]({%slug consuming-data-using-xml%})
 

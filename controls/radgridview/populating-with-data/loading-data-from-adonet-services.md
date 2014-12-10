@@ -332,11 +332,13 @@ Run your demo, the result can be seen on the next picture:
  * [Using in-memory Data]({%slug gridview-in-memory-date%})
 
  * [Loading Data from XML]({%slug gridview-loading-data-from-xml%})
+ 
+ * [Loading Data from WCF Services]({%slug gridview-loading-data-from-wcf-services%})
+{% if site.site_name == 'Silverlight' %}
 
  * [Loading Data from RIA Services]({%slug gridview-loading-data-from-ria-services%})
 
  * [DomainDataSource Support]({%slug gridview-domaindatasource-support%})
 
- * [Loading Data from WCF Services]({%slug gridview-loading-data-from-wcf-services%})
-
  * [Loading Data from Web Services]({%slug gridview-loading-data-from-web-services%})
+{% endif %}

@@ -43,8 +43,8 @@ For more information take a look at the [Basic Selection]({%slug gridview-select
 
  * [Programmatic Selection]({%slug radgridview-selection-programmatic-selection%})
 
- * [Basic Filtering]({%slug gridview-basic-filtering2%})
+ * [Basic Filtering]({%slug gridview-filtering-basic%})
 
- * [Programmatic Filtering]({%slug gridview-programmatic-filtering%})
+ * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})
 
  * [Multiple-column Sorting]({%slug gridview-multiple-column-sorting%})

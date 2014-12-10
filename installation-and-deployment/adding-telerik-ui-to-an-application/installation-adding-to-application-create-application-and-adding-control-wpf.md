@@ -15,7 +15,7 @@ The following topic describes what steps you should perform in order to add the 
       
 ## Creating Application with Visual Studio Extensions installed
 
-* Open [Microsoft Visual Studio 2012]({%slug installation-system-requirements%}).
+* Open [Microsoft Visual Studio 2012]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}).{% endif %}{% if site.site_name == 'WPF' %}({%slug installation-system-requirements-wpf%}).{% endif %}
 
 * Create new RadControlsWpf Application:![Common Installing Creating Application 012 WPF](images/Common_InstallingCreatingApplication_012_WPF.png)
 
@@ -43,7 +43,7 @@ The following topic describes what steps you should perform in order to add the 
 
 ## Creating Application without Visual Studio Extensions installed
 
-* Open [Microsoft Visual Studio 2012]({%slug installation-system-requirements%}).
+* Open [Microsoft Visual Studio 2012]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}).{% endif %}{% if site.site_name == 'WPF' %}({%slug installation-system-requirements-wpf%}).{% endif %}
           	
 * Create a new WPF Application.
 ![Common Installing Creating Application 011 WPF](images/Common_InstallingCreatingApplication_011_WPF.png)
@@ -52,7 +52,7 @@ The following topic describes what steps you should perform in order to add the 
 
 ## Dragging Controls from Visual Studio Toolbox
 
-* Add the WPF RadControls to your [toolbox]({%slug installation-adding-to-vs-2008-toolbox-wpf%}).
+* Add the WPF RadControls to your [toolbox]({%slug installation-adding-to-vs-2012-toolbox-wpf%}).
 
 >If you wonder which control in which assembly belongs to, read the main topic about [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}).
 

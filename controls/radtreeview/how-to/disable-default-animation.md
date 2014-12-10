@@ -32,5 +32,5 @@ Once you have declared the needed namespace, the only thing you have to do is se
 
 # See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
- * [Work with Selection]({%slug radtreeview-how-to-how-to-work-with-selection%})
+ * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})

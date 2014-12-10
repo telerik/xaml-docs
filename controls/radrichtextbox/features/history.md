@@ -134,8 +134,6 @@ RadDocument has API of its own, but using it has a set of limitations. One of th
 
 # See Also
 
- * [Working with RadRichTextBox]({%slug radrichtextbox-features-working-with-radrichtextbox%})
-
  * [Selection]({%slug radrichtextbox-features-selection%})
 
  * [Positioning]({%slug radrichtextbox-features-positioning%})

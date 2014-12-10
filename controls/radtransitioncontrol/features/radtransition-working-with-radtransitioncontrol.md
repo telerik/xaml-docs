@@ -108,6 +108,8 @@ By default there is no easing function specified for the __RadTransitionControl_
 
  * [Integration with Content Controls]({%slug radtransition-features-integration-with-content-controls%})
 
+{% if site.site_name == 'Silverlight' %}
  * [Use with Silverlight Navigation Framework]({%slug radtransition-how-to-use-with-silverlight-navigation-framework%})
+{% endif %}
 
  * [Use with Prism]({%slug radtransition-how-to-use-with-prism%})

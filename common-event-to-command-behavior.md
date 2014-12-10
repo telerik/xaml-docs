@@ -168,7 +168,3 @@ The __EventToCommandBehavior__ gives you the ability to add multiple __EventBini
 {{endregion}}
 
 >If you have multiple commands attached to a single event, the commands will be executed in the order they are defined in the __EventBindings__ collection (from top to bottom).
-          
-# See Also
-
- * [Command support]({%slug common-command-support%})

@@ -79,5 +79,3 @@ An alternative of using the __CaretPosition__ property is to create an instance 
  * [Selection]({%slug radrichtextbox-features-selection%})
 
  * [History]({%slug radrichtextbox-features-history%})
-
- * [Working with RadRichTextBox]({%slug radrichtextbox-features-working-with-radrichtextbox%})

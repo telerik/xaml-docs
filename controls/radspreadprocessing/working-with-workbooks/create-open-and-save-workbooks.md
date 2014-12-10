@@ -57,7 +57,7 @@ __RadSpreadsheet__ document model allows you to easily import a workbook from a 
 
 
 
-More information about import is available in the [Formats and Conversion]({%slug radspreadprocessing-formats-and-conversion%}) section.
+More information about import is available in the [Formats and Conversion]({%slug radspreadprocessing-formats-and-conversion-general-information%}) section.
         
 
 ## Save a Workbook{% if site.site_name == 'Silverlight' %}

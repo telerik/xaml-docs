@@ -27,5 +27,5 @@ For more information read the topic about [Expanding and Collapsing Items]({%slu
 # See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
- * [Work with Selection]({%slug radtreeview-how-to-how-to-work-with-selection%})
+ * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
  * [Expanding and Collapsing Items]({%slug radtreeview-feautres-treeviewitem-expanding-and-collapsing-items%})

@@ -14,6 +14,8 @@ For more information about the __RadComboBox__'s __AutoComplete__ feature, pleas
 
 # See Also
 
+{% if site.site_name == 'Silverlight' %}
  * [Bind a RadComboBox to Enum Values]({%slug radcombobox-howto-bind-enum-values%})
+{% endif %}
 
  * [RadComboBox Virtualization]({%slug radcombobox-howto-virtualization%})

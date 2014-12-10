@@ -293,5 +293,5 @@ The final result after bringing *Item 2.3.1.4* should look like this
 
 # See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
- * [Work with Selection]({%slug radtreeview-how-to-how-to-work-with-selection%})
+ * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
  * [Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item]({%slug radtreeview-how-to-get-previous-next-parent-sibling-node%})

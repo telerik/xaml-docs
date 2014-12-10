@@ -10,14 +10,9 @@ position: 0
 
 # Performance Tips and Tricks
 
-
-
-## 
-
 When having scenarios with large sets of data, you can experience a lower __RadChart__ performance. Here is a list with some simple changes that can improve the performance in large data scenarios:
 
 * __Use fewer data points__ - typical performance guidance for Silverlight and WPF recommends capping the total number of UI elements in the low- to mid-hundreds. Given that each of the chart item instances instantiates around 3-5 UI elements, trying to render a chart with 1000 data points can start to bog the system down quite fast.
-
 
 >Note that the __Q1 2010__ edition of __RadChart__ is able to handle hundred of thousands of data points thanks to its new __Virtual Scrolling__ and __Data Sampling__ mechanisms.
 
@@ -68,12 +63,9 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radchart-performance-tips-and-tricks_1}}
 	Public Class AddRangeObservableCollection(Of T)
 	 Inherits ObservableCollection(Of T)
@@ -100,14 +92,8 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 	  End If
 	 End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 # See Also
-
  * [Overview]({%slug radchart-overview%})
-
- * [Localization]({%slug chart-localization%})
-
  * [Populating with Data - Overview]({%slug radchart-populating-with-data-overview%})

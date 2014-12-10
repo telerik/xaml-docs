@@ -30,7 +30,9 @@ In this section you will find:
 
 * [Binding to ADO.NET Data Service]({%slug radcombobox-populating-with-data-binding-adonet%}) - explains how to bind your __RadComboBox__ to data provided by ADO.NET data services.
 
+ {% if site.site_name == 'Silverlight' %}
 * [Binding to RIA Service]({%slug radcombobox-populating-with-data-binding-ria%}) - explains how to bind your __RadComboBox__ to data provided by .NET RIA services. 
+  {% endif %}
 
 * [Binding to XML]({%slug radcombobox-populating-with-data-binding-xml%}) - explains how to bind your __RadComboBox__ to xml data.
 

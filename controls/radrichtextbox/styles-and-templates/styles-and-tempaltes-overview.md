@@ -30,8 +30,6 @@ Read the following topics to learn more:
 
 # See Also
 
- * [Working with RadRichTextBox]({%slug radrichtextbox-features-working-with-radrichtextbox%})
-
  * [Events]({%slug radrichtextbox-events-overview%})
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})

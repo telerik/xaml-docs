@@ -107,4 +107,4 @@ Once the archived folders are extracted you will probably note the following fol
 
  * [Trial License Limitations]({%slug installation-installing-license-limitations%})
 
- * [Adding UI for Silverlight to the Visual Studio 2008 Toolbox]({%slug installation-adding-to-vs-2008-toolbox%})
+ * [Adding UI for Silverlight to the Visual Studio 2012 Toolbox]({%slug installation-adding-to-vs-2012-toolbox%})

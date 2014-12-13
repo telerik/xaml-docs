@@ -14,9 +14,9 @@ position: 10
 
 The purpose of this tutorial is to show you how to populate a __RadChart__ with data from an __ADO.NET Data Service__ in two ways:
 
-* A straight-forward way - [plain method calls](#Plain_Method_Calls).
+* A straight-forward way - [plain method calls](#plain-method-calls).
 
-* [Using MVVM approach](#Using_MVVM_Approach)
+* [Using MVVM approach](#using-mvvm-approach)
 
 >This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 

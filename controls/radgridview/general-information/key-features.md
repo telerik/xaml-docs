@@ -40,11 +40,13 @@ This is a list with short descriptions of the top-of-the line features of Teleri
 
 * __ControlPanel__ - as of __Q3 2013__ we have introduced a new feature allowing the developer to define __ControlPanelItems__. [Read more]({%slug gridview-overview-controlpanel%})
 
+{% if site.site_name == 'WPF' %}
 * __Merged Cells__ - as of __Q3 2014__ we have introduced support for __merged cells in RadGridView__ control. As a result the serial cells with equal values can be merged vertically or horizontally. [Read more]({%slug gridview-merged-cells%})
+{% endif %}
 
 * __StyleSelectors__ - __RadGridView__ has built in support for applying Style selectors. [Read more]({%slug gridview-style-selectors-overview%})
 
-* __Styling and Appearance__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} GridView can be fully customized using Expression Blend. There are also several pre-defined themes that can be used to style the __RadGridView__ control. Furthermore, Telerik unique style building mechanism allows you to change the skin’s color scheme with just a few clicks. [Read more]({%slug gridview-stylines-and-templates-overview%})
+* __Styling and Appearance__ - RadGridView can be fully customized using Expression Blend. There are also several pre-defined themes that can be used to style __RadGridView__ control. Furthermore, Telerik unique style building mechanism allows you to change the skin’s color scheme with just a few clicks. [Read more]({%slug gridview-stylines-and-templates-overview%})
 
 * __TemplateSelectors__ - __RadGridView__ has built in support for applying DataTemplate selectors. [Read more]({%slug gridview-template-selectors-overview%})
 

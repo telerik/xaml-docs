@@ -14,15 +14,15 @@ position: 3
 
 The __RadDataPager__ is a control that allows you to split your data into pages and display it in a user friendly way. This topic will help you to quickly get started using the control. It will focus on the following:
 
-* [Adding RadDataPager](#Creating_a_RadDataPager)
+* [Adding RadDataPager](#adding-raddatapager)
 
-* [Configuring the RadDataPager](#Configuring_the_RadDataPager)
+* [Configuring the RadDataPager](#configuring-the-raddatapager)
 
-* [Paging RadGridView](#Paging_RadGridView)
+* [Paging RadGridView](#paging-radgridview)
 
-* [Paging a Collection](#Paging_a_Collection)
+* [Paging a Collection](#paging-a-collection)
 
-* [Exposing the Paged Collection](#Exposing_the_Paged_Collection)
+* [Exposing the Paged Collection](#exposing-the-paged-collection)
 
 ## Adding RadDataPager
 

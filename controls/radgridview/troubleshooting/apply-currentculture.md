@@ -12,9 +12,9 @@ position: 16
 
 __PROBLEM__
 
-RadGridView does not respect the CurrentCulture Format settings when formatting its data.
+__RadGridView__ does not respect the __CurrentCulture Format__ settings when formatting its data.
 
->Please note that GridViewCells respect the Language property and the result of the aggregate function, displayed for the GridViewFooterCells, respects the CurrentCulture settings.
+>Please note that __GridViewCells__ respect the __Language__ property and the result of the aggregate function, displayed for the __GridViewFooterCells__, respects the __CurrentCulture__ settings.
           
 
 __CAUSE__{% if site.site_name == 'WPF' %}
@@ -23,18 +23,23 @@ It is due to the fact that the culture used for __formatting the data__ is now t
 
 It is due to the fact that the culture used for __formatting the data__ is now the one specified as a __Language for the GridView__ (or the containing Page).{% endif %}
 
-We have changed this behavior with the version __Q2 2012 SP2__, so now it is compatible with the behavior of the MS DataGrid.
+We have changed this behavior with the version __Q2 2012 SP2__, so now it is compatible with the behavior of the __MS DataGrid__.
         
 
 __SOLUTION__
 
-With __Q1 2013__ we have introduced a new property of the RadGridView - __IsLocalizationLanguageRespected__. You can use it to control whether the CurrentCulture or the Language to be respected. By default the Language will be respected.
-        
+With __Q1 2013__ we have introduced the __IsLocalizationLanguageRespected__ property of __RadGridView__, which will enable you to control whether the __CurrentCulture__ or the __Language__ will be respected. It can be configured with the following values: 
+	
+* ___"True"___ - the __Language__ will be respected ___(default)___.
+* ___"False"___ - the __CurrentCulture__ format settings will be respected.
 
-Another approach would be to set the Language based on the CurrentCulture. It can be set like so:
+
+         
+
+Another approach would be to set the __Language__ based on the __CurrentCulture__  as follows:
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __C#__
 
 {{region gridview-troubleshooting-apply-currentculture_0}}
 
@@ -50,7 +55,7 @@ Another approach would be to set the Language based on the CurrentCulture. It ca
 
 
 
-#### __XAML__
+#### __C#__
 
 {{region gridview-troubleshooting-apply-currentculture_1}}
 

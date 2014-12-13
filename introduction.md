@@ -79,7 +79,7 @@ Telerik UI for Silverlight features the following controls:
 
 * [Docking]({%slug raddocking-overview2%})
 
-* [DomainDataSource](8962EF1A-8A98-4D52-83A7-C537809069DA)
+* [DomainDataSource]({%slug dds-overview%})
 
 * [Expander]({%slug radexpander-overview%})
 

@@ -296,7 +296,7 @@ If you would like to avoid the default parsing of the input string and always pr
 __Example 13__ enters the string "=1+2" into a cell, however, because of the applied cell value format, the cell is assigned a TextCellValue instead of a FormulaCellValue.
         
 
-#### __[C#] Example 13: Explicitly apply tect value type__
+#### __[C#] Example 13: Explicitly apply text value type__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_20}}
     Workbook workbook = new Workbook();

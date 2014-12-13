@@ -37,7 +37,7 @@ Telerik UI for Silverlight trial version. Copyright Telerik © 2002-2014. To rem
 
 # See Also
 
- * [Adding UI for Silverlight to the Visual Studio 2008 Toolbox]({%slug installation-adding-to-vs-2008-toolbox%})
+ * [Adding UI for Silverlight to the Visual Studio 2012 Toolbox]({%slug installation-adding-to-vs-2012-toolbox%})
 
  * [Creating an Application and Adding UI for Silverlight]({%slug installation-adding-to-application-create-application-and-adding-control%})
 

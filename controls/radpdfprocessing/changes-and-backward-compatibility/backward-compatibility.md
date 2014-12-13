@@ -17,6 +17,20 @@ This article lists the breaking changes and how they can be fixed when upgrading
 
 ## What's Different in 2014 Q3
 
+
+### Changed
+
+
+Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties::TextBlockHeight and
+Telerik.Windows.Documents.Fixed.Model.Editing.TextProperties::TextBlockWidth are removed.
+            
+
+### What to do now
+
+
+You can specify the block size when [Measuring or Drawing the block]({%slug radpdfprocessing-editing-block%}).
+
+
 ### Changed
 
 Telerik.Windows.Documents.Fixed.Model.Editing.FixedContentEditor::BeginText() and Telerik.Windows.Documents.Fixed.Model.Editing.FixedContentEditor::EndText() are removed.

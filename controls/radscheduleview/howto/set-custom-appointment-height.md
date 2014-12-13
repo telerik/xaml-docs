@@ -143,7 +143,7 @@ You can see the final result in __Figure 1__:
 Figure 1: Appointments with different heights in MonthViewDefinition
 ![radscheduleview how to set custom appointment heights](images/radscheduleview_how to_set_custom_appointment_heights.png)
 
->tipYou can find a runnable project demonstrating the approach from the previous example in our online demos {% if site.site_name == 'Silverlight' %}[here](https://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/CustomAppointmentHeight){% endif %}{% if site.site_name == 'WPF' %}[here](https://demos.telerik.com/wpf), the example is listed as __ScheduleView / Custom Appointment Height__{% endif %}.          
+>tipYou can find a runnable project demonstrating the approach from the previous example in our online demos {% if site.site_name == 'Silverlight' %}[here](http://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/CustomAppointmentHeight){% endif %}{% if site.site_name == 'WPF' %}[here](http://demos.telerik.com/wpf), the example is listed as __ScheduleView / Custom Appointment Height__{% endif %}.          
 
 # See Also
 

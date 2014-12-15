@@ -186,47 +186,39 @@ The splitting in components is automatic and the grid layout of the components a
 
 The grid layout has the following settings which are both present as part of the __SugiyamaLayoutSettings__ and the __TreeLayoutSettings__:	
 
-* __ComponentMargin:__ the margin each component has in the grid layout.			  
-
-* __ComponentsGridWidth:__ the total width of the grid wherein the components are laid out.			  
-
-* __TotalMargin:__ the margin around the (virtual) grid.			  
+* __AnimateTransitions__: This property allows you to animate the dynamic changes of a Diagram layout. When you set the value of the property to __True__ and dynamically change the layout settings of a Diagramming solution, an animation will be applied during the transition of the settings.	
+* __ComponentMargin:__ the margin each component has in the grid layout.		
+* __ComponentsGridWidth:__ the total width of the grid wherein the components are laid out.			
+* __IgnoreContainers__: Gets or sets a boolean valu indicating whether the shape containers are ignored when laying out the graph. If __false__, the shape containers will be considered as ordinary shapes in the tree layout process. You can additionally set the flag to perform a separate layout pass on the content of the containers. On the other hand, if this property is set to __true__ the flag will have no effect since the layout process will be oblivious to the containers.
+* __IgnoreInvisible__: Gets or sets a boolean valu indicating whether the non-visible diagram items have to be taken into account. If set to true shapes with Visibility not set to Visibl  will be ignored.
+* __LayoutContainerChildren__: Gets or sets a boolean value indicating whether the content of the containers is processed on top of the global layout. This flag has only an effect if is set to __false__.
+* __TotalMargin:__ the margin around the (virtual) grid.		  
 
 __Sugiyama specific settings__
 
-* __VerticalDistance__: the vertical spacing between the layers.			  
-
+* __IgnoreNodeSize__: 
+* __Orientation__: Gets or sets the orientation in which the layout process should organize the diagram.
+* __ShapeMargin__: 
+* __VerticalDistance__: the vertical spacing between the layers.	
 * __HorizontalDistance__: the horizontal spacing between the layers.			  
 
 __Tree layout settings__
 
 * __TreeLayoutType__: the subtype of the tree layout: TreeDown, TreeUp, TreeLeft, TreeRight, TipOverTree, RadialTree, MindmapVertical, MindmapHorizontal. See the examples above for more details.			  
-
 * __VerticalSeparation__: (applies only to the four standard tree types  and the TipOverTree) the vertical separation between tree level.			  
-
 * __HorizontalSeparation__: (applies only to the four standard tree types and the TipOverTree) the horizontal separation between siblings on the same level.			  
-
 * __UnderneathVerticalTopOffset__: (applies only to the TipOverTree type) the offset from the parent of the first child.			  
-
 * __UnderneathHorizontalOffset__: (applies only to the TipOverTree type) the horizontal offset between parent and child.			  
-
 * __UnderneathVerticalSeparation__: (applies only to the TipOverTree type) the vertical offset between subsequent children.			  
-
 * __Roots__: The Roots of the components. Use this collection of IShapes to set the roots of the trees in your diagram before layout.			  
-
 * __TipOverTreeStartLevel__: this property applies only to the TipOverTree type and gets or sets the level from which a tip-over tree arrangement should be applied. A value of zero means that the children underneath the root will have a tip-over arrangement, a value of one means the grand-children of the root will have this applied and so on.			  
-
 * __RadialSeparation__: (applies only to the RadialTree type) the radial distance between levels.			  
-
 * __RadialFirstLevelSeparation__: (applies only to the RadialTree type) the radial distance between the root and the first level.			  
-
 * __KeepComponentsInOneRadialLayout__: (applies only to the RadialTree type) if set to true the default behavior of organizing components into a grid will be overridden and the components will be considered as part of one radial tree. To this end a virtual root will be added which unifies the different components. See the example below.			  
-
 * __StartRadialAngle__: The radial layout allows you to use a sector instead of the full 360 degrees. This start angle defines the beginning of this sector.			  
-
 * __EndRadialAngle__: This end angle defines the end of the sector used (the part of 360 degrees used).			  
 
-* __AnimateTransitions__: This property allows you to animate the dynamic changes of a Diagram layout. When you set the value of the property to __True__ and dynamically change the layout settings of a Diagramming solution, an animation will be applied during the transition of the settings.			  
+		  
 
 Below you can see the explanation of the main __TreeLayout Settings__ for the base 4 types (Up, Down, Left, Right) + TipOverTree.
 

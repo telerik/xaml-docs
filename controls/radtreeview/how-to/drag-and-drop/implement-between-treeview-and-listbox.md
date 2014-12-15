@@ -31,97 +31,97 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 #### __XAML__
 
 {{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-1}}
-	<Grid x:Name="LayoutRoot"
-	          Margin="8"
-	          Background="White">
-		<Grid.Resources>
-			<DataTemplate x:Key="WishlistProduct">
-				<StackPanel Orientation="Horizontal">
-					<TextBlock Foreground="#FF000000" Text="{Binding Name}" />
-					<TextBlock Foreground="#FF000000" Text=", (" />
-					<TextBlock Foreground="#FF000000" Text="{Binding UnitPrice}" />
-					<TextBlock Foreground="#FF000000" Text=")" />
-				</StackPanel>
-			</DataTemplate>
-			<DataTemplate x:Key="ProductTemplate">
-				<telerik:RadDockPanel MaxWidth="200" Margin="2">
-					<TextBlock Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
-							   Text="{Binding Name}"
-							   telerik:RadDockPanel.Dock="Top" />
-					<TextBlock Foreground="{telerik:Windows8Resource ResourceKey=AccentBrush}"
-							   Text="{Binding UnitPrice}"
-							   telerik:RadDockPanel.Dock="Left" />
-					<TextBlock Margin="2 0 0 0"
-							   Foreground="{telerik:Windows8Resource ResourceKey=StrongBrush}"
-							   Text="{Binding Description}"
-							   TextWrapping="Wrap"
-							   telerik:RadDockPanel.Dock="Left" />
-				</telerik:RadDockPanel>
-			</DataTemplate>
-			<telerik:HierarchicalDataTemplate x:Key="CategoryTemplate"
-									  ItemTemplate="{StaticResource ProductTemplate}"
-									  ItemsSource="{Binding Items}">
-				<StackPanel Orientation="Horizontal">
-					<Image Width="16"
-						   Height="16"
-						   Margin="3"
-						   VerticalAlignment="Center"
-						   Source="Images/folder_icon.png" />
-					<TextBlock Margin="2"
-							   VerticalAlignment="Center"
-							   Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
-							   Text="{Binding Name}" />
-				</StackPanel>
-			</telerik:HierarchicalDataTemplate>
-			<Style TargetType="telerik:RadTreeViewItem">
-				<Setter Property="IsExpanded" Value="True" />
-			</Style>
-		</Grid.Resources>
-		<Grid.RowDefinitions>
-			<RowDefinition />
-			<RowDefinition />
-		</Grid.RowDefinitions>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="2*" />
-			<ColumnDefinition Width="3*" />
-		</Grid.ColumnDefinitions>
-		<!--  All Products  -->
-		<telerik:RadTreeView x:Name="allProductsView"
-							 Grid.Row="0"
-							 Grid.RowSpan="2"
-							 Grid.Column="0"
-							 Margin="0,0,5,0"
-							 IsDragDropEnabled="True"
-							 ItemTemplate="{StaticResource CategoryTemplate}"
-							 Padding="5" />
-		<!--  Whishlist  -->
-		<ListBox x:Name="wishlistView"
-				 Grid.Row="0"
-				 Grid.Column="1"
-				 FontSize="11"
-				 ItemTemplate="{StaticResource WishlistProduct}"
-				 Padding="5"
-				 SelectionMode="Extended">
-			<ListBox.Resources>
-				<DataTemplate x:Key="DraggedItemTemplate">
-					<StackPanel>
-						<StackPanel Orientation="Horizontal">
-							<TextBlock Text="Dragging:" />
-							<TextBlock FontWeight="Bold" Text="{Binding CurrentDraggedItem.Name}" />
-						</StackPanel>
-						<StackPanel Orientation="Horizontal">
-							<TextBlock MinWidth="45"
-									   FontWeight="Bold"
-									   Text="{Binding CurrentDropPosition}" />
-							<TextBlock Foreground="Gray" Text=", (" />
-							<TextBlock Text="{Binding CurrentDraggedOverItem.Name}" />
-							<TextBlock Foreground="Gray" Text=")" />
-						</StackPanel>
-					</StackPanel>
-				</DataTemplate>
-			</ListBox.Resources>
-		</ListBox>
-	</Grid>
+    <Grid x:Name="LayoutRoot"
+              Margin="8"
+              Background="White">
+        <Grid.Resources>
+            <DataTemplate x:Key="WishlistProduct">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="#FF000000" Text="{Binding Name}" />
+                    <TextBlock Foreground="#FF000000" Text=", (" />
+                    <TextBlock Foreground="#FF000000" Text="{Binding UnitPrice}" />
+                    <TextBlock Foreground="#FF000000" Text=")" />
+                </StackPanel>
+            </DataTemplate>
+            <DataTemplate x:Key="ProductTemplate">
+                <telerik:RadDockPanel MaxWidth="200" Margin="2">
+                    <TextBlock Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
+                               Text="{Binding Name}"
+                               telerik:RadDockPanel.Dock="Top" />
+                    <TextBlock Foreground="{telerik:Windows8Resource ResourceKey=AccentBrush}"
+                               Text="{Binding UnitPrice}"
+                               telerik:RadDockPanel.Dock="Left" />
+                    <TextBlock Margin="2 0 0 0"
+                               Foreground="{telerik:Windows8Resource ResourceKey=StrongBrush}"
+                               Text="{Binding Description}"
+                               TextWrapping="Wrap"
+                               telerik:RadDockPanel.Dock="Left" />
+                </telerik:RadDockPanel>
+            </DataTemplate>
+            <telerik:HierarchicalDataTemplate x:Key="CategoryTemplate"
+                                      ItemTemplate="{StaticResource ProductTemplate}"
+                                      ItemsSource="{Binding Items}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="16"
+                           Height="16"
+                           Margin="3"
+                           VerticalAlignment="Center"
+                           Source="Images/folder_icon.png" />
+                    <TextBlock Margin="2"
+                               VerticalAlignment="Center"
+                               Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
+                               Text="{Binding Name}" />
+                </StackPanel>
+            </telerik:HierarchicalDataTemplate>
+            <Style TargetType="telerik:RadTreeViewItem">
+                <Setter Property="IsExpanded" Value="True" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <!--  All Products  -->
+        <telerik:RadTreeView x:Name="allProductsView"
+                             Grid.Row="0"
+                             Grid.RowSpan="2"
+                             Grid.Column="0"
+                             Margin="0,0,5,0"
+                             IsDragDropEnabled="True"
+                             ItemTemplate="{StaticResource CategoryTemplate}"
+                             Padding="5" />
+        <!--  Whishlist  -->
+        <ListBox x:Name="wishlistView"
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 FontSize="11"
+                 ItemTemplate="{StaticResource WishlistProduct}"
+                 Padding="5"
+                 SelectionMode="Extended">
+            <ListBox.Resources>
+                <DataTemplate x:Key="DraggedItemTemplate">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Dragging:" />
+                            <TextBlock FontWeight="Bold" Text="{Binding CurrentDraggedItem.Name}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock MinWidth="45"
+                                       FontWeight="Bold"
+                                       Text="{Binding CurrentDropPosition}" />
+                            <TextBlock Foreground="Gray" Text=", (" />
+                            <TextBlock Text="{Binding CurrentDraggedOverItem.Name}" />
+                            <TextBlock Foreground="Gray" Text=")" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.Resources>
+        </ListBox>
+    </Grid>
 {{endregion}}
 
 {% endif %}
@@ -129,97 +129,97 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 
 #### __XAML__
 {{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-0}}
-   <Grid x:Name="LayoutRoot"
-		  Margin="8"
-		  Background="White">
-		<Grid.Resources>
-			<DataTemplate x:Key="WishlistProduct">
-				<StackPanel Orientation="Horizontal">
-					<TextBlock Foreground="#FF000000" Text="{Binding Name}" />
-					<TextBlock Foreground="#FF000000" Text=", (" />
-					<TextBlock Foreground="#FF000000" Text="{Binding UnitPrice}" />
-					<TextBlock Foreground="#FF000000" Text=")" />
-				</StackPanel>
-			</DataTemplate>
-			<DataTemplate x:Key="ProductTemplate">
-				<telerik:RadDockPanel MaxWidth="200" Margin="2">
-					<TextBlock Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
-							   Text="{Binding Name}"
-							   telerik:RadDockPanel.Dock="Top" />
-					<TextBlock Foreground="{telerik:Windows8Resource ResourceKey=AccentBrush}"
-							   Text="{Binding UnitPrice}"
-							   telerik:RadDockPanel.Dock="Left" />
-					<TextBlock Margin="2 0 0 0"
-							   Foreground="{telerik:Windows8Resource ResourceKey=StrongBrush}"
-							   Text="{Binding Description}"
-							   TextWrapping="Wrap"
-							   telerik:RadDockPanel.Dock="Left" />
-				</telerik:RadDockPanel>
-			</DataTemplate>
-			<HierarchicalDataTemplate x:Key="CategoryTemplate"
-									  ItemTemplate="{StaticResource ProductTemplate}"
-									  ItemsSource="{Binding Items}">
-				<StackPanel Orientation="Horizontal">
-					<Image Width="16"
-						   Height="16"
-						   Margin="3"
-						   VerticalAlignment="Center"
-						   Source="Images/folder_icon.png" />
-					<TextBlock Margin="2"
-							   VerticalAlignment="Center"
-							   Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
-							   Text="{Binding Name}" />
-				</StackPanel>
-			</HierarchicalDataTemplate>
-			<Style TargetType="telerik:RadTreeViewItem">
-				<Setter Property="IsExpanded" Value="True" />
-			</Style>
-		</Grid.Resources>
-		<Grid.RowDefinitions>
-			<RowDefinition />
-			<RowDefinition />
-		</Grid.RowDefinitions>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="2*" />
-			<ColumnDefinition Width="3*" />
-		</Grid.ColumnDefinitions>
-		<!--  All Products  -->
-		<telerik:RadTreeView x:Name="allProductsView"
-							 Grid.Row="0"
-							 Grid.RowSpan="2"
-							 Grid.Column="0"
-							 Margin="0,0,5,0"
-							 IsDragDropEnabled="True"
-							 ItemTemplate="{StaticResource CategoryTemplate}"
-							 Padding="5" />
-		<!--  Whishlist  -->
-		<ListBox x:Name="wishlistView"
-				 Grid.Row="0"
-				 Grid.Column="1"
-				 FontSize="11"
-				 ItemTemplate="{StaticResource WishlistProduct}"
-				 Padding="5"
-				 SelectionMode="Extended">
-			<ListBox.Resources>
-				<DataTemplate x:Key="DraggedItemTemplate">
-					<StackPanel>
-						<StackPanel Orientation="Horizontal">
-							<TextBlock Text="Dragging:" />
-							<TextBlock FontWeight="Bold" Text="{Binding CurrentDraggedItem.Name}" />
-						</StackPanel>
-						<StackPanel Orientation="Horizontal">
-							<TextBlock MinWidth="45"
-									   FontWeight="Bold"
-									   Text="{Binding CurrentDropPosition}" />
-							<TextBlock Foreground="Gray" Text=", (" />
-							<TextBlock Text="{Binding CurrentDraggedOverItem.Name}" />
-							<TextBlock Foreground="Gray" Text=")" />
-						</StackPanel>
-					</StackPanel>
-				</DataTemplate>
-			</ListBox.Resources>
-		</ListBox>
-	</Grid>
+    <Grid x:Name="LayoutRoot"
+          Margin="8"
+          Background="White">
+        <Grid.Resources>
+            <DataTemplate x:Key="WishlistProduct">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="#FF000000" Text="{Binding Name}" />
+                    <TextBlock Foreground="#FF000000" Text=", (" />
+                    <TextBlock Foreground="#FF000000" Text="{Binding UnitPrice}" />
+                    <TextBlock Foreground="#FF000000" Text=")" />
+                </StackPanel>
+            </DataTemplate>
+            <DataTemplate x:Key="ProductTemplate">
+                <telerik:RadDockPanel MaxWidth="200" Margin="2">
+                    <TextBlock Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
+                               Text="{Binding Name}"
+                               telerik:RadDockPanel.Dock="Top" />
+                    <TextBlock Foreground="{telerik:Windows8Resource ResourceKey=AccentBrush}"
+                               Text="{Binding UnitPrice}"
+                               telerik:RadDockPanel.Dock="Left" />
+                    <TextBlock Margin="2 0 0 0"
+                               Foreground="{telerik:Windows8Resource ResourceKey=StrongBrush}"
+                               Text="{Binding Description}"
+                               TextWrapping="Wrap"
+                               telerik:RadDockPanel.Dock="Left" />
+                </telerik:RadDockPanel>
+            </DataTemplate>
+            <HierarchicalDataTemplate x:Key="CategoryTemplate"
+                                      ItemTemplate="{StaticResource ProductTemplate}"
+                                      ItemsSource="{Binding Items}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="16"
+                           Height="16"
+                           Margin="3"
+                           VerticalAlignment="Center"
+                           Source="Images/folder_icon.png" />
+                    <TextBlock Margin="2"
+                               VerticalAlignment="Center"
+                               Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
+                               Text="{Binding Name}" />
+                </StackPanel>
+            </HierarchicalDataTemplate>
+            <Style TargetType="telerik:RadTreeViewItem">
+                <Setter Property="IsExpanded" Value="True" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <!--  All Products  -->
+        <telerik:RadTreeView x:Name="allProductsView"
+                             Grid.Row="0"
+                             Grid.RowSpan="2"
+                             Grid.Column="0"
+                             Margin="0,0,5,0"
+                             IsDragDropEnabled="True"
+                             ItemTemplate="{StaticResource CategoryTemplate}"
+                             Padding="5" />
+        <!--  Whishlist  -->
+        <ListBox x:Name="wishlistView"
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 FontSize="11"
+                 ItemTemplate="{StaticResource WishlistProduct}"
+                 Padding="5"
+                 SelectionMode="Extended">
+            <ListBox.Resources>
+                <DataTemplate x:Key="DraggedItemTemplate">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Dragging:" />
+                            <TextBlock FontWeight="Bold" Text="{Binding CurrentDraggedItem.Name}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock MinWidth="45"
+                                       FontWeight="Bold"
+                                       Text="{Binding CurrentDropPosition}" />
+                            <TextBlock Foreground="Gray" Text=", (" />
+                            <TextBlock Text="{Binding CurrentDraggedOverItem.Name}" />
+                            <TextBlock Foreground="Gray" Text=")" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.Resources>
+        </ListBox>
+    </Grid>
 {{endregion}}
 
 {% endif %}

@@ -156,67 +156,78 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 
 * __RadDiagramShape__
 	* ZIndex
-
-	* Position
-
-	* Stroke
-
-	* StrokeThickness
-
-	* StrokeDashArray
-
-	* Background
-
-	* Size
-
-	* Content
-
-	* Foreground
-
-	* BorderBrush
-
-	* Thickness
-
-	* FontSize
-
-	* FontWeight
-
-	* FontFamily
-
-	* Geometry
+    * Position
+    * Stroke
+    * StrokeThickness
+    * StrokeDashArray
+    * Background
+    * Size
+    * Content
+    * Foreground
+    * BorderBrush
+    * BorderThickness
+    * FontSize
+    * FontWeight
+    * FontFamily
+    * Geometry
+    * RotationAngle
+    * MinHeight
+    * MinWidth
+    * MaxHeight
+    * MaxWidth
+    * Id
+    * IsDraggingEnabled
+    * IsRotationEnabled
+    * IsResizingEnabled
+    * IsConnectionManipulationEnabled
+    * AllowDelete
+    * AllowCopy
+    * AllowPaste
+    * UseDefaultConnectors
+    * GlidingStyle
+    * IsEditable
+    * ParentGroup
 
 * __RadDiagramConnection__
 	* ZIndex
-
-	* Position
-
-	* Stroke
-
-	* StrokeThickness
-
-	* StrokeDashArray
-
-	* Background
-
-	* SourceConnectorPosition
-
-	* TargetConnectorPosition
-
-	* SourceCapType
-
-	* TargetCapType
-
+    * Id
+    * Position
+    * Stroke
+    * StrokeThickness
+    * StrokeDashArray
+    * Background
+    * SourceConnectorPosition
+    * TargetConnectorPosition
+    * SourceCapType
+    * TargetCapType
 	* SourceCapSize
-
 	* TargetCapSize
-
 	* StartPoint
-
 	* Source
-
 	* EndPoint
-
-	* Target
+	* Target    
+    * ConnectionType    
+    * ConnectionPoints    
+    * BezierTention    
+    * BezierStartPoint    
+    * BezierEndPoint    
+    * IsModified    
+    * Content    
+    * IsEditable    
+    * FontFamily    
+    * FontSize
+    * FontWeight    
+    * Foreground    
+    * BorderBrush    
+    * BorderThickness
+    * IsDraggingEnabled
+    * IsRotationEnabled
+    * IsResizingEnabled
+    * IsConnectionManipulationEnabled
+    * AllowDelete
+    * AllowCopy
+    * AllowPaste
+    * ParentGroup
 
 For every other property that you need to be part of the Serialization/Deserialization process, you have to use the __RadDiagram.ShapeDeserialized__ and __RadDiagram.ShapeSerialized__ or __RadDiagram.ConnectionDeserialized__ and __RadDiagram.ConnectionSerialized__ events. Below is shown how you can serialized the Opacity of the Shapes:			
 
@@ -235,12 +246,12 @@ For every other property that you need to be part of the Serialization/Deseriali
 
 #### __VB.NET__		  
 	Private Sub diagram_ShapeDeserialized(ByVal sender As Object, ByVal e As ShapeSerializationRoutedEventArgs)
-		 ' load the saved property
+		 ' load the saved property'
 		 TryCast(e.Shape, RadDiagramShape).Opacity = Convert.ToDouble(e.SerializationInfo("Opacity"), CultureInfo.InvariantCulture)
 	End Sub
 
 	Private Sub diagram_ShapeSerialized(ByVal sender As Object, ByVal e As ShapeSerializationRoutedEventArgs)
-		 ' save custom or other property
+		 ' save custom or other property'
 		 e.SerializationInfo("Opacity") = (TryCast(e.Shape, RadDiagramShape)).Opacity.ToInvariant()
 	End Sub	
 

@@ -5,7 +5,7 @@ description: Performance
 slug: radrichtextbox-performance
 tags: performance
 published: True
-position: 17
+position: 15
 ---
 
 # Performance

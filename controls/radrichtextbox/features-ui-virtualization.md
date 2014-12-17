@@ -5,7 +5,7 @@ description: UI Virtualization
 slug: radrichtextbox-features-ui-virtualization
 tags: ui,virtualization
 published: True
-position: 11
+position: 13
 ---
 
 # UI Virtualization

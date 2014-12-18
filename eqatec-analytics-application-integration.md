@@ -93,7 +93,7 @@ Here is the updated code:
 
 {{region eqatec-analytics-application-integration_2}}
 	<StackPanel Orientation="Horizontal"> 
-	    <telerik:RadComboBox Width="200" telerik:Analytics.Name="SelectionComboBox"> 
+	    <telerik:RadComboBox Width="200" telerik:Analytics.Name="ComboBoxSelection"> 
 	        <telerik:RadComboBoxItem Content="Silverlight" /> 
 	        <telerik:RadComboBoxItem Content="WPF" /> 
 	        <telerik:RadComboBoxItem Content="ASP.NET AJAX" /> 

@@ -10,10 +10,6 @@ position: 0
 
 # Show First Page On The Right
 
-
-
-## 
-
 To show the first page on the right the you should define the __FirstPagePosition__. It is an enumeration and has two values:
 
 * __Left__ - the first page will be displayed on the left side of the book and next to it will be displayed the second page
@@ -25,7 +21,6 @@ Here is the result when the first page is displayed on the righ side of the book
 ![RadBook](images/book_step4.png)
 
 #### __XAML__
-
 {{region radbook-show-first-page-on-the-right_0}}
 	<telerik:RadBook x:Name="RadBook1" 
 	                    Margin="50"
@@ -55,6 +50,4 @@ Here is the result when the first page is displayed on the righ side of the book
 	                    Text="Page 4" />
 	    </telerik:RadBookItem>
 	</telerik:RadBook>
-	{{endregion}}
-
-
+{{endregion}}

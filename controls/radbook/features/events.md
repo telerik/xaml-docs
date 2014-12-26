@@ -10,10 +10,6 @@ position: 2
 
 # Events
 
-
-
-## 
-
 __RadBook__ exposes the following events:
 
 * __FoldActivated__ - raised when the user hovers the fold with the mouse.
@@ -28,12 +24,9 @@ __RadBook__ exposes the following events:
 
 * __PageFlipEnded__ - raised when the flip is finished. This happen when the page is changed, or user canceled the flip.
 
-
-
 Please find below and example of how to use those events:
 
 #### __XAML__
-
 {{region radbook-events_0}}
 	<Grid x:Name="LayoutRoot" Background="Purple">
 	    <telerik:RadBook x:Name="RadBook1" 
@@ -73,10 +66,7 @@ Please find below and example of how to use those events:
 	</Grid>
 {{endregion}}
 
-
-
 #### __C#__
-
 {{region radbook-events_1}}
 	public partial class MainPage : UserControl
 	{
@@ -112,10 +102,7 @@ Please find below and example of how to use those events:
 	}
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radbook-events_1}}
 	Partial Public Class MainPage
 		Inherits UserControl

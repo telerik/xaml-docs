@@ -10,28 +10,29 @@ position: 1
 
 # Getting Started
 
-
-
-This tutorial will walk you through the creation of a __RadBreadcrumb__.
-	  
+This tutorial will walk you through the creation of a __RadBreadcrumb__.	  
 
 ##  Define a Breadcrumb control
 
->In order to use __RadBreadcrumb__  in your projects you have to add references to the following assemblies:<br/> * __Telerik.Windows.Controls__ <br/> * __Telerik.Windows.Controls.Navigation__ {% if site.site_name == 'WPF' %} <br/> * __Telerik.Windows.Data__ <br/> You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %}<br/>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
+>In order to use __RadBreadcrumb__  in your projects you have to add references to the following assemblies:
+>	- __Telerik.Windows.Controls__
+>	- __Telerik.Windows.Controls.Navigation__
+{% if site.site_name == 'WPF' %}
+>	- __Telerik.Windows.Data__ 
 
-A basic __RadBreadcrumb__ definition looks like this:
-		
+>You can find more info [here]({%slug installation-installing-controls-dependencies-wpf %}).
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+>You can find more info [here]({%slug installation-installing-controls-dependencies%}).{% endif %}
+
+A basic __RadBreadcrumb__ definition looks like this:		
 
 #### __XAML__
-
 {{region radbreadcrumb-getting-started_0}}
 	<telerik:RadBreadcrumb x:Name="breadcrumb" Header="Breadcrumb Header" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
 {{endregion}}
 
-
-
 #### __C#__
-
 {{region radbreadcrumb-getting-started_1}}
 	RadBreadcrumb breadcrumb = new RadBreadcrumb();
 	breadcrumb.Header = "Breadcrumb Header";
@@ -39,10 +40,7 @@ A basic __RadBreadcrumb__ definition looks like this:
 	breadcrumb.VerticalAlignment = System.Windows.VerticalAlignment.Top;
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radbreadcrumb-getting-started_2}}
 	Dim breadcrumb As New RadBreadcrumb()
 	breadcrumb.Header = "Breadcrumb Header"
@@ -52,19 +50,15 @@ A basic __RadBreadcrumb__ definition looks like this:
 
 ![](images/breadcrumb_gettingstarted_breadcrumb.png)
 
->The __RadBreacrumb__ control is a __HeaderedItemsControl__ and its Header is used as a root element. Therefore the control always has one root element. If you don't set the __Breadcrumb.Header__ property an empty root element will be created.
-		  
+>The __RadBreacrumb__ control is a __HeaderedItemsControl__ and its Header is used as a root element. Therefore the control always has one root element. If you don't set the __Breadcrumb.Header__ property an empty root element will be created.		  
 
-So far there is an empty __RadBreadcrumb__ containing no items.
-		
+So far there is an empty __RadBreadcrumb__ containing no items.		
 
 ## Add and remove items (RadBreadcrumbItem controls) and set their Header and DropDownHeader properties
 
-You can add items to the __RadBreadcrumb__ control by defining __RadBreadcrumbItem__ controls inside the __RadBreadcrumb__ definition in XAML:
-		
+You can add items to the __RadBreadcrumb__ control by defining __RadBreadcrumbItem__ controls inside the __RadBreadcrumb__ definition in XAML:		
 
 #### __XAML__
-
 {{region radbreadcrumb-getting-started_3}}
 	<telerik:RadBreadcrumb x:Name="breadcrumb" Header="Breadcrumb Header" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 	    <telerik:RadBreadcrumbItem Header="BreadcrumbItem 1" DropDownHeader="DropDownItem 1">
@@ -81,12 +75,9 @@ You can add items to the __RadBreadcrumb__ control by defining __RadBreadcrumbIt
 	</telerik:RadBreadcrumb>
 {{endregion}}
 
-
 Or you can populate the __RadBreadcrumb.Items__ collection in code-behind:
 
-
 #### __C#__
-
 {{region radbreadcrumb-getting-started_4}}
 	RadBreadcrumbItem item1 = new RadBreadcrumbItem() { Header = "BreadcrumbItem 1", DropDownHeader = "DropDownItem 1" };
 	item1.Items.Add(new RadBreadcrumbItem() { Header = "BreadcrumbItem 1.1", DropDownHeader = "DropDownItem 1.1" });
@@ -103,7 +94,6 @@ Or you can populate the __RadBreadcrumb.Items__ collection in code-behind:
 {{endregion}}
 
 #### __VB.NET__
-
 {{region radbreadcrumb-getting-started_5}}
 	Dim item1 As New RadBreadcrumbItem() With { 
 	        Key .Header = "BreadcrumbItem 1", 
@@ -153,15 +143,11 @@ Or you can populate the __RadBreadcrumb.Items__ collection in code-behind:
 In order to remove items from the __RadBreadcrumb__ control, you can remove them from the control's __Items__ collection:
 
 #### __C#__
-
 {{region radbreadcrumb-getting-started_6}}
 	breadcrumb.Items.Remove(item2);
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radbreadcrumb-getting-started_7}}
 	breadcrumb.Items.Remove(item2)
 {{endregion}}
@@ -172,11 +158,9 @@ In order to remove items from the __RadBreadcrumb__ control, you can remove them
 
 By default the __RadBreadcrumb__ control has two modes - normal and text mode. In the normal mode you can navigate through the __Breadcrumb.Items__ using the BreadcrumbItems and their dropdown content, while in the text mode you can enter the path that you want to navigate to. The control also provides a __Linear__ mode in which the __BreadcrumbItem DropDown Items__ collection is hidden. In __Linear__ mode you can navigate through the __Items__ collection of the control by taking advantage of the text mode of the __RadBreadcrumb__, using its history, using the key navigation or setting the destination path from code-behind.
 
-
 In order to enable the __Linear__ mode of the __RadBreadcrumb__ control, you have to set the __IsLinearMode__ property to __True__ :
 
 #### __XAML__
-
 {{region radbreadcrumb-getting-started_8}}
 	<telerik:RadBreadcrumb x:Name="breadcrumb" 
 	                       Header="Breadcrumb Header"
@@ -197,18 +181,12 @@ In order to enable the __Linear__ mode of the __RadBreadcrumb__ control, you hav
 	</telerik:RadBreadcrumb>
 {{endregion}}
 
-
-
 #### __C#__
-
 {{region radbreadcrumb-getting-started_9}}
 	breadcrumb.IsLinearMode = true;
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radbreadcrumb-getting-started_10}}
 	breadcrumb.IsLinearMode = True
 {{endregion}}
@@ -217,11 +195,9 @@ In order to enable the __Linear__ mode of the __RadBreadcrumb__ control, you hav
 
 ## Change the number of paths saved in the Breadcrumb history
 
-By default the __RadBreadcrumb__ control keeps a history of 10 visited paths. If you want to increase or decrease this number, you can set the __HistorySize__ property:
-		
+By default the __RadBreadcrumb__ control keeps a history of 10 visited paths. If you want to increase or decrease this number, you can set the __HistorySize__ property:		
 
 #### __XAML__
-
 {{region radbreadcrumb-getting-started_11}}
 	<telerik:RadBreadcrumb x:Name="breadcrumb" 
 	                       Header="Breadcrumb Header" 
@@ -232,18 +208,12 @@ By default the __RadBreadcrumb__ control keeps a history of 10 visited paths. If
 	</telerik:RadBreadcrumb>
 {{endregion}}
 
-
-
 #### __C#__
-
 {{region radbreadcrumb-getting-started_12}}
 	breadcrumb.HistorySize = 15;
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radbreadcrumb-getting-started_13}}
 	breadcrumb.HistorySize = 15
 {{endregion}}
@@ -272,7 +242,5 @@ By default the __RadBreadcrumb__ control keeps a history of 10 visited paths. If
  {{endregion}}
 
 # See Also
-
  * [Overview]({%slug radbreadcrumb-overvew%})
-
  * [Features Overview]({%slug radbreadcrumb-features-overview%})

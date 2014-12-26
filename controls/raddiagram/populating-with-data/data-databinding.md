@@ -16,7 +16,7 @@ The following article will show you how to bind the __RadDiagram__ to ViewModel 
 
 ## Defining GraphSource
 
-In order to bind a __RadDiagram__ successfully you have to use its __GraphSource__ property and create a collection that implements the __IGraphSource__ or __IGraphSource<T>.__ The __IGraphSource__ interface basically describes the elements (items and links (or nodes or edges)) of an __MVVM__ graph source.
+In order to bind a __RadDiagram__ successfully you have to use its __GraphSource__ property and create a collection that implements the __IGraphSource__ or __IGraphSource&lt;T&gt;.__ The __IGraphSource__ interface basically describes the elements (items and links (or nodes or edges)) of an __MVVM__ graph source.
 		
 #### __C#__
 {{region raddiagram-data-databinding-0}}

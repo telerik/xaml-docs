@@ -55,7 +55,6 @@ EAN128 is a special case of Code128. The only difference between EAN128 and Code
 
 The QRCode represents a square matrix, filled with black and white modules. There are four modes available in the control, namely:
 
-
 * __Numeric data__ (digits __0 - 9__)
 
 * __Alphanumeric data__ (digits __0 - 9__; upper case letters __A-Z__; nine other characters: __space, $ % * + - . / :__ )

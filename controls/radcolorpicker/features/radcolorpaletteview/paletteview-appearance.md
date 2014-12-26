@@ -10,10 +10,6 @@ position: 2
 
 # Appearance
 
-
-
-## 
-
 You can customize the appearance of the palettes using the __ItemsPanel__ property:
 
 #### __XAML__
@@ -26,6 +22,4 @@ You can customize the appearance of the palettes using the __ItemsPanel__ proper
 	  </ItemsPanelTemplate>
 	 </telerik:RadColorPaletteView.ItemsPanel>
 	</telerik:RadColorPaletteView>
-	{{endregion}}
-
-
+{{endregion}}

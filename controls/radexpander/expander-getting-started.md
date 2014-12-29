@@ -10,33 +10,29 @@ position: 2
 
 # Getting Started
 
-
-
 ## Declaring a RadExpander
 
 The __RadExpander__ is a __HeaderedContentControl__ and we can initialize both its __Header__ and __Content__ properties.
-                {% if site.site_name == 'Silverlight' %}
+{% if site.site_name == 'Silverlight' %}
+>In order to use __RadExpander__ in your projects you need to add reference to the following assemblies:
+>	- __Telerik.Windows.Controls__
+>	- __Telerik.Windows.Controls.Navigation__ 
 
->In order to use __RadExpander__ in your projects you need to add reference to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Navigation__ <br/>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-                            
+>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).  
+{% endif %}
+{% if site.site_name == 'WPF' %}
+>In order to use __RadExpander__ in your projects you need to add reference to the following assemblies:
+>	- __Telerik.Windows.Controls__
+>	- __Telerik.Windows.Controls.Navigation__
+>	- __Telerik.Windows.Data__
 
-#### __XAML__
-    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-                        
-
-{% endif %}{% if site.site_name == 'WPF' %}
-
->In order to use __RadExpander__ in your projects you need to add reference to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Navigation__<br/>* __Telerik.Windows.Data__<br/> You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
-                            
-
-#### __XAML__
-    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-                        
-
+>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
 {% endif %}
 
 #### __XAML__
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
+#### __XAML__
 {{region expander-getting-started-0}}
 	<telerik:RadExpander Header="My Expander">
 	    <ListBox>
@@ -47,17 +43,15 @@ The __RadExpander__ is a __HeaderedContentControl__ and we can initialize both i
 	        <ListBoxItem Content="Option 5" />
 	    </ListBox>
 	</telerik:RadExpander>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadExpander_GettingStarted.png)
 
 ## Declaring more complex Header and Content
 
-If the information in the __Header__ and/or the __Content__ is more complex then we can rely on the XML Element initializing technique. Below is the sample xaml-code:
-                
+If the information in the __Header__ and/or the __Content__ is more complex then we can rely on the XML Element initializing technique. Below is the sample xaml-code:                
 
 #### __XAML__
-
 {{region expander-getting-started-1}}
     <telerik:RadExpander x:Name="radExpander"
                          VerticalContentAlignment="Top"
@@ -214,16 +208,12 @@ If the information in the __Header__ and/or the __Content__ is more complex then
             </Grid>
         </telerik:RadExpander.Content>
     </telerik:RadExpander>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadExpander_GettingStarted_Demo.png)
 
 # See Also
-
  * [Expand Direction]({%slug radexpander-features-expand_direction%})
-
  * [Alignment]({%slug radexpander-features-alignment%})
-
  * [Expander Animation]({%slug radexpander-howto-animation%})
-
  * [How To Change the Action Trigering an Expand]({%slug radexpander-howto-change-expand-action%})

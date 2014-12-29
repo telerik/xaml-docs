@@ -10,16 +10,11 @@ position: 2
 
 # Alignment
 
-
-
 You can control the alignment of the __RadExpander__ control through the __HorizontalAlignment__ and __VerticalAlignment__ properties. Moreover, if you need to further customize the __RadExpander__'s __Content__ alignment you can take advantage of the __HorizontalContentAlignment__ and __VerticalContentAlignment__ properties. And if you want to control the alignment of the __RadExpander__'s __Header__, you can use the __HorizontalHeaderAlignment__ and __VerticalHeaderAlignment__ properties. By default all these properties are set to __Stretch__ so that the __RadExpander__ control is always stretch thus taking up all available space.
 
 >The alignment properties depend on the __ExpandDirection__ of the control. Therefore before setting the alignment properties, you should carefully plan how you need to render the control depending on the available area as well as the __ExpandDirection__ of the control. 
 
-
-
 #### __XAML__
-
 {{region radexpander-features-alignment_0}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.RowDefinitions>
@@ -53,9 +48,7 @@ You can control the alignment of the __RadExpander__ control through the __Horiz
 	        </Border>
 	    </telerik:RadExpander>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadExpander_Features_Alignment_default.png)
 
@@ -64,7 +57,6 @@ You can control the alignment of the __RadExpander__ control through the __Horiz
 You can control the vertical and horizontal alignment of the control through the __HorizontalAlignment__ and __VerticalAlignment__ properties. By default both properties are set to __Stretch.__ However, if you want the control to take up only as much space as it needs, you can define the __VerticalAlignment__ and __HorizontalAlignment__ properties accordingly to the __ExpandDirection__ of the control:
 
 #### __XAML__
-
 {{region radexpander-features-alignment_1}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.RowDefinitions>
@@ -98,9 +90,7 @@ You can control the vertical and horizontal alignment of the control through the
 	        </Border>
 	    </telerik:RadExpander>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadExpander_Features_Alignment_shrink.png)
 
@@ -111,7 +101,6 @@ You can control the vertical and horizontal alignment of the control through the
 You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ properties to control how the __RadExpander's__ __Content__ will be rendered. For example you can use the properties to set the __RadExpander's__ __Content__ to take up only as much space as it needs:
 
 #### __XAML__
-
 {{region radexpander-features-alignment_2}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.RowDefinitions>
@@ -165,9 +154,7 @@ You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ 
 	        </Border>
 	    </telerik:RadExpander>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadExpander_Features_Alignment_shrink.png)
 
@@ -186,7 +173,6 @@ If the __RadExpander's__ __ExpandDirection__ is __Up__ or __Down__, you can cont
 * __Stretch__ - the __RadExpander.Header's__ content will be stretched throughout the header part of the __RadExpander ControlTemplate__
 
 #### __XAML__
-
 {{region radexpander-features-alignment_3}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.ColumnDefinitions>
@@ -216,9 +202,7 @@ If the __RadExpander's__ __ExpandDirection__ is __Up__ or __Down__, you can cont
 	        </Border>
 	    </telerik:RadExpander>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadExpander_Features_Alignment_HorizontalHeaderAlignment.png)
 
@@ -233,7 +217,6 @@ If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can c
 * __Stretch__ - the __RadExpander.Header's__ content will be stretched throughout the header part of the __RadExpander ControlTemplate__
 
 #### __XAML__
-
 {{region radexpander-features-alignment_4}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.ColumnDefinitions>
@@ -261,8 +244,6 @@ If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can c
 	        </Border>
 	    </telerik:RadExpander>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadExpander_Features_Alignment_VerticalHeader.png)

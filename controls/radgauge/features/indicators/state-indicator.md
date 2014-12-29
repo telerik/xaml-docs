@@ -10,20 +10,17 @@ position: 4
 
 # State Indicator
 
-
-
 The __State Indicator__ is a shape with arbitrary size located anywhere in the scale. It gets colored in the same color as the range to which the indicator's value belong. Via the __ScaleObject.RelativeWidth__ and __ScaleObject.RelativeHeight__ attachable properties of the indicator you can specify its size. To position it, use the __ScaleObject.RelativeX__ and __ScaleObject.RelativeY__ attachable properties.
 
->these properties are relative to the cell size of the gauge. To learn more about it read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic. 
+>These properties are relative to the cell size of the gauge. To learn more about it read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic. 
 
->tipTo learn more about the common features for the RadGauge's indicators, read the [Basics]({%slug radgauge-features-indicators-bar-indicators-basics%}) topic.
+>tip To learn more about the common features for the RadGauge's indicators, read the [Basics]({%slug radgauge-features-indicators-bar-indicators-basics%}) topic.
 
 As the ranges can be described also as the states a RadGauge can go through, the StateIndicator is built to work with them. It gets colored with the range to which the current value belongs. 
 
 As the indicator should display the state of the current value, you can bind it to one of the other indicator types. Here is an example where a __Marker__ is used to point the value and a __StateIndicator__ is used to display its state.
 
 #### __XAML__
-
 {{region radgauge-features-indicators-state-indicator_0}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8" Width="100" Height="250">
 	    <telerik:VerticalLinearScale Min="0" Max="30"
@@ -63,10 +60,8 @@ As the indicator should display the state of the current value, you can bind it 
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadGauge_Features_BarIndicators_StateIndicator_01.png)

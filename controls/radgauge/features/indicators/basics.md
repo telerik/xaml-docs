@@ -10,8 +10,6 @@ position: 0
 
 # Basics
 
-
-
 The indicator controls, except the __NumericIndicator__, derive from the __IndicatorBase__ class. Because of that they provide some common functionality. This topic will focus on the common features between the available indicators.
 
 >For the examples in this article a __Marker__ indicator will be used, but the examples can be applied to any other indicator that derives from the __IndicatorBase__ class, as well.
@@ -32,14 +30,13 @@ It will explain the following:
 
 * [Value's Source](#values-source)
 
->tipTo learn more about the __Numeric Indicator__, read [this topic]({%slug radgauge-features-indicators-numeric-indicator%}).
+>tip To learn more about the __Numeric Indicator__, read [this topic]({%slug radgauge-features-indicators-numeric-indicator%}).
 
 ## Animating the Indicator
 
 When the value of the indicator gets changed, it will get positioned on the appropriate place on the scale. By default the indicator will directly go to the respective position, but you are able to make this transition smoother by animating it. To do it, just enable the indicators animation by setting the __IsAnimated__ property to __True__ and set the __Duration__ property to the desired value. Here is an example.
 
 #### __XAML__
-
 {{region radgauge-features-indicators-basics_0}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale  Min="1" Max="12"
@@ -50,16 +47,13 @@ When the value of the indicator gets changed, it will get positioned on the appr
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Refreshing the Indicator
 
 In a scenario where the gauge is used to visualize the changing of a particular value, the indicator should get updated whenever the value changes. This can be done by simply setting the __Value__ property of the indicator to the new value. However in some scenarios you may have multiple value changes in a very short period of time. This would make the indicator go through several values very fast and make the gauge harder for observing. In this case you can use the __Refresh__ feature of the indicator. It consists in updating the indicator position only at a specific interval of time and displaying a value calculated on the basis of all the values that have occurred in the interval.
 
-To implement this feature you have to use the __RefreshRate__ and __RefreshMode__ properties. The first one represents the interval of time between two updates. It is of type TimeSpan. [Here](http://msdn.microsoft.com/en-us/library/se73z7b9.aspx) you can read about the format, that TimeSpan.Parse() uses. The second one specifies the way the final value gets calculated. You can choose between the following:
-        
+To implement this feature you have to use the __RefreshRate__ and __RefreshMode__ properties. The first one represents the interval of time between two updates. It is of type TimeSpan. [Here](http://msdn.microsoft.com/en-us/library/se73z7b9.aspx) you can read about the format, that TimeSpan.Parse() uses. The second one specifies the way the final value gets calculated. You can choose between the following:        
 
 * __None__ __(default)__ - disables refreshing.
 
@@ -69,10 +63,9 @@ To implement this feature you have to use the __RefreshRate__ and __RefreshMode_
 
 * __Min__ - display the smallest of the values, that occured in the interval.
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
-
 {{region radgauge-features-indicators-basics_1}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="1" Max="12">
@@ -83,9 +76,7 @@ Here is an example.
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Snapping the Indicator
 
@@ -101,10 +92,9 @@ In order to enable and configure the __Snapping__ you have to use the __SnapType
 
 * __ToInterval__ - specifies that the indicator would snap to values of the scale, that belong to a specific interval. For this purpose you have to use the __SnapInterval__ property too. For example, an initial value of the indicator of __1__ and an interval of __2__ will make the indicator snap only to the values __1, 3, 5, 7__, etc.
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
-
 {{region radgauge-features-indicators-basics_2}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="20"
@@ -116,20 +106,17 @@ Here is an example.
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Indicator's Size
 
 To manipulate the indicator's size, simply use the __RelativeHeight__ and __RelativeWidth__ attached properties. As the names suggest, their value are relative to the cell size of the scale. The cell size of the scale is determined by the size of the container it is place in. For the linear scales it is equal to the height of the container and by the radial scales to the radius of the container.
 
->tipTo learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
+>tip To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
-
 {{region radgauge-features-indicators-basics_3}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="20"
@@ -140,11 +127,9 @@ Here is an example.
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadGauge_Features_Indicators_Basics_01.png)
 
@@ -156,12 +141,11 @@ The indicators have a __Value__ property, which specifies the value from the sca
 
 If you use ranges in your scale, you can make the indicator consitent with their color. This way, when the indicator enters into a specific range, it will take the color defined for it by the range. For this purpose you have to set the __UseRangeColor__ property of the indicator to __True__ and the __IndicatorBackground__ property of the range to the desired indicator color.
 
->tipTo learn more about ranges, read the [Ranges]({%slug radgauge-features-ranges-gauge-range%}) topic.
+>tip To learn more about ranges, read the [Ranges]({%slug radgauge-features-ranges-gauge-range%}) topic.
 
 Here is an example.
 
 #### __XAML__
-
 {{region radgauge-features-indicators-basics_4}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="32"
@@ -189,9 +173,7 @@ Here is an example.
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the result.
 

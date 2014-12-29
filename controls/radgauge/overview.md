@@ -10,10 +10,6 @@ position: 0
 
 # Overview
 
-
-
-## 
-
 {% if site.site_name == 'Silverlight' %}![Rad Gauge overview 01](images/RadGauge_overview_01.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Gauge overview 01 wpf](images/RadGauge_overview_01_wpf.png){% endif %}
 
 Thank you for choosing __RadGauge__!

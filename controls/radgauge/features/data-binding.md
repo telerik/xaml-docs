@@ -10,13 +10,9 @@ position: 9
 
 # Data Binding
 
+The __RadGauge__ control allows you to bind it to a set of values, which to be displayed consecutive one after another. This feature is implemented via the indicator of the scale and its __ValueSource__ property. It is of type __IEnumerable__ and accepts the set of values you want to display.      
 
-
-The __RadGauge__ control allows you to bind it to a set of values, which to be displayed consecutive one after another. This feature is implemented via the indicator of the scale and its __ValueSource__ property. It is of type __IEnumerable__ and accepts the set of values you want to display.
-      
-
-Additionally the indicators expose an API which allows you to control the display of the values in the __ValueSource__ collection. Via this API you can do the following:
-      
+Additionally the indicators expose an API which allows you to control the display of the values in the __ValueSource__ collection. Via this API you can do the following:      
 
 * [Start Playback](#start-playback)
 
@@ -26,11 +22,9 @@ Additionally the indicators expose an API which allows you to control the displa
 
 * [Move Previous](#move-previous)
 
-Here is the __RadGauge__ instance and the sample value collection, which will be used throughout the examples in this topic:
-      
+Here is the __RadGauge__ instance and the sample value collection, which will be used throughout the examples in this topic:      
 
 #### __XAML__
-
 {{region radgauge-features-data-binding_0}}
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0"
@@ -42,12 +36,9 @@ Here is the __RadGauge__ instance and the sample value collection, which will be
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radgauge-features-data-binding_1}}
 	public DataBindingSample()
 	{
@@ -58,73 +49,55 @@ Here is the __RadGauge__ instance and the sample value collection, which will be
 	    };
 	    this.radialBar.ValueSource = values;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radgauge-features-data-binding_2}}
 	Public Sub New()
 	 InitializeComponent()
 	 Dim values As New ObservableCollection(Of Double)() From {10, 15, 25, 17, 40, 50, 60, 70, 25, 15, 5, 10, 12, 18, 29, 37, 92}
 	 Me.radialBar.ValueSource = values
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Start Playback
 
-If you want to automatically display the values one after another with some predefined interval between them,
-          you can use the __StartPlayback()__ method of the indicator.
-          Here is an example.
-        
+If you want to automatically display the values one after another with some predefined interval between them, you can use the __StartPlayback()__ method of the indicator.         
 
->Whenever called, this method will start displaying the values form the beginning of the collection.
-            In that case it will resume.
-          
+>Whenever called, this method will start displaying the values form the beginning of the collection. In that case it will resume.
+   
+Here is an example:   
 
 #### __C#__
-
 {{region radgauge-features-data-binding_3}}
 	private void StartPlayback()
 	{
 	    this.radialBar.StartPlayback();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radgauge-features-data-binding_4}}
 	Private Sub StartPlayback()
 	 Me.radialBar.StartPlayback()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Stop Playback
 
-To stop the automatic playback of the values you have simply to call the __StopPlayback()__ method. Here is an example.
-        
+To stop the automatic playback of the values you have simply to call the __StopPlayback()__ method.         
 
->Starting and stopping and than starting again the playback won't make it to contiunue from tha value it has stopped on.
-            Instead, it will start from the beginning again.
-          
+>Starting and stopping and than starting again the playback won't make it to contiunue from tha value it has stopped on. Instead, it will start from the beginning again.
+			
+Here is an example:          
 
 #### __C#__
-
 {{region radgauge-features-data-binding_5}}
 	private void StopPlayback()
 	{
 	    this.radialBar.StopPlayback();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -132,72 +105,53 @@ To stop the automatic playback of the values you have simply to call the __StopP
 	Private Sub StopPlayback()
 	 Me.radialBar.StopPlayback()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Move Next
 
-The indicator's API also allows you to manually navigate through the values collection. On of the methods exposed is the __MoveNext()__ one. It changes the displayed value to the next value in the collection, if present. Here is an example.
-        
+The indicator's API also allows you to manually navigate through the values collection. On of the methods exposed is the __MoveNext()__ one. It changes the displayed value to the next value in the collection, if present. Here is an example.        
 
 #### __C#__
-
 {{region radgauge-features-data-binding_7}}
 	private void MoveNext()
 	{
 	    this.radialBar.MoveNext();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radgauge-features-data-binding_8}}
 	Private Sub MoveNext()
 	 Me.radialBar.MoveNext()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Move Previous
 
-The __MovePrevious()__ method is the other one used for manual naviagtion through the values collection. It displays the value previous to the current one. Here is an example.
-        
+The __MovePrevious()__ method is the other one used for manual navigation through the values collection. It displays the value previous to the current one. Here is an example.        
 
 #### __C#__
-
 {{region radgauge-features-data-binding_9}}
 	private void MovePrevious()
 	{
 	    this.radialBar.MovePrevious();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radgauge-features-data-binding_10}}
 	Private Sub MovePrevious()
 	 Me.radialBar.MovePrevious()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Specifying the duration for each value
 
-If you want every one of the values to be displayed a specific period of time you can use a colleciton PlaybackData objects as the ValueSource for the indicator. Every PlaybackData can specify own interval between values using __Duration__ property.
-        
+If you want every one of the values to be displayed a specific period of time you can use a colleciton PlaybackData objects as the ValueSource for the indicator. Every PlaybackData can specify own interval between values using __Duration__ property.        
 
-Here is an example (a slight modification of the previous one):
-        
+Here is an example (a slight modification of the previous one):        
 
 #### __C#__
-
 {{region radgauge-features-data-binding_11}}
 	public DataBindingSample()
 	{
@@ -224,12 +178,9 @@ Here is an example (a slight modification of the previous one):
 	    };
 	    this.radialBar.ValueSource = values;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radgauge-features-data-binding_12}}
 	Public Sub New()
 		InitializeComponent()
@@ -305,6 +256,4 @@ Here is an example (a slight modification of the previous one):
 		}
 		Me.radialBar.ValueSource = values
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}

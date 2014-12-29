@@ -10,10 +10,6 @@ position: 1
 
 # Numeric Indicator
 
-
-
-## 
-
 The Numeric Indicator is an indicator that displays its Value property as a digital indicator device.character templating.
 
 The appearance of characters in the numeric indicator could be specified with a set of different NumericIndicator.Positions like "HexagonalNumberPosition", "SevenSegsNumberPosition", "GraphicNumberPosition" and etc.
@@ -21,7 +17,6 @@ The appearance of characters in the numeric indicator could be specified with a 
 To add a numeric indicator to the scale you have to include NumericIndicator element to the list of the scale indicators:
 
 #### __XAML__
-
 {{region numeric-scale-numeric-indicator_0}}
 	<telerik:RadVerticalLinearGauge Width="150" Height="50" telerik:StyleManager.Theme="Windows8">
 	    <telerik:NumericScale Min="0">
@@ -45,9 +40,7 @@ To add a numeric indicator to the scale you have to include NumericIndicator ele
 	        </telerik:NumericScale.Indicators>
 	    </telerik:NumericScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 Every digital cell in the indicator is defined by a corresponding NumberPosition element. The topmost element in the list defines the rightmost digital cell.
 
@@ -57,20 +50,20 @@ The Numeric indicator supports the following features:
 
 1. Layout 
 
-1. The 'telerik:ScaleObject.RelativeX' property specifies the position of Numeric Indicator left side relative to a scale width.
+2. The 'telerik:ScaleObject.RelativeX' property specifies the position of Numeric Indicator left side relative to a scale width.
 
-1. The 'telerik:ScaleObject.RelativeY' property specifies the position of Numeric Indicator top side relative to a scale height.
+3. The 'telerik:ScaleObject.RelativeY' property specifies the position of Numeric Indicator top side relative to a scale height.
 
-1. The 'telerik:ScaleObject.RelativeHeight' property specifies the height of the Numeric Indicator relative to a scale height.
+4. The 'telerik:ScaleObject.RelativeHeight' property specifies the height of the Numeric Indicator relative to a scale height.
 
-1. The 'telerik:ScaleObject.RelativeWidth' property specifies the width of the Numeric Indicator relative to a scale height.
+5. The 'telerik:ScaleObject.RelativeWidth' property specifies the width of the Numeric Indicator relative to a scale height.
 
-1. Appearance 
+6. Appearance 
 
-1. The 'Format' property specifies the position of the decimal point.
+7. The 'Format' property specifies the position of the decimal point.
 
-1. The standard Telerik provided Numeric Indicator templates allow the use of the BorderBrush and the BorderThickness properties to draw a border.
+8. The standard Telerik provided Numeric Indicator templates allow the use of the BorderBrush and the BorderThickness properties to draw a border.
 
-1. Telerik provided styles allow using the most popular types of Numeric Indicators.
+9. Telerik provided styles allow using the most popular types of Numeric Indicators.
 
-1. The refresh rate allows calculating the displayed value using values which are assigned during the specified interval according to the specified method.
+10. The refresh rate allows calculating the displayed value using values which are assigned during the specified interval according to the specified method.

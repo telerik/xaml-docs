@@ -10,14 +10,9 @@ position: 3
 
 # Marker
 
-
-
-## 
-
 The Marker is a scale indicator that points to a value along a scale. It is a small shape that can be located around the scale bar. To add marker to the scale you have to include Marker element to the list of the scale indicators:
 
 #### __XAML__
-
 {{region radial-scale-marker_0}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale>
@@ -26,40 +21,37 @@ The Marker is a scale indicator that points to a value along a scale. It is a sm
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 The Marker supports the following features:
 
 1. Layout 
 
+2. You can set location of the Marker relative to a scale bar using a telerik:ScaleObject.Location property.
+	For example, "Outside" 
 
-1. You can set location of the Marker relative to a scale bar using a telerik:ScaleObject.Location property.
- For example, "Outside" 
+	![](images/RadialMarkerLocationOutside.png)
 
-![](images/RadialMarkerLocationOutside.png)
+	"Inside" 
 
-"Inside" 
+	![](images/RadialMarkerLocationInside.png)
 
-![](images/RadialMarkerLocationInside.png)
+	or "OverCenter" 
 
- or "OverCenter" 
+	![](images/RadialMarkerLocationOverCenter.png)
 
-![](images/RadialMarkerLocationOverCenter.png)
+3. telerik:ScaleObject.Offset relative to a scale bar.
 
-1. telerik:ScaleObject.Offset relative to a scale bar.
+4. telerik:ScaleObject.RelativeHeight that specifies a height of the Marker given as part of the container size.
 
-1. telerik:ScaleObject.RelativeHeight that specifies a height of the Marker given as part of the container size.
+5. telerik:ScaleObject.RelativeWidth that specifies a width of the Marker given as part of the container size.
 
-1. telerik:ScaleObject.RelativeWidth that specifies a width of the Marker given as part of the container size.
+6. The standard Telerik provided Marker templates allow to use the BorderBrush and the BorderThickness properties to drawing a border. 
 
-1. The standard Telerik provided Marker templates allow to use the BorderBrush and the BorderThickness properties to drawing a border. 
+	>The left of BorderThickness property is applied for the border around a Marker. Styles provided by Telerik allow using of the most popular form of Markers. You can change template of the Marker to setup desirable appearance.
 
->The left of BorderThickness property is applied for the border around a Marker. Styles provided by Telerik allow using of the most popular form of Markers. You can change template of the Marker to setup desirable appearance.
+7. The Marker can be snapped along to scale ticks or to specified interval.
 
-1. The Marker can be snapped along to scale ticks or to specified interval.
+8. Movement animation allows the Marker to smooth its movement when it shows next value.
 
-1. Movement animation allows the Marker to smooth its movement when it shows next value.
-
-1. The refresh rate allows calculating the displayed value using values which are assigned during the specified interval according to the specified method.
+9. The refresh rate allows calculating the displayed value using values which are assigned during the specified interval according to the specified method.

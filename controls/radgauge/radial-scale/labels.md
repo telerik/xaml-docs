@@ -10,16 +10,11 @@ position: 2
 
 # Labels
 
-
-
-## 
-
 Tick labels are shown for major tick marks. You can set label location around scale bar, font properties (like family, size and foreground), format of the label, or even change whole control template for label. 
 
 Here is an example:
 
 #### __XAML__
-
 {{region radial-scale-labels_0}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100"
@@ -29,38 +24,31 @@ Here is an example:
 	            LabelRotationMode="Automatic">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 You can control label rotation on radial scale using __LabelRotationMode__ property. It can have following values:
 
-__Automatic__
+* __Automatic__
 
-![](images/RadialScaleLabelRotationAutomatic.png)
+	![](images/RadialScaleLabelRotationAutomatic.png)
 
-__None__
+* __None__
 
-![](images/RadialScaleLabelRotationNone.png)
+	![](images/RadialScaleLabelRotationNone.png)
 
-__SurroundIn__
+* __SurroundIn__
 
-![](images/RadialScaleLabelRotationSurroundIn.png)
+	![](images/RadialScaleLabelRotationSurroundIn.png)
 
-__SurroundOut__
+* __SurroundOut__
 
-![](images/RadialScaleLabelRotationSurroundOut.png)
-
-
-
-
+	![](images/RadialScaleLabelRotationSurroundOut.png)
 
 You can use the GaugeRange element on a radial scale to re-color labels automatically. The RadialScale has the boolean LabelUseRangeColor property. If it is True, then each label within the range uses a color according to the specified range's LabelForeground property:
 
 ![](images/RadialScaleLabelRangeColor.png)
 
 #### __XAML__
-
 {{region radial-scale-labels_1}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100"
@@ -79,8 +67,4 @@ You can use the GaugeRange element on a radial scale to re-color labels automati
 	        </telerik:RadialScale.Ranges>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
-
-
+{{endregion}}

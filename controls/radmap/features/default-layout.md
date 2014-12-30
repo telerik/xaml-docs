@@ -10,10 +10,6 @@ position: 8
 
 # Default Layout
 
-
-
-## 
-
 The default layout of the __RadMap__ is represented by the UI controls that appear in it. If you want to remove one of them you can easily set the respective property of the __RadMap__:
 
 * __Navigation__ control - __NavigationVisibility__
@@ -29,33 +25,22 @@ The default layout of the __RadMap__ is represented by the UI controls that appe
 In case you want to hide all of the controls and create your own custom layout, you don't have to set each of these properties, you can simply set the __UseDefaultLayout__ property of the __RadMap__ to __False__.
 
 #### __XAML__
-
 {{region radmap-features-default-layout_0}}
 	<telerik:RadMap x:Name="radMap"
 	                UseDefaultLayout="False">
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 To learn how to use each of the __RadMap__ controls independent and outside of it, read the following topics:
 
 * [Navigation]({%slug radmap-features-navigation%})
-
 * [Distance and Scale]({%slug radmap-features-dsitance-and-scale%})
-
 * [Zoom Modes]({%slug radmap-features-zoom-modes%})
-
 * [Mouse Location]({%slug radmap-features-mouse-location%})
 
 # See Also
-
  * [Navigation]({%slug radmap-features-navigation%})
-
  * [Click Modes]({%slug radmap-features-click-modes%})
-
  * [Zoom Modes]({%slug radmap-features-zoom-modes%})
-
  * [Distance and Scale]({%slug radmap-features-dsitance-and-scale%})
-
  * [Mouse Location]({%slug radmap-features-mouse-location%})

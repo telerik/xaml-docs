@@ -26,8 +26,7 @@ The __RadMap__ control allows you to display rich geographical information from 
 >	- __Telerik.Windows.Controls.DataVisualization__  
 >You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).            
 
-After adding references to the aforementioned dlls, you can declare a new __RadMap__ as any normal Silverlight/WPF control.
-        
+After adding references to the aforementioned dlls, you can declare a new __RadMap__ as any normal Silverlight/WPF control.        
 
 #### __XAML__
 {{region radmap-getting-started_1}}

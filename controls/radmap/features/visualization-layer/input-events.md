@@ -10,29 +10,17 @@ position: 4
 
 # Attaching input events to the map shapes
 
+The visualization engine based on the VisualizationLayer class separates geographical data and its visualization. The map shape data classes aren’t dependency objects. It means that you can’t attach input events to these classes directly. Instead you can attach events to the map shape visualization. It allows assigning of any input events supported by ContentPresenter to the map shape visual presentation.        
 
+The VisualizationLayer class provides 2 events:        
 
+1. __MapShapeVisualizationCreated__ – occurs when map shape visualization object is created. Can be used to attach event handlers.            
 
+1. __MapShapeVisualizationRemoved__ – occurs when map shape visualization object is removed. Can be used to detach event handlers.            
 
-## 
-
-The visualization engine based on the VisualizationLayer class separates geographical data and its visualization. The map shape data classes aren’t dependency objects. It means that you can’t attach input events to these classes directly. Instead you can attach events to the map shape visualization. It allows assigning of any input events supported by ContentPresenter to the map shape visual presentation.
-        
-
-The VisualizationLayer class provides 2 events:
-        
-
-1. __MapShapeVisualizationCreated__ – occurs when map shape visualization object is created. Can be used to attach event handlers.
-            
-
-1. __MapShapeVisualizationRemoved__ – occurs when map shape visualization object is removed. Can be used to detach event handlers.
-            
-
-Here it is an example which attaches MouseEnter and MouseLeave events to the map shape visualization object:
-        
+Here it is an example which attaches MouseEnter and MouseLeave events to the map shape visualization object:        
 
 #### __XAML__
-
 {{region radmap_visualization_layer_input_events_0}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -61,12 +49,9 @@ Here it is an example which attaches MouseEnter and MouseLeave events to the map
 			</telerik:RectangleData>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap_visualization_layer_input_events_0}}
 	private void MapShapeVisualizationCreated(object sender, MapShapeOperationEventArgs e)
 	{
@@ -109,9 +94,7 @@ Here it is an example which attaches MouseEnter and MouseLeave events to the map
 			data.UseRegularFill();
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -149,4 +132,4 @@ Here it is an example which attaches MouseEnter and MouseLeave events to the map
 			data.UseRegularFill()
 		End If
 	End Sub
-	{{endregion}}
+{{endregion}}

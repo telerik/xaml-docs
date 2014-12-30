@@ -28,7 +28,7 @@ To insert a pin point on your map you have to add a __MapPinPoint__ object to yo
 
 >tip To learn more about the __Information Layer__ read [here]({%slug radmap-features-information-layer%}).          
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
 {{region radmap-features-information-layer-pin-points_0}}
@@ -84,7 +84,7 @@ With these values defined, the __MapPinPoint__ will be placed above the location
 
 By default the __MapPinPoint__ exposes two properties that allow you to set its content. The __Text__ property allows you to specify a string for the __MapPinPoint__ and the __ImageSource__ allows you to specify an image to display.       
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
 {{region radmap-features-information-layer-pin-points_3}}
@@ -104,7 +104,7 @@ Here is an example.
 	</telerik:RadMap>
 {{endregion}}
 
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Features_PinPoints_01.png)
 
@@ -120,7 +120,7 @@ As you can see in the previous section the __MapPinPoint__ doesn't look very goo
 
 * __BorderThickness__
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
 {{region radmap-features-information-layer-pin-points_4}}

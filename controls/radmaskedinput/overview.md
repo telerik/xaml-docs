@@ -10,19 +10,14 @@ position: 0
 
 # Overview
 
+{% if site.site_name == 'Silverlight' %}![maskedinput sl icon](images/maskedinput_sl_icon.png){% endif %}
+{% if site.site_name == 'WPF' %}![maskedinput wpf icon](images/maskedinput_wpf_icon.png){% endif %}
 
-
-{% if site.site_name == 'Silverlight' %}![maskedinput sl icon](images/maskedinput_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![maskedinput wpf icon](images/maskedinput_wpf_icon.png){% endif %}
-
-## 
-
-__RadMaskedInput__ controls allow controlled data input in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} applications. They enhance the functionality of a TextBox by adding input validation and masks, such as date, IP Address, SSN, phone number, digits, currency and decimals.
-				
+__RadMaskedInput__ controls allow controlled data input in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} applications. They enhance the functionality of a TextBox by adding input validation and masks, such as date, IP Address, SSN, phone number, digits, currency and decimals.				
 
 ![](images/radmaskedinput_overview.png)
 
-This is a list with short descriptions of the top-of-the-line features of Telerik's __RadMaskedInput__ controls:
-				
+This is a list with short descriptions of the top-of-the-line features of Telerik's __RadMaskedInput__ controls:				
 
 * __Validation__ - Telerik __RadMaskedInput__ controls use a mask to distinguish between proper and improper user input.  [Read more ]({%slug radmaskedinput-features-validation%})
 
@@ -39,16 +34,10 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 * __Globalization Support__ - full globalization support is provided out-of-the-box through the __Culture__ property of the __RadMaskedInput__ controls by Telerik. [Read more]({%slug radmaskedinput-features-globalization%})
 
 * __Undo/Redo Support__ - all __RadMaskedInput__ controls support Undo/Redo operations. You can simply press the Ctrl+Z / Ctrl+Y key combination to take advantage of this feature
-					
 
 # See Also
-
  * [GettingStarted]({%slug radmaskedinput-getting-started%})
-
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})
-
  * [MaskedCurrencyInput]({%slug radmaskedinput-features-controls-currency%})
-
  * [MaskedTextInput]({%slug radmaskedinput-features-controls-text%})
-
  * [MaskedDateTimeInput]({%slug radmaskedinput-features-controls-datetime%})

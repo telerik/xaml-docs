@@ -10,20 +10,11 @@ position: 4
 
 # ScrollBar Functionality
 
-
-
 In this article you can find how to add scroll bar functionality to the control.
-      
 
-## 
-
-By default the RadLegend uses a StackPanel with Vertical orientation to lay out the legend items.
-          Sometimes it is necessary to show many items in the legend and when there is not enough space some items will not be visible.
-          One option to avoid this is to use a ScrollViewer to wrap the RadLegend in:
-        
+By default the RadLegend uses a StackPanel with Vertical orientation to lay out the legend items. Sometimes it is necessary to show many items in the legend and when there is not enough space some items will not be visible. One option to avoid this is to use a ScrollViewer to wrap the RadLegend in:        
 
 #### __XAML__
-
 {{region radlegend-scrollbar_0}}
 	<ScrollViewer VerticalScrollBarVisibility="Auto" Width="130" Height="350">
 	    <telerik:RadLegend>
@@ -48,15 +39,12 @@ By default the RadLegend uses a StackPanel with Vertical orientation to lay out 
 	        </telerik:RadLegend.Items>
 	    </telerik:RadLegend>
 	</ScrollViewer>
-	{{endregion}}
+{{endregion}}
 
+Here is the end result:        
 
+ScrollViewer height is 350  
+![radlegend-scrollbar-0-H 350](images/radlegend-scrollbar-0-H350.png)
 
-Here is the end result:
-        
-
-ScrollViewer height is 350![radlegend-scrollbar-0-H 350](images/radlegend-scrollbar-0-H350.png)
-
-ScrollViewer height is 100![radlegend-scrollbar-0-H 100](images/radlegend-scrollbar-0-H100.png)
-
-# See Also
+ScrollViewer height is 100  
+![radlegend-scrollbar-0-H 100](images/radlegend-scrollbar-0-H100.png)

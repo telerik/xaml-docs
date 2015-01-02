@@ -133,7 +133,7 @@ With the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if sit
 
 >In order to use DataAnnotations you should add a reference to the __System.ComponentModel.DataAnnotations__ assembly.		  
 
->importantNote that you have to invoke the __Validator.ValidateProperty__ method before setting a new value in the property setter.		  
+>important Note that you have to invoke the __Validator.ValidateProperty__ method before setting a new value in the property setter.		  
 
 Now we need to define several __RadMaskedInput__ controls in XAML for displaying the sample data:		
 

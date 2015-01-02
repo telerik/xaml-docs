@@ -10,9 +10,7 @@ position: 0
 
 # Changes
 
-
-
-This article describes the release history of the RadPanelBar control
+This article describes the release history of the RadPanelBar control.
 
 ## Q1 2013
 

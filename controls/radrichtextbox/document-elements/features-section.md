@@ -32,7 +32,7 @@ As explained in the previous section, the state of the document is essential for
 
 For example, you can build a RadDocument from scratch and add Sections to it in the following way:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_0}}
 	Section section = new Section();
@@ -43,7 +43,7 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting a section break:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_1}}
 	this.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage);
@@ -53,7 +53,7 @@ Splitting an already measured document into two sections at the current caret po
 
 You can also specify the position at which the section break should be inserted and its style:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_2}}
 	this.editor.Document.InsertSectionBreak(this.editor.Document.CaretPosition, this.editor.CurrentEditingStyle, SectionBreakType.NextPage);
@@ -82,7 +82,7 @@ Here is a list of these properties:
 * __PageMargin__: Represents the margin towards the edges of the page when in __Paged__ mode.
             
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-section_7}}
 	//When creating a Section programmatically
@@ -97,7 +97,7 @@ Here is a list of these properties:
 * __PageOrientation__: Specifies if the pages in the section should be in Portrait or Landscape mode.
             
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-section_8}}
 	//When creating a Section programmatically
@@ -112,7 +112,7 @@ Here is a list of these properties:
 * __PageSize__: Specifies the size of the pages in the section. The PapertTypeConverter class and the enum PaperTypes provide convenient API and predefined sizes out of the box.
             
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-section_9}}
 	//When creating a Section programmatically

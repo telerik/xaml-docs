@@ -100,7 +100,7 @@ To specify the text in the __Span__ you can use its __Text__ property.
 
 ## Customize a Span
 
-The __Span__exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
+The __Span__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
 
 * __BaselineAlignment__ - indicates whether the text is __Baseline__, __Subscript__ or __Superscript__.
 

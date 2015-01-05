@@ -50,7 +50,7 @@ The same applies for importing documents containing content controls such as Tex
 
 ### HtmlFormatProvider
 
-As HTML's concept of headers and footers is different, when exporting with __RadRichTextBox__headers and footers are ignored. When it comes to importing, the &lt;header&gt; and &lt;footer&gt; tags are included in the content of the imported document, but are not interpreted as __Header__ and __Footer__ of __RadDocument__.
+As HTML's concept of headers and footers is different, when exporting with __RadRichTextBox__ headers and footers are ignored. When it comes to importing, the &lt;header&gt; and &lt;footer&gt; tags are included in the content of the imported document, but are not interpreted as __Header__ and __Footer__ of __RadDocument__.
 
 Moreover, the __HtmlFormatProvider__ ignores the concept of __Paged__[layout mode]({%slug radrichtextbox-features-layout-modes%}) as a whole. Page breaks inserted in HTML for printing purposes are also ignored.
 

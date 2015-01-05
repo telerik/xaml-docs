@@ -41,7 +41,7 @@ The most common scenarios for the use of custom annotations is for associating s
 * Override the CreateNewElementInstance method and have it return an instance of your annotation range start/end in both classes. Override the required CopyContentFromOverride method as well. In most cases, it should be left empty.
             
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-custom-annotations_0}}
 	protected override DocumentElement CreateNewElementInstance()
@@ -58,7 +58,7 @@ The most common scenarios for the use of custom annotations is for associating s
 
 * Override the CreateRangeStartInstance in the RangeEnd class.
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-custom-annotations_1}}
 	protected override AnnotationRangeStart CreateRangeStartInstance()
@@ -81,7 +81,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 * __CopyPropertiesFromOverride__ - this method should be used when you have custom properties you would like to have copied. This should be done as follows:
             
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-custom-annotations_2}}
 	protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
@@ -103,7 +103,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 
 HyperlinkRangeStart:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-custom-annotations_3}}
 	public override AnnotationMarkerDeleteBehavior DeleteBehavior
@@ -124,7 +124,7 @@ HyperlinkRangeStart:
 
 HyperlinkRangeEnd:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-custom-annotations_4}}
 	public override AnnotationMarkerDeleteBehavior DeleteBehavior
@@ -148,7 +148,7 @@ HyperlinkRangeEnd:
 * You can also define custom properties in your annotation range start/end. If you want to be able to serialize them, you can just mark them with the XamlSerializable attribute:
             
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-custom-annotations_5}}
 	[XamlSerializable]

@@ -27,8 +27,8 @@ Direct 2D is hardware accelerated two dimensional graphics API, designed by Micr
 In order to use the Direct2DRenderOptions, you will need to reference the following binaries in your project:
 * __SharpDX.dll (version 2.5.0)__
 * __SharpDX.Direct2D1.dll (version 2.5.0)__
-* __SharpDX.Direct2D10.dll (version 2.5.0)__
-* __SharpDX.Direct2D9.dll (version 2.5.0)__
+* __SharpDX.Direct3D10.dll (version 2.5.0)__
+* __SharpDX.Direct3D9.dll (version 2.5.0)__
 * __SharpDX.DXGI.dll (version 2.5.0)__
 * __Telerik.Windows.Controls.Chart.Direct2D.dll__
 

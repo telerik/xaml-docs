@@ -11,8 +11,9 @@ position: 6
 # How to Change the Position of the Tab Strip of RadTabControl
 
 __RadTabControl__ expose few properties that can be used for controlling its [tab strip]({%slug radtabcontrol-visual-structure%}) position. 
-* __TabStripPlacement__ - this property allows you to define the exact position where the tab strip should appear using the __Telerik.Windows.Controls.Dock__ enumeration. The four possible choices are:
+* __TabStripPlacement__ - gets or sets the position where the tab strip should appear. The default value is Top. The property is an enumeration of type __Telerik.Windows.Controls.Dock__. The enumeration contains the following values:  
 	![](images/RadTabControl_HowTo_TabStripPosition_02.png)
+	
 	The property can be set in the following manners:
 	#### __XAML__
 	{{region radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-RadTabControl_0}}
@@ -38,23 +39,21 @@ __RadTabControl__ expose few properties that can be used for controlling its [ta
 		End Sub
 	{{endregion}}
 	
-	>The tab strip panel is wrapped in a __LayoutTransformControl__ which rotates it around the RadTabControl when the TabStripPlacement property is set. For example, when you set the __TabStripPlacement__ to __Left__ a __LayoutTransformation__ with angle of -90 is applied on the LayoutTransformControl and the tab strip is rotated with -90 degrees. 
-
-* __Align__	- this property controls to which side of the tab strip the items should be aligned. The property accepts a value of type Telerik.Windows.Controls.TabControl.TabStripAlign which is an enumeration and it contains the following values.
+	>The tab strip panel is wrapped in a __LayoutTransformControl__ which rotates it around the RadTabControl when the TabStripPlacement property is set. For example, when you set the __TabStripPlacement__ to __Left__ a __LayoutTransformation__ with angle of -90 is applied on the LayoutTransformControl and the tab strip is rotated with -90 degrees (counterclockwise). 
+	
+* __Align__	- gets or sets the alignment of the items in the tab strip. The property is an enumeration of type __Telerik.Windows.Controls.TabControl.TabStripAlign__. The enumeration contains the following values:
 	* __Justify__ - positions (and resize if necessary) the tabs to fill the available space.
-	* __Center__ - positions the tabs in the center of the tab strip
-	* __Left__ - positions the tabs in the left side of the tab strip
-		>If the TabStripPlacement is set to Left or Right, the left align positions the tabs at the bottom of the tab strip. 
-	* __Right__ - positions the tabs in the left side of the tab strip
-		>If the TabStripPlacement is set to Left or Right, the left align positions the tabs at the top of the tab strip. 
+	* __Center__ - positions the tabs in the center of the tab strip.
+	* __Left__ - positions the tabs in the left side of the tab strip. This is the default value.
+	* __Right__ - positions the tabs in the left side of the tab strip.  
+		
+	>If the TabStripPlacement is set to Left or Right, the left align positions the tabs at the top/bottom of the tab strip.	
 
-* __TabOrientation__ - this property (an enumeration of type __System.Windows.Controls.Orientation__) controls the orientation of the tab items. Its default value is Horizontal. Setting the property's value to Vertical will rotate the tabs content to 90 degrees. 
+* __TabOrientation__ - gets or sets the orientation of the tab items. The property is an enumeration of type __System.Windows.Controls.Orientation__. Setting the property's value to Vertical will rotate the tabs content to 90 degrees (clockwise). The orientation is set to __Horizontal__.
 	The following image demonstrates the TabOrientation set to Vertical without any other changes in the tab strip position applied:
 	
 	{% if site.site_name == 'Silverlight' %}![](images/RadTabControl_HowTo_TabStripPosition_01.png){% endif %}
-	{% if site.site_name == 'WPF' %}![](images/RadTabControl_HowTo_TabStripPosition_01-wpf.png){% endif %}	
-
->important Keep in mind that the final positioning result can vary based on the combination of the properties described above.
+	{% if site.site_name == 'WPF' %}![](images/RadTabControl_HowTo_TabStripPosition_01-wpf.png){% endif %}		
 
 # See Also
  * [How to Select Control in Expression Blend]({%slug radtabcontrol-how-to-select-control-in-expression-blend%})

@@ -45,7 +45,7 @@ __Key Features:__
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-* __Culture awareness__: RadCalendar is easily globalized. All properties are culture-aware and if not explicitly set, they would use the default thread culture for their values. You can easily change the text in the calendar's header, FirstDayOfWeek or ayMonthNamesFormat.          
+* __Culture awareness__: RadCalendar is easily globalized. All properties are culture-aware and if not explicitly set, they would use the default thread culture for their values. You can easily change the text in the calendar's header, FirstDayOfWeek or DayMonthNamesFormat.          
 
 * __Month and year views__: RadCalendar provides month and year views.          
 

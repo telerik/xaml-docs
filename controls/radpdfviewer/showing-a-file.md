@@ -19,8 +19,6 @@ This topic will discuss different ways of loading a document in __RadPdfViewer__
 
 * [Binding the Document Source](#binding-the-documentsource-of-radpdfviewer)
 
-* [Specifying a Loading Mode](#specifying-a-loading-mode)
-
 ## Showing a PDF file
 
 __RadPdfViewer__ uses a DocumentSource in order to be able to show files that are passed to it as streams, as well as URIs without any code behind.

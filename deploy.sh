@@ -19,6 +19,7 @@
 
 VERSION="1.0.`date +%s`";
 
+
 PAYLOAD="{ \"Folder\": \"//telerik.com/resources/AppDirector/Drops/XAML/WPF.Zip\", \"Version\": \"$VERSION\", \"Environment\": \"Test\", \"RepositoryName\": \"Local\", \"Workspace\": \"Documentation\", \"ClientId\": \"uri:platform.cp.builds\", \"ClientSecret\": \"3edd5acdb61db37f3ab2bd735b058911\", \"SkipRegisterPackage\": false, \"OverwritePackage\": false, \"SkipDateChange\": true, \"SkipDeployment\": false, \"DeploymentApiUrl\": \"http://deploy.telerik.com/api/deployment/v1\", \"RepositoryUrl\": \"http://deploy.telerik.com/api/repository/v1\", \"TokenEndpoint\": \"https://identity.telerik.com/v2/oauth/telerik/token\", \"PackageNameFormat\": \"package-{0}-{1}.zip\" }";
 
 echo "posting $PAYLOAD";

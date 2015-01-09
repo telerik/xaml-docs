@@ -11,26 +11,21 @@ position: 0
 # Localization
 
 
-
 The built-in localization mechanism in the platform allows you to localize __RadGridView__ control. 
 
 Here is a list of the supported languages:
-      
 
-* English
-        
-
-* German
-        
-
-* Spanish
-        
-
+* English            
+* German          
+* Spanish           
 * French
+* Italian              
+* Dutch             
+* Turkish
 
 ![Rad Grid View Localization 4](images/RadGridView_Localization_4.png)
 
->tip__To learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
+>tipTo learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
 
 >__In order to dynamically localize the GridView at runtime, you should recreate it.__
 

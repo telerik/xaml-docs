@@ -17,6 +17,20 @@ The built-in localization mechanism in Silverlight and WPF allows you to localiz
 
 There are two ways to implement the localization - using Resource files or a custom localization manager.
 
+## Supported Languages
+
+__RadImageEditor__ can be translated in one of the following supported languages using the framework’s localization mechanism:
+
+* English
+* German
+* Spanish
+* French
+* Italian
+* Dutch
+* Turkish
+
+More information on how to achieve this you can find in the [Localization Using Built-in Resources](http://docs.telerik.com/devtools/wpf/common-localization#localization-using-built-in-resources) article.
+
 ## Localization Using Resource Files
 
 You can base your localization on the standard resource files provided by the .NET framework. For that purpose you will have to create a separate .Resx file for each one of the languages that your application will support. Imagine that you want to translate your application into English, German and Dutch. In that regard, you will have to add three new resource files to your project:

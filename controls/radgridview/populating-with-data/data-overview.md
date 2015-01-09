@@ -40,14 +40,4 @@ The Telerik __RadGridView__ can be populated with data in any of the following w
 
 You can also learn how to [Configure the Data Bindings]({%slug gridview-configuring-the-databindings%}).
 
-# See Also
 
- * [Using in-memory Data]({%slug gridview-in-memory-date%})
-
- * [Loading Data from XML]({%slug gridview-loading-data-from-xml%})
-
- * [Loading Data from WCF Services]({%slug gridview-loading-data-from-wcf-services%})
-
- * [Loading Data from ADO.NET Services]({%slug gridview-loading-data-from-adonet-services%})
- 
- * [Loading Data from Web Services]({%slug gridview-loading-data-from-web-services%})

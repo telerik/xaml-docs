@@ -10,11 +10,8 @@ position: 0
 
 # Overview
 
-
-
-{% if site.site_name == 'Silverlight' %}![coloreditor-sl-icon](images/coloreditor-sl-icon.png){% endif %}{% if site.site_name == 'WPF' %}![coloreditor-wpf-icon](images/coloreditor-wpf-icon.png){% endif %}
-
-## 
+{% if site.site_name == 'Silverlight' %}![coloreditor-sl-icon](images/coloreditor-sl-icon.png){% endif %}
+{% if site.site_name == 'WPF' %}![coloreditor-wpf-icon](images/coloreditor-wpf-icon.png){% endif %}
 
 Thank you for choosing Telerik __RadColorEditor!__ 
 

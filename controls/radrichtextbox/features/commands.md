@@ -138,6 +138,8 @@ If you want to handle application commands on RadRichTextBox owner's level, you 
         };
 {{endregion}}
 
+#### __VB.NET__
+
 {{region radrichtextbox-features-commands_7}}
 	Me.radRichTextBox.PreviewEditorKeyDown += Function(sender, e) Do
 		If Keyboard.IsKeyDown(Key.LeftCtrl) AndAlso e.Key = Key.S Then

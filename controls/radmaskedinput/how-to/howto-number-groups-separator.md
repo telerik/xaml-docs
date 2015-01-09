@@ -10,14 +10,9 @@ position: 1
 
 # How to Remove the Thousands Separator
 
-
-
-## 
-
 By default the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls use a culture-aware thousands separator:
 
 #### __XAML__
-
 {{region radmaskedinput-howto-number-groups-separator_0}}
     <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
                                    HorizontalAlignment="Center"
@@ -29,16 +24,13 @@ By default the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls
                                    TextMode="PlainText"
                                    UpdateValueEvent="LostFocus"
                                    Value="12345" />
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/radmaskedinput_howto_thousands_separator.png)
 
 If you need to remove the thousands separator, you can set the __AutoFillNumberGroupSeparator__ property to __False__:
 
 #### __XAML__
-
 {{region radmaskedinput-howto-number-groups-separator_1}}
     <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
                                    HorizontalAlignment="Center"
@@ -51,6 +43,6 @@ If you need to remove the thousands separator, you can set the __AutoFillNumberG
                                    TextMode="PlainText"
                                    UpdateValueEvent="LostFocus"
                                    Value="12345" />
-	{{endregion}}
+{{endregion}}
 
 ![](images/radmaskedinput_howto_remove_thousands_separator.png)

@@ -640,4 +640,5 @@ PrintLayout</td></tr></table>
 # See Also
 
  * [Styles]({%slug radwordsprocessing-concepts-styles%})
- * [IStyleProperty<T> API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html)[IStylePropertyDefinition API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html)
+ * [IStyleProperty<T> API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html)
+ * [IStylePropertyDefinition API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html)

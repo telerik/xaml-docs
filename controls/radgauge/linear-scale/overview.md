@@ -10,8 +10,6 @@ position: 0
 
 # Linear Scale Overview
 
-
-
 LinearScale is used to control the overall layout of tick marks, tick labels, indicators, and ranges, as well render an optional scale bar.
 
 ## Scale Bar
@@ -29,24 +27,20 @@ By default, the values start from the minimum value and move to the maximum valu
 ![](images/LinearGaugeReversed.png)
 
 The default distribution for a linear scale is __RegularDistribution__. When the scale has logarithmic distribution, it might be of type __ClassicLogarithmicDistribution__ or __RangeLogarithmicDistribution__. When the __IsLogarithmic__ property is set to true, base 10 is used for the logarithmic scale by default. 
-            To modify the base of the logarithmic scale, set the __LogarithmicBase__ property accordingly:
-        
+To modify the base of the logarithmic scale, set the __LogarithmicBase__ property accordingly:        
 
 ![](images/LinearGaugeLogarithmic.png)
 
 The scale elements like tick mark, label or indicator can have dynamically changed tooltip associated with it. This behavior is controlled by TootipFormat property which can be set at the correspondent property element:
 
 #### __XAML__
-
 {{region linear-scale-overview_1}}
 	<telerik:RadHorizontalLinearGauge Grid.Column="2" Width="250" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100"
 	                         MajorTickTooltipFormat="{}{Value|F0} current value">
 	    </telerik:HorizontalLinearScale>
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/LinearScaleTickMarkTooltip.png)
 

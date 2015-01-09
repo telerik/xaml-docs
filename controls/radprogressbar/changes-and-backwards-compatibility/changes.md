@@ -10,8 +10,6 @@ position: 0
 
 # Changes
 
-
-
 This article describes the release history of the RadProgressBar control
 
 ## Q2 2013
@@ -31,5 +29,3 @@ This article describes the release history of the RadProgressBar control
 ### What's New
 
 * Feature: Windows8 (known as Metro) theme design changes
-
-# See Also

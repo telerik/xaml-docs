@@ -62,6 +62,6 @@ Relationships between document elements can be additionally traversed using:
 
 # See Also
 
- * [RadFlowDocument]({%slug radwordsprocessing-model-radflowdocument%})[RadFlowDocument API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_radflowdocument.html)
-
+ * [RadFlowDocument]({%slug radwordsprocessing-model-radflowdocument%})
+ * [RadFlowDocument API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_radflowdocument.html)
  * [Clone and Merge]({%slug radwordsprocessing-editing-clone-and-merge%})

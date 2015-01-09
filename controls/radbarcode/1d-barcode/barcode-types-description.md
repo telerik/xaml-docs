@@ -11,7 +11,6 @@ position: 1
 # Types Description
 
 
-
 This help topic will give you an overview of the following barcode types:
 
 * [Code 39](#Code_39)

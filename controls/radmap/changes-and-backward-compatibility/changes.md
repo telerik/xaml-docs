@@ -10,8 +10,6 @@ position: 0
 
 # Changes
 
-
-
 ## Q1 2014
 
 ### What's Fixed
@@ -27,5 +25,3 @@ position: 0
 ### What's New
 
 * Feature: Add ability to setup RectangleGeometryData using coordinates of the top-left (NW) and bottom-right (SE) corners of the rectangle
-
-# See Also

@@ -58,7 +58,7 @@ You are able to set the __Fill__, __Stroke__, __StrokeThickness__ of the shapes 
 	   								     primitives:DrawingAdorner.Stroke="Orange"
 										 primitives:DrawingAdorner.StrokeThickness="5">
 
-When you use __Path Tool__you can choose the way the polylines are intersected via the __FillRule__ property:		
+When you use __Path Tool__ you can choose the way the polylines are intersected via the __FillRule__ property:		
 
 FillRule takes one of the following values: __EvenOdd__ or __NonZero__. For more information about the FillRule you can visit [this MSDN article](http://msdn.microsoft.com/en-us/library/system.windows.media.pathgeometry.fillrule.aspx).		
 

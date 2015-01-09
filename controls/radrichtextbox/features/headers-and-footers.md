@@ -74,13 +74,13 @@ When it comes to using a Header created in this manner, this depends on the stat
 
 All header/footer types - Default, First and Even are set identically. The only thing you should add when you set the First or Even Header/Footer of the document, is to set the property of the section that notifies the document to use different Header/Footer than the default one using one of the following properties:
      
-	#### __C#__
-	
-	{{region radrichtextbox-features-headers-and-footers_3}}
-		this.editor.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
-		//or
-		this.editor.Document.HasDifferentEvenAndOddHeadersFooters = true;
-	{{endregion}}
+#### __C#__
+
+{{region radrichtextbox-features-headers-and-footers_3}}
+	this.editor.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
+	//or
+	this.editor.Document.HasDifferentEvenAndOddHeadersFooters = true;
+{{endregion}}
 
 
 

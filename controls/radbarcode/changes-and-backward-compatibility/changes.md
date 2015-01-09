@@ -10,8 +10,6 @@ position: 0
 
 # Changes
 
-
-
 ## Q1 2014
 
 ### What's Fixed
@@ -21,5 +19,3 @@ position: 0
 ### What's New
 
 * Add ActualVersion property
-
-# See Also

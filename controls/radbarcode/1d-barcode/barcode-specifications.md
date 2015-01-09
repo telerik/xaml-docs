@@ -10,7 +10,6 @@ position: 0
 
 # Specifications
 
-
 This help topic describes the specific characteristics of the bar codes per type.
 
 |Barcode type	|Character Set	|Length	|Check Digit|

@@ -10,11 +10,9 @@ position: 2
 
 # Needle
 
-
-
 The needle is one of the indicator types, that the __RadGauge__ control introduces. It inherits the __InteractiveIndicator__ class and introduces some specific features.
 
->tipTo learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
+>tip To learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
 
 Here is a list of the __Needle__ control's specific features:
 
@@ -22,13 +20,14 @@ Here is a list of the __Needle__ control's specific features:
 
 The __Needle__ control is represented by an arrow that points to a value from the scale. The appearance and the shape of it can be easily modified. To learn how read the Styling the Needle topic.
 
->tipYou can change the background and the border color of the needle via its __Background__ and __BorderBrush__ properties.
+>tip You can change the background and the border color of the needle via its __Background__ and __BorderBrush__ properties.
 
 >The __Needle__ indicator should be used only in radial scales.
 
-Here is an example of a __Needle__ definition.
-
+<!-- -->
 >Indicators should always be placed inside a __Indicators__ property of the scale object.
+
+Here is an example of a __Needle__ definition:
 
 #### __XAML__
 
@@ -41,11 +40,9 @@ Here is an example of a __Needle__ definition.
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadGauge_Features_Indicators_Needle_01.png)
 
@@ -54,7 +51,6 @@ Here is a snapshot of the result.
 Gets or sets the relative height of the needle tail. You can change the height of the needle tail by using the __TailHeight__ property. To calculate its height you'll need to substract the radial scale __Width__ (0.1 by default) from the scale __Radius__. 
 
 #### __XAML__
-
 {{region radgauge-features-indicators-needle_1}}
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="1" Max="12" 
@@ -70,10 +66,8 @@ Gets or sets the relative height of the needle tail. You can change the height o
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result: 
 
 ![Rad Gauge Features Indicators Needle 02](images/RadGauge_Features_Indicators_Needle_02.PNG)

@@ -10,7 +10,8 @@ position: 0
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![progressbar sl icon](images/progressbar_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![progressbar wpf icon](images/progressbar_wpf_icon.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![progressbar sl icon](images/progressbar_sl_icon.png){% endif %}
+{% if site.site_name == 'WPF' %}![progressbar wpf icon](images/progressbar_wpf_icon.png){% endif %}
 
 Thank you for choosing Telerik __RadProgressBar__!				
 

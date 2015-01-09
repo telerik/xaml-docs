@@ -10,8 +10,6 @@ position: 0
 
 # Changes
 
-
-
 This article describes the fixes and the new features in the RadBook control
 
 ## Q1 2013

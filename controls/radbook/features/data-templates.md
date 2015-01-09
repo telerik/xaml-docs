@@ -10,10 +10,6 @@ position: 1
 
 # Data Binding and Data Templates
 
-
-
-## 
-
 __RadBook__ is an __ItemsControl__ and can be populated by using its __ItemsSource__ property.
 
 __RadBook__ contains two additional properties used for templating:
@@ -25,7 +21,6 @@ __RadBook__ contains two additional properties used for templating:
 Below is an example of how to bind __RadBook__ to a collection of items that display photos and info.
 
 #### __C#__
-
 {{region radbook-data-templates_0}}
 	public partial class MainPage : UserControl
 	{
@@ -97,10 +92,7 @@ Below is an example of how to bind __RadBook__ to a collection of items that dis
 	}
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radbook-data-templates_0}}
 	Partial Public Class MainPage
 		Inherits UserControl
@@ -129,9 +121,7 @@ Below is an example of how to bind __RadBook__ to a collection of items that dis
 	End Class
 {{endregion}}
 
-
 #### __XAML__
-
 {{region radbook-data-templates_0}}
 	<Grid x:Name="LayoutRoot" Background="Purple">
 		<Grid.Resources>
@@ -186,7 +176,5 @@ Below is an example of how to bind __RadBook__ to a collection of items that dis
 ![RadBook DataBinding](images/book_datatemplates.png)
 
 # See Also
-
  * [Getting Started]({%slug radbook-getting-started%})
-
  * [Navigating]({%slug radbook-navigating%})

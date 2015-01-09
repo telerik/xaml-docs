@@ -127,7 +127,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 
 ## Customize the Paragraph
 
-The __Paragraph__exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
+The __Paragraph__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
 
 * __FontSize__ - represents the font size of the text inside the __Paragraph__. If not explicitly set to its child elements, they inherit its value.__LineSpacing - specifies the value for the space between the lines.__
 

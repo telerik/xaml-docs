@@ -10,10 +10,7 @@ position: 5
 
 # Styling the RadRadioButton
 
-
-
 The __RadRadioButton__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
-
 
 You have two options:
 
@@ -29,7 +26,7 @@ To copy the default style, load your project in Expression Blend and open the Us
 
 ![](images/Buttons_RadioButton_CreateStyle.png)
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking 'OK', Expression Blend will generate the default style of the __RadRadioButton__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
@@ -91,9 +88,6 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 * __RadRadioButtonStyle__ - the default __Style__ for the __RadRadioButton__.
 
 # See Also
-
  * [Radio Button]({%slug radbutton-features-radio-button%})
-
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
-
  * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})

@@ -23,7 +23,7 @@ The existing layers can be removed and additional ones can be defined to customi
 All UILayers implement the __IUILayer__ interface. There is an abstract class, which implements this interface - __DecorationUILayerBase__, and by inheriting it, you can easily define a new layer for custom representations of your document’s layout. The main method to contain your logic is:
         
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-custom-ui-layers_0}}
 	public override void UpdateUIViewPortOverride(UILayerUpdateContext context)
@@ -36,7 +36,7 @@ You can use the context which is passed as a parameter to the method to get all 
 
 Last but not least, you should not forget to override the Name property of the layer like this:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-custom-ui-layers_1}}
 	public override string Name
@@ -53,7 +53,7 @@ Last but not least, you should not forget to override the Name property of the l
 After having implemented the logic of your custom UI layer, you can plug it in the editor by creating a __CustomUILayerBuilder__ and marking it with the __CustomUILayerAttribute__ like this:
         
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-custom-ui-layers_2}}
 	[CustomUILayersBuilder]
@@ -65,7 +65,7 @@ After having implemented the logic of your custom UI layer, you can plug it in t
 In this way, your custom layer will be utilized in all instances of __RadRichTextBox__ in your project. In case you want your layer to be visible only in a few RadRichTextBoxes, you can remove the CustomUILayersBuilder attribute and assign the builder only to the specific instances you want to use it with like this:
         
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-custom-ui-layers_3}}
 	this.editor.UILayersBuilder = new CustomLayersBuilder();
@@ -76,7 +76,7 @@ In this way, your custom layer will be utilized in all instances of __RadRichTex
 All that is left is to specify the place of your layer, i.e. which layers should be shown above and which - below your layer. This is done in the __BuildUILayersOverride__ method. For example, a layer can be shown under the selection, after the highlighting layer in the following way:
         
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-custom-ui-layers_4}}
 	protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)

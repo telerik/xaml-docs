@@ -736,6 +736,17 @@ footer p {
 	margin-right: 1em;
 }
 
+footer p a#send-feedback {
+	float: left;
+	color: #fff;
+	margin-left: 1.833em;
+}
+
+footer p a#send-feedback:hover  {
+	text-decoration: underline;
+	color: #00b312;
+}
+
 h4 {
 	color: #00b312;
     font-size: 1.1em;

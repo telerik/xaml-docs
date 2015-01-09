@@ -10,10 +10,6 @@ position: 4
 
 # Hard Pages
 
-
-
-## 
-
 To enable hard paper functionality, you have to set the __HardPages__ property. The __HardPages__ property is an enum with the following values:
 
 * __None__: None of the pages has the hard paper feature turned on
@@ -29,7 +25,6 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 * __Custom__: Only certain pages have the hard paper feature turned on. It is up to the user to define which pages by setting the __IsHardPaper__ property of the __RadBookItem__.
 
 #### __XAML__
-
 {{region book-hard-pages_0}}
 	<UserControl x:Class="BookHardPaper.MainPage"
 	  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -54,16 +49,13 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 	    HardPages="All" />
 	 </Grid>
 	</UserControl>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/book_hardPaper.png)
 
 ![](images/book_softPaper.png)
 
 #### __XAML__
-
 {{region book-hard-pages_1}}
 	<telerik:RadBook x:Name="book1" Width="544" Height="444" FirstPagePosition="Right"
 	    RightPageIndex="0" HardPages="Custom">
@@ -98,9 +90,7 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 	  </Grid>
 	 </telerik:RadBookItem>
 	</telerik:RadBook>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/book_hardPaperCustom1.png)
 

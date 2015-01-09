@@ -10,12 +10,12 @@ position: 0
 
 # Visual Structure
 
-## 
-
 {% if site.site_name == 'WPF' %}
-![book wpf icon](images/book_wpf_icon.png){% endif %}
+![book wpf icon](images/book_wpf_icon.png)
+{% endif %}
 {% if site.site_name == 'Silverlight' %}
-![book sl icon](images/book_sl_icon.png){% endif %}
+![book sl icon](images/book_sl_icon.png)
+{% endif %}
 
 Thank you for choosing Telerik __RadBook__!
 
@@ -34,5 +34,4 @@ The structure of a __RadBook__ consists of the following main elements:
 * __Page Fold__ - This is the part from the page that is dragged when the page is flipping.
 
 # See Also
-
 * [Getting Started]({%slug radbook-getting-started%})

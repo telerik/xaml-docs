@@ -10,50 +10,38 @@ position: 1
 
 # Color History
 
-
-
 The __RadColorEditor__ control enables you to keep track of the previously selected colors through a set of proeprties.
-		
 
-## 
+* __PreviousColor__ - this property is of type __Color__ and provides access to the last selected color.					
 
-* __PreviousColor__ - this property is of type __Color__ and provides access to the last selected color.
-					
+* __ColorHistory__ - this property exposes a collection of all previously selected colors.						
 
-* __ColorHistory__ - this property exposes a collection of all previously selected colors.
-						
-
-#### __XAML__
-
-{{region radcoloreditor-features-color-history-0}}
-	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-	    <StackPanel.Resources>
-	        <telerik:ColorToBrushConverter x:Key="ColorConverter" />
-	    </StackPanel.Resources>
-	    <telerik:RadColorEditor x:Name="colorEditor1" Width="400" Height="220" HistoryCapacity="5" />
-	    <ItemsControl ItemsSource="{Binding ColorHistory, ElementName=colorEditor1}" Height="20" Margin="8 0">
-	        <ItemsControl.ItemTemplate>
-	            <DataTemplate>
-	                <Border Width="20" Height="20" Margin="5 0"
-	                        Background="{Binding Converter={StaticResource ColorConverter} }" />
-	            </DataTemplate>
-	        </ItemsControl.ItemTemplate>
-	        <ItemsControl.ItemsPanel>
-	            <ItemsPanelTemplate>
-	                <telerik:RadWrapPanel />
-	            </ItemsPanelTemplate>
-	        </ItemsControl.ItemsPanel>
-	    </ItemsControl>
-	</StackPanel>
+	#### __XAML__
+	{{region radcoloreditor-features-color-history-0}}
+		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+			<StackPanel.Resources>
+				<telerik:ColorToBrushConverter x:Key="ColorConverter" />
+			</StackPanel.Resources>
+			<telerik:RadColorEditor x:Name="colorEditor1" Width="400" Height="220" HistoryCapacity="5" />
+			<ItemsControl ItemsSource="{Binding ColorHistory, ElementName=colorEditor1}" Height="20" Margin="8 0">
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<Border Width="20" Height="20" Margin="5 0"
+								Background="{Binding Converter={StaticResource ColorConverter} }" />
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<telerik:RadWrapPanel />
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>
+			</ItemsControl>
+		</StackPanel>
 	{{endregion}}					
 
-* __HistoryCapacity__ - this property is of type __int__. It gets/set the number of previously used colors to be stored in the __ColorHistory__ collection.
-					
+* __HistoryCapacity__ - this property is of type __int__. It gets/set the number of previously used colors to be stored in the __ColorHistory__ collection.					
 
 # See Also
-
  * [Structure]({%slug radcoloreditor-structure%})
-
  * [Getting Started]({%slug radcoloreditor-getting-started%})
-
  * [Color Mode]({%slug radcoloreditor-features-color-mode%})

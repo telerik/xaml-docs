@@ -10,14 +10,9 @@ position: 3
 
 # Bar Indicator
 
-
-
-## 
-
 The Bar indicator is a colored bar that is drawn around scale bar. One of ends of this bar points to the scale value. To add bar indicator to the scale you have to include LinearBar element to the list of the scale indicators:
 
 #### __XAML__
-
 {{region linear-scale-bar-indicator_0}}
 	<telerik:RadVerticalLinearGauge Width="100" Height="250" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="100">
@@ -34,9 +29,7 @@ The Bar indicator is a colored bar that is drawn around scale bar. One of ends o
 	        </telerik:VerticalLinearScale.CustomItems>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![Linear Scale Bar Indicator](images/LinearScaleBarIndicator.PNG)
 
@@ -44,19 +37,19 @@ The Bar indicator supports the following features:
 
 1. Layout 
 
-1. Appearance 
+2. Appearance 
 
-1. Brush is used for the filled part is controlled by Background property.
+3. Brush is used for the filled part is controlled by Background property.
 
-1. Brush is used for the empty part is controlled by EmptyFill property.
+4. Brush is used for the empty part is controlled by EmptyFill property.
 
-1. You can set stroke thickness (StrokeThickness property) and stroke brush (BorderBrush property).
+5. You can set stroke thickness (StrokeThickness property) and stroke brush (BorderBrush property).
 
-1. The Bar indicator can be snapped along to scale ticks or to specified interval.
+6. The Bar indicator can be snapped along to scale ticks or to specified interval.
 
-1. Movement animation allows the Bar indicator to smooth its movement when it shows next value.
+7. Movement animation allows the Bar indicator to smooth its movement when it shows next value.
 
-1. The refresh rate allows calculating the displayed value using values which are assigned during the specified interval according to the specified method.
+8. The refresh rate allows calculating the displayed value using values which are assigned during the specified interval according to the specified method.
 
 By default you can set specific color to the bar indicator through the exposed __Background__ property. But sometimes it is useful to change its color depending on the value it points to.
 
@@ -65,7 +58,6 @@ This can be achieved by having several gauge ranges in the linear scale - every 
 There are several modes which can be used to colorize the bar indicator. Here is the default one:
 
 #### __XAML__
-
 {{region linear-scale-bar-indicator_1}}
 	<telerik:RadVerticalLinearGauge Width="100" Height="250" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale IsInteractive="True"
@@ -95,14 +87,11 @@ There are several modes which can be used to colorize the bar indicator. Here is
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 If you'd like to have a bar indicator with background that has all range colors, then you should set the __RangeColorMode__ property to "ProportionalBrush":
 
 #### __XAML__
-
 {{region linear-scale-bar-indicator_2}}
 	<telerik:RadVerticalLinearGauge Width="100" Height="250" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale IsInteractive="True"
@@ -132,9 +121,7 @@ If you'd like to have a bar indicator with background that has all range colors,
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here are the Default and the ProportionalBrush modes:
 
@@ -143,7 +130,6 @@ Here are the Default and the ProportionalBrush modes:
 If you need smooth gradients between the colors then use the __GradientBrush__ mode and set the __RangeColorSmoothing__ property:
 
 #### __XAML__
-
 {{region linear-scale-bar-indicator_3}}
 	<telerik:VerticalLinearScale.Indicators>
 	    <telerik:BarIndicator UseRangeColor="True" 
@@ -152,8 +138,6 @@ If you need smooth gradients between the colors then use the __GradientBrush__ m
 	                            Value="60"
 	                            StartWidth="0.06"/>
 	</telerik:VerticalLinearScale.Indicators>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/LinearBarGradientBrush.png)

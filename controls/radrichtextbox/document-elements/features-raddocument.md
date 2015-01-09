@@ -83,7 +83,7 @@ As explained in the previous section, the state of the document is essential for
 
 For example, you can build a RadDocument from scratch and add Sections to it in the following way:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_0}}
 	Section section = new Section();
@@ -94,7 +94,7 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting a section break:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_1}}
 	this.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage);
@@ -104,7 +104,7 @@ Splitting an already measured document into two sections at the current caret po
 
 You can also specify the position at which the section break should be inserted and its style:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_2}}
 	this.editor.Document.InsertSectionBreak(this.editor.Document.CaretPosition, this.editor.CurrentEditingStyle, SectionBreakType.NextPage);

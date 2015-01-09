@@ -10,10 +10,6 @@ position: 2
 
 # Framework Elements
 
-
-
-## 
-
 One of the objects that can be displayed inside the InformationLayer is the __FrameworkElement__. This means that you can actually display anything inside the __InformationLayer__, as the controls in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} inherit directly or indirectly the __FrameworkElement__ class. If you want to compose more than one control for your element, you just have to wrap them inside one of the layout controls.
 
 This gives you the possibility to add Images, Charts, Gauges, etc. to your __RadMap__.
@@ -24,14 +20,13 @@ Since *Q2 2011* two new attachable properties were added that allow you to confi
 
 * __MinScale__ - affects FrameworkElements (except MapShape based ones). It specifies the maximum scale factor which will be applied to the framework element when it has BaseZoomLevel property set and you zoom out the map control.
 
-Here is an example of a __Border__ that holds a __TextBlock__ with some information about the location.
+>tip You can arrange the position of the __FrameworkElement__ either by using its __HorizontalAlignment__ or __VerticalAlignment__ properties or by using the __HotSpot__ feature of the __RadMap__. To learn more about the latter one, read [this topic]({%slug radmap-features-hot-spots%}).
 
->tipYou can arrange the position of the __FrameworkElement__ either by using its __HorizontalAlignment__ or __VerticalAlignment__ properties or by using the __HotSpot__ feature of the __RadMap__. To learn more about the latter one, read [this topic]({%slug radmap-features-hot-spots%}).
+>tip For a detailed information on how to add and position items inside the __InformationLayer__, please read this [topic]({%slug radmap-features-information-layer%}).
 
->tipFor a detailed information on how to add and position items inside the __InformationLayer__, please read this [topic]({%slug radmap-features-information-layer%}).
+Here is an example of a __Border__ that holds a __TextBlock__ with some information about the location:
 
 #### __XAML__
-
 {{region radmap-features-information-layer-framework-elements_0}}
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -53,20 +48,14 @@ Here is an example of a __Border__ that holds a __TextBlock__ with some informat
 	        </Border>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
+{{endregion}}
 
+Here is a snapshot of the result: 
 
-
-Here is a snapshot of the result.
-
-\![](images/RadMap_Features_FrameworkElement_01.png)
+![](images/RadMap_Features_FrameworkElement_01.png)
 
 # See Also
-
  * [Information Layer]({%slug radmap-features-information-layer%})
-
  * [Map Shapes]({%slug radmap-features-map-shapes%})
-
  * [Pin Points]({%slug radmap-features-information-layer-pin-points%})
-
  * [Hot Spots]({%slug radmap-features-hot-spots%})

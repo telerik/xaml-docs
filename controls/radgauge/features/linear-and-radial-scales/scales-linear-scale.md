@@ -10,13 +10,11 @@ position: 2
 
 # Linear Scale
 
-
-
 The __LinearScale__ control allows you to display a scale of linear form. Typically the __LinearScale__ is used in the __LinearGauge__ control, but it can directly used in the other __Gauge__ controls available or even on its own. This topic will explain you the specifics regarding the usage of the __LinearScale__ control.
 
->tipAs the scales provided by the __RadGauge__ control share common functionality, you might found useful to read the [Base Scale]({%slug radgauge-features-linear-and-radial-scales-basics%}) topic. In it you will find information regarding the features shared between the different scales.
+>tip As the scales provided by the __RadGauge__ control share common functionality, you might found useful to read the [Base Scale]({%slug radgauge-features-linear-and-radial-scales-basics%}) topic. In it you will find information regarding the features shared between the different scales.
 
->tipThe scales derived from the __Graphic Scale__ class, can use any of the indicators provided by the __RadGauge__ control. To learn how read the [Base Scale]({%slug radgauge-features-linear-and-radial-scales-basics%}) topic.
+>tip The scales derived from the __Graphic Scale__ class, can use any of the indicators provided by the __RadGauge__ control. To learn how read the [Base Scale]({%slug radgauge-features-linear-and-radial-scales-basics%}) topic.
 
 Here is the list of the __LinearScale__ features:
 
@@ -30,10 +28,9 @@ Here is the list of the __LinearScale__ features:
 
 The LinearScale control can have either a horizontal or vertical orientation. The orientation could be defined using the appropriate container: the __RadVerticalLinearGauge__ for vertical scale and the __RadHorizontalLinearGauge__ for horizontal scale respectively.
 
-Here is an example of a __LinearScale__ with horizontal orientation.
+Here is an example of a __LinearScale__ with horizontal orientation:
 
 #### __XAML__
-
 {{region radgauge-features-scales-linear-scale_hor_0}}
 	<telerik:RadHorizontalLinearGauge Width="300"
 	                                  Height="100"
@@ -41,12 +38,11 @@ Here is an example of a __LinearScale__ with horizontal orientation.
 	    <telerik:HorizontalLinearScale Min="0"
 	                         Max="12" />
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
+{{endregion}}
 
-
+Here is an example of a __LinearScale__ with vertical orientation:
 
 #### __XAML__
-
 {{region radgauge-features-scales-linear-scale_ver_0}}
 	<telerik:RadVerticalLinearGauge Width="100"
 	                                Height="300"
@@ -54,11 +50,7 @@ Here is an example of a __LinearScale__ with horizontal orientation.
 	    <telerik:VerticalLinearScale Min="0"
 	                         Max="12" />
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
-
-Here is an example of a __LinearScale__ with vertical orientation.
+{{endregion}}
 
 Both results can be seen below:
 
@@ -68,12 +60,11 @@ Both results can be seen below:
 
 The __Relative Size__ feature allows you to specify the size of the scale towards its container. This can be done by using the __RelativeHeight__ and __RelativeWidth__ property of the __LinearScale__. For example a value of __RelativeHeight = 1__ will make the scale have a scale equal to the height of the container and a value of __RelativeWidth = 1__ will make the scale have a width equal to the width of the container.
 
->Note that when using the LinearScale in horizontal mode, the value of the RelativeHeight property will get applied to the width of the container.
+>When using the LinearScale in horizontal mode, the value of the RelativeHeight property will get applied to the width of the container.
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
-
 {{region radgauge-features-scales-linear-scale_1}}
 	<telerik:RadHorizontalLinearGauge Width="300"
 	                                  Height="100"
@@ -83,11 +74,9 @@ Here is an example.
 	                         RelativeWidth="1"
 	                         RelativeHeight="1"/>
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![Rad Gauge radgauge features linearscale 02](images/RadGauge_Features_LinearScale_02.png)
 
@@ -95,10 +84,9 @@ Here is a snapshot of the result.
 
 The __LinearScale__ exposes the __RelativeX__ and __RelativeY__ properties, which allows you to position the scale towards its container. The values of these two properties are relative to the height and respectively to the width of the scale's container.
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
-
 {{region radgauge-features-scales-linear-scale_2}}
 	<telerik:RadHorizontalLinearGauge Width="250"
 	                                    Height="70"
@@ -114,10 +102,8 @@ Here is an example.
 	                            StartWidth="0"
 	                            EndWidth="0"/>
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadGauge_Features_LinearScale_03.png)

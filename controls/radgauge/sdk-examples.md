@@ -10,12 +10,10 @@ position: 1
 
 # SDK Examples
 
-
-
 The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/master/) provides additional demos for most of the Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls. The examples demonstrate many specific user case scenarios, that might be really helpful. In this article you can find the complete list of all SDK examples for __RadGauge__.
 
-## List of all RadGauge SDK examples:{% if site.site_name == 'WPF' %}
-
+## List of all RadGauge SDK examples:
+{% if site.site_name == 'WPF' %}
 * __Creating linear gauge__ - One of the gauges you can create with the RadGauge control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally it can display various indicators that point to a certain value off the scale. This example will guide you in creating a trivial linear gauge.
 
 * __Creating numeric gauge__ - One of the gauges you can create with the RadGauge control, is a numeric gauge. It is represented by a container with a numerical scale in it. The numerical scale uses a numerical indicator to display the desired value. This example will guide you in creating a trivial numeric gauge.
@@ -162,8 +160,10 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 * __Ticks location__ - The TickProperties class exposes a Location property, which allows you to specify the location of the ticks towards the scale.
 
-* __Ticks size__ - To specify the size of all major ticks you should use the MajorTickRelativeWidth and MajorTickRelativeHeight properties of the respective Scale object. You can use the MinorTickRelativeWidth and MinorTickRelativeHeight properties to change the size of the minor ticks or the MiddleTickRelativeWidth and MiddleTickRelativeHeight properties to change the size of the middle ticks respectively. The tick's size is relative to the cell size of the scale.{% endif %}{% if site.site_name == 'Silverlight' %}
+* __Ticks size__ - To specify the size of all major ticks you should use the MajorTickRelativeWidth and MajorTickRelativeHeight properties of the respective Scale object. You can use the MinorTickRelativeWidth and MinorTickRelativeHeight properties to change the size of the minor ticks or the MiddleTickRelativeWidth and MiddleTickRelativeHeight properties to change the size of the middle ticks respectively. The tick's size is relative to the cell size of the scale.
+{% endif %}
 
+{% if site.site_name == 'Silverlight' %}
 * __Creating linear gauge__ - One of the gauges you can create with the RadGauge control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally it can display various indicators that point to a certain value off the scale. This example will guide you in creating a trivial linear gauge.
 
 * __Creating numeric gauge__ - One of the gauges you can create with the RadGauge control, is a numeric gauge. It is represented by a container with a numerical scale in it. The numerical scale uses a numerical indicator to display the desired value. This example will guide you in creating a trivial numeric gauge.
@@ -310,6 +310,7 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 * __Ticks location__ - The TickProperties class exposes a Location property, which allows you to specify the location of the ticks towards the scale.
 
-* __Ticks size__ - To specify the size of all major ticks you should use the MajorTickRelativeWidth and MajorTickRelativeHeight properties of the respective Scale object. You can use the MinorTickRelativeWidth and MinorTickRelativeHeight properties to change the size of the minor ticks or the MiddleTickRelativeWidth and MiddleTickRelativeHeight properties to change the size of the middle ticks respectively. The tick's size is relative to the cell size of the scale.{% endif %}
+* __Ticks size__ - To specify the size of all major ticks you should use the MajorTickRelativeWidth and MajorTickRelativeHeight properties of the respective Scale object. You can use the MinorTickRelativeWidth and MinorTickRelativeHeight properties to change the size of the minor ticks or the MiddleTickRelativeWidth and MiddleTickRelativeHeight properties to change the size of the middle ticks respectively. The tick's size is relative to the cell size of the scale.
+{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

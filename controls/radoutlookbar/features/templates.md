@@ -10,10 +10,6 @@ position: 3
 
 # Templates
 
-
-
-## 
-
 * __ItemDropDownTemplate__ - template for the items displayed in the overflow area.
 
 * __ItemDropDownTemplateSelector__ - template selector for the items displayed in the overflow area.
@@ -41,5 +37,4 @@ position: 3
 ![](images/outloobar_templates.png)
 
 # See Also
-
  * [Getting Started]({%slug radoutlookbar-getting-started%})

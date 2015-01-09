@@ -239,7 +239,7 @@ __editor.InsertImageInline(imageSource, size);__
 
 ## Tables
 
-The __Table__ class implements the __IBlockElement__ interface and an instance of this class can be easily inserted as a new block in the document. You could insert the table using the __InsertTable()__ method like illustarted in __Example 6__. __RadFixedDocumentEditor__ takes care for positioning, measuring and splitting the table onto pages.
+The __Table__ class implements the __IBlockElement__ interface and an instance of this class can be easily inserted as a new block in the document. You could insert the table using the __InsertTable()__ method like illustrated in __Example 6__. __RadFixedDocumentEditor__ takes care for positioning, measuring and splitting the table onto pages.
         
 
 #### __[C#] Example 6: Insert Table__

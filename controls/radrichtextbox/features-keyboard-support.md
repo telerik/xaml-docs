@@ -195,49 +195,40 @@ Now these key bindings can be overridden and customized to the liking of the use
 #### __XAML__
 
 {{region radrichtextbox-features-keyboard-support_1}}
-	<telerik:RadRichTextBox Grid.Row="1" Name="editor">
-		<telerik:RadRichTextBox.InputBindings>
-			<!-- Bind Spell Checking to Ctrl+Shift+S -->
-			<KeyBinding Gesture="Ctrl+Shift+S" Command="telerikDocs:RichTextBoxCommands.ShowSpellCheckingDialog"/>
-			<!-- Stop Toggle Bold on Ctrl+Shift+B -->
-			<KeyBinding Gesture="Ctrl+Shift+B"/>
-			<!-- Re-map Ctrl+Space from Clear Formating to ShowManageBookmarksDialog -->
-			<KeyBinding Gesture="Ctrl+Space" Command="telerikDocs:RichTextBoxCommands.ShowManageBookmarksDialog"/>
-		</telerik:RadRichTextBox.InputBindings>
-	</telerik:RadRichTextBox>
+    <telerik:RadRichTextBox Name="radRichTextBox">
+      <telerik:RadRichTextBox.InputBindings>
+        <!-- Bind Spell Checking to Ctrl+Shift+S -->
+        <KeyBinding Gesture="Ctrl+Shift+S" Command="telerikDocs:RichTextBoxCommands.ShowSpellCheckingDialog"/>
+        <!-- Stop Toggle Bold on Ctrl+Shift+B -->
+        <KeyBinding Gesture="Ctrl+Shift+B"/>
+        <!-- Re-map Ctrl+Space from Clear Formating to ShowManageBookmarksDialog -->
+        <KeyBinding Gesture="Ctrl+Space" Command="telerikDocs:RichTextBoxCommands.ShowManageBookmarksDialog"/>
+      </telerik:RadRichTextBox.InputBindings>
+    </telerik:RadRichTextBox>
 {{endregion}}
 
 {% endif %}
 
-Sometimes overriding the key bindings does not provide sufficient support, as depending on the language and the keyboard, different ModifierKeys are registered. For example, pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the __PreviewEditorKeyDown__ event in the following way:{% if site.site_name == 'Silverlight' %}
+Please note that in the above code snippet the telerikDocs namespace is defined as follows: 
+{{region richtextbox-commands}}
+	xmlns:telerikDocs="clr-namespace:Telerik.Windows.Documents.RichTextBoxCommands;assembly=Telerik.Windows.Documents"
+{{#endregion}}
+
+Sometimes overriding the key bindings does not provide sufficient support, as depending on the language and the keyboard, different ModifierKeys are registered. For example, pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the __PreviewEditorKeyDown__ event in the following way:
 
 #### __C#__
 
 {{region radrichtextbox-features-keyboard-support_0}}
-	private void editor_PreviewEditorKeyDown(object sender, Documents.PreviewEditorKeyEventArgs e)
-	{
-	    if(Keyboard.Modifiers.HasFlag(ModifierKeys.Alt) && Keyboard.Modifiers.HasFlag(ModifierKeys.Control))
-	    {
-	        e.SuppressDefaultAction = true;
-	    }            
-	}
-	{{endregion}}
-
-{% endif %}{% if site.site_name == 'WPF' %}
-
-#### __C#__
-
-{{region radrichtextbox-features-keyboard-support_1}}
-	private void editor_PreviewEditorKeyDown(object sender, Telerik.Windows.Documents.PreviewEditorKeyEventArgs e)
-	{
-	    if ((Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift)))
-	    {
-	        e.SuppressDefaultAction = true;
-	    }
-	}
-	{{endregion}}
-
-{% endif %}
+	  this.radRichTextBox.PreviewEditorKeyDown += (sender, args) =>
+         {
+             if (Keyboard.Modifiers.HasFlag(ModifierKeys.Alt) && Keyboard.Modifiers.HasFlag(ModifierKeys.Control) && args.Key == Key.E)
+             {
+                 args.SuppressDefaultAction = true;
+                 args.OriginalArgs.Handled = true;
+                 this.radRichTextBox.Insert("€");
+             }
+         };
+{{endregion}}
 
 
 

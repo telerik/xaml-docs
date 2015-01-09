@@ -130,8 +130,6 @@ The last thing you should do, is to set the RadRichTextBox’ CaretFactory prope
 # See Also
  * [SDK Example Custom Caret](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret) 
 
- * [Working with RadRichTextBox]({%slug radrichtextbox-features-working-with-radrichtextbox%})
-
  * [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%})
 
  * [Formatting API]({%slug radrichtextbox-features-formatting-api%})

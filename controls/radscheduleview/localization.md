@@ -14,6 +14,20 @@ The built-in localization mechanism in Silverlight and WPF allows you to localiz
 
 ![RadScheduleView Localization 01](images/radscheduleview_localization01.png)
 
+## Supported Languages
+
+__RadScheduleView__ can be translated in one of the following supported languages using the framework’s localization mechanism:
+
+* English
+* German
+* Spanish
+* French
+* Italian
+* Dutch
+* Turkish
+
+More information on how to achieve this you can find in the [Localization Using Built-in Resources] ({%slug common-localization%}) article.
+
 ## LocalizationManager
 
 The __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls.

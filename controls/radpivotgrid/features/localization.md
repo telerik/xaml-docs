@@ -12,7 +12,21 @@ position: 3
 
 The built-in localization mechanism in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} allows you to localize any string resource used by __RadPivotGrid__ and __RadPivotFieldList__ controls. Once translated you might use the resources in your projects without changing anything. You can find more information on the localization of the RadControls {% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/common-localization.html){% endif %}{% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}.      
 
->The __LocalDataSourceProvider__ provides an additional __Culture__ support option which allows you to localize the underlying data using any desired Culture. For more details please check the [Culture Support]({%slug radpivotgrid-features-culture-support%}) article from the __LocalDataSourceProvider__ section.        
+>The __LocalDataSourceProvider__ provides an additional __Culture__ support option which allows you to localize the underlying data using any desired Culture. For more details please check the [Culture Support]({%slug radpivotgrid-features-culture-support%}) article from the __LocalDataSourceProvider__ section.      
+
+## Supported Languages
+
+__RadPivotGrid__ can be translated in one of the following supported languages using the framework’s localization mechanism:
+
+* English
+* German
+* Spanish
+* French
+* Italian
+* Dutch
+* Turkish
+
+More information on how to achieve this you can find in the [Localization Using Built-in Resources] ({%slug common-localization%}) article. 
 
 ## Localization Using Custom Localization Manager
 

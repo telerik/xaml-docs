@@ -22,6 +22,20 @@ The next image shows the context menu localized in German:
 
 ![Rad Docking localization de](images/RadDocking_localization_de.png)
 
+## Supported Languages
+
+__RadDocking__ can be translated in one of the following supported languages using the framework’s localization mechanism:
+
+* English
+* German
+* Spanish
+* French
+* Italian
+* Dutch
+* Turkish
+
+More information on how to achieve this you can find in the [Localization Using Built-in Resources] ({%slug common-localization%}) article.
+
 ## Resource Keys
 
 The resources of the control can be localized by using an unique identifier called resource key that is assigned to each localizable string. Below you may find a list of the Resources available and their default values:

@@ -16,7 +16,7 @@ First, let's start with a real world scenario - you have a cell which shows a lo
 
 ![](images/how_to_access_editing_element_gridview.png)
 
-To make the editing textbox wraps the text as well you need to subscribe to the [PreparingCellForEdit](7928EA2C-360A-4C57-ACBF-0BFC155E955A#PreparingCellForEdit_Event) event, find the editing element and set its property:
+To make the editing textbox wraps the text as well you need to subscribe to the PreparingCellForEdit event, find the editing element and set its property:
 
 #### __C#__
 
@@ -48,7 +48,7 @@ Now it is better:
 
 ![](images/how_to_access_editing_element_gridview2.png)
 
-Ok, what if I do not want have this text selected, but want to have the cursor positioned at the end of it? Here comes the other useful event - [PreparedCellForEdit](7928EA2C-360A-4C57-ACBF-0BFC155E955A#PreparedCellForEdit_Event) which fires when the cell is already prepared for editing:
+Ok, what if I do not want have this text selected, but want to have the cursor positioned at the end of it? Here comes the other useful event - PreparedCellForEdit which fires when the cell is already prepared for editing:
 
 #### __C#__
 

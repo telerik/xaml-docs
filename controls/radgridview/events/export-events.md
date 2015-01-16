@@ -10,7 +10,7 @@ position: 4
 
 # Export
 
-As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when you export data from the gridview - __ElementExporting__ and __ElementExported__. __ElementExporting__ is a direct replacement of the __Exporting__ event which is used before Q1 2010 SP2. The __Exporting__ event will be obsoleted in __Q2 2010__.
+As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when you export data from the gridview - __ElementExporting__ and __ElementExported__. __ElementExporting__ is a direct replacement of the __Exporting__ event which is used before __Q1 2010 SP2__. The __Exporting__ event will be obsoleted in __Q2 2010__.
 
 * [Export events lifecycle](#export-events-life-cycle)
 
@@ -22,7 +22,7 @@ As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when y
 
 ## Export events life-cycle
 
-The exporting events fire when you call the __Export__ method of RadGridView. They fire for each exported row and cell. The purpose of the events is to provide the developer with a mechanism to style or modify the exported data. The __ElementExporting__ event is __cancelable__ - you can omit exporting a particular row or cell by canceling the event for those elements. If the __ElementExporting__ is not canceled - the respective __ElementExported__ event is fired for the element.
+The exporting events fire when you call the __Export__ method of RadGridView. They fire for each exported element (row, header cell, cell, etc.). The purpose of the events is to provide the developer with a mechanism to style or modify the exported data. The __ElementExporting__ event is __cancelable__ - you can omit exporting a particular row or cell by canceling the event for those elements. If the __ElementExporting__ is not canceled - the respective __ElementExported__ event is fired for the element.
 
 You can subscribe to the events either declaratively or runtime like this:
 
@@ -58,9 +58,7 @@ You can subscribe to the events either declaratively or runtime like this:
 As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with [ExportFormat.ExcelML]({%slug gridview-export-excelml%}) and [ExportFormat.Html]({%slug gridview-export-html%}).
         
 
-On the snapshot below you can see that the event arguments passed to the ElementExporting event handler are of type __GridViewElementExportingEventArgs__ and allow you to customize the font, the text alignment, the foreground, the background and the encoding of the exported data. The __Context__ property represents the instance of the __RadGridView__ that exports.
-
-![](images/RadGridView_GridExport_1.png)
+On the snapshot below you can see that the event arguments passed to the ElementExporting event handler are of type __GridViewElementExportingEventArgs__ and allow you to customize different setting of the exported data. 
 
 To illustrate the idea better, check out the code snippet below and see how to change the font size and the background of the table header row and the group header rows.
 
@@ -218,7 +216,7 @@ For example:
 
 {{region gridview-export-events_9}}
 
-	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
+ 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
 		ExcelMLStyle style = new ExcelMLStyle("0");
 	
@@ -305,15 +303,22 @@ Use this event if you want to write additional data to the stream. A common scen
 {{endregion}}
 
 
-
-And the result is:
+The result is:
 
 ![](images/gridview_row_details_export.png)
 
 # See Also
 
+ * [GridViewElementExportingEventArgs](http://docs.telerik.com/devtools/wpf/api/html/Properties_T_Telerik_Windows_Controls_GridViewElementExportingEventArgs.htm)
+ 
+ * [GridViewElementExportedEventArgs](http://docs.telerik.com/devtools/wpf/api/html/Properties_T_Telerik_Windows_Controls_GridViewElementExportedEventArgs.htm)
+ 
  * [RadGridView Overview]({%slug gridview-overview2%})
 
  * [Export Overview]({%slug gridview-export%})
 
- * [Grid Async Export]({%slug gridview-export-async%})[Online Demo - Exporting to various formats](http://demos.telerik.com/silverlight/#GridView/Exporting)[Online Demo - Exporting Row Details](http://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)
+ * [Grid Async Export]({%slug gridview-export-async%})
+ 
+ * [Online Demo - Exporting to various formats](http://demos.telerik.com/silverlight/#GridView/Exporting)
+ 
+ * [Online Demo - Exporting Row Details](http://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)

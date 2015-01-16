@@ -23,7 +23,6 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 ## RadPropertyGrid Template
 
 
-
 * __PART_RootElement__ - hosts the elements of the template. It represents the border of the RadPropertyGrid and is of type Border;
 
 * __PART_PropertyGridContainer__- hosts the description panel, the items scroll viewer and the header;

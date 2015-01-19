@@ -117,11 +117,11 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 	#### __VB.NET__
 
 	{{region raddiagrams-features-pan-zoom-1}}
-		'zoom in with a factor of 0.67
+		'zoom in with a factor of 0.67'
 		Private Sub CustomZoomIn()
 			Me.xDiagram.ZoomIn(0.67)
 		End Sub
-		'zoom out with a factor of 0.67
+		'zoom out with a factor of 0.67'
 		Private Sub CustomZoomOut()
 			Me.xDiagram.ZoomOut(0.67)
 		End Sub
@@ -149,11 +149,11 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 	#### __VB.NET__
 
 	{{region raddiagrams-features-pan-zoom-2}}
-		'zoom in around the point with coordinates of (125,200)
+		'zoom in around the point with coordinates of (125,200)'
 		Private Sub ZoomIn(sender As Object, e As RoutedEventArgs)
 			Me.xDiagram.ZoomIn(Nothing, New Point(125, 200))
 		End Sub
-		'zoom out around the point with coordinates of (100,125)
+		'zoom out around the point with coordinates of (100,125)'
 		Private Sub ZoomOut(sender As Object, e As RoutedEventArgs)
 			Me.xDiagram.ZoomOut(Nothing, New Point(100, 125))
 		End Sub
@@ -181,11 +181,11 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 	#### __VB.NET__
 
 	{{region raddiagrams-features-pan-zoom-3}}
-		'zoom in around the point with coordinates of (125,200) with a zoom factor of 0.67
+		'zoom in around the point with coordinates of (125,200) with a zoom factor of 0.67'
 		Private Sub ZoomIn(sender As Object, e As RoutedEventArgs)
 			Me.xDiagram.ZoomIn(0.67, New Point(125, 200))
 		End Sub
-		'zoom out around the point with coordinates of (100,125) with a zoom factor of 0.67
+		'zoom out around the point with coordinates of (100,125) with a zoom factor of 0.67'
 		Private Sub ZoomOut(sender As Object, e As RoutedEventArgs)
 			Me.xDiagram.ZoomOut(0.67, New Point(100, 125))
 		End Sub

@@ -22,7 +22,7 @@ This help article will show you how to set a built-in theme to Telerik UI for WP
 
 * [Setting Application-Wide Built-in Theme in the Code-Behind](#setting-application-wide-built-in-theme-in-the-code-behind)
 
-Telerik __WPF controls__support the following themes:
+Telerik __WPF controls__ support the following themes:
       
 
 * __Office_Black__

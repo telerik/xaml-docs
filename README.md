@@ -18,7 +18,7 @@ There are two ways you can contribute to the public Telerik UI for WPF/Silverlig
 * **Create an issue** - If you find an issue with our docs that needs to be addressed, the best way to let us know about it is by [creating an issue in this repository](https://github.com/telerik/xaml-docs/issues?state=open). When creating an issue, provide a descriptive title, be as specific as possible and link to the document in question (If you can provide a link to the closest anchor to the issue, all the better). Here's an example:
 
         Title: api/DataViz/chart.md is missing an image
-        Description: Example 3 is missing an image right after the code sample. https://github.com/telerik/xaml-docs/issues?state=open
+        Description : Example 3 is missing an image right after the code sample. https://github.com/telerik/xaml-docs/issues?state=open
 
 > Note: When creating issues, please don't modify the assignee or milestone fields. Also, please create one issue per fix or change. "Bundled" entries will be deleted.
 

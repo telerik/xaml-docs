@@ -162,13 +162,13 @@ The __SerializationService__ manages the serialization and deserialization of it
 
 * __ItemDeserializing__ - this event occurs when a __RadDiagramItem__ is being deserialized.
 
->tip Please have in mind that the __RadDiagram__ uses a separate instance of the __SerializationService__, while external components, such as the __RadDiagramToolbox__ use the default instance of the service. This is why, if you use the __RadDiagram.ServiceLocator__ to get the default instance of the service and attach event handlers for the above events, you'll notice that they are only executed when external component serialize or deserialize __RadDiagramItems__. And if you want to handle the diagram internal serialization, it is better to use the __RadDiagram__ [serialization events](466077a9-dece-4adf-88b8-4509c39deed9#Serialization).		  
+>tip Please have in mind that the __RadDiagram__ uses a separate instance of the __SerializationService__, while external components, such as the __RadDiagramToolbox__ use the default instance of the service. This is why, if you use the __RadDiagram.ServiceLocator__ to get the default instance of the service and attach event handlers for the above events, you'll notice that they are only executed when external component serialize or deserialize __RadDiagramItems__. And if you want to handle the diagram internal serialization, it is better to use the __RadDiagram__ [serialization events]({%slug raddiagrams-features-serialization%}).		  
 
 ## SnappingService
 
 The __SnappingService__ manages the __Diagramming Framework__ snapping. It implements the __ISnappingService__ interface and exposes the __SnappingLinesCalculated__ event. The event provides an argument of type __SnappingLinesCalculatedEventArgs__ which holds the collections of vertical and horizontal snapping lines.	  
 
-The __SnappingService__ internally uses a __SnappingEngine__ to handle the snap operations. You can find more information about the engine in the [Align and Snap](9a62098d-d288-4f6a-971d-43e839452b09#SnappingEngine) article.	  
+The __SnappingService__ internally uses a __SnappingEngine__ to handle the snap operations. You can find more information about the engine in the [Align and Snap]({%slug raddiagrams-features-snap%}) article.	  
 
 ## ToolService
 

@@ -62,7 +62,7 @@ There are two ways you can contribute to the public Telerik UI for WPF/Silverlig
 
 You can generate a static web site from the Telerik UI for WPF/Silverlight the documentation and browse it locally.
 
-For the WPF documentaion:
+For the WPF documentaion :
 
  1. Clone the repository `git clone git@github.com:telerik/xaml-docs.git`
  2. Run `bundle install` (you must have ruby and bundler installed beforehand)

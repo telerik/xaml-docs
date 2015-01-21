@@ -43,7 +43,7 @@ The __MaskedInputExtensions__ class allows you to further customize the __Masked
 									Value="sample text" />
 	{{endregion}}
 
-![radmaskedinput-features-extensions-max Length](images/radmaskedinput_features_extensions_maxLength.png)
+	![radmaskedinput-features-extensions-max Length](images/radmaskedinput_features_extensions_maxLength.png)
 
 * The __MaskedInputExtensions.MinTextLength__ property allows you to define the minimum length of the input entered in the __RadMaskedTextInput__ control.            
 
@@ -99,7 +99,6 @@ The major difference that this property makes is when you initially have a negat
 The keyboard navigation of the RadMaskedInput suite of controls can be controlled by three properties: the native __IsTabStop__, the __SectionsNavigationMode__ and the attached __IsEditorTabStop__ properties. They can be set like this:        
 
 #### __XAML__
-
 {{region radmaskedinput-features-keyboard-mouse_1}}	
 	<StackPanel>
 	    <telerik:RadMaskedTextInput SectionsNavigationMode="None" />
@@ -111,6 +110,15 @@ The keyboard navigation of the RadMaskedInput suite of controls can be controlle
 {{endregion}}
 
 More information about the keyboard navigation can be found [here]({%slug radmaskedinput-features-keyboard-mouse%}).        
+
+## Set the caret position of the RadMaskedTextInput
+
+The __MaskedInputExtensions.CaretToEndOfTextOnFocus__ property allows you to configure the RadMaskedTextInput control, whether to place the caret at the beginning of the text or at the end of it, when the control is focused. If you set it to True the caret will be placed at the end of the text.
+
+#### __XAML__
+	<telerik:RadMaskedTextInput maskedInput:MaskedInputExtensions.CaretToEndOfTextOnFocus="True"/>
+
+>This property is designed to work only with the RadMaskedTextInput control.
 
 # See Also
  * [Common Features]({%slug radmaskedinput-features-common%})

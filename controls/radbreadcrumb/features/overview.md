@@ -14,7 +14,7 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 ## RadBreadcrumb common properties
 
-* __Header__- gets/sets the root element of the __Breadcrumb__ control
+* __Header__- gets/sets the root element of the __Breadcrumb__ control	
 
 * __CurrentItem__- is of type object and gets the current destination data item
 
@@ -52,6 +52,8 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 	![](images/breadcrumb_features_overview_itemimage.png)
 
+>Please avoid using the character set as a __PathSeparator__ in the __Header__ of the items, because this can lead to an unexpected behavior when you try to expand a path. Also, keep in mind that the __'\'__ character is the default PathSeparator.
+	
 # See Also
  * [Visual Structure]({%slug radbreadcrumb-visual-structure%})
  * [Getting Started]({%slug radbreadcrumb-getting-started%})

@@ -3,6 +3,7 @@ title: Telerik UI for WPF/Silverlight Documentation Repo
 publish: false
 ---
 
+
 # Telerik UI for WPF/Silverlight Public Documentation
 
 Welcome to the GitHub repo for [Telerik UI for WPF](http://www.telerik.com/wpf) and [Telerik UI for Silverlight](http://www.telerik.com/silverlight) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik UI for WPF Documentation at [docs.telerik.com/devtools/wpf](http://docs.telerik.com/devtools/wpf) and Telerik UI for Silverlight Documentation at [docs.telerik.com/devtools/silverlight](http://docs.telerik.com/devtools/silverlight). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.telerik.com/devtools/wpf](http://docs.telerik.com/devtools/wpf) / [docs.telerik.com/devtools/silverlight](http://docs.telerik.com/devtools/silverlight) where our content is prettified and searchable.

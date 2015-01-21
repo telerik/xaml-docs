@@ -42,7 +42,7 @@ If you add dates in the Selected dates collection, they should be valid with reg
 
 The following example selects all the work days (Monday to Friday) of the current month:
 
-#### __XAML__
+#### __C#__
 
 {{region radcalendar-basics_2}}
 	//Make sure that more than one date can be selected:

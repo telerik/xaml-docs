@@ -15,10 +15,11 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 ## List of all RadColorPicker SDK examples:
 
 {% if site.site_name == 'WPF' %}
-* __Custom palette view item tooltip__ - This project demonstrates how to use the PaletteItemsTemplate property of the ColorPicker. It is useful in data-binding scenarios where you need to apply a custom template on the PaletteViewItems. In this example is demonstarted how to use it to define a tooltip for the palette items.
+
+* __[Custom palette view item tooltip](https://github.com/telerik/xaml-sdk/tree/master/ColorPicker/CustomPaletteViewItemTooltip)__ - This project demonstrates how to use the PaletteItemsTemplate property of the ColorPicker. It is useful in data-binding scenarios where you need to apply a custom template on the PaletteViewItems. In this example is demonstarted how to use it to define a tooltip for the palette items.
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-* __Custom palette view item tooltip__ - This project demonstrates how to use the PaletteItemsTemplate property of the ColorPicker. It is useful in data-binding scenarios where you need to apply a custom template on the PaletteViewItems. In this example is demonstrated how to use it to define a tooltip for the palette items.
+* __[Custom palette view item tooltip](https://github.com/telerik/xaml-sdk/tree/master/ColorPicker/CustomPaletteViewItemTooltip)__ - This project demonstrates how to use the PaletteItemsTemplate property of the ColorPicker. It is useful in data-binding scenarios where you need to apply a custom template on the PaletteViewItems. In this example is demonstarted how to use it to define a tooltip for the palette items.
 {% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

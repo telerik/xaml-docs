@@ -164,7 +164,7 @@ When evaluating the actual value of a style property in one of the style propert
 1. If this is character or paragraph style property, and if the corresponding property from document's default Paragraph and Character settings stored in RadFlowDocument.DefaultStyles property has local value, this value is used.
             
 
->__*__If a style is of character or paragraph style type it takes into consideration the default style only if it is based on it.
+> __*__ If a style is of character or paragraph style type it takes into consideration the default style only if it is based on it.
           
 
 >tipSome of the style properties always have local value set.

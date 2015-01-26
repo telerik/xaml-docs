@@ -106,8 +106,34 @@ The __DataTranferService__ implements the __IDataTransferService__ interface. It
 
 ## DraggingService
 
-This service manages the translation of items on the surface.
+This service manages the translation of items on the surface. It exposes the following members:
 
+_Events_:
+* __StartDragging__ - occurs when user has done MouseDown on top of an item and has moved the mouse further than the __DiagramConstants.StartDragDelta__ constant.
+* __Dragging__ - invoked on every MouseMove while the mouse is still pressed and the StartDragging has occured.
+* __CompleteDragging__ - occures when Dragging is at least once invoked and the mouse is released.
+    
+>importantThe following events are only triggered for items that implement __IDragDropAware__ interface. Currently, only the __RadDiagramContainerShapes__ implement this interface by default.
+
+* __DragEnter__ - occurs when an object is dragged into the drop target's boundary.
+* __DragLeave__ - occurs when an object is dragged out of the drop target's boundary.
+* __Drop__ -  occurs when an object is dropped on the drop target.
+    
+    
+_Properties_:
+* __DragOverShape__ - of type IDragDropAware which gets the item that the user has dragged over.
+* __DraggingModels__ - of type IEnumerable<IDiagramItem> and gets the items that are being dragged.
+* __IsDragging__ - boolean flag indicating if a dragging operation is being currently executed.
+
+    
+_Methods_:
+* __InitializeDrag__ - this method accepts a point as parameter and prepares a drag operation from that point.
+* __StartDrag__ - a boolean method which starts a drag operation and invokes the StartDragging event. Returns __true__ if a drag can begin and __false__ if the Dragging event has not being handled.
+* __Drag__ - triggers the actual dragging logic and invokes the Dragging, DragEnter or DragLeave events.
+* __CompleteDrag__ - invokes the Drop and CompleteDragging events.
+* __CanDrag__ - a boolean method determing if a drag operation is possible. By default a drag is possible when the item is dragged further then the __DiagramConstants.StartDragDelta__ constant.
+
+   
 ## GroupService
 
 This service manages the grouping and ungrouping of items. More information about the __RadDiagram__ grouping feature you can find in the [Grouping]({%slug raddiagram-features-grouping%}) tutorial.		

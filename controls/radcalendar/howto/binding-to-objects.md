@@ -40,7 +40,7 @@ Here is the Xaml for the example:
 
 And the code-behind:
 
-#### __XAML__
+#### __C#__
 
 {{region radcalendar-binding-to-objects_1}}
 	using System;

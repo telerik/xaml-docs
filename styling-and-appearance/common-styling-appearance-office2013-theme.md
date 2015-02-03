@@ -15,7 +15,7 @@ position: 5
 The official Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new __external__ theme with a flat modern UI and three color variations – White, Light Gray, Dark Gray.
       
 
->importantThe theme is external which is why it can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
+>important Тhe VisualStudio2013 theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
         
 
 The following topic explains the specifics of the theme's color variations.

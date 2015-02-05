@@ -30,5 +30,3 @@ For example:
 {{endregion}}
 
 This will result in a red background for the merged header cells.
-
-![gridview merged cells 5](images/gridview_merged_cells_5.png)

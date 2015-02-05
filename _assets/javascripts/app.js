@@ -148,3 +148,7 @@ $(function(){
         $("#page-inner-content").toggleClass("move-inner-content");
     });
 });
+
+$(function(){
+    $('#toYear').text((new Date).getFullYear());
+});

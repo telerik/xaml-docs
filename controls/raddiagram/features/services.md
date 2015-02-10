@@ -111,7 +111,8 @@ This service manages the translation of items on the surface. It exposes the fol
 _Events_:
 * __StartDragging__ - occurs when user has done MouseDown on top of an item and has moved the mouse further than the __DiagramConstants.StartDragDelta__ constant.
 * __Dragging__ - invoked on every MouseMove while the mouse is still pressed and the StartDragging has occured.
-* __CompleteDragging__ - occures when Dragging is at least once invoked and the mouse is released.
+>tipIf grid snapping is activated this event will be invoked when a new snapped position is available.
+* __CompleteDragging__ - occures on mouse up if the __StartDragging__ has been raised.
     
 >importantThe following events are only triggered for items that implement __IDragDropAware__ interface. Currently, only the __RadDiagramContainerShapes__ implement this interface by default.
 

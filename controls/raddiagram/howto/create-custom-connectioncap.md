@@ -4,7 +4,7 @@ page_title: Create Custom ConnectionCap
 description: Create Custom ConnectionCap
 slug: raddiagram-howto-create-custom-connectioncap
 tags: create,custom,connectioncap
-published: True
+published: False
 position: 17
 ---
 

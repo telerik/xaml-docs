@@ -12,7 +12,7 @@ position: 3
 
 The __RadSplitButton__ control inherits from the __ContentControl__ control and implements the __ICommandSource__ interface. The __ICommandSource__ implementation allows you to attach commands to the button, that will be executed when the button is clicked.  
 
->tip To learn more about the members of the __RadSplitButton__ class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_radsplitbutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_radsplitbutton.html){% endif %}.
+>tip To learn more about the members of the __RadSplitButton__ class you can read {% if site.site_name == 'WPF' %}[here](http://docs.telerik.com/devtools/wpf/api/html/properties_t_telerik_windows_controls_radsplitbutton.htm){% endif %}{% if site.site_name == 'Silverlight' %}[here](http://docs.telerik.com/devtools/silverlight/api/html/properties_t_telerik_windows_controls_radsplitbutton.htm){% endif %}.
 
 >tip You can see how to use an ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 

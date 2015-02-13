@@ -261,6 +261,15 @@ Additionally you can specify the __TableLayoutType__ through RadFixedDocumentEdi
 
 For more detailed information on tables follow this link to [Table]({%slug radpdfprocessing-editing-table%}) documentation article.
         
+## Block elements
+
+The [IBlockElement](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_fixed_model_editing_flow_iblockelement.htm) interface allows you to easily draw and split some block content onto pages. The interface is implemented by [Block]({%slug radpdfprocessing-editing-block%}) and [Table]({%slug radpdfprocessing-editing-table%}) classes. You can easily add some block element instance with RadFixedDocumentEditor using InsertBlock() method like illustrated in Example 7.
+
+#### __[C#] Example 7: Insert Block Element__
+
+{{region radpdfprocessing-editing-radfixeddocumenteditor_6}}
+	editor.InsertBlock(blockElement);
+{{endregion}}
 
 # See Also
 

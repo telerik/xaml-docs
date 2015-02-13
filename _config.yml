@@ -262,7 +262,9 @@ navigation:
     controls/radchartview/series/cartesianchart-series:
         title: CartesianChart Series
     controls/radchartview/series/cartesianchart-series/bar-series:
-        title: Bar Series
+        title: Bar Series		
+    controls/radchartview/series/cartesianchart-series/bubble-series:
+        title: Bubble Series
     controls/radchartview/series/cartesianchart-series/financial-series:
         title: Financial Series
     controls/radchartview/series/cartesianchart-series/scatter-series:

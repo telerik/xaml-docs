@@ -47,32 +47,32 @@ Here is an example:
 #### __C#__
 {{region radmap-features-search_0}}
 	BingSearchProvider searchProvider;
-    ObservableCollection<MapItem> itemCollection = new ObservableCollection<MapItem>();
-    public Sample()
-    {
-        InitializeComponent();
-        this.searchProvider = new BingSearchProvider();
-        searchProvider.ApplicationId = "key";
-        searchProvider.MapControl = this.radMap;
-        searchProvider.SearchCompleted += this.searchProvider_SearchCompleted;
-
-        this.itemsLayer.ItemsSource = this.itemCollection;
-    }
+	MapItemsCollection itemCollection = new MapItemsCollection();
+	public Sample()
+	{
+	    InitializeComponent();
+	    this.searchProvider = new BingSearchProvider();
+	    searchProvider.ApplicationId = "key";
+	    searchProvider.MapControl = this.radMap;
+	    searchProvider.SearchCompleted += this.searchProvider_SearchCompleted;
+	
+	    this.itemsLayer.ItemsSource = this.itemCollection;
+	}
 {{endregion}}
 
 #### __VB.NET__
 {{region radmap-features-search_1}}
-    Private searchProvider As BingSearchProvider
-    Private itemCollection As New ObservableCollection(Of MapItem)()
-    Public Sub New()
-        InitializeComponent()
-        Me.searchProvider = New BingSearchProvider()
-        searchProvider.ApplicationId = "key"
-        searchProvider.MapControl = Me.radMap
-        searchProvider.SearchCompleted += Me.searchProvider_SearchCompleted
+	Private searchProvider As BingSearchProvider
+	Private itemCollection As New MapItemsCollection()
+	Public Sub New()
+		InitializeComponent()
+		Me.searchProvider = New BingSearchProvider()
+		searchProvider.ApplicationId = "key"
+		searchProvider.MapControl = Me.radMap
+		searchProvider.SearchCompleted += Me.searchProvider_SearchCompleted
 
-        Me.itemsLayer.ItemsSource = Me.itemCollection
-    End Sub
+		Me.itemsLayer.ItemsSource = Me.itemCollection
+	End Sub
 {{endregion}}
 
 In order to execute search you have to call the __SearchAsync()__ method of the __BingSearchProvider__ and pass a __SearchRequest__ object to it. For example, if you have UI that consists of a __TextBox__ named "__SearchBox__" and a button, upon which click a search should be executed, here is how the code for the button's __Click__ event handler should look.        

@@ -15,19 +15,15 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 ## List of all RadPersistenceFramework SDK examples:
 
 {% if site.site_name == 'WPF' %}
-* __GridView serialization__ - This example demonstrates custom serialization of properties for the RadGridView control.Sorting and Grouping, width and position of the columns will be serialized.
 
-* __Native controls__ - This example demonstrates persisting and restoring properties of the intrinsic Silverlight or WPF controls.
-
-* __Zip integration__ - This example demonstrates the integration between the Persistence framework and the Zip library for providing an output stream object with compressed size.
+* __[GridView serialization](https://github.com/telerik/xaml-sdk/tree/master/PersistenceFramework/GridViewSerialization)__ - This example demonstrates custom serialization of properties for the RadGridView control.Sorting and Grouping, width and position of the columns will be serialized.
+* __[Native controls](https://github.com/telerik/xaml-sdk/tree/master/PersistenceFramework/NativeControls)__ - This example demonstrates persisting and restoring properties of the intrinsic Silverlight or WPF controls.
+* __[Zip integration](https://github.com/telerik/xaml-sdk/tree/master/PersistenceFramework/ZipIntegration)__ - This example demonstrates the integration between the Persistence framework and the Zip library for providing an output stream object with compressed size.
 {% endif %}
-
 {% if site.site_name == 'Silverlight' %}
-* __GridView serialization__ - This example demonstrates custom serialization of properties for the RadGridView control.Sorting and Grouping, width and position of the columns will be serialized.
-
-* __Native controls__ - This example demonstrates persisting and restoring properties of the intrinsic Silverlight or WPF controls.
-
-* __Zip integration__ - This example demonstrates the integration between the Persistence framework and the Zip library for providing an output stream object with compressed size.
+* __[GridView serialization](https://github.com/telerik/xaml-sdk/tree/master/PersistenceFramework/GridViewSerialization)__ - This example demonstrates custom serialization of properties for the RadGridView control.Sorting and Grouping, width and position of the columns will be serialized.
+* __[Native controls](https://github.com/telerik/xaml-sdk/tree/master/PersistenceFramework/NativeControls)__ - This example demonstrates persisting and restoring properties of the intrinsic Silverlight or WPF controls.
+* __[Zip integration](https://github.com/telerik/xaml-sdk/tree/master/PersistenceFramework/ZipIntegration)__ - This example demonstrates the integration between the Persistence framework and the Zip library for providing an output stream object with compressed size.
 {% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

@@ -25,7 +25,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
->In order to use __RadTreeView__ in your projects you have to add references to the following two assemblies:
+>In order to use __RadTreeView__ in your projects you have to add references to the following assemblies:
 >* __Telerik.Windows.Controls__
 >* __Telerik.Windows.Controls.Navigation__
 >* __Telerik.Windows.Data__

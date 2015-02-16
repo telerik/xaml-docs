@@ -11,8 +11,26 @@ position: 1
 # List Styles
 
 
-
+A list represents a set of properties which are used to describe the appearance and behavior of a set of numbered paragraphs. All lists are kept in **ListManager**, accessible through **RadDocument’s ListManager** property.
 __RadRichTextBox__ has support for bulleted, numbered and multilevel lists. In addition, you have the ability to create custom list styles and add them to the list styles gallery.
+
+In this article you will find:
+
+* [User Interface](#user-interface)
+
+* [List Style Overview](#list-style-overview)
+
+* [List Level Style Overview](#list-level-style-overview)
+
+* [Document List Overview](#document-list-overview)
+
+* [List Manager Overview](#list-manager-overview)
+
+* [Predefined Lists in RadRichTextBox](#predefined-lists-in-radRichTextBox)
+
+* [Create List Programmatically](#create-list-programmatically)
+
+* [Apply List](#apply-list)
 
 ## User Interface
 
@@ -30,120 +48,247 @@ After defining your new style, it is added to the list gallery and can easily be
 
 ![Rad Rich Text Box Features List Styles 03](images/RadRichTextBox_Features_List_Styles_03.png)
 
-## Creating Lists Programmatically
 
-The default list styles come handy, as they require little to no effort on your part, but you can create your own using the API. The functionality you need to use is located in the __DocumentList__, __ListStyle__ and __ListLevelStyle__ classes. Here are the steps you need to follow in order to create a new list:
+## List Style Overview
 
-1. Create a new instance of __ListStyle__. You can see that the __ListStyle__ class has a static readonly field __ListLevels__ that keeps the number of levels that the default lists can have (9). It is recommended that you allow your lists to have that many levels for uniformity and for prettier conversion between list types.
+The **ListStyle** class contains the structure corresponding to a list and exposes the following properties: 
 
-1. Define a __ListLevelStyle__ for each level depending on the way you wish your bullet or number to appear, and add it to the __Levels__ property. The customization options are presented by several properties. In the example below, these are specified:
+* **ID**: The Id of the list.
+* **Levels**: [NotifiableCollection](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_utils_notifiablecollection_1.htm) representing the **ListLevelStyle** objects related to the list. Every List can contain up to 9 levels.
+* **StyleLink**: Specifies the numbering style associated with the list.
+* **IsDefault**: Indicates if the list is registered in the default lists styles and it is [implemented out of the box](#predefined-lists-in-radrichtextbox). Such list won’t be shown in the List Styles Gallery.
 
-    * __StartingIndex__ – should the list start at 0 or 1 for example;
 
-    * __NumberingFormat__ – the numbering format that you wish to use. The available numbering formats are defined as an enum called __ListNumberingFormat__. The options provided are: *Bullet*, *Decimal*, *UpperLetter*, *LowerLetter*, *UpperRoman* and *LowerRoman*.
+## List Level Style Overview
 
-    * __LevelText__ - the string format that you would like the numbers/bullets to appear in at each level. Using this property, you can set if you wish the list item to contain the numbers of its predecessors (like in the NumberedHierarchical list style) or not (like in the other predefined list styles)
+The class, which contains the structure corresponding to the list level is **ListLevelStyle**. The exposed properties specify the appearance and behavior of the associated numbered paragraphs:
 
-    * __Indent__ – affects the indent of each level.
+* **StartIndex**: Specifies the starting number of a **ListLevelStyle**.
+* **NumberingFormat**: Specifies the numbering format of a list level, described in [ListNumberingFormat](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_ListNumberingFormat.htm) enumeration. It can be a number, bullet, letter, etc. The default value is **ListNumberingFormat.Bullet**.
+* **LevelText**: Specifies the number format string for a list level.
+* **StyleName**: Specifies the name of the [paragraph style](http://localhost/devtools/wpf/controls/radrichtextbox/features/styles/styles#paragraph-style) associated with the list level. **ListLevelStyle** can be associated only with paragraph style.
+* **SpanProperties**: Represent the associated [span properties](http://docs.telerik.com/devtools/wpf/api/html/Properties_T_Telerik_Windows_Documents_Model_Span.htm).
+* **FontFamily**: Specifies the font-family for the level text. Its short property from the **SpanProperties** of a list level.
+* **FontWeight**: Specifies the font-weight for the level text. Its short property from the **SpanProperties** of a list level.
+* **ForeColor**: Specifies the fore-color for the level text. Its short property from the **SpanProperties** of a list level.
+* **Indent**: Specifies the left indentation.
+* **HangingIndent**: Specifies the hanging indent.
 
-1. Create a __DocumentList__ and in the constructor pass the appropriate __ListStyle__ object. The __DocumentList__ is the object that knows how the list should look (this is specified by the __ListStyle__ which we pass through the constructor) and which paragraphs are part of it. You add a paragraph to a __DocumentList__ by setting paragraph’s __ListId__ property to the ID of the __DocumentList__.
 
-Here as an example of creating a __ListStyle__ and a __DocumentList__ programmatically:
+## Document List Overview
+
+[DocumentList](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_DocumentList.htm) is the connection point between the paragraphs and a list style inside a document. Its Id is referenced in the [Paragraph](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm).ListId property. Additionally, the class provides functionality to easily associate a paragraph with list style.
+
+* **ID**: The Id of the document list.
+* **StyleId**: Represents the Id of the **ListStyle**.
+* **Style**: Specifies the **ListStyle**.
+* **Document**: Reference to the owner [RadDocument](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocument.htm).
+
+
+## List Manager Overview
+
+[ListManager](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_ListManager.htm) is the structure holding all ListStyles and DocumentLists. Can be accessed through **RadDocument’s ListManager** property.
+
+
+## Predefined Lists in RadRichTextBox
+
+There are some predefined lists in RadRichTextBox:
+
+* None
+* Bulleted
+* Numbered
+* Numbered 
+* Parenthesis
+* Numbered Hierarchical. 
+
+They can be accessed through the [DefaultListStyles](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_DefaultListStyles.htm) static class. 
+
+
+## Create List Programmatically 
+
+In this section you will find how to create a list, customize its properties and insert it in a document. 
+
+Step 1: Define new instance of RadDocument and add Section in it:
 
 #### __C#__
 
-{{region radrichtextbox-features-list-styles_0}}
-	ListStyle upperRomanHierarchical = new ListStyle();
-	upperRomanHierarchical.StyleLink = "Style1";
-	
-	for (int i = 0; i < ListStyle.ListLevels; ++i)
+{{region radrichtextbox-features-lists_0}}
+	RadDocument document = new RadDocument();
+	Section section = new Section();
+	document.Sections.Add(section);
+{{endregion}}
+
+#### __VB.NET__
+
+{{region radrichtextbox-features-lists_1}}
+	Dim document = New RadDocument();
+	Dim section = New Section()
+	document.Sections.Add(section)
+{{endregion}}
+
+
+Step 2: Create list
+
+#### __C#__
+
+{{region radrichtextbox-features-lists_2}}
+	ListStyle list = new ListStyle();
+{{endregion}}
+
+#### __VB.NET__
+
+{{region radrichtextbox-features-lists_3}}
+	Dim list = new ListStyle()
+{{endregion}}
+
+Step 3: Add the list levels to the list
+
+Initially, the list doesn’t have any associated list levels. The possible list levels in a list are 9.
+
+#### __C#__
+
+{{region radrichtextbox-features-lists_4}}
+	for (int i = 0; i < 9; i++)
 	{
-		StringBuilder levelText = new StringBuilder();
-		for (int j = 0; j < i + 1; ++j)
-		{
-			levelText.Append("{" + j + "}.");
-		}
-	
-		upperRomanHierarchical.Levels.Add(new ListLevelStyle()
-		{
-			StartingIndex = 1,
-			NumberingFormat = ListNumberingFormat.UpperRoman,
-			LevelText = levelText.ToString(),
-			Indent = 48 + i * 24
-		});
+	    ListLevelStyle listLevel = new ListLevelStyle();
+	    list.Levels.Add(levelIndex);
 	}
 {{endregion}}
 
-
-
 #### __VB.NET__
 
-{{region radrichtextbox-features-list-styles_1}}
-    Dim upperRomanHierarchical As New ListStyle()
-			upperRomanHierarchical.StyleLink = "Style1"
-
-			For i As Integer = 0 To ListStyle.ListLevels - 1
-    Dim levelText As New StringBuilder()
-				For j As Integer = 0 To i
-					levelText.Append("{" & j & "}.")
-				Next j
-
-				upperRomanHierarchical.Levels.Add(New ListLevelStyle() With {.StartingIndex = 1, .NumberingFormat = ListNumberingFormat.UpperRoman, .LevelText = levelText.ToString(), .Indent = 48 + i * 24})
-			Next i
+{{region radrichtextbox-features-lists_5}}
+	For i As Integer = 0 To 8
+	    Dim listLevel = New ListLevelStyle()
+	    list.Levels.Add(listLevel)
+	Next
 {{endregion}}
 
-
-
-## Applying List Style Programmatically
-
-After creating a __ListStyle__ you need to add it to the document. Besides using the UI you can do that through code the method of RadDocument __AddCustomListStyle(ListStyle	listStyle)__. You just pass the style you created and it gets added to the document. It will also be visible in the List Styles gallery.
-
-If you want to apply a style to a paragraph using the user interface you would move the caret to the paragraph and click the appropriate ListStyle in the gallery. In code behind things are similar. First you need a reference to the paragraph you want to be added to a list. Let's say you need the current paragraph (in which the caret position resides). The code is as follows:
+Step 4: Customize list level. 
 
 #### __C#__
 
-{{region radrichtextbox-features-list-styles_2}}
-	Paragraph paragraph = this.radRichTextBox.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph;
+{{region radrichtextbox-features-lists_6}}
+	for (int levelIndex = 0; levelIndex < 9; levelIndex++)
+	{
+	    bool isEven = (levelIndex % 2) == 0;
+	    list.Levels[levelIndex].StartingIndex = 1;
+	    list.Levels[levelIndex].NumberingFormat = ListNumberingFormat.Decimal;
+	    list.Levels[levelIndex].LevelText = isEven ? "{" + levelIndex + "}." : "o";
+	    list.Levels[levelIndex].Indent = 48 + (levelIndex * 24);
+	}
 {{endregion}}
-
-
 
 #### __VB.NET__
 
-{{region radrichtextbox-features-list-styles_3}}
-    Dim paragraph As Paragraph = Me.radRichTextBox.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph
+{{region radrichtextbox-features-lists_7}}
+	For levelIndex As Integer = 0 To 8
+	    Dim isEven As Boolean = (levelIndex Mod 2) = 0
+	    list.Levels(levelIndex).StartingIndex = 1
+	    list.Levels(levelIndex).NumberingFormat = ListNumberingFormat.Decimal
+	    list.Levels(levelIndex).LevelText = If(isEven = True, "{" + levelIndex.ToString() + "}.", "o")
+	    list.Levels(levelIndex).Indent = 48 + (levelIndex * 24)
+	Next
 {{endregion}}
 
 
+>Note: It is mandatory the level text to be in the format “{levelIndex}”, where levelIndex is the list level index. Otherwise, the level text may not be shown correctly.
 
-All you have to do now is set the __ListId__ property of the paragraph. However this id should be the ID of a __DocumentList__ that uses the new __ListStyle__. This document list is created automatically when using the user interface, but in code you have to create it on your own.
 
-As the logic of creating a custom list style is rather complex, the method __AddCustomListStyle__ does that and returns an instance of ListStyle which is different from the one you passed. When creating the new document list you need to pass the list style returned from this method. So creating a document list look like this:
+Step 5: Add the list to the document
+
+You can insert two types of lists: Simple and Custom. Creating Custom lists,will allow you to [use the UI to modify the list](#user-interface), while the Simple  type does not allow this. 
+
+Here is how to add simple list to the document:
 
 #### __C#__
 
-{{region radrichtextbox-features-list-styles_4}}
-	ListStyle newListStyle = this.radRichTextBox.Document.AddCustomListStyle(upperRomanHierarchical);
-	DocumentList documentList = new DocumentList(newListStyle, this.radRichTextBox.Document);
+{{region radrichtextbox-features-lists_8}}
+	DocumentList documentList = new DocumentList(list, document);
 {{endregion}}
-
-
 
 #### __VB.NET__
 
-{{region radrichtextbox-features-list-styles_5}}
-    Dim newListStyle As ListStyle = Me.radRichTextBox.Document.AddCustomListStyle(upperRomanHierarchical)
-    Dim documentList As New DocumentList(newListStyle, Me.radRichTextBox.Document)
+{{region radrichtextbox-features-lists_9}}
+	Dim documentList = New DocumentList(list, document)
 {{endregion}}
 
-
-
-Having the new __DocumentList__ all you have to do in order the paragraph to be added to the list is to set it's __ListId__ property to the ID of the new __DocumentList__:
+And how to add custom list:
 
 #### __C#__
 
-{{region radrichtextbox-features-list-styles_6}}
-	paragraph.ListId = documentList.ID;
+{{region radrichtextbox-features-lists_10}}
+	ListStyle newList = document.AddCustomListStyle(list);
+	DocumentList documentList = new DocumentList(newList, document);
 {{endregion}}
 
+#### __VB.NET__
 
+{{region radrichtextbox-features-lists_11}}
+    Dim newList = document.AddCustomListStyle(list)
+    Dim documentList = New DocumentList(newList, document)
+{{endregion}}
+
+## Apply List
+
+Once the list is created it can be applied over set of paragraphs by setting the ListId property of the paragraph to the document lists’ id.
+
+Approach 1: Apply the required paragraph properties on your own.
+
+#### __C#__
+
+{{region radrichtextbox-features-lists_12}}
+    for (int levelIndex = 0; levelIndex < list.Levels.Count; levelIndex++)
+    {
+        Paragraph paragraph = new Paragraph();
+        document.Sections.First.Blocks.Add(paragraph);
+        paragraph.Inlines.Add(new Span(string.Format("ListLevel: {0}", levelIndex + 1)));
+        paragraph.ListId = documentList.ID;
+        paragraph.ListLevel = levelIndex;
+    }
+{{endregion}}
+
+#### __VB.NET__
+
+{{region radrichtextbox-features-lists_13}}
+	For levelIndex As Integer = 0 To (list.Levels.Count - 1)
+	    Dim paragraph = New Paragraph()
+	    section.Blocks.Add(paragraph)
+	    paragraph.Inlines.Add(New Span(String.Format("ListLevel: {0}", levelIndex + 1)))
+	    paragraph.ListId = documentList.ID
+	    paragraph.ListLevel = levelIndex
+	Next
+{{endregion}}
+
+Approach 2: Pass the level Index and the paragraph to the DocumentList.AddParagraph method. By doing that the document list will automatically apply the required properties over the paragraph.
+
+#### __C#__
+
+{{region radrichtextbox-features-lists_14}}
+	for (int levelIndex = 0; levelIndex < list.Levels.Count; levelIndex++)
+	{
+	    Paragraph paragraph = new Paragraph();
+	    document.Sections.First.Blocks.Add(paragraph);
+	    paragraph.Inlines.Add(new Span(string.Format("ListLevel: {0}", levelIndex + 1)));
+	    documentList.AddParagraph(paragraph, levelIndex);
+	}
+{{endregion}}
+
+#### __VB.NET__
+
+{{region radrichtextbox-features-lists_15}}
+	For levelIndex As Integer = 0 To list.Levels.Count
+	    Dim paragraph = New Paragraph()
+	    section.Blocks.Add(paragraph)
+	    paragraph.Inlines.Add(New Span(String.Format("ListLevel: {0}", levelIndex + 1)))
+	    documentList.AddParagraph(paragraph, levelIndex)
+	Next
+{{endregion}}
+
+Figure 1: The result of the created list.
+
+![](images/RadRichTextBox_lists_example_01.png)
+
+# See Also
+
+ * [Formatting API]({%slug radrichtextbox-features-formatting-api%})

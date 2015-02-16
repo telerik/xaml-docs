@@ -15,6 +15,7 @@ This tutorial describes how to use a custom property provider to define the prop
 The __PersistenceFramework__ exposes an extension method that allows you to register a class to act as a property provider and define which properties of a persisted control should be saved and how. The method has the following syntax:	  
 
 #### __C#__
+
     ServiceProvider.RegisterPersistenceProvider<ICustomPropertyProvider>(System.Type type, Telerik.Windows.Persistence.Services.IPersistenceProvider provider);
 
 You need to pass as arguments the type of the component that will use the custom property provider and an instance of the custom property provider class.  
@@ -42,41 +43,42 @@ The __PersistenceFramework__ provides an __ICustomPropertyProvider__ interface w
 You can implement the above methods in a custom property provider class as follows:		
 
 #### __C#__
+
 {{region persistence-framework-custom-property-provider-1}}
-	public class SampleCustomPropertyProvider : ICustomPropertyProvider
-	{	
-		public CustomPropertyInfo[] GetCustomProperties()
-		{
-			// Create an array of CustomPropertyInfo objects to describe which properties should be persisted 
-			return new CustomPropertyInfo[]
-			{
-				//Add CustomPropertyInfo objects
-			};
-		}
+    public class SampleCustomPropertyProvider : ICustomPropertyProvider
+    {	
+        public CustomPropertyInfo[] GetCustomProperties()
+        {
+            // Create an array of CustomPropertyInfo objects to describe which properties should be persisted 
+            return new CustomPropertyInfo[]
+            {
+                //Add CustomPropertyInfo objects
+            };
+        }
 
-		public void InitializeObject(object context)
-		{
-			//Set the persisted component in a state such that it is ready to take the persisted settings
-		}
+        public void InitializeObject(object context)
+        {
+            //Set the persisted component in a state such that it is ready to take the persisted settings
+        }
 
-		public object InitializeValue(CustomPropertyInfo customPropertyInfo, object context)
-		{
-			//Return a default value for the properties which the PersistenceFramework failed to restore
-		}
+        public object InitializeValue(CustomPropertyInfo customPropertyInfo, object context)
+        {
+            //Return a default value for the properties which the PersistenceFramework failed to restore
+        }
 
-		public object ProvideValue(CustomPropertyInfo customPropertyInfo, object context)
-		{
-			//Implement a logic that returns an object describing a property. 
-			//Note that this event is fired once for each property from the array returned by the GetCustomProperties() method. 
-			//Therefore you need to implement a logic that returns a separate object for each property.
-		}
+        public object ProvideValue(CustomPropertyInfo customPropertyInfo, object context)
+        {
+            //Implement a logic that returns an object describing a property. 
+            //Note that this event is fired once for each property from the array returned by the GetCustomProperties() method. 
+            //Therefore you need to implement a logic that returns a separate object for each property.
+        }
 
-		public void RestoreValue(CustomPropertyInfo customPropertyInfo, object context, object value)
-		{
-			//Use the value argument to get the persisted settings.
-			//Apply these settings on the context object as it represents the persisted component
-		}	
-	}
+        public void RestoreValue(CustomPropertyInfo customPropertyInfo, object context, object value)
+        {
+            //Use the value argument to get the persisted settings.
+            //Apply these settings on the context object as it represents the persisted component
+        }	
+    }
 {{endregion}}
 
 #### __VB.NET__

@@ -106,8 +106,35 @@ The __DataTranferService__ implements the __IDataTransferService__ interface. It
 
 ## DraggingService
 
-This service manages the translation of items on the surface.
+This service manages the translation of items on the surface. It exposes the following members:
 
+_Events_:
+* __StartDragging__ - occurs when user has done MouseDown on top of an item and has moved the mouse further than the __DiagramConstants.StartDragDelta__ constant.
+* __Dragging__ - invoked on every MouseMove while the mouse is still pressed and the StartDragging has occured.
+>tipIf grid snapping is activated this event will be invoked when a new snapped position is available.
+* __CompleteDragging__ - occures on mouse up if the __StartDragging__ has been raised.
+    
+>importantThe following events are only triggered for items that implement __IDragDropAware__ interface. Currently, only the __RadDiagramContainerShapes__ implement this interface by default.
+
+* __DragEnter__ - occurs when an object is dragged into the drop target's boundary.
+* __DragLeave__ - occurs when an object is dragged out of the drop target's boundary.
+* __Drop__ -  occurs when an object is dropped on the drop target.
+    
+    
+_Properties_:
+* __DragOverShape__ - of type IDragDropAware which gets the item that the user has dragged over.
+* __DraggingModels__ - of type IEnumerable<IDiagramItem> and gets the items that are being dragged.
+* __IsDragging__ - boolean flag indicating if a dragging operation is being currently executed.
+
+    
+_Methods_:
+* __InitializeDrag__ - this method accepts a point as parameter and prepares a drag operation from that point.
+* __StartDrag__ - a boolean method which starts a drag operation and invokes the StartDragging event. Returns __true__ if a drag can begin and __false__ if the Dragging event has not being handled.
+* __Drag__ - triggers the actual dragging logic and invokes the Dragging, DragEnter or DragLeave events.
+* __CompleteDrag__ - invokes the Drop and CompleteDragging events.
+* __CanDrag__ - a boolean method determing if a drag operation is possible. By default a drag is possible when the item is dragged further then the __DiagramConstants.StartDragDelta__ constant.
+
+   
 ## GroupService
 
 This service manages the grouping and ungrouping of items. More information about the __RadDiagram__ grouping feature you can find in the [Grouping]({%slug raddiagram-features-grouping%}) tutorial.		
@@ -162,13 +189,13 @@ The __SerializationService__ manages the serialization and deserialization of it
 
 * __ItemDeserializing__ - this event occurs when a __RadDiagramItem__ is being deserialized.
 
->tip Please have in mind that the __RadDiagram__ uses a separate instance of the __SerializationService__, while external components, such as the __RadDiagramToolbox__ use the default instance of the service. This is why, if you use the __RadDiagram.ServiceLocator__ to get the default instance of the service and attach event handlers for the above events, you'll notice that they are only executed when external component serialize or deserialize __RadDiagramItems__. And if you want to handle the diagram internal serialization, it is better to use the __RadDiagram__ [serialization events](466077a9-dece-4adf-88b8-4509c39deed9#Serialization).		  
+>tip Please have in mind that the __RadDiagram__ uses a separate instance of the __SerializationService__, while external components, such as the __RadDiagramToolbox__ use the default instance of the service. This is why, if you use the __RadDiagram.ServiceLocator__ to get the default instance of the service and attach event handlers for the above events, you'll notice that they are only executed when external component serialize or deserialize __RadDiagramItems__. And if you want to handle the diagram internal serialization, it is better to use the __RadDiagram__ [serialization events]({%slug raddiagrams-features-serialization%}).		  
 
 ## SnappingService
 
 The __SnappingService__ manages the __Diagramming Framework__ snapping. It implements the __ISnappingService__ interface and exposes the __SnappingLinesCalculated__ event. The event provides an argument of type __SnappingLinesCalculatedEventArgs__ which holds the collections of vertical and horizontal snapping lines.	  
 
-The __SnappingService__ internally uses a __SnappingEngine__ to handle the snap operations. You can find more information about the engine in the [Align and Snap](9a62098d-d288-4f6a-971d-43e839452b09#SnappingEngine) article.	  
+The __SnappingService__ internally uses a __SnappingEngine__ to handle the snap operations. You can find more information about the engine in the [Align and Snap]({%slug raddiagrams-features-snap%}) article.	  
 
 ## ToolService
 

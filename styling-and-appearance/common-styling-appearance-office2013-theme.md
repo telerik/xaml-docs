@@ -15,7 +15,7 @@ position: 5
 The official Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new __external__ theme with a flat modern UI and three color variations – White, Light Gray, Dark Gray.
       
 
->importantThe theme is external which is why it can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
+>important Тhe Office2013 theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
         
 
 The following topic explains the specifics of the theme's color variations.
@@ -122,3 +122,6 @@ For example, if you want to set the __DarkGray__ color variation, you should hav
 |EffectHigh|33000000|33000000|800072C6|
 |EffectAccentLow|330072C6|330072C6|330072C6|
 |EffectAccentHigh|800072C6|800072C6|800072C6|
+
+# See Also
+ * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

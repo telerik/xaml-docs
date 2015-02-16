@@ -15,7 +15,7 @@ position: 6
 The official Q2 2014 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new theme inspired by the Visual Studio design with three color variations – Light, Dark and Blue.
       
 
->importantNote that the VisualStudio2013 theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
+>important Тhe VisualStudio2013 theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
         
 
 The following topic explains the specifics of the theme's color variations.
@@ -81,23 +81,37 @@ Below you can find the differences between the three color variations. Every bru
 
 Here you can find more details about each brush and where it is usually applied.
 
-The first four colors have the same value in the three color variations and they are commonly used among all controls: 
+The first four colors have the same value in the three color variations and they are commonly used among all controls:  
+* __AccentMainBrush__ is blue by default and it is the main accent brush for the theme
+* __AccentDarkBrush__ is blue by default and it is the darker accent brush for the theme
+* __SelectedBrush__ is white by default and is the main color for text or paths which are over elements with accent background
+* __ValidatonBrush__ is red by default and it is the brush used for validation where such is applicable in our controls
 
 The colors that have different HEX value can be ordered by purpose.
 
-First we needed another accent brush which has the same value as AccentDarkBrush for the Light and Dark color variations of VisualStudio2013 theme, but orange in the Blue color variation. This was necessary due to our aim to be as much closer as possible to the Visual Studio's product design.
+First we needed another accent brush which has the same value as AccentDarkBrush for the Light and Dark color variations of VisualStudio2013 theme, but orange in the Blue color variation. This was necessary due to our aim to be as much closer as possible to the Visual Studio's product design.  
+* __AccentBrush__ - another accent brush, usually used for border of elements in their MouseOver, Active, Toggled or Focused state. 
 
 There are two brushes usually used for foregrounds: 
+* __MarkerBrush__ - the main brush used for text color, also path's fill in MouseOver state
+* __StrongBrush__ - paths' and ticks' fill in Normal state, also ReadOnly text
 
-There are six brushes usually used for background and border color:
+There are six brushes usually used for background and border color:  
+* __MainBrush__ - brush used for background of controls with direct input such as TextBox, MaskedInput, Editable ComboBox, AutoCompleteBox, PasswordBox. Also used as main background of elements that has different content with unpredictable background (PrimaryBrush or AlternativeBrush).
+* __PrimaryBrush__ - brush used for background of most of the controls that have no direct input in their normal state.
+* __AlternativeBrush__ - brush used as alternative background of PrimaryBrush. Also used as background of Popups and DropDowns.
+* __MouseOverBrush__ - brush used for background of elements that are in MouseOver state.
+* __BasicBrush__ - brush widely used for border color of controls in their Normal state.
+* __SemiBasicBrush__ - the same brush as BasicBrush with 40% opacity, used for background of elements that are in MouseOver state.
 
-Some controls such as Window, RibbonView, ScheduleView, Docking Pane, Docking ToolWindow, TileView have headers with a specific brush for background:
+Some controls such as Window, RibbonView, ScheduleView, Docking Pane, Docking ToolWindow, TileView have headers with a specific brush for background:  
+* __HeaderBrush__ - brush used for background of headers
 
 Additional brush is introduced rarely used for elements in Disabled state:
+* __ComplementaryBrush__
 
 The following screenshot shows the usage of some of the brushes:
 ![Common Styling Appearance VS 2013 Theme 01](images/Common_Styling_Appearance_VS2013_Theme_01.png)
 
 # See Also
-
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

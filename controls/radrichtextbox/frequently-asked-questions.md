@@ -27,9 +27,10 @@ This topic aims to answer some of the frequently asked questions about the use o
 ## Assembly References
 
 In order to use __RadRichTextBox__ in your project, you need to add a reference to the __Telerik.Windows.Controls__, __Telerik.Windows.Data__, __Telerik.Windows.Documents__, __Telerik.Windows.Documents.Core__, __Telerik.Windows.Documents.Flow__ and __System.ComponentModel.Composition__ assemblies.
-        
 
-You can find more info[here]({%slug installation-installing-controls-dependencies%}).
+{% if site.site_name == 'Silverlight' %}You can find more info[here]({%slug installation-installing-controls-dependencies%}).{% endif %}
+
+{% if site.site_name == 'WPF' %}You can find more info[here]({%slug installation-installing-controls-dependencies-wpf%}).{% endif %}
         
 
 ## Setting Default Style Settings on the Document

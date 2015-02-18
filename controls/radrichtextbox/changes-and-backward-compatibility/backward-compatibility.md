@@ -14,6 +14,16 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading to a specific version of the controls to the next one.
 
+## What's Different in 2015 Q1 - 2015.1.0225
+
+### Changed
+
+If a [Span]({%slug radrichtextbox-features-document-elements-span%}) with Text line break symbol “¬” or page break symbol “◊” is inserted, a break will not be inserted.
+
+### What to do now
+
+To insert a Break, you could use the InsertLineBreak() or InsertPageBreak() as before, or to create a [Break]({%slug radrichtextbox-features-document-elements-break%}) element and insert it in a [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%}).
+
 ## What's Different in 2014 Q1 - 2014.1.0226
 
 There are no breaking changes in this version of the control.

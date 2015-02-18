@@ -10,7 +10,7 @@ position: 6
 
 # Loading Data from WCF Services
 
-The purpose of this tutorial is to show you how to populate __RadGridView__with data from a __WCF Service__ in two ways:
+The purpose of this tutorial is to show you how to populate __RadGridView__ with data from a __WCF Service__ in two ways:
 
 * A straight-forward way - [plain method calls](#Plain_Method_Calls). 
 

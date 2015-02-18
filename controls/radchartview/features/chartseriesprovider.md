@@ -17,7 +17,7 @@ In this help topic you will learn what mechanism for automatic series generation
 
 ## Overview
 
-RadCartesianChart and RadPolar chart can create a dynamic number of series depending on the data (collection of collections). To take advantage of this feautre, you need to create a __ChartSeriesProvider__ object. This will be the object that receives the data and holds the __ChartSeriesDescriptors__ – objects that define the specific properties of the dynamically generated series.
+RadCartesianChart and RadPolar chart can create a dynamic number of series depending on the data (collection of collections). To take advantage of this feature, you need to create a __ChartSeriesProvider__ object. This will be the object that receives the data and holds the __ChartSeriesDescriptors__ – objects that define the specific properties of the dynamically generated series.
         
 
 __ChartSeriesDescriptor__  is an abstract class. You need to create an instance of one of its inheritors depending on the series you need to produce:

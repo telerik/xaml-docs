@@ -75,6 +75,7 @@ You can easily change the cell's presentation by using the following properties:
 
 * __Background__: Specifies the background of the cell. If null the cell uses the background from table's DefaultCellProperties.
             
+* __PreferredWidth__: Specifies the preferred width of the cell. The final width of the cell may be bigger of the set value in case when other cell from the same column requires bigger PreferredWidth.
 
 __Example 3__ demonstrates how to set locally the cell properties to a specific cell. This helps achieve different appearance for this cell by changing its borders and background. Additionally the cell will span onto two rows and two columns.
         

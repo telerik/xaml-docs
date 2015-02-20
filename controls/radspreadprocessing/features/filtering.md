@@ -432,3 +432,5 @@ Setting the __FilteredRange__ property to null without removing the filters befo
  * [What is a Worksheet?]({%slug radspreadprocessing-working-with-worksheets-what-is-worksheet%})
 
  * [Document Themes]({%slug radspreadprocessing-features-styling-document-themes%})
+
+ * [Grouping]({%slug radspreadprocessing-features-grouping%})

@@ -31,6 +31,8 @@ This article aims to present the API of the Selection class and demonstrate how 
 
 * [Filling the Selection with Data](#filling-the-selection-with-data)
 
+* [Using Selection to Complete Formulas](#using-selection-to-complete-formulas)
+
 ## What is UI Selection?
 
 In order to interact with the working surface of RadSpreadsheet, the user creates a UI selection. The selection can be two types: cell selection and shape selection.

@@ -98,7 +98,7 @@ What is left in order to fulfil the localization is to override the method __Get
 	            switch (key)
 	            {
 	                //----------------------
-	                case "BusyIndicatorLoading":
+		            case "BusyIndicatorLoading":
 	                    return "Loading...";
 	                case "FixedDocumentViewers_BeginningOfDocumentReachedMessage":
 	                    return "You have reached the beginning of the document.";
@@ -120,6 +120,10 @@ What is left in order to fulfil the localization is to override the method __Get
 	                    return "Use Regular Expression";
 	                case "FixedDocumentViewers_WholeWordsOnly":
 	                    return "Whole Words Only";
+	                case "FixedDocumentViewers_FitWidth":
+	                    return "Fit Width";
+	                case "FixedDocumentViewers_ZoomToPageLevel":
+	                    return "Zoom to Page Level";
 	                //----------------------
 	            }
 	            return base.GetStringOverride(key);

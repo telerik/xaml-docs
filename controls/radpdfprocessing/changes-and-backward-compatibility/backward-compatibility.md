@@ -13,7 +13,18 @@ position: 1
 
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to another.
-      
+
+## What's Different in 2015 Q1      
+
+
+### Changed
+
+Telerik.Windows.Documents.Fixed.Model.Editing.RadFixedDocumentEditor::TableProperties is removed.
+
+### What to do now
+
+__TableLayoutType__ can now be set directly in the __Table__ class using the __LayoutType__ property.
+
 
 ## What's Different in 2014 Q3
 

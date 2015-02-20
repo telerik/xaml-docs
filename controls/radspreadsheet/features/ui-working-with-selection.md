@@ -389,3 +389,26 @@ The initially selected area will remain marked while the part of selection you a
 
 Once you've selected the desired range, you can drop the selection. The selected range will be filled with data the same way as it would be if you had used the autofill data series.
         ![Rad Spreadsheet UI Selection 09](images/RadSpreadsheet_UI_Selection_09.png)
+
+
+## Using Selection to Complete Formulas
+
+Selection can also be used to help entering formulas and to give visual cues for understanding these which are already there. 
+
+In order to use the selection to enter a formula, start typing it by entering the equals (=) sign. Then, use the mouse to select other cells and enter operators between them. On each click references to the cells or ranges will be entered in the formula. Just as with the regular mode of the selection, holding down the Ctrl key selects multiple ranges and the Shift key can be used to expand the current selection.
+
+This mode of the selection can be also used when entering the arguments of a function and is available both in the cell editor and the formula bar.
+
+
+ {% if site.site_name == 'WPF' %}![Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_10.png)
+{% endif %}
+
+{% if site.site_name == 'Silverlight' %}![](images/RadSpreadsheet_UI_Selection_11.png){% endif %}
+
+If a formula is already entered and you would like to see the references used in it, enter edit mode and they will be selected automatically.
+
+
+ {% if site.site_name == 'WPF' %}![Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_12.png)
+{% endif %}
+
+{% if site.site_name == 'Silverlight' %}![](images/RadSpreadsheet_UI_Selection_13.png){% endif %}

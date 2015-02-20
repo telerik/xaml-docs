@@ -147,4 +147,6 @@ The calculated ratio value corresponds to the width of the adorner divided by it
 
 # See Also
 
- * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})
+* [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})
+
+* [Drawing]({%slug radimageeditor-howto-drawing%})

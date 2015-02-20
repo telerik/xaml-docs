@@ -20,13 +20,13 @@ This article aims to present the lists related API in __RadPdfProcessing__. It c
 
 * [Creating List from ListTemplateType](#creating-list-from-listtemplatetype)
 
-* [Creating custom ListLevel](#creating-custom-listlevel)
+* [Creating Custom ListLevel](#creating-custom-listlevel)
 
-* [Creating custom bullet](#creating-custom-bullet)
+* [Creating Custom Bullet](#creating-custom-bullet)
 
-* [Using lists with RadFixedDocumentEditor](#using-lists-with-radfixeddocumenteditor)
+* [Using Lists with RadFixedDocumentEditor](#using-lists-with-radfixeddocumenteditor)
 
-* [Using lists with Block class](#using-lists-with-block-class)
+* [Using Lists with Block Class](#using-lists-with-block-class)
 
 
 ## Creating List from ListTemplateType
@@ -52,7 +52,7 @@ On the following image you may see the available list template types and how the
 Figure 2
 ![](images/RadPdfProcessing_Editing_List_02.png)
 
-## Creating custom ListLevel
+## Creating Custom ListLevel
 
 
 When you need to create a custom List you should define the presentation of each list level. The appearance of the list level is defined with the properties of the __ListLevel__ class. The following list level properties are available in __RadPdfProcessing__:
@@ -174,13 +174,13 @@ When using the list created in __Example 3__ its bullets will look as shown in _
 Figure 4
 ![](images/RadPdfProcessing_Editing_List_04.png)
 
-## Using lists with RadFixedDocumentEditor
+## Using Lists with RadFixedDocumentEditor
 
 In order to use lists with __RadFixedDocumentEditor__ you should first add them to the editor’s __ListCollection__. Each time you add a list item you should simply set the __ListId__ and __ListLevel__ values in the editor’s __Paragraph__ properties and call the InsertParagraph() method.
 
 __Example 4__ shows how to create a list with __RadFixedDocumentEditor__ and insert a single item for each of the list levels. The appearance of the list is from the values in the predefined __ListTemplateType__ enumeration
 
-#### __[C#] Example 4: Using lists with RadFixedDocumentEditor__
+#### __[C#] Example 4: Using Lists with RadFixedDocumentEditor__
 
 {{region radpdfprocessing-editing-list_6}}
 	using (RadFixedDocumentEditor editor = new RadFixedDocumentEditor(document))
@@ -197,7 +197,7 @@ __Example 4__ shows how to create a list with __RadFixedDocumentEditor__ and ins
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 4: Using lists with RadFixedDocumentEditor__
+#### __[VB.NET] Example 4: Using Lists with RadFixedDocumentEditor__
 
 {{region radpdfprocessing-editing-list_7}}
 	Using editor As New RadFixedDocumentEditor(document)
@@ -219,13 +219,13 @@ Figure 5
 ![](images/RadPdfProcessing_Editing_List_05.png)
 
 
-## Using lists with Block class
+## Using Lists with Block Class
 
 As the __Block__ class has __Bullet__ and __IndentAfterBullet__ properties you can easily set some custom bullet to any __Block__ instance. However, if you want to get automatically formatted bullet corresponding to some __List__ class instance you should use the __SetBullet(List list, int listLevel)__ method. This way you can easily set the bullet-related properties so that the bullet displays the correct list numbering and formatting.
 The following code snippet shows how to create __List__ with __BulletDefault__ template and set the bullet of the first list level to a Block:
 
 
-#### __[C#] Example 5: Using lists with Block class__
+#### __[C#] Example 5: Using Lists with Block Class__
 
 {{region radpdfprocessing-editing-list_8}}
 	List list = new List(ListTemplateType.BulletDefault);
@@ -234,7 +234,7 @@ The following code snippet shows how to create __List__ with __BulletDefault__ t
 	block.InsertText("Sample block text.");
 {{endregion}}
 
-#### __[VB.NET] Example 5: Using lists with Block class__
+#### __[VB.NET] Example 5: Using Lists with Block Class__
 
 {{region radpdfprocessing-editing-list_8}}
 	Private Sub UsingListsWithBlockClass()

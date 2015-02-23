@@ -92,3 +92,7 @@ __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign 
 {{endregion}}
 
 
+## See Also
+
+* [PdfExportSettings API Reference](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_Pdf_Export_PdfExportSettings.htm)
+* [How to Comply with PDF/A Standard]({%slug radpdfprocessing-howto-comply-with-pdfa-standard%})

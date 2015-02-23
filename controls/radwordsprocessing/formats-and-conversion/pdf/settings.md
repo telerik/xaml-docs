@@ -17,13 +17,12 @@ __PdfFormatProvider__ allows to export of __RadFlowDocument__ to PDF. Using the 
 
 ## Export Settings
 
-The PdfExportSettings_ class derives from the __Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfExportSettings__ class related to the [RadPdfProcessing]({%slug radpdfprocessing-overview%}) library. Thus, the export allows you to controls the encryption, image quality and other PDF format related properties. More information on the settings are available in the [export settings article for RadPdfProcessing]({%slug radpdfprocessing-formats-and-conversion-pdf-settings%}).
+The __PdfExportSettings__ class derives from the __Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfExportSettings__ class related to the [RadPdfProcessing]({%slug radpdfprocessing-overview%}) library. Thus, the export allows you to controls the encryption, image quality and other PDF format related properties. More information on the settings are available in the [export settings article for RadPdfProcessing]({%slug radpdfprocessing-formats-and-conversion-pdf-settings%}).
 
 __Example 1__ demonstrates how to export a __RadFlowDocument__ instance to PDF and specify that it needs to be PDF/A compliant.
 
 
-
->tipIn order to specify export settings to the PdfFormatProvider you need to add both the Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export and Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export namespaces. In __Example 1__ the *Fixed* alias corresponds to the Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export namespace.
+>tipIn order to specify export settings to the PdfFormatProvider you need to add both the Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export and Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export namespaces. In __Example 1__ the *Fixed* alias corresponds to the *Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export* namespace.
 
 
 #### __[C#] Example 1: Export PDF/A Compliant Document__

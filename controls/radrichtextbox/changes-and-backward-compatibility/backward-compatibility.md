@@ -18,6 +18,28 @@ This article will list the breaking changes and how they can be fixed when upgra
 
 ### Changed
 
+Selecting all cells in a row will now add the whole row as selected element in one selection range instead of adding separate selection range for each cell.
+
+### Changed
+
+The Insert Table command called by the __RadRichTextBoxRibbonUI__ will now add table to the document without the paragraph before it.
+
+### What to do now
+
+To keep the old behavior pass the __InsertTableCommandParameter__ to __InsertTableCommand__ with __InsertParagraphBeforeTable__ set to true.
+
+
+### Changed
+
+The __ShowDialog__ method from __IInsertTableDialog__ interface no longer accept one parameter of type Action&lt;int, int&gt;. It is changed and now accepts one context class __InsertTableDialogContext__, which will hold the insert table callback action and any additional information.
+
+### What to do now
+
+Implement the interface using the context class. You can refer to the [CustomInsertTableDialog SDK demo](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomInsertTableDialog).
+
+
+### Changed
+
 If a [Span]({%slug radrichtextbox-features-document-elements-span%}) with Text line break symbol “¬” or page break symbol “◊” is inserted, a break will not be inserted.
 
 ### What to do now

@@ -79,7 +79,7 @@ Telerik UI for Silverlight features the following controls:
 
 * [Docking]({%slug raddocking-overview2%})
 
-* [DomainDataSource](8962EF1A-8A98-4D52-83A7-C537809069DA)
+* [DomainDataSource]({%slug dds-overview%})
 
 * [Expander]({%slug radexpander-overview%})
 
@@ -160,6 +160,8 @@ Telerik UI for Silverlight features the following controls:
 * [TimePicker]({%slug radtimepicker-overview%})
 
 * [ToolBar]({%slug radtoolbar-overview%})
+
+* [ToolTip]({%slug radtooltip-overview%})
 
 * [TransitionControl]({%slug radtransition-overview%})
 
@@ -314,6 +316,8 @@ Telerik UI for WPF features the following controls:
 * [TimePicker]({%slug radtimepicker-overview%})
 
 * [ToolBar]({%slug radtoolbar-overview%})
+
+* [ToolTip]({%slug radtooltip-overview%})
 
 * [TransitionControl]({%slug radtransition-overview%})
 

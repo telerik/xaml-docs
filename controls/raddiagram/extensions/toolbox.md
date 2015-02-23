@@ -10,70 +10,50 @@ position: 1
 
 # DiagramToolbox
 
+This article describes the main features and properties of the __RadDiagramToolbox__ control. You can examine the behavior of the control in the {% if site.site_name == 'Silverlight' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/silverlight/#Diagrams/DesignToolbox){% endif %}{% if site.site_name == 'WPF' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/wpf/#Diagrams/DesignToolbox){% endif %}.            
 
+>In order to use the __RadDiagramToolbox__ control in your projects you have to add references to the following assemblies:
+>	- Telerik.Windows.Controls.Diagrams
+>	- Telerik.Windows.Diagrams.Core
+>	- Telerik.Windows.Controls.Diagrams.Extensions
+>	- Telerik.Windows.Controls
+>	- Telerik.Windows.Controls.Navigation
+>	- Telerik.Windows.Controls.Input
+{% if site.site_name == 'WPF' %}
+>	- Telerik.Windows.Data
+{% endif %}
 
-This article describes the main features and properties of the __RadDiagramToolbox__ control. You can examine the behavior of the control in the {% if site.site_name == 'Silverlight' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/silverlight/#Diagrams/DesignToolbox){% endif %}{% if site.site_name == 'WPF' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/wpf/#Diagrams/DesignToolbox){% endif %}.
-            
-
->importantIn order to use the __RadDiagramToolbox__ control in your projects you have to add references to the following assemblies:
-                
-
-* Telerik.Windows.Controls.Diagrams
-
-* Telerik.Windows.Diagrams.Core
-
-* Telerik.Windows.Controls.Diagrams.Extensions
-
-* Telerik.Windows.Controls
-
-* Telerik.Windows.Controls.Navigation
-
-* Telerik.Windows.Controls.Input{% if site.site_name == 'WPF' %}
-
-* Telerik.Windows.Data{% endif %}
-
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
-                
+<!-- -->
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.                
 
 ## Visual Structure And Properties
 
 The __Diagram Extensions__ include a __RadDiagramToolbox__ control. It is designed to display multiple galleries of __RadDiagramShapes__ in a single control. Below you can see a snapshot and explanation of the main visual elements of the control.
 ![Rad Diagram Extensions Toolbox Overview](images/RadDiagram_Extensions_Toolbox_Overview.png)
 
-The __RadDiagramToolbox__ exposes the following list of properties:
-                
+The __RadDiagramToolbox__ exposes the following list of properties:                
 
-* __Header__ - gets or sets an __object__ that represents the __RadDiagramToolbox__ header.
-                        
+* __Header__ - gets or sets an __object__ that represents the __RadDiagramToolbox__ header.                        
 
-* __HeaderTemplate__ - gets or sets the __DataTemplate__ used to display the header.
-                        
+* __HeaderTemplate__ - gets or sets the __DataTemplate__ used to display the header.                        
 
-* __Title__ - gets or sets an __object__ that represents the __RadDiagramToolbox__ title.
-                        
+* __Title__ - gets or sets an __object__ that represents the __RadDiagramToolbox__ title.                        
 
-* __TitleTemplate__ - gets or sets the __DataTemplate__ used to display the title of the toolbox.
-                        
+* __TitleTemplate__ - gets or sets the __DataTemplate__ used to display the title of the toolbox.                        
 
-* __IsOpen__ - gets or sets a value that indicates whether the groups area of the __RadDiagramToolbox__ control is visible.
-                        
+* __IsOpen__ - gets or sets a value that indicates whether the groups area of the __RadDiagramToolbox__ control is visible.                        
 
-* __CloseButtonStyle__ - gets or sets the style used by the __Close__ button when it is rendered.
-                        
+* __CloseButtonStyle__ - gets or sets the style used by the __Close__ button when it is rendered.                        
 
-* __OpenCloseButtonStyle__ - gets or sets the style used by the __OpenClose__ button when it is rendered.
-                        
+* __OpenCloseButtonStyle__ - gets or sets the style used by the __OpenClose__ button when it is rendered.                        
 
-* __Items__  - gets or sets the collection used to generate the content of the __RadDiagramToolbox__.
-                        
+* __Items__  - gets or sets the collection used to generate the content of the __RadDiagramToolbox__.                        
 
-* __ItemsSource__  - gets or sets a business collection used to generate the content of the __RadDiagramToolbox__.
-                        
+* __ItemsSource__  - gets or sets a business collection used to generate the content of the __RadDiagramToolbox__.                        
 
 ## How to Use the Predefined HierarchicalGalleryItemsCollection
 
-The __Diagram Extensions__ provide a __HierarchicalGalleryItemsCollection__ which is an __ObservableCollection__ of galleries with predefined __RadDiagramShapes__. You can use it to populate the __RadDiagramToolbox.ItemsSource__ collection with business items.
-                
+The __Diagram Extensions__ provide a __HierarchicalGalleryItemsCollection__ which is an __ObservableCollection__ of galleries with predefined __RadDiagramShapes__. You can use it to populate the __RadDiagramToolbox.ItemsSource__ collection with business items.                
 
 You can use it directly in XAML:
 
@@ -141,12 +121,9 @@ You can use it directly in XAML:
 														Converter={StaticResource BooleanToVisibilityConverter}}" />
 	
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-
-
-or define a property of type __HierarchicalGalleryItemsCollection__ in your ViewModel:
-                
+or define a property of type __HierarchicalGalleryItemsCollection__ in your ViewModel:                
 
 #### __C#__
 
@@ -160,9 +137,7 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 	        this.GalleryItems = new HierarchicalGalleryItemsCollection();
 	    }
 	}	
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -182,9 +157,7 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 			Me.GalleryItems = New HierarchicalGalleryItemsCollection()
 		End Sub
 	End Class	
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __XAML__
 
@@ -251,14 +224,11 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 														Converter={StaticResource BooleanToVisibilityConverter}}" />
 	
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Configure a RadDiagramToolbox to Display Part of the HierarchicalGalleryItemsCollection
 
 The __HierarchicalGalleryItemsCollection__ is populated based on the items in the __Telerik.Windows.Controls.Diagrams.Extensions.GalleryItemsCollection__ grouped by the name of each gallery. This is why you can easily recreate it in your ViewModel:
-                
 
 #### __C#__
 
@@ -288,9 +258,7 @@ The __HierarchicalGalleryItemsCollection__ is populated based on the items in th
 	        }
 	    }
 	}	
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -323,12 +291,9 @@ The __HierarchicalGalleryItemsCollection__ is populated based on the items in th
 			Next
 		End Sub
 	End Class	
-	{{endregion}}
-
-
+{{endregion}}
 
 Next, you can customize your *GalleryItems* collection to display only the Basic Shapes gallery like so:
-                
 
 #### __C#__
 
@@ -358,9 +323,7 @@ Next, you can customize your *GalleryItems* collection to display only the Basic
 	        }
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -393,17 +356,15 @@ Next, you can customize your *GalleryItems* collection to display only the Basic
 			Next
 		End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
 ![Rad Diagram Extensions Toolbox Basic Shapes](images/RadDiagram_Extensions_Toolbox_BasicShapes.png)
 
 ## How to Populate RadDiagramToolbox with Custom Data Items
 
 In case you need to populate a __RadDiagramToolbox__ instance with a custom collection of business items, you will have to create a hierarchical collection of items. The first-level items of the collection should represent the galleries, whilst the second-level items should describe the shapes within the __RadDiagramToolbox__.
-                
 
 For the purpose of this tutorial we will create a class describing our shapes and a custom gallery class that defines a collection of shapes:
-                
 
 #### __C#__
 
@@ -487,9 +448,7 @@ For the purpose of this tutorial we will create a class describing our shapes an
 	        this.Items.Add(secondGallery);
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -509,7 +468,7 @@ For the purpose of this tutorial we will create a class describing our shapes an
 		Public Property Items() As ObservableCollection(Of MyGallery)
 		Public Sub New()
 			Me.Items = New ObservableCollection(Of MyGallery)()
-			'create and populate the first custom gallery
+			'create and populate the first custom gallery'
 			Dim firstGallery As MyGallery = New MyGallery With {.Header = "First Gallery"}
 			firstGallery.Shapes.Add(New MyShape With {.Header = "Shape 1.1", .Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.CloudShape)})
 			firstGallery.Shapes.Add(New MyShape With {.Header = "Shape 1.2", .Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.EllipseShape)})
@@ -518,7 +477,7 @@ For the purpose of this tutorial we will create a class describing our shapes an
 			firstGallery.Shapes.Add(New MyShape With {.Header = "Shape 1.5", .Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.RightTriangleShape)})
 			Me.Items.Add(firstGallery)
 	
-			'create and populate the second custom gallery
+			'create and populate the second custom gallery'
 			Dim secondGallery As MyGallery = New MyGallery With {.Header = "Second Gallery"}
 			secondGallery.Shapes.Add(New MyShape With {.Header = "Shape 2.1", .Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.CardShape)})
 			secondGallery.Shapes.Add(New MyShape With {.Header = "Shape 2.2", .Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.Database1Shape)})
@@ -528,12 +487,9 @@ For the purpose of this tutorial we will create a class describing our shapes an
 			Me.Items.Add(secondGallery)
 		End Sub
 	End Class
-	{{endregion}}
-
-
+{{endregion}}
 
 Once the ViewModels are all in place, you can use the *MainViewModel* as the __DataContext__ of the __RadDiagramToolbox__ and bind its __ItemsSource__ to the *Items* collection. You will also need to define __DataTemplates__ to visualize the *MyShape* and *MyGallery* items properly.
-                
 
 #### __XAML__
 
@@ -608,29 +564,21 @@ Once the ViewModels are all in place, you can use the *MainViewModel* as the __D
 														Converter={StaticResource BooleanToVisibilityConverter}}" />
 	
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 ![Rad Diagram Extensions Toolbox Custom Gallery](images/RadDiagram_Extensions_Toolbox_CustomGallery.png)
 
 ## DragDrop Support
 
 __RadDiagramToolbox__ supports drag/drop operations out-of-the-box. As soon as a __RadDiagramToolboxItem__ is initialized, it is made draggable through the __DragDropManager AllowDrag__ and __AllowCapturedDrag__ properties which are both set to __true__. Moreover, the __Diagramming Framework__ internally handles the __DragDropManager DragInitialize__ event to take from the dragged __RadDiagramToolboxItem__ the shape it represents, if sush exists, and serialize its settings. The serialized settings are then saved in a __DiagramDropInfo__ object along with the actual size of the dragged shape.
-                
 
->The __DiagramDropInfo__ structure describes a dragged object within a __RadDiagram__ instance. It includes a __SerializationInfo__ property and a __Size__ property – the first one holds the serialized settings of the dragged __RadDiagramItem__, while the second holds the actual size of the dragged item.
-                    
+>The __DiagramDropInfo__ structure describes a dragged object within a __RadDiagram__ instance. It includes a __SerializationInfo__ property and a __Size__ property – the first one holds the serialized settings of the dragged __RadDiagramItem__, while the second holds the actual size of the dragged item.                    
 
-Due to this built-in __DragDropManager__ drag implementation, you can easily drag shapes and containers out of a __RadDiagramToolbox__ and drop them onto a diagramming surface. __RadDiagram__ knows how to extract the serialized information out of a __DiagramDropInfo__ object to create a new __RadDiagramItem__ on the surface. However, if you create a custom __RadDiagramToolbox__ populated with a business collection of items, you will have to further configure the drag/drop operation. Please have a look at the [How To Drag Items from a Custom Databound DiagramToolbox]({%slug raddiagram-howto-drag-custom-toolboxitem%}) tutorial for instructions on how to implement such a scenario.
-            
+Due to this built-in __DragDropManager__ drag implementation, you can easily drag shapes and containers out of a __RadDiagramToolbox__ and drop them onto a diagramming surface. __RadDiagram__ knows how to extract the serialized information out of a __DiagramDropInfo__ object to create a new __RadDiagramItem__ on the surface. However, if you create a custom __RadDiagramToolbox__ populated with a business collection of items, you will have to further configure the drag/drop operation. Please have a look at the [How To Drag Items from a Custom Databound DiagramToolbox]({%slug raddiagram-howto-drag-custom-toolboxitem%}) tutorial for instructions on how to implement such a scenario.            
 
 # See Also
-
  * [Drag Items from a Custom Databound DiagramToolbox]({%slug raddiagram-howto-drag-custom-toolboxitem%})
-
  * [Thumbnail]({%slug raddiagram-extensions-thumbnail%})
-
  * [DiagramNavigationPane]({%slug raddiagram-extensions-navigationpane%})
-
  * [Ruler]({%slug raddiagram-extensions-ruler%})
-
  * [SettingsPane]({%slug raddiagram-extensions-settingspane%})

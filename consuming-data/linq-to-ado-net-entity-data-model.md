@@ -195,5 +195,7 @@ __Example 5__ shows you how to implement efficient server-side database paging. 
  * [Consuming WCF Service]({%slug consuming-data-wcf-service%})
 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
-
+ 
+{% if site.site_name == 'Silverlight' %} 
  * [Consuming Web (asmx) Service]({%slug consuming-data-web-asmx-service%})
+{% endif %}

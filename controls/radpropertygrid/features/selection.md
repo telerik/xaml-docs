@@ -45,5 +45,5 @@ __RadPropertyGrid__provides several properties to get the data behind the select
 
 ## Events
 
-There are two events relevant to the selection in __RadPropertyGrid__: __SelectionChanged__ and __SelectedFieldChanged__. Note that SelectedFieldChanged event is marked as obsolete.
+There are two events relevant to the selection in RadPropertyGrid: __SelectionChanged__ and __SelectedFieldChanged__. Note that SelectedFieldChanged event is marked as obsolete.
         

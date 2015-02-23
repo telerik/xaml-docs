@@ -14,9 +14,16 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 ## List of all RadCalendar SDK examples:
 
-* __Today button__ - This example demonstrates how to create a custom RadCalendar control and add a TodayButton in the controls Style that will select the current date  in the control for Silverlight and WPF.
+{% if site.site_name == 'WPF' %}
 
-* __Weekdays button StyleSelector__ - 
+* __[Today button](https://github.com/telerik/xaml-sdk/tree/master/Calendar/TodayButton)__ - This example demonstrates how to create a custom RadCalendar control and add a TodayButton in the controls Style that will select the current date  in the control for Silverlight and WPF.
+* __[Weekdays button StyleSelector](https://github.com/telerik/xaml-sdk/tree/master/Calendar/WeekdaysButtonStyleSelector)__ - 
 This example demonstrates how to customize the weekdays/weekends day buttons in RadCalendar in order to change their Background for Silverlight and WPF.
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+* __[Today button](https://github.com/telerik/xaml-sdk/tree/master/Calendar/TodayButton)__ - This example demonstrates how to create a custom RadCalendar control and add a TodayButton in the controls Style that will select the current date  in the control for Silverlight and WPF.
+* __[Weekdays button StyleSelector](https://github.com/telerik/xaml-sdk/tree/master/Calendar/WeekdaysButtonStyleSelector)__ - 
+This example demonstrates how to customize the weekdays/weekends day buttons in RadCalendar in order to change their Background for Silverlight and WPF.
+{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

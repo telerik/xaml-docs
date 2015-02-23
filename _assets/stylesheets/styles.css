@@ -270,7 +270,7 @@ a img {
 }
 
 #page-tree {
-    padding: 20px 20px 40px 30px;
+    padding: 20px 20px 0 30px;
     white-space: normal;
     /*word-break: break-word;*/
     overflow: hidden;
@@ -323,6 +323,14 @@ a img {
 
 #page-nav.nav-visibility {
 	display: block;
+}
+
+#page-api {
+	padding: 0 0 30px 30px;
+}
+
+#page-api .k-in {
+	margin: -2px;
 }
 
 /* Table of contents */
@@ -726,6 +734,17 @@ footer {
 footer p {
 	margin-top: 15px;
 	margin-right: 1em;
+}
+
+footer p a#send-feedback {
+	float: left;
+	color: #fff;
+	margin-left: 1.833em;
+}
+
+footer p a#send-feedback:hover  {
+	text-decoration: underline;
+	color: #00b312;
 }
 
 h4 {

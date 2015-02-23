@@ -32,7 +32,7 @@ You can activate change tracking tgrough the __IsTrackChangesEnabled__ property 
 
 {{region radrichtextbox-features-track-changes_0}}
 	this.radRichTextBox.IsTrackChangesEnabled = true;
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -42,14 +42,13 @@ When change tracking is enabled all changes made in the document will be tracked
 
 * formatting changes of the document elements;
 
-* adding and removing images, hyperlinks, tables, etc.![Rad Rich Text Box Features Track Changes 0](images/RadRichTextBox_Features_Track_Changes_0.png)
+* adding and removing images, hyperlinks, tables, etc.
+ 
+![Rad Rich Text Box Features Track Changes 0](images/RadRichTextBox_Features_Track_Changes_0.png)
 
 ## Customizing Changes Visualization
 
-As you can see tracked changes are visualized inside the rich text box with different colors.
-          You can modify these colors by using the __TrackChangesOptions__ property of __RadRichTextBox__.
-          Here is for example how to customize the look of the tracked changes so that insertions are shown in green,
-          deletions are shown in underlined orange and the vertical line indicating changes is red:
+As you can see tracked changes are visualized inside the rich text box with different colors. You can modify these colors by using the __TrackChangesOptions__ property of __RadRichTextBox__. Here is for example how to customize the look of the tracked changes so that insertions are shown in green, deletions are shown in underlined orange and the vertical line indicating changes is red:
         
 
 #### __C#__
@@ -62,11 +61,13 @@ As you can see tracked changes are visualized inside the rich text box with diff
 	this.radRichTextBox.TrackChangesOptions.Delete.ColorOptions = new RevisionColor(Colors.Orange);
 	
 	this.radRichTextBox.TrackChangesOptions.ChangedLinesDecorationColorOptions.ColorOptions = new RevisionColor(Colors.Red);
-	{{endregion}}
+{{endregion}}
 
 
 
-The result is:![Rad Rich Text Box Features Track Changes 1](images/RadRichTextBox_Features_Track_Changes_1.png)
+The result is:
+
+![Rad Rich Text Box Features Track Changes 1](images/RadRichTextBox_Features_Track_Changes_1.png)
 
 ## Changing Current User
 
@@ -76,11 +77,12 @@ All changes made while track changes are enabled are made on behalf of the curre
 
 {{region radrichtextbox-features-track-changes_2}}
 	this.radRichTextBox.CurrentUser = new UserInfo("Group", "Boby", "Boby", "bobby@telerik.com");
-	{{endregion}}
+{{endregion}}
 
 
+Here is the result:
 
-Here is the result:![Rad Rich Text Box Features Track Changes 2](images/RadRichTextBox_Features_Track_Changes_2.png)
+![Rad Rich Text Box Features Track Changes 2](images/RadRichTextBox_Features_Track_Changes_2.png)
 
 By default, insert and delete changes by different authors will be displayed in different colors. This can be changed through the __TrackChangesOptions__ as described in the previous section.
         
@@ -106,8 +108,6 @@ All revision have a RevisionInfo object associated to them, which contains infor
 	public Revision GetNextRevision()
 	public Revision GetPreviousRevision()
 	public IEnumerable<Revision> GetAllRevisions()
-	{{endregion}}
+{{endregion}}
 
 
-
-# See Also

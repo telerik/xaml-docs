@@ -10,18 +10,11 @@ position: 12
 
 # Place RadControls in Diagram Shapes
 
-
-
 This tutorial demonstrates how to use {% if site.site_name == 'WPF' %}__UI for WPF__{% endif %}{% if site.site_name == 'Silverlight' %}__UI for Silverlight__{% endif %} in the content of a __RadDiagramShape__ component.
-      
-
-## 
 
 As the __RadDiagramShape__ essentially derives from a __ContentControl__, its __Content__ can wrap other controls. For the purpose of this tutorial we will use a __RadCalendar__ and a __RadGridView__ and will display both in __RadDiagramShapes__. We will also connect these shapes with a __RadDiagramConnection__.
-        
 
 Let's start by defining a __RadDiagram__ instance in our view:
-        
 
 #### __XAML__
 
@@ -41,12 +34,9 @@ Let's start by defining a __RadDiagram__ instance in our view:
 							Zoom="1">
 		</telerik:RadDiagram>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 Next, we can add a __RadDiagramShape__ that contains a __RadGridView__ component. We will define these controls in our XAML view:
-        
 
 #### __XAML__
 
@@ -83,15 +73,12 @@ Next, we can add a __RadDiagramShape__ that contains a __RadGridView__ component
 			</telerik:RadDiagramShape>
 		</telerik:RadDiagram>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 If you run the solution at this point, you should get the following diagramming structure:
 ![raddiagram-howto-radcontrols-empty-gridview](images/raddiagram-howto-radcontrols-empty-gridview.png)
 
 And as our __RadGridView__ is currently empty, we can go ahead and populate it with sample data. For that purpose, we first need to define a custom data class - let's name it *ProductSales*:
-        
 
 #### __C#__
 
@@ -109,9 +96,7 @@ And as our __RadGridView__ is currently empty, we can go ahead and populate it w
 	    public int Month { get; set; }
 	    public string MonthName { get; set; }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -151,12 +136,9 @@ And as our __RadGridView__ is currently empty, we can go ahead and populate it w
 	    End Property
 	    Private m_MonthName As String
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Next in our code-behind we can create a method that returns a list of __ProductSales__ and use its result as a __DataContext__ of the view:
-        
+Next in our code-behind we can create a method that returns a list of __ProductSales__ and use its result as a __DataContext__ of the view:        
 
 #### __C#__
 
@@ -185,9 +167,7 @@ Next in our code-behind we can create a method that returns a list of __ProductS
 	    InitializeComponent();
 	    this.DataContext = GetProductSales();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -213,15 +193,12 @@ Next in our code-behind we can create a method that returns a list of __ProductS
 	    InitializeComponent()
 	    Me.DataContext = GetProductSales()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 Now if we run the solution we will have a populated __RadGridView__ control inside the __RadDiagramShape__.
 ![raddiagram-howto-radcontrols-gridview](images/raddiagram-howto-radcontrols-gridview.png)
 
 We can also define a shape in the code-behind file and set its content to any RadControl. Please have a look at the example below as it demonstrates how to create a __RadDiagramShape__ and use a __RadCalendar__ in its __Content__:
-        
 
 #### __C#__
 
@@ -250,9 +227,7 @@ We can also define a shape in the code-behind file and set its content to any Ra
 	    };
 	    this.diagram.AddShape(calendar);
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -264,8 +239,8 @@ We can also define a shape in the code-behind file and set its content to any Ra
 	End Sub
 	
 	Private Sub OnLoaded(sender As Object, routedEventArgs As RoutedEventArgs)
-	    ' the alternative to this code approach is to set the ContentTemplate in XAML
-	    ' See the documentation on this - http://www.telerik.com/help/wpf/raddiagrams-features-shapes.html
+	    ' the alternative to this code approach is to set the ContentTemplate in XAML '
+	    ' See the documentation on this - http://www.telerik.com/help/wpf/raddiagrams-features-shapes.html '
 	    Dim calendar = New RadDiagramShape() With {
 	            .Position = New Point(20, 150),
 	            .Content = New RadCalendar() With
@@ -282,15 +257,12 @@ We can also define a shape in the code-behind file and set its content to any Ra
 	    }
 	    Me.diagram.AddShape(calendar)
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 Running the project now should display two shapes within the __RadDiagram__ instance:
 ![raddiagram-howto-radcontrols](images/raddiagram-howto-radcontrols.png)
 
 Finally, we can connect these shapes using a single connection. Let's set it up in the __OnLoaded()__ method implementation:
-        
 
 #### __C#__
 
@@ -310,15 +282,13 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 	    con.SourceCapType = CapType.Arrow6Filled;
 	    con.TargetCapType = CapType.Arrow2Filled;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region raddiagram-howto-radcontrols-in-shape-3}}
-	Private Sub OnLoaded(sender As Object, routedEventArgs As RoutedEventArgs)
-	    ' the alternative to this code-approach is to set the ContentTemplate in XAML
+	Private Sub OnLoaded(sender As Object, routedEventArgs As RoutedEventArgs) '
+	    ' the alternative to this code-approach is to set the ContentTemplate in XAML '
 	    ' See the documentation on this, http://www.telerik.com/help/wpf/raddiagrams-features-shapes.html
 	    Dim calendar = New RadDiagramShape() From {
 	                                                ...
@@ -330,9 +300,8 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 	    con.SourceCapType = CapType.Arrow6Filled
 	    con.TargetCapType = CapType.Arrow2Filled
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 ![raddiagram-howto-radcontrols-link](images/raddiagram-howto-radcontrols-link.png)
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/ControlShape__.
-          
+>tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/ControlShape__.

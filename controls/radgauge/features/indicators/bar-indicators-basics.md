@@ -10,8 +10,6 @@ position: 3
 
 # Bar Indicator
 
-
-
 The __Linear__ and the __Radial__ __Bars__ derive from the __BarIndicator__ class. Because of that they provide some common functionality. This topic will focus on the common features between these indicators.
 
 >tipThe __BarIndicator__ class inherits the __IndicatorBase__ class, which is a base class for all indicators, except the __NumericIndicator__. To learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
@@ -28,14 +26,13 @@ It will explain the following:
 
 ## Empty Fill
 
-The __Empty__ __Fill__ feature allows you to specify a color for the empty part of the indicator, which streches from the selected value to the other end of the scale. To do this simply use the __EmptyFill__ property. It is used as any other __Brush__ property. Here is an example.
-        
+The __Empty__ __Fill__ feature allows you to specify a color for the empty part of the indicator, which streches from the selected value to the other end of the scale. To do this simply use the __EmptyFill__ property. It is used as any other __Brush__ property.         
 
->tipAdditionally you can use the __BorderBrush__ and __StrokeThickness__ properties to display a stroke around the entire bar.
-        
+>tip Additionally you can use the __BorderBrush__ and __StrokeThickness__ properties to display a stroke around the entire bar.
+
+Here is an example:        
 
 #### __XAML__
-
 {{region radgauge-features-indicators-bar-indicators-basics_0}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="200" >
@@ -54,11 +51,9 @@ The __Empty__ __Fill__ feature allows you to specify a color for the empty part 
 	        </telerik:VerticalLinearScale.CustomItems>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadGauge_Features_BarIndicators_Basics_01.png)
 
@@ -66,12 +61,11 @@ Here is a snapshot of the result.
 
 The __Bar Indicators__ allow you to specify their end and start width. This way you can make the bar thinner at the start and thicker at the end, for example. To specify the desired values use the __StartWidth__ and __EndWidth__ properties. They are relative to the cell size of the scale. The cell size of the scale is determined by the size of the container it is placed in. For the linear scales it is equal to the height of the container and by the radial scales to the radius of the container.
 
->tipTo learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
+>tip To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
-
 {{region radgauge-features-indicators-bar-indicators-basics_1}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="200" >
@@ -83,9 +77,7 @@ Here is an example.
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the result:
 
@@ -113,13 +105,11 @@ As the __Bar Indicators__ cover the range from the start of the scale to the sel
 
 * __VerticalGradient__- the bar is colored in the color provided by the current range. When it enters a new range, its color becomes a vertical gradient, consisting of the colors of the new and the previous ranges. Entering further in the new range, the bar becomes smoothly colored in the color provided by the current range.
 
->When using Gradient RangeColorMode-s, in order for the gradients between ranges to be observable, you have specify a value for the __RangeColorSmoothing__ property.
-		
+>When using Gradient RangeColorMode-s, in order for the gradients between ranges to be observable, you have specify a value for the __RangeColorSmoothing__ property.		
 
-Here is an example.
+Here is an example:
 
 #### __XAML__
-
 {{region radgauge-features-indicators-bar-indicators-basics_2}}
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="30"
@@ -153,10 +143,8 @@ Here is an example.
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadGauge_Features_BarIndicators_Basics_03.png)

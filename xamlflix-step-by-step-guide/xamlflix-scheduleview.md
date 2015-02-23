@@ -693,14 +693,14 @@ Having created the ComboResources we can make it the ItemsSource for our combo b
 #### __XAML__
 
 {{region xamlflix_scheduleview_22}}
-   <telerik:RadComboBox x:Name="xRadComboBox"
-		 Width="150"
-		 ClearSelectionButtonVisibility="Visible"
-		 VerticalAlignment="Center"
-		 HorizontalAlignment="Left"
-		 Margin="320,10,10,10" 
-		ItemsSource="{Binding ComboResources}"
-		SelectedItem="{Binding SelectedResource, Mode=TwoWay}"/>
+	<telerik:RadComboBox x:Name="xRadComboBox"
+			 Width="150"
+			 ClearSelectionButtonVisibility="Visible"
+			 VerticalAlignment="Center"
+			 HorizontalAlignment="Left"
+			 Margin="320,10,10,10" 
+			ItemsSource="{Binding ComboResources}"
+			SelectedItem="{Binding SelectedResource, Mode=TwoWay}"/>
 {{endregion}}
 
 Note that we not only bind the ItemsSource, but we also bind the SelectedItem to the SelectedResources property that we created in ScheduleViewVM.cs We’re now sharing the ComboResources with the comboBox but we’re not actually filtering.  To add filtering, return to the View Model and create a Predicate,        

@@ -11,7 +11,8 @@ position: 1
 # Setting default startup language
 
 The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides the possibility to set your RadControls in whichever language you need. Up for now the supported languages are English, German, Spanish and French.
-If you want to translate your RadControl in another language, you should use the CustomLocalization Manager, as it is described in the common [Localization](B0F77598-F54B-4ACA-B3EE-A38FF9B41BB8)  .
+If you want to translate your RadControl in another language, you should use the CustomLocalization Manager, as it is described in the common [Localization]({%slug common-localization%}).
+You can also learn more on [RadGridView Localization]({%slug gridview-localization2%}).
 {% if site.site_name == 'Silverlight' %}
 However, in case you aim at loading the right resources automatically by means of culture settings, a couple of things need to be done. Firstly, your project file should be opened in text – mode. So, go to Visual Studio, right – click on the project and unload it.
 
@@ -94,4 +95,4 @@ Thus, after setting the startup language, RadControls’ elements will be transl
 
 # See Also
 
- * [Localization]({%slug gridview-localization2%})
+ * [RadGridView Localization]({%slug gridview-localization2%})

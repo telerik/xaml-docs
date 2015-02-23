@@ -10,8 +10,6 @@ position: 2
 
 # Creating Numeric Gauge
 
-
-
 One of the gauges you can create with the __RadGauge__ control, is a numeric gauge. It is represented by a container with a numerical scale in it. The numerical scale uses a numerical indicator to display the desired value. This topic will guide you in creating a trivial numeric gauge and will explain the following:
 
 * [Defining a Numeric Gauge](#defining-a-numeric-gauge)
@@ -26,45 +24,38 @@ One of the gauges you can create with the __RadGauge__ control, is a numeric gau
 
 ## Defining a Numeric Gauge
 
->In order to use the __RadGauge__ control and its components you have to reference the following assemblies:<br/>* __Telerik.Windows.Controls.DataVisualization.dll__<br/>* __Telerik.Windows.Controls.dll__
+>In order to use the __RadGauge__ control and its components you have to reference the following assemblies:
+>	- __Telerik.Windows.Controls.DataVisualization.dll__
+>	- __Telerik.Windows.Controls.dll__
 
-There is no special container for the numeric scale, as for the radial or linear scales. However you can use any of the 9 radial gauge and 2 linear gauge controls to wrap the __NumericScale__ control. Additionally you can put NumericScale to the Grid container too. Here is an example:
+There is no special container for the numeric scale, as for the radial or linear scales. However you can use any of the 9 radial gauge and 2 linear gauge controls to wrap the __NumericScale__ control. Additionally you can put NumericScale to the Grid container too.
 
 >To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
-
-#### __XAML__
-
-{{region radgauge-getting-started-creating-numeric-gauge_0}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
-
+>`xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
 ## Defining a NumericScale
 
-In order to define a numerical scale inside the __Gauge__ control you have to use the __NumericScale__ control. The __Gauge__ works as an __ItemsControl__, which takes __NumericScale__ controls as items. This means that you can have more than one scale inside the gauge. Here is an example of a single __NumericScale__.
+In order to define a numerical scale inside the __Gauge__ control you have to use the __NumericScale__ control. The __Gauge__ works as an __ItemsControl__, which takes __NumericScale__ controls as items. This means that you can have more than one scale inside the gauge.
 
->tipTo learn more about the usage of the __NumericScale__ control read the Numeric Scale topic.
+>tip To learn more about the usage of the __NumericScale__ control read the Numeric Scale topic.
+
+Here is an example of a single __NumericScale__:
 
 #### __XAML__
-
 {{region radgauge-getting-started-creating-numeric-gauge_2}}
 	<telerik:RadHorizontalLinearGauge Width="200" Height="50" telerik:StyleManager.Theme="Windows8">
 	    <telerik:NumericScale Min="0" Max="999">
 	    </telerik:NumericScale>
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Defining a Numeric Indicator
 
 The __NumericScale__ control allows you to display numeric indicators that represent a value off the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example.
 
->tipTo learn more about the usage of the __NumericIndicator__ control, read the Numeric Indicator topic.
+>tip To learn more about the usage of the __NumericIndicator__ control, read the Numeric Indicator topic.
 
 #### __XAML__
-
 {{region radgauge-getting-started-creating-numeric-gauge_3}}
 	<telerik:RadHorizontalLinearGauge Width="200" Height="50" telerik:StyleManager.Theme="Windows8">
 	    <telerik:NumericScale Min="0" Max="999">
@@ -86,11 +77,9 @@ The __NumericScale__ control allows you to display numeric indicators that repre
 	        </telerik:NumericScale.Indicators>
 	    </telerik:NumericScale>
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadGauge_GettingStarted_NumericGauge_03.png)
 
@@ -99,7 +88,6 @@ Here is a snapshot of the result.
 To make the indicator display a certain value off the scale, you have to use the __Value__ property of the indicator. Here is an example.
 
 #### __XAML__
-
 {{region radgauge-getting-started-creating-numeric-gauge_4}}
 	<telerik:RadHorizontalLinearGauge Width="200" Height="50" telerik:StyleManager.Theme="Windows8">
 	    <telerik:NumericScale Min="0" Max="999">
@@ -122,9 +110,7 @@ To make the indicator display a certain value off the scale, you have to use the
 	        </telerik:NumericScale.Indicators>
 	    </telerik:NumericScale>
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the result.
 
@@ -135,7 +121,5 @@ Here is a snapshot of the result.
 To configure and setup the numeric gauge you can use the various properties of the elements inside of it. In order to get familiar with them read the following topics:
 
 * [Ranges]({%slug radgauge-features-ranges-gauge-range%})
-
 * [Numeric Indicator]({%slug radgauge-features-indicators-numeric-indicator%})
-
 * [State Indicator]({%slug radgauge-features-indicators-state-indicator%})

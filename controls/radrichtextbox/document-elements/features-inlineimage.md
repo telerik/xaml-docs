@@ -32,7 +32,7 @@ Here is an example of an __InlineImage__ element used in XAML at design time.
 	        </telerik:Section>
 	    </telerik:RadDocument>
 	</telerik:RadRichTextBox>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -51,7 +51,7 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 	paragraph.Inlines.Add(image);
 	section.Children.Add(paragraph);
 	this.radRichTextBox.Document.Sections.Add(section);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -66,7 +66,7 @@ Here is an example of how to add an __InlineImage__ element in the code behind.
 	paragraph.Inlines.Add(image)
 	section.Children.Add(paragraph)
 	Me.radRichTextBox.Document.Sections.Add(section)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -81,7 +81,7 @@ Here is an example of how to allow the user to select an image and add it to the
 	    <telerik:RadButton Content="Add Image" x:Name="ImageButton" Click="ImageButton_Click" />
 	    <telerik:RadRichTextBox x:Name="radRichTextBox" Height="500" LayoutMode="Paged" />
 	</StackPanel>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -101,7 +101,7 @@ Here is an example of how to allow the user to select an image and add it to the
 	        this.radRichTextBox.InsertImage(stream, extension);
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -119,7 +119,7 @@ Here is an example of how to allow the user to select an image and add it to the
 	  Me.radRichTextBox.InsertImage(stream, extension)
 	 End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

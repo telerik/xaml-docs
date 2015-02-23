@@ -11,26 +11,21 @@ position: 0
 # Localization
 
 
-
 The built-in localization mechanism in the platform allows you to localize __RadGridView__ control. 
 
 Here is a list of the supported languages:
-      
 
-* English
-        
-
-* German
-        
-
-* Spanish
-        
-
+* English            
+* German          
+* Spanish           
 * French
+* Italian              
+* Dutch             
+* Turkish
 
 ![Rad Grid View Localization 4](images/RadGridView_Localization_4.png)
 
->tip__To learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
+>tipTo learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
 
 >__In order to dynamically localize the GridView at runtime, you should recreate it.__
 
@@ -44,8 +39,38 @@ On the picture below you can see some of the resource keys and the strings they 
 
 Here is a list of all of the __Resources__ available and their default values:
 
+Key	|	Value
+---	|	---	|	---
 
-<table> <tr>KeyValue</tr><tr><td>GridViewAlwaysVisibleNewRow</td><td>Click here to add new item</td></tr><tr><td>GridViewClearFilter</td><td>Clear Filter</td></tr><tr><td>GridViewFilter</td><td>Filter</td></tr><tr><td>GridViewFilterAnd</td><td>And</td></tr><tr><td>GridViewFilterContains</td><td>Contains</td></tr><tr><td>GridViewFilterDoesNotContain</td><td>Does not contain</td></tr><tr><td>GridViewFilterEndsWith</td><td>Ends with</td></tr><tr><td>GridViewFilterIsContainedIn</td><td>Is contained in</td></tr><tr><td>GridViewFilterIsEqualTo</td><td>Is equal to</td></tr><tr><td>GridViewFilterIsGreaterThan</td><td>Is greater than</td></tr><tr><td>GridViewFilterIsGreaterThanOrEqualTo</td><td>Is greater than or equal to</td></tr><tr><td>GridViewFilterIsNotContainedIn</td><td>Is not contained in</td></tr><tr><td>GridViewFilterIsLessThan</td><td>Is less than</td></tr><tr><td>GridViewFilterIsLessThanOrEqualTo</td><td>Is less than or equal to</td></tr><tr><td>GridViewFilterIsNotEqualTo</td><td>Is not equal to</td></tr><tr><td>GridViewFilterMatchCase</td><td>Match case</td></tr><tr><td>GridViewFilterOr</td><td>Or</td></tr><tr><td>GridViewFilterSelectAll</td><td>Select All</td></tr><tr><td>GridViewFilterShowRowsWithValueThat</td><td>Show rows with value that</td></tr><tr><td>GridViewFilterStartsWith</td><td>Starts with</td></tr><tr><td>GridViewFilterIsNull</td><td>Is null</td></tr><tr><td>GridViewFilterIsNotNull</td><td>Is not null</td></tr><tr><td>GridViewFilterIsEmpty</td><td>Is empty</td></tr><tr><td>GridViewFilterIsNotEmpty</td><td>Is not empty</td></tr><tr><td>GridViewFilterDistinctValueNull</td><td>[null]</td></tr><tr><td>GridViewFilterDistinctValueStringEmpty</td><td>[empty]</td></tr><tr><td>GridViewGroupPanelText</td><td>Drag a column header and drop it here to group by that column</td></tr><tr><td>GridViewGroupPanelTopText</td><td>Group Header</td></tr><tr><td>GridViewGroupPanelTopTextGrouped</td><td>Grouped by:</td></tr></table>
+GridViewAlwaysVisibleNewRow | Click here to add new item
+GridViewClearFilter | Clear Filter
+GridViewFilter | Filter
+GridViewFilterAnd | And
+GridViewFilterContains | Contains
+GridViewFilterDoesNotContain | Does not contain
+GridViewFilterEndsWith | Ends with
+GridViewFilterIsContainedIn | Is contained in
+GridViewFilterIsEqualTo | Is equal to
+GridViewFilterIsGreaterThan | Is greater than
+GridViewFilterIsGreaterThanOrEqualTo | Is greater than or equal to
+GridViewFilterIsNotContainedIn | Is not contained in
+GridViewFilterIsLessThan | Is less than
+GridViewFilterIsLessThanOrEqualTo | Is less than or equal to
+GridViewFilterIsNotEqualTo | Is not equal to
+GridViewFilterMatchCase | Match case 
+GridViewFilterOr | Or
+GridViewFilterSelectAll | Select All
+GridViewFilterShowRowsWithValueThat | Show rows with value that
+GridViewFilterStartsWith | Starts with
+GridViewFilterIsNull | Is null
+GridViewFilterIsNotNull | Is not null
+GridViewFilterIsEmpty | Is empty
+GridViewFilterIsNotEmpty | Is not empty
+GridViewFilterDistinctValueNull | [null]
+GridViewFilterDistinctValueStringEmpty | [empty]
+GridViewGroupPanelText | Drag a column header and drop it here to group by that column
+GridViewGroupPanelTopText | Group Header
+GridViewGroupPanelTopTextGrouped | Grouped by:
 
 # See Also
 

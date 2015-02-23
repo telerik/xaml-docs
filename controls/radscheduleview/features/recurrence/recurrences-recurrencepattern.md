@@ -46,21 +46,21 @@ The purpose of this tutorial is to show you:
 
 * [Examples](#examples) - show you how to combine the exposed by the __RecurrencePattern__ class properties to configure repeating appointments with ultimate flexibility. The following cases will be examined:          
 
-	* [Create](#how-to-create-every-day-recurring-appointment?) every day recurring appointment.            
+	* [Create](#how-to-create-every-day-recurring-appointment) every day recurring appointment.            
 
-	* [Create](#how-to-create-every-week-day-recurring-appointment?) every __week__ day recurring appointment.            
+	* [Create](#how-to-create-every-week-day-recurring-appointment) every __week__ day recurring appointment.            
 
-	* [Create](#how-to-create-an-appointment-that-occurs-on-every-"n"-days?) an appointment that occurs on every "n" days.            
+	* [Create](#how-to-create-an-appointment-that-occurs-on-every-n-days) an appointment that occurs on every "n" days.  
+	
+	* [Create](#how-to-create-an-appointment-that-occurs-on-every-n-th-day-of-the-month-and-the-interval-between-each-recurrence-is-m-months) an appointment that occurs on every "n-th" day of the month and the interval between each recurrence is "m" months. 
+	
+	* [Create](#how-to-create-an-appointment-that-occurs-on-every-n-th-week-day-and-the-interval-between-each-recurrence-is-m-months) an appointment that occurs on every "n-th" __week__ day and the interval between each recurrence is "m" months.            
 
-	* [Create](#how-to-create-an-appointment-that-occurs-on-every-"n-th"-day-of-the-month-and-the-interval-between-each-recurrence-is-"m"-months?) an appointment that occurs on every "n-th" day of the month and the interval between each recurrence is "m" months.            
-
-	* [Create](#how-to-create-an-appointment-that-occurs-on-every-"n-th"-week-day-and-the-interval-between-each-recurrence-is-"m"-months?) an appointment that occurs on every "n-th" __week__ day and the interval between each recurrence is "m" months.            
-
-	* [Create](#how-to-create-an-yearly-appointment?) a yearly appointment.            
+	* [Create](#how-to-create-an-yearly-appointment) a yearly appointment.            
 
 	* [Set](#set-the-maximum-occurrences-of-the-appointment) the maximum occurrences of the appointment.
 
-	* [Set](#set-the-end-date-of-the-appointment's-occurrences) the end date of the appointment's occurrences.            
+	* [Set](#set-the-end-date-of-the-appointments-occurrences) the end date of the appointment's occurrences.            
 
 ## RecurrencePattern Class
 

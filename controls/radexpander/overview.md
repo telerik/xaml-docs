@@ -10,14 +10,9 @@ position: 0
 
 # Overview
 
-
-
 {% if site.site_name == 'Silverlight' %}![expander sl icon](images/expander_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![expander wpf icon](images/expander_wpf_icon.png){% endif %}
 
-## 
-
-Thank you for choosing Telerik __RadExpander__!
-				
+Thank you for choosing Telerik __RadExpander__!				
 
 ![](images/RadExpander.png)
 

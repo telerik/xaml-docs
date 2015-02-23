@@ -39,12 +39,13 @@ __Key Features:__
 
 * __Selection Range__: Set the range of the dates the user will be able to navigate to, and a constraint on the dates that can be selected.          
 
-*__Keyboard Navigation__: RadCalendar supports the standard browser navigation paradigm. Users can tab across the page elements till they reach the calendar element. Then they can go forward/backward over the individual days by pressing the [Tab]/[Shift+Tab] keys. A day can be selected by clicking the [Enter] button.
+* __Keyboard Navigation__: RadCalendar supports the standard browser navigation paradigm. Users can tab across the page elements till they reach the calendar element. Then they can go forward/backward over the individual days by pressing the [Tab]/[Shift+Tab] keys. A day can be selected by clicking the [Enter] button.
 
 * __Styling and Appearance__: RadCalendar can be fully customized using Expression Blend. There are also several pre-defined themes that can be used to stylize the calendar control.
 {% endif %}
+
 {% if site.site_name == 'WPF' %}
-* __Culture awareness__: RadCalendar is easily globalized. All properties are culture-aware and if not explicitly set, they would use the default thread culture for their values. You can easily change the text in the calendar's header, FirstDayOfWeek or ayMonthNamesFormat.          
+* __Culture awareness__: RadCalendar is easily globalized. All properties are culture-aware and if not explicitly set, they would use the default thread culture for their values. You can easily change the text in the calendar's header, FirstDayOfWeek or DayMonthNamesFormat.          
 
 * __Month and year views__: RadCalendar provides month and year views.          
 

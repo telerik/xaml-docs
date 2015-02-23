@@ -11,9 +11,9 @@ position: 6
 # Styling the RootCompass
 
 The indicators that you see in the four ends of the __RadDocking__ control, when rearranging the containers in it, is represented by the __RootCompass__ control. Therefore you can't directly create a style for it in Expression Blend and you have to use a dummy control to create the style.
-        
+
 Open your __RadDocking__ project in Expression Blend and select the __RadDocking__ you want to modify. On the same scene you should place a __RootCompass__ control, that will be used as a dummy. To do so choose the Assets tab. From the 'Controls -> All' section select the __RootCompass__ control:
-        
+
 ![](images/RadDocking_StylingRootCompass_01.png)
 
 With your mouse create a new instance of the control on the scene:
@@ -21,7 +21,7 @@ With your mouse create a new instance of the control on the scene:
 ![](images/RadDocking_StylingRootCompass_02.png)
 
 Now select the newly created control. Then select Object -> *Edit Style -> Edit a Copy. *You will be prompted for the name of the style and where to be placed within your application.
-        
+
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking OK, a style for your __RootCompass__ control will be created and the properties that can be set through it will be loaded in the 'Properties' pane.
@@ -32,33 +32,33 @@ Go to the 'Resources' pane and see the resources generated for your style.
 ![](images/RadDocking_StylingRootCompass_05.png)
 
 * __Theme__ - is the theme applied to the control.
-          
+
 * __ButtonIconBackground_Normal__ - is the background brush applied to the left, right, top and bottom arrow elements in the compass.
-          
+
 * __ButtonIconForeground_Normal__ - is the foreground brush applied to the left, right, top and bottom arrow elements in the compass.
-          
+
 * __LeftIndicatorStyle__ - the style applied to the left indicator of the compass.
-          
+
 * __TopIndicatorStyle__ - the style applied to the top indicator of the compass.
-          
+
 * __RightIndicatorStyle__ - the style applied to the right indicator of the compass.
-          
+
 * __BottomIndicatorStyle__ - the style applied to the bottom indicator of the compass.
-          
+
 * __CenterIndicatorStyle__ - the style applied to the central indicator of the compass.
-          
+
 * __RootCompassStyle__ - the style containing the described elements.
-          
+
 To change the control's visual appearance you can edit the indicators' styles and templates. They all have a similar templating structure which consists of the following elements:
 
 * __[Grid]__ - is the host container for the indicator's elements.
-            
-* __[ButtonChrome]__ - is the main part of the indicator's content. Read more about changing its default visual appearance here.
-              
-* __[Path]__ - represents the indicator's icon background arrow.
-              
-* __[Path]__ - represents the indicator's icon foreground arrow, shown on the top of the background arrow.
-              
+
+	* __[ButtonChrome]__ - is the main part of the indicator's content. Read more about changing its default visual appearance here.
+
+	* __[Path]__ - represents the indicator's icon background arrow.
+
+	* __[Path]__ - represents the indicator's icon foreground arrow, shown on the top of the background arrow.
+
 Here is an example of the above resources modified:{% endif %}{% if site.site_name == 'Silverlight' %}
 
 ![](images/RadDocking_StylingRootCompass_06.png){% endif %}{% if site.site_name == 'WPF' %}

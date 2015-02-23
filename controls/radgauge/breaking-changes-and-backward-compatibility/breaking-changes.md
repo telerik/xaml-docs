@@ -10,49 +10,47 @@ position: 1
 
 # Breaking Changes
 
-
-
 ## Q2 2012
 
-1. We introduced several changes so that some of the gauge properties now support both absolute measurements and relative measurements. These properties accept XAML notation which is similar to the one used for RowDefinition.Height property of Grid. For example:
-    1. LabelOffset=”12” sets label offset to 12 pixels.
-    2. LabelOffset=”0.1*” sets label offset to the 0.1 of the scale relative measurements (in the current implementation it looks like LabelOffset=”0.1”)
+* We introduced several changes so that some of the gauge properties now support both absolute measurements and relative measurements. These properties accept XAML notation which is similar to the one used for RowDefinition.Height property of Grid. For example:
+    * LabelOffset=”12” sets label offset to 12 pixels.
+    * LabelOffset=”0.1*” sets label offset to the 0.1 of the scale relative measurements (in the current implementation it looks like LabelOffset=”0.1”)
 
-LabalOffset=”1*” means that tick labels will be shifted from the label location to the full cell size. For example, if radial gauge has size 300x300 pixels then labels will be shifted to 300 pixels from their original location. This change affects following properties of the gauge objects:
+	LabalOffset=”1*” means that tick labels will be shifted from the label location to the full cell size. For example, if radial gauge has size 300x300 pixels then labels will be shifted to 300 pixels from their original location. This change affects following properties of the gauge objects:
 
-1. GaugeRangeGroup.Offset
-2. GraphicScale.LabelOffset
-3. GraphicScale.MajorTickOffset
-4. GraphicScale.MiddleTickOffset
-5. GraphicScale.MinorTickOffset
-6. GraphicScale.RangeOffset
+	* GaugeRangeGroup.Offset
+	* GraphicScale.LabelOffset
+	* GraphicScale.MajorTickOffset
+	* GraphicScale.MiddleTickOffset
+	* GraphicScale.MinorTickOffset
+	* GraphicScale.RangeOffset
 
-The next big change we made is also related to the __ScaleObject.RelativeWidth__ and __ScaleObject.RelativeHeight__ attachable properties. They have been changed to accept a new data type - GaugeMeasure instead of double. GaugeMeasure will have behavior similar to the one used for RowDefinition.Height property of Grid, i.e. it will support both absolute measurements and relative measurements. So width and height of any scale object can be set in pixels as well as in the relative units. This change affects following properties of the gauge objects:
+	The next big change we made is also related to the __ScaleObject.RelativeWidth__ and __ScaleObject.RelativeHeight__ attachable properties. They have been changed to accept a new data type - GaugeMeasure instead of double. GaugeMeasure will have behavior similar to the one used for RowDefinition.Height property of Grid, i.e. it will support both absolute measurements and relative measurements. So width and height of any scale object can be set in pixels as well as in the relative units. This change affects following properties of the gauge objects:
 
-1. GraphicScale.MajorTickRelativeHeight
-2. GraphicScale.MajorTickRelativeWidth
-3. GraphicScale.MiddleTickRelativeHeight
-4. GraphicScale.MiddleTickRelativeWidth
-5. GraphicScale.MinorTickRelativeHeight
-6. GraphicScale.MinorTickRelativeWidth
+	* GraphicScale.MajorTickRelativeHeight
+	* GraphicScale.MajorTickRelativeWidth
+	* GraphicScale.MiddleTickRelativeHeight
+	* GraphicScale.MiddleTickRelativeWidth
+	* GraphicScale.MinorTickRelativeHeight
+	* GraphicScale.MinorTickRelativeWidth
 
-For example:
-1. MajorTickRelativeHeight=”12” sets major tick height to 12 pixels.
-2. MajorTickRelativeHeight =”0.1*” sets major tick height to the 0.1 of the scale relative measurements (in the current implementation it looks like MajorTickRelativeHeight =”0.1”).
+	For example:
+	* MajorTickRelativeHeight=”12” sets major tick height to 12 pixels.
+	* MajorTickRelativeHeight =”0.1*” sets major tick height to the 0.1 of the scale relative measurements (in the current implementation it looks like MajorTickRelativeHeight =”0.1”).
 
-__2.__ We added 10 new classes for the scales:
-1. HorizontalLinearScale
-2. VerticalLinearScale
-3. QuadrantNEScale
-4. QuadrantNWScale
-5. QuadrantSEScale
-6. QuadrantSWScale
-7. SemicircleEastScale
-8. SemicircleNorthScale
-9. SemicircleSouthScale
-10. SemicircleWestScale
+* We added 10 new classes for the scales:
+	1. HorizontalLinearScale
+	2. VerticalLinearScale
+	3. QuadrantNEScale
+	4. QuadrantNWScale
+	5. QuadrantSEScale
+	6. QuadrantSWScale
+	7. SemicircleEastScale
+	8. SemicircleNorthScale
+	9. SemicircleSouthScale
+	10. SemicircleWestScale
 
-The #1 and #2 should be used to create correspondent horizontal and vertical linear scale. The #3-#6 should be used to create quadrant-style radial gauges. The #7-#10 should be used to create semicircle radial gauges. Any scale object can be used in any gauge container. For example, you can put 4 quadrant-style scales into 1 full-circle radial gauge.
+	The __HorizontalLinearScale__ and __VerticalLinearScale__ cab be used to create correspondent horizontal and vertical linear scale. The Quadrant scales can be used to create quadrant-style radial gauges. The Semicircle scales can be used to create semicircle radial gauges. Any scale object can be used in any gauge container. For example, you can put 4 quadrant-style scales into 1 full-circle radial gauge.
 
 ## Q3 2011
 

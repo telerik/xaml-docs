@@ -13,7 +13,7 @@ site_name: Silverlight
 
 The attached properties of the Telerik __AnimationManager__ allow you to apply animation to the expanding and collapsing of the __RadMenuItems__. By default there is one animation defined and it applies to the expanding of the __RadMenuItem__.        
 
->tipIn order to use the __AnimationManager__you have to add the following namespace: *xmlns:telerikAnimation="clr-namespace:Telerik.Windows.Controls.Animation;assembly=Telerik.Windows.Controls"* 
+>tipIn order to use the __AnimationManager__ you have to add the following namespace: *xmlns:telerikAnimation="clr-namespace:Telerik.Windows.Controls.Animation;assembly=Telerik.Windows.Controls"* 
 
 Here is the default animation value.
 

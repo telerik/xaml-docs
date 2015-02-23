@@ -13,12 +13,20 @@ position: 0
 ## Adding the RadOutlookBar to the page
 
 {% if site.site_name == 'WPF' %}
->noteIn order to use __RadOutlookBar__ control in your projects you have to add references to the following assemblies:<br/> * __Telerik.Windows.Controls__ <br/> * __Telerik.Windows.Controls.Navigation__ <br/> * __Telerik.Windows.Data__<br/>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+>In order to use __RadOutlookBar__ control in your projects you have to add references to the following assemblies:
+>	- __Telerik.Windows.Controls__ 
+>	- __Telerik.Windows.Controls.Navigation__ 
+>	- __Telerik.Windows.Data__  
+
+>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
->noteIn order to use __RadOutlookBar__ control in your projects you have to add references to the following assemblies:<br/> * __Telerik.Windows.Controls__ <br/> * __Telerik.Windows.Controls.Navigation__ <br/>
-You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
+>In order to use __RadOutlookBar__ control in your projects you have to add references to the following assemblies:
+>	- __Telerik.Windows.Controls__ 
+>	- __Telerik.Windows.Controls.Navigation__  
+
+>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
 {% endif %}
 
 ![RadOutlookBar Step 1](images/outlook_step1.png)
@@ -43,12 +51,12 @@ You can find more info [here](http://www.telerik.com/help/silverlight/installati
 {{endregion}}
 
 ![](images/outlook_step3.png)
+
 ## Selecting item
 
 By default the first item will be selected. In order to select another item you can use the __IsSelected__ property.        
 
 #### __XAML__
-
 {{region radoutlookbar-getting-started_1}}
 	<UserControl x:Class="RadOutlookBarHelpExamples.MainPage" 
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -76,11 +84,9 @@ By default the first item will be selected. In order to select another item you 
 
 ## Handling changes in the selection
 
-To handle the changes in the selection you can use the __SelectionChanged__ event of the __RadOutlookBar__:
-        
+To handle the changes in the selection you can use the __SelectionChanged__ event of the __RadOutlookBar__:        
 
 #### __XAML__
-
 {{region radoutlookbar-getting-started_2}}
 	<telerik:RadOutlookBar x:Name="RadOutlookBar1" SelectionChanged="RadOutlookBar1_SelectionChanged">
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
@@ -97,10 +103,7 @@ To handle the changes in the selection you can use the __SelectionChanged__ even
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-
-
 #### __C#__
-
 {{region radoutlookbar-getting-started_1}}
 	private void RadOutlookBar1_SelectionChanged(object sender, RoutedEventArgs e)
 	{
@@ -108,25 +111,18 @@ To handle the changes in the selection you can use the __SelectionChanged__ even
 	}
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radoutlookbar-getting-started_1}}
 	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
 	End Sub
 {{endregion}}
 
-
-
 ## Limiting active items
 
-To limit the number of items that can be displayed in the active area you can use the __ActiveItemsMaxCount__ property:
-        
+To limit the number of items that can be displayed in the active area you can use the __ActiveItemsMaxCount__ property:        
 
 #### __XAML__
-
 {{region radoutlookbar-getting-started_3}}
     <telerik:RadOutlookBar x:Name="RadOutlookBar1" ActiveItemsMaxCount="2">
         <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
@@ -146,11 +142,7 @@ To limit the number of items that can be displayed in the active area you can us
 ![](images/outlook_step4.png)
 
 # See Also
-
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})
-
  * [Resizing]({%slug radoutlookbar-resizing%})
-
  * [Selection]({%slug radoutlookbar-selection%})
-
  * [Events]({%slug radoutlookbar-events%})

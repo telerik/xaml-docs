@@ -10,25 +10,17 @@ position: 3
 
 # Populate ColorPicker with Business Data
 
-
-
-This article will show you how to use the __RadColorPicker__ in MVVM scenarios. Also, we will show you which properties to bind and how to create a custom View and ViewModel.
-	  
+This article will show you how to use the __RadColorPicker__ in MVVM scenarios. Also, we will show you which properties to bind and how to create a custom View and ViewModel.	  
 
 The final result will look like this:
 
+![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
 
- ![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
+## Prepare the MainViewModel	  
 
-## 
-Prepare the MainViewModel
-	  
-
-For the purpose of this example we will create a __ColorModel__ class and three __ObservableCollections__ of ColorModel which will be named as follows: *StandardPaletteColors*, *MainPaletteColors* and *HeaderPaletteColors*. The __ColorModel__ class will expose a *CustomColor* property of type __Color__.
-		
+For the purpose of this example we will create a __ColorModel__ class and three __ObservableCollections__ of ColorModel which will be named as follows: *StandardPaletteColors*, *MainPaletteColors* and *HeaderPaletteColors*. The __ColorModel__ class will expose a *CustomColor* property of type __Color__.		
 
 #### __C#__
-
 {{region radcolorpicker-howto-binding-object_1}}
 	public class ColorModel : ViewModelBase
 	{
@@ -51,12 +43,9 @@ For the purpose of this example we will create a __ColorModel__ class and three 
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radcolorpicker-howto-binding-object_2}}
 		Public Class ColorModel
 			Inherits ViewModelBase
@@ -77,15 +66,11 @@ For the purpose of this example we will create a __ColorModel__ class and three 
 				End Set
 			End Property
 		End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Next we will define the __MainViewModel__ which will wrap and fill the collections of ColorModel objects.
-		
+Next we will define the __MainViewModel__ which will wrap and fill the collections of ColorModel objects.		
 
 #### __C#__
-
 {{region radcolorpicker-howto-binding-object_3}}
 	public class MainViewModel : ViewModelBase
 	{
@@ -93,55 +78,41 @@ Next we will define the __MainViewModel__ which will wrap and fill the collectio
 		private ObservableCollection<ColorModel> headerPaletteColors;
 		private ObservableCollection<ColorModel> standardPaletteColors;
     }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radcolorpicker-howto-binding-object_4}}
-		Public Class MainViewModel
-			Inherits ViewModelBase
-			Private m_mainPaletteColors As ObservableCollection(Of ColorModel)
-			Private m_headerPaletteColors As ObservableCollection(Of ColorModel)
-			Private m_standardPaletteColors As ObservableCollection(Of ColorModel)
-	{{endregion}}
-
-
+	Public Class MainViewModel
+		Inherits ViewModelBase
+		Private m_mainPaletteColors As ObservableCollection(Of ColorModel)
+		Private m_headerPaletteColors As ObservableCollection(Of ColorModel)
+		Private m_standardPaletteColors As ObservableCollection(Of ColorModel)
+	End Class
+{{endregion}}
 
 Then we can set this model as __DataContext__ of the __RadColorPicker__. Go in your code behind file and add the following code after the __InitializeComponent();__
 
 #### __C#__
-
 {{region radcolorpicker-howto-binding-object_5}}
-		this.DataContext = new MainViewModel();
-	{{endregion}}
-
-
+	this.DataContext = new MainViewModel();
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radcolorpicker-howto-binding-object_6}}
-		Me.DataContext = New MainViewModel()
-	{{endregion}}
+	Me.DataContext = New MainViewModel()
+{{endregion}}
 
-After this is done we can prepare the View of our application.
-		
+After this is done we can prepare the View of our application.		
 
-## Prepare the View
-	  
+## Prepare the View	  
 
-We will use customized __Path__ to visualize the different colors. In order to do this we will define a custom __DataTemplate__ as the __PaletteItemsTemplate__ property of the __RadColorPicker__. Also, we will bind our collections (defined in the MainViewModel) to each of the following properties of the control: __HeaderPaletteItemsSource__, __MainPaletteItemsSource__ and __StandardPaletteItemsSource__.
-		
+We will use customized __Path__ to visualize the different colors. In order to do this we will define a custom __DataTemplate__ as the __PaletteItemsTemplate__ property of the __RadColorPicker__. Also, we will bind our collections (defined in the MainViewModel) to each of the following properties of the control: __HeaderPaletteItemsSource__, __MainPaletteItemsSource__ and __StandardPaletteItemsSource__.		
 
->importantPlease note that in MVVM scenarios you have to set the __RadColorPicker.ColorPropertyPath__. This is a path to a value on the __MainViewModel__ that serves as the visual representation of the __RadColorPaletteViewItem.Color__. You can assume that the __ColorPropertyPath__ mimics the behavior of the __ItemsControl.DisplayMemberPath__.
-		  
+>important Please note that in MVVM scenarios you have to set the __RadColorPicker.ColorPropertyPath__. This is a path to a value on the __MainViewModel__ that serves as the visual representation of the __RadColorPaletteViewItem.Color__. You can assume that the __ColorPropertyPath__ mimics the behavior of the __ItemsControl.DisplayMemberPath__.		  
 
-These steps can be implemented with the following code:
-		
+These steps can be implemented with the following code:		
 
 #### __XAML__
-
 {{region radcolorpicker-howto-binding-object_0}}
     <Grid>
         <Grid.Resources>
@@ -164,17 +135,13 @@ These steps can be implemented with the following code:
                                 PaletteItemsTemplate="{StaticResource PaletteItemsTemplate}"
                                 StandardPaletteItemsSource="{Binding StandartPaletteColors}" />
     </Grid>
-	{{endregion}}
+{{endregion}}
 
-
-
->Please note that this article doesn't demonstrate how to customize the __ToolTip__ of the colors. If you need to implement such a scenario, please refer to [this article]({%slug radcolorpicked-howto-custom-tooltip%}).
-		  
+>Please note that this article doesn't demonstrate how to customize the __ToolTip__ of the colors. If you need to implement such a scenario, please refer to [this article]({%slug radcolorpicked-howto-custom-tooltip%}).		  
 
 The final result should be similar to the following one:
 
 ![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
 
 # See Also
-
  * [Customize the PaletteViewItem's ToolTip]({%slug radcolorpicked-howto-custom-tooltip%})

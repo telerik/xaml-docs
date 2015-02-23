@@ -64,7 +64,7 @@ Check out the online demo at: [http://demos.telerik.com/wpf/](http://demos.teler
 
 # See Also
 
- *[Getting Started with RadTreeView - Video Tutorial](http://tv.telerik.com/silverlight/video/introduction-radtreeview-silverlight)
+ * [Getting Started with RadTreeView - Video Tutorial](http://tv.telerik.com/silverlight/video/introduction-radtreeview-silverlight)
  * [Visual Structure]({%slug radtreeview-visual-structure%})
  * [Getting Started]({%slug radtreeview-getting-started%})
  * [Styles and Templates]({%slug radtreeview-styling-and-appearance-overview2%})

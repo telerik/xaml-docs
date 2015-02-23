@@ -14,6 +14,12 @@ position: 0
 
 This topic will summarize the new functionality introduced in the editor with helpful links to places in the documentation that describe in greater detail the new functionality and how it can be used.
 
+## What’s New in 2015 Q1 – 2015.1.0225
+
+* Break element. You can find more [here]({%slug radrichtextbox-features-document-elements-break%}).
+* RadDocument version updated to 1.3
+
+
 ## What's New in 2013 Q3 - 2013.3.1016
 
 * Table styles gallery. You can find more [here]({%slug radrichtextbox-ui-for-applying-formatting-table-styles-gallery%}).
@@ -100,8 +106,7 @@ This topic will summarize the new functionality introduced in the editor with he
 * Multiple Sections support, various page orientations, even/odd section breaks, different Haders/Footers, UI to toggle Headers/Footer linking.
             
 
-* Enhancements to the custom annotations and the document protection feature. New demo available related to this feature -
-              [Structured Content Editing](http://demos.telerik.com/silverlight/#RichTextBox/StructuredContentEditing).
+* Enhancements to the custom annotations and the document protection feature. New demo available related to this feature - [Structured Content Editing](http://demos.telerik.com/silverlight/#RichTextBox/StructuredContentEditing).
             
 
 * FloatingImageBlocks improvements in FlowLayoutMode, achieving a behavior resembling HTML floating blocks. As a result, floating image blocks in the Header/Footer are shown in a much better way.
@@ -122,8 +127,7 @@ This topic will summarize the new functionality introduced in the editor with he
 
 * Show ImageMiniToolBar when a floating image is selected.
 
-* Export the document in HTML that is compatible with HtmlTextBox from Reporting.
-              [Read more]({%slug radrichtextbox-features-import-export-settings%})
+* Export the document in HTML that is compatible with HtmlTextBox from Reporting. [Read more]({%slug radrichtextbox-features-import-export-settings%})
 
 ## What's New in 2011 Q3 - 2011.3.1116
 
@@ -145,7 +149,4 @@ This topic will summarize the new functionality introduced in the editor with he
 
 * Integration with Test Studio and Testing Framework.
 
-* In service pack - 2011.3.1220 - Custom annotations support.
-              [Read more]({%slug radrichtextbox-features-document-elements-annotations%})
-
-# See Also
+* In service pack - 2011.3.1220 - Custom annotations support. [Read more]({%slug radrichtextbox-features-document-elements-annotations%})

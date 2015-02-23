@@ -10,8 +10,6 @@ position: 0
 
 # Backward Compatibility
 
-
-
 ## Telerik RadButtons - Q3 2011
 
 The {% if site.site_name == 'Silverlight' %}__VisualStates__{% endif %}{% if site.site_name == 'WPF' %}__Triggers__{% endif %} in the __ControlTemplates__ of the __RadButtons__ are modified. This may cause exceptions for users who have applied custom __ControlTemplates__ for the __RadButtons__ only in case they also set the __IsBackgroundVisible__ property to __False__.

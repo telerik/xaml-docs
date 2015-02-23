@@ -128,6 +128,20 @@ Supported
 
 Supported
               </td><td></td><td></td></tr><tr><td>
+Section Vertical Alignment</td><td>
+Supported</td><td>
+Supported</td><td>
+Supported</td><td>
+Supported</td><td>
+Not applicable</td><td>
+Not applicable</td></tr><tr><td>
+Page Numbering Settings</td><td>
+Supported</td><td>
+Supported</td><td>
+Supported</td><td>
+Supported</td><td>
+Not applicable</td><td>
+Not applicable</td></tr><tr><td>
 
 <b>
                   Tables

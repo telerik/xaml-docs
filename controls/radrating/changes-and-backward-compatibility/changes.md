@@ -10,8 +10,6 @@ position: 0
 
 # Changes
 
-
-
 This article describes the fixes and the new features in the RadRating control
 
 ## Q1 2014
@@ -19,5 +17,3 @@ This article describes the fixes and the new features in the RadRating control
 ### What's Fixed
 
 * Fixed: RadRating doesn't show when disabled
-
-# See Also

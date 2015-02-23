@@ -154,8 +154,8 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
     RadFlowDocument document = new RadFlowDocument();
 
     Table table = document.Sections.AddSection().Blocks.AddTable();
-    document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleName);
-    table.StyleId = BuiltInStyleNames.TableGridStyleName;
+    document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId);
+    table.StyleId = BuiltInStyleNames.TableGridStyleId;
 
     ThemableColor cellBackground = new ThemableColor(Colors.Beige);
 

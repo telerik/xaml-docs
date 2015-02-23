@@ -10,10 +10,7 @@ position: 12
 
 # Items Selection
 
-
-
-Many applications require the ability to select items shown over the map. The __VisualizationLayer__ object has built-in functionality which supports items selection, both point-type and map shapes. This article explains the usage of the items selection feature in the following main scenarios:
-      
+Many applications require the ability to select items shown over the map. The __VisualizationLayer__ object has built-in functionality which supports items selection, both point-type and map shapes. This article explains the usage of the items selection feature in the following main scenarios:      
 
 1. Items selection.
 
@@ -34,17 +31,14 @@ By default items selection feature is disabled in favor of the panning by mouse 
             <telerik:OpenStreetMapProvider />
         </telerik:RadMap.Provider>
         <telerik:VisualizationLayer x:Name="visualizationLayer" />
-    </telerik:RadMap>
-	
-	{{endregion}}
-
-
+    </telerik:RadMap>	
+{{endregion}}
 
 ## Items selection
 
-In this section we demonstrate how the items selection can be implemented for the point-type objects (i.e. objects which represent single location on the map). In order to provide the needed data to the visualization layer, you have to create a collection of business __MapItem__ objects. For example:
-        
+In this section we demonstrate how the items selection can be implemented for the point-type objects (i.e. objects which represent single location on the map). In order to provide the needed data to the visualization layer, you have to create a collection of business __MapItem__ objects. For example:        
 
+#### __C#__
 {{region radmap-visualization-layer-items-selection_1}}
 	public class MapItem : INotifyPropertyChanged
 	{
@@ -133,8 +127,7 @@ In this section we demonstrate how the items selection can be implemented for th
 			}
 		}
 	}
-	{{endregion}}
-
+{{endregion}}
 
 #### __VB.NET__
 {{region radmap-visualization-layer-items-selection_2}}
@@ -205,11 +198,8 @@ In this section we demonstrate how the items selection can be implemented for th
         Private Sub OnPropertyChanged(propertyName As String)
             RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
         End Sub
-    End Class
-	
-	{{endregion}}
-
-
+    End Class	
+{{endregion}}
 
 The next step is to define the __ItemTemplate__ for the information layer and set the desired bindings in it. In the current example, the marker will be represented by a __MapPinPoint__ object:
         
@@ -239,9 +229,7 @@ The next step is to define the __ItemTemplate__ for the information layer and se
                                     ItemTemplate="{StaticResource PinPointTemplate}"
                                     SelectionChanged="LayerSelectionChanged" />
     </telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 We will subscribe to the __VisualizationLayer.SelectionChanged__ event in order to change selection state of the business data objects.
         
@@ -307,8 +295,7 @@ We will subscribe to the __VisualizationLayer.SelectionChanged__ event in order 
 	        }
 	    }
 	}
-	{{endregion}}
-
+{{endregion}}
 
 #### __VB.NET__
 {{region radmap-visualization-layer-items-selection_5}}
@@ -353,11 +340,8 @@ We will subscribe to the __VisualizationLayer.SelectionChanged__ event in order 
                 Next
             End If
         End Sub
-    End Class
-	
-	{{endregion}}
-
-
+    End Class	
+{{endregion}}
 
 If you run the application you will see the items are not selected by default:![Rad Map Features Virtualization Layer Items Selection](images/RadMap_Features_VirtualizationLayer_ItemsSelection.png)
 
@@ -417,9 +401,7 @@ In this section we demonstrate how the items selection feature can be implemente
             </telerik:VisualizationLayer.Reader>
         </telerik:VisualizationLayer>
     </telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 If you run the application you will see the map shapes colored using __ShapeFill__:
 
@@ -512,10 +494,8 @@ The __VisualizationLayer__ class provides several methods which can be used to s
                 </Button>
             </StackPanel>
         </Grid>
-    </UserControl>
-	
-	{{endregion}}
-
+    </UserControl>	
+{{endregion}}
 
 #### __C#__
 {{region radmap-visualization-layer-items-selection_8}}
@@ -536,8 +516,7 @@ The __VisualizationLayer__ class provides several methods which can be used to s
 	{
 	this.visualizationLayer.ReverseSelection(this.visualizationLayer.Items);
 	}
-	{{endregion}}
-
+{{endregion}}
 
 #### __VB.NET__
 {{region radmap-visualization-layer-items-selection_9}}
@@ -553,9 +532,7 @@ The __VisualizationLayer__ class provides several methods which can be used to s
 	    Private Sub ReverseSelection(sender As Object, e As RoutedEventArgs)
 	        Me.visualizationLayer.ReverseSelection(Me.visualizationLayer.Items)
 	    End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 When you run your application you see the map shapes colored using regular filling:
 ![Rad Map Features Virtualization Layer Items Selection 8](images/RadMap_Features_VirtualizationLayer_ItemsSelection_8.png)
@@ -567,7 +544,5 @@ Click “Reverse Selection” button. The selection will be reversed (i.e. selec
 ![Rad Map Features Virtualization Layer Items Selection 10](images/RadMap_Features_VirtualizationLayer_ItemsSelection_10.png)
 
 # See Also
-
  * [Colorizer]({%slug radmap-visualization-layer-colorizer%})
-
  * [Graph Colorizer]({%slug radmap-visualization-layer-graph-colorizer%})

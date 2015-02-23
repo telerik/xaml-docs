@@ -10,8 +10,4 @@ position: 1
 
 # Backward Compatibility
 
-
-
 ## Q1 2014
-
-# See Also

@@ -15,7 +15,7 @@ position: 6
 The __RadRichTextBox__ is capable of displaying tables. To add a table to the document you can use one of the following approaches:
       
 
-* [Programmatically via RadRichTextBox's API](#creating-a-table-programmatically-via-radrichtextbox's-api)
+* [Programmatically via RadRichTextBox's API](#creating-a-table-programmatically-via-radrichtextbox-api)
 
 * [Via the built-in UI](#creating-a-table-via-the-built-in-ui)
 
@@ -25,10 +25,9 @@ The same approaches can be adopted when formatting the table:
 
 * [Via the built-in UI](#formatting-a-table-via-the-built-in-ui)
 
-## Creating a Table Programmatically via RadRichTextBox's API
+## Creating a Table Programmatically via RadRichTextBox API
 
->tip
-          To learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
+>tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
         
 
 The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
@@ -39,100 +38,100 @@ Here is an example done in the code-behind.
 #### __C#__
 
 {{region radrichtextbox-features-document-elements-tables_2}}
-	            RadDocument document = new RadDocument();
-	            Section section = new Section();
-	
-	            Table table = new Table();
-	            table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
-	
-	            TableRow row1 = new TableRow();
-	
-	            TableCell cell1 = new TableCell();
-	            Paragraph p1 = new Paragraph();
-	            Span s1 = new Span();
-	            s1.Text = "Cell 1";
-	            p1.Inlines.Add(s1);
-	            cell1.Blocks.Add(p1);
-	            row1.Cells.Add(cell1);
-	
-	            TableCell cell2 = new TableCell();
-	            Paragraph p2 = new Paragraph();
-	            Span s2 = new Span();
-	            s2.Text = "Cell 2";
-	            p2.Inlines.Add(s2);
-	            cell2.Blocks.Add(p2);
-	            row1.Cells.Add(cell2);
-	            table.Rows.Add(row1);
-	
-	            TableRow row2 = new TableRow();
-	
-	            TableCell cell3 = new TableCell();
-	            cell3.ColumnSpan = 2;
-	            Paragraph p3 = new Paragraph();
-	            Span s3 = new Span();
-	            s3.Text = "Cell 3";
-	            p3.Inlines.Add(s3);
-	            cell3.Blocks.Add(p3);
-	            row2.Cells.Add(cell3);
-	            table.Rows.Add(row2);
-	
-	            section.Blocks.Add(new Paragraph());
-	            section.Blocks.Add(table);
-	            section.Blocks.Add(new Paragraph());
-	            document.Sections.Add(section);
-	
-	            this.radRichTextBox.Document = document;
-	{{endregion}}
+    RadDocument document = new RadDocument();
+    Section section = new Section();
+
+    Table table = new Table();
+    table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
+
+    TableRow row1 = new TableRow();
+
+    TableCell cell1 = new TableCell();
+    Paragraph p1 = new Paragraph();
+    Span s1 = new Span();
+    s1.Text = "Cell 1";
+    p1.Inlines.Add(s1);
+    cell1.Blocks.Add(p1);
+    row1.Cells.Add(cell1);
+
+    TableCell cell2 = new TableCell();
+    Paragraph p2 = new Paragraph();
+    Span s2 = new Span();
+    s2.Text = "Cell 2";
+    p2.Inlines.Add(s2);
+    cell2.Blocks.Add(p2);
+    row1.Cells.Add(cell2);
+    table.Rows.Add(row1);
+
+    TableRow row2 = new TableRow();
+
+    TableCell cell3 = new TableCell();
+    cell3.ColumnSpan = 2;
+    Paragraph p3 = new Paragraph();
+    Span s3 = new Span();
+    s3.Text = "Cell 3";
+    p3.Inlines.Add(s3);
+    cell3.Blocks.Add(p3);
+    row2.Cells.Add(cell3);
+    table.Rows.Add(row2);
+
+    section.Blocks.Add(new Paragraph());
+    section.Blocks.Add(table);
+    section.Blocks.Add(new Paragraph());
+    document.Sections.Add(section);
+
+    this.radRichTextBox.Document = document;
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radrichtextbox-features-document-elements-tables_3}}
-	    Dim document As New RadDocument()
-	    Dim section As New Section()
-	    section.Blocks.Add(New Paragraph())
-	
-	    Dim table As New Table()
-	    table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
-	
-	    Dim row1 As New TableRow()
-	
-	    Dim cell1 As New TableCell()
-	    Dim p1 As New Paragraph()
-	    Dim s1 As New Span()
-	    s1.Text = "Cell 1"
-	    p1.Inlines.Add(s1)
-	    cell1.Blocks.Add(p1)
-	    row1.Cells.Add(cell1)
-	
-	    Dim cell2 As New TableCell()
-	    Dim p2 As New Paragraph()
-	    Dim s2 As New Span()
-	    s2.Text = "Cell 2"
-	    p2.Inlines.Add(s2)
-	    cell2.Blocks.Add(p2)
-	    row1.Cells.Add(cell2)
-	    table.Rows.Add(row1)
-	
-	    Dim row2 As New TableRow()
-	
-	    Dim cell3 As New TableCell()
-	    cell3.ColumnSpan = 2
-	    Dim p3 As New Paragraph()
-	    Dim s3 As New Span()
-	    s3.Text = "Cell 3"
-	    p3.Inlines.Add(s3)
-	    cell3.Blocks.Add(p3)
-	    row2.Cells.Add(cell3)
-	    table.Rows.Add(row2)
-	
-	    section.Blocks.Add(table)
-	    section.Blocks.Add(New Paragraph())
-	    document.Sections.Add(section)
-	
-	    Me.radRichTextBox.Document = document
-	{{endregion}}
+    Dim document As New RadDocument()
+    Dim section As New Section()
+    section.Blocks.Add(New Paragraph())
+
+    Dim table As New Table()
+    table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
+
+    Dim row1 As New TableRow()
+
+    Dim cell1 As New TableCell()
+    Dim p1 As New Paragraph()
+    Dim s1 As New Span()
+    s1.Text = "Cell 1"
+    p1.Inlines.Add(s1)
+    cell1.Blocks.Add(p1)
+    row1.Cells.Add(cell1)
+
+    Dim cell2 As New TableCell()
+    Dim p2 As New Paragraph()
+    Dim s2 As New Span()
+    s2.Text = "Cell 2"
+    p2.Inlines.Add(s2)
+    cell2.Blocks.Add(p2)
+    row1.Cells.Add(cell2)
+    table.Rows.Add(row1)
+
+    Dim row2 As New TableRow()
+
+    Dim cell3 As New TableCell()
+    cell3.ColumnSpan = 2
+    Dim p3 As New Paragraph()
+    Dim s3 As New Span()
+    s3.Text = "Cell 3"
+    p3.Inlines.Add(s3)
+    cell3.Blocks.Add(p3)
+    row2.Cells.Add(cell3)
+    table.Rows.Add(row2)
+
+    section.Blocks.Add(table)
+    section.Blocks.Add(New Paragraph())
+    document.Sections.Add(section)
+
+    Me.radRichTextBox.Document = document
+{{endregion}}
 
 
 
@@ -195,8 +194,7 @@ A table could be deleted or modified via the Table Tools’ contextual tab __Lay
 
 ## Formatting a Table at Runtime via RadRichTextBox's API
 
->tip
-          To learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
+>tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
         
 
 The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the following methods that regard the modifying of a table:
@@ -243,6 +241,5 @@ Additionally the built-in context menu of the __RadRichTextBox__ gives the user 
 
 ![Rad Rich Text Box Features Layout Elements Tables 06](images/RadRichTextBox_Features_LayoutElements_Tables_06.png)
 
->tip
-          To wire these dialogs to your own UI you can use the __ShowTablePropertiesDialog()__ method of __RadRichTextBox__ or the __ShowTablePropertiesCommand__.
+>tipTo wire these dialogs to your own UI you can use the __ShowTablePropertiesDialog()__ method of __RadRichTextBox__ or the __ShowTablePropertiesCommand__.
         

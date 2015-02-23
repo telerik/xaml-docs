@@ -11,6 +11,8 @@ site_name: Silverlight
 
 # Assembly Minifier
 
+
+
 This section contains the following topics:
 
 * [What is New]({%slug minifier-what-is-new%})

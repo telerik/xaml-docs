@@ -20,7 +20,6 @@ installation-and-deployment/adding-telerik-ui-to-an-application/installation-add
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
 installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license.md,
 installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies.md,
-installation-and-deployment/deploying-telerik-ui/protecting-telerik-assembly.md,
 consuming-data/web-asmx-service.md,
 consuming-data/net-ria-service.md,
 consuming-data/domain-datasource-support.md,
@@ -41,6 +40,7 @@ controls/radchart/chart-localization.md,
 controls/radchart/how-to/howto-integration-radcontextmenu.md,
 controls/radchart/how-to/howto-integrate-data-visualization-with-wcf-ria-services.md,
 controls/radchartview/gotchas.md,
+controls/radchartview/performance-tips-and-tricks.md,
 controls/radcombobox/comparison.md,
 controls/radcombobox/populating-with-data/binding-ria.md,
 controls/radcombobox/howto/bind-enum-values.md,
@@ -63,6 +63,7 @@ controls/radgridview/paging/using-silverlight-datapager.md,
 controls/radmenu/features/animation.md,
 controls/radmenu/features/boundaries-detection.md,
 controls/radmediaplayer,
+controls/radhtmlplaceholder,
 controls/radnumericupdown/howto/events.md,
 controls/radribbonview/features/ribbon-controls/ribbon-window-sl.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier.md,
@@ -80,7 +81,8 @@ controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigati
 controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollection.md,
 controls/radtreeview/how-to/howto-bind-treeview.md,
 controls/radcoverflow,
-controls/raddomaindatasource,]
+controls/raddomaindatasource,
+controls/radupload,]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -260,7 +262,9 @@ navigation:
     controls/radchartview/series/cartesianchart-series:
         title: CartesianChart Series
     controls/radchartview/series/cartesianchart-series/bar-series:
-        title: Bar Series
+        title: Bar Series		
+    controls/radchartview/series/cartesianchart-series/bubble-series:
+        title: Bubble Series
     controls/radchartview/series/cartesianchart-series/financial-series:
         title: Financial Series
     controls/radchartview/series/cartesianchart-series/scatter-series:
@@ -482,6 +486,39 @@ navigation:
     controls/radpdfprocessing/concepts:
         title: Concepts
         position: 7
+    "*radrichtextbox":
+        title: RadRichTextBox		
+    controls/radrichtextbox/getting-started:
+        title: Getting Started
+        position: 1
+    controls/radrichtextbox/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2
+    controls/radrichtextbox/document-elements:
+        title: Document Elements
+        position: 5
+    controls/radrichtextbox/features:
+        title: Features
+        position: 6
+    controls/radrichtextbox/import-export:
+        title: Import/Export
+        position: 7	
+    controls/radrichtextbox/ui-for-applying-rich-text-formatting:
+        title: UI for Applying Rich Text Formatting
+        position: 8
+    controls/radrichtextbox/troubleshooting:
+        title: Troubleshooting
+    controls/radrichtextbox/document-elements/annotations:
+        title: Annotations
+    controls/radrichtextbox/features/styles:
+        title: Styles
+        position: 12		
+    controls/radrichtextbox/features/fields-and-document-variables:
+        title: Fields and Document Variables
+        position: 17
+    controls/radrichtextbox/features/references:
+        title: References
+        position: 18		
 ## Centaur Controls End
 
 ## X1 Controls Start
@@ -2793,7 +2830,7 @@ defaults:
 # The google services configuration
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
-google_custom_search: '001595215763381649090:eblhnfskwrk'
+google_custom_search: '001595215763381649090:jt1stbj813w'
 
 ## Do not edit below this line
 safe: false

@@ -15,7 +15,7 @@ site_name: WPF
 
 ## 
 
-To improve the experience of your clients and reduce your application’s size it is crucial to use only the subset of UI for WPF assemblies you really need, as described in the [Installation and Deployment Section]({%slug installation-installing-controls-dependencies%}). 
+To improve the experience of your clients and reduce your application’s size it is crucial to use only the subset of UI for WPF assemblies you really need, as described in the Installation and Deployment Section.
 
 Some controls require multiple assemblies and mistakes are likely to happen. For example, in the urge to optimize, you could remove an assembly the project needs, thus breaking the application compilation. 
 

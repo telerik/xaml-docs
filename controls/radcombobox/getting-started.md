@@ -109,7 +109,9 @@ Adding static __RadComboBoxItems__ in XAML is good in scenarios when you know in
 
 * [Binding to ADO.NET Data Service]({%slug radcombobox-populating-with-data-binding-adonet%}) - shows you how to load __RadComboBox__ data from an ADO.NET Data Service.
 
+ {% if site.site_name == 'Silverlight' %}
 * [Binding to RIA Service]({%slug radcombobox-populating-with-data-binding-ria%}) - shows you how to load __RadComboBox__ data from a RIA Service.
+ {% endif %}
 
 * [Binding to XML]({%slug radcombobox-populating-with-data-binding-xml%}) - shows you how to load __RadComboBox__ data from a XML storage.
 

@@ -14,23 +14,23 @@ The purpose of this tutorial is to show you how to manage the __RadDocking__ con
 
 The following operation will be examined:
 
-* [Making a pane floatable in the code-behind](#Making_a_Pane_Floatable_in_the_Code-Behind)
+* [Making a pane floatable in the code-behind](#making-a-pane-floatable-in-the-code-behind)
 
-* [Making a pane floatable in XAML](#Making_a_Pane_Floatable_in_XAML)
+* [Making a pane floatable in XAML](#making-a-pane-floatable-in-xaml)
 
-* [Making a pane dockable in the code-behind](#Making_a_Pane_Dockable_in_the_Code-Behind)
+* [Making a pane dockable in the code-behind](#making-a-pane-dockable-in-the-code-behind)
 
-* [Making a pane dockable in XAML](#Making_a_Pane_Dockable_in_XAML)
+* [Making a pane dockable in XAML](#making-a-pane-dockable-in-xaml)
 
-* [Docking a pane in the code-behind](#Docking_a_Pane_in_the_Code-Behind)
+* [Docking a pane in the code-behind](#docking-a-pane-in-the-code-behind)
 
-* [Docking a pane design-time](#Docking_a_Pane_Design-Time)
+* [Docking a pane design-time](#docking-a-pane-design-time)
 
-* [Pin\Unpin a pane in the code-behind](#Pin/Unpin_a_Pane_in_the_Code-Behind)
+* [Pin\Unpin a pane in the code-behind](#pinunpin-a-pane-in-the-code-behind)
 
-* [Pin\Unpin a pane in XAML](#Pin/Unpin_a_Pane_in_XAML)
+* [Pin\Unpin a pane in XAML](#pinunpin-a-pane-in-xaml)
 
-* [Closing a pane in the code-behind](#Closing_a_Pane_in_the_Code-Behind)
+* [Closing a pane in the code-behind](#closing-a-pane-in-the-code-behind)
 
 >Before reading this tutorial you should get familiar with the [Visual Structure]({%slug raddocking-visual-structure%}) of the standard __RadDocking__ control and its elements.
 
@@ -346,14 +346,14 @@ Respectively, in order to __unpin__ a pane in XAML, you need to set the __IsPinn
 
 ## Closing a Pane in the Code-Behind
 
-If you want to close a pane in the code-behind, then you need to set the __IsHidden__ property of the __RadPane__ class to __False__.
+If you want to close a pane in the code-behind, then you need to set the __IsHidden__ property of the __RadPane__ class to __True__.
 
 #### __C#__
 
 {{region raddocking-managing-docking-controls-dynamically_21}}
 	private void ClosePane()
 	{
-	    radPane1.IsHidden = false;
+	    radPane1.IsHidden = true;
 	}
 {{endregion}}
 
@@ -361,7 +361,7 @@ If you want to close a pane in the code-behind, then you need to set the __IsHid
 
 {{region raddocking-managing-docking-controls-dynamically_22}}
 	Private Sub ClosePane()
-	    radPane1.IsHidden = False
+	    radPane1.IsHidden = True
 	End Sub
 {{endregion}}
 

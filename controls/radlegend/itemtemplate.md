@@ -10,26 +10,16 @@ position: 1
 
 # ItemTemplate
 
+The RadLegend control exposes an ItemTemplate property which you can use to change the default ItemTemplate. The DataContext of the template is a LegendItem object.
 
-
-
-
-## 
-
-The RadLegend control exposes an ItemTemplate property which you can use to change the default ItemTemplate.
-          The DataContext of the template is a LegendItem object.
-        {% if site.site_name == 'Silverlight' %}
-
-Note that a GeometryCloneConverter is used in the Path.Data Binding.
-            This is to work around a limitation in the Silverlight framework, where an exception is 
-            thrown when a static resource is used to set the Data property of a Path.
-          {% endif %}
+{% if site.site_name == 'Silverlight' %}
+Note that a GeometryCloneConverter is used in the Path.Data Binding. This is to work around a limitation in the Silverlight framework, where an exception is  thrown when a static resource is used to set the Data property of a Path.
+{% endif %}
 
 A simple demonstration how to use the ItemTemplate property is given below:
-        {% if site.site_name == 'WPF' %}
 
+{% if site.site_name == 'WPF' %}
 #### __XAML__
-
 {{region radlegend-overview_0_WPF}}
 	<telerik:RadLegend HorizontalAlignment="Center" UseLayoutRounding="True">
 	    <telerik:RadLegend.ItemTemplate>
@@ -59,12 +49,11 @@ A simple demonstration how to use the ItemTemplate property is given below:
 	        </telerik:LegendItemCollection>
 	    </telerik:RadLegend.Items>
 	</telerik:RadLegend>
-	{{endregion}}
+{{endregion}}
+{% endif %}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
+{% if site.site_name == 'Silverlight' %}
 #### __XAML__
-
 {{region radlegend-overview_0_SL}}
 	<telerik:RadLegend HorizontalAlignment="Center" UseLayoutRounding="True">
 	    <telerik:RadLegend.ItemTemplate>
@@ -97,11 +86,8 @@ A simple demonstration how to use the ItemTemplate property is given below:
 	        </telerik:LegendItemCollection>
 	    </telerik:RadLegend.Items>
 	</telerik:RadLegend>
-	{{endregion}}
-
+{{endregion}}
 {% endif %}
 
 And here is the end result:
-        ![radlegend-itemtemplate-0](images/radlegend-itemtemplate-0.png)
-
-# See Also
+![radlegend-itemtemplate-0](images/radlegend-itemtemplate-0.png)

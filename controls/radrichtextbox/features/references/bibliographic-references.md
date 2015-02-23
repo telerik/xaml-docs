@@ -12,7 +12,9 @@ position: 1
 
 
 
-Bibliographic references represent links (in the form of text) to documents, books, films and everything that can be cited in a Word document. You can manage those in __RadRichTextBox__ by going to Insert -> Citations & Bibliography. It looks like this:![Rad Rich Text Box Features Bibliographic References 01](images/RadRichTextBox_Features_Bibliographic_References_01.png)
+Bibliographic references represent links (in the form of text) to documents, books, films and everything that can be cited in a Word document. You can manage those in __RadRichTextBox__ by going to Insert -> Citations & Bibliography. It looks like this:
+
+![Rad Rich Text Box Features Bibliographic References 01](images/RadRichTextBox_Features_Bibliographic_References_01.png)
 
 This article covers:
 
@@ -24,7 +26,9 @@ This article covers:
 
 ## Add Bibliographic Reference
 
-The two main parts of Bibliographic References are:Source
+The two main parts of bibliographic references are their source and style.
+
+###Source
 
 This is what describes the source you want to refer. We named the class representing a source __BibliographicSource__. It has a number of properties:
 
@@ -32,7 +36,9 @@ This is what describes the source you want to refer. We named the class represen
 
 * TagName – this is the unique identifier of the Source. Every source has to have a unique TagName. You will be prompted if you try to enter a duplicate.
 
-* All other fields – there are a number of Fields that an object of type __BibliographicSource__ possesses like Author, Title, Year, City, etc. Those properties are a lot and we won’t enumerate them all now, but you have to know that every type of source includes some subset of those properties. When you open the __AddNewBibliographicSourceDialog__, upon changing the type only the necessary properties will be shown. The dialog looks like this:![Rad Rich Text Box Features Bibliographic References 02](images/RadRichTextBox_Features_Bibliographic_References_02.png)Style
+* All other fields – there are a number of Fields that an object of type __BibliographicSource__ possesses like Author, Title, Year, City, etc. Those properties are a lot and we won’t enumerate them all now, but you have to know that every type of source includes some subset of those properties. When you open the __AddNewBibliographicSourceDialog__, upon changing the type only the necessary properties will be shown. The dialog looks like this: <br/>![Rad Rich Text Box Features Bibliographic References 02](images/RadRichTextBox_Features_Bibliographic_References_02.png)
+ 
+### Style
 
 This is how the source is represented when inserted in the document. There are a number of predefined styles in Word. We support 3 for now – APA Fifth Edition, Harvard – Anglia 2008 and ISO 690 – First Element and Date. The name of the class we use to describe a style is called __BibliographicReferenceStyleBase__. Every style should derive from this abstract class and implement the methods needed to function properly. Those methods are:
 
@@ -44,13 +50,13 @@ This is how the source is represented when inserted in the document. There are a
 
 ## User Interface
 
-You already saw how the __AddNewBibliographicSourceDialog__ looks like. It is used to insert a new Source. After you have inserted all the sources you need, you can manage them through the __ManageBibliographicSourcesDialog__. It looks like so:![Rad Rich Text Box Features Bibliographic References 03](images/RadRichTextBox_Features_Bibliographic_References_03.png)
+You already saw how the __AddNewBibliographicSourceDialog__ looks like. It is used to insert a new Source. After you have inserted all the sources you need, you can manage them through the __ManageBibliographicSourcesDialog__. It looks like so:<br/>![Rad Rich Text Box Features Bibliographic References 03](images/RadRichTextBox_Features_Bibliographic_References_03.png)
 
 As you can see you can edit an existing source, delete an existing source or create a new one.
 
-You can insert a bibliography on the caret position using the following button:![Rad Rich Text Box Features Bibliographic References 04](images/RadRichTextBox_Features_Bibliographic_References_04.png)
+You can insert a bibliography on the caret position using the following button:<br/>![Rad Rich Text Box Features Bibliographic References 04](images/RadRichTextBox_Features_Bibliographic_References_04.png)
 
-When you click on the “Insert Citation” drop down button you will get a list with all the available sources. Clicking on one will insert a Citation in the document. At the bottom there is another button that allows you to create new __BibliographicSource__ object (it shows the __AddNewBibliographicSource__ dialog):![Rad Rich Text Box Features Bibliographic References 05](images/RadRichTextBox_Features_Bibliographic_References_05.png)
+When you click on the “Insert Citation” drop down button you will get a list with all the available sources. Clicking on one will insert a Citation in the document. At the bottom there is another button that allows you to create new __BibliographicSource__ object (it shows the __AddNewBibliographicSource__ dialog):<br/>![Rad Rich Text Box Features Bibliographic References 05](images/RadRichTextBox_Features_Bibliographic_References_05.png)
 
 ## Using Bibliographic References API
 
@@ -67,7 +73,7 @@ This is how you can add a new source:
 	bibliographicSource.Editor = "editorTest";
 	bibliographicSource.SourceType = BibliographicSourceType.Book;
 	this.editor.Document.BibliographicSources.Add(bibliographicSource);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -86,7 +92,7 @@ To create a custom __BibliographicStyle__ you have to derive from __Bibliographi
 	new ISO690_FirstElementAndDateStyle();
 	this.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key, 
 	ISO690_FirstElementAndDate);
-	{{endregion}}
+{{endregion}}
 
 Insert Citation Field using code behind
 
@@ -98,7 +104,7 @@ The Citation field is a field not different from every other field. You can use 
 	CitationField citationField = new CitationField();
 	citationField.SourceName = "test";
 	this.editor.Document.InsertField(citationField, FieldDisplayMode.Result);
-	{{endregion}}
+{{endregion}}
 
 Insert Bibliography Field using code behind
 
@@ -109,7 +115,7 @@ The Bibliography field is a field not different from every other field. You can 
 {{region radrichtextbox-features-bibliographic-references_4}}
 	BibliographyField bibliographyField = new BibliographyField();
 	this.editor.Document.InsertField(bibliographyField, FieldDisplayMode.Result);
-	{{endregion}}
+{{endregion}}
 
 Changing Bibliographic Style using code behind
 
@@ -119,6 +125,6 @@ There is a method called __ChangeBibliographicStyle()__ on __RadRichTextBox__. I
 
 {{region radrichtextbox-features-bibliographic-references_5}}
 	this.editor.ChangeBibliographicStyle(new HarvardAnglia2008Style());
-	{{endregion}}
+{{endregion}}
 
 

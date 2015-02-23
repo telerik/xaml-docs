@@ -48,25 +48,16 @@ The short syntax to set the transition in XAML is:
 	<telerik:RadTransitionControl Transition="Fade" />
 {{endregion}}
 
-The transition could also be set to one of the:            
-
-* Fade
-
-* FlipWarp
-
-* LinarFade
-
-* MotionBlurredZoom
-
-* PerspectiveRotation
-
-* Pixelate
-
-* Roll
-
-* SlideAndZoom
-
-* Wave
+>The transition could also be set to one of the:            
+>	* Fade
+>	* FlipWarp
+>	* LinarFade
+>	* MotionBlurredZoom
+>	* PerspectiveRotation
+>	* Pixelate
+>	* Roll
+>	* SlideAndZoom
+>	* Wave
 
 Below you can find information for each of them, together with a sample snapshot.
 

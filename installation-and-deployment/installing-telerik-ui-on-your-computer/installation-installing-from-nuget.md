@@ -15,11 +15,11 @@ The following topic describes what steps you should perform in order to install 
    
 We’re providing a common NuGet package containing all the assemblies from the UI for Silverlight suite as well as separate packages for the different assemblies. It is up to you to decide which one is more suitable to your project. 
 
->importantThe provided NuGet packages include only __NoXaml binaries__. Check the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) help topic for more details on the NoXaml binaries and Implicit Styles.
+>importantThe provided NuGet packages contain either __NoXaml binaries__ or __XAML binaries__. Check the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) help topic for more details on the NoXaml binaries and Implicit Styles.
  
 We will go through the following sections: 
 
-* [Downloading the NuGet packages](#downloading-the-NuGet-packages)
+* [Downloading the NuGet packages](#downloading-the-nuget-packages)
 
 * [Installing Silverlight Controls Package](#installing-silverlight-controls-package)
 
@@ -31,19 +31,21 @@ In order to download the latest NuGet packages, follow the instructions below:
           
 * Click __Products & Subscriptions__ and then select UI for Silverlight from the dropdown (or Trial downloads if you are a trial user).
           
-![Common Installing FromMSIFiles 005](images/Common_InstallingFromMSIFiles_005.png)
+	![Common Installing FromMSIFiles 005](images/Common_InstallingFromMSIFiles_005.png)
 
->If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
->![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
+	>If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
+	>![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
 
 * Click "Download Installer and other resources" button.
-![Common Installing Download Button](images/Common_Installing_Download_Button.png)
 
->Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite.
->Scroll to "UI for Silverlight" product. Click "Browse all product files" to go to the detailed download page.
->![Common Installing FromMSIFiles 009](images/Common_InstallingFromMSIFiles_009.png)
+	![Common Installing Download Button](images/Common_Installing_Download_Button.png)
+	
+	>Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite.
+	>Scroll to "UI for Silverlight" product. Click "Browse all product files" to go to the detailed download page.
+	>![Common Installing FromMSIFiles 009](images/Common_InstallingFromMSIFiles_009.png)
 
-* Click either “NuGet installation” or “NuGet installation – Separate Packages”.![Common Installing From Nu Get 01](images/Common_InstallingFromNuGet_01.png)
+* Click either “NuGet installation” or “NuGet installation – Separate Packages”. 
+	![Common Installing From Nu Get 01](images/Common_InstallingFromNuGet_01.png)
 
 * Download the .zip file and extract it into the folder where your Telerik NuGet packages are located.
 

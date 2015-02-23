@@ -47,11 +47,11 @@ Fully supported</td>
 <td>Not supported</td></tr>
 </th>
 <tr><td>ASCII85Decode</td>
-<td>ASCIIHexDecode</td>
-<td>JBIG2Decode</td></tr>
+<td>CCITTFaxDecode</td>
+<td>JPXDecode</td></tr>
 <tr><td>LZWDecode</td>
 <td></td>
-<td>JPXDecode</td></tr>
+<td></td></tr>
 <tr><td>FlateDecode</td>
 <td></td>
 <td></td></tr>
@@ -63,7 +63,9 @@ Fully supported</td>
 <td></td></tr>
 <tr><td>RunLengthDecode</td>
 <td></td>
-<td></td></tr></table>
+<td></td></tr>
+<tr>
+<td>JBIG2Decode</td><td></td><td></td></tr></table>
 
 All decoders implement the __IPdfFilter__ interface and if you decide, you can implement your own decoder and set the viewer to use it. RadPdfViewer uses the __Name__ property in order to recognize the filter - it must return one of the values listed above.
         

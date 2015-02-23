@@ -10,15 +10,11 @@ position: 1
 
 # Expander Animation
 
-
-
 ## Animating the RadExpander control.
 
 To enable or disable the animation you can use the __IsAnimationEnabled__ attached property of the __AnimationManager__ class. By default the __Animation__ is enabled for the __RadExpander__. Below are code-snippets for XAML and C#:
-				
 
 #### __XAML__
-
 {{region radexpander-howto-animation_0}}
     <StackPanel Orientation="Horizontal">
         <!--  DISABLE the Animation:  -->
@@ -26,12 +22,9 @@ To enable or disable the animation you can use the __IsAnimationEnabled__ attach
         <!--  ENABLE the Animation:  -->
         <telerik:RadExpander telerik:AnimationManager.IsAnimationEnabled="True" />
     </StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radexpander-howto-animation_1}}
     using Telerik.Windows.Controls.Animation;
     private void SetAnimation()
@@ -44,12 +37,9 @@ To enable or disable the animation you can use the __IsAnimationEnabled__ attach
             // some code...
         }
     }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radexpander-howto-animation_2}}
     Imports Telerik.Windows.Controls.Animation
     Private Sub SetAnimation()
@@ -60,15 +50,11 @@ To enable or disable the animation you can use the __IsAnimationEnabled__ attach
             ' some code...'
         End If
     End Sub
-	{{endregion}}
+{{endregion}}
 
-
-
-You can further edit the default animations of the __RadExpander__ using the __AnimationSelector__ attached property of the __AnimationManager__ class. By default the following animations are defined for the __RadExpander__ control:
-				
+You can further edit the default animations of the __RadExpander__ using the __AnimationSelector__ attached property of the __AnimationManager__ class. By default the following animations are defined for the __RadExpander__ control:				
 
 #### __XAML__
-
 {{region radexpander-howto-animation_3}}
     <Style x:Key="RadExpanderStyle" TargetType="telerik:RadExpander">
           ...  
@@ -85,15 +71,11 @@ You can further edit the default animations of the __RadExpander__ using the __A
             </Setter.Value>
         </Setter>
     </Style>
-	{{endregion}}
+{{endregion}}
 
-
-
-You can control the speed of the animations through the __SpeedRatio__ property:
-				
+You can control the speed of the animations through the __SpeedRatio__ property:				
 
 #### __XAML__
-
 {{region radexpander-howto-animation_4}}
     <Style x:Key="RadExpanderStyle" TargetType="telerik:RadExpander">
           ...  
@@ -112,6 +94,4 @@ You can control the speed of the animations through the __SpeedRatio__ property:
             </Setter.Value>
         </Setter>
     </Style>
-	{{endregion}}
-
-
+{{endregion}}

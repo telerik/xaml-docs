@@ -29,8 +29,7 @@ It contains the following topics:{% if site.site_name == 'Silverlight' %}
 
 ## Missing Dialogs and Menus, Unable to Save/Load a File, SpellChecker Underlines Correct Words
 
-There are several prerequisites to using the default UI that RadRichTextBox uses, such as InsertHyperlinkDialog, ContextMenu and SelectionMiniToolbar.
-          This is also the case with the import/export functionality and spellchecking.
+There are several prerequisites to using the default UI that RadRichTextBox uses, such as InsertHyperlinkDialog, ContextMenu and SelectionMiniToolbar. This is also the case with the import/export functionality and spellchecking.
         
 
 The first one is to have referenced the assembly that contains the implementation of the feature:
@@ -44,18 +43,13 @@ The first one is to have referenced the assembly that contains the implementatio
 * __Telerik.Windows.Documents.Proofing.Dictionary.En-US__ for the En-US spellchecking dictionary.
           
 
-More information on this can be found
-          [here](76CD496F-6D98-49E5-A700-F5B9AE4CEECE#Assembly_References).
+More information on this can be found [here]({%slug radrichtextbox-getting-started%}).
         
 
-More often than not, this is sufficient to get everything working. RadRichTextBox uses
-          [MEF](http://mef.codeplex.com/)
-          in order to provide customization options, such as creating and utilizing custom dialogs and pop-ups, format providers and dictionaries for spellchecking.
-          It finds and loads the types from the assemblies and they can be used without being explicitly initialized.
+More often than not, this is sufficient to get everything working. RadRichTextBox uses [MEF](http://mef.codeplex.com/) in order to provide customization options, such as creating and utilizing custom dialogs and pop-ups, format providers and dictionaries for spellchecking. It finds and loads the types from the assemblies and they can be used without being explicitly initialized.
         
 
-However, there are some cases when MEF cannot find the assemblies and load the types. One example is if you have enabled Library Caching or you are using Prism.
-          In these cases, you can pass the types that RadRichTextBox uses in a TypeCatalog to RadCompositionInitializer as shown below:
+However, there are some cases when MEF cannot find the assemblies and load the types. One example is if you have enabled Library Caching or you are using Prism. In these cases, you can pass the types that RadRichTextBox uses in a TypeCatalog to RadCompositionInitializer as shown below:
         
 
 #### __C#__
@@ -110,33 +104,27 @@ However, there are some cases when MEF cannot find the assemblies and load the t
 	    typeof(UnprotectDocumentDialog),
 	    typeof(WatermarkSettingsDialog)
 	    );
-	{{endregion}}
+{{endregion}}
 
 
 
 This can be done on application start-up or in the constructor of your page, just before InitializeComponent().
 
->As RadRichTextBox does not have a dependency on RichTextBoxUI, the assemblies are not normally copied to the Shell project by Prism and are not included in the XAP, if the view containing the RichTextBox is in another project.
-            In order to resolve the problem, you can adopt one of the following approaches:
+>As RadRichTextBox does not have a dependency on RichTextBoxUI, the assemblies are not normally copied to the Shell project by Prism and are not included in the XAP, if the view containing the RichTextBox is in another project. In order to resolve the problem, you can adopt one of the following approaches:
           
 
 * Add references to the required assemblies in the Shell project, too. This can be done manually from Visual Studio or as part of a prebuild command on the Shell project or a postbuild command on the Module project in which you have added the references;
 
 * Do not rely on MEF to load the RichTextBoxUI format provider assemblies. Instead, register the providers and create instances of all default menus and dialogs and assign them to the respective properties of RadRichTextBox in the constructor of the View with the RadRichTextBox like in the snippets above.
 
-## Exception when inserting or manipulating images{% if site.site_name == 'Silverlight' %}
+## Exception when inserting or manipulating images
 
-RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses
-            [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.95).aspx).
-          {% endif %}{% if site.site_name == 'WPF' %}
+{% if site.site_name == 'Silverlight' %}
+RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.95).aspx). {% endif %}
 
-RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses
-            [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.100).aspx).
-          {% endif %}
+{% if site.site_name == 'WPF' %}
+RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.100).aspx).{% endif %}
 
-Unfortunately, WritableBitmap is not always very efficient when populated with an extremely large image and on some occasions inserting or 
-          manipulating (for example, applying an effect to) such image might cause performance diminishment as well as an OutOfMemory exception. At this 
-          point there is no workaround for the issue.
+Unfortunately, WritableBitmap is not always very efficient when populated with an extremely large image and on some occasions inserting or manipulating (for example, applying an effect to) such image might cause performance diminishment as well as an OutOfMemoryЕxception. At this point there is no workaround for the issue.
         
 
-# See Also

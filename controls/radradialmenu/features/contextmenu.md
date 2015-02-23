@@ -14,7 +14,7 @@ __RadRadialMenu__ can be used as a context menu for another __FrameworkElement__
 
 In this topic we will go through the different ways of setting __RadialMenu__ as a context menu such as:
 
-* [Using ShowEventName/HideEventName properties](#using-showeventname/hideeventname-properties)
+* [Using ShowEventName/HideEventName properties](#using-showeventnamehideeventname-properties)
 
 * [Using the static RadialMenuCommands class](#using-the-static-radialmenucommands-class)
 

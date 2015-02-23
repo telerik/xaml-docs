@@ -42,6 +42,8 @@ Available __Commands__:
 
 * ExecuteToolCommand
 
+* DrawCommand
+
 Available __Tools__:
         
 
@@ -64,6 +66,11 @@ Available __Tools__:
 * HueShiftTool
 
 * ContrastTool
+
+* DrawTextTool
+
+* DrawTool
+
 
 >tipAll tools are located in the Telerik.Windows.Media.Imaging.Tools namespace and can be created in XAML.<br/> __xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"__
 

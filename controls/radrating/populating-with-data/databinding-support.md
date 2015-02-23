@@ -10,8 +10,6 @@ position: 4
 
 # DataBinding Support Overview
 
-
-
 Data binding allows you to establish a link between the UI and the underlying business logic and to keep them synchronized. It means that when a value is changed in the business layer, that change is automatically populated to the UI and vice versa. Of course, in order for this to work, you have to implement the proper notification or to use objects that have already implemented it.
 
 Binding to __RadRating__ involves the following property:
@@ -32,4 +30,4 @@ You can bind __RadRating__ to the following types of data sources:
 
 To bind the __RadRating__ to a collection of business objects, you should use its __ItemsSource__ property. If you want the changes to the collection to be automatically reflected to the __RadRatingItems__, the collection should implement the __INotifyCollectionChanged__ interface. There is a build-in collection in Silverlight, which implements the __INotifyCollectionChanged__ interface and you could use it without making any effort - this is the generic __ObservableCollection<T>.__ However, to get full benefit from the change notification support, your custom business objects should implement the __INotifyPropertyChanged__ interface.
 
->tipConsider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>, Collection<T>,__ instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
+>tip Consider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>, Collection<T>,__ instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.

@@ -31,13 +31,13 @@ It has tree properties:
 * __EditorStyle__ – sets the style of the UI component used for hosting the custom editor. Its values can be:
             
 
-* __DropDown__ - a drop down button which content is the custom editor to be displayed
+	* __DropDown__ - a drop down button which content is the custom editor to be displayed
                 
 
-* __Modal__ - a button that shows a modal dialog window with the custom editor inside
+	* __Modal__ - a button that shows a modal dialog window with the custom editor inside
                 
 
-* __None (default value)__ – the editor will be placed directly in PropertyGridField and no special UI element will be used
+	* __None (default value)__ – the editor will be placed directly in PropertyGridField and no special UI element will be used
                 
 
 Consequently, __EditorAttribute has a couple of constructors__ that can be used depending on the necessities:

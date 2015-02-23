@@ -15,24 +15,29 @@ The following topic describes the system requirements needed by Telerik UI for S
 
 ## Supported Operating Systems and Browsers
 
-Telerik UI for Silverlight are supported by the following operating systems and browsers:
+The Telerik UI for Silverlight suite is supported by the following operating systems and browsers:
 
-Operating System	|	IE9	|	IE8	|	IE7	|	IE6	|	Firefox 3.6+	|	Safari 4+	|	Chrome 12+
----	|	---	|	---	|	---	|	---	|	---	|	---	|	---
-Windows Vista	|	Yes	|	Yes	|	Yes	|	-	|	Yes	|	-	|	Yes
-Windows 7 / Windows 7 SP1	|	Yes	|	Yes	|	-	|	-	|	Yes	|	-	|	Yes
-Windows Server 2008 SP2	|		|	-	|	Yes	|	-	|	Yes	|	-	|	Yes
-Windows Server 2008 R2 SP1	|	Yes	|	Yes	|	-	|	-	|	Yes	|	-	|	Yes
-Windows Server 2003,Windows XP SP2, SP3	|	-	|	Yes	|	Yes	|	-	|	Yes	|	-	|	Yes
-Mac OS 10.5.7+ (intel-based)	|	-	|	-	|	-	|	-	|	Yes	|	Yes	|	-
+| Operating System                        	| IE11 	| IE10 	| IE9 	| IE8 	| IE7 	| IE6 	| Firefox 12+ 	| Safari 4+ 	| Chrome 12+ 	|
+|-----------------------------------------	|------	|------	|-----	|-----	|-----	|-----	|-------------	|-----------	|------------	|
+| Windows 8.1 Desktop                     	| Yes  	| -    	| -   	| -   	| -   	| -   	| Yes         	| -         	| Yes        	|
+| Windows 8 Desktop                       	| -    	| Yes  	| -   	| -   	| -   	| -   	| Yes         	| -         	| Yes        	|
+| Windows Server 2012 R2                  	| Yes  	| -    	| -   	| -   	| -   	| -   	| Yes         	| -         	| Yes        	|
+| Windows Server 2012                     	| -    	| Yes  	| -   	| -   	| -   	| -   	| Yes         	| -         	| Yes        	|
+| Windows 7                               	| -    	| -    	| Yes 	| Yes 	| -   	| -   	| Yes         	| -         	| Yes        	|
+| Windows 7 SP1                           	| Yes  	| Yes  	| Yes 	| Yes 	| -   	| -   	| Yes         	| -         	| Yes        	|
+| Windows Server 2008 SP2                 	| -    	| -    	| Yes 	| Yes 	| Yes 	| -   	| Yes         	| -         	| Yes        	|
+| Windows Server 2008 R2 SP1              	| Yes  	| -    	| Yes 	| Yes 	| -   	| -   	| Yes         	| -         	| Yes        	|
+| Windows Vista                           	| -    	| -    	| Yes 	| Yes 	| Yes 	| -   	| Yes         	| -         	| Yes        	|
+| Windows Server 2003 SP2, Windows XP SP3 	| -    	| -    	| -   	| Yes 	| Yes 	| -   	| Yes         	| -         	| Yes        	|
+| Macintosh OS 10.5.7+ (Intel-based)      	| -    	| -    	| -   	| -   	| -   	| -   	| Yes         	| Yes       	| -          	|
 
 ## Development Environment
 
-With the release of Silverlight 5, developers are now required to use either Visual Studio 2010 SP1 or Expression Blend 4 for Silverlight development. This is why in order to develop applications with Telerik UI for Silverlight you need to have installed the following development tools:
+In order to develop applications with Telerik UI for Silverlight you need to have installed the following development tools:
 				
 * __Microsoft Visual Studio 2010 SP1 with the Visual Web Developer feature or Microsoft Visual Web Developer 2010 Express or Microsoft Visual Studio 2012/2013__ - download from [here](http://www.microsoft.com/visualstudio/eng/downloads).
 					
-* __.NET Framework 4.0 or .NET 4.5__ - download .NET 4.0 from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=9cfb2d51-5ff4-4491-b0e5-b386f32c0992&displaylang=en) or .NET 4.5 from [here](http://www.microsoft.com/en-us/download/details.aspx?id=30653).
+* __.NET Framework 4.0, .NET 4.5 or .NET 4.5.1__ - download .NET 4.0 from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=9cfb2d51-5ff4-4491-b0e5-b386f32c0992&displaylang=en), .NET 4.5 from [here](http://www.microsoft.com/en-us/download/details.aspx?id=30653) or .NET 4.5.1 from [here](http://www.microsoft.com/en-us/download/details.aspx?id=40779).
 					
 * __Microsoft Silverlight 5 SDK and Developer Tools for Visual Studio 2010 SP1__ - download from [here](http://www.microsoft.com/en-us/download/details.aspx?id=28359) and [here](http://www.microsoft.com/en-us/download/details.aspx?id=28358).
 					

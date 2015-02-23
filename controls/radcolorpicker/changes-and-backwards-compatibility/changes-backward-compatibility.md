@@ -10,8 +10,6 @@ position: 1
 
 # Backwards Compatibility
 
-
-
 ## Telerik RadColorPicker for SilverlightWPF Q2 2014
 
 __Public Properties removed in Q2:__
@@ -51,8 +49,7 @@ Since the __ExpanderButtonStyle__ and __ColorButtonStyle__ are marked "__Obsolet
     </Style>
     <telerik:RadColorPicker 
             ColorButtonStyle="{StaticResource colorButtonStyle}"
-            ExpanderButtonStyle="{StaticResource expanderButtonStyle}" />
-            
+            ExpanderButtonStyle="{StaticResource expanderButtonStyle}" />            
             
 Now you can re-factor them in the following way:
         	

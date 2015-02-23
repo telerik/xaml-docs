@@ -116,7 +116,7 @@ __ItemEditTemplate Property__
 
 In this tutorial an __ItemEditTemplate__ will be created with Expression Blend.
 
-* Open your application and [select]({%slug radtreeview-how-to-select-item-in-expression-blend%}) the treeview control.
+* Open your application and select the treeview control.
 	![](images/RadTreeView_TemplatingItemEditTemplate_010.PNG)
 
 * Right-click on it or right-click in the scene explorer and choose EditAdditionalTemplates->Edit ItemEditTemplate->Create Empty. 

@@ -6,14 +6,13 @@ slug: protecting-telerik-radcontrols-assembly
 tags: protecting,telerik,ui,assembly
 published: True
 position: 2
-site_name: Silverlight
 ---
 
-# Protecting Telerik UI assembly
+# Protecting Telerik UI Assemblies
 
 Technical guidelines for protecting Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} binaries when redistributed with other applications.
      
-## Building Telerik Assemblies from source Code 
+## Building Telerik Assemblies from Source Code 
 
 __Prerequisites__
 
@@ -25,39 +24,39 @@ __Instructions__
             
 2. Uncomment the following line:
 
-#### __Before__
-
-{{region protecting-telerik-radcontrols-assembly_0}}
-	        public static void Validate()
-	{
-	    //Uncomment the following line
-	    //ValidatePassPhrase();
-	}
-{{endregion}}
-
-#### __After__
-
-{{region protecting-telerik-radcontrols-assembly_1}}
-	        public static void Validate()
-	{
-	    //Uncomment the following line
-	    ValidatePassPhrase();
-	}
-{{endregion}}
+	#### __Before__
+	
+	{{region protecting-telerik-radcontrols-assembly_0}}
+		        public static void Validate()
+		{
+		    //Uncomment the following line
+		    //ValidatePassPhrase();
+		}
+	{{endregion}}
+	
+	#### __After__
+	
+	{{region protecting-telerik-radcontrols-assembly_1}}
+		        public static void Validate()
+		{
+		    //Uncomment the following line
+		    ValidatePassPhrase();
+		}
+	{{endregion}}
 
 3. Change the ApplicationName constant to match the name of your application:
 
-#### __Before__
-
-{{region protecting-telerik-radcontrols-assembly_2}}
-	internal const string ApplicationName = "MyApp";
-{{endregion}}
-
-#### __After__
-
-{{region protecting-telerik-radcontrols-assembly_3}}
-	internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
-{{endregion}}
+	#### __Before__
+	
+	{{region protecting-telerik-radcontrols-assembly_2}}
+		internal const string ApplicationName = "MyApp";
+	{{endregion}}
+	
+	#### __After__
+	
+	{{region protecting-telerik-radcontrols-assembly_3}}
+		internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
+	{{endregion}}
 
 
 4. Save __AssemblyProtection.cs__ and rebuild UI for Silverlight or WPF (described separately in the source code build instructions document).

@@ -28,6 +28,19 @@ The next images show the DateTimePicker localized in French:
 
 >The days of the week and months are automatically localized by the DateTime class using the current culture settings of the application.
         	
+## Supported Languages
+
+__RadDateTimePicker__ can be translated in one of the following supported languages using the framework’s localization mechanism:
+
+* English
+* German
+* Spanish
+* French
+* Italian
+* Dutch
+* Turkish
+
+More information on how to achieve this you can find in the [Localization Using Built-in Resources] ({%slug common-localization%}) article.
 
 ## Resource Keys    
    

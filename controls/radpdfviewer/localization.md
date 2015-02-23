@@ -16,6 +16,20 @@ The built-in localization mechanism in Silverlight and WPF allows you to localiz
 
 There are two ways to implement the localization - using Resource files or a custom localization manager.
 
+## Supported Languages
+
+__RadPdfViewer__ can be translated in one of the following supported languages using the framework’s localization mechanism:
+
+* English
+* German
+* Spanish
+* French
+* Italian
+* Dutch
+* Turkish
+
+More information on how to achieve this you can find in the [Localization Using Built-in Resources](http://docs.telerik.com/devtools/wpf/common-localization#localization-using-built-in-resources) article.
+
 ## Localization Using Resource Files
 
 You can base your localization on the standard resource files provided by the .NET framework. For that purpose you will have to create a separate .ResX file for each one of the languages that your application supports. Imagine that you want to translate your application into English, German and Dutch. For this purpose you will have to add three new resource files to your project:
@@ -84,7 +98,7 @@ What is left in order to fulfil the localization is to override the method __Get
 	            switch (key)
 	            {
 	                //----------------------
-	                case "BusyIndicatorLoading":
+		            case "BusyIndicatorLoading":
 	                    return "Loading...";
 	                case "FixedDocumentViewers_BeginningOfDocumentReachedMessage":
 	                    return "You have reached the beginning of the document.";
@@ -106,6 +120,10 @@ What is left in order to fulfil the localization is to override the method __Get
 	                    return "Use Regular Expression";
 	                case "FixedDocumentViewers_WholeWordsOnly":
 	                    return "Whole Words Only";
+	                case "FixedDocumentViewers_FitWidth":
+	                    return "Fit Width";
+	                case "FixedDocumentViewers_ZoomToPageLevel":
+	                    return "Zoom to Page Level";
 	                //----------------------
 	            }
 	            return base.GetStringOverride(key);

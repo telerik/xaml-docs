@@ -10,19 +10,13 @@ position: 0
 
 # Throwing Validation Exceptions
 
+Masks do not necessarily guarantee that a user's input will represent a valid value for a given type; for example, -9 could be entered for an age in years. You can verify that a user's input represents a valid value by using __Data Validation__. The __RadMaskedInput__ controls provides out-of-the-box support for Data Validation. Data validation, being one of the major points when building line-of-business applications, can help you to easily separate the validation logic from the application's UI.  
 
+This topic will show you how to use __RadMaskedInput__ controls to distinguish between proper and improper user input.	  
 
-Masks do not necessarily guarantee that a user's input will represent a valid value for a given type; for example, -9 could be entered for an age in years. You can verify that a user's input represents a valid value by using __Data Validation__. The __RadMaskedInput__ controls provides out-of-the-box support for Data Validation. Data validation, being one of the major points when building line-of-business applications, can help you to easily separate the validation logic from the application's UI.
-	  
-
-This topic will show you how to use __RadMaskedInput__ controls to distinguish between proper and improper user input.
-	  
-
-For the purpose of this tutorial you need to create a new class named __DataValidationViewModel__. It will take care of the validation rules.
-	  
+For the purpose of this tutorial you need to create a new class named __DataValidationViewModel__. It will take care of the validation rules.	  
 
 #### __C#__
-
 {{region radmaskedinput-features-validation_1}}
 	public class DataValidationViewModel : ViewModelBase
 	{
@@ -87,12 +81,9 @@ For the purpose of this tutorial you need to create a new class named __DataVali
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmaskedinput-features-validation_1}}
 	Public Class DataValidationViewModel
 	        Inherits ViewModelBase
@@ -153,21 +144,15 @@ For the purpose of this tutorial you need to create a new class named __DataVali
 	                End Set
 	        End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
+Declare several __RadMaskedInput__ controls in XAML for displaying the sample data. Pay attention on the following things:	  
 
+* The __RadMaskedInput__ controls' __Value__ property is data bound to the corresponding property in the ViewModel.		  
 
-Declare several __RadMaskedInput__ controls in XAML for displaying the sample data. Pay attention on the following things:
-	  
-
-* The __RadMaskedInput__ controls' __Value__ property is data bound to the corresponding property in the ViewModel.
-		  
-
-* The __ValidatesOnExceptions__ and __NotifyOnValidationError__ properties of the data binding are set to __True__.
-		  
+* The __ValidatesOnExceptions__ and __NotifyOnValidationError__ properties of the data binding are set to __True__.		  
 
 #### __XAML__
-
 {{region radmaskedinput-features-validation_2}}
 	<StackPanel x:Name="LayoutRoot" Background="White">
 	    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
@@ -193,40 +178,30 @@ Declare several __RadMaskedInput__ controls in XAML for displaying the sample da
 	                                ErrorMessage="{Binding Path=Text, ElementName=customErrorMessage}"
 	                                Value="{Binding Path=StringValue, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnExceptions=True}" />
 	</StackPanel>
-	{{endregion}}
+{{endregion}}
 
-
-
-Finally, set the DataValidationViewModel to the UserControl's __DataContext__ property.
-	  
+Finally, set the DataValidationViewModel to the UserControl's __DataContext__ property.	  
 
 #### __C#__
-
 {{region radmaskedinput-features-validation_3}}
 	this.DataContext = new DataValidationViewModel();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmaskedinput-features-validation_4}}
 	Me.DataContext = New DataValidationViewModel()
-	{{endregion}}
-
-
+{{endregion}}
 
 Run the demo and fill all fields with valid data. As you can see no validation errors occur.
 
-![](images/radmaskedinput_validation.png)
+{% if site.site_name == 'Silverlight' %}![](images/radmaskedinput_validation_throw_exception_02-sl.png){% endif %}
+{% if site.site_name == 'WPF' %}![Validation Tool TipWPF](images/radmaskedinput_validation_throw_exception_02-wpf.png){% endif %}
 
 Next try to fill some improper data.
 
-{% if site.site_name == 'Silverlight' %}![](images/radmaskedinput_validation_error.png){% endif %}
-{% if site.site_name == 'WPF' %}![Validation Tool TipWPF](images/RadMaskedInput-Validation-ValidationToolTipWPF.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![](images/radmaskedinput_validation_throw_exception_01-sl.png){% endif %}
+{% if site.site_name == 'WPF' %}![Validation Tool TipWPF](images/radmaskedinput_validation_throw_exception_01-wpf.png){% endif %}
 
 # See Also
-
  * [Getting Started]({%slug radmaskedinput-getting-started%})
-
  * [Common Features]({%slug radmaskedinput-features-common%})

@@ -10,35 +10,25 @@ position: 2
 
 # Mask Tokens
 
-
-
-The __RadMaskedInput__ controls expose a __Mask__ property to allow you to further restrict the user's input accordingly to the __MaskedInput__ control definition. Bellow you can find a list with some of the most commonly used Mask tokens.
-	  
+The __RadMaskedInput__ controls expose a __Mask__ property to allow you to further restrict the user's input accordingly to the __MaskedInput__ control definition. Bellow you can find a list with some of the most commonly used Mask tokens.	  
 
 ## Alphanumeric tokens
 
 ### 1. Standard format codes:
 
-* __A__ - Alphanumeric character, required.
-			  
+* __A__ - Alphanumeric character, required.		  
 
-* __a__ - Alphanumeric character, not required
-			  
+* __a__ - Alphanumeric character, not required			  
 
-* __L__ - Letter, required. Restrict input to the ASCII letters a-z and A-Z. This mask element is equivalent to [a-zA-Z] in regular expressions.
-			  
+* __L__ - Letter, required. Restrict input to the ASCII letters a-z and A-Z. This mask element is equivalent to [a-zA-Z] in regular expressions.			  
 
-* __l__ - Letter, not required
-			  
+* __l__ - Letter, not required			  
 
-* __\__ - Escapes a mask character, turning it into a literal. "\\" is the escape sequence for a backslash.
-			  
+* __\__ - Escapes a mask character, turning it into a literal. "\\" is the escape sequence for a backslash.			  
 
-* __Any other characters__ -  literals. All non-mask elements will appear as themselves within __RadMaskedTextInput__. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user.
-			  
+* __Any other characters__ -  literals. All non-mask elements will appear as themselves within __RadMaskedTextInput__. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user.			  
 
 #### __XAML__
-
 {{region radmaskedinput-features-mask-tokens_0}}
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 	    <TextBlock Text="Mask: A" />
@@ -54,31 +44,23 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	    <TextBlock Text="Mask: Any other characters" />
 	    <telerik:RadMaskedTextInput Mask="N\ame: llll" />
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/radmaskedinput_features_tokens_standard.png)
 
 ### 2. Numeric format codes:
 
-* __c__ - Currency pattern, not required
-			  
+* __c__ - Currency pattern, not required			  
 
-* __n__ - Decimal pattern, required
-			  
+* __n__ - Decimal pattern, required			  
 
-* __p__ - Percentage, not required
-			  
+* __p__ - Percentage, not required			  
 
-* __d__ - Digit pattern, required
-			  
+* __d__ - Digit pattern, required			  
 
-* __#__ - Digit pattern, not required. If this position is blank in the mask, it will be rendered as the character in the Placeholder property. Plus (+) and minus (-) signs are allowed.
-			  
+* __#__ - Digit pattern, not required. If this position is blank in the mask, it will be rendered as the character in the Placeholder property. Plus (+) and minus (-) signs are allowed.			  
 
 #### __XAML__
-
 {{region radmaskedinput-features-mask-tokens_1}}
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 	    <TextBlock Text="Currency Pattern" />
@@ -102,9 +84,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	                                    Mask="#3.1"
 	                                    Value="111.234" />
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/radmaskedinput_features_tokens_numeric.png)
 
@@ -112,41 +92,29 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 ### 1. Standard DateTime Format Codes
 
-* __d__ - Short date pattern.
-			  
+* __d__ - Short date pattern.			  
 
-* __D__ - Long date pattern.
-			  
+* __D__ - Long date pattern.			  
 
-* __f__ - Full date and time (long date and short time).
-			  
+* __f__ - Full date and time (long date and short time).			  
 
-* __F__ - Full date time pattern (long date and long time).
-			  
+* __F__ - Full date time pattern (long date and long time).			  
 
-* __g__ - General (short date and short time).
-			  
+* __g__ - General (short date and short time).			  
 
-* __G__ - General (short date and long time).
-			  
+* __G__ - General (short date and long time).			  
 
-* __m, M__ - Month day pattern.
-			  
+* __m, M__ - Month day pattern.			  
 
-* __r, R__ - RFC1123 pattern.
-			  
+* __r, R__ - RFC1123 pattern.			  
 
-* __s__ - Sortable DateTime pattern (based on ISO 8601) using local time.
-			  
+* __s__ - Sortable DateTime pattern (based on ISO 8601) using local time.			  
 
-* __t__ - Short time pattern.
-			  
+* __t__ - Short time pattern.			  
 
-* __T__ - Long time pattern.
-			  
+* __T__ - Long time pattern.			  
 
 #### __XAML__
-
 {{region radmaskedinput-features-mask-tokens_2}}
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 	    <TextBlock Text="Mask: d" />
@@ -176,7 +144,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	    <TextBlock Text="Mask: T" />
 	    <telerik:RadMaskedDateTimeInput Margin="0,5,0,10" Mask="T" />
 	</StackPanel>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radmaskedinput_features_tokens_datetime.png)
 
@@ -184,59 +152,41 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 When standard date codes are too restrictive, you can create your own custom formats using the format patterns listed below:
 
-* __d__ - Day token
-			  
+* __d__ - Day token			  
 
-* __dd__- The numeric day of the month.
-			  
+* __dd__- The numeric day of the month.			  
 
-* __ddd__- The abbreviated name of the day of the week.
-			  
+* __ddd__- The abbreviated name of the day of the week.			  
 
-* __M__ - The month name followed by the numeric day.
-			  
+* __M__ - The month name followed by the numeric day.			  
 
-* __MM__ - The numeric month.
-			  
+* __MM__ - The numeric month.			  
 
-* __MMM__ - The abbreviated name of the month.
-			  
+* __MMM__ - The abbreviated name of the month.			  
 
-* __MMMM__ - The full name of the month.
-			  
+* __MMMM__ - The full name of the month.			  
 
-* __y__ - The full month name and year numeric.
-			  
+* __y__ - The full month name and year numeric.			  
 
-* __yy__- The year without the century.
-			  
+* __yy__- The year without the century.			  
 
-* __yyyy__- The year in four digits, including the century.
-			  
+* __yyyy__- The year in four digits, including the century.			  
 
-* __h, hh__ - The hour in a 12-hour clock.
-			  
+* __h, hh__ - The hour in a 12-hour clock.			  
 
-* __H, HH__ - the hour in a 24-hour clock.
-			  
+* __H, HH__ - the hour in a 24-hour clock.			  
 
-* __m, mm__ - Minute token
-			  
+* __m, mm__ - Minute token			  
 
-* __s__ __,ss__ - Second token
-			  
+* __s__ __,ss__ - Second token			  
 
-* __t__ - The first character in the AM/PM designator.
-			  
+* __t__ - The first character in the AM/PM designator.			  
 
-* __tt__- The AM/PM designator.
-			  
+* __tt__- The AM/PM designator.			  
 
-* __f__ - Millisecond token
-			  
+* __f__ - Millisecond token			  
 
 #### __XAML__
-
 {{region radmaskedinput-features-mask-tokens_3}}
 	<StackPanel Background="White"
 	            Orientation="Horizontal"
@@ -277,63 +227,41 @@ When standard date codes are too restrictive, you can create your own custom for
 	        <telerik:RadMaskedDateTimeInput Margin="0,5,0,10" Mask="hh:mm:ss:ff" />
 	    </StackPanel>
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/radmaskedinput_features_tokens_datetime_custom.png)
 
->If you use the __yy__ mask token, you need to keep in mind that the two letter year section will represent date time objects between the years of 1929 and 2029. Basically the __RadMaskedDateTimeInput__ control uses the __Culture__ settings and specifically the __Calendar.TwoDigitYearMax__ property to distinguish the year that is entered in the control based on its last two digits. You can find more information [here](http://msdn.microsoft.com/en-us/library/system.globalization.calendar.twodigityearmax.aspx).
-				
+>If you use the __yy__ mask token, you need to keep in mind that the two letter year section will represent date time objects between the years of 1929 and 2029. Basically the __RadMaskedDateTimeInput__ control uses the __Culture__ settings and specifically the __Calendar.TwoDigitYearMax__ property to distinguish the year that is entered in the control based on its last two digits. You can find more information [here](http://msdn.microsoft.com/en-us/library/system.globalization.calendar.twodigityearmax.aspx).				
 
 ## Modifier Tokens
 
-* __>__ - To Upper token
-		  
+* __>__ - To Upper token		  
 
-* __<__ - To Lower token
-		  
+* __<__ - To Lower token		  
 
 #### __XAML__
-
 {{region radmaskedinput-features-mask-tokens_4}}
 	<telerik:RadMaskedTextInput Margin="0,5,0,10" Mask="&gt;a5&lt;a5" />
-	{{endregion}}
+{{endregion}}
 
-
-
->importantPlease note that the  "<" and ">" must be escaped in XAML, otherwise  the Visual Studio might throw an error.
-		  
+>important Please note that the  "<" and ">" must be escaped in XAML, otherwise  the Visual Studio might throw an error.		  
 
 ![](images/radmaskedinput_features_tokens_modifier.png)
 
->tip
-
-When you customize a mask you should keep in mind that the Mask is basically structured like so:
-
-__MaskTokenN.F__
-
-* __MaskToken__ - MaskToken restricting the input characters
-			
-
-* __N__ - Number of input characters, not required
-			
-
-* __F__ - Number of input digits after the decimal point, not required
-			
+>When you customize a mask you should keep in mind that the Mask is basically structured like so:
+> __MaskTokenN.F__
+>	- __MaskToken__ - MaskToken restricting the input characters
+>	- __N__ - Number of input characters, not required
+>	- __F__ - Number of input digits after the decimal point, not required			
 
 For instance: 
+
 #### __XAML__
      <telerik:RadMaskedNumericInput Mask="#3.2" />
      
 # See Also
-
  * [Common Features]({%slug radmaskedinput-features-common%})
-
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})
-
  * [MaskedCurrencyInput]({%slug radmaskedinput-features-controls-currency%})
-
  * [MaskedTextInput]({%slug radmaskedinput-features-controls-text%})
-
  * [MaskedDateTimeInput]({%slug radmaskedinput-features-controls-datetime%})

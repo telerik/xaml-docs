@@ -18,19 +18,23 @@ Extensible Markup Language for Analysis (XMLA) is a standard that allows client 
 
 ## XmlaDataProvider Properties
 
-__RadPivotGrid__ provides XMLA access to OLAP data sources. You can use the __XmlaDataProvider__ in your application to connect to your OLAP data source.    		
+__RadPivotGrid__ provides XMLA access to OLAP data sources. You can use the __XmlaDataProvider__ in your application to connect to your OLAP data source.   
+
+>cautionYou have to add reference to the following __Telerik__ assembly to be able to use __XmlaDataProvider__ in your application: Telerik.Pivot.DataProviders.Xmla 		
 
 __XmlaDataProvider__ has several important properties that have to be defined:    		
 
 * __ConnectionSettings__ - this property is of type *XmlaConnectionSettings*. It is used to define all needed connection settings through the *XmlaConnectionSettings* properties:
 
-* __Cube__ - string property defining the exact name of the Cube.
+	* __Cube__ - string property defining the exact name of the Cube.
 
-* __Database__ - string property defining the exact name of the Database.
+	* __Database__ - string property defining the exact name of the Database.
 
-* __ServerAddress__ - string property defining the exact address(with protocol used) of the server.
+	* __ServerAddress__ - string property defining the exact address(with protocol used) of the server.
 
-* __Credentials__ - this property is of type *XmlaNetworkCredential* and it is used to define the authentication details for the server(if it has any kind of authentication).You can extend the parameters passed to the OLAP cube by using *QueryProperties* property of __XmlaConnectionSettings__. *QueryProperties* is a collection of *XmlaQueryProperty* items. Each *XmlaQueryProperty* must have Name and Value set. Name is the parameter which you want to pass to the cube, while value is its current value. This can be used if you want to take localized data from your cube, for which you have to pass LocalIdentifier parameter and as value you have to set the value of the language:            
+	* __Credentials__ - this property is of type *XmlaNetworkCredential* and it is used to define the authentication details for the server(if it has any kind of authentication).
+
+You can extend the parameters passed to the OLAP cube by using *QueryProperties* property of __XmlaConnectionSettings__. *QueryProperties* is a collection of *XmlaQueryProperty* items. Each *XmlaQueryProperty* must have Name and Value set. Name is the parameter which you want to pass to the cube, while value is its current value. This can be used if you want to take localized data from your cube, for which you have to pass LocalIdentifier parameter and as value you have to set the value of the language:            
 
 #### __XAML__
 
@@ -161,6 +165,8 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 >You can set credentials if your connection requires username and password. The *Credentials* property of __XmlaDataProvider__ expects object of type *XmlaNetworkCredential* which gives you properties for *UserName*, *Password*, *SecurePassword* and *Domain*.    			
 
 ## Defining Group Descriptions
+
+>caution When initializing the __XmlaDataProvider__ in the code behind it is a good idea to wrap all modifications in __BeginInit() - EndInit()__ section. This will cause only one refresh of the DataProvider and it will be when the EndInit() is reached. If you are applying only modifications (more than one) on already initialized __XmlaDataProvider__ you should use the DeferRefresh() method which will cause delay of the Refresh and this way all your changes will be applied simultaneously. More information for these methods is available in our [Populating with Data - Overview]({%slug radpivotgrid-populating-with-data%}) article.
 
 The __XmlaDataProvider__ is using four collections that are reflecting the visual representation of __RadPivotGrid__ and __RadPivotFieldList__:    		
 

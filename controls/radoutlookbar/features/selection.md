@@ -10,14 +10,11 @@ position: 0
 
 # Selection
 
-
-
 ## Handling selection changes
 
 To handle changes in the selection you can use the __SelectionChanged__ event: 
 
 #### __XAML__
-
 {{region radoutlookbar-selection_0}}
 	<telerik:RadOutlookBar x:Name="RadOutlookBar1" 
 	                       PreviewSelectionChanged="RadOutlookBar1_PreviewSelectionChanged"
@@ -37,7 +34,6 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 {{endregion}}
 
 #### __C#__
-
 {{region radoutlookbar-selection_0}}
 	private void RadOutlookBar1_SelectionChanged(object sender, RoutedEventArgs e)
 	{
@@ -50,10 +46,7 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 	}
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radoutlookbar-selection_0}}
 	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
@@ -63,14 +56,11 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 	End Sub
 {{endregion}}
 
-
-
 ## Setting selected item
 
 You can set the selected item by using its __IsSelected__ property:
         
 #### __XAML__
-
 {{region radoutlookbar-selection_1}}
 	<telerik:RadOutlookBar x:Name="RadOutlookBar1">
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
@@ -87,12 +77,9 @@ You can set the selected item by using its __IsSelected__ property:
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-
-
 ## Properties
 
-The following properties are related to the selection mechanism of the __RadOutlookBar__:
-        
+The following properties are related to the selection mechanism of the __RadOutlookBar__:        
 
 * __SelectedItem__ - get or set the selected item
 
@@ -107,7 +94,5 @@ There are also the following properties related to the styling of the selected c
 * __SelectedContentTemplateSelector__ - template selector for the selected content
 
 # See Also
-
  * [Getting Started]({%slug radoutlookbar-getting-started%})
-
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})

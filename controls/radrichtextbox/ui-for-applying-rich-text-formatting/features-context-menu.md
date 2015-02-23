@@ -19,7 +19,7 @@ The __ContextMenu__ is showed on right click over the __RadRichTextBox__, and co
 
 {% if site.site_name == 'WPF' %}![](images/RadRichTextBox_Features_ContextMenu_01_WPF.png){% endif %}
 
-Besides replacing the default __ContextMenu__ (by implementing __IContextMenu__ and marking it with __CustomContextMenuAttribute,__as shown [here](http://blogs.telerik.com/xamlteam/posts/10-11-17/customizing-radrichtextbox-s-contextmenu-and-selectionminitoolbar.aspx)), there are some more customization approaches:
+Besides replacing the default __ContextMenu__ (by implementing __IContextMenu__ and marking it with __CustomContextMenuAttribute__, as shown [here](http://blogs.telerik.com/xamlteam/posts/10-11-17/customizing-radrichtextbox-s-contextmenu-and-selectionminitoolbar.aspx)), there are some more customization approaches:
       
 
 * [Handling the Showing event](#handling-the-showing-event)
@@ -90,7 +90,7 @@ The first one involves subscribing to the __Showing__ event of the default __Con
 	 currentCell.Background = Colors.Yellow
 	 Me.radRichTextBox.UpdateEditorLayout()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

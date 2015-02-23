@@ -28,13 +28,11 @@ In order to add a __RadBusyIndicator__ to your application, you have to simply c
 >As the __RadBusyIndicator__ is located in the __Telerik.Windows.Controls__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add references to the following assembly to your project:
 >* __Telerik.Windows.Controls__
 
-You also have to declare the following namespace in your __UserControl__:
-
-#### __XAML__
-
-{{region radbusyindicator-getting-started_0}}
+>You also have to declare the following namespace in your __UserControl__:
+>#### __XAML__
+>{{region radbusyindicator-getting-started_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
+>{{endregion}}
 
 Here is a sample code:
 

@@ -14,6 +14,12 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 ## List of all RadTransitionControl SDK examples:
 
-* __Transition without bindings__ - This example demonstrates how to use RadTransitionControl between two UserControls (without bindings set to the RadTransitionControl) for Silverlight and WPF.
+{% if site.site_name == 'WPF' %}
+
+* __[Transition without bindings](https://github.com/telerik/xaml-sdk/tree/master/TransitionControl/TransitionWithoutBindings)__ - This example demonstrates how to use RadTransitionControl between two UserControls (without bindings set to the RadTransitionControl) for Silverlight and WPF.
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+* __[Transition without bindings](https://github.com/telerik/xaml-sdk/tree/master/TransitionControl/TransitionWithoutBindings)__ - This example demonstrates how to use RadTransitionControl between two UserControls (without bindings set to the RadTransitionControl) for Silverlight and WPF.
+{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

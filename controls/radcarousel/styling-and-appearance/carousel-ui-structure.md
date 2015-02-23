@@ -15,7 +15,7 @@ Knowing the visual structure of a control is fundamental for creating new custom
 ##  RadCarousel
  ![](images/radCarousel.png)
 
-The RadCarousel is primarily composed of four elements - __CarouselItemsControl__, [RadCarouselPanel](ED99BB21-AF0D-4A57-918F-D3B51AE6AE32), [CarouselItem]({%slug carousel-items%}), and a __ScrollViewer__.
+The RadCarousel is primarily composed of four elements - __CarouselItemsControl__, [RadCarouselPanel](#radcarouselpanel), [CarouselItem]({%slug carousel-items%}), and a __ScrollViewer__.
 We will take a closer look at each of those elements and briefly explain their purpose. 
 
 ## CarouselItemsControl
@@ -25,7 +25,7 @@ Although it is not directly accessible and you should not worry about styling th
 ## RadCarouselPanel 
    ![](images/radCarouselPanel.png)
 
-The [RadCarouselPanel](ED99BB21-AF0D-4A57-918F-D3B51AE6AE32) is the most important element in the visual tree of the RadCarousel since it is the actual workhorse - it hosts the carousel items, runs all animations, and computes all effects like scaling and opacity. 
+The RadCarouselPanel is the most important element in the visual tree of the RadCarousel since it is the actual workhorse - it hosts the carousel items, runs all animations, and computes all effects like scaling and opacity. 
 
 >The __RadCarouselPanel__ is used as __ItemsPanel__ for the __CarouselItemsControl__
 
@@ -42,4 +42,4 @@ If the __AutoGenerateRecordPresenters__ property is set to __true__ RadCarousel 
 
 ## CarouselDataFieldPresenter
 
-The __CarouselDataFieldPresenter__is used to display a single field (or a column) of a data item and you can use it to change the appearance of all fields as a whole.
+The __CarouselDataFieldPresenter__ is used to display a single field (or a column) of a data item and you can use it to change the appearance of all fields as a whole.

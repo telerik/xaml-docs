@@ -43,7 +43,7 @@ Here is an example of how to select the current word.
 	endPosition.MoveToCurrentWordEnd();
 	this.radRichTextBox.Document.Selection.AddSelectionStart(startPosition);
 	this.radRichTextBox.Document.Selection.AddSelectionEnd(endPosition);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -51,13 +51,13 @@ Here is an example of how to select the current word.
 
 {{region radrichtextbox-features-selection_1}}
 	Dim startPosition As DocumentPosition = Me.radRichTextBox.Document.CaretPosition
-	    'new DocumentPosition(this.radRichTextBox.Document);
+	\'new DocumentPosition(this.radRichTextBox.Document);
 	Dim endPosition As New DocumentPosition(startPosition)
 	startPosition.MoveToCurrentWordStart()
 	endPosition.MoveToCurrentWordEnd()
 	Me.radRichTextBox.Document.Selection.AddSelectionStart(startPosition)
 	Me.radRichTextBox.Document.Selection.AddSelectionEnd(endPosition)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -84,7 +84,7 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 	
 	    }
 	} while (position.MoveToNextWordStart());
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -93,7 +93,7 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 {{region radrichtextbox-features-selection_3}}
 	Dim position As New DocumentPosition(Me.radRichTextBox.Document)
 	Do
-	 'GetCurrentSpan().Text returns the word at the position
+	 \'GetCurrentSpan().Text returns the word at the position
 	 Dim word As String = position.GetCurrentSpanBox().Text
 	 If word.Contains("RadRichTextBox") Then
 	  Dim wordEndPosition As New DocumentPosition(position)
@@ -103,7 +103,7 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 	  Me.radRichTextBox.Document.Selection.AddSelectionEnd(wordEndPosition)
 	 End If
 	Loop While position.MoveToNextWordStart()
-	{{endregion}}
+{{endregion}}
 
 
 

@@ -22,13 +22,13 @@ The purpose of this tutorial is to show you how to localize any resource string 
 
 This topic contains the following sections:
 
-* [What is LocalizationManager?](#What_is_LocalizationManager)
+* [What is LocalizationManager?](#what-is-localizationmanager)
 
-* [Resource keys](#Resource_Keys)
+* [Resource keys](#resource-keys)
 
-* [Localization using ResourceManager](#Localization_Using_ResourceManager)
+* [Localization using ResourceManager](#localization-using-resourcemanager)
 
-* [Localization using custom localization manager](#Localization_Using_Custom_Localization_Manager)
+* [Localization using custom localization manager](#localization-using-custom-localization-manager)
 
 ## What is LocalizationManager?
 
@@ -78,8 +78,6 @@ The built-in localization mechanism in  {% if site.site_name == 'WPF' %}WPF{% en
 * Turkish
               
 They are located in separate files (each for every language). You can find them in the corresponding folders together with the other binaries in your local installation.
-        
->Not all the controls support each of those languages.
           
 Note that, the resource folders are supposed to be placed along with the binaries you have referenced.
 ![Common Localization 050](images/Common_Localization_050.PNG){% if site.site_name == 'Silverlight' %}
@@ -338,7 +336,5 @@ Of course, if you don't want to hard-code your translation inside your source co
 {{endregion}}
 
 # See Also
-
- * [DataBinding - Overview]({%slug common-data-binding-overview%})
 
  * [Consuming Data - Overview]({%slug consuming-data-overview%})

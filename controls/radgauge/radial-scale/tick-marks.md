@@ -10,22 +10,19 @@ position: 1
 
 # Tick marks
 
-
-
 Tick marks allow displaying value intervals along the gauge scale. There are 3 types of the tick marks:
 
-1. Major - specify primary value intervals. MajorTicks or MajorTickStep property of the scale specifies the number of the value intervals along the entire length of the scale bar. Major tick marks can have a label. You can specify common properties and appearance for the major tick marks using MajorTick property of the scale.
+1. __Major__ - specify primary value intervals. MajorTicks or MajorTickStep property of the scale specifies the number of the value intervals along the entire length of the scale bar. Major tick marks can have a label. You can specify common properties and appearance for the major tick marks using MajorTick property of the scale.
 
-1. Middle - specify secondary value intervals. MiddleTicks property of the scale specifies the number of the secondary value intervals inside the primary value interval. Middle tick marks can't have labels. You can specify common properties and appearance of the middle tick mark using MiddleTick property of the scale.
+2. __Middle__ - specify secondary value intervals. MiddleTicks property of the scale specifies the number of the secondary value intervals inside the primary value interval. Middle tick marks can't have labels. You can specify common properties and appearance of the middle tick mark using MiddleTick property of the scale.
 
-1. Minor - specify third level of the value intervals. MinorTicks scale's property specifies number of the third level value intervals inside the secondary value interval. Minor tick marks can't have labels. You can specify common properties and appearance of the minor tick mark using MinorTick property of the scale.
+3. __Minor__ - specify third level of the value intervals. MinorTicks scale's property specifies number of the third level value intervals inside the secondary value interval. Minor tick marks can't have labels. You can specify common properties and appearance of the minor tick mark using MinorTick property of the scale.
 
 ![](images/RadialScaleTickMarks_Desc.png)
 
 There are 2 alternative ways to set number of the major ticks along the scale. This first one is using MajorTicks property. It sets number of the of the value intervals along the entire length of the scale bar:
 
 #### __XAML__
-
 {{region radial-scale-tick-marks_0}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100" MajorTicks="10">
@@ -35,16 +32,13 @@ There are 2 alternative ways to set number of the major ticks along the scale. T
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadialScale10MajorTicks.png)
 
 The second one uses MajorTickStep property. It sets length of the single tick interval in the scale units:
 
 #### __XAML__
-
 {{region radial-scale-tick-marks_1}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100" MajorTickStep="20">
@@ -53,9 +47,7 @@ The second one uses MajorTickStep property. It sets length of the single tick in
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadialScale20MajorTickStep.png)
 
@@ -66,7 +58,6 @@ Sometimes desirable length of the major tick (MajorTickStep) creates situations 
 In this situation we can use ShowLastLabel property to indicate whether the tick mark at the end position should be shown:
 
 #### __XAML__
-
 {{region radial-scale-tick-marks_2}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="102"
@@ -76,18 +67,15 @@ In this situation we can use ShowLastLabel property to indicate whether the tick
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadialScaleNoEndTickMark.png)
 
 By default, the major tick marks start from the minimum scale value and move clock-wise to the maximum value. But you can shift first and last major tick marks along scale using StartTickOffset and EndTickOffset properties:
 
-To change the layout of the tickmarks you may use their correspondent properties:
+To change the layout of the tick marks you may use their correspondent properties:
 
 #### __XAML__
-
 {{region radial-scale-tick-marks_3}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100"
@@ -101,20 +89,15 @@ To change the layout of the tickmarks you may use their correspondent properties
 	                     MinorTickRelativeHeight="0.05*">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/RadiaScaleTickMarkOffset.png)
-
-
 
 The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it is True, then each tick mark within the specified range uses a color according to the range's TickBackground property:
 
 ![](images/RadialScaleTickRangeColor.png)
 
 #### __XAML__
-
 {{region radial-scale-tick-marks_4}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale
@@ -135,11 +118,7 @@ The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it
 	        </telerik:RadialScale.Ranges>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 ## Custom Tick Marks
 
@@ -148,7 +127,6 @@ The RadGauge control provides very flexible standard tick marks and labels, but 
 The additional tick marks are defined in the CustomItems collection of the RadialScale:
 
 #### __XAML__
-
 {{region radial-scale-tick-marks_5}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 		<telerik:RadRadialGauge.Resources> 
@@ -182,7 +160,7 @@ The additional tick marks are defined in the CustomItems collection of the Radia
 			</telerik:RadialScale.CustomItems>
 		</telerik:RadialScale>
 	</telerik:RadRadialGauge>
-	{{endregion}}
+{{endregion}}
 
 ![Radial Scale Custom Tick Marks.png](images/RadialScaleCustomTickMarks.png)
 

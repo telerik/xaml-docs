@@ -12,7 +12,7 @@ position: 5
 
 The purpose of this tutorial is to show you how to populate a __RadComboBox__ with a data from a __WCF Service__ in two ways:
 
-* [Using plain methods call in the code-behind](#Using_Plain_Methods_Call_in_the_Code-Behind)
+* [Using plain methods call in the code-behind](#using-plain-methods-call-in-the-code-behind)
 
 * [Using MVVM approach](#using-mvvm-approach)
 
@@ -44,7 +44,7 @@ Before proceeding further with this tutorial, you need to create a new applicati
 	Dim serviceClient As New ComboBoxWcfServiceClient()
 {{endregion}}
 
->tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
+>tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service]({%slug consuming-data-wcf-service%}) topic.
 
 * The __ComboBox__ control will be populated with all __Products__ from the __Northwind__ database. In the drop-down list the __ProductName__ and the __UnitPrice__ properties will be displayed. Add the following code which will make the initial load of the objects.
 
@@ -191,7 +191,7 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 	End Class
 {{endregion}}
 
->tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
+>tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service]({%slug consuming-data-wcf-service%}) topic.
 
 * Add the following code in the __constructor__ of the __NorthwindDataSource__. It will make the initial load of all __Products__ from the database:
 

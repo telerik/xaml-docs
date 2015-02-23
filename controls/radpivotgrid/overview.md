@@ -18,31 +18,30 @@ Telerik __RadPivotGrid__ is a control used to aggregate millions of records in a
 
 __Key features__ list includes:
 
-* __RadPivotGrid__ control provides features for filtering and sorting the data, so you can work with a small part of it.      			
+* __RadPivotGrid__ control provides features for filtering and sorting the data, so you can work with a small part of it.
+      			
 
 * __RadPivotGrid__ provides support for multiple datasources:
+      			{% if site.site_name == 'WPF' %}
 
-	{% if site.site_name == 'WPF' %}
 	* Support for XMLA access to OLAP Cube.
 
 	* Support for ADOMD access to OLAP Cube.
 
-	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.                
+	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.
 
 	* QueryableDataProvider gives you the ability to execute all aggregations and calculations on the database server.
-	{% endif %}
-	
-	{% if site.site_name == 'Silverlight' %}
+                {% endif %}{% if site.site_name == 'Silverlight' %}
+
 	* Support for XMLA access to OLAP Cube.
 
-	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.
-	{% endif %}
+	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.{% endif %}
 
 * Built-in Aggregates: *Sum, Min, Max, Average, Count, etc.*
 
 * Grouping and showing hierarchical structure.
 
-* Applying visual representation (string formats) to the data: currency, numbers after the decimal point, etc.
+* Applying visual represenation (string formats) to the data: currency, numbers after the decimal point, etc.
 
 * Parallel asynchronous data processing.
 
@@ -54,7 +53,8 @@ __Key features__ list includes:
 
 * Serialization of the DataProviders, so you can save the current state and load it later.
 
-You can check __RadPivotGrid__ demos at: {% if site.site_name == 'Silverlight' %}[RadPivotGrid FirstLook](http://demos.telerik.com/silverlight/#PivotGrid/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[RadPivotGrid FirstLook](http://demos.telerik.com/wpf/#PivotGrid/FirstLook){% endif %}
+You can check __RadPivotGrid__ demos at:
+     	{% if site.site_name == 'Silverlight' %}[RadPivotGrid FirstLook](http://demos.telerik.com/silverlight/#PivotGrid/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[RadPivotGrid FirstLook](http://demos.telerik.com/wpf/#PivotGrid/FirstLook){% endif %}
 
 # See Also
 

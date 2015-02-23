@@ -12,8 +12,7 @@ position: 13
 
 
 
-The general use of mail merge is the creation of a document serving as a template and filling in different data, e.g. the name of a person, their address, job title, etc. However, mail merge can be used in other scenarios as well, when some part of the document will be repeated several times with slight alterations.
-        The template which stays mostly unchanged in all records is regarded as “Main Document”. In addition to the static content, it also contains placeholders – “Merge Fields” – which represent the variable data and are replaced with the actual content upon performing the mail merge. The information used for filling up the Merge Fields is kept separately and is called “Data Source”.
+The general use of mail merge is the creation of a document serving as a template and filling in different data, e.g. the name of a person, their address, job title, etc. However, mail merge can be used in other scenarios as well, when some part of the document will be repeated several times with slight alterations. The template which stays mostly unchanged in all records is regarded as “Main Document”. In addition to the static content, it also contains placeholders – “Merge Fields” – which represent the variable data and are replaced with the actual content upon performing the mail merge. The information used for filling up the Merge Fields is kept separately and is called “Data Source”.
       
 
 ## Setting up the Data Source
@@ -24,42 +23,42 @@ The first thing you need to do is assign a value to the ItemsSource property of 
 
 {{region radrichtextbox-features-mail-merge_0}}
 	public class ExamplesDataContext
-	    {
-	        private List<Employee> employees = new List<Employee>()
-	                    {
-	                        new Employee()
-	                        {
-	                            FirstName = "Andrew",
-	                            LastName = "Fuller", 
-	                            JobTitle = "Director - Finance",
-	                        }, 
-	                        new Employee()
-	                        {
-	                            FirstName = "Nancy",
-	                            LastName = "Davolio", 
-	                            JobTitle = "Director - Human Resources",
-	                        },
-	                        new Employee()
-	                        {
-	                            FirstName = "Robert",
-	                            LastName = "King", 
-	                            JobTitle = "Engineering Design Manager",
-	                        },
-	                        new Employee()
-	                        {
-	                            FirstName = "Margaret",
-	                            LastName = "Peacock", 
-	                            JobTitle = "Finance & Investments Officer",
-	                        }
-	                    };
-	        public List<Employee> Employees
-	        {
-	            get
-	            {
-	                return employees;
-	            } 
-	        }
-	    }
+    {
+        private List<Employee> employees = new List<Employee>()
+                    {
+                        new Employee()
+                        {
+                            FirstName = "Andrew",
+                            LastName = "Fuller", 
+                            JobTitle = "Director - Finance",
+                        }, 
+                        new Employee()
+                        {
+                            FirstName = "Nancy",
+                            LastName = "Davolio", 
+                            JobTitle = "Director - Human Resources",
+                        },
+                        new Employee()
+                        {
+                            FirstName = "Robert",
+                            LastName = "King", 
+                            JobTitle = "Engineering Design Manager",
+                        },
+                        new Employee()
+                        {
+                            FirstName = "Margaret",
+                            LastName = "Peacock", 
+                            JobTitle = "Finance & Investments Officer",
+                        }
+                    };
+        public List<Employee> Employees
+        {
+            get
+            {
+                return employees;
+            } 
+        }
+    }
 	{{endregion}}
 
 
@@ -70,14 +69,13 @@ All that is left is to add the following line:
 
 {{region radrichtextbox-features-mail-merge_1}}
 	this.radRichTextBox.Document.MailMergeDataSource.ItemsSource = new ExamplesDataContext().Employees;
-	{{endregion}}
+{{endregion}}
 
 
 
 ## Performing Mail Merge
 
-MailMerge can be done both [using the UI](#mailmerging-using-the-ui:)
-          and [programmatically.](#programmatic-mail-merge)
+MailMerge can be done both [using the UI](#mailmerging-using-the-ui) and [programmatically.](#programmatic-mail-merge)
 
 ### MailMerging using the UI:
 
@@ -85,7 +83,7 @@ RadRichTextBoxRibbonUI comes with a predefined UI for inserting merge fields, pr
 
 ![](images/RadRichTextBox_Features_MailMerge.png)
 
-The options in the drop down button InsertMergeField are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from FieldCodes (as in the picture) to FieldNames (e.g. “<<FirstName>>”) or preview the results.
+The options in the drop down button InsertMergeField are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from FieldCodes (as in the picture) to FieldNames (e.g. “&lt;&lt;FirstName&gt;&gt;”) or preview the results.
             
 
 If you click the “Preview Results” button, the fields will be replaced with the data from the current record, which by default is the first item from the data source. Then, you can further iterate through the records using the First, Last, Previous and Next buttons.
@@ -111,7 +109,7 @@ This same scenario can be carried out programmatically just as easily. The metho
 
 {{region radrichtextbox-features-mail-merge_2}}
 	MergeField field = new MergeField() { PropertyPath = "FirstName" };
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -131,7 +129,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 	this.radRichTextBox.Document.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result); 
 	
 	this.radRichTextBox.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -143,7 +141,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 	this.radRichTextBox.InsertField(field); 
 	
 	this.radRichTextBox.InsertField(field, FieldDisplayMode.DisplayName);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -161,8 +159,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 	this.radRichTextBox.PreviewNextMailMergeDataRecord();
 	
 	this.radRichTextBox.PreviewPreviousMailMergeDataRecord();
-	{{endregion}}
-
+{{endregion}}
 
 
 ### Performing MailMerge:
@@ -183,7 +180,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 	this.radRichTextBox.Document.MailMergeDataSource.MoveToIndex(index);
 	
 	this.radRichTextBox.MailMerge(false); // returns a RadDocument that is the result of Mail Merging all records. The parameter specifies if a page break should be inserted between the records (default value is true).
-	{{endregion}}
+{{endregion}}
 
 
 

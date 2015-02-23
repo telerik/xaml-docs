@@ -10,23 +10,17 @@ position: 5
 
 # Events
 
-
-
-## 
-
 The __RadButtons__ raise the following specific events:
 
 __Common__
 
 * __Click__ - occurs each time when the button gets clicked. The event handler receives two arguments: 
     * The sender argument contains the button. This argument is of type object, but can be cast to the respective button type.
-    * A System.Windows.__RoutedEventArgs__ object.
-    
+    * A System.Windows.__RoutedEventArgs__ object.    
 
 * __Activate__ - occurs each time when the button gets clicked. The event handler receives two arguments: 
     * The sender argument contains the button. This argument is of type object, but can be cast to the respective button type.
     * A Telerik.Windows.__RoutedEventArgs__ object.
-
 
 __RadDropDownButton__
 
@@ -42,7 +36,6 @@ __RadDropDownButton__
     * The sender argument contains the button. This argument is of type object, but can be cast to the __RadDropDownButton__ type.
     * A System.Windows.__RoutedEventArgs__ object.
 
-
 __RadRadioButton__
 
 * __Checked__ - occurs when the button gets checked. The event handler receives two arguments: 
@@ -52,7 +45,6 @@ __RadRadioButton__
 * __Unchecked__ - occurs when the button gets unchecked. The event handler receives two arguments: 
     * The sender argument contains the button. This argument is of type object, but can be cast to the __RadRadioButton__ type.
     * A System.Windows.__RoutedEventArgs__ object.
-
 
 __RadSplitButton__
 
@@ -76,7 +68,6 @@ __RadSplitButton__
     * The sender argument contains the button. This argument is of type object, but can be cast to the __RadSplitButton__ type.
     * A System.Windows.__RoutedEventArgs__ object.
 
-
 __RadToggleButton__
 
 * __Checked__ - occurs when the button gets checked. The event handler receives two arguments: 
@@ -92,9 +83,6 @@ __RadToggleButton__
     * A System.Windows.__RoutedEventArgs__ object.
 
 # See Also
-
  * [Visual Structure]({%slug radbuttons-visual-structure%})
-
  * [Getting Started]({%slug radbuttons-getting-started%})
-
  * [Commands]({%slug radbuttons-features-commands%})

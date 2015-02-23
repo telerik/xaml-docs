@@ -14,7 +14,9 @@ This series is visualized on the screen as separate pie slices representing each
 
 ## Declaratively defined series
 
-You can use the following definition to display a simple PieSeries	
+You can use the following definition to display a simple PieSeries:
+
+#### __XAML__
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:PieSeries>

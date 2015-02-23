@@ -111,7 +111,6 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
 	    </Style>
 	</Window.Resources>
 	{{endregion}}
-
 {% endif %}
 
 # See Also
@@ -120,6 +119,10 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
 
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
 
+{% if site.site_name == 'Silverlight' %}
  * [Setting a Theme with StyleManager]({%slug common-styling-apperance-setting-theme%})
+{% endif %}
 
+{% if site.site_name == 'Silverlight' %}
  * [Modifying a Built-In Theme]({%slug common-styling-apperance-modifying-built-in-theme%})
+{% endif %}

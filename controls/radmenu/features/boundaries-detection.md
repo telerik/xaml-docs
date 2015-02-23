@@ -11,7 +11,7 @@ site_name: Silverlight
 
 # Boundaries Detection
 
-When you continuously open sub-menu items, you might face the situation when there is not enough space to open the next menu item. The __RadMenu__control comes with a boundary detection functionality out of the box. This means that the __RadMenu__ detects the Silverlight plug-in's boundaries and opens the child items in the opposite direction when the screen boundaries are to be crossed. When there is not enough space in both directions, the control will adjust its items' position to make them visible wherever possible.        
+When you continuously open sub-menu items, you might face the situation when there is not enough space to open the next menu item. The __RadMenu__ control comes with a boundary detection functionality out of the box. This means that the __RadMenu__ detects the Silverlight plug-in's boundaries and opens the child items in the opposite direction when the screen boundaries are to be crossed. When there is not enough space in both directions, the control will adjust its items' position to make them visible wherever possible.        
 
 ![](images/RadMenu_Boundaries_Detection_01.png)
 

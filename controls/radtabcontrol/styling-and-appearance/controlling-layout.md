@@ -19,7 +19,9 @@ There are a number of ways you can control the layout of your __RadTabControl__ 
 * If you need to group your tab items in different rows, separating them by some specific criteria, just use the __Boolean__ property __IsBreak.__ This property belongs to the __RadTabItem__ class and once set, all tab items that are after this one will be placed on a new row. [Read more]({%slug radtabcontrol-how-to-create-multi-line-tabs%})
 ![](images/RadTabControl_Figure_00255.png)
 
-* You can control the orientation of the tab items by using the property __TabOrientation.__ You can choose one of these  options: to display them horizontally (__Orientation.Horizontal__) or vertically (__Orientation.Vertical__). [Read more](5CF866DE-453C-48CF-A4EB-2A4F717AD728#Set_Tab_Orientation)![](images/RadTabControl_Figure_00257.png)
+* You can control the orientation of the tab items by using the property __TabOrientation.__ You can choose one of these  options: to display them horizontally (__Orientation.Horizontal__) or vertically (__Orientation.Vertical__). [Read more](5CF866DE-453C-48CF-A4EB-2A4F717AD728#Set_Tab_Orientation)
+
+![](images/RadTabControl_Figure_00257.png)
 
 * The default placement of the tab control items is on top, but sometimes this is not what we need. Here is when the __TabStripPlacement__ property comes. It allows you to define the exact position, the tab items should appear using the __Telerik.Windows.Controls.Dock__ enumeration. The four possible choices are: - __Dock.Bottom__, __Dock.Left__, __Dock.Right__, __Dock.Top.__[Read more]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%})
 ![](images/RadTabControl_Figure_00258.png)

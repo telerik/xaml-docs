@@ -118,7 +118,7 @@ The __Block__ class has some properties and methods that affect how it will be r
 * __LineSpacing:__ The spacing between the lines.
 
 
-* __LineSpacingType:__ specifies how to interpret the line spacing.
+* __LineSpacingType:__ Specifies how to interpret the line spacing.
                 
 
 * __FirstLineIndent:__ The indent for the first line.
@@ -139,13 +139,13 @@ The __Block__ class has some properties and methods that affect how it will be r
 * __VerticalAlignment:__ The vertical alignment of the content.
 
 
-* __Bullet__ – The element that should be rendered as __Block__’s list bullet.
+* __Bullet__: The element that should be rendered as __Block__’s list bullet.
 
 
-* __IndentAfterBullet__ – The indent size after the bullet element.
+* __IndentAfterBullet__: The indent size after the bullet element.
 
 
-* __TextProperties__ and __GraphicProperties__ Responsible for text and graphic properties. For more information see the [Text and Graphic Properties]({%slug radpdfprocessing-editing-text-and-graphic-properties%}) article.
+* __TextProperties__ and __GraphicProperties__: Responsible for text and graphic properties. For more information see the [Text and Graphic Properties]({%slug radpdfprocessing-editing-text-and-graphic-properties%}) article.
                 
 
 * __SaveTextProperties():__ Saves the TextProperties. It returns an IDisposable object which when disposed calls __RestoreTextProperties()__ and can be used in using statement.

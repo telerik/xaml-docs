@@ -18,8 +18,8 @@ You can find additional demos for most of the Telerik UI for {% if site.site_nam
 * [BusyIndicator]({%slug radbusyindicator-sdk-examples%})
 * [Calendar]({%slug radcalendar-sdk-examples%})
 * [Chart]({%slug radchart-sdk-examples%})
-* [ChartView]({%slug radchartview-sdk-examples%})
-* [CloudUpload]({%slug radcloudupload-sdk-examples%})
+* [ChartView]({%slug radchartview-sdk-examples%}){% if site.site_name == 'WPF' %}
+* [CloudUpload]({%slug radcloudupload-sdk-examples%}){% endif %}
 * [ColorPicker]({%slug radcolorpicker-sdk-examples%})
 * [ComboBox]({%slug radcombobox-sdk-examples%})
 * [ContextMenu]({%slug radcontextmenu-sdk-examples%})

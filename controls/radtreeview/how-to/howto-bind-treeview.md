@@ -454,6 +454,5 @@ The final result may be seen on the snapshot below:
 You can download this demo as project in our [CodeLibrary](http://www.telerik.com/community/code-library/wpf/treeview/radtreeview-using-collectionviewsource.aspx)
 
 # See Also
- * [Create Windows Explorer Like WPF TreeView]({%slug radtreeview-how-to-wpf-windowsexplorer-like-treeview%})
  * [Bind RadTreeView to Self-Referencing Data]({%slug radtreeview-how-to-bind-to-self-referencing-data%})
  * [Create Horizontal TreeView]({%slug radtreeview-how-to-create-horizontal-treeview%})

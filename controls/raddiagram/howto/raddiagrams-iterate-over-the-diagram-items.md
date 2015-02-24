@@ -63,4 +63,3 @@ In order to take advatnage of these methods you need to add a using statement fo
 
 # See Also
  * [Create Custom Shape]({%slug raddiagram-howto-create-custom-shape%})
- * [Save the Diagram in the File System]({%slug raddiagrams-howto-save%})

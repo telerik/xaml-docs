@@ -96,6 +96,7 @@ RadTreeMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadTreeView	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadWatermarkTextBox	|	Telerik.Windows.Controls
 RadWindow	|	Telerik.Windows.Controls.Navigation
+RadWizard	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Navigation 
 RadWordsProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Flow, Telerik.Windows.Zip, Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Telerik.Windows.Documents.Fixed
 RadZipLibrary	|	Telerik.Windows.Zip
 LayoutControls	|	Telerik.Windows.Controls

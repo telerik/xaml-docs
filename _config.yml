@@ -642,6 +642,8 @@ navigation:
         title: RadDomainDataSource
     controls/radwizard:
         title: RadWizard
+    controls/radwizard/features:
+        title: Features
 ## X1 Controls End
 
 ## Common Start

@@ -71,7 +71,7 @@ The following example shows how to use the method on a button click:
 
 ## ExportDefaultStyles  ##
 
->note: To export the default styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
+>noteTo export the default styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
 RadGridView can be exported with its default styles by setting the ExportDefaultStyles property to “true”
 

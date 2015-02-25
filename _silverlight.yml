@@ -2,6 +2,7 @@ destination: _site_SL
 exclude: [README.md,Gemfile,Gemfile.lock,
 coded-ui-support.md,
 common-partial-trust.md,
+licensing/license-file.md,
 installation-and-deployment/installation-system-requirements-wpf.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI-wpf.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP-wpf.md,
@@ -12,6 +13,7 @@ installation-and-deployment/installing-telerik-ui-on-your-computer/installation-
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox-wpf.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS-wpf.md,
@@ -60,7 +62,8 @@ controls/radtreeview/how-to/wpf-windowsexplorer-like-treeview.md,
 controls/radtreeview/how-to/howto-bind-treeview-wpf.md,
 controls/radgridview/features/merged-cells.md,
 controls/radpivotgrid/features/queryabledataprovider,
-controls/radwordsprocessing]
+controls/radwordsprocessing,
+visual-studio-templates.md]
 # The public documentation URL, used for sitemap.xml
 url: "http://docs.telerik.com/devtools/silverlight"
 site_name: Silverlight

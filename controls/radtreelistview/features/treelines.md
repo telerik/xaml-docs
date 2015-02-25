@@ -20,7 +20,7 @@ The __tree lines__ support was added as of version __Q2 2014.__
 
 __The functionality can be configured through the following properties:__
 
-* __TreeLinesVisibylity__ – controls the visibility of the __TreeLines__. It is of type ___Telerik.Windows.Controls.TreeList.TreeLinesVisibility___ and its possible values are listed below:
+* __TreeLinesVisibility__ – controls the visibility of the __TreeLines__. It is of type ___Telerik.Windows.Controls.TreeList.TreeLinesVisibility___ and its possible values are listed below:
             
 
 	* __Visible__

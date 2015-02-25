@@ -106,6 +106,9 @@ __Example 1__ demonstrates how to add and use defined names. The code creates a 
     sheet1.Names.Remove("GrossProfit");
 {{endregion}}
 
+> Other than the name, the __RefersTo__ value and the comment parameter, the Add method requires a cell index. The reason for this is that with some defined names, the cell index associated with their creation is relevant to the resulting value. More specifically, this is the case when the __RefersTo__ property includes a relative cell reference. For example in the case of a name where the __RefersTo__ field is "=C3" (as opposed to "=$C$3") and the cell index is CellIndex(0,0), i.e. A1, the defined name will always point two rows lower and two columns to the right of the current cell it is used in: if you enter =Name in A1, A1 will have the value of C3 and if you enter the same is B2, it will have the value of D4.
+>
+The __RefersTo__ parameter is of type string and thus provides great flexibility in specifying the value of the defined name. It can be a cell range or a number, as it is in the example above, or a text value or a function. Any string which can successfully be parsed to a formula can be passed for this parameter.
 
 
 ## Remove Defined Names
@@ -124,3 +127,10 @@ __Example 2__ shows how to remove one of the names added in __Example 1__.
 {{endregion}}
 
 
+# See Also
+
+* [Data Validation]({%slug radspreadprocessing-features-data-validation%})
+
+* [Sorting]({%slug radspreadprocessing-features-sorting%})
+
+* [Filtering]({%slug radspreadprocessing-features-filtering%})

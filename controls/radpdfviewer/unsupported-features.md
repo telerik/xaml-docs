@@ -20,11 +20,11 @@ The unsupported features include:
 
 * There are some limitations with CCITTFaxDecode filter.
 
-* Pattern, Lab, ICCBased.
+* Lab, ICCBased.
 
 * Encrypted documents when a non-standard encryption method is used, or the document is password-protected.
 
-* JBIG2Decode, JPXDecode, Crypt filters. API allowing to plug-in custom user-defined filters is available, but the filters do not work out of the box.
+* JPXDecode filter. API allowing to plug-in custom user-defined filters is available, but the filters do not work out of the box.
             
 * Annotations - of all annotations, only link is supported.
 

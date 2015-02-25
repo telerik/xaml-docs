@@ -13,7 +13,41 @@ position: 1
 
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
-      
+
+## What's Different in 2015 Q1
+
+### Changed
+
+__CellEditorBase__ no longer inherits from __Textbox__.
+
+
+### Changed
+
+Removed __CellEditor__'s InsertText(string), SetText(string, int), SetText(string) and ClearContent() methods.
+
+### What to do now
+
+Use the Text property.
+
+
+### Changed
+
+__ICellEditor__ interface:
+
+* Changed the __TextChanged__ type from TextChangedEventHandler to EventHandler
+* Changed the __SelectionChanged__ type from RoutedEventHandler to EventHandler
+* Removed the __int CaretIndex__ property
+
+
+
+### Changed      
+
+The __DocumentContentChanged__ event of __CellEditor__ is obsolete.
+
+### What to do now
+
+Use the __TextChanged__ event instead.
+
 
 ## What's Different in 2014 Q3
 

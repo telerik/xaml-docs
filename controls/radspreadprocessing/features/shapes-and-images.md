@@ -113,7 +113,7 @@ The next step is to configure the other properties of the image as needed.
 #### __[C#] Example 2: Configure image properties__
 
 {{region radspreadprocessing-features-shapes-and-images_01}}
-    FileStream stream = File.Open(@"C:\Users\Velcheva\Desktop\spreadsheet_wpf_46_text.png", FileMode.Open);
+    FileStream stream = File.Open(filePath, FileMode.Open);
 
     using (stream)
     {

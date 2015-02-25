@@ -3,39 +3,33 @@ title: VisualStudio2013 Theme
 page_title: VisualStudio2013 Theme
 description: VisualStudio2013 Theme
 slug: common-styling-appearance-visualstudio2013-theme
-tags: visualstudio2013,theme
+tags: visualstudio2013,theme,dynamic,fontsize,fontfamily
 published: True
 position: 6
 ---
 
 # VisualStudio2013 Theme
 
+The official Q2 2014 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new theme inspired by the Visual Studio design with three color variations – Light, Dark and Blue.      
 
+>important Тhe VisualStudio2013 theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.        
 
-The official Q2 2014 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new theme inspired by the Visual Studio design with three color variations – Light, Dark and Blue.
-      
-
->important Тhe VisualStudio2013 theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
-        
-
-The following topic explains the specifics of the theme's color variations.
-      
+The following topic explains the specifics of the theme's color variations.      
 
 ## Theme Color Variations
 
 There are three palettes of colors which can be easily set by choosing one of the three default color variations:
 
-The next screenshot display RadCalendar in the three color variations:![Common Styling Appearance VS 2013 Theme 02](images/Common_Styling_Appearance_VS2013_Theme_02.png)
+The next screenshot display RadCalendar in the three color variations:
+![Common Styling Appearance VS 2013 Theme 02](images/Common_Styling_Appearance_VS2013_Theme_02.png)
 
 ## Theme Variation Changing
 
-You can switch the three color palettes by calling the __LoadPreset__ method as shown below:
-        
+You can switch the three color palettes by calling the __LoadPreset__ method as shown below:        
 
 #### __C#__
 
-{{region common-styling-appearance-visualstudio2013-theme_0}}
-	
+{{region common-styling-appearance-visualstudio2013-theme_0}}	
 	//default color variation
 	VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Light);
 	
@@ -44,9 +38,7 @@ You can switch the three color palettes by calling the __LoadPreset__ method as 
 	
 	//dark color variation
 	VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Dark); 
-	{{endregion}}
-
-
+{{endregion}}
 
 ## VisualStudio2013 Palette brushes and colors
 
@@ -74,10 +66,9 @@ Below you can find the differences between the three color variations. Every bru
 |__Additional color__| | | |		
 |DefaultForegroundColor*|FF1E1E1E|FFF1F1F1|FF1E1E1E|
 
+\* __DefaultForegroundColor__ is the only resource of type Color and not a SolidColorBrush in VisualStudio2013 palette. Currently it is used only in the ExpressionEditor.
 
-* __DefaultForegroundColor__ is the only resource of type Color and not a SolidColorBrush in VisualStudio2013 palette. Currently it is used only in the ExpressionEditor.
-
-### Theme Palette brushes description
+## Theme Palette brushes description
 
 Here you can find more details about each brush and where it is usually applied.
 
@@ -112,6 +103,78 @@ Additional brush is introduced rarely used for elements in Disabled state:
 
 The following screenshot shows the usage of some of the brushes:
 ![Common Styling Appearance VS 2013 Theme 01](images/Common_Styling_Appearance_VS2013_Theme_01.png)
+
+## Changing Fonts
+
+The official Q1 2015 release of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} introduced features that allow you to dynamically change the __FontSize__ and __FontFamily__ properties of all components in the application for the __VisualStudio2013__ theme. 
+
+All Telerik controls use resources that are linked to one major singleton object that contains the __FontSize__ and __FontFamily__ properties used for the __VisualStudio2013__ theme. These properties are public so you can easily modify the theme resources at one single point. The most commonly used __FontSize__ in the theme is named __FontSize__ and its default value is *12*. The bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as __RadRibbonView__, __RadGauge__, __RadGanttView__, etc. As for the __FontFamily__ - there is only one __FontFamily__ resource which is named __FontFamily__ and it is set to *Segoe UI*.
+
+All the available __FontSizes__ and __FontFamily__ as well as their __default values__:
+
+#### __C#__
+{{region common-styling-appearance-visualstudio2013-theme_1}}
+	VisualStudio2013Palette.Palette.FontSizeXXS = 9; 
+	VisualStudio2013Palette.Palette.FontSizeXS = 10;
+	VisualStudio2013Palette.Palette.FontSizeS = 11; 
+	VisualStudio2013Palette.Palette.FontSize = 12;
+	VisualStudio2013Palette.Palette.FontSizeL = 13;
+	VisualStudio2013Palette.Palette.FontSizeXL = 20;
+	VisualStudio2013Palette.Palette.FontSizeXXL = 22;
+	VisualStudio2013Palette.Palette.FontFamily = new FontFamily("Segoe UI");
+{{endregion}}
+
+More details regarding the usage of the rarely used font sizes inside the different controls can be found below:
+
+* VisualStudio2013Palette.Palette.FontSizeXXS is used only in:
+	* HorizontalBulletGraphStyle and VerticalBullerGraphStyle in Telerik.Windows.Controls.DataVisualization
+  
+* VisualStudio2013Palette.Palette.FontSizeXS is used in: 
+	* TimeBar's SelectionRangeStyle in Telerik.Windows.Controls.DataVisualization
+	* ExpressionEditor in Telerik.Windows.Controls.Expressions
+	* GridViewGroupPanel in Telerik.Windows.Controls.GridView
+  
+* VisualStudio2013Palette.Palette.FontSizeS is used in: 
+	* TimeBar's ItemControlStyle in Telerik.Windows.Controls.DataVisualization
+	* GanttView's EventContainerStyle in Telerik.Windows.Controls.GanntView
+	* ScheduleView TimeRulerItems' styles in Telerik.Windows.Controls.ScheduleView 
+  
+* VisualStudio2013Palette.Palette.FontSizeL is used in: 		
+	* TimeBar's GroupControlStyle in Telerik.Windows.Controls.DataVisualization		
+	* Docking's Headers in Telerik.Windows.Controls.Docking 
+	* ScheduleView TimeRulerGroupItems' styles in Telerik.Windows.Controls.ScheduleView 
+	
+* VisualStudio2013Palette.Palette.FontSizeXXL is used in: 
+	* ScheduleView warnings
+	
+As the following example shows, you can change the default __FontFamily__ from "Segoe UI" to "Calibri" and the __FontSize__ from 12 to 16 on a click of a button:
+
+#### __XAML__
+{{region common-styling-appearance-visualstudio2013-theme_0}}
+	<StackPanel>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
+			<telerik:RadClock x:Name="Clock" Height="250" Margin="4 10" TimeInterval="0:0:1"/>
+		</StackPanel>
+		<telerik:RadButton x:Name="BtnChangeFontSize" VerticalAlignment="Center" 
+						   HorizontalAlignment="Center" Content="Change Font"
+						   Click="OnButtonChangeFontSizeClick" />
+	</StackPanel>
+</StackPanel>
+{{endregion}}
+
+#### __C#__
+{{region common-styling-appearance-visualstudio2013-theme_2}}
+	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
+	{
+	   VisualStudio2013Palette.Palette.FontSize = 16;
+	   VisualStudio2013Palette.Palette.FontFamily = new FontFamily("Calibri");
+	}
+{{endregion}}
+
+This will be the final result:
+
+![Common Styling Appearance VS 2013 Theme](images/Common_Styling_Appearance_VS2013_Theme_03.png)
 
 # See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

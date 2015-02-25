@@ -14,11 +14,15 @@ As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when y
 
 * [Export events lifecycle](#export-events-life-cycle)
 
-* [ElementExporting event](#elementexporting-event)
+* [ElementExporting](#elementexporting-event)
 
-* [InitializingExcelMLStyles event (ExcelML only)](#events-initializingexcelmlstyles-excelml-only)
+* [ElementExportingToDocument]({%slug gridview-export-xlsx%}#events-ElementExportingToDocument)
 
-* [ElementExported event](#elementexported-event)
+* [ElementExportedToDocument]({%slug gridview-export-xlsx%}#events-ElementExportedToDocument)
+
+* [InitializingExcelMLStyles (ExcelML only)](#events-initializingexcelmlstyles-excelml-only)
+
+* [ElementExported](#elementexported-event)
 
 ## Export events life-cycle
 
@@ -53,7 +57,7 @@ You can subscribe to the events either declaratively or runtime like this:
 {{endregion}}
 
 
-## ElementExporting event
+## ElementExporting
 
 As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with [ExportFormat.ExcelML]({%slug gridview-export-excelml%}) and [ExportFormat.Html]({%slug gridview-export-html%}).
         
@@ -125,7 +129,7 @@ As you can see the event arguments' property __Element__ identifies the type of 
 
 * __Table__
 
-## Events: InitializingExcelMLStyles (ExcelML only)
+## Events InitializingExcelMLStyles (ExcelML only)
 
 >tipThis event will be only raised when exporting with __ExportFormat.ExcelML__
 
@@ -253,7 +257,7 @@ For example:
 {{endregion}}
 
 
-## ElementExported event
+## ElementExported 
 
 Use this event if you want to write additional data to the stream. A common scenario is to export [Row Details]({%slug radgridview-row-details-overview%}) - you can subscribe to the __ElementExported__ event and add the row details to the exported data:
 
@@ -306,6 +310,7 @@ Use this event if you want to write additional data to the stream. A common scen
 The result is:
 
 ![](images/gridview_row_details_export.png)
+
 
 # See Also
 

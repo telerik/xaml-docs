@@ -107,6 +107,10 @@ This topic covers the specific events exposed by the __RadGridView__ control and
           
 
 * __ElementExported__ - occurs after the __ElementExporting__ event where you can access the StreamWriter and write additional data to the stream.
+
+* __ElementExportingToDocument__ - occurs when the grid data is being exported to Xlsx or Pdf.
+
+* __ElementExportedToDocument__ - occurs after the ElementExportingToDocument event. Within it you can access the StreamWriter and write additional data to the stream.
           
 
 * Row Details Events

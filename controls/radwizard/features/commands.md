@@ -14,11 +14,11 @@ __RadWizard__ provides a set of built-in commands that enables you to easily han
 
 All supported commands are defined in the __RadWizardCommands__ class and are listed below:
 
-* Cancel
-* Finish
-* Help
-* MoveCurrentToPrevious
-* MoveCurrentToNext
+* __Cancel__
+* __Finish__
+* __Help__
+* __MoveCurrentToPrevious__
+* __MoveCurrentToNext__
 
 
 ## Implementation ##

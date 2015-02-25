@@ -36,7 +36,7 @@ All of the event handlers for these events receive two arguments and are execute
 
 * __Completing__ - Occurs when the operation is about to be completed. The	__WizardCompletingEventArgs__ class exposes the following specific properties:
 
-* __Cancel__ - a boolean property that enables the cancellation of the finish operation.
+	* __Cancel__ - a boolean property that enables the cancellation of the finish operation.
 	* __SelectedPage__ - a __WizardPage__ property, which gets the page from which it was invoked.
 	* __Action__ -a property, which gets the action which will be performed. There are two possible actions ___“Abort”___ and ___“Finish”___. The __Action__ property will be with value ___“Abort”___ when the user has clicked the __Cancel__ button and ___“Finish”___ when the __Finish__ button is clicked.
 * __Completed__ - Occurs when the wizard has already finish. The	 __WizardCompletedEventArgs__ class exposes the following specific properties:

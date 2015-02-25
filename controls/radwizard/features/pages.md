@@ -11,18 +11,21 @@ position: 0
 # Wizard Pages
 
 In order to add pages to RadWizard you have to use its __WizardPages__ collection. It can consists of the following page types:
-* WizardPage - represents a wizard's page and by default its __ButtonsVisibilityMode property is set to “Previous”, ”Next” and “Cancel”__.
-* WelcomeWizardPage – represents a welcome page. It derives directly from __WizardPage__ and the only difference is that the __ButtonsVisibilityMode property is set to “Next” and “Cancel”__ by default. 
-* CompletionWizardPage - represents a completion page. It derives directly from __WizardPage__ and the only difference is that the __ButtonsVisibilityMode property is set to “Previous”, “Cancel” and “Finish”__ by default. 
+* __WizardPage__ - represents a wizard's page and by default its __ButtonsVisibilityMode property is set to “Previous”, ”Next” and “Cancel”__.
+* __WelcomeWizardPage__ – represents a welcome page. It derives directly from __WizardPage__ and the only difference is that the __ButtonsVisibilityMode property is set to “Next” and “Cancel”__ by default. 
+* __CompletionWizardPage__ - represents a completion page. It derives directly from __WizardPage__ and the only difference is that the __ButtonsVisibilityMode property is set to “Previous”, “Cancel” and “Finish”__ by default. 
+
+
 For each wizard page you are able to define a header, title, side header and change the default footer by setting the following properties:
-* Header – enables you to define anything as a header.
-* Title – provides a way to define a title for the page.
-* SideHeader – enables you to define anything as a side header on the left side of the page. 
-* Content – contains the page content (WizardPage derives directly from ContentControl). 
+* __Header__ – enables you to define anything as a header.
+* __Title__ – provides a way to define a title for the page.
+* __SideHeader__ – enables you to define anything as a side header on the left side of the page. 
+* __Content__ – contains the page content (__WizardPage__ derives directly from __ContentControl__). 
 
-Setting __HeaderTemplate, SideHeaderTemplate and FooterTemplate__ - All these properties can be used to get or set the data template respectfully for the __header, side header and footer__. So, if you want to change those default elements for a particular wizard page, you may define them as follows:
+### Setting __HeaderTemplate, SideHeaderTemplate__ and __FooterTemplate__ 
+All these properties can be used to get or set the data template respectfully for the __header, side header__ and __footer__. So, if you want to change those default elements for a particular wizard page, you may define them as follows:
 
-#### __XAML__
+#### XAML
 	<telerik:RadWizard x:Name="radWizard" >
 		<telerik:RadWizard.WizardPages>
 			<telerik:WizardPage Content="My Wizard Page Content" SideHeaderWidth="100" HeaderHeight="100">					
@@ -53,7 +56,7 @@ Setting __HeaderTemplate, SideHeaderTemplate and FooterTemplate__ - All these pr
 		</telerik:RadWizard.WizardPages>			
 	</telerik:RadWizard>
 
->noteIn order to use the built-in commands you should define the following namespace:
+>In order to use the built-in commands you should define the following namespace:
 __xmlns:wizard="clr-namespace:Telerik.Windows.Controls.Wizard;assembly=Telerik.Windows.Controls.Navigation"__
 
 __Figure 1:__ The wizard page defined above will be displayed as follows:

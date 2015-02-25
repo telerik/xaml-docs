@@ -150,6 +150,8 @@ As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __Vis
         
 
 As of __Q3 2013 RadGridView__ provides a new event __InitializingExcelMLStyles__ (when exporting with __ExportFormat.ExcelML__ only).
+
+As of __Q1 2015, RadGridView__ provides two new events - __ElementExportingToDocument__ and __ElementExportedToDocument__ which fire when RadGridView is exported to Xmls or Pdf.
         
 
 >The __InitializingExcelMLStyles__ method will be only raised when exporting with __ExportFormat.ExcelML__
@@ -163,6 +165,10 @@ Read more about these events [here]({%slug gridview-export-events%}).
  * [ExportFormat.ExcelML]({%slug gridview-export-excelml%})
 
  * [ExportFormat.Html]({%slug gridview-export-html%})
+ 
+ * [ExportFormat.Xlsx]({%slug gridview-export-xlsx%})
+ 
+ * [ExportFormat.Pdf]({%slug gridview-export-pdf%})
 
  * [Export Events]({%slug gridview-export-events%})
  

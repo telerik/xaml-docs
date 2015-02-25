@@ -11,10 +11,6 @@ site_name: WPF
 
 # Project creation and configuration
 
-
-
-## 
-
 With the new Visual Studio Extensions for WPF you can quickly create an application pre-configured to use Telerik UI for WPF. The fastest way to have such a project is using the Visual Studio __New Project Wizard__. Under the __Telerik__ node there is a new node – __Windows__, where four project templates exist: 
 
 ![VSExtentions WPF Overview Project Templates](images/VSExtentions_WPF_OverviewProjectTemplates.png)

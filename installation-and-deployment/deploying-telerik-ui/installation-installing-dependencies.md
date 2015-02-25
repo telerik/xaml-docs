@@ -96,6 +96,7 @@ RadTreeView	|	Telerik.Windows.Controls.Navigation
 RadUpload	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Input and Telerik.Windows.RadUploadHandler on the server-side
 RadWatermarkTextBox	|	Telerik.Windows.Controls
 RadWindow	|	Telerik.Windows.Controls.Navigation
+RadWizard	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Navigation
 RadZipLibrary	|	Telerik.Windows.Zip
 LayoutControls	|	Telerik.Windows.Controls
 

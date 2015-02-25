@@ -115,6 +115,12 @@ There are several factors that affect tables measuring calculations. Some of the
 
 * __Padding__: Set through the TableCell's Padding property, it specifies the distances between cell borders inner contour and the cell content.
             
+* __LayoutType__ - specifies the algorithm which shall be used to layout table contents. There are two options available in the __TableLayoutType__ enumeration:
+	
+	* __TableLayoutType.AutoFit__ – The table width fits the content unless the needed width is bigger than the available measuring width.
+	
+	* __TableLayoutType.FixedWidth__ – The table width always fits the available measuring width.
+
 
 * __BorderSpacing__: Specifies the distance between all the borders in the table. This distance is measured differently depending on the __BorderCollapse__ option.
             
@@ -193,13 +199,7 @@ Figure 4: Separate Border
 
 ## Drawing Table with RadFixedDocumentEditor
 
-When a table is generated it may be inserted in the PDF document using the __RadFixedDocumentEditor__'s __InsertTable()__ method. This way the table is inserted in the document and split onto pages if necessary. Additionally you may specify the table __LayoutType__ using RadFixedDocumentEditor's __TableProperties__. There are two available options in the __TableLayoutType__ enumeration:
-        
-
-* __FixedWidth__: Table width is always equal to the available page width.
-            
-
-* __AutoFit__: The table auto fits its width based on the content.
+When a table is generated it may be inserted in the PDF document using the __RadFixedDocumentEditor__'s __InsertTable()__ method. This way the table is inserted in the document and split onto pages if necessary.
             
 
 __Example 7__ generates a simple table with two cells.
@@ -231,7 +231,7 @@ __Example 8__ inserts the table from __Example 7__ in a RadFixedDocumentEditor a
 
 {{region radpdfprocessing-editing-table_7}}
     RadFixedDocumentEditor editor = new RadFixedDocumentEditor(document);
-    editor.TableProperties.LayoutType = TableLayoutType.AutoFit;
+    table.LayoutType = TableLayoutType.AutoFit;
     editor.InsertTable(table);
 {{endregion}}
 
@@ -249,7 +249,7 @@ Specifying FixedWidth layout option produces different results.
 #### __[C#] Example 9: Insert FixedWidth Table__
 
 {{region radpdfprocessing-editing-table_8}}
-    editor.TableProperties.LayoutType = TableLayoutType.FixedWidth;
+    table.LayoutType = TableLayoutType.FixedWidth;
     editor.InsertTable(table);
 {{endregion}}
 

@@ -27,12 +27,16 @@ Here is a list of assemblies that contain the __RadWordsProcessing__ functionali
         
 
 * Telerik.Windows.Documents.Core
-            
 
 * Telerik.Windows.Documents.Flow
-            
 
 * Telerik.Windows.Zip
+
+* Telerik.Windows.Documents.Flow.FormatProviders.Pdf 
+
+* Telerik.Windows.Documents.Fixed
+
+> The latter two assemblies - Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll and Telerik.Windows.Documents.Fixed.dll are only needed if you plan on exporting the document to PDF format.
             
 
 ## Creating RadFlowDocument from Code

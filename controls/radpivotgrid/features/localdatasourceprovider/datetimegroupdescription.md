@@ -76,7 +76,7 @@ __RadPivotFieldList__ automatically detects properties of type DateTime (DateTim
 
 ![Rad Pivot Grid Features Date Time Group 01](images/RadPivotGrid_Features_DateTimeGroup_01.png)
 
-As you can see, the folder gives you the ability to select different steps for your DateTimeGroupDescription at runtime and use them simultaneously. The names of the items are a combination of the property name and a step. Only the last item in the folder has different name - it conatins only the property name. When you drag it, you will add the data as PropertyGroupDescription.        
+As you can see, the folder gives you the ability to select different steps for your DateTimeGroupDescription at runtime and use them simultaneously. The names of the items are a combination of the property name and a step. Only the last item in the folder has different name - it contains only the property name. When you drag it, you will add the data as PropertyGroupDescription.        
 
 ## Modify FieldTree of RadPivotFieldList
 

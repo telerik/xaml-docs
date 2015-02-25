@@ -57,6 +57,7 @@ The __TableCell__ element exposes several properties that allow you to customize
 
 * __Row__: Represents the parent __TableRow__ of the cell.
             
+* __Table__: Represents the parent __Table__ of the cell.
 
 * __Borders__: Specifies the borders of the cell. *Style property.*
 

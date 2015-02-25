@@ -31,4 +31,3 @@ __RadMediaPlayer__ is __ItemsControl__ where each item is of type __RadMediaItem
 
 # See Also
  * [Getting Started]({%slug radmediaplayer-populating%})
- * [Features]({%slug radmediaplayer-features-overview%})

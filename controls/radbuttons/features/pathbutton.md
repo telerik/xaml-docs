@@ -43,6 +43,8 @@ To achieve the same results through code you can use our __GeometryParser__
         Key .PathGeometry = GeometryParser.GetGeometry("M3,7L9,7L9,4L13,8L9,12L9,9L3,9z")
     }
 
+#  Customizing the RadPathButton
+
 The __RadPathButton__ exposes the __ContentPlacement__ property. It is of type __Dock__ and gets or sets this position of the content relative to the Path element. This property accepts __Left__, __Top__, __Right__ and __Bottom__ values. The default is __Bottom__.
         
 #### __XAML__
@@ -58,3 +60,5 @@ The __RadPathButton__ exposes the __ContentPlacement__ property. It is of type _
     }
 
 In addition to all customizing options that are inherited from the __RadButton__ the __PathButton__ has a __PathStyle__ property. This property gets or sets the style of the __Path__ element in the template.
+
+Also the __RadPathButton__ exposes the __ContentMargin__ property. It is of type __Thickness__ and determines the margin around its content. This allows users to adjust size of the Path that the button hosts. For adjusting the position of the Path itself users can use the __RadPathButton.Padding__ property.

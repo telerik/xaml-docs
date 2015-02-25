@@ -35,6 +35,13 @@ The operations it can perform on an image are:
 
 * Sharpen and Blur
 
+* Rotating and Flipping
+
+* Typing
+
+* Drawing
+
+
 The image formats it supports are: 
 
 For import: 

@@ -55,7 +55,7 @@ The other approach will be to define the __RadButton__ beyond the boundaries of 
 
 In this case the target object needs to be explicitly set in the definition of the __CommandTarget__ Property, specifying the __RadGridView__ towards which the command has to be applied. This specific command will be automatically disabled untill a change in any of the items in the grid is made. {% if site.site_name == 'Silverlight' %}
 
-However, in both cases you will need to initialize the commands beforehand:{% endif %}
+However, in both cases you will need to initialize the commands beforehand:
 
 #### __XAML__
 
@@ -70,7 +70,7 @@ However, in both cases you will need to initialize the commands beforehand:{% en
        InitializeComponent();
 	}
 	{{endregion}}
-
+{% endif %}
 
 
 

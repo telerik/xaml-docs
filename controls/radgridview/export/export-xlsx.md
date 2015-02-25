@@ -10,7 +10,7 @@ position: 4
 
 # ExportFormat.Xlsx
 
-As of Q1 2015 RadGridView exposes a new method – __ExportToXlsx__ which allows exporting to Xlsx format without the need to integrate RadGridView with RadSpreadProcessing.
+As of __Q1 2015__ RadGridView exposes a new method – __ExportToXlsx__ which allows exporting to Xlsx format without the need to integrate RadGridView with RadSpreadProcessing.
 
 
 >tip You can read more about the export events [here]({%slug gridview-export-events%}).
@@ -69,7 +69,7 @@ The following example shows how to use the method on a button click:
 
 ## ExportDefaultStyles  ##
 
->noteTo export the Default Styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
+>To export the Default Styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
 RadGridView can be exported with its default styles by setting the ExportDefaultStyles property to “true”
 
@@ -140,3 +140,13 @@ The following example illustrates the approach:
 	            End If
 	    End If
 	End Function
+
+## See Also ##
+
+ * [RadGridView Overview]({%slug gridview-overview2%})
+
+ * [Export]({%slug gridview-export%})
+
+ * [Export Async]({%slug gridview-export-async%})
+
+ * [Export Events]({%slug gridview-export-events%})

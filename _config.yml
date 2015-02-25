@@ -640,6 +640,8 @@ navigation:
         title: RadTreeListView
     controls/raddomaindatasource:
         title: RadDomainDataSource
+    controls/radwizard:
+        title: RadWizard
 ## X1 Controls End
 
 ## Common Start

@@ -62,7 +62,8 @@ controls/radtreeview/how-to/wpf-windowsexplorer-like-treeview.md,
 controls/radtreeview/how-to/howto-bind-treeview-wpf.md,
 controls/radgridview/features/merged-cells.md,
 controls/radpivotgrid/features/queryabledataprovider,
-controls/radwordsprocessing]
+controls/radwordsprocessing,
+visual-studio-templates.md]
 # The public documentation URL, used for sitemap.xml
 url: "http://docs.telerik.com/devtools/silverlight"
 site_name: Silverlight

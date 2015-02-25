@@ -15,14 +15,13 @@ As of Q1 2015 RadGridView exposes a new method – __ExportToXlsx__ which allows
 
 >tip You can read more about the export events [here]({%slug gridview-export-events%}).
 
-Assembly References
+__Assembly References__
 ExportFormat.Xlsx method uses additional libraries so you need to add references to the following assemblies:
 
-- Telerik.Windows.Documents.Core.dll
-- Telerik.Windows.Documents.SpreadSheet.dll 
--Telerik.Windows.Documents.SpreadSheet.FormatProviders.OpenXml.dll
-- Telerik.Windows.Zip.dll
-
+* Telerik.Windows.Documents.Core.dll
+* Telerik.Windows.Documents.SpreadSheet.dll 
+* Telerik.Windows.Documents.SpreadSheet.FormatProviders.OpenXml.dll
+* Telerik.Windows.Zip.dll
 
 The method is overloaded:
 
@@ -70,7 +69,7 @@ The following example shows how to use the method on a button click:
 
 ## ExportDefaultStyles  ##
 
->note: To export the Default Styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
+>noteTo export the Default Styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
 RadGridView can be exported with its default styles by setting the ExportDefaultStyles property to “true”
 

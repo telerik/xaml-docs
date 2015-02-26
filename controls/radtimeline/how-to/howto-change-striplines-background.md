@@ -19,7 +19,7 @@ The lines are represented by __TimelineStripLineControl__ which exposes couple o
 
 You can use an implicit Style to set the style on the __TimelineStripLineControls__. The following example demonstrates this approach:
  
-#### __XAML - The RadTimeline's definition:__
+#### __XAML__
 	<telerik:RadTimeline PeriodStart="2015-2-24" 
 						 PeriodEnd="2016-2-24" 
 						 Height="200">
@@ -32,7 +32,7 @@ You can use an implicit Style to set the style on the __TimelineStripLineControl
 		</telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
 	
-#### __XAML - The styles definition:__
+#### __XAML__
 	<Window.Resources>
 		<Style TargetType="Border" x:Key="normalStyle">
 			<Setter Property="Background" Value="#F67E4B" />

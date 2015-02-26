@@ -9,7 +9,7 @@ position: 4
 ---
 
 # Localization 
-The built-in localization mechanism in WPF allows you to localize __RadWizard__ control.
+The built-in localization mechanism allows you to localize __RadWizard__ control.
 
 Here is a list of the supported languages:
 

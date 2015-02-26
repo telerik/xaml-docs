@@ -57,7 +57,7 @@ In this case the target object needs to be explicitly set in the definition of t
 
 However, in both cases you will need to initialize the commands beforehand:
 
-#### __XAML__
+#### __C#__
 
 {{region GridView-Commands-Implementation_2}}
 

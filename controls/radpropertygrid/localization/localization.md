@@ -29,7 +29,7 @@ Here is a list of the supported languages:
 
 ## Resource Keys
 
-In order to be able to distinguish the localization resources, an unique identifier, called __resource key__, is assigned to each localizable string.
+In order to be able to distinguish the localization resources, a unique identifier, called __resource key__, is assigned to each localizable string.
         
 Here is a list of the __Resources__ available and their default values:
         

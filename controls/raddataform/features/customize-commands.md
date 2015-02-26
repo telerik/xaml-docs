@@ -20,7 +20,7 @@ This article provides a description and examples of how to customize RadDataForm
 
 __Telerik.Windows.Controls.Data.DataForm.DataFormCommandProvider__ is a public class that exposes the “execute” and “can-execute” logic of all commands, utilized by RadDataForm. RadDataForm processes these commands according to its current provider. Here is the set of methods that DataFormCommandProvider exposes:“Execute logic” methods
 
-The methods listed bellow identify the logic that is executed when a certain command’s invocation takes place.
+The methods listed below identify the logic that is executed when a certain command’s invocation takes place.
 
 #### __C#__
 

@@ -42,9 +42,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
               
 
 * __RowActivated__ - occurs when a row is activated - when user double click on it or press enter. The type of the passed event arguments is __RowEventArgs__
-
-* Loading Events ([Read more]({%slug gridview-rowloaded-event%}))
-              
+            s
 
 * __RowLoaded__ - occurs anytime the row appears within the view port. The type of the passed event arguments is __RowLoadedEventArgs__.
                 

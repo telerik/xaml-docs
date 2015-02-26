@@ -15,6 +15,7 @@ installation-and-deployment/installing-telerik-ui-on-your-computer/installation-
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
@@ -463,9 +464,12 @@ navigation:
     controls/radwordsprocessing/formats-and-conversion/html:
         title: Html
         position: 3
+    controls/radwordsprocessing/formats-and-conversion/pdf:
+        title: Pdf
+        position: 4	
     controls/radwordsprocessing/formats-and-conversion/plain-text:
         title: Plain text
-        position: 4
+        position: 5
     controls/radwordsprocessing/concepts/fields:
         title: Fields
         position: 0
@@ -636,6 +640,10 @@ navigation:
         title: RadTreeListView
     controls/raddomaindatasource:
         title: RadDomainDataSource
+    controls/radwizard:
+        title: RadWizard
+    controls/radwizard/features:
+        title: Features
 ## X1 Controls End
 
 ## Common Start

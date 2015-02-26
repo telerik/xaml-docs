@@ -372,8 +372,6 @@ A very common issue is to have the __RadTreeViewItem__'s __IsSelected__ property
 {{endregion}}
 
 {% endif %}
-
-For a complete demo, please refer to the {% if site.site_name == 'Silverlight' %}[How to Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection]({%slug radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection%}){% endif %}{% if site.site_name == 'WPF' %}[How to Bind RadTreeView to Hierarchical Data and Use Style Binding]({%slug radtreeview-howto-bind-hierarchical-data-style-binding%}){% endif %} topic.
 		
 # See Also
 

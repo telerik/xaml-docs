@@ -177,6 +177,8 @@ Telerik UI for Silverlight features the following controls:
 
 * [Window]({%slug radwindow-overview%})
 
+* [Wizard]({%slug wizard-overview%})
+
 * [ZipLibrary]({%slug radziplibrary-overview%})
 {% endif %}
 
@@ -330,6 +332,8 @@ Telerik UI for WPF features the following controls:
 * [WaterMarkBox]({%slug radwatermarktextbox-overview%})
 
 * [Window]({%slug radwindow-overview%})
+
+* [Wizard]({%slug wizard-overview%})
 
 * [WordsProcessing]({%slug radwordsprocessing-overview%})
 

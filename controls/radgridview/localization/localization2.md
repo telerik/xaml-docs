@@ -40,8 +40,7 @@ On the picture below you can see some of the resource keys and the strings they 
 Here is a list of all of the __Resources__ available and their default values:
 
 Key	|	Value
----	|	---	|	---
-
+---	|	---	
 GridViewAlwaysVisibleNewRow | Click here to add new item
 GridViewClearFilter | Clear Filter
 GridViewFilter | Filter

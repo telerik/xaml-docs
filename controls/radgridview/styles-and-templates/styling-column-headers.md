@@ -29,7 +29,7 @@ This topic will show you how to perform the second one.
 
 When working in Expression Blend, the namespaces that are needed will be added automatically.
 
-Load your project in Expression Blend and open the User Control that holds the __RadGridView__. You have to use a dummy control in order to get the default style. To create one find the __GridViewHeaderCell__ control in the 'Assets' and draw one on the art board. In the 'Objects and Timeline' pane select the __GridViewHeaderCell__that you've drawn and from the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+Load your project in Expression Blend and open the User Control that holds the __RadGridView__. You have to use a dummy control in order to get the default style. To create one find the __GridViewHeaderCell__ control in the 'Assets' and draw one on the art board. In the 'Objects and Timeline' pane select the __GridViewHeaderCell__ that you've drawn and from the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 

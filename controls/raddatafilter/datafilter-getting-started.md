@@ -32,6 +32,8 @@ In order to use __RadDataFilter__ in your project, you need to add references to
 
 * __Telerik.Windows.Controls.dll__
 
+* __Telerik.Windows.Data.dll__
+
 After adding references to the aforementioned dlls, you can declare a new __RadDataFilter__ as any normal Silverlight/WPF control.
 
 >

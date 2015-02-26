@@ -52,6 +52,18 @@ There are two available options when grouping. The first option is to simply ass
 	worksheet.Columns[3].SetOutlineLevel(1);
 {{#endregion}}
 
+
+#### __[VB.NET] Example 1: Grouping Columns Using Outline Level__
+
+{{region radspreadprocessing-features-grouping_5}}
+	Dim workbook = New Workbook()
+	Dim worksheet = workbook.Worksheets.Add()
+	
+	worksheet.Columns(0).SetOutlineLevel(1)
+	worksheet.Columns(1, 2).SetOutlineLevel(2)
+	worksheet.Columns(3).SetOutlineLevel(1)
+{{#endregion}}
+
 The other option is to use the Group method exposed by the row/column selection classes.
 
 #### __[C#] Example 2: Grouping Columns Using the Group Method__
@@ -62,6 +74,18 @@ The other option is to use the Group method exposed by the row/column selection 
 	
 	worksheet.Columns[0, 3].Group();
 	worksheet.Columns[1, 2].Group();
+{{#endregion}}
+
+
+
+#### __[VB.NET] Example 2: Grouping Columns Using the Group Method__
+
+{{region radspreadprocessing-features-grouping_6}}
+    Dim workbook = New Workbook()
+    Dim worksheet = workbook.Worksheets.Add()
+
+    worksheet.Columns(0, 3).Group()
+    worksheet.Columns(1, 2).Group()
 {{#endregion}}
 
 Both approaches will result in the following file:
@@ -86,6 +110,13 @@ Figure 3
 	worksheet.Rows[4, 6].SetOutlineLevel(1);
 {{#endregion}}
 
+#### __[VB.NET] Example 3: Ungrouping Columns Using Ouline Level__
+
+{{region radspreadprocessing-features-grouping_7}}
+    worksheet.Rows(0, 1).Ungroup()
+    worksheet.Rows(4, 6).Ungroup()
+{{#endregion}}
+
 You can achieve the same result with the code in __Example 4__:
 
 #### __[C#] Example 4: Ungrouping Columns Using the Ungroup Method__
@@ -93,6 +124,13 @@ You can achieve the same result with the code in __Example 4__:
 {{region radspreadprocessing-features-grouping_3}}
 	worksheet.Rows[0, 1].Ungroup();
 	worksheet.Rows[4, 6].Ungroup();
+{{#endregion}}
+
+#### __[VB.NET] Example 4: Ungrouping Columns Using the Ungroup Method__
+
+{{region radspreadprocessing-features-grouping_8}}
+    worksheet.Rows(0, 1).ClearOutlineLevel()
+    worksheet.Rows(4, 6).SetOutlineLevel(1)
 {{#endregion}}
 
 ## Getting the outline level
@@ -105,6 +143,13 @@ You can get the outline level of a row/column or a group of rows/columns using t
 {{region radspreadprocessing-features-grouping_4}}
 	RangePropertyValue<int> outlineLevelRangeValue = worksheet.Rows[0, 1].GetOutlineLevel();
 	int outLineLevel = outlineLevelRangeValue.Value;
+{{#endregion}}
+
+#### __[VB.NET] Example 5: Getting the OutlineLevel__
+
+{{region radspreadprocessing-features-grouping_4}}
+	Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
+	Dim outLineLevel As Integer = outlineLevelRangeValue.Value
 {{#endregion}}
 
 # See Also

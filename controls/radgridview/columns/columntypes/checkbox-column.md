@@ -37,7 +37,7 @@ One property that exists only in this type of column is __AutoSelectOnEdit__ - w
 
 2. __AutoSelectOnEdit="True"__, __EditTriggers="Default"__ - two clicks are needed to change the value of the checkbox - the clicks to enter the edit mode.
 
-3. __AutoSelectOnEdit="True"__, __EditTriggers="CellClick" -__only one click is needed to change the value of the checkbox. 
+3. __AutoSelectOnEdit="True"__, __EditTriggers="CellClick" -__ only one click is needed to change the value of the checkbox. 
 
 # See Also
 

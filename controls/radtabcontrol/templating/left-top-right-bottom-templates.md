@@ -32,42 +32,39 @@ If you take a look at the XAML in Visual Studio you will see a lot of code. Ther
 
 #### __XAML__
 
-{{region radtabcontrol-left-top-right-bottom-templates_0}}
-    <ControlTemplate x:Key="TabControlTopTemplate" TargetType="telerik:RadTabControl">
+<ControlTemplate x:Key="TabControlTopTemplate" TargetType="telerik:RadTabControl">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Disabled">
+                    <Storyboard />
+                </VisualState>
+                <VisualState x:Name="Normal" />
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Border Grid.Row="1" 
+                Margin="0"
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+            <ContentPresenter x:Name="ContentElement" 
+                              Content="{TemplateBinding SelectedContent}"
+                              ContentTemplate="{TemplateBinding SelectedContentTemplate}" />
+        </Border>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Disabled">
-                        <Storyboard />
-                    </VisualState>
-                    <VisualState x:Name="Normal" />
-                </VisualStateGroup>
-            </VisualStateManager.VisualStateGroups>
-            <Border Grid.Row="1" 
-                    Margin="0"
-                    Background="{TemplateBinding Background}"
-                    BorderBrush="{TemplateBinding BorderBrush}"
-                    BorderThickness="{TemplateBinding BorderThickness}">
-                <ContentPresenter x:Name="ContentElement" 
-                                  Content="{TemplateBinding SelectedContent}"
-                                  ContentTemplate="{TemplateBinding SelectedContentTemplate}" />
-            </Border>
-            <Grid>
-                <Rectangle Fill="{StaticResource RadTabControlHeaderBackground}" Visibility="{TemplateBinding BackgroundVisibility}" />
-                <ItemsPresenter Margin="2 4 0 0" />
-            </Grid>
-            <Rectangle x:Name="DisableVisual" 
-                       Grid.RowSpan="2"
-                       Fill="{StaticResource RadTabItemDisabledBackground}"
-                       Visibility="Collapsed" />
+            <Rectangle Fill="{StaticResource RadTabControlHeaderBackground}" Visibility="{TemplateBinding BackgroundVisibility}" />
+            <ItemsPresenter Margin="2 4 0 0" />
         </Grid>
-    </ControlTemplate>
-	{{endregion}}
-
+        <Rectangle x:Name="DisableVisual" 
+                   Grid.RowSpan="2"
+                   Fill="{StaticResource RadTabItemDisabledBackground}"
+                   Visibility="Collapsed" />
+    </Grid>
+</ControlTemplate>
 
 
 You are now able to modify the desired templates to your liking.

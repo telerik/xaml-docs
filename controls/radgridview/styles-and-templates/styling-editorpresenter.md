@@ -24,7 +24,7 @@ Here is an example of how the template of the GridViewEditorPresent looks like:
 
 	<Grid> 
 		<ContentPresenter Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	  <Border x:Name="ValidationErrorElement" Visibility="Collapsed" CornerRadius="1" BorderBrush="{StaticResource ControlOuterBorder_Invalid}" BorderThickness="1" Margin="1 1 1 2">
+	  <Border x:Name="ValidationErrorElement" Visibility="Collapsed" CornerRadius="1" BorderBrush="{StaticResource ControlOuterBorder_Invalid}" BorderThickness="1" Margin="1 1 1 2"/>
 	</Grid>
 {{endregion}}
 

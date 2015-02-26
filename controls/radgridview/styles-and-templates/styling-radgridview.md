@@ -35,7 +35,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 ![](images/RadGridView_Styles_and_Templates_Styling_RadGridView_01.png){% endif %}
 
-* __GridView_GroupPanelOuterBorder__ - a brush, that represents the outer border color of the__Group Panel__.
+* __GridView_GroupPanelOuterBorder__ - a brush, that represents the outer border color of the __Group Panel__.
 
 * __RadGridViewTemplate__ - the __ControlTemplate__, applied to the __RadGridView__.
 

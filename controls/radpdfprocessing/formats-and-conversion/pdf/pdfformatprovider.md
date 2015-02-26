@@ -72,3 +72,7 @@ __Example 2__ shows how to use the __Export()__ method of PdfFormatProvider to e
 
 The resulting document can be opened in any application which supports PDF documents.
         
+## See Also
+
+* [PdfFormatProvider API Reference](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_Pdf_PdfFormatProvider.htm)
+* [Settings]({%slug radpdfprocessing-formats-and-conversion-pdf-settings%})

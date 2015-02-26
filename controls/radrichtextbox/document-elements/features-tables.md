@@ -28,7 +28,7 @@ The same approaches can be adopted when formatting the table:
 ## Creating a Table Programmatically via RadRichTextBox API
 
 >tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
-        
+
 
 The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
         
@@ -151,8 +151,10 @@ The __RadRichTextBox__ exposes the following methods that regard the creation or
 * __DeleteTableRow__ - deletes the currently selected row.
             
 
-* __InsertTable__ - inserts a table. Allows you to specify the number of rows and columns.
+* __InsertTable__ - inserts a table. Allows you to specify the number of rows and columns. Has an overload that allows you to specify if a Paragraph should be inserted before the table.
             
+        
+>important In versions earlier than Q1 2015 before and after each Table element is inserted a Paragraph. When the Table is inserted via the UI or the InsertTable() method this is done automatically, otherwise paragraphs should be inserted manually. In next versions the Paragraph before the Table is not mandatory.
 
 * __InsertTableColumn__- inserts a column at the end.
             
@@ -243,3 +245,11 @@ Additionally the built-in context menu of the __RadRichTextBox__ gives the user 
 
 >tipTo wire these dialogs to your own UI you can use the __ShowTablePropertiesDialog()__ method of __RadRichTextBox__ or the __ShowTablePropertiesCommand__.
         
+
+# See Also
+
+* [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
+
+* [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
+
+* [Section]({%slug radrichtextbox-features-document-elements-section%})

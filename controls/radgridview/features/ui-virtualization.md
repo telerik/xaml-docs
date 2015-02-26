@@ -60,7 +60,7 @@ The __RadGridView__ is populated with 500 000 rows.
 
 ## Disable Column Virtualization
 
-In order to disable the UI __Column Virtualization__ behavior, you should set the __EnableColumnVirtualization__property of the __RadGridView__ to __False__. See the example below:
+In order to disable the UI __Column Virtualization__ behavior, you should set the  __EnableColumnVirtualization__ property of the __RadGridView__ to __False__. See the example below:
 
 #### __XAML__
 

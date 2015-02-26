@@ -11,7 +11,7 @@ site_name: WPF
 
 # Adding UI for WPF to the Visual Studio 2012 Toolbox
 
-The following tutorial will show you how to add the Telerik __RadControls__ for WPF to the Visual Studio 2010 toolbox.
+The following tutorial will show you how to add the Telerik __RadControls__ for WPF to the Visual Studio 2012 toolbox.
 
 ## Adding RadControls for WPF to the Visual Studio 2012 Toolbox
 

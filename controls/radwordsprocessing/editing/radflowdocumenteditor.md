@@ -294,6 +294,6 @@ Formatting options are most useful when inserting multiple elements that should 
 
 # See Also
 
- * [RadFlowDocument API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_editing_radflowdocumenteditor.html)
+ * [RadFlowDocument API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_editing_radflowdocumenteditor.html)
 
  * [Document model]({%slug radwordsprocessing-model%})

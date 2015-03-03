@@ -12,7 +12,7 @@ position: 4
 
 
 
-__RadFlowDocument__ includes repository of [Styles](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_style.html) objects which contain sets of character, paragraph or table [style properties]({%slug radwordsprocessing-concepts-style-properties%}). They provide rich editing capabilities with consistent look over different content inside the document. Styles allow formatting properties to be stored and managed independently from the content. [RadFlowDocument]({%slug radwordsprocessing-model-radflowdocument%}) keeps its styles in __StyleRepository__ object accessible through the __RadFlowDocument.StyleRepository__ property.
+__RadFlowDocument__ includes repository of [Styles](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_style.html) objects which contain sets of character, paragraph or table [style properties]({%slug radwordsprocessing-concepts-style-properties%}). They provide rich editing capabilities with consistent look over different content inside the document. Styles allow formatting properties to be stored and managed independently from the content. [RadFlowDocument]({%slug radwordsprocessing-model-radflowdocument%}) keeps its styles in __StyleRepository__ object accessible through the __RadFlowDocument.StyleRepository__ property.
       
 
 * [Style Class Overview](#style-class-overview)
@@ -118,7 +118,7 @@ Default style is style which, according to its style type , is applied to object
 Built-in styles are commonly used styles which are predefined for convenience. They have to be explicitly added to the style repository before usage using the __StyleRepository.AddBuiltInStyle()__ method.
         
 
-[BuiltInStyleNames](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_builtInstylenames.html) static class contains properties and methods for getting the IDs of all built-in styles. For example, the following code gets the ID of the "Heading 1" built-in style:
+[BuiltInStyleNames](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_builtInstylenames.html) static class contains properties and methods for getting the IDs of all built-in styles. For example, the following code gets the ID of the "Heading 1" built-in style:
         
 
 #### __C#__
@@ -249,7 +249,7 @@ Linked styles can be based on other linked styles or on paragraph styles.
 
 # See Also
 
- * [Styles API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_style.html)
+ * [Styles API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_style.html)
 
  * [RadFlowDocument]({%slug radwordsprocessing-model-radflowdocument%})
 
@@ -257,6 +257,6 @@ Linked styles can be based on other linked styles or on paragraph styles.
 
  * [Paragraph]({%slug radwordsprocessing-model-paragraph%})
 
- * [Table]({%slug radwordsprocessing-model-table%})[BuiltInStyleNames](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_builtInstylenames.html)
+ * [Table]({%slug radwordsprocessing-model-table%})[BuiltInStyleNames](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_builtInstylenames.html)
 
  * [Lists]({%slug radwordsprocessing-concepts-lists%})

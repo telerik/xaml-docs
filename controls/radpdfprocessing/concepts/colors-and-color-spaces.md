@@ -77,7 +77,7 @@ Gradient provides a smooth transition between colors across an area which is pai
 * __Background__: __SimpleColor__ object representing the background color.
                 
 
-* __GradientStops__: A collection of [GradientStop](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_colorspaces_gradientstop.html) objects representing the gradient stops collection.
+* __GradientStops__: A collection of [GradientStop](http://www.telerik.com/help/wpf/t_telerik_windows_documents_fixed_model_colorspaces_gradientstop.html) objects representing the gradient stops collection.
                 
 
 The __Gradient__ class is inherited by the following classes

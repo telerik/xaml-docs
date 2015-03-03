@@ -32,7 +32,7 @@ This article will get you familiar with the following concepts:
 
 ## Link
 
-The __Link__ class inherits the abstract __Annotation__ class and is the only supported type of annotation in the document model. Link annotations represents either a hypertext link to a destination elsewhere in the document or an action to be performed. For this reason there are two separate constructors in the [Link class](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_annotations_link.html) - one requiring a __Destination__ object and one requiring an __Action__ object.
+The __Link__ class inherits the abstract __Annotation__ class and is the only supported type of annotation in the document model. Link annotations represents either a hypertext link to a destination elsewhere in the document or an action to be performed. For this reason there are two separate constructors in the [Link class](http://www.telerik.com/help/wpf/t_telerik_windows_documents_fixed_model_annotations_link.html) - one requiring a __Destination__ object and one requiring an __Action__ object.
         
 
 __Link__ exposes the following properties:
@@ -169,4 +169,4 @@ __Example 4__ demonstrates how to create an action of type __GoToAction__, assoc
 
  * [RadFixedPage]({%slug radpdfprocessing-model-radfixedpage%})
  * [AnnotationType API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_Documents_fixed_model_annotations_annotationtype.html)
- * [Link API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_fixed_model_annotations_link.html)
+ * [Link API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_fixed_model_annotations_link.html)

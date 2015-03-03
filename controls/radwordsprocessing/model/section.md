@@ -139,7 +139,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 ## Operating with a Section
 
-Section derives [BlockContainerBase](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_blockcontainerbase.html), inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug radwordsprocessing-model-paragraph%}) and [Table]({%slug radwordsprocessing-model-table%}) objects to that collection:
+Section derives [BlockContainerBase](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_blockcontainerbase.html), inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug radwordsprocessing-model-paragraph%}) and [Table]({%slug radwordsprocessing-model-table%}) objects to that collection:
         
 
 #### __C#__
@@ -153,7 +153,7 @@ Section derives [BlockContainerBase](http://www.telerik.com/help/wpf/allmembers_
 
 # See Also
 
- * [Section API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_section.html)
+ * [Section API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_section.html)
 
  * [Headers and Footers]({%slug radwordsprocessing-model-headers-footers%})
 

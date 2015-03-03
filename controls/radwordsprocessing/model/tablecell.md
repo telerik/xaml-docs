@@ -122,7 +122,7 @@ Through the __BlockCollection__ property of the __TableCell__ element you can ad
 
 # See Also
 
- * [TableCell API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_tablecell.html)
+ * [TableCell API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_tablecell.html)
 
  * [Document model]({%slug radwordsprocessing-model%})
 

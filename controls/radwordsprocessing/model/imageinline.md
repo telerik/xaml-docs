@@ -99,7 +99,7 @@ The __ImageInline__ element exposes the following properties:
 
 # See Also
 
- * [ImageInline API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_shapes_imageinline.html)
+ * [ImageInline API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_shapes_imageinline.html)
 
  * [Document model]({%slug radwordsprocessing-model%})
 

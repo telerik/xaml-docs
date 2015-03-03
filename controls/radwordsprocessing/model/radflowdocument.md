@@ -143,7 +143,7 @@ The next snippet shows how all fields in a document can be updated simultaneousl
 
 # See Also
 
- * [RadFlowDocument API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_radflowdocument.html)
+ * [RadFlowDocument API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_radflowdocument.html)
 
  * [Document model]({%slug radwordsprocessing-model%})
 

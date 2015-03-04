@@ -36,7 +36,7 @@ The available functions are:
 
 >tipYou can also create your own custom functions similar to these by inheriting the __Telerik.Windows.Data.EnumerableAggregateFunction__ class.
 
->tipYou could also use a {% if site.site_name == 'WPF' %}[Generic AggregateFunction](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_data_aggregatefunction_2.html){% endif %}{% if site.site_name == 'Silverlight' %}[Generic AggregateFunction](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_data_aggregatefunction_2.html){% endif %} to define some custom aggregate expressions. An example can be found [here](http://demos.telerik.com/silverlight/#GridView/CustomAggregates).
+>tipYou could also use a {% if site.site_name == 'WPF' %}[Generic AggregateFunction](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %}{% if site.site_name == 'Silverlight' %}[Generic AggregateFunction](http://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %} to define some custom aggregate expressions. An example can be found [here](http://demos.telerik.com/silverlight/#GridView/CustomAggregates).
 
 The footer cell displays the caption and the result of the selected aggregate function.
 

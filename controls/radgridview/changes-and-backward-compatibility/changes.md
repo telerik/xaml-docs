@@ -14,6 +14,10 @@ position: 0
 
 You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
+## Q1 2015
+
+You can check the {% if site.site_name == 'Silverlight' %}[Release Notes for version Q1 2015.](http://www.telerik.com/support/whats-new/silverlight/release-history/ui-for-silverlight-q1-2015){% endif %}{% if site.site_name == 'WPF' %}[Release Notes for version Q1 2015.](http://www.telerik.com/support/whats-new/wpf/release-history/ui-for-wpf-q1-2015){% endif %}
+
 ## Q3 2014
       
 

@@ -10,7 +10,9 @@ position: 1
 
 # Scrolling 
 
-## New Section on ScrollModes
+__RadGridView__ has inbuilt default scrolling mechanism. There are also options provided to additionally configure it for a better user experience.
+
+## ScrollModes
 
 __RadGridView__ provides two built-in scrolling modes, which allow you to manipulate the type of scrolling. 
 This is controlled by the __ScrollMode__ enumeration property which has the following entries:

@@ -59,11 +59,11 @@ __PDF/A-2a__
 
 Corresponding to the PDF/A-1a
 
+>__RadPdfProcessing__ does not support PDF/A-2a level of compliance.
+
 __PDF/A-2b__
 
 This level corresponds to the PDF/A-1b.
-
->__RadPdfProcessing__ does not support PDF/A-2b level of compliance.
 
 __PDF/A-2u__
 

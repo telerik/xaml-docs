@@ -44,7 +44,7 @@ The footer cell displays the caption and the result of the selected aggregate fu
 
 To display an aggregate function for a certain column, just instantiate the function you need and add it to the __AggregateFunctions__ collection of that column.
 
-#### __XAML__
+#### [XAML] Example 1: Display an aggregate function for a certain column
 
 {{region gridview-columns-aggregate-functions_1}}
 
@@ -57,7 +57,7 @@ To display an aggregate function for a certain column, just instantiate the func
 	</telerik:GridViewDataColumn>
 {{endregion}}
 
-#### __C#__
+#### [C#] Example 2: Add an aggregate function for a certain column
 
 {{region gridview-columns-aggregate-functions_2}}
 
@@ -65,7 +65,7 @@ To display an aggregate function for a certain column, just instantiate the func
 	((GridViewDataColumn)this.radGridView.Columns["ID"]).AggregateFunctions.Add(f);
 {{endregion}}
 
-#### __VB.NET__
+#### [VB.NET] Example 2: Add an aggregate function for a certain column
 
 {{region gridview-columns-aggregate-functions_3}}
 
@@ -85,7 +85,7 @@ To display an aggregate function for a certain column, just instantiate the func
           
 If a recalculation of the aggregates is needed, you may call the CalculateAggregates() method of the grid:
 
-#### __C#__
+#### [C#] Example 3: Invoke CalculateAggregates() method
 
 {{region gridview-columns-aggregate-functions_4}}
 

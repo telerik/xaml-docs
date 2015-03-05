@@ -39,7 +39,7 @@ The method is overloaded:
 
 The following example shows how to use the method on a button click:
 
-#### __C#__
+#### [C#] Example 1: Usage of method ExportToXlsx
 	private void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "xlsx";
@@ -67,7 +67,7 @@ The following example shows how to use the method on a button click:
 	}
 
 
-## ExportDefaultStyles  ##
+## ExportDefaultStyles
 
 >To export the Default Styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
@@ -80,7 +80,7 @@ __Figure 1__: Exporting with ExportDefaultStyles set to “false” (default)
 
 You can set the __ExportDefaultStyles value to “true”__ and see the result (Figure 2)
 
-#### __C#__
+#### [C#] Example 2: Configuring ExportDefaultStyles setting
 
 	gridViewExport.ExportToXlsx(stream,
 	    new GridViewDocumentExportOptions()
@@ -94,11 +94,11 @@ You can set the __ExportDefaultStyles value to “true”__ and see the result (
 __Figure 2__: Exporting with ExportDefaultStyles set to “true”
 ![ExportDefaultStyles false](images/exportdefaultstyles2.png)
 
-## Events ##
+## Events
 
 You can read more about export events below.
 
-### ElementExportingToDocument ###
+### ElementExportingToDocument
 The event handler expects __GridViewElementExportingToDocumentEventArgs__ arguments that have the following methods and properties:
 * Element - the export element
 * Cancel - the event is cancelable 
@@ -106,19 +106,19 @@ The event handler expects __GridViewElementExportingToDocumentEventArgs__ argume
 * Value - the value to be exported
 * VisualParameters - they are of type GridViewDocumentVisualExportParameters and have a property Style which is of type CellSelectionStyle. It provides the ability to set the FontSize, Fill and etc. for the exported document.
 
-### ElementExportedToDocument ###
+### ElementExportedToDocument
 
 The event handler expects __GridViewElementExportedToDocumentEventArgs__ arguments that have the following methods and properties
 
 * Element - the export Element
 * DataContext - the DataContext of the corresponding visual element.
 
-### Getting the column of the corresponding cell###
+### Getting the column of the corresponding cell
 
 When a cell is exported (header cell, cell, footer cell, group footer cells), the arguments of the ElementExportingToDocument event can be cast to GridViewCellExportingEventArgs. Thus, the column of the corresponding cell can be accessed. 
 
 The following example illustrates the approach:
-#### __C#__
+#### [C#] Example 3: Getting the column of the corresponding cell
 	this.gridViewExport.ElementExportingToDocument += (s, e) =>
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -131,7 +131,7 @@ The following example illustrates the approach:
 	    }
 	};
 
-#### __VB.NET__
+#### [VB.NET] Example 3: Getting the column of the corresponding cell
 	Me.gridViewExport.ElementExportingToDocument += Function(s, e) 
 	    If e.Element = ExportElement.Cell Then
 	        Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
@@ -141,7 +141,7 @@ The following example illustrates the approach:
 	    End If
 	End Function
 
-## See Also ##
+## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 

@@ -35,5 +35,5 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 * __Support for large files__: The __Zip Library__ works seamlessly with large files.
             
 
-* __Support for excryption__: You can protect your ZIP file with password for more security.
+* __Support for encryption__: You can protect your ZIP file with password for more security.
             

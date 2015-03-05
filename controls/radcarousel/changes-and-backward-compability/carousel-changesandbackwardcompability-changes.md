@@ -16,6 +16,10 @@ position: 0
 
 You can check the latest Release Notes [ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx)
 
+## Q1 2015
+
+You can check the [Release Notes for version Q1 2015.](http://www.telerik.com/support/whats-new/wpf/release-history/ui-for-wpf-q1-2015)
+
 ## Q1 2014
       
 ### What's Fixed

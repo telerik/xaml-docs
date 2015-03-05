@@ -645,6 +645,15 @@ a.footer-links:hover {
 	padding-left: 36px;
 }
 
+#page-edit-link {
+	position: absolute;
+	z-index: 10;
+	right: 28px;
+	top: 10px;
+	margin: 0;
+	text-decoration: none;
+}
+
 #logo-bar ul,
 #logo-bar-sl ul {
     list-style: none;

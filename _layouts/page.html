@@ -35,16 +35,9 @@ layout: index
 					</span>
 				</li>
 			</ul>
-		</div>
-		
-		<!--<script type="text/javascript">		
-			window.onload = function(){
-				var tree = $("#page-tree").data("kendoTreeView");
-				var selected = tree.select()
-				$("#page-nav").animate({scrollTop:selected.offset().top - $("#page-header").height() - $("#page-nav").height() / 2}, 300);				
-			}
-		</script> -->		
+		</div>			
     </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master{{ page.url | replace: '.html','' }}.md">Edit this page</a>
     <div id="page-article">       
         <article>
             {{ content }}

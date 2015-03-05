@@ -14,6 +14,35 @@ position: 1
 
 You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
+## Q1 2015
+
+__Changed__
+
+* Removed obsoleted class GridViewExportEventArgs and TextAlignment, VerticalAlignment, Background, Foreground, FontFamily, FontSize, FontWeight, Width, Height, Styles, Attributes properties from GridViewElementExportingEventArgs class.
+            
+__What to do now:__
+You can also check the [Export section]({%slug gridview-export%}) in our documentation on the different options currently available.
+
+__Changed__
+
+* Removed obsoleted property DefaultOperator of FilterOperatorsLoadingEventArgs.
+            
+__What to do now:__
+
+You can work with the properties DefaultOperator1 and DefaultOperator2 instead.
+
+__Changed__
+
+* Removed obsoleted property ParentGroupRow of GridViewGroupFooterRow.
+            
+__Changed__
+
+* Removed obsoleted property ShowInsertRow of RadGridView. 
+            
+__What to do now:__
+
+Property NewRowPosition should be used instead.
+
 ## Q2 2014
       
 

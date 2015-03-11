@@ -28,13 +28,13 @@ All supported commands are defined in the __RadWizardCommands__ class and are li
 Fast and quite easy approach for implementing the built-in commands in __RadWizard__ is to set them directly to a particular __RadButton__. Thus, once you click a single button, the predefined command will be executed.  
 
 There are two major scenarios to define a __RadButton__ – inside and outside __RadWizard__. The definition will be as follows:
-#### XAML
+#### __[XAML] Definition of the namespace needed to use the built-in commands of RadWizard__
 
 	xmlns:wizard="clr-namespace:Telerik.Windows.Controls.Wizard;assembly=Telerik.Windows.Controls.Navigation"
 
-The following example illustrates how to add a __RadButton__ within the __FooterTemplate__ of __RadWizard__
+The following example illustrates how to add a __RadButton__ within the __FooterTemplate__ of __RadWizard__ (__Example 1__).
 
-#### XAML
+#### __[XAML] Example 1: Demonstrates how you can use the built-in commands inside RadWizard__
 
 	<telerik:WizardPage.FooterTemplate>
 	    <DataTemplate>
@@ -48,8 +48,8 @@ The following example illustrates how to add a __RadButton__ within the __Footer
 
 Once the source object is defined up in the tree as a __DataContext__, you can set the source for the __CommandParameter__ Property's Binding to be the entire object.
 
-The other approach is to define the __RadButton__ beyond the boundaries of __RadWizard__:
-#### XAML
+The other approach is to define the __RadButton__ beyond the boundaries of __RadWizard__ (__Example 2__).
+#### __[XAML] Example 2: Demonstrates how you can use the built-in commands outside RadWizard__
 	<telerik:RadButton Content="Back" 
 	                   Width="70" 
                        Height="25"

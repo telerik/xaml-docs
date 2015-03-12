@@ -21,7 +21,72 @@ __Changed__
 * Removed obsoleted class GridViewExportEventArgs and TextAlignment, VerticalAlignment, Background, Foreground, FontFamily, FontSize, FontWeight, Width, Height, Styles, Attributes properties from GridViewElementExportingEventArgs class.
             
 __What to do now:__
-You can also check the [Export section]({%slug gridview-export%}) in our documentation on the different options currently available.
+
+As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. 
+For example:
+
+__Before__
+#### __C#__
+	private void radGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
+    {
+        e.Background = Colors.Red;
+        e.FontFamily = new FontFamily("Verdana");
+        e.FontSize = 30;
+        e.FontWeight = FontWeights.Bold;
+        e.Foreground = Colors.Green;
+        e.Height = 50;
+        e.TextAlignment = TextAlignment.Center;
+        e.VerticalAlignment = VerticalAlignment.Bottom;
+    }
+
+__After__
+
+For __ExportFormat.HTML__, the code you should use now is similar to:   
+#### __C#__
+
+{{region gridview-export-async_6}}
+	private void radGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
+	{
+	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
+	    {
+	        var param = e.VisualParameters as GridViewHtmlVisualExportParameters;
+		    param.Background = Colors.Red;
+		    param.FontFamily = new FontFamily("Verdana");
+		    param.FontSize = 30;
+		    param.FontWeight = FontWeights.Bold;
+		    param.Foreground = Colors.Green;
+		    param.Height = 50;
+		    param.TextAlignment = TextAlignment.Center;
+		    param.VerticalAlignment = VerticalAlignment.Bottom;
+	    }
+	}
+{{endregion}}
+
+You can find more details on how to implement styling in the [ExportFormat.Html]({%slug gridview-export-html%}) article.
+
+Now, it is also possible to define styling for __ExportFormat.ExcelML__
+
+The type of the property for this format is __GridViewExcelMLVisualExportParameters__ and you can set it as follows:
+#### __C#__
+{{region gridview-export-async_2}}
+
+	(e.VisualParameters as GridViewExcelMLVisualExportParameters).StyleId = "0";
+{{endregion}}
+
+You can define the Style when __InitializingExcelMLStyles__ event is raised. For example:
+          
+#### __C#__
+
+{{region gridview-export-async_4}}
+
+	ExcelMLStyle style = new ExcelMLStyle("0");            
+	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
+	e.Styles.Add(style);
+{{endregion}}
+
+You can find more details on how to implement styling in the [ExportFormat.ExcelML]({%slug gridview-export-excelml%}) article.
+
+You can also check the [Export section]({%slug gridview-export%}) in our documentation on the different exporting options currently available.
 
 __Changed__
 
@@ -29,7 +94,7 @@ __Changed__
             
 __What to do now:__
 
-You can work with the properties DefaultOperator1 and DefaultOperator2 instead.
+You can work with the properties __DefaultOperator1 and DefaultOperator2__ instead.
 
 __Changed__
 
@@ -41,7 +106,7 @@ __Changed__
             
 __What to do now:__
 
-Property NewRowPosition should be used instead.
+Property __NewRowPosition__ should be used instead. You can also refer to the [Adding Rows]({%slug gridview-rows-adding-rows%}) article.
 
 ## Q2 2014
       

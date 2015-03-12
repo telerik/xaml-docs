@@ -45,7 +45,7 @@ For __ExportFormat.HTML__, the code you should use now is similar to:
 #### __C#__
 
 {{region gridview-export-async_6}}
-	private void clubsGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
+	private void radGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
 	    {

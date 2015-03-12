@@ -221,6 +221,45 @@ On a button's click event handler we will perform 3 base steps:
 Here is a possible result in Windows8 theme:
 ![raddiagram-features-routing 3](images/raddiagram-features-routing3.png)
 
+## AStarRouter
+
+As the name suggest this is a connection router that uses a version of the [A* search algorithm](http://en.wikipedia.org/wiki/A*_search_algorithm) to find the best route between two points. There are several ways to parameterize the algorithm:
+
+#### Using Diagram Constants
+
+* __DiagramConstants.RoutingGridSize__ - of type double and gets or sets the routing grid size.
+
+![AStarRouter](images/radidiagram-features-AStarRouter.png)
+
+* __DiagramConstants.RouterInflationValue__ - of type double and gets or sets the size of the restricted area around the shapes.
+
+#### Using properties of the router
+
+* __AvoidShapes__ - boolean property controlling the logic that makes the connections go around the shapes. This property is __False__ by default.
+
+![AStarRouter](images/radidiagram-features-AStarRouter2.png)
+
+* __WallOptimization__ - boolean property controlling router optimization logic. If you set this property to True the router will try to optimize some of the steps so that there are the least corners. 
+
+#### Using virtual methods
+
+If the customization provided by these properties does not cover your requirements, you can create your custom router deriving from ours. This will allow you to customize the algorithm by overriding the following methods:
+
+* __GetSiblingNodes__ - this method receives the current state and the end target and should return the next possible nodes 
+
+>The order in which the steps are returned is important - if you have two steps with the same price we'll choose the first one.
+
+* __CalculateWallPenalty__ - this method calculates the penalty for the node that we give it. By default if the node is inside a shape we return the penaltyBaseValue which is the heuristic distance to the endpoint.
+
+* __CalculateBendAlteration__ - this method calculates the bend alteration. By default the result value can be positive - a penalty for changing the direction or negative - a bonus for keeping the direction.
+
+>If the source and target positions of your connections are Auto this router will adjust them so that the path is minimal.
+
+
+## InflatedRectRouter
+
+The InflatedRectRouter is a simple connection router whos goal is to create a route with least bends. This router doesn't try go around shapes except the start and end shape.
+
 ## Custom Router
 
 In the following section we will create a custom Router. This way we will be able to set the routing points of our Polyline Connections.
@@ -292,6 +331,8 @@ The final step is to make our Router the current one of the Diagram. This is don
 
 Below you can see a possible output (Windows8 theme is applied). The custom points that router creates are marked with 1,2,3,4:
 ![raddiagram-features-customrouter](images/raddiagram-features-customrouter.png)
+
+
 
 # See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})

@@ -10,7 +10,7 @@ position: 4
 
 # Export
 
-As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when you export data from the gridview - __ElementExporting__ and __ElementExported__. __ElementExporting__ is a direct replacement of the __Exporting__ event which is used before __Q1 2010 SP2__. The __Exporting__ event will be obsoleted in __Q2 2010__.
+As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when you export data from the gridview - __ElementExporting__ and __ElementExported__. __ElementExporting__ is a direct replacement of the __Exporting__ event which is used before __Q1 2010 SP2__. 
 
 * [Export events lifecycle](#export-events-life-cycle)
 
@@ -61,57 +61,7 @@ You can subscribe to the events either declaratively or runtime like this:
 
 As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with [ExportFormat.ExcelML]({%slug gridview-export-excelml%}) and [ExportFormat.Html]({%slug gridview-export-html%}).
         
-
-On the snapshot below you can see that the event arguments passed to the ElementExporting event handler are of type __GridViewElementExportingEventArgs__ and allow you to customize different setting of the exported data. 
-
-To illustrate the idea better, check out the code snippet below and see how to change the font size and the background of the table header row and the group header rows.
-
-#### __C#__
-
-{{region gridview-export-events_3}}
-
-	private void RadGridView1_ElementExporting( object sender, GridViewElementExportingEventArgs e )
-	{
-	   //Change the font size and the background color of the table header only
-	   if ( e.Element == ExportElement.HeaderRow ||
-	       e.Element == ExportElement.HeaderCell )
-	   {
-	       e.FontSize = e.FontSize + 4;
-	       e.Background = Colors.DarkGray;
-	   }
-	   //Change the font size and the background color of the group headers only
-	   else if ( e.Element == ExportElement.GroupHeaderCell ||
-	       e.Element == ExportElement.GroupHeaderRow )
-	   {
-	       e.FontSize = e.FontSize + 2;
-	       e.Background = Colors.LightGray;
-	   }
-	}
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region gridview-export-events_4}}
-
-	Private Sub RadGridView1_ElementExporting(ByVal sender As Object, ByVal e As GridViewElementExportingEventArgs)
-	    'Change the font size and the background color of the table header only'
-	    If e.Element = ExportElement.HeaderRow OrElse e.Element = ExportElement.HeaderCell Then
-	        e.FontSize = e.FontSize + 4
-	        e.Background = Colors.DarkGray
-	    'Change the font size and the background color of the group headers only'
-	    ElseIf e.Element = ExportElement.GroupHeaderCell OrElse e.Element = ExportElement.GroupHeaderRow Then
-	        e.FontSize = e.FontSize + 2
-	        e.Background = Colors.LightGray
-	    End If
-	End Sub
-{{endregion}}
-
-
-Here is how the exported Html looks like:
-
-![](images/RadGridView_GridExport_2.png)
-
+As of version __Q1 2015__ we removed obsoleted class GridViewExportEventArgs and TextAlignment, VerticalAlignment, Background, Foreground, FontFamily, FontSize, FontWeight, Width, Height, Styles, Attributes properties from GridViewElementExportingEventArgs class. You can find detailed instructions on how to migrate your existing code related to styling in the [Backward Compatibility]({%slug radgridview-backward-compatibility%}#q1-2015) article.
 
 As you can see the event arguments' property __Element__ identifies the type of the currently exported element. The possible element types are defined in the __ExportElement__ enumeration:
 
@@ -136,7 +86,6 @@ As you can see the event arguments' property __Element__ identifies the type of 
 You can define a Style when __InitializingExcelMLStyles__ event is raised.
 For example:
         
-
 #### __C#__
 
 {{region gridview-export-events_7}}
@@ -148,7 +97,6 @@ For example:
 
 You can find a list of the properties that be set for __ExcelMLStyle__:
         
-
 __Alignment:__
 
 1. Horizontal - you can choose a specific alignment through ExcelMLHorizontalAlignment enumeration.
@@ -305,7 +253,6 @@ Use this event if you want to write additional data to the stream. A common scen
 	 End If
 	End Sub
 {{endregion}}
-
 
 The result is:
 

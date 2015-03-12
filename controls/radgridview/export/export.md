@@ -148,13 +148,11 @@ __ElementExporting__ is a direct replacement of the __Exporting__ event which is
 As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with 
 [ExportFormat.ExcelML]({%slug gridview-export-excelml%}) and [ExportFormat.Html]({%slug gridview-export-html%}).
         
-
 As of __Q3 2013__ RadGridView provides a new event __InitializingExcelMLStyles__ (when exporting with __ExportFormat.ExcelML__ only).
 
-As of __Q1 2015__ RadGridView provides two new events - __ElementExportingToDocument__ and __ElementExportedToDocument__ which fire when RadGridView is exported to Xlsx or Pdf.
-        
-
 >The __InitializingExcelMLStyles__ method will be only raised when exporting with __ExportFormat.ExcelML__
+
+As of __Q1 2015__ RadGridView provides two new events - __ElementExportingToDocument__ and __ElementExportedToDocument__ which fire when RadGridView is exported to Xlsx or Pdf.
 
 Read more about these events [here]({%slug gridview-export-events%}).
         

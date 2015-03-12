@@ -11,14 +11,15 @@ position: 1
 # Templates Structure
 
 
-
-Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, RadPropertyGrid allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with: 
+Like most UI controls, RadPropertyGrid allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with: 
 
 * RadPropertyGrid Template Structure;
 
 * PropertyGridField Template Structure;
 
->tipFor more information about templating and how to modify the default templates of the RadControls read the common topics on the matter.
+>tipFor more information about templating and how to modify the default templates read the common topic on [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
+
+Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) on two different approaches on how to extract the ControlTemplates.
 
 ## RadPropertyGrid Template
 
@@ -93,14 +94,15 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 ## Modifying RadPropertyGrid Template
 
-When extracting the control template with MS Blend (as demonstrated in this  [ common article ](DEFFEE22-110A-407B-94C3-61A49AC7F8B2)) some dependency properties of controls that are defined in DataTemplates, does not have their values extracted correctly. You have two options:
+
+When extracting the control template with MS Blend (as demonstrated in this  [ common article ]({%slug common-styling-appearance-edit-control-templates-blend%})) some dependency properties of controls that are defined in DataTemplates, does not have their values extracted correctly. You have two options:
         
 
 * Manually extract the template template from the Themes files we ship with every installation. You can find it together with all the other templates used for the PropertyGrid inside "Telerik.Windows.Controls.Data.xaml" file browsing to "InstallationFolder\Themes\OfficeBlack\Themes" folder.
             
 
 *  Extract the template with Blend and manually add the missing __ItemsSource Bindings__ for the ItemsControl defined for the four templates.
-                You can find instructions on how to fix the missing Bindings bellow:
+You can find instructions on how to fix the missing Bindings bellow:
               
 
 *  Under __FlatRenderingTemplate__:
@@ -142,3 +144,5 @@ When extracting the control template with MS Blend (as demonstrated in this  [ c
 	{{region radpropertygrid-styles-and-templates-templates-structure_3}}
 	<ItemsControl ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}" VirtualizingStackPanel.VirtualizationMode="Standard" IsTabStop="False">
 	{{endregion}}
+
+

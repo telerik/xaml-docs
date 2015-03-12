@@ -177,7 +177,7 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
 
 # See Also
 
- * [Table API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_table.html)
+ * [Table API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_table.html)
 
  * [Section]({%slug radwordsprocessing-model-section%})
 

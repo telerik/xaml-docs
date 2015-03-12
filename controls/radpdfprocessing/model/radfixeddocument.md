@@ -94,7 +94,7 @@ __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocum
 
 # See Also
 
-* [RadFixedDocument API Reference](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_fixed_model_radfixeddocument.html)
+* [RadFixedDocument API Reference](http://www.telerik.com/help/silverlight/t_telerik_windows_documents_fixed_model_radfixeddocument.html)
 
 * [Model]({%slug radpdfprocessing-model-general-information%})
 

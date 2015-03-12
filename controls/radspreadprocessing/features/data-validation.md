@@ -311,21 +311,21 @@ __Example 9__ shows how to restrict the user input to text with length between 5
 #### __[C#] Example 9: Apply Text Length Rule__
 
 {{region radspreadprocessing-features-data-validation_8}}
-	CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
-	
-	NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(this.worksheet, dataValidationRuleCellIndex);
-	context.InputMessageTitle = "Restricted input";
-	context.InputMessageContent = "The input is restricted to times in the range from 10:25 AM to 3:45 PM.";
-	context.ErrorStyle = ErrorStyle.Stop;
-	context.ErrorAlertTitle = "Wrong value";
-	context.ErrorAlertContent = "The entered value is not valid. Allowed values are all times between 10:25 AM to 3:45 PM.";
-	context.ComparisonOperator = ComparisonOperator.Between;
-	context.Argument1 = new DateTime(2015, 2, 2, 10, 25, 0).ToShortTimeString();
-	context.Argument2 = new DateTime(2015, 2, 2, 15, 45, 0).ToShortTimeString();
-	
-	TimeDataValidationRule rule = new TimeDataValidationRule(context);
-	
-	this.worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
+    CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
+
+    NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+    context.InputMessageTitle = "Restricted input";
+    context.InputMessageContent = "The input is restricted to text with length between 5 and 10 symbols";
+    context.ErrorStyle = ErrorStyle.Stop;
+    context.ErrorAlertTitle = "Wrong value";
+    context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only text with length between 5 and 10 symbols.";
+    context.ComparisonOperator = ComparisonOperator.Between;
+    context.Argument1 = "5";
+    context.Argument2 = "10";
+
+    TextLengthDataValidationRule rule = new TextLengthDataValidationRule(context);
+
+    worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 {{endregion}}
 
 ## Custom Rule
@@ -337,21 +337,19 @@ The code snippet in __Example 10__ shows how to restrict the user input to value
 #### __[C#] Example 10: Apply Custom Rule__
 
 {{region radspreadprocessing-features-data-validation_9}}
-	CellIndex dataValidationRuleCellIndex = new CellIndex(0, 0);
-	
-	NumberDataValidationRuleContext context = new NumberDataValidationRuleContext(this.worksheet, dataValidationRuleCellIndex);
-	context.InputMessageTitle = "Restricted input";
-	context.InputMessageContent = "The input is restricted to times in the range from 10:25 AM to 3:45 PM.";
-	context.ErrorStyle = ErrorStyle.Stop;
-	context.ErrorAlertTitle = "Wrong value";
-	context.ErrorAlertContent = "The entered value is not valid. Allowed values are all times between 10:25 AM to 3:45 PM.";
-	context.ComparisonOperator = ComparisonOperator.Between;
-	context.Argument1 = new DateTime(2015, 2, 2, 10, 25, 0).ToShortTimeString();
-	context.Argument2 = new DateTime(2015, 2, 2, 15, 45, 0).ToShortTimeString();
-	
-	TimeDataValidationRule rule = new TimeDataValidationRule(context);
-	
-	this.worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
+    CellIndex dataValidationRuleCellIndex = new CellIndex(1, 0);
+
+    SingleArgumentDataValidationRuleContext context = new SingleArgumentDataValidationRuleContext(worksheet, dataValidationRuleCellIndex);
+    context.InputMessageTitle = "Restricted input";
+    context.InputMessageContent = "The input is restricted to values that are greater or equal to the sum of the values in the cells A1 and B1.";
+    context.ErrorStyle = ErrorStyle.Stop;
+    context.ErrorAlertTitle = "Wrong value";
+    context.ErrorAlertContent = "The entered value is not valid. It is allowed to enter only values that are greater or equal to the sum of the values in the cells A1 and B1";
+    context.Argument1 = "=A2=Sum(A1, B1)";
+
+    CustomDataValidationRule rule = new CustomDataValidationRule(context);
+
+    worksheet.Cells[dataValidationRuleCellIndex].SetDataValidationRule(rule);
 {{endregion}}
 
 ## Evaluate Rules

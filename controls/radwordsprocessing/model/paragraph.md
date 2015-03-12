@@ -199,7 +199,7 @@ For more information about __ImageInline__ element, you can read [this article](
 
 # See Also
 
- * [Paragraph API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_paragraph.html)
+ * [Paragraph API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_paragraph.html)
 
  * [Section]({%slug radwordsprocessing-model-section%})
 

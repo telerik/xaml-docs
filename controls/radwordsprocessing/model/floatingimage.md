@@ -137,7 +137,7 @@ The __FloatingImage__ element exposes the following properties:
 
 # See Also
 
- * [FloatingImage API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_shapes_floatingimage.html)
+ * [FloatingImage API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_shapes_floatingimage.html)
 
  * [Document model]({%slug radwordsprocessing-model%})
 

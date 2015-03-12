@@ -102,7 +102,7 @@ If there are application events that invalidate the command state, the CommandMa
 
 {{region update-CanExecute_4}}
 	CommandManager.InvalidateRequerySuggested();
-{endregion}}
+{{endregion}}
 
 ## Input Bindings
 
@@ -136,4 +136,4 @@ Handling routed events when there are a large number of commands may become cumb
 
 >The default namespace of the application is named "local". 
 
->importantThe "telerik:Static" markup extension provides the ability to make references to static fields or properties in Silverlight that are not in the default XAML namespace for the current XAML document.
+>importantThe __telerik:Static__ markup extension provides the ability to make references to static fields or properties in Silverlight that are not in the default XAML namespace for the current XAML document.

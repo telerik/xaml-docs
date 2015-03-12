@@ -381,7 +381,7 @@ If you need further assistance you can post your question in the {% if site.site
 
 ## Help us Improve {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Documentation
 
-The WPF/Silverlight team believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better and we encourage you to help us with that task in the way that you choose:
+We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better and we encourage you to help us with that task in the way that you choose:
 
 __Submit a New Issue at GitHub__
 
@@ -393,6 +393,6 @@ Creating an issue is great, but what we really love are pull requests. This is t
 
 __Forums__
 
-You can visit the [UI for {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} forums](http://www.telerik.com/forums) and leave us a feedback.  Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
+You can visit the [UI for {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} forums]{% if site.site_name == 'Silverlight' %}(http://www.telerik.com/forums/silverlight){% endif %}{% if site.site_name == 'WPF' %}(http://www.telerik.com/forums/wpf){% endif %} and leave us a feedback.  Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
 
 Thank you for your contribution to the {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Documentation!

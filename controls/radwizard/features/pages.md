@@ -23,9 +23,9 @@ For each wizard page you are able to define a header, title, side header and cha
 * __Content__ – contains the page content (__WizardPage__ derives directly from __ContentControl__). 
 
 ### Setting __HeaderTemplate, SideHeaderTemplate__ and __FooterTemplate__ 
-All these properties can be used to get or set the data template respectfully for the __header, side header__ and __footer__. So, if you want to change those default elements for a particular wizard page, you may define them as follows:
+All these properties can be used to get or set the data template respectfully for the __header, side header__ and __footer__. So, if you want to change those default elements for a particular wizard page, you may define them as in __Example 1__.
 
-#### XAML
+#### __[XAML]Example 1: Setting the HeaderTemplate, SideHeaderTemplate__ and __FooterTemplate  properties in XAML__
 	<telerik:RadWizard x:Name="radWizard" >
 		<telerik:RadWizard.WizardPages>
 			<telerik:WizardPage Content="My Wizard Page Content" SideHeaderWidth="100" HeaderHeight="100">					
@@ -59,6 +59,6 @@ All these properties can be used to get or set the data template respectfully fo
 >In order to use the built-in commands you should define the following namespace:
 __xmlns:wizard="clr-namespace:Telerik.Windows.Controls.Wizard;assembly=Telerik.Windows.Controls.Navigation"__
 
-__Figure 1:__ The wizard page defined above will be displayed as follows:
+__Figure 1:__ The wizard page defined in __Example 1__ will be displayed as follows:
 ![Pages SettingTemplates](images/pages-settingtemplates.png)
 

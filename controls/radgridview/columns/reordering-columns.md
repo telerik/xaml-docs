@@ -38,7 +38,7 @@ You can find the possible values you can assign for it bellow:
 
 There are two ways to disable reordering. The first one is to disable it on __RadGridView__ level by setting the __CanUserReorderColumns__ property to __False__, which means that none of the columns will be re-orderable.
 
-#### __XAML__
+#### __[XAML] Example 1: Disable Reordering__
 
 {{region gridview-columns-reordering-columns_0}}
 	<telerik:RadGridView x:Name="radGridView"
@@ -51,7 +51,7 @@ The headers will be still draggable, but when you drop them nothing will happen.
 
 You can also disable the reordering for a particular column by setting its __IsReorderable__ property.
 
-#### __XAML__
+#### __[XAML] Example 2: Disable Reordering for a particular column__
 
 {{region gridview-columns-reordering-columns_1}}
 
@@ -64,7 +64,7 @@ You can also disable the reordering for a particular column by setting its __IsR
 
 The order of the columns may also be configured by setting the DisplayIndex property of each of them:
 
-#### __XAML__
+#### __[XAML] Example 3: Reorder using DisplayIndex__
 
 {{region gridview-columns-reordering-columns_2}}
 
@@ -76,6 +76,23 @@ The order of the columns may also be configured by setting the DisplayIndex prop
 {{endregion}}
 
 In this case the columns will be visualized in the following order - Name, Country and Number.
+
+## Scrolling Behavior while Reordering
+
+The default scrolling behavior of __RadGridView__ while dragging its columns can be modified by configuring the __ScrollingSettingsBehavior__.
+
+#### __[XAML] Example 4: Using the ScrollingSettingsBehavior__
+ 
+	<telerik:RadGridView x:Name="radGridView" 
+                     ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                     telerik:ScrollingSettingsBehavior.IsEnabled="True"
+                     telerik:ScrollingSettingsBehavior.ScrollAreaPadding="5 20 5 20"
+                     telerik:ScrollingSettingsBehavior.ScrollStep="1.5"
+                     telerik:ScrollingSettingsBehavior.ScrollStepTime="00:00:00.5"/>
+
+
+To learn more read the [Scrolling]({%slug gridview-scrolling%}) topic.
+
 
 # See Also
 

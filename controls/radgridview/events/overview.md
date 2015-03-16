@@ -96,11 +96,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __ChildTableDefinitionAdded__ - occurs when a new child table definition has been added. The type of the passed event arguments is __TableDefinitionCreatedEventArgs__.
 
 * Exporting Events ([Read more]({%slug gridview-export-events%}))
-        
-
-* __Exporting__ - occurs when the grid data is being exported. The type of the passed event arguments is __GridViewExportEventArgs__. The event will be obsoleted in Q2 2010.
           
-
 * __ElementExporting__ - occurs when the grid data is being exported. It is a direct replacement of the __Exporting__ event.
           
 

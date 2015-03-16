@@ -8,10 +8,6 @@ published: True
 position: 0
 ---
 
-# Changes
-
-
-
 ## Latest Release Notes
 
 You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}

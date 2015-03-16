@@ -37,6 +37,9 @@ In most __Diagramming__ examples you will find the __SettingsPane__ applied as a
 	    </primitives:ItemInformationAdorner.AdditionalContent>
 	</telerik:RadDiagram>
 	{{endregion}}
+    
+Where the primitives namespace is defined like this:
+xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
 
 ![Rad Diagram Settings Pane Overview](images/RadDiagram_SettingsPane_Overview.png)
 

@@ -10,9 +10,11 @@ position: 4
 
 # Keyboard Support
 
+Using the keyboard you can perform some of the most common tasks. 
+
 ## Keyboard Shortcuts
 
-Using the keyboard you can perform some of the most common tasks. This section describes the keyboard shortcuts used by RadAutoCompleteBox.
+This section describes the keyboard shortcuts used by RadAutoCompleteBox.
 
 * Up - Navigates up through the items in the DropDown portion of the control.
 

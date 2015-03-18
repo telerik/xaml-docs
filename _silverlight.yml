@@ -64,8 +64,7 @@ controls/radgridview/features/merged-cells.md,
 controls/radpivotgrid/features/queryabledataprovider,
 controls/radwordsprocessing,
 visual-studio-templates.md,
-consuming-data/wcf-service.md,
-consuming-data/ado-net-data-service.md]
+consuming-data/wcf-service.md]
 # The public documentation URL, used for sitemap.xml
 url: "http://docs.telerik.com/devtools/silverlight"
 site_name: Silverlight

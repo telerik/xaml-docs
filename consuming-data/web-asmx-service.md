@@ -12,17 +12,15 @@ site_name: Silverlight
 # Consuming Web (asmx) Service
 
 
-
-The purpose of this tutorial is to show you how to make a call to a Web Service in the context of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
+The purpose of this tutorial is to show you how to make a call to a Web Service in the context of a Silverlight application. The following common tasks will be examined:
 
 * Adding a reference.
 
 * Creating a new instance of the service.
 
-* Making {% if site.site_name == 'Silverlight' %}asynchronous{% endif %} call to the service.{% if site.site_name == 'Silverlight' %}
+* Making asynchronous call to the service.
 
 * Consuming the service result.
-        {% endif %}
 
 >The process of developing a Web Service is beyond the scope of this tutorial. For more information read [here](http://msdn.microsoft.com/en-us/library/t745kdsh.aspx).
 
@@ -71,7 +69,7 @@ Creating new instance of the service is pretty simple process.
 
 >Don't forget to give a meaningful name for your Web Service namespace. In the previous example the namespace is "WebService".
 
-## Making Asynchronous Call to the Service{% if site.site_name == 'Silverlight' %}
+## Making Asynchronous Call to the Service
 
 In Silverlight all service calls are performed asynchronously. In order to make an asynchronous call to your service you need to do the following steps:
 
@@ -97,34 +95,8 @@ Here is a sample code showing how this can be achieved:
 	serviceClient.LoadCategoriesAsync()
 	{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
-
-In order to make a call to your service, you just need to invoke the exposed by the service method. 
-
-#### __C#__
-
-{{region consuming-data-web-asmx-service_4}}
-	foreach( Categories c in serviceClient.LoadCategories() )
-	{
-	    this.Categories.Add( c );
-	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region consuming-data-web-asmx-service_5}}
-	For Each c As Categories In serviceClient.LoadCategories()
-	    Me.Categories.Add(c)
-	Next
-	{{endregion}}
-
-{% endif %}
 
 # See Also
-
- * [Consuming WCF Service]({%slug consuming-data-wcf-service%})
 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
 

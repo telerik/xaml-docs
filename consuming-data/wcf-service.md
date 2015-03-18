@@ -12,7 +12,7 @@ position: 1
 
 
 
-The purpose of this tutorial is to show you how to make a call to a WCF Service in the context of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
+The purpose of this tutorial is to show you how to make a call to a WCF Service in the context of a WPF application. The following common tasks will be examined:
 
 * Adding a reference.
 

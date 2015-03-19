@@ -10,9 +10,10 @@ position: 23
 
 # Accessing the filtering popup
 
-The FilteringControl is a Popup and it is displayed on screen over RadGridView control. You can find the instance of the specific Popup and try implementing any modifications.
+The __filtering control__ is a __Popup__ and it is displayed on screen over RadGridView control. You can find the instance of the specific Popup and try implementing any modifications on its behavior.
         
-#### __C#: Find all available Popups__
+For example:
+#### __C# Example 1: Find all available Popups__
 	private void grid_Loaded_1(object sender, RoutedEventArgs e)
 	{
 	    this.Dispatcher.BeginInvoke(new Action(() => this.FindPopups()));
@@ -27,7 +28,16 @@ The FilteringControl is a Popup and it is displayed on screen over RadGridView c
 	       // do any modification on the Popup itself
 	    }
 	}
-        
+    
+## Opening filtering control from code    
+
+The filtering control can be opened in code by finding the respective __FilteringDropDown__ element and setting its property __IsDropDownOpened__ to True. For example:
+
+#### __C# Example 2: Open the first FilteringDropDown__
+	private void Button1_Click(object sender, RoutedEventArgs e)
+	{
+	    clubsGrid.ChildrenOfType<FilteringDropDown>().First().IsDropDownOpen = true;
+	}
 
 # See Also
 

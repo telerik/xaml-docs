@@ -126,3 +126,5 @@ You can also manipulate the visual appearance of the group footers. Just set the
  * [Group Footers]({%slug gridview-group-footers%})
 
  * [Modifying the Group Panel]({%slug gridview-modifying-group-panel%})
+
+ * [Reevaluation of data operations]({%slug gridview-troubleshooting-reevaluation%})

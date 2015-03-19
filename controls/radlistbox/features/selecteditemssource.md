@@ -145,7 +145,7 @@ Next you should declare the ViewModel as DataContext in your XAML:
 
 #### __XAML__
 
-{{region radcombobox-features-filteringbehavior-0}}
+{{region radlistbox-features-selecteditemssource-0}}
 	<UserControl.DataContext>
         <local:ViewModel/>
 	</UserControl.DataContext>
@@ -155,7 +155,7 @@ Finally, all you need to do is to set both created collection of items to the __
 
 #### __XAML__
 
-{{region radcombobox-features-filteringbehavior-0}}
+{{region radlistbox-features-selecteditemssource-1}}
 	<telerik:RadListBox x:Name="radListBox" ItemsSource="{Binding Items}"
                         DisplayMemberPath="Name"
                         SelectionMode="Multiple"

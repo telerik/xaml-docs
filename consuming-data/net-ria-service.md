@@ -117,8 +117,6 @@ Once the load operation is completed accessing the result is an extremely simple
 
 # See Also
 
- * [Consuming WCF Service]({%slug consuming-data-wcf-service%})
-
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
 
  * [Consuming Web (asmx) Service]({%slug consuming-data-web-asmx-service%})

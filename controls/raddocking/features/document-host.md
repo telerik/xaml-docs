@@ -88,9 +88,9 @@ The next descriptions describe the built-in predefined CloseButtonPosition setti
 
 	![raddocking-features-document-host-4](images/raddocking-features-document-host-4.png)
 	
-## Showing the Arrows and DropDownMenuButton
+## Showing Arrows and DropDownMenuButton
 
-When the number of Panes inside the __DocumentHost__ increases and there is not enough space available inside the tabstrip they begun to shrink. In order to see the whole Headers of the Panes you can use the __ScrollViewer.HorizontalScrollBarVisibility__ attached property of the __PaneGroup__ inside the __DocumentHost__. An arrows will be visualized on both sides of the tabstrip:
+When the number of Panes inside the __DocumentHost__ increases and there is not enough space available inside the tabstrip they begun to shrink. In order to see the whole Headers of the Panes you can use the __ScrollViewer.HorizontalScrollBarVisibility__ attached property of the __PaneGroup__ inside the __DocumentHost__. Arrows will be visualized on both sides of the tabstrip:
 
 #### __XAML__
 
@@ -117,7 +117,7 @@ The __DropDownDisplayMode__ property could be set to any of the following values
 * __Visible__ – the drop down will always be visible.
 * __WhenNeeded__ – the drop down will be shown only when there is not enough space the Tabs to be arranged. 
 
-Figure 2 demonstrate the appearance of the __DocumentHost__ when the __DropDownMenuButton__ and __HorizontalScrollBar__ are visualized.
+Figure 2 demonstrate the appearance of the __DocumentHost__ when both properties are set.
 
 __Figure 2:__ __DocumentHost__ with visible __HorizontalScrollBar__ and __DropDownMenuButton__:
 

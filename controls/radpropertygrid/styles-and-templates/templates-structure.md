@@ -92,46 +92,121 @@ Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) giv
 
 
 
-## Modifying RadPropertyGrid Template
+## Modifying RadPropertyGrid Template with Blend
 
 
 When extracting the control template with MS Blend (as demonstrated in this  [ common article ]({%slug common-styling-appearance-edit-control-templates-blend%})) some dependency properties of controls that are defined in DataTemplates, does not have their values extracted correctly. You have two options:
         
 
-* Manually extract the template template from the Themes files we ship with every installation. You can find it together with all the other templates used for the PropertyGrid inside "Telerik.Windows.Controls.Data.xaml" file browsing to "InstallationFolder\Themes\OfficeBlack\Themes" folder.
+* Manually extract the template template from the Themes.Implicit files we ship with every installation. You can find it together with all the other templates used for the PropertyGrid inside "Telerik.Windows.Controls.Data.xaml" file browsing to "C:\Program Files (x86)\Telerik\UI for [product][version]\Themes.Implicit\OfficeBlack\Themes" folder. Please note there is a different folder for each Theme and you should browse to the one you use.
             
-
 *  Extract the template with Blend and manually add the missing __ItemsSource Bindings__ for the ItemsControl defined for the four templates.
 You can find instructions on how to fix the missing Bindings bellow:
               
-
 *  Under __FlatRenderingTemplate__:
                    
-
-#### __XAML__
+#### __XAML__: FlatRenderingTemplate
 
 	{{region radpropertygrid-styles-and-templates-templates-structure_0}}
-	<telerik:ItemsControl ItemsSource="{Binding}" VirtualizingStackPanel.VirtualizationMode="Standard" IsTabStop="False">
+
+        <telerik:ItemsControl VirtualizingStackPanel.VirtualizationMode="Standard" ItemsSource="{Binding}" IsTabStop="False">
+            <telerik:ItemsControl.Style>
+                <Style TargetType="telerik:ItemsControl">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ItemsControl">
+                                <ScrollViewer Margin="0,-1,0,0">
+                                    <ItemsPresenter/>
+                                </ScrollViewer>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="ItemsPanel">
+                        <Setter.Value>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel/>
+                            </ItemsPanelTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </telerik:ItemsControl.Style>
+            <telerik:ItemsControl.ItemTemplateSelector>
+                <propertyGrid:FlatRenderingItemTemplateSelector>
+                    <propertyGrid:FlatRenderingItemTemplateSelector.FieldTemplate>
+                        <DataTemplate>
+                            <propertyGrid:PropertyGridField Content="{Binding}" Visibility="{Binding Visibility}"/>
+                        </DataTemplate>
+                    </propertyGrid:FlatRenderingItemTemplateSelector.FieldTemplate>
+                    <propertyGrid:FlatRenderingItemTemplateSelector.GroupTemplate>
+                        <DataTemplate>
+                            <telerik:RadToggleButton
+                                    Content="{Binding DisplayName}"
+                                    x:Name="expandCollapseButton"
+                                    BorderBrush="{x:Null}"
+                                    Style="{StaticResource PropertyGridToggleButtonStyle}"
+                                    IsChecked="{Binding IsExpanded, Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </propertyGrid:FlatRenderingItemTemplateSelector.GroupTemplate>
+                </propertyGrid:FlatRenderingItemTemplateSelector>
+            </telerik:ItemsControl.ItemTemplateSelector>
+        </telerik:ItemsControl>	
+
 	{{endregion}}
 
 *   Under __FlatTemplate__:
                   
 
-#### __XAML__
-
+#### __XAML__: FlatTemplate
 	{{region radpropertygrid-styles-and-templates-templates-structure_1}}
-	<ItemsControl ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}" IsTabStop="False">
-	{{endregion}}
+	
+	<ItemsControl ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}" Style="{StaticResource ItemsControlStyle}" IsTabStop="False">
+	        <ItemsControl.ItemTemplate>
+	            <DataTemplate>
+	                <propertyGrid:PropertyGridField Content="{Binding}" Visibility="{Binding Visibility}"/>
+	            </DataTemplate>
+	        </ItemsControl.ItemTemplate>
+	    </ItemsControl>
 
+	{{endregion}}
 
 
 *  Under __GroupTemplate__:
                     
 
-#### __XAML__
+#### __XAML__: GroupTemplate
 
 	{{region radpropertygrid-styles-and-templates-templates-structure_2}}
-	<ItemsControl ItemsSource="{Binding ., Converter={StaticResource GroupingItemsSourceConverter}}">
+	<ItemsControl ItemsSource="{Binding ., Converter={StaticResource GroupingItemsSourceConverter}}" Style="{StaticResource ItemsControlStyle}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="0,1,0,0" BorderBrush="{StaticResource ControlOuterBorder}" Margin="0,-1,0,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <telerik:RadToggleButton Content="{Binding Key}" x:Name="expandCollapseButton" BorderBrush="{x:Null}" Style="{StaticResource PropertyGridToggleButtonStyle}" IsChecked="True"/>
+                            <ContentPresenter x:Name="PART_ContentPresenter"
+                                    Grid.Row="1"
+                                    Content="{Binding Items}"
+                                    Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=expandCollapseButton}">
+                                <ContentPresenter.ContentTemplate>
+                                    <DataTemplate>
+                                        <ItemsControl ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}" IsTabStop="False">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <propertyGrid:PropertyGridField Content="{Binding}" Visibility="{Binding Visibility}"/>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </DataTemplate>
+                                </ContentPresenter.ContentTemplate>
+                            </ContentPresenter>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
 	{{endregion}}
 
 
@@ -139,10 +214,20 @@ You can find instructions on how to fix the missing Bindings bellow:
 *  Under __VirtualizedFlatTemplate__:
                   
 
-#### __XAML__
+#### __XAML__: VirtualizedFlatTemplate
 
 	{{region radpropertygrid-styles-and-templates-templates-structure_3}}
-	<ItemsControl ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}" VirtualizingStackPanel.VirtualizationMode="Standard" IsTabStop="False">
+	<ItemsControl
+                VirtualizingStackPanel.VirtualizationMode="Standard"
+                ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}"
+                Style="{StaticResource VirtualizedItemsControlStyle}"
+                IsTabStop="False">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <propertyGrid:PropertyGridField Content="{Binding}" Visibility="{Binding Visibility}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
 	{{endregion}}
 
-
+Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) on two different approaches on how to extract the ControlTemplates.

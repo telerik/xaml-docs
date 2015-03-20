@@ -43,7 +43,7 @@ The __RadGridView__ API allows you to tweak your application for optimal perform
 * Avoid using of __RowStyle__ and/or __AlternateRowStyle__ - use implicit styles instead. 
             
 
-* As of __Q3 2012__ we have introduced a new property of the RadGridView __GroupRenderMode__. The default mode is Nested, and the new one is Flat. When you set the __Flat mode__, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data.
+* As of __Q3 2012__ we have introduced a new rendering mode of RadGridView - Flat. The default __GroupRenderMode__ is Nested, and the new one is Flat. When you set the __Flat mode__, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data. You can also refer to the [GroupingModes]({%slug gridview-grouping-groupingmodes%}) article.
               
 
 * As of __2013 Q2 SP__ we have introduced __Lightweight Templates__ for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%})

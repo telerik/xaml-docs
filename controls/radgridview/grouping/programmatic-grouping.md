@@ -159,6 +159,8 @@ Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which g
 # See Also
 
  * [Basic Grouping]({%slug gridview-grouping-basics%})
+ 
+ * [Grouping Modes]({%slug gridview-grouping-groupingmodes%})
 
  * [Grouping events]({%slug gridview-events-grouping%})
 

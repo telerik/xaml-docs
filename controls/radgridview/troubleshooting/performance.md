@@ -24,6 +24,8 @@ Here are some possible reasons:
 
 * As of __Q1 2012 SP1__ you have the option to disable the Telerik StyleManager and to style the controls using Implicit Styles. There are a number of benefits of using implicit styles over the Telerik StyleManager. For more information, please refer to this [help article]({%slug styling-apperance-implicit-styles-overview%}).
 
+* As of Q3 2012 we have introduced a new rendering mode of RadGridView - Flat. The default GroupRenderMode is Nested, and the new one is Flat. When you set the Flat mode, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
+
 * __DataLoadMode="Asynchronous"__ - using this mode is not recommended, it leads to potential problems. Please do not use it.
 
 * __Degraded performance with Windows8, Windows8Touch and Office2013 Themes__ - you can consider applying the lightweight templates in order to speed up the performance of RadGridView. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
@@ -73,3 +75,5 @@ You can also refer to this [help article]({%slug styling-apperance-implicit-styl
  * [Tips and Tricks]({%slug radgridview-performance-tips-tricks%})
 
  * [Lightweight Templates]({%slug gridview-overview-lightweight-template%})
+ 
+ * [Grouped Performance]({%slug gridview-performance-grouped%})

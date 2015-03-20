@@ -13,11 +13,9 @@ position: 0
 
 The __RadGridView__ provides you with a built-in grouping functionality, which allows the user to easily group the data by one or more columns. To do so the user has to just drag the desired column to the __GridViewGroupPanel__ located at the top of the __RadGridView__. If the __RadGridView__ is not grouped, the __GridViewGroupPanel__ shows a hint.
 
-
 ![](images/RadGridView_BasicGrouping_1.png)
 
 After dropping the selected header in the grouping area, the text message will be replaced with a rectangle that represents the selected header and the data in the __RadGridView__ will be properly grouped.
-
 
 ![](images/RadGridView_BasicGrouping_2.png)
 
@@ -25,13 +23,13 @@ To remove the grouping just click the close button of the rectangle or drag it o
 
 The __RadGridView__ also provides the user with a way to sort the groups of data. To do that the user just has to click on the rectangle that represents the grouping column. By default, when the data is grouped, the groups are sorted ascending. When the sort direction of the rectangle is none the groups are sorted depending on the data they contain.
 
-
 ![](images/RadGridView_BasicGrouping_4.png)
 
 >tipThe data can be grouped by more than one column. To do that just drag another column into the grouping area and the data will be grouped against these two criteria. To learn more about the multi-column grouping take a look at the [Multi-Column Grouping]({%slug gridview-multiple-column-grouping%}) topic.
         
-
 >tipGridViewColumn exposes a property __ShowColumnWhenGrouped__. It indicates whether the column should be visible or not when RadGridView is grouped by this same column. By default its value is True and the column will remain visible.
+
+>tip As of __Q3 2012__ we have introduced a new rendering mode of RadGridView - Flat. The default GroupRenderMode is Nested, and the new one is __Flat__. When you set the Flat mode, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
 
 ## GroupMemberPath
 
@@ -114,6 +112,8 @@ You can easily change the appearance of the group row by just setting the __Grou
 You can also manipulate the visual appearance of the group footers. Just set the __GroupFooterCellStyle__ property of the __GridViewColumn__ to an appropriate style. To learn more about the group footers take a look at the [Group Footers]({%slug gridview-group-footers%}) topic. To learn how to style them take a look at the [Styling the Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%}) topic.
 
 # See Also
+
+ * [Grouping Modes]({%slug gridview-grouping-groupingmodes%})
 
  * [Grouping events]({%slug gridview-events-grouping%})
 

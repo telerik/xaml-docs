@@ -187,8 +187,6 @@ UI for WPF is a complete commercial toolset for building next-generation line of
 
 Telerik UI for WPF features the following controls:
 
-* [DragDropManager]({%slug dragdropmanager-overview%})
-
 * [AutoCompleteBox]({%slug radautocompletebox-overview%})
 
 * [Barcode]({%slug radbarcode-overview%})
@@ -240,6 +238,8 @@ Telerik UI for WPF features the following controls:
 * [Diagram Framework]({%slug raddiagram-overview%})
 
 * [Docking]({%slug raddocking-overview2%})
+
+* [DragDropManager]({%slug dragdropmanager-overview%})
 
 * [EntityFrameworkDataSource]({%slug entityframework-overview%})
 
@@ -385,7 +385,7 @@ We believe that the documentation for a product is at its best when the content 
 
 __Submit a New Issue at GitHub__
 
-If you find an issue with our docks that need to be addressed, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/xaml-docs/issues?q=is%3Aopen). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closes anchor to the issue, that is even better.
+If you find an issue with our docs that need to be addressed, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/xaml-docs/issues?q=is%3Aopen). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closes anchor to the issue, that is even better.
 
 __Update the Documentation at GitHub__
 

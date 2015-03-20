@@ -27,8 +27,6 @@ Sharing the same codebase with Telerik WPF controls, the Silverlight controls of
 
 Telerik UI for Silverlight features the following controls:
 
-* [DragDropManager]({%slug dragdropmanager-overview%})
-
 * [AutoCompleteBox]({%slug radautocompletebox-overview%})
 
 * [Barcode]({%slug radbarcode-overview%})
@@ -80,6 +78,8 @@ Telerik UI for Silverlight features the following controls:
 * [Docking]({%slug raddocking-overview2%})
 
 * [DomainDataSource]({%slug dds-overview%})
+
+* [DragDropManager]({%slug dragdropmanager-overview%})
 
 * [Expander]({%slug radexpander-overview%})
 

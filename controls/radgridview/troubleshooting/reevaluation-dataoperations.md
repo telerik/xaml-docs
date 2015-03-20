@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-## DataOperations like filtering, sorting or grouping are not re-evaluated
+# Data Operations like filtering, sorting or grouping are not re-evaluated
 
 __PROBLEM__
 

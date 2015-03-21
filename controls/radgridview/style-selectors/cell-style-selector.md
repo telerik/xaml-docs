@@ -10,22 +10,20 @@ position: 1
 
 # CellStyleSelector
 
-This article will show you how to style conditionally RadGridView cells using the __CellStyleSelector__ property.
+This article will show you how to style conditionally RadGridView's cells applying __CellStyleSelector__ for it.
 		
 
 >tipTo learn the basics about __StyleSelectors__ please check [this article]({%slug gridview-style-selectors-overview%}).
 		  
-
-Assume we have a __GridView__ bound to a collection of clubs. Each club has a property __StadiumCapacity__. What we want to achieve is to set the background color of the StadiumCapacity cells to Red if the capacity is greater than 50 000 or yellow otherwise:
+Assume we have __RadGridView__ bound to a collection of clubs. Each club has a property __StadiumCapacity__. What we want to achieve is to set the background color of the StadiumCapacity cells to Red if the capacity is greater than 50 000 or Yellow otherwise:
 
 ![](images/gridview_cellstyleselector.png)
 
-
 To do so follow these steps:
 
-1. Create a new class which inherits the __StyleSelector__ class (which resides in the __Telerik.Windows.Controls__ assembly).
+1. Create a new class which inherits the __StyleSelector__ class.
 
-2. Override its __SelectStyle__ method. Based on your conditions - you return the proper Style that will be applied to the framework element (cell in our case).
+2. Override its __SelectStyle__ method. Based on your conditions - you return the proper Style that will be applied to the framework element (GridViewCell in our case).
 
 #### __C#__
 
@@ -163,3 +161,5 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView__ / __CellStyleSelector__.
           
+# See Also
+ * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

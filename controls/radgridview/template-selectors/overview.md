@@ -12,7 +12,7 @@ position: 0
 
 ## What is a Template Selector?
 
-The __Template Selector__ provides a way to apply data templates based on custom logic.
+The __DataTemplateSelector__ provides a way to apply data templates based on custom logic.
 
 Typically, you use a template selector when you have more than one data template defined for the same type of objects. For example, use it if your binding source is a list of student objects and you want to apply a particular template to the part-time students. You can do this by creating a class that inherits from __DataTemplateSelector__ and by overriding the __SelectTemplate()__ method. Once your class is defined you can assign an instance of the class to the template selector property of your element.
 
@@ -21,4 +21,5 @@ Typically, you use a template selector when you have more than one data template
 # See Also
 
  * [CellTemplateSelector]({%slug gridview-cell-template-selector%})
+ 
  * [Row Details TemplateSelector]({%slug radgridview-row-details-templateselector%})

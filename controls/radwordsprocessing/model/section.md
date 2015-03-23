@@ -62,7 +62,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 
 
-* __PageOrientation__: Specifies if the pages in the section should be in Portrait or in Landscape orientation.
+* __PageOrientation__: Specifies if the pages in the section should be in Portrait or in Landscape orientation. This property is used to determine the actual size of the paper to use on the printer and does not reflect the document's visualization. In order to show the document in different mode you can use the [Rotate method](#rotating-a-section).
             
 
 #### __C#__
@@ -139,6 +139,8 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 ## Operating with a Section
 
+### Adding Elements to a Section
+
 Section derives [BlockContainerBase](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_blockcontainerbase.html), inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug radwordsprocessing-model-paragraph%}) and [Table]({%slug radwordsprocessing-model-table%}) objects to that collection:
         
 
@@ -150,6 +152,14 @@ Section derives [BlockContainerBase](http://www.telerik.com/help/wpf/t_telerik_w
 {{endregion}}
 
 
+### Rotating a Section
+
+The __Section__ can be rotated in order to visualize its pages in Portrait or Landscape mode:
+
+#### __C#__
+{{region radwordsprocessing-model-section_7}}
+	section.Rotate(PageOrientation.Landscape);
+{{endregion}}
 
 # See Also
 

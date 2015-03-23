@@ -20,7 +20,7 @@ Assume we have a GridView bound to a collection of clubs. Each club has a proper
 
 To do so follow these steps:
 
-1. Create a new class which inherits the __DataTemplateSelector__ class (which resides in the __System.Windows.Controls__ assembly).
+1. Create a new class which inherits the __DataTemplateSelector__ class.
 
 2. Override its __SelectTemplate__ method. Based on your conditions - you return the proper DataTemplate that will be applied to the framework element (cell in our case).
 
@@ -130,3 +130,5 @@ In this case we have two different DataTemplates that could be applied - bigStad
 
 >Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. __You should not set properties of the GridViewCell inside the SelectStyle method__. Please check this [help article]({%slug radgridview-features-ui-virtualization%}) for a reference.
 		  
+# See Also
+ * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

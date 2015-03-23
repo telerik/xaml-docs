@@ -129,7 +129,7 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 				<Grid>
 					<StackPanel Orientation="Horizontal">
 						<TextBox Text="{Binding LeagueName, Mode=TwoWay}"/>
-						<telerik:RadMaskedTextBox MaskType="Numeric" Mask="#" Value="{Binding Count, Mode=OneWay}"/>
+						<telerik:RadMaskedNumericInput Mask="#" Value="{Binding Count, Mode=OneWay}"/>
 					</StackPanel>
 				</Grid>
 			</DataTemplate>
@@ -143,7 +143,7 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 			<DataTemplate x:Key="DivisionItemEditTemplate">
 				<Grid>
 					<StackPanel Orientation="Horizontal">
-						<telerik:RadMaskedTextBox MaskType="Numeric" Mask="#" Value="{Binding Count, Mode=OneWay}"/>
+						<telerik:RadMaskedNumericInput Mask="#" Value="{Binding Count, Mode=OneWay}"/>
 						<TextBox Text="{Binding DivisionName, Mode=TwoWay}"/>
 					</StackPanel>
 				</Grid>
@@ -159,14 +159,14 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 				<Grid>
 					<StackPanel Orientation="Horizontal">
 						<TextBox Text="{Binding TeamName, Mode=TwoWay}"/>
-						<TextBlock Text=" | "/>
-						<telerik:RadMaskedTextBox MaskType="Numeric" Mask="#" Value="{Binding Count, Mode=OneWay}"/>
+						<TextBlock Text=" | "/>						
+						<telerik:RadMaskedNumericInput Mask="#" Value="{Binding Count, Mode=OneWay}"/>
 					</StackPanel>
 				</Grid>
 			</DataTemplate>
 		{{endregion}}
 
-	>In order to use the Telerik __RadMaskedTextBox__ you need to add a reference to the __Telerik.Windows.Controls.Input__ assembly in your user control.
+	>In order to use the Telerik __RadMaskedNumericInput__ you need to add a reference to the __Telerik.Windows.Controls.Input__ assembly in your user control.
 		  
 
 	These are the three __DataTemplates__, which will be used as edit templates. Accordingly, when the object type is League, then the __LeagueItemEditTemplate__ will be applied; when the object type is __Division__, then the __DivisionItemEditTemplate__ will be applied; when the object type is __Team__, then the __TeamItemEditTemplate__ will be applied.

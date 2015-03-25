@@ -10,11 +10,11 @@ position: 0
 
 # Bring Into View and Auto Fit Support
 
-The RadDiagram component allows you to bring a specific item(s) or position in its view port through couple of methods – __BringIntoView()__ and __AutoFit()__.
+The RadDiagram framework allows you to bring a specific item(s) or position into its view port through couple of methods – __BringIntoView()__ and __AutoFit()__.
 
 ## BringIntoView
 
-The __BringIntoView__ method can be used to bring a section of the diagram’s surface in the view port. The method has few overloads which bring different components into view. 
+The __BringIntoView__ method can be used to bring a section of the diagram’s surface into the view port. The method has few overloads which bring different components into view. 
 
 * The method can bring a specific Rect into the view. In other words the diagram can fit the view port into coordinates and the size of the Rect element.
 * The method can bring a specific IDiagramItem (RadDiagramShape, RadDiagramConnection, etc.) and then center it into the view port.
@@ -22,7 +22,7 @@ The __BringIntoView__ method can be used to bring a section of the diagram’s s
 
 ## AutoFit
 
-The AutoFit method adjusts the view port so that all items which are plotted on the diagram are visible. The method expose an additional overload which takes a Thickness objects as an argument that represents the margin used as a white space border around the diagram items.
+The AutoFit method tries to adjust the view port so that all items which are plotted on the diagram are visible. The method expose an additional overload which takes a Thickness objects as an argument that represents the margin used as a white space border around the diagram items.
 
 >tip RadDiagram also provides AutoFitAsync() method which executes the same action as the AutoFit() but asynchronically.
 
@@ -77,6 +77,7 @@ Here is the visual result rendered by the RadDiagram’s definition above:
 		![](images/radidiagram-features-bringintoview-autofit_06.png)
 
 # See Also
- * [Populating with Data]({%slug raddiagram-data-overview%})
- * [Shapes]({%slug raddiagrams-features-shapes%})
- * [Populating with Data]({%slug raddiagrams-features-connections%})
+ * [Getting Started]({%slug raddiagram-getting-started%})
+ * [Pan and Zoom]({%slug raddiagrams-features-pan-zoom%})
+ * [Global Settings]({%slug raddiagram-features-global-settings%})
+ 

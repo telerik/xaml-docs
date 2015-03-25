@@ -25,7 +25,9 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 * Download of a newly discovered version. 
 
-* Visual Studio toolbox update. 
+* Visual Studio toolbox upgrade. 
+
+* Project themes upgrade (when using [implicit styles]({%slug styling-apperance-implicit-styles-overview%})).
 
 * Current project backup. 
 
@@ -48,6 +50,10 @@ Notes:
 * You can use the Browse button to navigate to the folder of a manually downloaded distribution.  
 
 * You can use the Download button to access the Latest Version Acquirer in order to download the latest available version on our website. 
+
+* When using the implicit styling approach and the XAML files are copied to the project, they will be updated only if they are in the default Themes\\[*SpecificTheme*] folder.
+
+	![VSExtensions Themes Folder](images/VSExtensions_SL_ThemeFilesUnderNamedFolder.png)
 
 * The distribution, downloaded by the Upgrade Wizard contains only the "hotfix" files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or the Live Examples.
 

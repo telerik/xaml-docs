@@ -154,6 +154,8 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 
 By default, not every property of the RadDiagramItem is serialized. Below is the list of the properties that are automatically serialized:				
 
+>importantThese properties are serialized in scenarios where data bindings are __not__ involved. If you are using Binding in styles targeting any of the diagram items, you need to manually serialise and deserialize all the properties that are bound. This is demonstrated in the [Manual Serialization/Deserialization]({%slug raddiagrams-features-serialization%}#manual-serializationdeserialization) section of this article.
+
 * __RadDiagramShape__
 	* ZIndex
     * Position
@@ -230,6 +232,10 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
     * ParentGroup
 
 For every other property that you need to be part of the Serialization/Deserialization process, you have to use the __RadDiagram.ShapeDeserialized__ and __RadDiagram.ShapeSerialized__ or __RadDiagram.ConnectionDeserialized__ and __RadDiagram.ConnectionSerialized__ events. Below is shown how you can serialized the Opacity of the Shapes:			
+
+## Manual Serialization/Deserialization
+
+>If you are using MVVM approach and need to serialize databound properties you can take a look at our [Serialize a Databound Diagram]({%slug raddiagrams-howto-serialize-databound-diagram%}) article.
 
 #### __C#__
 	void diagram_ShapeDeserialized(object sender, ShapeSerializationRoutedEventArgs e)

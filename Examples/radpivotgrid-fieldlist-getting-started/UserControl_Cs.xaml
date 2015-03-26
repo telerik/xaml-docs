@@ -1,7 +1,0 @@
-#region radpivotgrid-fieldlist-getting-started_1
-<pivot:RadPivotFieldList Name="radPivotFieldList1" Grid.Column="1" />
-#endregion
-
-#region radpivotgrid-fieldlist-getting-started_2
-<pivot:RadPivotFieldList Name="radPivotFieldList1" Grid.Column="1"  DataProvider="{StaticResource LocalDataProvider}"/>
-#endregion

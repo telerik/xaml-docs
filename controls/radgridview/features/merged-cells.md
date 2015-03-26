@@ -156,7 +156,7 @@ __Figure 4:__ RadGridView with merged cells and RowDetails expanded
 >Once the row details are expanded, the merged cell will be separated into two different subsets. The particular cell that is part of the expanded row will be considered as a single one instead.
           
 __Known limitations:__
-* Validation is supported for merged cells when RadGridView is configured with __ValidatesOnDataErrors="InEditMode"__.
+* Validation is currently not fully supported. Some scenarios are covered when RadGridView is configured with __ValidatesOnDataErrors="InEditMode"__.
 
 * Selection is currently not supported for the merged cells. When selecting a row, all the cells except for the merged one will show as selected.
 

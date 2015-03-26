@@ -14,6 +14,39 @@ position: 1
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 
+## What's Different in 2015 Q1 - 2015.1.0225
+
+
+### Changed
+
+The __Telerik.Windows.Zip.ZipPackage__ class is obsolete.
+
+
+### What to do now
+
+Use the [__Telerik.Windows.Zip.ZipArchive__]({%slug radziplibrary-gettingstarted%}) class instead.            
+
+
+### Changed
+
+The __Telerik.Windows.Zip.ZipPackageEntry__ class is obsolete.
+
+
+### What to do now
+
+Use the [__Telerik.Windows.Zip.ZipArchiveEntry__]({%slug radziplibrary-gettingstarted%}) class instead.
+
+
+### Changed
+
+The __Telerik.Windows.Zip.ZipOutputSrteam__ and __Telerik.Windows.Zip.ZipInputSrteam__ classes are obsolete.
+
+
+### What to do now
+
+Use the [__Telerik.Windows.Zip.CompressedStream__]({%slug radziplibrary-compress-stream%}) class instead.
+
+
 ## What's Different in 2014 Q1 - 2014.1.0226
 
 ### Changed

@@ -31,9 +31,9 @@ When you need to serialize / deserialize a data-bound __RadDiagram__, you have t
 	}
 {{endregion}}
 
-[IObservableGraphSource](fc9e271b-5722-47de-bbee-fa87afb7f2e0#Two-Way-Mvvm) enables the two-way binding capabilities of the RadDiagram. __ISerializableGraphSource__ (from __Telerik.Windows.Controls.Diagrams.Extensions.ViewModels__ namespace) extends it with Serialization and Deserialization methods for "Links" and "Nodes".		
+[IObservableGraphSource](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_diagrams_core_iserializablegraphsource.htm) enables the two-way binding capabilities of the RadDiagram. __ISerializableGraphSource__ (from __Telerik.Windows.Controls.Diagrams.Extensions.ViewModels__ namespace) extends it with Serialization and Deserialization methods for "Links" and "Nodes".		
 
-Similarly, the [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%}) class extends the __ObservableGraphSourceBase__.		
+Similarly, the [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%}) class extends the __ObservableGraphSourceBase__.
 
 #### __C#__
 
@@ -397,7 +397,7 @@ Now let's see a possible use case with this set of Diagram configuration and Vie
 
 >tip You can download a runnable project demonstrating a similar approach from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.			  
 
->important Please note that copy/pasting requires additional effort. Pasting a copied node, for example, means that you have to override the [AddNode](fc9e271b-5722-47de-bbee-fa87afb7f2e0#Two-Way-Mvvm) method of the [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%}) and provide a new unique __Id__ for the new __NodeViewModel__.			  
+>important Please note that copy/pasting requires additional effort. Pasting a copied node, for example, means that you have to override the [AddNode](http://docs.telerik.com/devtools/wpf/api/html/M_Telerik_Windows_Diagrams_Core_IObservableGraphSource_AddNode.htm) method of the [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%}) and provide a new unique __Id__ for the new __NodeViewModel__.			  
 
 # See Also
  * [Serialization]({%slug raddiagrams-features-serialization%})

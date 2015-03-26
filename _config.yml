@@ -2,7 +2,7 @@
 url: "http://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
-exclude: [README.md,Gemfile,Gemfile.lock,
+exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 common-routed-events-support.md,
 common-command-support.md,
 installation-and-deployment/installation-system-requirements.md,

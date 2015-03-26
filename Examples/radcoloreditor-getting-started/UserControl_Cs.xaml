@@ -1,7 +1,0 @@
-<!--  #region radcoloreditor-getting-started-0  -->
-<telerik:RadColorEditor SelectedColor="Red" />
-<!--  #endregion  -->
-
-<!--  #region radcoloreditor-getting-started-1  -->
-<telerik:RadColorEditor x:Name="colorEditor" SelectedColorChanged="colorEditor_SelectedColorChanged " />
-<!--  #endregion  -->

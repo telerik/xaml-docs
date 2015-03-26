@@ -1,5 +1,5 @@
 destination: _site_SL
-exclude: [README.md,Gemfile,Gemfile.lock,
+exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 coded-ui-support.md,
 common-partial-trust.md,
 licensing/license-file.md,

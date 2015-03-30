@@ -25,6 +25,8 @@ __RadSpreadProcessing__ allows you to prepare and modify tabular data. Even thou
 
 * [Avoid Using the Additional Calculations Options Provided by the Shapes and Images](#avoid-using-the-additional-calculations-options-provided-by-the-shapes-and-images)
 
+* [Avoid Cell Value Type Parsing](#avoid-cell-value-type-parsing) 
+
 ## Reduce Layout Updates Frequency
 
 Calculating the layout is an operation computing the width of each column and the height of each row, the size of the text contained in the cells and many other elements which are used for positioning the UI. The layout update is triggered each time a property is changed and thus is a fairly heavy operation.
@@ -148,6 +150,15 @@ You should avoid using the methods for setting the same properties with the __ad
 
 * SetRotationAngle()
 
+## Avoid Cell Value Type Parsing
+
+When setting values to cells, the cell value type is determined by an internal parsing mechanism. If you are sure what cell value type should be produced by the passed value, set it specifically. This will bypass the parsing and increase the performance of the application. 
+
+The easiest way to achieve this is by using the __SetValue()__ overload with the respective CLR type (DateTime, Double, etc.) or in the case of formula value type and text value type - the __SetValueAsFormula()__ and __SetValueAsText()__ methods respectively.  
+
+More information regarding cell value types is available in the [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%}) articles.
+
+
 # See Also
 
  * [History]({%slug radspreadprocessing-features-history%})
@@ -155,3 +166,5 @@ You should avoid using the methods for setting the same properties with the __ad
  * [Get, Set and Clear Cell Properties]({%slug radspreadprocessing-working-with-cells-get-set-clear-properties%})
 
  * [Shapes and Images]({%slug radspreadprocessing-features-shapes-and-images%})
+ 
+ *  [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%})

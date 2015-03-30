@@ -156,7 +156,7 @@ When setting values to cells, the cell value type is determined by an internal p
 
 The easiest way to achieve this is by using the __SetValue()__ overload with the respective CLR type (DateTime, Double, etc.) or in the case of formula value type and text value type - the __SetValueAsFormula()__ and __SetValueAsText()__ methods respectively.  
 
-More information regarding cell value types is available in the [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%}) articles.
+More information regarding cell value types is available in the [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%}) article.
 
 
 # See Also

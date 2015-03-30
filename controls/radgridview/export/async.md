@@ -10,7 +10,6 @@ position: 1
 
 # Grid Async Export
 
-
 As of __Q3 2013__ RadGridView has a new method - __ExportAsync__ which allows asynchronous export of data.
       
 
@@ -21,6 +20,7 @@ The method expects two parameters:
 
 2. __GridViewExportOptions__ or __GridViewCsvExportOptions__ object - you can use it to set exporting options. You can check this [help article]({%slug gridview-export%}) for more information on how to configure the export options.
       
+>As of version __2015 Q1 SP__ we have introduced an __overload of the ExportAsync__ method that exposes "finished callback": __Action exportFinishedCallback__.
 
 ## How to use the new method
 

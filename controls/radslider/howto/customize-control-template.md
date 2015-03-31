@@ -12,7 +12,7 @@ position: 2
 
 ## Get Default Style
 
-This article describes how users can customize the look of the RadSlider control. You can take advantage of the fact that we ship all our themes to our customers. You can follow the steps described in our [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article and extract the default Style of the RadSlider component. The final look of the customized control will look similar to the following picture.
+This article describes how users can customize the look of the RadSlider control. You can take advantage of the fact that we ship all our themes to our customers. You can follow the steps described in our [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article and extract the default Style of the RadSlider component. The final look of the customized control will be similar to the following picture.
 
 ![Final Result](images/StyledSlider.png)
 

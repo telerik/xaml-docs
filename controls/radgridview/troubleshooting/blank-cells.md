@@ -24,7 +24,7 @@ First you need to check
 
 * if the __types are of the same type__
 
-If you do not encounter any of the above mentioned problems, then probably you use ElementName binding for that column, e.g.
+If you do not encounter any of the above mentioned problems, then you probably use ElementName binding for that column, e.g.
 
 #### __XAML__
 

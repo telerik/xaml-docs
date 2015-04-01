@@ -10,7 +10,7 @@ position: 4
 
 # Drag and Drop within RadGridView
 
-The purpose of this tutorial is to show you how to implement __drag and drop within__ a __RadGridView__, giving the user feedback where the dragged item will be dropped.      
+The purpose of this tutorial is to show you how to implement __drag and drop within RadGridView__, giving the user feedback where the dragged item will be dropped.      
 
 The final result should look like the one on the snapshot below:
 
@@ -163,21 +163,7 @@ The final result should look like the one on the snapshot below:
 {{endregion}}
 
 >If you are referencing NoXaml binaries, then your style should specify __BasedOn={StaticResource GridViewRowStyle}__.
-
-* Don't forget to populate your __RadGridView__ with sample data.            
-
-#### __C#__
-
-{{region dragdropmanager-howto-draganddrop-within-radgridview_3}}
-	this.radGridView.ItemsSource = MessageViewModel.Generate();
-{{endregion}}
-
-#### __VB.NET__
-
-{{region dragdropmanager-howto-draganddrop-within-radgridview_4}}
-	Me.radGridView.ItemsSource = MessageViewModel.Generate()
-{{endregion}}
-
+          
 * Create a new class named __DropIndicationDetails__.           
 
 #### __C#__
@@ -308,7 +294,7 @@ The final result should look like the one on the snapshot below:
 	public class RowReorderBehavior
 	{
 		private const string DropPositionFeedbackElementName = "DragBetweenItemsFeedback";
-		private ContentPresenter dropPositionFeedbackPresenter;
+		private readonly ContentPresenter dropPositionFeedbackPresenter;
 		private Grid dropPositionFeedbackPresenterHost;
 	
 		private RadGridView _associatedObject;
@@ -328,7 +314,7 @@ The final result should look like the one on the snapshot below:
 			}
 		}
 	
-		private static Dictionary<RadGridView, RowReorderBehavior> instances;
+		private static readonly Dictionary<RadGridView, RowReorderBehavior> instances;
 	
 		static RowReorderBehavior()
 		{
@@ -660,6 +646,9 @@ The final result should look like the one on the snapshot below:
 			Grid.SetColumn(rectangle, 1);
 			grid.Children.Add(ellipse);
 			grid.Children.Add(rectangle);
+
+			Canvas.SetZIndex(grid, 10000);
+
 			return grid;
 		}
 	}
@@ -969,18 +958,32 @@ The final result should look like the one on the snapshot below:
 			Grid.SetColumn(rectangle, 1)
 			grid__1.Children.Add(ellipse)
 			grid__1.Children.Add(rectangle)
+			
+			Canvas.SetZIndex(grid, 10000);
+
 			Return grid__1
 		End Function
 	End Class
 {{endregion}}
 
-Finally, you should attach the attached behavior:
+Finally, you should populate your __RadGridView__ with sample data and attach the attached behavior:
 
 #### __C#__
 
 {{region dragdropmanager-howto-draganddrop-within-radgridview_19}}
-	void radGridView_DataLoaded(object sender, EventArgs e)
+	public MainWindow()
 	{
+    	InitializeComponent();
+
+		this.radGridView.ItemsSource = MessageViewModel.Generate();
 		RowReorderBehavior.SetIsEnabled(this.radGridView, true);
 	}
 {{endregion}}
+
+#### __VB.NET__
+	Public Sub New()
+		InitializeComponent()
+
+		Me.radGridView.ItemsSource = MessageViewModel.Generate()
+		RowReorderBehavior.SetIsEnabled(Me.radGridView, True)
+	End Sub

@@ -10,7 +10,7 @@ Welcome to the GitHub repo for [Telerik UI for WPF](http://www.telerik.com/wpf) 
 
 We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.
 
-It also means that you can play a role in making our docs better for everyone, and if helping us make the Kendo UI docs better sounds interesting to you, read on.
+It also means that you can play a role in making our docs better for everyone, and if helping us make the Telerik UI for WPF/Silverlight docs better sounds interesting to you, read on.
 
 ## Contributing
 

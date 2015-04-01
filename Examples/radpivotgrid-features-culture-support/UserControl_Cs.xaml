@@ -1,5 +1,0 @@
-#region radpivotgrid-features-culture-support_1
-<pivot:LocalDataSourceProvider x:Key="LocalDataProvider" Culture="en-US">
-	...
-</pivot:LocalDataSourceProvider>
-#endregion

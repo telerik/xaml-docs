@@ -134,7 +134,7 @@ All annotations are persisted
 Docx
               </td><td>
 
-All annotations are persisted with the exception of ReadOnlyRangeStart/End and CodeFormattingRangeStart/End.
+All annotations are persisted with the exception of ReadOnlyRangeStart/End and CodeAnnotationRangeStart/End.
               </td></tr><tr><td>
 
 RTF

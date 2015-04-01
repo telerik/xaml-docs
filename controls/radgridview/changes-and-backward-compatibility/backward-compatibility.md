@@ -18,6 +18,7 @@ You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[
 
 Introduced __Telerik.Windows.Controls.GridView.Export.dll__ - it contains logic for exporting RadGridView to [xlsx]({%slug gridview-export-xlsx%}) and [pdf]({%slug gridview-export-pdf%}) formats eliminating the dependency of Telerik.Windows.Controls.GridView.dll to all SpreadProcessing logic. The two methods ExportToXlsx and ExportToPdf are located here and if used, a reference to the new binary should be included.
 
+
 ## Q1 2015
 
 __Changed__

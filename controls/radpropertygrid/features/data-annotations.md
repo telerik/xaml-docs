@@ -23,7 +23,7 @@ RadPropertyGrid supports Data Annotations attributes like:
 
 * Browsable
 
-Using Data Annotations you can categories different properties into separate groups, set some of them as read-only and define description for each of them.
+Using Data Annotations you can categorize different properties into separate groups, set some of them as read-only and define description for each of them.
       
 
 ## Creating PropertyGrid Application

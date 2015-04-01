@@ -13,7 +13,7 @@ position: 5
 As of __Q1 2015__ RadGridView exposes a new method – __ExportToPdf__ which allows exporting to Pdf format without the need to integrate RadGridView with RadSpreadProcessing.
 
 
->You can read more about the export events [here]({%slug gridview-export-events%}).
+>tip You can read more about the export events [here]({%slug gridview-export-events%}).
 
 __Assembly References__
 ExportFormat.Pdf method uses additional libraries so you need to add references to the following assemblies:
@@ -23,6 +23,9 @@ ExportFormat.Pdf method uses additional libraries so you need to add references 
 * Telerik.Windows.Documents.SpreadSheet.FormatProviders.Pdf.dll
 * Telerik.Windows.Documents.Fixed.dll
 * Telerik.Windows.Zip.dll
+* Telerik.Windows.Controls.GridView.Export.dll
+
+>  __Telerik.Windows.Controls.GridView.Export.dll__ is a new binary introduced in __Q1 SP of 2015__. It delimits the exporting to __Pdf__ functionality from __Telerik.Windows.Controls.GridView.dll__, so in order to use __ExportToPdf__ method, the new dll should also be added.
 
 The method is overloaded:
 
@@ -57,7 +60,7 @@ The following example shows how to use the method on a button click:
 	        using (Stream stream = dialog.OpenFile())
 	        {
 	            gridViewExport.ExportToPdf(stream,
-	                new GridViewDocumentExportOptions()
+	                new GridViewPdfExportOptions()
 	                {
 	                    ShowColumnFooters = true,
 	                    ShowColumnHeaders = true,
@@ -85,7 +88,7 @@ You can set the __ExportDefaultStyles value to “true”__ and see the result (
 #### __C#__
 
 	gridViewExport.ExportToPdf(stream,
-    new GridViewDocumentExportOptions()
+    new GridViewPdfExportOptions()
 	{
 	    ShowColumnHeaders = true,
 	    ShowColumnFooters = true,

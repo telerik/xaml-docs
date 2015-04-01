@@ -10,11 +10,9 @@ position: 4
 
 # KML Data Import
 
-
-
 The __RadMap__ provides support for stunning map overlays through its KML-import feature. Once you have the desired set of features (place marks, images, polygons, textual descriptions, etc.) encoded in KML, you can easily import the data and visualize it through the __RadMap__ control. In this way you can easily visualize complex shapes like country's borders on the map and fill the separate shapes with different colors in order to achieve a sort of grouping.
 
->tipTo learn more about the __KML__ you can read [here](http://code.google.com/apis/kml/documentation/).
+>tip To learn more about the __KML__ you can read [here](http://code.google.com/apis/kml/documentation/).
 
 This topic will explain the following:
 
@@ -29,7 +27,6 @@ To read your data you have to use the __MapShapeReader__ class. To learn more ab
 To pass the desired KML file you have to use the __Source__ property of the __MapShapeReader__ and pass the __Uri__ to the desired .kml file to it. This will automatically generate shapes according to the data inside the file.
 
 #### __XAML__
-
 {{region radmap-features-kml-data-import_0}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -38,27 +35,19 @@ To pass the desired KML file you have to use the __Source__ property of the __Ma
 	        </telerik:InformationLayer.Reader>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap-features-kml-data-import_1}}
 	this.informationLayer.Reader = new MapShapeReader();
 	this.informationLayer.Reader.Source = new Uri( "/Silverlight.Help.RadMapSamples;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap-features-kml-data-import_2}}
 	Me.informationLayer.Reader = New MapShapeReader()
 	Me.informationLayer.Reader.Source = New Uri("/Silverlight.Help.RadMapSamples;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute)
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Manual Shape Reading
 
@@ -72,12 +61,9 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer" />
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap-features-kml-data-import_4}}
 	private void LoadKMLData()
 	{
@@ -88,12 +74,9 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	        this.informationLayer.Items.Add( element );
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap-features-kml-data-import_5}}
 	Private Sub LoadKMLData()
 	 Dim streamResource As StreamResourceInfo = Application.GetResourceStream(New Uri("/Silverlight.Help.RadMapSamples;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute))
@@ -102,17 +85,13 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	  Me.informationLayer.Items.Add(element)
 	 Next element
 	End Sub
-	{{endregion}}
+{{endregion}}   
     
-    
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Features_KMLDataImport_01.png)
 
 # See Also
-
  * [Dynamic Layer]({%slug radmap-features-dynamic-layer%})
-
  * [Navigation]({%slug radmap-features-navigation%})
-
  * [Map Shapes]({%slug radmap-features-map-shapes%})

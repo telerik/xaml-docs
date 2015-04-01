@@ -28,9 +28,7 @@ This topic will explain how you can customize the contents of the RadDocument.
 __RadDocument__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
         
 
-* __LayoutMode__ - specifies whether the page should be in __Paged__, __Flow__ or __FlowNoWrap__ layout mode. To learn more about layout modes read   [
-              here.
-            ]({%slug radrichtextbox-features-layout-modes%})
+* __LayoutMode__ - specifies whether the page should be in __Paged__, __Flow__ or __FlowNoWrap__ layout mode. To learn more about layout modes read   [here]({%slug radrichtextbox-features-layout-modes%}).
 
 * __DefaultPageLayoutSettings__ - this property is of type __PageLayoutSettings__. The __PageLayoutSettings__ class exposes the following properties:
             
@@ -38,8 +36,7 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 * __Height__ - represents the height of the page.
               
 
-* __Width__ - represents the width of the page.
-              Here is an example:
+* __Width__ - represents the width of the page. Here is an example:
 
 #### __XAML__
 
@@ -47,45 +44,38 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 	<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged">
 	    <telerik:RadDocument DefaultPageLayoutSettings="600,800" />
 	</telerik:RadRichTextBox>
-	{{endregion}}
+{{endregion}}
 
 
 
 >The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
                   
 
-* __SectionDefaultPageMargin__ - defines the default margin for each of the sections in the RadDocument. To assign different margins for each of the sections use the respective property of the __Section__class.
+* __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the RadDocument. To assign different margins for each of the sections use the respective property of the __Section__ class.
+
+* __ParagraphDefaultSpacingAfter__: Defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after for each of the paragraphs use the respective property of the __Paragraph__ class.
           
 
-* __ParagraphDefaultSpacingAfter__ - defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after for each of the paragraphs use the respective property of the __Paragraph__ class.
-          
+* __ParagraphDefaultSpacingBefore__: Defines the default spacing before for each of the paragraphs in the __RadDocument__. To assign different spacing before for each of the paragraphs use the respective property of the __Paragraph__ class.
 
-* __ParagraphDefaultSpacingBefore__ - defines the default spacing before for each of the paragraphs in the __RadDocument__. To assign different spacing before for each of the paragraphs use the respective property of the __Paragraph__ class.
-          
+* __LineSpacing__: Specifies the value for the space between the lines.
 
-* __LineSpacing__ - specifies the value for the space between the lines.
-          
+* __LineSpacingType__: Specifies the type of spacing:
 
-* __LineSpacingType - specifies the type of spacing:__
+    * __AtLeast__: The space between the lines should equal or greater than the value of the __LineSpacing__ property.
 
-* __AtLeast -__ the space between the lines should equal or greater than the value of the __LineSpacing__ property.
-              
+    * __Auto__: The space between the lines is determined automatically.
 
-* __Auto -__ the space between the lines is determined automatically.
-              
+    * __Exact__: The space between the lines should equal to the value of the __LineSpacing__ property.
 
-* __Exact -__ the space between the lines should equal to the value of the __LineSpacing__ property__.__
-
-* __ShowFormattingSymbols__ - indicates whether the formatting symbols should be displayed or not.
+* __ShowFormattingSymbols__: Indicates whether the formatting symbols should be displayed or not.
           
 
 ## Specifics
 
-The first time a __RadDocument__ is shown inside a __RadRichTextBox__ in the Visual Tree, it is measured by the framework and arranges its children.
-      This is the moment when the layout cycle is completed, each of the document elements calculates its size and arranges its children.
+The first time a __RadDocument__ is shown inside a __RadRichTextBox__ in the Visual Tree, it is measured by the framework and arranges its children. This is the moment when the layout cycle is completed, each of the document elements calculates its size and arranges its children.
 
-As the two states of the document - measured and not measured are too diffrent, distinct methods for manipulating the content of the document should be used before the document is measured and 
-      after the first time that it is shown in the editor.
+As the two states of the document - measured and not measured are too different, distinct methods for manipulating the content of the document should be used before the document is measured and after the first time that it is shown in the editor.
 
 ## Adding Sections to RadDocument
 
@@ -93,32 +83,32 @@ As explained in the previous section, the state of the document is essential for
 
 For example, you can build a RadDocument from scratch and add Sections to it in the following way:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_0}}
 	Section section = new Section();
 	this.radRichTextBox.Document.Sections.Add(section);
-	{{endregion}}
+{{endregion}}
 
 
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting a section break:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_1}}
 	this.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage);
-	{{endregion}}
+{{endregion}}
 
 
 
 You can also specify the position at which the section break should be inserted and its style:
 
-#### __CS__
+#### __C#__
 
 {{region radrichtextbox-features-document-elements-raddocument_2}}
 	this.editor.Document.InsertSectionBreak(this.editor.Document.CaretPosition, this.editor.CurrentEditingStyle, SectionBreakType.NextPage);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -130,8 +120,7 @@ Both methods accept a parameter of type SectionBreakType. The possible values ar
 
 * SectionBreakType.EvenPage - analogically, the next section will start on the next even page.
 
->The distribution of the document content in sections is only visible when the document is in Paged layout mode.
-         Furthermore, the sections and section breaks can be persisted in XAML, docx and RTF. If you export the document to HTML or plain text, the section breaks will be lost.
+>The distribution of the document content in sections is only visible when the document is in Paged layout mode. Furthermore, the sections and section breaks can be persisted in XAML, Docx and Rtf. If you export the document to HTML or plain text, the section breaks will be lost.
 
 # See Also
 

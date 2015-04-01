@@ -10,19 +10,11 @@ position: 2
 
 # ItemsPanel
 
+By default the RadLegend uses a StackPanel with Vertical orientation to lay out its items. You can easily change the panel by setting the ItemsPanel property. 
 
-
-
-
-## 
-
-By default the RadLegend uses a StackPanel with Vertical orientation to lay out its items.
-          You can easily change the panel by setting the ItemsPanel property.
-          The example here demonstrates the use of the ItemsPanel property and the RadWrapPanel:
-        
+The example here demonstrates the use of the ItemsPanel property and the RadWrapPanel:        
 
 #### __XAML__
-
 {{region radlegend-itemspanel_0}}
 	<Border Width="360" Height="100" BorderThickness="1" BorderBrush="Black">
 	    <telerik:RadLegend>
@@ -52,12 +44,10 @@ By default the RadLegend uses a StackPanel with Vertical orientation to lay out 
 	        </telerik:RadLegend.Items>
 	    </telerik:RadLegend>
 	</Border>
-	{{endregion}}
+{{endregion}}
 
+Border height is 100  
+![radlegend-itemspanel-0-H 100](images/radlegend-itemspanel-0-H100.png)
 
-
-Border height is 100![radlegend-itemspanel-0-H 100](images/radlegend-itemspanel-0-H100.png)
-
-Border height is 360![radlegend-itemspanel-0-H 360](images/radlegend-itemspanel-0-H360.png)
-
-# See Also
+Border height is 360  
+![radlegend-itemspanel-0-H 360](images/radlegend-itemspanel-0-H360.png)

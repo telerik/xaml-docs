@@ -10,10 +10,6 @@ position: 2
 
 # Creating the Data-bound Controls
 
-
-
-## 
-
 Now that we are ready with the service reference and the __DataServiceContext__, let's configure __RadDataServiceDataSource__, __RadGridView__ and __RadDataPager__.
 
 1.	Add references to the following Telerik assemblies:          
@@ -30,8 +26,9 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 
 * __Telerik.Windows.Controls.Data__ (RadDataPager)
 
-1.	Now add the __RadDataServiceDataSource__, __RadGridView__ and __RadDataPager__ controls to the __MainWindow__. You can add them by dragging them from the __Toolbox__ and dropping it over the XAML or do it manually by writing the XAML code that is shown below: 
+2.	Now add the __RadDataServiceDataSource__, __RadGridView__ and __RadDataPager__ controls to the __MainWindow__. You can add them by dragging them from the __Toolbox__ and dropping it over the XAML or do it manually by writing the XAML code that is shown below: 
 
+{% if site.site_name == 'WPF' %}
 #### __XAML__
 {{region raddataservicedatasource-getting-started-creating-the-data-bound-controls_0}}
 
@@ -56,8 +53,9 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 	    </Grid>
 	</Window>
 {{endregion}}
+{% endif %}
 
-
+{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 {{region raddataservicedatasource-getting-started-creating-the-data-bound-controls_1}}
@@ -86,20 +84,20 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 	    </Grid>
 	</UserControl>
 {{endregion}}
-
+{% endif %}
 
 
 There are several important things to notice here:
 
-* The import of the Telerik schema: __xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation"__
+* The import of the Telerik schema: xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation"
 
-* The import of the local namespace: __xmlns:local="clr-namespace:NorthwindExplorer"__
+* The import of the local namespace: xmlns:local="clr-namespace:NorthwindExplorer"
 
-* The __AutoLoad__ property of the __RadDataServiceDataSource__ instructs it to load data automatically the very first time and then each time something that affects the query changes.
+* The __AutoLoad__ property of __RadDataServiceDataSource__ instructs it to load data automatically the very first time and then each time something that affects the query changes.
 
 * The __QueryName__ specifies the name of the property on the __DataServiceContext__ class that contains the entities that we will load. If you open the hidden __Reference__ file which is located below the __Northwind Service Reference__, then locate the __NorthwindEntities__ class inside it, you can see all queries that it offers, such as __Orders__, __Customers__ and so on. All of these queries are of type __DataServiceQuery&lt;T&gt;.__
 
-* __DataServiceContext__– this is the __MyNorthwindContext__ class that we created earlier. It derives from the __NorthwindEntities__context which was automatically generated for us. Additionally, it specifies the __Uri__ where the context will fetch data from. Since our class __MyNorthwindContext__ has a parameter less constructor we can easily define it in XAML.
+* __DataServiceContext__– this is the __MyNorthwindContext__ class that we created earlier. It derives from the __NorthwindEntities__ context which was automatically generated for us. Additionally, it specifies the __Uri__ where the context will fetch data from. Since our class __MyNorthwindContext__ has a parameter less constructor we can easily define it in XAML.
 
 * __DataView__ - the data that comes from the server is stored in the __DataView__ property, so we bind __RadGridView__ and __RadDataPager__ to it.
 
@@ -109,7 +107,7 @@ There are several important things to notice here:
 
 3.   Click __Ctrl + F5__ to run the application. After a short pause __RadGridView__ will be populated with data from the public __OData__ service. Use __RadDataPager__ to navigate across pages. Use __RadGridView’s__ filtering and sorting UI to perform these actions on the server.
 
-#See Also
+# See Also #
 
 [Creating the Server Application]({%slug raddataservicedatasource-getting-started-creating-the-server-application%})
 

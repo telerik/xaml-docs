@@ -12,7 +12,7 @@ position: 1
 
 
 
-The purpose of this tutorial is to show you how to make a call to a WCF Service in the context of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
+The purpose of this tutorial is to show you how to make a call to a WCF Service in the context of a WPF application. The following common tasks will be examined:
 
 * Adding a reference.
 
@@ -126,6 +126,10 @@ In order to make a call to your service, you just need to invoke the exposed by 
 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
 
+ {% if site.site_name == 'Silverlight' %} 
  * [Consuming Web (asmx) Service]({%slug consuming-data-web-asmx-service%})
+{% endif %}
 
+ {% if site.site_name == 'Silverlight' %} 
  * [Consuming .NET RIA Service]({%slug consuming-data-net-ria-service%})
+ {% endif %}

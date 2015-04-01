@@ -10,8 +10,6 @@ position: 5
 
 # Shape Appearance
 
-
-
 When using __MapShape__ objects there are several ways to control their appearance:
 
 * [Using the trivial properties](#using-the-trivial-properties)
@@ -20,20 +18,17 @@ When using __MapShape__ objects there are several ways to control their appearan
 
 * [Using the MapShapeFill object on the layer level](#using-the-mapshapefill-object-on-the-layer-level)
 
->tipAnother way to define the appearance of the shapes inside a layer is to use the [Colorizer]({%slug radmap-features-colorizer%}) property of the InformationLayer.
+>tip Another way to define the appearance of the shapes inside a layer is to use the [Colorizer]({%slug radmap-features-colorizer%}) property of the InformationLayer.
 
->tipTo learn more about the usage of shapes read the [Map Shapes]({%slug radmap-features-map-shapes%}) topic. The [KML Data Import]({%slug radmap-features-kml-data-import%}) and the [Shapefiles Support]({%slug radmap-features-shapefiles-support%}) topics might also be helpful to you.
+>tip To learn more about the usage of shapes read the [Map Shapes]({%slug radmap-features-map-shapes%}) topic. The [KML Data Import]({%slug radmap-features-kml-data-import%}) and the [Shapefiles Support]({%slug radmap-features-shapefiles-support%}) topics might also be helpful to you.
 
 ## Using the trivial properties
 
-In this approach you use the trivial properties provided by the framework such as __Fill__, __Stroke__, __StrokeThickness__.
-        
+In this approach you use the trivial properties provided by the framework such as __Fill__, __Stroke__, __StrokeThickness__.        
 
-Here is an example.
-        
+Here is an example:       
 
 #### __XAML__
-
 {{region radmap-features-shape-appearance_0}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -47,11 +42,9 @@ Here is an example.
 	        </telerik:MapEllipse>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Features_ShapeAppearance_01.png)
 
@@ -64,7 +57,6 @@ The two properties are of  type __MapShapeFill__. The __MapShapeFill__ object al
 >These properties will take precedence over the trivial ones.
 
 #### __XAML__
-
 {{region radmap-features-shape-appearance_1}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -85,11 +77,9 @@ The two properties are of  type __MapShapeFill__. The __MapShapeFill__ object al
 	        </telerik:MapEllipse>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Features_ShapeAppearance_02.png)
 
@@ -99,12 +89,12 @@ You are also able to define the appearance of the shapes on the Information Laye
 
 >These properties will __not__ take precedence over the properties set on the control level.
 
+<!-- -->
 >These values will get applied also on shapes that are created from [KML]({%slug radmap-features-kml-data-import%}) and [Shapefile]({%slug radmap-features-shapefiles-support%}) data and doesn't have their appearance explicitly set.
 
-The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object allows you not only to specify the fill color, but to modify the stroke as well. Here is an example.
+The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object allows you not only to specify the fill color, but to modify the stroke as well. Here is an example:
 
 #### __XAML__
-
 {{region radmap-features-shape-appearance_2}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -128,18 +118,13 @@ The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object all
 	        </telerik:MapEllipse>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Features_ShapeAppearance_03.png)
 
 # See Also
-
  * [Colorizer]({%slug radmap-features-colorizer%})
-
  * [Shape Reader]({%slug radmap-features-information-layer-shape-reder%})
-
  * [Extended Data]({%slug radmap-features-extended-data%})

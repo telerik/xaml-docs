@@ -14,13 +14,11 @@ position: 2
 
 ## 
 
-Find out how to [populate]({%slug radtabcontrol-populating-with-tabs%}) your tab control and how to [add tab items using Blend](5CF866DE-453C-48CF-A4EB-2A4F717AD728#AddNewTabItem).
+Find out how to [populate]({%slug radtabcontrol-populating-with-tabs%}) your tab control.
         
 
 # See Also
 
  * [How to Change the Tab Items Orientation]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%})
-
- * [How to Change the Tab Template]({%slug radtabcontrol-how-to-change-the-tab-template%})
 
  * [To Which Assemblies do I Have to Add Reference in my Project]({%slug radtabcontrol-needed-assemblies%})

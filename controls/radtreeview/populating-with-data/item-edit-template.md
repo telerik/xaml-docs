@@ -116,7 +116,7 @@ __ItemEditTemplate Property__
 
 In this tutorial an __ItemEditTemplate__ will be created with Expression Blend.
 
-* Open your application and [select]({%slug radtreeview-how-to-select-item-in-expression-blend%}) the treeview control.
+* Open your application and select the treeview control.
 	![](images/RadTreeView_TemplatingItemEditTemplate_010.PNG)
 
 * Right-click on it or right-click in the scene explorer and choose EditAdditionalTemplates->Edit ItemEditTemplate->Create Empty. 
@@ -127,16 +127,16 @@ In this tutorial an __ItemEditTemplate__ will be created with Expression Blend.
 
 	>Defining the template in the Application section makes it reusable from everywhere in the application.
 
-* Drag and drop the controls you need for the template and configure their properties. In the example are used a __TextBox__ and a __RadMaskedTextBox__
+* Drag and drop the controls you need for the template and configure their properties. In the example are used a __TextBox__ and a __RadMaskedNumericInput__
 	![](images/RadTreeView_TemplatingItemEditTemplate_040.PNG)
 
-* Configure the binding for the __Text__ property of the __TextBox__, and for the __Value__ property of the __RadMaskedTextBox__. 
+* Configure the binding for the __Text__ property of the __TextBox__, and for the __Value__ property of the __RadMaskedNumericInput__. 
 	![](images/RadTreeView_TemplatingItemEditTemplate_050.PNG)
 
 * Bind the __TextBox Text__ property to the __Name__ property of the business object and set the binding to be __TwoWay__. 
 	![](images/RadTreeView_TemplatingItemEditTemplate_060.PNG)
 
-* Do the same for the __Value__ property of the __RadMaskedTextBox__.
+* Do the same for the __Value__ property of the __RadMaskedNumericInput__.
 
 Here is the final XAML:
 
@@ -149,7 +149,7 @@ Here is the final XAML:
 	  <StackPanel Orientation="Horizontal">
 	
 	   <TextBox Text="{Binding Name, Mode=TwoWay}"/>
-	   <telerikInput:RadMaskedTextBox MaskType="Numeric" Mask="#" Value="{Binding Count, Mode=OneWay}"/>
+	   <telerik:RadMaskedNumericInput Mask="#" Value="{Binding Count, Mode=OneWay}"/>
 	
 	  </StackPanel>
 	

@@ -120,66 +120,6 @@ This tutorial will guide you through the common task of creating a custom column
 
 	Me.radGridView.ItemsSource = Club.GetClubs()
 {{endregion}}
-	
-
-	
-{{region gridview-how-to-create-date-time-picker-column_3}}
-	Partial Public Class DateTimePicker
-		Inherits UserControl
-
-		Public Shared ReadOnly SelectedDateProperty As DependencyProperty = DependencyProperty.Register("SelectedDate", GetType(Date?), GetType(DateTimePicker), New PropertyMetadata(Nothing))
-
-		Public Sub New()
-			InitializeComponent()
-		End Sub
-
-		Public Property SelectedDate() As Date?
-			Get
-				Return CType(Me.GetValue(SelectedDateProperty), Date?)
-			End Get
-			Set(ByVal value As Date?)
-				Me.SetValue(SelectedDateProperty, value)
-			End Set
-		End Property
-
-		Private Sub HandlePickersSelectionChanged()
-			If Me.Calendar.SelectedDate IsNot Nothing AndAlso Me.TimePicker.SelectedTime IsNot Nothing Then
-				Me.SelectedDate = Me.Calendar.SelectedDate + Me.TimePicker.SelectedTime
-			End If
-		End Sub
-
-		Private Sub OnTimePickerSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-			Me.HandlePickersSelectionChanged()
-		End Sub
-
-		Private Sub OnCalendarSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-			Me.HandlePickersSelectionChanged()
-		End Sub
-	End Class
-{{endregion}}
-	
-{{region gridview-how-to-create-date-time-picker-column_4}}
-	Public Class DateTimePickerColumn
-		Inherits GridViewBoundColumnBase
-
-		Public Overrides Function CreateCellEditElement(ByVal cell As GridViewCell, ByVal dataItem As Object) As FrameworkElement
-			Me.BindingTarget = DateTimePicker.SelectedDateProperty
-			Dim picker = New DateTimePicker()
-			picker.SetBinding(Me.BindingTarget, Me.CreateValueBinding())
-			Return picker
-		End Function
-
-		Private Function CreateValueBinding() As Binding
-			Dim valueBinding = New Binding()
-			valueBinding.Mode = BindingMode.TwoWay
-			valueBinding.NotifyOnValidationError = True
-			valueBinding.ValidatesOnExceptions = True
-			valueBinding.UpdateSourceTrigger = UpdateSourceTrigger.Explicit
-			valueBinding.Path = New PropertyPath(Me.DataMemberBinding.Path.Path)
-			Return valueBinding
-		End Function
-	End Class
-{{endregion}}
 
 * The next step is to create an __UserControl__ with __RadDatePicker__ and __RadTimePicker__. Create a new __UserControl__ named __DateTimePicker__ (__Example 4__).
 			
@@ -304,7 +244,8 @@ This tutorial will guide you through the common task of creating a custom column
 		End Class
 {{endregion}}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
 
 #### __[C#] Example 5: Code-behind definition of the custom DateTimePicker UserControl.__
 
@@ -451,6 +392,7 @@ Take a look at the code-behind for the control. An additional dependency propert
 		End Class
 {{endregion}}
 
+>In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellValidated__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
 
 * Finally, go back to the __RadGridView__ XAML declaration and update it(__Example 7__).
 			

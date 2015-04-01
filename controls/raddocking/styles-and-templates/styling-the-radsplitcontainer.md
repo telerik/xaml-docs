@@ -40,17 +40,11 @@ Go to the 'Resources' pane and see all of the resources generated for your style
 
 ![](images/RadDocking_StylingSplitContainer_04.png){% endif %}
 
-* {% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __GridResizer_Background_Preview__ - is the __RadGridResizer's__ background brush. {% endif %}
 
-__GridResizer_Background_Preview__ - is the __RadGridResizer's__ background brush. {% endif %}
+* {% if site.site_name == 'Silverlight' %} __GridResizerPreviewStyle__ - defines the preview style for the __RadGridResizer__.{% endif %}
 
-* {% if site.site_name == 'Silverlight' %}
-
-__GridResizerPreviewStyle__ - defines the preview style for the __RadGridResizer__.{% endif %}
-
-* {% if site.site_name == 'Silverlight' %}
-
-__GridResizer_FocusFrame__ - is the __Stroke__ used for the rectangle visible while the __RadGridResizer__control is focussed.{% endif %}{% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __GridResizer_FocusFrame__ - is the __Stroke__ used for the rectangle visible while the __RadGridResizer__ control is focussed.{% endif %}{% if site.site_name == 'Silverlight' %}
 
 Here is an example of the above resources modified:{% endif %}{% if site.site_name == 'Silverlight' %}
 

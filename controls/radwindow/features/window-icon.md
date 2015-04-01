@@ -37,7 +37,9 @@ If you have a window-specific icon, use the __Icon__ property.
 	radWindow.Icon = image
 {{endregion}}
 
-This will be the final result:![Rad Window Features Window Icon 01](images/RadWindow_Features_Window_Icon_01.png)
+This will be the final result:
+
+![Rad Window Features Window Icon 01](images/RadWindow_Features_Window_Icon_01.png)
 
 If you want to share a common icon layout structure for the content of multiple windows, define an appropriate __DataTemplate__ and set it to the __IconTemplate__ property of the __RadWindow__.
 

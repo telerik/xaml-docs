@@ -1,6 +1,8 @@
 destination: _site_SL
-exclude: [README.md,Gemfile,Gemfile.lock,
+exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 coded-ui-support.md,
+common-partial-trust.md,
+licensing/license-file.md,
 installation-and-deployment/installation-system-requirements-wpf.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI-wpf.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP-wpf.md,
@@ -11,6 +13,7 @@ installation-and-deployment/installing-telerik-ui-on-your-computer/installation-
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox-wpf.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration-wpf.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS-wpf.md,
@@ -29,10 +32,12 @@ controls/radcarousel/how-to/change-scroll-buttons.md,
 controls/radcarousel,
 controls/radchart/how-to/howto-integration-radcontextmenu-wpf.md,
 controls/radchart/how-to/use-custom-3d-models.md,
+controls/radchartview/populating-with-data/binding-to-data-table.md,
 controls/radcombobox/howto/set-character-casing.md,
 controls/radcloudupload,
 controls/raddiagram/howto/raddiagrams-save.md,
 controls/radgridview/troubleshooting/gridview-argumentexception-datarowview.md,
+controls/radgridview/troubleshooting/gridview-loading-data-from-wcf-services,
 controls/radmenu/features/inputgesturetext.md,
 controls/radnumericupdown/features/navigation.md,
 controls/radnumericupdown/features/behavior.md,
@@ -56,10 +61,18 @@ controls/radtreeview/features/command-support.md,
 controls/radtreeview/how-to/wpf-windowsexplorer-like-treeview.md,
 controls/radtreeview/how-to/howto-bind-treeview-wpf.md,
 controls/radgridview/features/merged-cells.md,
-controls/radpivotgrid/features/queryabledataprovider]
+controls/radpivotgrid/features/queryabledataprovider,
+controls/radwordsprocessing,
+visual-studio-templates.md,
+consuming-data/wcf-service.md]
 # The public documentation URL, used for sitemap.xml
 url: "http://docs.telerik.com/devtools/silverlight"
 site_name: Silverlight
 
 ## The application virtual path
 baseurl: "/devtools/silverlight"
+
+# The google services configuration
+google_analytics: UA-111455-1
+google_tag_manager: GTM-6X92
+google_custom_search: '001595215763381649090:aio0tnk2npy'

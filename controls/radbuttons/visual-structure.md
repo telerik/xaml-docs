@@ -10,8 +10,6 @@ position: 2
 
 # Visual Structure
 
-
-
 This section defines the terms and concepts used in the scope of __RadButtons__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadButton__ controls.
 
 ## RadButton
@@ -26,14 +24,11 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 ![Rad Path Button](images/RadPathButton.png)
 
-* __Content__ - represents the content of the button.
-            
+* __Content__ - represents the content of the button.            
 
-* __Path__ - represents the Path of the control.
-            
+* __Path__ - represents the Path of the control.            
 
-* __Button Part__ - represents the active part of the control.
-            
+* __Button Part__ - represents the active part of the control.            
 
 ## RadDropDownButton
 
@@ -82,11 +77,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 * __Button Part__ - represents the active part of the control.
 
 # See Also
-
  * [Getting Started]({%slug radbuttons-getting-started%})
-
  * [Appearance]({%slug radbuttons-features-appearance%})
-
  * [Styles and Templates]({%slug radbuttons-styles-and-templates-overview%})
-
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})

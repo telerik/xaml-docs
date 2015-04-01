@@ -13,12 +13,12 @@ site_name: Silverlight
 
 
 
-Themes can be modified either by changing the properties of the __RadTabControl__ or by modifying its __ControlTemplate__.
+Themes can be modified either by changing the properties of the __RadTabControl__ or by modifying its __ControlTemplate__ .
 			
 
 ## Modifying the Theme via Style
 
-Define a __Style__ that has the __RadTabControl__ for target type__.__
+Define a __Style__ that has the __RadTabControl__ for target type.
 
 #### __XAML__
 
@@ -77,7 +77,7 @@ Choose a name for the template and where to define it.
 Modify the controls of the template or add additional if needed.
 ![](images/RadTabControl_Figure_00320.png)
 
-If you take a look at the XAML in Visual Studio you will see a lot of code. There are several __Brushes__ defined and several __ControlTemplates__, followed by a __Style__. These four templates are used by the __Top__-, __Right__-, __Bottom-__ and __LeftTemplate__ properties ([more about them here]({%slug radtabcontrol-left-top-right-bottom-templates%})). As a default template is used the __TopTemplate__ value:
+If you take a look at the XAML in Visual Studio you will see a lot of code. There are several __Brushes__ defined and several __ControlTemplates__, followed by a __Style__. These four templates are used by the __Top__-, __Right__-, __Bottom-__ and __LeftTemplate__ properties. As a default template is used the __TopTemplate__ value:
 				
 
 #### __XAML__
@@ -113,13 +113,17 @@ If you take a look at the XAML in Visual Studio you will see a lot of code. Ther
 
 ## Modify the Background Behind the Headers 
 
-Expand the Grid control in the “Object and Timeline” pane and select the rectangle.![](images/RadTabControl_Figure_00330.png)
+Expand the Grid control in the “Object and Timeline” pane and select the rectangle.
+![](images/RadTabControl_Figure_00330.png)
 
-Take a look at the “Properties” pane and you’ll see that the square right to the Fill property is green. ![](images/RadTabControl_Figure_00340.png)
+Take a look at the “Properties” pane and you’ll see that the square right to the Fill property is green. 
+![](images/RadTabControl_Figure_00340.png)
 
-In the Local Brush Resources section see which brush is used and modify it by clicking on the rectangle left of its’ name.![](images/RadTabControl_Figure_00350.png)
+In the Local Brush Resources section see which brush is used and modify it by clicking on the rectangle left of its’ name.
+![](images/RadTabControl_Figure_00350.png)
 
-The result should look like the following snapshot.![](images/RadTabControl_Figure_00360.png)
+The result should look like the following snapshot.
+![](images/RadTabControl_Figure_00360.png)
 
 The same way you can modify the __DisabledVisual__ rectangle. To modify the tab’s content and headers visual appearance you have to modify the template of the __RadTabItem__. [More about that here.]({%slug radtabcontrol-templating-tabs-templates%})
 
@@ -127,8 +131,6 @@ The same way you can modify the __DisabledVisual__ rectangle. To modify the tab�
 						
 
 # See Also
-
- * [Left/Top/Right/Bottom Templates]({%slug radtabcontrol-left-top-right-bottom-templates%})
 
  * [Tab Item Templates]({%slug radtabcontrol-templating-tabs-templates%})
 

@@ -12,7 +12,6 @@ site_name: WPF
 # Merged Cells
 
 
-
 As of __Q3 2014 we have introduced support for merged cells in RadGridView__ control. As a result the serial cells with equal values can be merged vertically or horizontally.
     
 >Merging the cells is only available with __GridViewDataColumn__.
@@ -157,16 +156,12 @@ __Figure 4:__ RadGridView with merged cells and RowDetails expanded
 >Once the row details are expanded, the merged cell will be separated into two different subsets. The particular cell that is part of the expanded row will be considered as a single one instead.
           
 __Known limitations:__
+* Validation is currently not fully supported. Some scenarios are covered when RadGridView is configured with __ValidatesOnDataErrors="InEditMode"__.
 
 * Selection is currently not supported for the merged cells. When selecting a row, all the cells except for the merged one will show as selected.
-            
 
-* Validation is currently not supported for merged cells
-            
-
-* NewRowPosition=”Bottom” is not supported
-            
-
+* Frozen columns are not supported while having merged cells enabled. "Cell merging is not supported when frozen columns are enabled.” is to be thrown.
+                        
 ## Styling
 
 You can change the default settings by applying a style targeting the __GridViewMergedCell__ visual element.

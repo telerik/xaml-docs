@@ -17,7 +17,7 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 
 ## Adding And Removing Tabs Programmatically
 
-* __Add Tabs__In order to add new tab item to a tab control, first you have to create instance of the class __Telerik.Windows.Controls.RadTabItem__, set its properties like __Header__, __Content__, __ToolTip__ etc, and then add it to the tab control items collection.
+* __Add Tabs__ In order to add new tab item to a tab control, first you have to create instance of the class __Telerik.Windows.Controls.RadTabItem__, set its properties like __Header__, __Content__, __ToolTip__ etc, and then add it to the tab control items collection.
 					
 
 #### __C#__
@@ -47,7 +47,7 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 
 
 
-* __Remove Tabs__In order to remove a tab item you have to remove it from the tab control items collection.
+* __Remove Tabs__ In order to remove a tab item you have to remove it from the tab control items collection.
 
 #### __C#__
 

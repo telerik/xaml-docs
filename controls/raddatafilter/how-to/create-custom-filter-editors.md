@@ -25,7 +25,7 @@ In the override for the __SelectTemplate()__ method you should iterate the colle
 
 >At the end of the topic you can find the code for the __Employee__ business object used in this example and some sample data of this type.
 
-In the XAML you have to create an instance of the selector, define its rules collection and set it to the __RadDataFilter__. Also you have to attach an event handler for the __RadDataFilter's____EditorCreated__ event. In it you can add your final touches to the editor. In this example this will be represented by populating the __RadComboBox__ with items. If you take a look at the defined rule, you can see that the __Title__ property has been associated with the __ComboBoxEditor__ template. This means that whenever the __Title__ is selected as a filtering member a __RadComboBox__ editor will appear.
+In the XAML you have to create an instance of the selector, define its rules collection and set it to the __RadDataFilter__. Also you have to attach an event handler for the __RadDataFilter's EditorCreated__ event. In it you can add your final touches to the editor. In this example this will be represented by populating the __RadComboBox__ with items. If you take a look at the defined rule, you can see that the __Title__ property has been associated with the __ComboBoxEditor__ template. This means that whenever the __Title__ is selected as a filtering member a __RadComboBox__ editor will appear.
 
 >In order to make the filtering possible, you have to bind the value property of the control that you are using to the __Value__ property of the __DataTemplate's DataContext__ by using a __TwoWay__ binding mode. In this case this is the __SelectedValue__ property.
 

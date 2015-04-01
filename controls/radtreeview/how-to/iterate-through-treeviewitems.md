@@ -211,4 +211,4 @@ The item container may be null if it isn't still generated from the runtime. Tha
  * [Bind to a Selected Item]({%slug radtreeview-how-to-bind-selected-item%})
  * [Add Context Menu]({%slug radtreeview-how-to-add-context-menu%})
  * [Bind RadTreeView to Self-Referencing Data]({%slug radtreeview-how-to-bind-to-self-referencing-data%})
- * [Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection]({%slug radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection%})
+ * [Bind RadTreeView to Hierarchical Data and Use Style Binding]({%slug radtreeview-howto-bind-hierarchical-data-style-binding%})

@@ -152,13 +152,13 @@ And the time ruler will have only GroupTickLine and MajorTickLine with formatted
 
 ![ganttview-timeruler 5](images/ganttview-timeruler_5.png)
 
->You can have more than one TickInterval for a time ruler line – the GanttView will select the most suitable according to each TickInterval’s Interval and MinLength properties as well as PixelLength property of the control.
+You can have more than one TickInterval for a time ruler line – the GanttView will select the most suitable according to each TickInterval’s Interval and MinLength properties as well as PixelLength property of the control.
 
->Let’s modify the example like this:
+Let’s modify the example like this:
 
->#### __XAML__
+#### __XAML__
 
->{{region radganttview-features-timeruler-configuring_5}}
+{{region radganttview-features-timeruler-configuring_5}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:20:00">
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>
@@ -170,13 +170,13 @@ And the time ruler will have only GroupTickLine and MajorTickLine with formatted
 			</telerik:MajorTickLine>
 		</telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
->{{endregion}}
+{{endregion}}
 
->Note that we’ve set two TickIntervals for the MajorTickLine.  So when PixelLength is set to 20min, the result will be the following:![ganttview-timeruler 6](images/ganttview-timeruler_6.png)If we change the PixelLength to 40min, the Week interval will be chosen:
+Note that we’ve set two TickIntervals for the MajorTickLine.  So when PixelLength is set to 20min, the result will be the following:![ganttview-timeruler 6](images/ganttview-timeruler_6.png)If we change the PixelLength to 40min, the Week interval will be chosen:
 
->#### __XAML__
+#### __XAML__
 
->{{region radganttview-features-timeruler-configuring_6}}
+{{region radganttview-features-timeruler-configuring_6}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:40:00">
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>
@@ -188,8 +188,8 @@ And the time ruler will have only GroupTickLine and MajorTickLine with formatted
 			</telerik:MajorTickLine>
 		</telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
->{{endregion}}
+{{endregion}}
 
->![ganttview-timeruler 7](images/ganttview-timeruler_7.png)
+![ganttview-timeruler 7](images/ganttview-timeruler_7.png)
 
 You can check the GanttView TimeRuler example at {% if site.site_name == 'Silverlight' %}[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#GanttView/Configuration/TimeRuler){% endif %}{% if site.site_name == 'WPF' %}[RadControls for WPF demos](http://demos.telerik.com/wpf/){% endif %} to see the time ruler properties in action. 

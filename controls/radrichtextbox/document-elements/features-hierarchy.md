@@ -12,9 +12,9 @@ position: 0
 
 
 
-## 
+There is an element hierarchy which you must consider when building your rich content manually. To become familiar with it, take a look at the diagram below.
 
-There is an element hierarchy which you must consider when building your rich content manually. To become familiar with it, take a look at the diagram below.![Rad Rich Text Box Elements Hierarchy](images/RadRichTextBox_ElementsHierarchy_03.png)
+![Rad Rich Text Box Elements Hierarchy](images/RadRichTextBox_ElementsHierarchy_03.png)
 
 # See Also
 

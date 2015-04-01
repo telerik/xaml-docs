@@ -173,12 +173,11 @@ __Example 3__, shown after the note below, shows these resources and their defau
 	        </ResourceDictionary.MergedDictionaries>
 	    </ResourceDictionary>
 	</Application.Resources>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
-__Example 3__: Setting __FontSize__ and __FontFamily__ properties to use in Windows8 and Windows8Touch themes.
-        
+__Example 3__: Setting __FontSize__ and __FontFamily__ properties to use in Windows8 and Windows8Touch themes.        
 
 #### __C#__
 
@@ -204,15 +203,11 @@ __Example 3__: Setting __FontSize__ and __FontFamily__ properties to use in Wind
 	Windows8TouchPalette.Palette.FontFamily = new FontFamily("Segoe UI");
 	Windows8TouchPalette.Palette.FontFamilyLight = new FontFamily("Segoe UI Light");
 	Windows8TouchPalette.Palette.FontFamilyStrong = new FontFamily("Segoe UI Semibold");
-	{{endregion}}
+{{endregion}}
 
+The official Q1 2013 release of __Telerik UI {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}__ introduced features that allow you to dynamically change the __FontSize__ and __FontFamily__ properties of all components for __Windows8__ and __Windows8Touch__ themes. As __Example 4__ shows, you can change the default __FontFamily__ from "Segoe" to "Calibri" and the __FontSize__ from 12 to 22 on a click of a button.       
 
-
-The official Q1 2013 release of __Telerik UI for__ introduced features that allow you to dynamically change the __FontSize__ and __FontFamily__ properties of all components for __Windows8__ and __Windows8Touch__ themes. As __Example 4__ shows, you can change the default __FontFamily__ from "Segoe" to "Calibri" and the __FontSize__ from 12 to 22 on a click of a button.
-        
-
-__Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the click of a button.
-        
+__Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the click of a button.        
 
 #### __XAML__
 
@@ -225,9 +220,7 @@ __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the c
 	    <telerik:RadCalendar x:Name="Calendar" Width="300" Height="250"/>
 	    <telerik:RadButton x:Name="BtnChangeFontSize" Grid.Row="1" Height="30" HorizontalAlignment="Center" Content="Change Font" Click="BtnChangeFontSize_Click_1"/>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
@@ -243,9 +236,7 @@ __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the c
 	    Windows8Palette.Palette.FontSize = 22;
 	    Windows8Palette.Palette.FontFamily = new FontFamily("Calibri");
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 __Figure 3__ shows a comparison of the application before and after the button is clicked.
         

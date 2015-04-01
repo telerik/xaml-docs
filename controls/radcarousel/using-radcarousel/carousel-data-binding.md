@@ -13,7 +13,7 @@ position: 1
 
 ## Programmatic Data Binding
 
-__RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsControl__ control objects. The entry point to all data binding-related operations is the __RadCarousel____ItemsSource__ property. Providing a collection will trigger a data binding operation.
+__RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsControl__ control objects. The entry point to all data binding-related operations is __RadCarousel's ItemsSource__ property. Providing a collection will trigger a data binding operation.
         
 
 #### __C#__
@@ -21,8 +21,7 @@ __RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsC
 {{region carousel-data-binding_0}}
 
 	this.RadCarousel1.ItemsSource = GetDataTable();
-	{{endregion}}
-
+{{endregion}}
 
 
 #### __VB.NET__
@@ -30,11 +29,10 @@ __RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsC
 {{region carousel-data-binding_1}}
 
 	Me.RadCarousel1.ItemsSource = GetDataTable()
-	{{endregion}}
+{{endregion}}
 
 
-
-Unlike a standard items control, the __RadCarousel____ItemsSource__ property is declared to be of type __System.Object__. This lets you provide objects that are not .NET collections like the ADO.NET __DataTable__ and __DataSet__. Binding to a __DataSet__ requires that you provide additional information, the name of the contained table, by using the __DataMember__ property:
+Unlike a standard items control, __RadCarousel's ItemsSource__ property is declared to be of type __System.Object__. This lets you provide objects that are not .NET collections like the ADO.NET __DataTable__ and __DataSet__. Binding to a __DataSet__ requires that you provide additional information, the name of the contained table, by using the __DataMember__ property:
 
 #### __C#__
 
@@ -42,8 +40,7 @@ Unlike a standard items control, the __RadCarousel____ItemsSource__ property is 
 
 	radCarousel1.DataMember = "Orders";
 	radCarousel1.ItemsSource = dataSet;
-	{{endregion}}
-
+{{endregion}}
 
 
 #### __VB.NET__
@@ -52,8 +49,7 @@ Unlike a standard items control, the __RadCarousel____ItemsSource__ property is 
 
 	radCarousel1.DataMember = "Orders"
 	radCarousel1.ItemsSource = dataSet
-	{{endregion}}
-
+{{endregion}}
 
 
 Of course standard .NET collections that implement the __IEnumerable__ interface are fully supported as well.
@@ -63,10 +59,8 @@ Introduced to the __System.ComponentModel__ namespace with WPF, collection views
 ## Declarative Databinding
 
 The __ItemsSource__ property is visible and modifiable through XAML. Typical usage scenarios include binding to a data provider such as instances of the __ObjectDataProvider__ or the __XmlDataProvider__ classes.
-          
-          
-        
-
+                 
+       
 #### __XAML__
 
 {{region carousel-data-binding_4}}
@@ -79,7 +73,7 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
 	        ItemsSource="{Binding Source={StaticResource objectDataProvider}}">
 	    </telerik:RadCarousel>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 >Note that you have to always pass data provider objects through a binding for the WPF bindings infrastructure to extract the data. This code will __not__ work:
 
@@ -95,8 +89,7 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
 	        ItemsSource="{StaticResource objectDataProvider}">
 	    </telerik:RadCarousel>
 	</Grid>
-	{{endregion}}
-
+{{endregion}}
 
 
 As you can see, using __{StaticResource objectDataProvider}__ directly fails to get the real data source from the data provider.
@@ -106,7 +99,7 @@ As you can see, using __{StaticResource objectDataProvider}__ directly fails to 
 
 To achieve better testability and loose coupling in your code it may be more convenient to manipulate data in the original data source instead of using the RadCarousel data API. RadCarousel supports that scenario by listening to data source collection change events and reflecting those changes in its visual representation. This feature is only supported for observable data sources like the WPF-native collections implementing the __INotifyCollectionChanged__ interface or the WinForms-specific ones implementing IBindingList.
 
-* __INotifyCollectionChanged__implementors are collections that typically derive from the WPF ObservableCollection class.
+* __INotifyCollectionChanged__ implementors are collections that typically derive from the WPF ObservableCollection class.
 
 * __IBindingList__ implementors typically inherit from the .NET BindingList generic class. Another widely-used binding list is the ADO.NET __DataView__. 
 

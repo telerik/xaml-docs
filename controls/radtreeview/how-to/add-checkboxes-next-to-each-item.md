@@ -30,5 +30,5 @@ For more information, read the topic about [CheckBox Support]({%slug check-box-s
 
 # See Also
  * [ItemEditTemplate]({%slug radtreeview-populating-with-data-item-edit-template%})
- * [Get the Underlying TreeView Item on MouseMove]({%slug radtreeview-how-to-get-underlying-on-mouse-move%})
+ * [Implement a Tri-State CheckBox logic using MVVM]({%slug radtreeview-howto-tri-state-mvvm%})
  * [Expand and Collapse Items]({%slug radtreeview-how-to-expand-and-collapse-items%})

@@ -11,7 +11,6 @@ position: 7
 # Spellcheck
 
 
-
 The __RadRichTextBox__ control is designed to support "spell checking as you type" by setting a single property and specifying a proper dictionary to it. This topic will explain you the following:
 
 * [Enabling SpellCheck](#enabling-spellcheck)
@@ -28,22 +27,19 @@ The __RadRichTextBox__ control is designed to support "spell checking as you typ
 
 To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words), you can use the __IsSpellCheckingEnabled__ property on the __RadRichTextBox__. When the property is __False__, no dictionaries are loaded and no overhead is incurred for spell checking. 
 
-As the default value is true, the only thing you need to do in order to get a fully functioning spell checking is to add a reference to the __Telerik.Windows.Documents.Proofing.Dictionaries.En-US.dll__ assembly. It contains a built-in dictionary for english, which gets automatically added to the __RadRichTextBox__ thanks to the usage of MEF. 
+As the default value is true, the only thing you need to do in order to get a fully functioning spell checking is to add a reference to the __Telerik.Windows.Documents.Proofing.Dictionaries.En-US.dll__ assembly. It contains a built-in dictionary for English, which gets automatically added to the __RadRichTextBox__ thanks to the usage of MEF. 
 
 You can customize the spell checker by using the __SpellChecker__ property of __RadRichTextBox__. It’s of type __ISpellChecker__. By default an object of type DocumentSpellChecker that implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
 
 ## Dictionaries
 
-The dictionaries in __RadRichTextBox__ implement the __IWordDictionary__ interface. Easy interoperability with dictionaries from __RadSpell__for ASP.NET is achieved through the __RadDictionary__ class, which supports the loading of a dictionary directly from the *.tdf files, used with __RadSpell__. 
-        You can find TDF dictionaries for some languages 
-        [here](http://www.telerik.com/community/forums/aspnet-ajax/spell/147971-radspell-dictionaries.aspx#576503).
+The dictionaries in __RadRichTextBox__ implement the __IWordDictionary__ interface. Easy interoperability with dictionaries from __RadSpell__ for ASP.NET is achieved through the __RadDictionary__ class, which supports the loading of a dictionary directly from the *.tdf files, used with __RadSpell__. You can find TDF dictionaries for some languages [here](http://www.telerik.com/community/forums/aspnet-ajax/spell/147971-radspell-dictionaries.aspx#576503).
         
 
 Here is an example of a __RadDictionary__ loaded from a TDF file.
 
 >When adding a __RadDictionary__ or similar object use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__. You can also associate a dictionary with a specific culture. The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__.
 
->The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__.
 
 #### __C#__
 
@@ -54,7 +50,7 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 	    dictionary.Load( tdfFileStream );
 	    ( ( DocumentSpellChecker )this.radRichTextBox.SpellChecker ).AddDictionary( dictionary, CultureInfo.InvariantCulture );
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -66,29 +62,22 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 	 dictionary.Load(tdfFileStream)
 	 CType(Me.radRichTextBox.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-
+>The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__.
 
 ## Custom Dictionaries
 
-One feature of the __SpellChecker__ in __RadRichTextBox__ is to add a word to a user-defined custom dictionary to enable domain-specific applications. Such dictionary should implement the __IWordCustomDictionary__ interface. For that purpose the __RadRichTextBox__provides you with the __RadIsolatedStorageCustomDictionary__ class out of the box. It allows you to persist the word list in a file located in 
-        {% if site.site_name == 'Silverlight' %}
-        Silverlight
-        {% endif %}{% if site.site_name == 'WPF' %}
-        WPF
-        {% endif %}
-        ’s Isolated Storage.
+One feature of the __SpellChecker__ in __RadRichTextBox__ is to add a word to a user-defined custom dictionary to enable domain-specific applications. Such dictionary should implement the __IWordCustomDictionary__ interface. For that purpose the __RadRichTextBox__ provides you with the __RadIsolatedStorageCustomDictionary__ class out of the box. It allows you to persist the word list in a file located in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}’s Isolated Storage.
 
 Here is an example of a such dictionary which adds the words in the "CustomDictionary.txt" marked as a Site-scoped IsolatedSotrageFile.
 
->tipThe __IsolatedStorageScope__ enumeration has the following values:
+>The __IsolatedStorageScope__ enumeration has the following values: 
+>  *  __Site__ - the dictionary defined in this scope is available for each application hosted on the same site.
+>  *  __Application__ - the dictionary is available only for the particular application.
 
-* __Site__ - the dictionary defined in this scope is available for each application hosted on the same site.
 
-* __Application__ - the dictionary is available only for the particular application.
-
->When adding a dictionary that implements the __ICustomWordDictionary__ interface object use __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method fo the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__.
+>tipWhen adding a dictionary that implements the __ICustomWordDictionary__ interface object use __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__.
 
 #### __C#__
 
@@ -99,7 +88,7 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 	    DocumentSpellChecker spellchecker = new DocumentSpellChecker( dictionary );
 	    this.radRichTextBox.SpellChecker = spellchecker;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -111,7 +100,7 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 	 Dim spellchecker As New DocumentSpellChecker(dictionary)
 	 Me.radRichTextBox.SpellChecker = spellchecker
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -131,7 +120,7 @@ Here is an example.
 
 {{region radrichtextbox-features-spellcheck_4}}
 	this.radRichTextBox.SpellChecker.AddWord( "RadRichTextBox", CultureInfo.InvariantCulture );
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -139,7 +128,7 @@ Here is an example.
 
 {{region radrichtextbox-features-spellcheck_5}}
 	Me.radRichTextBox.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -160,17 +149,17 @@ Here is an example.
 	    dictionary.Load( tdfFileStream );
 	    ( ( DocumentSpellChecker )this.radRichTextBox.SpellChecker ).AddDictionary( dictionary, new CultureInfo( "de-DE" );
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radrichtextbox-features-spellcheck_7}}
-	Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
+	 Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
 	 Dim dictionary As New RadDictionary()
 	 dictionary.Load(tdfFileStream)
 	 CType(Me.radRichTextBox.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, New CultureInfo("de-DE"); }
-	{{endregion}}
+{{endregion}}
 
 

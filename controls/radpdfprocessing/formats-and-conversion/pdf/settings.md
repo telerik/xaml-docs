@@ -50,7 +50,8 @@ In order to modify the way content is exported you can set the __ExportSettings_
 __IsEncrypted__
 
 This property specifies if the document should be encrypted. The default value is False.
-        
+
+>This setting is ignored when __ComplianceLevel__ differs from __None__ as PDF/A compliant documents do not allow encryption.
 
 __UserPassword__
 
@@ -60,7 +61,19 @@ The password to be used if the document is encrypted. The default password is em
 __ImageQuality__
 
 The ImageQuality property specifies the quality with which images are exported to PDF. The higher the quality, the bigger the PDF document. Possible values for this property are High, Medium, and Low. The default quality is Medium.
-        
+
+__ComplianceLevel__
+
+Specifies the PDF/A compliance level. It can have one of the following values: 
+
+* __None__: Specify no compliance level.
+* __PdfA1B__: Specify PDF/A-1b compliance level.
+* __PdfA2B__: Specify PDF/A-2b compliance level.
+* __PdfA2U__: Specify PDF/A-2u compliance level.
+* __PdfA3B__: Specify PDF/A-3b compliance level.
+* __PdfA3U__: Specify PDF/A-3u compliance level.
+
+The default value is __None__. For more information on PDF/A compliance check the PDF/A Compliance article.
 
 __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign it to a PdfFormatProvider.
         
@@ -73,8 +86,13 @@ __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign 
     settings.IsEncrypted = true;
     settings.UserPassword = "D0cum3ntP4ssw0rd";
     settings.ImageQuality = ImageQuality.High;
+    settings.ComplianceLevel = PdfComplianceLevel.PdfA2B;
 
     provider.ExportSettings = settings;
 {{endregion}}
 
 
+## See Also
+
+* [PdfExportSettings API Reference](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_Pdf_Export_PdfExportSettings.htm)
+* [How to Comply with PDF/A Standard]({%slug radpdfprocessing-howto-comply-with-pdfa-standard%})

@@ -40,7 +40,7 @@ Style properties are exposed through [IStyleProperty<T>]( http://www.telerik.com
 * __ClearValue()__: Clears the local value.
             
 
-* __PropertyDefinition__: The [property definition](#style-property-definitions) is exposed through the [IStylePropertyDefinition]( http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html) interface and specifies some details for the style property as:
+* __PropertyDefinition__: The [property definition](#style-property-definitions) is exposed through the [IStylePropertyDefinition]( http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html) interface and specifies some details for the style property as:
             
 
     * __PropertyName__: Returns the name of the style property.
@@ -640,4 +640,5 @@ PrintLayout</td></tr></table>
 # See Also
 
  * [Styles]({%slug radwordsprocessing-concepts-styles%})
- * [IStyleProperty<T> API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html)[IStylePropertyDefinition API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html)
+ * [IStyleProperty<T> API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istyleproperty.html)
+ * [IStylePropertyDefinition API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html)

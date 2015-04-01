@@ -14,6 +14,12 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 ## List of all RadBusyIndicator SDK examples:
 
-* __Restore focus__ - The example demonstrates how to restore the focus when the RadBusyIndicator is shown and then hidden for Silverlight and WPF.
+{% if site.site_name == 'WPF' %}
+
+* __[Restore focus](https://github.com/telerik/xaml-sdk/tree/master/BusyIndicator/RestoreFocus)__ - The example demonstrates how to restore the focus when the RadBusyIndicator is shown and then hidden for Silverlight and WPF.
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+* __[Restore focus](https://github.com/telerik/xaml-sdk/tree/master/BusyIndicator/RestoreFocus)__ - The example demonstrates how to restore the focus when the RadBusyIndicator is shown and then hidden for Silverlight and WPF.
+{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

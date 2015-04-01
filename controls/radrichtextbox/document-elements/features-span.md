@@ -24,7 +24,7 @@ This topic will explain you how to:
 
 ## Use Spans
 
-The __Spans__can be used only in the context of the [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%}) element. The __Paragraph__ exposes a collection of Inlines, to which the spans can be added. This can also be done directly in XAML.
+The __Spans__ can be used only in the context of the [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%}) element. The __Paragraph__ exposes a collection of Inlines, to which the spans can be added. This can also be done directly in XAML.
 
 #### __XAML__
 
@@ -38,7 +38,7 @@ The __Spans__can be used only in the context of the [Paragraph]({%slug radrichte
 	        </telerik:Section>
 	    </telerik:RadDocument>
 	</telerik:RadRichTextBox>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -51,7 +51,7 @@ The __Spans__can be used only in the context of the [Paragraph]({%slug radrichte
 	paragraph.Inlines.Add( span );
 	section.Blocks.Add( paragraph );
 	this.radRichTextBox.Document.Sections.Add( section );
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -64,7 +64,7 @@ The __Spans__can be used only in the context of the [Paragraph]({%slug radrichte
 	paragraph.Inlines.Add(span)
 	section.Blocks.Add(paragraph)
 	Me.radRichTextBox.Document.Sections.Add(section)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -76,7 +76,7 @@ To specify the text in the __Span__ you can use its __Text__ property.
 
 {{region radrichtextbox-features-document-elements-span_3}}
 	<telerik:Span Text="Thank you for choosing Telerik RadRichTextBox!" />
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -85,7 +85,7 @@ To specify the text in the __Span__ you can use its __Text__ property.
 {{region radrichtextbox-features-document-elements-span_4}}
 	Span span = new Span();
 	span.Text = "Thank you for choosing Telerik RadRichTextBox!";
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -94,13 +94,13 @@ To specify the text in the __Span__ you can use its __Text__ property.
 {{region radrichtextbox-features-document-elements-span_5}}
 	Dim span As New Span()
 	span.Text = "Thank you for choosing Telerik RadRichTextBox!"
-	{{endregion}}
+{{endregion}}
 
 
 
 ## Customize a Span
 
-The __Span__exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
+The __Span__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
 
 * __BaselineAlignment__ - indicates whether the text is __Baseline__, __Subscript__ or __Superscript__.
 

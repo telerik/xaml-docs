@@ -14,15 +14,15 @@ position: 3
 
 __RadDataFilter__ is a control that allows you to filter your data. It allows you to create complex filter criteria within unlimited number of filter conditions combined by logical operators. You can easily add nested filter criteria by clicking on the button for adding nested operators. This topic will help you to quickly get started using this control. It will focus on the following:
 
-* [Adding RadDataFilter](#Creating_a_RadDataFilter)
+* [Adding RadDataFilter](#adding-raddatafilter)
 
-* [Configuring the RadDataFilter](#Configuring_the_RadDataFilter)
+* [Configuring the RadDataFilter](#configuring-the-raddatafilter)
 
-* [Filtering a Collection](#Filtering_a_Collection)
+* [Filtering a Collection](#filtering-a-collection)
 
-* [Filtering a RadGridView](#Filter_RadGridView)
+* [Filtering a RadGridView](#filter-radgridview)
 
-* [Exposing the Filtered Collection](#Exposing_the_Filtered_Collection)
+* [Exposing the Filtered Collection](#exposing-the-filtered-collection)
 
 ## Adding RadDataFilter
 
@@ -31,6 +31,8 @@ In order to use __RadDataFilter__ in your project, you need to add references to
 * __Telerik.Windows.Controls.Data.dll__
 
 * __Telerik.Windows.Controls.dll__
+
+* __Telerik.Windows.Data.dll__
 
 After adding references to the aforementioned dlls, you can declare a new __RadDataFilter__ as any normal Silverlight/WPF control.
 

@@ -39,7 +39,9 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Appearance customizations -__ the __RadMenu__ control allows you to manipulate its default appearance by applying styles to it or by modifying its templates. You can modify the items depending on their type, thanks to the several properties that are exposed. [Read more]({%slug radmenu-styles-and-templates-overview%})
 
+{% if site.site_name == 'Silverlight' %}
 * __Boundary Detection__ - Telerik __RadMenu__ detects the Silverlight plug-in boundaries and opens its child item-groups in the opposite direction when the screen boundaries are to be crossed. When there is not enough space in both directions, the control will adjust its items’ position in order to make them visible whenever possible. [Read more]({%slug radmenu-boundaries-detection%})
+{% endif %}
 
 * __WPF/Silverlight Code Compatibility__ - The WPF Menu shares a single codebase with its Silverlight counterpart. This means that you can achieve close to 100% code reuse for your Menu logic if you have parallel WPF/Silverlight development.          
 

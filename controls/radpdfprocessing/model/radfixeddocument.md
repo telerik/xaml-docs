@@ -19,8 +19,8 @@ This article will get you familiar with the basics of __RadFixedDocument__. It c
       
 
 * [What Is RadFixedDocument](#what-is-radfixeddocument)
-
 * [Operating with RadFixedDocument](#operating-with-radfixeddocument)
+* [Document Information](#document-information)
 
 ## What Is RadFixedDocument
 
@@ -28,12 +28,9 @@ __RadFixedDocument__ is the root that contains all other elements in the __RadPd
         
 
 * __Pages__: The pages collection that contains all __RadFixedPages__ in the document.
-            
-
 * __Annotations__: A read-only collection that contains all [Annotations]({%slug radpdfprocessing-model-annotations-and-destinations%}) in the document.
-            
-
 * __Destinations__: A collection that contains all [Destinations]({%slug radpdfprocessing-model-annotations-and-destinations%}) in the document.
+* __DocumentInfo__: Contains additional meta information about the document like author, title, etc. 
             
 
 __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
@@ -77,10 +74,27 @@ __Example 3__ creates a page and adds it to the document created in __Example 1_
 {{endregion}}
 
 
+## Document Information
+
+__RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocumentInfo__, intended to hold additional information about the document. The __RadFixedDocumentInfo__ class allows to set the following properties:
+
+* __Auto__: The author of the document.
+* __Title__: The title of the document.
+* __Description__: Text that describes the content of the document.
+
+#### __[C#] Example 4: Set DocumentInfo__
+
+{{region radpdfprocessing-model-radfixeddocument_3}}
+	document.DocumentInfo.Author = "Jane Doe";
+	document.DocumentInfo.Title = "RadFixedDocument";
+	document.DocumentInfo.Description = "This document is intended to explain the RadFixedDocument class from the RadPdfProcessing library";
+{{endregion}}
+
+>Currently the DocumentInfo property is for export purposes only and meta information about documents is stripped when importing.
 
 # See Also
 
-* [RadFixedDocument API Reference](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_fixed_model_radfixeddocument.html)
+* [RadFixedDocument API Reference](http://www.telerik.com/help/silverlight/t_telerik_windows_documents_fixed_model_radfixeddocument.html)
 
 * [Model]({%slug radpdfprocessing-model-general-information%})
 

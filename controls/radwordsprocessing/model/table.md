@@ -154,8 +154,8 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
     RadFlowDocument document = new RadFlowDocument();
 
     Table table = document.Sections.AddSection().Blocks.AddTable();
-    document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleName);
-    table.StyleId = BuiltInStyleNames.TableGridStyleName;
+    document.StyleRepository.AddBuiltInStyle(BuiltInStyleNames.TableGridStyleId);
+    table.StyleId = BuiltInStyleNames.TableGridStyleId;
 
     ThemableColor cellBackground = new ThemableColor(Colors.Beige);
 
@@ -177,7 +177,7 @@ The following code snippet demonstrates how to add a __Table__ with 5 rows and 1
 
 # See Also
 
- * [Table API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_table.html)
+ * [Table API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_table.html)
 
  * [Section]({%slug radwordsprocessing-model-section%})
 

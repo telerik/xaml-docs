@@ -96,13 +96,14 @@ RadTreeMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadTreeView	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadWatermarkTextBox	|	Telerik.Windows.Controls
 RadWindow	|	Telerik.Windows.Controls.Navigation
-RadWordsProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Flow, Telerik.Windows.Zip
+RadWizard	|	Telerik.Windows.Controls, Telerik.Windows.Data, Telerik.Windows.Controls.Navigation 
+RadWordsProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Flow, Telerik.Windows.Zip, Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Telerik.Windows.Documents.Fixed
 RadZipLibrary	|	Telerik.Windows.Zip
 LayoutControls	|	Telerik.Windows.Controls
 
 # See Also
 
- * [Adding UI for WPF to the Visual Studio 2008 Toolbox]({%slug installation-adding-to-vs-2008-toolbox-wpf%})
+ * [Adding UI for WPF to the Visual Studio 2012 Toolbox]({%slug installation-adding-to-vs-2012-toolbox-wpf%})
 
  * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control-wpf%})
 

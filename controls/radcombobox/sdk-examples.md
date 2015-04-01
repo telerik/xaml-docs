@@ -14,9 +14,20 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 ## List of all RadComboBox SDK examples:
 
-* __Drop down with headers__ - This example demonstrates how to display the items in the ComboBox drop down with headers. 
-The approach uses a GridView inside of the Editable and NonEditable Templates.
+{% if site.site_name == 'WPF' %}
 
-* __How to display more than 1 property in editable mode__ - This example demonstrates how to display more than one property in the TextBox of an editable ComboBox. Only one of them, bound to the DisplayMemberPath property, will be editable, all others will be read-only, in the example they are marked with different color.
+* __[Drop down with headers](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/DropDownWithHeaders)__ - 
+This example demonstrates how to display the items in the ComboBox drop down with headers. 
+The approach uses a GridView inside of the Editable and NonEditable Templates.
+* __[How to display more than 1 property in editable mode](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/EditableTextBoxTemplate)__ - 
+This example demonstrates how to display more than one property in the TextBox of an editable ComboBox. Only one of them, bound to the DisplayMemberPath property, will be editable, all others will be read-only, in the example they are marked with different color.
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+* __[Drop down with headers](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/DropDownWithHeaders)__ - 
+This example demonstrates how to display the items in the ComboBox drop down with headers. 
+The approach uses a GridView inside of the Editable and NonEditable Templates.
+* __[How to display more than 1 property in editable mode](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/EditableTextBoxTemplate)__ - 
+This example demonstrates how to display more than one property in the TextBox of an editable ComboBox. Only one of them, bound to the DisplayMemberPath property, will be editable, all others will be read-only, in the example they are marked with different color.
+{% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

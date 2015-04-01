@@ -129,6 +129,18 @@ The result looks like this:
 
 If you call __InsertParagraph()__ method while the editor is positioned in the middle of a paragraph all the inlines after the position are moved inside the new paragraph. The effect is the same as pressing Enter key while the cursor is in the middle of a paragraph in a text editor application.
 
+### Inserting Sections
+
+Inserting [Section]({%slug radwordsprocessing-model-section%}) elements can be achieved with the __InsertSection()__ method. A paragraph with the new section’s properties will be added and the new __Section__ element will be returned.
+
+#### __C#__
+{{region radwordsprocessing-editing-radflowdocumenteditor_12}}
+	editor.InsertSection();
+{{endregion}}
+
+>If you call the __InsertSection()__ method while the editor is positioned in a TableCell, the Table will be split at the current row. This means that if the table contains 3 rows, and the editor is positioned in a cell which is on the second row, the table will be split into two tables – one with one row, which will be added to the previous section and one with 2 rows (containing the TableCell where the editor position was). The later will be added to the newly inserted Section.
+
+
 ### Inserting Hyperlinks
 
 __Hyperlinks__ in the __RadFlowDocument__ model are actually [Fields]({%slug radwordsprocessing-concepts-fields%}), which means they have code and result parts separated by [FieldCharacter]({%slug radwordsprocessing-model-fieldcharacter%}) inlines. Inserting hyperlinks is simplified with __RadFlowDocumentEditor.InsertHyperlink()__  method:
@@ -282,6 +294,6 @@ Formatting options are most useful when inserting multiple elements that should 
 
 # See Also
 
- * [RadFlowDocument API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_editing_radflowdocumenteditor.html)
+ * [RadFlowDocument API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_editing_radflowdocumenteditor.html)
 
  * [Document model]({%slug radwordsprocessing-model%})

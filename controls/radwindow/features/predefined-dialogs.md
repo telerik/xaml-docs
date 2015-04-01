@@ -58,7 +58,7 @@ Here is a list of the __DialogParameters__ class members:
 
 * __WindowStyle__
 
-For more info about the class read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_dialogparameters.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_dialogparameters.html){% endif %}.
+For more info about the class read {% if site.site_name == 'Silverlight' %}[here](http://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_controls_dialogparameters.htm){% endif %}{% if site.site_name == 'WPF' %}[here](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_dialogparameters.htm){% endif %}.
 
 ## Alert
 

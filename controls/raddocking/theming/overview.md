@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
->tipThis topic will present you with the simple way of creating a theme. It's suitable for themes which contain less XAML. The advanced approach is more performant, especially when creating themes for the larger controls. To learn more about the advanced approach read the [Creating a Custom Theme](http://www.telerik.com/help/silverlight/common-styling-and-appearance-creating-custom-theme.html) topic in the common section.
+>tipThis topic will present you with the simple way of creating a theme. It's suitable for themes which contain less XAML. The advanced approach is more performant, especially when creating themes for the larger controls. To learn more about the advanced approach read the [Creating a Custom Theme]({%slug common-styling-apperance-themes-custom-theme-project%}) topic in the common section.
 
 The __RadDocking__ uses controls such as __PaneHeader__, [RadPaneGroup]({%slug raddocking-features-pane-groups%}), [ToolWindow]({%slug raddocking-features-tool-window%}), [RadSplitContainer]({%slug raddocking-features-split-container%}) that are usually created dynamically depending on the user's actions. Such controls cannot be styled declaratively in XAML. In order to style them you have to apply a theme to your __RadDocking__ control that contains the styles for them. 
 

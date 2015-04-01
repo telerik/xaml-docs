@@ -62,7 +62,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 
 
-* __PageOrientation__: Specifies if the pages in the section should be in Portrait or in Landscape orientation.
+* __PageOrientation__: Specifies if the pages in the section should be in Portrait or in Landscape orientation. This property is used to determine the actual size of the paper to use on the printer and does not reflect the document's visualization. In order to show the document in different mode you can use the [Rotate method](#rotating-a-section).
             
 
 #### __C#__
@@ -113,13 +113,35 @@ The __Section__ exposes several properties that allow you to customize the layou
     
     * __NextColumn__ - specifies that the section starts on the next column on the page.
                 
+* __VerticalAlignment__: Defines the vertical alignment:
+
+	* __Top__ – specifies the section layout is top aligned. This is the default value.
+	
+	* __Bottom__ – specifies the section layout is bottom aligned.
+	
+	* __Center__ – specifies the section layout is center aligned.
+	
+	* __Justified__ – specifies the section layout is justified.
+
+
+* __PageNumberingSettings__: Defines page numbering settings. You can modify the settings through the following properties:
+
+	* __ChapterSeparatorCharacter__ – specifies the chapter separator character that shall appear between the chapter heading style index and the page number.
+	
+	* __ChapterHeadingStyleIndex__ – specifies the index of the chapter heading style. The possible values are from 1 to 9 inclusive (Heading1, Heading2…).
+	
+	* __PageNumberFormat__ – specifies the number format for the page numbering in the current section.
+	
+	* __StartingPageNumber__ – specifies the starting page number which shall appear on the first page of the section. The possible values are 0 or greater.
 
 * __Properties__: Gets all section properties as __SectionProperties__ object. More info on how to use section properties can be found in [ Style Properties]({%slug radwordsprocessing-concepts-style-properties%}) article.
             
 
 ## Operating with a Section
 
-Section derives [BlockContainerBase](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_blockcontainerbase.html), inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug radwordsprocessing-model-paragraph%}) and [Table]({%slug radwordsprocessing-model-table%}) objects to that collection:
+### Adding Elements to a Section
+
+Section derives [BlockContainerBase](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_blockcontainerbase.html), inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug radwordsprocessing-model-paragraph%}) and [Table]({%slug radwordsprocessing-model-table%}) objects to that collection:
         
 
 #### __C#__
@@ -130,10 +152,18 @@ Section derives [BlockContainerBase](http://www.telerik.com/help/wpf/allmembers_
 {{endregion}}
 
 
+### Rotating a Section
+
+The __Section__ can be rotated in order to visualize its pages in Portrait or Landscape mode:
+
+#### __C#__
+{{region radwordsprocessing-model-section_7}}
+	section.Rotate(PageOrientation.Landscape);
+{{endregion}}
 
 # See Also
 
- * [Section API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_section.html)
+ * [Section API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_section.html)
 
  * [Headers and Footers]({%slug radwordsprocessing-model-headers-footers%})
 

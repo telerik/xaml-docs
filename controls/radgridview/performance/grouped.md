@@ -25,5 +25,6 @@ In order to increase the scrolling performance you could:
 >tipAs of __Q3 2012__ we have introduced a new property of the RadGridView __GroupRenderMode__. The default mode is Nested, and the new one is Flat. When you set the __Flat mode__, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data.
           
 # See Also
+ * [Grouping Modes]({%slug gridview-grouping-groupingmodes%})
 
  * [Tips and Tricks]({%slug radgridview-performance-tips-tricks%})

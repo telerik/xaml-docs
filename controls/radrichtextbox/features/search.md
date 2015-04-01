@@ -33,7 +33,7 @@ The simplest scenario – finding a string in the content of the document can be
 	        this.radRichTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition);
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -48,7 +48,7 @@ The simplest scenario – finding a string in the content of the document can be
 	  Me.radRichTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition)
 	 Next textRange
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -60,7 +60,7 @@ You can use all kind of regular expressions, such as __“(asp|silverlight)\s*co
 
 {{region radrichtextbox-features-search_2}}
 	toSearch = Regex.Escape(toSearch);
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -68,8 +68,9 @@ You can use all kind of regular expressions, such as __“(asp|silverlight)\s*co
 
 {{region radrichtextbox-features-search_3}}
 	toSearch = Regex.Escape(toSearch)
-	{{endregion}}
+{{endregion}}
 
+> You should have in mind that performing these actions in __DocumentContentChanged__ event handler will not only raise performance issues, but will also produce an infinite loop, as the changes of the formatting are also considered document changes.
 
 
 Selecting the results of the search is particularly useful, as most formatting commands that are executed on __RadRichTextBox__ (or its document) are selection-based, i.e. they operate on the currently selected parts of the document. You can use that fact by invoking one of these commands after having selected the words in the document. Here is an example.
@@ -80,17 +81,17 @@ Selecting the results of the search is particularly useful, as most formatting c
 	this.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray);  // will highlight all selected words in LightGray
 	this.radRichTextBox.ChangeFontSize(Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
 	this.radRichTextBox.ChangeFontFamily(new FontFamily("Comic Sans MS")); // will change the font family of the spans, containing these words.
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region radrichtextbox-features-search_5}}
-	Me.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray) ' will highlight all selected words in LightGray
-	Me.radRichTextBox.ChangeFontSize(Unit.PointToDip(32)) ' will increase the font size of the words to 30 DIP
-	Me.radRichTextBox.ChangeFontFamily(New FontFamily("Comic Sans MS")) ' will change the font family of the spans, containing these words.
-	{{endregion}}
+	Me.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray) \' will highlight all selected words in LightGray
+	Me.radRichTextBox.ChangeFontSize(Unit.PointToDip(32)) \' will increase the font size of the words to 30 DIP
+	Me.radRichTextBox.ChangeFontFamily(New FontFamily("Comic Sans MS")) \' will change the font family of the spans, containing these words.
+{{endregion}}
 
 
 
@@ -100,7 +101,7 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 {{region radrichtextbox-features-search_6}}
 	this.radRichTextBox.Document.Selection.Clear();
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -108,7 +109,7 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 {{region radrichtextbox-features-search_7}}
 	Me.radRichTextBox.Document.Selection.Clear()
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -136,7 +137,7 @@ On a side note, the find and select functionality can be extended in order to im
 	        textRange.EndPosition.Dispose();
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -144,7 +145,7 @@ On a side note, the find and select functionality can be extended in order to im
 
 {{region radrichtextbox-features-search_9}}
 	Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)
-	 Me.radRichTextBox.Document.Selection.Clear() ' this clears the selection before processing
+	 Me.radRichTextBox.Document.Selection.Clear() \' this clears the selection before processing
 	 Dim search As New DocumentTextSearch(Me.radRichTextBox.Document)
 	 Dim rangesTrackingDocumentChanges As New List(Of TextRange)()
 	 For Each textRange In search.FindAll(toSearch)
@@ -159,7 +160,7 @@ On a side note, the find and select functionality can be extended in order to im
 	  textRange.EndPosition.Dispose()
 	 Next textRange
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

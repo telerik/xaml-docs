@@ -10,8 +10,6 @@ position: 0
 
 # Radial Scale Overview
 
-
-
 RadialScale is used to control the overall layout of tick marks, tick labels, indicators and ranges and to render an optional scale bar.
 
 ## Scale Bar
@@ -38,13 +36,11 @@ Scales can be of type __Linear__ or __Logarithmic__. When the IsLogarithmic prop
 The scale elements like tick mark, label or indicator can have dynamically changed tooltip associated with it. This behavior is controlled by TootipFormat property which can be set at the correspondent property element:
 
 #### __XAML__
-
 {{region radial-scale-overview_0}}
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale MajorTickTooltipFormat="0.00"/>
 	</telerik:RadRadialGauge>
-	{{endregion}}
-
+{{endregion}}
 
 ![](images/RadialScaleTickMarkTooltip.png)
 

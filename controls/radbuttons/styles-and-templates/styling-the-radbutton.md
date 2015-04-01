@@ -25,11 +25,9 @@ This topic will show you how to perform the second one.
 
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadButton__. In the 'Objects and Timeline' pane select the __RadButton__ you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
-
-
 ![](images/Buttons_Button_CreateStyle.png)
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking 'OK', Expression Blend will generate the default style of the __RadButton__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
@@ -73,9 +71,6 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 * __RadButtonStyle__ - the default Style for the __RadButton__.
 
 # See Also
-
  * [Button]({%slug radbuttons-features-button%})
-
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
-
  * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})

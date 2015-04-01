@@ -19,17 +19,15 @@ Some of our controls can be exported directly using the *ExportExtensions* class
 1. __Image formats__
 
 	* __Png__ - Portable Netwok Graphic. Use ExportToImage(FrameworkElement, Stream) method.
-				  
 
 	* __Bmp__ - Bitmap file. Use ExportToImage(FrameworkElement, Stream, BitmapEncoder) where the encoder is of type BmpBitmapEncoder().
-				  
-
+	
 	* __Xps__ - XML Paper Specification file. Use ExportToXpsImage(FrameworkElement, Stream) method to export some content as an XPS image.
-	
+
 	This is particularly convenient for controls which have a size that allows direct export on one page, such as a __RadGauge__ or a __RadChart__ for example.
-			
-2. __ExcelML__ - ExcelML file, supported by Office 2003 and above. Use ExportToExcelML(FrameworkElement, Stream) method.
 	
+1. __ExcelML__ - ExcelML file, supported by Office 2003 and above. Use ExportToExcelML(FrameworkElement, Stream) method.
+
 	For instance, controls that support export to ExcelML are __RadChart__ and __RadGridView__.
 
 {% if site.site_name == 'WPF' %}
@@ -133,11 +131,11 @@ The formats that RadDocument can be exported to are:
 
 * plain text.
 
-This approach should be utilized when the content is more complex – text and images, tables, etc. and spans several pages. What should be kept in mind is to create the document in accordance with the structure outlined here:{% if site.site_name == 'WPF' %}[Elements Hierarchy](http://www.telerik.com/help/wpf/radrichtextbox-features-document-elements-hierarchy.html){% endif %}{% if site.site_name == 'Silverlight' %}[Elements Hierarchy](http://www.telerik.com/help/silverlight/radrichtextbox-features-document-elements-hierarchy.html){% endif %}.
+This approach should be utilized when the content is more complex – text and images, tables, etc. and spans several pages. What should be kept in mind is to create the document in accordance with the structure outlined here:{% if site.site_name == 'WPF' %}[Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%}){% endif %}{% if site.site_name == 'Silverlight' %}[Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%}){% endif %}.
 		
-Examples for creating a RadDocument with different content can be found in RadRichTextBox's documentation: {% if site.site_name == 'WPF' %}[Printing guidelines](http://www.telerik.com/help/wpf/radrichtextbox-guidelines-for-printing-with-raddocument.html){% endif %}{% if site.site_name == 'Silverlight' %}[Printing guidelines](http://www.telerik.com/help/silverlight/radrichtextbox-guidelines-for-printing-with-raddocument.html){% endif %}.
+Examples for creating a RadDocument with different content can be found in RadRichTextBox's documentation: {% if site.site_name == 'WPF' %}[Printing guidelines]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%}){% endif %}{% if site.site_name == 'Silverlight' %}[Printing guidelines]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%}){% endif %}.
 		
-The export of RadDocument is carried out through format providers - there is a different format provider for each of the formats. Detailed information on the assembly references that must be added and the customization options can be found in the Import/Export article: {% if site.site_name == 'WPF' %}[Export using format providers](http://www.telerik.com/help/silverlight/radrichtextbox-features-import-export.html){% endif %}{% if site.site_name == 'Silverlight' %}[Export using format providers](http://www.telerik.com/help/silverlight/radrichtextbox-features-import-export.html){% endif %}.
+The export of RadDocument is carried out through format providers - there is a different format provider for each of the formats. Detailed information on the assembly references that must be added and the customization options can be found in the Import/Export article: {% if site.site_name == 'WPF' %}[Export using format providers]({%slug radrichtextbox-features-import-export%}){% endif %}{% if site.site_name == 'Silverlight' %}[Export using format providers]({%slug radrichtextbox-features-import-export%}){% endif %}.
 		
 Here is a simple example how a document with a RadChart, a RadGauge and some text can be created and exported to docx:		
 

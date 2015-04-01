@@ -10,11 +10,7 @@ position: 2
 
 # Display ScrollViewer Inside the Diagram
 
-
-
 This tutorial describes how to display the RadDiagram built-in ScrollViewer.
-
-## 
 
 For the purpose of this tutorial we'll examine the following simple Diagramming structure:
 
@@ -27,9 +23,6 @@ For the purpose of this tutorial we'll examine the following simple Diagramming 
                     Target="{Binding ElementName=shape2}" />
         </telerik:RadDiagram>
     </Grid>		  
-		  
-
-
 
 As the __Grid__ hosting our __RadDiagram__ has a limited size, we can't see the second shape in the viewport:
 ![Rad Diagram How To Scroll No Scroll](images/RadDiagram_HowTo_Scroll_NoScroll.png)
@@ -37,8 +30,7 @@ As the __Grid__ hosting our __RadDiagram__ has a limited size, we can't see the 
 In such scenarios it's useful to use the __RadDiagram__ built-in __ScrollViewer__, which you can display to get a better view of the area described by the position and size of your __RadDiagramItems__. 
 ![Rad Diagram How To Scroll Scroll](images/RadDiagram_HowTo_Scroll_Scroll.png)
 
-In order to enable the horizontal and/or vertical __ScrollBar__ you need to add the following attribute(s) to the __RadDiagram__ declaration:
-		
+In order to enable the horizontal and/or vertical __ScrollBar__ you need to add the following attribute(s) to the __RadDiagram__ declaration:		
 
 #### __XAML__
     <telerik:RadDiagram Grid.Row="1" x:Name="xDiagram" 
@@ -46,9 +38,6 @@ In order to enable the horizontal and/or vertical __ScrollBar__ you need to add 
                         ScrollViewer.VerticalScrollBarVisibility="Visible">
       ...
     </telerik:RadDiagram>		  
-		  
-
-
 
 The same operation can be done in code-behind as well:
 
@@ -63,17 +52,10 @@ The same operation can be done in code-behind as well:
     Private Sub EnableScrollBars()
         ScrollViewer.SetHorizontalScrollBarVisibility(xDiagram, ScrollBarVisibility.Visible)
         ScrollViewer.SetVerticalScrollBarVisibility(xDiagram, ScrollBarVisibility.Visible)
-    End Sub		  
-		  
-
-
+    End Sub		
 
 # See Also
-
  * [Getting Started]({%slug raddiagram-getting-started%})
-
  * [Create Custom Shape]({%slug raddiagram-howto-create-custom-shape%})
-
  * [Overview]({%slug raddiagram-data-overview%})
-
  * [Use MVVM in RadDiagram]({%slug raddiagrams-howto-mvvm%})

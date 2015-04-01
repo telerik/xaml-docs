@@ -12,10 +12,10 @@ position: 3
 
 This topic aims to get you familiar with the specific properties of each databar type.
 
-* [DataBinding](#DataBinding)
-* [RadDataBar](#RadDataBar)
-* [RadStackedDataBar and RadStacked100DataBar](#RadStackedDataBar and RadStacked100DataBar)
-* [RadHorizontalAxis](#RadHorizontalAxis)
+* [DataBinding](#databinding)
+* [RadDataBar](#raddatabar)
+* [RadStackedDataBar and RadStacked100DataBar](#radstackeddatabar-and-radstacked100databar)
+* [RadHorizontalAxis](#radhorizontalaxis)
 
 ## DataBinding
 

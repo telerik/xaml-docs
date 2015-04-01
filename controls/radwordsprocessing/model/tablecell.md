@@ -57,6 +57,7 @@ The __TableCell__ element exposes several properties that allow you to customize
 
 * __Row__: Represents the parent __TableRow__ of the cell.
             
+* __Table__: Represents the parent __Table__ of the cell.
 
 * __Borders__: Specifies the borders of the cell. *Style property.*
 
@@ -121,7 +122,7 @@ Through the __BlockCollection__ property of the __TableCell__ element you can ad
 
 # See Also
 
- * [TableCell API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_tablecell.html)
+ * [TableCell API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_tablecell.html)
 
  * [Document model]({%slug radwordsprocessing-model%})
 

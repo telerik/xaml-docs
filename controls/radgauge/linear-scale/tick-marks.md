@@ -10,41 +10,33 @@ position: 1
 
 # Tick Marks
 
-
-
 Tick marks allow displaying of the value intervals along the gauge scale. There are 3 types of the tick marks:
 
-1. Major - specify the primary value intervals. MajorTicks scale's property specifies the number of the value intervals along the whole length of the scale bar. Major tick marks can have labels. You can specify the common properties and the appearance of the major tick mark using MajorTick property of the scale.
+1. __Major__ - specify the primary value intervals. MajorTicks scale's property specifies the number of the value intervals along the whole length of the scale bar. Major tick marks can have labels. You can specify the common properties and the appearance of the major tick mark using MajorTick property of the scale.
 
-1. Middle - specify the secondary value intervals. MiddleTicks scale's property specifies the number of the secondary value intervals inside the primary value interval. Middle tick marks can't have labels. You can specify the common properties and the appearance of the middle tick mark using MiddleTick property of the scale.
+2. __Middle__ - specify the secondary value intervals. MiddleTicks scale's property specifies the number of the secondary value intervals inside the primary value interval. Middle tick marks can't have labels. You can specify the common properties and the appearance of the middle tick mark using MiddleTick property of the scale.
 
-1. Minor - specify the third level of the value intervals. MinorTicks scale's property specifies the number of the third level value intervals inside the secondary value interval. Minor tick marks can't have labels. You can specify the common properties and the appearance of the minor tick mark using MinorTick property of the scale.
+3. __Minor__ - specify the third level of the value intervals. MinorTicks scale's property specifies the number of the third level value intervals inside the secondary value interval. Minor tick marks can't have labels. You can specify the common properties and the appearance of the minor tick mark using MinorTick property of the scale.
 
 There are 2 alternative ways to set number of the major ticks along the scale. This first one is using MajorTicks property. It sets number of the of the value intervals along the entire length of the scale bar:
 
 #### __XAML__
-
 {{region linear-scale-tick-marks_0}}
 	<telerik:RadHorizontalLinearGauge Width="250" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100" MajorTicks="5" />
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/LinearScale10MajorTicks.png)
 
 The second one uses MajorTickStep property. It sets length of the single tick interval in the scale units:
 
 #### __XAML__
-
 {{region linear-scale-tick-marks_1}}
 	<telerik:RadHorizontalLinearGauge Width="250" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100" MajorTickStep="50" />
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/LinearScale20MajorTickStep.png)
 
@@ -55,43 +47,36 @@ Sometimes desirable length of the major tick (MajorTickStep) creates situations 
 In this situation we can use ShowLastLabel property to indicate whether the tick mark at the end position should be shown:
 
 #### __XAML__
-
 {{region linear-scale-tick-marks_2}}
 	<telerik:RadHorizontalLinearGauge Width="250" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="102" MajorTickStep="20" ShowLastLabel="False" />
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/LinearScaleNoEndTickMark.png)
 
 By default, the major tick marks start from the minimum scale value and move to the maximum value. But you can shift first and last major tick marks along scale using StartTickOffset and EndTickOffset properties:
 
 #### __XAML__
-
 {{region linear-scale-tick-marks_3}}
 	<telerik:RadHorizontalLinearGauge Width="250" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100" StartTickOffset="10" EndTickOffset="-10" />
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/LinearScaleTickMarkOffset.png)
 
 To change properties of the tick mark (Major, Middle or Minor) you should set the correspondent property to the scale element in XAML:
 
-1. Major tick mark - MajorTickBackground, MajorTickLocation, MajorTickOffset, MajorTickStroke, MajorTickStrokeThickness and etc.
+2. __Major tick mark__ - MajorTickBackground, MajorTickLocation, MajorTickOffset, MajorTickStroke, MajorTickStrokeThickness and etc.
 
-1. Middle tick mark - MiddleTickBackground, MiddleTickLocation, MiddleTickOffset, MiddleTickStroke, MiddleTickStrokeThickness and etc.
+3. __Middle tick mark__ - MiddleTickBackground, MiddleTickLocation, MiddleTickOffset, MiddleTickStroke, MiddleTickStrokeThickness and etc.
 
-1. Minor tick mark - MinorTickBackground, MinorTickLocation, MinorTickOffset, MinorTickStroke, MinorTickStrokeThickness and etc.
+4. __Minor tick mark__ - MinorTickBackground, MinorTickLocation, MinorTickOffset, MinorTickStroke, MinorTickStrokeThickness and etc.
 
 Then you have to define tick mark properties using MajorTickProperties, MiddleTickProperties and MinorTickProperties element:
 
 #### __XAML__
-
 {{region linear-scale-tick-marks_4}}
 	<telerik:RadHorizontalLinearGauge Grid.Column="2" Width="250" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100" 
@@ -104,11 +89,7 @@ Then you have to define tick mark properties using MajorTickProperties, MiddleTi
 	        </telerik:HorizontalLinearScale.Ranges>
 	    </telerik:HorizontalLinearScale>
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it is True, then each tick mark within the range uses a color according to the specified range's TickBackground property:
 
@@ -119,7 +100,6 @@ The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it
 The RadGauge control provides very flexible standard tick marks and labels, but sometimes it is necessary to show additional elements in particular scale position. This can be achievied by using custom elements which can be placed at a specific value (shown at value 0,75 and 100 in the image below) by setting the Value property. Just like the major and minor tick marks, the look of the custom tick marks can be fully customized.
 
 #### __XAML__
-
 {{region linear-scale-tick-marks_5}}
 	<telerik:RadHorizontalLinearGauge Grid.Column="2" Width="250" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadHorizontalLinearGauge.Resources>
@@ -162,9 +142,7 @@ The RadGauge control provides very flexible standard tick marks and labels, but 
 	        </telerik:HorizontalLinearScale.CustomItems>
 	    </telerik:HorizontalLinearScale>
 	</telerik:RadHorizontalLinearGauge>
-	{{endregion}}
-
-
+{{endregion}}
 
 ![](images/LinearScaleCustomTickMark.png)
 

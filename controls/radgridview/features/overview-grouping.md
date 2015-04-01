@@ -10,7 +10,7 @@ position: 3
 
 # Grouping
 
-The __RadGridView__ provides you with a built-in grouping functionality, which allows the user to easily group the data by one or more columns. To do so the user has to just drag the desired column to the __GridViewGroupPanel__, located at the top of the __RadGridView__. If __RadGridView__ is not grouped, the __GridViewGroupPanel__ shows a customizable hint.
+__RadGridView__ provides you with a built-in grouping functionality, which allows the user to easily group the data by one or more columns. To do so the user has to just drag the desired column to the __GridViewGroupPanel__, located at the top of the __RadGridView__. If __RadGridView__ is not grouped, the __GridViewGroupPanel__ shows a customizable hint.
 
 
 ![](images/RadGridView_FunctionalOverview_Grouping_1.png)
@@ -71,6 +71,8 @@ Check out the chapters entirely dedicated to the grouping functionality of __Rad
 
 * How to [define grouping]({%slug gridview-programmatic-grouping%}) using __GroupDescriptors__ in both XAML and code-behind.
 
+* How to configure [Grouping Modes]({%slug gridview-grouping-groupingmodes%}).
+
 * How to use the exposed [grouping events]({%slug gridview-grouping-basics%}).
 
 * How to [disable]({%slug gridview-grouping-basics%}) the default grouping per column or for the whole __RadGridView__ control.
@@ -86,7 +88,7 @@ Check out the chapters entirely dedicated to the grouping functionality of __Rad
 * How to use the [group footers]({%slug gridview-group-footers%}).
 
 # See Also
-
+ 
  * [Filtering]({%slug gridview-overview-filtering%})
 
  * [Data Selection]({%slug gridview-overview-data-selection%})

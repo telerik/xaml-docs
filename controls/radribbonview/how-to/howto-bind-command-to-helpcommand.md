@@ -10,8 +10,6 @@ position: 13
 
 # Bind Command to the HelpCommand property
 
-
-
 ## Bind Command to the HelpCommand property
 
 The __RadRibbonView__ exposes a property called __HelpCommand__ which can be bound to an object of type __ICommand__. This command will be executed when the built-in help button is clicked.
@@ -21,7 +19,6 @@ In this section we will demonstrate how to create a custom command and bind it t
 First let’s define the __RadRibbonView__ in our view and set the __HelpButtonVisibility__ to True.
 
 #### __XAML__
-
 {{region radribbonview-howto-bind-command-to-helpcommand-02}}
 	<telerik:RadRibbonView HelpButtonVisibility="Visible" ApplicationButtonImageSource="Backstage_Icon.png">
 		<telerik:RadRibbonTab Header="Home">
@@ -36,14 +33,13 @@ First let’s define the __RadRibbonView__ in our view and set the __HelpButtonV
 		<telerik:RadRibbonTab Header="Insert" />
 		<telerik:RadRibbonTab Header="References" />
 	</telerik:RadRibbonView>
-	{{endregion}}
+{{endregion}}
 
+Create a __DelegateCommand__ object
 
-
-Create a __DelegateCommand__ object{% if site.site_name == 'WPF' %}
+{% if site.site_name == 'WPF' %}
 
 #### __C#__
-
 {{region radribbonview-howto-bind-command-to-helpcommand-01}}
     public DelegateCommand OpenHelpPageCommand { get; set; }
     public MainWindow()
@@ -52,12 +48,12 @@ Create a __DelegateCommand__ object{% if site.site_name == 'WPF' %}
         OpenHelpPageCommand = new DelegateCommand(ExecuteCommandHandler, CanExecuteCommandHandler);
         this.DataContext = OpenHelpPageCommand;
     }
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
 
 #### __C#__
-
 {{region radribbonview-howto-bind-command-to-helpcommand-03}}
 	public DelegateCommand OpenHelpPageCommand { get; set; }
 	public MainPage()
@@ -70,12 +66,12 @@ Create a __DelegateCommand__ object{% if site.site_name == 'WPF' %}
         inputBindCollection.Add(new KeyBinding(this.OpenHelpPageCommand, new KeyGesture(Key.F1)));
         CommandManager.SetInputBindings(this, inputBindCollection);
     }
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
+{% endif %}
+{% if site.site_name == 'WPF' %}
 
 #### __VB.NET__
-
 {{region radribbonview-howto-bind-command-to-helpcommand-01}}
     Public Property OpenHelpPageCommand() As DelegateCommand
         Get
@@ -92,12 +88,12 @@ Create a __DelegateCommand__ object{% if site.site_name == 'WPF' %}
         OpenHelpPageCommand = New DelegateCommand(ExecuteCommandHandler, CanExecuteCommandHandler)
         Me.DataContext = OpenHelpPageCommand
     End Sub
-	{{endregion}}
+{{endregion}}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
 
 #### __VB.NET__
-
 {{region radribbonview-howto-bind-command-to-helpcommand-03}}
     Public Property OpenHelpPageCommand() As DelegateCommand
         Get
@@ -117,17 +113,15 @@ Create a __DelegateCommand__ object{% if site.site_name == 'WPF' %}
         inputBindCollection.Add(New KeyBinding(Me.OpenHelpPageCommand, New KeyGesture(Key.F1)))
         CommandManager.SetInputBindings(Me, inputBindCollection)
     End Sub
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
->The __HelpCommand__ property will accept every object that implements the [ICommand](http://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.110).aspx) interface. The __DelegateCommand__ class implements the __ICommand__.
-          
+>The __HelpCommand__ property will accept every object that implements the [ICommand](http://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.110).aspx) interface. The __DelegateCommand__ class implements the __ICommand__.          
 
 Implement your logic in the __Execute__ and __CanExecute__ handlers of the __DelegateCommand__
 
 #### __C#__
-
 {{region radribbonview-howto-bind-command-to-helpcommand-02}}
 	private bool CanExecuteCommandHandler(object obj)
 	{
@@ -140,12 +134,9 @@ Implement your logic in the __Execute__ and __CanExecute__ handlers of the __Del
 	    // Implement the logic that should be executed when the button is clicked
 	    MessageBox.Show("Help Command Executed");
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radribbonview-howto-bind-command-to-helpcommand-02}}
     Private Function CanExecuteCommandHandler(obj As Object) As Boolean
         ' Implement logic that checks if the button command can be executed'
@@ -156,30 +147,20 @@ Implement your logic in the __Execute__ and __CanExecute__ handlers of the __Del
         ' Implement the logic that should be executed when the button is clicked'
         MessageBox.Show("Help Command Executed")
     End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 Finally you can bind the command
 
 #### __XAML__
-
 {{region radribbonview-howto-bind-command-to-helpcommand-03}}
 	<telerik:RadRibbonView HelpButtonVisibility="Visible" HelpCommand="{Binding}" />
-	{{endregion}}
+{{endregion}}
 
+>tip In addition you can use the __HelpCommandParameter__ and the __HelpCommandTarget__ properties of the __RadRibbonView__ in order to pass additional data to the command.        
 
-
->tipIn addition you can use the __HelpCommandParameter__ and the __HelpCommandTarget__ properties of the __RadRibbonView__ in order to pass additional data to the command.
-        
-
->tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to RibbonView/HelpFunctionality.
-          
+>tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to RibbonView/HelpFunctionality.          
 
 # See Also
-
  * [Show Help Button and Change its Image]({%slug radribbonview-howto-show-help-icon-and-change-its-image%})
-
  * [Getting Started]({%slug radribbonview-gettingstarted%})
-
  * [Visual Structure]({%slug radribbonview-visual-structure%})

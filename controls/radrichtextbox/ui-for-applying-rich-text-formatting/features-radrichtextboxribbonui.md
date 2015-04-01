@@ -15,11 +15,7 @@ position: 0
 This topic explains how the predefined UI of __RadRichTextBox__ - __RadRichTextBoxRibbonUI__ - can be used.
       
 
-__RadRichTextBoxRibbonUI__ is a ribbon control that has been wired to work with the commands that
-        __RadRichTextBox__ exposes.
-      
-
-In the versions before 2011.Q3.Beta (2011.3.1020), it was based on __RadRibbonBar__, but starting from the version in question, it uses __RadRibbonView__ instead.
+__RadRichTextBoxRibbonUI__ is a ribbon control that has been wired to work with the commands that __RadRichTextBox__ exposes.
       
 
 ## Using RadRichTextBoxRibbonUI
@@ -27,29 +23,9 @@ In the versions before 2011.Q3.Beta (2011.3.1020), it was based on __RadRibbonBa
 RadRichTextBoxRibbonUI can be found in the Toolbox of Visual Studio, if you have installed the controls automatically.
 
 >If you have not installed __Telerik UI__ automatically or the dlls you use are using are placed in another folder, you have to manually add the __RadRichTextBoxRibbonUI__ to the __Toolbox__. Here are the steps you have to follow in order to do this:
-          
-
-1. Add references to the following DLLs in your project:
-              
-
-* __Telerik.Windows.Controls__,
-                  
-
-* __Telerik.Windows.Controls.Input__,
-                  
-
-* __Telerik.Windows.Controls.Navigation__,
-                  
-
-* __Telerik.Windows.Controls.RibbonView__,
-                  
-
-* __Telerik.Windows.Controls.RichTextBoxUI__.
-                  
-
-1. Drag __Telerik.Windows.Controls.RichTextBoxUI.dll__ to your toolbox.
-                Ensure that __Telerik.Windows.Controls.RichTextBoxUI.VisualStudio.Design.dll__ assembly is in the same directory as __Telerik.Windows.Controls.RichTextBoxUI.dll__, so the Visual Studio can load it (actually it could be placed one level deeper in a subfolder named __Design__).
-              Now you should be able to drag the __RadRichTextBoxRibbonUI__ from the toolbox to the design surface.
+	1. Add references to the following DLLs in your project: <br/> __Telerik.Windows.Controls__<br/> __Telerik.Windows.Controls.Input__<br/>__Telerik.Windows.Controls.Navigation__ <br/> __Telerik.Windows.Controls.RibbonView__<br/> __Telerik.Windows.Controls.RichTextBoxUI__
+	2. Drag __Telerik.Windows.Controls.RichTextBoxUI.dll__ to your toolbox. Ensure that __Telerik.Windows.Controls.RichTextBoxUI.VisualStudio.Design.dll__ assembly is in the same directory as __Telerik.Windows.Controls.RichTextBoxUI.dll__, so the Visual Studio can load it (actually it could be placed one level deeper in a subfolder named __Design__). 
+>Now you should be able to drag the __RadRichTextBoxRibbonUI__ from the toolbox to the design surface.
           
 
 In order to use it, you have to open the desired __UserControl__ and choose __Designer View__. Drag an instance of the __RadRichTextBoxRibbonUI__ in the designer area and drop it. Wait for a few seconds. After that all the XAML will be generated automatically and you will get a fully functional and fully customizable UI for your __RadRichTextBox__.

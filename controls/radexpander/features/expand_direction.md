@@ -10,18 +10,11 @@ position: 1
 
 # Expand Direction
 
-
-
 The __ExpandDirection__ property gets or sets the direction in which the content would expand.
-			
 
-## 
-
-The grid below contains four __RadExpander__ controls, each with a different __ExpandDirection__:
-				
+The grid below contains four __RadExpander__ controls, each with a different __ExpandDirection__:				
 
 #### __XAML__
-
 {{region radexpander-features-expand_direction_0}}
     <Grid x:Name="LayoutRoot" 
           Width="555"
@@ -85,6 +78,6 @@ The grid below contains four __RadExpander__ controls, each with a different __E
             </StackPanel>
         </telerik:RadExpander>
     </Grid>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadExpander_Features_ExpandDirection.png)

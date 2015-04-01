@@ -85,3 +85,5 @@ __Example 1:__ Specifying FilterMemberPath for the column to filter it based on 
  * [Visual Structure]({%slug gridview-visual-structure%})
 
  * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})
+
+ * [Reevaluation of data operations]({%slug gridview-troubleshooting-reevaluation%})

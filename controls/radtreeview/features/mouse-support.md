@@ -17,5 +17,5 @@ To learn more about the __RadTreeView__'s mouse support take a look at the [Drag
 # See Also
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})
  * [Keyboard Support]({%slug radtreeview-features-keyboard-support%})
- * [Work with Selection]({%slug radtreeview-how-to-how-to-work-with-selection%})
+ * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
  * [Add Context Menu]({%slug radtreeview-how-to-add-context-menu%})

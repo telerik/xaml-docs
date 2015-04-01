@@ -14,6 +14,20 @@ The built-in localization mechanism in Silverlight and WPF allows you to localiz
 
 ![RadScheduleView Localization 01](images/radscheduleview_localization01.png)
 
+## Supported Languages
+
+__RadScheduleView__ can be translated in one of the following supported languages using the framework’s localization mechanism:
+
+* English
+* German
+* Spanish
+* French
+* Italian
+* Dutch
+* Turkish
+
+More information on how to achieve this you can find in the [Localization Using Built-in Resources] ({%slug common-localization%}) article.
+
 ## LocalizationManager
 
 The __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls.
@@ -83,8 +97,8 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 {{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
->If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, >if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__files. For the >__Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__or __Public__and for others - to __No code generation__. Then, open the project >file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
-><SupportedCultures>en;nl</SupportedCultures>
+>If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, >if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the >__Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others - to __No code generation__. Then, open the project >file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
+> <SupportedCultures>en;nl</SupportedCultures>
 {% endif %}
 
 Here is how the localized __RadScheduleView__ looks like:

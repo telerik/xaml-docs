@@ -10,11 +10,7 @@ position: 2
 
 # Implement custom zoom levels for MapZoomBar UI
 
-
-
 It is now possible to customize the default preset zoom levels in the MapZoomBar UI for every map provider.
-
-
 
 ## Customization of the zoom levels in the MapZoomBar
 
@@ -28,14 +24,9 @@ You can add custom zoom level through the __MapZoomBar.RegisterSetZoomLevelComma
 
 * imageUri - Uniform resource identifier (URI) of the image that is used in the map source button data template (you need to bind it in the DataTemplate as demonstrated below).
 
-
-
 Here is a sample code snippet that demonstrates zoom level customization:
 
-
-
 #### __XAML__
-
 {{region radmap-howto-custom-zoom-levels_0}}
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
@@ -82,12 +73,9 @@ Here is a sample code snippet that demonstrates zoom level customization:
 	                    GeoBounds="42.3683598045287, -71.0789727419614, 3.9167707221002743, 2.1883037274811104">
 	    </telerik:RadMap>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap-howto-custom-zoom-levels_1}}
 	private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
 	private string VEKey;
@@ -115,12 +103,9 @@ Here is a sample code snippet that demonstrates zoom level customization:
 	        this.LayoutRoot.Resources["CustomCommandDataTemplate"] as DataTemplate,
 	        new Uri(imagePath, UriKind.RelativeOrAbsolute));
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap-howto-custom-zoom-levels_2}}
 	Private Const ImagePathFormat As String = "/Map;component/Silverlight/CustomCommands/Images/{0}.png"
 	Private VEKey As String
@@ -132,7 +117,7 @@ Here is a sample code snippet that demonstrates zoom level customization:
 	End Sub
 	
 	Private Sub RadMap1_InitializeCompleted(sender As Object, e As EventArgs)
-	 ' remove the default zoom levels
+	 ' remove the default zoom levels '
 	 RadMap1.MapZoomBar.Commands.Clear()
 	 Me.AddCustomZoomAction(15, "Downtown")
 	 Me.AddCustomZoomAction(18, "Neighborhood")
@@ -142,4 +127,4 @@ Here is a sample code snippet that demonstrates zoom level customization:
 	 Dim imagePath As String = String.Format(ImagePathFormat, label)
 	 Me.RadMap1.MapZoomBar.RegisterSetZoomLevelCommand(zoomLevel, label, TryCast(Me.LayoutRoot.Resources("CustomCommandDataTemplate"), DataTemplate), New Uri(imagePath, UriKind.RelativeOrAbsolute))
 	End Sub
-	{{endregion}}
+{{endregion}}

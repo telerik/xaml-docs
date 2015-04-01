@@ -16,7 +16,7 @@ The purpose of this tutorial is to show you how to populate a __RadGridView__ wi
 
 * Using MVVM approach.  
 
->This tutorial will use the __Northwind__database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
+>This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadGridView__ declaration in your XAML: 
 
@@ -332,11 +332,13 @@ Run your demo, the result can be seen on the next picture:
  * [Using in-memory Data]({%slug gridview-in-memory-date%})
 
  * [Loading Data from XML]({%slug gridview-loading-data-from-xml%})
+ 
+ * [Loading Data from WCF Services]({%slug gridview-loading-data-from-wcf-services%})
+{% if site.site_name == 'Silverlight' %}
 
  * [Loading Data from RIA Services]({%slug gridview-loading-data-from-ria-services%})
 
  * [DomainDataSource Support]({%slug gridview-domaindatasource-support%})
 
- * [Loading Data from WCF Services]({%slug gridview-loading-data-from-wcf-services%})
-
  * [Loading Data from Web Services]({%slug gridview-loading-data-from-web-services%})
+{% endif %}

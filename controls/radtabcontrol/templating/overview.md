@@ -44,5 +44,3 @@ __RadTabControl__ takes full advantage of the templates by providing a set of __
  * [Item Template and Template Selectors]({%slug radtabcontrol-item-templates-and-selectors%})
 
  * [Choose Header Template by Custom Logic]({%slug radtabcontrol-templating-custom-header-template%})
-
- * [Left/Top/Right/Bottom Templates]({%slug radtabcontrol-left-top-right-bottom-templates%})

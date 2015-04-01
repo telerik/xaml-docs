@@ -10,22 +10,15 @@ position: 3
 
 # Map Shape Data
 
+The previous visualization engine based on the InformationLayer class provides you with a set of shape objects, which are specifically designed to work with the RadMap:  MapEllipse, MapLine, MapPolygon, MapPolyline, MapRectangle and MapPath. All these classes are combination of the geographical data and visualization objects. This approach has several problems. For example, it makes impossible to create map shapes in a background thread and has limited support for input events.      
 
+The visualization engine based on the VisualizationLayer class introduces a new approach that separates the geographical data and its visualization. The new map shape data classes are not dependency objects. This allows them to be created in the background thread. The unified map shape visualization engine allows attaching to any input event supported by the [ContentPresenter](http://msdn.microsoft.com/en-us/library/system.windows.controls.contentpresenter.aspx) class to the map shape visual presentation.      
 
-The previous visualization engine based on the InformationLayer class provides you with a set of shape objects, which are specifically designed to work with the RadMap:  MapEllipse, MapLine, MapPolygon, MapPolyline, MapRectangle and MapPath. All these classes are combination of the geographical data and visualization objects. This approach has several problems. For example, it makes impossible to create map shapes in a background thread and has limited support for input events.
-      
+You will be able to find equivalents to most of the Shapes available in WPF/Silverlight.      
 
-The visualization engine based on the VisualizationLayer class introduces a new approach that separates the geographical data and its visualization. The new map shape data classes are not dependency objects. This allows them to be created in the background thread. The unified map shape visualization engine allows attaching to any input event supported by the [ContentPresenter](http://msdn.microsoft.com/en-us/library/system.windows.controls.contentpresenter.aspx) class to the map shape visual presentation.
-      
+>To learn more about the different ways of customizing the shape apperance, please check the [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%}) topic.        
 
-You will be able to find equivalents to most of the Shapes available in WPF/Silverlight.
-      
-
->To learn more about the different ways of customizing the shape apperance, please check the [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%}) topic.
-        
-
-The map shape data can be used identically to their visual element counterparts. This topic will focus briefly on showing you how to use the most important of them:
-      
+The map shape data can be used identically to their visual element counterparts. This topic will focus briefly on showing you how to use the most important of them:      
 
 1. EllipseData
 1. LineData
@@ -36,8 +29,7 @@ The map shape data can be used identically to their visual element counterparts.
 
 ## EllipseData
 
->In contrast with MapEllipse which is used with InformationLayer the Width and Height of the EllipseData are given in the spatial reference units (degrees by default) instead of current distance unit (mile or kilometer).
-          
+>In contrast with MapEllipse which is used with InformationLayer the Width and Height of the EllipseData are given in the spatial reference units (degrees by default) instead of current distance unit (mile or kilometer).          
 
 To use the EllipseData in your visualization layer you have to set the following of its properties:
         
@@ -47,11 +39,9 @@ To use the EllipseData in your visualization layer you have to set the following
             
 >Note that the top left corner coincides with the given location.
           
-Here it is an example:
-        
+Here it is an example:        
 
 #### __XAML__
-
 {{region radmap_visualization_layer_map_shape_data_0}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -71,12 +61,9 @@ Here it is an example:
 			</telerik:EllipseData>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap_visualization_layer_map_shape_data_0}}
 	EllipseData ellipse = new EllipseData()
 	{
@@ -92,12 +79,9 @@ Here it is an example:
 	};
 	
 	this.visualizationLayer.Items.Add(ellipse);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap_visualization_layer_map_shape_data_0}}
 	Dim ellipse As New EllipseData() With { _
 		.Location = New Location(43.4457539183824, 23.2927663758679), _
@@ -111,17 +95,15 @@ Here it is an example:
 	}
 	
 	Me.visualizationLayer.Items.Add(ellipse)
-	{{endregion}}
+{{endregion}}
 
 ![radmap-visualization-layer-map-shape-data-ellipse](images/radmap-visualization-layer-map-shape-data-ellipse.png)
 
 ## LineData
 
-The most important properties of the LineData class are the __Point1__ and __Point2__ properties, which are of type Location. They define the start and the end points of the line. Here is an example:
-        
+The most important properties of the LineData class are the __Point1__ and __Point2__ properties, which are of type Location. They define the start and the end points of the line. Here is an example:        
 
 #### __XAML__
-
 {{region radmap_visualization_layer_map_shape_data_1}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -139,12 +121,9 @@ The most important properties of the LineData class are the __Point1__ and __Poi
 			</telerik:LineData>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap_visualization_layer_map_shape_data_1}}
 	LineData line = new LineData()
 	{
@@ -158,12 +137,9 @@ The most important properties of the LineData class are the __Point1__ and __Poi
 	};
 	
 	this.visualizationLayer.Items.Add(line);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap_visualization_layer_map_shape_data_1}}
 	Dim line As New LineData() With { _
 		.Point1 = New Location(42.6957539183824, 23.3327663758679), _
@@ -175,17 +151,15 @@ The most important properties of the LineData class are the __Point1__ and __Poi
 	}
 	
 	Me.visualizationLayer.Items.Add(line)
-	{{endregion}}
+{{endregion}}
 
 ![radmap-visualization-layer-map-shape-data-line](images/radmap-visualization-layer-map-shape-data-line.png)
 
 ## PathData
 
-The PathData provides equivalents of the standard Geometry and Segment classes in WPF/Silverlight. Here is an example that uses LineSegmentData:
-        
+The PathData provides equivalents of the standard Geometry and Segment classes in WPF/Silverlight. Here is an example that uses LineSegmentData:        
 
 #### __XAML__
-
 {{region radmap_visualization_layer_map_shape_data_2}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="7"
@@ -227,12 +201,9 @@ The PathData provides equivalents of the standard Geometry and Segment classes i
 			</telerik:PathData>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap_visualization_layer_map_shape_data_2}}
 	PathData path = new PathData()
 	{
@@ -280,12 +251,9 @@ The PathData provides equivalents of the standard Geometry and Segment classes i
 	path.Data = geometry;
 	
 	this.visualizationLayer.Items.Add(path);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap_visualization_layer_map_shape_data_2}}
 	Dim path As New PathData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -326,17 +294,15 @@ The PathData provides equivalents of the standard Geometry and Segment classes i
 	path.Data = geometry
 	
 	Me.visualizationLayer.Items.Add(path)
-	{{endregion}}
+{{endregion}}
 
 ![radmap-visualization-layer-map-shape-data-path](images/radmap-visualization-layer-map-shape-data-path.png)
 
 ## PolygonData
 
-The difference between the standard Polygon and the PolygonData is that the Points property of the PolygonData is a set of Locations. Here is an example:
-        
+The difference between the standard Polygon and the PolygonData is that the Points property of the PolygonData is a set of Locations. Here is an example:        
 
 #### __XAML__
-
 {{region radmap_visualization_layer_map_shape_data_3}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="5"
@@ -354,12 +320,9 @@ The difference between the standard Polygon and the PolygonData is that the Poin
 			</telerik:PolygonData>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap_visualization_layer_map_shape_data_3}}
 	PolygonData polygon = new PolygonData()
 	{
@@ -380,12 +343,9 @@ The difference between the standard Polygon and the PolygonData is that the Poin
 	polygon.Points = points;
 	
 	this.visualizationLayer.Items.Add(polygon);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap_visualization_layer_map_shape_data_3}}
 	Dim polygon As New PolygonData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -404,17 +364,15 @@ The difference between the standard Polygon and the PolygonData is that the Poin
 	polygon.Points = points
 	
 	Me.visualizationLayer.Items.Add(polygon)
-	{{endregion}}
+{{endregion}}
 
 ![radmap-visualization-layer-map-shape-data-polygon](images/radmap-visualization-layer-map-shape-data-polygon.png)
 
 ## PolylineData
 
-The difference between the standard Polyline and the PolylineData is that the Points property of the PolylineData is a set of Locations. Here is an example:
-        
+The difference between the standard Polyline and the PolylineData is that the Points property of the PolylineData is a set of Locations. Here is an example:        
 
 #### __XAML__
-
 {{region radmap_visualization_layer_map_shape_data_4}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="7"
@@ -431,12 +389,9 @@ The difference between the standard Polyline and the PolylineData is that the Po
 			</telerik:PolylineData>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap_visualization_layer_map_shape_data_4}}
 	PolylineData polyline = new PolylineData()
 	{
@@ -456,12 +411,9 @@ The difference between the standard Polyline and the PolylineData is that the Po
 	polyline.Points = points;
 	
 	this.visualizationLayer.Items.Add(polyline);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap_visualization_layer_map_shape_data_4}}
 	Dim polyline As New PolylineData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -479,32 +431,25 @@ The difference between the standard Polyline and the PolylineData is that the Po
 	polyline.Points = points
 	
 	Me.visualizationLayer.Items.Add(polyline)
-	{{endregion}}
+{{endregion}}
 
 ![radmap-visualization-layer-map-shape-data-polyline](images/radmap-visualization-layer-map-shape-data-polyline.png)
 
 ## RectangleData
 
-To use the RectangleData in your visualization layer you have to set the following properties:
-        
+To use the RectangleData in your visualization layer you have to set the following properties:       
 
-* Location - represents the location on the map, to which the ellipse is bound.
-            
+* Location - represents the location on the map, to which the ellipse is bound.            
 
-* Width / Height - represent the width / height of the ellipse. Just like the Width and Height properties of the EllipseData class, they are specified in spatial reference units (degrees by default).
-            
+* Width / Height - represent the width / height of the ellipse. Just like the Width and Height properties of the EllipseData class, they are specified in spatial reference units (degrees by default).            
 
-* RadiusX / RadiusY - represent the radius of the rectangle corners. Measured in spatial reference units.
-            
+* RadiusX / RadiusY - represent the radius of the rectangle corners. Measured in spatial reference units.            
 
->Note that the top left corner coincides with the given location.
-          
+>Note that the top left corner coincides with the given location.          
 
-Here it is an example:
-        
+Here it is an example:        
 
 #### __XAML__
-
 {{region radmap_visualization_layer_map_shape_data_5}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -526,12 +471,9 @@ Here it is an example:
 			</telerik:RectangleData>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap_visualization_layer_map_shape_data_5}}
 	RectangleData rect = new RectangleData()
 	{
@@ -549,12 +491,9 @@ Here it is an example:
 	};
 	
 	this.visualizationLayer.Items.Add(rect);
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap_visualization_layer_map_shape_data_5}}
 	Dim rect As New RectangleData() With { _
 		.Location = New Location(43.4457539183824, 23.2927663758679), _
@@ -570,6 +509,6 @@ Here it is an example:
 	}
 	
 	Me.visualizationLayer.Items.Add(rect)
-	{{endregion}}
+{{endregion}}
 
 ![radmap-visualization-layer-map-shape-data-rectangle](images/radmap-visualization-layer-map-shape-data-rectangle.png)

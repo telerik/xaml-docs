@@ -10,8 +10,6 @@ position: 8
 
 # Shape Reader
 
-
-
 The __RadMap__ allows you to read data from several data formats and wrap it in __MapShape__ objects. The currently supported formats are:
 
 * [KML Data]({%slug radmap-features-kml-data-import%})
@@ -33,7 +31,6 @@ This topic will explain the following:
 The __RadMap__ control supports the visualization of __ESRI Shapefiles__ and KML Data. It reads the data via the __MapShapeReader__ class implemented in the __Information Layer__.
 
 #### __XAML__
-
 {{region radmap-features-information-layer-shape-reder_0}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -42,25 +39,17 @@ The __RadMap__ control supports the visualization of __ESRI Shapefiles__ and KML
 	        </telerik:InformationLayer.Reader>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap-features-information-layer-shape-reder_1}}
 	this.informationLayer.Reader = new MapShapeReader();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap-features-information-layer-shape-reder_2}}
 	Me.informationLayer.Reader = New MapShapeReader()
-	{{endregion}}
-
-
+{{endregion}}
 
 To specify the type of the data the reader should read use the __SourceType__ property of the __MapShapeReader__ class. It can have the following values:
 
@@ -78,8 +67,7 @@ To learn how to specify the files for each of the types read the respective topi
 
 ## Specifying a Tooltip
 
-The __MapShapeReader__ object can use the data in the .dbf file and display it in a tooltip for the respective shape. In order to allow you to configure the tooltip's appearance and content, The __MapShapeReader__ class exposes the following properties:
-        
+The __MapShapeReader__ object can use the data in the .dbf file and display it in a tooltip for the respective shape. In order to allow you to configure the tooltip's appearance and content, The __MapShapeReader__ class exposes the following properties:        
 
 * [ToolTipFormat](#tooltipformat) - allows you to specify the format string for the tooltip. This is the simplest way to configure the tooltip, when having a one-line tooltip scenario.
 
@@ -89,18 +77,15 @@ The __MapShapeReader__ object can use the data in the .dbf file and display it i
 
 ## ToolTipFormat
 
-Using the __ToolTipFormat__ property is the simplest way to create a single-line tooltip. The property is of type string and allow you to display both the value of a single property of the extended data and combination of the values of different extended data properties.
-        
+Using the __ToolTipFormat__ property is the simplest way to create a single-line tooltip. The property is of type string and allow you to display both the value of a single property of the extended data and combination of the values of different extended data properties.        
 
->tipTo access the value of an extended data property use its name.
+>tip To access the value of an extended data property use its name.
 
-Here is an examples for different __ToolTipFormat__ values.
-        
+Here is an examples for different __ToolTipFormat__ values.        
 
 ## Single property value 
 
 #### __XAML__
-
 {{region radmap-features-information-layer-shape-reder_3}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -111,36 +96,27 @@ Here is an examples for different __ToolTipFormat__ values.
 	        </telerik:InformationLayer.Reader>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap-features-information-layer-shape-reder_4}}
 	this.informationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap-features-information-layer-shape-reder_5}}
 	Me.informationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Shapefiles_01.png)
-
-
 
 ## Formatted property value
 
 >Note that in this case the format string begins with "__{}__". This escapes the following __{PropertyName}__ expressions. In code behind you mustn't add it to the actual format string.
 
 #### __XAML__
-
 {{region radmap-features-information-layer-shape-reder_6}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -151,24 +127,19 @@ Here is a snapshot of the result.
 	        </telerik:InformationLayer.Reader>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
+{{endregion}}
     
 #### __C#__
-
 {{region radmap-features-information-layer-shape-reder_7}}
 	this.informationLayer.Reader.ToolTipFormat = "{SQKM|F2} sq.km.";
-	{{endregion}}
-
+{{endregion}}
     
 #### __VB.NET__
-
 {{region radmap-features-information-layer-shape-reder_8}}
 	Me.informationLayer.Reader.ToolTipFormat = "{SQKM|F2} sq.km.";
-	{{endregion}}
-
+{{endregion}}
     
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Shapefiles_02.png)
 
@@ -176,10 +147,7 @@ Here is a snapshot of the result.
 
 >Note that in this case the format string begins with "__{}__". This escapes the following __{PropertyName}__ expressions. In code behind you mustn't add it to the actual format string.
 
-
-
 #### __XAML__
-
 {{region radmap-features-information-layer-shape-reder_9}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -190,26 +158,19 @@ Here is a snapshot of the result.
 	        </telerik:InformationLayer.Reader>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap-features-information-layer-shape-reder_10}}
 	this.informationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|F2} sq.km.";
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap-features-information-layer-shape-reder_11}}
 	Me.informationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|F2} sq.km."
-	{{endregion}}
+{{endregion}}
 
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Shapefiles_03.png)
 
@@ -217,10 +178,9 @@ Here is a snapshot of the result.
 
 The __ToolTipStyle__ property allows you to specify a Style of the tooltip that gets displayed. The Style should target the ToolTip control. Here is an example.
 
->tipTo learn how to modify the color of the shapes like on the snapshot below, you have to read the [Styling the Shapes](#styling-the-shapes) section.
+>tip To learn how to modify the color of the shapes like on the snapshot below, you have to read the [Styling the Shapes](#styling-the-shapes) section.
 
 #### __XAML__
-
 {{region radmap-features-information-layer-shape-reder_12}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -242,11 +202,9 @@ The __ToolTipStyle__ property allows you to specify a Style of the tooltip that 
 	        </telerik:InformationLayer.Reader>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Shapefiles_04.png)
 
@@ -259,7 +217,6 @@ In this case the __DataTemplate__ takes as __DataContext__ the entire Extended D
 >The __ToolTipTemplate__ property will take precedence over the __ToolTipFormat__ one.
 
 #### __XAML__
-
 {{region radmap-features-information-layer-shape-reder_13}}
 	<UserControl.Resources>
 	    <telerik:ExtendedDataConverter x:Key="ExtendedDataConverter" />
@@ -282,11 +239,9 @@ In this case the __DataTemplate__ takes as __DataContext__ the entire Extended D
 	        </telerik:InformationLayer.Reader>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-	{{endregion}}
+{{endregion}}
 
-
-
-Here is a snapshot of the result.
+Here is a snapshot of the result:
 
 ![](images/RadMap_Shapefiles_05.png)
 
@@ -299,11 +254,7 @@ When adding the read shapes to the layer, the __MapShapeReader__ is able to clea
 To modify the appearance of the shapes in terms of __Fill__, __Stroke__ etc. you can either use the [HighlightFill and Shape Fill](#using-the-mapshapefill-object-on-the-layer-level) properties of the __InformationLayer__ or use the [Colorizer]({%slug radmap-features-colorizer%}) property of the __InformationLayer__.
 
 # See Also
-
  * [Shapefiles Support]({%slug radmap-features-shapefiles-support%})
-
  * [KML Data Import]({%slug radmap-features-kml-data-import%})
-
  * [Colorizer]({%slug radmap-features-colorizer%})
-
  * [Map Legend]({%slug radmap-features-map-legend%})

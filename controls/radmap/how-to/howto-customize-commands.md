@@ -10,8 +10,6 @@ position: 0
 
 # Implement custom commands for MapCommandBar UI
 
-
-
 It is now possible to customize the default set of commands in the MapCommandBar UI for every map provider.
 
 ## Customization of the commands in the MapCommandBar
@@ -32,12 +30,9 @@ The __CommandDescription__ class exposes the following properties:
 
 * __IsSelected__ - Gets or sets a value indicating whether this command is selected initially.
 
-
-
 Here is a sample code snippet that demonstrates custom __RoutedUICommand__ usage:
 
 #### __XAML__
-
 {{region radmap-howto-customize-commands_0}}
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
@@ -84,12 +79,9 @@ Here is a sample code snippet that demonstrates custom __RoutedUICommand__ usage
 	                    GeoBounds="42.3683598045287, -71.0789727419614, 3.9167707221002743, 2.1883037274811104">
 	    </telerik:RadMap>
 	</Grid>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radmap-howto-customize-commands_1}}
 	private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
 	private string VEKey = "set-your-BingMaps-Key-here";
@@ -122,12 +114,9 @@ Here is a sample code snippet that demonstrates custom __RoutedUICommand__ usage
 	{
 	    // execute custom action here...
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap-howto-customize-commands_2}}
 	Private Const ImagePathFormat As String = "/Map;component/Silverlight/CustomCommands/Images/{0}.png"
 	Private VEKey As String = "set-your-BingMaps-Key-here"
@@ -154,20 +143,13 @@ Here is a sample code snippet that demonstrates custom __RoutedUICommand__ usage
 	 provider.CommandBindingCollection.Add(commandBinding)
 	End Sub
 	Private Sub ExecuteCustomCommand(sender As Object, e As ExecutedRoutedEventArgs)
-	 ' execute custom action here...
+	 ' execute custom action here...'
 	End Sub
-	{{endregion}}
-
-
-
-
-
-
+{{endregion}}
 
 Here is a sample code snippet that demonstrates custom __DelegateCommand__ usage:
 
 #### __C#__
-
 {{region radmap-howto-customize-commands_3}}
 	public MainPage()
 	{
@@ -187,17 +169,14 @@ Here is a sample code snippet that demonstrates custom __DelegateCommand__ usage
 	{
 	       MessageBox.Show(string.Format("My command: {0}", parameter));
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radmap-howto-customize-commands_4}}
 	Public Sub New()
 	 InitializeComponent()
-	 ' Call this method if you want to create a brand-new list of custom commands for the provider.
-	 ' Otherwise the custom command will be appended to the default list.
+	 ' Call this method if you want to create a brand-new list of custom commands for the provider. '
+	 ' Otherwise the custom command will be appended to the default list.'
 	 Me.radMap.Provider.Commands.Clear()
 	 Dim commandDescription As New CommandDescription() With { _
 	  .Command = New DelegateCommand(Me.ExecuteCommand), _
@@ -209,6 +188,4 @@ Here is a sample code snippet that demonstrates custom __DelegateCommand__ usage
 	Private Sub ExecuteCommand(parameter As Object)
 	 MessageBox.Show(String.Format("My command: {0}", parameter))
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}

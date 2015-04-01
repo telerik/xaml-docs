@@ -96,10 +96,13 @@ __Snap Mode__
 The SnapMode property of ChartTrackballBehavior determines how the trackball line will be snapped to the chart's data points. Valid property values are __None__, __ClosestPoint__ and __AllClosestPoints__ with None disabling snapping, ClosestPoint snapping to the closest point of all data points in the chart and AllClosestPoints snapping to the closest point from each series object in the chart, that is, it snaps to multiple data points at once. Again, a few screenshots will best describe the different values of SnapMode:
 
 __SnapMode: None__
+![](images/radchartview-chart_behaviors_trackballinfo_03.png)
 
 __SnapMode: ClosestPoint__
+![](images/radchartview-chart_behaviors_trackballinfo_02.png)
 
 __SnapMode: AllClosestPoints__
+![](images/radchartview-chart_behaviors_trackballinfo_01.png)
 
 __TrackInfoUpdated__
 

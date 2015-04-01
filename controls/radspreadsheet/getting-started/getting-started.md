@@ -52,7 +52,7 @@ For export and import to XLSX:
 
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
 
-Note that in order to import/export in XLSX, the format provider must be registered manually. More information on Import/Export can be found [here]({%slug radspreadsheet-import-export%}).
+Note that in order to import/export in XLSX, the format provider must be registered manually. More information on Import/Export can be found [here]({%slug radspreadprocessing-formats-and-conversion-format-providers-manager%}).
         
 
 If you want to use the sample UI provided in our demos you should add there references as well:

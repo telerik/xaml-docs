@@ -10,24 +10,19 @@ position: 0
 
 # Create Thermometer
 
-
-
-## 
-
 In this tutorial we will show how the thermometer like gauge can be created using RadGauge control.
 
->This example is made with the Windows8 theme.
+>This example is made with the Windows8 theme. You can take a look at the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article to see how to set different theme than the default one.
 
 To create thermometer we will use RadVerticalLinearGauge with 2 scales: one for Celsius and one for Fahrenheit scale. We will start Celsius scale at -30 degree and end it at the 40 degree. Degrees in the Fahrenheit scale correspond to the degrees in the Celsius scale by following formula:
 
-Fahrenheit Degree = (Celsius Degree * 9) / 5 - 32
+__Fahrenheit Degree = (Celsius Degree * 9) / 5 - 32__
 
 To get Fahrenheit scale show correspondent temperature we should start it at the -22 degree and end it at the 104 degree. To force Fahrenheit scale show "fine" labels like 20, 40, 60 we will shift start and end tick marks of this scale.
 
 At the beginning we should add simple linear gauge with single scale. Since we would like to show Celsius labels at the left of scale bar and Fahrenheit labels at the right we'll add a TextBlock as custom item.
 
 #### __XAML__
-
 {{region linear-gauge-create-thermometer_0}}
 	<telerik:RadVerticalLinearGauge Width="24" Height="327" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Name="linearScaleC"
@@ -60,16 +55,11 @@ At the beginning we should add simple linear gauge with single scale. Since we w
 	        </telerik:VerticalLinearScale.CustomItems>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 We'll need a unified look for our Celsius and Fahrenheit labels and scales:
 
 #### __XAML__
-
 {{region linear-gauge-create-thermometer_1}}
 	<telerik:Windows8Colors x:Key="Windows8Colors" />
 	<SolidColorBrush x:Key="AccentBrush" Color="{Binding Source={StaticResource Windows8Colors}, Path=Palette.AccentColor}" />
@@ -84,14 +74,11 @@ We'll need a unified look for our Celsius and Fahrenheit labels and scales:
 	    <Setter Property="Fill" Value="Transparent" />
 	    <Setter Property="Stroke" Value="Transparent" />
 	</Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 We'll add two Custom Items (for the thermometer bulb) that should give our gauge a look of thermometer:
 
 #### __XAML__
-
 {{region linear-gauge-create-thermometer_2}}
 	<telerik:LinearScale.CustomItems>
 	    <Path Data="M5.5,-276.2 L18.5,-276.2 L18.5,25.51 L18.88,25.78 C21.68,27.88 23.5,31.23 23.5,35 C23.5,41.35 18.35,46.5 12,46.5 C5.65,46.5 0.5,41.35 0.5,35 C0.5,31.23 2.32,27.88 5.12,25.78 L5.5,25.51 z" 
@@ -110,9 +97,7 @@ We'll add two Custom Items (for the thermometer bulb) that should give our gauge
 					Text="&#176;C"
 	                Style="{StaticResource CustomLabel}"/>
 	</telerik:LinearScale.CustomItems>
-	{{endregion}}
-
-
+{{endregion}}
 
 Now our scale looks as following:
 
@@ -121,7 +106,6 @@ Now our scale looks as following:
 The next step is to add the Fahrenheit linear scale and a linear bar indicator.
 
 #### __XAML__
-
 {{region linear-gauge-create-thermometer_3}}
 	<telerik:VerticalLinearScale Name="linearScaleF"
 							RelativeY="0.05"
@@ -175,14 +159,8 @@ The next step is to add the Fahrenheit linear scale and a linear bar indicator.
 	                    Style="{StaticResource CustomLabel}"/>
 	        </telerik:VerticalLinearScale.CustomItems>
 	</telerik:VerticalLinearScale>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 Voilà! The thermometer gauge with all styles applied should look like the following: 
-
-
 
 ![](images/Thermometer.png)

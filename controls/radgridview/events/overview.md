@@ -42,9 +42,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
               
 
 * __RowActivated__ - occurs when a row is activated - when user double click on it or press enter. The type of the passed event arguments is __RowEventArgs__
-
-* Loading Events ([Read more]({%slug gridview-rowloaded-event%}))
-              
+            s
 
 * __RowLoaded__ - occurs anytime the row appears within the view port. The type of the passed event arguments is __RowLoadedEventArgs__.
                 
@@ -98,15 +96,15 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __ChildTableDefinitionAdded__ - occurs when a new child table definition has been added. The type of the passed event arguments is __TableDefinitionCreatedEventArgs__.
 
 * Exporting Events ([Read more]({%slug gridview-export-events%}))
-        
-
-* __Exporting__ - occurs when the grid data is being exported. The type of the passed event arguments is __GridViewExportEventArgs__. The event will be obsoleted in Q2 2010.
           
-
 * __ElementExporting__ - occurs when the grid data is being exported. It is a direct replacement of the __Exporting__ event.
           
 
 * __ElementExported__ - occurs after the __ElementExporting__ event where you can access the StreamWriter and write additional data to the stream.
+
+* __ElementExportingToDocument__ - occurs when the grid data is being exported to Xlsx or Pdf.
+
+* __ElementExportedToDocument__ - occurs after the ElementExportingToDocument event. Within it you can access the StreamWriter and write additional data to the stream.
           
 
 * Row Details Events

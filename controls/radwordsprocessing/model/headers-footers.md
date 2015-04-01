@@ -134,7 +134,7 @@ For example, if a document with two sections is created and __Default__, __Even_
 
 # See Also
 
- * [HeaderFooterBase API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_headerfooterbase.html)
+ * [HeaderFooterBase API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_headerfooterbase.html)
 
  * [Document model]({%slug radwordsprocessing-model%})
 

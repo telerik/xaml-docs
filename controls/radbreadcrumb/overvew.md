@@ -11,12 +11,11 @@ position: 0
 # Overview
 
 {% if site.site_name == 'Silverlight' %}
-![breadcrumb sl icon](images/breadcrumb_sl_icon.png){% endif %}
-
+![breadcrumb sl icon](images/breadcrumb_sl_icon.png)
+{% endif %}
 {% if site.site_name == 'WPF' %}
-![breadcrumb wpf icon](images/breadcrumb_wpf_icon.png){% endif %}
-
-## 
+![breadcrumb wpf icon](images/breadcrumb_wpf_icon.png)
+{% endif %}
 
 Thank you for choosing Telerik __RadBreadcrumb__ !
 
@@ -38,11 +37,8 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Enhanced Routed Events Framework__ - To help your code become even more elegant and concise, we have implemented Enhanced Routed Events Framework for __RadControls__ for Silverlight. This gives you more freedom when you design your applications, since you can write instance handlers as well as class handlers for the routed events of our controls.  
 
-* __Expression Blend Support__ -  All __RadControls__ for Silverlight can be easily customized using Expression Blend. 
-
+* __Expression Blend Support__ -  All __RadControls__ for Silverlight can be easily customized using Expression Blend.
 
 # See Also
-
  * [Visual Structure]({%slug radbreadcrumb-visual-structure%})
-
  * [Getting Started]({%slug radbreadcrumb-getting-started%})

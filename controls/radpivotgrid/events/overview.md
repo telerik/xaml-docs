@@ -14,7 +14,9 @@ This topic covers the specific events exposed by DataProviders of __RadPivotGrid
 
 ## DataProvider Events
 
-* __PrepareDescriptionForField__ - raised whenever the user adds a description to __RadPivotFieldList__. For example you can use the event in order to replace a __DoubleGroupDescription__ (__RadPivotGrid__  automatically creates DoubleGroupDescription for each numeric property) with a __PropertyGroupDescription__ as shown below:            
+* __PrepareDescriptionForField__ - raised whenever the user adds a description to __RadPivotFieldList__. 
+
+For example you can use the event in order to replace a __DoubleGroupDescription__ (__RadPivotGrid__  automatically creates DoubleGroupDescription for each numeric property) with a __PropertyGroupDescription__ as shown below:            
 
 #### __C#__
 
@@ -151,7 +153,9 @@ You can observe the final result on __Figure 1__.
 Figure 1: Custom folders in the FieldTree.
 ![Rad Pivot Grid Events Overview 0](images/RadPivotGrid_Events_Overview_01.png)
 
-* __AddingContainerNode (available only for the LocalDataSourceFieldDescriptionsProvider)__ - raised multiple times while the FieldTree is generated - each time a node is added. The event can be used in order to add and/or remove nodes from the tree.            
+* __AddingContainerNode (available only for the LocalDataSourceFieldDescriptionsProvider)__ - raised multiple times while the FieldTree is generated - each time a node is added. 
+
+The event can be used in order to add and/or remove nodes from the tree.            
 
 >tipFor more details on how to add/remove nodes from the FieldTree you can check the following example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the examples is listed as __PivotGrid / CustomizeFieldTree__.              
 

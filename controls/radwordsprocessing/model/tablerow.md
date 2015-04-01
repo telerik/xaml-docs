@@ -101,7 +101,7 @@ The following code snippet shows how to add a number of __TableCell__ elements i
 
 # See Also
 
- * [TableRow API Reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_tablerow.html)
+ * [TableRow API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_tablerow.html)
 
  * [Table]({%slug radwordsprocessing-model-table%})
 

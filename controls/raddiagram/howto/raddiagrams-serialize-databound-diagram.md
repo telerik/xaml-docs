@@ -10,18 +10,13 @@ position: 1
 
 # Serialize a Databound Diagram
 
+This article shows how to serialize and deserialize the __RadDiagram__ in MVVM scenarios. It also demonstrates how to save/load custom properties from the ViewModels during the serialization / deserialization process.	  
 
-
-This article shows how to serialize and deserialize the __RadDiagram__ in MVVM scenarios. It also demonstrates how to save/load custom properties from the ViewModels during the serialization / deserialization process.
-	  
-
->importantPlease keep in mind that the Serialization / Deserialization is internally used in the copy / paste operations of the __RadDiagramShapes__ and __RadDiagramConnections__.
-		
+>important Please keep in mind that the Serialization / Deserialization is internally used in the copy / paste operations of the __RadDiagramShapes__ and __RadDiagramConnections__.		
 
 ## ISerializableGraphSource and SerializableGraphSourceBase
 
-When you need to serialize / deserialize a data-bound __RadDiagram__, you have to use a __GraphSource__ which implements the __ISerializableGraphSource__ interface from the __Telerik.Windows.Diagrams.Core__ namespace.
-		
+When you need to serialize / deserialize a data-bound __RadDiagram__, you have to use a __GraphSource__ which implements the __ISerializableGraphSource__ interface from the __Telerik.Windows.Diagrams.Core__ namespace.		
 
 #### __C#__
 
@@ -34,15 +29,11 @@ When you need to serialize / deserialize a data-bound __RadDiagram__, you have t
 	    object DeserializeNode(IShape shape, SerializationInfo info);
 	    ILink DeserializeLink(IConnection connection, SerializationInfo info);
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-[IObservableGraphSource](fc9e271b-5722-47de-bbee-fa87afb7f2e0#Two-Way-Mvvm) enables the two-way binding capabilities of the RadDiagram. __ISerializableGraphSource__ (from __Telerik.Windows.Controls.Diagrams.Extensions.ViewModels__ namespace) extends it with Serialization and Deserialization methods for "Links" and "Nodes".
-		
+[IObservableGraphSource](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_diagrams_core_iserializablegraphsource.htm) enables the two-way binding capabilities of the RadDiagram. __ISerializableGraphSource__ (from __Telerik.Windows.Controls.Diagrams.Extensions.ViewModels__ namespace) extends it with Serialization and Deserialization methods for "Links" and "Nodes".		
 
 Similarly, the [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%}) class extends the __ObservableGraphSourceBase__.
-		
 
 #### __C#__
 
@@ -55,12 +46,9 @@ Similarly, the [SerializableGraphSourceBase]({%slug raddiagram-data-serializable
 	        public abstract string GetNodeUniqueId(TNode node);
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
->importantPlease note that when you use the SerializableGraphSourceBase, you have to override the __GetNodeUniqueId()__ method which must return a unique string identifier of your __TNode__ ViewModel. Furthermore your __TNode__ implementation must provide a parameterless constructor.
-		  
+>important Please note that when you use the SerializableGraphSourceBase, you have to override the __GetNodeUniqueId()__ method which must return a unique string identifier of your __TNode__ ViewModel. Furthermore your __TNode__ implementation must provide a parameterless constructor.		  
 
 ## Serializing ViewModel's properties
 
@@ -112,9 +100,7 @@ Let's first create a proper ViewModels. Do not forget to create parameterless co
 	
 	    public string Id { get; set; }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -171,12 +157,9 @@ Let's first create a proper ViewModels. Do not forget to create parameterless co
 	    End Property
 	    Private m_Id As String
 	End Class
-	{{endregion}}
+{{endregion}}
 
-
-
-Then our GraphSource should look like this:
-		
+Then our GraphSource should look like this:		
 
 #### __C#__
 
@@ -204,9 +187,7 @@ Then our GraphSource should look like this:
 	        return null;
 	    }
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -231,15 +212,11 @@ Then our GraphSource should look like this:
 	        Return Nothing
 	    End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
+>important If you do not override the __GetNodeUniqueId()__ method, you will receive a compilation error. Also please note that you need to make sure that the method returns a unique value for every __Node__ object.		  
 
-
->importantIf you do not override the __GetNodeUniqueId()__ method, you will receive a compilation error. Also please note that you need to make sure that the method returns a unique value for every __Node__ object.
-		  
-
-Now let's create a __RadDiagram__ and bind it to our __GraphSource__:
-		
+Now let's create a __RadDiagram__ and bind it to our __GraphSource__:		
 
 #### __XAML__
 
@@ -297,12 +274,9 @@ Now let's create a __RadDiagram__ and bind it to our __GraphSource__:
 	        </telerik:RadDiagram.CommandBindings>
 	    </telerik:RadDiagram>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-
-
-In code-behid we can populate the __RadDiagram.GraphSource__ and use a counter to make sure each Node has a unique ID:
-		
+In code-behid we can populate the __RadDiagram.GraphSource__ and use a counter to make sure each Node has a unique ID:		
 
 #### __C#__
 
@@ -329,9 +303,7 @@ In code-behid we can populate the __RadDiagram.GraphSource__ and use a counter t
 	
 		this.xDiagram.GraphSource = source;
 	}	
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -372,9 +344,7 @@ In code-behid we can populate the __RadDiagram.GraphSource__ and use a counter t
 	
 	    Me.xDiagram.GraphSource = source
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 Fianlly, we have to define the __RadDiagram CommandBindings__ execution methods:
 
@@ -399,9 +369,7 @@ Fianlly, we have to define the __RadDiagram CommandBindings__ execution methods:
 	{
 	    e.CanExecute = this.xDiagram.Items.Count > 0;
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -420,29 +388,20 @@ Fianlly, we have to define the __RadDiagram CommandBindings__ execution methods:
 	Private Sub CommandBinding_CanExecute(sender As Object, e As CanExecuteRoutedEventArgs)
 	    e.CanExecute = Me.xDiagram.Items.Count > 0
 	End Sub
-	{{endregion}}
+{{endregion}}
 
+>tip The __Save__ command implementation saves the serialized __RadDiagram__ in a string object. This means that you can use this approach in case you need to save your diagramming structures in a database. Once you have the string saved, you can later retrieve it and load the data using the __RadDiagram Load(serializationString)__ method.		  
 
+Now let's see a possible use case with this set of Diagram configuration and ViewModels:
+![raddiagram-features-serialization-serializable](images/raddiagram-features-serialization-serializable.png)
 
->tipThe __Save__ command implementation saves the serialized __RadDiagram__ in a string object. This means that you can use this approach in case you need to save your diagramming structures in a database. Once you have the string saved, you can later retrieve it and load the data using the __RadDiagram Load(serializationString)__ method.
-		  
+>tip You can download a runnable project demonstrating a similar approach from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.			  
 
-Now let's see a possible use case with this set of Diagram configuration and ViewModels:![raddiagram-features-serialization-serializable](images/raddiagram-features-serialization-serializable.png)
-
->tipYou can download a runnable project demonstrating a similar approach from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.
-			  
-
->importantPlease note that copy/pasting requires additional effort. Pasting a copied node, for example, means that you have to override the [AddNode](fc9e271b-5722-47de-bbee-fa87afb7f2e0#Two-Way-Mvvm) method of the [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%}) and provide a new unique __Id__ for the new __NodeViewModel__.
-			  
+>important Please note that copy/pasting requires additional effort. Pasting a copied node, for example, means that you have to override the [AddNode](http://docs.telerik.com/devtools/wpf/api/html/M_Telerik_Windows_Diagrams_Core_IObservableGraphSource_AddNode.htm) method of the [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%}) and provide a new unique __Id__ for the new __NodeViewModel__.			  
 
 # See Also
-
  * [Serialization]({%slug raddiagrams-features-serialization%})
-
  * [DiagramExtensions ViewModels]({%slug raddiagram-data-extensionsviewmodels%})
-
  * [DataBinding]({%slug raddiagram-data-databinding%})
-
  * [Use MVVM in RadDiagram]({%slug raddiagrams-howto-mvvm%})
-
  * [Commands]({%slug raddiagrams-features-commands%})

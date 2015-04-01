@@ -20,17 +20,26 @@ This tutorial will walk your through the creation of a sample application that c
 
 For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Visual Studio. 
 
-## Adding RadPropertyGrid to the Project
+
+>In order to use __RadPropertyGrid__ in your projects you have to add references to the following assemblies:
+>* __Telerik.Windows.Controls__
+>* __Telerik.Windows.Controls.Data__
+>* __Telerik.Windows.Data__
+>* __Telerik.Windows.Controls.Input__
+
+>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+
 
 * Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
 
-* Add references to the assemblies Telerik.Windows.Controls, Telerik.Windows.Controls.Data, Telerik.Windows.Controls.Input and Telerik.Windows.Data;
+
 
 * Add the RadPropertyGrid as demonstrated below:{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
-	{{region radpropertygrid-getting-started-getting-started_0}}
+{{region radpropertygrid-getting-started-getting-started_0}}
+
 	<UserControl x:Class="RadPropertyGrid_SL.MainPage"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -43,13 +52,15 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 	       <telerik:RadPropertyGrid x:Name="PropertyGrid1" /> 
 	 </Grid>
 	</UserControl>
-	{{endregion}}
+	
+{{endregion}}
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
-	{{region radpropertygrid-getting-started-getting-started_1}}
+{{region radpropertygrid-getting-started-getting-started_1}}
+
 	<Window x:Class="RadPropertyGrid_WPF.Window"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -62,7 +73,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 	  <telerik:RadPropertyGrid x:Name="PropertyGrid1" /> 
 	 </Grid>
 	</Window>
-	{{endregion}}
+{{endregion}}
 
 {% endif %}
 
@@ -74,9 +85,10 @@ Two lines of code are important here:
 
 #### __XAML__
 
-	{{region radpropertygrid-getting-started-getting-started_2}}
+{{region radpropertygrid-getting-started-getting-started_2}}
+
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -84,11 +96,12 @@ Two lines of code are important here:
 
 #### __XAML__
 
-	{{region radpropertygrid-getting-started-getting-started_3}}
+{{region radpropertygrid-getting-started-getting-started_3}}
+
 	<Grid x:Name="LayoutRoot" Background="White">
 	  <telerik:RadPropertyGrid x:Name="PropertyGrid1" /> 
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -103,7 +116,8 @@ Now, if you run your application, an empty RadPropertyGrid will be visualized:
 
 #### __C#__
 
-	{{region radpropertygrid-getting-started-getting-started_4}}
+{{region radpropertygrid-getting-started-getting-started_4}}
+
 	this.PropertyGrid1.Item = new Employee() 
 	   { FirstName = "Sarah",
 	    LastName = "Blake", 
@@ -111,13 +125,15 @@ Now, if you run your application, an empty RadPropertyGrid will be visualized:
 	    StartingDate = new DateTime(2005, 04, 12), 
 	    IsMarried = true, Salary = 3500, Gender = Gender.Female 
 	   };
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-	{{region radpropertygrid-getting-started-getting-started_5}}
+	
+{{region radpropertygrid-getting-started-getting-started_5}}
+
 	Me.PropertyGrid1.Item = New Employee() With { _
 	  .FirstName = "Sarah", _
 	  .LastName = "Blake", _
@@ -127,7 +143,7 @@ Now, if you run your application, an empty RadPropertyGrid will be visualized:
 	  .Salary = 3500, _
 	  .Gender = Gender.Female _
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -141,10 +157,11 @@ Once you set the Item and run the application, the RadPropertyGrid will be displ
 
 #### __XAML__
 
-	{{region radpropertygrid-getting-started-getting-started_6}}
+{{region radpropertygrid-getting-started-getting-started_6}}
+
 	<telerik:RadButton x:Name="button1" Content="MyButton" />
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding ElementName= button1}"/>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -161,13 +178,14 @@ On running the application, the RadPropertyGrid will be visualized as follows:
 
 #### __XAML__
 
-	{{region radpropertygrid-getting-started-getting-started_10}}
+{{region radpropertygrid-getting-started-getting-started_10}}
+
 	  <telerik:RadPropertyGrid x:Name="PropertyGrid1"> 
 	        <telerik:RadPropertyGrid.PropertyDefinitions>                
 	                <telerik:PropertyDefinition Binding="{Binding FirstName}" DisplayName="My FirstName"/>
 	        </telerik:RadPropertyGrid.PropertyDefinitions>
 	  </telerik:RadPropertyGrid>
-	{{endregion}}
+{{endregion}}
 
 ## Nested Properties
 

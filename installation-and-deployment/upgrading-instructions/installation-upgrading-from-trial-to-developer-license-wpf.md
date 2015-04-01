@@ -55,7 +55,7 @@ In order to check are the dll files trial or dev version, you need to perform th
 
 1. Open the project containing the dll-s with Visual Studio. 
   
-2. Double click on the dll file so the properties window of the dll to be shown.           
+2. Double click on one of the following dll files so the properties window of the dll to be shown: *Telerik.Windows.Controls* or *Telerik.Windows.Documents.Core*.
           
 3. Expand the Version folder.
    
@@ -67,9 +67,7 @@ __For example:__
 
 * Telerik.Windows.Controls Trial Version
           
-* Telerik.Windows.GridView Trial
-          
-If your dll files contain this message in the FileDescription then they are trial version and you have to replace them with dev versions.
+If your dll files contain this message in the FileDescription then they are Trial version and you have to replace them with Development assemblies.
         
 >In case the project does not build: 
 >* Please make sure that all the assemblies you have referenced are with the same version. 

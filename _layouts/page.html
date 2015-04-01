@@ -26,14 +26,18 @@ layout: index
 				dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
 			});
         </script>
-		<script type="text/javascript">		
-			window.onload = function(){
-				var tree = $("#page-tree").data("kendoTreeView");
-				var selected = tree.select()
-				$("#page-nav").animate({scrollTop:selected.offset().top - $("#page-header").height() - $("#page-nav").height() / 2}, 300);				
-			}
-		</script>		
+		<div id="page-api" class="k-treeview">
+			<ul class="k-group">
+				<li class="k-item">
+					<span class="k-icon k-plus" role="presentation"></span>
+					<span class="k-in">
+						<a href="{{site.baseurl}}/api/" target="_blank">API Reference</a>
+					</span>
+				</li>
+			</ul>
+		</div>			
     </div>
+	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master{{ page.url | replace: '.html','' }}.md">Edit this page</a>
     <div id="page-article">       
         <article>
             {{ content }}

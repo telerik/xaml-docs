@@ -12,7 +12,7 @@ position: 3
 
 
 
-__PdfFormatProvider__ allows to import and export TXT documents. Additionally, there are a number of settings that allow you to modify the import/export. The current article outlines the available settings.
+__PdfFormatProvider__ allows to import and export PDF documents. Additionally, there are a number of settings that allow you to modify the import/export. The current article outlines the available settings.
       
 
 ## 

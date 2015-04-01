@@ -97,7 +97,7 @@ The __ZipArchive__ class provides a __GetEntry()__ method which allows you acces
 The following code snippet obtains an entry and deletes it from the ZIP archive using the __Delete()__ method:
         
 
-#### __[C#] Update Entry__
+#### __[C#] Delete Entry__
 
 {{region radziplibrary-update-ziparchive_2}}
 	            ZipArchiveEntry entry = archive.GetEntry("text.txt");
@@ -109,7 +109,7 @@ The following code snippet obtains an entry and deletes it from the ZIP archive 
 
 
 
-#### __[VB.NET] Update Entry__
+#### __[VB.NET] Delete Entry__
 
 {{region radziplibrary-update-ziparchive_2}}
 				Dim entry As ZipArchiveEntry = archive.GetEntry("text.txt")
@@ -136,7 +136,7 @@ In order to update an existing entry in the ZIP archive you should perform the f
 1. Dispose entry when all necessary information is written. In the __Update__ mode this step is optional. You can omit it if you are going to add/delete/update other entries in the archive.
             
 
-#### __[C#] Delete Entry__
+#### __[C#] Update Entry__
 
 {{region radziplibrary-update-ziparchive_3}}
 	            ZipArchiveEntry entry = archive.GetEntry("text.txt");
@@ -155,7 +155,7 @@ In order to update an existing entry in the ZIP archive you should perform the f
 
 
 
-#### __[VB.NET] Delete Entry__
+#### __[VB.NET] Update Entry__
 
 {{region radziplibrary-update-ziparchive_3}}
 				Dim entry As ZipArchiveEntry = archive.GetEntry("text.txt")

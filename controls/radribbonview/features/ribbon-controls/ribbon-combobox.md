@@ -10,35 +10,26 @@ position: 7
 
 # Ribbon ComboBox
 
+Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ may consist of various elements, one of which is the __Ribbon ComboBox__. This topic discusses concepts fundamental to the __Ribbon ComboBox__ at first and then goes into the usage of the __RadRibbonComboBox__ class and its features.			
 
-
-Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ may consist of various elements, one of which is the __Ribbon ComboBox__. This topic discusses concepts fundamental to the __Ribbon ComboBox__ at first and then goes into the usage of the __RadRibbonComboBox__ class and its features.
-			
-
->tipBefore proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.
-			
+>tip Before proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.			
 
 ## Ribbon ComboBox - Fundamentals
 
 A __Ribbon ComboBox__ is very similar to the standard __RadComboBox__ that ships with the Telerik RadControls. However, it is designed to be hosted on a ribbon control.
 ![](images/RadRibbonView_ComboBox_Overview.png)
 
->tipThe class that represents the Ribbon ComboBox is __Telerik.Windows.Controls.RadRibbonComboBox__.
-				
+>tip The class that represents the Ribbon ComboBox is __Telerik.Windows.Controls.RadRibbonComboBox__.				
 
-__RadRibbonComboBox__ derives directly from the __RadComboBox__. It is populated with instances of __RadRibbonComboBoxItem__.
-				
+__RadRibbonComboBox__ derives directly from the __RadComboBox__. It is populated with instances of __RadRibbonComboBoxItem__.				
 
-Check out the rest of the topic, which is entirely dedicated to the __RadRibbonComboBox__ element.
-				
+Check out the rest of the topic, which is entirely dedicated to the __RadRibbonComboBox__ element.				
 
 ## Adding a Ribbon ComboBox to a RadRibbonGroup
 
-Adding a __RadRibbonComboBox__ to a __RadRibbonGroup__ is an extremely simple process. The next example demonstrates how to do that.
-				
+Adding a __RadRibbonComboBox__ to a __RadRibbonGroup__ is an extremely simple process. The next example demonstrates how to do that.				
 
 #### __XAML__
-
 {{region radribbonview-ribbon-combobox_0}}
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -66,39 +57,25 @@ Adding a __RadRibbonComboBox__ to a __RadRibbonGroup__ is an extremely simple pr
 	        </telerik:RadRibbonGroup>
 	    </telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadRibbonView_ComboBox_Sample.png)
 
 The __RadRibbonView__ is a complex control and the __Ribbon ComboBox__ is only a small part of it. The __RadRibbonView__ consists of various elements such as:
-				
-
 * [Application Menu]({%slug radribbonview-applicationmenu%})
-
 * [Backstage Menu]({%slug radribbonview-ribbon-backstage%})
-
 * [Quick Access ToolBar]({%slug radribbonview-qat%})
-
 * [Ribbon Tab]({%slug radribbonview-ribbon-tab%})
-
 * [Ribbon Gallery]({%slug radribbonview-ribbon-gallery%})
-
 * [Ribbon Group]({%slug radribbonview-ribbon-group%})
-
 * [RibbonButtons Overview]({%slug radribbonview-buttons-overview%})
-
 * [Screen Tips]({%slug radribbonview-screentips%})
 
 Additional features that you may find interesting are:
-
 * [Selection]({%slug radribbonview-selection%})
-
 * [Resizing]({%slug radribbonview-resizing%})
-
 * [Minimization]({%slug radribbonview-minimization%})
-
 * [Localization]({%slug radribbonview-localization%})
 
 # See Also
-
  * [Styling the RadRibbonComboBox]({%slug radribbonview-styling-ribboncombobox%})

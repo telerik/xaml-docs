@@ -18,7 +18,7 @@ __RadTabControl__ exposes several useful properties and events, which can help y
 
 Set the __IsTabStop__ property to include/exclude the control in the tab navigation cycle. If this property is set to __True__, then the control will be included; if it is __False__ it will be skipped.
 
-* The__TabIndex__ property defines the index of the control in the tab navigation cycle. The lower the number, the earlier the control will be focused while navigating using the Tab key. If you set this property, do not forget to set __IsTabStop__ to __True__. Once focused, you can navigate through the tab pages using the left and right arrow keys. 
+* The __TabIndex__ property defines the index of the control in the tab navigation cycle. The lower the number, the earlier the control will be focused while navigating using the Tab key. If you set this property, do not forget to set __IsTabStop__ to __True__. Once focused, you can navigate through the tab pages using the left and right arrow keys. 
 
 ## Events
 

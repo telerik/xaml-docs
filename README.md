@@ -3,13 +3,14 @@ title: Telerik UI for WPF/Silverlight Documentation Repo
 publish: false
 ---
 
+
 # Telerik UI for WPF/Silverlight Public Documentation
 
 Welcome to the GitHub repo for [Telerik UI for WPF](http://www.telerik.com/wpf) and [Telerik UI for Silverlight](http://www.telerik.com/silverlight) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik UI for WPF Documentation at [docs.telerik.com/devtools/wpf](http://docs.telerik.com/devtools/wpf) and Telerik UI for Silverlight Documentation at [docs.telerik.com/devtools/silverlight](http://docs.telerik.com/devtools/silverlight). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.telerik.com/devtools/wpf](http://docs.telerik.com/devtools/wpf) / [docs.telerik.com/devtools/silverlight](http://docs.telerik.com/devtools/silverlight) where our content is prettified and searchable.
 
 We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.
 
-It also means that you can play a role in making our docs better for everyone, and if helping us make the Kendo UI docs better sounds interesting to you, read on.
+It also means that you can play a role in making our docs better for everyone, and if helping us make the Telerik UI for WPF/Silverlight docs better sounds interesting to you, read on.
 
 ## Contributing
 
@@ -18,7 +19,7 @@ There are two ways you can contribute to the public Telerik UI for WPF/Silverlig
 * **Create an issue** - If you find an issue with our docs that needs to be addressed, the best way to let us know about it is by [creating an issue in this repository](https://github.com/telerik/xaml-docs/issues?state=open). When creating an issue, provide a descriptive title, be as specific as possible and link to the document in question (If you can provide a link to the closest anchor to the issue, all the better). Here's an example:
 
         Title: api/DataViz/chart.md is missing an image
-        Description: Example 3 is missing an image right after the code sample. https://github.com/telerik/xaml-docs/issues?state=open
+        Description : Example 3 is missing an image right after the code sample. https://github.com/telerik/xaml-docs/issues?state=open
 
 > Note: When creating issues, please don't modify the assignee or milestone fields. Also, please create one issue per fix or change. "Bundled" entries will be deleted.
 
@@ -28,7 +29,7 @@ There are two ways you can contribute to the public Telerik UI for WPF/Silverlig
 
         git clone git@github.com:telerik/xaml-docs.git
 
-    Then, open up the xaml-docs folder in your favorite text editor and contribute away! Of course, as you work with the docs, we do ask that you follow a couple of ground rules:
+    Then, open up the xaml-docs folder in your  favorite text editor and contribute away! Of course, as you work with the docs, we do ask that you follow a couple of ground rules:
 
     - Fixing grammar, punctuation and other general errors is always appreciated. So are changes that expand on key ideas or correct errors in logic phrasing or otherwise. If your ambitions are greater, however, and you want to add completely new content to the site — like a new tutorial on using Kendo UI with an Atari 2600, for instance — we suggest you contact a member of the team first (or enter an issue!) to vet your idea. [Burke Holland](http://twitter.com/burkeholland), [Todd Anglin](http://twitter.com/toddanglin) and [Brandon Satrom](http://twitter.com/brandonsatrom) would all be happy to hear your idea and offer advice.
     - Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the live documentation site. Please don't edit the content in this section of a document.
@@ -84,7 +85,7 @@ The Telerik UI for WPF/Silverlight Documentation is licensed under an MIT licens
 
 Copyright (c) 2012-2014 Telerik
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software" ), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 

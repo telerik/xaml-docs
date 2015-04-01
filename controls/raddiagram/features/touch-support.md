@@ -10,12 +10,9 @@ position: 17
 
 # Touch Support
 
-
-
 This article describes the touch support implemented in the __RadDiagram__
 
-__RadDiagram__ touch support is controlled through the __SupportTouchGestures__ property. By default its value is set to __True__ thus enabling the support for the following touch gestures:
-	
+__RadDiagram__ touch support is controlled through the __SupportTouchGestures__ property. By default its value is set to __True__ thus enabling the support for the following touch gestures:	
 
 ## Supported Touch Gestures
 
@@ -26,6 +23,3 @@ __RadDiagram__ touch support is controlled through the __SupportTouchGestures__ 
 |Tap|Select|
 |Tap and Move|Drags selected RadDiagramItem/s|
 |Tap, Hold and Move|Rectangle Selection|
-
-
-# See Also

@@ -17,7 +17,6 @@ position: 2
 Except all the common properties some of the ViewDefinitions have specific properties. Here is a list of such kind of properties for DayView and WeekView:        
 
 * __ShowWeekGroupHeaders__ – get or sets whether the WeekHeaders should be visible.
-        
 
 * __WeekGroupHeaderStringFormat__ – gets or sets the format that will be applied to the WeekHeaders. After setting the __ShowWeekGroupHeaders__ to __True__ you can customize the string format of the week numbers displayed in the Header.        
 
@@ -56,7 +55,9 @@ Here is the list of the properties which are specific for MonthView:
 
 There are certain properties which are specific for TimelineView. Here is the list of those properties:
 
-* __StretchAppointments__ – sets whether the appointments will be stretched to fill all available space in the TimeSlot. By default __StretchAppointments__ is set to False.
+* __StretchAppointments__ – sets whether the appointments will be stretched to fill all available space in the TimeSlot. 
+
+* By default __StretchAppointments__ is set to False.
 
 #### __XAML__
 

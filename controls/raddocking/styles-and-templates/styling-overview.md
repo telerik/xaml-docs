@@ -22,7 +22,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 >tipNote that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "PART_".
 
->tipTo learn more about templating the RadControls read the common topic regarding [templating](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html).
+>tipTo learn more about templating the RadControls read the common topic regarding [templating]({%slug common-styling-appearance-edit-control-templates-blend%}).
 
 Read the following topics to learn:
 

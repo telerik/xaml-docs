@@ -91,11 +91,11 @@ The control structure defined in the above example is (from the root container t
 
 * __RadDocking__
 
-* __RadSplitContainer__
+	* __RadSplitContainer__
 
-* __RadPaneGroup__
+		* __RadPaneGroup__
 
-* __RadPane__
+			* __RadPane__
 
 __Keep in mind that in order to have functional docking you should stick to this structure without skipping any of its elements.__
 

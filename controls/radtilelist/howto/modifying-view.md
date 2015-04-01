@@ -10,7 +10,20 @@ position: 1
 
 # Modifying TileList view
 
+* [Resizing Tile](#resizing-tile)
+* [Vertical Tiles Alignment](#verticaltilesalignment)
+* [GroupTemplate](#grouptemplate)
+* [GroupHeaderVisibility](#groupheadervisibility)
+* [GroupHeaderHeight](#groupheaderheight)
 
+## Resizing Tile
+
+There are three sizes for tiles:
+* Single
+* Double
+* Quadruple
+
+__RadTileList__ also suggests an option to further customize the size. For the purpose you can set __TilePlaceholderSide__ property to the desired value. It will update the value based on a single size - i.e. setting __TilePlaceholderSide="120"__ will result in having Single tiles sized __120x120__, Double - __120x240__, Quadruple - __240x240__. 
 
 ## VerticalTilesAlignment
 

@@ -145,3 +145,5 @@ By editing the template of the header cell you are able to change its overall lo
  * [Custom Sorting]({%slug gridview-sorting-custom%})
 
  * [Multiple-column Sorting]({%slug gridview-multiple-column-sorting%})
+
+ * [Reevaluation of data operations]({%slug gridview-troubleshooting-reevaluation%})

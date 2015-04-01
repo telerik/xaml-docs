@@ -223,5 +223,5 @@ You can achieve the same result through using the __SaveFile__ command. In fact,
 
 ## Retrieve Registered Providers and Supported Extensions
 
-The __WorkbookFormatProvidersManager__ class offers several approaches to retrieve the registered format providers. The class offers the GetProviderByName() static method that searches through the registered providers to find a provider with a specific name. Also, the manager exposes the __GetProvderByExtension extension. The class also contains a static method __xGetSupportedExtensions()__ that returns an IEnumeable of the currently supported file extensions.
+The __WorkbookFormatProvidersManager__ class offers several approaches to retrieve the registered format providers. The class offers the GetProviderByName() static method that searches through the registered providers to find a provider with a specific name. Also, the manager exposes the __GetProvderByExtension__ extension. The class also contains a static method  __xGetSupportedExtensions()__ that returns an IEnumeable of the currently supported file extensions.
 

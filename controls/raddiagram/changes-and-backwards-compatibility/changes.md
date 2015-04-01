@@ -10,9 +10,11 @@ position: 1
 
 # Changes
 
+This article describes the release history of the RadDiagram framework.
 
 
-This article describes the release history of the RadDiagram framework
+To see the fixes and features included in our latest official release please refer to our {% if site.site_name == 'Silverlight' %} [Release History](http://www.telerik.com/support/whats-new/silverlight/release-history) {% endif %} {% if site.site_name == 'WPF' %} [Release History](http://www.telerik.com/support/whats-new/wpf/release-history) {% endif %}.
+
 
 ## Q1 2014
 
@@ -26,15 +28,13 @@ This article describes the release history of the RadDiagram framework
 
 * Add additional/optional boolean parameter in Layout/LayoutAsync methods to support AutoFit.
 
->Instead of adding a new boolean paramether, a new method was exposed - __AutoFitAsync()__. It is further described in the [Pan And Zoom](585daa93-6cbd-47a4-8fd3-61469984b67e#AutoFit) tutorial. 
-				
+	>Instead of adding a new boolean paramether, a new method was exposed - __AutoFitAsync()__. It is further described in the [Pan And Zoom](585daa93-6cbd-47a4-8fd3-61469984b67e#AutoFit) tutorial. 				
 
 * Extend the serialization/deserialization of custom RadDiagramConnectors 
 
 * Extensibility points for MouseTools 
 
->You can examine the [Tools Customization]({%slug raddiagram-tools-customization%}) tutorial for more information.
-				  
+	>You can examine the [Tools Customization]({%slug raddiagram-tools-customization%}) tutorial for more information.				  
 
 ## Q2 2013
 

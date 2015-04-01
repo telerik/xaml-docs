@@ -42,9 +42,9 @@ The default pane header's template consists of the following elements:{% endif %
 
 * __Grid__ - contains the following buttons:  
 
-* __HeaderPinButton__ - is of type __RadButton__ and is used to pin the pane to its current state.
+	* __HeaderPinButton__ - is of type __RadButton__ and is used to pin the pane to its current state.
 
-* __HeaderUnPinButton__ - is of type __RadButton__ and unpins the pane.  
+	* __HeaderUnPinButton__ - is of type __RadButton__ and unpins the pane.  
 
 * __HeaderCloseButton__ - is of type __RadButton__ and is the pane's close button. {% if site.site_name == 'Silverlight' %}
 
@@ -61,7 +61,6 @@ Each of the buttons defined in the header's default template has a corresponding
 For each state a couple of brushes are available:{% endif %}
 
 * __ButtonIconBackground___*__StateName__* - defines the background brush used for all the header's buttons (described above) in the specified state - one of the common states in a __RadButton's__ default template (also mentioned above). 
-
 
 * __ButtonIconForeground___*__StateName__* - defines the foreground brush used for all the header's buttons (described above) in the specified state.
 

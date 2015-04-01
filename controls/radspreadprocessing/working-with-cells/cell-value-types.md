@@ -232,7 +232,7 @@ __Example 9__ shows how you can create a formula that refers to another cell.
 After this code is executed the value of cell *A1* will be the same as the value of cell A2. When the value of A2 is modified, the change will be reflected in A1 automatically.
         
 
-An expression can also contain a predefined function that performs a given calculation. The document model offers a number of built-in functions. You can read more about the available functions in the [Functions]({%slug radspreadprocessing-features-formulas-functions%})article. Note that if the current CellValueFormat of the cell is Text ("@"), the method will produce a TextCellValue instead of a FormulaCellValue.
+An expression can also contain a predefined function that performs a given calculation. The document model offers a number of built-in functions. You can read more about the available functions in the [Functions]({%slug radspreadprocessing-features-formulas-functions%}) article. Note that if the current CellValueFormat of the cell is Text ("@"), the method will produce a TextCellValue instead of a FormulaCellValue.
         
 
 __Example 10__ illustrates the use of the SUM built-in function.
@@ -268,19 +268,35 @@ __Example 11__ creates a FormulaCellValue using the CellValueFactory class.
 {{endregion}}
 
 
+Using the __SetValue()__ method executes internal checks for the current cell value type using the current format and other conditions. If you are sure that the passed value is a formula, you can use the __SetValueAsFormula(string text)__ method directly which will improve the performance.
+
+
+__Example 12__ shows how you can use the method.
+
+
+#### __[C#] Example 12: Create FormulaCellValue through SetValueAsFormula()__
+{{region radspreadprocessing-working-with-cells-cell-value-types_22}}
+	Workbook workbook = new Workbook();
+	Worksheet worksheet = workbook.Worksheets.Add();
+	CellIndex cellIndex = new CellIndex(0, 0);
+	
+	worksheet.Cells[cellIndex].SetValueAsFormula("=B1+B2");
+{{endregion}}
+
+
 
 ## Text Cell Value
 
 As its name suggests, the __TextCellValue__ contains a value of type string and its ValueType is Text.
         
 
-You can set a TextCellValue using the __SetValue(string)__ method. Note that before producing a TextCellValue, the SetValue() method attempts to parse the incoming string to all other cell value types. That said, if you pass the string "true", the cell will be assigned a BooleanCellValue. If you would like the cell to contain the string "true", pass the SetValue(string) method the string ="true".
+You can set a TextCellValue using the __SetValue(string)__ method. Note that before producing a TextCellValue, the SetValue() method attempts to parse the incoming string to all other cell value types. That said, if you pass the string "true", the cell will be assigned a BooleanCellValue. If you would like the cell to contain the string "true", pass the SetValue(string) method the string "=true".
         
 
-__Example 12__ sets the value of cell A1 to the string "some test":
+__Example 13__ sets the value of cell A1 to the string "some test":
         
 
-#### __[C#] Example 12: Set TextCellValue__
+#### __[C#] Example 13: Set TextCellValue__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_19}}
     Workbook workbook = new Workbook();
@@ -293,10 +309,10 @@ __Example 12__ sets the value of cell A1 to the string "some test":
 If you would like to avoid the default parsing of the input string and always produce a TextCellValue, you need to set the CellValueFormat of the cells to Text ("@") and then enter the values.
           
 
-__Example 13__ enters the string "=1+2" into a cell, however, because of the applied cell value format, the cell is assigned a TextCellValue instead of a FormulaCellValue.
+__Example 14__ enters the string "=1+2" into a cell, however, because of the applied cell value format, the cell is assigned a TextCellValue instead of a FormulaCellValue.
         
 
-#### __[C#] Example 13: Explicitly apply tect value type__
+#### __[C#] Example 14: Explicitly apply text value type__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_20}}
     Workbook workbook = new Workbook();
@@ -310,10 +326,10 @@ __Example 13__ enters the string "=1+2" into a cell, however, because of the app
 The same result could be achieved using the __Create()__ method of the __CellValueFactory__ class:
         
 
-__Example 14__ enters the string "=1+2" into a cell and applies cell value format.
+__Example 15__ enters the string "=1+2" into a cell and applies cell value format.
         
 
-#### __[C#] Example 14: Creates TextCellValue__
+#### __[C#] Example 15: Creates TextCellValue__
 
 {{region radspreadprocessing-working-with-cells-cell-value-types_21}}
     Workbook workbook = new Workbook();
@@ -324,6 +340,21 @@ __Example 14__ enters the string "=1+2" into a cell and applies cell value forma
     CellValueFormat newFormatValue;
     CellValueFactory.Create("=1 + 2", worksheet, cellIndex, new CellValueFormat("@"), out cellValue, out newFormatValue);
     worksheet.Cells[cellIndex].SetValue(cellValue);
+{{endregion}}
+
+
+If you are sure that the value is a string and need to create a text cell value, you can use the __SetValueAsText(string text)__ method directly. This would avoid the internal checks and parsing that are usually executed and improve the performance.
+
+
+__Example 16__ shows how to utilize the __SetValueAsText()__ method.
+
+#### __[C#] Example 16: Creates TextCellValue through SetValueAsText__
+{{region radspreadprocessing-working-with-cells-cell-value-types_23}}
+	Workbook workbook = new Workbook();
+	Worksheet worksheet = workbook.Worksheets.Add();
+	CellIndex cellIndex = new CellIndex(0, 0);
+	
+	worksheet.Cells[cellIndex].SetValueAsText("This is most certainly a text.");
 {{endregion}}
 
 

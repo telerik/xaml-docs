@@ -52,7 +52,7 @@ The following topic describes what steps you should perform in order to add the 
 
 ## Dragging Controls from Visual Studio Toolbox
 
-* Add the Telerik Silverlight controls to your [toolbox]({%slug installation-adding-to-vs-2008-toolbox%}). 
+* Add the Telerik Silverlight controls to your [toolbox]({%slug installation-adding-to-vs-2012-toolbox%}). 
 
 >If you wonder which control in which assembly belongs to, read the main topic about [Controls Dependencies]({%slug installation-installing-controls-dependencies%}).
 

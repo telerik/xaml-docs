@@ -10,168 +10,144 @@ position: 0
 
 # Use MVVM in RadDiagram
 
+The following help article will demonstrate how to bind the __RadDiagram__ in MVVM scenario using the extension ViewModels which are part of the __Telerik.Windows.Controls.Diagrams.Extensions.dll__ project.			
 
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.				
 
-The following help article will demonstrate how to bind the __RadDiagram__ in MVVM scenario using the extension ViewModels
-				which are part of the __Telerik.Windows.Controls.Diagrams.Extensions.dll__ project.
-			
-
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
-				
-
-The DiagrammingFramework comes with a predefined set of ViewModels, further described in the [DiagramExtensions ViewModels]({%slug raddiagram-data-extensionsviewmodels%}) tutorial. We will take advantage of these built-in models bellow to quickly build MVVM diagramming solutions.
-			
+The DiagrammingFramework comes with a predefined set of ViewModels, further described in the [DiagramExtensions ViewModels]({%slug raddiagram-data-extensionsviewmodels%}) tutorial. We will take advantage of these built-in models bellow to quickly build MVVM diagramming solutions.			
 
 ## Sample MVVM RadDiagram
 
 A sample MVVM implementation has basically 3 steps:
 
-##### 1. __Set up the ViewModels__To start, in a basic MVVM application we need ViewModels to describe the connections and shapes within a __RadDiagram__ instance. And then we need to create a class to describe the collection that will hold the nodes and links of a diagramming structure. Telerik Diagrams Extensions offer three ViewModels that can serve as base implementations of a __GraphSource__:
-						
+##### 1. __Set up the ViewModels__
+To start, in a basic MVVM application we need ViewModels to describe the connections and shapes within a __RadDiagram__ instance. And then we need to create a class to describe the collection that will hold the nodes and links of a diagramming structure. Telerik Diagrams Extensions offer three ViewModels that can serve as base implementations of a __GraphSource__:						
 
 * [GraphSourceBase]({%slug raddiagram-data-graphsourcebase%})
 
 * [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%})
 
-* [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%})For simplicity, in this first example we will use the __GraphSourceBase__ class and we will create a new ViewModel class deriving from it:
-						
+* [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%})For simplicity, in this first example we will use the __GraphSourceBase__ class and we will create a new ViewModel class deriving from it:						
 
-#### __C#__
+	#### __C#__
 
-{{region raddiagram-howto-mvvm-0}}
-	using Telerik.Windows.Controls.Diagrams.Extensions.ViewModels;
-	public class DiagramViewModel : GraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>>
-	{
-	    public DiagramViewModel()
-	    {
-	        var first = new NodeViewModelBase
-	        {
-	            Content = "First item",
-	            Position = new Point(50, 100)
-	        };
-	        var second = new NodeViewModelBase
-	        {
-	            Content = "Second item",
-	            Position = new Point(150, 100),
-	            RotationAngle = 45
-	        };
-	        var third = new NodeViewModelBase
-	        {
-	            Content = "Third item",
-	            Position = new Point(250, 100)
-	        };
-	        this.AddNode(first);
-	        this.AddNode(second);
-	        this.AddNode(third);
-	        this.AddLink(new LinkViewModelBase<NodeViewModelBase>(first, second));
-	        this.AddLink(new LinkViewModelBase<NodeViewModelBase>(second, third));
-	    }
-	}
+	{{region raddiagram-howto-mvvm-0}}
+		using Telerik.Windows.Controls.Diagrams.Extensions.ViewModels;
+		public class DiagramViewModel : GraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>>
+		{
+			public DiagramViewModel()
+			{
+				var first = new NodeViewModelBase
+				{
+					Content = "First item",
+					Position = new Point(50, 100)
+				};
+				var second = new NodeViewModelBase
+				{
+					Content = "Second item",
+					Position = new Point(150, 100),
+					RotationAngle = 45
+				};
+				var third = new NodeViewModelBase
+				{
+					Content = "Third item",
+					Position = new Point(250, 100)
+				};
+				this.AddNode(first);
+				this.AddNode(second);
+				this.AddNode(third);
+				this.AddLink(new LinkViewModelBase<NodeViewModelBase>(first, second));
+				this.AddLink(new LinkViewModelBase<NodeViewModelBase>(second, third));
+			}
+		}
 	{{endregion}}
 
+	#### __VB.NET__
 
-
-#### __VB.NET__
-
-{{region raddiagram-howto-mvvm-0}}
-	Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
-	Public Class DiagramViewModel
-	    Inherits GraphSourceBase(Of NodeViewModelBase, LinkViewModelBase(Of NodeViewModelBase))
-	    Public Sub New()
-	        Dim first = New NodeViewModelBase With {.Content = "First item", .Position = New Point(50, 100)}
-	        Dim second = New NodeViewModelBase With {.Content = "Second item", .Position = New Point(150, 100), .RotationAngle = 45}
-	        Dim third = New NodeViewModelBase With {.Content = "Third item", .Position = New Point(250, 100)}
-	        Me.AddNode(first)
-	        Me.AddNode(second)
-	        Me.AddNode(third)
-	        Me.AddLink(New LinkViewModelBase(Of NodeViewModelBase)(first, second))
-	        Me.AddLink(New LinkViewModelBase(Of NodeViewModelBase)(second, third))
-	    End Sub
-	End Class
+	{{region raddiagram-howto-mvvm-0}}
+		Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
+		Public Class DiagramViewModel
+			Inherits GraphSourceBase(Of NodeViewModelBase, LinkViewModelBase(Of NodeViewModelBase))
+			Public Sub New()
+				Dim first = New NodeViewModelBase With {.Content = "First item", .Position = New Point(50, 100)}
+				Dim second = New NodeViewModelBase With {.Content = "Second item", .Position = New Point(150, 100), .RotationAngle = 45}
+				Dim third = New NodeViewModelBase With {.Content = "Third item", .Position = New Point(250, 100)}
+				Me.AddNode(first)
+				Me.AddNode(second)
+				Me.AddNode(third)
+				Me.AddLink(New LinkViewModelBase(Of NodeViewModelBase)(first, second))
+				Me.AddLink(New LinkViewModelBase(Of NodeViewModelBase)(second, third))
+			End Sub
+		End Class
 	{{endregion}}
 
-The __GraphSourceBase<TNode,TLink>__ class inherits __ViewModelBase__ and it also implements the __IGraphSource__ interface. This is why the class exposes two __IEnumerable__ collections - one with the nodes -__Items__, and the other one with the links - __Links__.
-						
-
-##### 2. __Configure the View__Once we have all __ViewModels__ in place, we can go ahead and define a __RadDiagram__ instance in our view to consume the business data. We can use style bindings and __DataTemplates__ to apply bindings on the __RadDiagramConnection__ and __RadDiagramShape__ properties.
-						
+	The __GraphSourceBase<TNode,TLink>__ class inherits __ViewModelBase__ and it also implements the __IGraphSource__ interface. This is why the class exposes   two __IEnumerable__ collections - one with the nodes -__Items__, and the other one with the links - __Links__.
+		
+##### 2. __Configure the View__
+Once we have all __ViewModels__ in place, we can go ahead and define a __RadDiagram__ instance in our view to consume the business data. We can use style bindings and __DataTemplates__ to apply bindings on the __RadDiagramConnection__ and __RadDiagramShape__ properties.						
 
 #### __XAML__
 
 {{region raddiagram-howto-mvvm-0}}
 	<Style TargetType="telerik:RadDiagramShape">
-	      <Setter Property="Position" Value="{Binding Position}" />
-	      <Setter Property="RotationAngle" Value="{Binding RotationAngle}" />
-	      <Setter Property="ContentTemplate">
-	        <Setter.Value>
-	          <DataTemplate>
-	            <TextBlock Text="{Binding Content}"/>
-	          </DataTemplate>
-	        </Setter.Value>
-	      </Setter>
+		  <Setter Property="Position" Value="{Binding Position}" />
+		  <Setter Property="RotationAngle" Value="{Binding RotationAngle}" />
+		  <Setter Property="ContentTemplate">
+			<Setter.Value>
+			  <DataTemplate>
+				<TextBlock Text="{Binding Content}"/>
+			  </DataTemplate>
+			</Setter.Value>
+		  </Setter>
 	 </Style>
 	<Style  TargetType="telerik:RadDiagramConnection">
-	      <Setter Property="ContentTemplate"  >
-	        <Setter.Value>
-	          <DataTemplate>
-	            <TextBlock Text="{Binding Content}"/>
-	          </DataTemplate>
-	        </Setter.Value>
-	      </Setter>
+		  <Setter Property="ContentTemplate"  >
+			<Setter.Value>
+			  <DataTemplate>
+				<TextBlock Text="{Binding Content}"/>
+			  </DataTemplate>
+			</Setter.Value>
+		  </Setter>
 	</Style>
-	{{endregion}}
-
-
-
-##### 3. __Associate the ViewModel with the View__The final step is to assign the __GraphSource__ property of the __RadDiagram__ to the ViewModel:
-						
+{{endregion}}
+	
+##### 3. __Associate the ViewModel with the View__
+The final step is to assign the __GraphSource__ property of the __RadDiagram__ to the ViewModel:						
 
 #### __XAML__
 
 {{region raddiagram-howto-mvvm-1}}
 	<telerik:RadDiagram x:Name="xDiagram"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
 
 {{region raddiagram-howto-mvvm-1}}
 	xDiagram.GraphSource = new DiagramViewModel();
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
 {{region raddiagram-howto-mvvm-1}}
 	xDiagram.GraphSource = New DiagramViewModel()
-	{{endregion}}
-
-
+{{endregion}}
 
 So as a result of our MVVM implementation, the __RadDiagram__ instance contains the following 3 shapes and 2 connections:
 ![raddiagram-howto-mvvm](images/raddiagram-howto-mvvm.png)
 
->In order to use bi-directional MVVM, the DiagramViewModel must implement the __IObservableGraphSource__ interface.
-						Check out the  [DataBinding]({%slug raddiagram-data-databinding%}) article for further information.
-					
+>In order to use bi-directional MVVM, the DiagramViewModel must implement the __IObservableGraphSource__ interface. Check out the  [DataBinding]({%slug raddiagram-data-databinding%}) article for further information.					
 
 ## Using MVVM to populate RadDiagram with ContainerShapes
 
-The __RadDiagramContainerShapes__ are essentially considered shapes and therefore in a databinding scenario, they are part of the __Nodes__ collection in the __RadDiagram GraphSource__. However, as a container can wrap a collection of shapes, we need to make sure its data model has a children collection as well. The RadDiagram Extensions expose a [ContainerNodeViewModelBase]({%slug raddiagram-data-containernodeviewmodel%}) that can serve as a base __ViewModel__ for __RadDiagramContainerShapes__. The __ContainerNodeViewModelBase__  derives from the [NodeViewModelBase]({%slug raddiagram-data-nodeviewmodel%}), which means that you can add it in the __Items__ collection of any __GraphSourceBase__ implementation.
-				
+The __RadDiagramContainerShapes__ are essentially considered shapes and therefore in a databinding scenario, they are part of the __Nodes__ collection in the __RadDiagram GraphSource__. However, as a container can wrap a collection of shapes, we need to make sure its data model has a children collection as well. The RadDiagram Extensions expose a [ContainerNodeViewModelBase]({%slug raddiagram-data-containernodeviewmodel%}) that can serve as a base __ViewModel__ for __RadDiagramContainerShapes__. The __ContainerNodeViewModelBase__  derives from the [NodeViewModelBase]({%slug raddiagram-data-nodeviewmodel%}), which means that you can add it in the __Items__ collection of any __GraphSourceBase__ implementation.				
 
 For the purpose of this example, we will create the following ViewModels:
 
-* __Brand__ - a class deriving from the __ContainerNodeViewModelBase__ ViewModel that represents a container node
-						
+* __Brand__ - a class deriving from the __ContainerNodeViewModelBase__ ViewModel that represents a container node						
 
-* __Model__ - a class deriving from the __NodeViewModelBase__ ViewModel that represents a node
-						
+* __Model__ - a class deriving from the __NodeViewModelBase__ ViewModel that represents a node						
 
-* __Link__ - a class deriving from the __LinkViewModelBase__ ViewModel that represent a link
-						
+* __Link__ - a class deriving from the __LinkViewModelBase__ ViewModel that represent a link						
 
 * __CarsGraphSource__ - a class deriving from the __ObservableGraphSourceBase__ ViewModel that represent the __RadDiagram GraphSource__
 
@@ -231,9 +207,7 @@ For the purpose of this example, we will create the following ViewModels:
 			this.AddLink(groupToAudi);
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -337,15 +311,11 @@ For the purpose of this example, we will create the following ViewModels:
 	        Me.AddLink(groupToAudi)
 	    End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
+Please note that the __ContainerNodeViewModelBase__ exposes a collection of __InternalItems__ and this is why in the __CarsGraphSource__ constructor, all __Brand__ instances are populated with __Model__ instances.				
 
-
-Please note that the __ContainerNodeViewModelBase__ exposes a collection of __InternalItems__ and this is why in the __CarsGraphSource__ constructor, all __Brand__ instances are populated with __Model__ instances.
-				
-
-Next, we can go ahead and define a __RadDiagram__ control in our View:
-				
+Next, we can go ahead and define a __RadDiagram__ control in our View:				
 
 #### __XAML__
 
@@ -371,12 +341,9 @@ Next, we can go ahead and define a __RadDiagram__ control in our View:
 	        </Style>
 	    </telerik:RadDiagram.ShapeStyle>
 	</telerik:RadDiagram>
-	{{endregion}}
-
-
+{{endregion}}
 
 And finally, we need to set the __RadDiagram GraphSource__ property:
-				
 
 #### __C#__
 
@@ -387,9 +354,7 @@ And finally, we need to set the __RadDiagram GraphSource__ property:
 	
 		this.diagram.GraphSource = new CarsGraphSource();
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
 
@@ -399,20 +364,14 @@ And finally, we need to set the __RadDiagram GraphSource__ property:
 	
 	    Me.diagram.GraphSource = New CarsGraphSource()
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 If you run the application now, the __RadDiagram__ should display the following structure:
 ![raddiagram-howto-mvvm-containers](images/raddiagram-howto-mvvm-containers.png)
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.
-					
+>tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.					
 
 # See Also
-
  * [DataBinding]({%slug raddiagram-data-databinding%})
-
  * [DiagramExtensions ViewModels]({%slug raddiagram-data-extensionsviewmodels%})
-
  * [Serialize a Databound Diagram]({%slug raddiagrams-howto-serialize-databound-diagram%})

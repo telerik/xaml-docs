@@ -27,9 +27,16 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 * Visual Studio toolbox update. 
 
+* Project themes upgrade (when using [implicit styles]({%slug styling-apperance-implicit-styles-overview%})).
+
 * Current project backup. 
 
-On the first step the wizard lists all projects from the solution, which use UI for WPF. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively):
+On the first step the wizard provides basic update process information  
+
+![VSExtentions WPF Upgrade Wizard Initial Page](images/VSExtentions_WPF_UpgradeWizardInitialPage.jpg)
+
+
+You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively):
 
 ![VSExtentions WPF Upgrade Wizard](images/VSExtentions_WPF_UpgradeWizard.png)
 
@@ -50,6 +57,10 @@ Notes:
 * You can use the Download button to access the Latest Version Acquirer and download the latest available version on our website. 
 
 * The distribution, downloaded by the Upgrade Wizard contains only the "hotfix" files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or the Live Examples.
+
+* When using the implicit styling approach and the XAML files are copied to the project, they will be updated only if they are in the default Themes\\[*SpecificTheme*] folder.
+
+	![VSExtensions Themes Folder](images/VSExtensions_WPF_ThemeFilesUnderNamedFolder.png)
 
 * A Visual Studio restart will be required in order to update your toolbox. If the automatic restart fails, a restart should be initiated manually in order to complete the toolbox upgrade.
 

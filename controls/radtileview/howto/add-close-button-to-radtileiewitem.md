@@ -388,8 +388,6 @@ The final stage of this tutorial is to implement the Close button’s command. W
 		}
 	{{endregion}}
 
-
-
 	#### __VB.NET__
 
 	{{region radtileview-howto-add-close-button-to-radtileiewitem_4}}

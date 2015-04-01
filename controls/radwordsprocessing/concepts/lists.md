@@ -57,7 +57,7 @@ The type of the list type is used by an application to determine the user interf
 
 ## ListLevel Overview
 
-[ListLevel](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_flow_model_lists_listlevel.html) is the class containing the structure of the list levels. It describes a set of properties which specify the appearance and behavior of the associated numbered paragraph.
+[ListLevel](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_lists_listlevel.html) is the class containing the structure of the list levels. It describes a set of properties which specify the appearance and behavior of the associated numbered paragraph.
         
 
 * __StartIndex__: Specifies the starting number of a ListLevel. The value should be equal or greater than 0.

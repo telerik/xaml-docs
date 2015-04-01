@@ -10,9 +10,8 @@ position: 0
 
 # Changes
 
+To see the fixes and features included in our latest official release please refer to our {% if site.site_name == 'Silverlight' %} [Release History](http://www.telerik.com/support/whats-new/silverlight/release-history) {% endif %} {% if site.site_name == 'WPF' %} [Release History](http://www.telerik.com/support/whats-new/wpf/release-history) {% endif %}.
 
-
-This article describes the fixes and the new features in the RadBook control
 
 ## Q1 2013
 

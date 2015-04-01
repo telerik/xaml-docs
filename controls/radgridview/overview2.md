@@ -10,16 +10,9 @@ position: 0
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-
-<table> <tr><td>RELATED VIDEOS</td></tr><tr><td>In this video, we will look at some of the features and functionality in Telerik RadGridView for Silverlight and how you can start using it in your rich internet applications today.(Runtime: 03:36)
-<iframe title="link" width="480" height="390" src="http://tv.telerik.com/silverlight/video/introduction-radgridview-silverlight" frameborder="0" allowfullscreen>< /iframe>
-</td></tr></table>
-{% endif %}
-
 {% if site.site_name == 'Silverlight' %}![](images/RadGridView_SL.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadGridView_WPF.png){% endif %}
 
-Thank you for choosing Telerik __RadGridView__!
+Thank you for choosing __RadGridView__!
 
 __RadGridView__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is the ultimate grid control that provides outstanding performance and a remarkably flexible hierarchy model. __RadGridView__ enables you to create fully customizable and highly interactive interfaces for display and management of large data. ![](images/RadGridView_Overview_2.png)
 

@@ -21,7 +21,8 @@ To change the default appearance of a cell you have to either style it or templa
 You can also change the default look of the cell when it is in edit mode by setting the __CellEditTemplate__ property to an appropriate template.
 
 This [help article]({%slug radgridview-columns-celltemplate-and-celledittemplate%}) explains how to set __CellTemplate/CellEditTemplate__ in details.    
-        
+
+>In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellValidated__ event raised when commiting an edit. To get the right value in __e.NewValue__, you can create your own [custom column]({%slug radgridview-howto-create-custom-editor %}) and override its __GetNewValueFromEditor__ method.        
 
 This [help article]({%slug gridview-add-button-column%}) explains how to create a __custom column with a button__ in details.
         

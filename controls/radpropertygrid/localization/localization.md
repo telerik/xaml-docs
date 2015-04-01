@@ -17,35 +17,20 @@ The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% end
 
 Here is a list of the supported languages:
       
-
-* English
-  
-
-* German
-  
-
-* Spanish
-  
-
+* English            
+* German          
+* Spanish           
 * French
-  
-
-* Italian
-  
-
-* Dutch
-  
-
+* Italian              
+* Dutch             
 * Turkish
         
-
 >tipTo learn more about the ways to localize the RadControls please read the common topic about
 
 ## Resource Keys
 
-In order to be able to distinguish the localization resources, an unique identifier, called __resource key__, is assigned to each localizable string.
+In order to be able to distinguish the localization resources, a unique identifier, called __resource key__, is assigned to each localizable string.
         
-
 Here is a list of the __Resources__ available and their default values:
         
 <table><tr><td>Key</td><td>Value</td></tr><tr><td>Categorize</td><td>Categorize</td></tr><tr><td>Alphabetical</td><td>Alphabetical</td></tr></table>

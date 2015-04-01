@@ -10,32 +10,22 @@ position: 3
 
 # How to Customize the Minimized Button Content
 
-
-
-## 
-
 __RadOutlookBar__ exposes two properties that can be used to customize its __Minimized Button__ (the button that is displayed when the control is minimized).
 
->tipYou can see how the __Minimized Button__ looks by default in the [Visual Structure]({%slug radoutlookbar-visual-structure%}) article.
-          
+>tip You can see how the __Minimized Button__ looks by default in the [Visual Structure]({%slug radoutlookbar-visual-structure%}) article.          
 
 The first property is __MinimizedButtonContent__ - defines the Content of the button.
 
 #### __XAML__
-
 {{region radoutlookbar-how-to-customize-minimized-button-content-0}}
     <telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button">
 {{endregion}}
 
-
-
 >When this property is not set the default value of the button is set to “Folders”.
 
-The second property is __MinimizedButtonContentTemplate__ - defines the __ContentTemplate__ of the button. You can use it to change the default appearance of the minimized button.
-        
+The second property is __MinimizedButtonContentTemplate__ - defines the __ContentTemplate__ of the button. You can use it to change the default appearance of the minimized button.        
 
 #### __XAML__
-
 {{region radoutlookbar-how-to-customize-minimized-button-content-1}}
     <telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button" IsMinimized="True">
         <telerik:RadOutlookBar.MinimizedButtonContentTemplate>
@@ -54,18 +44,12 @@ The second property is __MinimizedButtonContentTemplate__ - defines the __Conten
     </telerik:RadOutlookBar>
 {{endregion}}
 
-
-
 You can see the end result on the picture below
 
 ![outlookbar-how-to-customize-minimized-button-content-01](images/outlookbar-how-to-customize-minimized-button-content-01.png)
 
 # See Also
-
  * [Getting Started]({%slug radoutlookbar-getting-started%})
-
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})
-
  * [Templates]({%slug radoutlookbar-templates%})
-
  * [Icons]({%slug radoutlookbar-features-icons%})

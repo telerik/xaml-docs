@@ -25,7 +25,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
->In order to use __RadTreeView__ in your projects you have to add references to the following two assemblies:
+>In order to use __RadTreeView__ in your projects you have to add references to the following assemblies:
 >* __Telerik.Windows.Controls__
 >* __Telerik.Windows.Controls.Navigation__
 >* __Telerik.Windows.Data__
@@ -55,7 +55,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 
 ## Add and remove items (RadTreeViewItem controls) and setting their Header property
 
-Open Expression Blend and [select]({%slug radtreeview-how-to-select-item-in-expression-blend%}) the treeview control to which you wish to add item(s)
+Open Expression Blend and select the treeview control to which you wish to add item(s)
 
 * After you've selected the control, navigate to __Common Properties__ located in the __Properties__ pane and click the ellipses button next to __Items (Collection)__. The __Object Collection Editor__ dialog appears.
 
@@ -118,7 +118,7 @@ Open Expression Blend and [select]({%slug radtreeview-how-to-select-item-in-expr
 
 The Telerik __RadTreeView__ supports drag-and-drop functionality. To enable the feature you only need to set the __IsDragDropEnabled__ property to __True__.
 
-Select the __RadTreeView__ control, navigate to the __Behavior__ section in the __Properties__ pane and set the value of the __IsDragDropEnabled__ [property]({%slug radtreeview-how-to-search-for-property-in-expression-blend%}) to __True__.
+Select the __RadTreeView__ control, navigate to the __Behavior__ section in the __Properties__ pane and set the value of the __IsDragDropEnabled__ property to __True__.
 
 ![](images/RadTreeView_GettingStarted_110.png)
 
@@ -147,7 +147,7 @@ Run the application and try the drag-and-drop behavior.
 
 By default you can select only one item in the treeview. If you want to enable multiple item selection, and to select several nodes by pressing the __Ctrl__ or __Shift__ keys, you need to change the __SelectionMode__ property.
 
-[Find]({%slug radtreeview-how-to-search-for-property-in-expression-blend%}) the __SelectionMode__ property in the __Properties__ pane and set its value to __Multiple__.
+Find the __SelectionMode__ property in the __Properties__ pane and set its value to __Multiple__.
 
 ![](images/RadTreeView_GettingStarted_140.png)
 
@@ -177,7 +177,7 @@ Start the application and try to select more than one item at once.
 
 By enabling the __IsSingleExpandPath__ property, the __RadTreeView__ will automatically close all the nodes that are not on the path of the expanded node.
 
-[Select]({%slug radtreeview-how-to-select-item-in-expression-blend%}) the treeview and [find]({%slug radtreeview-how-to-search-for-property-in-expression-blend%}) the __IsSingleExpandPath__ property in the __Properties__ pane and enable it.
+Select the treeview and find the __IsSingleExpandPath__ property in the __Properties__ pane and enable it.
 
 ![](images/RadTreeView_GettingStarted_160.png)
 

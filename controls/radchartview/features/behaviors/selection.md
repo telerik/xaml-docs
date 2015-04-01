@@ -10,37 +10,23 @@ position: 3
 
 # Selection
 
+This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.        
 
+Here are the main properties that *ChartSelectionBehavior* exposes:        
 
-## 
+* __DataPointSelectionMode__ - to control single / multiple data point selection.          
 
-This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.
-        
+* __HitTestMargin__ - to increase the hit-testable area around the data point (especially useful when visualizing small scatter points that can be selected).          
 
-Here are the main properties that *ChartSelectionBehavior* exposes:
-        
+* __SelectionPoints__ - to detect the selection. You may also use the SelectionChanged event of the RadChartView for the same purpose.          
 
-* __DataPointSelectionMode__ - to control single / multiple data point selection.
-          
+* __SelectionPalette__ - to control the selected element appearance.          
 
-* __HitTestMargin__ - to increase the hit-testable area around the data point
-            (especially useful when visualizing small scatter points that can be selected).
-          
+For the purpose of this section we'll create a Scatter Series and demonstrate selecting points and styling them.        
 
-* __SelectionPoints__ - to detect the selection. You may also use the SelectionChanged event of the RadChartView for the same purpose.
-          
-
-* __SelectionPalette__ - to control the selected element appearance.
-          
-
-For the purpose of this section we'll create a Scatter Series and demonstrate selecting points and styling them.
-        
-
-You may read how to create a databound Series in [Create Data-Bound Chart]({%slug radchartview-series-radarseries%}) topic.
-          
+You may read how to create a databound Series in [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) topic.          
 
 #### __XAML__
-
 {{region radchart-features-selection_0}}
 	<telerik:RadCartesianChart x:Name="RadChart1" Palette="Metro">
 	
@@ -61,7 +47,6 @@ You may read how to create a databound Series in [Create Data-Bound Chart]({%slu
 {{endregion}}
 
 #### __C#__
-
 {{region radchart-features-selection_1}}
 	    public MainWindow()
 	    {
@@ -103,7 +88,6 @@ You may read how to create a databound Series in [Create Data-Bound Chart]({%slu
 {{endregion}}
 
 #### __VB.NET__
-
 {{region radchart-features-selection_2}}
 	public MainWindow()
 	   Public Sub New()
@@ -136,7 +120,6 @@ You may read how to create a databound Series in [Create Data-Bound Chart]({%slu
 To be able to change the selected element(s) appearance we'll use Selection Palette:
 
 #### __XAML__
-
 {{region radchart-features-selection_5}}
 	<telerik:RadCartesianChart.SelectionPalette>
 	    <telerik:ChartPalette>
@@ -150,10 +133,9 @@ To be able to change the selected element(s) appearance we'll use Selection Pale
 A sample result can be seen below:
 ![Rad Chart View-chart selection](images/RadChartView-chart_selection.PNG)
 
-Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where we can easily determine the datapoint clicked, the series it belongs to and was it selected or de-selected:        
+Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where we can easily determine the data point clicked, the series it belongs to and was it selected or de-selected:        
 
 #### __C#__
-
 {{region radchart-features-selection_3}}
 	private void RadChart1_SelectionChanged(object sender, ChartSelectionChangedEventArgs e)
 	{
@@ -182,7 +164,6 @@ Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where we 
 {{endregion}}
 
 #### __VB.NET__
-
 {{region radchart-features-selection_4}}
 	Private Sub RadChart1_SelectionChanged(sender As Object, e As ChartSelectionChangedEventArgs)
 	    'Handle selection of the current point '
@@ -209,11 +190,9 @@ Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where we 
 	End Sub
 {{endregion}}
 
->For Line/Area/Spline/SplineArea series selection refers to selecting the pointmarks and is therefore triggered when clicking any of the corresponding pointmarks. You will need to define a PointMarkTemplate so the item can be selected. For example:
-          
+>For Line/Area/Spline/SplineArea series selection refers to selecting the pointmarks and is therefore triggered when clicking any of the corresponding pointmarks. You will need to define a PointMarkTemplate so the item can be selected. For example:          
 
 #### __XAML__
-
 {{region radchart-features-selection_6}}
 	<telerik:LineSeries>
 	    <telerik:LineSeries.PointTemplate>
@@ -224,10 +203,9 @@ Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where we 
 	</telerik:LineSeries>
 {{endregion}}
 
-In order distinguish the selected point from the not-selected one (for example to change the Ellipse color) in the SelectionChanged event you will have to get the series's ContentPresenter:        
+In order distinguish the selected point from the not-selected one (for example to change the Ellipse color) in the SelectionChanged event you will have to get the series' ContentPresenter:        
 
 #### __C#__
-
 {{region radchart-features-selection_5}}
 	private void RadChart1_SelectionChanged(object sender, ChartSelectionChangedEventArgs e)
 	{

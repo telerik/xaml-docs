@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<meta name="page-position" content="{{page.position}}">
         <title>{{ page.page_title || page.title }}</title>
 		
         <link href="{{site.baseurl}}/favicon.ico?Version=2014" rel="shortcut icon" />
@@ -19,6 +20,7 @@
         {% javascript app %}
 		{% javascript prettify %}
         {% javascript branding %}
+		{% javascript feedback %}
 		
 		<!--[if lt IE 9]>
 		<script>

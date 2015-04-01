@@ -120,6 +120,8 @@ There are numerous ways to set in-memory data as data source:
 
 # See Also
 
+{% if site.site_name == 'Silverlight' %}
  * [DomainDataSource Support]({%slug consuming-data-domain-datasource-support%})
+{% endif %}
 
  * [Using XML]({%slug consuming-data-using-xml%})

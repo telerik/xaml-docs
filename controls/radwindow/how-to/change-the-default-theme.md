@@ -14,6 +14,12 @@ You can easily change the theme of __RadWindow__ to one of the predefined themes
 
 So, in order to set a theme to the Window, you should merge the following xaml files in App.xaml file: 
 
+* Telerik.Windows.Controls.xaml
+
+* Telerik.Windows.Controls.Navigation.xaml
+
+>As RadWindow is placed in a different visual tree than the UserControl it is opened from, the xaml files should be merged in App.xaml, if you merge them locally in the UserControl Resources, RadWindow will not receive its Style.
+
 So merging the mentioned xaml files, for example, for __Windows8__ theme:
 
 #### __XAML__

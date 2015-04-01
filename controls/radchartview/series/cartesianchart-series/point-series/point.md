@@ -27,13 +27,13 @@ You can use the following definition to display a simple PointSeries
 	<telerik:RadCartesianChart.Series>
 		<telerik:PointSeries>
 			<telerik:PointSeries.DataPoints>
-				<telerik:ScatterDataPoint XValue="0" YValue="2" />
-				<telerik:ScatterDataPoint XValue="1" YValue="5" />
-				<telerik:ScatterDataPoint XValue="2" YValue="3" />
-				<telerik:ScatterDataPoint XValue="3" YValue="10" />
-				<telerik:ScatterDataPoint XValue="4" YValue="9" />
-				<telerik:ScatterDataPoint XValue="5" YValue="7" />
-				<telerik:ScatterDataPoint XValue="6" YValue="1" />
+				<telerik:CategoricalDataPoint Category="January" Value="2" />
+				<telerik:CategoricalDataPoint Category="February" Value="5" />
+				<telerik:CategoricalDataPoint Category="March" Value="3" />
+				<telerik:CategoricalDataPoint Category="April" Value="10" />
+				<telerik:CategoricalDataPoint Category="May" Value="9" />
+				<telerik:CategoricalDataPoint Category="June" Value="7" />
+				<telerik:CategoricalDataPoint Category="July" Value="1" />
 			</telerik:PointSeries.DataPoints>
 		</telerik:PointSeries>
 	</telerik:RadCartesianChart.Series>

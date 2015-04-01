@@ -10,18 +10,11 @@ position: 3
 
 # Binding to a DataTable
 
-
-
 In this section we will demonstrated how to bind a ChartView to a DataTable.
-      
 
-## 
-
-For the basis of this article we will declare a Bar Chart which is represented by the RadCartesianChart class. Here is the XAML declaration:
-        
+For the basis of this article we will declare a Bar Chart which is represented by the RadCartesianChart class. Here is the XAML declaration:        
 
 #### __XAML__
-
 {{region radchartview-populating-with-data-binding-to-data-table_0}}
 	<Grid>
 	    <Grid.RowDefinitions>
@@ -51,15 +44,11 @@ For the basis of this article we will declare a Bar Chart which is represented b
 	        <TextBlock Text="Expected" Margin="10, 0, 10, 0"/>
 	    </StackPanel>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-
-
-Next we will decalare a sample DataTable, containing 3 columns - actual (of type double), expected(of type double), month(of type DateTime). The "Actual" column will be the value source for the barSeries1 and the "Expected" - respectively for barSeries2. The values of the "Month" column will serve as the categories for both of these series.
-        
+Next we will decalare a sample DataTable, containing 3 columns - actual (of type double), expected(of type double), month(of type DateTime). The "Actual" column will be the value source for the barSeries1 and the "Expected" - respectively for barSeries2. The values of the "Month" column will serve as the categories for both of these series.        
 
 #### __C#__
-
 {{region radchartview-populating-with-data-binding-to-data-table_0}}
 	DataTable dt = new DataTable();
 	dt.Columns.Add("Expected", typeof(double));
@@ -74,12 +63,9 @@ Next we will decalare a sample DataTable, containing 3 columns - actual (of type
 	dt.Rows.Add(7, 10, new DateTime(2013, 12, 1));
 	
 	this.DataContext = dt.Rows;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radchartview-populating-with-data-binding-to-data-table_1}}
 	Dim dt As New DataTable()
 	dt.Columns.Add("Expected", GetType(Double))
@@ -94,27 +80,19 @@ Next we will decalare a sample DataTable, containing 3 columns - actual (of type
 	dt.Rows.Add(7, 10, New DateTime(2013, 12, 1))
 	
 	Me.DataContext = dt.Rows
-	{{endregion}}
+{{endregion}}
 
+Using the traditional PropertyNameBinding the ChartView can only be bound to objects of type IEnumerable. In order for the binding to work with our DataTable we must use GenericDataPointBinding. It allows a lot more flexibility because it gives the control to user by allowing him to specify exactly how he wants to retrieve the data.        
 
+We need to tell the barSeries1 to use the values in column "Actual" for the YValues of its data points and to use the values in the "Month" column for their categories. Also the barSeries2 should use the "Expected" column for YValues, and again the "Month" for categories.        
 
-Using the traditional PropertyNameBinding the ChartView can only be bound to objects of type IEnumerable. In order for the binding to work with our DataTable we must use GenericDataPointBinding. It allows a lot more flexibility because it gives the control to user by allowing him to specify exactly how he wants to retrieve the data.
-        
+To do so, we have to set for each of our bar series bindings to a new instance of the GenericDataPointBinding <TElement, TResult> class. "TElement" is the type that is passed to the binding function, and "TResult" is the type of the value that is bound to the data point element.         
 
-We need to tell the barSeries1 to use the values in column "Actual" for the YValues of its data points and to use the values in the "Month" column for their categories. Also the barSeries2 should use the "Expected" column for YValues, and again the "Month" for categories.
-        
+The ChartView will automatically traverse the the DataRowsCollection of the DataTable and will expect the binding function to extract the needed information from each DataRow. So the the type of TElement is DataRow, and the return type of the fuction is double for ValueBindings and string for the CategoryBindgings respectively.        
 
-To do so, we have to set for each of our bar series bindings to a new instance of the GenericDataPointBinding <TElement, TResult> class. "TElement" is the type that is passed to the binding function, and "TResult" is the type of the value that is bound to the data point element. 
-        
-
-The ChartView will automatically traverse the the DataRowsCollection of the DataTable and will expect the binding function to extract the needed information from each DataRow. So the the type of TElement is DataRow, and the return type of the fuction is double for ValueBindings and string for the CategoryBindgings respectively.
-        
-
-Using lambda syntax (as shown below) we set the path to the values in the DataTable for the bar series to use.
-        
+Using lambda syntax (as shown below) we set the path to the values in the DataTable for the bar series to use.        
 
 #### __C#__
-
 {{region radchartview-populating-with-data-binding-to-data-table_2}}
 	this.barSeries1.ValueBinding = 
 	    new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, double>() 
@@ -139,12 +117,9 @@ Using lambda syntax (as shown below) we set the path to the values in the DataTa
 	    {
 	        ValueSelector = row => (DateTime)row["Month"]
 	    };
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radchartview-populating-with-data-binding-to-data-table_3}}
 	Me.barSeries1.ValueBinding = New Telerik.Windows.Controls.ChartView.GenericDataPointBinding(Of DataRow, Double)() With { _
 		.ValueSelector = Function(row) CDbl(row("Actual")) _
@@ -161,13 +136,10 @@ Using lambda syntax (as shown below) we set the path to the values in the DataTa
 	Me.barSeries2.CategoryBinding = New Telerik.Windows.Controls.ChartView.GenericDataPointBinding(Of DataRow, DateTime)() With { _
 		.ValueSelector = Function(row) DirectCast(row("Month"), DateTime) _
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 The final result:
-        ![Result](images/RadChartView-binding_to_datatable.png)
+![Result](images/RadChartView-binding_to_datatable.png)
 
 # See Also
-
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

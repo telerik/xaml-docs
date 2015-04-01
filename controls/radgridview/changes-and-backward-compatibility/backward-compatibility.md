@@ -14,6 +14,105 @@ position: 1
 
 You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
+## Q1 SP 2015
+
+Introduced __Telerik.Windows.Controls.GridView.Export.dll__ - it contains logic for exporting RadGridView to [xlsx]({%slug gridview-export-xlsx%}) and [pdf]({%slug gridview-export-pdf%}) formats eliminating the dependency of Telerik.Windows.Controls.GridView.dll to all SpreadProcessing logic. The two methods ExportToXlsx and ExportToPdf are located here and if used, a reference to the new binary should be included.
+
+
+## Q1 2015
+
+__Changed__
+
+* Removed obsoleted class GridViewExportEventArgs and TextAlignment, VerticalAlignment, Background, Foreground, FontFamily, FontSize, FontWeight, Width, Height, Styles, Attributes properties from GridViewElementExportingEventArgs class.
+            
+__What to do now:__
+
+As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. 
+For example:
+
+__Before__
+#### __C#__
+	private void radGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
+    {
+        e.Background = Colors.Red;
+        e.FontFamily = new FontFamily("Verdana");
+        e.FontSize = 30;
+        e.FontWeight = FontWeights.Bold;
+        e.Foreground = Colors.Green;
+        e.Height = 50;
+        e.TextAlignment = TextAlignment.Center;
+        e.VerticalAlignment = VerticalAlignment.Bottom;
+    }
+
+__After__
+
+For __ExportFormat.HTML__, the code you should use now is similar to:   
+#### __C#__
+
+{{region gridview-export-async_6}}
+	private void radGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
+	{
+	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
+	    {
+	        var param = e.VisualParameters as GridViewHtmlVisualExportParameters;
+		    param.Background = Colors.Red;
+		    param.FontFamily = new FontFamily("Verdana");
+		    param.FontSize = 30;
+		    param.FontWeight = FontWeights.Bold;
+		    param.Foreground = Colors.Green;
+		    param.Height = 50;
+		    param.TextAlignment = TextAlignment.Center;
+		    param.VerticalAlignment = VerticalAlignment.Bottom;
+	    }
+	}
+{{endregion}}
+
+You can find more details on how to implement styling in the [ExportFormat.Html]({%slug gridview-export-html%}) article.
+
+Now, it is also possible to define styling for __ExportFormat.ExcelML__
+
+The type of the property for this format is __GridViewExcelMLVisualExportParameters__ and you can set it as follows:
+#### __C#__
+{{region gridview-export-async_2}}
+
+	(e.VisualParameters as GridViewExcelMLVisualExportParameters).StyleId = "0";
+{{endregion}}
+
+You can define the Style when __InitializingExcelMLStyles__ event is raised. For example:
+          
+#### __C#__
+
+{{region gridview-export-async_4}}
+
+	ExcelMLStyle style = new ExcelMLStyle("0");            
+	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
+	e.Styles.Add(style);
+{{endregion}}
+
+You can find more details on how to implement styling in the [ExportFormat.ExcelML]({%slug gridview-export-excelml%}) article.
+
+You can also check the [Export section]({%slug gridview-export%}) in our documentation on the different exporting options currently available.
+
+__Changed__
+
+* Removed obsoleted property DefaultOperator of FilterOperatorsLoadingEventArgs.
+            
+__What to do now:__
+
+You can work with the properties __DefaultOperator1 and DefaultOperator2__ instead.
+
+__Changed__
+
+* Removed obsoleted property ParentGroupRow of GridViewGroupFooterRow.
+            
+__Changed__
+
+* Removed obsoleted property ShowInsertRow of RadGridView. 
+            
+__What to do now:__
+
+Property __NewRowPosition__ should be used instead. You can also refer to the [Adding Rows]({%slug gridview-rows-adding-rows%}) article.
+
 ## Q2 2014
       
 
@@ -231,7 +330,7 @@ In order to enable filtering for our GridViewExpressionColumn, we had to rewrite
 Some __code changes__ are needed after the __upgrade__. Find the list with code snippets below.
         
 
-* __Filtering a Column____Before:__
+* __Filtering a Column Before:__
 
 #### __C#__
 
@@ -259,49 +358,7 @@ Some __code changes__ are needed after the __upgrade__. Find the list with code 
     ageColumnFilter.FieldFilter.Filter1.Value = 10
     ' ...
     Me.radGridView.FilterDescriptors.Add(ageColumnFilter)
-#End Region
-
-#Region "radgridview-backward-compatibility_3"
-
-    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
-    ' Getting it from the property will create it and associate it with its column automatically.
-    Dim ageColumnFilter As IColumnFilterDescriptor = ageColumn.ColumnFilterDescriptor
-    ageColumnFilter.SuspendNotifications()
-    ' ...
-    ageColumnFilter.DistinctFilter.AddDistinctValue(5)
-    ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
-    ageColumnFilter.FieldFilter.Filter1.Value = 10
-    ' ...
-    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.
-    ageColumnFilter.ResumeNotifications()
-#End Region
-
-#Region "radgridview-backward-compatibility_5"
-
-    Me.radGridView.FilterDescriptors.Remove(columnFilterDescriptor)
-#End Region
-
-#Region "radgridview-backward-compatibility_7"
-
-    ' Calling ClearFilter will automatically remove filter descriptor from the grid.
-    myColumn.ClearFilters()
-#End Region
-
-#Region "radgridview-backward-compatibility_9"
-
-    Me.radGridView.FilterDescriptors.Clear()
-#End Region
-
-#Region "radgridview-backward-compatibility_11"
-
-    Me.radGridView.FilterDescriptors.SuspendNotifications()
-    For Each column As var In Me.radGridView.Columns
-	    column.ClearFilters()
-    Next
-    Me.radGridView.FilterDescriptors.ResumeNotifications()
-    End Class
-#End Region
+{{endregion}}
 
 __After:__
 
@@ -321,7 +378,7 @@ __After:__
 	    // There is no need to manually add the column filter to this.radGridView.FilterDescriptors
 	    // When the column filter is activated/deactivated it is automatically added/removed to this collection.
 	    ageColumnFilter.ResumeNotifications();
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -339,40 +396,16 @@ __After:__
 	    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
 	    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.
 	    ageColumnFilter.ResumeNotifications()
-	#End Region
-	
-	#Region "radgridview-backward-compatibility_5"
-	    Me.radGridView.FilterDescriptors.Remove(columnFilterDescriptor)
-	#End Region
-	
-	#Region "radgridview-backward-compatibility_7"
-	    ' Calling ClearFilter will automatically remove filter descriptor from the grid.
-	    myColumn.ClearFilters()
-	#End Region
-	
-	#Region "radgridview-backward-compatibility_9"
-	    Me.radGridView.FilterDescriptors.Clear()
-	#End Region
-	
-	#Region "radgridview-backward-compatibility_11"
-	    Me.radGridView.FilterDescriptors.SuspendNotifications()
-	    For Each column As var In Me.radGridView.Columns
-		    column.ClearFilters()
-	    Next
-	    Me.radGridView.FilterDescriptors.ResumeNotifications()
-	    End Class
-	#End Region
+{{endregion}}
 
-
-
-* __Clearing a Column Filter____Before:__
+* __Clearing a Column Filter Before:__
 
 #### __C#__
 
 {{region radgridview-backward-compatibility_4}}
 
 	    this.radGridView.FilterDescriptors.Remove(columnFilterDescriptor);
-	{{endregion}}
+{{endregion}}
 
 __After:__
 
@@ -382,18 +415,17 @@ __After:__
 
 	    // Calling ClearFilter will automatically remove filter descriptor from the grid.
 	    myColumn.ClearFilters();
-	{{endregion}}
+{{endregion}}
 
 
-
-* __Clearing All RadGridView Filters____Before:__
+* __Clearing All RadGridView Filters Before:__
 
 #### __C#__
 
 {{region radgridview-backward-compatibility_8}}
 
 	    this.radGridView.FilterDescriptors.Clear();
-	{{endregion}}
+{{endregion}}
 
 __After:__
 
@@ -407,7 +439,7 @@ __After:__
 		    column.ClearFilters();
 	    }
 	    this.radGridView.FilterDescriptors.ResumeNotifications();
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -421,7 +453,7 @@ __After:__
 	    Next
 	    Me.radGridView.FilterDescriptors.ResumeNotifications()
 	    End Class
-	#End Region
+{{endregion}}
 
 
 ## Q3 2011

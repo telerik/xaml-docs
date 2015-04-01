@@ -27,8 +27,6 @@ Sharing the same codebase with Telerik WPF controls, the Silverlight controls of
 
 Telerik UI for Silverlight features the following controls:
 
-* [DragDropManager]({%slug dragdropmanager-overview%})
-
 * [AutoCompleteBox]({%slug radautocompletebox-overview%})
 
 * [Barcode]({%slug radbarcode-overview%})
@@ -79,7 +77,9 @@ Telerik UI for Silverlight features the following controls:
 
 * [Docking]({%slug raddocking-overview2%})
 
-* [DomainDataSource](8962EF1A-8A98-4D52-83A7-C537809069DA)
+* [DomainDataSource]({%slug dds-overview%})
+
+* [DragDropManager]({%slug dragdropmanager-overview%})
 
 * [Expander]({%slug radexpander-overview%})
 
@@ -161,6 +161,8 @@ Telerik UI for Silverlight features the following controls:
 
 * [ToolBar]({%slug radtoolbar-overview%})
 
+* [ToolTip]({%slug radtooltip-overview%})
+
 * [TransitionControl]({%slug radtransition-overview%})
 
 * [TreeListView]({%slug radtreelistview-overview%})
@@ -175,6 +177,8 @@ Telerik UI for Silverlight features the following controls:
 
 * [Window]({%slug radwindow-overview%})
 
+* [Wizard]({%slug wizard-overview%})
+
 * [ZipLibrary]({%slug radziplibrary-overview%})
 {% endif %}
 
@@ -182,8 +186,6 @@ Telerik UI for Silverlight features the following controls:
 UI for WPF is a complete commercial toolset for building next-generation line of business and kiosk applications for Windows Presentation Foundation. Leveraging the amazing potential of this platform as well as many years of excellence in presentation layer technologies, Telerik UI for WPF controls provide a high-performance, visually appealing, and highly customizable shortcut to the world of engaging user experiences.        
 
 Telerik UI for WPF features the following controls:
-
-* [DragDropManager]({%slug dragdropmanager-overview%})
 
 * [AutoCompleteBox]({%slug radautocompletebox-overview%})
 
@@ -236,6 +238,8 @@ Telerik UI for WPF features the following controls:
 * [Diagram Framework]({%slug raddiagram-overview%})
 
 * [Docking]({%slug raddocking-overview2%})
+
+* [DragDropManager]({%slug dragdropmanager-overview%})
 
 * [EntityFrameworkDataSource]({%slug entityframework-overview%})
 
@@ -315,6 +319,8 @@ Telerik UI for WPF features the following controls:
 
 * [ToolBar]({%slug radtoolbar-overview%})
 
+* [ToolTip]({%slug radtooltip-overview%})
+
 * [TransitionControl]({%slug radtransition-overview%})
 
 * [TreeListView]({%slug radtreelistview-overview%})
@@ -326,6 +332,8 @@ Telerik UI for WPF features the following controls:
 * [WaterMarkBox]({%slug radwatermarktextbox-overview%})
 
 * [Window]({%slug radwindow-overview%})
+
+* [Wizard]({%slug wizard-overview%})
 
 * [WordsProcessing]({%slug radwordsprocessing-overview%})
 
@@ -340,17 +348,14 @@ License agreement and detailed information about different licenses and which on
 ## Installation and Deployment
 
 To learn how to install UI for {% if site.site_name == 'Silverlight' %}Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} and for comprehensive list of our controls and their assemblies you can visit the [Installation and Deployment]({%slug installation-installing-which-file-do-i-need%}) section.
-				
 
 ## Consuming Data
 
 To learn more about the different approaches for populating the Telerik UI for {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
-       	
 
 ## Styling and Appearance
 
 To find how to customize the look of UI for {% if site.site_name == 'Silverlight' %} Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
-				
 
 If you need further assistance you can post your question in the {% if site.site_name == 'Silverlight' %}[Silverlight forums](http://www.telerik.com/community/forums/silverlight.aspx){% endif %}{% if site.site_name == 'WPF' %}[WPF forums](http://www.telerik.com/community/forums/wpf.aspx){% endif %} or use the [online ticketing system](https://www.telerik.com/account/login.aspx?ReturnUrl=%2faccount%2fsupport-tickets%2favailable-support-list.aspx).
 
@@ -373,3 +378,21 @@ If you need further assistance you can post your question in the {% if site.site
 * Essential support - [http://www.telerik.com/support](http://www.telerik.com/support)
 
 * Creative ideas – [http://blogs.telerik.com](http://blogs.telerik.com)
+
+## Help us Improve {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Documentation
+
+We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better and we encourage you to help us with that task in the way that you choose:
+
+__Submit a New Issue at GitHub__
+
+If you find an issue with our docs that need to be addressed, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/xaml-docs/issues?q=is%3Aopen). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closes anchor to the issue, that is even better.
+
+__Update the Documentation at GitHub__
+
+Creating an issue is great, but what we really love are pull requests. This is the most direct method.  So, if you find an issue in the docs, or even feel like creating new content, we’d be happy to have your contributions! The basic steps are that you fork our documentation and submit a pull request. That way you may contribute to exactly where you found the error.  After that, our technical writing team just needs to approve your change request. Please use only standard markdown. For a more detailed instructions, please follow [the contribution instructions](https://github.com/telerik/xaml-docs/blob/master/README.md) published in GitHub.
+
+__Forums__
+
+You can visit the [UI for {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} forums]{% if site.site_name == 'Silverlight' %}(http://www.telerik.com/forums/silverlight){% endif %}{% if site.site_name == 'WPF' %}(http://www.telerik.com/forums/wpf){% endif %} and leave us a feedback.  Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
+
+Thank you for your contribution to the {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Documentation!

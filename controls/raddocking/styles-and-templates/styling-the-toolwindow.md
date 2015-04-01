@@ -28,21 +28,13 @@ Go to the 'Resources' pane and see all of the resources generated for your style
 
 ![](images/RadDocking_StylingToolWindow_03.png){% endif %}
 
-* {% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __ToolWindow_Background__ - is the background brush used for the tool window control.{% endif %}
 
-__ToolWindow_Background__ - is the background brush used for the tool window control.{% endif %}
+* {% if site.site_name == 'Silverlight' %} __ToolWindow_OuterBorderBrush__ - is the outer border brush used for the tool window control.{% endif %}
 
-* {% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __ToolWindow_InnerBorderBrush__ - is the inner border brush used for the tool window control.{% endif %}
 
-__ToolWindow_OuterBorderBrush__ - is the outer border brush used for the tool window control.{% endif %}
-
-* {% if site.site_name == 'Silverlight' %}
-
-__ToolWindow_InnerBorderBrush__ - is the inner border brush used for the tool window control.{% endif %}
-
-* {% if site.site_name == 'Silverlight' %}
-
-__ToolWindow_CloseButtonStyle__ - defines the style for the window's close button.{% endif %}{% if site.site_name == 'Silverlight' %}
+* {% if site.site_name == 'Silverlight' %} __ToolWindow_CloseButtonStyle__ - defines the style for the window's close button.{% endif %}{% if site.site_name == 'Silverlight' %}
 
 Here is an example of the above resources modified:{% endif %}{% if site.site_name == 'Silverlight' %}
 

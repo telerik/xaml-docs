@@ -53,7 +53,7 @@ Special axis that expects each data point to provide a System.DateTime structure
 Special axis which is a fixed line in a system of polar coordinates from which the polar angle, θ, is measured anticlockwise. You may read more about it in [Polar Axis]({%slug radchartview-axes-polaraxis%}) topic.
 
 ##### 2.1.1.7. Radial Axis
-Special axis used by RadPolarChart with [Radar Series]({%slug radchartview-series-radarseries%}).
+Special axis used by RadPolarChart with [Radar Series]({%slug radchartview-series-chartseries%}).
 
 * __Categorical__ - positions catgories/labels around the circumference of the circle.
 
@@ -90,7 +90,7 @@ The chart may be optionally decorated with grid-like visuals which support horiz
 You may refer to [Create Chart With Static Data]({%slug radchartview-populating-with-data-static-data%}) for more information on how to toggle GridLines and Stripes inside Cartesian Grid.
 
 ##### 2.1.3.2  Polar Grid
-You may refer to [Radar Series]({%slug radchartview-series-radarseries%}) for more information on how to toggle GridLines and Stripes inside Polar Grid.
+You may refer to [CartesianChartGrid and PolarChartGrid]({%slug radchartview-cartesianchartgrid-and-polarchartgrid%}) for more information on how to toggle GridLines and Stripes inside Polar Grid.
 
 ##### 2.2. RadPieChart
 This concrete chart control visualizes its data points using radial coordinate system. Each point is represented as an arc segment where the arc’s length is actually the percentage this point’s value is from the total sum.

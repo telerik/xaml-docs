@@ -13,12 +13,9 @@ site_name: Silverlight
 
 We are ready with the implementation on the service side and we can focus on the Silverlight project.
 
-With the current version (v1.0 SP2) WCF RIA Services doesn’t support Many-To-Many relationships between the Entities, but we have such ones in the database.
-To work around this limitation, we use an additional property which forces EF to create a Many-To-Many table: 
-
-![radscheduleview populating with data Many To Many Workaround](images/radscheduleview_populating_with_data_Many_To_Many_Workaround.png)
-
-Once the table is created we have to update manually the data in it.
+>With the current version (v1.0 SP2) WCF RIA Services doesn’t support Many-To-Many relationships between the Entities, but we have such ones in the database. To work around this limitation, we use an additional property which forces EF to create a Many-To-Many table: 
+>![radscheduleview populating with data Many To Many Workaround](images/radscheduleview_populating_with_data_Many_To_Many_Workaround.png)
+>Once the table is created we have to update manually the data in it.
 
 All generated entities from the WCF RIA Services are partial classes and we could extend them to implement the ScheduleView interfaces:      	
 

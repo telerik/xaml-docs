@@ -19,8 +19,6 @@ This topic will discuss different ways of loading a document in __RadPdfViewer__
 
 * [Binding the Document Source](#binding-the-documentsource-of-radpdfviewer)
 
-* [Specifying a Loading Mode](#specifying-a-loading-mode)
-
 ## Showing a PDF file
 
 __RadPdfViewer__ uses a DocumentSource in order to be able to show files that are passed to it as streams, as well as URIs without any code behind.
@@ -163,58 +161,6 @@ Notice that regardless of the type of the property you choose to bind the Docume
 	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Source, Converter={StaticResource PdfDocumentSourceValueConverter}}" />
 {{endregion}}
 
-
-
-## Specifying a Loading Mode
-
-Starting from 2012.1. 326 (2012 Q1 SP1) the way the documents are loaded can be controlled. One can choose between loading the whole document in one go (as done up to now) and loading it page by page. The second option means that it is no longer needed to parse the entire document in order to show it.
-        
-
-For example if you want to use  RadPdfViewer to print documents, you should load all pages first and then try to print the document (it is recommended, not required). If you want to show big documents or books, then on demand loading will produce better results.
-
-
-You can control how the document is loaded by setting the __PdfViewer.DefaultFormatProviderSettings__ property – this property is used when the OpenPdfDocumentCommand is used to open a PDF file. The default value is __FormatProviderSettings.ReadOnDemand__. If you want to change this behavior when a PDF document is loaded through the command, you can set it to __FormatProviderSettings.ReadAllAtOnce__ in the code behind or to __“ReadAllAtOnce”__ in XAML.
-            
-
-#### __C#__
-
-{{region radpdfviewer-showing-a-file_5}}
-	this.viewer.DefaultFormatProviderSettings = FormatProviderSettings.ReadAllAtOnce;
-	this.viewer.DefaultFormatProviderSettings = FormatProviderSettings.ReadOnDemand;
-{{endregion}}
-
-
-
-#### __XAML__
-
-{{region radpdfviewer-showing-a-file_6}}
-	DefaultFormatProviderSettings="ReadAllAtOnce"
-	DefaultFormatProviderSettings="ReadOnDemand"
-{{endregion}}
-
-
-
-When you set the __PdfDocumentSource__ – we have added two new constructors that accept __FormatProviderSettings__  when creating a new instance of PdfDocumentSource class. The __FormatProviderSettings.ReadOnDemand__ predefined settings are used by default. If you want to change this behavior to read all pages in the document at once, you can create a new __PdfDocumentSource__ instance with __FormatProviderSettings.ReadAllAtOnce__ predefined settings.
-            
-
-#### __C#__
-
-{{region radpdfviewer-showing-a-file_4}}
-	PdfDocumentSource source = new PdfDocumentSource(stream/uri, FormatProviderSettings.ReadAllAtOnce);      
-{{endregion}}
-
-
-
-When you bind the __DocumentSource__ property of __RadPdfViewer__ and you want to control the way bounded documents are loaded you may pass desired __FormatProviderSettings__ as a ConverterParameter.
-            
-
-#### __XAML__
-
-{{region radpdfviewer-showing-a-file_7}}
-	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Uri, Converter={StaticResource PdfDocumentSourceValueConverter}, ConverterParameter=ReadAllAtOnce}" />
-{{endregion}}
-
-“ReadAllAtOnce” and “ReadOnDemand” are the valid values you can specify.
 
 # See Also
 

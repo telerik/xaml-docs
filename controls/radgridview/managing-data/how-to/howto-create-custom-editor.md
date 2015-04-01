@@ -517,6 +517,8 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 
 As you can see first method gathers required information from the actual editor (used by the validation engine), after UI validation is successful then new value is submitted to the data item via second method. This second method returns errors (if any) that occurred while new value is set to the data item (Data layer validation).
 
+>In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellValidated__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
+
 # See Also
 
  * [Defining Columns]({%slug gridview-columns-defining-columns%})

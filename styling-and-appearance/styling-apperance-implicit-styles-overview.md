@@ -34,11 +34,13 @@ After installing UI for {% if site.site_name == 'Silverlight' %}Silverlight{% en
 
 >With Q1 2014 the __Themes__ folder, containing the stanadard themes used with StyleManager, are not provided in the installation package anymore. However, they can be separately downloaded  from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} download page in your [Telerik account](http://www.telerik.com/account.aspx).
 
-You may still apply a theme using our theming mechanism through utilizing the standard Telerik StyleManager and referencing binaries from the Binaries folder of your personal installation. The approach of creating custom themes and modifying the default Telerik themes, via the Telerik StyleManager remains the same.
+You can still apply a theme using our theming mechanism through utilizing the standard Telerik StyleManager and referencing binaries from the Binaries folder of your personal installation. The approach of creating custom themes and modifying the default Telerik themes, via the Telerik StyleManager remains the same.
       
 
-You may read more about this following this link:
+You can read more about this following this link:
       {% if site.site_name == 'Silverlight' %}[Setting a Theme with StyleManager]({%slug common-styling-apperance-setting-theme%}){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% endif %}
+	  
+>Note that styling RadChart - __Telerik.Windows.Controls.Charting.dll__ and the old (pre Q2 2012) RadGauge - __Telerik.Windows.Controls.Gauge__ with implicit styles is not supported! 	  
 
 This article explains details on using implicit styles with Telerik UI and covers the following topics:
       
@@ -84,14 +86,30 @@ So you need to add the xaml for all these assemblies from the selected theme:
 
 >If you copy the xaml files in your project, please make sure that they are with the proper build action. Generally  it should be Resource, but for the Telerik.Windows.Controls.RibbonView.xaml the build action should be Page. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
 
+
+>tipYou should not set Application Theme using the __StyleManager__ when using implicit styles. 
+
+Telerik includes the .xaml files in separate theme DLLs located in the Binaries.NoXaml folder (Telerik.Windows.Themes.Expression_Dark.dll, Telerik.Windows.Themes.Windows8.dll, etc.). So instead of copying all the .xaml files in your project, you can just merge them directly from the theme assembly. For example, if you are using Windows8 theme, you should add a reference to the Telerik.Windows.Themes.Windows8.dll and then merge the needed .xaml files as shown in __Example 1__.
+
+#### __[XAML] Example 1: After you add a reference, you can merge the needed .xaml files__
+
+{{region styling-apperance-implicit-styles-overview_4}}
+	<ResourceDictionary>
+		<ResourceDictionary.MergedDictionaries>
+			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Docking.xaml"/>                
+		</ResourceDictionary.MergedDictionaries>
+	</ResourceDictionary>
+{{endregion}}
+
 ## Basing styles on theme style
 
 Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} follows a naming convention and every control has a style formed by the name of the control type  follow a *naming convention* and every control  has a style formed by the name of the control type followed by  a “Style” suffix.
 
 For example, for the __RadComboBox__  there is a style with x:Key=”RadComboBoxStyle”. See the code in __Example 2__ .
         
-
-
 
 #### __[XAML] Example 2: Custom styles for RadComboBox__
 
@@ -102,9 +120,7 @@ For example, for the __RadComboBox__  there is a style with x:Key=”RadComboBox
     <Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
         <Setter Property="Foreground" Value="Red" />
     </Style>
-	{{endregion}}
-
-
+{{endregion}}
 
 ## Setting Implicit Styles for RadComboBox Example
 
@@ -115,8 +131,6 @@ We will apply implicit styles from the Windows8 theme on the RadComboBox in our 
 
 * Next, create a Themes folder in your project and copy the corresponding .xaml files from __Themes.Implicit/../Windows8/../Themes/ folder__ as shown in __Figure 1__.
         
-              
-
 Figure 1: Copy the needed .xaml in the project
 ![implicit styles 1](images/implicit_styles_1.png)
 
@@ -124,7 +138,6 @@ Figure 1: Copy the needed .xaml in the project
 
 * The next step is to merge these ResourceDictionaries in the App.xaml file as shown in __Example 3__.          
             
-
 #### __[XAML] Example 3: Merging the ResourceDictionaries__
 
 {{region styling-apperance-implicit-styles-overview_0}}
@@ -141,9 +154,7 @@ Figure 1: Copy the needed .xaml in the project
 			</ResourceDictionary>
 		</Application.Resources>
 	</Application>
-	{{endregion}}
-
-
+{{endregion}}
 
 * And here is the result:
 ![implicit styles 2](images/implicit_styles_2.png)
@@ -153,9 +164,6 @@ With implicit styles now being an integrated part of Telerik theming mechanism, 
 
 __Example 4__ shows how to create two custom styles for __RadComboBox__ based on the Windows8 theme using the project above (the one with x:Key set).         
         
-
-
-
 #### __[XAML] Example 4: Add custom styles for RadComboBox__
 
 {{region styling-apperance-implicit-styles-overview_1}}
@@ -173,13 +181,10 @@ __Example 4__ shows how to create two custom styles for __RadComboBox__ based on
 			<Setter Property="Foreground" Value="Red" />
 		</Style>
 	</Application.Resources>
-	{{endregion}}
-
-
+{{endregion}}
 
 If you have three __RadComboBoxes__ as shown in __Example 5__.          
         
-
 #### __[XAML] Example 5: RadComboBoxes with custom styling__
 
 {{region styling-apperance-implicit-styles-overview_2}}
@@ -188,13 +193,10 @@ If you have three __RadComboBoxes__ as shown in __Example 5__.
 		<telerik:RadComboBox ItemsSource="{Binding}" Width="200" Margin="2" />
 		<telerik:RadComboBox ItemsSource="{Binding}" Width="200" Margin="2" />
 	</StackPanel>
-	{{endregion}}
-
-
+{{endregion}}
 
 The __RadComboBox__ instances will be displayed as shown in __Figure 3__.
         
-
 Figure 3: RadComboBox instances with custom styles.
 ![implicit styles 3](images/implicit_styles_3.png)
 
@@ -202,9 +204,6 @@ Figure 3: RadComboBox instances with custom styles.
 
 __Example 6__ lists the .xaml files corresponding to the Telerik assemblies and the dependencies between them.
         
-
-
-
 #### __[XAML] Example 6: All .xaml files corresponding to Telerik assemblies__
 
 {{region styling-apperance-implicit-styles-overview_3}}
@@ -253,16 +252,14 @@ __Example 6__ lists the .xaml files corresponding to the Telerik assemblies and 
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-	{{endregion}}
-
+{{endregion}}
 
 
 ## Styling custom controls
 
 If you're using Implicit Styles to style custom controls, note that it will not receive automatically the inherited control style. You should add the following style after the merged dictionaries to fix this:
         
-
-#### __[XAML] Example 7: Adding Style for styling custom control__
+#### __[XAML] Example 8: Adding Style for styling custom control__
 
 {{region styling-apperance-implicit-styles-overview_7}}
 	<Application.Resources>
@@ -276,8 +273,7 @@ If you're using Implicit Styles to style custom controls, note that it will not 
 	    </ResourceDictionary.MergedDictionaries>
 	  </ResourceDictionary>
 	</Application.Resources>
-	{{endregion}}
-
+{{endregion}}
 
 
 The important part is setting TargetType property to the type of the custom control.
@@ -292,6 +288,6 @@ The important part is setting TargetType property to the type of the custom cont
 	        this.DefaultStyleKey = typeof(MyCustomGrid);
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 

@@ -53,7 +53,8 @@ The ExportAsync() method can be used similar to the Export() method
 
 
 
->Please note that you should specify a __True__ value for the __shouldDisposeString__ parameter. That way the used resources will be disposed.
+>Please note you should specify a __True__ value for the __shouldDisposeStream__ parameter. That way the used resources will be disposed. 
+>Prior to version 2015 Q1 SP, the parameter is __shouldDisposeString__.
           
 
 You can read more about the export events [here]({%slug gridview-export-events%}).

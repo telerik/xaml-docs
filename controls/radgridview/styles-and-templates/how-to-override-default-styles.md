@@ -13,11 +13,11 @@ position: 18
 
 This topic will show you how to override the default styles of __RadGridView__. For most of the cases the work includes modifying the default template of either RadGridView or one of its components, e.g. GridViewRow. Modifying the templates is easy if you have Microsoft Expression Blend 4. [This topic]({%slug radgridview-styles-and-templates-styling-radgridview%}) explains the basics. Let's start with modifying the visual appearance of RadGridView.
 
-* [Modify the mouse over background](#mouseoverbackground)
+* [Modify the mouse over background](#mouse-over-background)
 
-* [Remove the Border of the Current Cell](#currentcellborder)
+* [Remove the Border of the Current Cell](#remove-the-border-of-the-current-cell)
 
-## Mouse Over Background
+## Mouse Over Background ##
 
 This example shows how to change the background color and the border of the row when the mouse is over it:
 
@@ -57,15 +57,16 @@ Now you can change all the properties you want, e.g. the __BorderBrush__ value w
 
 Finally, you need to set the __RowStyle__ property of the __RadGridView__ to the style you have just modified.
 
-## Remove the Border of the Current Cell
+## Remove the Border of the Current Cell ##
 
 This example shows how to remove the border of the current cell (the one that has been clicked):
 
 ![](images/styling_current_cell3.png)
 
 
-You need to edit the style of the GridViewCell. [This topic]({%slug gridview-styling-cell%}) explains the basics. Once you have the style, search for the term "current". You will find a __VisualState__ and a __Border__:{% if site.site_name == 'Silverlight' %}
+You need to edit the style of the GridViewCell. [This topic]({%slug gridview-styling-cell%}) explains the basics. Once you have the style, search for the term "current". You will find a __VisualState__, __Trigger__ and __Border__:
 
+#### __XAML__
 	<VisualState x:Name="Current">
     <Storyboard>
         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background_Current"
@@ -79,19 +80,12 @@ You need to edit the style of the GridViewCell. [This topic]({%slug gridview-sty
     </Storyboard>
 	</VisualState>
 
-{% endif %}
-
-#### __XAML__
-
-{{region how-to-override-default-gridview-styles_2}}
+	...
 
 	<Trigger Property="IsCurrent" Value="True">
 	      <Setter Property="Visibility" TargetName="Background_Current" Value="Visible"/>
 	</Trigger>
-{{endregion}}
-
-
-
+	...
 	<Border x:Name="Background_Current"
         Margin="1 1 2 2"
         BorderThickness="1"
@@ -102,7 +96,7 @@ You need to edit the style of the GridViewCell. [This topic]({%slug gridview-sty
         Visibility="Collapsed"/>
 
 
-Delete both of them - the current visual state and the "Background_Current" border.{% if site.site_name == 'WPF' %}
+Delete all of them.{% if site.site_name == 'WPF' %}
 
 Finally, find the __Property="FocusVisualStyle"__ and set its value to null:{% endif %}
 

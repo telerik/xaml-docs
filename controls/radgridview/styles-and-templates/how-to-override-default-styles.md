@@ -13,9 +13,9 @@ position: 18
 
 This topic will show you how to override the default styles of __RadGridView__. For most of the cases the work includes modifying the default template of either RadGridView or one of its components, e.g. GridViewRow. Modifying the templates is easy if you have Microsoft Expression Blend 4. [This topic]({%slug radgridview-styles-and-templates-styling-radgridview%}) explains the basics. Let's start with modifying the visual appearance of RadGridView.
 
-* [Modify the mouse over background](#mouseOverBackground)
+* [Modify the mouse over background](#mouseoverbackground)
 
-* [Remove the Border of the Current Cell](#currentCellBorder)
+* [Remove the Border of the Current Cell](#currentcellborder)
 
 ## Mouse Over Background
 
@@ -66,7 +66,20 @@ This example shows how to remove the border of the current cell (the one that ha
 
 You need to edit the style of the GridViewCell. [This topic]({%slug gridview-styling-cell%}) explains the basics. Once you have the style, search for the term "current". You will find a __VisualState__ and a __Border__:{% if site.site_name == 'Silverlight' %}
 
-![](images/styling_current_cell.png){% endif %}
+	<VisualState x:Name="Current">
+    <Storyboard>
+        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background_Current"
+                                       Storyboard.TargetProperty="Visibility">
+            <DiscreteObjectKeyFrame KeyTime="0">
+                <DiscreteObjectKeyFrame.Value>
+                    <Visibility>Visible</Visibility>
+                </DiscreteObjectKeyFrame.Value>
+            </DiscreteObjectKeyFrame>
+        </ObjectAnimationUsingKeyFrames>
+    </Storyboard>
+	</VisualState>
+
+{% endif %}
 
 #### __XAML__
 
@@ -77,7 +90,17 @@ You need to edit the style of the GridViewCell. [This topic]({%slug gridview-sty
 	</Trigger>
 {{endregion}}
 
-![](images/styling_current_cell2.png)
+
+
+	<Border x:Name="Background_Current"
+        Margin="1 1 2 2"
+        BorderThickness="1"
+        CornerRadius="1"
+        BorderBrush="{StaticResource ControlOuterBorder}"
+        Grid.Column="2"
+        Grid.ColumnSpan="2"
+        Visibility="Collapsed"/>
+
 
 Delete both of them - the current visual state and the "Background_Current" border.{% if site.site_name == 'WPF' %}
 

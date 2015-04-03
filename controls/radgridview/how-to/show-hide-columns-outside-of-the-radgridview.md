@@ -1,14 +1,14 @@
 ---
-title: Show/Hide Columns outside of the RadGridView
-page_title: Show/Hide Columns outside of the RadGridView
-description: Show/Hide Columns outside of the RadGridView
+title: Show/Hide Columns outside of RadGridView
+page_title: Show/Hide Columns outside of RadGridView
+description: Show/Hide Columns outside of RadGridView
 slug: radgridview-how-to-show-hide-columns-outside-of-the-radgridview
 tags: show/hide,columns,outside,of,the,radgridview
 published: True
 position: 2
 ---
 
-# Show/Hide Columns outside of the RadGridView
+# Show/Hide Columns outside of RadGridView
 
 
 This topic will show you how to choose which columns to be visible from outside of __RadGridView__. 

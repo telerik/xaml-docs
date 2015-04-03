@@ -36,8 +36,9 @@ For a general example on how to Export the data, you can check our Exporting
 In order to avoid getting this warning, you should export to ExcelML format with XML extension. You can also refer to this [help article]({%slug gridview-troubleshooting-warning-message-excel%}) for an additional information.
             
 
-* __Export with .xlsx extension:__ The best option we can currently suggest is exporting with __RadSpreadSheet__  creating a __RadWorkBook__ as demonstrated in the 
-{% if site.site_name == 'WPF' %}[RadGridViewIntegration demo.](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[RadGridViewIntegration demo.](http://demos.telerik.com/silverlight/#SpreadProcessing/RadGridViewIntegration){% endif %}
+* __Export with .xlsx extension:__ As of Q1 2015 a new method is introduced: [ExportToXlsx]({%slug gridview-export-xlsx%}). This exporting functionality is demonstrated in the {% if site.site_name == 'WPF' %} [Exporting to Xlsx and Pdf](http://demos.telerik.com/wpf/) {% endif %} {% if site.site_name == 'Silverlight' %} [Exporting to Xlsx and Pdf](http://demos.telerik.com/silverlight/#GridView/ExportToDocument) {% endif %} demo 
+
+* __Export with .pdf extension:__ As of Q1 2015 a new method is introduced: [ExportToPdf]({%slug gridview-export-pdf%}). This exporting functionality is demonstrated in the {% if site.site_name == 'WPF' %} [Exporting to Xlsx and Pdf](http://demos.telerik.com/wpf/) {% endif %} {% if site.site_name == 'Silverlight' %} [Exporting to Xlsx and Pdf](http://demos.telerik.com/silverlight/#GridView/ExportToDocument) {% endif %} demo 
 
 * __Some columns are exported with a minimum Width:__ RadGridView exports the respective header cells with the minimum width value (which is 20 by default) if they have not been measured by the layout mechanism at the time the exporting operation takes place.To get all the columns exported with their actual width, you should first assure that they have been realized.As an alternative solution, if you do not have that much columns, you can set EnableColumnVirtualization="False" for __RadGridView__.
             

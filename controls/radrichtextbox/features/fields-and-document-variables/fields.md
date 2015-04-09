@@ -56,13 +56,16 @@ In RadDocument the base class for all fields is __CodeBasedField__. It is an abs
 * __ReferenceField__: Used to refer to a bookmark or other type of field. It is inserted when a cross-reference to a table or figure caption is added to the document. Find more here: [Cross-Reference]({%slug radrichtextbox-features-cross-reference%}).
             
 
-* __PageReferenceField__: Used in table of contents in order to be able to navigate to the respective page on Ctrl+Click.
+* __PageReferenceField__: Inserts the page number of a referenced bookmark.
             
 
 * __HyperlinkField__: Inserted in hyperlinks to store information about the navigation URI.
             
 
-* __TCField__: Used in table of contents to describe one entry. They include the text of the entry and the page reference field.
+* __TableOfContentsField__: Shows a table of contents including headings and other specially marked parts of the document. Also can be configured to show table of figures or table of tables.
+            
+
+* __TCField__: Used to mark text that should be included as entry in TableOfContentsField. 
             
 
 * __AuthorField__: The type of field is related to track changes, specifies the name of the user that has modified the document part. Read more here: [Track Changes]({%slug radrichtextbox-features-track-changes%}).

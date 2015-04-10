@@ -68,7 +68,7 @@ Although the example above illustrates defining either CellTemplate or CellEditT
 
 If you want ot set a CellTemplate in code-behind, you can check [this help article]({%slug gridview-columns-defining-columns%}) for reference.
        
->In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellValidated__ event raised when commiting an edit. To get the right value in __e.NewValue__, you can create your own [custom column]({%slug radgridview-howto-create-custom-editor %}) and override its __GetNewValueFromEditor__ method.
+>In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when commiting an edit. To get the right value in __e.NewValue__, you can create your own [custom column]({%slug radgridview-howto-create-custom-editor %}) and override its __GetNewValueFromEditor__ method.
 
 # See Also
 

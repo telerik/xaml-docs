@@ -3,14 +3,17 @@ title: Using Data Virtualization
 page_title: Using Data Virtualization
 description: Using Data Virtualization
 slug: gridview-populating-datavirtualization
-tags: using,data,virtualization
+tags: using,data,virtualization, VCQV
 published: True
 position: 9
 ---
 
 # Using Data Virtualization
 
-As the case of handling a lot of data is quite common, the requirement for fast data processing becomes more and more indispensable.  The result of this necessity is the __Data Virtualization__ technique that ensures much better performance as well as user experience improvements. 
+As the case of handling a lot of data is quite common, the requirement for fast data processing becomes more and more indispensable.  The result of this necessity is the __Data Virtualization__ technique that ensures much better performance as well as user experience improvements.
+
+>The virtual collection is designed for ReadOnly purposes only and it is not recommended to be used in other scenarios when updates are required. 
+ 
 When working with the UI components that enable UI Virtualization, you may take advantage of the above mentioned technique by using __VirtualQueryableCollectionView__ class. It enables you to benefit from the on-demand data loading to smooth scrolling with UI virtual components. 
 The __VirtualQueryableCollectionView__ provides you with the following important members:
 
@@ -91,32 +94,6 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
     }
 {{endregion}}
 
-#### __VB.NET__
-
-{{region GridView-Populating-DataVirtualization_4}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 Dim context = New NorthwindDomainContext()
-	 Dim query = context.GetOrder_DetailsQuery().OrderBy(Function(o) o.OrderID)
-	 query.IncludeTotalCount = True
-	 Dim view = New VirtualQueryableCollectionView() With { _
-	  Key .LoadSize = 10, _
-	  Key .VirtualItemCount = 100 _
-	 }
-	 view.ItemsLoading += Function(s, e) 
-	 context.Load(Of Order_Detail)(query.Skip(e.StartIndex).Take(e.ItemCount)).Completed += Function(sender, args) 
-	 Dim lo = DirectCast(sender, LoadOperation)
-	 If lo.TotalEntityCount <> -1 AndAlso lo.TotalEntityCount <> view.VirtualItemCount Then
-	  view.VirtualItemCount = lo.TotalEntityCount
-	 End If
-	 view.Load(e.StartIndex, lo.Entities)
-	End Function
-	End Function
-	 DataContext = view
-	End Sub
-{{endregion}}
-
 {% endif %}
 
 #### __XAML__
@@ -129,6 +106,8 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
 __ItemsLoading__ event will be raised if you try to access some item by index and this item is not yet loaded. When you scroll down the ItemsLoading event will be called and empty (null) items in the collection will be replaced with the new items. When an item is already loaded the collection will not call ItemsLoading event for this item.
 
 >When you provide IQueryable in the VirtualQueryableCollectionView you do not need to handle the ItemsLoading event.
+
+>Filtering is only supported with IQueryable data sources.
 
 >__Filtering__ on Distinct Values is not fully supported when using the VirtualQueryableCollectionView. We suggest configuring GridViewDataColumn with __ShowDistinctFilters="False"__. 
 That way only filtering through the Field Filters will be enabled. You can check the [basic filtering]({%slug gridview-filtering-basic%}) section as a reference on the filtering support. There you can also find more information on how to filter through the __Field Filters__.

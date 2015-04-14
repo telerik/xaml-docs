@@ -93,6 +93,8 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
     }
 {{endregion}}
 
+{% endif %}
+
 #### __XAML__
 
 {{region using-data-virtualization_5}}
@@ -106,16 +108,14 @@ __ItemsLoading__ event will be raised if you try to access some item by index an
 
 >Filtering is only supported with IQueryable data sources.
 
->__Filtering__ on Distinct Values is not fully supported when using the VirtualQueryableCollectionView. We suggest configuring GridViewDataColumn with __ShowDistinctFilters="False"__. That way only filtering through the Field Filters will be enabled. You can check the [basic filtering]({%slug gridview-filtering-basic%}) section as a reference on the filtering support. There you can also find more information on how to filter through the __Field Filters__.
-          
+>__Filtering__ on Distinct Values is not fully supported when using the VirtualQueryableCollectionView. We suggest configuring GridViewDataColumn with __ShowDistinctFilters="False"__. That way only filtering through the Field Filters will be enabled. You can check the [basic filtering]({%slug gridview-filtering-basic%}) section as a reference on the filtering support. There you can also find more information on how to filter through the __Field Filters__.         
 
 >When the ScrollMode is Deferred, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
           
-
 >__Add/insert scenario__ cannot be supported with VirtualQueryableCollectionView. The reason is that it cannot maintain cache of already loaded items.
           
 
->Currently supported Telerik controls are __RadGridView__, __RadComboBox__, __RadTreeView__, __RadBook__ and __RadCoverFlow__.
+>Currently supported RadControls are __RadGridView__, __RadComboBox__, __RadTreeView__{% if site.site_name == 'WPF' %}, __RadCarousel__{% endif %} and __RadBook__.{% if site.site_name == 'WPF' %}
 
 # See Also
 

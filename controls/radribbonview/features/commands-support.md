@@ -14,23 +14,23 @@ The __RadRibbonView__ control and its components expose several command properti
 
 ### RadRibbonView Command Properties
 
-* __HelpCommand__ – this property accepts an [ICommand](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand%28v=vs.110%29.aspx) and executes it when the ribbon view’s Help button is clicked. The RadRibbonView control expose two additional properties that are related to the HelpCommand - __HelpCommandParameter__ and __HelpCommandTarget__.
+* __HelpCommand__: The property accepts an [ICommand](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand%28v=vs.110%29.aspx) and executes it when the ribbon view’s Help button is clicked. The RadRibbonView control exposes two additional properties that are related to the HelpCommand - __HelpCommandParameter__ and __HelpCommandTarget__.
 
 ### RadRibbonBackstageItem Command Properties
 
-* __Command__ – this property accepts an ICommand and executes it when the item is clicked. The RadRibbonBackstageItem control expose two additional properties that are related to the command - __CommandParameter__ and __CommandTarget__.
+* __Command__: The property accepts an ICommand and executes it when the item is clicked. The RadRibbonBackstageItem control exposes two additional properties that are related to the command - __CommandParameter__ and __CommandTarget__.
 
 	>The command will be executed only if the backstage item’s IsSelectable property is set to False.
 
 ### RadRibbonGroup Command Properties
 
-* __DialogLauncherCommand__ – this property accepts an ICommand and executes it when dialog launcher button of the group is clicked. The RadRibbonGroup control expose two additional properties that are related to the command - __DialogLauncherCommandParameter__ and __DialogLauncherCommandTarget__.
+* __DialogLauncherCommand__: The property accepts an ICommand and executes it when dialog launcher button of the group is clicked. The RadRibbonGroup control expose two additional properties that are related to the command - __DialogLauncherCommandParameter__ and __DialogLauncherCommandTarget__.
 
->tip The __RadRibbonButtons__ derive from controls from the RadButtons suit and each ribbon button inherits a Command property that accepts a command that is executed when the button is clicked. You can read more about the command support in RadButtons in the [Commands]({%slug radbuttons-features-commands%}) help article.
+>tip The __RadRibbonButtons__ derive from controls from the RadButtons suite and each ribbon button inherits a Command property that accepts a command that is executed when the button is clicked. You can read more about the command support in RadButtons in the [Commands]({%slug radbuttons-features-commands%}) help article.
 
 ## RibbonCommands
 
-RadRibbonView provides a __RibbonCommands__ class that contains few __RoutedUICommand__ properties which are used by the ribbon view components. You can read more about the routed commands in the [RoutedUICommand](https://msdn.microsoft.com/en-us/library/system.windows.input.routeduicommand(v=vs.110).aspx) MSDN article.
+RadRibbonView provides a __RibbonCommands__ class that contains several __RoutedUICommand__ properties which are used by the ribbon view components. You can read more about the routed commands in the [RoutedUICommand](https://msdn.microsoft.com/en-us/library/system.windows.input.routeduicommand(v=vs.110).aspx) MSDN article.
 
 You can find the following properties in the RibbonCommands class:
 * __RibbonCommands.CloseBackstage__ - executes when the application button is clicked in order to close the ribbon's backstage

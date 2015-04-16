@@ -392,7 +392,7 @@ Take a look at the code-behind for the control. An additional dependency propert
 		End Class
 {{endregion}}
 
->In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellValidated__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
+>In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
 
 * Finally, go back to the __RadGridView__ XAML declaration and update it(__Example 7__).
 			

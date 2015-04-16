@@ -14,6 +14,12 @@ position: 1
 
 You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
+## Q1 SP 2015
+
+Introduced __Telerik.Windows.Controls.GridView.Export.dll__ - it contains logic for exporting RadGridView to [xlsx]({%slug gridview-export-xlsx%}) and [pdf]({%slug gridview-export-pdf%}) formats eliminating the dependency of Telerik.Windows.Controls.GridView.dll to all SpreadProcessing logic. The two methods ExportToXlsx and ExportToPdf are located here and if used, a reference to the new binary should be included.
+
+ExportAsync's shouldDisposeString parameter is renamed to shouldDisposeStream.
+
 ## Q1 2015
 
 __Changed__
@@ -325,7 +331,7 @@ In order to enable filtering for our GridViewExpressionColumn, we had to rewrite
 Some __code changes__ are needed after the __upgrade__. Find the list with code snippets below.
         
 
-* __Filtering a Column____Before:__
+* __Filtering a Column Before:__
 
 #### __C#__
 
@@ -353,49 +359,7 @@ Some __code changes__ are needed after the __upgrade__. Find the list with code 
     ageColumnFilter.FieldFilter.Filter1.Value = 10
     ' ...
     Me.radGridView.FilterDescriptors.Add(ageColumnFilter)
-#End Region
-
-#Region "radgridview-backward-compatibility_3"
-
-    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
-    ' Getting it from the property will create it and associate it with its column automatically.
-    Dim ageColumnFilter As IColumnFilterDescriptor = ageColumn.ColumnFilterDescriptor
-    ageColumnFilter.SuspendNotifications()
-    ' ...
-    ageColumnFilter.DistinctFilter.AddDistinctValue(5)
-    ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
-    ageColumnFilter.FieldFilter.Filter1.Value = 10
-    ' ...
-    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.
-    ageColumnFilter.ResumeNotifications()
-#End Region
-
-#Region "radgridview-backward-compatibility_5"
-
-    Me.radGridView.FilterDescriptors.Remove(columnFilterDescriptor)
-#End Region
-
-#Region "radgridview-backward-compatibility_7"
-
-    ' Calling ClearFilter will automatically remove filter descriptor from the grid.
-    myColumn.ClearFilters()
-#End Region
-
-#Region "radgridview-backward-compatibility_9"
-
-    Me.radGridView.FilterDescriptors.Clear()
-#End Region
-
-#Region "radgridview-backward-compatibility_11"
-
-    Me.radGridView.FilterDescriptors.SuspendNotifications()
-    For Each column As var In Me.radGridView.Columns
-	    column.ClearFilters()
-    Next
-    Me.radGridView.FilterDescriptors.ResumeNotifications()
-    End Class
-#End Region
+{{endregion}}
 
 __After:__
 
@@ -415,7 +379,7 @@ __After:__
 	    // There is no need to manually add the column filter to this.radGridView.FilterDescriptors
 	    // When the column filter is activated/deactivated it is automatically added/removed to this collection.
 	    ageColumnFilter.ResumeNotifications();
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
@@ -433,40 +397,16 @@ __After:__
 	    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
 	    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.
 	    ageColumnFilter.ResumeNotifications()
-	#End Region
-	
-	#Region "radgridview-backward-compatibility_5"
-	    Me.radGridView.FilterDescriptors.Remove(columnFilterDescriptor)
-	#End Region
-	
-	#Region "radgridview-backward-compatibility_7"
-	    ' Calling ClearFilter will automatically remove filter descriptor from the grid.
-	    myColumn.ClearFilters()
-	#End Region
-	
-	#Region "radgridview-backward-compatibility_9"
-	    Me.radGridView.FilterDescriptors.Clear()
-	#End Region
-	
-	#Region "radgridview-backward-compatibility_11"
-	    Me.radGridView.FilterDescriptors.SuspendNotifications()
-	    For Each column As var In Me.radGridView.Columns
-		    column.ClearFilters()
-	    Next
-	    Me.radGridView.FilterDescriptors.ResumeNotifications()
-	    End Class
-	#End Region
+{{endregion}}
 
-
-
-* __Clearing a Column Filter____Before:__
+* __Clearing a Column Filter Before:__
 
 #### __C#__
 
 {{region radgridview-backward-compatibility_4}}
 
 	    this.radGridView.FilterDescriptors.Remove(columnFilterDescriptor);
-	{{endregion}}
+{{endregion}}
 
 __After:__
 
@@ -476,18 +416,17 @@ __After:__
 
 	    // Calling ClearFilter will automatically remove filter descriptor from the grid.
 	    myColumn.ClearFilters();
-	{{endregion}}
+{{endregion}}
 
 
-
-* __Clearing All RadGridView Filters____Before:__
+* __Clearing All RadGridView Filters Before:__
 
 #### __C#__
 
 {{region radgridview-backward-compatibility_8}}
 
 	    this.radGridView.FilterDescriptors.Clear();
-	{{endregion}}
+{{endregion}}
 
 __After:__
 
@@ -501,7 +440,7 @@ __After:__
 		    column.ClearFilters();
 	    }
 	    this.radGridView.FilterDescriptors.ResumeNotifications();
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -515,7 +454,7 @@ __After:__
 	    Next
 	    Me.radGridView.FilterDescriptors.ResumeNotifications()
 	    End Class
-	#End Region
+{{endregion}}
 
 
 ## Q3 2011

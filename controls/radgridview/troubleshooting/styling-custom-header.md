@@ -43,13 +43,34 @@ You can bind the __Foreground__ property of the custom header(in this example th
 
 #### __[XAML] Example 2: Final declaration of a custom header__
 
+{% if site.site_name == 'WPF' %}
+
 {{region gridview-troubleshooting-styling-custom-header_1}}
+
 	<telerik:GridViewDataColumn.Header>
 		<TextBlock Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType={x:Type ContentControl}}}"
 				   Text="My Custom Header"
 				   TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
 {{endregion}}
+
+{% endif %}
+
+{% if site.site_name == 'Silverlight' %}
+
+{{region gridview-troubleshooting-styling-custom-header_1}}
+
+	<telerik:GridViewDataColumn.Header>
+    <TextBlock Foreground="{Binding Foreground,
+               RelativeSource={RelativeSource AncestorType=UserControl}}"
+               Text="My Custom Header"
+               TextWrapping="Wrap" />
+	</telerik:GridViewDataColumn.Header>
+{{endregion}}
+
+{% endif %}
+
+
 
 __Figure 2:__ The __Foreground__ color of the custom header now changes, when the column is hovered.
 ![gridview-troubleshooting-styling-custom-header-Solution](images/gridview-troubleshooting-styling-custom-header-Solution.png)

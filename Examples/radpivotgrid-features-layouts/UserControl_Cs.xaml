@@ -1,4 +1,0 @@
-#region radpivotgrid-features-layouts_1
-<pivot:RadPivotGrid HorizontalLayout="Outline" VerticalLayout="Compact">
-</pivot:RadPivotGrid>
-#endregion

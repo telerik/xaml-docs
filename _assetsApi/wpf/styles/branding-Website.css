@@ -1,0 +1,171 @@
+/* Style adjustments for websites */
+.pageBody {
+	padding: 0px 20px 0px 0px;
+	min-height: 650px;
+}
+.topicContent {
+	margin-left: 280px;
+}
+
+/* Lightweight TOC */
+.tocCollapsed {
+	background: url('../icons/TocCollapsed.gif') no-repeat scroll center;
+	width: 17px;
+	height: 20px;
+	overflow: hidden;
+}
+.tocExpanded {
+	background: url('../icons/TocExpanded.gif') no-repeat scroll center;
+	width: 17px;
+	height: 20px;
+	overflow: hidden;
+}
+.tocResize {
+	position: absolute;
+	top: 90px;
+	left: 300px;
+	width: 5px;
+	height: 20px;
+	padding-right: 5px;
+}
+.tocResize img {
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+}
+div#leftNav {
+	height:100%;
+	margin: 0px -1px 0 0;
+	width: 280px;
+	min-height: 10px;
+	position: absolute;
+	border-right: 1px solid #ebecee;
+	padding-left: 10px;
+	padding-top: 15px;
+	background: none repeat scroll 0 0 #f5f7f8
+}
+div#tocNav {
+	font-family: Arial,Helvetica,sans-serif;
+	overflow-x: hidden;
+	line-height: normal;
+	margin: -20px 0 0 -4px;
+}
+div#tocNav > div {
+	overflow-x: hidden;
+	white-space: normal;
+	width: auto;
+	margin-bottom: 5px;
+}
+div#leftNav a, div#leftNav a:link, div#leftNav a:visited {
+	color: #000;
+    font-size: 13px;
+	text-decoration: none;
+}
+div#leftNav a:hover {
+	color: #3390b1;
+}
+div#tocNav > div > a, div#tocNav > div > a:link, div#tocNav > div > a:visited {
+	margin-left: 18px;
+	overflow: hidden;
+}
+
+div#tocNav  div.current a:nth-child(2) {
+	color: #fff !important;
+	font-weight: notmal !important;
+	background-color: #00b312 !important;
+	font-weight: normal !important;
+	display: inline-block;
+	padding: 2px 8px;
+}
+
+div#tocNav > div.current > a, div#tocNav > div.current > a:link, div#tocNav > div.current > a:visited {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+div#tocNav > div > a.tocExpanded, div#tocNav > div > a.tocCollapsed {
+	float: left;
+	display: inline-block;
+	margin-left: 0;
+	vertical-align: top;
+}
+.toclevel0:first-child {
+	margin-top: 16px;
+}
+div#tocNav > div.toclevel1 {
+	padding-left: 17px;
+}
+div#tocNav > div.toclevel2 {
+	padding-left: 34px;
+}
+div#tocNav > div.toclevel3 {
+	padding-left: 51px;
+}
+div#tocNav > div.toclevel4 {
+	padding-left: 68px;
+}
+div#tocNav > div.toclevel5 {
+	padding-left: 85px;
+}
+div#tocNav > div.toclevel6 {
+	padding-left: 102px;
+}
+div#tocNav > div.toclevel7 {
+	padding-left: 119px;
+}
+div#tocNav > div.toclevel8 {
+	padding-left: 136px;
+}
+div#tocNav > div.toclevel9 {
+	padding-left: 153px;
+}
+div#tocNav > div.toclevel10 {
+	padding-left: 170px;
+}
+
+/* Search form */
+form#SearchForm {
+	float: left;
+	background-color: #eee;
+	width: 45%;
+	margin-left: 380px;
+}
+form#SearchForm input {
+	background-color: #eee;
+	border: 0;
+	height: 35px;
+	width: 92%;
+	color: #3b3b3b;
+	display: inline-block;
+	float: left;
+	padding: 1px 4px 1px 10px;
+}
+form#SearchForm button {
+	background: url('../icons/Search.png') no-repeat scroll center;
+	background-color: #eee;
+	float: right;
+	border: 0;
+	margin: 10px 5px 0 0;
+	cursor: pointer;
+	color: #3b3b3b;
+	width: 19px;
+	height: 18px;
+	overflow: hidden;
+}
+.searchContainer {
+	width: 700px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.searchContainer form#SearchForm {
+	margin-left: 0px !important;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 700px;
+}
+
+.feedbackLink {
+	display: none;
+}

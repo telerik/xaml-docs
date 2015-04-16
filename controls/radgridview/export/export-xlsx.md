@@ -22,6 +22,9 @@ ExportFormat.Xlsx method uses additional libraries so you need to add references
 * Telerik.Windows.Documents.SpreadSheet.dll 
 * Telerik.Windows.Documents.SpreadSheet.FormatProviders.OpenXml.dll
 * Telerik.Windows.Zip.dll
+* Telerik.Windows.Controls.GridView.Export.dll
+
+>  __Telerik.Windows.Controls.GridView.Export.dll__ is a new binary introduced in __Q1 SP of 2015__. It delimits the exporting to __Xlsx__ functionality from __Telerik.Windows.Controls.GridView.dll__, so in order to use __ExportToXlsx__ method, the new dll should also be added.
 
 The method is overloaded:
 

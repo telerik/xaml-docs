@@ -1,14 +1,14 @@
 ---
-title: Show/Hide Columns outside of the RadGridView
-page_title: Show/Hide Columns outside of the RadGridView
-description: Show/Hide Columns outside of the RadGridView
+title: Show/Hide Columns outside of RadGridView
+page_title: Show/Hide Columns outside of RadGridView
+description: Show/Hide Columns outside of RadGridView
 slug: radgridview-how-to-show-hide-columns-outside-of-the-radgridview
 tags: show/hide,columns,outside,of,the,radgridview
 published: True
 position: 2
 ---
 
-# Show/Hide Columns outside of the RadGridView
+# Show/Hide Columns outside of RadGridView
 
 
 This topic will show you how to choose which columns to be visible from outside of __RadGridView__. 
@@ -50,7 +50,7 @@ Next bind the __ItemsSource__ property of the __ListBox__ to the __Columns__ pro
 	</Grid>
 {{endregion}}
 
-After that define the __DataTemplate__ for the __ItemTemplate__ property of the ListBox. It should include a __CheckBox__and as the __DataContext__ of the item will be a __GridViewColumn__, you can bind the __IsChecked__ property of the __CheckBox__ to the __IsVisible__ property of the column using a __TwoWay__ Data Binding.
+After that define the __DataTemplate__ for the __ItemTemplate__ property of the ListBox. It should include a __CheckBox__ and as the __DataContext__ of the item will be a __GridViewColumn__, you can bind the __IsChecked__ property of the __CheckBox__ to the __IsVisible__ property of the column using a __TwoWay__ Data Binding.
 
 #### __XAML__
 

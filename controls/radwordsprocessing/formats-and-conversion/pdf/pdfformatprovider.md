@@ -51,3 +51,16 @@ The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ in
 The result from the method is a document that can be opened in any application that supports PDF documents.
         
 
+__Example 2__ demonstrates how to export the contents of a __RadFlowDocument__ to a __RadFIxedDocument__. 
+
+
+#### __[C#] Example 2: Export to RadFixedDocument__
+{{region  radwordsprocessing-formats-and-conversion-pdf-pdfformatprovider_1}}
+    RadFlowDocument document = CreateRadFlowDocument();
+
+    PdfFormatProvider provider = new PdfFormatProvider();
+    RadFixedDocument fixedDocument = provider.ExportToFixedDocument(document);
+{{endregion}}
+
+
+>tip __RadFixedDocument__ is the base class of the __RadPdfProcessing__ library. Additional information on the library and its functionality can be found [here]({%slug radpdfprocessing-overview%}).

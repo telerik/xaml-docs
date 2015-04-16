@@ -1,3 +1,0 @@
-<!-- #region radribbonview-howto-hide-title_0 -->
-<telerik:RadRibbonView x:Name="xRibbonView" TitleBarVisibility="Collapsed" />
-<!-- #endregion -->

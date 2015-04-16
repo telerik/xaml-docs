@@ -16,9 +16,9 @@ The purpose of this tutorial is to show you how to:
 
 * Enable check boxes next to each item - declaratively and programmatically.		  
 
-	* Use the "[tri-state](#Tri-state_Check_Boxes)" feature of the check boxes.
+	* Use the "[tri-state](#tri-state-check-boxes)" feature of the check boxes.
 	* Access the check state property of the __RadTreeViewItem__ class.
-	* Access the initially checked item when using the "[tri-state](#Tri-state_Check_Boxes)" feature of the check boxes.			  
+	* Access the initially checked item when using the "[tri-state](#tri-state-check-boxes)" feature of the check boxes.			  
 
 * Use the corresponding events to handle the check/uncheck action. 
 
@@ -81,8 +81,9 @@ You might want to enable check boxes in the code-behind. In order to do this, se
 
 ## "Tri-state" Check Boxes 
 
-If you want your treeview to have check boxes with three states, then you need to set the __IsTriStateMode__ property of the __RadTreeView__  to __True__. When this mode is activated the __CheckState__ property of each item depends on the __CheckState__ property of its child items. In this mode the item will be checked only if all of its child items are checked too.
-		
+The Tri-State CheckBox mode of __RadTreeView__ allows for RadTreeViewItems' CheckBoxes to have an additional, third state - __Indeterminate__. To enable it you need to set the __IsTriStateMode__ property of the __RadTreeView__ to __True__. When this mode is activated the __CheckState__ property of each item depends on the __CheckState__ property of its direct child items and its parent item. In this mode an item will be checked only if all of its child items are checked. The same item will be unchecked if all of its child items are unchecked. In all other combinations of states of its children the item will be in __Indeterminate__ state. It is important to keep in mind that if a parent item is checked or unchecked all its child items will inherit that state. This also will force its parent (if any) to update its state. This will recursively propagate all the way to the root of the RadTreeView.
+
+
 #### __XAML__
 
 {{region check-box-support_7}}

@@ -18,7 +18,7 @@ It can be accessed through the __Visual Studio | Telerik | VSExtensions Optionsâ
 
 ![VSExtentions Options Dialog Menu](images/VSExtentions_OptionsDialogMenu.png)
 
-The __Options__ dialog contains two sets of options that affect the __UI for__
+The __Options__ dialog contains two sets of options that affect the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__.
 
 ![VSExtentions Options Dialog General](images/VSExtentions_OptionsDialogGeneral.png)
 

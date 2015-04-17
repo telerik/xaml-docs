@@ -1,8 +1,8 @@
 ---
-title: DayTemplateSelector
-page_title: DayTemplateSelector
-description: DayTemplateSelector
-slug: radcalendar-styles-and-templates-daytemplateselector
+title: Using DayTemplateSelector
+page_title: Using DayTemplateSelector
+description: Using DayTemplateSelector
+slug: radcalendar-styles-and-templates-using-daytemplateselector
 tags: how,to,customize,the,calendar,buttons,template,selector
 published: True
 position: 4

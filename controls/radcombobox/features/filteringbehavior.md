@@ -1,7 +1,7 @@
 ---
-title: FilteringBehavior
-page_title: FilteringBehavior
-description: FilteringBehavior
+title: Filtering Behavior
+page_title: Filtering Behavior
+description: Filtering Behavior
 slug: radcombobox-features-filteringbehavior
 tags: filteringbehavior
 published: True

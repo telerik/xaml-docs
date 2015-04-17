@@ -329,7 +329,6 @@ Next, we can go ahead and define a __RadDiagram__ control in our View:
 	                    ShapeTemplate="{StaticResource contentTemplate}">
 	    <telerik:RadDiagram.ContainerShapeStyle>
 	        <Style TargetType="telerik:RadDiagramContainerShape">
-	            <Setter Property="ItemsSource" Value="{Binding Children}" />
 	            <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
 	            <Setter Property="ContentTemplate" Value="{StaticResource contentTemplate}" />
 	            <Setter Property="EditTemplate" Value="{StaticResource editTemplate}" />

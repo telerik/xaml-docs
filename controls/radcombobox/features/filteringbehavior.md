@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# FilteringBehavior
+# Filtering Behavior
 
 With the Q1 2015 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadComboBox__ provides a brand new __FilteringBehavior__ feature. Now, by using it you could easily implement your own custom logic for the Filtering mechanism of __RadComboBox__. This article will demonstrate how to implement such custom __FilteringBehavior__.
 
@@ -16,7 +16,7 @@ With the Q1 2015 release version of UI for {% if site.site_name == 'WPF' %}WPF{%
 
 In order to enable the text filtering the __IsFilteringEnabled__ property needs to be set to “True” and the drop-down needs to be open. By setting the __OpenDropDownOnFocus__ to “True” the drop-down will open automatically when the control gets focused.
 
-## Implementing Custom ComboBoxFilteringBehavior
+## Implementing Custom ComboBox Filtering Behavior
 
 In order to implement the desired custom Filtering behavior for __RadComboBox__ you need to create a class that derives from the __ComboBoxFilteringBehavior__ class. This class consist of the following methods: 
 

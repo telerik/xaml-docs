@@ -145,4 +145,4 @@ And now to the essential part of our scenario – the pinpoints. Add a MapPinPoi
 		End Sub
 	{{endregion}}
 
->tip The full source code can be downloaded from our blogpost [here](http://blogs.telerik.com/blogs/posts/12-01-09/radmap-for-silverlight-wpf-how-to-resize-map-shapes-with-mouse-dragging.aspx).
+>tip The full source code can be downloaded from our blogpost [here](http://blogs.telerik.com/xamlteam/posts/12-01-09/radmap-for-silverlight-wpf-how-to-resize-map-shapes-with-mouse-dragging.aspx).

@@ -24,6 +24,9 @@ This topic will explain how custom fields can be created in order to suit applic
 
 * [Adding Properties](#adding-properties)
 
+* [Integrating with UpdateAllFields Operation](#integrating-with-updateallfields-operation)
+
+
 ## Create Custom Field
 
 In some cases, it is convenient to extend the currently available fields to suit application-specific scenarios. This can be done by inheriting from __CodeBasedField__ or (if the functionality of the new field will be closely connected to Mail Merge) from __MergeField__.
@@ -198,3 +201,74 @@ If you would like to add some properties to this field, similar to the PropertyP
 	{{endregion}}
 
 
+## Integrating with UpdateAllFields Operation
+
+Updating all field in document (by calling __UpdateAllFields__ method) is common operation for documents containing multiple fields. The field types can have multiple dependencies between them (result of updating one field depends on updating other field) – e.g. update result may differ depending on the update order.
+
+To change the default update order and behavior, additional update information can be registered for a field type using the __FieldsUpdateManager__ static class:
+
+#### __C#__
+
+{{region radrichtextbox-features-custom-fields_12}}
+
+	FieldsUpdateManager.RegisterFieldUpdateInfo(typeof(CustomField), new FieldTypeUpdateInfo() { Priority = -1000 });
+
+{{endregion}}
+
+The properties influencing the update operation are grouped in __FieldTypeUpdateInfo__ class:
+
+* __Priority__: Determines update priority. Each field type has update priority which determines when they should be updated during the UpdateAllField operation. Fields with larger priority are updated first. The default value is 0.
+
+	The fields with non-default priority are listed in the following table:
+	<table>
+
+	<tr>
+	<th>Priority (greater updates first)</th>
+	<th> Field Type</th>
+	</tr>
+
+	<tr>
+	<td>1000</td>
+	<td>TableOfContentsField</td>
+	</tr>
+
+	<tr>
+	<td>0</td>
+	<td> &lt; Default priority. All fields are set to this value by default&gt;</td>
+	</tr>
+	
+	<tr>
+	<td>-900</td>
+	<td>PageReferenceField</td>
+	</tr>
+	
+	<tr>
+	<td>-900</td>
+	<td>NumPagesField</td>
+	</tr>
+	
+	<tr>
+	<td>-900</td>
+	<td>PageField</td>
+	</tr>
+	
+	<tr>
+	<td>-1000</td>
+	<td>ReferenceField</td>
+	</tr>
+	
+	</table>
+	
+	Changing the priority is needed in case a field depends on the evaluated value of another field to be properly evaluated.
+
+* __NeedsPagination__: Determines whether the field needs the document to be paginated during the update. The default value is false. 
+	
+	For performance reasons, the document is not always paginated during the UpdateAllFields operation, which may lead to incorrect field values for some fields, for example ones using current page number or total number of pages in section/document. In these cases, you can set NeedsPagination property to true. 
+
+# See Also
+
+ * [Fields]({%slug radrichtextbox-features-fields%})
+
+ * [Mail Merge]({%slug radrichtextbox-features-mail-merge%})
+ 
+ * [CustomField SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomField)

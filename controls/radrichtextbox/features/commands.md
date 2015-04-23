@@ -15,7 +15,7 @@ position: 6
 The __RadRichTextBox__ control exposes a full set of commands that that provide an alternative to its API methods, exposed through its __Commands__ property. For each of the [Formatting API]({%slug radrichtextbox-features-formatting-api%}) methods there is a respective command. In order to use the command with an UI Element that supports commanding, you have to bind the __Command__ property of the element to the respective command of the __RadRichTextBox__.
         
 
->tipTo see a list of all the commands exposed by __RadRichTextBox__, visit {% if site.site_name == 'Silverlight' %}[this topic](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.html){% endif %}{% if site.site_name == 'WPF' %}[this topic](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.html){% endif %}.
+>tipTo see a list of all the commands exposed by __RadRichTextBox__, visit {% if site.site_name == 'Silverlight' %}[this topic](http://www.telerik.com/help/silverlight/t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.html){% endif %}{% if site.site_name == 'WPF' %}[this topic](http://www.telerik.com/help/wpf/t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.html){% endif %}.
         
 
 Here is an example with a __RadToggleButtonControl__.

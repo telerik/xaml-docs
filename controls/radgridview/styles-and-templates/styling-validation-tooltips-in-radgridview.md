@@ -10,7 +10,7 @@ position: 22
 
 ## Styling Validation ToolTips in RadGridView ##
 
-> Before reading this topic, you might find useful to get familiar with RadGridView’s validation functionality
+> Before reading this topic, you might find useful to get familiar with RadGridView’s [validation]({%slug gridview-managing-data-validation%}) functionality
 
 Many of you are familiar with validation mechanism in __WPF__ and __Silverlight__. 
 __RadGridView__ has two validation layers UI and data. Interface such as __IDataErrorInfo__ is used by data layer validation and __RadGridView's__ role here is just to update underlying value via binding at the right moment. Error validation template comes from __WPF__ framework. For __Silverlight__ we developed a special __ValidationToolTip__ element for common input controls and native MS controls that are supported by our themes. 
@@ -23,18 +23,18 @@ In edit mode validation tool tip depends on the editor and __GridViewEditorPrese
 __GridViewEditorPresenter__ is a generic container for all type of editors. 
 In view mode validation tool tip depends on the cell and on the row.
 
-> You can check this [article](%slug gridview-styling-editorpresenter%) documentation article on how to style the __GridViewEditorPresenter__
+> You can check this [article]({%slug gridview-styling-editorpresenter%}) documentation article on how to style the __GridViewEditorPresenter__
 
 
 When we validate the data on property level the default error template for WPF appears. This is a thin red line around the control. In the world of WPF you can easily restyle validation error template of any control.
  
 An exception of this rule are the MS controls that could be styled in all Telerik themes. They inherit the same look and feel presented for each theme, as part of the Telerik theme suite.  
 
-> To learn how to customize any Telerik theme check the [Setting a Theme(Using Implicit Styles)](%slug styling-apperance-implicit-styles-overview%) article
+> To learn how to customize any Telerik theme check the [Setting a Theme(Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) article
 
 __RadGridView's__ validation tool tip styles are located in __Telerik.Windows.Controls.GridView.xaml__, those related to editors in the respective theme XAML mark-up file.
 
-With __Microsoft Expression Blend__ you could easily extract the desired validation tooltip template of any element. Using [Implicit Styles](%slug styling-apperance-implicit-styles-overvie%) gives you the ability to easily extract and edit the default __ControlTemplates__ of the controls. You can follow [this](%slug styling-apperance-editing-control-templates %) article on two different approaches on how to extract the __ControlTemplates__.
+With __Microsoft Expression Blend__ you could easily extract the desired validation tooltip template of any element. Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default __ControlTemplates__ of the controls. You can follow [this]({%slug styling-apperance-editing-control-templates%}) article on two different approaches on how to extract the __ControlTemplates__.
 
 Default XAML mark-up for __GridViewCell’s__ validation tooltip in __Office_Black theme__:
 

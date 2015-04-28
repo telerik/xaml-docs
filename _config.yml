@@ -625,7 +625,7 @@ navigation:
     controls/raddataservicedatasource/sorting:
         title: Sorting
     controls/radentityframeworkdatasource:
-        title: RadEntityFrameWorkDataSource
+        title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:
         title: RadExpressionEditor 
     controls/radexpressioneditor/expressions:

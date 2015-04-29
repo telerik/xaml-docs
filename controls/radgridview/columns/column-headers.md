@@ -14,7 +14,7 @@ Usually the top cell of a column is called Header. Its purpose is to set a capti
 
 ![](images/RadGridView_ColumnHeaders_1.png)
 
-To set value fpr the header use the __Header__ property of the column. 
+To set value for the header use the __Header__ property of the column. 
 
 #### __XAML__
 

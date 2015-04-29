@@ -5,17 +5,16 @@ description: Column Headers
 slug: gridview-columns-column-headers
 tags: column,headers
 published: True
-position: 6
+position: 5
 ---
 
 # Column Headers
 
-
-Usually the top cell of a column is called header. Its purpose is to set a caption for the column, which describes the category of the data displayed in it.
+Usually the top cell of a column is called Header. Its purpose is to set a caption for the column, which describes the data displayed in it.
 
 ![](images/RadGridView_ColumnHeaders_1.png)
 
-To set the value of the header use the __Header__ property of the column. 
+To set value fpr the header use the __Header__ property of the column. 
 
 #### __XAML__
 
@@ -25,7 +24,7 @@ To set the value of the header use the __Header__ property of the column.
 	                            Header="ID" />
 {{endregion}}
 
-Because it is of type __object__, you are not limited to just using plain text. For example, you can add a corresponding picture to the header text.
+The __Header__ property is of type __object__ and you are not limited to just using plain text. For example, you can add a corresponding picture to be displayed as header.
 
 #### __XAML__
 
@@ -48,11 +47,14 @@ Because it is of type __object__, you are not limited to just using plain text. 
 
 ## Customizing the Headers
 
-There are two things about the headers that can be customized - the header row and the header cells. The header row is modified by setting an appropriate style to the __HeaderRowStyle__ property of the __RadGridView__. {% if site.site_name == 'Silverlight' %}To learn exactly how the style is defined take a look at the {% endif %}[Styling the Header Row]({%slug gridview-styling-header-row%}){% if site.site_name == 'Silverlight' %} topic. {% endif %}The header cell is styled by setting the __HeaderCellStyle__ property of the column, which means that for each column you can have a differently styled header. To learn more about how to style the header cell take a look at the [Styling the Column Headers]({%slug gridview-styling-column-headers%}) topic.
+There are two elements on the headers that can be customized:
+
+* header row - it is modified by setting an appropriate style as __HeaderRowStyle__ of __RadGridView__. To learn  how to style it take a look at the [Styling the Header Row]({%slug gridview-styling-header-row%}) topic.
+* header cell - it is styled by setting __HeaderCellStyle__ for the column, which means that for each column you can have a differently styled header. To learn more about how to style the header cell take a look at the [Styling the Column Headers]({%slug gridview-styling-column-headers%}) topic.
 
 ## Hiding the Headers
 
-The column headers can only be hidden by setting the __ShowColumnHeaders__ property of the __RadGridView__ to __False__.
+Column headers can only be hidden by setting __ShowColumnHeaders__ property of __RadGridView__ to __False__.
 
 #### __XAML__
 
@@ -64,7 +66,7 @@ The column headers can only be hidden by setting the __ShowColumnHeaders__ prope
 	</telerik:RadGridView>
 {{endregion}}
 
-__![](images/RadGridView_ColumnHeaders_3.png)__
+![](images/RadGridView_ColumnHeaders_3.png)
 
 ## Sorting
 
@@ -72,11 +74,13 @@ The header of the column plays the main role when we want to sort it. It also ho
 
 ![](images/RadGridView_ColumnHeaders_4.png)
 
+>tipAs of Q2 2013, the user can benefit from __Column Sort Sequence Indicator__. In order to have this feature enabled you need to set ShowColumnSortIndexes property of RadGridView to True.
+
 To learn more about the sorting functionality take a look at the [Basic Sorting]({%slug gridview-sorting-basics%}) topic in the Sorting chapter.
 
 ## Filtering
 
-The header of the column hosts the built-in filtering mechanism, which allows you to filter the data in your __RadGridView__ by the columns' values.
+The header of the column hosts the built-in filtering mechanism, which allows you to filter data by the columns' values.
 
 ![](images/RadGridView_ColumnHeaders_5.png)
 
@@ -84,7 +88,7 @@ To learn more about the filtering functionality take a look at the [Basic Filter
 
 ## Grouping
 
-The header is also used when you want to group the data in your __RadGridView__. It has to be dragged into the group panel at the top of the __RadGridView__ in order to get the data grouped by that column.
+The header is also used for grouping data. It has to be dragged into the group panel at the top of the control in order to get the data grouped by that column.
 
 ![](images/RadGridView_ColumnHeaders_6.png)
 

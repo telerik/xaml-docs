@@ -5,36 +5,39 @@ description: Customize the UI programmatically
 slug: gridview-how-to-customize-ui-programmatically
 tags: customize,the,ui,programmatically
 published: True
-position: 8
+position: 4
 ---
 
 # Customize the UI programmatically
 
-You can manipulate the controls very easily with two powerful extension methods: __ParentOfType<>__ and __ChildrenOfType<>__.
+You can manipulate the controls easily with two powerful extension methods: 
+
+* __ParentOfType<>__ 
+* __ChildrenOfType<>__.
+
+>tipYou can access all items currently available in RadGridView through __RadGridView.Items__ collection.
+
+>Generally we do not recommend working with the visual elements as RadGridView is a virtualized control and its elements are reused as they go in and out the visual area. You can check the topic on [UI virtualization]({%slug radgridview-features-ui-virtualization%}) for further information. 
 
 Here are several small demos for __RadGridView__:
 
-1) Get all grid rows:
+1. Get all grid rows:
 
 #### __C#__
-
 {{region gridview-how-to-customize-ui-programmatically_0}}
 
 	var rows = RadGridView1.ChildrenOfType<GridViewRow>();
 {{endregion}}
 
-
-2) Get all grid cells:
+2. Get all grid cells:
 
 #### __C#__
-
 {{region gridview-how-to-customize-ui-programmatically_1}}
 
 	var cells= RadGridView1.ChildrenOfType<GridViewCell>();
 {{endregion}}
 
-
-3) Get all grid header cells:
+3. Get all grid header cells:
 
 #### __C#__
 
@@ -44,7 +47,7 @@ Here are several small demos for __RadGridView__:
 {{endregion}}
 
 
-4) Get (and show) new row:
+4. Get (and show) new row:
 
 #### __C#__
 
@@ -55,7 +58,7 @@ Here are several small demos for __RadGridView__:
 {{endregion}}
 
 
-5) Find the grid vertical scrollbar and scroll the grid to bottom:
+5. Find the grid vertical scrollbar and scroll the grid to bottom:
 
 #### __C#__
 
@@ -65,7 +68,7 @@ Here are several small demos for __RadGridView__:
 	verticalScrollBar.Value = verticalScrollBar.Maximum;
 {{endregion}}
 
-6) Select specific row(s):
+6. Select specific row(s):
 
 #### __C#__
 
@@ -75,7 +78,7 @@ Here are several small demos for __RadGridView__:
 	row.IsSelected = true;
 {{endregion}}
 
-7) Change specific cell(s) content:
+7. Change specific cell(s) content:
 
 #### __C#__
 
@@ -85,7 +88,7 @@ Here are several small demos for __RadGridView__:
 	cell.Content = "Changed!";
 {{endregion}}
 
-8) Put specific cell in edit mode:
+8. Put specific cell in edit mode:
 
 #### __C#__
 
@@ -94,7 +97,7 @@ Here are several small demos for __RadGridView__:
 	cell.IsInEditMode = true;
 	{{endregion}}
 
-9) Get visible rows count on scroll or size change:
+9. Get visible rows count on scroll or size change:
     
 
 #### __C#__
@@ -118,7 +121,7 @@ Here are several small demos for __RadGridView__:
 {{endregion}}
 
 
-10) Perform conditional row(s) formatting:
+10. Perform conditional row(s) formatting:
     
 
 #### __C#__
@@ -129,7 +132,7 @@ Here are several small demos for __RadGridView__:
 	rows.ForEach(r => r.Background = Brushes.Red);
 {{endregion}}
 
-11) Expand first row in case of hierarchy:
+11. Expand first row in case of hierarchy:
 
 #### __C#__
 
@@ -140,7 +143,7 @@ Here are several small demos for __RadGridView__:
 {{endregion}}
 
 
-12) Collapse first group header row:
+12. Collapse first group header row:
 
 #### __C#__
 
@@ -151,7 +154,7 @@ Here are several small demos for __RadGridView__:
 {{endregion}}
 
 
-13) Modify background for all cells in specific column:   
+13. Modify background for all cells in specific column:   
 
 #### __C#__
 
@@ -162,7 +165,7 @@ Here are several small demos for __RadGridView__:
 {{endregion}}
 
 
-14) Increase header row Height:   
+14. Increase header row Height:   
 
 #### __C#__
 
@@ -171,7 +174,7 @@ Here are several small demos for __RadGridView__:
 	headerRow.Height = 100;
 {{endregion}}
 
-15) Check all CheckBox controls in specific column:
+15. Check all CheckBox controls in specific column:
 
 #### __C#__
 

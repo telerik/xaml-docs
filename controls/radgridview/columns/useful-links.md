@@ -5,7 +5,7 @@ description: Useful Links
 slug: gridview-columns-useful-links
 tags: useful,links
 published: True
-position: 13
+position: 12
 ---
 
 # Useful Links
@@ -54,6 +54,7 @@ position: 13
 ## Examples on GitHub
 
 You can download runnable projects showing how to implement various scenarios available for download from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the examples are listed under __GridView__.
+To work more easily with our SDK samples you can download and configure [SDK Samples Browser]({%slug sdk-samples-browser %}).
 
 Some of the examples are listed as:
 

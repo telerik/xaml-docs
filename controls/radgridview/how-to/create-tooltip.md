@@ -60,7 +60,7 @@ In this section it is shown how to set a ToolTip for the header of a column.
 
 Two of the options to do so are:
 
-1. Predefine the HeaderCellStyle for the column. For example:
+* Predefine the HeaderCellStyle for the column. For example:
 
 #### __XAML__
 
@@ -78,7 +78,7 @@ Two of the options to do so are:
 
 >tipYou can define the DataTemplate as a StaticResource and then directly assign the HeaderCellStyle property of the GridViewColumn.
 
-2. Predefine the Header for the column. The code will be similar to this one:
+* Predefine the Header for the column. The code will be similar to this one:
 
 #### __XAML__
 

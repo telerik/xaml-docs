@@ -10,7 +10,7 @@ position: 10
 
 # Reordering Columns
 
-__RadGridView__ control supports column reordering and it can be done by the user in run-time. The user has just to drag the desired column's header at the desired position among the other headers and drop it there.
+__RadGridView__ supports column reordering and it can be done by the user in run-time. The user can drag the desired column's header at the desired position among the other headers and drop it there.
 
 ![](images/RadGridView_ReorderingColumns_1.png)
 
@@ -18,25 +18,21 @@ __RadGridView__ control supports column reordering and it can be done by the use
 
 RadGridView suggests different modes when reordering a column. You can control it through the __ReorderColumnsMode__ property.
         
-
 You can find the possible values you can assign for it bellow:
         
-
 * __DropIndicator__ - Displays only drop mark indicating the destination drop location
             
-
 * __None__ - Does not display any indicators
             
-
 * __ReorderColumns__ - Reorder columns while dragging cells
             
-
 * __Interactive__ - Reorder columns and show drop indicator
             
-
 ## Disabling Reordering
 
-There are two ways to disable reordering. The first one is to disable it on __RadGridView__ level by setting the __CanUserReorderColumns__ property to __False__, which means that none of the columns will be re-orderable.
+There are two ways to disable reordering. 
+
+1. The first one is to disable it on __RadGridView__ level by setting the __CanUserReorderColumns__ property to __False__, which means that none of the columns will be re-orderable.
 
 #### __[XAML] Example 1: Disable Reordering__
 
@@ -49,7 +45,7 @@ There are two ways to disable reordering. The first one is to disable it on __Ra
 
 The headers will be still draggable, but when you drop them nothing will happen.
 
-You can also disable the reordering for a particular column by setting its __IsReorderable__ property.
+2. You can also disable the reordering for a particular column by setting its __IsReorderable__ property.
 
 #### __[XAML] Example 2: Disable Reordering for a particular column__
 
@@ -62,7 +58,7 @@ You can also disable the reordering for a particular column by setting its __IsR
 
 ## Reordering programmatically 
 
-The order of the columns may also be configured by setting the DisplayIndex property of each of them:
+The order of the columns may also be configured by setting the __DisplayIndex__ property of each of them:
 
 #### __[XAML] Example 3: Reorder using DisplayIndex__
 

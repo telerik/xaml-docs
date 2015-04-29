@@ -5,7 +5,7 @@ description: Bound/Unbound Columns
 slug: gridview-columns-bound-unbound-columns
 tags: bound/unbound,columns
 published: True
-position: 12
+position: 2
 ---
 
 # Bound/Unbound Columns
@@ -24,7 +24,7 @@ __Bound columns__ represent the data from __RadGridView's__ ItemsSource. They su
 
 ![](images/RadGridView_BoundUnboundColumns_1.png)
 
-__Unbound__ columns are used when a custom content has to be displayed. Such custom content can be buttons which are not directly related to the underlying data, textbox for adding comments, images etc. The unbound column's content is defined by setting cell template. When using unbound columns you will be unable to perform filtering, sorting and grouping.
+__Unbound__ columns are used for displaying a custom content. Such custom content can be buttons which are not directly related to the underlying data, textbox for adding comments, images etc. The unbound column's content is defined by setting cell template. When using unbound columns you will be unable to perform filtering, sorting and grouping.
 
 Here is an example for unbound column:
 

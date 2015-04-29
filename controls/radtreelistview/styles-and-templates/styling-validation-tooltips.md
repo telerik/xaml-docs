@@ -3,7 +3,7 @@ title: Styling Validation Tooltips
 page_title: Styling Validation Tooltips
 description: Styling Validation Tooltips
 slug: styling-validation-tooltip-in-treelistview
-tags: styling,validation,tooltips,in,treelistview
+tags: styling,validation,tooltips,treelistview
 published: True
 position: 3
 ---
@@ -15,3 +15,7 @@ You can modify the look of __RadTreeListView__ and its elements by either changi
 As __RadTreeListView__ inherits __RadGridView__ directly, please refer to the [Styling Validation ToolTips in RadGridView]({%slug styling-validation-tooltip-in-gridview%}).
 
 > For customizing __TreeListViewRow__ you need to modify a __ControlTemplate__ with **x:Key="TreeListViewRow_ValidationToolTipTemplate"** instead of **x:Key="GridViewRow_ValidationToolTipTemplate"**
+
+# See Also
+
+* [Validation]({%slug gridview-managing-data-validation%})

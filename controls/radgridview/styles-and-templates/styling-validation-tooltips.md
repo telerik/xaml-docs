@@ -3,7 +3,7 @@ title: Styling Validation Tooltips
 page_title: Styling Validation Tooltips
 description: Styling Validation Tooltips
 slug: styling-validation-tooltip-in-gridview
-tags: styling,validation,tooltips,in,gridview
+tags: styling,validation,tooltips,gridview
 published: True
 position: 22
 ---
@@ -26,7 +26,7 @@ Especially for __Silverlight__ a special __ValidationToolTip__ element was devel
 
 __RadGridView__ supports different validation modes and the validation tooltip depends on different factors. Visually all tooltips are the same, but they appear on different elements. In edit mode validation tooltip depends on the editor and __GridViewEditorPresenter__ element. __GridViewEditorPresenter__ is a generic container for all type of editors. In view mode validation tooltip depends on the cell and on the row.
 
-> You can check this [article]({%slug gridview-styling-editorpresenter%}) documentation article on how to style the __GridViewEditorPresenter__
+> In order to customize __GridViewEditorPresenter__ you can check the [Styling the GridViewEditorPresenter]({%slug gridview-styling-editorpresenter%}) article.
 
 {% if site.site_name == 'WPF' %}
 When data is being validated on property level, the default error template for __WPF__ appears. This is a thin red line around the control. In the world of __WPF__ you can easily restyle validation error template of any control.
@@ -38,7 +38,13 @@ An exception of this rule are the MS controls that could be styled in all Teleri
 
 __RadGridView's__ validation tooltip styles are located in __Telerik.Windows.Controls.GridView.xaml__, those related to editors in the respective theme XAML mark-up file.
 
-You can follow [this]({%slug styling-apperance-editing-control-templates%}) article on two different approaches on how to extract the __ControlTemplates__ of the validation tooltip. With __Microsoft Expression Blend__ you could easily extract the desired validation tooltip template of any element. Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default __ControlTemplates__ of the controls. 
+ There are two approaches you can follow in order to extract the __ControlTemplates__ of the validation tooltip:
+
+* Manually [Edit the ControlTemplates]({%slug styling-apperance-editing-control-templates%}) 
+
+* Using [Microsoft Expression Blend]({%slug common-styling-appearance-edit-control-templates-blend%}) 
+
+>tip The recommended approach for editing __ControlTemplates__ is using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
 
 Default XAML mark-up for __GridViewCell’s__ validation tooltip in __Office_Black theme__:
 
@@ -133,6 +139,10 @@ Default XAML mark-up for __GridViewRow’s__ validation tooltip in __Office_Blac
 	. . .
 
 	</ControlTemplate>
+
+# See Also
+
+* [Validation]({%slug gridview-managing-data-validation%})
 
 
 

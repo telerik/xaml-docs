@@ -55,7 +55,7 @@ There are two available options when grouping. The first option is to simply ass
 
 #### __[VB.NET] Example 1: Grouping Columns Using Outline Level__
 
-{{region radspreadprocessing-features-grouping_5}}
+{{region radspreadprocessing-features-grouping_6}}
 	Dim workbook = New Workbook()
 	Dim worksheet = workbook.Worksheets.Add()
 	
@@ -80,7 +80,7 @@ The other option is to use the Group method exposed by the row/column selection 
 
 #### __[VB.NET] Example 2: Grouping Columns Using the Group Method__
 
-{{region radspreadprocessing-features-grouping_6}}
+{{region radspreadprocessing-features-grouping_7}}
     Dim workbook = New Workbook()
     Dim worksheet = workbook.Worksheets.Add()
 
@@ -112,7 +112,7 @@ Figure 3
 
 #### __[VB.NET] Example 3: Ungrouping Columns Using Ouline Level__
 
-{{region radspreadprocessing-features-grouping_7}}
+{{region radspreadprocessing-features-grouping_8}}
     worksheet.Rows(0, 1).Ungroup()
     worksheet.Rows(4, 6).Ungroup()
 {{#endregion}}
@@ -128,7 +128,7 @@ You can achieve the same result with the code in __Example 4__:
 
 #### __[VB.NET] Example 4: Ungrouping Columns Using the Ungroup Method__
 
-{{region radspreadprocessing-features-grouping_8}}
+{{region radspreadprocessing-features-grouping_9}}
     worksheet.Rows(0, 1).ClearOutlineLevel()
     worksheet.Rows(4, 6).SetOutlineLevel(1)
 {{#endregion}}
@@ -147,10 +147,46 @@ You can get the outline level of a row/column or a group of rows/columns using t
 
 #### __[VB.NET] Example 5: Getting the OutlineLevel__
 
-{{region radspreadprocessing-features-grouping_4}}
+{{region radspreadprocessing-features-grouping_10}}
 	Dim outlineLevelRangeValue As RangePropertyValue(Of Integer) = worksheet.Rows(0, 1).GetOutlineLevel()
 	Dim outLineLevel As Integer = outlineLevelRangeValue.Value
 {{#endregion}}
+
+## Setting the position of the summary row or column
+
+When a selection or rows is grouped, the row immediately below them is automatically designated to be a summary row for this group. In the context of the grouping feature, this means that the plus/minus outline symbol will be aligned with this row. The same is applied to columns, whose summary column is automatically placed to the right of the group.
+
+Figure 4
+![](images/RadSpreadProcessing_Features_Grouping_04.png)
+
+In Figure 4, the summary row for the group of rows 1 to 4 is row 5 and for rows 7 to 10 it is row 11.
+
+If you would like to change the placement of the summary row or column, this can be done through the GroupingProperties class, which exposes the following two boolean properties:
+
+* __SummaryRowIsBelow__
+
+* __SummaryColumnIsToRight__
+
+Both properties have a default value of true. The following snippet shows how to set the value of the __SummaryColumnIsToRight__ and what result to expect in the produced file.
+
+#### __[C#] Example 6: Setting the position of the summary column to left__
+
+{{region radspreadprocessing-features-grouping_5}}
+
+    worksheet.GroupingProperties.SummaryColumnIsToRight = false;
+
+{{#endregion}}
+
+#### __[VB.NET] Example 6: Setting the position of the summary column to left__
+
+{{region radspreadprocessing-features-grouping_11}}
+
+	worksheet.GroupingProperties.SummaryColumnIsToRight = False
+
+{{#endregion}}
+
+Figure 5
+![](images/RadSpreadProcessing_Features_Grouping_05.png)
 
 # See Also
 

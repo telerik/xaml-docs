@@ -78,7 +78,7 @@ Start your demo and write "al" in the __input box__. Now only items, which text 
 
 ![](images/RadComboBox_Features_Filtering_030.png)
 
->When RadComboBox is virtualized the filtering is not supported.
+>importantWhen RadComboBox is virtualized the filtering is not supported.
 
 # See Also
 

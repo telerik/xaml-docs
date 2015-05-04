@@ -24,7 +24,7 @@ In order to get the items refreshed, you have to notify the GridView that the bo
 
 There are four possible solutions:
 
-1. You can update the value as illustrated in this [help article]({%slug edit-item-outside-gridview%}) on how to edit an item outside RadGridView.
+1. You can update the value as illustrated in the [Edit items outside RadGridView]({%slug edit-item-outside-gridview%}) article.
 
 1. Invoke RadGridView.Rebind() method. It will raise CollectionChanged notification with action Reset. Please note that the entire view will be recreated.
 
@@ -32,7 +32,9 @@ There are four possible solutions:
 
 >When a __nested property__ is modified and a notification is raised for it as suggested in point 1., then RadGridView will not receive it and the data displayed will not be re-evaluated. In that case the suggested solutuons listed as 2. or 3. should be applied.
 
-# See Also
+>tipYou can also find the blog post on [Fast real-time update](http://blogs.telerik.com/vladimirenchev/posts/10-10-04/fast-real-time-data-update-for-your-silverlight-and-wpf-applications.aspx).
+
+# See Also 
 * [Basic Filtering]({%slug gridview-filtering-basic%})
 
 * [Basic Grouping]({%slug gridview-grouping-basics%})

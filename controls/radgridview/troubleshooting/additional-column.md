@@ -1,6 +1,6 @@
 ---
-title: Additional column added after all gridview columns
-page_title: Additional column added after all gridview columns
+title: Additional column appears
+page_title: Additional column appears
 description: Additional column added after all gridview columns
 slug: gridview-troubleshooting-additional-column
 tags: additional,column,added,after,all,gridview,columns
@@ -52,4 +52,7 @@ Now, the result would be:
 
 ![](images/troubleshooting_additional_column_gridview_fix2.png)
 
+# See Also
+* [Columns Overview]({%slug gridview-columns-overview%})
+ 
 

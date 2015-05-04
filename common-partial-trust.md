@@ -41,7 +41,6 @@ DateTimePicker	|	Yes	|
 Diagram	|	No	|	
 Docking	|	Partially	|	No floating windows - require full trust permission
 EntityFrameworkDataSource	|	Partially	|	Requires additional permission for System.Data.SqlClient.SqlClientPermission
-	|		|	No drag operations - Group, Freeze, Row resizing
 Expander	|	Yes	|	
 ExpressionEditor	|	Yes	|	
 GanttView	|	No	|	

@@ -41,4 +41,8 @@ One property that exists only in this type of column is __AutoSelectOnEdit__ - w
 
 # See Also
 
+ * [CheckBox Column]({%slug gridview-checkbox-column-clicks%}) 
+
  * [Styling the CheckBoxColumn]({%slug gridview-columns-styling-checkboxcolumn%})
+
+ * [Select Column]({%slug radgridview-columns-column-types-select-column%})

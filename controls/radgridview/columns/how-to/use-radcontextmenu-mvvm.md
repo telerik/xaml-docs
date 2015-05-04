@@ -5,22 +5,20 @@ description: Use a RadContextMenu in MVVM
 slug: gridview-how-to-use-radcontextmenu-mvvm
 tags: use,a,radcontextmenu,in,mvvm
 published: True
-position: 9
+position: 13
 ---
 
 # Use a RadContextMenu in MVVM
-
-
 
 This tutorial will show you how use a RadContextMenu with a RadGridView
 
 It will show you how to do the following:
 
-* [Define_a_RadContextMenu](#define-a-radcontextmenu-with-menuitems)
+* [Define RadContextMenu](#define-a-radcontextmenu-with-menuitems)
 
-* [Create_a_Style_for_GridViewHeaderCell](#create-a-style-for-the-column-headers)
+* [Create Style for GridViewHeaderCell](#create-a-style-for-the-column-headers)
 
-* [Define_the_RadGridView](#define-the-radgridview)
+* [Define RadGridView](#define-the-radgridview)
 
 * [Result](#Result)
 
@@ -434,9 +432,17 @@ The implementation of the ViewModel is below:
 {{endregion}}
 
 
-
 ## The defined ContextMenu works
 
 ![gridview-how-to-use-radcontextmenu-mvvm 1](images/gridview-how-to-use-radcontextmenu-mvvm_1.png)
 
-A __sample project__ can be downloaded {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/support/kb/silverlight/contextmenu/radcontextmenu-mvvm.aspx){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/support/kb/wpf/contextmenu/radcontextmenu-mvvm.aspx){% endif %}
+{% if site.site_name == 'Silverlight' %}
+A __sample project__ can be downloaded [here](http://www.telerik.com/support/kb/silverlight/contextmenu/radcontextmenu-mvvm.aspx).
+You can also check [Header Context Menu](http://demos.telerik.com/silverlight/#GridView/HeaderContextMenu) and [Row Context Menu](http://demos.telerik.com/silverlight/#GridView/RowContextMenu) demos.
+{% endif %}
+
+{% if site.site_name == 'WPF' %}
+A __sample project__ can be downloaded [here](http://www.telerik.com/support/kb/wpf/contextmenu/radcontextmenu-mvvm.aspx).
+You can also check __Header Context Menu__ and __Row Context Menu__ [WPF Demos](http://demos.telerik.com/wpf/).
+{% endif %}
+

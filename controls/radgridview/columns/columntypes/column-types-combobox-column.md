@@ -210,6 +210,8 @@ __Figure 5__![](images/RadGridView_ColumnTypes_5.png)
         
 
 >If you are using GridViewComboBoxColumn's __ItemsSource__ property you should specify a valid __Source__ for it. Please refer to this [help article]({%slug gridview-troubleshooting-blank-cells%}).
+
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
         
 
 ## Templating the ComboBox Column
@@ -246,7 +248,6 @@ Start by defining the __GridViewComboBox__ column and its __ItemTemplate__:
 {{endregion}}
 
 
-
 The multi-column ComboBox in this example will have two columns showing the ID and Name of the City respectively. When you run the example, Figure 6 shows what happens when the customer tries to edit in a column.
 
 
@@ -256,3 +257,11 @@ __Figure 6__![](images/gridview_multi_column_combo.png)
 # See Also
 
  * [Empty Cells in Combobox column]({%slug gridview-troubleshooting-blank-cells%})
+
+ * [Handle SelectionChanged for GridViewComboBoxColumn]({%slug gridview-columns-howto-selectionchanged-comboboxcolumn%})
+  
+ * [Filter items in ComboboxColumn]({%slug gridview-columns-how-to-filter-the-items-in-comboboxcolumn%})
+
+ * [Number of clicks in the ComboBox column]({%slug gridview-combobox-column-clicks%})
+  
+

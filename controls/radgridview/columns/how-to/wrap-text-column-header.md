@@ -1,11 +1,11 @@
 ---
-title: Wrap the text in the column header
-page_title: Wrap the text in the column header
-description: Wrap the text in the column header
+title: Wrap text in column header
+page_title: Wrap text in column header
+description: Wrap text in column header
 slug: gridview-howto-wrap-text-column-header
-tags: wrap,the,text,in,the,column,header
+tags: wrap,text,in,column,header
 published: True
-position: 4
+position: 7
 ---
 
 # Wrap the text in the column header
@@ -30,3 +30,7 @@ We will take advantage of the fact that the __Header__ property of the GridView 
 	</telerik:GridViewDataColumn>
 	
 That is it, now you have a multi-line header. 
+
+#See also
+
+ * [Column Headers]({%slug gridview-columns-column-headers%})

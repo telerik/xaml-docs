@@ -1,31 +1,36 @@
 ---
-title: Scroll to a particular row or column
-page_title: Scroll to a particular row or column
-description: Scroll to a particular row or column
+title: Scroll to particular row or column
+page_title: Scroll to particular row or column
+description: Scroll to particular row or column
 slug: gridview-scroll-item
-tags: scroll,to,a,particular,row,or,column
+tags: scroll,to,particular,row,or,column
 published: True
-position: 3
+position: 10
 ---
 
 # Scroll to a particular row or column
 
-This article shows how to scroll RadGridView to a particular row and / or column. There are two methods that we can use __ScrollIntoViewAsync__ and __ScrollIndexIntoViewAsync__. We can use them against a grid with many rows and columns. The ultimate goal would be to scroll to the last column of the last row:
+This article shows how to scroll RadGridView to a particular row and / or column. There are two methods that can be invoked:
+
+* __ScrollIntoViewAsync__ 
+* __ScrollIndexIntoViewAsync__. 
+
+We can use them against RadGridView with many rows and columns. The ultimate goal would be to scroll to the last column of the last row:
                      
 ![](images/how_to_scroll_gridview.png)
 
 ## ScrollIntoViewAsync
 
-The __ScrollIntoViewAsync__ method accepts the following parameters:
+__ScrollIntoViewAsync__ method accepts the following parameters:
             
 
-* DataItem of type Object - here you pass the business object you want to scroll to.
+* DataItem of type Object - the business object you want to scroll to.
 
-* [optional] Column of type GridViewColumn - here you pass the GridViewColumn you want to scroll to
+* [optional] Column of type GridViewColumn - GridViewColumn you want to scroll to
 
 * CallBack method - it will be called when the method succeeds
 
-Here is the code that will scroll into the last row and last column of the gridview:
+Here is the code that will scroll to the last row and last column of RadGridView:
 
 #### __C#__
 
@@ -40,7 +45,6 @@ Here is the code that will scroll into the last row and last column of the gridv
 {{endregion}}
 
 
-
 #### __VB.NET__
 
 {{region gridview-scroll-item_1}}
@@ -52,22 +56,22 @@ Here is the code that will scroll into the last row and last column of the gridv
 	    End Sub
 	{{endregion}}
 
-You should use this method when the virtualization is turned on (which is by default). If for some reason you have disabled the virtualization - you can use the __ScrollIntoView__ counterpart. The only difference in terms of programming API is that no callback method is called when the ScrollIntoView succeeds.
+You should use this method when [UI virtualization]({%slug radgridview-features-ui-virtualization%}) is turned on (which is by default). If for some reason you have disabled the virtualization - you can use the __ScrollIntoView__ counterpart. The only difference in terms of programming API is that no callback method is called when the ScrollIntoView succeeds.
  
 ## ScrollIndexIntoViewAsync (added Q3 2011)
 
-The __ScrollIndexIntoViewAsync__ method accepts the following parameters:
+__ScrollIndexIntoViewAsync__ method accepts the following parameters:
             
 
-* Index of type int - here you pass the index of the business object you want to scroll to.
+* Index of type int - index of the business object you want to scroll to.
 
-* [optional] Column of type GridViewColumn - here you pass the GridViewColumn you want to scroll to
+* [optional] Column of type GridViewColumn - GridViewColumn you want to scroll to
 
 * CallBack method - it will be called when the method succeeds
 
 * [optional] CallBack method - the method to execute when scrolling has failed.
 
-Here is the code that will scroll into the last row and last column of the gridview:
+Here is the code that will scroll into the last row and last column of RadGridView:
 
 #### __C#__
 
@@ -94,7 +98,7 @@ Here is the code that will scroll into the last row and last column of the gridv
     End Sub
 {{endregion}}
 
-You should use this method when the virtualization is turned on (which is by default). If you have disabled the virtualization - you can use the __ScrollIndexIntoView__ counterpart. The only difference in terms of programming API is that no callback method is called when the ScrollIndexIntoView succeeds.
+You should use this method when [UI virtualization]({%slug radgridview-features-ui-virtualization%}) is turned on (which is by default). If you have disabled the virtualization - you can use the __ScrollIndexIntoView__ counterpart. The only difference in terms of programming API is that no callback method is called when the ScrollIndexIntoView succeeds.
             
 
 

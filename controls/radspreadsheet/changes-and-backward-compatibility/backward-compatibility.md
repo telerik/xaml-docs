@@ -128,7 +128,7 @@ Telerik.Windows.Controls.Spreadsheet.Worksheets.Margins.IRowColumnHeadingMargin:
 
 ### What to do now
 
-Use Telerik.Windows.Controls.Spreadsheet.Worksheets.Margins.IRowColumnHeadingMargin::__ContainerManager__ property. instead.
+Use Telerik.Windows.Controls.Spreadsheet.Worksheets.Margins.IRowColumnHeadingMargin::__ContainerManager__ property instead.
 
 ### Changed
 
@@ -297,7 +297,7 @@ Telerik.Windows.Controls.Spreadsheet.Worksheets.RadWorksheetEditorPresenterBase:
 
 ### What to do now
 
-Use Telerik.Windows.Controls.Spreadsheet.Worksheets.RadWorksheetEditorPresenterBase::__OnSheetViewportChanged __ instead.
+Use Telerik.Windows.Controls.Spreadsheet.Worksheets.RadWorksheetEditorPresenterBase::__OnSheetViewportChanged__ instead.
 
 ### Changed
 

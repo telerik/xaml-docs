@@ -10,11 +10,11 @@ position: 9
 
 # Masked TextBox Column
 
-The __GridViewMaskedTextBoxColumn__ derives from the __GridViewBoundColumnBase__, which means that it inherits all of the functionality too.  In edit mode every field of the column will be represented by a __MaskedTextBox__ control, unless a __CellEditTemplate__ is defined for the column. This allows you to add masks for the inputed data as IP Address, Specific code etc.
+__GridViewMaskedTextBoxColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}), which means that it inherits all of the functionality too.  In edit mode every field of the column will be represented by a __MaskedTextBox__ control, unless a __CellEditTemplate__ is defined for the column. This allows you to add masks for the inputed data as IP Address, Specific code etc.
 
 For example add a __GridViewMaskedTextBoxColumn__ that represents the OrderNumber for an Order object. The OrderNumber should not be more than 7 symbols. As it allows both text and digits use the __Standard MaskType__ and set "SO#####" as __Mask__.
 
-#### __XAML__
+#### __[XAML]Example 1: Define GridViewMaskedTextBoxColumn in XAML:__
 
 {{region radgridview-columns-column-types-masked-textbox-column_0}}
 

@@ -19,7 +19,7 @@ Here it is shown how to declare a column of this type.
 {{region radgridview-columns-column-types-select-column_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
+	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewSelectColumn />
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
@@ -36,8 +36,8 @@ If you set the __SelectionMode__ property of the __RadGridView__ to either __Ext
 {{region radgridview-columns-column-types-select-column_1}}
 
 	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False"
-	                         SelectionMode="Extended">
+	                     AutoGenerateColumns="False"
+	                     SelectionMode="Extended">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewSelectColumn />
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
@@ -50,4 +50,7 @@ If you set the __SelectionMode__ property of the __RadGridView__ to either __Ext
 
 In case you need to get the checked CheckBox-es, you may directly work with the SelectedItems collection of the RadGridView.
 
+# See Also
+
+ * [CheckBox Column]({%slug gridview-checkbox-column-clicks%}) 
 

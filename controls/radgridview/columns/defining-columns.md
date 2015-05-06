@@ -252,6 +252,8 @@ Then reference it in code-behind as demonstrated below:
 # See Also
 
  * [Basic Column]({%slug radgridview-columns-column-types-basic-column%})
+ 
+ * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
 

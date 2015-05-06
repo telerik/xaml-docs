@@ -50,6 +50,8 @@ This chapter gives you detailed information about columns in __RadGridView__. Th
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 
+ * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
+
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
 
  * [Control Panel]({%slug gridview-overview-controlpanel%})

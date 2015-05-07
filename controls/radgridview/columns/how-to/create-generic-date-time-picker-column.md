@@ -14,6 +14,8 @@ position: 14
 
 In order to make your custom __DateTimePicker Column__ reusable, instead of binding its __RadDatePicker/RadTimePicker SelectedValue__ property to a specific one from your business object, you can bind it to __SelectedDate/SelectedTime__ property of the corresponding control. Thus, the custom __DateTimePicker Column__ could  be used with different data sources. 
 
+#### __[XAML] Example 1: Declaration of Generic DateTimePicker Column__
+
 	<UserControl x:Class="CustomDateTimePickerColumn_WPF.CustomDateTimePicker"
 			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

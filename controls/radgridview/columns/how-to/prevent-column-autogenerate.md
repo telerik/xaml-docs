@@ -5,7 +5,7 @@ description: Not auto-generate a column for a specific property
 slug: gridview-prevent-column-autogenerate
 tags: not,auto-generate,a,column,for,a,specific,property
 published: True
-position: 8
+position: 9
 ---
 
 # Not auto-generate a column for a specific property

@@ -425,6 +425,12 @@ __Figure 1:__ Snapshot of the created custom DateTimePickerColumn.
 
 # See Also
  
+ * [Create Generic DateTimePicker Column]({%slug gridview-how-to-create-generic-date-time-picker-column%})
+
  * [Add a button column]({%slug gridview-add-button-column%})
 
  * [Create Custom Editor with RadGridView]({%slug radgridview-howto-create-custom-editor%})
+
+
+
+ 

@@ -5,7 +5,7 @@ description: Wrap text in column header
 slug: gridview-howto-wrap-text-column-header
 tags: wrap,text,in,column,header
 published: True
-position: 7
+position: 8
 ---
 
 # Wrap the text in the column header

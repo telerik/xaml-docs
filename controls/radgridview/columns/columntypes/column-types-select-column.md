@@ -5,16 +5,14 @@ description: Select Column
 slug: radgridview-columns-column-types-select-column
 tags: select,column
 published: True
-position: 5
+position: 11
 ---
 
 # Select Column
 
-The __GridViewSelectColumn__ derives from the __GridViewColumn__ class and its content is represented by a CheckBox for each row. The difference between it and the __GridViewCheckBox__ column is that this one is not meant to bind to data. Instead, it allows you to select the row via the CheckBox in it, i.e. each CheckBox IsChecked property is bound to the IsSelected property of the corresponding row.
+__GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class and its content is represented by a CheckBox for each row. The difference between it and __GridViewCheckBoxColumn__ is that this one is not meant to bind to data. Instead, it allows you to select the row via the CheckBox in it, i.e. each CheckBox's IsChecked property is bound to the IsSelected property of the corresponding row.
 
-Here it is shown how to declare a column of this type.
-
-#### __XAML__
+#### __[XAML] Example 1: Define GridViewSelectColumn in XAML.__
 
 {{region radgridview-columns-column-types-select-column_0}}
 
@@ -29,9 +27,9 @@ Here it is shown how to declare a column of this type.
 
 ![](images/RadGridView_ColumnTypes_7.png)
 
-If you set the __SelectionMode__ property of the __RadGridView__ to either __Extended__ or __Multiple__, you will be able to select more than one row by clicking on the desired check box or to select all the rows by clicking on the check box in the header.
+If you set __RadGridView.SelectionMode__ property to either __Extended__ or __Multiple__, you will be able to select more than one row by clicking on the desired check box or to select all the rows by clicking on the check box in the header.
 
-#### __XAML__
+#### __[XAML] Example 2: Define GridViewDataColumn with Extended SelectedMode.__
 
 {{region radgridview-columns-column-types-select-column_1}}
 
@@ -47,8 +45,7 @@ If you set the __SelectionMode__ property of the __RadGridView__ to either __Ext
 
 ![](images/RadGridView_ColumnTypes_8.png)
 
-
-In case you need to get the checked CheckBox-es, you may directly work with the SelectedItems collection of the RadGridView.
+>You may directly work with the SelectedItems collection of RadGridView.
 
 # See Also
 

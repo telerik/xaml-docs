@@ -112,7 +112,7 @@ Now, if you run your application, an empty RadPropertyGrid will be visualized:
 
 ## Binding RadPropertyGrid to an item
 
-* Binding to a data item - you may bind the RadRopertyGrid to a single data item. Thus you will be able to examine and edit it properties. The only thing you need is to set the Item property of the property grid. The binding may be performed both in xaml and it code-behind.
+* Binding to a data item - you may bind the RadRopertyGrid to a single data item. Thus you will be able to examine and edit it's properties. The only thing you need is to set the Item property of the property grid. The binding may be performed both in xaml and it code-behind.
 
 #### __C#__
 

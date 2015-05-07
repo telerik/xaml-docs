@@ -5,7 +5,7 @@ description: Set SortingState on Column
 slug: gridview-set-sortingstate-on-column
 tags: set,sortingstate,on,column
 published: True
-position: 11
+position: 12
 ---
 
 # Set SortingState on Column

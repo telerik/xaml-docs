@@ -5,7 +5,7 @@ description: Create Generic DateTimePicker Column
 slug: gridview-how-to-create-generic-date-time-picker-column
 tags: create,custom,generic,datetimepicker,column
 published: True
-position: 14
+position: 5
 ---
 
 # Create Generic DateTimePicker Column
@@ -52,3 +52,5 @@ In order to make your custom __DateTimePicker Column__ reusable, instead of bind
  * [Add a button column]({%slug gridview-add-button-column%})
 
  * [Create Custom Editor with RadGridView]({%slug radgridview-howto-create-custom-editor%})
+ 
+*  [Create Custom DateTimePicker Column](%slug gridview-how-to-create-date-time-picker-column%)

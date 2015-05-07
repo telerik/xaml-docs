@@ -5,7 +5,7 @@ description: Filter the Items in GridViewComboBoxColumn
 slug: gridview-columns-how-to-filter-the-items-in-comboboxcolumn
 tags: filter,the,items,in,gridviewcomboboxcolumn
 published: True
-position: 5
+position: 6
 ---
 
 # Filter the Items in GridViewComboBoxColumn

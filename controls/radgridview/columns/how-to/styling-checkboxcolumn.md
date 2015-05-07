@@ -5,7 +5,7 @@ description: Style GridViewCheckBoxColumn
 slug: gridview-columns-how-to-styling-checkboxcolumn
 tags: style,gridviewcheckboxcolumn
 published: True
-position: 12
+position: 13
 ---
 # Style the GridViewCheckBoxColumn
 

@@ -39,4 +39,4 @@ Via the __DataFormatString__ property you are able to format the bound data and 
 
 __Figure 1__: ![](images/RadGridView_ColumnTypes_0.png)
 
-To learn more about formating please check [Data Formatting]({%slug gridview-columns-data-formatting%}) topic. 
+To learn more about formatting please check [Data Formatting]({%slug gridview-columns-data-formatting%}) topic. 

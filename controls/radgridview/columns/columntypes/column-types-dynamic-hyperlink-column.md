@@ -16,7 +16,7 @@ Here is a list of the most important properties.
 
 * __NavigateUrlMemberPaths__ - name of the property which contains the URL.
 
-* __NavigateUrlFormatString__ - allows you to provide a format string for the value of the URL. That wat you can easily format URLs provided as relative by the business object. To learn more about formating you can check [Data Formatting]({%slug gridview-columns-data-formatting%}) topic. 
+* __NavigateUrlFormatString__ - allows you to provide a format string for the value of the URL. That wat you can easily format URLs provided as relative by the business object. To learn more about formatting you can check [Data Formatting]({%slug gridview-columns-data-formatting%}) topic. 
 
 * __TargetName__ - specifies the location to open the link.
 

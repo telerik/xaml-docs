@@ -421,7 +421,7 @@ Clear</td></tr><tr><td>
 
 Borders</td><td>
 
-The top border.</td><td>
+The table borders.</td><td>
 
 None</td></tr><tr><td>
 

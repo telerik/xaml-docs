@@ -18,6 +18,8 @@ position: 0
 
 * [Cloning Document Elements](#cloning-document-elements)
 
+* [Cloning Styling Objects](#cloning-styling-objects)
+
 ## Merging Documents
 
 __RadWordsProcessing__ allows you to merge two __RadFlowDocument__ instance using the __Merge()__ method overloads. The document to which you wish to add content is called *target* and the document from which you wish to take the content is called source.
@@ -110,7 +112,6 @@ __Clone()__ method has two overloads:
 
 * __Clone()__: Create a deep copy of the document element and associates it with the same document.
             
-
 * __Clone(RadFlowDocument)__: Creates a deep copy of the element and associates it with the provided __RadFlowDocument__. This allows cloned elements to be added in the element tree of the provided RadFlowDocument at later time and is convenient if you want to "move" an element from one document to another.
             
 
@@ -121,6 +122,15 @@ __Clone()__ method has two overloads:
 {{endregion}}
 
 
+
+## Cloning Styling Objects
+
+The following styling objects also implement __Clone()__ method, which can be used to create their deep copies:
+* __Style__
+
+* __List__
+
+* __ListLevel__
 
 # See Also
 

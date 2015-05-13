@@ -97,10 +97,8 @@ __Example 3:__ Configure cell merging per column
 							 MergedCellsDirection="Horizontal"   
                              CanUserFreezeColumns="False"
 							 GroupRenderMode="Flat"
-                             AutoGenerateColumns="False"
-                             RowDetailsTemplate="{StaticResource RowDetailsTemplate}">
+                             AutoGenerateColumns="False">
             <telerik:RadGridView.Columns>
-                <telerik:GridViewToggleRowDetailsColumn/>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}"/>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}"/>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" IsCellMergingEnabled="False"/>

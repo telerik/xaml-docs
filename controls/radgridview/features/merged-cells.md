@@ -44,8 +44,7 @@ The __three possible options__ are:
           
 
 __Example 1:__ Configure RadGridView to merge cells vertically
-        
-
+      
 #### __XAML__
 
 {{region gridview-merged-cells_2}}
@@ -67,7 +66,6 @@ Similarly, you can set the cells to be merged horizontally configuring RadGridVi
 
 __Example 2:__ Configure RadGridView to merge cells horizontally
         
-
 #### __XAML__
 
 {{region gridview-merged-cells_3}}
@@ -89,28 +87,36 @@ You can also configure merging for GridViewDataColumn through setting its __IsCe
 
 __Example 3:__ Configure cell merging per column
         
-
 #### __XAML__
 
 {{region gridview-merged-cells_4}}
 
-	<telerik:RadGridView
-	  ColumnWidth="*"
-	  MergedCellsDirection="Vertical"
-	  CanUserFreezeColumns="False"
-	  GroupRenderMode="Flat">
-	  <telerik:RadGridView.Columns>
-	    <telerik:GridViewDataColumn IsCellMergingEnabled="False"/>
-	  </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
+	<telerik:RadGridView Grid.Row="0" 
+                             Name="radGridView" 
+							 ColumnWidth="*" 
+							 MergedCellsDirection="Horizontal"   
+                             CanUserFreezeColumns="False"
+							 GroupRenderMode="Flat"
+                             AutoGenerateColumns="False">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}"/>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}"/>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" IsCellMergingEnabled="False"/>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}" IsCellMergingEnabled="False"/>
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
 {{endregion}}
 
+>Please note RadGridView's definition in __Example 3__ is specific to illustrate it
+
+__Figure 3:__ RadGridView with configured cell merging per column
+
+![gridview merged cells 3](images/gridview_merged_cells_3.png)
+
 Merged cells are also supported when there is [RowDetails]({%slug radgridview-row-details-overview%})/[Hierarchy]({%slug gridview-hierachy-overview%}) defined for RadGridView.
-        
 
 __Example 4:__ Define RowDetailsTemplate
         
-
 #### __XAML__
 
 {{region gridview-merged-cells_5}}
@@ -126,7 +132,6 @@ __Example 4:__ Define RowDetailsTemplate
 {{endregion}}
 
 __Example 5:__ Specify RowDetailsTemplate for RadGridView
-        
 
 #### __XAML__
 
@@ -145,13 +150,13 @@ __Example 5:__ Specify RowDetailsTemplate for RadGridView
 	</telerik:RadGridView>
 {{endregion}}
 
-__Figure 3:__ RadGridView with merged cells and RowDetails defined
-
-![gridview merged cells 3](images/gridview_merged_cells_3.png)
-
-__Figure 4:__ RadGridView with merged cells and RowDetails expanded
+__Figure 4:__ RadGridView with merged cells and RowDetails defined
 
 ![gridview merged cells 4](images/gridview_merged_cells_4.png)
+
+__Figure 5:__ RadGridView with merged cells and RowDetails expanded
+
+![gridview merged cells 5](images/gridview_merged_cells_5.png)
 
 >Once the row details are expanded, the merged cell will be separated into two different subsets. The particular cell that is part of the expanded row will be considered as a single one instead.
           

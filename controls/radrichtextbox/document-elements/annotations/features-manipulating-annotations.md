@@ -33,7 +33,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 ## Methods for Retrieving Annotations
 
-* RadDocument exposes the following general methods for retrieving annotation markers or checking if such exist in the document at all:
+* RadDocument and DocumentSelection expose the following general methods for retrieving annotation markers or checking if such exist in the document/selection at all:
 
 #### __C#__
 

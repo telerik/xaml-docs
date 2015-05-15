@@ -37,11 +37,11 @@ The list below describes several of the top-of-the-line features of the Telerik 
 
 * __Silverlight/WPF code compatibility__ - The __RadComboBox__ shares a single codebase with its {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %} counterpart. This means that you can achieve close to 100% code reuse for your __RadComboBox__ logic if you have parallel Silverlight/WPF development.          
 
-* __Expression Blend support__ - All __RadControls__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} can be easily customized using Expression Blend.          
+* __Expression Blend support__ - All controls from the __UI__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite can be easily customized using Expression Blend.          
 
 * __Keyboard support__ - __RadComboBox__ has full support for keyboard navigation. The __RadComboBox__ supports several keyboard shortcuts for performing most common tasks. [Read more]({%slug radcombobox-features-keyboard-support%})
 
-* __Codeless test automation for RadComboBox__ - You can record, execute and debug functional tests for __RadControls__ without leaving the familiar Visual Studio environment. Telerik [Test Studio](http://www.telerik.com/products/web-testing-tools/webui-test-studio-features.aspx) is an advanced click and play web application testing tool specialized for automating both AJAX and Silverlight applications. Telerik Test Studio ships with special translators for Telerik UI for ASP.NET AJAX and Telerik UI for Silverlight.
+* __Codeless test automation for RadComboBox__ - You can record, execute and debug functional tests for the controls from the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite without leaving the familiar Visual Studio environment. Telerik [Test Studio](http://www.telerik.com/products/web-testing-tools/webui-test-studio-features.aspx) is an advanced click and play web application testing tool specialized for automating both AJAX and Silverlight applications. Telerik Test Studio ships with special translators for Telerik UI for ASP.NET AJAX and Telerik UI for Silverlight.
 
 {% if site.site_name == 'Silverlight' %}		
 In the following video, we will look at some of the features and functionality in Telerik RadComboBox for Silverlight and how you can start using it in your rich internet applications today.(Runtime: 03:22)

@@ -29,7 +29,7 @@ This article will explain a basic implementation of __RadPivotGrid__ using Local
 
 There are two ways to add __RadPivotGrid__ to your application:        
 
-* Drag __RadPivotGrid__ from the *Toolbox*. It can be found under {% if site.site_name == 'WPF' %}__RadControls for WPF__{% endif %}{% if site.site_name == 'Silverlight' %}__RadControls for SilverLight__{% endif %} but only if you have installed __Telerik__ controls.
+* Drag __RadPivotGrid__ from the *Toolbox*. It can be found under {% if site.site_name == 'WPF' %}__UI for WPF__{% endif %}{% if site.site_name == 'Silverlight' %}__UI for SilverLight__{% endif %} but only if you have installed __Telerik__ controls.
 
 ![Rad Pivot Grid Getting Started 1](images/RadPivotGrid_GettingStarted_1.png)
 

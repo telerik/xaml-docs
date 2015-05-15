@@ -50,7 +50,7 @@ There are two ways to reference the needed xaml files:
 
 * Copy the xaml files to a folder in the project:
 
-	Create a Theme folder and copy the required files from __Themes.Implicit/../Windows8/../Themes/__ folder located in the installation folder of RadControls:
+	Create a Theme folder and copy the required files from __Themes.Implicit/../Windows8/../Themes/__ folder located in the installation folder of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}:
 	
 	![ganttview setting theme 2](images/ganttview_setting_theme_2.png)
 	

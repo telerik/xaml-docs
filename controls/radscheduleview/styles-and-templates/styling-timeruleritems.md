@@ -74,11 +74,11 @@ Any change on the appearance of a TimeRulerItem depends on the TimeRulerItemStyl
 
 ![radscheduleview timeruler 13](images/radscheduleview_timeruler_13.PNG)
 
-There are two ways to obtain the source code of RadScheduleView TimeRulerItemStyleSelector: from RadControls installation folder and from the generated template for RadScheduleView in Expression Blend.
+There are two ways to obtain the source code of RadScheduleView TimeRulerItemStyleSelector: from UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} installation folder and from the generated template for RadScheduleView in Expression Blend.
 
-__Get TimeRulerItemStyleSelector source code from RadControls installation folder__
+__Get TimeRulerItemStyleSelector source code from UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} installation folder__
 
-Navigate to the installation folder of RadControls on your computer. Go into the Themes folder and select the theme that you have chosen to use as a customization base for RadScheduleView. Drill down to find the __ScheduleView.xaml__ file in the directory that corresponds to your theme. From this resource dictionary extract the __TimeRulerItemStyleSelector__ and the resources it uses, such as brushes and styles, into your own project. 
+Navigate to the installation folder of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} on your computer. Go into the Themes folder and select the theme that you have chosen to use as a customization base for RadScheduleView. Drill down to find the __ScheduleView.xaml__ file in the directory that corresponds to your theme. From this resource dictionary extract the __TimeRulerItemStyleSelector__ and the resources it uses, such as brushes and styles, into your own project. 
 
 __Get TimeRulerItemStyleSelector from RadScheduleView control template__
 

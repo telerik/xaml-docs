@@ -18,7 +18,7 @@ Like most controls, the __RadDateTimePicker__ also allows you to template it in 
 
 * [Watermark Template Structure](#watermark-template-structure)
 
->tipFor more information about templating and how to modify the default templates of the RadControls read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic on this matter.
+>tipFor more information about templating and how to modify the default templates of the controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic on this matter.
 
 ## RadDateTimePicker Template Structure
 

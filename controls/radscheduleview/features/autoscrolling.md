@@ -10,7 +10,7 @@ position: 15
 
 # AutoScrolling
 
-With the official Q2 SP1 release of RadControls we introduce the auto scrolling feature for __RadScheduleView__. This feature will help end users by auto scrolling the visible area of the view while dragging appointments in the control.
+With the official Q2 SP1 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} we introduce the auto scrolling feature for __RadScheduleView__. This feature will help end users by auto scrolling the visible area of the view while dragging appointments in the control.
 
 This article covers the following topics:
 

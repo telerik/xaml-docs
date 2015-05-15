@@ -219,7 +219,18 @@ The __Split()__ method of a Block returns a new Block with the same properties. 
 
 The code in __Example 6__ splits a block in two. The first will contains text "Hello" and the second – "RadPdfProcessing!".
         
+#### __[C#] Example 6: Split Block__
 
+{{region radpdfprocessing-editing-block_6}}
+	Block helloBlock = new Block();
+	helloBlock.InsertText("Hello");
+	Size helloSize = helloBlock.Measure();
+	
+	Block block = new Block();
+	block.InsertText("Hello RadPdfProcessing!");
+	Size size = block.Measure(helloSize);
+	Block secondBlock = block.Split();
+{{endregion}}
 # See Also
 
  * [FixedContentEditor]({%slug radpdfprocessing-editing-fixedcontenteditor%})

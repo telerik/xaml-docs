@@ -10,7 +10,7 @@ position: 3
 
 # Localization
 
-The built-in localization mechanism in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} allows you to localize any string resource used by __RadPivotGrid__ and __RadPivotFieldList__ controls. Once translated you might use the resources in your projects without changing anything. You can find more information on the localization of the RadControls {% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/common-localization.html){% endif %}{% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}.      
+The built-in localization mechanism in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} allows you to localize any string resource used by __RadPivotGrid__ and __RadPivotFieldList__ controls. Once translated you might use the resources in your projects without changing anything. You can find more information on the localization of the UI {% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/common-localization.html){% endif %}{% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}.      
 
 >The __LocalDataSourceProvider__ provides an additional __Culture__ support option which allows you to localize the underlying data using any desired Culture. For more details please check the [Culture Support]({%slug radpivotgrid-features-culture-support%}) article from the __LocalDataSourceProvider__ section.      
 

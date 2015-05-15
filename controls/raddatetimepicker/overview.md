@@ -34,7 +34,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Styling and Appearance__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} __DateTimePicker__ can be fully customized using Expression Blend. There are also several pre-defined themes that can be used to style the control. [Read more]({%slug raddatetimepicker-styling-overview%})
 
-* __Enhanced Routed Events Framework__ - To help your code become even more elegant and concise, we implemented Enhanced Routed Events Framework for __RadControls__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.  This gives you more freedom when you design your applications since you can write instance handlers as well as class handlers for the routed events of our controls. [Read more]({%slug raddatetimepicker-events%})
+* __Enhanced Routed Events Framework__ - To help your code become even more elegant and concise, we implemented Enhanced Routed Events Framework for the controls from the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite.  This gives you more freedom when you design your applications since you can write instance handlers as well as class handlers for the routed events of our controls. [Read more]({%slug raddatetimepicker-events%})
 
 * __Watermark__ - The __DateTimePicker__ control allows the user to define and use watermarks in the date and time fields. [Read more]({%slug raddatetimepicker-features-watermark%})
 

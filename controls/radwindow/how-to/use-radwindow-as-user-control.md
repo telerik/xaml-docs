@@ -51,7 +51,7 @@ Also in the code behind your user control should inherit the __RadWindow__ inste
 	End Class
 {{endregion}}
 
->tipIf you have installed RadControls, you can easily create the __RadWindow UserControl__ with the Telerik templates - just click Add -> New Item... in the project Context Menu and choose "Telerik Scenario" from the installed templates. In the Scenario Wizard select __RadWindow__.
+>tipIf you have installed UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}, you can easily create the __RadWindow UserControl__ with the Telerik templates - just click Add -> New Item... in the project Context Menu and choose "Telerik Scenario" from the installed templates. In the Scenario Wizard select __RadWindow__.
 
 In the XAML you can declare the content of the __RadWindow__ directly in XAML and use the code-behind to wire-up some logic, as you would do with an __UserControl__. You can also set the properties of the __RadWindow__. This way you can have a configured __RadWindow__ at design time and the only thing you have to do is to show it, when needed. 
 

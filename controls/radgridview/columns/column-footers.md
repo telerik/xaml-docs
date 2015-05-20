@@ -5,7 +5,7 @@ description: Column Footers
 slug: gridview-columns-column-footers
 tags: column,footers
 published: True
-position: 7
+position: 4
 ---
 
 # Column Footers
@@ -14,7 +14,7 @@ Usually the bottom cell of a column is called footer. Its purpose is to display 
 
 ![](images/RadGridView_ColumnFooters_1.png)
 
-To set the value of the footer use the __Footer__ property of the column.
+To set the value of the footer use __Footer__ property of the column.
 
 #### __XAML__
 
@@ -24,7 +24,6 @@ To set the value of the footer use the __Footer__ property of the column.
                                 DataMemberBinding="{Binding EmployeeID}"
                                 Footer="Footer cell">
 {{endregion}}
-
 
 
 Because it is of type object, you are not limited to just using plain text. For example, you can add a corresponding picture to the footer text.
@@ -53,15 +52,13 @@ Because it is of type object, you are not limited to just using plain text. For 
 	</telerik:GridViewDataColumn>
 {{endregion}}
 
-
 ![](images/RadGridView_ColumnFooters_2.png)
 
 ## Showing the Column Footers
 
-By default the column footers are hidden, so in order to make them visible you have to set the __ShowColumnFooters__ property to __True__.
+By default column footers are hidden, so in order to make them visible you have to set the __ShowColumnFooters__ property to __True__.
 
 #### __XAML__
-
 {{region gridview-columns-column-footers_2}}
 
 	<telerikGrid:RadGridView x:Name="radGridView"
@@ -72,7 +69,7 @@ By default the column footers are hidden, so in order to make them visible you h
 
 ## Aggregates
 
-The column footers are also used to display aggregated information about the data in the column via aggregate functions.
+Column footers are also used to display aggregated information on the data displayed in the column via aggregate functions.
 
 ![](images/RadGridView_ColumnFooters_3.png)
 

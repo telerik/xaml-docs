@@ -192,4 +192,4 @@ Note that we’ve set two TickIntervals for the MajorTickLine.  So when PixelLen
 
 ![ganttview-timeruler 7](images/ganttview-timeruler_7.png)
 
-You can check the GanttView TimeRuler example at {% if site.site_name == 'Silverlight' %}[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#GanttView/Configuration/TimeRuler){% endif %}{% if site.site_name == 'WPF' %}[RadControls for WPF demos](http://demos.telerik.com/wpf/){% endif %} to see the time ruler properties in action. 
+You can check the GanttView TimeRuler example at {% if site.site_name == 'Silverlight' %}[UI for Silverlight demos](http://demos.telerik.com/silverlight/#GanttView/Configuration/TimeRuler){% endif %}{% if site.site_name == 'WPF' %}[UI for WPF demos](http://demos.telerik.com/wpf/){% endif %} to see the time ruler properties in action. 

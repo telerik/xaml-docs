@@ -10,7 +10,7 @@ position: 8
 
 # DragDropMode
 
-With the official Q1 2013 release of RadControls we introduced a new DragDrop mode for the Docking control which enables dragging and dropping panes without being able to leave them floating.
+With the official Q1 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} we introduced a new DragDrop mode for the Docking control which enables dragging and dropping panes without being able to leave them floating.
 
 This behavior can be turned on with the new __DragDropMode__ property which is of Enum type and can be set to any of the following values:
 

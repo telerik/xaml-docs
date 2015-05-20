@@ -32,7 +32,7 @@ __void ScaleAt(double scaleX, double scaleY, double centerX, double centerY)__: 
 __void Rotate(double angle)__: Applies the specified rotation.
       
 
-__void RotateAt(double="" angle, double centerX, double centerY)__: Applies the specified rotation about the specified coordinates.
+__void RotateAt(double angle, double centerX, double centerY)__: Applies the specified rotation about the specified coordinates.
       
 
 __void Translate(double offsetX, double offsetY)__: Applies the specified translation.

@@ -16,7 +16,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 * [RadMenuItem Template Structures](#radmenuitem-template-structures)
 
->tipFor more information about templating and how to modify the default templates of the __RadControls__ read [Editing Control Templates article]({%slug styling-apperance-editing-control-templates%}) on this matter.      
+>tipFor more information about templating and how to modify the default templates of the controls from the of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite read [Editing Control Templates article]({%slug styling-apperance-editing-control-templates%}) on this matter.      
 
 ## RadMenu Template Structure
 

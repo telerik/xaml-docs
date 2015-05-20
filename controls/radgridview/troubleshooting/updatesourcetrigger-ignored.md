@@ -1,14 +1,14 @@
 ---
-title: The UpdateSourceTrigger property is ignored
-page_title: The UpdateSourceTrigger property is ignored
-description: The UpdateSourceTrigger property is ignored
+title: UpdateSourceTrigger property is ignored
+page_title: UpdateSourceTrigger property is ignored
+description: UpdateSourceTrigger property is ignored
 slug: gridview-troubleshooting-updatesourcetrigger-ignored
 tags: the,updatesourcetrigger,property,is,ignored
 published: True
 position: 17
 ---
 
-# The UpdateSourceTrigger property is ignored
+# UpdateSourceTrigger property is ignored
 
 __PROBLEM__
 

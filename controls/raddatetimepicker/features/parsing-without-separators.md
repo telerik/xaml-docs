@@ -10,7 +10,7 @@ position: 10
 
 # Parsing Without Separators
 
-With the Q3 2013 release of RadControls __RadDateTimePicker__ provides new parsing logic which will allow the end users to enter dates in the input field directly without separators - the entered date will be parsed following the same rules as in a [military format]({%slug raddatetimepicker-features-militaryparsing%}).
+With the Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} __RadDateTimePicker__ provides new parsing logic which will allow the end users to enter dates in the input field directly without separators - the entered date will be parsed following the same rules as in a [military format]({%slug raddatetimepicker-features-militaryparsing%}).
 
 This feature can be enabled by setting __AllowParsingWithoutSeparator__ property of the control to __True__:
 

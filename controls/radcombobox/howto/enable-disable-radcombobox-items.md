@@ -114,7 +114,7 @@ And the result is that every odd item is disabled.
 ## Using MVVM Approach and ContainerBindingCollection
 
 {% if site.site_name == 'Silverlight' %}
-Using __ItemContainerStyle__ is a good solution, however, it is not the best. Imagine that your business object has a boolean property named __IsEnabled__. Even more flexible solution is to directly bind the __RadComboBoxItem__'s __IsEnabled__ property to the __IsEnabled__ property exposed by your domain object. You can do this through the __ContainerBindingCollection__ class exposed by the Telerik RadControls' API.
+Using __ItemContainerStyle__ is a good solution, however, it is not the best. Imagine that your business object has a boolean property named __IsEnabled__. Even more flexible solution is to directly bind the __RadComboBoxItem__'s __IsEnabled__ property to the __IsEnabled__ property exposed by your domain object. You can do this through the __ContainerBindingCollection__ class exposed by the Telerik UI for Silverlights' API.
 {% endif %}
 
 #### __XAML__

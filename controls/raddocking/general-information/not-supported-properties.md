@@ -38,12 +38,11 @@ __Description__: The __RadDocking__ control allows its __ItemsPanel__ property t
 
 Problematical Properties:
 
-• __FlowDirection__
+* __FlowDirection__
 
 __Description__: Not implemented yet. This problem will be targeted soon.
 
-## 
-RadSplitContainer
+## RadSplitContainer
 
 Properties that are __not supported__:
 
@@ -73,8 +72,7 @@ Problematical Properties:
 
 __Description__: Not implemented yet. This problem will be targeted soon.
 
-## 
-RadPaneGroup
+## RadPaneGroup
 
 Properties that are __not supported__:
 
@@ -116,12 +114,11 @@ __Description__: The __RadDocking__ control allows its __ItemsPanel__ property t
 
 Problematical Properties:
 
-• __FlowDirection__
+* __FlowDirection__
 
 __Description__: It is __not implemented__ at this moment.
 
-## 
-RadPane
+## RadPane
 
 Properties that are __not supported__:
 

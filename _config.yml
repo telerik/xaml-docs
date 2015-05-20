@@ -533,13 +533,13 @@ navigation:
     controls/radcarousel:
         title: RadCarousel
     controls/radcarousel/changes-and-backward-compability:
-        title: Changes and Backward Compability  
-    controls/radcarousel/styling-and-appearance:
-        title: Styling and Appearance
+        title: Changes and Backward Compability 
     controls/radcarousel/using-radcarousel:
         title: Using RadCarousel
     controls/radcarousel/using-radcarouselpanel:
-        title: Using RadCarouselPanel
+        title: Using RadCarouselPanel 
+    controls/radcarousel/styling-and-appearance:
+        title: Styling and Appearance
     controls/radcollectionnavigator:
         title: RadCollectionNavigator
     controls/radcollectionnavigator/changes-and-backward-compability:
@@ -558,6 +558,12 @@ navigation:
         title: Changes and Backward Compability
     controls/radgridview:
         title: RadGridView
+    controls/radgridview/changes-and-backward-compability:
+        title: Changes and Backward Compability
+    controls/radgridview/general-information:
+        title: General Information
+    controls/radgridview/getting-started:
+        title: Getting Started
     controls/radgridview/clipboard:
         title: Clipboard
     controls/radgridview/columns:
@@ -566,10 +572,12 @@ navigation:
         title: Column Types
     controls/radgridview/commands:
         title: Commands
+    controls/radgridview/features:
+        title: Features
+    controls/radgridview/events:
+        title: Events
     controls/radgridview/export:
         title: Export
-    controls/radgridview/export/troubleshooting:
-        title: Troubleshooting
     controls/radgridview/filtering:
         title: Filtering
     controls/radgridview/filtering/faq:
@@ -586,6 +594,8 @@ navigation:
         title: Paging
     controls/radgridview/performance:
         title: Performance
+    controls/radgridview/populating-with-data:
+        title: Performance
     controls/radgridview/row-details:
         title: Row Details
     controls/radgridview/rows:
@@ -594,18 +604,16 @@ navigation:
         title: Selection
     controls/radgridview/sorting:
         title: Sorting
+    controls/radgridview/styles-and-templates:
+        title: Styles and Templates
     controls/radgridview/style-selectors:
         title: Style Selectors
     controls/radgridview/template-selectors:
         title: Template Selectors
     controls/radgridview/troubleshooting:
         title: Troubleshooting
-    controls/radgridview/filtering:
-        title: Filtering
-    controls/radgridview/filtering:
-        title: Filtering
-    controls/radgridview/filtering:
-        title: Filtering
+    controls/radgridview/how-to:
+        title: How To
     controls/raddataservicedatasource:
         title: RadDataServiceDataSource
     controls/raddataservicedatasource/crud:
@@ -625,7 +633,7 @@ navigation:
     controls/raddataservicedatasource/sorting:
         title: Sorting
     controls/radentityframeworkdatasource:
-        title: RadEntityFrameWorkDataSource
+        title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:
         title: RadExpressionEditor 
     controls/radexpressioneditor/expressions:

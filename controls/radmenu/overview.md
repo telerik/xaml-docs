@@ -45,7 +45,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __WPF/Silverlight Code Compatibility__ - The WPF Menu shares a single codebase with its Silverlight counterpart. This means that you can achieve close to 100% code reuse for your Menu logic if you have parallel WPF/Silverlight development.          
 
-* __Codeless Test Automation__ - now you can record, execute and debug functional tests without leaving the familiar Visual Studio environment. Telerik [WebUI Test Studio](http://www.telerik.com/products/web-testing-tools/webui-test-studio-features.aspx) an advanced click and play web application testing tool specialized for automating both AJAX and Silverlight applications. The Studio ships with special translators for Telerik RadControls for ASP.NET AJAX and Silverlight. 
+* __Codeless Test Automation__ - now you can record, execute and debug functional tests without leaving the familiar Visual Studio environment. Telerik [WebUI Test Studio](http://www.telerik.com/products/web-testing-tools/webui-test-studio-features.aspx) an advanced click and play web application testing tool specialized for automating both AJAX and Silverlight applications. The Studio ships with special translators for Telerik controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite for ASP.NET AJAX and Silverlight. 
 
 {% if site.site_name == 'Silverlight' %}		
 In this video, we will look at some of the features and functionality in Telerik RadMenu for Silverlight and how you can start using it in your rich internet applications today.(Runtime: 03:02)

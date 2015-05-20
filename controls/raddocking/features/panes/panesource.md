@@ -10,7 +10,7 @@ position: 6
 
 # PanesSource - MVVM Support
 
-With our Q3 2013 SP release of RadControls we are introducing a brand new mechanism in the __RadDocking__ control, the ability to bind a collection of objects to the RadDocking control. The __PanesSource__ property implementation is very similar to the __ItemsSource__ one in any ItemsControl control and it can be even bound to RadPane instances as well.
+With our Q3 2013 SP release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} we are introducing a brand new mechanism in the __RadDocking__ control, the ability to bind a collection of objects to the RadDocking control. The __PanesSource__ property implementation is very similar to the __ItemsSource__ one in any ItemsControl control and it can be even bound to RadPane instances as well.
 
 The __PanesSource__ property can be set/bound to any collection of objects. Because you could set this property to a collection of for example strings, ViewModels etc. the __RadDocking__ control needs a mechanism that tells it how to represent those objects in the control. This mechanism is the brand new __DockingPanesFactory__.
 

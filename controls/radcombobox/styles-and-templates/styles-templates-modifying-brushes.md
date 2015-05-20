@@ -30,7 +30,7 @@ The way to obtain the style for the ButtonChrome is very common. Open RadComboBo
 
 Then generate ButtonChromeStyle again by hitting *Object > Edit Template > Edit a Copy*. Inside the template you can drill down to find the ButtonChrome control:
 
->Expression Blend will always generate styles for the default __Office Black theme__. If you are using another theme, you should manually copy the style, together with all resources it has a reference to, from RadControls installation folder on your machine. This folder contains a Themes folder in which you can find resources for RadComboBox or any other control according to the theme you use. 
+>Expression Blend will always generate styles for the default __Office Black theme__. If you are using another theme, you should manually copy the style, together with all resources it has a reference to, from UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} installation folder on your machine. This folder contains a Themes folder in which you can find resources for RadComboBox or any other control according to the theme you use. 
 
 Now that you have the entire ButtonChromeStyle at your disposal, you are free to modify any of its brushes. In Expression Blend open the Resources tab on the right and, while still in the newly generated ButtonChromeStyle, take a minute to explore the wide range of available brushes and find the ones you want to change.
 

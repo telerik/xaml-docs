@@ -1,21 +1,21 @@
 ---
-title: Adding UI for WPF to the Visual Studio 2012 Toolbox
-page_title: Adding UI for WPF to the Visual Studio 2012 Toolbox
-description: Adding UI for WPF to the Visual Studio 2012 Toolbox
+title: Adding UI for WPF to Visual Studio 2012 Toolbox
+page_title: Adding UI for WPF to Visual Studio 2012 Toolbox
+description: Adding UI for WPF to Visual Studio 2012 Toolbox
 slug: installation-adding-to-vs-2012-toolbox-wpf
-tags: adding,ui,for,wpf,to,the,visual,studio,2012,toolbox
+tags: adding,ui,for,wpf,to,visual,studio,2012,toolbox
 published: True
 position: 5
 site_name: WPF
 ---
 
-# Adding UI for WPF to the Visual Studio 2012 Toolbox
+# Adding UI for WPF to Visual Studio 2012 Toolbox
 
-The following tutorial will show you how to add the Telerik __RadControls__ for WPF to the Visual Studio 2012 toolbox.
+The following tutorial will show you how to add UI for WPF controls to Visual Studio 2012 toolbox.
 
-## Adding RadControls for WPF to the Visual Studio 2012 Toolbox
+## Adding UI for WPF to Visual Studio 2012 Toolbox
 
-To manually add Telerik __RadControls__ for WPF to the Toolbox, follow the steps below:
+To manually UI for WPF to the Toolbox, follow the steps below:
 
 * Open your application in Visual Studio 2012.
 
@@ -25,11 +25,11 @@ To manually add Telerik __RadControls__ for WPF to the Toolbox, follow the steps
 
 ![Common Installing Adding ToVS 2012 Tool Box 010 WPF](images/Common_InstallingAddingToVS2012ToolBox_010_WPF.png)
 
-Add a new tab with name "RadControls for WPF".
+Add a new tab with name "UI for WPF".
 
 ![Common Installing Adding ToVS 2012 Tool Box 020 WPF](images/Common_InstallingAddingToVS2012ToolBox_020_WPF.png)
 
-* Select the "RadControls for WPF" tab in the toolbox. Right mouse button click and select "Choose Items...".
+* Select the "UI for WPF" tab in the toolbox. Right mouse button click and select "Choose Items...".
 
 ![Common Installing Adding ToVS 2012 Tool Box 030 WPF](images/Common_InstallingAddingToVS2012ToolBox_030_WPF.png)
 
@@ -37,7 +37,7 @@ Add a new tab with name "RadControls for WPF".
 
 ![Common Installing Adding ToVS 2012 Tool Box 040 WPF](images/Common_InstallingAddingToVS2012ToolBox_040_WPF.png)
 
-* Navigate to the folder where the __RadControls__ DLL files are located. Select the DLL you want to import and press OK or hit Enter.
+* Navigate to the folder where the binaries are located. Select the DLL you want to import and press OK or hit Enter.
 
 ![Common Installing Adding ToVS 2012 Tool Box 050 WPF](images/Common_InstallingAddingToVS2012ToolBox_050_WPF.png)
 
@@ -47,11 +47,11 @@ Add a new tab with name "RadControls for WPF".
 
 ![Common Installing Adding ToVS 2012 Tool Box 060 WPF](images/Common_InstallingAddingToVS2012ToolBox_060_WPF.png)
 
-* Again expand your toolbox. You will see the newly added controls in the "RadControls for WPF" section.
+* Again expand your toolbox. You will see the newly added controls in the "UI for WPF" section.
 
 ![Common Installing Adding ToVS 2012 Tool Box 070 WPF](images/Common_InstallingAddingToVS2012ToolBox_070_WPF.png)
 
->After pressing the OK button of the "Choose Toolbox Items", it is possible the "RadControls for WPF" tab in the toolbox to be __hidden__. If so, press the right mouse button over the Toolbox area and select the __Show All__ command.
+>After pressing the OK button of the "Choose Toolbox Items", it is possible the "UI for WPF" tab in the toolbox to be __hidden__. If so, press the right mouse button over the Toolbox area and select the __Show All__ command.
 
 ![Common Installing Adding ToVS 2012 Tool Box 080 WPF](images/Common_InstallingAddingToVS2012ToolBox_080_WPF.png)
 

@@ -5,16 +5,15 @@ description: Create Custom DateTimePicker Column
 slug: gridview-how-to-create-date-time-picker-column
 tags: create,custom,datetimepicker,column
 published: True
-position: 0
+position: 4
 ---
 
 # Create Custom DateTimePicker Column
 
 This tutorial will guide you through the common task of creating a custom column in __RadGridView__. More precisely, an UserControl with __RadDatePicker__ and __RadTimePicker__, as well as a custom bound column that uses it as an edit element, will be created.
 
-* In the beginning you need a __RadGridView__ populated with sample data. Below are the custom business object definition (__Example 1__), as well as the __RadGridView__ declaration(__Example 2__).
+* In the beginning you need a __RadGridView__ populated with sample data. Below are the custom business object definition (__Example 1__), as well as __RadGridView__ declaration(__Example 2__).
 			
-
 #### __[C#] Example 1: Definition of Club custom business object.__
 
 {{region gridview-how-to-create-date-time-picker-column_0}}
@@ -415,13 +414,23 @@ Take a look at the code-behind for the control. An additional dependency propert
 
 * Run your demo and try to edit a cell from the new custom column. The result should be similar to the snapshot in __Figure 1__.
 			
-
 __Figure 1:__ Snapshot of the created custom DateTimePickerColumn. 
 
 ![gridview-how-to-create-custom-Date Time Picker-Column](images/gridview-how-to-create-custom-DateTimePicker-Column.png)
 
+>tipYou can download a runnable project of the previous example from our online SDK repository
+[here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/CreateCustomDateTimePickerColumn__.
+
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
+
 # See Also
+ 
+ * [Create Generic DateTimePicker Column]({%slug gridview-how-to-create-generic-date-time-picker-column%})
 
  * [Add a button column]({%slug gridview-add-button-column%})
 
  * [Create Custom Editor with RadGridView]({%slug radgridview-howto-create-custom-editor%})
+
+
+
+ 

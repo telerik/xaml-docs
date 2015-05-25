@@ -10,11 +10,11 @@ position: 2
 
 # RowStyleSelectors
 
-This article will show you how to style conditionally RadGridView rows using the __RowStyleSelector__ property.
+This article illustrates how to conditionally style rows through applying __RowStyleSelector__.
 		
->tipTo learn the basics about __StyleSelectors__ please check [this article]({%slug gridview-style-selectors-overview%}).
+>tipLearn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
 		  
-Assume we have a GridView bound to a collection of clubs. Each club has a property StadiumCapacity. What we want to achieve is to set the background color of the rows to Red if the capacity is greater than 50 000 or yellow otherwise:
+Assume we have RadGridView bound to a collection of Clubs. Each Club has a property StadiumCapacity. What we want to achieve is to set the background color of the rows to __Red if the capacity > 50 000 or Yellow otherwise__:
 		
 ![](images/gridview_rowstyleselector.png)
 
@@ -90,19 +90,18 @@ To do so follow these steps:
 	End Class
 {{endregion}}
 
-In this case we have two different styles that could be applied - __BigStadiumStyle__ and __SmallStadiumStyle__. Depending on the underlying data we choose / select which style to apply.
+In this case we have two different styles that could be applied:
 
-3. In the XAML file define the style selector as a resource and set the properties of the __BigStadiumStyle__ and __SmallStadiumStyle__:
+* __BigStadiumStyle__
+* __SmallStadiumStyle__. 
+
+Depending on the underlying data you cab select which style to apply.
+
+3.In the XAML file define the style selector as a resource and set the properties of the __BigStadiumStyle__ and __SmallStadiumStyle__:
 
 #### __XAML__
 
 {{region gridview-rowstyleselector_2}}
-
-	<UserControl x:Class="WpfApplication1.MainWindow"
-	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	        xmlns:my="clr-namespace:RowStyleSelector">
 	<Grid>
 		<Grid.Resources>
 			<my:StadiumCapacityStyle x:Key="stadiumCapacityStyle">
@@ -120,7 +119,6 @@ In this case we have two different styles that could be applied - __BigStadiumSt
 		</Grid.Resources>
 		...
 	</Grid>
-	</UserControl>
 {{endregion}}
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
@@ -136,7 +134,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
     </Style>
 {{endregion}}
 
-4. Finally, set the __RowStyleSelector__ property of the __RadGridView__:
+4.Finally, set the __RowStyleSelector__ property:
 
 #### __XAML__
 
@@ -147,7 +145,9 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 	                     RowStyleSelector="{StaticResource stadiumCapacityStyle}" />
 {{endregion}}
 
->Since the virtualization of the __GridView__ is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewRow) and their properties. __You should not set properties of the GridViewRow inside the SelectStyle method__. Please check this [help article]({%slug radgridview-features-ui-virtualization%}) for a reference.
+>tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
+
+>Since the virtualization of the control is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewRow) and their properties. You should not set properties of GridViewRow inside SelectStyle method. [Read mode on UI Virtualization]({%slug radgridview-features-ui-virtualization%}).
 		 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView__ / __RowStyleSelector__.
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/RowStyleSelector__.
           

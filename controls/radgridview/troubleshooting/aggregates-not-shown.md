@@ -5,7 +5,7 @@ description: Aggregates are not shown
 slug: gridview-troubleshooting-aggregates-not-shown
 tags: aggregates,are,not,shown
 published: True
-position: 0
+position: 1
 ---
 
 # Aggregates are not shown

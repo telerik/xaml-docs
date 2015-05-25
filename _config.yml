@@ -595,7 +595,7 @@ navigation:
     controls/radgridview/performance:
         title: Performance
     controls/radgridview/populating-with-data:
-        title: Performance
+        title: Populating with data
     controls/radgridview/row-details:
         title: Row Details
     controls/radgridview/rows:

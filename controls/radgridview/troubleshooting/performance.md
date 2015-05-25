@@ -23,7 +23,7 @@ You might notice a reduced performance of RadGridView control. Below are listed 
 
 * Disable validation in view mode through configuring [ValidateOnDataErrors="InEditMode"]({%slug gridview-managing-data-validation%}).
 
-* __Binding to complex properties__ - If you bind to complex property (sub property) __RadGridView__ have to use bindings to get the value for the cell. The better performance will be achieved if you bind to a simple property because we will use the .Net expression API to get the value.    
+* __Binding to complex properties__ - If you bind to complex property (sub property) RadGridView uses bindings to get the value for the cell. Better performance will be achieved if you bind to a simple property as we then use the .Net expression API to get the value.    
 
 * __Converters__ - calling converters will slow down the performance.
  
@@ -31,11 +31,11 @@ You might notice a reduced performance of RadGridView control. Below are listed 
 
 * As of __Q1 2012 SP1__ you have the option to disable the Telerik StyleManager and to style the controls using Implicit Styles. There are a number of benefits of using implicit styles over the Telerik StyleManager. For more information, please refer to this [help article]({%slug styling-apperance-implicit-styles-overview%}).
 
-* As of __Q3 2012__ a __new rendering mode of RadGridView - Flat__ is available. When you set Flat mode, the control will render rows one below other. This leads to a very good perfromance when there is grouping on several levels defined and a lot of data is populated. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
+* As of __Q3 2012__ a __new rendering mode - Flat__ is available. When you set Flat mode, the control will render rows one below other. This leads to a very good perfromance when there is grouping on several levels defined and a lot of data is populated. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
 
 * __DataLoadMode="Asynchronous"__ - using this mode is not recommended, it leads to potential problems. Please do not use it.
 
-* __Degraded performance with Windows8, Windows8Touch and Office2013 Themes__ - you can consider applying the lightweight templates in order to speed up the performance of RadGridView. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
+* __Degraded performance with Windows8, Windows8Touch and Office2013 Themes__ - you can consider applying the lightweight templates in order to speed up the performance. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
   
 * __TouchManager__ -  another optimization would be to __disable Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
             

@@ -49,7 +49,7 @@ You can check the latest Release Notes{% if site.site_name == 'Silverlight' %}[ 
 * __AutoBindBehavior__ now supports source different from __RadPropertyGrid__'s Item.
           
 
-* RadPropertyGrid editor will use a __TwoWay__ binding if such is specified in its  __PropertyDefinition__.
+* PropertyGridField editor will use a __TwoWay__ binding if such is specified in its  __PropertyDefinition__.
           
 
 ## Q1 2012 SP1

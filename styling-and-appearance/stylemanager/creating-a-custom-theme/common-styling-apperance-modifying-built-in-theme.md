@@ -71,7 +71,7 @@ __In order to modify\extend and apply a built-in theme:__
 	    
 	![Common Styling Theming Modify Built In Theme 030](images/Common_StylingThemingModifyBuiltInTheme_030.png)
 
-4 If you want to apply the theme only for a specific control, then you should stick to the following approach:
+1. If you want to apply the theme only for a specific control, then you should stick to the following approach:
 
 	#### __XAML__
 	

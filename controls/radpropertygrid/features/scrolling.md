@@ -12,7 +12,7 @@ position: 10
 
 
 
-Since __RadPropertyGrid__ utilizes UI virtualization, it only initializes those PropertyGridField that should be currently displayed in the view port. Thus, if one aims to bring some PropertyDefinition's PropertyGridField into view, a standard visual tree traversal will not do the work. 
+Since __RadPropertyGrid__ utilizes UI virtualization, it only initializes those PropertyGridFields that should be currently displayed in the view port. Thus, if one aims to bring some PropertyDefinition's PropertyGridField into view, a standard visual tree traversal will not do the work. 
 
 ## The ScrollIntoViewAsync method
 
@@ -25,13 +25,9 @@ __ScrollIntoViewAsync(PropertyDefinition propertyDefinition, Action<PropertyGrid
 >importantScrollIntoViewAsync is supported only when __RenderMode is set to Flat__. For more information on the different rendering modes, please check the [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}) article.
         
 
-Below you can find a basic scenario illustrating how to scroll to a particular field and then select it.
+You can define RadPropertyGrid similar to:
 
-You can define __RadPropertyGrid__ similar to:
-
-__Example 1:__ RadPropertyGrid with manually defined PropertyDefinitions
-
-#### __XAML__
+#### [XAML]Example 1: Defining RadPropertyGrid with manually defined PropertyDefinitions
 
 {{region radpropertygrid-scrolling_0}}
 
@@ -63,18 +59,16 @@ __Example 1:__ RadPropertyGrid with manually defined PropertyDefinitions
 As to assigning the __Item of RadPropertyGrid__, please check the __Binding RadPropertyGrid to an item__ section in [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) help article.
         
 
-You can see the result after starting the program on __Figure 1__:
+You can see the result after starting the application on __Figure 1__:
         
 
-Figure 1: RadPropertyGrid in sorted mode with some fields not currently visible
+__Figure 1__: RadPropertyGrid in sorted mode with some fields not currently visible
 
 ![Rad Property Grid Scroll Sorted 1](images/RadPropertyGrid_Scroll_Sorted_1.png)
 
 Then, click on __Scroll field into view__ button and execute the following code:
 
-__Example 2:__ Scrolling to a particular PropertyDefinition and selecting it
-
-#### __C#__
+#### [C#]Example 2: Scrolling to a particular PropertyDefinition and selecting it
 
 {{region radpropertygrid-scrolling_1}}
 
@@ -90,7 +84,7 @@ __Example 2:__ Scrolling to a particular PropertyDefinition and selecting it
 
 
 
-#### __VB__
+#### [VB]Example 2: Scrolling to a particular PropertyDefinition and selecting it
 
 {{region radpropertygrid-scrolling_1}}
 
@@ -106,11 +100,11 @@ __Example 2:__ Scrolling to a particular PropertyDefinition and selecting it
 
 You can observe the result on __Figure 2__.
 
-Figure 2: RadPropertyGrid after scrolling to a particular PropertyDefinition and selecting it![Rad Property Grid Scroll Sorted 2](images/RadPropertyGrid_Scroll_Sorted_2.png)
+__Figure 2__: RadPropertyGrid after scrolling to a particular PropertyDefinition and selecting it![Rad Property Grid Scroll Sorted 2](images/RadPropertyGrid_Scroll_Sorted_2.png)
 
 ## ScrollIntoViewAsync with grouping
 
-ScrollIntoViewAsync can also be used in __grouped scenarios__, to bring given PropertyDefinition’s PropertyGridField in the view port. 
+__ScrollIntoViewAsync__ can also be used in __grouped scenarios__, to bring given PropertyDefinition’s PropertyGridField in the view port. 
           
 
 >tipInvoking it will scroll to the group, expanding it if needed.
@@ -118,14 +112,11 @@ ScrollIntoViewAsync can also be used in __grouped scenarios__, to bring given Pr
 However, this functionality is supported only for groups that have valid Key (PropertyDefinition.GroupName). You can find more information on how to define groups in the article on [Grouping Support]({%slug radpropertygrid-grouping%}).
         
 
-Figure 3: RadPropertyGrid in grouped mode with some fields not currently visible![Rad Property Grid Scroll Grouped 1](images/RadPropertyGrid_Scroll_Grouped_1.png)
+__Figure 3__: RadPropertyGrid in grouped mode with some fields not currently visible![Rad Property Grid Scroll Grouped 1](images/RadPropertyGrid_Scroll_Grouped_1.png)
 
 Then, click on __Scroll field into view__ button and execute the following code:
         
-
-__Example 3:__ Scrolling to a particular PropertyDefinition and selecting it
-
-#### __C#__
+#### [C#]Example 3: Scrolling to a particular PropertyDefinition and selecting it
 
 {{region radpropertygrid-scrolling_1}}
 
@@ -141,7 +132,7 @@ __Example 3:__ Scrolling to a particular PropertyDefinition and selecting it
 
 
 
-#### __VB__
+#### [VB]Example 3: Scrolling to a particular PropertyDefinition and selecting it
 
 {{region radpropertygrid-scrolling_1}}
 
@@ -158,7 +149,7 @@ __Example 3:__ Scrolling to a particular PropertyDefinition and selecting it
 You can observe the result on __Figure 4__.
         
 
-Figure 4: RadPropertyGrid after scrolling to a particular PropertyDefinition and selecting it![Rad Property Grid Scroll Grouped 2](images/RadPropertyGrid_Scroll_Grouped_2.png)
+__Figure 4__: RadPropertyGrid after scrolling to a particular PropertyDefinition and selecting it![Rad Property Grid Scroll Grouped 2](images/RadPropertyGrid_Scroll_Grouped_2.png)
 
 ## ScrollIntoViewAsync with nested properties
 

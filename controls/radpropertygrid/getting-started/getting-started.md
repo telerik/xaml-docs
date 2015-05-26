@@ -12,16 +12,16 @@ position: 0
 
 
 
-This tutorial will walk your through the creation of a sample application that contains RadPropertyGrid and will show you how: 
+This tutorial will walk your through the creation of a sample application that contains __RadPropertyGrid__ and will show you how: 
 
-* Use RadPropertyGrid in your project;
+* Use RadPropertyGrid in your project
 
-* Bind RadPropertyGrid to a single item;
+* Bind RadPropertyGrid to a single item
 
 For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Visual Studio. 
 
 
->In order to use __RadPropertyGrid__ in your projects you have to add references to the following assemblies:
+>In order to use RadPropertyGrid in your projects you have to add references to the following assemblies:
 >* __Telerik.Windows.Controls__
 >* __Telerik.Windows.Controls.Data__
 >* __Telerik.Windows.Data__
@@ -34,9 +34,9 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 
 
-* Add the RadPropertyGrid as demonstrated below:{% if site.site_name == 'Silverlight' %}
+* Add RadPropertyGrid as demonstrated below:{% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+#### [XAML]Example 1: Adding __RadPropertyGrid
 
 {{region radpropertygrid-getting-started-getting-started_0}}
 
@@ -57,7 +57,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __[XAML]Example 1: Adding RadPropertyGrid
 
 {{region radpropertygrid-getting-started-getting-started_1}}
 
@@ -83,7 +83,7 @@ Two lines of code are important here:
 
 * The import of the Telerik schema:
 
-#### __XAML__
+#### [XAML]Example 2: Importing Telerik schema
 
 {{region radpropertygrid-getting-started-getting-started_2}}
 
@@ -92,9 +92,9 @@ Two lines of code are important here:
 
 
 
-* The declaration of the RadPropertyGrid control inside the Grid:
+* The declaration of RadPropertyGrid control inside the Grid:
 
-#### __XAML__
+#### [XAML]Example 3: Declaring RadPropertyGrid
 
 {{region radpropertygrid-getting-started-getting-started_3}}
 
@@ -112,9 +112,9 @@ Now, if you run your application, an empty RadPropertyGrid will be visualized:
 
 ## Binding RadPropertyGrid to an item
 
-* Binding to a data item - you may bind the RadRopertyGrid to a single data item. Thus you will be able to examine and edit it properties. The only thing you need is to set the Item property of the property grid. The binding may be performed both in xaml and it code-behind.
+* Binding to a data item - you may bind RadPropertyGrid to a single data item. Thus you will be able to examine and edit it properties. The only thing you need is to set the Item property of RadPropertyGrid. The binding may be performed both in xaml and it code-behind.
 
-#### __C#__
+#### [C#]Example 4: Binding to data item
 
 {{region radpropertygrid-getting-started-getting-started_4}}
 
@@ -129,7 +129,7 @@ Now, if you run your application, an empty RadPropertyGrid will be visualized:
 
 
 
-#### __VB.NET__
+#### [VB.NET]Example 4: Binding to data item
 
 	
 {{region radpropertygrid-getting-started-getting-started_5}}
@@ -147,15 +147,15 @@ Now, if you run your application, an empty RadPropertyGrid will be visualized:
 
 
 
-Once you set the Item and run the application, the RadPropertyGrid will be displayed as follows:
+Once you set the Item and run the application, RadPropertyGrid will be displayed as follows:
 
 ![](images/RadPropertyGrid_GettingStarted2.png)
 
 
 
-* Binding to a visual element - you may bind the Item property of the RadPropertyGrid to a visual element and again be able to view and edit its properties. The binding may be performed both in xaml and in code behind:
+* Binding to a visual element - you may bind the Item property of RadPropertyGrid to a visual element and again be able to view and edit its properties. The binding may be performed both in xaml and in code behind:
 
-#### __XAML__
+#### [XAML]Example 5: Binding to visual element
 
 {{region radpropertygrid-getting-started-getting-started_6}}
 
@@ -165,7 +165,7 @@ Once you set the Item and run the application, the RadPropertyGrid will be displ
 
 
 
-On running the application, the RadPropertyGrid will be visualized as follows:
+On running the application, RadPropertyGrid will be visualized as follows:
 
 ![](images/RadPropertyGrid_GettingStarted3.png)
 
@@ -176,7 +176,7 @@ On running the application, the RadPropertyGrid will be visualized as follows:
  Binding to an existing property - you may bind the PropertyDefinition to a property of the data item. Thus you will be able to examine and edit this property.
         
 
-#### __XAML__
+#### __[XAML]Example 6: Binding to a property of data item__
 
 {{region radpropertygrid-getting-started-getting-started_10}}
 

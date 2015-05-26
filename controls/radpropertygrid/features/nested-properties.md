@@ -14,10 +14,10 @@ position: 0
 
 ## 
 
-The PropertyGrid can show nested PropertyDefinitions. In order to enable the nested properties support you need to set the RadPropertyGrid's __NestedPropertiesVisibility__ property to "Visible". That way you will be able to modify any editable child properties of reference types.
+RadPropertyGrid can show nested PropertyDefinitions. In order to enable the nested properties support you need to set RadPropertyGrid's __NestedPropertiesVisibility__ property to __"Visible"__. That way you will be able to modify any editable child properties of reference types.
         
 
-#### __XAML__
+#### [XAML]Example 1: Setting NestedPropertiesVisibility
 
 	{{region radpropertygrid-getting-started-getting-started_7}}
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding}"
@@ -26,7 +26,7 @@ The PropertyGrid can show nested PropertyDefinitions. In order to enable the nes
 
 
 
-#### __C#__
+#### [C#]Example 2: Preparing sample data
 
 	{{region radpropertygrid-getting-started-getting-started_8}}
 	 DataContext = new Order()
@@ -55,7 +55,7 @@ The PropertyGrid can show nested PropertyDefinitions. In order to enable the nes
 
 
 
-#### __VB.NET__
+#### [VB.NET]Example 2: Preparing sample data
 
 	{{region radpropertygrid-getting-started-getting-started_9}}
 	    DataContext = New Order() With { _
@@ -80,13 +80,13 @@ The PropertyGrid can show nested PropertyDefinitions. In order to enable the nes
 
 
 
-For a full example please check this {% if site.site_name == 'Silverlight' %}[demo](http://demos.telerik.com/silverlight/#PropertyGrid/NestedPropertyDefinitions){% endif %}{% if site.site_name == 'WPF' %}[demo](http://demos.telerik.com/wpf/#PropertyGrid/NestedPropertyDefinitions){% endif %} about NestedPropertyDefinitions.
+For a full example please check the __Nested Properties__  {% if site.site_name == 'Silverlight' %}[demo](http://demos.telerik.com/silverlight/#PropertyGrid/NestedPropertyDefinitions){% endif %}{% if site.site_name == 'WPF' %}[demo](http://demos.telerik.com/wpf/#PropertyGrid/NestedPropertyDefinitions){% endif %} about NestedPropertyDefinitions.
         
 
 You can define a nested property like so:
         
 
-#### __XAML__
+#### [XAML]Example 3: Defining nested property
 
 	{{region radpropertygrid-nested-properties_0}}
 	  <telerik:RadPropertyGrid x:Name="PropertyGrid1" 

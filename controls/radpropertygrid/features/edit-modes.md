@@ -12,19 +12,19 @@ position: 16
 
 
 
-RadPropertyGrid exposes an __EditMode property of type PropertyGridEditMode__, which provides different options for __editing behavior__.
+RadPropertyGrid exposes __EditMode__ property of type __PropertyGridEditMode__, which provides different options for __editing behavior__.
 
 ## Edit Modes
 
-As to configuring __RadPropertyGrid__ and assigning an __Item for it__, please check the [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) help article.
+As to configuring RadPropertyGrid and assigning an __Item__ to it, please check the [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) help article.
         
 
 ### Default
 
-The default option behaves similarly for both __Flat and Hierarchical__[RenderMode]({%slug radpropertygrid-features-layout-rendering-modes%}). It __utilizes much lighter UI, but also provides fewer options__:
+The default option behaves similarly for both __Flat and Hierarchical__ [RenderMode]({%slug radpropertygrid-features-layout-rendering-modes%}). It __utilizes much lighter UI, but also provides fewer options__:
                   
 
-1. All the __PropertyGridFields’ editors are accessible from the UI__ and the correctness of an edit operation is ensured only by the data-binding mechanism.
+1. All __PropertyGridFields__ editors are accessible from the UI and the correctness of an edit operation is ensured only by the data-binding mechanism.
                     
 
 2. There are __not distinct visual states of PropertyGridField__ that indicate whether it is being currently edited, or not.
@@ -33,10 +33,7 @@ The default option behaves similarly for both __Flat and Hierarchical__[RenderMo
 3. When a __validation error occurs, users are not encouraged to fix it, or cancel their change__, by blocking the UI.
                     
 
-__Example 1:__ RadPropertyGrid with Default EditMode
-                
-
-#### __XAML__
+#### [XAML]Example 1: RadPropertyGrid with Default EditMode
 
 	{{region radpropertygrid-edit-modes_0}}
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" RenderMode="Flat" EditMode="Default">
@@ -44,7 +41,7 @@ __Example 1:__ RadPropertyGrid with Default EditMode
 
 
 
-Figure 1: RadPropertyGrid with Default EditMode
+__Figure 1__: RadPropertyGrid with Default EditMode
 
 ![Rad Property Grid Edit Modes Default](images/RadPropertyGrid_EditModes_Default.png)
 
@@ -58,11 +55,9 @@ It relies on PropertyDefinition’s Binding property. Setting this mode is not s
 
 >important__Single EditMode__ is supported only when __RenderMode is set to Flat__. For more information on the different rendering modes, please check the [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}) article.
                   
+              
 
-__Example 2:__ RadPropertyGrid with Single EditMode
-                
-
-#### __XAML__
+#### [XAML]Example 2: RadPropertyGrid with EditMode set to Single
 
 {{region radpropertygrid-edit-modes_1}}
 
@@ -71,7 +66,7 @@ __Example 2:__ RadPropertyGrid with Single EditMode
 
 
 
-Figure 2: RadPropertyGrid with Single EditMode
+__Figure 2__: RadPropertyGrid with Single EditMode
 
 ![Rad Property Grid Edit Modes Single](images/RadPropertyGrid_EditModes_Single.png)
 
@@ -79,7 +74,7 @@ Figure 2: RadPropertyGrid with Single EditMode
 
 ### BeginEdit
 
-The BeginEditMethod has to overloads:
+__BeginEditMethod__ has to overloads:
 
 1. __BeginEdit()__ – starts an edit operation for the current PropertyDefinition.
                 
@@ -88,12 +83,9 @@ The BeginEditMethod has to overloads:
                 
 
 If the edit operation is successfully initiated, RadPropertyGrid’s __BeginningEdit event is raised__ . It is a cancellable event so one can prevent the edit operation there, in accordance to some custom logic:
-            
+                      
 
-__Example 1:__ Canceling the edit as BeginningEdit event is raised
-            
-
-#### __C#__
+#### [C#]Example 1: Canceling the edit as BeginningEdit event is raised
 
 {{region radpropertygrid-edit-modes_0}}
 
@@ -106,7 +98,7 @@ __Example 1:__ Canceling the edit as BeginningEdit event is raised
 
 
 
-#### __VB__
+#### [VB]Example 1: Canceling the edit as BeginningEdit event is raised
 
 {{region radpropertygrid-edit-modes_0}}
 

@@ -49,7 +49,7 @@ You can check the latest Release Notes{% if site.site_name == 'Silverlight' %}[ 
 * __AutoBindBehavior__ now supports source different from __RadPropertyGrid__'s Item.
           
 
-* __PropertyGridField__ editor will use a __TwoWay__ binding if such is specified in its  __PropertyDefinition__.
+* RadPropertyGrid editor will use a __TwoWay__ binding if such is specified in its  __PropertyDefinition__.
           
 
 ## Q1 2012 SP1
@@ -65,5 +65,5 @@ You can check the latest Release Notes{% if site.site_name == 'Silverlight' %}[ 
 
 ## Q2 2011 Beta
 
-The Telerik RadPropertyGrid has been just added to the Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite.
+Telerik RadPropertyGrid has been just added to the Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite.
         

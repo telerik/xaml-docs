@@ -19,9 +19,9 @@ RadPropertyGrid auto-generates its property definitions by default based on the 
 ![](images/RadPropertyGrid_GettingStarted3.png)
 
 
-However, sometimes you may decide on customizing or totally changing them. This can be achieved by setting the AutoGeneratePropertyDefinitions to "False" and defining those you require in the PropertyDefinitions collection. For example, instead of using a simple TextBox for editing the Height and Width properties of the RadButton, you may use the RadNumericUpDown:
+However, sometimes you may decide on customizing or totally changing them. This can be achieved by setting the __AutoGeneratePropertyDefinitions__ to __"False"__ and defining those you require in the PropertyDefinitions collection. For example, instead of using a simple TextBox for editing the Height and Width properties of RadButton, you may use RadNumericUpDown:
 
-#### __XAML__
+#### __[XAML]Example 1: Custom Property Definitions__
 
 	{{region radpropertygrid-gettingstarted-customized-property-definitions_0}}
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding ElementName= button1}"
@@ -52,6 +52,6 @@ Thus, your RadPropertyGrid will be displayed as follows:
 
 ![](images/RadPropertyGrid_CustomizedPropertyDefinitions.png)
 
-You may also use the RadPropertyGrid to edit directly the properties of the object it is bound to. So, once you change the values inside the RadPropertyGrid, the RadButton Width and Height will be resized:
+You may also use RadPropertyGrid to edit directly the properties of the object it is bound to. So, once you change the values inside RadPropertyGrid,  RadButton's Width and Height will be resized:
 
 ![](images/RadPropertyGrid_CustomizedPropertyDefinitions2.png)

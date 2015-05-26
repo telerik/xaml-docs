@@ -20,40 +20,40 @@ __RadPropertyGrid__  allows you to navigate through the items without using the 
 
 Here is the list of the keys that are supported:
 
-1. __Tab / Shift + Tab__ - navigates through the items.
+* __Tab / Shift + Tab__ - navigates through the items.
         
 
-2. __Ctrl + Shift + O__ - sorts by OrderIndex and DisplayName.
+* __Ctrl + Shift + O__ - sorts by OrderIndex and DisplayName.
         
 
-3. __Ctrl + Shift + C__ - groups by GroupName.
+* __Ctrl + Shift + C__ - groups by GroupName.
         
 
-4. __Ctrl + Shift + Space__ - expands the field that represents the current property definition.
+* __Ctrl + Shift + Space__ - expands the field that represents the current property definition.
         
 
-5. __Ctrl + End__ - moves to the last field.
+* __Ctrl + End__ - moves to the last field.
         
 
-6. __Ctrl + Home__ - moves to the first field.
+* __Ctrl + Home__ - moves to the first field.
         
 
-7. __PageDown__ - moves a page down.
+* __PageDown__ - moves a page down.
         
 
-8. __PageUp__ - moves a page up.
+* __PageUp__ - moves a page up.
         
 
 ## Custom Keyboard Command Provider
 
-RadPropertyGrid provides an easy MVVM-friendly approach for customization of its default commands' logic. If you want to modify the way RadPropertyGrid handles a particular key you could create your own custom command provider and predefine the behaviour for that key.
+RadPropertyGrid provides an easy MVVM-friendly approach for customization of its default commands logic. If you want to modify the way RadPropertyGrid handles a particular key, you could create your own custom command provider and predefine the behaviour for that key.
         
 
-The approach for accomplishing the purpose is to create a separate class, inherit the PropertyGridCommandProvider and override the ProvideCommandsForKey(KeyEventArgs args) method. In this way only the undesired behavior can be adjusted according to your requirements.
+The approach for accomplishing the purpose is to create a separate class, inherit __PropertyGridCommandProvider__ and override the __ProvideCommandsForKey(KeyEventArgs args)__ method. In this way, only the undesired behavior can be adjusted according to your requirements.
 
 The class responsible for customizing the keyboard navigation should be similar to the one below:
 
-#### __C#__
+#### [C#]Example 1: Creating custom command provider
 
 	{{region radpropertygrid-features-keyboard-support_1}}
 	    class CustomKeyboardCommandProvider : PropertyGridCommandProvider
@@ -102,7 +102,7 @@ Following up the code-snippet above, a press of Tab/ Shift + Tab keys will resul
 
 The last thing to be done is to set CommandProvider Property of the RadPropertyGrid to be the newly-created CustomKeyboardCommandProvider class:
 
-#### __XAML__
+#### [XAML]Example 2: Defining the custom command provider in XAML
 
 	{{region radpropertygrid-features-keyboard-support_0}}
 	  <telerik:RadPropertyGrid.CommandProvider>
@@ -112,7 +112,7 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 
 
-#### __C#__
+#### [C#]Example 3: Set the custom command provider to RadPropertyGrid
 
 	{{region radpropertygrid-features-keyboard-support_2}}
 	    this.RadPropertyGrid.CommandProvider = new CustomKeyboardCommandProvider(this.RadPropertyGrid);

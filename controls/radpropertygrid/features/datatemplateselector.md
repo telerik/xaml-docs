@@ -22,9 +22,9 @@ The __DataTemplateSelector__ approach enables conditional selection of __DataTem
 
 ## DataTemplateSelectors in RadPropertyGrid
 
-__RadPropertyGrid__ enables its users to implement conditional editor __DataTemplate__ selection for its __PropertyGridFields__ trough a __DataTemplateSelector__:
+RadPropertyGrid enables its users to implement conditional editor __DataTemplate__ selection for its __PropertyGridFields__ trough a __DataTemplateSelector__:
 
-#### __C#__
+#### [C#]Example 1: Creating custom DataTemplateSelector
 
 	{{region radpropertygrid-datatemplateselector_1}}	    
 	    public class Customer
@@ -59,7 +59,7 @@ __RadPropertyGrid__ enables its users to implement conditional editor __DataTemp
 
 
 
-#### __VB__
+#### [VB]Example 1: Creating custom DataTemplateSelector
 
 	{{region radpropertygrid-datatemplateselector_2}}
 	    Public Class Customer
@@ -138,7 +138,7 @@ __RadPropertyGrid__ enables its users to implement conditional editor __DataTemp
 
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### [XAML]Example 2: Defining custom DataTemplateSelector
 
 	{{region radpropertygrid-datatemplateselector_0}}
 			<Window x:Class="YourProjectNamespace.MainWindow"
@@ -171,7 +171,7 @@ __RadPropertyGrid__ enables its users to implement conditional editor __DataTemp
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+#### [XAML]Example 2: Defining custom DataTemplateSelector
 
 	{{region radpropertygrid-datatemplateselector_1}}
 			<UserControl x:Class="YourProjectNamespace.MainPage"
@@ -206,7 +206,7 @@ __RadPropertyGrid__ enables its users to implement conditional editor __DataTemp
 
 {% endif %}
 
->You might wonder where these "telerik" and "local", in front of the tags __RadPropertyGrid__ and __FieldTemplateSelector__, came from. Well, these are the names of the namespaces you give when you import the appropriate assembly or your custom __DataTemplateSelector__ class into the XAML file.
+>You might wonder where these "telerik" and "local", in front of the tags RadPropertyGrid and __FieldTemplateSelector__, came from. Well, these are the names of the namespaces you give when you import the appropriate assembly or your custom __DataTemplateSelector__ class into the XAML file.
 		  
 
 ![Rad Property Grid Template Selectors](images/RadPropertyGrid_Template_Selectors.png)

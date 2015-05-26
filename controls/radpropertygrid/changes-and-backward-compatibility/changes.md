@@ -414,7 +414,7 @@ You can check the {% if site.site_name == 'Silverlight' %}[Release Notes for ver
 ### What's Added
             
 
-* New __DependencyProperty____ItemTemplate__ for __CollectionEditor__
+* New DependencyProperty __ItemTemplate__ for __CollectionEditor__
 
 * __OrderIndex__ is now __DependencyProperty__
 

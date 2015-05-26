@@ -125,12 +125,16 @@ __Clone()__ method has two overloads:
 
 ## Cloning Styling Objects
 
-The following styling objects also implement __Clone()__ method, which can be used to create their deep copies:
+The following styling objects also implement __Clone()__ method, which can be used to create deep copies of them:
+
+
 * __Style__
 
 * __List__
 
 * __ListLevel__
+
+
 
 # See Also
 

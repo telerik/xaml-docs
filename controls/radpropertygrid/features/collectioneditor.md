@@ -14,7 +14,7 @@ position: 5
 
 __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that provide UI for editing collections and their items. Currently they are used in the domain of RadPropertyGrid as default editors for IEnumerable type-compatible properties, but they can be successfully used out of this context as standalone editors:
 
-#### __XAML__
+#### __[XAML]Example 1: Defining CollectionEditor__
 
 	{{region radpropertygrid-collectioneditor_0}}
 	  <telerik:CollectionEditor Source="{Binding Players}" 
@@ -32,25 +32,31 @@ __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that pro
 
 ## Dependencies
 
-Both of them are located in the Telerik.Windows.Controls.Data assembly (Telerik.Windows.Controls.Data.PropertyGrid namespace) and depend on the following RadControls assemblies
+Both of them are located in the __Telerik.Windows.Controls.Data__ assembly (Telerik.Windows.Controls.Data.PropertyGrid namespace) and depend on the following
+{% if site.site_name == 'WPF' %}
+ UI for WPF assemblies
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+UI for Silverlight assemblies
+{% endif %}
+
         
-
-* Telerik.Windows.Data
+* __Telerik.Windows.Data__
   
 
-* Telerik.Windows.Controls
+* __Telerik.Windows.Controls__
   
 
-* Telerik.Windows.Controls.Data
+* __Telerik.Windows.Controls.Data__
   
 
-* Telerik.Windows.Control.Input
+* __Telerik.Windows.Control.Input__
             
 
 The mentioned namespace is mapped to the Telerik Uri namespace
           
 
-#### __XAML__
+#### __[XAML]Example 2: Telerik Uri namespace__
 
 	{{region radpropertygrid-collectioneditor_1}}
 	   http://schemas.telerik.com/2008/xaml/presentation
@@ -66,13 +72,13 @@ CollectionEditor relies on the IEditableCollectionView interface. In case that t
 The following listed commands, defined in the CollectionEditorCommands class, invoke their IEditableCollectionView method counterparts, when they are executed:
         
 
-* MoveCurrentToNext
+* __MoveCurrentToNext__
  
 
-* MoveCurrentToPrevious
+* __MoveCurrentToPrevious__
  
 
-* AddNew
+* __AddNew__
  
 
-* Delete
+* __Delete__

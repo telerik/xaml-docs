@@ -24,7 +24,7 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 
 
 
-#### __C#__
+#### __[C#]Example 1: Defining flag enum__
 
 	{{region radpropertygrid-flagenumeditor_0}}
 	[Flags]
@@ -39,7 +39,7 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 
 
 
-#### __VB__
+#### __[VB]Example 1: Defining flag enum__
 
 	{{region radpropertygrid-flagenumeditor_1}}
 	    <Flags()> _
@@ -74,7 +74,7 @@ Each element should contain name and a value (which should be degree of 2 – 1,
 >You can find more information about enum and flag enum in [this article](http://msdn.microsoft.com/en-us/library/cc138362.aspx).
             
 
-Once you define your flag enum, you can edit it in __RadPropertyGrid__ as follows:       
+Once you define your flag enum, you can edit it in RadPropertyGrid as follows:       
 
 
 
@@ -85,7 +85,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 
 
-#### __C#__
+#### __[C#]Example 2: Defining flag enum__
 
 	{{region radpropertygrid-flagenumeditor_2}}
 	namespace RPG_WPF
@@ -104,7 +104,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 
 
-#### __VB__
+#### __[VB]Example 2: Defining flag enum__
 
 	{{region radpropertygrid-flagenumeditor_3}}
 	Namespace RPG_WPF
@@ -126,10 +126,10 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 >Do not define values with 0 and -1 values if you do not mean to use them as select no flag and select all flags.
           
 
-You can manually define your __FlagEnumEditor__ in the __XAML__, like so:
+You can manually define your __FlagEnumEditor__ in __XAML__, like so:
           
 
-#### __XAML__
+#### __[XAML]Example 3: Mapping namespace__ 
 
 	{{region radpropertygrid-flagenumeditor_5}}
 	     xmlns:my="clr-namespace:RPG_WPF"
@@ -137,7 +137,7 @@ You can manually define your __FlagEnumEditor__ in the __XAML__, like so:
 
 
 
-#### __XAML__
+#### __[XAML]Example 4: Defining FlagEnumEditor__
 
 	{{region radpropertygrid-flagenumeditor_4}}
 	<telerik:PropertyDefinition Binding="{Binding Permission}"> 

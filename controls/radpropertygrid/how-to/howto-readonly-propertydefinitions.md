@@ -18,7 +18,7 @@ If you want to control the read-only state of a PropertyDefinition, you can use 
 
 Here is a simple PropertyDefinition declaration:
 
-#### __XAML__
+#### __[XAML]Example 1: Binding IsReadOnly property__
 
 	{{region radpropertygrid-howto-readonly-propertydefinitions_0}}
 	                <telerik:PropertyDefinition 

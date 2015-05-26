@@ -53,7 +53,7 @@ Consequently, __EditorAttribute has a couple of constructors__ that can be used 
 
 For the purposes of this example, the definition of RadPropertyGrid is:
 
-#### [XAML]Example 1: Defining RadPropertyGrid
+#### __[XAML]Example 1: Defining RadPropertyGrid__
 
 	{{region radpropertygrid-editor-attribute_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid" Item="{Binding Captain}" />
@@ -64,7 +64,7 @@ For the purposes of this example, the definition of RadPropertyGrid is:
 The property __Captain__ is defined in the ViewModel as follows:
         
 
-#### [C#]Example 2: Defining property in the ViewModel
+#### __[C#]Example 2: Defining property in the ViewModel__
 
 	{{region radpropertygrid-editor-attribute_1}}
 	private Player captain;
@@ -91,7 +91,7 @@ The definitions of the Custom editor __PhoneEditorControl__, the __Player busine
 For example:
         
 
-#### [C#]Example 3: Specifying the type of the editor
+#### __[C#]Example 3: Specifying the type of the editor__
 
 	{{region radpropertygrid-editor-attribute_2}}
 	
@@ -124,7 +124,7 @@ __Figure 1__: EditorAtrribute with editorType specified
 
 * __EditorAttribute(Type editorType, EditorStyle editorStyle)__ – the type of the editor and the style of the containing host:
 
-#### [C#]Example 4: Specifying the type of the editor and the style of the containing host
+#### __[C#]Example 4: Specifying the type of the editor and the style of the containing host__
 
 	{{region radpropertygrid-editor-attribute_3}}
 	
@@ -157,7 +157,7 @@ __Figure 2__: EditorAtrribute with editorType and editorStyle specified
 
 * __EditorAttribute(Type editorType, string targetProperty)__ – the type of the editor and its property that you want to bind to. For instance:
 
-#### [C#]Example 5: Specifying the type of the editor and the target property
+#### __[C#]Example 5: Specifying the type of the editor and the target property__
 
 {{region radpropertygrid-editor-attribute_4}}
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(RadNumericUpDown), "Value")]
@@ -190,7 +190,7 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 
 * __EditorAttribute(Type editorType, string targetProperty, EditorStyle editorStyle)__ – with this constructor all properties are set – the type of the editor, its property that will be used for the binding and the type of the host it will be placed inside. For example:
 
-#### [C#]Example 6: Specifying the type of the editor, the target property and style of the containing host
+#### __[C#]Example 6: Specifying the type of the editor, the target property and style of the containing host__
 
 	{{region radpropertygrid-editor-attribute_5}}
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
@@ -219,7 +219,7 @@ It will look like:
 
 The definition of the Custom editor __PhoneEditorControl__ is:
 
-#### [XAML]Example 7: Defining the custom editor
+#### __[XAML]Example 7: Defining the custom editor__
 
 	{{region radpropertygrid-editor-attribute_1}}
 	<UserControl x:Class="RadPropertyGrid_EditorAttribute.PhoneEditorControl"
@@ -251,7 +251,7 @@ The definition of the Custom editor __PhoneEditorControl__ is:
 
 The definition of the __PhoneNumber__ class is:
 
-#### [C#]Example 8: Defining PhoneNumber object
+#### __[C#]Example 8: Defining PhoneNumber object__
 
 	{{region radpropertygrid-editor-attribute_6}}
 	public class PhoneNumber : INotifyPropertyChanged
@@ -322,7 +322,7 @@ The definition of the __PhoneNumber__ class is:
 
 The definition of the __Player business object__ used for the example is:
 
-#### [C#]Example 9: Defining Player object
+#### __[C#]Example 9: Defining Player object__
 	
 	{{region radpropertygrid-editor-attribute_7}}
 	public class Player : INotifyPropertyChanged

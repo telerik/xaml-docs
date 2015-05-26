@@ -14,7 +14,7 @@ position: 5
 
 __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that provide UI for editing collections and their items. Currently they are used in the domain of RadPropertyGrid as default editors for IEnumerable type-compatible properties, but they can be successfully used out of this context as standalone editors:
 
-#### [XAML]Example 1: Defining CollectionEditor
+#### __[XAML]Example 1: Defining CollectionEditor__
 
 	{{region radpropertygrid-collectioneditor_0}}
 	  <telerik:CollectionEditor Source="{Binding Players}" 
@@ -56,7 +56,7 @@ UI for Silverlight assemblies
 The mentioned namespace is mapped to the Telerik Uri namespace
           
 
-#### [XAML]Example 2: Telerik Uri namespace
+#### __[XAML]Example 2: Telerik Uri namespace__
 
 	{{region radpropertygrid-collectioneditor_1}}
 	   http://schemas.telerik.com/2008/xaml/presentation

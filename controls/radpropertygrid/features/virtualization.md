@@ -26,7 +26,7 @@ The following tutorial shows how to bind to a collection of business objects and
 
 Here is a simple RadPropertyGrid declaration.
 
-#### [XAML]Example 1: Defining RadPropertyGrid
+#### __[XAML]Example 1: Defining RadPropertyGrid__
 
 	{{region radpropertygrid-virtualization_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
@@ -36,7 +36,7 @@ Here is a simple RadPropertyGrid declaration.
 
 RadPropertyGrid is populated with 10 000 rows.
 
-#### [C#]Example 2: Populating RadPropertyGrid
+#### __[C#]Example 2: Populating RadPropertyGrid__
 
 	{{region radpropertygrid-virtualization_1}}
 	this.propertyGrid1.Item = this.GetVeryLargeDataSource();
@@ -44,7 +44,7 @@ RadPropertyGrid is populated with 10 000 rows.
 
 
 
-#### [VB.NET]Example 2: Populating RadPropertyGrid
+#### __[VB.NET]Example 2: Populating RadPropertyGrid__
 
 	{{region radpropertygrid-virtualization_2}}
 	    Me.propertyGrid1.Item = Me.GetVeryLargeDataSource()
@@ -55,7 +55,7 @@ RadPropertyGrid is populated with 10 000 rows.
 Finally, in order to enable the __UI Virtualization__ behavior, you should set the __IsVirtualizing__ property of RadPropertyGrid to __True__. See the example below:
       
 
-#### [XAML]Example 3: Setting IsVirtualizing property
+#### __[XAML]Example 3: Setting IsVirtualizing property__
 
 	{{region radpropertygrid-virtualization_1}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" IsVirtualizing="True" />

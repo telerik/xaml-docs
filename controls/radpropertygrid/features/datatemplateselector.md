@@ -24,7 +24,7 @@ The __DataTemplateSelector__ approach enables conditional selection of __DataTem
 
 RadPropertyGrid enables its users to implement conditional editor __DataTemplate__ selection for its __PropertyGridFields__ trough a __DataTemplateSelector__:
 
-#### [C#]Example 1: Creating custom DataTemplateSelector
+#### __[C#]Example 1: Creating custom DataTemplateSelector__
 
 	{{region radpropertygrid-datatemplateselector_1}}	    
 	    public class Customer
@@ -59,7 +59,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 
 
 
-#### [VB]Example 1: Creating custom DataTemplateSelector
+#### __[VB]Example 1: Creating custom DataTemplateSelector__
 
 	{{region radpropertygrid-datatemplateselector_2}}
 	    Public Class Customer
@@ -138,7 +138,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 
 {% if site.site_name == 'WPF' %}
 
-#### [XAML]Example 2: Defining custom DataTemplateSelector
+#### __[XAML]Example 2: Defining custom DataTemplateSelector__
 
 	{{region radpropertygrid-datatemplateselector_0}}
 			<Window x:Class="YourProjectNamespace.MainWindow"
@@ -171,7 +171,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### [XAML]Example 2: Defining custom DataTemplateSelector
+#### __[XAML]Example 2: Defining custom DataTemplateSelector__
 
 	{{region radpropertygrid-datatemplateselector_1}}
 			<UserControl x:Class="YourProjectNamespace.MainPage"

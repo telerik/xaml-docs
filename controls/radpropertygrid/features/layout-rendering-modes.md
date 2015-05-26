@@ -30,10 +30,10 @@ There are a number of benefits of using the __Flat__ render mode. Some are liste
 * __Faster layout rendering__ and __scrolling time__ for __grouped__ RadPropertyGrid.
         
 
-* Supported __UI Virtualization__ for __grouping scenarios__.
+* Supported [UI Virtualization]({%slug radpropertygrid-virtualization%}) for __grouping scenarios__.
         
 
-* Keyboard Navigation.
+* [Keyboard Navigation]({%slug radpropertygrid-features-keyboard-support%})
         
 
 # See Also
@@ -41,8 +41,6 @@ There are a number of benefits of using the __Flat__ render mode. Some are liste
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})
 
  * [UI Virtualization]({%slug radpropertygrid-virtualization%})
-
- * [Keyboard Navigation]({%slug radpropertygrid-nested-properties%})
 
  * [Edit Modes]({%slug radpropertygrid-edit-modes%})
 

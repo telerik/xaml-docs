@@ -24,7 +24,7 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 
 
 
-#### [C#]Example 1: Defining flag enum
+#### __[C#]Example 1: Defining flag enum__
 
 	{{region radpropertygrid-flagenumeditor_0}}
 	[Flags]
@@ -39,7 +39,7 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 
 
 
-#### [VB]Example 1: Defining flag enum
+#### __[VB]Example 1: Defining flag enum__
 
 	{{region radpropertygrid-flagenumeditor_1}}
 	    <Flags()> _
@@ -85,7 +85,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 
 
-#### [C#]Example 2: Defining flag enum
+#### __[C#]Example 2: Defining flag enum__
 
 	{{region radpropertygrid-flagenumeditor_2}}
 	namespace RPG_WPF
@@ -104,7 +104,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 
 
-#### [VB]Example 2: Defining flag enum
+#### __[VB]Example 2: Defining flag enum__
 
 	{{region radpropertygrid-flagenumeditor_3}}
 	Namespace RPG_WPF
@@ -129,7 +129,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 You can manually define your __FlagEnumEditor__ in __XAML__, like so:
           
 
-#### [XAML]Example 3: Mapping namespace 
+#### __[XAML]Example 3: Mapping namespace__ 
 
 	{{region radpropertygrid-flagenumeditor_5}}
 	     xmlns:my="clr-namespace:RPG_WPF"
@@ -137,7 +137,7 @@ You can manually define your __FlagEnumEditor__ in __XAML__, like so:
 
 
 
-#### [XAML]Example 4: Defining FlagEnumEditor
+#### __[XAML]Example 4: Defining FlagEnumEditor__
 
 	{{region radpropertygrid-flagenumeditor_4}}
 	<telerik:PropertyDefinition Binding="{Binding Permission}"> 

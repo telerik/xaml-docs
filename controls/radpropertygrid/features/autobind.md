@@ -20,7 +20,7 @@ The need of reusable DataTemplates is a common scenario with quite few universal
 Here is an example with RadPropertyGrid that has its Item property bound to a Button:
         
 
-#### [XAML]Example 1: Using AutoBindBehavior
+#### __[XAML]Example 1: Using AutoBindBehavior__
 
 	{{region radpropertygrid-autobind_0}}
 	<Grid x:Name="LayoutRoot" Background="White">

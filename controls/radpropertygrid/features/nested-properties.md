@@ -17,7 +17,7 @@ position: 0
 RadPropertyGrid can show nested PropertyDefinitions. In order to enable the nested properties support you need to set RadPropertyGrid's __NestedPropertiesVisibility__ property to __"Visible"__. That way you will be able to modify any editable child properties of reference types.
         
 
-#### [XAML]Example 1: Setting NestedPropertiesVisibility
+#### __[XAML]Example 1: Setting NestedPropertiesVisibility__
 
 	{{region radpropertygrid-getting-started-getting-started_7}}
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding}"
@@ -26,7 +26,7 @@ RadPropertyGrid can show nested PropertyDefinitions. In order to enable the nest
 
 
 
-#### [C#]Example 2: Preparing sample data
+#### __[C#]Example 2: Preparing sample data__
 
 	{{region radpropertygrid-getting-started-getting-started_8}}
 	 DataContext = new Order()
@@ -55,7 +55,7 @@ RadPropertyGrid can show nested PropertyDefinitions. In order to enable the nest
 
 
 
-#### [VB.NET]Example 2: Preparing sample data
+#### __[VB.NET]Example 2: Preparing sample data__
 
 	{{region radpropertygrid-getting-started-getting-started_9}}
 	    DataContext = New Order() With { _
@@ -86,7 +86,7 @@ For a full example please check the __Nested Properties__  {% if site.site_name 
 You can define a nested property like so:
         
 
-#### [XAML]Example 3: Defining nested property
+#### __[XAML]Example 3: Defining nested property__
 
 	{{region radpropertygrid-nested-properties_0}}
 	  <telerik:RadPropertyGrid x:Name="PropertyGrid1" 

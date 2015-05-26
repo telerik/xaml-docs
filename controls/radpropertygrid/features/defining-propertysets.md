@@ -30,7 +30,7 @@ In order to benefit from this feature, one should set RadPropertyGrid’s Proper
 
 For the means of illustrating the separate mode values, the following types will be used:
 
-#### [C#]Example 1: Preparing sample data
+#### __[C#]Example 1: Preparing sample data__
 
 	{{region radpropertygrid-defining-propertysets_2}}
 	    public class Ellipse
@@ -79,7 +79,7 @@ For the means of illustrating the separate mode values, the following types will
 
 
 
-#### [VB.NET]Example 1: Preparing sample data
+#### __[VB.NET]Example 1: Preparing sample data__
 
 	{{region radpropertygrid-defining-propertysets_3}}
 	    Public Class Ellipse
@@ -184,7 +184,7 @@ For the means of illustrating the separate mode values, the following types will
 
 
 
-#### [XAML] Example 2: Defining RadPropertyGrid
+#### __[XAML] Example 2: Defining RadPropertyGrid__
 
 	{{region radpropertygrid-defining-propertysets_0}}
 	<Grid>
@@ -224,7 +224,7 @@ The “Intersection” mode works in a similar way to the “Union” mode, with
 
 RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the specified set. In order to provide a cross-platform data binding approach, an indexer has been exposed. However, as dynamic properties do not contain any information about their relying type an IValueConverter instance might be needed in certain scenarios:
 
-#### [XAML]Example 3: Defining editor template
+#### __[XAML]Example 3: Defining editor template__
 
 	{{region radpropertygrid-defining-propertysets_1}}
 	 <Grid x:Name="LayoutRoot">
@@ -244,7 +244,7 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 
 
 
-#### [C#]Example 4: Setting EditorTemplate of a PropertyDefinition
+#### __[C#]Example 4: Setting EditorTemplate of a PropertyDefinition__
 
 	{{region radpropertygrid-defining-propertysets_4}}
      private void RadPropertyGrid_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
@@ -255,7 +255,7 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
            }
        }
 	
-#### [VB.NET]Example 4: Setting EditorTemplate of a PropertyDefinition
+#### __[VB.NET]Example 4: Setting EditorTemplate of a PropertyDefinition__
 
 	{{region radpropertygrid-defining-propertysets_5}}
 	    Private Sub RadPropertyGrid_AutoGeneratingPropertyDefinition(sender As Object, e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
@@ -265,7 +265,7 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	    End Sub
 
 	
-#### [C#]Example 5: Defining IValueConverter
+#### __[C#]Example 5: Defining IValueConverter__
 	 public class MyConverter : IValueConverter
 	    {
 	 
@@ -283,7 +283,7 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	{{endregion}}
 	
 	
-#### [VB.NET]Example 5: Defining IValueConverter
+#### __[VB.NET]Example 5: Defining IValueConverter__
 	    Public Class MyConverter
 	        Implements IValueConverter
 	

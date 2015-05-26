@@ -18,7 +18,7 @@ RadPropertyGrid supports validation through IDataErrorInfo and through DataAnnot
 
 In order to have the validation rules defined through the IDataErrorInfo interface, you will have to implement additional code which sets the __ValidatesOnDataErrors__ and __NotifyOnValidationError__ properties of the Binding to __"true"__. Please note, that the default binding generated for auto-generated PropertyDefinition have those properties set to __"false"__. 
 
-#### [C#]Example 1: Setting ValidatesOnDataErrors and NotifyOnValidationError of the Binding
+#### __[C#]Example 1: Setting ValidatesOnDataErrors and NotifyOnValidationError of the Binding__
 
 
 	{{region radpropertygrid-features-validation_1}}
@@ -31,7 +31,7 @@ In order to have the validation rules defined through the IDataErrorInfo interfa
 
 You can define the validation rules like so:
 
-#### [C#]Example 2: Defining validation rules
+#### __[C#]Example 2: Defining validation rules__
 
 	{{region radpropertygrid-features-validation_2}}
 	        public string this[string columnName]
@@ -61,7 +61,7 @@ You can define the validation rules like so:
 
 In order to have the validation rules defined through DataAnnotations respected, you will have to set the ValidatesOnExceptions property of the Binding to true. Please note, that the default binding generated for auto-generated PropertyDefinition does not have this property set to true. 
 
-#### [C#]Example 3: Setting ValidatesOnExceptions of Binding
+#### __[C#]Example 3: Setting ValidatesOnExceptions of Binding__
 
 	{{region radpropertygrid-features-validation_3}}
 	void rpg_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
@@ -72,7 +72,7 @@ In order to have the validation rules defined through DataAnnotations respected,
 
 For example you can define the Required DataAnnotations attribute like so:
 
-#### [C#]Example 4: Defining DataAnnotations Attribute
+#### __[C#]Example 4: Defining DataAnnotations Attribute__
 
 	{{region radpropertygrid-features-validation_4}}
 	[Required(ErrorMessage = "This field is Required.")]
@@ -92,7 +92,7 @@ For example you can define the Required DataAnnotations attribute like so:
 
 You may notice that there is a call to a ValidateProperty method. You will have to define such method like this:
 
-#### [C#]Example 5: Defining ValidateProperty method
+#### __[C#]Example 5: Defining ValidateProperty method__
 
 	{{region radpropertygrid-features-validation_4}}
 	public void ValidateProperty(string propName, object value)

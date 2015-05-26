@@ -12,7 +12,7 @@ position: 12
 
 
 
-__RadPropertyGrid__  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing.
+RadPropertyGrid  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing.
       
 
 >Please note that the keyboard navigation is supported only when RadpropertyGrid's property - RenderMode is set to Flat.
@@ -53,7 +53,7 @@ The approach for accomplishing the purpose is to create a separate class, inheri
 
 The class responsible for customizing the keyboard navigation should be similar to the one below:
 
-#### [C#]Example 1: Creating custom command provider
+#### __[C#]Example 1: Creating custom command provider__
 
 	{{region radpropertygrid-features-keyboard-support_1}}
 	    class CustomKeyboardCommandProvider : PropertyGridCommandProvider
@@ -102,7 +102,7 @@ Following up the code-snippet above, a press of Tab/ Shift + Tab keys will resul
 
 The last thing to be done is to set CommandProvider Property of the RadPropertyGrid to be the newly-created CustomKeyboardCommandProvider class:
 
-#### [XAML]Example 2: Defining the custom command provider in XAML
+#### __[XAML]Example 2: Defining the custom command provider in XAML__
 
 	{{region radpropertygrid-features-keyboard-support_0}}
 	  <telerik:RadPropertyGrid.CommandProvider>
@@ -112,7 +112,7 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 
 
-#### [C#]Example 3: Set the custom command provider to RadPropertyGrid
+#### __[C#]Example 3: Set the custom command provider to RadPropertyGrid__
 
 	{{region radpropertygrid-features-keyboard-support_2}}
 	    this.RadPropertyGrid.CommandProvider = new CustomKeyboardCommandProvider(this.RadPropertyGrid);

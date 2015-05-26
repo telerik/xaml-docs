@@ -21,7 +21,7 @@ When non-auto-generated PropertyDefinitions are used, RadPropertyGrid relies on 
 The following examples illustrate two possible hierarchies based on the following class definitions:
 
 
-#### [C#]Example 1: Prepare sample objects
+#### __[C#]Example 1: Prepare sample objects__
 
 	{{region radpropertygrid-unbound-mode_2}}
 	    public class Employee
@@ -40,7 +40,7 @@ The following examples illustrate two possible hierarchies based on the followin
 
 
 
-#### [VB.NET]Example 1: Prepare sample objects
+#### __[VB.NET]Example 1: Prepare sample objects__
 
 	{{region radpropertygrid-unbound-mode_3}}
 	    Public Class Employee
@@ -100,7 +100,7 @@ The following examples illustrate two possible hierarchies based on the followin
 And the sample data:
           
 
-#### [C#]Example 2: Prepare sample data
+#### __[C#]Example 2: Prepare sample data__
 
 	{{region radpropertygrid-unbound-mode_4}}
 	    public MainPage()
@@ -121,7 +121,7 @@ And the sample data:
 
 
 
-#### [VB.NET]Example 2: Prepare sample data
+#### __[VB.NET]Example 2: Prepare sample data__
 
 	{{region radpropertygrid-unbound-mode_5}}
 	   Public Sub New()
@@ -142,7 +142,7 @@ And the sample data:
 	{{endregion}}
 
 
-#### [XAML]Example 3: RadPropertyGrid UnboundMode first example
+#### __[XAML]Example 3: RadPropertyGrid UnboundMode first example__
 
 	{{region radpropertygrid-unbound-mode_0}}
 	<telerik:RadPropertyGrid x:Name="rpg" 
@@ -174,7 +174,7 @@ And the sample data:
 ![Rad Property Grid Unboud Mode 1](images/RadPropertyGrid_UnboudMode1.png)
 
 
-#### [XAML]Example 4: RadPropertyGrid UnboundMode second example
+#### __[XAML]Example 4: RadPropertyGrid UnboundMode second example__
 
 	{{region radpropertygrid-unbound-mode_1}}
 	<telerik:RadPropertyGrid x:Name="rpg" 

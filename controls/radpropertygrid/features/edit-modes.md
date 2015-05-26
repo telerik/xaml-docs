@@ -33,7 +33,7 @@ The default option behaves similarly for both __Flat and Hierarchical__ [RenderM
 3. When a __validation error occurs, users are not encouraged to fix it, or cancel their change__, by blocking the UI.
                     
 
-#### [XAML]Example 1: RadPropertyGrid with Default EditMode
+#### __[XAML]Example 1: RadPropertyGrid with Default EditMode__
 
 	{{region radpropertygrid-edit-modes_0}}
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" RenderMode="Flat" EditMode="Default">
@@ -57,7 +57,7 @@ It relies on PropertyDefinition’s Binding property. Setting this mode is not s
                   
               
 
-#### [XAML]Example 2: RadPropertyGrid with EditMode set to Single
+#### __[XAML]Example 2: RadPropertyGrid with EditMode set to Single__
 
 {{region radpropertygrid-edit-modes_1}}
 
@@ -85,7 +85,7 @@ __BeginEditMethod__ has to overloads:
 If the edit operation is successfully initiated, RadPropertyGrid’s __BeginningEdit event is raised__ . It is a cancellable event so one can prevent the edit operation there, in accordance to some custom logic:
                       
 
-#### [C#]Example 1: Canceling the edit as BeginningEdit event is raised
+#### __[C#]Example 3: Canceling the edit as BeginningEdit event is raised__
 
 {{region radpropertygrid-edit-modes_0}}
 
@@ -98,7 +98,7 @@ If the edit operation is successfully initiated, RadPropertyGrid’s __Beginning
 
 
 
-#### [VB]Example 1: Canceling the edit as BeginningEdit event is raised
+#### __[VB]Example 3: Canceling the edit as BeginningEdit event is raised__
 
 {{region radpropertygrid-edit-modes_0}}
 

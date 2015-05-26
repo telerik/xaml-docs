@@ -30,7 +30,7 @@ Using Data Annotations you can categorize different properties into separate gro
 
 First, for the purpose of this tutorial, we will create a new class Employee with a couple of properties:
 
-#### [C#]Example 1: Creating sample object
+#### __[C#]Example 1: Creating sample object__
 
 	{{region radpropertygrid-data-annotations_1}}
 	     public class Employee
@@ -46,7 +46,7 @@ First, for the purpose of this tutorial, we will create a new class Employee wit
 
 
 
-#### [VB]Example 1: Creating sample object
+#### __[VB]Example 1: Creating sample object__
 
 	{{region radpropertygrid-data-annotations_2}}
 	    Public Class Employee
@@ -110,7 +110,7 @@ First, for the purpose of this tutorial, we will create a new class Employee wit
 
 The declaration of RadPropertyGrid control inside the Grid:        
 
-#### [XAML]Example 2: Declaring RadPropertyGrid
+#### __[XAML]Example 2: Declaring RadPropertyGrid__
 
 	{{region radpropertygrid-data-annotations_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
@@ -119,7 +119,7 @@ The declaration of RadPropertyGrid control inside the Grid:
 
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to RadPropertyGrid:
 
-#### [C#]Example 3: Binding object to RadPropertyGrid
+#### __[C#]Example 3: Binding object to RadPropertyGrid__
 
 	{{region radpropertygrid-data-annotations_3}}
 	this.propertyGrid1.Item = new Employee()
@@ -135,7 +135,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 
 
-#### [VB]Example 3: Binding object to RadPropertyGrid
+#### __[VB]Example 3: Binding object to RadPropertyGrid__
 
 	{{region radpropertygrid-data-annotations_4}}
 	    Me.PropertyGrid1.Item = New Employee() With { _
@@ -177,7 +177,7 @@ __Display__ - this is recommended attribute type to use. You can use its propert
               
 __Here is a sample how to set DataAnnotation with Display attribute__:
 
-#### [C#]Example 4: Setting Display attribute
+#### __[C#]Example 4: Setting Display attribute__
 
 	{{region radpropertygrid-data-annotations_5}}
 	         //Rename the StartingDate property to Year in the UI
@@ -198,7 +198,7 @@ __Here is a sample how to set DataAnnotation with Display attribute__:
 __Browsable__ - with this attribute you can define whether an item should be visible or not.
             
 
-#### [C#]Example 5: Setting Browsable attribute
+#### __[C#]Example 5: Setting Browsable attribute__
 
 	{{region radpropertygrid-data-annotations_7}}
 	         //Hide StartingDate from the UI
@@ -211,7 +211,7 @@ __Browsable__ - with this attribute you can define whether an item should be vis
 __ReadOnly__ - set a property as read-only.
             
 
-#### [C#]Example 6: Setting ReadOnly attribute
+#### __[C#]Example 6: Setting ReadOnly attribute__
 
 	{{region radpropertygrid-data-annotations_9}}
 	         //Set StartingDate as Read-Only
@@ -224,7 +224,7 @@ __ReadOnly__ - set a property as read-only.
 So let's modify our simple Employee class and see the result in RadPropertGrid.
         
 
-#### [C#]Example 7: Modifying sample data
+#### __[C#]Example 7: Modifying sample data__
 
 	{{region radpropertygrid-data-annotations_11}}
 	        [Display(Description = "Employee's first name.", GroupName="Personal Information")]

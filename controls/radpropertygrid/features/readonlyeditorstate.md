@@ -33,7 +33,7 @@ It represents RadPropertyGrid's read only behavior and has three options:
 The following examples show how the RadPropertyGrid will look like when the new property is used:
         
 
-#### [XAML]Example 1: Setting ReadOnlyEditorState property to Disabled
+#### __[XAML]Example 1: Setting ReadOnlyEditorState property to Disabled__
 
 	{{region radpropertygrid-features-readonlyeditorstate_0}}
 	<telerik:RadPropertyGrid 
@@ -46,7 +46,7 @@ The following examples show how the RadPropertyGrid will look like when the new 
 
 ![Rad Property Grid Disabled](images/RadPropertyGrid_Disabled.png)
 
-#### [XAML]Example 2: Setting ReadOnlyEditorState to ReadOnly
+#### __[XAML]Example 2: Setting ReadOnlyEditorState to ReadOnly__
 
 	{{region radpropertygrid-features-readonlyeditorstate_1}}
 	<telerik:RadPropertyGrid 

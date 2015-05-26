@@ -41,13 +41,13 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
 * __TouchManager__ – another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
 			
 
-* As of __Q1 2012__ release we have introduced the option to enable / disable searching in nested properties through the __SearchInNestedProperties__ property of RadPropertyGrid (the default value is __False__). Setting it to __True__, can lead to degraded performance, when you have a lot of visible nested properties.
+* As of __Q1 2012__ release we have introduced the option to enable/disable searching in nested properties through the __SearchInNestedProperties__ property of RadPropertyGrid (the default value is __False__). Setting it to __True__, can lead to degraded performance, when you have a lot of visible nested properties.
 			
 
-* As of __Q1 2014__ release we have introduced the option to enable / disable editor caching through the __EnableEditorCaching__ property of RadPropertyGrid (the default value is __True__). Setting it to __False__, can lead to degraded performance, since a new instance of the editor for each field will be created when the same __PropertyDefinition__ serves as data context (i.e. search, grouping).
+* As of __Q1 2014__ release we have introduced the option to enable/disable editor caching through the __EnableEditorCaching__ property of RadPropertyGrid (the default value is __True__). Setting it to __False__, can lead to degraded performance, since a new instance of the editor for each field will be created when the same __PropertyDefinition__ serves as data context (i.e. search, grouping).
 			
 
-* When adding / removing a lot of __PropertyDefinitions__ (for example more than 100) at runtime, you should consider invoking the respective __SuspendNotifications()__ and __ResumeNotifications()__ methods and raise notifications only once for all the operations.
+* When adding/removing a lot of __PropertyDefinitions__ (for example more than 100) at runtime, you should consider invoking the respective __SuspendNotifications()__ and __ResumeNotifications()__ methods and raise notifications only once for all the operations.
 			
 
 # See Also

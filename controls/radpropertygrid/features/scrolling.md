@@ -27,7 +27,7 @@ __ScrollIntoViewAsync(PropertyDefinition propertyDefinition, Action<PropertyGrid
 
 You can define RadPropertyGrid similar to:
 
-#### [XAML]Example 1: Defining RadPropertyGrid with manually defined PropertyDefinitions
+#### __[XAML]Example 1: Defining RadPropertyGrid with manually defined PropertyDefinitions__
 
 {{region radpropertygrid-scrolling_0}}
 
@@ -68,7 +68,7 @@ __Figure 1__: RadPropertyGrid in sorted mode with some fields not currently visi
 
 Then, click on __Scroll field into view__ button and execute the following code:
 
-#### [C#]Example 2: Scrolling to a particular PropertyDefinition and selecting it
+#### __[C#]Example 2: Scrolling to a particular PropertyDefinition and selecting it__
 
 {{region radpropertygrid-scrolling_1}}
 
@@ -84,7 +84,7 @@ Then, click on __Scroll field into view__ button and execute the following code:
 
 
 
-#### [VB]Example 2: Scrolling to a particular PropertyDefinition and selecting it
+#### __[VB]Example 2: Scrolling to a particular PropertyDefinition and selecting it__
 
 {{region radpropertygrid-scrolling_1}}
 
@@ -116,7 +116,7 @@ __Figure 3__: RadPropertyGrid in grouped mode with some fields not currently vis
 
 Then, click on __Scroll field into view__ button and execute the following code:
         
-#### [C#]Example 3: Scrolling to a particular PropertyDefinition and selecting it
+#### __[C#]Example 3: Scrolling to a particular PropertyDefinition and selecting it__
 
 {{region radpropertygrid-scrolling_1}}
 
@@ -132,7 +132,7 @@ Then, click on __Scroll field into view__ button and execute the following code:
 
 
 
-#### [VB]Example 3: Scrolling to a particular PropertyDefinition and selecting it
+#### __[VB]Example 3: Scrolling to a particular PropertyDefinition and selecting it__
 
 {{region radpropertygrid-scrolling_1}}
 

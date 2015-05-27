@@ -126,11 +126,11 @@ The result of both approaches will be similar and can be seen on the next figure
 
 ## Setting Application-Wide Built-In Theme in the Code-Behind
 
-Changing the application theme is much similar to changing the theme of single controls in Silverlight. However, changing the application theme is in much bigger scale as it affects all controls in the scope of your application. You should use the constructor of your application to set the desired theme. Here is a quick glimpse at how to change the application theme:
+Changing the application theme is very similar to changing the theme of a single control in Silverlight. However, changing the application theme is in much bigger scale as it affects all controls in the scope of your application. You could set the desired theme in the constructor of the application. Here is a quick glimpse at how to change the application theme:
 
 To change the application theme in code-behind you should follow the instructions below:
 
-1. Open your existing application or create a new one. 
+1. Open an existing application or create a new one. 
 
 1. Open __MainPage.xaml.cs__
 

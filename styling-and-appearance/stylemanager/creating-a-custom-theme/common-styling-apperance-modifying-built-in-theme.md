@@ -19,7 +19,7 @@ The purpose of this topic is to show you how to modify and apply a built-in them
 
 __In order to modify\extend and apply a built-in theme:__
 
-1. Open Windows Explorer and navigate to the place where you have installed UI for Silverlight.
+1. Open Windows Explorer and navigate to the place where you have installed __UI for Silverlight__.
 
 1. Browse the __Themes__ folder.
 
@@ -82,7 +82,5 @@ __In order to modify\extend and apply a built-in theme:__
 
 
 # See Also
-
- * [Creating a Custom Theme Project - Using the Telerik Approach]({%slug common-styling-apperance-themes-custom-theme-project-telerik-approach%})
 
  * [Creating a Custom Theme Project - Using the Telerik Approach]({%slug common-styling-apperance-themes-custom-theme-project-telerik-approach%})

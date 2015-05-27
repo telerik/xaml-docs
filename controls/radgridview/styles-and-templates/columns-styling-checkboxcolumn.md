@@ -1,14 +1,14 @@
 ---
-title: Styling the CheckBoxColumn
-page_title: Styling the CheckBoxColumn
-description: Styling the CheckBoxColumn
+title: Styling CheckBoxColumn
+page_title: Styling CheckBoxColumn
+description: Styling CheckBoxColumn
 slug: gridview-columns-styling-checkboxcolumn
-tags: styling,the,checkboxcolumn
+tags: styling,checkboxcolumn
 published: True
 position: 21
 ---
 
-# Styling the CheckBoxColumn
+# Styling CheckBoxColumn
 
 This topic will show you how to style the __GridViewCheckBoxColumn__
 

@@ -1,14 +1,14 @@
 ---
-title: Styling the Group Row
-page_title: Styling the Group Row
-description: Styling the Group Row
+title: Styling Group Row
+page_title: Styling Group Row
+description: Styling Group Row
 slug: gridview-styling-group-row
-tags: styling,the,group,row
+tags: styling,group,row
 published: True
 position: 12
 ---
 
-# Styling the Group Row
+# Styling Group Row
 
 
 >Please note that we have introduced a new __GroupRenderMode="Flat"__. In that case the GroupRowStyle should target __GroupHeaderRow__(similar to GridViewGroupRow). Please check this [help article]({%slug gridview-grouping-groupingmodes%}) for details.

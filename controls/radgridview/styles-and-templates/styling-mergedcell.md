@@ -1,15 +1,15 @@
 ---
-title: Styling a Merged Cell
-page_title: Styling a Merged Cell
-description: Styling a Merged Cell
+title: Styling Merged Cells
+page_title: Styling Merged Cells
+description: Styling Merged Cells
 slug: gridview-styling-mergedcell
-tags: styling,a,merged,cell
+tags: styling,merged,cells
 published: True
 position: 5
 site_name: WPF
 ---
 
-# Styling a Merged Cell
+# Styling Merged Cells
 
 
 >tipTo learn more on how to style the UI elements read the common topic on [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}). You can also check the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic.

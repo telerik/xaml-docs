@@ -1,14 +1,14 @@
 ---
-title: Styling the Column Editor
-page_title: Styling the Column Editor
-description: Styling the Column Editor
+title: Styling Column Editor
+page_title: Styling Column Editor
+description: Styling Column Editor
 slug: radgridview-styling-column-editor
-tags: styling,the,column,editor
+tags: styling,column,editor
 published: True
 position: 16
 ---
 
-# Styling the Column Editor
+# Styling Column Editor
 
 Each of the columns that derive from the __GridViewBoundColumnBase__ have an __EditorStyle__ property. It is used to apply an appropriate __Style__ to the column editor. While creating this __Style__ keep in mind what is the type of the editor and what properties does it have. Here is a list of the column types and the types of their editors.
 

@@ -1,14 +1,14 @@
 ---
-title: Styling the FilteringControl
-page_title: Styling the FilteringControl
-description: Styling the FilteringControl
+title: Styling FilteringControl
+page_title: Styling FilteringControl
+description: Styling FilteringControl
 slug: gridview-styling-filteringcontrol
-tags: styling,the,filteringcontrol
+tags: styling,filteringcontrol
 published: True
 position: 19
 ---
 
-# Styling the FilteringControl
+# Styling FilteringControl
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the FilteringControl]({%slug radgridview-styles-and-templates-templates-structure%}).
       

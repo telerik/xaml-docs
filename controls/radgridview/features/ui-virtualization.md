@@ -40,7 +40,7 @@ In order to disable the UI __Column Virtualization__ behavior, you should config
 
 ## Disable Row Virtualization
 
-In order to disable the UI __Row Virtualization__ behavior, you should configure __EnableRowVirtualization__ property of to __False__. See the example below:
+In order to disable the UI __Row Virtualization__ behavior, you should configure __EnableRowVirtualization__ property to __False__. See the example below:
 
 #### __XAML__
 

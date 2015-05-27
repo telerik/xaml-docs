@@ -15,7 +15,7 @@ site_name: Silverlight
 
 ## 
 
-The second option to create a custom theme is to create your own custom theme project, which doesn't follow the approach from the Telerik built-in themes. Basically, what you need to do is to create XAML files for the controls that you want to style and then to combine them in one file (like Generic.xaml) using __ResourceDictionary.MergedDictionaries__. Then you create a new class, which derives from __Telerik.Windows.Controls.Theme__. In the constructor you should set the source to point to the Generic.xaml file (that merges all your XAML files from the theme project). The tricky part here is that you should have references to all assemblies that you are styling. Which means that if you have Style for __RadMenu__ in your theme project, you should have a reference to the __Telerik.Windows.Controls.Navigation.dll__ assembly in your application or you will get an exception.
+The second option to create a custom theme is to create your own custom theme project, which doesn't follow the approach from the Telerik built-in themes. Basically, what you need to do is to create XAML files for the controls that you want to style and then to combine them in one file (like Generic.xaml) using __ResourceDictionary.MergedDictionaries__. Then create a new class, which derives from __Telerik.Windows.Controls.Theme__. In the constructor you should set the source to point to the Generic.xaml file (that merges all your XAML files from the theme project). The tricky part here is that you should have references to all assemblies that you are styling. Which means that if you have Style for __RadMenu__ in your theme project, you should have a reference to the __Telerik.Windows.Controls.Navigation.dll__ assembly in your application or you will get an exception.
 
 The purpose of this topic is to show you how to do that.
 
@@ -27,7 +27,7 @@ The purpose of this topic is to show you how to do that.
 
 1. In the __MyTheme__ project add references to the Telerik assemblies containing the controls you want to style. For example, if you have Style for __RadMenu__, you should have a reference to the __Telerik.Windows.Controls.Navigation.dll__ assembly. In this demo the __RadSlider__ control will be styled for simplicity. That's why you need to add a reference only to the __Telerik.Windows.Controls.dll__ assembly.
 
-1. In the __MyTheme__ project, add a new folder named __Themes__. All XAML files, describing the styles for the target controls, should be placed in the Themes folder. In the following example, the original Vista theme of the RadSlider control is copied from the UI for Silverlight installation folder (~*UI for Silverlight Installation Folder\Themes\Vista\Themes\Vista\Slider.xaml*) and pasted in the Themes folder of the MyTheme project.
+1. In the __MyTheme__ project, add a new folder named __Themes__. All XAML files, describing the styles for the target controls, should be placed in the Themes folder. In the following example, the original Vista theme of the __RadSlider__ control is copied from the __UI for Silverlight__ installation folder (~*UI for Silverlight Installation Folder\Themes\Vista\Themes\Vista\Slider.xaml*) and pasted in the Themes folder of the MyTheme project.
 
 1. Add a new __ResourceDictionary__ to the __Themes__ folder. Name it __Generic.xaml__. Use __Generic.xaml__ as a __Resource Dictionary__ which contains __Merged Resource Dictionaries__ only.
 	

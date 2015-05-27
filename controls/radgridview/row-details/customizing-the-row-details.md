@@ -1,14 +1,14 @@
 ---
-title: Customizing the Row Details
-page_title: Customizing the Row Details
-description: Customizing the Row Details
+title: Customizing Row Details
+page_title: Customizing Row Details
+description: Customizing Row Details
 slug: radgridview-row-details-customizing-the-row-details
-tags: customizing,the,row,details
+tags: customizing,row,details
 published: True
 position: 6
 ---
 
-# Customizing the Row Details
+# Customizing Row Details
 
 The __Row Details__ are represented by a __DetailsPresenter__ control. By default, the __DetailsPresenter__ control is styled according to the current theme. Its style includes properties such as __Background__, __BorderBrush__ and others. Use the __RowDetailsStyle__ property of the __RadGridView__, if you want to customize its appearance.
 

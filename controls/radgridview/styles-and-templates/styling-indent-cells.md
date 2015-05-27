@@ -1,14 +1,14 @@
 ---
-title: Styling the Indent Cells in RadGridView
-page_title: Styling the Indent Cells in RadGridView
-description: Styling the Indent Cells in RadGridView
+title: Styling Indent Cells
+page_title: Styling Indent Cells
+description: Styling Indent Cells
 slug: radgridview-styling-indent-cells
-tags: styling,the,indent,cells,in,radgridview
+tags: styling,indent,cells,in,radgridview
 published: True
 position: 17
 ---
 
-# Styling the Indent Cells in RadGridView
+# Styling Indent Cells
 
 RadGridView does expose different indicators and indent cells depending on its current state - being grouped, in a hierarchy, or displaying the corresponding footers. Generally, the structure is as follows:
 

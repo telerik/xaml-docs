@@ -1,14 +1,14 @@
 ---
-title: Styling the GridViewEditorPresenter
-page_title: Styling the GridViewEditorPresenter
-description: Styling the GridViewEditorPresenter
+title: Styling GridViewEditorPresenter
+page_title: Styling GridViewEditorPresenter
+description: Styling GridViewEditorPresenter
 slug: gridview-styling-editorpresenter
-tags: styling,the,gridvieweditorpresenter
+tags: styling,gridvieweditorpresenter
 published: True
 position: 6
 ---
 
-# Styling the GridViewEditorPresenter
+# Styling GridViewEditorPresenter
 
 >tipBefore reading this topic, you might find useful to get familiar with the [basic overview]({%slug gridview-stylines-and-templates-overview%}) on styling the visual appearance of the __RadGridView__ and its elements.
         

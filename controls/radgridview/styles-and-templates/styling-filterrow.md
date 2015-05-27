@@ -1,14 +1,14 @@
 ---
-title: Styling the FilterRow
-page_title: Styling the FilterRow
-description: Styling the FilterRow
+title: Styling FilterRow
+page_title: Styling FilterRow
+description: Styling FilterRow
 slug: gridview-styling-filterrow
-tags: styling,the,filterrow
+tags: styling,filterrow
 published: True
 position: 20
 ---
 
-# Styling the FilterRow
+# Styling FilterRow
 
 
 

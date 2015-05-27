@@ -1,14 +1,14 @@
 ---
-title: Styling the Column Headers
-page_title: Styling the Column Headers
-description: Styling the Column Headers
+title: Styling Column Headers
+page_title: Styling Column Headers
+description: Styling Column Headers
 slug: gridview-styling-column-headers
-tags: styling,the,column,headers
+tags: styling,column,headers
 published: True
 position: 7
 ---
 
-# Styling the Column Headers
+# Styling Column Headers
 
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewHeaderCell control]({%slug radgridview-styles-and-templates-templates-structure%}).

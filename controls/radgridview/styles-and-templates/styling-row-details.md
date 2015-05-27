@@ -1,14 +1,14 @@
 ---
-title: Styling the Row Details
-page_title: Styling the Row Details
-description: Styling the Row Details
+title: Styling Row Details
+page_title: Styling Row Details
+description: Styling Row Details
 slug: gridview-styling-row-details
-tags: styling,the,row,details
+tags: styling,row,details
 published: True
 position: 15
 ---
 
-# Styling the Row Details
+# Styling Row Details
 
 
 

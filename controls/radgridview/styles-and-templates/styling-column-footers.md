@@ -1,14 +1,14 @@
 ---
-title: Styling the Column Footers
-page_title: Styling the Column Footers
-description: Styling the Column Footers
+title: Styling Column Footers
+page_title: Styling Column Footers
+description: Styling Column Footers
 slug: gridview-styling-column-footers
-tags: styling,the,column,footers
+tags: styling,column,footers
 published: True
 position: 9
 ---
 
-# Styling the Column Footers
+# Styling Column Footers
 
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewFooterCell control]({%slug radgridview-styles-and-templates-templates-structure%}).

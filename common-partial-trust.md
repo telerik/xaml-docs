@@ -12,6 +12,22 @@ position: 12
 
 This topic will give you an overview of the Partial Trust support across all the Telerik WPF controls.
 
+
+All controls in the suite require the following permissions due to the license mechanism that is used:
+
+* __System.Security.Permissions.FileIOPermission__
+
+* __System.Security.Permissions.SecurityPermission__
+
+* __System.Security.Permissions.ReflectionPermission__ 
+
+
+Increasing the permissions of a partially trusted application could usually be achieved by changing the permission set in the application manifest. 
+
+
+The below table lists all controls in __UI for WPF__ suite and the additional permissions they require. 
+
+
 Control	|	Working in WPF Partial Trust	|	Comments
 ---	|	---	|	---
 DragDropManager	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission
@@ -26,12 +42,12 @@ Calculator	|	Yes	|
 Calendar	|	Yes	|	
 Carousel	|	Yes	|	
 ChartView	|	Yes	|	
-CloudUpload	|	Yes	|	
 CollectionNavigator	|	Yes	|	
 ColorEditor	|	Yes	|	
 ColorPicker	|	Yes	|	
 ComboBox	|	Yes	|	
 ContextMenu	|	Yes	|	
+CloudUpload |  Partially | Requires additional permission by files upload for System.Security.Permissions.FileDialogPermission
 DataBar	|	Yes	|	
 DataFilter	|	Yes	|	
 DataForm	|	Yes	|	
@@ -45,12 +61,10 @@ Expander	|	Yes	|
 ExpressionEditor	|	Yes	|	
 GanttView	|	No	|	
 Gauge	|	Yes	|	
-GridView	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission for any operation that includes dragging of an element ( grouping, columns reording, frozen columns, rows reordering, rows resizing, etc.)
-	|		|	LinqToSql data - Requires additional permission for System.Security.Permissions.ReflectionPermission
+GridView	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission for any operation that includes dragging of an element ( grouping, columns reording, frozen columns, rows reordering, rows resizing, etc.) LinqToSql data - Requires additional permission for System.Security.Permissions.ReflectionPermission
 HeatMap	|	Yes	|	
 ImageEditor	|	Yes	|	
-ImageEditorUI	|	Partially	|	Requires additional permission for
-	|		|	System.Security.Permissions.MediaPermission
+ImageEditorUI	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission
 Legend	|	Yes	|	
 ListBox	|	Yes	|	
 Map	|	No	|	
@@ -73,8 +87,8 @@ Slider	|	Yes	|
 SparkLine	|	Yes	|	
 SpellChecker	|	Yes	|	
 SpreadProcessing	|	Yes	|	
-Spreadsheet	|	No	|	Requires additional permission forSystem.Security.Permissions.IsolatedStorageFilePermission
-TabControl	|	Yes	|	
+Spreadsheet	|	No	|	Requires additional permission for System.Security.Permissions.IsolatedStorageFilePermission
+TabControl	|	Partially	|	Requires the following additional permissions for System.Security.Permissions.UIPermission
 TileList	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission for tiles reordering.
 TileView	|	Yes	|	
 TimeBar	|	Yes	|	
@@ -88,3 +102,4 @@ VirtualizingWrapPanel	|	Yes	|
 WatermarkTextBox	|	Yes	|	
 Window	|	No	|	
 WordsProcessing	|	Yes	|	
+ZipLibrary |    Yes  |

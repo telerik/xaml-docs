@@ -560,22 +560,31 @@ navigation:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:
         title: Changes and Backward Compability
+        position: 1
     controls/radgridview/general-information:
         title: General Information
+        position: 2
     controls/radgridview/getting-started:
         title: Getting Started
+        position: 3
     controls/radgridview/clipboard:
         title: Clipboard
+        position: 4
     controls/radgridview/columns:
         title: Columns
+        position: 5		
     controls/radgridview/columns/columntypes:
         title: Column Types
+        position: 6
     controls/radgridview/commands:
         title: Commands
+        position: 7
     controls/radgridview/features:
         title: Features
+        position: 8
     controls/radgridview/events:
         title: Events
+        position: 9
     controls/radgridview/export:
         title: Export
     controls/radgridview/filtering:

@@ -60,4 +60,4 @@ If you want to learn more about the __Row Details__ and how to implement them in
 
  * [Populating with Data Overview]({%slug gridview-data-overview%})
 
- * [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%})
+ * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

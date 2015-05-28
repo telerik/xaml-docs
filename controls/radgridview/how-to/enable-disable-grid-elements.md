@@ -10,7 +10,7 @@ position: 6
 
 # Enable\Disable Grid Elements
 
-__RadGridView__ is an advanced control, that allows you to enable\disable its different parts. You can set the boolean property __IsEnabled__ to each one of the following objects:
+__RadGridView__ is an advanced control, that allows you to enable/disable its different parts. You can set the boolean property __IsEnabled__ to each one of the following objects:
 
 * __RadGridView__
 
@@ -18,16 +18,11 @@ __RadGridView__ is an advanced control, that allows you to enable\disable its di
 
 * __GridViewCell__
 
-Having this in mind, you can control the behavior and enable\disable different parts of your grid view according to some internal logic of yours. 
+Having this in mind, you can control the behavior and enable/disable different parts of your grid view according to some internal logic of yours. 
 
->__Important!__ The GridViewDataColumn.IsEnabled property cannot be actually used. It is a dependency property inherited from [ContentElement](http://msdn.microsoft.com/en-us/library/system.windows.contentelement.aspx).
+>important GridViewDataColumn.IsEnabled property cannot be actually used. It is a dependency property inherited from [ContentElement](http://msdn.microsoft.com/en-us/library/system.windows.contentelement.aspx).
           
-
-You can __disable a whole column__ by changing the __IsEnabled__ property of each one of __its cells__. 
-
-This property gets or sets a value indicating whether this element is enabled in the user interface (UI). This is a dependency property inherited from [UIElement](http://msdn.microsoft.com/en-us/library/system.windows.uielement).
-
-For example:
+You can __disable whole column__ by changing the __IsEnabled__ property of each one of __its cells__. This property gets or sets a value indicating whether this element is enabled in the user interface (UI). This is a dependency property inherited from [UIElement](http://msdn.microsoft.com/en-us/library/system.windows.uielement).
 
 #### __XAML__
 
@@ -46,12 +41,11 @@ For example:
 	 CellStyle="{StaticResource disabledStyle}"/>
 {{endregion}}
 
-The screenshot below shows you a __RadGridView__ control with a few disabled cells along with the "CompanyName" column.
+The screenshot below illustrates RadGridView control with a few disabled cells along with the "CompanyName" column.
 
 ![](images/RadGridView_EnableDisable_1.png)
 
-To __disable all the rows__ you need to apply a Style targeting at GridViewRow
-
+To __disable all the rows__ you need to apply a Style targeting the __GridViewRow__ element.
 
 #### __XAML__
 
@@ -62,10 +56,12 @@ To __disable all the rows__ you need to apply a Style targeting at GridViewRow
 	</Style>
 {{endregion}}
 
-The defined Style is implicit and it will be applied to all the GridViewRow elements.
+The defined Style is implicit and it will be applied to all elements of type GridViewRow.
 
-To apply the disabled style to some rows only, you can use a [RowStyleSelector]({%slug gridview-rowstyleselector%}).
+To apply the disabled style to some rows only, you can consider [RowStyleSelector]({%slug gridview-rowstyleselector%}).
 
 # See Also
 
  * [Read Only Rows and Cells]({%slug gridview-read-only-rows-cells%})
+ 
+ * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

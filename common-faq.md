@@ -1,18 +1,16 @@
 ---
-title: General FAQ
-page_title: General FAQ
-description: General FAQ
+title: Getting Started
+page_title: Getting Started
+description: Getting Started
 slug: common-faq
-tags: general,faq
+tags: general, common, faq
 published: True
 position: 13
 ---
 
-# General FAQ
+# Common FAQ
 
 We strongly recommend that you first check the fundamental concepts of {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}. Below you can find a list of the most common frequently asked questions.
-
-## 
 
 * __Overview__
 

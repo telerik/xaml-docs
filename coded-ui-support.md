@@ -96,3 +96,6 @@ With our __Q2 2013__ official release we have included [Level 2 and Level 3 Code
 
 With our __Q3 2012__ official release we have included [Level 1 Coded UI test support](              http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls, except the __RadChart__ control.
         
+# See Also
+ 
+* [UI Automation Support]({%slug common-ui-automation%})

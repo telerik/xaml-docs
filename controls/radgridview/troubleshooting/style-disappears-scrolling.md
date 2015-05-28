@@ -52,4 +52,6 @@ Use [CellStyleSelector]({%slug gridview-cell-style-selector%}) to set the style 
 
 # See Also
 
- * [Getting Started]({%slug gridview-getting-started2%})
+ * [Getting Started with RadGridView]({%slug gridview-getting-started2%})
+ 
+ * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

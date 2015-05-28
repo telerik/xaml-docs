@@ -560,60 +560,87 @@ navigation:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:
         title: Changes and Backward Compability
+        position: 1
     controls/radgridview/general-information:
         title: General Information
+        position: 2
     controls/radgridview/getting-started:
         title: Getting Started
+        position: 3
     controls/radgridview/clipboard:
         title: Clipboard
+        position: 4
     controls/radgridview/columns:
         title: Columns
+        position: 5		
     controls/radgridview/columns/columntypes:
         title: Column Types
+        position: 6
     controls/radgridview/commands:
         title: Commands
+        position: 7
     controls/radgridview/features:
         title: Features
+        position: 8
     controls/radgridview/events:
         title: Events
+        position: 9
     controls/radgridview/export:
         title: Export
+        position: 10
     controls/radgridview/filtering:
         title: Filtering
+        position: 11
     controls/radgridview/filtering/faq:
         title: FAQ
     controls/radgridview/grouping:
         title: Grouping
+        position: 12
     controls/radgridview/hierarchical-gridview:
         title: Hierarchical GridView
+        position: 13
     controls/radgridview/localization:
         title: Localization
+        position: 14
     controls/radgridview/managing-data:
         title: Managing Data
+        position: 15
     controls/radgridview/paging:
         title: Paging
+        position: 16
     controls/radgridview/performance:
         title: Performance
+        position: 17
     controls/radgridview/populating-with-data:
         title: Populating with data
+        position: 18
     controls/radgridview/row-details:
         title: Row Details
+        position: 19
     controls/radgridview/rows:
         title: Rows
+        position: 20
     controls/radgridview/selection:
         title: Selection
+        position: 21
     controls/radgridview/sorting:
         title: Sorting
+        position: 21
     controls/radgridview/styles-and-templates:
         title: Styles and Templates
+        position: 22
     controls/radgridview/style-selectors:
         title: Style Selectors
+        position: 23
     controls/radgridview/template-selectors:
         title: Template Selectors
+        position: 24
     controls/radgridview/troubleshooting:
         title: Troubleshooting
+        position: 25
     controls/radgridview/how-to:
         title: How To
+        position: 26
     controls/raddataservicedatasource:
         title: RadDataServiceDataSource
     controls/raddataservicedatasource/crud:

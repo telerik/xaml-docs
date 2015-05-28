@@ -26,6 +26,8 @@ There are cases when you don't want to display the whole information that an obj
 
 # See Also
 
+ * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
+
  * [Adding Rows]({%slug gridview-rows-adding-rows%})
 
  * [Customizing Rows]({%slug gridview-customizing-rows%})

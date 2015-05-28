@@ -10,7 +10,6 @@ position: 0
 
 # Overview
 
-
 This chapter gives you detailed information about columns in __RadGridView__. The covered topics are:
 
 * [Defining columns]({%slug gridview-columns-defining-columns%}) - define columns manually in XAML or code-behind.
@@ -55,3 +54,5 @@ This chapter gives you detailed information about columns in __RadGridView__. Th
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
 
  * [Control Panel]({%slug gridview-overview-controlpanel%})
+
+ * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

@@ -86,13 +86,12 @@ Unline RadChart, the __RadChartView__ control comes with a built-in set of palet
 
 ## Features with no equivalent in RadChartView
 
->The information is up-to-date as for Q2 2013. The list of features will change with our next releases.					
+>The information is up-to-date as for Q1 2015. The list of features will change with our next releases.					
 
 1. Sorting/Filtering
 2. Hierarchical Data Support*
 3. ChartTitle
-4. Bubble series type
-5. All 3D series types
+4. All 3D series types
 
 > *Currently ChartView provides partial support for Hierarchical Data through the [SeriesProvider]({%slug radchartview-features-chartseriesprovider%}) feature.					
 

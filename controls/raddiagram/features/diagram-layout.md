@@ -196,7 +196,6 @@ The grid layout has the following settings which are both present as part of the
 
 __Sugiyama specific settings__
 
-* __IgnoreNodeSize__: 
 * __Orientation__: Gets or sets the orientation in which the layout process should organize the diagram.
 * __ShapeMargin__: 
 * __VerticalDistance__: the vertical spacing between the layers.	

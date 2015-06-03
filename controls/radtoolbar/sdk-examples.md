@@ -19,6 +19,13 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __[Tool bar custom styled elements](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarCustomStyledElements)__ - The ToolBarCustomStyledElements project demonstrates the correct approach for settinga custom style on element palced in RadToolbar.
 The toolbar has predefined styles for radbutton, textblock, raddropdownbutton, etc. In order to edit and use successfully these styles / or to use custom styles for the elements in the toolbar you have to override the ToolBarContainerStyleSelector of the RadToolbar. Add a ContainerStyle targetting the specific control, add its predefined style and add/edit/override the properties you need.
 Setting directy style on the elements in the toolbar is not correct, does not work in WPF and works partially in Silverlight.
+* __[Tool bar drag and drop](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarDragAndDrop)__ - The ToolBarDragAndDrop SDK demo for WPF shows integration between DragDropManager and RadToolBar / RadToolBarTray.
+In this demo you are able to:
+
+   - Reorder ToolBars in the same band (row) in ToolBarTray with Drag and Drop.
+   - Move ToolBars in other bands within the same ToolbarTray with Drag and Drop.
+   - Create new Bands (rows) in the current tray or other tray with Drag and Drop.
+   - Drop a toolbar outside tray so that it can be dragged with Window around it (this is available only in the WPF demo).
 * __[ToolBar MVVM](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarMVVM)__ - 
 The  sample demonstrates the following features and custommization techniques in the RadToolBar:
 	
@@ -38,6 +45,13 @@ Please also note the use of the RadToolBar.OverflowMode property which controls 
 * __[Tool bar custom styled elements](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarCustomStyledElements)__ - The ToolBarCustomStyledElements project demonstrates the correct approach for settinga custom style on element palced in RadToolbar.
 The toolbar has predefined styles for radbutton, textblock, raddropdownbutton, etc. In order to edit and use successfully these styles / or to use custom styles for the elements in the toolbar you have to override the ToolBarContainerStyleSelector of the RadToolbar. Add a ContainerStyle targetting the specific control, add its predefined style and add/edit/override the properties you need.
 Setting directy style on the elements in the toolbar is not correct, does not work in WPF and works partially in Silverlight.
+* __[Tool bar drag and drop](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarDragAndDrop)__ - The ToolBarDragAndDrop SDK demo for WPF shows integration between DragDropManager and RadToolBar / RadToolBarTray.
+In this demo you are able to:
+
+   - Reorder ToolBars in the same band (row) in ToolBarTray with Drag and Drop.
+   - Move ToolBars in other bands within the same ToolbarTray with Drag and Drop.
+   - Create new Bands (rows) in the current tray or other tray with Drag and Drop.
+   - Drop a toolbar outside tray so that it can be dragged with Window around it (this is available only in the WPF demo).
 * __[ToolBar MVVM](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarMVVM)__ - 
 The  sample demonstrates the following features and custommization techniques in the RadToolBar:
 	

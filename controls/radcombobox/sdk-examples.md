@@ -16,6 +16,9 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 {% if site.site_name == 'WPF' %}
 
+* __[Custom filtering behavior](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/CustomFiltering)__ - 
+This example demonstrates how to create custom filtering behavior for the ComboBox. 
+Typing numbers in the ComboBox filters the items lenght. For example type 12.
 * __[Drop down with headers](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/DropDownWithHeaders)__ - 
 This example demonstrates how to display the items in the ComboBox drop down with headers. 
 The approach uses a GridView inside of the Editable and NonEditable Templates.
@@ -23,6 +26,9 @@ The approach uses a GridView inside of the Editable and NonEditable Templates.
 This example demonstrates how to display more than one property in the TextBox of an editable ComboBox. Only one of them, bound to the DisplayMemberPath property, will be editable, all others will be read-only, in the example they are marked with different color.
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
+* __[Custom filtering behavior](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/CustomFiltering)__ - 
+This example demonstrates how to create custom filtering behavior for the ComboBox. 
+Typing numbers in the ComboBox filters the items lenght. For example type 12.
 * __[Drop down with headers](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/DropDownWithHeaders)__ - 
 This example demonstrates how to display the items in the ComboBox drop down with headers. 
 The approach uses a GridView inside of the Editable and NonEditable Templates.

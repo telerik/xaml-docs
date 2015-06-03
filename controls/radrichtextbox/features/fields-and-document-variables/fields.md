@@ -23,7 +23,9 @@ This topic contains the following sections:
 
 * [Inserting a Field](#inserting-a-field)
 
-* [Fields Update Priority](#fields-update-priority)
+* [Updating a Field](#updating-a-field)
+
+* [Updating all Fields](#updating-all-fields)
 
 ## Field Types
 
@@ -103,9 +105,9 @@ Insert a page field:
     this.radRichTextBox.InsertField(new PageField());
 {{endregion}}
 
+## Updating a Field
 
-
-Update of a field can be triggered from the context menu or using the __UpdateField()__ method of RadRichTextBox by passing the FieldRangeStart of the field as a parameter.
+Update of a field can be triggered from the context menu or using the __UpdateField()__ method by passing the corresponding FieldRangeStart of the field as a parameter.
         
 
 Update a field:
@@ -113,28 +115,14 @@ Update a field:
 #### __C#__
 
 {{region radrichtextbox-features-fields_1}}
-    this.radRichTextBox.UpdateField(fieldStart);
+    this.radRichTextBox.UpdateField(fieldRangeStart);
 {{endregion}}
 
+## Updating all Fields
 
-You can also update all fields in the current document with the __UpdateAllFields()__ method of RadRichTextBox.
+You can update all fields in the document with the __UpdateAllFields()__ method of __RadRichTextBox__. The method is optimized to perform better than updating fields one by one using the __Update__ method.
         
-
-## Fields Update Priority
-
-All field types in the context of RadDocument have update priority which determines when they should be updated when the __UpdateAllFields()__ method is invoked. Most fields have the default value 0. Changing it is needed in case a field depends on the evaluated value of another field to be properly evaluated.
-        
-
-Priority can specified through the __FieldsUpdateManager__ static class. The following code snippet shows how to set higher priority for a specific field type, causing all fields of this type to be updated before the rest of the field when calling UpdateAllField():
-        
-
-#### __C#__
-
-{{region radrichtextbox-features-fields_2}}
-    FieldsUpdateManager.RegisterFieldUpdatePriority(typeof(ReferenceField), 1000);
-{{endregion}}
-
->tipHaving many different values for field priory is not recommended and may lead to performance degradation of the UpdateAllFields() method. The reason for this is that all fields with the same priority are updated in a batch update. Having more priority groups leads to execution of more batch updates.
+>tip Correctly updating all fields in a document works in almost all cases, but it’s not always possible as there are multiple dependencies between the fields. You can influence the way UpdateAllFields is executed by registering additional [update information for specific field types]({%slug radrichtextbox-features-custom-fields%}#integrating-with-updateallfields-operation).
 
 
 # See Also

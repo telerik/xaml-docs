@@ -14,6 +14,17 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading to a specific version of the controls to the next one.
 
+
+## What's Different in 2015 Q2
+
+### Changed
+
+The method __FieldsUpdateManager.RegisterFieldUpdatePriority__ is deprecated. 
+
+### What to do now
+
+You can use the __FieldsUpdateManager.RegisterFieldUpdateInfo__ method instead, passing __FieldTypeUpdateInfo__ object with its Priority property set.
+
 ## What's Different in 2015 Q1 - 2015.1.0225
 
 ### Changed

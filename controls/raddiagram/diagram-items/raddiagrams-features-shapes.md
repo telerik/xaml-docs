@@ -786,9 +786,7 @@ If the __RadDiagramShape.Content__ property is bound to a business item, you can
 
 The following properties allow you to track and control the selection state of a shape:
 
-* __IsSelected__ - gets or sets whether the shape is selected.				
-
-* __IsSelectedInGroup__ - gets a value indicating whether this shape is selected in a group.				
+* __IsSelected__ - gets or sets whether the shape is selected.
 
 ### Shape ZIndex
 

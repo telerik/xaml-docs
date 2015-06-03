@@ -16,9 +16,9 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 ### 1. Standard format codes:
 
-* __A__ - Alphanumeric character, required.		  
+* __A__ - Alphanumeric or a special character, required.		  
 
-* __a__ - Alphanumeric character, not required			  
+* __a__ - Alphanumeric or a special character, not required 
 
 * __L__ - Letter, required. Restrict input to the ASCII letters a-z and A-Z. This mask element is equivalent to [a-zA-Z] in regular expressions.			  
 

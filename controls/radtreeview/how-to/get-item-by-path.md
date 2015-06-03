@@ -22,7 +22,7 @@ Here is an ordinary treeview declaration:
 {{region radtreeview-how-to-get-item-by-path_0}}
 	        <telerik:RadTreeView TextSearch.TextPath="Header">
 	            <telerik:RadTreeViewItem Header="Sport Categories">
-	                <telerik:RadTreeViewItem Header="Footbal">
+	                <telerik:RadTreeViewItem Header="Football">
 	                    <telerik:RadTreeViewItem Header="Futsal" />
 	                    <telerik:RadTreeViewItem Header="Soccer" />
 	                </telerik:RadTreeViewItem>

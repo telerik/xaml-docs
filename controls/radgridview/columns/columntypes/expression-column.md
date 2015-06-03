@@ -5,18 +5,20 @@ description: Expression Column
 slug: gridview-expression-column
 tags: expression,column
 published: True
-position: 11
+position: 7
 ---
 
 # Expression Column
 
-The __GridViewExpressionColumn__ derives from the __GridViewColumn__ class and allows you to display various calculations in RadGridView itself. The __GridViewExpressionColumn__ can be sorted and grouped like any other. The value of a GridViewExpressionColumn cells updates automatically when a concerned property on the data item changes.
+__GridViewExpressionColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class and allows you to display various calculations in RadGridView itself. __GridViewExpressionColumn__ can be sorted and grouped like any other. 
 
-#### __XAML__
+>noteThe values displayed in GridViewExpressionColumn will be updated automatically when a concerned property on the data item changes.
+
+#### __[XAML] Example 1: Define GridViewExpressionColumn in XAML.__
 
 {{region gridview-expression-column_0}}
 
-	<telerik:RadGridView x:Name="RadGridView1" ItemsSource="{Binding Products}" AutoGenerateColumns="False" ColumnWidth="*">
+	<telerik:RadGridView ItemsSource="{Binding Products}" AutoGenerateColumns="False" ColumnWidth="*">
 	 <telerik:RadGridView.Columns>
 	         <telerik:GridViewDataColumn Header="Product ID" DataMemberBinding="{Binding ProductID}" />
 	         <telerik:GridViewDataColumn Header="Product name" DataMemberBinding="{Binding ProductName}" />
@@ -27,9 +29,9 @@ The __GridViewExpressionColumn__ derives from the __GridViewColumn__ class and a
 	</telerik:RadGridView>
 {{endregion}}
 
-The most important property to be set in the code is the __Expression__: http://msdn.microsoft.com/en-us/library/bb397687.aspx property of the GridViewExpressionColumn.
+The most important property to be set in code is [Expression](http://msdn.microsoft.com/en-us/library/bb397687.aspx property of the GridViewExpressionColumn).
 
-#### __C#__
+#### __[#] Example 2: Set Expression for GridViewExpressionColumn in code.__
 
 {{region gridview-expression-column_1}}
 
@@ -38,4 +40,4 @@ The most important property to be set in the code is the __Expression__: http://
 	column.Expression = expression;
 {{endregion}}
 
-More information about expressions could be found __here__: http://www.telerik.com/help/silverlight/radexpressioneditor-expressions-overview.html.
+More information about expressions could be found [here](http://www.telerik.com/help/silverlight/radexpressioneditor-expressions-overview.html).

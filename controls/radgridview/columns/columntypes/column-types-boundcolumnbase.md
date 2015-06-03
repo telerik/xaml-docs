@@ -10,8 +10,7 @@ position: 1
 
 # BoundColumnBase
 
-
-The __GridViewBoundColumnBase__ derives from the __GridViewColumn__, which means that it inherits all of the functionality too. In addition it allows you to easily bind data, format it and edit it using editors. When the columns of the __RadGridView__ are auto generated they are of this type.
+__GridViewBoundColumnBase__ derives from __GridViewColumn__, which means it inherits all of the functionality too. In addition it allows you to easily bind data, format it and edit it using editors. 
 
 Here is a list of the most important properties and methods.
 
@@ -24,7 +23,8 @@ Here is a list of the most important properties and methods.
 * __EditorStyle__ - allows you to specify a __Style__ for the editor of the column.
 			
 
-* __EditTriggers__ - allows you to specify what action will set the cell in edit mode. The available options are: __CellClick__, __F2__, __None__, etc.
+* __EditTriggers__ - allows you to specify what action will set the cell in edit mode. 
+The available options are: __CellClick__, __F2__, __None__, etc.
 			
 
 * __FilteringControlStyle__ - allows you to specify a __Style__ for the filtering control.
@@ -39,9 +39,7 @@ Here is a list of the most important properties and methods.
 * __GetValueForItem(item)__ - a method which returns the content of the cell for the provided item.
 			
 
-The following example iterates all cells in all visible columns of the gridview and accesses their values:
-
-#### __C#__
+#### __[C#] Example 2: Iterating over cells in all visible columns and accessing their values.__
 
 {{region radgridview-columns-column-types-boundcolumnbase_0}}
 

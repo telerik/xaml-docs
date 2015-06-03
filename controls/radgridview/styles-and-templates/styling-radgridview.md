@@ -1,14 +1,14 @@
 ---
-title: Styling the RadGridView
-page_title: Styling the RadGridView
-description: Styling the RadGridView
+title: Styling RadGridView
+page_title: Styling RadGridView
+description: Styling RadGridView
 slug: radgridview-styles-and-templates-styling-radgridview
-tags: styling,the,radgridview
+tags: styling,radgridview
 published: True
 position: 3
 ---
 
-# Styling the RadGridView
+# Styling RadGridView
 
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the RadGridView control]({%slug radgridview-styles-and-templates-templates-structure%}).

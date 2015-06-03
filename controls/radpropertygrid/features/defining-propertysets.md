@@ -13,7 +13,7 @@ position: 1
 
 ## Overview
 
-With the “Property sets” feature RadPropertyGrid enables its users to process multiple items’ properties simultaneously. It is no longer needed to provide additional ViewModels to expose them or manage their changes backwards to your business object instances. Everything now happens under the hood.
+With the __“Property sets”__ feature RadPropertyGrid enables its users to process multiple items, properties simultaneously. It is no longer needed to provide additional ViewModels to expose them or manage their changes backwards to your business object instances. Everything now happens under the hood.
         
 
 ## How does it work?
@@ -22,9 +22,15 @@ In order to benefit from this feature, one should set RadPropertyGrid’s Proper
 
 ## Modes
 
+* [None](#none)
+
+* [Union](#union)
+
+* [Intersection](#intersection)
+
 For the means of illustrating the separate mode values, the following types will be used:
 
-#### __C#__
+#### __[C#]Example 1: Preparing sample data__
 
 	{{region radpropertygrid-defining-propertysets_2}}
 	    public class Ellipse
@@ -73,7 +79,7 @@ For the means of illustrating the separate mode values, the following types will
 
 
 
-#### __VB.NET__
+#### __[VB.NET]Example 1: Preparing sample data__
 
 	{{region radpropertygrid-defining-propertysets_3}}
 	    Public Class Ellipse
@@ -178,7 +184,7 @@ For the means of illustrating the separate mode values, the following types will
 
 
 
-#### __XAML__
+#### __[XAML] Example 2: Defining RadPropertyGrid__
 
 	{{region radpropertygrid-defining-propertysets_0}}
 	<Grid>
@@ -193,7 +199,7 @@ For the means of illustrating the separate mode values, the following types will
 
 
 
-__None__
+### None
 
 “None” is the default value of RadPropertyGrid’s PropertySetMode property. In this case the Item value is processed as a single object, regardless of its type. It is a List of objects instance in our occasion:
 
@@ -202,13 +208,13 @@ __None__
 Both RegularPolygon and Ellipse’s properties has been disregarded and only the two public properties of List are displayed.
         
 
-__Union__
+### Union
 
 When “Union” is the active mode, a union set of items’ properties is constructed. In case that a property that is common for several items has the same value for each of them, RadPropertyGrid displays this value in the respective editor. On the other hand, if it has different values for the separate items, the editor displays either null, or the default value for this type
 
 ![Rad Property Grid Sets Union](images/RadPropertyGrid_Sets_Union.png)
 
-__Intersection__
+### Intersection
 
 The “Intersection” mode works in a similar way to the “Union” mode, with a single difference – when it is used RadPropertyGrid constructs an intersection set instead. Here is the output when “Intersection” mode is applied over the same data source:
 
@@ -218,7 +224,7 @@ The “Intersection” mode works in a similar way to the “Union” mode, with
 
 RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the specified set. In order to provide a cross-platform data binding approach, an indexer has been exposed. However, as dynamic properties do not contain any information about their relying type an IValueConverter instance might be needed in certain scenarios:
 
-#### __XAML__
+#### __[XAML]Example 3: Defining editor template__
 
 	{{region radpropertygrid-defining-propertysets_1}}
 	 <Grid x:Name="LayoutRoot">
@@ -238,7 +244,7 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 
 
 
-#### __C#__
+#### __[C#]Example 4: Setting EditorTemplate of a PropertyDefinition__
 
 	{{region radpropertygrid-defining-propertysets_4}}
      private void RadPropertyGrid_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
@@ -249,7 +255,17 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
            }
        }
 	
+#### __[VB.NET]Example 4: Setting EditorTemplate of a PropertyDefinition__
+
+	{{region radpropertygrid-defining-propertysets_5}}
+	    Private Sub RadPropertyGrid_AutoGeneratingPropertyDefinition(sender As Object, e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
+	        If e.PropertyDefinition.DisplayName = "CornersCount" Then
+	            e.PropertyDefinition.EditorTemplate = TryCast(LayoutRoot.Resources("editorTemplate"), DataTemplate)
+	        End If
+	    End Sub
+
 	
+#### __[C#]Example 5: Defining IValueConverter__
 	 public class MyConverter : IValueConverter
 	    {
 	 
@@ -265,19 +281,9 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	    }
 	
 	{{endregion}}
-
-
-
-#### __VB.NET__
-
-	{{region radpropertygrid-defining-propertysets_5}}
-	    Private Sub RadPropertyGrid_AutoGeneratingPropertyDefinition(sender As Object, e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
-	        If e.PropertyDefinition.DisplayName = "CornersCount" Then
-	            e.PropertyDefinition.EditorTemplate = TryCast(LayoutRoot.Resources("editorTemplate"), DataTemplate)
-	        End If
-	    End Sub
 	
 	
+#### __[VB.NET]Example 5: Defining IValueConverter__
 	    Public Class MyConverter
 	        Implements IValueConverter
 	

@@ -12,19 +12,15 @@ position: 2
 
 
 
-DataTemplate reusing techniques – AutoBind attached behavior
-
-## The AutoBind attached behavior
-
 The need of reusable DataTemplates is a common scenario with quite few universal viable solutions. The AutoBind attached behavior enables RadPropertyGrid to use a single DataTemplate resource as an EditorTemplate value for multiple PropertyDefinitions without any additional effort on the users’ side.
 
-{% if site.site_name == 'Silverlight' %}[Here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html){% endif %}{% if site.site_name == 'WPF' %}[Here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html){% endif %}is the API reference for the AutoBindBehaviour.
+{% if site.site_name == 'Silverlight' %}[Here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html){% endif %}{% if site.site_name == 'WPF' %}[Here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html){% endif %} is the API reference for the AutoBindBehaviour.
         
 
-Here is a small example with RadPropertyGrid that has its Item property bound to a Button:
+Here is an example with RadPropertyGrid that has its Item property bound to a Button:
         
 
-#### __XAML__
+#### __[XAML]Example 1: Using AutoBindBehavior__
 
 	{{region radpropertygrid-autobind_0}}
 	<Grid x:Name="LayoutRoot" Background="White">
@@ -60,28 +56,28 @@ The AutoBind attached behavior is also available in scenarios with auto-generate
 TwoWay binding with the AutoBindBehavior is supported for the following types:
         
 
-* Primitive types
+* __Primitive types__
             
 
-* String
+* __String__
             
 
-* Decimal
+* __Decimal__
             
 
-* Guid
+* __Guid__
             
 
-* DateTime
+* __DateTime__
             
 
-* Enum
+* __Enum__
             
 
-* Color
+* __Color__
             
 
-* TimeSpan
+* __TimeSpan__
             
 
 ## How does it work?

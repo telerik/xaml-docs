@@ -31,7 +31,7 @@ RadPropertyGrid provides three selection modes, which allow you to manipulate th
 
 ## Selected items
 
-__RadPropertyGrid__provides several properties to get the data behind the selected items - __SelectedPropertyDefinition__, __SelectedField__ and __SelectedPropertyDefinitions__.
+RadPropertyGrid provides several properties to get the data behind the selected items - __SelectedPropertyDefinition__, __SelectedField__ and __SelectedPropertyDefinitions__.
         
 
 * __SelectedPropertyDefinition__ - the business object that sits behind the selected Property Definition.

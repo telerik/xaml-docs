@@ -206,7 +206,7 @@ You can check the {% if site.site_name == 'Silverlight' %}[Release Notes for ver
 * Incorrect extended selection when using Shift key
  
 
-* Changing visibility of property definitions leads to unexpected scrolling behavior on expanding/ collapsing nested fields
+* Changing visibility of property definitions leads to unexpected scrolling behavior on expanding/collapsing nested fields
                 
 
 * BrowsableAttribute is not respected when set through MetadataType
@@ -264,7 +264,7 @@ You can check the {% if site.site_name == 'Silverlight' %}[Release Notes for ver
 * More than one property definition can be selected when in unbound mode and SelectionMode is single or extended
                 
 
-* Background property of a field cannot be set through the parent container (should be Transparent by default) / all themes
+* Background property of a field cannot be set through the parent container (should be Transparent by default)/all themes
                 
 
 * Expression Blend extracts invalid XAML when copying RadPropertyGrid's Template - Setter.Property cannot be null exception
@@ -334,7 +334,7 @@ You can check the {% if site.site_name == 'Silverlight' %}[Release Notes for ver
 ### What's Fixed
             
 
-* RadPropertyGrid / SearchTextBox overlaps the search icon when you type long search criteria
+* RadPropertyGrid/SearchTextBox overlaps the search icon when you type long search criteria
                 
 
 * Header's visibility when SearchBoxVisibility and SortButtonsVisibility are collapsed
@@ -414,7 +414,7 @@ You can check the {% if site.site_name == 'Silverlight' %}[Release Notes for ver
 ### What's Added
             
 
-* New __DependencyProperty____ItemTemplate__ for __CollectionEditor__
+* New DependencyProperty __ItemTemplate__ for __CollectionEditor__
 
 * __OrderIndex__ is now __DependencyProperty__
 

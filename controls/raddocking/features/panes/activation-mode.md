@@ -10,7 +10,7 @@ position: 5
 
 # PaneActivationMode
 
-With our Q3 2013 release of RadControls we added the possibility to set which RadPane should be focused/activated after another RadPane in its PaneGroup is closed. Setting the activation mode is done via the PaneActivationMode property of the RadDocking control.
+With our Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} we added the possibility to set which RadPane should be focused/activated after another RadPane in its PaneGroup is closed. Setting the activation mode is done via the PaneActivationMode property of the RadDocking control.
 
 ## Setting PaneActivationMode
 

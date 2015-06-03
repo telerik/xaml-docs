@@ -8,8 +8,6 @@ published: True
 position: 0
 ---
 
-# Overview
-
 ## What is a Style Selector?
 
 The __StyleSelector__ provides a way to apply styles based on custom logic.

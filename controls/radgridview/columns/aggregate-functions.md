@@ -5,32 +5,26 @@ description: Aggregate Functions
 slug: gridview-columns-aggregate-functions
 tags: aggregate,functions
 published: True
-position: 8
+position: 1
 ---
 
 # Aggregate Functions
 
-The column footers can be used to display aggregated information about the data in the column via aggregate functions. The aggregate functions might be found in the __Telerik.Windows.Data__ assembly.
+Column footers can be used to display aggregated information on the data in the column via defining aggregate functions. The aggregate functions might be found in the __Telerik.Windows.Data__ assembly.
 
 The available functions are:
 
 * __AverageFunction__ – returns the average of the values in the column. 
 
-
 * __CountFunction__ – returns the number of all items in the column 
-
 
 * __FirstFunction__ – returns the first element in the column according to the current sorting. 
 
-
 * __LastFunction__ – returns the last elements in the column according to the current sorting. 
-
 
 * __MaxFunction__ – returns the Max of the values in the column. 
 
-
 * __MinFunction__ – returns the Min of the values in the column. 
-
 
 * __SumFunction__ – returns the Sum of all values in the column. 
 

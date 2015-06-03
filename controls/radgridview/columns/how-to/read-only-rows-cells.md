@@ -5,7 +5,7 @@ description: Read Only Rows and Cells
 slug: gridview-read-only-rows-cells
 tags: read,only,rows,and,cells
 published: True
-position: 2
+position: 10
 ---
 
 # Read Only Rows and Cells
@@ -18,9 +18,9 @@ In Q2 2010 SP2, we added a new property - __IsReadOnlyBinding__ at a gridview an
 
 ## IsReadOnlyBinding at RadGridView level [Read Only Rows]
 
-When you set the __IsReadOnlyBinding__ property of RadGridView - the __full row__ becomes __read only__ when the underlying property is True. 
+When you set __IsReadOnlyBinding__ property of RadGridView to True - the __full row__ becomes __read only__ when the underlying property is True. 
 
-#### __XAML__
+#### __[XAML] Example 1: Binding IsReadOnlyBinding at RadGridView level.__
 
 {{region gridview-read-only-rows-cells_0}}
 
@@ -31,7 +31,7 @@ When you set the __IsReadOnlyBinding__ property of RadGridView - the __full row_
 
 When you set the __IsReadOnlyBinding__ property of the GridViewDataColumn - only the cells of that column are affected.
 
-#### __XAML__
+#### __[XAML] Example 2: Binding IsReadOnlyBinding at column level.__
 
 {{region gridview-read-only-rows-cells_1}}
 

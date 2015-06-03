@@ -50,4 +50,4 @@ The result can be seen on the next image.
 
 # See Also
 
- * [Selection via CheckBox]({%slug gridview-selection-via-checkbox%})
+ * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

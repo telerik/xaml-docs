@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-The walkthrough in this section is intended for users who are familiar with developing applications for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} by using Visual Studio and know how to work with Telerik RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. You need the following components to complete this walkthrough:
+The walkthrough in this section is intended for users who are familiar with developing applications for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} by using Visual Studio and know how to work with Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. You need the following components to complete this walkthrough:
 
 * Visual Studio 2010
 

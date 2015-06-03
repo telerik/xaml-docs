@@ -16,7 +16,7 @@ Like most controls, the __RadBusyIndicator__ also allows you to template it in o
 
 * [RadProgressBar](#radprogressbar)
 
->For more information about templating and how to modify the default templates of the __RadControls__ read [the common topics](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html) on this matter.
+>For more information about templating and how to modify the default templates of the controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite read [the common topics](http://www.telerik.com/help/silverlight/common-styling-appearance-edit-control-templates-blend.html) on this matter.
         
 
 ## RadBusyIndicator

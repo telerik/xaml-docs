@@ -5,24 +5,22 @@ description: Dynamic Hyperlink Column
 slug: radgridview-columns-column-types-dynamic-hyperlink-column
 tags: dynamic,hyperlink,column
 published: True
-position: 8
+position: 5
 ---
 
 # Dynamic Hyperlink Column
 
-The __GridViewDynamicHyperlinkColumn__ derives from the __GridViewBoundColumnBase__class. Except the binding to the desired property of your business object it allows you to easily specify an URL for the hyperlink that hosts the content.
+__GridViewDynamicHyperlinkColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}) class. Except the binding to the desired property of your business object it allows you to easily specify an URL for the hyperlink that hosts the content.
 
 Here is a list of the most important properties.
 
-* __NavigateUrlMemberPaths__ - sets the name of the property which contains the URL.
+* __NavigateUrlMemberPaths__ - name of the property which contains the URL.
 
-* __NavigateUrlFormatString__ - allows you to provide a format string for the value of the URL. This allows you to easily format URLs that are provided as relative by the business object. More about Data Formatting can be found [here]({%slug gridview-columns-data-formatting%}).
+* __NavigateUrlFormatString__ - allows you to provide a format string for the value of the URL. That wat you can easily format URLs provided as relative by the business object. To learn more about formatting you can check [Data Formatting]({%slug gridview-columns-data-formatting%}) topic. 
 
-* __TargetName__ - specifies in which location the link to be opened.
+* __TargetName__ - specifies the location to open the link.
 
-Here is how to define a column of such type.
-
-#### __XAML__
+#### __[XAML] Example 1: Define GridViewDynamicHyperlinkColumn in XAML.__
 
 {{region radgridview-columns-column-types-dynamic-hyperlink-column_0}}
 
@@ -38,4 +36,4 @@ Here is how to define a column of such type.
 	</telerik:RadGridView>
 {{endregion}}
 
-![](images/RadGridView_ColumnTypes_9.png)
+__Figure 1:__ ![](images/RadGridView_ColumnTypes_9.png)

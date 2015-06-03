@@ -10,7 +10,7 @@ position: 22
 
 # Close Filtering Popup on Pressing Filter Button
 
-In order to close filtering Popup on pressing the fitler button, you need to override the __OnApplyFilter__ method of our FilteringControl.
+In order to close filtering Popup on pressing the fitler button, you need to override the __OnApplyFilter__ method of FilteringControl.
 
 #### __C#__
 
@@ -36,8 +36,6 @@ In order to close filtering Popup on pressing the fitler button, you need to ove
         }
     }
 {{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -80,10 +78,8 @@ Then you can apply it to a desired column like so:
 	Me.clubsGrid.Columns("Name").FilteringControl = New MyFilteringControl(Me.clubsGrid.Columns("Name"))s
 {{endregion}}
 
-
-! In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should __additionally apply a template_. Please refer to the [Styling custom controls]({%slug styling-apperance-implicit-styles-overview%}#styling-custom-controls) section.
-
-The Style you should apply in XAML is:
+>importantIn case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should additionally apply a template. Please refer to the [Styling custom controls]({%slug styling-apperance-implicit-styles-overview%}#styling-custom-controls) section.
+The Style you should apply in XAML then is:
 #### __XAML__
 	<Style TargetType="my:MyFilteringControl" BasedOn="{StaticResource FilteringControlStyle}"/>
 

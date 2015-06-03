@@ -1,14 +1,14 @@
 ---
-title: Styling a Row
-page_title: Styling a Row
-description: Styling a Row
+title: Styling Rows
+page_title: Styling Rows
+description: Styling Rows
 slug: gridview-styling-a-row
-tags: styling,a,row
+tags: styling,rows
 published: True
 position: 14
 ---
 
-# Styling a Row
+# Styling Rows
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewRow control]({%slug radgridview-styles-and-templates-templates-structure%}).
 

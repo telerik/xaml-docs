@@ -11,7 +11,6 @@ position: 14
 # Modify foreground color of Selected/Hovered row
 
 
-
 This help article will show you how to modify the foreground color of GridViewRow on selecting it or hovering over it.
 
 Every row shows a set of GridViewCells. In order to change the foreground of all the GridViewCells when their parent row is hovered/selected you should predefine the template of GridViewRow and access the part __DataCellsPresenter__. This element is a plain presenter used to display the cells contained in a row.

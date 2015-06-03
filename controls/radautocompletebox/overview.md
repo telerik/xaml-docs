@@ -28,6 +28,6 @@ Key features:
 
 * __Silverlight/WPF Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadAutoCompleteBox shares a single codebase with its Silverlight WPF counterpart. This means that you can achieve close to 100% code reuse for your RadAutoCompleteBox logic if you have parallel Silverlight/WPF development.
 
-* __Expression Blend support__ - all RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} can be easily customized using Expression Blend.
+* __Expression Blend support__ - all controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite can be easily customized using Expression Blend.
 
 * __Keyboard Support__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadAutoCompleteBox supports several keyboard shortcuts for performing the most common tasks. [Read more.]({%slug radautocompletebox-features-keyboard-support%})

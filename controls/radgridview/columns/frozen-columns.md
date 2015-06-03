@@ -5,7 +5,7 @@ description: Frozen Columns
 slug: gridview-columns-frozen-columns
 tags: frozen,columns
 published: True
-position: 11
+position: 9
 ---
 
 # Frozen Columns

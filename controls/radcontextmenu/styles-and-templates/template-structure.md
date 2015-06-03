@@ -12,7 +12,7 @@ position: 1
 
 Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadContextMenu__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can template parts of it or even independent controls related to it.
 
->tipFor more information about templating and how to modify the default templates of the __RadControls__ read [Editing Control Templates article]({%slug styling-apperance-editing-control-templates%}) on this matter.
+>tipFor more information about templating and how to modify the default templates of the controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite  read [Editing Control Templates article]({%slug styling-apperance-editing-control-templates%}) on this matter.
 
 >tipTo learn about the __RadMenuItem's__ templates structure, take a look at the [Templates Structure]({%slug radmenu-styles-and-templates-templates-structure%}) topic in the __RadMenu's__ help.
 

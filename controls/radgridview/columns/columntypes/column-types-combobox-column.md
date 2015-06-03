@@ -5,74 +5,45 @@ description: ComboBox Column
 slug: radgridview-columns-column-types-combobox-column
 tags: combobox,column
 published: True
-position: 3
+position: 4
 ---
 
 # ComboBox Column
 
-
-The __GridViewComboBoxColumn__ derives from the __GridViewBoundColumnBase__, which means that it inherits all of the functionality too. In addition, GridViewComboBoxColumn provides a __ComboBox__ editor for editing cell values. It also takes care to translate the __DataMember__ value of the column to the corresponding __DisplayMember__ value of the __ComboBox__. 
+__GridViewComboBoxColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}), which means that it inherits all of the functionality too. In addition, GridViewComboBoxColumn provides a __RadComboBox__ editor for editing cell values. It also takes care to translate the __Data Member__ value of the column to the corresponding __DisplayMember__ value of __RadComboBox__. 
 
 Here is a list of the most important properties.
 
-* __ItemsSource__ - specifies the data source for the __ComboBox__ editor. It also takes part when translating the __DataMember__ to the __Display__ member.
+* __ItemsSource__ - specifies the data source for the editor __RadComboBox__. It also takes part when translating the __Data Member__ to the __Display__ member.
 
-* __ItemsSourceBinding__ - allows you to bind the __ItemsSource__ of the __ComboBox__ to a property of the data source item.
+* __ItemsSourceBinding__ - allows binding editor's __ItemsSource__ to a property of the bound data item.
 
-* __DisplayMemberPath__ - used to translate a value to cell content(e.g. the ID of a country to the Name of the country). It points to a field in the __GridViewComboBoxColumn.ItemsSource__.
+* __DisplayMemberPath__ - member path to display. It points to a field in the __GridViewComboBoxColumn.ItemsSource__.
 
-* __SelectedValueMemberPath__ - used in conjunction with the __DisplayMemberPath__ in the process of translation of a value to display content. It also tells the __ComboBox__ editor which property to use as a value when the user makes selection. Here you can see how to define a column of this type.
+* __SelectedValueMemberPath__ - used in conjunction with __DisplayMemberPath__ in the process of translation of a value to display as content. It also tells the __RadComboBox__ editor which property to use as a Value when the user makes selection.
 
-* __IsComboBoxEditable__ - allows you to set the whether the __ComboBox__ is editable.
+* __IsComboBoxEditable__ - allows you to configure whether the editor (__RadComboBox__) is editable.
 
->After Telerik shipped __Q3 2012 Service Pack__ typing a letter in a __GridViewComboBoxColumn__ will point to the first ComboBox item that starts with the same letter.
+>Since __Q3 2012 SP__ typing a letter in __GridViewComboBoxColumn__ will point to the first item starting with the same letter.
         
+The following example assumes that you have data as shown in __Figure 1__:
 
-The following example assumes that you have the data shown in __Figure 1__:
+__Figure 1__: ![](images/RadGridView_ColumnTypes_1.png)
 
 
-__Figure 1__![](images/RadGridView_ColumnTypes_1.png)
-
-Define a __GridViewComboBoxColumn__.
-
-#### __XAML__
+#### __[XAML] Example 1: Define GridViewComboBoxColumn.__
 
 {{region radgridview-columns-column-types-combobox-column_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
+	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewComboBoxColumn />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 
-
->You’ll find the columns in the same namespace as the __RadGridView__ control.
-
-#### __C#__
-
-{{region radgridview-columns-column-types-combobox-column_1}}
-
-	GridViewComboBoxColumn column = new GridViewComboBoxColumn();
-	this.radGridView.Columns.Add( column );
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radgridview-columns-column-types-combobox-column_2}}
-
-	Dim column As New GridViewComboBoxColumn()
-	Me.radGridView.Columns.Add( column )
-{{endregion}}
-
-
-
-Define the __DataMemberBinding__ and give the column an __UniqueName__.
-
-#### __XAML__
+#### __[XAML] Example 2: Define DataMemberBinding and specify an UniqueName.__
 
 {{region radgridview-columns-column-types-combobox-column_3}}
 
@@ -85,8 +56,7 @@ Define the __DataMemberBinding__ and give the column an __UniqueName__.
 	</telerik:RadGridView>
 {{endregion}}
 
-
-#### __C#__
+#### __[C#] Example 2: Define DataMemberBinding and specify an UniqueName.__
 
 {{region radgridview-columns-column-types-combobox-column_4}}
 
@@ -94,21 +64,7 @@ Define the __DataMemberBinding__ and give the column an __UniqueName__.
 	column.UniqueName = "Country";
 {{endregion}}
 
-
-
-#### __VB.NET__
-
-{{region radgridview-columns-column-types-combobox-column_5}}
-
-	column.DataMemberBinding = New Binding("CountryId")
-	column.UniqueName = "Country"
-{{endregion}}
-
-
-
-Set the __ItemsSource__ property.
-
-#### __C#__
+#### __[C#] Example 3: Setting ItemsSource.__
 
 {{region radgridview-columns-column-types-combobox-column_6}}
 
@@ -117,7 +73,7 @@ Set the __ItemsSource__ property.
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Setting ItemsSource.__
 
 {{region radgridview-columns-column-types-combobox-column_7}}
 
@@ -125,10 +81,7 @@ Set the __ItemsSource__ property.
 {{endregion}}
 
 
-
-Set the __DisplayMemberPath__ and the __SelectedValuePath__ properties.
-
-#### __XAML__
+#### __[XAML] Example 4: Set DisplayMemberPath and SelectedValuePath properties.__
 
 {{region radgridview-columns-column-types-combobox-column_8}}
 
@@ -139,8 +92,7 @@ Set the __DisplayMemberPath__ and the __SelectedValuePath__ properties.
 	{{endregion}}
 
 
-
-#### __C#__
+#### __[C#] Example 4: Set DisplayMemberPath and SelectedValuePath properties.__
 
 {{region radgridview-columns-column-types-combobox-column_9}}
 
@@ -148,36 +100,21 @@ Set the __DisplayMemberPath__ and the __SelectedValuePath__ properties.
 	column.DisplayMemberPath = "Name";
 {{endregion}}
 
-#### __VB.NET__
-
-{{region radgridview-columns-column-types-combobox-column_10}}
-
-	column.SelectedValueMemberPath = "Id"
-	column.DisplayMemberPath = "Name"
-{{endregion}}
-
-Now run the application. The application result should be similar to __Figure 2__
-
-
+The application result should be similar to __Figure 2__
 
 __Figure 2__![](images/RadGridView_ColumnTypes_2.png)
 
-You can see in __Figure 2__ that via the __DisplayMemberPath__ property of the __GridViewComboBoxColumn__ you have mapped the __CountryId__ property of the business object to the respective value in the Countries collection.
+As illustrated in __Figure 2__ you can map the __CountryId__ property of the business object to the respective value in the Countries collection via configuring proper __DisplayMemberPath__.
       
-
-You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView__ / __ComboboxColumn__  .
+You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/ComboboxColumn__  .
       
-
-The next example shows how to use the __ItemsSourceBinding__ property. It allows you to bind the __ItemsSource__ of the __ComboBox__ editor to a collection that is held by the data item. In this way, you are able to specify different sets of items for the editors that depend on the entire content of the respective row. The example assumes that you have the data shown in __Figure 3__:
-
+The next example shows how to use __ItemsSourceBinding__. It allows you to bind the __ItemsSource__ of the __RadComboBox__ editor to a collection held by the data item. In this way, you are able to specify different sets of items depending on the entire content of the respective row. The example assumes that you have the data shown in __Figure 3__:
 
 __Figure 3__![](images/RadGridView_ColumnTypes_3.png)
 
-The __RadGridView__ binds to a collection of objects representing the teams. The team object exposes a collection containing the current drivers, which is used as source for the __ComboBoxEditor__. As in the previous example, it also exposes a __DriverID__ property that the __ComboBox__ column will later translate to an appropriate display value. 
+__RadGridView__ binds to a collection of objects representing the teams. The team object exposes a collection containing the current drivers, which is used as source for the editor. As in the previous example, it also exposes a __DriverID__ property that the column will later translate to an appropriate display value. 
 
-Define the __GridViewComboBoxColumn__ with the following properties set.
-
-#### __XAML__
+#### __[XAML] Example 5: Configure GridViewComboBoxColumn with ItemsSourceBinding.__
 
 {{region radgridview-columns-column-types-combobox-column_11}}
 
@@ -191,36 +128,31 @@ Define the __GridViewComboBoxColumn__ with the following properties set.
 
 
 
-__Figure 4__ and __Figure 5__ show the result of using the __ItemsSourceBinding__ property.
-
-
+__Figure 4__ and __Figure 5__ show the result of setting __ItemsSourceBinding__ property.
 
 __Figure 4__![](images/RadGridView_ColumnTypes_4.png)
 
-and
-
 __Figure 5__![](images/RadGridView_ColumnTypes_5.png)
 
-
-
->When using the __ItemsSourceBinding__ property, the values displayed in the column’s filtering control will be the values corresponding to the __DataMemberBinding__ (0, 1, 2). If you want to be the displayed ones (S.Vettel, K. Raikkonen, M. Webber), then you need to set [FilterMemberPath]({%slug gridview-filtering-basic%}) to a property containing the values used as __DisplayMemberPath__ in the __GridViewComboBoxColumn__.
+>When using __ItemsSourceBinding__ property, the values displayed in the column’s filtering control will be the values corresponding to the __DataMemberBinding__ (0, 1, 2). If you want to have the displayed ones (S.Vettel, K. Raikkonen, M. Webber), then you need to set __GridViewComboBoxColumn__.[FilterMemberPath]({%slug gridview-filtering-basic%}) to a property containing the values used as __DisplayMemberPath__.
         
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView__ / __ComboboxColumnItemsSourceBinding__  .
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/ComboboxColumnItemsSourceBinding__  .
         
 
->If you are using GridViewComboBoxColumn's __ItemsSource__ property you should specify a valid __Source__ for it. Please refer to this [help article]({%slug gridview-troubleshooting-blank-cells%}).
+>If you are setting GridViewComboBoxColumn's __ItemsSource__ property you should specify a valid __Source__ for it. Please refer to this [troubleshooting article]({%slug gridview-troubleshooting-blank-cells%}).
+
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
         
+## Templating GridViewComboBoxColumn
 
-## Templating the ComboBox Column
+As of __Q1 2010 SP2__, GridViewComboBoxColumn exposes a new property - __ItemTemplate__, which also applies to the default editor of that column - RadComboBox.
 
-As of __Q1 2010 SP2__, the GridViewComboBoxColumn provides a new property - __ItemTemplate,__which applies to the column in read-only mode and in edit mode (actually it applies to the RadComboBox that is the default editor of that column).
+The following example shows how to implement a multi-column ComboBoxColumn.
 
-The following example shows how to implement a multi-column __ComboBox__ column.
+Start by defining the GridViewComboBoxColumn and its __ItemTemplate__:
 
-Start by defining the __GridViewComboBox__ column and its __ItemTemplate__:
-
-#### __XAML__
+#### __[XAML] Example 6: Configure GridViewComboBoxColumn with ItemTemplate.__
 
 {{region radgridview-columns-column-types-combobox-column_12}}
 
@@ -246,13 +178,19 @@ Start by defining the __GridViewComboBox__ column and its __ItemTemplate__:
 {{endregion}}
 
 
-
-The multi-column ComboBox in this example will have two columns showing the ID and Name of the City respectively. When you run the example, Figure 6 shows what happens when the customer tries to edit in a column.
-
+The multi-column ComboBoxColumn in this example will have two columns showing the ID and Name of the City respectively. When you run the example, Figure 6 shows what happens when the customer tries to edit in a column.
 
 __Figure 6__![](images/gridview_multi_column_combo.png)
 
 
 # See Also
 
- * [Empty Cells in Combobox column]({%slug gridview-troubleshooting-blank-cells%})
+ * [Empty Cells in ComboboxColumn]({%slug gridview-troubleshooting-blank-cells%})
+
+ * [Handle SelectionChanged for ComboBoxColumn]({%slug gridview-columns-howto-selectionchanged-comboboxcolumn%})
+  
+ * [Filter items in ComboboxColumn]({%slug gridview-columns-how-to-filter-the-items-in-comboboxcolumn%})
+
+ * [Number of clicks in the ComboBoxColumn]({%slug gridview-combobox-column-clicks%})
+  
+

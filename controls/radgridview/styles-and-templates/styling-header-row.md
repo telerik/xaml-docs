@@ -1,14 +1,14 @@
 ---
-title: Styling the Header Row
-page_title: Styling the Header Row
-description: Styling the Header Row
+title: Styling Header Row
+page_title: Styling Header Row
+description: Styling Header Row
 slug: gridview-styling-header-row
-tags: styling,the,header,row
+tags: styling,header,row
 published: True
 position: 13
 ---
 
-# Styling the Header Row
+# Styling Header Row
 
 
 

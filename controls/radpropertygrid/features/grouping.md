@@ -24,7 +24,7 @@ Another property you can configure is __SortAndGroupButtonsVisibility__. It sets
 For example, lets have the following declaration of the RadPropertyGrid control:
       
 
-#### __XAML__
+#### __[XAML]Example 1: Declaring RadPropertyGrid__
 
 {{region radpropertygrid-grouping_0}}
 
@@ -46,7 +46,7 @@ For example, lets have the following declaration of the RadPropertyGrid control:
 Its Item is set like so:
       
 
-#### __C#__
+#### __[C#]Example 2: Setting RadPropertyGrid Item__
 
 {{region radpropertygrid-grouping_0}}
 
@@ -78,7 +78,7 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 * __ExpandGroup(object GroupKey)__ - sets expand state for the given GroupDefinition
             
 
-#### __C#__
+#### __[C#]Example 3: Expanding RadPropertyGrid Group__
 
 	{{region radpropertygrid-grouping_1}}
 	this.PropertyGrid1.ExpandGroup("Group Name");
@@ -89,7 +89,7 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 * __CollapseGroup(object GroupKey)__ - collapses the visual group for the given GroupDefinition
             
 
-#### __C#__
+#### __[C#]Example 4: Collapsing RadPropertyGrid Group__
 
 {{region radpropertygrid-grouping_2}}
 
@@ -101,7 +101,7 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 * __ExpandAllGroups()__ - expands all groups recursively
             
 
-#### __C#__
+#### __[C#] Example 5: Expanding all RadPropertyGrid Groups__
 
 {{region radpropertygrid-grouping_3}}
 
@@ -113,7 +113,7 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 * __CollapseAllGroups()__ - collapses all groups recursively.
             
 
-#### __C#__
+#### __[C#] Example 6: Collapsing all RadPropertyGrid Groups__
 
 {{region radpropertygrid-grouping_4}}
 
@@ -127,7 +127,7 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 ## GroupDefinitions
 
-The GroupDefinitions property gets a collection of GroupDefinition objects used to group the property grid.
+The GroupDefinitions property gets a collection of GroupDefinition objects used to group RadPropertyGrid.
         
 
 It has two methods:
@@ -138,7 +138,7 @@ It has two methods:
 * __ResumeNotifications()__ - resumes the notifications.
             
 
-#### __C#__
+#### __[C#]Example 7: Suspending and Resuming notifications__
 
 {{region radpropertygrid-grouping_5}}
 

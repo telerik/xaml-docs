@@ -243,6 +243,8 @@ __Example 8__ generates a table and draws it in some fixed size.
 
 ![Rad Pdf Processing Editing Fixed Content Editor 06](images/RadPdfProcessing_Editing_FixedContentEditor_06.png)
 
+More detailed information about tables is avaialble in the [Table]({%slug radpdfprocessing-editing-table%}) documentation article.
+
 ## Positioning
 
 The [Position]({%slug radpdfprocessing-concepts-position%}) property exposed by __FixedContentEditor__ allows an easy way to manipulate the position of inserted content elements.
@@ -269,7 +271,6 @@ The code in __Example 9__ shows how to manipulate the position of the inserted c
 Figure 5: Positioning Result
 ![Rad Pdf Processing Editing Fixed Content Editor 05](images/RadPdfProcessing_Editing_FixedContentEditor_05.png)
 
-More detailed information about tables is avaialble in the [Table]({%slug radpdfprocessing-editing-table%}) documentation article.
         
 
 ## Changing Current Styles

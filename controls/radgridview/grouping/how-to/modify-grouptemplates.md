@@ -1,14 +1,14 @@
 ---
-title: Modify the GroupRow
-page_title: Modify the GroupRow
-description: Modify the GroupRow
+title: Modify GroupRow
+page_title: Modify GroupRow
+description: Modify GroupRow
 slug: gridview-grouping-how-to-modify-grouptemplates
-tags: modify,the,grouprow
+tags: modify,grouprow
 published: True
 position: 1
 ---
 
-# Modify the GroupRow
+# Modify GroupRow
 
 This article explains how you can modify the default GroupRow's header and footer templates per RadGridView's level or per GridViewColumn's level.
 

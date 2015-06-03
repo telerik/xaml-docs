@@ -46,7 +46,7 @@ There are two ways to reference the needed xaml files:
 		</Application.Resources>
 	{{endregion}}
 
-* Copy the xaml files to a folder in the project: Create a Theme folder and copy the required files from Themes.Implicit/../VisualStudio2013/../Themes/ folder located in the installation folder of RadControls:
+* Copy the xaml files to a folder in the project: Create a Theme folder and copy the required files from Themes.Implicit/../VisualStudio2013/../Themes/ folder located in the installation folder of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}:
 
 	Figure 2: Copying the .xaml files
 	![Rad Radial Menu Setting Theme 02](images/RadRadialMenu_Setting_Theme_02.png)

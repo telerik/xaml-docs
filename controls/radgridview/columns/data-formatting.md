@@ -5,12 +5,12 @@ description: Data Formatting
 slug: gridview-columns-data-formatting
 tags: data,formatting
 published: True
-position: 5
+position: 7
 ---
 
 # Data Formatting
 
-The __GridViewDataColumn__ and the __GridViewComboBoxColumn__ allow you to format the data displayed in them. To do that you have to specify a format string appropriate for the data displayed and set it to the __DataFormatString__ property of the column.
+__GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the displayed data. To do that you have to specify an appropriate format string setting it as __DataFormatString__ for the column.
 
 #### __XAML__
 
@@ -21,8 +21,6 @@ The __GridViewDataColumn__ and the __GridViewComboBoxColumn__ allow you to forma
                                 UniqueName="OrderDate"
                                 DataFormatString="{} {0:dd, MMM, yyyy}" />
 {{endregion}}
-
-
 
 >tipDefining format strings in XAML can be done in the following way- {}:{0:__your format string__}.
 
@@ -35,8 +33,6 @@ The __GridViewDataColumn__ and the __GridViewComboBoxColumn__ allow you to forma
 	((GridViewDataColumn)this.radGridView.Columns["OrderDate"] ).DataFormatString = "dd, MMM, yyyy";
 {{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region gridview-columns-data-formatting_2}}
@@ -45,7 +41,6 @@ The __GridViewDataColumn__ and the __GridViewComboBoxColumn__ allow you to forma
 	    ' or'
 	DirectCast(Me.radGridView.Columns("OrderDate"), GridViewDataColumn).DataFormatString = "dd, MMM, yyyy"
 {{endregion}}
-
 
 ![](images/RadGridView_DataFormatting_1.png)
 
@@ -63,4 +58,4 @@ To learn more about formatting visit the [Formatting Overview](http://msdn.micro
 
  * [Column Footers]({%slug gridview-columns-column-footers%})
 
- * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
+ * [Custom Format]({%slug gridview-how-to-custom-format%})

@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-This section is intended to give you a broad understanding of the possible ways by which you can change the visual appearance of the RadPropertyGrid and its elements. There is also comprehensive information about their ControlTemplates. You will need this information, if you want to customize their appearance.
+This section is intended to give you a broad understanding of the possible ways by which you can change the visual appearance of RadPropertyGrid and its elements. There is also comprehensive information about their ControlTemplates. You will need this information, if you want to customize their appearance.
 
 >tipTo learn how to style {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadControls read the common topic about [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}).
           
@@ -19,7 +19,7 @@ This section is intended to give you a broad understanding of the possible ways 
 		  
 
 Note that when changing the ControlTemplate, you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "PART_".
-To learn more about the styling of the RadPropertyGrid specific elements read the following topics:
+To learn more about the styling of RadPropertyGrid specific elements read the following topics:
 
 * [Styling RadPropertyGrid Template Structure]({%slug radpropertygrid-styles-and-templates-templates-structure%})
 

@@ -5,17 +5,14 @@ description: CheckBox Column
 slug: gridview-checkbox-column
 tags: checkbox,column
 published: True
-position: 6
+position: 3
 ---
 
 # CheckBox Column
 
+__GridViewCheckBoxColumn__ derives from __GridViewBoundColumnBase__ class and its content is represented by a CheckBox for each row. The difference between it and __GridViewSelectColumn__ is that this one is meant to bind to data. As opposed, __GridViewSelectColumn__ allows you to select the row via the CheckBox in it.
 
-The __GridViewCheckBoxColumn__ derives from the __GridViewBoundColumnBase__ class and its content is represented by a check box for each row. The difference between it and the __GridViewSelect__ column is that this one is meant to bind to data. As opposed, the __GridViewSelect__ column allows you to select the row via the check box in it.
-
-Here it is shown how to declare a column of this type.
-
-#### __XAML__
+#### __[XAML] Example 1: Declare a column of type GridViewCheckBoxColumn.__
 
 {{region gridview-checkbox-column_0}}
 
@@ -30,15 +27,19 @@ Here it is shown how to declare a column of this type.
 
 >tipUse this column for __better performance__ when you know that the underlying data is of a __boolean type__.
 
-
-One property that exists only in this type of column is __AutoSelectOnEdit__ - when set to True the checkbox is automatically toggled on editing the cell thus decreasing the number of clicks you need to take to change the boolean value. Here are the possible cases:
+One property existing only in this type of column is __AutoSelectOnEdit__ - when set to True the CheckBox is automatically toggled on editing the cell thus decreasing the number of clicks you need to take to change the boolean value. 
+Here are the possible cases:
 
 1. __Default__ (AutoSelectOnEdit="False", EditTriggers="Default") - three clicks are needed to change the value of the checkbox - two clicks to enter the edit mode and one click to toggle the checkbox state.
 
 2. __AutoSelectOnEdit="True"__, __EditTriggers="Default"__ - two clicks are needed to change the value of the checkbox - the clicks to enter the edit mode.
 
-3. __AutoSelectOnEdit="True"__, __EditTriggers="CellClick" -__ only one click is needed to change the value of the checkbox. 
+3. __AutoSelectOnEdit="True"__, __EditTriggers="CellClick"__ - only one click is needed to change the value of the checkbox. 
 
 # See Also
 
- * [Styling the CheckBoxColumn]({%slug gridview-columns-styling-checkboxcolumn%})
+ * [Clicks in GridViewCheckBoxColumn]({%slug gridview-checkbox-column-clicks%}) 
+
+ * [Styling GridViewCheckBoxColumn]({%slug gridview-columns-styling-checkboxcolumn%})
+
+ * [GridViewSelectColumn]({%slug radgridview-columns-column-types-select-column%})

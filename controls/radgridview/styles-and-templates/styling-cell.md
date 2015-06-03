@@ -1,14 +1,14 @@
 ---
-title: Styling a Cell
-page_title: Styling a Cell
-description: Styling a Cell
+title: Styling Cells
+page_title: Styling Cells
+description: Styling Cells
 slug: gridview-styling-cell
-tags: styling,a,cell
+tags: styling,cells
 published: True
 position: 4
 ---
 
-# Styling a Cell
+# Styling Cells
 
 
 

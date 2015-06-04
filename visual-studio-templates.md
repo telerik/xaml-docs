@@ -5,7 +5,7 @@ description: Visual Studio Templates
 slug: visual-studio-templates
 tags: visual,studio,templates
 published: True
-position: 14
+position: 4
 ---
 
 # Visual Studio Templates

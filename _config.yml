@@ -726,22 +726,22 @@ navigation:
         position: 23
     "xamlflix-step-by-step-guide":
         title: "XAMLflix Step-by-Step Guide"
-        position: 15
+        position: 21
     "licensing":
         title: "Licensing"
-        position: 16
+        position: 7
     "installation-and-deployment":
         title: "Installation and Deployment"
-        position: 17
+        position: 6
     "consuming-data":
         title: "Consuming Data"
-        position: 18
+        position: 16
     "styling-and-appearance":
         title: "Styling and Appearance"
-        position: 20
+        position: 8
     "visual-studio-extensions":
         title: "Visual Studio Extensions"
-        position: 21
+        position: 5
     "for-more-help":
         title: "For More Help"
         position: 24

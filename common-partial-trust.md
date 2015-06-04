@@ -5,7 +5,7 @@ description: Partial Trust Support
 slug: common-partial-trust
 tags: partial,trust
 published: True
-position: 12
+position: 18
 ---
 
 # Partial Trust Support

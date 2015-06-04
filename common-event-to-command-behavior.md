@@ -5,7 +5,7 @@ description: EventToCommandBehavior
 slug: common-event-to-command-behavior
 tags: eventtocommandbehavior
 published: True
-position: 8
+position: 15
 ---
 
 # EventToCommandBehavior

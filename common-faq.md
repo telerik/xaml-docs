@@ -5,7 +5,7 @@ description: Getting Started
 slug: common-faq
 tags: general, common, faq
 published: True
-position: 13
+position: 3
 ---
 
 # Common FAQ

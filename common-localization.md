@@ -5,7 +5,7 @@ description: Localization
 slug: common-localization
 tags: localization
 published: True
-position: 21
+position: 17
 ---
 
 # Localization

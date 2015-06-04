@@ -16,6 +16,8 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 {% if site.site_name == 'WPF' %}
 
+* __[Agenda ViewDefinition](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/AgendaViewDefinition)__ - 
+This example demonstrates how to implement an  for RadScheduleView using RadListBox.
 * __[Appointment color based on resource](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/AppointmentColorBasedOnResource)__ - This example demonstrates how you can apply different color for the same appointment according to the assigned resources.
 * __[Appointments reminders](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/AppointmentsReminders)__ - This example demonstrates how to implement reminders for the appointments in RadScheduleView for Silverlight and WPF.
 * __[Avoid overlapping appointments](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/AvoidOverlappingAppointments)__ - This example demonstrates how you could prevent overlapping appointments when drag-and-drop or resize an appointment. In order to achieve it you should create a custom DragDropBehavior and check in CanDrop and CanResize methods whether the destination slot contains any appointments. Additionally, you should customize the RecurrenceChoiceDragDropDialog to handle the case when a whole series of a recurrent appointment is dragged.
@@ -59,6 +61,8 @@ The ZIndex of the NonWorkingHourSlots is bound to the ViewModel statically for M
 This example demonstrates how to create a custom ViewDefinition for the RadScheduleView control in order to create one that will dispaly only the current (today) day for Silverlight and WPF.
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
+* __[Agenda ViewDefinition](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/AgendaViewDefinition)__ - 
+This example demonstrates how to implement an  for RadScheduleView using RadListBox.
 * __[Appointment color based on resource](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/AppointmentColorBasedOnResource)__ - This example demonstrates how you can apply different color for the same appointment according to the assigned resources.
 * __[Appointments reminders](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/AppointmentsReminders)__ - This example demonstrates how to implement reminders for the appointments in RadScheduleView for Silverlight and WPF.
 * __[Avoid overlapping appointments](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/AvoidOverlappingAppointments)__ - This example demonstrates how you could prevent overlapping appointments when drag-and-drop or resize an appointment. In order to achieve it you should create a custom DragDropBehavior and check in CanDrop and CanResize methods whether the destination slot contains any appointments. Additionally, you should customize the RecurrenceChoiceDragDropDialog to handle the case when a whole series of a recurrent appointment is dragged.

@@ -16,6 +16,8 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 
 {% if site.site_name == 'WPF' %}
 
+* __[Binding ItemsSource](https://github.com/telerik/xaml-sdk/tree/master/RadialMenu/BindingItemsSource)__ - 
+This example demonstrates how to bind a collection of custom objects to the ItemsSource property of RadRadialMenu.
 * __[Customizing the center button](https://github.com/telerik/xaml-sdk/tree/master/RadialMenu/CustomRadialButtonContent)__ - 
 This example demonstrates how to customize the ContentTemplate and BackContentTemplate of the RadialMenuButton.
 * __[Custom ToolTip](https://github.com/telerik/xaml-sdk/tree/master/RadialMenu/CustomTooltip)__ - 
@@ -36,6 +38,8 @@ This example demonstrates how to declare the RadRadialMenu as a ContextMenu of a
 This example demonstrates how to declare the RadRadialMenu as a standalone menu.
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
+* __[Binding ItemsSource](https://github.com/telerik/xaml-sdk/tree/master/RadialMenu/BindingItemsSource)__ - 
+This example demonstrates how to bind a collection of custom objects to the ItemsSource property of RadRadialMenu.
 * __[Customizing the center button](https://github.com/telerik/xaml-sdk/tree/master/RadialMenu/CustomRadialButtonContent)__ - 
 This example demonstrates how to customize the ContentTemplate and BackContentTemplate of the RadialMenuButton.
 * __[Custom ToolTip](https://github.com/telerik/xaml-sdk/tree/master/RadialMenu/CustomTooltip)__ - 

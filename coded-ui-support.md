@@ -5,7 +5,7 @@ description: Coded UI support
 slug: coded-ui-support
 tags: coded,ui,support
 published: True
-position: 3
+position: 13
 site_name: WPF
 ---
 

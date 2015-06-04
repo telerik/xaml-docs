@@ -30,7 +30,7 @@ More details could be found in our online help:
 For WPF - http://www.telerik.com/help/wpf/raddocking-how-to-implement-conditional-docking.html
 For Silverlight - http://www.telerik.com/help/silverlight/raddocking-how-to-implement-conditional-docking.html
 * __[Custom DockingPanesFactory](https://github.com/telerik/xaml-sdk/tree/master/Docking/CustomDockingPanesFactory)__ - 
-This example demonstrates how to use a custom DockingPanesFactory in order to add the RadPanes from the PanesSource collection to a predefined empty RadPaneGroups in the control.
+This example demonstrates how to use a custom DockingPanesFactory in order to add the RadPanes from the PanesSource collection to a predefined empty RadPaneGroups in the control. The example also demonstrates how to permanently remove a RadPane instance when its 'X' close button is pressed.
 * __[Docking inside win forms](https://github.com/telerik/xaml-sdk/tree/master/Docking/DockingInsideWinForms)__ - This example illustrates how to work-around an exception thrown when dragging a Pane.
 The issue is caused because the Application.Current is Specific for WPF Application.
 Therefore when using WPF controls in WinForms Application it needs to be initialized an instance of WPF Application. This shoud be done in the WinForms Application.
@@ -94,7 +94,7 @@ More details could be found in our online help:
 For WPF - http://www.telerik.com/help/wpf/raddocking-how-to-implement-conditional-docking.html
 For Silverlight - http://www.telerik.com/help/silverlight/raddocking-how-to-implement-conditional-docking.html
 * __[Custom DockingPanesFactory](https://github.com/telerik/xaml-sdk/tree/master/Docking/CustomDockingPanesFactory)__ - 
-This example demonstrates how to use a custom DockingPanesFactory in order to add the RadPanes from the PanesSource collection to a predefined empty RadPaneGroups in the control.
+This example demonstrates how to use a custom DockingPanesFactory in order to add the RadPanes from the PanesSource collection to a predefined empty RadPaneGroups in the control. The example also demonstrates how to permanently remove a RadPane instance when its 'X' close button is pressed.
 * __[MDI Layout](https://github.com/telerik/xaml-sdk/tree/master/Docking/MDILayout)__ - 
 This example demonstrates how to achieve MDI layout with the Docking control.
 * __[Nested RadDocking Save and Load of layout](https://github.com/telerik/xaml-sdk/tree/master/Docking/NestedDockingSaveLoadLayout)__ - 

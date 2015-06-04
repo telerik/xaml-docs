@@ -17,11 +17,15 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 {% if site.site_name == 'WPF' %}
 
 * __[Today button](https://github.com/telerik/xaml-sdk/tree/master/Calendar/TodayButton)__ - This example demonstrates how to create a custom RadCalendar control and add a TodayButton in the controls Style that will select the current date  in the control for Silverlight and WPF.
+* __[Using DayTemplateSelector](https://github.com/telerik/xaml-sdk/tree/master/Calendar/UsingDayTemplateSelector)__ - 
+This example demonstrates how to create a custom DayTemplateSelector and set it to RadCalendar.
 * __[Weekdays button StyleSelector](https://github.com/telerik/xaml-sdk/tree/master/Calendar/WeekdaysButtonStyleSelector)__ - 
 This example demonstrates how to customize the weekdays/weekends day buttons in RadCalendar in order to change their Background for Silverlight and WPF.
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
 * __[Today button](https://github.com/telerik/xaml-sdk/tree/master/Calendar/TodayButton)__ - This example demonstrates how to create a custom RadCalendar control and add a TodayButton in the controls Style that will select the current date  in the control for Silverlight and WPF.
+* __[Using DayTemplateSelector](https://github.com/telerik/xaml-sdk/tree/master/Calendar/UsingDayTemplateSelector)__ - 
+This example demonstrates how to create a custom DayTemplateSelector and set it to RadCalendar.
 * __[Weekdays button StyleSelector](https://github.com/telerik/xaml-sdk/tree/master/Calendar/WeekdaysButtonStyleSelector)__ - 
 This example demonstrates how to customize the weekdays/weekends day buttons in RadCalendar in order to change their Background for Silverlight and WPF.
 {% endif %}

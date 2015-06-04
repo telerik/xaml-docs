@@ -5,7 +5,7 @@ description: UI Automation Support
 slug: common-ui-automation
 tags: ui,automation,support
 published: True
-position: 11
+position: 12
 ---
 
 # UI Automation Support

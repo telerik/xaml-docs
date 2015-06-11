@@ -11,7 +11,7 @@ position: 3
 # Switching Icons at Runtime
 
 
-By utilizing the [implicit styling approach ]({%slug common-styling-apperance-setting-theme%}) you have the ability to switch the theme of Telerik WPF controls at run-time. With the large set of themes available in the suite this can drastically change the look and feel of your application.
+By utilizing the [implicit styling approach ]({%slug styling-apperance-implicit-styles-overview%}) you have the ability to switch the theme of Telerik WPF controls at run-time. With the large set of themes available in the suite this can drastically change the look and feel of your application.
 
 
 To help you achieve a consistent look we also provide a way for you to dynamically change the images in your application through the __IconResource__ [markup extension](https://msdn.microsoft.com/en-us/library/ms747254%28v=vs.110%29.aspx). The extension allows you to define three different URI-based paths which point to set of icons and then easily swap one set with another.
@@ -96,6 +96,9 @@ __Figure 2__ shows the result after the code in __Example 4__ is executed.
 ![Image After Changing the IconSet](images/Switching_Icons_Runtime_02.png)
 
 
+>tipYou can find the complete code of the previous example in our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Common).
+
+
 ## Available Icon Sets
 
 
@@ -139,6 +142,12 @@ Changing the icon set used in the application with the code from [__Example 4__]
 ![Images After Changing the IconSet](images/Switching_Icons_Runtime_04.png)
 
 
+>tipYou can find the complete code of the previous example in our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Common).
+
+
+
 ## See Also
 
 * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
+* [RadPdfViewer IconSource]({%slug radpdfviewer-ui-switching-icons-at-runtime%})
+* [RadSpreadsheet IconSource]({%slug radspreadsheet-howto-switching-icons-at-runtime%})

@@ -49,3 +49,7 @@ The next code snippet shows how the AutomationMode property can be set:
 	    }
 	}
 {{endregion}}
+
+# See Also
+ 
+* [Coded UI Support]({%slug coded-ui-support%})

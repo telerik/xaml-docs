@@ -5,7 +5,7 @@ description: VisualStudio2013 Theme
 slug: common-styling-appearance-visualstudio2013-theme
 tags: visualstudio2013,theme,dynamic,fontsize,fontfamily
 published: True
-position: 6
+position: 7
 ---
 
 # VisualStudio2013 Theme

@@ -64,7 +64,8 @@ controls/radgridview/features/merged-cells.md,
 controls/radpivotgrid/features/queryabledataprovider,
 controls/radwordsprocessing,
 visual-studio-templates.md,
-consuming-data/wcf-service.md]
+consuming-data/wcf-service.md,
+controls/radziplibrary/features/zip-extensions.md]
 
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:

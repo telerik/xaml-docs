@@ -10,7 +10,7 @@ position: 5
 
 # Zip Extensions
 
-In addition to the main __ZipLibrary__ control, you could take advantage of a set of helper methods, divided in two classes, which will help you to implement your scenarios in a faster and easier way. All these methods are in the Telerik.Windows.Zip.Extensions.dll. 
+In addition to the main __ZipLibrary__ control, you could take advantage of a set of helper methods, divided in two classes, which will help you to implement your scenarios faster. All these methods are in the __Telerik.Windows.Zip.Extensions.dll__. 
 
 
 In this article you will find the classes and their members.
@@ -45,7 +45,7 @@ This class implements the [IPlatformManager](http://docs.telerik.com/devtools/si
 
 ## The ZipFile class
 
-With the ZipFile class you could take advantage of static methods, which will give you the ability to create, extract or open zip archives with only one line of code.
+With the __ZipFile__ class you could take advantage of static methods, which will give you the ability to create, extract or open zip archives with only one line of code.
 
 * __ZipArchiveEntry CreateEntryFromFile(this ZipArchive destination, string sourceFileName, string entryName)__ – Archives a file by compressing it and adding it to the zip archive. It has two more overloads, which allow you to specify the __CompressionLevel__ or __CompressionSettings__ of the __ZipEntry__.
 

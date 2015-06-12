@@ -366,9 +366,19 @@ navigation:
 ## Centaur Controls Start
     "*radimageeditor":
         title: RadImageEditor
+    controls/radimageeditor/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2	
+    controls/radimageeditor/features:
+        title: Features
+        position: 4
+    controls/radimageeditor/tools:
+        title: Tools
+        position: 5
     controls/radimageeditor/how-to:
         title: How To
-        position: 4
+        position: 6		
+    
     "*radspreadsheet":
         title: RadSpreadsheet
     controls/radspreadsheet/changes-and-backward-compatibility:

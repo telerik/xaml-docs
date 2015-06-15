@@ -327,7 +327,7 @@ Telerik.Windows.Controls.__IconManager__ is removed.
 
 ### What to do now
 
-Use __IconResource__ MarkupExtension instead.
+Use __IconResource__ MarkupExtension instead. You can read more about the markup extension at [the common Switching Icons at Runtime article]({%slug styling-apperance-switching-icons-at-runtime%}) and [the one for Spreadsheet]({%slug radspreadsheet-howto-switching-icons-at-runtime%}).
 
 
 

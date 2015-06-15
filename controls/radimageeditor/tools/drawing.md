@@ -14,7 +14,7 @@ position: 2
 The __DrawTool__ is one of the tools that come out-of-the-box with the __RadImageEditor__ and enables you to draw over the image. You can choose different brush color and size. The tool provides some customization options that are explained in detail in this topic.
 
 
-As like the other __RadImageEditor__’s tools, the __DrawTool__ is located under the Telerik.Windows.Media.Imaging.Tools namespace, inherits the [DrawToolBase]({%slug radimageeditor-howto-implement-drawtoolbase%}) class and can be defined in XAML as follows:
+Similarly to the other __RadImageEditor__ tools, the __DrawTool__ is located in the __Telerik.Windows.Media.Imaging.Tools__ namespace, inherits the [DrawToolBase]({%slug radimageeditor-howto-implement-drawtoolbase%}) class and can be defined in XAML as follows:
 
 #### __[XAML] Example 1: Define DrawTool__
 

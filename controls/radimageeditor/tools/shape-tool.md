@@ -12,7 +12,7 @@ position:
 
 Since Q2 2015, the Shape Tool is one of the tools, which come out-of-the-box with the __RadImageEditor__ and allow you to draw different shapes over an image.
 
-The tool could be added to the __RadImageEditor__’s UI as shown in __Example 1__.
+The tool could be added to the UI of __RadImageEditor__ as shown in __Example 1__.
 
 #### __[XAML] Example 1: Add Shape Tool__
 {{region radimageeditor-tools-shape-tool_0}}
@@ -39,26 +39,26 @@ The namespaces that should be registered are as follows:
     xmlns:shapes="clr-namespace:Telerik.Windows.Media.Imaging.Shapes;assembly=Telerik.Windows.Controls.ImageEditor"
 {{endregion}}
 
-By default, the __Shape Tool__ provides three predefined shapes:
+By default, the __ShapeTool__ provides three predefined shapes:
 
-* __Line__: allows to draw lines only with dragging.
+* __Line__: Allows to draw lines only with dragging.
 
 ![Rad Image Editor Draw Line Shape](images/RadImageEditor_ShapeTool-01.png)
 
-* __Rectangle__ – draws rectangles or squares (when the Lock Ratio property is set to true)
+* __Rectangle__: Draws rectangles or squares (when the __LockRatio__ property is set to true)
 
 ![Rad Image Editor Draw Rectangle Shape](images/RadImageEditor_ShapeTool-02.png) 
 
-* __Ellipse__ – allows you to create ellipses or circles (when the Lock Ratio property is set to true)
+* __Ellipse__: Allows you to create ellipses or circles (when the __LockRatio__ property is set to true)
 
 ![Rad Image Editor Draw Ellipse Shape](images/RadImageEditor_ShapeTool-03.png)
 
-The __Shape Tool__ provides an options to easily customize your shape – you can choose if the shape will be filled with some color or it will consist only of borders, which color and thickness also depends on your preferences. You could take advantage of the __Lock Ratio__ property, which will ensure that the proportions of the shape will be always the same when resizing.
+The __Shape Tool__ provides an options to easily customize your shape – you can choose if the shape will be filled with some color or it will consist only of borders, which color and thickness also depends on your preferences. You could take advantage of the __LockRatio__ property, which will ensure that the proportions of the shape will be always the same when resizing.
 
 
 ## How to create a custom shape
 
-You could customize the shapes in the __Shape Tool__ to fit specific requirements. To create a custom shape, the simple __IShape__ interface should be implemented. 
+You could customize the shapes in the __ShapeTool__ to fit specific requirements. To create a custom shape, the simple __IShape__ interface should be implemented. 
 
 
 #### __[C#] Example 3: Inherit the IShape Interface__
@@ -177,7 +177,7 @@ Example 4 shows a sample implementation of a custom shape.
 
 ## Add Custom Shape 
 
-After creating a custom shape, it should be registered in the tool. This could be achieved declaratively as well as in the code behind as shown in __Examples 5 and 6__. You could get or set the shapes in the __Shape Tool__ trough the __Shapes__ collection. 
+After creating a custom shape, it should be registered in the tool. This could be achieved declaratively as well as in the code behind as shown in __Examples 5 and 6__. You could get or set the shapes in the __ShapeTool__ trough the __Shapes__ collection. 
 
 #### __[C#] Example 5: Add Custom Shape to the Shape Tool__
 {{region radimageeditor-tools-shape-tool_4}}

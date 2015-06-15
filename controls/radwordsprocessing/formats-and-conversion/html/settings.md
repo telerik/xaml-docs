@@ -185,21 +185,24 @@ __Example 2__ demonstrates how you can create export settings.
 #### __[C#] Example 2: Create HtmlExportSettings__
 
 {{region radwordsprocessing-formats-and-conversion-html-settings_1}}
-    HtmlFormatProvider provider = new HtmlFormatProvider();
-    HtmlExportSettings exportSettings = new HtmlExportSettings();
-
-    byte[] data = null;
-    exportSettings.BordersMinimalThickness = 1;
-    exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
-    exportSettings.IndentDocument = true;
-    exportSettings.ImageExporting += (s, e) =>
-    {
-        e.Source = "test.jpg";
-        data = e.Image.ImageSource.Data;
-        e.Handled = true;
-    };
-
-    provider.ExportSettings = exportSettings;
+	HtmlFormatProvider provider = new HtmlFormatProvider();
+	HtmlExportSettings exportSettings = new HtmlExportSettings();
+	
+	byte[] data = null;
+	exportSettings.BordersMinimalThickness = 1;
+	exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
+	exportSettings.IndentDocument = true;
+	exportSettings.ImageExporting += (s, e) =>
+	{
+	    e.Source = "test.jpg";
+	    data = e.Image.ImageSource.Data;
+	    e.Handled = true;
+	    e.Title = "Test image";
+	    e.ExportSize = true;
+	    e.AlternativeText = "You will see this text if the image is not loaded";               
+	};
+	
+	provider.ExportSettings = exportSettings;
 {{endregion}}
 
 

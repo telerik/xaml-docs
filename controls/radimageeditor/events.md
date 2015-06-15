@@ -5,7 +5,7 @@ description: Events
 slug: radimageeditor-events
 tags: events
 published: True
-position: 5
+position: 7
 ---
 
 # Events

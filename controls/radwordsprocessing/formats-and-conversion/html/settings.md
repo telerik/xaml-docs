@@ -116,6 +116,7 @@ Specifies the base path for the "src" attribute of the exported image tags. This
 
 The event is raised for every image in the document. The event argument exposes the following options:
             
+* __Title__: Allows to set the _title_ attribute of the _image_ element.
 
 * __AlternativeText__: Can be used to specify the content of the 'alt' attribute of the image. It is null by default and the attribute is not exported.
                 
@@ -128,6 +129,8 @@ The event is raised for every image in the document. The event argument exposes 
 
 * __Source__: Can be used to specify the value of the 'src' attribute of the 'image' element. If __ImagesExportMode__ is set to __External__, tthe source can be set to absolute or relative path pointing to the image file.
                 
+* __ExportSize__: With this property you could specify whether the _width_ and _height_ attributes of an _image_ element should be exported. The default value is _true_.
+
 
 ### StylesExportMode
 
@@ -182,21 +185,24 @@ __Example 2__ demonstrates how you can create export settings.
 #### __[C#] Example 2: Create HtmlExportSettings__
 
 {{region radwordsprocessing-formats-and-conversion-html-settings_1}}
-    HtmlFormatProvider provider = new HtmlFormatProvider();
-    HtmlExportSettings exportSettings = new HtmlExportSettings();
-
-    byte[] data = null;
-    exportSettings.BordersMinimalThickness = 1;
-    exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
-    exportSettings.IndentDocument = true;
-    exportSettings.ImageExporting += (s, e) =>
-    {
-        e.Source = "test.jpg";
-        data = e.Image.ImageSource.Data;
-        e.Handled = true;
-    };
-
-    provider.ExportSettings = exportSettings;
+	HtmlFormatProvider provider = new HtmlFormatProvider();
+	HtmlExportSettings exportSettings = new HtmlExportSettings();
+	
+	byte[] data = null;
+	exportSettings.BordersMinimalThickness = 1;
+	exportSettings.DocumentExportLevel = DocumentExportLevel.Fragment;
+	exportSettings.IndentDocument = true;
+	exportSettings.ImageExporting += (s, e) =>
+	{
+	    e.Source = "test.jpg";
+	    data = e.Image.ImageSource.Data;
+	    e.Handled = true;
+	    e.Title = "Test image";
+	    e.ExportSize = true;
+	    e.AlternativeText = "You will see this text if the image is not loaded";               
+	};
+	
+	provider.ExportSettings = exportSettings;
 {{endregion}}
 
 

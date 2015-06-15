@@ -69,7 +69,9 @@ Available __Tools__:
 
 * DrawTextTool
 
-* DrawTool
+* [DrawTool]({%slug radimageeditor-tools-drawing%})
+
+* [ShapeTool]({%slug radimageeditor-tools-shape-tool%})
 
 
 >tipAll tools are located in the Telerik.Windows.Media.Imaging.Tools namespace and can be created in XAML.<br/> __xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"__

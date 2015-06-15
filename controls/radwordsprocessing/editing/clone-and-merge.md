@@ -123,7 +123,7 @@ __Clone()__ method has two overloads:
 
 
 
-## Cloning Styling Objects
+## Cloning Other Objects
 
 The following styling objects also implement __Clone()__ method, which can be used to create deep copies of them:
 
@@ -134,6 +134,7 @@ The following styling objects also implement __Clone()__ method, which can be us
 
 * __ListLevel__
 
+* __Watermark__
 
 
 # See Also

@@ -105,9 +105,39 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 	Loop While position.MoveToNextWordStart()
 {{endregion}}
 
-
-
 ![](images/RadRichTextBox_Selection_01.png)
+
+When working with ranges, you may need to check what elements are included in a selection range. This could be achieved with the RangeType property of __SelectionRange__. This property is of type __SelectionRangeType__ and could have one of the following values:
+
+* __Composite__: Represents selection range with mixed elements.
+
+* __Table__: __SelectionRange__, which contains a [Table]({%slug radrichtextbox-features-document-elements-tables%}).
+
+* __TableRow__: The range consists of a __TableRow__.
+
+* __TableCell__: __TableCell__ selection range.
+
+#### __C#__
+
+{{region radrichtextbox-features-selection_4}}
+	SelectionRange selectionRange = this.radRichTextBox.Document.Selection.Ranges.First();
+	if (selectionRange.RangeType == SelectionRangeType.Table)
+	{
+	    SetTableProperties();
+	}
+{{endregion}}
+
+
+
+#### __VB.NET__
+
+{{region radrichtextbox-features-selection_5}}
+	Dim selectionRange As SelectionRange = Me.radRichTextBox.Document.Selection.Ranges.First()
+	If selectionRange.RangeType = SelectionRangeType.Table Then
+		SetTableProperties()
+	End If
+{{endregion}}
+
 
 # See Also
 

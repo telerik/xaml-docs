@@ -12,7 +12,7 @@ position: 1
 
 
 
-The __RadRichTextBox__ supports not only selection via the UI, but also programmatic selection. This topic will explain you how to:
+The __RadRichTextBox__ supports not only selection via the UI, but also programmatic selection. This topic covers the following:
 
 * [Use UI Selection](#ui-selection)
 
@@ -26,7 +26,7 @@ The user is able to select the content of the __RadRichTextBox__ in the same way
 
 ## Programmatic Selection
 
-The developer is allowed to work with the selection programmatically. This can be used when having a __Find__ functionality in your __RadRichTextBox__ and you want to select the found string. Examples that involve the programmatic selection can be found in the How To section.
+The developer is allowed to work with the selection programmatically. This can be used when implementing [Search functionality]({%slug radrichtextbox-features-search%}) functionality in your __RadRichTextBox__ and you want to select the found string. 
 
 The programmatic selection gets implemented via the __DocumentSelection__ class. The instance of the class gets associated with the __RadDocument__ of the __RadRichTextBox__ and allows you to specify selection starts and ends, selection ranges and other. You can manage the selection by either using the __Selection__ property of the __RadDocument__ or by creating an instance of the __DocumentSelection__ class.
 
@@ -37,12 +37,12 @@ Here is an example of how to select the current word.
 #### __C#__
 
 {{region radrichtextbox-features-selection_0}}
-	DocumentPosition startPosition = this.radRichTextBox.Document.CaretPosition; //new DocumentPosition( this.radRichTextBox.Document );
-	DocumentPosition endPosition = new DocumentPosition(startPosition);
-	startPosition.MoveToCurrentWordStart();
-	endPosition.MoveToCurrentWordEnd();
-	this.radRichTextBox.Document.Selection.AddSelectionStart(startPosition);
-	this.radRichTextBox.Document.Selection.AddSelectionEnd(endPosition);
+    DocumentPosition startPosition = new DocumentPosition(this.radRichTextBox.Document.CaretPosition);
+    DocumentPosition endPosition = new DocumentPosition(startPosition);
+    startPosition.MoveToCurrentWordStart();
+    endPosition.MoveToCurrentWordEnd();
+    this.radRichTextBox.Document.Selection.SetSelectionStart(startPosition);
+    this.radRichTextBox.Document.Selection.AddSelectionEnd(endPosition);
 {{endregion}}
 
 
@@ -50,12 +50,11 @@ Here is an example of how to select the current word.
 #### __VB.NET__
 
 {{region radrichtextbox-features-selection_1}}
-	Dim startPosition As DocumentPosition = Me.radRichTextBox.Document.CaretPosition
-	\'new DocumentPosition(this.radRichTextBox.Document);
+	Dim startPosition As New DocumentPosition(Me.radRichTextBox.Document.CaretPosition)
 	Dim endPosition As New DocumentPosition(startPosition)
 	startPosition.MoveToCurrentWordStart()
 	endPosition.MoveToCurrentWordEnd()
-	Me.radRichTextBox.Document.Selection.AddSelectionStart(startPosition)
+	Me.radRichTextBox.Document.Selection.SetSelectionStart(startPosition)
 	Me.radRichTextBox.Document.Selection.AddSelectionEnd(endPosition)
 {{endregion}}
 
@@ -63,7 +62,7 @@ Here is an example of how to select the current word.
 
 ## Multi-Range Selection
 
-You can implement Multi-Range Selection by either calling multiple times the __AddSelectionStart()__ and __AddSelectionEnd()__ methods or by working with the __Ranges__ collection.
+You can implement multi-range Selection by either calling multiple times the __AddSelectionStart()__ and __AddSelectionEnd()__ methods or by working with the __Ranges__ collection.
 
 Here is an example of selecting each "RadRichTextBox" word in the text. This example uses the first approach.
 
@@ -83,7 +82,8 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 	        this.radRichTextBox.Document.Selection.AddSelectionEnd(wordEndPosition);
 	
 	    }
-	} while (position.MoveToNextWordStart());
+	} 
+	while (position.MoveToNextWordStart());
 {{endregion}}
 
 
@@ -105,9 +105,39 @@ Here is an example of selecting each "RadRichTextBox" word in the text. This exa
 	Loop While position.MoveToNextWordStart()
 {{endregion}}
 
-
-
 ![](images/RadRichTextBox_Selection_01.png)
+
+When working with ranges, you may need to check what elements are included in a selection range. This could be achieved with the __RangeType__ property of __SelectionRange__. This property is of type __SelectionRangeType__ and could have one of the following values:
+
+* __Composite__: Represents selection range with mixed elements.
+
+* __Table__: __SelectionRange__, which contains a [Table]({%slug radrichtextbox-features-document-elements-tables%}).
+
+* __TableRow__: The range consists of a __TableRow__.
+
+* __TableCell__: __TableCell__ selection range.
+
+#### __C#__
+
+{{region radrichtextbox-features-selection_4}}
+	SelectionRange selectionRange = this.radRichTextBox.Document.Selection.Ranges.First();
+	if (selectionRange.RangeType == SelectionRangeType.Table)
+	{
+	    SetTableProperties();
+	}
+{{endregion}}
+
+
+
+#### __VB.NET__
+
+{{region radrichtextbox-features-selection_5}}
+	Dim selectionRange As SelectionRange = Me.radRichTextBox.Document.Selection.Ranges.First()
+	If selectionRange.RangeType = SelectionRangeType.Table Then
+		SetTableProperties()
+	End If
+{{endregion}}
+
 
 # See Also
 

@@ -53,7 +53,9 @@ The __PrintSettings__ class holds all possible customization options when invoki
               
 
 * __ForceVector__: Forces vector printing in Silverlight 5. Its default value is true. If set to false, tries to execute vector printing and in case it fails the "old" bitmap printing is executed.
-              
+    
+* __OpacityThreshold__: Gets or sets the opacity value of visual elements at which Silverlight 5 will round the opacity to 1.0 to support vector printing on PostScript printers or drivers.
+          
 
 #### __C#__
 
@@ -62,8 +64,10 @@ The __PrintSettings__ class holds all possible customization options when invoki
 	    {
 	        DocumentName = "My document",
 	        PageMargins = new Thickness(50),
-	        ForceVector = true
+	        ForceVector = true,
+            OpacityThreshold = 0.5
 	    };
+
 	    this.pdfViewer.Print(settings);
 {{endregion}}
 {% endif %}
@@ -86,6 +90,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 	        PageMargins = new Thickness(50),
 	        UseDefaultPrinter = true
 	    };
+
 	    this.pdfViewer.Print(settings);
 {{endregion}}
 

@@ -11,13 +11,13 @@ position: 6
 # Watermark
 
 
-Watermarks are text or pictures that appear behind document text and often identify the document status, for example by marking it as Draft. 
+Watermarks are text or pictures that appear behind document content and often identify the document status, for example by marking it as Draft. 
 
 
 ## Watermark Overview
 
 
-The class determining a watermark is __Watermark__ and exposes the following properties:
+The class representing a watermark is __Watermark__ and exposes the following properties:
 
 * __WatermarkType:__ The type of the watermark, described with the [WatermarkType](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_flow_model_watermarks_watermarktype.htm) enumeration.
 	* __Image:__ Watermark containing an image.
@@ -34,7 +34,7 @@ __WatermarkSettingsBase__ is the base class for text and image watermark setting
 
 ## Create a Watermark
 
-Creating a watermark through the constructor of the class requires to pass as a parameter of type __TextWatermarkSettings__ or __ImageWatermarkSettings__, depending of the type of watermark you want to create.
+Creating a watermark through the constructor of the class requires to pass as a parameter an object of type __TextWatermarkSettings__ or __ImageWatermarkSettings__, depending of the type of watermark you want to create.
 
 __Example 1__ demonstrates the creation of a text watermark.
 

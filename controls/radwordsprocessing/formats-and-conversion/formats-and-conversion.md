@@ -125,7 +125,7 @@ Not applicable</td><td>
 Not applicable</td><td>
 Supported</td></tr><tr><td>
 Columns</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>
-Watermark</td><td></td><td></td><td></td><td></td><td>
+Watermark</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>
 Not applicable</td><td>
 Not applicable</td><td></td></tr><tr><td>
 Headers/Footers</td><td>

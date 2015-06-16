@@ -80,7 +80,7 @@ Watermarks are preserved in the header of the section to which the watermark is 
 
 __Example 3__ demonstrates how you can add the watermark created in __Example 1__ to a __RadFlowDocument__ by creating a __Header__ for its first __Section__.
 
-### [C#] Example 3: Add Watermark to Header
+#### __[C#] Example 3: Add Watermark to Header__
 
 {{region radwordsprocessing-concepts-watermark_2}}
     Header header = document.Sections.First().Headers.Add(HeaderFooterType.Default);
@@ -95,7 +95,7 @@ There is another way to set a watermark in a document - through the [RadFlowDocu
 __Example 4__ demonstrates how to set the watermark created in __Example 2__ through __RadFlowDocumentEditor__ to the first page of a section. The method will create the __Header__ element for you, and you only need to specify its type.
 
 
-### [C#] Example 4: Set Watermark With RadFlowDocumentEditor
+#### __[C#] Example 4: Set Watermark With RadFlowDocumentEditor__
 
 {{region radwordsprocessing-concepts-watermark_3}}
     Section section = editor.Document.Sections.AddSection();

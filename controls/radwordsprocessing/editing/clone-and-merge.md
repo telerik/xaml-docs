@@ -18,7 +18,7 @@ position: 0
 
 * [Cloning Document Elements](#cloning-document-elements)
 
-* [Cloning Styling Objects](#cloning-styling-objects)
+* [Cloning Other Objects](#cloning-other-objects)
 
 ## Merging Documents
 

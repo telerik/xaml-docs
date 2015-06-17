@@ -10,10 +10,6 @@ position: 0
 
 # Introduction
 
-
-
-## 
-
 Telerik __RadChartView__ is essentially a tool set of charting components designed to help you create a variety of rich data-visualization applications. It provides 3 different chart types:
 
 1. __RadCartesianChart__

@@ -282,7 +282,7 @@ navigation:
     "*point-series":
         title: Point Series
     controls/radcloudupload:
-        title: RadCouldUpload
+        title: RadCloudUpload
     controls/radcoloreditor:
         title: RadColorEditor
     controls/radcoloreditor/overview:

@@ -251,14 +251,9 @@ Columns
 
 </td><td>
 
-</td></tr><tr><td>
-
-Watermark
-              </td><td>
-
-</td><td>
-
-</td></tr><tr><td>
+</td></tr><tr>
+<td>Watermark</td><td>Yes</td>
+<td></td></tr><tr><td>
 
 <b>
                   Table

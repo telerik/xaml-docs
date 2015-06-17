@@ -35,6 +35,7 @@ __RadFixedDocument__ is the root that contains all other elements in the __RadPd
 
 __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
         
+<a name="example1"><a/>
 
 #### __[C#] Example 1: Create RadFixedDocument__
 
@@ -49,7 +50,7 @@ __Example 1__ shows how you can create a new __RadFixedDocument__ instance.
 There are different actions which you can execute with the help of a __RadFixedDocument__. For example, you can add a __RadFixedPage__ to an existing document.
         
 
-__Example 2__ adds a page to the document created in __Example 1__.
+__Example 2__ adds a page to the document created in [__Example 1__](#example1).
         
 
 #### __[C#] Example 2: Add page to RadFixedDocument__
@@ -63,7 +64,7 @@ __Example 2__ adds a page to the document created in __Example 1__.
 Alternatively, you can create new __RadFixedPage__ and add it to the __Pages__ collection of a document.
         
 
-__Example 3__ creates a page and adds it to the document created in __Example 1__.
+__Example 3__ creates a page and adds it to the document created in [__Example 1__](#example1).
         
 
 #### __[C#] Example 3: Create and add a page to RadFixedDocument__
@@ -74,6 +75,16 @@ __Example 3__ creates a page and adds it to the document created in __Example 1_
 {{endregion}}
 
 
+Since Q2 2015 you can merge PDF documents out-of-the-box with the Merge() method of __RadFixedDocument__. This method appends the source document to the current instance of __RadFixedDocument__.
+
+#### __[C#] Example 4: Merge Documents__
+
+{{region radpdfprocessing-model-radfixeddocument_3}}
+	document.Merge(source);
+{{endregion}}
+
+The code from __Example 4__ will merge the document created in [__Example 1__](#example1) with another __RadFixedDocument__.
+
 ## Document Information
 
 __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocumentInfo__, intended to hold additional information about the document. The __RadFixedDocumentInfo__ class allows to set the following properties:
@@ -82,7 +93,7 @@ __RadFixedDocument__ exposes a __DocumentInfo__ property of type __RadFixedDocum
 * __Title__: The title of the document.
 * __Description__: Text that describes the content of the document.
 
-#### __[C#] Example 4: Set DocumentInfo__
+#### __[C#] Example 5: Set DocumentInfo__
 
 {{region radpdfprocessing-model-radfixeddocument_3}}
 	document.DocumentInfo.Author = "Jane Doe";

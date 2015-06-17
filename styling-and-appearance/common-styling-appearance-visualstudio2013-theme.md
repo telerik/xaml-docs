@@ -110,6 +110,8 @@ The official Q1 2015 release of Telerik UI for {% if site.site_name == 'WPF' %}W
 
 All Telerik controls use resources that are linked to one major singleton object that contains the __FontSize__ and __FontFamily__ properties used for the __VisualStudio2013__ theme. These properties are public so you can easily modify the theme resources at one single point. The most commonly used __FontSize__ in the theme is named __FontSize__ and its default value is *12*. The bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as __RadRibbonView__, __RadGauge__, __RadGanttView__, etc. As for the __FontFamily__ - there is only one __FontFamily__ resource which is named __FontFamily__ and it is set to *Segoe UI*.
 
+>Please note that for complex scenarios we strongly recommend setting font size only initially before the application is initialized. We recommend font sizes between 11px and 19px for the __FontSize__ property.
+
 All the available __FontSizes__ and __FontFamily__ as well as their __default values__:
 
 #### __C#__

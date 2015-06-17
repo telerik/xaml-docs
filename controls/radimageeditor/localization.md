@@ -5,7 +5,7 @@ description: Localization
 slug: radimageeditor-localization
 tags: localization
 published: True
-position: 6
+position: 8
 ---
 
 # Localization

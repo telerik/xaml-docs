@@ -124,7 +124,7 @@ The following code snippet demonstrates how to add different headers for odd and
 
 
 
-### Linking headers/footers to previous Section headers/footers
+### Linking Headers/Footers to Orevious Section Headers/Footers
 
 When visualizing flow documents, applications may apply additional rules for evaluating the header/footer which should be presented on a particular page. If header/footer of given type is omitted for a __Section__, it is inherited from the previous section (also known as "linked to previous"), or – if this is the first section – blank header/footer is used.
             
@@ -132,10 +132,17 @@ When visualizing flow documents, applications may apply additional rules for eva
 For example, if a document with two sections is created and __Default__, __Even__ and __Odd__ properties are set to headers (footers) only for the first section, the second section is visualized with the same set of headers (footers). If you want to explicitly set blank headers (footers) for a given section, you should explicitly set them to blank headers (footers).
             
 
+### Adding Watermarks to Header
+
+Elements of type __Header__ have a property corresponding to a collection of watermarks - __Watermarks__. The property provides the ability to add a __Watermark__ to the specific header with the __Add()__ method.
+
+Information on the types of watermarks and their use is available in the [Watermark]({%slug radwordsprocessing-concepts-watermark%}) help article.
+
+
+
 # See Also
 
  * [HeaderFooterBase API Reference](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_headerfooterbase.html)
-
  * [Document model]({%slug radwordsprocessing-model%})
-
  * [Section]({%slug radwordsprocessing-model-section%})
+ * [Watermark]({%slug radwordsprocessing-concepts-watermark%})

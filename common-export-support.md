@@ -11,33 +11,82 @@ position: 11
 # Export Support
 
 More often than not, it is a good idea to be able to persist the data that the different controls show and edit during the life cycle of the application even after the application is closed. There are different ways to save this information and various approaches can be adopted depending on the type of the content.
-	  
-## Export using ExportExtensions
 
-Some of our controls can be exported directly using the *ExportExtensions* class which is part of the __Telerik.Windows.Controls__ assembly. It allows you to export in several file formats listed below:
-		
-1. __Image formats__
 
-	* __Png__ - Portable Netwok Graphic. Use ExportToImage(FrameworkElement, Stream) method.
+## Built-In Export
 
-	* __Bmp__ - Bitmap file. Use ExportToImage(FrameworkElement, Stream, BitmapEncoder) where the encoder is of type BmpBitmapEncoder().
-	
-	* __Xps__ - XML Paper Specification file. Use ExportToXpsImage(FrameworkElement, Stream) method to export some content as an XPS image.
 
-	This is particularly convenient for controls which have a size that allows direct export on one page, such as a __RadGauge__ or a __RadChart__ for example.
-	
-1. __ExcelML__ - ExcelML file, supported by Office 2003 and above. Use ExportToExcelML(FrameworkElement, Stream) method.
+Several of the controls in the Telerik UI for WPF suite come with built-in export capabilities. Among those are  __RadDiagram__, __RadGridView__ and __RadRichTextBox__. 
 
-	For instance, controls that support export to ExcelML are __RadChart__ and __RadGridView__.
+
+To learn more about these abilities take a look at the *Export* article in the desired control's documentation. 
+
+
+## Document Processing Integration
+
+
+The Telerik UI for WPF suite contains three separate document libraries specifically designed for import, export and document editing.
+
+
+* [RadPdfProcessing]({%slug radpdfprocessing-overview%}): Supports export to PDF.
+* [RadSpreadProcessing]({%slug radspreadprocessing-overview%}): Supports export to XLSX, CSV, PDF and plain text (TXT).
+* [RadWordsProcessing]({%slug radwordsprocessing-overview%}): Supports export to DOCX, RTF, HTML, PDF and plain text(TXT).
+
+
+All three libraries give you the ability to create a document from scratch and export it to its supported file formats. This means you can export practically any control either by exporting it to an image and adding the image to the resulting document or by creating an appropriate for the context structure (for example, a table when exporting RadGridView to DOCX).
+
+
+There are several controls that already provide sample code which you can use as the base of export functionality, you could take a look at them in the Telerik XAML SDK repository:
+
+
+*  [RadDiagram Export to PDF](https://github.com/telerik/xaml-sdk/tree/master/Diagram/ExportToPDF)
+*  [RadPivotGrid Export to XLSX, DOCX, HTML and PDF](https://github.com/telerik/xaml-sdk/blob/master/PivotGrid/ExportPivotGrid/Example.xaml.cs)
+*  [RadPdfProcessing Export UI Element to PDF](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement)
+
+
+### Export XAML UI Elements to PDF
+
+
+The API of __RadPdfProcessing__ is designed to resemble XAML and this allows you easy conversion of UI elements to PDF by converting any XAML primitive to a PDF instruction. For base of such conversion you can use the  [RadPdfProcessing Export UI Element to PDF](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement) example which demonstrates how to export several of the controls in the Telerik UI fro WPF suite, including a combination of several controls in the same view.
+
+
+![Common Export Support](images/Common_Export_Support_01.png) 
+
+ 
+The code operates with a set of renderers deriving from the base __UIElementRendererBase__ - __TextBlockRenderer__, __BorderRenderer__, etc. This allows separation, since each concrete render is responsible for drawing the element it is intended for without dependencies to the other renderers, and gives you the ability to extend the sample code to fit your precise needs if you need to.
+
+
+Take a look at the [source code of the example on GitHub](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement) and the documentation of the relevant [FixedDocumentEditor]({%slug radpdfprocessing-editing-fixedcontenteditor%}) class.
+
+
+## Export Images With ExportExtensions
+
+
+Some controls can be exported directly using the __ExportExtensions__ class which is part of the __Telerik.Windows.Controls__ assembly. It allows you to export in several image formats listed below:
+
+
+ __Image formats__
+
+* __Png:__ Portable Netwok Graphic. Use __ExportToImage(FrameworkElement, Stream)__ method.
+
+* __Bmp:__ Bitmap file. Use __ExportToImage(FrameworkElement, Stream, BitmapEncoder)__ where the encoder is of type __BmpBitmapEncoder__.
+
+* __Xps:__ XML Paper Specification file. Use __ExportToXpsImage(FrameworkElement, Stream)__ method to export content as an XPS image.
+
+
+This approach is convenient for controls which have a size that allows direct export on one page, such as a __RadGauge__ for example.
+
 
 {% if site.site_name == 'WPF' %}
->In WPF there are overloads for the methods listed above, which take as parameter the name of the file you want to export to, instead of a stream. This allows you to easily export your control directly to a file.
+>There are overloads for the methods listed above, which take as parameter the name of the file you want to export to, instead of a stream. This allows you to easily export your control directly to the file system.
 {% endif %}
 
-The following example demonstrates how to export RadGauge to Png file format. The physical path to the image is provided run-time via *SaveFileDialog*:
+
+__Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The physical path to the image is provided run-time via __SaveFileDialog__:
+
 
 {% if site.site_name == 'Silverlight' %}
-#### __C#__
+#### __[C#] Example 1: Export Control to PNG__
 
 {{region common-export-support_0}}
 	 private void Button_Click(object sender, RoutedEventArgs e)
@@ -60,7 +109,7 @@ The following example demonstrates how to export RadGauge to Png file format. Th
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Export Control to PNG__
 
 {{region common-export-support_1}}
 	 Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -77,7 +126,7 @@ The following example demonstrates how to export RadGauge to Png file format. Th
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __C#__
+#### __[C#] Example 1: Export Control to PNG__
 
 {{region common-export-support_2}}
 	 private void Button_Click(object sender, RoutedEventArgs e)
@@ -100,7 +149,7 @@ The following example demonstrates how to export RadGauge to Png file format. Th
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Export Control to PNG__
 
 {{region common-export-support_0}}
 	 Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -116,116 +165,16 @@ The following example demonstrates how to export RadGauge to Png file format. Th
 {{endregion}}
 {% endif %}
 
-## Export through RadDocument
 
-__RadDocument__ is the document used in __RadRichTextBox__, but you can also create a document programmatically, insert different content and then proceed to save the document.
-The formats that RadDocument can be exported to are:
-		
-* DOCX;
 
-* RTF;
+## See Also
 
-* HTML;
+* [RadPdfProcessing]({%slug radpdfprocessing-overview%})
 
-* PDF;
+* [RadSpreadProcessing]({%slug radspreadprocessing-overview%})
 
-* plain text.
+* [RadWordsProcessing]({%slug radwordsprocessing-overview%})
 
-This approach should be utilized when the content is more complex – text and images, tables, etc. and spans several pages. What should be kept in mind is to create the document in accordance with the structure outlined here:{% if site.site_name == 'WPF' %}[Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%}){% endif %}{% if site.site_name == 'Silverlight' %}[Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%}){% endif %}.
-		
-Examples for creating a RadDocument with different content can be found in RadRichTextBox's documentation: {% if site.site_name == 'WPF' %}[Printing guidelines]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%}){% endif %}{% if site.site_name == 'Silverlight' %}[Printing guidelines]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%}){% endif %}.
-		
-The export of RadDocument is carried out through format providers - there is a different format provider for each of the formats. Detailed information on the assembly references that must be added and the customization options can be found in the Import/Export article: {% if site.site_name == 'WPF' %}[Export using format providers]({%slug radrichtextbox-features-import-export%}){% endif %}{% if site.site_name == 'Silverlight' %}[Export using format providers]({%slug radrichtextbox-features-import-export%}){% endif %}.
-		
-Here is a simple example how a document with a RadChart, a RadGauge and some text can be created and exported to docx:		
+* [RadGridView Export]({%slug gridview-export%})
 
-#### __C#__
-
-{{region common-export-support_1}}
-	private void export_Click(object sender, System.Windows.RoutedEventArgs e)
-	    {
-	        SaveFileDialog sfd = new SaveFileDialog();
-	        sfd.DefaultExt = "docx";
-	        sfd.Filter = "docx File (*.docx) | *.docx";
-	        if (sfd.ShowDialog() == true)
-	        {
-	            using (Stream saveFileStream = sfd.OpenFile())
-	            {
-	                RadDocument document = new RadDocument();
-	                Section section = new Section();
-	                document.Sections.Add(section);
-	                Paragraph paragraph = new Paragraph();
-	                section.Blocks.Add(paragraph);
-	                Span span = new Span("Here comes a RadChart:");
-	                paragraph.Inlines.Add(span);
-	
-	                using (var stream = new MemoryStream())
-	                {
-	                    Telerik.Windows.Media.Imaging.ExportExtensions.ExportToImage(this.radChart, stream, new PngBitmapEncoder());
-	                    stream.Flush();
-	                    stream.Seek(0, SeekOrigin.Begin);
-	                    paragraph.Inlines.Add(new ImageInline(stream));
-	                }
-	
-	                Paragraph paragraph2 = new Paragraph();
-	                section.Blocks.Add(paragraph2);
-	                Span span2 = new Span("And this is a RadGauge in the same document:");
-	                paragraph2.Inlines.Add(span2);
-	                using (var stream2 = new MemoryStream())
-	                {
-	                    Telerik.Windows.Media.Imaging.ExportExtensions.ExportToImage(this.radGauge, stream2, new PngBitmapEncoder());
-	                    stream2.Flush();
-	                    stream2.Seek(0, SeekOrigin.Begin);
-	                    paragraph2.Inlines.Add(new ImageInline(stream2));
-	                }
-	                DocxFormatProvider docx = new DocxFormatProvider();
-	                document.EnsureDocumentMeasuredAndArranged();
-	                docx.Export(document, saveFileStream);
-	            }
-	        }
-	    }
-	}
-{{endregion}}
-
-#### __VB__
-
-{{region common-export-support_2}}
-	    Public Sub export_click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	        Dim sfd As New SaveFileDialog()
-	        sfd.DefaultExt = "docx"
-	        sfd.Filter = "docx File (*.docx) | *.docx"
-	        If sfd.ShowDialog() = True Then
-	            Using saveFileStream As Stream = sfd.OpenFile()
-	                Dim document As New RadDocument()
-	                Dim section As New Section()
-	                document.Sections.Add(section)
-	                Dim paragraph As New Paragraph()
-	                section.Blocks.Add(paragraph)
-	                Dim span As New Span("Here comes a RadChart:")
-	                paragraph.Inlines.Add(span)
-	
-	                Using stream = New MemoryStream()
-	                    Telerik.Windows.Media.Imaging.ExportExtensions.ExportToImage(Me.radChart, stream, New PngBitmapEncoder())
-	                    stream.Flush()
-	                    stream.Seek(0, SeekOrigin.Begin)
-	                    paragraph.Inlines.Add(New ImageInline(stream))
-	                End Using
-	
-	                Dim paragraph2 As New Paragraph()
-	                section.Blocks.Add(paragraph2)
-	                Dim span2 As New Span("And this is a RadGauge in the same document:")
-	                paragraph2.Inlines.Add(span2)
-	                Using stream2 = New MemoryStream()
-	                    Telerik.Windows.Media.Imaging.ExportExtensions.ExportToImage(Me.radGauge, stream2, New PngBitmapEncoder())
-	                    stream2.Flush()
-	                    stream2.Seek(0, SeekOrigin.Begin)
-	                    paragraph2.Inlines.Add(New ImageInline(stream2))
-	                End Using
-	                Dim docx As New DocxFormatProvider()
-	                document.EnsureDocumentMeasuredAndArranged()
-	                docx.Export(document, saveFileStream)
-	            End Using
-	        End If
-	
-	    End Sub
-{{endregion}}
+* [Export UI Element to PDF](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement)

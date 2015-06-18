@@ -11,11 +11,11 @@ position: 5
 # Selection
 
 
-There are a couple of events relevant to the selection in the gridview: __SelectionChanging, SelectionChanged, CurrentCellChanged, SelectedCellChanging and SelectedCellChanged__. The sequence of the events depends on the __SelectionUnit__ property:
+There are a couple of events relevant to the selection in RadGridView: [SelectionChanging](#selectionchanging-event), [SelectionChanged](#selectionchanged-event), [CurrentCellChanged](#currentcellchanged-event), [SelectedCellsChanging](#selectedcellschanging-event) and [SelectedCellsChanged](#selectedcellschanged-event). The sequence of the events depends on the __SelectionUnit__ property:
 
-* __FullRow__ - the __SelectionChanged__ is fired first and after that the __CurrentCellChanged__ event fires. 
+* __FullRow__ - the __SelectionChanged__ is fired first and after that the __CurrentCellChanged__ event fires 
 
-* __Cell__ - the __SelectedCellChanged__ is fired first and after that the __CurrentCellChanged__ event fires T
+* __Cell__ - the __SelectedCellsChanged__ is fired first and after that the __CurrentCellChanged__ event fires
 
 The events are fired by RadGridView each time there is a modification of the __SelectedItems__ / __SelectedCells__ collection, regardless of the way it happened (by user input or programmatically). 
 
@@ -51,7 +51,7 @@ It is fired once a selection is about to be performed and a change in the Select
 {{endregion}}
 
 
-__SelectionChangingEventArgs__ exposes the following specific properties:__AddedItems__ - a collection of the item(s) that has/have been added to the selection.__RemovedItems__ - a collection of the item(s) that has/have been removed from the selection.__IsCancelable__ - gets a value that indicates whether the event is cancelable.__Cancel__ - a boolean property that enables canceling the selection. 
+__SelectionChangingEventArgs__ exposes the following specific properties:__AddedItems__ - a collection of the item(s) that has/have been added to the selection. __RemovedItems__ - a collection of the item(s) that has/have been removed from the selection. __IsCancelable__ - gets a value that indicates whether the event is cancelable. __Cancel__ - a boolean property that enables canceling the selection. 
 
 ## SelectionChanged event
 
@@ -85,17 +85,15 @@ Fires each time there is a change in the __SelectedItems__ collection (a row has
 {{endregion}}
 
 
-The __SelectionChangedEventArgs__ class exposes the following specific properties:
+The __SelectionChangeEventArgs__ class exposes the following specific properties:
 
-* __AddedItems__ - a collection of the item(s) that has/have been added to the selection.
+* __AddedItems__ - a collection of the item(s) that has/have been added to the selection
 
-* __RemovedItems__ - a collection of the item(s) that has/have been removed from the selection.
-
-* __DataControl__ - an instance of __RadGridView__ that has fired the event. 
+* __RemovedItems__ - a collection of the item(s) that has/have been removed from the selection
 
 ## CurrentCellChanged event
 
-This event is raised when a cell is selected. It fires before the __SelectionChanged__ (when SelectionUnit="FullRow") or before the __SelectedCellChanged__ (when SelectionUnit="Cell").
+This event is raised when a cell is selected. It fires before the __SelectionChanged__ (when SelectionUnit="FullRow") or before the __SelectedCellsChanged__ (when SelectionUnit="Cell").
 
 #### __C#__
 
@@ -127,9 +125,9 @@ This event is raised when a cell is selected. It fires before the __SelectionCha
 
 The __GridViewCurrentCellChangedEventArgs__ class exposes the following specific properties:
 
-* __NewCell__ - an instance of the newly selected cell.
+* __NewCell__ - an instance of the newly selected cell
 
-* __OldCell__ - an instance of the previously selected cell.
+* __OldCell__ - an instance of the previously selected cell
 
 ## SelectedCellsChanging event
 
@@ -165,13 +163,13 @@ This event is fired on the time a change in the SelectedCells collection is abou
 
 The __GridViewSelectedCellsChangingEventArgs__ class exposes the following specific properties:
 
-* __AddedCells__ - a collection of the cell(s) that has/have been added to the selection.
+* __AddedCells__ - a collection of the cell(s) that has/have been added to the selection
 
-* __RemovedCells__ - a collection of the cell(s) that has/have been removed from the selection.
+* __RemovedCells__ - a collection of the cell(s) that has/have been removed from the selection
 
-* __IsCancelable__ - gets a value that indicates whether the event is cancelable.
+* __IsCancelable__ - gets a value that indicates whether the event is cancelable
 
-* __Cancel__ - a boolean property that enables canceling the cell selection. 
+* __Cancel__ - a boolean property that enables canceling the cell selection
 
 ## SelectedCellsChanged event
 
@@ -206,9 +204,9 @@ Fires each time there is change in the __SelectedCells__ collection (a cell has 
 
 The __GridViewSelectedCellsChangedEventArgs__ class exposes the following specific properties:
 
-* __AddedCells__ - a collection of the cell(s) that has/have been added to the selection.
+* __AddedCells__ - a collection of the cell(s) that has/have been added to the selection
 
-* __RemovedCells__ - a collection of the cell(s) that has/have been removed from the selection.
+* __RemovedCells__ - a collection of the cell(s) that has/have been removed from the selection
 
 # See Also
 

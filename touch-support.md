@@ -20,9 +20,11 @@ Gesture | - | Description
 ---	|	---	|	---	
 ![Common Touch Support 01](images/Common_TouchSupport_01.png) | Swipe | The user presses and holds on the screen and then drags the finger / stylus in any direction.
 ![Common Touch Support 02](images/Common_TouchSupport_02.png)	|	Pinch	|	The user touches the screen with two (or more) fingers and moves them inwards or outwards.
-![Common Touch Support 03](images/Common_TouchSupport_03.png)	|	Tap	|	The user touches the screen.
+![Common Touch Support 03](images/Common_TouchSupport_03.png)	|	Tap	|	The user touches the screen. *As of version __Q2 2015__, the Tap is represented by a single circle.
 ![Common Touch Support 04](images/Common_TouchSupport_04.png)	|	Tap and Move	|	The user presses and holds the screen for few seconds (between 600ms and 1500ms) and drags his finger / stylus in any direction.
 ![Common Touch Support 05](images/Common_TouchSupport_05.png)	|	Tap and Hold	|	The user presses and holds the screen for a few seconds (more than 1500ms).
+
+>As of version __Q2 2015__, the __Tap is represented by a single circle__. 
 
 ## Controls Behavior
 
@@ -31,6 +33,7 @@ Below are listed the controls and their behavior with the different gestures:
 Control | Swipe	|	Pinch	|	Tap	|	Tap and Move	|	Tap and Hold	|	Custom
 ---	| ---	|	---	|	---	|	---	|	---	|	---
 RadCalendar | Next/Previous	|	Semantic zoom (only outwards)	|	Click	|	-	|	-	|	-
+RadCarousel(wpf) | Next/Previous	|	-	|	Click/Selection	|	-	|	-	|	-
 RadChartView | Scroll	|	Zoom	|	Click/Selection/Tooltip	|	Trackball	|	Show ToolTip	|	-
 RadComboBox | Scroll DropDown	|	-	|	Click	|	-	|	-	|	-
 RadCoverFlow | Scroll with inertia	|	-	|	Click	|	Scroll (if possible)	|	-	|	-

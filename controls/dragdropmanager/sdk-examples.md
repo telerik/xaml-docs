@@ -21,6 +21,7 @@ The [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/mast
 * __[Using DragDropPayloadManager](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DragDropUsingDragDropPayloadManager)__ - 
 This example demonstrates main features of the DragDropPayloadManager as well as their usage within drag and drop between two RadListBoxes.
 * __[Drop user confirmation](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DropUserConfirmation)__ - This example demonstrates how to implement DragDrop with user confirmed drop.
+* __[Drag Drop within RadGridView with Lines](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropWithLines)__ - This example demonstrates how to implement drag and drop within RadGridView, giving the user feedback where the dragged item will be dropped.
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
 * __[Drag drop between text box and another control](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DragDropBetweenTextBoxAndAnotherControl)__ - This example demonstrates how to implement DragDrop between TextBox and other controls.
@@ -28,6 +29,7 @@ This example demonstrates main features of the DragDropPayloadManager as well as
 * __[Using DragDropPayloadManager](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DragDropUsingDragDropPayloadManager)__ - 
 This example demonstrates main features of the DragDropPayloadManager as well as their usage within drag and drop between two RadListBoxes.
 * __[Drop user confirmation](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DropUserConfirmation)__ - This example demonstrates how to implement DragDrop with user confirmed drop.
+* __[Drag Drop within RadGridView with Lines](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropWithLines)__ - This example demonstrates how to implement drag and drop within RadGridView, giving the user feedback where the dragged item will be dropped.
 {% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).

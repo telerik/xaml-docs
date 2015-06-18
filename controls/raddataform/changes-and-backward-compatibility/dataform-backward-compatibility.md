@@ -11,12 +11,15 @@ position: 1
 # Backward Compatibility
 
 
-
 ## Latest Release Notes
 
 You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
-## Breaking changes for Telerik RadDataForm Q1 2013
+## Q2 2015
+
+* DataFormValidationSummary Errors and HasErrors properties are now read-only. Errors still support modifications of its items (add/remove), but it no longer has a public setter.
+
+## Q1 2013
       
 
 * Removed the IsRequired property of DataFormDataField. It was marked as obsolete with Q3 2012
@@ -25,7 +28,7 @@ You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[
 * Removed the Telerik.Windows.Controls.Data.DataForm.ErrorInfo type. It was marked as obsolete with Q3 2012. Telerik.Windows.Controls.Data.ErrorInfo should be used instead
           
 
-## Breaking changes for Telerik RadDataForm Q2 2012 SP1
+## Q2 2012 SP1
       
 
 *  Removed a unneeded item-validation check on cancel.
@@ -34,7 +37,7 @@ You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[
 * Setting the access modifier of __DataFormDataField.GetControlBindingProperty()__ to protected internal.
           
 
-##  Breaking changes for Telerik RadDataForm Q1 2012 SP1
+## Q1 2012 SP1
       
 
 * __Telerik.Windows.Controls.Data.DataForm.ErrorInfo__ is now obsoleted. Use __Telerik.Windows.Controls.Data.ErrorInfo__ instead.

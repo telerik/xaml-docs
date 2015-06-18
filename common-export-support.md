@@ -47,7 +47,7 @@ There are several controls that already provide sample code which you can use as
 ### Export XAML UI Elements to PDF
 
 
-The API of __RadPdfProcessing__ is designed to resemble XAML and this allows you easy conversion of UI elements to PDF by converting any XAML primitive to a PDF instruction. For base of such conversion you can use the  [RadPdfProcessing Export UI Element to PDF](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement) example which demonstrates how to export several of the controls in the Telerik UI fro WPF suite, including a combination of several controls in the same view.
+The API of __RadPdfProcessing__ is designed to resemble XAML and this allows you easy conversion of UI elements to PDF by converting any XAML primitive to a PDF instruction. For base of such conversion you can use the  [RadPdfProcessing Export UI Element to PDF](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement) example which demonstrates how to export several of the controls in the Telerik UI for WPF suite, including a combination of several controls in the same view.
 
 
 ![Common Export Support](images/Common_Export_Support_01.png) 

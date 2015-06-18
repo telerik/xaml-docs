@@ -12,6 +12,8 @@ position: 2
 
 This article describes all the visual elements and terms used in __RadDesktopAlert__ control. 
 
+![Rad Desktop Alert Visual Structure 01](images/RadDesktopAlert_VisualStructure.png)
+
 * __Header__ - this is the header control of __RadDesktopAlert__. It is used to display textual information.
 
 * __Content Area__ - this is the area inside __RadDesktopAlert__ where the content will be hosted. You could set it using the __Content__ property.

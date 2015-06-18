@@ -40,11 +40,11 @@ Using the __ScreenPosition__ property you could easily define the position of __
 
 ## ShowAlert method
 
-In order __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__. Using the method you could easily specify the __Show/HideAnimation__ and the __ScreenPosition__ of the DesktopAlert. 
+In order __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__. Using that method you could easily specify the __Show/HideAnimation__ and the __ScreenPosition__ of the DesktopAlert control. 
 
-__RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This is a class that holds all parameters you need to customize __RadDesktopAlert__ and it is MVVM friendly - it's main idea is for visualization and customization of __RadDesktopAlert__ in MVVM scenarios. The following example will demonstrate how to display an alert in such scenarios.
+__RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This is a class that holds all parameters you need to customize __RadDesktopAlert__ and it is MVVM friendly - it's main idea is for visualization and customization of __RadDesktopAlert__ in MVVM scenarios. The following example will demonstrate how to display an alert in such MVVM scenario.
 
-First, you need to create a new class named ViewModel. Inside it an object of type __RadDesktopAlertManager__ and a Command that calls the __ShowAlert__ method needs to be initialized. For example, the command will be executed when a new mail gets received:
+First, you need to create a new class named ViewModel. Inside it an object of type __RadDesktopAlertManager__ and a Command that calls the __ShowAlert__ method need to be initialized. For example, the command will be executed when a new mail gets received:
 
 #### __[C#]  Creating RadDesktopAlert in MVVM__
 

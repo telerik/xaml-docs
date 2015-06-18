@@ -29,7 +29,7 @@ Paragraphs can be added as a child of a [BlockContainer](http://www.telerik.com/
 The following code snippet creates and inserts a Paragraph to a Section.
         
 
-#### __C#__
+#### __C# Example 1: Insert Paragrpah to a Section__
 
 {{region radwordsprocessing-model-paragraph_0}}
     Paragraph paragraph = new Paragraph(document);
@@ -44,7 +44,7 @@ The following code snippet creates and inserts a Paragraph to a Section.
 You can add a paragraph at a specific index in the __Blocks__ collection of a __BlockContainer__ using the __Insert()__ method. Here is how to add a paragraph at the beginning of a section:
         
 
-#### __C#__
+#### __C# Example 2: Insert Paragrpah at a Specific Position of the Blocks Collection__
 
 {{region radwordsprocessing-model-paragraph_1}}
     Paragraph paragraph = new Paragraph(document);
@@ -56,7 +56,7 @@ You can add a paragraph at a specific index in the __Blocks__ collection of a __
 You can also use the __AddParagraph()__ method of the __Blocks__ collection of a __BlockContainer__. The method creates a new __Paragraph__ instance, adds it to the container and returns it:
         
 
-#### __C#__
+#### __C# Example 3: Create new Paragrpah and add it to a Section__
 
 {{region radwordsprocessing-model-paragraph_2}}
     Paragraph paragraph = section.Blocks.AddParagraph();
@@ -67,7 +67,7 @@ You can also use the __AddParagraph()__ method of the __Blocks__ collection of a
 Inserting a new Paragraph in the document can also be achieved with the [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}) class:
         
 
-#### __C#__
+#### __C#  Example 4: Insert Paragrpah Using the RadFlowDocumentEditor Class__
 
 {{region radwordsprocessing-model-paragraph_3}}
     RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
@@ -143,6 +143,11 @@ __Paragraph__ exposes several properties that allow you to customize the layout 
 
 * __AllowOverflowPunctuation__: Defines whether the last punctuation character on a line can overflow in paragraph margin/indent.
             
+* __ListId__: Specifies the list ID.
+
+* __ListLevel__: Gets a value indicating that the paragraph is referencing list style. The default value is -1, which means that list style is not referenced.
+
+* __TabStops__: Immutable collection, which holds the TabStops of the __Paragraph__. More information can be found in the [TabStop article]({%slug radwordsprocessing-concepts-tabstop%})
 
 ## Operating with a Paragraph
 
@@ -151,10 +156,10 @@ You can add inline elements to a __Paragraph__ instance.
 
 ### Adding a Run
 
-The following code snippet adds a run to an existing paragraph:
+In __Example 5__ is illustrated how to add a run to an existing paragraph:
             
 
-#### __C#__
+#### __C# Example 5: Insert Run in a Paragraph__
 
 {{region radwordsprocessing-model-paragraph_4}}
     Run run = paragraph.Inlines.AddRun();
@@ -170,7 +175,7 @@ For more information about __Run__ element, you can read [this article]({%slug r
 The following code snippet adds an inline image to an existing paragraph:
             
 
-#### __C#__
+#### __C# Example 6: Insert ImageInline__
 
 {{region radwordsprocessing-model-paragraph_5}}
     ImageInline imageInline = paragraph.Inlines.AddImageInline();
@@ -183,19 +188,31 @@ For more information about __ImageInline__ element, you can read [this article](
 
 ### Adding a FloatingImage
 
-The following code snippet adds a floating image to an existing paragraph:
+The code snippet from __Example 7__  adds a floating image to an existing paragraph:
             
 
-#### __C#__
+#### __C# Example 7: Add FloatingImage__
 
 {{region radwordsprocessing-model-paragraph_6}}
     FloatingImage floatingImage = paragraph.Inlines.AddFloatingImage();
 {{endregion}}
 
 
-
 For more information about __ImageInline__ element, you can read [this article]({%slug radwordsprocessing-model-floatingimage%}).
-            
+
+
+### Adding a TabStop
+
+In __Example 8__ is demonstrated how to add a tab stop to the paragraph's collection.
+
+#### __C# Example 8: Insert TabStop__
+
+{{region radwordsprocessing-model-paragraph_7}}
+	TabStop tabstop = new TabStop(Unit.InchToDip(2), TabStopType.Center, TabStopLeader.Hyphen);
+	paragraph.TabStops = paragraph.TabStops.Insert(tabstop);
+{{endregion}}
+
+You can refer to the [TabStop article]({%slug radwordsprocessing-concepts-tabstop%}) for more details about this element.
 
 # See Also
 

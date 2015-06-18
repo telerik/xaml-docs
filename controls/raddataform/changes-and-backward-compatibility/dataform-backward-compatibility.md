@@ -17,7 +17,7 @@ You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[
 
 ## Q2 2015
 
-DataFormValidationSummary Errors and HasErrors properties are now read-only. Errors still support modifications of its items (add/remove), but it no longer has a public setter.
+* DataFormValidationSummary Errors and HasErrors properties are now read-only. Errors still support modifications of its items (add/remove), but it no longer has a public setter.
 
 ## Q1 2013
       

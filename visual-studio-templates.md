@@ -37,14 +37,14 @@ __Figure 1: Select template__
 
 The __Word-Inspired Template__ implements Word-like editing experience represented with the __Telerik UI for WPF__ controls. It provides a complex integration of controls like __RadRibbonWindow__, __RadRibbonView__ and __RadRichTextBox__ in an already set up example. It also demonstrates the broad range of editing and formatting capabilities as well as built in specific features of these controls. In fact the __Word-Inspired Template__ is almost identical to the RadRichTextBox' TelerikEditor example in our __[WPF demos](http://demos.telerik.com/wpf/)__, however it have been visually improved in order to look like the MS Word.
 
-__Figure 1: Word-Inspired Template__
+__Figure 2: Word-Inspired Template__
 ![VisualStudio Templates](images/Common_VisualStudio_Templates_04.png)
 
 ## Excel-Inspired Template
 
 The __Excel-Inspired Template__ implements Excel-like editing experience represented with the __Telerik UI for WPF__ controls. It provides a complex integration of controls like __RadRibbonWindow__, __RadRibbonView__ and __RadSpreadSheet__ in an already set up example. It also demonstrates the broad range of editing and formatting capabilities as well as built in specific features of these controls. In fact the __Word-Inspired Template__ is almost identical to the RadSpreadSheet' Theming example in our __[WPF demos](http://demos.telerik.com/wpf/)__, however it have been visually improved in order to look like the MS Word.
 
-__Figure 2: Excel-Inspired Template__
+__Figure 3: Excel-Inspired Template__
 ![VisualStudio Templates](images/Common_VisualStudio_Templates_05.png)
 
 ## Outlook-Inspired Template
@@ -73,20 +73,20 @@ Full list of controls used in the __Outlook-Inspired Template__ can be found bel
 * RadRadioButton
 * RadScheduleView
 
-You can see how the template looks like on __Figure 3__ and __Figure 4__.
+You can see how the different parts of the template look like on __Figure 4__ and __Figure 5__.
 
 ## Outlook-Inspired Mail Template
 
-The Outlook-Inspired Mail Template can be used separately and it has been integrated as the mail part of the [Outlook-Inspired Template](#outlook-inspired-template). You can see it on __Figure 3__.
+The Outlook-Inspired Mail Template can be used separately and it has been integrated as the mail part of the [Outlook-Inspired Template](#outlook-inspired-template). You can see it on __Figure 4__.
 
-__Figure 3: Outlook-Inspired Mail Template__
+__Figure 4: Outlook-Inspired Mail Template__
 ![VisualStudio Templates](images/Common_VisualStudio_Templates_03.png)
 
 ## Outlook-Inspired Calendar Template
 
-The Outlook-Inspired Calendar Template can be used separately and it has been integrated as the calendar part of the [Outlook-Inspired Template](#outlook-inspired-template). You can see how the template looks like on __Figure 4__.
+The Outlook-Inspired Calendar Template can be used separately and it has been integrated as the calendar part of the [Outlook-Inspired Template](#outlook-inspired-template). You can see how the template looks like on __Figure 5__.
 
-__Figure 4: Outlook-Inspired Calendar Template__
+__Figure 5: Outlook-Inspired Calendar Template__
 ![VisualStudio Templates](images/Common_VisualStudio_Templates_02.png)
 
 # See Also

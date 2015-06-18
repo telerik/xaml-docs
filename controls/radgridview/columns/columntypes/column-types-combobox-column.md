@@ -141,7 +141,7 @@ __Figure 5__![](images/RadGridView_ColumnTypes_5.png)
         
 >If you are setting GridViewComboBoxColumn's __ItemsSource__ property you should specify a valid __Source__ for it. Please refer to this [troubleshooting article]({%slug gridview-troubleshooting-blank-cells%}).
 
->tipYou can download a __runnable project__ of implementing performance improvements from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/LightweightComboboxColumn__  .
+>tipYou can download a __runnable project__ suggesting a modification for performance improvement from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/LightweightComboboxColumn__  .
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
         

@@ -184,7 +184,7 @@ Setting the "ShowHeaderAggregates" to false will hide the default header aggrega
 
 For more details you can check our [Aggregates](http://demos.telerik.com/silverlight/#GridView/Aggregates) demo.
 
->tipYou can download a __runnable project__ on how to sort a group bt aggregate from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/SortGroupByAggregate__  .
+>tipYou can download a __runnable project__ on how to sort a group by aggregate from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/SortGroupByAggregate__  .
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository.         
 

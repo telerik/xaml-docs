@@ -110,6 +110,8 @@ navigation:
         title: RadCoverFlow
     controls/raddocking:
         title: RadDocking
+    controls/raddesktopalert:
+        title: RadDesktopAlert
     controls/radganttview:
         title: RadGanttView
     controls/radlistbox:

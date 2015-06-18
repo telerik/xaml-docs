@@ -235,6 +235,8 @@ Telerik UI for WPF features the following controls:
 
 * [DateTimePicker]({%slug raddatetimepicker-overview%})
 
+* [DesktopAlert]({%slug raddesktopalert-overview%})
+
 * [Diagram Framework]({%slug raddiagram-overview%})
 
 * [Docking]({%slug raddocking-overview2%})

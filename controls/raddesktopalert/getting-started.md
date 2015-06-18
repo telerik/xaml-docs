@@ -42,14 +42,14 @@ In order to visualize it a new instance of __RadDesktopAlertManager__ should be 
 #### __[C#]  Creating RadDesktopAlert__
 
 {{region raddesktopalert-getting-started_1}}
-	RadDesktopAlertManager bottomRightManager = new RadDesktopAlertManager(AlertScreenPosition.BottomRight, 10);
+	RadDesktopAlertManager bottomRightManager = new RadDesktopAlertManager();
 	this.bottomRightManager.ShowAlert(alert);
 {{endregion}}
 
 #### __[VB]  Creating RadDesktopAlert__
 
 {{region raddesktopalert-getting-started_1}}
-	Dim bottomRightManager As New RadDesktopAlertManager(AlertScreenPosition.BottomRight, 10)
+	Dim bottomRightManager As New RadDesktopAlertManager()
 	Me.bottomRightManager.ShowAlert(alert)
 {{endregion}}
 

@@ -669,3 +669,10 @@ Finally, you should populate your __RadGridView__ with sample data and attach th
 		Me.radGridView.ItemsSource = MessageViewModel.Generate()
 		RowReorderBehavior.SetIsEnabled(Me.radGridView, True)
 	End Sub
+
+>tipYou can download a __runnable project__ on the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropWithLines).
+
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository.   
+
+>tipYou can also check the implementation of {% if site.site_name == 'Silverlight' %} [Reorder Rows demo](http://demos.telerik.com/silverlight/#GridView/RowReorder)/[Tree to Grid demo](http://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}{% if site.site_name == 'WPF' %} __Tree to Grid/Reorder Rows__ [WPF Demos](http://demos.telerik.com/wpf/#DragAndDrop/RowReorder){% endif %}.      
+ 

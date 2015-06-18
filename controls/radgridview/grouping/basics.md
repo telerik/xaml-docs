@@ -8,10 +8,17 @@ published: True
 position: 0
 ---
 
+__RadGridView__ provides a built-in grouping functionality, which allows the user to easily group the data by one or more columns. 
+* [Basic Grouping](#basic-grouping)
+* [GroupMemberPath](#groupmemberpath)
+* [Grouping Modes](#grouping-modes)
+* [Disabling Grouping](#disabling-grouping)
+* [Events](#events)
+* [Styling and Appearance](#styling-and-appearance)
+
 # Basic Grouping
 
-
-The __RadGridView__ provides you with a built-in grouping functionality, which allows the user to easily group the data by one or more columns. To do so the user has to just drag the desired column to the __GridViewGroupPanel__ located at the top of the __RadGridView__. If the __RadGridView__ is not grouped, the __GridViewGroupPanel__ shows a hint.
+In order to group data the user has to just drag the desired column to the __GridViewGroupPanel__ located at the top of the __RadGridView__. If __RadGridView__ is not grouped, a hint is shown in __GridViewGroupPanel__.
 
 ![](images/RadGridView_BasicGrouping_1.png)
 
@@ -30,6 +37,10 @@ The __RadGridView__ also provides the user with a way to sort the groups of data
 >tipGridViewColumn exposes a property __ShowColumnWhenGrouped__. It indicates whether the column should be visible or not when RadGridView is grouped by this same column. By default its value is True and the column will remain visible.
 
 >tip As of __Q3 2012__ we have introduced a new rendering mode of RadGridView - Flat. The default GroupRenderMode is Nested, and the new one is __Flat__. When you set the Flat mode, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
+
+>tipYou can download a __runnable project__ on how to sort a group by a different property from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/SortGroupByDifferentProperty__.
+
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
 
 ## GroupMemberPath
 

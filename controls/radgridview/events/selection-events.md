@@ -11,11 +11,11 @@ position: 5
 # Selection
 
 
-There are a couple of events relevant to the selection in RadGridView: __SelectionChanging, SelectionChanged, CurrentCellChanged, SelectedCellChanging and SelectedCellChanged__. The sequence of the events depends on the __SelectionUnit__ property:
+There are a couple of events relevant to the selection in RadGridView: [SelectionChanging](#selectionchanging-event), [SelectionChanged](#selectionchanged-event), [CurrentCellChanged](#currentcellchanged-event), [SelectedCellsChanging](#selectedcellschanging-event) and [SelectedCellsChanged](#selectedcellschanged-event). The sequence of the events depends on the __SelectionUnit__ property:
 
 * __FullRow__ - the __SelectionChanged__ is fired first and after that the __CurrentCellChanged__ event fires. 
 
-* __Cell__ - the __SelectedCellChanged__ is fired first and after that the __CurrentCellChanged__ event fires T
+* __Cell__ - the __SelectedCellsChanged__ is fired first and after that the __CurrentCellChanged__ event fires.
 
 The events are fired by RadGridView each time there is a modification of the __SelectedItems__ / __SelectedCells__ collection, regardless of the way it happened (by user input or programmatically). 
 
@@ -51,7 +51,7 @@ It is fired once a selection is about to be performed and a change in the Select
 {{endregion}}
 
 
-__SelectionChangingEventArgs__ exposes the following specific properties:__AddedItems__ - a collection of the item(s) that has/have been added to the selection.__RemovedItems__ - a collection of the item(s) that has/have been removed from the selection.__IsCancelable__ - gets a value that indicates whether the event is cancelable.__Cancel__ - a boolean property that enables canceling the selection. 
+__SelectionChangingEventArgs__ exposes the following specific properties:__AddedItems__ - a collection of the item(s) that has/have been added to the selection. __RemovedItems__ - a collection of the item(s) that has/have been removed from the selection. __IsCancelable__ - gets a value that indicates whether the event is cancelable. __Cancel__ - a boolean property that enables canceling the selection. 
 
 ## SelectionChanged event
 
@@ -93,7 +93,7 @@ The __SelectionChangeEventArgs__ class exposes the following specific properties
 
 ## CurrentCellChanged event
 
-This event is raised when a cell is selected. It fires before the __SelectionChanged__ (when SelectionUnit="FullRow") or before the __SelectedCellChanged__ (when SelectionUnit="Cell").
+This event is raised when a cell is selected. It fires before the __SelectionChanged__ (when SelectionUnit="FullRow") or before the __SelectedCellsChanged__ (when SelectionUnit="Cell").
 
 #### __C#__
 

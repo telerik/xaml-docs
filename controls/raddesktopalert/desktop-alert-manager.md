@@ -14,13 +14,27 @@ Using __RadDesktopAlertManager__ you could easily visualize and position __RadDe
 
 This article will provide some detailed information about the following properties of __RadDesktopAlertManager__: 
 
-* [Show/HideAnimation](#header)
+* [Show/HideAnimation](#show/hideanimation)
 
 * [ScreenPosition](#screenposition)
 
 ## Show/HideAnimation
 
-Using the Show/HideAnimation properties of __RadDesktopAlertManager__ you could easily apply or create a custom RadAnimation. That animation should be visualized when __RadDesktopAlert__ gets show or hide from the screen.
+Using the Show/HideAnimation properties of __RadDesktopAlertManager__ you could easily apply, create a custom Animation or group animation. That animation should be visualized when __RadDesktopAlert__ gets show or hide from the screen. For example this is how a __FadeAnimation__ could be applied:
+
+#### __[C#]  Applying Animation__
+
+{{region raddesktopalert-desktop-alert-manager_0}}
+	RadDesktopAlertManager selectedDesktopAlertManager = new RadDesktopAlertManager();
+	this.SelectedDesktopAlertManager.ShowAnimation = new FadeAnimation { Direction = AnimationDirection.Out, MinOpacity = 0.5d, MaxOpacity = 0.9d, SpeedRatio = 0.5d };
+{{endregion}}
+
+#### __[VB]  Applying Animation__
+
+{{region raddesktopalert-desktop-alert-manager_0}}
+	Dim selectedDesktopAlertManager As New RadDesktopAlertManager()
+	Me.SelectedDesktopAlertManager.ShowAnimation = New FadeAnimation() With { _Key .Direction = AnimationDirection.Out, _Key .MinOpacity = 0.5, _Key .MaxOpacity = 0.9, _Key .SpeedRatio = 0.5 _}
+{{endregion}}
 
 ## ScreenPosition
 
@@ -48,7 +62,7 @@ First, you need to create a new class named ViewModel. Inside it an object of ty
 
 #### __[C#]  Creating RadDesktopAlert in MVVM__
 
-{{region raddesktopalert-desktop-alert-manager_0}}
+{{region raddesktopalert-desktop-alert-manager_1}}
 	public class ViewModel
     {
 		private RadDesktopAlertManager desktopAlertManager;
@@ -64,7 +78,7 @@ First, you need to create a new class named ViewModel. Inside it an object of ty
 
 #### __[VB]  Creating RadDesktopAlert in MVVM__
 
-{{region raddesktopalert-desktop-alert-manager_0}}
+{{region raddesktopalert-desktop-alert-manager_1}}
 	Public Class ViewModel
 		Private desktopAlertManager As RadDesktopAlertManager
 		Public Property ReceiveNewMailCommand() As ICommand
@@ -88,7 +102,7 @@ Once the command begins to execute __RadDesktopAlert__ could easily be visualize
 
 #### __[C#]  Creating RadDesktopAlert in MVVM__
 
-{{region raddesktopalert-desktop-alert-manager_1}}
+{{region raddesktopalert-desktop-alert-manager_2}}
 	private void OnPauseResumeMailboxCommandExecuted(object param)
     {
 		this.desktopAlertManager.ShowAlert(new DesktopAlertParameters
@@ -104,7 +118,7 @@ Once the command begins to execute __RadDesktopAlert__ could easily be visualize
 
 #### __[VB#]  Creating RadDesktopAlert in MVVM__
 
-{{region raddesktopalert-desktop-alert-manager_1}}
+{{region raddesktopalert-desktop-alert-manager_2}}
 	Private Sub OnPauseResumeMailboxCommandExecuted(param As Object)
 		Me.desktopAlertManager.ShowAlert(New DesktopAlertParameters() With { _
 			Key .Header = "New mail", _

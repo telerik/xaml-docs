@@ -10,7 +10,7 @@ position: 8
 
 # Keyboard Support
 
-__RadRibbonView__ provides a keyboard navigation mechanisms using Key Tips. You can enable this feature by setting the KeyTipService.IsKeyTipsEnabled attached property on the RadRibbonView control to True.
+__RadRibbonView__ provides a keyboard navigation mechanisms using key tips. You can enable this feature by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadRibbonView__ control to __True__.
 
 #### __XAML__
 {{region radribbonview-keyboard-support_0}}
@@ -36,11 +36,11 @@ You can attach a *key tip* text to every component in the __RadRibbonView__ usin
 
 The __KeyTipsService__ class allows you to enable/disable key tips for the __RadRibbonView__ control. It exposes the following properties that allow you to customize the key tips:
 
-* __AccessText__ - gets/sets the key tip activation text			
+* __AccessText:__ Gets/sets the key tip activation text			
 
-* __AltAccessText__ - gets/sets alternative key tip activation text			
+* __AltAccessText:__ Gets/sets alternative key tip activation text			
 
-* __AccessKey__ - gets/sets the combination of keys to be used for displaying the key tips. By default the key tips are displayed by pressing {% if site.site_name == 'Silverlight' %}CTRL+Q{% endif %}{% if site.site_name == 'WPF' %}ALT{% endif %}. This property should be defined in the __RadRibbonView__ definition:			
+* __AccessKey:__ Gets/sets the combination of keys to be used for displaying the key tips. By default the key tips are displayed by pressing {% if site.site_name == 'Silverlight' %}CTRL+Q{% endif %}{% if site.site_name == 'WPF' %}ALT{% endif %}. This property should be defined in the __RadRibbonView__ definition:			
 
 	#### __XAML__
 	{{region radribbonview-keyboard-support_2}}
@@ -54,11 +54,11 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 
 {% if site.site_name == 'Silverlight' %}{% endif %}
 
-* __AccessKeys__ - is a property of type __IEnumebable<KeyGesture>__ and it gets/sets a collection of __KeyGestures__ that can be used to trigger the KeyTips display. Please note that the __AccessKeys__ property can only be set in code either in code-behind or in a __ViewModel__. This is due to the fact that a __KeyGesture__ cannot be defined in XAML.
+* __AccessKeys:__ Property of type __IEnumebable<KeyGesture>__ and it gets/sets a collection of __KeyGestures__ that can be used to trigger the KeyTips display. Please note that the __AccessKeys__ property can only be set in code either in code-behind or in a __ViewModel__. This is due to the fact that a __KeyGesture__ cannot be defined in XAML.
 
 	>If both __AcessKey__ and __AccessKeys__ properties are set, the value of the __AcessKey__ property will be ignored.You can download a runnable project demonstrating how to take advantage of the __KeyTipService.AccessKeys__ property from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to RibbonView/MultipleAccessKeys-KeyTips.
 
-* __Activation__ - you can use the __KeyTipsService.Activation__ property to define additional logic that can be implemented when using a key tip:
+* __Activation:__ Used to define additional logic that can be implemented when using a key tip:
 
 	#### __XAML__
 	{{region radribbonview-keyboard-support_3}}
@@ -204,6 +204,7 @@ The key tips are themeable and any built-in Telerik theme can be applied to them
 
 >The __Telerik_Windows_Controls_RibbonView_KeyTips__ namespace definition is: 
 >`xmlns:Telerik_Windows_Controls_RibbonView_KeyTips="clr-namespace:Telerik.Windows.Controls.RibbonView.KeyTips;assembly=Telerik.Windows.Controls.RibbonView"`
+
 
 # See Also
  * [Overview]({%slug radribbonview-buttons-overview%})

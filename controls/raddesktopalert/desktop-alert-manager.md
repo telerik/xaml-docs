@@ -22,18 +22,30 @@ This article will provide some detailed information about the following properti
 
 Using the Show/HideAnimation properties of __RadDesktopAlertManager__ you could easily apply, create a custom Animation or group animation. That animation should be visualized when __RadDesktopAlert__ gets show or hide from the screen. For example this is how a __FadeAnimation__ could be applied:
 
-#### __[C#]  Applying Animation__
+#### __[C#]  Applying ShowAnimation__
 
 {{region raddesktopalert-desktop-alert-manager_0}}
 	RadDesktopAlertManager selectedDesktopAlertManager = new RadDesktopAlertManager();
-	this.SelectedDesktopAlertManager.ShowAnimation = new FadeAnimation { Direction = AnimationDirection.Out, MinOpacity = 0.5d, MaxOpacity = 0.9d, SpeedRatio = 0.5d };
+	this.SelectedDesktopAlertManager.ShowAnimation = new FadeAnimation
+	{ 
+		Direction = AnimationDirection.Out, 
+		MinOpacity = 0.5d, 
+		MaxOpacity = 0.9d, 
+		SpeedRatio = 0.5d 
+	};
 {{endregion}}
 
-#### __[VB]  Applying Animation__
+#### __[VB]  Applying ShowAnimation__
 
 {{region raddesktopalert-desktop-alert-manager_0}}
 	Dim selectedDesktopAlertManager As New RadDesktopAlertManager()
-	Me.SelectedDesktopAlertManager.ShowAnimation = New FadeAnimation() With { _Key .Direction = AnimationDirection.Out, _Key .MinOpacity = 0.5, _Key .MaxOpacity = 0.9, _Key .SpeedRatio = 0.5 _}
+	Me.SelectedDesktopAlertManager.ShowAnimation = New FadeAnimation() With 
+	{ 
+		Key .Direction = AnimationDirection.Out, 
+		Key .MinOpacity = 0.5, 
+		Key .MaxOpacity = 0.9, 
+		Key .SpeedRatio = 0.5 
+	}
 {{endregion}}
 
 ## ScreenPosition
@@ -54,11 +66,11 @@ Using the __ScreenPosition__ property you could easily define the position of __
 
 ## ShowAlert method
 
-In order __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__. Using that method you could easily specify the __Show/HideAnimation__ and the __ScreenPosition__ of the DesktopAlert control. 
+In order __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__. Using that method you could easily specify the __Show/HideAnimation__ and __ScreenPosition__ of the DesktopAlert control. 
 
-__RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This is a class that holds all parameters you need to customize __RadDesktopAlert__ and it is MVVM friendly - it's main idea is for visualization and customization of __RadDesktopAlert__ in MVVM scenarios. The following example will demonstrate how to display an alert in such MVVM scenario.
+__RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This is a class that holds all parameters you need to customize __RadDesktopAlert__ and it is MVVM friendly - it's main idea is for visualization and customization of __RadDesktopAlert__ within MVVM scenarios. The following example will demonstrate how to display an alert in such MVVM scenario.
 
-First, you need to create a new class named ViewModel. Inside it an object of type __RadDesktopAlertManager__ and a Command that calls the __ShowAlert__ method need to be initialized. For example, the command will be executed when a new mail gets received:
+First, you need to create a new class named ViewModel. Inside it an object of type __RadDesktopAlertManager__ and a method that calls the __ShowAlert__ method need to be initialized. For example, the method will be called when a new mail gets received:
 
 #### __[C#]  Creating RadDesktopAlert in MVVM__
 
@@ -66,12 +78,10 @@ First, you need to create a new class named ViewModel. Inside it an object of ty
 	public class ViewModel
     {
 		private RadDesktopAlertManager desktopAlertManager;
-		public ICommand ReceiveNewMailCommand { get; set; }
 		
 		 public ViewModel()
         {
             this.desktopAlertManager = new RadDesktopAlertManager(AlertScreenPosition.BottomRight, 5d);
-			this.ReceiveNewMailCommand = new DelegateCommand(this.OnReceiveNewMailCommandExecuted);
         }
 	}
 {{endregion}}
@@ -81,29 +91,19 @@ First, you need to create a new class named ViewModel. Inside it an object of ty
 {{region raddesktopalert-desktop-alert-manager_1}}
 	Public Class ViewModel
 		Private desktopAlertManager As RadDesktopAlertManager
-		Public Property ReceiveNewMailCommand() As ICommand
-			Get
-				Return m_ReceiveNewMailCommand
-			End Get
-			Set
-				m_ReceiveNewMailCommand = Value
-			End Set
-		End Property
-		Private m_ReceiveNewMailCommand As ICommand
-
+		
 		Public Sub New()
 			Me.desktopAlertManager = New RadDesktopAlertManager(AlertScreenPosition.BottomRight, 5.0)
-			Me.ReceiveNewMailCommand = New DelegateCommand(Me.OnReceiveNewMailCommandExecuted)
 		End Sub
 	End Class
 {{endregion}}
 
-Once the command begins to execute __RadDesktopAlert__ could easily be visualized by passing __DesktopAlertParameters__ to the __ShowAlert__ method of __RadDesktopAlertManager__:
+Once the method gets called __RadDesktopAlert__ could easily be visualized by passing __DesktopAlertParameters__ to the __ShowAlert__ method of __RadDesktopAlertManager__:
 
 #### __[C#]  Creating RadDesktopAlert in MVVM__
 
 {{region raddesktopalert-desktop-alert-manager_2}}
-	private void OnPauseResumeMailboxCommandExecuted(object param)
+	private void ReceiveNewMail()
     {
 		this.desktopAlertManager.ShowAlert(new DesktopAlertParameters
 		{
@@ -120,16 +120,16 @@ Once the command begins to execute __RadDesktopAlert__ could easily be visualize
 
 {{region raddesktopalert-desktop-alert-manager_2}}
 	Private Sub OnPauseResumeMailboxCommandExecuted(param As Object)
-		Me.desktopAlertManager.ShowAlert(New DesktopAlertParameters() With { _
-			Key .Header = "New mail", _
-			Key .Content = "Hello, Here are two things that we noticed today on our front-end meeting", _
-			Key .Icon = New Image() With { _
-				Key .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource), _
-				Key .Width = 48, _
-				Key .Height = 48 _
-			}, _
-			Key .IconColumnWidth = 48, _
-			Key .IconMargin = New Thickness(10, 0, 20, 0) _
+		Me.desktopAlertManager.ShowAlert(New DesktopAlertParameters() With {
+			Key .Header = "New mail",
+			Key .Content = "Hello, Here are two things that we noticed today on our meeting",
+			Key .Icon = New Image() With {
+				Key .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource),
+				Key .Width = 48,
+				Key .Height = 48
+			},
+			Key .IconColumnWidth = 48,
+			Key .IconMargin = New Thickness(10, 0, 20, 0)
 		})
 	End Sub
 {{endregion}}

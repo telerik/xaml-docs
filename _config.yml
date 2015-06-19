@@ -340,6 +340,14 @@ navigation:
         title: RadRating
     controls/radribbonview:
         title: RadRibbonView
+    controls/radribbonview/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radribbonview/features/layout-controls:
+        title: Layout Controls
+    controls/radribbonview/features/ribbon-controls:
+        title: Ribbon Controls
+    controls/radribbonview/features/ribbon-controls/ribbon-buttons:
+        title: Ribbon Buttons
     controls/radslider:
         title: RadSlider
     controls/radsparkline:

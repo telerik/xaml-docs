@@ -105,8 +105,7 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 {{endregion}}
 
 
->tipYou can download a runnable project of the previous example from our online SDK repository
-[here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView__ / __CustomKeyboardCommandProvider__.
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomKeyboardCommandProvider).
           
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
 

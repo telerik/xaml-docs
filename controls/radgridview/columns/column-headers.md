@@ -96,73 +96,8 @@ To learn more about the grouping functionality take a look at the [Basic Groupin
 
 ## Merging the headers
 
-Columns in RadGridView may be grouped in __column groups__(added with __Q3 2011__). Column groups are visually presented by __common column headers__.
-     
-#### __XAML__
-
-{{region gridview-columns-column-headers_3}}
-
-	<telerik:RadGridView x:Name="RadGridView1" GridLinesVisibility="Vertical" Width="450" CanUserFreezeColumns="False" AutoGenerateColumns="False" IsFilteringAllowed="False"  ShowGroupPanel="False" RowIndicatorVisibility="Collapsed">
-		<telerik:RadGridView.ColumnGroups>
-			<telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
-			<telerik:GridViewColumnGroup  Name="Dimensions" Header="Dimensions" />
-		</telerik:RadGridView.ColumnGroups>
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Make}" ColumnGroupName="VehicleInfo" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Model}" ColumnGroupName="VehicleInfo" />
-			<telerik:GridViewDataColumn  DataMemberBinding="{Binding Length}" ColumnGroupName="Dimensions" />
-			<telerik:GridViewDataColumn  DataMemberBinding="{Binding Width}"  ColumnGroupName="Dimensions" />
-			<telerik:GridViewDataColumn  DataMemberBinding="{Binding Heigth}" ColumnGroupName="Dimensions" />
-		</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-{{endregion}}
-
-![Rad Grid View Column Headers 7](images/RadGridView_ColumnHeaders_7.png)
-
-To enable __column grouping__ you need to define Column groups using the __ColumnGroups__ property of __RadGridView__ as shown above. 
-__GridViewColumnGroup__ has a __Header__ property which defines the content to be shown inside the common header. It may be a simple string or a visual element. To tell that a specific column belongs to a specific group, you need to set the __ColumnGroupName__ property of the column to match the value of the __Name__ property of the relevant __GridViewColumnGroup__.
-
-For example :
-
-#### __XAML__
-
-{{region gridview-columns-column-headers_4}}
-
-	<telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
-	 ...
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Make}" ColumnGroupName="VehicleInfo" />
-{{endregion}}
-
-Column __groups__ can be __nested__. This could be done like so:
- 
-#### __XAML__
-
-{{region gridview-columns-column-headers_5}}
-
-	<telerik:RadGridView.ColumnGroups>
-		<telerik:GridViewColumnGroup  Name="Data" Header="Data">
-			<telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
-			<telerik:GridViewColumnGroup  Name="Dimensions" Header="Dimensions" />
-		</telerik:GridViewColumnGroup>
-	</telerik:RadGridView.ColumnGroups>
-{{endregion}}
-
-![Rad Grid View Column Headers 8](images/RadGridView_ColumnHeaders_8.png)
-
-You can define a __custom header__ for the __GridViewColumnGroup__ through its HeaderTemplate:
-
-#### __XAML__
-
-{{region gridview-columns-column-headers_6}}
-
-	<telerik:GridViewColumnGroup Name="Data">
-	    <telerik:GridViewColumnGroup.HeaderTemplate>
-	        <DataTemplate>
-	            <TextBox Text="Data"/>
-	        </DataTemplate>
-	    </telerik:GridViewColumnGroup.HeaderTemplate>
-	</telerik:GridViewColumnGroup>
-{{endregion}}
+Columns in RadGridView may be grouped in __column groups__(added with __Q3 2011__).
+[Read more]({%slug gridview-column-groups%}).
 
 To learn more about the customizing of the headers please refer to the [Customizing the Headers](#Customizing_the_Headers) section above.
         
@@ -170,6 +105,8 @@ To learn more about the customizing of the headers please refer to the [Customiz
 # See Also
 
  * [Column Footers]({%slug gridview-columns-column-footers%})
+ 
+ * [Column Groups]({%slug gridview-column-groups%})
 
  * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
 

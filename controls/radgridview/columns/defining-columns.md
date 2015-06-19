@@ -256,5 +256,7 @@ Then reference it in code-behind as demonstrated below:
  * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
+ 
+ * [Column Groups]({%slug gridview-column-groups%})
 
  * [Data Formatting]({%slug gridview-columns-data-formatting%})

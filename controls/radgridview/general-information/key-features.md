@@ -16,7 +16,6 @@ This is a list with short descriptions of the top-of-the line features of __RadG
         
 * __WPF/Silverlight Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Grid shares a common code-base and API with its {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %} counterpart. This means that you can achieve close to 100% code reuse for your grid logic if you have parallel Silverlight/WPF development.
             
-
 * __Powerful DataBinding__ - RadGridView can be bound to various data source types, such as Objects, Collections, XML, WCF and RIA services and LINQ. [Read more]({%slug gridview-overview-data-binding%}).
 
 * __Outstanding Performance__ - a major advantage of __RadGridView__ is its outstanding performance – it can handle hundreds of thousands of records at a time, without hurting the user experience. Featuring a revolutionary LINQ-based data engine, __RadGridView__ allows for manipulating data sources that are otherwise impossible to load and process. Data is processed with LINQ queries that offer unrivaled performance characteristics and extensibility. Moreover it delivers row and column virtualization utilizing a container reuse and recycling for further improving the grid performance as well as the memory footprint. [Read more]({%slug radgridview-features-ui-virtualization%}).
@@ -30,6 +29,8 @@ This is a list with short descriptions of the top-of-the line features of __RadG
 * __Totals Row with Aggregate Functions__ - you can add a variety of aggregate functions, such as Sum, Count, Min, Max, Average, etc, to your data model and see the results they produce in the column/group footers. Of course, aggregate result display is fully customizable. [Read more]({%slug gridview-columns-aggregate-functions%}).
 
 * __Frozen columns__ - RadGridView allows you to keep part of your data always visible putting the rest of it in context. To freeze columns, you simply set the __FrozenColumnCount__ property to the number of columns you want to freeze. [Read more]({%slug gridview-columns-frozen-columns%}).
+
+* __Column Groups__ - Columns in RadGridView may be grouped in column groups. [Read more]({%slug gridview-column-groups%}).
 
 * __Row details and details presenter__ - each grid row is capable of presenting additional information by means of a __Row Details__ template. The __Row Details__ template is a __DataTemplate__ defined on the grid- or row-level and is used for displaying row data without affecting the dimensions of the row and the cells within it. [Read more]({%slug radgridview-row-details-overview%}).
 

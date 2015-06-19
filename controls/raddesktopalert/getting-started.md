@@ -24,7 +24,7 @@ You can include the control in your page by either dragging it from the toolbox 
 {{region raddesktopalert-getting-started_0}}
 	var alert = new RadDesktopAlert();
 	alert.Header = "MAIL NOTIFICATION";
-	alert.Content = "Hello, Here are two things that we noticed today on our front-end meeting: ";
+	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting.";
 	alert.ShowDuration = 5000;
 {{endregion}}
 
@@ -33,7 +33,7 @@ You can include the control in your page by either dragging it from the toolbox 
 {{region raddesktopalert-getting-started_0}}
 	Dim alert = New RadDesktopAlert()
 	alert.Header = "MAIL NOTIFICATION"
-	alert.Content = "Hello, Here are two things that we noticed today on our front-end meeting: "
+	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting."
 	alert.ShowDuration = 5000
 {{endregion}}
 

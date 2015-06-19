@@ -66,11 +66,11 @@ Using the __ScreenPosition__ property you could easily define the position of __
 
 ## ShowAlert method
 
-In order __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__. Using that method you could easily specify the __Show/HideAnimation__ and __ScreenPosition__ of the DesktopAlert control. 
+In order __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__.
 
-__RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This is a class that holds all parameters you need to customize __RadDesktopAlert__ and it is MVVM friendly - it's main idea is for visualization and customization of __RadDesktopAlert__ within MVVM scenarios. The following example will demonstrate how to display an alert in such MVVM scenario.
+__RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This is a class that holds all parameters that you need to customize __RadDesktopAlert__ and it is MVVM friendly - it's main idea is for visualization and customization of __RadDesktopAlert__ within MVVM scenarios. The following example will demonstrate how to display an alert in such MVVM scenario.
 
-First, you need to create a new class named ViewModel. Inside it an object of type __RadDesktopAlertManager__ and a method that calls the __ShowAlert__ method need to be initialized. For example, the method will be called when a new mail gets received:
+First, you need to create a new class named ViewModel. Inside it an object of type __RadDesktopAlertManager__ and a method that calls __ShowAlert__ need to be initialized. For example, the method will be called when a new mail gets received:
 
 #### __[C#]  Creating RadDesktopAlert in MVVM__
 

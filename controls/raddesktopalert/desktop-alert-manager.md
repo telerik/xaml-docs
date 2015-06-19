@@ -10,7 +10,7 @@ position: 3
 
 # Desktop Alert Manager
 
-Using __RadDesktopAlertManager__ you could easily visualize and position __RadDesktopAlert__ on the screen. Thanks to __RadDesktopAlertManager__ you could also display multiple alerts on the screen which takes care to calculate the location of all alerts, so they could not overlap. When an alert gets closed, all other alerts that are currently visualized on the screen gets relocated.
+Using __RadDesktopAlertManager__ you could easily visualize and position __RadDesktopAlert__ on the screen. Thanks to __RadDesktopAlertManager__ you could also display multiple alerts on the screen - it takes care to calculate the location of all alerts, so they could not overlap. When an alert gets closed, all other alerts that are currently visualized on the screen get relocated.
 
 This article will provide some detailed information about the following properties of __RadDesktopAlertManager__: 
 
@@ -20,7 +20,7 @@ This article will provide some detailed information about the following properti
 
 ## Show/HideAnimation
 
-Using the Show/HideAnimation properties of __RadDesktopAlertManager__ you could easily apply, create a custom Animation or group animation. That animation should be visualized when __RadDesktopAlert__ gets show or hide from the screen. For example this is how a __FadeAnimation__ could be applied:
+Using the Show/HideAnimation properties of __RadDesktopAlertManager__ you could easily apply, create a custom Animation or group animations. That animation should be visualized when __RadDesktopAlert__ gets show or hide from the screen. For example this is how a __FadeAnimation__ could be applied:
 
 #### __[C#]  Applying ShowAnimation__
 

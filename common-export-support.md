@@ -25,15 +25,16 @@ To learn more about these abilities take a look at the *Export* article in the d
 ## Document Processing Integration
 
 
-The Telerik UI for WPF suite contains three separate document libraries specifically designed for import, export and document editing.
+The Telerik UI for WPF suite contains document libraries specifically designed for import, export and document editing.
 
 
 * [RadPdfProcessing]({%slug radpdfprocessing-overview%}): Supports export to PDF.
 * [RadSpreadProcessing]({%slug radspreadprocessing-overview%}): Supports export to XLSX, CSV, PDF and plain text (TXT).
+{% if site.site_name == 'WPF' %}
 * [RadWordsProcessing]({%slug radwordsprocessing-overview%}): Supports export to DOCX, RTF, HTML, PDF and plain text(TXT).
+{%endif%}
 
-
-All three libraries give you the ability to create a document from scratch and export it to its supported file formats. This means you can export practically any control either by exporting it to an image and adding the image to the resulting document or by creating an appropriate for the context structure (for example, a table when exporting RadGridView to DOCX).
+The libraries give you the ability to create a document from scratch and export it to its supported file formats. This means you can export practically any control either by exporting it to an image and adding the image to the resulting document or by creating an appropriate for the context structure (for example, a table when exporting RadGridView to DOCX).
 
 
 There are several controls that already provide sample code which you can use as the base of export functionality, you could take a look at them in the Telerik XAML SDK repository:
@@ -173,7 +174,9 @@ __Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The ph
 
 * [RadSpreadProcessing]({%slug radspreadprocessing-overview%})
 
+{% if site.site_name == 'WPF' %}
 * [RadWordsProcessing]({%slug radwordsprocessing-overview%})
+{%endif%}
 
 * [RadGridView Export]({%slug gridview-export%})
 

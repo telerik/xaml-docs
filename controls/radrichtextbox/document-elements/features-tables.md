@@ -142,36 +142,36 @@ Here is a snapshot of the result.
 The __RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
         
 
-* __DeleteTable__ - deletes the currently selected table.
+* __DeleteTable__: Deletes the currently selected table.
             
 
-* __DeleteTableColumn__ - deletes the currently selected column.
+* __DeleteTableColumn__: Deletes the currently selected column.
             
 
-* __DeleteTableRow__ - deletes the currently selected row.
+* __DeleteTableRow__: Deletes the currently selected row.
             
 
-* __InsertTable__ - inserts a table. Allows you to specify the number of rows and columns. Has an overload that allows you to specify if a Paragraph should be inserted before the table.
+* __InsertTable__: Inserts a table. Allows you to specify the number of rows and columns. Has an overload that allows you to specify if a Paragraph should be inserted before the table.
             
         
 >important In versions earlier than Q1 2015 before and after each Table element is inserted a Paragraph. When the Table is inserted via the UI or the InsertTable() method this is done automatically, otherwise paragraphs should be inserted manually. In next versions the Paragraph before the Table is not mandatory.
 
-* __InsertTableColumn__- inserts a column at the end.
+* __InsertTableColumn__: Inserts a column at the end.
             
 
-* __InsertTableColumnToTheLeft__ - inserts a column to the left of the selected one.
+* __InsertTableColumnToTheLeft__: Inserts a column to the left of the selected one.
             
 
-* __InsertTableColumnToTheRight__ - inserts a column to the right of the selected one.
+* __InsertTableColumnToTheRight__: Inserts a column to the right of the selected one.
             
 
-* __InsertTableRow__ - inserts a row at the end.
+* __InsertTableRow__: Inserts a row at the end.
             
 
-* __InsertTableRowAbove__ - inserts a row above the selected one.
+* __InsertTableRowAbove__: Inserts a row above the selected one.
             
 
-* __InsertTableRowBelow__ - inserts a row below the selected one.
+* __InsertTableRowBelow__: Inserts a row below the selected one.
             
 
 ## Creating a Table via the Built-in UI
@@ -202,29 +202,32 @@ A table could be deleted or modified via the Table Tools’ contextual tab __Lay
 The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the following methods that regard the modifying of a table:
         
 
-* __ChangeTableBorders__ - modifies the borders of the currently selected table via a __TableBorders__ object.
+* __ChangeTableBorders__: Modifies the borders of the currently selected table via a __TableBorders__ object.
             
 
-* __ChangeTableCellBackground__ - sets the color of the currently selected cell's borders.
+* __ChangeTableCellBackground__: Sets the color of the currently selected cell's borders.
             
 
-* __ChangeTableCellBorders__ - modifies the borders of the currently selected table via a __TableCellBorders__ object.
+* __ChangeTableCellBorders__: Modifies the borders of the currently selected table via a __TableCellBorders__ object.
             
 
-* __ChangeTableCellContentAlignment__ - modifies the content alignment of the currently selected cell.
+* __ChangeTableCellContentAlignment__: Modifies the content alignment of the currently selected cell.
             
 
-* __ChangeTableCellPadding__ - modifies the padding of the currently selected cell.
+* __ChangeTableCellPadding__: Modifies the padding of the currently selected cell.
             
 
-* __ChangeTableColumnsLayoutMode__ - modifies the layout mode of the table's columns.
+* __ChangeTableColumnsLayoutMode__: Modifies the layout mode of the table's columns.
             
 
-* __ChangeTableGridColumnWidth__ - modifies the width of the column.
+* __ChangeTableGridColumnWidth__: Modifies the width of the column.
             
 
-* __MergeTableCells__ - merges the currently selected cells.
+* __MergeTableCells__: Merges the currently selected cells.
+
             
+* __UnmergeTableCells__: Splits the currently selected table cell.
+
 
 ## Formatting a Table via the Built-in UI
 

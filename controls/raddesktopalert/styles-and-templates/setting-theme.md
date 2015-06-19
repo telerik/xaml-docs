@@ -12,9 +12,9 @@ position: 0
 
 The purpose of this article is to show you how to set a built-in theme to __RadDesktopAlert__.
 
-__RadDesktopAlert__ supports styling using Implicit Styles.
+__RadDesktopAlert__ supports styling using __Implicit__ Styles.
 
->Detailed information about the use of Implicit Styles you could find [here]({%slug styling-apperance-implicit-styles-overview%}).
+>Detailed information about the use of __Implicit Styles__ you could find [here]({%slug styling-apperance-implicit-styles-overview%}).
 
 The following Xaml files should be merger in App.xaml file in order a theme to be set to the DesktopAlert:
 

@@ -44,7 +44,7 @@ The __Header__ property is used to set the header content of __RadDesktopAlert__
 
 ## Content
 
-The __Content__ property is used to set the inner content of the control.
+Using the __Content__ property the inner content of __RadDesktopAlert__ could easily be set.
 
 #### __[C#]  Setting Content__
 
@@ -123,7 +123,7 @@ The __IconMargin__ property is a specific property of __RadDesktopAlert__ that i
 
 ## Command
 
-__RadDesktopAlert__ provides a command property that could be set to a Command. It will be executed when the control gets clicked.
+__RadDesktopAlert__ provides you with a command property. This means you can bind the alert to a command that will be executed when it gets clicked.
 
 #### __[C#]  Setting Command__
 

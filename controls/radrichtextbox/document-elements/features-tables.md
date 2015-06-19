@@ -226,7 +226,7 @@ The __RadRichTextBox__ exposes a rich API, which allows you to use various metho
 * __MergeTableCells__: Merges the currently selected cells.
 
             
-* __UnmergeTableCells__: Splits the currently selected table cell.
+* __UnmergeTableCells__: Splits the currently selected table cell if it has been merged.
 
 
 ## Formatting a Table via the Built-in UI

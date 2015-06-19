@@ -34,7 +34,7 @@ __WatermarkSettingsBase__ is the base class for text and image watermark setting
 
 ## Create a Watermark
 
-Creating a watermark through the constructor of the class requires to pass as a parameter an object of type __TextWatermarkSettings__ or __ImageWatermarkSettings__, depending of the type of watermark you want to create.
+Creating a watermark through the constructor of the class requires to pass as a parameter an object of type __TextWatermarkSettings__ or __ImageWatermarkSettings__, depending on the type of watermark you want to create.
 
 __Example 1__ demonstrates the creation of a text watermark.
 
@@ -90,7 +90,7 @@ __Example 3__ demonstrates how you can add the watermark created in __Example 1_
 >tipBy default, if header is omitted for a __Section__ other than the first one, it is inherited from the previous __Section__. The watermark set in __Example 3__ will be implicitly inherited by all sections following the first one since watermarks are preserved in the header.
 
 
-There is another way to set a watermark in a document - through the [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}) helper class. __RadFlowDocumentEditor__ exposes two overloads of the __SetWatermark()__ method that allow a simplified way to set a watermark. 
+There is another way to set a watermark in a document - through the [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}) helper class. __RadFlowDocumentEditor__ exposes two overloads of the __SetWatermark()__ method that provide a simplified way to set a watermark. 
 
 __Example 4__ demonstrates how to set the watermark created in __Example 2__ through __RadFlowDocumentEditor__ to the first page of a section. The method will create the __Header__ element for you, and you only need to specify its type.
 

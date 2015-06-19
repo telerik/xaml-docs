@@ -30,13 +30,14 @@ Gesture | - | Description
 
 Below are listed the controls and their behavior with the different gestures:
 
+
 Control | Swipe	|	Pinch	|	Tap	|	Tap and Move	|	Tap and Hold	|	Custom
 ---	| ---	|	---	|	---	|	---	|	---	|	---
-RadCalendar | Next/Previous	|	Semantic zoom (only outwards)	|	Click	|	-	|	-	|	-
-RadCarousel (WPF) | Next/Previous	|	-	|	Click/Selection	|	-	|	-	|	-
+RadCalendar | Next/Previous	|	Semantic zoom (only outwards)	|	Click	|	-	|	-	|	-{% if site.site_name == 'WPF' %}
+RadCarousel | Next/Previous	|	-	|	Click/Selection	|	-	|	-	|	-{% endif %}
 RadChartView | Scroll	|	Zoom	|	Click/Selection/Tooltip	|	Trackball	|	Show ToolTip	|	-
-RadComboBox | Scroll DropDown	|	-	|	Click	|	-	|	-	|	-
-RadCoverFlow | Scroll with inertia	|	-	|	Click	|	Scroll (if possible)	|	-	|	-
+RadComboBox | Scroll DropDown	|	-	|	Click	|	-	|	-	|	-{% if site.site_name == 'Silverlight' %}
+RadCoverFlow | Scroll with inertia	|	-	|	Click	|	Scroll (if possible)	|	-	|	-{% endif %}
 RadDiagram | Pan	|	Zoom	|	Select	|	Scroll	|	-	|	-
 RadGanttView | Scroll with inertia	|	Zoom	|	Click	|	On item - Drag&Drop; on slot - Scroll	|	-	|	-
 RadGauge | -	|	-	|	Click	|	Moves indicators	|	Shows tooltip	|	-
@@ -47,14 +48,14 @@ RadMap | Scroll	|	-	|	Click/Selection	|	-	|	-	|	Double Tap -> Zoom
 RadPdfViewer | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection
 RadRropertyGrid | Scroll	|	-	|	Click/Selection	|	-	|	-	|	-
 RadRichTextBox | Scroll	|	Zoom	|	Click (move caret to position)	|	-	|	Show context menu	|	Selection markers to extend the selection
-RadScheduleView | Horizontally - Previous/Next; Vertically - Scroll	|	Semantic zoom	|	Click/Selection	|	On item - Drag&Drop; on slot - Scroll	|	-	|	-
+RadScheduleView | Horizontally - Previous/Next; Vertically - Scroll	|	Timeline - Zoom, others - switching the views	|	Click/Selection	|	On item - Drag&Drop; on slot - Scroll	|	-	|	-
 RadSpreadsheet | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection
 RadTimeBar | Scroll	|	Zoom	|	Click/Selection	|	Moves Selection	|	Selection	|	Double Tap -> Extends selection
 RadTimeline | Scroll	|	Zoom	|	Click/Selection	|	Selection	|	Shows tooltip	|	-
 RadTreeListView | Scroll	|	-	|	Click	|	-	|	Shows a circle to be dragged	|	-
 RadTreeMap | -	|	-	|	Selection	|	-	|	Shows tooltip	|	-
 RadTreeView | Scroll	|	-	|	Selection	|	Scroll	|	-	|	-
-RadTileList | Scroll	|	-	|	Selection	|	Reorder	|	-	|	-
+RadTileList | Scroll	|	-	|	Selection	|	-	|	-	|	-
 
 ## TouchManager States
 

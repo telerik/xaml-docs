@@ -115,7 +115,7 @@ The example below shows how you can specify a custom item __RowIndex__ generator
 
 ### The IItemRowIndexGenerator interface
 
-An item __RowIndex__ generator is a class that implements the __IItemRowIndexGenerator__ interface. This interface has one method that needs to be implemented - __GenerateRowIndexes__. This method accepts a list of __TimelineRowItem__ instances as argument. Every __TimelineRowItem__ is basically a wrapper for the item and its __RowIndex__ as calculated by the RadTimeline control itself. You can change the automatically calculated __RowIndex__ of an item, by specifying a custom__TimelineRowItem.RowIndex__ value for the appropriate __TimelineRowItem__ instance. You can use the __TimelineRowItem.DataItem__property to identify the items that you want to position manually.
+An item __RowIndex__ generator is a class that implements the __IItemRowIndexGenerator__ interface. This interface has one method that needs to be implemented - __GenerateRowIndexes__. This method accepts a list of __TimelineRowItem__ instances as argument. Every __TimelineRowItem__ is basically a wrapper for the item and its __RowIndex__ as calculated by the RadTimeline control itself. You can change the automatically calculated __RowIndex__ of an item, by specifying a custom __TimelineRowItem.RowIndex__ value for the appropriate __TimelineRowItem__ instance. You can use the __TimelineRowItem.DataItem__ property to identify the items that you want to position manually.
 
 Below you can find an implementation of a sample generator that positions every item in a new row:
 

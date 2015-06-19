@@ -160,6 +160,11 @@ Description</th><th>
 Default Value</th></tr><tr><td>
 
 <b>CharacterProperties</b></td><td></td><td></td></tr><tr><td>
+FlowDirection</td><td>
+
+The flow direction.</td><td>
+
+LeftToRight</td></tr><tr><td>
 
 FontFamily</td><td>
 

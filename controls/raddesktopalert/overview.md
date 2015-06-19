@@ -14,7 +14,7 @@ position: 0
 
 Thank you for choosing Telerik __RadDesktopAlert__!
 
-__RadDesktopAlert__ is a WPF control that allows you to display notifications on the desktop if a specific event occurs in you application - receiving new e-mail messages, meetings or task requests. It is displayed as a small window on a predetermined location for a short period of time and gets automatically closed after the elapsing of that time. Using __RadDesktopAlertManager__ multiple alerts could easily be displayed. The __DesktopAlertManager__ also takes care for the proper positioning of the alerts.
+__RadDesktopAlert__ is a WPF control that allows you to display notifications on the desktop if a specific event occurs in you application - receiving new e-mail messages, meetings or task requests. It is displayed as a small window on a predetermined location for a short period of time and gets automatically closed after the elapsing of that time. By using __RadDesktopAlertManager__ multiple alerts could easily be displayed. The __DesktopAlertManager__ also takes care of the proper positioning of the alerts.
 
 ![Rad Desktop Alert Overview 02](images/RadDesktopAlert_Overview_02.png)
 
@@ -30,7 +30,7 @@ __RadDesktopAlert__ is a WPF control that allows you to display notifications on
 
 * __Styling and Appearance__ - Provides an easy way to customize the appearance of the control.
 
-* __Commands__ - __RadDesktopAlert__ allows you to register a custom command and pass parameter to it.
+* __Commands__ - __RadDesktopAlert__ allows you to register a custom command and pass a parameter to it.
 
 You can check __RadDesktopAlert__ demos at: [http://demos.telerik.com/wpf](http://demos.telerik.com/wpf).
 

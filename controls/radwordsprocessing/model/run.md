@@ -89,7 +89,14 @@ The Run exposes several properties that allow you to customize how it is rendere
             
 
 * __Text__: Specifies the text for the run.
-            
+
+
+* __FlowDirection__: Represents the flow direction of the run:
+	
+	* __LeftToRight__: Indicates that the text should flow from left to right.
+	
+	* __RightToLeft__: Indicates that the text should flow from right to left.
+	            
 
 * __StyleId__: Represents the ID of the style that is applied to this run.
             

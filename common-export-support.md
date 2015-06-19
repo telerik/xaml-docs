@@ -10,7 +10,7 @@ position: 11
 
 # Export Support
 
-More often than not, it is a good idea to be able to persist the data that the different controls show and edit during the life cycle of the application even after the application is closed. There are different ways to save this information and various approaches can be adopted depending on the type of the content.
+More often than not, it is a good idea to be able to preserve the data that the different controls show and edit during the life cycle of the application even after the application is closed. There are different ways to save this information and various approaches can be adopted depending on the type of the content.
 
 
 ## Built-In Export

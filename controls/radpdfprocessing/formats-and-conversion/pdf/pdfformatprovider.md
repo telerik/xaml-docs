@@ -33,15 +33,21 @@ To import a PDF document you need to use the __Import()__ method of __PdfFormatp
 
 __Example 1__ shows how to use PdfFormatProvider to import a PDF document form a file.
         
+>Since Q2 2015 the __RadPdfProcessing__ library exposes [new API]({%slug radpdfprocessing-model-imagesource%}#methods), which needs to use the stream while working with images in a __RadFixedDocument__. This requires to keep the stream open and not dispose it.
+
 
 #### __[C#] Example 1: Import PDF File__
 
 {{region radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
-    PdfFormatProvider provider = new PdfFormatProvider();
-    using (Stream input = File.OpenRead("Sample.pdf"))
-    {
-        RadFixedDocument document = provider.Import(input);
-    }
+	MemoryStream memory = new MemoryStream();
+	
+	using (FileStream fileStream = File.OpenRead(@"C:\Documents\sample.pdf"))
+	{
+	    fileStream.CopyTo(memory);
+	}
+	
+	PdfFormatProvider provider = new PdfFormatProvider();
+	RadFixedDocument document = provider.Import(memory);
 {{endregion}}
 
 

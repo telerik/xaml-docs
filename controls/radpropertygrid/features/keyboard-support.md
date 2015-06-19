@@ -123,6 +123,7 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBuiltInNavigation__. By default its value is set to "True". In order to disable the navigation which comes from "Flat" RenderMode, you can set its value to "False".
 
+#### __[C#]Example 4: Disabling navigation__
 	public class CustomKeyboardCommandProvider : PropertyGridCommandProvider
 	{
     	public CustomKeyboardCommandProvider()

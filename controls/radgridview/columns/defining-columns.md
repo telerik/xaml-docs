@@ -5,7 +5,7 @@ description: Defining Columns
 slug: gridview-columns-defining-columns
 tags: defining,columns
 published: True
-position: 8
+position: 9
 ---
 
 # Defining Columns

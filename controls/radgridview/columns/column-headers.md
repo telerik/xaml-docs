@@ -96,12 +96,10 @@ To learn more about the grouping functionality take a look at the [Basic Groupin
 
 ## Merging the headers
 
-Columns in RadGridView may be grouped in __column groups__(added with __Q3 2011__).
-[Read more]({%slug gridview-column-groups%}).
+Columns in RadGridView can be grouped in __column groups__(added with __Q3 2011__). [Read more]({%slug gridview-column-groups%}).
 
 To learn more about the customizing of the headers please refer to the [Customizing the Headers](#Customizing_the_Headers) section above.
         
-
 # See Also
 
  * [Column Footers]({%slug gridview-columns-column-footers%})

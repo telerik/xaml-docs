@@ -74,3 +74,5 @@ To disable the freezing of a column just set the __CanUserFreeze to False__ and 
  * [Bound/Unbound Columns]({%slug gridview-columns-bound-unbound-columns%})
 
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
+ 
+ * [Column Groups]({%slug gridview-column-groups%})

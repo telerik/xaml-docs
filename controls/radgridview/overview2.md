@@ -56,6 +56,8 @@ __RadGridView__ key features list:
 
 * __Merged Cells__
 
+* __Column Groups__
+
 You can find a list with all key features and additional explanation of the features [here]({%slug gridview-key-features%}){% if site.site_name == 'Silverlight' %}
 
 Check out the online demo [here.](http://demos.telerik.com/silverlight/#GridView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}

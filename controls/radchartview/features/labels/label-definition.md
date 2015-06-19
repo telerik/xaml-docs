@@ -47,7 +47,7 @@ All the properties of a __ChartSeriesLabelDefinition__ are listed here:
 
 The example below shows how to bind the label's content to a custom property from your business model. Two Label Definitions are added for each data item.
 
-#### XAML
+#### __XAML__
 {{region radchartview-label-definition}}
 	<telerik:RadCartesianChart x:Name="myChart"
 							   Width="500"
@@ -79,7 +79,7 @@ The example below shows how to bind the label's content to a custom property fro
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### C#
+#### __C#__
 {{region radchartview-label-definition_2}}
     public class Data
     {

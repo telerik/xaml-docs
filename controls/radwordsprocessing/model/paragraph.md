@@ -26,10 +26,10 @@ The __Paragraph__ class allows you to separate the content into paragraphs. It i
 Paragraphs can be added as a child of a [BlockContainer](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_blockcontainerbase.html) element – [Section]({%slug radwordsprocessing-model-section%}), [TableCell]({%slug radwordsprocessing-model-tablecell%}), [Headers and Footers]({%slug radwordsprocessing-model-headers-footers%}), through the __Blocks__ collection.
         
 
-The following code snippet creates and inserts a Paragraph to a Section.
+The following code snippet creates and inserts a Paragraph in a Section.
         
 
-#### __C# Example 1: Insert Paragrpah to a Section__
+#### __C# Example 1: Insert Paragrpah in Section__
 
 {{region radwordsprocessing-model-paragraph_0}}
     Paragraph paragraph = new Paragraph(document);
@@ -56,7 +56,7 @@ You can add a paragraph at a specific index in the __Blocks__ collection of a __
 You can also use the __AddParagraph()__ method of the __Blocks__ collection of a __BlockContainer__. The method creates a new __Paragraph__ instance, adds it to the container and returns it:
         
 
-#### __C# Example 3: Create new Paragrpah and add it to a Section__
+#### __C# Example 3: Create New Paragrpah and Add it to a Section__
 
 {{region radwordsprocessing-model-paragraph_2}}
     Paragraph paragraph = section.Blocks.AddParagraph();
@@ -203,7 +203,7 @@ For more information about __ImageInline__ element, you can read [this article](
 
 ### Adding a TabStop
 
-In __Example 8__ is demonstrated how to add a tab stop to the paragraph's collection.
+In __Example 8__ it is demonstrated how to add a tab stop to the paragraph's collection.
 
 #### __C# Example 8: Insert TabStop__
 

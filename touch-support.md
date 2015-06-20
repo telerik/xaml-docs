@@ -38,13 +38,13 @@ RadCarousel | Next/Previous	|	-	|	Click/Selection	|	-	|	-	|	-{% endif %}
 RadChartView | Scroll	|	Zoom	|	Click/Selection/Tooltip	|	Trackball	|	Show ToolTip	|	-
 RadComboBox | Scroll DropDown	|	-	|	Click	|	-	|	-	|	-{% if site.site_name == 'Silverlight' %}
 RadCoverFlow | Scroll with inertia	|	-	|	Click	|	Scroll (if possible)	|	-	|	-{% endif %}
-RadDiagram | Pan	|	Zoom	|	Select	|	Scroll	|	-	|	-
+RadDiagram | Pan with Inertia	|	Zoom	|	Select	|	Scroll	|	Shows circle for Rectangle Selection	|	Tap and Hold and Move will start a rectangle Selection
 RadGanttView | Scroll with inertia	|	Zoom	|	Click	|	On item - Drag&Drop; on slot - Scroll	|	-	|	-
 RadGauge | -	|	-	|	Click	|	Moves indicators	|	Shows tooltip	|	-
 RadGridView | Scroll	|	-	|	Click/Selection	|	HeaderCell/GroupPanelItem - Drag&Drop	|	-	|	-
 RadImageEditor | Scroll	|	Zoom	|	-	|	-	|	-	|	-
 RadListBox | Scroll with inertia	|	-	|	Click	|	Drag&Drop	|	-	|	-
-RadMap | Scroll	|	-	|	Click/Selection	|	-	|	-	|	Double Tap -> Zoom
+RadMap | Pan	|	Zoom	|	Click/Selection	|	-	|	-	|	Double Tap -> Zoom
 RadPdfViewer | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection
 RadRropertyGrid | Scroll	|	-	|	Click/Selection	|	-	|	-	|	-
 RadRichTextBox | Scroll	|	Zoom	|	Click (move caret to position)	|	-	|	Show context menu	|	Selection markers to extend the selection
@@ -54,7 +54,7 @@ RadTimeBar | Scroll	|	Zoom	|	Click/Selection	|	Moves Selection	|	Selection	|	Dou
 RadTimeline | Scroll	|	Zoom	|	Click/Selection	|	Selection	|	Shows tooltip	|	-
 RadTreeListView | Scroll	|	-	|	Click	|	-	|	Shows a circle to be dragged	|	-
 RadTreeMap | -	|	-	|	Selection	|	-	|	Shows tooltip	|	-
-RadTreeView | Scroll	|	-	|	Selection	|	Scroll	|	-	|	-
+RadTreeView | Scroll with Inertia	|	-	|	Click/Selection/Expand	|	-	|	Shows touch Indicator	|	Tap and Hold and Move will Start Drag operation
 RadTileList | Scroll	|	-	|	Selection	|	-	|	-	|	-
 
 ## TouchManager States

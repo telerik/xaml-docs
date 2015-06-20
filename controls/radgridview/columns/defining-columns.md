@@ -5,7 +5,7 @@ description: Defining Columns
 slug: gridview-columns-defining-columns
 tags: defining,columns
 published: True
-position: 8
+position: 9
 ---
 
 # Defining Columns
@@ -256,5 +256,7 @@ Then reference it in code-behind as demonstrated below:
  * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
+ 
+ * [Column Groups]({%slug gridview-column-groups%})
 
  * [Data Formatting]({%slug gridview-columns-data-formatting%})

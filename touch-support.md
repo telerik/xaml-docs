@@ -55,7 +55,7 @@ RadTimeline | Scroll	|	Zoom	|	Click/Selection	|	Selection	|	Shows tooltip	|	-
 RadTreeListView | Scroll	|	-	|	Click	|	-	|	Shows a circle to be dragged	|	-
 RadTreeMap | -	|	-	|	Selection	|	-	|	Shows tooltip	|	-
 RadTreeView | Scroll	|	-	|	Selection	|	Scroll	|	-	|	-
-RadTileList | Scroll	|	-	|	Selection	|	Reorder	|	-	|	-
+RadTileList | Scroll	|	-	|	Selection	|	-	|	-	|	-
 
 ## TouchManager States
 

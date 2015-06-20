@@ -5,7 +5,7 @@ description: Customizing Columns
 slug: gridview-columns-customizing-columns
 tags: customizing,columns
 published: True
-position: 6
+position: 7
 ---
 
 # Customizing Columns

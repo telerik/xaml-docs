@@ -5,7 +5,7 @@ description: Data Formatting
 slug: gridview-columns-data-formatting
 tags: data,formatting
 published: True
-position: 7
+position: 8
 ---
 
 # Data Formatting

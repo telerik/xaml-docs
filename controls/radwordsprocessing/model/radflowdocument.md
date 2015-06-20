@@ -54,6 +54,11 @@ __RadFlowDocument__ exposes properties which allow you to customize the way cont
             
 
 * __CommentCollection__: Represents the collection of [Comments]({%slug radwordsprocessing-model-comment%}) in the document.
+
+* __ProtectionSettings:__ Corresponds to the settings that are used when the document is protected. More information is available [here]({%slug radwordsprocessing-model-permissionrange%}). 
+
+* __DefaultTabStopWidth__: The distance between automatic [TabStops]({%slug radwordsprocessing-concepts-tabstop%}).
+
             
 
 ## Operating with a RadFlowDocument

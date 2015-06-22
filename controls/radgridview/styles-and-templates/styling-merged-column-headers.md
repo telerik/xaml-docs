@@ -10,7 +10,6 @@ position: 8
 
 # Styling Merged Column Headers
 
-
 You may achieve the desired result through defining two simple styles targeted at CommonHeaderPresenter and at CommonColumnHeader. The __CommonHeaderPresenter__ hosts all common column headers and the __CommonColumnHeader__ is responsible for a single common column header. 
 
 For example:
@@ -30,3 +29,11 @@ For example:
 {{endregion}}
 
 This will result in a red background for the merged header cells.
+
+>importantAs of version __Q2 2015 GridViewColumnGroupRow__ visual element was introduced. You need to also merge its XAML if using Custom Theme.
+
+# See Also
+
+ * [Styles and Templates Overview]({%slug gridview-stylines-and-templates-overview%})
+ 
+ * [Column Groups]({%slug gridview-column-groups%}).

@@ -5,10 +5,10 @@ description: DesktopAlertManager
 slug: raddesktopalert-desktop-alert-manager
 tags: desktopalertmanager,alert
 published: True
-position: 3
+position: 5
 ---
 
-# Desktop Alert Manager
+# DesktopAlertManager
 
 Using __RadDesktopAlertManager__ you could easily visualize and position __RadDesktopAlert__ on the screen. Thanks to __RadDesktopAlertManager__ you could also display multiple alerts on the screen - it takes care to calculate the location of all alerts, so they could not overlap. When an alert gets closed, all other alerts that are currently visualized on the screen get relocated.
 
@@ -46,7 +46,7 @@ Except __ScreenPosition__ the __AlertsDistance__ and __ScreenPositionOffset__ co
 
 This article will provide some detailed information about the following properties of __RadDesktopAlertManager__: 
 
-* [Show/HideAnimation](#show/hideanimation)
+* [Show/HideAnimation](#showhideanimation)
 
 * [ScreenPosition](#screenposition)
 
@@ -61,7 +61,7 @@ __Example 1__ demonstates how a __FadeAnimation__ could be applied:
 #### __[C#] Example 1: Applying ShowAnimation__
 
 {{region raddesktopalert-desktop-alert-manager_1}}
-	this.manager.ShowAnimation = new FadeAnimation
+	manager.ShowAnimation = new FadeAnimation
 	{ 
 		Direction = AnimationDirection.Out, 
 		MinOpacity = 0.5d, 
@@ -73,7 +73,7 @@ __Example 1__ demonstates how a __FadeAnimation__ could be applied:
 #### __[VB] Example 1: Applying ShowAnimation__
 
 {{region raddesktopalert-desktop-alert-manager_1}}
-	Me.manager.ShowAnimation = New FadeAnimation() With 
+	manager.ShowAnimation = New FadeAnimation() With 
 	{ 
 		Key .Direction = AnimationDirection.Out, 
 		Key .MinOpacity = 0.5, 
@@ -102,7 +102,7 @@ Using the __ScreenPosition__ property you could easily define the position of __
 
 >The __ScreenPosition__ property is initialized and set only through __RadDesktopAlertManager__'s constructor.
 
-## ShowAlert method
+## ShowAlert()
 
 In order __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__.
 
@@ -118,7 +118,7 @@ __Example 2__ demonstrates how to visualize __RadDesktopAlert__ by passing it as
 		Command = new DelegateCommand(OnCommandExecuted),
 		ShowDuration = 5000,
 	};
-	this.manager.ShowAlert(alert);
+	manager.ShowAlert(alert);
 {{endregion}}
 
 #### __[VB] Example 2:  Showing RadDesktopAlert__
@@ -130,10 +130,10 @@ __Example 2__ demonstrates how to visualize __RadDesktopAlert__ by passing it as
 		Key .Command = New DelegateCommand(OnCommandExecuted),
 		Key .ShowDuration = 5000
 	}
-	Me.manager.ShowAlert(alert)
+	manager.ShowAlert(alert)
 {{endregion}}
 
-## ShowAlert MVVM
+## ShowAlert() MVVM
 
 __RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This is a class that holds all parameters that you need to customize __RadDesktopAlert__ and it is MVVM friendly - it's main idea is for visualization and customization of __RadDesktopAlert__ within MVVM scenarios. 
 
@@ -142,7 +142,7 @@ __Example 3__ demonstrates how to display an alert in such MVVM scenario:
 #### __[C#]Example 3:  Creating RadDesktopAlert in MVVM__
 
 {{region raddesktopalert-desktop-alert-manager_3}}
-	this.manager.ShowAlert(new DesktopAlertParameters
+	manager.ShowAlert(new DesktopAlertParameters
 	{
 		Header = "New mail",
 		Content = "Hello, Here are two things that we noticed today on our front-end meeting",
@@ -155,7 +155,7 @@ __Example 3__ demonstrates how to display an alert in such MVVM scenario:
 #### __[VB] Example 3:  Creating RadDesktopAlert in MVVM__
 
 {{region raddesktopalert-desktop-alert-manager_3}}
-	Me.manager.ShowAlert(New DesktopAlertParameters() With {
+	manager.ShowAlert(New DesktopAlertParameters() With {
 		Key .Header = "New mail",
 		Key .Content = "Hello, Here are two things that we noticed today on our meeting",
 		Key .Icon = New Image() With {
@@ -168,7 +168,7 @@ __Example 3__ demonstrates how to display an alert in such MVVM scenario:
 	})
 {{endregion}}
 
-## CloseAlert and CloseAllAlerts
+## CloseAlert() and CloseAllAlerts()
 
 You could easily close __RadDesktopAlert__  in code - behind before its duration has expired using the __CloseAlert__ method of __RadDesktopAlertManager__. The __DesktopAlert__ control you want to close should be passed as a parameter to this method.
 
@@ -177,11 +177,11 @@ __Example 4__ shows how to close __RadDesktopAlert__:
 #### __[C#] Example 4:  Closing single RadDesktopAlert__
 
 {{region raddesktopalert-desktop-alert-manager_4}}
-	this.manager.CloseAlert(this.alert);
+	manager.CloseAlert(alert);
 {{endregion}}
 
 #### __[VB] Example 4:  Closing single RadDesktopAlert__
-	Me.manager.CloseAlert(Me.alert)
+	manager.CloseAlert(alert)
 {{region raddesktopalert-desktop-alert-manager_4}}
 
 Using the __CloseAllAlerts__ method of __RadDesktopAlertManager__ all currently opened __RadDesktopAlerts__ could be closed.
@@ -191,13 +191,13 @@ __Example 5__ demonstrates how to close all opened __RadDesktopAlerts__:
 #### __[C#]Example 5:  Closing single RadDesktopAlert__
 
 {{region raddesktopalert-desktop-alert-manager_5}}
-	this.manager.CloseAllAlerts();
+	manager.CloseAllAlerts();
 {{endregion}}
 
 #### __[VB]Example 5:  Closing single RadDesktopAlert__
 
 {{region raddesktopalert-desktop-alert-manager_5}}
-	Me.manager.CloseAllAlerts()
+	manager.CloseAllAlerts()
 {{endregion}}
 
 ## AlertsDistance
@@ -209,3 +209,5 @@ You could easily set the distance between the currently opened on the screen __R
  * [Overview]({%slug raddesktopalert-overview%})
 
  * [Getting Started]({%slug raddesktopalert-getting-started%})
+ 
+ * [DesktopAlert Key Properties]({%slug raddesktopalert-features-key-properties%})

@@ -12,11 +12,9 @@ position: 0
 
 The purpose of this article is to show you how to set a built-in theme to __RadDesktopAlert__.
 
-__RadDesktopAlert__ supports styling using __Implicit__ Styles.
+>__RadDesktopAlert__ supports styling using __Implicit Styles__. Detailed information about the use of __Implicit Styles__ you could find [here]({%slug styling-apperance-implicit-styles-overview%}).
 
->Detailed information about the use of __Implicit Styles__ you could find [here]({%slug styling-apperance-implicit-styles-overview%}).
-
-The following Xaml files should be merger in App.xaml file in order a theme to be set to the DesktopAlert:
+The following Xaml files should be merger in App.xaml file in order a theme to be correctly applied to the DesktopAlert:
 
 * Telerik.Windows.Controls.xaml
 
@@ -71,3 +69,8 @@ Either way you choose, the end result will be the following:
 __Figure 3:__ DesktopAlert with VisualStudio2013 theme applied
 ![Rad Desktop Alert Setting Theme 03](images/RadDesktopAlert_Setting_Theme_03.png)
 
+# See Also
+
+ * [Getting Started]({%slug raddesktopalert-getting-started%})
+
+ * [Visual Structure]({%slug raddesktopalert-visual-structure%})

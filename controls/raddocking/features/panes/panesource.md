@@ -226,9 +226,6 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	{{region raddocking-features-panes-panesource-3}}
 		<telerik:RadDocking PanesSource="{Binding Panes}">
-			<telerik:RadDocking.DockingPanesFactory>
-				<local:CustomDockingPanesFactory />
-			</telerik:RadDocking.DockingPanesFactory>
 			<telerik:RadSplitContainer InitialPosition="DockedLeft">
 				<telerik:RadPaneGroup  x:Name="LeftPaneGroup">
 				</telerik:RadPaneGroup>
@@ -237,6 +234,9 @@ The next example demonstrates a common scenario when using the PaneSource proper
 				<telerik:RadPaneGroup x:Name="BottomPaneGroup">
 				</telerik:RadPaneGroup>
 			</telerik:RadSplitContainer>
+			<telerik:RadDocking.DockingPanesFactory>
+				<local:CustomDockingPanesFactory />
+			</telerik:RadDocking.DockingPanesFactory>
 		</telerik:RadDocking>
 	{{endregion}}
 

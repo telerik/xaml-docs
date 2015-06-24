@@ -17,7 +17,7 @@ This topic will walk you through the creating of __RadDesktopAlert__.
 > * Telerik.Windows.Controls.Navigation.dll
 > * Telerik.Windows.Data.dll
 
-You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create __RadDesktopAlert__:
+You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create __RadDesktopAlert__ in code behind:
 
 #### __[C#]  Creating RadDesktopAlert__
 
@@ -25,7 +25,7 @@ You can include the control in your page by either dragging it from the toolbox 
 	var alert = new RadDesktopAlert();
 	alert.Header = "MAIL NOTIFICATION";
 	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting.";
-	alert.ShowDuration = 5000;
+	alert.ShowDuration = 3000;
 {{endregion}}
 
 #### __[VB]  Creating RadDesktopAlert__
@@ -34,23 +34,25 @@ You can include the control in your page by either dragging it from the toolbox 
 	Dim alert = New RadDesktopAlert()
 	alert.Header = "MAIL NOTIFICATION"
 	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting."
-	alert.ShowDuration = 5000
+	alert.ShowDuration = 3000
 {{endregion}}
 
-In order to visualize it a new instance of __RadDesktopAlertManager__ should be created and the declared __RadDesktopAlert__ should be passed as a parameter to its __ShowAlert__ method:
+>__RadDesktopAlert__ is designed to work with [__RadDesktopAlertManager__]({%slug raddesktopalert-desktop-alert-manager%}). If just placed in XAML it won't be completely functional.
 
-#### __[C#]  Creating RadDesktopAlert__
+In order to visualize it, a new instance of __RadDesktopAlertManager__ should be created and the already declared above __RadDesktopAlert__ should be passed as a parameter to its __ShowAlert__ method:
+
+#### __[C#]  Showing RadDesktopAlert__
 
 {{region raddesktopalert-getting-started_1}}
-	RadDesktopAlertManager bottomRightManager = new RadDesktopAlertManager();
-	this.bottomRightManager.ShowAlert(alert);
+	RadDesktopAlertManager manager = new RadDesktopAlertManager();
+	manager.ShowAlert(alert);
 {{endregion}}
 
-#### __[VB]  Creating RadDesktopAlert__
+#### __[VB]  Showing RadDesktopAlert__
 
 {{region raddesktopalert-getting-started_1}}
-	Dim bottomRightManager As New RadDesktopAlertManager()
-	Me.bottomRightManager.ShowAlert(alert)
+	Dim manager As New RadDesktopAlertManager()
+	manager.ShowAlert(alert)
 {{endregion}}
 
 # See Also
@@ -58,3 +60,5 @@ In order to visualize it a new instance of __RadDesktopAlertManager__ should be 
  * [Overview]({%slug raddesktopalert-overview%})
 
  * [Visual Structure]({%slug raddesktopalert-visual-structure%})
+ 
+ * [Desktop Alert Manager]({%slug raddesktopalert-desktop-alert-manager%})

@@ -37,7 +37,7 @@ In XAML you have to create an instance of the selector, define its rules collect
 
 	<UserControl.Resources>
 	    <DataTemplate x:Key="ComboBoxEditor">
-	        <telerik:RadComboBox SelectedValue="{Binding Value, Mode=TwoWay, FallbackValue={x:Null}}"
+	        <telerik:RadComboBox SelectedValue="{Binding Value, Mode=TwoWay}"
 	                                MinWidth="100" />
 	    </DataTemplate>
 	    <local:EditorTemplateSelector x:Key="EditorTemplateSelector">

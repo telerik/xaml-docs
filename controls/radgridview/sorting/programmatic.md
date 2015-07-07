@@ -12,7 +12,7 @@ position: 1
 
 Besides the built-in sorting functionality you are able to use a programmatic approach to sort the data in __RadGridView__. This is achieved via the __SortDescriptors__ collection. This collection of __ISortDescriptor__ objects allows you to use descriptors which define the sorting property (or column) and the sorting direction for the bound data. As this is a collection you are able not only to add, but to remove or clear the entries in it too.
     
->tipIf you use __ICollectionView__ as data source, the __RadGridView__ will automatically synchronize the __SortDescriptors__ of the source with its own ones.
+>tipIf you use __ICollectionView__ as data source RadGridView will automatically synchronize the __SortDescriptors__ of the source with its own ones.
 
 >As of Q3 2010, RadGridView adds/removes __ColumnSortDescriptor__ to its __SortDescriptors__ collection when the user sort from the UI.
 

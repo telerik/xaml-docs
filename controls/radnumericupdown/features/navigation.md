@@ -6,7 +6,6 @@ slug: radnumericupdown-navigation
 tags: keyboard,navigation
 published: True
 position: 2
-site_name: WPF
 ---
 
 # Keyboard navigation

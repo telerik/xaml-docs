@@ -105,7 +105,7 @@ __Example 2__ shows hot to create a LinearGradient and assing it as the FillColo
 
     LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
     linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
-    linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 0));
+    linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 1));
 
     containerEditor.GraphicProperties.FillColor = linearGradient;
     containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));

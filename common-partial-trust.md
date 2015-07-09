@@ -54,6 +54,7 @@ DataForm	|	Yes	|
 DataPager	|	Yes	|	
 DataServiceDataSource	|	No	|	
 DateTimePicker	|	Yes	|	
+DesktopAlert	|	No	|	
 Diagram	|	No	|	
 Docking	|	Partially	|	No floating windows - require full trust permission
 EntityFrameworkDataSource	|	Partially	|	Requires additional permission for System.Data.SqlClient.SqlClientPermission

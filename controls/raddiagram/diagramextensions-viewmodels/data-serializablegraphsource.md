@@ -16,7 +16,7 @@ This article describes the __SerializableGraphSourceBase<TNode, TLink>__ class d
 
 ## Overview
 
-The __SerializableGraphSourceBase<TNode, TLink>__ class is an __abstract__ class which is designed to provide a base __ViewModel__ implementation that supports item serialization. It derives from __SerializableGraphSourceBase<TNode, TLink>__ and it implements the {% if site.site_name == 'Silverlight' %}[ISerializableGraphSource](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_iserializablegraphsource.html){% endif %}{% if site.site_name == 'WPF' %}[ISerializableGraphSource](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_iserializablegraphsource.html){% endif %} interface.		
+The __SerializableGraphSourceBase<TNode, TLink>__ class is an __abstract__ class which is designed to provide a base __ViewModel__ implementation that supports item serialization. It derives from __ObservableGraphSourceBase<TNode, TLink>__ and it implements the {% if site.site_name == 'Silverlight' %}[ISerializableGraphSource](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_iserializablegraphsource.html){% endif %}{% if site.site_name == 'WPF' %}[ISerializableGraphSource](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_iserializablegraphsource.html){% endif %} interface.		
 
 SerializableGraphSourceBase<TNode, TLink> Inheritance Model
 ![raddiagram-data-graphsource-hierarchy](images/raddiagram-data-graphsource-hierarchy.png)

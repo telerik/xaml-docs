@@ -28,7 +28,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
 ## Creating ResourceTypesCollection      
 
-First of all, let's set a __ResourceTypesCollection__:        
+First of all, let's set a __ResourceTypesSource__:        
 
 #### __XAML__
 

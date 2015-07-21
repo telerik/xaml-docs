@@ -34,7 +34,7 @@
 	margin-top: 20px;
 }
 div#leftNav {
-	height:100%;
+	height:100% !important;
 	margin: 0px -1px 0 0;
 	width: 280px;
 	min-height: 10px;
@@ -65,19 +65,10 @@ div#leftNav a:hover {
 	color: #3390b1;
 }
 div#tocNav > div > a, div#tocNav > div > a:link, div#tocNav > div > a:visited {
+	display: block;
 	margin-left: 18px;
 	overflow: hidden;
 }
-
-div#tocNav  div.current a:nth-child(2) {
-	color: #fff !important;
-	font-weight: notmal !important;
-	background-color: #00b312 !important;
-	font-weight: normal !important;
-	display: inline-block;
-	padding: 2px 8px;
-}
-
 div#tocNav > div.current > a, div#tocNav > div.current > a:link, div#tocNav > div.current > a:visited {
 	color: #000;
 	font-weight: bold;

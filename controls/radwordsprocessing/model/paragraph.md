@@ -99,7 +99,7 @@ __Paragraph__ exposes several properties that allow you to customize the layout 
 * __Spacing__: Defines the Paragraph spacing.
             
 
-* __KeepOnePage__: Indicates if the Paragraph should be rendered on one page when the document is shown in page view mode.
+* __KeepOnOnePage__: Indicates if the Paragraph should be rendered on one page when the document is shown in page view mode.
             
 
 * __KeepWithNextParagraph__: Indicates if the Paragraph should be rendered at least partly on the same page with the following paragraph when this is possible and when the document is shown in page view mode.

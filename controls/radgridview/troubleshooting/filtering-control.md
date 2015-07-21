@@ -48,24 +48,15 @@ You might have problems extracting the control template of the Filtering control
                                 <StackPanel HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" MaxWidth="350" Margin="{TemplateBinding Padding}" MinWidth="200" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
                                     <StackPanel x:Name="PART_DistinctFilter" Visibility="{TemplateBinding DistinctFiltersVisibility}">
                                         <CheckBox x:Name="PART_SelectAllCheckBox" Content="Select All" IsChecked="{Binding SelectAll, Mode=TwoWay}" Margin="0,2" telerik:LocalizationManager.ResourceKey="GridViewFilterSelectAll">
-                                            <telerik:StyleManager.Theme>
-                                                <telerik:Office_BlackTheme/>
-                                            </telerik:StyleManager.Theme>
                                         </CheckBox>
                                         <ListBox x:Name="PART_DistinctValuesList" ItemsSource="{Binding DistinctValues}" ScrollViewer.HorizontalScrollBarVisibility="Auto" 
                                                  MaxHeight="100" SelectionMode="Multiple">
                                             <ListBox.ItemTemplate>
                                                 <DataTemplate>
                                                     <CheckBox Content="{Binding ConvertedValue}" IsChecked="{Binding IsActive, Mode=TwoWay}" VerticalContentAlignment="Center">
-                                                        <telerik:StyleManager.Theme>
-                                                            <telerik:Office_BlackTheme/>
-                                                        </telerik:StyleManager.Theme>
                                                     </CheckBox>
                                                 </DataTemplate>
                                             </ListBox.ItemTemplate>
-                                            <telerik:StyleManager.Theme>
-                                                <telerik:Office_BlackTheme/>
-                                            </telerik:StyleManager.Theme>
                                         </ListBox>
                                     </StackPanel>
                                     <StackPanel Margin="0,2" Visibility="{TemplateBinding FieldFiltersVisibility}">
@@ -84,9 +75,6 @@ You might have problems extracting the control template of the Filtering control
                                                     </TextBlock>
                                                 </DataTemplate>
                                             </telerik:RadComboBox.ItemTemplate>
-                                            <telerik:StyleManager.Theme>
-                                                <telerik:Office_BlackTheme/>
-                                            </telerik:StyleManager.Theme>
                                         </telerik:RadComboBox>
                                         <ContentControl x:Name="PART_Filter1ContentControl" DataContext="{Binding Filter1}" HorizontalContentAlignment="Stretch" Margin="0,2" VerticalContentAlignment="Stretch"/>
                                         <telerik:RadComboBox x:Name="PART_LogicalOperatorsComboBox"  ItemsSource="{Binding LogicalOperators}" SelectedItem="{Binding FieldFilterLogicalOperator, Mode=TwoWay}" Margin="0,2">
@@ -103,9 +91,6 @@ You might have problems extracting the control template of the Filtering control
                                                     </TextBlock>
                                                 </DataTemplate>
                                             </telerik:RadComboBox.ItemTemplate>
-                                            <telerik:StyleManager.Theme>
-                                                <telerik:Office_BlackTheme/>
-                                            </telerik:StyleManager.Theme>
                                         </telerik:RadComboBox>
                                         <telerik:RadComboBox x:Name="PART_Filter2ComboBox" ItemsSource="{Binding AvailableActions}"  SelectedItem="{Binding Filter2.Operator, Mode=TwoWay}"  Margin="0,2">
                                             <telerik:RadComboBox.ItemTemplate>
@@ -121,9 +106,6 @@ You might have problems extracting the control template of the Filtering control
                                                     </TextBlock>
                                                 </DataTemplate>
                                             </telerik:RadComboBox.ItemTemplate>
-                                            <telerik:StyleManager.Theme>
-                                                <telerik:Office_BlackTheme/>
-                                            </telerik:StyleManager.Theme>
                                         </telerik:RadComboBox>
                                         <ContentControl x:Name="PART_Filter2ContentControl" DataContext="{Binding Filter2}" HorizontalContentAlignment="Stretch" Margin="0,2" VerticalContentAlignment="Stretch"/>
                                     </StackPanel>
@@ -133,21 +115,12 @@ You might have problems extracting the control template of the Filtering control
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <Button x:Name="PART_ApplyFilterButton" Content="Filter" Grid.Column="0" Height="22" Margin="0,2,2,2" telerik:LocalizationManager.ResourceKey="GridViewFilter">
-                                            <telerik:StyleManager.Theme>
-                                                <telerik:Office_BlackTheme/>
-                                            </telerik:StyleManager.Theme>
                                         </Button>
                                         <Button x:Name="PART_ClearFilterButton" Content="Clear Filter" Grid.Column="1" Height="22" Margin="2,2,0,2" telerik:LocalizationManager.ResourceKey="GridViewClearFilter">
-                                            <telerik:StyleManager.Theme>
-                                                <telerik:Office_BlackTheme/>
-                                            </telerik:StyleManager.Theme>
                                         </Button>
                                     </Grid>
                                 </StackPanel>
                                 <telerik:RadButton x:Name="PART_FilterCloseButton" HorizontalAlignment="Right" Height="13" Margin="{TemplateBinding Padding}" VerticalAlignment="Top" Width="13">
-                                    <telerik:StyleManager.Theme>
-                                        <telerik:Office_BlackTheme/>
-                                    </telerik:StyleManager.Theme>
                                     <Path Data="M4,4L5,4 5,5 4,5z M0,4L1,4 1,5 0,5z M3,3L4,3 4,4 3,4z M1,3L2,3 2,4 1,4z M2,2L3,2 3,3 2,3z M4,0L5,0 5,1 4,1 4,2 3,2 3,0.99999994 4,0.99999994z M0,0L1,0 1,0.99999994 2,0.99999994 2,2 1,2 1,1 0,1z" Fill="Black" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Height="6" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Width="6"/>
                                 </telerik:RadButton>
                             </Grid>

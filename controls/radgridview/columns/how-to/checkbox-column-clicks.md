@@ -99,8 +99,7 @@ Another approach would be to leverage the __CellTemplate__ of GridViewDataColumn
 	                            IsReadOnly="True">
 	    <telerik:GridViewDataColumn.CellTemplate>
 	        <DataTemplate>
-	            <CheckBox IsChecked="{Binding IsActive, Mode=TwoWay}"
-	                      telerik:StyleManager.Theme="Office_Black"/>
+	            <CheckBox IsChecked="{Binding IsActive, Mode=TwoWay}"/>
 	        </DataTemplate>
 	    </telerik:GridViewDataColumn.CellTemplate>
 	</telerik:GridViewDataColumn>

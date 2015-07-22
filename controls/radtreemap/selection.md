@@ -12,7 +12,7 @@ position: 6
 
 __RadTreeMap__ and __RadPivotMap__ support selection functionality which is disabled by default. You can enable it by setting the control's __IsSelectionEnabled__ property to __True__.
 
-> The following examples use RadTreeMap but the same properties are exposed also by the __RadPivotMap__ control
+> The following examples use __RadTreeMap__ but the same properties are exposed by the __RadPivotMap__ control as well.
 
 #### __XAML__
 	<telerik:RadTreeMap IsSelectionEnabled="True">
@@ -44,15 +44,15 @@ The selection feature supports several modes which you can set through the __Sel
 ## Related Properties
 
 __RadTreeMap__ and __RadPivotMap__ controls expose several properties which allow you to access the current selected item(s).
-* __SelectedItem__: Gets or sets the selected item
-* __SelectedItems__: Gets a collection that contains the selected items
-* __SelectedValue__: Gets or sets a value from the SelectedItem
-* __SelectedValuePath__: Gets or sets a path that is used to get the SelectedValue for the SelectedItem
+* __SelectedItem__: Gets or sets the selected item.
+* __SelectedItems__: Gets a collection that contains the selected items.
+* __SelectedValue__: Gets or sets a value from the SelectedItem.
+* __SelectedValuePath__: Gets or sets a path that is used to get the SelectedValue for the SelectedItem.
 
 
 ## Events
 
-There are couple events which are fired when the selection is changed - __SelectionChanged__ and __PreviewSelectionChanged__. Their handlers uses an object of type __SelectionChangedRoutedEventArgs__ as a second parameter that holds information about the selection.
+There are couple events which are fired when the selection is changed - __SelectionChanged__ and __PreviewSelectionChanged__. Their handlers use an object of type __SelectionChangedRoutedEventArgs__ as a second parameter that holds information about the selection.
 	
 
 # See Also

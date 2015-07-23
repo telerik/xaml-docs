@@ -32,27 +32,29 @@ To import a PDF document you need to use the __Import()__ method of __PdfFormatp
         
 
 __Example 1__ shows how to use PdfFormatProvider to import a PDF document form a file.
+
+>PDF files can be opened as long as you can obtain a stream with their content that supports Read and Seek operations. If the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well.
         
 >Since Q2 2015 the __RadPdfProcessing__ library exposes [new API]({%slug radpdfprocessing-model-imagesource%}#methods), which needs to use the stream while working with images in a __RadFixedDocument__. This requires to keep the stream open and not dispose it.
+
 
 
 #### __[C#] Example 1: Import PDF File__
 
 {{region radpdfprocessing-formats-and-conversion-pdf-pdfformatprovider_0}}
-	MemoryStream memory = new MemoryStream();
-	
-	using (FileStream fileStream = File.OpenRead(@"C:\Documents\sample.pdf"))
-	{
-	    fileStream.CopyTo(memory);
-	}
-	
+
 	PdfFormatProvider provider = new PdfFormatProvider();
-	RadFixedDocument document = provider.Import(memory);
+	using (Stream stream = File.OpenRead("sample.pdf"))
+	{
+	    document = provider.Import(stream);
+	
+	    // Do your work with the document inside the using statement.
+	}
 {{endregion}}
 
 
 
-The result from the import method is a RadFixedDocument which can be used like any code-generated document.
+The result from the import method is a __RadFixedDocument__ which can be used like any code-generated document.
         
 
 >Import support is limited to the features that are supported by the export so it is possible that you cannot import all of your custom PDF documents.
@@ -60,7 +62,7 @@ The result from the import method is a RadFixedDocument which can be used like a
 
 ## Export
 
-__Example 2__ shows how to use the __Export()__ method of PdfFormatProvider to export RadFixedDocument to a file.
+__Example 2__ shows how to use the __Export()__ method of __PdfFormatProvider__ to export __RadFixedDocument__ to a file.
         
 
 #### __[C#] Example 2: Export PDF File__

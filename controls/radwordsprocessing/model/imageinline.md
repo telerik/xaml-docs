@@ -19,6 +19,8 @@ __ImageInline__ element is an inline-level flow content element intended to cont
 
 * [Modifying an ImageInline](#modifying-an-imageinline)
 
+* [Exporting an ImageInline](#exporting-an-imageinline)
+
 ## Inserting an ImageInline
 
 You can use the following code snippet to create an ImageInline and add it to a [Paragraph]({%slug radwordsprocessing-model-paragraph%}):
@@ -96,6 +98,29 @@ The __ImageInline__ element exposes the following properties:
 
     * __RotationAngle__: Specifies the rotation angle of the image.
                 
+
+## Exporting an ImageInline
+
+This section will explain the behavior of the __InlineImage.Size__ property and how the image sizes are exported to the supported formats.
+
+* __Insert image without specifying its size__
+	* Model: Size will be Size.Empty.
+	* Export to DOCX: Size will be decoded
+	* Export to RTF: Size will be decoded
+	* Export HTML: Width and height attributes will not be exported
+
+
+* __Insert image and set its size to Size.Empty__
+	* Model: Size will be Size.Empty
+	* Export to DOCX: Size will be (1,1)
+	* Export to RTF: Size will be (1,1)
+	* Export to HTML: Width and height attributes will not be exported
+
+* __Inserting image without specifying its size and obtain its size later (through the property getter)__
+	* Model: Size will be decoded
+
+
+
 
 # See Also
 

@@ -17,7 +17,9 @@ __FloatingImage__ is an inline-level anchor flow document element linked with a 
 
 * [Inserting a FloatingImage](#inserting-a-floatingimage)
 
-* [Modify an FloatingImage](#modify-an-floatingimage)
+* [Modify a FloatingImage](#modify-a-floatingimage)
+
+* [Export a FloatingImage](#export-a-floatingimage)
 
 ## Inserting a FloatingImage
 
@@ -75,12 +77,12 @@ Inserting __FloatingImage__ element in RadFlowDocument can also be achieved with
 
 
 
-## Modify an FloatingImage
+## Modify a FloatingImage
 
 The __FloatingImage__ element exposes the following properties:
         
 
-* __Image__: Represents the image object that is contained in the FloatingImage. It is a read-only composite object that contains the properties listed below:
+* __Image__: Represents the image object that is contained in the __FloatingImage__. It is a read-only composite object that contains the properties listed below:
 
     * __ImageSource__: Specifies the image source that is visualized in the image object.
 
@@ -134,6 +136,28 @@ The __FloatingImage__ element exposes the following properties:
 
     * __Offset__: Specifies the offset to be used if the position type is Offset.
                 
+
+## Export a FloatingImage
+
+This section will explain the behavior of the __FloatingImage.Size__ property and how the image sizes are exported to the supported formats.
+
+* __Insert image without specifying its size__
+	* Model: Size will be Size.Empty.
+	* Export to DOCX: Size will be decoded
+	* Export to RTF: Size will be decoded
+	* Export HTML: Width and height attributes will not be exported
+
+
+* __Insert image and set its size to Size.Empty__
+	* Model: Size will be Size.Empty
+	* Export to DOCX: Size will be (1,1)
+	* Export to RTF: Size will be (1,1)
+	* Export to HTML: Width and height attributes will not be exported
+
+* __Inserting image without specifying its size and obtain its size later (through the property getter)__
+	* Model: Size will be decoded
+
+
 
 # See Also
 

@@ -19,7 +19,7 @@ __ImageInline__ element is an inline-level flow content element intended to cont
 
 * [Modifying an ImageInline](#modifying-an-imageinline)
 
-* [Exporting an ImageInline](#exporting-an-imageinline)
+* [Working with Image Size](#working-with-image-size)
 
 ## Inserting an ImageInline
 
@@ -91,17 +91,21 @@ The __ImageInline__ element exposes the following properties:
     * __Width__: The width of the image.
 
     * __Height__: The height of the image.
+    
+	* __Size__: The size of the image. Can also be set to __Size.Empty__. 
 
     * __IsHorizontallyFlipped__: Specifies whether the image is horizontally flipped.
 
     * __IsVerticallyFlipped__: Specifies whether the image is vertically flipped.
 
     * __RotationAngle__: Specifies the rotation angle of the image.
+    
+	* __LockAspectRatio__: Determines whether the aspect ratio between the width and the height of the image will be preserved. 
                 
 
-## Exporting an ImageInline
+## Working with Image Size
 
-This section will explain the behavior of the __InlineImage.Size__ property and how the image sizes are exported to the supported formats.
+This section explains the behavior of the __Size__ property of The __Image__ object in an __ImageInline__ and how the image sizes are exported to the supported formats.
 
 * __Insert image without specifying its size__
 	* Model: Size will be Size.Empty.

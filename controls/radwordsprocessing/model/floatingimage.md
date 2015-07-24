@@ -19,7 +19,7 @@ __FloatingImage__ is an inline-level anchor flow document element linked with a 
 
 * [Modify a FloatingImage](#modify-a-floatingimage)
 
-* [Export a FloatingImage](#export-a-floatingimage)
+* [Working with Image Size](#working-with-image-size)
 
 ## Inserting a FloatingImage
 
@@ -91,12 +91,16 @@ The __FloatingImage__ element exposes the following properties:
     * __Width__: The width of the image.
 
     * __Height__: The height of the image.
+    
+	* __Size__: The size of the image. Can also be set to __Size.Empty__.  
 
     * __IsHorizontallyFlipped__: Specifies whether the image is horizontally flipped.
 
     * __IsVerticallyFlipped__: Specifies whether the image is vertically flipped.
 
     * __RotationAngle__: Specifies the rotation angle of the image.
+    
+	* __LockAspectRatio__: Determines whether the aspect ratio between the width and the height of the image will be preserved. 
 
 * __AllowOverlap__: Specifies whether the image is allowed to overlap the contents of the other image objects. The default value is true.
 
@@ -137,9 +141,9 @@ The __FloatingImage__ element exposes the following properties:
     * __Offset__: Specifies the offset to be used if the position type is Offset.
                 
 
-## Export a FloatingImage
+## Working with Image Size
 
-This section will explain the behavior of the __FloatingImage.Size__ property and how the image sizes are exported to the supported formats.
+This section explains the behavior of the  __Size__ property of The __Image__ object in a __FloatingImage__  and how the image sizes are exported to the supported formats.
 
 * __Insert image without specifying its size__
 	* Model: Size will be Size.Empty.

@@ -28,7 +28,7 @@ Here is a brief list of all behavior properties defined in RadNumericUpDown.
 
 * __IsEditable__ - determines whether the user can input numeric data in the TextBox using the keyboard. Still the value could be changed using the increase and decrease repeat buttons and the Up and Down keys.
 
-* __UpdateValueToMatchTextOnLostFocus__ - (available with SP1 Q2 2015) determines whether the __Value__ will be updated in order to match the ContextText when the __Value__ is rounded and the focus is moved out of the control. 
+* __UpdateValueToMatchTextOnLostFocus__ - (available with SP1 Q2 2015) determines whether the selected __Value__ will be updated to match the displayed text when the focus gets lost and the text gets formatted.
 
 * __IsReadOnly__ - (available with SP1 Q2 2015) determines whether the editing functionality of the control is enabled or disabled. When it is set to True both the increase and decrease repeat buttons are disabled – the user could no longer press them in order to increase/decrease the value. The __TextBox__ that contains the __ContentText__ becomes ReadOnly either and the value could no longer be changed using the keyboard or the Up/Down keys.
 

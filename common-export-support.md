@@ -166,7 +166,7 @@ __Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The ph
 {{endregion}}
 {% endif %}
 
-
+>tipExporting a control to an image requires that the control is measured and arranged. Otherwise, unexpected results may occur.
 
 ## See Also
 

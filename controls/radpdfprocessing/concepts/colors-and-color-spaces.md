@@ -84,40 +84,64 @@ The __Gradient__ class is inherited by the following classes
             
 
 * __LinearGradient__: Defines a color blend along a line between two points, optionally extended beyond the boundary points by continuing the boundary colors.
-                
+            
+	
+	__Example 2__ shows how to create a LinearGradient and assing it as the FillColor of a [FixedContentEditor]({%slug radpdfprocessing-editing-fixedcontenteditor%}).
+            
+	
+	#### __[C#] Example 2: Create LinearGradient__
+	
+	{{region radpdfprocessing-concepts-colors-and-color-spaces_1}}
+	    FixedContentEditor containerEditor = new FixedContentEditor(container);
+	
+	    LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
+	    linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
+	    linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 1));
+	
+	    containerEditor.GraphicProperties.FillColor = linearGradient;
+	    containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));
+	{{endregion}}
+	
+	
+	
+	The gradient created in __Example 2__ is shown in __Figure 1__.
+	            
+	
+	Figure 1: LinearGradient	
+	![Rad Pdf Processing Concepts Colors And Color Spaces 01](images/RadPdfProcessing_Concepts_Colors_And_Color_Spaces_01.png)
+    
 
 * __RadialGradient__: Defines a blend between two circles, optionally extended beyond the boundary circles by continuing the boundary colors. The __RadialGradient__ class exposes the following properties:
                 
 
- * __StartRadius__: Decimal number determining the radius of the starting circle.
-                    
+	 * __StartRadius__: Decimal number determining the radius of the starting circle.
+	                    
+	
+	 * __EndRadius__: Decimal number determining the radius of the ending circle.
+              
+	__Example 3__ demonstrates how to create a RadialGradient and assing it as the FillColor of a [FixedContentEditor]({%slug radpdfprocessing-editing-fixedcontenteditor%}).
+	
+	
+	#### __[C#] Example 3: Create RadialGradient__
+	
+	{{region radpdfprocessing-concepts-colors-and-color-spaces_3}}
+	
+		FixedContentEditor containerEditor = new FixedContentEditor(container);
+		
+		RadialGradient radialGradient = new RadialGradient(new Point(40, 40), new Point(40, 40), 0, 30);
+		radialGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
+		radialGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 1));
+		
+		containerEditor.GraphicProperties.FillColor = radialGradient;
+		containerEditor.DrawEllipse(new Point(40, 40), 30, 30);
+	{{endregion}}
+	
+	The result from __Example 3__ is shown in __Figure 2__.
+	
+	Figure 2: RadialGradient
+	
+	![Rad Pdf Processing Concepts Colors And Color Spaces 03](images/RadPdfProcessing_Concepts_Colors_And_Color_Spaces_03.png)
 
- * __EndRadius__: Decimal number determining the radius of the ending circle.
-                    
-
-__Example 2__ shows hot to create a LinearGradient and assing it as the FillColor of a [FixedContentEditor]({%slug radpdfprocessing-editing-fixedcontenteditor%}).
-            
-
-#### __[C#] Example 2: Create LinearGradient__
-
-{{region radpdfprocessing-concepts-colors-and-color-spaces_1}}
-    FixedContentEditor containerEditor = new FixedContentEditor(container);
-
-    LinearGradient linearGradient = new LinearGradient(new Point(0, 0), new Point(30, 30));
-    linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 207, 0), 0));
-    linearGradient.GradientStops.Add(new GradientStop(new RgbColor(0, 102, 204), 1));
-
-    containerEditor.GraphicProperties.FillColor = linearGradient;
-    containerEditor.DrawRectangle(new Rect(10, 10, 48, 29));
-{{endregion}}
-
-
-
-The gradient created in __Example 2__ is shown in __Figure 1__.
-            
-
-Figure 1: LinearGradient
-![Rad Pdf Processing Concepts Colors And Color Spaces 01](images/RadPdfProcessing_Concepts_Colors_And_Color_Spaces_01.png)
 
 ### Tiling Pattern
 
@@ -166,7 +190,7 @@ The __TilingBase__ class is inherited from the following classes:
 Since the __TilingBase__ class implements the __IContentRootElement__ interface like [RadFixedPage]({%slug radpdfprocessing-model-radfixedpage%}), the content of the tiling can be modified using the __FixedContentEditor__ class. __Example 3__ shows how a tiling pattern can be created:
             
 
-#### __[C#] Example 2: Create Tiling__
+#### __[C#] Example 4: Create Tiling__
 
 {{region radpdfprocessing-concepts-colors-and-color-spaces_2}}
     FixedContentEditor containerEditor = new FixedContentEditor(container);
@@ -183,10 +207,10 @@ Since the __TilingBase__ class implements the __IContentRootElement__ interface 
 
 
 
-The tiling created in __Example 3__ is shown in __Figure 2__.
+The tiling created in __Example 4__ is shown in __Figure 3__.
             
 
-Figure 2: Tiling
+Figure 3: Tiling
 ![Rad Pdf Processing Concepts Colors And Color Spaces 02](images/RadPdfProcessing_Concepts_Colors_And_Color_Spaces_02.png)
 
 # See Also

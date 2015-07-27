@@ -61,6 +61,8 @@ Start your demo and write "al" in the __input box__. Now only items containing t
 
 ![](images/RadComboBox_Features_Filtering_020.png)
 
+>importantPlease, notice that if there aren't any filtered items and you move the focus out of __RadComboBox__ the entered search text will be cleared. In order to prevent the text from clearing you need to set the __UpdateTextOnLostFocus__ property which was introduced with the SP1 Q2 2015 version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} to __False__.
+
 >The text filtering feature of __RadComboBox__ works only while the drop-down is open (it filters the visible items in the drop-down). You can also set the __OpenDropDownOnFocus__ property to __True__ which automatically opens the drop-drop when the controls is focused.
 
 The final scenario is when you have a __TextSearchMode__ set to __TextSearchMode.StartsWith__.

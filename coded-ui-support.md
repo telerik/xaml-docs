@@ -15,7 +15,8 @@ The purpose of this section is to show you how to create a simple CodedUI test.
 
 >tipFor more information about Creating, Editing and Maintaining a Coded UI Test check out the official page in MSDN [here](http://msdn.microsoft.com/en-us/library/ff977233.aspx).        
 
->important__Coded UI__ is available with __Microsoft Visual Studio Premium or Ultimate__.
+>importantThe supported Visual Studio editions for coded UI tests are __Microsoft Visual Studio Ultimate or Microsoft Visual Studio Premium__. You can also check [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](https://msdn.microsoft.com/en-us/library/dd380742(v=vs.110).aspx).
+
 In order to create a CodedUI test, you need to perform the following steps:
 
 * Add the __Telerik.VisualStudio.TestTools.UITest.Extension.ExtensionsCore__ assembly into the following directory (for 64-bit operating system):          

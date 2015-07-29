@@ -33,7 +33,7 @@ You can sum only __Numeric__ types.
         
 __SOLUTION__
 
-You can create a {% if site.site_name == 'WPF' %}[Generic AggregateFunction](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_data_aggregatefunction_2.html){% endif %}{% if site.site_name == 'Silverlight' %}[Generic AggregateFunction](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_data_aggregatefunction_2.html){% endif %} instead and return the Sum of the values. You can also specify some custom aggregate expressions. Then add the defined function to the AggregateFunctions collection of GridViewDataColumn. You can also check this [help topic]({%slug gridview-columns-aggregate-functions%}).
+You can create a {% if site.site_name == 'WPF' %}[Generic AggregateFunction](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %}{% if site.site_name == 'Silverlight' %}[Generic AggregateFunction](http://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %} instead and return the Sum of the values. You can also specify some custom aggregate expressions. Then add the defined function to the AggregateFunctions collection of GridViewDataColumn. You can also check this [help topic]({%slug gridview-columns-aggregate-functions%}).
         
 For example you can define a generic AggregateFunction which calculates the Sum of the Numbers for all the Players populated in RadGridView. You can refer to the sample code below:
         
@@ -49,3 +49,6 @@ For example you can define a generic AggregateFunction which calculates the Sum 
 	playersGrid.Columns[0].AggregateFunctions.Add(aggregate);
 {{endregion}}
 
+# See Also
+
+* [Column Aggregate Functions]({%slug gridview-columns-aggregate-functions%})

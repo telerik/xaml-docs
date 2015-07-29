@@ -10,17 +10,17 @@ position: 4
 
 # Create Custom DateTimePicker Column
 
-This tutorial will guide you through the common task of creating a custom column in __RadGridView__. More precisely, an UserControl with __RadDatePicker__ and __RadTimePicker__, as well as a custom bound column that uses it as an edit element, will be created.
+This tutorial will guide you through the common task of creating a custom column in __RadGridView__. More precisely, a UserControl with __RadDatePicker__ and __RadTimePicker__, as well as a custom bound column that uses it as an edit element, will be created.
 
-* In the beginning you need a __RadGridView__ populated with sample data. Below are the custom business object definition (__Example 1__), as well as __RadGridView__ declaration(__Example 2__).
+* In the beginning you need __RadGridView__ populated with sample data. Below are the business object definition (__Example 1__), as well as __RadGridView__ declaration(__Example 2__).
 			
-#### __[C#] Example 1: Definition of Club custom business object.__
+#### __[C#] Example 1: Business object definition.__
 
 {{region gridview-how-to-create-date-time-picker-column_0}}
 
 	public class Club
 	{
-	    public Club( string name, DateTime established, int stadiumCapacity )
+	    public Club(string name, DateTime established, int stadiumCapacity)
 	    {
 	        this.Name = name;
 	        this.Established = established;
@@ -53,7 +53,7 @@ This tutorial will guide you through the common task of creating a custom column
 	}
 {{endregion}}
 
-#### __[VB] Example 1: Definition of Club custom business object.__
+#### __[VB] Example 1: Business object definition.__
 
 {{region gridview-how-to-create-date-time-picker-column_0}}
 
@@ -106,23 +106,16 @@ This tutorial will guide you through the common task of creating a custom column
 	</telerik:RadGridView>
 {{endregion}}
 
-#### __[C#] Example 3: Populating RadGridView with sample data through its ItemsSource property.__
+#### __[C#] Example 3: Populating RadGridView.__
 
 {{region gridview-how-to-create-date-time-picker-column_1}}
 
 	this.radGridView.ItemsSource = Club.GetClubs();
 {{endregion}}
 
-#### __[VB] Example 3: Populating RadGridView with sample data through its ItemsSource property.__
-
-{{region gridview-how-to-create-date-time-picker-column_1}}
-
-	Me.radGridView.ItemsSource = Club.GetClubs()
-{{endregion}}
-
-* The next step is to create an __UserControl__ with __RadDatePicker__ and __RadTimePicker__. Create a new __UserControl__ named __DateTimePicker__ (__Example 4__).
+* The next step is to create a __UserControl__ with __RadDatePicker__ and __RadTimePicker__. Create a new __UserControl__ named __DateTimePicker__ (__Example 4__).
 			
-#### __[XAML] Example 4: Declaration of the DateTimePicker UserControl__
+#### __[XAML] Example 4: Declaration of DateTimePicker UserControl__
 
 {{region gridview-how-to-create-date-time-picker-column_1}}
 
@@ -200,11 +193,11 @@ This tutorial will guide you through the common task of creating a custom column
 		End Property
 {{endregion}}
 
-Take a look at the code-behind for the control. An additional dependency property is created, in order to enable binding to the __SelectedDate__. What is done in the rest of the code, is to update the __SelectedDate__ property each time the __RadDatePicker__ or __RadTimePicker__ values are changed by the user.
+Take a look at the code-behind for the control. An additional dependency property is created, in order to enable binding to the __SelectedDate__.
 
 * Create a new class named __DateTimePickerColumn__, which derives from __GridViewBoundColumnBase (Example 6)__.
 
-#### __[C#] Example 6: Definition of the DateTimePickerColumn class.__
+#### __[C#] Example 6: Definition of DateTimePickerColumn class.__
 
 {{region gridview-how-to-create-date-time-picker-column_4}}
 
@@ -235,7 +228,7 @@ Take a look at the code-behind for the control. An additional dependency propert
 
 
 
-#### __[VB] Example 6: Definition of the DateTimePickerColumn class.__
+#### __[VB] Example 6: Definition of DateTimePickerColumn class.__
 
 {{region gridview-how-to-create-date-time-picker-column_4}}
 

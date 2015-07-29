@@ -127,210 +127,78 @@ This tutorial will guide you through the common task of creating a custom column
 {{region gridview-how-to-create-date-time-picker-column_1}}
 
 	<UserControl x:Class="CreateCustomDateTimePickerColumn.DateTimePicker"
-         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-
-		<Grid>
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition />
-				<ColumnDefinition />
-			</Grid.ColumnDefinitions>
-			<Grid.Resources>
-				<Style x:Key="RadClockStyle"
-		       BasedOn="{StaticResource RadClockStyle}"
-		       TargetType="telerik:RadClock">
-					<Setter Property="Header" Value="TimePicker" />
-				</Style>
-			</Grid.Resources>
-			<telerik:RadDatePicker x:Name="Calendar"
-	                       SelectedValue="{Binding Established}"
-	                       SelectionChanged="OnCalendarSelectionChanged" />
-			<telerik:RadTimePicker x:Name="TimePicker"
-	                       Grid.Column="1"
-	                       ClockStyle="{StaticResource RadClockStyle}"
-	                       SelectedValue="{Binding Established}"
-	                       SelectionChanged="OnTimePickerSelectionChanged" />
-		</Grid>
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:CreateCustomDateTimePickerColumn"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             mc:Ignorable="WPF">
+	    <Grid>
+	        <Grid.ColumnDefinitions>
+	            <ColumnDefinition />
+	            <ColumnDefinition />
+	        </Grid.ColumnDefinitions>
+	        <telerik:RadDatePicker x:Name="Calendar"
+	                               SelectedValue="{Binding SelectedDateTime,
+	                                           RelativeSource={RelativeSource AncestorType=local:DateTimePicker}, Mode=TwoWay}"/>
+	        <telerik:RadTimePicker x:Name="TimePicker"
+	                           Grid.Column="1"
+	                               SelectedValue="{Binding SelectedDateTime,
+	                                           RelativeSource={RelativeSource AncestorType=local:DateTimePicker}, Mode=TwoWay}"/>
+	    </Grid>
 	</UserControl>
 {{endregion}}
 
-{% if site.site_name == 'WPF' %}
 
 #### __[C#] Example 5: Code-behind definition of the custom DateTimePicker UserControl.__
 
 {{region gridview-how-to-create-date-time-picker-column_2}}
 
 	public partial class DateTimePicker : UserControl
-	{
-		public static readonly DependencyProperty SelectedDateProperty =
-			DependencyProperty.Register("SelectedDate", typeof(DateTime?), typeof(DateTimePicker), new PropertyMetadata(null));
-	
-		public DateTimePicker()
-		{
-			InitializeComponent();
-		}
-	
-		public DateTime? SelectedDate
-		{
-			get
-			{
-				return (DateTime?)this.GetValue(SelectedDateProperty);
-			}
-			set
-			{
-				this.SetValue(SelectedDateProperty, value);
-			}
-		}
-	
-		private void HandlePickersSelectionChanged()
-		{
-			if (this.Calendar.SelectedDate != null && this.TimePicker.SelectedTime != null)
-			{
-				this.SelectedDate = this.Calendar.SelectedDate + this.TimePicker.SelectedTime;
-			}
-		}
-	
-		private void OnTimePickerSelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-		{
-			this.HandlePickersSelectionChanged();
-		}
-	
-		private void OnCalendarSelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-		{
-			this.HandlePickersSelectionChanged();
-		}
-	}
-	{{endregion}}
+    {
+        public static readonly DependencyProperty SelectedDateTimeProperty =
+           DependencyProperty.Register("SelectedDateTime", typeof(DateTime?), typeof(DateTimePicker), new PropertyMetadata(null));
+        
+        public DateTimePicker()
+        {
+            InitializeComponent();
+        }
+
+        public DateTime? SelectedDateTime
+        {
+            get
+            {
+                return (DateTime?)this.GetValue(SelectedDateTimeProperty);
+            }
+            set
+            {
+                this.SetValue(SelectedDateTimeProperty, value);
+            }
+        }
+{{endregion}}
 
 #### __[VB] Example 5: Code-behind definition of the custom DateTimePicker UserControl.__
 
 {{region gridview-how-to-create-date-time-picker-column_2}}
 
 		Partial Public Class DateTimePicker
-			Inherits UserControl
-	
-			Public Shared ReadOnly SelectedDateProperty As DependencyProperty = DependencyProperty.Register("SelectedDate", GetType(Date?), GetType(DateTimePicker), New PropertyMetadata(Nothing))
-	
-			Public Sub New()
-				InitializeComponent()
-			End Sub
-	
-			Public Property SelectedDate() As Date?
-				Get
-					Return CType(Me.GetValue(SelectedDateProperty), Date?)
-				End Get
-				Set(ByVal value As Date?)
-					Me.SetValue(SelectedDateProperty, value)
-				End Set
-			End Property
-	
-			Private Sub HandlePickersSelectionChanged()
-				If Me.Calendar.SelectedDate IsNot Nothing AndAlso Me.TimePicker.SelectedTime IsNot Nothing Then
-					Me.SelectedDate = Me.Calendar.SelectedDate + Me.TimePicker.SelectedTime
-				End If
-			End Sub
-	
-			Private Sub OnTimePickerSelectionChanged(ByVal sender As Object, ByVal e As System.Windows.Controls.SelectionChangedEventArgs)
-				Me.HandlePickersSelectionChanged()
-			End Sub
-	
-			Private Sub OnCalendarSelectionChanged(ByVal sender As Object, ByVal e As System.Windows.Controls.SelectionChangedEventArgs)
-				Me.HandlePickersSelectionChanged()
-			End Sub
-		End Class
-{{endregion}}
+	Inherits UserControl
 
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
-
-#### __[C#] Example 5: Code-behind definition of the custom DateTimePicker UserControl.__
-
-{{region gridview-how-to-create-date-time-picker-column_3}}
-
-	public partial class DateTimePicker : UserControl
-	{
-		public static readonly DependencyProperty SelectedDateProperty =
-			DependencyProperty.Register("SelectedDate", typeof(DateTime?), typeof(DateTimePicker), new PropertyMetadata(null));
-	
-		public DateTimePicker_SL()
-		{
-			InitializeComponent();
-		}
-	
-		public DateTime? SelectedDate
-		{
-			get
-			{
-				return (DateTime?)this.GetValue(SelectedDateProperty);
-			}
-			set
-			{
-				this.SetValue(SelectedDateProperty, value);
-			}
-		}
-	
-		private void HandlePickersSelectionChanged()
-		{
-			if (this.Calendar.SelectedDate != null && this.TimePicker.SelectedTime != null)
-			{
-				this.SelectedDate = this.Calendar.SelectedDate + this.TimePicker.SelectedTime;
-			}
-		}
-	
-		private void OnTimePickerSelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
-		{
-			this.HandlePickersSelectionChanged();
-		}
-	
-		private void OnCalendarSelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
-		{
-			this.HandlePickersSelectionChanged();
-		}
-	}
-{{endregion}}
-
-#### __[VB] Example 5: Code-behind definition of the custom DateTimePicker UserControl.__
-
-{{region gridview-how-to-create-date-time-picker-column_3}}
-
-	Partial Public Class DateTimePicker
-		Inherits UserControl
-
-		Public Shared ReadOnly SelectedDateProperty As DependencyProperty = DependencyProperty.Register("SelectedDate", GetType(Date?), GetType(DateTimePicker), New PropertyMetadata(Nothing))
+		Public Shared ReadOnly SelectedDateTimeProperty As DependencyProperty = DependencyProperty.Register("SelectedDateTime", GetType(Date?), GetType(DateTimePicker), New PropertyMetadata(Nothing))
 
 		Public Sub New()
 			InitializeComponent()
 		End Sub
 
-		Public Property SelectedDate() As Date?
+		Public Property SelectedDateTime() As Date?
 			Get
-				Return CType(Me.GetValue(SelectedDateProperty), Date?)
+				Return CType(Me.GetValue(SelectedDateTimeProperty), Date?)
 			End Get
-			Set(ByVal value As Date?)
-				Me.SetValue(SelectedDateProperty, value)
+			Set(ByVal value? As Date)
+				Me.SetValue(SelectedDateTimeProperty, value)
 			End Set
 		End Property
-
-		Private Sub HandlePickersSelectionChanged()
-			If Me.Calendar.SelectedDate IsNot Nothing AndAlso Me.TimePicker.SelectedTime IsNot Nothing Then
-				Me.SelectedDate = Me.Calendar.SelectedDate + Me.TimePicker.SelectedTime
-			End If
-		End Sub
-
-		Private Sub OnTimePickerSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-			Me.HandlePickersSelectionChanged()
-		End Sub
-
-		Private Sub OnCalendarSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-			Me.HandlePickersSelectionChanged()
-		End Sub
-	End Class
 {{endregion}}
-
-{% endif %}
 
 Take a look at the code-behind for the control. An additional dependency property is created, in order to enable binding to the __SelectedDate__. What is done in the rest of the code, is to update the __SelectedDate__ property each time the __RadDatePicker__ or __RadTimePicker__ values are changed by the user.
 
@@ -340,27 +208,29 @@ Take a look at the code-behind for the control. An additional dependency propert
 
 {{region gridview-how-to-create-date-time-picker-column_4}}
 
-	public class DateTimePickerColumn : GridViewBoundColumnBase
-	{
-		public override FrameworkElement CreateCellEditElement(GridViewCell cell, object dataItem)
-		{
-			this.BindingTarget = DateTimePicker.SelectedDateProperty;
-			var picker = new DateTimePicker();
-			picker.SetBinding(this.BindingTarget, this.CreateValueBinding());
-			return picker;
-		}
-	
-		private Binding CreateValueBinding()
-		{
-			var valueBinding = new Binding();
-			valueBinding.Mode = BindingMode.TwoWay;
-			valueBinding.NotifyOnValidationError = true;
-			valueBinding.ValidatesOnExceptions = true;
-			valueBinding.UpdateSourceTrigger = UpdateSourceTrigger.Explicit;
-			valueBinding.Path = new PropertyPath(this.DataMemberBinding.Path.Path);
-			return valueBinding;
-		}
-	}
+	public class DateTimePickerColumn: GridViewBoundColumnBase
+    {
+        public override FrameworkElement CreateCellEditElement(GridViewCell cell, object dataItem)
+        {
+            this.BindingTarget = DateTimePicker.SelectedDateTimeProperty;
+            var picker = new DateTimePicker();
+            picker.SetBinding(this.BindingTarget, this.CreateValueBinding());
+            return picker;
+        }
+
+        private Binding CreateValueBinding()
+        {
+            var valueBinding = new Binding();
+            
+            valueBinding.Mode = BindingMode.TwoWay;
+           
+            valueBinding.NotifyOnValidationError = true;
+            valueBinding.ValidatesOnExceptions = true;
+            valueBinding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
+            valueBinding.Path = new PropertyPath(this.DataMemberBinding.Path.Path);
+            return valueBinding;
+        }
+    }
 {{endregion}}
 
 
@@ -369,26 +239,30 @@ Take a look at the code-behind for the control. An additional dependency propert
 
 {{region gridview-how-to-create-date-time-picker-column_4}}
 
-		Public Class DateTimePickerColumn
-			Inherits GridViewBoundColumnBase
-	
-			Public Overrides Function CreateCellEditElement(ByVal cell As GridViewCell, ByVal dataItem As Object) As FrameworkElement
-				Me.BindingTarget = DateTimePicker.SelectedDateProperty
-				Dim picker = New DateTimePicker()
-				picker.SetBinding(Me.BindingTarget, Me.CreateValueBinding())
-				Return picker
-			End Function
-	
-			Private Function CreateValueBinding() As Binding
-				Dim valueBinding = New Binding()
-				valueBinding.Mode = BindingMode.TwoWay
-				valueBinding.NotifyOnValidationError = True
-				valueBinding.ValidatesOnExceptions = True
-				valueBinding.UpdateSourceTrigger = UpdateSourceTrigger.Explicit
-				valueBinding.Path = New PropertyPath(Me.DataMemberBinding.Path.Path)
-				Return valueBinding
-			End Function
-		End Class
+	Option Infer On
+
+	Public Class DateTimePickerColumn
+		Inherits GridViewBoundColumnBase
+
+		Public Overrides Function CreateCellEditElement(ByVal cell As GridViewCell, ByVal dataItem As Object) As FrameworkElement
+			Me.BindingTarget = DateTimePicker.SelectedDateTimeProperty
+			Dim picker = New DateTimePicker()
+			picker.SetBinding(Me.BindingTarget, Me.CreateValueBinding())
+			Return picker
+		End Function
+
+		Private Function CreateValueBinding() As Binding
+			Dim valueBinding = New Binding()
+
+			valueBinding.Mode = BindingMode.TwoWay
+
+			valueBinding.NotifyOnValidationError = True
+			valueBinding.ValidatesOnExceptions = True
+			valueBinding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged
+			valueBinding.Path = New PropertyPath(Me.DataMemberBinding.Path.Path)
+			Return valueBinding
+		End Function
+	End Class
 {{endregion}}
 
 >In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
@@ -418,15 +292,12 @@ __Figure 1:__ Snapshot of the created custom DateTimePickerColumn.
 
 ![gridview-how-to-create-custom-Date Time Picker-Column](images/gridview-how-to-create-custom-DateTimePicker-Column.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository
-[here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/CreateCustomDateTimePickerColumn__.
+>tipYou can download a runnable project of the previous example from our online SDK repository     [CreateCustomDateTimePickerColumn](https://github.com/telerik/xaml-sdk/tree/master/GridView/CreateCustomDateTimePickerColumn).
 
->You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient  approach in exploring and executing the examples in the Telerik XAML SDK repository. 
 
 # See Also
  
- * [Create Generic DateTimePicker Column]({%slug gridview-how-to-create-generic-date-time-picker-column%})
-
  * [Add a button column]({%slug gridview-add-button-column%})
 
  * [Create Custom Editor with RadGridView]({%slug radgridview-howto-create-custom-editor%})

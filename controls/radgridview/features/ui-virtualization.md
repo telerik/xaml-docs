@@ -23,13 +23,15 @@ On the other hand, when EnableColumnVirtualization is False, all of the needed c
         
 >tipBy default they are both set to True.     
 
-You can check this [troubleshooting article]({%slug gridview-troubleshooting-style-disappears-scrolling%}) on some issues with styling the visual elements.
+You can check the topic on [Styling or content mixed-up on scrolling]({%slug gridview-troubleshooting-style-disappears-scrolling%}) on some issues with styling the visual elements.
         
 >In case UI Virtualization is disabled, then all the visual elements will be loaded once RadGridView is visualized and its items are populated. Otherwise only the visible items will be populated.
 
+>importantTry not to place RadGridView in controls/panels which will measure it with infinity. For example, __ScrollViewer__, __StackPanel__ and __Grid__ with __Row.Height=Auto__ or __Column.Width=Auto__ will measure it in that way. You can place it in RowDefinition with Height="*" instead. 
+
 ## Disable Column Virtualization
 
-In order to disable the UI __Column Virtualization__ behavior, you should configure __EnableColumnVirtualization__ property to __False__. See the example below:
+In order to disable UI __Column Virtualization__ behavior, you should configure __EnableColumnVirtualization__ property to __False__. See the example below:
 
 #### __XAML__
 
@@ -40,7 +42,7 @@ In order to disable the UI __Column Virtualization__ behavior, you should config
 
 ## Disable Row Virtualization
 
-In order to disable the UI __Row Virtualization__ behavior, you should configure __EnableRowVirtualization__ property to __False__. See the example below:
+In order to disable UI __Row Virtualization__ behavior, you should configure __EnableRowVirtualization__ property to __False__. See the example below:
 
 #### __XAML__
 

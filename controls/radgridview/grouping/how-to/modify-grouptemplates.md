@@ -18,8 +18,7 @@ Basically you can change the GroupRow Headers by predefining the GroupHeaderTemp
 
 >tipFor a reference on the visual structure of the GridView you can follow [this article.]({%slug gridview-visual-structure%}).
 
-Please note that the __DataContext of the group row__ is
-{% if site.site_name == 'WPF' %}[GroupViewModel](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_gridview_groupviewmodel.html){% endif %}{% if site.site_name == 'Silverlight' %}[GroupViewModel](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_gridview_groupviewmodel.html){% endif %}. As you can check in the API reference, this class contains properties like Group, Column, AggregateResults, etc. Having this in mind you can bind the TextBlock-s in the GroupHeaderTemplate to the values of the properties in the GroupViewModel.
+Please note that the DataContext of the group row is {% if site.site_name == 'WPF' %}[GroupViewModel](http://docs.telerik.com/devtools/wpf/controls/radgridview/grouping/how-to/modify-grouptemplates.html){% endif %}{% if site.site_name == 'Silverlight' %}[GroupViewModel](http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Controls_GridView_GroupViewModel.htm){% endif %}. As you can check in the API reference, this class contains properties like Group, Column, AggregateResults, etc. Having this in mind you can bind the TextBlock-s in the GroupHeaderTemplate to the values of the properties in the GroupViewModel.
         
 ## Overriding GroupHeaderTemplate
 

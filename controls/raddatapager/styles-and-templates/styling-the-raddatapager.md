@@ -1,20 +1,20 @@
 ---
-title: Styling the RadDataPager
-page_title: Styling the RadDataPager
-description: Styling the RadDataPager
+title: Styling RadDataPager
+page_title: Styling RadDataPager
+description: Styling RadDataPager
 slug: raddatapager-styles-and-templates-styling-the-raddatapager
 tags: styling,the,raddatapager
 published: True
 position: 2
 ---
 
-# Styling the RadDataPager
+# Styling RadDataPager
 
 
 
 >Before reading this topic, you might find it useful to get familiar with the [Template Structure of the RadDataPager]({%slug raddatapager-styles-and-templates-template-structure%}) and the [Template Structure of the DataPagerPresenter]({%slug raddatapager-styles-and-templates-template-structure%}).
 
-The __RadDataPager__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
+ __RadDataPager__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 
 You have two options:
 
@@ -26,17 +26,17 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Style
 
-To copy the default styles, load your project in __Expression Blend__ and open the User Control that holds the __RadDataPager__. In the ___'Objects and Timeline'___ pane select the __RadDataPager__ you want to style. From the menu choose ***Object -> Edit Style -> Edit a Copy***. You will be prompted for the name of the style and where to be placed.
+To copy the default styles, load your project in __Expression Blend__ and open the User Control that holds __RadDataPager__. In the ___'Objects and Timeline'___ pane select __RadDataPager__ you want to style. From the menu choose ***Object -> Edit Style -> Edit a Copy***. You will be prompted for the name of the style and where to be placed.
 
 >If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-After clicking ___'OK'___, __Expression Blend__ will generate the default style of the __RadDataPager__ control in the __Resources__ section of your __User Control__. The properties available for the style will be loaded in the ___'Properties'___ pane and you will be able to modify their default values. You can also edit the generated __XAML__ in the __XAML View__ or in __Visual Studio__.
+After clicking ___'OK'___, __Expression Blend__ will generate the default style of __RadDataPager__ control in the __Resources__ section of your __User Control__. The properties available for the style will be loaded in the ___'Properties'___ pane and you will be able to modify their default values. You can also edit the generated __XAML__ in the __XAML View__ or in __Visual Studio__.
 
-As the UI of the __RadDataPager__ is wrapped in the __DataPagerPresenter__ control, you have to style it, too. It is to be found in the __ControlTemplate__ for the __RadDataPager__. Bring the __ControlTemplate__ into edit by returning to the main scene, selecting the __RadDataPager__ and choosing form the menu ***Object -> Edit Template -> Edit Current***. Select the __DataPagerPresenter__ control and from the menu choose ***Object -> Edit Style -> Edit a Copy***. This will generate the default style for it in the __Resources__ section.
+As the UI of __RadDataPager__ is wrapped in the __DataPagerPresenter__ control, you have to style it, too. It is to be found in the __ControlTemplate__ for __RadDataPager__. Bring the __ControlTemplate__ into edit by returning to the main scene, selecting __RadDataPager__ and choosing form the menu ***Object -> Edit Template -> Edit Current***. Select the __DataPagerPresenter__ control and from the menu choose ***Object -> Edit Style -> Edit a Copy***. This will generate the default style for it in the __Resources__ section.
 
->If you want to just style the numeric buttons, you don't need to generate the style for the __DataPagerPresenter__ control. The resources responsible for the buttons get generated with the __RadDataPager's__ style.{% if site.site_name == 'Silverlight' %}
+>If you want to just style the numeric buttons, you don't need to generate the style for the __DataPagerPresenter__ control. The resources responsible for the buttons get generated with __RadDataPager's__ style.{% if site.site_name == 'Silverlight' %}
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadDataPager__. Their names indicate to which part of the __RadDataPager__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of  __RadDataPager__. Their names indicate to which part of __RadDataPager__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
 
 
 ![](images/RadDataPager_Styles_and_Templates_StylingTheRadDataPager_01.png)
@@ -57,13 +57,13 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * ***DataPagerPresenterStyle*** - represents the __Style__ for the __DataPagerPresenter__.
 
-* ***RadDataPagerTemplate*** - represents the __ControlTemplate__ for the __RadDataPager__.
+* ***RadDataPagerTemplate*** - represents the __ControlTemplate__ for __RadDataPager__.
 
-* ***RadPager_Background*** - represents the brush for the background of the __RadDataPager__.
+* ***RadPager_Background*** - represents the brush for the background of __RadDataPager__.
 
-* ***RadPager_Border*** - represents the brush for the border of the __RadDataPager__.
+* ***RadPager_Border*** - represents the brush for the border of __RadDataPager__.
 
-* ***RadPager_Foreground*** - represents the brush for the foreground of the __RadDataPager__.
+* ***RadPager_Foreground*** - represents the brush for the foreground of __RadDataPager__.
 
 * ***RadPager_Page_TopShadow*** - represents the brush for the shadow of the top of the numeric button.
 
@@ -81,12 +81,12 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * ***RadPageStyle*** - represents the __Style__ for the numeric button.
 
-* ***RadDataPagerStyle*** - represents the __Style__ for the __RadDataPager__.
+* ***RadDataPagerStyle*** - represents the __Style__ for __RadDataPager__.
 
 # See Also
 
  * [Template Structure]({%slug raddatapager-styles-and-templates-template-structure%})
 
- * [Styling the Numeric Buttons]({%slug raddatapager-styles-and-templates-styling-the-numeric-buttons%})
+ * [Styling Numeric Buttons]({%slug raddatapager-styles-and-templates-styling-the-numeric-buttons%})
 
- * [Styling the Other Elements]({%slug raddatapager-styles-and-templates-styling-the-other-elements%})
+ * [Styling Other Elements]({%slug raddatapager-styles-and-templates-styling-the-other-elements%})

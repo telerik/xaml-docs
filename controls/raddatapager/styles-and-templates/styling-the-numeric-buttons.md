@@ -1,17 +1,17 @@
 ---
-title: Styling the Numeric Buttons
-page_title: Styling the Numeric Buttons
-description: Styling the Numeric Buttons
+title: Styling Numeric Buttons
+page_title: Styling Numeric Buttons
+description: Styling Numeric Buttons
 slug: raddatapager-styles-and-templates-styling-the-numeric-buttons
 tags: styling,the,numeric,buttons
 published: True
 position: 3
 ---
 
-# Styling the Numeric Buttons
+# Styling Numeric Buttons
 
 
-The __RadDataPager__ exposes a __NumericButtonStyle__ property which allows you to apply a style to it and modify its appearance.
+__RadDataPager__ exposes a __NumericButtonStyle__ property which allows you to apply a style to it and modify its appearance.
 
 You have two options:
 
@@ -21,7 +21,7 @@ You have two options:
 
 ## Creating an empty Style
 
-If you want to use this approach you have to create a __Style__ that targets the __RadRadioButton__ class. In it you can apply a custom __ControlTemplate__, in which to define the appearance of your button. Here is an example of a __RadDataPager__, which numeric buttons will be represented by ellipses.
+If you want to use this approach you have to create a __Style__ that targets __RadRadioButton__ class. In it you can apply a custom __ControlTemplate__, in which to define the appearance of your button. Here is an example of a __RadDataPager__, which numeric buttons will be represented by ellipses.
 
 #### __XAML__
 {{region raddatapager-styles-and-templates-styling-the-numeric-buttons_0}}
@@ -98,7 +98,7 @@ In order to change the appearance of the button when it gets current you bind to
 
 >You might find it useful to get familiar with the [template structure of the numeric button]({%slug raddatapager-styles-and-templates-template-structure%}).
 
-To modify the default style for the numeric buttons you have to get the default __Style__ for the __RadDataPager__. To learn how, read the [Styling the RadDataPager]({%slug raddatapager-styles-and-templates-styling-the-raddatapager%}) topic.
+To modify the default style for the numeric buttons you have to get the default __Style__ for __RadDataPager__. To learn how, read the [Styling the RadDataPager]({%slug raddatapager-styles-and-templates-styling-the-raddatapager%}) topic.
 
 Here is the default XAML for the numeric buttons' __Style__ and its resources.
 
@@ -249,6 +249,6 @@ Here is the default XAML for the numeric buttons' __Style__ and its resources.
 
  * [Template Structure]({%slug raddatapager-styles-and-templates-template-structure%})
 
- * [Styling the RadDataPager]({%slug raddatapager-styles-and-templates-styling-the-raddatapager%})
+ * [Styling RadDataPager]({%slug raddatapager-styles-and-templates-styling-the-raddatapager%})
 
  * [Styling the Other Elements]({%slug raddatapager-styles-and-templates-styling-the-other-elements%})

@@ -60,9 +60,9 @@ To do so you can use the __Sorting__ event. As a start you need to attach an eve
 
 Take a look at the __GridViewSortingEventArgs__ argument of the event handler. There are a few properties that require your attention:
         
-* __DataControl__ - this one holds the instance of the __RadGridView__ owning the column that was clicked and is going to be sorted.
+* __DataControl__ - this one holds the instance of __RadGridView__ owning the column that was clicked and is going to be sorted.
             
-* __Cancel__ - this boolean property defines whether the internal handling of the sorting event should be canceled. The default value is __False__, which means that the event will be handled internally by __RadGridView__ and the built-in sorting functionality will be executed. If you set it to __True__ the event won't be handled by the __RadGridView__ and the built-in sorting functionality will be bypassed.
+* __Cancel__ - this boolean property defines whether the internal handling of the sorting event should be canceled. The default value is __False__, which means that the event will be handled internally by __RadGridView__ and the built-in sorting functionality will be executed. If you set it to __True__ the event won't be handled by __RadGridView__ and the built-in sorting functionality will be bypassed.
 
 * __OldSortingState__ - defines the current sorting state of the column being sorted.
 
@@ -270,7 +270,7 @@ Here is the final code that should represent your __Sorting__ event handler.
 	End Sub
 {{endregion}}
 
-The same technique is not only usable with LINQ extension methods and the __ItemsSource__ of the __RadGridView__. You can implement whatever logic you like for getting your data and sorting it. This is just a simple example that clarifies the logic around the implementation of the custom sorting and not the sorting functionality itself. Another example for custom sorting is the multi-column sorting, which is described in the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
+The same technique is not only usable with LINQ extension methods and the __ItemsSource__ of __RadGridView__. You can implement whatever logic you like for getting your data and sorting it. This is just a simple example that clarifies the logic around the implementation of the custom sorting and not the sorting functionality itself. Another example for custom sorting is the multi-column sorting, which is described in the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
 
 # See Also
 

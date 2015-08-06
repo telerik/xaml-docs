@@ -52,7 +52,22 @@ In order to create a CodedUI test, you need to perform the following steps:
 
 * Run the test.
 
-Below you can find information about the supported level of CodedUI tests throughout our controls.      
+Below you can find information about the supported level of CodedUI tests throughout our controls.     
+
+## Q2 2015
+
+With our __Q2 2015__ official release we have included [Level 2 and Level 3 Coded UI test support](            http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls.
+        
+The controls that currently do __not__ support Level 2 and Level 3 Coded UI tests are listed bellow:
+        
+Control	|	Level 1	|	Level 2	|	Level 3
+---	|	---	|	---	|	---
+RadCalculator	|	Yes	|	No	|	No
+RadChart	|	No	|	No	|	No
+RadExpressionEditor	|	Yes	|	No	|	No
+RadGanttView	|	Yes	|	No	|	No
+RadPivotGrid	|	Yes	|	No	|	No
+RadScheduleView	|	Yes	|	No	|	No 
 
 ## Q2 2014
 
@@ -63,47 +78,9 @@ Control	|	Action	|	Occurs	|	Action Property
 RadComboBox	|	SetValueAction	|	On selection	|	SelectedItem
 RadDateTimePicker	|	SetValueAction	|	On SelectedValue changed	|	DateTimeText
 
-## Q3 2013
-
-With our __Q3 2013__ official release we have included [Level 2 and Level 3 Coded UI test support](            http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls.
-        
-The controls that currently do __not__ support Level 2 and Level 3 Coded UI tests are listed bellow:
-        
-Control	|	Level 1	|	Level 2	|	Level 3
----	|	---	|	---	|	---
-RadCalculator	|	Yes	|	No	|	No
-RadChart	|	No	|	No	|	No
-RadExpressionEditor	|	Yes	|	No	|	No
-RadGanttView	|	Yes	|	No	|	No
-RadMaskedTextBox	|	Yes	|	No	|	No
-RadPivotGrid	|	Yes	|	No	|	No
-RadScheduleView	|	Yes	|	No	|	No
-RadTreeListView	|	Yes	|	No	|	No
-
-
-## Q2 2013
-
-With our __Q2 2013__ official release we have included [Level 2 and Level 3 Coded UI test support](             http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across the following controls:
-        
-* RadGridView
-
-* RadTreeListView
-
-* RadPropertyGrid
-
-* RadDataForm
-
-* RadDataPager
-
-* RadCarousel
-
-* RadDataFilter
-
-* RadCollectionNavigator
-
 ## Q3 2012
 
-With our __Q3 2012__ official release we have included [Level 1 Coded UI test support](              http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls, except the __RadChart__ control.
+With our __Q3 2012__ official release we have included [Level 1 Coded UI test support](              http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls, except __RadChart__ control.
         
 # See Also
  

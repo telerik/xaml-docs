@@ -22,6 +22,8 @@ You can check some sample code on our {% if site.site_name == 'WPF' %}[Custom So
 
 It demonstrates using the [IComparable](http://msdn.microsoft.com/en-us/library/system.icomparable.aspx) interface to sort items.
 
+>tip You can also find the [Sorting Strings as Numbers]({%slug gridview-sort-strings%}) topic.
+
 ## Custom Sorting with Generic SortDescriptor
 
 You can also change the sorting algorithm through applying a [Generic Sort Descriptor]({%slug gridview-sorting-generic-descriptor%}).
@@ -273,9 +275,12 @@ Here is the final code that should represent your __Sorting__ event handler.
 The same technique is not only usable with LINQ extension methods and the __ItemsSource__ of __RadGridView__. You can implement whatever logic you like for getting your data and sorting it. This is just a simple example that clarifies the logic around the implementation of the custom sorting and not the sorting functionality itself. Another example for custom sorting is the multi-column sorting, which is described in the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
 
 # See Also
+ 
+ * [Sorting Strings as Numbers]({%slug gridview-sort-strings%})
 
  * [Basic Sorting]({%slug gridview-sorting-basics%})
 
  * [Programmatic Sorting]({%slug gridview-sorting-programmatic%})
 
  * [Multiple-column Sorting]({%slug gridview-multiple-column-sorting%})
+ 

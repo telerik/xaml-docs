@@ -5,36 +5,31 @@ description: Getting Started
 slug: radexpressioneditor-getting-started
 tags: getting,started
 published: True
-position: 0
+position: 2
 ---
 
 # Getting Started
-
-
 
 This tutorial will walk your through the creation of a sample application that contains __RadExpressionEditor__ and will show you how to: 
 
 * Use __RadExpressionEditor__ in your project;
 
-* Utilize __RadExpressionEditor__ with other __RadControls__.
+* Utilize __RadExpressionEditor__ with other controlsc.
 
 ## Adding RadExpressionEditor to the project
 
-* Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
+* Create a new project;
 
-* Add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Data__, __Telerik.Windows.Controls.Navigation__,__Telerik.Windows.Documents__, __Telerik.Windows.Documents.Core__,
-            __Telerik.Windows.Documents.Flow__ and __Telerik.Windows.Controls.Expressions__.
-            
+* Add references to the assemblies 
+	* __Telerik.Windows.Controls__,
+	* __Telerik.Windows.Data__,
+	* __Telerik.Windows.Controls.Navigation__,
+	* __Telerik.Windows.Documents__,
+	* __Telerik.Windows.Documents.Core__,
+    * __Telerik.Windows.Documents.Flow__,
+    * __Telerik.Windows.Controls.Expressions__.
 
-* Make sure that your XAML page contains the Telerik XML namespace mapping:
-
-#### __XAML__
-
-{{region radexpressioneditor-getting-started_0}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
-
+>In case you use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please make sure all the needed resource dictionaries are merged.            
 
 * Add the __RadExpressionEditor__ as demonstrated below:
 
@@ -55,8 +50,6 @@ This tutorial will walk your through the creation of a sample application that c
 	</UserControl>
 {{endregion}}
 
-
-
 #### __XAML__
 
 {{region radexpressioneditor-getting-started_2}}
@@ -74,9 +67,7 @@ This tutorial will walk your through the creation of a sample application that c
 	</Window>
 {{endregion}}
 
-
-
-Now, if you run the application, you will see a __RadExpressionEditor__:
+Now, if you run the application, __RadExpressionEditor__ will be displayed:
 
 ![](images/RadExpressionEditor_GettingStarted.png)
 
@@ -133,8 +124,6 @@ The scenario we will try to create here would be to implement a __RadExpressionE
 	  }
 	 }
 {{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -235,8 +224,6 @@ The scenario we will try to create here would be to implement a __RadExpressionE
 	End Class
 {{endregion}}
 
-
-
 In our case we will create a simple __ViewModel__ taking care for the connection between our model and view. It will be set as the __DataContext__ of our small application.
 
 #### __C#__
@@ -259,8 +246,6 @@ In our case we will create a simple __ViewModel__ taking care for the connection
 	 }
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radexpressioneditor-getting-started_6}}
@@ -276,8 +261,6 @@ In our case we will create a simple __ViewModel__ taking care for the connection
 	 End Property
 	End Class
 {{endregion}}
-
-
 
 Once we declared our business object and the corresponding __ViewModel__, we can define our __RadExpressionEditor__ and bind it appropriately. 
 
@@ -309,8 +292,6 @@ Once we declared our business object and the corresponding __ViewModel__, we can
 	</UserControl>
 {{endregion}}
 
-
-
 #### __XAML__
 
 {{region radexpressioneditor-getting-started_8}}
@@ -339,10 +320,6 @@ Once we declared our business object and the corresponding __ViewModel__, we can
 	</Window>
 {{endregion}}
 
-
-
-
-
 The functionality for defining a filter for the __RadGridView__ will be implemented in the handler of the __ExpressionChanged__ event of the  __RadExpressionEditor__:  
 
 #### __C#__
@@ -369,8 +346,6 @@ The functionality for defining a filter for the __RadGridView__ will be implemen
 	  }
 {{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radexpressioneditor-getting-started_10}}
@@ -389,13 +364,41 @@ The functionality for defining a filter for the __RadGridView__ will be implemen
 	End Sub
 {{endregion}}
 
-
-
 On running the application and testing the functionality of adding a filter descriptor for the __RadGridView__, you should see the following:
 
 ![](images/RadExpressionEditor_GettingStarted2.png)![](images/RadExpressionEditor_GettingStarted3.png)
 
 Still, using the __Calculation Panel__ and the items in each __Category__, you are empowered to create far more complex filtering expressions.  
 
+>You can get ExpressionEditor.Expression.Type.
+
 >__RadExpressionEditor__ provides support for dynamic objects with __ICustomTypeProvider__ (.NET 4.5) or __ICustomTypeDescriptor__ implementation. It will scan the object's properties and show them in the __Fields list__.
-          
+
+## Customizing the editor
+
+You can edit the [template of the control]({%slug radexpressioneditor-styles-and-templates-templates-structure%}), extend its default editor and use your custom version of it to serve your requirements. The default editor for the ExpressionEditor is an __ExpressionTextBox__. 
+
+## Pasting
+     
+By default pasting in the editor is not supported. This is the behavior as the inner ExpressionTextBox is configured to not accept returns. You can resolve this with the following approach ensuring the pasting will be executed in code:
+#### __C#__
+    void MainWindow_Loaded(object sender, RoutedEventArgs e)
+    {
+        this.expressionEditor.OnApplyTemplate();
+
+        ExpressionTextBox expressionTextBox = ((ExpressionTextBox)this.expressionEditor.Template.FindName("PART_ExpressionNodeEditor", this.expressionEditor));
+        RadRichTextBox radRichTextBox = ((RadRichTextBox)expressionTextBox.Template.FindName("RichTextBox", expressionTextBox));
+
+        radRichTextBox.CommandExecuting += radRichTextBox_CommandExecuting;
+    }
+
+    void radRichTextBox_CommandExecuting(object sender, CommandExecutingEventArgs e)
+    {
+        RadRichTextBox radRichTextBox = (RadRichTextBox)sender;
+
+        if (e.Command is PasteCommand)
+        {
+            e.Cancel = true;
+            radRichTextBox.Insert(Clipboard.GetText());
+        }
+    }     

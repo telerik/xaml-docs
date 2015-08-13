@@ -11,12 +11,11 @@ position: 1
 # Templates Structure
 
 
+Like most UI controls, __RadExpressionEditor__ allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. 
 
-Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadExpressionEditor__ allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with the template structure of the __RadExpressionEditor__.
+This topic will make you familiar with the template structure of __RadExpressionEditor__.
 
 ## RadExpressionEditor
-
-
 
 * __PART_RootElement__ - hosts the elements of the template. It represents the border of the __RadExpressionEditor__ and is of type __Border__.
 
@@ -99,8 +98,6 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 * __TextBlock__
 
 * __TextBlock__- represents the result preview of __RadExpressionEditor__ and it is of type __TextBlock__.
-
-
 
 {% if site.site_name == 'Silverlight' %}
 			 

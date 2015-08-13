@@ -18,7 +18,7 @@ Although __RadGridView__ provides a fully functional sorting mechanism, it can s
 
 In order to be able to sort the items in a way you define, the bound business object could implement __IComparable__ interface. Thus you will tell RadGridView how to sort the items. Since it respects this interface, it will sort the items depending on the logic you implement.
         
-You can check some sample code on our {% if site.site_name == 'WPF' %}[Custom Sorting with IComparable demo.](http://demos.telerik.com/silverlight/#GridView/IComparable){% endif %}{% if site.site_name == 'Silverlight' %}[Custom Sorting with IComparable demo.](http://demos.telerik.com/wpf){% endif %}
+You can check some sample code on our {% if site.site_name == 'Silverlight' %}[Custom Sorting with IComparable demo.](http://demos.telerik.com/silverlight/#GridView/IComparable){% endif %}{% if site.site_name == 'WPF' %}[Custom Sorting with IComparable demo.](http://demos.telerik.com/wpf){% endif %}
 
 It demonstrates using the [IComparable](http://msdn.microsoft.com/en-us/library/system.icomparable.aspx) interface to sort items.
 

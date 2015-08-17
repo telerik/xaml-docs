@@ -40,7 +40,7 @@ Containers that measure their children in infinity are for example __StackPanel_
 
 ## Initial Loading Time
 
-The MEF is a big factor when goes to the performance of RadRichTextBox. More about this framework and how to reduce the initial loading of the control is described in [this article]({%slug radrichtextbox-mef%}).
+The MEF is a big factor when goes to the performance of __RadRichTextBox__. More about this framework and how to reduce the initial loading of the control is described in [this article]({%slug radrichtextbox-mef%}).
 
 
 ## Editing Documents Programmatically
@@ -74,7 +74,7 @@ The performance can be hindered by the following factors:
 Large paragraphs can be a hindrance to the overall performance because paragraphs are the main unit of the measure and layout cycle. This means that most of the operations concerning changes in the document (e.g. when you insert, delete or format parts of the document) require an invalidation of the layout of the current paragraph. Therefore, the larger the paragraphs in the document, the worse the performance.
         
 
-Documents with such big paragraphs are sometimes created when one uses line breaks instead of new paragraphs. In MS Word and RadRichTextBox pressing Enter creates a new paragraph, while Shift + Enter inserts a line break. More often than not documents with line-breaks instead of new paragraphs are a result of incorrect code-behind generation of the document and can be easily avoided.
+Documents with such big paragraphs are sometimes created when one uses line breaks instead of new paragraphs. In MS Word and __RadRichTextBox__ pressing Enter creates a new paragraph, while Shift + Enter inserts a line break. More often than not documents with line-breaks instead of new paragraphs are a result of incorrect code-behind generation of the document and can be easily avoided.
 
 
 In addition, words that are longer than one line can also hinder the performance. This is so because processing documents containing such words often results in invalidating large portions of the document. This type of performance issue can be observed when using languages where the words are not separated by intervals, e.g. Japanese, Chinese, etc.
@@ -85,7 +85,7 @@ In addition, words that are longer than one line can also hinder the performance
 
 ### Tables
 
-Tables are one of the most complex elements which can be included in a RadDocument. Their behavior in general cases is pretty good, however when a table is extremely large (1000 rows or more) the scrolling/editing experience is diminished.
+Tables are one of the most complex elements which can be included in a __RadDocument__. Their behavior in general cases is pretty good, however when a table is extremely large (1000 rows or more) the scrolling/editing experience is diminished.
 
 
 The performance in versions *prior Q1 2014* was also hindered by the [UI layer]({%slug radrichtextbox-features-custom-ui-layers%}) responsible for re-sizing table borders. This can be worked around by removing the layer:
@@ -115,4 +115,10 @@ The reason for the impact on the performance is that these elements are kept in 
 
 ### Headers and Footers, Notes and Comments
 
-It is possible to add [headers and footers]({%slug radrichtextbox-features-headers-and-footers%}) for each section in the document. The same is also true for [Endnotes and Footnotes]({%slug radrichtextbox-features-footnotes-endnotes%}), as well as [Comments]({%slug radrichtextbox-features-comments%}). This provides the means for creating even richer documents, but all this additional content is shown in separate instances of RadRichTextBox. Furthermore, the contents of the documents of the headers and footers have to be copied across all pages of the section, which may cause performance hindrance with large documents.
+It is possible to add [headers and footers]({%slug radrichtextbox-features-headers-and-footers%}) for each section in the document. The same is also true for [Endnotes and Footnotes]({%slug radrichtextbox-features-footnotes-endnotes%}), as well as [Comments]({%slug radrichtextbox-features-comments%}). This provides the means for creating even richer documents, but all this additional content is shown in separate instances of __RadRichTextBox__. Furthermore, the contents of the documents of the headers and footers have to be copied across all pages of the section, which may cause performance hindrance with large documents.
+
+# See Also 
+
+* [MEF]({%slug radrichtextbox-mef%})
+
+* [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})

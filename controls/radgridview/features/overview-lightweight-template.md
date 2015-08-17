@@ -93,7 +93,7 @@ The CoreValidationStyles are an alternative of the standard __GridViewCell, Grid
           
 
 >tipFor __RadGridView__ you need to merge only the CoreStyles for __GridViewCell and GridViewRow__. For __RadTreeListView__ you need to merge the styles for __GridViewCell and TreeListViewRow__.
-          
-
-You can download a __runnable solution__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed under __GridView/LightweightTemplates__.
+   
+>You can download a __runnable solution__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/LightweightTemplates).       
+>You can also find the blog post on [How To Boost RadGridView Performance for WPF and Silverlight Using Lightweight templates](http://www.telerik.com/blogs/how-to-boost-radgridview-performance-for-wpf-and-silverlight-using-lightweight-templates).
 

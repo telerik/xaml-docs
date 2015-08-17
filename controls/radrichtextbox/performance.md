@@ -40,7 +40,7 @@ Containers that measure their children in infinity are for example __StackPanel_
 
 ## Initial Loading Time
 
-TODO: Think about creating a separate MEF article and adding a quick note here.
+The MEF is a big factor when goes to the performance of RadRichTextBox. More about this framework and how to reduce the initial loading of the control is described in [this article]({%slug radrichtextbox-mef%}).
 
 
 ## Editing Documents Programmatically

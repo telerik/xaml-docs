@@ -10,14 +10,9 @@ position: 1
 
 # Visual Structure
 
-
-
-## 
-
-This section defines the terms and concepts used in the scope of the __RadExpressionEditor__ that you have to get familiar with prior to continue reading this help. They can also be useful when contacting with the support service in order to better describe your issue. Below you can see snapshot and explanations of the main states and visual elements of the standard __RadExpressionEditor__ control.
+This section defines the terms and concepts used in the scope of __RadExpressionEditor__ that you have to get familiar with prior to continue reading this help. They can also be useful when contacting with the support service in order to better describe your issue. Below you can see snapshot and explanations of the main states and visual elements of the standard __RadExpressionEditor__ control.
          
 ![](images/RadExpressionEditor_VisualStructure.png)
-
 
 
 * __Code Editor__ - enables you to create your own custom expression;

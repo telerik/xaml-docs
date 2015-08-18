@@ -20,6 +20,10 @@ The __RadGridView__ allows you to easily style the rows by exposing a style prop
 
 The build-in mechanism for adding new rows allows you to easily insert data entries into your __RadGridView.__ To learn more on that topic read [here]({%slug gridview-rows-adding-rows%}).
 
+## Hiding Rows
+
+There is not a build-in mechanism for hiding rows. You can still hide or show rows by configuring a __FilterDescriptor__ to filter the bound items by a certain condition. To learn more on that topic read [here]({%slug gridview-rows-hiding-rows%}).
+
 ## Details View
 
 There are cases when you don't want to display the whole information that an object provides in a single row. The __RadGridView__ allows you to define a details view, which can hold additional information provided by the row data item and is displayed only when the row is selected. To learn more on that topic read [here]({%slug radgridview-row-details-overview%}).
@@ -27,9 +31,8 @@ There are cases when you don't want to display the whole information that an obj
 # See Also
 
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
-
- * [Adding Rows]({%slug gridview-rows-adding-rows%})
-
- * [Customizing Rows]({%slug gridview-customizing-rows%})
-
+ 
  * [Row Details - Overview]({%slug radgridview-row-details-overview%})
+ 
+ * [Basic Filtering]({%slug gridview-filtering-basic%})
+

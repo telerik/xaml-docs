@@ -93,21 +93,6 @@ The second way is to disable it on column level via __IsGroupable__ property. Wh
                                 IsGroupable="False" />
 {{endregion}}
 
-#### __C#__
-
-{{region gridview-grouping-basics_2}}
-
-	this.radGridView.Columns[ "Title" ].IsGroupable = false;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region gridview-grouping-basics_3}}
-
-	Me.radGridView.Columns("Title").IsGroupable = False
-{{endregion}}
-
-
 ![](images/RadGridView_BasicGrouping_6.png)
 
 ## Events

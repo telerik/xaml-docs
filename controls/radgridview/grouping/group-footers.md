@@ -45,7 +45,7 @@ For the purpose of this tutorial the following __RadGridView__ declaration will 
 
 ## Enable Group Footers Functionality
 
-In order to enable the group footers functionality, merely set the __ShowGroupFooters__ property of the __RadGridView__ to __True__.
+In order to enable the group footers functionality, merely set __ShowGroupFooters__ property of __RadGridView__ to __True__.
 
 #### __XAML__
 
@@ -56,7 +56,7 @@ In order to enable the group footers functionality, merely set the __ShowGroupFo
 
 ![](images/RadGridView_Grouping_GroupFooters_010.png)
 
->The default value of the __ShowGroupFooters__ property is __False__.
+>The default value of __ShowGroupFooters__ property is __False__.
 
 The same operation can be done in the code-behind.
 
@@ -109,7 +109,7 @@ If you want your group footers to have a static content, simply set the __GroupF
 
 * Using [Aggregate Functions]({%slug gridview-columns-aggregate-functions%}).
 
-The group footers are most commonly used to visualize calculations from aggregate functions within the scope of the current group. Consider the following example.
+The group footers are most commonly used to visualize calculations from aggregate functions within the scope of the current group. Consider the following example:
 
 #### __XAML__
 
@@ -138,7 +138,7 @@ The result can be seen on the next image.
 
 If you want to learn how to style group footers take a look at the [Styling Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%}) topic.
 
-Check out the following topics which explain in great details the __RadGridView__'s grouping functionality.
+Check out the following topics which explain in great details __RadGridView__'s grouping functionality.
 
 * Learn the [basic]({%slug gridview-grouping-basics%}) of the grouping behavior.
 

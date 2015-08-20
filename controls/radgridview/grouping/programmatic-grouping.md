@@ -127,7 +127,7 @@ An alternative way of manipulating the group descriptors of RadGridView is the n
 
 As you see the last two properties are similar to the same properties of the GroupDescriptor class. 
 
->As of __Q3 2011__ you can add the __ColumnGroupDescriptor__ both in __code behind and XAML__. With all the prior versions you can only set it in code behind.
+>As of __Q3 2011__ you can add __ColumnGroupDescriptor__ both in __code behind and XAML__. With all the prior versions you can only set it in code behind.
 
 Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which groups by the Name column in descending order:
 

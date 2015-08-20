@@ -18,15 +18,13 @@ This article lists some of the known factors that have negative impact on the ti
 
 * [Container](#container)
 
+* [Initial Loading Time](#initial-loading-time)
+
+* [Editing Documents Programmatically](#editing-documents-programmatically)
+
+* [Subscribing to Events](#subscribing-to-events)
+
 * [Document Content](#document-content)
-
-* [Large Paragraphs and Words](#large-paragraphs-and-words)
-
-* [Tables](#tables)
-
-* [Annotations](#annotations)
-
-* [Headers Footers Notes Comments](#headers-and-footers,-notes-and-comments)
 
 ## Container
 
@@ -40,7 +38,7 @@ Containers that measure their children in infinity are for example __StackPanel_
 
 ## Initial Loading Time
 
-The MEF is a big factor when goes to the performance of __RadRichTextBox__. More about this framework and how to reduce the initial loading of the control is described in [this article]({%slug radrichtextbox-mef%}).
+The control's use of MEF is a big factor for the performance of __RadRichTextBox__. More about this framework and how to reduce the initial loading of the control is described in [this article]({%slug radrichtextbox-mef%}).
 
 
 ## Editing Documents Programmatically
@@ -55,7 +53,7 @@ Normally, user interaction with a document will trigger actions slower compared 
 
 ## Subscribing to Events
 
-__RadRichTextBox__ exposes plenty of handy events that allow you to capture document changes or command execution. While this can be very handy when you need to handle user interaction, it is highly recommended to avoid placing complex logic in events that are raised often. Examples for such are __DocumentContentChanged__, __CommandExecuting__ and __CommandExecuted__.
+__RadRichTextBox__ exposes plenty of events that allow you to capture document changes or command executions. While this can be very convenient when you need to handle user interaction, it is highly recommended to avoid placing complex logic in events that are raised often. Examples for such are __DocumentContentChanged__, __CommandExecuting__ and __CommandExecuted__.
 
 
 >tipAvoid executing time-consuming actions in __DocumentContentChanged__ event handler.

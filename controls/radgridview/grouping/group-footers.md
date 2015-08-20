@@ -20,6 +20,8 @@ This tutorial will walk you through the common tasks of:
 
 * [Styling the group footers](#styling-group-footers)
 
+* [Re-defining Group Aggregates](#re-defining-group-aggregates)
+
 >Before continuing with this topic make sure that you are familiar with the [Visual Structure]({%slug gridview-visual-structure%}) of the __RadGridView__.
 
 For the purpose of this tutorial the following __RadGridView__ declaration will be used:
@@ -105,7 +107,6 @@ If you want your group footers to have a static content, simply set the __GroupF
 
 ![](images/RadGridView_Grouping_GroupFooters_020.png)
 
-
 * Using [Aggregate Functions]({%slug gridview-columns-aggregate-functions%}).
 
 The group footers are most commonly used to visualize calculations from aggregate functions within the scope of the current group. Consider the following example.
@@ -137,7 +138,6 @@ The result can be seen on the next image.
 
 If you want to learn how to style group footers take a look at the [Styling Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%}) topic.
 
-
 Check out the following topics which explain in great details the __RadGridView__'s grouping functionality.
 
 * Learn the [basic]({%slug gridview-grouping-basics%}) of the grouping behavior.
@@ -146,7 +146,46 @@ Check out the following topics which explain in great details the __RadGridView_
 
 * [Implement]({%slug gridview-programmatic-grouping%}) programmatic grouping.
 
+## Re-defining Group Aggregates
+
+You can modify the default template of displaying group aggregates by applying a new __GroupFooterTemplate__ configured it per specific requirements.
+For example:
+#### __XAML__
+	<telerik:GridViewDataColumn.GroupFooterTemplate>
+	    <DataTemplate>
+	        <StackPanel Orientation="Vertical"
+	                    Margin="0,10">
+	            <TextBlock Text="Custom footer with aggregates:"
+	                       Margin="0,0,0,2" />
+	            <telerik:AggregateResultsList ItemsSource="{Binding}"
+	                                          VerticalAlignment="Center"
+	                                          Grid.Column="4">
+	                <ItemsControl.ItemTemplate>
+	                    <DataTemplate>
+	                        <StackPanel Orientation="Horizontal"
+	                                    VerticalAlignment="Center">
+	                            <TextBlockVerticalAlignment="Center"
+	                                       Text="{Binding Caption}" />
+	                            <TextBlockVerticalAlignment="Center"
+	                                       Text="{Binding FormattedValue}" />
+	                        </StackPanel>
+	                    </DataTemplate>
+	                </ItemsControl.ItemTemplate>
+	                <ItemsControl.ItemsPanel>
+	                    <ItemsPanelTemplate>
+	                        <StackPanel Orientation="Vertical" />
+	                    </ItemsPanelTemplate>
+	                </ItemsControl.ItemsPanel>
+	            </telerik:AggregateResultsList>
+	        </StackPanel>
+	    </DataTemplate>
+	</telerik:GridViewDataColumn.GroupFooterTemplate>
+
+>Note that the GroupFooter's DataContext is __AggregateResultsList__.
+
 # See Also
+
+ * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
 
  * [Basic Filtering]({%slug gridview-filtering-basic%})
 

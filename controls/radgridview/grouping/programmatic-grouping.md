@@ -10,7 +10,11 @@ position: 2
 
 # Programmatic Grouping
 
-Besides the built-in grouping functionality you are able to use a programmatic approach to group the data in the __RadGridView__. This is achieved via the __GroupDescriptors__ property of the __RadGridView__. This collection of __IGroupDescriptor__ objects allows you to use descriptors (GroupDescriptors or ColumnGroupDescriptors) which define the grouping criteria and the group's sorting direction for the data that is bound to the __RadGridView__. As this is a collection you are able not only to add, but to remove or clear the entries in it too.
+Besides the built-in grouping functionality you are able to use a programmatic approach to group the data in __RadGridView__. This is achieved via the __GroupDescriptors__ collection. This collection of __IGroupDescriptor__ objects allows you to use descriptors (__GroupDescriptor or ColumnGroupDescriptor__) to define grouping criteria and group's sorting direction for the bound data. 
+
+>In GroupDescriptors collection you are able not only to add, but to remove or clear the entries in it too.
+
+## GroupDescriptor
 
 When you add a new descriptor to the collection, the data is automatically grouped according it. To learn how to create and configure descriptors take a look at the following example.
 
@@ -76,10 +80,9 @@ To use the created descriptor to sort the data in the __RadGridView__ you have t
 	Me.radGridView.GroupDescriptors.Add(descriptor)
 {{endregion}}
 
+After descriptor is defined, the data will be grouped by the __Country__ property and will look as if you have dragged and dropped the __Country__ column header into the grouping area.
 
-After the application is run with this descriptor defined, the __RadGridView__ data will be grouped by the __Country__ property and will look as if you have dragged and dropped the __Country__ column into the grouping area.
-
-Except the __Member__ and the __SortDirection__ properties, the __GroupDescriptor__ exposes two more. The __DisplayContent__ property allows you to change the content of the rectangle representing the group that appears in the grouping area.
+Except __Member__ and __SortDirection__ properties, the __GroupDescriptor__ exposes __DisplayContent__ property which allows you to change the content of the rectangle representing the group in the grouping area.
 
 #### __XAML__
 
@@ -112,6 +115,8 @@ Except the __Member__ and the __SortDirection__ properties, the __GroupDescripto
 
 >tipIn the group rows you are able to display aggregate functions, which display information about the data contained in the group. To learn more about how to add aggregate functions to the group rows take a look at the [Group Aggregates]({%slug gridview-grouping-aggregates%}) topic.
 
+## ColumnGroupDescriptor
+
 An alternative way of manipulating the group descriptors of RadGridView is the new (added in Q3 2010) __ColumnGroupDescriptor__ class. It has three important properties:
 
 * __Column__ - the column that will be grouped
@@ -122,7 +127,7 @@ An alternative way of manipulating the group descriptors of RadGridView is the n
 
 As you see the last two properties are similar to the same properties of the GroupDescriptor class. 
 
->As of __Q3 2011__ you can add the __ColumnGroupDescriptor__ both in the __code behind and XAML__. With all the prior versions you can only set it in code behind.
+>As of __Q3 2011__ you can add the __ColumnGroupDescriptor__ both in __code behind and XAML__. With all the prior versions you can only set it in code behind.
 
 Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which groups by the Name column in descending order:
 

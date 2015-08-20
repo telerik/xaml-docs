@@ -8,8 +8,13 @@ published: True
 position: 4
 ---
 
-# Group Aggregates
+This article will explain some more information on:
 
+* [Group Aggregates](#group-aggregates)
+
+* [Aligning Group Header Aggregates](#align-header-aggregates)
+
+# Group Aggregates
 
 ![](images/RadGridView_GroupAggregates_1.png)
 
@@ -36,6 +41,8 @@ The available functions are:
 Each aggregate function has a caption and a result, which are displayed next to the group title. 
 
 To use the aggregate functions you have to declare them and add them to the __AggregateFunctions__ collection of the __GroupDescriptor__.
+
+An alternative way of manipulating the group descriptors of RadGridView is the new (added in Q3 2010) __ColumnGroupDescriptor__ class. You can directly define __ColumnGroupDescriptor__ and add the AggregateFunctions for the respective column. Please note the ColumnGroupDescriptor is associated with a specific column and that is why there is not a need for it to also expose the option do define AggregateFunctions as GroupDescriptor. 
 
 #### __XAML__
 
@@ -145,7 +152,6 @@ The final result can be seen on the snapshot below:
 
 With __Q3 2012__ we added built-in feature for __aligning header aggregates__ with corresponding columns.
         
-
 ## Align Header Aggregates
 
 ![Rad Grid View Group Aggregates 3](images/RadGridView_GroupAggregates_3.png)
@@ -153,7 +159,6 @@ With __Q3 2012__ we added built-in feature for __aligning header aggregates__ wi
 This feature can be controlled with applying a __Style__. The Style should be targeting at the GroupHeaderRow visual element having the __GroupRenderMode of the RadGridView set to Flat__.
 Here is an example of the style definition:
         
-
 #### __XAML__
 
 {{region gridview-grouping-aggregates_6}}
@@ -166,7 +171,6 @@ Here is an example of the style definition:
 
 When using this feature, most probably you don't need the group row aggregates to be shown any more. You can hide them extending the above style as follows:
         
-
 #### __XAML__
 
 {{region gridview-grouping-aggregates_7}}
@@ -177,6 +181,7 @@ When using this feature, most probably you don't need the group row aggregates t
 </Style>
 {{endregion}}
 
+>tip As of __Q3 2012__ we have introduced a new rendering mode of RadGridView - Flat. The default GroupRenderMode is Nested, and the new one is __Flat__. When you set the Flat mode, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
 
 Setting the "ShowHeaderAggregates" to false will hide the default header aggregates.
 
@@ -190,12 +195,10 @@ For more details you can check our [Aggregates](http://demos.telerik.com/silverl
 
 # See Also
 
+ * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
+
  * [Basic Grouping]({%slug gridview-grouping-basics%})
 
  * [Programmatic Grouping]({%slug gridview-programmatic-grouping%})
 
- * [Multiple-column Grouping]({%slug gridview-multiple-column-grouping%})
-
  * [Group Footers]({%slug gridview-group-footers%})
-
- * [Modifying the Group Panel]({%slug gridview-modifying-group-panel%})

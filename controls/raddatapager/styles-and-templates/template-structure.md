@@ -12,7 +12,7 @@ position: 1
 
 
 
-Like most controls, the __RadDataPager__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can also template parts of it. This topic will make you familiar with the template structures of the:
+Like most controls, __RadDataPager__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can also template parts of it. This topic will make you familiar with the template structures of the:
 
 * [RadDataPager](#raddatapager)
 
@@ -26,7 +26,7 @@ Like most controls, the __RadDataPager__ also allows you to template it in order
 
 ![](images/RadDataPager_Styles_and_Templates_01.png)
 
-* __DataPagerPresenter__ - wraps the entire UI of the __RadDataPager__ and is of type __DataPagerPresenter__.
+* __DataPagerPresenter__ - wraps the entire UI of __RadDataPager__ and is of type __DataPagerPresenter__.
 
 ## DataPagerPresenter
 
@@ -96,8 +96,8 @@ Like most controls, the __RadDataPager__ also allows you to template it in order
 
  * [Visual Structure]({%slug raddatapager-visual-structure%})
 
- * [Styling the RadDataPager]({%slug raddatapager-styles-and-templates-styling-the-raddatapager%})
+ * [Styling RadDataPager]({%slug raddatapager-styles-and-templates-styling-the-raddatapager%})
 
- * [Styling the Numeric Buttons]({%slug raddatapager-styles-and-templates-styling-the-numeric-buttons%})
+ * [Styling Numeric Buttons]({%slug raddatapager-styles-and-templates-styling-the-numeric-buttons%})
 
- * [Styling the Other Elements]({%slug raddatapager-styles-and-templates-styling-the-other-elements%})
+ * [Styling Other Elements]({%slug raddatapager-styles-and-templates-styling-the-other-elements%})

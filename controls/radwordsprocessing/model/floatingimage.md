@@ -17,7 +17,9 @@ __FloatingImage__ is an inline-level anchor flow document element linked with a 
 
 * [Inserting a FloatingImage](#inserting-a-floatingimage)
 
-* [Modify an FloatingImage](#modify-an-floatingimage)
+* [Modify a FloatingImage](#modify-a-floatingimage)
+
+* [Working with Image Size](#working-with-image-size)
 
 ## Inserting a FloatingImage
 
@@ -75,12 +77,12 @@ Inserting __FloatingImage__ element in RadFlowDocument can also be achieved with
 
 
 
-## Modify an FloatingImage
+## Modify a FloatingImage
 
 The __FloatingImage__ element exposes the following properties:
         
 
-* __Image__: Represents the image object that is contained in the FloatingImage. It is a read-only composite object that contains the properties listed below:
+* __Image__: Represents the image object that is contained in the __FloatingImage__. It is a read-only composite object that contains the properties listed below:
 
     * __ImageSource__: Specifies the image source that is visualized in the image object.
 
@@ -89,12 +91,16 @@ The __FloatingImage__ element exposes the following properties:
     * __Width__: The width of the image.
 
     * __Height__: The height of the image.
+    
+	* __Size__: The size of the image. Can also be set to __Size.Empty__.  
 
     * __IsHorizontallyFlipped__: Specifies whether the image is horizontally flipped.
 
     * __IsVerticallyFlipped__: Specifies whether the image is vertically flipped.
 
     * __RotationAngle__: Specifies the rotation angle of the image.
+    
+	* __LockAspectRatio__: Determines whether the aspect ratio between the width and the height of the image will be preserved. 
 
 * __AllowOverlap__: Specifies whether the image is allowed to overlap the contents of the other image objects. The default value is true.
 
@@ -134,6 +140,28 @@ The __FloatingImage__ element exposes the following properties:
 
     * __Offset__: Specifies the offset to be used if the position type is Offset.
                 
+
+## Working with Image Size
+
+This section explains the behavior of the  __Size__ property of The __Image__ object in a __FloatingImage__  and how the image sizes are exported to the supported formats.
+
+* __Insert image without specifying its size__
+	* Model: Size will be Size.Empty.
+	* Export to DOCX: Size will be decoded
+	* Export to RTF: Size will be decoded
+	* Export HTML: Width and height attributes will not be exported
+
+
+* __Insert image and set its size to Size.Empty__
+	* Model: Size will be Size.Empty
+	* Export to DOCX: Size will be (1,1)
+	* Export to RTF: Size will be (1,1)
+	* Export to HTML: Width and height attributes will not be exported
+
+* __Inserting image without specifying its size and obtain its size later (through the property getter)__
+	* Model: Size will be decoded
+
+
 
 # See Also
 

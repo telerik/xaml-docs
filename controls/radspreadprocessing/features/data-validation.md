@@ -359,15 +359,17 @@ In order to check if the cell value satisfies a rule, you have to evaluate the r
 __Example 11__ demonstrates how to evaluate a rule using the __Evaluate()__ method.
 
 #### __[C#] Example 11: Evaluate Rule__
-{{region radspreadprocessing-features-filtering_0}}
-    IEnumerable<string> stringItems = new List<string>() { "test", "1%", "1.0" };
-    IEnumerable<DateGroupItem> dateItems = new List<DateGroupItem>()
-    {
-        new DateGroupItem(2013),
-        new DateGroupItem(2014, 3)
-    };
-
-    ValuesCollectionFilter filter = new ValuesCollectionFilter(0, stringItems, dateItems, true);
+{{region radspreadprocessing-features-data-validation_10}}
+	double value = 125;
+	ICellValue cellValue = value.ToCellValue();
+	if (rule.Evaluate(worksheet, 0, 0, cellValue))
+	{
+	    // the rule is satisfied, the value 125 is valid
+	}
+	else
+	{
+	    // the rule is not satisfied
+	}
 {{endregion}}
 
 

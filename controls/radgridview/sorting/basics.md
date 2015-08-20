@@ -10,11 +10,13 @@ position: 0
 
 # Basic Sorting
 
-The __RadGridView__ provides you with a built-in sorting functionality, which allows the user to easily sort the data by one or several columns. The data can be sorted in three ways:
+Through __SortingState__ property, __RadGridView__ provides you with a built-in sorting functionality, which allows the user to easily sort the data by one or several columns. The data can be sorted in three ways:
 
 * __Ascending__
 * __Descending__
 * __No Sort__
+
+>tip __SortingState__ property does not have sorting functionality. It just determines the way the data would be sorted.
 
 >tipRadGridView allows __multi column sorting__. You can check [this topic]({%slug gridview-multiple-column-sorting%}) for more information.
         

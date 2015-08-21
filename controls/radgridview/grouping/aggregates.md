@@ -36,13 +36,13 @@ The available functions are:
 
 * __SumFunction__ – returns the Sum of all values for the group.
 
->tipYou can also create your own custom functions similar to these by inheriting the __Telerik.Windows.Data.EnumerableAggregateFunction__ class. An example can be found [here](http://demos.telerik.com/silverlight/#GridView/CustomAggregates ).
+>tipYou can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ class. An example can be found [here](http://demos.telerik.com/silverlight/#GridView/CustomAggregates ).
 
 Each aggregate function has a caption and a result, which are displayed next to the group title. 
 
 To use the aggregate functions you have to declare them and add them to the __AggregateFunctions__ collection of the __GroupDescriptor__.
 
-An alternative way of manipulating the group descriptors of RadGridView is the new (added in Q3 2010) __ColumnGroupDescriptor__ class. You can directly define __ColumnGroupDescriptor__ and add the AggregateFunctions for the respective column. Please note the ColumnGroupDescriptor is associated with a specific column and that is why there is not a need for it to also expose the option do define AggregateFunctions as GroupDescriptor. 
+An alternative way of manipulating the group descriptors of RadGridView is the new (added in Q3 2010) __ColumnGroupDescriptor__ class. You can directly define __ColumnGroupDescriptor__ and add the AggregateFunctions for the respective column. Please note ColumnGroupDescriptor is associated with a specific column and that is why there is not a need for it to also expose the option do define AggregateFunctions as GroupDescriptor. 
 
 #### __XAML__
 
@@ -91,9 +91,9 @@ An alternative way of manipulating the group descriptors of RadGridView is the n
 {{endregion}}
 
 
-You can add more than one aggregate function to the __AggregateFunctions__ collection and it will be visualized after the first one.
+You can add more than one aggregate function to __AggregateFunctions__ collection and it will be visualized after the first one.
 
->The __FirstFunction__ will display the value returned by the __ToString()__ method of your business object.
+>The __FirstFunction__ will display the value returned by overriding __ToString()__ method of your business object.
 
 #### __XAML__
 

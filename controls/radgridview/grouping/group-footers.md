@@ -22,9 +22,9 @@ This tutorial will walk you through the common tasks of:
 
 * [Re-defining Group Aggregates](#re-defining-group-aggregates)
 
->Before continuing with this topic make sure that you are familiar with the [Visual Structure]({%slug gridview-visual-structure%}) of the __RadGridView__.
+>Before continuing with this topic make sure that you are familiar with the [Visual Structure]({%slug gridview-visual-structure%}) of __RadGridView__.
 
-For the purpose of this tutorial the following __RadGridView__ declaration will be used:
+For the purpose of this tutorial the following declaration will be used:
 
 #### __XAML__
 
@@ -80,9 +80,9 @@ The same operation can be done in the code-behind.
 
 ## Set the Group Footers Content
 
-* Using the __GroupFootersTemplate__.
+* Using __GroupFootersTemplate__.
 
-If you want your group footers to have a static content, simply set the __GroupFootersTemplate__ property.
+If you want your group footers to have a static content, simply configure __GroupFootersTemplate__ property.
 
 #### __XAML__
 

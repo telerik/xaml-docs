@@ -66,7 +66,7 @@ The __DefaultVariant__ is always available and is always with highest priority. 
 
 ## Variants
 
-The resizing behavior of the __RadRibbonTab__ is specified through the __RadRibbonGroup__'s __Variants__ collection. The collection is populated with __GroupVariant__ objects, which objects have two important properties:		
+The resizing behavior of the __RadRibbonGroup__ is specified through the RadRibbonGroup's __Variants__ collection. The collection is populated with __GroupVariant__ objects, which objects have two important properties:		
 
 * __Variant__ - defines the variant in which the group can be. The values for this property are predefined in the __RibbonGroupVariant__ enumeration, which exposes the following fields:
 	![](images/RibbonView_GroupVariants.png)

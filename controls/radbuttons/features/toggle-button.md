@@ -12,7 +12,7 @@ position: 4
 
 The __RadToggleButton__ control inherits from the __ToggleButton__ control and implements the __ICommandSource__ interface. Because of the inheritance it has all of the features that the standard __ToggleButton__ control has. The __ICommandSource__ implementation allows you to attach commands to the button, which will get executed when it gets clicked.	  
 
->tip To learn more about the members of the __RadToggleButton__ class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_radtogglebutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_radtogglebutton.html){% endif %}.
+>tip To learn more about the members of the __RadToggleButton__ class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radtogglebutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html){% endif %}.
 
 >tip You can see how to use an ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 

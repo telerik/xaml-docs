@@ -49,7 +49,9 @@ You can also directly configure the navigate url to be a complete TeamUrl specif
 	 NavigateUrlFormatString="{} {0}"
 	 TargetName="_blank" />
 
-__Figure 1: GridViewDynamicHyperlinkColumn__ ![](images/RadGridView_ColumnTypes_9.png)
+__Figure 1: Look of GridViewDynamicHyperlinkColumn represented in RadGridView__ 
+
+![](images/RadGridView_ColumnTypes_9.png)
 
 # See also
 

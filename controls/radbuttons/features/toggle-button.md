@@ -79,9 +79,9 @@ To make __RadToggleButton__ to go into a three state mode you just have to set i
 
 ## Customizing RadToggleButton
 
-* __IsBackgroundVisible__: this property controls the visibility of the background and the border of the __RadToggleButton__ control in normal state
+* __IsBackgroundVisible__: this property controls the visibility of the background and the border of __RadToggleButton__ in normal state
 
-* __CornerRadius__: this property controls the __CornerRadius__ of the __RadToggleButton__ control		  
+* __CornerRadius__: this property controls the __CornerRadius__ of __RadToggleButton__ 		  
 
 # See Also
  * [Button]({%slug radbuttons-features-button%})

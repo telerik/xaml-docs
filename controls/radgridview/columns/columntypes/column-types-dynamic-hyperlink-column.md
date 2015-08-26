@@ -14,7 +14,7 @@ __GridViewDynamicHyperlinkColumn__ derives from [GridViewBoundColumnBase]({%slug
 
 Here is a list of the most important properties:
 
-* __DataMemberBinding__ - the bound value to be displayed as a content. It is automatically displayed as a link.
+* __DataMemberBinding__ - you can specify the property of the business object to be displayed as value in the cell. It is automatically displayed as a link.
 
 * __NavigateUrlMemberPaths__ - you can specify comma separated field names.
 

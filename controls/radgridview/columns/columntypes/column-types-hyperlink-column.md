@@ -10,7 +10,6 @@ position: 6
 
 # Hyperlink Column
 
-
 __GridViewHyperlinkColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}) class and its content is represented by a __HyperlinkButton__ control. The bound value is automatically displayed as a link.
 
 Here is a list of the most important properties.
@@ -19,8 +18,7 @@ Here is a list of the most important properties.
             
 * __TargetName__ - specifies the location to open the link.
             
-
-If the bound data object has a property TeamUrl defined as follows:
+Lets say the bound data object exposes a TeamUrl property defined as follows:
         
 #### __C#__
 
@@ -85,3 +83,5 @@ Then, here is how to define a column of such a type.
 # See also
 
 * [Dynamic Hyperlink Column]({%slug radgridview-columns-column-types-dynamic-hyperlink-column%})
+
+* [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})

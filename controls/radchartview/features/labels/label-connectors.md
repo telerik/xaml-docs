@@ -18,7 +18,7 @@ RadChartView supports drawing of connector lines between the series' data points
 The following example demonstrates how to set the LabelConnectorsSettings propety:
 
 #### __XAML__
-{{region radchartview-customizing-cartesianchart-series}}
+{{region radchartview-features-labels-label-connectors_00}}
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:PieSeries ShowLabels="True" RadiusFactor="0.6">
 			<telerik:PieSeries.DataPoints>

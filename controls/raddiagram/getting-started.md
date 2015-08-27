@@ -315,7 +315,7 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 		</telerik:RadDiagramConnection>
 	{{endregion}}
 
-	![Rad Diagram Getting Started Start Connection](images/RadDiagram_GettingStartedStartConnection.png)
+![Rad Diagram Getting Started Start Connection](images/RadDiagram_GettingStartedStartConnection.png)
 
 ## RadDiagram Example - "if-else" operator flow diagram
 

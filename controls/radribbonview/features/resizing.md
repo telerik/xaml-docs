@@ -12,7 +12,7 @@ position: 4
 
 One of the most important features of the __RadRibbonView__ control is the dynamic layout resizing. It refers to the __RadRibbonView__'s ability to optimize its layout depending on how much space is available. This process can't be automated, however, the __RadRibbonView__'s API gives you the ability to specify how you would like the resizing to occur.
 
-The resizing of the elements is defined per __RadRibbonTab__. The resizing behavior of one tab is __independent__ from the resizing behavior of the rest of the tabs. A __RadRibbonTab__ contains many __RadRibbonGroups__. Each group in your tabs can have four distinct sizes:
+The resizing of the elements is defined per __RadRibbonTab__. The resizing behavior of one tab is __independent__ from the resizing behavior of the rest of the tabs. A __RadRibbonTab__ control can contains many __RadRibbonGroups__. Each group in your tabs can have four distinct sizes:
 
 * __Large__- this is the default size.
 	![](images/RibbonView_Group_Large.png)
@@ -62,18 +62,18 @@ The __RadRibbonGroups__ assume the size of their __DefaultVariant__ whenever the
 
 ![Rad Ribbon View Resizing Default Variant](images/RadRibbonView_Resizing_DefaultVariant.png)
 
-The __DefaultVariant__ is always available and is always with highest priority. For example, if you set __DefaultVariant__ to __Small__ as demonstrated above, the group will be initially in __Small__ state and its state can only change to __Collapsed__ when the width of the __RibbonView__ gets smaller. Moreover this __RibbonGroup__ will never enter its __Medium__ or __Large__ states as the __DefaultVariant__ is __Small__.		
+The __DefaultVariant__ is always available and is always with highest priority. For example, if you set __DefaultVariant__ to __Small__ as demonstrated above, the group will be initially in __Small__ state and its state can only change to __Collapsed__ when the width of the __RibbonView__ control gets smaller. Moreover, this __RibbonGroup__ will never enter its __Medium__ or __Large__ states as the __DefaultVariant__ is __Small__.		
 
 ## Variants
 
-The resizing behavior of the __RadRibbonTab__ is specified through the __RadRibbonGroup__'s __Variants__ collection. The collection is populated with __GroupVariant__ objects, which objects have two important properties:		
+The resizing behavior of __RadRibbonGroup__ is specified through the RadRibbonGroup's __Variants__ collection. The collection is populated with __GroupVariant__ objects, which objects have two important properties:		
 
 * __Variant__ - defines the variant in which the group can be. The values for this property are predefined in the __RibbonGroupVariant__ enumeration, which exposes the following fields:
 	![](images/RibbonView_GroupVariants.png)
 
 * __Priority__- the priority for the specified __Variant__.			
 
-Although the __Variants__ collection is defined on __RadRibbonGroup__ level, the __Priority__ properties for each __GroupVariant__ are applied throughout the __RadRibbonTab__ as a whole - for all of the groups. And it is important to remember that the __Variants__ are applied based on the value of their __Priority__ following the rule - the highest number is with the highest priority.		
+Although the __Variants__ collection is defined on __RadRibbonGroup__ level, the __Priority__ properties for each __GroupVariant__ are applied throughout __RadRibbonTab__ as a whole - for all of the groups. And it is important to remember that the __Variants__ are applied based on the value of their __Priority__ following the rule - the highest number is with the highest priority.		
 
 By default if no priorities are set for the __RadRibbonGroups Variants__ they will be resized from right to left going through all 4 variants  - e.g. when the size of the __RadRibbonView__ is smaller the right-most __RibbonGroup__ will be first set to a smaller size. However, the groups will only go through each of their 4 Variants, if every smaller variant actually takes less space. Otherwise, if for example the groups are empty, they will skip variants and will be resized from __Large__ to __Collapsed__ state directly.		
 

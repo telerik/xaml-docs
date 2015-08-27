@@ -55,6 +55,7 @@ The available options are: __CellClick__, __F2__, __None__, etc.
 	}
 {{endregion}}
 
+>importantFor performance reasons, you should work with __UniqueName__ of GridViewBoundColumnBase only when you have also configured __DataMemberBinding__ for it. Otherwise, please define __GridViewColumn__ and use __Header__ property instead. 
 
 
 

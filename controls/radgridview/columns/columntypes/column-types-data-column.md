@@ -21,7 +21,7 @@ __GridViewDataColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn />
+	        <telerik:GridViewDataColumn DataMemberBinding={Binding Id} />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
@@ -31,12 +31,18 @@ __GridViewDataColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview
 {{region radgridview-columns-column-types-data-column_1}}
 
 	GridViewDataColumn column = new GridViewDataColumn();
-	this.radGridView.Columns.Add( column );
+    column.DataMemberBinding = new Binding("Id");
+    this.radGridView.Columns.Add(column);
 {{endregion}}
 
+>importantFor performance reasons, you should work with __UniqueName__ of GridViewBoundColumnBase only when you have also configured __DataMemberBinding__ for it. Otherwise, please define __GridViewColumn__ and use __Header__ property instead. 
 
 Via the __DataFormatString__ property you are able to format the bound data and display it the way you want. For example take a look at the following snapshot:
 
 __Figure 1__: ![](images/RadGridView_ColumnTypes_0.png)
 
 To learn more about formatting please check [Data Formatting]({%slug gridview-columns-data-formatting%}) topic. 
+
+# See also
+
+* [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})

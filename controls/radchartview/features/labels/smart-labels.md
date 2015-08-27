@@ -63,5 +63,4 @@ This smart labels strategy exposes the __DisplayMode__ property. It is an enumer
 * __SpiderUnaligned__ - this value positions the labels outside the slices and does not align them.
 	![radchartview-features-smart-labels-unaligned](images/radchartview-features-smart-labels-unaligned.png)
 
->In order to visualize the connections between the labels and the corresponding slices, you can take advantage of the __LabelConnectorsSettings__ property of the __PieSeries__. You can find more information on that matter in the [PieSeries]({%slug radchartview-series-pieseries%}) article.         
-
+>important In order to visualize the connections between the labels and the corresponding data points, you can take advantage of the __LabelConnectorsSettings__ property of the chart series. 

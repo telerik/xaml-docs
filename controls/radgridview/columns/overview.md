@@ -44,6 +44,10 @@ This chapter gives you detailed information about columns in __RadGridView__. Th
             
 * __Frozen columns__ - find out how to [freeze/unfreeze]({%slug gridview-columns-frozen-columns%}) columns or how to [disable]({%slug gridview-columns-frozen-columns%}) this functionality.
             
+* RadGridView will auto-generate columns for the following types:
+* String
+* Boolean
+* DateTime
 
 # See Also
 

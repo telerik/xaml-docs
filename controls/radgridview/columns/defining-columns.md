@@ -10,16 +10,22 @@ position: 9
 
 # Defining Columns
 
-You can define columns for __RadGridView__ in two ways: 
+Columns can be defined in two ways: 
 
-* let __RadGridView__ automatically generate the columns based on the underlying data source. 
-* manually specify columns in XAML or code-behind. 
+* __RadGridView__ will [automatically generate columns](#automatic-columns-generation) based on the underlying data source. 
+
+* [Manually specifying columns](#manual-columns-definition) in XAML or code-behind. 
 
 This help article explains how to do both with code examples.
 
 ## Automatic Columns Generation
 
 By default, __RadGridView__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of the __RadGridView__ control to a collection of employees (see code in __Example 1__ and the result in __Figure 1__), __RadGridView__ will create a separate column for each public propertiy of the __Employee__ object.
+
+There will be specific editors generated for the following types:
+	*	String - TextBox editor (default)
+	*	Boolean - CheckBox editor accompanied by GridViewCheckBox element displayed in View mode 
+	*	DateTime - RadDatePicker editor
 
 However, if you wish to explicitly specify the column name for certain property of your data class or to prevent the creation of a column for it, use the __System.ComponentModel.DataAnnotations.DisplayAttribute__, as it is shown in the sample below.
 
@@ -139,9 +145,8 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 * Set __Header__ property and add the column to the __Columns__ collection. The default Header will be the property specified as DataMemberBinding. 
 		  
 
->importantYou can set and work with the __UniqueName__ of a column only when you have also set the __DataMemberBinding__. Otherwise, please use the __Header__ instead of __UniqueName__.
+>importantYou can set and work with __UniqueName__ of a column only when you have also configured __DataMemberBinding__ for it. Otherwise, please define __GridViewColumn__ and use __Header__ property instead of UniqueName. 
 			  
-
 #### __XAML__
 
 {{region gridview-columns-defining-columns_5}}

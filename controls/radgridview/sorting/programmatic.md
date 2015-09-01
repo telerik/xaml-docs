@@ -107,14 +107,14 @@ For example:
 
 >tipIn case of a static data structure, known during design time, it is better to declare your default sorting in XAML, rather than in your code-behind.
 
-After the application runs with this descriptor defined, __RadGridView__ data will be sorted ascending by the __Title__ column and will look as if you have clicked on the __Title__ column header.
+After the application runs with this descriptor defined, __RadGridView__ data will be sorted ascending by __Title__ column and will look as if you have clicked on __Title__ column header.
         
->Adding or removing descriptors from the __SortDescriptors__ collection won't raise the __Sorting__ and the __Sorted__ events, although the data will be sorted.
+>Adding or removing descriptors from __SortDescriptors__ collection won't raise __Sorting__ and __Sorted__ events, although the data will be sorted.
 
->The built-in sorting also uses the __SortDescriptors__ collection. When a header is clicked it clears the __SortDescriptors__ collection and adds a new __ColumnSortDescriptor__ to it.
+>The built-in sorting also uses __SortDescriptors__ collection. When a header is clicked it clears the __SortDescriptors__ collection and adds a new __ColumnSortDescriptor__ to it.
 
 >tipYou are able to add __SortDescriptors/ColumnSortDescriptor__ in XAML only at design time. 
->tipYou have to manage the __SortDescriptors__ collection at runtime when implementing multi-column sorting behavior. To learn more take a look at the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
+>tipWhen implementing multi-column sorting behavior you have to manage __SortDescriptors__ collection at runtime. To learn more take a look at the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
 
 # See Also
 

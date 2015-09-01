@@ -5,7 +5,7 @@ description: Shapes and Images
 slug: radspreadprocessing-features-shapes-and-images
 tags: shapes,and,images
 published: True
-position: 12
+position: 13
 ---
 
 # Shapes and Images

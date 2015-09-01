@@ -5,7 +5,7 @@ description: Filtering
 slug: radspreadprocessing-features-data-validation
 tags: data,validation
 published: True
-position: 16
+position: 18
 ---
 
 # Data Validation

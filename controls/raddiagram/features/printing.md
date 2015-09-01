@@ -33,7 +33,19 @@ The __RadDiagram.Print()__ method allows you to print the content of the Diagram
 #### __VB.NET__
     xDiagram.Print(New RadDiagramPrintSettings("My Diagramming Solution", New Thickness(22, 15, 22, 15)))		  
 
-If you don't define any __RadDiagramPrintSettings__ when invoking the __Print()__ method, by default the Diagramming framework will name your printing job *"RadDiagram Print Document"* and it will set the __PageMargin__ to *15*.			
+If you don't define any __RadDiagramPrintSettings__ when invoking the __Print()__ method, by default the Diagramming framework will name your printing job *"RadDiagram Print Document"* and it will set the __PageMargin__ to *15*.	
+
+The __RadDiagramPrintSettings__'s constructor have an optional parameter that defines the resolution (__DPI__) used during printing. The default DPI is 96. If you need better quality of the print result you can pass bigger value in the settings' constructor.
+
+#### __C#__
+{{region raddiagram-features-printing-00}}
+	xDiagram.Print(new RadDiagramPrintSettings("My Diagramming Solution",new Thickness(22,15,22,15), 300));
+{{endregion}}
+
+#### __VB.NET__
+{{region raddiagram-features-printing-01}}
+	xDiagram.Print(New RadDiagramPrintSettings("My Diagramming Solution", New Thickness(22, 15, 22, 15), 300))
+{{endregion}}
 
 ### Print() Method Example
 
@@ -190,8 +202,9 @@ The __RadDiagramPrintPreview__ control exposes the following properties:
 * __Diagram__ - this property is of type __RadDiagram__ and it determines the Diagramming object that should be printed
 
 * __ItemStyle__ - this property allows you to create a custom style for the __RadDiagramPrintPreviewItem__ which basically represents a page of the diagram print document.	
-	You can edit its default settings in Blend, if you select the RadDiagramPrintPreview object in the *Objects and Timeline* pane and then choose from the Object menu *Edit AdditionalStyles->Edit ItemStyle->Eit a Copy.... * The default structure of the __RadDiagramPrintPreviewItem ControlTemplate__ is as follows:
-	![Rad Diagram Features Printing ItemStyle](RadDiagram_Features_Printing_PrintPreview_ItemStyle.png)
+	You can edit its default settings in Blend, if you select the RadDiagramPrintPreview object in the *Objects and Timeline* pane and then choose from the Object menu *Edit AdditionalStyles->Edit ItemStyle->Eit a Copy.... * The default structure of the __RadDiagramPrintPreviewItem ControlTemplate__ is as follows:  
+	
+	![Rad Diagram Features Printing ItemStyle](images/RadDiagram_Features_Printing_PrintPreview_ItemStyle.png)
 
 __RadDiagramPrintPreview Methods and Events__
 

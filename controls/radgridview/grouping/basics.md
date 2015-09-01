@@ -18,19 +18,15 @@ __RadGridView__ provides a built-in grouping functionality, which allows the use
 
 # Basic Grouping
 
-In order to group data the user has to just drag the desired column to the __GridViewGroupPanel__ located at the top of the __RadGridView__. If __RadGridView__ is not grouped, a hint is shown in __GridViewGroupPanel__.
+In order to group data the user has to just drag the desired column to __GridViewGroupPanel__ located at the top of __RadGridView__. If __RadGridView__ is not grouped, a hint is shown in __GridViewGroupPanel__.
 
 ![](images/RadGridView_BasicGrouping_1.png)
 
-After dropping the selected header in the grouping area, the text message will be replaced with a rectangle that represents the selected header and the data in the __RadGridView__ will be properly grouped.
+After dropping the selected header in the grouping area, the text message will be replaced with a rectangle that represents the selected header and the data will be properly grouped.
 
 ![](images/RadGridView_BasicGrouping_2.png)
 
 To remove the grouping just click the close button of the rectangle or drag it out of the grouping area.![](images/RadGridView_BasicGrouping_3.png)
-
-The __RadGridView__ also provides the user with a way to sort the groups of data. To do that the user just has to click on the rectangle that represents the grouping column. By default, when the data is grouped, the groups are sorted ascending. When the sort direction of the rectangle is none the groups are sorted depending on the data they contain.
-
-![](images/RadGridView_BasicGrouping_4.png)
 
 >tipThe data can be grouped by more than one column. To do that just drag another column into the grouping area and the data will be grouped against these two criteria. To learn more about the multi-column grouping take a look at the [Multi-Column Grouping]({%slug gridview-multiple-column-grouping%}) topic.
         
@@ -38,7 +34,16 @@ The __RadGridView__ also provides the user with a way to sort the groups of data
 
 >tip As of __Q3 2012__ we have introduced a new rendering mode of RadGridView - Flat. The default GroupRenderMode is Nested, and the new one is __Flat__. When you set the Flat mode, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
 
->tipYou can download a __runnable project__ on how to sort a group by a different property from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/SortGroupByDifferentProperty__.
+__RadGridView__ also provides the user with a way to sort the groups of data. To do that the user just has to click on the rectangle that represents the grouping column. By default, when the data is grouped, the groups are sorted __Ascending__. When the sort direction of the rectangle is None the groups are sorted depending on the data they contain. 
+![](images/RadGridView_BasicGrouping_4.png)
+
+### Sort Group by Aggregate
+
+You can download a __runnable project__ on how to sort a group by defined aggregate functions from our online SDK repository: [SortGroupByAggregate](https://github.com/telerik/xaml-sdk/tree/master/GridView/SortGroupByAggregate).
+
+### Sort Group by Different Property
+
+You can download a __runnable project__ on how to sort a group by a different property from our online SDK repository: [SortGroupByDifferentProperty](https://github.com/telerik/xaml-sdk/tree/master/GridView/SortGroupByDifferentProperty).
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
 
@@ -56,10 +61,9 @@ For example, you can configure the column to be grouped on the Name property alt
 	                            GroupMemberPath="Name" />
 {{endregion}}
 
-
 ## Grouping Modes
 
-As of __Q3 2012__ we have introduced a new property of the RadGridView __GroupRenderMode__. It has two options:
+As of __Q3 2012__ we have introduced a new __GroupRenderMode__ of RadGridView . It has two options:
         
 __Nested Mode__: It is the default one and it will nest GridViewGroupRows into one another when you have grouping on many levels. This may lead to a poor performance when the grid is grouped on several levels and has a lot of data. The visual element representing the grouped row is GridViewGroupRow.
         
@@ -69,7 +73,7 @@ __Flat Mode__: This mode simply renders rows one below the other. This leads to 
           
 ## Disabling Grouping
 
-There are two ways to disable the built-in grouping of the __RadGridView__. The first one is at the __RadGridView__ level via the __ShowGroupPanel__ property. By setting it to __False__ the grouping area gets hidden and the column headers have nowhere to be dropped. The default value is __True__.
+There are two ways to disable the built-in grouping of __RadGridView__. The first one is at __RadGridView__ level via the __ShowGroupPanel__ property. By setting it to __False__ the grouping area gets hidden and the column headers have nowhere to be dropped. The default value is __True__.
 
 #### __XAML__
 
@@ -107,12 +111,11 @@ The second way is to disable it on column level via __IsGroupable__ property. Wh
 	Me.radGridView.Columns("Title").IsGroupable = False
 {{endregion}}
 
-
 ![](images/RadGridView_BasicGrouping_6.png)
 
 ## Events
 
-There are two events that are raised, when the data in the __RadGridView__ is grouped. The first one is the __Grouping__ event and is raised before the data is grouped. The second one is the __Grouped__ event and is raised when the data has been already grouped. You can find more information about them [here]({%slug gridview-events-grouping%}).
+There are two events that are raised, when the data in __RadGridView__ is grouped. The first one is __Grouping__ event and it is raised before the data is grouped. The second one is __Grouped__ event and it is raised when the data has been already grouped. You can find more information about them [here]({%slug gridview-events-grouping%}).
 
 ## Styling and Appearance
 
@@ -120,7 +123,11 @@ The __RadGridView__ provides you with several ways to style the default look and
 
 You can easily change the appearance of the group row by just setting the __GroupRowStyle__ property. To learn how to use it take a look at the [Styling the Group Row]({%slug gridview-styling-group-row%}) topic.
 
-You can also manipulate the visual appearance of the group footers. Just set the __GroupFooterCellStyle__ property of the __GridViewColumn__ to an appropriate style. To learn more about the group footers take a look at the [Group Footers]({%slug gridview-group-footers%}) topic. To learn how to style them take a look at the [Styling the Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%}) topic.
+You can also manipulate the visual appearance of the group footers. Just configure __GroupFooterCellStyle__ property of __GridViewColumn__ to an appropriate style. 
+
+To learn more about the group footers take a look at the [Group Footers]({%slug gridview-group-footers%}) topic. 
+
+To learn how to style them take a look at the [Styling the Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%}) topic.
 
 # See Also
 

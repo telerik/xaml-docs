@@ -29,7 +29,7 @@ __Telerik.Windows.Media.Imaging.BitmapEncoderhttp://www.telerik.com/help/silverl
 * [PngBitmapEncoder](http://www.telerik.com/help/silverlight/t_telerik_windows_media_imaging_pngbitmapencoder.html) - this is the default encoder used by the __ExportToImage()__ method.				  
 {% endif %}
 {% if site.site_name == 'WPF' %}
-* __System.Windows.Media.Imaging.BitmapEncoderhttp://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapencoder.aspx__* encoder* - this attribute defines the image format. You can use any of the following encoders to create the file:
+* [BitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapencoder.aspx) *encoder* - this attribute defines the image format. You can use any of the following encoders to create the file:
 	* [BmpBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bmpbitmapencoder.aspx)
 	* [GifBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.gifbitmapencoder.aspx)
 	* [JpegBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.jpegbitmapencoder.aspx)
@@ -37,13 +37,15 @@ __Telerik.Windows.Media.Imaging.BitmapEncoderhttp://www.telerik.com/help/silverl
 	* [TiffBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.tiffbitmapencoder.aspx)
 	* [WmpBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.wmpbitmapencoder.aspx)
 {% endif %}
-* __Nullable<Rect>__*enclosingBounds* - this attribute determines the portion of the diagram surface which should be exported
+* __Nullable<Rect>__ *enclosingBounds* - this attribute determines the portion of the diagram surface which should be exported
 
-* __Size__*returnImageSize* - this attribute determines the size of the created image file			
+* __Size__ *returnImageSize* - this attribute determines the size of the created image file			
 
-* __Brush__*backgroundBrush* - this attribute determines the brush that should be applied as a background of the created image			
+* __Brush__ *backgroundBrush* - this attribute determines the brush that should be applied as a background of the created image			
 
-* __Thickness__*margin* - this attribute allows you to specify a __Margin__ around the __RadDiagram__ when exporting it to an image file.			
+* __Thickness__ *margin* - this attribute allows you to specify a __Margin__ around the __RadDiagram__ when exporting it to an image file.		
+	
+* __Double__ *dpi* - this attribute allows you to specify the DPI that determines the quality of the exported image. This is an optional parameter and its default value is 96.
 
 Below you can find a few examples demonstrating how to use the __ExportToImage()__ method to customize the export. For the purpose of these examples we will use the following __RadDiagram__ definition:
 		

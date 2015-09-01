@@ -5,7 +5,7 @@ description: Grouping
 slug: radspreadprocessing-features-grouping
 tags: grouping
 published: True
-position: 14
+position: 16
 ---
 
 # Grouping

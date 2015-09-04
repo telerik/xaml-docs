@@ -62,7 +62,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 
 
-* __PageOrientation__: Specifies if the pages in the section should be in Portrait or in Landscape orientation. This property is used to determine the actual size of the paper to use on the printer and does not reflect the document's visualization. In order to show the document in different mode you can use the [Rotate method](#rotating-a-section).
+* __PageOrientation__: Specifies if the pages in the section should be in Portrait or in Landscape orientation. This property is used to determine the actual size of the paper to use on the printer and does not reflect document's visualization. In order to affect Section's appearance you should change PageSize and PageMargin properties, or use the [Rotate method](#rotating-a-section), which will change them according to the desired page orientation.
             
 
 #### __C#__

@@ -25,6 +25,9 @@ This topic will show you how to perform the second one.
 
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadGridView__. In the 'Objects and Timeline' pane select the __RadGridView__ you want to style. From the menu choose *Object -> Edit Additional Styles -> __RowStyle__ -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
+>Other than extracting the template with Expression Blend, you can adopt the implict styling approach to modify the style which would lead to better performance. Additional information on how to implement this is available in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help topic.
+
+
 >tipIn order to modify the appearance of the alternating rows you have to modify the __AlternatingRowStyle__. The row styles are identical, so the rest of this topic applies to the __AlternatingRowStyle__, too. To learn more about the __Alternating Rows__ of the __RadGridView__ read [here]({%slug radgridview-rows-alternating-rows%}).
 
 >tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.

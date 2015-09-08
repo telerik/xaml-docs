@@ -175,9 +175,9 @@ ChartTrackballBehavior provides __TrackInfoUpdated__ event which fires as the us
 
 ## Update the TrackBall position
 
-ChartTrackBallBehavior exposes __Position__ property that can be used to manually change the position of the trackball. The property accepts a value of type __Sytem.Windows.Point__. Setting the Position will display and snap the trackball to the data points which are plotted closest to the set position. The position is defined in pixels relative to the chart. 
+ChartTrackBallBehavior exposes __Position__ property which can be used to manually change the position of the trackball. The property accepts a value of type __Sytem.Windows.Point__. Setting the Position will display and snap the trackball to the data points which are plotted closest to the set position. The position is defined in pixels relative to the chart. 
 
-For example, if the chart is 500px wide and 300px height, and the Position property is set to new Point(250, 150) the trackball will be placed to the data points plotted closest to the 250th horizontal and 150th vertical pixels of the chart.
+For example, if the chart is 500px wide and 300px high, and the Position property is set to new Point(250, 150), the trackball will be placed to the data points plotted closest to the 250th horizontal and 150th vertical pixels of the chart.
 
 #### __C#__
 	trackballBehavior.Position = new Point(250, 150);
@@ -185,11 +185,11 @@ For example, if the chart is 500px wide and 300px height, and the Position prope
 #### __VB.NET__	
 	trackballBehavior.Position = New Point(250, 150)
 
-This behavior also provides __PositionChanging__ event which is called on each change of the Position property. The event arguments expose couple helpful properties:
+This behavior also provides __PositionChanging__ event which is called on each change of the Position property. The event arguments expose the following properties:
 * __PreviousPosition__: Gets the previous position of the trackball.
 * __NewPosition__: Gets or sets the new position of the trackball.
 
->The PositionChanging event will be called only if the old and the new positions are different.
+>The __PositionChanging__ event will be called only if the old and the new positions are different.
 
 <!-- -->
 

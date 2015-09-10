@@ -579,7 +579,7 @@ Following is a list of all available style properties and their default values:
 <tr>
 <td>PageSize</td>
 <td>Page size property.
-            The width and height is in device independent pixels (1/96 inch).</td>
+            The width and height are in device independent pixels (1/96 inch).</td>
 <td>816,1056</td>
 </tr>
 <tr>
@@ -645,7 +645,7 @@ Following is a list of all available style properties and their default values:
 </tr>
 <tr>
 <td>DefaultTabStopWidth</td>
-<td>Style property used to determine the default width value which shall be used when a tab stop should be generated.</td>
+<td>Style property used to determine the default width value which shall be used when a tab stop should be generated. The value is in device independent pixels (1/96 inch).</td>
 <td>48</td>
 </tr>
 

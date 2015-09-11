@@ -73,7 +73,7 @@ __Example 1__ shows how you can create and apply specific import settings.
 
 ## UriImageSource 
 
-This class loads the images with an URI specified from the HTML document. It exposes the following properties:
+This class is used to create images which source is defined as URI, import and export them to HTML. It exposes the following properties:
 
 * __Uri__: Gets the URI of the image.
 

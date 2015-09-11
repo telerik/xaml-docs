@@ -69,7 +69,19 @@ __Example 1__ shows how you can create and apply specific import settings.
     provider.ImportSettings = importSettings;
 {{endregion}}
 
+> With Q3 2015 the __UriImageSource__ class has been introduced and it is not necessary to subscribe to the LoadFromUri event when you want to import an image with URI.
 
+## UriImageSource 
+
+This class loads the images with an URI specified from the HTML document. It exposes the following properties:
+
+* __Uri__: Gets the URI of the image.
+
+* __Data__: Gets a byte[], which represents the data of the image.
+
+* __Extension__: Gets the extension.
+
+> The images imported through the UriImageSource class are downloaded on demand. If the data hasn't been accessed, the image won't be downloaded even on export - only the URI of the image persists.
 
 ## Export Settings
 
@@ -101,6 +113,7 @@ Specifies whether the exported document should be indented (formatted with space
 
 This property is used to control how images are exported. The available options are as external file or as embedded images.
             
+> When an image with Uri source is imported it is always exported with URI and the __ImagesExportMode__ property is not respected. If you need to respect this property you could convert the ImageSource property of the __Image__ to __ImageSource__.
 
 ### ImagesFolderPath
 

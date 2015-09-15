@@ -73,15 +73,15 @@ __Example 1__ shows how you can create and apply specific import settings.
 
 ## UriImageSource 
 
-This class is used to create images which source is defined as URI, import and export them to HTML. It exposes the following properties:
+This class is used to create an image with a source defined as URI. The image data will be downloaded on demand. **UriImageSource** exposes the following properties:
 
 * __Uri__: Gets the URI of the image.
 
-* __Data__: Gets a byte[], which represents the data of the image.
+* __Data__: Gets a byte[], which represents the data of the image. Accessing this property will download the image data.
 
-* __Extension__: Gets the extension.
+* __Extension__: Gets the extension. Accessing this property will download the image data only if the extension is not predefined.
 
-> The images imported through the UriImageSource class are downloaded on demand. If the data hasn't been accessed, the image won't be downloaded even on export - only the URI of the image persists.
+> Exporting an UriImageSource object to other supported formats will download the image and save it according to the used format specification.
 
 ## Export Settings
 

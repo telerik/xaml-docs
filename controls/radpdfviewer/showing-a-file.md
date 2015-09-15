@@ -35,7 +35,7 @@ The first thing you need to do is declare the Telerik namespace.
 
 
 
-After that, you can proceed to add the PdfViewer control to the user control:
+After that, you can proceed to add the **PdfViewer** control to the user control:
 
 #### __XAML__
 
@@ -46,8 +46,7 @@ After that, you can proceed to add the PdfViewer control to the user control:
 {{endregion}}
 
 
-
-In the example above, a file named "Sample.pdf" embedded in a "Sample Data" folder in the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project will be shown when the page is loaded. PdfViewerDemo is the name of the        {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project. 
+In the example above, a file named "Sample.pdf" embedded in a "Sample Data" folder in the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project will be shown when the page is loaded. PdfViewerDemo is the name of the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project. 
 
 
 {% if site.site_name == 'Silverlight' %}You can just as well load files that are not on the client machine. For example, if you embed a Sample.pdf file in the Web project, you can load it like this: 
@@ -59,12 +58,11 @@ In the example above, a file named "Sample.pdf" embedded in a "Sample Data" fold
 {{endregion}}
 
 
-
->PDF files can be opened as long as you can obtain a stream with their content that supports Read and Seek operations. Note that due to Silverlight's security policy, only files from a domain with permissive cross-domain policy can be loaded. Furthermore, if the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate RadPdfViewer to show the document.{% endif %}
+>PDF files can be opened as long as you can obtain a stream with their content that supports Read and Seek operations. Note that due to Silverlight's security policy, only files from a domain with permissive cross-domain policy can be loaded. Furthermore, if the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate **RadPdfViewer** to show the document. Notice that the document is loaded **asynchronously** and the stream **shouldn't be closed**.{% endif %}
 
 
 {% if site.site_name == 'WPF' %}
->PDF files can be opened as long as you can obtain a stream with their content that supports Read and Seek operations. If the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate RadPdfViewer to show the document. {% endif %}
+>PDF files can be opened as long as you can obtain a stream with their content that supports Read and Seek operations. If the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate **RadPdfViewer** to show the document. Notice that the document is loaded **asynchronously** and the stream **shouldn't be closed**.{% endif %}
 
 
 ### Setting the DocumentSource in Code-Behind
@@ -75,7 +73,7 @@ This is how a PDF file can be loaded from a file embedded as a resource through 
 
 #### __C#__
 
-{{region radpdfviewer-showing-a-file_0}}
+{{region radpdfviewer-showing-a-file_3}}
 	private void LoadFromStream(object sender, System.Windows.RoutedEventArgs e)
 	{
 	    Stream str = App.GetResourceStream(new System.Uri("PdfViewerDemo;component/SampleData/Sample.pdf", System.UriKind.Relative)).Stream;
@@ -89,7 +87,7 @@ And this is how this can be done by passing its URI:
 
 #### __C#__
 
-{{region radpdfviewer-showing-a-file_1}}
+{{region radpdfviewer-showing-a-file_4}}
 	private void LoadFromUri(object sender, System.Windows.RoutedEventArgs e)
 	{
 	    this.pdfViewer.DocumentSource = new PdfDocumentSource(new System.Uri("PdfViewerDemo;component/SampleData/Sample.pdf", System.UriKind.Relative)); 
@@ -98,21 +96,30 @@ And this is how this can be done by passing its URI:
 
 
 
->In the samples above PdfViewerDemo is the name of the project and the PDF file is embedded as a Resource in a folder called SampleData.Setting the Document in Code-Behind
+>In the samples above PdfViewerDemo is the name of the project and the PDF file is embedded as a Resource in a folder called SampleData.
 
-__PdfDocumentSource__ internally uses the _PdfFormatProvider__ class to create a document for __RadPdfViewer__. This allows you to easily import your documents using directly __PdfFormatProvider__ instead of __PdfDocumentSource__.
+
+### Setting the Document in Code-Behind
+
+__PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create a document for __RadPdfViewer__. This allows you to easily import your documents using directly __PdfFormatProvider__ instead of __PdfDocumentSource__.
               
 
 #### __C#__
 
-{{region radpdfviewer-showing-a-file_3}}
+{{region radpdfviewer-showing-a-file_5}}
+	string pdfFilePath = "Sample.pdf";
+	MemoryStream stream = new MemoryStream();
+	
+	using (Stream input = File.OpenRead(pdfFilePath))
+	{
+	    input.CopyTo(stream);
+	}
+	
+	FormatProviderSettings settings = new FormatProviderSettings(ReadingMode.OnDemand);
 	PdfFormatProvider provider = new PdfFormatProvider(stream, settings);
-	this.viewer.Document = provider.Import();
+	RadFixedDocument doc = provider.Import();
+	this.pdfViewer.Document = doc;
 {{endregion}}
-
-
-
-The settings specify if the whole document must be loaded at once, or page by page, the values being __FormatProviderSettings.ReadAllAtOnce__ and __FormatProviderSettings.ReadOnDemand__ respectively.
               
 
 ## Binding the DocumentSource of RadPdfViewer
@@ -124,7 +131,7 @@ This is how the converter can be declared:
 
 #### __XAML__
 
-{{region radpdfviewer-showing-a-file_3}}
+{{region radpdfviewer-showing-a-file_6}}
 	xmlns:fixed="clr-namespace:Telerik.Windows.Documents.Fixed;assembly=Telerik.Windows.Controls.FixedDocumentViewers"
 {{endregion}}
 
@@ -132,7 +139,7 @@ This is how the converter can be declared:
 
 #### __XAML__
 
-{{region radpdfviewer-showing-a-file_4}}
+{{region radpdfviewer-showing-a-file_7}}
 	<Grid.Resources>
 	    <fixed:PdfDocumentSourceValueConverter x:Key="PdfDocumentSourceValueConverter" />
 	</Grid.Resources>
@@ -144,20 +151,18 @@ The DataContext can be implemented as follows:
 
 #### __C#__
 
-{{region radpdfviewer-showing-a-file_2}}
+{{region radpdfviewer-showing-a-file_8}}
 	public class Context
 	{
 	    public [string/Uri/Stream] Source { get; set; }
 	}
 {{endregion}}
 
-
-
-Notice that regardless of the type of the property you choose to bind the DocumentSource of the PdfViewer to, the XAML is identical.
+Notice that regardless of the type of the property you choose to bind the DocumentSource of the **PdfViewer** to, the XAML is identical.
 
 #### __XAML__
 
-{{region radpdfviewer-showing-a-file_5}}
+{{region radpdfviewer-showing-a-file_9}}
 	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Source, Converter={StaticResource PdfDocumentSourceValueConverter}}" />
 {{endregion}}
 

@@ -14,7 +14,7 @@ __RadRichTextBox__ uses the [Managed Extensibility Framework (MEF)](https://msdn
 
 * [Customization](#customization)
 
-* [Initial Load Performance of RadRichTextBox](initial-load-performance-of-radrichtextbox)
+* [Initial Load Performance of RadRichTextBox](#initial-load-performance-of-radrichtextbox)
 
 ## Customization
 

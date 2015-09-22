@@ -62,7 +62,7 @@ In the example above, a file named "Sample.pdf" embedded in a "Sample Data" fold
 
 
 {% if site.site_name == 'WPF' %}
->PDF files can be opened as long as you can obtain a stream with their content that supports Read and Seek operations. If the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate **RadPdfViewer** to show the document. Notice that the document is loaded **asynchronously** and the stream **shouldn't be closed**.{% endif %}
+>PDF files can be opened as long as you can obtain a stream with their content that supports *Read and Seek operations*. If the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate **RadPdfViewer** to show the document. Notice that the document is loaded **asynchronously** and the stream **shouldn't be closed**.{% endif %}
 
 
 ### Setting DocumentSource in Code-Behind
@@ -170,6 +170,6 @@ Notice that regardless of the type of the property you choose to bind the Docume
 
 # See Also
 
-* [Getting Starter]({%slug radpdfviewer-getting-started%})
+* [Getting Started]({%slug radpdfviewer-getting-started%})
 
 * [Viewer Modes]({%slug radpdfviewer-viewer-modes%})

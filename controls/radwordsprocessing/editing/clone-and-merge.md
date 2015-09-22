@@ -71,6 +71,7 @@ The following snippet shows how to merge documents by specifying the used __Merg
 {{endregion}}
 
 
+>tip You could insert one document into another at a specified position using the InsertDocument() method of **RadFlowDocumentEditor**. More information is available [here]({%slug radwordsprocessing-editing-insert-documents%}).
 
 ## Cloning RadFlowDocument
 
@@ -121,6 +122,7 @@ __Clone()__ method has two overloads:
     Section clonedSection = section.Clone(radFlowDocument);
 {{endregion}}
 
+>tip With the **DocumentElementImporter** class you could import a document element from one document (source) and insert it into another (target). For more details please check [this article]({%slug radwordsprocessing-editing-import-document-element%}).
 
 
 ## Cloning Other Objects

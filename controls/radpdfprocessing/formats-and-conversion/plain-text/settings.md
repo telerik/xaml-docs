@@ -11,11 +11,9 @@ position: 2
 
 # Settings
 
-TextFormatProvider allows for export of RadFixedDocument to txt. Additionally, the export settings provide modification options. The current article outlines the available settings.
+__TextFormatProvider__ allows for export of __RadFixedDocument__ to txt. Additionally, the export settings provide modification options. The current article outlines the available settings.
 
-Through the __TextFormatProviderSettings__ class you could specify the following:
-
-The export settings which you can specify are as follows:
+Through the __TextFormatProviderSettings__ class you could specify the following export settings:
 
 * **LinesSeparator**: Determines the string used to separate the lines in the document. The default value is __Environment.NewLine__.
 
@@ -42,7 +40,7 @@ The constructor of the **TextFormatProviderSettings** class has two overloads:
 
 ## Using TextFormatProviderSettings
 
-The Export() method of **TextFormatProvider** allows you to pass a **TextFormatProviderSettings** instance. In **Example 2** is illustrated how to apply the settings, created in **Example 1**, when exporting a **RadFixedDocument** to string.
+The __Export()__ method of **TextFormatProvider** allows you to pass a **TextFormatProviderSettings** instance. **Example 2** illustrates how to apply the settings created in **Example 1**, when exporting a **RadFixedDocument** to string.
 
 
 #### **[C#] Example 2: Apply TextFormatProviderSettings**

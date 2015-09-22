@@ -25,7 +25,9 @@ In order to create a CodedUI test, you need to perform the following steps:
 
 	* For Microsoft Visual Studio 2012 - "%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\\__11.0__\UITestExtensionPackages".      
 
-	* For Microsoft Visual Studio 2013 - "%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\\__12.0__\UITestExtensionPackages".   	
+	* For Microsoft Visual Studio 2013 - "%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\\__12.0__\UITestExtensionPackages".
+	
+	* For Microsoft Visual Studio 2013 - "%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\\__14.0__\UITestExtensionPackages" - added with version __2015 Q2 SP__.  	
 
 >For 32-bit operating systems, the path should be "%CommonProgramFiles%\Microsoft Shared\VSTT\\__[Version]__\UITestExtensionPackages".
 
@@ -54,20 +56,20 @@ In order to create a CodedUI test, you need to perform the following steps:
 
 Below you can find information about the supported level of CodedUI tests throughout our controls.     
 
+There is [Level 2 and Level 3 Coded UI test support](            http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls. For exceptions see bellow.
+        
 ## Q2 2015
 
-With our __Q2 2015__ official release we have included [Level 2 and Level 3 Coded UI test support](            http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls.
-        
 The controls that currently do __not__ support Level 2 and Level 3 Coded UI tests are listed bellow:
         
 Control	|	Level 1	|	Level 2	|	Level 3
 ---	|	---	|	---	|	---
-RadCalculator	|	Yes	|	No	|	No
-RadChart	|	No	|	No	|	No
-RadExpressionEditor	|	Yes	|	No	|	No
+RadChart	|	No	|	No*	|	No*
 RadGanttView	|	Yes	|	No	|	No
 RadPivotGrid	|	Yes	|	No	|	No
 RadScheduleView	|	Yes	|	No	|	No 
+
+'* You can work with RadChartView instead. For more information, please go through the topic on [RadChart vs. RadChartView]({%slug radchartview-radchartview-vs.-radchart%}). 
 
 ## Q2 2014
 
@@ -80,7 +82,7 @@ RadDateTimePicker	|	SetValueAction	|	On SelectedValue changed	|	DateTimeText
 
 ## Q3 2012
 
-With our __Q3 2012__ official release we have included [Level 1 Coded UI test support](              http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls, except __RadChart__ control.
+With __Q3 2012__ official release we have included [Level 1 Coded UI test support](              http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across all controls, except __RadChart__ control.
         
 # See Also
  

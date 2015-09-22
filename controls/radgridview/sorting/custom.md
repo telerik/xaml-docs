@@ -13,6 +13,14 @@ position: 2
 Although __RadGridView__ provides a fully functional sorting mechanism, it can sometimes be slow or ineffective, compared to other sorting mechanisms (database server, LINQ extension methods, manually working with the __SortDescriptors__ collection etc.). To benefit from them you have to bypass the existing sorting functionality of __RadGridView__.
 
 >You can set the __SortMemberPath__ property of the column to specify the name of the property the data in the column will be sorted by.
+
+Some other ways to customize the sort are listed below:
+
+* [Custom Sorting with IComparable ](#custom-sorting-with-icomparable)
+* [Custom Sorting with Generic SortDescriptor](#custom-sorting-with-generic-sortdescriptor)
+* [Custom Sorting handling Sorting Event](#custom-sorting-handling-sorting-event)
+* [Sort Group by Aggregate](#sort-group-by-aggregate)
+* [Sort Group by Different Property](#sort-group-by-different-property) 
         
 ## Custom Sorting with IComparable 
 
@@ -72,9 +80,9 @@ Take a look at the __GridViewSortingEventArgs__ argument of the event handler. T
 
 * __Column__ - the gridview column which is being sorted.
 
-For the example you have to sort the __ItemsSource of RadGridView__ in the __Sorting__ event handler using LINQ extension methods. For that purpose be sure that you are using the __System.Linq__ namespace.
+For the example you have to sort the __ItemsSource of RadGridView__ on __Sorting__ event handler using LINQ extension methods. For that purpose be sure that you are using __System.Linq__ namespace.
 
-The first thing to do is to get the value of the __ItemsSource__ property of your __RadGridView__ and assure that it is not null. In the already created event handler for the __sorting__ event add the following lines of code.
+The first thing to do is to get the value of __RadGridView.ItemsSource__ and assure that it is not null. In the __Sorting__ event handler you can add the following lines of code:
 
 #### __C#__
 
@@ -109,9 +117,8 @@ The first thing to do is to get the value of the __ItemsSource__ property of you
 	End Sub
 {{endregion}}
 
-Next you have to check the value of the current sorting direction. To do that use the __OldSortingState__ property of the __GridViewSortingEventArgs__, adding the following lines of code to the sorting event handler.
+Next you have to check the value of the current sorting direction. To do that use __OldSortingState__ property of __GridViewSortingEventArgs__, adding the following lines of code to the sorting event handler:
         
-
 #### __C#__
 
 {{region gridview-sorting-custom_4}}
@@ -149,11 +156,10 @@ Next you have to check the value of the current sorting direction. To do that us
 	End If
 {{endregion}}
 
-You can see that after determining the sorting state, the __NewSortingState__ property is set to match the new sorting state.
+You can see that after determining the sorting state, __NewSortingState__ property is set to match the new sorting state.
 
-To sort the employees collection use the __OrderBy__ and the __OrderByDescending__ extension methods provided by the __System.Linq__ namespace. The extension methods work with lambda expressions.
+To sort the employees collection use __OrderBy__ and __OrderByDescending__ extension methods provided by __System.Linq__ namespace. The extension methods work with lambda expressions.
         
-
 #### __C#__
 
 {{region gridview-sorting-custom_6}}
@@ -176,7 +182,7 @@ To sort the employees collection use the __OrderBy__ and the __OrderByDescending
 	                                                         .GetValue(employee, Nothing))
 {{endregion}}
 
-Do the same with the __OrderByDescending__ extension method. In the end, set the __ItemsSource__ property of your __RadGridView__ to the sorted employees collection and set the __Cancel__ property of the __RadGridViewEventArgs__ to __True__ , so the built-in sorting functionality would be bypassed.
+Do the same with __OrderByDescending__ extension method. In the end, set __RadGridView.ItemsSource__ to the sorted employees collection and set the __Cancel__ property of the __RadGridViewEventArgs__ to __True__ , so the built-in sorting functionality would be bypassed.
 
 #### __C#__
 
@@ -194,7 +200,7 @@ Do the same with the __OrderByDescending__ extension method. In the end, set the
 	e.Cancel = True
 {{endregion}}
 
-Here is the final code that should represent your __Sorting__ event handler.
+Here is the final code that should represent __Sorting__ event handler.
 
 #### __C#__
 
@@ -272,7 +278,19 @@ Here is the final code that should represent your __Sorting__ event handler.
 	End Sub
 {{endregion}}
 
-The same technique is not only usable with LINQ extension methods and the __ItemsSource__ of __RadGridView__. You can implement whatever logic you like for getting your data and sorting it. This is just a simple example that clarifies the logic around the implementation of the custom sorting and not the sorting functionality itself. Another example for custom sorting is the multi-column sorting, which is described in the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
+The same technique is not only usable with LINQ extension methods and RadGridView.ItemsSource__. You can implement whatever logic you like for getting data and sorting it. This is just a simple example that clarifies the logic around the implementation of the custom sorting and not the sorting functionality itself. 
+
+Another example for custom sorting is the multi-column sorting, which is described in the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
+
+## Sort Group by Aggregate
+
+You can download a __runnable project__ on how to sort a group by defined aggregate functions from our online SDK repository: [SortGroupByAggregate](https://github.com/telerik/xaml-sdk/tree/master/GridView/SortGroupByAggregate).
+
+## Sort Group by Different Property
+
+You can download a __runnable project__ on how to sort a group by a different property from our online SDK repository: [SortGroupByDifferentProperty](https://github.com/telerik/xaml-sdk/tree/master/GridView/SortGroupByDifferentProperty).
+
+You can also find [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
 
 # See Also
  

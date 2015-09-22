@@ -10,7 +10,7 @@ position: 2
 
 # Getting Started
 
-This tutorial will walk your through the creation of a sample application that contains __RadExpressionEditor__ and will show you how to: 
+This tutorial will walk your through the creation of a sample application containing __RadExpressionEditor__ and will show you how to: 
 
 * Use __RadExpressionEditor__ in your project;
 
@@ -20,7 +20,7 @@ This tutorial will walk your through the creation of a sample application that c
 
 * Create a new project;
 
-* Add references to the assemblies 
+* Add references to the needed assemblies 
 	* __Telerik.Windows.Controls__,
 	* __Telerik.Windows.Data__,
 	* __Telerik.Windows.Controls.Navigation__,
@@ -29,51 +29,27 @@ This tutorial will walk your through the creation of a sample application that c
     * __Telerik.Windows.Documents.Flow__,
     * __Telerik.Windows.Controls.Expressions__.
 
->In case you use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please make sure all the needed resource dictionaries are merged.            
+>In case you use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please make sure all the needed resource dictionaries are merged:  
+* System.Windows.xaml
+* Telerik.Windows.Controls.xaml
+* Telerik.Windows.Controls.Navigation.xaml
+* Telerik.Windows.Documents.xaml
+* Telerik.Windows.Controls.Expressions.xaml
 
-* Add the __RadExpressionEditor__ as demonstrated below:
+* Define __RadExpressionEditor__ as demonstrated below:
 
 #### __XAML__
-
 {{region radexpressioneditor-getting-started_1}}
-	<UserControl x:Class="RadExpressionEditor_SL.MainPage"
-	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	             xmlns:my="clr-namespace:RadExpressionEditor_SL"
-	             mc:Ignorable="d" d:DesignHeight="700" d:DesignWidth="700">
-	 <Grid>
 	  <telerik:RadExpressionEditor x:Name="expressionEditor" />
-	 </Grid>
-	</UserControl>
 {{endregion}}
 
-#### __XAML__
-
-{{region radexpressioneditor-getting-started_2}}
-	<Window x:Class="RadExpressionEditor_WPF.MainPage"
-	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	             xmlns:my="clr-namespace:RadExpressionEditor_WPF"
-	             mc:Ignorable="d" d:DesignHeight="700" d:DesignWidth="700">
-	 <Grid>
-	  <telerik:RadExpressionEditor x:Name="expressionEditor" />
-	 </Grid>
-	</Window>
-{{endregion}}
-
-Now, if you run the application, __RadExpressionEditor__ will be displayed:
+Now, when running the application, __RadExpressionEditor__ will be displayed:
 
 ![](images/RadExpressionEditor_GettingStarted.png)
 
 ## Binding RadExpressionEditor
 
-The scenario we will try to create here would be to implement a __RadExpressionEditor__ as an advanced manual filter for __RadGridView__. For that purpose, we will firstly create a new class __Employee__ with a couple of exposed properties and a method creating sample data:
+The scenario we will try to create here would be to implement __RadExpressionEditor__ as an advanced manual filter for __RadGridView__. For that purpose, we will firstly create a new class __Employee__ with a couple of exposed properties and a method creating sample data:
 
 #### __C#__
 
@@ -224,7 +200,7 @@ The scenario we will try to create here would be to implement a __RadExpressionE
 	End Class
 {{endregion}}
 
-In our case we will create a simple __ViewModel__ taking care for the connection between our model and view. It will be set as the __DataContext__ of our small application.
+In our case we will create a simple __ViewModel__ taking care for the connection between the model and view. It will be set as __DataContext__ of the application.
 
 #### __C#__
 
@@ -262,8 +238,8 @@ In our case we will create a simple __ViewModel__ taking care for the connection
 	End Class
 {{endregion}}
 
-Once we declared our business object and the corresponding __ViewModel__, we can define our __RadExpressionEditor__ and bind it appropriately. 
-
+Once we declared the business object and the corresponding __ViewModel__, we can define __RadExpressionEditor__ and bind it appropriately. 
+{% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
 {{region radexpressioneditor-getting-started_7}}
@@ -291,7 +267,8 @@ Once we declared our business object and the corresponding __ViewModel__, we can
 	   </Grid>
 	</UserControl>
 {{endregion}}
-
+{% endif %}
+{% if site.site_name == 'WPF' %}
 #### __XAML__
 
 {{region radexpressioneditor-getting-started_8}}
@@ -319,8 +296,9 @@ Once we declared our business object and the corresponding __ViewModel__, we can
 	  </Grid>
 	</Window>
 {{endregion}}
+{% endif %}
 
-The functionality for defining a filter for the __RadGridView__ will be implemented in the handler of the __ExpressionChanged__ event of the  __RadExpressionEditor__:  
+The functionality for defining a filter for __RadGridView__ will be implemented in the handler of __ExpressionChanged__ event:  
 
 #### __C#__
 
@@ -364,13 +342,13 @@ The functionality for defining a filter for the __RadGridView__ will be implemen
 	End Sub
 {{endregion}}
 
-On running the application and testing the functionality of adding a filter descriptor for the __RadGridView__, you should see the following:
+On running the application and testing the functionality of adding a filter descriptor for __RadGridView__, you should see a similar result:
 
 ![](images/RadExpressionEditor_GettingStarted2.png)![](images/RadExpressionEditor_GettingStarted3.png)
 
 Still, using the __Calculation Panel__ and the items in each __Category__, you are empowered to create far more complex filtering expressions.  
 
->You can get ExpressionEditor.Expression.Type.
+>You can access ExpressionEditor.Expression.Type.
 
 >__RadExpressionEditor__ provides support for dynamic objects with __ICustomTypeProvider__ (.NET 4.5) or __ICustomTypeDescriptor__ implementation. It will scan the object's properties and show them in the __Fields list__.
 
@@ -382,6 +360,7 @@ You can edit the [template of the control]({%slug radexpressioneditor-styles-and
      
 By default pasting in the editor is not supported. This is the behavior as the inner ExpressionTextBox is configured to not accept returns. You can resolve this with the following approach ensuring the pasting will be executed in code:
 #### __C#__
+{{region radexpressioneditor-getting-started_11}}
     void MainWindow_Loaded(object sender, RoutedEventArgs e)
     {
         this.expressionEditor.OnApplyTemplate();
@@ -402,3 +381,4 @@ By default pasting in the editor is not supported. This is the behavior as the i
             radRichTextBox.Insert(Clipboard.GetText());
         }
     }     
+{{endregion}}

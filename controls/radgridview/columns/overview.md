@@ -12,7 +12,7 @@ position: 0
 
 This chapter gives you detailed information about columns in __RadGridView__. The covered topics are:
 
-* [Defining columns]({%slug gridview-columns-defining-columns%}) - define columns manually in XAML or code-behind.
+* [Defining columns]({%slug gridview-columns-defining-columns%}).
             
 * __Column types__:
 	*  [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) 
@@ -43,15 +43,14 @@ This chapter gives you detailed information about columns in __RadGridView__. Th
 * __Reordering columns__ - everything about [reordering columns]({%slug gridview-columns-reordering-columns%})
             
 * __Frozen columns__ - find out how to [freeze/unfreeze]({%slug gridview-columns-frozen-columns%}) columns or how to [disable]({%slug gridview-columns-frozen-columns%}) this functionality.
-            
 
 # See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 
- * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
-
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
+
+ * [Show/Hide Columns outside of RadGridView]({%slug radgridview-how-to-show-hide-columns-outside-of-the-radgridview%})
 
  * [Control Panel]({%slug gridview-overview-controlpanel%})
 

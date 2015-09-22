@@ -10,13 +10,13 @@ position: 9
 
 # Not auto-generate a column for a specific property
 
-As you know, if the __AutoGenerateColumns="True"__ (which is by default), RadGridView creates a column for each property of the underlying business object. This article shows __how to not auto generate a column for a specific property__.
+As you know, if __AutoGenerateColumns="True"__ (which is by default), RadGridView creates a column for each property of the underlying business object. This article shows __how to not auto generate a column for a specific property__.
 
 There are two ways to accomplish this:
 
-1. Using [DataAnnotations](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx?appId=Dev10IDEF1&l=EN-US&k=k(SYSTEM.COMPONENTMODEL.DATAANNOTATIONS.DISPLAYATTRIBUTE.AUTOGENERATEFIELD);k(AUTOGENERATEFIELD);k(TargetFrameworkMoniker-).
+1. Using [DataAnnotations](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx?appId=Dev10IDEF1&l=EN-US&k=k(SYSTEM.COMPONENTMODEL.DATAANNOTATIONS.DISPLAYATTRIBUTE.AUTOGENERATEFIELD);k(AUTOGENERATEFIELD);k(TargetFrameworkMoniker-)).
 
-Apllying this approach you need to add a reference to the __System.ComponentModel.DataAnnotations__ assembly and mark your property with the __[Display(AutoGenerateField = false)]__
+Apllying this approach you need to add a reference to the __System.ComponentModel.DataAnnotations__ assembly and mark your property with __[Display(AutoGenerateField = false)]__ attribute.
 
 #### __[C#] Example 1: Using DataAnnotations.__
 
@@ -36,9 +36,9 @@ Apllying this approach you need to add a reference to the __System.ComponentMode
 	}
 {{endregion}}
 
-Now, RadGridView will not create a column for the Players property. 
+Now, RadGridView will not generate a column for the Players property. 
 
-2. Canceling the __AutoGeneratingColumn__ event for the particular column.
+2. Canceling __AutoGeneratingColumn__ event for a particular column.
 
 #### __[C#] Example 2: Canceling adding a column in __AutoGeneratingColumn__ event.__
 
@@ -52,6 +52,10 @@ Now, RadGridView will not create a column for the Players property.
 	   }
 	}
 {{endregion}}
+
+# See Also
+
+ * [Show/Hide Columns outside of RadGridView]({%slug radgridview-how-to-show-hide-columns-outside-of-the-radgridview%})
 
 
 

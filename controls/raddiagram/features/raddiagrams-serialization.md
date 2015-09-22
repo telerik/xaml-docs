@@ -156,80 +156,105 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 
 >importantThese properties are serialized in scenarios where data bindings are __not__ involved. If you are using Binding in styles targeting any of the diagram items, you need to manually serialise and deserialize all the properties that are bound. This is demonstrated in the [Manual Serialization/Deserialization]({%slug raddiagrams-features-serialization%}#manual-serializationdeserialization) section of this article.
 
+* __RadDiagram__
+	* AllowCopy
+	* AllowCut
+	* AllowDelete
+	* AllowPaste
+	* ConnectionBridges
+	* ConnectionRoundedCorners
+	* IsBackgroundSurfaceVisible
+	* IsConnectorsManipulationEnabled
+	* IsDraggingEnabled
+	* IsEditable
+	* IsManipulationAdornerVisible
+	* IsPanEnabled
+	* IsResizingEnabled
+	* IsRotationEnabled
+	* IsSnapEnabled
+	* IsZoomEnabled
+	* Metadata
+	* Position
+	* RouteConnections
+	* SelectionMode
+	* SnapX
+	* SnapY
+	* Zoom
+
 * __RadDiagramShape__
+	* AllowCopy
+	* AllowDelete
+	* AllowPaste
+	* Background
+	* BorderBrush
+	* BorderThickness
+	* Content
+	* FontFamily
+	* FontSize
+	* FontWeight
+	* Foreground
+	* Geometry
+	* GlidingStyle
+	* Id
+	* IsConnectionManipulationEnabled
+	* IsDraggingEnabled
+	* IsEditable
+	* IsResizingEnabled
+	* IsRotationEnabled
+	* MaxHeight
+	* MaxWidth
+	* MinHeight
+	* MinWidth
+	* ParentGroup
+	* Position
+	* RotationAngle
+	* Size
+	* Stroke
+	* StrokeDashArray
+	* StrokeThickness
+	* UseDefaultConnectors
 	* ZIndex
-    * Position
-    * Stroke
-    * StrokeThickness
-    * StrokeDashArray
-    * Background
-    * Size
-    * Content
-    * Foreground
-    * BorderBrush
-    * BorderThickness
-    * FontSize
-    * FontWeight
-    * FontFamily
-    * Geometry
-    * RotationAngle
-    * MinHeight
-    * MinWidth
-    * MaxHeight
-    * MaxWidth
-    * Id
-    * IsDraggingEnabled
-    * IsRotationEnabled
-    * IsResizingEnabled
-    * IsConnectionManipulationEnabled
-    * AllowDelete
-    * AllowCopy
-    * AllowPaste
-    * UseDefaultConnectors
-    * GlidingStyle
-    * IsEditable
-    * ParentGroup
 
 * __RadDiagramConnection__
-	* ZIndex
-    * Id
-    * Position
-    * Stroke
-    * StrokeThickness
-    * StrokeDashArray
-    * Background
-    * SourceConnectorPosition
-    * TargetConnectorPosition
-    * SourceCapType
-    * TargetCapType
-	* SourceCapSize
-	* TargetCapSize
-	* StartPoint
-	* Source
+	* AllowCopy
+	* AllowDelete
+	* AllowPaste
+	* Background
+	* BezierEndPoint    
+	* BezierStartPoint    
+	* BezierTention    
+	* BorderBrush    
+	* BorderThickness
+	* ConnectionPoints    
+	* ConnectionType    
+	* Content    
 	* EndPoint
+	* FontFamily    
+	* FontSize
+	* FontWeight    
+	* Foreground    
+	* Id
+	* IsConnectionManipulationEnabled
+	* IsDraggingEnabled
+	* IsEditable    
+	* IsModified    
+	* IsResizingEnabled
+	* IsRotationEnabled
+	* ParentGroup
+	* Position
+	* Source
+	* SourceCapSize
+	* SourceCapType
+	* SourceConnectorPosition
+	* StartPoint
+	* Stroke
+	* StrokeDashArray
+	* StrokeThickness
 	* Target    
-    * ConnectionType    
-    * ConnectionPoints    
-    * BezierTention    
-    * BezierStartPoint    
-    * BezierEndPoint    
-    * IsModified    
-    * Content    
-    * IsEditable    
-    * FontFamily    
-    * FontSize
-    * FontWeight    
-    * Foreground    
-    * BorderBrush    
-    * BorderThickness
-    * IsDraggingEnabled
-    * IsRotationEnabled
-    * IsResizingEnabled
-    * IsConnectionManipulationEnabled
-    * AllowDelete
-    * AllowCopy
-    * AllowPaste
-    * ParentGroup
+	* TargetCapSize
+	* TargetCapType
+	* TargetConnectorPosition
+	* ZIndex
 
 For every other property that you need to be part of the Serialization/Deserialization process, you have to use the __RadDiagram.ShapeDeserialized__ and __RadDiagram.ShapeSerialized__ or __RadDiagram.ConnectionDeserialized__ and __RadDiagram.ConnectionSerialized__ events. Below is shown how you can serialized the Opacity of the Shapes:			
 
@@ -262,6 +287,56 @@ For every other property that you need to be part of the Serialization/Deseriali
 	End Sub	
 
 >Please note that the __Double.ToInvariant()__ extension method is defined in the __Telerik.Windows.Diagrams.Core__ namespace and in order to use it in your application, you'll have to add a using statement: using Telerik.Windows.Diagrams.Core;
+
+## Preserve bindings to the automatically serialized properties
+
+If you have a binding between a RadDiagramItem property that is [automatically serialized](#extending-raddiagram-serialization) and a property from the item’s view model the binding won’t work after the deserialization. This is because the serialization/deserialization logic of the diagram sets those properties locally which has bigger priority than a binding. You can read more about the value setting precedence in the [Dependency Property Value Precedence](https://msdn.microsoft.com/en-us/library/vstudio/ms743230(v=vs.100).aspx) MSDN article.
+
+In order to preserve the binding you can remove the value of the property from the serialization info and use another key to serialize/deserialize it.
+
+For example, if you have a binding to the Position property you can use the following approach for saving the binding:
+* Override the __SerializeNode()__ method of the diagram’s __GraphSource__ and set the value of the bound property to *null* in the __SerializationInfo__. Then add the value with a new key in the serialization info. 
+	#### __C#__
+		public override void SerializeNode(NodeViewModelBase node, SerializationInfo info)
+		{
+			   var position = info["Position"];
+			   info["Position"] = null;
+			   info["MyPosition"] = position;
+			   base.SerializeNode(node, info);
+		}	
+			
+	#### __VB.NET__
+		public Overrides Sub SerializeNode(node As NodeViewModelBase, info As SerializationInfo)
+			Dim position = info("Position")
+			info("Position") = Nothing
+			info("MyPosition") = position
+			MyBase.SerializeNode(node, info)
+		End Sub
+
+* Override the __DeserializeNode()__ method of the diagram’s __GraphSource__ and get the value of the bound property. Then assign it to the property of the view model.
+	#### __C#__
+		public override NodeViewModelBase DeserializeNode(IShape shape, Telerik.Windows.Diagrams.Core.SerializationInfo info)
+		{
+			var node = base.DeserializeNode(shape, info);
+			if (info["MyPosition"] != null)
+			{
+				 var position = Utils.ToPoint(info["MyPosition"].ToString());
+			 node.Position = position.Value;
+			}
+			return node;
+		}
+		
+	#### __VB.NET__
+		Public Overrides Function DeserializeNode(shape As IShape, info As Telerik.Windows.Diagrams.Core.SerializationInfo) As NodeViewModelBase
+			Dim node = MyBase.DeserializeNode(shape, info)
+			If info("MyPosition") IsNot Nothing Then
+				Dim position = Utils.ToPoint(info("MyPosition").ToString())
+				node.Position = position.Value
+			End If
+		Return node
+End Function
+		
+> The code snippets above demonstrate how to preserve the bindings in an __MVVM__ scenario with a custom __GraphSource__. If you have statically declared shapes you can use the __ShapeSerialized__ and __ShapeDeserialized__ events of the diagram.
 
 # See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

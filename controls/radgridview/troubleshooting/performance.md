@@ -77,6 +77,8 @@ You can also refer to the documentation on [Implicit Styles and NoXaml binaries]
         
 >As of __2013 Q2 SP__ we introduced __Lightweight Templates__ for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%}).
 
+>tipYou can also find the blog post on [How To Boost RadGridView Performance for WPF and Silverlight Using Lightweight templates](http://www.telerik.com/blogs/how-to-boost-radgridview-performance-for-wpf-and-silverlight-using-lightweight-templates).
+
 # See Also
 
  * [Tips and Tricks]({%slug radgridview-performance-tips-tricks%})

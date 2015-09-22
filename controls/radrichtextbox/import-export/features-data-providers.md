@@ -84,7 +84,7 @@ The purpose of this topic is to show you how to use the __DataProviders__ in __D
 
 ## Binding the provider to other UI Elements
 
-In the following example two simple UI controls are used - a plain __RadRichTextBox__ and a __TextBox__, which will display the document as a XAML text. The main functionality is contained in the __XamlDataProvider__ class. It's attached to the __RadRichTextBox__ and its __Xaml__ property is data bound to the __TextBox's____Text__ property.
+In the following example two simple UI controls are used - a plain __RadRichTextBox__ and a __TextBox__, which will display the document as a XAML text. The main functionality is contained in the __XamlDataProvider__ class. It's attached to the __RadRichTextBox__ and its __Xaml__ property is data bound to the __TextBox's Text__ property.
         
 
 #### __XAML__

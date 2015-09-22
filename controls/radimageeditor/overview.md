@@ -50,12 +50,25 @@ For import:
 
 * PNG; 
 
-* BMP. 
+* BMP;
+
+* TIFF;
+
+* GIF;
+
+* ICO.
 
 For export: 
 
+* JPEG;
+
 * PNG; 
 
-* BMP. 
+* BMP;
+ 
+* TIFF;
+
+* GIF.
+
 
 __RadImageEditor__ is highly extensible, so you can implement and utilize additional image editing tools, as well as import and export in other formats. 

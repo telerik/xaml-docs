@@ -56,11 +56,6 @@ This property specifies if the document should be encrypted. The default value i
 __UserPassword__
 
 The password to be used if the document is encrypted. The default password is empty string.
-        
-
-__ImageQuality__
-
-The ImageQuality property specifies the quality with which images are exported to PDF. The higher the quality, the bigger the PDF document. Possible values for this property are High, Medium, and Low. The default quality is Medium.
 
 __ComplianceLevel__
 
@@ -85,7 +80,6 @@ __Example 2__ shows ow you can create a __PdfExportSettings__ object and assign 
     PdfExportSettings settings = new PdfExportSettings();
     settings.IsEncrypted = true;
     settings.UserPassword = "D0cum3ntP4ssw0rd";
-    settings.ImageQuality = ImageQuality.High;
     settings.ComplianceLevel = PdfComplianceLevel.PdfA2B;
 
     provider.ExportSettings = settings;

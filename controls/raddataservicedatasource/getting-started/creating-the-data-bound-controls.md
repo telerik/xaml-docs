@@ -5,7 +5,7 @@ description: Creating the Data-bound Controls
 slug: raddataservicedatasource-getting-started-creating-the-data-bound-controls
 tags: creating,the,data-bound,controls
 published: True
-position: 2
+position: 3
 ---
 
 # Creating the Data-bound Controls

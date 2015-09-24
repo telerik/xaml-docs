@@ -10,7 +10,7 @@ position: 8
 
 # Keyboard Support
 
-__RadRibbonView__ provides a keyboard navigation mechanisms using key tips. You can enable this feature by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadRibbonView__ control to __True__.
+__RadRibbonView__ provides a keyboard navigation mechanisms using key tips{% if site.site_name == 'WPF' %} and the arrow keys{% endif %}. You can enable this feature by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadRibbonView__ control to __True__.
 
 #### __XAML__
 {{region radribbonview-keyboard-support_0}}
@@ -32,13 +32,28 @@ You can attach a *key tip* text to every component in the __RadRibbonView__ usin
     </telerik:RadRibbonView>
 {{endregion}}
 
+{% if site.site_name == 'WPF' %}
+Enabling the keytip service also activates the __arrow keys navigation__. Pressing the __left__, __right__, __up__ or __down__ arrow will change the currently hightlighted item. Also, the Enter/Space keys activates the current element which is highlighted by the KeyboardNavigation.
+>When you start navigating with the arrows, the key tips will be hidden. Navigating with the arrow keys will handle the appropriate KeyUp/Down/PreviewDown events fired for the RadRibbonView
+
+<!-- -->
+
+>We recommend to avoid using the arrow navigation with ContextMenu because internally it captures the mouse and executes its own navigation between its children. Instead of ContextMenu we suggest using Menu element.
+{% endif %}
+
 ### KeyTipService class properties
 
-The __KeyTipsService__ class allows you to enable/disable key tips for the __RadRibbonView__ control. It exposes the following properties that allow you to customize the key tips:
+The __KeyTipsService__ class allows you to enable/disable key tips for the __RadRibbonView__ control. It exposes the following properties that allow you to customize the keyboard navigation:
+{% if site.site_name == 'WPF' %}
+* __ActivationMode__: Gets/sets the the predefined event on which the KeyTips and KeyboardNavigation are executed. The property is of type __Telerik.Windows.Controls.RibbonView.KeyTips.ActivationMode__ enum and exposes the following options:
+	* __PreviewKeyDown__: The keyboard navigation is activated when the PreviewKeyDown event of RadRibbonView is fired
+	* __KeyDown__: The keyboard navigation is activated when the KeyDown event is fired
+	* __KeyUp__ (default value): The keyboard navigation is activated when the KeyUp event is fired
+{% endif %}
 
-* __AccessText:__ Gets/sets the key tip activation text			
+* __AccessText:__ Gets/sets the key tip activation text  
 
-* __AltAccessText:__ Gets/sets alternative key tip activation text			
+* __AltAccessText:__ Gets/sets alternative key tip activation text. This property is applicable only to the RadRibbonGroup and affects the DialogLauncherCommand.
 
 * __AccessKey:__ Gets/sets the combination of keys to be used for displaying the key tips. By default the key tips are displayed by pressing {% if site.site_name == 'Silverlight' %}CTRL+Q{% endif %}{% if site.site_name == 'WPF' %}ALT{% endif %}. This property should be defined in the __RadRibbonView__ definition:			
 
@@ -58,7 +73,7 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 
 	>If both __AcessKey__ and __AccessKeys__ properties are set, the value of the __AcessKey__ property will be ignored.You can download a runnable project demonstrating how to take advantage of the __KeyTipService.AccessKeys__ property from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to RibbonView/MultipleAccessKeys-KeyTips.
 
-* __Activation:__ Used to define additional logic that can be implemented when using a key tip:
+* __Activation:__ Used to define additional logic that can be implemented when using the keyboard navigation:
 
 	#### __XAML__
 	{{region radribbonview-keyboard-support_3}}
@@ -145,7 +160,12 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
     </telerik:RadRibbonView>
 {{endregion}}
 
+{% if site.site_name == 'WPF' %}
+![](images/RibbonView_KeyTips_Sample_updated.png)
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
 ![](images/RibbonView_KeyTips_Sample.png)
+{% endif %}
 
 When a control's key tip is activated, the action associated with the control will be executed:
 
@@ -202,9 +222,10 @@ The key tips are themeable and any built-in Telerik theme can be applied to them
     </Style>
 {{endregion}}
 
+{% if site.site_name == 'WPF' %}>important Each RadRibbonView control (as RadRibbonButton, RadRibbonTab, etc.) implements a [VisualStateGroup](https://msdn.microsoft.com/en-us/library/system.windows.visualstategroup(v=vs.110).aspx) with x:Name set to *"KeyboardNavigationStates"* in its ControlTemplate. When an element should be highlighted by the arrow navigation it goes into this state group. All controls that does not implement that VisuaState goes into *"MouseOver"* state. If you want to use the default highlighting on non-ribbonview controls you can customize their template by adding the "KeyboardNavigationStates" visual state group and the "KeyboardFocused" and "KeyboardUnfocused" [VisualStates](https://msdn.microsoft.com/en-us/library/system.windows.visualstatemanager(v=vs.110).aspx).
+{% endif %}
 >The __Telerik_Windows_Controls_RibbonView_KeyTips__ namespace definition is: 
 >`xmlns:Telerik_Windows_Controls_RibbonView_KeyTips="clr-namespace:Telerik.Windows.Controls.RibbonView.KeyTips;assembly=Telerik.Windows.Controls.RibbonView"`
-
 
 # See Also
  * [Overview]({%slug radribbonview-buttons-overview%})

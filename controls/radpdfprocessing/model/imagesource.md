@@ -53,6 +53,16 @@ __Example 2__ demonstrates how you can create an __ImageSource__ using the __Enc
 	EncodedImageData imageData = new EncodedImageData(imageBytes, 8, 655, 983, ColorSpaceNames.DeviceRgb, new string[] { PdfFilterNames.DCTDecode });
 {{endregion}}
 
+## Properties
+
+The properties, exposed by the **ImageSource** class are as follows:
+
+* **Width**: Gets the width of the image.
+
+* **Height**: Gets the height of the image.
+
+* **DecodeArray**: Gets or sets the decode array, which specifies a linear mapping of each component value to a number that would be appropriate as a component value in the color space of the image. It could be used to manipulate the tones of the image, depending on its color space.
+
 ## Methods
 
 The ImageSource class exposes two methods, which could help you to get the data from the ImageSource object.
@@ -84,3 +94,5 @@ __RadPdfProcessing__ exposes an extension method allowing to convert every Bitma
 # See Also
 
  * [Image]({%slug radpdfprocessing-model-image%})
+
+ * [ImageSource API Reference](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_Resources_ImageSource.htm)

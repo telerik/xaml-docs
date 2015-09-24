@@ -10,14 +10,14 @@ position: 2
 
 # TrackBall
 
-Along with [tooltip]({%slug radchartview-features-tooltip%}) and [pan/zoom]({%slug radchartview-features-panzoom%}) behaviors, RadChartView provides a trackball behavior through the __ChartTrackballBehavior__ class. This behavior can display a vertical line across the chart plot area and also to display little visual indicators (circles by default) at points where the trackball line crosses the visualization of a series object. For example when the trackball line crosses a line series line segment, a small circle is drawn highlighting the value of the series at this point.
+Along with [tooltip]({%slug radchartview-features-tooltip%}) and [pan/zoom]({%slug radchartview-features-panzoom%}) behaviors, RadChartView provides a trackball behavior through the __ChartTrackballBehavior__ class. This behavior can display a vertical line across the chart plot area and it can display little visual indicators (circles by default) at points where the trackball line crosses the visualization of a series object. For example, when the trackball line crosses a line series line segment, a small circle is drawn highlighting the value of the series at this point.
 
 ![Rad Chart View-chart behaviors trackball](images/radchartview-chart_behaviors_trackballinfo_00.png)
 
-The last capability of the the trackball behavior is to display a small popup, similar to the tooltip, in order to provide more detailed information about the closest points to the track ball line's cross section, as can be seen in the screenshot above.
+The trackball behavior can also display a small popup, similar to the tooltip, in order to provide more detailed information about the closest points to the trackball line's cross section, as can be seen in the screenshot above.
 
-The ChartTrackballBehavior exposes three properties and an event. These are __ShowTrackInfo__, __ShowIntersectionPoints__, __SnapMode__ and the event is called __TrackInfoUpdated__. ShowTrackInfo and ShowIntersectionPoints enable and disable the popup and the intersection circles respectively. It is important to note that the intersection points can be visually modified by ChartSeries' __TrackBallTemplate__ property and can therefore have an arbitrary visualization. The track info can also be specified as a different template and this can be done with ChartSeries' __TrackInfoTemplate__ property. Below is an example of how to modify the track ball and track info templates. The color of the track ball line can be modified via RadChartView's __TrackBallLineStyle__ property. It is of type Style and it must target the PolyLine class because the trackball behavior uses a PolyLine internally.
-
+The ChartTrackballBehavior exposes three properties and an event. These properties are __ShowTrackInfo__, __ShowIntersectionPoints__, __SnapMode__ and the event is called __TrackInfoUpdated__. ShowTrackInfo and ShowIntersectionPoints enable and disable the popup and the intersection circles respectively. Note that the intersection points can be visually modified by the ChartSeries __TrackBallTemplate__ property and can therefore have an arbitrary visualization. The track info can also be specified as a different template and this can be done with ChartSeries' __TrackInfoTemplate__ property. The code example below shows how to modify the trackball and track info templates. The color of the track ballline can be modified via RadChartView's __TrackBallLineStyle__ property. It is of type Style and it must target the PolyLine class because the trackball behavior uses a PolyLine internally.
+(COMMENT: In the previous paragraph, should it be TrackInfo templates or track info templates?)
 ## Specifying a custom TrackBallTemplate
 
 #### __XAML__
@@ -83,7 +83,7 @@ The ChartTrackballBehavior exposes three properties and an event. These are __Sh
 
 ## Snap Mode
 
-The __SnapMode__ property of ChartTrackballBehavior determines how the trackball line will be snapped to the chart's data points. Valid property values are __None__, __ClosestPoint__ and __AllClosestPoints__ with None disabling snapping, ClosestPoint snapping to the closest point of all data points in the chart and AllClosestPoints snapping to the closest point from each series object in the chart, that is, it snaps to multiple data points at once. Again, a few screenshots will best describe the different values of SnapMode:
+The __SnapMode__ property of ChartTrackballBehavior determines how the trackball line will be snapped to the chart's data points. Valid property values are __None__, __ClosestPoint__ and __AllClosestPoints__ with None disabling snapping, ClosestPoint snapping to the closest point of all data points in the chart and AllClosestPoints snapping to the closest point from each series object in the chart. That is, AllClosestPoints snaps to multiple data points at once. A few screenshots will best describe the different values of SnapMode:
 
 __SnapMode: None__
 ![](images/radchartview-chart_behaviors_trackballinfo_03.png)
@@ -96,7 +96,7 @@ __SnapMode: AllClosestPoints__
 
 ## TrackInfoUpdated
 
-ChartTrackballBehavior provides __TrackInfoUpdated__ event which fires as the users drag their finger across the chart plot area. On every drag event TrackInfoUpdated's event arguments provide information related to the current position of the trackball which is the same ChartDataContext that is provided for the tooltip. The event arguments provide the closest data point for each series in the chart as well as the absolute closest data point. Another property of the event arguments is the Header property (of type object) which allows users to directly specify a header for the track info popup. Here is an example usage of TrackInfoUpdatedEvent:
+ChartTrackballBehavior provides a __TrackInfoUpdated__ event that fires as the users drag their finger across the chart plot area. On every drag event, TrackInfoUpdated's event arguments provide information related to the current position of the trackball, which is the same ChartDataContext that is provided for the tooltip. The event arguments provide the closest data point for each series in the chart as well as the absolute closest data point. Another property of the event arguments is the Header property (of type object), which allows users to directly specify a header for the track info popup. The following example shows how to use TrackInfoUpdatedEvent:  (COMMENT: Shouldn't the last word be TrackInfoUpdated event?)
 
 #### __XAML__
 {{region radchart-features-trackball_2}}
@@ -181,9 +181,9 @@ ChartTrackballBehavior provides __TrackInfoUpdated__ event which fires as the us
 
 ## Update the TrackBall position
 
-ChartTrackBallBehavior exposes __Position__ property that can be used to manually change the position of the trackball. The property accepts a value of type __Sytem.Windows.Point__. Setting the Position will display and snap the trackball to the data points which are plotted closest to the set position. The position is defined in pixels relative to the chart. 
+ChartTrackBallBehavior exposes the __Position__ property that can be used to manually change the position of the trackball. The property accepts a value of type __Sytem.Windows.Point__. Setting the Position will display and snap the trackball to the data points that are plotted closest to the set position. The position is defined in pixels relative to the chart. 
 
-For example, if the chart is 500px wide and 300px height, and the Position property is set to new Point(250, 150) the trackball will be placed to the data points plotted closest to the 250th horizontal and 150th vertical pixels of the chart.
+For example, if the chart is 500px wide and 300px high, and the Position property is set to new Point(250, 150) the trackball will be placed at the data points plotted closest to the 250th horizontal and 150th vertical pixels of the chart.
 
 #### __C#__
 	trackballBehavior.Position = new Point(250, 150);
@@ -191,7 +191,7 @@ For example, if the chart is 500px wide and 300px height, and the Position prope
 #### __VB.NET__	
 	trackballBehavior.Position = New Point(250, 150)
 
-This behavior also provides __PositionChanging__ event which is called on each change of the Position property. The event arguments expose couple helpful properties:
+This behavior also provides the __PositionChanging__ event which is called on each change of the Position property. The event arguments expose a couple of helpful properties:
 * __PreviousPosition__: Gets the previous position of the trackball.
 * __NewPosition__: Gets or sets the new position of the trackball.
 

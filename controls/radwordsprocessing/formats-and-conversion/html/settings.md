@@ -10,10 +10,15 @@ position: 4
 
 # Settings
 
-
-
 __HtmlFormatProvider__ allows for import of HTML documents and respectively export of RadFlowDocument to HTML. Additionally, the import/export settings provide modification options. This article outlines the available settings.
       
+
+* [Import Settings](#import-settings)
+
+* [UriImageSource Class](#uriimagesource-class)
+
+* [Export Settings](#export-settings)
+
 
 ## Import Settings
 
@@ -71,9 +76,9 @@ __Example 1__ shows how you can create and apply specific import settings.
 
 > With Q3 2015 the __UriImageSource__ class has been introduced and it is not necessary to subscribe to the LoadFromUri event when you want to import an image with URI.
 
-## UriImageSource 
+## UriImageSource Class
 
-This class is used to create an image with a source defined as URI. The image data will be downloaded on demand. **UriImageSource** exposes the following properties:
+When importing HTML, which contains images with URI source, the **HtmlFormatProvider** will create an **UriImageSource** object for each of these images. The image data will be downloaded on demand. **UriImageSource** exposes the following properties:
 
 * __Uri__: Gets the URI of the image.
 
@@ -81,7 +86,22 @@ This class is used to create an image with a source defined as URI. The image da
 
 * __Extension__: Gets the extension. Accessing this property will download the image data only if the extension is not predefined.
 
-> Exporting an UriImageSource object to other supported formats will download the image and save it according to the used format specification.
+> Exporting an **UriImageSource** object to other supported formats will download the image and save it according to the used format specification.
+
+### Converting UriImageSource to ImageSource
+
+The **UriImageSource** objects are always exported as images with URI as their source independently of the export settings. In case you need to export this object as an embedded or external image, you could convert the **UriImageSource** to **ImageSource** object. 
+
+#### __[C#] Example 2: Convert UriImageSource to ImageSource__
+
+{{region radwordsprocessing-formats-and-conversion-html-settings_2}}
+
+	UriImageSource uriImageSource = imageInline.Image.ImageSource as UriImageSource;
+	if (uriImageSource != null)
+	{
+	    imageInline.Image.ImageSource = new ImageSource(uriImageSource.Data, uriImageSource.Extension);
+	}
+{{endregion}}
 
 ## Export Settings
 
@@ -113,7 +133,7 @@ Specifies whether the exported document should be indented (formatted with space
 
 This property is used to control how images are exported. The available options are as external file or as embedded images.
             
-> When an image with Uri source is imported it is always exported with URI and the __ImagesExportMode__ property is not respected. If you need to respect this property you could convert the ImageSource property of the __Image__ to __ImageSource__.
+> When an image with Uri source is imported, the ImageSource property of the Image contains object of type UriImageSource. Hence, the image is always exported with URI and the __ImagesExportMode__ property is not respected. If you need this property to be respected, you could convert the **UriImageSource** object to __ImageSource__.
 
 ### ImagesFolderPath
 
@@ -195,7 +215,7 @@ The event is only raised when the __StylesExportMode__ property is set to __Exte
 __Example 2__ demonstrates how you can create export settings.
             
 
-#### __[C#] Example 2: Create HtmlExportSettings__
+#### __[C#] Example 3: Create HtmlExportSettings__
 
 {{region radwordsprocessing-formats-and-conversion-html-settings_1}}
 	HtmlFormatProvider provider = new HtmlFormatProvider();

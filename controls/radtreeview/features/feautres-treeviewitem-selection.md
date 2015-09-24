@@ -94,7 +94,8 @@ The __RadTreeView__ API allows you to change the selection mode of the treeview.
 * __Multiple__ - allows selection of multiple items. Clicking an item selects or deselects it depending on its current state. Also, the previously selected items will preserve their selection state.
 
 * __Extended__ - use that values when you want the user to be able to select multiple items at one time by holding down the __Ctrl__ or __Shift__ keys and clicking multiple items with the mouse or by using the keyboard. A second click on a selected item will unselect that item.
-			  
+
+>important Until Q3 2015 __Multiple__ and __Extended__ SelectionModes worked the same way.  
 
 > There are two __SelectionMode__ enumerations - __'System.Windows.Controls.SelectionMode'__ and  __'Telerik.Windows.Controls.SelectionMode'__ 
 

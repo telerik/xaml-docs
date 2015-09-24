@@ -32,7 +32,7 @@ You can add any element that derives from the UIElement class inside the __Inlin
 >In order to utilize the __InlineUIContainer__, you have to set its __Height__ and __Width__ explicitly (or use the constructor that takes a __Size__ as a parameter). Otherwise, they will not be shown in the document.
           
 
-#### __XAML__
+#### __[XAML] Example 1: Add UI Element to an InlineUIContainer__
 
 {{region radrichtextbox-features-document-elements-inlineuicontainer_0}}
 	<telerik:RadRichTextBox Name="radRichTextBox">
@@ -50,7 +50,7 @@ You can add any element that derives from the UIElement class inside the __Inlin
 
 
 
-#### __C#__
+#### __[C#] Example 1: Add UI Element to an InlineUIContainer__
 
 {{region radrichtextbox-features-document-elements-inlineuicontainer_1}}
 	Section section = new Section();
@@ -66,7 +66,7 @@ You can add any element that derives from the UIElement class inside the __Inlin
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Add UI Element to an InlineUIContainer__
 
 {{region radrichtextbox-features-document-elements-inlineuicontainer_2}}
 	Dim _section As New Section()
@@ -82,9 +82,9 @@ You can add any element that derives from the UIElement class inside the __Inlin
 
 
 
-Here is a more complex example, which demonstrates how to implement a Button that inserts a MediaElement inside the RadRichTextBox's documents.
+__Example 2__ is a more complex example, which demonstrates how to implement a Button that inserts a MediaElement inside the __RadRichTextBox__'s document.
 
-#### __C#__
+#### __[C#] Example 2: Add MediaElement on Button Click__
 
 {{region radrichtextbox-features-document-elements-inlineuicontainer_3}}
 	private static Size defaultSize = new Size(900, 400);
@@ -121,7 +121,7 @@ Here is a more complex example, which demonstrates how to implement a Button tha
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Add MediaElement on Button Click__
 
 {{region radrichtextbox-features-document-elements-inlineuicontainer_4}}
 	Private Shared defaultSize As New Size(900, 400)
@@ -158,37 +158,43 @@ Most features that __RadRichTextBox__ provides are also supported in the format 
 >tipFor more information on Import/Export, please refer to [this topic]({%slug radrichtextbox-features-import-export%}).
           
 
-However, as the UIElement class is a Silverlight specific concept, some format providers support them in a non-standard way and others do not support them at all.
+However, as the UIElement class is a {% if site.site_name == 'WPF' %} WPF {% endif %} {% if site.site_name == 'Silverlight' %} Silverlight {% endif %} specific concept, some format providers support them in a non-standard way and others do not support them at all.
 
 ### Exporting InlineUIContainers:
 
 Different approaches have been adopted when it comes to exporting inline UI containers via the format providers:
 
-* __XamlFormatProvider__ - inline UI containers are serialized as expected, thus ensuring lossless export in simple cases, eg. when a button is in the container. Custom attached properties may not be exported.
+* __XamlFormatProvider__: Inline UI containers are serialized as expected, thus ensuring lossless export in simple cases, e.g. when a button is in the container. Custom attached properties may not be exported.
             
 
-* __HtmlFormatProvider__ - the inline UI containers are serialized as XAML and are included in the HTML as comments. If the user handles the __InlineUIContainerExporting__ event, they can provide their own implementation for the export of the UI elements by accessing the properties of the __InlineUIContainerExportingEventArgs__ and setting the ones they need. The __CommentContent__ contains the XAML serialization and the __HtmlContent__ string property can be set to the desired user-defined HTML equivalent of the UI element. It will appear when the page is rendered outside __RadRichTextBox__. The UI element can also be omitted from the document altogether.
-* <br/> ![](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_01.png)
+* __HtmlFormatProvider__: The inline UI containers are serialized as XAML and are included in the HTML as comments. If the user handles the __InlineUIContainerExporting__ event, they can provide their own implementation for the export of the UI elements by accessing the properties of the __InlineUIContainerExportingEventArgs__ and setting the ones they need. The __CommentContent__ contains the XAML serialization and the __HtmlContent__ string property can be set to the desired user-defined HTML equivalent of the UI element. It will appear when the page is rendered outside __RadRichTextBox__. The UI element can also be omitted from the document altogether.
 
-* __DocxFormatProvider__ - all __InlineUIContainers__ are ignored as the Microsoft Word concept of controls is quite different.
+![](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_01.png)
+
+* __DocxFormatProvider__: All __InlineUIContainers__ are ignored as the Microsoft Word concept of controls is quite different.
             
 
-* __PdfFormatProvider__ - the __InlineUIContainers__ are taken a snapshot of and included in the export. If you like, you can prevent that by setting the __InlineUIContainersExportMode__property fo the provider to __None__.
-* <br/>![](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_02.png)
+* __PdfFormatProvider__: The __InlineUIContainers__ are taken a snapshot of and included in the export. If you like, you can prevent that by setting the __InlineUIContainersExportMode__ property of the provider to __None__.
+
+![](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_02.png)
 
 ### Importing InlineUIContainers
 
 There are some differences between the format providers when it comes to importing __InlineUIContainers__, too.
         
 
-* __XamlFormatProvider__ – all inline UI containers are deserialized and imported.
+* __XamlFormatProvider__: All inline UI containers are deserialized and imported.
             
 
-* __DocxFormatProvider__ – there cannot be any inline UI containers in a DOCX, as they are not exported in the first place.
+* __DocxFormatProvider__: There cannot be any inline UI containers in a DOCX, as they are not exported in the first place.
             
 
-* __PdfFormatProvider__ – PDF import is currently not supported.
+* __PdfFormatProvider__: PDF import is currently not supported.
             
+# See Also
 
-* __HtmlFormatProvider__ – there is a property of the HtmlFormatProvider class called __HtmlImportSettings__, which provides two events – __InlineUIContainerImporting__ and __InlineUIContainerImported__. The __EventArgs__ of these events have the same properties, as the ones that the __InlineUIContainerExporting__ event of __HtmlExportSettings__ has. Thus, even if you have not implemented custom export of inline UI containers, you can process the XAML comments on import and provide your own logic to create the serialized objects, set their properties and insert them in the __Document__.
-            
+* [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
+
+* [Section]({%slug radrichtextbox-features-document-elements-section%})
+
+* [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})

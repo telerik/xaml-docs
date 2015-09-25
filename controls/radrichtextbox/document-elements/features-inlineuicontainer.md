@@ -175,8 +175,7 @@ Different approaches have been adopted when it comes to exporting inline UI cont
             
 
 * __PdfFormatProvider__: The __InlineUIContainers__ are taken a snapshot of and included in the export. If you like, you can prevent that by setting the __InlineUIContainersExportMode__ property of the provider to __None__.
-
-![](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_02.png)
+	![](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_02.png)
 
 ### Importing InlineUIContainers
 

@@ -12,7 +12,7 @@ position: 1
 
 With **RadWordsProcessing**, you have the ability to insert a document into another document at specified position. 
 
-## Inserting documents at a specific position
+## Inserting Documents at a Specific Position
 
 You could merge documents at a specific position using the InsertDocument() method of the [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}) class. When called, this method inserts the source document at the current editor position. 
 

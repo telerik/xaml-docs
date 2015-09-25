@@ -62,6 +62,7 @@ controls/radgridview/features/merged-cells.md,
 controls/radpivotgrid/features/queryabledataprovider,
 controls/radwordsprocessing,
 controls/raddesktopalert,
+controls/radtimespanpicker,
 visual-studio-templates.md,
 consuming-data/wcf-service.md,
 controls/radziplibrary/features/zip-extensions.md]

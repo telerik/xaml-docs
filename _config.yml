@@ -126,6 +126,8 @@ navigation:
         title: RadScheduleView
     controls/radtimepicker:
         title: RadTimePicker
+    controls/radtimespanpicker:
+        title: RadTimeSpanPicker
     controls/radtransitioncontrol:
         title: RadTransitionControl
     controls/radwatermarktextbox:

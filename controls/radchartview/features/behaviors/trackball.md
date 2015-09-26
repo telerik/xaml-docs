@@ -16,7 +16,7 @@ Along with [tooltip]({%slug radchartview-features-tooltip%}) and [pan/zoom]({%sl
 
 The trackball behavior can also display a small popup, similar to the tooltip, in order to provide more detailed information about the closest points to the trackball line's cross section, as can be seen in the screenshot above.
 
-The ChartTrackballBehavior exposes three properties and an event. These properties are __ShowTrackInfo__, __ShowIntersectionPoints__, __SnapMode__ and the event is called __TrackInfoUpdated__. ShowTrackInfo and ShowIntersectionPoints enable and disable the popup and the intersection circles respectively. Note that the intersection points can be visually modified by the ChartSeries __TrackBallTemplate__ property and can therefore have an arbitrary visualization. The track info can also be specified as a different template and this can be done with ChartSeries' __TrackInfoTemplate__ property. The code example below shows how to modify the trackball and track info templates. The color of the trackball line can be modified via RadChartView's __TrackBallLineStyle__ property. It is of type Style and it must target the PolyLine class because the trackball behavior uses a PolyLine internally.
+The ChartTrackballBehavior exposes three properties and an event. These properties are __ShowTrackInfo__, __ShowIntersectionPoints__, __SnapMode__ and the event is called __TrackInfoUpdated__. ShowTrackInfo and ShowIntersectionPoints enable and disable the popup and the intersection circles respectively. Note that the intersection points can be visually modified by the ChartSeries __TrackBallTemplate__ property and can therefore have an arbitrary visualization. The track info can also be specified as a different template using the ChartSeries' __TrackInfoTemplate__ property. The code example below shows how to modify the trackball and track info templates. You can modify the color of the trackball line using the RadChartView's __TrackBallLineStyle__ property. It is of type Style and it must target the PolyLine class because the trackball behavior uses a PolyLine internally.
 (COMMENT: In the previous paragraph, should it be TrackInfo templates or track info templates?)
 ## Specifying a custom TrackBallTemplate
 
@@ -83,7 +83,7 @@ The ChartTrackballBehavior exposes three properties and an event. These properti
 
 ## Snap Mode
 
-The __SnapMode__ property of ChartTrackballBehavior determines how the trackball line will be snapped to the chart's data points. Valid property values are __None__, __ClosestPoint__ and __AllClosestPoints__ with None disabling snapping, ClosestPoint snapping to the closest point of all data points in the chart and AllClosestPoints snapping to the closest point from each series object in the chart. That is, AllClosestPoints snaps to multiple data points at once. A few screenshots will best describe the different values of SnapMode:
+The __SnapMode__ property of ChartTrackballBehavior determines how the trackball line will be snapped to the chart's data points. Valid property values are __None__, __ClosestPoint__ and __AllClosestPoints__ with None disabling snapping, ClosestPoint snapping to the closest point of all data points in the chart, and AllClosestPoints snapping to the closest point from each series object in the chart. That is, AllClosestPoints snaps to multiple data points at once. A few screenshots will best describe the different values of SnapMode (COMMENT: Is Snap Mode one word or two? In the heading for this section you use two words but at the end of this paragraph you use one. The examples below use one. Please pick one and change the others to be consistent):
 
 __SnapMode: None__
 ![](images/radchartview-chart_behaviors_trackballinfo_03.png)
@@ -191,7 +191,7 @@ For example, if the chart is 500px wide and 300px high, and the Position propert
 #### __VB.NET__	
 	trackballBehavior.Position = New Point(250, 150)
 
-This behavior also provides the __PositionChanging__ event which is called on each change of the Position property. The event arguments expose a couple of helpful properties:
+This behavior also provides the __PositionChanging__ event, which is called on each change of the Position property. The event arguments expose a couple of helpful properties:
 * __PreviousPosition__: Gets the previous position of the trackball.
 * __NewPosition__: Gets or sets the new position of the trackball.
 

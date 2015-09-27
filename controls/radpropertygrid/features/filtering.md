@@ -16,9 +16,9 @@ __RadPropertyGrid__ supports filtering through its built-in search TextBox. The 
 
 ## Deferred Filtering
 
-As of __Q3 2015 RadPropertyGrid__ exposes a new property – __EnableDeferredFiltering__. Its default value is __“False”__, and determines that the filtering through the search text box will be performed dynamically. 
+As of __Q3 2015, RadPropertyGrid__ exposes a new property – __EnableDeferredFiltering__. Its default value is __“False”__, and it determines that the filtering through the search text box will be performed dynamically. 
 
-When the property's value is set to __“True”__, the filtering will be executed on __lost focus/enter__ or __tab key__.  
+When __EnableDeferredFiltering__ is set to __“True”__, the filtering will be executed on __lost focus/enter__ or __tab key__.  
 
 #### __[XAML]Example 1: Enabling Deferred Filtering__
 

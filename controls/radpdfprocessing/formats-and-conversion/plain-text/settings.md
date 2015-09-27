@@ -11,7 +11,7 @@ position: 2
 
 # Settings
 
-__TextFormatProvider__ allows for export of __RadFixedDocument__ to txt. Additionally, the export settings provide modification options. The current article outlines the available settings.
+__TextFormatProvider__ allows for export of __RadFixedDocument__ to txt. Additionally, the export settings provide modification options. This article outlines the available settings.
 
 Through the __TextFormatProviderSettings__ class you could specify the following export settings:
 
@@ -29,7 +29,7 @@ The constructor of the **TextFormatProviderSettings** class has two overloads:
 
 * **TextFormatProviderSettings(string linesSeparator, string pagesSeparator)**: Initializes a new instance of the class and sets the specified values for its properties.
 
-**Example 1** shows how to create and specify particular setting.
+**Example 1** shows how to create and specify a particular setting.
 
 #### **[C#] Example 1: Create TextFormatProviderSettings**
 {{region radpdfprocessing-formats-and-conversion-plain-text-settings_0}}

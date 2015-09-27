@@ -10,9 +10,9 @@ position: 5
 
 # DesktopAlertManager
 
-Using __RadDesktopAlertManager__ you could easily visualize and position __RadDesktopAlert__ on the screen. Thanks to __RadDesktopAlertManager__ you could also display multiple alerts on the screen - it takes care to calculate the location of all alerts, so they could not overlap. When an alert gets closed, all other alerts that are currently visualized on the screen get relocated.
+Using __RadDesktopAlertManager__ you could easily visualize and position __RadDesktopAlert__ on the screen. Thanks to __RadDesktopAlertManager__, you could also display multiple alerts on the screen - it will calculate the location of all alerts so they could not overlap. When an alert gets closed, all other alerts that are currently visualized on the screen get relocated.
 
-__RadDesktopAlertManager__ could easily be initialized using one of the following constructors:
+You can initialize __RadDesktopAlertManager__ using one of the following constructors:
 
 #### __[C#] Initializing of RadDesktopAlertManager__
 
@@ -42,7 +42,7 @@ __RadDesktopAlertManager__ could easily be initialized using one of the followin
 	Dim manager = New RadDesktopAlertManager(AlertScreenPosition.BottomCenter, New Point(0, 0), 10)
 {{endregion}}
 
-Except __ScreenPosition__ the __AlertsDistance__ and __ScreenPositionOffset__ could also be initialized using __RadDesktopAlertManager__'s constructors.
+Except __ScreenPosition__ the __AlertsDistance__ and __ScreenPositionOffset__ could also be initialized using __RadDesktopAlertManager__'s constructors. (COMMENT: I think you want to change this to say, "The __AlertsDistance__ and __ScreenPositionOffset__ can be initialized using __RadDesktopAlertManager__'s constructors. However, you cannot use __RadDesktopAlertManager__'s constructors to initialize __ScreenPostion__.")
 
 This article will provide some detailed information about the following properties of __RadDesktopAlertManager__: 
 
@@ -54,7 +54,7 @@ This article will provide some detailed information about the following properti
 
 * [AlertsReorderAnimationDuration](#alertsreorderanimationduration)
 
-and methods:
+and the following methods of __RadDesktopAlertManager__:
 
 * [ShowAlert](#showalert)
 
@@ -66,9 +66,9 @@ and methods:
 
 ## ShowAlert()
 
-In order __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__.
+In order for __RadDesktopAlert__ to be visualized you need to pass it as a parameter to the __ShowAlert__ method of __RadDesktopAlertManager__.
 
-__Example 1__ demonstrates how to visualize __RadDesktopAlert__ by passing it as a parameter to the __ShowAlert__ method:
+__Example 1__ demonstrates how to visualize __RadDesktopAlert__.
 
 #### __[C#] Example 1:  Showing RadDesktopAlert__
 
@@ -95,7 +95,7 @@ __Example 1__ demonstrates how to visualize __RadDesktopAlert__ by passing it as
 	manager.ShowAlert(alert)
 {{endregion}}
 
-By default __RadDesktopAlert__ is shown and closed with an animation. However, there are some cases that you might need to disable these animations. You could easily disable the __ShowAnimation__ by setting to false the second parameter of the __ShowAlert__ method - this feature is introduced with version Q3 2015 release version of UI for WPF:
+By default, __RadDesktopAlert__ is shown and closed with an animation. However, there are some cases when you might need to disable these animations. You could easily disable the __ShowAnimation__ by setting the second parameter of the __ShowAlert__ method to false. Telerik introduced this feature with the Q3 2015 version release of UI for WPF:
 
 #### __[C#]Example 2:  Show RadDesktopAlert without animation__
 
@@ -128,9 +128,9 @@ By default __RadDesktopAlert__ is shown and closed with an animation. However, t
 
 ## ShowAlert() MVVM
 
-__RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This is a class that holds all parameters that you need to customize __RadDesktopAlert__ and it is MVVM friendly - it's main idea is for visualization and customization of __RadDesktopAlert__ within MVVM scenarios. 
+__RadDesktopAlert__ could also be visualized by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method. This class that holds all parameters that you need to customize __RadDesktopAlert__ and it is MVVM friendly. It was created to visualize and customize __RadDesktopAlert__ within MVVM scenarios. 
 
-__Example 3__ demonstrates how to display an alert in such MVVM scenario:
+__Example 3__ demonstrates how to display an alert in a MVVM scenario:
 
 #### __[C#]Example 3:  Creating RadDesktopAlert in MVVM__
 
@@ -163,7 +163,7 @@ __Example 3__ demonstrates how to display an alert in such MVVM scenario:
 
 ## CloseAlert() and CloseAllAlerts()
 
-You could easily close __RadDesktopAlert__  in code - behind before its duration has expired using the __CloseAlert__ method of __RadDesktopAlertManager__. The __DesktopAlert__ control you want to close should be passed as a parameter to this method.
+You could close __RadDesktopAlert__  in code behind before its duration has expired using the __CloseAlert__ method of __RadDesktopAlertManager__. The __DesktopAlert__ control you want to close should be passed as a parameter to this method.
 
 __Example 4__ shows how to close __RadDesktopAlert__:
 
@@ -178,9 +178,9 @@ __Example 4__ shows how to close __RadDesktopAlert__:
 	manager.CloseAlert(alert)
 {{endregion}}
 
-Using the __CloseAllAlerts__ method of __RadDesktopAlertManager__ all currently opened __RadDesktopAlerts__ could be closed.
+Using the __CloseAllAlerts__ method of __RadDesktopAlertManager__, all currently opened __RadDesktopAlerts__ could be closed.
 
-__Example 5__ demonstrates how to close all opened __RadDesktopAlerts__:
+__Example 5__ demonstrates how to close all opened __RadDesktopAlerts__:  (COMMENT: This example says it will show how to close all open __RadDesktopAlerts__ but the example shows how to close a single alert, not all alerts. Please explain.)
 
 #### __[C#]Example 5:  Closing single RadDesktopAlert__
 
@@ -193,8 +193,8 @@ __Example 5__ demonstrates how to close all opened __RadDesktopAlerts__:
 {{region raddesktopalert-desktop-alert-manager_4}}
 	manager.CloseAllAlerts()
 {{endregion}}
-
-If you want to close __RadDesktopAlert__ without using an animation you need to pass false as a second parameter for the __CloseAlert__ method and as a first parameter for the __CloseAllAlerts__ method - introduced with version Q3 2015 release version of UI for WPF:
+(COMMENT: I suggest you add a subheading here called Close __RadDesktopAlert__ without Using an Animation)
+If you want to close __RadDesktopAlert__ without using an animation you need to pass false as a second parameter for the __CloseAlert__ method and as a first parameter for the __CloseAllAlerts__ method. Telerik introduced this feature with the Q3 2015 release of UI for WPF:
 
 __Example 6__ demonstrates how to close RadDesktopAlert without using an animation:
 
@@ -214,7 +214,7 @@ __Example 6__ demonstrates how to close RadDesktopAlert without using an animati
 
 ## GetAllAlerts()
 
-You could easily get a collection of all currently opened __RadDesktopAlerts__ using the __GetAllAlerts__ method introduced with Q3 2015 release version of UI for WPF. By calling it an IEnumerable collection with __RadDesktopAlerts__ will be returned.
+You can easily get a collection of all currently opened __RadDesktopAlerts__ using the __GetAllAlerts__ method introduced with the Q3 2015 release of UI for WPF. By calling it an IEnumerable collection with __RadDesktopAlerts__ will be returned. (COMMENT: What is it? GetAllAlerts() or __GetAllAlerts__?)
 
 __Example 7__ shows how to get all __RadDesktopAlert__:
 
@@ -231,9 +231,9 @@ __Example 7__ shows how to get all __RadDesktopAlert__:
 
 ## Show/HideAnimation
 
-Using the Show/HideAnimation properties of __RadDesktopAlertManager__ you could easily apply, create a custom Animation or group animations. That animation should be visualized when __RadDesktopAlert__ gets show or hide from the screen.
+Using the Show/HideAnimation properties of __RadDesktopAlertManager__ you could easily apply, create a custom animation or group animations. (COMMENT: The previous sentence is confusing. I think you create a custom animation or group annimation, and then you show or hide the animation. I don't understand how you apply an animation.) That animation should be visualized when you show or hide a __RadDesktopAlert__ on the screen.
 
-__Example 8__ demonstates how a __FadeAnimation__ could be applied:
+__Example 8__ demonstates how a __FadeAnimation__ could be applied: (COMMENT: I think you mean show, not apply. Please fix in these examples and the text in this section.)
 
 #### __[C#] Example 8: Applying ShowAnimation__
 
@@ -259,11 +259,11 @@ __Example 8__ demonstates how a __FadeAnimation__ could be applied:
 	}
 {{endregion}}
 
->The Show/HideAnimation could easily be disabled by setting it to __null__. If a new Show/HideAnimation is applied during runtime it will affect the next __RadDesktopAlert__ that will be visualized after the apply.
+>You can disable the Show/HideAnimation by setting it to __null__. If a new Show/HideAnimation is applied during runtime it will affect the next __RadDesktopAlert__ that will be visualized after the apply. (COMMENT: Here I am also confused by the term apply. I think you want to say that if you set a Show/HideAnimation to __null__ during runtime it will affect the next __RadDesktopAlert__ that will be shown or hidden.)
 
 ## ScreenPosition
 
-Using the __ScreenPosition__ property you could easily define the position of __RadDesktopAlert__ where you want to be visualized. It accepts a value of type __AlertScreenPosition__. The positions you could choose from are as follows:
+Using the __ScreenPosition__ property you could easily define the position of where you want __RadDesktopAlert__ to be visualized. It accepts a value of type __AlertScreenPosition__. The screen positions you can set are as follows:
 
 * __TopLeft__
 
@@ -281,11 +281,11 @@ Using the __ScreenPosition__ property you could easily define the position of __
 
 ## AlertsDistance
 
-You could easily set the distance between the currently opened on the screen __RadDesktopAlerts__ using the __AlertsDistance__ property of the __RadDesktopAlertManager__. If the property is changed during runtime it will affect immediately the opened __RadDesktopAlerts__ and the distance between them will be changed  according to the newly applied value.
+You could easily set the distance between the currently opene __RadDesktopAlerts__ using the __AlertsDistance__ property of the __RadDesktopAlertManager__. If the property is changed during runtime, it will immediately affect the open __RadDesktopAlerts__ and the distance between them will be changed  according to the newly applied value.
 
 ## AlertsReorderAnimationDuration
 
-With Q3 2015 released version of WPF a brand new property __AlertsReorderAnimationDuration__ was introduce. It is of type integer and represents the amount of milliseconds the animation used for updating the order of all instances of __RadDesktopAlert__.
+Telerik introduced a brand new property called __AlertsReorderAnimationDuration__ with Q3 2015 release version of UI for WPF. It is of type integer and represents the number of milliseconds the animation used for updating the order of all instances of __RadDesktopAlert__. (COMMENT: This sentence does not make sense. I think you mean to say that you use  __AlertsReorderAnimationDuration__ to set the number of milliseconds an animation appears when changing the order of visible __RadDesktopAlert__s.)
 
 #### __[C#]  Setting AlertsReorderAnimationDuration__
 

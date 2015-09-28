@@ -319,6 +319,8 @@ Telerik UI for WPF features the following controls:
 
 * [TimePicker]({%slug radtimepicker-overview%})
 
+* [TimeSpanPicker]({%slug radtimespanpicker-overview%})
+
 * [ToolBar]({%slug radtoolbar-overview%})
 
 * [ToolTip]({%slug radtooltip-overview%})

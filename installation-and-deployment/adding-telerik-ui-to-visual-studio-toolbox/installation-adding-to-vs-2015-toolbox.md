@@ -15,13 +15,13 @@ The following tutorial will show you how to add UI for WPF controls to the Visua
 
 ## Adding UI for WPF to Visual Studio 2015 Toolbox
 
-To manually add Telerik UI for WPF to the Toolbox, follow the steps below:
+To manually add Telerik UI for WPF to the Visual Studio 2015 Toolbox, follow the steps below:
 
 1. Open your application in Visual Studio 2015.
 
 1. Expand the Toolbox (View->Toolbox or use the shortcut Ctrl+Alt+X). 
 
-1. Right mouse button click in the toolbox area and choose "Add Tab" from the context menu.
+1. Right-mouse button click in the toolbox area and choose "Add Tab" from the context menu.
 
 	![Common Installing Adding ToVS 2015 Tool Box 010 WPF](images/Common_InstallingAddingToVS2015ToolBox_01.png)
 
@@ -29,15 +29,15 @@ To manually add Telerik UI for WPF to the Toolbox, follow the steps below:
 
 	![Common Installing Adding ToVS 2015 Tool Box 020 WPF](images/Common_InstallingAddingToVS2015ToolBox_02.png)
 
-1. Select the "UI for WPF" tab in the toolbox. Right mouse button click and select "Choose Items...".
+1. Select the "UI for WPF" tab in the toolbox. Right-mouse click and select "Choose Items...".
 
 	![Common Installing Adding ToVS 2015 Tool Box 030 WPF](images/Common_InstallingAddingToVS2015ToolBox_03.png)
 
-1. In the "Choose Toolbox Items" dialog, go to the "WPF Components" tab and press the "Browse..." button.
+1. In the "Choose Toolbox Items" dialog, go to the "WPF Components" tab and click "Browse...".
 
 	![Common Installing Adding ToVS 2015 Tool Box 040 WPF](images/Common_InstallingAddingToVS2015ToolBox_04.png)
 
-1. Navigate to the folder where the binaries are located. Select the DLL you want to import and press OK or hit Enter.
+1. Navigate to the folder where the binaries are located. Select the DLL you want to import and click OK or press Enter.
 
 	![Common Installing Adding ToVS 2015 Tool Box 050 WPF](images/Common_InstallingAddingToVS2015ToolBox_05.png)
 
@@ -47,11 +47,11 @@ To manually add Telerik UI for WPF to the Toolbox, follow the steps below:
 
 	![Common Installing Adding ToVS 2015 Tool Box 060 WPF](images/Common_InstallingAddingToVS2015ToolBox_06.png)
 
-1. Again expand your toolbox. You will see the newly added controls in the "UI for WPF" section.
+1. Expand your toolbox. You will see the newly added controls in the "UI for WPF" section.
 
 	![Common Installing Adding ToVS 2015 Tool Box 070 WPF](images/Common_InstallingAddingToVS2015ToolBox_07.png)
 
->After pressing the OK button of the "Choose Toolbox Items", it is possible the "UI for WPF" tab in the toolbox to be __hidden__. If so, press the right mouse button over the Toolbox area and select the __Show All__ command.
+>After clicking the OK button of the "Choose Toolbox Items", it is possible that the "UI for WPF" tab in the toolbox may be __hidden__. If that happens, move the mouse pointer over the Toolbox area and right-click the mouse and then select the __Show All__ command from the shortcut menu.
 >
 >![Common Installing Adding ToVS 2015 Tool Box 080 WPF](images/Common_InstallingAddingToVS2015ToolBox_08.png)
 

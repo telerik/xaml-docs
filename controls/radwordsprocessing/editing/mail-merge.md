@@ -5,7 +5,7 @@ description: Mail Merge
 slug: radwordsprocessing-editing-mail-merge
 tags: mail,merge
 published: True
-position: 2
+position: 4
 ---
 
 # Mail Merge

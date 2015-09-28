@@ -10,19 +10,24 @@ position: 4
 
 # Settings
 
-
-
-__HtmlFormatProvider__ allows for import of HTML documents and respectively export of RadFlowDocument to HTML. Additionally, the import/export settings provide modification options. This article outlines the available settings.
+__HtmlFormatProvider__ allows you to import HTML documents and to export a RadFlowDocument to HTML. Additionally, the import/export settings provide modification options. This article outlines the available settings.
       
+
+* [Import Settings](#import-settings)
+
+* [UriImageSource Class](#uriimagesource-class)
+
+* [Export Settings](#export-settings)
+
 
 ## Import Settings
 
-The import settings are represented by the __HtmlImportSettings__ class. The options which you can specify are as follows:
+The import settings are represented by the __HtmlImportSettings__ class. The options that you can specify are as follows:
         
 
 ### DefaultStyleSheet
 
-The property specifies the default style sheet which should be used. This is equivalent to the browser's "user agents style defaults", and specifies the formatting that should be applied by default to the elements (before all styles explicitly defined in the document).
+The property specifies the default style sheet that should be used. This is equivalent to the browser's "user agents style defaults" and specifies the formatting that should be applied by default to the elements (before all styles explicitly defined in the document).
             
 
 The default value, for example, specifies that "b" elements should be imported with "font-weight: bold".
@@ -69,11 +74,38 @@ __Example 1__ shows how you can create and apply specific import settings.
     provider.ImportSettings = importSettings;
 {{endregion}}
 
+> With Q3 2015 the __UriImageSource__ class has been introduced and it is not necessary to subscribe to the LoadFromUri event when you want to import an image with URI. 
 
+## UriImageSource Class
+
+When importing HTML, which contains images with URI source, the **HtmlFormatProvider** will create an **UriImageSource** object for each of these images. The image data will be downloaded on demand. **UriImageSource** exposes the following properties:
+
+* __Uri__: Gets the URI of the image.
+
+* __Data__: Gets a byte[], which represents the data of the image. Accessing this property will download the image data.
+
+* __Extension__: Gets the extension. Accessing this property will download the image data only if the extension is not predefined.
+
+> Exporting an **UriImageSource** object to other supported formats will download the image and save it according to the used format specification.
+
+### Converting UriImageSource to ImageSource
+
+The **UriImageSource** objects are always exported as images with URI as their source independently of the export settings. If you need to export this object as an embedded or external image, you could convert the **UriImageSource** to **ImageSource** object. 
+
+#### __[C#] Example 2: Convert UriImageSource to ImageSource__
+
+{{region radwordsprocessing-formats-and-conversion-html-settings_2}}
+
+	UriImageSource uriImageSource = imageInline.Image.ImageSource as UriImageSource;
+	if (uriImageSource != null)
+	{
+	    imageInline.Image.ImageSource = new ImageSource(uriImageSource.Data, uriImageSource.Extension);
+	}
+{{endregion}}
 
 ## Export Settings
 
-The export settings are represented by the __HtmlExportSettings__ class. The settings which you can specify are as follows:
+The export settings are represented by the __HtmlExportSettings__ class. The settings that you can specify are as follows:
         
 
 ### BordersMinimalThickness
@@ -101,6 +133,7 @@ Specifies whether the exported document should be indented (formatted with space
 
 This property is used to control how images are exported. The available options are as external file or as embedded images.
             
+> When an image with Uri source is imported, the ImageSource property of the Image contains object of type UriImageSource. Hence, the image is always exported with URI and the __ImagesExportMode__ property is not respected. If you need this property to be respected, you could convert the **UriImageSource** object to __ImageSource__.
 
 ### ImagesFolderPath
 
@@ -116,20 +149,20 @@ Specifies the base path for the "src" attribute of the exported image tags. This
 
 The event is raised for every image in the document. The event argument exposes the following options:
             
-* __Title__: Allows to set the _title_ attribute of the _image_ element.
+* __Title__: Allows you to set the _title_ attribute of the _image_ element.
 
 * __AlternativeText__: Can be used to specify the content of the 'alt' attribute of the image. It is null by default and the attribute is not exported.
                 
 
-* __Handled__: Marks the event as handled. If __ImagesExportMode__ is set to __External__ and the event is marked as handled, the format provider does not attempt to export the image to external image file.
+* __Handled__: Marks the event as handled. If __ImagesExportMode__ is set to __External__ and the event is marked as handled, the format provider does not attempt to export the image to an external image file.
                 
 
 * __Image__: Can be used to obtain the original Image object, from where you can access image name, image data and image extension.
                 
 
-* __Source__: Can be used to specify the value of the 'src' attribute of the 'image' element. If __ImagesExportMode__ is set to __External__, tthe source can be set to absolute or relative path pointing to the image file.
+* __Source__: Can be used to specify the value of the 'src' attribute of the 'image' element. If __ImagesExportMode__ is set to __External__, the source can be set to absolute or to a relative path pointing to the image file.
                 
-* __ExportSize__: With this property you could specify whether the _width_ and _height_ attributes of an _image_ element should be exported. The default value is _true_.
+* __ExportSize__: Use this property to specify whether the _width_ and _height_ attributes of an _image_ element should be exported. The default value is _true_.
 
 
 ### StylesExportMode
@@ -176,13 +209,13 @@ The event is only raised when the __StylesExportMode__ property is set to __Exte
 * __Handled__: Marks the event as handled. If the event is marked as handled, the format provider does not attempt to export the CSS file.
                 
 
-* __Reference__: The value that will be set to the "href" attribute of the "link" element tag. In the general case, this should be set to the absolute or relative path pointing to the file containing the CSS styles.
+* __Reference__: The value that will be set to the "href" attribute of the "link" element tag. In general, this should be set to the absolute or relative path pointing to the file containing the CSS styles.
                 
 
 __Example 2__ demonstrates how you can create export settings.
             
 
-#### __[C#] Example 2: Create HtmlExportSettings__
+#### __[C#] Example 3: Create HtmlExportSettings__
 
 {{region radwordsprocessing-formats-and-conversion-html-settings_1}}
 	HtmlFormatProvider provider = new HtmlFormatProvider();

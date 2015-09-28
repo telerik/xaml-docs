@@ -10,7 +10,7 @@ position: 6
 
 # Selection
 
-__RadTreeView__ lets users select single or multiple nodes by simply setting the __SelectionMode__ property. Furthermore, you can manage the selection process by events exposed by the __RadTreeViewItem__ and __RadTreeView__ classes. This tutorial will walk you through the common tasks of:
+__RadTreeView__ lets users select single or multiple nodes by simply setting the __SelectionMode__ property. Furthermore, you can manage the selection process using events exposed by the __RadTreeViewItem__ and __RadTreeView__ classes. This tutorial will walk you through the common tasks of:
 	  
 
 * [Selecting an item declaratively and programmatically](#Selecting_an_Item_Declaratively_and_Programmatically)
@@ -47,13 +47,13 @@ If you want to select an item you need to set the __RadTreeViewItem__'s __IsSele
 	radTreeViewItem.IsSelected = True
 {{endregion}}
 
->Note, that the code snippets above cover scenario when your __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) (with static data). If you want to bind the __IsSelected__ property to a property of a custom business object, check out the [Binding the IsSelected Property](#Binding_the_IsSelected_Property) section at the end of this topic.
+>Note that the code snippets above cover a scenario when your __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) (with static data). If you want to bind the __IsSelected__ property to a property of a custom business object, check out the [Binding the IsSelected Property](#Binding_the_IsSelected_Property) section at the end of this topic.
 		  
 
 <a id="Selecting_an_Item_by_Using_the_SelectedItems_Collection"></a>
 ## Selecting an Item by Using the SelectedItems Collection
 
-Another way to select a treeview item programmatically is to add it to the __SelectedItems__ collection of the __RadTreeView__ class. There are two possible cases here, depending on how the __RadTreeView__ is populated.
+Another way to select a treeview item programmatically is to add it to the __SelectedItems__ collection of the __RadTreeView__ class. There are two possible cases here depending on how the __RadTreeView__ is populated.
 
 * If your __RadTreeView__ is populated declaratively in XAML (with static data), then the __SelectedItems__ collection will contain instances of the __RadTreeViewItem__ class.
 
@@ -69,7 +69,7 @@ Another way to select a treeview item programmatically is to add it to the __Sel
 		radTreeView.SelectedItems.Add(radTreeViewItem)
 	{{endregion}}
 
-* In case your __RadTreeView__ is [data bound to a business object]({%slug radtreeview-populating-with-data-data-binding-to-object%}), then the situation is different. The __SelectedItems__ collection will contain instances of your business object.
+* If your __RadTreeView__ is [data bound to a business object]({%slug radtreeview-populating-with-data-data-binding-to-object%}), then the situation is different. The __SelectedItems__ collection will contain instances of your business object.
 		  
 
 	#### __C#__
@@ -87,12 +87,15 @@ Another way to select a treeview item programmatically is to add it to the __Sel
 <a id="Changing_the_Selection_Mode"></a>
 ## Changing the Selection Mode
 
-The __RadTreeView__ API allows you to change the selection mode of the treeview. You need to set the __SelectionMode__ property to do that. The __SelectionMode__ property is a __SelectionMode__ enumeration which exposes the following members:
+The __RadTreeView__ API allows you to change the selection mode of the treeview. You need to set the __SelectionMode__ property to do that. The __SelectionMode__ property is a __SelectionMode__ enumeration that exposes the following members:
 
-* __Single__ - use it for a single selection. At this mode the user will be available to select only one item at once.
+* __Single__ - use it for a single selection. In this mode the user will be available to select only one item at once.
 
-* __Multiple__ and __Extended__ - use that values when you want the user to be able to select multiple items at one time by holding down the __Ctrl__ or __Shift__ keys and clicking multiple items with the mouse or by using the keyboard. A second click on a selected item will unselect that item.
-			  
+* __Multiple__ - allows selection of multiple items. Clicking an item selects or deselects it depending on its current state. Also, the previously selected items will preserve their selection state.
+
+* __Extended__ - use this mode when you want the user to be able to select multiple items at one time by holding down the __Ctrl__ or __Shift__ keys and clicking multiple items with the mouse or by using the keyboard. A second click on a selected item will unselect that item.
+
+>important Until Q3 2015 __Multiple__ and __Extended__ SelectionModes worked the same way.  
 
 > There are two __SelectionMode__ enumerations - __'System.Windows.Controls.SelectionMode'__ and  __'Telerik.Windows.Controls.SelectionMode'__ 
 
@@ -109,14 +112,14 @@ If you intend to change the __SelectionMode__ in the code-behind you need to use
 		radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple
 	End Sub
 	
-The next example demonstrates you how to set the __SelectionMode__ property.		
+The next example demonstrates how to set the __SelectionMode__ property.		
 
 #### __XAML__
 	{{region radtreeview-feautres-treeviewitem-selection_7}}
 		<telerik:RadTreeView x:Name="radTreeView" SelectionMode="Multiple">
 	{{endregion}}
 
-As you can see from the snapshot below, now you are able to select more than on item (node).
+As you can see from the snapshot below, now you are able to select more than one item (node).
 ![](images/RadTreeView_TreeViewItemSelection_020.png)
 
 >tip The default selection of the __RadTreeView__ is __Single__.
@@ -124,22 +127,22 @@ As you can see from the snapshot below, now you are able to select more than on 
 <a id="Accessing_the_Selected_Item"></a>
 ## Accessing the Selected Item(s)
 
-__RadTreeView__ class exposes several properties which allow you to access the currently selected item(s).
+The __RadTreeView__ class exposes several properties that allow you to access the currently selected item(s).
 
 * __SelectedItem__- returns the currently selected item.
-* __SelectedItems__ - this property returns a collection representing the currently selected items. It is appropriate to use __SelectedItems__ property when you have multiple selected items. __SelectedItems__ is a __ObservableCollection__ of objects.
+* __SelectedItems__ - this property returns a collection representing the currently selected items. It is appropriate to use the  __SelectedItems__ property when you have multiple selected items. __SelectedItems__ is an __ObservableCollection__ of objects.
 * __SelectedContainer__ - gets the current selected item container. This property is __always__ of type __RadTreeViewItem__.
 		  
 
 Again, you have two possible cases:
 
-* Your __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) in XAML (with static data). In this case, the __SelectedItem__ and __SelectedContainer__ properties will return you objects of type __RadTreeViewItem__. Respectively the __SelectedItems__ collection contains __RadTreeViewItems__.	
+* Your __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) in XAML (with static data). In this case, the __SelectedItem__ and __SelectedContainer__ properties will return objects of type __RadTreeViewItem__. The __SelectedItems__ collection contains __RadTreeViewItems__.	
 * Your __RadTreeView__ is [data bound]({%slug radtreeview-populating-with-data-data-binding-to-object%}) to a business object. In this case, the __SelectedItem__ property will be an instance of your business object. The __SelectedItems__ collection will contain instances of your business object. The __SelectedContainer__ property again will return __RadTreeViewItem__.
 
 > When you have multiple selected items, the __SelectedItem__ property will return the first selected item in the treeview.
 		  
 <!-- -->
-> When you reset the __RadTreeView's__ __Items__ collection (when you invoke the __RadTreeView.Items.Clear()__ method), that will result also in clearing the __SelectedItems__ collection.
+> When you reset the __RadTreeView__'s __Items__ collection (when you invoke the __RadTreeView.Items.Clear()__ method), that will also clear the __SelectedItems__ collection.
 
 <!-- -->
 > Telerik __RadTreeView__ class inherits from __ItemsControl__. The __Items__ collection of the __ItemsControl__ is a collection of data objects, __not__ from __RadTreeViewItems__. There is a very important concept about the items and item containers. For more information read [here]({%slug radtreeview-how-to-iterate-through-treeviewitems%}).
@@ -186,7 +189,7 @@ For example, the next code snippet will change the __FontSize__ of the selected 
 
 The __PreviewUnselected__ event is fired just before the currently selected item is unselected. The __Unselected__ event occurs when the treeview item is already unselected. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__.
 
-In order to hangle a change in the selection you need to use the __SelectionChanged__ event. This event is available only for the __RadTreeView__ class. It is fired each time an item(s) is/are added or removed from the selection. The type of the passed event arguments for the event is __SelectionChangedEventArgs__. Here is a sample code for handling the __SelectionChanged__ event.
+In order to handle a change in the selection you need to use the __SelectionChanged__ event. This event is available only for the __RadTreeView__ class. It is fired each time an item(s) is/are added or removed from the selection. The type of the passed event arguments for the event is __SelectionChangedEventArgs__. Here is a sample code for handling the __SelectionChanged__ event.
 
 #### __C#__
 
@@ -228,9 +231,9 @@ In order to hangle a change in the selection you need to use the __SelectionChan
 <a id="Using_the_SelectedItem,_SelectedValue_and_SelectedValuePath_Properties"></a>
 ## Using the SelectedItem, SelectedValue and SelectedValuePath Properties
 
-The __SelectedValue__ property is used when you have linked your __RadTreeView__ to a data source, and you want to return a value other than the one which is displayed. The __SelectedValuePath__ property provides a way to specify a __SelectedValue__ for the __SelectedItem__ in a __RadTreeView__. The __SelectedItem__ represents an object in the __Items__ collection and the __RadTreeView__ displays the value of a single property of the selected item. The __SelectedValuePath__ property specifies the path to the property that is used to determine the value of the __SelectedValue__ property. The next example illustrates this concept.
+The __SelectedValue__ property is used when you have linked your __RadTreeView__ to a data source and you want to return a value other than the one that is displayed. The __SelectedValuePath__ property provides a way to specify a __SelectedValue__ for the __SelectedItem__ in a __RadTreeView__. The __SelectedItem__ represents an object in the __Items__ collection and the __RadTreeView__ displays the value of a single property of the selected item. The __SelectedValuePath__ property specifies the path to the property that is used to determine the value of the __SelectedValue__ property. The next example illustrates this concept.
 
-Imagine that you have a business object named __MyViewModel__, with three members (properties): __Title__, __Price__ and __Children__. And a __RadTreeView__ which is data bound to a list of __MyViewModel__ objects. The __Title__ property is the property which is displayed. The __Price__ is set to the __SelectedValuePath__ property.
+Imagine that you have a business object named __MyViewModel__, with three members (properties): __Title__, __Price__ and __Children__. And a __RadTreeView__ that is data bound to a list of __MyViewModel__ objects. The __Title__ property is the property that is displayed. The __Price__ is set to the __SelectedValuePath__ property.
 
 #### __C#__
 
@@ -328,7 +331,7 @@ When you select a __MyViewModel.Title__ from the __RadTreeView__, the __Selected
 <a id="Binding_the_IsSelected_Property"></a>
 ## Binding the IsSelected Property
 
-A very common issue is to have the __RadTreeViewItem__'s __IsSelected__ property bound to a property of a custom business object. The easiest way to achieve this is to use __ContainerBindingCollection__. For example, imagine your business object has a boolean property named __IsSelected__. And you want to bind the __IsSelected__ property of this business object to the __IsSelected__ property of the __RadTreeViewItem__. Then check out the code snippet below, it demonstrates how to achieve this.
+A very common issue is to have the __RadTreeViewItem__'s __IsSelected__ property bound to a property of a custom business object. The easiest way to achieve this is to use __ContainerBindingCollection__. For example, imagine your business object has a boolean property named __IsSelected__ and you want to bind the __IsSelected__ property of this business object to the __IsSelected__ property of the __RadTreeViewItem__. The code snippet below demonstrates how to achieve this.
 
 {% if site.site_name == 'Silverlight' %}
 

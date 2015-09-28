@@ -5,7 +5,7 @@ description: Find and Replace
 slug: radwordsprocessing-editing-find-and-replace
 tags: find,replace
 published: True
-position: 3
+position: 5
 ---
 
 # Find and Replace

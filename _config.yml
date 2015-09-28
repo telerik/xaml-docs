@@ -16,6 +16,7 @@ installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installat
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox.md,
 installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox.md,
+installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2015-toolbox-silverlight.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
@@ -506,6 +507,9 @@ navigation:
         position: 5
     controls/radpdfprocessing/formats-and-conversion/pdf:
         title: Pdf
+        position: 0
+    controls/radpdfprocessing/formats-and-conversion/plain-text:
+        title: Plain text
         position: 0
     controls/radpdfprocessing/editing:
         title: Editing

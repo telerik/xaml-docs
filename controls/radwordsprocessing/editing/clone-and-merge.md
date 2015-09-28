@@ -40,8 +40,8 @@ __RadWordsProcessing__ allows you to merge two __RadFlowDocument__ instance usin
 The Merge method performs two distinct operations:
         
 
-* Adds all sections from the source document after the sections of the target document.
-COMMENT: The previous sentence does not make sense. I think you mean "Adds all selected sections from the source document into the target document."
+* Adds all sections from the source document into the target document. The sections from the source document are inserted at the end of the target document.
+
 * Adds all styles from the source StyleRepository to the target StyleRepository.
             
 

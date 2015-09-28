@@ -41,6 +41,6 @@ __Example 1__ shows how to use __TextFormatProvider__ to export __RadFixedDocume
 
 # See Also
 
-* [Plain text]({%slug radpdfprocessing-formats-and-conversion-plain-text-txt%})
+* [Plain text]({%slug radpdfprocessing-formats-and-conversion-plain-text-text%})
 
 * [TextFormatProvider Settings]({%slug radpdfprocessing-formats-and-conversion-plain-text-settings%})

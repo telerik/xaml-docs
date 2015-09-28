@@ -12,7 +12,7 @@ position: 1
 
 This topic will walk you through the creating of  __RadTimeSpanPicker__.    
 
->In order to use __RadTimeSpanPicker__ in your project you have to add references to the following three assemblies:
+>In order to use __RadTimeSpanPicker__ in your project you have to add references to the following two assemblies:
 > * Telerik.Windows.Controls.dll
 > * Telerik.Windows.Controls.Input.dll
 

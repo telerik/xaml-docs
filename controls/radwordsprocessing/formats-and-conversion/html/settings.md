@@ -74,7 +74,7 @@ __Example 1__ shows how you can create and apply specific import settings.
     provider.ImportSettings = importSettings;
 {{endregion}}
 
-> With Q3 2015 the __UriImageSource__ class has been introduced and it is not necessary to subscribe to the LoadFromUri event when you want to import an image with URI. (COMMENT: At the beginning of the sentence, you didn't follow the same format for referring to a release that I see in other articles in this release. Please review with your team and change if necessary.)
+> With Q3 2015 the __UriImageSource__ class has been introduced and it is not necessary to subscribe to the LoadFromUri event when you want to import an image with URI. 
 
 ## UriImageSource Class
 

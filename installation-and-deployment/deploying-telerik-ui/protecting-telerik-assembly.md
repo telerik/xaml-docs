@@ -1,11 +1,11 @@
 ---
-title: Protecting Telerik UI Assemblies
-page_title: Protecting Telerik UI Assemblies
-description: Protecting Telerik UI Assemblies
+title: Protecting Telerik UI assembly
+page_title: Protecting Telerik UI assembly
+description: Protecting Telerik UI assembly
 slug: protecting-telerik-radcontrols-assembly
 tags: protecting,telerik,ui,assembly
 published: True
-position: 3
+position: 2
 ---
 
 # Protecting Telerik UI Assemblies

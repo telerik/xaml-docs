@@ -505,6 +505,9 @@ navigation:
     controls/radpdfprocessing/formats-and-conversion/pdf:
         title: Pdf
         position: 0
+    controls/radpdfprocessing/formats-and-conversion/plain-text:
+        title: Plain text
+        position: 0
     controls/radpdfprocessing/editing:
         title: Editing
         position: 6

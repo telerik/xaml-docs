@@ -289,7 +289,7 @@ Columns
 <td>
 Watermark
 </td>
-<td></td>
+<td>Yes</td>
 <td></td>
 </tr>
 <tr>

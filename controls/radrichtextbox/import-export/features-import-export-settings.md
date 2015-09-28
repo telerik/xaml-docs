@@ -26,43 +26,44 @@ __HtmlFormatProvider__ makes use of __HtmlExportSettings__ and __HtmlImportSetti
 __HtmlExportSettings__ provide the following options:
         
 
-* __Title__ – allows you to set a Title to the generated HTML file.
+* __Title__: Allows you to set a Title to the generated HTML file.
           
 
-* __DocumentExportLevel__ – you can choose between __Document__ and __Fragment__. __Document__ is the default value, which includes the HTML declaration, the &lt;HTML&gt;, &lt;TITLE&gt;, &lt;HEAD&gt; and &lt;BODY&gt; tags, whereas setting the document export level to __Fragment__ results in exporting the content of the &lt;BODY&gt; tag only.
+* __DocumentExportLevel__: You can choose between __Document__ and __Fragment__. __Document__ is the default value, which includes the HTML declaration, the &lt;HTML&gt;, &lt;TITLE&gt;, &lt;HEAD&gt; and &lt;BODY&gt; tags, whereas setting the document export level to __Fragment__ results in exporting the content of the &lt;BODY&gt; tag only.
           
 
-* __StylesExportMode__ – the options here are __Inline__ and __Classes__, the default one being __Classes__. Predefined classes is the preferred way for setting styles, yet inline styles may be useful with regard to the consumer of the HTML.
+* __StylesExportMode__: The options here are __Inline__ and __Classes__, the default one being __Classes__. Predefined classes is the preferred way for setting styles, yet inline styles may be useful with regard to the consumer of the HTML.
           
 
-* __StyleRepositoryExportMode__ – specifies if the styles of the document kept in the __StyleRepository__ of the document should be serialized. The options are __ExportStylesAsCssClasses__ (the default value) and __DontExportStyles__.
+* __StyleRepositoryExportMode__: Specifies if the styles of the document kept in the __StyleRepository__ of the document should be serialized. The options are __ExportStylesAsCssClasses__ (the default value) and __DontExportStyles__.
           
 
-* __ExportFontStylesAsTags__ - specifies if &lt;i&gt;, &lt;b&gt; and &lt;u&gt; tags should be used instead of setting properties as elements of a style;
+* __ExportFontStylesAsTags__: Specifies if &lt;i&gt;, &lt;b&gt; and &lt;u&gt; tags should be used instead of setting properties as elements of a style.
           
 
-* __ExportBoldAsStrong__ - controls whether elements with font-weight bold are exported as <strong> tag;
+* __ExportBoldAsStrong__: Controls whether elements with font-weight bold are exported as &lt;strong&gt; tag.
           
 
-* __ExportItalicAsEm__ - controls whether elements with font weight italic are exported as <em> tag;
+* __ExportItalicAsEm__: Controls whether elements with font weight italic are exported as &lt;em&gt; tag.
           
 
-* __ExportHeadingsAsTags__ - specifies if Heading styles are exported as &lt;h1&gt; to &lt;h6&gt; tags;
+* __ExportHeadingsAsTags__: Specifies if Heading styles are exported as &lt;h1&gt; to &lt;h6&gt; tags.
           
 
-* __ImageExportMode__ – the user can choose between several options or even provide his own implementation by choosing the __ImageExportingEvent__ option for the __ImageExportMode__ property and handling the __ImageExportingEvent__. The __UriSource__ option can be used if you want to export an image by setting its __src__ property to the URL rather than having the raw data in the exported document.
+* __ImageExportMode__: The user can choose between several options or even provide his own implementation by choosing the __Event__ option for the __ImageExportMode__ property and handling the __ImageExportingEvent__. The __UriSource__ option can be used if you want to export an image by setting its __src__ property to the URL rather than having the raw data in the exported document.
           
 
-* __InlineUIContainerExporting__ – this event is fired on every attempt to export an __InlineUIContainer__. For more information, please refer to the article about [InlineUIContainers]({%slug radrichtextbox-features-document-elements-inlineuicontainer%}).
+* __InlineUIContainerExporting__: This event is fired on every attempt to export an __InlineUIContainer__. For more information, please refer to the article about [InlineUIContainers]({%slug radrichtextbox-features-document-elements-inlineuicontainer%}).
           
 
-* __PropertiesToIgnore__ - properties added to this dictionary will not be exported. The full collection of properties that can be excluded is as follows:
+* __PropertiesToIgnore__: Properties added to this dictionary will not be exported. The full collection of properties that can be excluded is demonstrated in __Example 1__.
             
 
-#### __C#__
+#### __[C#] Example 1: Exclude properties__
 
 {{region radrichtextbox-features-import-export-settings_3}}
-    HtmlExportSettings htmlExportSettings =new HtmlExportSettings();
+
+    HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
     htmlExportSettings.PropertiesToIgnore["span"].Add("color");
     htmlExportSettings.PropertiesToIgnore["span"].Add("text-decoration");
     htmlExportSettings.PropertiesToIgnore["span"].Add("font-weight");
@@ -111,7 +112,7 @@ __HtmlExportSettings__ provide the following options:
 
 Here are some examples how the settings can be set in code-behind:
 
-#### __C#__
+#### __[C#] Example 2: Setup Default HtmlFormatProvider__
 
 {{region radrichtextbox-features-import-export-settings_0}}
 	public void SetupDefaultHtmlFormatProvider()
@@ -131,7 +132,7 @@ Here are some examples how the settings can be set in code-behind:
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Setup Default HtmlFormatProvider__
 
 {{region radrichtextbox-features-import-export-settings_2}}
     Public Sub SetupDefaultHtmlFormatProvider()
@@ -146,11 +147,9 @@ Here are some examples how the settings can be set in code-behind:
     End Sub
 {{endregion}}
 
+In case you are using HtmlDataProvider in XAML, you can customize the generated HTML as shown in __Example 3__.
 
-
-In case you are using HtmlDataProvider in XAML, you can customize the generated HTML as follows:
-
-#### __XAML__
+#### __[XAML] Example 3: Setup HtmlDataProvider__
 
 {{region radrichtextbox-features-import-export-settings_0}}
     <telerik:HtmlDataProvider x:Name="htmlDataProvider"
@@ -180,13 +179,9 @@ In case you are using HtmlDataProvider in XAML, you can customize the generated 
 __HtmlImportSettings__ provide the following options:
         
 
-* __UseDefaultStylesheetForFontProperties__ – a __Boolean__ property indicating whether the default font properties of __RadRichTextBox__ or the defaults in the HTML specification should be used for the elements that do not set their __FontSize__, __FontFamily__, __FontWeight__ and __FontStyle__ explicitly.
-          
+* __UseDefaultStylesheetForFontProperties__: A __Boolean__ property indicating whether the default font properties of __RadRichTextBox__ or the defaults in the HTML specification should be used for the elements that do not set their __FontSize__, __FontFamily__, __FontWeight__ and __FontStyle__ explicitly.
 
-* __InlineUIContainerImporting__ and __InlineUIContainerImported__ events – provide customization options on importing __InlineUIContainers__. This is convenient, as the containers are serialized as XAML and in the handlers of these events one may create the objects and insert them in the document using their serialization.
-          
-
-* __LoadImageFromUrl__ event – this event was introduced at a time when __HtmlFormatProvider__ did not automatically load images from URLs. The feature is currently supported out of the box, but this event can be useful if using virtual directories and files on the server.
+* __LoadImageFromUrl event__: This event was introduced at a time when __HtmlFormatProvider__ did not automatically load images from URLs. The feature is currently supported out of the box, but this event can be useful if using virtual directories and files on the server.
           
 
 ## PdfFormatProvider
@@ -197,22 +192,22 @@ __PdfFormatProvider__ exposes an __ExportSettings__ property of type __PdfExport
 __PdfExportSettings__ include the following options:
         
 
-* __ContentsCompressionMode__ – this property allows you to choose if you wish to make use of compression (by setting it to __Deflate__ or __Automatic__) or not (__PdfContentsCompressionMode__.__None__) of the text content of the document.
+* __ContentsCompressionMode__: This property allows you to choose if you wish to make use of compression (by setting it to __Deflate__ or __Automatic__) or not (__PdfContentsCompressionMode__.__None__) of the text content of the document.
           
 
-* __ContentsDeflaterCompressionLevel__ – an integer between __-1__ and __9__, used to get or set the compression level to be used when deflating the content of the document.  Default Compression is __-1__, No Compression is __0__ and Best Compression is __9__;
+* __ContentsDeflaterCompressionLevel__: An integer between __-1__ and __9__, used to get or set the compression level to be used when deflating the content of the document.  Default Compression is __-1__, No Compression is __0__ and Best Compression is __9__.
           
 
-* __ImagesCompressionMode__ – the user can choose between __None__, __Jpeg__ (supported only for images, imported as JPEG), __Deflate__ (the deflate algorithm will be applied to compress the images) or __Automatic__ (the best algorithm will be automatically decided upon for you).
+* __ImagesCompressionMode__: The user can choose between __None__, __Jpeg__ (supported only for images, imported as JPEG), __Deflate__ (the deflate algorithm will be applied to compress the images) or __Automatic__ (the best algorithm will be automatically decided upon for you).
           
 
-* __ImagesDeflaterCompressionLevel__ – same as __ContentsDeflaterCompressionLevel__, but applied to the images in the document. This property is respected when an image is compressed with __Deflate__.
+* __ImagesDeflaterCompressionLevel__: Same as __ContentsDeflaterCompressionLevel__, but applied to the images in the document. This property is respected when an image is compressed with __Deflate__.
           
 
-* __InlineUIContainersExportMode__ – there are two export modes – __Image__ and __None__, the former being the default one. If you wish to skip the export of __InlineUIContainers__ altogether, you can set the value of the property to __None__.
+* __InlineUIContainersExportMode__: There are two export modes – __Image__ and __None__, the former being the default one. If you wish to skip the export of __InlineUIContainers__ altogether, you can set the value of the property to __None__.
           
 
-* __DocumentInfo__ - allows you to add entries to the information dictionary such as title, author, etc.
+* __DocumentInfo__: Allows you to add entries to the information dictionary such as title, author, etc.
           
 
 >__PDF import__ is currently __not__ supported, so there are no import settings.
@@ -221,12 +216,13 @@ __PdfExportSettings__ include the following options:
 
 ## RtfFormatProvider
 
-__RtfFormatProvider__ has __ImportSettings__, which provide an event - __FontSubstituting__, which allows you to handle the cases when the Rtf source specifies a Font that is not available to the RichTextBox. This is particularly useful in Silverlight when the Font can be resolved only if it is among the default ones when you do not want to rely on it being installed on the client machine. Here is an example how you can subscribe to the event and handle it:
+__RtfFormatProvider__ has __ImportSettings__, which provide an event - __FontSubstituting__, which allows you to handle the cases when the Rtf source specifies a Font that is not available to the RichTextBox. This is particularly useful in Silverlight when the Font can be resolved only if it is among the default ones when you do not want to rely on it being installed on the client machine. __Example 4__ shows how you can subscribe to the event and handle it.
         
 
-#### __C#__
+#### __[C#] Example 4: Handle the FontSubstituting event__
 
 {{region radrichtextbox-features-import-export-settings_1}}
+
 	RtfFormatProvider rtfFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("rtf") as RtfFormatProvider;
 	RtfImportSettings rtfImportSettings = new RtfImportSettings();
 	rtfImportSettings.FontSubstituting += rtfImportSettings_FontSubstituting;
@@ -234,7 +230,7 @@ __RtfFormatProvider__ has __ImportSettings__, which provide an event - __FontSub
 	
 	void rtfImportSettings_FontSubstituting(object sender, FontSubstitutingEventArgs e) 
 	{ 
-	    if(e.OriginalFontName.Equals("Cambria")
+	    if(e.OriginalFontName.Equals("Cambria"))
 	    {
 	        e.SubstitutionFontFamily = new FontFamily("Calibri");
 	    }
@@ -250,7 +246,7 @@ __DocxFormatProvider__ exposes __ExportSettings__, which allow customization in 
 
 Here is an example how you can get a reference to the format provider used by the OpenDocument and the SaveCommand and adjust the export, so that the document is saved as a template:
 
-#### __C#__
+#### __[C#] Example 5: Setup Default DocxFormatProvider__
 
 {{region radrichtextbox-features-import-export-settings_2}}
 	public void SetupDefaultDocxFormatProvider()
@@ -266,3 +262,6 @@ Here is an example how you can get a reference to the format provider used by th
 {{endregion}}
 
 
+# See Also
+
+* [Data Providers]({%slug radrichtextbox-features-data-providers%})

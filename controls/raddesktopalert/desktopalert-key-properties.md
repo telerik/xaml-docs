@@ -26,6 +26,12 @@ The purpose of this help article is to show you the key properties of __RadDeskt
 
 * [Command](#command)
 
+* [CanAutoClose ](#canautoclose)
+
+* [ShowCloseButton](#showclosebutton)
+
+* [ShowMenuButton](#showmenubutton)
+
 ## Header
 
 The __Header__ property is used to set the header content of __RadDesktopAlert__. The __Header__ is of type object, so by applying a custom __HeaderTemplate__ as well any desired content can be visualized.
@@ -147,6 +153,84 @@ __RadDesktopAlert__ provides you with a command property. This means you can bin
 		MessageBox.Show("Command")
 	End Sub
 {{endregion}}
+
+## CanAutoClose
+
+In order to prevent __RadDesktopAlert__ from auto closing you need to use the __CanAutoClose__ property introduced with Q3 2015 release version of UI for WPF. It is of type bool so it could either be set to True, False – the default value is true:
+
+#### __[C#]  Setting CanAutoClose__
+
+{{region raddesktopalert-features-key-properties_7}}
+	RadDesktopAlert alert = new RadDesktopAlert();
+	alert.CanAutoClose = true;
+{{endregion}}
+
+#### __[VB]  Setting CanAutoClose__
+
+{{region raddesktopalert-features-key-properties_7}}
+	Dim alert As New RadDesktopAlert()
+	alert.CanAutoClose = True
+{{endregion}}
+
+The __CanAutoClose__ property could also be set using the __DesktopAlertParameters__ that are passed to the __ShowAlert__ method of __RadDesktopAlertManager__:
+
+#### __[C#]  Setting CanAutoClose using DesktopAlertParameters__
+
+{{region raddesktopalert-features-key-properties_8}}
+	this.SingleAnimationManager.ShowAlert(new DesktopAlertParameters
+	{
+		CanAutoClose = false,
+		Header = "Message",
+		Content = "A new message has arrived!"
+	}, true);
+{{endregion}}
+
+#### __[VB]  Setting CanAutoClose using DesktopAlertParameters__
+
+{{region raddesktopalert-features-key-properties_8}}
+	Me.Manager.ShowAlert(New DesktopAlertParameters With
+	{
+		.CanAutoClose = False,
+		.Header = "Message",
+		.Content = "A new message has arrived!"}, True)
+{{endregion}}
+
+## ShowCloseButton
+
+You could easily hide the close button of __RadDesktopAlert__ using the __ShowCloseButton__. By setting it to __False__ the button will get hide - be default it is  true. This property was introduced with Q3 2015 released version of UI for WPF:
+
+#### __[C#]  Setting ShowCloseButton__:
+
+{{region raddesktopalert-features-key-properties_9}}
+	RadDesktopAlert alert = new RadDesktopAlert();;
+	alert.ShowCloseButton = false;
+{{endregion}}
+
+#### __[VB]  Setting ShowCloseButton__:
+
+{{region raddesktopalert-features-key-properties_9}}
+	Dim alert As New RadDesktopAlert()
+	alert.ShowCloseButton = False
+{{endregion}}
+
+## ShowMenuButton
+
+In order to visualize the menu of __RadDesktopAlert__ you need to set the __ShowMenuButton__ property to true – by default it is set to false. By doing so a __DropDownButton__ will be visualized next to the close button and an empty menu with no items will be created. This property was introduced with Q3 2015 released version of UI for WPF:
+
+#### __[C#]  Setting ShowMenuButton__:
+
+{{region raddesktopalert-features-key-properties_10}}
+	RadDesktopAlert alert = new RadDesktopAlert();;
+	alert.ShowMenuButton = false;
+{{endregion}}
+
+#### __[VB]  Setting ShowMenuButton__:
+
+{{region raddesktopalert-features-key-properties_10}}
+	Dim alert As New RadDesktopAlert()
+	alert.ShowMenuButton = False
+{{endregion}}
+
 
 # See Also
 

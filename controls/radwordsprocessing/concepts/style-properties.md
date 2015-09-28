@@ -151,496 +151,505 @@ The following code snippet illustrates how to get the default value for a style 
 
 Following is a list of all available style properties and their default values:
         
-<table><tr><th>
-
-Name</th><th>
-
-Description</th><th>
-
-Default Value</th></tr><tr><td>
-
-<b>CharacterProperties</b></td><td></td><td></td></tr><tr><td>
-FlowDirection</td><td>
-
-The flow direction.</td><td>
-
-LeftToRight</td></tr><tr><td>
-
-FontFamily</td><td>
-
-The font family.</td><td>
-
-Verdana</td></tr><tr><td>
-
-FontSize</td><td>
-
-The size of the font.</td><td>
-
-13.3333333333333</td></tr><tr><td>
-
-FontStyle</td><td>
-
-The font style.</td><td>
-
-Normal</td></tr><tr><td>
-
-FontWeight</td><td>
-
-The font weight.</td><td>
-
-Normal</td></tr><tr><td>
-
-ForegroundColor</td><td>
-
-The foreground color.</td><td>
-
-Black</td></tr><tr><td>
-
-HighlightColor</td><td>
-
-The color of the highlight.</td><td>
-
-Transparent</td></tr><tr><td>
-
-BaselineAlignment</td><td>
-
-The baseline alignment.</td><td>
-
-Baseline</td></tr><tr><td>
-
-Strikethrough</td><td>
-
-The strikethrough.</td><td>
-
-False</td></tr><tr><td>
-
-BackgroundColor</td><td>
-
-The color of the background.</td><td>
-
-Transparent</td></tr><tr><td>
-
-ShadingPatternColor</td><td>
-
-A value indicating the color for any foreground pattern used in this shading.</td><td>
-
-Transparent</td></tr><tr><td>
-
-ShadingPattern</td><td>
-
-A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td><td>
-
-Clear</td></tr><tr><td>
-
-UnderlineColor</td><td>
-
-The color for the underlining.</td><td>
-
-Transparent</td></tr><tr><td>
-
-UnderlinePattern</td><td>
-
-A value indicating the pattern which shall be used to create the underlining applied beneath the text.</td><td>
-
-None</td></tr><tr><td>
-
-<b>ParagraphProperties</b></td><td></td><td></td></tr><tr><td>
-
-FlowDirection</td><td>
-
-The flow direction.</td><td>
-
-LeftToRight</td></tr><tr><td>
-
-TextAlignment</td><td>
-
-The paragraph text alignment.</td><td>
-
-Left</td></tr><tr><td>
-
-SpacingBefore</td><td>
-
-The spacing that should be added above the first line in a paragraph.</td><td>
-
-0</td></tr><tr><td>
-
-AutomaticSpacingBefore</td><td>
-
-A value indicating whether a consumer shall automatically determine the spacing
-                before the paragraph based on its contents the automatic spacing after.
-              </td><td>
-
-False</td></tr><tr><td>
-
-SpacingAfter</td><td>
-
-The spacing that should be added after the last line in a paragraph.</td><td>
-
-0</td></tr><tr><td>
-
-AutomaticSpacingAfter</td><td>
-
-A value indicating whether a consumer shall automatically determine the spacing
-                after the paragraph based on its contents the automatic spacing after.
-              </td><td>
-
-False</td></tr><tr><td>
-
-LineSpacing</td><td>
-
-The value indicating the amount of vertical spacing between lines of text within a paragraph.</td><td>
-
-1.15</td></tr><tr><td>
-
-LineSpacingType</td><td>
-
-The value indicating how the spacing between lines is calculated.</td><td>
-
-Auto</td></tr><tr><td>
-
-KeepOnOnePage</td><td>
-
-A value indicating if this paragraph should be rendered on one page when the document is shown in page view mode.</td><td>
-
-False</td></tr><tr><td>
-
-KeepWithNextParagraph</td><td>
-
-A value indicating if this paragraph should be rendered at least partly on the one page with
-                the following paragraph when this is possible and when the document is shown in page view mode.
-              </td><td>
-
-False</td></tr><tr><td>
-
-OutlineLevel</td><td>
-
-A value indicating the outline level. The outline level defines the level of this paragraph in TOC field.</td><td>
-
-None</td></tr><tr><td>
-
-ApplyEastAsianLineBreakingRules</td><td>
-
-A value indicating whether East-Asian line breaking rules are applied to this paragraph.</td><td>
-
-True</td></tr><tr><td>
-
-PageBreakBefore</td><td>
-
-A value indicating if this paragraph should be rendered on new page when the document is shown in page view mode.</td><td>
-
-False</td></tr><tr><td>
-
-Borders</td><td>
-
-The paragraph borders.</td><td>
-
-None</td></tr><tr><td>
-
-ContextualSpacing</td><td>
-
-A value indicating whether spacing before/after are ignored
-                when preceding/following paragraph has same paragraph style.
-              </td><td>
-
-False</td></tr><tr><td>
-
-MirrorIndents</td><td>
-
-A value indicating whether left and right indents should be swapped on odd pages.</td><td>
-
-False</td></tr><tr><td>
-
-BackgroundColor</td><td>
-
-The color of the background.</td><td>
-
-Transparent</td></tr><tr><td>
-
-ShadingPatternColor</td><td>
-
-A value indicating the color for any foreground pattern used in this shading.</td><td>
-
-Transparent</td></tr><tr><td>
-
-ShadingPattern</td><td>
-
-A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td><td>
-
-Clear</td></tr><tr><td>
-
-FirstLineIndent</td><td>
-
-A value indicating the additional indentation which shall be applied to the first line of the paragraph.</td><td>
-
-0</td></tr><tr><td>
-
-HangingIndent</td><td>
-
-A value which shall be removed from the indentation of the first line of the paragraph, by moving the indentation on the first line back towards the beginning of the direction of text flow. </td><td>
-
-0</td></tr><tr><td>
-
-LeftIndent</td><td>
-
-A value indicating the indentation which shall be applied to the left side of the whole paragraph.</td><td>
-
-0</td></tr><tr><td>
-
-RightIndent</td><td>
-
-A value indicating the indentation which shall be applied to the right side of the whole paragraph.</td><td>
-
-0</td></tr><tr><td>
-
-AllowOverflowPunctuation</td><td>
-
-A value indicating whether the last punctuation character on a line can overflow in paragraph margin/indent.</td><td>
-
-True</td></tr><tr><td>
-
-<b>TableProperties</b></td><td></td><td></td></tr><tr><td>
-
-Alignment</td><td>
-
-The alignment of the table.</td><td>
-
-Left</td></tr><tr><td>
-
-BackgroundColor</td><td>
-
-The color of the background.</td><td>
-
-Transparent</td></tr><tr><td>
-
-ShadingPatternColor</td><td>
-
-A value indicating the color for any foreground pattern used in this shading.</td><td>
-
-Transparent</td></tr><tr><td>
-
-ShadingPattern</td><td>
-
-A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td><td>
-
-Clear</td></tr><tr><td>
-
-Borders</td><td>
-
-The table borders.</td><td>
-
-None</td></tr><tr><td>
-
-TableCellPadding</td><td>
-
-Default padding of the cells inside the table.</td><td>
-
-0, 0, 0, 0</td></tr><tr><td>
-
-TableCellSpacing</td><td>
-
-A value indicating the spacing between adjacent cells and the edges of the table.</td><td>
-
-0</td></tr><tr><td>
-
-Indent</td><td>
-
-A value which shall be added before the leading edge of the table.</td><td>
-
-0</td></tr><tr><td>
-
-RowBanding</td><td>
-
-The number of banded rows.</td><td>
-
-0</td></tr><tr><td>
-
-ColumnBanding</td><td>
-
-The number of banded columns.</td><td>
-
-0</td></tr><tr><td>
-
-FlowDirection</td><td>
-
-The flow direction of cells inside the table.</td><td>
-
-LeftToRight</td></tr><tr><td>
-
-PreferredWidth</td><td>
-
-The preferred width.</td><td>
-
-Auto</td></tr><tr><td>
-
-Looks</td><td>
-
-The value indicating which components of the conditional style should be applied if such exists.</td><td>
-
-BandedRows, BandedColumns</td></tr><tr><td>
-
-LayoutType</td><td>
-
-A value indicating which algorithm shall be used to lay out the content of the table.</td><td>
-
-AutoFit</td></tr><tr><td>
-
-Overlap</td><td>
-
-A value indicating whether this floating table shall allow other floating tables to overlap its extents.</td><td>
-
-True</td></tr><tr><td>
-
-<b>TableRowProperties</b></td><td></td><td></td></tr><tr><td>
-
-TableCellSpacing</td><td>
-
-A value indicating the spacing between adjacent cells and the edges of the table.</td><td>
-
-0</td></tr><tr><td>
-
-RepeatOnEveryPage</td><td>
-
-A value indicating whether this row should be repeated on every new page.</td><td>
-
-False</td></tr><tr><td>
-
-CanSplit</td><td>
-
-A value indicating whether the content of the row can be split across multiple pages.</td><td>
-
-True</td></tr><tr><td>
-
-Height</td><td>
-
-The height.</td><td>
-
-Auto</td></tr><tr><td>
-
-<b>TableCellProperties</b></td><td></td><td></td></tr><tr><td>
-
-Borders</td><td>
-
-The borders.</td><td>
-
-None</td></tr><tr><td>
-
-BackgroundColor</td><td>
-
-The color of the background.</td><td>
-
-Transparent</td></tr><tr><td>
-
-ShadingPatternColor</td><td>
-
-A value indicating the color for any foreground pattern used in this shading.</td><td>
-
-Transparent</td></tr><tr><td>
-
-ShadingPattern</td><td>
-
-A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td><td>
-
-Clear</td></tr><tr><td>
-
-Padding</td><td>
-
-The padding.</td><td>
-
-0, 0, 0, 0</td></tr><tr><td>
-
-ColumnSpan</td><td>
-
-The column span.</td><td>
-
-1</td></tr><tr><td>
-
-RowSpan</td><td>
-
-The row span.</td><td>
-
-1</td></tr><tr><td>
-
-IgnoreCellMarkerInRowHeightCalculation</td><td>
-
-A value indicating whether cell marker will be ignored when row height is calculated.</td><td>
-
-False</td></tr><tr><td>
-
-CanWrapContent</td><td>
-
-A value indicating whether the content can be wrapped during the table layout.</td><td>
-
-True</td></tr><tr><td>
-
-PreferredWidth</td><td>
-
-The preferred width.</td><td>
-
-Auto</td></tr><tr><td>
-
-VerticalAlignment</td><td>
-
-The vertical alignment.</td><td>
-
-Top</td></tr><tr><td>
-
-<b>SectionProperties</b></td><td></td><td></td></tr><tr><td>
-
-HasDifferentFirstPageHeaderFooter</td><td>
-
-Has different first page header footer.</td><td>
-
-False</td></tr><tr><td>
-
-PageOrientation</td><td>
-
-Page orientation property.</td><td>
-
-Portrait</td></tr><tr><td>
-
-PageSize</td><td>
-
-Page size property.</td><td>
-
-816,1056</td></tr><tr><td>
-
-PageMargins</td><td>
-
-Page margins property.</td><td>
-
-96, 96, 96, 96</td></tr><tr><td>
-
-HeaderTopMargin</td><td>
-
-Header top margin property.</td><td>
-
-48</td></tr><tr><td>
-
-FooterBottomMargin</td><td>
-
-Footer bottom margin property.</td><td>
-
-48</td></tr><tr><td>
-
-SectionType</td><td>
-
-Section type property.</td><td>
-
-NextPage</td></tr><tr><td>
-
-<b>DocumentProperties</b></td><td></td><td></td></tr><tr><td>
-
-HasDifferentEvenOddPageHeadersFooters</td><td>
-
-A value indicating whether pages in this document will have different headers and footers for even and odd pages.</td><td>
-
-False</td></tr><tr><td>
-
-ViewType</td><td>
-
-A value indicating the view type of the document.</td><td>
-
-PrintLayout</td></tr></table>
+<table>
+<tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Default Value</th>
+</tr></th>
+<tr>
+<td><b>CharacterProperties</b></td><td></td><td></td></tr>
+<tr>
+<td>FontFamily</td>
+<td>The font family.</td>
+<td>Verdana</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>The size of the font. 
+            The value is in device independent pixels (1/96 inch).</td>
+<td>13.3333333333333</td>
+</tr>
+<tr>
+<td>FontStyle</td>
+<td>The font style.</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td>FontWeight</td>
+<td>The font weight.</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td>ForegroundColor</td>
+<td>The foreground color.</td>
+<td>Black</td>
+</tr>
+<tr>
+<td>HighlightColor</td>
+<td>The color of the highlight.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>BaselineAlignment</td>
+<td>The baseline alignment.</td>
+<td>Baseline</td>
+</tr>
+<tr>
+<td>Strikethrough</td>
+<td>The strikethrough.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>The color of the background.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>ShadingPatternColor</td>
+<td>A value indicating the color for any foreground pattern used in this shading.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>ShadingPattern</td>
+<td>A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td>
+<td>Clear</td>
+</tr>
+<tr>
+<td>UnderlineColor</td>
+<td>The color for the underlining.</td>
+<td>Auto(#FF000000)</td>
+</tr>
+<tr>
+<td>UnderlinePattern</td>
+<td>A value indicating the pattern which shall be used to create the underlining applied beneath the text.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>FlowDirection</td>
+<td>The flow direction.</td>
+<td>LeftToRight</td>
+</tr>
+
+<tr>
+<td><b>ParagraphProperties</b></td><td></td><td></td></tr>
+<tr>
+<td>FlowDirection</td>
+<td>The flow direction.</td>
+<td>LeftToRight</td>
+</tr>
+<tr>
+<td>TextAlignment</td>
+<td>The paragraph text alignment.</td>
+<td>Left</td>
+</tr>
+<tr>
+<td>SpacingBefore</td>
+<td>The spacing that should be added above the first line in a paragraph.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AutomaticSpacingBefore</td>
+<td>A value indicating whether a consumer shall automatically determine the spacing 
+            before the paragraph based on its contents the automatic spacing after.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>SpacingAfter</td>
+<td>The spacing that should be added after the last line in a paragraph.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AutomaticSpacingAfter</td>
+<td>A value indicating whether a consumer shall automatically determine the spacing 
+            after the paragraph based on its contents the automatic spacing after.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>LineSpacing</td>
+<td>The value indicating the amount of vertical spacing between lines of text within a paragraph.
+            If  is Auto then the line height value times the value of the property, 
+            otherwise the value is in device independent pixels (1/96 inch).</td>
+<td>1</td>
+</tr>
+<tr>
+<td>LineSpacingType</td>
+<td>The value indicating how the spacing between lines is calculated.</td>
+<td>Auto</td>
+</tr>
+<tr>
+<td>KeepOnOnePage</td>
+<td>A value indicating if this paragraph should be rendered on one page when the document is shown in page view mode.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>KeepWithNextParagraph</td>
+<td>A value indicating if this paragraph should be rendered at least partly on the one page with 
+            the following paragraph when this is possible and when the document is shown in page view mode.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>OutlineLevel</td>
+<td>A value indicating the outline level. The outline level defines the level of this paragraph in TOC field.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>ApplyEastAsianLineBreakingRules</td>
+<td>A value indicating whether East-Asian line breaking rules are applied to this paragraph.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>PageBreakBefore</td>
+<td>A value indicating if this paragraph should be rendered on new page when the document is shown in page view mode.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>Borders</td>
+<td>The paragraph borders.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>ContextualSpacing</td>
+<td>A value indicating whether spacing before/after are ignored 
+            when preceding/following paragraph has same paragraph style.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>MirrorIndents</td>
+<td>A value indicating whether left and right indents should be swapped on odd pages.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>The color of the background.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>ShadingPatternColor</td>
+<td>A value indicating the color for any foreground pattern used in this shading.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>ShadingPattern</td>
+<td>A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td>
+<td>Clear</td>
+</tr>
+<tr>
+<td>FirstLineIndent</td>
+<td>A value indicating the additional indentation which shall be applied to the first line of the paragraph.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>HangingIndent</td>
+<td>A value which shall be removed from the indentation of the first line of the paragraph, 
+            by moving the indentation on the first line back towards the beginning of the direction of text flow.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LeftIndent</td>
+<td>A value indicating the indentation which shall be applied to the left side of the whole paragraph.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>RightIndent</td>
+<td>A value indicating the indentation which shall be applied to the right side of the whole paragraph.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AllowOverflowPunctuation</td>
+<td>A value indicating whether the last punctuation character on a line can overflow in paragraph margin/indent. 
+            This property cannot be derived from a style.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>TabStops</td>
+<td>The tab stops in the paragraph.</td>
+<td></td>
+</tr>
+<tr>
+<td>ListId</td>
+<td>A value indicating that the paragraph is referencing a list.</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>ListLevel</td>
+<td>A value indicating that the paragraph is referencing list level.</td>
+<td>-1</td>
+</tr>
+
+<tr>
+<td><b>TableProperties</b></td><td></td><td></td></tr>
+<tr>
+<td>Alignment</td>
+<td>The alignment of the table.</td>
+<td>Left</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>The color of the background.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>ShadingPatternColor</td>
+<td>A value indicating the color for any foreground pattern used in this shading.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>ShadingPattern</td>
+<td>A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td>
+<td>Clear</td>
+</tr>
+<tr>
+<td>Borders</td>
+<td>The table border.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>TableCellPadding</td>
+<td>Default padding of the cells inside the table.</td>
+<td>0, 0, 0, 0</td>
+</tr>
+<tr>
+<td>TableCellSpacing</td>
+<td>A value indicating the spacing between adjacent cells and the edges of the table.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Indent</td>
+<td>A value which shall be added before the leading edge of the table.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>RowBanding</td>
+<td>The number of banded rows.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>ColumnBanding</td>
+<td>The number of banded columns.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FlowDirection</td>
+<td>The flow direction of cells inside the table. 
+            This property cannot be derived from a style.</td>
+<td>LeftToRight</td>
+</tr>
+<tr>
+<td>PreferredWidth</td>
+<td>The preferred width. This property cannot be derived from a style.</td>
+<td>Auto</td>
+</tr>
+<tr>
+<td>Looks</td>
+<td>The value indicating which components of the conditional style should be applied if such exists. 
+            This property cannot be derived from a style.</td>
+<td>BandedRows, BandedColumns</td>
+</tr>
+<tr>
+<td>LayoutType</td>
+<td>A value indicating which algorithm shall be used to lay out the content of the table. 
+            This property cannot be derived from a style.</td>
+<td>AutoFit</td>
+</tr>
+<tr>
+<td>Overlap</td>
+<td>A value indicating whether this floating table shall allow other floating tables to overlap its extents. 
+            This property cannot be derived from a style.</td>
+<td>True</td>
+</tr>
+
+<tr>
+<td><b>TableRowProperties</b></td><td></td><td></td></tr>
+<tr>
+<td>TableCellSpacing</td>
+<td>A value indicating the spacing between adjacent cells and the edges of the table.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>RepeatOnEveryPage</td>
+<td>A value indicating whether this row should be repeated on every new page. 
+            This property cannot be derived from a style.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>CanSplit</td>
+<td>A value indicating whether the content of the row can be split across multiple pages. 
+            This property cannot be derived from a style.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Height</td>
+<td>The height. 
+            This property cannot be derived from a style.</td>
+<td>Auto</td>
+</tr>
+
+<tr>
+<td><b>TableCellProperties</b></td><td></td><td></td></tr>
+<tr>
+<td>Borders</td>
+<td>The borders.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>The color of the background.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>ShadingPatternColor</td>
+<td>A value indicating the color for any foreground pattern used in this shading.</td>
+<td>Transparent</td>
+</tr>
+<tr>
+<td>ShadingPattern</td>
+<td>A value indicating the pattern which shall be used to lay the pattern color over the background color for this shading.</td>
+<td>Clear</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>The padding.</td>
+<td>7.68, 0, 7.68, 0</td>
+</tr>
+<tr>
+<td>ColumnSpan</td>
+<td>The column span. 
+            This property cannot be derived from a style.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>RowSpan</td>
+<td>The row span. 
+            This property cannot be derived from a style.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IgnoreCellMarkerInRowHeightCalculation</td>
+<td>A value indicating whether cell marker will be ignored when row height is calculated. 
+            This property cannot be derived from a style.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>CanWrapContent</td>
+<td>A value indicating whether the content can be wrapped during the table layout. 
+            This property cannot be derived from a style.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>PreferredWidth</td>
+<td>The preferred width. 
+            This property cannot be derived from a style.</td>
+<td>Auto</td>
+</tr>
+<tr>
+<td>VerticalAlignment</td>
+<td>The vertical alignment. 
+            This property cannot be derived from a style.</td>
+<td>Top</td>
+</tr>
+<tr>
+<td>TextDirection</td>
+<td>The text direction. 
+            This property cannot be derived from a style.</td>
+<td>LeftToRightTopToBottom</td>
+</tr>
+
+<tr>
+<td><b>SectionProperties</b></td><td></td><td></td></tr>
+<tr>
+<td>HasDifferentFirstPageHeaderFooter</td>
+<td>Has different first page header footer.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>PageOrientation</td>
+<td>Page orientation property.</td>
+<td>Rotate0</td>
+</tr>
+<tr>
+<td>PageSize</td>
+<td>Page size property.
+            The width and height are in device independent pixels (1/96 inch).</td>
+<td>816,1056</td>
+</tr>
+<tr>
+<td>PageMargins</td>
+<td>Page margins property.</td>
+<td>96, 96, 96, 96</td>
+</tr>
+<tr>
+<td>HeaderTopMargin</td>
+<td>Header top margin property.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>48</td>
+</tr>
+<tr>
+<td>FooterBottomMargin</td>
+<td>Footer bottom margin property.
+            The value is in device independent pixels (1/96 inch).</td>
+<td>48</td>
+</tr>
+<tr>
+<td>SectionType</td>
+<td>Section type property.</td>
+<td>NextPage</td>
+</tr>
+<tr>
+<td>VerticalAlignment</td>
+<td>Vertical alignment property.</td>
+<td>Top</td>
+</tr>
+<tr>
+<td>ChapterSeparatorCharacter</td>
+<td>Chapter separator character that shall appear between the chapter heading style index and the page number.</td>
+<td></td>
+</tr>
+<tr>
+<td>ChapterHeadingStyleIndex</td>
+<td>Index of the chapter heading style.</td>
+<td></td>
+</tr>
+<tr>
+<td>PageNumberFormat</td>
+<td>Page number format for the page numbering in the current section.</td>
+<td></td>
+</tr>
+<tr>
+<td>StartingPageNumber</td>
+<td>Starting page number.
+            This number appears on the first page of the section.</td>
+<td></td>
+</tr>
+
+<tr>
+<td><b>DocumentProperties</b></td><td></td><td></td></tr>
+<tr>
+<td>HasDifferentEvenOddPageHeadersFooters</td>
+<td>A value indicating whether pages in this document will have different headers and footers for even and odd pages.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>ViewType</td>
+<td>A value indicating the view type of the document.</td>
+<td>PrintLayout</td>
+</tr>
+<tr>
+<td>DefaultTabStopWidth</td>
+<td>Style property used to determine the default width value which shall be used when a tab stop should be generated. The value is in device independent pixels (1/96 inch).</td>
+<td>48</td>
+</tr>
+
+</table>
 
 # See Also
 

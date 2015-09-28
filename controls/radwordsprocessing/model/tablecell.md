@@ -88,6 +88,8 @@ The __TableCell__ element exposes several properties that allow you to customize
             
 
 * __VerticalAlignment__: Specifies the vertical alignment of the cell's content.
+
+* __TextDirection__: Specifies the direction of the text in the cell. It could have one of the values of the [TextDirection enumeration](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Flow_Model_Styles_TextDirection.htm).
             
 
 * __GridColumnIndex__: Represents the column index of the cell in the table grid.

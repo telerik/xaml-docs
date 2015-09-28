@@ -331,7 +331,7 @@ When you select a __MyViewModel.Title__ from the __RadTreeView__, the __Selected
 <a id="Binding_the_IsSelected_Property"></a>
 ## Binding the IsSelected Property
 
-A very common issue is to have the __RadTreeViewItem__'s __IsSelected__ property bound to a property of a custom business object. The easiest way to achieve this is to use __ContainerBindingCollection__. For example, imagine your business object has a boolean property named __IsSelected__ and you want to bind the __IsSelected__ property of this business object to the __IsSelected__ property of the __RadTreeViewItem__. Thehe code snippet below demonstrates how to achieve this.
+A very common issue is to have the __RadTreeViewItem__'s __IsSelected__ property bound to a property of a custom business object. The easiest way to achieve this is to use __ContainerBindingCollection__. For example, imagine your business object has a boolean property named __IsSelected__ and you want to bind the __IsSelected__ property of this business object to the __IsSelected__ property of the __RadTreeViewItem__. The code snippet below demonstrates how to achieve this.
 
 {% if site.site_name == 'Silverlight' %}
 

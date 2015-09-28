@@ -5,7 +5,7 @@ description: Creating the Client Application
 slug: raddataservicedatasource-getting-started-creating-the-client-application
 tags: creating,the,client,application
 published: True
-position: 1
+position: 2
 ---
 
 # Creating the Client Application

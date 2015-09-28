@@ -168,7 +168,6 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 {% endif %}
 
 When a control's keytip is activated, the action associated with the control will be executed:
-COMMENT: At the beginning of this help article, you use keytip as one word, not two. I will change to one word so the help article is consistent. Please review that my change was correct and then remove this comment. 
 * Using a keytip of a __RibbonTab__ will select the tab
 
 * Using a keytip of a __RibbonSplitButton/RibbonDropDownButton__ will open the __DropDown__ content of the button

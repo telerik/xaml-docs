@@ -5,7 +5,7 @@ description: RadFlowDocumentEditor
 slug: radwordsprocessing-editing-radflowdocumenteditor
 tags: radflowdocumenteditor
 published: True
-position: 1
+position: 2
 ---
 
 # RadFlowDocumentEditor
@@ -258,6 +258,9 @@ Here is how to insert a table with the "TableGrid" built-in style:
 {{endregion}}
 
 ![Rad Words Processing Editing Rad Flow Document Editor 06](images/RadWordsProcessing_Editing_RadFlowDocumentEditor_06.png)
+
+>tip The **DocumentElementImporter** class allows you to import a document element from one document into another. Please, check [this article]({%slug radwordsprocessing-editing-import-document-element%}) for more information about this functionality.
+
 
 ## Changing Current Styles
 

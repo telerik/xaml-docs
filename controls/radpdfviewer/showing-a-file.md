@@ -25,7 +25,7 @@ __RadPdfViewer__ exposes a __DocumentSource__ property of type [FixedDocumentStr
 
 ###  Setting the DocumentSource in XAML
 
-The first thing you need to do is declare the Telerik namespace as shown in __Example 1__.
+First you need to declare the Telerik namespace as shown in __Example 1__.
 
 #### __[XAML] Example 1: Define Telerik Namespace__
 
@@ -49,7 +49,7 @@ After that, you can proceed to add the **PdfViewer** control to the user control
 In the example above, a file named "Sample.pdf" embedded in a "Sample Data" folder in the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project will be shown when the page is loaded. PdfViewerDemo is the name of the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project. 
 
 
-{% if site.site_name == 'Silverlight' %}You can just as well load files that are not on the client machine. For example, if you embed a Sample.pdf file in the Web project, you can load it like this: 
+{% if site.site_name == 'Silverlight' %}You can also load files that are not on the client machine. For example, if you embed a Sample.pdf file in the Web project, you can load it like this: 
 
 #### __XAML__
 
@@ -83,7 +83,7 @@ __Example 3__ shows how a PDF file can be loaded from a file embedded as a resou
 
 
 
-And this is how this can be done by passing its URI:
+__Example 4__ shows how a PDF can be loaded from a file embedded as a resource by passing its URI:
 
 #### __[C#] Example 4: Load PDF from URI__
 
@@ -96,12 +96,12 @@ And this is how this can be done by passing its URI:
 
 
 
->In __Example 3 and 4__ PdfViewerDemo is the name of the project and the PDF file is embedded as a Resource in a folder called SampleData.
+>In __Example 3 and 4__, PdfViewerDemo is the name of the project and the PDF file is embedded as a resource in a folder called SampleData.
 
 
 ### Setting Document in Code-Behind
 
-__PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create a document for __RadPdfViewer__. This allows you to easily import your documents using directly __PdfFormatProvider__ instead of __PdfDocumentSource__.
+__PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create a document for __RadPdfViewer__. This allows you to easily import your documents directly using __PdfFormatProvider__ instead of __PdfDocumentSource__.
               
 
 #### __[C#] Example 5: Set RadFixedDocument through PdfFormatProvider__
@@ -124,10 +124,10 @@ __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create 
 
 ## Binding the DocumentSource of RadPdfViewer
 
-The __DocumentSource__ of __RadPdfViewer__ is implemented as a dependency property and can be bound to a __Uri__, __string__ representing a Uri, or a __Stream__. This is done with the help of __PdfDocumentSourceValueConverter__, which caters to creating a PdfDocumentSource and presenting it to the viewer.
+The __DocumentSource__ of __RadPdfViewer__ is implemented as a dependency property and can be bound to a __Uri__, __string__ representing a Uri, or a __Stream__. This is done with the help of __PdfDocumentSourceValueConverter__, which caters to creating a PdfDocumentSource and presenting it to the viewer. (COMMENT: Should __Uri__ be __URI__? In example 4 URI is all caps.)
         
 
-This is how the converter can be declared:
+__Examples 6 and 7__ show how to declare the converter:
 
 #### __[XAML] Example 6: Define Fixed Namespace__
 

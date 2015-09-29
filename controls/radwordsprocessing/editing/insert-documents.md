@@ -53,7 +53,7 @@ You could merge documents at a specific position using the InsertDocument() meth
 		<th>Result</th>
 	</tr>
 	<tr>
-		<td>Insert the source document in an empty document(without any sections).</td>
+		<td>Insert the source document in an empty document (without any sections).</td>
 		<td>All of the content of the source document will be inserted in the target one. The section properties will be obtained from the source document. </td>
 	</tr>
 	<tr>

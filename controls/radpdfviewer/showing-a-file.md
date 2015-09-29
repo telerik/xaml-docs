@@ -124,7 +124,7 @@ __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create 
 
 ## Binding the DocumentSource of RadPdfViewer
 
-The __DocumentSource__ of __RadPdfViewer__ is implemented as a dependency property and can be bound to a __Uri__, __string__ representing a Uri, or a __Stream__. This is done with the help of __PdfDocumentSourceValueConverter__, which caters to creating a PdfDocumentSource and presenting it to the viewer. (COMMENT: Should __Uri__ be __URI__? In example 4 URI is all caps.)
+The __DocumentSource__ of __RadPdfViewer__ is implemented as a dependency property and can be bound to a __Uri__, __string__ representing a Uri, or a __Stream__. This is done with the help of __PdfDocumentSourceValueConverter__, which caters to creating a PdfDocumentSource and presenting it to the viewer.
         
 
 __Examples 6 and 7__ show how to declare the converter:

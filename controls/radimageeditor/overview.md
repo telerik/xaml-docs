@@ -50,25 +50,28 @@ For import:
 
 * PNG; 
 
-* BMP;
+* BMP{% if site.site_name == 'Silverlight' %}.{%endif%}{% if site.site_name == 'WPF' %};
 
 * TIFF;
 
 * GIF;
 
 * ICO.
+{%endif%}
 
 For export: 
 
+{% if site.site_name == 'WPF' %}
 * JPEG;
+{%endif%}
 
 * PNG; 
 
-* BMP;
- 
+* BMP{% if site.site_name == 'Silverlight' %}.{%endif%}{% if site.site_name == 'WPF' %};
+
 * TIFF;
 
 * GIF.
-
+{%endif%}
 
 __RadImageEditor__ is highly extensible, so you can implement and utilize additional image editing tools, as well as import and export in other formats. 

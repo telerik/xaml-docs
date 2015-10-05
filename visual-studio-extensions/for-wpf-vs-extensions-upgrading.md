@@ -46,15 +46,11 @@ The next screen allows you to update the Visual Studio Toolbox with the newly se
 
 Notes: 
 
-* The distribution selection screen lists all the UI for WPF versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected. 
+* The distribution selection screen lists all the UI for WPF versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions. Hotfixes, downloaded manually cannot be detected. 
 
-* You can use the Browse button to navigate to the folder of a manually downloaded distribution.
-
-* You can use the Download button to access the Latest Version Acquirer and download the latest available version on our website. 
+* You can use the __GET LATEST__ button to access the Latest Version Acquirer and download the latest available version on our website. 
 
 * The distribution, downloaded by the Upgrade Wizard contains only the "hotfix" files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or the Live Examples.
-
-* When using the implicit styling approach and the XAML files are copied to the project, they will be updated only if they are in the default Themes\\[*SpecificTheme*] folder.
 
 	![VSExtensions Themes Folder](images/VSExtensions_WPF_ThemeFilesUnderNamedFolder.png)
 

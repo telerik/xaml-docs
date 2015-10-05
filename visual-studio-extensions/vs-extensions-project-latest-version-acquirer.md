@@ -29,7 +29,7 @@ Clicking the __Get Now__ button starts the Latest Version Acquirer tool, prompti
 
 {% if site.site_name == 'Silverlight' %}![extensions acquirertool sl 2](images/extensions_acquirertool_sl_2.png){% endif %}{% if site.site_name == 'WPF' %}![extensions acquirertool wpf 2](images/extensions_acquirertool_wpf_2.png){% endif %}
 
-You can check the additional information about the release by clicking the __Release Notes__ link. This will start a browser, navigated to a page with the release notes related to the specific version.
+{% if site.site_name == 'Silverlight' %}You can check the additional information about the release by clicking the __Release Notes__ link. This will start a browser, navigated to a page with the release notes related to the specific version.{% endif %}
        	
 
 You can use the __Save my password__ checkbox to save having to enter your Telerik credentials multiple times. The persistance is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
@@ -39,6 +39,8 @@ If your subscription has expired, you could either proceed with downloading a tr
 		
 
 {% if site.site_name == 'Silverlight' %}![extensions acquirertool sl 3](images/extensions_acquirertool_sl_3.png){% endif %}{% if site.site_name == 'WPF' %}![extensions acquirertool wpf 3](images/extensions_acquirertool_wpf_3.png){% endif %}
+
+{% if site.site_name == 'WPF' %}You can check the additional information about the release by clicking the __Release Notes__ link. This will start a browser, navigated to a page with the release notes related to the specific version.{% endif %}
 
 {% if site.site_name == 'Silverlight' %}![extensions acquirertool sl 4](images/extensions_acquirertool_sl_4.png){% endif %}{% if site.site_name == 'WPF' %}![extensions acquirertool wpf 4](images/extensions_acquirertool_wpf_4.png){% endif %}
 

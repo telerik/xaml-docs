@@ -33,7 +33,7 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 On the first step the wizard provides basic update process information  
 
-![VSExtentions WPF Upgrade Wizard Initial Page](images/VSExtentions_WPF_UpgradeWizardInitialPage.jpg)
+![VSExtentions WPF Upgrade Wizard Initial Page](images/VSExtentions_WPF_UpgradeWizardInitialPage.png)
 
 
 You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively):

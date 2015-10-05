@@ -40,13 +40,9 @@ You can choose which projects will be updated (it is recommended to upgrade all 
 
 ![VSExtentions WPF Upgrade Wizard](images/VSExtentions_WPF_UpgradeWizard.png)
 
-The next screen allows you to update the Visual Studio Toolbox with the newly selected controls, so that you avoid accidental reference change during a control drag and drop: 
+The next screen allows you to update the Visual Studio Toolbox with the newly selected controls, so that you avoid accidental reference change during a control drag and drop, as well as creating a backup of your project: 
 
-![VSExtentions WPF Upgrade Wizard Toolbox](images/VSExtentions_WPF_UpgradeWizardToolbox.png)
-
-The last step suggests creating a backup of your project: 
-
-![VSExtentions WPF Upgrade Wizard Backup](images/VSExtentions_WPF_UpgradeWizardBackup.png)
+![VSExtentions WPF Upgrade Wizard Toolbox](images/VSExtentions_WPF_UpgradeWizardOptions.png)
 
 Notes: 
 

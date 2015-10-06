@@ -41,6 +41,8 @@ The Project Configuration Wizard’s first page lets you:
 
 * Download the latest versions available on our website using the __GET LATEST__ button
 
+* Specify which assemblies your project would use. When selecting a UI for WPF assembly all dependent controls are selected automatically and vice-versa.
+
 >The Project Configuration Wizard’s second page is only available if you use theming based on implicit styles. ([more information]({%slug styling-apperance-implicit-styles-overview%}))
           
 

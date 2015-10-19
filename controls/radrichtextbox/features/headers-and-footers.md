@@ -15,7 +15,7 @@ position: 8
 __RadRichTextBox__ supports Headers and Footers in its document when in Paged [layout mode]({%slug radrichtextbox-features-layout-modes%}).
       
 
->Note that Headers and Footers are not persisted when exporting with HtmlFormatProvider You can read more about this [here]({%slug radrichtextbox-features-import-export%})
+>Note that Headers and Footers are not persisted when exporting with HtmlFormatProvider. You can read more about this [here]({%slug radrichtextbox-features-import-export%}).
 
 The topic contains the following sections:
 
@@ -29,22 +29,23 @@ The topic contains the following sections:
 
 The Headers and Footers are properties of a Section and each section in the document can have the following types of Headers and Footers:
 
-* __Default__ - used all through the section;
+* __Default__: Used all through the section;
             
 
-* __First__ - used on the first page of the section only;
+* __First__: Used on the first page of the section only;
             
 
-* __Even__ - to be used on every even page.
+* __Even__: To be used on every even page.
             
 
 ## Customizing Headers and Footers
 
-Here is an example how you can create a Header: 
+__Example 1__ demonstrates how you can create a Header.
 
-#### __C#__
+#### __[C#] Example 1: Create Header__
 
 {{region radrichtextbox-features-headers-and-footers_0}}
+
 	Header header = new Header() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument represents the content of a Header, 
 	                                                                                 //typically contains a few paragraphs
 {{endregion}}
@@ -53,9 +54,9 @@ Here is an example how you can create a Header:
 
 When it comes to using a Header created in this manner, this depends on the state of the document - if it has been measured or not.
 
-* In a non-measured document, which you are building in code-behind, you can set the Default page Header of a section in the following way:
+* In a non-measured document, which you are building in code-behind, you can set the Default page Header of a section as illustrated in __Example 2__.
 
-#### __C#__
+#### __[C#] Example 2: Set Header of a Section__
 
 {{region radrichtextbox-features-headers-and-footers_1}}
 	section.Headers.Default = header;
@@ -63,23 +64,23 @@ When it comes to using a Header created in this manner, this depends on the stat
 
 
 
-* In a measured document (a document that has been previewed in the editor), you can change the Default page header of the first section like this:
+* In a measured document (a document that has been previewed in the editor), you can change the Default page header of the first section like shown in __Example 3__.
 
-	#### __C#__
+	#### __[C#] Example 3: Update a Header in Measured Document__
 	
 	{{region radrichtextbox-features-headers-and-footers_2}}
-		this.editor.UpdateHeader(this.editor.Document.Sections.First, HeaderFooterType.Default, header);
+		this.radRichTextBox.UpdateHeader(this.radRichTextBox.Document.Sections.First, HeaderFooterType.Default, header);
 	{{endregion}}
 
 
-All header/footer types - Default, First and Even are set identically. The only thing you should add when you set the First or Even Header/Footer of the document, is to set the property of the section that notifies the document to use different Header/Footer than the default one using one of the following properties:
+All header/footer types - Default, First and Even are set identically. The only thing you should add when you set the First or Even Header/Footer of the document, is to set the property of the section that notifies the document to use different Header/Footer than the default one using one of the properties illustrated in __Example 4__.
      
-#### __C#__
+#### __[C#] Example 4: Set Different Even/Odd Header__
 
 {{region radrichtextbox-features-headers-and-footers_3}}
-	this.editor.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
+	this.radRichTextBox.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
 	//or
-	this.editor.Document.HasDifferentEvenAndOddHeadersFooters = true;
+	this.radRichTextBox.Document.HasDifferentEvenAndOddHeadersFooters = true;
 {{endregion}}
 
 
@@ -88,10 +89,11 @@ Setting the Footers can be done in the same way. Here is the respective code for
 
 * Creating a Footer:
 
-	#### __C#__
+	#### __[C#] Example 5: Create Footer__
 	
 	{{region radrichtextbox-features-headers-and-footers_4}}
-		Footer header = new Footer() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of the footer, 
+
+		Footer footer = new Footer() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of the footer.
 	{{endregion}}
 
 
@@ -100,7 +102,7 @@ Setting the Footers can be done in the same way. Here is the respective code for
 
     * In a non-measured document:
 
-		#### __C#__
+		#### __[C#] Example 6: Set Footer of a Section__
 		
 		{{region radrichtextbox-features-headers-and-footers_5}}
 			section.Footers.Default = footer;
@@ -110,22 +112,22 @@ Setting the Footers can be done in the same way. Here is the respective code for
 
     * In a measured document:
 
-		#### __C#__
+		#### __[C#] Example 7: Update a Footer in Measured Document__
 		
 		{{region radrichtextbox-features-headers-and-footers_6}}
-			this.editor.UpdateFooter(this.editor.Document.Sections.First, HeaderFooterType.Default, footer);
+			this.radRichTextBox.UpdateFooter(this.radRichTextBox.Document.Sections.First, HeaderFooterType.Default, footer);
 		{{endregion}}
 
 
 
-As for setting different footers for the first page or the even page, this is done by passing the respective parameter to the UpdateFooter() method - HeaderFooterType.First or HeaderFooterType.Even and setting the corresponding property of the document/editor:
+As for setting different footers for the first page or the even page, this is done by passing the respective parameter to the UpdateFooter() method - HeaderFooterType.First or HeaderFooterType.Even and setting the corresponding property of the document/editor.
 
-#### __C#__
+#### __[C#] Example 8: Set Different Even/Odd Footer__
 
 {{region radrichtextbox-features-headers-and-footers_3}}
-	this.editor.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
+	this.radRichTextBox.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
 	//or
-	this.editor.Document.HasDifferentEvenAndOddHeadersFooters = true;
+	this.radRichTextBox.Document.HasDifferentEvenAndOddHeadersFooters = true;
 {{endregion}}
 
 
@@ -138,14 +140,14 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 >tipThe concept of UI layers and their usage are explained in [this article]({%slug radrichtextbox-features-custom-ui-layers%}).
           
 
-#### __C#__
+#### __[C#] Example 9: Disable Headers and Footers__
 
 {{region radrichtextbox-features-headers-and-footers_7}}
 	class CustomUILayerBuilder : UILayersBuilder
 	{
 	    protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
 	    {
-	        this.BuildUILayersOverride(uiLayerContainer);
+	        base.BuildUILayersOverride(uiLayerContainer);
 	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer);
 	    }
 	}

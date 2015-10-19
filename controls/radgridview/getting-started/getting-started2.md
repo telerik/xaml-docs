@@ -10,11 +10,6 @@ position: 0
 
 # Getting Started
 
-{% if site.site_name == 'Silverlight' %} <table> <tr><td>RELATED VIDEOS</td></tr><tr><td>In this video, we will look at some of the features and functionality in Telerik RadGridView for Silverlight and how you can start using it in your rich internet applications today.(Runtime: 03:36)
-<iframe title="link" width="480" height="390" src="http://tv.telerik.com/silverlight/video/introduction-radgridview-silverlight" frameborder="0" allowfullscreen>< /iframe>
-</td></tr></table>
-{% endif %}
-
 This tutorial will walk you through the creation of a sample application that contains __RadGridView__ control. 
 
 >In order to use the __RadGridView__ control in your projects you have to add references to the following assemblies:			

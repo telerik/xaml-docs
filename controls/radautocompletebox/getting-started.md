@@ -22,13 +22,19 @@ It is possible to include the control in your projects by either dragging it fro
 
 The following example shows how to create a __RadAutoCompleteBox__ control in the code behind and in XAML:
 
-#### __C#__
+#### __[C#] Creating RadAutoCompleteBox__
 
 {{region radautocompletebox-getting-started-0}}
 	RadAutoCompleteBox autoCompleteBox = new RadAutoCompleteBox();
 {{endregion}}
 
-#### __XAML__
+#### __[VB] Creating RadAutoCompleteBox__
+
+{{region radautocompletebox-getting-started-0}}
+	Dim autoCompleteBox As New RadAutoCompleteBox()
+{{endregion}}
+
+#### __[XAML] Creating RadAutoCompleteBox__
 
 {{region radautocompletebox-getting-started-0}}
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
@@ -37,3 +43,7 @@ The following example shows how to create a __RadAutoCompleteBox__ control in th
 	    </Grid>
 	</UserControl>
 {{endregion}}
+
+# See Also
+
+ * [Overview]({%slug radautocompletebox-overview%})

@@ -14,19 +14,19 @@ The main feature of __RadAutoCompleteBox__ control is its AutoComplete functiona
 
 ## Changing the AutoCompleteMode
 
-RadAutoCompleteBox control has three built-in __AutoCompleteModes__ - __Suggest__, __Append__, __SuggestAppend__. By default the AutoCompleteMode property is set to SuggestAppend.
+RadAutoCompleteBox control has three built-in __AutoCompleteModes__ - __Suggest__, __Append__, __SuggestAppend__. By default the AutoCompleteMode property is set to __SuggestAppend__.
 
 In the next examples we will demonstrate the difference between the AutoCompleteModes:
 
 >Before proceeding with next examples please read the help article about [Binding To Object]({%slug radautocompletebox-populating-with-data-binding-to-object%}).
 
-Suggest Mode
+### Suggest Mode
 
 In __Suggest__ mode after one or more matches are found they are displayed in the DropDown portion of the control.
 
 The XAML should look like this:
 
-#### __XAML__
+#### __[XAML] Declaring RadAutoCompleteBox with Suggest AutoCompleteMode__
 
 {{region radautocompletebox-features-key-properties-0}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
@@ -35,7 +35,7 @@ The XAML should look like this:
 	                            AutoCompleteMode="Suggest"/>
 {{endregion}}
 
-The next screenshots show how the control looks in Suggest mode:
+The next screenshots show how the control looks in __Suggest__ mode:
 
 ![radautocompletebox-features-autocomplete-1](images/radautocompletebox-features-autocomplete-1.png)
 
@@ -45,13 +45,13 @@ The next screenshots show how the control looks in Suggest mode:
 
 ![radautocompletebox-features-autocomplete-4](images/radautocompletebox-features-autocomplete-4.png)
 
-Append Mode
+### Append Mode
 
 In __Append__ mode after one or more matches are found the DropDown portion of the control is hidden and the value in the TextBox is appended with the first matched item.
 
 The XAML should look like this:
 
-#### __XAML__
+#### __[XAML] Declaring RadAutoCompleteBox with Append AutoCompleteMode__
 
 {{region radautocompletebox-features-key-properties-1}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
@@ -68,7 +68,7 @@ The next screenshots show how the control looks in Append mode:
 
 ![radautocompletebox-features-autocomplete-4](images/radautocompletebox-features-autocomplete-4.png)
 
-Suggest and Append Mode
+### Suggest and Append Mode
 
 __SuggestAppend__ mode combines the behavior of the two previous modes.
 
@@ -76,7 +76,7 @@ __SuggestAppend__ mode combines the behavior of the two previous modes.
 
 The XAML should look like this:
 
-#### __XAML__
+#### __[XAML] Declaring RadAutoCompleteBox with SuggestAppend AutoCompleteMode__
 
 {{region radautocompletebox-features-key-properties-2}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"

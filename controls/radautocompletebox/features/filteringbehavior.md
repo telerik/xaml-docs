@@ -18,7 +18,7 @@ When it comes to filtering a huge amount of data the performance is that what re
 
 The behavior should be set up the following way:
 
-#### __XAML__
+#### __[XAML] RadAutoCompleteBox with AsyncFilteringBehavior__
 
 {{region radautocompletebox-features-filteringbehavior-1}}
 	<telerik:RadAutoCompleteBox>
@@ -36,7 +36,7 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 
 1. First you will need to create a custom class that inherits the default __FilteringBehavior__ of the AutoCompleteBox control:
 
-	#### __C#__
+	#### __[C#] Custom class that inherits the default FilteringBehavior__
 
 	{{region radautocompletebox-features-filteringbehavior-0}}
 		public class MyCustomFilteringBehavior : FilteringBehavior
@@ -47,7 +47,7 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 
 1. After that you will need to override its __FindMatchingItems()__ method with a custom logic that will return the entire items collection when no watch is found:
 
-	#### __C#__
+	#### __[C#] Overriding FindMatchingItems__
 
 	{{region radautocompletebox-features-filteringbehavior-1}}
 		public class MyCustomFilteringBehavior : FilteringBehavior
@@ -68,7 +68,7 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 
 1. Finally all you need to do is set the newly created behavior to the __FilteringBehavior__ of the AutoCompleteBox control. The xaml of the control should look like this:
 
-	#### __XAML__
+	#### __[XAML] Setting the newly created behavior__
 
 	{{region radautocompletebox-features-filteringbehavior-0}}
 		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries, Source={StaticResource ViewModel}}"

@@ -26,7 +26,7 @@ The next steps show how to create and set a custom DropDownItemTemplate to the R
 
 1. Next we need to create a valid __DataTemplate__ and set the necessary binding for the __Name__, __Capital__ properties of the ItemsSource items:
 
-	#### __XAML__
+	#### __[XAML] Declaring valid DataTemplate__
 
 	{{region radautocompletebox-customizing-drop-down-itemtemplate-0}}
 		<DataTemplate x:Key="CustomDropDownItemTemplate">
@@ -67,7 +67,7 @@ The next steps show how to create and set a custom DropDownItemTemplate to the R
 
 1. Finally you will need to declare the __RadAutoCompleteBox__ in the xaml and set its __ItemsSource__, __DisplayMemberPath__ and __DropDownItemTemplate__ properties:
 
-	#### __XAML__
+	#### __[XAML] Setting the DropDownItemTemplate__
 
 	{{region radautocompletebox-customizing-drop-down-itemtemplate-1}}
 		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}"

@@ -36,7 +36,7 @@ The context for each of the DragDropBehavior methods is provided in the form of 
 
 To determine whether the drag source and the drop target are the same control you could use the IsSameControl property.
 
->When the context is the drag source control, the DestinationItemsSource property will be undefined; when the context is the drop target control, the SourceItemsSource property will be undefined. In other words, you should use SourceAppointmentsSource only in CanStartDrag and DragDropCompleted/DragDropCanceled, and DestinationAppointmentsSource only in Drop and CanDrop.      
+>When the context is the drag source control, the DestinationItemsSource property will be undefined; when the context is the drop target control, the SourceItemsSource property will be undefined. In other words, you should use SourceItemsSource only in CanStartDrag and DragDropCompleted/DragDropCanceled, and DestinationItemsSource only in Drop and CanDrop.      
 
 ## IDragVisualProvider
 

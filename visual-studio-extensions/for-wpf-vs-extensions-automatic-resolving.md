@@ -29,6 +29,8 @@ The VSExtensions assembly list control is controlled by the dependency analyzer,
 
 * Deselecting a __Telerik UI__ assembly will also deselect assemblies depending on it along with it. 
 
+>Note that not all assemblies are listed.
+
 # See Also
 
  * [Project creation and configuration]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})

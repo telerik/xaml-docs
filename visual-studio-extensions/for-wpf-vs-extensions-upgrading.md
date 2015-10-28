@@ -33,32 +33,24 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 On the first step the wizard provides basic update process information  
 
-![VSExtentions WPF Upgrade Wizard Initial Page](images/VSExtentions_WPF_UpgradeWizardInitialPage.jpg)
+![VSExtentions WPF Upgrade Wizard Initial Page](images/VSExtentions_WPF_UpgradeWizardInitialPage.png)
 
 
 You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively):
 
 ![VSExtentions WPF Upgrade Wizard](images/VSExtentions_WPF_UpgradeWizard.png)
 
-The next screen allows you to update the Visual Studio Toolbox with the newly selected controls, so that you avoid accidental reference change during a control drag and drop: 
+The next screen allows you to update the Visual Studio Toolbox with the newly selected controls, so that you avoid accidental reference change during a control drag and drop, as well as creating a backup of your project: 
 
-![VSExtentions WPF Upgrade Wizard Toolbox](images/VSExtentions_WPF_UpgradeWizardToolbox.png)
-
-The last step suggests creating a backup of your project: 
-
-![VSExtentions WPF Upgrade Wizard Backup](images/VSExtentions_WPF_UpgradeWizardBackup.png)
+![VSExtentions WPF Upgrade Wizard Toolbox](images/VSExtentions_WPF_UpgradeWizardOptions.png)
 
 Notes: 
 
-* The distribution selection screen lists all the UI for WPF versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected. 
+* The distribution selection screen lists all the UI for WPF versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions. Hotfixes, downloaded manually cannot be detected. 
 
-* You can use the Browse button to navigate to the folder of a manually downloaded distribution.
-
-* You can use the Download button to access the Latest Version Acquirer and download the latest available version on our website. 
+* You can use the __GET LATEST__ button to access the Latest Version Acquirer and download the latest available version on our website. 
 
 * The distribution, downloaded by the Upgrade Wizard contains only the "hotfix" files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or the Live Examples.
-
-* When using the implicit styling approach and the XAML files are copied to the project, they will be updated only if they are in the default Themes\\[*SpecificTheme*] folder.
 
 	![VSExtensions Themes Folder](images/VSExtensions_WPF_ThemeFilesUnderNamedFolder.png)
 

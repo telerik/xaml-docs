@@ -28,7 +28,7 @@ In this article you will find more information on how to create a project from o
 
 ## Getting Started
 
-When creating new project, navigate to the __Choose project type__ and select the needed template as seen on __Figure 1__.
+When creating new project, select the needed template as seen on __Figure 1__.
 
 __Figure 1: Select template__
 ![VisualStudio Templates](images/Common_VisualStudio_Templates_01.png)

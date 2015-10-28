@@ -124,7 +124,7 @@ The following code snippet demonstrates how to add different headers for odd and
 
 
 
-### Linking Headers/Footers to Orevious Section Headers/Footers
+### Linking Headers/Footers to Previous Section Headers/Footers
 
 When visualizing flow documents, applications may apply additional rules for evaluating the header/footer which should be presented on a particular page. If header/footer of given type is omitted for a __Section__, it is inherited from the previous section (also known as "linked to previous"), or – if this is the first section – blank header/footer is used.
             

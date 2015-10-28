@@ -14,7 +14,7 @@ position: 3
 By utilizing the [implicit styling approach ]({%slug styling-apperance-implicit-styles-overview%}) you have the ability to switch the theme of Telerik WPF controls at run-time. With the large set of themes available in the suite this can drastically change the look and feel of your application.
 
 
-To help you achieve a consistent look we also provide a way for you to dynamically change the images in your application through the __IconResource__ [markup extension](https://msdn.microsoft.com/en-us/library/ms747254%28v=vs.110%29.aspx). The extension allows you to define three different URI-based paths which point to set of icons and then easily swap one set with another.
+To help you achieve a consistent look we also provide a way for you to dynamically change the images in your application through the __IconResource__ [markup extension](https://msdn.microsoft.com/en-us/library/ms747254(v=vs.100).aspx). The extension allows you to define three different URI-based paths which point to set of icons and then easily swap one set with another.
 
 
 ## How To Use IconSources

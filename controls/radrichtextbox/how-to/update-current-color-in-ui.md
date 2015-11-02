@@ -2,7 +2,7 @@
 title:  Update Current Color in UI
 page_title:  Update Current Color in UI
 description:  Update Current Color in UI
-slug: radrichtextbox-how-to-update
+slug: radrichtextbox-how-to-update-current-color-in-ui
 tags: update,current,color,in,ui
 published: True
 position: 4

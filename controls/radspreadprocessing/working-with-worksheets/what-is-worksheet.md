@@ -31,10 +31,17 @@ The main characteristics of worksheets can be summarized in the following list:
 * __Rows and Columns__: Cells in a worksheet are organized in rows and columns. The API of a worksheet allows you insert, manipulate and delete rows and columns. Additionally, you can adjust the height of specific rows and the width of columns. For more info about rows refer to the [Working with Rows and Columns]({%slug radspreadprocessing-working-with-rows-and-columns-what-is-row-column%}) section.
             
 
-* __Names (Named Ranges)__: the Worksheet class exposes a Names property of type NameCollection that allows you to create, update and manage names. More about the feature is available in the [Names]({%slug radspreadprocessing-features-named-ranges%}) article.
+* __Names (Named Ranges)__: the __Worksheet__ class exposes a Names property of type NameCollection that allows you to create, update and manage names. More about the feature is available in the [Names]({%slug radspreadprocessing-features-named-ranges%}) article.
             
 
-* __UsedCellRange__: Since each worksheet contains over a million rows and more than sixteen thousand columns, it is unlikely to use the full capacity of a worksheet. Typically, a worksheet uses only a part of the available cells. That said, in a number of scenarios you might want to know which part of the worksheet contains your data and ignore the rest of the cells. The UsedCellRange property of the Worksheet class returns a cell range that starts from cell A1 and holds all cells containing data.
+* __UsedCellRange and GetUsedCellRange()__: Since each worksheet contains over a million rows and more than sixteen thousand columns, it is unlikely to use the full capacity of a worksheet. Typically, a worksheet uses only a part of the available cells. That said, in a number of scenarios you might want to know which part of the worksheet contains your data and ignore the rest of the cells. The UsedCellRange property of the __Worksheet__ class returns a cell range that starts from cell A1 and holds all cells containing data or formatting. With the GetUsedCellRange() method you can pass and IEnumerable&lt;[IPropertyDefinition](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Spreadsheet_PropertySystem_IPropertyDefinition_1.htm)&gt; object to get the used cell range, holding only the cells with specific property definitions. __Example 1__ demonstrates how to get the used cell range of cells with value.
+
+	#### __[C#] Example 1: Get the Used Cell Range of Cells With Value__
+	
+	{{region radspreadprocessing-working-with-worksheets-what-is-worksheet_0}}
+		CellRange result = worksheet.GetUsedCellRange(new IPropertyDefinition[] { CellPropertyDefinitions.ValueProperty });
+	{{endregion}}
+
             
 
 * __Collection of Hyperlinks__: Each worksheet can contain numerous hyperlinks to web pages, particular cells in the workbook or email addresses. More information on the topic is available in the [Hyperlink]({%slug radspreadprocessing-features-hyperlink%}) article.

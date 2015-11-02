@@ -1,6 +1,7 @@
 # The public documentation URL, used for sitemap.xml
 url: "http://docs.telerik.com/devtools/silverlight"
 site_name: Silverlight
+
 destination: _site_SL
 exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 coded-ui-support.md,

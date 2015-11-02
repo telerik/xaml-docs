@@ -34,7 +34,7 @@ position: 12
 
 * [Show/Hide Columns outside of the RadGridView]({%slug radgridview-how-to-show-hide-columns-outside-of-the-radgridview%})
 
-* [Create Custom DateTimePicker Column]({%slug gridview-how-to-create-date-time-picker-column%})
+* [Create Custom Column Editor]({%slug gridview-how-to-create-custom-column-editor%})
 
 
 ## Blog Posts

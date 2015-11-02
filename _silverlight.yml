@@ -1,3 +1,6 @@
+# The public documentation URL, used for sitemap.xml
+url: "http://docs.telerik.com/devtools/silverlight"
+site_name: Silverlight
 destination: _site_SL
 exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 coded-ui-support.md,
@@ -71,10 +74,6 @@ controls/radziplibrary/features/zip-extensions.md]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	
-
-# The public documentation URL, used for sitemap.xml
-url: "http://docs.telerik.com/devtools/silverlight"
-site_name: Silverlight
 
 ## The application virtual path
 baseurl: "/devtools/silverlight"

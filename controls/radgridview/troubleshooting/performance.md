@@ -46,7 +46,7 @@ You might notice a reduced performance of RadGridView control. Below are listed 
 * __AlternateRowStyle__ - using AlternateRowStyle is a time consuming operation. If you just need to set background simulating alternating rows we recommend using [RowStyleSelector]({%slug gridview-rowstyleselector%}).
             
 * __RowStyle__ - using RowStyle is a time consuming operation. Please apply implicit Styles.
-            
+
 __Not Recommended__ (using the RowStyle):
 
 #### __XAML__
@@ -72,6 +72,10 @@ __Recommended__ (using implicit Style):
 	   <telerik:RadGridView ItemsSource="{Binding Data}" />
 	</Grid>
 {{endregion}}
+
+* __IsPropertyChangedAggregationEnabled__ - Introduced as of __Q2 2015 SP1__. Basically, through this property you can control how __RadGridView__ will handle __PropertyChanged__ event. Its default value is __True__, meaning that the event occurrency will be handled on a fixed time period using a __DispatcherTimer__, which improves the rendering performance for multiple value updates. When set to __False__, the resources taken by the aforementioned __DispatcherTimer__ will be freed, thus the overall performance of the control will be improved. 
+
+           
 
 You can also refer to the documentation on [Implicit Styles and NoXaml binaries]({%slug styling-apperance-implicit-styles-overview%}).
         

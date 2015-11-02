@@ -26,10 +26,10 @@ The __Paragraph__ class allows you to separate the content into paragraphs. It i
 Paragraphs can be added as a child of a [BlockContainer](http://www.telerik.com/help/wpf/t_telerik_windows_documents_flow_model_blockcontainerbase.html) element – [Section]({%slug radwordsprocessing-model-section%}), [TableCell]({%slug radwordsprocessing-model-tablecell%}), [Headers and Footers]({%slug radwordsprocessing-model-headers-footers%}), through the __Blocks__ collection.
         
 
-The following code snippet creates and inserts a Paragraph in a Section.
+The code snippet from __Example 1__ creates and inserts a __Paragraph__ in a __Section__.
         
 
-#### __C# Example 1: Insert Paragrpah in Section__
+#### __C# Example 1: Insert Paragraph in Section__
 
 {{region radwordsprocessing-model-paragraph_0}}
     Paragraph paragraph = new Paragraph(document);
@@ -41,10 +41,10 @@ The following code snippet creates and inserts a Paragraph in a Section.
 >tipThe parent BlockContainer element (in this case - the *section*) should belong to the same document that is passed to the constructor of the __Paragraph__.
           
 
-You can add a paragraph at a specific index in the __Blocks__ collection of a __BlockContainer__ using the __Insert()__ method. Here is how to add a paragraph at the beginning of a section:
+You can add a paragraph at a specific index in the __Blocks__ collection of a __BlockContainer__ using the __Insert()__ method. In __Example 2__ is demonstrated how to add a paragraph at the beginning of a section.
         
 
-#### __C# Example 2: Insert Paragrpah at a Specific Position of the Blocks Collection__
+#### __C# Example 2: Insert a Paragraph at a Specific Position of the Blocks Collection__
 
 {{region radwordsprocessing-model-paragraph_1}}
     Paragraph paragraph = new Paragraph(document);
@@ -53,10 +53,10 @@ You can add a paragraph at a specific index in the __Blocks__ collection of a __
 
 
 
-You can also use the __AddParagraph()__ method of the __Blocks__ collection of a __BlockContainer__. The method creates a new __Paragraph__ instance, adds it to the container and returns it:
+You can also use the __AddParagraph()__ method of the __Blocks__ collection of a __BlockContainer__. The method creates a new __Paragraph__ instance, adds it to the container and returns it.
         
 
-#### __C# Example 3: Create New Paragrpah and Add it to a Section__
+#### __C# Example 3: Create a New Paragraph and Add it to a Section__
 
 {{region radwordsprocessing-model-paragraph_2}}
     Paragraph paragraph = section.Blocks.AddParagraph();
@@ -64,10 +64,10 @@ You can also use the __AddParagraph()__ method of the __Blocks__ collection of a
 
 
 
-Inserting a new Paragraph in the document can also be achieved with the [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}) class:
+Inserting a new __Paragraph__ in the document can also be achieved with the [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}) class.
         
 
-#### __C#  Example 4: Insert Paragrpah Using the RadFlowDocumentEditor Class__
+#### __C#  Example 4: Insert a Paragraph Using the RadFlowDocumentEditor Class__
 
 {{region radwordsprocessing-model-paragraph_3}}
     RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
@@ -84,37 +84,37 @@ __Paragraph__ exposes several properties that allow you to customize the layout 
 * __Properties__:  Gets all paragraph properties as ParagraphProperties object. More info on how to use section properties can be found in [Style Properties]({%slug radwordsprocessing-concepts-style-properties%}) article.
             
 
-* __StyleId__:  Represents the ID of the style applied on the Paragraph element.
+* __StyleId__:  Represents the ID of the style applied on the __Paragraph__ element.
             
 
-* __Inlines__: Represents the inline elements in the paragraph. Exposes methods for adding a Run, an ImageInline and a FloatingImage elements.
+* __Inlines__: Represents the inline elements in the paragraph. Exposes methods for adding a __Run__, an __ImageInline__ and a __FloatingImage__ elements.
             
 
-* __FlowDirection__: Specifies the text flow direction. The default value is LeftToRight.
+* __FlowDirection__: Specifies the text flow direction. The default value is *LeftToRight*.
             
 
-* __TextAlignment__: Represents the alignment of the text inside the Paragraph.
+* __TextAlignment__: Represents the alignment of the text inside the __Paragraph__.
             
 
-* __Spacing__: Defines the Paragraph spacing.
+* __Spacing__: Defines the __Paragraph__ spacing.
             
 
-* __KeepOnOnePage__: Indicates if the Paragraph should be rendered on one page when the document is shown in page view mode.
+* __KeepOnOnePage__: Indicates if the __Paragraph__ should be rendered on one page when the document is shown in page view mode.
             
 
-* __KeepWithNextParagraph__: Indicates if the Paragraph should be rendered at least partly on the same page with the following paragraph when this is possible and when the document is shown in page view mode.
+* __KeepWithNextParagraph__: Indicates if the __Paragraph__ should be rendered at least partly on the same page with the following paragraph when this is possible and when the document is shown in page view mode.
             
 
-* __OutlineLevel__: Defines the level of the Paragraph in TOC field. The default value is Level9 – no level.
+* __OutlineLevel__: Defines the level of the __Paragraph__ in TOC field. The default value is Level9 – no level.
             
 
-* __ApplyEastAsianLineBreakingRules__: Specifies whether East-Asian line breaking rules are applied to the Paragraph.
+* __ApplyEastAsianLineBreakingRules__: Specifies whether East-Asian line breaking rules are applied to the __Paragraph__.
             
 
-* __PageBreakBefore__: Specifies if the Paragraph should be rendered on a new page when the document is shown in page view mode.
+* __PageBreakBefore__: Specifies if the __Paragraph__ should be rendered on a new page when the document is shown in page view mode.
             
 
-* __Borders__: Defines the borders of the Paragraph.
+* __Borders__: Defines the borders of the __Paragraph__.
             
 
 * __ContextualSpacing__: Defines whether spacing before/after are ignored when preceding/following paragraph has same paragraph style.
@@ -123,7 +123,7 @@ __Paragraph__ exposes several properties that allow you to customize the layout 
 * __MirrorIndents__: Defines whether left and right indents should be swapped on odd pages.
             
 
-* __Indentation__: Defines a set of indentations which can be applied to a Paragraph element through a ParagraphIndentation object. __ParagraphIndentation__ is a composite one and contains the following properties:
+* __Indentation__: Defines a set of indentations which can be applied to a __Paragraph__ element through a __ParagraphIndentation__ object. __ParagraphIndentation__ is a composite one and its properties are listed below. All the values of these properties are in device independent pixels (1/96 inch).
     
     * __FirstLineIndent__: Indicates the additional indentation which is applied to the first line of the paragraph.
     
@@ -156,7 +156,7 @@ You can add inline elements to a __Paragraph__ instance.
 
 ### Adding a Run
 
-In __Example 5__ is illustrated how to add a run to an existing paragraph:
+In __Example 5__ is illustrated how to add a run to an existing paragraph.
             
 
 #### __C# Example 5: Insert Run in a Paragraph__
@@ -172,7 +172,7 @@ For more information about __Run__ element, you can read [this article]({%slug r
 
 ### Adding an ImageInline
 
-The following code snippet adds an inline image to an existing paragraph:
+__Example 6__ adds an inline image to an existing paragraph.
             
 
 #### __C# Example 6: Insert ImageInline__
@@ -188,7 +188,7 @@ For more information about __ImageInline__ element, you can read [this article](
 
 ### Adding a FloatingImage
 
-The code snippet from __Example 7__  adds a floating image to an existing paragraph:
+The code snippet from __Example 7__  adds a floating image to an existing paragraph.
             
 
 #### __C# Example 7: Add FloatingImage__

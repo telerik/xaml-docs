@@ -27,3 +27,7 @@ In this section you will find:
 * [DataBinding Support Overview]({%slug radlistbox-populating-with-data-binding-support-overview%}) - here you will find information about the supported data sources and RadListBox's data binding basics.
 
 * [Binding to Object]({%slug radlistbox-populating-with-data-binding-to-object%}) - explains how to bind your RadListBox to a collection of objects.
+
+# See Also
+
+ * [Getting Started]({%slug radlistbox-getting-started%})

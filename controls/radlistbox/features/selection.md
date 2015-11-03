@@ -38,7 +38,7 @@ The purpose of the SelectedItem property is to get or set the currently selected
 
 * When your __RadListBox__ is with static data (declared in XAML), the SelectedItem property is of type RadListBoxItem.
 
-#### __C#__
+#### __[C#]  Getting the SelectedItem of type RadListBoxItem__
 
 {{region radlistbox-features-selection_0}}
 	var selectedItem = radListBox.SelectedItem as RadListBoxItem;
@@ -46,7 +46,7 @@ The purpose of the SelectedItem property is to get or set the currently selected
 
 * When your __RadListBox__ is [data bound to a collection of custom objects]({%slug radlistbox-populating-with-data-binding-to-object%}), the SelectedItem is of the type of the custom object.     			
 
-#### __C#__
+#### __[C#]  Getting the SelectedItem of type custom object__
 
 {{region radlistbox-features-selection_1}}
 	var customer = radListBox.SelectedItem as Customer;
@@ -66,7 +66,7 @@ The following example demonstrates the usage of the __SelectedItem__, __Selected
 
 Imagine that you have a business object named Customer with two members(properties): Name and City. And a __RadListBox__ control which is [data bound]({%slug radlistbox-populating-with-data-binding-to-object%}) to a list of Customer objects. 
 
-#### __C#__
+#### __[C#]  Business object named Customer__
 
 {{region radlistbox-features-selection_3}}
 	public class Customer
@@ -76,7 +76,7 @@ Imagine that you have a business object named Customer with two members(properti
 	}	
 {{endregion}}
 
-#### __XAML__
+#### __[XAML]  Initializing of RadListBox__
 
 {{region radlistbox-features-selection_4}}
 	<telerik:RadListBox  Width="300" x:Name="radListBox" 
@@ -93,7 +93,7 @@ When you select a Customer name from the listbox, the SelectedItem property retu
 
 Use the __SelectedIndex__ property to get or set the index of the selected item. For example, by using the __SelectedIndex__ property, you could specify which the default selected item is. 
 
-#### __XAML__
+#### __[XAML]  Setting SelectedIndex__
 
 {{region radlistbox-features-selection_2}}
 	<telerik:RadListBox x:Name="radListBox" Width="200" SelectedIndex="3" />
@@ -104,3 +104,9 @@ Use the __SelectedIndex__ property to get or set the index of the selected item.
 Use the __RadListBox__'s __Text__ property whenever you want to get the string representation of the currently selected item.     	
 
 The __TextPath__ / __TextBinding__ properties specify the path to the property that is used to determine the value of the __Text__ property.
+
+# See Also
+
+ * [Getting Started]({%slug radlistbox-getting-started%})
+ 
+ * [Populating with Data]({%slug radlistbox-populating-with-data-overview%})

@@ -20,7 +20,7 @@ The following example will demonstrate how to bind the __SelectedItemsSource__ p
 
 First, you need to create a new business object named for example Item. Its structure is shown in the code-snippet below:
 
-#### __C#__
+#### __[C#]  Business object Item__
 
 {{region radlistbox-features-selecteditemssource-0}}
 	public class Item
@@ -33,7 +33,7 @@ First, you need to create a new business object named for example Item. Its stru
 	}
 {{endregion}}
 
-#### __VB__
+#### __[VB]  Business object Item__
 
 {{region radlistbox-features-selecteditemssource-0}}
 	Public Class Item
@@ -46,7 +46,7 @@ First, you need to create a new business object named for example Item. Its stru
 
 Next thing you have to do is to create a new class named ViewModel that inherits the Telerik __ViewModelBase__ abstract class – inside it initialize two collections with sample data. The first one will be for the __ItemsSource__ of __RadListBox__ while the second one will be the data source for the __SelectedItemsSource__ property:
 
-#### __C#__
+#### __[C#]  Creating the ViewModel__
 
 {{region radlistbox-features-selecteditemssource-1}}
 	private ObservableCollection<Item> items;
@@ -97,7 +97,7 @@ Next thing you have to do is to create a new class named ViewModel that inherits
 	}
 {{endregion}}
 
-#### __VB__
+#### __[VB]  Creating the ViewModel__
 
 {{region radlistbox-features-selecteditemssource-1}}
 	Private items_Renamed As ObservableCollection(Of Item)
@@ -143,7 +143,7 @@ Next thing you have to do is to create a new class named ViewModel that inherits
 
 Next you should declare the ViewModel as DataContext in your XAML:
 
-#### __XAML__
+#### __[XAML]  Set the ViewModel as DataContext__
 
 {{region radlistbox-features-selecteditemssource-0}}
 	<UserControl.DataContext>
@@ -153,7 +153,7 @@ Next you should declare the ViewModel as DataContext in your XAML:
 
 Finally, all you need to do is to set both created collection of items to the __ItemsSource__ and __ListBoxSelectedItemsBehavior. SelectedItemsSource__:
 
-#### __XAML__
+#### __[XAML]  Set the ItemsSource and SelectedItemsSource__
 
 {{region radlistbox-features-selecteditemssource-1}}
 	<telerik:RadListBox x:Name="radListBox" ItemsSource="{Binding Items}"
@@ -171,4 +171,5 @@ The final result is shown on the snapshot below:
 # See Also
 
 * [Selection]({%slug radlistbox-features-selection%})
+
 * [Binding to Object] ({%slug radlistbox-populating-with-data-binding-to-object%})

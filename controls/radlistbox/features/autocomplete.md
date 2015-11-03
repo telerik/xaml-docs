@@ -48,7 +48,7 @@ Let's have the __RadListBox__ bound to "Customers" collection as explained in [B
 
 Setting __TextPath__ /__TextBinding__ property will allow to use "Name" property of the Customer object for AutoComplete:
 
-#### __XAML__
+#### __[XAML]  Setting TextPath__
 
 {{region radlistbox-features-autocomplete_2}}
 	<telerik:RadListBox  Width="300" x:Name="radListBox"
@@ -71,13 +71,13 @@ Typing, for example "L" will select the corresponding item:
 
 By default the autocomplete feature of __RadListBox__ is always enabled. In order to disable it, you need to set the __RadListBox__'s __IsTextSearchEnabled__ property to __False__.
 
-#### __XAML__
+#### __[XAML]  Setting IsTextSearchEnabled__
 
 {{region radlistbox-features-autocomplete_0}}
 	<telerik:RadListBox x:Name="radListBox" IsTextSearchEnabled="False"/>
 {{endregion}}
 
-#### __C#__
+#### __[C#]  Setting IsTextSearchEnabled__
 
 {{region radlistbox-features-autocomplete_1}}
 	radListBox.IsTextSearchEnabled = false;

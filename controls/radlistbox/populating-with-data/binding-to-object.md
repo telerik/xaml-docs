@@ -24,7 +24,7 @@ In order to bind a __RadListBox__ to a collection of business objects, you shoul
 
 * Add a new __RadListBox__ declaration in your XAML:    	
 
-#### __XAML__
+#### __[XAML]  Declaring RadListBox__
 
 {{region radlistbox-populating-with-data-binding-to-object_0}}
 	<telerik:RadListBox x:Name="radListBox" Width="300" />
@@ -32,7 +32,7 @@ In order to bind a __RadListBox__ to a collection of business objects, you shoul
 
 * Create a new business object named Customer. Its structure is shown on the next code-snippet:
 
-#### __C#__
+#### __[C#]  Business object implementation__
 
 {{region radlistbox-populating-with-data-binding-to-object_1}}
 	public class Customer
@@ -54,7 +54,7 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 * Create a new class named __CustomerViewModel__. In fact, this will be the data source for the listbox. This class has only one purpose - to initialize a collection with sample data.    	
 
-#### __C#__
+#### __[C#]  ViewModel__
 
 {{region radlistbox-populating-with-data-binding-to-object_2}}
 	public class CustomerViewModel
@@ -78,7 +78,7 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 * Declare the __CustomerViewModel__ as a resource in your XAML:    		
 
-#### __XAML__
+#### __[XAML]  Declaring the ViewModel as resource__
 
 {{region radlistbox-populating-with-data-binding-to-object_3}}
 	<UserControl.Resources>
@@ -88,7 +88,7 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 * Update your __RadListBox__ declaration and its __ItemsSource__ property:    		
 
-#### __XAML__
+#### __[XAML]  Setting the ItemsSource__
 
 {{region radlistbox-populating-with-data-binding-to-object_4}}
 	<telerik:RadListBox x:Name="radListBox" Width="300" 
@@ -99,7 +99,7 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 * The final step is to create a custom __DataTemplate__ and set it to the __RadListBox__'s __ItemTemplate__ property.
 
-#### __XAML__
+#### __[XAML]  Declaring the ItemTemplate__
 
 {{region radlistbox-populating-with-data-binding-to-object_5}}
 	<DataTemplate x:Key="ListBoxCustomTemplate">
@@ -125,7 +125,7 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 * Update your __RadListBox__ declaration and set its __ItemTemplate__ property like in the example below:           	
 
-#### __XAML__
+#### __[XAML]  Setting the ItemTemplate__
 
 {{region radlistbox-populating-with-data-binding-to-object_6}}
 	<telerik:RadListBox x:Name="radListBox" Width="300" 
@@ -143,7 +143,7 @@ Instead of creating a custom __ItemTemplate__, an alternative approach is to use
 
 For example, instead of setting the __ItemTemplate__, set the __RadListBox__'s __DisplayMemberPath__ property to point the Name property of the Customer object.
 
-#### __XAML__
+#### __[XAML]  Setting the DisplayMemberPath__
 
 {{region radlistbox-populating-with-data-binding-to-object_7}}
 	<telerik:RadListBox x:Name="radListBox" Width="300" 
@@ -156,3 +156,7 @@ The end result is shown on the next snapshot:
 ![radlistbox populatingwithdata bindingtoobject 020](images/radlistbox_populatingwithdata_bindingtoobject_020.png)
 
 >If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the item would be set to the value returned by the ToString() method of the business object. 
+
+# See Also
+
+ * [Getting Started]({%slug radlistbox-getting-started%})

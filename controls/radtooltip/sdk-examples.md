@@ -1,14 +1,14 @@
 ---
-title: SDK Examples
-page_title: SDK Examples
-description: SDK Examples
+title: Developer Focused Examples
+page_title: Developer Focused Examples
+description: Developer Focused Examples
 slug: radtooltip-sdk-examples
 tags: sdk,examples
 published: False
 position: 1
 ---
 
-# SDK Examples
+# Developer Focused Examples
 
 
 

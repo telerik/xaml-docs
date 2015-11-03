@@ -30,7 +30,7 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 * Add a reference to Telerik.Windows.Controls.dll and add the following XML namespaces to your XAML:
 
-#### __XAML__
+#### __[XAML]  Reference Telerik.Windows.Controls.dll__
 
 {{region radlistbox-features-dragdrop_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -38,7 +38,7 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 * Create a RadListBoxItem Style that will enable the drag of the RadListBoxItem controls:
 
-#### __XAML__
+#### __[XAML]  RadListBoxItem Style__
 
 {{region radlistbox-features-dragdrop_1}}
 	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
@@ -48,7 +48,7 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 * Attach the ListBoxDragDropBehavior behavior:
 
-#### __XAML__
+#### __[XAML]  Attaching the ListBoxDragDropBehavior__
 
 {{region radlistbox-features-dragdrop_2}}
 	<telerik:RadListBox ItemContainerStyle="{StaticResource DraggableListBoxItem}">
@@ -64,7 +64,7 @@ The DragVisualProvider enriches the drag-drop functionality of RadListBox contro
 
 In order to enable the visual DragCue the provider needs to be attached to the ListBox control:        
 
-#### __XAML__
+#### __[XAML]  Attaching the DragVisualProvider__
 
 {{region radlistbox-features-dragdrop_3}}
 	<telerik:RadListBox.DragVisualProvider>
@@ -106,7 +106,7 @@ In scenarios with drag-drop between controls containing different item types the
 
 * Create a new class, deriving from DataConverter:
 
-#### __C#__
+#### __[C#]  A class deriving from DataConverter__
 
 {{region radlistbox-features-dragdrop_0}}
 	public class ProductToOrderConverter: DataConverter
@@ -116,7 +116,7 @@ In scenarios with drag-drop between controls containing different item types the
 
 * Override the GetConvertToFormats() and ConvertTo(). The following method can convert data from Product to Order:
 
-#### __C#__
+#### __[C#]  Overriding the GetConvertToFormats and ConvertTo__
 
 {{region radlistbox-features-dragdrop_1}}
 	public class ProductToOrderConverter : DataConverter
@@ -143,7 +143,7 @@ In scenarios with drag-drop between controls containing different item types the
 
 The final configuration of the RadListBox control in XAML should look like:
 
-#### __XAML__
+#### __[XAML]  Final configuration of RadListBox__
 
 {{region radlistbox-features-dragdrop_6}}
 	<telerik:RadListBox ItemsSource="{Binding Products}" ItemContainerStyle="{StaticResource DraggableListBoxItem}">

@@ -20,7 +20,7 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 * Create a Customer class:
 
-#### __C#__
+#### __[C#]  Business object creation__
 
 {{region radlistbox-features-dragdrop_2}}
 	public class Customer
@@ -41,7 +41,7 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 * Create a ViewModel that initializes the ListBox ItemsSource and the ScheduleView AppointmentsSource and populate them with simple data:
 
-#### __C#__
+#### __[C#]  ViewModel creation__
 
 {{region radlistbox-features-dragdrop_3}}
 	public ObservableCollection<Customer> CustomersSource { get; private set; }
@@ -74,7 +74,7 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 * Create AppointmentToCustomerConverter class that inherits DataConverter:
 
-#### __C#__
+#### __[C#]  AppointmentToCustomerConverter class creation__
 
 {{region radlistbox-features-dragdrop_4}}
 	public class AppointmentToCustomerConverter : DataConverter
@@ -100,7 +100,7 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 * Create custom ScheduleViewDragDropBehavior that inherits ScheduleViewDragDropBehavior:
 
-#### __C#__
+#### __[C#]  ScheduleViewDragDropBehavior__
 
 {{region radlistbox-features-dragdrop_5}}
 	public class ScheduleViewDragDropBehavior : Telerik.Windows.Controls.ScheduleViewDragDropBehavior
@@ -127,7 +127,7 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 * Create a RadListBoxItem Style that will enable the drag of the RadListBoxItem controls:
 
-#### __XAML__
+#### __[XAML]  RadListBoxItem Style__
 
 {{region radlistbox-features-dragdrop_4}}
 	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
@@ -137,7 +137,7 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 * The final configuration of the two controls in XAML should look like:
 
-#### __XAML__
+#### __[XAML]  Configuration of RadListBox and RadScheduleView__
 
 {{region radlistbox-features-dragdrop_5}}
 	<telerik:RadListBox x:Name="ListBox"

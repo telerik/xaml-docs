@@ -20,7 +20,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 1. First you will need to create a __Country__ class with the necessary properties:            
 
-	#### __C#__
+	#### __[C#]  Country class creation__
 
 	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-0}}
 		public class Country
@@ -35,7 +35,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 2. Next you should create a __Countries__ collection in your ViewModel and populate it with some sample data:            
 
-	#### __C#__
+	#### __[C#]  ViewModel declaration___
 
 	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-1}}
 		public class ViewModel : ViewModelBase
@@ -83,7 +83,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 3. In the App.xaml file merge the necessary __ResourceDictionary__ for the RadListBox control based on the theme you are using. This example uses the Office_Black theme:            
 
-	#### __XAML__
+	#### __[XAML]  Merging the necessary ResourceDictionary__
 
 	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-0}}
 		<Application.Resources>
@@ -98,7 +98,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 4. Next you will need to create a Style in the same file that targets __ListBoxDragVisual__ and set its Foreground, Background, BorderBrush and Template properties:           
 
-	#### __XAML__
+	#### __[XAML]  Style targeting ListBoxDragVisual__
 
 	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-1}}
 		<Application.Resources>
@@ -161,7 +161,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 5. Finally you will need to declare the __RadListBox__ control. The xaml of the control should look like this:            
 
-	#### __XAML__
+	#### __[XAML]  RadListBox declaration__
 
 	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-2}}
 		<telerik:RadListBox ItemsSource="{Binding Countries}" 

@@ -1,7 +1,7 @@
 ---
-title: SDK Examples
-page_title: SDK Examples
-description: SDK Examples
+title: Developer Focused Examples
+page_title: Developer Focused Examples
+description: Developer Focused Examples
 slug: radpdfprocessing-sdk-examples
 tags: sdk,examples
 published: True

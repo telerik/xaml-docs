@@ -26,7 +26,8 @@ The settings under the __General__ category affect all of the installed __Teleri
 
 ## Project setup
 
-__Add referenced assemblies to solution and source control__ - Sets the default value for the __Add referenced assemblies to solution__ option in the Project Configuration Wizard
+{% if site.site_name == 'Silverlight' %}__Add referenced assemblies to solution and source control__ - Sets the default value for the __Add referenced assemblies to solution__ option in the Project Configuration Wizard{% endif %}{% if site.site_name == 'WPF' %}__Add referenced assemblies to solution and source control__ - When enabled, the referenced assemblies will be copied to the solution when using Telerik wizards{% endif %}
+
         
 
 ## Project Upgrade Notifications for Detected Local Distributions

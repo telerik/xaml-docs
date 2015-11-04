@@ -203,8 +203,10 @@ __RadFlowDocumentEditor__ provides several methods for inserting [ImageInline]({
 
 {{region radwordsprocessing-editing-radflowdocumenteditor_8}}
     public ImageInline InsertImageInline(ImageSource source, Size size)
+    public ImageInline InsertImageInline(Stream stream, string extension)
     public ImageInline InsertImageInline(Stream stream, string extension, Size size)
     public FloatingImage InsertFloatingImage(ImageSource source, Size size)
+    public FloatingImage InsertFloatingImage(Stream stream, string extension)
     public FloatingImage InsertFloatingImage(Stream stream, string extension, Size size)
 {{endregion}}
 

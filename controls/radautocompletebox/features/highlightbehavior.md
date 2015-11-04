@@ -18,7 +18,7 @@ The following example will demonstrate how to implement a custom __HighlightBeha
 
 Firstly you would need to create a custom class that inherits from the default __HighlightBehavior__ of __RadAutoCompleteBox__:
 
-#### __C#__
+#### __[C#] Creation of custom class__
 
 {{region radautocompletebox-features-highlightbehavior-0}}
 	public class MyHighlightBehavior : HighlightBehavior
@@ -27,7 +27,7 @@ Firstly you would need to create a custom class that inherits from the default _
 	}
 {{endregion}}
 
-#### __VB__
+#### __[VB] Creation of custom class__
 
 {{region radautocompletebox-features-highlightbehavior-0}}
 	Public Class MyHighlightBehavior
@@ -38,7 +38,7 @@ Firstly you would need to create a custom class that inherits from the default _
 
 Next thing you have to do is to override the __FindHighlightedIndex()__ method of the behavior and implement the needed custom logic. For this scenario you will need to return the index of the last item of the filtered items if there isn't exact match:
 
-#### __C#__
+#### __[C#] Overriding FindHighlightedIndex__
 
 {{region radautocompletebox-features-highlightbehavior-1}}
 	public override int FindHighlightedIndex(string searchText, System.Collections.IList filteredItems, IEnumerable<object> escapedItems, string textSearchPath, TextSearchMode textSearchMode)
@@ -62,7 +62,7 @@ Next thing you have to do is to override the __FindHighlightedIndex()__ method o
 	}
 {{endregion}}
 
-#### __VB__
+#### __[VB] Overriding FindHighlightedIndex__
 
 {{region radautocompletebox-features-highlightbehavior-1}}
 	Public Overrides Function FindHighlightedIndex(ByVal searchText As String, ByVal filteredItems As System.Collections.IList, ByVal escapedItems As IEnumerable(Of Object), ByVal textSearchPath As String, ByVal textSearchMode As TextSearchMode) As Integer
@@ -70,15 +70,15 @@ Next thing you have to do is to override the __FindHighlightedIndex()__ method o
 	
 		If items IsNot Nothing Then
 			If items.Any(Function(x) x.Name = searchText) Then
-				' there is an exact match
+				'there is an exact match
 				Dim matchedItem = items.First(Function(x) x.Name = searchText)
-				' return the index of the matched item
+				'return the index of the matched item
 				Return items.IndexOf(matchedItem)
 			End If
 		End If
 	
-		' there isn't exact match
-		' return the index of the last item from the filtered items 
+		'there isn't exact match
+		'return the index of the last item from the filtered items 
 		Return items.Count - 1
 	End Function
 {{endregion}}
@@ -89,7 +89,7 @@ Next thing you have to do is to override the __FindHighlightedIndex()__ method o
 
 After the behavior is implemented you have to set it as __HighlightBehavior__ of __RadAutoCompleteBox__ as shown below:
 
-#### __XAML__
+#### __[XAML] Setting the newly created behavior__
 
 {{region radautocompletebox-features-highlightbehavior-0}}
 	<telerik:RadAutoCompleteBox ItemsSource="{Binding Items}"

@@ -22,7 +22,7 @@ The following example will demonstrate how you could easily create __BoxesItemTe
 
 Firstly you need to create a new business object named for example Country. Its structure is shown in the code-snippet below:
 
-#### __C#__
+#### __[C#] Creation of the business object__
 
 {{region radautocompletebox-customizing-boxes-itemtemplate-0}}
 	public class Country
@@ -45,7 +45,7 @@ After that you need to create the ViewModel and populate it with some data.
 
 Next a valid DataTemplate with the correct bindings for the __Name__ and __Flag__ property of the ItemsSource items should be created: 
 
-#### __XAML__
+#### __[XAML] Declaring the BoxesItemTemplate__
 
 {{region radautocompletebox-customizing-boxes-itemtemplate-1}}
 	<DataTemplate x:Key="CustomBoxesItemTemplate">
@@ -66,7 +66,7 @@ The __ContinentToColorConverter__ converts the __Continent__ property of the ite
 
 Finally you will need to declare __RadAutoCompleteBox__ in the xaml and set its __ItemsSource__, __DisplayMemberPath__ and __BoxesItemTemplate__ properties:
 
-#### __XAML__
+#### __[XAML] Setting the BoxesItemTemplate__
 
 {{region radautocompletebox-customizing-boxes-itemtemplate-2}}
 	 <telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" 

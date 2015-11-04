@@ -16,7 +16,7 @@ A tab stop is a term used to describe the location the caret stops after tab key
 
 The __TabStop__ class is immutable, meaning you should set its properties when initializing an instance.
 
-* __Position__: The position of the tab stop.
+* __Position__: The position of the tab stop. The value is in device independent pixels (1/96 inch).
 
 * __Type__: The type of the tab stop, defines the behavior of the tab stop. All possibilities are described with the [TabStopType enumeration](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Flow_Model_Styles_TabStopType.htm):
 

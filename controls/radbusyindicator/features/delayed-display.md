@@ -18,7 +18,7 @@ The following example will create a __RadBusyIndicator__ and its only content wi
 
 First you have to declare the controls in XAML or code-behind:
 
-#### __XAML__
+#### __[XAML] Defining RadBusyIndicator and a Button as content__
 
 {{region radbusyindicator-features-delayed-display_0}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator"
@@ -37,7 +37,7 @@ Finally, in the code-behind you have to handle the click event for the button an
 
 >tipTo read more about enabling the __RadBusyIndicator__ look [here]({%slug radbusyindicator-features-enabling-the-indicator%}).
 
-#### __C#__
+#### __[C#] Enable RadBusyIndicator__
 
 {{region radbusyindicator-features-delayed-display_1}}
 	private void showIndicatorButton_Click( object sender, RoutedEventArgs e )
@@ -50,7 +50,7 @@ As a result when the user clicks on a button after a delay of five seconds, the 
 
 ![](images/radbusyindicator_features_delayed_display_010.png)
 
->tipThe __RadBusyIndicator__ control also gives you a read-only boolean property - __IsBusyIndicationVisible__. Its value will be equal to __True__ whenever the __RadBusyIndicator__ is enabled and visualized.To check whether the __RadBusyIndicator__ is enabled, you can observe its __IsBusy__ boolean property.
+>tip __RadBusyIndicator__ also gives you a read-only boolean property - __IsBusyIndicationVisible__. Its value will be equal to __True__ whenever the __RadBusyIndicator__ is enabled and visualized.To check whether the __RadBusyIndicator__ is enabled, you can observe its __IsBusy__ boolean property.
 
 # See Also
 

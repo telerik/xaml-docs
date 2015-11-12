@@ -10,15 +10,15 @@ position: 2
 
 # Report Progress Value
 
->tip To read more about the determined and indetermined __RadBusyIndicator__ control's modes, look [here]({%slug radbusyindicator-features-progress-determination%}).
-
 This topic will describe the scenario in which you have a determined __RadBusyIndicator__ control which you want to be available for a predefined amount of time. In this case the __RadBusyIndicator__ provides you out of the box with a way to visualize the progress.
+
+>tip To read more about the determined and indetermined __RadBusyIndicator__ control's modes, look [here]({%slug radbusyindicator-features-progress-determination%}).
 
 In the following example the only content of the __RadBusyIndicator__ control is a __Button__. When the user clicks on that button the __RadBusyIndicator__ will be enabled for a predefined amount of time. In this example, this is achieved by using a __DispatcherTimer__ timer object which __Tick__ event will change the __RadBusyIndicator's__ progress value.
 
 The first thing you have to do is to specify that you want your indicator to be determined. You do this by setting its __IsIndetermined__ boolean property to __False__.
 
-#### __XAML__
+#### __[XAML] Setting IsIndeterminate__
 
 {{region radbusyindicator-features-report-progress-value_0}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator" 
@@ -42,7 +42,7 @@ In the code behind you have to:
 
 * Handle the click event for the button:          	
 
-	* Enable the __RadBusyIndicator__ by setting its __IsBusy__ property to __True__.
+	* Enable __RadBusyIndicator__ by setting its __IsBusy__ property to __True__.
 
 	* Start the timer which will represent the ongoing process.
 
@@ -53,10 +53,10 @@ In the code behind you have to:
 	* Disable the __RadBusyIndicator__ by setting its __IsBusy__ property to __False__ in a specific condition.
 
 >In order to use the __DispatcherTimer__ and the __INotifyPropertyChanged__ interface you will need to add the following usings/imports: 
->* System.ComponentModel
->* System.Windows.Threading
+>* __System.ComponentModel__
+>* __System.Windows.Threading__
 
-#### __C#__
+#### __[C#] ProgressDetermination class implementation__
 
 {{region radbusyindicator-features-report-progress-value_1}}
 	public partial class ProgressDetermination : UserControl, INotifyPropertyChanged
@@ -105,7 +105,7 @@ In the code behind you have to:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] ProgressDetermination class implementation__
 
 {{region radbusyindicator-features-report-progress-value_2}}
 	Public Class ProgressDetermination

@@ -43,14 +43,6 @@ In this case you can use the __Display__ attribute and set the __AutoGenerateFil
 	        get;
 	        set;
 	    }
-		[Browsable(false)]
-		[Display(ShortName = "Company's Address")]
-		public string CompanyAddress
-		{
-		    get;
-		    set;
-		}
-
 	}
 	{{endregion}}
 

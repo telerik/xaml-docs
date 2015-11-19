@@ -11,7 +11,7 @@ position: 0
 # Filter RadGridView
 
 
-See this [article](datafilter-getting-started#filter-radgridview) for more information.
+See this [article]({%slug datafilter-getting-started%}#filter-radgridview) for more information.
         
 
 # See Also

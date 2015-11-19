@@ -100,11 +100,12 @@ For example, you can apply the attribute like so:
 
 #### [C#] Example 2: Setting a property to not be displayed
 
+
 {{region raddatafilter-features-data-annotations_2}}
 	
 	[Browsable(false)]
-	[Display(ShortName = "Company's Name")]
-	public string CompanyName
+	[Display(ShortName = "Company's Address")]
+	public string CompanyAddress
 	{
 	    get;
 	    set;

@@ -259,8 +259,7 @@ The filtered collection inside the __RadDataFilter__ can be accessed via the __F
 	        <RowDefinition Height="Auto" />
 	        <RowDefinition />
 	    </Grid.RowDefinitions>
-	    <telerik:RadDataFilter x:Name="radDataFilter"
-	                           Source="{Binding Clubs}"/>
+	    <telerik:RadDataFilter x:Name="radDataFilter"/>
 	    <ListBox ItemsSource="{Binding FilteredSource,ElementName=radDataFilter}"
 	             Grid.Row="1"/>
 	</Grid>
@@ -268,7 +267,7 @@ The filtered collection inside the __RadDataFilter__ can be accessed via the __F
 
 
 
-![Rad Data Filter raddatafilter gettingstarted 02](images/RadDataFilter_raddatafilter_gettingstarted_02.png)
+![Rad Data Filter raddatafilter gettingstarted 02](images/RadDataFilter_raddatafilter_gettingstarted_03.png)
 
 # See Also
 

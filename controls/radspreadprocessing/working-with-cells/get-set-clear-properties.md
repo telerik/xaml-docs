@@ -234,7 +234,7 @@ __Example 6__ creates two PatternFill objects with a DiagonalStripe and Solid Pa
 
 
 
-The result of >Example 6 is illustrated in __Figure 2__
+The result of __Example 6__ is illustrated in __Figure 2__.
 
 Figure 2: Applied PatternFill
 ![Rad Spread Processing Working With Cells Get Set Clear Properties 02](images/RadSpreadProcessing_Working_With_Cells_Get_Set_Clear_Properties_02.png)

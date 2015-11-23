@@ -10,13 +10,13 @@ position: 1
 
 # How to group items
 
-In __RadListBox__ you can easily group the items based on their properties and with the help of __CollectionViewSource__ and __GroupStyle__. This feature not only provides a nice visualization of the items, but using the __GroupStyle__ the groups could be easily customized as desired.
+In __RadListBox__ you can easily group the items based on their properties with the help of __CollectionViewSource__ and __GroupStyle__. This grouping feature not only provides a nice visualization of the items, but using the __GroupStyle__, you can easily customize the groups.
 
-The following example will demonstrate how to bind the __ItemsSource__ property of __RadListBox__ to a __CollectionViewSource__ of custom objects grouped by one of their properties. In order the scrolling of the grouped items to be possible the __IsScrollIntoViewEnabled__ property should be set to "False".
+The following example will demonstrate how to bind the __ItemsSource__ property of __RadListBox__ to a __CollectionViewSource__ of custom objects grouped by one of their properties. In order for the scrolling of the grouped items to be possible, you must set the __IsScrollIntoViewEnabled__ property to "False".
 
->important The __IsScrollIntoViewEnabled__ was introduced with SP1 Q3 2015 and determines whether the selected item will automatically be scrolled into the view. When it is set to True (this is the default value) and an item gets selected the item is brought into view by scrolling to it. As that behavior is not expected when grouping is used the property needs to be set to False – thus it will be allowed the selection of an item in a group without the need of scrolling to that group.
+>important The __IsScrollIntoViewEnabled__ was introduced with SP1 Q3 2015 and determines whether the selected item will automatically be scrolled into the view. When it is set to True (this is the default value) and an item gets selected, the item is brought into view by scrolling to it. Because that behavior is not expected when grouping is used, the property needs to be set to False – thus it will be allowed the selection of an item in a group without the need of scrolling to that group.<<COMMENT: This last phrase does not make sense. I think you can fix it if you say what selects the group.>>
 
-First, you need to create a new business object named for example Item. The implementation of the class is presented below:
+In the example below, you create a new business object named Item. The implementation of the class is presented below:
 
 #### __[C#]  Business object Item__
 
@@ -37,7 +37,7 @@ First, you need to create a new business object named for example Item. The impl
 	End Class
 {{endregion}}
 
-Next thing you have to do is to create a new class named ViewModel – inside it you need to initialize two collections. The first collection will be used as a source for the __CollectionViewSource__ while the second one will be the __CollectionViewSource__ itself:
+Next, you create a new class named ViewModel – inside it you need to initialize two collections. The first collection will be used as a source for the __CollectionViewSource__ while the second one will be the __CollectionViewSource__ itself:
 
 #### __[C#]  ViewModel creation__
 
@@ -96,7 +96,7 @@ Next thing you have to do is to create a new class named ViewModel – inside it
 	End Sub
 {{endregion}}
 
-Next you should declare the ViewModel as DataContext in your XAML:
+Next, you should declare the ViewModel as DataContext in your XAML:
 
 #### __[XAML]  Set the ViewModel as DataContext__
 

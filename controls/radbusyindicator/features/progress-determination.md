@@ -10,7 +10,7 @@ position: 1
 
 # Progress Determination
 
-The __RadBusyIndicator__ control supports two main modes of execution. It can be either determined or indetermined. These correspond to the following scenarios: 
+__RadBusyIndicator__ control supports two main modes of execution. It can be either determined or indetermined. These correspond to the following scenarios: 
 
 * a specific period of time
 
@@ -24,7 +24,7 @@ If you need a determined __RadBusyIndicator__ you have to set the value of the _
 
 Here is an example of creating a determined __RadBusyIndicator__ control:
 
-#### __XAML__
+#### __[XAML] Setting IsIndeterminate__
 
 {{region radbusyindicator-features-progress-determination_0}}
 	<telerik:RadBusyIndicator IsIndeterminate="False" />

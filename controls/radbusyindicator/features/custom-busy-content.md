@@ -12,13 +12,13 @@ position: 3
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
 
-The __RadBusyIndicator__ exposes a __BusyContentTemplate__ property of type __DataTemplate__. Through this template you can customize what is shown in the __RadBusyIndicator's__ content while the indicator is active.
+__RadBusyIndicator__ exposes a __BusyContentTemplate__ property of type __DataTemplate__. Through this template you can customize what is shown in the __RadBusyIndicator's__ content while the indicator is active.
 
 This topic will show you how to create and apply a simple __BusyContentTemplate__ to your __RadBusyIndicator__ control. For the purpose of this example, this topic will create a __DispatcherTimer__ timer and while this timer is on, the __RadBusyIndicator__ will also be active. To start the timer the user will have to click on a button. The example also includes a counter representing the progress value which will count down from 100 to 0 percent and will be visible through the __RadBusyIndicator's__ busy content.
 
 To do this, first you have to define your __RadBusyIndicator__ control:
 
-#### __XAML__
+#### __[XAML] Defining RadBusyIndicator__
 
 {{region radbusyindicator-features-custom-busy-content_0}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator"
@@ -39,7 +39,7 @@ To do this, first you have to define your __RadBusyIndicator__ control:
 
 In the __RadBusyIndicator's__ definition you have indicated the __BusyContentTemplate__, that's why you have to define this __DataTemplate__ as well. Here is an example:
 
-#### __XAML__
+#### __[XAML] Defining DataTemplate__
 
 {{region radbusyindicator-features-custom-busy-content_1}}
 	<DataTemplate x:Key="BusyContentDataTemplate">
@@ -77,7 +77,7 @@ In the code behind you have to:
 >* __System.ComponentModel__
 >* __System.Windows.Threading__
 
-#### __C#__
+#### __[C#] BusyContentTemplateSample class implementation__
 
 {{region radbusyindicator-features-custom-busy-content_2}}
 	public partial class BusyContentTemplateSample : UserControl, INotifyPropertyChanged
@@ -127,7 +127,7 @@ In the code behind you have to:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] BusyContentTemplateSample class implementation__
 
 {{region radbusyindicator-features-custom-busy-content_3}}
 	Public Partial Class BusyContentTemplateSample

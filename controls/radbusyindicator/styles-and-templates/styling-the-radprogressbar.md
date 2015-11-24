@@ -58,7 +58,7 @@ Here is the result:
 
 Here is a simple example of creating a custom style for your __RadProgressBar__:
 
-#### __XAML__
+#### __[XAML] Custom RadProgressBar Style__
 
 {{region radbusyindicator-styles-and-templates-styling-the-radprogressbar_0}}
 	<Style x:Key="CustomProgressBarStyle" TargetType="telerik:RadProgressBar">
@@ -83,7 +83,7 @@ Here is a simple example of creating a custom style for your __RadProgressBar__:
 
 Use the __ProgressBarStyle__ property to apply the style to the __RadBusyIndicator__:
 
-#### __XAML__
+#### __[XAML] Setting the ProgressBarStyle__
 
 {{region radbusyindicator-styles-and-templates-styling-the-radprogressbar_1}}
 	<telerik:RadBusyIndicator ProgressBarStyle="{StaticResource CustomProgressBarStyle}" />

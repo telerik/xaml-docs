@@ -24,7 +24,7 @@ Here is a snapshot of the final result:
 
 >tipWe will create __RadWindow__ as a user control, the approach is explained in details [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-#### __XAML__
+#### __[XAML] RadWindow declaration__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_0}}
 	<telerik:RadWindow x:Class="RadWindow1"
@@ -49,7 +49,7 @@ Here is a snapshot of the final result:
 
 Here is the sample data that is going to be retrieved:
 
-#### __C#__
+#### __[C#] Retrieved sample data__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_1}}
 	public class Employee
@@ -77,7 +77,7 @@ Here is the sample data that is going to be retrieved:
 	}
 {{endregion}}
 
-#### __C#__
+#### __[C#] EmployeeService class__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_2}}
 	public class EmployeeService
@@ -97,7 +97,7 @@ Here is the sample data that is going to be retrieved:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] Retrieved sample data__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_3}}
 	Public Class Employee
@@ -140,7 +140,7 @@ Here is the sample data that is going to be retrieved:
 	End Class
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] EmployeeService class__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_4}}
 	Public Class EmployeeService
@@ -168,7 +168,7 @@ Here is the sample data that is going to be retrieved:
 >In order to use the BackgroundWorker you will have to add the following using/import in your code:
 >* System.ComponentModel
 
-#### __C#__
+#### __[C#] BackgroundWorker usage__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_5}}
 	public partial class RadWindow1
@@ -207,7 +207,7 @@ Here is the sample data that is going to be retrieved:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] BackgroundWorker usage__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_6}}
 	Public Class RadWindow1
@@ -247,14 +247,14 @@ Here is the sample data that is going to be retrieved:
 
 * Then just open the RadWindow:
 
-#### __C#__
+#### __[C#] Open RadWindow__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_7}}
 	var radWindow = new RadWindow1();
 	radWindow.Show();
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] Open RadWindow__
 
 {{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_8}}
 	Dim radWindow As RadWindow1 = New RadWindow1()

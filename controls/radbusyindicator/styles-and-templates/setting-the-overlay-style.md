@@ -16,7 +16,7 @@ The __RadBusyIndicator__ exposes a __OverlayStyle__ property which allows you to
 
 To do this, first you have to define your __RadBusyIndicator__ control:
 
-#### __XAML__
+#### __[XAML] Defining RadBusyIndicator__
 
 {{region radbusyindicator-styles-and-templates-setting-the-overlay-style_0}}
 	<Grid x:Name="LayoutRoot"
@@ -28,7 +28,7 @@ To do this, first you have to define your __RadBusyIndicator__ control:
 
 In the __RadBusyIndicator's__ definition you have indicated the __OverlayStyle__, that's why you have to define this style in the resources of your __UserControl__. Here is an example:
 
-#### __XAML__
+#### __[XAML] OverlayStyle declaration__
 
 {{region radbusyindicator-styles-and-templates-setting-the-overlay-style_1}}
 	<UserControl.Resources>
@@ -64,7 +64,7 @@ In the __RadBusyIndicator's__ definition you have indicated the __OverlayStyle__
 
 >tipYou can remove the __RadBusyIndicator__ busy content's background by setting the control's __Background__ property to __Transparent__.
 
-#### __XAML__
+#### __[XAML] Remove the BusyContent's Background__
 
 {{region radbusyindicator-styles-and-templates-setting-the-overlay-style_2}}
 	<telerik:RadBusyIndicator Background="Transparent"/>

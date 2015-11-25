@@ -14,13 +14,14 @@ When you are creating an application for a broad audience, integrating some kind
       
 In order to use this service, first you should login to the [Telerik Platform](https://platform.telerik.com/), create an Analytics project and get a unique product key for your application. For more information please check out the [Introduction to Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction) topic.
       
-Then you can create a new Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} Application with enabled Analytics support or you can enable it in an existing project. 
+{% if site.site_name == 'Silverlight' %}
+Then you can create a new Telerik Silverlight Application with enabled Analytics support or you can enable it in an existing project. 
       
 Both options are explained in details below.
       
 ## How to create a new project supporting Analytics
      
-Using the {% if site.site_name == 'WPF' %}[Telerik Visual Extensions]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}){% endif %}{% if site.site_name == 'Silverlight' %}[Telerik Visual Extensions]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}){% endif %} you can quickly create an application configured to use UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}.
+Using the [Telerik Visual Extensions]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}) you can quickly create an application configured to use UI for Silverlight.
         
 After including the needed Telerik assemblies and setting a theme in the __New Project Wizard__, you will reach the following configuration screen:
 ![eqatec install 3](images/eqatec_install3.png)
@@ -48,6 +49,7 @@ The wizard references two additional Telerik assemblies ( __EQATEC.Analytics.Mon
 where [product_key] will be replaced with the entered in the __New Project Wizard__ value.
 
 >tipThe code related to Telerik Analytics is commented when a new project is created without enabling the Analytics option.
+{% endif %}
     
 ## How to add support to existing applications
       

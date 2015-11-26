@@ -102,6 +102,6 @@ With this approach we are re-defining the template of the cells for that column.
 
  * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 
- * [Create Custom DateTimePicker Column]({%slug gridview-how-to-create-date-time-picker-column%})
+ * [Create Custom Column Editor]({%slug gridview-how-to-create-custom-column-editor%})
 
  * [Create Custom Editor with RadGridView]({%slug radgridview-howto-create-custom-editor%})

@@ -26,4 +26,4 @@ You could overcome that with a few lines of code using __GridViewColumn.CellEdit
 
  * [Setting CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 
- * [Create Custom DateTimePicker Column]({%slug gridview-how-to-create-date-time-picker-column%})
+ * [Create Custom Column Editor]({%slug gridview-how-to-create-custom-column-editor%})

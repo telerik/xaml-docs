@@ -15,7 +15,7 @@ position: 1
 This tutorial will take you through the creation of a sample application that uses RadWordsProcessing.
       
 
-* [Assembly Reference](#assembly-references)
+* [Assembly References](#assembly-references)
 
 * [Creating RadFlowDocument from Code](#creating-radflowdocument-from-code)
 

@@ -157,7 +157,7 @@ After that, you should handle the __DragDropCompleted__ of the first list box an
 #### __C#__
 
 {{region dragdropmanager-payloadmanager_09}}
-	DragDropManager.AddDragOverHandler(this.ListBox2, OnDragOver);
+	DragDropManager.AddDragDropCompletedHandler(this.ListBox2, OnDragDropCompleted);
 {{endregion}}
 
 #### __C#__

@@ -15,7 +15,7 @@ position: 1
 This tutorial will take you through the creation of a sample application that uses RadWordsProcessing.
       
 
-* [Assembly Reference](#assembly-references)
+* [Assembly References](#assembly-references)
 
 * [Creating RadFlowDocument from Code](#creating-radflowdocument-from-code)
 
@@ -44,7 +44,7 @@ Here is a list of assemblies that contain the __RadWordsProcessing__ functionali
 Here is how to create a [RadFlowDocument]({%slug radwordsprocessing-model-radflowdocument%}) and insert some text content with the help of [RadFlowDocumentEditor]({%slug radwordsprocessing-editing-radflowdocumenteditor%}).
         
 
-#### __C#__
+#### __[C#] Example 1: Create RadFlowDocument Programmatically__
 
 {{region radwordsprocessing-getting-started_0}}
 	            RadFlowDocument document = new RadFlowDocument();
@@ -68,7 +68,7 @@ You need to add using directive to the following namespaces:
 Exporting the document to Docx file can be achieved with the [DocxFormatProvider]({%slug radwordsprocessing-formats-and-conversion-docx-docxformatprovider%}). Here is how to create a provider instance and save a document with it:
         
 
-#### __C#__
+#### __[C#] Example 2: Export RadFlowDocument to Docx__
 
 {{region radwordsprocessing-getting-started_1}}
 	            using (Stream output = new FileStream("output.docx", FileMode.OpenOrCreate))
@@ -82,3 +82,11 @@ Exporting the document to Docx file can be achieved with the [DocxFormatProvider
 
 More information about the supported formats and features can be found [here]({%slug radwordsprocessing-formats-and-conversion%}).
         
+
+# See Also
+
+* [Model]({%slug radwordsprocessing-model%})
+
+* [Developer Focused Examples]({%slug radwordsprocessing-sdk-examples%})
+
+

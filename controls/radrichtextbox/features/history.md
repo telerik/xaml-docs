@@ -15,8 +15,7 @@ position: 3
 The __RadDocument__ class can track the history of any actions taken against its content. In this way it allows an undo and redo functionality to be easily implemented. The history is implemented via the __DocumentHistory__ class and the __RadDocument__ exposes the __History__ property of this type. The __RadRichTextBox__ automatically adds and removes items from the history, when its API methods get called, but you are allowed to manually work with the history as well.
       
 
->tipTo learn more about the __DocumentHistory API__ read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_history_documenthistory.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_history_documenthistory.html){% endif %}
-          .
+>tipTo learn more about the __DocumentHistory API__ read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/t_telerik_windows_documents_history_documenthistory.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/t_telerik_windows_documents_history_documenthistory.html){% endif %}.
         
 
 This topic will explain you how to:
@@ -29,7 +28,7 @@ This topic will explain you how to:
 
 * [Change History Depth](#change-history-depth)
 
-* [Preserv History Using RadDocumentEditor](#preserve-history-using-raddocumenteditor)
+* [Preserve History Using RadDocumentEditor](#preserve-history-using-raddocumenteditor)
 
 ## Enable/Disable History
 

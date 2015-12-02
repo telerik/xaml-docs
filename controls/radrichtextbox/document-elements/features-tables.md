@@ -12,30 +12,31 @@ position: 6
 
 
 
-The __RadRichTextBox__ is capable of displaying tables. To add a table to the document you can use one of the following approaches:
+The __RadRichTextBox__ is capable of displaying and editing tables. You can use one of the following approaches to add or modify a table:
       
 
-* [Programmatically via RadRichTextBox's API](#creating-a-table-programmatically-via-radrichtextbox-api)
+* [Programmatically via RadRichTextBox's API](#using-radrichtextboxs-api)
 
-* [Via the built-in UI](#creating-a-table-via-the-built-in-ui)
+	* [Creating a Table Programmatically](#creating-a-table-programmatically)
+	
+	* [Formatting a Table at Runtime](#formatting-a-table-at-runtime)
 
-The same approaches can be adopted when formatting the table:
+* [Via the Built-in UI](#using-the-built-in-ui)
 
-* [Runtime via RadRichTextBox's API](#formatting-a-table-at-runtime-via-radrichtextbox's-api)
+	* [Creating a Table](#creating-a-table)
+	
+	* [Formatting a Table](#formatting-a-table)
 
-* [Via the built-in UI](#formatting-a-table-via-the-built-in-ui)
+## Using RadRichTextBox's API
 
-## Creating a Table Programmatically via RadRichTextBox API
+### Creating a Table Programmatically
 
 >tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
 
 
-The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
-        
+The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
 
-Here is an example done in the code-behind.
-
-#### __C#__
+#### __[C#] Example 1: Create a Table in Code-Behind__
 
 {{region radrichtextbox-features-document-elements-tables_2}}
     RadDocument document = new RadDocument();
@@ -85,7 +86,7 @@ Here is an example done in the code-behind.
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Create a Table in Code-Behind__
 
 {{region radrichtextbox-features-document-elements-tables_3}}
     Dim document As New RadDocument()
@@ -140,7 +141,19 @@ Here is a snapshot of the result.
 ![Rad Rich Text Box Features Layout Elements Tables 01](images/RadRichTextBox_Features_LayoutElements_Tables_01.png)
 
 The __RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
-        
+
+
+>tipYou can obtain an existing table from the document using the EnumerateChildrenOfType() method as demonstrated in __Example 2__. For more information about how to select a table, please check [this article]({%slug radrichtextbox-features-selection%}).    
+
+#### __[C#] Example 2: Get a Table from RadDocument__
+{{region radrichtextbox-features-document-elements-tables_4}}
+	Table table = this.radRichTextBox.Document.EnumerateChildrenOfType<Table>().First();
+{{endregion}}
+
+#### __[VB.NET] Example 2: Get a Table from RadDocument__
+{{region radrichtextbox-features-document-elements-tables_5}}
+	Dim table As Table = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of Table)().First()
+{{endregion}}
 
 * __DeleteTable__: Deletes the currently selected table.
             
@@ -151,12 +164,11 @@ The __RadRichTextBox__ exposes the following methods that regard the creation or
 * __DeleteTableRow__: Deletes the currently selected row.
             
 
-* __InsertTable__: Inserts a table. Allows you to specify the number of rows and columns. Has an overload that allows you to specify if a Paragraph should be inserted before the table.
-            
+* __InsertTable__: Inserts a table. Allows you to specify the number of rows and columns. Has an overload that allows you to specify if a Paragraph should be inserted before the table.            
         
 >important In versions earlier than Q1 2015 before and after each Table element is inserted a Paragraph. When the Table is inserted via the UI or the InsertTable() method this is done automatically, otherwise paragraphs should be inserted manually. In next versions the Paragraph before the Table is not mandatory.
 
-* __InsertTableColumn__: Inserts a column at the end.
+* __InsertTableColumn__: Inserts a column at the end of the table.
             
 
 * __InsertTableColumnToTheLeft__: Inserts a column to the left of the selected one.
@@ -165,16 +177,131 @@ The __RadRichTextBox__ exposes the following methods that regard the creation or
 * __InsertTableColumnToTheRight__: Inserts a column to the right of the selected one.
             
 
-* __InsertTableRow__: Inserts a row at the end.
+* __InsertTableRow__: Inserts a row at the end of the table.
             
 
 * __InsertTableRowAbove__: Inserts a row above the selected one.
             
 
 * __InsertTableRowBelow__: Inserts a row below the selected one.
+
+
+
+### Formatting a Table at Runtime
+
+>tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
+        
+
+The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the following methods that regard the modifying of a table:
+        
+
+* __ChangeTableBorders__: Modifies the borders of the currently selected table via a [__TableBorders__]{% if site.site_name == 'Silverlight' %}(http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_TableBorders.htm){%endif%}{% if site.site_name == 'WPF' %}(http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_TableBorders.htm){%endif%} object.
+
+	#### __[C#] Example 3: Change Table Borders__
+	{{region radrichtextbox-features-document-elements-tables_6}}
+		Border leftBorder = new Telerik.Windows.Documents.Model.Border(BorderStyle.Single, Colors.Red);
+		Border topBorder = new Telerik.Windows.Documents.Model.Border(BorderStyle.Dashed, Colors.Red);
+		Border rightBorder = new Telerik.Windows.Documents.Model.Border(BorderStyle.Dotted, Colors.Red);
+		Border bottomBorder = new Telerik.Windows.Documents.Model.Border(BorderStyle.DotDotDash, Colors.Red);
+		Border insideHorizontalBorder = new Telerik.Windows.Documents.Model.Border(BorderStyle.Double, Colors.Red);
+		Border insideVerticalBorder = new Telerik.Windows.Documents.Model.Border(BorderStyle.DotDash, Colors.Red);
+		
+		TableBorders borders = new TableBorders(leftBorder, topBorder, rightBorder, bottomBorder, insideHorizontalBorder, insideVerticalBorder);
+		this.radRichTextBox.ChangeTableBorders(borders);
+	{{endregion}}  
+
+	#### __[VB.NET] Example 3: Change Table Borders__
+	{{region radrichtextbox-features-document-elements-tables_7}}
+        Dim leftBorder As New Border(BorderStyle.[Single], Colors.Red)
+        Dim topBorder As New Border(BorderStyle.Dashed, Colors.Red)
+        Dim rightBorder As New Border(BorderStyle.Dotted, Colors.Red)
+        Dim bottomBorder As New Border(BorderStyle.DotDotDash, Colors.Red)
+        Dim insideHorizontalBorder As New Border(BorderStyle.[Double], Colors.Red)
+        Dim insideVerticalBorder As New Border(BorderStyle.DotDash, Colors.Red)
+
+        Dim borders As New TableBorders(leftBorder, topBorder, rightBorder, bottomBorder, insideHorizontalBorder, insideVerticalBorder)
+        Me.radRichTextBox.ChangeTableBorders(borders)        
+	{{endregion}}  
+
+* __ChangeTableCellBackground__: Sets the background color of the currently selected cell.
+            
+* __ChangeTableCellBorders__: Modifies the borders of the currently selected table via a [__TableCellBorders__ ]{% if site.site_name == 'Silverlight' %}(http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_TableCellBorders.htm){%endif%}{% if site.site_name == 'WPF' %}(http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_TableCellBorders.htm){%endif%} or a [__Border__]{% if site.site_name == 'Silverlight' %}(http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_Border.htm){%endif%}{% if site.site_name == 'WPF' %}(http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Border.htm){%endif%} object.
+            
+* __ChangeTableCellSpacing__: Modifies the spacing between the cells.
+
+* __ChangeTableCellContentAlignment__: Modifies the horizontal and vertical content alignment of the currently selected cell.
+
+	#### __[C#] Example 4: Change Table Cell Content Alignment__
+	{{region radrichtextbox-features-document-elements-tables_8}}
+		this.radRichTextBox.ChangeTableCellContentAlignment(RadTextAlignment.Center, RadVerticalAlignment.Center);
+	{{endregion}}
+
+	#### __[VB.NET] Example 4: Change Table Cell Content Alignment__
+	{{region radrichtextbox-features-document-elements-tables_9}}
+		Me.radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.Fixed)
+	{{endregion}}
+
+* __ChangeTableCellVerticalContentAlignment__:  Modifies the vertical alignment of the currently selected cell.
+
+
+* __ChangeTableCellHorizontalContentAlignment__:  Modifies the horizontal alignment of the currently selected cell.
             
 
-## Creating a Table via the Built-in UI
+* __ChangeTableCellPadding__: Modifies the padding of the currently selected cell.
+
+
+* __ChangeTableDefaultCellPadding__: Modifies the default cell padding of the currently selected table.
+
+            
+* __ChangeTableLayoutMode__: Modifies the layout mode of a table.
+
+	#### __[C#] Example 4: Change Table Layout Mode__
+	{{region radrichtextbox-features-document-elements-tables_10}}
+		this.radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.Fixed);
+	{{endregion}}           
+
+	#### __[VB.NET] Example 4: Change Table Layout Mode__
+	{{region radrichtextbox-features-document-elements-tables_11}}
+		Me.radRichTextBox.ChangeTableCellContentAlignment(RadTextAlignment.Center, RadVerticalAlignment.Center)
+	{{endregion}}  
+* __ChangeTableHorizontalAlignment__: Modifies the horizontal alignment of the currently selected table.
+
+
+* __ChangeTableGridColumnWidth__: Modifies the width of the column with the specified zero-based index.
+
+	#### __[C#] Example 5: Change the Width of a Table Column__
+	{{region radrichtextbox-features-document-elements-tables_12}}
+		 this.radRichTextBox.ChangeTableGridColumnWidth(table, 3, new TableWidthUnit(TableWidthUnitType.Fixed, 12));
+	{{endregion}}  
+            
+	#### __[VB.NET] Example 5: Change the Width of a Table Column__
+	{{region radrichtextbox-features-document-elements-tables_13}}
+		Me.radRichTextBox.ChangeTableGridColumnWidth(table, 3, New TableWidthUnit(TableWidthUnitType.Fixed, 12))
+	{{endregion}}  
+* __ChangeTableRowHeight__: Changes the height of a table row.
+  
+	#### __[C#] Example 6: Change the Height of a Table Row__
+	{{region radrichtextbox-features-document-elements-tables_14}}
+		this.radRichTextBox.ChangeTableRowHeight(table.Rows.First, 35.5);
+	{{endregion}}  
+
+	#### __[VB.NET] Example 6: Change the Height of a Table Row__
+	{{region radrichtextbox-features-document-elements-tables_15}}
+        Me.radRichTextBox.ChangeTableRowHeight(table.Rows.First, 35.5)
+	{{endregion}} 
+
+
+* __MergeTableCells__: Merges the currently selected cells.
+
+            
+* __UnmergeTableCells__: Splits the currently selected table cell if it has been merged.
+
+
+ 
+## Using the Built-in UI
+
+
+### Creating a Table
 
 You can enable the user to create a table via the built-in UI of the __RadRichTextBox__. This is done by using the __RadRichTextBoxRibbonUI__, which exposes two different ways of creating a table by selection in the UI or on button click. To learn more about how to use the __RadRichTextBoxRibbonUI__ read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
@@ -193,43 +320,9 @@ A table could be deleted or modified via the Table Tools’ contextual tab __Lay
         
 
 ![Rad Rich Text Box Features Layout Elements Tables 03](images/RadRichTextBox_Features_LayoutElements_Tables_03.png)
+ 
 
-## Formatting a Table at Runtime via RadRichTextBox's API
-
->tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
-        
-
-The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the following methods that regard the modifying of a table:
-        
-
-* __ChangeTableBorders__: Modifies the borders of the currently selected table via a __TableBorders__ object.
-            
-
-* __ChangeTableCellBackground__: Sets the color of the currently selected cell's borders.
-            
-
-* __ChangeTableCellBorders__: Modifies the borders of the currently selected table via a __TableCellBorders__ object.
-            
-
-* __ChangeTableCellContentAlignment__: Modifies the content alignment of the currently selected cell.
-            
-
-* __ChangeTableCellPadding__: Modifies the padding of the currently selected cell.
-            
-
-* __ChangeTableColumnsLayoutMode__: Modifies the layout mode of the table's columns.
-            
-
-* __ChangeTableGridColumnWidth__: Modifies the width of the column.
-            
-
-* __MergeTableCells__: Merges the currently selected cells.
-
-            
-* __UnmergeTableCells__: Splits the currently selected table cell if it has been merged.
-
-
-## Formatting a Table via the Built-in UI
+### Formatting a Table
 
 You can enable the user to modify a table via the built-in UI of the __RadRichTextBox__. This is done by using the __RadRichTextBoxRibbonUI__, which exposes a __Table Tools__ contextual menu with two tabs – __Design__ and __Layout__. They expose UI buttons for all API methods used for formatting and modifying a table. To learn more about how to use the __RadRichTextBoxRibbonUI__ read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
@@ -241,7 +334,7 @@ The __Design__ contextual tab allows you to use a predefined set of formatting o
 
 ![Rad Rich Text Box Features Layout Elements Tables 07](images/RadRichTextBox_Features_LayoutElements_Tables_07.png)
 
-Additionally the built-in context menu of the __RadRichTextBox__ gives the user the possibility to open the __Table Properties__ and __Table Borders__ dialogs.
+Additionally, the built-in context menu of the __RadRichTextBox__ gives the user the possibility to open the __Table Properties__ and __Table Borders__ dialogs.
         
 
 ![Rad Rich Text Box Features Layout Elements Tables 06](images/RadRichTextBox_Features_LayoutElements_Tables_06.png)

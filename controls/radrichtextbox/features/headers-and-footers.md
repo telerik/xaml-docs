@@ -19,11 +19,11 @@ __RadRichTextBox__ supports Headers and Footers in its document when in Paged [l
 
 The topic contains the following sections:
 
-* [Header Footer Types](Header_Footer_Types)
+* [Header Footer Types](#header-footer-types)
 
-* [Customizing Headers And Footers](Customizing_Headers_And_Footers)
+* [Customizing Headers And Footers](#customizing-headers-and-footers)
 
-* [Disabling Headers and Footers](Disabling_Headers_and_Footers)
+* [Disabling Headers and Footers](#disabling-headers-and-footers)
 
 ## Header Footer Types
 

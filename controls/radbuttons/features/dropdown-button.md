@@ -12,7 +12,7 @@ position: 1
 
 The __RadDropDownButton__ control derives from the __[RadButton]({%slug radbuttons-features-button%})__ control. Therefore it has all of the features that the __RadButton__ control has.	  
 
->tip To learn more about the members of the __RadDropDownButton__ class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_raddropdownbutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_raddropdownbutton.html){% endif %}. To learn how to use it with commands you should read the [Commands]({%slug radbuttons-features-commands%}) topic.	  
+>tip To learn more about the members of the __RadDropDownButton__ class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_raddropdownbutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_raddropdownbutton.html){% endif %}. To learn how to use it with commands you should read the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
 ## Instantiating RadDropDownButton
 

@@ -58,7 +58,7 @@ In order to add content to the drop down area of the __RadSplitButton__ you have
 	</telerik:RadSplitButton>
 {{endregion}}
 
->tip If you want to display dynamic content inside the drop down area, you can use the __DropDownContentTemplate__ and the __DropDownContentTemplateSelector__ properties. To learn more about __TemplateSelectors__ you can read {% if site.site_name == 'Silverlight' %}[this topic](http://www.telerik.com/help/silverlight/common-data-binding-template-selectors.html){% endif %}{% if site.site_name == 'WPF' %}[this topic](http://www.telerik.com/help/wpf/common-data-binding-template-selectors.html){% endif %}.		  
+>tip If you want to display dynamic content inside the drop down area, you can use the __DropDownContentTemplate__ and the __DropDownContentTemplateSelector__ properties. To learn more about __TemplateSelectors__ you can read the [Data Templating Overview](https://msdn.microsoft.com/en-us/library/ms742521(v=vs.100).aspx) MSDN article.
 
 ## Toggling the RadSplitButton
 

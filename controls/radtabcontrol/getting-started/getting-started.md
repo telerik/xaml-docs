@@ -15,13 +15,21 @@ This tutorial will walk you through the creation of a __RadTabControl__.
 __RadTabControl__ is an advanced {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control providing full Blend support. From within the visual environment of Blend, you can easily perform various tasks such as edit control properties, add/remove tab items, modify themes, create and modify templates and more.			
 
 For the purpose of this tutorial, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Blend.
-			{% if site.site_name == 'WPF' %}
+			
+{% if site.site_name == 'WPF' %}
+>In order to use __RadTabControl__ in your projects you have to add references to the following assemblies:  
+>	- __Telerik.Windows.Controls__  
+>	- __Telerik.Windows.Controls.Navigation__  
+>	- __Telerik.Windows.Data__  
+> You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+{% endif %}
 
->In order to use __RadTabControl__ in your projects you have to add references to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Navigation__<br/>* __Telerik.Windows.Data__You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
-					{% endif %}{% if site.site_name == 'Silverlight' %}
-
->In order to use __RadTabControl__ in your projects you have to add references to the following assemblies:<br/>* __Telerik.Windows.Controls__<br/>* __Telerik.Windows.Controls.Navigation__<br/> You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-					{% endif %}
+{% if site.site_name == 'Silverlight' %}
+>In order to use __RadTabControl__ in your projects you have to add references to the following assemblies:  
+>	- __Telerik.Windows.Controls__  
+>	- __Telerik.Windows.Controls.Navigation__  
+> You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
+{% endif %}
 
 ## Create RadTabControl with Expression Blend
 
@@ -31,7 +39,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 * Drag a __RadTabControl__ on the artboard. The __RadTabControl__ appears.
 	![](images/RadTabControl_Figure_00040.png)
 
-	#### __XAML__
+	#### __XAML__  
 	{{region radtabcontrol-getting-started_0}}
 		<telerik:RadTabControl/>
 	{{endregion}}
@@ -88,17 +96,18 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 ## Set Tab Orientation
 
 __Orientation__ property controls whether to show the tabs horizontally or vertically. By default the tabs are shown horizontally. Find __Orientation__ property in the 'Properties' pane under 'Appearance' section and change its value to __Vertical__. The result should look like the screen shot below.
+
 ![](images/RadTabControl_Vertical_TabOrientation.png)
 
-	#### __XAML__
-	{{region radtabcontrol-getting-started_2}}
-		<telerik:RadTabControl TabOrientation="Vertical">
-		   <telerik:RadTabItem Header="Calendar" />
-		   <telerik:RadTabItem Header="Colors"
-										  IsBreak="True" />
-		   <telerik:RadTabItem Header="Quote" />
-		</telerik:RadTabControl>
-	{{endregion}}
+#### __XAML__
+{{region radtabcontrol-getting-started_2}}
+	<telerik:RadTabControl TabOrientation="Vertical">
+	   <telerik:RadTabItem Header="Calendar" />
+	   <telerik:RadTabItem Header="Colors"
+									  IsBreak="True" />
+	   <telerik:RadTabItem Header="Quote" />
+	</telerik:RadTabControl>
+{{endregion}}
 
 Turn back the orientation to __Horizontal__ as this is the value used for the rest of this guide.				
 

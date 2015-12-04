@@ -804,7 +804,7 @@ You can easily customize the visual appearance of the __RadDiagramShape__ by usi
 
 * __StrokeThickness__ - gets or sets the width of the __RadDiagramShape__ outline.			
 
->tipYou can use the __RadDiagram.ShapeStyle__ property to explicitly apply a style on all __RadDiagramShapes__ in a __RadDiagram__ instance. [Read more](2ab56752-2384-426a-926c-34fc2108c2e6#ShapeStyles).		  
+>tip You can use the __RadDiagram.ShapeStyle__ property to explicitly apply a style on all __RadDiagramShapes__ in a __RadDiagram__ instance. [Read more]({%slug raddiagram-styling-selectors%}#customize-the-raddiagramshape-style).		  
 
 # See Also
  * [Structure]({%slug raddiagram-structure%})

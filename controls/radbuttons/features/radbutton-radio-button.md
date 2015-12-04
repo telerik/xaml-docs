@@ -12,14 +12,13 @@ position: 2
 
 The __RadRadioButton__ control inherits from the __RadioButton__ control and implements the __ICommandSource__ interface. Because of the inheritance it has all of the features that the standard __RadioButton__ control has. The __ICommandSource__ implementation allows you to attach commands to the button, that will be executed when the __RadRadioButton__ is clicked.	  
 
->tip To learn more about the members of the __RadRadioButton__ class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_radradiobutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_radradiobutton.html){% endif %}.
+>tip To learn more about the members of the __RadRadioButton__ class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radradiobutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radradiobutton.html){% endif %}.
 
 >tip You can see how to use an ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
 ## Instantiating RadButton
 
-You can instantiate your __RadRadioButton__ in both XAML and code. Here is an example:
-		
+You can instantiate your __RadRadioButton__ in both XAML and code. Here is an example:		
 
 >The __RadRadioButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly. {% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %} 
 > Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
@@ -31,12 +30,12 @@ You can instantiate your __RadRadioButton__ in both XAML and code. Here is an ex
 
 #### __C#__
 {{region radbutton-features-radio-button_1}}
-	RadRadioButton radRadioButton = new RadRadioButton(){Content = "Radio Item"};
+	RadRadioButton radRadioButton = new RadRadioButton() { Content = "Radio Item" };
 {{endregion}}
 
 #### __VB.NET__
 {{region radbutton-features-radio-button_2}}
-	Dim radRadioButton As New RadRadioButton()With {.Content = "Radio Item"}
+	Dim radRadioButton As New RadRadioButton() With {.Content = "Radio Item"}
 {{endregion}}
 
 ## Handling the Button Checked Event

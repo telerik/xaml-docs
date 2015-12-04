@@ -156,7 +156,7 @@ And if you need to customize the default style settings of this rectangle, you c
             <telerik:RadDiagramConnection Source="{Binding ElementName=shape1}"
                     Target="{Binding ElementName=shape2}" />
         </telerik:RadDiagram>
-</Grid>
+	</Grid>
 
 ![Rad Diagram Styling Custom Group Style](images/RadDiagram_Styling_CustomGroupStyle.png)
 

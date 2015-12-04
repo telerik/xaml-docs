@@ -24,12 +24,12 @@ The __RadMap__ control raises the following specific events:
 
 * __MapMouseClick__ - occurs when the left mouse button is clicked a single time. You can use the __MouseClickMode__ property to choose one of the predefined single click behaviors or you can implement your own using the event. The event handler receives two arguments:
 	* The sender argument contains the __RadMap__. This argument is of type object, but can be cast to the __RadMap__ type.
-	* A [MapMouseRoutedEventArgs](http://www.telerik.com/help/silverlight/telerik.windows.controls.datavisualization-telerik.windows.controls.map.mapmouseroutedeventargs_members.html) object.
+	* {% if site.site_name == 'WPF' %} A [MapMouseRoutedEventArgs](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Controls_Map_MapMouseRoutedEventArgs.htm).{% endif %}{% if site.site_name == 'Silverlight' %} A [MapMouseRoutedEventArgs](http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Controls_Map_MapMouseRoutedEventArgs.htm).{% endif %}
 
 * __MapMouseDoubleClick__ - occurs when the left mouse button is double clicked. You can use the __MouseDoubleClickMode__ property to choose one of the predefined double click behaviors  or you can implement your own using the event. The event handler receives two arguments:
 	* The sender argument contains the __RadMap__. This argument is of type object, but can be cast to the __RadMap__ type.
-	* A [MapMouseRoutedEventArgs](http://www.telerik.com/help/silverlight/telerik.windows.controls.datavisualization-telerik.windows.controls.map.mapmouseroutedeventargs_members.html) object.
-
+	* * {% if site.site_name == 'WPF' %} A [MapMouseRoutedEventArgs](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Controls_Map_MapMouseRoutedEventArgs.htm).{% endif %}{% if site.site_name == 'Silverlight' %} A [MapMouseRoutedEventArgs](http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Controls_Map_MapMouseRoutedEventArgs.htm).{% endif %}
+	
 * __PanningFinished__ - occurs when the panning executed by the user finishes. The event handler receives two arguments:
 	* The sender argument contains the __RadMap__. This argument is of type object, but can be cast to the __RadMap__ type.
 	* A __RoutedEventArgs__ object.

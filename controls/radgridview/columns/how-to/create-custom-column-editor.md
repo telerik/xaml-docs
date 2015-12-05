@@ -10,7 +10,7 @@ position: 4
 
 # Create Custom Column Editor
 
-This tutorial will guide you through the common task of creating a custom column in __RadGridView__. More precisely, a UserControl with __TextBox__ and __RadComboBox__, as well as a custom bound column that uses it as an edit element, will be created.
+This tutorial will guide you through the common task of creating a custom column in __RadGridView__. More precisely, you will learn to create a UserControl with __TextBox__ and __RadComboBox__, as well as a custom bound column that uses it as an edit element.
 
 * In the beginning you need __RadGridView__ populated with sample data. Below are the business object definition ( __Example 1__), as well as __RadGridView__ declaration( __Example 2__).
 			
@@ -121,7 +121,7 @@ This tutorial will guide you through the common task of creating a custom column
     }
 {{endregion}}
 
-Note, that the __Club__ object has a __Captain__ property. The __Captain__ object itself, has two properties— __Name__, which is of type string and __Position__ which is an enum.
+Note, that the __Club__ object has a __Captain__ property. The __Captain__ object itself, has two properties— __Name__, which is of type string, and __Position__, which is an enum.
 
 
 #### __[XAML] Example 2: Initial declaration of RadGridView.__
@@ -233,7 +233,7 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 {{endregion}}
 
 
-Take a look at the code-behind of the control. Two additional dependency properties are created, in order to enable binding to the __Name__ and __Position__ properties of the business model.
+Take a look at the code-behind of the control. Two additional dependency properties are created in order to enable binding to the __Name__ and __Position__ properties of the business model.
 
 * Create a new class named __CustomColumn__, which derives from __GridViewBoundColumnBase (Example 6)__.
 
@@ -278,7 +278,7 @@ Take a look at the code-behind of the control. Two additional dependency propert
 
 >In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
 
-* Finally, go back to the __RadGridView__ XAML declaration and update it(__Example 7__).
+* Finally, go back to the __RadGridView__ XAML declaration and update it (__Example 7__).
 			
 
 #### __[XAML] Example 7: The updated declaration of RadGridView.__
@@ -303,9 +303,9 @@ __Figure 1:__ Snapshot of the created CustomColumnEditor.
 
 ![gridview-how-to-create-custom-column-editor](images/gridview-howto-create-custom-column-editor.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository     [CreateCustomColumnEditor](https://github.com/telerik/xaml-sdk/tree/master/GridView/CreateCustomColumnEditor).
+>tipYou can download a runnable project of the previous example from the online SDK repository     [CreateCustomColumnEditor](https://github.com/telerik/xaml-sdk/tree/master/GridView/CreateCustomColumnEditor).
 
->You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient  approach in exploring and executing the examples in the Telerik XAML SDK repository. 
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach to exploring and executing the examples in the Telerik XAML SDK repository. 
 
 # See Also
  

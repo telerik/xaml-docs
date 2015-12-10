@@ -16,10 +16,29 @@ In addition to the main __ZipLibrary__ control, you could take advantage of a se
 In this article you will find the classes and their members.
 
 
+## The ZipFile class
+
+With the __ZipFile__ class you could take advantage of static methods, which will give you the ability to create, extract or open zip archives with only one line of code.
+
+* __ZipArchiveEntry CreateEntryFromFile(this ZipArchive destination, string sourceFileName, string entryName)__ – Archives a file by compressing it and adding it to the zip archive. It has two more overloads, which allow you to specify the __CompressionLevel__ or __CompressionSettings__ of the __ZipEntry__.
+
+* __void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName)__: Creates a zip archive that contains the files and directories from the specified directory. This method has few overloads to set different settings of the entry.
+    
+* __void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName)__: Extracts all the files in the specified zip archive to a directory on the file system.
+
+
+* __void ExtractToFile(this ZipArchiveEntry source, string destinationFileName)__: Extracts an entry in the zip archive to a file. With the additional overload you could specify whether to overwrite an existing file that has the same name as the destination file or not.
+
+* __ZipArchive Open(string archiveFileName, ZipArchiveMode mode)__: Opens a zip archive at the specified path and in the specified mode. Another overload allows specifying the encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.
+
+* __ZipArchive OpenRead(string archiveFileName)__: Opens a zip archive for reading at the specified path. 
+
+* __bool IsDirectoryEmpty(DirectoryInfo directoryInfo)__: Indicates whether specified directory is empty or not. 
+
 
 ## The DotNetPlatformManager class
 
-This class implements the [IPlatformManager](http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Zip_IPlatformManager.htm) interface, which provides platform-specific operations.
+This class implements the [IPlatformManager](http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Zip_IPlatformManager.htm) interface, which provides platform-specific operations. In the general case you won't need to implement new platform managers, as this default implementation already take advantage of the current platform (.NET Framework) as much as possible.
 
 ### Properties
 
@@ -41,26 +60,6 @@ This class implements the [IPlatformManager](http://docs.telerik.com/devtools/si
 * __ICryptoProvider GetCryptoProvider(EncryptionSettings settings)__: Gets crypto provider initialized using given encryption settings.
 
 * __bool IsEncodingSupported(Encoding encoding)__: Indicates whether specified encoding is supported for this platform. <returns>true if encoding is allowed in the ZIP file.
-
-
-## The ZipFile class
-
-With the __ZipFile__ class you could take advantage of static methods, which will give you the ability to create, extract or open zip archives with only one line of code.
-
-* __ZipArchiveEntry CreateEntryFromFile(this ZipArchive destination, string sourceFileName, string entryName)__ – Archives a file by compressing it and adding it to the zip archive. It has two more overloads, which allow you to specify the __CompressionLevel__ or __CompressionSettings__ of the __ZipEntry__.
-
-* __void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName)__: Creates a zip archive that contains the files and directories from the specified directory. This method has few overloads to set different settings of the entry.
-    
-* __void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName)__: Extracts all the files in the specified zip archive to a directory on the file system.
-
-
-* __void ExtractToFile(this ZipArchiveEntry source, string destinationFileName)__: Extracts an entry in the zip archive to a file. With the additional overload you could specify whether to overwrite an existing file that has the same name as the destination file or not.
-
-* __ZipArchive Open(string archiveFileName, ZipArchiveMode mode)__: Opens a zip archive at the specified path and in the specified mode. Another overload allows specifying the encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.
-
-* __ZipArchive OpenRead(string archiveFileName)__: Opens a zip archive for reading at the specified path. 
-
-* __bool IsDirectoryEmpty(DirectoryInfo directoryInfo)__: Indicates whether specified directory is empty or not. 
 
 
 # See Also

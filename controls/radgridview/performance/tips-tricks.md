@@ -27,7 +27,7 @@ __RadGridView__ API allows you to tweak your application for optimal performance
 	* __Auto__ is a little bit slower 
 	* __Star__ is the slowest (this is most noticeable when you have a lot of columns).
 
-* Disable validation in view mode through configuring [ValidateOnDataErrors="InEditMode"]({%slug gridview-managing-data-validation%}).
+* Disable validation in view mode through configuring [ValidatesOnDataErrors="InEditMode"]({%slug gridview-managing-data-validation%}).
 
 * Avoid using converters. Calling a converter is a time-consuming operation and this will slow down the performance.
 

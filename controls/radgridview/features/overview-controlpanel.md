@@ -65,4 +65,98 @@ For example:
 
 
 >tipYou can download a __runnable solution__ showing how to define ControlPanelItems from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed under __GridView/ControlPanel__.
-    
+   
+
+## Reusing Control Panel Items  ##
+
+As of __Q1 2016__ we have added a DataTemplate support for the __ButtonContent__ and __Content__ properties of the __ControlPanelItem__. Developers have the ability to add a common Style targeting the ControlPanel that all the RadGridView controls in the application will inherit.
+
+A new property of the RadGridView - __ControlPanelItemsCollection__ - has been added as well. It represents a collection of the different Control Panel items.
+
+{% if site.site_name == 'WPF' %}
+You can set the __ControlPanelItemsCollection__ either implicitly or explicitly. We advise on using the first approach. 
+{% endif %}
+
+### Implicitly Set the Control Panel Items  ###
+
+It is possible to declare a style that targets the RadGridView control. In this case the style will be applied to all RadGridView controls in the application. An example is shown in the following code snippet:
+
+{{region gridview-overview-controlpanel-reuse-items_1}}
+
+	 <Style TargetType="telerik:RadGridView">
+            <Setter Property="ControlPanelItems">
+                <Setter.Value>
+                    <telerik:ControlPanelItemCollection>
+                    <telerik:ControlPanelItem ButtonTooltip="Filtering Options" >
+                        <telerik:ControlPanelItem.ContentTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsFilteringAllowed, Mode=TwoWay}" 
+                             			  Content="Allow Filtering" 
+                              			  Margin="10"/>
+                            </DataTemplate>
+                        </telerik:ControlPanelItem.ContentTemplate>
+                    </telerik:ControlPanelItem>
+                    <telerik:ControlPanelItem ButtonTooltip="Column chooser" >
+                        <telerik:ControlPanelItem.ContentTemplate>
+                            <DataTemplate>
+                                <ListBox ItemsSource="{Binding Columns}"  BorderThickness="0">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <CheckBox Content="{Binding Header, Mode=OneWay}" 
+													  IsChecked="{Binding IsVisible, Mode=TwoWay}" />
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </DataTemplate>
+                        </telerik:ControlPanelItem.ContentTemplate>
+                    </telerik:ControlPanelItem>
+                    </telerik:ControlPanelItemCollection>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+{{endregion}}
+
+{% if site.site_name == 'WPF' %}
+### Explicitly Set the Control Panel Items ###
+Developers can change the control panel items explicitly for a specific RadGridView. First the __ControlPanelItemCollection__ should be created as a static resource: 
+
+{{region gridview-overview-controlpanel-reuse-items_2}}
+
+
+		<telerik:ControlPanelItemCollection x:Key="itemsControl" x:Shared="False" >
+			<telerik:ControlPanelItem ButtonTooltip="Column chooser" >
+				<telerik:ControlPanelItem.Content>
+					<ListBox ItemsSource="{Binding Columns}"  BorderThickness="0">
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+								<CheckBox Content="{Binding Header, Mode=OneWay}" IsChecked="{Binding IsVisible, Mode=TwoWay}" />
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+				</telerik:ControlPanelItem.Content>
+			</telerik:ControlPanelItem>
+			<telerik:ControlPanelItem ButtonTooltip="Filtering Options">
+				<telerik:ControlPanelItem.ButtonContent>
+				<telerik:ControlPanelItem.Content>
+					<CheckBox IsChecked="{Binding IsFilteringAllowed, 
+								Mode=TwoWay, 
+												  Converter={StaticResource IdentityConverter}}" 
+                              Content="Allow Filtering" 
+                              Margin="10"/>
+				</telerik:ControlPanelItem.Content>
+			</telerik:ControlPanelItem>
+	</telerik:ControlPanelItemCollection>
+{{endregion}}
+
+Then set the __ControlPanelItems__ property of the specific RadGridView:
+
+{{region gridview-overview-controlpanel-reuse-items_3}}
+
+		 <telerik:RadGridView x:Name="clubsGrid" 
+							  ControlPanelItems="{StaticResource itemsControl}"
+                              ItemsSource="{Binding Clubs}">
+        </telerik:RadGridView>
+{{endregion}}
+
+{% endif %}

@@ -14,7 +14,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 * [Assembly References](#assembly-references)
 * [Adding RadGridView to the Project](#adding-radgridview-to-the-project)
-* [Binding RadGridView](#binding-radgridview)
+* [Populating with Data](#populating-with-data)
 * [Columns](#columns)
 * [Sorting, Grouping and Filtering](#sorting-grouping-and-filtering)
 
@@ -58,7 +58,7 @@ If you run the application you will see an empty grid with no columns and rows a
 ![](images/RadGridView_GettingStarted_2.png)
 
 
-## Binding RadGridView
+## Populating with Data
 
 In order to populate the __RadGridView__ control with data, you should create a collection of business objects. For the purposes of this example, create a new class named __Club__ and add several properties to it as shown in __Example 3__.
         
@@ -349,7 +349,7 @@ __Example 7__ demonstrates how you can manually prevent the automatic generation
 {{endregion}}
 
 
-The code in __Example 7__ is shown in __Figure 3__. The XAML declaration of the __RadGridView__ contains two columns - the first one named "Club Name" is bound to the property _Name_ and "Established" is bound respectively to __Established__. As a result your grid control will have only two columns and no other column will be added because the property __AutoGenerateColumns__ is set to __False__.
+The code in __Example 7__ is shown in __Figure 3__. The XAML declaration of the __RadGridView__ contains two columns - the first one named "Club Name" is bound to the property _Name_ and "Established" is bound respectively to __Established__. As a result, your grid control will have only two columns and no other column will be added because the property __AutoGenerateColumns__ is set to __False__.
         
 
 __Figure 3: RadGridView with manually defined columns__

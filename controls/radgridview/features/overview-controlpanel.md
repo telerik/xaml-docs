@@ -21,11 +21,7 @@ __Figure 1:__ Control Panel within RadGridView
  In order to add items in the Control Panel, you need to set the __ControlPanelItems__ property of the RadGridView. You can define different content for as many ControlPanelItems as you need. Each ControlPanelItem can allow the end user to configure different options. Each item should have a __ControlPanelItem.Content__.
 
 
-For example:
-
-#### __XAML__
-
-__EXAMPLE 1:__
+#### __EXAMPLE 1:__ Adding items in the Control Panel.
 
 {{region gridview-overview-controlpanel_1}}
 	
@@ -48,9 +44,8 @@ __EXAMPLE 1:__
 You can also set a custom display for the items. For the purpose please set __ControlPanelItem.ButtonContent__.
 
 
-__EXAMPLE 2:__:
+#### __EXAMPLE 2:__ Setting a custom display for the items.
 
-#### __XAML__
 
 {{region gridview-overview-controlpanel_2}}
 
@@ -87,7 +82,7 @@ You can set the __ControlPanelItemsCollection__ either implicitly or explicitly.
 It is possible to declare a style that targets the RadGridView control. In this case the style will be applied to all RadGridView controls in the application. An example is shown in the following code snippet:
 
 
-__EXAMPLE 3:__
+#### __EXAMPLE 3:__ Declare a common style for the Control Panel.
 {{region gridview-overview-controlpanel-reuse-items_1}}
 
 	 <Style TargetType="telerik:RadGridView">
@@ -128,7 +123,7 @@ __EXAMPLE 3:__
 ### Explicitly Set the Control Panel Items ###
 You can change the control panel items explicitly for a specific RadGridView. First the __ControlPanelItemCollection__ should be created as a static resource: 
 
-__EXAMPLE 4:__
+#### __EXAMPLE 4:__ Explicitly change the item collection of the RadGridView`s Control Panel.
 {{region gridview-overview-controlpanel-reuse-items_2}}
 
 

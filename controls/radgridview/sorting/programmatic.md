@@ -10,7 +10,7 @@ position: 1
 
 # Programmatic Sorting
 
-Besides the built-in sorting functionality you are able to use a programmatic approach to sort the data in __RadGridView__. This is achieved via the __SortDescriptors__ collection. This collection of __ISortDescriptor__ objects allows you to use descriptors which define the sorting property (or column) and the sorting direction for the bound data. As this is a collection you are able not only to add, but to remove or clear the entries in it too.
+Besides the built-in sorting functionality, you are able to use a programmatic approach to sort the data in __RadGridView__. This is achieved via the __SortDescriptors__ collection. This collection of __ISortDescriptor__ objects allows you to use descriptors which define the sorting property (or column) and the sorting direction for the bound data. As this is a collection, you are able not only to add, but to remove or clear the entries in it too.
     
 >tipIf you use __ICollectionView__ as data source RadGridView will automatically synchronize the __SortDescriptors__ of the source with its own ones.
 
@@ -32,8 +32,6 @@ When you add a new descriptor to the collection, the data is automatically sorte
 	this.clubsGrid.SortDescriptors.Add(csd);
 {{endregion}}
 
-#### __VB.NET__
-
 {{region gridview-sorting-programmatic_3}}
 
 	Dim csd As New ColumnSortDescriptor() With { _
@@ -42,6 +40,11 @@ When you add a new descriptor to the collection, the data is automatically sorte
 	}
 	Me.clubsGrid.SortDescriptors.Add(csd)
 {{endregion}}
+
+FIGURE 1: Programmatically sorted RadGridView:
+
+![](images/RadGridView_ProgrammaticSorting_1.png)
+#### __VB.NET__
 
       
 Another possible approach is to add the new __SortDescriptor__ object (instead of ColumnSortDescriptor) to RadGridView.SortDescriptors collection:
@@ -103,7 +106,7 @@ For example:
 	</telerik:RadGridView>
 {{endregion}}
 
-## XAML Tip
+### XAML Tip
 
 >tipIn case of a static data structure, known during design time, it is better to declare your default sorting in XAML, rather than in your code-behind.
 
@@ -115,6 +118,38 @@ After the application runs with this descriptor defined, __RadGridView__ data wi
 
 >tipYou are able to add __SortDescriptors/ColumnSortDescriptor__ in XAML only at design time. 
 >tipWhen implementing multi-column sorting behavior you have to manage __SortDescriptors__ collection at runtime. To learn more take a look at the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
+
+
+## Clearing the SortDescriptors Collection of the RadGridView ##
+
+In case you need to apply multiple sorting operations and you would like to reset all sorting rules applied, the __SortDescriptors__ collection of the RadGridView should be cleared. 
+
+Consider the following scenario. You apply a programmatic sorting for your RadGridView as follows:
+
+	 ColumnSortDescriptor csd = new ColumnSortDescriptor();
+	 csd.Column = MyGrid.Columns["Name"];
+	 csd.SortDirection = ListSortDirection.Descending;
+	 clubsGrid.SortDescriptors.Add(csd);
+
+At this point the RadGridView has the following state:
+
+FIGURE 3:
+
+![](images/RadGridView_ProgrammaticSorting_1.png)
+
+Eventually, you need to sort the grid by another column and would like to remove the previously applied rule. Use the following approach:
+
+     clubsGrid.SortDescriptors.Clear();
+     ColumnSortDescriptor csd = new ColumnSortDescriptor();
+	 csd.Column = clubsGrid.Columns["Established"];
+	 csd.SortDirection = ListSortDirection.Descending;
+	 clubsGrid.SortDescriptors.Add(csd);
+
+The result will be:
+
+FIGURE 4:
+
+![](images/RadGridView_ProgrammaticSorting_2.png)
 
 # See Also
 

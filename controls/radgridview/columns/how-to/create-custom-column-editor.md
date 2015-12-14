@@ -237,7 +237,7 @@ Take a look at the code-behind of the control. Two additional dependency propert
 
 * Create a new class named __CustomColumn__, which derives from __GridViewBoundColumnBase (Example 6)__.
 
-#### __[C#] Example 6: Definition of DateTimePickerColumn class.__
+#### __[C#] Example 6: Definition of CustomColumn class.__
 
 {{region gridview-how-to-create-custom-captain-editor-column_4}}
 
@@ -303,7 +303,7 @@ __Figure 1:__ Snapshot of the created CustomColumnEditor.
 
 ![gridview-how-to-create-custom-column-editor](images/gridview-howto-create-custom-column-editor.png)
 
->tipYou can download a runnable project of the previous example from the online SDK repository     [CreateCustomColumnEditor](https://github.com/telerik/xaml-sdk/tree/master/GridView/CreateCustomColumnEditor).
+>tipYou can download a runnable project of the previous example from the online SDK repository     [CustomColumnEditor](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomColumnEditor).
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach to exploring and executing the examples in the Telerik XAML SDK repository. 
 

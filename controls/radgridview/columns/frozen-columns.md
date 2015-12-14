@@ -26,7 +26,7 @@ A frozen column always stays on top of horizontal scrolling.
 
 ## Freezing Columns
 
-You can freeze your columns programmatic using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
+You can freeze your columns programmatically using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
 
 In this sample, the first two columns are frozen starting from left to right.
 
@@ -67,7 +67,43 @@ To disable the freezing of a column just set the __CanUserFreeze to False__ and 
 
 ![Rad Grid View Frozencolumns 4](images/RadGridView_Frozencolumns_4.png)
 
-# See Also
+## Frozen Columns Events
+
+As of Q1 2016 the we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
+
+You can subscribe to the event either declaratively or runtime like this:
+
+#### __XAML__
+
+{{region gridview-columns-frozen-columns_4}}
+
+	<telerik:RadGridView Name="gridView" 
+					     FrozenColumnsChanged="gridView_FrozenColumnsChanged" />
+{{endregion}}
+
+#### __C#__
+
+{{region gridview-columns-frozen-columns_5}}
+
+	gridView.FrozenColumnsChanged += new EventHandler<FrozenColumnsChangedEventArgs>(gridView_FrozenColumnsChanged);
+{{endregion}}
+
+#### __VB__
+
+{{region gridview-columns-frozen-columns_6}}
+
+	AddHandler gridView.FrozenColumnsChanged, AddressOf gridView_FrozenColumnsChanged
+{{endregion}}
+
+Via the FrozenColumnsChangedEventArgs you can get the:
+
+* __AddedFrozenColumns__ - the columns that were added to the collection of frozen columns
+
+* __RemovedFrozenColumns__ - the columns that were removed from the collection of frozen columns
+
+* __AllFrozenColumns__ - the collection of frozen columns
+
+## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 

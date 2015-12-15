@@ -188,7 +188,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __BindingValidationError__ - occurs when a data validation error is reported by a binding source. The type of the passed event arguments is __ValidationErrorEventArgs__.
             
 
-### Edit Events ### 
+### Edit Events
         
 
 * __IsEditorVisibleChanged__ - occurs when the cell editors has visibility changed. The type of the passed event arguments is __RoutedPropertyChangedEventArgs<bool>__.

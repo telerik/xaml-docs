@@ -103,6 +103,24 @@ Via the FrozenColumnsChangedEventArgs you can get the:
 
 * __AllFrozenColumns__ - the collection of frozen columns
 
+Here is an example of how you can get the names of the columns currently in the frozen columns collection as well as the columns added or removed from it.
+
+#### __[C#] Example 4__
+
+{{region gridview-columns-frozen-columns_7}}
+
+	private void clubsGrid_FrozenColumnsChanged(object sender, Telerik.Windows.Controls.GridView.GridView.FrozenColumnsChangedEventArgs e)
+    {
+        var msg = "Added: " + string.Join(", ", e.AddedFrozenColumns.Select(x => x.UniqueName)) + 
+                  "\nRemoved: " + string.Join(", ", e.RemovedFrozenColumns.Select(x => x.UniqueName)) +
+                  "\nAll: " + string.Join(", ", e.AllFrozenColumns.Select(x => x.UniqueName));
+        MessageBox.Show(msg);
+    }
+{{endregion}}
+
+![Rad Grid View FrozenColumnsChanged 1](images/RadGridView_FrozenColumnsChanged_1.png)
+![Rad Grid View FrozenColumnsChanged 2](images/RadGridView_FrozenColumnsChanged_2.png)
+
 ## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})

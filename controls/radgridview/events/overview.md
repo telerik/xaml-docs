@@ -41,8 +41,8 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __SelectionChanged__ - occurs when the selected grid row has changed. The type of the passed event arguments is __SelectionChangeEventArgs__.
               
 
-* __RowActivated__ - occurs when a row is activated - when user double click on it or press enter. The type of the passed event arguments is __RowEventArgs__
-            s
+* __RowActivated__ - occurs when a row is activated - when user double click on it or press enter. The type of the passed event arguments is __RowEventArgs__      
+
 
 * __RowLoaded__ - occurs anytime the row appears within the view port. The type of the passed event arguments is __RowLoadedEventArgs__.
                 
@@ -50,8 +50,8 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __RowUnloaded__ - occurs anytime the row disappears within the view port. The type of the passed event arguments is __RowUnloadedEventArgs__.
                 
 
-### Edit Events ([Read more]({%slug gridview-events-edit%}))
-          
+### Edit Events 
+
 
 * __RowEditEnded__ - occurs when row validation passed successfully and new data is committed to the __RadGridView__.__ItemsSource__. The type of the passed event arguments is __GridViewRowEditEndedEventArgs__.
             
@@ -66,27 +66,34 @@ This topic covers the specific events exposed by the __RadGridView__ control and
             
 
 * __PreparedCellForEdit__ - occurs after the PreparingCellForEdit event.
-            
 
-### Delete Events ([Read more]({%slug gridview-events-delete%}))
+[Read more]({%slug gridview-events-edit%})            
+
+### Delete Event 
+[Read more]({%slug gridview-events-delete%})
           
 
-### Validation Events ([Read more]({%slug gridview-events-validation%}))
+### Validation Events 
+[Read more]({%slug gridview-events-validation%})
         
 
-### Filtering Events ([Read more]({%slug gridview-filtering-basic%}))
+### Filtering Events 
+[Read more]({%slug gridview-filtering-basic%})
         
 
-### Sorting Events ([Read more]({%slug gridview-sorting-basics%}))
+### Sorting Events 
+
         
 
 * __Sorting__ - occurs when the grid data is about to be sorted. The type of the passed event arguments is __GridViewSortingEventArgs__.
           
 
 * __Sorted__ - occurs when the grid data has been sorted. The type of the passed event arguments is __GridViewSortedEventArgs__.
-          
 
-### Grouping ([Read more]({%slug gridview-grouping-basics%}))
+[Read more]({%slug gridview-sorting-basics%})
+
+
+### Grouping 
            
 
 * __Grouping__ - occurs when the grid data is about to be grouped. The type of the passed event arguments is __GridViewGroupingEventArgs__.
@@ -95,7 +102,9 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
 * __ChildTableDefinitionAdded__ - occurs when a new child table definition has been added. The type of the passed event arguments is __TableDefinitionCreatedEventArgs__.
 
-### Exporting Events ([Read more]({%slug gridview-export-events%}))
+[Read more]({%slug gridview-grouping-basics%})
+
+### Exporting Events 
           
 * __ElementExporting__ - occurs when the grid data is being exported. It is a direct replacement of the __Exporting__ event.
           
@@ -105,7 +114,8 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __ElementExportingToDocument__ - occurs when the grid data is being exported to Xlsx or Pdf.
 
 * __ElementExportedToDocument__ - occurs after the ElementExportingToDocument event. Within it you can access the StreamWriter and write additional data to the stream.
-          
+
+[Read more]({%slug gridview-export-events%})          
 
 ### Row Details Events
         
@@ -119,12 +129,14 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __LoadingRowDetails__ - occurs when the row details are being loaded. The type of the passed event arguments is __GridViewRowDetailsEventArgs__.
           
 
-### Column Resizing Events ([Read more]({%slug gridview-column-resize-event%}))
+### Column Resizing Events
         
 
 * __ColumnWidthChanging__ - occurs when the column is being resized. Can be canceled. The type of the passed event arguments is __ColumnWidthChangingEventArgs__
 
 * __ColumnWidthChanged__ - occurs after the resize is complete. The type of the passed event arguments is __ColumnWidthChangedEventArgs__
+
+[Read more]({%slug gridview-column-resize-event%})
 
 ### Other
       
@@ -176,7 +188,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __BindingValidationError__ - occurs when a data validation error is reported by a binding source. The type of the passed event arguments is __ValidationErrorEventArgs__.
             
 
-### Edit Events
+### Edit Events ### 
         
 
 * __IsEditorVisibleChanged__ - occurs when the cell editors has visibility changed. The type of the passed event arguments is __RoutedPropertyChangedEventArgs<bool>__.

@@ -208,6 +208,7 @@ __DescriptionPanelVisibility__ - sets the visibility mode of the description pan
 
 __CanUserResizeDescriptionPanel__ - indicates whether the user can resize the description panel
 
+
 __Item__ - the item to edit.
         
 

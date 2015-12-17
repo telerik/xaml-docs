@@ -12,7 +12,7 @@ position: 2
 
 
 
-Document presenters in RadPdfViewer are responsible for displaying the pages of a PDF document, as well as navigating the file and manipulating it. There are two presenters that come out-of-the-box and you can find more information about them  [here]({%slug radpdfviewer-ui-document-presenters%}).
+Document presenters in __RadPdfViewer__ are responsible for displaying the pages of a PDF document, as well as navigating the file and manipulating it. There are two presenters that come out-of-the-box and you can find more information about them  [here]({%slug radpdfviewer-ui-document-presenters%}).
       
 
 Additionally, __RadPDFViewer__ offers the ability to create your own custom document presenter which would help you design the presentational functionality of the document at your will.
@@ -47,7 +47,7 @@ Implementing this interface allows you to create a fully functioning document pr
 * __HideSelectionMarkers():__ The method hides the selection markers.
             
 
-* __GetLocationFromViewPoint(Point viewpoint, out RadFixedPage page, out Point location):__ Obtains the document location from the provided page and view point.
+* __GetLocationFromViewPoint(Point viewpoint, out RadFixedPage page, out Point location):__ Obtains the page and document location from the provided view point.
             
 
 * __GetViewPointFromLocation(RadFixedPage page, Point location, out Point viewpoint):__ Obtains the view point from the provided page and document location.

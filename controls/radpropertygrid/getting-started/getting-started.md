@@ -206,6 +206,8 @@ __AutoGeneratePropertyDefinitions__ -  indicated whether property definitions wi
 __DescriptionPanelVisibility__ - sets the visibility mode of the description panel.
         
 
+__CanUserResizeDescriptionPanel__ - indicates whether the user can resize the description panel
+
 __Item__ - the item to edit.
         
 

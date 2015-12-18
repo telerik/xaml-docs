@@ -44,8 +44,6 @@ The assemblies that contain the implementation of __RadSpreadsheet__ and must be
 
 * Telerik.Windows.Documents.Spreadsheet.dll
 
-* Telerik.Windows.Maths.dll
-
 For export and import to XLSX:
 
 * Telerik.Windows.Zip.dll

@@ -35,8 +35,6 @@ Tags mapped to paragraphs are:
 
 * __&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;__
 
-* __&lt;tr&gt;__
-
 Tags generating table content:
         
 

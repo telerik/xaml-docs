@@ -69,7 +69,7 @@ To disable the freezing of a column just set the __CanUserFreeze to False__ and 
 
 ## Frozen Columns Events
 
-As of Q1 2016 the we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
+As of Q1 2016 we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
 
 You can subscribe to the event either declaratively or runtime like this:
 

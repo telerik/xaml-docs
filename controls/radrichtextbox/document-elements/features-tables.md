@@ -140,8 +140,6 @@ Here is a snapshot of the result.
 
 ![Rad Rich Text Box Features Layout Elements Tables 01](images/RadRichTextBox_Features_LayoutElements_Tables_01.png)
 
-The __RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
-
 
 >tipYou can obtain an existing table from the document using the EnumerateChildrenOfType() method as demonstrated in __Example 2__. For more information about how to select a table, please check [this article]({%slug radrichtextbox-features-selection%}).    
 
@@ -154,6 +152,9 @@ The __RadRichTextBox__ exposes the following methods that regard the creation or
 {{region radrichtextbox-features-document-elements-tables_5}}
 	Dim table As Table = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of Table)().First()
 {{endregion}}
+
+The __RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
+
 
 * __DeleteTable__: Deletes the currently selected table.
             

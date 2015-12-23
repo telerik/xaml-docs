@@ -1,18 +1,18 @@
 ---
-title: Disabling IEditableObject Support in RadGridView's Data Engine
-page_title: Disabling IEditableObject Support in RadGridView's Data Engine
-description: Disabling IEditableObject Support in RadGridView's Data Engine
+title: Disable IEditableObject Support
+page_title: Disable IEditableObject Support
+description: Disable IEditableObject Support
 slug: gridview-disable-ieditableobject-support
 tags: disable,ieditableobject,support,data,engine
 published: True
 position: 1
 ---
 
-# Disabling IEditableObject Support in RadGridView's Data Engine
+# Disable IEditableObject Support in RadGridView's Data Engine
 
-As of Q1 2016 we've introduced the __ShouldRespectIEditableObject__ property. Setting it to false will prevent RadGridView's DataEngine from calling the __IEditableObject__ methods.
+As of Q1 2016 we've introduced the **ShouldRespectIEditableObject** property. The default value is **True**. Setting it to false will prevent RadGridView's DataEngine from calling the **IEditableObject** methods - **BeginEdit()**, **CancelEdit()** and **EndEdit()**.
 
-#### __[XAML] Example 1: Setting __ShouldRespectIEditableObject____
+#### [XAML] Example 1: Setting ShouldRespectIEditableObject
 
 {{region gridview-disable-ieditableobject-support_0}}
 

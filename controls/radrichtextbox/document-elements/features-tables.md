@@ -297,7 +297,7 @@ The __RadRichTextBox__ exposes a rich API, which allows you to use various metho
             
 * __UnmergeTableCells__: Splits the currently selected table cell if it has been merged.
 
-
+* __ChangeTableRowRepeatOnEveryPage__: Changes whether the row is repeated header row and applies the row’s style if necessary. More information about this functionality is available [here]({%slug radrichtextbox-features-repeat-table-header-row%}).
  
 ## Using the Built-in UI
 

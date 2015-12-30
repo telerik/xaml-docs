@@ -46,14 +46,14 @@ The __[TableRow class](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_W
 
 #### __[C#] Example 1: Set a Repeat Table Header Row using the RepeatOnEveryPage property__
 
-{{region}}
+{{region radrichtextbox-features-repeat-table-header-row_0}}
 	TableRow row = new TableRow();
 	row.RepeatOnEveryPage = true;
 {{endregion}}
 
 #### __[VB.NET] Example 1: Set a Repeat Table Header Row using the RepeatOnEveryPage property__
 
-{{region}}
+{{region radrichtextbox-features-repeat-table-header-row_1}}
 	Dim row As New TableRow()
 	row.RepeatOnEveryPage = True
 {{endregion}}
@@ -63,14 +63,14 @@ Another option is to use the ChangeTableRowRepeatOnEveryPage() method of __RadRi
 
 #### __[C#] Example 2: Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage() method__
 
-{{region}}
+{{region radrichtextbox-features-repeat-table-header-row_2}}
 	TableRow firstRow = this.radRichTextBox.Document.EnumerateChildrenOfType<TableRow>().First();
 	this.radRichTextBox.ChangeTableRowRepeatOnEveryPage(firstRow);
 {{endregion}}
 
 #### __[VB.NET] Example 2: Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage() method__
 
-{{region}}
+{{region radrichtextbox-features-repeat-table-header-row_3}}
 	Dim firstRow As TableRow = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of TableRow)().First()
 	Me.radRichTextBox.ChangeTableRowRepeatOnEveryPage(firstRow)
 {{endregion}}

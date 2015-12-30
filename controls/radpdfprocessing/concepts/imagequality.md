@@ -24,6 +24,9 @@ The [ImageQuality enumeration](http://docs.telerik.com/devtools/wpf/api/html/T_T
 ## Using ImageQuality
 
 The quality of the images reflects the size of the PDF document. The higher the quality, the bigger the document size. This property can be set both in [PdfExportSettings]({%slug radpdfprocessing-formats-and-conversion-pdf-settings%}) and in the constructor of [ImageSource]({%slug radpdfprocessing-model-imagesource%}). 
+
+>tipYou can download a runnable project, which demonstrates different approaches for working with images in __RadPdfProcessing__ from our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/CreateDocumentWithImages).
+
 ### Set a Default Value for all Images in a Document
  
 In order to specify the default **ImageQuality** value when exporting to PDF, you should use the [PdfExportSettings]({%slug radpdfprocessing-formats-and-conversion-pdf-settings%}).
@@ -44,6 +47,7 @@ If you need some particular image to be exported with different **ImageQuality**
 {{region radpdfprocessing-concepts-imagequality_1}}
 	ImageSource imageSource = new ImageSource(bitmap, ImageQuality.Medium);
 {{endregion}}
+
 
 ### ImageQuality and EncodedImageData Class
 

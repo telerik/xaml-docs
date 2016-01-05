@@ -41,7 +41,7 @@ __Figure 1:__ Control Panel within RadGridView
 {{endregion}}
 
 
-You can also set a custom display for the items. For the purpose please set __ControlPanelItem.ButtonContent__.
+You can also set a custom display for the items. For the purpose please set __ControlPanelItem.ButtonContent__ as shown in Example 2.
 
 
 #### __EXAMPLE 2:__ Setting a custom display for the items.

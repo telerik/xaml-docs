@@ -10,6 +10,10 @@ position: 0
 
 # Filtering
 
+{% if site.site_name == 'WPF' %}
+>If you are using as __DropDownItemsPresenter__ RadListBox please, check [this]({%slug radcombobox-features-advanced-dropdown-itemspresenter%}) article for an information concerning filtering of __RadComboBox__.
+{% endif %}
+
 The advanced filtering mechanism of the __RadComboBox__ control allows the users to refine their search results as they type in the input area. There are four __TextSearchMode__ types that can work with the __RadComboBox__:
 
 * __Contains__ - only items containing the typed text will be displayed in the drop-down part, case insensitive.

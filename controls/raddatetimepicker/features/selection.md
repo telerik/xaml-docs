@@ -5,7 +5,7 @@ description: Selection
 slug: raddatetimepicker-features-selection
 tags: selection
 published: True
-position: 6
+position: 7
 ---
 
 # Selection
@@ -69,6 +69,19 @@ The date items which are after the __SelectableDateEnd__ will still be visible b
 ## Restricting the time item's selection
 
 In the __RadDateTimePicker's__ clock view you can restrict the selectable time items by using the __StartTime__ and __EndTime__ properties. You can even fill the Clock with a custom collection of __TimeSpan__ objects. [Read more here]({%slug raddatetimepicker-features-clock-items%})
+
+## Restricting the date and time item's selection from the input box
+
+With the Q1 2016 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IsInputRestrictedToSelectableDates__ boolean property was introduced. By using it you could easily restrict the user from selecting a date based on the entered text inside the input area of the control. The selectable range is defined by the values set for the __SelectableDateStart__ and  __SelectableDateEnd__ properties.
+
+#### __XAML__
+
+{{region raddatetimepicker-features-selection_4}}
+	<telerik:RadDateTimePicker x:Name="radDateTimePicker" 
+	                           SelectableDateStart="8/10/2015"
+	                           SelectableDateEnd="10/11/2015"
+							   IsInputRestrictedToSelectableDates="True"/>
+{{endregion}}
 
 # See Also
 

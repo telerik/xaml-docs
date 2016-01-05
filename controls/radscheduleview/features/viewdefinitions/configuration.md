@@ -159,9 +159,9 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
 #### __C#__
 
 {{region radscheduleview-viewdefinition-configuration_7}}
-	dayDefintion.DayStartTime = new TimeSpan(17, 30, 00);
-	weekDefinition.DayStartTime = new TimeSpan(18, 0, 0);
-	timelineDefinition.DayStartTime = new TimeSpan(21, 30, 0);
+	dayDefintion.DayEndTime = new TimeSpan(17, 30, 00);
+	weekDefinition.DayEndTime = new TimeSpan(18, 0, 0);
+	timelineDefinition.DayEndTime = new TimeSpan(21, 30, 0);
 {{endregion}}
 
 ## VisibleDays

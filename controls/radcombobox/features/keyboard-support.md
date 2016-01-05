@@ -48,6 +48,10 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 * The __TabIndex__ property defines the index of the control in the tab navigation cycle. The lower the number is, the earlier the control will be focused while navigating using the Tab key. If you set this property, do not forget to set __IsTabStop__ to __True__. 
 
+* __IsDropDownTabNavigationEnabled__ (introduced with Q1 2016) is a property of type bool that indicates whether the tab navigating inside the drop down portion of the control will be enabled. If the property is set to False the navigation between the items when Tab key gets pressed will be disabled - the default value is True. 
+
+>__IsDropDownTabNavigationEnabled__ affects only non-editable RadComboBoxes.
+
 # See Also
 
  * [Selection]({%slug radcombobox-features-selection%})

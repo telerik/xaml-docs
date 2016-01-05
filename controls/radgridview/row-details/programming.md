@@ -1,16 +1,16 @@
 ---
-title: Programming
-page_title: Programming
-description: Programming
+title: Events
+page_title: Events
+description: Events
 slug: radgridview-row-details-programming
-tags: programming
+tags: events
 published: True
 position: 4
 ---
 
-# Programming
+# Events
 
-The __RadGridView__ control exposes several events regarding the __RowDetails__:
+__RadGridView__ control exposes several events regarding the __RowDetails__:
 
 >tipMore about the events that the __RadGridView__ exposes, can be found [here]({%slug gridview-events-overview%}).
 

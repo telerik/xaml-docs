@@ -10,7 +10,7 @@ position: 14
 
 # Control Panel
 
-The Control Panel is a feature for the RadGridView that provides the end user with the possibility to change different configuration options related to RadGridView`s settings through additional elements positioned on the right top of the control.
+The Control Panel is a feature of the RadGridView that provides the end user with the option to change different configurations related to RadGridView`s settings through additional elements positioned on the top right of the control.
 
 
 __Figure 1:__ Control Panel within RadGridView
@@ -18,7 +18,7 @@ __Figure 1:__ Control Panel within RadGridView
 ![gridview control panel 1](images/gridview_controlpanel_01.png)
 
 
- In order to add items in the Control Panel, you need to set the __ControlPanelItems__ property of the RadGridView. You can define different content for as many ControlPanelItems as you need. Each ControlPanelItem can allow the end user to configure different options. Each item should have a __ControlPanelItem.Content__.
+In order to add items in the Control Panel, you need to set the __ControlPanelItems__ property of the RadGridView. You can define different content for as many ControlPanelItems as you need. Each ControlPanelItem can allow the end user to configure different options. Each item should have a __ControlPanelItem.Content__.
 
 
 #### __EXAMPLE 1:__ Adding items in the Control Panel.
@@ -42,7 +42,7 @@ __Figure 1:__ Control Panel within RadGridView
 
 
 You can also set a custom display for the items. For the purpose please set __ControlPanelItem.ButtonContent__.
-
+<<Comment: I am not sure what the last sentence is asking the reader to do. Are you asking them to set something in Example 1 or Example 2?>>
 
 #### __EXAMPLE 2:__ Setting a custom display for the items.
 
@@ -64,12 +64,12 @@ You can also set a custom display for the items. For the purpose please set __Co
         </telerik:RadGridView.ControlPanelItems>
 {{endregion}}
 
->tipYou can review a __runnable solution__ showing how to define ControlPanelItems from our SDK Samples Browser which can be downloaded from [here](http://demos.telerik.com/xaml-sdkbrowser/). The example is listed under __GridView/ControlPanel__
+>tip You can review a __runnable solution__ showing how to define ControlPanelItems from our SDK Samples Browser, which you can download from [here](http://demos.telerik.com/xaml-sdkbrowser/). The example is listed under __GridView/ControlPanel__
    
 
 ## Reusing Control Panel Items  ##
 
- You can add a common Style targeting the ControlPanel which all the RadGridView controls in the application will inherit.
+ You can add a common Style targeting the ControlPanel that all the RadGridView controls in the application will inherit.
 
 The __ControlPanelItemsCollection__ property of the RadGridView, added in Q1 2016, represents a collection of the different Control Panel items.
 
@@ -79,7 +79,7 @@ You can set the __ControlPanelItemsCollection__ either implicitly or explicitly.
 
 ### Implicitly Set the Control Panel Items  ###
 
-It is possible to declare a style that targets the RadGridView control. In this case the style will be applied to all RadGridView controls in the application. An example is shown in the following code snippet:
+It is possible to declare a style that targets the RadGridView control. In this case, the style will be applied to all RadGridView controls in the application, as shown in Example 3. 
 
 
 #### __EXAMPLE 3:__ Declare a common style for the Control Panel.
@@ -121,7 +121,7 @@ It is possible to declare a style that targets the RadGridView control. In this 
 
 {% if site.site_name == 'WPF' %}
 ### Explicitly Set the Control Panel Items ###
-You can change the control panel items explicitly for a specific RadGridView. First the __ControlPanelItemCollection__ should be created as a static resource: 
+You can change the control panel items explicitly for a specific RadGridView. First, the __ControlPanelItemCollection__ should be created as a static resource: 
 
 #### __EXAMPLE 4:__ Explicitly change the item collection of the RadGridView`s Control Panel.
 {{region gridview-overview-controlpanel-reuse-items_2}}

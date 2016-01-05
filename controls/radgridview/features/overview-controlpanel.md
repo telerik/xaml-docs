@@ -40,14 +40,7 @@ In order to add items in the Control Panel, you need to set the __ControlPanelIt
 	<telerik:RadGridView.ControlPanelItems>
 {{endregion}}
 
-
-<<<<<<< HEAD
 You can also set a custom display for the items. For the purpose please set __ControlPanelItem.ButtonContent__ as shown in Example 2.
-
-=======
-You can also set a custom display for the items. For the purpose please set __ControlPanelItem.ButtonContent__.
-<<Comment: I am not sure what the last sentence is asking the reader to do. Are you asking them to set something in Example 1 or Example 2?>>
->>>>>>> 885cbde473facac5250be7ba81fdf81eaf6d3fc0
 
 #### __EXAMPLE 2:__ Setting a custom display for the items.
 

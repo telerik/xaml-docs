@@ -12,7 +12,7 @@ position: 1
 
 As of Q1 2016 we've introduced the **ShouldRespectIEditableObject** property. The default value is **True**. Setting it to false will prevent RadGridView's DataEngine from calling the **IEditableObject** methods - **BeginEdit()**, **CancelEdit()** and **EndEdit()**.
 
-#### [XAML] Example 1: Setting ShouldRespectIEditableObject
+#### __[XAML] Example 1: Setting ShouldRespectIEditableObject__
 
 {{region gridview-disable-ieditableobject-support_0}}
 

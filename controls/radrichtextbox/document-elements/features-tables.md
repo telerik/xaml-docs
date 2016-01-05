@@ -34,7 +34,7 @@ The __RadRichTextBox__ is capable of displaying and editing tables. You can use 
 >tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
 
 
-The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
+The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements from the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
 
 #### __[C#] Example 1: Create a Table in Code-Behind__
 
@@ -136,8 +136,9 @@ The __RadRichTextBox__ exposes a rich API, which allows you to use various metho
 
 
 
-Here is a snapshot of the result.
+__Figure 1__ shows the result of the code in __Example 1__.
 
+#### __Figure 1: Table generated in code-behind__
 ![Rad Rich Text Box Features Layout Elements Tables 01](images/RadRichTextBox_Features_LayoutElements_Tables_01.png)
 
 
@@ -153,7 +154,7 @@ Here is a snapshot of the result.
 	Dim table As Table = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of Table)().First()
 {{endregion}}
 
-The __RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
+__RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
 
 
 * __DeleteTable__: Deletes the currently selected table.
@@ -193,7 +194,7 @@ The __RadRichTextBox__ exposes the following methods that regard the creation or
 >tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
         
 
-The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the following methods that regard the modifying of a table:
+__RadRichTextBox__ exposes a API allowing you to use various methods to add, modify or delete elements from [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. __RadRichTextBox__ exposes the following methods in regard to modifying of a table:
         
 
 * __ChangeTableBorders__: Modifies the borders of the currently selected table via a [__TableBorders__]{% if site.site_name == 'Silverlight' %}(http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_TableBorders.htm){%endif%}{% if site.site_name == 'WPF' %}(http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_TableBorders.htm){%endif%} object.
@@ -350,3 +351,5 @@ Additionally, the built-in context menu of the __RadRichTextBox__ gives the user
 * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
 
 * [Section]({%slug radrichtextbox-features-document-elements-section%})
+
+* [Repeat Table Header Row]({%slug radrichtextbox-features-repeat-table-header-row%}) 

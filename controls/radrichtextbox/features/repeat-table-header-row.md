@@ -10,7 +10,7 @@ position: 14
 
 # Repeat Table Header Row
 
-When working with large tables, they are visualized in more than one page. Header row repetition means that the header row(s) of a table will repeat at the top of each page on which the table appears. The current article will show you how to work with this feature.
+When working with large tables, they are visualized in more than one page. Header row repetition means that the header row(s) of a table will repeat at the top of each page on which the table spans. The current article will show you how to work with this feature.
 
 
 * [Overview](#overview)
@@ -24,20 +24,20 @@ When working with large tables, they are visualized in more than one page. Heade
 
 ## Overview
 
-__RadRichTextBox__ allows you to set a repeating header row for a table. You are free to choose whether there will be a single row or multiple consecutive ones. The requirement for this feature to be visible is the table to be spanned on two or more pages.
+__RadRichTextBox__ allows you to set a repeating header row for a table. You are free to choose whether there will be a single repeating row or multiple consecutive ones. The requirement for this feature to be visible is the table to be spanned on two or more pages.
 
 When the table header row is visible, a new (the same as the header row) row is visualized on the top of every slice of the table. This is only a visual change of the table representation – actually, a new row hasn’t been added to the table. __Figure 1__ shows how a table divided in two pages looks like when its first row is configured to repeat on each page.
 
 __Figure 1: Table with repeat header row applied__
 ![RadRichTextBox Features Repeat Table Header Row 02](images/RadRichTextBox_Features_Repeat_Table_Header_Row_02.png)
 
->The feature is visible only in Paged layout mode and when printing (Print Preview). 
+>The feature is visible only in Paged layout mode and when printing (Print Preview). Repeating table rows was introduces in Q1 2016.
 
 ## How to Use Repeat Table Header Row
 
-You can set one or more rows as a repeat table header row(s) consecutively. In other words, if row N is added as repeated header row, row N+1 can be added as well. However, if the row N is not added to repeat on each page, row N+1 cannot be added. A gap of non-repeated header rows cannot exist between two rows which you want to mark as repeated header rows. Note that you must always include the first row of the table.
+You can set one or more rows as a repeat table header row(s) consecutively. In other words, if row N is added as  a repeated header row, row N+1 can be added as well. However, if the row N is not added to repeat on each page, row N+1 cannot be added. A gap of non-repeated header rows cannot exist between two rows which you want to mark as repeated header rows. Note that you must always include the first row of the table.
 
->tip When there isn’t enough space for the next not a header row to be drawn on the page, the header row is not repeated – the row is drawn only on the first page (the page where the table begins).
+>tip When there isn’t enough space for the next non-repeating header row to be drawn on the page, the header row is not repeated – the row is drawn only on the first page (the page where the table begins).
 
 ### Programmatically via RadRichTextBox's API
 
@@ -90,7 +90,7 @@ __Figure 2: The Table Properties dialog__
 >Through the dialog you can set only the first row from the table as a repeated header row. If another row is chosen (click on the next, previous row buttons), the check-box is disabled. 
 
 
-A repeat table header row(s) could be added or removed via the Table Tools’ contextual tab __Layout__. There is a toggle button, which sets the row as a repeating header row or not.To learn more about how to use the __RadRichTextBoxRibbonUI__, you could read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
+Repeating table header row(s) could be added or removed via the Table Tools’ contextual tab __Layout__. There is a toggle button, which sets the row as a repeating header row or not.To learn more about how to use the __RadRichTextBoxRibbonUI__, you could read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
 
 Using this approach, header rows can be added consecutively. In other words, if row N is added as repeated header row, row N+1 can be added as well. However, if the row N is not added to repeat on each page, row N+1 cannot be added. A gap of non-repeated header rows cannot exist between two rows which you want to mark as repeated header rows. 
 
@@ -105,3 +105,5 @@ __Figure 3: Repeat Table Header Rows button in the Table Tools contextual menu__
 * [Table]({%slug radrichtextbox-features-document-elements-tables%})
 
 * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})
+
+* [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%})

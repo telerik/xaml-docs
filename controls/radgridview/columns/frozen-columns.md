@@ -10,11 +10,11 @@ position: 10
 
 # Frozen Columns
 
-__RadGridView__ provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column the user has to drag the frozen columns separator.
+__RadGridView__ provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column, the user has to drag the frozen columns separator.
 
 ![Rad Grid View Frozencolumns 1](images/RadGridView_Frozencolumns_1.png)
 
-Once there is a frozen column you can freeze other columns by dragging their headers behind the frozen columns separator.
+Once there is a frozen column, you can freeze other columns by dragging their headers behind the frozen columns separator.
 
 ![Rad Grid View Frozencolumns 2](images/RadGridView_Frozencolumns_2.png)
 
@@ -53,7 +53,7 @@ In this sample, the first two columns are frozen starting from left to right.
 
 ## Disabling Frozen Columns
 
-To disable the freezing of a column just set the __CanUserFreeze to False__ and the frozen columns separator will disappear.
+To disable the freezing of a column, just set the __CanUserFreeze to False__ and the frozen columns separator will disappear.
 
 #### __[XAML] Example 2 Disabling Frozen Columns__
 

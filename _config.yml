@@ -422,18 +422,18 @@ navigation:
     controls/radpdfviewer/document-model/text:
         title: Text
     controls/radspreadprocessing/working-with-workbooks:
-        title: Working with Workbooks
+        title: Workbooks
         position: 3
     "*radspreadprocessing":
         title: RadSpreadProcessing
     controls/radspreadprocessing/working-with-worksheets:
-        title: Working with Worksheets
+        title: Worksheets
         position: 4
     controls/radspreadprocessing/working-with-rows-and-columns:
-        title: Working with Rows and Columns
+        title: Rows and Columns
         position: 5
     controls/radspreadprocessing/working-with-cells:
-        title: Working with Cells
+        title: Cells
         position: 6
     controls/radspreadprocessing/formats-and-conversion:
         title: Formats and Conversion

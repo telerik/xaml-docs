@@ -230,6 +230,7 @@ There are a number of overloads that insert a run. The code snippet in __Example
 
 There are a number of overloads that insert a run. The code snippet in __Example 5__ inserts a couple of new runs, one of which with a specific font family.
                 
+>The '\r' and '\n' characters don't have the usual meaning of "go to next line" when they are inserted in a PDF document and you cannot simply insert text containing these characters to produce multiline text. Instead, you should split the text and insert a line break.
 
 The code in __Example 6__ inserts a new run and a line break after it.
                 

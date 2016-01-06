@@ -77,6 +77,10 @@ __Figure 1__ shows the result of __Example 3__.
 Figure 1: TextFragment Result
 ![Rad Pdf Processing Editing Fixed Content Editor 01](images/RadPdfProcessing_Editing_FixedContentEditor_01.png)
 
+
+>The '\r' and '\n' characters don't have the usual meaning of "go to next line" when they are inserted in a PDF document and you cannot simply insert text containing these characters to produce multiline text. Instead, you should split the text and insert it line by line. 
+
+
 ### Inserting Paragraph
 
 __Example 4__ shows how you can use the __Block__ object to draw a paragraph.

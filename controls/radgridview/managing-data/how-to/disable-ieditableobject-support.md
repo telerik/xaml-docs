@@ -2,7 +2,7 @@
 title: Disable IEditableObject Support
 page_title: Disable IEditableObject Support
 description: Disable IEditableObject Support
-slug: gridview-disable-ieditableobject-support
+slug: radgridview-managing-data-how-to-disable-ieditableobject-support
 tags: disable,ieditableobject,support,data,engine
 published: True
 position: 1

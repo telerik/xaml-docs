@@ -50,7 +50,7 @@ Below you can find the differences between the three color variations. Every bru
 |AccentMainBrush|FF3399FF|FF3399FF|FF3399FF|
 |AccentDarkBrush|FF007ACC|FF007ACC|FF007ACC|
 |SelectedBrush|FFFFFFFF|FFFFFFFF|FFFFFFFF|
-|ValidationBrushF|FFF3333|FFFF3333|FFFF3333|
+|ValidationBrush|FFF3333|FFFF3333|FFFF3333|
 |__Brushes, which are different in the three palettes__| | | |
 |AccentBrush|FF007ACC|FF007ACC|FFE5C365|
 |MarkerBrush|FF1E1E1E|FFF1F1F1|FF1E1E1E|

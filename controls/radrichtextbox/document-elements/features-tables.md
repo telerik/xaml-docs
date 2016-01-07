@@ -9,7 +9,7 @@ position: 6
 ---
 
 # Table
-
+<<Comment: You should make headings (especially near the front of an article) more SEO-friendly. The heading should mention the name of the control. For example: "Overview of Tables in RadRichTextBox" is better for SEO than what you have here.>>
 
 
 The __RadRichTextBox__ is capable of displaying and editing tables. You can use one of the following approaches to add or modify a table:
@@ -28,9 +28,9 @@ The __RadRichTextBox__ is capable of displaying and editing tables. You can use 
 	* [Formatting a Table](#formatting-a-table)
 
 ## Using RadRichTextBox's API
-
+<<Comment: I suggest better SEO for this heading would be "Creating a Table Using the RadRichTextBox API">>
 ### Creating a Table Programmatically
-
+<<Comment: I suggest better SEO for this heading would be "Creating a Table Programmatically using the RadRichTextBox">>
 >tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
 
 
@@ -140,7 +140,7 @@ __Figure 1__ shows the result of the code in __Example 1__.
 
 #### __Figure 1: Table generated in code-behind__
 ![Rad Rich Text Box Features Layout Elements Tables 01](images/RadRichTextBox_Features_LayoutElements_Tables_01.png)
-
+<<Comment: ALT text improves search results. Can you add SEO friendly ALT text to figures?>>
 
 >tipYou can obtain an existing table from the document using the EnumerateChildrenOfType() method as demonstrated in __Example 2__. For more information about how to select a table, please check [this article]({%slug radrichtextbox-features-selection%}).    
 
@@ -190,7 +190,7 @@ __RadRichTextBox__ exposes the following methods that regard the creation or del
 
 
 ### Formatting a Table at Runtime
-
+<<Comment: A more SEO-friendly heading suggestion "Formatting a Table of a RadRichTextBox at Runtime">>
 >tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
         
 

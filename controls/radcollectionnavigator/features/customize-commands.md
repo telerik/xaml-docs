@@ -26,8 +26,6 @@ The methods listed below identify the logic that is executed when a certain comm
 
 #### __C#__
 
-{{region raddataform-customize-commands_0}}
-
 	void MoveCurrentToFirst()
 	void MoveCurrentToLast()
 	void MoveCurrentToNext()
@@ -35,15 +33,12 @@ The methods listed below identify the logic that is executed when a certain comm
 	void BeginEdit()
 	void Delete()
 	void AddNew()
-	{{endregion}}
-
+	
 “Can-execute logic” methods
 
 With the help of those methods you can identify whether a certain command can be executed or not.
 
 #### __C#__
-
-{{region raddataform-customize-commands_1}}
 
 	bool CanMoveCurrentToFirstExecute()
 	bool CanMoveCurrentToLastExecute()
@@ -52,10 +47,7 @@ With the help of those methods you can identify whether a certain command can be
 	bool CanBeginEditExecute()
 	bool CanDeleteExecute()
 	bool CanAddNewExecute()
-	{{endregion}}
 
-
-        
 
 ## Designing a custom CommandProvider
 
@@ -63,7 +55,7 @@ The first step is to create your own class that inherits from CollectionNavigato
 
 #### __C#__
 
-{{region raddataform-customize-commands_2}}
+{{region radcollectionnavigator-customize-commands_1}}
 
 	public class CustomCommandProvider : CollectionNavigatorBaseCommandProvider
 	{
@@ -91,7 +83,7 @@ In case we have a requirement to prompt for the user`s approval when moving thro
 
 #### __C#__
 
-{{region raddataform-customize-commands_3}}
+{{region radcollectionnavigator-customize-commands_2}}
 
 		public override void MoveCurrentToNext()
 		{
@@ -118,22 +110,22 @@ The last thing to be done is to set CommandProvider Property of the RadCollectio
 
 #### __XAML__
 
-{{region raddataform-customize-commands_10}}
+{{region radcollectionnavigator-customize-commands_3}}
 
 	 <Window.Resources>
 	    <my:CustomCommandProvider x:Key="CustomProvider"/>
 	</Window.Resources>
 	
 	<telerik:RadCollectionNavigator x:Name="CollectionNavigator"
-	                     ItemsSource="{Binding Employees}" 
-	                     CommandProvider="{StaticResource CustomProvider}"/>
+	                     			Source="{Binding Employees}" 
+	                    			CommandProvider="{StaticResource CustomProvider}"/>
 	{{endregion}}
 
 
 
 #### __C#__
 
-{{region raddataform-customize-commands_5}}
+{{region radcollectionnavigator-customize-commands_4}}
 
 	this.CollectionNavigator.CommandProvider = new CustomCommandProvider(this.CollectionNavigator);
 	{{endregion}}

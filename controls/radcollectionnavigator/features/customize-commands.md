@@ -112,13 +112,9 @@ The last thing to be done is to set CommandProvider Property of the RadCollectio
 
 {{region radcollectionnavigator-customize-commands_3}}
 
-	 <Window.Resources>
-	    <my:CustomCommandProvider x:Key="CustomProvider"/>
-	</Window.Resources>
 	
 	<telerik:RadCollectionNavigator x:Name="CollectionNavigator"
-	                     			Source="{Binding Employees}" 
-	                    			CommandProvider="{StaticResource CustomProvider}"/>
+	                     			Source="{Binding Employees}"/>
 	{{endregion}}
 
 
@@ -131,7 +127,7 @@ The last thing to be done is to set CommandProvider Property of the RadCollectio
 	{{endregion}}
 
 
-Modifying the methods will result in the following addition when trying to move to the next item:
+Modifying the methods will result in the following action when trying to move to the next item:
 
 ![collectionnavigator 03](../images/collectionnavigator_03.png)
 

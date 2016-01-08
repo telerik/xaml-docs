@@ -9,7 +9,6 @@ position: 0
 ---
 
 # Getting Started with RadPropertyGrid
-<<Comment: A heading just called Getting Started is not very SEO friendly. I changed this to be a phrase someone is more likely to type into a search engine.>>
 
 
 This tutorial will walk your through the creation of a sample application that contains RadPropertyGrid and will show you how to: 
@@ -188,12 +187,10 @@ When you run the application, you will see a RadPropertyGrid:
 {{endregion}}
 
 ## Nested Properties in a RadPropertyGrid
-<<Comment: I modified the heading for better SEO.>>
 Please check the article about [Nested Properties]({%slug radpropertygrid-nested-properties%}).
         
 
 ## Other properties of a RadPropertyGrid
-<<Comment: I modified the heading for better SEO.>>
 __LabelColumnWidth:__ You could change the width of the first column in the RadPropertyGrid by setting a value for this property of the RadPropertyGrid.
         
 

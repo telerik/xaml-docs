@@ -24,7 +24,7 @@ __Telerik.Windows.Controls.Data.CollectionNavigator.CollectionNavigatorBaseComma
 
 The methods listed below identify the logic that is executed when a certain command’s invocation takes place.
 
-#### __C#__
+#### __[C#]__ Example 1: RadCollectionNavigator`s executable commands  
 
 	void MoveCurrentToFirst()
 	void MoveCurrentToLast()
@@ -38,7 +38,7 @@ The methods listed below identify the logic that is executed when a certain comm
 
 With the help of those methods you can identify whether a certain command can be executed or not.
 
-#### __C#__
+#### __[C#]__ Example 2:RadCollectionNavigator "can-execute" methods 
 
 	bool CanMoveCurrentToFirstExecute()
 	bool CanMoveCurrentToLastExecute()
@@ -53,7 +53,7 @@ With the help of those methods you can identify whether a certain command can be
 
 The first step is to create your own class that inherits from CollectionNavigatorBaseCommandProvider:
 
-#### __C#__
+#### __[C#]__ Example 3: Creating a class that provides the custom commands
 
 {{region radcollectionnavigator-customize-commands_1}}
 
@@ -81,7 +81,7 @@ Those commands, which logic is up to get customized, should have their correspon
 
 In case we have a requirement to prompt for the user`s approval when moving through the items, the following change in the methods can be done:
 
-#### __C#__
+#### __[C#]__ Example 4: Overriding the default commands
 
 {{region radcollectionnavigator-customize-commands_2}}
 
@@ -108,7 +108,7 @@ In case we have a requirement to prompt for the user`s approval when moving thro
 The last thing to be done is to set CommandProvider Property of the RadCollectionNavigator to be the newly-created CustomCommandProvider class:
         
 
-#### __XAML__
+#### __[XAML]__ Example 5: Assigning the CommandProvider 
 
 {{region radcollectionnavigator-customize-commands_3}}
 
@@ -119,7 +119,7 @@ The last thing to be done is to set CommandProvider Property of the RadCollectio
 
 
 
-#### __C#__
+#### __[C#]__ Example 5: Assigning the CommandProvider 
 
 {{region radcollectionnavigator-customize-commands_4}}
 

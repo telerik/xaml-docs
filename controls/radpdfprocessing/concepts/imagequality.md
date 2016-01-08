@@ -40,7 +40,7 @@ In order to specify the default **ImageQuality** value when exporting to PDF, yo
 
 ### Specify the Image Quality of an Image
 
-If you need some particular image to be exported with different **ImageQuality** value, you should specify this value in the constructor of [ImageSource]({%slug radpdfprocessing-model-imagesource%}) in order to override the default one.
+If you need some particular image to be exported with a different **ImageQuality** value, you should specify this value in the constructor of [ImageSource]({%slug radpdfprocessing-model-imagesource%}) in order to override the default one.
 
 #### __[C#] Example 2: Set the Image Quality of an Image__
 
@@ -57,7 +57,7 @@ When you construct an **ImageSource** object with [EncodedImageData](http://docs
 
 When **ImageQuality** of an image is set to **High**, **RadPdfProcessing** internally checks the image stream before processing it. If the image is JPEG or JPEG2000, it is inserted in the PDF file as it is, without processing the image pixels. This way, **RadPdfProcessing** provides fast and lossless quality export of JPEG and JPEG2000 files, which guarantees maximum quality in the exported document.
 
-> JPEG2000 images in **RadPdfProcessing** can be inserted only with **ImageQuality.High**. Exporting them with lower ImageQuality value requires decoding JPEG2000 files which is currently unsupported by the library. 
+> JPEG2000 images in **RadPdfProcessing** can be inserted only with **ImageQuality.High**. Exporting them with lower ImageQuality value requires decoding JPEG2000 files, which is currently unsupported by the library. 
 
 # See also
 

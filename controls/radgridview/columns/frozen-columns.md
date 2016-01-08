@@ -69,9 +69,9 @@ To disable the freezing of a column, just set the __CanUserFreeze to False__ and
 
 ## Frozen Columns Events
 
-As of Q1 2016 we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
+As of Q1 2016, we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
 
-You can subscribe to the event either declaratively or runtime like this:
+You can subscribe to the event either declaratively or at runtime like this:
 
 #### __[XAML] Example 3 Subscribing to the FrozenColumnsChanged Event__
 
@@ -95,7 +95,7 @@ You can subscribe to the event either declaratively or runtime like this:
 	AddHandler gridView.FrozenColumnsChanged, AddressOf gridView_FrozenColumnsChanged
 {{endregion}}
 
-Via the FrozenColumnsChangedEventArgs you can get the:
+Via the FrozenColumnsChangedEventArgs, you can get the:
 
 * __AddedFrozenColumns__ - the columns that were added to the collection of frozen columns
 

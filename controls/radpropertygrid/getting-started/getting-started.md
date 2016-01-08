@@ -8,20 +8,20 @@ published: True
 position: 0
 ---
 
-# Getting Started
+# Getting Started with RadPropertyGrid
+<<Comment: A heading just called Getting Started is not very SEO friendly. I changed this to be a phrase someone is more likely to type into a search engine.>>
 
 
+This tutorial will walk your through the creation of a sample application that contains RadPropertyGrid and will show you how to: 
 
-This tutorial will walk your through the creation of a sample application that contains RadPropertyGrid and will show you how: 
+* Use a RadPropertyGrid in your project
 
-* Use RadPropertyGrid in your project
-
-* Bind RadPropertyGrid to a single item
+* Bind a RadPropertyGrid to a single item
 
 For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Visual Studio. 
 
 
->In order to use RadPropertyGrid in your projects you have to add references to the following assemblies:
+>In order to use RadPropertyGrid in your projects, you have to add references to the following assemblies:
 >* __Telerik.Windows.Controls__
 >* __Telerik.Windows.Controls.Data__
 >* __Telerik.Windows.Data__
@@ -92,7 +92,7 @@ Two lines of code are important here:
 
 
 
-* The declaration of RadPropertyGrid control inside the Grid:
+* The declaration of the RadPropertyGrid control inside the Grid:
 
 #### __[XAML]Example 3: Declaring RadPropertyGrid__
 
@@ -105,14 +105,14 @@ Two lines of code are important here:
 
 
 
-Now, if you run your application, an empty RadPropertyGrid will be visualized:
+Now, if you run your application, you will see an empty RadPropertyGrid:
 
 
 ![](images/RadPropertyGrid_GettingStarted1.png)
 
-## Binding RadPropertyGrid to an item
+## Binding a RadPropertyGrid to an item
 
-* Binding to a data item - you may bind RadPropertyGrid to a single data item. Thus you will be able to examine and edit it properties. The only thing you need is to set the Item property of RadPropertyGrid. The binding may be performed both in xaml and it code-behind.
+* Binding to a data item - you may bind RadPropertyGrid to a single data item. Thus, you will be able to examine and edit its properties. The only thing you need is to set the Item property of RadPropertyGrid. The binding may be performed both in xaml and in the code behind.
 
 #### __[C#]Example 4: Binding to data item__
 
@@ -147,13 +147,13 @@ Now, if you run your application, an empty RadPropertyGrid will be visualized:
 
 
 
-Once you set the Item and run the application, RadPropertyGrid will be displayed as follows:
+Once you set the Item and run the application, you will see a RadPropertyGrid:
 
 ![](images/RadPropertyGrid_GettingStarted2.png)
 
 
 
-* Binding to a visual element - you may bind the Item property of RadPropertyGrid to a visual element and again be able to view and edit its properties. The binding may be performed both in xaml and in code behind:
+* Binding to a visual element - you may bind the Item property of RadPropertyGrid to a visual element and again be able to view and edit its properties. The binding may be performed both in xaml and in the code behind:
 
 #### __[XAML]Example 5: Binding to visual element__
 
@@ -165,15 +165,15 @@ Once you set the Item and run the application, RadPropertyGrid will be displayed
 
 
 
-On running the application, RadPropertyGrid will be visualized as follows:
+When you run the application, you will see a RadPropertyGrid:
 
 ![](images/RadPropertyGrid_GettingStarted3.png)
 
 
 
-## Binding PropertyDefinition to an existing property
+## Binding a PropertyDefinition to an existing property
 
- Binding to an existing property - you may bind the PropertyDefinition to a property of the data item. Thus you will be able to examine and edit this property.
+* Binding to an existing property - you may bind the PropertyDefinition to a property of the data item. Thus you will be able to examine and edit this property.
         
 
 #### __[XAML]Example 6: Binding to a property of data item__
@@ -187,20 +187,20 @@ On running the application, RadPropertyGrid will be visualized as follows:
 	  </telerik:RadPropertyGrid>
 {{endregion}}
 
-## Nested Properties
-
+## Nested Properties in a RadPropertyGrid
+<<Comment: I modified the heading for better SEO.>>
 Please check the article about [Nested Properties]({%slug radpropertygrid-nested-properties%}).
         
 
-## Other Properties
-
+## Other properties of a RadPropertyGrid
+<<Comment: I modified the heading for better SEO.>>
 __LabelColumnWidth:__ You could change the width of the first column in the RadPropertyGrid by setting a value for this property of the RadPropertyGrid.
         
 
 __IsGrouped:__ Controls the current RadPropertyGrid's state. You can set it to true and you will have RadPropertyGrid initially grouped. If you set it to false, then you will have RadPropertyGrid sorted.
        
 
-__AutoGeneratePropertyDefinitions:__  Indicated whether property definitions will be autogenerated.
+__AutoGeneratePropertyDefinitions:__  Indicates whether property definitions will be autogenerated.
         
 
 __DescriptionPanelVisibility:__ Sets the visibility mode of the description panel.
@@ -221,6 +221,6 @@ __SearchBoxVisibility:__ Sets the visibility mode of the search box.
 __SortAndGroupButtonsVisibility:__ Sets the visibility mode of the sort and group buttons.
         
 
-## Localization
+## Localization of a RadPropertyGrid
 
-Since __Q3 SP1 2012__ we have added Localization for __CollectionEditor__. Please check the common article about [Localization]({%slug common-localization%}).
+Since Q3 SP1 2012, we have added Localization for __CollectionEditor__. Please check the common article about [Localization]({%slug common-localization%}).

@@ -5,7 +5,7 @@ description: Read Only Ranges
 slug: radrichtextbox-features-read-only-ranges
 tags: read,only,ranges
 published: True
-position: 15
+position: 16
 ---
 
 # Read Only Ranges

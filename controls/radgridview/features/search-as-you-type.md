@@ -87,5 +87,6 @@ In order to modify the search behavior, you can benefit from the following three
 
 * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})
 
+* [Commands]({%slug gridview-commands-overview%})
 
 

@@ -21,7 +21,7 @@ The ImageSource class has five public contrustor overloads and can be created fr
 
 * __public ImageSource(Stream stream)__: Creates an __ImageSource__ object from a stream that contains images.
 
-* __public ImageSource(Stream stream, FormatProviders.Pdf.Export.ImageQuality imageQuality)__: Creates an __ImageSource__ object from a stream and allows you to specify the image quality through the [ImageQuality enumeration](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_Pdf_Export_ImageQuality.htm).
+* __public ImageSource(Stream stream, FormatProviders.Pdf.Export.ImageQuality imageQuality)__: Creates an __ImageSource__ object from a stream and allows you to specify the image quality through the [ImageQuality enumeration](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_Pdf_Export_ImageQuality.htm). More information about the ImageQuality and its behavior is available in [this article]({%slug radpdfprocessing-concepts-imagequality%}).
 
 * __public ImageSource(BitmapSource bitmapSource)__: Creates a new __ImageSource__ object from a BitmapSource object.
 
@@ -51,6 +51,7 @@ __Example 2__ demonstrates how you can create an __ImageSource__ using the __Enc
 #### __[C#] Example 2: Create ImageSource from Encoded Image Data__
 {{region radpdfprocessing-model-imagesource_2}}
 	EncodedImageData imageData = new EncodedImageData(imageBytes, 8, 655, 983, ColorSpaceNames.DeviceRgb, new string[] { PdfFilterNames.DCTDecode });
+	ImageSource imageSource = new ImageSource(imageData);
 {{endregion}}
 
 ## Properties
@@ -86,7 +87,7 @@ __RadPdfProcessing__ exposes an extension method allowing you to convert every B
     bitmap.UriSource = new Uri(filename, UriKind.RelativeOrAbsolute);
     bitmap.EndInit();
 
-    return bitmap.ToImageSource();
+    ImageSource imageSource = bitmap.ToImageSource();
 {{endregion}}
 
 

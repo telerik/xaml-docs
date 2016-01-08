@@ -57,6 +57,10 @@ __UserPassword__
 
 The password to be used if the document is encrypted. The default password is empty string.
 
+__ImageQuality__
+
+The **ImageQuality** property specifies the quality with which images are exported to PDF. More information about how it works is available in [this article]({%slug radpdfprocessing-concepts-imagequality%}).
+
 __ComplianceLevel__
 
 Specifies the PDF/A compliance level. It can have one of the following values: 

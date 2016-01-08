@@ -11,11 +11,10 @@ position: 6
 # Table
 
 
-
 The __RadRichTextBox__ is capable of displaying and editing tables. You can use one of the following approaches to add or modify a table:
       
 
-* [Programmatically via RadRichTextBox's API](#using-radrichtextboxs-api)
+* [Programmatically via the RadRichTextBox API](#using-the-radrichtextbox-api)
 
 	* [Creating a Table Programmatically](#creating-a-table-programmatically)
 	
@@ -27,7 +26,7 @@ The __RadRichTextBox__ is capable of displaying and editing tables. You can use 
 	
 	* [Formatting a Table](#formatting-a-table)
 
-## Using RadRichTextBox's API
+## Using the RadRichTextBox API
 
 ### Creating a Table Programmatically
 

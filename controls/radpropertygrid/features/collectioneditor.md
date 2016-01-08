@@ -82,3 +82,122 @@ The following listed commands, defined in the CollectionEditorCommands class, in
  
 
 * __Delete__
+
+## Customizing Commands
+
+It is possible to customize the default commands for the CollectionEditor and the CollectionEditorPicker in a MVVM-friendly way. The following examples are using the CollectionEditor control but the same changes can be applied for the CollectionEditorPicker as well.
+
+“Execute logic” methods
+
+The methods listed below identify the logic that is executed when a certain command’s invocation takes place.
+
+#### __[C#]__ Example 3: CollectionEditor`s executable commands  
+
+	void MoveCurrentToNext()
+	void MoveCurrentToPrevious()
+	void Delete()
+	void AddNew()
+
+
+“Can-execute logic” methods
+
+With the help of those methods you can identify whether a certain command can be executed or not.
+
+#### __[C#]__ Example 4:CollectionEditor "can-execute" methods 
+
+	bool CanMoveCurrentToNextExecute()
+	bool CanMoveCurrentToPreviousExecute()
+	bool CanDeleteExecute()
+	bool CanAddNewExecute()
+
+
+## Designing a custom CommandProvider
+
+The first step is to create your own class that inherits from CollectionNavigatorBaseCommandProvider:
+
+#### __[C#]__ Example 5: Creating a class that provides the custom commands
+
+{{region collectioneditor-customize-commands_1}}
+
+	public class CustomCommandProvider : CollectionNavigatorBaseCommandProvider
+	{
+		public CustomCommandProvider() : base(null)
+		{
+		}
+	 
+		public CustomCommandProvider(CollectionNavigatorBase collectionEditor)
+            : base(collectionEditor)
+		{
+            this.CollectionNavigator = collectionEditor;
+		}
+		//. . .
+	}
+	
+	{{endregion}}
+
+
+
+Those commands, which logic is up to get customized, should have their corresponding methods overridden. In the following example we will customize: MoveCurrentToNext, MoveCurrentToPrevious.
+
+## MoveCurrentToNext and MoveCurrentToPrevious
+
+In case you have a requirement to ask for the customer`s approval when moving through items, you need to update the commands as in the following examples:
+
+#### __[C#]__ Example 6: Overriding the default commands
+
+{{region collectioneditor-customize-commands_2}}
+
+		public override void MoveCurrentToNext()
+		{
+			MessageBoxResult result = MessageBox.Show("MoveCurrentToNext ?", "MoveCurrentToNext", MessageBoxButton.OKCancel);
+			if (result == MessageBoxResult.OK)
+			{
+				this.CollectionNavigator.MoveCurrentToNext();
+			}
+		}
+
+        public override void MoveCurrentToPrevious()
+		{
+			MessageBoxResult result = MessageBox.Show("MoveCurrentToPrevious ?", "MoveCurrentToPrevious", MessageBoxButton.OKCancel);
+			if (result == MessageBoxResult.OK)
+			{
+				this.CollectionNavigator.MoveCurrentToPrevious();
+			}
+		}
+	
+	{{endregion}}
+
+
+
+The last thing to be done is to set CommandProvider Property of the CollectionEditor to be the newly-created CustomCommandProvider class:
+        
+
+#### __[XAML]__ Example 7: Assigning the CommandProvider 
+
+{{region collectioneditor-customize-commands_3}}
+
+	
+	<telerik:CollectionEditor x:Name="CollectionEditor"
+	                     	  Source="{Binding Employees}"/>
+	{{endregion}}
+
+
+
+#### __[C#]__ Example 8: Assigning the CommandProvider 
+
+{{region collectioneditor-customize-commands_4}}
+
+	this.CollectionEditor.CommandProvider = new CustomCommandProvider(this.CollectionEditor);
+	{{endregion}}
+
+Modifying the methods will result in the following action when trying to move to the next item:
+
+![customize commands](images/RadPropertyGrid_CollectionEditor_CustomizeCommands.png)
+
+# See Also
+
+* [Nested Properties]({%slug radpropertygrid-nested-properties%})
+
+* [Data Annotations]({%slug radpropertygrid-data-annotations%})
+
+* [Defining Property Sets]({%slug radpropertygrid-defining-propertysets%})

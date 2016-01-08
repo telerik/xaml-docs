@@ -34,9 +34,6 @@ In order to use the model of the __RadSpreadProcessing__ library in your project
 * Telerik.Windows.Documents.Spreadsheet.dll
             
 
-* Telerik.Windows.Maths.dll
-            
-
 The following assemblies are required in order to be able to exporto to Xlsx and PDF formats:
         
 

@@ -71,7 +71,7 @@ controls/radtimespanpicker,
 controls/radlistbox/how-to,
 visual-studio-templates.md,
 consuming-data/wcf-service.md,
-controls/radziplibrary/features/zip-extensions.md]
+controls/radziplibrary/features/zip-extensions.md, controls/radgridview/features/search-as-you-type]
 
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:

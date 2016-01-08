@@ -17,17 +17,15 @@ When working with large tables, they are visualized in more than one page. Heade
 
 * [How to Use Repeat Table Header Row](#how-to-use-repeat-table-header-row)
 
-	* [Programmatically via RadRichTextBox's API](#programmatically-via-radrichtextboxs-api)
-<<Comment: In my edits, I suggested changing "RadRichTextBox's API" to "the RadRichTextBox API" because it is better for SEO. If you make that change, change here too.>>
+	* [Programmatically via the RadRichTextBox API](#programmatically-via-the-radrichtextbox-api)
 	* [Via the Built-in UI](#via-the-built-in-ui)
 
 
 ## Overview  
-<<Comment: I suggest changing headings to be more SEO friendly, so in the previous heading, "Overview of RadRichTextBox Repeating header row for a table". This can be a larger discussion to have with your team and is bigger than just this one article. Consider making changes like this whenever you are already modifying an article. That was one of my goals when I worked at Telerik -- most of your customers use Google search to find documentation and headings that are more SEO friendly will help in search results. Also, ALT text for figures is important in Google search. I don't see ALT text mentioned in any article that I edit but you could start adding them to improve search.>>
 
 __RadRichTextBox__ allows you to set a repeating header row for a table. You are free to choose whether there will be a single repeating row or multiple consecutive ones. The requirement for this feature to be visible is the table will span on two or more pages.
 
-When the table header row is visible, a new (the same as the header row) row is visualized on the top of every slice of the table. This is only a visual change of the table representation – actually, a new row hasn’t been added to the table. __Figure 1__ shows what a table divided that spans over two pages looks like when its header row is configured to repeat on each page.
+When the table header row is visible, a new (the same as the header row) row is visualized on the top of every slice of the table. This is only a visual change of the table representation – actually, a new row hasn’t been added to the table. __Figure 1__ shows what a table divided that spans over two pages looks like when its first row is configured to repeat on each page.
 
 __Figure 1: Table with repeat header row applied__
 ![RadRichTextBox Features Repeat Table Header Row 02](images/RadRichTextBox_Features_Repeat_Table_Header_Row_02.png)
@@ -35,12 +33,12 @@ __Figure 1: Table with repeat header row applied__
 >The feature is visible only in Paged layout mode and when printing (Print Preview). Repeating table rows was introduced in Q1 2016.
 
 ## How to Use a Repeat Table Header Row
-<<Comment: I suggest a modified headline such as "How to Use a Repeat Table Header Row in RadRichTextBox" which is more SEO friendly.>>
+
 You can set one or more rows as a repeat table header row(s) consecutively. In other words, if row N is added as a repeated header row, row N+1 can be added as well. However, if row N is not added to repeat on each page, row N+1 cannot be added. A gap of non-repeated header rows cannot exist between two rows that you want to mark as repeated header rows. Note that you must always include the first row of the table.
 
 >tip When there isn’t enough space for the next non-repeating header row to be drawn on the page, the header row is not repeated – the row is drawn only on the first page (the page where the table begins).
 
-### Programmatically via RadRichTextBox's API  <<Comment: For better SEO, change to "Create a Repeat Table Header Row Programmatically using the RadRichTextBox API">>
+### Programmatically via the RadRichTextBox API 
 
 The __[TableRow class](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_TableRow.htm)__ exposes a property called RepeatOnEveryPage of type *bool*. __Example 1__ shows how to set a row to repeat on each page the table appears on.
 
@@ -78,7 +76,7 @@ Another option is to use the ChangeTableRowRepeatOnEveryPage() method of __RadRi
 
 
 
-### Via the Built-in UI  <<This is not a very SEO-friendly heading. It should at least mention the name of the control and the actions. For example, "Set a Repeat Table Header Row in a __RadRichTextBox__ Using the Built-in UI">>
+### Via the Built-in UI 
 
 Using the UI of __RadRichTextBox__, you have the ability to add or remove header rows.
 

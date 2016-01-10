@@ -1,6 +1,6 @@
 ---
-title: Creating Custom Gesture
-page_title: Creating Custom Gesture
+title: Creating a Custom Gesture
+page_title: Creating a Custom Gesture
 description: Custom Gesture
 slug: touchmanager-creating-custom-gesture
 tags: creating,gestures,gesture,custom,touch,manager,touchmanager
@@ -8,9 +8,9 @@ published: True
 position: 2
 ---
 
-# Creating custom gesture
-
-This article demonstrates how to implement a custom gesture. The following example will guide you through the creation of __two fingers tap__ gesture.
+# Creating a custom gesture
+<<Comment: For better SEO, TouchManager should appear in the title, description and H1. The tags should also include gesture recognizer since I can imagine a customer typing that into a search box.>>
+This article demonstrates how to implement a custom gesture to use in a TouchManager. The following example will guide you through the creation of a __two fingers tap__ gesture. <<Comment: Did my addition create an error?>>
 
 * [Implementing the gesture recognizer](#implementing-the-gesture-recognizer)
 * [Implementing the gesture recognizer factory](#implementing-the-gesture-recognizer-factory)
@@ -18,7 +18,7 @@ This article demonstrates how to implement a custom gesture. The following examp
 
 ## Implementing the gesture recognizer 
 
-Let us begin with creating the gesture recognizer. Define a class that derives from GestureRecognizerBase and override its abstract methods. 	
+To begin creating the gesture recognizer, you must first define a class that derives from GestureRecognizerBase and override its abstract methods. 	
 	
 #### __[C#] Example 1: Defining the gesture recognizer__	
 	public class TwoFingerTapGestureRecognizer : GestureRecognizerBase
@@ -78,18 +78,18 @@ Let us begin with creating the gesture recognizer. Define a class that derives f
 		End Sub
 	End Class
 	
-For this example, we will use only three of the recognizer's methods – OnTouchDown, OnTouchUp and OnTouchLeave.
+For this example, we will use only three of the gesture recognizer's methods: OnTouchDown, OnTouchUp and OnTouchLeave.
 
-There are several helper fields which will be used in the example which you can find listed below.
-
-* __AllowedInterval__: A readonly field of type TimeSpan which contains the allowed time frame in which the gesture can be executed. If the time between the touch down and touch up is more than the allowed time span the gesture won't be executed.
-* __MaxTouchCount__: A readonly field of type Int32 which that defines the count of the required touches for executing the gesture.
-* __originTouchTime__: A field of type DateTime which holds the time when the first finger was down.
-* __isTwoFingerGesture__: A field of type Boolean which tells if two fingers are on the screen and if the gesture can be executed.		
-* __touchIds__: A field of type List<int> which holds the touch ids. The list is used to store the ids of the touches on the screen.		
-* __handlers__: A field of type List<WeakReference> which holds references to the event handlers attached to the recognizer.
-
-You can find their code definitions in the following code snippet:
+The example will use several helper fields:
+<<Comment: Why are these called helper fields but in the code snippet called properties? If you decide to call them properties, change the sentence right before example 2 that mentions helper fields.>>
+* __AllowedInterval__: A readonly field of type TimeSpan that contains the allowed timeframe in which the gesture can be executed. If the time between the touch down and touch up is more than the allowed timespan, the gesture won't be executed.
+* __MaxTouchCount__: A readonly field of type Int32 that defines the count of the required touches for executing the gesture.
+* __originTouchTime__: A field of type DateTime that holds the time when the first finger was down.
+* __isTwoFingerGesture__: A field of type Boolean that tells if two fingers are on the screen and if the gesture can be executed.		
+* __touchIds__: A field of type List<int> that holds the touch ids. The list is used to store the ids of the touches on the screen.		
+* __handlers__: A field of type List<WeakReference> that holds references to the event handlers attached to the recognizer.
+<<Comment: Why do the first two helper fields begin with capital letters and the others do not? It seems to me they should be consistent. I see that the code snippet follows the list above, so if I am wrong, remove my comment. If I am right, the list and the code snippet should match.>>
+You can find the code definitions of the helper fields in the following code snippet:
 
 #### __[C#] Example 2: Defining the properties of the recognizer__  
 	private static readonly TimeSpan AllowedInterval = TimeSpan.FromMilliseconds(300);
@@ -107,7 +107,7 @@ You can find their code definitions in the following code snippet:
 	Private touchIds As New List(Of Integer)()
 	Private handlers As New List(Of WeakReference)()
 
-When we add the properties we can use them in the overrides of the recognizer's methods. 
+When we add the properties we can use them in the overrides of the gesture recognizer's methods. 
 
 * __OnTouchDown__: When this method is called, we can store the touch id in the *touchIds* collection. If this is the first touch, we are setting the *originTouchTime* to the current time. If this is the second touch, we set the *isTwoFingerGesture* property to __true__.
 	
@@ -131,7 +131,7 @@ When we add the properties we can use them in the overrides of the recognizer's 
 			Me.isTwoFingerGesture = Me.touchIds.Count = MaxTouchCount
 		End Sub
 
-* __OnTouchLeave__: When this method is called, we can remove the touch id of the leaving touch from *touchIds* collection.
+* __OnTouchLeave__: When this method is called, we can remove the touch id of the leaving touch from the *touchIds* collection.
 	
 	#### __[C#] Example 4: Implementing logic in the OnTouchLeave method__
 		public override void OnTouchLeave(GestureRecognizerEventArgs args)
@@ -180,7 +180,7 @@ When we add the properties we can use them in the overrides of the recognizer's 
 	
 	> The GestureExtensions is a class that holds a custom routed event and fires it when the gesture is executed. We will discuss its implementation in the [Using the gesture](#using-the-gesture) section of this article.		
 
-This is the main logic of the recognizer. The next step is to implement logic for storing the event handlers for the gesture. We can do this through couple public methods which accept event handlers as arguments and add/remove them in the *handlers* collection defined earlier.
+Example 6 is the main logic of the recognizer. In this example you'll see how to implement logic for storing the event handlers for the gesture. We can do this through a couple of public methods that accept event handlers as arguments and add/remove them in the *handlers* collection defined earlier.
 
 #### __[C#] Example 6: Implementing logic for associating event handlers with the recognizer__
 	public void AddHandler(RoutedEventHandler handler)
@@ -259,7 +259,7 @@ To add the gesture to a specific UIElement we need to create a recognizer factor
 
 ## Using the gesture
 
-Lets start with defining the UIElement on which the gesture will be performed .
+Lets start with defining the UIElement on which the gesture will be performed.
 
 #### __[XAML] Example 8: Defining the UI of the example__
 	<UserControl x:Class="WpfApplication1.Example"
@@ -275,25 +275,25 @@ Lets start with defining the UIElement on which the gesture will be performed .
 		</StackPanel>
 	</UserControl>
 
-To use the gesture we will need to register the gesture recognizer factory and create a recogonizer for the UIElement which should listen for it. Then we can add an event handler for the UIElement.
+To use the gesture we will need to register the gesture recognizer factory and create a recogonizer for the UIElement that should listen for it. Then we can add an event handler for the UIElement.
 
-#### __[C#] Example 9: Creating a new instance of the recognizer and associating it with an UIElement__
+#### __[C#] Example 9: Creating a new instance of the recognizer and associating it with a UIElement__
 	GestureManager.RegisterGestureRecognizerFactory(new TwoFingerTapGestureRecognizerFactory());
 	//-----------
 	TwoFingerTapGestureRecognizer recognizer = GestureManager.GetOrCreateGestureRecognizer<TwoFingerTapGestureRecognizer>(uiElement);
 	recognizer.AddHandler(handler);
 	element.AddHandler(TwoFingerTapEvent, handler, false);          
 	
-#### __[VB.NET] Example 9: Creating a new instance of the recognizer and associating it with an UIElement__
+#### __[VB.NET] Example 9: Creating a new instance of the recognizer and associating it with a UIElement__
 	GestureManager.RegisterGestureRecognizerFactory(New TwoFingerTapGestureRecognizerFactory())
 	'-----------'
 	Dim recognizer As TwoFingerTapGestureRecognizer = GestureManager.GetOrCreateGestureRecognizer(Of TwoFingerTapGestureRecognizer)(uiElement)
 	recognizer.[AddHandler](handler)
 	element.[AddHandler](TwoFingerTapEvent, handler, False)
 
-For this example we will wrap the TwoFingerTapEvent and the logic for adding handlers in a helper class called GestureExtensions.
+In example 10 we will wrap the TwoFingerTapEvent and the logic for adding handlers in a helper class called GestureExtensions.
 
-#### __[C#] Example 10: Creating a helper class that raise an event when the gesture is performed__
+#### __[C#] Example 10: Creating a helper class that raises an event when the gesture is performed__
 	public class GestureExtensions
     {
         private static readonly RoutedEvent TwoFingerTapEvent = EventManager.RegisterRoutedEvent(
@@ -315,7 +315,7 @@ For this example we will wrap the TwoFingerTapEvent and the logic for adding han
         }
     }
 
-#### __[VB.NET] Example 10: Creating a helper class that raise an event when the gesture is performed__
+#### __[VB.NET] Example 10: Creating a helper class that raises an event when the gesture is performed__
 	Public Class GestureExtensions
 		Private Shared ReadOnly TwoFingerTapEvent As RoutedEvent = EventManager.RegisterRoutedEvent("TwoFingerTap", RoutingStrategy.Direct, GetType(RoutedEventHandler), GetType(TouchManager))
 
@@ -330,9 +330,9 @@ For this example we will wrap the TwoFingerTapEvent and the logic for adding han
 		End Sub
 	End Class	
 	
-Here is an example for using the GestureExtensions class and adding a logic that is executed when two finger tap gesture is activated:
+Here is an example for using the GestureExtensions class and adding logic that is executed when the two-finger tap gesture is activated:
 
-#### __[C#] Example 11: Associating the gesture recognizer with an UIElement__
+#### __[C#] Example 11: Associating the gesture recognizer with a UIElement__
 	public partial class Example : UserControl
 	{
 		static Example()
@@ -352,7 +352,7 @@ Here is an example for using the GestureExtensions class and adding a logic that
 		}
 	}
 
-#### __[VB.NET] Example 11: Associating the gesture recognizer with an UIElement__
+#### __[VB.NET] Example 11: Associating the gesture recognizer with a UIElement__
 	Public Partial Class Example
 		Inherits UserControl
 		Shared Sub New()
@@ -369,7 +369,7 @@ Here is an example for using the GestureExtensions class and adding a logic that
 		End Sub
 	End Class	
 
-The following picture demonstrates the end result - chaning the opacity when two fingers tap is performed on the Rectangle element:
+The following picture demonstrates the end result - changing the opacity when a two-fingers tap is performed on the Rectangle element.
 
 ![Creating Custom Gestures 01](images/touchmanager_creating_custom_gesture_01.png)
 	

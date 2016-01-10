@@ -7,18 +7,18 @@ tags: styling,the,predefined,windows
 published: True
 position: 3
 ---
-
+<<Comment: For better SEO, the word RadWindow should appear in the title, tags, description and H1. The word IconTemplate should also appear in the same places. You should not put words like "the" or "and" in tags because they won't help SEO.>>
 # Styling the Predefined Windows
 
-This topic will explain how you could customize the look and feel of the predefined Windows.
-
+This article will explain how you could customize the look and feel of the predefined Windows.
+<<Comment: I think "default RadWindow" could be better than "predefined Windows" in the previous sentence if it is more accurate. When I think of Windows I think of Microsoft Windows. This article will also explain how to use IconTemplate, correct? For better SEO, say that near the beginning of the article.>>
 ## Modifying the default Style
 
->To style the predefined dialogs of the __RadWindow__ static class, you have to call them via the overload that takes __DialogParameters__ object as an argument. Learn more about the predefined dialogs [here]({%slug radwindow-features-predefined-dialogs%}).
+>To style the predefined dialogs of the __RadWindow__ static class, you have to call them via the overload that takes the __DialogParameters__ object as an argument. Learn more about the predefined dialogs [here]({%slug radwindow-features-predefined-dialogs%}).
+<<Comment: What is the difference between default and predefined? Your H2 for this section says default but the body text of the section says predefined. I think the customer understands default but may not think predefined is the same. If it is important to keep both words, you could add a sentence that says in this article, they mean the same thing.>>
+In this article's example we will use __RadAlert__, but the approach is the same for __RadConfirm__ and __RadPrompt__.
 
-In the provided in this article example we will use __RadAlert__, but the approach is the same for __RadConfirm__ and __RadPrompt__.
-
-First, you will need to obtain the default style that targets __RadAlert__ - to learn how to do this, take a look at the [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%}) topic. The RadAlertStyle will be similar to the following:
+First, you will need to obtain the default style that targets __RadAlert__. To learn how to do this, take a look at the [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%}) topic. The RadAlertStyle will be similar to the following:
 
 #### __XAML__
 
@@ -67,7 +67,7 @@ Figure 1: RadAlert with custom Style
 
 ## Applying IconTemplate
 
-With the Q1 2016 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IconTemplate__ property was introduced. By using it you are now able to easily change the icon of the predefined windows.  
+With the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IconTemplate__ property was introduced. By using it you are now able to easily change the icon of the predefined windows.  
 
 Basically, a valid DataTemplate needs to be created and that Template should be passed to the predefined windows via the __DialogParameters__ and its __IconTemplate__ property:
 

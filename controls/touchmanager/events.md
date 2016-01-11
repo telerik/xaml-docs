@@ -3,18 +3,18 @@ title: Events
 page_title: Events
 description: Events
 slug: touchmanager-events
-tags: events,touch,manager,touchmanager
+tags: events,touch,manager,touchmanager,touchenter,touchdown,touchleave,touchup,touchmove
 published: True
 position: 3
 ---
 
 # Events
 
-__TouchManager__ uses an event based model to build the touch interface between the device and the application. The manager events could be separated logically in two categories by their type.
+__TouchManager__ uses an event-based model to build the touch interface between the device and the application. The TouchManager's events can be separated logically in two categories by their type: basic touch events and gesture events.
 
 ## Basic touch events
 
-This category includes the events that handles the basic interactions.
+These events handle the basic interactions.
 
 * __TouchEnter__: Occurs when a touch input appears over the element. The event handler arguments are of type __TouchEventArgs__.
 
@@ -32,13 +32,13 @@ This category includes the events that handles the basic interactions.
 
 ## Gesture events
 
-This category includes the events that handles more complex gesture interactions which are combinations of basic touch events.
+These events handle more complex gesture interactions that are combinations of basic touch events.
 
 * __Tap__: Occurs when a tap gesture is executed on the element. The event handler arguments are of type __TapEventArgs__.
 
-* __TapAndHold__: Occurs when the user tap the element and hold its finger down. The event handler arguments are of type __TouchEventArgs__.
+* __TapAndHold__: Occurs when the user taps the element and hold their finger down. The event handler arguments are of type __TouchEventArgs__.
 
-* __TapHoldAndRelease__: Occurs when the user tap and hold the element for a moment and then touch up. The event handler arguments are of type __TouchEventArgs__.
+* __TapHoldAndRelease__: Occurs when the user taps and holds the element for a moment and then touch up. The event handler arguments are of type __TouchEventArgs__.
 
 * __SwipeStarted__: Occurs when a swipe operation is started. The event handler arguments are of type __TouchEventArgs__.
 
@@ -62,13 +62,13 @@ This category includes the events that handles more complex gesture interactions
 
 * __DragStarted__: Occurs when a drag operation is started. The event handler arguments are of type __TouchEventArgs__.
 
-* __Drag__: Occurs when the element the drag operation is running. The event handler arguments are of type __TouchEventArgs__.
+* __Drag__: Occurs when the drag operation is running. The event handler arguments are of type __TouchEventArgs__.
 
 * __DragFinished__: Occurs when the drag operation is finished. The event handler arguments are of type __TouchEventArgs__.
 
 ## Subscribing for TouchManager events
 
-The manager expose public methods for all events which could be used for subscribing to them. The following code snippet illustrates how to subscribe to the TouchManager events:
+The TouchManager expose public methods for all events that could be subscribed to. The following code snippet illustrates how to subscribe to the TouchManager events:
 
 #### __[C#] Example 1: Subscribing to TouchManager events__  
 	TouchManager.AddTapEventHandler(uiElement, new TapEventHandler(OnUIElementTap));

@@ -27,6 +27,8 @@ All supported commands are defined in the RadGridViewCommands class and are list
 		  
 
 * __CancelRowEdit__ - causes the editing of the whole row to be discontinued. Again, this command will not overcome failed validation.
+
+* __CloseSearchPanel__: Executed in order to hide the search panel.
 			
 
 * __CollapseHierarchyItem, ExpandHierarchyItem__ - expands/ collapses a particular item in the hierarchy.
@@ -63,6 +65,8 @@ All supported commands are defined in the RadGridViewCommands class and are list
 		  
 
 * __MoveHome__ - moves the focus to the cell situated in the first item.
+
+* __Search__: Executed in order to show the search panel.
 		  
 
 * __SelectCurrentItem__ - selects the current item.

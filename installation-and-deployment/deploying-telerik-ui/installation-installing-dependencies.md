@@ -73,7 +73,7 @@ RadPropertyGrid	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Data,
 RadRadialMenu	|	Telerik.Windows.Controls.Navigation
 RadRating	|	Telerik.Windows.Controls.Input
 RadRibbonView	|	Telerik.Windows.Controls.RibbonView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation
-RadRichTextBox	|	System.ComponentModel.Composition, Telerik.Windows.Data, Telerik.Windows.Documents, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Flow
+RadRichTextBox	|	System.ComponentModel.Composition, Telerik.Windows.Data, Telerik.Windows.Documents, Telerik.Windows.Documents.Core
 RadRichTextBoxRibbonUI	|	Telerik.Windows.Controls.RichTextBoxUI, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.RibbonView, Telerik.Windows.Controls.ImageEditor
 RadScheduleView	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.ScheduleView, Telerik.Windows.Data
 RadSlider	|	Telerik.Windows.Controls

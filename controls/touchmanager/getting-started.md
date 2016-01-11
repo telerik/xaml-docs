@@ -17,7 +17,7 @@ This article demonstrates a simple image gallery implemented with __TouchManager
 First, we can create the UI of the gallery (Example 1). We will use one panel to hold several Image elements that will represent the gallery with the small images (the thumbnails). Then we can add another panel that will display the selected image.
 <<Comment: For better SEO, replace "of the example" with "TouchManger example" in the title of Example 1.>>
 
-#### __[XAML] Example 1: Defining the UI of the example__
+#### __[XAML] Example 1: Defining the UI of the TouchManager example__
 	<Window x:Class="WpfApplication2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -56,7 +56,6 @@ First, we can create the UI of the gallery (Example 1). We will use one panel to
 	</Window>
 	
 This is the frame over which we will implement the touch interactions - swipe and tap. 
-<!-- and pinch -->
 
 Here is an image that demonstrates the view:
 ![Getting Started 01](images/touchmanager_getting_started_01.png)
@@ -168,8 +167,6 @@ Although we are working directly only with the Swipe and SwipeInertia events, we
 > `args.Handled=true`
 
 Now when you swipe horizontally through the gallery, the images will scroll.
-	
-<!-- <div style="color:red;">To be continued....</div> -->
 
 ## See Also
 * [Overview]({%slug touchmanager-overview%})

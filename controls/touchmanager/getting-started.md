@@ -15,7 +15,6 @@ This article demonstrates a simple image gallery implemented with __TouchManager
 > TouchManager requires the __Telerik.Windows.Controls__ assembly to be referenced in the project.
 
 First, we can create the UI of the gallery (Example 1). We will use one panel to hold several Image elements that will represent the gallery with the small images (the thumbnails). Then we can add another panel that will display the selected image.
-<<Comment: For better SEO, replace "of the example" with "TouchManger example" in the title of Example 1.>>
 
 #### __[XAML] Example 1: Defining the UI of the TouchManager example__
 	<Window x:Class="WpfApplication2.MainWindow"

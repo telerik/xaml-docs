@@ -7,7 +7,7 @@ tags: getting,started,touch,manager,touchmanager
 published: True
 position: 2
 ---
-<<Comment: For better SEO, the title, description and H1 should all include the word TouchManager.>>
+
 # Getting started
 
 This article demonstrates a simple image gallery implemented with __TouchManager__ and demonstrates the basic usage of the manager.

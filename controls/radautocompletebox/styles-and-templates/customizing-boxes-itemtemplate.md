@@ -5,7 +5,7 @@ description: Customizing the BoxesItemTemplate
 slug: radautocompletebox-customizing-boxes-itemtemplate
 tags: customizing,the,boxesitemtemplate
 published: True
-position: 0
+position: 2
 ---
 
 # Customizing the BoxesItemTemplate

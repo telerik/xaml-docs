@@ -9,7 +9,7 @@ position: 4
 ---
 
 # Touch Modes
-
+<<Comment: For better SEO, add the word TouchManager to the title, description and H1.>>
 __TouchManager__ allows you to control the touch mode of the UIElement in the visual tree. You can do this using the __TouchMode__ attached property of the manager. 
 
 >important The __IsTouchHitTestVisible__ and __ShouldLockTouch__ properties of TouchManager are __obsolete__ and __replaced__ by the __TouchMode__ property.
@@ -31,7 +31,7 @@ __TouchMode__ is an enumeration that contains the following values:
 
 ## TouchMode examples
 
-This section demonstrates the TouchModes with an example containing few nested UIElements.
+This section demonstrates the TouchModes with an example containing a few nested UIElements.
 
 __Figure 1: The logical tree of the example - parent Grid, a Border inside the grid and an Ellipse inside the border__
 ![TouchManager | Touch Modes Image 01](images/touchmanager_touch_modes_01.png)

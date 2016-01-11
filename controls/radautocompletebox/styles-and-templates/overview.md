@@ -9,7 +9,7 @@ position: 1
 ---
 
 # Overview
-
+<<Comment: A title for an article and an H1 called Overview will not help your SEO. I suggest you consider adding the name of the control, property, etc., after the word Overview in titles, H1, tags for better SEO. Also, the following article is basically a list of properties, I suggest adding a heading with the names of the properties in it--headings are better for SEO than just body text, plus I suggest that you add the properties to the tags for the article.>>
 __RadAutoCompleteBox__ provides the following properties for styling and templating the items placed inside the boxes part of the control:
 
 * __BoxesItemTemplate__ - when __RadAutoCompleteBox__ is bound to a collection of items, you can use the __BoxesItemTemplate__ property to easily configure the visualization and appearance of the items placed inside the boxes part of the control. Please, check {% if site.site_name == 'WPF' %}[this](http://docs.telerik.com/devtools/wpf/controls/radautocompletebox/styles-and-templates/customizing-boxes-itemtemplate.html){% endif %}{% if site.site_name == 'Silverlight' %}[this](http://docs.telerik.com/devtools/silverlight/controls/radautocompletebox/styles-and-templates/customizing-boxes-itemtemplate.html){% endif %} article for some more detailed information concerning __BoxesItemTemplate__ and how to apply it.

@@ -9,7 +9,7 @@ position: 1
 ---
 
 # Features
-<<Comment: For better SEO, TouchManager should be in the title, description and H1. Why call this article Features when it is really about properties and methods of the TouchManager? That seems more descriptive to your audience.>>
+
 Here you can find common information about the properties and methods of TouchManager.
 
 * [Properties](#properties)
@@ -53,12 +53,12 @@ TouchManager exposes the following public properties:
 	#### __[VB.NET]: Setting DragStartTrigger in code__
 		TouchManager.SetDragStartTrigger(Me.element, TouchDragStartTrigger.TapHoldAndMove);
 		
->important The __IsTouichHitTestVisibility__ property is __obsolete__ and __replaced__ by the __TouchMode__ property.
-<<Comment: In the previous sentence, should the property be __IsTouchHitTestVisiblity__? The "i" in Touch I think is wrong.>>
+>important The __IsTouchHitTestVisibility__ property is __obsolete__ and __replaced__ by the __TouchMode__ property.
+
 ## Methods
 
 TouchManager exposes the following methods:
-<<Comment: I modified this so it follows the same pattern you started with Properties. Are methods public the way you said that properties are public? If yes and it is important, change the sentence to say "the following public methods:">>
+
 * __CeaseGestures__: This method ceases the execution of any active gestures for elements within the root UIElement.
 
 * __CaptureTouch__: This method attempts to capture the touch device.

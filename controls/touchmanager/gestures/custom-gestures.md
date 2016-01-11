@@ -10,13 +10,13 @@ position: 1
 
 # Custom Gestures
 <<Comments: For better SEO, the title, description and H1 should include the word TouchManager.>>
-__TouchManager__ allows creating of custom gestures using the basic events as TouchDown, TouchUp, TouchMove, etc. <<Comment: The first part of the previous sentence is confusing to me. I think you want to say "You can create custom gestures using the basic events such as TouchDown, TouchUp and TouchMove and use those custom gestures with __TouchManager__.">>To implement a custom gesture you will need to create a gesture recognizer that defines the touch behavior and a gesture factory.
+With __TouchManager__ you can create and use custom gestures using the basic events as TouchDown, TouchUp, TouchMove, etc. To implement a custom gesture you will need to create a gesture recognizer that defines the touch behavior and a gesture factory.
 
 ## Gesture recognizer
 
 The gesture recognizer should be a class that derives from the abstract __GestureRecognizerBase__ class and handles the basic touch events translating them to specific gesture-related events.
 
-The base recognizer exposes the __Element__ property that holds the element the recognizer is assigned to and the __HasGestureHandlers__ property that indicates if there are any attached handlers to the specific gesture. <<Comment: What is a base recognizer?>>
+__GestureRecognizerBase__ exposes the __Element__ property that holds the element the recognizer is assigned to and the __HasGestureHandlers__ property that indicates if there are any attached handlers to the specific gesture.
 
 The __GestureRecognizerBase__ class exposes methods for the basic event handlers of __TouchManager__ that are used for implementing the custom gesture.
 * __OnTouchEnter__: This method will be called when the TouchEnter event for the element is fired.
@@ -116,8 +116,6 @@ The recognizer factory creates recognizers for the UI elements. In order to regi
 > You can see how to implement a gesture in the [Creating Custom Gesture]() help article.
 <<Comment: I think you are missing the slug for the link in the previous sentence.>>
 ## See Also
-* [Getting Started]()
+* [Getting Started]({%slug touchmanager-getting-started%})
 * [Events]({%slug touchmanager-events%})
 * [Creating Custom Gesture]({%slug touchmanager-creating-custom-gesture%})
-* [IGestureRecognizerFactory]()
-* [GestureRecognizerBase]()

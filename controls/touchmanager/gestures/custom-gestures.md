@@ -9,7 +9,7 @@ position: 1
 ---
 
 # Custom Gestures
-<<Comments: For better SEO, the title, description and H1 should include the word TouchManager.>>
+
 With __TouchManager__ you can create and use custom gestures using the basic events as TouchDown, TouchUp, TouchMove, etc. To implement a custom gesture you will need to create a gesture recognizer that defines the touch behavior and a gesture factory.
 
 ## Gesture recognizer
@@ -114,7 +114,7 @@ The recognizer factory creates recognizers for the UI elements. In order to regi
 	End Class	
 
 > You can see how to implement a gesture in the [Creating Custom Gesture]() help article.
-<<Comment: I think you are missing the slug for the link in the previous sentence.>>
+
 ## See Also
 * [Getting Started]({%slug touchmanager-getting-started%})
 * [Events]({%slug touchmanager-events%})

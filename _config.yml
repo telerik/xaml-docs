@@ -375,6 +375,11 @@ navigation:
         title: RadTreeView
     controls/radupload:
         title: RadUpload
+    controls/touchmanager:
+        title: "TouchManager"
+    controls/touchmanager/gestures:
+        title: "Gestures"
+        position: 5
 ## X2 Controls End
 
 ## Centaur Controls Start

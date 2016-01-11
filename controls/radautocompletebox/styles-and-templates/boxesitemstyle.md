@@ -10,11 +10,11 @@ position: 3
 
 # BoxesItemStyle
 
-The BoxesItemStyle property, introduced with the Q1 2016 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, makes it really easy to customize the boxes of the selected items of __RadAutoCompleteBox__. The following article will demonstrates how to apply a custom __BoxesItemStyle__ to __RadAutoCompleteBox__.
+The __BoxesItemStyle__ property, introduced with the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, makes it easy to customize the boxes of the selected items of a  __RadAutoCompleteBox__. The following article will demonstrate how to apply a custom __BoxesItemStyle__ to a __RadAutoCompleteBox__.
 
 ## Applying BoxesItemStyle
 
-First, you need to create __RadAutoCompleteBox__ with an ItemsSource bound to a collection of business object:
+First, you need to create a __RadAutoCompleteBox__ with an ItemsSource bound to a collection of business objects:
 
 >Check {% if site.site_name == 'WPF' %}[this](http://docs.telerik.com/devtools/wpf/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %}{% if site.site_name == 'Silverlight' %}[this](http://docs.telerik.com/devtools/silverlight/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %} article for some more detailed information how to bind the __ItemsSource__ to a collection of business objects.
 
@@ -58,7 +58,7 @@ Next, you need to create a custom Style that targets __RadAutoCompleteBoxItem__ 
 	</Style>
 {{endregion}}
 
-Finally, you need to set the __BoxesItemStyle__ property of __RadAutoCompleteBox__ with the created Style:
+Finally, you need to set the __BoxesItemStyle__ property of the __RadAutoCompleteBox__ with the created Style:
 
 #### __[XAML] Setting of BoxesItemStyle__
 
@@ -69,7 +69,7 @@ Finally, you need to set the __BoxesItemStyle__ property of __RadAutoCompleteBox
                                     DisplayMemberPath="Name"/>
 {{endregion}}
 
-The following screenshot shows how __RadAutoCompleteBox__ looks after the __BoxesItemStyle__ gets applied:
+The following screenshot shows how the __RadAutoCompleteBox__ looks after the __BoxesItemStyle__ gets applied:
 
 ![radautocompletebox-radautocompletebox-boxesitemstyle-2](images/radautocompletebox-boxesitemstyle-2.png)
 

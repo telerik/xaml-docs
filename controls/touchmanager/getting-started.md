@@ -7,14 +7,15 @@ tags: getting,started,touch,manager,touchmanager
 published: True
 position: 2
 ---
-
+<<Comment: For better SEO, the title, description and H1 should all include the word TouchManager.>>
 # Getting started
 
-This article demonstrates a simple image gallery implemented with __TouchManager__. The main purpose of the following example is to demonstrate the basic usage of the manager.
+This article demonstrates a simple image gallery implemented with __TouchManager__ and demonstrates the basic usage of the manager.
 
 > TouchManager requires the __Telerik.Windows.Controls__ assembly to be referenced in the project.
 
-Firstly, we can create the UI of the gallery. We can have a panel that holds several Image elements which will represent the gallery with the small images (the thumbnails). Then we can add another panel that will display the selected image.
+First, we can create the UI of the gallery (Example 1). We will use one panel to hold several Image elements that will represent the gallery with the small images (the thumbnails). Then we can add another panel that will display the selected image.
+<<Comment: For better SEO, replace "of the example" with "TouchManger example" in the title of Example 1.>>
 
 #### __[XAML] Example 1: Defining the UI of the example__
 	<Window x:Class="WpfApplication2.MainWindow"
@@ -60,7 +61,7 @@ This is the frame over which we will implement the touch interactions - swipe an
 Here is an image that demonstrates the view:
 ![Getting Started 01](images/touchmanager_getting_started_01.png)
 
-Let us start by implementing the swipe of the gallery items. We can do that by handling the swipe and swipe inertia events of TouchManager. The following code snippet demonstrates how to subscribe for the events:
+Let us start by implementing the swipe of the gallery items. We can do that by handling the swipe and swipe inertia events of TouchManager. Example 2 demonstrates how to subscribe to the events:
 
 #### __[C#] Example 2: Subscribing to TouchManager events__
 	TouchManager.AddSwipeStartedEventHandler(this.galleryContainer, new TouchEventHandler(OnGallerySwipeStarted));
@@ -123,7 +124,7 @@ The logic for the swipe action will be implemented in the Swipe and SwipeInertia
 		Me.galleryPanel.Margin = New Thickness(newLeft, margin.Top, margin.Right, margin.Bottom)
 	End Sub
 
-Regardless that we are working directly only with the Swipe and SwipeInertia events we are going to handle the related events for consistency - SwipeStarted, SwipeFinisihed, SwipeInertiaStarted, SwipeInertiaFinished. 
+Although we are working directly only with the Swipe and SwipeInertia events, we are going to handle the related events for consistency - SwipeStarted, SwipeFinisihed, SwipeInertiaStarted and SwipeInertiaFinished. 
 
 #### __[C#] Example 4: Event handlers implementation__
 	private void OnGallerySwipeStarted(object sender, TouchEventArgs args)
@@ -166,7 +167,7 @@ Regardless that we are working directly only with the Swipe and SwipeInertia eve
 > The __SwipeInertia__ event won't be fired unless the __SwipeInertiaStarted__ is handled.
 > `args.Handled=true`
 
-Now, when we swipe horizontally through the gallery, the images will be scrolled.
+Now when you swipe horizontally through the gallery, the images will scroll.
 	
 <!-- <div style="color:red;">To be continued....</div> -->
 

@@ -10,7 +10,7 @@ position: 6
 
 # Green Theme
 
-The official Q1 2016 release of UI for WPF brought a brand new __Green__ theme with two color variations – __Light__ and __Dark__.
+The official Q1 2016 release of __UI for WPF__ brought a brand new __Green__ theme with two color variations – __Light__ and __Dark__.
 
 >important Тhe Green theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add __NoXaml__ binaries to your application.
 
@@ -72,26 +72,26 @@ You can switch between the color palettes by calling the __LoadPreset__ method a
 
 Below you can find the differences between the two color variations. Every brush has relevant HEX value in the corresponding color variation.
 
-| Brush name | Light | Dark (default) |
-| ---------- | ----- | -------------- |
+| Brush name | Light | | Dark (default) | |
+| ---------- | ----- | --- | -------------- | --- |
 | __Brushes, which are same in the two palettes__ |  |  |		
-| StrongBrush |	#FF646464 |	#FF646464 |
-| ValidationBrush |	#FFE60000 |	#FFE60000 |
-| FixedBrush | #FFFFFFFF | #FFFFFFFF |
+| StrongBrush | #FF646464 | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF646464 | <div class="theme-palette-color green-strongbrush-dark"></div> |
+| ValidationBrush |	 #FFE60000 | <div class="theme-palette-color green-validationbrush-ligth"></div> | #FFE60000 | <div class="theme-palette-color green-validationbrush-dark"></div> |
+| FixedBrush | #FFFFFFFF | <div class="theme-palette-color green-fixedbrush-ligth"></div> | #FFFFFFFF | <div class="theme-palette-color green-fixedbrush-dark"></div> |
 | __Brushes, which are different in the two palettes__ |  |  |
-| AccentHighBrush | #FF4FA520 |	#FF2B7402 |
-| AccentLowBrush | #FF008406 | #FF86B90E |
-| SemiAccentLowBrush | #59008406 | #5986B90E |
-| MouseOverBrush | #FF8EBC00 | #FF669933 |
-| MainBrush | #FFF1F1F1 | #FF1B1B1F |
-| PrimaryBrush | #FFE8E8E8 | #FF2B2C2E |
-| AlternativeBrush | #FFE0E0E0 | #FF1D1E21 |
-| MarkerBrush | #FF000000 | #FFF1F1F1 |
-| BasicBrush | #FF999999 | #FF474747 |
-| SelectedBrush | #FF353535	| #FFFFFFFF |
-| LowBrush | #FF8D8D8D | #FF343434 |
-| HighBrush | #FFECECEC | #FF131313 |
-| ComplementaryBrush | #FFCACACA | #FF444446 |  
+| AccentHighBrush | #FF4FA520 | <div class="theme-palette-color green-accenthighbrush-ligth"></div> | #FF2B7402 | <div class="theme-palette-color green-accenthighbrush-dark"></div> |
+| AccentLowBrush | #FF008406 | <div class="theme-palette-color green-accentlowbrush-ligth"></div> | #FF86B90E | <div class="theme-palette-color green-accentlowbrush-dark"></div> |
+| SemiAccentLowBrush | #59008406 | <div class="theme-palette-color green-semiaccentlowbrush-ligth"></div> | #5986B90E | <div class="theme-palette-color green-semiaccentlowbrush-dark"></div> |
+| MouseOverBrush | #FF8EBC00 | <div class="theme-palette-color green-mouseoverbrush-ligth"></div> | #FF669933 | <div class="theme-palette-color green-mouseoverbrush-dark"></div> |
+| MainBrush | #FFF1F1F1 | <div class="theme-palette-color green-mainbrush-ligth"></div> | #FF1B1B1F | <div class="theme-palette-color green-mainbrush-dark"></div> |
+| PrimaryBrush | #FFE8E8E8 | <div class="theme-palette-color green-primarybrush-ligth"></div> | #FF2B2C2E | <div class="theme-palette-color green-primarybrush-dark"></div> |
+| AlternativeBrush | #FFE0E0E0 | <div class="theme-palette-color green-alternativebrush-ligth"></div> | #FF1D1E21 | <div class="theme-palette-color green-alternativebrush-dark"></div> |
+| MarkerBrush | #FF000000 | <div class="theme-palette-color green-markerbrush-ligth"></div> | #FFF1F1F1 | <div class="theme-palette-color green-markerbrush-dark"></div> |
+| BasicBrush | #FF999999 | <div class="theme-palette-color green-basicbrush-ligth"></div> | #FF474747 | <div class="theme-palette-color green-basicbrush-dark"></div> |
+| SelectedBrush | #FF353535	| <div class="theme-palette-color green-selectedbrush-ligth"></div> | #FFFFFFFF | <div class="theme-palette-color green-selectedbrush-dark"></div> |
+| LowBrush | #FF8D8D8D | <div class="theme-palette-color green-lowbrush-ligth"></div> | #FF343434 | <div class="theme-palette-color green-lowbrush-dark"></div> |
+| HighBrush | #FFECECEC | <div class="theme-palette-color green-highbrush-ligth"></div> | #FF131313 | <div class="theme-palette-color green-highbrush-dark"></div> |
+| ComplementaryBrush | #FFCACACA | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF444446 | <div class="theme-palette-color green-strongbrush-dark"></div> |
 
 ## Theme Palette Brushes Description
 

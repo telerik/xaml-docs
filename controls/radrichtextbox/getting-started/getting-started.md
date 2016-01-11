@@ -36,16 +36,17 @@ The minimal set of references you need to have in your application in order to h
 * Telerik.Windows.Documents
 
 * Telerik.Windows.Documents.Core
-
+{% if site.site_name == 'WPF' %}
 * Telerik.Windows.Documents.Flow
-
+{% endif %}
 * System.ComponentModel.Composition
 
 
 
-All pop-ups that RadRichTextBox uses (SelectionMiniToolBar, ContextMenu, all dialogs) are located in
+All pop-ups that **RadRichTextBox** uses (SelectionMiniToolBar, ContextMenu, all dialogs) are located in
 
 * Telerik.Windows.Controls.RichTextBoxUI.
+
 
 In order to use them, you have to add references to the assemblies that RichTextBoxUI has a dependency on.
 
@@ -57,10 +58,11 @@ In order to use them, you have to add references to the assemblies that RichText
 
 * Telerik.Windows.Controls.RibbonView
 
-For more information on using RadRichTextBox with RadRichTextBoxRibbonUI (based on RadRibbonView), please refer to [this article]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
+
+For more information on using **RadRichTextBox** with **RadRichTextBoxRibbonUI** (based on RadRibbonView), please refer to [this article]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
 
-If you are not using the SelectionMiniToolbar, the ContextMenu and RadRichTextBoxRibbonUI, you can omit the last five assemblies.
+If you are not using the SelectionMiniToolbar, the ContextMenu and **RadRichTextBoxRibbonUI**, you can omit the last five assemblies.
 
 For import from/ export to different file formats, you would need references to:
 
@@ -73,6 +75,7 @@ For import from/ export to different file formats, you would need references to:
 * Telerik.Windows.Documents.FormatProviders.Rtf for RTF.
 
 * Telerik.Windows.Documents.FormatProviders.Pdf and Telerik.Windows.Zip for PDF (export only).
+
 
 The default en-US dictionary for SpellChecking is located in:
 
@@ -109,7 +112,7 @@ After adding references to the aforementioned dlls, you can declare a new __RadR
 
 
 
->tipRadRichTextBox uses UI Virtualization by creating UI elements only for the parts of the document currently visible in the view port. For this purpose, the control should not be measured in infinity, so avoid placing it in containers that might cause this (e.g. StackPanel, ScrollViewer).
+>tip**RadRichTextBox** uses UI Virtualization by creating UI elements only for the parts of the document currently visible in the view port. For this purpose, the control should not be measured in infinity, so avoid placing it in containers that might cause this (e.g. StackPanel, ScrollViewer).
           
 
 ## Formatting via a sample UI

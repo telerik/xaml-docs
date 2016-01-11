@@ -1,24 +1,24 @@
 ---
-title: Styling the Predefined Windows
-page_title: Styling the Predefined Windows
-description: Styling the Predefined Windows
+title: Styling the Predefined Dialogs
+page_title: Styling the Predefined Dialogs
+description: Styling the Predefined Dialogs
 slug: radwindow-styles-and-templates-styling-the-predefined-windows
 tags: styling,the,predefined,windows
 published: True
 position: 3
 ---
 
-# Styling the Predefined Windows
+# Styling the Predefined Dialogs
 
-This topic will explain how you could customize the look and feel of the predefined Windows.
+This topic will explain how you could customize the look and feel of the predefined dialog windows.
 
 ## Modifying the default Style
 
 >To style the predefined dialogs of the __RadWindow__ static class, you have to call them via the overload that takes __DialogParameters__ object as an argument. Learn more about the predefined dialogs [here]({%slug radwindow-features-predefined-dialogs%}).
 
-In the provided in this article example we will use __RadAlert__, but the approach is the same for __RadConfirm__ and __RadPrompt__.
+In this article's example we will use __RadAlert__, but the approach is the same for __RadConfirm__ and __RadPrompt__.
 
-First, you will need to obtain the default style that targets __RadAlert__ - to learn how to do this, take a look at the [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%}) topic. The RadAlertStyle will be similar to the following:
+First, you will need to obtain the default style that targets __RadAlert__. To learn how to do this, take a look at the [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%}) topic. The RadAlertStyle will be similar to the following:
 
 #### __XAML__
 
@@ -67,7 +67,7 @@ Figure 1: RadAlert with custom Style
 
 ## Applying IconTemplate
 
-With the Q1 2016 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IconTemplate__ property was introduced. By using it you are now able to easily change the icon of the predefined windows.  
+With the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IconTemplate__ property was introduced. By using it you are now able to easily change the icon of the predefined windows.  
 
 Basically, a valid DataTemplate needs to be created and that Template should be passed to the predefined windows via the __DialogParameters__ and its __IconTemplate__ property:
 

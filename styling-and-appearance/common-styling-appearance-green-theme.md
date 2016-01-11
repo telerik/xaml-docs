@@ -10,7 +10,7 @@ position: 6
 
 # Green Theme
 
-The official Q1 2016 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new __Green__ theme with two color variations – __Light__ and __Dark__.
+The official Q1 2016 release of UI for WPF brought a brand new __Green__ theme with two color variations – __Light__ and __Dark__.
 
 >important Тhe Green theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add __NoXaml__ binaries to your application.
 

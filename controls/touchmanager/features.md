@@ -10,7 +10,7 @@ position: 1
 
 # Features
 
-Here you can find common information about the public API of TouchManager.
+Here you can find common information about the properties and methods of TouchManager.
 
 * [Properties](#properties)
 * [Methods](#methods)
@@ -20,11 +20,11 @@ Here you can find common information about the public API of TouchManager.
 
 TouchManager exposes the following public properties:
 
-* __IsTouchEnabled__: A property of type __bool__ which indicates whether the TouchManager will respond to any touch events. It can be used to enable or disable the touch interactions with the elements that use the touch manager.
+* __IsTouchEnabled__: A property of type __bool__ that indicates whether the TouchManager will respond to any touch events. It can be used to enable or disable the touch interactions with the elements that use the TouchManager.
 
-* __TouchMode__: A property of type __Telerik.Windows.Input.Touch.TouchMode__ enumeration which gets or sets the touch mode of the control. You can read more about the property in the [Touch Modes]({%slug touchmanager-overview%}) help article.
+* __TouchMode__: A property of type __Telerik.Windows.Input.Touch.TouchMode__ enumeration that gets or sets the touch mode of the control. You can read more about the property in the [Touch Modes]({%slug touchmanager-overview%}) help article.
 
-* __ScrollViewerSwipeMode__: A property of type __Telerik.Windows.Input.Touch.ScrollViewerSwipeMode__ enumeration which gets or sets the mode that defines the additional swipe logic for a ScrollViewer or an element in a ScrollViewer. The enumeration contains the following modes.
+* __ScrollViewerSwipeMode__: A property of type __Telerik.Windows.Input.Touch.ScrollViewerSwipeMode__ enumeration that gets or sets the mode that defines the additional swipe logic for a ScrollViewer or an element in a ScrollViewer. The enumeration contains the following modes.
 	* __None__ (default): The element does not have additional logic for swiping.
 	* __Self__: If an unhandled swipe gesture occurs, the ScrollViewer will get panned.
 		> The element on which this value is set should be a ScrollViewer. Otherwise, an exception will be thrown.
@@ -39,9 +39,9 @@ TouchManager exposes the following public properties:
 	#### __[VB.NET]: Setting ScrollViewerSwipeMode in code__
 		TouchManager.SetScrollViewerSwipeMode(Me.element, ScrollViewerSwipeMode.Parent);
 
-* __DragStartTrigger__: A property of type __Telerik.Windows.Input.Touch.TouchDragStartTrigger__ enumeration which gets or sets the touch action that triggers the drag operation. The enumeration contains the following triggers.
+* __DragStartTrigger__: A property of type __Telerik.Windows.Input.Touch.TouchDragStartTrigger__ enumeration that gets or sets the touch action that triggers the drag operation. The enumeration contains the following triggers.
 	* __TapHoldAndMove__: The drag operation will be triggered during a TouchMove event after a TapAndHold.
-	* __TouchMove__: The drag operation will be triggered during a TouchMove, regardless a TapAndHold event has occured or not.
+	* __TouchMove__: The drag operation will be triggered during a TouchMove, regardless of whether a TapAndHold event has occured or not.
 	* __TapAndHold__ (default): The drag operation will be driggered during a TapAndHold event.
 
 	#### __[XAML]: Setting DragStartTrigger in XAML__
@@ -53,11 +53,11 @@ TouchManager exposes the following public properties:
 	#### __[VB.NET]: Setting DragStartTrigger in code__
 		TouchManager.SetDragStartTrigger(Me.element, TouchDragStartTrigger.TapHoldAndMove);
 		
->important There is a __IsTouichHitTestVisibility__ property which is __obsolete__ and __replaced__ by the __TouchMode__ property.
+>important The __IsTouchHitTestVisibility__ property is __obsolete__ and __replaced__ by the __TouchMode__ property.
 
 ## Methods
 
-TouchManager exposes few useful common methods:
+TouchManager exposes the following methods:
 
 * __CeaseGestures__: This method ceases the execution of any active gestures for elements within the root UIElement.
 
@@ -65,14 +65,14 @@ TouchManager exposes few useful common methods:
 
 * __ReleaseTouchCapture__: This method releases the captured touch device.
 
-* __GetCaptured__: This method gets the UIElement which has captured the touch device.
+* __GetCaptured__: This method gets the UIElement that has captured the touch device.
 
 ## Touch Indicator
 
 TouchManager visualizes an animated touch indicator when there is a tap and hold gesture performed on the screen. 
 ![](images/touchmanager_features_01.png)
 
-> The indicator supports themming and it will have different appearance in the different themes.
+> The indicator supports themming and it will have a different appearance in the different themes.
 
 ## See Also
 * [Overview]({%slug touchmanager-overview%})

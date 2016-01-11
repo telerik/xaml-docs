@@ -3,13 +3,13 @@ title: Events
 page_title: Events
 description: Events
 slug: touchmanager-events
-tags: events,touch,manager,touchmanager
+tags: events,touch,manager,touchmanager,touchenter,touchdown,touchleave,touchup,touchmove
 published: True
 position: 3
 ---
 
 # Events
-<<Comment: For better SEO, TouchManager should appear in the title and description and in the H1. Also, I think for better SEO, each of the events should appear in the tags.>>
+
 __TouchManager__ uses an event-based model to build the touch interface between the device and the application. The TouchManager's events can be separated logically in two categories by their type: basic touch events and gesture events.
 
 ## Basic touch events
@@ -62,13 +62,13 @@ These events handle more complex gesture interactions that are combinations of b
 
 * __DragStarted__: Occurs when a drag operation is started. The event handler arguments are of type __TouchEventArgs__.
 
-* __Drag__: Occurs when the element the drag operation is running. The event handler arguments are of type __TouchEventArgs__.
-<<Comment: In the previous event, there is a word missing in "Occurs when the element the drag operation is running." Perhaps "of" after "the element"?>>
+* __Drag__: Occurs when the drag operation is running. The event handler arguments are of type __TouchEventArgs__.
+
 * __DragFinished__: Occurs when the drag operation is finished. The event handler arguments are of type __TouchEventArgs__.
 
 ## Subscribing for TouchManager events
 
-The TouchManager expose public methods for all events that could be subscribed to. <<Comment: Please check that my change to the previous sentence did not create an error. It sounds better the way I worded it.>> The following code snippet illustrates how to subscribe to the TouchManager events:
+The TouchManager expose public methods for all events that could be subscribed to. The following code snippet illustrates how to subscribe to the TouchManager events:
 
 #### __[C#] Example 1: Subscribing to TouchManager events__  
 	TouchManager.AddTapEventHandler(uiElement, new TapEventHandler(OnUIElementTap));

@@ -8,8 +8,8 @@ published: True
 position: 0
 ---
 
-# Overview
-<<Comment: For better SEO, add TouchManager to the title, description and H1.>>
+# TouchManager Overview
+
 {% if site.site_name == 'Silverlight' %}
 ![Touch Manager](images/touchmanager_overview_01_SL.png)
 {% endif %}
@@ -27,7 +27,7 @@ __TouchManager__ has the following key features:
 
 * __Rich event handling__: TouchManager provides a set of events that can be used to handle the touch interaction within your application. Using the framework you can associate a UIElement to different touch interactions as touch down, touch move, touch enter, swipe, tap, pinch, etc. You can find a complete list with the events exposed by the manager in the [Events]({%slug touchmanager-events%}) help article.
 
-* __Hit test visibility control__: The Touchmanager allows you to define the hit test visibility of the elements involved in the touch interaction. You can take a look at the [Touch Modes]({%slug touchmanager-touch-modes%}) help article for more information.
+* __Hit test visibility control__: Touchmanager allows you to define the hit test visibility of the elements involved in the touch interaction. You can take a look at the [Touch Modes]({%slug touchmanager-touch-modes%}) help article for more information.
 
 * __Gestures__: TouchManager gives you several built-in gestures (tap, pinch, swipe, etc.) and also the ability to create custom gestures.
 

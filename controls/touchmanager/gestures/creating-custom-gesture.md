@@ -9,8 +9,8 @@ position: 2
 ---
 
 # Creating a custom gesture
-<<Comment: For better SEO, TouchManager should appear in the title, description and H1. The tags should also include gesture recognizer since I can imagine a customer typing that into a search box.>>
-This article demonstrates how to implement a custom gesture to use in a TouchManager. The following example will guide you through the creation of a __two fingers tap__ gesture. <<Comment: Did my addition create an error?>>
+
+This article demonstrates how to implement a custom gesture and register it in TouchManager. The following example will guide you through the creation of a __two fingers tap__ gesture.
 
 * [Implementing the gesture recognizer](#implementing-the-gesture-recognizer)
 * [Implementing the gesture recognizer factory](#implementing-the-gesture-recognizer-factory)
@@ -81,17 +81,17 @@ To begin creating the gesture recognizer, you must first define a class that der
 For this example, we will use only three of the gesture recognizer's methods: OnTouchDown, OnTouchUp and OnTouchLeave.
 
 The example will use several helper fields:
-<<Comment: Why are these called helper fields but in the code snippet called properties? If you decide to call them properties, change the sentence right before example 2 that mentions helper fields.>>
+
 * __AllowedInterval__: A readonly field of type TimeSpan that contains the allowed timeframe in which the gesture can be executed. If the time between the touch down and touch up is more than the allowed timespan, the gesture won't be executed.
 * __MaxTouchCount__: A readonly field of type Int32 that defines the count of the required touches for executing the gesture.
 * __originTouchTime__: A field of type DateTime that holds the time when the first finger was down.
 * __isTwoFingerGesture__: A field of type Boolean that tells if two fingers are on the screen and if the gesture can be executed.		
 * __touchIds__: A field of type List<int> that holds the touch ids. The list is used to store the ids of the touches on the screen.		
 * __handlers__: A field of type List<WeakReference> that holds references to the event handlers attached to the recognizer.
-<<Comment: Why do the first two helper fields begin with capital letters and the others do not? It seems to me they should be consistent. I see that the code snippet follows the list above, so if I am wrong, remove my comment. If I am right, the list and the code snippet should match.>>
+
 You can find the code definitions of the helper fields in the following code snippet:
 
-#### __[C#] Example 2: Defining the properties of the recognizer__  
+#### __[C#] Example 2: Defining the fields of the recognizer__  
 	private static readonly TimeSpan AllowedInterval = TimeSpan.FromMilliseconds(300);
 	private static readonly int MaxTouchCount = 2;
 	private DateTime originTouchTime;
@@ -99,7 +99,7 @@ You can find the code definitions of the helper fields in the following code sni
 	private List<int> touchIds = new List<int>();
 	private List<WeakReference> handlers = new List<WeakReference>(); 
 
-#### __[VB.NET] Example 2: Defining the properties of the recognizer__	
+#### __[VB.NET] Example 2: Defining the fields of the recognizer__	
 	Private Shared ReadOnly AllowedInterval As TimeSpan = TimeSpan.FromMilliseconds(2000)
 	Private Shared ReadOnly MaxTouchCount As Integer = 2
 	Private originTouchTime As DateTime

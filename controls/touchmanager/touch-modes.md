@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Touch Modes
+# TouchManager Touch Modes
 
 __TouchManager__ allows you to control the touch mode of the UIElement in the visual tree. You can do this using the __TouchMode__ attached property of the manager. 
 
@@ -31,7 +31,7 @@ __TouchMode__ is an enumeration that contains the following values:
 
 ## TouchMode examples
 
-This section demonstrates the TouchModes with an example containing few nested UIElements.
+This section demonstrates the TouchModes with an example containing a few nested UIElements.
 
 __Figure 1: The logical tree of the example - parent Grid, a Border inside the grid and an Ellipse inside the border__
 ![TouchManager | Touch Modes Image 01](images/touchmanager_touch_modes_01.png)

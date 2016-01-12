@@ -15,11 +15,11 @@ position: 0
 This tutorial will walk your through the creation of a sample application that contains __RadDataForm__ and will show you how:
       
 
-* Use RadDataForm in your project;
+* [Use RadDataForm in your project](#adding-raddataform-to-the-project);
 
-* Bind RadDataForm to a single item;
+* [Bind RadDataForm to a single item](#binding-raddataform-to-a-single-item);
 
-* Bind RadDataForm to a collection of custom objects;
+* [Bind RadDataForm to a collection of custom objects](#binding-raddataform-to-a-collection-of-custom-objects);
 
 For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %}Application project and open it in Visual Studio.
       

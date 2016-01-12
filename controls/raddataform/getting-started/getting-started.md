@@ -270,12 +270,15 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 {{region raddataform-getting-started_8}}
 
-	public MainPage()
-	  {
-	   InitializeComponent();
-	   Employee employee = new Employee() 
-	      { FirstName = "Sarah", LastName = "Blake", Occupation = "Supplied Manager", StartingDate = new DateTime(2005, 04, 12), IsMarried = true, Salary = 3500,   Gender = Gender.Female };   this.DataForm1.CurrentItem = employee;
-	  }
+	   Employee employee = new Employee() { 
+			FirstName = "Sarah", 
+			LastName = "Blake", 
+			Occupation = "Supplied Manager", 
+			StartingDate = new DateTime(2005, 04, 12), 
+			IsMarried = true, Salary = 3500,   
+			Gender = Gender.Female 
+	   }; 
+	   this.RadDataForm1.CurrentItem = employee;
 	{{endregion}}
 
 
@@ -305,18 +308,14 @@ After you run the application you should see the following:
 
 ## Binding RadDataForm to a collection of custom objects
 
-We will extend the class Employee by a single static method - GetEmployees() that will return an ObservableCollection<Employee>, containing several hard-coded employees:
+We will create a simple **EmployeeService** class with a single static method - **GetEmployees()** that will return an **ObservableCollection&lt;Employee&gt;**, containing several hard-coded employees:
 
 #### __C#__
 
 {{region raddataform-getting-started_10}}
 
-	public class Employee
+	public class EmployeeService
 	{
-	
-	  public Employee()
-	  { }
-	
 	  public static ObservableCollection<Employee> GetEmployees()
 	  {
 	   ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
@@ -391,11 +390,7 @@ Afterwards, all you need to do is to set the ItemsSource of the RadDataForm:
 
 {{region raddataform-getting-started_12}}
 
-	public MainPage()
-	  {
-	   InitializeComponent();   
-	   this.DataForm1.ItemsSource = Employee.GetEmployees();
-	  }
+	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
 	{{endregion}}
 
 

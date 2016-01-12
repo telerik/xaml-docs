@@ -23,6 +23,8 @@ This article provides information about the possible approaches for creating a c
 
 * [FunctionInfo](#functioninfo)
 
+* [Get Cell Reference Range Expression from Function](#get-cell-reference-range-expression-from-function)
+
 * [Custom Function Examples](#custom-function-examples)
 
 ## Inheriting FunctionBase abstract class
@@ -67,16 +69,16 @@ The document model provides an inheritance tree of classes providing ready to us
 __Figure 1__ the base abstract function classes.
         
 
-Figure 1: Functiona Inheritance
+Figure 1: Functions Inheritance
 ![Rad Spread Processing Features Formulas Custom Functions 01](images/RadSpreadProcessing_Features_Formulas_Custom_Functions_01.png)
 
-* __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method which handles the logic when invalid arguments count is inputted by the user. By inheriting __FunctionBase__ you must override the __EvaluateOverride(RadExpression[] arguments)__ method, so you need to handle the whole logic of converting __RadExpression__ arguments to function arguments.
+* __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method which handles the logic when invalid arguments count is inputted by the user. By inheriting __FunctionBase__ you must override the __EvaluateOverride(FunctionEvaluationContext&lt;RadExpression&gt; context)__ method, so you need to handle the whole logic of converting __RadExpression__ arguments to function arguments.
             
 
-* __FunctionWithArguments__: Handles the basic logic of converting __RadExpression__'s value to some other value type corresponding to the ArgumentType defined in FunctionInfo property. By inheriting from this class you need to override the __EvaluateOverride(object[] arguments)__ method and handle and array of already converted function argument values.
+* __FunctionWithArguments__: Handles the basic logic of converting __RadExpression__'s value to some other value type corresponding to the ArgumentType defined in FunctionInfo property. By inheriting from this class you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;object&gt; context)__ method and handle and array of already converted function argument values.
             
 
-* __FunctionWithSameTypeArguments<T>__: By inheriting this class you need to override __EvaluateOverride(T[] arguments)__ method and handle an array of arguments with same type T.
+* __FunctionWithSameTypeArguments<T>__: By inheriting this class you need to override __EvaluateOverride(FunctionEvaluationContext&lt;T&gt; context)__ method and handle an array of arguments with same type T.
             
 
 * __StringInFunctions, NumbersInFunction, BooleansInFunction__: These classes inherit directly from __FunctionWithSameTypeArguments<String>, FunctionWithSameTypeArguments<double> and FunctionWithSameTypeArguments<bool>__. Using them is appropriate in cases when the function the respective argument type - String, double or Boolean.
@@ -219,6 +221,30 @@ __Example 3__ shows how to create an instance of FunctionInfo class.
 {{endregion}}
 
 
+## Get Cell Reference Range Expression from Function
+
+With the **CellReferenceRangeExpression** class you can obtain and return as a result from the function a reference to a cell range(s). Such reference could be as absolute as well as relative. The values of type CellReferenceRangeExpression support automatic invalidation of the function expression which returns the CellReferenceRangeExpression as its result. In other words, when the value in the referenced cell(s) changes, the value of the CellReferenceRangeExpression will be changed automatically.
+
+You can create a CellReferenceRangeExpression object using the **NameConverter.TryConvertToCellReferenceRangeExpression()**, which takes the following parameters:
+
+* **string cellRangesNames**: The string representation of the names of the referenced cells. The string could be could be a reference to a cell that contains an A1-style reference, a name defined as a reference, or a reference to a cell as a text string.
+* **Worksheet worksheet**: The Worksheet object that the cell range(s) belongs to.
+* **int rowIndex**: The row index of the cell where the CellReferenceRangeExpression is located(created). 
+* **int columnIndex**: The column index of the cell where the CellReferenceRangeExpression is located(created). 
+* **out CellReferenceRangeExpression expression**: The constructed CellReferenceRangeExpression is returned as an out parameter.
+
+>tipThe usage of CellReferenceRangeExpression is demonstrated in the implementation of the INDIRECT function, available in our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/CustomFunctions).
+
+The API of CellReferenceRangeExpression allows you to access the different cell reference ranges. This could be done with the **CellReferenceRange** and **CellReferenceRanges** properties.
+
+You can convert a **CellReferenceRange** object to **CellRange** with an extension method from the [ExpressionExtensions](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Spreadsheet_Expressions_ExpressionExtensions.htm) class:
+
+#### __[C#] Example 4: Convert CellReferenceRange to CellRange__
+
+{{region radspreadprocessing-features-formulas-custom-functions_10}}
+
+	CellRange cellRange = expression.CellReferenceRange.ToCellRange();
+{{endregion}}
 
 ## Custom Function Examples
 
@@ -228,10 +254,10 @@ The next example is of a custom function named __"ARGUMENTS"__ inheriting from t
 The result of the function's calculations is the number of arguments passed to the function, as you can see in the EvaluateOverride() method.
         
 
-__Example 4__ shows how to create the 'ARGUMENTS' function.
+__Example 5__ shows how to create the 'ARGUMENTS' function.
         
 
-#### __[C#] Example 4: Create ARGUMENTS function__
+#### __[C#] Example 5: Create ARGUMENTS function__
 
 {{region radspreadprocessing-features-formulas-custom-functions_3}}
 	
@@ -277,9 +303,9 @@ __Example 4__ shows how to create the 'ARGUMENTS' function.
             Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount: 3);
         }
 
-        protected override RadExpression EvaluateOverride(RadExpression[] arguments)
+        protected override RadExpression EvaluateOverride(FunctionEvaluationContext<RadExpression> context)
         {
-            return new NumberExpression(arguments.Length);
+            return new NumberExpression(context.Arguments.Length);
         }
     }
 {{endregion}}
@@ -289,10 +315,10 @@ __Example 4__ shows how to create the 'ARGUMENTS' function.
 The next example is of a custom function named "E" that inherits from the __FunctionBase__ class. The function takes no arguments and it always returns the Napier's constant.
         
 
-__Example 5__ shows how to create the 'E' function.
+__Example 6__ shows how to create the 'E' function.
         
 
-#### __[C#] Example 5: Create E function__
+#### __[C#] Example 6: Create E function__
 
 {{region radspreadprocessing-features-formulas-custom-functions_4}}
     public class E : FunctionBase
@@ -323,7 +349,7 @@ __Example 5__ shows how to create the 'E' function.
             Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description);
         }
 
-        protected override RadExpression EvaluateOverride(RadExpression[] arguments)
+        protected override RadExpression EvaluateOverride(FunctionEvaluationContext<RadExpression> context)
         {
             return NumberExpression.E;
         }
@@ -332,12 +358,17 @@ __Example 5__ shows how to create the 'E' function.
 
 
 
->tip You can download a runnable project of the previous and several other examples of custom functions from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as Spreadsheet / CustomFunctions .
+>tip You can download a runnable project of the previous and several other examples of custom functions from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/CustomFunctions).
           
 
 # See Also
 
  * [Cell Value Types]({%slug radspreadprocessing-working-with-cells-cell-value-types%})
+ 
  * [ArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_argumentinterpretation.html)
+ 
  * [ArrayArgumentInterpretation](http://www.telerik.com/help/wpf/t_telerik_windows_documents_spreadsheet_expressions_functions_arrayargumentinterpretation.html)
- * [CustomFunctions SDK](https://github.com/telerik/xaml-sdk)
+ 
+ * [CellReferenceRangeExpression API Reference](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Spreadsheet_Expressions_CellReferenceRangeExpression.htm)
+
+ * [CustomFunctions SDK](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/CustomFunctions)

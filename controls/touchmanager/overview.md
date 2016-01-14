@@ -35,6 +35,8 @@ __TouchManager__ has the following key features:
 
 > You can find an example that demonstrates TouchManager in our {% if site.site_name == 'Silverlight' %}[demo application](http://demos.telerik.com/silverlight/){% endif %}{% if site.site_name == 'WPF' %}[demo application](http://demos.telerik.com/wpf/){% endif %}. 
 
+> See the [Touch Support]({%slug touch-support%}) help article for more information about the touch support in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}
+
 ## See Also
 * [Getting Started]({%slug touchmanager-getting-started%})
 * [Events]({%slug touchmanager-events%})

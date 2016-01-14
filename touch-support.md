@@ -10,7 +10,7 @@ position: 10
 
 # Touch Support
 
-Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} now provides touch support. The functionality is built on top of an internally implemented framework to provide the needed extensibility and the ability for each of the specific controls in the suite to support only the needed for it gestures.
+Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} now provides touch support. The functionality is built on top of our [TouchManager]({%slug touchmanager-overview%}) framework which provides the needed extensibility and the ability for each of the specific controls in the suite to support only the needed for it gestures.
       
 ## Gestures
 
@@ -29,7 +29,6 @@ Gesture | - | Description
 ## Controls Behavior
 
 Below are listed the controls and their behavior with the different gestures:
-
 
 Control | Swipe	|	Pinch	|	Tap	|	Tap and Move	|	Tap and Hold	|	Custom
 ---	| ---	|	---	|	---	|	---	|	---	|	---
@@ -59,14 +58,9 @@ RadTileList | Scroll	|	-	|	Selection	|	-	|	-	|	-
 
 ## TouchManager States
 
-As of version __Q2 2014__, we have introduced a new __IsTouchEnabled__ property, which __controls the state of TouchManager on application level__.
+As of version __Q2 2014__, we have introduced a new __IsTouchEnabled__ property, which controls the state of TouchManager on application level. Setting it to False will prevent any touch events to be fired.
         
->importantThe property is of boolean type and its Default value is True.
-          
-__Setting it to False__ will destroy any existent TouchHandlers and unsubscribe from any MS TouchEvents internally. This will also prevent the further creation of such handlers until it is set back to True.
-        
-__Setting it to True on a later stage__ will again turn on the creation of new elements, however, it will not restore any of the previously disposed ones.
-        
->In order to restore full touch support, you will need to reload the affected controls in the visual tree.
-         
+>important The property is of boolean type and its Default value is True.         
+
+> You can also take a look at the [Touch Modes]({%slug touchmanager-touch-modes%}) help article
  

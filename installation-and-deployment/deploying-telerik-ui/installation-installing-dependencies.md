@@ -17,6 +17,7 @@ The following topic describes all controls from UI for Silverlight and the assem
 
 Controls	|	Assembly
 ---	|	---
+TouchManager | Telerik.Windows.Controls
 DragDropManager	|	Telerik.Windows.Controls
 RadAutoCompleteBox	|	Telerik.Windows.Controls.Input
 RadBarcode	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data

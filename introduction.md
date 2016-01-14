@@ -163,6 +163,8 @@ Telerik UI for Silverlight features the following controls:
 
 * [ToolTip]({%slug radtooltip-overview%})
 
+* [TouchManager]({%slug touchmanager-overview%})
+
 * [TransitionControl]({%slug radtransition-overview%})
 
 * [TreeListView]({%slug radtreelistview-overview%})
@@ -324,6 +326,8 @@ Telerik UI for WPF features the following controls:
 * [ToolBar]({%slug radtoolbar-overview%})
 
 * [ToolTip]({%slug radtooltip-overview%})
+
+* [TouchManager]({%slug touchmanager-overview%})
 
 * [TransitionControl]({%slug radtransition-overview%})
 

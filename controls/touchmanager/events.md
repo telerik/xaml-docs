@@ -34,6 +34,8 @@ These events handle the basic interactions.
 
 These events handle more complex gesture interactions that are combinations of basic touch events.
 
+> All predefined gestures are an interpretation of the five basic events. A gesture recognizer works only with the touch events it receives. When a gesture event is raised, say Swipe, it is during the TouchMove event of the element. This makes the Swipe to look as if it has a Bubbling routed strategy, but actually it has a Direct strategy. When the Swipe event is marked as handled, this automatically marks the TouchMove event as handled, preventing a parent element from receving the touch move event, hence preventing from Swipe being raised. In order to avoid gesture inconsistency accross different elements in nested scenarios, all Swipe related events need to be marked as handled - SwipeStarted, Swipe, SwipeFinished. Same rule applies to Drag and Pinch
+
 * __Tap__: Occurs when a tap gesture is executed on the element. The event handler arguments are of type __TapEventArgs__.
 
 * __TapAndHold__: Occurs when the user taps the element and hold their finger down. The event handler arguments are of type __TouchEventArgs__.

@@ -84,7 +84,7 @@ So you need to add the xaml for all these assemblies from the selected theme:
 
 * Telerik.Windows.Controls.Docking.xaml
 
->If you copy the xaml files in your project, please make sure that they are with the proper build action. Generally  it should be Resource, but for the Telerik.Windows.Controls.RibbonView.xaml the build action should be Page. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
+>If you copy the xaml files in your project, please make sure that they are with the proper build action. Generally it should be Resource, but for the Telerik.Windows.Controls.RibbonView.xaml the build action should be Page. Telerik.Windows.Controls.RichTextBoxUI.xaml also should be with build action Page since it includes all RibbonVIew styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
 
 
 >tipYou should not set Application Theme using the __StyleManager__ when using implicit styles. 

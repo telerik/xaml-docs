@@ -32,55 +32,9 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 * Add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Controls.Data__, __Telerik.Windows.Controls.Input__ and __Telerik.Windows.Data__;
           
 
-* Add the RadDataForm as demonstrated below:
+* Import the Telerik schema:
 
-{% if site.site_name == 'Silverlight' %}
-
-#### __XAML__
-
-{{region raddataform-getting-started_0}}
-
-	<UserControl x:Class="RadDataForm_SL.MainPage"
-	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	    mc:Ignorable="d"
-	    d:DesignHeight="300" d:DesignWidth="400">
-	 <Grid x:Name="LayoutRoot" Background="White">
-	  <telerik:RadDataForm x:Name="DataForm1" Header="Employee"/>
-	 </Grid>
-	</UserControl>
-	{{endregion}}
-
-{% endif %}{% if site.site_name == 'WPF' %}
-
-#### __XAML__
-
-{{region raddataform-getting-started_1}}
-
-	<Window x:Class="RadDataForm_WPF.MainWindow"
-	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	    mc:Ignorable="d"
-	    d:DesignHeight="300" d:DesignWidth="400">
-	 <Grid x:Name="LayoutRoot" Background="White">
-	  <telerik:RadDataForm x:Name="DataForm1" Header="Employee"/>
-	 </Grid>
-	</UserControl>
-	{{endregion}}
-
-{% endif %}
-
-Two lines of code are important here:
-
-* The import of the Telerik schema:
-
-#### __XAML__
+#### __[XAML] Example 1: Importing the Telerik Schema__
 
 {{region raddataform-getting-started_2}}
 
@@ -89,9 +43,9 @@ Two lines of code are important here:
 
 
 
-* The declaration of the RadDataForm control inside the Grid:
+* Add the RadDataForm to the Grid:
 
-#### __XAML__
+#### __[XAML] Example 2: Adding RadDataForm in XAML__
 
 {{region raddataform-getting-started_3}}
 
@@ -287,17 +241,16 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 {{region raddataform-getting-started_9}}
 
-	    Dim employee As New Employee() With { _
-	     .FirstName = "Sarah", _
-	     .LastName = "Blake", _
-	     .Occupation = "Supplied Manager", _
-	     .StartingDate = New DateTime(2005, 4, 12), _
-	     .IsMarried = True, _
-	     .Salary = 3500, _
-	     .Gender = Gender.Female _
-	    }
-	 Me.DataForm1.CurrentItem = employee
-	End Sub
+        Dim employee As New Employee() With { _
+         .FirstName = "Sarah", _
+         .LastName = "Blake", _
+         .Occupation = "Supplied Manager", _
+         .StartingDate = New DateTime(2005, 4, 12), _
+         .IsMarried = True, _
+         .Salary = 3500, _
+         .Gender = Gender.Female _
+        }
+        Me.DataForm1.CurrentItem = employee
 	{{endregion}}
 
 
@@ -334,10 +287,7 @@ We will create a simple **EmployeeService** class with a single static method - 
 
 {{region raddataform-getting-started_11}}
 
-	Public Class Employee
-	
-	 Public Sub New()
-	 End Sub
+	Public Class EmployeeService
 	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	  Dim employees As New ObservableCollection(Of Employee)()
 	            employees.Add(New Employee() With { _
@@ -378,7 +328,6 @@ We will create a simple **EmployeeService** class with a single static method - 
 	            })
 	  Return employees
 	 End Function
-	
 	End Class
 	{{endregion}}
 
@@ -399,10 +348,7 @@ Afterwards, all you need to do is to set the ItemsSource of the RadDataForm:
 
 {{region raddataform-getting-started_13}}
 
-	Public Sub New()
-	 InitializeComponent()
-	 Me.DataForm1.ItemsSource = Employee.GetEmployees()
-	End Sub
+	Me.DataForm1.ItemsSource = Employee.GetEmployees()
 	{{endregion}}
 
 

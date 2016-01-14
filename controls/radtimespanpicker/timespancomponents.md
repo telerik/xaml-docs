@@ -178,7 +178,7 @@ Next thing you have to do is to override the __GetTicksFromItem__ method that sh
 			Dim ticksForOneUnitMultiplier  = 7
 			Dim selectedItemDecimal As Decimal
 			If Decimal.TryParse(item.ToString(), selectedItemDecimal) Then
-				Return TimeSpan.FromDays((ticksForOneUnitMultiplier  * selectedItemDecimal) As Decimal).Ticks
+				Return TimeSpan.FromDays((ticksForOneUnitMultiplier  * selectedItemDecimal) As Double).Ticks
 			End If
 		End If
 		Return 0

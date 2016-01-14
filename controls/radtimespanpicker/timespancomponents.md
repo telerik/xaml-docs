@@ -97,11 +97,11 @@ All five predefined TimeSpanComponents have various properties, which can be set
 
 * __ItemSource__ - represents the collection of available items the user could choose from. Its main purpose is to populate the Items inside the TimeSpanComponents.
 
-* __Minimum__ - this is a property of type double that is used to define the minimum value of the selectable items in the ItemSource collection of __RadTimeSpanPicker__.
+* __Minimum__ - this is a property of type decimal that is used to define the minimum value of the selectable items in the ItemSource collection of __RadTimeSpanPicker__.
 
-* __Maximum__ - represents the maximum value of the selectable items in the ItemSource that the user could pick. Again, like the Minimum property it is of type double.
+* __Maximum__ - represents the maximum value of the selectable items in the ItemSource that the user could pick. Again, like the Minimum property it is of type decimal.
 
-* __Step__ - it defines the value steps difference between two sequential selectable values. It is used to increment each value that populate the ItemsSource collection. It is of type double.
+* __Step__ - it defines the value steps difference between two sequential selectable values. It is used to increment each value that populate the ItemsSource collection. It is of type decimal.
 
 * __Header__ - a property of type string that represents the title of the TimeSpanComponent.
 

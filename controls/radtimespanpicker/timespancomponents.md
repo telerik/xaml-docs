@@ -160,8 +160,8 @@ Next thing you have to do is to override the __GetTicksFromItem__ method that sh
 		if (item != null)
 		{
 			var ticksForOneUnitMultiplier  = 7;
-			double selectedItemDouble;
-			if (double.TryParse(item.ToString(), out selectedItemDouble))
+			decimal selectedItemDouble;
+			if (decimal.TryParse(item.ToString(), out selectedItemDouble))
 			{
 				return TimeSpan.FromDays(ticksForOneUnitMultiplier  * selectedItemDouble).Ticks;
 			}
@@ -176,8 +176,8 @@ Next thing you have to do is to override the __GetTicksFromItem__ method that sh
 	Public Overrides Function GetTicksFromItem(item As Object) As Long
 		If item IsNot Nothing Then
 			Dim ticksForOneUnitMultiplier  = 7
-			Dim selectedItemDouble As Double
-			If Double.TryParse(item.ToString(), selectedItemDouble) Then
+			Dim selectedItemDouble As Decimal
+			If Decimal.TryParse(item.ToString(), selectedItemDouble) Then
 				Return TimeSpan.FromDays(ticksForOneUnitMultiplier  * selectedItemDouble).Ticks
 			End If
 		End If

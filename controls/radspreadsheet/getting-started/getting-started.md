@@ -53,7 +53,7 @@ For export and import to XLSX:
 Note that in order to import/export in XLSX, the format provider must be registered manually. More information on Import/Export can be found [here]({%slug radspreadprocessing-formats-and-conversion-format-providers-manager%}).
         
 
-If you want to use the sample UI provided in our demos you should add there references as well:
+If you want to use the sample UI provided in our demos you should add this reference as well:
         
 
 * Telerik.Windows.Controls.RibbonView.dll

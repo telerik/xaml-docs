@@ -43,7 +43,7 @@ The method is overloaded:
 
 The following example shows how to use the method on a button click:
 
-#### [C#] Example 1: Usage of method ExportToXlsx
+#### [C#] Example 1: Usage of method ExportToPdf
 	private void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "pdf";

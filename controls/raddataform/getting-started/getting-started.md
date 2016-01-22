@@ -36,7 +36,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 #### __[XAML] Example 1: Importing the Telerik Schema__
 
-{{region raddataform-getting-started_2}}
+{{region telerik-schemas}}
 
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
@@ -62,11 +62,11 @@ Now if you run the application, you have the empty RadDataForm:
 
 
 
-## Binding RadDataForm to a single item
+## Binding RadDataForm to a Single Item
 
 Firstly, for the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties
 
-#### __C#__
+#### __[C#] Example 3: Creating an Employee Class with Some Exposed Properties__
 
 {{region raddataform-getting-started_4}}
 
@@ -113,7 +113,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Creating an Employee Class with Some Exposed Properties__
 
 {{region raddataform-getting-started_5}}
 
@@ -188,7 +188,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 
 In the example above Gender is of type enum:
 
-#### __C#__
+#### __[C#] Example 4: Create Gender Enumeration__
 
 {{region raddataform-getting-started_6}}
 
@@ -201,7 +201,7 @@ In the example above Gender is of type enum:
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Create Gender Enumeration__
 
 {{region raddataform-getting-started_7}}
 
@@ -220,7 +220,7 @@ In the example above Gender is of type enum:
 
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to the RadDataForm:
 
-#### __C#__
+#### __[C#] Example 5: Binding a Single Item to RadDataForm__
 
 {{region raddataform-getting-started_8}}
 
@@ -237,7 +237,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Binding a Single Item to RadDataForm__
 
 {{region raddataform-getting-started_9}}
 
@@ -263,7 +263,7 @@ After you run the application you should see the following:
 
 We will create a simple **EmployeeService** class with a single static method - **GetEmployees()** that will return an **ObservableCollection&lt;Employee&gt;**, containing several hard-coded employees:
 
-#### __C#__
+#### __[C#] Example 6: Creating an EmployeeService Class with a Static GetEmployees() Method__
 
 {{region raddataform-getting-started_10}}
 
@@ -271,19 +271,53 @@ We will create a simple **EmployeeService** class with a single static method - 
 	{
 	  public static ObservableCollection<Employee> GetEmployees()
 	  {
-	   ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
-	   employees.Add(new Employee() { FirstName = "Sarah", LastName = "Blake", Occupation = "Supplied Manager", StartingDate = new DateTime(2005, 04, 12), IsMarried = true, Salary = 3500, Gender = Gender.Female });
-	   employees.Add(new Employee() { FirstName = "Jane", LastName = "Simpson", Occupation = "Security", StartingDate = new DateTime(2008, 12, 03), IsMarried = true, Salary = 2000, Gender = Gender.Female });
-	   employees.Add(new Employee() { FirstName = "John", LastName = "Peterson", Occupation = "Consultant", StartingDate = new DateTime(2005, 04, 12), IsMarried = false, Salary = 2600, Gender = Gender.Male });
-	   employees.Add(new Employee() { FirstName = "Peter", LastName = "Bush", Occupation = "Cashier", StartingDate = new DateTime(2005, 04, 12), IsMarried = true, Salary = 2300, Gender = Gender.Male });
-	   return employees;
+            ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
+            employees.Add(new Employee() 
+            { 
+                FirstName = "Sarah", 
+                LastName = "Blake", 
+                Occupation = "Supplied Manager", 
+                StartingDate = new DateTime(2005, 04, 12), 
+                IsMarried = true, Salary = 3500, 
+                Gender = Gender.Female 
+            });
+            employees.Add(new Employee() 
+            { 
+                FirstName = "Jane", 
+                LastName = "Simpson", 
+                Occupation = "Security", 
+                StartingDate = new DateTime(2008, 12, 03), 
+                IsMarried = true, 
+                Salary = 2000, 
+                Gender = Gender.Female 
+            });
+            employees.Add(new Employee() 
+            { 
+                FirstName = "John", 
+                LastName = "Peterson", 
+                Occupation = "Consultant", 
+                StartingDate = new DateTime(2005, 04, 12), 
+                IsMarried = false, Salary = 2600, 
+                Gender = Gender.Male 
+            });
+            employees.Add(new Employee() 
+            { 
+                FirstName = "Peter", 
+                LastName = "Bush",
+                Occupation = "Cashier", 
+                StartingDate = new DateTime(2005, 04, 12), 
+                IsMarried = true, 
+                Salary = 2300, 
+                Gender = Gender.Male 
+            });
+            return employees;
 	  }
 	}
 	{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 6: Creating an EmployeeService Class with a Static GetEmployees() Method__
 
 {{region raddataform-getting-started_11}}
 
@@ -333,9 +367,9 @@ We will create a simple **EmployeeService** class with a single static method - 
 
 
 
-Afterwards, all you need to do is to set the ItemsSource of the RadDataForm:
+Afterwards, all you need to do is to set the **ItemsSource** of the RadDataForm:
 
-#### __C#__
+#### __[C#] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
 {{region raddataform-getting-started_12}}
 
@@ -344,7 +378,7 @@ Afterwards, all you need to do is to set the ItemsSource of the RadDataForm:
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
 {{region raddataform-getting-started_13}}
 

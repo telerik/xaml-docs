@@ -11,14 +11,11 @@ position: 0
 # Integrate RadDataForm with RadGridView
 
 
-
-## 
-
 The __RadDataForm__ is may be fully integrated with the __RadGridView__ control. A great implementation would be to benefit from it in the RowDetails representation. 
 
-For the purpose of this tutorial we will first create a class - Employee. In order to update the items of the grid once the corresponding field in the RadDataForm has been changed, we will implement the INotifyPropertyChanged Interface.
+For the purpose of this tutorial we will first create a class - Employee. In order to update the items of the grid once the corresponding field in the RadDataForm has been changed, we will implement the **INotifyPropertyChanged** Interface.
 
-#### __C#__
+#### __[C#] Example 1: Creating an Employee Class that Implements INotifyPropertyChanged__
 
 {{region raddataform-integrate-with-radgridview_0}}
 
@@ -139,7 +136,7 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Creating an Employee Class that Implements INotifyPropertyChanged__
 
 {{region raddataform-integrate-with-radgridview_1}}
 
@@ -272,7 +269,7 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 
 The definition of the of the RadGridView may be as follows:
 
-#### __XAML__
+#### __[XAML] Example 2: Defining the RadGridView__
 
 {{region raddataform-integrate-with-radgridview_2}}
 
@@ -292,27 +289,20 @@ The definition of the of the RadGridView may be as follows:
 
 Afterwards, all you have to do is to set the ItemsSource of the grid:
 
-#### __C#__
+#### __[C#] Example 3: Setting the RadGridView's ItemsSource__
 
 {{region raddataform-integrate-with-radgridview_3}}
 
-	public MainPage()
-	  {
-	   InitializeComponent();   
-	   this.RadGridView1.ItemsSource = Employee.GetEmployees();  
-	  }
+	this.RadGridView1.ItemsSource = Employee.GetEmployees();
 	{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Setting the RadGridView's ItemsSource__
 
 {{region raddataform-integrate-with-radgridview_4}}
 
-	Public Sub New()
-	 InitializeComponent()
-	 Me.RadGridView1.ItemsSource = Employee.GetEmployees()
-	End Sub
+	Me.RadGridView1.ItemsSource = Employee.GetEmployees()
 	{{endregion}}
 
 

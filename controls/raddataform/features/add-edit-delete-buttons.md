@@ -29,35 +29,35 @@ Here is an example on how you could extend the IEnumerable collection to a colle
 
 {{region raddataform-add-edit-delete-buttons_0}}
 	
-	public class MyCollection <T> : IEnumerable<Club> 
-		{
-			private List<Club> clubs = new List<Club>();
-	
-			public void Add(Club club)
-			{
-				this.clubs.Add(club);
-			}
-	
-			public void AddRange(IEnumerable<Club> clubs)
-			{
-				this.clubs.AddRange(clubs);
-			}
-	
-			public void Remove(Club club)
-			{
-				this.clubs.Remove(club);
-			}
-	
-			public IEnumerator<Club> GetEnumerator()
-			{
-				return this.clubs.GetEnumerator();
-			}
-	
-			System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-			{
-				return this.GetEnumerator();
-			}
-	
+	public class MyCollection<T> : IEnumerable<Employee>
+    {
+        private List<Employee> employees = new List<Employee>();
+
+        public void Add(Employee employee)
+        {
+            this.employees.Add(employee);
+        }
+
+        public void AddRange(IEnumerable<Employee> employees)
+        {
+            this.employees.AddRange(employees);
+        }
+
+        public void Remove(Employee employee)
+        {
+            this.employees.Remove(employee);
+        }
+
+        public IEnumerator<Employee> GetEnumerator()
+        {
+            return this.employees.GetEnumerator();
+        }
+
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+    }
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Extending the IEnumerable Collection  to a Collection that Supports CRUD Operations__

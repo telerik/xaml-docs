@@ -23,7 +23,7 @@ The following properties hold the information about the selection in the __RadDa
 * __SelectedDate__ - it is the __DateTime__ that corresponds to the user selected date or __null__, if no value has been selected.
 
 * __SelectedTime__ - it is of type __TimeSpan?__ and corresponds to the selected time representation in the clock view of the control or __null__ if no time has been selected.
-
+* 
 #### __XAML__
 
 {{region raddatetimepicker-features-selection_0}}
@@ -72,7 +72,7 @@ In the __RadDateTimePicker's__ clock view you can restrict the selectable time i
 
 ## Restricting the date and time item's selection from the input box
 
-With the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IsInputRestrictedToSelectableDates__ boolean property was introduced. By using it you could easily restrict the user from selecting a date based on the entered text inside the input area of the control. The selectable range is defined by the values set for the __SelectableDateStart__ and  __SelectableDateEnd__ properties.
+Telerik introduced the __IsInputRestrictedToSelectableDates__ boolean property in Q1 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}. By using it you could easily restrict the user from selecting a date based on the entered text inside the input area of the control. The selectable range is defined by the values set for the __SelectableDateStart__ and  __SelectableDateEnd__ properties.
 
 #### __XAML__
 

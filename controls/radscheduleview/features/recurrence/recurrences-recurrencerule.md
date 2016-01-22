@@ -40,7 +40,7 @@ The __RecurrenceRule__ class exposes a __RecurrencePattern__ property, which all
 
 ## Exceptions
 
-The __RecurrenceRule__ class exposes an __Exceptions__ property, which allows you to get or set all exception occurrences associated with the current rule. For more information read [How to Add Exception Occurrences to the Recurrence Rule](#How_Add_Exception_Occurrences_to_the_Recurrence_Rule)
+The __RecurrenceRule__ class exposes an __Exceptions__ property, which allows you to get or set all exception occurrences associated with the current rule. For more information read [How to Add Exception Occurrences to the Recurrence Rule](#how-to-add-exception-occurrences-to-the-recurrence-rule)
 
 ## How to Create a Recurrence Rule and Associate it With an Appointment
 

@@ -23,7 +23,7 @@ The following properties hold the information about the selection in the __RadDa
 * __SelectedDate__ - it is the __DateTime__ that corresponds to the user selected date or __null__, if no value has been selected.
 
 * __SelectedTime__ - it is of type __TimeSpan?__ and corresponds to the selected time representation in the clock view of the control or __null__ if no time has been selected.
-<<Comment: Is there supposed to be a question mark after TimeSpan in the previous definition? I don't think I've seen a ? in property types before.>>
+* 
 #### __XAML__
 
 {{region raddatetimepicker-features-selection_0}}

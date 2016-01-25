@@ -51,3 +51,6 @@ Key | Value
 Close | Close 
 EnterDate | Enter Date 
 Error | Error
+Today | Today
+
+>The __TodayButtonContent__ is considered as the ResourceKey of the button when it is set. 

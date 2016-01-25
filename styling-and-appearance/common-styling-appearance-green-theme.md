@@ -78,6 +78,7 @@ Below you can find the differences between the two color variations. Every brush
 | StrongBrush | #FF646464 | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF646464 | <div class="theme-palette-color green-strongbrush-dark"></div> |
 | ValidationBrush |	 #FFE60000 | <div class="theme-palette-color green-validationbrush-ligth"></div> | #FFE60000 | <div class="theme-palette-color green-validationbrush-dark"></div> |
 | FixedBrush | #FFFFFFFF | <div class="theme-palette-color green-fixedbrush-ligth"></div> | #FFFFFFFF | <div class="theme-palette-color green-fixedbrush-dark"></div> |
+| ReadOnlyBackgroundBrush | #00FFFFFF | <div class="theme-palette-color green-fixedbrush-ligth"></div> | #00FFFFFF | <div class="theme-palette-color green-fixedbrush-dark"></div> |
 | __Brushes, which are different in the two palettes__ |  |  |
 | AccentHighBrush | #FF4FA520 | <div class="theme-palette-color green-accenthighbrush-ligth"></div> | #FF2B7402 | <div class="theme-palette-color green-accenthighbrush-dark"></div> |
 | AccentLowBrush | #FF008406 | <div class="theme-palette-color green-accentlowbrush-ligth"></div> | #FF86B90E | <div class="theme-palette-color green-accentlowbrush-dark"></div> |
@@ -92,6 +93,8 @@ Below you can find the differences between the two color variations. Every brush
 | LowBrush | #FF8D8D8D | <div class="theme-palette-color green-lowbrush-ligth"></div> | #FF343434 | <div class="theme-palette-color green-lowbrush-dark"></div> |
 | HighBrush | #FFECECEC | <div class="theme-palette-color green-highbrush-ligth"></div> | #FF131313 | <div class="theme-palette-color green-highbrush-dark"></div> |
 | ComplementaryBrush | #FFCACACA | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF444446 | <div class="theme-palette-color green-strongbrush-dark"></div> |
+
+>The __ReadOnlyBackgroundBrush__ is available with version 2016.1.125.
 
 ## Theme Palette Brushes Description
 
@@ -116,12 +119,13 @@ The default brush used as foreground color is:
 Brush used for paths’ fill in elements that are in MouseOver, Pressed or Selected state:
 * __SelectedBrush__
 
-There are five brushes usually used as background color:
+There several five brushes usually used as background color:
 * __MainBrush__: A Brush used as background of controls with direct input such as TextBox, PasswordBox, RadMaskedInput, Editable RadComboBox, RadAutoCompleteBox. Also, used as main background of elements that has different content with unpredictable background.
 * __PrimaryBrush__: A Brush used as a background of controls when in their Normal state, excluding controls with direct input.
 * __AlternativeBrush__: A Brush used as an alternative background – i.e. for popups or where we want to distinguish one element from another.
 * __HighBrush__: A Brush rarely used as a background. For example, in RadMenu and RadTimeline.
 * __ComplementaryBrush__: A Brush very rarely used as a background. For example, in RadRadialMenu and RadScheduleView.
+* __ReadOnlyBackgroundBrush__ (available with 2016.1.125): A Brush used as a background brush of controls in their ReadOnly state. Its default value is Transparent.
 
 There are two brushes usually used as border brush:
 * __BasicBrush__: A Brush used as a border brush of controls in their Normal state.

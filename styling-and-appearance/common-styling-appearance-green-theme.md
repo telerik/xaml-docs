@@ -119,7 +119,7 @@ The default brush used as foreground color is:
 Brush used for paths’ fill in elements that are in MouseOver, Pressed or Selected state:
 * __SelectedBrush__
 
-There several five brushes usually used as background color:
+There are several brushes usually used as background color:
 * __MainBrush__: A Brush used as background of controls with direct input such as TextBox, PasswordBox, RadMaskedInput, Editable RadComboBox, RadAutoCompleteBox. Also, used as main background of elements that has different content with unpredictable background.
 * __PrimaryBrush__: A Brush used as a background of controls when in their Normal state, excluding controls with direct input.
 * __AlternativeBrush__: A Brush used as an alternative background – i.e. for popups or where we want to distinguish one element from another.

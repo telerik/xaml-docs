@@ -234,6 +234,8 @@ The final result is shown on the next image:
 #### __Figure 3: Final result__
 ![](images/RadTileView_Populating_BindingToCollection_030.png)
 
+>tip You can download a runnable project of the demonstrated example from our online [SDK repository](https://github.com/telerik/xaml-sdk), after navigating to __TileView/DataBinding__.
+
 ## See Also
  * [Getting Started]({%slug radtileview-getting-started%})
  * [Visual Structure]({%slug radtileview-visual-structure%})

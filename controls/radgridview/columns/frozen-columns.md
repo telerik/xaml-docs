@@ -67,6 +67,22 @@ To disable the freezing of a column, just set the __CanUserFreeze to False__ and
 
 ![Rad Grid View Frozencolumns 4](images/RadGridView_Frozencolumns_4.png)
 
+## Hiding the Frozen Columns Splitter
+
+You can set the **FrozenColumnsSplitterVisibility** property of the RadGridView control in order to hide/show the frozen columns splitter.
+
+The property has one of three values:
+
+* **Visible** - displays the element
+* **Hidden** - does not display the element, but reserves space for the element in the layout
+* **Collapsed** - does not display the element, and does not reserve space for it in the layout
+
+#### Figure 1: From Left to Right - FrozenColumnsSplitterVisibility set to Visible, Hidden & Collapsed
+
+![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Visible.png)
+![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Hidden.png)
+![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Collapsed.png)
+
 ## Frozen Columns Events
 
 As of Q1 2016, we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.

@@ -79,9 +79,9 @@ The property has one of three values:
 
 #### Figure 1: From Left to Right - FrozenColumnsSplitterVisibility set to Visible, Hidden & Collapsed
 
-![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Visible.png)
-![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Hidden.png)
-![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Collapsed.png)
+![FrozenColumnsSplitterVisibility="Visible"](images/FrozenColumnsSplitterVisibility_Visible.png)
+![FrozenColumnsSplitterVisibility="Hidden"](images/FrozenColumnsSplitterVisibility_Hidden.png)
+![FrozenColumnsSplitterVisibility="Collapsed"](images/FrozenColumnsSplitterVisibility_Collapsed.png)
 
 ## Frozen Columns Events
 

@@ -12,13 +12,13 @@ position: 0
 
 __RadTileView__ can be bound to a collection of objects through its __ItemsSource__ property.
 
->Note that for the every business object from the data bound collection, __RadTileView__ will generate a __RadTileViewItem__ container representing this object.
+>Note that for every business object from the data bound collection, __RadTileView__ will generate a __RadTileViewItem__ container representing this object.
 
-This article describes how to data bind business object to __RadTileView__. 
+This article describes how to data bind business objects to __RadTileView__. 
 
-* Create a new class named __CustomerAccount__. The structure of the class is shown in the next code-snippet.
+* Create a new class named __CustomerAccount__. The structure of the class is shown in Example 2.
 
-	#### __[C#] Example 1: The business class which will be used as a model of the tileview items__
+	#### __[C#] Example 1: The business class that will be used as a model of the tileview items__
 	{{region radtileview-populating-binding-to-collection_0}}
 		public class CustomerAccount
 		{
@@ -28,7 +28,7 @@ This article describes how to data bind business object to __RadTileView__.
 		}
 	{{endregion}}
 
-	#### __[VB.NET] Example 1: The business class which will be used as a model of the tileview items__
+	#### __[VB.NET] Example 1: The business class that will be used as a model of the tileview items__
 	{{region radtileview-populating-binding-to-collection_1}}
 		Public Class CustomerAccount
 			Private _Name As String
@@ -63,9 +63,9 @@ This article describes how to data bind business object to __RadTileView__.
 		End Class
 	{{endregion}}	
 
-* Create a class which defines a collection of business objects:
+* Create a class that defines a collection of business objects.
 
-	#### __[C#] Example 2: The class which holds a collection of the business objects.__
+	#### __[C#] Example 2: The class that holds a collection of the business objects.__
 	{{region radtileview-populating-binding-to-collection_2}}
 		public class BankViewModel
 		{
@@ -95,7 +95,7 @@ This article describes how to data bind business object to __RadTileView__.
 		}
 	{{endregion}}
 		
-	#### __[VB.NET] Example 2: The class which holds a collection of the business objects.__
+	#### __[VB.NET] Example 2: The class that holds a collection of the business objects.__
 	{{region radtileview-populating-binding-to-collection_3}}
 		Public Class BankViewModel
 			Public Property Customers() As ObservableCollection(Of CustomerAccount)
@@ -128,9 +128,9 @@ This article describes how to data bind business object to __RadTileView__.
 		End Class
 	{{endregion}}
 
-	As you can see the __BankViewModel__ class has a reference to an ObservableCollection of __CustomerAccount__ objects. This collection is populated in the AddCustomers() method and it will be bound to the __ItemsSource__ property of __RadTileView__.
+	As you can see, the __BankViewModel__ class has a reference to an ObservableCollection of __CustomerAccount__ objects. This collection is populated in the AddCustomers() method and it will be bound to the __ItemsSource__ property of __RadTileView__.
 
-* Set the DataContext of your application to a new instance of the created view model:
+* Set the DataContext of your application to a new instance of the created view model.
 
 	#### __[C#] Example 3: Setting the DataContext of the application.__
 	{{region radtileview-populating-binding-to-collection_4}}
@@ -149,7 +149,7 @@ This article describes how to data bind business object to __RadTileView__.
 		End Sub
 	{{endregion}}
 
-* Then bind the __ItemsSource__ property to the collection of the view model:
+* Then bind the __ItemsSource__ property to the collection of the view model.
 
 	#### __[XAML] Example 4: Setting the ItemsSource of the RadTileView control.__
 	{{region radtileview-populating-binding-to-collection_6}}
@@ -157,18 +157,18 @@ This article describes how to data bind business object to __RadTileView__.
 						   ItemsSource="{Binding Customers}" />
 	{{endregion}}
 
-* The result should be similar to the next image.
+* The result should be similar to Figure 1.
 			
 	#### __Figure 1: RadTileView after binding its ItemSource property__	
 	![](images/RadTileView_Populating_BindingToCollection_010.PNG)
 
-You will notice that the __RadTileViewitems__ display the name of the view model. This is because by default the RadTileView will display the result returned from the ToString() method of the model. To change the appearance of the items you can define explicitly what to be displayed in the header and the content of the items. You can see how to do that in the next section.
+Notice that the __RadTileViewitems__ displays the name of the view model. This is because by default, the RadTileView will display the result returned from the ToString() method of the model. To change the appearance of the items you can explicitly define what to display in the header and the content of the items. You can see how to do that in the next section.
 
 ## Using custom templates
  
-This section describes how to define the appearance of the RadTileViewItems' header and content.
+This section describes how to define the appearance of the header and content of a RadTileViewItems.
 
-The visual appearance of the item's header can be modified using two approaches:
+You can modify the visual appearance of the item's header using either the __ItemTemplate__ property or the __DisplayMemberPath__ property.
 	
 * Using the __ItemTemplate__ property
 
@@ -182,7 +182,7 @@ The visual appearance of the item's header can be modified using two approaches:
 	{{endregion}}
 
 	Update the __RadTileView__'s declaration and set its __ItemTemplate__ property like in the example below:
- 
+
 	#### __[XAML] Example 6: Declaring the DataTemplate__
 	{{region radtileview-populating-binding-to-collection_8}}
 		<telerik:RadTileView x:Name="xTileView" 
@@ -192,7 +192,7 @@ The visual appearance of the item's header can be modified using two approaches:
 	  
 * Using the __DisplayMemberPath__ property	
 	
-	Instead of creating a custom __ItemTemplate__, you can use the __DisplayMemberPath__ property. Its purpose is to get or set a path to a value on the source object to serve as the visual representation of the object.
+	Instead of creating a custom __ItemTemplate__, you can use the __DisplayMemberPath__ property, which you can use to get or set a path to a value on the source object to serve as the visual representation of the object.
 
 	__Example 7__ demonstrates how to set the __DisplayMemberPath__ property.		
 	  
@@ -203,12 +203,12 @@ The visual appearance of the item's header can be modified using two approaches:
 							 ItemsSource="{Binding Customers}"/>
 	{{endregion}}	
   
-The end result is demonstrated in Figure 2.
+Figure 2 shows the end result.
 
 #### __Figure 2: RadTileView after using DisplayMemberPath property.__
 ![](images/RadTileView_Populating_BindingToCollection_020.png)
 
-The visual appearance of the item's content can be modified using the __ContentTemplate__ property of RadTileView.
+You can modify the visual appearance of the item's content using the __ContentTemplate__ property of RadTileView.
 
 #### __[XAML] Example 8: Declaring the content DataTemplate__
 {{region radtileview-populating-binding-to-collection_10}}
@@ -220,7 +220,7 @@ The visual appearance of the item's content can be modified using the __ContentT
 	</DataTemplate>
 {{endregion}}
 
-Update your __RadTileView__'s declaration and set its __ContentTemplate__ property like in the example below:
+Update your __RadTileView__'s declaration and set its __ContentTemplate__ property.
 
 #### __[XAML] Example 9: Declaring the content DataTemplate__
 {{region radtileview-populating-binding-to-collection_11}}

@@ -20,7 +20,7 @@ __CAUSE__
 The reason for this behavior is that the filtering Popup is listening for the mouse click event and it will be closed when the user clicks outside of it.
         
 
-__SOLUTION__
+__SOLUTION 1 (Before Q1 2016)__
 
 You will need to subscribe for the __Deactivated__ event of the MainWindow and ensure the filtering Popup is closed.
         
@@ -39,6 +39,19 @@ For example you can close it with the following code:
         if (FilterDialog.IsOpen)
             FilterDialog.IsOpen = false;
     }
+{{endregion}}
+
+__SOLUTION 2 (After Q1 2016)__
+
+As of Q1 2016, we have introduced the **ShouldCloseFilteringPopupOnKeyboardFocusChanged** property which controls whether the filtering popup should close on keyboard focus change. Setting it to **True** will close the popup when a user switches to another application, no matter if he does that by using **Alt+Tab** or by clicking away with the mouse.
+
+And here is how to set it:
+
+#### __C#__
+
+{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_4}}
+
+    <telerik:RadGridView ShouldCloseFilteringPopupOnKeyboardFocusChanged="True" />
 {{endregion}}
 
 # See Also

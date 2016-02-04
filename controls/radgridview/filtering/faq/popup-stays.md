@@ -63,7 +63,7 @@ And here is how to set it:
 
 #### __[XAML]__
 
-{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_4}}
+{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_5}}
 
     <telerik:RadGridView ShouldCloseFilteringPopupOnKeyboardFocusChanged="True" />
 {{endregion}}

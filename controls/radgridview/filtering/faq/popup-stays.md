@@ -28,7 +28,7 @@ You will need to subscribe for the __Deactivated__ event of the MainWindow and e
 For example you can close it with the following code:
         
 
-#### __C#__
+#### __[C#]__
 
 {{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_3}}
 
@@ -41,13 +41,27 @@ For example you can close it with the following code:
     }
 {{endregion}}
 
+#### __[VB.NET]__
+
+{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_4}}
+
+    Dim FilterDialogs = Me.clubsGrid.ChildrenOfType(Of Popup)().Where(Function(p) p.Name = "PART_DropDownPopup")
+	If FilterDialogs IsNot Nothing Then
+		For Each FilterDialog As Popup In FilterDialogs
+			If FilterDialog.IsOpen Then
+				FilterDialog.IsOpen = False
+			End If
+		Next
+	End If
+{{endregion}}
+
 __SOLUTION 2 (After Q1 2016)__
 
 As of Q1 2016, we have introduced the **ShouldCloseFilteringPopupOnKeyboardFocusChanged** property which controls whether the filtering popup should close on keyboard focus change. Setting it to **True** will close the popup when a user switches to another application, no matter if he does that by using **Alt+Tab** or by clicking away with the mouse.
 
 And here is how to set it:
 
-#### __C#__
+#### __[XAML]__
 
 {{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_4}}
 

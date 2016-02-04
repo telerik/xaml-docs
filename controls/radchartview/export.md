@@ -5,7 +5,7 @@ description: Export to PDF
 slug: radchartview-export
 tags: export, pdf, radchartview, chartview
 published: True
-position: 6
+position: 4
 ---
 
 # Export 

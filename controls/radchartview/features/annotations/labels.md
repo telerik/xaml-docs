@@ -5,7 +5,7 @@ description: Annotation Labels
 slug: radchartview-annotations-labels
 tags: annotation,labels
 published: True
-position: 7
+position: 8
 ---
 
 # Annotation Labels
@@ -14,8 +14,7 @@ The CartesianStrokedAnnotation class provides infrastructure for annotation labe
 
 ## Properties
 
-The CartesianStrokedAnnotation base class provides a __Label__ property to specify the label string and __LabelDefinition__ to control its properties like Format, Template and positioning. Annotations provide a mechanism for label positioning that consists of three layers - primary (__Location__), secondary (__HorizontalAlignment/VerticalAlignment__), and tertiary (__HorizontalOffset/ VerticalOffset__).
-        
+The CartesianStrokedAnnotation base class provides a __Label__ property to specify the label string and __LabelDefinition__ to control its properties like Format, Template and positioning. Annotations provide a mechanism for label positioning that consists of three layers - primary (__Location__), secondary (__HorizontalAlignment/VerticalAlignment__), and tertiary (__HorizontalOffset/ VerticalOffset__).        
 
 * __Location__ 
 	This property defines the primary location of the annotation label visual. It allows you to position the label in 5 different positions, as illustrated below:

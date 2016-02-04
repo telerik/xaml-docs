@@ -262,10 +262,27 @@ navigation:
         title: Labels
     controls/radchartview/features/palettes:
         title: Palettes
-    controls/radchartview/axes:
-        title: Axis
+    controls/radchartview/getting-started:
+        title: Getting Started
+        position: 6
+    controls/radchartview/populating-with-data:
+        title: Populating with Data
+        position: 7
     controls/radchartview/series:
         title: Series
+        position: 8   
+    controls/radchartview/axes:
+        title: Axis
+        position: 9    
+    controls/radchartview/features:
+        title: Features
+        position: 10
+    controls/radchartview/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 11
+    controls/radchartview/styles-and-templates:
+        title: Styles and Templates
+        position: 12
     controls/radchartview/series/cartesianchart-series:
         title: CartesianChart Series
     controls/radchartview/series/cartesianchart-series/bar-series:

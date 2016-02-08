@@ -42,6 +42,8 @@ Problematical Properties:
 
 __Description__: Not implemented yet. This problem will be targeted soon.
 
+> If you want to bind a collection of objects to __RadDocking__ you could use the {% if site.site_name == 'Silverlight' %}[__PanesSource__]({%slug raddocking-features-panes-panesource%}){% endif %}{% if site.site_name == 'WPF' %}[__PanesSource__]({%slug raddocking-features-panes-panesource%}){% endif %} property. It is very similar to the not supported __ItemsSource__ property - it can even be bound to RadPane instances.
+
 ## RadSplitContainer
 
 Properties that are __not supported__:

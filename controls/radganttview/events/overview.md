@@ -18,7 +18,7 @@ __RadGanttView__ raises the following specific events:
 
 * __TaskSaving__ - occurs when an edit operation is being committed through the UI.
 
-	Both event receive two arguments:
+	Both events receive two arguments:
 
 	* The sender argument contains __RadGanttView__. This argument is of type object, but can be cast to __RadGanttView__ type.
 

@@ -46,6 +46,7 @@ RadDataPager	|	Telerik.Windows.Controls.Data, Telerik.Windows.Data
 RadDatePicker	|	Telerik.Windows.Controls.Input
 RadDateTimePicker	|	Telerik.Windows.Controls.Input
 RadDataServiceDataSource	|	Telerik.Windows.Data, Telerik.Windows.Controls.DataServices
+RadDesktopAlert	|	Telerik.Windows.Controls.Navigation
 RadDiagram	|	Telerik.Windows.Controls.Diagrams, Telerik.Windows.Diagrams.Core
 RadDocking	|	Telerik.Windows.Controls.Docking, Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadEntityFrameworkDataSource	|	Telerik.Windows.Data, Telerik.Windows.Controls.EntityFramework
@@ -89,6 +90,7 @@ RadTileView	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTimeBar	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadTimeline	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadTimePicker	|	Telerik.Windows.Controls.Input
+RadTimeSpanPicker	|	Telerik.Windows.Controls.Input
 RadToolBar	|	Telerik.Windows.Controls.Navigation
 RadToolTip	|	Telerik.Windows.Controls
 RadTransitionControl	|	Telerik.Windows.Controls

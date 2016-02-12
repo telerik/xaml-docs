@@ -11,10 +11,7 @@ position: 0
 # Property level validation
 
 
-
-## 
-
-RadDataForm provides data validation of the user input. Data Validation enables you to take a complete control of the data entered in the fields of the data form. 
+RadDataForm provides data validation of the user input. Data Validation enables you to take complete control of the data entered in the fields of the data form. 
 
 Generally, the built-in validation will be performed once the edit has been committed and the RadDataForm will be visualized as follows:
 
@@ -26,7 +23,7 @@ However, you are free to perform your own custom logic when validating. The firs
 
 For example:
 
-#### __C#__
+#### __[C#] Example 1: Handling the ValidatingItem Event__
 
 {{region raddataform-validation_0}}
 
@@ -42,16 +39,16 @@ For example:
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Handling the ValidatingItem Event__
 
 {{region raddataform-validation_1}}
 
-	Private Sub DataForm1_ValidatingItem(sender As Object, e As System.ComponentModel.CancelEventArgs) 
-	 Dim employer = TryCast(Me.DataForm1.CurrentItem, Employee)
-	 If employer.Salary < 1000 Then
-	  RadWindow.Alert("You have to raise " & Convert.ToString(employer.LastName) & " salary")
-	 End If
-	End Sub
+    Private Sub DataForm1_ValidatingItem(sender As Object, e As System.ComponentModel.CancelEventArgs)
+        Dim employer = TryCast(Me.DataForm1.CurrentItem, Employee)
+        If employer.Salary < 1000 Then
+            RadWindow.Alert("You have to raise " & Convert.ToString(employer.LastName) & " salary")
+        End If
+    End Sub
 	{{endregion}}
 
 
@@ -64,9 +61,10 @@ In this case the RadDataForm will be displayed as the image below:
 
 Yet another approach applicable when defining custom fields is to specify the validation properties in the binding and perform the logic inside the property setter. For example:
 
-#### __C#__
+#### __[C#] Example 2: Perform the Validation inside the Property Setter__
 
 {{region raddataform-validation_2}}
+	
 	public DateTime StartingDate
 	  {
 	   get
@@ -93,7 +91,7 @@ Yet another approach applicable when defining custom fields is to specify the va
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Perform the Validation inside the Property Setter__
 
 {{region raddataform-validation_3}}
 
@@ -118,7 +116,7 @@ Yet another approach applicable when defining custom fields is to specify the va
 
 The definition of the DataFormDataField should be like follows:
 
-#### __XAML__
+#### __[XAML] Example 3: Defining the DataFormDataField__
 
 {{region raddataform-validation_4}}
 
@@ -129,4 +127,4 @@ The definition of the DataFormDataField should be like follows:
 
 Once the validation is performed, the RadDataForm will be displayed as the image below:
 
- ![](images/RadDataForm_Validation3.png)
+![](images/RadDataForm_Validation3.png)

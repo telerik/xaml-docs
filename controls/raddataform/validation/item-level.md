@@ -12,18 +12,34 @@ position: 1
 
 By validating the data, you can control what data is entered in the fields of the data form.
     
-Aside from the __property level__ validation, RadDataForm performs __item level__ validation process, based on property __attributes__. This logic is executed in any occasions when changes are committed (including the execution of navigation or AddNew commands, when AutoCommit is True). This feature is available for both auto-generated and customized fields and all of the System.ComponentModel.DataAnnotations validation attributes are supported on equal scale.
+Aside from the __property level__ validation, RadDataForm performs __item level__ validation process, based on property __attributes__. This logic is executed in any occasions when changes are committed (including the execution of navigation or AddNew commands, when AutoCommit is True). This feature is available for both auto-generated and customized fields and all of the **System.ComponentModel.DataAnnotations** validation attributes are supported on equal scale.
 
  ![raddataform-validation-item-level](images/raddataform-validation-item-level.png)
 
 >As seen on the picture, item level validation errors are not respected by separate editor’s validation features (i.e. __no validation tooltip__ on TextBox). Such behavior is expected, as respective bindings never get notified about these errors. 
 
-#### __C#__
+First we need to include the System.ComponentModel.DataAnnotations namespace:
+
+#### __[C#] Example 1: Including System.ComponentModel.DataAnnotations__
 
 {{region raddataform-validation-item-level_0}}
 
-	    using System.ComponentModel.DataAnnotations
-	    //...
+	    using System.ComponentModel.DataAnnotations;
+	{{endregion}}
+
+#### __[VB.NET] Example 1: Including System.ComponentModel.DataAnnotations__
+
+{{region raddataform-validation-item-level_2}}
+
+	    Imports System.ComponentModel.DataAnnotations
+	{{endregion}}
+
+Now we can define a simple Employee class with validation attributes.
+
+#### __[C#] Example 2: Creating an Employee Class with Validation Attributes__
+
+{{region raddataform-validation-item-level_1}}
+
 	    public class Employee
 	    {
 	        [Required]
@@ -43,13 +59,10 @@ Aside from the __property level__ validation, RadDataForm performs __item level_
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Creating an Employee Class with Validation Attributes__
 
-{{region raddataform-validation-item-level_1}}
+{{region raddataform-validation-item-level_3}}
 
-	    Imports System.ComponentModel.DataAnnotations
-	    '...
-	
 	    Public Class Employee
 	        <Required()> _
 	        Public Property FirstName() As String

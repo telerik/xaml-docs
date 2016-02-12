@@ -15,11 +15,11 @@ position: 0
 This tutorial will walk your through the creation of a sample application that contains __RadDataForm__ and will show you how:
       
 
-* Use RadDataForm in your project;
+* [Use RadDataForm in your project](#adding-raddataform-to-the-project);
 
-* Bind RadDataForm to a single item;
+* [Bind RadDataForm to a single item](#binding-raddataform-to-a-single-item);
 
-* Bind RadDataForm to a collection of custom objects;
+* [Bind RadDataForm to a collection of custom objects](#binding-raddataform-to-a-collection-of-custom-objects);
 
 For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %}Application project and open it in Visual Studio.
       
@@ -32,66 +32,20 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 * Add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Controls.Data__, __Telerik.Windows.Controls.Input__ and __Telerik.Windows.Data__;
           
 
-* Add the RadDataForm as demonstrated below:
+* Import the Telerik schema:
 
-{% if site.site_name == 'Silverlight' %}
+#### __[XAML] Example 1: Importing the Telerik Schema__
 
-#### __XAML__
-
-{{region raddataform-getting-started_0}}
-
-	<UserControl x:Class="RadDataForm_SL.MainPage"
-	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	    mc:Ignorable="d"
-	    d:DesignHeight="300" d:DesignWidth="400">
-	 <Grid x:Name="LayoutRoot" Background="White">
-	  <telerik:RadDataForm x:Name="DataForm1" Header="Employee"/>
-	 </Grid>
-	</UserControl>
-	{{endregion}}
-
-{% endif %}{% if site.site_name == 'WPF' %}
-
-#### __XAML__
-
-{{region raddataform-getting-started_1}}
-
-	<Window x:Class="RadDataForm_WPF.MainWindow"
-	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	    mc:Ignorable="d"
-	    d:DesignHeight="300" d:DesignWidth="400">
-	 <Grid x:Name="LayoutRoot" Background="White">
-	  <telerik:RadDataForm x:Name="DataForm1" Header="Employee"/>
-	 </Grid>
-	</UserControl>
-	{{endregion}}
-
-{% endif %}
-
-Two lines of code are important here:
-
-* The import of the Telerik schema:
-
-#### __XAML__
-
-{{region raddataform-getting-started_2}}
+{{region telerik-schemas}}
 
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
 
 
-* The declaration of the RadDataForm control inside the Grid:
+* Add the RadDataForm to the Grid:
 
-#### __XAML__
+#### __[XAML] Example 2: Adding RadDataForm in XAML__
 
 {{region raddataform-getting-started_3}}
 
@@ -108,11 +62,11 @@ Now if you run the application, you have the empty RadDataForm:
 
 
 
-## Binding RadDataForm to a single item
+## Binding RadDataForm to a Single Item
 
 Firstly, for the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties
 
-#### __C#__
+#### __[C#] Example 3: Creating an Employee Class with Some Exposed Properties__
 
 {{region raddataform-getting-started_4}}
 
@@ -159,7 +113,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Creating an Employee Class with Some Exposed Properties__
 
 {{region raddataform-getting-started_5}}
 
@@ -234,7 +188,7 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 
 In the example above Gender is of type enum:
 
-#### __C#__
+#### __[C#] Example 4: Create Gender Enumeration__
 
 {{region raddataform-getting-started_6}}
 
@@ -247,7 +201,7 @@ In the example above Gender is of type enum:
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Create Gender Enumeration__
 
 {{region raddataform-getting-started_7}}
 
@@ -266,35 +220,37 @@ In the example above Gender is of type enum:
 
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to the RadDataForm:
 
-#### __C#__
+#### __[C#] Example 5: Binding a Single Item to RadDataForm__
 
 {{region raddataform-getting-started_8}}
 
-	public MainPage()
-	  {
-	   InitializeComponent();
-	   Employee employee = new Employee() 
-	      { FirstName = "Sarah", LastName = "Blake", Occupation = "Supplied Manager", StartingDate = new DateTime(2005, 04, 12), IsMarried = true, Salary = 3500,   Gender = Gender.Female };   this.DataForm1.CurrentItem = employee;
-	  }
+	   Employee employee = new Employee() { 
+			FirstName = "Sarah", 
+			LastName = "Blake", 
+			Occupation = "Supplied Manager", 
+			StartingDate = new DateTime(2005, 04, 12), 
+			IsMarried = true, Salary = 3500,   
+			Gender = Gender.Female 
+	   }; 
+	   this.RadDataForm1.CurrentItem = employee;
 	{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Binding a Single Item to RadDataForm__
 
 {{region raddataform-getting-started_9}}
 
-	    Dim employee As New Employee() With { _
-	     .FirstName = "Sarah", _
-	     .LastName = "Blake", _
-	     .Occupation = "Supplied Manager", _
-	     .StartingDate = New DateTime(2005, 4, 12), _
-	     .IsMarried = True, _
-	     .Salary = 3500, _
-	     .Gender = Gender.Female _
-	    }
-	 Me.DataForm1.CurrentItem = employee
-	End Sub
+        Dim employee As New Employee() With { _
+         .FirstName = "Sarah", _
+         .LastName = "Blake", _
+         .Occupation = "Supplied Manager", _
+         .StartingDate = New DateTime(2005, 4, 12), _
+         .IsMarried = True, _
+         .Salary = 3500, _
+         .Gender = Gender.Female _
+        }
+        Me.DataForm1.CurrentItem = employee
 	{{endregion}}
 
 
@@ -305,40 +261,67 @@ After you run the application you should see the following:
 
 ## Binding RadDataForm to a collection of custom objects
 
-We will extend the class Employee by a single static method - GetEmployees() that will return an ObservableCollection<Employee>, containing several hard-coded employees:
+We will create a simple **EmployeeService** class with a single static method - **GetEmployees()** that will return an **ObservableCollection&lt;Employee&gt;**, containing several hard-coded employees:
 
-#### __C#__
+#### __[C#] Example 6: Creating an EmployeeService Class with a Static GetEmployees() Method__
 
 {{region raddataform-getting-started_10}}
 
-	public class Employee
+	public class EmployeeService
 	{
-	
-	  public Employee()
-	  { }
-	
 	  public static ObservableCollection<Employee> GetEmployees()
 	  {
-	   ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
-	   employees.Add(new Employee() { FirstName = "Sarah", LastName = "Blake", Occupation = "Supplied Manager", StartingDate = new DateTime(2005, 04, 12), IsMarried = true, Salary = 3500, Gender = Gender.Female });
-	   employees.Add(new Employee() { FirstName = "Jane", LastName = "Simpson", Occupation = "Security", StartingDate = new DateTime(2008, 12, 03), IsMarried = true, Salary = 2000, Gender = Gender.Female });
-	   employees.Add(new Employee() { FirstName = "John", LastName = "Peterson", Occupation = "Consultant", StartingDate = new DateTime(2005, 04, 12), IsMarried = false, Salary = 2600, Gender = Gender.Male });
-	   employees.Add(new Employee() { FirstName = "Peter", LastName = "Bush", Occupation = "Cashier", StartingDate = new DateTime(2005, 04, 12), IsMarried = true, Salary = 2300, Gender = Gender.Male });
-	   return employees;
+            ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
+            employees.Add(new Employee() 
+            { 
+                FirstName = "Sarah", 
+                LastName = "Blake", 
+                Occupation = "Supplied Manager", 
+                StartingDate = new DateTime(2005, 04, 12), 
+                IsMarried = true, Salary = 3500, 
+                Gender = Gender.Female 
+            });
+            employees.Add(new Employee() 
+            { 
+                FirstName = "Jane", 
+                LastName = "Simpson", 
+                Occupation = "Security", 
+                StartingDate = new DateTime(2008, 12, 03), 
+                IsMarried = true, 
+                Salary = 2000, 
+                Gender = Gender.Female 
+            });
+            employees.Add(new Employee() 
+            { 
+                FirstName = "John", 
+                LastName = "Peterson", 
+                Occupation = "Consultant", 
+                StartingDate = new DateTime(2005, 04, 12), 
+                IsMarried = false, Salary = 2600, 
+                Gender = Gender.Male 
+            });
+            employees.Add(new Employee() 
+            { 
+                FirstName = "Peter", 
+                LastName = "Bush",
+                Occupation = "Cashier", 
+                StartingDate = new DateTime(2005, 04, 12), 
+                IsMarried = true, 
+                Salary = 2300, 
+                Gender = Gender.Male 
+            });
+            return employees;
 	  }
 	}
 	{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 6: Creating an EmployeeService Class with a Static GetEmployees() Method__
 
 {{region raddataform-getting-started_11}}
 
-	Public Class Employee
-	
-	 Public Sub New()
-	 End Sub
+	Public Class EmployeeService
 	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	  Dim employees As New ObservableCollection(Of Employee)()
 	            employees.Add(New Employee() With { _
@@ -379,35 +362,27 @@ We will extend the class Employee by a single static method - GetEmployees() tha
 	            })
 	  Return employees
 	 End Function
-	
 	End Class
 	{{endregion}}
 
 
 
-Afterwards, all you need to do is to set the ItemsSource of the RadDataForm:
+Afterwards, all you need to do is to set the **ItemsSource** of the RadDataForm:
 
-#### __C#__
+#### __[C#] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
 {{region raddataform-getting-started_12}}
 
-	public MainPage()
-	  {
-	   InitializeComponent();   
-	   this.DataForm1.ItemsSource = Employee.GetEmployees();
-	  }
+	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
 	{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
 {{region raddataform-getting-started_13}}
 
-	Public Sub New()
-	 InitializeComponent()
-	 Me.DataForm1.ItemsSource = Employee.GetEmployees()
-	End Sub
+	Me.DataForm1.ItemsSource = Employee.GetEmployees()
 	{{endregion}}
 
 

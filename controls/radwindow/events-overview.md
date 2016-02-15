@@ -25,6 +25,14 @@ The __RadWindow__ raises the following specific events:
 	* The sender argument contains the __RadWindow__. This argument is of type object, but can be cast to the __RadWindow__ type.
 
 	* A {% if site.site_name == 'Silverlight' %}[WindowClosedEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_windowclosedeventargs.html){% endif %}{% if site.site_name == 'WPF' %}[WindowClosedEventArgs](http://www.telerik.com/help/wpf/t_telerik_windows_controls_windowclosedeventargs.html){% endif %} object
+	
+{% if site.site_name == 'WPF' %}
+* __HostCreated__ - occurs when the Host instance of __RadWindow__ gets created and right before __RadWindow__ is visualized. The event handler receives two arguments:
+
+	* The sender argument contains __RadWindow__. This argument is of type object, but can be cast to __RadWindow__.
+
+	* A __HostWindowCreatedEventArgs__.
+{% endif %}
 
 * __LayoutChangeStarted__ - occurs when a layout change operation begins (drag, resize). The event handler receives two arguments:
 

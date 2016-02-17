@@ -16,7 +16,7 @@ __RadDataForm__ gives you the opportunity to edit the current item's properties 
 
 For the purpose of this tutorial we will create two quite simple classes - Person and Country:
 
-#### __C#__
+#### __[C#] Example 1: Creating the Person and Country Classes__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_0}}
 
@@ -26,6 +26,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	  public string LastName { get; set; }
 	  public int CountryID { get; set; }
 	 }
+
 	public class Country
 	 {
 	  public int ID { get; set; }
@@ -35,7 +36,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Creating the Person and Country Classes__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_1}}
 
@@ -68,6 +69,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	 End Property
 	 Private m_CountryID As Integer
 	End Class
+
 	Public Class Country
 	 Public Property ID() As Integer
 	  Get
@@ -94,129 +96,106 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 
 Afterwards, we may add the source of the RadDataForm:
 
-{% if site.site_name == 'Silverlight' %}
-
-#### __C#__
+#### __[C#] Example 2: Set the ItemsSource__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_2}}
 
-	public MainPage()
-	  {
-	   InitializeComponent();
-	   List<Person> persons = new List<Person>();
-	   // A sample list of source objects for the RadDataForm. 
-	   persons.Add(new Person() { FirstName = "John", LastName = "Smith", CountryID = 1 });
-	   persons.Add(new Person() { FirstName = "Angelo", LastName = "Romano", CountryID = 2 });
-	   persons.Add(new Person() { FirstName = "Jean", LastName = "Michel", CountryID = 3 });
-	   this.RadDataForm1.ItemsSource = persons;
-	  }
+	InitializeComponent();
+    List<Person> persons = new List<Person>();
+    // A sample list of source objects for the RadDataForm. 
+    persons.Add(new Person() { FirstName = "John", LastName = "Smith", CountryID = 1 });
+    persons.Add(new Person() { FirstName = "Angelo", LastName = "Romano", CountryID = 2 });
+    persons.Add(new Person() { FirstName = "Jean", LastName = "Michel", CountryID = 3 });
+    this.RadDataForm1.ItemsSource = persons;
 	{{endregion}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
 
-#### __C#__
+#### __[VB.NET] Example 2: Set the ItemsSource__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_3}}
 
-	public MainWindow()
-	  {
-	   InitializeComponent();
-	   List<Person> persons = new List<Person>();
-	   // A sample list of source objects for the RadDataForm. 
-	   persons.Add(new Person() { FirstName = "John", LastName = "Smith", CountryID = 1 });
-	   persons.Add(new Person() { FirstName = "Angelo", LastName = "Romano", CountryID = 2 });
-	   persons.Add(new Person() { FirstName = "Jean", LastName = "Michel", CountryID = 3 });
-	   this.RadDataForm1.ItemsSource = persons;
-	  }
-	{{endregion}}
-
-{% endif %}
-
-
-
-#### __VB.NET__
-
-{{region raddatafor-edit-lookup-values-with-radcombobox_4}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 Dim persons As New List(Of Person)()
-	 ' A sample list of source objects for the RadDataForm. 
-	 persons.Add(New Person() With { _
-	  Key .FirstName = "John", _
-	  Key .LastName = "Smith", _
-	  Key .CountryID = 1 _
-	 })
-	 persons.Add(New Person() With { _
-	  Key .FirstName = "Angelo", _
-	  Key .LastName = "Romano", _
-	  Key .CountryID = 2 _
-	 })
-	 persons.Add(New Person() With { _
-	  Key .FirstName = "Jean", _
-	  Key .LastName = "Michel", _
-	  Key .CountryID = 3 _
-	 })
-	 Me.RadDataForm1.ItemsSource = persons
-	End Sub
+	InitializeComponent()
+	Dim persons As New List(Of Person)()
+	' A sample list of source objects for the RadDataForm. 
+	persons.Add(New Person() With { _
+	 Key .FirstName = "John", _
+	 Key .LastName = "Smith", _
+	 Key .CountryID = 1 _
+	})
+	persons.Add(New Person() With { _
+	 Key .FirstName = "Angelo", _
+	 Key .LastName = "Romano", _
+	 Key .CountryID = 2 _
+	})
+	persons.Add(New Person() With { _
+	 Key .FirstName = "Jean", _
+	 Key .LastName = "Michel", _
+	 Key .CountryID = 3 _
+	})
+	Me.RadDataForm1.ItemsSource = persons
 	{{endregion}}
 
 
 
 Now, in order to edit the lookup values we have to do two things:
 
-* Create source for the RadComboBox:
+* Create a source for the RadComboBox - we'll create a **CountriesService** class with a public static **GetCountries()** method
 
-#### __C#__
+#### __[C#] Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_5}}
 
-	private List<Country> GetCountries()
-	  {
-	   List<Country> countries = new List<Country>();
-	   countries.Add(new Country() { ID = 1, Name = "USA" });
-	   countries.Add(new Country() { ID = 2, Name = "Italy" });
-	   countries.Add(new Country() { ID = 3, Name = "France" });
-	   countries.Add(new Country() { ID = 4, Name = "Canada" });
-	   return countries;
-	  }
+    public class CountriesService
+    {
+        public static List<Country> GetCountries()
+        {
+            List<Country> countries = new List<Country>();
+            countries.Add(new Country() { ID = 1, Name = "USA" });
+            countries.Add(new Country() { ID = 2, Name = "Italy" });
+            countries.Add(new Country() { ID = 3, Name = "France" });
+            countries.Add(new Country() { ID = 4, Name = "Canada" });
+            return countries;
+        }
+    }
 	{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_6}}
 
-	Private Function GetCountries() As List(Of Country)
-	 Dim countries As New List(Of Country)()
-	 countries.Add(New Country() With { _
-	  Key .ID = 1, _
-	  Key .Name = "USA" _
-	 })
-	 countries.Add(New Country() With { _
-	  Key .ID = 2, _
-	  Key .Name = "Italy" _
-	 })
-	 countries.Add(New Country() With { _
-	  Key .ID = 3, _
-	  Key .Name = "France" _
-	 })
-	 countries.Add(New Country() With { _
-	  Key .ID = 4, _
-	  Key .Name = "Canada" _
-	 })
-	 Return countries
-	End Function
+	Public Class CountriesService
+        Public Shared Function GetCountries() As List(Of Country)
+            Dim countries As New List(Of Country)()
+            countries.Add(New Country() With { _
+                .ID = 1, _
+                .Name = "USA" _
+            })
+            countries.Add(New Country() With { _
+                .ID = 2, _
+                .Name = "Italy" _
+            })
+            countries.Add(New Country() With { _
+                .ID = 3, _
+                .Name = "France" _
+            })
+            countries.Add(New Country() With { _
+                .ID = 4, _
+                .Name = "Canada" _
+            })
+            Return countries
+        End Function
+    End Class
 	{{endregion}}
 
 
 
-* Define the RadComboBox as a field in the RadDataForm. To achieve we have two options - to handle the AutoGeneratingField event and define a DataFormComboBoxField or create a template for the ReadOnlyTemplate, EditTemplate and NewItemTemplate:
+* Define the RadComboBox as a field in the RadDataForm. To achieve this we have two options - to handle the AutoGeneratingField event and define a DataFormComboBoxField or create a template for the ReadOnlyTemplate, EditTemplate and NewItemTemplate:
 
 1. Scenario 1 - handle the AutoGeneratingField:
 
-#### __C#__
+#### __[C#] Example 4: Handling the AutoGeneratingField Event__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_7}}
 
@@ -237,7 +216,7 @@ Now, in order to edit the lookup values we have to do two things:
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Handling the AutoGeneratingField Event__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_8}}
 
@@ -263,46 +242,135 @@ Once you run the application, you will have to see the following view:
 
 2. Scenario 2 - define the template for the ReadOnlyTemplate, EditTemplate and NewItemTemplate: 
 
-#### __XAML__
+#### __[XAML] Example 5: Defining the Template for ReadOnlyTemplate, EditTemplate and NewItemTemplate__
 
 {{region raddatafor-edit-lookup-values-with-radcombobox_9}}
 
 	<UserControl.Resources>
-	 <my:MyViewModel x:Key="MyViewModel" />
-	</UserControl.Resources>
-	<Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource MyViewModel}">
-	 <Grid.Resources>   
-	  <DataTemplate x:Key="MyTemplate">
-	   <Grid>
-	              <Grid.ColumnDefinitions>
-	     <ColumnDefinition/>
-	     <ColumnDefinition/>
-	    </Grid.ColumnDefinitions>
-	   <Grid.RowDefinitions>
-	     <RowDefinition/>
-	     <RowDefinition/>
-	   </Grid.RowDefinitions>
-	   <telerik:DataFormDataField Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" Grid.Row="0" Grid.Column="0"/>
-	   <telerik:DataFormDataField Label="Last Name" DataMemberBinding="{Binding LastName, Mode=TwoWay}" Grid.Row="0" Grid.Column="1"/>
-	   <telerik:DataFormComboBoxField SelectedValuePath="ID" DisplayMemberPath="Name"
-	                                  Grid.Row="2" Grid.Column="1" DataMemberBinding="{Binding CountryID, Mode=TwoWay}" 
-	                                  ItemsSource="{Binding Countries, Source={StaticResource MyViewModel}}" />
-	   </Grid>
-	  </DataTemplate>
-	 </Grid.Resources>
-	 <telerik:RadDataForm x:Name="DataForm1"
-	    AutoGenerateFields="False"
-	    Header="Person" 
-	    ItemsSource="{Binding Persons}"
-	    ReadOnlyTemplate="{StaticResource MyTemplate}"
-	    EditTemplate="{StaticResource MyTemplate}"
-	    NewItemTemplate="{StaticResource MyTemplate}">
-	 </telerik:RadDataForm>
-	</Grid>
+        <my:MyViewModel x:Key="MyViewModel" />
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource MyViewModel}">
+        <Grid.Resources>
+            <DataTemplate x:Key="MyTemplate">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <telerik:DataFormDataField Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" Grid.Row="0" Grid.Column="0"/>
+                    <telerik:DataFormDataField Label="Last Name" DataMemberBinding="{Binding LastName, Mode=TwoWay}" Grid.Row="0" Grid.Column="1"/>
+                    <telerik:DataFormComboBoxField SelectedValuePath="ID" DisplayMemberPath="Name"
+                          Grid.Row="2" Grid.Column="1" DataMemberBinding="{Binding CountryID, Mode=TwoWay}"
+                          ItemsSource="{Binding Countries, Source={StaticResource MyViewModel}}" />
+                </Grid>
+            </DataTemplate>
+        </Grid.Resources>
+
+        <telerik:RadDataForm x:Name="RadDataForm1"
+            AutoGenerateFields="False"
+            Header="Person"
+            ItemsSource="{Binding Persons}"
+            ReadOnlyTemplate="{StaticResource MyTemplate}"
+            EditTemplate="{StaticResource MyTemplate}"
+            NewItemTemplate="{StaticResource MyTemplate}">
+        </telerik:RadDataForm>
+    </Grid>
 	{{endregion}}
 
 
 
-In this case the Countries and Persons collections used for the ItemsSources of the ComboBoxField and the RadDataForm are defined in the ViewModel class.
+In this case the Countries and Persons collections used for the ItemsSources of the ComboBoxField and the RadDataForm are defined in the ViewModel class:
+
+#### __[C#] Example 6: Defining the Countries and Persons Collections in the ViewModel__
+
+{{region raddatafor-edit-lookup-values-with-radcombobox_10}}
+
+	public class MyViewModel
+    {
+        private List<Country> countries;
+        private List<Person> persons;
+
+        public List<Country> Countries
+        {
+            get
+            {
+                if (this.countries == null)
+                {
+                    this.countries = CountriesService.GetCountries();
+                }
+
+                return this.countries;
+            }
+        }
+
+        public List<Person> Persons
+        {
+            get
+            {
+                if (this.persons == null)
+                {
+                    List<Person> persons = new List<Person>();
+                    persons.Add(new Person() { FirstName = "John", LastName = "Smith", CountryID = 1 });
+                    persons.Add(new Person() { FirstName = "Angelo", LastName = "Romano", CountryID = 2 });
+                    persons.Add(new Person() { FirstName = "Jean", LastName = "Michel", CountryID = 3 });
+                    this.persons = persons;
+                }
+
+                return this.persons;
+            }
+        }
+    }
+	{{endregion}}
+
+#### __[VB.NET] Example 6: Defining the Countries and Persons Collections in the ViewModel__
+
+{{region raddatafor-edit-lookup-values-with-radcombobox_11}}
+
+	Public Class MyViewModel
+        Private m_countries As List(Of Country)
+        Private m_persons As List(Of Person)
+
+        Public ReadOnly Property Countries() As List(Of Country)
+            Get
+                If Me.m_countries Is Nothing Then
+                    Me.m_countries = CountriesService.GetCountries()
+                End If
+
+                Return Me.m_countries
+            End Get
+        End Property
+
+        Public ReadOnly Property Persons() As List(Of Person)
+            Get
+                If Me.m_persons Is Nothing Then
+                    Dim persons__1 As New List(Of Person)()
+                    persons__1.Add(New Person() With { _
+                        .FirstName = "John", _
+                        .LastName = "Smith", _
+                        .CountryID = 1 _
+                    })
+                    persons__1.Add(New Person() With { _
+                        .FirstName = "Angelo", _
+                        .LastName = "Romano", _
+                        .CountryID = 2 _
+                    })
+                    persons__1.Add(New Person() With { _
+                        .FirstName = "Jean", _
+                        .LastName = "Michel", _
+                        .CountryID = 3 _
+                    })
+                    Me.m_persons = persons__1
+                End If
+
+                Return Me.m_persons
+            End Get
+        End Property
+    End Class
+	{{endregion}}
 
 The result will be same as the one in the first scenario. 

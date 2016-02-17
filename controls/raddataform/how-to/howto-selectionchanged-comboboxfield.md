@@ -12,20 +12,32 @@ position: 2
 
 
 
-DataFormComboBoxField does not have a SelectionChanged event itself. In case you need such an event to implement your additional logic, you can handle the SelectionChanged event of its editing element (RadComboBox). For example the code to do so is available bellow:
+DataFormComboBoxField does not have a SelectionChanged event itself. In case you need such an event to implement your additional logic, you can handle the SelectionChanged event of its editing element (RadComboBox). To do that you need to:
 
-{% if site.site_name == 'WPF' %}
+1) Register an event handler for the SelectionChanged event:
 
-#### __C#__
+#### __[C#] Example 1: Adding event handler for the SelectionChanged event__
 
 {{region raddataform-howto-selectionchanged-comboboxfield_1}}
 
-	    public MainWindow()
-	    {
-	        InitializeComponent();
-	        this.AddHandler(RadComboBox.SelectionChangedEvent, new System.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
-	    }
-	
+	    this.AddHandler(RadComboBox.SelectionChangedEvent, new System.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
+	{{endregion}}
+
+#### __[VB.NET] Example 1: Adding event handler for the SelectionChanged event__
+
+{{region raddataform-howto-selectionchanged-comboboxfield_1}}
+
+	    AddHandler RadComboBox.SelectionChangedEvent, AddressOf OnSelectionChanged
+	{{endregion}}
+
+>You should add a using statement to __Telerik.Windows__ namespace in order to be able to add the handler.
+
+2) Check if any items were unselected throught __RemovedItems.Count__
+
+#### __[C#] Example 2: Check if any items were unselected__
+
+{{region raddataform-howto-selectionchanged-comboboxfield_2}}
+
 	    private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
 	    {
 	        if (e.RemovedItems.Count > 0)
@@ -35,32 +47,18 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 	    }
 	{{endregion}}
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
-#### __C#__
+#### __[VB.NET] Example 2: Check if any items were unselected__
 
 {{region raddataform-howto-selectionchanged-comboboxfield_2}}
 
-	    public MainPage()
-	    {
-	        InitializeComponent();
-	        this.AddHandler(RadComboBox.SelectionChangedEvent, new Telerik.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
-	    }
-	
-	    private void OnSelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
-	    {
-	        if (e.RemovedItems.Count > 0)
-	        {
-	            //your code here
-	        }
-	    }
+	    Private Sub OnSelectionChanged(sender As Object, e As SelectionChangedEventArgs)
+            'your code here
+            If e.RemovedItems.Count > 0 Then
+            End If
+        End Sub
 	{{endregion}}
 
-
->You should add a using statement to __Telerik.Windows__ namespace in order to be able to add the handler.
- {% endif %}
-
-You can see that with the code snippet above I check if there are any items being unselected (through the RemovedItems.Count). This ensures that the event will not be handled on the initial loading when a default item has been selected. 
+Checking if there are any items being unselected through the RemovedItems.Count ensures that the event will not be handled on the initial loading when a default item has been selected. 
         
 
 # See Also

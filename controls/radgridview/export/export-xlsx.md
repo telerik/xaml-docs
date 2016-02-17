@@ -12,6 +12,12 @@ position: 4
 
 As of __Q1 2015__ RadGridView exposes a new method – __ExportToXlsx__ which allows exporting to Xlsx format without the need to integrate RadGridView with RadSpreadProcessing.
 
+* [Export Default Styles](#export-default-styles)
+
+* [Events](#events)
+
+* [Disable the Export of a Particular Column](#disable-the-export-of-a-particular-column)
+
 
 >tip You can read more about the export events [here]({%slug gridview-export-events%}).
 
@@ -42,7 +48,7 @@ The method is overloaded:
 
 The following example shows how to use the method on a button click:
 
-#### [C#] Example 1: Usage of method ExportToXlsx
+#### __[C#] Example 1: Usage of Method ExportToXlsx__
 	private void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "xlsx";
@@ -70,7 +76,7 @@ The following example shows how to use the method on a button click:
 	}
 
 
-## ExportDefaultStyles
+## Export Default Styles
 
 >To export the Default Styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
@@ -83,7 +89,7 @@ __Figure 1__: Exporting with ExportDefaultStyles set to “false” (default)
 
 You can set the __ExportDefaultStyles value to “true”__ and see the result (Figure 2)
 
-#### [C#] Example 2: Configuring ExportDefaultStyles setting
+#### __[C#] Example 2: Configuring ExportDefaultStyles Setting__
 
 	gridViewExport.ExportToXlsx(stream,
 	    new GridViewDocumentExportOptions()
@@ -116,12 +122,12 @@ The event handler expects __GridViewElementExportedToDocumentEventArgs__ argumen
 * Element - the export Element
 * DataContext - the DataContext of the corresponding visual element.
 
-### Getting the column of the corresponding cell
+### Getting the Column of the Corresponding Cell
 
 When a cell is exported (header cell, cell, footer cell, group footer cells), the arguments of the ElementExportingToDocument event can be cast to GridViewCellExportingEventArgs. Thus, the column of the corresponding cell can be accessed. 
 
 The following example illustrates the approach:
-#### [C#] Example 3: Getting the column of the corresponding cell
+#### __[C#] Example 3: Getting the Column of the Corresponding Cell__
 	this.gridViewExport.ElementExportingToDocument += (s, e) =>
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -134,7 +140,7 @@ The following example illustrates the approach:
 	    }
 	};
 
-#### [VB.NET] Example 3: Getting the column of the corresponding cell
+#### [VB.NET] Example 3: Getting the Column of the Corresponding Cell
 	Me.gridViewExport.ElementExportingToDocument += Function(s, e) 
 	    If e.Element = ExportElement.Cell Then
 	        Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
@@ -143,6 +149,30 @@ The following example illustrates the approach:
 	            End If
 	    End If
 	End Function
+
+
+## Disable the Export of a Particular Column 
+
+As of __Q3 2015 SP1__,  __GridViewDocumentExportOptions__ expose a new property- __ExcludedColumns__. When a given column is added to this collection, it will not be exported.
+
+#### __[C#] Example 4: Disabling the export of a particular column__
+	var opt = new GridViewDocumentExportOptions()
+	{
+    	ShowColumnHeaders = true,
+	};
+	opt.ExcludedColumns.Add(grid.Columns[0]);
+
+	gridViewExport.ExportToXlsx(stream, opt);
+
+#### __[VB.NET] Example 4: Disabling the export of a particular column__
+
+	Dim opt = New GridViewDocumentExportOptions() With { _
+		Key .ShowColumnHeaders = True _
+	}
+	opt.ExcludedColumns.Add(grid.Columns(0))
+	
+	gridViewExport.ExportToXlsx(stream, opt)
+
 
 ## See Also
 

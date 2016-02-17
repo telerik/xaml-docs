@@ -16,46 +16,86 @@ This article provides a description and examples of how to customize RadDataForm
 
 >Please note that this functionality is introduced with Q1 2013.
 
-## 
 
 __Telerik.Windows.Controls.Data.DataForm.DataFormCommandProvider__ is a public class that exposes the “execute” and “can-execute” logic of all commands, utilized by RadDataForm. RadDataForm processes these commands according to its current provider. Here is the set of methods that DataFormCommandProvider exposes:“Execute logic” methods
 
+## Execute Logic Methods
+
 The methods listed below identify the logic that is executed when a certain command’s invocation takes place.
 
-#### __C#__
+#### __[C#] Example 1: The IExecuteLogicMethods__
 
 {{region raddataform-customize-commands_0}}
 
-	void MoveCurrentToFirst()
-	void MoveCurrentToLast()
-	void MoveCurrentToNext()
-	void MoveCurrentToPrevious()
-	void BeginEdit()
-	void CommitEdit()
-	void Delete()
-	void CancelEdit()
-	void AddNew()
+    public interface IExecuteLogicMethods
+    {
+        void MoveCurrentToFirst();
+        void MoveCurrentToLast();
+        void MoveCurrentToNext();
+        void MoveCurrentToPrevious();
+        void BeginEdit();
+        void CommitEdit();
+        void Delete();
+        void CancelEdit();
+        void AddNew();
+    }
 	{{endregion}}
 
-“Can-execute logic” methods
+#### __[VB.NET] Example 1: The IExecuteLogicMethods__
+
+{{region raddataform-customize-commands_6}}
+
+    Public Interface IExecuteLogicMethods
+        Sub MoveCurrentToFirst()
+        Sub MoveCurrentToLast()
+        Sub MoveCurrentToNext()
+        Sub MoveCurrentToPrevious()
+        Sub BeginEdit()
+        Sub CommitEdit()
+        Sub Delete()
+        Sub CancelEdit()
+        Sub AddNew()
+    End Interface
+	{{endregion}}
+
+## "Can-Execute Logic" Methods
 
 With the help of those methods you can identify whether a certain command can be executed or not.
 
-#### __C#__
+#### __[C#] Example 2: The ICanExecuteLogicMethods__
 
 {{region raddataform-customize-commands_1}}
 
-	bool CanMoveCurrentToFirstExecute()
-	bool CanMoveCurrentToLastExecute()
-	bool CanMoveCurrentToNextExecute()
-	bool CanMoveCurrentToPreviousExecute()
-	bool CanBeginEditExecute()
-	bool CanCommitEditExecute()
-	bool CanDeleteExecute()
-	bool CanCancelEditExecute()
-	bool CanAddNewExecute()
+    public interface ICanExecuteLogicMethods
+    {
+        bool CanMoveCurrentToFirstExecute();
+        bool CanMoveCurrentToLastExecute();
+        bool CanMoveCurrentToNextExecute();
+        bool CanMoveCurrentToPreviousExecute();
+        bool CanBeginEditExecute();
+        bool CanCommitEditExecute();
+        bool CanDeleteExecute();
+        bool CanCancelEditExecute();
+        bool CanAddNewExecute();
+    }
 	{{endregion}}
 
+#### __[VB.NET] Example 2: The ICanExecuteLogicMethods__
+
+{{region raddataform-customize-commands_7}}
+
+    Public Interface ICanExecuteLogicMethods
+        Function CanMoveCurrentToFirstExecute() As Boolean
+        Function CanMoveCurrentToLastExecute() As Boolean
+        Function CanMoveCurrentToNextExecute() As Boolean
+        Function CanMoveCurrentToPreviousExecute() As Boolean
+        Function CanBeginEditExecute() As Boolean
+        Function CanCommitEditExecute() As Boolean
+        Function CanDeleteExecute() As Boolean
+        Function CanCancelEditExecute() As Boolean
+        Function CanAddNewExecute() As Boolean
+    End Interface
+	{{endregion}}
 
 
 A runnable demo that utilizes the code from this article can be found on {% if site.site_name == 'Silverlight' %}[this online demo](http://demos.telerik.com/silverlight/#DataForm/CustomCommandsProvider){% endif %}{% if site.site_name == 'WPF' %}[the DataForm's CustomCommandsProvider demo](http://demos.telerik.com/wpf/){% endif %}.
@@ -63,9 +103,9 @@ A runnable demo that utilizes the code from this article can be found on {% if s
 
 ## Designing a custom CommandProvider
 
-The first step is to create your own class that inherits from DataFormCommandProvider:
+The first step is to create your own class that inherits from **DataFormCommandProvider**:
 
-#### __C#__
+#### __[C#] Example 3: Defining a Custom CommandProvider__
 
 {{region raddataform-customize-commands_2}}
 
@@ -85,15 +125,32 @@ The first step is to create your own class that inherits from DataFormCommandPro
 	
 	{{endregion}}
 
+#### __[VB.NET] Example 3: Defining a Custom CommandProvider__
+
+{{region raddataform-customize-commands_8}}
+
+    Public Class CustomCommandProvider
+        Inherits DataFormCommandProvider
+        Public Sub New()
+            MyBase.New(Nothing)
+        End Sub
+
+        Public Sub New(dataForm As RadDataForm)
+            MyBase.New(dataForm)
+            Me.DataForm = dataForm
+        End Sub
+        '. . .
+    End Class
+	{{endregion}}
 
 
-Those commands, which logic is up to get customized, should have their corresponding methods overridden. In the following example we will customize: MoveCurrentToNext, MoveCurrentToPrevious, BeginEdit and CancelEdit.
+Those commands, which logic is up to get customized, should have their corresponding methods overridden. In the following example we will customize: **MoveCurrentToNext**, **MoveCurrentToPrevious**, **BeginEdit** and **CancelEdit**.
 
 ## MoveCurrentToNext and MoveCurrentToPrevious
 
 We aim at changing their execution logic, in order to start editing the item, as soon as it was set as a current one and bypass the logic in the same place. Here are the overridden methods:
 
-#### __C#__
+#### __[C#] Example 4: Customizing MoveCurrentToNext and MoveCurrentToPrevious__
 
 {{region raddataform-customize-commands_3}}
 
@@ -117,13 +174,30 @@ We aim at changing their execution logic, in order to start editing the item, as
 	
 	{{endregion}}
 
+#### __[VB.NET] Example 4: Customizing MoveCurrentToNext and MoveCurrentToPrevious__
 
+{{region raddataform-customize-commands_9}}
+
+    Protected Overrides Sub MoveCurrentToNext()
+        If Me.DataForm IsNot Nothing Then
+            Me.DataForm.MoveCurrentToNext()
+            Me.DataForm.BeginEdit()
+        End If
+    End Sub
+
+    Protected Overrides Sub MoveCurrentToPrevious()
+        If Me.DataForm IsNot Nothing Then
+            Me.DataForm.MoveCurrentToPrevious()
+            Me.DataForm.BeginEdit()
+        End If
+    End Sub
+	{{endregion}}
 
 ## CommitEdit and CancelEdit
 
 A common requirement for data form is to add __confirmation message boxes when CRUD operations are executed__. Here we will do a similar thing with the CommitEdit/CancelEdit commands.
 
-#### __C#__
+#### __[C#] Example 5: Customizing CommitEdit and CancelEdit__
 
 {{region raddataform-customize-commands_4}}
 
@@ -153,29 +227,57 @@ A common requirement for data form is to add __confirmation message boxes when C
 	
 	{{endregion}}
 
+#### __[VB.NET] Example 5: Customizing CommitEdit and CancelEdit__
 
+{{region raddataform-customize-commands_10}}
+
+    Protected Overrides Sub CommitEdit()
+        Dim result As MessageBoxResult = MessageBox.Show("Commit changes for the current edit item?", "CommitEdit confirmation", MessageBoxButton.OKCancel)
+        If result = MessageBoxResult.OK Then
+            If Me.DataForm IsNot Nothing AndAlso Me.DataForm.ValidateItem() Then
+                Me.DataForm.CommitEdit()
+            End If
+        End If
+    End Sub
+
+    Protected Overrides Sub CancelEdit()
+        Dim result As MessageBoxResult = MessageBox.Show("Cancel changes for the current edit item?", "CancelEdit confirmation", MessageBoxButton.OKCancel)
+        If result = MessageBoxResult.OK Then
+            If Me.DataForm IsNot Nothing Then
+                Me.DataForm.CancelEdit()
+            End If
+        End If
+    End Sub
+	{{endregion}}
 
 The last thing to be done is to set CommandProvider Property of the RadDataForm to be the newly-created CustomKeyboardCommandProvider class:
         
 
-#### __XAML__
+#### __[XAML] Example 6: Set the CommandProvider Property__
 
-{{region raddataform-customize-commands_10}}
+{{region raddataform-customize-commands_11}}
 
-	 <Window.Resources>
-	    <my:CustomCommandProvider x:Key="CustomProvider"/>
-	</Window.Resources>
-	
-	<telerik:RadDataForm x:Name="RadDataForm1"
-	                     ItemsSource="{Binding Employees}" 
-	                     CommandProvider="{StaticResource CustomProvider}"/>
+    <Grid.Resources>
+        <my:CustomCommandProvider x:Key="CustomProvider"/>
+    </Grid.Resources>
+
+    <telerik:RadDataForm x:Name="RadDataForm1"
+                 ItemsSource="{Binding Employees}" 
+                 CommandProvider="{StaticResource CustomProvider}"/>
 	{{endregion}}
 
 
 
-#### __C#__
+#### __[C#] Example 6: Set the CommandProvider Property__
 
 {{region raddataform-customize-commands_5}}
 
 	this.RadDataForm1.CommandProvider = new CustomCommandProvider(this.RadDataForm1);
+	{{endregion}}
+
+#### __[VB.NET] Example 6: Set the CommandProvider Property__
+
+{{region raddataform-customize-commands_12}}
+
+	Me.RadDataForm1.CommandProvider = New CustomCommandProvider(Me.RadDataForm1)
 	{{endregion}}

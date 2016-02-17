@@ -20,11 +20,11 @@ This article shows how to conditionally load different __ReadOnly/Edit DataTempl
 For this tutorial we will extend our example from the [Getting Started]({%slug raddataform-getting-started%}) documentation article by defining custom edit templates in XAML (__Example 1__).  
 		
 
-#### __[XAML] Example 1: In the EditTemplateSelector property of RadDataForm we define custom DataTemplateSelector templates.__
+#### __[XAML] Example 1: Defining Custom DataTemplateSelector Templates in the EditTemplateSelector Property of RadDataForm__
 
 {{region raddataform-datatemplate-selectors_0}}
 
-			<<Grid>
+			<Grid>
 				<Grid.Resources>
 					<DataTemplate x:Key="MyTemplate">
 						<Grid>
@@ -82,62 +82,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 {% if site.site_name == 'WPF' %}
 
-#### __[C#] Example 2:__
-
-{{region raddataform-datatemplate-selectors_0}}
-
-		public class EmployeesEditTemplateSelector : Telerik.Windows.Controls.DataTemplateSelector
-		{
-			public override DataTemplate SelectTemplate(object item, DependencyObject container)
-			{
-				Employee employee = item as Employee;
-				if (employee == null)
-				{
-					return null;
-				}
-				else if (employee.Salary > 2500)
-				{
-					return this.BigSalaryTemplate;
-				}
-				else
-				{
-					return this.SmallSalaryTemplate;
-				}
-			}
-	
-			public DataTemplate BigSalaryTemplate { get; set; }
-			public DataTemplate SmallSalaryTemplate { get; set; }
-		}
-	{{endregion}}
-
-{% endif %}{% if site.site_name == 'WPF' %}
-
-#### __[VB.NET] Example 2:__
-
-{{region raddataform-datatemplate-selectors_0}}
-
-	Public Class EmployeesEditTemplateSelector
-			Inherits Telerik.Windows.Controls.DataTemplateSelector
-	
-			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
-				Dim employee As Employee = TryCast(item, Employee)
-				If employee Is Nothing Then
-					Return Nothing
-				ElseIf employee.Salary > 2500 Then
-					Return Me.BigSalaryTemplate
-				Else
-					Return Me.SmallSalaryTemplate
-				End If
-			End Function
-	
-			Public Property BigSalaryTemplate() As DataTemplate
-			Public Property SmallSalaryTemplate() As DataTemplate
-		End Class
-	{{endregion}}
-
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
-#### __[C#] Example 2:__
+#### __[C#] Example 2: Defining a DataTemplateSelector__
 
 {{region raddataform-datatemplate-selectors_1}}
 
@@ -165,14 +110,65 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 		}
 	{{endregion}}
 
+#### __[VB.NET] Example 2: Defining a DataTemplateSelector__
+
+{{region raddataform-datatemplate-selectors_3}}
+
+	Public Class EmployeesEditTemplateSelector
+			Inherits System.Windows.Controls.DataTemplateSelector
+	
+			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+				Dim employee As Employee = TryCast(item, Employee)
+				If employee Is Nothing Then
+					Return Nothing
+				ElseIf employee.Salary > 2500 Then
+					Return Me.BigSalaryTemplate
+				Else
+					Return Me.SmallSalaryTemplate
+				End If
+			End Function
+	
+			Public Property BigSalaryTemplate() As DataTemplate
+			Public Property SmallSalaryTemplate() As DataTemplate
+		End Class
+	{{endregion}}
+
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### __[VB.NET] Example 2:__
+#### __[C#] Example 2: Defining a DataTemplateSelector__
 
-{{region raddataform-datatemplate-selectors_1}}
+{{region raddataform-datatemplate-selectors_2}}
+
+		public class EmployeesEditTemplateSelector : Telerik.Windows.Controls.DataTemplateSelector
+		{
+			public override DataTemplate SelectTemplate(object item, DependencyObject container)
+			{
+				Employee employee = item as Employee;
+				if (employee == null)
+				{
+					return null;
+				}
+				else if (employee.Salary > 2500)
+				{
+					return this.BigSalaryTemplate;
+				}
+				else
+				{
+					return this.SmallSalaryTemplate;
+				}
+			}
+	
+			public DataTemplate BigSalaryTemplate { get; set; }
+			public DataTemplate SmallSalaryTemplate { get; set; }
+		}
+	{{endregion}}
+
+#### __[VB.NET] Example 2: Defining a DataTemplateSelector__
+
+{{region raddataform-datatemplate-selectors_4}}
 	
 		Public Class EmployeesEditTemplateSelector
-			Inherits System.Windows.Controls.DataTemplateSelector
+			Inherits Telerik.Windows.Controls.DataTemplateSelector
 	
 			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
 				Dim employee As Employee = TryCast(item, Employee)
@@ -192,10 +188,10 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 {% endif %}
 
-As a result when __RadDataForm__ is in edit mode the background color of the *"Salary"* __DataFormDataField__ will change to red (__Figure 1__), when the employee's salary is greater than 2500 or blue when it is less.
+As a result when __RadDataForm__ is in edit mode the background color of the *Salary* __DataFormDataField__ will change to red (__Figure 1__), when the employee's salary is greater than 2500 or blue when it is less.
 		
 
-__Figure 1:__ Displays the red template as the employee's salary is greater than 2500.
+__Figure 1:__ Displays the Red Template as the Employee's Salary Is Greater than 2500.
 
 ![raddataform-templateselector](images/raddataform-templateselector.png)
 

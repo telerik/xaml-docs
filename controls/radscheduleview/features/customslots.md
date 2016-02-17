@@ -157,6 +157,8 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 	</local:SpecialSlotStyleSelector>
 {{endregion}}
 
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) please, notice that the Style that targets the __HighlightItem__ should be based on the default HighlightItemStyle.
+
 * Finally, bind them to __SpecialSlotsSource__ and __SpecialSlotsStyleSelector__ properties:
 
 #### __XAML__

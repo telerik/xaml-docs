@@ -283,8 +283,8 @@ Now, we need to attach Drag-Drop event handlers:
 	DragDropManager.AddDragDropCompletedHandler(ApplicationList, New DragDropCompletedEventHandler(AddressOf OnDragDropCompleted))
 	DragDropManager.AddDragDropCompletedHandler(MyAppList, New DragDropCompletedEventHandler(AddressOf OnDragDropCompleted))
 	
-	DragDropManager.AddDropHandler(ApplicationList, New DropEventHandler(AddressOf OnDrop))
-	DragDropManager.AddDropHandler(MyAppList, New DropEventHandler(AddressOf OnDrop))	
+	DragDropManager.AddDropHandler(ApplicationList, New DragEventHandler(AddressOf OnDrop))
+	DragDropManager.AddDropHandler(MyAppList, New DragEventHandler(AddressOf OnDrop))	
 {{endregion}}
 
 Then on DragInitialize we define the data that will be dragged as well as the visual representation. We also set DragDropEffects to all to allow drop on all scenarios.

@@ -10,19 +10,19 @@ position: 4
 
 # GroupStyleSelector
 
-This article will show you how to style conditionally RadPropertyGrid's group rows applying __GroupStyleSelector__.
+This article will show you how to style conditionally RadPropertyGrid's group rows applying __GroupStyleSelector__. <Comment: Your original sentence is hard to understand. Can you use this rewrite? "This article will show you how to use the __GroupStyleSelector__ to apply styles to a group of RadPropertyGrid's rows when a particular condition is met."> 
 		
 >tipLearn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
 
 
-Assume we have a RadPropertyGrid bound to an Employee object. The initial setup can be reviewed in the [Styling Groups](%slug radpropertygrid-groupstyle%) article. At first the appearance of the control looks like this:
+Assume we have a RadPropertyGrid bound to an Employee object. You can view the initial setup in the [Styling Groups](%slug radpropertygrid-groupstyle%) article. At first, the appearance of the control looks like this:
 
 ![](images/RadPropertyGrid_groupstyle1.png)
 
 
-What we would like to achieve is to apply one style to the Group Name row and different style to the other groups. In order to achieve the desired behavior, you need to follow these steps:
+What we would like to achieve is to apply one style to the Group Name row and a different style to the other groups. In order to achieve the desired behavior, you need to follow these steps:
 
-__1.__ Create a new class that inherits the __StyleSelector__ class. Override its __SelectStyle__ method. Based on your conditions - you return the proper Style that will be applied to the framework element.
+__1.__ Create a new class that inherits the __StyleSelector__ class. Override its __SelectStyle__ method. Based on your conditions, you return the proper style that will be applied to the framework element. <Comment: I have not seen bolding of the numbers in a numbered list in other Telerik documentation. I suggest removing it for items 1, 2 and 3 in this list.>
 
 	 class GroupStyleSelector : StyleSelector
     {
@@ -58,9 +58,9 @@ In this specific scenario we have three different styles that could be applied:
 
 - TitleGroupStyle 
 
-Depending on the underlying data you can select which style to apply.
+Depending on the underlying data, you can select which style to apply.
 
-__2.__ In the XAML file define the style selector as a resource and set the properties for the different styles:
+__2.__ In the XAML file, define the style selector as a resource and set the properties for the different styles:
 
 	 <my:GroupStyleSelector x:Key="groupStyleSelector">
             <my:GroupStyleSelector.NameGroupStyle>
@@ -82,7 +82,7 @@ __2.__ In the XAML file define the style selector as a resource and set the prop
 
 >The __"my:"__ prefix before __GroupStyleSelector__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
-If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme:
+If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
 
 #### __XAML__
 
@@ -94,7 +94,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 	
 {{endregion}}
 
-__3.__ Finally, set the GroupStyleSelector property of the data column which represents the GroupStyleSelector field:
+__3.__ Finally, set the GroupStyleSelector property of the data column that represents the GroupStyleSelector field:
 
 
 	    <telerik:RadPropertyGrid x:Name="PropertyGrid" 

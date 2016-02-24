@@ -5,7 +5,7 @@ description: Latest Version Acquirer Tool
 slug: radcontrols-vs-extensions-project-latest-version-acquirer
 tags: latest,version,acquirer,tool
 published: True
-position: 9
+position: 6
 ---
 
 # Latest Version Acquirer Tool

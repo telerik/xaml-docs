@@ -5,7 +5,7 @@ description: Convert Project
 slug: radcontrols-for-wpf-vs-extensions-project-convert
 tags: project,configuration
 published: True
-position: 3
+position: 2
 site_name: WPF
 ---
 

@@ -5,7 +5,7 @@ description: Automatic Dependency resolving
 slug: radcontrols-for-wpf-vs-extensions-automatic-resolving
 tags: automatic,dependency,resolving
 published: True
-position: 6
+position: 10
 site_name: WPF
 ---
 

@@ -5,7 +5,7 @@ description: Create project
 slug: radcontrols-for-wpf-vs-extensions-project-creation
 tags: project,creation
 published: True
-position: 3
+position: 1
 site_name: WPF
 ---
 

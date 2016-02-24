@@ -17,7 +17,7 @@ With the new Visual Studio Extensions for WPF you can quickly create an applicat
 
 For convenience the same project templates could be found under the __Visual C# -> Windows__ and __Visual Basic -> Windows__ nodes. 
 
-After you click the __OK__ button, you get the Project Configuration Wizard, provided by the Telerik UI for WPF Visual Studio Extensions. The wizard detects all the installed __Use Implicit Styles__ distributions of UI for WPF and lists them in a combobox. You can select a distribution which you want to be applied to your project. You can select what type of project to be created from the Choose project type combobox: Standard, Word-Inspired, Excel-Inspired or Outlook-Inspired. You can access the Project Configuration Wizard through the Telerik menu when you need to configure your Telerik WPF application or you need to convert an existing WPF application to a Telerik WPF application. These depend on the active project in the Visual Studio Solution Explorer:
+After you click the __OK__ button, you get the Create New Project Wizard, provided by the Telerik UI for WPF Visual Studio Extensions. The wizard detects all the installed __Use Implicit Styles__ version of UI for WPF and lists them in a combobox. You can select a version which you want to be applied to your project. You can select what type of project to be created: Standard, Word-Inspired, Excel-Inspired or Outlook-Inspired. You can access the Create New Project Wizard through the Telerik menu when you need to create a new Telerik WPF application:
 
 The Create New Project Wizard lets you:
 

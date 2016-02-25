@@ -10,7 +10,7 @@ position: 3
 
 # Alternating Rows
 
-__RadGridView__ allows you to have alternating rows. In order to define the pattern of alternation you have to set the __AlternationCount__ property. For example if you want to alternate each second row, you have to set its value to __2__. Setting it to __3__ makes each third row to be alternated.
+__RadGridView__ allows you to have alternating rows. In order to define the pattern of alternation, you have to set the __AlternationCount__ property. For example, if you want to alternate each second row, you have to set its value to __2__. Setting the __AlternationCount__ property to __3__ shows an alternateing color for each third row. <Comment: Please check that my rewording did  not create a technical error.>
 
 #### __[XAML] Example 1: Setting the AlternationCount Property:__
 
@@ -26,9 +26,9 @@ __RadGridView__ allows you to have alternating rows. In order to define the patt
 
 In order to style the alternating rows, you can specify the __AlternateRowStyle__ and/or the __AlternateRowBackground__ properties.
 
->tipTo learn more about styling the rows and the alternating rows you can read [here]({%slug gridview-styling-a-row%}).
+>tipTo learn more about styling the rows and the alternating rows, you can read [here]({%slug gridview-styling-a-row%}).
 
-Here is an example of __RadGridView__ with __AlternationCount__ set to __3__ and __AlternateRowBackground__ color set to __Coral__.
+__Example 2__ shows __RadGridView__ with __AlternationCount__ set to __3__ and __AlternateRowBackground__ color set to __Coral__.
 
 #### __[XAML] Example 2: Setting the AlternateRowBackground Property:__
 

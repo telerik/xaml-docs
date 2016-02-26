@@ -10,33 +10,26 @@ position: 2
 
 # Getting Started
 
+This tutorial will walk you through the creation of a sample application that contains __RadBusyIndicator__. 
 
-The __RadBusyIndicator__ is a control which gives you the ability to notify the user that there is an ongoing process in the application. This tutorial will help you get started with the __RadBusyIndicator__ basics. 
+* [Assembly References](#assembly-references)
+* [Adding RadBusyIndicator to the Project](#adding-radbusyindicator-to-the-project)
+* [Enabling RadBusyIndicator](#enabling-radbusyindicator)
+* [Progress Determination, Custom BusyContent, Delaying of display](#progress-determination-custom-busycontent-delaying-of-display)
 
-* [Create a RadBusyIndicator control](#create-a-radbusyindicator-control)
+## Assembly References
 
-* [Enable the RadBusyIndicator](#enable-the-radbusyindicator)
+In order to use __RadBusyIndicator__ in your projects, you have to add references to the following assembly:	
 
-* [Styles and Templates](#styles-and-templates)
+* __Telerik.Windows.Controls__
 
-* [Working with the RadBusyIndicator](#working-with-the-radbusyindicator-control)
+## Adding RadBusyIndicator to the Project
 
-## Create a RadBusyIndicator control
+Make sure the required assembly reference is added to the project before you proceed with adding __RadBusyIndicator__ to your project.
 
-In order to add a __RadBusyIndicator__ to your application, you have to simply create an instance of it in your XAML. 
+You can add __RadBusyIndicator__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
->As the __RadBusyIndicator__ is located in the __Telerik.Windows.Controls__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add references to the following assembly to your project:
->* __Telerik.Windows.Controls__
-
-You also have to declare the following namespace in your __UserControl__:
-#### __[XAML] Namespace declaration__
-{{region radbusyindicator-getting-started_0}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
-
-Here is a sample code:
-
-#### __[XAML] RadBusyIndicator declaration__
+#### __[XAML] Example 1: Adding RadBusyIndicator in XAML__
 
 {{region radbusyindicator-getting-started_1}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator">
@@ -44,43 +37,81 @@ Here is a sample code:
 	</telerik:RadBusyIndicator>
 {{endregion}}
 
-You can also create __RadBusyIndicator__ in code-behind:
+In order to use __RadBusyIndicator__ in XAML, you have to add the namespace declaration shown in __Example 2__.
 
-#### __[C#] RadBusyIndicator declaration from code-behind__
+#### __[XAML] Example 2: Declaring Telerik Namespace__
 
 {{region radbusyindicator-getting-started_2}}
-	RadBusyIndicator busyIndicator = new RadBusyIndicator();
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 {{endregion}}
 
-#### __[VB] RadBusyIndicator declaration from code-behind__
+When you are using __RadBusyIndicator__, you always have to set its __Content__ property. This will be the content on top of which you want to visualize __RadBusyIndicator__. __Example 3__ demonstrates __RadBusyIndicator__ with some custom __Content__ placed inside it:
+
+#### __[XAML] Example 3: Adding Content__
 
 {{region radbusyindicator-getting-started_3}}
-	Dim busyIndicator As New RadBusyIndicator()
+     <telerik:RadBusyIndicator x:Name="radBusyIndicator">
+        <Grid>
+            <telerik:RadListBox>
+                <telerik:RadListBox>
+                    <telerik:RadListBoxItem Content="Australia" />
+                    <telerik:RadListBoxItem Content="Brazil" />
+                    <telerik:RadListBoxItem Content="Canada" />
+                    <telerik:RadListBoxItem Content="China" />
+                    <telerik:RadListBoxItem Content="England" />
+                    <telerik:RadListBoxItem Content="Germany" />
+                </telerik:RadListBox>
+            </telerik:RadListBox>
+        </Grid>
+    </telerik:RadBusyIndicator>
 {{endregion}}
 
->When you are using the __RadBusyIndicator__ control you always have to set its __Content__ property. This will be the content on top of which you want to visualize the __RadBusyIndicator__ control.
+## Enabling RadBusyIndicator
 
-## Enable the RadBusyIndicator
+To activate __RadBusyIndicator__ you have to set its __IsBusy__ boolean property to __True__. It is a Dependency property that you can data bind in any way that suits your custom logic.
 
-In order to display the __RadBusyIndicator__ in your application you will have to use its __IsBusy__ property. When set to __True__ the __RadBusyIndicator__ becomes visible.
+>__RadBusyIndicator__ will be visible only when the __IsBusy__ property is set to __True__.
 
-## Styles and Templates
+__Example 4__ presents __RadBusyIndicator__ with its __IsBusy__ property set to __True__:
 
-Take a look at the [Styles and Templates]({%slug radbusyindicator-styles-and-templates-overview%}) section which is entirely dedicated to styling and templating the __RadBusyIndicator__ control.
+#### __[XAML] Example 4: Adding Content__
 
-##  Working with the RadBusyIndicator control
+{{region radbusyindicator-getting-started_4}}
+     <telerik:RadBusyIndicator x:Name="radBusyIndicator" IsBusy="True">
+        <Grid>
+            <telerik:RadListBox>
+                <telerik:RadListBox>
+                    <telerik:RadListBoxItem Content="Australia" />
+                    <telerik:RadListBoxItem Content="Brazil" />
+                    <telerik:RadListBoxItem Content="Canada" />
+                    <telerik:RadListBoxItem Content="China" />
+                    <telerik:RadListBoxItem Content="England" />
+                    <telerik:RadListBoxItem Content="Germany" />
+                </telerik:RadListBox>
+            </telerik:RadListBox>
+        </Grid>
+    </telerik:RadBusyIndicator>
+{{endregion}}
 
-In order to learn how to use the __RadBusyIndicator__ and what capabilities it holds, read the various topics that describe its features. Learn more about the:
+If you run the application you will see __RadBusyIndicator__ placed on top of its __Content__.
 
-* [Progress Determination]({%slug radbusyindicator-features-progress-determination%})
+#### __Figure1: This figure is generated by the code in Example 4 RadBusyIndicator__
 
-* [Report changing progress values]({%slug radbusyindicator-features-report-progress-value%})
+![](images/RadBusyIndicator_GettingStarted_1.png)
 
-* [Define custom Busy Content]({%slug radbusyindicator-features-custom-busy-content%})
+## Progress Determination, Custom BusyContent, Delaying of Display
 
-* [Delay the RadBusyIndicator's display]({%slug radbusyindicator-features-delayed-display%})
+### Progress Determination
 
-* [Use the RadBusyindicator when calling service methods]({%slug radbusyindicator-how-to-integrate-with-services-and-radwindow%})
+__RadBusyIndicator__  supports two main modes of execution that could be used to visualize the progress of the control - determined and indetermined. If you need a determined __RadBusyIndicator__ you have to set the value of the __IsIndeterminated__ property to __False__. Please, check [this]({%slug radbusyindicator-features-progress-determination%}) article for some information concerning the progress determination of __RadBusyIndicator__.
+
+### Custom Busy Content
+
+__RadBusyIndicator__ exposes a __BusyContentTemplate__ property of type DataTemplate. Through this template you can customize what is shown in RadBusyIndicator's content while the indicator is active. For more information, look at [this article]({%slug radbusyindicator-features-custom-busy-content%}).
+
+### Delaying of display
+
+You can notify the users about an ongoing process with a specific delay when __RadBusyIndicator__ is used. By changing the __DisplayAfter__ property to a certain __TimeSpan__, __RadBusyIndicator__ will be shown after the corresponding amount of time elapses - the default value of this delay is 100 milliseconds. For detailed information about using a delay with __RadBusyIndicator__, look at [this article]({%slug radbusyindicator-features-delayed-display%}).
 
 # See Also
 

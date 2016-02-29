@@ -70,6 +70,7 @@ GridViewFilterDistinctValueStringEmpty | [empty]
 GridViewGroupPanelText | Drag a column header and drop it here to group by that column
 GridViewGroupPanelTopText | Group Header
 GridViewGroupPanelTopTextGrouped | Grouped by:
+GridViewSearchPanelTopText | Full Text Search
 
 # See Also
 

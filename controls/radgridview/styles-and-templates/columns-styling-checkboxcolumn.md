@@ -36,64 +36,8 @@ For modifying the visual appearance of the cell in __view mode__, the __ControlT
 #### __[XAML] Example 1: Defining the ControlTemplate of GridViewCheckBox__
 
 	<ControlTemplate x:Key="GridViewCheckBoxTemplate" TargetType="grid:GridViewCheckBox">
-            <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Width="13" Height="13">
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroup x:Name="CheckStates">
-                        <VisualState x:Name="Checked">
-                            <Storyboard>
-                                <ObjectAnimationUsingKeyFrames BeginTime="0" Duration="0" Storyboard.TargetName="CheckedPath" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                    <DiscreteObjectKeyFrame KeyTime="0">
-                                        <DiscreteObjectKeyFrame.Value>
-                                            <Visibility>Visible</Visibility>
-                                        </DiscreteObjectKeyFrame.Value>
-                                    </DiscreteObjectKeyFrame>
-                                </ObjectAnimationUsingKeyFrames>
-                            </Storyboard>
-                        </VisualState>
-                        <VisualState x:Name="Unchecked"/>
-                        <VisualState x:Name="Indeterminate">
-                            <Storyboard>
-                                <ObjectAnimationUsingKeyFrames BeginTime="0" Duration="0" Storyboard.TargetName="IndeterminatePath" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                    <DiscreteObjectKeyFrame KeyTime="0">
-                                        <DiscreteObjectKeyFrame.Value>
-                                            <Visibility>Visible</Visibility>
-                                        </DiscreteObjectKeyFrame.Value>
-                                    </DiscreteObjectKeyFrame>
-                                </ObjectAnimationUsingKeyFrames>
-                            </Storyboard>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateManager.VisualStateGroups>
-                <Border BorderBrush="#FF989898" BorderThickness="1 1 1 1">
-                    <Border BorderBrush="#FFEEEEEE" BorderThickness="1 1 1 1">
-                        <Border BorderThickness="1 1 1 1" Background="#FFE0E0E0" BorderBrush="#FFB9B9B9">
-                            <Grid Margin="0" Background="Blue">
-                                <Path x:Name="IndeterminatePath"
-                                    Visibility="Collapsed"
-                                    Stretch="Fill"
-                                    Stroke="#FF8D8D8D"
-                                    StrokeThickness="1.5"
-                                    Data="M14.708333,144.5 L20.667,144.5"
-                                    Width="7"
-                                    Height="7"
-                                    HorizontalAlignment="Center"
-                                    VerticalAlignment="Center"
-                                    Margin="0"/>
-                                <Path x:Name="CheckedPath"
-                                    Visibility="Collapsed"
-                                    Stretch="Fill"
-                                    Stroke="#FF8D8D8D"
-                                    Data="M32.376187,77.162509 L35.056467,80.095277 40.075451,70.02144"
-                                    StrokeThickness="1.5"
-                                    Margin="0"
-                                    HorizontalAlignment="Center"
-                                    VerticalAlignment="Center"/>
-                            </Grid>
-                        </Border>
-                    </Border>
-                </Border>
-            </Grid>
-        </ControlTemplate>
+            ...
+    </ControlTemplate>
 
 
 
@@ -116,176 +60,8 @@ In order to alter the appearance of the __editor__ of __GridViewCheckBoxColumn__
 #### __[XAML] Example 3: Defining the ControlTemplate of CheckBox__
 
 	<ControlTemplate TargetType="CheckBox" x:Key="CheckBoxTemplate">
-                    <Grid Background="Yellow">
-                        <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
-                                <VisualState x:Name="MouseOver">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder" Storyboard.TargetProperty="BorderBrush">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxOuterBorder_MouseOver}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="InnerBorder" Storyboard.TargetProperty="BorderBrush">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxInnerBorder_MouseOver}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="InnerBorder" Storyboard.TargetProperty="Background">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxInnerBackground_MouseOver}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckIcon" Storyboard.TargetProperty="Stroke">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxTickStroke_MouseOver}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="IndeterminateIcon" Storyboard.TargetProperty="Stroke">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxTickStroke_MouseOver}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="Pressed">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="IntermediateBorder" Storyboard.TargetProperty="BorderBrush">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxIntermediateBorder_Pressed}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder" Storyboard.TargetProperty="BorderBrush">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxOuterBorder_Pressed}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="InnerBorder" Storyboard.TargetProperty="BorderBrush">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxInnerBorder_Pressed}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="InnerBorder" Storyboard.TargetProperty="Background">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxInnerBackground_Pressed}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckIcon" Storyboard.TargetProperty="Stroke">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxTickStroke_Pressed}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="IndeterminateIcon" Storyboard.TargetProperty="Stroke">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxTickStroke_Pressed}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="Disabled">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="IntermediateBorder" Storyboard.TargetProperty="BorderBrush">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxIntermediateBorder_Disabled}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder" Storyboard.TargetProperty="BorderBrush">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxOuterBorder_Disabled}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder" Storyboard.TargetProperty="Background">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxOuterBackground_Disabled}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="InnerBorder" Storyboard.TargetProperty="BorderBrush">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxInnerBorder_Disabled}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="InnerBorder" Storyboard.TargetProperty="Background">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxInnerBackground_Disabled}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <DoubleAnimation Duration="0" Storyboard.TargetName="ContentItem" Storyboard.TargetProperty="Opacity" To="0.5"/>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckIcon" Storyboard.TargetProperty="Stroke">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxTickStroke_Disabled}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="IndeterminateIcon" Storyboard.TargetProperty="Stroke">
-                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxTickStroke_Disabled}"/>
-                                        </ObjectAnimationUsingKeyFrames>
-                                    </Storyboard>
-                                </VisualState>
-                            </VisualStateGroup>
-                            <VisualStateGroup x:Name="CheckStates">
-                                <VisualState x:Name="Unchecked"/>
-                                <VisualState x:Name="Checked">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckIcon" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0">
-                                                <DiscreteObjectKeyFrame.Value>
-                                                    <Visibility>Visible</Visibility>
-                                                </DiscreteObjectKeyFrame.Value>
-                                            </DiscreteObjectKeyFrame>
-                                        </ObjectAnimationUsingKeyFrames>
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="Indeterminate">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="IndeterminateIcon" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0">
-                                                <DiscreteObjectKeyFrame.Value>
-                                                    <Visibility>Visible</Visibility>
-                                                </DiscreteObjectKeyFrame.Value>
-                                            </DiscreteObjectKeyFrame>
-                                        </ObjectAnimationUsingKeyFrames>
-                                    </Storyboard>
-                                </VisualState>
-                            </VisualStateGroup>
-                            <VisualStateGroup x:Name="FocusStates">
-                                <VisualState x:Name="Focused">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusBorder" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0">
-                                                <DiscreteObjectKeyFrame.Value>
-                                                    <Visibility>Visible</Visibility>
-                                                </DiscreteObjectKeyFrame.Value>
-                                            </DiscreteObjectKeyFrame>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="OuterBorder" Storyboard.TargetProperty="Visibility">
-                                            <DiscreteObjectKeyFrame KeyTime="0">
-                                                <DiscreteObjectKeyFrame.Value>
-                                                    <Visibility>Collapsed</Visibility>
-                                                </DiscreteObjectKeyFrame.Value>
-                                            </DiscreteObjectKeyFrame>
-                                        </ObjectAnimationUsingKeyFrames>
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="Unfocused"/>
-                            </VisualStateGroup>
-                        </VisualStateManager.VisualStateGroups>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid Width="15" Height="15" HorizontalAlignment="Left" VerticalAlignment="Center" >
-                            <Border x:Name="FocusBorder"
-                                    Width="13"
-                                    Height="13"
-                                    Visibility="Collapsed"
-                                    BorderThickness="{TemplateBinding BorderThickness}"
-                                    BorderBrush="{StaticResource CheckBoxOuterBorder_Focused}"
-                                    Background="{StaticResource CheckBoxOuterBackground_Focused}"/>
-                            <Border x:Name="OuterBorder" Width="13" Height="13" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}"/>
-                            <Border x:Name="IntermediateBorder"
-                                    Width="11"
-                                    Height="11"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Center"
-                                    BorderThickness="1"
-                                    BorderBrush="{TemplateBinding Background}">
-                                <Border x:Name="InnerBorder" BorderThickness="1" BorderBrush="{StaticResource CheckBoxInnerBorder_Normal}" Background="{StaticResource CheckBoxInnerBackground_Normal}"/>
-                            </Border>
-                            <Path x:Name="CheckIcon"
-                                    FlowDirection="LeftToRight"
-                                    Visibility="Collapsed"
-                                    Width="9"
-                                    Height="9"
-                                    Stretch="None"
-                                    StrokeThickness="1.5"
-                                    Stroke="{StaticResource CheckBoxTickStroke_Normal}"
-                                    Data="M1.5,6 L3.5,7.5 L7,2"/>
-                            <Path x:Name="IndeterminateIcon"
-                                    FlowDirection="LeftToRight"
-                                    Visibility="Collapsed"
-                                    Width="9"
-                                    Height="9"
-                                    Stretch="None"
-                                    StrokeThickness="1.5"
-                                    Stroke="{StaticResource CheckBoxTickStroke_Normal}"
-                                    Data="M2,4 L 7,4"/>
-                        </Grid>
-                        <ContentPresenter x:Name="ContentItem"
-                                Grid.Column="1"
-                                Margin="{TemplateBinding Padding}"
-                                Content="{TemplateBinding Content}"
-                                ContentTemplate="{TemplateBinding ContentTemplate}"
-                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                RecognizesAccessKey="True"/>
-                    </Grid>
-                </ControlTemplate>
+            ...
+    </ControlTemplate>
 
 
 
@@ -307,9 +83,9 @@ The aforementioned approach implies defining the styles __implicitly__. If apply
 		...
 	</telerik:RadGridView.Resources>
 
-## Centering GridViewCheckBoxColumn in Edit Mode
+## Centering GridViewCheckBoxColumn
 
-In order to center the checkbox in GridViewCheckBoxColumn you can define a style targeting GridViewCell and set the HorizontalContentAlignment property to "Center":
+In order to center the __CheckBox__ in __GridViewCheckBoxColumn__ you can define a style targeting __GridViewCell__ and set the __HorizontalContentAlignment__ property to __"Center"__:
 
 ####  __[XAML] Example 4: Centering the GridViewCheckBoxColumn__
 
@@ -326,7 +102,7 @@ Now the __GridViewCheckBoxColumn__ will look like:
 
 ![Rad Grid View Styles and Templates Styling Check Box Column 03](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_03.PNG)
 
-However, there is a pixel offset when the GridViewCheckBoxColumn goes into edit mode:
+However, there is a pixel offset when the __GridViewCheckBoxColumn__ goes into edit mode:
         
 
 ![Rad Grid View Styles and Templates Styling Check Box Column 04](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_04.PNG)

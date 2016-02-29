@@ -12,7 +12,7 @@ position: 7
 
 __GridViewExpressionColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class and allows you to display various calculations in RadGridView itself. __GridViewExpressionColumn__ can be sorted and grouped like any other. 
 
->noteThe values displayed in GridViewExpressionColumn will be updated automatically when a concerned property on the data item changes.
+> The values displayed in GridViewExpressionColumn will be updated automatically when a concerned property on the data item changes.
 
 #### __[XAML] Example 1: Define GridViewExpressionColumn in XAML.__
 

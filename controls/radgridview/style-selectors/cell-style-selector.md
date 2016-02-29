@@ -94,7 +94,7 @@ In this case we have two different styles that could be applied:
 * __BigStadiumStyle__
 * __SmallStadiumStyle__. 
 
-Depending on the underlying data you cab select which style to apply.
+Depending on the underlying data you can select which style to apply.
 
 3.In the XAML file define the style selector as a resource and set the properties of __BigStadiumStyle__ and __SmallStadiumStyle__:
 

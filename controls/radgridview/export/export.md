@@ -35,6 +35,7 @@ It is the preferred method of exporting data. The method expects two parameters:
 
 * __UseSystemCultureSeparator__ - if set, the RadGridView will use the system List Separator string, specified in Control Panel's Regional Options, to separate cells. This property overrides the __ColumnDelimiter__ property. __Available in GridViewCsvExportOptions only__.
 
+
 >RadGridView's Export() method will not export an image, but its path. You can only export more user friendly text, but not the image itself.
 
 The following example shows how to show a save file dialog asking the user to save the file in excel format:
@@ -73,6 +74,9 @@ The following example shows how to show a save file dialog asking the user to sa
 	 }
 	}
 {{endregion}}
+
+> As of __Q1 2015 RadGridView__ exposes two new methods: __ExportToXlsx__ and __ExportToPdf__, thus the  __Xlsx__ and __Pdf__ values from the __ExportFormat__ enum are obsoleted.
+
 
 
 #### __VB.NET__

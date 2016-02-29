@@ -23,7 +23,7 @@ Assume we have a RadPropertyGrid bound to an Employee object. You can view the i
 What we would like to achieve is to apply one style to the Group Name row and different style to the other groups. In order to achieve the desired behavior, you need to follow these steps:
 
 1.Create a new class that inherits the __StyleSelector__ class. Override its __SelectStyle__ method. Based on your conditions - you return the proper Style that will be applied to the framework element.
-
+{{region propertygrid-group-style-selector-0}}
 	 class GroupStyleSelector : StyleSelector
     {
         public override Style SelectStyle(object item, DependencyObject container)
@@ -48,7 +48,7 @@ What we would like to achieve is to apply one style to the Group Name row and di
         public Style PhoneGroupStyle { get; set; }
         public Style TitleGroupStyle { get; set; }
     }
-
+{{endregion}}
 
 In this specific scenario we have three different styles that could be applied:
 
@@ -61,6 +61,7 @@ In this specific scenario we have three different styles that could be applied:
 Depending on the underlying data you can select which style to apply.
 
 2.In the XAML file define the style selector as a resource and set the properties for the different styles:
+{{region propertygrid-group-style-selector-1}}
 
 	 <my:GroupStyleSelector x:Key="groupStyleSelector">
             <my:GroupStyleSelector.NameGroupStyle>
@@ -79,14 +80,14 @@ Depending on the underlying data you can select which style to apply.
                 </Style>
             </my:GroupStyleSelector.TitleGroupStyle>
         </my:GroupStyleSelector>
-
+{{endregion}}
 >The __"my:"__ prefix before __GroupStyleSelector__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
 If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme:
 
 #### __XAML__
 
-{{region gridview-cell-style-selector_4}}
+{{region propertygrid-group-style-selector-2}}
 
 	<Style TargetType="telerik:RadToggleButton" BasedOn="{StaticResource ToggleButtonStyle}">
                     <Setter Property="Foreground" Value="Green"/>
@@ -96,6 +97,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 3.Finally, set the GroupStyleSelector property of the data column which represents the GroupStyleSelector field:
 
+{{region propertygrid-group-style-selector-3}}
 
 	    <telerik:RadPropertyGrid x:Name="PropertyGrid" 
                                  RenderMode="Flat"   
@@ -109,7 +111,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
                 <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
             </telerik:RadPropertyGrid.PropertyDefinitions>
         </telerik:RadPropertyGrid>
-
+{{endregion}}
 
 The RadPropertyGrid should have the following appearance after the applied changes:
 

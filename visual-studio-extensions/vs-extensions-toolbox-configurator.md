@@ -1,14 +1,14 @@
 ---
-title: Toolbox Configurator
-page_title: Toolbox Configurator
-description: Toolbox Configurator
+title: Set Toolbox Version
+page_title: Set Toolbox Version
+description: Set Toolbox Version
 slug: radcontrols-vs-extensions-toolbox-configurator
 tags: toolbox,configurator
 published: True
-position: 10
+position: 7
 ---
 
-# Toolbox Configurator
+# Set Toolbox Version
 
 
 

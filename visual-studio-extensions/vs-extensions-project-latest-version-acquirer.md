@@ -1,14 +1,14 @@
 ---
-title: Latest Version Acquirer Tool
-page_title: Latest Version Acquirer Tool
-description: Latest Version Acquirer Tool
+title: Download New Version
+page_title: Download New Version
+description: Download New Version
 slug: radcontrols-vs-extensions-project-latest-version-acquirer
 tags: latest,version,acquirer,tool
 published: True
-position: 9
+position: 6
 ---
 
-# Latest Version Acquirer Tool
+# Download New Version
 
 
 

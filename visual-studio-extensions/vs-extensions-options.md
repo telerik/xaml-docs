@@ -5,7 +5,7 @@ description: Options
 slug: radcontrols-vs-extensions-options
 tags: options
 published: True
-position: 11
+position: 8
 ---
 
 # Options

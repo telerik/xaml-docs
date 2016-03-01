@@ -73,9 +73,9 @@ You can set the **FrozenColumnsSplitterVisibility** property of the RadGridView 
 
 The property has one of three values:
 
-* **Visible** - displays the element
-* **Hidden** - does not display the element, but reserves space for the element in the layout
-* **Collapsed** - does not display the element, and does not reserve space for it in the layout
+* **Visible:** Displays the element.
+* **Hidden:** Does not display the element, but reserves space for the element in the layout.
+* **Collapsed:** Does not display the element, and does not reserve space for it in the layout.
 
 #### __Figure 1: FrozenColumnsSplitterVisibility set to Visible, Hidden & Collapsed, respectively__
 

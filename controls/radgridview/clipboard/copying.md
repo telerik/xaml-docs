@@ -22,12 +22,12 @@ Copying to the Clipboard is controlled by the __ClipboardCopyMode__ property on 
 
 Here's a list of all the available values:
 
-* **None** - copying is disabled
-* **Cells** - copy grid cells
-* **Header** - copy grid header
-* **Footer** - copy grid footer
-* **SkipEmptyRows** - will not copy rows with values that are all null or empty (introduced with Q1 2016)
-* **All** - copy cells, header and footer
+* **None:** Copying is disabled.
+* **Cells:** Copy grid cells.
+* **Header:** Copy grid header.
+* **Footer:** Copy grid footer.
+* **SkipEmptyRows:** Will not copy rows with values that are all null or empty. (introduced with Q1 2016)
+* **All:** Copy cells, header and footer.
 
 >The default value is **Cells**.
 
@@ -61,7 +61,7 @@ There are two events that allow you to control the copying operation: __Copying_
 	     if (e.Cell.Column.UniqueName == "FullName")
 	     {
 	          var person = e.Cell.Item as Person;
-	          e.Value = string.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.MiddleName);
+	          e.Value = string.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName);
 	     }
 	}
 {{endregion}}
@@ -73,7 +73,7 @@ There are two events that allow you to control the copying operation: __Copying_
 	Private Sub radGridView_CopyingCellClipboardContent(sender As Object, e As GridViewCellClipboardEventArgs)
 	 If e.Cell.Column.UniqueName = "FullName" Then
 	  Dim person = TryCast(e.Cell.Item, Person)
-	  e.Value = String.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.MiddleName)
+	  e.Value = String.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName)
 	 End If
 	End Sub
 {{endregion}}

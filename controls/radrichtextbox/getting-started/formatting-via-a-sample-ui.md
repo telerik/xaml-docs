@@ -80,27 +80,21 @@ The UI should also respond when the caret is on a document position where the te
 #### __[C#] Example 3: Changing the Toggle State of a Button Depending on the Caret Position__
 
 {{region radrichtextbox-getting-started-formatting-via-a-sample-ui_3}}
-        InitializeComponent();
 
-        this.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleBoldCommand_ToggleStateChanged);
-        this.radRichTextBox.Commands.ToggleItalicCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleItalicCommand_ToggleStateChanged);
-        this.radRichTextBox.Commands.ToggleUnderlineCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleUnderlineCommand_ToggleStateChanged);
-    }
-
-    void ToggleBoldCommand_ToggleStateChanged(object sender, Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
-    {
-        BoldButton.IsChecked = e.NewValue;
-    }
-
-    void ToggleUnderlineCommand_ToggleStateChanged(object sender, Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
-    {
-        UnderlineButton.IsChecked = e.NewValue;
-    }
-
-    void ToggleItalicCommand_ToggleStateChanged(object sender, Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
-    {
-        ItalicButton.IsChecked = e.NewValue;
-    }
+	    InitializeComponent();
+	    this.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleCommand_ToggleStateChanged);
+	    this.radRichTextBox.Commands.ToggleItalicCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleCommand_ToggleStateChanged);
+	    this.radRichTextBox.Commands.ToggleUnderlineCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleCommand_ToggleStateChanged);
+	}
+	
+	void ToggleCommand_ToggleStateChanged(object sender, Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
+	{
+	    ToggleButton button = sender as ToggleButton;
+	    if (button != null)
+	    {
+	        button.IsChecked = e.NewValue;
+	    }
+	}
 {{endregion}}
 
 

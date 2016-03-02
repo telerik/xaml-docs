@@ -31,24 +31,24 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 
 * __LayoutMode__: Specifies whether the page should be in __Paged__, __Flow__ or __FlowNoWrap__ layout mode. To learn more about layout modes read [here]({%slug radrichtextbox-features-layout-modes%}).
 
-* __DefaultPageLayoutSettings__: This property is of type __PageLayoutSettings__. The __PageLayoutSettings__ class exposes the following properties:        
-	* __Height__: Represents the height of the page.             	
-	* __Width__: Represents the width of the page. Here is an example:
+* __SectionDefaultPageSize__: This property is of type __Size__ and represents the default page size of the document. **Example 1** shows how to use it.
 
-#### __[XAML] Example 1: Setting DefaultPageLayoutSettings__
+#### __[XAML] Example 1: Setting SectionDefaultPageSize__
 
 {{region radrichtextbox-features-document-elements-raddocument_0}}
 	<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged">
-	    <telerik:RadDocument DefaultPageLayoutSettings="600,800" />
+	    <telerik:RadDocument SectionDefaultPageSize="500,1000" />
 	</telerik:RadRichTextBox>
 {{endregion}}
 
 
 
->The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
+>The __SectionDefault~__ settings get applied only when Paged layout mode is used.
                   
 
 * __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the **RadDocument**. To assign different margins for each of the sections use the respective property of the [__Section__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Section.htm) class.
+
+* __SectionDefaultPageOrientation__: Defines the default section page orientation. This property is of type [**PageOrientation**](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_PageOrientation.htm) and could be set to **Portrait** or **Landscape**.
 
 * __ParagraphDefaultSpacingAfter__: Defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after for each of the paragraphs use the respective property of the [__Paragraph__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm) class.
           
@@ -63,6 +63,8 @@ __RadDocument__ exposes several properties that allow you to customize the layou
     * __Exact__: The space between the lines should equal to the value of the __LineSpacing__ property.
 
 * __ShowFormattingSymbols__: Indicates whether the formatting symbols should be displayed or not.
+
+* __DefaultTabWidth__: Specifies the default tab width of the document.
           
 
 ## Specifics

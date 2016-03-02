@@ -16,7 +16,7 @@ This topic will show you how to style the __GridViewCheckBoxColumn__.
 
 * [Styling GridViewCheckBoxColumn in Edit Mode](#styling-gridviewcheckboxcolumn-in-edit-mode)
 
-* [Applying the Styles to GridViewCheckBoxColumn explicitly](#applying-the-styles-to-gridviewcheckboxcolumn-explicitly)
+* [Applying the Styles to GridViewCheckBoxColumn Explicitly](#applying-the-styles-to-gridviewcheckboxcolumn-explicitly)
 
 * [Centering GridViewCheckBoxColumn in Edit Mode](#centering-gridviewcheckboxcolumn-in-edit-mode) 
 
@@ -299,7 +299,7 @@ The customized __ControlTemplate__ can be applied as follows.
 
     <Style TargetType="CheckBox" BasedOn="{StaticResource CheckBoxStyleGridViewColumn}"/>
 
-## Applying the Styles to GridViewCheckBoxColumn explicitly
+## Applying the Styles to GridViewCheckBoxColumn Explicitly
 
 The aforementioned approach implies defining the styles __implicitly__. If applying the modifications to a particular instance of __RadGridView__ is needed, these Styles can be applied __explicitly__ through the __Resources__ of __RadGridView__.
 
@@ -309,7 +309,7 @@ The aforementioned approach implies defining the styles __implicitly__. If apply
 
 ## Centering GridViewCheckBoxColumn in Edit Mode
 
-In order to center the checkbox in GridViewCheckBoxColumn you can define a style targeting GridViewCell and set the HorizontalContentAlignment property to "Center":
+In order to center the checkbox in a GridViewCheckBoxColumn you can define a style targeting GridViewCell and set the HorizontalContentAlignment property to "Center":
 
 ####  __[XAML] Example 4: Centering the GridViewCheckBoxColumn__
 

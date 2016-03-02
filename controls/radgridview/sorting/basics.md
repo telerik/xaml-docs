@@ -22,6 +22,8 @@ Through __SortingState__ property, __RadGridView__ provides you with a built-in 
         
 
 >Sorting is a data operation and it is performed by building and executing a LINQ query over the source collection.
+>
+>If the RadGridView is bound to a collection that inherits __ICollectionView__ that has a __CanSort__ property set to __true__, the RadGridView`s sorting is disabled and the sorting mechanism of the collection is used instead.
 
 The data gets sorted as the user clicks the header of a column. When sorted you should see the header of the column highlighted and the appropriate arrow showing if the applied sorting is ascending or descending.
 

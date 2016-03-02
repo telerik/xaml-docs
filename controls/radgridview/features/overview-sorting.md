@@ -60,6 +60,9 @@ You can achieve the same result if you define your sorting criteria in the code-
 
 >tipConsider using the code-behind approach only when changing the sorting criteria __run-time__.
 
+>importantIf the RadGridView is bound to a collection that inherits __ICollectionView__ that has a __CanSort__ property set to __true__, the RadGridView`s sorting is disabled and the sorting mechanism of the collection is used instead.
+
+
 Check out the chapters entirely dedicated to the sorting functionality of __RadGridView__ and find the answers to the following questions:
 
 * What are the available [types of sorting]({%slug gridview-sorting-basics%}).

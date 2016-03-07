@@ -98,7 +98,7 @@ It is an enumeration of type __SelectionStartOnSignChanged__ that exposes the fo
 
 ## Allow Minus Sign on Zero Value
 
-The __RadMaskedInputExtensions__ expose an __AllowMinusOnZeroValues__ attached property. It controls whether the minus sign ("-") in front of the zero (0 or 0.0) value can be visualized. If you set it to __False__, users will not be allowed to enter minus when the value of the control equals zero. 
+The __RadMaskedInputExtensions__ expose an __AllowMinusOnZeroValues__ attached property. It controls whether the minus sign ("-") in front of the zero (0 or 0.0) value can be visualized. If you set it to __False__, users will not be allowed to enter minus when the Value property of the control equals zero. 
 
 The major difference that this property makes is when you initially have a negative number entered and you change it to zero. When the __AllowMinusOnZeroValues__ is set to __False__, the minus sign will not be preserved; otherwise the minus will remain.        
 

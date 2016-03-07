@@ -139,7 +139,7 @@ The keyboard navigation of the RadMaskedInput suite of controls can be controlle
 	</StackPanel>
 {{endregion}}
 
-You can find more information about the keyboard navigation [here]({%slug radmaskedinput-features-keyboard-mouse%}).        
+You can find more information about the keyboard navigation in the [Keyboard and Mouse Support]({%slug radmaskedinput-features-keyboard-mouse%}) help article.        
 
 ## Set the Caret Position in a RadMaskedTextInput
 

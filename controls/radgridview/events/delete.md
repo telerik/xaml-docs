@@ -22,7 +22,7 @@ Currently the delete events occur once for all the rows to be deleted. To get no
 
 ## Delete Events Lifecycle
 
-It is important to know that each one of the delete events is fired only when the user is trying to delete row/rows in the __RadGridView__ control via the Delete button.
+It is important to know that each one of the delete events is fired only when the user is trying to delete row/rows in the __RadGridView__ control by invoking the __Delete__ command, for example via the Delete button on the keyboard.
 
 The __Deleting__ event always occurs when the user is about to delete the row/rows. The __Deleting__ event can be __canceled__ thus allowing you to stop the delete process. To do so set the __Cancel__ property of the event arguments to __True__.
 
@@ -172,3 +172,4 @@ You can subscribe to the __Deleted__ event declaratively or runtime like this:
 # See Also
 
  * [Overview]({%slug gridview-events-overview%})
+ * [Commands]({%slug gridview-commands-overview%})

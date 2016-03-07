@@ -66,7 +66,7 @@ The annotations provider allows you to decide what type of annotation to create 
 
         public override ChartAnnotationDescriptor SelectDescriptor(ChartAnnotationsProvider provider, object context)
         {
-			// Here you can define logic that returns different descriptors based on a condition.
+	    // Here you can define logic that returns different descriptors based on a condition.
             if (context is ModelA)
             {
                 return this.MarkedZoneAnnotationDescriptor;

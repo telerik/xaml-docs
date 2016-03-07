@@ -79,7 +79,7 @@ If you set the __MaskedInputExtensions.UseCultureDigits__ property to __True__, 
 >Please keep in mind that when you set the __RadMaskedInputExtensions.UseCultureDigits__ property to __True__, if you want to define a __Mask__ for the control, it has to be set after the __.UseCultureDigits__ property in the definition of the __RadMaskedInput__ control.          
 
 ## Define the SelectionStart When the Sign of the Value is Changed
-<Comment: What does it mean to change to sign of the value entered? Inputting a euro symbol instead of a British pounds sterling symbol?>
+
 When you change the sign of a value entered in the __RadMaskedNumericInput__ and/or the __RadMaskedCurrencyInput__ control you may need to move the cursor at the beginning of the control. You can implement such a scenario using the  __RadMaskedInputExtensions.SelectionStartOnSignChanged__ property.        
 
 It is an enumeration of type __SelectionStartOnSignChanged__ that exposes the following values:        
@@ -98,7 +98,7 @@ It is an enumeration of type __SelectionStartOnSignChanged__ that exposes the fo
 
 ## Allow Minus Sign on Zero Value
 
-The __RadMaskedInputExtensions__ expose an __AllowMinusOnZeroValues__ attached property. It controls whether the minus sign ("-") in front of the zero (0 or 0.0) value can be visualized. If you set it to __False__, users will not be allowed to enter minus when the value of the control equals zero.  <Comment: Did I create a technical error by changing Value to value? If not, my change is correct from a grammar/capitalization point of view.>       
+The __RadMaskedInputExtensions__ expose an __AllowMinusOnZeroValues__ attached property. It controls whether the minus sign ("-") in front of the zero (0 or 0.0) value can be visualized. If you set it to __False__, users will not be allowed to enter minus when the value of the control equals zero. 
 
 The major difference that this property makes is when you initially have a negative number entered and you change it to zero. When the __AllowMinusOnZeroValues__ is set to __False__, the minus sign will not be preserved; otherwise the minus will remain.        
 
@@ -115,7 +115,7 @@ The __MaskedInputExtensions.AllowMinusOnNullValue__ property allows you to displ
 
 > This property is designed to work only for the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls with an empty mask (Mask="")
 
-When the property is set to __True__ and the value is null, the minus symbol will be included in the Text property, however, the value will remain null. You can see the example in *Figure 2*.
+When the property is set to __True__ and the __Value__ is set to __null__, the minus symbol will be included in the Text property, however, the value will remain null. You can see the example in *Figure 2*.
 
 #### __Figure 2: MaskedInputExtensions.AllowMinusOnNullValue example__
 ![](images/radmaskedinput_features_extensions_01.png)

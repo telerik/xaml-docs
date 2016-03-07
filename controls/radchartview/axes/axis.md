@@ -151,3 +151,26 @@ The axis supports arbitrary visualization of the ticks and labels through DataTe
 ![](images/radchartview-chart_axes_axisconfig.png)
 
 The linear axis is a plain numerical axis, that is, the LinearAxis class inherits from __NumericalAxis__ and NumericalAxis itself inherits from Axis. NumericalAxis  defines only a few features on top of the abstract Axis class.
+
+## Common Events
+
+There are several common events exposed by the different type of axes.
+
+* __ActualRangeChanged__: Occurs when the actual range changes. The event arguments are of type __Telerik.Charting.NumericalRangeChangedEventArgs__ and expose the following properties:
+	* __NewRange__: A property of type __Telerik.Charting.ValueRange&lt;double&gt;__ that gets the new range of the axis.
+	* __PreviousRange__: A property of type __Telerik.Charting.ValueRange&lt;double&gt;__ that gets the previous range of the axis.
+	
+* __ActualVisibleRangeChanged__: Occurs when the actual visible range changes. The event arguments are of type __Telerik.Charting.NumericalRangeChangedEventArgs__ and expose the following properties:
+	* __NewRange__: A property of type __Telerik.Charting.ValueRange&lt;double&gt;__ that gets the new visible range of the axis.
+	* __PreviousRange__: A property of type __Telerik.Charting.ValueRange&lt;double&gt;__ that gets the visible previous range of the axis.
+
+> The __ActualRangeChanged__ and __ActualVisibleRangeChanged__ events are exposed only by the chart's numeric axes - LinearAxis, LogarithmicAxis and DateTimeContinuousAxis.
+
+* __ActualMajorStepChanged__: Occurs when the actual major step of the axis gets changed. The event arguments are of type __EventArgs__.
+	
+	> This event is exposed only by the LinearAxis class.
+	
+## See Also
+* [Getting Started]({%slug radchartview-introduction%})
+* [Events]({%slug radchartview-events%})
+* [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

@@ -22,3 +22,8 @@ Concrete series types are available for specific charts. For example, there is a
 |**Financial Series**<br/>[OhlcSeries]({%slug radchartview-series-ohlcseries%})<br/>[CandlesticSeries]({%slug radchartview-series-candlestickseries%})|
 |**Bar Series**<br/>[BarSeries]({%slug radchartview-series-barseries%})<br/>[RangeBarSeries]({%slug radchartview-series-rangebarseries%})|
 |**Bubble Series**<br/>[BubbleSeries]({%slug radchartview-series-bubbleseries%})<br/>[ScatterBubbleSeries]({%slug radchartview-series-scatterbubbleseries%})|
+
+## Events
+
+The chart's series expose the following events:
+* __DataBindingComplete__: Occurs when a databinding operation has been successfully completed. The event will be fired only in a data binding scenario when the ItemsSource of the series is set. The execution of this event guarantee that the chart has generated the data points' models and they are mapped with the corresponding view models.

@@ -28,23 +28,23 @@ A frozen column always stays on top of horizontal scrolling.
 
 You can freeze your columns programmatically using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
 
-In this sample, the first two columns are frozen starting from left to right.
+In __Example 1__, the first two columns are frozen starting from left to right.
 
-#### __[XAML] Example 1 Setting FrozenColumnCount__
+#### __[XAML] Example 1: Setting FrozenColumnCount__
 
 {{region gridview-columns-frozen-columns_0}}
 
 	<telerik:RadGridView FrozenColumnCount="2" />
 {{endregion}}
 
-#### __[C#] Example 1 Setting FrozenColumnCount__
+#### __[C#] Example 1: Setting FrozenColumnCount__
 
 {{region gridview-columns-frozen-columns_1}}
 
 	this.radGridView.FrozenColumnCount = 2;
 {{endregion}}
 
-#### __[VB.NET] Example 1 Setting FrozenColumnCount__
+#### __[VB.NET] Example 1: Setting FrozenColumnCount__
 
 {{region gridview-columns-frozen-columns_2}}
 
@@ -53,9 +53,9 @@ In this sample, the first two columns are frozen starting from left to right.
 
 ## Disabling Frozen Columns
 
-To disable the freezing of a column, just set the __CanUserFreeze to False__ and the frozen columns separator will disappear.
+To disable the freezing of a column, just set the __CanUserFreezeColumns__ to __False__ (as shown in Example 2) and the frozen columns separator will disappear. <Comment: Please check that my change to add "Columns" did not create a technical error.>
 
-#### __[XAML] Example 2 Disabling Frozen Columns__
+#### __[XAML] Example 2: Disabling Frozen Columns__
 
 {{region gridview-columns-frozen-columns_3}}
 
@@ -69,7 +69,7 @@ To disable the freezing of a column, just set the __CanUserFreeze to False__ and
 
 ## Hiding the Frozen Columns Splitter
 
-You can set the **FrozenColumnsSplitterVisibility** property of the RadGridView control in order to hide/show the frozen columns splitter.
+You can set the **FrozenColumnsSplitterVisibility** property of the __RadGridView__ control in order to hide/show the frozen columns splitter.
 
 The property has one of three values:
 
@@ -82,14 +82,14 @@ The property has one of three values:
 ![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Visible.png)
 ![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Hidden.png)
 ![Rad Grid View Frozencolumns 4](images/FrozenColumnsSplitterVisibility_Collapsed.png)
-
+<Comment: The figure is missing. I suggest you combine all three into one image. It looks odd to me to have a single figure caption for three images.>
 ## Frozen Columns Events
 
-As of Q1 2016, we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
+As of Q1 2016, we've added the __FrozenColumnsChanged__ event, which is fired whenever columns are frozen or unfrozen.
 
-You can subscribe to the event either declaratively or at runtime like this:
+__Example 3__ shows that you can subscribe to the event either declaratively or at runtime like this:
 
-#### __[XAML] Example 3 Subscribing to the FrozenColumnsChanged Event__
+#### __[XAML] Example 3: Subscribing to the FrozenColumnsChanged Event__
 
 {{region gridview-columns-frozen-columns_4}}
 
@@ -97,14 +97,14 @@ You can subscribe to the event either declaratively or at runtime like this:
 					     FrozenColumnsChanged="gridView_FrozenColumnsChanged" />
 {{endregion}}
 
-#### __[C#] Example 3 Subscribing to the FrozenColumnsChanged Event__
+#### __[C#] Example 3: Subscribing to the FrozenColumnsChanged Event__
 
 {{region gridview-columns-frozen-columns_5}}
 
 	gridView.FrozenColumnsChanged += new EventHandler<FrozenColumnsChangedEventArgs>(gridView_FrozenColumnsChanged);
 {{endregion}}
 
-#### __[VB.NET] Example 3 Subscribing to the FrozenColumnsChanged Event__
+#### __[VB.NET] Example 3: Subscribing to the FrozenColumnsChanged Event__
 
 {{region gridview-columns-frozen-columns_6}}
 
@@ -119,9 +119,9 @@ Via the FrozenColumnsChangedEventArgs, you can get the:
 
 * __AllFrozenColumns__ - the collection of frozen columns
 
-Here is an example of how you can get the names of the columns currently in the frozen columns collection as well as the columns added or removed from it.
+__Example 4__ shows how you can get the names of the columns currently in the frozen columns collection as well as the columns added or removed from it.
 
-#### __[C#] Example 4 Using the FrozenColumnsChanged Event__
+#### __[C#] Example 4: Using the FrozenColumnsChanged Event__
 
 {{region gridview-columns-frozen-columns_7}}
 

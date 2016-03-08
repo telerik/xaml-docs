@@ -75,7 +75,7 @@ The following example shows how to show a save file dialog asking the user to sa
 	}
 {{endregion}}
 
-> As of __Q1 2015 RadGridView__ exposes two new methods: __ExportToXlsx__ and __ExportToPdf__, thus the  __Xlsx__ and __Pdf__ values from the __ExportFormat__ enum are obsoleted.
+> As of __Q1 2015 RadGridView__ exposes two new methods: __ExportToXlsx__ and __ExportToPdf__, thus the  __Xlsx__ and __Pdf__ values from the __ExportFormat__ enum are obsolete.
 
 
 

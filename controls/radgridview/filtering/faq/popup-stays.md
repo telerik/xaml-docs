@@ -28,7 +28,7 @@ You will need to subscribe for the __Deactivated__ event of the MainWindow and e
 For example you can close it with the following code:
         
 
-#### __[C#]__
+#### __[C#] Example 1: Closing the Filtering Popup from the Deactivated event__
 
 {{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_3}}
 
@@ -41,7 +41,7 @@ For example you can close it with the following code:
     }
 {{endregion}}
 
-#### __[VB.NET]__
+#### __[VB.NET] Example 1: Closing the Filtering Popup from the Deactivated event__
 
 {{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_4}}
 
@@ -61,7 +61,7 @@ As of Q1 2016, we have introduced the **ShouldCloseFilteringPopupOnKeyboardFocus
 
 And here is how to set it:
 
-#### __[XAML]__
+#### __[XAML] Example 2: Closing the Filtering Popup in XAML__
 
 {{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_5}}
 

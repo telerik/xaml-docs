@@ -18,7 +18,7 @@ This topic will show you how to style the __GridViewCheckBoxColumn__.
 
 * [Applying the Styles to GridViewCheckBoxColumn explicitly](#applying-the-styles-to-gridviewcheckboxcolumn-explicitly)
 
-* [Centering GridViewCheckBoxColumn in Edit Mode](#centering-gridviewcheckboxcolumn-in-edit-mode) 
+* [Centering GridViewCheckBoxColumn in Edit Mode](#centering-gridviewcheckboxcolumn) 
 
 The cells of __RadGridView__ have two templates for their current state - when in __view mode__ and in __edit mode__. By default, __GridViewCheckBoxColumn__ uses a __GridViewCheckBox__ when in __view mode__ and the standard __CheckBox__ control as its __editor__. __GridViewCheckBox__ is an element that emulates the behavior of a __CheckBox__ and is especially designed for __RadGridView__. 
 

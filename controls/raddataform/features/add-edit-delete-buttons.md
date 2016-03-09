@@ -52,6 +52,7 @@ Similarly to the the Insert operation, you will be able to remove items in the f
 
 ![raddataform-crud-operations-2](images/raddataform-crud-operations-2.png)
 
+Test content 
 
 ## Edit
 

@@ -17,7 +17,7 @@ Each of the columns that derive from the __GridViewBoundColumnBase__ have an __E
 
 For example, if you want to set the style for the __GridViewDataColumn's__ editor, you have to create a __Style__ that targets the __TextBox__ control.
 
-#### __XAML Change the style of the GridViewDataColumn editor__
+#### __[XAML] Change the style of the GridViewDataColumn editor__
 
 {{region radgridview-styling-column-editor_0}}
 
@@ -29,7 +29,7 @@ For example, if you want to set the style for the __GridViewDataColumn's__ edito
 
 > If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base the style on TextBoxStyle in order to keep the default view of the editor.
 
-#### __XAML Change the style of the GridViewDataColumn editor - Using Implicit Styles__
+#### __[XAML] Change the style of the GridViewDataColumn editor - Using Implicit Styles__
 
 	<Style x:Key="TextBoxStyle"
            BasedOn={StaticResource TextBoxStyle} 

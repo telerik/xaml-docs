@@ -12,7 +12,7 @@ position: 5
 
 __PROBLEM__
 
-+When the the filter popup on a column is opened and the user switches to another desktop app with the keyboard (for example, pressing **Alt+Tab**), not the mouse, then the _RadGridView_ filter popup remains open.
+When the the filter popup on a column is opened and the user switches to another desktop app with the keyboard (for example, pressing **Alt+Tab**), not the mouse, then the __RadGridView__ filter popup remains open.
         
 
 __CAUSE__

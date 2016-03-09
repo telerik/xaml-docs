@@ -28,7 +28,7 @@ A frozen column always stays on top of horizontal scrolling.
 
 You can freeze your columns programmatically using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
 
-In this sample, the first two columns are frozen starting from left to right.
+In __Example 1__, the first two columns are frozen starting from left to right.
 
 #### __[XAML] Example 1: Setting FrozenColumnCount__
 
@@ -53,7 +53,7 @@ In this sample, the first two columns are frozen starting from left to right.
 
 ## Disabling Frozen Columns
 
-To disable the freezing of a column, just set the __CanUserFreeze to False__ and the frozen columns separator will disappear.
+To disable the freezing of a column, just set the __CanUserFreezeColumns__ to __False__ (as shown in Example 2) and the frozen columns separator will disappear.
 
 #### __[XAML] Example 2: Disabling Frozen Columns__
 
@@ -67,11 +67,26 @@ To disable the freezing of a column, just set the __CanUserFreeze to False__ and
 
 ![Rad Grid View Frozencolumns 4](images/RadGridView_Frozencolumns_4.png)
 
+## Hiding the Frozen Columns Splitter
+
+You can set the **FrozenColumnsSplitterVisibility** property of the __RadGridView__ control in order to hide/show the frozen columns splitter.
+
+The property has one of three values:
+
+* **Visible:** Displays the element.
+* **Hidden:** Does not display the element, but reserves space for the element in the layout.
+* **Collapsed:** Does not display the element, and does not reserve space for it in the layout.
+
+#### __Figure 1: FrozenColumnsSplitterVisibility set to Visible and Hidden/Collapsed, respectively__
+
+![FrozenColumnsSplitterVisibility="Visible"](images/FrozenColumnsSplitterVisibility_Visible.png)
+![FrozenColumnsSplitterVisibility="Hidden"](images/FrozenColumnsSplitterVisibility_Hidden.png)
+
 ## Frozen Columns Events
 
 As of Q1 2016, we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
 
-You can subscribe to the event either declaratively or at runtime like this:
+__Example 3__ shows that you can subscribe to the event either declaratively or at runtime like this:
 
 #### __[XAML] Example 3: Subscribing to the FrozenColumnsChanged Event__
 
@@ -103,7 +118,7 @@ Via the FrozenColumnsChangedEventArgs, you can get the:
 
 * __AllFrozenColumns__ - the collection of frozen columns
 
-Here is an example of how you can get the names of the columns currently in the frozen columns collection as well as the columns added or removed from it.
+__Example 4__ shows how you can get the names of the columns currently in the frozen columns collection as well as the columns added or removed from it.
 
 #### __[C#] Example 4: Using the FrozenColumnsChanged Event__
 

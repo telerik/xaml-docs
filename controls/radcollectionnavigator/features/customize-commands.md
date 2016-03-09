@@ -22,9 +22,9 @@ __Telerik.Windows.Controls.Data.CollectionNavigator.CollectionNavigatorBaseComma
 
 *“Execute logic” methods*
 
-The methods listed below identify the logic that is executed when a certain command’s invocation takes place.
+The methods listed below in Example 1 identify the logic that is executed when a certain command’s invocation takes place.
 
-#### __[C#]__ Example 1: RadCollectionNavigator's executable commands  
+#### __[C#] Example 1: RadCollectionNavigator's executable commands__  
 
 	void MoveCurrentToFirst()
 	void MoveCurrentToLast()
@@ -36,9 +36,9 @@ The methods listed below identify the logic that is executed when a certain comm
 	
 *“Can-execute logic” methods*
 
-With the help of those methods you can identify whether a certain command can be executed or not.
+With the help of the methods listed in *Example 2* you can identify whether a certain command can be executed or not.
 
-#### __[C#]__ Example 2:RadCollectionNavigator "can-execute" methods 
+#### __[C#] Example 2:RadCollectionNavigator "can-execute" methods__ 
 
 	bool CanMoveCurrentToFirstExecute()
 	bool CanMoveCurrentToLastExecute()
@@ -53,7 +53,7 @@ With the help of those methods you can identify whether a certain command can be
 
 The first step is to create your own class that inherits from CollectionNavigatorBaseCommandProvider.
 
-#### __[C#]__ Example 3: Creating a class that provides the custom commands
+#### __[C#] Example 3: Creating a class that provides the custom commands__
 
 {{region radcollectionnavigator-customize-commands_1}}
 
@@ -75,13 +75,13 @@ The first step is to create your own class that inherits from CollectionNavigato
 
 
 
-Those commands, which logic is up to get customized, should have their corresponding methods overridden. In the following example we will customize: MoveCurrentToNext, MoveCurrentToPrevious.
-<<Comment: This phrase, "which logic is up to get customized," does not make sense to me. Please revise and have another team member review it.>>
+You need to override the methods of the commands that will be customized. In the following example we will customize: MoveCurrentToNext, MoveCurrentToPrevious.
+
 ## MoveCurrentToNext and MoveCurrentToPrevious
 
 If we have a requirement to prompt for the user's approval when moving through the items, the following change in the methods can be done:
 
-#### __[C#]__ Example 4: Overriding the default commands
+#### __[C#] Example 4: Overriding the default commands__ 
 
 {{region radcollectionnavigator-customize-commands_2}}
 
@@ -108,7 +108,7 @@ If we have a requirement to prompt for the user's approval when moving through t
 The last thing to be done is to set the CommandProvider property of the RadCollectionNavigator to be the newly-created CustomCommandProvider class.
         
 
-#### __[XAML]__ Example 5: Assigning the CommandProvider 
+#### __[XAML] Example 5: Assigning the CommandProvider__ 
 
 {{region radcollectionnavigator-customize-commands_3}}
 
@@ -119,7 +119,7 @@ The last thing to be done is to set the CommandProvider property of the RadColle
 
 
 
-#### __[C#]__ Example 5: Assigning the CommandProvider 
+#### __[C#] Example 5: Assigning the CommandProvider__ 
 
 {{region radcollectionnavigator-customize-commands_4}}
 

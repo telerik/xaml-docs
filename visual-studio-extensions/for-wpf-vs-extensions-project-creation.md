@@ -1,7 +1,7 @@
 ---
-title: Create project
-page_title: Create project
-description: Create project
+title: Create Project
+page_title: CreatePproject
+description: Create Project
 slug: radcontrols-for-wpf-vs-extensions-project-creation
 tags: project,creation
 published: True

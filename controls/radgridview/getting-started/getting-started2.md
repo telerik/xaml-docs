@@ -322,7 +322,7 @@ Alternatively, you can set the ItemsSource property in code-behind as demonstrat
 
 Running the application containing the code from Examples 1 - 6 will result in a populated __RadGridView__ like on __Figure 2__.
 
-__Figure 2: RadGridView Bound to Collection of Clubs__
+#### __Figure 2: RadGridView Bound to Collection of Clubs__
 
 ![Bound RadGridView](images/gridview-getting-started2_5.png)
 
@@ -352,7 +352,7 @@ __Example 7__ demonstrates how you can manually prevent the automatic generation
 The code in __Example 7__ is shown in __Figure 3__. The XAML declaration of the __RadGridView__ contains two columns - the first one named "Club Name" is bound to the property _Name_ and "Established" is bound respectively to __Established__. As a result, your grid control will have only two columns and no other column will be added because the property __AutoGenerateColumns__ is set to __False__.
         
 
-__Figure 3: RadGridView with manually defined columns__
+#### __Figure 3: RadGridView with manually defined columns__
 
 ![](images/gridview-getting-started2_6.png)
 

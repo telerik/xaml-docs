@@ -1,7 +1,7 @@
 ---
-title: Project creation and configuration
-page_title: Project creation and configuration
-description: Project creation and configuration
+title: Project Creation and Configuration
+page_title: Project Creation and Configuration
+description: Project Creation and Configuration
 slug: radcontrols-for-silverlight-vs-extensions-project-configuration
 tags: project,creation,and,configuration
 published: True
@@ -9,7 +9,7 @@ position: 2
 site_name: Silverlight
 ---
 
-# Project creation and configuration
+# Project Creation and Configuration
 
 
 
@@ -99,10 +99,10 @@ When you click the Finish button:
 
 # See Also
 
- * [Automatic Dependency resolving]({%slug radcontrols-for-silverlight-vs-extensions-automatic-resolving%})
+ * [Automatic Dependency Resolving]({%slug radcontrols-for-silverlight-vs-extensions-automatic-resolving%})
 
- * [Upgrading to a new UI for Silverlight distribution]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%})
+ * [Upgrade Project]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%})
 
- * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
 
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
+ * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

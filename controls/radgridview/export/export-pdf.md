@@ -1,5 +1,5 @@
 ---
-title: ExportFormat.Pdf
+title: ExportToPdf
 page_title: ExportFormat.Pdf
 description: ExportFormat.Pdf
 slug: gridview-export-pdf

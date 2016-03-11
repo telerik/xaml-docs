@@ -1,5 +1,5 @@
 ---
-title: ExportFormat.Xlsx
+title: ExportToXlsx
 page_title: ExportFormat.Xlsx
 description: ExportFormat.Xlsx
 slug: gridview-export-xlsx

@@ -8,16 +8,19 @@ published: True
 position: 9
 ---
 
-# Subscribe to GridViewHyperlinkColumn`s Click Event
+# Subscribe to Click Event in GridViewHyperlinkColumn
 
-If you have defined a __GridViewHyperlinkColumn__ within your RadGridView, you might need to subscribe to its Click event for some internal operations. There are a couple of approaches that you can take.
+If you have defined a __GridViewHyperlinkColumn__ within your RadGridView, you might need to subscribe to its "Click" event for some internal operations. There are a couple of approaches that you can take.
 
-In case the first column of the RadGridView is a GridViewHyperlinkColumn:
- 
+In case the first column of the RadGridView is a GridViewHyperlinkColumn, as in the picture below:
+
+#### __Figure1: RadGridView with GridViewHyperLinkColumn__ 
 ![](images/gridview-hyperlinkcolumn-initial.PNG)
 
+## First Approach
 You can apply the following logic in the code behind:
 
+#### __[C#] Subscribe to Click Event in GridViewHyperlinkColumn__
 		public MainWindow()
         {
             InitializeComponent();
@@ -33,15 +36,17 @@ You can apply the following logic in the code behind:
 
 The result after clicking the Hyperlink will be:
 
+#### __Figure2: The result after clicking the hyperlink__ 
 ![](images/gridview-hyperlink-clicked.PNG)
 
-Another possible approach is to use a standard __GridViewDataColumn__ instead of __GridViewHyperlinkColumn__. You can subscribe to the MouseLeftButtonUp event of the TextBlock element defined within a CellTemplate of the GridViewDataColumn and use a Style to imitate a hyperlink:
+## Second Approach
+Declare a standard __GridViewDataColumn__ instead of __GridViewHyperlinkColumn__. You can subscribe to the MouseLeftButtonUp event of the TextBlock element defined within the CellTemplate of the GridViewDataColumn and use a Style to imitate a hyperlink:
 
 
 
-#### XAML: Declare the GridViewHyperlinkColumn and its CellTemplate:
+#### __[XAML] Declare the GridViewHyperlinkColumn and its CellTemplate:__
 		
-		 <Style x:Key="HyperlinkStyle" TargetType="TextBlock">
+		<Style x:Key="HyperlinkStyle" TargetType="TextBlock">
             <Setter Property="Foreground" Value="Blue" />
             <Setter Property="TextDecorations" Value="Underline" />
         </Style>
@@ -54,9 +59,9 @@ Another possible approach is to use a standard __GridViewDataColumn__ instead of
                             <TextBlock Style="{StaticResource HyperlinkStyle}" Text="{Binding Name}" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
                         </DataTemplate>
                     </telerik:GridViewDataColumn.CellTemplate>
-                </telerik:GridViewDataColumn>
+       </telerik:GridViewDataColumn>
 
-#### C#: Handling the MouseLeftButtonUp event
+#### __[C#] Handle the MouseLeftButtonUp event__
 
 		private void TextBlock_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
@@ -64,7 +69,7 @@ Another possible approach is to use a standard __GridViewDataColumn__ instead of
             MessageBox.Show(teamName);
         }
 
-
+The result will be the same as the one shown in __Figure2__.
 # See Also
  * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 

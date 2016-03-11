@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# ExportFormat.Xlsx
+# ExportToXlsx
 
 As of __Q1 2015__ RadGridView exposes a new method – __ExportToXlsx__ which allows exporting to Xlsx format without the need to integrate RadGridView with RadSpreadProcessing.
 

@@ -34,12 +34,11 @@ The method exports the associated RadGridView to a Workbook object.
             Workbook workbook = this.clubsGrid.ExportToWorkbook();
 
 			//Modify the created Workbook
-            CellStyle normalStyle = workbook.Styles["Normal"];
-            normalStyle.Fill = PatternFill.CreateSolidFill(new ThemableColor(ThemeColorType.Background1));
-            normalStyle.ForeColor = new ThemableColor(Colors.Green);
-            normalStyle.FontFamily = new ThemableFontFamily(ThemeFontType.Major);
-            normalStyle.FontSize = UnitHelper.PointToDip(16);
-            normalStyle.VerticalAlignment = RadVerticalAlignment.Top;
+            CellStyle wbStyle = workbook.Styles["Normal"];
+            wbStyle.ForeColor = new ThemableColor(Colors.Green);
+            wbStyle.FontFamily = new ThemableFontFamily(ThemeFontType.Major);
+            wbStyle.FontSize = UnitHelper.PointToDip(16);
+            wbStyle.VerticalAlignment = RadVerticalAlignment.Top;
 
 			//Export the Workbook to an Excel file
             SaveFileDialog dialog = new SaveFileDialog();
@@ -91,7 +90,7 @@ The method exports the associated RadGridView to a RadFixedDocument object.
                 }
             }
         }
-##
+
 
 Both methods can be overloaded and take __GridViewDocumentExportOptions__ as parameter. You can use them to set the following export options:
 

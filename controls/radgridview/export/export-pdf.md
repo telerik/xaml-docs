@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# ExportFormat.Pdf
+# ExportToPdf
 
 As of __Q1 2015__ RadGridView exposes a new method – __ExportToPdf__ which allows exporting to Pdf format without the need to integrate RadGridView with RadSpreadProcessing.
 

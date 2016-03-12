@@ -11,20 +11,23 @@ position: 0
 
 # Add, Edit and Delete Operations
 
-This article explains how to  add, edit and remove items in RadDataForm. It covers the following operations: 
+This article explains when the add, edit and remove operations of **RadDataForm** are available. We will cover the operations in the following order: 
 
 * [Add](#add)
 * [Remove](#remove)
 * [Edit](#edit)
 
-RadDataForm’s Source property accepts **IEnumerable** values and manages them as follows: 
+## Overview
+
+To better understand how these operations work, we need to first examine how RadDataForm's source collection is set. RadDataForm’s Source property accepts **IEnumerable** values and manages them as follows: 
 
 * If the underlying value implements **IEditableCollectionView**, the current implementation of its methods is used. 
-* Otherwise, a new instance of Telerik’s **QueryableCollectionView** (which implements both interfaces) is initialized, using the Source value as its SourceCollection.
+* Otherwise, a new instance of Telerik’s **QueryableCollectionView** (which implements both  aforementioned interfaces) is initialized, using the Source value as its source collection.
+
 
 ## Add
 
-RadDataForm's add operation is determined by the bound data source collection. It will be available if:
+RadDataForm's add operation will be available when one of the following conditions is met:
 
 * The collection implements the **IEditableCollectionView** interface
 
@@ -40,7 +43,7 @@ In any other case, RadDataForm will not be able to add an item and the respectiv
 
 ## Remove
 
-Similarly to the the Add operation, you will be able to remove items in the following cases:
+Similarly to the the Add operation, you will be able to remove items in any of the following cases:
 
 * The collection implements the **IEditableCollectionView** interface
 
@@ -59,9 +62,9 @@ If the current item is not null and RadDataForm is not in editing mode, the **Ed
 
 If the items of the data source implement the **IEditableObject** or the **INotifyPropertyChanged** interface, you will be able to revert any pending changes with the **Cancel** button. 
 
->Note that in the latter case **EnablePropertyChangedBasedCancel** should be set to **True**
+>Note that in the latter case **EnablePropertyChangedBasedCancel** of RadDataForm should be set to **True**.
 
->**EnablePropertyChangedBasedCancel** is not supported when using custom DataTemplates.
+>**EnablePropertyChangedBasedCancel** is not supported when using custom data templates.
 
 Please note that when an edit is started, the Navigation and AddNew commands get disabled, until the editing operation is committed, or cancelled. 
 
@@ -69,7 +72,7 @@ Please note that when an edit is started, the Navigation and AddNew commands get
 
 RadDataForm supports editing of types that do not implement the IEditableObject or INotifyPropertyChanged interfaces. Still, please note that in this case you cannot take advantage of the cancel edit feature and the **Cancel** button will not be enabled.
 
->You can find a detailed explanation on how to implement the IEditableObject in this: [MSDN article](http://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx)
+>tipYou can find a detailed explanation on how to implement the IEditableObject in this [MSDN article](http://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx)
 
 ### AutoEdit
 

@@ -17,9 +17,9 @@ This article provides a description and examples of how to customize RadDataForm
 >Please note that this functionality is introduced with Q1 2013.
 
 
-__Telerik.Windows.Controls.Data.DataForm.DataFormCommandProvider__ is a public class that exposes the “execute” and “can-execute” logic of all commands, utilized by RadDataForm. RadDataForm processes these commands according to its current provider. Here is the set of methods that DataFormCommandProvider exposes:“Execute logic” methods
+__Telerik.Windows.Controls.Data.DataForm.DataFormCommandProvider__ is a public class that exposes the “execute” and “can-execute” logic of all commands, utilized by RadDataForm. RadDataForm processes these commands according to its current provider. Here is the set of methods that DataFormCommandProvider exposes:
 
-## Execute Logic Methods
+*Execute Logic Methods*
 
 The methods listed below identify the logic that is executed when a certain command’s invocation takes place.
 
@@ -58,7 +58,7 @@ The methods listed below identify the logic that is executed when a certain comm
     End Interface
 	{{endregion}}
 
-## "Can-Execute Logic" Methods
+*Can-Execute Logic Methods*
 
 With the help of those methods you can identify whether a certain command can be executed or not.
 
@@ -144,7 +144,7 @@ The first step is to create your own class that inherits from **DataFormCommandP
 	{{endregion}}
 
 
-Those commands, which logic is up to get customized, should have their corresponding methods overridden. In the following example we will customize: **MoveCurrentToNext**, **MoveCurrentToPrevious**, **BeginEdit** and **CancelEdit**.
+You need to override the methods of the commands that will be customized. In the following example we will customize: **MoveCurrentToNext**, **MoveCurrentToPrevious**, **BeginEdit** and **CancelEdit**.
 
 ## MoveCurrentToNext and MoveCurrentToPrevious
 

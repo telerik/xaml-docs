@@ -11,8 +11,11 @@ position: 0
 
 # Add, Edit and Delete Operations
 
+This article explains how to  add, edit and remove items in RadDataForm. It covers the following operations: 
 
-This article explains how the [Add](#add), [Remove](#remove) and [Edit](#edit) operations of __RadDataForm__ work. More specifically, we will learn about:
+* [Add](#add)
+* [Remove](#remove)
+* [Edit](#edit)
 
 RadDataForm’s Source property accepts **IEnumerable** values and manages them as follows: 
 
@@ -27,7 +30,7 @@ RadDataForm's add operation is determined by the bound data source collection. I
 
 * The collection is an **IList** without a fixed size and with a public default constructor
 
-* The collection implements an Add method and has a public default constructor. The Add method needs to have a single parameter - the object you want to add to your collection.
+* The collection implements an **Add** method and has a public default constructor. The Add method needs to have a single parameter - the object you want to add to your collection.
 
 In any other case, RadDataForm will not be able to add an item and the respective **Add** button will be disabled. 
 
@@ -43,7 +46,7 @@ Similarly to the the Add operation, you will be able to remove items in the foll
 
 * The collection is an **IList** without a fixed size
 
-* The collection implements a **Remove** method with a single parameter
+* The collection implements a **Remove** method with a single parameter - the object to add to remove from the collection.
 
 #### __Figure 2: RadDataForm with enabled Add and Remove buttons__
 

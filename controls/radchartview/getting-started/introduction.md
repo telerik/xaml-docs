@@ -16,7 +16,7 @@ __RadChartView__ is essentially a tool set of charting components designed to he
 * [Assembly References](#assembly-references)
 * [Defining a Chart](#defining-a-chart)
 * [Defining a Series](#defining-a-series)
-* [Data Bind the Chart](#data-bind-the-chart)
+* [Bind the Chart](#bind-the-chart)
 
 ## Chart Types 
 
@@ -163,7 +163,7 @@ In order to use the chartview components in code you will need to add the requir
 	Imports Telerik.Windows.Controls.ChartView
 {{endregion}}
 
-## Data Bind the Chart
+## Bind the Chart
 
 Although you can easily populate the __RadCartesianChart Series__ directly with DataPoint objects, in most real-life applications, you would rather populate the series with business data. This is why all series types expose an __ItemsSource__ property. You can bind that property to a collection of business items. And if you use a collection that implements the __INotifyCollectionChanged__ interface, then any changes within the business data will be immediately reflected in the appropriate __RadChartView__ components and vice versa. You can find more information in the [Populating with Data]({%slug radchartview-series-databinding%}) section of our documentation.
 

@@ -10,7 +10,7 @@ position: 0
 
 # Getting Started
 
-__RadChartView__ is essentially a tool set of charting components designed to help you create a variety of rich data-visualization applications. This tutorial will walk you through the creation of a sample application that contains a RadChartView component.
+__RadChartView__ is essentially a toolset of charting components designed to help you create a variety of rich data-visualization applications. This tutorial will walk you through the creation of a sample application that contains a RadChartView component.
 
 * [Chart Types](#chart-types)
 * [Assembly References](#assembly-references)
@@ -20,7 +20,7 @@ __RadChartView__ is essentially a tool set of charting components designed to he
 
 ## Chart Types 
 
-The RadChartView suite provides 3 different chart types.
+The RadChartView suite provides three different chart types.
 
 * __RadCartesianChart__
 * __RadPieChart__
@@ -30,7 +30,7 @@ Each of these charting components is designed to best fit specific use cases. Yo
 
 ## Assembly References
 
-In order to use the controls from the RadChartView suite you will need to add references tot he following assemblies:
+In order to use the controls from the RadChartView suite, you will need to add references to the following assemblies:
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Chart__
 * __Telerik.Windows.Data__
@@ -39,7 +39,7 @@ You can find the required assemblies for each control from the UI for WPF suite 
 
 ## Defining a Chart
 
-For demonstration purpose we will use the __RadCartesianChart__ component. It uses Cartesian coordiante system to display different series and it is the most commonly used charting component. *Example 1* demonstrates how to define it in XAML.  
+For demonstration purposes, this tutorial will use the __RadCartesianChart__ component. It uses a Cartesian coordiante system to display different series and it is the most commonly used charting component. **Example 1** demonstrates how to define the RadCartesianChart in XAML.  
 
 #### __[XAML] Example 1: Chart definition__
 {{region radchart-introduction_1}}
@@ -49,14 +49,14 @@ For demonstration purpose we will use the __RadCartesianChart__ component. It us
 > The `telerik` namespace points to the telerik schema. 
 > `xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation`
 
-If you run the project at this stage __RadCartesianChart__ will inform you that there are no axes defined as seen in *Figure 1*.
+If you run the project at this stage, __RadCartesianChart__ will inform you that there are no axes defined, as seen in **Figure 1**.
 
 #### __Figure 1: RadCartesianChart without its axes set__
 ![Rad Chart View-Axis Not Set Message](images/RadChartView-AxisNotSetMessage.png)
 
-The Cartesian coordinate system is constructed by horizontal and vertical axes. __RadChartView__ exposes different types of axes that can be combined horizontally and vertically in different ways based on the scenario. You can find more information about them in our [Axis]({%slug radchartview-axes-axis%}) article.
+The Cartesian coordinate system is constructed using horizontal and vertical axes. __RadChartView__ exposes different types of axes that can be combined horizontally and vertically in different ways based on the scenario. You can find more information about them in our [Axis]({%slug radchartview-axes-axis%}) article.
 
-This example will demonstrate a common scenario with a LinearAxis as the vertical axis of the chart and a CategoricalAxis as horizontal axis. *Example 2* demonstrates how to define them in XAML.  
+This example will demonstrate a common scenario with a LinearAxis as the vertical axis of the chart and a CategoricalAxis as horizontal axis. **Example 2** demonstrates how to define them in XAML.  
 
 #### __[XAML] Example 2: Chart axes definition__
 {{region radchart-introduction_2}}
@@ -70,14 +70,14 @@ This example will demonstrate a common scenario with a LinearAxis as the vertica
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-In the cases where no series are defined in the definition of the charting components, a m will be displayed to prompt you to enter series. 
+In the cases where no series are defined in the definition of the charting components, a message will be displayed to prompt you to enter a series. >
 
 #### __Figure 2: RadCartesianChart without any series added in its Series collection__
 ![Rad Chart View-No Series Added Message](images/RadChartView-NoSeriesAddedMessage.png)
 
 ## Defining a Series
 
-__RadChartView__ exposes large variety of series that can be used in different scenarios. Please take a look at the [Series]({%slug radchartview-series-chartseries%}) article to find out more about the available types.
+__RadChartView__ exposes a large variety of series that can be used in different scenarios. Please take a look at the [Series]({%slug radchartview-series-chartseries%}) article to find out more about the available types.
 
 To complete the task of this tutorial, you need to define series with data points that will be rendered inside the charting component. You can do this by manually populating the __Series__ collection of the __RadCartesianChart__ control.         
 
@@ -104,12 +104,12 @@ To complete the task of this tutorial, you need to define series with data point
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-This chart definition will be rendered on the screen as demonstrated in *Figure 3*.
+This chart definition will be rendered on the screen as demonstrated in **Figure 3**.
 
 #### __Figure 3: RadCartesianChart displaying a BarSeries__
 ![Rad Chart View-Getting Started Bar Series](images/RadChartView-GettingStartedBarSeries.png)
 
-If you feel more confident working with code than with markup, you can achieve the same layout with the snippet from *Example 4*.
+If you feel more confident working with code than with markup, you can achieve the same layout with the snippet from **Example 4**.
 
 #### __[C#] Example 4: Sample chart definition in code__
 {{region radchart-introduction_4}}
@@ -147,7 +147,7 @@ If you feel more confident working with code than with markup, you can achieve t
 	Me.LayoutRoot.Children.Add(chart)
 {{endregion}}
 
-In order to use the chartview components in code you will need to add the required *using* directives that point to the Telerik namespaces.
+In order to use the chartview components in code, you will need to add the required *using* directives that point to the Telerik namespaces.
 
 #### __[C#] Example 5: Required usings for the chartview components__
 {{region radchart-introduction_5}}
@@ -165,7 +165,7 @@ In order to use the chartview components in code you will need to add the requir
 
 ## Bind the Chart
 
-Although you can easily populate the __RadCartesianChart Series__ directly with DataPoint objects, in most real-life applications, you would rather populate the series with business data. This is why all series types expose an __ItemsSource__ property. You can bind that property to a collection of business items. And if you use a collection that implements the __INotifyCollectionChanged__ interface, then any changes within the business data will be immediately reflected in the appropriate __RadChartView__ components and vice versa. You can find more information in the [Populating with Data]({%slug radchartview-series-databinding%}) section of our documentation.
+Although you can easily populate the __RadCartesianChart Series__ directly with DataPoint objects, in most real-life applications, you will populate the series with business data. This is why all series types expose an __ItemsSource__ property. You can bind that property to a collection of business items. And if you use a collection that implements the __INotifyCollectionChanged__ interface, then any changes within the business data will be immediately reflected in the appropriate __RadChartView__ components and vice versa. You can find more information in the [Populating with Data]({%slug radchartview-series-databinding%}) section of our documentation.
 
 ## See Also
 * [Overview]({%slug radchartview-overview%})

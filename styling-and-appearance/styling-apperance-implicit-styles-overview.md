@@ -275,7 +275,7 @@ If you're using Implicit Styles to style custom controls, note that they will no
 	</Application.Resources>
 {{endregion}}
 
-You will then need to set the **DefaultStyleKey** in the **OnInitialized()** method of the control.
+You will then need to set the control's **DefaultStyleKey**.
 
 #### __[C#] Example 8: Setting the DefaultStyleKey for styling custom control__
 
@@ -284,12 +284,6 @@ You will then need to set the **DefaultStyleKey** in the **OnInitialized()** met
 	{
 		public MyCustomGrid()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(MyCustomGrid), new FrameworkPropertyMetadata(typeof(MyCustomGrid)));
-        }
-
-	    protected override void OnInitialized(EventArgs e)
-        {
-            base.OnInitialized(e);
             this.DefaultStyleKey = typeof(MyCustomGrid);
         }
 	}
@@ -301,11 +295,6 @@ You will then need to set the **DefaultStyleKey** in the **OnInitialized()** met
 	Public Class MyCustomGrid
 		Inherits RadGridView
 		Public Sub New()
-			DefaultStyleKeyProperty.OverrideMetadata(GetType(MyCustomGrid), New FrameworkPropertyMetadata(GetType(MyCustomGrid)))
-		End Sub
-	
-		Protected Overrides Sub OnInitialized(e As EventArgs)
-			MyBase.OnInitialized(e)
 			Me.DefaultStyleKey = GetType(MyCustomGrid)
 		End Sub
 	End Class

@@ -10,14 +10,15 @@ position: 9
 
 # Subscribe to Click Event in GridViewHyperlinkColumn
 
-If you have defined a __GridViewHyperlinkColumn__ within your RadGridView, you might need to subscribe to its "Click" event for some internal operations. There are a couple of approaches that you can take.
+If you have defined a __GridViewHyperlinkColumn__ within your __RadGridView__, you might need to subscribe to its "Click" event for some internal operations. This article describes two approaches that you can take.
 
-In case the first column of the RadGridView is a GridViewHyperlinkColumn, as in the picture below:
+If the first column of the __RadGridView__ is a __GridViewHyperlinkColumn__, as in the picture below:
 
 #### __Figure1: RadGridView with GridViewHyperLinkColumn__ 
 ![](images/gridview-hyperlinkcolumn-initial.PNG)
 
 ## First Approach
+<Comment: It would be better for search if your subheading here used SEO-friendly words, not first approach, second approach, etc. If you change first approach to be more SEO friendly, please also change second approach.>
 You can apply the following logic in the code behind:
 
 #### __[C#] Subscribe to Click Event in GridViewHyperlinkColumn__
@@ -34,13 +35,13 @@ You can apply the following logic in the code behind:
         }
 
 
-The result after clicking the Hyperlink will be:
+__Figure 2__ shows the result after clicking the hyperlink:
 
-#### __Figure2: The result after clicking the hyperlink__ 
+#### __Figure 2: The result after clicking the hyperlink__ 
 ![](images/gridview-hyperlink-clicked.PNG)
 
 ## Second Approach
-Declare a standard __GridViewDataColumn__ instead of __GridViewHyperlinkColumn__. You can subscribe to the MouseLeftButtonUp event of the TextBlock element defined within the CellTemplate of the GridViewDataColumn and use a Style to imitate a hyperlink:
+Declare a standard __GridViewDataColumn__ instead of __GridViewHyperlinkColumn__. You can subscribe to the MouseLeftButtonUp event of the TextBlock element defined within the CellTemplate of the __GridViewDataColumn__ and use a Style to imitate a hyperlink:
 
 
 
@@ -69,7 +70,7 @@ Declare a standard __GridViewDataColumn__ instead of __GridViewHyperlinkColumn__
             MessageBox.Show(teamName);
         }
 
-The result will be the same as the one shown in __Figure2__.
+The result will be the same as the one shown in __Figure 2__.
 # See Also
  * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 

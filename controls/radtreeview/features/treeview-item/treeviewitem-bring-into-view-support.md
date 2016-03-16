@@ -20,67 +20,64 @@ When you invoke any of these methods, the __RadTreeView__ will attempt to bring 
 
 Consider the following example. A __RadTreeView__ is data bound to a collection of business objects.		
 
-#### __XAML__
-
+#### __[XAML] Example 1: Declaring RadTreeView control in XAML__
 {{region radtreeview-features-treeviewitem-bring-into-view-support_0}}
 	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <Grid.Resources>
-	        <DataTemplate x:Key="treeViewTemplate">
-	            <TextBlock Text="{Binding Title}" />
-	        </DataTemplate>
-	    </Grid.Resources>
-	    <telerik:RadTreeView x:Name="RadTreeView">
-	        <telerik:RadTreeViewItem x:Name="RadTreeViewItem"
-	                                            Header="MyItems"
-	                                            ItemTemplate="{StaticResource treeViewTemplate}">
-	        </telerik:RadTreeViewItem>
-	    </telerik:RadTreeView>
+			Background="White">
+		<Grid.Resources>
+			<DataTemplate x:Key="treeViewTemplate">
+				<TextBlock Text="{Binding Title}" />
+			</DataTemplate>
+		</Grid.Resources>
+		<telerik:RadTreeView x:Name="RadTreeView">
+			<telerik:RadTreeViewItem x:Name="RadTreeViewItem"
+									 Header="MyItems"
+									 ItemTemplate="{StaticResource treeViewTemplate}">
+			</telerik:RadTreeViewItem>
+		</telerik:RadTreeView>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
-#### __C#__
-
+#### __[C#] Example 2: The class which holds a collection of a business objects__
 {{region radtreeview-features-treeviewitem-bring-into-view-support_1}}
 	public class MyViewModel 
 	{
-	    private static int idCounter;
-	    private string title;
-	    public MyViewModel()
-	    {
-	        this.Id = idCounter++;
-	    }
-	    public int Id
-	    {
-	        get;
-	        protected set;
-	    }
-	    public String Title
-	    {
-	        get
-	        {
-	            return this.title;
-	        }
-	        set
-	        {
-	            if ( this.title != value )
-	            {
-	                this.title = value;
-	            }
-	        }
-	    }
+		private static int idCounter;
+		private string title;
+		public MyViewModel()
+		{
+			this.Id = idCounter++;
+		}
+		public int Id
+		{
+			get;
+			protected set;
+		}
+		public String Title
+		{
+			get
+			{
+				return this.title;
+			}
+			set
+			{
+				if ( this.title != value )
+				{
+					this.title = value;
+				}
+			}
+		}
 	}
 	//.....
 	RadTreeViewItem.ItemsSource = Enumerable.Range( 1, 40 ).Select( i => new MyViewModel()
 	{
-	    Title = "Item " + i
+		Title = "Item " + i
 	} ).ToList();
-	{{endregion}}
+{{endregion}}
 
 
 
-#### __VB.NET__
-
+#### __[VB.NET] Example 2: The class which holds a collection of a business objects__
 {{region radtreeview-features-treeviewitem-bring-into-view-support_2}}
 	Public Class MyViewModel
 	 Private Shared idCounter As Integer
@@ -103,54 +100,56 @@ Consider the following example. A __RadTreeView__ is data bound to a collection 
 	  End Get
 	  Set
 	   If Me.m_title <> value Then
-	    Me.m_title = value
+		Me.m_title = value
 	   End If
 	  End Set
 	 End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
+#### __Figure 1: The tree view after being populated with business objects__
 ![](images/RadTreeView_TreeViewBringIntoViewSupport_010.png)
 
 If you want to programmatically scroll to the "Item 20" (thus bringing this item into view), you could try the following scenario:
 
-#### __C#__
-
+#### __[C#] Example 3: Bring RadTreeViewItem into the view by its index__
 {{region radtreeview-features-treeviewitem-bring-into-view-support_3}}
 	private void BringItemIntoView()
 	{
-	    this.RadTreeViewItem.BringIndexIntoView( 20 );
+		this.RadTreeViewItem.BringIndexIntoView( 20 );
 	}
-	{{endregion}}
+{{endregion}}
 
-#### __VB.NET__
-
+#### __[VB.NET] Example 3: Bring RadTreeViewItem into the view by its index__
 {{region radtreeview-features-treeviewitem-bring-into-view-support_4}}
 	Private Sub BringItemIntoView()
-	    Me.RadTreeViewItem.BringIndexIntoView(20)
+		Me.RadTreeViewItem.BringIndexIntoView(20)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
-And the result will be:
+#### __Figure 2: And the result will be__
 ![](images/RadTreeView_TreeViewBringIntoViewSupport_020.png)
 
 ## BringItemIntoView()
 
 __RadTreeView__ offers a second method which does exactly the same thing as the __BringIndexIntoView()__ method. That's the __BringItemIntoView()__ method.
 	
-#### __C#__
+#### __[C#] Example 4: Bring an item into the view by its Title__
+{{region radtreeview-features-treeviewitem-bring-into-view-support_5}}
 	private void BringItemIntoView()
 	{
 		MyViewModel viewModel = dataSource.First( v => v.Title == "Item 20" );
 		this.RadTreeViewItem.BringItemIntoView( viewModel );
 	}
+{{endregion}}
 
-#### __VB.NET__	
+#### __[VB.NET] Example 4: Bring an item into the view by its Title__	
+{{region radtreeview-features-treeviewitem-bring-into-view-support_6}}
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 		Dim viewModel As MyViewModel = dataSource.First(Function(v) v.Title = "Item 20")
 		Me.RadTreeViewItem.BringItemIntoView(viewModel)
 	End Sub		
-
+{{endregion}}
 >important Please keep in mind that the __BringItemIntoView()__ method can only work for __immediate items__ and only as long as all __RadTreeViewItem__ containers __have been generated__.
 
 The __BringItemIntoView()__ method makes an internal call to the __BringIntexIntoView()__ method and this is why it is better to consider using the __BringIndexIntoView()__ method instead whenever possible.
@@ -168,7 +167,8 @@ xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" like this: `<t
 
 Consider the following __RadTreeView__ definition:
 
-#### __XAML__	
+#### __[XAML] Example 5: Declaring RadTreeView control in XAML__	
+{{region radtreeview-features-treeviewitem-bring-into-view-support_7}}
 	<telerik:RadTreeView x:Name="myTreeView" Width="300" IsVirtualizing="True" telerik:TextSearch.TextPath="Name">
 		<telerik:RadTreeView.ItemTemplate>
 			<HierarchicalDataTemplate ItemsSource="{Binding Children}">
@@ -176,10 +176,12 @@ Consider the following __RadTreeView__ definition:
 			</HierarchicalDataTemplate>
 		</telerik:RadTreeView.ItemTemplate>
 	</telerik:RadTreeView>		  
+{{endregion}}
 
 If the business items displayed in the __RadTreeView__ are described with the following classes:
 
-#### __C#__	
+#### __[C#] Example 6: The view model describing treeview and its business objects__	
+{{region radtreeview-features-treeviewitem-bring-into-view-support_8}}
 	public class MainViewModel : ObservableCollection<DataItem>
 	{
 		public MainViewModel()
@@ -205,10 +207,11 @@ If the business items displayed in the __RadTreeView__ are described with the fo
 		{
 			this.Children = new ObservableCollection<DataItem>();
 		}
-	}		  
+	}	
+{{endregion}}
 
-
-#### __VB.NET__	
+#### __[VB.NET] Example 6: The view model describing treeview and its business objects__
+{{region radtreeview-features-treeviewitem-bring-into-view-support_9}}
 	Public Class MainViewModel
 		Inherits ObservableCollection(Of DataItem)
 		Public Sub New()
@@ -246,36 +249,51 @@ If the business items displayed in the __RadTreeView__ are described with the fo
 			Me.Children = New ObservableCollection(Of DataItem)()
 		End Sub
 	End Class		  
-
-![Rad Tree View-Bring Path Into View-Tree View Def](images/RadTreeView-BringPathIntoView-TreeViewDef.png)
-
-You can bring an item into view like this:
+	{{endregion}}
 	
-#### __C#__
-	public partial class Example : UserControl
-	{
-		public Example()
-		{
-			InitializeComponent();
-			myTreeView.ItemsSource = new MainViewModel();
-			string path = "Item 20\\Item 20.1";
-			myTreeView.BringPathIntoView(path);
-		}
-	}  
-	
-#### __VB.NET__	
-	Public Partial Class Example
-		Inherits UserControl
-		Public Sub New()
-			InitializeComponent()
-			myTreeView.ItemsSource = New MainViewModel()
-			Dim path As String = "Item 20\Item 20.1"
-			myTreeView.BringPathIntoView(path)
-		End Sub
-	End Class
 
->tip You can find a complete solution demonstrating the __BringPathIntoView()__ method implementation in [this tutorial]({%slug radtreeview-how-to-bring-path-into-view%}).
-		
+![](images/RadTreeView-BringPathIntoView-TreeViewDef.png)
+
+__BringPathIntoView__ has two overloads that you can use to bring an item.
+
+* __BringPathIntoView(string path)__: The *path* parameter is the path of the __RadTreeViewItem__ which you want to bring into the view. 
+	
+	>tip Since Q3 2013 the tree will try to bring the item on the top of the viewport.
+	
+	#### __[C#] Example 7: Bring RadTreeViewItem by its path on the top of the viewport__
+	{{region radtreeview-features-treeviewitem-bring-into-view-support_9}}
+		string path = "Item 10\\Item 10.1";
+		myTreeView.BringPathIntoView(path);
+	{{endregion}}
+				
+	#### __[VB.NET] Example 7: Bring RadTreeViewItem by its path on the top of the viewport__	  
+	{{region radtreeview-features-treeviewitem-bring-into-view-support_10}}		
+		Dim path As String = "Item 10\Item 10.1"
+		myTreeView.BringPathIntoView(path)
+	{{endregion}}	
+	
+	![](images/RadTreeView_TreeViewBringIntoViewSupport_030.png)
+	
+* __BringPathIntoView(string path, Point offset)__: The *offset* parameter is of type __Point__ and specifies the offset from the top left corner of the tree where the item will be scrolled to. 
+
+	For example, when you set the second parameter you can adjust the parent and the last child to fit into the view if there is enough space. 
+	
+	#### __[C#] Example 8: Bring RadTreeViewItem by its path and set his offset position of the item__		
+	{{region radtreeview-features-treeviewitem-bring-into-view-support_11}}
+		string path = "Item 10\\Item 10.1";
+		myTreeView.BringPathIntoView(path,new Point(0,100));
+	{{endregion}}
+				
+	#### __[VB.NET] Example 8: Bring RadTreeViewItem by its path and set his offset position of the item__
+	{{region radtreeview-features-treeviewitem-bring-into-view-support_12}}	
+		Dim path As String = "Item 10\Item 10.1"
+		myTreeView.BringPathIntoView(path,New Point(0,100))
+	{{endregion}}
+	
+	#### __Figure 3: The item is positioned with 100 pixels offset from the top of the viewport__
+	![](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
+
+>tip You can find a complete solution demonstrating the __BringPathIntoView()__ method implementation in [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%}) help article in our documentation.		
 
 # See Also
  * [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%})

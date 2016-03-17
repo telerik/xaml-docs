@@ -10,13 +10,6 @@ position: 2
 
 # ExportFormat.Html
 
-        
-As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__.
-        
-
->You can read more about the export events [here]({%slug gridview-export-events%}).
-          
-
 The type of the property for this format is __GridViewHtmlVisualExportParameters__. It has the following properties:
         
 
@@ -63,6 +56,10 @@ For example:
 	}
 {{endregion}}
 
+As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__.
+        
+
+>You can read more about the export events [here]({%slug gridview-export-events%}).
 
 # See Also
 

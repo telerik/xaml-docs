@@ -10,18 +10,14 @@ position: 3
 
 # ExportFormat.ExcelML
 
+You can use the ExportFormat.ExcelML to export RadGridView`s content to a "xls" file.
       
-As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__.
-        
-
->You can read more about the export events [here]({%slug gridview-export-events%}).
-          
-
+As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__. 
+    
 The type of the property for this format is __GridViewExcelMLVisualExportParameters__.
-          
 
 It has three properties:
-          
+         
 
 * __StyleId__
 
@@ -67,10 +63,12 @@ You can define the Style when __InitializingExcelMLStyles__ event is raised. For
 	e.Styles.Add(style);
 {{endregion}}
 
-You can check the [article]({%slug gridview-export-events%}) for more information on how to define an ExcelMLStyle.
+You can check the [Export Events]({%slug gridview-export-events%}) article for more information on how to define an ExcelMLStyle. 
           
 
->__InitializingExcelMLStyles__ event will be only raised when exporting with ExportFormat.ExcelML
+>important __InitializingExcelMLStyles__ event will be only raised when exporting with ExportFormat.ExcelML
+
+>You can read more about the export events [here]({%slug gridview-export-events%}).
             
 
 # See Also

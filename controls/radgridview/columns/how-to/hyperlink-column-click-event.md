@@ -18,7 +18,7 @@ If the first column of the __RadGridView__ is a __GridViewHyperlinkColumn__, as 
 ![](images/gridview-hyperlinkcolumn-initial.PNG)
 
 ## First Approach
-<Comment: It would be better for search if your subheading here used SEO-friendly words, not first approach, second approach, etc. If you change first approach to be more SEO friendly, please also change second approach.>
+
 You can apply the following logic in the code behind:
 
 #### __[C#] Subscribe to Click Event in GridViewHyperlinkColumn__

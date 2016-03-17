@@ -39,7 +39,7 @@ You can find the required assemblies for each control from the UI for WPF suite 
 
 ## Defining a Chart
 
-For demonstration purposes, this tutorial will use the __RadCartesianChart__ component. It uses a Cartesian coordiante system to display different series and it is the most commonly used charting component. **Example 1** demonstrates how to define the RadCartesianChart in XAML.  
+For demonstration purposes, this tutorial will use the __RadCartesianChart__ component. It uses a Cartesian coordiante system to display different series and it is the most commonly used charting component. __Example 1__ demonstrates how to define the RadCartesianChart in XAML.  
 
 #### __[XAML] Example 1: Chart definition__
 {{region radchart-introduction_1}}
@@ -49,14 +49,14 @@ For demonstration purposes, this tutorial will use the __RadCartesianChart__ com
 > The `telerik` namespace points to the telerik schema. 
 > `xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation`
 
-If you run the project at this stage, __RadCartesianChart__ will inform you that there are no axes defined, as seen in **Figure 1**.
+If you run the project at this stage, __RadCartesianChart__ will inform you that there are no axes defined, as seen in __Figure 1__.
 
 #### __Figure 1: RadCartesianChart without its axes set__
 ![Rad Chart View-Axis Not Set Message](images/RadChartView-AxisNotSetMessage.png)
 
 The Cartesian coordinate system is constructed using horizontal and vertical axes. __RadChartView__ exposes different types of axes that can be combined horizontally and vertically in different ways based on the scenario. You can find more information about them in our [Axis]({%slug radchartview-axes-axis%}) article.
 
-This example will demonstrate a common scenario with a LinearAxis as the vertical axis of the chart and a CategoricalAxis as horizontal axis. **Example 2** demonstrates how to define them in XAML.  
+This example will demonstrate a common scenario with a LinearAxis as the vertical axis of the chart and a CategoricalAxis as horizontal axis. __Example 2__ demonstrates how to define them in XAML.  
 
 #### __[XAML] Example 2: Chart axes definition__
 {{region radchart-introduction_2}}
@@ -70,7 +70,7 @@ This example will demonstrate a common scenario with a LinearAxis as the vertica
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-In the cases where no series are defined in the definition of the charting components, a message will be displayed to prompt you to enter a series. >
+In the cases where no series are defined in the definition of the charting components, a message will be displayed to prompt you to enter a series.
 
 #### __Figure 2: RadCartesianChart without any series added in its Series collection__
 ![Rad Chart View-No Series Added Message](images/RadChartView-NoSeriesAddedMessage.png)
@@ -104,12 +104,12 @@ To complete the task of this tutorial, you need to define series with data point
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-This chart definition will be rendered on the screen as demonstrated in **Figure 3**.
+This chart definition will be rendered on the screen as demonstrated in __Figure 3__.
 
 #### __Figure 3: RadCartesianChart displaying a BarSeries__
 ![Rad Chart View-Getting Started Bar Series](images/RadChartView-GettingStartedBarSeries.png)
 
-If you feel more confident working with code than with markup, you can achieve the same layout with the snippet from **Example 4**.
+If you feel more confident working with code than with markup, you can achieve the same layout with the snippet from __Example 4__.
 
 #### __[C#] Example 4: Sample chart definition in code__
 {{region radchart-introduction_4}}

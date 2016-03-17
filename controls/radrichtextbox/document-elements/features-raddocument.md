@@ -35,20 +35,20 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 	* __Height__: Represents the height of the page.             	
 	* __Width__: Represents the width of the page. 
 
-__Example 1__ shows how to use these properties:
-<Comment: I think it is odd to have a code example like this in the midddle of a bullet list of properties. If the order of the bullets is not that important, I suggest that you move the LayoutMode and DefaultPagelayoutSettings bullets, and the code example and tip, to the end of the bullet list. That way the code example does not appear in the bullet list.>
-#### __[XAML] Example 1: Setting DefaultPageLayoutSettings__
+	__Example 1__ shows how to use these properties:
+	
+	#### __[XAML] Example 1: Setting DefaultPageLayoutSettings__
+	
+	{{region radrichtextbox-features-document-elements-raddocument_0}}
+		<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged">
+		    <telerik:RadDocument DefaultPageLayoutSettings="600,800" />
+		</telerik:RadRichTextBox>
+	{{endregion}}
 
-{{region radrichtextbox-features-document-elements-raddocument_0}}
-	<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged">
-	    <telerik:RadDocument DefaultPageLayoutSettings="600,800" />
-	</telerik:RadRichTextBox>
-{{endregion}}
 
 
-
->The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
-                  
+	>The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
+	                  
 
 * __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the **RadDocument**. To assign different margins for each of the sections, use the respective property of the [__Section__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Section.htm) class.
 
@@ -71,15 +71,15 @@ __Example 1__ shows how to use these properties:
 
 The first time a __RadDocument__ is shown inside a __RadRichTextBox__ in the Visual Tree, it is measured by the framework and arranges its children. This is the moment when the layout cycle is completed; each of the document elements calculates its size and arranges its children.
 
-If the two states of the document - measured and not measured - are too different, distinct methods for manipulating the content of the document should be used before the document is measured and after the first time that it is shown in the editor. <Comment: Did my change "As to If" made the sentence technically incorrect? I am not sure I understand what measured and unmeasured states are. Could you explain or provide a link to where it is explained? Or at least say that Example 2 and Example 3 will show the differences.>
+As the two states of the document - measured and not measured - are too different, distinct methods for manipulating the content of the document should be used before the document is measured and after the first time that it is shown in the editor. 
 
 ## Adding Sections to RadDocument
 
 As explained in the previous section, the state of the document is essential for the methods that can be used on it.
 
 For example, you can build a __RadDocument__ from scratch and add Sections to it as demonstrated in **Example 2**:
-<Comment: in the previous section you used the term non-measured and here you use non-measured. I suggest you choose one term and change the other to match.> 
-#### __[C#] Example 2: Add a section to a non-measured document__
+
+#### __[C#] Example 2: Add a section to a not measured document__
 
 {{region radrichtextbox-features-document-elements-raddocument_1}}
 	Section section = new Section();
@@ -87,7 +87,7 @@ For example, you can build a __RadDocument__ from scratch and add Sections to it
 {{endregion}}
 
 
-#### __[VB.NET] Example 2: Add a section to a non-measured document__
+#### __[VB.NET] Example 2: Add a section to a not measured document__
 
 {{region radrichtextbox-features-document-elements-raddocument_2}}
 	Dim section As New Section()

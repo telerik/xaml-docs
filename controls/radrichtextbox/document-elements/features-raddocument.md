@@ -14,7 +14,7 @@ position: 1
 __RadDocument__ is the root element for __RadRichTextBox's__ content. It holds the collection of __Sections__ defined for the __RadRichTextBox__ content. It also allows you to configure the appearance of its child elements.
       
 
-This topic will explain how you can customize the contents of the RadDocument.
+This article will explain how you can customize the contents of the RadDocument.
 
 * [Customizing a RadDocument](#customize-the-contents-of-raddocument)
 
@@ -29,55 +29,57 @@ This topic will explain how you can customize the contents of the RadDocument.
 __RadDocument__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
         
 
-* __LayoutMode__: Specifies whether the page should be in __Paged__, __Flow__ or __FlowNoWrap__ layout mode. To learn more about layout modes read [here]({%slug radrichtextbox-features-layout-modes%}).
+* __LayoutMode__: Specifies whether the page should be in __Paged__, __Flow__ or __FlowNoWrap__ layout mode. To learn more about layout modes, read [here]({%slug radrichtextbox-features-layout-modes%}).
 
 * __DefaultPageLayoutSettings__: This property is of type __PageLayoutSettings__. The __PageLayoutSettings__ class exposes the following properties:        
 	* __Height__: Represents the height of the page.             	
-	* __Width__: Represents the width of the page. Here is an example:
+	* __Width__: Represents the width of the page. 
 
-#### __[XAML] Example 1: Setting DefaultPageLayoutSettings__
+	__Example 1__ shows how to use these properties:
+	
+	#### __[XAML] Example 1: Setting DefaultPageLayoutSettings__
+	
+	{{region radrichtextbox-features-document-elements-raddocument_0}}
+		<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged">
+		    <telerik:RadDocument DefaultPageLayoutSettings="600,800" />
+		</telerik:RadRichTextBox>
+	{{endregion}}
 
-{{region radrichtextbox-features-document-elements-raddocument_0}}
-	<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged">
-	    <telerik:RadDocument DefaultPageLayoutSettings="600,800" />
-	</telerik:RadRichTextBox>
-{{endregion}}
 
 
+	>The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
+	                  
 
->The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
-                  
+* __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the **RadDocument**. To assign different margins for each of the sections, use the respective property of the [__Section__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Section.htm) class.
 
-* __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the **RadDocument**. To assign different margins for each of the sections use the respective property of the [__Section__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Section.htm) class.
-
-* __ParagraphDefaultSpacingAfter__: Defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after for each of the paragraphs use the respective property of the [__Paragraph__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm) class.
+* __ParagraphDefaultSpacingAfter__: Defines the default spacing after each of the paragraphs in the __RadDocument__. To assign different spacing after each of the paragraphs, use the respective property of the [__Paragraph__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm) class.
           
 
-* __ParagraphDefaultSpacingBefore__: Defines the default spacing before for each of the paragraphs in the __RadDocument__. To assign different spacing before for each of the paragraphs use the respective property of the __Paragraph__ class.
+* __ParagraphDefaultSpacingBefore__: Defines the default spacing before each of the paragraphs in the __RadDocument__. To assign different spacing before each of the paragraphs, use the respective property of the __Paragraph__ class.
 
 * __LineSpacing__: Specifies the value for the space between the lines.
 
 * __LineSpacingType__: Specifies the type of spacing:
-    * __AtLeast__: The space between the lines should equal or greater than the value of the __LineSpacing__ property.
+    * __AtLeast__: The space between the lines should be equal to or greater than the value of the __LineSpacing__ property.
     * __Auto__: The space between the lines is determined automatically.
-    * __Exact__: The space between the lines should equal to the value of the __LineSpacing__ property.
+    * __Exact__: The space between the lines should equal the value of the __LineSpacing__ property.
 
 * __ShowFormattingSymbols__: Indicates whether the formatting symbols should be displayed or not.
           
 
 ## Specifics
 
-The first time a __RadDocument__ is shown inside a __RadRichTextBox__ in the Visual Tree, it is measured by the framework and arranges its children. This is the moment when the layout cycle is completed, each of the document elements calculates its size and arranges its children.
+The first time a __RadDocument__ is shown inside a __RadRichTextBox__ in the Visual Tree, it is measured by the framework and arranges its children. This is the moment when the layout cycle is completed; each of the document elements calculates its size and arranges its children.
 
-As the two states of the document - measured and not measured are too different, distinct methods for manipulating the content of the document should be used before the document is measured and after the first time that it is shown in the editor.
+As the two states of the document - measured and not measured - are too different, distinct methods for manipulating the content of the document should be used before the document is measured and after the first time that it is shown in the editor. 
 
 ## Adding Sections to RadDocument
 
 As explained in the previous section, the state of the document is essential for the methods that can be used on it.
 
-For example, you can build a RadDocument from scratch and add Sections to it as demonstrated in **Example 2**:
+For example, you can build a __RadDocument__ from scratch and add Sections to it as demonstrated in **Example 2**:
 
-#### __[C#] Example 2: Add a Section to a Non-Measured Document__
+#### __[C#] Example 2: Add a section to a not measured document__
 
 {{region radrichtextbox-features-document-elements-raddocument_1}}
 	Section section = new Section();
@@ -85,7 +87,7 @@ For example, you can build a RadDocument from scratch and add Sections to it as 
 {{endregion}}
 
 
-#### __[VB.NET] Example 2: Add a Section to a Non-Measured Document__
+#### __[VB.NET] Example 2: Add a section to a not measured document__
 
 {{region radrichtextbox-features-document-elements-raddocument_2}}
 	Dim section As New Section()
@@ -94,13 +96,13 @@ For example, you can build a RadDocument from scratch and add Sections to it as 
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting a section break.
 
-#### __[C#] Example 3: Insert a Section Break in a Measured Document__
+#### __[C#] Example 3: Insert a section break in a measured document__
 
 {{region radrichtextbox-features-document-elements-raddocument_3}}
 	this.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage);
 {{endregion}}
 
-#### __[VB.NET] Example 3: Insert a Section Break in a Measured Document__
+#### __[VB.NET] Example 3: Insert a section break in a measured document__
 
 {{region radrichtextbox-features-document-elements-raddocument_4}}
 	Me.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage)
@@ -111,11 +113,11 @@ The InsertSectionBreak() method accepts a parameter of type **SectionBreakType**
 
 * **SectionBreakType.NextPage**: The default value. The next section will start on the next page.
 * **SectionBreakType.OddPage**: The next section will start on the next odd page.
-* **SectionBreakType.EvenPage**: Analogically, the next section will start on the next even page.
+* **SectionBreakType.EvenPage**: The next section will start on the next even page.
 
 >The distribution of the document content in sections is only visible when the document is in **Paged** layout mode. Furthermore, the sections and section breaks can be persisted in XAML, Docx and Rtf. If you export the document to HTML or plain text, the section breaks will be lost.
 
-## Creating a Document at Run-Time
+## Creating a Document at Run Time
 
 One of the common uses of __RadRichTextBox__ is to create a document programmatically and show it in the editor. **RadDocument** can contain several other elements:
         
@@ -131,7 +133,7 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
 
 **Example 4** shows a sample code that creates a new **RadDocument** instance and assigns it to **RadRichTextBox**. 
 
-#### __[C#] Example 4: Create a Document in Code-Behind__
+#### __[C#] Example 4: Create a document in code-behind__
 
 {{region radrichtextbox-features-document-elements-raddocument_5}}
     RadDocument document = new RadDocument();
@@ -169,7 +171,7 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
     this.radRichTextBox.Document = document;
 {{endregion}}
 
-#### __[VB.NET] Example 4: Create a Document in Code-Behind__
+#### __[VB.NET] Example 4: Create a document in code-behind__
 
 {{region radrichtextbox-features-document-elements-raddocument_6}}
 
@@ -209,7 +211,7 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
 {{endregion}}
 
 
-#### Figure 1: The Document Created at Run-Time
+#### Figure 1: The document created at run time
 {% if site.site_name == 'Silverlight' %}![](images/RadRichTextBox_DocumentElements_RadDocument_01.png){% endif %}
 
 {% if site.site_name == 'WPF' %}![](images/RadRichTextBox_DocumentElements_RadDocument_01_WPF.png){% endif %}
@@ -217,7 +219,7 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
 This document is editable. To make it **read only** you have to set the __IsReadOnly__ property of the __RadRichTextBox__ to __True__.
         
 
->tipTo learn more about the read only feature read [this topic]({%slug radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer%}).
+>tipTo learn more about the read-only feature, read [this topic]({%slug radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer%}).
 
 
 

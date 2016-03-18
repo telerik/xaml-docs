@@ -41,17 +41,16 @@ These are the basic __FunctionBase__ members:
 * __FunctionInfo__: Property of type FunctionInfo. It provides description of the function and its arguments. For a more detailed description of this class, you may follow [this](#functioninfo) link.
             
 
-* __ArgumentConversionRules__: This property describes the way different argument types are interpreted. The _FunctionBase__ API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of these argument types differently. For more information, you may follow [this](#argumentconversionrules) link. <Comment: Please verify my change did not create a technical error.>
+* __ArgumentConversionRules__: This property describes the way different argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of these argument types differently. For more information, you may follow [this](#argumentconversionrules) link. 
             
 
-* __Evaluate__ and __EvaluateOverride__ methods: The function calculations take place in these methods. In order to define a custom function you need to override the __EvaluateOverride__ method so that later you may obtain the function calculations value through the __Evaluate__ method. <Comment: The phrase "you may obtain the function calculations value" is vague to me. What are function calculations?>
+* __Evaluate__ and __EvaluateOverride__ methods: The function calculations take place in these methods. In order to define a custom function you need to override the __EvaluateOverride__ method so that later you may obtain the result value of the function through the __Evaluate__ method.
             
 
 Additionally each custom function needs to be registered through the __FunctionManager__ class. This is easily done by passing an instance of the function class to the static __Register()__ method.
         
 
 __Example 1__ shows how to register a function class named ArgumentsFunction, which inherits FunctionBase.
-        <Comment: Please verify that my rewrite of the previous sentence did not create an error.>
 
 #### __[C#] Example 1: Register custom function__
 
@@ -72,22 +71,21 @@ __Figure 1__ shows the base abstract function classes.
 Figure 1: Functions inheritance
 ![Rad Spread Processing Features Formulas Custom Functions 01](images/RadSpreadProcessing_Features_Formulas_Custom_Functions_01.png)
 
-* __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method, which handles the logic when an invalid arguments count is inputted by the user. By inheriting __FunctionBase__ you must override the __EvaluateOverride(FunctionEvaluationContext&lt;RadExpression&gt; context)__ method, so you need to handle the whole logic of converting __RadExpression__ arguments to function arguments. <Comment: What do you mean by whole logic?>
+* __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method, which handles the logic when an invalid arguments count is inputted by the user. By inheriting __FunctionBase__ you must override the __EvaluateOverride(FunctionEvaluationContext&lt;RadExpression&gt; context)__ method, so you need to handle the logic of converting __RadExpression__ arguments to function arguments. 
             
 
 * __FunctionWithArguments__: Handles the basic logic of converting __RadExpression__'s value to some other value type corresponding to the ArgumentType defined in the FunctionInfo property. By inheriting from this class you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;object&gt; context)__ method and handle an array of already converted function argument values.
             
 
-* __FunctionWithSameTypeArguments<T>__: By inheriting this class you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;T&gt; context)__ method and handle an array of arguments with same type T. <Comment: The phrase "same type T" sounds odd to me.>
+* __FunctionWithSameTypeArguments<T>__: By inheriting this class you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;T&gt; context)__ method and handle an array of arguments with same type T.
             
 
-* __StringInFunctions__, __NumbersInFunction__, __BooleansInFunction__: These classes inherit directly from __FunctionWithSameTypeArguments<String>__, __FunctionWithSameTypeArguments<double>__ and __FunctionWithSameTypeArguments<bool>__. Using them is appropriate in cases when the function has the respective argument type - String, double or Boolean. <Comment: The capitalization of Strong, double and Boolean are not consistent. If they are case sensitive, I suggest you match the case used in the name of the classes.>
+* __StringInFunctions__, __NumbersInFunction__, __BooleansInFunction__: These classes inherit directly from __FunctionWithSameTypeArguments<String>__, __FunctionWithSameTypeArguments<double>__ and __FunctionWithSameTypeArguments<bool>__. Using them is appropriate in cases when the function has the respective argument type - string, double or boolean. 
             
 
 ## ArgumentConversionRules
 
-The __ArgumentConversionRules__ class provides properties that describe the way different function argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of these argument types differently. Additionally, **RadSpreadsheet** allows to be made difference between __direct arguments__ (value passed directly into the formula) and __indirect arguments__ (values that depending on some other cells referencing).
-<Comment: The phrase "allows to be made difference between" is unclear to me. I think you mean to say that **RadSpreadsheet** allows you to pass argument types that are direct arguments or indirect arguments.>        
+The __ArgumentConversionRules__ class provides properties that describe the way different function argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of these argument types differently. Additionally, **RadSpreadsheet** allows to distinguish __direct arguments__ (value passed directly into the formula) and __indirect arguments__ (values that depending on some other cells referencing).    
 
 __ArgumentConversionRules__ has the following properties:
         
@@ -110,7 +108,7 @@ __ArgumentConversionRules__ has the following properties:
 * __EmptyIndirectArgument__: The ArgumentInterpretation of an Empty cell value, passed as an indirect argument.
             
 
-* __NumberIndirectArgument__: The ArgumentInterpretation of a Number cell value, passed as an indirect argument. <Comment: I think I corrected a technical error by changing direct to indirect. Please confirm.>
+* __NumberIndirectArgument__: The ArgumentInterpretation of a Number cell value, passed as an indirect argument.
             
 
 * __BoolIndirectArgument__: The ArgumentInterpretation of a Boolean cell value, passed as an indirect argument.
@@ -248,16 +246,15 @@ You can convert a **CellReferenceRange** object to **CellRange** with an extensi
 
 ## Custom Function Examples
 
-__Example 5__ shows a custom function named __"ARGUMENTS"__ inheriting from the __FunctionBase__ class. In the __FunctionInfo__ definition you can see that the function has three required arguments and three optional arguments with __optionalArgumentsRepeatsCount__ equal to 3.
+__Example 5__ shows a custom function named __'ARGUMENTS'__ inheriting from the __FunctionBase__ class. In the __FunctionInfo__ definition you can see that the function has three required arguments and three optional arguments with __optionalArgumentsRepeatsCount__ equal to 3.
         
 
 The result of the function's calculations is the number of arguments passed to the function, as you can see in the EvaluateOverride() method.
         
 
 __Example 5__ shows how to create the 'ARGUMENTS' function.
-<Comment: In the paragraph at the beginning of this section you used __"Arguments"__ and in this caption you used 'ARGUMENTS'. Do they mean the same thing? Is there a reason they aren't the same? In the next example caption you do it different again. I suggest you make them consistent.>        
 
-#### __[C#] Example 5: Create ARGUMENTS function__
+#### __[C#] Example 5: Create 'ARGUMENTS' function__
 
 {{region radspreadprocessing-features-formulas-custom-functions_3}}
 	
@@ -312,11 +309,10 @@ __Example 5__ shows how to create the 'ARGUMENTS' function.
 
 
 
-__Example 6__ shows a custom function named "E" that inherits from the __FunctionBase__ class. The function takes no arguments and it always returns the Napier's constant.
+__Example 6__ shows a custom function named 'E' that inherits from the __FunctionBase__ class. The function takes no arguments and it always returns the Napier's constant.
         
 
-__Example 6__ shows how to create the 'E' function.
-<Comment: Similar to the previous comment, do you mean "E" or 'E' or E? I think it should be consistent. Also, is Napier's constant and E the same?"        
+__Example 6__ shows how to create the 'E' function.        
 
 #### __[C#] Example 6: Create E function__
 

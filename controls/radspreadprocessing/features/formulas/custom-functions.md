@@ -35,10 +35,10 @@ The document model provides a powerful API for creating custom functions. All fu
 These are the basic __FunctionBase__ members:
         
 
-* __Name__: Property of type String. It defines the name of the function. The property is used for registering the function, so the name of the function must be unique (case insensitive). If a function with is registered with the same name, it overrides the previous function registered with this name.
+* __Name__: Property of type String. It defines the name of the function. The property is used for registering the function, so the name of the function must be unique (case insensitive). If a function is registered with the same name, it overrides the previous function registered with this name.
             
 
-* __FunctionInfo__: Property of type FunctionInfo. It provides description of the function and its arguments. For a more detailed description of this class, you may follow [this](#functioninfo) link.
+* __FunctionInfo__: Property of type FunctionInfo. It provides a description of the function and its arguments. For a more detailed description of this class, you may follow [this](#functioninfo) link.
             
 
 * __ArgumentConversionRules__: This property describes the way different argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of these argument types differently. For more information, you may follow [this](#argumentconversionrules) link. 
@@ -47,7 +47,7 @@ These are the basic __FunctionBase__ members:
 * __Evaluate__ and __EvaluateOverride__ methods: The function calculations take place in these methods. In order to define a custom function you need to override the __EvaluateOverride__ method so that later you may obtain the result value of the function through the __Evaluate__ method.
             
 
-Additionally each custom function needs to be registered through the __FunctionManager__ class. This is easily done by passing an instance of the function class to the static __Register()__ method.
+Additionally, each custom function needs to be registered through the __FunctionManager__ class. This is easily done by passing an instance of the function class to the static __Register()__ method.
         
 
 __Example 1__ shows how to register a function class named ArgumentsFunction, which inherits FunctionBase.
@@ -62,7 +62,7 @@ __Example 1__ shows how to register a function class named ArgumentsFunction, wh
 
 ## Functions Inheritance Tree
 
-The document model provides an inheritance tree of classes that provide ready to use functionalities for different function types depending on the function arguments and the desired result.
+The document model provides an inheritance tree of classes that provide ready-to-use functionalities for different function types depending on the function arguments and the desired result.
         
 
 __Figure 1__ shows the base abstract function classes.
@@ -71,21 +71,21 @@ __Figure 1__ shows the base abstract function classes.
 Figure 1: Functions inheritance
 ![Rad Spread Processing Features Formulas Custom Functions 01](images/RadSpreadProcessing_Features_Formulas_Custom_Functions_01.png)
 
-* __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method, which handles the logic when an invalid arguments count is inputted by the user. By inheriting __FunctionBase__ you must override the __EvaluateOverride(FunctionEvaluationContext&lt;RadExpression&gt; context)__ method, so you need to handle the logic of converting __RadExpression__ arguments to function arguments. 
+* __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method, which handles the logic when an invalid arguments count is inputted by the user. By inheriting __FunctionBase__, you must override the __EvaluateOverride(FunctionEvaluationContext&lt;RadExpression&gt; context)__ method, so you need to handle the logic of converting __RadExpression__ arguments to function arguments. 
             
 
-* __FunctionWithArguments__: Handles the basic logic of converting __RadExpression__'s value to some other value type corresponding to the ArgumentType defined in the FunctionInfo property. By inheriting from this class you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;object&gt; context)__ method and handle an array of already converted function argument values.
+* __FunctionWithArguments__: Handles the basic logic of converting __RadExpression's__ value to some other value type corresponding to the ArgumentType defined in the FunctionInfo property. By inheriting from this class, you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;object&gt; context)__ method and handle an array of already converted function argument values.
             
 
-* __FunctionWithSameTypeArguments<T>__: By inheriting this class you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;T&gt; context)__ method and handle an array of arguments with same type T.
+* __FunctionWithSameTypeArguments<T>__: By inheriting this class, you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;T&gt; context)__ method and handle an array of arguments with same type T.
             
 
-* __StringInFunctions__, __NumbersInFunction__, __BooleansInFunction__: These classes inherit directly from __FunctionWithSameTypeArguments<String>__, __FunctionWithSameTypeArguments<double>__ and __FunctionWithSameTypeArguments<bool>__. Using them is appropriate in cases when the function has the respective argument type - string, double or boolean. 
+* __StringInFunctions__, __NumbersInFunction__, __BooleansInFunction__: These classes inherit directly from __FunctionWithSameTypeArguments<String>__, __FunctionWithSameTypeArguments<double>__ and __FunctionWithSameTypeArguments<bool>__. Using them is appropriate in cases when the function has the respective argument type - string, double or Boolean. 
             
 
 ## ArgumentConversionRules
 
-The __ArgumentConversionRules__ class provides properties that describe the way different function argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array) and each function may interpret each of these argument types differently. Additionally, **RadSpreadsheet** allows to distinguish __direct arguments__ (value passed directly into the formula) and __indirect arguments__ (values that depending on some other cells referencing).    
+The __ArgumentConversionRules__ class provides properties that describe the way different function argument types are interpreted. The functions API works with 5 argument types (Logical, Number, Text, Reference and Array), and each function may interpret each of these argument types differently. Additionally, **RadSpreadsheet** allows you to distinguish __direct arguments__ (value passed directly into the formula) and __indirect arguments__ (values that depend on some other cells referencing).    
 
 __ArgumentConversionRules__ has the following properties:
         
@@ -182,16 +182,16 @@ __FunctionInfo__ has the following properties:
 
 * __i is integer number__
 
-* __IsDefaultValueFunction__: Returns Boolean indicating whether the function is a default value function.
+* __IsDefaultValueFunction__: Returns Boolean, indicating whether the function is a default value function.
             
 
 * When __true__, the function returns some default value when __all inputted values__ have __ArgumentInterpretation.Ignore__ in the ArgumentConversionRules of the function.
                 
 
-* When __false__, the function returns ErrorExpressions.ValueError when __all inputted values__ are invalid even if they have __ArgumentInterpretation.Ignore__ in the ArgumentConversionRules of the function.
+* When __false__, the function returns ErrorExpressions.ValueError when __all inputted values__ are invalid, even if they have __ArgumentInterpretation.Ignore__ in the ArgumentConversionRules of the function.
                 
 
-* __Format__: Returns the CellValueFormat of the function result, if the result needs specific formatting (for example DateTime or Currency).
+* __Format__: Returns the CellValueFormat of the function result if the result needs specific formatting (for example DateTime or Currency).
             
 
 __Example 3__ shows how to create an instance of the FunctionInfo class.
@@ -227,15 +227,15 @@ You can create a CellReferenceRangeExpression object using the **NameConverter.T
 
 * **string cellRangesNames**: The string representation of the names of the referenced cells. The string could be a reference to a cell that contains an A1-style reference, a name defined as a reference or a reference to a cell as a text string.
 * **Worksheet worksheet**: The Worksheet object that the cell range(s) belongs to.
-* **int rowIndex**: The row index of the cell where the CellReferenceRangeExpression is located(created). 
-* **int columnIndex**: The column index of the cell where the CellReferenceRangeExpression is located(created). 
+* **int rowIndex**: The row index of the cell where the CellReferenceRangeExpression is located (created). 
+* **int columnIndex**: The column index of the cell where the CellReferenceRangeExpression is located (created). 
 * **out CellReferenceRangeExpression expression**: The constructed CellReferenceRangeExpression is returned as an out parameter.
 
->tipThe usage of CellReferenceRangeExpression is demonstrated in the implementation of the INDIRECT function, available in our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/CustomFunctions).
+>tip The usage of CellReferenceRangeExpression is demonstrated in the implementation of the INDIRECT function, available in our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/CustomFunctions).
 
 The API of the CellReferenceRangeExpression allows you to access the different cell reference ranges. This could be done with the **CellReferenceRange** and **CellReferenceRanges** properties.
 
-You can convert a **CellReferenceRange** object to **CellRange** with an extension method from the [ExpressionExtensions](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Spreadsheet_Expressions_ExpressionExtensions.htm) class:
+You can convert a **CellReferenceRange** object to **CellRange** with an extension method from the [ExpressionExtensions](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Spreadsheet_Expressions_ExpressionExtensions.htm) class.
 
 #### __[C#] Example 4: Convert CellReferenceRange to CellRange__
 

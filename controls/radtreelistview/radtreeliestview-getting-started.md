@@ -20,6 +20,8 @@ This article will guide you through the process of creating a sample application
 
 * [Display the Data in RadTreeListView](#display-the-data-in-radtreelistview)
 
+* [Columns](#columns)
+
 * [RadTreeListView vs RadGridView](#radtreelistview-vs-radgridview)
 
 ## Assembly References
@@ -34,7 +36,7 @@ In order to use the __RadTreeListView__ in your application you should add refer
 
 * __Telerik.Windows.Controls.Input__
 
-## Add RadTreeListView to Your Application
+## Add RadTreeListView to the Project
 
 After you make sure you have added the needed assembly references, you can either add the control manually by writing the __XAML code(Example 2)__ or you can drag it from the Visual Studio Toolbox and drop it over the XAML view.
 
@@ -56,9 +58,11 @@ After you make sure you have added the needed assembly references, you can eithe
 {{endregion}}
 
 
-## Prepare Sample Data
+## Populating with Data
 
-For this example we will use a collection that represents the contents of a warehouse. It will contain __WarehouseItem__ objects. Each __WarehouseItem__ will have a __Name__, __Count__ and a collection of __WarehouseItem__ objects. Here is the class definition.
+Populating __RadTreeListView__ with sample data will require a business model, and a view model that exposes a collection that the control can be bound to. This section will cover the process of defining them. 
+
+The example will use a collection that represents the contents of a warehouse. It will contain __WarehouseItem__ objects. Each __WarehouseItem__ will have a __Name__, __Count__ and a collection of __WarehouseItem__ objects. Here is the class definition.
 
 #### __[C#] Example 3: Defining a Sample Business Model__
 
@@ -355,6 +359,8 @@ In order to display the other levels of the hierarchy, you have to define a __Tr
 	</telerik:RadTreeListView>
 {{endregion}}
 
+## Columns
+
 By default __RadTreeListView__ will auto-generate the columns for its data, by creating a column for each property. In order to prevent this you have to set the __AutogenerateColumns__ property to ___False___ and manually add the desired columns to the __Columns__ collection of the control.
 
 #### __[XAML] Example 8: Manually Define the Columns of RadTreeListView__
@@ -377,7 +383,7 @@ By default __RadTreeListView__ will auto-generate the columns for its data, by c
 
 
 
->tip __RadTreeListView__ can use the same columns as __RadGridView__. To learn more about the different types of columns read [here](%slug radgridview-columns-column-types-basic-column).
+>tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns read [here](%slug radgridview-columns-column-types-basic-column).
         
 
 >tip To change the column, which holds the tree view UI, use the __HierarchyColumnIndex__ property.
@@ -394,10 +400,10 @@ __RadTreeListView__ is a control used to display hierarchical data in a tabular 
 
 __RadTreeListView__ displays the data in the same way as __RadGridView__. The difference is that each row plays the role of a tree node, which can be expanded or collapsed.
 
->Please note, that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
+Please note, that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
 
 
->tip Consider using __RadTreeListView__ for displaying only a homogeneous data. For heterogeneous data use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
+Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
 
 >tipYou can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
 

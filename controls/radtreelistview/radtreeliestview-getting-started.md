@@ -12,9 +12,9 @@ position: 3
 
 This article will guide you through the process of creating a sample application with __RadTreeListView__.
 
-* [Assembly References] (#assembly-references)
+* [Assembly References](#assembly-references)
 
-* [Add RadTreeListView to your application](#add-radtreelistview-to-the-project)
+* [Add RadTreeListView to Your Application](#add-radtreelistview-to-the-project)
 
 * [Prepare Sample Data](#prepare-sample-data)
 
@@ -24,7 +24,7 @@ This article will guide you through the process of creating a sample application
 
 ## Assembly References
 
-In order to use the __RadTreeListView__ in your application you should add reference to the following assemblies:
+In order to use the __RadTreeListView__ in your application, you should add references to the following assemblies:
 
 * __Telerik.Windows.Controls__
 
@@ -36,7 +36,7 @@ In order to use the __RadTreeListView__ in your application you should add refer
 
 ## Add RadTreeListView to the Project
 
-After you make sure you have added the needed assembly references, you can either add the control manually by writing the __XAML code(Example 2)__ or you can drag it from the Visual Studio Toolbox and drop it over the XAML view.
+After you make sure you have added the needed assembly references, you can either add the control manually by writing the __XAML code (Example 2)__ or you can drag it from the Visual Studio Toolbox and drop it over the XAML view.
 
 
 >In order to use __RadTreeListView__ in XAML, you have to declare the following namespace:
@@ -58,7 +58,7 @@ After you make sure you have added the needed assembly references, you can eithe
 
 ## Populating with Data
 
-Populating __RadTreeListView__ with sample data will require a business model, and a view model that exposes a collection that the control can be bound to. This section will cover the process of defining them. 
+Populating __RadTreeListView__ with sample data will require a business model and a view model that exposes a collection that the control can be bound to. This section will cover the process of defining them. 
 
 The example will use a collection that represents the contents of a warehouse. It will contain __WarehouseItem__ objects. Each __WarehouseItem__ will have a __Name__, __Count__ and a collection of __WarehouseItem__ objects. Here is the class definition.
 
@@ -212,7 +212,7 @@ The example will use a collection that represents the contents of a warehouse. I
 
 
 
-Here is also an example class that dynamically creates the sample data.
+Here is an example class that dynamically creates the sample data.
 
 #### __[C#] Example 4: Create Sample Data__
 
@@ -341,7 +341,8 @@ __Figure 1: RadTreeListView bound to collection of WarehouseItems__
 
 In order to display the other levels of the hierarchy, you have to define a __TreeListViewTableDefinition__ and set its __ItemsSource__ property to the respective member of the business object. Then you need to set the table definition to the __ChildTableDefinition__ property of __RadTreeListView__. 
 
->In the context of __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__ class, but the __TreeListViewTableDefinition__ one. It exposes an __ItemSource__ property which should be bound to the property that represents the next level of hierarchy. This property should have the same name at each level of the hierarchy.
+>In the context of __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__ class, but instead use the __TreeListViewTableDefinition__ class because it exposes an __ItemSource__ property that should be bound to the property that represents the next level of hierarchy. This property should have the same name at each level of the hierarchy.
+<Comment: Please verify that the changes I made to the previous sentences did not create a technical error.>
 
 #### __[XAML] Example 7: Define a ChildTableDefinition for RadTreeListView__
 
@@ -356,7 +357,7 @@ In order to display the other levels of the hierarchy, you have to define a __Tr
 
 ## Columns
 
-By default __RadTreeListView__ will auto-generate the columns for its data, by creating a column for each property. In order to prevent this you have to set the __AutogenerateColumns__ property to ___False___ and manually add the desired columns to the __Columns__ collection of the control.
+By default, __RadTreeListView__ will auto-generate the columns for its data by creating a column for each property. In order to prevent this, you must set the __AutogenerateColumns__ property to ___False___ and manually add the desired columns to the __Columns__ collection of the control.
 
 #### __[XAML] Example 8: Manually Define the Columns of RadTreeListView__
 
@@ -378,12 +379,12 @@ By default __RadTreeListView__ will auto-generate the columns for its data, by c
 
 
 
->tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns read [here](%slug radgridview-columns-column-types-basic-column).
+>tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns, read [here](%slug radgridview-columns-column-types-basic-column).
         
 
 >tip To change the column, which holds the tree view UI, use the __HierarchyColumnIndex__ property.
 
-Here is a snapshot of the result.
+__Figure 2__ shows a snapshot of the result.
 
 __Figure 2: RadTreeListView with manually defined columns__
 
@@ -391,16 +392,16 @@ __Figure 2: RadTreeListView with manually defined columns__
 
 ## RadTreeListView vs RadGridView
 
-__RadTreeListView__ is a control used to display hierarchical data in a tabular format. In order to achieve this, the control combines the functionality of __RadGridView__ control with the ability to display data in a tree view manner. This is implemented by directly inheriting __RadGridView__ and implementing the tree view behavior.
+You should use the __RadTreeListView__ control to display hierarchical data in a tabular format. In order to achieve this, the control combines the functionality of __RadGridView__ control with the ability to display data in a tree view manner. This is implemented by directly inheriting __RadGridView__ and implementing the tree view behavior.
 
 __RadTreeListView__ displays the data in the same way as __RadGridView__. The difference is that each row plays the role of a tree node, which can be expanded or collapsed.
 
-Please note, that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
+Please note that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
 
 
 Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
 
->tipYou can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
+>tip You can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
 
 # See Also
 

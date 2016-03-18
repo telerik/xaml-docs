@@ -14,11 +14,9 @@ This article will guide you through the process of creating a sample application
 
 * [Assembly References] (#assembly-references)
 
-* [Add RadTreeListView to your application](#add-radtreelistview-to-your-application)
+* [Add RadTreeListView to your application](#add-radtreelistview-to-the-project)
 
 * [Prepare Sample Data](#prepare-sample-data)
-
-* [Display the Data in RadTreeListView](#display-the-data-in-radtreelistview)
 
 * [Columns](#columns)
 
@@ -317,9 +315,6 @@ Finally, define a view model containing the created sample data.
 	        End Get
 	    End Property
 	End Class
-
-	
-## Display the Data in RadTreeListView
 
 In order to display your data, you need to bind the __ItemsSource__ property of __RadTreeListView__.
 

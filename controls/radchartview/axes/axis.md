@@ -16,11 +16,11 @@ The chart axis is represented by the abstract __Axis__ class and is responsible 
 
 Here are the __common properties__ for all kinds of axes:  
 
-* __PlotMode__ (supported by Categorical and DateTime Axis only): RadChartView allows you to modify the layout of the axis to better fit the different chart types in the chart area. You can read more about this property here.  <Comment: Missing the link.>      
+* __PlotMode__ (supported by Categorical and DateTime Axis only): RadChartView allows you to modify the layout of the axis to better fit the different chart types in the chart area. You can read more about the property in the [Plot Mode]({%slug radchartview-axes-plotmode%}) help article.     
 
 * __LabelInterval__: Specifies the value indicating that only one out of n-axis labels should be visible, where n is the value of the property.        
 
-* __LabelFormat__: Format the text in the axis labels by specified [ Standard](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) or [ Custom Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx).        
+* __LabelFormat__: Format the text in the axis labels by specified [Standard](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) or [Custom Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx).        
 
 * __MajorStep__ (available for LinearAxis): Specify a step for the major ticks that determines at which values will major ticks be displayed. It is most commonly used with __Minimum__ and __Maximum__ properties.        
 
@@ -155,7 +155,7 @@ The linear axis is a plain numerical axis, that is, the LinearAxis class inherit
 ## Common Events
 
 There are several common events exposed by the different type of axes.
-<Comment: Please check the end of the event names in the list below. I think the HTML is messed up and you meant to end with just a double underscore.>
+
 * __ActualRangeChanged__: Occurs when the actual range changes. The event arguments are of type __Telerik.Charting.NumericalRangeChangedEventArgs__ and expose the following properties:
 	* __NewRange__: A property of type __Telerik.Charting.ValueRange&lt;double&gt;__ that gets the new range of the axis.
 	* __PreviousRange__: A property of type __Telerik.Charting.ValueRange&lt;double&gt;__ that gets the previous range of the axis.

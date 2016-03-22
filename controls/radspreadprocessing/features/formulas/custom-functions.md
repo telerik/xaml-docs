@@ -314,7 +314,7 @@ __Example 6__ shows a custom function named 'E' that inherits from the __Functio
 
 __Example 6__ shows how to create the 'E' function.        
 
-#### __[C#] Example 6: Create E function__
+#### __[C#] Example 6: Create 'E' function__
 
 {{region radspreadprocessing-features-formulas-custom-functions_4}}
     public class E : FunctionBase

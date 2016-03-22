@@ -12,9 +12,10 @@ position: 7
 
 There are three parts of the column that can be customized separately from each other:
 
-* [content cells](#content-cells) - by customizing content cell you define the look of all the cells in the column
-* [footer cells](#footer-cells) - customizing footer cells affects the appearance of the column footers
-* [header cells](#header-cells) - customizing header cells affects the look of the column headers
+* [Content Cells](#content-cells) 
+* [Footer Cells](#footer-cells) 
+* [Header Cells](#header-cells) 
+* [Text Properties](#text-properties)
 
 ## Content Cells
 
@@ -50,6 +51,36 @@ To change the look and the appearance of header cells you have to define an appr
 To learn more about the column headers take a look at the [Column Headers]({%slug gridview-columns-column-headers%}) topic.
 
 >The customizations apply to all cells of a type. 
+
+## Text Properties
+__GridViewColumn__ provides out-of-the-box mechanism for customizing the visual appearance of its text content. This can be achieved through the __TextWrapping__, __TextAlignment__, __TextTrimming__ and __TextDecorations__ properties.
+
+#### __[XAML] Example 1: Setting the Text Properties of GridViewColumn__
+
+	<telerik:RadGridView Name="clubsGrid" 
+                     ItemsSource="{Binding Clubs}"
+                     AutoGenerateColumns="False"
+                     GroupRenderMode="Flat"
+                     Margin="5">
+            <telerik:RadGridView.Columns>
+	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" 
+	                                        TextWrapping="Wrap"/>
+	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
+	                                        TextAlignment="Right"
+	                                        Header="Est." 
+	                                        DataFormatString="{}{0:yyyy}"/>
+	            <telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}"
+	                                        TextTrimming="WordEllipsis"
+	                                        Header="Stadium" 
+	                                        DataFormatString="{}{0:N0}"/>
+	            <telerik:GridViewDataColumn DataMemberBinding="{Binding FanClubCount}"
+                                        TextDecorations="Underline"/>
+    		</telerik:RadGridView.Columns>
+	</telerik:RadGridView>
+
+
+#### __Figure 1: GridViewColumn with customized text properties__ 
+![](images/gridview-textproperties-column.png)
 
 # See Also
 

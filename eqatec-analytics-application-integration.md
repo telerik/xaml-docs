@@ -12,7 +12,7 @@ position: 14
 
 When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution. With Q3 2013 release UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides integrated support for [Telerik Analytics](http://www.telerik.com/analytics). Using Analytics you will be able to trace certain features of the controls and get statistics about their usage.
       
-In order to use this service, first you should login to the [Telerik Platform](https://platform.telerik.com/), create an Analytics project and get a unique product key for your application. For more information please check out the [Introduction to Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction) topic.
+In order to use the service you should contact sales@telerik.com and they will help you get your product key. For more information please check out the [Introduction to Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction) topic.
       
 {% if site.site_name == 'Silverlight' %}
 Then you can create a new Telerik Silverlight Application with enabled Analytics support or you can enable it in an existing project. 

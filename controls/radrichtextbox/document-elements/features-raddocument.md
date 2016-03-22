@@ -50,11 +50,9 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 
 * __SectionDefaultPageOrientation__: Defines the default section page orientation. This property is of type [**PageOrientation**](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_PageOrientation.htm) and could be set to **Portrait** or **Landscape**.
 
-* __ParagraphDefaultSpacingAfter__: Defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after for each of the paragraphs, use the respective property of the [__Paragraph__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm) class.
-<Comment: The phrase "after for each" is confusing to me. I think you mean "for after each" or "after each". Please reveiw both sentences in the previous list item and fix as appropriate.>         
+* __ParagraphDefaultSpacingAfter__: Defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after each of the paragraphs, use the respective property of the [__Paragraph__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm) class.      
 
-* __ParagraphDefaultSpacingBefore__: Defines the default spacing before for each of the paragraphs in the __RadDocument__. To assign different spacing before for each of the paragraphs, use the respective property of the __Paragraph__ class.
-<Comment: The phrase "before for each" is confusing to me. I think you mean "for before each" or "before each". Please reveiw both sentences in the previous list item and fix as appropriate.>
+* __ParagraphDefaultSpacingBefore__: Defines the default spacing before for each of the paragraphs in the __RadDocument__. To assign different spacing before each of the paragraphs, use the respective property of the __Paragraph__ class.
 
 * __LineSpacing__: Specifies the value for the space between the lines.
 
@@ -72,7 +70,7 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 
 The first time a __RadDocument__ is shown inside a __RadRichTextBox__ in the Visual Tree, it is measured by the framework and arranges its children. This is the moment when the layout cycle is completed; each of the document elements calculates its size and arranges its children.
 
-As the two states of the document - measured and not measured are two different, distinct methods for manipulating the content of the document, and should be used before the document is measured and after the first time that it is shown in the editor.
+As the two states of the document - measured and not measured are too different, distinct methods for manipulating the content of the document should be used before the document is measured and after the first time that it is shown in the editor.
 
 ## Adding Sections to RadDocument
 

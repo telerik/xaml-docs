@@ -12,14 +12,14 @@ position: 14
 
 When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution. With Q3 2013 release UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides integrated support for [Telerik Analytics](http://www.telerik.com/analytics). Using Analytics you will be able to trace certain features of the controls and get statistics about their usage.
       
-In order to use the service you should contact sales@telerik.com and they will help you get your product key. For more information please check out the [Introduction to Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction) topic.
+In order to use the service you should contact sales@telerik.com and they will help you get your product key. For more information, please check out the [Introduction to Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction) topic.
       
 {% if site.site_name == 'Silverlight' %}
 Then you can create a new Telerik Silverlight Application with enabled Analytics support or you can enable it in an existing project. 
       
 Both options are explained in details below.
       
-## How to create a new project supporting Analytics
+## How to Create a New Project Supporting Analytics
      
 Using the [Telerik Visual Extensions]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}) you can quickly create an application configured to use UI for Silverlight.
         
@@ -30,9 +30,9 @@ Enable the option for  __Analytics support__ and __Finish__ the setup.
 
 >Please make sure that you have specified the correct key you got after registering your application on [https://platform.telerik.com/](https://platform.telerik.com/).
           
-The wizard references two additional Telerik assemblies ( __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__ ) and initializes the __Telerik.Windows.Analytics.TraceMonitor__ used to track the controls features usage in the App.xaml.cs file, the generated code will look like this:
+The wizard references two additional Telerik assemblies ( __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__ ) and initializes the __Telerik.Windows.Analytics.TraceMonitor__ used to track the controls features usage in the App.xaml.cs file. The generated code will look like illustrated in __Example 1__.
         
-#### __C#__
+#### __[C#] Example 1: TraceMonitor initialization__
 
 {{region eqatec-analytics-application-integration_0}}
 	public App()
@@ -51,13 +51,13 @@ where [product_key] will be replaced with the entered in the __New Project Wizar
 >tipThe code related to Telerik Analytics is commented when a new project is created without enabling the Analytics option.
 {% endif %}
     
-## How to add support to existing applications
+## How to Add Support to Existing Applications
       
 First, you will need to reference the __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__ in your application. Note that these dlls are distributed together with the other assemblies in the UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} suite.        
       
-Then in order to configure the project to support Analytics, please add the the following code in the constructor of the App class:        
+Then, in order to configure the project to support Analytics, please add the code from __Example 2__ in the constructor of the App class.        
 
-#### __C#__
+#### __[C#] Example 2: Configuring a project to support Analytics__
 
 {{region eqatec-analytics-application-integration_1}}
 	public App()
@@ -68,12 +68,12 @@ Then in order to configure the project to support Analytics, please add the the 
 
 where [product_key] should be replaced with the __product key__ you got after registering your application on [https://platform.telerik.com/](https://platform.telerik.com/)
 
-## How Analytics works
+## How Analytics Works
       
-This section demonstrates how Analytics work with Telerik controls. Let’s, for example, create a test application registered as AnalyticsTestApp in the [Telerik Platform](https://platform.telerik.com/). Add a few controls that support Analytics to it:
+This section demonstrates how Analytics works with Telerik controls. Let’s, for example, create a test application registered as AnalyticsTestApp in the [Telerik Platform](https://platform.telerik.com/). Add a few controls that support Analytics to it.
         
 
-#### __XAML__
+#### __[XAML] Example 3: Add controls__
 
 {{region eqatec-analytics-application-integration_1}}
 	<StackPanel Orientation="Horizontal"> 
@@ -87,11 +87,11 @@ This section demonstrates how Analytics work with Telerik controls. Let’s, for
 	</StackPanel> 
 {{endregion}}
 
-All that is needed is to set the __telerik:Analytics.Name__ attached property to the used in the example RadComboBox and RadButton. Note that the set values will then be used in the __dashboard__.
+All that is needed is to set the __telerik:Analytics.Name__ attached property to the used in __Example 3__ RadComboBox and RadButton. Note that the set values will be used in the __dashboard__.
         
-Here is the updated code:        
+__Example 4__ shows how the updated code looks like.        
 
-#### __XAML__
+#### __[XAML] Example 4: Set Analytics.Name property__
 
 {{region eqatec-analytics-application-integration_2}}
 	<StackPanel Orientation="Horizontal"> 
@@ -105,7 +105,7 @@ Here is the updated code:
 	</StackPanel>
 {{endregion}}
 
-To trace the features please follow the next steps:
+To trace the features, please follow the next steps:
 
 * Run the project with the provided code
        
@@ -115,7 +115,7 @@ To trace the features please follow the next steps:
             
 * Go to the Analytics Project Dashboard
          
-*  Select the __Live__ link:
+* Select the __Live__ link:
 
 ![eqatec dashboard 1](images/eqatec_dashboard_1.png)
 
@@ -130,7 +130,7 @@ Clicking on the __Session__ link will show additional details about the session 
 If you go to the __Feature Use link__ in the Dashboard panel, you will find information and statistics for the registered features for different periods of time:
 ![eqatec dashboard 4](images/eqatec_dashboard_4.png)
 
-## Traceable features in UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
+## Traceable Features in UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
 
 Currently only few controls support analytics out of the box. Note that only user interactions will be tracked - initial values and values from Bindings are not supported.
 

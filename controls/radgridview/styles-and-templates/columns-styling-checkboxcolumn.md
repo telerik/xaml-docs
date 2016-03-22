@@ -22,7 +22,7 @@ This topic will show you how to style the __GridViewCheckBoxColumn__.
 
 The cells of __RadGridView__ have two templates for their current state - when in __view mode__ and in __edit mode__. By default, __GridViewCheckBoxColumn__ uses a __GridViewCheckBox__ when in __view mode__ and the standard __CheckBox__ control as its __editor__. __GridViewCheckBox__ is an element that emulates the behavior of a __CheckBox__ and is especially designed for __RadGridView__. 
 
->In order to style the whole cell rather than the __GridViewCheckBox__ element only, you can set the __CellStyle__ property of the __GridViewCheckBoxColumn__. More information can be found in the [Styling Cells]({%slug gridview-styling-cell%}) topic. 
+>In order to style the whole cell rather than the __GridViewCheckBox__ element only, you can set the __CellStyle__ property of the __GridViewCheckBoxColumn__. You can find more information in the [Styling Cells]({%slug gridview-styling-cell%}) topic. 
 
 ## Styling GridViewCheckBoxColumn in View Mode
 
@@ -31,7 +31,7 @@ The cells of __RadGridView__ have two templates for their current state - when i
 ![Rad Grid View Styles and Templates Styling Check Box Column 01](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_01.PNG)
 
 
-For modifying the visual appearance of the cell in __view mode__, the __ControlTemplate__ of __GridViewCheckBox__ should be modified.
+In order to modify the visual appearance of a cell in __view mode__, the __ControlTemplate__ of __GridViewCheckBox__ should be modified.
 
 #### __[XAML] Example 1: Defining the ControlTemplate of GridViewCheckBox__
 
@@ -41,7 +41,7 @@ For modifying the visual appearance of the cell in __view mode__, the __ControlT
 
 
 
-After the needed __ControlTemplate__ is defined, it can be applied through the __Template__ property of __GridViewCheckBox__.
+After the needed __ControlTemplate__ is defined, it can be applied using the __Template__ property of __GridViewCheckBox__.
 
 #### __[XAML] Example 2: Applying the ControlTemplate to GridViewCheckBox__
 
@@ -63,7 +63,7 @@ In order to alter the appearance of the __editor__ of __GridViewCheckBoxColumn__
             ...
     </ControlTemplate>
 
-
+<Comment: The formatting of the previous section looks incorrect to me.>
 
 The customized __ControlTemplate__ can be applied as follows.
 
@@ -77,7 +77,7 @@ The customized __ControlTemplate__ can be applied as follows.
 
 ## Applying the Styles to GridViewCheckBoxColumn explicitly
 
-The aforementioned approach implies defining the styles __implicitly__. If applying the modifications to a particular instance of __RadGridView__ is needed, these Styles can be applied __explicitly__ through the __Resources__ of __RadGridView__.
+The aforementioned approach implies defining the styles __implicitly__. If you need to apply the modifications to a particular instance of __RadGridView__, you can apply these Styles __explicitly__ through the __Resources__ of __RadGridView__.
 
 	<telerik:RadGridView.Resources>
 		...
@@ -85,7 +85,7 @@ The aforementioned approach implies defining the styles __implicitly__. If apply
 
 ## Centering GridViewCheckBoxColumn
 
-In order to center the __CheckBox__ in __GridViewCheckBoxColumn__ you can define a style targeting __GridViewCell__ and set the __HorizontalContentAlignment__ property to __"Center"__:
+In order to center the __CheckBox__ in __GridViewCheckBoxColumn__, you can define a style targeting __GridViewCell__ and set the __HorizontalContentAlignment__ property to __"Center"__:
 
 ####  __[XAML] Example 4: Centering the GridViewCheckBoxColumn__
 
@@ -98,12 +98,12 @@ In order to center the __CheckBox__ in __GridViewCheckBoxColumn__ you can define
 
 
 Now the __GridViewCheckBoxColumn__ will look like:
-        
+ <Comment: This is figure 2. Please add an SEO-friendly caption and call out in the sentence above.>       
 
 ![Rad Grid View Styles and Templates Styling Check Box Column 03](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_03.PNG)
 
 However, there is a pixel offset when the __GridViewCheckBoxColumn__ goes into edit mode:
-        
+<Comment: This next image is figure 3. Please add an SEO-friendly caption and call out in the sentence above.>        
 
 ![Rad Grid View Styles and Templates Styling Check Box Column 04](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_04.PNG)
 
@@ -121,7 +121,7 @@ In order to align the default editor of __GridViewCheckBoxColumn__ correctly, yo
 	   }
 	}
 
-
+<Comment: This next image is figure 4. Please add an SEO-friendly caption and call out in the sentence above.>
 
 Here is the result:
         

@@ -17,7 +17,7 @@ position: 4
 To use __RadRichTextBox__ as a rich content viewer you have to disable the user from editing its content. This is done via the __IsReadOnly__ property. You just have to set it to true.
         
 
-#### __XAML__
+#### __[XAML] Example 1: Disable editing__
 
 {{region radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer_0}}
 	<telerik:RadRichTextBox x:Name="radRichTextBox" IsReadOnly="True" />

@@ -42,6 +42,8 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 * [Filtering Control Template Structure](#filteringcontrol)
 
+* [Filtering DropDown Template Structure](#filteringdropdown)
+
 * [New Row Template Structure](#gridviewnewrow)
 
 ##  RadGridView
@@ -456,6 +458,29 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
                           
 
 * __PART_ClearFilterButton__ - represents the button that you can use to clear Filtering.
+
+
+## FilteringDropDown
+
+![](images/RadGridView_Styles_and_Templates_Templates_Structure_FilteringDropDown.png)
+
+* __Grid__
+
+* __PART_DropDownButton__ - represents the funnel button which you need to click to display the dropdown.
+
+* __Border__
+
+* __Grid__
+
+* __Path__ - the outer border for the filtering icon
+
+* __Path__ - the background for the filtering icon
+
+* __Path__ - the outer border for the filtering icon, when filtering is applied
+
+* __Path__ - the background for the filtering icon, when filtering is applied
+
+* __PART_DropDownPopup__ - the filtering popup
                           
 
 ## GridViewNewRow

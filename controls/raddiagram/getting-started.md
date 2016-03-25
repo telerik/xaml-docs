@@ -18,7 +18,7 @@ Telerik __RadDiagrams__ are a powerful diagramming framework that can bring to l
 * [Adding RadDiagramShapes] (#adding-raddiagramshapes)
 * [Adding RadDiagramConnections] (#adding-raddiagramconnections)
 * [RadDiagram Example - "if-else" operator flow diagram] (#raddiagram-example---if-else-operator-flow-diagram)
-<Comment: I corrected the capitalization of the heading for RadDiagram Example. Please verify that my correction did not break the previous link to that section of the article.>
+
 #### __Figure 1: Flow diagram example__  
 ![Rad Diagram Getting Started Sample](images/RadDiagram_GettingStartedSample.png)
 

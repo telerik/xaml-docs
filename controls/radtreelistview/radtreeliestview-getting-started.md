@@ -10,39 +10,21 @@ position: 3
 
 # Getting Started
 
+This article will guide you through the process of creating a sample application with __RadTreeListView__.
 
+* [Assembly References](#assembly-references)
 
-The __RadTreeListView__ is a control used to display hierarchical data in a tabular format. In order to achieve this, the __RadTreeListView__ combines the functionality of the __RadGridView__ control with the ability to display data in a tree view manner. This is implemented by directly inheriting the __RadGridView__ and implementing the tree view behavior.
+* [Add RadTreeListView to Your Application](#add-radtreelistview-to-the-project)
 
-The __RadTreeListView__ displays the data in the same way as the __RadGridView__. The difference is that each row plays the role of a tree node, which can be expanded and collapsed.
+* [Prepare Sample Data](#prepare-sample-data)
 
->Please note that the __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
+* [Columns](#columns)
 
+* [RadTreeListView vs RadGridView](#radtreelistview-vs-radgridview)
 
->tip Consider using the __RadTreeListView__ for displaying only a homogeneous data. For heterogeneous data use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
+## Assembly References
 
-The thing that you should use in order to display your data in the __RadTreeListView__ is the __ChildTableDefinitions__ property. In the context of the __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__ class, but the __TreeListViewTableDefinition__ one. It exposes an __ItemSource__ property which should be bound to the property that represents the next level of hierarchy. 
-
->This property should have the same name at each level of the hierarchy. 
-
->As the hierarchical data in the __RadTreeListView__ is displayed in one and the same table, each level of the hierarchy will share one and the same set of columns. This means that your data should provide the needed members at each level of the hierarchy.
-
->caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported. You can consider using [IsExpandedBinding]({%slug radtreelsitview-how-to-control-expand-settings%}) property instead.
-
->tipYou can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
-        
-
-This topic will explain you how to:
-
-* [Add RadTreeListView to your application](#add-radtreelistview-to-your-application)
-
-* [Prepare a Sample Data](#prepare-a-sample-data)
-
-* [Display the Data in the RadTreeListView](#display-the-data-in-the-radtreelistview)
-
-## Add RadTreeListView to your application
-
-In order to use the __RadTreeListView__ in your application you should add reference to the following assemblies:
+In order to use the __RadTreeListView__ in your application, you should add references to the following assemblies:
 
 * __Telerik.Windows.Controls__
 
@@ -52,24 +34,20 @@ In order to use the __RadTreeListView__ in your application you should add refer
 
 * __Telerik.Windows.Controls.Input__
 
->The current version of __RadTreeListView__ (the one that inherits GridViewDataControl) is built on top of __Silverlight 4__. 
+## Add RadTreeListView to the Project
 
-Here is an example of how to instantiate a __RadTreeListView__ in both XAML and code.
+After you make sure you have added the needed assembly references, you can either add the control manually by writing the __XAML code (Example 2)__ or you can drag it from the Visual Studio Toolbox and drop it over the XAML view.
 
->
 
-In order to use the __RadTreeListView__ in XAML, you have to declare the following namespace:
-
-#### __XAML__
-
-{{region radtreeliestview-getting-started_0}}
-
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
+>In order to use __RadTreeListView__ in XAML, you have to declare the following namespace:
+>#### __[XAML] Example 1: Declaring Telerik Namespace__
+>{{region radtreeliestview-getting-started_0}}
+>	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+>{{endregion}}
 
 
 
-#### __XAML__
+#### __[XAML] Example 2: Adding RadTreeListView in XAML__
 
 {{region radtreeliestview-getting-started_1}}
 
@@ -78,36 +56,23 @@ In order to use the __RadTreeListView__ in XAML, you have to declare the followi
 {{endregion}}
 
 
+## Populating with Data
 
-#### __C#__
+Populating __RadTreeListView__ with sample data will require a business model and a view model that exposes a collection that the control can be bound to. This section will cover the process of defining them. 
 
-{{region radtreeliestview-getting-started_2}}
+The example will use a collection that represents the contents of a warehouse. It will contain __WarehouseItem__ objects. Each __WarehouseItem__ will have a __Name__, __Count__ and a collection of __WarehouseItem__ objects. Here is the class definition.
 
-	RadTreeListView radTreeListView = new RadTreeListView();
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtreeliestview-getting-started_3}}
-
-	Dim radTreeListView As New RadTreeListView()
-{{endregion}}
-
-
-
-## Prepare a Sample Data
-
-For this example we will use a collection that represents the contents of a warehouse. It will contain __WarehouseItem__ objects. Each WarehouseItem will have a __Name__, a __Count__ and a collection of __WarehouseItem__ objects. Here is the class definition.
-
-#### __C#__
+#### __[C#] Example 3: Defining a Sample Business Model__
 
 {{region radtreeliestview-getting-started_4}}
 
-	public class WarehouseItem
+	public class WarehouseItem: INotifyPropertyChanged
 	{
-	    public WarehouseItem( string name, int count )
+	    private string name;
+	    private int count;
+	    private ObservableCollection<WarehouseItem> items;
+	
+	    public WarehouseItem(string name, int count)
 	    {
 	        this.Name = name;
 	        this.Count = count;
@@ -115,69 +80,141 @@ For this example we will use a collection that represents the contents of a ware
 	    }
 	    public string Name
 	    {
-	        get;
-	        set;
+	        get 
+	        {
+	            return this.name;
+	        }
+	        set 
+	        {
+	            if (value != this.name)
+	            {
+	                this.name = value;
+	                this.OnPropertyChanged("Name");
+	            }
+	        }
 	    }
 	    public ObservableCollection<WarehouseItem> Items
 	    {
-	        get;
-	        set;
+	        get 
+	        {
+	            return this.items;
+	        }
+	        set 
+	        {
+	            if (value != this.items)
+	            {
+	                this.items = value;
+	                this.OnPropertyChanged("Items");
+	            }
+	        }
 	    }
 	    public int Count
 	    {
-	        get;
-	        set;
+	        get 
+	        {
+	            return this.count;
+	        }
+	        set 
+	        {
+	            if (value != this.count)
+	            {
+	                this.count = value;
+	                this.OnPropertyChanged("Count");
+	            }
+	        }
 	    }
+	
+	    protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
+	    {
+	        PropertyChangedEventHandler handler = this.PropertyChanged;
+	        if (handler != null)
+	        {
+	            handler(this, args);
+	        }
+	    }
+	
+	    private void OnPropertyChanged(string propertyName)
+	    {
+	        this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
+	    }
+	
+	    public event PropertyChangedEventHandler PropertyChanged;
 	}
+
 {{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Defining a Sample Business Model__
 
 {{region radtreeliestview-getting-started_5}}
 
-	Public Class WarehouseItem
-	 Public Sub New(name As String, count As Integer)
-	  Me.Name = name
-	  Me.Count = count
-	  Me.Items = New ObservableCollection(Of WarehouseItem)()
-	 End Sub
-	 Public Property Name() As String
-	  Get
-	   Return m_Name
-	  End Get
-	  Set
-	   m_Name = Value
-	  End Set
-	 End Property
-	 Private m_Name As String
-	 Public Property Items() As ObservableCollection(Of WarehouseItem)
-	  Get
-	   Return m_Items
-	  End Get
-	  Set
-	   m_Items = Value
-	  End Set
-	 End Property
-	 Private m_Items As ObservableCollection(Of WarehouseItem)
-	 Public Property Count() As Integer
-	  Get
-	   Return m_Count
-	  End Get
-	  Set
-	   m_Count = Value
-	  End Set
-	 End Property
-	 Private m_Count As Integer
+		Public Class WarehouseItem
+		Implements INotifyPropertyChanged
+
+        Private _name As String
+        Private _count As Integer
+        Private _items As ObservableCollection(Of WarehouseItem)
+
+        Public Sub New(ByVal name As String, ByVal count As Integer)
+            Me.Name = name
+            Me.Count = count
+            Me.Items = New ObservableCollection(Of WarehouseItem)()
+        End Sub
+        Public Property Name() As String
+            Get
+                Return Me._name
+            End Get
+            Set(ByVal value As String)
+                If value <> Me._name Then
+                    Me._name = value
+                    Me.OnPropertyChanged("Name")
+                End If
+            End Set
+        End Property
+        Public Property Items() As ObservableCollection(Of WarehouseItem)
+            Get
+                Return Me._items
+            End Get
+            Set(ByVal value As ObservableCollection(Of WarehouseItem))
+                If value IsNot Me._items Then
+                    Me._items = value
+                    Me.OnPropertyChanged("Items")
+                End If
+            End Set
+        End Property
+        Public Property Count() As Integer
+            Get
+                Return Me._count
+            End Get
+            Set(ByVal value As Integer)
+                If value <> Me._count Then
+                    Me._count = value
+                    Me.OnPropertyChanged("Count")
+                End If
+            End Set
+        End Property
+
+		Protected Overridable Sub OnPropertyChanged(ByVal args As PropertyChangedEventArgs)
+			Dim handler As PropertyChangedEventHandler = Me.PropertyChangedEvent
+			If handler IsNot Nothing Then
+				handler(Me, args)
+			End If
+		End Sub
+
+		Private Sub OnPropertyChanged(ByVal propertyName As String)
+			Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
+		End Sub
+
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 	End Class
 {{endregion}}
 
 
 
-Here is also an example class that dynamically creates the sample data.
+Here is an example class that dynamically creates the sample data.
 
-#### __C#__
+#### __[C#] Example 4: Create Sample Data__
 
 {{region radtreeliestview-getting-started_6}}
 
@@ -211,7 +248,7 @@ Here is also an example class that dynamically creates the sample data.
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Create Sample Data__
 
 {{region radtreeliestview-getting-started_7}}
 
@@ -241,33 +278,73 @@ Here is also an example class that dynamically creates the sample data.
 	End Class
 {{endregion}}
 
+Finally, define a view model containing the created sample data.
 
+#### __[C#] Example 5: Define a Sample View Model__
+	public class WarehouseViewModel: ViewModelBase
+	{
+	    private ObservableCollection<WarehouseItem> warehouseItems;
+	
+	    public ObservableCollection<WarehouseItem> WarehouseItems 
+	    {
+	        get 
+	        {
+	            if (this.warehouseItems == null)
+	            {
+	                this.warehouseItems = WarehouseService.GetWarehouseData();
+	            }
+	
+	            return this.warehouseItems;
+	        }
+	    }
+	}
 
-## Display the Data in the RadTreeListView
+#### __[VB.NET] Example 5: Define a Sample View Model__
+	Public Class WarehouseViewModel
+		Inherits ViewModelBase
+	
+	    Private _warehouseItems As ObservableCollection(Of WarehouseItem)
+	
+	    Public ReadOnly Property WarehouseItems() As ObservableCollection(Of WarehouseItem)
+	        Get
+	            If Me._warehouseItems Is Nothing Then
+	                Me._warehouseItems = WarehouseService.GetWarehouseData()
+	            End If
+	
+	            Return Me._warehouseItems
+	        End Get
+	    End Property
+	End Class
 
-In order to display your data, you have to set it to the __ItemsSource__ property of the __RadTreeListView__.
+In order to display your data, you need to bind the __ItemsSource__ property of __RadTreeListView__.
 
-#### __C#__
+#### __[XAML] Example 6: Bind RadTreeListView__
 
 {{region radtreeliestview-getting-started_8}}
 
-	this.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData();
+	<Window.Resources>
+		<my:WarehouseViewModel x:Key="MyViewModel"/>
+	</Window.Resources>
+	<telerik:RadTreeListView DataContext="{StaticResource MyViewModel}" 
+							 x:Name="radTreeListView"
+							 ItemsSource="{Binding WarehouseItems}"/>
+
 {{endregion}}
 
 
 
-#### __VB.NET__
+At this point, only the first level of the hierarchical data will get displayed and __RadTreeListView__ will look just like a __RadGridView__. 
 
-{{region radtreeliestview-getting-started_9}}
+__Figure 1: RadTreeListView bound to collection of WarehouseItems__
 
-	Me.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData()
-{{endregion}}
+![](images/RadTreeListViewPopulated.png)
 
+In order to display the other levels of the hierarchy, you have to define a __TreeListViewTableDefinition__ and set its __ItemsSource__ property to the respective member of the business object. Then you need to set the table definition to the __ChildTableDefinition__ property of __RadTreeListView__. 
 
+>In the context of __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__ class, but instead use the __TreeListViewTableDefinition__ class because it exposes an __ItemSource__ property that should be bound to the property that represents the next level of hierarchy. This property should have the same name at each level of the hierarchy.
+<Comment: Please verify that the changes I made to the previous sentences did not create a technical error.>
 
-At this point, only the first level of the hierarchical data will get displayed and the __RadTreeListView__ will look just like a __RadGridView__. In order to display the other levels of the hierarchy, you have to define a __TreeListViewTableDefinition__, to set its __ItemsSource__ property to the respective member of the business object and to set the table definition to the __ChildTableDefinition__ property of the __RadTreeListView__.
-
-#### __XAML__
+#### __[XAML] Example 7: Define a ChildTableDefinition for RadTreeListView__
 
 {{region radtreeliestview-getting-started_10}}
 
@@ -278,11 +355,11 @@ At this point, only the first level of the hierarchical data will get displayed 
 	</telerik:RadTreeListView>
 {{endregion}}
 
+## Columns
 
+By default, __RadTreeListView__ will auto-generate the columns for its data by creating a column for each property. In order to prevent this, you must set the __AutogenerateColumns__ property to ___False___ and manually add the desired columns to the __Columns__ collection of the control.
 
-By default the __RadTreeListView__ will auto-generate the columns for your data, by creating a column for each property. In order to prevent this you have to set the __AutogenerateColumns__ property to ___False___ and to manually add the desired columns to the __Columns__ collection of the control.
-
-#### __XAML__
+#### __[XAML] Example 8: Manually Define the Columns of RadTreeListView__
 
 {{region radtreeliestview-getting-started_11}}
 
@@ -302,14 +379,29 @@ By default the __RadTreeListView__ will auto-generate the columns for your data,
 
 
 
->tip The __RadTreeListView__ can use the same columns as the __RadGridView__. To learn more about the different types of columns read here.
+>tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns, read [here](%slug radgridview-columns-column-types-basic-column).
         
 
 >tip To change the column, which holds the tree view UI, use the __HierarchyColumnIndex__ property.
 
-Here is a snapshot of the result.
+__Figure 2__ shows a snapshot of the result.
+
+__Figure 2: RadTreeListView with manually defined columns__
 
 ![](images/RadTreeListView_GettingStarted_01.png)
+
+## RadTreeListView vs RadGridView
+
+You should use the __RadTreeListView__ control to display hierarchical data in a tabular format. In order to achieve this, the control combines the functionality of __RadGridView__ control with the ability to display data in a tree view manner. This is implemented by directly inheriting __RadGridView__ and implementing the tree view behavior.
+
+__RadTreeListView__ displays the data in the same way as __RadGridView__. The difference is that each row plays the role of a tree node, which can be expanded or collapsed.
+
+Please note that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
+
+
+Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
+
+>tip You can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
 
 # See Also
 

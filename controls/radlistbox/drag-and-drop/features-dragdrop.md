@@ -46,6 +46,8 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 	</Style>
 {{endregion}}
 
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) note that the Style that targets RadListBoxItem should be based on the default __RadListBoxItemStyle__.
+
 * Attach the ListBoxDragDropBehavior behavior:
 
 #### __[XAML]  Attaching the ListBoxDragDropBehavior__

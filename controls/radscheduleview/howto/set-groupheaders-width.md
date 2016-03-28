@@ -20,8 +20,7 @@ It is a common scenario to apply a specific width to the GroupHeaders. Generally
 
 * The desired width of the GroupHeader control itself. It can be changed by either setting a custom [GroupHeaderStyle]({%slug radscheduleview-styles-and-templates-styling-groupheaders%}) or a [GroupHeaderTemplate]({%slug radscheduleview-styles-and-templates-templating-groupheaders%}).
 
->Even setting a fixed width of the GroupHeaders, if in a certain group there are more appointments, its width will be increased disregarding the set width. The effect of this can be minimized by setting the __MinAppointmentWidth__ property of the ScheduleView to a smaller value.
-<Comment: The first part of the first sentence above is confusing. What is the subject? I think you mean to say that RadScheduleView will disregard the set width if you have a group with many appointments, even if GroupHeaders have a fixed width.> 
+>RadScheduleView will disregard the set width if you have a group with many appointments, even if GroupHeaders have a fixed width. The effect of this can be minimized by setting the __MinAppointmentWidth__ property of the ScheduleView to a smaller value.
 
 * Whether the groups are stretched or not. This feature is switched on and off by setting the [StretchGroupHeaders]({%slug radscheduleview-viewdefinitions-configuration%}#stretchgroupheaders) property of the ViewDefinitions. If it is switched on and there is extra space left, it is distributed among the groups.
 

@@ -86,9 +86,9 @@ The built-in localization mechanism in  {% if site.site_name == 'WPF' %}WPF{% en
               
 The default is English, but you can find a separate file for each of the other languages in a corresponding folder together with the other binaries in your local installation.
           
-To translate RadGridView into Spanish, for example, you need to add a reference to the **Telerik.Windows.Controls.resources.dll** file located in the **es** folder.
+Note that the resource folders should be placed along with the binaries you have referenced.
 
-#### __Figure 3: Adding a reference to Telerik.Windows.Controls.resources.dll__
+#### __Figure 3: Placing the resource folders in your project__
 
 ![Common Localization 050](images/Common_Localization_050.PNG)
 
@@ -126,7 +126,7 @@ The next step for defining the language settings of the application is changing 
 	End Sub
 {{endregion}}
 
-You could check [this help article](%slug gridview-localization-setting-default-startup-language3%), where you can find detailed explanation about how to achieve this.
+You could check [this help article]({%slug gridview-localization-setting-default-startup-language3%}), where you can find detailed explanation about how to achieve this.
 
 {% endif %}
 
@@ -384,6 +384,6 @@ Of course, if you don't want to hard-code your translation inside your source co
 
 * [Consuming Data - Overview]({%slug consuming-data-overview%})
 
-* [Localizing RadGridView](%slug gridview-localization2%)
+* [Localizing RadGridView]({%slug gridview-localization2%})
 
-* [Setting default language of RadGridView](%slug gridview-localization-setting-default-startup-language3%)
+* [Setting default language of RadGridView]({%slug gridview-localization-setting-default-startup-language3%})

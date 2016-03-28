@@ -33,7 +33,7 @@ In order to display the current time indicator, you must set the __ShowCurrentTi
 	</telerik:RadScheduleView>	
 {{endregion}}
 
-Running the code from __Example 1__ will result in RadScheduleView with current time marked as shown on __Figure 1__.
+Running the code from __Example 1__ will result in RadScheduleView with current time marked as shown in __Figure 1__.
 
 #### __Figure 1: Enable CurrentTimeIndicator__
 
@@ -136,7 +136,7 @@ Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeI
 	</Style>
 {{endregion}}
 
-Running the application will lead to the result shown on __Figure 4__.
+Running the application will lead to the result shown in __Figure 4__.
 
 #### __Figure 4: CurrentTimeIndicator with AllowCustomSize set__
 

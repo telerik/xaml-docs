@@ -36,13 +36,13 @@ In order to display the current time indicator, you must set the __ShowCurrentTi
 Running the code from __Example 1__ will result in RadScheduleView with current time marked as shown on __Figure 1__.
 
 #### __Figure 1: Enable CurrentTimeIndicator__
-<Comment: It may not be an error, but in the filename below, you are missing the first "c" in currenttimeindicator. Search engines use filenames for SEO, so adding the c may slightly increase findability of the article through search.>
-![](images/radscheduleview_urrenttimeindicator_0.png)
+
+![](images/radscheduleview_currenttimeindicator_0.png)
 
 ## Setting CurrentTimeIndicator Location
 
-As of Q2 2016, you can show the CurrentTimeIndicator not only in the TimeRuler of the ScheduleView, but also across the Appointments area through the __CurrentTimeIndicatorLocation__ property as shown in __Example 2__. __CurrentTimeIndicatorLocation__ property is of type enum and can receive the following values:
-<Comment: Note the formatting changes in the list below to add bold to the key term and to use a period at the end of each line. This is in the Telerik Style Guide, page 5.>
+As of R2 2016, you can show the CurrentTimeIndicator not only in the TimeRuler of the ScheduleView, but also across the Appointments area through the __CurrentTimeIndicatorLocation__ property as shown in __Example 2__. __CurrentTimeIndicatorLocation__ property is of type enum and can receive the following values:
+
 * **TimeRulerArea** – the default value, the indicator is shown inside the TimeRuler.
 * **AppointmentsArea** – the indicator is shown only through the Appointments panel.
 * **WholeArea** – the indicator is shown on both the TimeRuler and Appointments panel.
@@ -62,15 +62,15 @@ As of Q2 2016, you can show the CurrentTimeIndicator not only in the TimeRuler o
 __Figure 2__ shows current time marked across the whole area of RadScheduleView.
 
 #### __Figure 2: Set CurrentTimeIndicatorLocation__
-<Comment: It may not be an error, but in the filename below, you are missing the first "c" in currenttimeindicator.>
-![](images/radscheduleview_urrenttimeindicator_1.png)
+
+![](images/radscheduleview_currenttimeindicator_1.png)
 
 ## Styling CurrentTimeIndicator
 
 You could change the look of CurrentTimeIndicator by setting the __CurrentTimeIndicatorStyle__ and __CurrentTimeIndicatorAppointmentsAreaStyle__ properties of the ScheduleView.
 
 __CurrentTimeIndicatorStyle__ is applied to the part of the CurrentTimeIndicator in the TimeRuler, while __CurrentTimeIndicatorAppointmentsAreaStyle__ is applied to the part in the Appointments area.
-<Comment: My edit improved the sentence slightly, but referring to "parts" of the ScheduleView sounds odd to me. Terms like "area" or "section" seem more specific. Please consider revising to make this more accurate.> 
+
 __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows how the Style properties should be set to the ScheduleView.
 
 #### __Example 3: [XAML] Define CurrentTimeIndicator Styles__
@@ -112,13 +112,13 @@ __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows h
 	</telerik:RadScheduleView>
 {{endregion}}
 
-If you run the application at this stage, you will see RadScheduleView with CurrentTimeIndicator styled in different colors, as shown on __Figure 3__.
+If you run the application at this stage, you will see RadScheduleView with CurrentTimeIndicator styled in different colors as shown in __Figure 3__.
 
 #### __Figure 3: Custom CurrentTimeIndicator Styles__
-<Comment: It may not be an error, but in the filename below, you are missing the first "c" in currenttimeindicator.>
-![](images/radscheduleview_urrenttimeindicator_2.png)
 
-Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeIndicator in order to allow rendering elements with bigger size. For example, if you need the part in the TimeRuler area to be thicker, you can customize the __CurrentTimeIndicatorStyle__ as shown in __Example 5__. <Comment: Similar to my previous comment, referring to "the part" of a control sounds odd to me. If you rewrite where I put the previous comment, please make similar changes here.>
+![](images/radscheduleview_currenttimeindicator_2.png)
+
+Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeIndicator in order to allow rendering elements with bigger size. For example, if you need the part in the TimeRuler area to be thicker, you can customize the __CurrentTimeIndicatorStyle__ as shown in __Example 5__. 
 
 #### __Example 5: [XAML] Set AllowCustomSize__
 
@@ -140,7 +140,7 @@ Running the application will lead to the result shown on __Figure 4__.
 
 #### __Figure 4: CurrentTimeIndicator with AllowCustomSize set__
 
-![](images/radscheduleview_urrenttimeindicator_3.png)
+![](images/radscheduleview_currenttimeindicator_3.png)
 
 >tip For more advanced customizations, see the ScheduleView [Custom CurrentTimeIndicator Style](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/CustomCurrentTimeIndicatorStyle) example in our XAML SDK Repository.
 

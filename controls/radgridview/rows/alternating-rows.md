@@ -30,7 +30,7 @@ In order to style the alternating rows, you can specify the __AlternateRowStyle_
 
 >tipTo learn more about styling the rows and the alternating rows you can read [here]({%slug gridview-styling-a-row%}).
 
-Example 2__ shows __RadGridView__ with __AlternationCount__ set to __3__ and __AlternateRowBackground__ color set to __Coral__.
+__Example 2__ shows __RadGridView__ with __AlternationCount__ set to __3__ and __AlternateRowBackground__ color set to __Coral__.
 
 #### __[XAML] Example 2: Setting the AlternateRowBackground Property:__
 

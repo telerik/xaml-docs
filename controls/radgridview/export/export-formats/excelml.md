@@ -10,13 +10,15 @@ position: 3
 
 # ExportFormat.ExcelML
 
-You can use the ExportFormat.ExcelML to export RadGridView`s content to a "xls" file.
-      
-As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__. 
-    
-The type of the property for this format is __GridViewExcelMLVisualExportParameters__.
+You can use the ExportFormat.ExcelML to export RadGridView's content to a "xls" file. An example is available in the [Grid Export]({%slug gridview-export%}) article.
 
-It has three properties:
+     
+## Set Exported Element's VisualParameters 
+
+
+>important You can utilize the __ElementExporting__ event as of __Q3 2013__ GridViewElementExportingEventArgs  exposes a new argument __VisualParameters__. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__. 
+    
+The __VisualParameters__ property for this format is of type __GridViewExcelMLVisualExportParameters__. It has three public properties:
          
 
 * __StyleId__
@@ -39,28 +41,43 @@ It has three properties:
 >Please note that you should first have set a valid Style in order to assign it when the ElementExporting event is raised.
             
 
->The __RowHeight__ property applies when ExportedElement is __GridViewRow__. The __DataType__ property applies when ExportedElement is __GridViewCell__.
+>The __RowHeight__ property applies when the exported element is __Row__. The __DataType__ property applies when exported element is __Cell__.
             
 
 For example:
 
-#### __C#__
+#### __[C#]Example 1: Set the style of the exported element__
 
 {{region gridview-export-async_2}}
 
-	(e.VisualParameters as GridViewExcelMLVisualExportParameters).StyleId = "0";
+	 private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
+        {
+            if (e.Element == ExportElement.Cell)
+            {
+                var column = e.Context as GridViewDataColumn;
+                if (column.Header.ToString() == "Name")
+                {
+                    (e.VisualParameters as GridViewExcelMLVisualExportParameters).StyleId = "someStyle";
+                }
+            }
+        }
 {{endregion}}
 
 You can define the Style when __InitializingExcelMLStyles__ event is raised. For example:
           
 
-#### __C#__
+#### __[C#]Example 2: Define a style:__
 
 {{region gridview-export-async_4}}
 
-	ExcelMLStyle style = new ExcelMLStyle("0");            
-	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
-	e.Styles.Add(style);
+	private void clubsGrid_InitializingExcelMLStyles(object sender, ExcelMLStylesEventArgs e)
+        {
+            ExcelMLStyle style = new ExcelMLStyle("someStyle");
+            style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
+            style.Font.Size = 15;
+            style.Font.Italic = true;
+            e.Styles.Add(style);
+        }
 {{endregion}}
 
 You can check the [Export Events]({%slug gridview-export-events%}) article for more information on how to define an ExcelMLStyle. 
@@ -68,7 +85,6 @@ You can check the [Export Events]({%slug gridview-export-events%}) article for m
 
 >important __InitializingExcelMLStyles__ event will be only raised when exporting with ExportFormat.ExcelML
 
->You can read more about the export events [here]({%slug gridview-export-events%}).
             
 
 # See Also

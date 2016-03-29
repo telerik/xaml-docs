@@ -728,6 +728,9 @@ navigation:
         title: RadWizard
     controls/radwizard/features:
         title: Features
+    controls/radgridview/export/export-formats:
+        title: Export Formats
+        position: 6
 ## X1 Controls End
 
 ## Common Start

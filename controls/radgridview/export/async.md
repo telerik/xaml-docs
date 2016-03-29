@@ -10,9 +10,7 @@ position: 1
 
 # Grid Async Export
 
-You can use RadGridView`s __ExportAsync__ method in order to export data asynchronously. The method was introduced in __Q3 2013__.    
-
-As in the synchronous [Export]({%slug gridview-export%}) functionality, the method expects two parameters:
+You can use RadGridView`s __ExportAsync__ method in order to export data asynchronously. The method was introduced in __Q3 2013__.    As in the synchronous [Export]({%slug gridview-export%}) functionality, the method expects two parameters:
 
 1. __Stream__ - usually the file stream which you are exporting data to.
      
@@ -50,8 +48,7 @@ The ExportAsync method can be used similar to the Export method:
 
 
 
->Please note that you should specify a __True__ value for the __shouldDisposeStream__ parameter. That way the used resources will be disposed. 
->Prior to version 2015 Q1 SP, the parameter is called __shouldDisposeString__.
+>Please note that you should specify a __True__ value for the __shouldDisposeStream__ parameter. That way the used resources will be disposed. Prior to version 2015 Q1 SP, the parameter is called __shouldDisposeString__.
           
 You can read more about the export events [here]({%slug gridview-export-events%}).
 

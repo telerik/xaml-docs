@@ -5,61 +5,56 @@ description: ExportFormat.Html
 slug: gridview-export-html
 tags: exportformat.html
 published: True
-position: 2
+position: 4
 ---
 
 # ExportFormat.Html
 
-The type of the property for this format is __GridViewHtmlVisualExportParameters__. It has the following properties:
+You can use the ExportFormat.Html to export RadGridView in HTML format.
+
+
+>important As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__.
         
+## Set Exported Element's VisualParameters 
 
-* __Background__
-
-* __FontFamily__
-
-* __FontSize__
-
-* __FontWeight - you can find the supported formats described__
-
-* __Foreground__
-
-* __Height__
-
-* __TextAlignment__
-
-* __VerticalAlignment__
-
-* __Width__
+When using the ElementExporting event, the type of the VisualParameters property for this format is __GridViewHtmlVisualExportParameters__. It has the following properties:
+        
+* *Background*
+* *FontFamily*
+* *FontSize*
+* *FontWeight* 
+* *Foreground*
+* *Height*
+* *TextAlignment*
+* *VerticalAlignment*
+* *Width*
 
 For example:
         
 
-#### __C#__
+#### __[C#]Example 1: Set the properties of the VisualParameters:__
 
 {{region gridview-export-async_6}}
 
-	private void clubsGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
-	{
-	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
-	    {
-	        var param = e.VisualParameters as GridViewHtmlVisualExportParameters;
-		    param.Background = Colors.Red;
-		    param.FontFamily = new FontFamily("Verdana");
-		    param.FontSize = 30;
-		    param.FontWeight = FontWeights.Bold;
-		    param.Foreground = Colors.Green;
-		    param.Height = 50;
-		    param.TextAlignment = TextAlignment.Center;
-		    param.VerticalAlignment = VerticalAlignment.Bottom;
-		    param.Width = 500;
-	    }
-	}
+	  private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
+        {
+            if (e.VisualParameters is GridViewHtmlVisualExportParameters)
+            {
+                var param = e.VisualParameters as GridViewHtmlVisualExportParameters;
+                param.Background = Colors.AliceBlue;
+                param.FontFamily = new FontFamily("Verdana");
+                param.FontSize = 15;
+                param.FontWeight = FontWeights.Bold;
+                param.Foreground = Colors.Black;
+                param.Height = 30;
+                param.TextAlignment = TextAlignment.Center;
+                param.VerticalAlignment = VerticalAlignment.Bottom;
+                param.Width = 200;
+            }
+        }
 {{endregion}}
 
-As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__.
-        
-
->You can read more about the export events [here]({%slug gridview-export-events%}).
+You can read more about the export events [here]({%slug gridview-export-events%}).
 
 # See Also
 

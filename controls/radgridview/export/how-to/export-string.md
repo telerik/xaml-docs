@@ -5,7 +5,7 @@ description: Export String Value
 slug: gridview-export-troubleshooting-export-string
 tags: export,string,value
 published: True
-position: 0
+position: 5
 ---
 
 # Export String Value
@@ -30,7 +30,7 @@ You will need to format the exported string column appropriately so that the Exc
 Here is a small sample code:
         
 
-#### __C#__
+#### __[C#]Example 1: Handling the ElementExporting event:__
 
 {{region gridview-export-troubleshooting-export-string_0}}
 
@@ -47,7 +47,7 @@ Here is a small sample code:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET]Example 2: Handling the ElementExporting event:__
 
 {{region gridview-export-troubleshooting-export-string_1}}
 

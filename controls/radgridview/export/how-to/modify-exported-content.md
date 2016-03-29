@@ -5,7 +5,7 @@ description: ExportFormat.Xlsx
 slug: gridview-export-xlsx
 tags: exportformat.xlsx
 published: True
-position: 8
+position: 7
 ---
 
 # Modify RadGridView`s Content Before Exporting
@@ -92,7 +92,7 @@ The method exports the associated RadGridView to a RadFixedDocument object.
         }
 
 
-Both methods can be overloaded and take __GridViewDocumentExportOptions__ as parameter. You can use them to set the following export options:
+Both methods can be overloaded and take __GridViewDocumentExportOptions__ as parameter. You can use it to set the following export options:
 
 * Culture
 * Items

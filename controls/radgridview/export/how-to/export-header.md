@@ -5,7 +5,7 @@ description: Export Custom Header
 slug: gridview-export-troubleshooting-export-header
 tags: export,custom,header
 published: True
-position: 1
+position: 3
 ---
 
 # Export Custom Header
@@ -28,7 +28,7 @@ Here is a small sample code:
 
 1. Define a custom header with a TextBlock
         
-#### __XAML__
+#### __[XAML]Example 1: Define a custom header:__
 
 {{region gridview-export-troubleshooting-export-header_0}}
 
@@ -42,7 +42,7 @@ Here is a small sample code:
 
 2. Handle the ElementExporting event for the exported RadGridView
         
-#### __C#__
+#### __[C#]Example 2: Handle the ElementExporting event:__
 
 {{region gridview-export-troubleshooting-export-header_1}}
 
@@ -53,7 +53,7 @@ Here is a small sample code:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET]Example 3:Handle the ElementExporting event: __
 
 {{region gridview-export-troubleshooting-export-header_2}}
 

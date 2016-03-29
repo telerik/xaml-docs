@@ -1,11 +1,11 @@
 ---
-title: Export
-page_title: Export
-description: Export
+title: Export Events
+page_title:  Export Events
+description:  Export Events
 slug: gridview-export-events
-tags: export
+tags: grid,export,events
 published: True
-position: 4
+position: 2
 ---
 
 # RadGridView Export Events
@@ -274,4 +274,3 @@ __NumberFormat:__
  * [Online Demo - Exporting to various formats](http://demos.telerik.com/silverlight/#GridView/Exporting)
  
  * [Online Demo - Exporting Row Details](http://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)
-

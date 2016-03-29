@@ -10,23 +10,13 @@ position: 17
 
 # Localization
 
-When you limit your product's availability to only one language, you limit your potential customer base to a fraction of the world population. If you want your application to reach a global audience, cost-effective __localization__ of your product is one of the best and most economical ways to reach more customers. 
+When you limit your product's availability to only one language, you limit your potential customer base to a fraction of the world population. If you want your application to reach a global audience, cost-effective __localization__ of your product is one of the best and most economical ways to reach more customers.
 
 >tip__Localization__ is the translation of application resources into localized versions for the specific cultures that the application supports.
 
-The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} allows you to localize any string resource used by your controls. Once translated you might use your resources in your {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} project without changing anything.
+The purpose of this article is to show you how to localize any resource string used by Telerik's UI controls. We will discuss the following topics:
 
-#### __Figure 1: RadGridView localized in German__
-
-![Common_Localization_070](images/Common_Localization_070.png)
-
-The purpose of this tutorial is to show you how to localize any resource string used by Telerik's UI controls.
-
->tipAll examples in this tutorial are demonstrated in the context of the Telerik __RadGridView__ control. However, the techniques and principles used for the localization of the string resources are valid for all the other Telerik __{% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls__.
-
-This topic contains the following sections:
-
-* [What is LocalizationManager?](#what-is-localizationmanager)
+* [Localization Using Built-in Resources](#localization-using-built-in-resources)
 
 * [Resource keys](#resource-keys)
 
@@ -34,41 +24,11 @@ This topic contains the following sections:
 
 * [Localization using custom localization manager](#localization-using-custom-localization-manager)
 
-## What is LocalizationManager?
-
-The __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls.
-
-To apply [custom localization](#localization-using-custom-localization-manager) to your controls just instantiate your custom __LocalizationManager__ and set it to the static property __LocalizationManager.Manager__, before the creation of the UI.
-
-#### __[C#] Example 1: Applying a custom LocalizationManager__
-
-{{region common-localization_0}}
-	LocalizationManager.Manager = new CustomLocalizationManager();
-{{endregion}}
-
-#### __[VB.NET] Example 1: Applying a custom LocalizationManager__
-
-{{region common-localization_1}}
-	LocalizationManager.Manager = New CustomLocalizationManager()
-{{endregion}}
-
->__Note that you have to set the localization manager before the creation of the UI, otherwise some parts might remain not-localized.__
-
-## Resource Keys
-
-Some of the controls are complex user interface controls (e.g. __RadGridView__, __RadScheduleView__) and their strings for localization are numerous. In order to be able to distinguish these resources, an unique identifier called __resource key__, is assigned to each localizable string.
-
-On the picture below you can see some resource keys and the strings they are associated with.
-
-#### __Figure 2: Some of RadGridView's resource keys and their values__
-
-![Common_Localization_060](images/Common_Localization_060.png)
-
->tipFor a full list of __Resource Keys__, check out the __Localization__ topic for the specific control.
+>tipAll examples in this tutorial are demonstrated in the context of the Telerik __RadGridView__ control. However, the techniques and principles used for the localization of the string resources are valid for all the other Telerik __{% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls__.
 
 ## Localization Using Built-in Resources
 
-The built-in localization mechanism in  {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides the possibility to set the used Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls in one of the following supported languages:
+The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides the possibility to easily set the used Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls in one of the following supported languages:
 
 * **English**
 
@@ -83,19 +43,21 @@ The built-in localization mechanism in  {% if site.site_name == 'WPF' %}WPF{% en
 * **Dutch**
 
 * **Turkish**
-              
-The default is English, but you can find a separate file for each of the other languages in a corresponding folder together with the other binaries in your local installation.
-          
-Note that the resource folders should be placed along with the binaries you have referenced.
 
-#### __Figure 3: Placing the resource folders in your project__
+The default is English, but you can find a separate file for each of the other languages in a corresponding folder together with the other binaries in your local installation.
+
+>If you want to translate your control in another language, you should use the [Custom Localization Manager.](#localization-using-custom-localization-manager)
+
+To localize your controls using the built-in localization mechanism, you first have to place the resource folders along with the binaries you have referenced as shown in **Figure 3**.
+
+#### __Figure 1: Placing the resource folders in your project__
 
 ![Common Localization 050](images/Common_Localization_050.PNG)
 
 {% if site.site_name == 'Silverlight' %}
-Firstly, you must define your preferred languages in the **<Supported Cultures>** tag of your project file in order to notify the framework about the supported cultures. To do so, open the project file with a text editor and insert the code below into the __<PropertyGroup>__ section.
+Then, you must define your preferred languages in the **<Supported Cultures>** tag of your project file in order to notify the framework about the supported cultures. To do so, open the project file with a text editor and insert the code below into the __&lt;PropertyGroup&gt;__ section.
 
-#### __[XAML] Example 2: Setting supported cultures__
+#### __[XAML] Example 1: Setting supported cultures__
 
 {{region common-localization_4}}
 	<SupportedCultures>en;nl</SupportedCultures>
@@ -103,37 +65,35 @@ Firstly, you must define your preferred languages in the **<Supported Cultures>*
 
 The next step for defining the language settings of the application is changing the __Current Culture__ of the application.
             
-#### __[C#] Example 3: Setting the current culture of the application__
+#### __[C#] Example 2: Setting the current culture of the application__
 
 {{region common-localization_11}}
 	private void Application_Startup(object sender, StartupEventArgs e)
 	{
-	    Thread.CurrentThread.CurrentCulture = new CultureInfo("es");
-	    Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+	    Thread.CurrentThread.CurrentCulture = new CultureInfo("de");
+	    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
 	
 	    this.RootVisual = new MainPage();
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 3: Setting the current culture of the application__
+#### __[VB.NET] Example 2: Setting the current culture of the application__
 
 {{region common-localization_12}}
 	Private Sub Application_Startup(sender As Object, e As StartupEventArgs)
-	    Thread.CurrentThread.CurrentCulture = New CultureInfo("es")
-	    Thread.CurrentThread.CurrentUICulture = New CultureInfo("es")
+	    Thread.CurrentThread.CurrentCulture = New CultureInfo("de")
+	    Thread.CurrentThread.CurrentUICulture = New CultureInfo("de")
 	
 	    Me.RootVisual = New MainPage()
 	End Sub
 {{endregion}}
 
-You could check [this help article]({%slug gridview-localization-setting-default-startup-language3%}), where you can find detailed explanation about how to achieve this.
-
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-The thing that you must do for defining the language settings of the application, is to change the current culture of the application. Locate the application initialization logic and add some code in the method for Startup in App.xaml.cs:
+The next step for defining the language settings of the application is changing the __Current Culture__ of the application:
             
-#### __[C#] Example 2: Setting the current culture of the application__
+#### __[C#] Example 1: Setting the current culture of the application__
 
 {{region common-localization_9}}
 	public App()
@@ -143,9 +103,7 @@ The thing that you must do for defining the language settings of the application
 	}
 {{endregion}}
 
-
-
-#### __[VB.NET] Example 2: Setting the current culture of the application__
+#### __[VB.NET] Example 1: Setting the current culture of the application__
 
 {{region common-localization_10}}
 	Public Sub New()
@@ -154,17 +112,31 @@ The thing that you must do for defining the language settings of the application
 	End Sub
 {{endregion}}
 
-You could check [this help article](%slug gridview-localization-setting-default-startup-language3), where you can find detailed explanation about how to achieve this.
 {% endif %}
 
-If you want to translate your control in another language, you should use the [Custom Localization Manager.](#localization-using-custom-localization-manager)
+That's it. Your controls should now be localized in the preferred language.
+
+#### __Figure 2: RadGridView localized in German__
+
+![Common_Localization_070](images/Common_Localization_070.png)
+
+## Resource Keys
+
+Some of the controls are complex user interface controls (e.g. __RadGridView__, __RadScheduleView__) and their strings for localization are numerous. In order to be able to distinguish these resources, an unique identifier called __resource key__, is assigned to each localizable string.
+
+On the picture below you can see some resource keys and the strings they are associated with.
+
+#### __Figure 3: Some of RadGridView's resource keys and their values__
+
+![Common_Localization_060](images/Common_Localization_060.png)
+
+>tipFor a full list of __Resource Keys__, check out the __Localization__ topic for the specific control.
 
 ## Localization Using ResourceManager
 
-You can base your localization on the standard resource files provided by the .NET framework. For that purpose you will have to create a separate __.resx__ file for each of the languages that your application will support.
+If you need to modify the default strings for a chosen language, you can base your localization on the standard resource files. For that purpose you will have to create a separate __.resx__ file for each of the languages that your application will support.
         
 Imagine that you want to translate your control, RadGridView for example, into English, German and Dutch. For that purpose you will have to add three new resource files to your project:
-        
 
 * __GridViewResources.resx__ - this resource file will store the __English(default)__ resources for the grid control. Set the __AccessModifier__ property to __Public__.
           
@@ -188,13 +160,13 @@ The snapshot below shows the content of the __GridViewResources.de.resx__ file. 
 
 ![Common Localization 040](images/Common_Localization_040.png)
 
-The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created (you can do this in the default constructor of the Application class)        
+The last step is to instantiate the __LocalizationManager__ class, which allows you to easily localize any of our controls, and set its __ResourceManager__ to the resources that have just  been created (you can do this in the default constructor of the Application class).
 
 {% if site.site_name == 'WPF' %}
-#### __[C#] Example 3: Setting the LocalizationManager's ResourceManager__
+#### __[C#] Example 2: Setting the LocalizationManager's ResourceManager__
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-#### __[C#] Example 4: Setting the LocalizationManager's ResourceManager__
+#### __[C#] Example 3: Setting the LocalizationManager's ResourceManager__
 {% endif %}
 
 {{region common-localization_2}}
@@ -205,10 +177,10 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 {{endregion}}
 
 {% if site.site_name == 'WPF' %}
-#### __[VB.NET] Example 3: Setting the LocalizationManager's ResourceManager__
+#### __[VB.NET] Example 2: Setting the LocalizationManager's ResourceManager__
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-#### __[VB.NET] Example 4: Setting the LocalizationManager's ResourceManager__
+#### __[VB.NET] Example 3: Setting the LocalizationManager's ResourceManager__
 {% endif %}
 
 {{region common-localization_3}}
@@ -224,7 +196,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 {% if site.site_name == 'Silverlight' %}
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the __Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others - to __No code generation__. Then, open the project file in a text-mode and insert the code below into the __&lt;PropertyGroup&gt;__ section. In this way you notify the framework about the supported cultures.
 
-#### __[XAML] Example 5: Setting the project's supported cultures__
+#### __[XAML] Example 4: Setting the project's supported cultures__
 
 {{region common-localization_4}}
 	<SupportedCultures>en;nl</SupportedCultures>
@@ -236,10 +208,10 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 The other way to localize your controls is to create a class that derives from the __LocalizationManager__ object and to override its __GetStringOverride()__ method. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as shown below:
         
 {% if site.site_name == 'WPF' %}
-#### __[C#] Example 4: Overriding the LocalizationManager's GetStringOverride() method__
+#### __[C#] Example 3: Overriding the LocalizationManager's GetStringOverride() method__
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-#### __[C#] Example 6: Overriding the LocalizationManager's GetStringOverride() method__
+#### __[C#] Example 5: Overriding the LocalizationManager's GetStringOverride() method__
 {% endif %}
 
 {{region common-localization_5}}
@@ -288,10 +260,10 @@ The other way to localize your controls is to create a class that derives from t
 {{endregion}}
 
 {% if site.site_name == 'WPF' %}
-#### __[VB.NET] Example 4: Overriding the LocalizationManager's GetStringOverride() method__
+#### __[VB.NET] Example 3: Overriding the LocalizationManager's GetStringOverride() method__
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-#### __[VB.NET] Example 6: Overriding the LocalizationManager's GetStringOverride() method__
+#### __[VB.NET] Example 5: Overriding the LocalizationManager's GetStringOverride() method__
 {% endif %}
 
 {{region common-localization_6}}
@@ -341,10 +313,10 @@ The other way to localize your controls is to create a class that derives from t
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 
 {% if site.site_name == 'WPF' %}
-#### __[C#] Example 5: Using resource files in the GetStringOverride() method__
+#### __[C#] Example 4: Using resource files in the GetStringOverride() method__
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-#### __[C#] Example 7: Using resource files in the GetStringOverride() method__
+#### __[C#] Example 6: Using resource files in the GetStringOverride() method__
 {% endif %}
 
 {{region common-localization_7}}
@@ -362,10 +334,10 @@ Of course, if you don't want to hard-code your translation inside your source co
 {{endregion}}
 
 {% if site.site_name == 'WPF' %}
-#### __[VB.NET] Example 5: Using resource files in the GetStringOverride() method__
+#### __[VB.NET] Example 4: Using resource files in the GetStringOverride() method__
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-#### __[VB.NET] Example 7: Using resource files in the GetStringOverride() method__
+#### __[VB.NET] Example 6: Using resource files in the GetStringOverride() method__
 {% endif %}
 
 {{region common-localization_8}}
@@ -380,10 +352,30 @@ Of course, if you don't want to hard-code your translation inside your source co
 	End Function
 {{endregion}}
 
+All that's left to do is to set our CustomLocalizationManager to the static Manager property  of the LocalizationManager:
+
+{% if site.site_name == 'WPF' %}
+#### __[C#] Example 5: Applying the custom LocalizationManager__
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+#### __[C#] Example 7: Applying the custom LocalizationManager__
+{% endif %}
+
+{{region common-localization_0}}
+	LocalizationManager.Manager = new CustomLocalizationManager();
+{{endregion}}
+
+{% if site.site_name == 'WPF' %}
+#### __[VB.NET] Example 5: Applying the custom LocalizationManager__
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+#### __[VB.NET] Example 7: Applying the custom LocalizationManager__
+{% endif %}
+
+{{region common-localization_1}}
+	LocalizationManager.Manager = New CustomLocalizationManager()
+{{endregion}}
+
 # See Also
 
 * [Consuming Data - Overview]({%slug consuming-data-overview%})
-
-* [Localizing RadGridView]({%slug gridview-localization2%})
-
-* [Setting default language of RadGridView]({%slug gridview-localization-setting-default-startup-language3%})

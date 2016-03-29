@@ -40,7 +40,7 @@ The method is overloaded:
 
 The following example shows how to use the method on a button click:
 
-#### __[C#] Example 1: Use of Method ExportToXlsx__
+#### __[C#] Example 1: Use of ExportToXlsx method__
 	private void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "xlsx";
@@ -72,16 +72,16 @@ The following example shows how to use the method on a button click:
 
 >To export the Default Styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
-RadGridView can be exported with its default styles by setting the ExportDefaultStyles property to “true”
+RadGridView can be exported with its default styles by setting the __ExportDefaultStyles__ property to “true”
 
-By default the ExportDefaultStyles property is set to false. You can see the result (Figure 1)
+By default the ExportDefaultStyles property is set to false. You can see the result (Figure 1).
 
-__Figure 1__: Exporting with ExportDefaultStyles set to “false” (default)
+#### __Figure 1__: Exporting with ExportDefaultStyles set to “false” (default)
 ![ExportDefaultStyles false](../images/exportdefaultstyles.png)
 
-You can set the __ExportDefaultStyles value to “true”__ and see the result (Figure 2)
+You can set the __ExportDefaultStyles__ value to __“true”__ and see the result (Figure 2).
 
-#### __[C#] Example 2: Configuring ExportDefaultStyles Setting__
+#### __[C#] Example 2: Configuring ExportDefaultStyles setting__
 
 	gridViewExport.ExportToXlsx(stream,
 	    new GridViewDocumentExportOptions()
@@ -92,7 +92,7 @@ You can set the __ExportDefaultStyles value to “true”__ and see the result (
 	    ExportDefaultStyles = true
 		});   
 
-__Figure 2__: Exporting with ExportDefaultStyles set to “true”
+#### __Figure 2__: Exporting with ExportDefaultStyles set to “true”
 ![ExportDefaultStyles false](../images/exportdefaultstyles2.png)
 
 ## Events

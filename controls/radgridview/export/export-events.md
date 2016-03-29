@@ -34,7 +34,7 @@ The __ElementExporting__ and __ElementExportingToDocument__ events can be cancel
 
 You can subscribe to the events either declaratively or from the code-behind like this:
 
-#### __[XAML]Example 1: Subscribe to Events Declaratively:__
+#### __[XAML]Example 1: Subscribe to events declaratively:__
 
 {{region gridview-export-events_0}}
 
@@ -43,7 +43,7 @@ You can subscribe to the events either declaratively or from the code-behind lik
 	                     ElementExported="RadGridView1_ElementExported">
 {{endregion}}
 
-#### __[C#]Example 2: Subscribe to Events from the Code-Behind:__
+#### __[C#]Example 2: Subscribe to events from the code-behind:__
 
 {{region gridview-export-events_1}}
 
@@ -52,7 +52,7 @@ You can subscribe to the events either declaratively or from the code-behind lik
 {{endregion}}
 
 
-#### __[VB.NET]Example 3: Subscribe to Events from the Code-Behind:__
+#### __[VB.NET]Example 3: Subscribe to events from the code-behind:__
 
 {{region gridview-export-events_2}}
 
@@ -98,7 +98,7 @@ The event takes argument of type __GridViewElementExportedEventArgs__ which expo
 
 You can use this event if you want to write additional data to the stream. A common scenario is to add [Row Details]({%slug radgridview-row-details-overview%}) to the exported data :
 	
-#### __[C#] Example 4: Add Row Details to the Exported Data:__
+#### __[C#] Example 4: Add row details to the exported data:__
 
 {{region gridview-export-events_5}}
 
@@ -122,7 +122,7 @@ You can use this event if you want to write additional data to the stream. A com
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 5: Add Row Details to the Exported Data:__
+#### __[VB.NET] Example 5: Add row details to the exported data:__
 
 {{region gridview-export-events_6}}
 
@@ -172,7 +172,7 @@ The event handler expects __GridViewElementExportedToDocumentEventArgs__ argumen
 You can define a Style when __InitializingExcelMLStyles__ event is raised.
 For example:
         
-#### __[C#] Example 6: Define a Style:__
+#### __[C#] Example 6: Define a style:__
 
 {{region gridview-export-events_7}}
 
@@ -217,7 +217,7 @@ __NumberFormat:__
 - Format
 
 
-#### __[C#] Example 7: Modify the Style Before Exporting:__
+#### __[C#] Example 7: Apply a style before exporting:__
 
 {{region gridview-export-events_9}}
 

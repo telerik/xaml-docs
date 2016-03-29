@@ -10,7 +10,7 @@ position: 0
 
 # Grid Export
 
-If you need to export the RadGridView, its __Export__ method comes to help. It was introduced in __Q1 2010__ and it is the preferred method of exporting data. Furthermore, it gives you control over which elements are included in the exported data.
+If you need to export RadGridView`s content, its __Export__ method comes to help. It was introduced in __Q1 2010__ and it is the preferred method of exporting data. Furthermore, it gives you control over which elements are included in the exported data.
 
 The method expects two parameters:
 
@@ -37,7 +37,7 @@ The method expects two parameters:
 
 The following example shows how to display a "Save File" dialog asking the user to save the file in excel format:
 
-#### __[C#] Example 1: Save RadGridView`s Content in Excel File__
+#### __[C#] Example 1: Save RadGridView`s content in Excel file__
 
 {{region gridview-export_0}}
 
@@ -73,7 +73,7 @@ The following example shows how to display a "Save File" dialog asking the user 
 {{endregion}}
 
 
-#### __[VB.NET] Example2: Save RadGridView`s Content in Excel File__
+#### __[VB.NET] Example2: Save RadGridView`s content in Excel file__
 
 {{region gridview-export_1}}
 
@@ -114,7 +114,7 @@ In addition,__RadGridView__ provides built-in methods to get the content of your
 >The export methods (__ToHtml()__, __ToCsv()__, __ToText()__ and __ToExcelML()__) are implemented in the class __ExportExtension__ as extension methods to the standard __RadGridView__ control. In order to use these methods you have to import the __Telerik.Windows.Controls__ namespace.
 
 
-#### __[C#] Example 3: Save Content to String__
+#### __[C#] Example 3: Save content to String__
 
 {{region gridview-export_2}}
 
@@ -124,7 +124,7 @@ In addition,__RadGridView__ provides built-in methods to get the content of your
 {{endregion}}
 
 
-#### __[VB.NET] Example 4: Save Content to String__
+#### __[VB.NET] Example 4: Save content to String__
 
 {{region gridview-export_3}}
 

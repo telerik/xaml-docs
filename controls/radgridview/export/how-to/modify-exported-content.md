@@ -10,7 +10,7 @@ position: 7
 
 # Modify RadGridView`s Content Before Exporting
 
-As of __Q1 2016__, we have introduced two new extension methods related to the exporting of RadGridView - *ExportToWorkBook()* and *ExportToRadFixedDocument()*. You can use them if you need to modify the content of the exported RadGridView and avoid styling the document manually.
+In __R1 2016__, we have introduced two new extension methods related to the exporting of RadGridView - *ExportToWorkBook()* and *ExportToRadFixedDocument()*. You can use them if you need to modify the content of the exported RadGridView and avoid styling the document manually.
 
 __Assembly References__
 

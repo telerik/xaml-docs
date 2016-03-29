@@ -21,7 +21,7 @@ You can use RadGridView`s __ExportAsync__ method in order to export data asynchr
 
 The ExportAsync method can be used similar to the Export method: 
 
-#### __C#__
+#### __[C#]Example 1: Save RadGridView`s conteint in a Excel file__
 
 {{region gridview-export-async_0}}
 

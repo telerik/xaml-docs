@@ -304,7 +304,7 @@ Here is the final XAML:
 
 {% endif %}
 
-The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [[!] Binding to Object](radtreeview-populating-with-data-data-binding-to-object.html).
+The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [[!] Binding to Object](http://docs.telerik.com/devtools/wpf/controls/radtreeview/populating-with-data/data-binding-to-object).
 
 # See Also
  * [ItemTemplateSelector]({%slug radtreeview-populating-with-data-item-template-selector%})

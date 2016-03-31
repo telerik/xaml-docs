@@ -251,11 +251,13 @@ If the business items displayed in the __RadTreeView__ are described with the cl
 	End Class		  
 	{{endregion}}
 	
-
+#### __Figure 3: Default positioned of the brought item__
 ![](images/RadTreeView-BringPathIntoView-TreeViewDef.png)
-<Comment: The figure above should have an SEO-friendly caption.>
-__BringPathIntoView__ has two overloads that you can use to bring an item.
-<Comment: I suggest you add a subheading before the previous sentence about overloads. It reads to me like you have switched subjects a bit.>
+
+## __BringPathIntoView overloads__ 
+
+__BringPathIntoView__ method has two overloads that you can use to bring an item.
+
 * __BringPathIntoView(string path)__: The *path* parameter is the path of the __RadTreeViewItem__ that you want to bring into the view. 
 	
 	>tip Since Q3 2013, the tree will try to bring the item on the top of the viewport.
@@ -270,10 +272,11 @@ __BringPathIntoView__ has two overloads that you can use to bring an item.
 	{{region radtreeview-features-treeviewitem-bring-into-view-support_10}}		
 		Dim path As String = "Item 10\Item 10.1"
 		myTreeView.BringPathIntoView(path)
-	{{endregion}}	
-	
+	{{endregion}}
+
+	#### __Figure 4: Default positioned of the brought item__
 	![](images/RadTreeView_TreeViewBringIntoViewSupport_030.png)
-<Comment: The figure above should have an SEO-friendly caption.>	
+	
 * __BringPathIntoView(string path, Point offset)__: The *offset* parameter is of type __Point__ and specifies the offset from the top left corner of the tree where the item will be scrolled to. 
 
 	For example, when you set the second parameter, you can adjust the parent and the last child to fit into the view if there is enough space. 
@@ -290,9 +293,9 @@ __BringPathIntoView__ has two overloads that you can use to bring an item.
 		myTreeView.BringPathIntoView(path,New Point(0,100))
 	{{endregion}}
 	
-	#### __Figure 3: The item is positioned with 100 pixels offset from the top of the viewport__
+	#### __Figure 5: The item is positioned with 100 pixels offset from the top of the viewport__
 	![](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
-<Comment: I suggested in earlier comments that you had two figures that were missing captions. If you add them, please renumber this figure caption.>
+
 >tip You can find a complete solution demonstrating the __BringPathIntoView()__ method implementation in the [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%}) help article in our documentation.		
 
 # See Also

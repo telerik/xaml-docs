@@ -11,9 +11,16 @@ position: 4
 # Keyboard Support
 
 
-__RadDataForm__  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing.
+__RadDataForm__  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing. This topic will walk you through the following sections.
 
-Here is the list of the keys that are supported:
+* [Keys List](#keys-list)
+* [Custom Keyboard Command Provider](#custom-keyboard-command-provider)
+* [Disable the Built In Navigation](#disable-the-built-in-navigation)
+* [Control the Processing of Handled Events](#control-the-processing-of-handled-events)
+
+## Keys List 
+
+Below is the list of the keys that are supported.
 
 1. __Left and Right arrow keys__ - navigates through the items.
         
@@ -167,4 +174,52 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 	    Me.RadDataForm1.CommandProvider = New CustomKeyboardCommandProvider(Me.RadDataForm1)
 	{{endregion}}
 
+## Disable the Built In Navigation
 
+As of __Q1 2015 PropertyGridCommandProvider__ exposes a new property: __EnableBuiltInNavigation__. Its default value is __True__. In order to __disable the built-in navigation__, you can set its value to __False__.
+
+#### __[C#] Example 3: Setting the EnableBuiltInNavigation property to False__ 
+
+	public class CustomKeyboardCommandProvider : DataFormCommandProvider
+	{
+	    public CustomKeyboardCommandProvider()
+	        : base(null)
+	    {
+	
+	    }
+	
+	    public CustomKeyboardCommandProvider(RadDataForm dataForm)
+	        : base(dataForm)
+	    {
+	        this.DataForm = dataForm;
+	        this.EnableBuiltInNavigation = false;
+	    }
+	}
+
+
+## Control the Processing of Handled Events
+
+As of __Q1 2015__ the new boolean property __ShouldProcessHandledEvents__ of __PropertyGridCommandProvider__ is exposed. Its default value is __True__. If you want to manually process handled events, you can set its value to __False__.
+
+#### __[C#] Example 4: Setting the ShouldProcessHandledEvents to False__
+
+	public class CustomKeyboardCommandProvider : DataFormCommandProvider
+	{
+	    public CustomKeyboardCommandProvider()
+	        : base(null)
+	    {
+	
+	    }
+	
+	    public CustomKeyboardCommandProvider(RadDataForm dataForm)
+	        : base(dataForm)
+	    {
+	        this.DataForm = dataForm;
+	        this.ShouldProcessHandledEvents = false;
+	    }
+	}
+
+
+# See Also
+
+[Customizing Commands]({%slug raddataform-customize-commands%})

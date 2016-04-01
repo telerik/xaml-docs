@@ -254,7 +254,7 @@ If the business items displayed in the __RadTreeView__ are described with the cl
 #### __Figure 3: Default positioned of the brought item__
 ![](images/RadTreeView-BringPathIntoView-TreeViewDef.png)
 
-## __BringPathIntoView overloads__ 
+## __BringPathIntoView() Overloads__ 
 
 __BringPathIntoView__ method has two overloads that you can use to bring an item.
 

@@ -44,6 +44,9 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 * [New Row Template Structure](#gridviewnewrow)
 
+* [GridViewSearchPanel Template Structure](#gridviewsearchpanel)
+ 
+
 ##  RadGridView
 
 * __PART_MasterGridContainer__ - hosts the elements of the template, represents the border of the __RadGridView__ and is of type __Border__.       
@@ -511,6 +514,26 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 * [Path]
 
+## GridViewSearchPanel
+
+![](images/search_panel_template.png)
+
+
+* __Grid__ - Hosts the elements of the Search Panel and the border elements.
+
+* __Border__ - Surrounds the elements of the Search Panel.
+
+* __Border__ - Represents the inner border and the background of the __Search Panel__.
+
+* __Grid__ - The Grid control that hosts the __TextBox__ and the __ClearButton__.
+
+* __TextBlock__ - Contains the label for the __TextBox__.
+
+* __PART_SearchAsYouTypeTextBox__ - The element that contains the searching criteria.It is of type __TextBox__.   
+
+* __ClearButton__ - Used to clear the content of the __TextBox__ element. It is of type __RadButton__.
+
+* __CloseButton__ - Represents the element used to collapse the Search Panel. It is of type __RadPathButton__. 
 
 # See Also
 

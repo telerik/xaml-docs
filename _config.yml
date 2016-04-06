@@ -363,6 +363,15 @@ navigation:
         title: RadRating
     controls/radribbonview:
         title: RadRibbonView
+    controls/radribbonview/features:
+        title: Features
+        position: 4
+    controls/radribbonview/general-information:
+        title: General Information
+        position: 5
+    controls/radribbonview/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 6
     controls/radribbonview/styling-and-appearance:
         title: Styling and Appearance
     controls/radribbonview/features/layout-controls:

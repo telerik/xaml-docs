@@ -23,6 +23,7 @@ This tutorial will walk you through the creation of a sample application that co
 * [Setting up the Application Title and Name](#setting-up-the-application-title-and-name)
 * [Setting up the Ribbon Backstage](#setting-up-the-ribbon-backstage)
 * [Setting up the Quick Access Toolbar](#setting-up-the-quick-access-toolbar)
+* [Code Example](#code-example)
 
 ## Assembly References
 
@@ -53,7 +54,7 @@ At this state the ribbonview is empty - there are not tabs, backstage or any oth
 
 The RadRibbonView helps end-users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in logical groups that are collected together under specific tabs. The ribbon tabs allows you to categorize the commands to be displayed to the end-users. The class that represents the ribbon tab is __RadRibbonTab__.
 
-> For more information about the __RadRibbonTab__, check out the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}) help article in the __Ribbon Controls__ section.
+> For more information about the __RadRibbonTab__, check out the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}) help article in the __Ribbon Controls__ section. Also, keep in mind that you can use contextual tabs. You can read more about this in the [Contextual Tabs]({%slug radribbonview-contextual-tabs%}) topic.
 
 The tabs can be added in the __Items__ collection of RadRibbonView. The RadRibbonTab class expose a __Header__ property that is used to define the content of its header. __Example 2__ and __Example 3__ demonstrate how to do this in XAML and code-behind.
 
@@ -170,7 +171,7 @@ The icon of the ribbonview's application button can be set through the __Applica
 
 #### __[XAML] Example 6: Setting the application button image source in XAML__
 {{region radribbonview-gettingstarted-06}}
-	<telerik:RadRibbonView ApplicationButtonImageSource="AppIcon.png" />
+	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png" />
 {{endregion}}
 	
 #### __[C#] Example 7: Setting the application button image source in code__
@@ -257,6 +258,63 @@ The __Quick Access Toolbar__ is used to render a set of __RadRibbonView__ contro
 ![](images/ribbonview-getting-started-08.png)
 
 > For more information and a practical example you can see the [Quick Access Toolbar]({%slug radribbonview-qat%}) topic.  
+
+## Code Example
+
+This section contains all features demonstrated in the article assembled into a single example.
+
+#### __[XAML] Example 12: Complete code example__
+{{region radribbonview-gettingstarted-12}}
+	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png"
+						   ApplicationName="RadRibbonView"
+						   Title="Document 1">
+		<telerik:RadRibbonView.QuickAccessToolBar>
+			<telerik:QuickAccessToolBar>
+				<telerik:RadRibbonButton SmallImage="images/save.png" telerik:RadToolTipService.ToolTipContent="Save"/>
+				<telerik:RadRibbonButton SmallImage="images/undo.png" telerik:RadToolTipService.ToolTipContent="Undo"/>
+				<telerik:RadRibbonButton SmallImage="images/print.png" telerik:RadToolTipService.ToolTipContent="Print"/>
+			</telerik:QuickAccessToolBar>
+		</telerik:RadRibbonView.QuickAccessToolBar>
+		<telerik:RadRibbonView.Backstage>
+			<telerik:RadRibbonBackstage>
+				<telerik:RadRibbonBackstageItem Header="Save" IsSelectable="False" />
+				<telerik:RadRibbonBackstageItem Header="Open" IsSelectable="False" />
+				<telerik:RadRibbonBackstageItem Header="Recent">
+					<StackPanel Margin="10">
+						<TextBlock Text="Recent files:" Margin="0 0 0 5" />
+						<telerik:RadListBox>
+							<telerik:RadListBoxItem Content="Document 1" />
+							<telerik:RadListBoxItem Content="Document 2" />
+							<telerik:RadListBoxItem Content="Document 3" />
+							<telerik:RadListBoxItem Content="Document 4" />
+						</telerik:RadListBox>
+					</StackPanel>
+				</telerik:RadRibbonBackstageItem>
+			</telerik:RadRibbonBackstage>
+		</telerik:RadRibbonView.Backstage>
+		<telerik:RadRibbonView.Items>
+			<telerik:RadRibbonTab Header="Home">
+				<telerik:RadRibbonGroup Header="Clipboard">
+					<telerik:RadRibbonButton Text="Copy" />
+					<telerik:RadRibbonSplitButton Text="Paste">
+						<telerik:RadRibbonSplitButton.DropDownContent>
+							<telerik:RadMenu>
+								<telerik:RadMenuItem Header="Paste" />
+								<telerik:RadMenuItem Header="Paste from" />
+							</telerik:RadMenu>
+						</telerik:RadRibbonSplitButton.DropDownContent>
+					</telerik:RadRibbonSplitButton>
+				</telerik:RadRibbonGroup>
+				<telerik:RadRibbonGroup Header="Font">
+				</telerik:RadRibbonGroup>
+			</telerik:RadRibbonTab>
+			<telerik:RadRibbonTab Header="View" />
+		</telerik:RadRibbonView.Items>
+	</telerik:RadRibbonView>
+{{endregion}}
+
+#### __Figure 9: RadRibbonView example__  
+![](images/ribbonview-getting-started-09.png)
 
 # See Also
  * [Commands Support]({%slug radribbonview-features-commands-support%})

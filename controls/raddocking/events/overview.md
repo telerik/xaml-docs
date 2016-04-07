@@ -74,19 +74,23 @@ This topic covers the specific events exposed by the __RadDocking__ control. The
 
 * __Save\Load Layout Events__
 
-	* __ElementLoading__- raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be loaded.
+	* __ElementLoading__- raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be loaded. The type of the passed event arguments is __LayoutSerializationLoadingEventArgs__.
 
-	* __ElementLoaded__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is loaded.
+	* __ElementLoaded__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is loaded. The type of the passed event arguments is __LayoutSerializationEventArgs__.
 
-	* __ElementSaving__ - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved.
-
-	* __ElementSaved__ - raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is saved.
-
-	* __ElementCleaning__- raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be cleaned.
-
-	* __ElementCleaned__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is cleaned.
+	* __ElementSaving__ - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved. The type of the passed event arguments is __LayoutSerializationEventArgs__.
 	
-	* __CustomElementLoading__- raised when a custom docking element (that derives from __RadPane__, __RadPaneGroup__ or __RadSplitContainer__) is about to be loaded. 
+	* __ElementLayoutSaving__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts saving. The type of the passed event arguments is __LayoutSerializationSavingEventArgs_.
+
+	* __ElementSaved__ - raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is saved. The type of the passed event arguments is __LayoutSerializationEventArgs__.
+
+	* __ElementCleaning__- raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be cleaned. The type of the passed event arguments is __LayoutSerializationEventArgs__.
+	
+	* __ElementLayoutCleaning__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts cleaning up. The type of the passed event arguments is __LayoutSerializationCleaningEventArgs__.
+
+	* __ElementCleaned__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is cleaned. The type of the passed event arguments is __LayoutSerializationEventArgs__.
+	
+	* __CustomElementLoading__- raised when a custom docking element (that derives from __RadPane__, __RadPaneGroup__ or __RadSplitContainer__) is about to be loaded.  The type of the passed event arguments is __LayoutSerializationCustomLoadingEventArgs__.
 
 >tipElements are __cleaned just before loading__ the layout - this operation is performed to prepare the Docking control for the new layout.
 

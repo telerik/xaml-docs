@@ -12,11 +12,11 @@ position: 17
 
 When you limit your product's availability to only one language, you limit your potential customer base to a fraction of the world population. If you want your application to reach a global audience, cost-effective __localization__ of your product is one of the best and most economical ways to reach more customers.
 
->tip__Localization__ is the translation of application resources into localized versions for the specific cultures that the application supports.
+>tip __Localization__ is the translation of application resources into localized versions for the specific cultures that the application supports.
+<Comment: I do not think you need the word tip at the beginning. This reads (to me) like a definition, not a tip. The sentence is already emphasized since the line starts with the greater-than symbol so you could just delete tip. I am also curious why the definition of localization does not mention the word language.>
+This article will show you how to localize any resource string used by Telerik UI controls. We will discuss the following topics:
 
-The purpose of this article is to show you how to localize any resource string used by Telerik's UI controls. We will discuss the following topics:
-
-* [Localization Using Built-in Resources](#localization-using-built-in-resources)
+* [Localization using built-in resources](#localization-using-built-in-resources)
 
 * [Resource keys](#resource-keys)
 
@@ -24,8 +24,8 @@ The purpose of this article is to show you how to localize any resource string u
 
 * [Localization using custom localization manager](#localization-using-custom-localization-manager)
 
->tipAll examples in this tutorial are demonstrated in the context of the Telerik __RadGridView__ control. However, the techniques and principles used for the localization of the string resources are valid for all the other Telerik __{% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls__.
-
+>tipAll examples in this article are demonstrated in the context of the Telerik __RadGridView__ control. However, the techniques and principles used for the localization of the string resources are valid for all the other Telerik __{% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls__.
+<Comment: Again, I do not think you need the word tip at the beginning since the section is already emphasized.>
 ## Localization Using Built-in Resources
 
 The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides the possibility to easily set the used Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls in one of the following supported languages:
@@ -46,7 +46,8 @@ The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% end
 
 The default is English, but you can find a separate file for each of the other languages in a corresponding folder together with the other binaries in your local installation.
 
->If you want to translate your control in another language, you should use the [Custom Localization Manager.](#localization-using-custom-localization-manager)
+>If you want to translate your control into another language, you should use the [Custom Localization Manager](#localization-using-custom-localization-manager).
+<Comment: I am a bit confused why this tip is here when custom localization manager and built-in localization are not covered until later in this article. Reading this tip here makes me wonder what is the difference between the custom localization manager and the built-in localization mechanism. Please explain mechanism vs manager. They sound so similar.>
 
 To localize your controls using the built-in localization mechanism, you first have to place the resource folders along with the binaries you have referenced as shown in **Figure 3**.
 
@@ -92,7 +93,7 @@ The next step for defining the language settings of the application is changing 
 
 {% if site.site_name == 'WPF' %}
 The next step for defining the language settings of the application is changing the __Current Culture__ of the application:
-            
+         
 #### __[C#] Example 1: Setting the current culture of the application__
 
 {{region common-localization_9}}
@@ -122,21 +123,21 @@ That's it. Your controls should now be localized in the preferred language.
 
 ## Resource Keys
 
-Some of the controls are complex user interface controls (e.g. __RadGridView__, __RadScheduleView__) and their strings for localization are numerous. In order to be able to distinguish these resources, an unique identifier called __resource key__, is assigned to each localizable string.
+Some of the controls are complex user interface controls (e.g., __RadGridView__, __RadScheduleView__) and their strings for localization are numerous. In order to be able to distinguish these resources, a unique identifier called __resource key__ is assigned to each localizable string.
 
-On the picture below you can see some resource keys and the strings they are associated with.
+In Figure 3 you can see some resource keys and the strings they are associated with.
 
 #### __Figure 3: Some of RadGridView's resource keys and their values__
 
 ![Common_Localization_060](images/Common_Localization_060.png)
 
->tipFor a full list of __Resource Keys__, check out the __Localization__ topic for the specific control.
+>tipFor a full list of __resource keys__, check out the __Localization__ topic for the specific control.
 
 ## Localization Using ResourceManager
 
-If you need to modify the default strings for a chosen language, you can base your localization on the standard resource files. For that purpose you will have to create a separate __.resx__ file for each of the languages that your application will support.
+If you need to modify the default strings for a chosen language, you can base your localization on the standard resource files. For that purpose, you will have to create a separate __.resx__ file for each of the languages that your application will support.
         
-Imagine that you want to translate your control, RadGridView for example, into English, German and Dutch. For that purpose you will have to add three new resource files to your project:
+Imagine that you want to translate your control, RadGridView for example, into English, German and Dutch. You will have to add three new resource files to your project:
 
 * __GridViewResources.resx__ - this resource file will store the __English(default)__ resources for the grid control. Set the __AccessModifier__ property to __Public__.
           
@@ -148,20 +149,21 @@ Imagine that you want to translate your control, RadGridView for example, into E
           
 ![Common Localization 030](images/Common_Localization_030.png)
 
-Now, having the needed files, it's time to illustrate the idea and localize only the text for the group panel. For that purpose you need to create a single resource string in each one of the three resource files and translate it to the appropriate language.
+Now that you have the needed files, it's time to localize only the text for the group panel. For that purpose, you need to create a single resource string in each one of the three resource files and translate it to the appropriate language.
       
 >Note that the name of the resource string should be the same as the resource key for the string that you are localizing. The resource key for RadGridView's group panel is __GridViewGroupPanelText__.
           
->tipFor a full list of __Resource Keys__, check out the __Localization__ topic for the specific control.
-        
-The snapshot below shows the content of the __GridViewResources.de.resx__ file. The resource __Name__ (**GridViewGroupPanelText**) of the other two files should be the same. The __Value__ column will contain the translation for the appropriate language.
+>tipFor a full list of __resource keys__, check out the __Localization__ topic for the specific control.
+<Comment: This is a repeat of the same tip in the last section. Is it important to repeat it?>
+
+Figure 5 shows the content of the __GridViewResources.de.resx__ file. The resource __Name__ (**GridViewGroupPanelText**) of the other two files should be the same. The __Value__ column will contain the translation for the appropriate language.
 
 #### __Figure 5: The content of GridViewResources.de.resx__
 
 ![Common Localization 040](images/Common_Localization_040.png)
 
-The last step is to instantiate the __LocalizationManager__ class, which allows you to easily localize any of our controls, and set its __ResourceManager__ to the resources that have just  been created (you can do this in the default constructor of the Application class).
-
+The last step is to instantiate the __LocalizationManager__ class, which allows you to easily localize any Telerik UI controls, and set its __ResourceManager__ to the resources that have just  been created (you can do this in the default constructor of the Application class).
+<Comment: Please verify that my change in the previous sentence to "Telerik UI controls" did not create a technical error. The phrase was used at the beginning of the article so I assume it is OK.>
 {% if site.site_name == 'WPF' %}
 #### __[C#] Example 2: Setting the LocalizationManager's ResourceManager__
 {% endif %}

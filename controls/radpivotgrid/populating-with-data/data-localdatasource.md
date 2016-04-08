@@ -157,13 +157,13 @@ The __LocalDataSourceProvider__ is using four different collections for the data
 	localDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription)
 {{endregion}}
 
-* __AggregateDescriptions__ - the data added to this description will be aggregated and included in __RadPivotGrid__ as Cells. The properties can be defined as PropertyAggregateDescription or you can create custom implementation of PropertyAggregateDescriptionBase class. Here's how to define the __AggregateDescriptions__ in your application:    				
-
+* __AggregateDescriptions__ - the data added to this description will be aggregated and included in __RadPivotGrid__ as Cells. The properties can be defined as PropertyAggregateDescription or you can create custom implementation of PropertyAggregateDescriptionBase class. 
+	
 #### __XAML__
 
 {{region radpivotgrid-data-local_5}}
 	<pivot:LocalDataSourceProvider.AggregateDescriptions>
-	    <pivot:PropertyAggregateDescription PropertyName="Price" StringFormat="C" AggregateFunction="Average" />
+	    <pivot:PropertyAggregateDescription PropertyName="Price" StringFormat="C" AggregateFunction="Average"/>
 	    <pivot:PropertyAggregateDescription PropertyName="Quantity"/>
 	</pivot:LocalDataSourceProvider.AggregateDescriptions>
 {{endregion}}
@@ -201,6 +201,45 @@ The __LocalDataSourceProvider__ is using four different collections for the data
 	    localDataProvider.AggregateDescriptions.Add(propertyAggregateDescription1)
 	    localDataProvider.AggregateDescriptions.Add(propertyAggregateDescription2)
 	End Using   
+{{endregion}}
+
+With R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} a brand new property __IgnoreNullValues__ was introduced for the __PropertyAggregateDescription__. This property is of type bool and it is used to determine whether a specific __PropertyAggregateDescription__ should ignore the null values when calculating its result. The default value of the property is false, so in order the null values to be ignored it should be set to true.	 				
+
+Here's how to define the __AggregateDescriptions__ in your application with a set __IgnoreNullValues__ property:
+	
+#### __XAML__
+
+{{region radpivotgrid-data-local_5}}
+	<pivot:LocalDataSourceProvider.AggregateDescriptions>
+	    <pivot:PropertyAggregateDescription PropertyName="Price" StringFormat="C" AggregateFunction="Average" IgnoreNullValues="true"/>
+	    <pivot:PropertyAggregateDescription PropertyName="Quantity"/>
+	</pivot:LocalDataSourceProvider.AggregateDescriptions>
+{{endregion}}
+
+In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDescriptions__ you would add in the __LocalDataSourceProvider__ you should handle the __LocalDataSourceProvider.PrepareDescriptionForField__ event and set IgnoreNullValues in the handler:
+
+#### __C#__
+
+{{region radpivotgrid-data-local_5}}
+	private void LocalDataSourceProvider_PrepareDescriptionForField(object sender, PrepareDescriptionForFieldEventArgs e)
+	{
+		var description = e.Description as PropertyAggregateDescription;
+		if (description != null)
+		{
+			description.IgnoreNullValues = true;
+		}
+	}
+{{endregion}}
+
+#### __VB.NET__
+
+{{region radpivotgrid-data-local_5}}
+	Private Sub LocalDataSourceProvider_PrepareDescriptionForField(sender As Object, e As PrepareDescriptionForFieldEventArgs)
+		Dim description = TryCast(e.Description, PropertyAggregateDescription)
+		If description IsNot Nothing Then
+			description.IgnoreNullValues = True
+		End If
+	End Sub
 {{endregion}}
 
 * __FilterDescriptions__ - the data added to this description will be filtered and after that included in __RadPivotGrid__. The properties can be defined as PropertyFilterDescription or you can create custom implementation of PropertyFilterDescriptionBase class.    				

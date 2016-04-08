@@ -220,6 +220,46 @@ Here's how to define the __AggregateDescriptions__ in your application:
 	End Using
 {{endregion}}
 
+With R2 2016 of UI for WPF a brand new property __IgnoreNullValues__ was introduced for the __PropertyAggregateDescription__. This property is of type bool and it is used to determine whether a specific __PropertyAggregateDescription__ should ignore the null values when calculating its result. The default value of the property is false, so in order the null values to be ignored it should be set to true.	 	
+
+Here's how to define the __AggregateDescriptions__ in your application with a set __IgnoreNullValues__ property::            
+
+#### __XAML__
+
+{{region radpivotgrid-data-queryable_5}}
+	<pivot:QueryableDataProvider.AggregateDescriptions>
+	    <pivot:QueryablePropertyAggregateDescription AggregateFunction="Count" StringFormat="C" PropertyName="Freight" IgnoreNullValues="true"/>
+	    <pivot:QueryablePropertyAggregateDescription PropertyName="ShipVia"/>
+	</pivot:QueryableDataProvider.AggregateDescriptions>
+{{endregion}}
+
+
+In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDescriptions__ you would add in the __LocalDataSourceProvider__ you should handle the __LocalDataSourceProvider.PrepareDescriptionForField__ event and set IgnoreNullValues in the handler:
+
+#### __C#__
+
+{{region radpivotgrid-data-local_5}}
+	private void QueryableDataProvider_PrepareDescriptionForField(object sender, Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs e)
+	{
+		var description = e.Description as QueryablePropertyAggregateDescription;
+		if (description != null)
+		{
+			description.IgnoreNullValues = true;
+		}
+	}
+{{endregion}}
+
+#### __VB.NET__
+
+{{region radpivotgrid-data-local_5}}
+	Private Sub QueryableDataProvider_PrepareDescriptionForField(sender As Object, e As Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs)
+		Dim description = TryCast(e.Description, QueryablePropertyAggregateDescription)
+		If description IsNot Nothing Then
+			description.IgnoreNullValues = True
+		End If
+	End Sub
+{{endregion}}
+
 * __FilterDescriptions__ - the data added to this description will be filtered and after that included in __RadPivotGrid__. The properties can be defined as QueryablePropertyFilterDescription or you can create custom implementation of QueryableFilterDescription class.            
 
 #### __XAML__

@@ -192,11 +192,11 @@ The last step is to instantiate the __LocalizationManager__ class, which allows 
 
 {% if site.site_name == 'WPF' %}
 
->If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the __Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others - to __No code generation__.         
+>If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the __Resources.resx__ file, you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others, to __No code generation__.         
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
->If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the __Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others - to __No code generation__. Then, open the project file in a text-mode and insert the code below into the __&lt;PropertyGroup&gt;__ section. In this way you notify the framework about the supported cultures.
+>If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the __Resources.resx__ file, you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others, to __No code generation__. Then, open the project file in a text-mode and insert the code below into the __&lt;PropertyGroup&gt;__ section. In this way you notify the framework about the supported cultures.
 
 #### __[XAML] Example 4: Setting the project's supported cultures__
 
@@ -207,7 +207,7 @@ The last step is to instantiate the __LocalizationManager__ class, which allows 
 
 ## Localization Using Custom Localization Manager
 
-The other way to localize your controls is to create a class that derives from the __LocalizationManager__ object and to override its __GetStringOverride()__ method. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as shown below:
+The other way to localize your controls is to create a class that derives from the __LocalizationManager__ object and then override its __GetStringOverride()__ method. The logic is pretty simple; you just have to create a switch statement and return the correct translation for each resource key, as shown below:
         
 {% if site.site_name == 'WPF' %}
 #### __[C#] Example 3: Overriding the LocalizationManager's GetStringOverride() method__
@@ -354,7 +354,7 @@ Of course, if you don't want to hard-code your translation inside your source co
 	End Function
 {{endregion}}
 
-All that's left to do is to set our CustomLocalizationManager to the static Manager property  of the LocalizationManager:
+All that's left to do is to set our CustomLocalizationManager to the static Manager property of the LocalizationManager:
 
 {% if site.site_name == 'WPF' %}
 #### __[C#] Example 5: Applying the custom LocalizationManager__

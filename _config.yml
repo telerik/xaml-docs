@@ -386,6 +386,14 @@ navigation:
         title: RadSparkLine
     controls/radtabcontrol:
         title: RadTabControl
+    controls/radtabcontrol/features/tab-item:
+        title: Tab Item
+    controls/radtabcontrol/populating-with-tabs:
+        title: Populating with Tabs
+    controls/radtabcontrol/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radtabcontrol/templating:
+        title: Templating
     controls/radtileview:
         title: RadTileView
     controls/radtoolbar:

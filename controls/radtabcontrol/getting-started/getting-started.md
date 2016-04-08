@@ -12,12 +12,12 @@ position: 0
 
 This tutorial will walk you through the creation of a sample application that contains __RadTabControl__.
 
-* [Assembly References](#assembly-references)
+* [Assembly references](#assembly-references)
 * [Defining a RadTabControl](#defining-a-radtabcontrol)
-* [Adding Tabs](#adding-tabs)
-* [Adding Content in the Tabs](#adding-content-in-the-tabs)
-* [Data Binding](#data-binding)
-* [Setting the Tabs Orientation](#setting-the-tabs-orientation)
+* [Adding tabs](#adding-tabs)
+* [Adding content in the tabs](#adding-content-in-the-tabs)
+* [Data binding](#data-binding)
+* [Setting the tabs orientation](#setting-the-tabs-orientation)
 			
 ## Assembly References
 
@@ -37,9 +37,9 @@ You can add __RadTabControl__ manually in XAML as demonstrated in __Example 1__.
 	<telerik:RadTabControl />
 {{endregion}}
 
-At this point the control is empty and only its tab items panel and content container are displayed.
+At this point, the control is empty and only its tab items panel and content container are displayed.
 
-#### __Figure 1: Empty RadTabControl__
+#### __Figure 1: An empty RadTabControl__
 ![](images/radtabcontrol-getting-started-01.png)
 
 ## Adding Tabs
@@ -111,7 +111,7 @@ __RadTabItem__ is a HeaderedContentControl, which means that it can have a heade
 #### __Figure 3: RadTabItem with a string set as its content__
 ![](images/radtabcontrol-getting-started-03.png)
 
-#### __[XAML] Example 5: Setting an UIElement as the value of the RadTabItem's Content property__
+#### __[XAML] Example 5: Setting a UIElement as the value of the RadTabItem's Content property__
 {{region radtabcontrol-gettingstarted-06}}
 	<telerik:RadTabControl>
 		<telerik:RadTabItem Header="Tab 1">
@@ -129,14 +129,14 @@ __RadTabItem__ is a HeaderedContentControl, which means that it can have a heade
 	</telerik:RadTabControl>
 {{endregion}}
 
-#### __Figure 4: RadTabItem with an UIElement set as its content__
+#### __Figure 4: RadTabItem with a UIElement set as its content__
 ![](images/radtabcontrol-getting-started-04.png)
 
 ## Data Binding
 
 The RadTabControl component allows you to data bind it to a collection of business objects and define their visual appearance. You can do that through the __ItemsSource__ property of the control.
 
-> You can learn more about data binding from the [Binding To Collection]({%slug radtabcontrol-populating-binding-to-collection%}) article.
+> You can learn more about data binding from the [Binding to Collection]({%slug radtabcontrol-populating-binding-to-collection%}) article.
 
 The model from __Example 6__ will be used to demonstrate a simple data binding scenario.
 
@@ -173,9 +173,9 @@ The model from __Example 6__ will be used to demonstrate a simple data binding s
 	End Class
 {{endregion}}
 
-__Examples 7 and 8__ show how you can populate a collection of business objects and bind it to the __ItemsSource__ of the tab control.
+__Example 7__ and __Example 8__ show how you can populate a collection of business objects and bind it to the __ItemsSource__ of the tab control.
 
-#### __[C#] Example 7: Populating a collection of business objects and pass it as DataContext of RadTabControl__
+#### __[C#] Example 7: Populating a collection of business objects and pass it as the DataContext of a RadTabControl__
 {{region radtabcontrol-gettingstarted-09}}
 	var source = new ObservableCollection<TabItemModel>()
 	{
@@ -198,7 +198,7 @@ __Examples 7 and 8__ show how you can populate a collection of business objects 
 	this.tabControl.DataContext = source;
 {{endregion}}
 
-#### __[VB.NET] Example 7: Populating a collection of business objects and pass it as DataContext of RadTabControl__
+#### __[VB.NET] Example 7: Populating a collection of business objects and pass it as the DataContext of a RadTabControl__
 {{region radtabcontrol-gettingstarted-10}}
 	Dim source = New ObservableCollection(Of TabItemModel)() From { _
 		New TabItemModel() With { _
@@ -217,7 +217,7 @@ __Examples 7 and 8__ show how you can populate a collection of business objects 
 	Me.tabControl.DataContext = source
 {{endregion}}
 
-#### __[XAML] Example 8: Binding the ItemsSource of RadTabControl and defining the RadTabItems appearance__
+#### __[XAML] Example 8: Binding the ItemsSource of a RadTabControl and defining the RadTabItems appearance__
 {{region radtabcontrol-gettingstarted-11}}
 	<telerik:RadTabControl x:Name="tabControl" ItemsSource="{Binding}">
 		<telerik:RadTabControl.ItemTemplate>
@@ -238,7 +238,7 @@ __Examples 7 and 8__ show how you can populate a collection of business objects 
 	</telerik:RadTabControl>
 {{endregion}}
 
-#### __Figure 5: Data binding RadTabControl__
+#### __Figure 5: Data binding a RadTabControl__
 ![](images/radtabcontrol-getting-started-05.png)
 
 > You can see the [Templating]({%slug radtabcontrol-templating-overview%}) section in the help documentation that describes the RadTabControl templates and how to change the components' appearance.
@@ -247,7 +247,7 @@ __Examples 7 and 8__ show how you can populate a collection of business objects 
 
 RadTabControl allows you to control whether to display the tabs horizontally or vertically. You can do that through the __Orientation__ property of the tab control. Its default value is __Horizontal__ and therefore the items are positioned horizontally. Setting the property to __Vertical__ will rotate the headers of the tab items at 90 degrees.
 
-#### __[XAML] Example 9: Setting an UIElement as the value of the RadTabItem's Content property__
+#### __[XAML] Example 9: Setting a UIElement as the value of the RadTabItem's Content property__
 {{region radtabcontrol-gettingstarted-12}}
     <telerik:RadTabControl TabOrientation="Vertical">		
 		<telerik:RadTabItem Header="Tab 1" />
@@ -257,12 +257,12 @@ RadTabControl allows you to control whether to display the tabs horizontally or 
 	</telerik:RadTabControl>
 {{endregion}}
 
-#### __Figure 6: RadTabItem with an UIElement set as its content__
+#### __Figure 6: RadTabItem with a UIElement set as its content__
 ![](images/radtabcontrol-getting-started-06.png)
 
 # See Also
- * [Visual Structure]({%slug radtabcontrol-visual-structure%})
- * [Key Features]({%slug radtabcontrol-key-features%})
- * [Populating with Tabs]({%slug radtabcontrol-populating-with-tabs%})
- * [Create Multiline Tabs]({%slug radtabcontrol-features-multiline-tabs%})
- * [Tabstrp Alignment]({%slug radtabcontrol-fetures-tabstrip-alignment%})
+ * [Visual structure]({%slug radtabcontrol-visual-structure%})
+ * [Key features]({%slug radtabcontrol-key-features%})
+ * [Populating with tabs]({%slug radtabcontrol-populating-with-tabs%})
+ * [Create multiline tTabs]({%slug radtabcontrol-features-multiline-tabs%})
+ * [Tabstrip alignment]({%slug radtabcontrol-fetures-tabstrip-alignment%})

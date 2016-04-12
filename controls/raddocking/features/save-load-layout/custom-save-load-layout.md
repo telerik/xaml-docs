@@ -1,6 +1,6 @@
 ---
-title: Custom Save/Load Layout
-page_title: Custom Save/Load Layout
+title: Save/Load Layout Events
+page_title: Save/Load Layout Events
 description: Custom Save/Load Layout
 slug: raddocking-features-custom-save-load-layout
 tags: save/load,layout,custom
@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Custom Save/Load Layout
+# Save/Load Layout Events
 
 With R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the ability to change the default save/load layout mechanism of __RadDocking__ is now available. This is now possible using the __ElementLayoutSaving__ (also available with R2 2016), __ElementLoading__ and __CustomElementLoading__ events of the __RadDocking__ control. 
 

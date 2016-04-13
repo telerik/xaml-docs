@@ -176,7 +176,7 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 
 ## Disable the Built In Navigation
 
-As of __Q1 2015 PropertyGridCommandProvider__ exposes a new property: __EnableBuiltInNavigation__. Its default value is __True__. In order to __disable the built-in navigation__, you can set its value to __False__.
+As of __Q1 2015 DataFormCommandProvider__ exposes a new property: __EnableBuiltInNavigation__. Its default value is __True__. In order to __disable the built-in navigation__, you can set its value to __False__.
 
 #### __[C#] Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
@@ -199,7 +199,7 @@ As of __Q1 2015 PropertyGridCommandProvider__ exposes a new property: __EnableBu
 
 ## Control the Processing of Handled Events
 
-As of __Q1 2015__ the new boolean property __ShouldProcessHandledEvents__ of __PropertyGridCommandProvider__ is exposed. Its default value is __True__. If you want to manually process handled events, you can set its value to __False__.
+As of __Q1 2015__ the new boolean property __ShouldProcessHandledEvents__ of __DataFormCommandProvider__ is exposed. Its default value is __True__. If you want to manually process handled events, you can set its value to __False__.
 
 #### __[C#] Example 4: Setting the ShouldProcessHandledEvents to False__
 

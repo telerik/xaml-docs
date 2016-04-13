@@ -78,7 +78,7 @@ If you run the application now, you will see a docking with some SplitContainers
 
 By handling the __ElementLayoutSaving__ event of __RadDocking__ you could save any desired property of the element (Pane, PaneGroup, SplitContainer or the Docking control) that is currently saving or exclude that element from saving.  This is possible using the __ElementProperties__ dictionary and the __Cancel__ property of the __LayoutSerializationSavingEventArgs__ of the event. 
 
->The event is only called for the elements that have a set __SerializationTag__.
+>The event is only called for the elements that have a set __SerializationTag__. However, you have the ability to "say" whether this event to be fired or not, when the __SerializationTag__ is __not specified__. You should set the second overload of the __LoadLayout__ and __SaveLayout__ methods to true.
 
 The __ElementProperties__ property is of type Dictionary. The value and its associated key should be of type string - the key is the name of the property you want to save. 
 __Example 2__ demonstrates how you could easily add the CanFloat property of a Pane to the dictionary you want to save in the XML:
@@ -222,6 +222,8 @@ __Figure 2__ visualized how RadDocking looks after loading the saved layout:
 ## Loading properties
 
 In order to prevent a specific property from loading the __ElementLoading__ event needs to be handled. By using the __ElementProperties__ dictionary (that contains all saved properties) you could simply remove the properties that should not be loaded. 
+
+>The event is only called for the elements that have a set __SerializationTag__. However, you have the ability to "say" whether this event to be fired or not, when the __SerializationTag__ is __not specified__. You should set the second overload of the __LoadLayout__ and __SaveLayout__ methods to true.
 
 __Example 7__ demonstrates how to prevent the Header property of the left docked Panes from loading:
 

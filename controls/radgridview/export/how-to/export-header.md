@@ -51,7 +51,7 @@ Here is a small sample code:
 	}
 {{endregion}}
 
-#### __[VB.NET]Example 3:Handle the ElementExporting event: __
+#### __[VB.NET]Example 3:Handle the ElementExporting event:__
 
 {{region gridview-export-troubleshooting-export-header_2}}
 

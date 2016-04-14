@@ -12,8 +12,8 @@ position: 17
 
 When you limit your product's availability to only one language, you limit your potential customer base to a fraction of the world population. If you want your application to reach a global audience, cost-effective __localization__ of your product is one of the best and most economical ways to reach more customers.
 
->tip __Localization__ is the translation of application resources into localized versions for the specific cultures that the application supports.
-<Comment: I do not think you need the word tip at the beginning. This reads (to me) like a definition, not a tip. The sentence is already emphasized since the line starts with the greater-than symbol so you could just delete tip. I am also curious why the definition of localization does not mention the word language.>
+>__Localization__ is the translation of application resources into localized versions for the specific cultures that the application supports.
+
 This article will show you how to localize any resource string used by Telerik UI controls. We will discuss the following topics:
 
 * [Localization using built-in resources](#localization-using-built-in-resources)
@@ -24,8 +24,8 @@ This article will show you how to localize any resource string used by Telerik U
 
 * [Localization using custom localization manager](#localization-using-custom-localization-manager)
 
->tipAll examples in this article are demonstrated in the context of the Telerik __RadGridView__ control. However, the techniques and principles used for the localization of the string resources are valid for all the other Telerik __{% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls__.
-<Comment: Again, I do not think you need the word tip at the beginning since the section is already emphasized.>
+>All examples in this article are demonstrated in the context of the Telerik __RadGridView__ control. However, the techniques and principles used for the localization of the string resources are valid for all the other Telerik __{% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls__.
+
 ## Localization Using Built-in Resources
 
 The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides the possibility to easily set the used Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls in one of the following supported languages:
@@ -46,8 +46,7 @@ The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% end
 
 The default is English, but you can find a separate file for each of the other languages in a corresponding folder together with the other binaries in your local installation.
 
->If you want to translate your control into another language, you should use the [Custom Localization Manager](#localization-using-custom-localization-manager).
-<Comment: I am a bit confused why this tip is here when custom localization manager and built-in localization are not covered until later in this article. Reading this tip here makes me wonder what is the difference between the custom localization manager and the built-in localization mechanism. Please explain mechanism vs manager. They sound so similar.>
+>If you need to translate your control into a different language, you should use a [Custom Localization Manager](#localization-using-custom-localization-manager).
 
 To localize your controls using the built-in localization mechanism, you first have to place the resource folders along with the binaries you have referenced as shown in **Figure 3**.
 
@@ -162,8 +161,8 @@ Figure 5 shows the content of the __GridViewResources.de.resx__ file. The resour
 
 ![Common Localization 040](images/Common_Localization_040.png)
 
-The last step is to instantiate the __LocalizationManager__ class, which allows you to easily localize any Telerik UI controls, and set its __ResourceManager__ to the resources that have just  been created (you can do this in the default constructor of the Application class).
-<Comment: Please verify that my change in the previous sentence to "Telerik UI controls" did not create a technical error. The phrase was used at the beginning of the article so I assume it is OK.>
+The last step is to instantiate the __LocalizationManager__ class, which allows you to easily localize any Telerik UI controls, by going through all resource keys and returning the appropriate translation. You then set its __ResourceManager__ to the resources that have just  been created (you can do this in the default constructor of the Application class).
+
 {% if site.site_name == 'WPF' %}
 #### __[C#] Example 2: Setting the LocalizationManager's ResourceManager__
 {% endif %}
@@ -207,7 +206,7 @@ The last step is to instantiate the __LocalizationManager__ class, which allows 
 
 ## Localization Using Custom Localization Manager
 
-The other way to localize your controls is to create a class that derives from the __LocalizationManager__ object and then override its __GetStringOverride()__ method. The logic is pretty simple; you just have to create a switch statement and return the correct translation for each resource key, as shown below:
+If you want to translate your controls to a language different from the default available ones, you will need to create a custom **LocalizationManager**. To do so, create a class that derives from __LocalizationManager__ and override its __GetStringOverride()__ method. The logic is pretty simple - you just have to create a switch statement and return the correct translation for each resource key, as shown below:
         
 {% if site.site_name == 'WPF' %}
 #### __[C#] Example 3: Overriding the LocalizationManager's GetStringOverride() method__
@@ -219,7 +218,7 @@ The other way to localize your controls is to create a class that derives from t
 {{region common-localization_5}}
 	public class CustomLocalizationManager : LocalizationManager
 	{
-	  public override string GetStringOverride( string key )
+	  public override string GetStringOverride(string key)
 	  {
 	      switch( key )
 	      {
@@ -257,7 +256,7 @@ The other way to localize your controls is to create a class that derives from t
 	          case "GridViewFilter":
 	              return "Filter";
 	      }
-	      return base.GetStringOverride( key );
+	      return base.GetStringOverride(key);
 	  }
 {{endregion}}
 
@@ -322,7 +321,7 @@ Of course, if you don't want to hard-code your translation inside your source co
 {% endif %}
 
 {{region common-localization_7}}
-	public override string GetStringOverride( string key )
+	public override string GetStringOverride(string key)
 	{
 	   switch( key )
 	   {
@@ -331,7 +330,7 @@ Of course, if you don't want to hard-code your translation inside your source co
 	           return GridViewResources.GridViewClearFilter;
 	       //----------------------
 	   }
-	   return base.GetStringOverride( key );
+	   return base.GetStringOverride(key);
 	}
 {{endregion}}
 

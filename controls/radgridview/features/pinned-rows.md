@@ -10,7 +10,7 @@ position: 17
 
 # Pinned Rows
 
-With **R2 2016**, Telerik introduced **Pinned Rows**. Pinned Rows enable you to pin particular rows to the top or bottom of your **RadGridView** so that they do not participate in the vertical scrolling.
+With **R2 2016**, Telerik introduced **Pinned Rows**. By using Pinned Rows, you can pin particular rows to the top or bottom of your **RadGridView** so that they do not participate in the vertical scrolling.
 
 In this article we will discuss the following topics:
 
@@ -50,7 +50,7 @@ RadGridView's **PinnedRowsPosition** property lets you determine where the pinne
 
 	Me.RadGridView.PinnedRowsPosition = GridViewPinnedRowsPosition.Top
 
-If the PinnedRowsPosition property is set, a pin button will appear on hovering over the [row indicator]({%slug gridview-customizing-rows%}).
+If the PinnedRowsPosition property is set to either Top or Bottom, a pin button will appear on hovering over the [row indicator]({%slug gridview-customizing-rows%}).
 
 Pressing the button will pin the respective row. Clicking on it again will remove it from the collection of the pinned rows.
 
@@ -72,11 +72,11 @@ Another way to allow your users to pin rows with the click of a button is to def
 
 ## Grouping
 
-Pinned Items do not participate in the groups. Once the user groups, the pinned items are placed back to the **Items** collection. On ungrouping, they reappear as pinned.
+Pinned Items do not participate in grouping. Once the user groups, the pinned items are placed back to the **Items** collection. On ungrouping, they reappear as pinned.
 
 ## Sorting
 
-Sorting a column should result in sorting the items in the pinned panel as well - only compared to each other.
+Sorting a column results in sorting the items in the pinned panel as well - only compared to each other.
 
 ## Paging
 
@@ -84,11 +84,11 @@ When the user pins rows in a page and moves to another page, the pinned rows are
 
 ## Filtering 
 
-Filtering the grid displays all items (along with the pinned ones) in the filter descriptor. 
+Filtering RadGridView displays all items (along with the pinned ones) in the filter descriptor. 
 
 ## Commands
 
-**TogglePinnedRowState Command** toggles a row's IsPinned property. It takes as parameters the item to pin and the target RadGridView to pin that item to.
+The **TogglePinnedRowState Command** toggles a row's **IsPinned** property. It takes as parameters the item to pin and the target RadGridView to pin that item to.
 
 #### __[C#] Example 3: Using the TogglePinnedRowState Command__
 
@@ -103,3 +103,5 @@ Filtering the grid displays all items (along with the pinned ones) in the filter
 ## See Also
 
 * [Defining Columns]({%slug gridview-columns-defining-columns%})
+
+* [Frozen Columns]({%slug gridview-columns-frozen-columns%})

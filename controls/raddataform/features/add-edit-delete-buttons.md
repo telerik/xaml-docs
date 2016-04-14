@@ -61,7 +61,7 @@ If the current item is not null and **RadDataForm** is not in editing mode, the 
 
 If the items of the data source implement the **IEditableObject** or the **INotifyPropertyChanged** interface, you will be able to revert any pending changes with the **Cancel** button. 
 
->Note that in the latter case, set the **EnablePropertyChangedBasedCancel** of **RadDataForm** to **True**.
+>Note that in the latter case, the **EnablePropertyChangedBasedCancel** property of **RadDataForm** needs to be set to **True**.
 
 >**EnablePropertyChangedBasedCancel** is not supported when using custom data templates.
 

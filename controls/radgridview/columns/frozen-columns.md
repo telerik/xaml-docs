@@ -26,7 +26,7 @@ A frozen column always stays on top of horizontal scrolling.
 
 ## Freezing Columns
 
-You can freeze your columns programmatically using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
+You can freeze columns programmatically using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
 
 In __Example 1__, the first two columns are frozen starting from left to right.
 
@@ -84,7 +84,7 @@ The property has one of three values:
 
 ## Frozen Columns Events
 
-As of Q1 2016, we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
+As of R1 2016, we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
 
 __Example 3__ shows that you can subscribe to the event either declaratively or at runtime like this:
 

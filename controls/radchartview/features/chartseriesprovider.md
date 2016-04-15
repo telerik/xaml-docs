@@ -12,56 +12,76 @@ position: 6
 
 In this help topic you will learn what mechanism for automatic series generation ChartView provides.      
 
+* [Overview](#overview)
+* [ChartSeriesDescriptor](#chartseriesdescriptor)
+* [Properties](#properties)
+* [Code Example](#code-example)
+
 ## Overview
 
 RadCartesianChart and RadPolar chart can create a dynamic number of series depending on the data (collection of collections). To take advantage of this feature, you need to create a __ChartSeriesProvider__ object. This will be the object that receives the data and holds the __ChartSeriesDescriptors__ – objects that define the specific properties of the dynamically generated series.        
 
-__ChartSeriesDescriptor__  is an abstract class. You need to create an instance of one of its inheritors depending on the series you need to produce:
-        
+The series provider uses descriptor objects to define the type and visual apperance of the series. Depending on the series type that you want to use you can define different descriptors.  
+    
 |Series|Descriptor|
 |------|----------|
-|CategoricalSeries(BarSeries, LineSeries, SplineSeries, AreaSeries, SplineAreaSeries)|CategoricalSeriesDescriptor
-|OhlcSeries, CandlestickSeries|OhlcSeriesDescriptor
-|Scatter Series (ScatterPointSeries, ScatterLineSeries, ScatterSplineSeries, ScatterAreaSeries, ScatterSplineAreaSeries)|ScatterSeriesDescriptor
-|Polar Series (PolarPointSeries, PolarLineSeries, PolarAreaSeries)|PolarSeriesDescriptor
-|Radar Series (RadarPointSeries, RadarLineSeries, RadarAreaSeries)|RadarSeriesDescriptor
+|__Categorical Series__ (BarSeries, LineSeries, SplineSeries, AreaSeries, SplineAreaSeries)|CategoricalSeriesDescriptor
+|__Financial Series__ (OhlcSeries, CandlestickSeries)|OhlcSeriesDescriptor
+|__Scatter Series__ (ScatterPointSeries, ScatterLineSeries, ScatterSplineSeries, ScatterAreaSeries, ScatterSplineAreaSeries)|ScatterSeriesDescriptor
+|__Polar Series__ (PolarPointSeries, PolarLineSeries, PolarAreaSeries)|PolarSeriesDescriptor
+|__Radar Series__ (RadarPointSeries, RadarLineSeries, RadarAreaSeries)|RadarSeriesDescriptor
+|__All Series Types__|[ChartSeriesDescriptor](#chartseriesdescriptor)  
+
+## ChartSeriesDescriptor
+
+ChartSeriesProvider allows you to use a generic descriptor that gives you more flexibility and it can be used with all chart series. This is the base __ChartSeriesDescriptor__ class. The descriptor doesn't expose value properties and it does not expect specific type of series, so you can define all you need in its style.
+
+#### __[XAML] Example 1: A ChartSeriesDescriptor that describes a RangeSeries__
+{{region radchartview-features-chartseriesprovider_01}}
+	<telerik:ChartSeriesDescriptor ItemsSourcePath="MyDataPointsCollection">
+		<telerik:ChartSeriesDescriptor.Style>
+			<Style TargetType="telerik:RangeSeries">
+				<Setter Property="CategoryBinding" Value="MyCategory"/>
+				<Setter Property="HighBinding" Value="MyHighValue"/>
+				<Setter Property="LowBinding" Value="MyLowValue"/>                                    
+			</Style>
+		</telerik:ChartSeriesDescriptor.Style>
+	</telerik:ChartSeriesDescriptor>
+{{endregion}}
+
+In this case the __TargetType__ of the descriptor determines the type of the series that will be created.
 
 ## Properties
 
-Important properties of ChartSeriesDescriptor:        
+Important properties of __ChartSeriesDescriptor__:  
 
-* __ItemsSourcePath__ – path to the collection that will feed the generated series.
-            
+* __ItemsSourcePath__: A property of type __string__ that gets or sets the path to the collection property that will feed the generated series.            
 
-* __TypePath__ – path to the property that indicates the series type that needs to be created.
-            
+* __TypePath__: A property of type __string__ that gets or sets the path to the property that indicates the series type that needs to be created.            
 
-* __Style__ – gets or sets the Style that describes the appearance of the series that are to be created. If no __TypePath__ is specified, the TargetType property of this style object is used to generate the desired series.
-            
+* __Style__: A property of type __Style__ that gets or sets the style that describes the appearance of the series that are to be created. If no __TypePath__ is specified, the TargetType property of the style object is used to generate the desired series.  
 
-* __CollectionIndex__ – gets or sets the index within the Source collection of data (view models) for which the current descriptor should be used. This property is useful when for example a BarSeries needs to be generated for the first data entry and LineSeries for the rest of the entries.
-            
+* __CollectionIndex__: A property of type __int__ that gets or sets the index within the Source collection of data (view models) for which the current descriptor should be used. This property is useful when for example a BarSeries needs to be generated for the first data entry and LineSeries for the rest of the entries.            
 
-Type-specific properties:
-        
+Type-specific properties:        
 
 * __CategoricalSeriesDescriptor__
-	1. CategoryPath - path to the Category of the data item.
-	2. ValuePath - path to the Value of the data item.
+	* __CategoryPath__: A property of type __string__ that sets or gets the path to the Category property of the data item.
+	* __ValuePath__: A property of type __string__ that sets or gets the path to the Value property of the data item.
 
 * __OhlcSeriesDescriptor__
-	1. OpenPath - path to the Open value of the data item.
-	2. HighPath - path to the High value of the data item.
-	3. LowPath - path to the Low value of the data item.
-	4. ClosePath - path to the Close value of the data item.
+	* __OpenPath__: A property of type __string__ that sets or gets the path to the Open value of the data item.
+	* __HighPath__: A property of type __string__ that sets or gets the path to the High value of the data item.
+	* __LowPath__: A property of type __string__ that sets or gets the path to the Low value of the data item.
+	* __ClosePath__: A property of type __string__ that sets or gets the path to the Close value of the data item.
 
 * __PolarSeriesDescriptor__
-	1. ValuePath - path to the Value of the data item.
-	2. Anglepath - path to the Angle value of the data item.
+	* __ValuePath__: A property of type __string__ that sets or gets the path to the Value of the data item.
+	* __Anglepath__: A property of type __string__ that sets or gets the  path to the Angle value of the data item.
 	
 * __RadarSeriesDescriptor__
-	1. CategoryPath - path to the Category of the data item.
-	2. ValuePath - path to the Value of the data item.
+	* __CategoryPath__:  A property of type __string__ that sets or gets the path to the Category of the data item.
+	* __ValuePath__:  A property of type __string__ that sets or gets the  path to the Value of the data item.
 
 ## Events
 
@@ -73,14 +93,12 @@ The event arguments are of type __ChartSeriesCreatedEventArgs__ and expose the f
 
 > This event may be raised with the series being null (for example in cases when a suitable descriptor was not found). In such a case, this event can still be used to create and set up a new series.
 	
-## Example
+## Code Example
 
-In the following example the chart is populated by a collection of 3 items, thus creating 3 series. There is a CategoricalSeriesDescriptor with CollectionIndex=2 and a style with TargetType="LineSeries". This effectively means that there will be a LineSeries, populated by the third item in the collection. There is another CategoricalSeriesDescriptor which is responsible for creating BarSeries for the rest of the items in the collection.
-        
+In the following example the chart is populated by a collection of 3 items, thus creating 3 series. There is a CategoricalSeriesDescriptor with CollectionIndex=2 and a style with TargetType="LineSeries". This effectively means that there will be a LineSeries, populated by the third item in the collection. There is another CategoricalSeriesDescriptor which is responsible for creating BarSeries for the rest of the items in the collection.        
 
-#### __XAML__
-
-{{region radchartview-features-chartseriesprovider_0}}
+#### __[XAML] Example 2: A sample chart definition with its SeriesProvider set__
+{{region radchartview-features-chartseriesprovider_02}}
 	<telerik:RadCartesianChart x:Name="chart" Palette="Summer">
 	            
 	    <telerik:RadCartesianChart.HorizontalAxis>
@@ -118,8 +136,8 @@ In the following example the chart is populated by a collection of 3 items, thus
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __C#__  
-{{region radchartview-features-chartseriesprovider_0}}
+#### __[C#] Example 3: The chart's view models set up__
+{{region radchartview-features-chartseriesprovider_03}}
 	public class SalesInfo 
 	{
 	    public string MonthName { get; set; }
@@ -187,8 +205,8 @@ In the following example the chart is populated by a collection of 3 items, thus
 	}
 {{endregion}}
 
-#### __VB.NET__  
-{{region radchartview-features-chartseriesprovider_0}}
+#### __[VB.NET] Example 3: A sample chart definition with its SeriesProvider set__
+{{region radchartview-features-chartseriesprovider_04}}
 	Public Class SalesInfo
 		Public Property MonthName() As String
 		Public Property Sales() As Double
@@ -253,7 +271,6 @@ In the following example the chart is populated by a collection of 3 items, thus
 				} _
 			})
 	
-	
 			result.Add(New VendorYearlyData() With { _
 				.VendorName = "Vendor C", _
 				.Data = New ObservableCollection(Of SalesInfo)() With { _
@@ -275,14 +292,18 @@ In the following example the chart is populated by a collection of 3 items, thus
 					} _
 				} _
 			})
-	
+			
 			Return result
 		End Function
 	End Class
 {{endregion}}
 
+#### __Figure 1: Dynamic number of series generated using SeriesProvider__
 ![Rad Chart View-chartseriesprovider-0](images/RadChartView-chartseriesprovider-0.png)
 
-## See Also
-[Create Data-Bound Chart]({%slug radchartview-series-databinding%})
-[Annotations Provider]({%slug radchartview-annotations-annotationsprovider%})
+> You can find runnable examples that demonstrate the __SeriesProvider__ in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk). There are couple examples which you can find under the following directories in the repository - {% if site.site_name == 'Silverlight' %}[ChartView/SL/SeriesProvider](https://github.com/telerik/xaml-sdk/tree/master/ChartView/SL/SeriesProvider) and [ChartView/SL/SeriesDescriptorSelector](https://github.com/telerik/xaml-sdk/tree/master/ChartView/SL/SeriesDescriptorSelector){% endif %}{% if site.site_name == 'WPF' %}[ChartView/WPF/SeriesProvider](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/SeriesProvider) and [ChartView/WPF/SeriesDescriptorSelector](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/SeriesDescriptorSelector){% endif %}
+
+## See Also  
+* [Getting Started]({%slug radchartview-introduction%})
+* [Create Data-Bound Chart]({%slug radchartview-series-databinding%})
+* [Annotations Provider]({%slug radchartview-annotations-annotationsprovider%})

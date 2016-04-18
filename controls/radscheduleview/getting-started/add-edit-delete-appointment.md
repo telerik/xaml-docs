@@ -18,8 +18,8 @@ Additionally, RadScheduleView provides the functionality to configure [repeating
 
 ![](images/radscheduleview_understandingappointments_0.png)
 
-To learn how to manipulate run time the appointments displayed by the __RadScheduleView__ see the following topics:
-<Comment: This previous sentence confuses me. Do you mean, "To learn how to manipulate the appointments displayed by the __RadScheduleView__ at run time, see the following topics:">
+To learn how to manipulate the appointments displayed by the __RadScheduleView__ at run time, see the following topics:
+
 * [Create Appointment]({%slug radscheduleview-end-user-capabilities-create-appointment%})
 
 * [Edit Appointment]({%slug radscheduleview-end-user-capabilities-edit-appointment%})

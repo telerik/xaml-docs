@@ -68,7 +68,7 @@ In __R2 2016__ we have introduced the __ValidationType__ property of RadGridView
 
 *  __None__: None of the validation mechanisms is respected.
 *  __DataAnnotations__: Only validation through data annotations is respected.
-*  __IDataErrorInfo__: Only validation with implementing IDataErrorInfo interface is respected.
+*  __IDataErrorInfo__: Only validation through __IDataErrorInfo__ interface is respected.
 *  __INotifyDataErrorInfo__: Only validation through __INotifyDataErrorInfo__ interface is respected.
 *  __Default__: Validation through all three mechanisms is respected.
 

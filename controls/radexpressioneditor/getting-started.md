@@ -14,7 +14,7 @@ This tutorial will walk your through the creation of a sample application contai
 
 * Use __RadExpressionEditor__ in your project;
 
-* Utilize __RadExpressionEditor__ with other controlsc.
+* Utilize __RadExpressionEditor__ with other controls.
 
 ## Adding RadExpressionEditor to the project
 

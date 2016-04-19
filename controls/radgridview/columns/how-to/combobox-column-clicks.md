@@ -45,6 +45,8 @@ This could be done in __XAML__ by applying a Style targeting RadComboBox element
     </telerik:GridViewComboBoxColumn>
 {{endregion}}
 
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __RadComboBoxStyle__.
+
 # See Also
 
  * [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%}) 

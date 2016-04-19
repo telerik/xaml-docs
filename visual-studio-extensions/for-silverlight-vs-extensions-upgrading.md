@@ -1,15 +1,15 @@
 ---
-title: Upgrading to a new UI for Silverlight distribution
-page_title: Upgrading to a new UI for Silverlight distribution
-description: Upgrading to a new UI for Silverlight distribution
+title: Upgrade Project
+page_title: Upgrade Project
+description: Upgrade Project
 slug: radcontrols-for-silverlight-vs-extensions-upgrading
-tags: upgrading,to,a,new,ui,for,silverlight,distribution
+tags: upgrading,to,a,new,ui,for,silverlight,distribution, version
 published: True
-position: 7
+position: 3
 site_name: Silverlight
 ---
 
-# Upgrading to a new UI for Silverlight distribution
+# Upgrade Project
 
 
 
@@ -62,8 +62,8 @@ Notes:
 
 # See Also
 
- * [Project creation and configuration]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%})
+ * [Project Creation and Configuration]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%})
 
- * [Automatic Dependency resolving]({%slug radcontrols-for-silverlight-vs-extensions-automatic-resolving%})
+ * [Automatic Dependency Resolving]({%slug radcontrols-for-silverlight-vs-extensions-automatic-resolving%})
 
- * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})

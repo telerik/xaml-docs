@@ -50,8 +50,11 @@ For export and import to XLSX:
 
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
 
-Note that in order to import/export in XLSX, the format provider must be registered manually. More information on Import/Export can be found [here]({%slug radspreadprocessing-formats-and-conversion-format-providers-manager%}).
-        
+To export a document to PDF, you will need to add a reference to the corresponding assembly:
+
+* Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+
+Note that in order to import/export in XLSX or export to PDF, the format provider must be registered manually. More information on Import/Export can be found [here]({%slug radspreadprocessing-formats-and-conversion-format-providers-manager%}).
 
 If you want to use the sample UI provided in our demos you should add this reference as well:
         
@@ -101,5 +104,10 @@ Then, all that is left is to add the __Spreadsheet__ component to the page:
 __RadSpreadsheet__ is easy to integrate with all kinds of UI thanks to the commanding mechanism that it employs. If you would like to use the control with a [RadRibbonView]({%slug radribbonview-overview%}), which shows the full potential of the control, you can refer to the SDK repository.
         
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / FirstLook__.
-          
+>tipYou can download a runnable project of __RadSpreadsheet__ wired with a full-featured __RadRibbonView__ from the [FirstLook example](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/FirstLook) in our online SDK repository [here](https://github.com/telerik/xaml-sdk).
+
+
+## See Also
+
+* [SpreadProcessing]({%slug radspreadprocessing-overview%})
+

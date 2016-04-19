@@ -16,356 +16,256 @@ __RadRichTextBox__ is a control that allows you to display and edit rich text co
       
 
 * [Assembly References](#assembly-references)
-
-* [Creating a RadRichTextBox](#creating-a-radrichtextbox)
-
-* [Formatting the text via sample UI](#formatting-via-a-sample-ui)
-
+* [Adding RadRichTextBox to the Project](#adding-radrichtextbox-to-the-project)
 * [Using the predefined UI of RadRichTextBox](#using-the-predefined-ui-of-radrichtextbox)
+* [Showing a Document in RadRichTextBox](#showing-a-document-in-radrichtextbox)
+* [Tables, Track Changes and Document Protection](#tables-track-changes-and-document-protection)
 
-* [Creating a Document at run time](#creating-a-document-at-run-time)
 
 ## Assembly References
 
-The minimal set of references you need to have in your application in order to have a RadRichTextBox are as follows:
+The minimal set of references you need to have in your application in order to have a **RadRichTextBox** are as follows:
 
-* Telerik.Windows.Controls
+* **Telerik.Windows.Controls**
+* **Telerik.Windows.Data**
+* **Telerik.Windows.Documents**
+* **Telerik.Windows.Documents.Core**
+{% if site.site_name == 'WPF' %}* **Telerik.Windows.Documents.Flow**{% endif %}
+* **System.ComponentModel.Composition**
 
-* Telerik.Windows.Data
+In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:
 
-* Telerik.Windows.Documents
-
-* Telerik.Windows.Documents.Core
-{% if site.site_name == 'WPF' %}
-* Telerik.Windows.Documents.Flow
-{% endif %}
-* System.ComponentModel.Composition
-
-
-
-All pop-ups that **RadRichTextBox** uses (SelectionMiniToolBar, ContextMenu, all dialogs) are located in
-
-* Telerik.Windows.Controls.RichTextBoxUI.
+* **Telerik.Windows.Controls.RichTextBoxUI**
+* **Telerik.Windows.Controls.ImageEditor**
+* **Telerik.Windows.Controls.Input**
+* **Telerik.Windows.Controls.Navigation**
+* **Telerik.Windows.Controls.RibbonView**
 
 
-In order to use them, you have to add references to the assemblies that RichTextBoxUI has a dependency on.
-
-* Telerik.Windows.Controls.ImageEditor
-
-* Telerik.Windows.Controls.Input
-
-* Telerik.Windows.Controls.Navigation
-
-* Telerik.Windows.Controls.RibbonView
-
-
-For more information on using **RadRichTextBox** with **RadRichTextBoxRibbonUI** (based on RadRibbonView), please refer to [this article]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
+For more information on using **RadRichTextBox** with **RadRichTextBoxRibbonUI**, please refer to [this article]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
 
 If you are not using the SelectionMiniToolbar, the ContextMenu and **RadRichTextBoxRibbonUI**, you can omit the last five assemblies.
 
 For import from/ export to different file formats, you would need references to:
 
-* Telerik.Windows.Documents.FormatProviders.OpenXml and Telerik.Windows.Zip for docx.
-
-* Telerik.Windows.Documents.FormatProviders.Html for HTML.
-
-* Telerik.Windows.Documents.FormatProviders.Xaml for XAML.
-
-* Telerik.Windows.Documents.FormatProviders.Rtf for RTF.
-
-* Telerik.Windows.Documents.FormatProviders.Pdf and Telerik.Windows.Zip for PDF (export only).
+* **Telerik.Windows.Documents.FormatProviders.OpenXml** and **Telerik.Windows.Zip** for DOCX.
+* **Telerik.Windows.Documents.FormatProviders.Html** for HTML.
+* **Telerik.Windows.Documents.FormatProviders.Xaml** for XAML.
+* **Telerik.Windows.Documents.FormatProviders.Rtf** for RTF.
+* **Telerik.Windows.Documents.FormatProviders.Pdf** and **Telerik.Windows.Zip** for PDF (export only).
 
 
 The default en-US dictionary for SpellChecking is located in:
 
-* Telerik.Windows.Documents.Proofing.Dictionaries.En-US.
+* **Telerik.Windows.Documents.Proofing.Dictionaries.En-US**.
 
 {% if site.site_name == 'Silverlight' %}
->A reference to Telerik.Windows.Documents.FormatProviders.Html has to be added in order to use HTML printing.{% endif %}
+>A reference to **Telerik.Windows.Documents.FormatProviders.Html** has to be added in order to use HTML printing.{% endif %}
 
 
 {% if site.site_name == 'WPF' %}
->In order to be able to copy/paste rich text from desktop applications, you have to add a reference to Telerik.Windows.Documents.FormatProviders.Rtf and Telerik.Windows.Documents.FormatProviders.Html.{% endif %}
+>In order to be able to **copy/paste rich text** from desktop applications, you have to add references to **Telerik.Windows.Documents.FormatProviders.Rtf** and **Telerik.Windows.Documents.FormatProviders.Html**.{% endif %}
 
-## Creating a RadRichTextBox
+## Adding RadRichTextBox to the Project
 
-After adding references to the aforementioned dlls, you can declare a new __RadRichTextBox__ as any normal Silverlight/WPF control.
+After adding references to the aforementioned assemblies, you can declare __RadRichTextBox__ manually by writing the XAML code in **Example 1** or add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
         
 
-#### __XAML__
+#### __[XAML] Example 1: Adding RadRichTextBox in XAML__
 
 {{region radrichtextbox-getting-started_0}}
     <telerik:RadRichTextBox x:Name="radRichTextBox" />
 {{endregion}}
 
 
+>In order to use **RadRichTextBox** in XAML, you have to add the following namespace declaration:
+>
+>#### __[XAML] Example 2: Declaring Telerik Namespace__
+>{{region telerik-schemas}}
+>    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+>{{endregion}}
 
->In order to use __RadRichTextBox__ in XAML you have to add the following namespace declaration:
+When you run the application, you will see an empty **RadRichTextBox** as the one in **Figure 1**.
+
+#### Figure 1: Empty RadRichTextBox
+![](images/RadRichTextBox_GettingStarted_01.png)
+
+
+>tip**RadRichTextBox** uses **UI Virtualization** by creating UI elements only for the parts of the document currently visible in the viewport. For this purpose, the control **should not be measured in infinity**, so avoid placing it in containers that might cause this (e.g. StackPanel, ScrollViewer).
           
+## Using the Predefined UI of RadRichTextBox
 
-#### __XAML__
-
-{{region telerik-schemas}}
-    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
-
-
-
->tip**RadRichTextBox** uses UI Virtualization by creating UI elements only for the parts of the document currently visible in the view port. For this purpose, the control should not be measured in infinity, so avoid placing it in containers that might cause this (e.g. StackPanel, ScrollViewer).
-          
-
-## Formatting via a sample UI
-
-If you want to allow the user to edit and format the content of __RadRichTextBox__, you have to create UI and use the API exposed by __RadRichTextBox__. The __API__ exposes methods (like __ToggleBold()__, __ToggleItalic()__ etc.) that modify the text in the control when called. Here is an example of creating UI for making the text bold, italic and underlined.
-        
-
-#### __XAML__
-
-{{region radrichtextbox-getting-started_3}}
-    <StackPanel Orientation="Horizontal">
-        <ToggleButton Content="B"
-        x:Name="BoldButton"
-        Click="BoldButton_Click" />
-        <ToggleButton Content="I"
-        x:Name="ItalicButton"
-        Click="ItalicButton_Click" />
-        <ToggleButton Content="U"
-        x:Name="UnderlineButton"
-        Click="UnderlineButton_Click" />
-    </StackPanel>
-{{endregion}}
-
-
-
-Here is the code-behind that makes calls to the API methods.
-
-#### __C#__
-
-{{region radrichtextbox-getting-started_4}}
-    private void BoldButton_Click(object sender, RoutedEventArgs e)
-    {
-        this.radRichTextBox.ToggleBold();
-        this.radRichTextBox.Focus(); //return focus to the control
-    }
-    private void ItalicButton_Click(object sender, RoutedEventArgs e)
-    {
-        this.radRichTextBox.ToggleItalic();
-        this.radRichTextBox.Focus(); //return focus to the control
-    }
-    private void UnderlineButton_Click(object sender, RoutedEventArgs e)
-    {
-        this.radRichTextBox.ToggleUnderline();
-        this.radRichTextBox.Focus(); //return focus to the control
-    }
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-getting-started_5}}
-	Private Sub BoldButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.radRichTextBox.ToggleBold()
-	    Me.radRichTextBox.Focus()
-	End Sub
-	Private Sub ItalicButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.radRichTextBox.ToggleItalic()
-	    Me.radRichTextBox.Focus()
-	End Sub
-	Private Sub UnderlineButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.radRichTextBox.ToggleUnderline()
-	    Me.radRichTextBox.Focus()
-	End Sub
-{{endregion}}
-
-
-
-The UI should also respond when the caret is on a document position where the text is modified. For example, the __BoldButton__ should be toggled if the caret is on bold text. This can be done by handling the __ToggleStateChanged__ event. Here is an example:
-        
-
-#### __C#__
-
-{{region radrichtextbox-getting-started_7}}
-        InitializeComponent();
-
-        this.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleBoldCommand_ToggleStateChanged);
-        this.radRichTextBox.Commands.ToggleItalicCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleItalicCommand_ToggleStateChanged);
-        this.radRichTextBox.Commands.ToggleUnderlineCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleUnderlineCommand_ToggleStateChanged);
-    }
-
-    void ToggleBoldCommand_ToggleStateChanged(object sender, Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
-    {
-        BoldButton.IsChecked = e.NewValue;
-    }
-
-    void ToggleUnderlineCommand_ToggleStateChanged(object sender, Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
-    {
-        UnderlineButton.IsChecked = e.NewValue;
-    }
-
-    void ToggleItalicCommand_ToggleStateChanged(object sender, Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
-    {
-        ItalicButton.IsChecked = e.NewValue;
-    }
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-getting-started_8}}
-    Public Sub New()
-        InitializeComponent()
-
-        Me.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += New EventHandler(Of Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))(ToggleBoldCommand_ToggleStateChanged)
-        Me.radRichTextBox.Commands.ToggleItalicCommand.ToggleStateChanged += New EventHandler(Of Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))(ToggleItalicCommand_ToggleStateChanged)
-        Me.radRichTextBox.Commands.ToggleUnderlineCommand.ToggleStateChanged += New EventHandler(Of Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))(ToggleUnderlineCommand_ToggleStateChanged)
-    End Sub
-
-    Private Sub ToggleBoldCommand_ToggleStateChanged(sender As Object, e As Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
-        BoldButton.IsChecked = e.NewValue
-    End Sub
-{{endregion}}
-
-
-
-{% if site.site_name == 'Silverlight' %}![](images/RadRichTextBox_GettingStarted_02.png){% endif %}
-
-{% if site.site_name == 'WPF' %}![](images/RadRichTextBox_GettingStarted_02_WPF.png){% endif %}
-
-## Using the predefined UI of RadRichTextBox
-
-In addition to its API, __RadRichTextBox__ has a rich set of commands, exposed through its __Commands__ property. In order to use them with an UI element which supports commanding, you have to bind the __Command__ property of the element to the respective command of the __RadRichTextBox__.
+In addition to its API, __RadRichTextBox__ has a rich set of commands, exposed through its __Commands__ property. In order to use them with a UI element which supports commanding, you have to bind the __Command__ property of the element to the respective command of the __RadRichTextBox__.
         
 
 >tipTo learn more about __Commands__ read [this topic]({%slug radrichtextbox-features-commands%}).
           
 
-These commands can also be used with the predefined UI that comes with __RadRichTextBox__ - __RadRichTextBoxRibbonUI__, which is a ribbon control based on [RadRibbonView]({%slug radribbonview-overview%}). You can also use the predefined and customizable __ContextMenu__ and __SelectionMiniToolBar__. In order to do so, you would need references to the following assemblies:
-        
+These commands can also be used with the predefined UI that comes with __RadRichTextBox__ - __RadRichTextBoxRibbonUI__, which is a ribbon control based on [RadRibbonView]({%slug radribbonview-overview%}). You can use the predefined and customizable __ContextMenu__ and __SelectionMiniToolBar__ as well. In order to do so, make sure your project references the following assemblies:        
 
-* __Telerik.Windows.Controls,__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Controls.RibbonView__
+* __Telerik.Windows.Controls.RichTextBoxUI__
 
-* __Telerik.Windows.Controls.Input,__
+**Figure 2** shows what the predefined UI looks like.
 
-* __Telerik.Windows.Controls.Navigation,__
+#### Figure 2: RadRichTextBoxRibbonUI
+![](images/RadRichTextBox_GettingStarted_02.png)
 
-* __Telerik.Windows.Controls.RibbonView,__
+>tipYou can read more about the predefined UI by following these links - [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}), [ContextMenu]({%slug radrichtextbox-features-context-menu%}), [SelectionMiniToolBar]({%slug radrichtextbox-features-selection-mini-toolbar%}).
 
-* __Telerik.Windows.Controls.RichTextBoxUI.__
 
->tipYou can read more about the predefined UI by following these links - [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}), [ContextMenu]({%slug radrichtextbox-features-context-menu%}), [SelectionMiniToolBar]({%slug radrichtextbox-features-selection-mini-toolbar%})
 
-## Creating a Document at run time
+## Showing a Document in RadRichTextBox
 
-One of the common uses of __RadRichTextBox__ is to create a document programatically and show it in the editor. The root element - [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) can contain several other elements:
-        
+You can bind a document in XAML or directly set the Document property of RadRichTextBox in code-behind.
 
-* [Section]({%slug radrichtextbox-features-document-elements-section%})
+### Binding in XAML
 
-* [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
+With the **DataProvider** classes you can easily bind RTF, HTML or XAML documents represented as strings to a RadRichTextBox. The DocxDataProvider works with documents represented as a byte array. **Example 3** shows the implementation of a sample class that will be later used as data context for RadRichTextBox.
 
-* [Span]({%slug radrichtextbox-features-document-elements-span%})
+<a name="example3"><a/>
+#### **[C#] Example 3: Sample DataContext class**
 
-* [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%})
+{{region radrichtextbox-getting-started_1}}
 
-* [Hyperlink]({%slug radrichtextbox-features-document-elements-hyperlink%})
+    public class ExampleDataContext : INotifyPropertyChanged
+    {
+        private string xamlData;
 
-* [Table]({%slug radrichtextbox-features-document-elements-tables%})
+        public string XamlData
+        {
+            get
+            {
+                return this.xamlData;
+            }
+            set
+            {
+                if (value != this.xamlData)
+                {
+                    this.xamlData = value;
+                    OnPropertyChanged("XamlData");
+                }
+            }
+        }
 
-The whole hierarchy of the elements can be found [here]({%slug radrichtextbox-features-document-elements-hierarchy%})
+        public event PropertyChangedEventHandler PropertyChanged;
 
-Here is an example of a document created from code-behind
+        private void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+{{endregion}}
 
-#### __C#__
+#### **[VB.NET] Example 3: Sample DataContext class**
 
-{{region radrichtextbox-getting-started_9}}
-    RadDocument document = new RadDocument();
-    Section section = new Section();
+{{region radrichtextbox-getting-started_2}}
 
-    Paragraph paragraph1 = new Paragraph();
-    Stream stream = Application.GetResourceStream(new Uri(@"/RadRichTextBox-Getting-Started;component/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream;
-    Size size = new Size(236, 50);
-    ImageInline imageInline = new ImageInline(stream, size, "png");
-    paragraph1.Inlines.Add(imageInline);
-    section.Blocks.Add(paragraph1);
+	Public Class ExampleDataContext
+    	Implements INotifyPropertyChanged
 
-    Paragraph paragraph2 = new Paragraph();
-    paragraph2.TextAlignment = Telerik.Windows.Documents.Layout.RadTextAlignment.Center;
-    Span span1 = new Span("Thank you for choosing Telerik");
-    paragraph2.Inlines.Add(span1);
+    	Private _xamlData As String
 
-    Span span2 = new Span();
-    span2.Text = " RadRichTextBox!";
-    span2.FontWeight = FontWeights.Bold;
-    paragraph2.Inlines.Add(span2);
-    section.Blocks.Add(paragraph2);
+    	Public Property XamlData() As String
+    	    Get
+    	        Return Me._xamlData
+    	    End Get
+    	    Set(value As String)
+    	        If value <> Me._xamlData Then
+    	            Me._xamlData = value
+    	            OnPropertyChanged("XamlData")
+    	        End If
+    	    End Set
+    	End Property
+    	
+    	Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+	
+    	Private Sub OnPropertyChanged(propertyName As String)
+    	    RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+    	End Sub
+	End Class
+{{endregion}}
 
-    Paragraph paragraph3 = new Paragraph();
-    Span span3 = new Span("RadRichTextBox");
-    span3.FontWeight = FontWeights.Bold;
-    paragraph3.Inlines.Add(span3);
+>The ExampleDataContext class implements the **INotifyPropertyChanged** interface and raises the **PropertyChanged** event every time a property value changes in order to **support two-way binding**.
 
-    Span span4 = new Span(" is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs) etc.");
-    paragraph3.Inlines.Add(span4);
-    section.Blocks.Add(paragraph3);
+When you already have prepared the sample data, you can bind it to **RadRichTextBox**. This is done through the corresponding DataProvider. **Example 4** shows how to bind the XamlData property from [Example 3](#example3) to a XamlDataProvider and a RadRichTextBox.
 
-    Table table = new Table();
-    table.LayoutMode = TableLayoutMode.AutoFit;
-    table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
+#### **[XAML] Example 4: Using a DataProvider**
+{{region radrichtextbox-getting-started_3}}
 
-    TableRow row1 = new TableRow();
+    <Grid>
+        <Grid.Resources>
+            <local:ExampleDataContext x:Key="ExampleDataContext"/>
+        </Grid.Resources>
+        <telerik:XamlDataProvider RichTextBox="{Binding ElementName=radRichTextBox}" 
+								  DataContext="{StaticResource ExampleDataContext}" 
+								  Xaml="{Binding Path=XamlData, Mode=TwoWay}" />
+        <telerik:RadRichTextBox Name="radRichTextBox" />
+    </Grid>
+{{endregion}}
 
-    TableCell cell1 = new TableCell();
-    Paragraph p1 = new Paragraph();
-    Span s1 = new Span();
-    s1.Text = "Cell 1";
-    p1.Inlines.Add(s1);
-    cell1.Blocks.Add(p1);
-    row1.Cells.Add(cell1);
+>tipMore details on using data providers in **RadRichTextBox** are available [here]({%slug radrichtextbox-features-data-providers%}).
 
-    TableCell cell2 = new TableCell();
-    Paragraph p2 = new Paragraph();
-    Span s2 = new Span();
-    s2.Text = "Cell 2";
-    p2.Inlines.Add(s2);
-    cell2.Blocks.Add(p2);
-    row1.Cells.Add(cell2);
-    table.Rows.Add(row1);
+>tipYou can download the complete runnable project demonstrating **Data Binding** in **RadRichTextBox** from our [SDK Repository](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/DataBinding).
+### Setting the Document in Code-Behind
 
-    TableRow row2 = new TableRow();
+The **RadRichTextBox** class exposes the **Document** property of type [**RadDocument**]({%slug radrichtextbox-features-document-elements-raddocument%}) that allows you to assign a document to the control in code-behind. You can import an existing document and show it in RadRichTextBox using a format provider as **Example 5** shows.
 
-    TableCell cell3 = new TableCell();
-    cell3.ColumnSpan = 2;
-    Paragraph p3 = new Paragraph();
-    Span s3 = new Span();
-    s3.Text = "Cell 3";
-    p3.Inlines.Add(s3);
-    cell3.Blocks.Add(p3);
-    row2.Cells.Add(cell3);
-    table.Rows.Add(row2);
+#### **[C#] Example 5: Showing an Existing Document in RadRichTextBox**
 
-    section.Blocks.Add(table);
-    section.Blocks.Add(new Paragraph());
-    document.Sections.Add(section);
+{{region radrichtextbox-getting-started_4}}
+
+    RadDocument document;
+    DocxFormatProvider provider = new DocxFormatProvider();
+
+    using (Stream stream = Application.GetResourceStream(GetResourceUri("sampleDocument.docx")).Stream)
+    {
+        document = provider.Import(stream);
+    }
 
     this.radRichTextBox.Document = document;
 {{endregion}}
 
 
+#### **[VB.NET] Example 5: Showing an Existing Document in RadRichTextBox**
 
-{% if site.site_name == 'Silverlight' %}![](images/RadRichTextBox_GettingStarted_01.png){% endif %}
+{{region radrichtextbox-getting-started_5}}
 
-{% if site.site_name == 'WPF' %}![](images/RadRichTextBox_GettingStarted_01_WPF.png){% endif %}
+	Dim document As RadDocument
+	Dim provider As New DocxFormatProvider()
 
-This document is editable.  To make it read only you have to set the __IsReadOnly__ property of the __RadRichTextBox__ to __True__.
-        
+	Using stream As Stream = Application.GetResourceStream(GetResourceUri("sampleDocument.docx")).Stream
+		document = provider.Import(stream)
+	End Using
 
->tipTo learn more about the read only feature read [this topic]({%slug radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer%}).
-          
+	Me.radRichTextBox.Document = document
+{{endregion}}
+
+
+>tipAll the supported document formats and the corresponding format providers are described in the [Import/Export section]({%slug radrichtextbox-features-import-export%}). 
+
+
+## Tables, Track Changes and Document Protection
+
+**RadRichTextBox** comes with many built-in features. Here are some of them:
+
+* You can create, modify and delete tables. For more details you can refer to [this topic]({%slug radrichtextbox-features-document-elements-tables%}).
+
+* The [Track Changes]({%slug radrichtextbox-features-track-changes%}) functionality by default is disabled. To enable it, set the **IsTrackChangesEnabled** property to **True**.
+
+* You can enable the [Document Protection]({%slug radrichtextbox-features-document-protection%}) with the **ProtectDocument()** method.
+
 
 # See Also
+
+ * [Document Elements]({%slug radrichtextbox-features-document-elements-hierarchy%})
 
  * [Import/Export]({%slug radrichtextbox-features-import-export%})
 

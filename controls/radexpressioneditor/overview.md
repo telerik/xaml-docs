@@ -16,7 +16,7 @@ Thank you for choosing Telerik RadExpressionEditor!
 
 __RadExpressionEditor__ allows your users to build powerful LINQ expressions using a simple Domain Specific Language, reminiscent of formulas in many popular spreadsheet applications.
 
-__RadExpressinEditor__ key features list:
+__RadExpressionEditor__ key features list:
 
 * __Easy to use interface__
 

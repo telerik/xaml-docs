@@ -10,19 +10,17 @@ position: 2
 
 # Custom Drag and Drop Behaviors
 
-In order to create a custom ResizeBehavior you will need to create a class that inherits from __Telerik.Windows.Controls.GanttView.GanttResizeBehavior__ and override its methods. The following method could be overridden:
+__RadGanttView__ provides the option to customize its DragDrop and Resize behaviors in order to add some custom logic for drag and drop as well as resizing of tasks. This topic describes all the available methods you can use to implement custom drag and drop/resizing functionality.
 
 ## Custom DragDropBehavior
 
-In order to create a custom DragDropBehavior you will need to create a class that inherits from __Telerik.Windows.Controls.GanttView.GanttDragDropBehavior__ and override its methods. The following method could be overridden:
+In order to create a custom DragDropBehavior you will need to create a class that inherits from __Telerik.Windows.Controls.GanttView.GanttDragDropBehavior__ and override its methods. The following methods could be overridden:
 
-* __CanStartDrag__(SchedulingDragDropState state) – return a Boolean value that determines if the drag operation of tasks could start
+* __CanStartDrag__(SchedulingDragDropState state) – returns a Boolean value that determines if the drag operation of tasks could start
 
 * __CanDrop__(SchedulingDragDropState state) – returns a Boolean value that determines if the drop operation of tasks can be executed
 
 * __Drop__(SchedulingDragDropState state) – occurs when a task has been dropped
-
-* __DragDropCompleted__(SchedulingDragDropState state) – occurs when a drop operation has finished
 
 The next example shows how to create a custom GanttDragDropBehavior in order to prevent the drag-drop of Milestone tasks.
 
@@ -60,15 +58,15 @@ The dragging of milestone tasks will be disabled.
 
 ## Custom ResizeBehavior
 
-In order to create a custom DragDropBehavior you will need to create a class that inherits from __Telerik.Windows.Controls.GanttView.GanttDragDropBehavior__ and override its methods. The following method could be overridden: 
+In order to create a custom ResizeBehavior you will need to create a class that inherits from __Telerik.Windows.Controls.Scheduling.SchedulingResizeBehavior__ and override its methods. The following methods could be overridden: 
 
-* __CanResize__(SchedulingResizeState state) - return a Boolean value that determines if the resize operation of the task is allowed
+* __CanResize__(SchedulingResizeState state) - returns a Boolean value that determines if the resize operation of the task is allowed
 
-* __CanStartResize__
+* __CanStartResize__(SchedulingResizeState state) - returns a Boolean value that determines if the resize operation of the task could start
 
 * __Resize__(SchedulingResizeState state) – occurs when a task is being resized
 
-* __ResizeCompleted__(SchedulingResizeState state) – occurs when the resize operation has finished
+* __ResizeCanceled__(SchedulingResizeState state) – occurs when the resize operation is canceled.
 
 The next example will demonstrate how to create custom __SchedulingResizeBehavior__ in order to create a behavior that will snap the Start and End times of the resized Task to the nearest day.
 

@@ -11,7 +11,7 @@ position: 0
 # Getting Started with RadPropertyGrid
 
 
-This tutorial will walk your through the creation of a sample application that contains RadPropertyGrid and will show you how to: 
+This tutorial will walk you through the creation of a sample application that contains RadPropertyGrid and will show you how to: 
 
 * Use a RadPropertyGrid in your project
 

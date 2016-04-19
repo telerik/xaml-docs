@@ -201,7 +201,7 @@ The following code-snippet illustrates how to set the VisibleDays property in XA
 {{endregion}}
 
 
-And the result is shown on the next figure for DayView and TimelineView:
+And the result is shown on the next figure for DayViewDefinition:
 
 ![radschedule View viewdefinitions configuration 01](images/radscheduleView_viewdefinitions_configuration_01.png)
 
@@ -211,7 +211,23 @@ Gets or sets the first weekday with which the week will start according to the v
 
 ## StretchGroupHeaders
 
-If set to True, it will stretch the GroupHeader if there is more available space.
+If set to True (default value) and there is more available space in the ViewDefintion left, it will be distributed among the groups. 
+
+The following code-snippet shows how to set __StretchGroupHeaders__ to DayViewDefinition:
+
+#### __XAML__
+
+{{region radscheduleview-viewdefinition-configuration_12}}
+	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" >		
+		<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition VisibleDays="3" StretchGroupHeaders="False"  />           
+		</telerik:RadScheduleView.ViewDefinitions>
+	</telerik:RadScheduleView>
+{{endregion}}
+
+The next figure displays the how DayViewDefinition will look depending on the __StretchGroupHeaders__ property:
+
+![](images/radscheduleView_viewdefinitions_configuration_08.png)
 
 ## Orientation
 
@@ -249,14 +265,20 @@ The following code-snippets show how to set the Orientation property in XAML and
 
 This is how the views look like after setting the Orientation property:
 
-![radschedule View viewdefinitions configuration 05](images/radscheduleView_viewdefinitions_configuration_05.png)
-
 DayView with Orientation property set to Horizontal.
 
-![radschedule View viewdefinitions configuration 06](images/radscheduleView_viewdefinitions_configuration_06.png)
+![radschedule View viewdefinitions configuration 05](images/radscheduleView_viewdefinitions_configuration_05.png)
 
 WeekView with Orientation property set to Horizontal.
 
+![radschedule View viewdefinitions configuration 06](images/radscheduleView_viewdefinitions_configuration_06.png)
+
+TimelineView with Orientation property set to Vertical.   
+
 ![radschedule View viewdefinitions configuration 07](images/radscheduleView_viewdefinitions_configuration_07.png)
 
-TimelineView with Orientation property set to Horizontal.     
+# See Also
+
+ * [ViewDefinitions - Overview]({%slug radscheduleview-viewdefinitions-overview%})
+
+ * [View specific properties]({%slug radscheduleview-viewdefinitions-specificproperties%})

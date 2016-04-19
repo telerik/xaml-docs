@@ -10,17 +10,39 @@ position: 3
 
 # Custom Busy Content
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
+__RadBusyIndicator__ provides the option to customize what's shown in the __RadBusyIndicator's__ content while the indicator is active through its __BusyContent__ and __BusyContentTemplate__ properties. We will cover them in the following sections:
 
-__RadBusyIndicator__ exposes a __BusyContentTemplate__ property of type __DataTemplate__. Through this template you can customize what is shown in the __RadBusyIndicator's__ content while the indicator is active.
+ * [Setting BusyContent property](#setting-busycontent-property)
+ 
+ * [Setting BusyContentTemplate property](#setting-busycontenttemplate-property)
+ 
+## Setting BusyContent property
 
-This topic will show you how to create and apply a simple __BusyContentTemplate__ to your __RadBusyIndicator__ control. For the purpose of this example, this topic will create a __DispatcherTimer__ timer and while this timer is on, the __RadBusyIndicator__ will also be active. To start the timer the user will have to click on a button. The example also includes a counter representing the progress value which will count down from 100 to 0 percent and will be visible through the __RadBusyIndicator's__ busy content.
+__BusyContent__ property sets the loading message while the indicator is active as shown in the following example:
+
+#### __[XAML] Setting BusyContent__
+
+{{region radbusyindicator-features-custom-busy-content_0}}
+	<telerik:RadBusyIndicator BusyContent="The report is currently loading..." >
+        <!-- the content here -->
+    </telerik:RadBusyIndicator>
+{{endregion}}
+
+Here is the result:
+
+![](images/radbusyindicator_features_busycontent_0.png)
+
+## Setting BusyContentTemplate property
+
+__RadBusyIndicator__ exposes a __BusyContentTemplate__ property which allows you to customize the DataTemplate shown while the indicator is in Busy state.
+
+In this section we will show you how to create and apply a simple __BusyContentTemplate__ to your __RadBusyIndicator__ control. For the purpose of this example we will create a __DispatcherTimer__ timer and while this timer is on, the __RadBusyIndicator__ will also be active. To start the timer the user will have to click on a button. The example also includes a counter representing the progress value which will count down from 100 to 0 percent and will be visible through the __RadBusyIndicator's__ busy content.
 
 To do this, first you have to define your __RadBusyIndicator__ control:
 
 #### __[XAML] Defining RadBusyIndicator__
 
-{{region radbusyindicator-features-custom-busy-content_0}}
+{{region radbusyindicator-features-custom-busy-content_4}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator"
 	                          Background="Transparent"
 	                          BusyContentTemplate="{StaticResource BusyContentDataTemplate}">

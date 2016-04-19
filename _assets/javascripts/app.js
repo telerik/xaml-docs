@@ -152,3 +152,250 @@ $(function(){
 $(function(){
     $('#toYear').text((new Date).getFullYear());
 });
+
+function httpGet(theUrl)
+  {
+    var xmlHttp = null;
+
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+  }
+  
+  function escapeXamlCode(xamlCode)
+  {
+	var converted = xamlCode.replace(/</g, "&lt;");
+	var converted2 = converted.replace(/>/g, "&gt;");
+	return converted2;
+  }
+  
+  function getFileExtension(fileName)
+  {
+	  var ext = fileName.split('.').pop();
+	  if (ext =="xaml" || ext == "config" || ext == "csproj")
+	  {
+			ext = "xml"
+	  }
+	return ext;
+  }
+  
+  function getCodeFromGitHub(url)
+  {
+		var html = httpGet(url);
+		var fileExtenstion = getFileExtension(url);
+		var langName = "";
+		
+		if (fileExtenstion =="xml")
+		{			
+			langName = "XML";
+			if (url.endsWith('xaml'))
+			{
+				langName = "XAML";
+			}
+			html = escapeXamlCode(html);
+		}	
+		else if (fileExtenstion == "cs")
+		{
+			langName = "C#";
+		}
+		document.getElementById('heading').innerHTML = '<strong>' +langName+ '</strong>';
+		
+		 var prettyCode = prettyPrintOne(html, fileExtenstion);
+		 return prettyCode;
+  }
+  
+function populateCodeBlock(url)
+{
+   document.getElementById('codeBlock').innerHTML = getCodeFromGitHub(url);
+}
+  
+ function setDescription(readmeDiv, description)
+  {
+	  var htmlStart ="<html><head></head><body><b><u>Description:</u></b><p>"
+	  var htmnEnd = "</p></body></html>";
+	  readmeDiv.html(htmlStart + description + htmnEnd);
+  }
+        
+function getReadMeFileName(readmePath)
+{    
+	return readmePath.split('\\').pop();
+}
+
+function detailInit(e) {
+                    var detailRow = e.detailRow;  
+
+                     detailRow.find(".detailsDIV").kendoGrid({
+                      
+						dataSource: e.data.ExampleInfo.ExampleFileNames,   
+                      
+						columns: [{ title: "Files",	template: "#=data#"}],
+							  
+						selectable: "row",
+							   
+                        change: function() {							
+                           var index = this.select().index();
+                           var dataItem = this.dataSource.view()[index];
+						   
+						    populateCodeBlock(e.data.GitHubPath + dataItem);	
+                        },                   
+                    });   
+					setDescription(e.detailRow.find(".readmeDiv"), e.data.Description);							
+                }
+				
+function getGitHubFolderUrl(exampleInfo)
+{
+  var masterIndex = exampleInfo.GitHubPath.indexOf('master');
+  var rootDir = exampleInfo.GitHubPath.substring(masterIndex + 7);  
+  var dirName = exampleInfo.ExampleInfo.DirectoryName;
+  
+  var result ="<a href='https://github.com/telerik/xaml-sdk/tree/master/" + rootDir +"/'>" +dirName+ "</a>";
+  return result;
+}
+
+$(function(){
+  $("#kendoDiv").kendoGrid({  
+			   toolbar: kendo.template($("#toolBarTemplate").html()),
+               height: 450,
+               columns: [{
+                        field: "Name",
+						width: 300,
+                        template: function(dataItem) {
+                          return getGitHubFolderUrl(dataItem)
+                        },
+                       },
+					   { field: "Description"}], 
+			   dataSource: {
+				   transport: {
+						read: {
+							url: "sdk_wpf.json",
+							dataType: "json"
+						}
+					}
+				},
+             detailTemplate: kendo.template($("#template").html()),
+             detailInit: detailInit,
+			 selectable: "row",
+			 change: function (e) {
+						var row = this.select();
+						if (row != null) {
+							if (row.next(".k-detail-row").is(":visible")) {
+								e.sender.collapseRow(row);
+							} else {
+								e.sender.expandRow(row);
+							}
+						}
+					},
+        });
+		
+	var grid = $("#kendoDiv").data("kendoGrid");
+	if (grid)
+	{
+		grid.one("dataBound", function(e) {
+						e.sender.expandRow($('#kendoDiv tbody>tr:first'));
+			  });
+	}
+});
+
+$(function(){
+  $("#kendoDivSL").kendoGrid({  
+			   toolbar: kendo.template($("#toolBarTemplate").html()),
+            	 height: 450,
+            	 columns: [{
+                        field: "Name",
+						width: 300,
+                        template: function(dataItem) {
+                          return getGitHubFolderUrl(dataItem)
+                        },
+                       },
+					   { field: "Description"}], 
+			   dataSource: {
+				   transport: {
+						read: {
+							url: "sdk_sl.json",
+							dataType: "json"
+						}
+					}
+				},
+             detailTemplate: kendo.template($("#template").html()),
+             detailInit: detailInit,
+			 selectable: "row",
+			 change: function (e) {
+						var row = this.select();
+						if (row != null) {
+							if (row.next(".k-detail-row").is(":visible")) {
+								e.sender.collapseRow(row);
+							} else {
+								e.sender.expandRow(row);
+							}
+						}
+					},
+        });
+		
+	var grid = $("#kendoDivSL").data("kendoGrid");
+	if (grid)
+	{
+		grid.one("dataBound", function(e) {
+						e.sender.expandRow($('#kendoDivSL tbody>tr:first'));
+			  });
+	}
+});
+
+ function onUserInput() {
+      var input = document.getElementById("searchBox").value;
+      var grid = $("#kendoDiv").data("kendoGrid");
+       grid.dataSource.filter({ value: input,
+                               field: "KeyWords",
+                               operator: function(field, value){
+                                 if (value == '')
+                                 {
+                                   return true;
+                                 }
+                                 
+                                 if (field)
+                                 {
+                                   		var status = true;
+                                   		var splittedSearchKeys = value.toLowerCase().split(/[ ,]+/);
+                                   		for (var i = 0, length = splittedSearchKeys.length; i < length; i++) { 
+                                           if (field.toLowerCase().indexOf(splittedSearchKeys[i]) < 0)
+                                           {
+                                             status = false;
+                                             break;
+                                           }
+                                        }                                   
+                                  		return status;
+                                 }
+                                 return false;
+    							} 
+                             });
+  }
+  
+  function onUserInputSL() {
+      var input = document.getElementById("searchBox").value;
+      var grid = $("#kendoDivSL").data("kendoGrid");
+        grid.dataSource.filter({ value: input,
+                               field: "KeyWords",
+                               operator: function(field, value){
+                                 if (value == '')
+                                 {
+                                   return true;
+                                 }
+                                 
+                                 if (field)
+                                 {
+                                   		var status = true;
+                                   		var splittedSearchKeys = value.toLowerCase().split(/[ ,]+/);
+                                   		for (var i = 0, length = splittedSearchKeys.length; i < length; i++) { 
+                                           if (field.toLowerCase().indexOf(splittedSearchKeys[i]) < 0)
+                                           {
+                                             status = false;
+                                             break;
+                                           }
+                                        }                                   
+                                  		return status;
+                                 }
+                                 return false;
+    							} 
+                             });
+  }
+

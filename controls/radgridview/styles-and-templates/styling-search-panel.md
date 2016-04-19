@@ -38,6 +38,22 @@ You can apply a style to the Search Panel, similar to the following example:
 
 You can find the GridViewSearchPanel template structure in the [Templates Structure]({%slug radgridview-styles-and-templates-templates-structure%}) article for RadGridView.
 
+## Change the color of the highlighted text 
+
+By default, the symbols matching the searching criteria are colored in red. This can easily be changed by changing the value of the __HightlightBrush__ in the __HighlightTextBlock__:
+
+#### __[XAML] Example 2: Change the HighlightBrush of the HighlightTextBlock.__
+	<Style TargetType="telerik:HighlightTextBlock">
+			<Setter Property="HighlightBrush" Value="Green"/>
+	</Style> 
+
+#### __[XAML] Figure 2: Appearance of the highlighted text after the style is applied.__
+
+![](images/search-panel-highlight-color.png)
+
+>The examples show the approach used for the __standard binaries__. In case you have referenced the NoXaml binaries, you need to set the __BasedOn__ property of the respective __Style__
+
+
 # See Also
 
  * [Styling the GridViewEditorPresenter]({%slug gridview-styling-editorpresenter%})

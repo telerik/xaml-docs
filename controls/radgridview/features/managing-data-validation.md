@@ -64,7 +64,7 @@ RadGridView exposes a property - ValidatesOnDataErrors that controls the way the
 
 ## Setting the Validation Type
 
-In __R2 2016__ we have introduced the __ValidationType__ property of RadGridView. It provides you with the possibility to choose what type of validation to apply for each instance of RadGridView. It is a __Flags Enumeration__ and can take the following values:
+In __R2 2016__ Telerik introduced the __ValidationType__ property of RadGridView. It provides you with the possibility to choose what type of validation to apply for each instance of RadGridView. It is a __Flags Enumeration__ and can take the following values:
 
 *  __None__: None of the validation mechanisms is respected.
 *  __DataAnnotations__: Only validation through data annotations is respected.

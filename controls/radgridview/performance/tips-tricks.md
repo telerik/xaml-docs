@@ -52,7 +52,7 @@ __RadGridView__ API allows you to tweak your application for optimal performance
             
 * __TouchManager__ -  another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
 
-* As of __R2 2016__ GridViewComboBoxColumn exposes new property - __IsLightWeightModeEnabled__. Setting it to true significantly increases the RadGridView`s performance.
+* As of __R2 2016__ GridViewComboBoxColumn exposes a new property - __IsLightWeightModeEnabled__. Setting it to true significantly increases RadGridView`s performance.
             
 # See Also
 

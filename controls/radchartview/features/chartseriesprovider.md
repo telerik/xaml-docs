@@ -10,15 +10,11 @@ position: 6
 
 # Dynamic Number of Series (ChartSeriesProvider)
 
-
-
-In this help topic you will learn what mechanism for automatic series generation ChartView provides.
-      
+In this help topic you will learn what mechanism for automatic series generation ChartView provides.      
 
 ## Overview
 
-RadCartesianChart and RadPolar chart can create a dynamic number of series depending on the data (collection of collections). To take advantage of this feature, you need to create a __ChartSeriesProvider__ object. This will be the object that receives the data and holds the __ChartSeriesDescriptors__ – objects that define the specific properties of the dynamically generated series.
-        
+RadCartesianChart and RadPolar chart can create a dynamic number of series depending on the data (collection of collections). To take advantage of this feature, you need to create a __ChartSeriesProvider__ object. This will be the object that receives the data and holds the __ChartSeriesDescriptors__ – objects that define the specific properties of the dynamically generated series.        
 
 __ChartSeriesDescriptor__  is an abstract class. You need to create an instance of one of its inheritors depending on the series you need to produce:
         
@@ -32,8 +28,7 @@ __ChartSeriesDescriptor__  is an abstract class. You need to create an instance 
 
 ## Properties
 
-Important properties of ChartSeriesDescriptor:
-        
+Important properties of ChartSeriesDescriptor:        
 
 * __ItemsSourcePath__ – path to the collection that will feed the generated series.
             
@@ -68,6 +63,16 @@ Type-specific properties:
 	1. CategoryPath - path to the Category of the data item.
 	2. ValuePath - path to the Value of the data item.
 
+## Events
+
+__ChartSeriesProvider__ expose a single event - __SeriesCreated__. The event occurs when a series is created. It allows for the series to be additionally set up or completely replaced.  
+
+The event arguments are of type __ChartSeriesCreatedEventArgs__ and expose the following properties:
+* __Series__: A property of type __ChartSeries__ that holds the created series.
+* __Context__: A property of type __object__ that holds the model of the series.
+
+> This event may be raised with the series being null (for example in cases when a suitable descriptor was not found). In such a case, this event can still be used to create and set up a new series.
+	
 ## Example
 
 In the following example the chart is populated by a collection of 3 items, thus creating 3 series. There is a CategoricalSeriesDescriptor with CollectionIndex=2 and a style with TargetType="LineSeries". This effectively means that there will be a LineSeries, populated by the third item in the collection. There is another CategoricalSeriesDescriptor which is responsible for creating BarSeries for the rest of the items in the collection.
@@ -111,12 +116,9 @@ In the following example the chart is populated by a collection of 3 items, thus
 	                
 	    </telerik:RadCartesianChart.SeriesProvider>
 	</telerik:RadCartesianChart>
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __C#__
-
+#### __C#__  
 {{region radchartview-features-chartseriesprovider_0}}
 	public class SalesInfo 
 	{
@@ -183,12 +185,9 @@ In the following example the chart is populated by a collection of 3 items, thus
 	        return result;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB.NET__
-
+#### __VB.NET__  
 {{region radchartview-features-chartseriesprovider_0}}
 	Public Class SalesInfo
 		Public Property MonthName() As String
@@ -280,6 +279,10 @@ In the following example the chart is populated by a collection of 3 items, thus
 			Return result
 		End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 ![Rad Chart View-chartseriesprovider-0](images/RadChartView-chartseriesprovider-0.png)
+
+## See Also
+[Create Data-Bound Chart]({%slug radchartview-series-databinding%})
+[Annotations Provider]({%slug radchartview-annotations-annotationsprovider%})

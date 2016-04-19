@@ -10,9 +10,15 @@ position: 2
 
 # Understanding Appointments
 
->Before reading this tutorial you should get familiar with the Visual Structure of the standard __RadScheduleView__ control and its Views and Dialogs.
+The __Appointment__ class represents a single piece of data that is visualized in the __RadScheduleView__. Each __Appointment__ has various properties such as __Subject, Start, End, TimeZone__, etc. You can also assign [Resources]({%slug radscheduleview-features-resources%}), [Categories]({%slug radscheduleview-features-categories%}) and [TimeMarkers]({%slug radscheduleview-features-timemarkers%}) to the appointments. 
 
-To learn how to manipulate run time the appointments displayed by the __RadScheduleView__, read the following topics:
+Additionally, RadScheduleView provides the functionality to configure [repeating appointments]({%slug radscheduleview-features-recurrences-overview%}). The user has the ability to apply recurring scheduling patterns such as daily, weekly, monthly or set a range of recurrence from date to date.
+
+#### __Figure 1: RadScheduleView populated with different appointments__
+
+![](images/radscheduleview_understandingappointments_0.png)
+
+To learn how to manipulate the appointments displayed by the __RadScheduleView__ at run time, see the following topics:
 
 * [Create Appointment]({%slug radscheduleview-end-user-capabilities-create-appointment%})
 
@@ -22,6 +28,12 @@ To learn how to manipulate run time the appointments displayed by the __RadSched
 
 * [Drag&Drop Appointments]({%slug radscheduleview-features-draganddrop%})
 
-## Understanding Appointments
+# See Also
 
-The __Appointment__ class represents a single piece of data that is visualized in the __RadScheduleView__. Each __Appointment__ has various properties. Some of them are: __Subject, Start, End, TimeZone, Resource, RecurrenceRule, Category, TimeMarker__, etc.
+ * [Visual Structure]({%slug radscheduleview-getting-started-visual-structure%})
+ 
+ * [Custom Appointment]({%slug radscheduleview-features-appointments-custom-appointment%})
+ 
+ * [Snapping Appointments]({%slug radscheduleview-features-snapappointments%})
+ 
+ 

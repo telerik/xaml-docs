@@ -14,7 +14,7 @@ position: 7
 
 ## 
 
-Starting with __Q3 2010__ we introduced the __Toolbox Configuration__ utility. Its purpose is to choose which version of __UI for__ to be populated in the Visual Studio’s Toolbox. The user can select among all versions of __Telerik UI__ that are currently on the machine and have been either installed or downloaded using the __VS Extensions__.
+Starting with __Q3 2010__ we introduced the __Toolbox Configuration__ utility. Its purpose is to choose which version of __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ to be populated in the Visual Studio’s Toolbox. The user can select among all versions of __Telerik UI__ that are currently on the machine and have been either installed or downloaded using the __VS Extensions__.
 
 The __Toolbox Configurator__ can be launched from the Telerik menu:
 

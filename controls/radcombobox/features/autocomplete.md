@@ -95,7 +95,15 @@ The following example shows you how to use the __TextSearch.TextPath__ property.
 
 ### Using TextSearch.AutoCompleteTimeout Property
 
-The __TextSearch__ class exposes a static property named __AutoCompleteTimeout__, which allows you to configure the autocomplete timeout. Use this property when you want to set the timeout after the autocomplete buffer is reset.
+The __TextSearch__ class exposes a static property named __AutoCompleteTimeout__ which allows you to configure the autocomplete timeout. Use this property when you want to set the timeout after that the typed text for the autocomplete is reset. Its default value is 800ms.
+
+The following example shows how to set __TextSearch.AutoCompleteTimeout__ property.
+
+#### __C#__
+
+{{region radcombobox-features-autocomplete_6}}
+	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
+{{endregion}}
 
 ## Disable Autocomplete
 

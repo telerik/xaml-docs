@@ -1,15 +1,15 @@
 ---
-title: Automatic Dependency resolving
-page_title: Automatic Dependency resolving
-description: Automatic Dependency resolving
+title: Automatic Dependency Resolving
+page_title: Automatic Dependency Resolving
+description: Automatic Dependency Resolving
 slug: radcontrols-for-silverlight-vs-extensions-automatic-resolving
 tags: automatic,dependency,resolving
 published: True
-position: 5
+position: 7
 site_name: Silverlight
 ---
 
-# Automatic Dependency resolving
+# Automatic Dependency Resolving
 
 
 
@@ -31,8 +31,8 @@ The VSExtensions assembly list control is controlled by the dependency analyzer,
 
 # See Also
 
- * [Project creation and configuration]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%})
+ * [Project Creation and Configuration]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%})
 
- * [Upgrading to a new UI for Silverlight distribution]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%})
+ * [Upgrade Project]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%})
 
- * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})

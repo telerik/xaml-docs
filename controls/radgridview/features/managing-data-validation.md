@@ -29,40 +29,55 @@ The purpose of this tutorial is to show you how to validate data using __RadGrid
 For the purpose of this tutorial the following __RadGridView__ declaration will be used. The __RadGridView__ is [populated]({%slug gridview-in-memory-date%}) with some sample data.
       
 
-#### __XAML__
+#### __[XAML] Example 1: Declare RadGridView.__
 
 {{region gridview-managing-data-validation_0}}
 
 	<telerik:RadGridView x:Name="radGridView"/>
 {{endregion}}
 
+#### __Figure 1: Standard appearance of RadGridView.__
 ![](images/RadGridView_Validation_010.png)
 
 ## Setting the mode for the validation 
 
 RadGridView exposes a property - ValidatesOnDataErrors that controls the way the data validation, provided by IDataErrorInfo and INotifyDataErrorInfo Interfaces, is performed. It may be set to one of the following values:
 
-* None - denotes that RadGridView will not perform any validation.
+* __None__ - denotes that RadGridView will not perform any validation.
             
 
-* InViewMode - denotes that RadGridView will perform validation only in view mode.
-            
+* __InViewMode__ - denotes that RadGridView will perform validation only in view mode.
+           
 
-* InEditMode - denotes that RadGridView will perform validation only in edit mode, i.e when the cell is leaving edit mode. In case the RadGridView is initially loaded with incorrect value, no error messages will be displayed.
+* __InEditMode__ - denotes that RadGridView will perform validation only in edit mode, i.e when the cell is leaving edit mode. In case the RadGridView is initially loaded with incorrect value, no error messages will be displayed.
           
 
-* Default - this is the default value. It combines the two previous ones - InViewMode | InEditMode. 
+* __Default__ - this is the default value. It combines the two previous ones - InViewMode | InEditMode. 
             
 
->Setting the ValidateOnDataErrors property will not affect the UI validation provided by the CellValidating and RowValidating events.
+>Setting the __ValidateOnDataErrors__ property will not affect the UI validation provided by the __CellValidating__ and __RowValidating__ events.
 
 
 {% if site.site_name == 'WPF' %}
->Telerik.Windows.Data.INotifyDataErrorInfo interface was created for WPF 4.0. version since System.ComponentModel.INotifyDataErrorInfo was available for Silverlight only. If using WPF 4.5, please reference System.ComponentModel.INotifyDataErrorInfo instead.
+>*Telerik.Windows.Data.INotifyDataErrorInfo* interface was created for WPF 4.0. version since *System.ComponentModel.INotifyDataErrorInfo* was available for Silverlight only. If using WPF 4.5, please reference *System.ComponentModel.INotifyDataErrorInfo* instead.
 {% endif %}
 
-## Validating Data on a Cell Level
+## Setting the Validation Type
 
+In __R2 2016__ we have introduced the __ValidationType__ property of RadGridView. It provides you with the possibility to choose what type of validation to apply for each instance of RadGridView. It is a __Flags Enumeration__ and can take the following values:
+
+*  __None__: None of the validation mechanisms is respected.
+*  __DataAnnotations__: Only validation through data annotations is respected.
+*  __IDataErrorInfo__: Only validation with implementing IDataErrorInfo interface is respected.
+*  __INotifyDataErrorInfo__: Only validation through __INotifyDataErrorInfo__ interface is respected.
+*  __Default__: Validation through all three mechanisms is respected.
+
+#### __[XAML] Example 2: Set the ValidationType property of RadGridView.__
+
+		<telerik:RadGridView x:Name="radGridView" ValidationType="Default"/>
+
+## Validating Data on a Cell Level
+ 
 The cell validation occurs when a __GridViewCell__ is edited and its new data is about to be committed. At this moment a __CellValidating__ event is fired and since the new value is not committed yet to the underlying data object, here is the perfect place for applying a custom UI validation.
         
 
@@ -72,7 +87,7 @@ Below is an example that validates the __OrderNo__ property of the __Order__ obj
 Attach to the __CellValidating__ event, which is exposed by the __RadGridView__.
         
 
-#### __XAML__
+#### __[XAML] Example 3: Attach to the CellValidating event.__
 
 {{region gridview-managing-data-validation_1}}
 
@@ -82,7 +97,7 @@ Attach to the __CellValidating__ event, which is exposed by the __RadGridView__.
 
 Switch to the code-behind and add your custom validation logic in the event handler.
 
-#### __C#__
+#### __[C#] Example 3: Add custom logic in the code behind.__
 
 {{region gridview-managing-data-validation_2}}
 
@@ -99,7 +114,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Add custom logic in the code behind.__
 
 {{region gridview-managing-data-validation_3}}
 
@@ -115,6 +130,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 
 
 When you try to enter an order number less than five characters the result should be similar to snapshot below.
+#### __Figure 2: RadGridView`s appearance after validation.__
 ![](images/RadGridView_Validation_020.png)
 
 When you set the __e.IsValid__ property to __False__, this will cancel the editing process and will return focus to the invalid __GridViewCell__. After this UI layer validation is successful (__e.IsValid__ is __True__, which is the default value). Then the Data layer validation occurs. This is the validation which is built-in the business object implementation.
@@ -125,7 +141,7 @@ When you set the __e.IsValid__ property to __False__, this will cancel the editi
 An alternative approach is to use validation on a __property level__. In this case you need to throw an exception when an incorrect value is about to be set. This results into a binding validation error and __GridViewBoundColumnBase__ editor will enter into invalid state.
         
 
-#### __C#__
+#### __[C#] Example 4: Set validation on a property level.__
 
 {{region gridview-managing-data-validation_4}}
 
@@ -151,7 +167,7 @@ An alternative approach is to use validation on a __property level__. In this ca
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Set validation on a property level.__
 
 {{region gridview-managing-data-validation_5}}
 
@@ -172,6 +188,7 @@ An alternative approach is to use validation on a __property level__. In this ca
 	End Class
 {{endregion}}
 
+#### __Figure 3: RadGridView`s appearance after validation:__
 ![](images/RadGridView_Validation_030.png)
 
 >An exception of any kind will result as a validation error, and an exception message will appear as an error tooltip.
@@ -187,7 +204,7 @@ Below is an example that validates the __OrderNO__ and __Total__ properties of t
 Attach to the __RowValidating__ event, which is exposed by the __RadGridView__.
         
 
-#### __XAML__
+#### __[XAML] Example 5: Attach to the RowValidating event.__
 
 {{region gridview-managing-data-validation_6}}
 
@@ -197,7 +214,7 @@ Attach to the __RowValidating__ event, which is exposed by the __RadGridView__.
 
 Switch to the code-behind and add your custom validation logic in the event handler.
 
-#### __C#__
+#### __[C#] Example 5: Apply custom logic in the RowValidating event.__
 
 {{region gridview-managing-data-validation_7}}
 
@@ -225,7 +242,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Apply custom logic in the RowValidating event.__
 
 {{region gridview-managing-data-validation_8}}
 
@@ -258,6 +275,7 @@ Two things worth mentioning here:
 
 The result from a failed validation can be seen on the next figure.
 
+#### __Figure 4: RadGridView`s appearance after validation on row level was applied.__
 ![](images/RadGridView_Validation_040.png)
 
 Once you have added such errors, you will have to explicitly clear them when needed. Please check this [help article]({%slug gridview-troubleshooting-validation-stays%}) on how to clear user defined errors.
@@ -274,7 +292,7 @@ With the Silverlight platform you can take advantage of the __System.ComponentMo
 The code snippet below shows you how to use __DataAnnotations__ in order to validate the __OrderNO__ property of the __Order__ object.
 {% endif %}
 
-#### __C#__
+#### __[C#] Example 5: Set validation through data DataAnnotations.__
 
 {{region gridview-managing-data-validation_9}}
 
@@ -295,7 +313,7 @@ The code snippet below shows you how to use __DataAnnotations__ in order to vali
 	}
 	{{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Set validation through data DataAnnotations.__
 
 {{region gridview-managing-data-validation_10}}
 
@@ -338,6 +356,7 @@ The code snippet below shows you how to use __DataAnnotations__ in order to vali
 
 The result can be seen on the next figure.
 
+#### __Figure 5: Appearance of RadGridView after DataAnnotations valididation was applied.__
 ![radgridview managing data validation 050](images/radgridview_managing_data_validation_050.png)
 
 >tipOnce the UI and Data validation passed (i.e. the Binding tried to update the value for the bound property), the __CellValidated__ event is raised. The ValidationResult can be valid or not. Here you can also add a custom logic like changing the visual state of the editor (through the e.EditorElement).

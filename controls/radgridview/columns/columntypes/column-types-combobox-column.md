@@ -28,7 +28,7 @@ Here is a list of the most important properties:
 
 * __IsLightWeightModeEnabled__ - introduced in __R2 2016__. Its default value is __False__. When set to __True__, the new lightened lookup logic is triggered, thus the performance of GridViewComboBoxColumn is significantly increased. *If the column`s DataMemberBinding is a nested property, the value of IsLightWeightModeEnabled is not respected*. 
 
->importantThe __type__ of properties configured as __DataMemberBinding__ and __SelectedValueMembetPath__ should be the same.
+>importantThe __type__ of the properties configured as __DataMemberBinding__ and __SelectedValueMemberPath__ should be the same.
 
 >Since __Q3 2012 SP__ typing a letter in __GridViewComboBoxColumn__ will point to the first item starting with the same letter.
         

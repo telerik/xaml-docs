@@ -220,7 +220,7 @@ Here's how to define the __AggregateDescriptions__ in your application:
 	End Using
 {{endregion}}
 
-With R2 2016 of UI for WPF a brand new property __IgnoreNullValues__ was introduced for the __PropertyAggregateDescription__. This property is of type bool and it is used to determine whether a specific __PropertyAggregateDescription__ should ignore the null values when calculating its result. The default value of the property is false, so in order the null values to be ignored it should be set to true.	 	
+With R2 2016 of UI for WPF a brand new property __IgnoreNullValues__ was introduced for the __PropertyAggregateDescription__. This property is of type bool and it is used to determine whether a specific __PropertyAggregateDescription__ should ignore the null values when calculating its result. The default value of the property is false, so in order to ignore the null values, you should set the property to __true__.	  	
 
 Here's how to define the __AggregateDescriptions__ in your application with a set __IgnoreNullValues__ property::            
 

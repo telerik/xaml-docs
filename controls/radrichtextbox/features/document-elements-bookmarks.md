@@ -5,7 +5,7 @@ description: Bookmarks
 slug: radrichtextbox-features-document-elements-bookmarks
 tags: bookmarks
 published: True
-position: 10
+position: 11
 ---
 
 # Bookmarks

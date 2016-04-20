@@ -5,7 +5,7 @@ description: Table Styles Gallery
 slug: radrichtextbox-ui-for-applying-formatting-table-styles-gallery
 tags: table,styles,gallery
 published: True
-position: 5
+position: 6
 ---
 
 # Table Styles Gallery

@@ -5,7 +5,7 @@ description: Comments
 slug: radrichtextbox-features-comments
 tags: comments
 published: True
-position: 11
+position: 12
 ---
 
 # Comments

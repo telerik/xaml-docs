@@ -12,7 +12,8 @@ position: 3
 
 __PROBLEM__
 
-Sometimes __custom headers__ for the columns are used. When __exporting__ the RadGridView, the actual text in the custom header is not exported the right way.
+When exporting __RadGridView__ and you have defined __custom headers__ for some columns, the actual text within the custom header is not exported correctly unless you explicitly define the value. 
+
 
 __CAUSE__
 
@@ -51,7 +52,7 @@ Here is a small sample code:
 	}
 {{endregion}}
 
-#### __[VB.NET]Example 3:Handle the ElementExporting event:__
+#### __[VB.NET]Example 2:Handle the ElementExporting event:__
 
 {{region gridview-export-troubleshooting-export-header_2}}
 

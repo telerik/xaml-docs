@@ -10,19 +10,19 @@ position: 7
 
 # Modify RadGridView`s Content Before Exporting
 
-In __R1 2016__, we have introduced two new extension methods related to the exporting of RadGridView - *ExportToWorkBook()* and *ExportToRadFixedDocument()*. You can use them if you need to modify the content of the exported RadGridView and avoid styling the document manually.
+In __R1 2016__, we have introduced two new extension methods related to the exporting of RadGridView - *ExportToWorkbook()* and *ExportToRadFixedDocument()*. You can use them if you need to modify the content of the exported RadGridView and avoid styling the document manually.
 
 __Assembly References__
 
-ExportToWorkbook and ExportToRadFixedDocument methods use additional libraries so you need to add references to the following assemblies:
+__ExportToWorkbook__ and __ExportToRadFixedDocument__ methods use additional libraries so you need to add references to the following assemblies:
 
 * Telerik.Windows.Documents.Core.dll
-* Telerik.Windows.Documents.SpreadSheet.dll 
-* Telerik.Windows.Documents.SpreadSheet.FormatProviders.OpenXml.dll
+* Telerik.Windows.Documents.Spreadsheet.dll 
+* Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
 * Telerik.Windows.Zip.dll
 * Telerik.Windows.Controls.GridView.Export.dll
 
-## ExportToWorkBook 
+## ExportToWorkbook 
 
 The method exports the associated RadGridView to a Workbook object.
 
@@ -54,7 +54,6 @@ The method exports the associated RadGridView to a Workbook object.
                     provider.Export(workbook, output);
                 }
             }
-
         }
 
 
@@ -100,6 +99,8 @@ Both methods can be overloaded and take __GridViewDocumentExportOptions__ as par
 * ShowGroupFooters
 * ShowColumnHeaders
 * ExportDefaultStyles  
+
+>important __ExportToRadFixedDocument__ method utilizes [PdfProcessing]({%slug radpdfprocessing-overview%}) library and __ExportToWorkbook__ method utilizes [SpreadProcessing]({%slug radspreadprocessing-overview%}) library. You can check their documentation for more information on how to modify them.
 
 ## See Also
 

@@ -26,6 +26,5 @@ The alert is a new security feature in Excel 2007 called Extension Hardening, wh
 
 __SOLUTION__
 
-You can [ export to ExcelML format]({%slug gridview-export%}) with XML extension. In such case you will avoid the warning.
-
+You can use the [ExportToXlsx]({%slug gridview-export-xlsx%}) method. In such case you will avoid the warning.
 

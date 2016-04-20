@@ -65,11 +65,11 @@ You can subscribe to the events either declaratively or from the code-behind lik
 The event was introcuded in __Q1 2010 SP2__ as a direct replacement of the obsolete __Exporting__ event.
 The event takes argument of type __GridViewElementExportingEventArgs__ which expose the following properties:
 
-- __Cancel__: gets or sets a boolean value that indicates whether the event should be canceled or not.
-- __Context__: Gets the current context
-- __Element__: Gets the current element that is about to be exported
-- __Format__: Gets the current export format.
-- __Value__: 	Gets or sets the value to be exported.
+- __Cancel__: Gets or sets a boolean value that indicates whether the event should be canceled or not.
+- __Context__: Gets the data context of the element that is about to be exported. In case the element is *Cell* the *DataContext* would be the underlying item.
+- __Element__: Gets the current element that is about to be exported.
+- __Format__: Gets the current export format - ExcelMl, Html, etc.
+- __Value__: 	Gets or sets the value that is about to be exported. You can use it to change a certain element`s value.
 - __ShouldEncodeValue__: Gets or sets a value indicating whether special characters in the cell value will be escaped.
 - __VisualParameters__: Gets the visual export parameters. (Introduced in __Q3 2013__)
 
@@ -91,10 +91,10 @@ You can use it in combination with the __Cancel__ property to omit the export of
 
 The event takes argument of type __GridViewElementExportedEventArgs__ which expose the following properties:
 
-1. __Context__: Gets the current context
-2. __Element__: Gets the current element
-3. __Format__: Gets the current export format
-4. __Writer__: Gets the StreamWriter
+1. __Context__: Gets the data context of the exported element
+2. __Element__: Gets the element that was exported.
+3. __Format__: Gets the export format.
+4. __Writer__: Gets the StreamWriter. You can use it to write additional information for the exported element.
 
 You can use this event if you want to write additional data to the stream. A common scenario is to add [Row Details]({%slug radgridview-row-details-overview%}) to the exported data :
 	
@@ -151,10 +151,10 @@ The result is:
 The event is fired when exporting with *ExportToXlsx* or *ExportToPdf* methods.
 The event handler expects __GridViewElementExportingToDocumentEventArgs__ argument that has the following properties:
 
- - __Element__ - the export element
- - __Cancel__ - the event is cancelable
+ - __Element__ - Gets the current element that is about to be exported.
+ - __Cancel__ - Gets or sets a boolean value that indicates whether the event should be canceled or not.
  - __DataContext__ - the DataContext of the corresponding visual element. For example the DataContext of a row is its corresponding data item.
- - __Value__ - the value to be exported
+ - __Value__ - the value that is about to be exported.
  - __VisualParameters__ - they are of type __GridViewDocumentVisualExportParameters__ and have a property __Style__ which is of type CellSelectionStyle. It provides the ability to set the FontSize, Fill and etc. for the exported document.
 
 ## ElementExportedToDocument
@@ -162,8 +162,8 @@ The event handler expects __GridViewElementExportingToDocumentEventArgs__ argume
 The event is fired when exporting with *ExportToXlsx* or *ExportToPdf* methods.
 The event handler expects __GridViewElementExportedToDocumentEventArgs__ argument that has the following properties:
 
- - __Element__ - the export Element
- - __DataContext__ - the DataContext of the corresponding visual element.
+ - __Element__ - the export Element.
+ - __DataContext__ - the DataContext of the corresponding element.
 
 ## InitializingExcelMLStyles (ExcelML only)
 

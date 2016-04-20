@@ -35,7 +35,7 @@ The method expects two parameters:
 * __UseSystemCultureSeparator__ - if set, the RadGridView will use the system List Separator string, specified in Control Panel's Regional Options, to separate cells. This property overrides the __ColumnDelimiter__ property. __Available in GridViewCsvExportOptions only__.
 
 
-Example 1 shows how to display a "Save File" dialog asking the user to save the file in excel format:
+__Example 1__ shows how to display a "Save File" dialog asking the user to save the file in excel format:
 
 #### __[C#] Example 1: Save RadGridView`s content in Excel file__
 
@@ -101,7 +101,7 @@ Example 1 shows how to display a "Save File" dialog asking the user to save the 
 	End Sub
 {{endregion}}
         
-In addition,__RadGridView__ provides built-in methods to get the content of your GridView control in different formats:
+In addition, __RadGridView__ provides built-in methods to get the content of your GridView control in different formats:
 
 * __Text__ - each row is exported on new line (\r\n) with values separated by tabs (\t). In order to export to this format use the __ToText()__ method.
 
@@ -124,7 +124,7 @@ In addition,__RadGridView__ provides built-in methods to get the content of your
 {{endregion}}
 
 
-#### __[VB.NET] Example 3: Save content to String__
+#### __[VB.NET] Example 2: Save content to String__
 
 {{region gridview-export_3}}
 

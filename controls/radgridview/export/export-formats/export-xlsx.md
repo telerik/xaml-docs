@@ -17,8 +17,8 @@ __Assembly References__
 ExportFormat.Xlsx method uses additional libraries so you need to add references to the following assemblies:
 
 * Telerik.Windows.Documents.Core.dll
-* Telerik.Windows.Documents.SpreadSheet.dll 
-* Telerik.Windows.Documents.SpreadSheet.FormatProviders.OpenXml.dll
+* Telerik.Windows.Documents.Spreadsheet.dll 
+* Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
 * Telerik.Windows.Zip.dll
 * Telerik.Windows.Controls.GridView.Export.dll
 

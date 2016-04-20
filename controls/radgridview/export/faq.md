@@ -10,7 +10,6 @@ position: 8
 
 # Export FAQ
 
-
 For a general example on how to Export the data, you can check our Exporting {% if site.site_name == 'WPF' %}[ WPF Demos.](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos.](http://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}
 
  * __How to export paged data:__

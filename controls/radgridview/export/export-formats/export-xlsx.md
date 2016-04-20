@@ -24,7 +24,7 @@ ExportFormat.Xlsx method uses additional libraries so you need to add references
 
 >  __Telerik.Windows.Controls.GridView.Export.dll__ is a new binary introduced in __Q1 SP of 2015__. It delimits the exporting to __Xlsx__ functionality from __Telerik.Windows.Controls.GridView.dll__, so in order to use __ExportToXlsx__ method, the new dll should also be added.
 
-The method is overloaded:
+The method has two overloads:
 
 1. __ExportToXlsx(Stream stream)__ - Expects the specified stream to which you are exporting data to.
 

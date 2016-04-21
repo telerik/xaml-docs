@@ -167,14 +167,14 @@ function prepareCode(url, codeString){
 			if (strEndsWith(url, 'xaml'))
 			{
 				langName = "XAML";
-			}
-			codeString = escapeXamlCode(codeString);
+			}			
 		}	
 		else if (fileExtenstion == "cs")
 		{
 			langName = "C#";
 		}
 		document.getElementById('heading').innerHTML = '<strong>' +langName+ '</strong>';
+		codeString = escapeXamlCode(codeString);
 		
 		var prettyCode = prettyPrintOne(codeString, fileExtenstion);
 		return prettyCode;
@@ -188,14 +188,23 @@ function prepareCode(url, codeString){
   
   function getFileExtension(fileName){
 	  var ext = fileName.split('.').pop();
-	  if (ext =="xaml" || ext == "config" || ext == "csproj")
-	  {
+	  if (ext =="xaml" || ext == "config" || ext == "csproj"){
 			ext = "xml"
 	  }
 	return ext;
   }
   
-  function getCodeFromGitHub(theUrl){
+	function msieversion(){
+	  var ua = window.navigator.userAgent;
+	  var msie = ua.indexOf ( "MSIE " );
+
+	  if ( msie > 0 )      // If Internet Explorer, return version number
+		 return parseInt(ua.substring (msie+5, ua.indexOf (".", msie )));
+	  else                 // If another browser, return 0
+		 return 0;
+	}
+	
+	function getCodeInJsonP(theUrl){
 		 $.ajax({
                 url: theUrl,
                 dataType: 'jsonp',
@@ -205,13 +214,30 @@ function prepareCode(url, codeString){
                     var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9+/=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/rn/g,"n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
                                         
                     var content = results.data.content;
-                    content = Base64.decode(content)
-                    content = content.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                    content = Base64.decode(content);                
 
                     document.getElementById('codeBlock').innerHTML = prepareCode(theUrl, content);
                 }
-   }); 
-  } 
+		 }); 
+	}
+	
+	function convertApiLinkToCDNLink(url, fileName){
+		 var contentsIndex = url.indexOf('contents');
+		 var rootDir = url.substring(contentsIndex + 9); 
+		 
+		 return "https://cdn.rawgit.com/telerik/xaml-sdk/master/" + rootDir + fileName;
+	}	
+	
+	function getCodeInPlainText(theURL, fileName){
+		 var cdnUrl = convertApiLinkToCDNLink(theURL, fileName);
+		 $.ajax({
+                url: cdnUrl,
+                dataType: 'text',
+                success: function (response) {   
+                    document.getElementById('codeBlock').innerHTML = prepareCode(cdnUrl, response);
+                }
+		 }); 
+	}
   
  function setDescription(readmeDiv, description){
 	  var htmlStart ="<html><head></head><body><b><u>Description:</u></b><p>"
@@ -238,7 +264,12 @@ function detailInit(e) {
                            var index = this.select().index();
                            var dataItem = this.dataSource.view()[index];
 						   
-						    getCodeFromGitHub(e.data.GitHubPath + dataItem);	
+						    if (msieversion() > 0){
+							    getCodeInJsonP(e.data.GitHubPath + dataItem);
+						    }
+						    else{
+							    getCodeInPlainText(e.data.GitHubPath, dataItem);
+						    }		
                         },                   
                     });   
 					setDescription(e.detailRow.find(".readmeDiv"), e.data.Description);							
@@ -289,8 +320,7 @@ $(function(){
         });
 		
 	var grid = $("#kendoDiv").data("kendoGrid");
-	if (grid)
-	{
+	if (grid){
 		grid.one("dataBound", function(e) {
 						e.sender.expandRow($('#kendoDiv tbody>tr:first'));
 			  });
@@ -346,13 +376,11 @@ $(function(){
        grid.dataSource.filter({ value: input,
                                field: "KeyWords",
                                operator: function(field, value){
-                                 if (value == '')
-                                 {
+                                 if (value == ''){
                                    return true;
                                  }
                                  
-                                 if (field)
-                                 {
+                                 if (field){
                                    		var status = true;
                                    		var splittedSearchKeys = value.toLowerCase().split(/[ ,]+/);
                                    		for (var i = 0, length = splittedSearchKeys.length; i < length; i++) { 
@@ -375,13 +403,11 @@ $(function(){
         grid.dataSource.filter({ value: input,
                                field: "KeyWords",
                                operator: function(field, value){
-                                 if (value == '')
-                                 {
+                                 if (value == ''){
                                    return true;
                                  }
                                  
-                                 if (field)
-                                 {
+                                 if (field){
                                    		var status = true;
                                    		var splittedSearchKeys = value.toLowerCase().split(/[ ,]+/);
                                    		for (var i = 0, length = splittedSearchKeys.length; i < length; i++) { 

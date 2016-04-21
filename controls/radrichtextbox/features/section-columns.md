@@ -10,7 +10,7 @@ position: 8
 
 # Section Columns
 
-With the Section Columns feature, **RadRichTextBox** allows you arrange the text in a [Section]({%slug radrichtextbox-features-document-elements-section%}) into columns. This article will show you how to arrange the text into columns with different or customized width and set a separator between them.
+With the Section Columns feature, **RadRichTextBox** allows you arrange the text in a [Section]({%slug radrichtextbox-features-document-elements-section%}) into columns. This article will show you how to arrange the text into columns with equal or different width and set a separator between them.
 
 * [SectionColumn Class](#sectioncolumn-class)
 
@@ -18,7 +18,7 @@ With the Section Columns feature, **RadRichTextBox** allows you arrange the text
 
 * [Using Section Columns](#using-section-columns)
 
-#### Figure 1: Text laid out in columns
+#### __Figure 1: Text laid out in columns__
 ![RadRichTextBox_Features_Section_Columns_01](images/RadRichTextBox_Features_Section_Columns_01.png)
 
 ## SectionColumn Class
@@ -56,8 +56,14 @@ The **SectionColumnCollection** class contains the information about the text co
 
 #### **[C#] Example 1: Create SectionColumnCollection**
 {{region radrichtextbox-features-section-columns_0}}
-	SectionColumnCollection sectionColumnCollection = new SectionColumnCollection(2, 10, true);
+	SectionColumnCollection sectionColumnCollection = new SectionColumnCollection(2, 75, true);
 {{endregion}}
+
+
+__Figure 2__ demonstrates the result of __Example 1__.
+
+#### __Figure 2: Columns with separator__
+![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
 
 
 ## Using Section Columns
@@ -94,7 +100,7 @@ The API allows you create the columns severally from each other with the Section
 
 ### Apply Columns With RadDocumentEditor
 
-Despite the so far discussed approaches, [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) exposes a method that you can utilize to lay out the text in columns as well. The overloads of the ChangeSectionColumns() method allows you to pass a SectionColumnCollection instance or a value of the [**SectionColumnsLayout enumeration**](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_SectionColumnsLayout.htm).
+In addition to the so far discussed approaches, [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) exposes a method that you can utilize to lay out the text in columns as well. The overloads of the ChangeSectionColumns() method allows you to pass a SectionColumnCollection instance or a value of the [**SectionColumnsLayout enumeration**](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_SectionColumnsLayout.htm).
 
 **SectionColumnsLayout** enumeration could have the following values:
 
@@ -114,8 +120,8 @@ Despite the so far discussed approaches, [RadDocumentEditor]({%slug radrichtextb
 {{endregion}}
 
 
-#### Figure 2: SectionColumnsLayout.Left applied on a section
-![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
+#### __Figure 3: SectionColumnsLayout.Left applied on a section__
+![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_03.png)
 
 >You can insert a column break at a specific position inside a section column. For more information, check [this article]({%slug radrichtextbox-features-document-elements-break%}).
 

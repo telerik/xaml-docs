@@ -10,14 +10,14 @@ position: 1
 
 # Section Columns
 
-With the Section Columns feature, **RadRichTextBox** allows you arrange the text in a [Section]({%slug radrichtextbox-features-document-elements-section%}) into columns. This article will show you how to arrange the text into columns with different or customized width and set a separator between them.
+With the Section Columns feature, **RadRichTextBox** allows you arrange the text in a [Section]({%slug radrichtextbox-features-document-elements-section%}) into columns. This article will show you how to use the predefined UI to arrange the text into columns with equal or different width.
 
 * [Create Section Columns](#create-section-columns)
 
 * [Changing the Width of a Section Column](#changing-the-width-of-a-section-column)
 
 
-#### Figure 1: Text laid out in columns
+#### __Figure 1: Text laid out in columns__
 ![RadRichTextBox_Features_Section_Columns_01](images/RadRichTextBox_Features_Section_Columns_01.png)
 
 ## Create Section Columns
@@ -25,7 +25,7 @@ With the Section Columns feature, **RadRichTextBox** allows you arrange the text
 The Page Layout tab of [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) allows you set different types of section columns.
 
 #### Figure 2: Section columns menu
-![RadRichTextBox_Features_Section_Columns_01](images/RadRichTextBox_Features_Section_Columns_03.png)
+![RadRichTextBox_Features_Section_Columns_03](images/RadRichTextBox_Features_Section_Columns_03.png)
 
 * **One**: Represents a single text column.
 
@@ -37,7 +37,7 @@ The Page Layout tab of [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-r
 
 * **Right**: Represents two text columns where the right one has a smaller width than the left one.
 
-#### Figure 2: Left option applied on a section
+#### Figure 2: __Left option applied on a section__
 ![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
 
 ## Changing the Width of a Section Column

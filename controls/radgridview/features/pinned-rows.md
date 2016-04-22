@@ -12,7 +12,7 @@ position: 17
 
 With **R2 2016**, Telerik introduced **Pinned Rows**. By using Pinned Rows, you can pin particular rows to the top or bottom of your **RadGridView** so that they do not participate in the vertical scrolling.
 
-In this article we will discuss the following topics:
+In this article, we will discuss the following topics:
 
 * [PinnedRowsPosition property](#pinnedrowsposition)
 
@@ -36,7 +36,7 @@ RadGridView's **PinnedRowsPosition** property lets you determine where the pinne
 
 * **None**: Do not display the pinned rows.
 
-**Example 1** shows that you can set the property either declaratively or at runtime like this:
+**Example 1** shows that you can set the property either declaratively or at runtime, like this:
 
 #### __[XAML] Example 1: Setting the PinnedRowsPosition property__
 
@@ -58,7 +58,7 @@ Pressing the button will pin the respective row. Clicking on it again will remov
 
 ![Pinning rows from the row indicator](images/radgridview-pinned-rows-1.png)
 
-Another way to allow your users to pin rows with the click of a button is to define a **GridViewPinRowColumn** which enables pinning and unpinning of the rows.
+Another way to allow your users to pin rows with the click of a button is to define a **GridViewPinRowColumn**, which enables pinning and unpinning of the rows.
 
 #### __[XAML] Example 2: Defining a GridViewPinRowColumn__
 
@@ -72,8 +72,8 @@ Another way to allow your users to pin rows with the click of a button is to def
 
 ## Grouping
 
-Pinned Items do not participate in grouping. Once the user groups, the pinned items are placed back to the **Items** collection. On ungrouping, they reappear as pinned.
-
+Pinned items do not participate in grouping. Once the user groups, the pinned items are placed back to the **Items** collection. On ungrouping, they reappear as pinned.
+<Comment: How does the user group?>
 ## Sorting
 
 Sorting a column results in sorting the items in the pinned panel as well - only compared to each other.

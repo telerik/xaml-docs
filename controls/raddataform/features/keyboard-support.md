@@ -11,11 +11,11 @@ position: 4
 # Keyboard Support
 
 
-__RadDataForm__  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing. This topic will walk you through the following sections.
+__RadDataForm__ allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing. This article will walk you through the following sections.
 
 * [Keys List](#keys-list)
 * [Custom Keyboard Command Provider](#custom-keyboard-command-provider)
-* [Disable the Built In Navigation](#disable-the-built-in-navigation)
+* [Disable the Built-in Navigation](#disable-the-built-in-navigation)
 * [Control the Processing of Handled Events](#control-the-processing-of-handled-events)
 
 ## Keys List 
@@ -48,12 +48,12 @@ Below is the list of the keys that are supported.
 
 ## Custom Keyboard Command Provider
 
-RadDataForm provides an easy MVVM-friendly approach for customization of its default commands' logic. More information can be found on [Customizing Commands help article]({%slug raddataform-customize-commands%}). However, if you want to extend the way RadDataForm handles a particular key you could create your own custom command provider and predefine the behaviour for that key.
+RadDataForm provides an easy MVVM-friendly approach for customization of its default commands' logic. You can find more information in the [Customizing Commands help article]({%slug raddataform-customize-commands%}). However, if you want to extend the way RadDataForm handles a particular key, you could create your own custom command provider and predefine the behaviour for that key.
         
 
-The approach for accomplishing the purpose is to create a separate class, inherit the DataFormCommandProvider and overriding the ProvideCommandsForKey(KeyEventArgs args) method. In this way only the undesired behavior can be adjusted according to your requirements.
+The approach for accomplishing this is to create a separate class, inherit the DataFormCommandProvider and override the ProvideCommandsForKey(KeyEventArgs args) method. In this way, only the undesired behavior can be adjusted according to your requirements.
 
-The class responsible for customizing the keyboard navigation should to be similar to the one below:
+The class responsible for customizing the keyboard navigation should to be similar to Example 1:
 
 #### __[C#] Example 1: Creating a custom KeyboardCommandProvider__
 
@@ -144,9 +144,9 @@ The class responsible for customizing the keyboard navigation should to be simil
 
 Following up the code-snippet above, a press of Left/ Right keys will result in moving to the Next/ Previous item and editing it. However, do not forget to remove the predefined commands for that particular key by calling the Clear() method.
 
-The last thing to be done is to set CommandProvider Property of the RadDataForm to be the newly-created CustomKeyboardCommandProvider class:
+The last thing to be done is to set the CommandProvider property of the RadDataForm to be the newly-created CustomKeyboardCommandProvider class:
 
-#### __[XAML] Example 2: Set the CommandProvider Property__
+#### __[XAML] Example 2: Set the CommandProvider property__
 
 {{region raddataform-features-keyboard-support_0}}
 
@@ -160,23 +160,23 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 	{{endregion}}
 
 
-#### __[C#] Example 2: Set the CommandProvider Property__
+#### __[C#] Example 2: Set the CommandProvider property__
 
 {{region raddataform-features-keyboard-support_2}}
 
 	    this.RadDataForm1.CommandProvider = new CustomKeyboardCommandProvider(this.RadDataForm1);
 	{{endregion}}
 
-#### __[VB.NET] Example 2: Set the CommandProvider Property__
+#### __[VB.NET] Example 2: Set the CommandProvider property__
 
 {{region raddataform-features-keyboard-support_2}}
 
 	    Me.RadDataForm1.CommandProvider = New CustomKeyboardCommandProvider(Me.RadDataForm1)
 	{{endregion}}
 
-## Disable the Built In Navigation
+## Disable the Built-in Navigation
 
-As of __Q1 2015 DataFormCommandProvider__ exposes a new property: __EnableBuiltInNavigation__. Its default value is __True__. In order to __disable the built-in navigation__, you can set its value to __False__.
+As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation__ property. Its default value is __True__. In order to __disable the built-in navigation__, you can set its value to __False__.
 
 #### __[C#] Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
@@ -199,7 +199,7 @@ As of __Q1 2015 DataFormCommandProvider__ exposes a new property: __EnableBuiltI
 
 ## Control the Processing of Handled Events
 
-As of __Q1 2015__ the new boolean property __ShouldProcessHandledEvents__ of __DataFormCommandProvider__ is exposed. Its default value is __True__. If you want to manually process handled events, you can set its value to __False__.
+As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __DataFormCommandProvider__ is exposed. Its default value is __True__. If you want to manually process handled events, you can set its value to __False__.
 
 #### __[C#] Example 4: Setting the ShouldProcessHandledEvents to False__
 

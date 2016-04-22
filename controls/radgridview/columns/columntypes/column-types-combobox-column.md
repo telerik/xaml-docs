@@ -20,7 +20,7 @@ Here is a list of the most important properties:
 
 * __ItemsSourceBinding__ - allows binding editor's __ItemsSource__ to a member of the bound data item.
 
-* __DisplayMemberPath__ - member path to display. It points to a field in the  assigned__GridViewComboBoxColumn.ItemsSource__.
+* __DisplayMemberPath__ - member path to display. It points to a field in the  assigned __GridViewComboBoxColumn.ItemsSource__.
 
 * __SelectedValueMemberPath__ - used in conjunction with __DisplayMemberPath__ in the process of translation of a value to display as content. It also tells the __RadComboBox__ editor which property to use as a Value when the user makes selection.
 

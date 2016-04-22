@@ -10,18 +10,18 @@ position: 0
 
 # RangeSeries
 
-The __RangeSeries__ behave like an [AreaSeries]({%slug radchartview-series-areaseries%}) but you can specify a minimum and maximum for each data point. Basically, the series displays a range of data by plotting two numeric values per data point.
+The __RangeSeries__ behaves like an [AreaSeries]({%slug radchartview-series-areaseries%}) but you can specify a minimum and maximum for each data point. Basically, the series displays a range of data by plotting two numeric values per data point.
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)
 * [Data Binding](#data-binding)
 * [Styling the Series](#styling-the-series)
 
-## Declaratively defined series
+## Declaratively Defined Series
 
 You can use the definition from __Example 1__ to display a RangeSeries:  
 
-#### __[XAML] Example 1: Declaring RangeSeries in XAML__
+#### __[XAML] Example 1: Declaring a RangeSeries in XAML__
 {{region radchartview_rangeseries_0}}
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
@@ -51,25 +51,25 @@ You can use the definition from __Example 1__ to display a RangeSeries:
  
 ## Properties
 
-The following list represents the most important properties of the RangeSeries
-
-* __CategoryBinding__ : A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.
-* __HighBinding__ : A property of type __DataPointBinding__ that gets or sets the property path that determines the high value of the data point.
-* __LowBinding__ : A property of type __DataPointBinding__ that gets or sets the property path that determines the low value of the data point.
-* __Fill__ : A property of type __Brush__ that gets or sets the color of the RangeSeries area.
-* __DashArray__ : A property of type __DoubleCollection__ that gets or sets the dash pattern applied to the stroke of the area.
-* __Stroke__ : A property of type __Brush__ that gets or sets the outline stroke of the RangeSeries area.
-* __AreaShapeStyle__ : A property of type __Style__ that gets or sets the appearance of the area shape. The property excepts a style that targets an object of type Path.
-* __StrokeShapeStyle__ : A property of type __Style__ that gets or sets the style of the stroke of the area shape. The property excepts a style that targets an object of type Path.
-* __StrokeMode__ : A property of type __RangeSeriesStrokeMode__ that gets or sets the mode that determines what part of the series will be stroked. The stroke mode is an enumeration and it allows the following values:  
-	* __None__ : No outlining.
-	* __LowPoints__ : The stroke will be applied on the Low value of the data points.
-	* __HighPoints__ : The stroke will be applied on the High value of the data points.
-	* __LowAndHighPoints__ : The stroke will be applied on the Low and High values of the data points.
-
+The following list represents the most important properties of the RangeSeries.
+<Comment: Why are these properties listed in this order? I suggest you put this bullet list in alphabetic order. If the properties are in another order, like most important to least important, please modify the previous sentence to say that.>
+* __CategoryBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.
+* __HighBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the high value of the data point.
+* __LowBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the low value of the data point.
+* __Fill__: A property of type __Brush__ that gets or sets the color of the RangeSeries area.
+* __DashArray__: A property of type __DoubleCollection__ that gets or sets the dash pattern applied to the stroke of the area.
+* __Stroke__: A property of type __Brush__ that gets or sets the outline stroke of the RangeSeries area.
+* __AreaShapeStyle__: A property of type __Style__ that gets or sets the appearance of the area shape. The property excepts a style that targets an object of type Path.
+* __StrokeShapeStyle__: A property of type __Style__ that gets or sets the style of the stroke of the area shape. The property accepts a style that targets an object of type Path.
+* __StrokeMode__: A property of type __RangeSeriesStrokeMode__ that gets or sets the mode that determines what part of the series will be stroked. The stroke mode is an enumeration and it allows the following values:  
+	* __None__: No outlining.
+	* __LowPoints__: The stroke will be applied on the Low value of the data points.
+	* __HighPoints__: The stroke will be applied on the High value of the data points.
+	* __LowAndHighPoints__: The stroke will be applied on the Low and High values of the data points.
+<Comment: What happens if someone sets LowPoints, HighPoints and LowAndHighPoints?>
 ## Data Binding
 
-You can use the __HighBinding__ ,__LowBinding__ and __CategoryBinding__ properties of the RangeSeries to bind the DataPoints’ properties to the properties from your view models.
+You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properties of the RangeSeries to bind the DataPoints’ properties to the properties from your view models.
 
 #### __[C#] Example 2: Defining the view model__
 
@@ -89,12 +89,12 @@ You can use the __HighBinding__ ,__LowBinding__ and __CategoryBinding__ properti
 	};
 {{endregion}}	
 
-#### __[XAML] Example 3: Specify RangeSeries in XAML__
+#### __[XAML] Example 3: Specify a RangeSeries in XAML__
 {{region radchartview-series-areaseries_2}}
 	<telerik:RangeSeries ItemsSource="{Binding}" HighBinding="HighValue" LowBinding="LowValue" CategoryBinding="Category"/>
 {{endregion}}
 
->See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite
+>See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
 ## Styling the Series
 

@@ -1355,6 +1355,13 @@ header, nav, section, article, aside, footer {
   height:40px;
   width:96%;
 }
+
+#kendoDiv .k-grid .k-state-selected { background: #F5F6F6; }
+#kendoDivSL .k-grid .k-state-selected { background: #F5F6F6; }
+
+.detailsDIV tbody  {
+    cursor: pointer;
+}
       
 #searchBox {
   height: 60px;

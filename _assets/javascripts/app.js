@@ -249,6 +249,14 @@ function getReadMeFileName(readmePath){
 	return readmePath.split('\\').pop();
 }
 
+function getFileName(fullName){
+			 var splitPath = fullName.split('\\');	
+			 if (splitPath){
+				 return splitPath[splitPath.length-1];
+			 }
+			return fullName;
+}
+
 function detailInit(e) {
                     var detailRow = e.detailRow;  
 
@@ -256,7 +264,10 @@ function detailInit(e) {
                       
 						dataSource: e.data.ExampleInfo.ExampleFileNames,   
                       
-						columns: [{ title: "Files",	template: "#=data#"}],
+						columns: [{ title: "Files",	   
+								  template: function(dataItem) {
+										return getFileName(dataItem)
+								  }}],
 							  
 						selectable: "row",
 							   
@@ -272,7 +283,12 @@ function detailInit(e) {
 						    }		
                         },                   
                     });   
-					setDescription(e.detailRow.find(".readmeDiv"), e.data.Description);							
+					setDescription(e.detailRow.find(".readmeDiv"), e.data.Description);		
+
+					var innerGrid = $(".detailsDIV").data("kendoGrid");
+					if (innerGrid){
+					  innerGrid.select($('.detailsDIV tbody>tr:first'));
+					}					
                 }
 				
 function getGitHubFolderUrl(exampleInfo){
@@ -280,7 +296,7 @@ function getGitHubFolderUrl(exampleInfo){
   var rootDir = exampleInfo.GitHubPath.substring(masterIndex + 9);  
   var dirName = exampleInfo.ExampleInfo.DirectoryName;
   
-  var result ="<a href='https://github.com/telerik/xaml-sdk/tree/master/" + rootDir +"/'>" +dirName+ "</a>";
+  var result ="<a href='https://github.com/telerik/xaml-sdk/tree/master/" + rootDir +"/' target='_blank'>" +dirName+ "</a>";
   return result;
 }
 

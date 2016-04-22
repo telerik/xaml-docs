@@ -10,7 +10,7 @@ position: 19
 
 # Indexer Support
 
-As of **R2 2016**, Telerik introduced **Indexer Support** for RadPropertyGrid's **PropertyDefinition** bindings. It covers the following scenarios:
+In **R2 2016**, Telerik introduced **Indexer Support** for RadPropertyGrid's **PropertyDefinition** bindings. It covers the following scenarios:
 
 * [Binding to an Item of a Collection Through Indexer](#binding-to-an-item-of-a-collection-through-indexer)
 

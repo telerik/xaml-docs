@@ -38,7 +38,7 @@ The __SelectedDate__ property holds the selected date, __null__ means that __no 
 
 The __SelectedDates__ property is a collection of all the selected dates in the Calendar. Note that it is read-only and cannot be bound in XAML - you can only add Dates to it with code.
 
-If you add dates in the Selected dates collection, they should be valid with regard to the constraints of the calendar: selectable and display dates range. See the [programming section]({%slug radcalendar-constraining-selection-and-visible-dates%}) for more information on the managing the constraints.
+If you add dates in the Selected dates collection, they should be valid with regard to the constraints of the calendar: selectable and display dates range. See the [Constraining Selection and Visible Days]({%slug radcalendar-constraining-selection-and-visible-dates%}) topic for more information on the managing the constraints.
 
 The following example selects all the work days (Monday to Friday) of the current month:
 
@@ -61,12 +61,22 @@ The following example selects all the work days (Monday to Friday) of the curren
 	}
 {{endregion}}
 
-For more information on the handling the selection events, see the Programming section.
+## Week Settings
+
+You can use the following properties to configure the weeks inside __RadCalendar__:
+
+ * __FirstDayOfWeek__ - sets the first day of the week, if not set, depends on the default thread Culture.
+ 
+ * __CalendarWeekRule__  - sets the rule which determines the first calendar week of the year. It can receive the following values: FirstDay, FirstFourDayWeek, FirstFullWeek.
+
+ >tip For more details on the CalendarWeekRule settings see [CalendarWeekRule Enumeration](https://msdn.microsoft.com/en-us/library/system.globalization.calendarweekrule%28v=vs.110%29.aspx) MSDN topic.
 
 ## DatePicker
 
 If you need a calendar that takes less space, use the [RadDateTimePicker]({%slug raddatetimepicker-overview%}) control which in its essence is a DropDown with a calendar and date parser.
 
-## Styling and Appearance
+# See Also
 
-The calendar control has over 30 properties that can be used to style almost any aspect of the control, for more information see the Styles and Templates section.
+* [Selection Modes]({%slug radcalendar-selection-modes%})
+ 
+* [Constraining Selection and Visible Days]({%slug radcalendar-constraining-selection-and-visible-dates%})

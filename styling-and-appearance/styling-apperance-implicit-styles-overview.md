@@ -255,9 +255,9 @@ __Example 6__ lists the .xaml files corresponding to the Telerik assemblies and 
 
 ## Styling custom controls
 
-If you're using Implicit Styles to style custom controls, note that it will not receive automatically the inherited control style. You should add the following style after the merged dictionaries to fix this:
+If you're using Implicit Styles to style custom controls, note that they will not automatically receive the inherited control style. You will have to base your custom style on the needed control using the name of the control and the suffix “Style” as a StaticResource Key and set the TargetType property to the type of the custom control.
         
-#### __[XAML] Example 8: Adding Style for styling custom control__
+#### __[XAML] Example 7: Adding Style for styling custom control__
 
 {{region styling-apperance-implicit-styles-overview_7}}
 	<Application.Resources>
@@ -267,25 +267,35 @@ If you're using Implicit Styles to style custom controls, note that it will not 
 	      <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
 	      <ResourceDictionary Source="Themes/Telerik.Windows.Controls.GridView.xaml" />
 	      <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Input.xaml" />
-	      <Style TargetType="local:MyCustomGrid" BasedOn="{StaticResource RadGridViewStyle}"/>
 	    </ResourceDictionary.MergedDictionaries>
+		<Style TargetType="local:MyCustomGrid" BasedOn="{StaticResource RadGridViewStyle}" />
 	  </ResourceDictionary>
 	</Application.Resources>
 {{endregion}}
 
+You will then need to set the control's **DefaultStyleKey**.
 
-The important part is setting TargetType property to the type of the custom control.
-
-#### __[C#] Example 7: Setting the DefaultStyleKey for styling custom control__
+#### __[C#] Example 8: Setting the DefaultStyleKey for styling custom control__
 
 {{region styling_customstyles}}
 	public class MyCustomGrid : RadGridView
 	{
-	    static MyCustomGrid()
-	    {
-	        this.DefaultStyleKey = typeof(MyCustomGrid);
-	    }
+		public MyCustomGrid()
+        {
+            this.DefaultStyleKey = typeof(MyCustomGrid);
+        }
 	}
 {{endregion}}
 
+#### __[VB.NET] Example 8: Setting the DefaultStyleKey for styling custom control__
 
+{{region styling_customstyles-2}}
+	Public Class MyCustomGrid
+		Inherits RadGridView
+		Public Sub New()
+			Me.DefaultStyleKey = GetType(MyCustomGrid)
+		End Sub
+	End Class
+{{endregion}}
+
+>You should also have a look at the [Setting a Theme on a Custom Control](http://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/styling-apperance-custom-control) article.

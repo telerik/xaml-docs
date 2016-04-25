@@ -58,10 +58,10 @@ When you click the Finish button:
 
 # See Also
 
- * [Automatic Dependency resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
+ * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
 
- * [Upgrading to a new UI for WPF distribution]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
+ * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
 
- * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
 
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
+ * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

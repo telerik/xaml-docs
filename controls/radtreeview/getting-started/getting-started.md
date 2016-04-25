@@ -10,241 +10,180 @@ position: 0
 
 # Getting Started
 
-This tutorial will walk you through the creation of a __RadTreeView.__
+This tutorial will walk you through the creation of a sample application that contains __RadTreeView__.
 
-__RadTreeView__ is an advanced control which provides full Blend support. From within the visual environment of Blend, you can easily perform various tasks such as edit control properties, add/remove treeview items, modify themes, create and modify templates and more.
+* [Assembly References](#assembly-references)
+* [Defining a RadTreeView](#defining-a-radtreeview)
+* [Adding Items to RadTreeView](#adding-items-to-radtreeview)
+* [Data Binding RadTreeView](#data-binding-radtreeview)
+* [Enable Drag and Drop](#enable-drag-and-drop)
+* [Setting a Theme](#setting-a-theme)
 
-For the purpose of this tutorial, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Blend.
+## Assembly References
 
-{% if site.site_name == 'Silverlight' %}
->In order to use __RadTreeView__ in your projects you have to add references to the following two assemblies:
->* __Telerik.Windows.Controls__
->* __Telerik.Windows.Controls.Navigation__
+In order to use the __RadTreeView__ control, you will need to add references to the following assemblies:
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Controls.Data__
 
->You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-{% endif %}
+You can find the required assemblies for each control from the UI for WPF suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 
-{% if site.site_name == 'WPF' %}
->In order to use __RadTreeView__ in your projects you have to add references to the following assemblies:
->* __Telerik.Windows.Controls__
->* __Telerik.Windows.Controls.Navigation__
->* __Telerik.Windows.Data__
+## Defining a RadTreeView
 
->You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
-{% endif %}
+You can add __RadTreeView__ manually in XAML as demonstrated in __Example 1__. 
 
-## Create RadTreeView using Expression Blend
-* Open the __Assets Library__(*Window->Assets*) in Expression Blend and start writing the name of the __RadTreeView__ control in the search box.
-
-	![](images/RadTreeView_GettinStarted_001.png)
-
-* Drag the __RadTreeView__ control on the artboard. The __RadTreeView__ appears.
-         
-	![](images/RadTreeView_GettinStarted_010.png)
-
-	#### __XAML__
-
-	{{region radtreeview-getting-started_0}}
-		<telerik:RadTreeView Margin="8" Background="#FFAD9292"/>
-		{{endregion}}
+#### __[XAML] Example 1: Adding RadTreeView in XAML__
+{{region radtreeview-getting-started_01}}
+	<telerik:RadTreeView />
+{{endregion}}
 	
-	> You might wonder where this "telerik", in front of the tag __RadTreeView__, came from. Well, this is the name of the namespace you give when you import the appropriate assembly into the XAML file.
-	>     `<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">`
+__RadTreeView__ doesn't display any content when it is not populated with items, so at this point there should be nothing displayed on the screen.
+
+## Adding Items to RadTreeView
+
+__RadTreeView__ works with __RadTreeViewItem__ elements, which should be added in the __Items__ collection of the control.
+
+#### __[XAML] Example 2: Adding RadTreeViewItems in XAML__
+{{region radtreeview-getting-started_02}}
+	<telerik:RadTreeView>
+		<telerik:RadTreeView.Items>
+			<telerik:RadTreeViewItem Header="Football" />
+			<telerik:RadTreeViewItem Header="Tennis" />
+			<telerik:RadTreeViewItem Header="Cycling" />
+			<telerik:RadTreeViewItem Header="Basketball" />
+		</telerik:RadTreeView.Items>
+	</telerik:RadTreeView>
+{{endregion}}
 	
-* So far there is an empty __RadTreeView__ containing no items.
-
-## Add and remove items (RadTreeViewItem controls) and setting their Header property
-
-Open Expression Blend and select the treeview control to which you wish to add item(s)
-
-* After you've selected the control, navigate to __Common Properties__ located in the __Properties__ pane and click the ellipses button next to __Items (Collection)__. The __Object Collection Editor__ dialog appears.
-
-	![](images/RadTreeView_GettingStarted_040.png)
-
-* The dialog is divided into two sections: the left one contains the list with the treeview items which already belong to the selected treeview control, while in the right one you can view and edit the properties of the selected treeview item. In order to add a new treeview item click the __Add another item__ button located at the bottom under the items list. The __Select Object__ dialog appears. If you want to remove item(s) select the target item and click the __Remove Item__ button (![](images/RadTreeView_GettingStarted_045.png)).
-
-	![](images/RadTreeView_GettingStarted_050.png)
-
-* Since Blend does not know the exact type of the item you want to add, you have to select it from a list and confirm by clicking the __OK__ button. The type that is needed is __RadTreeViewItem__ and it is located in __Telerik.Windows.Controls__ namespace.
-
-	![](images/RadTreeView_GettingStarted_060.png)
-
-	>tip Sometimes you will have to browse through a huge list of available types. To speed up the process of finding the type you need, just start writing its name (__RadTreeViewItem__) in the search box above. When you start typing, the controls’ list will be filtered automatically, thus making the selection much easier.
-
-* When the Select Object dialog is closed, you will see the newly created item added to the list of treeview items in the __Object Collection Editor__. It will be selected by default, so you just have to edit its __properties__ (such as Header, Fonts, Colors etc.) in the properties panes, located on the right.
-
-	![](images/RadTreeView_GettingStarted_070.png)
-
-* If you want to add child items to a specific treeview item, you need to select the item from the __Items__ list in the __Object Collection Editor__ dialog. After that navigate to the __Common Properties__ located in the __Properties__ pane and click the ellipses button next to __Items (Collection)__. 
-
-	![](images/RadTreeView_GettingStarted_080.png)
-
-* Again the same __Object Collection Editor__ dialog appears.
-
-	![](images/RadTreeView_GettingStarted_090.png)
-
-	Click __Add another item__ three times to add three child items to the root item "__Sports Categories"__. Set their properties as follows:
-
-	* On the first new item, set the __Header__ property to "__Football__". Select the added node and add two child items. Set their properties as follows: 
-		* On the first new item, set the __Header__ property to "__Futsal__". 
-		* On the second new item, set the __Header__ property to "__Soccer__". 
-		* Click "__OK__" to confirm the changes and to close the dialog.
-		* On the second new item, set the __Header__ property to "__Tennis__". 
-		* On the third new item, set the __Header__ property to "__Cycling__".
-
-	Click "__OK__" to confirm the changes and to close the dialog.
-	Run the demo and expand the __RadTreeView__. It should look like the following screen shot: 
-
-	![](images/RadTreeView_GettingStarted_100.png)
-
-	#### __XAML__
-
-	{{region radtreeview-getting-started_1}}
-		<telerik:RadTreeView Margin="8">
-			<telerik:RadTreeViewItem Header="Sport Categories">
-				<telerik:RadTreeViewItem Header="Football">
-					<telerik:RadTreeViewItem Header="Futsal"/>
-					<telerik:RadTreeViewItem Header="Soccer"/>
-				</telerik:RadTreeViewItem>
-				<telerik:RadTreeViewItem Header="Tennis"/>
-				<telerik:RadTreeViewItem Header="Cycling"/>
-			</telerik:RadTreeViewItem>
-		</telerik:RadTreeView>
-		{{endregion}}
-
-	>tipFind out hot to [populate]({%slug radtreeview-populating-with-data-databinding-overview%}) your __RadTreeView__ with data using binding.
-
-## Enable drag and drop
-
-The Telerik __RadTreeView__ supports drag-and-drop functionality. To enable the feature you only need to set the __IsDragDropEnabled__ property to __True__.
-
-Select the __RadTreeView__ control, navigate to the __Behavior__ section in the __Properties__ pane and set the value of the __IsDragDropEnabled__ property to __True__.
-
-![](images/RadTreeView_GettingStarted_110.png)
-
-#### __XAML__
-
-{{region radtreeview-getting-started_2}}
-	<telerik:RadTreeView Margin="8" IsDragDropEnabled="True">
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis"/>
-	        <telerik:RadTreeViewItem Header="Cycling"/>
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-	{{endregion}}
-
-Run the application and try the drag-and-drop behavior.
-
-![](images/RadTreeView_GettingStarted_130.png)
-
->tip Find out more about the __RadTreeView's__ [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}) support.
-
-## Change the selection mode
-
-By default you can select only one item in the treeview. If you want to enable multiple item selection, and to select several nodes by pressing the __Ctrl__ or __Shift__ keys, you need to change the __SelectionMode__ property.
-
-Find the __SelectionMode__ property in the __Properties__ pane and set its value to __Multiple__.
-
-![](images/RadTreeView_GettingStarted_140.png)
-
-#### __XAML__
-
-{{region radtreeview-getting-started_3}}
-	<telerik:RadTreeView Margin="8" IsDragDropEnabled="True" 
-	        SelectionMode="Multiple">
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis"/>
-	        <telerik:RadTreeViewItem Header="Cycling"/>
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-	{{endregion}}
-
-Start the application and try to select more than one item at once.
-
-![](images/RadTreeView_GettingStarted_150.png)
-
->tip Find out more about the __RadGridView's__ [Selection]({%slug radtreeview-feautres-treeviewitem-selection%}) support.
-
-## Change the expand path mode
-
-By enabling the __IsSingleExpandPath__ property, the __RadTreeView__ will automatically close all the nodes that are not on the path of the expanded node.
-
-Select the treeview and find the __IsSingleExpandPath__ property in the __Properties__ pane and enable it.
-
-![](images/RadTreeView_GettingStarted_160.png)
-
-#### __XAML__
-
+#### __[C#] Example 3: Adding RadTreeViewItems in code__
+{{region radtreeview-getting-started_03}}
+	RadTreeView treeView = new RadTreeView();
+	treeView.Items.Add(new RadTreeViewItem() { Header = "Football" });
+	treeView.Items.Add(new RadTreeViewItem() { Header = "Tennis" });
+	treeView.Items.Add(new RadTreeViewItem() { Header = "Cycling" });
+	treeView.Items.Add(new RadTreeViewItem() { Header = "Basketball" });
+{{endregion}}
+	
+#### __[VB.NET] Example 3: Adding RadTreeViewItems in code__
 {{region radtreeview-getting-started_4}}
-	<telerik:RadTreeView Margin="8" IsDragDropEnabled="True" 
-	        SelectionMode="Multiple" IsSingleExpandPath="True">
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis"/>
-	        <telerik:RadTreeViewItem Header="Cycling"/>
-	    </telerik:RadTreeViewItem>
+	Dim treeView As New RadTreeView()
+	treeView.Items.Add(New RadTreeViewItem() With { _
+		.Header = "Football" _
+	})
+	treeView.Items.Add(New RadTreeViewItem() With { _
+		.Header = "Tennis" _
+	})
+	treeView.Items.Add(New RadTreeViewItem() With { _
+		.Header = "Cycling" _
+	})
+	treeView.Items.Add(New RadTreeViewItem() With { _
+		.Header = "Basketball" _
+	})
+{{endregion}}
+
+#### __Figure 1: RadTreeView flat data example__
+![](images/radtreeview-getting-started-01.png)
+	
+> The __Items__ property of the treeview component is also its content property, so adding the children through the Items collection is not necessary in XAML. You can do it without wrapping the items into the RadTreeView.Items tag. The same applies for the __Items__ property of RadTreeViewItem.
+
+__RadTreeViewItem__ is hierarchical items control, which means that it can contain children containers that hold children on their own. In other words, you can nest items into another item. 
+
+> The __RadTreeViewItem__ class expose a __Header__ property that is used to define the content of its header.
+
+#### __[XAML] Example 4: Nesting RadTreeViewItems__
+{{region radtreeview-getting-started_05}}
+	<telerik:RadTreeView>
+		<telerik:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
+			<telerik:RadTreeViewItem Header="Football" IsExpanded="True">
+				<telerik:RadTreeViewItem Header="Futsal"/>
+				<telerik:RadTreeViewItem Header="Soccer"/>
+			</telerik:RadTreeViewItem>
+			<telerik:RadTreeViewItem Header="Tennis"/>
+			<telerik:RadTreeViewItem Header="Cycling"/>
+		</telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+{{endregion}}
+		
+#### __Figure 2: RadTreeView nested items example__
+![](images/radtreeview-getting-started-02.png)	
 
->tip Read more about [Expanding and Collapsing Items]({%slug radtreeview-feautres-treeviewitem-expanding-and-collapsing-items%})
+## Data Binding RadTreeView
 
-## Apply a theme
-{% if site.site_name == 'Silverlight' %}
-Add a reference to __Telerik.Windows.Themes.Vista.dll__.
-{% endif %}
+The __RadTreeView__ control allows you to data bind it to a collection of business objects and define their visual appearance. You can read more on how to bind __RadTreeView__ in the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) help article. You can also take a look at the other articles from the [Populating with Data]({%slug radtreeview-populating-with-data-overview%}) section of the help where you can find information about binding to an XML file and different services. There you can also find information about __HierarchicalDataTemplate__, which is used to define the look and feel of the __RadTreeViewItems__ in a data binding scenario.
 
-Switch the document view to __XAML View__ by choosing __View -> Active Document View -> XAML View__ (or just press F11).
+## Enable Drag and Drop
 
-Find the declaration of the __RadTreeView__ and add the following attribute:
+__RadTreeView__ supports drag and drop functionality. To enable this feature, you only need to set the __IsDragDropEnabled__ property to __True__.
 
-#### __XAML__
+#### __[XAML] Example 5: IsDragDropEnabled setting__
+{{region radtreeview-getting-started_05}}
+	<telerik:RadTreeView IsDragDropEnabled="True">
+{{endregion}} 
 
-{{region radtreeview-getting-started_5}}
-	telerik:StyleManager.Theme="Vista"
-	{{endregion}}
-
-Start the application.
-
-You should see __RadTreeView__ with __Vista__ theme applied.
-
-![](images/RadTreeView_GettingStarted_170.png)
-
-#### __XAML__
-
-{{region radtreeview-getting-started_6}}
-	<telerik:RadTreeView Margin="8" IsDragDropEnabled="True" 
-	        SelectionMode="Multiple" IsSingleExpandPath="True"
-	        telerik:StyleManager.Theme="Vista">
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis"/>
-	        <telerik:RadTreeViewItem Header="Cycling"/>
-	    </telerik:RadTreeViewItem>
+__Example 6__ demonstrates a runnable code snippet using __RadTreeView__ with its drag and drop enabled.
+  
+#### __[XAML] Example 6: Drag and drop set up__
+{{region radtreeview-getting-started_07}}
+	<telerik:RadTreeView IsDragDropEnabled="True">
+		<telerik:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
+			<telerik:RadTreeViewItem Header="Football" IsExpanded="True">
+				<telerik:RadTreeViewItem Header="Futsal"/>
+				<telerik:RadTreeViewItem Header="Soccer"/>
+			</telerik:RadTreeViewItem>
+			<telerik:RadTreeViewItem Header="Tennis"/>
+			<telerik:RadTreeViewItem Header="Cycling"/>
+		</telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
+{{endregion}}
+
+#### __Figure 3: Drag and drop visual example__
+![](images/radtreeview-getting-started-03.png)	
+
+>tip You can find out more about the drag and drop support in the [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}) help article.
+
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: Telerik.Windows.Themes.Windows8.dll). You see the different themes applied in the Theming examples from our demos application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For __RadTreeView__, you will need to merge the following resources:
+	* __Telerik.Windows.Controls.xaml__
+	* __Telerik.Windows.Controls.Navigation.xaml__
+
+	__Example 8__ demonstrates where you can merge the ResourceDictionaries so they are applied globally for the entire application.
+	
+	#### __[XAML] Example 8: Merge the ResourceDictionaries__  
+	{{region radtreeview-getting-started_08}}
+		<Application x:Class="MyTestApplication.App"
+				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				 StartupUri="MainWindow.xaml">
+			<Application.Resources>
+				<ResourceDictionary>
+					<ResourceDictionary.MergedDictionaries>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml" />
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
+					</ResourceDictionary.MergedDictionaries>
+				</ResourceDictionary>
+			</Application.Resources>
+		</Application>
 	{{endregion}}
 
-If you need to further customize the appearance of your __RadTreeView__ controls, check out the following topics:
-
-* [Styles and Templates - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
-* [Templates Structure]({%slug radtreeview-styles-and-templates-tesmplates-structure%})
-
+__Figure 4__ shows __RadTreeView__ with Windows8 theme applied.
+	
+#### __Figure 4: RadTreeView with Windows8 theme__
+![](images/radtreeview-getting-started-04.png)
+	
 # See Also
  * [Overview]({%slug radtreeview-overview2%})
  * [Visual Structure]({%slug radtreeview-visual-structure%})
+ * [Expanding and Collapsing Items]({%slug radtreeview-feautres-treeviewitem-expanding-and-collapsing-items%})
+ * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
+ * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
  * [Populating with Data - Overview]({%slug radtreeview-populating-with-data-overview%})
- * [Styles and Templates - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
+ * [Styles and Templates - Overview]({%slug radtreeview-styling-and-appearance-overview2%}) 
  * [Events - Overview]({%slug radtreeview-events-overview%})

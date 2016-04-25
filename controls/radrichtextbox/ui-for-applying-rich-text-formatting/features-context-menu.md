@@ -5,7 +5,7 @@ description: Context Menu
 slug: radrichtextbox-features-context-menu
 tags: context,menu
 published: True
-position: 2
+position: 3
 ---
 
 # Context Menu

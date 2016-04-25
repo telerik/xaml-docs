@@ -85,7 +85,7 @@ In this way it would be possible to create some UI that contains all bookmarks. 
 {{region radpdfviewer-document-model-annotations_3}}
 	private void GoToDestination(Destination destination) 
 	{ 
-	    this.viewer.GoToDestination(destination); 
+	    this.pdfViewer.GoToDestination(destination); 
 	}
 {{endregion}}
 
@@ -94,10 +94,10 @@ This scenario is additionally extended by the option to create your own Destinat
 #### __C#__
 
 {{region radpdfviewer-document-model-annotations_4}}
-	Destination myDestination = new Destination(this.pdfViewer.Document.Pages[2], 0, 0);
+	Destination myDestination = new Location() { Page = this.pdfViewer.Document.Pages[2], Left = 0, Top = 0, Zoom = 1 };
 {{endregion}}
 
-If you invoke the method GoToDestination with parameter myDestination, this will scroll the document to bring the third page (indexing starts at 0) into view. The same scenario can be implemented using the GoToPage(int pageNumber) when pageNumber = 2, but with Destinations you have finer control in terms of the horizontal and vertical offsets.
+If you invoke the method GoToDestination with parameter *myDestination*, this will scroll the document to bring the third page (indexing starts at 0) into view. The same scenario can be implemented using the GoToPage(int pageNumber) when pageNumber = 2, but with Destinations you have finer control in terms of the horizontal and vertical offsets.
         	 
 
 # See Also

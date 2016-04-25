@@ -22,7 +22,7 @@ If you want to use __RadSpellChecker__ with another culture, you need to write y
 
 
 
-##__Loading a dictionary through MEF__
+## __Loading a dictionary through MEF__
 
 >As __RadSpellChecker__ instantiates and loads the classes implementing __RadDictionary__ through __MEF__, when you write your class do not forget to mark it with the __[WordDictionaryMetadata("<associatedCulture>")]__ attribute, providing as argument the appropriate culture.
           

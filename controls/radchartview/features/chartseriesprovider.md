@@ -59,7 +59,7 @@ Important properties of __ChartSeriesDescriptor__:
 
 * __TypePath__: A property of type __string__ that gets or sets the path to the property that indicates the series type that needs to be created.            
 
-* __Style__: A property of type __style__ that gets or sets the style that describes the appearance of the series that are to be created. If no __TypePath__ is specified, the TargetType property of the style object is used to generate the desired series.  
+* __Style__: A property of type __Style__ that gets or sets the style that describes the appearance of the series that are to be created. If no __TypePath__ is specified, the TargetType property of the style object is used to generate the desired series.  
 
 * __CollectionIndex__: A property of type __int__ that gets or sets the index within the Source collection of data (view models) for which the current descriptor should be used. This property is useful when, for example, a BarSeries needs to be generated for the first data entry and LineSeries for the rest of the entries.            
 

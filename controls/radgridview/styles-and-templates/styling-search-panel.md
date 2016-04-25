@@ -51,8 +51,7 @@ By default, the symbols matching the searching criteria are colored in red. This
 
 ![](images/search-panel-highlight-color.png)
 
->The examples show the approach used for the __standard binaries__. In case you have referenced the NoXaml binaries, you need to set the __BasedOn__ property of the respective __Style__
-
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __HighlightTextBlockStyle__.
 
 # See Also
 

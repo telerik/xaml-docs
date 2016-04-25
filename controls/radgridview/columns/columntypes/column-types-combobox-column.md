@@ -22,17 +22,21 @@ Here is a list of the most important properties:
 
 * __DisplayMemberPath__ - member path to display. It points to a field in the  assigned__GridViewComboBoxColumn.ItemsSource__.
 
-* __SelectedValueMemberPath__ - used in conjunction with __DisplayMemberPath__ in the process of translation of a value to display as content. It also tells the __RadComboBox__ editor which property to use as a Value when the user makes selection.
+* __SelectedValueMemberPath__ - used in conjunction with __DisplayMemberPath__ in the process of translation of a value to display as content. It also tells the __RadComboBox__ editor which property to use as a Value when the user makes selection. 
 
 * __IsComboBoxEditable__ - allows you to configure whether the editor (__RadComboBox__) is editable.
 
->importantThe type of properties configured as DataMemberBinding and SelectedValueMembetPath should be the same.
+* __IsLightweightModeEnabled__ - introduced in __R2 2016__. Its default value is __False__. When set to __True__, the new lightened lookup logic is triggered, thus the performance of GridViewComboBoxColumn is significantly increased. *If the column`s DataMemberBinding is a nested property, the value of IsLightweightModeEnabled is not respected*. 
+
+>importantThe __type__ of the properties configured as __DataMemberBinding__ and __SelectedValueMemberPath__ should be the same.
 
 >Since __Q3 2012 SP__ typing a letter in __GridViewComboBoxColumn__ will point to the first item starting with the same letter.
         
 The following example assumes that you have data as shown in __Figure 1__:
 
-__Figure 1.__: ![](images/RadGridView_ColumnTypes_1.png)
+#### __Figure 1: Sample data structure of RadGridView:__
+
+ ![](images/RadGridView_ColumnTypes_1.png)
 
 #### __[XAML] Example 1: Define GridViewComboBoxColumn.__
 
@@ -100,6 +104,7 @@ __Figure 1.__: ![](images/RadGridView_ColumnTypes_1.png)
 
 The application result should be similar to __Figure 2__.:
 
+#### __Figure 2: ComboBoxColumn after setting DisplayMemberPath and SelectedValuePath properties.__
 ![](images/RadGridView_ColumnTypes_2.png)
 
 As illustrated in __Figure 2__ you can map __CountryId__ property of the business object to the respective value in Countries collection via configuring proper __DisplayMemberPath__.
@@ -108,7 +113,9 @@ You can download a runnable project of the previous example from our online SDK 
       
 The next example shows how to use __ItemsSourceBinding__. It allows you to bind the __ItemsSource__ of __RadComboBox__ editor to a collection held by the data item. In this way, you are able to specify different sets of items depending on the entire content of the respective row. The example assumes that you have the data shown in __Figure 3__:
 
-__Figure 3__![](images/RadGridView_ColumnTypes_3.png)
+#### __Figure 3: Sample data structure of RadGridView.__
+
+![](images/RadGridView_ColumnTypes_3.png)
 
 __RadGridView__ binds to a collection of objects representing the teams. The team object exposes a collection containing the current drivers, which is used as source for the editor. As in the previous example, it also exposes a __DriverID__ property that the column will later translate to an appropriate display value. 
 
@@ -120,6 +127,7 @@ __RadGridView__ binds to a collection of objects representing the teams. The tea
                                     DataMemberBinding="{Binding DriverID}"
                                     ItemsSourceBinding="{Binding CurrentDrivers}"
                                     SelectedValueMemberPath="ID"
+									IsLightWeightModeEnabled="True"
                                     DisplayMemberPath="Name" />
 {{endregion}}
 
@@ -127,9 +135,15 @@ __RadGridView__ binds to a collection of objects representing the teams. The tea
 
 __Figure 4.__ and __Figure 5.__ show the result of configuring __ItemsSourceBinding__ property.
 
-__Figure 4.__![](images/RadGridView_ColumnTypes_4.png)
+#### __Figure 4. Appearance after setting ItemsSourceBinding property.__
 
-__Figure 5.__![](images/RadGridView_ColumnTypes_5.png)
+![](images/RadGridView_ColumnTypes_4.png)
+
+
+#### __Figure 5. Appearance after setting ItemsSourceBinding property.__
+
+
+![](images/RadGridView_ColumnTypes_5.png)
 
 >When using __ItemsSourceBinding__ property, the values displayed in the column’s filtering control will be the values corresponding to the __DataMemberBinding__ (0, 1, 2). If you want to have the displayed ones (S.Vettel, K. Raikkonen, M. Webber), then you need to set __GridViewComboBoxColumn__.[FilterMemberPath]({%slug gridview-filtering-basic%}) to a property containing the values used as __DisplayMemberPath__.
         

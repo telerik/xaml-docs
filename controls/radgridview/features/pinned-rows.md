@@ -72,8 +72,8 @@ Another way to allow your users to pin rows with the click of a button is to def
 
 ## Grouping
 
-Pinned items do not participate in grouping. Once the user groups, the pinned items are placed back to the **Items** collection. On ungrouping, they reappear as pinned.
-<Comment: How does the user group?>
+Pinned items do not participate in grouping. Once the user applies grouping to RadGridView, either by [dragging a column header]({%slug gridview-grouping-basics%}) to the **GridViewGroupPanel**, or [programmatically]({%slug gridview-programmatic-grouping%}), the pinned items are placed back to the **Items** collection. On ungrouping, they reappear as pinned.
+
 ## Sorting
 
 Sorting a column results in sorting the items in the pinned panel as well - only compared to each other.

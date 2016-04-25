@@ -52,7 +52,7 @@ You can use the definition from __Example 1__ to display a RangeSeries:
 ## Properties
 
 The following list represents the most important properties of the RangeSeries.
-<Comment: Why are these properties listed in this order? I suggest you put this bullet list in alphabetic order. If the properties are in another order, like most important to least important, please modify the previous sentence to say that.>
+
 * __CategoryBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.
 * __HighBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the high value of the data point.
 * __LowBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the low value of the data point.
@@ -66,7 +66,7 @@ The following list represents the most important properties of the RangeSeries.
 	* __LowPoints__: The stroke will be applied on the Low value of the data points.
 	* __HighPoints__: The stroke will be applied on the High value of the data points.
 	* __LowAndHighPoints__: The stroke will be applied on the Low and High values of the data points.
-<Comment: What happens if someone sets LowPoints, HighPoints and LowAndHighPoints?>
+
 ## Data Binding
 
 You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properties of the RangeSeries to bind the DataPoints’ properties to the properties from your view models.

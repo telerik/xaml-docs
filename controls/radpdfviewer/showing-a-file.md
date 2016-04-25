@@ -19,7 +19,7 @@ This topic discusses different ways of loading a document in __RadPdfViewer__ an
 
 * [Binding the Document Source](#binding-the-documentsource-of-radpdfviewer)
 
-* [Specifying a Reading Mode](#specifying-a-reading-mode)
+* [Specifying Reading Mode](#specifying-reading-mode)
 
 
 ## Showing a PDF file
@@ -171,32 +171,22 @@ Notice that regardless of the type of the property you choose to bind the Docume
 {{endregion}}
 
 
-## Specifying a Reading Mode
+## Specifying Reading Mode
 
-Starting from R2 2016, the way the documents are loaded can be controlled. You can choose between loading the whole document in one go (as done up to now) and loading it page by page. The second option means that it is no longer needed to parse the entire document in order to show it.
+Starting from R2 2016, you can control the way the documents are loaded in RadPdfViewer. You can choose between loading the whole document in one go (as done in versions prior R2 2016) and loading it page by page. The second option means that it is no longer needed to parse the entire document in order to show it.
         
 
 You can control how the document is loaded by setting the __PdfViewer.DefaultFormatProviderSettings__ property. This property is used when the OpenPdfDocumentCommand is triggered to open a PDF file and could be set to one of the settings exposed by the [FormatProviderSettings class](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_FormatProviderSettings.htm):
 
 * __ReadAllAtOnce__: This value is used by default. When ReadAllAtOnce is applied, the document stream will be copied into a memory stream, which is used by PdfViewer. When you are loading a document through an URI in combination with ReadAllAtOnce, the stream to the resource will be closed as soon as it is copied to the memory. 
 
-* __ReadOnDemand__: Each page of the document is loaded dynamically when necessary (to show in the PdfViewer, to print, etc.)  and it is unloaded once it becomes invisible. The stream that holds the document stays opened while the document is used in PdfViewer.
+* __ReadOnDemand__: Each page of the document is loaded dynamically when necessary (to be shown in the PdfViewer, printed, etc.)  and it is unloaded once it becomes invisible. The stream that holds the document stays opened while the document is used in PdfViewer.
             
 
 #### __[C#] Example 10: Setting DefaultFormatProviderSettings__
 
-{{region radpdfviewer-showing-a-file_5}}
-	this.viewer.DefaultFormatProviderSettings = FormatProviderSettings.ReadAllAtOnce;
-	this.viewer.DefaultFormatProviderSettings = FormatProviderSettings.ReadOnDemand;
-{{endregion}}
-
-
-
-#### __[XAML] Example 10: Setting DefaultFormatProviderSettings__
-
-{{region radpdfviewer-showing-a-file_6}}
-	DefaultFormatProviderSettings="ReadAllAtOnce"
-	DefaultFormatProviderSettings="ReadOnDemand"
+{{region radpdfviewer-showing-a-file_10}}
+	this.pdfViewer.DefaultFormatProviderSettings = FormatProviderSettings.ReadOnDemand;
 {{endregion}}
 
 
@@ -208,18 +198,18 @@ If you want to change this behavior to read the document pages when needed, you 
 
 #### __[C#] Example 11: Setting FormatProviderSettings__
 
-{{region radpdfviewer-showing-a-file_4}}
+{{region radpdfviewer-showing-a-file_11}}
 	PdfDocumentSource source = new PdfDocumentSource(stream/uri, FormatProviderSettings.ReadOnDemand);      
 {{endregion}}
 
 
 
-When you bind the __DocumentSource__ property of __RadPdfViewer__ and you want to control the way bounded documents are loaded, you can pass the desired __FormatProviderSettings__ as a ConverterParameter.
+When you bind the __DocumentSource__ property of __RadPdfViewer__ and want to control the way bound documents are loaded, you can pass the desired __FormatProviderSettings__ as a ConverterParameter.
             
 
 #### __[XAML] Example 11: Setting FormatProviderSettings__
 
-{{region radpdfviewer-showing-a-file_7}}
+{{region radpdfviewer-showing-a-file_12}}
 	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Uri, Converter={StaticResource PdfDocumentSourceValueConverter}, ConverterParameter=ReadOnDemand}" />
 {{endregion}}
 

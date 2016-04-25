@@ -343,6 +343,8 @@ navigation:
         title: RadHeatMap
     controls/radhtmlplaceholder:
         title: RadHtmlPlaceHolder
+    controls/radlayoutcontrol:
+        title: RadLayoutControl
     controls/radlegend:
         title: RadLegend
     controls/radmap:

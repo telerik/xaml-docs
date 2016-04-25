@@ -10,11 +10,11 @@ position: 2
 
 # Save/Load Layout Events
 
-With R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the ability to change the default save/load layout mechanism of __RadDocking__ is now available. This is now possible using the __ElementLayoutSaving__ (also available with R2 2016), __ElementLoading__ and __CustomElementLoading__ events of the __RadDocking__ control. 
+With R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, you can now change the default save/load layout mechanism of __RadDocking__. This is now possible using the __ElementLayoutSaving__ (also available with R2 2016), __ElementLoading__ and __CustomElementLoading__ events of the __RadDocking__ control. 
 
-Using the __ElementLayoutSaving__ and __ElementLoading__ events you could decide which exact properties of the Pane, PaneGroup, SplitContainer or the Docking control to be saved or loaded. While using the __CustomElementLoading__ event you are now able to easily load custom docking elements that derive from __RadPane__, __RadPaneGroup__ or __RadSplitContainer__. Inside the __ElementLayoutSaving__ you could also easily exclude a specific __RadPane__, __RadPaneGroup__ or __RadSplitContainer__ from saving.
+Using the __ElementLayoutSaving__ and __ElementLoading__ events, you could decide which exact properties of the Pane, PaneGroup, SplitContainer or the Docking control to be saved or loaded. While using the __CustomElementLoading__ event, you are now able to easily load custom docking elements that derive from __RadPane__, __RadPaneGroup__ or __RadSplitContainer__. Inside the __ElementLayoutSaving__ you could also easily exclude a specific __RadPane__, __RadPaneGroup__ or __RadSplitContainer__ from saving.
 
-In this article we will go through all these events:
+In this article, we will go through all these events:
 
 * [Saving properties](#saving-properties)
 
@@ -22,9 +22,9 @@ In this article we will go through all these events:
 
 * [Loading of custom elements](#loading-of-custom-elements)
 
-* [ElementLayoutCleaning] (#elementlayoutcleaning)
+* [ElementLayoutCleaning](#elementlayoutcleaning)
 
-For the current article we will use the declaration of RadDocking shown in __Example 1__:
+For the current article, we will use the declaration of RadDocking shown in __Example 1__.
 
 #### __[XAML] Example 1: RadDocking declaration__
 
@@ -74,14 +74,14 @@ If you run the application now, you will see a docking with some SplitContainers
 
 ![](images/RadDocking_Features_CustomSaveLoadLayout_1.png)
 
-## Saving properties
+## Saving Properties
 
-By handling the __ElementLayoutSaving__ event of __RadDocking__ you could save any desired property of the element (Pane, PaneGroup, SplitContainer or the Docking control) that is currently saving or exclude that element from saving.  This is possible using the __ElementProperties__ dictionary and the __Cancel__ property of the __LayoutSerializationSavingEventArgs__ of the event. 
+By handling the __ElementLayoutSaving__ event of __RadDocking__, you could save any desired property of the element (Pane, PaneGroup, SplitContainer or the Docking control) that is currently saving or exclude that element from saving. This is possible using the __ElementProperties__ dictionary and the __Cancel__ property of the __LayoutSerializationSavingEventArgs__ of the event. 
 
->The event is only called for the elements that have a set __SerializationTag__. However, you have the ability to "say" whether this event to be fired or not, when the __SerializationTag__ is __not specified__. You should set the second overload of the __LoadLayout__ and __SaveLayout__ methods to true.
+>The event is only called for the elements that have a set __SerializationTag__. However, you have the ability to "say" whether this event should be fired or not, when the __SerializationTag__ is __not specified__. You should set the second overload of the __LoadLayout__ and __SaveLayout__ methods to __True__.
 
 The __ElementProperties__ property is of type Dictionary. The value and its associated key should be of type string - the key is the name of the property you want to save. 
-__Example 2__ demonstrates how you could easily add the CanFloat property of a Pane to the dictionary you want to save in the XML:
+__Example 2__ demonstrates how you could easily add the CanFloat property of a Pane to the dictionary you want to save in the XML.
 
 #### __[C#] Example 2: Adding properties to ElementProperties__
 
@@ -97,9 +97,9 @@ __Example 2__ demonstrates how you could easily add the CanFloat property of a P
 	}
 {{endregion}}
 
-If you want to prevent some of the already saved properties included in the dictionary not to be saved again you could just remove them from it. 
+If you want to prevent some of the already saved properties included in the dictionary from being saved again, you could just remove them from it. 
 
-__Example 3__ demonstrates how you could exclude the Header of a pane from saving:
+__Example 3__ demonstrates how you could exclude the Header of a pane from saving.
 
 #### __[C#] Example 3: Prevent properties from saving__
 
@@ -119,7 +119,7 @@ __Example 3__ demonstrates how you could exclude the Header of a pane from savin
 	}
 {{endregion}}
 
-__Example 4__ shows the generated XML after the execution of the code of __Example 3__ - notice the Header of the "PaneTop1" was not saved, but the __CanFloat__ property was:
+__Example 4__ shows the generated XML after the execution of the code of __Example 3__ - notice the Header of the "PaneTop1" was not saved, but the __CanFloat__ property was.
 
 #### __[XAML] Example 4: Generated XML after saving__
 
@@ -163,9 +163,9 @@ __Example 4__ shows the generated XML after the execution of the code of __Examp
 	</RadDocking>
 {{endregion}}
 
-Using the __Cancel__ property of the __LayoutSerializationSavingEventArgs__ you could easily exclude a specific __RadPane__, __RadSplitContainer__ or __RadPaneGroup__ from saving. In order to do so the __Cancel__ property should be set to True. 
+Using the __Cancel__ property of the __LayoutSerializationSavingEventArgs__, you could easily exclude a specific __RadPane__, __RadSplitContainer__ or __RadPaneGroup__ from saving. In order to do so, the __Cancel__ property should be set to __True__. 
 
-__Example 5__ demonstrates how to exclude a specific RadPane and RadPaneGroup from saving:
+__Example 5__ demonstrates how to exclude a specific RadPane and RadPaneGroup from saving.
 
 #### __[C#] Example 5: Exclude from saving__
 
@@ -180,7 +180,7 @@ __Example 5__ demonstrates how to exclude a specific RadPane and RadPaneGroup fr
 	}
 {{endregion}}
 
-The generated XML file after executing the code in __Example 5__ is shown in __Example 6__:
+The generated XML file after executing the code in __Example 5__ is shown in __Example 6__.
 
 #### __[XAML] Example 6: Generated XML after saving__
 
@@ -213,19 +213,19 @@ The generated XML file after executing the code in __Example 5__ is shown in __E
 	</RadDocking>
 {{endregion}}
 
-__Figure 2__ visualized how RadDocking looks after loading the saved layout:
+__Figure 2__ visualizes how RadDocking looks after loading the saved layout.
 
 #### __Figure 2: RadDocking after execution of Example 5__
 
 ![](images/RadDocking_Features_CustomSaveLoadLayout_2.png)
 
-## Loading properties
+## Loading Properties
 
-In order to prevent a specific property from loading the __ElementLoading__ event needs to be handled. By using the __ElementProperties__ dictionary (that contains all saved properties) you could simply remove the properties that should not be loaded. 
+In order to prevent a specific property from loading, the __ElementLoading__ event needs to be handled. By using the __ElementProperties__ dictionary (that contains all saved properties) you could simply remove the properties that should not be loaded. 
 
->The event is only called for the elements that have a set __SerializationTag__. However, you have the ability to "say" whether this event to be fired or not, when the __SerializationTag__ is __not specified__. You should set the second overload of the __LoadLayout__ and __SaveLayout__ methods to true.
+>The event is only called for the elements that have a set __SerializationTag__. However, you have the ability to "say" whether this event should be fired or not, when the __SerializationTag__ is __not specified__. You should set the second overload of the __LoadLayout__ and __SaveLayout__ methods to __True__.
 
-__Example 7__ demonstrates how to prevent the Header property of the left docked Panes from loading:
+__Example 7__ demonstrates how to prevent the Header property of the left docked Panes from loading.
 
 #### __[C#] Example 7: Loading properties__
 
@@ -242,19 +242,19 @@ __Example 7__ demonstrates how to prevent the Header property of the left docked
 	}
 {{endregion}}
 
-In __Figure 3__ you could see how the left docked PaneGroup visualizes after he layout is loaded.
+In __Figure 3__ you can see how the left docked PaneGroup visualizes after the layout is loaded.
 
 #### __Figure 3: RadDocking after execution of Example 7__
 
 ![](images/RadDocking_Features_CustomSaveLoadLayout_3.png)
 
-## Loading of custom elements
+## Loading Custom Elements
 
-In order to load a custom element other that the built-in RadSplitContainer, RadPaneGroup and RadPane instances the __CustomElementLoading__ events needs to be handled. The event will be called when loading the layout and if there is an unknown type of element. All that needs to be done in order the layout to be loaded as expected is to set the AffectedElement with the correct object. 
+In order to load a custom element other than the built-in RadSplitContainer, RadPaneGroup and RadPane instances, the __CustomElementLoading__ event needs to be handled. The event will be called when loading the layout and if there is an unknown type of element. All that needs to be done in order for the layout to be loaded as expected is to set the AffectedElement with the correct object. 
 
->The event will be called only for the Panes, PaneGroups and SplitContainers that does not have a set __SerializationTag__. Otherwise the __ElementLoading__ will be called.
+>The event will be called only for the Panes, PaneGroups and SplitContainers that do not have a set __SerializationTag__. Otherwise, the __ElementLoading__ will be called.
 
-__Example 7__ demonstrates how to load a custom pane (for example "MyRadPane") that derives from the default RadPane class:
+__Example 7__ demonstrates how to load a custom pane (for example, "MyRadPane") that derives from the default RadPane class.
 
 #### __[C#] Example 6: Custom loading of elements__
 
@@ -270,11 +270,11 @@ __Example 7__ demonstrates how to load a custom pane (for example "MyRadPane") t
 
 ## ElementLayoutCleaning
 
-When the saved layout of RadDocking starts loading the current layout of RadDocking (all RadPanes, RadPaneGroups and RadSplitContainers) is cleaned. In order to prevent an element from being cleaned the __ElementLayoutCleaning__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) event could be handled. Inside it by using the __Cancel__ property of the __LayoutSerializationCleaningEventArgs__ a specific element of __RadDocking__ could be prevented from being cleaned.
+When the saved layout of RadDocking starts loading, the current layout of RadDocking (all RadPanes, RadPaneGroups and RadSplitContainers) is cleaned. In order to prevent an element from being cleaned, the __ElementLayoutCleaning__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) event could be handled. Inside it, by using the __Cancel__ property of the __LayoutSerializationCleaningEventArgs__, a specific element of __RadDocking__ could be prevented from being cleaned.
 
 >The event does not get called for the __RadDocking__ control, but only for its elements - RadPane, RadPaneGroup and RadSplitContainer.
 
-__Example 8__ demonstrates how to prevent a PaneGroup from being cleaned when the layout is about to be loaded:
+__Example 8__ demonstrates how to prevent a PaneGroup from being cleaned when the layout is about to be loaded.
 
 #### __[C#] Example 8: Prevent element from cleaning__
 

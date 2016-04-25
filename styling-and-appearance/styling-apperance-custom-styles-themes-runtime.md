@@ -5,14 +5,10 @@ description: Switching Custom Styles with Themes at Runtime
 slug: styling-apperance-custom-styles-themes-runtime
 tags: switching,custom,styles,with,themes,at,runtime
 published: True
-position: 2
+position: 3
 ---
 
 # Switching Custom Styles with Themes at Runtime
-
-
-
-## 
 
 Setting a theme using  [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you have the option to change the theme of the controls at runtime without recreating the UI. 
 

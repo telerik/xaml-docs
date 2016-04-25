@@ -166,11 +166,10 @@ __Known limitations:__
 * Selection is currently not supported for the merged cells. When selecting a row, all the cells except for the merged one will show as selected.
 
 * Frozen columns are not supported while having merged cells enabled. "Cell merging is not supported when frozen columns are enabled.” is to be thrown.
-                        
-## Styling
 
-You can change the default settings by applying a style targeting the __GridViewMergedCell__ visual element.
-        
-By default the merged content will be centered vertically and left aligned horizontally.You can also set values for different properties like Background, Foreground, etc. For further details and an example, you can check the [Styling a MergedCell]({%slug gridview-styling-mergedcell%}) topic in the documentation.
-For more information on styling RadGridView and its elements, you can refer to the [Styles and Templates]({%slug gridview-stylines-and-templates-overview%}) section.
+## See Also
+
+* [Styling Merged Cells]({%slug gridview-styling-mergedcell%})
+
+* [Styles and Templates]({%slug gridview-stylines-and-templates-overview%})
         

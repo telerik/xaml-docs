@@ -5,7 +5,7 @@ description: Switching Icons at Runtime
 slug: styling-apperance-switching-icons-at-runtime
 tags: switching,themes,icons,at,runtime
 published: True
-position: 3
+position: 4
 ---
 
 # Switching Icons at Runtime

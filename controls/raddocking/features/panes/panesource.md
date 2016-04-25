@@ -127,6 +127,7 @@ GetPaneFromItem	|	Gets the RadPane from the item parameter.
 IsItemItsOwnPaneContainer	|	Determines if the specified item is (or is eligible to be) its own RadPane container.
 RemovePane	|	Removes the Pane from the RadDocking layout. By default clears the Header, Content, DataContext and call RemoveFromParent method.
 
+>With R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} an override for the __CreatePaneForItem__ method that accepts __RadDocking__ instance has been created. Using it you could easily access the instance of __RadDocking__ inside which the Pane has been added to.
 
 The next example demonstrates a common scenario when using the PaneSource property of the control. When populating a docking manager control with collection of panes you would have a predefined layout of PaneGroups which should be populated with the Panes from that collection. In order to achieve the desired behavior you can take advantage of the DockingPanesFactory:
 

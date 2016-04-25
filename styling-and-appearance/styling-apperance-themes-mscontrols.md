@@ -5,7 +5,7 @@ description: Setting a Theme on MS Controls
 slug: styling-apperance-themes-mscontrols
 tags: setting,a,theme,on,ms,controls
 published: True
-position: 8
+position: 9
 ---
 
 # Setting a Theme on MS Controls

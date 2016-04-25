@@ -3,7 +3,7 @@ title: Section
 page_title: Section
 description: Section
 slug: radrichtextbox-features-document-elements-section
-tags: section
+tags: section, column
 published: True
 position: 2
 ---
@@ -96,7 +96,7 @@ Here is a list of these properties:
 		this.editor.ChangeSectionPageOrientation(PageOrientation.Landscape);
 	{{endregion}}
 
-
+* **Columns**: Allows you to arrange the text in a Section into columns. More information on how to use this property is available in the [Section Columns help article]({%slug radrichtextbox-features-section-columns%}).
 
 * __PageSize__: Specifies the size of the pages in the section. The PapertTypeConverter class and the enum PaperTypes provide convenient API and predefined sizes out of the box.
             
@@ -113,7 +113,9 @@ Here is a list of these properties:
 
 
 
+
 ### Add headers and footers to a Section
+
 
 Each section has the following types of Headers and Footers - **Default** (used all through the section), **First** (used on the first page of the section) and **Even** (to be used on every even page; if set, overrides the default header/footer on all even pages of the section). Here is a how you can create a **Header**:
 

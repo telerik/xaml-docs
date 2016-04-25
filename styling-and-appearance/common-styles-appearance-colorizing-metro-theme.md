@@ -155,7 +155,7 @@ Figure 2 shows the result of styling your own interface (Example 2).
 
 All Telerik controls use resources that are linked to one major singleton object that contains the __FontSize__ and __FontFamily__ properties used for both themes. Those properties are public so you can easily modify those theme resources at one single point. The property for the most commonly used FontSize in both themes is named __FontSize__ and the property for most commonly used FontFamily resource is named __FontFamily__ and it is set to Segoe UI. Bigger FontSizes are used for headers and footers while smaller FontSizes are used for complex controls such as __RibbonView__, __Gauge__, etc. 
 
-__Example 3__, shown after the note below, shows these resources and their default values for the  __Windows8Theme__. <Comment: Should this be __Windows8__ theme instead?> You can modify each of them based on your needs.
+__Example 3__, shown after the note below, shows these resources and their default values for the  __Windows8Theme__. You can modify each of them based on your needs.
 {% if site.site_name == 'WPF' %}
 >important When you change these resources, you should ensure that the __Windows8ResourceDictionary__ / __Windows8TouchResourceDictionary__ is merged to App.xaml in the following way:
              

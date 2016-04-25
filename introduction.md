@@ -261,6 +261,8 @@ Telerik UI for WPF features the following controls:
 
 * [ImageEditor]({%slug radimageeditor-overview%})
 
+* [LayoutControl]({%slug radlayoutcontrol-overview%})
+
 * [Legend]({%slug radlegend-overview%})
 
 * [ListBox]({%slug radlistbox-overview%})

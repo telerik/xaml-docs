@@ -57,6 +57,7 @@ RadGauge	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadGridView	|	Telerik.Windows.Controls.GridView, Telerik.Windows.Data, Telerik.Windows.Controls.Input
 RadHeatMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadImageEditor	|	Telerik.Windows.Controls.ImageEditor, Telerik.Windows.Controls.Input
+RadLayoutControl	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Navigation
 RadLegend	|	Telerik.Windows.Controls
 RadListBox	|	Telerik.Windows.Controls
 RadMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data

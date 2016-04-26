@@ -195,6 +195,9 @@ navigation:
     controls/raddocking/theming:
         title: Theming
         position: 95
+    controls/raddocking/features/save-load-layout:
+        title: Save/Load Layout
+        position: 4
     controls/radganttview/features/columns:
         title: Columns
         position: 0	
@@ -343,6 +346,8 @@ navigation:
         title: RadHeatMap
     controls/radhtmlplaceholder:
         title: RadHtmlPlaceHolder
+    controls/radlayoutcontrol:
+        title: RadLayoutControl
     controls/radlegend:
         title: RadLegend
     controls/radmap:

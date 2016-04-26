@@ -5,7 +5,7 @@ description: Editing Images
 slug: radrichtextbox-features-editing-images
 tags: editing,images
 published: True
-position: 1
+position: 2
 ---
 
 # Editing Images

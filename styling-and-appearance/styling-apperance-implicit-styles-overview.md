@@ -10,8 +10,6 @@ position: 0
 
 # Setting a Theme (Using  Implicit Styles)
 
-
-
 UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} gives the option to disable the Telerik StyleManager and to style the controls using implicit styles (e.g. Style without x:Key attribute).  There are a number of benefits of using implicit styles over the Telerik StyleManager. Some are listed below:
       
 

@@ -5,7 +5,7 @@ description: Track Changes
 slug: radrichtextbox-features-track-changes
 tags: track,changes
 published: True
-position: 17
+position: 18
 ---
 
 # Track Changes

@@ -5,7 +5,7 @@ description: Selection Mini Tool Bar
 slug: radrichtextbox-features-selection-mini-toolbar
 tags: selection,mini,tool,bar
 published: True
-position: 3
+position: 4
 ---
 
 # Selection Mini Tool Bar

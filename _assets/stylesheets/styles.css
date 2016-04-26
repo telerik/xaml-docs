@@ -1191,14 +1191,28 @@ header, nav, section, article, aside, footer {
             text-overflow: ellipsis;				
         }	
 		
+#kendoDiv{
+	margin-bottom:10px;
+	border-color:#e0e0e0;
+	width: 100%;
+}
+
+#kendoDivSL{
+	margin-bottom:10px;	
+	border-color:#e0e0e0;
+	width: 100%;
+}
+		
 #kendoDiv .detailsDIV
 {
-    color: #9da2a4!important;
+	float:left;
+    color: #E0E0E0!important;	
 }
 
 #kendoDivSL .detailsDIV
 {
-    color: #9da2a4!important;
+	float:left;
+    color: #E0E0E0!important;
 }
 		
 #kendoDiv p {
@@ -1231,10 +1245,14 @@ header, nav, section, article, aside, footer {
 
 #kendoDiv .k-grid-toolbar{
       padding:0px;
+	  border-color:#E0E0E0;
+	  margin-bottom:-1px;
 }
 
 #kendoDivSL .k-grid-toolbar{
       padding:0px;
+	  border-color:#E0E0E0;
+	  margin-bottom:-1px;
 }
 
 #kendoDiv table th {
@@ -1302,7 +1320,7 @@ header, nav, section, article, aside, footer {
   display:table-cell;
   width:27%;
   text-align:center;
-  vertical-align: center;
+  vertical-align: middle;
   color: #9da2a4!important;
 }
 
@@ -1310,7 +1328,7 @@ header, nav, section, article, aside, footer {
   display:table-cell;
   width:27%;
   text-align:center;
-  vertical-align: center;
+  vertical-align: middle;
   color: #9da2a4!important;
 }
 
@@ -1344,16 +1362,24 @@ header, nav, section, article, aside, footer {
   overflow: hidden;
 }
 
+#innerDiv{
+	margin-top:-20px;
+}
+
 #kendoDiv #searchBox {
   display:table-cell;
   height:40px;
-  width:96%;
+  width:97%;
+  border: 1px solid;
+  border-color: #e0e0e0;
 }
 
 #kendoDivSL #searchBox {
   display:table-cell;
   height:40px;
-  width:96%;
+  width:97%;
+  border: 1px solid;
+  border-color: #e0e0e0;
 }
 
 #kendoDiv .k-grid .k-state-selected { background: #F5F6F6; }
@@ -1361,11 +1387,26 @@ header, nav, section, article, aside, footer {
 
 .detailsDIV tbody  {
     cursor: pointer;
+} 
+
+.detailsDIV  
+.k-grid-header table,
+.detailsDIV  
+.k-grid-content table,
+.detailsDIV  
+.k-grid-footer table,
+.detailsDIV  
+.k-grid-content-locked > table {
+    table-layout:auto;
+} 
+
+.readmeDiv p {
+	max-width: 500px;
+	margin: 0px 0px 0px 40px ;
 }
-      
-#searchBox {
-  height: 60px;
-  width: 100%;
+
+.readmeDiv b {
+	margin: 0px 0px 0px 40px ;
 }
 
 .k-icon.k-plus, 
@@ -1380,7 +1421,7 @@ header, nav, section, article, aside, footer {
 }
 
  .detailsDIV table td {
-  padding: 4px 0px 4px 16px!important;
+  padding: 4px 16px 4px 16px!important;
 }
 
 /* END Kendo Grid Nova Theme CSS*/

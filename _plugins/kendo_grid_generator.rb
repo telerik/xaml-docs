@@ -12,10 +12,9 @@ module Reading
 			wpfIndex = content.index(kendoGridKeyWPF)
 			
 			htmlWPF = "<script type='text/x-kendo-template' id='template'>
-					<div><div class='detailsDIV' style='float:left; width:30%'></div><div style='float:right; width:60%' class='readmeDiv'></div></div>
-				</script><script type='text/x-kendo-template' id='toolBarTemplate'><div class='toolbar'><label class='category-label' for='category'>Search Examples by Key Words</label><input type='search' id='searchBox' oninput='onUserInput()'/></div></script><div><div class='kendoDiv' id='kendoDiv' style='float:left;'></div>
-				<h4 id='heading'></h4>
-				<div><pre><code id='codeBlock'></code></pre></div></div>"
+					<div id='innerDiv'><div class='detailsDIV'></div><div class='readmeDiv' style='display:inline-block;'></div></div>
+				</script><script type='text/x-kendo-template' id='toolBarTemplate'><div class='toolbar'><label class='category-label' for='category'>Search Examples by Key Words</label><input type='text' id='searchBox' onInput='onUserInput()'/></div></script><div><div class='kendoDiv' id='kendoDiv' style='float:left;'></div>
+				<h4 id='heading'></h4><pre><code id='codeBlock'></code></pre></div>"
 			
 			if (wpfIndex)
 				content[wpfIndex..wpfIndex + 11] = htmlWPF
@@ -25,10 +24,9 @@ module Reading
 			slIndex = content.index(kendoGridKeySL)
 			
 			htmlSL = "<script type='text/x-kendo-template' id='template'>
-					<div><div class='detailsDIV' style='float:left; width:30%'></div><div style='float:right; width:60%' class='readmeDiv'></div></div>
-				</script><script type='text/x-kendo-template' id='toolBarTemplate'><div class='toolbar'><label class='category-label' for='category'>Search Examples by Key Words</label><input type='search' id='searchBox' oninput='onUserInputSL()'/></div></script><div><div class='kendoDivSL' id='kendoDivSL' style='float:left;'></div>
-				<h4 id='heading'></h4>
-				<div><pre><code id='codeBlock'></code></pre></div></div>"
+					<div id='innerDiv'><div class='detailsDIV'></div><div class='readmeDiv' style='display:inline-block;'></div></div>
+				</script><script type='text/x-kendo-template' id='toolBarTemplate'><div class='toolbar'><label class='category-label' for='category'>Search Examples by Key Words</label><input type='text' id='searchBox' onInput='onUserInputSL()'/></div></script><div><div class='kendoDivSL' id='kendoDivSL' style='float:left;'></div>
+				<h4 id='heading'></h4><pre><code id='codeBlock'></code></pre></div>"
 			
 			if (slIndex)
 				content[slIndex..slIndex + 13] = htmlSL

@@ -10,11 +10,11 @@ position: 2
 
 # Orientation
 
-The __RadLayoutControl__ and __LayoutControlGroup__ components are ordering their children with a horizontal orientation by default. You can change this and arrange the child items in a vertical order by setting the control's __Orientation__ property to __Vertical__. 
+__RadLayoutControl__ and __LayoutControlGroup__ are ordering their children with a horizontal orientation by default. You can change this and arrange the child items in a vertical order by setting the control's __Orientation__ property to Vertical. 
 
 The property is an enumeration of type __System.Windows.Controls.Orientation__ and exposes the following values:
-* __Horizontal__: The layout should be oriented horizontally.
-* __Vertical__: The layout should be oriented vertically.
+* __Horizontal__: The layout will be oriented horizontally.
+* __Vertical__: The layout will be oriented vertically.
 
 #### __[XAML] Example 1: Setting the Orientation property of RadLayoutControl__
 	<telerik:RadLayoutControl Orientation="Vertical"/>

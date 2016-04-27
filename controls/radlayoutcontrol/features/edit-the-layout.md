@@ -17,13 +17,17 @@ position: 3
 
 ## Overview 
 
-__RadLayoutControl__ supports rerranging and editing the layout at runtime. You can change the position, alignment and size of each LayoutControlGroup or UIElement that is direct child of a group or the control itself. Also, each group or UIElement can be removed from the layout. In order to do that the control should enter edit mode first. This is done by setting the __IsInEditMode__ property of __RadLayoutControl__ to __True__.
+__RadLayoutControl__ supports rerranging and editing its layout at runtime. You can change the position, alignment and size of each LayoutControlGroup or UIElement that is direct child of a group or the control itself. Also, each group or UIElement can be removed from the layout. In order to do that the control should be in edit mode. This is done by setting the __IsInEditMode__ property of __RadLayoutControl__ to __True__.
 
 #### __[XAML] Example 1: Setting IsInEditMode in XAML__
+{{region layoutcontrol-features-edit-the-layout-01}}
 	<telerik:RadLayoutControl x:Name="layoutControl" IsInEditMode="True" />
+{{endregion}}
 
 #### __[C#] Example 2: Setting IsInEditMode in code__
+{{region layoutcontrol-getting-started-layoutpanel-02}}
 	this.layoutControl.IsInEditMode = true;
+{{endregion}}
 	
 Setting the property to True will allow you to select the visual elements and groups, and drag them around.
 
@@ -38,13 +42,13 @@ The following actions can be executed through the pane:
 
 * __Delete__: The element is removed from the layout control.
 
-* __Select Parent__: The selection is changed to the parent LayoutControlGroup. If there is no parent group, the selection won't be changed.
+* __Select Parent__: The selection is changed to the parent __LayoutControlGroup__. If there is no parent group, the selection won't be changed.
 	
 	#### __Figure 2: Selecting the parent group__
 	![](images/layoutcontrol-features-edit-the-layout-02.png)
 	
 * You can define the __horizontal alignment__ of the selected element. There are the following options:
-	* __Stretch__ (the default value): The element is horizontally stretched in the available space. __Example 1__ demonstrates stretched alignment.
+	* __Stretch__ (the default value): The element is horizontally stretched in the available space. __Example 1__ demonstrates stretch alignment.
 	* __Center__: The element is centered horizontally in the available space.
 	* __Left__: The element is horizontally left aligned in the available space.
 	* __Right__: The element is horizontally right aligned in the available space.
@@ -53,7 +57,7 @@ The following actions can be executed through the pane:
 	![](images/layoutcontrol-features-edit-the-layout-03.png)
 		
 * You can define the __vertical alignment__ of the selected element. There are the following options:
-	* __Stretch__ (the default value): The element is vertically stretched in the available space. __Example 1__ demonstrates stretched alignment.
+	* __Stretch__ (the default value): The element is vertically stretched in the available space. __Example 1__ demonstrates stretch alignment.
 	* __Center__: The element is centered vertically in the available space.
 	* __Top__: The element is vertically left aligned in the available space.
 	* __Bottom__: The element is vertically right aligned in the available space.
@@ -69,9 +73,9 @@ The following actions can be executed through the pane:
 
 ## Drag and Drop
 
-The drag and drop feature of the control can be used to rearrange the elements in the layout. When an item is selected you can drag and drop it on another position. The allowed positions where the dragged item can be dropped are displayed with the __LayoutControlDropIndicator__ element.
+The drag and drop feature of the control gives you the ability to rearrange the elements in the layout. When an item is selected you can drag and drop it over another position. The allowed positions where the dragged item can be dropped are displayed with the [LayoutControlDropIndicator]({%slug radlayoutcontrol-visual-structure%}) element.
 
-#### __Figure 5: Dragging LayoutControlGroup triggers the logic that displays the drop indicators.__
+#### __Figure 5: Dragging an element triggers the logic that displays the drop indicators.__
 ![](images/layoutcontrol-features-edit-the-layout-05.png)
 
 > Depending on the drop position the layout control can change a panel's orientation or include additional layout groups.
@@ -83,7 +87,7 @@ The items in the layout control can be resized by dragging their resize handles 
 #### __Figure 6: Resizing__
 ![](images/layoutcontrol-features-edit-the-layout-06.png)
 
-Setting the Height or Width of the selected element (UIElement or LayoutControlGroup) will also resize it.
+Setting the __Height__ and __Width__ of the selected element (UIElement or LayoutControlGroup) will also resize it.
 
 > The ManipulationPane of the control will always be horizontally aligned at the center of the selected element.
 
@@ -94,3 +98,4 @@ Setting the Height or Width of the selected element (UIElement or LayoutControlG
 * [Orientation]({%slug radlayoutcontrol-features-orientation%})
 * [Edit the Layout]({%slug radlayoutcontrol-edit-the-layout%})
 * [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%})
+* [Visual Structure]({%slug radlayoutcontrol-visual-structure%})

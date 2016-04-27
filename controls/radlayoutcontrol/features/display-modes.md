@@ -10,7 +10,7 @@ position: 1
 
 # Display Modes
 
-__RadLayoutControl__ supports two display modes that defines how the LayoutControlGroup item should look. The mode is determined by the __DisplayMode__ property of the __LayoutControlGroup__ component. The property is an enumeration of type __LayoutControlGroupDisplayMode__ which exposes the following values:
+__RadLayoutControl__ supports several display modes that defines how the __LayoutControlGroup__ should look. The mode is determined by the __DisplayMode__ property of the __LayoutControlGroup__ component. The property is an enumeration of type __LayoutControlGroupDisplayMode__ which exposes the following values:
 * [LayoutPanel](#layoutpanel) (the default mode)
 * [TabControl](#tabcontrol)
 * [Expander](#expander)
@@ -22,21 +22,21 @@ __RadLayoutControl__ supports two display modes that defines how the LayoutContr
 
 ## LayoutPanel
 
-When the __DisplayMode__ is set to __LayoutPanel__ the items in the group will be displayed in the default layout panel.
+When the __DisplayMode__ is set to __LayoutPanel__ the items in the group will be displayed in the default layout panel. No additional area for the group header will be added.
 
 #### __Figure 1: LayoutPanel__
 ![](images/layoutcontrol-features-display-modes-01.png)
 
 ## TabControl
 
-When the __DisplayMode__ is set to __TabControl__ the items in the group will be displayed in a tab control.
+When the __DisplayMode__ is set to __TabControl__ the items in the group will be displayed in a tab control. An additiona header area is display at the top of the panel. Each child __LayoutControlGroup__ is placed in a new tab item which header content depends on the group's Header property.
 
 #### __Figure 2: TabControl__
 ![](images/layoutcontrol-features-display-modes-02.png)
 
 ## Expander
 
-When the __DisplayMode__ is set to __Expander__ the items in the group will be displayed in an expander.
+When the __DisplayMode__ is set to __Expander__ the items in the group will be displayed in an expander. An additiona header area is display at the top of the panel.
 
 #### __Figure 3: Expander__
 ![](images/layoutcontrol-features-display-modes-03.png)
@@ -51,4 +51,4 @@ You can control the expanding/collapsing of the group though the __IsExpanded__ 
 ## See Also
 * [Overview]({%slug radlayoutcontrol-overview%})
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})
-* [Events]()
+* [LayoutControlGroup]({%slug radlayoutcontrol-layoutcontrolgroup%})

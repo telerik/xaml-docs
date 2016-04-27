@@ -19,6 +19,8 @@ This tutorial will walk you through the creation of a sample application that co
 * [Enable Edit Mode](#enable-edit-mode)
 * [Code Example](#code-example)
 
+> The figures in the RadLayoutControl help documentation are showing the control with the __Windows8 theme__ applied. You can see how to set a theme in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
 ## Assembly References
 
 In order to use the __RadLayoutControl__ component, you will need to add references to the following assemblies:
@@ -43,7 +45,7 @@ __RadLayoutControl__ doesn't display any content when it is not populated with i
 
 ## Adding Items in the Control
 
-You can add items through the __Items__ collection of RadLayoutControl. The layout component works with UIElements and LayoutControlGroup controls. In other words you can populate it with all visual elements provided by the framework. __Example 2__ demonstrates this.
+You can add items through the __Items__ collection of RadLayoutControl. The layout component works with __LayoutControlGroup__ controls and __UIElements__. In other words you can populate it with all visual elements provided by the framework. __Example 2__ demonstrates this.
 
 #### __[XAML] Example 2: Adding items in the RadLayoutControl.__
 {{region layoutcontrol-getting-started-02}}
@@ -56,10 +58,10 @@ You can add items through the __Items__ collection of RadLayoutControl. The layo
 	</telerik:RadLayoutControl>
 {{endregion}}
 
-#### __Figure 2:__
+#### __Figure 2: RadLayoutControl with few elements added__
 ![](images/layoutcontrol-getting-started-02.png)
 
-> By default the layout control and its groups are ordering their items with horizontal orientation. You can see how to change this in the [Orientation]() help article.
+> By default the layout control and its groups are ordering their items with __horizontal orientation__. You can see how to change this in the [Orientation]({%slug radlayoutcontrol-features-orientation%}) help article.
 
 You can nest LayoutControlGroups into one another which allows you to separate the layout into different groups that can be arraned along with their items.
 
@@ -84,14 +86,14 @@ You can nest LayoutControlGroups into one another which allows you to separate t
 	</telerik:RadLayoutControl>
 {{endregion}}
 
-#### __Figure 3:__
+#### __Figure 3: RadLayoutControl with nested groups__
 ![](images/layoutcontrol-getting-started-03.png)
 
->important RadLayoutControl doesn't support data binding and setting its ItemsSource property will throw an exception.
+>important RadLayoutControl doesn't support data binding and setting its ItemsSource property will throw an exception (NotSupportedException).
 
 ## Display Modes
 
-The LayoutControlGroups support different display modes which can be set up through the DisplayMode property. You can read more about this in the [Display Modes]() help article. Additionally, the [Code Example](#code-example) section of this help article demonstrates the different modes.
+__LayoutControlGroups__ support different display modes which can be set up through the __DisplayMode__ property. You can read more about this in the [Display Modes]({%slug radlayoutcontrol-features-display-modes%}) help article. Additionally, the [Code Example](#code-example) section of this help article demonstrates the different modes.
 
 ## Enable Edit Mode
 
@@ -111,7 +113,7 @@ The control allows you to rearrange its children at runtime. To enable this the 
 
 This section demonstrates a basic layout set up with nested groups and different group display modes.
 
-#### __[XAML] Example 5: Compelete code example__
+#### __[XAML] Example 5: Complete code example__
 {{region layoutcontrol-getting-started-05}}
 	<telerik:RadLayoutControl IsInEditMode="True">
 		<telerik:LayoutControlGroup Orientation="Vertical">

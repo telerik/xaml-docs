@@ -22,6 +22,8 @@ In this topic we will discuss:
 
 ![FilteringControl and FilteringDropDown Template Structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
 
+>tipThe Template Structure] of the controls is also available [here]({%slug radgridview-styles-and-templates-templates-structure%}).
+
 We will now style each of the controls by copying its default style and modifying it.
 
 ## Styling FilteringDropDown
@@ -90,13 +92,13 @@ __GridViewColumn__ exposes the __FilteringControlStyle__ property of type __Styl
 
 You can modify it similarly to the FilteringDropDown style and set it as follows:
 
-{{region gridview-styling-filteringdropdown_2}}
+	{{region gridview-styling-filteringdropdown_2}}
 	<telerik:GridViewDataColumn FilteringControlStyle="{StaticResource FilteringControlStyle}" />
-{{endregion}}
+	{{endregion}}
 
 >You can find the Template Structure of the FilteringControl [here]({%slug radgridview-styles-and-templates-templates-structure%}).
 
-You are also free to create your [Custom Filtering Control](%slug custom-filtering-controls) and craft it as you like.
+You are also free to create your [Custom Filtering Control]({%slug custom-filtering-controls%}) and craft it as you like.
 
 # See Also
 

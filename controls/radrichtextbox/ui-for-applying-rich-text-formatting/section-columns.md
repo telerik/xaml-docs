@@ -24,7 +24,7 @@ With the Section Columns feature, **RadRichTextBox** allows you arrange the text
 
 The Page Layout tab of [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) allows you set different types of section columns.
 
-#### Figure 2: Section columns menu
+#### __Figure 2: Section columns menu__
 ![RadRichTextBox_Features_Section_Columns_03](images/RadRichTextBox_Features_Section_Columns_03.png)
 
 * **One**: Represents a single text column.
@@ -37,14 +37,14 @@ The Page Layout tab of [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-r
 
 * **Right**: Represents two text columns where the right one has a smaller width than the left one.
 
-#### Figure 2: __Left option applied on a section__
+#### __Figure 3: Left option applied on a section__
 ![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
 
 ## Changing the Width of a Section Column
 
 When the Section contains columns with equal width, you can customize the width of a column through the Document Ruler. When the caret is positioned on a column, a thumb appears that allows you change the width by dragging it.
 
-#### Figure 3: Customizing the width of a column
+#### __Figure 3: Customizing the width of a column__
 ![RadRichTextBox_Features_Section_Columns_04](images/RadRichTextBox_Features_Section_Columns_04.png)
 
 # See Also

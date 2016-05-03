@@ -47,7 +47,7 @@ The **SectionColumnCollection** class contains the information about the text co
 * **SectionColumnCollection(int equalColumnsCount)**: Initializes a new instance of the SectionColumnCollection class with equally sized columns and default spacing between them. The parameter represents the number of columns with equal width.
 
 
-* **SectionColumnCollection(int equalColumnsCount, double columnSpacing = 48, bool hasSeparator = false)**: Initializes a new instance of the SectionColumnCollection class with equally sized columns and default spacing between them. Using the constructor parameters you can set a different width of the columns and choose whether a separator between the columns should be applied. 
+* **SectionColumnCollection(int equalColumnsCount, double columnSpacing = 48, bool hasSeparator = false)**: Initializes a new instance of the SectionColumnCollection class with equally sized columns and default spacing between them. Using the constructor parameters, you can set a different width of the columns and choose whether a separator between the columns should be applied. 
 
 * **SectionColumnCollection(IEnumerable&lt;SectionColumn&gt; sectionColumns, bool hasSeparator = false)**: Initializes a new instance of the SectionColumnCollection class based on the already existing collection, passed as a parameter.
 
@@ -68,11 +68,11 @@ __Figure 2__ demonstrates the result of __Example 1__.
 
 ## Using Section Columns
 
-Depending on whether you prefer to insert columns with equal width or assign a specific width for each of them, you will need to create an instance of the **SectionColumnCollection** class and assign it to the **Columns** collection of [Section]({%slug radrichtextbox-features-document-elements-section%}). Another option to achieve a similar scenario is to change the Section layout using [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}). This section will explain the different approaches.
+Depending on whether you prefer to insert columns with equal width or assign a specific width for each of them, you will need to create an instance of the **SectionColumnCollection** class and assign it to the **Columns** collection of the [Section]({%slug radrichtextbox-features-document-elements-section%}). Another option to achieve a similar outcome is to change the Section layout using [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}). This section will explain the different approaches.
 
 ### Apply Columns With Equal Width
 
-To create text columns with equal width, you could directly use the SectionColumnCollection constructor overloads that allow you specify the number of columns you would like to insert. **Example 2** shows how to apply the SectionColumnCollection instance, created in **Example 1** to a Section object.
+To create text columns with equal width, you could directly use the SectionColumnCollection constructor overloads that allow you to specify the number of columns you would like to insert. **Example 2** shows how to apply the SectionColumnCollection instance, created in **Example 1** to a Section object.
 
 #### **[C#] Example 2: Apply columns with equal width**
 {{region radrichtextbox-features-section-columns_1}}
@@ -82,7 +82,7 @@ To create text columns with equal width, you could directly use the SectionColum
 
 ### Apply Columns With Different Width
 
-The API allows you create the columns severally from each other with the SectionColumn class. Then, the created columns could be united in a single SectionColumnCollection and applied to a Section. **Example 3** creates a collection of 3 columns with different settings and applies it.
+The API allows you to create the columns severally from each other with the SectionColumn class. Then, the created columns could be united in a single SectionColumnCollection and applied to a Section. **Example 3** creates a collection of 3 columns with different settings and applies it. <Comment: In the first sentence, I do not know what severally means. Do you mean seperately?>
 
 #### **[C#] Example 3: Apply columns with different width**
 {{region radrichtextbox-features-section-columns_2}}
@@ -100,9 +100,9 @@ The API allows you create the columns severally from each other with the Section
 
 ### Apply Columns With RadDocumentEditor
 
-In addition to the so far discussed approaches, [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) exposes a method that you can utilize to lay out the text in columns as well. The overloads of the ChangeSectionColumns() method allows you to pass a SectionColumnCollection instance or a value of the [**SectionColumnsLayout enumeration**](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_SectionColumnsLayout.htm).
+In addition to the approaches discussed so far, [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) exposes a method that you can use to lay out the text in columns. The overloads of the ChangeSectionColumns() method allow you to pass a SectionColumnCollection instance or a value of the [**SectionColumnsLayout enumeration**](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_SectionColumnsLayout.htm).
 
-**SectionColumnsLayout** enumeration could have the following values:
+The **SectionColumnsLayout** enumeration could have the following values:
 
 * **One**: Represents a single text column.
 
@@ -123,7 +123,7 @@ In addition to the so far discussed approaches, [RadDocumentEditor]({%slug radri
 #### __Figure 3: SectionColumnsLayout.Left applied on a section__
 ![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_03.png)
 
->You can insert a column break at a specific position inside a section column. For more information, check [this article]({%slug radrichtextbox-features-document-elements-break%}).
+>You can insert a column break at a specific position inside a section column. For more information, read [this article]({%slug radrichtextbox-features-document-elements-break%}).
 
 # See Also
 

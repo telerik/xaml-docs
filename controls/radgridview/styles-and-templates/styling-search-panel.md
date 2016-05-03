@@ -10,9 +10,9 @@ position: 23
 
 # Styling Search Panel
 
->Before reading this topic, you might find useful to get familiar with RadGridView`s [Search As You Type]({%slug radgridview-search-as-you-type%}) functionality.
+>Before reading this topic, you might find it useful to get familiar with RadGridView`s [Search As You Type]({%slug radgridview-search-as-you-type%}) functionality.
 
-The SearchPanel within the __RadGridView__ control can by styled by creating an appropriate Style that targets __"telerik:GridViewSearchPanel"__.
+You can style the SearchPanel within the __RadGridView__ control by by creating an appropriate Style that targets __"telerik:GridViewSearchPanel"__.
  
 You have two options:
 
@@ -21,9 +21,9 @@ You have two options:
 * To copy the default style of the control and modify it.
 
 
->tipIf you choose to define the style in the resources of the application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>Tip If you choose to define the style in the resources of the application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-You can apply a style to the Search Panel, similar to the following example:
+You can apply a style to the Search Panel, similar to Example 1:
 
 #### __[XAML] Example 1: Applying a style to the search panel of RadGridView:__
  
@@ -40,7 +40,7 @@ You can find the GridViewSearchPanel template structure in the [Templates Struct
 
 ## Change the color of the highlighted text 
 
-By default, the symbols matching the searching criteria are colored in red. This can easily be changed by changing the value of the __HightlightBrush__ in the __HighlightTextBlock__:
+By default, the symbols matching the searching criteria are colored in red. You can easily change the highlighted text value to green by changing the value of the __HightlightBrush__ in the __HighlightTextBlock__, as shown in Example 2:
 
 #### __[XAML] Example 2: Change the HighlightBrush of the HighlightTextBlock.__
 	<Style TargetType="telerik:HighlightTextBlock">

@@ -12,7 +12,7 @@ position: 0
 
 ![layoutcontrol image 01](images/layoutcontrol-overivew-01.png)
 
-__RadLayoutControl__ is a flexible component that allows you to arrange visual elements inside its boundaries. Thus helping you to create complex layouts that can be rearrange at runtime.
+__RadLayoutControl__ is a flexible component that allows you to arrange visual elements inside its boundaries. Thus helping you to create complex layouts that can be rearranged at runtime.
 
 ![layoutcontrol image 02](images/layoutcontrol-overivew-02.png)
 

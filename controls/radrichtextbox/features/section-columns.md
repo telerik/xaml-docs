@@ -82,7 +82,7 @@ To create text columns with equal width, you could directly use the SectionColum
 
 ### Apply Columns With Different Width
 
-The API allows you to create the columns severally from each other with the SectionColumn class. Then, the created columns could be united in a single SectionColumnCollection and applied to a Section. **Example 3** creates a collection of 3 columns with different settings and applies it. <Comment: In the first sentence, I do not know what severally means. Do you mean separately?>
+The API allows you to create the columns separately from each other with the SectionColumn class. Then, the created columns could be united in a single SectionColumnCollection and applied to a Section. **Example 3** creates a collection of 3 columns with different settings and applies it.
 
 #### **[C#] Example 3: Apply columns with different width**
 {{region radrichtextbox-features-section-columns_2}}

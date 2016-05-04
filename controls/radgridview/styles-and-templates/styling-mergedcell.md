@@ -31,13 +31,15 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
+>To learn how to modify the default GridViewMergedCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+
 >The __GridViewMergedCell__ is located in the __Telerik.Windows.Controls.GridView__ namespace of the __Telerik.Windows.Controls.GridView__ assembly.
 
 >__GridViewMergedCell uses Triggers__, not VisualStateManager's states to apply property values based on specified conditions.
 
 You can apply a style to the merged cells, similar to:
 
-#### __[XAML] Example 1: Styling all merged cells of the application__
+#### __[XAML] Example 1: Styling all merged cells of an application__
 
 {{region gridview-merged-cells_1}}
 
@@ -52,7 +54,7 @@ You can apply a style to the merged cells, similar to:
 
 #### __Figure 1: Styled merged cells__
 
-![gridview merged cells 5](images/gridview_merged_cells_5.png)
+![RadGridView styled merged cells](images/gridview_merged_cells_5.png)
 
 ## Setting MergedCellsStyle
 
@@ -142,7 +144,7 @@ And here is the final result:
 
 #### __Figure 2: The merged cells styled using the MergedCellsStyleSelector property__
 
-![](images/gridview-merged_cells_styleselector.png)
+![Merged cells styled using the MergedCellsStyleSelector property](images/gridview-merged_cells_styleselector.png)
 
 # See Also
 

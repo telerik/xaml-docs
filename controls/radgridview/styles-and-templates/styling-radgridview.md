@@ -31,13 +31,21 @@ In this topic we will discuss:
 
 __RadGridView__ exposes a **Style** property which allows you to apply a style to it and modify its appearance.
 
+You have two options:
+
+* To create an empty style and set it up on your own.
+
+* To copy the default style of the control and modify it.
+
+>To learn how to modify the default RadGridView style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+
 #### __[XAML] Example 1: Setting RadGridView Style__
 
 	{{region gridview-styling-radgridview-0}}
 	<telerik:RadGridView Style="{StaticResource RadGridViewStyle}" />
 	{{endregion}}
 
-To learn how to modify the default RadGridView style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To learn how to modify the default RadGridView style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
 ## Controlling RadGridView Appearance through Properties
 

@@ -24,7 +24,7 @@ In this article we will discuss the following topics:
 
 ## Targeting the GridViewHeaderCell element
 
-In order to style all RadGridView cells of an application, you should create an appropriate style targeting the __GridViewCell__ element.
+In order to style all RadGridView cells of an application, you should create an appropriate style targeting the __GridViewHeaderCell__ element.
 
 You have two options:
 
@@ -45,10 +45,6 @@ You have two options:
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewHeaderCellStyle__.
 
-#### __Figure 1: RadGridView with styled header cells__
-
-![RadGridView with styled cells](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
-
 ## Setting a Column's HeaderCellStyle
 
 RadGridView header cells can also be styled by creating an appropriate __Style__ for the **GridViewHeaderCell**  element and setting it as the __HeaderCellStyle__ property of the respective __GridView Column__. 
@@ -61,7 +57,9 @@ RadGridView header cells can also be styled by creating an appropriate __Style__
 	                            HeaderCellStyle="{StaticResource GridViewHeaderCellStyle}" />
 	{{endregion}}
 
-To learn how to modify the default GridViewHeaderCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+#### __Figure 2: RadGridView with styled header cells__
+
+![RadGridView with styled header cells](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
 
 # See Also
 

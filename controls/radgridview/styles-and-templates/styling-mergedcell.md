@@ -11,7 +11,7 @@ site_name: WPF
 
 # Styling Merged Cells
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewMergedCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewmergedcell).
+>tipMerged cells have a template structure similar to [RadGridView cells]({%slug gridview-styling-cell%}). You could also get check the [Template Structure of the GridViewMergedCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewmergedcell).
 
 In this article we will discuss the following topics:
 
@@ -41,14 +41,15 @@ You can apply a style to the merged cells, similar to:
 
 #### __[XAML] Example 1: Styling all merged cells of an application__
 
-{{region gridview-merged-cells_1}}
-
-	<Style TargetType="telerik:GridViewMergedCell" BasedOn="{StaticResource GridViewMergedCellStyle}">
+	{{region gridview-merged-cells_1}}
+	<Style TargetType="telerik:GridViewMergedCell">
 		<Setter Property="VerticalContentAlignment" Value="Top"/>
 		<Setter Property="HorizontalContentAlignment" Value="Center"/>
 		<Setter Property="Background" Value="#ffcc00"/>
 	</Style>
-{{endregion}}
+	{{endregion}}
+
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewMergedCellStyle__.
 
 >tipIf you choose to define the style in the resources of the application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -62,7 +63,7 @@ If instead you would like to set a style only for a specific RadGridView, you ca
 
 #### __[XAML] Example 2: Styling merged cells of a specific RadGridView__
 
-{{region gridview-merged-cells_2}}
+	{{region gridview-merged-cells_2}}
 	<Grid.Resources>
 		<Style TargetType="telerik:GridViewMergedCell" x:Key="GridViewMergedCellsStyle">
 			<Setter Property="VerticalContentAlignment" Value="Top"/>
@@ -72,7 +73,7 @@ If instead you would like to set a style only for a specific RadGridView, you ca
 	</Grid.Resources>
 
 	<telerik:RadGridView MergedCellsStyle="{StaticResource GridViewMergedCellsStyle}" />
-{{endregion}}
+	{{endregion}}
 
 >tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
 

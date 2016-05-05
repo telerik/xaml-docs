@@ -14,7 +14,7 @@ position: 4
 
 #### __Figure 1: GridViewCell template structure__
 
-![RadGridView template structure](images/Styling_GridViewCell.png)
+![RadGridView template structure](images/gridviewcell-template.png)
 
 In this article we will discuss the following topics:
 
@@ -43,6 +43,8 @@ You have two options:
 		<Setter Property="Background" Value="#ffcc00"/>
 	</Style>
 	{{endregion}}
+
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewCellStyle__.
 
 #### __Figure 1: RadGridView with styled cells__
 

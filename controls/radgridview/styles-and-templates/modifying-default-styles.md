@@ -12,9 +12,9 @@ position: 2
 
 This article will show you two ways to modify the default style of a control:
 
-* [Modifying the Default Style Using Microsoft Blend](#modifying-the-default-style-using-microsoft blend)
+* [Modifying the Default Style Using Microsoft Blend](#modifying-the-default-style-using-microsoft-blend)
 
-* [Modifying the Default Style By Extracting It From the Theme XAML File](#Modifying-the-Default Style-By-Extracting-It-From-the-Theme-XAML-File)
+* [Modifying the Default Style By Extracting It From the Theme XAML File](#modifying-the-default-style-by-extracting-it-from-the-theme-xaml-file)
 
 For the purposes of this article, we will modify RadGridView's **FilteringDropDown** element, but the steps described can be applied to every control.
 

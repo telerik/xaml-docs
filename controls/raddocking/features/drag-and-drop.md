@@ -78,4 +78,4 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
  * [Compass]({%slug raddocking-features-compass%})
 
- * [Save/Load Layout]({%slug raddocking-features-save-load-layout%})
+ * [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%})

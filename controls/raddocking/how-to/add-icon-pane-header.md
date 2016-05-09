@@ -94,4 +94,4 @@ Here is the final result:
 
  * [RadPane]({%slug raddocking-panes-radpane%})
 
- * [Save/Load Layout]({%slug raddocking-features-save-load-layout%})
+ * [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%})

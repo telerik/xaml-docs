@@ -16,7 +16,7 @@ To learn more about the __RadDocking__'s mouse support take a look at the [Drag 
 
  * [Drag and Drop]({%slug raddocking-features-drag-and-drop%})
 
- * [Save/Load Layout]({%slug raddocking-features-save-load-layout%})
+ * [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%})
 
  * [Save/Load the Content of the Panes]({%slug raddocking-save-load-the-content-of-the-panes%})
 

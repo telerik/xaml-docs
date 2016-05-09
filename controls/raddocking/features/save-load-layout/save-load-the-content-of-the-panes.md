@@ -91,7 +91,7 @@ Attach to the __ElementLoaded__ event of the __RadDocking__ element.
 
 # See Also
 
- * [Save/Load Layout]({%slug raddocking-features-save-load-layout%})
+ * [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%})
 
  * [Drag and Drop]({%slug raddocking-features-drag-and-drop%})
 

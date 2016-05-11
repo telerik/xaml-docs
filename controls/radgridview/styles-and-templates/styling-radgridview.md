@@ -45,8 +45,6 @@ You have two options:
 	<telerik:RadGridView Style="{StaticResource RadGridViewStyle}" />
 	{{endregion}}
 
->To learn how to modify the default RadGridView style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
-
 ## Controlling RadGridView Appearance through Properties
 
 RadGridView also exposes a number of properties with which you can easily customize the control without the need of modifying its default style. They can be separated into the following categories:

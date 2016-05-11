@@ -18,7 +18,7 @@ This topic will show you how to style the __GridViewCheckBoxColumn__.
 
 * [Applying the Styles to GridViewCheckBoxColumn explicitly](#applying-the-styles-to-gridviewcheckboxcolumn-explicitly)
 
-* [Centering GridViewCheckBoxColumn in Edit Mode](#centering-gridviewcheckboxcolumn) 
+* [Centering GridViewCheckBoxColumn](#centering-gridviewcheckboxcolumn) 
 
 The cells of __RadGridView__ have two templates for their current state - when in __view mode__ and in __edit mode__. By default, __GridViewCheckBoxColumn__ uses a __GridViewCheckBox__ when in __view mode__ and the standard __CheckBox__ control as its __editor__. __GridViewCheckBox__ is an element that emulates the behavior of a __CheckBox__ and is especially designed for __RadGridView__. 
 
@@ -38,7 +38,6 @@ In order to modify the visual appearance of a cell in __view mode__, the __Contr
 	<ControlTemplate x:Key="GridViewCheckBoxTemplate" TargetType="grid:GridViewCheckBox">
             ...
     </ControlTemplate>
-
 
 
 After the needed __ControlTemplate__ is defined, it can be applied using the __Template__ property of __GridViewCheckBox__.
@@ -98,19 +97,21 @@ In order to center the __CheckBox__ in __GridViewCheckBoxColumn__, you can defin
 
 
 Now the __GridViewCheckBoxColumn__ will look like:
- <Comment: This is figure 2. Please add an SEO-friendly caption and call out in the sentence above.>       
+
+#### __Figure 2: Centered GridViewCheckBoxColumn__     
 
 ![Rad Grid View Styles and Templates Styling Check Box Column 03](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_03.PNG)
 
 However, there is a pixel offset when the __GridViewCheckBoxColumn__ goes into edit mode:
-<Comment: This next image is figure 3. Please add an SEO-friendly caption and call out in the sentence above.>        
+
+#### __Figure 3: Centered GridViewCheckBoxColumn in edit mode__       
 
 ![Rad Grid View Styles and Templates Styling Check Box Column 04](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_04.PNG)
 
 In order to align the default editor of __GridViewCheckBoxColumn__ correctly, you can specify a different __Margin__ for it by handling the __PreparingCellForEdit__ event of __RadGridView__:
         
 
-#### __[C#] Example 5: Setting the Margin of the editor GridViewCheckBoxColumn__
+#### __[C#] Example 5: Setting the Margin of the Editor GridViewCheckBoxColumn__
 
 	private void RadGridView_PreparingCellForEdit(object sender, Telerik.Windows.Controls.GridViewPreparingCellForEditEventArgs e)
 	{
@@ -121,9 +122,9 @@ In order to align the default editor of __GridViewCheckBoxColumn__ correctly, yo
 	   }
 	}
 
-<Comment: This next image is figure 4. Please add an SEO-friendly caption and call out in the sentence above.>
-
 Here is the result:
+
+#### __Figure 4 GridViewCheckBoxColumn with set margin__
         
 ![Rad Grid View Styles and Templates Styling Check Box Column 05](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_05.PNG)
 

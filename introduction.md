@@ -11,7 +11,7 @@ position: 1
 # Introduction
 
 {% if site.site_name == 'Silverlight' %}
-<image src="\images/UI_for_SL_logo.png" style="min-width:287px;width: 30%;" alt="UI for Silverlight logo" />
+<image src="\images/UI_for_SL_logo.png" style="min-width:334px;width: 30%;" alt="UI for Silverlight logo" />
 {% endif %}
 
 {% if site.site_name == 'WPF' %}

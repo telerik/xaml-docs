@@ -48,10 +48,13 @@ a img {
 #logo-bar-sl {
     font-size: 14px;
 	float: left;
-   /*  margin-bottom: 1.717em; */
     margin-left: 1.833em;
     margin-top: 1.617em; 
 	width: 287px;
+}
+
+#logo-bar-sl {
+	width: 334px;
 }
 
 #logo-bar a, 
@@ -166,7 +169,7 @@ a img {
     padding: 0;
     right: 514px;
     text-align: right;
-    left: 25%;
+    left: 28%;
 }
 
 #page-search.search-visibility {
@@ -814,7 +817,7 @@ header, nav, section, article, aside, footer {
     }
     
     #page-search {
-        left: 315px;
+        left: 360px;
 		right: 377px;
     }
 

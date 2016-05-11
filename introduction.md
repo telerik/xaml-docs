@@ -11,11 +11,11 @@ position: 1
 # Introduction
 
 {% if site.site_name == 'Silverlight' %}
-![UI for SL logo](images/UI_for_SL_logo.png)
+<image src="\images/UI_for_SL_logo.png" style="min-width:287px;width: 30%;" alt="UI for Silverlight logo" />
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-![UI for WPF logo](images/UI_for_WPF_logo.png)
+<image src="\images/UI_for_WPF_logo.png" style="min-width:287px;width: 30%;" alt="UI for WPF logo" />
 {% endif %}
 
 Thank you for choosing Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.

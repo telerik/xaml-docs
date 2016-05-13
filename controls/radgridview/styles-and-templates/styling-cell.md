@@ -12,17 +12,17 @@ position: 4
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewcell).
 
-#### __Figure 1: GridViewCell template structure__
-
-![RadGridView template structure](images/gridviewcell-template.png)
-
 In this article we will discuss the following topics:
 
-* [Targeting the GridViewCell element](#targeting-the-gridviewcell-element)
+* [Targeting the GridViewCell Element](#targeting-the-gridviewcell-element)
 
 * [Setting a Column's CellStyle](#setting-a-columns-cellstyle)
 
-## Targeting the GridViewCell element
+#### __Figure 1: GridViewCell template structure__
+
+![GridViewCell template structure](images/gridviewcell-template.png)
+
+## Targeting the GridViewCell Element
 
 In order to style all RadGridView cells of an application, you should create an appropriate style targeting the __GridViewCell__ element.
 
@@ -37,7 +37,7 @@ You have two options:
 #### __[XAML] Example 1: Styling all cells of an application__
 
 	{{region gridview-cells_1}}
-	<Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellStyle}">
+	<Style TargetType="telerik:GridViewCell">
 		<Setter Property="VerticalContentAlignment" Value="Top"/>
 		<Setter Property="HorizontalContentAlignment" Value="Center"/>
 		<Setter Property="Background" Value="#ffcc00"/>
@@ -61,8 +61,6 @@ __RadGridView Cells__ can also be styled by creating an appropriate __Style__ fo
                                 Header="Name"
                                 CellStyle="{StaticResource GridViewCellStyle}" />
 	{{endregion}}
-
-To learn how to modify the default GridViewCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
 # See Also
 

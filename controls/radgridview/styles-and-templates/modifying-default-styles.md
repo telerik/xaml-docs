@@ -20,9 +20,19 @@ For the purposes of this article, we will modify RadGridView's **FilteringDropDo
 
 ## Modifying the Default Style Using Microsoft Blend
 
-To create the needed style, you first need to create a dummy control in Blend. To do so, open the UserControl that hosts your RadGridView in Expression Blend and locate the desired control in the **Assets** tab.
+>This article shows how to modify styles using **Blend for Visual Studio 2012**, but the approach should be similar with different versions of the program.
 
-In this case, we can find the FilteringDropDown under **Controls -> All -> FilteringDropDown**.
+### Editing Additional Styles
+
+The first option to create the needed style is to right-click on your instance of RadGridView and from the context menu select **Edit Additional Templates -> _Desired Style_ -> Edit a Copy**. You can then procede to the [Create Style Resource](#create-style-resource) section.
+
+![](images/RadGridView_Styles_and_Templates_Additional_Styles.png)
+
+### Creating a Dummy Control
+
+If you cannot find the desired style from the list of additional styles, you will first need to create a dummy control in Blend. To do so, open the UserControl that hosts your RadGridView in Expression Blend and locate the desired control in the **Assets** tab.
+
+In our case, we can find the FilteringDropDown under **Controls -> All -> FilteringDropDown**.
 
 #### __Figure 1: Selecting the FilteringDropDown from the Assets tab__
 
@@ -34,7 +44,11 @@ You can then double click or draw to place a dummy control of the selected type 
 
 ![](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_2.png)
 
-Select the dummy control and from the menu choose **Object -> Edit Style -> Edit a Copy**. You will then be prompted for the name of the style and where to be placed within your application.
+Right-click on the created dummy control and select **Edit Template -> Edit a Copy**. 
+
+### Create Style Resource
+
+The **Create Style Resource** dialog will prompt you for the name of the style and where to be placed within your application.
 
 For this example, we will choose to apply this style to all FilteringDropDown controls and place it in our **App.xaml** file.
 
@@ -42,15 +56,7 @@ For this example, we will choose to apply this style to all FilteringDropDown co
 
 ![](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_7.png)
 
-After clicking **OK**, the default style of the control is created in the selected location. If you prefer, you can modify it directly from XAML.
-
-The other option is to modify it using Blend. To do so, click on the palette-like breadcrumb icon and select **Edit Template -> Edit Current**.
-
-#### __Figure 4: Edit current template__
-
-![](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_3.png)
-
-You will then see the control's template structure.
+After clicking **OK**, the default style of the control will be created in the selected location. If you prefer, you can modify it directly from XAML by right-clicking in the scene and choosing **View Source** from the context menu. The other options is to modify it in Blend as we will do now.
 
 #### __Figure 5: The FilteringDropDown template structure__
 
@@ -58,9 +64,11 @@ You will then see the control's template structure.
 
 >tipPlease bear in mind that the control template may be different in the different themes. This example modifies the **OfficeBlack** theme.
 
-To change the funneling icon's border, for example, you need to select the **Path** control responsible for the border of the FilteringDropDown from the **Objects and Timeline** pane.
+>importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
-Let's set the **Fill** of the Path to **Red**.
+### Modifying the Control Template
+
+To change the funneling icon's border, for example, let's select the **Path** control responsible for the border of the FilteringDropDown from the **Objects and Timeline** pane and set its **Fill** to **Red**.
 
 #### __Figure 6: Changing the fill of the path__
 
@@ -74,11 +82,11 @@ Here is a snapshot of the final result:
 
 ## Modifying the Default Style By Extracting It From the Theme XAML File
 
-If you prefer, you can manually extract the needed style from the respective XAML file in the **Themes.Implicit** folder of your **UI for WPF** installation.
+If you prefer, you can manually extract the needed style from the respective XAML file in the **Themes.Implicit** folder of your **UI for WPF** installation and modify its code to suit your needs.
 
 The process is similar to [manually extracting the Control Template]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) of a given control.
 
->tipNote that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 ## See Also
 

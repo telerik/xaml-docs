@@ -31,7 +31,6 @@ a img {
 #page-header {
     background-color: #2a2d33;
     font-size: 12px;
-	height: 85px;
 }
 
 #page-header:after {
@@ -49,7 +48,8 @@ a img {
     font-size: 14px;
 	float: left;
     margin-left: 1.833em;
-    margin-top: 1.617em; 
+    margin-top: 1.5em; 
+	margin-bottom: 1.6em;
 	width: 287px;
 }
 
@@ -57,19 +57,11 @@ a img {
 	width: 334px;
 }
 
-#logo-bar a, 
-#logo-bar-sl a {
-    color: #fff;
-    display: inline-block;
-    max-width: 100%;
-} 
-
 #logo-bar a img,
 #logo-bar-sl a img {
-    display: inline-block;
     height: auto;
     width: 100%;
-}
+} 
 
 #logo-bar-sl span {
 	display: none;
@@ -158,7 +150,6 @@ a img {
     position: relative;
     margin-left: 1.833em;
     cursor: pointer;
-	top: 12px;
 }
 
 #page-search {
@@ -179,7 +170,7 @@ a img {
     margin-top: 0;
     position: relative;
     right: 1.83em;
-    top: -1.7em;
+    top: -1.6em;
     width: calc(100% - 3.666em);
 }
 
@@ -807,6 +798,13 @@ header, nav, section, article, aside, footer {
 } 
 
 @media (max-width: 1200px) {
+	#logo-bar,
+	#logo-bar-sl{
+        float: none;
+        display: inline-block;
+		margin-left: 1em;
+    }
+
     #page-nav {
        width: 30%; 
     }
@@ -815,81 +813,29 @@ header, nav, section, article, aside, footer {
     #page-article { 
         width: 70%; 
     }
-    
-    #page-search {
-        left: 360px;
-		right: 377px;
-    }
 
-    .btn.pricing-btn {
-        display: none;
-    }
-}
-
-/* Responsive styles */
-@media (max-width:800px) {
-    body {
-        min-width: initial;
-    }
-
-    .faux-columns {
-        background-image: none;
-    }
-
-    #markdown-toc {
-        border-bottom: none;
-    }
-
-    .nav-buttons,
     #page-nav,
     #page-tabs,
-    #page-top #page-search {
+    #page-top,
+	#page-search,
+    .nav-buttons {
         display: none;
     }
-
-    #page-nav {
-        min-width: 250px;
-    }
-
-    div#page-inner-content {
-        bottom: 0;
-    }
-
-    #page-article {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    #page-article h1 {
-        margin-top: 1em;
-    }
-
-    .toggle-nav {
+	
+	.show-search {
         display: inline-block;
-    }
-
-    #logo-bar,
-	#logo-bar-sl {
-      /*  float: none;
-       margin-left: 1em; */
-	   position: absolute;
-	   top: 12px;
-	   margin-top: 0px;
-	   margin-left: 5em;
-    }
-
-    #page-search {
-        width: 33%;
-		right: 0px;
+        margin: 0;
+        position: absolute;
+        top: 27px;
+        padding: 0;
+        right: 1.833em;
+        text-align: right;
         left: auto;
-        display: none;
-        background-color: #2a2d33;
+        cursor: pointer;
     }
-
-    #page-search > div {
-        padding: 0 3.83em 0 0;    
+	 
+	 .toggle-nav {
+        display: inline-block;
     }
 	
     .toggle-nav span { 
@@ -914,19 +860,53 @@ header, nav, section, article, aside, footer {
 
     .toggle-nav span:after {
       bottom: -8px; 
-    }
-        
-    .show-search {
-        display: inline-block;
-        margin: 0;
-        position: absolute;
-        top: 11px;
-        padding: 0;
-        right: 1.833em;
-        text-align: right;
-        left: auto;
-        cursor: pointer;
     }	
+
+    div#page-inner-content {
+        bottom: 0;
+    }
+
+    #page-article {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+/* Responsive styles */
+@media (max-width:800px) {
+    body {
+        min-width: initial;
+    }
+
+    .faux-columns {
+        background-image: none;
+    }
+
+    #markdown-toc {
+        border-bottom: none;
+    }
+
+    #page-article h1 {
+        margin-top: 1em;
+    }
+
+    .toggle-nav {
+        display: inline-block;
+    }
+
+    #page-search {
+        width: 33%;
+		right: 0px;
+        left: auto;
+        display: none;
+        background-color: #2a2d33;
+    }
+
+    #page-search > div {
+        padding: 0 3.83em 0 0;    
+    }
 
     footer {
         display: none;
@@ -1427,11 +1407,32 @@ header, nav, section, article, aside, footer {
   padding: 4px 16px 4px 16px!important;
 }
 
-@media (max-width:500px) {
-	#logo-bar,
+@media (max-width: 450px) {
+	header {
+		height: 85px;
+	}
+
+	#logo-bar, 
 	#logo-bar-sl {
-		width: 0px;
+		position: absolute;
+	}
+	
+	#logo-bar  a img {
+		width: 287px;
+	}
+	
+	#logo-bar-sl a img{
+		width: 334px;
+	}
+	
+	#page-header .show-search {
+		display:none;
+	}
+	
+	.toggle-nav {
+		top: 31px;
 	}
 }
+
 
 /* END Kendo Grid Nova Theme CSS*/

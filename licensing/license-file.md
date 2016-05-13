@@ -5,7 +5,7 @@ description: License File
 slug: license-file
 tags: license
 published: True
-position: 2
+position: 3
 ---
 
 # License File

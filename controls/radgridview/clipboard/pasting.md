@@ -30,6 +30,8 @@ Pasting is controlled similarly to [Copying]({%slug gridview-copying%}). The __C
             
 
 >The default mode is pasting into __Cells__.
+
+>important You need to have a __selected element__(row or cell) set in __RadGridView__ in order to paste a value. 
           
 
 The __Pasting__ event allows you to cancel a paste operation, whereas the __PastingCellClipboardContent__ allows you to cancel pasting for the cell or replace the Clipboard value with your own. Example:

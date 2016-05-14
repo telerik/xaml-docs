@@ -10,11 +10,35 @@ position: 11
 
 # Styling Group Panel
 
-
-
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewGroupPanel and GridViewGroupPanelItem]({%slug radgridview-styles-and-templates-templates-structure%}).
 
-__RadGridView__ exposes two properties of type __Style__ - __GroupPanelStyle__ and __GroupPanelItemStyle__. They are applied to the __Group Panel__ and its items.
+In this article we will discuss the following topics:
+
+* [Targeting the GridViewGroupPanel Element](#targeting-the-gridviewgrouppanel-element)
+
+* [Targeting the GridViewGroupPanelItem Element](#targeting-the-gridviewgrouppanelitem-element)
+
+* [Targeting the GridViewGroupPanelCell Element](#targeting-the-gridviewgrouppanelcell-element)
+
+* [Setting RadGridView's GroupPanelStyle and GroupPanelItemStyle](#setting-radgridviews-grouppanelstyle-and-grouppanelitemstyle)
+
+* [GroupPanelForeground and GroupPanelBackground](#grouppanelforeground-and-grouppanelbackground)
+
+#### __Figure 1: GridViewGroupPanel template structure__
+
+![GridViewCell template structure](images/gridview-group-panel-template.png)
+
+#### __Figure 2: GridViewGroupPanelItem template structure__
+
+![GridViewCell template structure](images/gridview-group-panel-item-template.png)
+
+#### __Figure 3: GridViewGroupPanelCell template structure__
+
+![GridViewCell template structure](images/gridview-group-panel-cell-template.png)
+
+## Targeting the GridViewGroupPanel Element
+
+In order to style all RadGridView group panels of an application, you should create an appropriate style targeting the __GridViewGroupPanel__ element.
 
 You have two options:
 
@@ -22,42 +46,78 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
-This topic will show you how to perform the second one.
+>To learn how to modify the default GridViewGroupPanel style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-## Modifying the Default Style
+#### __[XAML] Example 1: Styling all group panels of an application__
 
-To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadGridView__. In the 'Objects and Timeline' pane select the __RadGridView__ you want to style. From the menu choose *Object -> Edit Additional Styles -> __GroupPanelStyle__ -> Edit a Copy *or *Object -> Edit Additional Styles -> __GroupPanelItemStyle__ -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+	{{region gridview-styling-group-panel-1}}
+	<Style TargetType="{x:Type telerik:GridViewGroupPanel}">
+		<Setter Property="MinHeight" Value="50"/>
+        <Setter Property="BorderThickness" Value="3"/>
+    </Style>
+	{{endregion}}
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupPanelStyle__.
 
-After clicking 'OK', Expression Blend will generate the default value for the selected __Style__ in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+## Targeting the GridViewGroupPanelItem Element
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the targeted control. Their names indicate to which part of the appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+You could also style all group panel items by creating a style, targeting the __GridViewPanelItem__ element, like so:
 
-Here are the resources generated with the __GroupPanelStyle__:{% endif %}{% if site.site_name == 'Silverlight' %}
+#### __[XAML] Example 2: Styling all group panel items of an application__
 
-__![](images/RadGridView_Styling_the_GroupPanel_01.png)__{% endif %}
+	{{region gridview-styling-group-panel-2}}
+	<Style TargetType="{x:Type telerik:GridViewGroupPanelItem}">
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="FontSize" Value="20" />
+    </Style>
+	{{endregion}}
 
-* __GridViewGroupPanelTemplate__ - represents the __ControlTemplate__ for the __Group Panel__.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupPanelItemStyle__.
 
-* __GridViewGroupPanelItemsPanelTemplate__ - represents the __ItemsPanelTemplate__ for the __ItemsPanel__ of the __Group Panel__.
+## Targeting the GridViewGroupPanelCell Element
 
-* __GridViewGroupPanelStyle__ - represents the generated __Style__ for the __Group Panel__.{% if site.site_name == 'Silverlight' %}
+The __GridViewGroupPanelItem__ wraps the __GridViewGroupPanelCell__ control, which represents the visual item in the __Group Panel__. If you want to style it, you should create the appropriate style, targeting the __GridViewGroupPanelCell__ element.
 
-Here are the resources generated with the __GroupPanelItemStyle__:{% endif %}{% if site.site_name == 'Silverlight' %}
+#### __[XAML] Example 3: Styling the GridViewGroupPanelCell element__
 
-![](images/RadGridView_Styling_the_GroupPanel_02.png){% endif %}
+	{{region gridview-styling-group-panel-3}}
+	<Style TargetType="{x:Type telerik:GridViewGroupPanelCell}">
+        <Setter Property="Background" Value="Red" />
+        <Setter Property="BorderBrush" Value="Yellow" />
+        <Setter Property="BorderThickness" Value="2" />
+    </Style>
+	{{endregion}}
 
-* __GridViewGroupPanelItemInsertionPointFill__ - a brush which represents the color of the shape that appears, when dropping a column header at a certain position.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupPanelCellStyle__.
 
-* __GridViewGroupPanelItemConnectingLineFill__ - a brush which represents the color of the line, that connects the items.
+## Setting RadGridView's GroupPanelStyle and GroupPanelItemStyle
 
-* __GridViewGroupPanelItemBorderBackground__ - a brush that represents the background color of the item.
+__RadGridView__ exposes two properties of type __Style__ - __GroupPanelStyle__ and __GroupPanelItemStyle__. They are applied to the __Group Panel__ and its items.
 
-* __GridViewGroupPanelItemBorderBrush__ - a brush that represents the border color of the item.
+#### __[XAML] Example 4: Setting RadGridView's GroupPanelStyle and GroupPanelItemStyle__
 
-* __GridViewGroupPanelItemTemplate__ - represents the __ControlTemplate__ for the item.
+	{{region gridview-styling-group-panel-4}}
+	<telerik:RadGridView GroupPanelStyle="{StaticResource GroupPanelStyle}"
+						 GroupPanelItemStyle="{StaticResource GroupPanelItemStyle}" />
+	{{endregion}}
 
-* __GridViewGroupPanelItemStyle__ - represents the generated __Style__ for the __Group Panel Items__.
+#### __Figure 4: RadGridView with styled group panel__
 
->The __GridViewGroupPanelItem__ wraps the __GridViewGroupPanelCell__ control, which represents the visual item in the __Group Panel__. If you want to style it, go to the __GridViewGroupPanelItemTemplate__ and locate it. Copy its default __Style__ via Expression Blend and modify the needed resources.
+![RadGridView with styled group panel](images/RadGridView_Styles_and_Templates_Styling_RadGridView_03.png)
+
+## GroupPanelForeground and GroupPanelBackground
+
+A simple way to change the group panel's foreground and background is through RadGridView's **GroupPanelForeground** and **GroupPanelBackground** properties. **Example 5** shows how this can be done.
+
+#### __[XAML] Example 5: Setting RadGridView's GroupPanelForeground and GroupPanelBackground__
+
+	{{region gridview-styling-group-panel-5}}
+	<telerik:RadGridView GroupPanelForeground="White"
+						 GroupPanelBackground="Blue" />
+	{{endregion}}
+
+## See Also
+
+ * [Styling the Group Row]({%slug gridview-styling-group-row%})
+
+ * [Basic Grouping]({%slug gridview-grouping-basics%})

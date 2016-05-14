@@ -41,7 +41,7 @@ You can apply a style to the merged cells, similar to:
 
 #### __[XAML] Example 1: Styling all merged cells of an application__
 
-	{{region gridview-merged-cells_1}}
+	{{region gridview-styling-merged-cells-1}}
 	<Style TargetType="telerik:GridViewMergedCell">
 		<Setter Property="VerticalContentAlignment" Value="Top"/>
 		<Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -61,7 +61,7 @@ If instead you would like to set a style only for a specific RadGridView, you ca
 
 #### __[XAML] Example 2: Styling merged cells of a specific RadGridView__
 
-	{{region gridview-merged-cells_2}}
+	{{region gridview-styling-merged-cells-2}}
 	<Grid.Resources>
 		<Style TargetType="telerik:GridViewMergedCell" x:Key="GridViewMergedCellsStyle">
 			<Setter Property="VerticalContentAlignment" Value="Top"/>
@@ -85,6 +85,7 @@ To do so, first create a new class which inherits the **StyleSelector** class an
 
 #### __[C#] Example 3: The StadiumCapacityStyleSelector class__
 
+	{{region gridview-styling-merged-cells-3}}
 	public class StadiumCapacityStyleSelector : StyleSelector
     {
         public override Style SelectStyle(object item, DependencyObject container)
@@ -108,11 +109,52 @@ To do so, first create a new class which inherits the **StyleSelector** class an
         public Style BigStadiumStyle { get; set; }
         public Style SmallStadiumStyle { get; set; }
     }
+	{{endregion}}
+
+#### __[VB.NET] Example 3: The StadiumCapacityStyleSelector class__
+	
+	{{region gridview-styling-merged-cells-4}}
+	Public Class StadiumCapacityStyleSelector
+		Inherits StyleSelector
+		Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
+			Dim cell = TryCast(item, MergedCellInfo)
+	
+			If cell IsNot Nothing Then
+				If Integer.Parse(cell.Value.ToString()) > 50000 Then
+					Return BigStadiumStyle
+				Else
+					Return SmallStadiumStyle
+				End If
+			End If
+	
+			Return Nothing
+		End Function
+		Public Property BigStadiumStyle() As Style
+			Get
+				Return m_BigStadiumStyle
+			End Get
+			Set
+				m_BigStadiumStyle = Value
+			End Set
+		End Property
+		Private m_BigStadiumStyle As Style
+		Public Property SmallStadiumStyle() As Style
+			Get
+				Return m_SmallStadiumStyle
+			End Get
+			Set
+				m_SmallStadiumStyle = Value
+			End Set
+		End Property
+		Private m_SmallStadiumStyle As Style
+	End Class
+	{{endregion}}
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigStadiumStyle** and **SmallStadiumStyle**:
 
 #### __[XAML] Example 4: Setting the BigStadiumStyle and SmallStadiumStyle__
 
+	{{region gridview-styling-merged-cells-5}}
 	<Grid.Resources>
         <my:StadiumCapacityStyleSelector x:Key="StadiumCapacityStyleSelector">
             <my:StadiumCapacityStyleSelector.BigStadiumStyle>
@@ -127,6 +169,7 @@ In the XAML file, define the style selector as a resource and set the properties
             </my:StadiumCapacityStyleSelector.SmallStadiumStyle>
         </my:StadiumCapacityStyleSelector>
 	</Grid.Resources>
+	{{endregion}}
 
 >The **"my:"** prefix before **StadiumCapacityStyleSelector** specifies the mapping for the namespace of the project: **xmlns:my="..."**
 
@@ -134,10 +177,9 @@ Finally, set the **MergedCellsStyleSelector** property:
 
 #### __[XAML] Example 5: Setting the MergedCellsStyleSelector property__
 
-{{region gridview-merged-cells_3}}
-
+	{{region gridview-styling-merged-cells-6}}
 	<telerik:RadGridView MergedCellsStyleSelector="{StaticResource StadiumCapacityStyleSelector}" />
-{{endregion}}
+	{{endregion}}
 
 And here is the final result:
 

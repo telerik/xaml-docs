@@ -20,7 +20,7 @@ In this article we will discuss the following topics:
 
 #### __Figure 1: GridViewHeaderRow template structure__
 
-![GridViewHeaderRow template structure](images/gridview-headerrow-style.png)
+![GridViewHeaderRow template structure](images/gridview-headerrow-template.png)
 
 ## Targeting the GridViewHeaderRow Element
 

@@ -14,6 +14,8 @@ This article will show you two ways to modify the default style of a control:
 
 * [Modifying the Default Style Using Microsoft Blend](#modifying-the-default-style-using-microsoft-blend)
 
+* [Modifying the Default Style Using Visual Studio](#modifying-the-default-style-using-visual-studio)
+
 * [Modifying the Default Style By Extracting It From the Theme XAML File](#modifying-the-default-style-by-extracting-it-from-the-theme-xaml-file)
 
 For the purposes of this article, we will modify RadGridView's **FilteringDropDown** element, but the steps described can be applied to every control.
@@ -52,6 +54,8 @@ The **Create Style Resource** dialog will prompt you for the name of the style a
 
 For this example, we will choose to apply this style to all FilteringDropDown controls and place it in our **App.xaml** file.
 
+>tipIf you choose to define the style in the resources of the application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+
 #### __Figure 3: The create style resource window__
 
 ![](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_7.png)
@@ -79,6 +83,10 @@ Here is a snapshot of the final result:
 #### __Figure 7: Our modified FilteringDropDown__
 
 ![](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_6.png)
+
+## Modifying the Default Style Using Visual Studio
+
+You could also modify the default style of a control by using Visual Studio similarly to using Blend. 
 
 ## Modifying the Default Style By Extracting It From the Theme XAML File
 

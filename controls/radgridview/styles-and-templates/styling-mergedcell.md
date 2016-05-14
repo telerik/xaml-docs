@@ -51,8 +51,6 @@ You can apply a style to the merged cells, similar to:
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewMergedCellStyle__.
 
->tipIf you choose to define the style in the resources of the application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
-
 #### __Figure 1: Styled merged cells__
 
 ![RadGridView styled merged cells](images/gridview_merged_cells_5.png)

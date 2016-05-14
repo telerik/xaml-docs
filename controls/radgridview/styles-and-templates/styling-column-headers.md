@@ -12,19 +12,19 @@ position: 7
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewHeaderCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheadercell).
 
-#### __Figure 1: GridViewHeaderCell template structure__
-
-![RadGridView template structure](images/gridviewheadercell-template.png)
-
 In this article we will discuss the following topics:
 
 * [Targeting the GridViewHeaderCell element](#targeting-the-gridviewheadercell-element)
 
 * [Setting a Column's HeaderCellStyle](#setting-a-columns-headercellstyle)
 
+#### __Figure 1: GridViewHeaderCell template structure__
+
+![RadGridView template structure](images/gridviewheadercell-template.png)
+
 ## Targeting the GridViewHeaderCell element
 
-In order to style all RadGridView cells of an application, you should create an appropriate style targeting the __GridViewHeaderCell__ element.
+In order to style all header cells in your application, you should create an appropriate style targeting the __GridViewHeaderCell__ element.
 
 You have two options:
 

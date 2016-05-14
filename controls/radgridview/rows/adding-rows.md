@@ -13,7 +13,7 @@ position: 1
 Adding new items in the __RadGridView__ is done via the __GridViewNewRow__ control. It appears in the form of an empty row and allows you to enter a value for the field of each column.
 
 #### __Figure 1: Default appearance of GridViewNewRow__
-![](images/RadGridView_AddingNewRows_1.png)
+![Default appearance of GridViewNewRow](images/RadGridView_AddingNewRows_1.png)
 
 __RadGridView__ gives you the ability to make the newly inserted row visible. Also you can control its position. In order to enable this feature, you should set __RadGridView__'s __NewRowPosition__ property. It has three options:
         
@@ -22,7 +22,7 @@ __RadGridView__ gives you the ability to make the newly inserted row visible. Al
 * __Bottom__: Display the new row at the bottom after the last standard row. Please note that this mode is supported only when __GroupRenderMode__ is __Flat__.
  
 #### __Figure 2: Different positions of GridViewNewRow__
-![Rad Grid View addingnewrows 03](images/RadGridView_addingnewrows_03.png)
+![Different positions of GridViewNewRow](images/RadGridView_addingnewrows_03.png)
 
 > As of Q3 2013 the __ShowInsertRow__ property is marked as __Obsolete__. Instead of it, you can use __NewRowPosition__ property.
         
@@ -59,7 +59,7 @@ The default text of the __GridViewNewRow__ is *"Click here to add new item"*. Ho
 __Figure 3__ shows the result after the custom LocalizationManager is applied.
 
 #### __Figure 3: Appearance of RadGridView after modifying NewRow`s default text__
-![](images/gridview-newrow-text.PNG)
+![Appearance of RadGridView after modifying NewRow`s default text](images/gridview-newrow-text.PNG)
 
 To learn more about how to utilize __GridViewNewRow__ take a look at the [Adding New Entries]({%slug gridview-managing-data-add-new-entries%}) topic.
         

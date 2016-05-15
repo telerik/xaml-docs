@@ -12,7 +12,7 @@ position: 4
 
 
 
-This topic discusses different ways of loading a document in __RadPdfViewer__ and their customization options.
+This help article discusses different ways of loading a document in __RadPdfViewer__ and their customization options.
       
 
 * [Showing a PDF file](#showing-a-pdf-file)
@@ -28,7 +28,7 @@ __RadPdfViewer__ exposes a __DocumentSource__ property of type [FixedDocumentStr
 
 ###  Setting the DocumentSource in XAML
 
-First you need to declare the Telerik namespace as shown in __Example 1__.
+First, you need to declare the Telerik namespace as shown in __Example 1__.
 
 #### __[XAML] Example 1: Define Telerik namespace__
 
@@ -38,7 +38,7 @@ First you need to declare the Telerik namespace as shown in __Example 1__.
 
 
 
-After that, you can proceed to add the **PdfViewer** control to the user control:
+After that, you can proceed to add the **PdfViewer** control to the user control as shown in __Example 2__:
 
 #### __[XAML] Example 2: Create RadPdfViewer__
 
@@ -49,7 +49,7 @@ After that, you can proceed to add the **PdfViewer** control to the user control
 {{endregion}}
 
 
-In the example above, a file named "Sample.pdf" embedded in a "Sample Data" folder in the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project will be shown when the page is loaded. PdfViewerDemo is the name of the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project. 
+In __Example 2__, a file named "Sample.pdf" embedded in a "Sample Data" folder in the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project will be shown when the page is loaded. PdfViewerDemo is the name of the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project. 
 
 
 {% if site.site_name == 'Silverlight' %}You can also load files that are not on the client machine. For example, if you embed a Sample.pdf file in the Web project, you can load it like this: 
@@ -70,11 +70,11 @@ In the example above, a file named "Sample.pdf" embedded in a "Sample Data" fold
 
 ### Setting DocumentSource in Code-Behind
 
-In code-behind, you can set the DocumentSource to either a URI or a Stream.
+In code-behind, you can set the DocumentSource to either a URI or a stream.
 
-__Example 3__ shows how a PDF file can be loaded from a file embedded as a resource through a _Stream_:
+__Example 3__ shows how a PDF file can be loaded from a file embedded as a resource through a _stream_:
 
-#### __[C#] Example 3: Load PDF from stream__
+#### __[C#] Example 3: Load PDF from a stream__
 
 {{region radpdfviewer-showing-a-file_3}}
 	private void LoadFromStream(object sender, System.Windows.RoutedEventArgs e)
@@ -88,7 +88,7 @@ __Example 3__ shows how a PDF file can be loaded from a file embedded as a resou
 
 __Example 4__ shows how a PDF can be loaded from a file embedded as a resource by passing its URI:
 
-#### __[C#] Example 4: Load PDF from URI__
+#### __[C#] Example 4: Load PDF from a URI__
 
 {{region radpdfviewer-showing-a-file_4}}
 	private void LoadFromUri(object sender, System.Windows.RoutedEventArgs e)
@@ -99,10 +99,10 @@ __Example 4__ shows how a PDF can be loaded from a file embedded as a resource b
 
 
 
->In __Example 3 and 4__, PdfViewerDemo is the name of the project and the PDF file is embedded as a resource in a folder called SampleData.
+>In __Example 3__ and __Example 4__, PdfViewerDemo is the name of the project and the PDF file is embedded as a resource in a folder called SampleData.
 
 
-### Setting Document in Code-Behind
+### Setting the Document in Code-Behind
 
 __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create a document for __RadPdfViewer__. This allows you to easily import your documents directly using __PdfFormatProvider__ instead of __PdfDocumentSource__.
               
@@ -127,12 +127,12 @@ __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create 
 
 ## Binding the DocumentSource of RadPdfViewer
 
-The __DocumentSource__ of __RadPdfViewer__ is implemented as a dependency property and can be bound to a __URI__, __string__ representing a URI, or a __Stream__. This is done with the help of __PdfDocumentSourceValueConverter__, which caters to creating a PdfDocumentSource and presenting it to the viewer.
+The __DocumentSource__ of __RadPdfViewer__ is implemented as a dependency property and can be bound to a __URI__, __string__ representing a URI, or a __stream__. This is done with the help of __PdfDocumentSourceValueConverter__, which caters to creating a PdfDocumentSource and presenting it to the viewer.
         
 
-__Examples 6 and 7__ show how to declare the converter:
+__Example 6__ and __Example 7__ show how to declare the converter:
 
-#### __[XAML] Example 6: Define Fixed namespace__
+#### __[XAML] Example 6: Define a Fixed namespace__
 
 {{region radpdfviewer-showing-a-file_6}}
 	xmlns:fixed="clr-namespace:Telerik.Windows.Documents.Fixed;assembly=Telerik.Windows.Controls.FixedDocumentViewers"
@@ -140,7 +140,7 @@ __Examples 6 and 7__ show how to declare the converter:
 
 
 
-#### __[XAML] Example 7: Define PdfDocumentSourceValueConverter__
+#### __[XAML] Example 7: Define a PdfDocumentSourceValueConverter__
 
 {{region radpdfviewer-showing-a-file_7}}
 	<Grid.Resources>
@@ -150,10 +150,10 @@ __Examples 6 and 7__ show how to declare the converter:
 
 
 
-The bound property can be implemented as follows:
+The bound property can be implemented as shown in __Example 8__ and __Example 9__.:
 
 
-#### __[C#] Example 8: Create property__
+#### __[C#] Example 8: Create the property__
 
 {{region radpdfviewer-showing-a-file_8}}
 	public class Context
@@ -164,7 +164,7 @@ The bound property can be implemented as follows:
 
 Notice that regardless of the type of the property you choose to bind the DocumentSource of the **PdfViewer** to, the XAML is identical.
 
-#### __[XAML] Example 9: Bind DocumentSource property of RadPdfViewer__
+#### __[XAML] Example 9: Bind the DocumentSource property of RadPdfViewer__
 
 {{region radpdfviewer-showing-a-file_9}}
 	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Source, Converter={StaticResource PdfDocumentSourceValueConverter}}" />
@@ -173,14 +173,14 @@ Notice that regardless of the type of the property you choose to bind the Docume
 
 ## Specifying Reading Mode
 
-Starting from R2 2016, you can control the way the documents are loaded in RadPdfViewer. You can choose between loading the whole document in one go (as done in versions prior R2 2016) and loading it page by page. The second option means that it is no longer needed to parse the entire document in order to show it.
+Starting with the release of R2 2016, you can control the way the documents are loaded in RadPdfViewer. You can choose between loading the whole document at one time (as done in versions prior R2 2016) or loading it page by page. The second option means that you no longer needed to parse the entire document in order to show it.
         
 
 You can control how the document is loaded by setting the __PdfViewer.DefaultFormatProviderSettings__ property. This property is used when the OpenPdfDocumentCommand is triggered to open a PDF file and could be set to one of the settings exposed by the [FormatProviderSettings class](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_FormatProviderSettings.htm):
 
-* __ReadAllAtOnce__: This value is used by default. When ReadAllAtOnce is applied, the document stream will be copied into a memory stream, which is used by PdfViewer. When you are loading a document through an URI in combination with ReadAllAtOnce, the stream to the resource will be closed as soon as it is copied to the memory. 
+* __ReadAllAtOnce__: This value is used by default. When ReadAllAtOnce is applied, the document stream will be copied into a memory stream, which is used by PdfViewer. When you are loading a document through an URI in combination with ReadAllAtOnce, the stream to the resource will be closed as soon as it is copied to memory. 
 
-* __ReadOnDemand__: Each page of the document is loaded dynamically when necessary (to be shown in the PdfViewer, printed, etc.)  and it is unloaded once it becomes invisible. The stream that holds the document stays opened while the document is used in PdfViewer.
+* __ReadOnDemand__: Each page of the document is loaded dynamically when necessary (to be shown in the PdfViewer, printed, etc.) and it is unloaded once it becomes invisible. The stream that holds the document stays opened while the document is used in PdfViewer.
             
 
 #### __[C#] Example 10: Setting DefaultFormatProviderSettings__
@@ -191,7 +191,7 @@ You can control how the document is loaded by setting the __PdfViewer.DefaultFor
 
 
 
-Another option to set the reading mode is through the constructors that accept __FormatProviderSettings__  when creating a new instance of the **PdfDocumentSource** class. The __FormatProviderSettings.ReadAllAtOnce__ predefined settings are used by default. The PdfDocumentSource used in combination with __ReadAllAtOnce__, will throw the **Loaded event** after applying the document to the PdfViewer.
+Another option to set the reading mode is through the constructors that accept __FormatProviderSettings__ when creating a new instance of the **PdfDocumentSource** class. The __FormatProviderSettings.ReadAllAtOnce__ predefined settings are used by default. The PdfDocumentSource used in combination with __ReadAllAtOnce__ will throw the **Loaded event** after applying the document to the PdfViewer.
 
 If you want to change this behavior to read the document pages when needed, you can create a new __PdfDocumentSource__ instance with __FormatProviderSettings.ReadOnDemand__ predefined settings.            
 

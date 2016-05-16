@@ -46,7 +46,7 @@ You have two options:
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewCellStyle__.
 
-#### __Figure 1: RadGridView with styled cells__
+#### __Figure 2: RadGridView with styled cells__
 
 ![RadGridView with styled cells](images/RadGridView-Cell-Styled.png)
 

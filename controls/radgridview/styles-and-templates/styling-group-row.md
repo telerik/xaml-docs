@@ -20,7 +20,7 @@ In this article we will discuss the following topics:
 
 * [Targeting the GroupHeaderRow Element](#targeting-the-gridviewgrouprow-element)
 
-* [RadGridView's GroupRowStyle](#setting-radgridviews-grouprowstyle)
+* [Setting RadGridView's GroupRowStyle](#setting-radgridviews-grouprowstyle)
 
 #### __Figure 1: GridViewGroupRow template structure__
 

@@ -80,6 +80,8 @@ The __RadGridView__ exposes the __GroupRowStyle__ property of type __Style__. It
 
 # See Also
 
+ * [Styling Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%})
+
  * [Grouping Modes]({%slug gridview-grouping-groupingmodes%})
 
  * [Basic Grouping]({%slug gridview-grouping-basics%})

@@ -45,11 +45,7 @@ You have two options:
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
 
-#### __Figure 1: RadGridView with styled cells__
-
-![RadGridView with styled cells](images/RadGridView-Cell-Styled.png)
-
-## Setting RadGridView's RowStyle and AlternateRowsStyle
+## Setting RadGridView's RowStyle and AlternateRowStyle
 
 __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of type __Style__. __GridViewRow__ elements can be styled by providing an appropriate style for each of these properties.
 
@@ -58,10 +54,14 @@ __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of
 #### __[XAML] Example 2: Setting a column's CellStyle__
 
 	{{region gridview-styling-row-2}}
-	<telerik:GridViewDataColumn RowStyle="{StaticResource GridViewRowStyle}"
-								AlternationCount="2"
-								AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
+	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
+						 AlternationCount="2"
+						 AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
 	{{endregion}}
+
+#### __Figure 2: RadGridView with styled rows__
+
+![RadGridView with styled cells](images/gridview-styled-row-and-alternaterow.png)
 
 # See Also
 

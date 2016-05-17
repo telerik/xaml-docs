@@ -4,8 +4,7 @@ page_title: Override Default RadGridView Styles
 description: Override Default RadGridView Styles
 slug: how-to-override-default-gridview-styles
 tags: override,default,radgridview,styles
-published: True
-position: 18
+published: False
 ---
 
 # Override Default RadGridView Styles

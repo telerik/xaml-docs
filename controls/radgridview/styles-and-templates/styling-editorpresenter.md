@@ -1,43 +1,42 @@
 ---
-title: Styling GridViewEditorPresenter
-page_title: Styling GridViewEditorPresenter
-description: Styling GridViewEditorPresenter
+title: Styling Editor Presenter
+page_title: Styling Editor Presenter
+description: Styling Editor Presenter
 slug: gridview-styling-editorpresenter
 tags: styling,gridvieweditorpresenter
 published: True
 position: 6
 ---
 
-# Styling GridViewEditorPresenter
+# Styling Editor Presenter
 
->tipBefore reading this topic, you might find useful to get familiar with the [basic overview]({%slug gridview-stylines-and-templates-overview%}) on styling the visual appearance of the __RadGridView__ and its elements.
-        
-If you want to change the appearance of a cell when it enters edit mode you should predefine the template of __GridViewEditorPresenter__. This element is a plain presenter used to display the editors for the cells.
-        
+If you want to change the appearance of a cell when it enters edit mode you should modify the style of the __GridViewEditorPresenter__. This element is a plain presenter used to display the editors for the cells.
 
-Here is an example of how the template of the GridViewEditorPresent looks like:
-        
+>To learn how to modify the default styles of a control, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __XAML__
+>You could also learn how to extract control templates in the [following article]({%slug styling-apperance-editing-control-templates%}).
 
-{{region gridview-styling-editorpresenter_1}}
+#### __[XAML] Example 1: Styling the GridViewEditorPresenter__
 
-	<Grid> 
-		<ContentPresenter Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	  <Border x:Name="ValidationErrorElement" Visibility="Collapsed" CornerRadius="1" BorderBrush="{StaticResource ControlOuterBorder_Invalid}" BorderThickness="1" Margin="1 1 1 2"/>
-	</Grid>
-{{endregion}}
+	{region gridview-styling-editorpresenter_1}}
+    <Style TargetType="{x:Type telerik:GridViewEditorPresenter}">
+		<Setter Property="Template" Value="{StaticResource GridViewEditorPresenterTemplate}"/>
+        <Setter Property="Padding" Value="5"/>
+    </Style>
+	{{endregion}}
 
->The __GridViewEditorPresenter__ element is located in the __Telerik.Windows.Controls.GridView__ namespace of the __Telerik.Windows.Controls.GridView__ assembly.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewEditorPresenterStyle__.
+
+#### __Figure 2: RadGridView with styled GridViewEditorPresenter__
+
+![RadGridView with styled GridViewEditorPresenter](images/gridview-styled-editorpresenter.png)
             
-When working in Expression Blend, the namespaces that are needed will be added automatically.
-
-If you would like to change the appearance of the editor itself, then you can create a simple style targeted at the corresponding editor.
-
-For example for GridViewDataColumn bound to a text property, the default editor will be a TextBox. To change the appearance in edit mode, you should define styles for the standard TextBox control as its default editor and this presenter. Then you can set the editor style (for ex. targeting the TextBox element) through setting the EditorStyle property of a column.
+>If you would like to change the appearance of the editor itself, then you should create a simple style targeted at the corresponding editor. You can have a look at the [Styling Column Editor]({%slug radgridview-styling-column-editor%}) for more information.
         
 # See Also
 
- * [Overview]({%slug gridview-stylines-and-templates-overview%})
+ * [Styling Column Editor]({%slug radgridview-styling-column-editor%})
 
- * [Styling a Cell]({%slug gridview-styling-cell%})
+ * [Modifying Default Styles]({%slug gridview-modifying-default-styles%})
+
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).

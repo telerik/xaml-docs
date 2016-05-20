@@ -5,18 +5,18 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9">
 		<meta name="page-position" content="{{page.position}}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ page.page_title || page.title }}</title>
+        <title>{{ page.page_title || page.title }} | UI for {{site.site_name}} Documentation by Progress</title>
 		
-        <link href="{{site.baseurl}}/favicon.ico?Version=2014" rel="shortcut icon" />
+        <link href="{{site.baseurl}}/favicon.ico?Version=2016" rel="shortcut icon" />
 		
         {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
-        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.1.112/styles/kendo.common.min.css" />
         {% stylesheet styles %}
         {% stylesheet theme %}
         {% stylesheet branding %}
         {% stylesheet highlight %}
-        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.12.3.js"></script>
+         <script src="//kendo.cdn.telerik.com/2016.1.112/js/kendo.web.min.js"></script>
         {% javascript prettify %}
         {% javascript app %}
 		{% javascript prettify %}

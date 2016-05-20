@@ -5,7 +5,7 @@ description: Localization
 slug: radribbonview-localization
 tags: localization
 published: True
-position: 6
+position: 3
 ---
 
 # Localization

@@ -10,8 +10,6 @@ position: 1
 
 # Visual Structure
 
-This section defines the terms and concepts used in the scope of __RadBusyIndicator__ that you need to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadBusyIndicator__.
-
 __RadBusyIndicator__ is a content control which gives you the ability to notify the user that there is an ongoing process in the application. The most important part of its visual representation is the __ProgressBar__ and the busy content which purpose is to further inform the user about the current state of the ongoing process.
 
 ![](images/radbusyindicator_visual_structure_010.png)

@@ -15,7 +15,7 @@ This article will show you how to style RadPropertyGrid's group rows conditional
 >tipLearn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
 
 
-Assume we have a RadPropertyGrid bound to an Employee object. You can view the initial setup in the [Styling Groups](%slug radpropertygrid-groupstyle%) article. At first the appearance of the control looks like this:
+Assume we have a RadPropertyGrid bound to an Employee object. You can view the initial setup in the [Styling Groups]({%slug radpropertygrid-groupstyle%}) article. At first the appearance of the control looks like this:
 
 ![](images/RadPropertyGrid_groupstyle1.png)
 

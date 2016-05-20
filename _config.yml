@@ -72,6 +72,7 @@ controls/radribbonview/features/ribbon-controls/ribbon-window-sl.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-silverlight.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-viewmodel.md,
+controls/radspellchecker/sdk-examples.md,
 controls/radspreadsheet/model/import/export/import-export-xlsxformatprovider-silverlight.md,
 controls/radspreadsheet/model/import/export/import-export-csvformatprovider-silverlight.md,
 controls/radspreadsheet/model/import/export/import-export-txtformatprovider-silverlight.md,
@@ -85,7 +86,8 @@ controls/radtreeview/how-to/bind-hierarchical-data-use-containerbindingcollectio
 controls/radtreeview/how-to/howto-bind-treeview.md,
 controls/radcoverflow,
 controls/raddomaindatasource,
-controls/radupload,]
+controls/radupload,
+controls/radgridview/troubleshooting/corrupted_extended-selection.md,]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -194,6 +196,9 @@ navigation:
     controls/raddocking/theming:
         title: Theming
         position: 95
+    controls/raddocking/features/save-load-layout:
+        title: Save/Load Layout
+        position: 4
     controls/radganttview/features/columns:
         title: Columns
         position: 0	
@@ -342,6 +347,8 @@ navigation:
         title: RadHeatMap
     controls/radhtmlplaceholder:
         title: RadHtmlPlaceHolder
+    controls/radlayoutcontrol:
+        title: RadLayoutControl
     controls/radlegend:
         title: RadLegend
     controls/radmap:
@@ -362,6 +369,15 @@ navigation:
         title: RadRating
     controls/radribbonview:
         title: RadRibbonView
+    controls/radribbonview/features:
+        title: Features
+        position: 4
+    controls/radribbonview/general-information:
+        title: General Information
+        position: 5
+    controls/radribbonview/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 6
     controls/radribbonview/styling-and-appearance:
         title: Styling and Appearance
     controls/radribbonview/features/layout-controls:
@@ -376,6 +392,14 @@ navigation:
         title: RadSparkLine
     controls/radtabcontrol:
         title: RadTabControl
+    controls/radtabcontrol/features/tab-item:
+        title: Tab Item
+    controls/radtabcontrol/populating-with-tabs:
+        title: Populating with Tabs
+    controls/radtabcontrol/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radtabcontrol/templating:
+        title: Templating
     controls/radtileview:
         title: RadTileView
     controls/radtoolbar:

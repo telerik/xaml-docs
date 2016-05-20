@@ -12,6 +12,30 @@ position: 0
 
 This article demonstrates how you can change the default look of the __RadCartesianChart__ series.      
 
+* [Customizing Point Series](#customizing-point-series)
+	* [PointSeries](#pointseries)
+	* [ScatterPointSeries](#scatterpointseries)
+* [Customizing Line Series](#customizing-line-series)
+	* [LineSeries](#lineseries)
+	* [SplineSeries](#splineseries)
+	* [StepLineSeries](#steplineseries)
+	* [ScatterLineSeries](#scatterlineseries)
+	* [ScatterSplineSeries](#scattersplineseries)
+* [Customizing Area Series](#customizing-area-series)
+	* [AreaSeries](#lineseries)
+	* [RangeSeries](#rangeseries)
+	* [StepAreaSeries](#stepareaseries)
+	* [SplineAreaSeries](#splineareaseries)
+	* [ScatterAreaSeries](#scatterareaseries)
+	* [ScatterSplineAreaSeries](#scattersplineareaseries)
+* [Customizing Bar Series](#customizing-bar-series)      
+ 	* [BarSeries](#barseries)
+	* [RangeBarSeries](#rangebarseries)
+* [Customizing Financial Series](#customizing-financial-series)
+	* [OhlcSeries](#ohlcseries)
+	* [CandlestickSeries](#candlestickseries)	
+* [Customizing  DataPoints DataTemplate](#customizing-datapoints-datatemplate)		
+	  
 ## Customizing Point Series
 
 ### PointSeries
@@ -20,16 +44,14 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
             
 #### XAML
 
-{{region radchartview-customizing-cartesianchart-series}}
-
-    <telerik:PointSeries.DefaultVisualStyle>
-        <Style TargetType="Path">
-              <Setter Property="Fill" Value="YellowGreen"/>
-              <Setter Property="Stroke" Value="Red"/>
-              <Setter Property="StrokeThickness" Value="1"/>
-        </Style>
-    </telerik:PointSeries.DefaultVisualStyle>
-  
+{{region radchartview-customizing-cartesianchart-series1}}
+	<telerik:PointSeries.DefaultVisualStyle>
+		<Style TargetType="Path">
+			  <Setter Property="Fill" Value="YellowGreen"/>
+			  <Setter Property="Stroke" Value="Red"/>
+			  <Setter Property="StrokeThickness" Value="1"/>
+		</Style>
+	</telerik:PointSeries.DefaultVisualStyle>  
 {{endregion}}
 
 >tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
@@ -42,16 +64,14 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 
 #### XAML
 
-{{region radchartview-customizing-cartesianchart-series2}}	
-    
+{{region radchartview-customizing-cartesianchart-series2}}	    
     <telerik:ScatterPointSeries.DefaultVisualStyle>
         <Style TargetType="Path">
             <Setter Property="Stroke" Value="Green"/>
             <Setter Property="Fill" Value="Orange"/>
             <Setter Property="StrokeThickness" Value="2"/>
         </Style>
-    </telerik:ScatterPointSeries.DefaultVisualStyle>
-  
+    </telerik:ScatterPointSeries.DefaultVisualStyle>  
 {{endregion}}
 
 >tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
@@ -169,73 +189,124 @@ This series expose the following styling properties:
 
 * __StrokeShapeStyle__ - it is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
                 
-#### XAML
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series8}}
+	{{region radchartview-customizing-cartesianchart-series8}}
 
-    <telerik:AreaSeries.StrokeShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Stroke" Value="Red"/>
-            <Setter Property="StrokeDashArray" Value="10 5"/>
-            <Setter Property="StrokeThickness" Value="3"/>
-        </Style>
-    </telerik:AreaSeries.StrokeShapeStyle>
+		<telerik:AreaSeries.StrokeShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Stroke" Value="Red"/>
+				<Setter Property="StrokeDashArray" Value="10 5"/>
+				<Setter Property="StrokeThickness" Value="3"/>
+			</Style>
+		</telerik:AreaSeries.StrokeShapeStyle>
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-AreaSeries-StrokeShapeStyle.png)
+	![radchartview-styles-and-templates-Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-AreaSeries-StrokeShapeStyle.png)
 
 * __AreaShapeStyle__ - it is of type __Style__ and determines the appearance of the area, locked between the axis and the line. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
-                
-#### XAML
-{{region radchartview-customizing-cartesianchart-series9}}
-    <telerik:AreaSeries.AreaShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Fill" Value="Bisque"/>
-        </Style>
-    </telerik:AreaSeries.AreaShapeStyle>		  
-{{endregion}}
+   
+	#### XAML   
 
-![radchartview-styles-and-templates-Area Series-Area Shape Style](images/radchartview-styles-and-templates-AreaSeries-AreaShapeStyle.png)
+	{{region radchartview-customizing-cartesianchart-series9}}
+		<telerik:AreaSeries.AreaShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Fill" Value="Bisque"/>
+			</Style>
+		</telerik:AreaSeries.AreaShapeStyle>		  
+	{{endregion}}
+
+	![radchartview-styles-and-templates-Area Series-Area Shape Style](images/radchartview-styles-and-templates-AreaSeries-AreaShapeStyle.png)
+
+### RangeSeries
+
+This series expose the following styling properties:
+
+* __StrokeShapeStyle__ - it is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
+
+	#### XAML
+	{{region radchartview-customizing-cartesianchart-series10}}
+		<telerik:RangeSeries.StrokeShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Stroke" Value="Red"/>
+				<Setter Property="StrokeDashArray" Value="10 5"/>
+				<Setter Property="StrokeThickness" Value="3"/>
+			</Style>
+		</telerik:RangeSeries.StrokeShapeStyle>
+	{{endregion}}
+
+	![radchartview-styles-and-templates-Area Series-Range Area Shape Style](images/radchartview-styles-and-templates-RangeAreaSeries-StrokeShapeStyle.png)
+	
+* __StrokeMode__ - it is Enumeration type and determines how the RangeSeries area outline should be painted or not. By default is set to __LowAndHighPoints__. 
+
+	#### XAML   
+	{{region radchartview-customizing-cartesianchart-series11}}
+		<telerik:RangeSeries  StrokeMode="HighPoints" >
+			<telerik:RangeSeries.StrokeShapeStyle>
+				<Style TargetType="Path">
+					<Setter Property="Stroke" Value="Red"/>
+					<Setter Property="StrokeDashArray" Value="10 5"/>
+					<Setter Property="StrokeThickness" Value="3"/>
+				</Style>
+			</telerik:RangeSeries.StrokeShapeStyle>
+		</telerik:RangeSeries>	  
+	{{endregion}}
+	
+	![radchartview-styles-and-templates-Area Series-Range Area Shape Style](images/radchartview-styles-and-templates-RangeAreaSeries-StrokeMode.png)
+	
+* __AreaShapeStyle__ - it is of type __Style__ and determines the appearance of the area, locked between the axis and the line. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
+
+	#### XAML   
+	{{region radchartview-customizing-cartesianchart-series12}}
+		<telerik:RangeSeries.AreaShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Fill" Value="Bisque"/>
+			</Style>
+		</telerik:RangeSeries.AreaShapeStyle>		  
+	{{endregion}}
+
+	![radchartview-styles-and-templates-Area Series-Range Area Shape Style](images/radchartview-styles-and-templates-RangeAreaSeries-AreaShapeStyle.png)
+	
+>tipRangeSeries expose several additional properties you can use to style its appearance: __Stroke__, __StrokeThickness__, __Fill__, __DashArray__.
 
 ### StepAreaSeries
 
-This series expose the following styling properties:
-            
+This series expose the following styling properties:            
 
 * __StrokeShapeStyle__ - it is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
                 
-#### XAML
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series10}}
+	{{region radchartview-customizing-cartesianchart-series13}}
 
-    <telerik:StepAreaSeries.StrokeShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Stroke" Value="Red"/>
-            <Setter Property="StrokeDashArray" Value="10 5"/>
-            <Setter Property="StrokeThickness" Value="3"/>
-        </Style>
-    </telerik:StepAreaSeries.StrokeShapeStyle>
+		<telerik:StepAreaSeries.StrokeShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Stroke" Value="Red"/>
+				<Setter Property="StrokeDashArray" Value="10 5"/>
+				<Setter Property="StrokeThickness" Value="3"/>
+			</Style>
+		</telerik:StepAreaSeries.StrokeShapeStyle>
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Step Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-StepAreaSeries-StrokeShapeStyle.png)
+	![radchartview-styles-and-templates-Step Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-StepAreaSeries-StrokeShapeStyle.png)
 
 * __AreaShapeStyle__ - it is of type __Style__ and determines the appearance of the area, locked between the axis and the line. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
                 
-#### XAML
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series11}}
+	{{region radchartview-customizing-cartesianchart-series14}}
 
-    <telerik:StepAreaSeries.AreaShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Fill" Value="Bisque"/>
-        </Style>
-    </telerik:StepAreaSeries.AreaShapeStyle>		
+		<telerik:StepAreaSeries.AreaShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Fill" Value="Bisque"/>
+			</Style>
+		</telerik:StepAreaSeries.AreaShapeStyle>		
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Step Area Series-Area Shape Style](images/radchartview-styles-and-templates-StepAreaSeries-AreaShapeStyle.png)
+	![radchartview-styles-and-templates-Step Area Series-Area Shape Style](images/radchartview-styles-and-templates-StepAreaSeries-AreaShapeStyle.png)
 
 ### SplineAreaSeries
 
@@ -244,115 +315,114 @@ This series expose the following styling properties:
 
 * __StrokeShapeStyle__ - it is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
                 
-#### XAML
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series12}}
+	{{region radchartview-customizing-cartesianchart-series15}}
 
-    <telerik:SplineAreaSeries.StrokeShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Stroke" Value="Red"/>
-            <Setter Property="StrokeDashArray" Value="10 5"/>
-            <Setter Property="StrokeThickness" Value="3"/>
-        </Style>
-    </telerik:SplineAreaSeries.StrokeShapeStyle>		  
+		<telerik:SplineAreaSeries.StrokeShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Stroke" Value="Red"/>
+				<Setter Property="StrokeDashArray" Value="10 5"/>
+				<Setter Property="StrokeThickness" Value="3"/>
+			</Style>
+		</telerik:SplineAreaSeries.StrokeShapeStyle>		  
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Spline Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-SplineAreaSeries-StrokeShapeStyle.png)
+	![radchartview-styles-and-templates-Spline Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-SplineAreaSeries-StrokeShapeStyle.png)
 
 * __AreaShapeStyle__ - it is of type __Style__ and determines the appearance of the area, locked between the axis and the line. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
                 
-#### XAML
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series13}}
+	{{region radchartview-customizing-cartesianchart-series16}}
 
-    <telerik:SplineAreaSeries.AreaShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Fill" Value="Bisque"/>
-        </Style>
-    </telerik:SplineAreaSeries.AreaShapeStyle>		  
+		<telerik:SplineAreaSeries.AreaShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Fill" Value="Bisque"/>
+			</Style>
+		</telerik:SplineAreaSeries.AreaShapeStyle>		  
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Spline Area Series-Area Shape Style](images/radchartview-styles-and-templates-SplineAreaSeries-AreaShapeStyle.png)
+	![radchartview-styles-and-templates-Spline Area Series-Area Shape Style](images/radchartview-styles-and-templates-SplineAreaSeries-AreaShapeStyle.png)
 
 ### ScatterAreaSeries
 
 This series expose the following styling properties:
             
 
-* __StrokeShapeStyle__ - it is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component. You can set the property in XAML like this:
-                
-#### XAML
+* __StrokeShapeStyle__ - it is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
+					
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series14}}
+	{{region radchartview-customizing-cartesianchart-series17}}
 
-     <telerik:ScatterAreaSeries.StrokeShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Stroke" Value="Red"/>
-            <Setter Property="StrokeDashArray" Value="10 5"/>
-            <Setter Property="StrokeThickness" Value="3"/>
-        </Style>
-    </telerik:ScatterAreaSeries.StrokeShapeStyle>
+		 <telerik:ScatterAreaSeries.StrokeShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Stroke" Value="Red"/>
+				<Setter Property="StrokeDashArray" Value="10 5"/>
+				<Setter Property="StrokeThickness" Value="3"/>
+			</Style>
+		</telerik:ScatterAreaSeries.StrokeShapeStyle>
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Scatter Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-ScatterAreaSeries-StrokeShapeStyle.png)
+	![radchartview-styles-and-templates-Scatter Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-ScatterAreaSeries-StrokeShapeStyle.png)
 
 * __AreaShapeStyle__ - it is of type __Style__ and determines the appearance of the area, locked between the axis and the line. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component. You can set the property in XAML like this:
                 
-#### XAML
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series15}}
+	{{region radchartview-customizing-cartesianchart-series18}}
 
-    <telerik:ScatterAreaSeries.AreaShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Fill" Value="Bisque"/>
-        </Style>
-    </telerik:ScatterAreaSeries.AreaShapeStyle>
+		<telerik:ScatterAreaSeries.AreaShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Fill" Value="Bisque"/>
+			</Style>
+		</telerik:ScatterAreaSeries.AreaShapeStyle>
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Scatter Area Series-Area Shape Style](images/radchartview-styles-and-templates-ScatterAreaSeries-AreaShapeStyle.png)
+	![radchartview-styles-and-templates-Scatter Area Series-Area Shape Style](images/radchartview-styles-and-templates-ScatterAreaSeries-AreaShapeStyle.png)
 
 ### ScatterSplineAreaSeries
 
-This series expose the following styling properties:
-            
+This series expose the following styling properties:       
 
 * __StrokeShapeStyle__ - it is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component. You can set the property in XAML like this:
                 
-#### XAML
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series16}}
+	{{region radchartview-customizing-cartesianchart-series19}}
 
-    <telerik:ScatterSplineAreaSeries.StrokeShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Stroke" Value="Red"/>
-            <Setter Property="StrokeDashArray" Value="10 5"/>
-            <Setter Property="StrokeThickness" Value="3"/>
-        </Style>
-    </telerik:ScatterSplineAreaSeries.StrokeShapeStyle>
+		<telerik:ScatterSplineAreaSeries.StrokeShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Stroke" Value="Red"/>
+				<Setter Property="StrokeDashArray" Value="10 5"/>
+				<Setter Property="StrokeThickness" Value="3"/>
+			</Style>
+		</telerik:ScatterSplineAreaSeries.StrokeShapeStyle>
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Scatter Spline Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-ScatterSplineAreaSeries-StrokeShapeStyle.png)
+	![radchartview-styles-and-templates-Scatter Spline Area Series-Stroke Shape Style](images/radchartview-styles-and-templates-ScatterSplineAreaSeries-StrokeShapeStyle.png)
 
 * __AreaShapeStyle__ - it is of type __Style__ and determines the appearance of the area, locked between the axis and the line. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component. You can set the property in XAML like this:
                 
-#### XAML
+	#### XAML
 
-{{region radchartview-customizing-cartesianchart-series17}}
+	{{region radchartview-customizing-cartesianchart-series20}}
 
-    <telerik:ScatterSplineAreaSeries.AreaShapeStyle>
-        <Style TargetType="Path">
-            <Setter Property="Fill" Value="Bisque"/>
-        </Style>
-    </telerik:ScatterSplineAreaSeries.AreaShapeStyle>
+		<telerik:ScatterSplineAreaSeries.AreaShapeStyle>
+			<Style TargetType="Path">
+				<Setter Property="Fill" Value="Bisque"/>
+			</Style>
+		</telerik:ScatterSplineAreaSeries.AreaShapeStyle>
 
-{{endregion}}
+	{{endregion}}
 
-![radchartview-styles-and-templates-Scatter Spline Area Series-Area Shape Style](images/radchartview-styles-and-templates-ScatterSplineAreaSeries-AreaShapeStyle.png)
+	![radchartview-styles-and-templates-Scatter Spline Area Series-Area Shape Style](images/radchartview-styles-and-templates-ScatterSplineAreaSeries-AreaShapeStyle.png)
 
 ## Customizing Bar Series
 
@@ -362,7 +432,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
             
 #### XAML
 
-{{region radchartview-customizing-cartesianchart-series18}}
+{{region radchartview-customizing-cartesianchart-series21}}
 
     <telerik:BarSeries.DefaultVisualStyle>
       <Style TargetType="Border">
@@ -382,7 +452,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 
 This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Border](http://msdn.microsoft.com/en-us/library/system.windows.controls.border(v=vs.110).aspx) component. You can set the property in XAML like this:
 #### XAML
-{{region radchartview-customizing-cartesianchart-series}}
+{{region radchartview-customizing-cartesianchart-series22}}
     <telerik:RangeBarSeries.DefaultVisualStyle>
       <Style TargetType="Border">
           <Setter Property="Background" Value="YellowGreen"/>
@@ -405,8 +475,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
             
 #### XAML
 
-{{region radchartview-customizing-cartesianchart-series}}
-
+{{region radchartview-customizing-cartesianchart-series23}}
     <telerik:OhlcSeries.DefaultVisualStyle>
       <Style TargetType="telerikChartView:OhlcStick">
           <Setter Property="MinHeight" Value="1"/>
@@ -415,7 +484,6 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
           <Setter Property="DownStroke" Value="Red"/>
       </Style>
     </telerik:OhlcSeries.DefaultVisualStyle>
-
 {{endregion}}
 
 >tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
@@ -429,7 +497,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 
 #### XAML
 
-{{region radchartview-customizing-cartesianchart-series}}
+{{region radchartview-customizing-cartesianchart-series24}}
     <telerik:CandlestickSeries.DefaultVisualStyle>
         <Style TargetType="telerikChartView:Candlestick">
             <Setter Property="MinHeight" Value="1"/>
@@ -444,20 +512,17 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 
 ![radchartview-styles-and-templates-Candlestick Series-defaultvisualstyle](images/radchartview-styles-and-templates-CandlestickSeries-defaultvisualstyle.png)
 
-## Customizing  DataPoints DataTemplate
+## Customizing DataPoints DataTemplate
 
-All series supported by the __RadCartesianChart__ expose a __PointTemplate__ property.
-        
+All series supported by the __RadCartesianChart__ expose a __PointTemplate__ property.        
 
->tipThis property should be used only when the __DefaultVisualStyle__ cannot be used.
-          
+>tipThis property should be used only when the __DefaultVisualStyle__ cannot be used.        
 
 It is of type __DataTemplate__ and gets or sets the template that describes the visual representation of the __DataPoints__ in a series. You can set the property in XAML like this:
         
 #### XAML
 
-{{region radchartview-customizing-cartesianchart-series}}
-
+{{region radchartview-customizing-cartesianchart-series25}}
     <telerik:PointSeries>
       <telerik:PointSeries.PointTemplate>
           <DataTemplate>
@@ -465,7 +530,6 @@ It is of type __DataTemplate__ and gets or sets the template that describes the 
           </DataTemplate>
       </telerik:PointSeries.PointTemplate>
     </telerik:PointSeries>
-
 {{endregion}}
 
 
@@ -474,7 +538,7 @@ The above definition will change the default visualization of the DataPoint visu
 ![radchartview-custom-point-template](images/radchartview-custom-point-template.png)
 
 # See Also
-
+ * [Getting Started]({%slug radchartview-introduction%})
  * [Customizing PolarChart Series]({%slug radchartview-styles-and-templates-customizing-polarchart-series%})
-
  * [Customizing PieChart Series]({%slug radchartview-styles-and-templates-customizing-piechart-series%})
+ * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

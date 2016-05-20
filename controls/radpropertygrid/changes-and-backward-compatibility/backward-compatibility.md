@@ -10,60 +10,50 @@ position: 1
 
 # Backward Compatibility
 
-
-
 ## Latest Release Notes
 
 You can check the latest Release Notes{% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
 
-##  Q1 2014
-      
+## R1 2016
 
-* Changed: CollectionEditor's default IsReadOnly state to ReadOnly, instead of Disabled
-          
+* Removed: **SelectedField** and **SelectedFieldChanged**
 
-##  Q1 2013
-      
+## R1 2014
 
-* PropertyDefinition's Binding property is now of type BindingBase
-          
+* Changed: **CollectionEditor**'s default **IsReadOnly** state to **ReadOnly**, instead of **Disabled**
 
-* Obsolete: SelectedField property of RadPropertyGrid (SelectedPropertyDefinition should be used instead)
-          
+## R1 2013
 
-* Changed: PropertyDefinitionsCollection is now ObservableItemCollection. Performance tip: Notifications should be suspended when bulk insert operations are executed
-          
+* PropertyDefinition's **Binding** property is now of type **BindingBase**
 
-## Q3 2012
-      
+* Obsolete: **SelectedField** property of RadPropertyGrid (**SelectedPropertyDefinition** should be used instead)    
+
+* Changed: **PropertyDefinitionsCollection** is now **ObservableItemCollection**. 
+
+>Performance tip: Notifications should be suspended when bulk insert operations are executed
+
+## R3 2012
 
 * Public method __Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition.DFSFilter__ is removed. It has never been supposed to be public.
-          
 
-## Q2 2012 SP1
+## R2 2012 SP1
 
 * __OrderIndex__  is now __DependencyProperty__
 
-##  Q2 2012
+##  R2 2012
 
-* __AutoBindBehavior__ now supports source different from __RadPropertyGrid__'s Item.
-          
+* __AutoBindBehavior__ now supports source different from RadPropertyGrid's **Item**.
 
 * PropertyGridField editor will use a __TwoWay__ binding if such is specified in its  __PropertyDefinition__.
-          
 
-## Q1 2012 SP1
-    
+## R1 2012 SP1
 
-* __PropertyDefinition’s IsReadonly__ property is now a __DependencyProperty__.
-          
+* PropertyDefinition’s __IsReadonly__ property is now a __DependencyProperty__.
 
-## Q1 2012
+## R1 2012
 
 * __NestedPropertiesVisibility__ is now of type __System.Windows.Visibility__.
-          
 
-## Q2 2011 Beta
+## R2 2011 Beta
 
 Telerik RadPropertyGrid has been just added to the Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite.
-        

@@ -193,11 +193,12 @@ Styles can also be used to customize the appearance of the text in the document.
 
 The most important specific that must be mentioned is that in order to print a document, it must be assigned to a RadRichTextBox in the Visual Tree. This means that there must be an editor with Visibility=”Visible” in the page that is shown when printing is initiated. The control can be in a row with Height=”0” if showing the document is unwanted.
         
-
+{% if site.site_name == 'Silverlight' %}
 Secondly, if the document you are creating is somewhat bigger, it should be created before the button that prints the document is clicked. This is so because creating the document can take some time and this could cause a SecurityException to be thrown if the allowed time limit between the user-initiated action and the printing is exceeded. More information on the behavior can be found in MSDN:[http://msdn.microsoft.com/en-us/library/ff382752(v=vs.95).aspx#common_dialogs](http://msdn.microsoft.com/en-us/library/ff382752(v=vs.95).aspx#common_dialogs)
 
+
 One of the solutions is to have the document created and shown inside a RadRichTextBox and only then proceed to actually print it. If the RadRichTextBox is set as read-only, that would result in a behavior similar to print-preview.
-        
+{% endif %}     
 
 # See Also
 

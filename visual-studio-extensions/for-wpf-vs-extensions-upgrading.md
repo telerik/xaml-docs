@@ -59,8 +59,8 @@ Notes:
 
 # See Also
 
- * [Project creation and configuration]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
+ * [Configure Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
 
- * [Automatic Dependency resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
+ * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
 
- * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})

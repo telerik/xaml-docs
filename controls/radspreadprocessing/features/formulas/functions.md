@@ -594,7 +594,14 @@ Uses an index to choose a value from a reference or array</td></tr><tr><td>
 
 LOOKUP</td><td>
 
-Looks up values in a vector or array</td></tr></table>
+Looks up values in a vector or array</td></tr>
+
+<tr><td>
+INDIRECT</td><td>
+
+Returns the cell reference specified by a text string. The references are evaluated immediately to display their values. The text string, passed as an argument could be a reference to a cell that contains an A1-style reference, a name defined as a reference, or a reference to a cell as a text string</td></tr>
+
+</table>
 <table><tr><th>
 
 Math and Trigonometry Functions</th><th></th></tr><tr><td>

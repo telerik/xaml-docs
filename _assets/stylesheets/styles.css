@@ -47,27 +47,21 @@ a img {
 #logo-bar-sl {
     font-size: 14px;
 	float: left;
-    margin-bottom: 1.717em;
     margin-left: 1.833em;
-    margin-top: 1.617em;
+    margin-top: 1.5em; 
+	margin-bottom: 1.6em;
+	width: 287px;
 }
 
-#logo-bar a,
-#logo-bar-sl a {
-	display: inline-block;
-	background: url('../images/telerik_logo_wpf.png') 0 center no-repeat;
-	height: 33px;
-	color: #fff;
-	width: 236px;
+#logo-bar-sl {
+	width: 334px;
 }
 
-#logo-bar span {
-	display: none;
-}
-
-#logo-bar-sl a{
-	background: url('../images/telerik_logo_sl.png') 0 center no-repeat;
-}
+#logo-bar a img,
+#logo-bar-sl a img {
+    height: auto;
+    width: 100%;
+} 
 
 #logo-bar-sl span {
 	display: none;
@@ -166,7 +160,7 @@ a img {
     padding: 0;
     right: 514px;
     text-align: right;
-    left: 20%;
+    left: 28%;
 }
 
 #page-search.search-visibility {
@@ -176,7 +170,7 @@ a img {
     margin-top: 0;
     position: relative;
     right: 1.83em;
-    top: -1.7em;
+    top: -1.6em;
     width: calc(100% - 3.666em);
 }
 
@@ -804,6 +798,13 @@ header, nav, section, article, aside, footer {
 } 
 
 @media (max-width: 1200px) {
+	#logo-bar,
+	#logo-bar-sl{
+        float: none;
+        display: inline-block;
+		margin-left: 1em;
+    }
+
     #page-nav {
        width: 30%; 
     }
@@ -812,81 +813,29 @@ header, nav, section, article, aside, footer {
     #page-article { 
         width: 70%; 
     }
-    
-    #page-search {
-        left: 30%;
-    }
 
-    .btn.pricing-btn {
-        display: none;
-    }
-
-    #page-search {
-        right: 390px;
-    }
-}
-
-/* Responsive styles */
-@media (max-width:800px) {
-    body {
-        min-width: initial;
-    }
-
-    .faux-columns {
-        background-image: none;
-    }
-
-    #markdown-toc {
-        border-bottom: none;
-    }
-
-    .nav-buttons,
     #page-nav,
     #page-tabs,
-    #page-top #page-search {
+    #page-top,
+	#page-search,
+    .nav-buttons {
         display: none;
     }
-
-    #page-nav {
-        min-width: 250px;
-    }
-
-    div#page-inner-content {
-        bottom: 0;
-    }
-
-    #page-article {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    #page-article h1 {
-        margin-top: 1em;
-    }
-
-    .toggle-nav {
+	
+	.show-search {
         display: inline-block;
-    }
-
-    #logo-bar,
-	#logo-bar-sl {
-       float: none;
-       display: inline-block;
-       margin-left: 1em;
-	   width: 0px;
-    }
-
-    #page-search {
-        width: 30%;
+        margin: 0;
+        position: absolute;
+        top: 27px;
+        padding: 0;
+        right: 1.833em;
+        text-align: right;
         left: auto;
-        display: none;
-        background-color: #2a2d33;
+        cursor: pointer;
     }
-
-    #page-search > div {
-        padding: 0 3.83em 0 0;    
+	 
+	 .toggle-nav {
+        display: inline-block;
     }
 	
     .toggle-nav span { 
@@ -911,19 +860,53 @@ header, nav, section, article, aside, footer {
 
     .toggle-nav span:after {
       bottom: -8px; 
-    }
-        
-    .show-search {
-        display: inline-block;
-        margin: 0;
-        position: absolute;
-        top: 27px;
-        padding: 0;
-        right: 1.833em;
-        text-align: right;
-        left: auto;
-        cursor: pointer;
     }	
+
+    div#page-inner-content {
+        bottom: 0;
+    }
+
+    #page-article {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+/* Responsive styles */
+@media (max-width:800px) {
+    body {
+        min-width: initial;
+    }
+
+    .faux-columns {
+        background-image: none;
+    }
+
+    #markdown-toc {
+        border-bottom: none;
+    }
+
+    #page-article h1 {
+        margin-top: 1em;
+    }
+
+    .toggle-nav {
+        display: inline-block;
+    }
+
+    #page-search {
+        width: 33%;
+		right: 0px;
+        left: auto;
+        display: none;
+        background-color: #2a2d33;
+    }
+
+    #page-search > div {
+        padding: 0 3.83em 0 0;    
+    }
 
     footer {
         display: none;
@@ -1050,3 +1033,406 @@ header, nav, section, article, aside, footer {
 	background: #CACACA;
 }
 /* END Theme Palette Color Styles */
+
+/* START Kendo Grid Nova Theme CSS*/
+.k-grid-header,
+.k-grid-header .k-header,
+.k-pager-wrap,
+.k-pager-numbers .k-state-selected,
+.k-grid-footer,
+.k-grid-footer td,
+.k-scheduler-header,
+.km-pane-wrapper .k-grid-header .k-header {
+  background-color: #fafafa;
+  border-color: #e0e0e0;
+}
+.k-grid-header .k-header .k-link,
+.k-grid-header .k-header,
+.k-grid-header .k-link,
+.k-grid-header .k-link:link,
+.k-pager-info,
+.k-scheduler-header,
+.k-scheduler-agendaview .k-scheduler-datecolumn {
+  color: #9da2a4;
+}
+.k-grid .k-alt {
+  background-color: transparent;
+}
+
+#kendoDiv table tr:nth-child(2n) td {
+	background: transparent;
+}
+
+#kendoDivSL table tr:nth-child(2n) td {
+	background: transparent;
+}
+
+.k-grid tr:hover {
+  background-color: #f5f6f6;
+}
+.k-grid-header th.k-state-focused,
+.k-grid td.k-state-focused {
+  -webkit-box-shadow: inset 0 0 0 1px #9c9c9c;
+          box-shadow: inset 0 0 0 1px #9c9c9c;
+}
+.k-grid-toolbar .k-button,
+.k-grid-content .k-button {
+  color: #ff4350;
+  border-color: transparent;
+}
+.k-grid-toolbar .k-button-icontext .k-icon,
+.k-grid-content .k-button-icontext .k-icon,
+.k-edit-form-container .k-edit-buttons .k-button-icontext .k-icon {
+  display: none;
+}
+.k-grid-toolbar .k-button:hover {
+  border-color: #f5f6f6;
+}
+.k-grid-content .k-button-icontext {
+  background-color: transparent;
+}
+.k-grid-content .k-primary {
+  color: #ffffff;
+  background-color: #ff4350;
+}
+.k-grid-toolbar .k-button:active,
+.k-grid-content .k-button-icontext:active {
+  color: #ffffff;
+  background-color: #ff4350;
+  border-color: #ff4350;
+}
+.k-grid-content .k-button:active {
+  border-color: #ff4350;
+}
+.k-header.k-grid-toolbar {
+  background-color: #fff;
+  border-color: transparent;
+}
+.k-grid .k-grouping-header {
+  color: rgba(255, 255, 255, 0.5);
+}
+.k-grouping-header .k-group-indicator {
+  color: #ffffff;
+  background-color: #e43c48;
+  border-color: #e43c48;
+}
+.k-group-indicator .k-link {
+  color: #ffffff;
+}
+.k-grouping-row {
+  background-color: #fafafa;
+  font-weight: bold;
+}
+.k-group-cell {
+  background-color: #fafafa;
+}
+.k-filter-menu .k-button,
+.k-edit-form-container .k-button {
+  color: #32364c;
+  background: transparent;
+  border-color: transparent;
+}
+.k-filter-menu .k-button:active {
+  color: #32364c;
+}
+.k-filter-menu .k-primary,
+.k-edit-form-container .k-primary {
+  color: #ff4350;
+}
+.k-filter-menu .k-primary {
+  border-left-color: #e0e0e0;
+}
+.k-filter-menu > div > div:last-child {
+  border-color: #e0e0e0;
+}
+.k-grid td.k-state-selected,
+.k-grid tr.k-state-selected > td {
+  border-color: rgba(224, 224, 224, 0.8);
+}
+.k-grid tr.k-state-selected,
+.k-grid td.k-state-selected,
+.k-grid td.k-state-selected.k-state-focused {
+  background-color: transparent;
+}
+.k-grid tr:hover .k-state-selected,
+.k-grid tr.k-state-selected:hover td {
+  background-color: transparent;
+}
+.k-grid tr:hover .k-state-focused.k-state-selected,
+.k-grid tr.k-state-selected:hover td.k-state-focused {
+  -webkit-box-shadow: inset 0 0 0 1px #878787;
+          box-shadow: inset 0 0 0 1px #878787;
+}
+.k-marquee-color {
+  background-color: #86d9e4;
+}
+/* END Kendo Grid Nova Theme CSS*/
+
+/* START Kendo Grid Nova Theme CSS*/
+.k-grid td{
+            white-space: nowrap;
+            text-overflow: ellipsis;				
+        }	
+		
+#kendoDiv{
+	margin-bottom:10px;
+	border-color:#e0e0e0;
+	width: 100%;
+}
+
+#kendoDivSL{
+	margin-bottom:10px;	
+	border-color:#e0e0e0;
+	width: 100%;
+}
+		
+#kendoDiv .detailsDIV
+{
+	float:left;
+    color: #E0E0E0!important;	
+}
+
+#kendoDivSL .detailsDIV
+{
+	float:left;
+    color: #E0E0E0!important;
+}
+		
+#kendoDiv p {
+         width: 530px;  
+         word-break: normal;
+         white-space: normal;
+      }
+	  
+#kendoDivSL p {
+ width: 530px;  
+ word-break: normal;
+ white-space: normal;
+}
+	  
+#kendoDiv table td {
+    border: 1px solid #e1e5ea;
+    color: #555; 
+	border-left-width: 0px;
+	border-right-width: 0px;
+	padding: .929em 1.286em;	
+}
+
+#kendoDivSL table td {
+    border: 1px solid #e1e5ea;
+    color: #555; 
+	border-left-width: 0px;
+	border-right-width: 0px;
+	padding: .929em 1.286em;	
+}
+
+#kendoDiv .k-grid-toolbar{
+      padding:0px;
+	  border-color:#E0E0E0;
+	  margin-bottom:-1px;
+}
+
+#kendoDivSL .k-grid-toolbar{
+      padding:0px;
+	  border-color:#E0E0E0;
+	  margin-bottom:-1px;
+}
+
+#kendoDiv table th {
+    padding: 7px 17px;
+}
+
+#kendoDivSL table th {
+    padding: 7px 17px;
+}
+
+#kendoDiv table {
+    border: 0px;
+}
+
+#kendoDivSL table {
+    border: 0px;
+}
+
+ tr.k-detail-row:hover { 
+        background:transparent; 
+ } 
+ 
+.k-grid .k-grid-header th.k-header {
+        background: #FAFAFA!important;
+		color:#9da2a4!important;
+      }
+	  
+#kendoDiv .k-grid-header
+{
+   padding: 0 !important;
+}
+
+#kendoDivSL .k-grid-header
+{
+   padding: 0 !important;
+}
+
+#kendoDiv .k-grid-content
+{
+   overflow-x: hidden!important;
+   overflow-y: visible!important;
+}
+
+#kendoDivSL .k-grid-content
+{
+   overflow-x: hidden!important;
+   overflow-y: visible!important;
+}
+
+#kendoDiv  .toolbar{
+  width:100%;
+  display:table;
+  background: #FAFAFA;
+  padding: 10px 0px 10px 0px;
+}
+
+#kendoDivSL .toolbar{
+  width:100%;
+  display:table;
+  background: #FAFAFA;
+  padding: 10px 0px 10px 0px;
+}
+
+#kendoDiv .category-label {
+  display:table-cell;
+  width:27%;
+  text-align:center;
+  vertical-align: middle;
+  color: #9da2a4!important;
+}
+
+#kendoDivSL .category-label {
+  display:table-cell;
+  width:27%;
+  text-align:center;
+  vertical-align: middle;
+  color: #9da2a4!important;
+}
+
+#kendoDiv div.k-grid-header
+{
+  height: 0;
+  border-bottom-width: 0;
+  display: none;
+  overflow: hidden;
+}
+
+#kendoDivSL div.k-grid-header
+{
+  height: 0;
+  border-bottom-width: 0;
+  display: none;
+  overflow: hidden;
+}
+      
+#kendoDiv .detailsDIV div.k-grid-header
+{
+  border-bottom-width: 0;
+  display: inline;
+  overflow: hidden;
+}
+
+#kendoDivSL .detailsDIV div.k-grid-header
+{
+  border-bottom-width: 0;
+  display: inline;
+  overflow: hidden;
+}
+
+#innerDiv{
+	margin-top:-20px;
+}
+
+#kendoDiv #searchBox {
+  display:table-cell;
+  height:40px;
+  width:97%;
+  border: 1px solid;
+  border-color: #e0e0e0;
+}
+
+#kendoDivSL #searchBox {
+  display:table-cell;
+  height:40px;
+  width:97%;
+  border: 1px solid;
+  border-color: #e0e0e0;
+}
+
+#kendoDiv .k-grid .k-state-selected { background: #F5F6F6; }
+#kendoDivSL .k-grid .k-state-selected { background: #F5F6F6; }
+
+.detailsDIV tbody  {
+    cursor: pointer;
+} 
+
+.detailsDIV  
+.k-grid-header table,
+.detailsDIV  
+.k-grid-content table,
+.detailsDIV  
+.k-grid-footer table,
+.detailsDIV  
+.k-grid-content-locked > table {
+    table-layout:auto;
+} 
+
+.readmeDiv p {
+	max-width: 500px;
+	margin: 0px 0px 0px 40px ;
+}
+
+.readmeDiv b {
+	margin: 0px 0px 0px 40px ;
+}
+
+.k-icon.k-plus, 
+.k-icon.k-minus 
+ {
+	background-image: url(../images/sprite.png);
+	border-color: transparent;
+}
+
+.k-grid .k-icon {
+    opacity: .45;
+}
+
+ .detailsDIV table td {
+  padding: 4px 16px 4px 16px!important;
+}
+
+@media (max-width: 450px) {
+	header {
+		height: 85px;
+	}
+
+	#logo-bar, 
+	#logo-bar-sl {
+		position: absolute;
+	}
+	
+	#logo-bar  a img {
+		width: 287px;
+	}
+	
+	#logo-bar-sl a img{
+		width: 334px;
+	}
+	
+	#page-header .show-search {
+		display:none;
+	}
+	
+	.toggle-nav {
+		top: 31px;
+	}
+}
+
+
+/* END Kendo Grid Nova Theme CSS*/

@@ -51,6 +51,8 @@ __RadGridView__ API allows you to tweak your application for optimal performance
 * As of __Q2 2014 SP__ release we introduced the option to __turn off generating of automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the AutomationMode property to Disabled.
             
 * __TouchManager__ -  another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
+
+* As of __R2 2016__ GridViewComboBoxColumn exposes a new property - __IsLightweightModeEnabled__. Setting it to true significantly increases RadGridView's performance.
             
 # See Also
 

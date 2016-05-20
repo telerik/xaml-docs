@@ -1,7 +1,7 @@
 ---
-title: Automatic Dependency resolving
-page_title: Automatic Dependency resolving
-description: Automatic Dependency resolving
+title: Automatic Dependency Resolving
+page_title: Automatic Dependency Resolving
+description: Automatic Dependency Resolving
 slug: radcontrols-for-wpf-vs-extensions-automatic-resolving
 tags: automatic,dependency,resolving
 published: True
@@ -9,7 +9,7 @@ position: 10
 site_name: WPF
 ---
 
-# Automatic Dependency resolving
+# Automatic Dependency Resolving
 
 
 
@@ -33,8 +33,8 @@ The VSExtensions assembly list control is controlled by the dependency analyzer,
 
 # See Also
 
- * [Project creation and configuration]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
+ * [Configure Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
 
- * [Upgrading to a new UI for WPF distribution]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
+ * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
 
- * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})

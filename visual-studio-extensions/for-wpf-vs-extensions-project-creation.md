@@ -1,7 +1,7 @@
 ---
-title: Create project
-page_title: Create project
-description: Create project
+title: Create Project
+page_title: Create Project
+description: Create Project
 slug: radcontrols-for-wpf-vs-extensions-project-creation
 tags: project,creation
 published: True
@@ -9,7 +9,7 @@ position: 1
 site_name: WPF
 ---
 
-# Create project
+# Create Project
 
 With the new Visual Studio Extensions for WPF you can quickly create an application pre-configured to use Telerik UI for WPF. The fastest way to have such a project is using the Visual Studio __New Project Wizard__. Under the __Telerik__ node there is a new node – __Windows__, where four project templates exist: 
 
@@ -43,10 +43,10 @@ When you click the Finish button:
 
 # See Also
 
- * [Automatic Dependency resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
+ * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
 
- * [Upgrading to a new UI for WPF distribution]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
+ * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
 
- * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
 
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
+ * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

@@ -240,7 +240,7 @@ The __CellEditEnded__ occurs when cell validation is passed successfully and new
 
 * __Commit__
 
-You can subscribe to the __CellEditEnded__event declaratively or runtime like this:
+You can subscribe to the __CellEditEnded__ event declaratively or runtime like this:
 
 #### __XAML__
 

@@ -30,12 +30,14 @@ Pasting is controlled similarly to [Copying]({%slug gridview-copying%}). The __C
             
 
 >The default mode is pasting into __Cells__.
+
+>important You need to have a __selected element__ (row or cell) set in __RadGridView__ in order to paste a value. 
           
 
-The __Pasting__ event allows you to cancel a paste operation, whereas the __PastingCellClipboardContent__ allows you to cancel pasting for the cell or replace the Clipboard value with your own. Example:
+The __Pasting__ event allows you to cancel a paste operation, whereas the __PastingCellClipboardContent__ allows you to cancel pasting for the cell or replace the Clipboard value with your own. __Example 1__ shows how these events can be utilized.
          
 
-#### __C#__
+#### __[C#]Example 1: Utilizing Pasting and PastingCellClipboardContent events__
 
 {{region gridview-pasting_0}}
 	
@@ -62,7 +64,7 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET]Example 1: Utilizing Pasting and PastingCellClipboardContent events__
 
 {{region gridview-pasting_1}}
 
@@ -83,7 +85,7 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 	End Sub
 {{endregion}}
 
-As of version Q2 2013:
+As of version __R2 2013__:
         
 
 * The user can copy one cell and __paste its value to all the selected cells__ for a column. You should set the __AllSelectedCells__ ClipboardPasteMode together with __SelectionUnit=“Cell”__ for the RadGridView.

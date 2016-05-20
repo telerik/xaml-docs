@@ -5,7 +5,7 @@ description: Editing Control Templates
 slug: styling-apperance-editing-control-templates
 tags: editing,control,templates
 published: True
-position: 4
+position: 5
 ---
 
 # Editing Control Templates

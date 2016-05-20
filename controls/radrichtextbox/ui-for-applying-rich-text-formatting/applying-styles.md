@@ -5,7 +5,7 @@ description: Applying Styles
 slug: radrichtextbox-ui-for-applying-rich-text-formatting-applying-styles
 tags: applying,styles
 published: True
-position: 4
+position: 5
 ---
 
 # Applying Styles

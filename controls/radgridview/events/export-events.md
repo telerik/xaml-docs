@@ -188,31 +188,31 @@ You can define a style when the __InitializingExcelMLStyles__ event is raised, a
 Here is a list of the properties that could be set for __ExcelMLStyle__:
         
 __Alignment__:
-1. Horizontal: You can choose a specific alignment through the ExcelMLHorizontalAlignment enumeration.
-1. Vertical: You can choose a specific alignment through the ExcelMLVerticalAlignment enumeration.
-1. Indent   
-1. Rotate   
-1. ShrinkToFit
-1. VerticalText
-1. WrapText
+- Horizontal: You can choose a specific alignment through the ExcelMLHorizontalAlignment enumeration.
+- Vertical: You can choose a specific alignment through the ExcelMLVerticalAlignment enumeration.
+- Indent   
+- Rotate   
+- ShrinkToFit
+- VerticalText
+- WrapText
               
 __Font__:
 
-1. Bold    
-1. Color 
-1. FontName
-1. Italic
-1. Outline (only for Mac)
-1. Size
-1. StrikeThrough
-1. Underline: You can choose a specific underline through ExcelMLUnderline.
+- Bold    
+- Color 
+- FontName
+- Italic
+- Outline (only for Mac)
+- Size
+- StrikeThrough
+- Underline: You can choose a specific underline through ExcelMLUnderline.
               
 
 __Interior__:
 
-1. Color: You must also set a pattern in order to be applied in Interior.Color.
-1. Pattern: You can choose a specific pattern through ExcelMLPattern.
-1. PatternColor: You must also set a pattern in order to be applied in Interior.PatternColor.
+- Color: You must also set a pattern in order to be applied in Interior.Color.
+- Pattern: You can choose a specific pattern through ExcelMLPattern.
+- PatternColor: You must also set a pattern in order to be applied in Interior.PatternColor.
               
 
 __NumberFormat__:

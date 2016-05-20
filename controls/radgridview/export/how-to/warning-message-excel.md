@@ -5,7 +5,7 @@ description: Warning message when opening the excel file
 slug: gridview-troubleshooting-warning-message-excel
 tags: warning,message,when,opening,the,excel,file
 published: True
-position: 2
+position: 6
 ---
 
 # Warning message when opening the excel file
@@ -26,6 +26,5 @@ The alert is a new security feature in Excel 2007 called Extension Hardening, wh
 
 __SOLUTION__
 
-You can [ export to ExcelML format]({%slug gridview-export%}) with XML extension. In this way you will not get such warning.
-
+You can use the [ExportToXlsx]({%slug gridview-export-xlsx%}) method. In such case you will avoid the warning.
 

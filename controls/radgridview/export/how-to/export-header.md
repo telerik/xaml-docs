@@ -5,14 +5,15 @@ description: Export Custom Header
 slug: gridview-export-troubleshooting-export-header
 tags: export,custom,header
 published: True
-position: 1
+position: 3
 ---
 
 # Export Custom Header
 
 __PROBLEM__
 
-Sometimes __custom headers__ for the columns are used. When __exporting__ the RadGridView, the actual text in the custom header is not exported the right way.
+When exporting __RadGridView__ and you have defined __custom headers__ for some columns, the actual text within the custom header is not exported correctly unless you explicitly define the value. 
+
 
 __CAUSE__
 
@@ -20,15 +21,13 @@ When you insert a custom UIElement in the header of a GridViewColumn, the RadGri
 
 __SOLUTION__
 
-In case you insert a custom UIElement in the header of a GridViewColumn,
-you will need to handle the __ElementExporting__ event of RadGridView. Then check if the exported element is a header cell and set the appropriate value to be exported. This is needed since
-there is no way for the RadGridView to know the meaningful value of a UIElement.
+In case you insert a custom UIElement in the header of a GridViewColumn, you will need to handle the __ElementExporting__ event of RadGridView. Then check if the exported element is a header cell and set the appropriate value to be exported. This is needed since there is no way for the RadGridView to know the meaningful value of a UIElement.
           
 Here is a small sample code:      
 
-1. Define a custom header with a TextBlock
+* Define a custom header with a TextBlock
         
-#### __XAML__
+#### __[XAML]Example 1: Define a custom header:__
 
 {{region gridview-export-troubleshooting-export-header_0}}
 
@@ -40,9 +39,9 @@ Here is a small sample code:
 	</telerik:GridViewDataColumn>
 {{endregion}}
 
-2. Handle the ElementExporting event for the exported RadGridView
+* Handle the ElementExporting event for the exported RadGridView
         
-#### __C#__
+#### __[C#]Example 2: Handle the ElementExporting event:__
 
 {{region gridview-export-troubleshooting-export-header_1}}
 
@@ -53,7 +52,7 @@ Here is a small sample code:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET]Example 2:Handle the ElementExporting event:__
 
 {{region gridview-export-troubleshooting-export-header_2}}
 

@@ -5,31 +5,22 @@ description: Export FAQ
 slug: gridview-export-faq
 tags: export,faq
 published: True
-position: 6
+position: 8
 ---
 
 # Export FAQ
 
+For a general example on how to Export the data, you can check our Exporting {% if site.site_name == 'WPF' %}[ WPF Demos.](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos.](http://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}
 
-You can find listed some questions and their answers bellow
+ * __How to export paged data:__
 
-## Exporting
-
-For a general example on how to Export the data, you can check our Exporting
-{% if site.site_name == 'WPF' %}[ WPF Demos.](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos.](http://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}
-
-* __How to export paged data:__
-
-* Save the PageSize and the PageIndex of RadDataPager
+1. Save the PageSize and the PageIndex of RadDataPager
+                 
+2. Set the PageSize of RadDataPager to 0
+                 
+3. Export the data (you can use the (IEnumerable) dataPager.PagedSource as GridViewExportOptions.Items)
                   
-
-* Set the PageSize of RadDataPager to 0
-                  
-
-* Export the data (you can use the (IEnumerable) dataPager.PagedSource as GridViewExportOptions.Items)
-                  
-
-* Set the PageSize and the PageIndex back
+4. Set the PageSize and the PageIndex back
 
 >tipYou can download a __runnable project__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/ExportPagedDataExcel__  .
 

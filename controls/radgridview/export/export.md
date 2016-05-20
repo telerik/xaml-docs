@@ -10,14 +10,13 @@ position: 0
 
 # Grid Export
 
+If you need to export RadGridView`s content, its __Export__ method comes to help. It was introduced in __Q1 2010__ and it is the preferred method of exporting data. Furthermore, it gives you control over which elements are included in the exported data.
 
-As of __Q1 2010__ (version number 2010.1.0309+), RadGridView has a new method - __Export__ which gives you more control over which elements are included in the exported data.
-
-It is the preferred method of exporting data. The method expects two parameters:
+The method expects two parameters:
 
 1. __Stream__ - usually the file stream which you are exporting data to.
 
-2. __GridViewExportOptions__ or __GridViewCsvExportOptions__ object - use it to set the following export options: 
+2. __GridViewExportOptions__ or __GridViewCsvExportOptions__ - used to set the following export options: 
 
 * __Format__ - the possible formats are defined in the __ExportFormat__ enumeration: Csv, ExcelML, Html or Text
 
@@ -36,11 +35,9 @@ It is the preferred method of exporting data. The method expects two parameters:
 * __UseSystemCultureSeparator__ - if set, the RadGridView will use the system List Separator string, specified in Control Panel's Regional Options, to separate cells. This property overrides the __ColumnDelimiter__ property. __Available in GridViewCsvExportOptions only__.
 
 
->RadGridView's Export() method will not export an image, but its path. You can only export more user friendly text, but not the image itself.
+__Example 1__ shows how to display a "Save File" dialog asking the user to save the file in excel format:
 
-The following example shows how to show a save file dialog asking the user to save the file in excel format:
-
-#### __C#__
+#### __[C#] Example 1: Save RadGridView`s content in Excel file__
 
 {{region gridview-export_0}}
 
@@ -65,7 +62,7 @@ The following example shows how to show a save file dialog asking the user to sa
 	   gridViewExport.Export(stream,
 	    new GridViewExportOptions()
 	    {
-	     Format = ExportFormat.Html,
+	     Format = ExportFormat.ExcelML,
 	     ShowColumnHeaders = true,
 	     ShowColumnFooters = true,
 	     ShowGroupFooters = false,
@@ -75,11 +72,8 @@ The following example shows how to show a save file dialog asking the user to sa
 	}
 {{endregion}}
 
-> As of __Q1 2015 RadGridView__ exposes two new methods: __ExportToXlsx__ and __ExportToPdf__, thus the  __Xlsx__ and __Pdf__ values from the __ExportFormat__ enum are obsolete.
 
-
-
-#### __VB.NET__
+#### __[VB.NET] Example 1: Save RadGridView`s content in Excel file__
 
 {{region gridview-export_1}}
 
@@ -97,7 +91,7 @@ The following example shows how to show a save file dialog asking the user to sa
 	If dialog.ShowDialog() = True Then
 	  Using stream As Stream = dialog.OpenFile()
 	   gridViewExport.Export(stream, New GridViewExportOptions() With { _
-	    .Format = ExportFormat.Html, _
+	    .Format = ExportFormat.ExcelML, _
 	    .ShowColumnHeaders = True, _
 	    .ShowColumnFooters = True, _
 	    .ShowGroupFooters = False _
@@ -106,11 +100,8 @@ The following example shows how to show a save file dialog asking the user to sa
 	 End If
 	End Sub
 {{endregion}}
-
->When opening an exported ".xls" file with Excel 2007 or later, you will get a warning message. The reason for it is that the RadGridView can export to HTML and ExcelML formats - in both cases not native for Excel 2007. In case of exporting to HTML format you will get such warning, however if you export to ExcelML format with XML extension you will not get it.
         
-
-In addition,__RadGridView__ provides a built-in methods to get the content of your grid view control in different formats:
+In addition, __RadGridView__ provides built-in methods to get the content of your GridView control in different formats:
 
 * __Text__ - each row is exported on new line (\r\n) with values separated by tabs (\t). In order to export to this format use the __ToText()__ method.
 
@@ -120,9 +111,10 @@ In addition,__RadGridView__ provides a built-in methods to get the content of yo
 
 * __ExcelML__ - the content of the __RadGridView__ is exported to Excel XML format. In order to export to this format use the __ToExcelML()__ method.
 
->The export methods (__ToHtml()__, __ToCsv()__, __ToText()__ and __ToExcelML()__) are implemented in the class __ExportExtension__ as extension methods to the standard __RadGridView__ control. In order to see and call these methods you have to import the __Telerik.Windows.Controls__ namespace.
+>The export methods (__ToHtml()__, __ToCsv()__, __ToText()__ and __ToExcelML()__) are implemented in the class __ExportExtension__ as extension methods to the standard __RadGridView__ control. In order to use these methods you have to import the __Telerik.Windows.Controls__ namespace.
 
-#### __C#__
+
+#### __[C#] Example 2: Save content to String__
 
 {{region gridview-export_2}}
 
@@ -132,7 +124,7 @@ In addition,__RadGridView__ provides a built-in methods to get the content of yo
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Save content to String__
 
 {{region gridview-export_3}}
 
@@ -141,24 +133,6 @@ In addition,__RadGridView__ provides a built-in methods to get the content of yo
 	Dim htmlExport As String = Me.ExportGrid.ToHtml(True)
 {{endregion}}
 
-
-## Exporting Events
-
-As of __Q1 2010 SP2__, __RadGridView__ provides two new events which fire when you export data from RadGridView - __ElementExporting__ and __ElementExported__. 
-
-__ElementExporting__ is a direct replacement of the __Exporting__ event which is used before Q1 2010 SP2. The __Exporting__ event was obsoleted with __Q2 2010__. You can use the events to format or modify the exported data.
-
-
-As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with 
-[ExportFormat.ExcelML]({%slug gridview-export-excelml%}) and [ExportFormat.Html]({%slug gridview-export-html%}).
-        
-As of __Q3 2013__ RadGridView provides a new event __InitializingExcelMLStyles__ (when exporting with __ExportFormat.ExcelML__ only).
-
->The __InitializingExcelMLStyles__ method will be only raised when exporting with __ExportFormat.ExcelML__
-
-As of __Q1 2015__ RadGridView provides two new events - __ElementExportingToDocument__ and __ElementExportedToDocument__ which fire when RadGridView is exported to Xlsx or Pdf.
-
-Read more about these events [here]({%slug gridview-export-events%}).
         
 # See Also
 

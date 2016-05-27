@@ -47,7 +47,7 @@ RadMap | Pan	|	Zoom	|	Click/Selection	|	-	|	-	|	Double Tap -> Zoom
 RadPdfViewer | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection
 RadRropertyGrid | Scroll	|	-	|	Click/Selection	|	-	|	-	|	-
 RadRichTextBox | Scroll	|	Zoom	|	Click (move caret to position)	|	-	|	Show context menu	|	Selection markers to extend the selection
-RadScheduleView | Horizontally - Previous/Next; Vertically - Scroll	|	Timeline - Zoom, others - switching the views	|	Click/Selection	|	On item - Drag&Drop; on slot - Scroll	|	-	|	-
+RadScheduleView | Horizontally - Previous/Next; Vertically - Scroll	|	Timeline - Zoom, others - switching the views	|	Click/Selection	|	On item - Drag&Drop; on slot - multiple slots selection	|	-	|	-
 RadSpreadsheet | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection
 RadTimeBar | Scroll	|	Zoom	|	Click/Selection	|	Moves Selection	|	Selection	|	Double Tap -> Extends selection
 RadTimeline | Scroll	|	Zoom	|	Click/Selection	|	Selection	|	Shows tooltip	|	-

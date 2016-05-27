@@ -10,7 +10,11 @@ position: 3
 
 # Styling the Predefined Dialogs
 
-This topic will explain how you could customize the look and feel of the predefined dialog windows.
+This article explains how you could customize the look and feel of the predefined dialog windows. We will discuss the following topics:
+
+* [Modifying the default Style](#modifying-the-default-style)
+
+* [Applying IconTemplate](#applying-icontemplate)
 
 ## Modifying the default Style
 
@@ -18,15 +22,16 @@ This topic will explain how you could customize the look and feel of the predefi
 
 In this article's example we will use __RadAlert__, but the approach is the same for __RadConfirm__ and __RadPrompt__.
 
-First, you will need to obtain the default style that targets __RadAlert__. To learn how to do this, take a look at the [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%}) topic. The RadAlertStyle will be similar to the following:
+First, you will need to obtain the default style that targets __RadAlert__. To learn how to do this, take a look at [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic. The extracted __RadAlertStyle__ will be similar to the following:
 
-#### __XAML__
+#### __[XAML] Example 1: Default RadAlertStyle__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_0}}
 	<Style x:Key="RadAlertStyle" TargetType="telerik:RadAlert">
 		<Setter Property="IsTabStop" Value="False"/>
 		<Setter Property="MinWidth" Value="275"/>
 		<Setter Property="MaxWidth" Value="500"/>
+		<Setter Property="IconTemplate" Value="{StaticResource AlertIconTemplate}"/>
 		<Setter Property="SnapsToDevicePixels" Value="True"/>
 		<Setter Property="Template">
 			<Setter.Value>
@@ -38,11 +43,13 @@ First, you will need to obtain the default style that targets __RadAlert__. To l
 	</Style>
 {{endregion}}
 
+>If you are not using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you will need to copy all the referenced inside __RadAlertStyle__ StaticResources to your project as well (such as AlertIconTemplate).
+
 Now, you could make any modifications in the template, such as removing the OK button, changing the Alert icon, etc.
 
 And finally, you have to pass the customized __RadAlertStyle__ to the predefined dialog via the __DialogParameters__ object and its __ContentStyle__ property.
 
-#### __C#__
+#### __[C#] Example 2: Applying customized Style to RadAlert__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_0}}
 	DialogParameters parameters = new DialogParameters();
@@ -51,7 +58,7 @@ And finally, you have to pass the customized __RadAlertStyle__ to the predefined
 	RadWindow.Alert(parameters);
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Applying customized Style to RadAlert__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_1}}
 	Dim parameters As New DialogParameters()
@@ -62,16 +69,16 @@ And finally, you have to pass the customized __RadAlertStyle__ to the predefined
 
 __Figure 1__ shows the final result.
 
-Figure 1: RadAlert with custom Style
+#### __Figure 1: RadAlert with custom Style__
 ![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_01.png)
 
 ## Applying IconTemplate
 
-With the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IconTemplate__ property was introduced. By using it you are now able to easily change the icon of the predefined windows.  
+With Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IconTemplate__ property was introduced. By using it you are now able to easily change the icon of the predefined windows.  
 
 Basically, a valid DataTemplate needs to be created and that Template should be passed to the predefined windows via the __DialogParameters__ and its __IconTemplate__ property:
 
-#### __XAML__
+#### __[XAML] Example 3: Defining the DataTemplate__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_0}}
 	<DataTemplate x:Key="IconTemplate">
@@ -79,7 +86,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 	</DataTemplate>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 3: Applying the DataTemplate to IconTemplate property__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_2}}
 	RadWindow.Alert(new DialogParameters()
@@ -89,7 +96,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 	});
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Applying the DataTemplate to IconTemplate property__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_3}}
 	RadWindow.Alert(New DialogParameters() With
@@ -101,7 +108,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 
 __Figure 2__ shows the final result.
 
-Figure 2: RadAlert with set __IconTemplate__
+#### __Figure 2: RadAlert with set IconTemplate__
 ![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_02.png)
 
 # See Also

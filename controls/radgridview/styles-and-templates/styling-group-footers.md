@@ -12,6 +12,12 @@ position: 10
 
 >tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewGroupFooterCell control]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewgroupfootercell).
 
+In this article we will discuss the following topics:
+
+* [Targeting the GridViewGroupFooterCell Element](#targeting-the-gridviewgroupfootercell-element)
+
+* [Setting a Column's GroupFooterCellStyle](#setting-a-columns-groupfootercellstyle)
+
 ## Targeting the GridViewGroupFooterCell Element
 
 In order to style all RadGridView cells of an application, you should create an appropriate style targeting the __GridViewGroupFooterCell__ element.

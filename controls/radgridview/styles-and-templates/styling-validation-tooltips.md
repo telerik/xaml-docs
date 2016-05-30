@@ -8,11 +8,11 @@ published: True
 position: 22
 ---
 
-## Styling Validation ToolTips in RadGridView ##
+# Styling Validation ToolTips in RadGridView ##
 
 > Before reading this topic, you might find useful to get familiar with RadGridView’s [validation]({%slug gridview-managing-data-validation%}) functionality.
 
-__RadGridView__ has two validation layers: UI and data. Interface such as __IDataErrorInfo__ is used by data layer validation and __RadGridView's__ role here is just to update underlying value via binding at the right moment. 
+__RadGridView__ has two validation layers: **UI** and **data**. Interface such as __IDataErrorInfo__ is used by data layer validation and __RadGridView's__ role here is just to update underlying value via binding at the right moment. 
 
 {% if site.site_name == 'WPF' %}
 Error validation template comes from __WPF__ framework. 
@@ -22,7 +22,9 @@ Error validation template comes from __WPF__ framework.
 Especially for __Silverlight__ a special __ValidationToolTip__ element was developed for common input controls and native MS controls that are supported by __Telerik__ themes. 
 {% endif %}
 
-![](images/Validation-Tooltip.png)
+#### __Figure 1: The default validation tooltip__
+
+![The default validation tooltip](images/Validation-Tooltip.png)
 
 __RadGridView__ supports different validation modes and the validation tooltip depends on different factors. Visually all tooltips are the same, but they appear on different elements. In edit mode validation tooltip depends on the editor and __GridViewEditorPresenter__ element. __GridViewEditorPresenter__ is a generic container for all type of editors. In view mode validation tooltip depends on the cell and on the row.
 
@@ -46,9 +48,9 @@ __RadGridView's__ validation tooltip styles are located in __Telerik.Windows.Con
 
 >tip The recommended approach for editing __ControlTemplates__ is using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
 
-Default XAML mark-up for __GridViewCell’s__ validation tooltip in __Office_Black theme__:
+Default XAML mark-up for __GridViewCell’s__ validation tooltip in __Office\_Black theme__:
 
-#### [XAML] Example 1 - GridViewCell validation tooltip in Office_Black theme: 
+#### __[XAML] Example 1: GridViewCell validation tooltip in Office\_Black theme__
 
 	<ControlTemplate x:Key="GridViewCell_ValidationToolTipTemplate" TargetType="ToolTip">
 
@@ -82,9 +84,9 @@ Default XAML mark-up for __GridViewCell’s__ validation tooltip in __Office_Bla
 
 	</ControlTemplate>
 
-Default XAML mark-up for __GridViewEditorPresenter’s__ validation tooltip in __Office_Black theme__:
+Default XAML mark-up for __GridViewEditorPresenter’s__ validation tooltip in __Office\_Black theme__:
 
-#### [XAML] Example 2 - GridViewEditorPresenter validation tooltip in Office_Black theme:
+#### __[XAML] Example 2: GridViewEditorPresenter validation tooltip in Office\_Black theme__
 
 	<ControlTemplate x:Key="GridViewEditorPresenter_ValidationToolTipTemplate" TargetType="ToolTip">
    
@@ -106,9 +108,9 @@ Default XAML mark-up for __GridViewEditorPresenter’s__ validation tooltip in _
 
 	</ControlTemplate>
 
-Default XAML mark-up for __GridViewRow’s__ validation tooltip in __Office_Black theme__:
+Default XAML mark-up for __GridViewRow’s__ validation tooltip in __Office\_Black theme__:
 
-#### [XAML] Example 3 - GridViewRow validation tooltip in Office_Black theme:
+#### __[XAML] Example 3: GridViewRow validation tooltip in Office\_Black theme__
 
 	<ControlTemplate x:Key="GridViewRow_ValidationToolTipTemplate" TargetType="ToolTip">
 

@@ -51,8 +51,6 @@ To learn more about styling the __RadGridView__ specific elements read the follo
 
 * [Styling the Indent Cells in RadGridView]({%slug radgridview-styling-indent-cells%})
 
-* [Styling the Default RadGridView Styles]({%slug how-to-override-default-gridview-styles%})
-
 * [Styling the FilteringControl and FilteringDropDown]({%slug gridview-styling-filteringcontrol%})
 
 * [Styling the FilterRow]({%slug gridview-styling-filterrow%})

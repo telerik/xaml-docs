@@ -32,9 +32,9 @@ __CAUSE__
 
 __SOLUTION__
 
-When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ methods, the arguments of the __ElementExportingToDocument__ event can be cast to __GridViewCellExportingEventArgs__. Using their **VisualParameters** property and casting that to **GridViewDocumentVisualExportParameters**, we can set the **CellValueFormat** for the **CellSelectionStyle** in order to specify how the values should be formatted in Excel.
+When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ methods, the arguments of the __ElementExportingToDocument__ event can be used to modify the visual appearance of the exported values and specify how they should be formatted in Excel. This is achieved through the  **VisualParameters** property of the **GridViewCellExportingEventArgs**.
 
-The following example illustrates the approach:
+**Example 1** illustrates the approach:
 
 #### __[C#] Example 1: Exporting DateTime Values to Excel__
 
@@ -72,7 +72,7 @@ The following example illustrates the approach:
 	End Function
 	{{endregion}}
 
-And here is the final result in Excel:
+**Figure 3** shows the final result in Excel:
 
 #### __Figure 3: Exporting DateTime values with ElementExportingToDocument__
 
@@ -83,3 +83,7 @@ And here is the final result in Excel:
 * [Export String Value]({%slug gridview-export-troubleshooting-export-string%})
 
 * [Export Numeric Value]({%slug gridview-export-numeric-value%})
+
+* [Format Codes](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes)
+
+* [Number Formatting](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/number-formats)

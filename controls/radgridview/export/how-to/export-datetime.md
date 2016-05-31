@@ -12,13 +12,13 @@ position: 5
 
 __PROBLEM__
 
-When exporting DateTime values without specified **DataFormatString** to Excel, the values appear as numbers as shown in **Figure 1**:
+1) When exporting DateTime values without specified **DataFormatString** to Excel, the values appear as numbers as shown in **Figure 1**:
 
 #### __Figure 1: Exporting DateTime values without specified DataFormatString__
 
 ![Exporting DateTime values without specified DataFormatString](images/gridview-export-datetime-as-number.png)
 
-When exporting DateTime values with specified **DataFormatString** to Excel, the values appear as strings as shown in **Figure 2**:
+2) When exporting DateTime values with specified **DataFormatString** to Excel, the values appear as strings as shown in **Figure 2**:
 
 #### __Figure 2: Exporting DateTime values with specified DataFormatString__
 
@@ -26,7 +26,9 @@ When exporting DateTime values with specified **DataFormatString** to Excel, the
 
 __CAUSE__
 
-In most modern programming environments, dates are stored as real numbers. The integer part of the number is the number of days since some agreed-upon date in the past, called the epoch. In Excel, June 16, 2006, for example, is stored as 38884, counting days where January 1st, 1900 is 1.
+1) In most modern programming environments, dates are stored as real numbers. The integer part of the number is the number of days since some agreed-upon date in the past, called the epoch. In Excel, June 16, 2006, for example, is stored as 38884, counting days where January 1st, 1900 is 1.
+
+2) When a DataFormatString has been specified for a given column, RadGridView exports the string representation of the values in that column.
 
 __SOLUTION__
 

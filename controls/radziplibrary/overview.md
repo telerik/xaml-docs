@@ -12,7 +12,7 @@ position: 0
 
 
 
->**RadZipLibrary** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary](http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary).
+>**RadZipLibrary** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary](http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/overview).
 
 ## 
 

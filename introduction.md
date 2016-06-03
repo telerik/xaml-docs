@@ -309,6 +309,8 @@ Telerik &reg; UI for WPF features the following controls:
 
 * [SpreadProcessing]({%slug radspreadprocessing-overview%})
 
+* [SpreadStreamProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) 
+
 * [Spreadsheet]({%slug radspreadsheet-overview%})
 
 * [TabControl]({%slug radtabcontrol-overview2%})

@@ -11,7 +11,7 @@ position: 0
 # Overview
 
 
->**RadPdfProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing).
+>**RadPdfProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview).
             
 
 ## 

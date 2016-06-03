@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
->**RadSpreadProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radspreadsprocessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing).
+>**RadSpreadProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radspreadsprocessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
 
       
 

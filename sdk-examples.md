@@ -66,7 +66,7 @@ You can find additional demos for most of the Telerik UI for {% if site.site_nam
 
 * [OutlookBar]({%slug radoutlookbar-sdk-examples%})
 
-* [PdfProcessing]({%slug radpdfprocessing-sdk-examples%})
+* [PdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/sdk-examples)
 
 * [PdfViewer]({%slug radpdfviewer-sdk-examples%})
 
@@ -86,7 +86,7 @@ You can find additional demos for most of the Telerik UI for {% if site.site_nam
 
 * [Sparkline]({%slug radsparkline-sdk-examples%})
 
-* [SpreadProcessing]({%slug radspreadprocessing-sdk-examples%})
+* [SpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/sdk-examples)
 
 * [Spreadsheet]({%slug radspreadsheet-sdk-examples%})
 
@@ -108,7 +108,7 @@ You can find additional demos for most of the Telerik UI for {% if site.site_nam
 
 * [Window]({%slug radwindow-sdk-examples%})
 
-{% if site.site_name == 'WPF' %}* [WordsProcessing]({%slug radwordsprocessing-sdk-examples%}){% endif %}
+{% if site.site_name == 'WPF' %}* [WordsProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/sdk-examples){% endif %}
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
 

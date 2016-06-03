@@ -25,13 +25,16 @@ To learn more about these abilities take a look at the *Export* article in the d
 ## Document Processing Integration
 
 
-The Telerik UI for WPF suite contains document libraries specifically designed for import, export and document editing.
+The Telerik UI for WPF suite includes the **Telerik Document Processing** libraries specifically designed for import, export and document editing.
 
 
-* [RadPdfProcessing]({%slug radpdfprocessing-overview%}): Supports export to PDF.
-* [RadSpreadProcessing]({%slug radspreadprocessing-overview%}): Supports export to XLSX, CSV, PDF and plain text (TXT).
+* [RadPdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview): Supports export to PDF.
+* [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview): Supports export to XLSX, CSV, PDF and plain text (TXT).
+
+* [RadSpreadStreamProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview): Supports export to XLSX and CSV. Allows you create big spreadsheet documents with minimal resources usage.
+* 
 {% if site.site_name == 'WPF' %}
-* [RadWordsProcessing]({%slug radwordsprocessing-overview%}): Supports export to DOCX, RTF, HTML, PDF and plain text(TXT).
+* [RadWordsProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview): Supports export to DOCX, RTF, HTML, PDF and plain text(TXT).
 {%endif%}
 
 The libraries give you the ability to create a document from scratch and export it to its supported file formats. This means you can export practically any control either by exporting it to an image and adding the image to the resulting document or by creating an appropriate for the context structure (for example, a table when exporting RadGridView to DOCX).
@@ -57,7 +60,7 @@ The API of __RadPdfProcessing__ is designed to resemble XAML and this allows you
 The code operates with a set of renderers deriving from the base __UIElementRendererBase__ - __TextBlockRenderer__, __BorderRenderer__, etc. This allows separation, since each concrete render is responsible for drawing the element it is intended for without dependencies to the other renderers, and gives you the ability to extend the sample code to fit your precise needs if you need to.
 
 
-Take a look at the [source code of the example on GitHub](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement) and the documentation of the relevant [FixedDocumentEditor]({%slug radpdfprocessing-editing-fixedcontenteditor%}) class.
+Take a look at the [source code of the example on GitHub](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement) and the documentation of the relevant [FixedDocumentEditor](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor) class.
 
 
 ## Export Images With ExportExtensions
@@ -170,12 +173,12 @@ __Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The ph
 
 ## See Also
 
-* [RadPdfProcessing]({%slug radpdfprocessing-overview%})
+* [RadPdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)
 
-* [RadSpreadProcessing]({%slug radspreadprocessing-overview%})
+* [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)
 
 {% if site.site_name == 'WPF' %}
-* [RadWordsProcessing]({%slug radwordsprocessing-overview%})
+* [RadWordsProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview)
 {%endif%}
 
 * [RadGridView Export]({%slug gridview-export%})

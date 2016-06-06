@@ -82,10 +82,9 @@ So you need to add the xaml for all these assemblies from the selected theme:
 
 * Telerik.Windows.Controls.Docking.xaml
 
->If you copy the xaml files in your project, please make sure that they are with the proper build action. Generally it should be Resource, but for the Telerik.Windows.Controls.RibbonView.xaml the build action should be Page. Telerik.Windows.Controls.RichTextBoxUI.xaml also should be with build action Page since it includes all RibbonVIew styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
+>If you copy the xaml files in your project, please make sure that they are with the proper build action. Generally it should be __Resource__, but for the __Telerik.Windows.Controls.RibbonView.xaml__ the build action should be __Page__. __Telerik.Windows.Controls.RichTextBoxUI.xaml__ also should be with build action __Page__ since it includes all RibbonView styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
 
-
->tipYou should not set Application Theme using the __StyleManager__ when using implicit styles. 
+>tip You should not set Application Theme using the __StyleManager__ when using implicit styles. 
 
 Telerik includes the .xaml files in separate theme DLLs located in the Binaries.NoXaml folder (Telerik.Windows.Themes.Expression_Dark.dll, Telerik.Windows.Themes.Windows8.dll, etc.). So instead of copying all the .xaml files in your project, you can just merge them directly from the theme assembly. For example, if you are using Windows8 theme, you should add a reference to the Telerik.Windows.Themes.Windows8.dll and then merge the needed .xaml files as shown in __Example 1__.
 

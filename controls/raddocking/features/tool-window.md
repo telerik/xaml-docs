@@ -20,6 +20,22 @@ On the snapshot below you can see two ToolWindows with pane inside of each one.
 
 If you need to find out how to declare such a floating structure take a look at the [Floating Panes](#Floating_Panes) topic.
 
+## Setting FloatingSize and FloatingLocation
+
+RadDocking provides the ability to set easily the initial floating size and location of the __ToolWindows__. For that purpose the __RadDocking.FloatingSize__ and __RadDocking.FloatingLocation__ attached properties need to be used as shown in Example 1:
+
+#### __[XAML] Example 1: Setting RadDocking.FloatingSize and RadDocking.FloatingLocation__
+
+{{region raddocking-features-tool-window_0}}
+	<telerik:RadDocking>
+		<telerik:RadSplitContainer InitialPosition="FloatingOnly">
+			<telerik:RadPaneGroup>
+				<telerik:RadPane telerik:RadDocking.FloatingSize="500, 500" telerik:RadDocking.FloatingLocation="400, 400"/>
+			</telerik:RadPaneGroup>
+		</telerik:RadSplitContainer>
+	</telerik:RadDocking>
+{{endregion}}
+
 ## Styling ToolWindow
 
 To learn how to style the tool windows of your applications take a look at the [Styling the ToolWindow]({%slug raddocking-styling-the-toolwindow%}) topic.

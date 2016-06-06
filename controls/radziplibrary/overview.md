@@ -12,13 +12,11 @@ position: 0
 
 
 
-{% if site.site_name == 'Silverlight' %}![ziplibrary sl icon](images/ziplibrary_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![ziplibrary wpf icon](images/ziplibrary_wpf_icon.png){% endif %}
+>**RadZipLibrary** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary](http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/overview).
 
 ## 
 
 Have you ever wondered how to increase the responsiveness of your applications by compressing the data that you send over the internet? With the new __Zip Library__ you can compress data like images, docx or pdf files and send them over the wire. Thus, you will achieve fast and secure transactions. 
-
-![Zip Library Overview 01](images/ZipLibrary_Overview_01.png)
 
 This is a list with short descriptions of the top-of-the-line features of Telerik's __Zip Library__ control:
         

@@ -596,6 +596,8 @@ navigation:
     controls/radrichtextbox/features/references:
         title: References
         position: 19	
+    "*radspreadstreamprocessing":
+        title: RadSpreadStreamProcessing
 ## Centaur Controls End
 
 ## X1 Controls Start

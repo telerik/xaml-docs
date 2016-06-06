@@ -45,7 +45,7 @@ In order to avoid getting this warning, you should export to ExcelML format with
             
 * __Modify the exported value:__ You could subscribe for the __ElementExporting__ event of RadGridView and change the __e.Value__ to be exported.
             
-* __Export data on multiple worksheets of the same workbook:__ You can export data on different worksheets with [RadSpreadProcessing]({%slug radspreadprocessing-overview%}), which model is completely independent from UI. You can also check our new example {% if site.site_name == 'WPF' %}[Export with RadSpreadProcessing](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Export with RadSpreadProcessing](http://demos.telerik.com/silverlight/#SpreadProcessing/RadGridViewIntegration){% endif %} on how to do so.
+* __Export data on multiple worksheets of the same workbook:__ You can export data on different worksheets with [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview), which model is completely independent from UI. You can also check our new example {% if site.site_name == 'WPF' %}[Export with RadSpreadProcessing](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Export with RadSpreadProcessing](http://demos.telerik.com/silverlight/#SpreadProcessing/RadGridViewIntegration){% endif %} on how to do so.
             
 * __OutOfMemoryException:__ All the data to be exported is saved in memory, so the exporting capacities are not huge. For more complex scenarios, you consider using our [Reporting tools](http://www.telerik.com/products/reporting.aspx) built to suit various exporting scenarios.
             

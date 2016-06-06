@@ -42,7 +42,7 @@ Another option which will automatically hide a row or a column is to set its siz
 
 ![Rad Spreadsheet UI Hidden Rows and Columns 03](images/RadSpreadsheet_UI_Hidden_Rows_Columns_03.png)
 
->tipPlease, note that this behavior is different from the behavior of the [model]({%slug radspreadprocessing-working-with-rows-and-columns-hiding%}) where setting the size of the rows and columns will not affect their hidden state. 
+>tipPlease, note that this behavior is different from the behavior of the [model](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-rows-and-columns/hidden-rows-columns) where setting the size of the rows and columns will not affect their hidden state. 
 
 ## Unhiding
 
@@ -64,4 +64,4 @@ Similarly to hiding rows and columns, you can unhide them by dragging the thumb 
 
 
 # See Also
- * [Hidden Rows and Columns in the Model]({%slug radspreadprocessing-working-with-rows-and-columns-hiding%})
+ * [Hidden Rows and Columns in the Model](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-rows-and-columns/hidden-rows-columns)

@@ -54,7 +54,7 @@ To export a document to PDF, you will need to add a reference to the correspondi
 
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
 
-Note that in order to import/export in XLSX or export to PDF, the format provider must be registered manually. More information on Import/Export can be found [here]({%slug radspreadprocessing-formats-and-conversion-format-providers-manager%}).
+Note that in order to import/export in XLSX or export to PDF, the format provider must be registered manually. More information on Import/Export can be found [here](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/import-export-format-providers-manager).
 
 If you want to use the sample UI provided in our demos you should add this reference as well:
         
@@ -109,5 +109,5 @@ __RadSpreadsheet__ is easy to integrate with all kinds of UI thanks to the comma
 
 ## See Also
 
-* [SpreadProcessing]({%slug radspreadprocessing-overview%})
+* [SpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)
 

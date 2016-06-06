@@ -89,7 +89,7 @@ Now with this XAML things don’t look exactly right. There is nothing on screen
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-The same can be achieved in code-behind only. See __Example 5__:
+The same can be achieved in code-behind only. See __Example 5__.
 
 #### __[C#] Example 5: Declare a chart in code-behind__
 
@@ -145,12 +145,12 @@ The chart can be further customized. For example you may want to add a grid-like
 	</telerik:RadCartesianChart.Grid>
 {{endregion}}
 
-For example the __Figure 2__ demonstrates how the line chart will look like with its MajorLinesVisibility set to XY:
+The example in __Figure 2__ demonstrates how the line chart will look like with its MajorLinesVisibility set to XY.
 
 #### __Figure 2: Setting the MajorLinesVisibility property__
 ![Rad Chart View-chart majorlines](images/RadChartView-chart_majorlines.PNG)
 
-To enable striplines you should set some brushes. See __Example 7__
+To enable striplines you should set some brushes. See __Example 7__.
         
 #### __[XAML] Example 7: Stylize the grid lines__
 

@@ -10,7 +10,17 @@ position: 1
 
 # Adding New Entries
 
-RadGridView comes with out of the box insert functionality. There are two ways to insert a new row with RadGridView - by pressing the __Insert__ key or by calling the __BeginInsert()__ method.
+RadGridView comes with out of the box insert functionality. In this topic we will discuss:
+
+* [Inserting New Entries](#inserting-new-entries)
+
+* [Modifying New Entries](#modifying-new-entries)
+
+* [Commiting New Entries](#commiting-new-entries)
+
+## Inserting New Entries
+
+There are two ways to insert a new row with RadGridView - by pressing the __Insert__ key or by calling the __BeginInsert()__ method.
 
 #### __[C#] Example 1: Adding new rows with BeginInsert()__
 
@@ -42,6 +52,8 @@ The next step in implementing the adding functionality is to attach event handle
                          RowEditEnded="radGridView_RowEditEnded" />
 	{{endregion}}
 
+## Modifying New Entries
+
 The __AddingNewDataItem__ event is raised before the new row is added to the RadGridView. A typical use case is when you need to set initial values for the initialized object. This can be done by passing an object to the __GridViewAddingNewEventArgs__'s **NewObject** property.
 
 #### __[C#] Example 3: The AddingNewDataItem event handler__
@@ -67,7 +79,7 @@ The __AddingNewDataItem__ event is raised before the new row is added to the Rad
 	End Sub
 	{{endregion}}
 
-In case when the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly inserted item as shown in **Example 4**:
+In the case when the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly inserted item as shown in **Example 4**:
 
 #### __[C#] Example 4: Adding a new item to a DataTable__
 
@@ -96,7 +108,7 @@ In case when the ItemsSource is a __DataTable.DefaultView__, you can initialize 
 
 >tipVia the __OwnerGridViewItemsControl__ property of the __GridViewAddingNewEventArgs__ class you can access the __GridViewItemsControl__ for the __RadGridView__ that raised the event.
 
-## RowEditEnded
+## Commiting New Entries
 
 The __RowEditEnded__ event is raised when new data is added to RadGridView. This can be done by any of the following ways: 
 

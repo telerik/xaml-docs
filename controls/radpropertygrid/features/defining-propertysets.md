@@ -300,6 +300,16 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 
 ![Rad Property Grid Sets Customized](images/RadPropertyGrid_Sets_Customized.png)
 
+You can check the "__Validating Property Sets__" section from the PropertyGrid`s [Validation]({%slug radpropertygrid-features-validation%}) article for information on how to apply validation for property sets.
+
 # See Also
 
  * [Edit Modes]({%slug radpropertygrid-edit-modes%})
+ 
+ * [Validation]({%slug radpropertygrid-features-validation%}) 
+ 
+
+
+
+
+

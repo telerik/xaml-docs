@@ -12,6 +12,8 @@ position: 17
 
 With **R2 2016**, Telerik introduced **Pinned Rows**. By using Pinned Rows, you can pin particular rows to the top or bottom of your **RadGridView** so that they do not participate in the vertical scrolling.
 
+>importantCurrently, [merged cells]({%slug gridview-merged-cells%}) and [extended selection]({%slug gridview-multiple-selection%}) are not supported when pinning rows.
+
 In this article, we will discuss the following topics:
 
 * [PinnedRowsPosition property](#pinnedrowsposition)

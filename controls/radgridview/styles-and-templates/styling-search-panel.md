@@ -12,7 +12,7 @@ position: 23
 
 >Before reading this topic, you might find it useful to get familiar with RadGridView`s [Search As You Type]({%slug radgridview-search-as-you-type%}) functionality.
 
-You can style the SearchPanel within the __RadGridView__ control by by creating an appropriate Style that targets the __GridViewSearchPanel"__ element.
+You can style the SearchPanel within the __RadGridView__ control by by creating an appropriate Style that targets the __GridViewSearchPanel__ element.
  
 You have two options:
 

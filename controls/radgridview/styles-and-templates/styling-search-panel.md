@@ -12,7 +12,7 @@ position: 23
 
 >Before reading this topic, you might find it useful to get familiar with RadGridView`s [Search As You Type]({%slug radgridview-search-as-you-type%}) functionality.
 
-You can style the SearchPanel within the __RadGridView__ control by by creating an appropriate Style that targets __"telerik:GridViewSearchPanel"__.
+You can style the SearchPanel within the __RadGridView__ control by by creating an appropriate Style that targets the __GridViewSearchPanel"__ element.
  
 You have two options:
 
@@ -27,14 +27,14 @@ You can apply a style to the Search Panel, similar to Example 1:
 
 #### __[XAML] Example 1: Applying a style to the search panel of RadGridView:__
  
-	  <Style TargetType="telerik:GridViewSearchPanel">
+	<Style TargetType="telerik:GridViewSearchPanel">
             <Setter Property="FontSize" Value="20"></Setter>
             <Setter Property="FontWeight" Value="Bold"></Setter>
             <Setter Property="Height" Value="50"></Setter>
-        </Style>
+	</Style>
 
 #### __Figure 1: Appearance of the control after the style is applied:__
-![gridview-search-panel](images/search-panel-styled.PNG)
+![Appearance of the control after the style is applied](images/search-panel-styled.PNG)
 
 You can find the GridViewSearchPanel template structure in the [Templates Structure]({%slug radgridview-styles-and-templates-templates-structure%}) article for RadGridView.
 
@@ -47,9 +47,9 @@ By default, the symbols matching the searching criteria are colored in red. You 
 			<Setter Property="HighlightBrush" Value="Green"/>
 	</Style> 
 
-#### __[XAML] Figure 2: Appearance of the highlighted text after the style is applied.__
+#### __Figure 2: Appearance of the highlighted text after the style is applied__
 
-![](images/search-panel-highlight-color.png)
+![Appearance of the highlighted text after the style is applied](images/search-panel-highlight-color.png)
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __HighlightTextBlockStyle__.
 

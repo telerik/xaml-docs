@@ -53,7 +53,7 @@ Here is an example of how to use the __CaretPosition__ property to get the curre
 An alternative of using the __CaretPosition__ property is to create an instance of the __DocumentPosition__ class. Here is the same example from the previous chapter done with an instance of the __DocumentPosition__ class.
         
 
->When instantiated in such a way, the position will be at the start of the document, so the result will be the first word in the text.The position of the instance won't be affected by the UI. To change it you have to use {% if site.site_name == 'Silverlight' %}[the API of the DocumentPosition class](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_documents_documentposition.html){% endif %}{% if site.site_name == 'WPF' %}[the API of the DocumentPosition class](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_documentposition.html){% endif %}.
+>When instantiated in such a way, the position will be at the start of the document, so the result will be the first word in the text.The position of the instance won't be affected by the UI. To change it you have to use {% if site.site_name == 'Silverlight' %}[the API of the DocumentPosition class](http://www.telerik.com/help/silverlight/t_telerik_windows_documents_documentposition.html){% endif %}{% if site.site_name == 'WPF' %}[the API of the DocumentPosition class](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_documentposition.htm){% endif %}.
             
 
 #### __C#__

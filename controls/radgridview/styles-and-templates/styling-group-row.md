@@ -80,7 +80,7 @@ The __RadGridView__ exposes the __GroupRowStyle__ property of type __Style__. It
 
 ![](images/RadGridView_Styles_and_Templates_Styling_GridViewGroupRow_03.png)
 
->In order to fully style the grouping appearance you have to also modify the styles for [GridViewRow]({%slug gridview-styling-a-row%}),  GridViewGroupFooterRow and [indent cells]({%slug radgridview-styling-indent-cells%}).
+>In order to fully style the grouping appearance you have to also modify the styles for [GridViewRow]({%slug gridview-styling-a-row%}), [GridViewGroupFooterRow]({%slug gridview-styles-and-templates-styling-group-footers%}) and [indent cells]({%slug radgridview-styling-indent-cells%}).
 
 # See Also
 

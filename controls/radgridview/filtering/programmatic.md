@@ -221,7 +221,7 @@ So a typical FilterDescriptor might look something like this:
 
 When choosing the **Operator**, you have to make sure that the respective **MemberType** supports this operator. For example, you cannot use the **Contains** operator if your MemberType is **Int32** because the data engine will crash. Here is a table of filter operators and the types that support them.
 
-#### Table 1: Filter Operators and Types Supporting Them
+#### __Table 1: Filter Operators and Types Supporting Them__
 
 | Operators | Types |
 | --------- | ----- |

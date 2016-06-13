@@ -40,7 +40,7 @@ Now, RadGridView will not generate a column for the Players property.
 
 2. Canceling __AutoGeneratingColumn__ event for a particular column.
 
-#### __[C#] Example 2: Canceling adding a column in __AutoGeneratingColumn__ event.__
+#### __[C#] Example 2: Canceling adding a column in AutoGeneratingColumn event__
 
 {{region gridview-prevent-column-autogenerate_1}}
 

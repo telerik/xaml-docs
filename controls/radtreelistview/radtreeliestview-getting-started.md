@@ -379,7 +379,7 @@ By default, __RadTreeListView__ will auto-generate the columns for its data by c
 
 
 
->tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns, read [here](%slug radgridview-columns-column-types-basic-column).
+>tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns, read [here]({%slug radgridview-columns-column-types-basic-column}).
         
 
 >tip To change the column, which holds the tree view UI, use the __HierarchyColumnIndex__ property.

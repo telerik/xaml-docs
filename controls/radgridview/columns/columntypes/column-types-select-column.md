@@ -10,12 +10,11 @@ position: 11
 
 # Select Column
 
-__GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class and its content is represented by a CheckBox for each row. The difference between it and __GridViewCheckBoxColumn__ is that this one is not meant to bind to data. Instead, it allows you to select the row via the CheckBox in it, i.e. each CheckBox's IsChecked property is bound to the IsSelected property of the corresponding row.
+The __GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) and its content is represented by a **CheckBox** for each row. It differs from the __GridViewCheckBoxColumn__ as it **does not bind to data**. Instead, it allows you to select a given row via a checkbox, in other words - each CheckBox's **IsChecked** property is bound to the **IsSelected** property of the corresponding row.
 
-#### __[XAML] Example 1: Define GridViewSelectColumn in XAML.__
+#### __[XAML] Example 1: Defining GridViewSelectColumn in XAML__
 
-{{region radgridview-columns-column-types-select-column_0}}
-
+	{{region radgridview-columns-column-types-select-column_0}}
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -23,16 +22,17 @@ __GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-column
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+	{{endregion}}
 
-![](images/RadGridView_ColumnTypes_7.png)
+#### __Figure 1: The GridViewSelectColumn__
 
-If you set __RadGridView.SelectionMode__ property to either __Extended__ or __Multiple__, you will be able to select more than one row by clicking on the desired check box or to select all the rows by clicking on the check box in the header.
+![The GridViewSelectColumn](images/selectcolumn-default.png)
 
-#### __[XAML] Example 2: Define GridViewDataColumn with Extended SelectedMode.__
+If you set RadGridView's [**SelectionMode**]({%slug gridview-multiple-selection%}) property to either __Extended__ or __Multiple__, you will be able to select more than one row by clicking on the desired checkbox or to select all the rows by clicking on the checkbox in the header.
 
-{{region radgridview-columns-column-types-select-column_1}}
+#### __[XAML] Example 2: Define GridViewDataColumn with Extended SelectionMode__
 
+	{{region radgridview-columns-column-types-select-column_1}}
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False"
 	                     SelectionMode="Extended">
@@ -41,13 +41,43 @@ If you set __RadGridView.SelectionMode__ property to either __Extended__ or __Mu
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+	{{endregion}}
 
-![](images/RadGridView_ColumnTypes_8.png)
+#### __Figure 2: The GridViewSelectColumn with Extended SelectionMode__
 
->You may directly work with the SelectedItems collection of RadGridView.
+![The GridViewSelectColumn with Extended SelectionMode](images/selectcolumn-multiple-selection.png)
+
+## CheckBoxStyle and HeaderCheckBoxStyle
+
+GridViewSelectColumn exposes two properties of type style: **CheckBoxStyle** and **HeaderCheckBoxStyle**. You can use them to style the respective checkboxes.
+
+#### __[XAML] Example 3: Creating appropriate styles__
+
+	{{region radgridview-columns-column-types-select-column_2}}
+    <Style x:Key="CheckBoxStyle" TargetType="CheckBox">
+        <Setter Property="Background" Value="Red" />
+    </Style>
+    <Style x:Key="HeaderCheckBoxStyle" TargetType="CheckBox">
+        <Setter Property="Background" Value="Blue" />
+    </Style>
+	{{endregion}}
+
+#### __[XAML] Example 4: Setting RadGridView's CheckBoxStyle and HeaderCheckBoxStyle__
+
+	{{region radgridview-columns-column-types-select-column_3}}
+	<telerik:GridViewSelectColumn CheckBoxStyle="{StaticResource CheckBoxStyle}" 
+                                              HeaderCheckBoxStyle="{StaticResource HeaderCheckBoxStyle}"/>
+	{{endregion}}
+
+**Figure 3** shows the final result:
+
+#### __Figure 3: The styled GridViewSelectColumn__
+
+![The styled GridViewSelectColumn](images/selectcolumn-styled.png)
 
 # See Also
 
- * [CheckBox Column]({%slug gridview-checkbox-column-clicks%}) 
+ * [CheckBox Column]({%slug gridview-checkbox-column-clicks%})
+
+ * [Multiple Selection]({%slug gridview-multiple-selection%})
 

@@ -17,7 +17,7 @@ position: 3
 
 ## Overview 
 
-__RadLayoutControl__ supports rerranging and editing its layout at runtime. You can change the position, alignment and size of each LayoutControlGroup or UIElement that is direct child of a group or the control itself. Also, each group or UIElement can be removed from the layout. In order to do that the control should be in edit mode. This is done by setting the __IsInEditMode__ property of __RadLayoutControl__ to __True__.
+__RadLayoutControl__ supports rerranging and editing its layout at runtime. You can change the position, alignment and size of each layout group or UIElement that is direct child of a group or the control itself. Also, each group or UIElement can be removed from the layout. In order to do that the control should be in edit mode. This is done by setting the __IsInEditMode__ property of __RadLayoutControl__ to __True__.
 
 #### __[XAML] Example 1: Setting IsInEditMode in XAML__
 {{region layoutcontrol-features-edit-the-layout-01}}
@@ -42,7 +42,7 @@ The following actions can be executed through the pane:
 
 * __Delete__: The element is removed from the layout control.
 
-* __Select Parent__: The selection is changed to the parent __LayoutControlGroup__. If there is no parent group, the selection won't be changed.
+* __Select Parent__: The selection is changed to the parent layout group__. If there is no parent group, the selection won't be changed.
 	
 	#### __Figure 2: Selecting the parent group__
 	![](images/layoutcontrol-features-edit-the-layout-02.png)
@@ -94,7 +94,7 @@ Setting the __Height__ and __Width__ of the selected element (UIElement or Layou
 ## See Also
 * [Overview]({%slug radlayoutcontrol-overview%})
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})
-* [Display Modes]({%slug radlayoutcontrol-features-display-modes%})
+* [Layout Groups Overview]({%slug radlayoutcontrol-features-layoutgroups-overview%})
 * [Orientation]({%slug radlayoutcontrol-features-orientation%})
 * [Edit the Layout]({%slug radlayoutcontrol-edit-the-layout%})
 * [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%})

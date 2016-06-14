@@ -18,7 +18,7 @@ This article describes the visual elements of the __RadLayoutControl__ and defin
 #### __Figure 2: The visual elements involved in the drag/drop operation__
 ![](images/layoutcontrol-visual-structure-02.png)
 
-* __LayoutControlGroup__: This is an items control which is used to group UIElements or other LayoutControlGroups.
+* __LayoutControlGroup__: This is a control which is used to group UIElements or other LayoutControlGroups. There are several types of layout groups. You can find more information about this in the [Layout Groups]({%slug radlayoutcontrol-features-layoutgroups-overview%}) section in the documentation.
 
 * __LayoutControlManipulationPane__: This element allows control over the properties of the selected item when the control is in edit mode.
 
@@ -34,5 +34,5 @@ This article describes the visual elements of the __RadLayoutControl__ and defin
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})
 * [Edit the Layout]({%slug radlayoutcontrol-edit-the-layout%})
 * [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%})
-* [Display Modes]({%slug radlayoutcontrol-features-display-modes%})
+* [Layout Groups Overview]({%slug radlayoutcontrol-features-layoutgroups-overview%})
 

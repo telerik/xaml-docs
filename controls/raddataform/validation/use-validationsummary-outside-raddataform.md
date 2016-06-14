@@ -10,14 +10,14 @@ position: 2
 
 # Use DataFormValidationSummary outside RadDataForm
 
-As of __R2 2016 SP1 DataFormValidationSummary__ is exposed to be used outside the context of __RadDataForm__. The control provides the following properties.
+As of __R2 2016, SP1 DataFormValidationSummary__ is exposed to be used outside the context of __RadDataForm__. The control provides the following properties.
 
 * __Errors__: The collection exposed by __DataFormValidationSummary__ for adding and removing errors. It expects objects of type __ErrorInfo__.
 
-* __HasErrors__: A boolean property providing information whether there are errors present in the __Errors__ collection.
+* __HasErrors__: A boolean property that provides informationabout  errors present in the __Errors__ collection.
 
 # See Also
 
- * [Property level validation]({%slug raddataform-validation%})
+ * [Property-level validation]({%slug raddataform-validation%})
  
- * [Item level attribute-based validation]({%slug raddataform-validation-item-level%})
+ * [Item-level attribute-based validation]({%slug raddataform-validation-item-level%})

@@ -10,17 +10,17 @@ position: 1
 
 # Adding New Entries
 
-RadGridView comes with out of the box insert functionality. In this topic we will discuss:
+RadGridView comes with out-of-the-box insert functionality. In this topic we will discuss:
 
 * [Inserting New Entries](#inserting-new-entries)
 
 * [Modifying New Entries](#modifying-new-entries)
 
-* [Commiting New Entries](#commiting-new-entries)
+* [Committing New Entries](#committing-new-entries)
 
 ## Inserting New Entries
 
-There are two ways to insert a new row with RadGridView - by pressing the __Insert__ key or by calling the __BeginInsert()__ method.
+There are two ways to insert a new row in RadGridView — by pressing the __Insert__ key or by calling the __BeginInsert()__ method.
 
 #### __[C#] Example 1: Adding new rows with BeginInsert()__
 
@@ -34,13 +34,13 @@ There are two ways to insert a new row with RadGridView - by pressing the __Inse
 	Me.AddingNewRowsGrid.BeginInsert()
 	{{endregion}}
 
-When adding a new item, an new empty row is created, in which the user can input the desired data.
+When a user adds a new item, an empty row is created in which the user can input data.
 
 #### __Figure 1: The newly created row__
 
 ![The newly created row](images/RadGridView_AddingNewItems_1.png)
 
->If the __IsReadOnly__ property of the RadGridView is set to __True__ or the __CanUserInsertRows__ property is set to __False__, no row will be added.
+>If the __IsReadOnly__ property of RadGridView is set to __True__ or the __CanUserInsertRows__ property is set to __False__, no row is added.
 
 The next step in implementing the adding functionality is to attach event handlers to the __AddingNewDataItem__ and the __RowEditEnded__ events.
 
@@ -54,7 +54,7 @@ The next step in implementing the adding functionality is to attach event handle
 
 ## Modifying New Entries
 
-The __AddingNewDataItem__ event is raised before the new row is added to the RadGridView. A typical use case is when you need to set initial values for the initialized object. This can be done by passing an object to the __GridViewAddingNewEventArgs__'s **NewObject** property.
+The __AddingNewDataItem__ event is raised before a new row is added to RadGridView. A typical use case would be when you have to set initial values for an initialized object. You can raise the event by passing an object to the __GridViewAddingNewEventArgs__'s **NewObject** property.
 
 #### __[C#] Example 3: The AddingNewDataItem event handler__
 
@@ -79,7 +79,7 @@ The __AddingNewDataItem__ event is raised before the new row is added to the Rad
 	End Sub
 	{{endregion}}
 
-In the case when the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly inserted item as shown in **Example 4**:
+If the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly inserted item as shown in **Example 4**:
 
 #### __[C#] Example 4: Adding a new item to a DataTable__
 
@@ -108,7 +108,7 @@ In the case when the ItemsSource is a __DataTable.DefaultView__, you can initial
 
 >tipVia the __OwnerGridViewItemsControl__ property of the __GridViewAddingNewEventArgs__ class you can access the __GridViewItemsControl__ for the __RadGridView__ that raised the event.
 
-## Commiting New Entries
+## Committing New Entries
 
 The __RowEditEnded__ event is raised when new data is added to RadGridView. This can be done by any of the following ways: 
 
@@ -120,7 +120,7 @@ The __RowEditEnded__ event is raised when new data is added to RadGridView. This
 
 * When the insert operation is cancelled by pressing the __Escape__ key or calling the __CancelEdit()__ method.
 
-Via the __GridViewRowEditEndedEventArgs__ of the RowEditEnded event, you can access the __EditAction__ (__Commit__ or __Cancel__) and the __GridViewEditOperationType__ (__Insert__ or __Edit__). The event arguments class also allows you to access the new data via the __NewData__ property.
+You can access __EditAction__ (__Commit__ or __Cancel__) and __GridViewEditOperationType__ (__Insert__ or __Edit__) using __GridViewRowEditEndedEventArgs__ of the RowEditEnded event. The event arguments class also allows you to access the new data via the __NewData__ property.
 
 #### __[C#] Example 5: Handling the RowEditEnded event__
 
@@ -153,7 +153,7 @@ Via the __GridViewRowEditEndedEventArgs__ of the RowEditEnded event, you can acc
 	End Sub
 	{{endregion}}
 
-When the new item is committed, it will be automatically added to RadGridView's __Items__ collection.
+When the new item is committed, it is added to RadGridView's __Items__ collection.
 
 #### __Figure 2: The new row__
 

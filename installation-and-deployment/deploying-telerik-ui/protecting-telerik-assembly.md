@@ -95,9 +95,39 @@ __Instructions__
 
 The instructions in the previous section explain how to rebuild the Telerik.Windows.Controls assemblies and the assemblies depending on it. The Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite contains libraries for processing documents which do not depend on Telerik.Windows.Controls.dll. If you are building the assemblies needed for one of the components depending on Telerik.Windows.Documents.Core you need to execute the following steps as well.
         
->importantThe following instructions are valid for Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} version __Q2 2014 or later__.
+>importantThe following instructions are valid for Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} version __Q2 2014 to Q1 2016__.
           
 1. Open C:\TelerikSilverlightWPFSource\Documents\Core\Core\Licensing\AssemblyProtection.cs in a text editor (notepad, Visual Studio, etc.).
+            
+
+2. Uncomment the following line:
+            
+#### __Before__
+
+{{region protecting-telerik-radcontrols-assembly_6}}
+	public static bool IsValid()
+	{
+	    // Uncomment the following line
+	    // return ValidatePassPhrase();
+	    return true;
+	}
+{{endregion}}
+
+#### __After__
+
+{{region protecting-telerik-radcontrols-assembly_7}}
+	public static bool IsValid()
+	{
+	    // Uncomment the following line
+	    return ValidatePassPhrase();
+	}
+{{endregion}}
+
+3. Execute steps 3-7 from the previous section.
+
+>importantThe following instructions are valid for Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} version __Q2 2016 or later__.
+          
+1. Open C:\TelerikSilverlightWPFSource\Documents\Licensing\AssemblyProtection.cs in a text editor (notepad, Visual Studio, etc.).
             
 
 2. Uncomment the following line:

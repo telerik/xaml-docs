@@ -1,7 +1,7 @@
 ---
-title: Protecting Telerik UI assembly
-page_title: Protecting Telerik UI assembly
-description: Protecting Telerik UI assembly
+title: Protecting Telerik UI Assemblies
+page_title: Protecting Telerik UI Assemblies
+description: Protecting Telerik UI Assemblies
 slug: protecting-telerik-radcontrols-assembly
 tags: protecting,telerik,ui,assembly
 published: True
@@ -10,7 +10,7 @@ position: 2
 
 # Protecting Telerik UI Assemblies
 
-Technical guidelines for protecting Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} binaries when redistributed with other applications.
+Technical guidelines for protecting Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} by Progress binaries when redistributed with other applications.
      
 ## Building Telerik Assemblies from Source Code 
 
@@ -27,7 +27,7 @@ __Instructions__
 	#### __Before__
 	
 	{{region protecting-telerik-radcontrols-assembly_0}}
-		        public static void Validate()
+        public static void Validate()
 		{
 		    //Uncomment the following line
 		    //ValidatePassPhrase();
@@ -37,7 +37,7 @@ __Instructions__
 	#### __After__
 	
 	{{region protecting-telerik-radcontrols-assembly_1}}
-		        public static void Validate()
+        public static void Validate()
 		{
 		    //Uncomment the following line
 		    ValidatePassPhrase();
@@ -59,7 +59,7 @@ __Instructions__
 	{{endregion}}
 
 
-4. Save __AssemblyProtection.cs__ and rebuild UI for Silverlight or WPF (described separately in the source code build instructions document).
+4. Save __AssemblyProtection.cs__ and rebuild the suite (described separately in the source code build instructions document).
             
 5. In your application replace the existing references to the Telerik assemblies with the ones built from the source code.
 
@@ -93,11 +93,15 @@ __Instructions__
 
 ## Building Telerik Documents Assemblies from Source Code
 
-The instructions in the previous section explain how to rebuild the Telerik.Windows.Controls assemblies and the assemblies depending on it. The Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite contains libraries for processing documents which do not depend on Telerik.Windows.Controls.dll. If you are building the assemblies needed for one of the components depending on Telerik.Windows.Documents.Core you need to execute the following steps as well.
+The instructions in the previous section explain how to build the Telerik.Windows.Controls assembly and the assemblies depending on it. The UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite contains libraries for processing documents which do not depend on Telerik.Windows.Controls.dll. 
+
+If you are building the assemblies needed for one of the components depending on Telerik.Windows.Documents.Core, such as the [Telerik Document Processing by Progress libraries](http://docs.telerik.com/devtools/document-processing/introduction), you need to execute the following steps as well.
         
->importantThe following instructions are valid for Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} version __Q2 2014 or later__.
+>importantThe following instructions are valid for Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} version __Q2 2014__ or later.
           
-1. Open C:\TelerikSilverlightWPFSource\Documents\Core\Core\Licensing\AssemblyProtection.cs in a text editor (notepad, Visual Studio, etc.).
+1. Open C:\TelerikSilverlightWPFSource\Documents\Licensing\AssemblyProtection.cs in a text editor (notepad, Visual Studio, etc.).
+
+	>In versions of the suite prior R2 2016, the path is C:\TelerikSilverlightWPFSource\Documents\Core\Core\Licensing\AssemblyProtection.cs.
             
 
 2. Uncomment the following line:
@@ -124,4 +128,4 @@ The instructions in the previous section explain how to rebuild the Telerik.Wind
 {{endregion}}
 
 3. Execute steps 3-7 from the previous section.
-          
+

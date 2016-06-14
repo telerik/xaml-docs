@@ -20,7 +20,7 @@ This help article explains how to do both with code examples.
 
 ## Automatic Columns Generation
 
-By default, __RadGridView__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of the __RadGridView__ control to a collection of employees (see code in __Example 1__ and the result in __Figure 1__), __RadGridView__ will create a separate column for each public propertiy of the __Employee__ object.
+By default, __RadGridView__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of the __RadGridView__ control to a collection of employees (see code in __Example 1__ and the result in __Figure 1__), __RadGridView__ will create a separate column for each public property of the __Employee__ object.
 
 There will be specific editors generated for the following types:
 	*	String - TextBox editor (default)

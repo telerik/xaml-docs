@@ -12,7 +12,9 @@ position: 1
 
 The purpose of this article is to describe how the __RadLayoutControl__ children are arranged in their panel.
 
-The items panel of __RadLayoutControl__ and __LayoutControlGroup__ is a __LayoutPanel__. So, each group arranges its children in its available space using the same logic. This is why this article won't consider a scenario with nested groups but it will explain the arrangment only in a single panel with its Orientation set to Horizontal. The same principles apply in a vertically oriented panel.
+The items panel of __RadLayoutControl__ and the __layout groups__ is a __LayoutPanel__. So, each group arranges its children in its available space using the same logic. This is why this article won't consider a scenario with nested groups but it will explain the arrangment only in a single panel with its Orientation set to Horizontal. The same principles apply in a vertically oriented panel.
+
+> This article is not relevant for the __LayoutControlTabGroup__. The tab items of the group are always arranged horizontally.
 
 The following rules apply to the children of the __LayoutPanel__ with a __horizontal orientation__:
 
@@ -195,6 +197,6 @@ This section contains the items setup demonstrated in the images in the article.
 
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})
-* [Display Modes]({%slug radlayoutcontrol-features-display-modes%})
+* [Layout Groups]({%slug radlayoutcontrol-features-layoutgroups-overview%})
 * [Orientation]({%slug radlayoutcontrol-features-orientation%})
 * [Edit the Layout]({%slug radlayoutcontrol-edit-the-layout%})

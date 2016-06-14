@@ -349,6 +349,8 @@ navigation:
         title: RadHtmlPlaceHolder
     controls/radlayoutcontrol:
         title: RadLayoutControl
+    controls/radlayoutcontrol/features/layoutgroups:
+        title: Layout Groups
     controls/radlegend:
         title: RadLegend
     controls/radmap:

@@ -24,12 +24,14 @@ __RadLayoutControl__ is a flexible component that allows you to arrange visual e
 
 * __Items nesting__: You can nest layout items inside one another which gives you very flexible control over the arrangement of the layout.
 
-* __Layout display modes__: The control allows you to define different display modes for the layout items. You can read more about this feature in the [Display Modes]({%slug radlayoutcontrol-features-display-modes%}) help article.
+* __Layout groups__: The control provides you with few types of layout groups which have different visual representation. You can read more about this feature in the [Layout Groups]({%slug radlayoutcontrol-features-layoutgroups-overview%}) section in the documentation.
+
+* __Save and load the layout__: This feature allows you to save the current state of the layout. You can read more about it in the [Save/Load Layout]({%slug radlayoutcontrol-features-save-load-layout%}) help article.
 
 >You can find examples that demonstrate RadLayoutControl in our [demo application](http://demos.telerik.com/wpf/).
 
 # See Also  
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})
-* [Display Modes]({%slug radlayoutcontrol-features-display-modes%})
+* [Layout Groups Overview]({%slug radlayoutcontrol-features-layoutgroups-overview%})
 * [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%})
 * [Visual Structure]({%slug radlayoutcontrol-visual-structure%})

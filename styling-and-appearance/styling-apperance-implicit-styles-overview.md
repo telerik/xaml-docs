@@ -103,10 +103,9 @@ Telerik includes the .xaml files in separate theme DLLs located in the Binaries.
 
 ## Basing styles on theme style
 
-Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} follows a naming convention and every control has a style formed by the name of the control type  follow a *naming convention* and every control  has a style formed by the name of the control type followed by  a “Style” suffix.
+The Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls follow a *naming convention* where every control has a style formed by the name of the control type followed by a “Style” suffix.
 
-For example, for the __RadComboBox__  there is a style with x:Key=”RadComboBoxStyle”. See the code in __Example 2__ .
-        
+For example, for the __RadComboBox__  there is a style with **x:Key=”RadComboBoxStyle”**. See the code in __Example 2__ .
 
 #### __[XAML] Example 2: Custom styles for RadComboBox__
 

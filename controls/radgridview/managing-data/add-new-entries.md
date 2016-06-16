@@ -42,6 +42,8 @@ When a user adds a new item, an empty row is created in which the user can input
 
 >If the __IsReadOnly__ property of RadGridView is set to __True__ or the __CanUserInsertRows__ property is set to __False__, no row is added.
 
+## Modifying New Entries
+
 The next step in implementing the adding functionality is to attach event handlers to the __AddingNewDataItem__ and the __RowEditEnded__ events.
 
 #### __[XAML] Example 2: Add handlers for the AddingNewDataItem and RowEditEnded events__
@@ -52,9 +54,7 @@ The next step in implementing the adding functionality is to attach event handle
                          RowEditEnded="radGridView_RowEditEnded" />
 	{{endregion}}
 
-## Modifying New Entries
-
-The __AddingNewDataItem__ event is raised before a new row is added to RadGridView. A typical use case would be when you have to set initial values for an initialized object. You can raise the event by passing an object to the __GridViewAddingNewEventArgs__'s **NewObject** property.
+The __AddingNewDataItem__ event is raised before a new row is added to RadGridView. A typical use case would be when you have to set initial values for an initialized object. You can do this by passing an object to the __GridViewAddingNewEventArgs__'s **NewObject** property.
 
 #### __[C#] Example 3: The AddingNewDataItem event handler__
 
@@ -110,7 +110,7 @@ If the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly 
 
 ## Committing New Entries
 
-The __RowEditEnded__ event is raised when new data is added to RadGridView. This can be done by any of the following ways: 
+The __RowEditEnded__ event is raised when new data is added to RadGridView. This can be done in any of the following ways: 
 
 * When the user presses the __Enter__ key.
 
@@ -120,7 +120,7 @@ The __RowEditEnded__ event is raised when new data is added to RadGridView. This
 
 * When the insert operation is cancelled by pressing the __Escape__ key or calling the __CancelEdit()__ method.
 
-You can access __EditAction__ (__Commit__ or __Cancel__) and __GridViewEditOperationType__ (__Insert__ or __Edit__) using __GridViewRowEditEndedEventArgs__ of the RowEditEnded event. The event arguments class also allows you to access the new data via the __NewData__ property.
+You can access __EditAction__ (__Commit__ or __Cancel__) and __GridViewEditOperationType__ (__Insert__ or __Edit__) using __GridViewRowEditEndedEventArgs__ of the RowEditEnded event. It also allows you to access the new data via the __NewData__ property.
 
 #### __[C#] Example 5: Handling the RowEditEnded event__
 

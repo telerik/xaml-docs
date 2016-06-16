@@ -10,170 +10,154 @@ position: 1
 
 # Adding New Entries
 
+RadGridView comes with out-of-the-box insert functionality. In this topic we will discuss:
 
-Using the __RadGridView__ you can add new items to your data. When adding a new item, an empty row of type __GridViewNewRow__ is shown, in which the user can input the desired data. This row has the same fields as the defined for the other rows in the __RadGridView__. This means that the user will be able to set only those values of the object bound to the row, which are displayed by the columns.
+* [Inserting New Entries](#inserting-new-entries)
 
-There are two ways to make the __GridViewNewRow__ appear - one on the user's side and one on the developer's side. The user can bring the __RadGridView__ in insert mode by focusing it and pressing the __Insert__ key. The developer can make the new row appear by calling the __BeginInsert__() method of the __RadGridView__.
+* [Modifying New Entries](#modifying-new-entries)
 
-#### __C#__
+* [Committing New Entries](#committing-new-entries)
 
-{{region gridview-managing-data-add-new-entries_0}}
+## Inserting New Entries
 
+There are two ways to insert a new row in RadGridView — by pressing the __Insert__ key or by calling the __BeginInsert()__ method.
+
+#### __[C#] Example 1: Adding new rows with BeginInsert()__
+
+	{{region gridview-managing-data-add-new-entries_0}}
 	this.AddingNewRowsGrid.BeginInsert();
-{{endregion}}
+	{{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Adding new rows with BeginInsert()__
 
-{{region gridview-managing-data-add-new-entries_1}}
-
+	{{region gridview-managing-data-add-new-entries_1}}
 	Me.AddingNewRowsGrid.BeginInsert()
-{{endregion}}
+	{{endregion}}
 
-For example, you can use a button to call this method.
+When a user adds a new item, an empty row is created in which the user can input data.
 
-#### __XAML__
+#### __Figure 1: The newly created row__
 
-{{region gridview-managing-data-add-new-entries_2}}
+![The newly created row](images/RadGridView_AddingNewItems_1.png)
 
-	<StackPanel x:Name="LayoutRoot">
-	    <Button Content="Add"
-	            Click="Button_Click" />
-				<telerik:RadGridView x:Name="radGridView"
-	                             AutoGenerateColumns="False">
-	        ...
-				</telerik:RadGridView>
-	</StackPanel>
-{{endregion}}
+>If the __IsReadOnly__ property of RadGridView is set to __True__ or the __CanUserInsertRows__ property is set to __False__, no row is added.
 
-And in the event handler call the method for the Click event.
-
-#### __C#__
-
-{{region gridview-managing-data-add-new-entries_3}}
-
-	private void Button_Click( object sender, RoutedEventArgs e )
-	{
-	    this.radGridView.BeginInsert();
-	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region gridview-managing-data-add-new-entries_4}}
-
-	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	    Me.radGridView.BeginInsert()
-	End Sub
-{{endregion}}
-
-![](images/RadGridView_AddingNewItems_1.png)
-
->If the __IsReadOnly__ property of the __RadGridView__ is set to __True__ or the __CanUserInsertRows__ property is set to __False__, the new row won't appear!
+## Modifying New Entries
 
 The next step in implementing the adding functionality is to attach event handlers to the __AddingNewDataItem__ and the __RowEditEnded__ events.
 
-#### __XAML__
+#### __[XAML] Example 2: Add handlers for the AddingNewDataItem and RowEditEnded events__
 
-{{region gridview-managing-data-add-new-entries_5}}
-
+	{{region gridview-managing-data-add-new-entries_5}}
 	<telerik:RadGridView x:Name="radGridView"
                          AddingNewDataItem="radGridView_AddingNewDataItem"
                          RowEditEnded="radGridView_RowEditEnded" />
-{{endregion}}
+	{{endregion}}
 
-The __AddingNewDataItem__ is raised before the new row is displayed. In the event handler you initialize the object that has to be added and pass it to the __GridViewAddingNewEventArgs__.
+The __AddingNewDataItem__ event is raised before a new row is added to RadGridView. A typical use case would be when you have to set initial values for an initialized object. You can do this by passing an object to the __GridViewAddingNewEventArgs__'s **NewObject** property.
 
-#### __C#__
+#### __[C#] Example 3: The AddingNewDataItem event handler__
 
-{{region gridview-managing-data-add-new-entries_6}}
-
+	{{region gridview-managing-data-add-new-entries_6}}
 	private void radGridView_AddingNewDataItem( object sender, GridViewAddingNewEventArgs e )
 	{
-	    e.NewObject = new Employee();
+	    var employee = new Employee();
+		employee.FirstName = "John";
+		employee.LastName = "Doe";
+		e.NewObject = employee;
 	}
-{{endregion}}
+	{{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: The AddingNewDataItem event handler__
 
-{{region gridview-managing-data-add-new-entries_7}}
-
+	{{region gridview-managing-data-add-new-entries_7}}
 	Private Sub radGridView_AddingNewDataItem(ByVal sender As Object, ByVal e As GridViewAddingNewEventArgs)
-	    e.NewObject = New Employee()
+	    Dim employee = New Employee()
+		employee.FirstName = "John"
+		employee.LastName = "Doe"
+		e.NewObject = employee
 	End Sub
-{{endregion}}
+	{{endregion}}
 
-In case when the __ItemsSource is a DataTable.DefaultView__, you can initialize the newly inserted item similar to:
-        
+If the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly inserted item as shown in **Example 4**:
 
-#### __C#__
+#### __[C#] Example 4: Adding a new item to a DataTable__
 
-{{region gridview-managing-data-add-new-entries_12}}
-
+	{{region gridview-managing-data-add-new-entries_12}}
 	radGridView_AddingNewDataItem(object sender, GridViewAddingNewEventArgs e)
 	{
 	    e.Cancel = true;
-	    var newRow = this.dataSource.DefaultView.AddNew();
-	    newRow["FirstName"] = "John";
-	    newRow["LastName"] = "Doe";
-	    e.NewObject = newRow;
+        var newRow = (e.OwnerGridViewItemsControl.ItemsSource as DataView).AddNew();
+        newRow["Dosage"] = 100;
+        newRow["Patient"] = "Doe";
+        e.NewObject = newRow;
 	}
-{{endregion}}
+	{{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Adding a new item to a DataTable__
 
-{{region gridview-managing-data-add-new-entries_13}}
-
+	{{region gridview-managing-data-add-new-entries_13}}
     Private Sub New(sender As Object, e As GridViewAddingNewEventArgs)
-        e.Cancel = True
-        Dim newRow = Me.dataSource.DefaultView.AddNew()
-        newRow("FirstName") = "John"
-        newRow("LastName") = "Doe"
-        e.NewObject = newRow
+		e.Cancel = True
+		Dim newRow = TryCast(e.OwnerGridViewItemsControl.ItemsSource, DataView).AddNew()
+		newRow("Dosage") = 100
+		newRow("Patient") = "Doe"
+		e.NewObject = newRow
     End Sub
-{{endregion}}
+	{{endregion}}
 
 >tipVia the __OwnerGridViewItemsControl__ property of the __GridViewAddingNewEventArgs__ class you can access the __GridViewItemsControl__ for the __RadGridView__ that raised the event.
 
+## Committing New Entries
 
-There are several ways to commit the new data and both of them will raise the __RowEditEnded__ event. The first one occurs when the user presses __Enter__, the second when the __CommitEdit()__ method is called and the last when another row is selected. The adding operation can also be cancelled by pressing __Escape__ or calling the __CancelEdit()__ method. In this case the __RowEditEnded__ event will be raised again.
+The __RowEditEnded__ event is raised when new data is added to RadGridView. This can be done in any of the following ways: 
 
-Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction__ (__Commit__ or __Cancel__) and the __GridViewEditOperationType__ (__Insert__ or __Edit__). The event arguments class also allows you to access the new data via the __NewData__ property. To be sure that the appropriate data will be submitted (as this handler will be used by the edit operations too) you have to assure that the action is __Commit__ and the operation type is __Insert__.
+* When the user presses the __Enter__ key.
 
-#### __C#__
+* When the __CommitEdit()__ method is called.
 
-{{region gridview-managing-data-add-new-entries_10}}
+* When another row is selected.
 
+* When the insert operation is cancelled by pressing the __Escape__ key or calling the __CancelEdit()__ method.
+
+You can access __EditAction__ (__Commit__ or __Cancel__) and __GridViewEditOperationType__ (__Insert__ or __Edit__) using __GridViewRowEditEndedEventArgs__ of the RowEditEnded event. It also allows you to access the new data via the __NewData__ property.
+
+#### __[C#] Example 5: Handling the RowEditEnded event__
+
+	{{region gridview-managing-data-add-new-entries_10}}
 	private void radGridView_RowEditEnded( object sender, GridViewRowEditEndedEventArgs e )
 	{
-	    if ( e.EditAction == GridViewEditAction.Cancel )
+	    if (e.EditAction == GridViewEditAction.Cancel)
 	    {
 	        return;
 	    }
-	    if ( e.EditOperationType == GridViewEditOperationType.Insert )
+
+	    if (e.EditOperationType == GridViewEditOperationType.Insert)
 	    {
-	        //Add the new entry to the data base.
+	        // Add the new entry to the database.
 	    }
 	}
-{{endregion}}
+	{{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Handling the RowEditEnded event__
 
-{{region gridview-managing-data-add-new-entries_11}}
-
+	{{region gridview-managing-data-add-new-entries_11}}
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 	    If e.EditAction = GridViewEditAction.Cancel Then
 	        Exit Sub
 	    End If
 	
 	    If e.EditOperationType = GridViewEditOperationType.Insert Then
-	        'Add the new entry to the data base.'
+	        ' Add the new entry to the database.'
 	    End If
 	End Sub
-{{endregion}}
+	{{endregion}}
 
-When the new item is committed, it will be automatically added to the __RadGridView__'s __Items__ collection, so you don't have to worry about anything on the client-side. If you have to save it to a data base, use the event handler to call the appropriate method, as it is shown in the example above.
+When the new item is committed, it is added to RadGridView's __Items__ collection.
 
-![](images/RadGridView_AddingNewItems_2.png)
+#### __Figure 2: The new row__
+
+![The new row](images/RadGridView_AddingNewItems_2.png)
 
 # See Also
 

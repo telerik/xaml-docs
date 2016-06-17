@@ -27,6 +27,8 @@ By default the __PersistenceManager__ persists properties of the following types
 * __UIElement__
 
 * __IEnumerable<UIElement>__
+ 
+>If you want to persist more complex controls with complex properties such as **RadGridView** and its filtering, sorting and grouping descriptors, you should use a [Custom Property Provider]({%slug persistence-framework-custom-property-provider%}). Good examples of its implementation can be found in our [SDK Samples Browser]({%slug sdk-samples-browser%})
 
 In order to persist the state of a UI component, the __PersistenceFramework__ uses serialization. This means that the framework creates a serialization string describing each persisted component and you are provided with the option to save that string in a stream or in an  isolated storage.		
 

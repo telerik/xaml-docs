@@ -10,9 +10,9 @@ position: 21
 
 # Style the Filtering Funnel Icon
 
-In order to style the filtering funnel icon, you should predefine the template of the __FilteringDropDown__ element and change it as you would like. More information on the topic can be found in our [Styling FilteringControl and FilteringDropDown]({%slug gridview-styling-filteringcontrol%}) article.
+In order to style the filtering funnel icon, you should predefine the template of the __FilteringDropDown__ element and change it as you would like. You can find more information on the topic in the [Styling FilteringControl and FilteringDropDown]({%slug gridview-styling-filteringcontrol%}) article.
 
-To change the background color for the filtering icon, you should modify the brush named **GridView_FilterIconBackground_Filtered** which paints the background of this element when a filter has been applied.
+To change the background color for the filtering icon, you should modify the brush named **GridView_FilterIconBackground_Filtered**, which paints the background of this element when a filter has been applied.
         
 
 You can get familiar with the template structure of the GridView [here]({%slug radgridview-styles-and-templates-templates-structure%}).

@@ -11,7 +11,7 @@ position: 9
 # Styling Column Footers
 
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewFooterCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewfootercell).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewFooterCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewfootercell).
 
 ## Targeting the GridViewFooterCell Element
 

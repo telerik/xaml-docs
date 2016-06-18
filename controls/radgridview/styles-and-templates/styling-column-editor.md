@@ -10,7 +10,7 @@ position: 16
 
 # Styling Column Editor
 
-Each of the columns that derive from __GridViewBoundColumnBase__ has an __EditorStyle__ property which is used to apply an appropriate __Style__ to the column's editor. While creating this style keep in mind the type of the editor and its properties. Here is a list of some column types and the types of their editors.
+Each of the columns that derive from __GridViewBoundColumnBase__ have an __EditorStyle__ property that is used to apply an appropriate __Style__ to the column's editor. While creating this style, keep in mind the type of the editor and its properties. Here is a list of some column types and the types of their editors.
 
 | Column Type 						| Editor Type 	|
 |-----------------------------------|---------------|

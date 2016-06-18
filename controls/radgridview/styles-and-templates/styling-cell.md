@@ -10,7 +10,7 @@ position: 4
 
 # Styling Cells
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewcell).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewcell).
 
 In this article we will discuss the following topics:
 
@@ -24,7 +24,7 @@ In this article we will discuss the following topics:
 
 ## Targeting the GridViewCell Element
 
-In order to style all RadGridView cells of an application, you should create an appropriate style targeting the __GridViewCell__ element.
+In order to style all __RadGridView__ cells of an application, you should create an appropriate style targeting the __GridViewCell__ element.
 
 You have two options:
 
@@ -52,7 +52,7 @@ You have two options:
 
 ## Setting a Column's CellStyle
 
-__RadGridView Cells__ can also be styled by creating an appropriate __Style__ for the **GridViewCell**  element and setting it as the __CellStyle__ property of the respective __GridView Column__. 
+__RadGridView Cells__ can also be styled by creating an appropriate __Style__ for the **GridViewCell** element and setting it as the __CellStyle__ property of the respective __GridView Column__. 
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 

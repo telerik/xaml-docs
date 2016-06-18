@@ -10,7 +10,7 @@ position: 14
 
 # Styling Rows
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
 
 In this article we will discuss the following topics:
 
@@ -49,7 +49,7 @@ You have two options:
 
 __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of type __Style__. __GridViewRow__ elements can be styled by providing an appropriate style for each of these properties.
 
->In order to use the __AlternateRowStyle__, you should first set the **AlternationCount** property of your RadGridView. For example, if you want to alternate each second row, you have to set its value to 2.
+>In order to use the __AlternateRowStyle__, you should first set the **AlternationCount** property of your __RadGridView__. For example, if you want to alternate each second row, you have to set its value to 2.
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 

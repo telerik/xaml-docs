@@ -42,7 +42,7 @@ In our case, we can find the FilteringDropDown under **Controls -> All -> Filter
 
 ![Selecting the FilteringDropDown from the Assets tab](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_1.png)
 
-You can then double click or draw to place a dummy control of the selected type on the scene.
+You can then double-click or draw to place a dummy control of the selected type on the scene. <Comment: I am not familiar with using scene in this context. Do you mean screen? Note that if you change it, you also use scene later in this help article, so change it later as well.>
 
 #### __Figure 3: The dummy FilteringDropDown__
 
@@ -52,7 +52,7 @@ Right-click on the created dummy control and select **Edit Template -> Edit a Co
 
 ### Create Style Resource
 
-The **Create Style Resource** dialog will prompt you for the name of the style and where to be placed within your application.
+The **Create Style Resource** dialog will prompt you for the name of the style and where to place it within your application.
 
 For this example, we will choose to apply this style to all FilteringDropDown controls and place it in our **App.xaml** file.
 
@@ -70,7 +70,7 @@ After clicking **OK**, the default style of the control will be created in the s
 
 >tipPlease bear in mind that the control template may be different in the different themes. This example modifies the **OfficeBlack** theme.
 
->importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 ### Modifying the Control Template
 
@@ -94,13 +94,13 @@ You could also modify the default style of a control by using the **Design view*
 
 ![Modifying default styles through Visual Studio's Design view](images/RadGridView_Styles_and_Templates_Visual_Studio_Design_View.png)
 
-## Modifying the Default Style By Extracting It From the Theme XAML File
+## Modifying the Default Style by Extracting it from the Theme XAML File
 
 If you prefer, you can manually extract the needed style from the respective XAML file in the **Themes.Implicit** folder of your **UI for WPF** installation and modify its code to suit your needs.
 
 The process is similar to [manually extracting the Control Template]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) of a given control.
 
->importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 ## See Also
 

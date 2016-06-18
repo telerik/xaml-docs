@@ -10,7 +10,7 @@ position: 7
 
 # Styling Column Headers
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewHeaderCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheadercell).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewHeaderCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheadercell).
 
 In this article we will discuss the following topics:
 
@@ -47,7 +47,7 @@ You have two options:
 
 ## Setting a Column's HeaderCellStyle
 
-RadGridView header cells can also be styled by creating an appropriate __Style__ for the **GridViewHeaderCell**  element and setting it as the __HeaderCellStyle__ property of the respective __GridView Column__. 
+__RadGridView__ header cells can also be styled by creating an appropriate __Style__ for the **GridViewHeaderCell** element and setting it as the __HeaderCellStyle__ property of the respective __GridView Column__. 
 
 #### __[XAML] Example 2: Setting a column's HeaderCellStyle__
 

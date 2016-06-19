@@ -26,7 +26,7 @@ In this topic we will discuss:
 
 ## Type of Editors
 
-The type of the actual editor, which is determined, created and inserted at runtime depends on the __DataType__ of the column.
+The type of the actual editor, which is determined, created and inserted at runtime, depends on the __DataType__ of the column.
 
 Here are the four different scenarios that you can get:
 
@@ -70,9 +70,9 @@ In order to change RadDropDownButton's (the funnel) visual appearance, you shoul
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __StringFilterEditorStyle__.
 
-## Modifying other editors
+## Modifying Other Editors
 
-Since the created editor will be inserted as the **Content** of __PART_FilterEditorContentControl__, you can attach to __FieldFilterEditorCreated__ event and apply the respective style to the respective editor. For example, if the editor is a plain __TextBox__ you can change its __Background__ like so:
+Since the created editor will be inserted as the **Content** of __PART_FilterEditorContentControl__, you can attach to a __FieldFilterEditorCreated__ event and apply the respective style to the respective editor. For example, if the editor is a plain __TextBox__, you can change its __Background__ like so:
 
 #### __[C#] Example 3: Setting a background for the filtering row TextBox__
 

@@ -12,7 +12,7 @@ position: 5
 
 __PROBLEM__
 
-1) When exporting DateTime values without specified **DataFormatString** to Excel, the values appear as numbers as shown in **Figure 1**:
+1) When exporting DateTime values without a specified **DataFormatString** to Excel, the values appear as numbers as shown in **Figure 1**:
 
 #### __Figure 1: Exporting DateTime values without specified DataFormatString__
 

@@ -10,7 +10,7 @@ position: 10
 
 # Styling Group Footers
 
->tipBefore reading this topic, you might find useful to get familiar with the [GridViewGroupFooterCell and GridViewGroupFooterRow]({%slug radgridview-styles-and-templates-templates-structure%}).
+>tipBefore reading this topic, you might find it useful to get familiar with the [GridViewGroupFooterCell and GridViewGroupFooterRow]({%slug radgridview-styles-and-templates-templates-structure%}).
 
 In this article we will discuss the following topics:
 
@@ -71,7 +71,7 @@ You could also use RadGridView's **GroupFooterRowStyleSelector** property to sty
 
 >importantBear in mind that the **GroupFooterRowStyle** takes precedence over the **GroupFooterRowStyleSelector** and will overwrite it if both are defined simultaneously.
 
-To do so, first create a new class which inherits the **StyleSelector** class and override its **SelectStyle** method:
+To do so, first create a new class that inherits the **StyleSelector** class and override its **SelectStyle** method:
 
 #### __[C#] Example 3: The GroupFooterRowStyleSelector class__
 
@@ -182,7 +182,7 @@ And here is the final result:
 
 ## Targeting the GridViewGroupFooterCell Element
 
-In order to style all RadGridView cells of an application, you should create an appropriate style targeting the __GridViewGroupFooterCell__ element.
+In order to style all __RadGridView__ cells of an application, you should create an appropriate style targeting the __GridViewGroupFooterCell__ element.
 
 #### __[XAML] Example 6: Styling all group footer cells of an application__
 

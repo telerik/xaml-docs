@@ -10,7 +10,7 @@ position: 6
 
 # Styling Editor Presenter
 
-If you want to change the appearance of a cell when it enters edit mode you should modify the style of the __GridViewEditorPresenter__. This element is a plain presenter used to display the editors for the cells.
+If you want to change the appearance of a cell when it enters edit mode, you should modify the style of the __GridViewEditorPresenter__. This element is a plain presenter used to display the editors for the cells.
 
 >To learn how to modify the default styles of a control, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 

@@ -10,7 +10,7 @@ position: 3
 
 # Styling RadGridView
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of RadGridView]({%slug radgridview-styles-and-templates-templates-structure%}#radgridview).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of RadGridView]({%slug radgridview-styles-and-templates-templates-structure%}#radgridview).
 
 In this topic we will discuss:
 
@@ -31,7 +31,7 @@ In this topic we will discuss:
 
 ## Targeting the RadGridView Element
 
-In order to style all instances of RadGridView in your application, you should create an appropriate style targeting the **RadGridView** control.
+In order to style all instances of __RadGridView__ in your application, you should create an appropriate style targeting the **RadGridView** control.
 
 You have two options:
 
@@ -39,7 +39,7 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default RadGridView style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To learn how to modify the default __RadGridView__ style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
 #### __[XAML] Example 1: Styling all instances of RadGridView in an application__
 
@@ -53,7 +53,7 @@ You have two options:
 
 ## Setting RadGridView's Style Property
 
-__RadGridView__ exposes a **Style** property which allows you to apply a style to a specific RadGridView control.
+__RadGridView__ exposes a **Style** property that allows you to apply a style to a specific __RadGridView__ control.
 
 #### __[XAML] Example 1: Setting RadGridView Style__
 
@@ -63,7 +63,7 @@ __RadGridView__ exposes a **Style** property which allows you to apply a style t
 
 ## Controlling RadGridView Appearance through Properties
 
-RadGridView also exposes a number of properties with which you can easily customize the control without the need of modifying its default style. They can be separated into the following categories:
+__RadGridView__ also exposes a number of properties with which you can easily customize the control without the need of modifying its default style. They can be separated into the following categories:
 
 * [General](#general)
 
@@ -107,7 +107,7 @@ The final result should be similar to this:
 
 ![](images/RadGridView_Controlling_Appearance_1.png)
 
-You can see that the columns headers are not visible, while the column footers are, moreover there are only vertical grid lines and the columns' __background__ of all columns is set to Bisque.
+You can see that the columns headers are not visible while the column footers are; moreover, there are only vertical gridlines and the __background__ of all columns is set to Bisque.
 
 ### Columns
 
@@ -119,7 +119,7 @@ This section covers the following properties:
 
 * __ColumnWidth__: Gets or sets the width of a __GridViewColumn__. 
 
-Here is a small sample, demonstrating the usage of some of the above properties.
+Here is a small example that demonstrates the usage of some of the above properties.
 
 #### __[XAML] Example 3: Usage of Columns properties__
 
@@ -131,9 +131,9 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 This section covers the following properties:
 
-* __RowIndicatorVisibility__: Shows\hides the row indicators, located on left of each row. 
+* __RowIndicatorVisibility__: Shows\hides the row indicators, located on the left of each row. 
 
-* __RowDetailsVisibilityMode__: Controls the way by which row details are visualized. You can choose from one of the three possible values defined in the __GridViewRowDetailsVisibilityMode__ enumeration - __Collapsed__, __Visible__ and __VisibleWhenSelected__. 
+* __RowDetailsVisibilityMode__: Controls the way by which row details are visualized. You can choose from one of the three possible values defined in the __GridViewRowDetailsVisibilityMode__ enumeration: __Collapsed__, __Visible__ and __VisibleWhenSelected__. 
 
 * __AlternationCount__: Controls the alternate rows count. For example, when set to 2, every second row will have alternating style applied.
 
@@ -145,7 +145,7 @@ This section covers the following properties:
 
 * __HeaderRowStyle__: Specifies a style for the header row. [Read more]({%slug gridview-styling-header-row%})
 
-Here is a small sample, demonstrating the usage of some of the above properties.
+Here is a small example that demonstrates the usage of some of the above properties.
 
 #### __[XAML] Example 4: Usage of Rows properties__
 
@@ -168,7 +168,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 ![The result of the modified Rows properties](images/RadGridView_Controlling_Appearance_2.png)
 
-You can see that the row indicators are missing and the row details are displayed only for the selected row. Moreover each even row has different styling because of the __AlternationCount__ property.
+You can see that the row indicators are missing and the row details are displayed only for the selected row. Moreover, each even row has different styling because of the __AlternationCount__ property.
 
 ### Groups
 
@@ -182,7 +182,7 @@ This section covers the following properties:
 
 * __GroupFooterRowStyle__: Specifies a style for the footer group row. [Read more]({%slug gridview-styles-and-templates-styling-group-footers%})
 
-Here is a small sample, demonstrating the usage of some of the above properties.
+Here is a small example that demonstrates the usage of some of the above properties.
 
 #### __[XAML] Example 5: Usage of Groups properties__
 
@@ -201,4 +201,4 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 ![](images/RadGridView_Controlling_Appearance_3.png)
 
-You can see that the group footers are shown, while the group panel (located at the top of the __RadGridView__) is no longer visible, thus making any changes in the grouping impossible.
+You can see that the group footers are shown while the group panel (located at the top of the __RadGridView__) is no longer visible, thus making any changes in the grouping impossible.

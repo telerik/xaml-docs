@@ -10,7 +10,7 @@ position: 11
 
 # Styling Group Panel
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewGroupPanel and GridViewGroupPanelItem]({%slug radgridview-styles-and-templates-templates-structure%}).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewGroupPanel and GridViewGroupPanelItem]({%slug radgridview-styles-and-templates-templates-structure%}).
 
 In this article we will discuss the following topics:
 
@@ -38,7 +38,7 @@ In this article we will discuss the following topics:
 
 ## Targeting the GridViewGroupPanel Element
 
-In order to style all RadGridView group panels of an application, you should create an appropriate style targeting the __GridViewGroupPanel__ element.
+In order to style all __RadGridView__ group panels of an application, you should create an appropriate style targeting the __GridViewGroupPanel__ element.
 
 You have two options:
 

@@ -10,7 +10,7 @@ position: 17
 
 # Styling Indent Cells
 
-RadGridView does expose different [indent cells](#indent-cells) and [indicator presenters](#indicator-presenters) depending on its current state - being grouped, in a hierarchy, or displaying the corresponding footers. Generally, the structure is as follows:
+__RadGridView__ exposes different [indent cells](#indent-cells) and [indicator presenters](#indicator-presenters) depending on its current state - being grouped, in a hierarchy, or displaying the corresponding footers. Generally, the structure is as follows:
 
 #### __Figure 1: RadGridView Indent Cells__
 
@@ -28,11 +28,11 @@ RadGridView exposes four different indent cells:
 
 * **GridViewGroupFooterIndentCell**: It is a part of the **GridViewGroupFooterRow**.
 
-Similarly to other RadGridView elements, you may alter their appearance by [modifying their default styles]({%slug gridview-modifying-default-styles%}) or by directly [editing their control templates]({%slug styling-apperance-editing-control-templates%}).
+Similarly to other __RadGridView__ elements, you may alter their appearance by [modifying their default styles]({%slug gridview-modifying-default-styles%}) or by directly [editing their control templates]({%slug styling-apperance-editing-control-templates%}).
 
 ## Indicator Presenters
 
-Furthermore, RadGridView exposes five indicator presenters each of them belonging to the corresponding row:
+__RadGridView__ exposes five indicator presenters, each of them belonging to the corresponding row:
 
 * **GridViewRow**
 
@@ -50,7 +50,7 @@ You may customize each of them by editing the control template of the respective
 
 ![Modifying indent presenters](images/RadGridView_HeaderRowIndicator.png)
 
-**Figure 3** shows a RadGridView with styled indent cells and indicator presenters.
+**Figure 3** shows a __RadGridView__ with styled indent cells and indicator presenters.
 
 #### __Figure 3: RadGridView with styled indent cells and indicator presenters__
 

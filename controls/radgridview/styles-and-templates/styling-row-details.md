@@ -10,7 +10,7 @@ position: 15
 
 # Styling Row Details
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the DetailsPresenter]({%slug radgridview-styles-and-templates-templates-structure%}#detailspresenter).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the DetailsPresenter]({%slug radgridview-styles-and-templates-templates-structure%}#detailspresenter).
 
 In this article we will discuss the following topics:
 
@@ -42,7 +42,7 @@ You have two options:
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __DetailsPresenterStyle__.
 
 ## Setting a Column's RowDetailsStyle
-
+<Comment: Shouldn't the previous heading be Setting RadGridView's RowDetailsStyle? That's what the section seems to be about, and that is what is described in the list at the beginning of this article.>
 __RadGridView__ exposes the __RowDetailsStyle__ property of type __Style__. It is applied to the details of the __GridViewRow__ controls inside the __RadGridView__.
 
 #### __[XAML] Example 2: Setting RadGridView's RowDetailsStyle__

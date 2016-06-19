@@ -10,7 +10,7 @@ position: 13
 
 # Styling Header Row
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewHeaderRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheaderrow).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewHeaderRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheaderrow).
 
 In this article we will discuss the following topics:
 
@@ -24,7 +24,7 @@ In this article we will discuss the following topics:
 
 ## Targeting the GridViewHeaderRow Element
 
-In order to style all RadGridView header rows of an application, you should create an appropriate style targeting the __GridViewHeaderRow__ element.
+In order to style all __RadGridView__ header rows of an application, you should create an appropriate style targeting the __GridViewHeaderRow__ element.
 
 You have two options:
 
@@ -58,7 +58,7 @@ __RadGridView's header row__ can also be styled by creating an appropriate __Sty
 
 ![RadGridView with styled header row](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderRow_03.png)
 
->As you can see, the changes we made apply only for the row. The header cells remain unchanged. To learn how to style them take a look at the [Styling Column Headers]({%slug gridview-styling-column-headers%}) topic.
+>As you can see, the changes we made apply only for the row. The header cells remain unchanged. To learn how to style them, take a look at the [Styling Column Headers]({%slug gridview-styling-column-headers%}) topic.
 
 # See Also
 

@@ -14,7 +14,7 @@ In this topic we will discuss:
 
 * [Styling FilteringDropDown](#styling-filteringdropdown)
 
-* [Styling FilteringFilteringControl](#styling-filteringcontrol)
+* [Styling FilteringControl](#styling-filteringcontrol)
 
 >Both controls are located in the **Telerik.Windows.Controls.GridView** namespace of the **Telerik.Windows.Controls.GridView** assembly. When working in **Expression Blend**, the namespaces that are needed will be added automatically.
 
@@ -50,7 +50,7 @@ You can modify it similarly to the FilteringDropDown style and set it as follows
 
 >You can find the Template Structure of the FilteringControl [here]({%slug radgridview-styles-and-templates-templates-structure%}).
 
-You are also free to create your [Custom Filtering Control]({%slug gridview-filtering-custom-filtering-controls%}) and craft it as you like.
+You are also free to create your own [Custom Filtering Control]({%slug gridview-filtering-custom-filtering-controls%}) and craft it as you like.
 
 # See Also
 

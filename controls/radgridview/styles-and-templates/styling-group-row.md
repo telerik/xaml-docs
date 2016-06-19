@@ -24,7 +24,7 @@ In this article we will discuss the following topics:
 
 ## Targeting the GridViewGroupRow Element
 
-In order to style all group rows of RadGridView instances with **GroupRenderMode="Nested"** in your application, you should create an appropriate style targeting the __GridViewGroupRow__ element.
+In order to style all group rows of __RadGridView__ instances with **GroupRenderMode="Nested"** in your application, you should create an appropriate style targeting the __GridViewGroupRow__ element.
 
 #### __Figure 1: GridViewGroupRow template structure__
 

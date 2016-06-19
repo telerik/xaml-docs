@@ -10,9 +10,9 @@ position: 12
 
 # Styling Group Row
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewGroupRow and GroupHeaderRow]({%slug radgridview-styles-and-templates-templates-structure%}).
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewGroupRow and GroupHeaderRow]({%slug radgridview-styles-and-templates-templates-structure%}).
 
->importantWith R3 2012, Telerik introduced __GroupRenderMode="Flat"__ which makes use of the **GroupHeaderRow** element as opposed to the **Nested** group render mode which uses the **GridViewGroupRow**. You should target the correct element in order for your styles to be applied. Please have a look at this [help article]({%slug gridview-grouping-groupingmodes%}) for details.
+>importantWith R3 2012, Telerik introduced __GroupRenderMode="Flat"__ which uses the **GroupHeaderRow** element as opposed to the **Nested** group render mode that uses the **GridViewGroupRow**. You should target the correct element in order for your styles to be applied. Please look at this [help article]({%slug gridview-grouping-groupingmodes%}) for details.
 
 In this article we will discuss the following topics:
 

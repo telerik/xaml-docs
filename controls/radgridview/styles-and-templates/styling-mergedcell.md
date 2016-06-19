@@ -11,7 +11,7 @@ site_name: WPF
 
 # Styling Merged Cells
 
->tipMerged cells have a template structure similar to [RadGridView cells]({%slug gridview-styling-cell%}). You could also get check the [Template Structure of the GridViewMergedCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewmergedcell).
+>tipMerged cells have a template structure similar to [RadGridView cells]({%slug gridview-styling-cell%}). You could also read the article, [Template Structure of the GridViewMergedCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewmergedcell).
 
 In this article we will discuss the following topics:
 
@@ -31,11 +31,11 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default GridViewMergedCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To learn how to modify the default __GridViewMergedCell__ style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
 >The __GridViewMergedCell__ is located in the __Telerik.Windows.Controls.GridView__ namespace of the __Telerik.Windows.Controls.GridView__ assembly.
 
->__GridViewMergedCell uses Triggers__, not VisualStateManager's states to apply property values based on specified conditions.
+>__GridViewMergedCell uses Triggers__, not VisualStateManager's states, to apply property values based on specified conditions.
 
 You can apply a style to the merged cells, similar to:
 
@@ -57,7 +57,7 @@ You can apply a style to the merged cells, similar to:
 
 ## Setting MergedCellsStyle
 
-If instead you would like to set a style only for a specific RadGridView, you can use its **MergedCellsStyle** property, like so:
+If instead you would like to set a style only for a specific __RadGridView__, you can use its **MergedCellsStyle** property, like so:
 
 #### __[XAML] Example 2: Styling merged cells of a specific RadGridView__
 
@@ -77,11 +77,11 @@ If instead you would like to set a style only for a specific RadGridView, you ca
 
 ## Setting MergedCellsStyleSelector
 
-You could also use RadGridView's **MergedCellsStyleSelector** property to style merged cells differently based on a specific condition.
+You could also use __RadGridView__'s **MergedCellsStyleSelector** property to style merged cells differently based on a specific condition.
 
 >importantBear in mind that the **MergedCellsStyle** takes precedence over the **MergedCellsStyleSelector** and will overwrite it if both are defined simultaneously.
 
-To do so, first create a new class which inherits the **StyleSelector** class and override its **SelectStyle** method:
+To do so, first create a new class that inherits the **StyleSelector** class and override its **SelectStyle** method:
 
 #### __[C#] Example 3: The StadiumCapacityStyleSelector class__
 

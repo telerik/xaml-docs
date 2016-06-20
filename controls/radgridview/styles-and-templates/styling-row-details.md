@@ -42,7 +42,6 @@ You have two options:
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __DetailsPresenterStyle__.
 
 ## Setting a Column's RowDetailsStyle
-<Comment: Shouldn't the previous heading be Setting RadGridView's RowDetailsStyle? That's what the section seems to be about, and that is what is described in the list at the beginning of this article.>
 __RadGridView__ exposes the __RowDetailsStyle__ property of type __Style__. It is applied to the details of the __GridViewRow__ controls inside the __RadGridView__.
 
 #### __[XAML] Example 2: Setting RadGridView's RowDetailsStyle__
@@ -53,7 +52,7 @@ __RadGridView__ exposes the __RowDetailsStyle__ property of type __Style__. It i
 
 #### __Figure 2: RadGridView with styled row details__
 
-![](images/RadGridView_Styles_and_Templates_Styling_GridViewRowDetails_03.png)
+![RadGridView with styled row details](images/RadGridView_Styles_and_Templates_Styling_GridViewRowDetails_03.png)
 
 # See Also
 

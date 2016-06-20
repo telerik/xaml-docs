@@ -59,6 +59,4 @@ To learn more about styling the __RadGridView__ specific elements, read the foll
 
 # See Also
 
- * [Controlling Appearance]({%slug gridview-styles-and-templates-controlling-appearance%})
-
  * [Lightweight Templates]({%slug gridview-overview-lightweight-template%})

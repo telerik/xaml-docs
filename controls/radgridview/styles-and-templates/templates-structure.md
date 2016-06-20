@@ -213,7 +213,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 * __[GridViewToggleButton]__ - represents the button that expands the row and is of type __GridViewToggleButton__.
               
 
-* __[Border]__ <Comment: This is not defined.>
+* __[Border]__
 
 * __PART_DataCellsPresenter__ - displays the cells of the row and is of type __DataCellsPresenter__.
               
@@ -245,17 +245,17 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 * __ErrorIndicator__ - hosts the __Paths__ for the indicator when the row is invalid. It is of type __Grid__.
                           
 
-* __[Path]__ <Comment: This is not defined.>
+* __[Path]__
 
 * __NavigationIndicator__ - hosts the __Paths__ for the indicator, when the row is selected. It is of type __Grid__.
                           
 
-* __[Path]__ <Comment: This is not defined.>
+* __[Path]__
 
 * __EditIndicator__ - hosts the __Paths__ for the indicator when the row is being edited. It is of type __Grid__.
                           
 
-* __[Path]__ <Comment: This is not defined.>
+* __[Path]__
 
 ## GridViewHeaderRow
 
@@ -418,7 +418,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 * __PART_DistinctFilter__ - the stack panel that holds the SelectAll checkbox, the distinct values listbox and the CloseButton.
 
                       
-* __Grid__ <Comment: This is not defined.>
+* __Grid__
 
 
 * __PART_SelectAllCheckBox__ - the SelectAll checkbox.
@@ -433,7 +433,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 * __StackPanel__ - contains the field filters.
                       
 
-* __TextBlock__  <Comment: This is not defined.>
+* __TextBlock__
 
 
 * __PART_Filter1ComboBox__ - the combobox containing the available operators.
@@ -451,7 +451,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 * __PART_Filter2ContentControl__ - the control where you type your filter value.
                           
 
-* __Grid__ <Comment: This is not defined.>
+* __Grid__
 
 
 * __PART_ApplyFilterButton__ - represents the button that you can use to apply filtering.
@@ -464,13 +464,13 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 ![](images/RadGridView_Styles_and_Templates_Templates_Structure_FilteringDropDown.png)
 
-* __Grid__ <Comment: This is not defined.>
+* __Grid__
 
 * __PART_DropDownButton__ - represents the funnel button that you need to click to display the dropdown.
 
-* __Border__ <Comment: This is not defined.>
+* __Border__
 
-* __Grid__ <Comment: This is not defined.>
+* __Grid__
 
 * __Path__ - the outer border for the filtering icon.
 

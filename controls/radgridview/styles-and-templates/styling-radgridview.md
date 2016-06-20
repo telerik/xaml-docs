@@ -65,13 +65,13 @@ __RadGridView__ exposes a **Style** property that allows you to apply a style to
 
 __RadGridView__ also exposes a number of properties with which you can easily customize the control without the need of modifying its default style. They can be separated into the following categories:
 
-* [General](#general)
+* [General](#controlling-radgridview-appearance-through-properties-General)
 
-* [Columns](#columns)
+* [Columns](#controlling-radgridview-appearance-through-properties-Columns)
 
-* [Rows](#rows)
+* [Rows](#controlling-radgridview-appearance-through-properties-Rows)
 
-* [Groups](#groups)
+* [Groups](#controlling-radgridview-appearance-through-properties-Groups)
 
 ### General
 
@@ -105,7 +105,7 @@ The final result should be similar to this:
 
 #### __Figure 3: The result of the modified General properties__
 
-![](images/RadGridView_Controlling_Appearance_1.png)
+![The result of the modified General properties](images/RadGridView_Controlling_Appearance_1.png)
 
 You can see that the columns headers are not visible while the column footers are; moreover, there are only vertical gridlines and the __background__ of all columns is set to Bisque.
 
@@ -199,6 +199,6 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 #### __Figure 5: The result of the modified Groups properties__
 
-![](images/RadGridView_Controlling_Appearance_3.png)
+![The result of the modified Groups properties](images/RadGridView_Controlling_Appearance_3.png)
 
 You can see that the group footers are shown while the group panel (located at the top of the __RadGridView__) is no longer visible, thus making any changes in the grouping impossible.

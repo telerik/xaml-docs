@@ -10,11 +10,11 @@ position: 1
 
 # ExportToXlsx
 
-The __ExportToXlsx__ method allows exporting to "Xlsx" format without the need to integrate RadGridView with *RadSpreadProcessing*. The method was introduced in __Q1 2015__.
+The __ExportToXlsx__ method allows exporting to "Xlsx" format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
 
 __Assembly References__
 
-ExportFormat.Xlsx method uses additional libraries so you need to add references to the following assemblies:
+__ExportFormat.Xlsx__ method uses additional libraries so you need to add references to the following assemblies:
 
 * Telerik.Windows.Documents.Core.dll
 * Telerik.Windows.Documents.Spreadsheet.dll 

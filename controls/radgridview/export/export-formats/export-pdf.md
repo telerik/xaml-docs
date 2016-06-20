@@ -10,7 +10,7 @@ position: 2
 
 # ExportToPdf
 
-The __ExportToPdf__ method allows exporting to "Pdf" format without the need to integrate RadGridView with *RadSpreadProcessing*. The method was introduced in __Q1 2015__.
+The __ExportToPdf__ method allows exporting to "Pdf" format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
 
 __Assembly References__
 

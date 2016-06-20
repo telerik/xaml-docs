@@ -45,7 +45,7 @@ The __StringFilterEditor__ is nothing more than a __TextBox__ and a __ToggleButt
 
 #### __[XAML] Example 1: Styling the StringFilterEditor__
 
-	{region gridview-styling-filter-row-1}}
+	{{region gridview-styling-filter-row-1}}
     <Style TargetType="{x:Type Editors:StringFilterEditor}">
 		<Setter Property="Template" Value="{StaticResource StringFilterEditorTemplate}"/>
 		<Setter Property="IsTabStop" Value="False"/>
@@ -61,7 +61,7 @@ In order to change RadDropDownButton's (the funnel) visual appearance, you shoul
 
 #### __[XAML] Example 2: Styling the FieldFilterControl__
 
-	{region gridview-styling-filter-row-2}}
+	{{region gridview-styling-filter-row-2}}
     <Style TargetType="{x:Type telerik:FieldFilterControl}">
 		<Setter Property="Template" Value="{StaticResource FieldFilterControlTemplate}"/>
         <Setter Property="Padding" Value="5"/>

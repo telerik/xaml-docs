@@ -18,7 +18,7 @@ If you want to change the appearance of a cell when it enters edit mode, you sho
 
 #### __[XAML] Example 1: Styling the GridViewEditorPresenter__
 
-	{region gridview-styling-editorpresenter_1}}
+	{{region gridview-styling-editorpresenter_1}}
     <Style TargetType="{x:Type telerik:GridViewEditorPresenter}">
 		<Setter Property="Template" Value="{StaticResource GridViewEditorPresenterTemplate}"/>
         <Setter Property="Padding" Value="5"/>
@@ -31,7 +31,7 @@ If you want to change the appearance of a cell when it enters edit mode, you sho
 
 ![RadGridView with styled GridViewEditorPresenter](images/gridview-styled-editorpresenter.png)
             
->If you would like to change the appearance of the editor itself, then you should create a simple style targeted at the corresponding editor. You can have a look at the [Styling Column Editor]({%slug radgridview-styling-column-editor%}) for more information.
+>If you would like to change the appearance of the editor itself, then you should create a simple style targeted at the corresponding editor. You can have a look at the [Styling Column Editor]({%slug radgridview-styling-column-editor%}) article for more information.
         
 # See Also
 

@@ -74,7 +74,7 @@ To define columns in the RadGanttView control, you have to add them to the Colum
 	</telerik:RadGanttView>
 {{endregion}}
 
-__Figure 1__ shows the final result.
+__Figure 1__ shows an example of defined columns.
 
 #### __Figure 1: RadGanttView with the defined columns__
 
@@ -82,7 +82,7 @@ __Figure 1__ shows the final result.
 
 ## Frozen columns
 
-__RadGanttView__ provides a way to exclude one or more columns so that the columns remain static and horizontal scrolling is not required. To do so, you have to set their __IsFrozenColumn__ property.  
+__RadGanttView__ provides a way to exclude one or more columns from the horizontal scrolling by setting their __IsFrozenColumn__ property. The frozen columns stay static on top of the horizontal scrolling.  
 
 Let us, for example, set the first "Title" column to be frozen, as shown in __Example 4__.
 

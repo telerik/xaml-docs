@@ -28,7 +28,7 @@ There are four possible solutions:
 
 1. You can update the value as illustrated in this [help article]({%slug edit-item-outside-gridview%}) on how to edit an item outside RadGridView.
 
-1. Ensure thatCollectionChanged event is raised from the bound source collection.
+1. Ensure that a CollectionChanged event is raised from the bound source collection.
 
 1. Invoke RadGridView.CalculateAggregates() method.
 

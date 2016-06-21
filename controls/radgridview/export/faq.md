@@ -5,31 +5,22 @@ description: Export FAQ
 slug: gridview-export-faq
 tags: export,faq
 published: True
-position: 6
+position: 8
 ---
 
 # Export FAQ
 
+For a general example on how to Export the data, you can check our Exporting {% if site.site_name == 'WPF' %}[ WPF Demos.](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos.](http://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}
 
-You can find listed some questions and their answers bellow
+ * __How to export paged data:__
 
-## Exporting
-
-For a general example on how to Export the data, you can check our Exporting
-{% if site.site_name == 'WPF' %}[ WPF Demos.](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos.](http://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}
-
-* __How to export paged data:__
-
-* Save the PageSize and the PageIndex of RadDataPager
+1. Save the PageSize and the PageIndex of RadDataPager
+                 
+2. Set the PageSize of RadDataPager to 0
+                 
+3. Export the data (you can use the (IEnumerable) dataPager.PagedSource as GridViewExportOptions.Items)
                   
-
-* Set the PageSize of RadDataPager to 0
-                  
-
-* Export the data (you can use the (IEnumerable) dataPager.PagedSource as GridViewExportOptions.Items)
-                  
-
-* Set the PageSize and the PageIndex back
+4. Set the PageSize and the PageIndex back
 
 >tipYou can download a __runnable project__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/ExportPagedDataExcel__  .
 
@@ -54,7 +45,7 @@ In order to avoid getting this warning, you should export to ExcelML format with
             
 * __Modify the exported value:__ You could subscribe for the __ElementExporting__ event of RadGridView and change the __e.Value__ to be exported.
             
-* __Export data on multiple worksheets of the same workbook:__ You can export data on different worksheets with [RadSpreadProcessing]({%slug radspreadprocessing-overview%}), which model is completely independent from UI. You can also check our new example {% if site.site_name == 'WPF' %}[Export with RadSpreadProcessing](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Export with RadSpreadProcessing](http://demos.telerik.com/silverlight/#SpreadProcessing/RadGridViewIntegration){% endif %} on how to do so.
+* __Export data on multiple worksheets of the same workbook:__ You can export data on different worksheets with [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview), which model is completely independent from UI. You can also check our new example {% if site.site_name == 'WPF' %}[Export with RadSpreadProcessing](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Export with RadSpreadProcessing](http://demos.telerik.com/silverlight/#SpreadProcessing/RadGridViewIntegration){% endif %} on how to do so.
             
 * __OutOfMemoryException:__ All the data to be exported is saved in memory, so the exporting capacities are not huge. For more complex scenarios, you consider using our [Reporting tools](http://www.telerik.com/products/reporting.aspx) built to suit various exporting scenarios.
             
@@ -65,7 +56,7 @@ In order to avoid getting this warning, you should export to ExcelML format with
 __How to print a document:__
 * As of __Q1 2015__ RadGridView exposes a new method – [ExportToPdf]({%slug gridview-export-pdf%}) which allows exporting to Pdf format without the need to integrate RadGridView with RadSpreadProcessing.
 
-* Another way would be to follow the approach illustrated in the "Print and Export with RadDocument" {% if site.site_name == 'WPF' %}[ demo.](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demo.](http://demos.telerik.com/silverlight/#GridView/PrintAndExportWithRadDocument){% endif %}
+* Another way would be to follow the approach illustrated in the "Print and Print Preview" {% if site.site_name == 'WPF' %}[ demo.](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demo.](http://demos.telerik.com/silverlight/#GridView/PrintAndPrintPreview){% endif %}
 
 * Another way would be to manually create the document to be exported.
 You can go through the articles about using the [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) and about the document viewer control - [RadRichTextBox]({%slug radrichtextbox-overview%}). You could as well review [this article]({%slug radrichtextbox-features-document-elements-tables%}) on how you could create the document elements.

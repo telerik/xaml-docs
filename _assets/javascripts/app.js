@@ -149,10 +149,6 @@ $(function(){
     });
 });
 
-$(function(){
-    $('#toYear').text((new Date).getFullYear());
-});
-
 function strEndsWith(str, suffix) {
     return str.match(suffix+"$")==suffix;
 }

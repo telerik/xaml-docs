@@ -15,9 +15,11 @@ This tutorial will walk you through the creation of a sample application that co
 * [Assembly References](#assembly-references)
 * [Defining a RadLayoutControl](#defining-a-radlayoutcontrol)
 * [Adding Items in the Control](#adding-items-in-the-control)
-* [Display Modes](#display-modes)
+* [Layout Groups](#layout-groups)
 * [Enable Edit Mode](#enable-edit-mode)
 * [Code Example](#code-example)
+
+> The figures in the RadLayoutControl help documentation are showing the control with the __Windows8 theme__ applied. You can see how to set a theme in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
 
 ## Assembly References
 
@@ -43,7 +45,7 @@ __RadLayoutControl__ doesn't display any content when it is not populated with i
 
 ## Adding Items in the Control
 
-You can add items through the __Items__ collection of RadLayoutControl. The layout component works with UIElements and LayoutControlGroup controls. In other words you can populate it with all visual elements provided by the framework. __Example 2__ demonstrates this.
+You can add items through the __Items__ collection of RadLayoutControl. The layout component works with __LayoutControlGroup__ controls and __UIElements__. In other words you can populate it with all visual elements provided by the framework. __Example 2__ demonstrates this.
 
 #### __[XAML] Example 2: Adding items in the RadLayoutControl.__
 {{region layoutcontrol-getting-started-02}}
@@ -56,10 +58,10 @@ You can add items through the __Items__ collection of RadLayoutControl. The layo
 	</telerik:RadLayoutControl>
 {{endregion}}
 
-#### __Figure 2:__
+#### __Figure 2: RadLayoutControl with few elements added__
 ![](images/layoutcontrol-getting-started-02.png)
 
-> By default the layout control and its groups are ordering their items with horizontal orientation. You can see how to change this in the [Orientation]() help article.
+> By default the layout control and its groups are ordering their items with __horizontal orientation__. You can see how to change this in the [Orientation]({%slug radlayoutcontrol-features-orientation%}) help article.
 
 You can nest LayoutControlGroups into one another which allows you to separate the layout into different groups that can be arraned along with their items.
 
@@ -84,14 +86,14 @@ You can nest LayoutControlGroups into one another which allows you to separate t
 	</telerik:RadLayoutControl>
 {{endregion}}
 
-#### __Figure 3:__
+#### __Figure 3: RadLayoutControl with nested groups__
 ![](images/layoutcontrol-getting-started-03.png)
 
->important RadLayoutControl doesn't support data binding and setting its ItemsSource property will throw an exception.
+>important RadLayoutControl doesn't support data binding and setting its ItemsSource property will throw an exception (NotSupportedException).
 
-## Display Modes
+## Layout Groups
 
-The LayoutControlGroups support different display modes which can be set up through the DisplayMode property. You can read more about this in the [Display Modes]() help article. Additionally, the [Code Example](#code-example) section of this help article demonstrates the different modes.
+There are few layout group controls which can be used with __RadLayoutControl__. Each group has different appearance. You can read more about this in the [Layout Groups]({%slug radlayoutcontrol-features-layoutgroups-overview%}) section in the documentation. Additionally, the [Code Example](#code-example) section of this help article demonstrates the different layout groups.
 
 ## Enable Edit Mode
 
@@ -109,18 +111,18 @@ The control allows you to rearrange its children at runtime. To enable this the 
 
 ## Code Example
 
-This section demonstrates a basic layout set up with nested groups and different group display modes.
+This section demonstrates a basic layout set up with nested groups and different group types.
 
-#### __[XAML] Example 5: Compelete code example__
+#### __[XAML] Example 5: Complete code example__
 {{region layoutcontrol-getting-started-05}}
 	<telerik:RadLayoutControl IsInEditMode="True">
 		<telerik:LayoutControlGroup Orientation="Vertical">
-			<telerik:LayoutControlGroup DisplayMode="Expander" Margin="2" Header="Expandable">
-				<telerik:LayoutControlGroup Orientation="Vertical">                        
+			<telerik:LayoutControlExpanderGroup Margin="2" Header="Layout Control Expander Group">
+				<telerik:LayoutControlGroup Orientation="Vertical">
 					<telerik:LayoutControlGroup>
 						<RadioButton Content="RadioButton 1" Padding="5" VerticalAlignment="Center" Margin="2" />
-						<RadioButton Content="RadioButton 2" Padding="5" VerticalAlignment="Center" Margin="2" />
-						<RadioButton Content="RadioButton 3" Padding="5" VerticalAlignment="Center" Margin="2" />                            
+						<RadioButton Content="RadioButton 2" IsChecked="True" Padding="5" VerticalAlignment="Center" Margin="2" />
+						<RadioButton Content="RadioButton 3" Padding="5" VerticalAlignment="Center" Margin="2" />
 					</telerik:LayoutControlGroup>
 
 					<Grid>
@@ -130,9 +132,9 @@ This section demonstrates a basic layout set up with nested groups and different
 						</Grid.ColumnDefinitions>
 						<TextBlock Text="TextBlock:" Foreground="Black" VerticalAlignment="Center" Margin="5 0 5 0"/>
 						<TextBox Grid.Column="1" Foreground="Black" VerticalAlignment="Center" Margin="5 0 5 0"/>
-					</Grid>                        
+					</Grid>
 				</telerik:LayoutControlGroup>
-				
+
 				<ListBox  Padding="8" Margin="2" >
 					<ListBoxItem Content="ListBoxItem 1" />
 					<ListBoxItem Content="ListBoxItem 2" />
@@ -141,17 +143,17 @@ This section demonstrates a basic layout set up with nested groups and different
 					<ListBoxItem Content="ListBoxItem 5" />
 					<ListBoxItem Content="ListBoxItem 6" />
 				</ListBox>
-			</telerik:LayoutControlGroup>
+			</telerik:LayoutControlExpanderGroup>
 
-			<telerik:LayoutControlGroup Orientation="Horizontal" DisplayMode="TabControl" Margin="2">
-				<telerik:LayoutControlGroup Header="Layout Tab 1">
-					<TextBlock Text="TextBlock" Padding="5" Margin="2" Foreground="Black" Background="LightGray" TextAlignment="Center" VerticalAlignment="Stretch" />
-					<TextBlock Text="TextBlock" Padding="5" Margin="2" Foreground="Black" Background="LightGray" TextAlignment="Center" VerticalAlignment="Stretch" />
-				</telerik:LayoutControlGroup>
-				<telerik:LayoutControlGroup Header="Layout Tab 2">
-
-				</telerik:LayoutControlGroup>
-			</telerik:LayoutControlGroup>               
+			<telerik:LayoutControlTabGroup Margin="2">
+				<telerik:LayoutControlTabGroupItem Header="Tab 1">
+					<telerik:LayoutControlGroup>
+						<TextBlock Text="TextBlock" Padding="5" Margin="2" Foreground="Black" Background="LightGray" TextAlignment="Center" VerticalAlignment="Stretch" />
+						<TextBlock Text="TextBlock" Padding="5" Margin="2" Foreground="Black" Background="LightGray" TextAlignment="Center" VerticalAlignment="Stretch" />
+					</telerik:LayoutControlGroup>
+				</telerik:LayoutControlTabGroupItem>
+				<telerik:LayoutControlTabGroupItem Header="Tab 2" />
+			</telerik:LayoutControlTabGroup>
 		</telerik:LayoutControlGroup>
 
 		<telerik:LayoutControlGroup Orientation="Vertical" HorizontalAlignment="Right">
@@ -170,7 +172,7 @@ This section demonstrates a basic layout set up with nested groups and different
 
 # See Also
 * [Overview]({%slug radlayoutcontrol-overview%})
-* [Display Modes]({%slug radlayoutcontrol-features-display-modes%})
+* [Layout Groups]({%slug radlayoutcontrol-features-layoutgroups-overview%})
+* [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%})
 * [Orientation]({%slug radlayoutcontrol-features-orientation%})
 * [Edit the Layout]({%slug radlayoutcontrol-edit-the-layout%})
-* [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%})

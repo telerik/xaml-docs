@@ -47,27 +47,21 @@ a img {
 #logo-bar-sl {
     font-size: 14px;
 	float: left;
-    margin-bottom: 1.717em;
     margin-left: 1.833em;
-    margin-top: 1.617em;
+    margin-top: 1.5em; 
+	margin-bottom: 1.6em;
+	width: 287px;
 }
 
-#logo-bar a,
-#logo-bar-sl a {
-	display: inline-block;
-	background: url('../images/telerik_logo_wpf.png') 0 center no-repeat;
-	height: 33px;
-	color: #fff;
-	width: 236px;
+#logo-bar-sl {
+	width: 334px;
 }
 
-#logo-bar span {
-	display: none;
-}
-
-#logo-bar-sl a{
-	background: url('../images/telerik_logo_sl.png') 0 center no-repeat;
-}
+#logo-bar a img,
+#logo-bar-sl a img {
+    height: auto;
+    width: 100%;
+} 
 
 #logo-bar-sl span {
 	display: none;
@@ -166,7 +160,7 @@ a img {
     padding: 0;
     right: 514px;
     text-align: right;
-    left: 20%;
+    left: 28%;
 }
 
 #page-search.search-visibility {
@@ -176,7 +170,7 @@ a img {
     margin-top: 0;
     position: relative;
     right: 1.83em;
-    top: -1.7em;
+    top: -1.6em;
     width: calc(100% - 3.666em);
 }
 
@@ -804,6 +798,13 @@ header, nav, section, article, aside, footer {
 } 
 
 @media (max-width: 1200px) {
+	#logo-bar,
+	#logo-bar-sl{
+        float: none;
+        display: inline-block;
+		margin-left: 1em;
+    }
+
     #page-nav {
        width: 30%; 
     }
@@ -812,81 +813,29 @@ header, nav, section, article, aside, footer {
     #page-article { 
         width: 70%; 
     }
-    
-    #page-search {
-        left: 30%;
-    }
 
-    .btn.pricing-btn {
-        display: none;
-    }
-
-    #page-search {
-        right: 390px;
-    }
-}
-
-/* Responsive styles */
-@media (max-width:800px) {
-    body {
-        min-width: initial;
-    }
-
-    .faux-columns {
-        background-image: none;
-    }
-
-    #markdown-toc {
-        border-bottom: none;
-    }
-
-    .nav-buttons,
     #page-nav,
     #page-tabs,
-    #page-top #page-search {
+    #page-top,
+	#page-search,
+    .nav-buttons {
         display: none;
     }
-
-    #page-nav {
-        min-width: 250px;
-    }
-
-    div#page-inner-content {
-        bottom: 0;
-    }
-
-    #page-article {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    #page-article h1 {
-        margin-top: 1em;
-    }
-
-    .toggle-nav {
+	
+	.show-search {
         display: inline-block;
-    }
-
-    #logo-bar,
-	#logo-bar-sl {
-       float: none;
-       display: inline-block;
-       margin-left: 1em;
-	   width: 0px;
-    }
-
-    #page-search {
-        width: 30%;
+        margin: 0;
+        position: absolute;
+        top: 27px;
+        padding: 0;
+        right: 1.833em;
+        text-align: right;
         left: auto;
-        display: none;
-        background-color: #2a2d33;
+        cursor: pointer;
     }
-
-    #page-search > div {
-        padding: 0 3.83em 0 0;    
+	 
+	 .toggle-nav {
+        display: inline-block;
     }
 	
     .toggle-nav span { 
@@ -911,19 +860,53 @@ header, nav, section, article, aside, footer {
 
     .toggle-nav span:after {
       bottom: -8px; 
-    }
-        
-    .show-search {
-        display: inline-block;
-        margin: 0;
-        position: absolute;
-        top: 27px;
-        padding: 0;
-        right: 1.833em;
-        text-align: right;
-        left: auto;
-        cursor: pointer;
     }	
+
+    div#page-inner-content {
+        bottom: 0;
+    }
+
+    #page-article {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+/* Responsive styles */
+@media (max-width:800px) {
+    body {
+        min-width: initial;
+    }
+
+    .faux-columns {
+        background-image: none;
+    }
+
+    #markdown-toc {
+        border-bottom: none;
+    }
+
+    #page-article h1 {
+        margin-top: 1em;
+    }
+
+    .toggle-nav {
+        display: inline-block;
+    }
+
+    #page-search {
+        width: 33%;
+		right: 0px;
+        left: auto;
+        display: none;
+        background-color: #2a2d33;
+    }
+
+    #page-search > div {
+        padding: 0 3.83em 0 0;    
+    }
 
     footer {
         display: none;
@@ -1423,5 +1406,33 @@ header, nav, section, article, aside, footer {
  .detailsDIV table td {
   padding: 4px 16px 4px 16px!important;
 }
+
+@media (max-width: 450px) {
+	header {
+		height: 85px;
+	}
+
+	#logo-bar, 
+	#logo-bar-sl {
+		position: absolute;
+	}
+	
+	#logo-bar  a img {
+		width: 287px;
+	}
+	
+	#logo-bar-sl a img{
+		width: 334px;
+	}
+	
+	#page-header .show-search {
+		display:none;
+	}
+	
+	.toggle-nav {
+		top: 31px;
+	}
+}
+
 
 /* END Kendo Grid Nova Theme CSS*/

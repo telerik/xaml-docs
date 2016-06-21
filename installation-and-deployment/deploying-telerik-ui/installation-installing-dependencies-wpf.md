@@ -85,6 +85,7 @@ RadSparkLine	|	Telerik.Windows.Controls.Charting, Telerik.Windows.Controls.DataV
 RadSpellChecker	|	Telerik.Windows.Documents.Proofing, Telerik.Windows.Documents.Proofing.DataGrid, Telerik.Windows.Documents.Proofing.RadGridView, Telerik.Windows.Documents, Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml
 RadSpreadProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadsheet	|	Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Spreadsheet, Telerik.Windows.Data, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
+RadSpreadStreamProcessing	|	Telerik.Documents.SpreadsheetStreaming
 RadTabControl	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTileList	|	Telerik.Windows.Controls
 RadTileView	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data

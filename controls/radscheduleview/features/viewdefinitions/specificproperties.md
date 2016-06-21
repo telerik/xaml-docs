@@ -16,7 +16,11 @@ position: 2
 
 Some ViewDefinitions have specific properties. Here is a list of specific properties for DayView and WeekView:       
 
-* __ShowWeekGroupHeaders__ – get or sets whether the WeekHeaders should be visible.
+* __EnableSmallAppointmentRendering__ - gets or sets whether appointments with duration smaller than MinorTickLength will be rounded to MinorTickLength. 
+
+>When __EnableSmallAppointmentRendering__ is enabled, RadScheduleView will display the appointments with zero duration inside DayViewDefinition and WeekViewDefinition.
+
+* __ShowWeekGroupHeaders__ – gets or sets whether the WeekHeaders should be visible.
 
 * __WeekGroupHeaderStringFormat__ – gets or sets the format that will be applied to the WeekHeaders. After setting the __ShowWeekGroupHeaders__ to __True__ you can customize the string format of the week numbers displayed in the Header.        
 

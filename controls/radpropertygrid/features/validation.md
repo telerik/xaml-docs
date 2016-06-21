@@ -108,3 +108,38 @@ You may notice that there is a call to a ValidateProperty method. You will have 
 	{{endregion}}
 
 
+## Validating Property Sets
+
+> Before proceeding with this section you might find it useful to get familiar with  RadPropertyGrid`s [Property Sets]({%slug radpropertygrid-defining-propertysets%}) functionality.
+
+In order to enable validation for the fields that represent property sets, you need to set the __PropertySetsValidationFunction__ of RadPropertyGrid. The function takes two arguments: __string__ - the property that is being changed and __object__ - the value that is about to be applied. The function returns a string that represents the error message. 
+
+#### __[C#] Example 6: Setting the PropertySetsValidationFunction:__
+
+	 this.propGrid.PropertySetsValidationFunction = new Func<string, object, string>((s, t) => { return Validate(s, t); });
+
+	 private string Validate(string s, object t)
+        {
+            if (s == "Name" && t != null && t.ToString().Length < 5)
+            {
+                return "Name should contain more than 5 characters!";
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+__Figure 1__ shows the appearance of RadPropertyGrid after validation is applied.
+
+#### __Figure 1: Appearance of RadPropertyGrid after PropertySetsValidationFunction is set:__
+![Rad Property Grid Sets Validated](images/RadPropertyGrid_Sets_Validated.png)
+
+>important Both the __ValidatesOnDataErrors__ and __NotifyOnValidationError__ properties of the PropertyDefinition`s Binding should be set to __True__ for the error message to appear.
+
+# See Also
+
+- [Property Sets]({%slug radpropertygrid-defining-propertysets%})
+
+- [Edit Modes]({%slug radpropertygrid-edit-modes%})
+

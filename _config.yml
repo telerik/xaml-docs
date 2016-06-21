@@ -73,6 +73,7 @@ controls/radribbonview/features/ribbon-controls/ribbon-window-sl.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-silverlight.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-viewmodel.md,
+controls/radspellchecker/sdk-examples.md,
 controls/radspreadsheet/model/import/export/import-export-xlsxformatprovider-silverlight.md,
 controls/radspreadsheet/model/import/export/import-export-csvformatprovider-silverlight.md,
 controls/radspreadsheet/model/import/export/import-export-txtformatprovider-silverlight.md,
@@ -349,6 +350,8 @@ navigation:
         title: RadHtmlPlaceHolder
     controls/radlayoutcontrol:
         title: RadLayoutControl
+    controls/radlayoutcontrol/features/layoutgroups:
+        title: Layout Groups
     controls/radlegend:
         title: RadLegend
     controls/radmap:
@@ -596,6 +599,8 @@ navigation:
     controls/radrichtextbox/features/references:
         title: References
         position: 19	
+    "*radspreadstreamprocessing":
+        title: RadSpreadStreamProcessing
 ## Centaur Controls End
 
 ## X1 Controls Start
@@ -752,6 +757,9 @@ navigation:
         title: RadWizard
     controls/radwizard/features:
         title: Features
+    controls/radgridview/export/export-formats:
+        title: Export Formats
+        position: 6
 ## X1 Controls End
 
 ## Common Start

@@ -11,21 +11,21 @@ position: 1
 # Introduction
 
 {% if site.site_name == 'Silverlight' %}
-![UI for SL logo](images/UI_for_SL_logo.png)
+<img src="images/UI_for_SL_logo.png" style="min-width:334px;width: 30%;" alt="UI for Silverlight logo" />
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-![UI for WPF logo](images/UI_for_WPF_logo.png)
+<img src="images/UI_for_WPF_logo.png" style="min-width:287px;width: 30%;" alt="UI for WPF logo" />
 {% endif %}
 
-Thank you for choosing Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
+Thank you for choosing Telerik &reg;  UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
 
 {% if site.site_name == 'Silverlight' %}
 UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 100 UI controls for building rich line-of-business Silverlight applications.
 
-Sharing the same codebase with Telerik WPF controls, the Silverlight controls offer a clean and intuitive API, Blend support and powerful theming capabilities that will radically improve your RIA development.
+Sharing the same codebase with Telerik &reg; WPF controls, the Silverlight controls offer a clean and intuitive API, Blend support and powerful theming capabilities that will radically improve your RIA development.
 
-Telerik UI for Silverlight features the following controls:
+Telerik &reg; UI for Silverlight features the following controls:
 
 * [AutoCompleteBox]({%slug radautocompletebox-overview%})
 
@@ -187,7 +187,7 @@ Telerik UI for Silverlight features the following controls:
 {% if site.site_name == 'WPF' %}
 UI for WPF is a complete commercial toolset for building next-generation line of business and kiosk applications for Windows Presentation Foundation. Leveraging the amazing potential of this platform as well as many years of excellence in presentation layer technologies, Telerik UI for WPF controls provide a high-performance, visually appealing, and highly customizable shortcut to the world of engaging user experiences.        
 
-Telerik UI for WPF features the following controls:
+Telerik &reg; UI for WPF features the following controls:
 
 * [AutoCompleteBox]({%slug radautocompletebox-overview%})
 
@@ -309,6 +309,8 @@ Telerik UI for WPF features the following controls:
 
 * [SpreadProcessing]({%slug radspreadprocessing-overview%})
 
+* [SpreadStreamProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) 
+
 * [Spreadsheet]({%slug radspreadsheet-overview%})
 
 * [TabControl]({%slug radtabcontrol-overview2%})
@@ -361,7 +363,7 @@ To learn how to install UI for {% if site.site_name == 'Silverlight' %}Silverlig
 
 ## Consuming Data
 
-To learn more about the different approaches for populating the Telerik UI for {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
+To learn more about the different approaches for populating the Telerik &reg; UI for {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
 
 ## Styling and Appearance
 

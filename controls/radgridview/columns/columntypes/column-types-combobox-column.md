@@ -127,7 +127,7 @@ __RadGridView__ binds to a collection of objects representing the teams. The tea
                                     DataMemberBinding="{Binding DriverID}"
                                     ItemsSourceBinding="{Binding CurrentDrivers}"
                                     SelectedValueMemberPath="ID"
-									IsLightWeightModeEnabled="True"
+                                    IsLightweightModeEnabled="True"
                                     DisplayMemberPath="Name" />
 {{endregion}}
 

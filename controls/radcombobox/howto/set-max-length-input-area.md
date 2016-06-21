@@ -10,13 +10,49 @@ position: 7
 
 # Set MaxLength Property of the Input Area
 
-The purpose of this tutorial is to show you how to set the __MaxLength__ property of the [InputArea]({%slug radcombobox-general-information-visual-structure%}) of [editable]({%slug radcombobox-features-edit-modes%})__RadComboBox__(__RadComboBox__'s __IsEditable__ property is set to __True__).
+The purpose of this tutorial is to show you how to set the __MaxLength__ property of the [InputArea]({%slug radcombobox-general-information-visual-structure%}) of [editable]({%slug radcombobox-features-edit-modes%}) __RadComboBox__ (__RadComboBox__'s __IsEditable__ property is set to __True__).
 
-It is possible to set the MaxLength property of the InputArea with two different approaches: 
+It is possible to set the MaxLength property of the InputArea using the following approaches: 
+
+* [By using the TextBoxStyle property](#using-the-textboxstyle-property)
 
 * [By using the controls resources](#using-the-control-resources)
 
 * [By using an attached property](#using-an-attached-property)
+
+## Using the TextBoxStyle property
+
+As of Q2 2014 release __RadComboBox__ provides [TextBoxStyle property]({%slug radcombobox-features-textboxstyle%}) which makes it easy to customize the TextBox part of the control. Just create a custom Style with TargetType set to TextBox and set the MaxLength to the needed value as shown below:
+
+#### __XAML__
+ 
+{{region radcombobox-howto-set-max-length-input-area_6}}
+	<UserControl.Resources>
+		<Style TargetType="TextBox" x:Key="CustomComboTextBoxStyle">
+			<Setter Property="MaxLength" Value="5" />
+		</Style>
+	</UserControl.Resources>
+{{endregion}}
+
+If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you would need to base that Style to the default __TextBoxStyle__ of __RadComboBox__ named _ComboBoxTextBoxStyle_.
+
+#### __XAML__
+
+{{region radcombobox-howto-set-max-length-input-area_8}}
+	<Style TargetType="TextBox" x:Key="CustomComboTextBoxStyle" BasedOn="{StaticResource ComboBoxTextBoxStyle}">
+		...
+	</Style>
+{{endregion}}
+
+Then, set the created Style as __TextBoxStyle__ of __RadComboBox__:
+
+#### __XAML__
+ 
+{{region radcombobox-howto-set-max-length-input-area_7}}
+	<telerik:RadComboBox 		
+		IsEditable="True" 
+		TextBoxStyle="{StaticResource CustomComboTextBoxStyle}" />
+{{endregion}}
 
 ## Using the control Resources
 

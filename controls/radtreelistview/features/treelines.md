@@ -25,7 +25,7 @@ __The functionality can be configured through the following properties:__
 
 	* __Visible__
 
-	* __Hidded__
+	* __Hidden__
 
 * __TreeLinesBrush__ – controls the __Brush__ (_Color_) of the tree lines. It is of type __System.Windows.Media.Brush__
 

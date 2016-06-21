@@ -14,7 +14,7 @@ position: 0
 
 ## 
 
-The assembly in which __RadDataServiceDataSource__ is located contains a class named __QueryableDataServiceCollectionView&lt;T&gt;.__ This is the collection view that the control uses internally. The only functionality that the control adds over this collection view is XAML-friendly API. In case you are strictly following the __MVVM pattern__ and you cannot embed an UI control inside you view model, you should use the __QueryableDataServiceCollectionView&lt;T&gt;__ class. Like __RadDataServiceDataSource__, the __QueryableDataServiceCollectionView&lt;T&gt;__ needs a __DataServiceContext__ and a __DataServiceQuery&lt;T&gt;__ to be constructed. Do not touch the context and the query once you have supplied them in the collection view constructor:
+The assembly in which __RadDataServiceDataSource__ is located contains a class named __QueryableDataServiceCollectionView&lt;T&gt;.__ This is the collection view that the control uses internally. The only functionality that the control adds over this collection view is XAML-friendly API. In case you are strictly following the __MVVM pattern__ and you cannot embed an UI control inside your view model, you should use the __QueryableDataServiceCollectionView&lt;T&gt;__ class. Like __RadDataServiceDataSource__, the __QueryableDataServiceCollectionView&lt;T&gt;__ needs a __DataServiceContext__ and a __DataServiceQuery&lt;T&gt;__ to be constructed. Do not touch the context and the query once you have supplied them in the collection view constructor:
 
 #### __C#__
 

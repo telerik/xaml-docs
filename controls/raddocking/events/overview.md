@@ -14,36 +14,28 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 
 * __State Changed Events__
 
-	* __ActivePaneChanged__- Occurs when the ActivePane is changed. The passed event argument is of type __ActivePaneChangedEventArgs__.
+	* __ActivePaneChanged__ - Occurs when the ActivePane is changed. The passed event argument is of type __ActivePaneChangedEventArgs__.
 	
 		* __ActivePaneChangedEventArgs__ – Exposes information about NewPane (activated) and OldPane (deactivated).
 		
-	* __PaneStateChanged__- This event is fired whenever the state of the RadPane is changed (e.g., pin, unpin, close, show, etc.).
+	* __PaneStateChange__ - This event is fired whenever the state of the RadPane is changed (e.g., pin, unpin, close, show, etc.).
 	
 * __Pin\Unpin Events__
 
-	* __PreviewUnpin__- Occurs before the RadPane is unpinned. The passed event argument is of type __StateChangeEventArgs__.
+	* __PreviewUnpin__ - Occurs before the RadPane is unpinned. The passed event argument is of type __StateChangeEventArgs__.
 	
-	* __Unpin__- Occurs when the RadPane is unpinned. The passed event argument is of type __StateChangeEventArgs__.
+	* __Unpin__ - Occurs when the RadPane is unpinned. The passed event argument is of type __StateChangeEventArgs__.
 	
-	* __PreviewPin__- Occurs before the RadPane is pinned. The passed event argument is of type __StateChangeEventArgs__.
+	* __PreviewPin__ - Occurs before the RadPane is pinned. The passed event argument is of type __StateChangeEventArgs__.
 	
-	* __Pin__- Occurs when the RadPane is pinned. The passed event argument is of type __StateChangeEventArgs__.
-	
-	* __PreviewUnpin__- Occurs before the RadPane is unpinned. The passed event argument is of type __StateChangeEventArgs__.
-	
-	* __Unpin__- Occurs when the RadPane is unpinned. The passed event argument is of type __StateChangeEventArgs__.
-
-	* __PreviewPin__- Occurs before the RadPane is pinned. The passed event argument is of type __StateChangeEventArgs__.
-	
-	* __Pin__- Occurs when the RadPane is pinned. The passed event argument is of type __StateChangeEventArgs__.
+	* __Pin__ - Occurs when the RadPane is pinned. The passed event argument is of type __StateChangeEventArgs__.
 	
 >For example, when you [unpin]({%slug raddocking-panes-pinned-unpinned-panes%}) a RadPane, the events fire in this order:                   
 >	* __PreviewUnpin__
 >	* __Unpin__
->	* __PaneStateChanged__ 
+>	* __PaneStateChange__ 
 
- 
+
 * __Show\Hide Events__
 
 	* __PreviewShow__ - Occurs before the RadPane is shown.
@@ -52,15 +44,15 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 
 	* __PreviewClose__ - Occurs before the RadPane is closed.
 	
-	* __Close__- Occurs when the RadPane is closed.
+	* __Close__ - Occurs when the RadPane is closed.
 
 	* __PreviewWindowClose__ - Occurs before the ToolWindow is closed.
 
 	* __WindowClose__ - Occurs when the ToolWindow is closed.
 
->tipThe __PreviewClose__ and __Close__ events are fired whenever you press the [Close]({%slug raddocking-visual-structure%}) button.
+>tip __PreviewClose__ and __Close__ events are fired whenever you press the [Close]({%slug raddocking-visual-structure%}) button.
 
->tipThe __PreviewShow__ and __Show__ events are fired when you invoke the __ShowAllPanes__ method of the __RadPaneGroup__ class. This method will show all hidden panes.
+>tip __PreviewShow__ and __Show__ events are fired when you invoke the __ShowAllPanes__ method of the __RadPaneGroup__ class. This method will show all hidden panes.
 
 >When you close a floatable window, the "close" events fired in this order:
 > 	* __PreviewWindowClose__
@@ -74,9 +66,9 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 
 * __Save\Load Layout Events__
 
-	* __ElementLoading__- Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be loaded. The passed event argument is of type __LayoutSerializationLoadingEventArgs__.
+	* __ElementLoading__ - Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be loaded. The passed event argument is of type __LayoutSerializationLoadingEventArgs__.
 
-	* __ElementLoaded__- Raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is loaded. The passed event argument is of type __LayoutSerializationEventArgs__.
+	* __ElementLoaded__ - Raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is loaded. The passed event argument is of type __LayoutSerializationEventArgs__.
 
 	* __ElementSaving__ - Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved. The passed event argument is of type __LayoutSerializationEventArgs__.
 	
@@ -88,9 +80,9 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 	
 	* __ElementLayoutCleaning__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts cleaning up. The passed event argument is of type __LayoutSerializationCleaningEventArgs__.
 
-	* __ElementCleaned__- Raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is cleaned. The passed event argument is of type __LayoutSerializationEventArgs__.
+	* __ElementCleaned__ - Raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is cleaned. The passed event argument is of type __LayoutSerializationEventArgs__.
 	
-	* __CustomElementLoading__- Raised when a custom docking element (that derives from __RadPane__, __RadPaneGroup__ or __RadSplitContainer__) is about to be loaded. The passed event argument is of type __LayoutSerializationCustomLoadingEventArgs__.
+	* __CustomElementLoading__ - Raised when a custom docking element (that derives from __RadPane__, __RadPaneGroup__ or __RadSplitContainer__) is about to be loaded. The passed event argument is of type __LayoutSerializationCustomLoadingEventArgs__.
 
 >tipElements are __cleaned just before loading__ the layout - This operation is performed to prepare the Docking control for the new layout.
 
@@ -110,7 +102,7 @@ Using the ElementCreatedEventArgs provided by each of the above events, the user
 
 * __Other Events__
 
-	* __Loaded__- Occurs when the __RadDocking__ has been constructed and added to the object tree.
+	* __Loaded__ - Occurs when the __RadDocking__ has been constructed and added to the object tree.
 
 	* __LayoutUpdated__ - Occurs when the layout of the visual tree changes.
 	

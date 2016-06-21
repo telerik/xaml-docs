@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview
 description: Overview
-slug: raddocking-features-save-load-layout
+slug: raddocking-features-save-load-layout-overview
 tags: save/load,layout
 published: True
 position: 0
@@ -360,41 +360,41 @@ The __RadDocking__ API offers you six events for managing the save/load layout b
 
 * __ElementLoading__ - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be loaded. The type of the passed event arguments is __LayoutSerializationLoadingEventArgs__.
 
+	* __LayoutSerializationLoadingEventArgs__ - provides access to the __AffectedElement__, __AffectedElementSerializationTag__, __ElementProperties__ properties and the __Cancel__ property that determines whether the AffectedElement will be loaded.
+
 * __ElementLoaded__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is loaded. The type of the passed event arguments is __LayoutSerializationEventArgs__.
 
 * __ElementSaving__ - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved. The type of the passed event arguments is __LayoutSerializationEventArgs__.
 
-* __ElementLayoutSaving__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts saving. The type of the passed event arguments is __LayoutSerializationSavingEventArgs_.
+* __ElementLayoutSaving__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved. The type of the passed event arguments is __LayoutSerializationSavingEventArgs__.
+
+	* __LayoutSerializationSavingEventArgs__ - provides access to the __AffectedElement__, __AffectedElementSerializationTag__, __ElementProperties__ properties and the __Cancel__ property that determines whether the AffectedElement will be serialized.
 
 * __ElementSaved__ - raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is saved. The type of the passed event arguments is __LayoutSerializationEventArgs__.
 
 * __ElementCleaning__- raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be cleaned. The type of the passed event arguments is __LayoutSerializationEventArgs__.
 
-* __ElementLayoutCleaning__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts cleaning up. The type of the passed event arguments is __LayoutSerializationCleaningEventArgs__.
+* __ElementLayoutCleaning__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be cleaned. The type of the passed event arguments is __LayoutSerializationCleaningEventArgs__.
+
+	* __LayoutSerializationCleaningEventArgs__ - provides access to the __AffectedElement__, __AffectedElementSerializationTag__ properties and the __Cancel__ property that determines whether the AffectedElement will be removed from the layout.
 
 * __ElementCleaned__- raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is cleaned. The type of the passed event arguments is __LayoutSerializationEventArgs__.
 
 * __CustomElementLoading__- raised when a custom docking element (that derives from __RadPane__, __RadPaneGroup__ or __RadSplitContainer__) is about to be loaded.  The type of the passed event arguments is __LayoutSerializationCustomLoadingEventArgs__.
 
-The type of the event arguments for the __ElementLoading__ event is __Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs__. The type of the event arguments for the __ElementLoaded__, __ElementSaving__, __ElementSaved__, __ElementCleaning__ and __ElementCleaned__ is: __Telerik.Windows.Controls.LayoutSerializationEventArgs.__ Via both of the event arguments you get access to the following properties:
+The type of the event arguments for the __ElementLoaded__, __ElementSaving__, __ElementSaved__, __ElementCleaning__ and __ElementCleaned__ is: __Telerik.Windows.Controls.LayoutSerializationEventArgs.__ Via both of the event arguments you get access to the following properties:
 
 * __AffectedElement__- this is the currently loaded\saved pane.
 
 * __AffectedElementSerializationTag__- this is the currently loaded\save serialization tag. In the previous example if you attach to any of the events, then the first time when the __AffectedElementSerializationTag__ is fired, it will have the value "LayoutXml".
 
-* __ElementProperties__ - this is a Dictionary tha contains the string representations of the DependencyPropertys of the AffectedElement that will be saved to the layout Xml of the RadDocking.
+* __ElementProperties__ - this is a Dictionary that contains the string representations of the DependencyPropertys of the AffectedElement that will be saved to the layout Xml of the RadDocking.
 
-The type of the event argument for the __ElementLayoutSaving__ is __LayoutSerializationSavingEventArgs__. It also provides access to the above mentioned properties and one addition property:
-
-* __Cancel__ - it determines whether the AffectedElement will be serialized.
-
-The event argument of the __ElementLayoutCleaning__ event is of type __LayoutSerializationCleaningEventArgs__ that has either a __Cancel__ property, that is different as a functionality from the one of the __LayoutSerializationSavingEventArgs__:
-
-* __Cancel__ - it determines whether the AffectedElement will be removed from the layout.
-
-The event argument of the __CustomElementLoading__ event is of type __LayoutSerializationCustomLoadingEventArgs__ that derives from the __LayoutSerializationLoadingEventArgs__ and adds one additional property:
+The event argument of the __CustomElementLoading__ event is of type __LayoutSerializationCustomLoadingEventArgs__ that derives from the __LayoutSerializationLoadingEventArgs__ and adds the following additional properties:
 
 * __CustomElementTypeName__ - it gets the type name of the custom affected element.
+
+* __Cancel__ - determines whether the custom AffectedElement will be loaded.
 
 >tipThe __Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs__ allows you to point out an instance to be used as a newly loaded control. This could be useful if you need to create the instances yourself.
 

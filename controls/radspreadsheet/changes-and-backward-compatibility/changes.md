@@ -122,12 +122,12 @@ __What's Fixed__
 * Sorting functionality.
             
 
-* Export to PDF. You can find more information  [here]({%slug radspreadprocessing-formats-and-conversion-pdf-pdf%}).
+* Export to PDF. You can find more information  [here](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdf).
             
 
 ## What's New in 2014 Q1 - 2014.1.0226
 
-* Images support. You can find more information [here]({%slug radspreadprocessing-features-shapes-and-images%}).
+* Images support. You can find more information [here](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images).
             
 
 * Printing and UI for printing. You can find more information [here]({%slug radspreadsheet-ui-printing%}).
@@ -136,5 +136,5 @@ __What's Fixed__
 * Freeze panes. You can find more information [here]({%slug radspreadsheet-ui-freeze-panes%}).
             
 
-* Workbook and worksheet protection.You can find more information in these articles: [Workbook Protection]({%slug radspreadprocessing-features-protection-workbook%}), [Worksheet Protection]({%slug radspreadprocessing-features-protection-worksheet%}).
+* Workbook and worksheet protection.You can find more information in these articles: [Workbook Protection](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/protection/workbook), [Worksheet Protection](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/protection/worksheet).
             

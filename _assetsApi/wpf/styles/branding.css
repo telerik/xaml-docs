@@ -165,17 +165,17 @@ pre {
 	color: transparent;
 	text-indent: -1000px;
 	vertical-align: middle;
-	height: 30px;
-	background: #2a2d33 url("../icons/telerik_logo_wpf.png") no-repeat scroll 15px center;
-	padding-bottom: 1.717em;
-    padding-left: 1.833em;
-    padding-top: 1.617em;
+	height: auto;
+	background: #2a2d33 url("../icons/telerik_logo_wpf.png") no-repeat scroll 1.7em 1.4em;
+	padding-bottom: 1.6em;
+    padding-top: 1.4em;
+	background-size: 287px;
 }
 
 .pageHeader a.t-logo {
 	display: inline-block;
-    height: 33px;
-    width: 206px;
+    height: 35px;
+    width: 288px;
 	margin-left: -136px;
 }
 
@@ -605,4 +605,10 @@ sup.citation a:link a:visited a:active {
 
 /* Placeholder for the Help 1 user data style class */
 .userDataStyle {
+}
+
+@media (max-width:800px) {
+	#SearchForm {
+		display: none;
+	}
 }

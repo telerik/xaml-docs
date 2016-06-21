@@ -22,11 +22,11 @@ This example shows how to change the background color and the border of the row 
 
 ![](images/styling_row_background_mouseover.png)
 
-You need to modify the GridViewRow's template. [This topic]({%slug gridview-styling-a-row%}) explains the basics. You need to find the __Background_Over__ border element:
+You need to modify GridViewRow's template. [This topic]({%slug gridview-styling-a-row%}) explains the basics. You need to find the __Background_Over__ Border element:
 
 ![](images/styling_row_background_mouseover2.png)
 
-#### __XAML__
+#### __[XAML] Example 1: The Default Border When the Mouse Hovers GridViewRow__
 
 {{region how-to-override-default-gridview-styles_0}}
 
@@ -41,7 +41,7 @@ You need to modify the GridViewRow's template. [This topic]({%slug gridview-styl
 
 Now you can change all the properties you want, e.g., the __BorderBrush__ value will affect the border, the __Background__ will affect the background, etc. The next example changes the values a little to end up with this XAML:
 
-#### __XAML__
+#### __[XAML] Example 2: Modified The Default Border When the Mouse Hovers GridViewRow__
 
 {{region how-to-override-default-gridview-styles_1}}
 
@@ -54,7 +54,7 @@ Now you can change all the properties you want, e.g., the __BorderBrush__ value 
 	</Border>
 {{endregion}}
 
-Finally, you need to set the __RowStyle__ property of the __RadGridView__ to the style you have just modified.
+Finally, you need to set the __RowStyle__ property of __RadGridView__ to the style you have just modified.
 
 ## Remove the Border of the Current Cell ##
 
@@ -63,9 +63,9 @@ This example shows how to remove the border of the current cell (the one that ha
 ![](images/styling_current_cell3.png)
 
 
-You need to edit the style of the GridViewCell. [This topic]({%slug gridview-styling-cell%}) explains the basics. Once you have the style, search for the term "current". You will find a __VisualState__, __Trigger__ and __Border__:
+You need to edit the template of GridViewCell. [This topic]({%slug gridview-styling-cell%}) explains the basics. Once you have the template, search for the term "current". You will find a __VisualState__, __Trigger__ and __Border__ which you need to delete.
 
-#### __XAML__
+#### __[XAML] Example 3: Elements that Need to be Deleted from the Template of GridViewCell__
 	<VisualState x:Name="Current">
     <Storyboard>
         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background_Current"
@@ -95,11 +95,11 @@ You need to edit the style of the GridViewCell. [This topic]({%slug gridview-sty
         Visibility="Collapsed"/>
 
 
-Delete all of them.{% if site.site_name == 'WPF' %}
+{% if site.site_name == 'WPF' %}
 
 Finally, find the __Property="FocusVisualStyle"__ and set its value to null:{% endif %}
 
-#### __XAML__
+#### __[XAML] Example 4: Setting the FocusVisualStyle Property to null__
 
 {{region how-to-override-default-gridview-styles_3}}
 

@@ -1,69 +1,62 @@
 ---
-title: Styling FilteringControl
-page_title: Styling FilteringControl
-description: Styling FilteringControl
+title: Styling FilteringControl and FilteringDropDown
+page_title: Styling FilteringControl and FilteringDropDown
+description: Styling FilteringControl and FilteringDropDown
 slug: gridview-styling-filteringcontrol
 tags: styling,filteringcontrol
 published: True
 position: 19
 ---
 
-# Styling FilteringControl
+# Styling FilteringControl and FilteringDropDown
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the FilteringControl]({%slug radgridview-styles-and-templates-templates-structure%}).
-      
+In this topic we will discuss:
+
+* [Styling FilteringDropDown](#styling-filteringdropdown)
+
+* [Styling FilteringControl](#styling-filteringcontrol)
+
+>Both controls are located in the **Telerik.Windows.Controls.GridView** namespace of the **Telerik.Windows.Controls.GridView** assembly. When working in **Expression Blend**, the namespaces that are needed will be added automatically.
+
+#### __Figure 1: The FilteringControl & FilteringDropDown template structure__
+
+![FilteringControl and FilteringDropDown Template Structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
+
+>tipThe Template Structure of the controls is also available [here]({%slug radgridview-styles-and-templates-templates-structure%}).
+
+## Styling FilteringDropDown
+
+The filtering dropdown icon can be styled by creating an appropriate style targeting the **FilteringDropDown** element.
+
+#### __Figure 2: The default FilteringDropDown element__
+
+![FilteringControl](images/RadGridView_Styles_and_Templates_FilteringDropDown.png)
+
+To learn how to modify the default FilteringDropDown style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+
+## Styling FilteringControl
+
 __GridViewColumn__ exposes the __FilteringControlStyle__ property of type __Style__. It is applied to the __FilteringControl__ of the column.
-      
 
-You have two options:
+#### __Figure 3: The default FilteringControl element__
 
-* To create an empty style and set it up on your own.
+![FilteringControl](images/RadGridView_Styles_and_Templates_FilteringControl.png)
 
-* To copy the default styles of the control and modify it.
+You can modify it similarly to the FilteringDropDown style and set it as follows:
 
-This topic will show you how to perform the second one.
+	{{region gridview-styling-filteringdropdown_2}}
+	<telerik:GridViewDataColumn FilteringControlStyle="{StaticResource FilteringControlStyle}" />
+	{{endregion}}
 
-## Modifying the Default Style
+>You can find the Template Structure of the FilteringControl [here]({%slug radgridview-styles-and-templates-templates-structure%}).
 
-The default style is available with the installation of the RadControls. You can find it browsing through the Themes folder for a particlular Theme "..\Themes\OfficeBlack\Themes" inside "Telerik.Windows.Controls.GridView.xaml" file.
-        
-
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
-
-* __PART_DisctinctFilter__ - the stack panel that holds the SelectAll checkbox, the distinct values listbox and the close button
-            
-
-* __PART_SelectAllCheckBox__ - the select all checkbox
-            
-
-* __PART_FilterCloseButton__ - represents the CloseButton of the FilteringControl.
-            
-
-* __PART_DistinctValuesList__ - the listbox that hosts the DisctinctValues for the FilteringControl.
-            
-
-* __PART_Filter1ComboBox__ - the combobox containing the available operators
-            
-
-* __PART_Filter1ContentControl__ - the control where you type your filter value
-            
-
-* __PART_LogicalOperatorsComboBox__ - the logical operators combobox (contains AND & OR operators)
-            
-
-* __PART_Filter2ComboBox__ - the combobox containing the available operators
-            
-
-* __PART_Filter2ContentControl__ - the control where you type your filter value
-            
-
-* __PART_ApplyFilterButton__ - represents the button that you can use to apply Filtering.
-            
-
-* __PART_ClearFilterButton__ - represents the button that you can use to clear Filtering.
-            
+You are also free to create your own [Custom Filtering Control]({%slug gridview-filtering-custom-filtering-controls%}) and craft it as you like.
 
 # See Also
+
+ * [Modifying Default Styles]({%slug gridview-modifying-default-styles%})
+
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
 
  * [Filter goes outside the window]({%slug gridview-troubleshooting-filtering-control%})
 

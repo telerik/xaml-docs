@@ -10,53 +10,55 @@ position: 13
 
 # Styling Header Row
 
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewHeaderRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheaderrow).
 
+In this article we will discuss the following topics:
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewHeaderRow control]({%slug radgridview-styles-and-templates-templates-structure%}).
+* [Targeting the GridViewHeaderRow Element](#targeting-the-gridviewheaderrow-element)
 
-The __RadGridView__ exposes the __HeaderRowStyle__ property of type __Style__. It is applied to the __GridViewHeaderRow__ control inside the __RadGridView__.
+* [Setting RadGridView's HeaderRowStyle](#setting-radgridviews-headerrowstyle)
+
+#### __Figure 1: GridViewHeaderRow template structure__
+
+![GridViewHeaderRow template structure](images/gridview-headerrow-template.png)
+
+## Targeting the GridViewHeaderRow Element
+
+In order to style all __RadGridView__ header rows of an application, you should create an appropriate style targeting the __GridViewHeaderRow__ element.
 
 You have two options:
 
 * To create an empty style and set it up on your own.
+
 * To copy the default style of the control and modify it.
 
-This topic will show you how to perform the second one.
+>To learn how to modify the default GridViewHeaderRow style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-## Modifying the Default Style
+#### __[XAML] Example 1: Styling all header rows of an application__
 
-To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadGridView__. In the 'Objects and Timeline' pane select the __RadGridView__ you want to style. From the menu choose *Object -> Edit Additional Styles -> __HeaderRowStyle__ -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+	{{region gridview-styling-header-row-1}}
+	<Style TargetType="telerik:GridViewHeaderRow">
+        <Setter Property="Background" Value="Red"/>
+    </Style>
+	{{endregion}}
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewHeaderRowStyle__.
 
-After clicking 'OK', Expression Blend will generate the default style of the __GridViewHeaderRow__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+## Setting RadGridView's HeaderRowStyle
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __GridViewHeaderRow__. Their names indicate to which part of the __GridViewHeaderRow__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+__RadGridView's header row__ can also be styled by creating an appropriate __Style__ for the **GridViewHeaderRow**  element and setting it as the __HeaderRowStyle__ property.
 
-![](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderRow_01.png){% endif %}
+#### __[XAML] Example 2: Setting RadGridView's HeaderRowStyle__
 
-* __GridView_HeaderInnerBorder__ - a brush that represents the color of the inner border  of the __GridViewHeaderRow__.
+	{{region gridview-styling-header-row-2}}
+	<telerik:RadGridView HeaderRowStyle="{StaticResource HeaderRowStyle}" />
+	{{endregion}}
 
-* __GridViewHeaderIndentCellDataTemplate__ - the __DataTemplate__, applied to the items of the IndentPresenter.
+#### __Figure 1: RadGridView with styled header row__
 
-* __GridViewHeaderRowTemplate__ - the __ControlTemplate__ applied to the __GridViewHeaderRow__.
+![RadGridView with styled header row](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderRow_03.png)
 
-* __GridView_HeaderBackground__ - a brush that represents the background color of the __GridViewHeaderRow__.
-
-* __GridView_HeaderOuterBorder__ - a brush that represents the color of the outer border of the __GridViewHeaderRow__.
-
-* __GridViewHeaderRowStyle__- the Style applied to the __GridViewHeaderRow__.{% if site.site_name == 'Silverlight' %}
-
-Here is an example of these resources modified.{% endif %}{% if site.site_name == 'Silverlight' %}
-
-![](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderRow_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
-
-And here is a snapshot of the result.{% endif %}{% if site.site_name == 'Silverlight' %}
-
-
-![](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderRow_03.png){% endif %}
-
->As you can see, the changes you've made apply only for the row. The header cells remain unchanged. To learn how to style them take a look at the [Styling the Column Headers]({%slug gridview-styling-column-headers%}) topic.
+>As you can see, the changes we made apply only for the row. The header cells remain unchanged. To learn how to style them, take a look at the [Styling Column Headers]({%slug gridview-styling-column-headers%}) topic.
 
 # See Also
 

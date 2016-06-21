@@ -4,14 +4,13 @@ page_title: Override Default RadGridView Styles
 description: Override Default RadGridView Styles
 slug: how-to-override-default-gridview-styles
 tags: override,default,radgridview,styles
-published: True
-position: 18
+published: False
 ---
 
 # Override Default RadGridView Styles
 
 
-This topic will show you how to override the default styles of __RadGridView__. For most of the cases this includes modifying the default template of either RadGridView or one of its components, e.g. GridViewRow. Modifying the templates is easy if you have Microsoft Expression Blend 4. [This topic]({%slug radgridview-styles-and-templates-styling-radgridview%}) explains the basics. Let's start with modifying the visual appearance of RadGridView.
+This help article will show you how to override the default styles of __RadGridView__. For most cases, the work includes modifying the default template of either RadGridView or one of its components, e.g., GridViewRow. Modifying the templates is easy if you have Microsoft Expression Blend 4. [This topic]({%slug radgridview-styles-and-templates-styling-radgridview%}) explains the basics. Let's start with modifying the visual appearance of __RadGridView__.
 
 * [Modify the mouse over background](#mouse-over-background)
 
@@ -40,7 +39,7 @@ You need to modify GridViewRow's template. [This topic]({%slug gridview-styling-
 	</Border>
 {{endregion}}
 
-Now you can change all the properties you want, e.g. the __BorderBrush__ value will affect the border, the __Background__ will affect the background, etc. We change the values a little to end up with this xaml:
+Now you can change all the properties you want, e.g., the __BorderBrush__ value will affect the border, the __Background__ will affect the background, etc. The next example changes the values a little to end up with this XAML:
 
 #### __[XAML] Example 2: Modified The Default Border When the Mouse Hovers GridViewRow__
 
@@ -107,4 +106,4 @@ Finally, find the __Property="FocusVisualStyle"__ and set its value to null:{% e
 	<Setter Property="FocusVisualStyle" Value="{x:Null}" />
 {{endregion}}
 
-Now make the style implicit (i.e. do not specify a __x:Key__ attribute) so it will apply to all __GridViewCell__ elements.
+Now make the style implicit (i.e., do not specify the __x:Key__ attribute) so it will apply to all __GridViewCell__ elements.

@@ -33,7 +33,7 @@ RadGridView is an essential user interface control used to display data in tabul
             
 * __Header Row__ - this is a special row where all column headers are displayed. It is represented by the __GridViewHeaderRow__ object.
 
-* __Row Indicators__ - each row has its own row indicator, placed on its left end. Small black arrow inside the row indicator marks the current item. You can show/hide the row indicators for the whole grid or customize the way they look. [Read more]({%slug gridview-styles-and-templates-controlling-appearance%}).
+* __Row Indicators__ - each row has its own row indicator, placed on its left end. Small black arrow inside the row indicator marks the current item. You can show/hide the row indicators for the whole grid or customize the way they look. [Read more]({%slug radgridview-styles-and-templates-styling-radgridview%}#controlling-radgridview-appearance-through-properties-Rows).
             
 * __Column Footers__ - the column footers are used to display the results of aggregate functions, such as Sum, Count, Min, Max, Average, etc . You can also customize the column footers and place any kind of controls inside them. [Read more]({%slug gridview-columns-column-footers%}).
 

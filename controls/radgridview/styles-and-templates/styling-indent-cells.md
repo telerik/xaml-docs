@@ -10,28 +10,56 @@ position: 17
 
 # Styling Indent Cells
 
-RadGridView does expose different indicators and indent cells depending on its current state - being grouped, in a hierarchy, or displaying the corresponding footers. Generally, the structure is as follows:
+__RadGridView__ exposes different [indent cells](#indent-cells) and [indicator presenters](#indicator-presenters) depending on its current state - being grouped, in a hierarchy, or displaying the corresponding footers. Generally, the structure is as follows:
 
-![](images/RadGridView_StyleIndicators1.png)
+#### __Figure 1: RadGridView Indent Cells__
+
+![RadGridView Indent Cells](images/RadGridView_StyleIndicators1.png)
+
+## Indent Cells
 
 RadGridView exposes four different indent cells:
 
-* GridViewIndentCell - it is a part of the GridViewRow;
+* **GridViewIndentCell**: It is a part of the **GridViewRow**.
 
-* GridViewHeaderIndentCell - it is a part of the GridViewHeaderRow;
+* **GridViewHeaderIndentCell**: It is a part of the **GridViewHeaderRow**.
 
-* GridViewFooterIndentCell - it is a part of the GridViewFooterRow;
+* **GridViewFooterIndentCell**: It is a part of the **GridViewFooterRow**.
 
-* GridViewGroupFooterIndentCell - it is a part of the GridViewGroupFooterRow;
+* **GridViewGroupFooterIndentCell**: It is a part of the **GridViewGroupFooterRow**.
 
-Similar to the rest of the PART elements, you may alter their appearance by creating a simple style or directly by editing their templates.
+Similarly to other __RadGridView__ elements, you may alter their appearance by [modifying their default styles]({%slug gridview-modifying-default-styles%}) or by directly [editing their control templates]({%slug styling-apperance-editing-control-templates%}).
 
-Furthermore, RadGridView exposes five indicator presenters each of them belonging to the corresponding row - GridViewRow, GridViewHeaderRow, GridViewGroupRow, GridViewGroupFooterRow and GridViewFooterRow. You may edit each of them by accessing the template of the row and modify the Border element named PART_IndicatorPresenter as illustrated below:
+## Indicator Presenters
 
-![](images/RadGridView_HeaderRowIndicator.png)
+__RadGridView__ exposes five indicator presenters, each of them belonging to the corresponding row:
 
-After editing each of the indent cells or indicator presenters, the RadGridView will be displayed as follows:
+* **GridViewRow**
 
-![](images/RadGridView_IndentCells2.png)
+* **GridViewHeaderRow**
 
+* **GridViewGroupRow**
 
+* **GridViewGroupFooterRow**
+
+* **GridViewFooterRow**
+
+You may customize each of them by editing the control template of the respective row and modify the **Border** element named **PART_IndicatorPresenter** as illustrated below:
+
+#### __Figure 2: Modifying indent presenters__
+
+![Modifying indent presenters](images/RadGridView_HeaderRowIndicator.png)
+
+**Figure 3** shows a __RadGridView__ with styled indent cells and indicator presenters.
+
+#### __Figure 3: RadGridView with styled indent cells and indicator presenters__
+
+![RadGridView with styled indent cells and indicator presenters](images/RadGridView_IndentCells2.png)
+
+## See Also
+
+* [Styling Rows]({%slug gridview-styling-a-row%})
+
+* [Styling Group Row]({%slug gridview-styling-group-row%})
+
+* [Styling Header Row]({%slug gridview-styling-header-row%})

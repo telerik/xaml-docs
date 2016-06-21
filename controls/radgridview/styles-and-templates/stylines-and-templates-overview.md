@@ -16,12 +16,12 @@ This section is intended to give you a broad understanding of the possible ways 
         
 You can modify the look of the __RadGridView__ and its elements either by changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and add your own elements. However, when changing the control template you should be careful to include all required parts.
 
-Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) on two different approaches on how to extract the ControlTemplates.
+Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) for two different approaches on how to extract the ControlTemplates.
         
 
->tipNote that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>tipNote that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
-To learn more about styling the __RadGridView__ specific elements read the following topics.
+To learn more about styling the __RadGridView__ specific elements, read the following topics.
 
 * [Styling a Cell]({%slug gridview-styling-cell%})
 
@@ -51,16 +51,12 @@ To learn more about styling the __RadGridView__ specific elements read the follo
 
 * [Styling the Indent Cells in RadGridView]({%slug radgridview-styling-indent-cells%})
 
-* [Styling the Default RadGridView Styles]({%slug how-to-override-default-gridview-styles%})
-
-* [Styling the FilteringControl]({%slug gridview-styling-filteringcontrol%})
+* [Styling the FilteringControl and FilteringDropDown]({%slug gridview-styling-filteringcontrol%})
 
 * [Styling the FilterRow]({%slug gridview-styling-filterrow%})
 
->As of __2013 Q2 SP__ we have introduced __Lightweight Templates__ for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%})
+>As of __2013 Q2 SP__ we have introduced __Lightweight Templates__ for __RadGridView__ and __RadTreeListView__. The main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%})
 
 # See Also
-
- * [Controlling Appearance]({%slug gridview-styles-and-templates-controlling-appearance%})
 
  * [Lightweight Templates]({%slug gridview-overview-lightweight-template%})

@@ -10,11 +10,21 @@ position: 4
 
 # Styling Cells
 
+>tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewcell).
 
+In this article we will discuss the following topics:
 
->tipBefore reading this topic, you might find useful to get familiar with the [Template Structure of the GridViewCell control]({%slug radgridview-styles-and-templates-templates-structure%}).
+* [Targeting the GridViewCell Element](#targeting-the-gridviewcell-element)
 
-__RadGridView Cells__ can be styled by creating an appropriate __Style__ and setting it to the __CellStyle__ property of the __GridViewColumns__. 
+* [Setting a Column's CellStyle](#setting-a-columns-cellstyle)
+
+#### __Figure 1: GridViewCell template structure__
+
+![GridViewCell template structure](images/gridviewcell-template.png)
+
+## Targeting the GridViewCell Element
+
+In order to style all __RadGridView__ cells of an application, you should create an appropriate style targeting the __GridViewCell__ element.
 
 You have two options:
 
@@ -22,55 +32,35 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
-This topic will show you how to perform the second one.
+>To learn how to modify the default GridViewCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-## Modifying the Default Style
+#### __[XAML] Example 1: Styling all cells of an application__
 
->__GridViewCell__ control is located in the __Telerik.Windows.Controls.GridView__ namespace of the __Telerik.Windows.Controls.GridView__ assembly.
-			  
+	{{region gridview-cells_1}}
+	<Style TargetType="telerik:GridViewCell">
+		<Setter Property="VerticalContentAlignment" Value="Top"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		<Setter Property="Background" Value="#ffcc00"/>
+	</Style>
+	{{endregion}}
 
-When working in Expression Blend, the namespaces that are needed will be added automatically.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewCellStyle__.
 
-Load your project in Expression Blend and open the User Control that holds the __RadGridView__. You have to use a dummy control in order to get the default style. To create one, find the __GridViewCell__ control in the 'Assets' and draw one on the art board. In the 'Objects and Timeline' pane select the __GridViewCell__ that you've drawn and from the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+#### __Figure 2: RadGridView with styled cells__
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+![RadGridView with styled cells](images/RadGridView-Cell-Styled.png)
 
-After clicking 'OK', Expression Blend will generate the default style of the __GridViewCell__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.{% if site.site_name == 'Silverlight' %}
+## Setting a Column's CellStyle
 
-If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __GridViewCell__. Their names indicate to which part of the __GridViewCell__ appearance they are assigned.{% endif %}{% if site.site_name == 'Silverlight' %}
+__RadGridView Cells__ can also be styled by creating an appropriate __Style__ for the **GridViewCell** element and setting it as the __CellStyle__ property of the respective __GridView Column__. 
 
-![](images/RadGridView_Styles_and_Templates_Styling_GridViewCell_01.png){% endif %}
+#### __[XAML] Example 2: Setting a column's CellStyle__
 
-* __GridView_CellBackground_Current__ - a brush that represents the background color of the cell, when it is the current one.
-
-* __GridView_CellBackground_Edited__ - a brush that represents the background color of the cell, when it is being edited.
-
-* __GridView_CellBackground_Disabled__ - a brush that represents the background color of the cell, when it is disabled.
-
-* __GridViewCellTemplate__ - the __ControlTemplate__, applied to the __GridViewCell__ control.
-
-* __GridViewCellStyle__ - the __Style__, applied to the __GridViewCell__ control.
-
-To apply the style to the real cells, set it to the __CellStyle__ property of the __RadGridView__ columns.
-
-#### __XAML__
-
-{{region gridview-styling-cell_1}}
-
+	{{region gridview-styling-cell_1}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
                                 Header="Name"
                                 CellStyle="{StaticResource GridViewCellStyle}" />
-{{endregion}}
-
->Don't forget to delete the dummy __GridViewCell__ control, when you finish editing the style.{% if site.site_name == 'Silverlight' %}
-
-Here is an example of these resources modified.{% endif %}{% if site.site_name == 'Silverlight' %}
-
-![](images/RadGridView_Styles_and_Templates_Styling_GridViewCell_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
-
-And here is a snapshot of the result.{% endif %}{% if site.site_name == 'Silverlight' %}
-
-![](images/RadGridView_Styles_and_Templates_Styling_GridViewCell_03.png){% endif %}
+	{{endregion}}
 
 # See Also
 

@@ -1,36 +1,37 @@
 ---
-title: Styling Merged Column Headers
-page_title: Styling Merged Column Headers
-description: Styling Merged Column Headers
+title: Styling Column Groups
+page_title: Styling Column Groups
+description: Styling Column Groups
 slug: gridview-styling-merged-column-headers
-tags: styling,merged,column,headers
+tags: styling,merged,column,headers,groups
 published: True
 position: 8
 ---
 
-# Styling Merged Column Headers
+# Styling Column Groups
 
-You may achieve the desired result through defining two simple styles targeted at CommonHeaderPresenter and at CommonColumnHeader. The __CommonHeaderPresenter__ hosts all common column headers and the __CommonColumnHeader__ is responsible for a single common column header. 
+In order to style **Columng Groups** you will need to create two styles targeting the **CommonHeaderPresenter** and **CommonColumnHeader** elements. The __CommonHeaderPresenter__ hosts all common column headers and the __CommonColumnHeader__ is responsible for a single common column header. 
 
-For example:
+#### __[XAML] Example 1: Styling the CommonHeaderPresenter and CommonColumnHeader__
 
-#### __XAML__
-
-{{region gridview-styling-merged-column-headers_1}}
-
-	<App.Resources>
-		<Style TargetType="telerik:CommonHeaderPresenter">
-	            <Setter Property="Background" Value="Red"/>
-	        </Style>
-		<Style TargetType="telerik:CommonColumnHeader">
-			<Setter Property="Background" Value="Red"/>
-		</Style>
-	</App.Resources>
-{{endregion}}
+	{{region gridview-styling-column-groups-1}}
+	<Style TargetType="telerik:CommonHeaderPresenter">
+            <Setter Property="Background" Value="Red"/>
+        </Style>
+	<Style TargetType="telerik:CommonColumnHeader">
+		<Setter Property="Background" Value="Red"/>
+	</Style>
+	{{endregion}}
 
 This will result in a red background for the merged header cells.
 
->importantAs of version __Q2 2015 GridViewColumnGroupRow__ visual element was introduced. You need to also merge its XAML if using Custom Theme.
+#### __Figure 1: The styled Column Groups__
+
+![The styled Column Groups](images/gridview-styling-column-groups.png)
+
+>importantAs of version Q2 2015, the __GridViewColumnGroupRow__ visual element was introduced. You need to also merge its XAML if using a Custom Theme.
+
+>If you want to have your [**Row Indicator** visible]({%slug gridview-customizing-rows%}#hiding-the-row-indicator), you will also need to modify the **CommonHeaderIndent** element of the **GridViewHeaderRow**. You can look at the [Styling Header Row article]({%slug gridview-styling-header-row%}) for more information on how to achieve that.
 
 # See Also
 

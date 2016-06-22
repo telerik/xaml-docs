@@ -88,9 +88,9 @@ The __ColumnReordering__ event occurs when RadGridView's columns are being reord
 
 Through the __ColumnReorderingEventArgs__ you can access the following properties:
 
-* __Cancel__: By setting this to **True**, you can cancel the resizing of the current column.
+* __Cancel__: By setting this to **True**, you can cancel the reordering of the current column.
 
-* __Column__: The column that is being resized.
+* __Column__: The column that is being reordered.
 
 * __NewDisplayIndex__: The new DisplayIndex of the reordered column.
 
@@ -126,7 +126,7 @@ Through the __ColumnWidthChangingEventArgs__ of its event handler you can access
 
 >If the ColumnWidthChanging is canceled, the column does not change its width and the __ColumnWidthChanged__ event does not fire. 
 
-The following example shows how to allow the user to widen the column, bot not to shrink it:
+The following example shows how to allow the user to widen the column, bot not shrink it:
 
 #### __[C#] Example 3: Disable decreasing the column width__
 

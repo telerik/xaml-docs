@@ -12,12 +12,11 @@ position: 4
 
 This tutorial will guide you through the common task of creating a custom column in __RadGridView__. More precisely, you will learn to create a UserControl with __TextBox__ and __RadComboBox__, as well as a custom bound column that uses it as an edit element.
 
-* In the beginning you need __RadGridView__ populated with sample data. Below are the business object definition ( __Example 1__), as well as __RadGridView__ declaration( __Example 2__).
+* In the beginning you need __RadGridView__ populated with sample data. Below are the business object definition (__Example 1__), as well as __RadGridView__ declaration (__Example 2__).
 			
-#### __[C#] Example 1: Business object definition.__
+#### __[C#] Example 1: Business object definition__
 
-{{region gridview-how-to-create-custom-captain-editor-column_0}}
-
+	{{region gridview-how-to-create-custom-captain-editor-column_0}}
 	 public class Club : INotifyPropertyChanged
     {
         private string name;
@@ -119,15 +118,13 @@ This tutorial will guide you through the common task of creating a custom column
             this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
         }
     }
-{{endregion}}
+	{{endregion}}
 
-Note, that the __Club__ object has a __Captain__ property. The __Captain__ object itself, has two properties— __Name__, which is of type string, and __Position__, which is an enum.
+Note, that the __Club__ object has a __Captain__ property. The __Captain__ object itself, has two properties — __Name__, which is of type **string**, and __Position__, which is an **Enum**.
 
+#### __[XAML] Example 2: Initial declaration of RadGridView__
 
-#### __[XAML] Example 2: Initial declaration of RadGridView.__
-
-{{region gridview-how-to-create-custom-captain-editor-column_0}}
-
+	{{region gridview-how-to-create-custom-captain-editor-column_0}}
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False" ItemsSource="{Binding Clubs}">
             <telerik:RadGridView.Columns>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
@@ -137,21 +134,19 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
                 <local:CustomColumn DataMemberBinding="{Binding Captain}" FilterMemberPath="Position"/>
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
-{{endregion}}
+	{{endregion}}
 
-#### __[C#] Example 3: Populating RadGridView.__
+#### __[C#] Example 3: Populating RadGridView__
 
-{{region gridview-how-to-create-date-time-picker-column_1}}
-
+	{{region gridview-how-to-create-date-time-picker-column_1}}
 	this.radGridView.ItemsSource = Club.GetClubs();
-{{endregion}}
+	{{endregion}}
 
-* The next step is to create a __UserControl__ with __TextBox__ and __RadComboBox__. Create a new __UserControl__ named __CustomCaptainEditor__ ( __Example 4__ ).
+* The next step is to create a __UserControl__ with __TextBox__ and __RadComboBox__. Create a new __UserControl__ named __CustomCaptainEditor__ (__Example 4__ ).
 			
 #### __[XAML] Example 4: Declaration of CustomCaptainEditor  UserControl__
 
-{{region gridview-how-to-create-custom-captain-editor-column_1}}
-
+	{{region gridview-how-to-create-custom-captain-editor-column_1}}
 	<UserControl x:Class="CustomColumnEditor.CustomCaptainEditor"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -172,14 +167,13 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
                                DisplayMemberPath="Name" SelectedValuePath="Value"/>
     </Grid>
 	</UserControl>
-{{endregion}}
+	{{endregion}}
 
 
-#### __[C#] Example 5: Code-behind definition of the CustomCaptainEditor UserControl.__
+#### __[C#] Example 5: Code-behind definition of the CustomCaptainEditor UserControl__
 
-{{region gridview-how-to-create-custom-captain-editor-column_2}}
-
-	 public partial class CustomCaptainEditor : UserControl
+	{{region gridview-how-to-create-custom-captain-editor-column_2}}
+	public partial class CustomCaptainEditor : UserControl
     {
         public static readonly DependencyProperty CaptainNameProperty =
            DependencyProperty.Register("CaptainName", typeof(String), typeof(CustomCaptainEditor), new PropertyMetadata(null));
@@ -230,23 +224,26 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
             }
         }
     }
-{{endregion}}
+	{{endregion}}
 
 
 Take a look at the code-behind of the control. Two additional dependency properties are created in order to enable binding to the __Name__ and __Position__ properties of the business model.
 
 * Create a new class named __CustomColumn__, which derives from __GridViewBoundColumnBase (Example 6)__.
 
-#### __[C#] Example 6: Definition of CustomColumn class.__
+#### __[C#] Example 6: Definition of CustomColumn class__
 
-{{region gridview-how-to-create-custom-captain-editor-column_4}}
-
+	{{region gridview-how-to-create-custom-captain-editor-column_4}}
 	public class CustomColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
 	    {
-	        TextBlock tb = new TextBlock();
-	        tb.SetBinding(TextBlock.TextProperty, new Binding(this.DataMemberBinding.Path.Path) { Converter = new MyConverter() });
+	        TextBlock tb = cell.Content as TextBlock;
+			if (tb == null)
+			{
+				tb = new TextBlock();
+	        	tb.SetBinding(TextBlock.TextProperty, new Binding(this.DataMemberBinding.Path.Path) { Converter = new MyConverter() });
+			}
 	
 	        return tb;
 	    }
@@ -272,19 +269,16 @@ Take a look at the code-behind of the control. Two additional dependency propert
 	        return binding;
 	    }
 	}
-
-{{endregion}}
+	{{endregion}}
 
 
 >In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
 
 * Finally, go back to the __RadGridView__ XAML declaration and update it (__Example 7__).
-			
 
-#### __[XAML] Example 7: The updated declaration of RadGridView.__
+#### __[XAML] Example 7: The updated declaration of RadGridView__
 
-{{region gridview-how-to-create-custom-captain-editor-column_2}}
-
+	{{region gridview-how-to-create-custom-captain-editor-column_2}}
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False" ItemsSource="{Binding Clubs}">
             <telerik:RadGridView.Columns>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
@@ -294,14 +288,16 @@ Take a look at the code-behind of the control. Two additional dependency propert
                 <local:CustomColumn DataMemberBinding="{Binding Captain}" FilterMemberPath="Position"/>
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
-{{endregion}}
+	{{endregion}}
 
 
 * Run your demo and try to edit a cell from the new custom column. The result should be similar to the snapshot in __Figure 1__.
 			
-__Figure 1:__ Snapshot of the created CustomColumnEditor. 
+__Figure 1__ Shows a snapshot of the created CustomColumn.
 
-![gridview-how-to-create-custom-column-editor](images/gridview-howto-create-custom-column-editor.png)
+#### __Figure1: The CustomColumn__
+
+![The CustomColumn](images/gridview-howto-create-custom-column-editor.png)
 
 >tipYou can download a runnable project of the previous example from the online SDK repository     [CustomColumnEditor](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomColumnEditor).
 

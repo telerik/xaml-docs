@@ -18,12 +18,12 @@ The purpose of this tutorial is to show you how to create a custom editor with _
 
 Both approaches have some advantages and disadvantages. Although it is quite easy to implement the first option, there are some significant disadvantages like not so usable with many __RadGridView__ instances, and more important this bypasses the __RadGridView__ validation and editing engine.
 
-This tutorial will demonstrate you the second approach by creating a column with embedded color picker control as an editor.
+This tutorial will demonstrate you the second approach by creating a column with an embedded color picker control as an editor.
 
 * The first step is to create a class that inherits from __GridViewBoundColumnBase__ (this is the base class used to create a column with editing capabilities). Name the class __RadColorPickerColumn__.
           
 
-#### __C#__
+#### __[C#] Example 1: Creating the RadColorPickerColumn class__
 
 {{region radgridview-howto-create-custom-editor_0}}
 
@@ -33,7 +33,7 @@ This tutorial will demonstrate you the second approach by creating a column with
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Creating the RadColorPickerColumn class__
 
 {{region radgridview-howto-create-custom-editor_1}}
 
@@ -47,7 +47,7 @@ There are several methods you should override:
 * __CreateCellElement()__ – override this method if you want to customize how cells that belongs to this column will look like. This method is called when __GridViewCell__ is prepared and returned element will be used as a __ContentPresenter__. If you do not override this method a __TextBlock__ control will be used as a default presenter.
           
 
-#### __C#__
+#### __[C#] Example 2: Overriding the CreateCellElement method__
 
 {{region radgridview-howto-create-custom-editor_2}}
 
@@ -55,22 +55,27 @@ There are several methods you should override:
 	{
 	    public override FrameworkElement CreateCellElement( GridViewCell cell, object dataItem )
 	    {
-	        Border cellElement = new Border();
-	        var valueBinding = new System.Windows.Data.Binding( this.DataMemberBinding.Path.Path )
+	        Border cellElement = cell.Content as Border;
+	        if (cellElement == null)
 	        {
-	            Mode = BindingMode.OneTime,
-	            Converter = new ColorToBrushConverter()
-	        };
-	        cellElement.SetBinding( Border.BackgroundProperty, valueBinding );
-	        cellElement.Width = 45;
-	        cellElement.Height = 20;
-	        cellElement.CornerRadius = new CornerRadius( 5 );
+	            cellElement = new Border();
+	            var valueBinding = new System.Windows.Data.Binding( this.DataMemberBinding.Path.Path )
+	            {
+	                Mode = BindingMode.OneTime,
+	                Converter = new ColorToBrushConverter()
+	            };
+	            cellElement.SetBinding( Border.BackgroundProperty, valueBinding );
+	            cellElement.Width = 45;
+	            cellElement.Height = 20;
+	            cellElement.CornerRadius = new CornerRadius( 5 );
+	        }
+	        
 	        return cellElement;
 	    }
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Overriding the CreateCellElement method__
 
 {{region radgridview-howto-create-custom-editor_3}}
 

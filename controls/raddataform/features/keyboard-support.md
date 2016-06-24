@@ -198,6 +198,24 @@ As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation
     }
 {{endregion}}
 
+#### __[VB.NET] Example 3: Setting the EnableBuiltInNavigation property to False__ 
+
+{{region raddataform-features-keyboard-support_7}}
+    Public Class NoBuiltInNavigationKeyboardCommandProvider
+        Inherits DataFormCommandProvider
+        Public Sub New()
+
+            MyBase.New(Nothing)
+        End Sub
+
+        Public Sub New(dataForm As RadDataForm)
+            MyBase.New(dataForm)
+            Me.DataForm = dataForm
+            Me.EnableBuiltInNavigation = False
+        End Sub
+    End Class
+{{endregion}}
+
 ## Control the Processing of Handled Events
 
 As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __DataFormCommandProvider__ is exposed. Its default value is __True__. If you want to manually process handled events, you can set its value to __False__.
@@ -220,6 +238,24 @@ As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __Data
             this.ShouldProcessHandledEvents = false;
         }
     }
+{{endregion}}
+
+#### __[VB.NET] Example 4: Setting the ShouldProcessHandledEvents to False__
+
+{{region raddataform-features-keyboard-support_8}}
+    Public Class ProcessHandledEventsKeyboardCommandProvider
+        Inherits DataFormCommandProvider
+        Public Sub New()
+
+            MyBase.New(Nothing)
+        End Sub
+
+        Public Sub New(dataForm As RadDataForm)
+            MyBase.New(dataForm)
+            Me.DataForm = dataForm
+            Me.ShouldProcessHandledEvents = False
+        End Sub
+    End Class
 {{endregion}}
 
 # See Also

@@ -39,7 +39,7 @@ RadGridView is an essential user interface control used to display data in tabul
 
 * __Scroll bars__ - RadGridView will automatically show and hide scrollbars when needed. Choose between two types of scrolling: __Real time and Deferred__. Every hierarchical level has its own scrollbars.
             
-* __Grid Lines__ - grid lines are the markers that separate grid's visual elements from each other. You can easily control the way your grid lines are visualized. [Read more]({%slug gridview-styles-and-templates-controlling-appearance%}).
+* __Grid Lines__ - grid lines are the markers that separate grid's visual elements from each other. You can easily control the way your grid lines are visualized. [Read more]({%slug radgridview-styles-and-templates-styling-radgridview%}#controlling-radgridview-appearance-through-properties-General).
 
 * __Row Details__ - each row is capable of presenting additional information by means of a Row Details template. The Row Details template is a __DataTemplate__ defined on the grid- or row-level and is used for displaying row data without affecting the dimensions of the row and the cells within it.  			  
 One of the advantages of using a Row Details template is that it can be displayed for the selected row only, thus providing a more compact layout. Another benefit of Row Details is the option of placing the Details Presenter outside RadGridView, which provides more room for traditional rows without depriving the user of the additional information. [Read more]({%slug radgridview-row-details-overview%}).

@@ -101,8 +101,6 @@ The CoreValidationStyles are an alternative of the standard __GridViewCell, Grid
 
 ## Remove the Border of the Current Cell
 
-> The approach for removing the __Current Cell Border__ of the __default GridViewCell__ is demonstrated [here]({%slug how-to-override-default-gridview-styles%}).
-
 For such requirement, you need to predefine the __ControlTemplate__ applied to __GridViewCell__ when __Lightweight templates__ are used. Within the __ControlTemplate__ you need to search for the __IsCurrent Property Trigger__ and delete it.
 
 #### __[XAML] Example 3: Deleting the IsCurrent Property Trigger__

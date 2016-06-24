@@ -20,11 +20,11 @@ In this article we discuss RadGridView events related to **columns**:
 
 * [ColumnReordered](#columnreordered)
 
-* [ColumnWidthChanging event](#columnwidthchanging-event)
+* [ColumnWidthChanging](#columnwidthchanging)
 
-* [ColumnWidthChanged event](#columnwidthchanged-event)
+* [ColumnWidthChanged](#columnwidthchanged)
 
-You can subscribe to events declaratively or at runtime.**Example 1** shows you how to subscribe to the **AutoGeneratingColumn** event. 
+You can subscribe to these events declaratively or at runtime.**Example 1** shows you how to subscribe to the **AutoGeneratingColumn** event. 
 
 #### __[XAML] Example 1: Subscribing to column events__
 
@@ -46,9 +46,9 @@ You can subscribe to events declaratively or at runtime.**Example 1** shows you 
 
 ## AutoGeneratingColumn
 
-When you set RadGridView's **AutoGenerateColumn** property to **True** (the default value), RadGridView creates a column for each public property of the bound objects and an **AutoGeneratingColumn** event is  triggered for each of those columns.
+When you set RadGridView's **AutoGenerateColumns** property to **True** (the default value), RadGridView creates a column for each public property of the bound objects and the **AutoGeneratingColumn** event is triggered for each of those columns.
 
-You can set the following properties of the **GridViewAutoGeneratingColumnEventArgs** class:
+You can use the following properties of the **GridViewAutoGeneratingColumnEventArgs** class:
 
 * **Cancel**: Setting this to **True** cancels the creation of the current column.
 
@@ -82,7 +82,7 @@ You can set the following properties of the **GridViewAutoGeneratingColumnEventA
 
 ## ColumnReordering
 
-A __ColumnReordering__ event occurs when you reorder RadGridView's columns programmatically or through the UI.
+The __ColumnReordering__ event occurs when you reorder RadGridView's columns programmatically or through the UI.
 
 >You can reorder columns only if __CanUserReorderColumns__ is set to __True__ (which is the default value). 
 
@@ -98,15 +98,15 @@ Using __ColumnReorderingEventArgs__ you can access the following properties:
 
 ## ColumnDisplayIndexChanged
 
-A __ColumnDisplayIndexChanged__ event occurs when you reorder RadGridView's columns or when you programmatically change the **DisplayIndex** of a column. It is triggered for every column affected by the reordering (that is, whose DisplayIndex has changed).
+The __ColumnDisplayIndexChanged__ event occurs when you reorder RadGridView's columns or when you programmatically change the **DisplayIndex** of a column. It is triggered for every column affected by the reordering (that is, whose DisplayIndex has changed).
  
-You can access a **Column** whose **DisplayIndex** has changed using __GridViewColumnEventArgs__.
+You can access the **Column** whose **DisplayIndex** has changed using __GridViewColumnEventArgs__.
 
 ## ColumnReordered
 
-A __ColumnReordered__ event occurs after the reorder of columns is complete.
+The __ColumnReordered__ event occurs after the reorder of columns is complete.
 
-You can access a **Column** that has been reordered using __GridViewColumnEventArgs__.
+You can access the **Column** that has been reordered using __GridViewColumnEventArgs__.
 
 ## ColumnWidthChanging
 
@@ -114,7 +114,7 @@ A __ColumnWidthChanging__ event occurs when you resize a column programmatically
 
 >You can resize columns only if __CanUserResizeColumns__ is set to __True__ (which is the default value). 
 
-Through the __ColumnWidthChangingEventArgs__ of its event handler you can set the following:
+Through the __ColumnWidthChangingEventArgs__ of its event handler you can access the following:
 
 * __Cancel__: Setting this to **True** cancels the resizing of the current column.
 
@@ -124,7 +124,7 @@ Through the __ColumnWidthChangingEventArgs__ of its event handler you can set th
 
 * __OriginalWidth__: A double value that represents the original width of the column.
 
->If you cancel ColumnWidthChanging, the column's width does not change and no __ColumnWidthChanged__ event triggers. 
+>If you cancel ColumnWidthChanging, the column's width does not change and the __ColumnWidthChanged__ event is not triggered. 
 
 The following example shows you how to allow the user to widen a column, but not shrink it:
 
@@ -154,9 +154,9 @@ The following example shows you how to allow the user to widen a column, but not
 
 ## ColumnWidthChanged
 
-A __ColumnWidthChanged__ event occurs after the resize of a column is complete. It also triggers when the user double-clicks the header cell gripper to resize the column to fit its content.
+The __ColumnWidthChanged__ event occurs after the resize of a column is complete. It also triggers when the user double-clicks the header cell gripper to resize the column to fit its content.
 
-You can set the properties of the __ColumnWidthChangedEventArgs__ object through its event handler: 
+You can access the following properties of the __ColumnWidthChangedEventArgs__ object: 
 
 * __Column__: The column that has been resized.
 

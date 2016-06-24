@@ -5,7 +5,6 @@ description: RadDocumentEditor
 slug: radrichtextbox-features-raddocumenteditor
 tags: raddocumenteditor
 published: True
-position: 4
 ---
 
 # RadDocumentEditor

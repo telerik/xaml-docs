@@ -5,7 +5,6 @@ description: Repeat Table Header Row
 slug: radrichtextbox-features-repeat-table-header-row
 tags: table, header, row, repeat
 published: True
-position: 15
 ---
 
 # Repeat Table Header Row

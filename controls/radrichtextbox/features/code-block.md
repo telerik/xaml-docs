@@ -5,7 +5,6 @@ description: Code Block
 slug: radrichtextbox-features-code-block
 tags: code,block
 published: True
-position: 22
 ---
 
 # Code Block

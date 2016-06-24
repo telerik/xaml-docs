@@ -169,7 +169,7 @@ The last thing to be done is to set the CommandProvider property of the RadDataF
 
 #### __[VB.NET] Example 2: Set the CommandProvider property__
 
-{{region raddataform-features-keyboard-support_2}}
+{{region raddataform-features-keyboard-support_4}}
 
 	    Me.RadDataForm1.CommandProvider = New CustomKeyboardCommandProvider(Me.RadDataForm1)
 	{{endregion}}
@@ -180,22 +180,23 @@ As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation
 
 #### __[C#] Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
-	public class CustomKeyboardCommandProvider : DataFormCommandProvider
-	{
-	    public CustomKeyboardCommandProvider()
-	        : base(null)
-	    {
-	
-	    }
-	
-	    public CustomKeyboardCommandProvider(RadDataForm dataForm)
-	        : base(dataForm)
-	    {
-	        this.DataForm = dataForm;
-	        this.EnableBuiltInNavigation = false;
-	    }
-	}
+{{region raddataform-features-keyboard-support_5}}
+    public class NoBuiltInNavigationKeyboardCommandProvider : DataFormCommandProvider
+    {
+        public NoBuiltInNavigationKeyboardCommandProvider()
+            : base(null)
+        {
 
+        }
+
+        public NoBuiltInNavigationKeyboardCommandProvider(RadDataForm dataForm)
+            : base(dataForm)
+        {
+            this.DataForm = dataForm;
+            this.EnableBuiltInNavigation = false;
+        }
+    }
+{{endregion}}
 
 ## Control the Processing of Handled Events
 
@@ -203,22 +204,23 @@ As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __Data
 
 #### __[C#] Example 4: Setting the ShouldProcessHandledEvents to False__
 
-	public class CustomKeyboardCommandProvider : DataFormCommandProvider
-	{
-	    public CustomKeyboardCommandProvider()
-	        : base(null)
-	    {
-	
-	    }
-	
-	    public CustomKeyboardCommandProvider(RadDataForm dataForm)
-	        : base(dataForm)
-	    {
-	        this.DataForm = dataForm;
-	        this.ShouldProcessHandledEvents = false;
-	    }
-	}
+{{region raddataform-features-keyboard-support_6}}
+    public class ProcessHandledEventsKeyboardCommandProvider : DataFormCommandProvider
+    {
+        public ProcessHandledEventsKeyboardCommandProvider()
+            : base(null)
+        {
 
+        }
+
+        public ProcessHandledEventsKeyboardCommandProvider(RadDataForm dataForm)
+            : base(dataForm)
+        {
+            this.DataForm = dataForm;
+            this.ShouldProcessHandledEvents = false;
+        }
+    }
+{{endregion}}
 
 # See Also
 

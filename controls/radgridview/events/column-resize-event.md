@@ -24,7 +24,7 @@ In this article we discuss RadGridView events related to **columns**:
 
 * [ColumnWidthChanged](#columnwidthchanged)
 
-You can subscribe to these events declaratively or at runtime.**Example 1** shows you how to subscribe to the **AutoGeneratingColumn** event. 
+You can subscribe to these events declaratively or at runtime. **Example 1** shows you how to subscribe to the **AutoGeneratingColumn** event. 
 
 #### __[XAML] Example 1: Subscribing to column events__
 

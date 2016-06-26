@@ -10,15 +10,15 @@ position: 8
 
 # Templating the TimeRulerItems
 
-__RadScheduleView__ provides a wide range of customizable __TimeRulerItems__. The term __TimeRulerItem__ refers to the major and minor ticks inside the TimRuler, date group headers in TimelineView as well as day buttons and weekdays headers in MonthView.
+__RadScheduleView__ provides a wide range of customizable __TimeRulerItems__. The term __TimeRulerItem__ refers to the major and minor ticks inside the TimeRuler, date group headers in TimelineView as well as day buttons and weekdays headers in MonthView.
 
->tip See [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration %}) topic for further details on the different TimeRuler items.
+>tip See the [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration %}) topic for further details on the different TimeRuler items.
 
-This topic explains how to define __TimeRulerItemTemplateSelector__ property of RadScheduleView in order to customize the templates of the TimeRuler items.
+This topic explains how to define the __TimeRulerItemTemplateSelector__ property of RadScheduleView in order to customize the templates of the TimeRuler items.
 
-__TimeRulerItemTemplateSelector__ is used to set a DataTemplate to the TimeRulerItems according to their type and the current ViewDefintion of the ScheduleView. Additionally, __TimeRulerItemTemplateSelector__ provides a separate template for Vertical and Horizontal Orientation of the ViewDefinitions (except MonthViewDefinition as it does not support Orientation).
+__TimeRulerItemTemplateSelector__ is used to set a DataTemplate to the TimeRulerItems according to their type and the current ViewDefintion of the ScheduleView. Additionally, __TimeRulerItemTemplateSelector__ provides a separate template for vertical and horizontal orientation of the ViewDefinitions (except MonthViewDefinition, as it does not support Orientation).
 
-The next images show the templates in the different ViewDefinitions of RadScheduleView.
+The next figures show the templates in the different ViewDefinitions of __RadScheduleView__.
 
 #### __Figure 1: TimeRulerItems templates in DayViewDefinition with Orientation = "Vertical"__
 
@@ -50,11 +50,11 @@ The next images show the templates in the different ViewDefinitions of RadSchedu
 
 >tipMinor tick templates are by design empty. This could be easily changed by assigning a StringFormat through the [Formatting properties]({%slug radscheduleview-features-formatting %}) of the ViewDefinitions.
 
-The next example shows how to configure DayViewDefinition and the corresponding VerticalDayMajorItem and VerticalDayMinorItem templates in order to achieve more detailed view of the TimeRuler.
+Example 1 shows how to configure DayViewDefinition and the corresponding VerticalDayMajorItem and VerticalDayMinorItem templates in order to achieve a more detailed view of the TimeRuler.
 
-First, you will need to retrieve the default __TimeRulerItemTemplateSelector__ from the UI for WPF installation folder. Go to the Themes.Implicit folder and select the theme that you use in your application. Drill down to find the Telerik.Windows.Controls.ScheduleView.xaml file in that directory. From this resource dictionary extract the __TimeRulerItemTemplateSelector__ and copy it to the Resources inside your application.
+First, you will need to retrieve the default __TimeRulerItemTemplateSelector__ from the UI for WPF installation folder. Go to the Themes.Implicit folder and select the theme that you use in your application. Drill down to find the Telerik.Windows.Controls.ScheduleView.xaml file in that directory. From this resource dictionary, extract the __TimeRulerItemTemplateSelector__ and copy it to the Resources inside your application.
 
-__Example__ 1 shows TimeRulerItemTemplateSelector with modified VerticalDayMajorItemTemplate and VerticalDayMinorItemTemplate.
+__Example 1__ shows TimeRulerItemTemplateSelector with modified VerticalDayMajorItemTemplate and VerticalDayMinorItemTemplate.
 
 #### __[XAML] Example 1: Modified TimeRulerItemTemplateSelector__
 
@@ -75,13 +75,13 @@ __Example__ 1 shows TimeRulerItemTemplateSelector with modified VerticalDayMajor
 	</telerikScheduleView:TimeRulerItemTemplateSelector>
 {{endregion}}
 
->The text of the TextBlock inside the templates is bound to __FormattedValue__ property which is formed after the StringFormat set through the [Formatting properties]({%slug radscheduleview-features-formatting %}) of the ViewDefinitions is applied.
+>The text of the TextBlock inside the templates is bound to the __FormattedValue__ property, which is formed after the StringFormat is set through the [Formatting properties]({%slug radscheduleview-features-formatting %}) of the ViewDefinitions is applied.
 
 >The DataContext of the templates is of type _TimeRulerItemProxy_ - it contains information about the DateTime and the Duration of the TimeRulerItem.
 
-All that is left is to set __TimeRulerItemTemplateSelector__ property of the ScheduleView. Additionally, DayViewDefinition has its MajorTickLength and MinorTickLength set to 1h and 15min respectively as well as TimerulerMinorTickStringFormat is set to display the minutes.
+All that is left is to set __TimeRulerItemTemplateSelector__ property of the ScheduleView. Additionally, DayViewDefinition has its MajorTickLength and MinorTickLength set to 1h and 15min, respectively, and the TimerulerMinorTickStringFormat is set to display the minutes.
 
-__Example 2__ shows how RadScheduleView is defined.
+__Example 2__ shows how the __RadScheduleView__ is defined.
 
 #### __[XAML] Example 2: RadScheduleView with TimeRulerItemTemplateSelector set__
 

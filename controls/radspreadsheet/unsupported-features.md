@@ -22,7 +22,7 @@ This article lists some of the popular features available in Microsoft Office Op
 
 * Tables;
 
-* Data visualization;
+* Charts;
 
 * Grouping;
 

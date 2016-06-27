@@ -53,7 +53,7 @@ Here is an example with RadPropertyGrid that has its Item property bound to a Bu
 The AutoBind attached behavior is also available in scenarios with auto-generated fields. In order to achieve this one can either set a PropertyDefinition’s EditorTemplate on the AutogeneratingDataField, or utilize a [DataTemplateSelector]({%slug radpropertygrid-datatemplateselector%}).
         
 
-TwoWay binding with the AutoBindBehavior is supported for the following types:
+__TwoWay binding__ with the __AutoBindBehavior__ is supported for the following types:
         
 
 * __Primitive types__
@@ -78,11 +78,15 @@ TwoWay binding with the AutoBindBehavior is supported for the following types:
             
 
 * __TimeSpan__
+
+* __GridLength__
+
+* __Thickness__
             
 
 ## How does it work?
 
-AutoBind behavior would work with any type of FrameworkElements that are parts of a certain DataTemplate. In order to enable it one should set its UpdateBindingOnElementLoaded property with a string value that indicates which is the element’s property that should be bound. Apparently, in our example it is TextBox’s Text DependencyProperty.
+In most cases when a custom __DataTemplate__ is defined, the element within it would have to be explicitly bound to a particular property. This requires a __DataTemplate__ to be defined for each property as it cannot be reused. The __AutoBindBehavior__ provides a way to define a more __generic DataTemplate__ and reuse it for editing different properties. Shortly said, it matches the property of the editor with the one bound to a given __PropertyDefinition__. This is done through the __UpdateBindingOnElementLoaded__ property of the behavior. It has to be set to point to the property of the given editor that is used for editing a property value. Apparently, in our example it is __TextBox’s Text__ DependencyProperty.
 
 >The AutoBind behavior is designed to function exclusively in the context of RadPropertyGrid.
           

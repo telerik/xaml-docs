@@ -14,7 +14,7 @@ The __ExportToPdf__ method allows exporting to "Pdf" format. As the mechanism us
 
 __Assembly References__
 
-ExportFormat.Pdf method uses additional libraries so you need to add references to the following assemblies:
+The __ExportToPdf__ method uses additional libraries so you need to add references to the following assemblies:
 
 * Telerik.Windows.Documents.Core.dll
 * Telerik.Windows.Documents.SpreadSheet.dll 

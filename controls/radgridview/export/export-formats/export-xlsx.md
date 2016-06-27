@@ -14,7 +14,7 @@ The __ExportToXlsx__ method allows exporting to "Xlsx" format. As the mechanism 
 
 __Assembly References__
 
-__ExportFormat.Xlsx__ method uses additional libraries so you need to add references to the following assemblies:
+The __ExportToXlsx__ method uses additional libraries so you need to add references to the following assemblies:
 
 * Telerik.Windows.Documents.Core.dll
 * Telerik.Windows.Documents.Spreadsheet.dll 

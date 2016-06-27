@@ -23,7 +23,6 @@ To better understand how these operations work, we need to first examine how **R
 * If the underlying value implements **IEditableCollectionView**, the current implementation of its methods is used. 
 * Otherwise, a new instance of Telerik’s **QueryableCollectionView** (which implements both aforementioned interfaces) is initialized, using the Source value as its source collection.
 
-
 ## Add
 
 **RadDataForm's** Add operation will be available when one of the following conditions is met:

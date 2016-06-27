@@ -10,10 +10,7 @@ position: 0
 
 # Getting Started
 
-
-
-This tutorial will walk your through the creation of a sample application that contains __RadDataForm__ and will show you how:
-      
+This article will walk your through the creation of a sample application that contains __RadDataForm__ and will show you how to:
 
 * [Use RadDataForm in your project](#adding-raddataform-to-the-project);
 
@@ -21,55 +18,43 @@ This tutorial will walk your through the creation of a sample application that c
 
 * [Bind RadDataForm to a collection of custom objects](#binding-raddataform-to-a-collection-of-custom-objects);
 
-For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %}Application project and open it in Visual Studio.
-      
+For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight {% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %}Application project and open it in Visual Studio.
 
 ## Adding RadDataForm to the Project
 
 * Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
-          
 
 * Add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Controls.Data__, __Telerik.Windows.Controls.Input__ and __Telerik.Windows.Data__;
-          
 
 * Import the Telerik schema:
 
 #### __[XAML] Example 1: Importing the Telerik Schema__
 
-{{region telerik-schemas}}
-
+	{{region telerik-schemas}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
-
-
 
 * Add the RadDataForm to the Grid:
 
 #### __[XAML] Example 2: Adding RadDataForm in XAML__
 
-{{region raddataform-getting-started_3}}
-
-	<Grid x:Name="LayoutRoot" Background="White">
-	  <telerik:RadDataForm x:Name="DataForm1" />
-	 </Grid>
+	{{region raddataform-getting-started_0}}
+	<telerik:RadDataForm x:Name="RadDataForm1" />
 	{{endregion}}
 
+Now if you run the application, you will see the empty RadDataForm:
 
+#### __Figure 1: Empty RadDataForm__
 
-Now if you run the application, you have the empty RadDataForm:
-
- ![](images/radDataForm_emptyForm.png)
-
-
+![Empty RadDataForm](images/radDataForm_emptyForm.png)
 
 ## Binding RadDataForm to a Single Item
 
-Firstly, for the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties
+Firstly, for the purpose of this tutorial, we will create a new **Employee** class with a couple of exposed properties:
 
 #### __[C#] Example 3: Creating an Employee Class with Some Exposed Properties__
 
-{{region raddataform-getting-started_4}}
-
+	{{region raddataform-getting-started_1}}
 	public class Employee 
 	 {  
 	  public string FirstName
@@ -111,12 +96,9 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 	 }
 	{{endregion}}
 
-
-
 #### __[VB.NET] Example 3: Creating an Employee Class with Some Exposed Properties__
 
-{{region raddataform-getting-started_5}}
-
+	{{region raddataform-getting-started_1}}
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -184,14 +166,11 @@ Firstly, for the purpose of this tutorial, we will create a new class Employee w
 	End Class
 	{{endregion}}
 
-
-
-In the example above Gender is of type enum:
+In the example above **Gender** is of type enum:
 
 #### __[C#] Example 4: Create Gender Enumeration__
 
-{{region raddataform-getting-started_6}}
-
+	{{region raddataform-getting-started_2}}
 	public enum Gender
 	 {
 	  Female,
@@ -199,31 +178,22 @@ In the example above Gender is of type enum:
 	 }
 	{{endregion}}
 
-
-
 #### __[VB.NET] Example 4: Create Gender Enumeration__
 
-{{region raddataform-getting-started_7}}
-
+	{{region raddataform-getting-started_2}}
 	Public Enum Gender
 	 Female
 	 Male
 	End Enum
 	{{endregion}}
 
+>Note that in case you want to be notified on the changes made on the data item, the class Employee should implement the __INotifyPropertyChanged__ interface and raise the __PropertyChanged__ event every time a property value changes.
 
-
-
-
->Note that in case you want to be notified on the changes made on the data item, the class Employee should implement __INotifyPropertyChanged__ Interface and raise the __PropertyChanged__ event every time a property value changes.
-          
-
-Once the class Employee is defined, you may use it for creating an object of this type and bind it to the RadDataForm:
+Once the class Employee is defined, you may use it for creating an object of this type and bind it to RadDataForm:
 
 #### __[C#] Example 5: Binding a Single Item to RadDataForm__
 
-{{region raddataform-getting-started_8}}
-
+	{{region raddataform-getting-started_3}}
 	   Employee employee = new Employee() { 
 			FirstName = "Sarah", 
 			LastName = "Blake", 
@@ -235,12 +205,9 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	   this.RadDataForm1.CurrentItem = employee;
 	{{endregion}}
 
-
-
 #### __[VB.NET] Example 5: Binding a Single Item to RadDataForm__
 
-{{region raddataform-getting-started_9}}
-
+	{{region raddataform-getting-started_3}}
         Dim employee As New Employee() With { _
          .FirstName = "Sarah", _
          .LastName = "Blake", _
@@ -253,20 +220,19 @@ Once the class Employee is defined, you may use it for creating an object of thi
         Me.DataForm1.CurrentItem = employee
 	{{endregion}}
 
-
-
 After you run the application you should see the following:
 
- ![](images/RadDataForm_bindToSingleItem.png)
+#### __Figure 2: RadDataForm bound to a single item__
+
+![RadDataForm bound to a single item](images/RadDataForm_bindToSingleItem.png)
 
 ## Binding RadDataForm to a collection of custom objects
 
 We will create a simple **EmployeeService** class with a single static method - **GetEmployees()** that will return an **ObservableCollection&lt;Employee&gt;**, containing several hard-coded employees:
 
-#### __[C#] Example 6: Creating an EmployeeService Class with a Static GetEmployees() Method__
+#### __[C#] Example 6: Creating an EmployeeService class with a static GetEmployees() method__
 
-{{region raddataform-getting-started_10}}
-
+	{{region raddataform-getting-started_4}}
 	public class EmployeeService
 	{
 	  public static ObservableCollection<Employee> GetEmployees()
@@ -315,12 +281,9 @@ We will create a simple **EmployeeService** class with a single static method - 
 	}
 	{{endregion}}
 
+#### __[VB.NET] Example 6: Creating an EmployeeService class with a static GetEmployees() method__
 
-
-#### __[VB.NET] Example 6: Creating an EmployeeService Class with a Static GetEmployees() Method__
-
-{{region raddataform-getting-started_11}}
-
+	{{region raddataform-getting-started_4}}
 	Public Class EmployeeService
 	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	  Dim employees As New ObservableCollection(Of Employee)()
@@ -365,32 +328,24 @@ We will create a simple **EmployeeService** class with a single static method - 
 	End Class
 	{{endregion}}
 
-
-
-Afterwards, all you need to do is to set the **ItemsSource** of the RadDataForm:
+Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 
 #### __[C#] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
-{{region raddataform-getting-started_12}}
-
+	{{region raddataform-getting-started_5}}
 	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
 	{{endregion}}
 
-
-
 #### __[VB.NET] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
-{{region raddataform-getting-started_13}}
-
+	{{region raddataform-getting-started_5}}
 	Me.DataForm1.ItemsSource = Employee.GetEmployees()
 	{{endregion}}
 
-
-
 On running the application, you should see the following:
 
-![](images/RadDataForm_bindToCollection.png)
+#### __Figure 3: RadDataForm bound to a collection of items__
 
-
+![RadDataForm bound to a collection of items](images/RadDataForm_bindToCollection.png)
 
 As you may see, in this case the navigation buttons are displayed, thus allowing you to run through all the objects in the collection. Furthermore, you are allowed to add new item, delete and edit the current one.

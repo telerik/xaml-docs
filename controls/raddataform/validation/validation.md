@@ -10,7 +10,6 @@ position: 0
 
 # Property level validation
 
-
 RadDataForm provides data validation of the user input. Data Validation enables you to take complete control of the data entered in the fields of the data form. 
 
 Generally, the built-in validation will be performed once the edit has been committed and the RadDataForm will be visualized as follows:
@@ -25,8 +24,7 @@ For example:
 
 #### __[C#] Example 1: Handling the ValidatingItem Event__
 
-{{region raddataform-validation_0}}
-
+	{{region raddataform-validation_0}}
 	private void DataForm1_ValidatingItem(object sender, System.ComponentModel.CancelEventArgs e)
 	  {   
 	   var employer = this.DataForm1.CurrentItem as Employee;
@@ -37,12 +35,9 @@ For example:
 	  }
 	{{endregion}}
 
-
-
 #### __[VB.NET] Example 1: Handling the ValidatingItem Event__
 
-{{region raddataform-validation_1}}
-
+	{{region raddataform-validation_0}}
     Private Sub DataForm1_ValidatingItem(sender As Object, e As System.ComponentModel.CancelEventArgs)
         Dim employer = TryCast(Me.DataForm1.CurrentItem, Employee)
         If employer.Salary < 1000 Then
@@ -51,20 +46,15 @@ For example:
     End Sub
 	{{endregion}}
 
-
-
 In this case the RadDataForm will be displayed as the image below:
 
- ![](images/RadDataForm_Validation2.png)
-
-
+![](images/RadDataForm_Validation2.png)
 
 Yet another approach applicable when defining custom fields is to specify the validation properties in the binding and perform the logic inside the property setter. For example:
 
 #### __[C#] Example 2: Perform the Validation inside the Property Setter__
 
-{{region raddataform-validation_2}}
-	
+	{{region raddataform-validation_1}}
 	public DateTime StartingDate
 	  {
 	   get
@@ -89,12 +79,9 @@ Yet another approach applicable when defining custom fields is to specify the va
 	  }
 	{{endregion}}
 
-
-
 #### __[VB.NET] Example 2: Perform the Validation inside the Property Setter__
 
-{{region raddataform-validation_3}}
-
+	{{region raddataform-validation_1}}
 	Public Property StartingDate() As DateTime
 	 Get
 	  Return Me.startingDate
@@ -112,19 +99,14 @@ Yet another approach applicable when defining custom fields is to specify the va
 	End Property
 	{{endregion}}
 
-
-
 The definition of the DataFormDataField should be like follows:
 
 #### __[XAML] Example 3: Defining the DataFormDataField__
 
-{{region raddataform-validation_4}}
-
+	{{region raddataform-validation_2}}
 	<telerik:DataFormDateField Label="Starting date" DataMemberBinding="{Binding StartingDate, Mode=TwoWay, ValidatesOnExceptions=True, NotifyOnValidationError=True}"/>
 	{{endregion}}
 
-
-
-Once the validation is performed, the RadDataForm will be displayed as the image below:
+Once the validation is performed, the RadDataForm will be displayed as in the image below:
 
 ![](images/RadDataForm_Validation3.png)

@@ -12,7 +12,6 @@ position: 2
 
 
 >Before reading this topic, you might find useful to get familiar with the[Template Structure of the RadDataForm control](D30D9A7D-C51D-4EF8-B58D-C0DC967FCB41#RadDataForm).
-      
 
 __RadDataForm__ exposes a Style property which allows you to apply a particular style to it and modify its appearance.
 
@@ -27,16 +26,12 @@ This topic will show you how to perform the second one.
 ## Modifying the Default Style
 
 To copy the default styles, load your project in Expression Blend and open the User Control that holds the __RadDataForm__. In the 'Objects and Timeline' pane select the __RadDataForm__ you want to style. From the menu choose  *Object -> Edit Style -> Edit a Copy *. You will be prompted for the name of the style and where to be placed.
-        
 
 >If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
-        
 
 After clicking 'OK', Expression Blend will generate the default style of the RadDataForm control in the Resources section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio. If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadDataForm__. Their names indicate to which part of the __RadDataForm__ appearance they are assigned.
 
-
 ![](images/RadDataForm_Resources_Default.png)
-
 
 * __DataForm_HeaderOuterBorder__-a brush that represents the outer border colour of RadDataForm’s header
 

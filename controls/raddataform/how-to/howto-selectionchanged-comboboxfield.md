@@ -10,23 +10,19 @@ position: 2
 
 # Handling SelectionChanged event for DataFormComboBoxField
 
-
-
 DataFormComboBoxField does not have a SelectionChanged event itself. In case you need such an event to implement your additional logic, you can handle the SelectionChanged event of its editing element (RadComboBox). To do that you need to:
 
 1) Register an event handler for the SelectionChanged event:
 
 #### __[C#] Example 1: Adding event handler for the SelectionChanged event__
 
-{{region raddataform-howto-selectionchanged-comboboxfield_1}}
-
+	{{region raddataform-howto-selectionchanged-comboboxfield_1}}
 	    this.AddHandler(RadComboBox.SelectionChangedEvent, new System.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Adding event handler for the SelectionChanged event__
 
-{{region raddataform-howto-selectionchanged-comboboxfield_1}}
-
+	{{region raddataform-howto-selectionchanged-comboboxfield_1}}
 	    AddHandler RadComboBox.SelectionChangedEvent, AddressOf OnSelectionChanged
 	{{endregion}}
 
@@ -36,8 +32,7 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 
 #### __[C#] Example 2: Check if any items were unselected__
 
-{{region raddataform-howto-selectionchanged-comboboxfield_2}}
-
+	{{region raddataform-howto-selectionchanged-comboboxfield_2}}
 	    private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
 	    {
 	        if (e.RemovedItems.Count > 0)
@@ -49,8 +44,7 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 
 #### __[VB.NET] Example 2: Check if any items were unselected__
 
-{{region raddataform-howto-selectionchanged-comboboxfield_2}}
-
+	{{region raddataform-howto-selectionchanged-comboboxfield_2}}
 	    Private Sub OnSelectionChanged(sender As Object, e As SelectionChangedEventArgs)
             'your code here
             If e.RemovedItems.Count > 0 Then
@@ -59,7 +53,6 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 	{{endregion}}
 
 Checking if there are any items being unselected through the RemovedItems.Count ensures that the event will not be handled on the initial loading when a default item has been selected. 
-        
 
 # See Also
 

@@ -10,9 +10,19 @@ position: 2
 
 # ExportToPdf
 
+* [Assembly References](#assembly-references)
+
+* [Method Overloads](#method-overloads)
+
+* [Export Default Styles](#export-default-styles)
+
+* [Disable Column's Width Auto Fit](#disable-column-width-auto-fit)
+
+* [Events](#events)
+
 The __ExportToPdf__ method allows exporting to "Pdf" format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
 
-__Assembly References__
+## Assembly References
 
 The __ExportToPdf__ method uses additional libraries so you need to add references to the following assemblies:
 
@@ -25,7 +35,7 @@ The __ExportToPdf__ method uses additional libraries so you need to add referenc
 
 >  __Telerik.Windows.Controls.GridView.Export.dll__ is a new binary introduced in __Q1 SP of 2015__. It delimits the exporting to __Pdf__ functionality from __Telerik.Windows.Controls.GridView.dll__, so in order to use __ExportToPdf__ method, the new dll should also be added.
 
-The method is overloaded:
+## Method Overloads
 
 1. __ExportToPdf(Stream stream)__ - Expects the specified stream to which you are exporting data to.
 
@@ -70,7 +80,7 @@ The following example shows how to use the method on a button click:
 	}
 
 
-## Export Default Styles  ##
+## Export Default Styles
 
 >To export the default styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
@@ -86,16 +96,35 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 #### __[C#] Example 2: Configuring ExportDefaultStyles property__
 
 	gridViewExport.ExportToPdf(stream,
-    new GridViewPdfExportOptions()
-	{
-	    ShowColumnHeaders = true,
-	    ShowColumnFooters = true,
-	    ShowGroupFooters = true,
-	    ExportDefaultStyles = true
-	});   
+    	new GridViewPdfExportOptions()
+		{
+		    ShowColumnHeaders = true,
+		    ShowColumnFooters = true,
+		    ShowGroupFooters = true,
+		    ExportDefaultStyles = true
+		});   
 
-#### __Figure 2: Exporting with ExportDefaultStyles set to “true”__
+#### __Figure 2: Exporting with ExportDefaultStyles set to True__
 ![ExportDefaultStyles false](../images/exportdefaultstyles4.png)
+
+## Disable Column Width Auto Fit
+
+__GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ property. Its default value is __True__, meaning that the column's width will be automatically fit based on its content. To disable this behavior, its value can be set to __False__.
+
+#### __[C#] Example 3: Setting the AutoFitColumnsWidth Property to False__
+
+	this.gridViewExport.ExportToPdf(stream,
+    	new GridViewDocumentExportOptions()
+		{
+		    ShowColumnHeaders = true,
+		    ShowColumnFooters = true,
+		    ShowGroupFooters = true,
+		    ExportDefaultStyles = true,
+		    AutoFitColumnsWidth = false
+		});
+
+#### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
+![AutoFitColumnsWidth false](../images/autofitcolumnswidthPdf.png)
 
 ## Events
 

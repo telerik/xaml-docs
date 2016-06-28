@@ -124,7 +124,7 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 		});
 
 #### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
-![AutoFitColumnsWidth false](../images/autofitcolumnswidth.png)
+![AutoFitColumnsWidth false](../images/autofitcolumnswidthPdf.png)
 
 ## Events
 

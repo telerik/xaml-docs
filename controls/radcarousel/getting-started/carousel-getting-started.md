@@ -10,66 +10,49 @@ position: 0
 
 # Getting Started
 
+This tutorial will walk you through the creation of a simple application containing **RadCarousel** and will show you how to:
 
+* [Add RadCarousel to Your Project](#add-radcarousel-to-your-project)
 
-This tutorial will walk you through the creation of a simple application containing RadCarousel and will show you how to:
+* [Bind RadCarousel to a collection of custom objects](#bind-radcarousel-to-a-collection-of-custom-objects)
 
-* Add RadCarousel in your project;
+* [Display images in RadCarousel](#display-images-in-radcarousel)
 
-* Bind RadCarousel to a collection of custom objects;
+For the purpose of this example, you will need to create an empty WPF Application in Visual Studio.
 
-* Bind RadCarousel to a collection of images;
-
-For the purpose of this example, you will need to create a empty WPF Application in Visual Studio.
-
-## Add RadCarousel to the Project
+## Add RadCarousel to Your Project
 
 Once a new WPF project is created, you will need to add references to the assemblies:
 
-* Telerik.Windows.Controls;
+* **Telerik.Windows.Controls;**
 
-* Telerik.Windows.Controls.Navigation;
+* **Telerik.Windows.Controls.Navigation;**
 
-* Telerik.Windows.Data;
+* **Telerik.Windows.Data;**
 
-Afterwards, you will need to add the uri namespace:
+Afterwards, you will need to define the **telerik** uri namespace:
 
-#### __XAML__
+#### __[XAML] Example 1: Defining the telerik namespace__
 
-{{region carousel-getting-started_0}}
-
+	{{region carousel-getting-started_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
+Next, you need to add RadCarousel to your application. You may set some of its basic properties like **Background** or **Height**. Furthermore, if you want to access it in the code-behind, you may declare its **Name** attribute: 
 
+#### __[XAML] Example 2: Adding RadGridView to application__
 
-and define the RadCarousel. You may set some of its basic properties like Background or Height. Furthermore, if you want to access it in the code-behind, you may declare its Key attribute: 
-
-#### __XAML__
-
-{{region carousel-getting-started_1}}
-
-	<Window x:Class="RadCarousel_MyProject.MainWindow"
-	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	        Title="MainWindow" Height="450" Width="525"> 
-	  <Grid Background="Black">  
-	        <telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />  
-	  </Grid>
-	</Window>
+	{{region carousel-getting-started_1}}
+	<telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />  
 	{{endregion}}
 
+## Bind RadCarousel to Collection of Custom Objects
 
+For the purpose of this tutorial we will create a new **Employee** class with a couple of properties:
 
-## Bind RadCarousel to collection of custom objects
+#### __[C#] Example 3: The Employee class__
 
-For the purpose of this tutorial we will create a new class - Employee with a couple of properties:
-
-#### __C#__
-
-{{region carousel-getting-started_2}}
-
+	{{region carousel-getting-started_2}}
 	public class Employee
 	 {
 	  public string FirstName
@@ -95,12 +78,9 @@ For the purpose of this tutorial we will create a new class - Employee with a co
 	 }
 	{{endregion}}
 
+#### __[VB.NET] Example 3: The Employee class__
 
-
-#### __VB.NET__
-
-{{region carousel-getting-started_3}}
-
+	{{region carousel-getting-started_2}}
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -141,14 +121,11 @@ For the purpose of this tutorial we will create a new class - Employee with a co
 	End Class
 	{{endregion}}
 
+Furthermore, as some data will be needed, we will create **EmployeeService** class that provides a static **GetEmployees()** method:
 
+#### __[C#] Example 4: The EmployeeService class__
 
-Furthermore, as some data will be needed, we will create EmployeeService class that provides a static method GetEmployees():
-
-#### __C#__
-
-{{region carousel-getting-started_4}}
-
+	{{region carousel-getting-started_3}}
 	public class EmployeeService
 	 {
 	  public static ObservableCollection<Employee> GetEmployees()
@@ -196,12 +173,9 @@ Furthermore, as some data will be needed, we will create EmployeeService class t
 	 }
 	{{endregion}}
 
+#### __[VB.NET] Example 4: The EmployeeService class__
 
-
-#### __VB.NET__
-
-{{region carousel-getting-started_5}}
-
+	{{region carousel-getting-started_3}}
 	Public Class EmployeeService
 	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	  Dim employees As New ObservableCollection(Of Employee)()
@@ -246,121 +220,102 @@ Furthermore, as some data will be needed, we will create EmployeeService class t
 	End Class
 	{{endregion}}
 
+Once all the data is prepared, we may set the RadCarousel's **ItemsSource**:
 
+#### __[C#] Example 5: Setting RadCarousel's ItemsSource__
 
-Once all the data is prepared, we may set the RadCarousel's ItemsSource:
-
-#### __C#__
-
-{{region carousel-getting-started_6}}
-
-	public MainWindow()
-	  {
-	   InitializeComponent();
-	   this.MyCarousel.ItemsSource = EmployeeService.GetEmployees();
-	  }
+	{{region carousel-getting-started_4}}
+	this.MyCarousel.ItemsSource = EmployeeService.GetEmployees();
 	{{endregion}}
 
+#### __[VB.NET] Example 5: Setting RadCarousel's ItemsSource__
 
-
-#### __VB.NET__
-
-{{region carousel-getting-started_7}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 Me.MyCarousel.ItemsSource = EmployeeService.GetEmployees()
-	End Sub
+	{{region carousel-getting-started_4}}
+	Me.MyCarousel.ItemsSource = EmployeeService.GetEmployees()
 	{{endregion}}
-
-
 
 After running the application, you will see the following result:
 
-![](images/carousel_BoundToCollection.png)
+#### __Figure 1: RadCarousel displaying a list of employees__
+
+![RadCarousel displaying a list of employees](images/carousel_BoundToCollection.png)
 
 ## Display images in RadCarousel
 
-Generally, RadCarousel may be easily used for displaying images and navigating through them. All you need to do is to add those that you want to be visualized in a List<Image> for example and set the ItemsSource to it:
+Generally, RadCarousel may be easily used for displaying images and navigating through them. All you need to do is to add those that you want to be visualized in a **List<Image>** for example and set RadCarousel's ItemsSource:
 
-#### __C#__
+#### __[C#] Example 6: Setting RadCarousel's ItemsSource to a list of images__
 
-{{region carousel-getting-started_8}}
-
-	public MainWindow()
-	  {
-	   InitializeComponent();
-	   List<Image> myImages = new List<Image>();
-	   Image myImage = new Image();
-	   myImage.Source = new BitmapImage(new Uri("/Images/nature1.jpg", UriKind.Relative));
-	   myImage.Height = 200;
-	   myImage.Width = 200;
-	   myImages.Add(myImage);
-	   Image myImage1 = new Image();
-	   myImage1.Source = new BitmapImage(new Uri("/Images/nature2.jpg", UriKind.Relative));
-	   myImage1.Height = 200;
-	   myImage1.Height = 200;
-	   myImages.Add(myImage1);
-	   Image myImage2 = new Image();
-	   myImage2.Source = new BitmapImage(new Uri("/Images/nature15.jpg", UriKind.Relative));
-	   myImage2.Width = 200;
-	   myImage.Height = 200;
-	   myImages.Add(myImage2);
-	   Image myImage3 = new Image();
-	   myImage3.Source = new BitmapImage(new Uri("/Images/nature19.jpg", UriKind.Relative));
-	   myImage3.Height = 200;
-	   myImage3.Width = 200;
-	   myImages.Add(myImage3);
-	   Image myImage4 = new Image();
-	   myImage4.Source = new BitmapImage(new Uri("/Images/nature26.jpg", UriKind.Relative));
-	   myImage4.Height = 200;
-	   myImage4.Width = 200;
-	   myImages.Add(myImage4);
-	   this.MyCarousel.ItemsSource = myImages;   
-	  }
+	{{region carousel-getting-started_5}}
+	List<Image> myImages = new List<Image>();
+	Image myImage = new Image();
+	myImage.Source = new BitmapImage(new Uri("/Images/nature1.jpg", UriKind.Relative));
+	myImage.Height = 200;
+	myImage.Width = 200;
+	myImages.Add(myImage);
+	Image myImage1 = new Image();
+	myImage1.Source = new BitmapImage(new Uri("/Images/nature2.jpg", UriKind.Relative));
+	myImage1.Height = 200;
+	myImage1.Height = 200;
+	myImages.Add(myImage1);
+	Image myImage2 = new Image();
+	myImage2.Source = new BitmapImage(new Uri("/Images/nature15.jpg", UriKind.Relative));
+	myImage2.Width = 200;
+	myImage.Height = 200;
+	myImages.Add(myImage2);
+	Image myImage3 = new Image();
+	myImage3.Source = new BitmapImage(new Uri("/Images/nature19.jpg", UriKind.Relative));
+	myImage3.Height = 200;
+	myImage3.Width = 200;
+	myImages.Add(myImage3);
+	Image myImage4 = new Image();
+	myImage4.Source = new BitmapImage(new Uri("/Images/nature26.jpg", UriKind.Relative));
+	myImage4.Height = 200;
+	myImage4.Width = 200;
+	myImages.Add(myImage4);
+	this.MyCarousel.ItemsSource = myImages;
 	{{endregion}}
 
+#### __[VB.NET] Example 6: Setting RadCarousel's ItemsSource to a list of images__
 
-
-
-
-#### __VB.NET__
-
-{{region carousel-getting-started_9}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 Dim myImages As New List(Of Image)()
-	 Dim myImage As New Image()
-	 myImage.Source = New BitmapImage(New Uri("/Images/nature1.jpg", UriKind.Relative))
-	 myImage.Height = 200
-	 myImage.Width = 200
-	 myImages.Add(myImage)
-	 Dim myImage1 As New Image()
-	 myImage1.Source = New BitmapImage(New Uri("/Images/nature2.jpg", UriKind.Relative))
-	 myImage1.Height = 200
-	 myImage1.Height = 200
-	 myImages.Add(myImage1)
-	 Dim myImage2 As New Image()
-	 myImage2.Source = New BitmapImage(New Uri("/Images/nature15.jpg", UriKind.Relative))
-	 myImage2.Width = 200
-	 myImage.Height = 200
-	 myImages.Add(myImage2)
-	 Dim myImage3 As New Image()
-	 myImage3.Source = New BitmapImage(New Uri("/Images/nature19.jpg", UriKind.Relative))
-	 myImage3.Height = 200
-	 myImage3.Width = 200
-	 myImages.Add(myImage3)
-	 Dim myImage4 As New Image()
-	 myImage4.Source = New BitmapImage(New Uri("/Images/nature26.jpg", UriKind.Relative))
-	 myImage4.Height = 200
-	 myImage4.Width = 200
-	 myImages.Add(myImage4)
-	 Me.MyCarousel.ItemsSource = myImages
-	End Sub
+	{{region carousel-getting-started_5}}
+	Dim myImages As New List(Of Image)()
+	Dim myImage As New Image()
+	myImage.Source = New BitmapImage(New Uri("/Images/nature1.jpg", UriKind.Relative))
+	myImage.Height = 200
+	myImage.Width = 200
+	myImages.Add(myImage)
+	Dim myImage1 As New Image()
+	myImage1.Source = New BitmapImage(New Uri("/Images/nature2.jpg", UriKind.Relative))
+	myImage1.Height = 200
+	myImage1.Height = 200
+	myImages.Add(myImage1)
+	Dim myImage2 As New Image()
+	myImage2.Source = New BitmapImage(New Uri("/Images/nature15.jpg", UriKind.Relative))
+	myImage2.Width = 200
+	myImage.Height = 200
+	myImages.Add(myImage2)
+	Dim myImage3 As New Image()
+	myImage3.Source = New BitmapImage(New Uri("/Images/nature19.jpg", UriKind.Relative))
+	myImage3.Height = 200
+	myImage3.Width = 200
+	myImages.Add(myImage3)
+	Dim myImage4 As New Image()
+	myImage4.Source = New BitmapImage(New Uri("/Images/nature26.jpg", UriKind.Relative))
+	myImage4.Height = 200
+	myImage4.Width = 200
+	myImages.Add(myImage4)
+	Me.MyCarousel.ItemsSource = myImages
 	{{endregion}}
 
+**Figure 2** shows the final result:
 
+#### __Figure 2: RadCarousel displaying a list of images__
 
-Now the RadCarousel should look like the one below:
-![](images/carousel_DisplayImages.png)
+![RadCarousel displaying a list of images](images/carousel_DisplayImages.png)
+
+## See Also
+
+* [Data Binding]({%slug carousel-data-binding%})
+
+* [Carousel Properties]({%slug carousel-properties%})

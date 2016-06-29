@@ -419,6 +419,21 @@ navigation:
         title: RadTreeView
     controls/radupload:
         title: RadUpload
+    controls/radupload/features:
+        title: Features
+        position: 6
+    controls/radupload/events:
+        title: Events
+        position: 7
+    controls/radupload/changes-and-backwards-compatibility:
+        title: Changes and Backward Compatibility
+        position: 8
+    controls/radupload/styles-and-templates:
+        title: Styles and templates
+        position: 9
+    controls/radupload/how-to:
+        title: How To
+        position: 10
     controls/touchmanager:
         title: "TouchManager"
     controls/touchmanager/gestures:

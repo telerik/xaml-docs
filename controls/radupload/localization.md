@@ -5,18 +5,16 @@ description: Localization
 slug: radupload-localization
 tags: localization
 published: True
-position: 8
+position: 3
 site_name: Silverlight
 ---
 
 # Localization
 
-
-
 The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the standard __RadUpload__ control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything.
 ![](images/RadUpload_Localization_01.png)
 
->tip__To learn more about the ways in which to localize the RadControls please read the common topic about__
+>tip To learn more about the ways in which to localize the RadControls please read the common topic about
 
 ## Resource Keys
 
@@ -50,10 +48,7 @@ Here is a list of all of the __Resources__ available and their default values:
 |UploadRestrictionTotalSize|Total size of all uploaded files;|
 
 
-# See Also
-
+## See Also
  * [Visual Structure]({%slug radupload-visual-structure%})
-
  * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
-
  * [End-User Capabilities]({%slug radupload-end-user-capabilities%})

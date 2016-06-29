@@ -23,8 +23,7 @@ Finally, the implementation should be as follows:
 
 #### __XAML__
 
-{{region radcarousel-how-to-change-scroll-buttons_0}}
-
+	{{region radcarousel-how-to-change-scroll-buttons_0}}
 	<Window.Resources>
 	 <ResourceDictionary>
 	  <ResourceDictionary.MergedDictionaries>
@@ -51,12 +50,9 @@ Finally, the implementation should be as follows:
 	</Grid>
 	{{endregion}}
 
-
-
 #### __C#__
 
-{{region radcarousel-how-to-change-scroll-buttons_1}}
-
+	{{region radcarousel-how-to-change-scroll-buttons_1}}
 	private void pageDownButton_Click(object sender, RoutedEventArgs e)
 	 {
 	  this.RadCarousel1.FindCarouselPanel().PageDown();
@@ -75,12 +71,9 @@ Finally, the implementation should be as follows:
 	 }
 	{{endregion}}
 
-
-
 #### __VB.NET__
 
-{{region radcarousel-how-to-change-scroll-buttons_2}}
-
+	{{region radcarousel-how-to-change-scroll-buttons_1}}
 	Private Sub pageDownButton_Click(sender As Object, e As RoutedEventArgs)
 	 Me.RadCarousel1.FindCarouselPanel().PageDown()
 	End Sub
@@ -94,8 +87,6 @@ Finally, the implementation should be as follows:
 	 Me.RadCarousel1.FindCarouselPanel().PageUp()
 	End Sub
 	{{endregion}}
-
-
 
 Once you are done, the RadCarousel should be visualized as the image below:
 ![](images/RadCarousel_ChangeScrollButtons.png)

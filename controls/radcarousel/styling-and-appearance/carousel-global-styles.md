@@ -22,8 +22,7 @@ xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
 #### __XAML__
 
-{{region carousel-global-styles_0}}
-
+	{{region carousel-global-styles_0}}
 	<Style TargetType="{x:Type telerik:CarouselItem}">
 	    <Setter Property="Height" Value="200"/>
 	    <Setter Property="Width" Value="400"/>
@@ -40,7 +39,6 @@ xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	</Style>
 	{{endregion}}
 
-
 Now __CarouselItems__ will look like this:
 
 ![](images/ellipse.PNG)
@@ -51,8 +49,7 @@ Now that we have styled the __CarouselItem__ we need to create a new style for t
 
 #### __XAML__
 
-{{region carousel-global-styles_1}}
-
+	{{region carousel-global-styles_1}}
 	<Style TargetType="{x:Type telerik:CarouselDataRecordPresenter}">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -71,13 +68,10 @@ Now that we have styled the __CarouselItem__ we need to create a new style for t
 	</Style>
 	{{endregion}}
 
-
-
 Overall this is a very simple style which will display the contact name, the country, the city, and the address of each customer that is listed in the Customers table. The most interesting parts of this style are the binding that are defined for every __Label__ object. Since the data context of every __CarouselDataRecordPresenter__ is a __DataRow__ we use the indexer of each row to bind to a specific column of the Customers table.
 
 Here is the result:   
  ![](images/ellipse2.PNG)
-
 
 Now the only thing left to do is to run the carousel and see the ellipses in action:
  ![](images/ellipseCarousel_thumb.PNG)

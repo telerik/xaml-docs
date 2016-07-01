@@ -10,27 +10,23 @@ position: 8
 
 # Data Annotations
 
+This article will show you how to use **Data Annotations** with **RadPropertyGrid**.
 
+We will discuss the following attributes:
 
-In this article we will show you how to use Data Annotations with RadPropertyGrid.
-      
+* [Display](#display)
 
-RadPropertyGrid supports Data Annotations attributes like:
+* [ReadOnly](#readonly)
 
-* __Display__
+* [Browsable](#browsable)
 
-* __ReadOnly__
+They allow you to categorize different properties into separate groups, set some of them as read-only or define description for each one of them.
 
-* __Browsable__
+## Creating RadPropertyGrid Application
 
-Using Data Annotations you can categorize different properties into separate groups, set some of them as read-only and define description for each of them.
-      
+First, for the purpose of this article, we will create a new **Employee** class with a couple of properties:
 
-## Creating PropertyGrid Application
-
-First, for the purpose of this tutorial, we will create a new class Employee with a couple of properties:
-
-#### __[C#]Example 1: Creating sample object__
+#### __[C#] Example 1: Creating the Employee class__
 
 	{{region radpropertygrid-data-annotations_1}}
 	     public class Employee
@@ -44,11 +40,9 @@ First, for the purpose of this tutorial, we will create a new class Employee wit
 	    }
 	{{endregion}}
 
+#### __[VB] Example 1: Creating the Employee class__
 
-
-#### __[VB]Example 1: Creating sample object__
-
-	{{region radpropertygrid-data-annotations_2}}
+	{{region radpropertygrid-data-annotations_1}}
 	    Public Class Employee
 	        Public Property FirstName() As String
 	            Get
@@ -105,23 +99,21 @@ First, for the purpose of this tutorial, we will create a new class Employee wit
 	        End Property
 	        Private m_StartingDate As DateTime
 	    End Class
-	
 	{{endregion}}
 
 The declaration of RadPropertyGrid control inside the Grid:        
 
-#### __[XAML]Example 2: Declaring RadPropertyGrid__
+#### __[XAML] Example 2: Declaring RadPropertyGrid__
 
 	{{region radpropertygrid-data-annotations_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
 	{{endregion}}
 
-
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to RadPropertyGrid:
 
-#### __[C#]Example 3: Binding object to RadPropertyGrid__
+#### __[C#] Example 3: Binding Employee instance to RadPropertyGrid__
 
-	{{region radpropertygrid-data-annotations_3}}
+	{{region radpropertygrid-data-annotations_2}}
 	this.propertyGrid1.Item = new Employee()
 	            {
 	                FirstName = "Sarah",
@@ -133,11 +125,9 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	            };
 	{{endregion}}
 
+#### __[VB] Example 3: Binding Employee instance to RadPropertyGrid__
 
-
-#### __[VB]Example 3: Binding object to RadPropertyGrid__
-
-	{{region radpropertygrid-data-annotations_4}}
+	{{region radpropertygrid-data-annotations_2}}
 	    Me.PropertyGrid1.Item = New Employee() With { _
 	  .FirstName = "Sarah", _
 	  .LastName = "Blake", _
@@ -147,103 +137,246 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	}
 	{{endregion}}
 
-
-
 After you run the application you should see the following:
-        
 
-![Rad Property Grid Data Annotations 4](images/RadPropertyGrid_Data_Annotations_4.PNG)
+#### __Figure 1: RadPropertyGrid bound to an Employee instance__
 
-## Data Annotations with RadPropertyGrid
+![RadPropertyGrid bound to an Employee instance](images/RadPropertyGrid_Data_Annotations_1.PNG)
 
->importantIf you want to use Data Annotations in your application, you have to add a reference to System.ComponentModel.DataAnnotations assembly.
-        
+>importantIf you want to use Data Annotations in your application, you have to add a reference to the **System.ComponentModel.DataAnnotations** assembly.
 
-With Data Annotations you can apply attributes to the members of the class that specify how the data is displayed. RadPropertyGrid supports different Data Annotations:
+## Display
 
-__Display__ - this is recommended attribute type to use. You can use its properties:
- 
+The **Display** attribute specifies localizable strings for data types and members that are used in the user interface. You can use its following properties:
 
-* __Name__ - The value of Name will be used in RadPropertyGrid instead of the PropertyName.
-   
+* __Name__: The value to be displayed instead of the property name.
 
-* __Description__ - will be used in when you want to define a description of the Property.
-   
+* __Description__: A description of the property. This will be shown in RadPropertyGrid's [DescriptionPanel]({%slug radpropertygrid-visualstructure%}).
 
-* __GroupName__ -  will be used when you want to categorise different properties into separate groups.
-   
+* __GroupName__: Used when you want to categorize different properties into separate groups.
 
-* __Order__ - will be used when you want to set Property's display order.
+* __Order__: Used when you want to set a property's display order.
               
-__Here is a sample how to set DataAnnotation with Display attribute__:
+**Example 4** demonstrates how you can specify a Display attribute for a property:
 
-#### __[C#]Example 4: Setting Display attribute__
+#### __[C#] Example 4: Setting Display attribute__
+
+	{{region radpropertygrid-data-annotations_3}}
+     //Rename the StartingDate property to Year in the UI
+     [Display(Name = "Year")]
+     public DateTime StartingDate { get; set; }
+
+     //Set a description to the FirstName property and categorize it to be from the group "Personal Information"
+     [Display(Description = "Employee's first name.", GroupName = "Personal Information")]
+     public string FirstName { get; set; }
+
+     //Set a description to the LastName property and categorize it to be from the group "Personal Information"
+     [Display(Description = "Employee's last name.", GroupName = "Personal Information")]
+     public string LastName { get; set; }
+	{{endregion}}
+
+#### __[VB.NET] Example 4: Setting Display attribute__
+
+	{{region radpropertygrid-data-annotations_3}}
+	'Rename the StartingDate property to Year in the UI
+	<Display(Name := "Year")> _
+	Public Property StartingDate() As DateTime
+		Get
+			Return m_StartingDate
+		End Get
+		Set
+			m_StartingDate = Value
+		End Set
+	End Property
+	Private m_StartingDate As DateTime
+	
+	'Set a description to the FirstName property and categorize it to be from the group "Personal Information"
+	<Display(Description := "Employee's first name.", GroupName := "Personal Information")> _
+	Public Property FirstName() As String
+		Get
+			Return m_FirstName
+		End Get
+		Set
+			m_FirstName = Value
+		End Set
+	End Property
+	Private m_FirstName As String
+	
+	'Set a description to the LastName property and categorize it to be from the group "Personal Information"
+	<Display(Description := "Employee's last name.", GroupName := "Personal Information")> _
+	Public Property LastName() As String
+		Get
+			Return m_LastName
+		End Get
+		Set
+			m_LastName = Value
+		End Set
+	End Property
+	Private m_LastName As String
+	{{endregion}}
+
+## Browsable
+
+The **Browsable** attribute specifies whether a property should be displayed or not.
+
+#### __[C#] Example 5: Setting Browsable attribute__
+
+	{{region radpropertygrid-data-annotations_4}}
+     //Hide StartingDate from the UI
+    [Browsable(false)]
+    public DateTime StartingDate { get; set; }
+	{{endregion}}
+
+#### __[VB.NET] Example 5: Setting Browsable attribute__
+
+	{{region radpropertygrid-data-annotations_4}}
+	'Hide StartingDate from the UI
+	<Browsable(False)> _
+	Public Property StartingDate() As DateTime
+		Get
+			Return m_StartingDate
+		End Get
+		Set
+			m_StartingDate = Value
+		End Set
+	End Property
+	Private m_StartingDate As DateTime
+	{{endregion}}
+
+## ReadOnly
+
+The **ReadOnly** attribute specifies whether the property this attribute is bound to is read-only or read/write.
+
+#### __[C#] Example 6: Setting ReadOnly attribute__
 
 	{{region radpropertygrid-data-annotations_5}}
-	         //Rename the StartingDate property to Year in the UI
-	         [Display(Name = "Year")]
-	         public DateTime StartingDate { get; set; }
+     //Set StartingDate as Read-Only
+    [ReadOnly(true)]
+    public DateTime StartingDate { get; set; }
+	{{endregion}}
+
+#### __[VB.NET] Example 6: Setting ReadOnly attribute__
+
+	{{region radpropertygrid-data-annotations_5}}
+	'Set StartingDate as Read-Only
+	<[ReadOnly](True)> _
+	Public Property StartingDate() As DateTime
+		Get
+			Return m_StartingDate
+		End Get
+		Set
+			m_StartingDate = Value
+		End Set
+	End Property
+	Private m_StartingDate As DateTime
+	{{endregion}}
+
+To see these attributes in action, let's modify the Employee class and see the result in RadPropertGrid.
+
+#### __[C#] Example 7: Modifying sample data__
+
+	{{region radpropertygrid-data-annotations_6}}
+    [Display(Description = "Employee's first name.", GroupName="Personal Information")]
+    public string FirstName { get; set; }     
+
+    [Display(Description = "Employee's last name.", GroupName="Personal Information")]
+    public string LastName { get; set; }
+
+    [Display(Name = "Occupation", GroupName = "Job Description")]
+    public string Occupation { get; set; }    
+   
+    [Browsable(false)]
+    public int Salary { get; set; }
+
+    [Display(Name = "Number", GroupName = "Job Description")]
+    public string PhoneNum { get; set; }     
+
+    [ReadOnly(true)]
+    public DateTime StartingDate { get; set; } 
+	{{endregion}}
+
+#### __[VB.NET] Example 7: Modifying sample data__
+
+	{{region radpropertygrid-data-annotations_6}}
+	<Display(Description := "Employee's first name.", GroupName := "Personal Information")> _
+	Public Property FirstName() As String
+		Get
+			Return m_FirstName
+		End Get
+		Set
+			m_FirstName = Value
+		End Set
+	End Property
+	Private m_FirstName As String
 	
-	         //Set a description to the FirstName property and categorize it to be from the group "Personal Information"
-	         [Display(Description = "Employee's first name.", GroupName = "Personal Information")]
-	         public string FirstName { get; set; }
+	<Display(Description := "Employee's last name.", GroupName := "Personal Information")> _
+	Public Property LastName() As String
+		Get
+			Return m_LastName
+		End Get
+		Set
+			m_LastName = Value
+		End Set
+	End Property
+	Private m_LastName As String
 	
-	         //Set a description to the LastName property and categorize it to be from the group "Personal Information"
-	         [Display(Description = "Employee's last name.", GroupName = "Personal Information")]
-	         public string LastName { get; set; }
+	<Display(Name := "Occupation", GroupName := "Job Description")> _
+	Public Property Occupation() As String
+		Get
+			Return m_Occupation
+		End Get
+		Set
+			m_Occupation = Value
+		End Set
+	End Property
+	Private m_Occupation As String
+	
+	<Browsable(False)> _
+	Public Property Salary() As Integer
+		Get
+			Return m_Salary
+		End Get
+		Set
+			m_Salary = Value
+		End Set
+	End Property
+	Private m_Salary As Integer
+	
+	<Display(Name := "Number", GroupName := "Job Description")> _
+	Public Property PhoneNum() As String
+		Get
+			Return m_PhoneNum
+		End Get
+		Set
+			m_PhoneNum = Value
+		End Set
+	End Property
+	Private m_PhoneNum As String
+	
+	<[ReadOnly](True)> _
+	Public Property StartingDate() As DateTime
+		Get
+			Return m_StartingDate
+		End Get
+		Set
+			m_StartingDate = Value
+		End Set
+	End Property
+	Private m_StartingDate As DateTime
 	{{endregion}}
 
+Here's the resulting RadPropertyGrid sorted alphabetically and in grouped mode:
 
+#### __Figure 2: RadPropertyGrid with data annotations sorted alphabetically__
 
-__Browsable__ - with this attribute you can define whether an item should be visible or not.
-            
+![RadPropertyGrid with data annotations sorted alphabetically](images/RadPropertyGrid_Data_Annotations_5.PNG)
 
-#### __[C#]Example 5: Setting Browsable attribute__
+#### __Figure 3: RadPropertyGrid with data annotations in grouped mode__
 
-	{{region radpropertygrid-data-annotations_7}}
-	         //Hide StartingDate from the UI
-	        [Browsable(false)]
-	        public DateTime StartingDate { get; set; }
-	{{endregion}}
+![Rad Property Grid Data Annotations 5](images/RadPropertyGrid_Data_Annotations_4.PNG)
 
+## See also
 
+* [Editor Attribute]({%slug radpropertygrid-editor-attribute%})
 
-__ReadOnly__ - set a property as read-only.
-            
-
-#### __[C#]Example 6: Setting ReadOnly attribute__
-
-	{{region radpropertygrid-data-annotations_9}}
-	         //Set StartingDate as Read-Only
-	        [ReadOnly(true)]
-	        public DateTime StartingDate { get; set; }
-	{{endregion}}
-
-
-
-So let's modify our simple Employee class and see the result in RadPropertGrid.
-        
-
-#### __[C#]Example 7: Modifying sample data__
-
-	{{region radpropertygrid-data-annotations_11}}
-	        [Display(Description = "Employee's first name.", GroupName="Personal Information")]
-	        public string FirstName { get; set; }        
-	        [Display(Description = "Employee's last name.", GroupName="Personal Information")]
-	        public string LastName { get; set; }
-	        [Display(Name = "Occupation", GroupName = "Job Description")]
-	        public string Occupation { get; set; }               
-	        [Browsable(false)]
-	        public int Salary { get; set; }
-	        [Display(Name = "Number", GroupName = "Job Description")]
-	        public string PhoneNum { get; set; }        
-	        [ReadOnly(true)]
-	        public DateTime StartingDate { get; set; } 
-	{{endregion}}
-
-
-
-And here is the new result:
-        
-
-![Rad Property Grid Data Annotations 5](images/RadPropertyGrid_Data_Annotations_5.PNG)
+* [Grouping Support]({%slug radpropertygrid-grouping%})

@@ -62,9 +62,11 @@ The __RadRichTextBox__ control raises the following specific events:
     * An __EventArgs__ object.
               
 
-* __DocumentContentChanged__ - occurs when the content of the current document has changed. This is aggregated event, which is raised not often than the value specified in RadDocument.DocumentContentChangedInterval property (the default value is 30 ms) for performance reasons. The event handler receives two arguments:
-    * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
-    * An __EventArgs__ object.
+* __DocumentContentChanged__ - occurs when the content of the current document has changed. This is aggregated event, which is raised not more frequently than the value specified in RadDocument.DocumentContentChangedInterval property for performance reasons. The default value of DocumentContentChangedInterval is 30ms. 
+The event handler receives two arguments:
+
+	* The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
+	* An __EventArgs__ object.
 
 * __DocumentLayoutModeChanged__ - occurs when the layout mode of the current document has changed. The event handler receives two arguments:
     * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.

@@ -11,12 +11,12 @@ position: 6
 # Headers and Footers
 
 
-Headers and Footers functionality allows you add rich text content in the page margins when exporting a worksheet to pages. This feature is useful in scenarios like [exporting to PDF](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider), [printing]({%slug radspreadsheet-ui-printing%}) or [import/export to XLSX](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider). 
+Headers and Footers functionality allows you add rich text content in the page margins when laying out a worksheet to pages. This feature is useful in scenarios like [exporting to PDF](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider), [printing]({%slug radspreadsheet-ui-printing%}) or [import/export to XLSX](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider). 
 
 
 ## Overview
 
-RadSpreadsheet allows you add headers and/or footers at the top or bottom of a worksheet. The applied headers and footers are not displayed on the worksheet when the document is visualized in an application — they appear on the printed pages and in the exported PDF document only. 
+RadSpreadsheet allows you add headers and/or footers at the top or bottom of a worksheet. The applied headers and footers appear on the printed pages and in the exported PDF document only - they are not displayed on the worksheet when the document is visualized in an application. 
 
 #### **Figure 1: Headers and footers in a spreadsheet document**
 ![](images/RadSpreadsheet_UI_Headers_Footers_00.png)
@@ -55,7 +55,7 @@ This dialog allows you apply different settings to the header/footer:
 
 ## Custom Header/Footer
 
-The content of the header/footer is customizable and you can choose the text that will be included. This could be done through the *Custom Header...* and *Custom Footer...* buttons in the Page Setup dialog. They will open a new dialog that gives you the ability to insert the desired content.
+The content of the header/footer is customizable and you can choose the text that will be included. This could be done through the *Custom Header...* and *Custom Footer...* buttons in the Page Setup dialog. They open a new dialog that gives you the ability to insert the desired content.
 
 
 * **Left section**: Represents the content of the left header/footer section. The content of this section is flowing from the left to the right page margin with left horizontal alignment.
@@ -80,7 +80,7 @@ Along with the text in the header/footer sections, you can insert several fields
 
 4. **Insert Time**: Allows you to insert a time field. This field is evaluated as the time when the printing or PDF export has started.
 
-5. **Insert File Path**: Allows you to insert the file folder field. This field is evaluated as the full folder path to the currently opened file. Note that when exporting a Workbook, this field is evaluated as empty string because the Workbook instance is not related to any concrete file in the file system.
+5. **Insert File Path**: Allows you to insert the file folder field. This field is evaluated as the full folder path to the currently opened file. Note that this field is respected when printing. When exporting a Workbook, this field is evaluated as empty string because the Workbook instance is not related to any concrete file in the file system.
 
 6. **Insert File Name**: Allows you to insert a Workbook name field. This field is evaluated as the Workbook Name property value.
 

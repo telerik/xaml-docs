@@ -100,3 +100,8 @@ The following code snippet shows how to integrate the print preview with RadRibb
 {{endregion}}
 
 ![Rad Spreadsheet UI Printing 08](images/RadSpreadsheet_UI_Printing_08.png)
+
+
+# See Also
+
+* [Headers and Footers]({%slug radspreadsheet-ui-headers-and-footers%})

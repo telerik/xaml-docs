@@ -55,9 +55,9 @@ The enumeration has the following values:
 
 * __All (default)__ - all buttons are displayed
 
-Here is an example of a __RadDataPager__ that displays the previous, next and numeric buttons.
+__Example 1__ shows how to set up a __RadDataPager__ that displays the previous, next and numeric buttons.
 
-#### __XAML__
+#### __[XAML]Example 1: Set RadDataPager`s DisplayMode__
 
 {{region raddatapager-features-display-modes_0}}
 
@@ -66,11 +66,12 @@ Here is an example of a __RadDataPager__ that displays the previous, next and nu
 	                        DisplayMode="PreviousNextNumeric" />
 {{endregion}}
 
+#### __Figure 1: RadDataPager with Previous, Next and Numeric buttons__
 ![](images/RadDataPager_Features_DisplayModes_01.png)
 
-If the combination of visual elements doesn't exist in the enumeration, you can combine one or more enumeration values. This is done by separating the values with a coma. Here is an example:
+If the combination of visual elements doesn't exist in the enumeration, you can combine one or more enumeration values. This is done by separating the values with a coma as shown in __Example 2__:
 
-#### __XAML__
+#### __[XAML]Example 2: Set RadDataPager`s DisplayMode__
 
 {{region raddatapager-features-display-modes_1}}
 
@@ -79,6 +80,7 @@ If the combination of visual elements doesn't exist in the enumeration, you can 
 	                        DisplayMode="PreviousNext,Text" />
 {{endregion}}
 
+#### __Figure 2: RadDataPager with Previous, Next buttons and Text Field__
 ![](images/RadDataPager_Features_DisplayModes_02.png)
 
 # See Also

@@ -27,11 +27,22 @@ Here is a list of the supported languages:
 
 Below you may see the resource keys and the strings they are associated with.
 
+#### __Figure 1: Resource keys and respective strings__
+
 ![](images/RadDataPager_Localization.png)
 
 ## Resource Keys
 
 The resources of the control can be localized by using an unique identifier called resource key that is assigned to each localizable string. Below you may find a list of the Resources available and their default values:
 
+Key | Value
+--- | ---
+RadDataPagerEllipsisString | ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RadDataPagerOf  |  of
+RadDataPagerPage | Page
 
-<table> <tr>KeyValue</tr><tr><td>RadDataPagerEllipsisString</td><td>...</td></tr><tr><td>RadDataPagerOf</td><td>of</td></tr><tr><td>RadDataPagerPage</td><td>Page</td></tr></table>
+# See Also
+
+* [Localization]({%slug common-localization%})
+
+* [RadGridView Localization]({%slug gridview-localization2%})

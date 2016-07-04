@@ -22,8 +22,8 @@ By default the __RadUpload__ doesn’t display the selected __RadUploadItems__. 
 
 #### __XAML__
 
-{{region upload-features-selection_0}}
-	<telerikInput:RadUpload x:Name="radUpload" SelectionVisibility="Visible"/>
+{{region xaml-upload-features-selection_0}}
+	<telerik:RadUpload x:Name="radUpload" SelectionVisibility="Visible"/>
 	{{endregion}}
 
 ![](images/upload_single_selection.png)

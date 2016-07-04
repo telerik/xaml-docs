@@ -11,42 +11,31 @@ site_name: Silverlight
 
 # Implement Simple Authentication
 
-
-
-## 
-
 In order to authenticate the user that uploads files on the server-side of your application, you have to validate the user on the client and pass a parameter with his status to the server. To learn more about passing parameters to the Upload Handler read [here]({%slug radupload-features-upload-service-parameters%}).
 
 On the server you have to read the parameter and take the respective actions, depending on its value. There are several things that you have to do in order to achieve a reliable authentication on the server. First you have to override the __SaveChunkData()__ method of the __RadUploadHandler__ class.
 
-#### __C#__
-
-{{region radupload-how-to-implement-simple-authentication_0}}
+#### __[C#] Example 1: Overriding the SaveChunkData method__  
+{{region cs-radupload-how-to-implement-simple-authentication_0}}
 	public override bool SaveChunkData( string filePath, long position, byte[] buffer, int contentLength, out int savedBytes )
 	{
 	    return base.SaveChunkData( filePath, position, buffer, contentLength, out savedBytes );
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB.NET__
-
-{{region radupload-how-to-implement-simple-authentication_1}}
+#### __[VB.NET] Example 1: Overriding the SaveChunkData method__  
+{{region vb-radupload-how-to-implement-simple-authentication_1}}
 	Public Overrides Function SaveChunkData(filePath As String, position As Long, buffer As Byte(), contentLength As Integer, savedBytes As Integer) As Boolean
 	 Return MyBase.SaveChunkData(filePath, position, buffer, contentLength, savedBytes)
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 Then you have to check if the parameter sent by the client indicates whether the user is valid or not. If the user is valid you have to call the base method.
 
->tipTo learn how to work with parameters read [here]({%slug radupload-features-upload-service-parameters%}).
+>tip To learn how to work with parameters read [here]({%slug radupload-features-upload-service-parameters%}).
 
-#### __C#__
-
-{{region radupload-how-to-implement-simple-authentication_2}}
+#### __[C#] Example 2: Authenticate the user__  
+{{region cs-radupload-how-to-implement-simple-authentication_2}}
 	public override bool SaveChunkData( string filePath, long position, byte[] buffer, int contentLength, out int savedBytes )
 	{
 	    string authorized = this.GetQueryParameter("Authorized");
@@ -56,13 +45,10 @@ Then you have to check if the parameter sent by the client indicates whether the
 	    }
 	    return base.SaveChunkData( filePath, position, buffer, contentLength, out savedBytes );
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB.NET__
-
-{{region radupload-how-to-implement-simple-authentication_3}}
+#### __[VB.NET] Example 2: Authenticate the user__  
+{{region vb-radupload-how-to-implement-simple-authentication_3}}
 	Public Overrides Function SaveChunkData(filePath As String, position As Long, buffer As Byte(), contentLength As Integer, savedBytes As Integer) As Boolean
 	 Dim authorized As String = Me.GetQueryParameter("Authorized")
 	 Dim isAuthorized As Boolean = Not String.IsNullOrEmpty(authorized) AndAlso authorized.ToLower() = "true"
@@ -70,15 +56,12 @@ Then you have to check if the parameter sent by the client indicates whether the
 	 End If
 	 Return MyBase.SaveChunkData(filePath, position, buffer, contentLength, savedBytes)
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 If the user is not valid, you have to skip the execution of the base method and return the following set of parameters to the client.
 
-#### __C#__
-
-{{region radupload-how-to-implement-simple-authentication_4}}
+#### __[C#] Example 3: Skipping the chunk saving if the user is not valid__  
+{{region cs-radupload-how-to-implement-simple-authentication_4}}
 	public override bool SaveChunkData( string filePath, long position, byte[] buffer, int contentLength, out int savedBytes )
 	{
 	    string authorized = this.GetQueryParameter( "Authorized" );
@@ -95,13 +78,10 @@ If the user is not valid, you have to skip the execution of the base method and 
 	    }
 	    return base.SaveChunkData( filePath, position, buffer, contentLength, out savedBytes );
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB.NET__
-
-{{region radupload-how-to-implement-simple-authentication_5}}
+#### __[VB.NET] Example 3: Skipping the chunk saving if the user is not valid__  
+{{region vb-radupload-how-to-implement-simple-authentication_5}}
 	Public Overrides Function SaveChunkData(filePath As String, position As Long, buffer As Byte(), contentLength As Integer, savedBytes As Integer) As Boolean
 	 Dim authorized As String = Me.GetQueryParameter("Authorized")
 	 Dim isAuthorized As Boolean = Not String.IsNullOrEmpty(authorized) AndAlso authorized.ToLower() = "true"
@@ -116,18 +96,13 @@ If the user is not valid, you have to skip the execution of the base method and 
 	 End If
 	 Return MyBase.SaveChunkData(filePath, position, buffer, contentLength, savedBytes)
 	End Function
-	{{endregion}}
-
-
+{{endregion}}
 
 Here is a snapshot of the __RadUpload__ control, after an invalid upload attempt.
 
 ![](images/RadUpload_How_To_Simple_Authentication_01.png)
 
-# See Also
-
+## See Also  
  * [Upload Handler]({%slug radupload-features-upload-handler%})
-
  * [Upload Service Parameters]({%slug radupload-features-upload-service-parameters%})
-
  * [Create Custom Upload Handler]({%slug radupload-how-to-create-custom-upload-handler%})

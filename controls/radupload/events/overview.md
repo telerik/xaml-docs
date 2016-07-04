@@ -35,7 +35,7 @@ The __RadUpload__ control raises the following specific events:
 	* The sender argument contains the __RadUpload__. This argument is of type object, but can be cast to the __RadUpload__ type.  
 	* A [FilesSelectedEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_filesselectedeventargs.html) object.  								
 
-* __FileCountExceeded__ - occurs only once, if the number of the selected files exceeds the __MaxFileCount__ value. The additional files are held in the __RadUpload____CurrentSession__.__FilesOverCountCapacity__ collection. The event handler receives two arguments:  
+* __FileCountExceeded__ - occurs only once, if the number of the selected files exceeds the __MaxFileCount__ value. The additional files are held in the __RadUpload CurrentSession.FilesOverCountCapacity__ collection. The event handler receives two arguments:  
 	* The sender argument contains the __RadUpload__. This argument is of type object, but can be cast to the __RadUpload__ type.  
 	* A __RoutedEventArgs__ object.  								
 

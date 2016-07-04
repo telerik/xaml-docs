@@ -35,12 +35,12 @@ The table below lists the values for each level of error correction:
 
 Internally, code PDF417 renders in columns and rows. These rows and columns create a grid, which in turn accommodates all the modules of encoded data. The maximum number of columns in the code is 30, whereas the maximum number of rows is 90. Depending on the scenario, this internal behavior may influence the readability of the control.  To address this, two properties are exposed - __Rows__ and __Columns__. These two properties will allow you to pre-determine the number of rows and columns in the rendered PDF417 code. For example, when you have limited width, you can increase the number of rows. The code sample below demonstrates one possible usage:        
 
-#### __XAML__
-{{region radbarcode_pdf417_properties_0}}
+#### __[XAML] Example 1: PDF417 barcode definition__  
+{{region xaml-radbarcodereader-pdf417-properties-0}}
 	<telerik:RadBarcodePDF417 Text="Encoded data which will influence the rendered PDF417" Rows="10"/>
 {{endregion}}
 
 One thing to keep in mind is that these properties are related to the data, which needs to be encoded. If there is too much data, more rows/columns will be added. If there is insufficient data, not all rows/columns will be used.        
 
-# See Also
+## See Also
  * [PDF417 Visual Stucture]({%slug radbarcode-pdf417-structure%})

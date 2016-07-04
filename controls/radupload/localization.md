@@ -6,7 +6,6 @@ slug: radupload-localization
 tags: localization
 published: True
 position: 8
-position: 3
 site_name: Silverlight
 ---
 

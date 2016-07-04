@@ -48,7 +48,7 @@ Telerik __RadDataPager__ provides the user with a navigation interface to page t
 
 ## Related Videos
 
- In [this video](images/datapager_introduction_video.png) we will look at some of the features and functionality of __RadDataPager__ and how you can start using it in your Silverlight or WPF applications today. (Runtime: 03:01)
+ In the following video we will look at some of the features and functionality of __RadDataPager__ and how you can start using it in your Silverlight or WPF applications today. (Runtime: 03:01)
 
 [![RadDataPager Introduction Video](images/datapager_introduction_video.png)](http://tv.telerik.com/watch/silverlight/introduction-to-raddatapager)
         

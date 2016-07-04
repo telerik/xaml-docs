@@ -38,7 +38,7 @@ After adding references to the aforementioned dlls, you can declare a new __RadD
 
 >To use the __RadDataPager__ in the XAML you have to add the following namespace declaration: __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__ 
 
-#### __[XAML]Example 1: Define RadDataPager__
+#### __[XAML]Example 1: RadDataPager Definition__
 
 {{region raddatapager-getting-started_0}}
 

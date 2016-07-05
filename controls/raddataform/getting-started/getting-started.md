@@ -26,21 +26,17 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 * Add references to the assemblies __Telerik.Windows.Controls__, __Telerik.Windows.Controls.Data__, __Telerik.Windows.Controls.Input__ and __Telerik.Windows.Data__;
 
-* Import the Telerik schema:
-
-#### __[XAML] Example 1: Importing the Telerik Schema__
-
-	{{region xaml-telerik-schemas}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
 * Add the RadDataForm to the Grid:
 
-#### __[XAML] Example 2: Adding RadDataForm in XAML__
+#### __[XAML] Example 1: Adding RadDataForm in XAML__
 
 	{{region xaml-raddataform-getting-started_0}}
-	<telerik:RadDataForm x:Name="RadDataForm1" />
-	{{endregion}}
+	  <UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+	    <Grid x:Name="LayoutRoot" Background="White">
+	      <telerik:RadDataForm x:Name="RadDataForm1" />
+	    </Grid>
+	  </UserControl>
+{{endregion}}
 
 Now if you run the application, you will see the empty RadDataForm:
 
@@ -52,7 +48,7 @@ Now if you run the application, you will see the empty RadDataForm:
 
 Firstly, for the purpose of this tutorial, we will create a new **Employee** class with a couple of exposed properties:
 
-#### __[C#] Example 3: Creating an Employee Class with Some Exposed Properties__
+#### __[C#] Example 2: Creating an Employee Class with Some Exposed Properties__
 
 	{{region cs-raddataform-getting-started_1}}
 	public class Employee 
@@ -96,79 +92,79 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	 }
 	{{endregion}}
 
-#### __[VB.NET] Example 3: Creating an Employee Class with Some Exposed Properties__
+#### __[VB.NET] Example 2: Creating an Employee Class with Some Exposed Properties__
 
 	{{region vb-raddataform-getting-started_1}}
-	Public Class Employee
-	 Public Property FirstName() As String
-	  Get
-	   Return m_FirstName
-	  End Get
-	  Set
-	   m_FirstName = Value
-	  End Set
-	 End Property
-	 Private m_FirstName As String
-	 Public Property LastName() As String
-	  Get
-	   Return m_LastName
-	  End Get
-	  Set
-	   m_LastName = Value
-	  End Set
-	 End Property
-	 Private m_LastName As String
-	 Public Property Occupation() As String
-	  Get
-	   Return m_Occupation
-	  End Get
-	  Set
-	   m_Occupation = Value
-	  End Set
-	 End Property
+	    Public Class Employee
+	        Public Property FirstName() As String
+	            Get
+	                Return m_FirstName
+	            End Get
+	            Set(value As String)
+	                m_FirstName = Value
+	            End Set
+	        End Property
+	        Private m_FirstName As String
+	        Public Property LastName() As String
+	            Get
+	                Return m_LastName
+	            End Get
+	            Set(value As String)
+	                m_LastName = Value
+	            End Set
+	        End Property
+	        Private m_LastName As String
+	        Public Property Occupation() As String
+	            Get
+	                Return m_Occupation
+	            End Get
+	            Set(value As String)
+	                m_Occupation = Value
+	            End Set
+	        End Property
 	        Private m_Occupation As String
-	 Public Property StartingDate() As DateTime
-	  Get
-	   Return m_StartingDate
-	  End Get
-	  Set
-	   m_StartingDate = Value
-	  End Set
-	 End Property
-	 Private m_StartingDate As DateTime
-	 Public Property IsMarried() As Boolean
-	  Get
-	   Return m_IsMarried
-	  End Get
-	  Set
-	   m_IsMarried = Value
-	  End Set
-	 End Property
-	 Private m_IsMarried As Boolean
-	 Public Property Salary() As Integer
-	  Get
-	   Return m_Salary
-	  End Get
-	  Set
-	   m_Salary = Value
-	  End Set
-	 End Property
-	 Private m_Salary As Integer
-	 Public Property Gender() As Gender
-	  Get
-	   Return m_Gender
-	  End Get
-	  Set
-	   m_Gender = Value
-	  End Set
-	 End Property
-	 Private m_Gender As Gender
-	End Class
-	{{endregion}}
+	        Public Property StartingDate() As DateTime
+	            Get
+	                Return m_StartingDate
+	            End Get
+	            Set(value As DateTime)
+	                m_StartingDate = Value
+	            End Set
+	        End Property
+	        Private m_StartingDate As DateTime
+	        Public Property IsMarried() As Boolean
+	            Get
+	                Return m_IsMarried
+	            End Get
+	            Set(value As Boolean)
+	                m_IsMarried = Value
+	            End Set
+	        End Property
+	        Private m_IsMarried As Boolean
+	        Public Property Salary() As Integer
+	            Get
+	                Return m_Salary
+	            End Get
+	            Set(value As Integer)
+	                m_Salary = Value
+	            End Set
+	        End Property
+	        Private m_Salary As Integer
+	        Public Property Gender() As Gender
+	            Get
+	                Return m_Gender
+	            End Get
+	            Set(value As Gender)
+	                m_Gender = Value
+	            End Set
+	        End Property
+	        Private m_Gender As Gender
+	    End Class
+{{endregion}}
 
 In the example above **Gender** is of type enum:
 
-#### __[C#] Example 4: Create Gender Enumeration__
+#### __[C#] Example 3: Create Gender Enumeration__
 
 	{{region cs-raddataform-getting-started_2}}
 	public enum Gender
@@ -178,7 +174,7 @@ In the example above **Gender** is of type enum:
 	 }
 	{{endregion}}
 
-#### __[VB.NET] Example 4: Create Gender Enumeration__
+#### __[VB.NET] Example 3: Create Gender Enumeration__
 
 	{{region vb-raddataform-getting-started_2}}
 	Public Enum Gender
@@ -191,7 +187,7 @@ In the example above **Gender** is of type enum:
 
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to RadDataForm:
 
-#### __[C#] Example 5: Binding a Single Item to RadDataForm__
+#### __[C#] Example 4: Binding a Single Item to RadDataForm__
 
 	{{region cs-raddataform-getting-started_3}}
 	   Employee employee = new Employee() { 
@@ -205,7 +201,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	   this.RadDataForm1.CurrentItem = employee;
 	{{endregion}}
 
-#### __[VB.NET] Example 5: Binding a Single Item to RadDataForm__
+#### __[VB.NET] Example 4: Binding a Single Item to RadDataForm__
 
 	{{region vb-raddataform-getting-started_3}}
         Dim employee As New Employee() With { _
@@ -230,7 +226,7 @@ After you run the application you should see the following:
 
 We will create a simple **EmployeeService** class with a single static method - **GetEmployees()** that will return an **ObservableCollection&lt;Employee&gt;**, containing several hard-coded employees:
 
-#### __[C#] Example 6: Creating an EmployeeService class with a static GetEmployees() method__
+#### __[C#] Example 5: Creating an EmployeeService class with a static GetEmployees() method__
 
 	{{region cs-raddataform-getting-started_4}}
 	public class EmployeeService
@@ -281,7 +277,7 @@ We will create a simple **EmployeeService** class with a single static method - 
 	}
 	{{endregion}}
 
-#### __[VB.NET] Example 6: Creating an EmployeeService class with a static GetEmployees() method__
+#### __[VB.NET] Example 5: Creating an EmployeeService class with a static GetEmployees() method__
 
 	{{region vb-raddataform-getting-started_4}}
 	Public Class EmployeeService
@@ -330,16 +326,16 @@ We will create a simple **EmployeeService** class with a single static method - 
 
 Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 
-#### __[C#] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
+#### __[C#] Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
 	{{region cs-raddataform-getting-started_5}}
 	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
 	{{endregion}}
 
-#### __[VB.NET] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
+#### __[VB.NET] Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
 	{{region vb-raddataform-getting-started_5}}
-	Me.DataForm1.ItemsSource = Employee.GetEmployees()
+	Me.DataForm1.ItemsSource = EmployeeService.GetEmployees()
 	{{endregion}}
 
 On running the application, you should see the following:

@@ -105,7 +105,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 	{{region vb-raddataform-datatemplate-selectors_1}}
 	Public Class EmployeesEditTemplateSelector
-			Inherits System.Windows.Controls.DataTemplateSelector
+			Inherits Telerik.Windows.Controls.DataTemplateSelector
 	
 			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
 				Dim employee As Employee = TryCast(item, Employee)
@@ -128,7 +128,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 #### __[C#] Example 2: Defining a DataTemplateSelector__
 
 	{{region cs-raddataform-datatemplate-selectors_2}}
-		public class EmployeesEditTemplateSelector : Telerik.Windows.Controls.DataTemplateSelector
+		public class EmployeesEditTemplateSelector : System.Windows.Controls.DataTemplateSelector
 		{
 			public override DataTemplate SelectTemplate(object item, DependencyObject container)
 			{
@@ -156,7 +156,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 	{{region vb-raddataform-datatemplate-selectors_2}}
 		Public Class EmployeesEditTemplateSelector
-			Inherits Telerik.Windows.Controls.DataTemplateSelector
+			Inherits System.Windows.Controls.DataTemplateSelector
 	
 			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
 				Dim employee As Employee = TryCast(item, Employee)

@@ -44,27 +44,25 @@ For this purpose you need to create a class which inherits from **DataFormDataFi
 
 	{{region vb-raddataform-defining-custom-datafields_0}}
 	    Public Class DataFormNumericUpDownField
-        Inherits DataFormDataField
-        Protected Overrides Function GetControlBindingProperty() As DependencyProperty
-            Return RadNumericUpDown.ValueProperty
-        End Function
-
-        Protected Overrides Function GetControl() As Control
-            Dim dependencyProperty As DependencyProperty = Me.GetControlBindingProperty()
-            Dim numericUpDown As New RadNumericUpDown()
-            If Me.DataMemberBinding IsNot Nothing Then
-                Dim binding = Me.DataMemberBinding
-                numericUpDown.SetBinding(dependencyProperty, binding)
-            End If
-			numericUpDown.SetBinding(RadNumericUpDown.IsEnabledProperty, New Binding("IsReadOnly") With { _
-				Key .Source = Me, _
-				Key .Converter = New InvertedBooleanConverter() _
-			})
-
-            Return numericUpDown
-        End Function
-    End Class
-	{{endregion}}
+	        Inherits DataFormDataField
+	        Protected Overrides Function GetControlBindingProperty() As DependencyProperty
+	            Return RadNumericUpDown.ValueProperty
+	        End Function
+	        Protected Overrides Function GetControl() As Control
+	            Dim dependencyProperty As DependencyProperty = Me.GetControlBindingProperty()
+	            Dim numericUpDown As New RadNumericUpDown()
+	            If Me.DataMemberBinding IsNot Nothing Then
+	                Dim binding = Me.DataMemberBinding
+	                numericUpDown.SetBinding(dependencyProperty, binding)
+	            End If
+	            numericUpDown.SetBinding(RadNumericUpDown.IsEnabledProperty, New Binding("IsReadOnly") With {
+	                .Source = Me,
+	                .Converter = New InvertedBooleanConverter()
+	            })
+	            Return numericUpDown
+	        End Function
+	    End Class
+{{endregion}}
 
 The next step is to handle RadDataForm's **AutoGeneratingField** event and set the **DataField** to the new **DataFormNumericUpDownField**:
 
@@ -77,26 +75,26 @@ The next step is to handle RadDataForm's **AutoGeneratingField** event and set t
 #### __[C#] Example 3: Handling the AutoGeneratingField event__
 
 	{{region cs-raddataform-defining-custom-datafields_1}}
-	    private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
-			{
-				if (e.DataField.Label.Equals("Number"))
-				{
-					e.DataField = new DataFormNumericUpDownField() {Label = e.DataField.Label, DataMemberBinding = e.DataField.DataMemberBinding };
-				}
-			}
-	{{endregion}}
+	        private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
+	        {
+	            if (e.DataField.Label.Equals("Number"))
+	            {
+	                e.DataField = new DataFormNumericUpDownField() { Label = e.DataField.Label, DataMemberBinding = e.DataField.DataMemberBinding };
+	            }
+	        }
+{{endregion}}
 
 #### __[VB.NET] Example 3: Handling the AutoGeneratingField event__
 
 	{{region vb-raddataform-defining-custom-datafields_1}}
-        Private Sub RadDataForm_AutoGeneratingField(sender As Object, e As Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs)
-            If e.DataField.Label.Equals("Number") Then
-		        e.DataField = New DataFormNumericUpDownField() With { _
-			        Key .Label = e.DataField.Label, _
-			        Key .DataMemberBinding = e.DataField.DataMemberBinding _
-		        }
-            End If
-        End Sub
+		        Private Sub RadDataForm_AutoGeneratingField(sender As Object, e As Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs)
+		            If e.DataField.Label.Equals("Number") Then
+		                e.DataField = New DataFormNumericUpDownField() With {
+		                    .Label = e.DataField.Label,
+		                    .DataMemberBinding = e.DataField.DataMemberBinding
+		                }
+		            End If
+		        End Sub
 	{{endregion}}
 
 And here's how you can use the DataFormNumericUpDownField in XAML:
@@ -110,7 +108,7 @@ And here's how you can use the DataFormNumericUpDownField in XAML:
 	                <StackPanel>
 	                    <telerik:DataFormDataField  Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" />
 	                    <telerik:DataFormDataField  Label="Last Name" DataMemberBinding="{Binding LastName, Mode=TwoWay}" />
-	                    <local:DataFormNumericUpDownField Label="Age" DataMemberBinding="{Binding Age, Mode=TwoWay}" />
+	                    <my:DataFormNumericUpDownField Label="Age" DataMemberBinding="{Binding Age, Mode=TwoWay}" />
 	                </StackPanel>
 	            </DataTemplate>
 	        </Grid.Resources>

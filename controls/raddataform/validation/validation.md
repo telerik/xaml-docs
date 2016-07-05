@@ -25,15 +25,15 @@ For example:
 #### __[C#] Example 1: Handling the ValidatingItem Event__
 
 	{{region cs-raddataform-validation_0}}
-	private void DataForm1_ValidatingItem(object sender, System.ComponentModel.CancelEventArgs e)
-	  {   
-	   var employer = this.DataForm1.CurrentItem as Employee;
-	   if(employer.Salary < 1000)
-	   {
-	    RadWindow.Alert("You have to raise " + employer.LastName + " salary");
-	   }
-	  }
-	{{endregion}}
+	        private void DataForm1_ValidatingItem(object sender, System.ComponentModel.CancelEventArgs e)
+	        {
+	            var employer = this.DataForm1.CurrentItem as Employee;
+	            if (employer.Salary < 1000)
+	            {
+	                RadWindow.Alert("You have to raise " + employer.LastName + " salary");
+	            }
+	        }
+{{endregion}}
 
 #### __[VB.NET] Example 1: Handling the ValidatingItem Event__
 
@@ -55,49 +55,49 @@ Yet another approach applicable when defining custom fields is to specify the va
 #### __[C#] Example 2: Perform the Validation inside the Property Setter__
 
 	{{region cs-raddataform-validation_1}}
-	public DateTime StartingDate
-	  {
-	   get
-	   {
-	    return this.startingDate;
-	   }
-	   set
-	   {
-	    if (value != this.startingDate)
-	    {
-	     if(value > DateTime.Now)
-	     {
-	      throw new ValidationException("Starting date should not be earlier than 2011");
-	     }
-	     else
-	     {
-	      this.startingDate = value;
-	      this.OnPropertyChanged("StartingDate");
-	     }     
-	    }
-	   }
-	  }
-	{{endregion}}
+	        public DateTime StartingDate
+	        {
+	            get
+	            {
+	                return this.startingDate;
+	            }
+	            set
+	            {
+	                if (value != this.startingDate)
+	                {
+	                    if (value > DateTime.Now)
+	                    {
+	                        throw new ValidationException("Starting date should not be earlier than 2011");
+	                    }
+	                    else
+	                    {
+	                        this.startingDate = value;
+	                        this.OnPropertyChanged("StartingDate");
+	                    }
+	                }
+	            }
+	        }
+{{endregion}}
 
 #### __[VB.NET] Example 2: Perform the Validation inside the Property Setter__
 
 	{{region vb-raddataform-validation_1}}
-	Public Property StartingDate() As DateTime
-	 Get
-	  Return Me.startingDate
-	 End Get
-	 Set
-	  If value <> Me.startingDate Then
-	   If value > DateTime.Now Then
-	    Throw New ValidationException("Starting date should not be earlier than 2011")
-	   Else
-	    Me.startingDate = value
-	    Me.OnPropertyChanged("StartingDate")
-	   End If
-	  End If
-	 End Set
-	End Property
-	{{endregion}}
+	        Public Property StartingDate() As DateTime
+	            Get
+	                Return Me.startingDate
+	            End Get
+	            Set(value As DateTime)
+	                If value <> Me.startingDate Then
+	                    If value > DateTime.Now Then
+	                        Throw New ValidationException("Starting date should not be earlier than 2011")
+	                    Else
+	                        Me.startingDate = value
+	                        Me.OnPropertyChanged("StartingDate")
+	                    End If
+	                End If
+	            End Set
+	        End Property
+{{endregion}}
 
 The definition of the DataFormDataField should be like follows:
 

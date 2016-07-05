@@ -71,12 +71,12 @@ Then you have to prepare the RadUpload control for the upload process. The __Pre
 
 Finally, you need to start the upload:
 
-#### __[C#] Example 4: Starting the  upload__  
+#### __[C#] Example 3: Starting the  upload__  
 {{region cs-radupload-how-to-create-custom-upload_4}}
 	this.upload.StartUpload();
 {{endregion}}
 
-#### __[VB.NET] Example 4: Starting the  upload__  
+#### __[VB.NET] Example 3: Starting the  upload__  
 {{region vb-radupload-how-to-create-custom-upload_5}}
 	upload.StartUpload()
 {{endregion}}

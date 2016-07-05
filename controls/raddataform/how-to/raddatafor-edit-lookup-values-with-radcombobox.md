@@ -16,7 +16,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 
 #### __[C#] Example 1: Creating the Person and Country Classes__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_0}}
+	{{region cs-raddatafor-edit-lookup-values-with-radcombobox_0}}
 	public class Person
 	 {
 	  public string FirstName { get; set; }
@@ -33,7 +33,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 
 #### __[VB.NET] Example 1: Creating the Person and Country Classes__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_0}}
+	{{region vb-raddatafor-edit-lookup-values-with-radcombobox_0}}
 	Public Class Person
 	 Public Property FirstName() As String
 	  Get
@@ -90,7 +90,7 @@ Afterwards, we may add the source of the RadDataForm:
 
 #### __[C#] Example 2: Set the ItemsSource__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_1}}
+	{{region cs-raddatafor-edit-lookup-values-with-radcombobox_1}}
 	InitializeComponent();
     List<Person> persons = new List<Person>();
     // A sample list of source objects for the RadDataForm. 
@@ -102,7 +102,7 @@ Afterwards, we may add the source of the RadDataForm:
 
 #### __[VB.NET] Example 2: Set the ItemsSource__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_1}}
+	{{region vb-raddatafor-edit-lookup-values-with-radcombobox_1}}
 	InitializeComponent()
 	Dim persons As New List(Of Person)()
 	' A sample list of source objects for the RadDataForm. 
@@ -130,7 +130,7 @@ Now, in order to edit the lookup values we have to do two things:
 
 #### __[C#] Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_2}}
+	{{region cs-raddatafor-edit-lookup-values-with-radcombobox_2}}
     public class CountriesService
     {
         public static List<Country> GetCountries()
@@ -147,7 +147,7 @@ Now, in order to edit the lookup values we have to do two things:
 
 #### __[VB.NET] Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_2}}
+	{{region vb-raddatafor-edit-lookup-values-with-radcombobox_2}}
 	Public Class CountriesService
         Public Shared Function GetCountries() As List(Of Country)
             Dim countries As New List(Of Country)()
@@ -178,7 +178,7 @@ Now, in order to edit the lookup values we have to do two things:
 
 #### __[C#] Example 4: Handling the AutoGeneratingField Event__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_3}}
+	{{region cs-raddatafor-edit-lookup-values-with-radcombobox_3}}
 	private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
 	  {
 	   if (e.PropertyName == "CountryID")
@@ -196,7 +196,7 @@ Now, in order to edit the lookup values we have to do two things:
 
 #### __[VB.NET] Example 4: Handling the AutoGeneratingField Event__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_3}}
+	{{region vb-raddatafor-edit-lookup-values-with-radcombobox_3}}
         Private Sub RadDataForm_AutoGeneratingField(sender As Object, e As Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs)
             If e.PropertyName = "CountryID" Then
                 e.DataField = New DataFormComboBoxField() With { _
@@ -221,7 +221,7 @@ Figure 1 shows the resulting RadDataForm:
 
 #### __[XAML] Example 5: Defining the Template for ReadOnlyTemplate, EditTemplate and NewItemTemplate__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_4}}
+	{{region xaml-raddatafor-edit-lookup-values-with-radcombobox_4}}
 	<UserControl.Resources>
         <my:MyViewModel x:Key="MyViewModel" />
     </UserControl.Resources>
@@ -262,7 +262,7 @@ In this case the Countries and Persons collections used for the ItemsSources of 
 
 #### __[C#] Example 6: Defining the Countries and Persons Collections in the ViewModel__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_5}}
+	{{region cs-raddatafor-edit-lookup-values-with-radcombobox_5}}
 	public class MyViewModel
     {
         private List<Country> countries;
@@ -302,7 +302,7 @@ In this case the Countries and Persons collections used for the ItemsSources of 
 
 #### __[VB.NET] Example 6: Defining the Countries and Persons Collections in the ViewModel__
 
-	{{region raddatafor-edit-lookup-values-with-radcombobox_5}}
+	{{region vb-raddatafor-edit-lookup-values-with-radcombobox_5}}
 	Public Class MyViewModel
         Private m_countries As List(Of Country)
         Private m_persons As List(Of Person)

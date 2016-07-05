@@ -38,19 +38,19 @@ Once you set the **AutoGenerateFields** property of the RadDataForm to **False**
 
 #### __[C#] Example 1: Disabling the autogeneration of fields__
 
-	{{region raddataform-customized-fields_0}}
+	{{region cs-raddataform-customized-fields_0}}
 	this.DataForm1.AutoGenerateFields = false;
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Disabling the autogeneration of fields__
 
-	{{region raddataform-customized-fields_0}}
+	{{region vb-raddataform-customized-fields_0}}
 	Me.DataForm1.AutoGenerateFields = False
 	{{endregion}}
 
 #### __[XAML] Example 1: Disabling the autogeneration of fields__
 
-	{{region raddataform-customized-fields_1}}
+	{{region xaml-raddataform-customized-fields_1}}
 	<telerik:RadDataForm x:Name="DataForm1" AutoGenerateFields="False" />
 	{{endregion}}
 
@@ -60,7 +60,7 @@ Lets say you have defined the following DataTemplate:
 
 #### __[XAML] Example 2: Definition of a DataTemplate__
 
-	{{region raddataform-customized-fields_2}}
+	{{region xaml-raddataform-customized-fields_2}}
 	<Grid.Resources>
 	  <DataTemplate x:Key="MyTemplate">
 	    <Grid>
@@ -84,7 +84,7 @@ Then you can assign the ReadOnlyTemplate like so:
 
 #### __[XAML] Example 3: Assigning a ReadOnlyTemplate__
 
-	{{region raddataform-customized-fields_3}}
+	{{region xaml-raddataform-customized-fields_3}}
 	 <telerik:RadDataForm AutoGenerateFields="False" 
 	                           ReadOnlyTemplate="{StaticResource MyTemplate}">
 	 </telerik:RadDataForm>
@@ -100,7 +100,7 @@ Similarly you can assign the EditTemplate:
 
 #### __[XAML] Example 3: Assigning an EditTemplate__
 
-	{{region raddataform-customized-fields_4}}
+	{{region xaml-raddataform-customized-fields_4}}
 	  <telerik:RadDataForm AutoGenerateFields="False"
 	                            EditTemplate="{StaticResource MyTemplate}">
 	  </telerik:RadDataForm>
@@ -120,7 +120,7 @@ On the other hand, if you make your mind on displaying quite different controls 
 
 #### __[XAML] Example 4: Using a RadNumericUpDown for editing number values__
 
-	{{region raddataform-customized-fields_5}}
+	{{region xaml-raddataform-customized-fields_5}}
 	<Grid>
 	 <Grid.Resources>
 	  <DataTemplate x:Key="MyTemplate">
@@ -148,7 +148,7 @@ Furthermore, you may customize the data fields as well. For example, a regular *
 
 #### __[XAML] Example 5: Replacing the default field content__
 
-	{{region raddataform-customized-fields_6}}
+	{{region xaml-raddataform-customized-fields_6}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	     <Grid.Resources>
 	          <DataTemplate x:Key="MyTemplate">
@@ -172,7 +172,7 @@ Furthermore, you may customize the data fields as well. For example, a regular *
 
 #### __[XAML] Example 5: Replacing the default field content__
 
-	{{region raddataform-customized-fields_7}}
+	{{region xaml-raddataform-customized-fields_7}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	     <Grid.Resources>
 	          <DataTemplate x:Key="MyTemplate">

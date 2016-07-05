@@ -24,13 +24,13 @@ First we need to include the System.ComponentModel.DataAnnotations namespace:
 
 #### __[C#] Example 1: Including System.ComponentModel.DataAnnotations__
 
-	{{region raddataform-validation-item-level_0}}
+	{{region cs-raddataform-validation-item-level_0}}
 	    using System.ComponentModel.DataAnnotations;
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Including System.ComponentModel.DataAnnotations__
 
-	{{region raddataform-validation-item-level_0}}
+	{{region vb-raddataform-validation-item-level_0}}
 	    Imports System.ComponentModel.DataAnnotations
 	{{endregion}}
 
@@ -38,7 +38,7 @@ Now we can define a simple Employee class with validation attributes.
 
 #### __[C#] Example 2: Creating an Employee class with validation attributes__
 
-	{{region raddataform-validation-item-level_1}}
+	{{region cs-raddataform-validation-item-level_1}}
 	    public class Employee
 	    {
 	        [Required]
@@ -57,7 +57,7 @@ Now we can define a simple Employee class with validation attributes.
 
 #### __[VB.NET] Example 2: Creating an Employee class with validation attributes__
 
-	{{region raddataform-validation-item-level_1}}
+	{{region vb-raddataform-validation-item-level_1}}
 	    Public Class Employee
 	        <Required()> _
 	        Public Property FirstName() As String

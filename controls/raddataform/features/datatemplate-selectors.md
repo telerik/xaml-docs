@@ -18,7 +18,7 @@ For this tutorial we will extend our example from the [Getting Started]({%slug r
 
 #### __[XAML] Example 1: Defining Custom DataTemplateSelector Templates in the EditTemplateSelector__
 
-	{{region raddataform-datatemplate-selectors_0}}
+	{{region xaml-raddataform-datatemplate-selectors_0}}
 			<Grid>
 				<Grid.Resources>
 					<DataTemplate x:Key="MyTemplate">
@@ -76,7 +76,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 #### __[C#] Example 2: Defining a DataTemplateSelector__
 
-	{{region raddataform-datatemplate-selectors_1}}
+	{{region cs-raddataform-datatemplate-selectors_1}}
 		public class EmployeesEditTemplateSelector : System.Windows.Controls.DataTemplateSelector
 		{
 			public override DataTemplate SelectTemplate(object item, DependencyObject container)
@@ -103,7 +103,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 #### __[VB.NET] Example 2: Defining a DataTemplateSelector__
 
-	{{region raddataform-datatemplate-selectors_1}}
+	{{region vb-raddataform-datatemplate-selectors_1}}
 	Public Class EmployeesEditTemplateSelector
 			Inherits System.Windows.Controls.DataTemplateSelector
 	
@@ -127,7 +127,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 #### __[C#] Example 2: Defining a DataTemplateSelector__
 
-	{{region raddataform-datatemplate-selectors_2}}
+	{{region cs-raddataform-datatemplate-selectors_2}}
 		public class EmployeesEditTemplateSelector : Telerik.Windows.Controls.DataTemplateSelector
 		{
 			public override DataTemplate SelectTemplate(object item, DependencyObject container)
@@ -154,7 +154,7 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 #### __[VB.NET] Example 2: Defining a DataTemplateSelector__
 
-	{{region raddataform-datatemplate-selectors_2}}
+	{{region vb-raddataform-datatemplate-selectors_2}}
 		Public Class EmployeesEditTemplateSelector
 			Inherits Telerik.Windows.Controls.DataTemplateSelector
 	

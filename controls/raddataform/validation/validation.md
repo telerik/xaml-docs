@@ -24,7 +24,7 @@ For example:
 
 #### __[C#] Example 1: Handling the ValidatingItem Event__
 
-	{{region raddataform-validation_0}}
+	{{region cs-raddataform-validation_0}}
 	private void DataForm1_ValidatingItem(object sender, System.ComponentModel.CancelEventArgs e)
 	  {   
 	   var employer = this.DataForm1.CurrentItem as Employee;
@@ -37,7 +37,7 @@ For example:
 
 #### __[VB.NET] Example 1: Handling the ValidatingItem Event__
 
-	{{region raddataform-validation_0}}
+	{{region vb-raddataform-validation_0}}
     Private Sub DataForm1_ValidatingItem(sender As Object, e As System.ComponentModel.CancelEventArgs)
         Dim employer = TryCast(Me.DataForm1.CurrentItem, Employee)
         If employer.Salary < 1000 Then
@@ -54,7 +54,7 @@ Yet another approach applicable when defining custom fields is to specify the va
 
 #### __[C#] Example 2: Perform the Validation inside the Property Setter__
 
-	{{region raddataform-validation_1}}
+	{{region cs-raddataform-validation_1}}
 	public DateTime StartingDate
 	  {
 	   get
@@ -81,7 +81,7 @@ Yet another approach applicable when defining custom fields is to specify the va
 
 #### __[VB.NET] Example 2: Perform the Validation inside the Property Setter__
 
-	{{region raddataform-validation_1}}
+	{{region vb-raddataform-validation_1}}
 	Public Property StartingDate() As DateTime
 	 Get
 	  Return Me.startingDate
@@ -103,7 +103,7 @@ The definition of the DataFormDataField should be like follows:
 
 #### __[XAML] Example 3: Defining the DataFormDataField__
 
-	{{region raddataform-validation_2}}
+	{{region xaml-raddataform-validation_2}}
 	<telerik:DataFormDateField Label="Starting date" DataMemberBinding="{Binding StartingDate, Mode=TwoWay, ValidatesOnExceptions=True, NotifyOnValidationError=True}"/>
 	{{endregion}}
 

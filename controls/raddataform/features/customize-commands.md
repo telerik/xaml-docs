@@ -22,7 +22,7 @@ The methods listed below identify the logic that is executed when a certain comm
 
 #### __[C#] Example 1: The IExecuteLogicMethods__
 
-	{{region raddataform-customize-commands_0}}
+	{{region cs-raddataform-customize-commands_0}}
     public interface IExecuteLogicMethods
     {
         void MoveCurrentToFirst();
@@ -39,7 +39,7 @@ The methods listed below identify the logic that is executed when a certain comm
 
 #### __[VB.NET] Example 1: The IExecuteLogicMethods__
 
-	{{region raddataform-customize-commands_0}}
+	{{region vb-raddataform-customize-commands_0}}
     Public Interface IExecuteLogicMethods
         Sub MoveCurrentToFirst()
         Sub MoveCurrentToLast()
@@ -59,7 +59,7 @@ With the help of those methods you can identify whether a certain command can be
 
 #### __[C#] Example 2: The ICanExecuteLogicMethods__
 
-	{{region raddataform-customize-commands_1}}
+	{{region cs-raddataform-customize-commands_1}}
     public interface ICanExecuteLogicMethods
     {
         bool CanMoveCurrentToFirstExecute();
@@ -76,7 +76,7 @@ With the help of those methods you can identify whether a certain command can be
 
 #### __[VB.NET] Example 2: The ICanExecuteLogicMethods__
 
-	{{region raddataform-customize-commands_1}}
+	{{region vb-raddataform-customize-commands_1}}
     Public Interface ICanExecuteLogicMethods
         Function CanMoveCurrentToFirstExecute() As Boolean
         Function CanMoveCurrentToLastExecute() As Boolean
@@ -100,7 +100,7 @@ The first step is to create your own class that inherits from **DataFormCommandP
 
 #### __[C#] Example 3: Defining a Custom CommandProvider__
 
-	{{region raddataform-customize-commands_2}}
+	{{region cs-raddataform-customize-commands_2}}
 	public class CustomCommandProvider : DataFormCommandProvider
 	{
 		public CustomCommandProvider() : base(null)
@@ -118,7 +118,7 @@ The first step is to create your own class that inherits from **DataFormCommandP
 
 #### __[VB.NET] Example 3: Defining a Custom CommandProvider__
 
-	{{region raddataform-customize-commands_2}}
+	{{region vb-raddataform-customize-commands_2}}
     Public Class CustomCommandProvider
         Inherits DataFormCommandProvider
         Public Sub New()
@@ -141,7 +141,7 @@ We aim at changing their execution logic, in order to start editing the item, as
 
 #### __[C#] Example 4: Customizing MoveCurrentToNext and MoveCurrentToPrevious__
 
-	{{region raddataform-customize-commands_3}}
+	{{region cs-raddataform-customize-commands_3}}
 	protected override void MoveCurrentToNext()
 	{
 		if (this.DataForm != null)
@@ -163,7 +163,7 @@ We aim at changing their execution logic, in order to start editing the item, as
 
 #### __[VB.NET] Example 4: Customizing MoveCurrentToNext and MoveCurrentToPrevious__
 
-	{{region raddataform-customize-commands_3}}
+	{{region vb-raddataform-customize-commands_3}}
     Protected Overrides Sub MoveCurrentToNext()
         If Me.DataForm IsNot Nothing Then
             Me.DataForm.MoveCurrentToNext()
@@ -185,7 +185,7 @@ A common requirement for data form is to add __confirmation message boxes when C
 
 #### __[C#] Example 5: Customizing CommitEdit and CancelEdit__
 
-	{{region raddataform-customize-commands_4}}
+	{{region cs-raddataform-customize-commands_4}}
 	protected override void CommitEdit()
 	{
 		MessageBoxResult result = MessageBox.Show("Commit changes for the current edit item?", "CommitEdit confirmation", MessageBoxButton.OKCancel);
@@ -213,7 +213,7 @@ A common requirement for data form is to add __confirmation message boxes when C
 
 #### __[VB.NET] Example 5: Customizing CommitEdit and CancelEdit__
 
-	{{region raddataform-customize-commands_4}}
+	{{region vb-raddataform-customize-commands_4}}
     Protected Overrides Sub CommitEdit()
         Dim result As MessageBoxResult = MessageBox.Show("Commit changes for the current edit item?", "CommitEdit confirmation", MessageBoxButton.OKCancel)
         If result = MessageBoxResult.OK Then
@@ -238,7 +238,7 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 
 #### __[XAML] Example 6: Set the CommandProvider Property__
 
-	{{region raddataform-customize-commands_6}}
+	{{region xaml-raddataform-customize-commands_6}}
     <Grid.Resources>
         <my:CustomCommandProvider x:Key="CustomProvider"/>
     </Grid.Resources>
@@ -250,12 +250,12 @@ The last thing to be done is to set CommandProvider Property of the RadDataForm 
 
 #### __[C#] Example 6: Set the CommandProvider Property__
 
-	{{region raddataform-customize-commands_5}}
+	{{region cs-raddataform-customize-commands_5}}
 	this.RadDataForm1.CommandProvider = new CustomCommandProvider(this.RadDataForm1);
 	{{endregion}}
 
 #### __[VB.NET] Example 6: Set the CommandProvider Property__
 
-	{{region raddataform-customize-commands_5}}
+	{{region vb-raddataform-customize-commands_5}}
 	Me.RadDataForm1.CommandProvider = New CustomCommandProvider(Me.RadDataForm1)
 	{{endregion}}

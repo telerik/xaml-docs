@@ -16,13 +16,13 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 
 #### __[C#] Example 1: Adding event handler for the SelectionChanged event__
 
-	{{region raddataform-howto-selectionchanged-comboboxfield_1}}
+	{{region cs-raddataform-howto-selectionchanged-comboboxfield_1}}
 	    this.AddHandler(RadComboBox.SelectionChangedEvent, new System.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Adding event handler for the SelectionChanged event__
 
-	{{region raddataform-howto-selectionchanged-comboboxfield_1}}
+	{{region vb-raddataform-howto-selectionchanged-comboboxfield_1}}
 	    AddHandler RadComboBox.SelectionChangedEvent, AddressOf OnSelectionChanged
 	{{endregion}}
 
@@ -32,7 +32,7 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 
 #### __[C#] Example 2: Check if any items were unselected__
 
-	{{region raddataform-howto-selectionchanged-comboboxfield_2}}
+	{{region cs-raddataform-howto-selectionchanged-comboboxfield_2}}
 	    private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
 	    {
 	        if (e.RemovedItems.Count > 0)
@@ -44,7 +44,7 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 
 #### __[VB.NET] Example 2: Check if any items were unselected__
 
-	{{region raddataform-howto-selectionchanged-comboboxfield_2}}
+	{{region vb-raddataform-howto-selectionchanged-comboboxfield_2}}
 	    Private Sub OnSelectionChanged(sender As Object, e As SelectionChangedEventArgs)
             'your code here
             If e.RemovedItems.Count > 0 Then

@@ -30,7 +30,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 #### __[XAML] Example 1: Importing the Telerik Schema__
 
-	{{region telerik-schemas}}
+	{{region xaml-telerik-schemas}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	{{endregion}}
 
@@ -38,7 +38,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 #### __[XAML] Example 2: Adding RadDataForm in XAML__
 
-	{{region raddataform-getting-started_0}}
+	{{region xaml-raddataform-getting-started_0}}
 	<telerik:RadDataForm x:Name="RadDataForm1" />
 	{{endregion}}
 
@@ -54,7 +54,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 
 #### __[C#] Example 3: Creating an Employee Class with Some Exposed Properties__
 
-	{{region raddataform-getting-started_1}}
+	{{region cs-raddataform-getting-started_1}}
 	public class Employee 
 	 {  
 	  public string FirstName
@@ -98,7 +98,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 
 #### __[VB.NET] Example 3: Creating an Employee Class with Some Exposed Properties__
 
-	{{region raddataform-getting-started_1}}
+	{{region vb-raddataform-getting-started_1}}
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -170,7 +170,7 @@ In the example above **Gender** is of type enum:
 
 #### __[C#] Example 4: Create Gender Enumeration__
 
-	{{region raddataform-getting-started_2}}
+	{{region cs-raddataform-getting-started_2}}
 	public enum Gender
 	 {
 	  Female,
@@ -180,7 +180,7 @@ In the example above **Gender** is of type enum:
 
 #### __[VB.NET] Example 4: Create Gender Enumeration__
 
-	{{region raddataform-getting-started_2}}
+	{{region vb-raddataform-getting-started_2}}
 	Public Enum Gender
 	 Female
 	 Male
@@ -193,7 +193,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 #### __[C#] Example 5: Binding a Single Item to RadDataForm__
 
-	{{region raddataform-getting-started_3}}
+	{{region cs-raddataform-getting-started_3}}
 	   Employee employee = new Employee() { 
 			FirstName = "Sarah", 
 			LastName = "Blake", 
@@ -207,7 +207,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 #### __[VB.NET] Example 5: Binding a Single Item to RadDataForm__
 
-	{{region raddataform-getting-started_3}}
+	{{region vb-raddataform-getting-started_3}}
         Dim employee As New Employee() With { _
          .FirstName = "Sarah", _
          .LastName = "Blake", _
@@ -232,7 +232,7 @@ We will create a simple **EmployeeService** class with a single static method - 
 
 #### __[C#] Example 6: Creating an EmployeeService class with a static GetEmployees() method__
 
-	{{region raddataform-getting-started_4}}
+	{{region cs-raddataform-getting-started_4}}
 	public class EmployeeService
 	{
 	  public static ObservableCollection<Employee> GetEmployees()
@@ -283,7 +283,7 @@ We will create a simple **EmployeeService** class with a single static method - 
 
 #### __[VB.NET] Example 6: Creating an EmployeeService class with a static GetEmployees() method__
 
-	{{region raddataform-getting-started_4}}
+	{{region vb-raddataform-getting-started_4}}
 	Public Class EmployeeService
 	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	  Dim employees As New ObservableCollection(Of Employee)()
@@ -332,13 +332,13 @@ Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 
 #### __[C#] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
-	{{region raddataform-getting-started_5}}
+	{{region cs-raddataform-getting-started_5}}
 	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
 	{{endregion}}
 
 #### __[VB.NET] Example 7: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
-	{{region raddataform-getting-started_5}}
+	{{region vb-raddataform-getting-started_5}}
 	Me.DataForm1.ItemsSource = Employee.GetEmployees()
 	{{endregion}}
 

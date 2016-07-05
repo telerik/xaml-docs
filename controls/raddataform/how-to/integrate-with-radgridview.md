@@ -16,7 +16,7 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 
 #### __[C#] Example 1: Creating an Employee class that implements INotifyPropertyChanged__
 
-	{{region raddataform-integrate-with-radgridview_0}}
+	{{region cs-raddataform-integrate-with-radgridview_0}}
 	public class Employee : INotifyPropertyChanged
 	 {  
 	  public event PropertyChangedEventHandler PropertyChanged;
@@ -134,7 +134,7 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 
 #### __[VB.NET] Example 1: Creating an Employee class that implements INotifyPropertyChanged__
 
-	{{region raddataform-integrate-with-radgridview_0}}
+	{{region vb-raddataform-integrate-with-radgridview_0}}
 	Public Class Employee
         Implements INotifyPropertyChanged
         Public Event PropertyChanged As PropertyChangedEventHandler
@@ -264,7 +264,7 @@ The definition of the of the RadGridView may be as follows:
 
 #### __[XAML] Example 2: Defining the RadGridView__
 
-	{{region raddataform-integrate-with-radgridview_1}}
+	{{region xaml-raddataform-integrate-with-radgridview_1}}
 	<telerik:RadGridView x:Name="RadGridView1" IsReadOnly="True" ItemsSource="{Binding Employees}" 
 	                             CanUserFreezeColumns="False" RowIndicatorVisibility="Collapsed" 
 	                             Height="500"  Width="700"
@@ -281,13 +281,13 @@ Afterwards, all you have to do is to set the ItemsSource of the grid:
 
 #### __[C#] Example 3: Setting the RadGridView's ItemsSource__
 
-	{{region raddataform-integrate-with-radgridview_2}}
+	{{region cs-raddataform-integrate-with-radgridview_2}}
 	this.RadGridView1.ItemsSource = Employee.GetEmployees();
 	{{endregion}}
 
 #### __[VB.NET] Example 3: Setting the RadGridView's ItemsSource__
 
-	{{region raddataform-integrate-with-radgridview_2}}
+	{{region vb-raddataform-integrate-with-radgridview_2}}
 	Me.RadGridView1.ItemsSource = Employee.GetEmployees()
 	{{endregion}}
 

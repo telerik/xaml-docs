@@ -47,7 +47,7 @@ The class responsible for customizing the keyboard navigation should to be simil
 
 #### __[C#] Example 1: Creating a custom KeyboardCommandProvider__
 
-	{{region raddataform-features-keyboard-support_0}}
+	{{region cs-raddataform-features-keyboard-support_0}}
 	    public class CustomKeyboardCommandProvider : DataFormCommandProvider
 	    {
 	        public CustomKeyboardCommandProvider()
@@ -88,7 +88,7 @@ The class responsible for customizing the keyboard navigation should to be simil
 
 #### __[VB.NET] Example 1: Creating a custom KeyboardCommandProvider__
 
-	{{region raddataform-features-keyboard-support_0}}
+	{{region vb-raddataform-features-keyboard-support_0}}
 	    Public Class CustomKeyboardCommandProvider
         Inherits DataFormCommandProvider
         Public Sub New()
@@ -134,7 +134,7 @@ The last thing to be done is to set the CommandProvider property of the RadDataF
 
 #### __[XAML] Example 2: Set the CommandProvider property__
 
-	{{region raddataform-features-keyboard-support_1}}
+	{{region xaml-raddataform-features-keyboard-support_1}}
 	    <Grid.Resources>
             <my:CustomKeyboardCommandProvider x:Key="CustomProvider"/>
         </Grid.Resources>
@@ -147,13 +147,13 @@ The last thing to be done is to set the CommandProvider property of the RadDataF
 
 #### __[C#] Example 2: Set the CommandProvider property__
 
-	{{region raddataform-features-keyboard-support_2}}
+	{{region cs-raddataform-features-keyboard-support_2}}
 	    this.RadDataForm1.CommandProvider = new CustomKeyboardCommandProvider(this.RadDataForm1);
 	{{endregion}}
 
 #### __[VB.NET] Example 2: Set the CommandProvider property__
 
-	{{region raddataform-features-keyboard-support_2}}
+	{{region vb-raddataform-features-keyboard-support_2}}
 	    Me.RadDataForm1.CommandProvider = New CustomKeyboardCommandProvider(Me.RadDataForm1)
 	{{endregion}}
 
@@ -163,7 +163,7 @@ As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation
 
 #### __[C#] Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
-	{{region raddataform-features-keyboard-support_3}}
+	{{region cs-raddataform-features-keyboard-support_3}}
     public class NoBuiltInNavigationKeyboardCommandProvider : DataFormCommandProvider
     {
         public NoBuiltInNavigationKeyboardCommandProvider()
@@ -183,7 +183,7 @@ As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation
 
 #### __[VB.NET] Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
-	{{region raddataform-features-keyboard-support_3}}
+	{{region vb-raddataform-features-keyboard-support_3}}
     Public Class NoBuiltInNavigationKeyboardCommandProvider
         Inherits DataFormCommandProvider
         Public Sub New()
@@ -205,7 +205,7 @@ As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __Data
 
 #### __[C#] Example 4: Setting the ShouldProcessHandledEvents to False__
 
-	{{region raddataform-features-keyboard-support_4}}
+	{{region cs-raddataform-features-keyboard-support_4}}
     public class ProcessHandledEventsKeyboardCommandProvider : DataFormCommandProvider
     {
         public ProcessHandledEventsKeyboardCommandProvider()
@@ -225,7 +225,7 @@ As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __Data
 
 #### __[VB.NET] Example 4: Setting the ShouldProcessHandledEvents to False__
 
-	{{region raddataform-features-keyboard-support_4}}
+	{{region vb-raddataform-features-keyboard-support_4}}
     Public Class ProcessHandledEventsKeyboardCommandProvider
         Inherits DataFormCommandProvider
         Public Sub New()

@@ -41,7 +41,7 @@ If you want to pass parameters, that are specific to the file and will be sent w
 	                   FileUploadStarting="radUpload_FileUploadStarting" />
 {{endregion}}
 
-#### __[C#] Example 3: Implementing the the FileUploadStarting event handler__  
+#### __[C#] Example 3: Implementing the FileUploadStarting event handler__  
 {{region cs-radupload-features-upload-service-parameters_3}}
 	private void radUpload_FileUploadStarting( object sender, FileUploadStartingEventArgs e )
 	{
@@ -49,7 +49,7 @@ If you want to pass parameters, that are specific to the file and will be sent w
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 3: Implementing the the FileUploadStarting event handler__  
+#### __[VB.NET] Example 3: Implementing the FileUploadStarting event handler__  
 {{region vb-radupload-features-upload-service-parameters_4}}
 	Private Sub radUpload_FileUploadStarting(sender As Object, e As FileUploadStartingEventArgs)
 		e.FileParameters.Add("MyFileParameter", "MyFileValue")

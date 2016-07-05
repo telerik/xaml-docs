@@ -31,7 +31,7 @@ In order to run the __RadUpload__ in Medium Trust level you should do only one t
 		</system.WebServer>
 	{{endregion}}
 
-3. Now you can configure your web site (or the whole web server) to run in Medium Trust level. Of course you can script by hand the command for Medium Trust level (see row 66 in the picture bellow);
+3. Now you can configure your web site (or the whole web server) to run in Medium Trust level. Of course you can script by hand the command for Medium Trust level (see row 66 in the picture below);
 
 	![](images/RadUpload_How_To_Medium_Trust_01.png)
 

@@ -22,7 +22,7 @@ You can use this property to get or set the current page of the __RadDataPager__
 Before getting to the XAML code for the example you'll have to create a converter for the __PageIndex__. Its purpose is to synchronize the index with the logical page number.
 
 #### __[C#]Example 1: Define Converter for the PageIndex property__
-{{region raddatapager-features-current-page_0}}
+{{region cs-raddatapager-features-current-page_0}}
 
 	public class IndexToNumberConverter : IValueConverter
 	{
@@ -40,7 +40,7 @@ Before getting to the XAML code for the example you'll have to create a converte
 
 
 #### __[VB.NET]Example 1: Define Converter for the PageIndex property__
-{{region raddatapager-features-current-page_1}}
+{{region vb-raddatapager-features-current-page_1}}
 
 	Public Class IndexToNumberConverter
 	 Implements IValueConverter
@@ -58,7 +58,7 @@ Before getting to the XAML code for the example you'll have to create a converte
 Here is the XAML for the example.
 
 #### __[XAML]Example 2: Set RadDataPager`s PageIndex__
-{{region raddatapager-features-current-page_2}}
+{{region xaml-raddatapager-features-current-page_2}}
 
 	<Grid x:Name="LayoutRoot"
 	        Background="White">

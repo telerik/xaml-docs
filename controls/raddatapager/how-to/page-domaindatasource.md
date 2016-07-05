@@ -31,7 +31,7 @@ If you are using the __WCF RIA Services__ and the __DomainDataSource,__ you prob
 [IPagedCollectionView](http://msdn.microsoft.com/en-us/library/system.componentmodel.ipagedcollectionview%28VS.95%29.aspx) is among them which lets you do the whole paging in the server. To do that add a [DomainDataSource](http://msdn.microsoft.com/en-us/library/system.windows.controls.domaindatasource%28VS.91%29.aspx) control to your page/window and connect the items control and the pager to it. Here you can see how to do this:
 
 #### __XAML__
-{{region raddatapager-how-to-page-domaindatasource_0}}
+{{region xaml-raddatapager-how-to-page-domaindatasource_0}}
 
 	<riaControls:DomainDataSource x:Name="invoicesDataSource"
 	                              AutoLoad="True"

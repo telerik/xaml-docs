@@ -29,7 +29,7 @@ The __AutoEllipsis__ appears when the __PageCount__ is greater than the __Numeri
 __Example 1__ shows a __RadDataPager__ control with an __AutoEllipsisMode__ set to __Both__.
 
 #### __[XAML]Example 1: Set RadDataPager`s AutoEllipsisMode__
-{{region raddatapager-features-auto-ellipsis_0}}	
+{{region xaml-raddatapager-features-auto-ellipsis_0}}	
 
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="3"

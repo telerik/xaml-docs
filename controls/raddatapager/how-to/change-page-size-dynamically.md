@@ -17,7 +17,7 @@ So, if for example you want to use a __RadComboBox__ for changing the size and y
 * Define an __IValueConverter__ responsible for adding items in the __RadComboBox__ depending on the number of data items in __RadGridView__:
 
 #### __[C#]Example 1: Declare a Count Converter__
-{{region raddatapager-change-page-size-dynamically_0}}
+{{region cs-raddatapager-change-page-size-dynamically_0}}
 
 	public class CountConverter : IValueConverter
 	 {
@@ -46,7 +46,7 @@ So, if for example you want to use a __RadComboBox__ for changing the size and y
 
 
 #### __[VB.NET]Example 1: Declare a Count Converter__
-{{region raddatapager-change-page-size-dynamically_1}}
+{{region vb-raddatapager-change-page-size-dynamically_1}}
 
 	Public Class CountConverter
 	 Implements IValueConverter
@@ -73,7 +73,7 @@ So, if for example you want to use a __RadComboBox__ for changing the size and y
 * Predefine the template of the __RadDataPager__ and bind the __SelectedValue__ of the __RadComboBox__ to the __PageSize__ property of the __RadDataPager__:
 
 #### __[XAML]Example 2: Predefine RadDataPager`s template__
-{{region raddatapager-change-page-size-dynamically_2}}
+{{region xaml-raddatapager-change-page-size-dynamically_2}}
 
 	<StackPanel Grid.Column="1" Margin="5,0" Orientation="Horizontal" Visibility="{Binding PagerControlsVisibility.TextControlVisibility, RelativeSource={RelativeSource TemplatedParent}}">
 	          <telerik:RadComboBox ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource countConverter}}" SelectedValue="{Binding PageSize, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" x:Name="radComboBox" />  
@@ -85,7 +85,7 @@ So, if for example you want to use a __RadComboBox__ for changing the size and y
 * Set the updates style to the __RadDataPager__:
 
 #### __[XAML]Example 3: Apply the style to the RadDataPager__
-{{region raddatapager-change-page-size-dynamically_3}}
+{{region xaml-raddatapager-change-page-size-dynamically_3}}
 
 	<Grid x:Name="LayoutRoot" DataContext="{Binding Source={StaticResource SampleDataSource}}">
 	    <Grid.RowDefinitions>

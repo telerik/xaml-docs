@@ -15,7 +15,7 @@ While developing an UI, which contains paging, you might want to ensure that the
 __Example 1__ shows a __RadDataPager__ that invokes a __MessageBox__ before changing the page when a condition is met.
 
 #### __[XAML]Example 1: RadDataPager with MessageBox confirmation__
-{{region raddatapager-how-to-interact-with-with-user-before-page-changes_0}}
+{{region xaml-raddatapager-how-to-interact-with-with-user-before-page-changes_0}}
 
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        Grid.Row="1"
@@ -26,7 +26,7 @@ __Example 1__ shows a __RadDataPager__ that invokes a __MessageBox__ before chan
 {{endregion}}
 
 #### __[C#]Example 1: RadDataPager with MessageBox confirmation__
-{{region raddatapager-how-to-interact-with-with-user-before-page-changes_1}}
+{{region cs-raddatapager-how-to-interact-with-with-user-before-page-changes_1}}
 
 	private bool myCondition;
 	private void radDataPager_PageIndexChanging( object sender, PageIndexChangingEventArgs e )
@@ -44,7 +44,7 @@ __Example 1__ shows a __RadDataPager__ that invokes a __MessageBox__ before chan
 
 
 #### __[VB.NET]Example 1: RadDataPager with MessageBox confirmation__
-{{region raddatapager-how-to-interact-with-with-user-before-page-changes_2}}
+{{region vb-raddatapager-how-to-interact-with-with-user-before-page-changes_2}}
 
 	Private myCondition As Boolean
 	Private Sub radDataPager_PageIndexChanging(sender As Object, e As PageIndexChangingEventArgs)

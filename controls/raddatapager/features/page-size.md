@@ -16,7 +16,7 @@ The __RadDataPager__ splits the data into separate pages with a certain size. In
 
 #### __[XAML]Example 1: Set RadDataPager`s PageSize__
 
-{{region raddatapager-features-page-size_0}}
+{{region xaml-raddatapager-features-page-size_0}}
 
 
 		<telerik:RadDataPager x:Name="radDataPager"

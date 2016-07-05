@@ -27,7 +27,7 @@ If you look at the constructors of [PagedCollectionView](http://msdn.microsoft.c
 Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) which is the source for an [ItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol.aspx). __Example 1__ shows how to wrap it in order to enable paging with __RadDataPager__.
 
 #### __[C#]Example 1: Apply PagedCollectionView wrapper over IEnumerable collection:__
-{{region raddatapager-features-source-and-paged-source_0}}
+{{region cs-raddatapager-features-source-and-paged-source_0}}
 
 	IEnumerable itemsSource = Enumerable.Range(0, 1000);
 	var pagedSource = new PagedCollectionView(itemsSource);
@@ -36,7 +36,7 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 {{endregion}}
 
 #### __[VB.NET]Example 1: Apply PagedCollectionView wrapper over IEnumerable collection:__
-{{region raddatapager-features-source-and-paged-source_1}}
+{{region vb-raddatapager-features-source-and-paged-source_1}}
 
 	Dim itemsSource As IEnumerable = Enumerable.Range(0, 1000)
 	Dim pagedSource = New PagedCollectionView(itemsSource)
@@ -45,7 +45,7 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 {{endregion}}
 
 #### __[C#]Example 2: Apply QueryableCollectionView wrapper over IEnumerable collection:__
-{{region raddatapager-features-source-and-paged-source_2}}
+{{region cs-raddatapager-features-source-and-paged-source_2}}
 
 	IEnumerable itemsSource = Enumerable.Range(0, 1000);
 	var pagedSource = new QueryableCollectionView(itemsSource);
@@ -54,7 +54,7 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 {{endregion}}
 
 #### __[VB.NET]Example 2: Apply QueryableCollectionView wrapper over IEnumerable collection:__
-{{region raddatapager-features-source-and-paged-source_3}}
+{{region vb-raddatapager-features-source-and-paged-source_3}}
 
 	Dim itemsSource As IEnumerable = Enumerable.Range(0, 1000)
 	Dim pagedSource = New QueryableCollectionView(itemsSource)
@@ -66,7 +66,7 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 >The __QueryableCollectionView__ class is defined in the __Telerik.Windows.Data__ namespace so make sure to include it in your page (via the __Using__ or __Import__ statements).
 
 #### __[XAML]Example 3: Definition of RadDataPager__
-{{region raddatapager-features-source-and-paged-source_4}}
+{{region xaml-raddatapager-features-source-and-paged-source_4}}
 
 	<ListBox Name="itemsControl"/>
 	<telerikGrid:RadDataPager Name="radDataPager"
@@ -82,7 +82,7 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 In case you do not like the first approach there is a better one. When you assign an [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) as the __Source__ of a [RadDataPager](http://www.telerik.com/help/silverlight/radgridview-paging-using-telerik-raddatapager.html) it will automatically wrap it in a {% if site.site_name == 'Silverlight' %}[QueryableCollectionView](http://www.telerik.com/help/silverlight/t_telerik_windows_data_queryablecollectionview.html){% endif %}{% if site.site_name == 'WPF' %}[QueryableCollectionView](http://www.telerik.com/help/wpf/t_telerik_windows_data_queryablecollectionview.html){% endif %} and expose it through its __PagedSource__ property. From then on, you can attach any number of __ItemsControls__ to the __PagedSource__ and they will be automatically paged. Here is how to do this entirely in XAML. 
 
 #### __[XAML]Example 4: Binding to the PagedSource property of RadDataPager__
-{{region raddatapager-features-source-and-paged-source_5}}
+{{region xaml-raddatapager-features-source-and-paged-source_5}}
 
 	<ListBox Name="itemsControl"
 	         ItemsSource="{Binding PagedSource, ElementName=radDataPager}"/>

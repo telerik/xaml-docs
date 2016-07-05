@@ -18,7 +18,7 @@ The infinite paging is controlled by the __IsTotalItemCountFixed__ property. Its
 
 #### __[XAML]Example 1: Set IsTotalItemCountFixed property of RadDataPager__
 
-{{region raddatapager-features-infinite-paging_0}}
+{{region xaml-raddatapager-features-infinite-paging_0}}
 
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="5"

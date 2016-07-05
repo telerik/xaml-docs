@@ -59,7 +59,7 @@ __Example 1__ shows how to set up a __RadDataPager__ that displays the previous,
 
 #### __[XAML]Example 1: Set RadDataPager`s DisplayMode__
 
-{{region raddatapager-features-display-modes_0}}
+{{region xaml-raddatapager-features-display-modes_0}}
 
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="5"
@@ -73,7 +73,7 @@ If the combination of visual elements doesn't exist in the enumeration, you can 
 
 #### __[XAML]Example 2: Set RadDataPager`s DisplayMode__
 
-{{region raddatapager-features-display-modes_1}}
+{{region xaml-raddatapager-features-display-modes_1}}
 
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="5"

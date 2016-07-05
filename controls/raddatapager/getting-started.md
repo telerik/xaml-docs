@@ -40,7 +40,7 @@ After adding references to the aforementioned dlls, you can declare a new __RadD
 
 #### __[XAML]Example 1: RadDataPager Definition__
 
-{{region raddatapager-getting-started_0}}
+{{region xaml-raddatapager-getting-started_0}}
 
 	<telerik:RadDataPager x:Name="radDataPager" />
 {{endregion}}
@@ -68,7 +68,7 @@ After that, you create your __RadDataPager__ and bind its __RadDataPager.Source_
 
 #### __[XAML]Example 2: RadGridView and RadDataPager integration__
 
-{{region raddatapager-getting-started_7}}
+{{region xaml-raddatapager-getting-started_7}}
 
 	<Grid x:Name="LayoutRoot"
 	        Background="White">    
@@ -110,7 +110,7 @@ Create your __RadDataPager__ and make some basic configurations to it.
 
 #### __[XAML]Example 3: Paging a collection__
 
-	{{region raddatapager-getting-started_3}}
+	{{region xaml-raddatapager-getting-started_3}}
 	<telerik:RadDataPager x:Name="radDataPager"
 	                      PageSize="5" 
 	                      Source="{Binding Clubs}"/>
@@ -129,7 +129,7 @@ The paged collection inside the __RadDataPager__ can be accessed via the __Paged
 
 #### __[XAML]Example 4: Expose collection through RadDataPager__
 
-{{region raddatapager-getting-started_6}}
+{{region xaml-raddatapager-getting-started_6}}
 
 	<Grid x:Name="LayoutRoot"
 	        Background="White">

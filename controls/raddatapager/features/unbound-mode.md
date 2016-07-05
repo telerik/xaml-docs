@@ -17,7 +17,7 @@ The example in this topic will show you a __ListBox__ bound to a list of integer
 Here is the XAML for the example. In it you can see a __ListBox__ and a __RadDataPager__ with its __PageSize__ property set. The other important thing is the event handler attached to the __PageIndexChanged__ event.
 
 #### __[XAML]Example 1: RadDataPager in unbound mode__
-{{region raddatapager-features-unbound-mode_0}}
+{{region xaml-raddatapager-features-unbound-mode_0}}
 
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
@@ -40,7 +40,7 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 >tip If you want to implement some logic before the __PageIndex__ gets changed, you can attach an event handler to the __PageIndexChanging__ event.
 
 #### __[C#]Example 2: Set RadDataPager in unbound mode__
-{{region raddatapager-features-unbound-mode_1}}
+{{region cs-raddatapager-features-unbound-mode_1}}
 
 	public partial class UnboundModeSample : UserControl
 	{
@@ -64,7 +64,7 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 
 
 #### __[VB.NET]Example 2: Set RadDataPager in unbound mode__
-{{region raddatapager-features-unbound-mode_2}}
+{{region vb-raddatapager-features-unbound-mode_2}}
 
 	Public Partial Class UnboundModeSample
 	 Inherits UserControl

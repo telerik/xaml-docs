@@ -16,12 +16,12 @@ In order to take advantage of this feature you will need to handle the __RadUplo
 
 ## Add handler for the RadUploadItem PreviewDelete
 
-#### __[C#] Example 1: Subscribing for the PreviewDelete event__  
+#### __[C#] Example 1: Subscribing to the PreviewDelete event__  
 {{region cs-radupload-how-to-cancel-delete_0}}
 	radUpload.AddHandler(RadUploadItem.PreviewDeleteEvent, new DeleteEventHandler(PreviewDelete));
 {{endregion}}
 
-#### __[VB.NET] Example 1: Subscribing for the PreviewDelete event__  
+#### __[VB.NET] Example 1: Subscribing to the PreviewDelete event__  
 {{region vb-radupload-how-to-cancel-delete_1}}
 	radUpload.AddHandler(RadUploadItem.PreviewDeleteEvent, New DeleteEventHandler(AddressOf PreviewDelete))
 {{endregion}}

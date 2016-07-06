@@ -20,7 +20,7 @@ Using the fact that all data items are automatically wrapped inside a __Carousel
 
 #### __XAML__
 
-{{region carousel-items_0}}
+{{region xaml-carousel-items_0}}
 
 	<Style TargetType="{x:Type telerik:CarouselItem}">
 	    <Setter Property="Template" >
@@ -68,7 +68,7 @@ The above style will make all carousel items look identical. If you need selecti
 
 #### __XAML__
 
-{{region carousel-items_1}}
+{{region xaml-carousel-items_1}}
 
 	<ControlTemplate.Triggers>
 	    <Trigger Property="IsSelected" Value="True" >
@@ -104,7 +104,7 @@ Remember the __ContentPresenter__ control that we used in our __CarouselItem__ c
 
 #### __XAML__
 
-{{region carousel-items_2}}
+{{region xaml-carousel-items_2}}
 
 	<Style TargetType="{x:Type telerik:CarouselDataRecordPresenter}">
 	    <Setter Property="Template">

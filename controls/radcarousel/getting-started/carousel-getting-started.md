@@ -34,7 +34,7 @@ Next, you need to add RadCarousel to your application. You may set some of its b
 
 #### __[XAML] Example 1: Adding RadGridView to application__
 
-	{{region carousel-getting-started_0}}
+	{{region xaml-carousel-getting-started_0}}
 	<telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />  
 	{{endregion}}
 
@@ -44,7 +44,7 @@ For the purpose of this tutorial we will create a new **Employee** class with a 
 
 #### __[C#] Example 2: The Employee class__
 
-	{{region carousel-getting-started_2}}
+	{{region cs-carousel-getting-started_2}}
 	public class Employee
 	 {
 	  public string FirstName
@@ -72,7 +72,7 @@ For the purpose of this tutorial we will create a new **Employee** class with a 
 
 #### __[VB.NET] Example 2: The Employee class__
 
-	{{region carousel-getting-started_2}}
+	{{region vb-carousel-getting-started_2}}
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -117,7 +117,7 @@ Furthermore, as some data will be needed, we will create **EmployeeService** cla
 
 #### __[C#] Example 3: The EmployeeService class__
 
-	{{region carousel-getting-started_3}}
+	{{region cs-carousel-getting-started_3}}
 	public class EmployeeService
 	 {
 	  public static ObservableCollection<Employee> GetEmployees()
@@ -167,7 +167,7 @@ Furthermore, as some data will be needed, we will create **EmployeeService** cla
 
 #### __[VB.NET] Example 3: The EmployeeService class__
 
-	{{region carousel-getting-started_3}}
+	{{region vb-carousel-getting-started_3}}
 	Public Class EmployeeService
 	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	  Dim employees As New ObservableCollection(Of Employee)()
@@ -216,13 +216,13 @@ Once all the data is prepared, we may set the RadCarousel's **ItemsSource**:
 
 #### __[C#] Example 4: Setting RadCarousel's ItemsSource__
 
-	{{region carousel-getting-started_4}}
+	{{region cs-carousel-getting-started_4}}
 	this.MyCarousel.ItemsSource = EmployeeService.GetEmployees();
 	{{endregion}}
 
 #### __[VB.NET] Example 4: Setting RadCarousel's ItemsSource__
 
-	{{region carousel-getting-started_4}}
+	{{region vb-carousel-getting-started_4}}
 	Me.MyCarousel.ItemsSource = EmployeeService.GetEmployees()
 	{{endregion}}
 
@@ -238,7 +238,7 @@ Generally, RadCarousel may be easily used for displaying images and navigating t
 
 #### __[C#] Example 5: Setting RadCarousel's ItemsSource to a list of images__
 
-	{{region carousel-getting-started_5}}
+	{{region cs-carousel-getting-started_5}}
 	List<Image> myImages = new List<Image>();
 	Image myImage = new Image();
 	myImage.Source = new BitmapImage(new Uri("/Images/nature1.jpg", UriKind.Relative));
@@ -270,7 +270,7 @@ Generally, RadCarousel may be easily used for displaying images and navigating t
 
 #### __[VB.NET] Example 5: Setting RadCarousel's ItemsSource to a list of images__
 
-	{{region carousel-getting-started_5}}
+	{{region vb-carousel-getting-started_5}}
 	Dim myImages As New List(Of Image)()
 	Dim myImage As New Image()
 	myImage.Source = New BitmapImage(New Uri("/Images/nature1.jpg", UriKind.Relative))

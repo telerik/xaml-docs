@@ -22,7 +22,7 @@ xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
 #### __XAML__
 
-	{{region carousel-global-styles_0}}
+	{{region xaml-carousel-global-styles_0}}
 	<Style TargetType="{x:Type telerik:CarouselItem}">
 	    <Setter Property="Height" Value="200"/>
 	    <Setter Property="Width" Value="400"/>
@@ -49,7 +49,7 @@ Now that we have styled the __CarouselItem__ we need to create a new style for t
 
 #### __XAML__
 
-	{{region carousel-global-styles_1}}
+	{{region xaml-carousel-global-styles_1}}
 	<Style TargetType="{x:Type telerik:CarouselDataRecordPresenter}">
 	    <Setter Property="Template">
 	        <Setter.Value>

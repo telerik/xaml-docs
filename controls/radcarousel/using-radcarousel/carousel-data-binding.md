@@ -17,13 +17,13 @@ __RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsC
 
 #### __[C#] Example 1: Setting RadCarousel's ItemsSource__
 
-	{{region carousel-data-binding_0}}
+	{{region cs-carousel-data-binding_0}}
 	this.RadCarousel1.ItemsSource = GetDataTable();
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Setting RadCarousel's ItemsSource__
 
-	{{region carousel-data-binding_0}}
+	{{region vb-carousel-data-binding_0}}
 	Me.RadCarousel1.ItemsSource = GetDataTable()
 	{{endregion}}
 
@@ -31,14 +31,14 @@ Unlike a standard items control, __RadCarousel's ItemsSource__ property is decla
 
 #### __[C#] Example 2: Providing a DataSet as an ItemsSource__
 
-	{{region carousel-data-binding_1}}
+	{{region cs-carousel-data-binding_1}}
 	radCarousel1.DataMember = "Orders";
 	radCarousel1.ItemsSource = dataSet;
 	{{endregion}}
 
 #### __[VB.NET] Example 2: Providing a DataSet as an ItemsSource__
 
-	{{region carousel-data-binding_1}}
+	{{region vb-carousel-data-binding_1}}
 	radCarousel1.DataMember = "Orders"
 	radCarousel1.ItemsSource = dataSet
 	{{endregion}}
@@ -53,7 +53,7 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
        
 #### __[XAML] Example 3: Setting ItemsSource through XAML__
 
-	{{region carousel-data-binding_2}}
+	{{region xaml-carousel-data-binding_2}}
 	<Grid>
 	    <Grid.Resources>
 	        <ObjectDataProvider x:Key="objectDataProvider" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
@@ -68,7 +68,7 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
 
 #### __[XAML] Example 4: Incorrectly setting ItemsSource through XAML__
 
-	{{region carousel-data-binding_3}}
+	{{region xaml-carousel-data-binding_3}}
 	<Grid>
 	    <Grid.Resources>
 	        <ObjectDataProvider x:Key="objectDataProvider" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />

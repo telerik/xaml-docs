@@ -52,24 +52,7 @@ Finally, the implementation should be as follows:
 
 #### __C#__
 
-	{{region cs-radcarousel-how-to-change-scroll-buttons_1}}
-	private void pageDownButton_Click(object sender, RoutedEventArgs e)
-	 {
-	  this.RadCarousel1.FindCarouselPanel().PageDown();
-	 }
-	private void pageLeftButton_Click(object sender, RoutedEventArgs e)
-	 {
-	  this.RadCarousel1.FindCarouselPanel().MoveBy(-1);
-	 }
-	private void pageRightButton_Click(object sender, RoutedEventArgs e)
-	 {
-	  this.RadCarousel1.FindCarouselPanel().MoveBy(1);
-	 }
-	private void pageUpButton_Click(object sender, RoutedEventArgs e)
-	 {
-	  this.RadCarousel1.FindCarouselPanel().PageUp();
-	 }
-	{{endregion}}
+	{{region cs-radcarousel-how-to-change-scroll-buttons_1}}{{endregion}}
 
 #### __VB.NET__
 

@@ -35,8 +35,10 @@ Next, you need to add RadCarousel to your application. You may set some of its b
 #### __[XAML] Example 1: Adding RadGridView to application__
 
 	{{region xaml-carousel-getting-started_0}}
-	<telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />  
-	{{endregion}}
+	    <UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+	      <telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />
+	    </UserControl>
+{{endregion}}
 
 ## Bind RadCarousel to Collection of Custom Objects
 

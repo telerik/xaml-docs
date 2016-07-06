@@ -17,17 +17,16 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 #### __XAML__
 
 	{{region xaml-carousel-radcarouselpanel-item-movement_0}}
-	<Grid>
-	    <telerik:RadCarouselPanel x:Name="Panel" ItemsPerPage="7" PathPadding="50, 0, 50, 0">
-	        <Image Source="\Carousel\1.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	        <Image Source="\Carousel\2.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	        <Image Source="\Carousel\3.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	        <Image Source="\Carousel\4.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	        <Image Source="\Carousel\5.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	        ...
-	    </telerik:RadCarouselPanel>
-	</Grid>
-	{{endregion}}
+	    <Grid>
+	      <telerik:RadCarouselPanel x:Name="Panel" ItemsPerPage="7" PathPadding="50, 0, 50, 0">
+	        <Image Source="Carousel\1.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	        <Image Source="Carousel\2.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	        <Image Source="Carousel\3.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	        <Image Source="Carousel\4.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	        <Image Source="Carousel\5.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	      </telerik:RadCarouselPanel>
+	    </Grid>
+{{endregion}}
 
 ![](images/CarouselPanelMovement_01.png)
 
@@ -52,18 +51,17 @@ __RadCarouselPanel__ is a scrollable panel that can use __ScrollViewer__ to move
 #### __XAML__
 
 	{{region xaml-carousel-radcarouselpanel-item-movement_2}}
-	<Grid>
-	    <ScrollViewer CanContentScroll="True">
-	        <telerik:RadCarouselPanel x:Name="Panel" ItemsPerPage="7" PathPadding="50, 0, 50, 0">
-	            <Image Source="\Carousel\1.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	            <Image Source="\Carousel\2.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	            <Image Source="\Carousel\3.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	            <Image Source="\Carousel\4.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	            <Image Source="\Carousel\5.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	            ...
+	    <Grid>
+	      <ScrollViewer CanContentScroll="True">
+	        <telerik:RadCarouselPanel x:Name="Panel2" ItemsPerPage="7" PathPadding="50, 0, 50, 0">
+	          <Image Source="Carousel\1.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	          <Image Source="Carousel\2.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	          <Image Source="Carousel\3.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	          <Image Source="Carousel\4.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+	          <Image Source="Carousel\5.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 	        </telerik:RadCarouselPanel>
-	    </ScrollViewer>
-	</Grid>
-	{{endregion}}
+	      </ScrollViewer>
+	    </Grid>
+{{endregion}}
 
 ![](images/CarouselPanelMovement_03_thumb.png)

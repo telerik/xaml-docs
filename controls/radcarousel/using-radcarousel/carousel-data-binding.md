@@ -18,30 +18,34 @@ __RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsC
 #### __[C#] Example 1: Setting RadCarousel's ItemsSource__
 
 	{{region cs-carousel-data-binding_0}}
-	this.RadCarousel1.ItemsSource = GetDataTable();
-	{{endregion}}
+	            var dataTable = GetDataTable();
+	            this.RadCarousel1.ItemsSource = dataTable;
+{{endregion}}
 
 #### __[VB.NET] Example 1: Setting RadCarousel's ItemsSource__
 
 	{{region vb-carousel-data-binding_0}}
-	Me.RadCarousel1.ItemsSource = GetDataTable()
-	{{endregion}}
+
+	            Dim dataTable = GetDataTable()
+	            Me.RadCarousel1.ItemsSource = dataTable
+{{endregion}}
 
 Unlike a standard items control, __RadCarousel's ItemsSource__ property is declared to be of type __System.Object__. This lets you provide objects that are not .NET collections like the ADO.NET __DataTable__ and __DataSet__:
 
 #### __[C#] Example 2: Providing a DataSet as an ItemsSource__
 
 	{{region cs-carousel-data-binding_1}}
-	radCarousel1.DataMember = "Orders";
-	radCarousel1.ItemsSource = dataSet;
-	{{endregion}}
+	            var dataSet = dataTable.DataSet;
+	            this.RadCarousel1.ItemsSource = dataSet;
+{{endregion}}
 
 #### __[VB.NET] Example 2: Providing a DataSet as an ItemsSource__
 
 	{{region vb-carousel-data-binding_1}}
-	radCarousel1.DataMember = "Orders"
-	radCarousel1.ItemsSource = dataSet
-	{{endregion}}
+
+	            Dim dataSet = dataTable.DataSet
+	            Me.RadCarousel1.ItemsSource = dataSet
+{{endregion}}
 
 Of course standard .NET collections that implement the __IEnumerable__ interface are fully supported as well.
 
@@ -71,10 +75,10 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
 	{{region xaml-carousel-data-binding_3}}
 	<Grid>
 	    <Grid.Resources>
-	        <ObjectDataProvider x:Key="objectDataProvider" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
+	        <ObjectDataProvider x:Key="objectDataProviderIncorrect" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
 	    </Grid.Resources>
-	    <telerik:RadCarousel Name="RadCarousel1"
-	        ItemsSource="{StaticResource objectDataProvider}">
+	    <telerik:RadCarousel Name="RadCarouselIncorrect"
+	        ItemsSource="{StaticResource objectDataProviderIncorrect}">
 	    </telerik:RadCarousel>
 	</Grid>
 	{{endregion}}

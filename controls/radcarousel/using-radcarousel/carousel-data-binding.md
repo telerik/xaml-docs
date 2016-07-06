@@ -27,16 +27,16 @@ __RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsC
 	Me.RadCarousel1.ItemsSource = GetDataTable()
 	{{endregion}}
 
-Unlike a standard items control, __RadCarousel's ItemsSource__ property is declared to be of type __System.Object__. This lets you provide objects that are not .NET collections like the ADO.NET __DataTable__ and __DataSet__. Binding to a __DataSet__ requires that you provide additional information, the name of the contained table, by using the __DataMember__ property:
+Unlike a standard items control, __RadCarousel's ItemsSource__ property is declared to be of type __System.Object__. This lets you provide objects that are not .NET collections like the ADO.NET __DataTable__ and __DataSet__:
 
-#### __[C#] Example 2: Specifying an DataMember__
+#### __[C#] Example 2: Providing a DataSet as an ItemsSource__
 
 	{{region carousel-data-binding_1}}
 	radCarousel1.DataMember = "Orders";
 	radCarousel1.ItemsSource = dataSet;
 	{{endregion}}
 
-#### __[VB.NET] Example 2: Specifying an DataMember__
+#### __[VB.NET] Example 2: Providing a DataSet as an ItemsSource__
 
 	{{region carousel-data-binding_1}}
 	radCarousel1.DataMember = "Orders"

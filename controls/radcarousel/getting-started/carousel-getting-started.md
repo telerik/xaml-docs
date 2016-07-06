@@ -30,19 +30,11 @@ Once a new WPF project is created, you will need to add references to the assemb
 
 * **Telerik.Windows.Data;**
 
-Afterwards, you will need to define the **telerik** uri namespace:
+Next, you need to add RadCarousel to your application. You may set some of its basic properties like **Background** or **Height**. Bear in mind that you will need to define the **telerik** namespace. Furthermore, if you want to access it in the code-behind, you may declare its **Name** attribute: 
 
-#### __[XAML] Example 1: Defining the telerik namespace__
+#### __[XAML] Example 1: Adding RadGridView to application__
 
 	{{region carousel-getting-started_0}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
-Next, you need to add RadCarousel to your application. You may set some of its basic properties like **Background** or **Height**. Furthermore, if you want to access it in the code-behind, you may declare its **Name** attribute: 
-
-#### __[XAML] Example 2: Adding RadGridView to application__
-
-	{{region carousel-getting-started_1}}
 	<telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />  
 	{{endregion}}
 
@@ -50,7 +42,7 @@ Next, you need to add RadCarousel to your application. You may set some of its b
 
 For the purpose of this tutorial we will create a new **Employee** class with a couple of properties:
 
-#### __[C#] Example 3: The Employee class__
+#### __[C#] Example 2: The Employee class__
 
 	{{region carousel-getting-started_2}}
 	public class Employee
@@ -78,7 +70,7 @@ For the purpose of this tutorial we will create a new **Employee** class with a 
 	 }
 	{{endregion}}
 
-#### __[VB.NET] Example 3: The Employee class__
+#### __[VB.NET] Example 2: The Employee class__
 
 	{{region carousel-getting-started_2}}
 	Public Class Employee
@@ -123,7 +115,7 @@ For the purpose of this tutorial we will create a new **Employee** class with a 
 
 Furthermore, as some data will be needed, we will create **EmployeeService** class that provides a static **GetEmployees()** method:
 
-#### __[C#] Example 4: The EmployeeService class__
+#### __[C#] Example 3: The EmployeeService class__
 
 	{{region carousel-getting-started_3}}
 	public class EmployeeService
@@ -173,7 +165,7 @@ Furthermore, as some data will be needed, we will create **EmployeeService** cla
 	 }
 	{{endregion}}
 
-#### __[VB.NET] Example 4: The EmployeeService class__
+#### __[VB.NET] Example 3: The EmployeeService class__
 
 	{{region carousel-getting-started_3}}
 	Public Class EmployeeService
@@ -222,13 +214,13 @@ Furthermore, as some data will be needed, we will create **EmployeeService** cla
 
 Once all the data is prepared, we may set the RadCarousel's **ItemsSource**:
 
-#### __[C#] Example 5: Setting RadCarousel's ItemsSource__
+#### __[C#] Example 4: Setting RadCarousel's ItemsSource__
 
 	{{region carousel-getting-started_4}}
 	this.MyCarousel.ItemsSource = EmployeeService.GetEmployees();
 	{{endregion}}
 
-#### __[VB.NET] Example 5: Setting RadCarousel's ItemsSource__
+#### __[VB.NET] Example 4: Setting RadCarousel's ItemsSource__
 
 	{{region carousel-getting-started_4}}
 	Me.MyCarousel.ItemsSource = EmployeeService.GetEmployees()
@@ -244,7 +236,7 @@ After running the application, you will see the following result:
 
 Generally, RadCarousel may be easily used for displaying images and navigating through them. All you need to do is to add those that you want to be visualized in a **List<Image>** for example and set RadCarousel's ItemsSource:
 
-#### __[C#] Example 6: Setting RadCarousel's ItemsSource to a list of images__
+#### __[C#] Example 5: Setting RadCarousel's ItemsSource to a list of images__
 
 	{{region carousel-getting-started_5}}
 	List<Image> myImages = new List<Image>();
@@ -276,7 +268,7 @@ Generally, RadCarousel may be easily used for displaying images and navigating t
 	this.MyCarousel.ItemsSource = myImages;
 	{{endregion}}
 
-#### __[VB.NET] Example 6: Setting RadCarousel's ItemsSource to a list of images__
+#### __[VB.NET] Example 5: Setting RadCarousel's ItemsSource to a list of images__
 
 	{{region carousel-getting-started_5}}
 	Dim myImages As New List(Of Image)()

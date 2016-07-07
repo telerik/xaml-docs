@@ -40,7 +40,7 @@ First, for the purpose of this article, we will create a new **Employee** class 
 	    }
 	{{endregion}}
 
-#### __[VB] Example 1: Creating the Employee class__
+#### __[VB.NET] Example 1: Creating the Employee class__
 
 	{{region radpropertygrid-data-annotations_1}}
 	    Public Class Employee
@@ -125,7 +125,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	            };
 	{{endregion}}
 
-#### __[VB] Example 3: Binding Employee instance to RadPropertyGrid__
+#### __[VB.NET] Example 3: Binding Employee instance to RadPropertyGrid__
 
 	{{region radpropertygrid-data-annotations_2}}
 	    Me.PropertyGrid1.Item = New Employee() With { _

@@ -34,10 +34,10 @@ __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that pro
 
 Both of them are located in the __Telerik.Windows.Controls.Data__ assembly (Telerik.Windows.Controls.Data.PropertyGrid namespace) and depend on the following
 {% if site.site_name == 'WPF' %}
- UI for WPF assemblies
+ UI for WPF assemblies:
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-UI for Silverlight assemblies
+UI for Silverlight assemblies:
 {% endif %}
 
         
@@ -51,16 +51,6 @@ UI for Silverlight assemblies
   
 
 * __Telerik.Windows.Control.Input__
-            
-
-The mentioned namespace is mapped to the Telerik Uri namespace
-          
-
-#### __[XAML]Example 2: Telerik Uri namespace__
-
-	{{region radpropertygrid-collectioneditor_1}}
-	   http://schemas.telerik.com/2008/xaml/presentation
-	{{endregion}}
 
 
 
@@ -91,13 +81,14 @@ It is possible to customize the default commands for the CollectionEditor and th
 
 The methods listed below identify the logic that is executed when a certain command’s invocation takes place.
 
-#### __[C#]__ Example 3: CollectionEditor`s executable commands  
+#### __[C#]__ Example 3: CollectionEditor's executable commands  
 
+{{region collectioneditor-customize-commands_1}}
 	void MoveCurrentToNext()
 	void MoveCurrentToPrevious()
 	void Delete()
 	void AddNew()
-
+{{endregion}}
 
 “Can-execute logic” methods
 
@@ -105,11 +96,12 @@ With the help of those methods you can identify whether a certain command can be
 
 #### __[C#]__ Example 4:CollectionEditor "can-execute" methods 
 
+{{region collectioneditor-customize-commands_2}}
 	bool CanMoveCurrentToNextExecute()
 	bool CanMoveCurrentToPreviousExecute()
 	bool CanDeleteExecute()
 	bool CanAddNewExecute()
-
+{{endregion}}
 
 ## Designing a custom CommandProvider
 
@@ -117,8 +109,7 @@ The first step is to create your own class that inherits from CollectionNavigato
 
 #### __[C#]__ Example 5: Creating a class that provides the custom commands
 
-{{region collectioneditor-customize-commands_1}}
-
+{{region collectioneditor-customize-commands_3}}
 	public class CustomCommandProvider : CollectionNavigatorBaseCommandProvider
 	{
 		public CustomCommandProvider() : base(null)
@@ -130,12 +121,8 @@ The first step is to create your own class that inherits from CollectionNavigato
 		{
             this.CollectionNavigator = collectionEditor;
 		}
-		//. . .
 	}
-	
-	{{endregion}}
-
-
+{{endregion}}
 
 Those commands, which logic is up to get customized, should have their corresponding methods overridden. In the following example we will customize: MoveCurrentToNext, MoveCurrentToPrevious.
 

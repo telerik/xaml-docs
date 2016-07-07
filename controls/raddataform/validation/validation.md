@@ -84,14 +84,14 @@ Yet another approach applicable when defining custom fields is to specify the va
 	{{region vb-raddataform-validation_1}}
 	        Public Property StartingDate() As DateTime
 	            Get
-	                Return Me.startingDate
+	                Return Me.m_startingDate
 	            End Get
 	            Set(value As DateTime)
-	                If value <> Me.startingDate Then
+	                If value <> Me.StartingDate Then
 	                    If value > DateTime.Now Then
 	                        Throw New ValidationException("Starting date should not be earlier than 2011")
 	                    Else
-	                        Me.startingDate = value
+	                        Me.m_startingDate = value
 	                        Me.OnPropertyChanged("StartingDate")
 	                    End If
 	                End If

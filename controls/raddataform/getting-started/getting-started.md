@@ -101,7 +101,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	                Return m_FirstName
 	            End Get
 	            Set(value As String)
-	                m_FirstName = Value
+	                m_FirstName = value
 	            End Set
 	        End Property
 	        Private m_FirstName As String
@@ -110,7 +110,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	                Return m_LastName
 	            End Get
 	            Set(value As String)
-	                m_LastName = Value
+	                m_LastName = value
 	            End Set
 	        End Property
 	        Private m_LastName As String
@@ -119,7 +119,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	                Return m_Occupation
 	            End Get
 	            Set(value As String)
-	                m_Occupation = Value
+	                m_Occupation = value
 	            End Set
 	        End Property
 	        Private m_Occupation As String
@@ -128,7 +128,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	                Return m_StartingDate
 	            End Get
 	            Set(value As DateTime)
-	                m_StartingDate = Value
+	                m_StartingDate = value
 	            End Set
 	        End Property
 	        Private m_StartingDate As DateTime
@@ -137,7 +137,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	                Return m_IsMarried
 	            End Get
 	            Set(value As Boolean)
-	                m_IsMarried = Value
+	                m_IsMarried = value
 	            End Set
 	        End Property
 	        Private m_IsMarried As Boolean
@@ -146,7 +146,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	                Return m_Salary
 	            End Get
 	            Set(value As Integer)
-	                m_Salary = Value
+	                m_Salary = value
 	            End Set
 	        End Property
 	        Private m_Salary As Integer
@@ -155,7 +155,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	                Return m_Gender
 	            End Get
 	            Set(value As Gender)
-	                m_Gender = Value
+	                m_Gender = value
 	            End Set
 	        End Property
 	        Private m_Gender As Gender
@@ -335,7 +335,7 @@ Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 #### __[VB.NET] Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
 	{{region vb-raddataform-getting-started_5}}
-	Me.DataForm1.ItemsSource = EmployeeService.GetEmployees()
+	Me.RadDataForm1.ItemsSource = EmployeeService.GetEmployees()
 	{{endregion}}
 
 On running the application, you should see the following:

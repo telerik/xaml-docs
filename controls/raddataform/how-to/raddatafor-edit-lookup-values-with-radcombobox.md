@@ -42,7 +42,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	                    Return m_FirstName
 	                End Get
 	                Set(value As String)
-	                    m_FirstName = Value
+	                    m_FirstName = value
 	                End Set
 	            End Property
 	            Private m_FirstName As String
@@ -51,7 +51,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	                    Return m_LastName
 	                End Get
 	                Set(value As String)
-	                    m_LastName = Value
+	                    m_LastName = value
 	                End Set
 	            End Property
 	            Private m_LastName As String
@@ -60,7 +60,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	                    Return m_CountryID
 	                End Get
 	                Set(value As Integer)
-	                    m_CountryID = Value
+	                    m_CountryID = value
 	                End Set
 	            End Property
 	            Private m_CountryID As Integer
@@ -71,7 +71,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	                    Return m_ID
 	                End Get
 	                Set(value As Integer)
-	                    m_ID = Value
+	                    m_ID = value
 	                End Set
 	            End Property
 	            Private m_ID As Integer
@@ -80,7 +80,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	                    Return m_Name
 	                End Get
 	                Set(value As String)
-	                    m_Name = Value
+	                    m_Name = value
 	                End Set
 	            End Property
 	            Private m_Name As String
@@ -156,30 +156,28 @@ Now, in order to edit the lookup values we have to do two things:
 #### __[VB.NET] Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
 
 	{{region vb-raddataform-edit-lookup-values-with-radcombobox_2}}
-
-	        Public Class CountriesService
-	            Public Shared Function GetCountries() As List(Of Country)
-	                Dim countries As New List(Of Country)()
-	                countries.Add(New Country() With { _
-	                    .ID = 1, _
-	                    .Name = "USA" _
+	    Public Class CountriesService
+	        Public Shared Function GetCountries() As List(Of Country)
+	            Dim countries As New List(Of Country)()
+	            countries.Add(New Country() With {
+	                    .ID = 1,
+	                    .Name = "USA"
 	                })
-	                countries.Add(New Country() With { _
-	                    .ID = 2, _
-	                    .Name = "Italy" _
+	            countries.Add(New Country() With {
+	                    .ID = 2,
+	                    .Name = "Italy"
 	                })
-	                countries.Add(New Country() With { _
-	                    .ID = 3, _
-	                    .Name = "France" _
+	            countries.Add(New Country() With {
+	                    .ID = 3,
+	                    .Name = "France"
 	                })
-	                countries.Add(New Country() With { _
-	                    .ID = 4, _
-	                    .Name = "Canada" _
+	            countries.Add(New Country() With {
+	                    .ID = 4,
+	                    .Name = "Canada"
 	                })
-	                Return countries
-	            End Function
-	        End Class
-
+	            Return countries
+	        End Function
+	    End Class
 {{endregion}}
 
 * Define the RadComboBox as a field in the RadDataForm. To achieve this we have two options - to handle the AutoGeneratingField event and define a DataFormComboBoxField or create a template for the ReadOnlyTemplate, EditTemplate and NewItemTemplate:
@@ -209,20 +207,18 @@ Now, in order to edit the lookup values we have to do two things:
 #### __[VB.NET] Example 4: Handling the AutoGeneratingField Event__
 
 	{{region vb-raddataform-edit-lookup-values-with-radcombobox_3}}
-
 	        Private Sub RadDataForm_AutoGeneratingField(sender As Object, e As Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs)
 	            If e.PropertyName = "CountryID" Then
-	                e.DataField = New DataFormComboBoxField() With { _
-	                 .ItemsSource = CountriesService.GetCountries(), _
-	                 .SelectedValuePath = "ID", _
-	                 .DisplayMemberPath = "Name", _
-	                 .DataMemberBinding = New Binding("CountryID") With { _
-	                 .Mode = BindingMode.TwoWay _
-	                 } _
+	                e.DataField = New DataFormComboBoxField() With {
+	                 .ItemsSource = CountriesService.GetCountries(),
+	                 .SelectedValuePath = "ID",
+	                 .DisplayMemberPath = "Name",
+	                 .DataMemberBinding = New Binding("CountryID") With {
+	                 .Mode = BindingMode.TwoWay
+	                 }
 	                }
 	            End If
 	        End Sub
-
 {{endregion}}
 
 Figure 1 shows the resulting RadDataForm:
@@ -315,7 +311,6 @@ In this case the Countries and Persons collections used for the ItemsSources of 
 #### __[VB.NET] Example 6: Defining the Countries and Persons Collections in the ViewModel__
 
 	{{region vb-raddataform-edit-lookup-values-with-radcombobox_5}}
-
 	    Public Class MyViewModel
 	        Private m_countries As List(Of Country)
 	        Private m_persons As List(Of Person)
@@ -331,20 +326,20 @@ In this case the Countries and Persons collections used for the ItemsSources of 
 	            Get
 	                If Me.m_persons Is Nothing Then
 	                    Dim persons__1 As New List(Of Person)()
-	                    persons__1.Add(New Person() With { _
-	                        .FirstName = "John", _
-	                        .LastName = "Smith", _
-	                        .CountryID = 1 _
+	                    persons__1.Add(New Person() With {
+	                        .FirstName = "John",
+	                        .LastName = "Smith",
+	                        .CountryID = 1
 	                    })
-	                    persons__1.Add(New Person() With { _
-	                        .FirstName = "Angelo", _
-	                        .LastName = "Romano", _
-	                        .CountryID = 2 _
+	                    persons__1.Add(New Person() With {
+	                        .FirstName = "Angelo",
+	                        .LastName = "Romano",
+	                        .CountryID = 2
 	                    })
-	                    persons__1.Add(New Person() With { _
-	                        .FirstName = "Jean", _
-	                        .LastName = "Michel", _
-	                        .CountryID = 3 _
+	                    persons__1.Add(New Person() With {
+	                        .FirstName = "Jean",
+	                        .LastName = "Michel",
+	                        .CountryID = 3
 	                    })
 	                    Me.m_persons = persons__1
 	                End If
@@ -352,7 +347,6 @@ In this case the Countries and Persons collections used for the ItemsSources of 
 	            End Get
 	        End Property
 	    End Class
-
 {{endregion}}
 
 The result will be same as the one in the first scenario.

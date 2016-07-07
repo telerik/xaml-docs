@@ -23,7 +23,7 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 #### __[VB.NET] Example 1: Adding event handler for the SelectionChanged event__
 
 	{{region vb-raddataform-howto-selectionchanged-comboboxfield_1}}
-	    AddHandler RadComboBox.SelectionChangedEvent, AddressOf OnSelectionChanged
+	    Me.[AddHandler](New RadComboBox.SelectionChangedEvent, SelectionChangedEventHandler(AddressOf OnSelectionChanged))
 	{{endregion}}
 
 >You should add a using statement to __Telerik.Windows__ namespace in order to be able to add the handler.

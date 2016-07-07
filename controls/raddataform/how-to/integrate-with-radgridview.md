@@ -135,130 +135,124 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 #### __[VB.NET] Example 1: Creating an Employee class that implements INotifyPropertyChanged__
 
 	{{region vb-raddataform-integrate-with-radgridview_0}}
-	Public Class Employee
-        Implements INotifyPropertyChanged
-        Public Event PropertyChanged As PropertyChangedEventHandler
-        Private m_firstName As String
-        Private m_lastName As String
-        Private m_ocupation As String
-        Private m_startingDate As DateTime
-        Private m_isMarried As Boolean
-        Public Property FirstName() As String
-            Get
-                Return Me.m_firstName
-            End Get
-            Set(value As String)
-                If value <> Me.m_firstName Then
-                    Me.m_firstName = value
-                    Me.OnPropertyChanged("FirstName")
-                End If
-            End Set
-        End Property
-        Public Property LastName() As String
-            Get
-                Return Me.m_lastName
-            End Get
-            Set(value As String)
-                If value <> Me.m_lastName Then
-                    Me.m_lastName = value
-                    Me.OnPropertyChanged("LastName")
-                End If
-            End Set
-        End Property
-        Public Property Ocupation() As String
-            Get
-                Return Me.m_ocupation
-            End Get
-            Set(value As String)
-                If value <> Me.m_ocupation Then
-                    Me.m_ocupation = value
-                    Me.OnPropertyChanged("Ocupation")
-                End If
-            End Set
-        End Property
-        Public Property StartingDate() As DateTime
-            Get
-                Return Me.m_startingDate
-            End Get
-            Set(value As DateTime)
-                If value <> Me.m_startingDate Then
-                    Me.m_startingDate = value
-                    Me.OnPropertyChanged("StartingDate")
-                End If
-            End Set
-        End Property
-        Public Property IsMarried() As Boolean
-            Get
-                Return Me.m_isMarried
-            End Get
-            Set(value As Boolean)
-                If Me.m_isMarried <> value Then
-                    Me.m_isMarried = value
-                    Me.OnPropertyChanged("IsMarried")
-                End If
-            End Set
-        End Property
-        Private m_salary As Integer
-        Public Property Salary() As Integer
-            Get
-                Return Me.m_salary
-            End Get
-            Set(value As Integer)
-                If Me.m_salary <> value Then
-                    Me.m_salary = value
-                    Me.OnPropertyChanged("Salary")
-                End If
-            End Set
-        End Property
-        Public Sub New()
-        End Sub
-
-        Protected Overridable Sub OnPropertyChanged(args As PropertyChangedEventArgs)
-            Dim handler As PropertyChangedEventHandler = Me.PropertyChanged
-            RaiseEvent handler(Me, args)
-        End Sub
-        Private Sub OnPropertyChanged(propertyName As String)
-            Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
-        End Sub
-
-        Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
-            Dim employees As New ObservableCollection(Of Employee)()
-            employees.Add(New Employee() With { _
-             .FirstName = "Sarah", _
-             .LastName = "Blake", _
-             .Ocupation = "Supplied Manager", _
-             .StartingDate = New DateTime(2005, 4, 12), _
-             .IsMarried = True, _
-             .Salary = 3500 _
-            })
-            employees.Add(New Employee() With { _
-              .FirstName = "Jane", _
-              .LastName = "Simpson", _
-              .Ocupation = "Security", _
-              .StartingDate = New DateTime(2008, 12, 3), _
-              .IsMarried = True, _
-              .Salary = 2000 _
-            })
-            employees.Add(New Employee() With { _
-             .FirstName = "John", _
-             .LastName = "Peterson", _
-             .Ocupation = "Consultant", _
-             .StartingDate = New DateTime(2005, 4, 12), _
-             .IsMarried = False, _
-             .Salary = 2600 _
-            })
-            employees.Add(New Employee() With { _
-             .FirstName = "Peter", _
-             .LastName = "Bush", _
-             .Ocupation = "Casheer", _
-             .StartingDate = New DateTime(2005, 4, 12), _
-             .IsMarried = True, _
-             .Salary = 2300 _
-            })
-            Return employees
-        End Function
-    End Class
-	{{endregion}}
+	    Public Class Employee
+	        Implements INotifyPropertyChanged
+	        Private Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+	        Private m_firstName As String
+	        Private m_lastName As String
+	        Private m_ocupation As String
+	        Private m_startingDate As DateTime
+	        Private m_isMarried As Boolean
+	        Private m_salary As Integer
+	        Public Property FirstName() As String
+	            Get
+	                Return Me.m_firstName
+	            End Get
+	            Set(value As String)
+	                If value <> Me.m_firstName Then
+	                    Me.m_firstName = value
+	                    Me.OnPropertyChanged("FirstName")
+	                End If
+	            End Set
+	        End Property
+	        Public Property LastName() As String
+	            Get
+	                Return Me.m_lastName
+	            End Get
+	            Set(value As String)
+	                If value <> Me.m_lastName Then
+	                    Me.m_lastName = value
+	                    Me.OnPropertyChanged("LastName")
+	                End If
+	            End Set
+	        End Property
+	        Public Property Ocupation() As String
+	            Get
+	                Return Me.m_ocupation
+	            End Get
+	            Set(value As String)
+	                If value <> Me.m_ocupation Then
+	                    Me.m_ocupation = value
+	                    Me.OnPropertyChanged("Ocupation")
+	                End If
+	            End Set
+	        End Property
+	        Public Property StartingDate() As DateTime
+	            Get
+	                Return Me.m_startingDate
+	            End Get
+	            Set(value As DateTime)
+	                If value <> Me.m_startingDate Then
+	                    Me.m_startingDate = value
+	                    Me.OnPropertyChanged("StartingDate")
+	                End If
+	            End Set
+	        End Property
+	        Public Property IsMarried() As Boolean
+	            Get
+	                Return Me.m_isMarried
+	            End Get
+	            Set(value As Boolean)
+	                If Me.m_isMarried <> value Then
+	                    Me.m_isMarried = value
+	                    Me.OnPropertyChanged("IsMarried")
+	                End If
+	            End Set
+	        End Property
+	        Public Property Salary() As Integer
+	            Get
+	                Return Me.m_salary
+	            End Get
+	            Set(value As Integer)
+	                If Me.m_salary <> value Then
+	                    Me.m_salary = value
+	                    Me.OnPropertyChanged("Salary")
+	                End If
+	            End Set
+	        End Property
+	        Public Sub New()
+	        End Sub
+	        Private Sub OnPropertyChanged(<CallerMemberName()> Optional ByVal propertyName As String = Nothing)
+	            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+	        End Sub
+	        Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
+	            Dim employees As New ObservableCollection(Of Employee)()
+	            employees.Add(New Employee() With {
+	                 .FirstName = "Sarah",
+	                 .LastName = "Blake",
+	                 .Ocupation = "Supplied Manager",
+	                 .StartingDate = New DateTime(2005, 4, 12),
+	                 .IsMarried = True,
+	                 .Salary = 3500
+	                })
+	            employees.Add(New Employee() With {
+	                  .FirstName = "Jane",
+	                  .LastName = "Simpson",
+	                  .Ocupation = "Security",
+	                  .StartingDate = New DateTime(2008, 12, 3),
+	                  .IsMarried = True,
+	                  .Salary = 2000
+	                })
+	            employees.Add(New Employee() With {
+	                 .FirstName = "John",
+	                 .LastName = "Peterson",
+	                 .Ocupation = "Consultant",
+	                 .StartingDate = New DateTime(2005, 4, 12),
+	                 .IsMarried = False,
+	                 .Salary = 2600
+	                })
+	            employees.Add(New Employee() With {
+	                 .FirstName = "Peter",
+	                 .LastName = "Bush",
+	                 .Ocupation = "Casheer",
+	                 .StartingDate = New DateTime(2005, 4, 12),
+	                 .IsMarried = True,
+	                 .Salary = 2300
+	                })
+	            Return employees
+	        End Function
+	    End Class
+{{endregion}}
 
 The definition of the of the RadGridView may be as follows:
 

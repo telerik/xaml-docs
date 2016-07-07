@@ -90,43 +90,36 @@ The class responsible for customizing the keyboard navigation should to be simil
 
 	{{region vb-raddataform-features-keyboard-support_0}}
 	    Public Class CustomKeyboardCommandProvider
-        Inherits DataFormCommandProvider
-        Public Sub New()
-
-            MyBase.New(Nothing)
-        End Sub
-
-        Public Sub New(dataForm As RadDataForm)
-            MyBase.New(dataForm)
-            Me.DataForm = dataForm
-        End Sub
-
-        Public Overrides Function ProvideCommandsForKey(args As KeyEventArgs) As List(Of DelegateCommandWrapper)
-            Dim actionsToExecute As List(Of DelegateCommandWrapper) = MyBase.ProvideCommandsForKey(args)
-            If args.Key = Key.Right Then
-                actionsToExecute.Clear()
-                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToNext, Me.DataForm))
-                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, Me.DataForm))
-            End If
-
-            If args.Key = Key.Left Then
-                actionsToExecute.Clear()
-                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToPrevious, Me.DataForm))
-                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, Me.DataForm))
-            End If
-
-            If actionsToExecute.Count > 0 Then
-                actionsToExecute.Add(New DataFormDelegateCommandWrapper(New Action(Function()
-                                                                                       Me.DataForm.AcquireFocus()
-
-                                                                                   End Function), 100, Me.DataForm))
-                args.Handled = True
-            End If
-
-            Return actionsToExecute
-        End Function
-    End Class
-	{{endregion}}
+	        Inherits DataFormCommandProvider
+	        Public Sub New()
+	            MyBase.New(Nothing)
+	        End Sub
+	        Public Sub New(dataForm As RadDataForm)
+	            MyBase.New(dataForm)
+	            Me.DataForm = dataForm
+	        End Sub
+	        Public Overrides Function ProvideCommandsForKey(ByVal args As KeyEventArgs) As List(Of DelegateCommandWrapper)
+	            Dim actionsToExecute As List(Of DelegateCommandWrapper) = MyBase.ProvideCommandsForKey(args)
+	            If args.Key = Key.Right Then
+	                actionsToExecute.Clear()
+	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToNext, Me.DataForm))
+	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, Me.DataForm))
+	            End If
+	            If args.Key = Key.Left Then
+	                actionsToExecute.Clear()
+	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToPrevious, Me.DataForm))
+	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, Me.DataForm))
+	            End If
+	            If actionsToExecute.Count > 0 Then
+	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(New Action(Sub()
+	                                                                                       Me.DataForm.AcquireFocus()
+	                                                                                   End Sub), 100, Me.DataForm))
+	                args.Handled = True
+	            End If
+	            Return actionsToExecute
+	        End Function
+	    End Class
+{{endregion}}
 
 Following up the code-snippet above, a press of Left/ Right keys will result in moving to the Next/ Previous item and editing it. However, do not forget to remove the predefined commands for that particular key by calling the Clear() method.
 

@@ -59,50 +59,47 @@ Now we can define a simple Employee class with validation attributes.
 
 	{{region vb-raddataform-validation-item-level_1}}
 	    Public Class Employee
-	        <Required()> _
+	        <Required()>
 	        Public Property FirstName() As String
 	            Get
 	                Return m_FirstName
 	            End Get
 	            Set(value As String)
-	                m_FirstName = Value
+	                m_FirstName = value
 	            End Set
 	        End Property
 	        Private m_FirstName As String
-	
-	        <Required(ErrorMessage:="LastName is required")> _
+	        <Required(ErrorMessage:="LastName is required")>
 	        Public Property LastName() As String
 	            Get
 	                Return m_LastName
 	            End Get
 	            Set(value As String)
-	                m_LastName = Value
+	                m_LastName = value
 	            End Set
 	        End Property
 	        Private m_LastName As String
-	
-	        <Range(21, 70)> _
+	        <Range(21, 70)>
 	        Public Property Age() As Integer
 	            Get
 	                Return m_Age
 	            End Get
 	            Set(value As Integer)
-	                m_Age = Value
+	                m_Age = value
 	            End Set
 	        End Property
 	        Private m_Age As Integer
-	
-	        <RegularExpression("[a-z]#[0-9]*")> _
+	        <RegularExpression("[a-z]#[0-9]*")>
 	        Public Property EmployeeID() As String
 	            Get
 	                Return m_EmployeeID
 	            End Get
 	            Set(value As String)
-	                m_EmployeeID = Value
+	                m_EmployeeID = value
 	            End Set
 	        End Property
 	        Private m_EmployeeID As String
 	    End Class
-	{{endregion}}
+{{endregion}}
 
 Please, have in mind that __those errors are removed from the validation summary__ on the next committing operation, __unlike the property level ones__, which are removed on property change. 

@@ -101,7 +101,7 @@ To modify the default style for the numeric buttons you have to get the default 
 
 Here is the default XAML for the numeric buttons' __Style__ and its resources.
 
-#### __[XAML]Example 3: Numer buttons` default Style__
+#### __[XAML]Example 3: Numeric buttons` default Style__
 
 	{{region xaml-raddatapager-styles-and-templates-styling-the-numeric-buttons_3}}
 	<LinearGradientBrush x:Key="RadPager_Page_TopShadow"

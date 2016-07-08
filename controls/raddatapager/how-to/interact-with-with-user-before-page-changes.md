@@ -27,19 +27,18 @@ __Example 1__ shows a __RadDataPager__ that invokes a __MessageBox__ before chan
 
 #### __[C#]Example 1: RadDataPager with MessageBox confirmation__
 {{region cs-raddatapager-how-to-interact-with-with-user-before-page-changes_1}}
-
-	private bool myCondition;
-	private void radDataPager_PageIndexChanging( object sender, PageIndexChangingEventArgs e )
-	{
-	    if ( myCondition )
-	    {
-	        MessageBoxResult result = MessageBox.Show( "There is unsaved data! Are you sure you want to continue?", "Confirm", MessageBoxButton.OKCancel );
-	        if ( result == MessageBoxResult.Cancel )
+	        private bool myCondition;
+	        private void radDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs e)
 	        {
-	            e.Cancel = true;
+	            if (myCondition)
+	            {
+	                MessageBoxResult result = MessageBox.Show("There is unsaved data! Are you sure you want to continue?", "Confirm", MessageBoxButton.OKCancel);
+	                if (result == MessageBoxResult.Cancel)
+	                {
+	                    e.Cancel = true;
+	                }
+	            }
 	        }
-	    }
-	}
 {{endregion}}
 
 

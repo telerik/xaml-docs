@@ -75,7 +75,7 @@ If the combination of visual elements doesn't exist in the enumeration, you can 
 
 {{region xaml-raddatapager-features-display-modes_1}}
 
-	<telerik:RadDataPager x:Name="radDataPager"
+	<telerik:RadDataPager x:Name="radDataPager1"
 	                        PageSize="5"
 	                        DisplayMode="PreviousNext,Text" />
 {{endregion}}

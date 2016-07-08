@@ -41,25 +41,24 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 
 #### __[C#]Example 2: Set RadDataPager in unbound mode__
 {{region cs-raddatapager-features-unbound-mode_1}}
-
-	public partial class UnboundModeSample : UserControl
-	{
-	    private List<int> data;
-	    public UnboundModeSample()
+	    public partial class UnboundModeSample : UserControl
 	    {
-	        InitializeComponent();
-	        this.data = Enumerable.Range( 0, 100 ).ToList();
-	        this.radDataPager.ItemCount = data.Count;
-	        this.listBox.ItemsSource = this.data.Take( this.radDataPager.PageSize ).ToList();
-	    }
-	    private void radDataPager_PageIndexChanged( object sender, PageIndexChangedEventArgs e )
-	    {
-	        if ( this.data != null )
+	        private List<int> data;
+	        public UnboundModeSample()
 	        {
-	            this.listBox.ItemsSource = this.data.Skip( e.NewPageIndex * this.radDataPager.PageSize ).Take( this.radDataPager.PageSize ).ToList();
+	            InitializeComponent();
+	            this.data = Enumerable.Range(0, 100).ToList();
+	            this.radDataPager.ItemCount = data.Count;
+	            this.listBox.ItemsSource = this.data.Take(this.radDataPager.PageSize).ToList();
+	        }
+	        private void radDataPager_PageIndexChanged(object sender, PageIndexChangedEventArgs e)
+	        {
+	            if (this.data != null)
+	            {
+	                this.listBox.ItemsSource = this.data.Skip(e.NewPageIndex * this.radDataPager.PageSize).Take(this.radDataPager.PageSize).ToList();
+	            }
 	        }
 	    }
-	}
 {{endregion}}
 
 

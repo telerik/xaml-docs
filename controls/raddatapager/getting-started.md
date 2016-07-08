@@ -70,7 +70,7 @@ After that, you create your __RadDataPager__ and bind its __RadDataPager.Source_
 
 {{region xaml-raddatapager-getting-started_7}}
 
-	<Grid x:Name="LayoutRoot"
+	<Grid x:Name="LayoutRoot1"
 	        Background="White">    
 	    <Grid.RowDefinitions>
 	        <RowDefinition />
@@ -85,7 +85,7 @@ After that, you create your __RadDataPager__ and bind its __RadDataPager.Source_
 	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}" />
 	        </telerik:RadGridView.Columns>
 	    </telerik:RadGridView>
-	    <telerik:RadDataPager x:Name="radDataPager"
+	    <telerik:RadDataPager x:Name="radDataPager3"
 	                          Source="{Binding Items, ElementName=radGridView}"
 	                          PageSize="5" />
 	</Grid>
@@ -111,7 +111,7 @@ Create your __RadDataPager__ and make some basic configurations to it.
 #### __[XAML]Example 3: Paging a collection__
 
 	{{region xaml-raddatapager-getting-started_3}}
-	<telerik:RadDataPager x:Name="radDataPager"
+	<telerik:RadDataPager x:Name="radDataPager1"
 	                      PageSize="5" 
 	                      Source="{Binding Clubs}"/>
 	{{endregion}}
@@ -138,8 +138,8 @@ The paged collection inside the __RadDataPager__ can be accessed via the __Paged
 	        <RowDefinition Height="Auto" />
 	    </Grid.RowDefinitions>
 	      <ListBox Name="itemsControl"
-	               ItemsSource="{Binding PagedSource, ElementName=radDataPager}"/>
-	    <telerik:RadDataPager x:Name="radDataPager"
+	               ItemsSource="{Binding PagedSource, ElementName=radDataPager2}"/>
+	    <telerik:RadDataPager x:Name="radDataPager2"
 	                            Grid.Row="1"
 	                            DisplayMode="All"
 	                            PageSize="5"                          

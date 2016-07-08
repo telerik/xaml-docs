@@ -25,8 +25,7 @@ If you want to use this approach you have to create a __Style__ that targets __R
 
 #### __[XAML]Example 1: Changing the template of RadDataPager`s numeric buttons__
 {{region xaml-raddatapager-styles-and-templates-styling-the-numeric-buttons_0}}
-
-	<telerik:BooleanToVisibilityConverter x:Name="BooleanToVisibilityConverter" />
+	<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 	<Style x:Key="buttonStyle"
 	        TargetType="ButtonBase">
 	    <Setter Property="Template">

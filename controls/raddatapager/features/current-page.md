@@ -68,7 +68,7 @@ Here is the XAML for the example.
 	        <RowDefinition Height="Auto" />
 	    </Grid.RowDefinitions>
 	    <Grid.Resources>
-	        <converters:IndexToNumberConverter x:Name="IndexToNumberConverter" />
+	        <converters:IndexToNumberConverter x:Key="IndexToNumberConverter" />
 	    </Grid.Resources>
 	    <StackPanel Orientation="Horizontal">
 	        <TextBlock Text="Employees - Page "

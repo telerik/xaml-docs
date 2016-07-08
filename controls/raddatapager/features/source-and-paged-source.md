@@ -47,9 +47,9 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 #### __[C#]Example 2: Apply QueryableCollectionView wrapper over IEnumerable collection:__
 {{region cs-raddatapager-features-source-and-paged-source_2}}
 
-	IEnumerable itemsSource = Enumerable.Range(0, 1000);
-	var pagedSource = new QueryableCollectionView(itemsSource);
-	this.radDataPager.Source = pagedSource;
+	IEnumerable _itemsSource = Enumerable.Range(0, 1000);
+	var _pagedSource = new QueryableCollectionView(_itemsSource);
+	this.radDataPager.Source = __pagedSource;
 	this.itemsControl.ItemsSource = pagedSource;
 {{endregion}}
 
@@ -69,7 +69,7 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 {{region xaml-raddatapager-features-source-and-paged-source_4}}
 
 	<ListBox Name="itemsControl"/>
-	<telerikGrid:RadDataPager Name="radDataPager"
+	<telerik:RadDataPager Name="radDataPager"
 	                          PageSize="10"
 	                          DisplayMode="All"/>
 {{endregion}}
@@ -84,9 +84,9 @@ In case you do not like the first approach there is a better one. When you assig
 #### __[XAML]Example 4: Binding to the PagedSource property of RadDataPager__
 {{region xaml-raddatapager-features-source-and-paged-source_5}}
 
-	<ListBox Name="itemsControl"
+	<ListBox Name="itemsControl1"
 	         ItemsSource="{Binding PagedSource, ElementName=radDataPager}"/>
-	<telerikGrid:RadDataPager Name="radDataPager"
+	<telerik:RadDataPager Name="radDataPager1"
 	               Source="{Binding myItemsSource}"
 	               PageSize="10"
 	               DisplayMode="All"/>

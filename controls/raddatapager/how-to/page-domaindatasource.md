@@ -33,7 +33,7 @@ If you are using the __WCF RIA Services__ and the __DomainDataSource,__ you prob
 #### __XAML__
 {{region xaml-raddatapager-how-to-page-domaindatasource_0}}
 
-	<!--<riaControls:DomainDataSource x:Name="invoicesDataSource"
+	<riaControls:DomainDataSource x:Name="invoicesDataSource"
 	                              AutoLoad="True"
 	                              QueryName="GetInvoicesQuery">
 	    <riaControls:DomainDataSource.DomainContext>
@@ -45,7 +45,7 @@ If you are using the __WCF RIA Services__ and the __DomainDataSource,__ you prob
 	<telerik:RadDataPager Name="radDataPager"
 	             Source="{Binding Data, ElementName=invoicesDataSource}"
 	             PageSize="10"
-	             DisplayMode="All"/>-->
+	             DisplayMode="All"/>
 {{endregion}}
 
 

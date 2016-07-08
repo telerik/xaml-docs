@@ -10,16 +10,14 @@ position: 0
 
 # Backgrounds and Borders
 
-The controls from the RadGauge suite expose several properties that can be used to customize their backgrounds and borders. This article describes those properties and demonstrates how to use them in __RadVerticalLinearGauge__ and __RadRadialGauge__. 
+The controls in the RadGauge suite have several properties that can be used to customize their backgrounds and borders. 
 
-* [RadVerticalLinearGauge](#radverticallineargauge)
-* [RadRadialGauge](#radradialgauge)
+* [Linear Gauge](#linear-gauge)
+* [Radial Gauge](#radial-gauge)
 
-> The other controls in the suite are not covered in this article because they can be customized similarly.
+## Linear Gauge
 
-## RadVerticalLinearGauge
-
-The linear gauges expose the following color properties.
+The linear gauges have the following color properties.
 
 * __Background__: Gets or sets a brush that describes the background of the control
 * __BorderBrush__: Gets or sets a brush that describes the border of the control
@@ -33,9 +31,11 @@ __Figure 1__ demonstrates how these properties affect the control.
 #### __Figure 1: Customized RadVerticalLinearGauge control__
 ![](images/gauge-styles-and-templates-backrounds-borders-01.png)
 
-## RadRadialGauge
+> The example demonstrates only the RadVerticalLinearGauge but all linear gauges can be customized using the properties above.
 
-The radial gauges expose the following color properties.
+## Radial Gauge
+
+The radial gauges have the following color properties.
 
 * __InnerBackground__: Gets or sets a brush that describes the outer background of the control
 * __Background__: Gets or sets a brush that describes the background of the control
@@ -58,6 +58,8 @@ You can also customize the __RadialScale’s__ colors using its __Fill__, __Stro
 
 #### __Figure 3: Customized RadialScale__
 ![](images/gauge-styles-and-templates-backrounds-borders-03.png)
+
+> The example demonstrates only the RadRadialGauge but all radial gauges can be customized using the properties above.
 
 ## See Also  
 * [RadRadialGauge]({%slug radgauge-getting-started-creating-radial-gauge%})

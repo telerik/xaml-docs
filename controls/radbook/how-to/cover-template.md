@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to apply different templates for front and back cover page.
+# How to apply different templates for front and back cover page
 
 Currently __RadBook__ does not expose separate properties for setting templates for the front and back cover pages(first and last pages in RadBook's items collection). In this case, you can use the already available __DataTemplateSelectors__ - __LeftPageTemplateSelector__ and __RightPageTemplateSelector__. Depending on the index of each page, we will decide what template to apply on the page.
 

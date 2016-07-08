@@ -19,6 +19,8 @@ We can use them against RadGridView with many rows and columns. The ultimate goa
                      
 ![](images/how_to_scroll_gridview.png)
 
+>tip When adding range of items to the __ItemsSource__ collection of __RadGridView__ the horizontal scrollbar`s position will be reset back to the top. You can keep track of the vertical scroll offset and reposition the scrollbar after the collection update.
+
 ## ScrollIntoViewAsync
 
 __ScrollIntoViewAsync__ method accepts the following parameters:
@@ -32,7 +34,7 @@ __ScrollIntoViewAsync__ method accepts the following parameters:
 
 Here is the code that will scroll to the last row and last column of RadGridView:
 
-#### __C#__
+#### __[C#] Example 1: Scroll to the last row and last column__
 
 {{region gridview-scroll-item_0}}
 
@@ -45,7 +47,7 @@ Here is the code that will scroll to the last row and last column of RadGridView
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Scroll to the last row and last column__
 
 {{region gridview-scroll-item_1}}
 
@@ -73,7 +75,7 @@ __ScrollIndexIntoViewAsync__ method accepts the following parameters:
 
 Here is the code that will scroll into the last row and last column of RadGridView:
 
-#### __C#__
+#### __[C#] Example 2: Scroll into the last row and last column of RadGridView__
 
 {{region gridview-scroll-item_2}}
 
@@ -87,7 +89,7 @@ Here is the code that will scroll into the last row and last column of RadGridVi
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Scroll into the last row and last column of RadGridView__
 
 {{region gridview-scroll-item_3}}
 

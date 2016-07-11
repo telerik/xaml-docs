@@ -18,9 +18,22 @@ __RadRadialMenu__ control supports the following commands:
 
 * __NavigateToView Command__ - executes before the user navigates to another view (child items). This command receives a context of type __NavigateContext__, which exposes the following properties:            
 
-	* __MenuItemTarget__ - gets the current RadialMenuItem that has beend clicked/tapped.              
+	* __MenuItemTarget__ - gets the current RadialMenuItem that has been clicked/tapped.              
 
-	* __MenuItemSource__ - gets the previous (if any) RadialMenuItem that has been used to navigate through.              
+	* __MenuItemSource__ - gets the previous (if any) RadialMenuItem that has been used to navigate through.     
+	
+* __NavigateBack Command__ - (introduced with Q2 2016) navigates back to the parent item of the current RadRadialMenuItem.
+
+__Example 1__ demonstrates how to navigate to another view in the RadRadialMenu using the NavigateToView command:
+
+#### __[C#] Example 1: Executing the NavigateToView command__
+
+{{region radradialmenu-commands-radialmenu_1}}
+	NavigateContext context = new NavigateContext(menuItem);
+	this.radialMenu.CommandService.ExecuteCommand(Telerik.Windows.Controls.RadialMenu.Commands.CommandId.NavigateToView, context);
+{{endregion}}
+
+When the command executes the RadialMenu will navigate to the item passed as a parameter to the constructor of the NavigateContext class.
 
 ## Custom Commands
 
@@ -38,11 +51,11 @@ __RadialMenuCommand__ class exposes the following properties:
 
 The next example will show how to implement custom command that will be executed when the user navigates to the children of a menu item:
 
-1. First, create a custom class that inherits from the __RadialMenuCommand__ class. You need to set the __Id__ of the command to specify when it will be executed. If you wish to execute the default behavior, then you have to call the __Owner.CommandService.ExecuteDefaultCommand__ method in the __Execute__ method of the command as shown in __Example 1__. 
+1. First, create a custom class that inherits from the __RadialMenuCommand__ class. You need to set the __Id__ of the command to specify when it will be executed. If you wish to execute the default behavior, then you have to call the __Owner.CommandService.ExecuteDefaultCommand__ method in the __Execute__ method of the command as shown in __Example 2__. 
 
-	#### __[C#] Example 1: Creating a custom command__
+	#### __[C#] Example 2: Creating a custom command__
 
-	{{region radradialmenu-commands-radialmenu_1}}
+	{{region radradialmenu-commands-radialmenu_2}}
 		public class CustomMenuCommand : RadialMenuCommand
 		{
 			public CustomMenuCommand()
@@ -69,9 +82,9 @@ The next example will show how to implement custom command that will be executed
 		}
 	{{endregion}}
 
-1. Then you have to define an instance of the custom command class in the __Commands__ collection of the __RadRadialMenu__ as demonstrated in __Example 2__.            
+1. Then you have to define an instance of the custom command class in the __Commands__ collection of the __RadRadialMenu__ as demonstrated in __Example 3__.            
 
-	#### __[XAML] Example 2: Setting the custom command__
+	#### __[XAML] Example 3: Setting the custom command__
 
 	{{region radradialmenu-commands-radialmenu_0}}
 		<telerik:RadRadialMenu>

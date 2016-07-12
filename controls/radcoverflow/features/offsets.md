@@ -33,7 +33,7 @@ The __OffsetY and OffsetX__ property allows you to move the images up and down t
 #### __XAML__
 
 {{region xaml-coverflow-offsets_2}}
-	    <telerik:RadCoverFlow OffsetY="-60"/>
+    <telerik:RadCoverFlow OffsetY="-60"/>
 {{endregion}}
 
 ![](images/RadCoverFlow_Features10.gif)

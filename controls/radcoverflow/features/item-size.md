@@ -14,7 +14,7 @@ There are three different ways by which you can customize the Size of the RadCov
 
 #### __XAML__
 
-{{region coverflow-Item_Size_0}}
+{{region coverflow-item-size_0}}
 	<telerik:RadCoverFlow>
 	        <Image Source="/CoverFlow/Images/01.png" Stretch="None" Width="100" Height="100" />
 	</telerik:RadCoverFlow>
@@ -24,7 +24,7 @@ You can also define the Width and Height of the RadCoverFlowItem in a style part
 
 #### __XAML__
 
-{{region coverflow-Item_Size_1}}
+{{region coverflow-item-size_1}}
 	<telerik:RadCoverFlow x:Name="coverFlow" Background="Transparent" OffsetY="50" CameraViewpoint="Center" RotationY="40" ItemScale="0.85">
 	       <telerik:RadCoverFlow.ItemTemplate>
 	               <DataTemplate>

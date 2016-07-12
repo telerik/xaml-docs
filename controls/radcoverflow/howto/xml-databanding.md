@@ -18,7 +18,7 @@ There are many approaches to achieve the result above. For this particular secti
 
 #### __C#__
 
-{{region coverflow-xml-databanding_0}}
+{{region cs-coverflow-xml-databanding_0}}
 	ObservableCollection<ImageInfo> imagesCollection = new ObservableCollection<ImageInfo>();
 	…
 	this.coverFlow.DataContext = this.imagesCollection;
@@ -105,7 +105,7 @@ Then you should create your RadCoverFlow as follows:
 
 #### __XAML__
 
-{{region coverflow-xml-databanding_1}}
+{{region xaml-coverflow-xml-databanding_1}}
 	<telerik:RadCoverFlow ItemsSource="{Binding}">
 	      <telerik:RadCoverFlow.ItemTemplate>
 	            <DataTemplate>

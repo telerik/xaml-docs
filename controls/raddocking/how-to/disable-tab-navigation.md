@@ -10,9 +10,9 @@ position: 9
 
 # How to Disable the Tab Navigation of RadDocking Elements
 
-By default, when tab navigation is used, it is possible to focus __RadDocking__ on itself as well as some of its elements such as the GridResizer and the AutoHideArea. <Comment: Please review my changes to the previous sentence to ensure I did not create a technical error.>
+By default, when tab navigation is used, it is possible to focus __RadDocking__ itself as well as some of its elements such as GridResizer and AutoHideArea.
 
-With R2 2016 of UI for WPF, we introduced a way to easily disable the tab navigation of __RadDocking__ elements. This allows the user to directly navigate to the elements inside the active pane content when the press the Tab key.
+With R2 2016 of UI for WPF, we introduced a way to easily disable the tab navigation of __RadDocking__ elements. This allows the user to directly navigate to the elements inside the active pane content when the Tab key is pressed.
 
 >important You can use the approach explained here when using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to set a theme to the Docking control.
 
@@ -34,7 +34,7 @@ Let’s, for example, have a simple RadDocking definition as shown in __Example 
 	</telerik:RadDocking> 
 {{endregion}}
 
-In the example, when RadDocking receives the focus, a user needs to push the Tab key in order to navigate to the TextBox inside the pane as shown in __Figure 1__.   
+In the example, when RadDocking receives the focus, a user needs to push the Tab key several times in order to navigate to the TextBox inside the pane as shown in __Figure 1__.   
 
 #### __Figure 1: RadDocking behavior when Tab key is pressed multiple times__
 

@@ -19,8 +19,6 @@ We can use them against RadGridView with many rows and columns. The ultimate goa
 #### __Figure 1: Scroll to the last column of the last row__                     
 ![](images/how_to_scroll_gridview.png)
 
->tip When adding range of items to the __ItemsSource__ collection of __RadGridView__ the horizontal scrollbar`s position will be reset back to the top. You can keep track of the vertical scroll offset and reposition the scrollbar after the collection update.
-
 ## ScrollIntoViewAsync
 
 __ScrollIntoViewAsync__ method accepts the following parameters:

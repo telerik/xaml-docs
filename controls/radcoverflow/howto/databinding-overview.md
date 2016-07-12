@@ -49,4 +49,8 @@ Next in the agenda is to add RadCoverFlow to our page.
 
 Pay attention to the ItemsSource="{Binding}" line. This means that the collection we are going to bind to is passed as a data context. This means that we have to do one last thing. Right after the last team is added, add the line bellow.
 
-this.DataContext = championsLeagueTeams;
+#### __C#__
+
+{{region cs-coverflow-databinding-overview_2}}
+    this.DataContext = championsLeagueTeams;
+{{endregion}}

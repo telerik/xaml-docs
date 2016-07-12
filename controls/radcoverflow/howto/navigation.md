@@ -83,8 +83,8 @@ You can easily declare the value converter source part of the page and associate
 	<UserControl.Resources>
 	       <local:IntToIntValueConverter x:Key="IntToIntValueConverter"/>
 	</UserControl.Resources>
-	<StackPanel x:Name="LayoutRoot">
-	       <telerik:RadCoverFlow x:Name="cover" Height="600">
+	<StackPanel x:Name="LayoutRoot1">
+	       <telerik:RadCoverFlow x:Name="cover1" Height="600">
 	              <telerik:RadCoverFlowItem Background="White"/>
 	              <telerik:RadCoverFlowItem Background="Red"/>
 	              <telerik:RadCoverFlowItem Background="Green"/>

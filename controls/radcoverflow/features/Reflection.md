@@ -14,7 +14,7 @@ If you want to benefit from the built-in loading bar and you use a ItemTemplate 
 
 #### __XAML__
 
-{{region coverflow-Reflection_0}}
+{{region xaml-coverflow-Reflection_0}}
 	<telerik:RadCoverFlow>
 		<telerik:RadCoverFlow.ItemTemplate>
 			<DataTemplate>

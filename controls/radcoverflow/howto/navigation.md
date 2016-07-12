@@ -16,7 +16,7 @@ The first thing we need to do is to declare a CoverFlow control with some items 
 
 #### __XAML__
 
-{{region coverflow-navigation_0}}
+{{region xaml-coverflow-navigation_0}}
 	<StackPanel x:Name="LayoutRoot">
 	   <telerik:RadCoverFlow x:Name="cover" Height="600" >
 			<telerik:RadCoverFlowItem Background="White"/>
@@ -33,7 +33,7 @@ To make things simpler you can either implement your own range control or choose
 
 #### __XAML__
 
-{{region coverflow-navigation_1}}
+{{region xaml-coverflow-navigation_1}}
 	<telerik:RadSlider Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}"/>
 {{endregion}}
 
@@ -41,7 +41,7 @@ Now if you change the value of the slider control, the binding will also change 
 
 #### __XAML__
 
-{{region coverflow-navigation_2}}
+{{region xaml-coverflow-navigation_2}}
 	<telerik:RadSlider Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}" Minimum="0" 
 			Maximum="{Binding Items.Count, ElementName=cover}"/>
 {{endregion}}
@@ -50,7 +50,7 @@ Note that if you use ItemsSource for binding you should substitute the Items.Cou
 
 #### __C#__
 
-{{region coverflow-navigation_3}}
+{{region cs-coverflow-navigation_3}}
 	public class IntToIntValueConverter : IValueConverter
 	{
 		object IValueConverter.Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -79,7 +79,7 @@ You can easily declare the value converter source part of the page and associate
 
 #### __XAML__
 
-{{region coverflow-navigation_4}}
+{{region xaml-coverflow-navigation_4}}
 	<UserControl.Resources>
 	       <local:IntToIntValueConverter x:Key="IntToIntValueConverter"/>
 	</UserControl.Resources>
@@ -102,7 +102,7 @@ Note that all properties used in this example are inherited from the RangeBase c
 
 #### __XAML__
 
-{{region coverflow-navigation_5}}
+{{region xaml-coverflow-navigation_5}}
 	<ScrollBar Orientation="Horizontal" Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}" Minimum="0" 
 			Maximum="{Binding Items.Count, ElementName=cover, Converter={StaticResource IntToIntValueConverter}, ConverterParameter=-1}"/>
 {{endregion}}
@@ -111,7 +111,7 @@ Or
 
 #### __XAML__
 
-{{region coverflow-navigation_6}}
+{{region xaml-coverflow-navigation_6}}
 	<telerik:RadNumericUpDown ShowTextBox="False" Value="{Binding SelectedIndex, ElementName=cover, Mode=TwoWay}" Minimum="0" 
 			Maximum="{Binding Items.Count, ElementName=cover, Converter={StaticResource IntToIntValueConverter}, ConverterParameter=-1}"/>
 {{endregion}}

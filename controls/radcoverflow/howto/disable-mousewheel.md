@@ -19,7 +19,7 @@ There is no property that disables the mouse wheel in RadCoverFlow, but you coul
 	{
 		protected override void OnMouseWheel(System.Windows.Input.MouseWheelEventArgs e)
 		{
-			base.OnMouseWheel(e);
+			//base.OnMouseWheel(e);
 		}
 	}
 {{endregion}}

@@ -29,14 +29,12 @@ You can modify how a __RadGanttView__ scrolls using its __ScrollingService__ pro
 * [ScrollToDateTime(DateTime dateTime)](#scrolltodatetimedatetime-datetime)
 
 * [ScrollToColumn(int columnIndex) / ScrollToColumn(ColumnDefinitionBase columnDefinition)](#scrolltocolumnint-columnindex--scrolltocolumncolumndefinitionbase-columndefinition)
-<Comment: The target has a double-hyphen. Will the navigation work?>
 
 * [ScrollToRow(int rowIndex)] (#scrolltorowint-rowindex)
 
 * [ScrollHorizontalTo (double offset, GanttScrollArea ganttArea)] (#scrollhorizontalto-double-offset-ganttscrollarea-ganttarea)
 
 * [ScrollVerticalTo(double offset) / ScrollVerticalWith(double offset)] (#scrollverticaltodouble-offset--scrollverticalwithdouble-offset)
-<Comment: The target has a double-hyphen. Will the navigation work?>
 
 ### ScrollIntoView (object item)
 
@@ -45,10 +43,11 @@ This method is used to scroll the view horizontally and vertically so that a par
 #### __[C#] Example 1: Calling the ScrollIntoView method__
 
 {{region radganttview-scrolling_0}}
-	GanttView.ScrollingService.ScrollIntoView(task);
+	GanttView.ScrollingService.ScrollIntoView(task4);
 {{endregion}}
 
-__Figure 1__ illustrates how the view is scrolled vertically and TimeRuler part - horizontally when the code from __Example 1__ is executed for “task 4”. <Comment: The previous sentence does not make sense. I think there are words missing around "TimeRuler part". I also don't see that you've passed a value of 4 or anything called task 4, so I do not understand how to get to task 4 in the figure.>
+__Figure 1__ illustrates how the view is scrolled vertically and TimeRuler part - horizontally when the code from __Example 1__ is executed for “task 4”. 
+
 #### __Figure 1: GanttView before and after calling ScrollIntoView for “task 4"__
 
 ![](images/ganttview_scrolling_01.png)

@@ -52,7 +52,5 @@ Pay attention to the ItemsSource="{Binding}" line. This means that the collectio
 #### __C#__
 
 {{region cs-coverflow-databinding-overview_2}}
-
-	            this.DataContext = championsLeagueTeams;
-
+    this.DataContext = championsLeagueTeams;
 {{endregion}}

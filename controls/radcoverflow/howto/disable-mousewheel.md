@@ -17,9 +17,9 @@ There is no property that disables the mouse wheel in RadCoverFlow, but you coul
 {{region cs-coverflow-disable-mousewheel_0}}
 	public class CoverFlow : RadCoverFlow
 	{
-		protected override void OnMouseWheel(MouseWheelEventArgs e)
+		protected override void OnMouseWheel(System.Windows.Input.MouseWheelEventArgs e)
 		{
-			//base.OnMouseWheel(e);
+			base.OnMouseWheel(e);
 		}
 	}
 {{endregion}}

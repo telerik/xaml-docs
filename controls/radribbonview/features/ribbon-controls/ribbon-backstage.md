@@ -412,7 +412,7 @@ The __RadRibbonView__ is a complex control and the __backstage menu__ is only a 
 * [Ribbon ComboBox]({%slug radribbonview-ribbon-combobox%})
 * [Screen Tips]({%slug radribbonview-screentips%})
 
-# See Also
+## See Also
 * [Selection]({%slug radribbonview-selection%})
 * [Resizing]({%slug radribbonview-resizing%})
 * [Minimization]({%slug radribbonview-minimization%})

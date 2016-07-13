@@ -28,7 +28,7 @@ First, for the purpose of this article, we will create a new **Employee** class 
 
 #### __[C#] Example 1: Creating the Employee class__
 
-	{{region radpropertygrid-data-annotations_1}}
+	{{region cs-radpropertygrid-data-annotations_1}}
 	     public class Employee
 	    {       
 	        public string FirstName { get; set; }
@@ -42,7 +42,7 @@ First, for the purpose of this article, we will create a new **Employee** class 
 
 #### __[VB.NET] Example 1: Creating the Employee class__
 
-	{{region radpropertygrid-data-annotations_1}}
+	{{region vb-radpropertygrid-data-annotations_1}}
 	    Public Class Employee
 	        Public Property FirstName() As String
 	            Get
@@ -105,7 +105,7 @@ The declaration of RadPropertyGrid control inside the Grid:
 
 #### __[XAML] Example 2: Declaring RadPropertyGrid__
 
-	{{region radpropertygrid-data-annotations_0}}
+	{{region xaml-radpropertygrid-data-annotations_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
 	{{endregion}}
 
@@ -113,7 +113,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 #### __[C#] Example 3: Binding Employee instance to RadPropertyGrid__
 
-	{{region radpropertygrid-data-annotations_2}}
+	{{region cs-radpropertygrid-data-annotations_2}}
 	this.propertyGrid1.Item = new Employee()
 	            {
 	                FirstName = "Sarah",
@@ -127,7 +127,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 #### __[VB.NET] Example 3: Binding Employee instance to RadPropertyGrid__
 
-	{{region radpropertygrid-data-annotations_2}}
+	{{region vb-radpropertygrid-data-annotations_2}}
 	    Me.PropertyGrid1.Item = New Employee() With { _
 	  .FirstName = "Sarah", _
 	  .LastName = "Blake", _
@@ -161,7 +161,7 @@ The **Display** attribute specifies localizable strings for data types and membe
 
 #### __[C#] Example 4: Setting Display attribute__
 
-	{{region radpropertygrid-data-annotations_3}}
+	{{region cs-radpropertygrid-data-annotations_3}}
      //Rename the StartingDate property to Year in the UI
      [Display(Name = "Year")]
      public DateTime StartingDate { get; set; }
@@ -177,7 +177,7 @@ The **Display** attribute specifies localizable strings for data types and membe
 
 #### __[VB.NET] Example 4: Setting Display attribute__
 
-	{{region radpropertygrid-data-annotations_3}}
+	{{region vb-radpropertygrid-data-annotations_3}}
 	'Rename the StartingDate property to Year in the UI
 	<Display(Name := "Year")> _
 	Public Property StartingDate() As DateTime
@@ -221,7 +221,7 @@ The **Browsable** attribute specifies whether a property should be displayed or 
 
 #### __[C#] Example 5: Setting Browsable attribute__
 
-	{{region radpropertygrid-data-annotations_4}}
+	{{region cs-radpropertygrid-data-annotations_4}}
      //Hide StartingDate from the UI
     [Browsable(false)]
     public DateTime StartingDate { get; set; }
@@ -229,7 +229,7 @@ The **Browsable** attribute specifies whether a property should be displayed or 
 
 #### __[VB.NET] Example 5: Setting Browsable attribute__
 
-	{{region radpropertygrid-data-annotations_4}}
+	{{region vb-radpropertygrid-data-annotations_4}}
 	'Hide StartingDate from the UI
 	<Browsable(False)> _
 	Public Property StartingDate() As DateTime
@@ -249,7 +249,7 @@ The **ReadOnly** attribute specifies whether the property this attribute is boun
 
 #### __[C#] Example 6: Setting ReadOnly attribute__
 
-	{{region radpropertygrid-data-annotations_5}}
+	{{region cs-radpropertygrid-data-annotations_5}}
      //Set StartingDate as Read-Only
     [ReadOnly(true)]
     public DateTime StartingDate { get; set; }
@@ -257,7 +257,7 @@ The **ReadOnly** attribute specifies whether the property this attribute is boun
 
 #### __[VB.NET] Example 6: Setting ReadOnly attribute__
 
-	{{region radpropertygrid-data-annotations_5}}
+	{{region vb-radpropertygrid-data-annotations_5}}
 	'Set StartingDate as Read-Only
 	<[ReadOnly](True)> _
 	Public Property StartingDate() As DateTime
@@ -275,7 +275,7 @@ To see these attributes in action, let's modify the Employee class and see the r
 
 #### __[C#] Example 7: Modifying sample data__
 
-	{{region radpropertygrid-data-annotations_6}}
+	{{region cs-radpropertygrid-data-annotations_6}}
     [Display(Description = "Employee's first name.", GroupName="Personal Information")]
     public string FirstName { get; set; }     
 
@@ -297,7 +297,7 @@ To see these attributes in action, let's modify the Employee class and see the r
 
 #### __[VB.NET] Example 7: Modifying sample data__
 
-	{{region radpropertygrid-data-annotations_6}}
+	{{region vb-radpropertygrid-data-annotations_6}}
 	<Display(Description := "Employee's first name.", GroupName := "Personal Information")> _
 	Public Property FirstName() As String
 		Get

@@ -22,7 +22,7 @@ Here is an example with RadPropertyGrid that has its Item property bound to a Bu
 
 #### __[XAML]Example 1: Using AutoBindBehavior__
 
-	{{region radpropertygrid-autobind_0}}
+	{{region xaml-radpropertygrid-autobind_0}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	        <Grid.Resources>
 	            <DataTemplate x:Key="editorTemplate">

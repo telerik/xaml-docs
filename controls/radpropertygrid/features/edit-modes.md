@@ -35,8 +35,8 @@ The default option behaves similarly for both __Flat and Hierarchical__ [RenderM
 
 #### __[XAML]Example 1: RadPropertyGrid with Default EditMode__
 
-	{{region radpropertygrid-edit-modes_0}}
-	<telerik:RadPropertyGrid x:Name="PropertyGrid1" RenderMode="Flat" EditMode="Default">
+	{{region xaml-radpropertygrid-edit-modes_0}}
+	<telerik:RadPropertyGrid RenderMode="Flat" EditMode="Default">
 	{{endregion}}
 
 
@@ -59,7 +59,7 @@ It relies on PropertyDefinition’s Binding property. Setting this mode is not s
 
 #### __[XAML]Example 2: RadPropertyGrid with EditMode set to Single__
 
-{{region radpropertygrid-edit-modes_1}}
+{{region xaml-radpropertygrid-edit-modes_1}}
 
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" RenderMode="Flat" EditMode="Single">
 {{endregion}}
@@ -74,7 +74,7 @@ __Figure 2__: RadPropertyGrid with Single EditMode
 
 ### BeginEdit
 
-__BeginEditMethod__ has to overloads:
+__BeginEditMethod__ has two overloads:
 
 1. __BeginEdit()__ – starts an edit operation for the current PropertyDefinition.
                 
@@ -87,7 +87,7 @@ If the edit operation is successfully initiated, RadPropertyGrid’s __Beginning
 
 #### __[C#]Example 3: Canceling the edit as BeginningEdit event is raised__
 
-{{region radpropertygrid-edit-modes_0}}
+{{region cs-radpropertygrid-edit-modes_0}}
 
 	void RpgBeginningEdit(object sender, PropertyGridBeginningEditEventArgs e)
 	{
@@ -100,7 +100,7 @@ If the edit operation is successfully initiated, RadPropertyGrid’s __Beginning
 
 #### __[VB]Example 3: Canceling the edit as BeginningEdit event is raised__
 
-{{region radpropertygrid-edit-modes_0}}
+{{region vb-radpropertygrid-edit-modes_0}}
 
 	    Private Sub RpgBeginningEdit(sender As Object, e As PropertyGridBeginningEditEventArgs)
 	        ' Custom logic

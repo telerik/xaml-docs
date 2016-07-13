@@ -10,7 +10,6 @@ position: 1
 
 # Templates Structure
 
-
 Like most UI controls, RadPropertyGrid allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with: 
 
 * [RadPropertyGrid Template Structure](#radpropertygrid-template)
@@ -22,7 +21,6 @@ Like most UI controls, RadPropertyGrid allows you to template it in order to cha
 Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) on two different approaches on how to extract the ControlTemplates.
 
 ## RadPropertyGrid Template
-
 
 * __PART_RootElement__ - hosts the elements of the template. It represents the border of the RadPropertyGrid and is of type Border;
 
@@ -59,8 +57,6 @@ Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) giv
 
 ## PropertyGridField Template
 
-
-
 * __PART_RootElement__ - hosts the elements of the template. It represents the border of the DataFormDataField and is of type Border;
 
 * __PART_PropertyGridFieldGrid__ - provides columns for the template elements. It represents the background of the DataFormDataField and is of type Grid;
@@ -87,16 +83,11 @@ Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) giv
 
 * __[Border]__ - represents the inner border and the background of the row, when the mouse is over it and is of type Border.
 
-
- ![](images/RadPropertyGrid_PropertyGridFieldTemplate.png)
-
-
+![](images/RadPropertyGrid_PropertyGridFieldTemplate.png)
 
 ## Modifying RadPropertyGrid Template with Blend
 
-
-When extracting the control template with MS Blend (as demonstrated in this  [ common article ]({%slug common-styling-appearance-edit-control-templates-blend%})) some dependency properties of controls that are defined in DataTemplates, does not have their values extracted correctly. You have two options:
-        
+When extracting the control template with MS Blend (as demonstrated in [this article]({%slug common-styling-appearance-edit-control-templates-blend%})) some dependency properties of controls that are defined in DataTemplates, does not have their values extracted correctly. You have two options:
 
 * Manually extract the template template from the Themes.Implicit files we ship with every installation. You can find it together with all the other templates used for the PropertyGrid inside "Telerik.Windows.Controls.Data.xaml" file browsing to "C:\Program Files (x86)\Telerik\UI for [product][version]\Themes.Implicit\OfficeBlack\Themes" folder. Please note there is a different folder for each Theme and you should browse to the one you use.
             
@@ -107,7 +98,7 @@ You can find instructions on how to fix the missing Bindings bellow:
                    
 #### __XAML__: FlatRenderingTemplate
 
-	{{region radpropertygrid-styles-and-templates-templates-structure_0}}
+	{{region xaml-radpropertygrid-styles-and-templates-templates-structure_0}}
 
         <telerik:ItemsControl VirtualizingStackPanel.VirtualizationMode="Standard" ItemsSource="{Binding}" IsTabStop="False">
             <telerik:ItemsControl.Style>
@@ -150,14 +141,12 @@ You can find instructions on how to fix the missing Bindings bellow:
                 </propertyGrid:FlatRenderingItemTemplateSelector>
             </telerik:ItemsControl.ItemTemplateSelector>
         </telerik:ItemsControl>	
-
 	{{endregion}}
 
 *   Under __FlatTemplate__:
-                  
 
 #### __XAML__: FlatTemplate
-	{{region radpropertygrid-styles-and-templates-templates-structure_1}}
+	{{region xaml-radpropertygrid-styles-and-templates-templates-structure_1}}
 	
 	<ItemsControl ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}" Style="{StaticResource ItemsControlStyle}" IsTabStop="False">
 	        <ItemsControl.ItemTemplate>
@@ -169,13 +158,11 @@ You can find instructions on how to fix the missing Bindings bellow:
 
 	{{endregion}}
 
-
 *  Under __GroupTemplate__:
-                    
 
 #### __XAML__: GroupTemplate
 
-	{{region radpropertygrid-styles-and-templates-templates-structure_2}}
+	{{region xaml-radpropertygrid-styles-and-templates-templates-structure_2}}
 	<ItemsControl ItemsSource="{Binding ., Converter={StaticResource GroupingItemsSourceConverter}}" Style="{StaticResource ItemsControlStyle}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
@@ -209,14 +196,11 @@ You can find instructions on how to fix the missing Bindings bellow:
         </ItemsControl>
 	{{endregion}}
 
-
-
 *  Under __VirtualizedFlatTemplate__:
-                  
 
 #### __XAML__: VirtualizedFlatTemplate
 
-	{{region radpropertygrid-styles-and-templates-templates-structure_3}}
+	{{region xaml-radpropertygrid-styles-and-templates-templates-structure_3}}
 	<ItemsControl
                 VirtualizingStackPanel.VirtualizationMode="Standard"
                 ItemsSource="{Binding Converter={StaticResource FlatItemSourceConverter}}"

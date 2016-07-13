@@ -32,7 +32,7 @@ For the means of illustrating the separate mode values, the following types will
 
 #### __[C#]Example 1: Preparing sample data__
 
-	{{region radpropertygrid-defining-propertysets_2}}
+	{{region cs-radpropertygrid-defining-propertysets_0}}
 	    public class Ellipse
 	    {
 	        public Color FillColor { get; set; }
@@ -81,7 +81,7 @@ For the means of illustrating the separate mode values, the following types will
 
 #### __[VB.NET]Example 1: Preparing sample data__
 
-	{{region radpropertygrid-defining-propertysets_3}}
+	{{region vb-radpropertygrid-defining-propertysets_0}}
 	    Public Class Ellipse
 	        Public Property FillColor() As Color
 	            Get
@@ -186,7 +186,7 @@ For the means of illustrating the separate mode values, the following types will
 
 #### __[XAML] Example 2: Defining RadPropertyGrid__
 
-	{{region radpropertygrid-defining-propertysets_0}}
+	{{region xaml-radpropertygrid-defining-propertysets_1}}
 	<Grid>
         <Grid.Resources>
             <local:ViewModel x:Key="vm" />
@@ -226,7 +226,7 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 
 #### __[XAML]Example 3: Defining editor template__
 
-	{{region radpropertygrid-defining-propertysets_1}}
+	{{region xaml-radpropertygrid-defining-propertysets_2}}
 	 <Grid x:Name="LayoutRoot">
 	        <Grid.Resources>
 	            <local:ViewModel x:Key="vm" />
@@ -246,7 +246,7 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 
 #### __[C#]Example 4: Setting EditorTemplate of a PropertyDefinition__
 
-	{{region radpropertygrid-defining-propertysets_4}}
+	{{region cs-radpropertygrid-defining-propertysets_3}}
      private void RadPropertyGrid_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
        {
            if (e.PropertyDefinition.DisplayName == "CornersCount")
@@ -254,18 +254,21 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
                e.PropertyDefinition.EditorTemplate = LayoutRoot.Resources["editorTemplate"] as DataTemplate;
            }
        }
+	{{endregion}}
 	
 #### __[VB.NET]Example 4: Setting EditorTemplate of a PropertyDefinition__
 
-	{{region radpropertygrid-defining-propertysets_5}}
+	{{region vb-radpropertygrid-defining-propertysets_3}}
 	    Private Sub RadPropertyGrid_AutoGeneratingPropertyDefinition(sender As Object, e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
 	        If e.PropertyDefinition.DisplayName = "CornersCount" Then
 	            e.PropertyDefinition.EditorTemplate = TryCast(LayoutRoot.Resources("editorTemplate"), DataTemplate)
 	        End If
 	    End Sub
-
+	{{endregion}}
 	
 #### __[C#]Example 5: Defining IValueConverter__
+
+	{{region cs-radpropertygrid-defining-propertysets_4}}
 	 public class MyConverter : IValueConverter
 	    {
 	 
@@ -279,11 +282,11 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	            return value;
 	        }
 	    }
-	
 	{{endregion}}
 	
-	
 #### __[VB.NET]Example 5: Defining IValueConverter__
+
+	{{region vb-radpropertygrid-defining-propertysets_4}}
 	    Public Class MyConverter
 	        Implements IValueConverter
 	
@@ -295,7 +298,6 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	            Return value
 	        End Function
 	    End Class
-	
 	{{endregion}}
 
 ![Rad Property Grid Sets Customized](images/RadPropertyGrid_Sets_Customized.png)

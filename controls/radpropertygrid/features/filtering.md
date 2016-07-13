@@ -20,12 +20,10 @@ As of __Q3 2015, RadPropertyGrid__ exposes a new property – __EnableDeferredFi
 
 When __EnableDeferredFiltering__ is set to __“True”__, the filtering will be executed when the editor commits its value on __lost focus/enter__ or __tab key__. 
 
-#### __[XAML]Example 1: Enabling Deferred Filtering__
+#### __[XAML] Example 1: Enabling Deferred Filtering__
 
-	<telerik:RadPropertyGrid x:Name="propertyGrid" 
-	                         EnableDeferredFiltering="True">
-	</telerik:RadPropertyGrid>
-
+	{{region xaml-radpropertygrid-filtering_0}}
+	{{endregion}}
 
 # See also
 

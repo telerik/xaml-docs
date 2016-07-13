@@ -13,36 +13,26 @@ position: 12
 
 
 RadPropertyGrid  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing.
-      
 
 >Please note that the keyboard navigation is supported only when RadpropertyGrid's property - RenderMode is set to Flat.
-      
 
 Here is the list of the keys that are supported:
 
 * __Tab / Shift + Tab__ - navigates through the items.
-        
 
 * __Ctrl + Shift + O__ - sorts by OrderIndex and DisplayName.
-        
 
 * __Ctrl + Shift + C__ - groups by GroupName.
-        
 
 * __Ctrl + Shift + Space__ - expands the field that represents the current property definition.
-        
 
 * __Ctrl + End__ - moves to the last field.
-        
 
 * __Ctrl + Home__ - moves to the first field.
-        
 
 * __PageDown__ - moves a page down.
-        
 
 * __PageUp__ - moves a page up.
-        
 
 ## Custom Keyboard Command Provider
 
@@ -53,9 +43,9 @@ The approach for accomplishing the purpose is to create a separate class, inheri
 
 The class responsible for customizing the keyboard navigation should be similar to the one below:
 
-#### __[C#]Example 1: Creating custom command provider__
+#### __[C#] Example 1: Creating custom command provider__
 
-	{{region radpropertygrid-features-keyboard-support_1}}
+	{{region cs-radpropertygrid-features-keyboard-support_1}}
 	    class CustomKeyboardCommandProvider : PropertyGridCommandProvider
 	    {
 	        public CustomKeyboardCommandProvider()
@@ -96,7 +86,10 @@ The class responsible for customizing the keyboard navigation should be similar 
 	    }
 	{{endregion}}
 
+#### __[VB.NET] Example 1: Creating custom command provider__
 
+	{{region vb-radpropertygrid-features-keyboard-support_1}}
+	{{endregion}}
 
 Following up the code-snippet above, a press of Tab/ Shift + Tab keys will result in moving the focus to the property field above/ below and expanding it if possible. However, do not forget to remove the predefined commands for that particular key by calling the Clear() method.
 
@@ -104,26 +97,30 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 #### __[XAML]Example 2: Defining the custom command provider in XAML__
 
-	{{region radpropertygrid-features-keyboard-support_0}}
+	{{region xaml-radpropertygrid-features-keyboard-support_0}}
 	  <telerik:RadPropertyGrid.CommandProvider>
 	          <my:CustomKeyboardCommandProvider PropertyGrid="{Binding ElementName=PropertyGrid1}" />
 	  </telerik:RadPropertyGrid.CommandProvider>
 	{{endregion}}
 
+#### __[C#] Example 3: Set the custom command provider to RadPropertyGrid__
 
-
-#### __[C#]Example 3: Set the custom command provider to RadPropertyGrid__
-
-	{{region radpropertygrid-features-keyboard-support_2}}
+	{{region cs-radpropertygrid-features-keyboard-support_2}}
 	    this.RadPropertyGrid.CommandProvider = new CustomKeyboardCommandProvider(this.RadPropertyGrid);
 	{{endregion}}
 
+#### __[VB.NET] Example 3: Set the custom command provider to RadPropertyGrid__
+
+	{{region vb-radpropertygrid-features-keyboard-support_2}}
+	{{endregion}}
 
 ## Disabling Navigation
 
 As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBuiltInNavigation__. By default its value is set to "True". In order to disable the navigation which comes from "Flat" RenderMode, you can set its value to "False".
 
-#### __[C#]Example 4: Disabling navigation__
+#### __[C#] Example 4: Disabling navigation__
+
+	{{region cs-radpropertygrid-features-keyboard-support_3}}
 	public class CustomKeyboardCommandProvider : PropertyGridCommandProvider
 	{
     	public CustomKeyboardCommandProvider()
@@ -139,8 +136,12 @@ As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBu
         	this.EnableBuiltInNavigation = false;
     	}
 	}
+	{{endregion}}
 
+#### __[VB.NET] Example 4: Disabling navigation__
 
+	{{region vb-radpropertygrid-features-keyboard-support_3}}
+	{{endregion}}
 
 # See Also
 

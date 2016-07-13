@@ -26,7 +26,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 
 #### __[C#]Example 1: Creating custom DataTemplateSelector__
 
-	{{region radpropertygrid-datatemplateselector_1}}	    
+	{{region cs-radpropertygrid-datatemplateselector_1}}	    
 	    public class Customer
 	    {
 	        public string FirstName { get; set; }
@@ -61,7 +61,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 
 #### __[VB]Example 1: Creating custom DataTemplateSelector__
 
-	{{region radpropertygrid-datatemplateselector_2}}
+	{{region vb-radpropertygrid-datatemplateselector_1}}
 	    Public Class Customer
 	        Public Property FirstName() As String
 	            Get
@@ -136,11 +136,9 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 	
 	{{endregion}}
 
-{% if site.site_name == 'WPF' %}
-
 #### __[XAML]Example 2: Defining custom DataTemplateSelector__
 
-	{{region radpropertygrid-datatemplateselector_0}}
+	{{region xaml-radpropertygrid-datatemplateselector_0}}
 			<Window x:Class="YourProjectNamespace.MainWindow"
 			        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -168,43 +166,6 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 				</Grid>
 			</Window>
 	{{endregion}}
-
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
-#### __[XAML]Example 2: Defining custom DataTemplateSelector__
-
-	{{region radpropertygrid-datatemplateselector_1}}
-			<UserControl x:Class="YourProjectNamespace.MainPage"
-			             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-			             xmlns:local="clr-namespace:YourProjectNamespace"
-			             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-			             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	
-				<Grid x:Name="LayoutRoot" Background="White">
-					<Grid.Resources>
-						<local:FieldTemplateSelector x:Key="DataTemplateSelector">
-							<local:FieldTemplateSelector.StringDataTemplate>
-								<DataTemplate>
-									<TextBox Foreground="Red"
-									         TextAlignment="Right"
-									         telerik:AutoBindBehavior.UpdateBindingOnElementLoaded="Text" />
-								</DataTemplate>
-							</local:FieldTemplateSelector.StringDataTemplate>
-							<local:FieldTemplateSelector.PhoneNumberDataTemplate>
-								<DataTemplate>
-									<telerik:RadMaskedTextInput Mask="###-###-###" Value="{Binding PhoneNumber, Mode=TwoWay}" />
-								</DataTemplate>
-							</local:FieldTemplateSelector.PhoneNumberDataTemplate>
-						</local:FieldTemplateSelector>
-					</Grid.Resources>
-					<telerik:RadPropertyGrid x:Name="rpg" EditorTemplateSelector="{StaticResource DataTemplateSelector}" />
-				</Grid>
-			</UserControl>
-	{{endregion}}
-
-{% endif %}
 
 >You might wonder where these "telerik" and "local", in front of the tags RadPropertyGrid and __FieldTemplateSelector__, came from. Well, these are the names of the namespaces you give when you import the appropriate assembly or your custom __DataTemplateSelector__ class into the XAML file.
 		  

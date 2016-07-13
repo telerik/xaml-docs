@@ -16,7 +16,7 @@ __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that pro
 
 #### __[XAML]Example 1: Defining CollectionEditor__
 
-	{{region radpropertygrid-collectioneditor_0}}
+	{{region xaml-radpropertygrid-collectioneditor_0}}
 	  <telerik:CollectionEditor Source="{Binding Players}" 
 	                            Header="Players" />
 	
@@ -83,7 +83,7 @@ The methods listed below identify the logic that is executed when a certain comm
 
 #### __[C#]__ Example 3: CollectionEditor's executable commands  
 
-{{region collectioneditor-customize-commands_1}}
+{{region cs-collectioneditor-customize-commands_1}}
 	void MoveCurrentToNext()
 	void MoveCurrentToPrevious()
 	void Delete()
@@ -96,7 +96,7 @@ With the help of those methods you can identify whether a certain command can be
 
 #### __[C#]__ Example 4:CollectionEditor "can-execute" methods 
 
-{{region collectioneditor-customize-commands_2}}
+{{region cs-collectioneditor-customize-commands_2}}
 	bool CanMoveCurrentToNextExecute()
 	bool CanMoveCurrentToPreviousExecute()
 	bool CanDeleteExecute()
@@ -109,7 +109,7 @@ The first step is to create your own class that inherits from CollectionNavigato
 
 #### __[C#]__ Example 5: Creating a class that provides the custom commands
 
-{{region collectioneditor-customize-commands_3}}
+{{region cs-collectioneditor-customize-commands_3}}
 	public class CustomCommandProvider : CollectionNavigatorBaseCommandProvider
 	{
 		public CustomCommandProvider() : base(null)
@@ -132,7 +132,7 @@ In case you have a requirement to ask for the customer`s approval when moving th
 
 #### __[C#]__ Example 6: Overriding the default commands
 
-{{region collectioneditor-customize-commands_2}}
+{{region cs-collectioneditor-customize-commands_4}}
 
 		public override void MoveCurrentToNext()
 		{
@@ -161,7 +161,7 @@ The last thing to be done is to set CommandProvider Property of the CollectionEd
 
 #### __[XAML]__ Example 7: Assigning the CommandProvider 
 
-{{region collectioneditor-customize-commands_3}}
+{{region xaml-collectioneditor-customize-commands_5}}
 
 	
 	<telerik:CollectionEditor x:Name="CollectionEditor"
@@ -172,7 +172,7 @@ The last thing to be done is to set CommandProvider Property of the CollectionEd
 
 #### __[C#]__ Example 8: Assigning the CommandProvider 
 
-{{region collectioneditor-customize-commands_4}}
+{{region cs-collectioneditor-customize-commands_6}}
 
 	this.CollectionEditor.CommandProvider = new CustomCommandProvider(this.CollectionEditor);
 	{{endregion}}

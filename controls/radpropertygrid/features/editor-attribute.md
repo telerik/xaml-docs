@@ -55,7 +55,7 @@ For the purposes of this example, the definition of RadPropertyGrid is:
 
 #### __[XAML]Example 1: Defining RadPropertyGrid__
 
-	{{region radpropertygrid-editor-attribute_0}}
+	{{region xaml-radpropertygrid-editor-attribute_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid" Item="{Binding Captain}" />
 	{{endregion}}
 
@@ -66,7 +66,7 @@ The property __Captain__ is defined in the ViewModel as follows:
 
 #### __[C#]Example 2: Defining property in the ViewModel__
 
-	{{region radpropertygrid-editor-attribute_1}}
+	{{region cs-radpropertygrid-editor-attribute_1}}
 	private Player captain;
 	public Player Captain
 	{
@@ -93,7 +93,7 @@ For example:
 
 #### __[C#]Example 3: Specifying the type of the editor__
 
-	{{region radpropertygrid-editor-attribute_2}}
+	{{region cs-radpropertygrid-editor-attribute_2}}
 	
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl)]
 	public PhoneNumber PhoneNumber
@@ -126,7 +126,7 @@ __Figure 1__: EditorAtrribute with editorType specified
 
 #### __[C#]Example 4: Specifying the type of the editor and the style of the containing host__
 
-	{{region radpropertygrid-editor-attribute_3}}
+	{{region cs-radpropertygrid-editor-attribute_3}}
 	
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl), Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.DropDown)]
 	public PhoneNumber PhoneNumber
@@ -159,7 +159,7 @@ __Figure 2__: EditorAtrribute with editorType and editorStyle specified
 
 #### __[C#]Example 5: Specifying the type of the editor and the target property__
 
-{{region radpropertygrid-editor-attribute_4}}
+{{region cs-radpropertygrid-editor-attribute_4}}
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(RadNumericUpDown), "Value")]
 	public int Number
 	{
@@ -192,7 +192,7 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 
 #### __[C#]Example 6: Specifying the type of the editor, the target property and style of the containing host__
 
-	{{region radpropertygrid-editor-attribute_5}}
+	{{region cs-radpropertygrid-editor-attribute_5}}
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
 	public string Name
 	{
@@ -221,7 +221,7 @@ The definition of the Custom editor __PhoneEditorControl__ is:
 
 #### __[XAML]Example 7: Defining the custom editor__
 
-	{{region radpropertygrid-editor-attribute_1}}
+	{{region xaml-radpropertygrid-editor-attribute_1}}
 	<UserControl x:Class="RadPropertyGrid_EditorAttribute.PhoneEditorControl"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -242,9 +242,7 @@ The definition of the Custom editor __PhoneEditorControl__ is:
 				<TextBlock Text=") " />
 			<TextBox Text="{Binding Number, Mode=TwoWay}" />
 		</StackPanel>
-	
 	</UserControl>
-	
 	{{endregion}}
 
 
@@ -253,7 +251,7 @@ The definition of the __PhoneNumber__ class is:
 
 #### __[C#]Example 8: Defining PhoneNumber object__
 
-	{{region radpropertygrid-editor-attribute_6}}
+	{{region cs-radpropertygrid-editor-attribute_6}}
 	public class PhoneNumber : INotifyPropertyChanged
 	{
 		private string countryCode;
@@ -324,7 +322,7 @@ The definition of the __Player business object__ used for the example is:
 
 #### __[C#]Example 9: Defining Player object__
 	
-	{{region radpropertygrid-editor-attribute_7}}
+	{{region cs-radpropertygrid-editor-attribute_7}}
 	public class Player : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;

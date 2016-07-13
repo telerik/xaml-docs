@@ -10,8 +10,6 @@ position: 4
 
 # Unbound Mode
 
-
-
 With this feature RadPropertyGrid enables its users to create their own nested property hierarchies, without the need to respect any of the actual parent/child or siblings relations. 
 
 ## AutogenerateBindingPaths
@@ -20,10 +18,9 @@ When non-auto-generated PropertyDefinitions are used, RadPropertyGrid relies on 
 
 The following examples illustrate two possible hierarchies based on the following class definitions:
 
+#### __[C#] Example 1: Prepare sample objects__
 
-#### __[C#]Example 1: Prepare sample objects__
-
-	{{region radpropertygrid-unbound-mode_2}}
+	{{region cs-radpropertygrid-unbound-mode_2}}
 	    public class Employee
 	    {
 	        public string Name { get; set; }
@@ -40,9 +37,9 @@ The following examples illustrate two possible hierarchies based on the followin
 
 
 
-#### __[VB.NET]Example 1: Prepare sample objects__
+#### __[VB.NET] Example 1: Prepare sample objects__
 
-	{{region radpropertygrid-unbound-mode_3}}
+	{{region vb-radpropertygrid-unbound-mode_2}}
 	    Public Class Employee
 	        Public Property Name() As String
 	            Get
@@ -95,14 +92,11 @@ The following examples illustrate two possible hierarchies based on the followin
 	    End Class
 	{{endregion}}
 
-
-
 And the sample data:
-          
 
-#### __[C#]Example 2: Prepare sample data__
+#### __[C#] Example 2: Prepare sample data__
 
-	{{region radpropertygrid-unbound-mode_4}}
+	{{region cs-radpropertygrid-unbound-mode_3}}
 	    public MainPage()
 	        {
 	            InitializeComponent();
@@ -119,11 +113,9 @@ And the sample data:
 	        }
 	{{endregion}}
 
+#### __[VB.NET] Example 2: Prepare sample data__
 
-
-#### __[VB.NET]Example 2: Prepare sample data__
-
-	{{region radpropertygrid-unbound-mode_5}}
+	{{region vb-radpropertygrid-unbound-mode_3}}
 	   Public Sub New()
 	        InitializeComponent()
 	        Me.rpg.Item = New Employee()
@@ -141,10 +133,9 @@ And the sample data:
 	    End Sub
 	{{endregion}}
 
+#### __[XAML] Example 3: RadPropertyGrid UnboundMode first example__
 
-#### __[XAML]Example 3: RadPropertyGrid UnboundMode first example__
-
-	{{region radpropertygrid-unbound-mode_0}}
+	{{region xaml-radpropertygrid-unbound-mode_0}}
 	<telerik:RadPropertyGrid x:Name="rpg" 
                              AutoGenerateBindingPaths="False" 
                              AutoGeneratePropertyDefinitions="False" 
@@ -167,16 +158,11 @@ And the sample data:
 	
 	{{endregion}}
 
-
-
-
-
 ![Rad Property Grid Unboud Mode 1](images/RadPropertyGrid_UnboudMode1.png)
 
+#### __[XAML] Example 4: RadPropertyGrid UnboundMode second example__
 
-#### __[XAML]Example 4: RadPropertyGrid UnboundMode second example__
-
-	{{region radpropertygrid-unbound-mode_1}}
+	{{region xaml-radpropertygrid-unbound-mode_1}}
 	<telerik:RadPropertyGrid x:Name="rpg" 
                              AutoGenerateBindingPaths="False" 
                              AutoGeneratePropertyDefinitions="False" 
@@ -196,6 +182,5 @@ And the sample data:
 	        </telerik:RadPropertyGrid>
 	
 	{{endregion}}
-
 
 ![Rad Property Grid Unboud Mode 2](images/RadPropertyGrid_UnboudMode2.png)

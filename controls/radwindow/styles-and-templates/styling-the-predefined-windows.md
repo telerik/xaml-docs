@@ -16,13 +16,13 @@ This article explains how you could customize the look and feel of the predefine
 
 * [Applying IconTemplate](#applying-icontemplate)
 
-## Modifying the default Style
+## Modifying the Default Style
 
->To style the predefined dialogs of the __RadWindow__ static class, you have to call them via the overload that takes __DialogParameters__ object as an argument. Learn more about the predefined dialogs [here]({%slug radwindow-features-predefined-dialogs%}).
+>To style the predefined dialogs of the __RadWindow__ static class, you have to call them via the overload that takes a __DialogParameters__ object as an argument. Learn more about the predefined dialogs [here]({%slug radwindow-features-predefined-dialogs%}).
 
 In this article's example we will use __RadAlert__, but the approach is the same for __RadConfirm__ and __RadPrompt__.
 
-First, you will need to obtain the default style that targets __RadAlert__. To learn how to do this, take a look at [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic. The extracted __RadAlertStyle__ will be similar to the following:
+First, you will need to obtain the default style that targets __RadAlert__. To learn how to do this, take a look at the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic. The extracted __RadAlertStyle__ will be similar to the following:
 
 #### __[XAML] Example 1: Default RadAlertStyle__
 
@@ -45,7 +45,7 @@ First, you will need to obtain the default style that targets __RadAlert__. To l
 
 >If you are not using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you will need to copy all the referenced inside __RadAlertStyle__ StaticResources to your project as well (such as AlertIconTemplate).
 
-Now, you could make any modifications in the template, such as removing the OK button, changing the Alert icon, etc.
+Now you can make modifications in the template such as removing the OK button, changing the Alert icon, etc.
 
 And finally, you have to pass the customized __RadAlertStyle__ to the predefined dialog via the __DialogParameters__ object and its __ContentStyle__ property.
 
@@ -74,7 +74,7 @@ __Figure 1__ shows the final result.
 
 ## Applying IconTemplate
 
-With Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IconTemplate__ property was introduced. By using it you are now able to easily change the icon of the predefined windows.  
+With the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} the __IconTemplate__ property was introduced. By using it you are now able to easily change the icon of the predefined windows.  
 
 Basically, a valid DataTemplate needs to be created and that Template should be passed to the predefined windows via the __DialogParameters__ and its __IconTemplate__ property:
 
@@ -86,7 +86,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 	</DataTemplate>
 {{endregion}}
 
-#### __[C#] Example 3: Applying the DataTemplate to IconTemplate property__
+#### __[C#] Example 4: Applying the DataTemplate to the IconTemplate property__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_2}}
 	RadWindow.Alert(new DialogParameters()
@@ -96,7 +96,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 	});
 {{endregion}}
 
-#### __[VB.NET] Example 3: Applying the DataTemplate to IconTemplate property__
+#### __[VB.NET] Example 4: Applying the DataTemplate to the IconTemplate property__
 
 {{region radwindow-styles-and-templates-styling-the-predefined-windows_3}}
 	RadWindow.Alert(New DialogParameters() With
@@ -110,7 +110,7 @@ __Figure 2__ shows the final result.
 
 #### __Figure 2: RadAlert with set IconTemplate__
 ![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_02.png)
-
+<Comment: The caption does not make sense.>
 # See Also
 
  * [Template Structure]({%slug radwindow-styles-and-templates-template-structure%})

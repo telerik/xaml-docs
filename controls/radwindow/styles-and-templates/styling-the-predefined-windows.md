@@ -110,7 +110,7 @@ __Figure 2__ shows the final result.
 
 #### __Figure 2: RadAlert with set IconTemplate__
 ![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_02.png)
-<Comment: The caption does not make sense.>
+
 # See Also
 
  * [Template Structure]({%slug radwindow-styles-and-templates-template-structure%})

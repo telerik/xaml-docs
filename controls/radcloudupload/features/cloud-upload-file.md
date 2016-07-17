@@ -22,7 +22,7 @@ __CloudUploadFile__ exposes several key properties. Note that this section does 
 
 * __UploadResult__: A property of type __Object__ which gets the result of the upload operation. The value of the property depends on the result that will be returned by the upload request from the upload provider.   
 	
-	>You can subscribe for the __StateChanged__ event of the CloudUploadFile in order to track the upload result and changes in the item's state. You can also use the __ItemStateChanged__ event of RadCloudUpload.
+	>You can subscribe for the __StateChanged__ event of the __CloudUploadFile__ in order to track the upload result and changes in the item's state. You can also use the __ItemStateChanged__ event of __RadCloudUpload__.
 	
 * __UploadedBytes__: A property of type __long__ which gets the count of uploaded bytes.
 
@@ -36,16 +36,16 @@ __CloudUploadFile__ exposes several key properties. Note that this section does 
 
 ## Events
 
-__CloudUploadFile__ class exposes several considerable events.
+__CloudUploadFile__ class exposes several events.
 
-* __StateChanged__:	The event occurs when the value of the __State__ property changes. The event arguments are of type __CloudUploadFileStateChangedEventArgs__ and expose the following properties.  
+* __StateChanged__: The event occurs when the value of the __State__ property changes. The event arguments are of type __CloudUploadFileStateChangedEventArgs__ and expose the following properties.  
 	* __Item__: An object of type __CloudUploadFile__ which gets the cloud upload file item. 
 	* __NewState__: An object of type __CloudUploadFileState__ which gets the new state of the item.
 	* __OldState__: An object of type __CloudUploadFileState__ which gets the old state of the item.
 	
 * __ProgressChanged__: The event occurs when the upload progress changes. The event arguments are of type __EventArgs__.
 
-* __StartUploadRequested__:	The event occurs when starting upload is requested. The event arguments are of type __StartUploadRequestedEventArgs__ and expose a single method - __ShouldQueueUpload__ - which can be used to indicate whether the item should be queued for upload or started directly.
+* __StartUploadRequested__: The event occurs when starting upload is requested. The event arguments are of type __StartUploadRequestedEventArgs__ and expose a single method, __ShouldQueueUpload__, which can be used to indicate whether the item should be queued for upload or started directly.
 
 * __CloseRquested__: The event occurs when a close is requested. A close is requested when the __RequestClose__ method is called or the __RequestCloseCommand__ is executed. The event arguments are of type __EventArgs__.
 

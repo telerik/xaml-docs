@@ -18,7 +18,7 @@ To do this, first you have to define your __RadBusyIndicator__ control:
 
 #### __[XAML] Defining RadBusyIndicator__
 
-{{region radbusyindicator-styles-and-templates-setting-the-overlay-style_0}}
+{{region xaml-radbusyindicator-styles-and-templates-setting-the-overlay-style_0}}
 	<Grid x:Name="LayoutRoot"
 	      Background="White">
 	    <telerik:RadBusyIndicator OverlayStyle="{StaticResource OverlayStyle}"
@@ -30,7 +30,7 @@ In the __RadBusyIndicator's__ definition you have indicated the __OverlayStyle__
 
 #### __[XAML] OverlayStyle declaration__
 
-{{region radbusyindicator-styles-and-templates-setting-the-overlay-style_1}}
+{{region xaml-radbusyindicator-styles-and-templates-setting-the-overlay-style_1}}
 	<UserControl.Resources>
 	    <Style x:Key="OverlayStyle"
 	           TargetType="Rectangle">
@@ -66,7 +66,7 @@ In the __RadBusyIndicator's__ definition you have indicated the __OverlayStyle__
 
 #### __[XAML] Remove the BusyContent's Background__
 
-{{region radbusyindicator-styles-and-templates-setting-the-overlay-style_2}}
+{{region xaml-radbusyindicator-styles-and-templates-setting-the-overlay-style_2}}
 	<telerik:RadBusyIndicator Background="Transparent"/>
 {{endregion}}
 

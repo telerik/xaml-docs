@@ -24,7 +24,7 @@ Here is an example of this additional behavior that you will need:
 
 #### __[C#] Declaring the AttachedProperty__
 
-{{region radbusyindicator-how-to-restore-the-focus_0}}
+{{region cs-radbusyindicator-how-to-restore-the-focus_0}}
 	public class FocusHelper
 	{
 	    private static void OnEnsureFocusChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -62,7 +62,7 @@ In the definition of the content element you will have to include the new behavi
 
 #### __[XAML] Define the new behavior inside the content__
 
-{{region radbusyindicator-how-to-restore-the-focus_1}}
+{{region xaml-radbusyindicator-how-to-restore-the-focus_1}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator">                          
 	    <Grid>
 	        <TextBox example:FocusHelper.EnsureFocus="{Binding IsBusyIndicationVisible, ElementName=radBusyIndicator}"/>
@@ -81,7 +81,7 @@ The next example shows how to save the last focused Control and reset its focus 
 
 	#### __[XAML] Sample layout declaration__
 
-	{{region radbusyindicator-how-to-restore-the-focus_2}}
+	{{region xaml-radbusyindicator-how-to-restore-the-focus_2}}
 		<Border BorderBrush="Black" 
 				BorderThickness="2" 
 				Height="200" Width="220"
@@ -105,7 +105,7 @@ The next example shows how to save the last focused Control and reset its focus 
 
 	#### __[C#] Property declaration__
 
-	{{region radbusyindicator-how-to-restore-the-focus_1}}
+	{{region cs-radbusyindicator-how-to-restore-the-focus_1}}
 		private Control focusedElement { get; set; }
 	{{endregion}}
 
@@ -113,7 +113,7 @@ The next example shows how to save the last focused Control and reset its focus 
 
 	#### __[C#] Set the DispatcherTimer__
 
-	{{region radbusyindicator-how-to-restore-the-focus_2}}
+	{{region cs-radbusyindicator-how-to-restore-the-focus_2}}
 		private DispatcherTimer dispatcherTimer { get; set; }
 		
 		public Example()

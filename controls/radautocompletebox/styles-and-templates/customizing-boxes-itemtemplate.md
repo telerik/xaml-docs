@@ -25,13 +25,13 @@ Firstly you need to create a new business object named for example Country. Its 
 #### __[C#] Creation of the business object__
 
 {{region cs-radautocompletebox-customizing-boxes-itemtemplate-0}}
-	public class Country
-	    {
-	        public string Name { get; set; }
-	        public string Capital { get; set; }
-	        public Continent Continent { get; set; }
-	        public string Flag { get; set; }
-	    }
+    public class Country
+    {
+        public string Name { get; set; }
+        public string Capital { get; set; }
+        public Continent Continent { get; set; }
+        public string Flag { get; set; }
+    }
 {{endregion}}
 
 The __Flag__ property should be of type string and will be bound to the __Source__ property of the Image. As for the __Continent__ property it is an enumeration that contains all continents.

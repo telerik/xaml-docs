@@ -24,17 +24,14 @@ Firstly you need to create a new business object named for example Country. Its 
 
 #### __[C#] Creation of the business object__
 
-{{region radautocompletebox-customizing-boxes-itemtemplate-0}}
+{{region cs-radautocompletebox-customizing-boxes-itemtemplate-0}}
 	public class Country
-    {
-        public string Name { get; set; }
-
-        public string Capital { get; set; }
-
-        public Continent Continent { get; set; }
-
-        public string Flag { get; set; }
-    }
+	    {
+	        public string Name { get; set; }
+	        public string Capital { get; set; }
+	        public Continent Continent { get; set; }
+	        public string Flag { get; set; }
+	    }
 {{endregion}}
 
 The __Flag__ property should be of type string and will be bound to the __Source__ property of the Image. As for the __Continent__ property it is an enumeration that contains all continents.
@@ -47,18 +44,18 @@ Next a valid DataTemplate with the correct bindings for the __Name__ and __Flag_
 
 #### __[XAML] Declaring the BoxesItemTemplate__
 
-{{region radautocompletebox-customizing-boxes-itemtemplate-1}}
+{{region xaml-radautocompletebox-customizing-boxes-itemtemplate-1}}
 	<DataTemplate x:Key="CustomBoxesItemTemplate">
-		<StackPanel Orientation="Horizontal">
-			<Image Width="14" 
-				   Height="12" 
-				   Margin="2"
-				   Source="{Binding Flag}" />
-			<TextBlock Foreground="{Binding Converter={StaticResource ContinentToColorConverter}}" 
-					   Margin="2" 
-					   FontWeight="Bold"
-					   Text="{Binding Name}" />
-		</StackPanel>
+	  <StackPanel Orientation="Horizontal">
+	    <Image Width="14"
+	         Height="12"
+	         Margin="2"
+	         Source="{Binding Flag}" />
+	    <TextBlock Foreground="{Binding Converter={StaticResource ContinentToColorConverter}}"
+	           Margin="2"
+	           FontWeight="Bold"
+	           Text="{Binding Name}" />
+	  </StackPanel>
 	</DataTemplate>
 {{endregion}}
 
@@ -68,10 +65,10 @@ Finally you will need to declare __RadAutoCompleteBox__ in the xaml and set its 
 
 #### __[XAML] Setting the BoxesItemTemplate__
 
-{{region radautocompletebox-customizing-boxes-itemtemplate-2}}
-	 <telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" 
-								 DisplayMemberPath="Name"
-								 BoxesItemTemplate="{StaticResource CustomBoxesItemTemplate}"/>
+{{region xaml-radautocompletebox-customizing-boxes-itemtemplate-2}}
+	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}"
+	                            DisplayMemberPath="Name"
+	                            BoxesItemTemplate="{StaticResource CustomBoxesItemTemplate}"/>
 {{endregion}}
 
 The following screenshots show the final result:

@@ -1436,3 +1436,206 @@ header, nav, section, article, aside, footer {
 
 
 /* END Kendo Grid Nova Theme CSS*/
+
+/* SART Feedback form styles */
+#feedback-section {
+	margin-top: 15px;
+	margin-left: 40px;		
+	padding-bottom: 20px;	
+}
+
+#feedback-menu-container {
+	width: 100%;
+	max-width: 930px;
+	padding-top: 15px;
+	border-top: 2px solid #ebecee;
+}
+
+#helpful-buttons-container {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	position: relative;
+}
+
+#helpful-buttons-container button {
+	float: right;
+	line-height: 0.933em;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 2px;
+	padding: 0.667em 2.000em;
+	background-color: #fff;
+	color: #555;
+	border-width: 0;
+	cursor: pointer;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	transition-property: background-color, color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+#helpful-buttons-container span {
+	margin-top: 2px;
+}
+
+#yesButton {
+	margin-right: 10px;
+}
+
+#helpful-buttons-container button:hover{
+	background-color: #2a2d33;
+	color: #fff;
+}
+
+#feedback-submitted-container,
+#additional-feedback-button {
+	/* font-size: 1.5em; */
+	/* visibility: hidden; */
+	display: none; 	
+	font-size: 22px;
+	font-weight: bold;	
+}
+
+#feedback-submitted-container {
+	float: right;	
+	color: #000;	
+}
+
+#additional-feedback-button {
+	color: #428bca;
+}
+
+#additional-feedback-button :hover {
+	cursor: pointer;
+	color: #2a2d33;
+}
+
+.k-widget.k-window.k-window-titleless {	
+	height: 560px !important;
+	width: 500px !important;
+	top: 188px !important;	
+	border: none;
+	position: absolute;
+	background-color: #fff;
+}
+
+#feedback-form-window input::-webkit-input-placeholder,
+#feedback-form-window textarea::-webkit-input-placeholder,
+#feedback-form-window input:-moz-placeholder,
+#feedback-form-window textarea:-moz-placeholder,
+#feedback-form-window input::-moz-placeholder,
+#feedback-form-window textarea::-moz-placeholder,
+#feedback-form-window input:-ms-input-placeholder,
+#feedback-form-window textarea:-ms-input-placeholder {
+	color: #d9d9d9;
+	font-style: italic;
+}
+
+#feedback-form-window .feedback-extw__title {
+	margin: 0;
+	font-size: 22px;
+}
+
+#feedback-form-window .feedback-extw__subtitle {
+	margin-top: 7px;
+	margin-bottom: 0;
+	font-size: 10.5pt;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+
+#feedback-form  #feedback-checkbox-area {
+	margin-top: 24px;
+}
+
+#feedback-form label {
+	display: block;
+	margin: 5px 0 10px;
+}
+
+#feedback-extw__checkbox:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#feedback-form .checkbox__input {
+	float: left;
+}
+
+#feedback-form .checkbox__text {	
+	line-height: 18px;
+	margin-left: 5px;
+}
+
+#feedback-form .feedback-extw__textarea,
+#feedback-form .feedback-extw__input {
+	padding: 10px;
+	border: 1px solid #d9d9d9;
+	width: 100%;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+#feedback-form .feedback-extw__textarea {
+	margin-top: 16px;
+	height: 156px;
+	resize: none;
+	overflow: auto;
+}
+
+#feedback-form .feedback-extw__input {
+	margin: 12px 0 30px;
+}
+
+#feedback-form-window button {
+	line-height: 0.933em;
+	font-size: 10.5pt;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 2px;
+	padding: 0.667em 2.000em;
+	background-color: #015991;
+	color: #fff;
+	border-width: 0;
+	cursor: pointer;
+	background-clip: padding-box;
+	border: 1px solid #015991;
+	transition-property: background-color, color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+#feedback-form-window button:hover {
+	background-color: #013a5e;
+}
+
+button#form-close-button {
+	background-color: #fff;
+	color: #555;
+	border: 1px solid #ccc;
+	margin-left: 8px;
+}
+
+button#form-close-button:hover {
+	background-color: #ccc;
+}
+
+#feedback-form span.k-tooltip {
+	border: 0;
+	color: #ff0000;
+	font-style: italic;
+	font-size: 12px;
+}
+
+div.k-window-content {
+	padding: 27px 30px 10px 30px;
+	overflow: hidden;
+}
+/* END Feedback form styles*/
+

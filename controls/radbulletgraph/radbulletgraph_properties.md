@@ -25,7 +25,7 @@ This section elaborates on the most important properties and settings in the con
 5. __QualitativeRanges__
 	Each graph has a collection of qualitative ranges, which look like this:
 
-	#### __[XAML] Exampe 1: Adding quialitative ranges__  
+	#### __[XAML] Example 1: Adding qualitative  ranges__  
 	{{region xaml-radbulletgraph-properties-0}}
 		<telerik:RadVerticalBulletGraph FeaturedMeasure="270" ComparativeMeasure="250">
 		    <telerik:RadVerticalBulletGraph.QualitativeRanges>

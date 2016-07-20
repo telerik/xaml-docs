@@ -14,7 +14,7 @@ To activate the __RadBusyIndicator__ control you have to set its __IsBusy__ bool
 
 #### __[XAML] Setting the IsBusy property__
 
-{{region radbusyindicator-features-enabling-the-indicator_0}}
+{{region xaml-radbusyindicator-features-enabling-the-indicator_0}}
 	<telerik:RadBusyIndicator IsBusy="True"/>
 {{endregion}}
 

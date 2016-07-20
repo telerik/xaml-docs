@@ -31,7 +31,7 @@ You can add __RadBusyIndicator__ manually by writing the XAML code in __Example 
 
 #### __[XAML] Example 1: Adding RadBusyIndicator in XAML__
 
-{{region radbusyindicator-getting-started_1}}
+{{region xaml-radbusyindicator-getting-started_1}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator">
 	    <!--Some Content-->
 	</telerik:RadBusyIndicator>
@@ -41,7 +41,7 @@ In order to use __RadBusyIndicator__ in XAML, you have to add the namespace decl
 
 #### __[XAML] Example 2: Declaring Telerik Namespace__
 
-{{region radbusyindicator-getting-started_2}}
+{{region xaml-radbusyindicator-getting-started_2}}
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 {{endregion}}
 
@@ -49,7 +49,7 @@ When you are using __RadBusyIndicator__, you always have to set its __Content__ 
 
 #### __[XAML] Example 3: Adding Content__
 
-{{region radbusyindicator-getting-started_3}}
+{{region xaml-radbusyindicator-getting-started_3}}
      <telerik:RadBusyIndicator x:Name="radBusyIndicator">
         <Grid>
             <telerik:RadListBox>
@@ -76,7 +76,7 @@ __Example 4__ presents __RadBusyIndicator__ with its __IsBusy__ property set to 
 
 #### __[XAML] Example 4: Adding Content__
 
-{{region radbusyindicator-getting-started_4}}
+{{region xaml-radbusyindicator-getting-started_4}}
      <telerik:RadBusyIndicator x:Name="radBusyIndicator" IsBusy="True">
         <Grid>
             <telerik:RadListBox>

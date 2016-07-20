@@ -26,7 +26,7 @@ Here is an example of creating a determined __RadBusyIndicator__ control:
 
 #### __[XAML] Setting IsIndeterminate__
 
-{{region radbusyindicator-features-progress-determination_0}}
+{{region xaml-radbusyindicator-features-progress-determination_0}}
 	<telerik:RadBusyIndicator IsIndeterminate="False" />
 {{endregion}}
 

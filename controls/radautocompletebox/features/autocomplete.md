@@ -28,7 +28,7 @@ The XAML should look like this:
 
 #### __[XAML] Declaring RadAutoCompleteBox with Suggest AutoCompleteMode__
 
-{{region radautocompletebox-features-key-properties-0}}
+{{region xaml-radautocompletebox-features-key-properties-0}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
 	                            ItemsSource="{Binding Countries}"
 	                            DisplayMemberPath="Name" 
@@ -53,7 +53,7 @@ The XAML should look like this:
 
 #### __[XAML] Declaring RadAutoCompleteBox with Append AutoCompleteMode__
 
-{{region radautocompletebox-features-key-properties-1}}
+{{region xaml-radautocompletebox-features-key-properties-1}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
 	                            ItemsSource="{Binding Countries}"
 	                            DisplayMemberPath="Name" 
@@ -78,7 +78,7 @@ The XAML should look like this:
 
 #### __[XAML] Declaring RadAutoCompleteBox with SuggestAppend AutoCompleteMode__
 
-{{region radautocompletebox-features-key-properties-2}}
+{{region xaml-radautocompletebox-features-key-properties-2}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
 	                            ItemsSource="{Binding Countries}"
 	                            DisplayMemberPath="Name"

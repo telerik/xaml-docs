@@ -23,18 +23,18 @@ You can instantiate __RadToggleButton__ in both XAML and code. Here is an exampl
 > RadToggleButton is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly.{% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
 >Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
-#### __XAML__
-{{region radbuttons-features-toggle-button_0}}
+#### __[XAML] Example 1: Definig a button in XAML__
+{{region xaml-radbuttons-features-toggle-button_0}}
 	<telerik:RadToggleButton Content="Toggle Me!" />
 {{endregion}}
 
-#### __C#__
-{{region radbuttons-features-toggle-button_1}}
+#### __[C#] Example 2: Definig a button in code__
+{{region cs-radbuttons-features-toggle-button_1}}
 	RadToggleButton radToggleButton = new RadToggleButton();
 {{endregion}}
 
-#### __VB.NET__
-{{region radbuttons-features-toggle-button_2}}
+#### __[VB.NET] Example 2: Definig a button in code__
+{{region vb-radbuttons-features-toggle-button_2}}
 	Dim radToggleButton As New RadToggleButton()
 {{endregion}}
 
@@ -46,23 +46,23 @@ To execute some logic when __RadToggleButton__ gets toggled, you have to handle 
 
 Here is an example of handling the __Checked__ event of a button.		
 
-#### __XAML__
-{{region radbuttons-features-toggle-button_3}}
+#### __[XAML] Example 3: Subscribing to the Checked event__
+{{region xaml-radbuttons-features-toggle-button_3}}
 	<telerik:RadToggleButton Content="Toggle Me!" Checked="RadToggleButton_Checked" />
 {{endregion}}
 
-#### __C#__
-{{region radbuttons-features-toggle-button_4}}
-	private void RadToggleButton_Checked( object sender, RoutedEventArgs e )
+#### __[C#] Example 4: Defining a Checked event handler__
+{{region cs-radbuttons-features-toggle-button_4}}
+	private void RadToggleButton_Checked(object sender, RoutedEventArgs e)
 	{
 	    //implement your logic here
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radbuttons-features-toggle-button_5}}
+#### __[VB.NET] Example 4: Defining a Checked event handler__
+{{region vb-radbuttons-features-toggle-button_5}}
 	Private Sub RadToggleButton_Checked(sender As Object, e As RoutedEventArgs)
-	 'implement your logic here'
+	    'implement your logic here'
 	End Sub
 {{endregion}}
 
@@ -72,8 +72,8 @@ Here is an example of handling the __Checked__ event of a button.
 
 To make __RadToggleButton__ to go into a three state mode you just have to set its __IsThreeState__ property to __True__. Here is an example:		
 
-#### __XAML__
-{{region radbuttons-features-toggle-button_6}}
+#### __[XAML] Example 5: Enabling the three-state mode__
+{{region xaml-radbuttons-features-toggle-button_6}}
 	<telerik:RadToggleButton IsThreeState="True" />
 {{endregion}}
 
@@ -83,7 +83,7 @@ To make __RadToggleButton__ to go into a three state mode you just have to set i
 
 * __CornerRadius__: this property controls the __CornerRadius__ of __RadToggleButton__ 		  
 
-# See Also
+## See Also
  * [Button]({%slug radbuttons-features-button%})
  * [Radio Button]({%slug radbutton-features-radio-button%})
  * [Commands]({%slug radbuttons-features-commands%})

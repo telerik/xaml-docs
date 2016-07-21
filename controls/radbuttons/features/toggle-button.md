@@ -23,17 +23,17 @@ You can instantiate __RadToggleButton__ in both XAML and code. Here is an exampl
 > RadToggleButton is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly.{% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
 >Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
-#### __[XAML] Example 1: Definig a button in XAML__
+#### __[XAML] Example 1: Defining a button in XAML__
 {{region xaml-radbuttons-features-toggle-button_0}}
 	<telerik:RadToggleButton Content="Toggle Me!" />
 {{endregion}}
 
-#### __[C#] Example 2: Definig a button in code__
+#### __[C#] Example 2: Defining a button in code__
 {{region cs-radbuttons-features-toggle-button_1}}
 	RadToggleButton radToggleButton = new RadToggleButton();
 {{endregion}}
 
-#### __[VB.NET] Example 2: Definig a button in code__
+#### __[VB.NET] Example 2: Defining a button in code__
 {{region vb-radbuttons-features-toggle-button_2}}
 	Dim radToggleButton As New RadToggleButton()
 {{endregion}}

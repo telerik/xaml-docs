@@ -16,66 +16,51 @@ This topic will show you how to use __RadMaskedInput__ controls to distinguish b
 
 For the purpose of this tutorial you need to create a new class named __DataValidationViewModel__. It will take care of the validation rules.	  
 
-#### __C#__
-{{region radmaskedinput-features-validation_1}}
+#### __[C#] Example 1: Custom validation class__
+{{region cs-radmaskedinput-features-validation_0}}
 	public class DataValidationViewModel : ViewModelBase
 	{
 		private double doubleValue;
 		private string stringValue;
 		private decimal decimalValue;
 		private DateTime dateTimeValue;
-	
-		public double DoubleValue 
+		[Range(-100d, 100d)]
+		public double DoubleValue
 		{
 			get { return doubleValue; }
-			set 
-	        {
-				if (value < -100 || value > 100) 
-	            {
-					throw new ValidationException(String.Format("Value is {0} than {1}.", (value > 100 ? "greater" : "less"), value));
-				}
+			set
+			{
 				doubleValue = value;
 				this.OnPropertyChanged("DoubleValue");
 			}
 		}
-	
-		public decimal DecimalValue 
+		[Range(typeof(decimal), "-100", "100")]
+		public decimal DecimalValue
 		{
 			get { return decimalValue; }
-			set 
-	        {
-				if (value < -100 || value > 100) 
-	            {
-					throw new ValidationException(String.Format("Value is {0} than {1}.", (value > 100 ? "greater" : "less"), value));
-				}
+			set
+			{
 				decimalValue = value;
 				this.OnPropertyChanged("DecimalValue");
 			}
 		}
-	
-		public DateTime DateTimeValue 
+		[Range(typeof(DateTime), "01.01.1900", "01.01.2099")]
+		public DateTime DateTimeValue
 		{
 			get { return dateTimeValue; }
-			set 
-	        {
-				if (value < DateTime.Parse("01.01.1900") || value > DateTime.Parse("01.01.2099")) 
-	            {
-					throw new ValidationException(String.Format("Value is {0} than {1}.", (value > DateTime.Parse("01.01.2099") ? "greater" : "less"), value));
-				}
+			set
+			{
 				dateTimeValue = value;
 				this.OnPropertyChanged("DateTimeValue");
 			}
 		}
-	
-		public string StringValue 
+		[StringLength(6)]
+		[Required()]
+		public string StringValue
 		{
 			get { return stringValue; }
-			set 
-	        {
-				if (value.Length > 6) 
-	            {
-					throw new ValidationException(String.Format("Value's length is greater than {0}.", value.Length));
-				}
+			set
+			{
 				stringValue = value;
 				this.OnPropertyChanged("StringValue");
 			}
@@ -83,66 +68,62 @@ For the purpose of this tutorial you need to create a new class named __DataVali
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radmaskedinput-features-validation_1}}
+#### __[VB.NET] Example 1: Custom validation class__
+{{region vb-radmaskedinput-features-validation_1}}
 	Public Class DataValidationViewModel
-	        Inherits ViewModelBase
-	        Private m_doubleValue As Double
-	        Private m_stringValue As String
-	        Private m_decimalValue As Decimal
-	        Private m_dateTimeValue As DateTime
-	
-	        Public Property DoubleValue() As Double
-	                Get
-	                        Return m_doubleValue
-	                End Get
-	                Set				
-	                        If value < -100 OrElse value > 100 Then
-	                                Throw New ValidationException([String].Format("Value is {0} than {1}.", (If(value > 100, "greater", "less")), value))
-	                        End If
-	                        m_doubleValue = value
-	                        Me.OnPropertyChanged("DoubleValue")
-	                End Set
-	        End Property
-	
-	        Public Property DecimalValue() As Decimal
-	                Get
-	                        Return m_decimalValue
-	                End Get
-	                Set
-	                        If value < -100 OrElse value > 100 Then
-	                                Throw New ValidationException([String].Format("Value is {0} than {1}.", (If(value > 100, "greater", "less")), value))
-	                        End If
-	                        m_decimalValue = value
-	                        Me.OnPropertyChanged("DecimalValue")
-	                End Set
-	        End Property
-	
-	        Public Property DateTimeValue() As DateTime
-	                Get
-	                        Return m_dateTimeValue
-	                End Get
-	                Set
-	                        If value < DateTime.Parse("01.01.1900") OrElse value > DateTime.Parse("01.01.2099") Then
-	                                Throw New ValidationException([String].Format("Value is {0} than {1}.", (If(value > DateTime.Parse("01.01.2099"), "greater", "less")), value))
-	                        End If
-	                        m_dateTimeValue = value
-	                        Me.OnPropertyChanged("DateTimeValue")
-	                End Set
-	        End Property
-	
-	        Public Property StringValue() As String
-	                Get
-	                        Return m_stringValue
-	                End Get
-	                Set
-	                        If value.Length > 6 Then
-	                                Throw New ValidationException([String].Format("Value's length is greater than {0}.", value.Length))
-	                        End If
-	                        m_stringValue = value
-	                        Me.OnPropertyChanged("StringValue")
-	                End Set
-	        End Property
+		Inherits ViewModelBase
+		Private m_doubleValue As Double
+		Private m_stringValue As String
+		Private m_decimalValue As Decimal
+		Private m_dateTimeValue As Date
+		Public Property DoubleValue() As Double
+			Get
+				Return m_doubleValue
+			End Get
+			Set
+				If Value < -100 OrElse Value > 100 Then
+					Throw New ValidationException([String].Format("Value is {0} than {1}.", (If(Value > 100, "greater", "less")), Value))
+				End If
+				m_doubleValue = Value
+				Me.OnPropertyChanged("DoubleValue")
+			End Set
+		End Property
+		Public Property DecimalValue() As Decimal
+			Get
+				Return m_decimalValue
+			End Get
+			Set
+				If Value < -100 OrElse Value > 100 Then
+					Throw New ValidationException([String].Format("Value is {0} than {1}.", (If(Value > 100, "greater", "less")), Value))
+				End If
+				m_decimalValue = Value
+				Me.OnPropertyChanged("DecimalValue")
+			End Set
+		End Property
+		Public Property DateTimeValue() As Date
+			Get
+				Return m_dateTimeValue
+			End Get
+			Set
+				If Value < Date.Parse("01.01.1900") OrElse Value > Date.Parse("01.01.2099") Then
+					Throw New ValidationException([String].Format("Value is {0} than {1}.", (If(Value > Date.Parse("01.01.2099"), "greater", "less")), Value))
+				End If
+				m_dateTimeValue = Value
+				Me.OnPropertyChanged("DateTimeValue")
+			End Set
+		End Property
+		Public Property StringValue() As String
+			Get
+				Return m_stringValue
+			End Get
+			Set
+				If Value.Length > 6 Then
+					Throw New ValidationException([String].Format("Value's length is greater than {0}.", Value.Length))
+				End If
+				m_stringValue = Value
+				Me.OnPropertyChanged("StringValue")
+			End Set
+		End Property
 	End Class
 {{endregion}}
 
@@ -152,28 +133,24 @@ Declare several __RadMaskedInput__ controls in XAML for displaying the sample da
 
 * The __ValidatesOnExceptions__ and __NotifyOnValidationError__ properties of the data binding are set to __True__.		  
 
-#### __XAML__
-{{region radmaskedinput-features-validation_2}}
+#### __[XAML] Example 2: Defining several RadMaskedInput controls in XAML__
+{{region xaml-radmaskedinput-features-validation_2}}
 	<StackPanel x:Name="LayoutRoot" Background="White">
-	    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
-	                                    Width="200"
+	    <telerik:RadMaskedNumericInput Width="200"
 	                                    Margin="10, 10, 10, 0"
 	                                    ErrorMessage="{Binding Path=Text, ElementName=customErrorMessage}"
 	                                    InputBehavior="Insert"
 	                                    Value="{Binding Path=DoubleValue, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnExceptions=True}" />
-	    <telerik:RadMaskedCurrencyInput x:Name="radMaskedCurrencyInput" 
-	                                    Width="200"
+	    <telerik:RadMaskedCurrencyInput Width="200"
 	                                    Margin="10, 10, 10, 0"
 	                                    ErrorMessage="{Binding Path=Text, ElementName=customErrorMessage}"
 	                                    InputBehavior="Insert"
 	                                    Value="{Binding Path=DecimalValue, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnExceptions=True}" />
-	    <telerik:RadMaskedDateTimeInput x:Name="radMaskedDateTimeInput" 
-	                                    Width="200"
+	    <telerik:RadMaskedDateTimeInput Width="200"
 	                                    Margin="10, 10, 10, 0"
 	                                    ErrorMessage="{Binding Path=Text, ElementName=customErrorMessage}"
 	                                    Value="{Binding Path=DateTimeValue, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnExceptions=True}" />
-	    <telerik:RadMaskedTextInput x:Name="radMaskedTextInput" 
-	                                Width="200"
+	    <telerik:RadMaskedTextInput Width="200"
 	                                Margin="10"
 	                                ErrorMessage="{Binding Path=Text, ElementName=customErrorMessage}"
 	                                Value="{Binding Path=StringValue, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnExceptions=True}" />
@@ -182,13 +159,13 @@ Declare several __RadMaskedInput__ controls in XAML for displaying the sample da
 
 Finally, set the DataValidationViewModel to the UserControl's __DataContext__ property.	  
 
-#### __C#__
-{{region radmaskedinput-features-validation_3}}
+#### __[C#] Example 3: Setting the DataContext to DataValidationViewModel__
+{{region cs-radmaskedinput-features-validation_3}}
 	this.DataContext = new DataValidationViewModel();
 {{endregion}}
 
-#### __VB.NET__
-{{region radmaskedinput-features-validation_4}}
+#### __[VB.NET] Example 3: Setting the DataContext to DataValidationViewModel__
+{{region vb-radmaskedinput-features-validation_4}}
 	Me.DataContext = New DataValidationViewModel()
 {{endregion}}
 
@@ -202,6 +179,6 @@ Next try to fill some improper data.
 {% if site.site_name == 'Silverlight' %}![](images/radmaskedinput_validation_throw_exception_01-sl.png){% endif %}
 {% if site.site_name == 'WPF' %}![Validation Tool TipWPF](images/radmaskedinput_validation_throw_exception_01-wpf.png){% endif %}
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [Common Features]({%slug radmaskedinput-features-common%})

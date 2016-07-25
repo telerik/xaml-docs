@@ -44,9 +44,15 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 ## Properties
 
-* Set the __IsTabStop__ property to include/exclude the control in the tab navigation cycle. If this property is set to __True__, the control will be included; if it is __False__ - it will be skipped. 
+* __TabNavigationExtensions.IsTabStop__ attached property indicates whether editable RadComboBox (__IsEditable__ property is set to __True__) is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since R3 2016.
 
-* The __TabIndex__ property defines the index of the control in the tab navigation cycle. The lower the number is, the earlier the control will be focused while navigating using the Tab key. If you set this property, do not forget to set __IsTabStop__ to __True__. 
+	#### __[XAML] Example 1: RadComboBox with TabNavigationExtensions.IsTabStop__
+
+	{{region xaml-radcombobox-features-keyboard-support-0}}
+		<telerik:RadComboBox IsEditable="True" telerik:TabNavigationExtensions.IsTabStop="False" />
+	{{endregion}}
+
+* The __TabIndex__ property defines the index of the control in the tab navigation cycle. The lower the number is, the earlier the control will be focused while navigating using the Tab key. 
 
 * __IsDropDownTabNavigationEnabled__ (introduced with Q1 2016) is a property of type bool that indicates whether the tab navigating inside the drop down portion of the control will be enabled. If the property is set to False the navigation between the items when Tab key gets pressed will be disabled - the default value is True. 
 

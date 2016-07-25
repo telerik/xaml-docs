@@ -20,7 +20,7 @@ The behavior should be set up the following way:
 
 #### __[XAML] RadAutoCompleteBox with AsyncFilteringBehavior__
 
-{{region radautocompletebox-features-filteringbehavior-1}}
+{{region xaml-radautocompletebox-features-filteringbehavior-1}}
 	<telerik:RadAutoCompleteBox>
 		<telerik:RadAutoCompleteBox.FilteringBehavior>
 			<telerik:AsyncFilteringBehavior />
@@ -38,10 +38,9 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 
 	#### __[C#] Custom class that inherits the default FilteringBehavior__
 
-	{{region radautocompletebox-features-filteringbehavior-0}}
+	{{region cs-radautocompletebox-features-filteringbehavior-0}}
 		public class MyCustomFilteringBehavior : FilteringBehavior
 		{
-		
 		}
 	{{endregion}}
 
@@ -49,7 +48,7 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 
 	#### __[C#] Overriding FindMatchingItems__
 
-	{{region radautocompletebox-features-filteringbehavior-1}}
+	{{region cs-radautocompletebox-features-filteringbehavior-1}}
 		public class MyCustomFilteringBehavior : FilteringBehavior
 		{
 			public override IEnumerable<object> FindMatchingItems(string searchText, IList items, IEnumerable<object> escapedItems, string textSearchPath, TextSearchMode textSearchMode)
@@ -60,7 +59,6 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 				{
 					return ((IEnumerable<object>)items).Where(x => !escapedItems.Contains(x));
 				}
-		
 				return result;
 			}
 		}
@@ -70,7 +68,7 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 
 	#### __[XAML] Setting the newly created behavior__
 
-	{{region radautocompletebox-features-filteringbehavior-0}}
+	{{region xaml-radautocompletebox-features-filteringbehavior-0}}
 		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries, Source={StaticResource ViewModel}}"
 									DisplayMemberPath="Name" 
 									TextSearchMode="StartsWith"

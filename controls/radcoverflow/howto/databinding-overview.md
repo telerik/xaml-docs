@@ -22,7 +22,7 @@ Once we have the images in the project, let’s create the ObservableCollection 
 
 #### __C#__
 
-{{region coverflow-databinding-overview_0}}
+{{region cs-coverflow-databinding-overview_0}}
 	ObservableCollection<string> championsLeagueTeams = new ObservableCollection<string>();
 	championsLeagueTeams.Add("images/Barcelona.png");
 	championsLeagueTeams.Add("images/BayernMunchen.png");
@@ -37,7 +37,7 @@ Next in the agenda is to add RadCoverFlow to our page.
 
 #### __XAML__
 
-{{region coverflow-databinding-overview_1}}
+{{region xaml-coverflow-databinding-overview_1}}
 	<telerik:RadCoverFlow ItemsSource="{Binding}">
 		<telerik:RadCoverFlow.ItemTemplate>
 			<DataTemplate>
@@ -49,4 +49,8 @@ Next in the agenda is to add RadCoverFlow to our page.
 
 Pay attention to the ItemsSource="{Binding}" line. This means that the collection we are going to bind to is passed as a data context. This means that we have to do one last thing. Right after the last team is added, add the line bellow.
 
-this.DataContext = championsLeagueTeams;
+#### __C#__
+
+{{region cs-coverflow-databinding-overview_2}}
+    this.DataContext = championsLeagueTeams;
+{{endregion}}

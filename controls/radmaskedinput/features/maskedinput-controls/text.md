@@ -31,8 +31,8 @@ The __RadMaskedTextInput__ represents the basic control that can be used to rest
 
 Here is a simple definition of a __RadMaskedTextInput__ control:
 
-#### __XAML__
-{{region radmaskedinput-features-controls-text_0}}
+#### __[XAML] Example 1: Define RadMaskedTextInput in XAML__
+{{region xaml-radmaskedinput-features-controls-text_0}}
 	<telerik:RadMaskedTextInput x:Name="radMaskedTextInput" 
 	                            Width="200"
 	                            Margin="20 20 20 10"
@@ -49,8 +49,8 @@ Here is a simple definition of a __RadMaskedTextInput__ control:
 
 You can further restrict the user input by setting the __FormatString__ property. 		
 
-#### __XAML__
-{{region radmaskedinput-features-controls-text_1}}
+#### __[XAML] Example 2: Setting the FormatString property__
+{{region xaml-radmaskedinput-features-controls-text_1}}
 	<telerik:RadMaskedTextInput HorizontalAlignment="Center"
 	                            Value="Adam"
 	                            FormatString="{}UserName: {0} NickName: {0}"
@@ -61,7 +61,7 @@ You can further restrict the user input by setting the __FormatString__ property
 
 ![](images/radmaskedinput_textinput_format_string.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})
  * [MaskedCurrencyInput]({%slug radmaskedinput-features-controls-currency%})

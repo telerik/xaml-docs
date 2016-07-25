@@ -28,7 +28,7 @@ The next steps show how to create and set a custom DropDownItemTemplate to the R
 
 	#### __[XAML] Declaring valid DataTemplate__
 
-	{{region radautocompletebox-customizing-drop-down-itemtemplate-0}}
+	{{region xaml-radautocompletebox-customizing-drop-down-itemtemplate-0}}
 		<DataTemplate x:Key="CustomDropDownItemTemplate">
 			<Border BorderBrush="Gray" BorderThickness="1" Margin="2">
 				<Grid>
@@ -69,7 +69,7 @@ The next steps show how to create and set a custom DropDownItemTemplate to the R
 
 	#### __[XAML] Setting the DropDownItemTemplate__
 
-	{{region radautocompletebox-customizing-drop-down-itemtemplate-1}}
+	{{region xaml-radautocompletebox-customizing-drop-down-itemtemplate-1}}
 		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}"
 									Width="200"
 									DisplayMemberPath="Name"

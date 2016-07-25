@@ -24,19 +24,19 @@ The following example shows how to create a __RadAutoCompleteBox__ control in th
 
 #### __[C#] Creating RadAutoCompleteBox__
 
-{{region radautocompletebox-getting-started-0}}
+{{region cs-radautocompletebox-getting-started-0}}
 	RadAutoCompleteBox autoCompleteBox = new RadAutoCompleteBox();
 {{endregion}}
 
 #### __[VB] Creating RadAutoCompleteBox__
 
-{{region radautocompletebox-getting-started-0}}
+{{region vb-radautocompletebox-getting-started-0}}
 	Dim autoCompleteBox As New RadAutoCompleteBox()
 {{endregion}}
 
 #### __[XAML] Creating RadAutoCompleteBox__
 
-{{region radautocompletebox-getting-started-0}}
+{{region xaml-radautocompletebox-getting-started-0}}
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <Grid x:Name="LayoutRoot" Background="White">
 	        <telerik:RadAutoCompleteBox x:Name="radAutoCompleteBox"/>

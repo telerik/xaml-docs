@@ -344,6 +344,50 @@ navigation:
         title: RadExpander
     controls/radgauge:
         title: RadGauge
+    controls/radgauge/getting-started:
+        title: Getting Started
+        position: 2
+    controls/radgauge/features:
+        title: Features
+        position: 3
+    controls/radgauge/linear-scale:
+        title: Linear Scale
+        position: 4
+    controls/radgauge/radial-scale:
+        title: Radial Scale
+        position: 5
+    controls/radgauge/numeric-scale:
+        title: Numeric Scale
+        position: 6
+    controls/radgauge/breaking-changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 7
+    controls/radgauge/styles-and-templates:
+        title: Styles and Templates
+        position: 8
+    controls/radgauge/how-to:
+        position: 9
+    controls/radgauge/features/indicators:
+        title: Indicators
+        position: 3    
+    controls/radgauge/features/numeric-indicator:
+        title: Numeric Indicator
+        position: 4
+    controls/radgauge/features/linear-and-radial-scales:
+        title: Linear and Radial Scales
+        position: 5
+    controls/radgauge/features/numeric-scale:
+        title: Numeric Scale
+        position: 6
+    controls/radgauge/features/labels:
+        title: Labels
+        position: 7
+    controls/radgauge/features/ranges:
+        title: Ranges
+        position: 8
+    controls/radgauge/features/ticks:
+        title: Ticks
+        position: 9
     controls/radheatmap:
         title: RadHeatMap
     controls/radhtmlplaceholder:
@@ -2950,6 +2994,9 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
+
+# Feedback Form Google Sheet ID
+ff-sheet-id: 1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo
 
 # The google services configuration
 google_analytics: UA-111455-1

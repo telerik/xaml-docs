@@ -26,7 +26,7 @@ Here is a snapshot of the final result:
 
 #### __[XAML] RadWindow declaration__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_0}}
+{{region xaml-radBusyIndicator-how-to-integrate-with-services-and-radwindow_0}}
 	<telerik:RadWindow x:Class="RadWindow1"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -51,7 +51,7 @@ Here is the sample data that is going to be retrieved:
 
 #### __[C#] Retrieved sample data__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_1}}
+{{region cs-radBusyIndicator-how-to-integrate-with-services-and-radwindow_1}}
 	public class Employee
 	{
 	    public string FirstName
@@ -79,7 +79,7 @@ Here is the sample data that is going to be retrieved:
 
 #### __[C#] EmployeeService class__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_2}}
+{{region cs-radBusyIndicator-how-to-integrate-with-services-and-radwindow_2}}
 	public class EmployeeService
 	{
 	    public static ObservableCollection<Employee> GetEmployees()
@@ -99,7 +99,7 @@ Here is the sample data that is going to be retrieved:
 
 #### __[VB] Retrieved sample data__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_3}}
+{{region vb-radBusyIndicator-how-to-integrate-with-services-and-radwindow_3}}
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -142,7 +142,7 @@ Here is the sample data that is going to be retrieved:
 
 #### __[VB] EmployeeService class__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_4}}
+{{region vb-radBusyIndicator-how-to-integrate-with-services-and-radwindow_4}}
 	Public Class EmployeeService
 	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	  Dim employees As New ObservableCollection(Of Employee)()
@@ -170,7 +170,7 @@ Here is the sample data that is going to be retrieved:
 
 #### __[C#] BackgroundWorker usage__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_5}}
+{{region cs-radBusyIndicator-how-to-integrate-with-services-and-radwindow_5}}
 	public partial class RadWindow1
 	{      
 		private BackgroundWorker worker = new BackgroundWorker();
@@ -209,7 +209,7 @@ Here is the sample data that is going to be retrieved:
 
 #### __[VB] BackgroundWorker usage__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_6}}
+{{region vb-radBusyIndicator-how-to-integrate-with-services-and-radwindow_6}}
 	Public Class RadWindow1
 		Private worker As New BackgroundWorker()
 	
@@ -249,14 +249,14 @@ Here is the sample data that is going to be retrieved:
 
 #### __[C#] Open RadWindow__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_7}}
+{{region cs-radBusyIndicator-how-to-integrate-with-services-and-radwindow_7}}
 	var radWindow = new RadWindow1();
 	radWindow.Show();
 {{endregion}}
 
 #### __[VB] Open RadWindow__
 
-{{region radBusyIndicator-how-to-integrate-with-services-and-radwindow_8}}
+{{region vb-radBusyIndicator-how-to-integrate-with-services-and-radwindow_8}}
 	Dim radWindow As RadWindow1 = New RadWindow1()
 	radWindow.Show()
 {{endregion}}

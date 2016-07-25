@@ -30,7 +30,7 @@ This section describes the keyboard shortcuts used by RadAutoCompleteBox.
 
 ## Tab Navigation
 
-__TabNavigationExtensions.IsTabStop__ attached property indicates whether RadAutoCompleteBox is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since R3 2016 of UI for WPF.
+__TabNavigationExtensions.IsTabStop__ attached property indicates whether RadAutoCompleteBox is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since R3 2016.
 
 #### __[XAML] Example 1: RadAutoCompleteBox with TabNavigationExtensions.IsTabStop__
 

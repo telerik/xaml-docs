@@ -18,28 +18,20 @@ You can initialize __RadDesktopAlertManager__ using one of the following constru
 
 {{region cs-raddesktopalert-desktop-alert-manager_0}}
 	var manager = new RadDesktopAlertManager();
-	...
-	var manager = new RadDesktopAlertManager(AlertScreenPosition.BottomCenter);
-	...
-	var manager = new RadDesktopAlertManager(AlertScreenPosition.TopCenter, 5);
-	...
-	var manager = new RadDesktopAlertManager(AlertScreenPosition.TopRight, new Point(0, 0));
-	...
-	var manager = new RadDesktopAlertManager(AlertScreenPosition.BottomCenter, new Point(0, 0), 10);
+	manager = new RadDesktopAlertManager(AlertScreenPosition.BottomCenter);
+	manager = new RadDesktopAlertManager(AlertScreenPosition.TopCenter, 5);
+	manager = new RadDesktopAlertManager(AlertScreenPosition.TopRight, new Point(0, 0));
+	manager = new RadDesktopAlertManager(AlertScreenPosition.BottomCenter, new Point(0, 0), 10);
 {{endregion}}
 
 #### __[VB] Initializing of RadDesktopAlertManager__
 
 {{region vb-raddesktopalert-desktop-alert-manager_0}}
 	Dim manager = New RadDesktopAlertManager()
-	...
-	Dim manager = New RadDesktopAlertManager(AlertScreenPosition.BottomCenter)
-	...
-	Dim manager = New RadDesktopAlertManager(AlertScreenPosition.TopCenter, 5)
-	...
-	Dim manager = New RadDesktopAlertManager(AlertScreenPosition.TopRight, New Point(0, 0))
-	...
-	Dim manager = New RadDesktopAlertManager(AlertScreenPosition.BottomCenter, New Point(0, 0), 10)
+	manager = New RadDesktopAlertManager(AlertScreenPosition.BottomCenter)
+	manager = New RadDesktopAlertManager(AlertScreenPosition.TopCenter, 5)
+	manager = New RadDesktopAlertManager(AlertScreenPosition.TopRight, New Point(0, 0))
+	manager = New RadDesktopAlertManager(AlertScreenPosition.BottomCenter, New Point(0, 0), 10)
 {{endregion}}
 
 This article will provide some detailed information about the following properties of __RadDesktopAlertManager__: 
@@ -70,25 +62,25 @@ __Example 1__ demonstrates how to visualize __RadDesktopAlert__.
 
 #### __[C#] Example 1:  Showing RadDesktopAlert__
 
-{{region cs-raddesktopalert-desktop-alert-manager_0}}
+{{region cs-raddesktopalert-desktop-alert-manager_1}}
 	var alert = new RadDesktopAlert
 	{
-		Header = "MAIL NOTIFICATION",
-		Content = "Hello, Here are two things that we noticed today on our daily meeting.",
-		Command = new DelegateCommand(OnCommandExecuted),
-		ShowDuration = 5000,
+	    Header = "MAIL NOTIFICATION",
+	    Content = "Hello, Here are two things that we noticed today on our daily meeting.",
+	    Command = new DelegateCommand(this.OnCommandExecuted),
+	    ShowDuration = 5000,
 	};
 	manager.ShowAlert(alert);
 {{endregion}}
 
 #### __[VB] Example 1:  Showing RadDesktopAlert__
 
-{{region vb-raddesktopalert-desktop-alert-manager_0}}
+{{region vb-raddesktopalert-desktop-alert-manager_1}}
 	Dim alert = New RadDesktopAlert() With {
-		 .Header = "MAIL NOTIFICATION",
-		 .Content = "Hello, Here are two things that we noticed today on our daily meeting.",
-		 .Command = New DelegateCommand(OnCommandExecuted),
-		 .ShowDuration = 5000
+	     .Header = "MAIL NOTIFICATION",
+	     .Content = "Hello, Here are two things that we noticed today on our daily meeting.",
+	     .Command = New DelegateCommand(OnCommandExecuted),
+	     .ShowDuration = 5000
 	}
 	manager.ShowAlert(alert)
 {{endregion}}
@@ -97,31 +89,31 @@ By default, __RadDesktopAlert__ is shown and closed with an animation. However, 
 
 #### __[C#]Example 2:  Show RadDesktopAlert without animation__
 
-{{region cs-raddesktopalert-desktop-alert-manager_1}}
+{{region cs-raddesktopalert-desktop-alert-manager_2}}
 	manager.ShowAlert(new DesktopAlertParameters
 	{
-		Header = "New mail",
-		Content = "Hello, Here are two things that we noticed today on our front-end meeting",
-		Icon = new Image { Source = Application.Current.FindResource("DesktopAlertIcon") as ImageSource, Width = 48, Height = 48 },
-		IconColumnWidth = 48,
-		IconMargin = new Thickness(10, 0, 20, 0)
-	},false);
+	    Header = "New mail",
+	    Content = "Hello, Here are two things that we noticed today on our front-end meeting",
+	    Icon = new Image { Source = Application.Current.FindResource("DesktopAlertIcon") as ImageSource, Width = 48, Height = 48 },
+	    IconColumnWidth = 48,
+	    IconMargin = new Thickness(10, 0, 20, 0)
+	}, false);
 {{endregion}}
 
 #### __[VB] Example 2:  Show RadDesktopAlert without animation__
 
-{{region vb-raddesktopalert-desktop-alert-manager_1}}
+{{region vb-raddesktopalert-desktop-alert-manager_2}}
 	manager.ShowAlert(New DesktopAlertParameters() With {
-		 .Header = "New mail",
-		 .Content = "Hello, Here are two things that we noticed today on our meeting",
-		 .Icon = New Image() With {
-			 .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource),
-			 .Width = 48,
-			 .Height = 48
-		},
-		 .IconColumnWidth = 48,
-		 .IconMargin = New Thickness(10, 0, 20, 0)
-	},False)
+	     .Header = "New mail",
+	     .Content = "Hello, Here are two things that we noticed today on our meeting",
+	     .Icon = New Image() With {
+	         .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource),
+	         .Width = 48,
+	         .Height = 48
+	    },
+	     .IconColumnWidth = 48,
+	     .IconMargin = New Thickness(10, 0, 20, 0)
+	}, False)
 {{endregion}}
 
 ## ShowAlert() MVVM
@@ -132,30 +124,30 @@ __Example 3__ demonstrates how to display an alert in a MVVM scenario:
 
 #### __[C#]Example 3:  Creating RadDesktopAlert in MVVM__
 
-{{region cs-raddesktopalert-desktop-alert-manager_2}}
+{{region cs-raddesktopalert-desktop-alert-manager_3}}
 	manager.ShowAlert(new DesktopAlertParameters
 	{
-		Header = "New mail",
-		Content = "Hello, Here are two things that we noticed today on our front-end meeting",
-		Icon = new Image { Source = Application.Current.FindResource("DesktopAlertIcon") as ImageSource, Width = 48, Height = 48 },
-		IconColumnWidth = 48,
-		IconMargin = new Thickness(10, 0, 20, 0)
+	    Header = "New mail",
+	    Content = "Hello, Here are two things that we noticed today on our front-end meeting",
+	    Icon = new Image { Source = Application.Current.FindResource("DesktopAlertIcon") as ImageSource, Width = 48, Height = 48 },
+	    IconColumnWidth = 48,
+	    IconMargin = new Thickness(10, 0, 20, 0)
 	});
 {{endregion}}
 
 #### __[VB] Example 3:  Creating RadDesktopAlert in MVVM__
 
-{{region vb-raddesktopalert-desktop-alert-manager_2}}
+{{region vb-raddesktopalert-desktop-alert-manager_3}}
 	manager.ShowAlert(New DesktopAlertParameters() With {
-		 .Header = "New mail",
-		 .Content = "Hello, Here are two things that we noticed today on our meeting",
-		 .Icon = New Image() With {
-			 .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource),
-			 .Width = 48,
-			 .Height = 48
-		},
-		 .IconColumnWidth = 48,
-		 .IconMargin = New Thickness(10, 0, 20, 0)
+	     .Header = "New mail",
+	     .Content = "Hello, Here are two things that we noticed today on our meeting",
+	     .Icon = New Image() With {
+	         .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource),
+	         .Width = 48,
+	         .Height = 48
+	    },
+	     .IconColumnWidth = 48,
+	     .IconMargin = New Thickness(10, 0, 20, 0)
 	})
 {{endregion}}
 
@@ -167,12 +159,12 @@ __Example 4__ shows how to close __RadDesktopAlert__:
 
 #### __[C#] Example 4:  Closing single RadDesktopAlert__
 
-{{region cs-raddesktopalert-desktop-alert-manager_3}}
+{{region cs-raddesktopalert-desktop-alert-manager_4}}
 	manager.CloseAlert(alert);
 {{endregion}}
 
 #### __[VB] Example 4:  Closing single RadDesktopAlert__
-{{region vb-raddesktopalert-desktop-alert-manager_3}}
+{{region vb-raddesktopalert-desktop-alert-manager_4}}
 	manager.CloseAlert(alert)
 {{endregion}}
 
@@ -182,13 +174,13 @@ __Example 5__ demonstrates how to close all opened __RadDesktopAlerts__:
 
 #### __[C#]Example 5:  Closing all RadDesktopAlerts__
 
-{{region cs-raddesktopalert-desktop-alert-manager_4}}
+{{region cs-raddesktopalert-desktop-alert-manager_5}}
 	manager.CloseAllAlerts();
 {{endregion}}
 
 #### __[VB]Example 5:  Closing all RadDesktopAlerts__
 
-{{region vb-raddesktopalert-desktop-alert-manager_4}}
+{{region vb-raddesktopalert-desktop-alert-manager_5}}
 	manager.CloseAllAlerts()
 {{endregion}}
 
@@ -198,16 +190,16 @@ __Example 6__ demonstrates how to close RadDesktopAlert without using an animati
 
 #### __[C#]Example 6:  Closing RadDesktopAlert without an animation__
 
-{{region cs-raddesktopalert-desktop-alert-manager_5}}
-	Manager.CloseAlert(this.Alert, false);
-	Manager.CloseAllAlerts(false);
+{{region cs-raddesktopalert-desktop-alert-manager_6}}
+	manager.CloseAlert(alert, false);
+	manager.CloseAllAlerts(false);
 {{endregion}}
 
 #### __[VB]Example 6:  Closing RadDesktopAlert without an animation__
 
-{{region vb-raddesktopalert-desktop-alert-manager_5}}
-	Me.Manager.CloseAlert(Me.Alert, False)
-	Me.Manager.CloseAllAlerts(False)
+{{region vb-raddesktopalert-desktop-alert-manager_6}}
+	manager.CloseAlert(alert, False)
+	manager.CloseAllAlerts(False)
 {{endregion}}
 
 ## GetAllAlerts()
@@ -218,13 +210,13 @@ __Example 7__ shows how to get all __RadDesktopAlert__:
 
 #### __[C#] Example 7:  Getting all opened RadDesktopAlerts__
 
-{{region cs-raddesktopalert-desktop-alert-manager_5}}
-	IEnumerable alerts = this.Manager.GetAllAlerts();
+{{region cs-raddesktopalert-desktop-alert-manager_7}}
+	IEnumerable alerts = manager.GetAllAlerts();
 {{endregion}}
 
 #### __[VB] Example 7:  Getting all opened RadDesktopAlerts__
-{{region vb-raddesktopalert-desktop-alert-manager_6}}
-	Dim alerts As IEnumerable = Me.Manager.GetAllAlerts()
+{{region vb-raddesktopalert-desktop-alert-manager_7}}
+	Dim alerts As IEnumerable = manager.GetAllAlerts()
 {{endregion}}
 
 ## Show/HideAnimation
@@ -235,25 +227,25 @@ __Example 8__ demonstates how a __FadeAnimation__ could be used:
 
 #### __[C#] Example 8: Applying ShowAnimation__
 
-{{region cs-raddesktopalert-desktop-alert-manager_7}}
+{{region cs-raddesktopalert-desktop-alert-manager_8}}
 	manager.ShowAnimation = new FadeAnimation
-	{ 
-		Direction = AnimationDirection.Out, 
-		MinOpacity = 0.5d, 
-		MaxOpacity = 0.9d, 
-		SpeedRatio = 0.5d 
+	{
+	    Direction = AnimationDirection.Out,
+	    MinOpacity = 0.5d,
+	    MaxOpacity = 0.9d,
+	    SpeedRatio = 0.5d
 	};
 {{endregion}}
 
 #### __[VB] Example 8: Applying ShowAnimation__
 
-{{region vb-raddesktopalert-desktop-alert-manager_7}}
-	manager.ShowAnimation = New FadeAnimation() With 
-	{ 
-		 .Direction = AnimationDirection.Out, 
-		 .MinOpacity = 0.5, 
-		 .MaxOpacity = 0.9, 
-		 .SpeedRatio = 0.5 
+{{region vb-raddesktopalert-desktop-alert-manager_8}}
+	manager.ShowAnimation = New FadeAnimation() With
+	{
+	     .Direction = AnimationDirection.Out,
+	     .MinOpacity = 0.5,
+	     .MaxOpacity = 0.9,
+	     .SpeedRatio = 0.5
 	}
 {{endregion}}
 
@@ -287,14 +279,14 @@ With Q3 2015 released version of WPF a brand new property __AlertsReorderAnimati
 
 #### __[C#]  Setting AlertsReorderAnimationDuration__
 
-{{region cs-raddesktopalert-desktop-alert-manager_8}}
-	this.Manager.AlertsReorderAnimationDuration = 1000;
+{{region cs-raddesktopalert-desktop-alert-manager_9}}
+	manager.AlertsReorderAnimationDuration = 1000;
 {{endregion}}
 
 #### __[VB]  Setting AlertsReorderAnimationDuration__
 
-{{region vb-raddesktopalert-desktop-alert-manager_8}}
-	Me.Manager.AlertsReorderAnimationDuration = 1000
+{{region vb-raddesktopalert-desktop-alert-manager_9}}
+	manager.AlertsReorderAnimationDuration = 1000
 {{endregion}}
 
 # See Also

@@ -37,22 +37,25 @@ If you prefer visualizing __RadDesktopAlert__ by passing an object of type __Des
 #### __[C#]  Enable moving using DesktopAlertParameters__
 
 {{region cs-raddesktopalert-moving_1}}
-	this.Manager.ShowAlert(new DesktopAlertParameters
+	var manager = new RadDesktopAlertManager();
+	manager.ShowAlert(new DesktopAlertParameters
 	{
-		CanMove = false,
-		Header = "Message",
-		Content="A new message has arrived!"
-	}, true);
+	    CanMove = false,
+	    Header = "Message",
+	    Content = "A new message has arrived!"
+	});
 {{endregion}}
 
 #### __[VB]  Enable moving using DesktopAlertParameters__
 
 {{region vb-raddesktopalert-moving_1}}
-	Me.Manager.ShowAlert(New DesktopAlertParameters With 
+	Dim manager As New RadDesktopAlertManager()
+	manager.ShowAlert(New DesktopAlertParameters With
 	{
-		.CanMove = True, 
-		.Header = "Message", 
-		.Content = "A new message has arrived!"}, True)
+	    .CanMove = True,
+	    .Header = "Message",
+	    .Content = "A new message has arrived!"
+	})
 {{endregion}}
 
 # See Also

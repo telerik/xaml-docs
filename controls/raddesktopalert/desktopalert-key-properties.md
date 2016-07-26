@@ -94,7 +94,12 @@ In order to display an icon inside __RadDesktopAlert__ the __Icon__ property sho
 #### __[VB]  Setting Icon__
 
 {{region vb-raddesktopalert-features-key-properties_3}}
-	alert.Icon = New Image() With { _Key .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource), _Key .Width = 48, _Key .Height = 48 _}
+	alert.Icon = New Image() With
+	{
+	    .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource),
+	    .Width = 48,
+	    .Height = 48
+	}
 {{endregion}}
 
 ## IconColumnWidth
@@ -120,7 +125,7 @@ The __IconMargin__ property is a specific property of __RadDesktopAlert__ that i
 #### __[C#]  Setting IconMargin__
 
 {{region cs-raddesktopalert-features-key-properties_5}}
-	alert.IconMargin = new Thickness(0, 0 , 10, 10);
+	alert.IconMargin = new Thickness(0, 0, 10, 10);
 {{endregion}}
 
 #### __[VB]  Setting IconMargin__
@@ -136,22 +141,13 @@ __RadDesktopAlert__ provides you with a command property. This means you can bin
 #### __[C#]  Setting Command__
 
 {{region cs-raddesktopalert-features-key-properties_6}}
-	alert.Command = new DelegateCommand(OnCommandExecuted);
-	
-	private void OnCommandExecuted(object obj)
-    {
-        MessageBox.Show("Command");
-    }
+	alert.Command = new DelegateCommand(this.OnCommandExecuted);
 {{endregion}}
 
 #### __[VB]  Setting Command__
 
 {{region vb-raddesktopalert-features-key-properties_6}}
-	alert.Command = New DelegateCommand(OnCommandExecuted)
-	
-	Private Sub OnCommandExecuted(obj As Object)
-		MessageBox.Show("Command")
-	End Sub
+	alert.Command = New DelegateCommand(Me.OnCommandExecuted)
 {{endregion}}
 
 ## CanAutoClose
@@ -161,14 +157,12 @@ In order to prevent __RadDesktopAlert__ from auto closing you need to use the __
 #### __[C#]  Setting CanAutoClose__
 
 {{region cs-raddesktopalert-features-key-properties_7}}
-	RadDesktopAlert alert = new RadDesktopAlert();
 	alert.CanAutoClose = true;
 {{endregion}}
 
 #### __[VB]  Setting CanAutoClose__
 
 {{region vb-raddesktopalert-features-key-properties_7}}
-	Dim alert As New RadDesktopAlert()
 	alert.CanAutoClose = True
 {{endregion}}
 
@@ -177,22 +171,25 @@ The __CanAutoClose__ property could also be set using the __DesktopAlertParamete
 #### __[C#]  Setting CanAutoClose using DesktopAlertParameters__
 
 {{region cs-raddesktopalert-features-key-properties_8}}
-	this.SingleAnimationManager.ShowAlert(new DesktopAlertParameters
+	var manager = new RadDesktopAlertManager();
+	manager.ShowAlert(new DesktopAlertParameters
 	{
-		CanAutoClose = false,
-		Header = "Message",
-		Content = "A new message has arrived!"
-	}, true);
+	    CanAutoClose = false,
+	    Header = "Message",
+	    Content = "A new message has arrived!"
+	});
 {{endregion}}
 
 #### __[VB]  Setting CanAutoClose using DesktopAlertParameters__
 
 {{region vb-raddesktopalert-features-key-properties_8}}
-	Me.Manager.ShowAlert(New DesktopAlertParameters With
+	Dim manager = New RadDesktopAlertManager()
+	manager.ShowAlert(New DesktopAlertParameters With
 	{
-		.CanAutoClose = False,
-		.Header = "Message",
-		.Content = "A new message has arrived!"}, True)
+	    .CanAutoClose = False,
+	    .Header = "Message",
+	    .Content = "A new message has arrived!"
+	})
 {{endregion}}
 
 ## ShowCloseButton
@@ -202,14 +199,12 @@ You could easily hide the close button of __RadDesktopAlert__ using the __ShowCl
 #### __[C#]  Setting ShowCloseButton__:
 
 {{region cs-raddesktopalert-features-key-properties_9}}
-	RadDesktopAlert alert = new RadDesktopAlert();;
 	alert.ShowCloseButton = false;
 {{endregion}}
 
 #### __[VB]  Setting ShowCloseButton__:
 
 {{region vb-raddesktopalert-features-key-properties_9}}
-	Dim alert As New RadDesktopAlert()
 	alert.ShowCloseButton = False
 {{endregion}}
 
@@ -220,14 +215,12 @@ In order to visualize the menu of __RadDesktopAlert__ you need to set the __Show
 #### __[C#]  Setting ShowMenuButton__:
 
 {{region cs-raddesktopalert-features-key-properties_10}}
-	RadDesktopAlert alert = new RadDesktopAlert();;
 	alert.ShowMenuButton = false;
 {{endregion}}
 
 #### __[VB]  Setting ShowMenuButton__:
 
 {{region vb-raddesktopalert-features-key-properties_10}}
-	Dim alert As New RadDesktopAlert()
 	alert.ShowMenuButton = False
 {{endregion}}
 

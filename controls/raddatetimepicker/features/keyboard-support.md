@@ -49,3 +49,13 @@ Here is a list of the keyboard shortcuts that can be used inside TimePicker:
 * __Home/End__ - navigate to the first/last item.
 
 * __Enter__ - selects the currently focused time and closes the dropdown.
+
+## Tab Navigation
+
+__TabNavigationExtensions.IsTabStop__ attached property indicates whether RadDateTimePicker is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since R3 2016.
+
+#### __[XAML] Example 1: RadDateTimePicker with TabNavigationExtensions.IsTabStop__
+
+{{region raddatetimepicker-features-keyboard-support-0}}
+	<telerik:RadDateTimePicker telerik:TabNavigationExtensions.IsTabStop="False" />
+{{endregion}}

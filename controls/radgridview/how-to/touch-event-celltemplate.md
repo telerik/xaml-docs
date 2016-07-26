@@ -12,7 +12,7 @@ position: 18
 
 In a scenario where you have explicitly set the cell template of a column within **RadGridView** and you would like that element to handle a touch event separately, you should set the **TouchManager.TouchMode** attached property to **None**. Otherwise, all touch events would be handled by the **RadGridView** control. 
 
-**Example 1** shows how to achieve the requirement for a Button element within a column`s CellTemplate.
+**Example 1** shows how to achieve the requirement for a Button element within a column's CellTemplate.
 
 #### **[XAML] Example 1: Enable touch event for a button within a column cell template**
 

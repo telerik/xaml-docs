@@ -1,14 +1,14 @@
 ---
 title: Enable touch events for custom elements
 page_title:  Enable touch events for custom elements
-description: How To Enable Touch Event for Custom Elements
-slug: gridview-how-to-enable-touch-event-celltemplate
-tags: touch, event, cell-template
+description: How To Enable Touch Events for Custom Elements
+slug: gridview-how-to-enable-touch-events-celltemplate
+tags: touch, event, cell-templates
 published: True
 position: 18
 ---
 
-# How To Enable Touch Event for Custom Elements
+# How To Enable Touch Events for Custom Elements
 
 In a scenario where you have explicitly set the cell template of a column within **RadGridView** and you would like that element to handle a touch event separately, you should set the **TouchManager.TouchMode** attached property to **None**. Otherwise, all touch events would be handled by the **RadGridView** control. 
 

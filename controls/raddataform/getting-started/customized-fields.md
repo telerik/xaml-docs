@@ -40,19 +40,19 @@ Once you set the **AutoGenerateFields** property of the RadDataForm to **False**
 
 	{{region cs-raddataform-customized-fields_0}}
 	this.DataForm1.AutoGenerateFields = false;
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 1: Disabling the autogeneration of fields__
 
 	{{region vb-raddataform-customized-fields_0}}
 	Me.DataForm1.AutoGenerateFields = False
-	{{endregion}}
+{{endregion}}
 
 #### __[XAML] Example 1: Disabling the autogeneration of fields__
 
 	{{region xaml-raddataform-customized-fields_1}}
 	<telerik:RadDataForm x:Name="DataForm1" AutoGenerateFields="False" />
-	{{endregion}}
+{{endregion}}
 
 The three data templates - ReadOnlyTemplate, NewItemTemplate and EditTemplate - correspond to the relevant modes of RadDataForm. So, when the form is in read-only mode, the ReadOnlyTemplate is displayed, when in edit-mode - the EditTemplate and when a new item is added - the NewItemTemplate.
 
@@ -62,33 +62,33 @@ Lets say you have defined the following DataTemplate:
 
 	{{region xaml-raddataform-customized-fields_2}}
 	<Grid.Resources>
-	  <DataTemplate x:Key="MyTemplate">
-	    <Grid>
-	      <Grid.ColumnDefinitions>
-	        <ColumnDefinition/>
-	        <ColumnDefinition/>
-	      </Grid.ColumnDefinitions>
-	      <Grid.RowDefinitions>
-	        <RowDefinition/>
-	        <RowDefinition/>
-	      </Grid.RowDefinitions>
-	      <telerik:DataFormDataField Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" />
-	      <telerik:DataFormDataField Grid.Column="1" Label="Last Name" DataMemberBinding="{Binding LastName, Mode=TwoWay}" />
-	      <telerik:DataFormCheckBoxField Grid.Column="1" Grid.Row="1" Label="Married" DataMemberBinding="{Binding IsMarried, Mode=TwoWay}" />
-	    </Grid>
-	  </DataTemplate>
+	    <DataTemplate x:Key="MyTemplate">
+	        <Grid>
+	            <Grid.ColumnDefinitions>
+	                <ColumnDefinition/>
+	                <ColumnDefinition/>
+	            </Grid.ColumnDefinitions>
+	            <Grid.RowDefinitions>
+	                <RowDefinition/>
+	                <RowDefinition/>
+	            </Grid.RowDefinitions>
+	            <telerik:DataFormDataField Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" />
+	            <telerik:DataFormDataField Grid.Column="1" Label="Last Name" DataMemberBinding="{Binding LastName, Mode=TwoWay}" />
+	            <telerik:DataFormCheckBoxField Grid.Column="1" Grid.Row="1" Label="Married" DataMemberBinding="{Binding IsMarried, Mode=TwoWay}" />
+	        </Grid>
+	    </DataTemplate>
 	</Grid.Resources>
-	{{endregion}}
+{{endregion}}
 
 Then you can assign the ReadOnlyTemplate like so:
 
 #### __[XAML] Example 3: Assigning a ReadOnlyTemplate__
 
 	{{region xaml-raddataform-customized-fields_3}}
-	 <telerik:RadDataForm AutoGenerateFields="False" 
-	                           ReadOnlyTemplate="{StaticResource MyTemplate}">
-	 </telerik:RadDataForm>
-	{{endregion}}
+	<telerik:RadDataForm AutoGenerateFields="False" 
+	                ReadOnlyTemplate="{StaticResource MyTemplate}">
+	</telerik:RadDataForm>
+{{endregion}}
 
 **Figure 3** shows the result:
 
@@ -101,10 +101,10 @@ Similarly you can assign the EditTemplate:
 #### __[XAML] Example 3: Assigning an EditTemplate__
 
 	{{region xaml-raddataform-customized-fields_4}}
-	  <telerik:RadDataForm AutoGenerateFields="False"
-	                            ReadOnlyTemplate="{StaticResource MyTemplate}">
-	  </telerik:RadDataForm>
-	{{endregion}}
+	<telerik:RadDataForm AutoGenerateFields="False" 
+	                ReadOnlyTemplate="{StaticResource MyTemplate}">
+	</telerik:RadDataForm>
+{{endregion}}
 
 The result can bee seen in **Figure 4**:
 
@@ -122,19 +122,19 @@ On the other hand, if you make your mind on displaying quite different controls 
 
 	{{region xaml-raddataform-customized-fields_5}}
 	<Grid>
-	 <Grid.Resources>
-	  <DataTemplate x:Key="MyTemplate">
-	   <StackPanel Orientation="Horizontal" >
-	    <TextBlock Text="Age" Width="20" Height="20" Foreground="Blue" Margin="0,0,10,0" />
-	    <telerik:RadNumericUpDown Value="{Binding Age, Mode=TwoWay}" />
-	   </StackPanel>
-	  </DataTemplate>
-	 </Grid.Resources>
-	 <telerik:RadDataForm AutoGenerateFields="False" 
-	                           EditTemplate="{StaticResource MyTemplate}">
-	 </telerik:RadDataForm>
+	    <Grid.Resources>
+	        <DataTemplate x:Key="MyTemplate">
+	            <StackPanel Orientation="Horizontal" >
+	                <TextBlock Text="Age" Width="20" Height="20" Foreground="Blue" Margin="0,0,10,0" />
+	                <telerik:RadNumericUpDown Value="{Binding Age, Mode=TwoWay}" />
+	            </StackPanel>
+	        </DataTemplate>
+	    </Grid.Resources>
+	    <telerik:RadDataForm AutoGenerateFields="False" 
+	                    EditTemplate="{StaticResource MyTemplate}">
+	    </telerik:RadDataForm>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 The result is displayed in **Figure 5**:
 
@@ -149,23 +149,23 @@ Furthermore, you may customize the data fields as well. For example, a regular *
 #### __[XAML] Example 5: Replacing the default field content__
 
 	{{region xaml-raddataform-customized-fields_6}}
-	        <Grid x:Name="LayoutRoot" Background="White">
-	            <Grid.Resources>
-	                <DataTemplate x:Key="MyTemplate">
-	                    <StackPanel Orientation="Horizontal" >
-	                        <telerik:DataFormDataField>
-	                            <StackPanel Orientation="Horizontal">
-	                                <TextBox Text="{Binding Age, Mode=TwoWay}" Margin="0,0,10,0" />
-	                                <TextBlock Text="years" Foreground="Green"  VerticalAlignment="Bottom" />
-	                            </StackPanel>
-	                        </telerik:DataFormDataField>
+	<Grid x:Name="LayoutRoot" Background="White">
+	    <Grid.Resources>
+	        <DataTemplate x:Key="MyTemplate">
+	            <StackPanel Orientation="Horizontal" >
+	                <telerik:DataFormDataField>
+	                    <StackPanel Orientation="Horizontal">
+	                        <TextBox Text="{Binding Age, Mode=TwoWay}" Margin="0,0,10,0" />
+	                        <TextBlock Text="years" Foreground="Green"  VerticalAlignment="Bottom" />
 	                    </StackPanel>
-	                </DataTemplate>
-	            </Grid.Resources>
-	            <telerik:RadDataForm AutoGenerateFields="False" 
-	                           EditTemplate="{StaticResource MyTemplate}">
-	            </telerik:RadDataForm>
-	        </Grid>
+	                </telerik:DataFormDataField>
+	            </StackPanel>
+	        </DataTemplate>
+	    </Grid.Resources>
+	    <telerik:RadDataForm AutoGenerateFields="False" 
+	                   EditTemplate="{StaticResource MyTemplate}">
+	    </telerik:RadDataForm>
+	</Grid>
 {{endregion}}
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
@@ -173,27 +173,27 @@ Furthermore, you may customize the data fields as well. For example, a regular *
 #### __[XAML] Example 5: Replacing the default field content__
 
 	{{region xaml-raddataform-customized-fields_7}}
-	        <Grid Background="White">
-	            <Grid.Resources>
-	                <DataTemplate x:Key="MyTemplate">
-	                    <StackPanel Orientation="Horizontal" >
-	                        <telerik:DataFormDataField>
-	                            <telerik:DataFormDataField.ContentTemplate>
-	                                <DataTemplate>
-	                                    <StackPanel Orientation="Horizontal">
-	                                        <TextBox Text="{Binding Age,Mode=TwoWay}" Margin="0,0,10,0" />
-	                                        <TextBlock Text="years" Foreground="Green"  VerticalAlignment="Bottom" />
-	                                    </StackPanel>
-	                                </DataTemplate>
-	                            </telerik:DataFormDataField.ContentTemplate>
-	                        </telerik:DataFormDataField>
-	                    </StackPanel>
-	                </DataTemplate>
-	            </Grid.Resources>
-	            <telerik:RadDataForm AutoGenerateFields="False" 
-	                           EditTemplate="{StaticResource MyTemplate}">
-	            </telerik:RadDataForm>
-	        </Grid>
+	<Grid Background="White">
+	    <Grid.Resources>
+	        <DataTemplate x:Key="MyTemplate">
+	            <StackPanel Orientation="Horizontal" >
+	                <telerik:DataFormDataField>
+	                    <telerik:DataFormDataField.ContentTemplate>
+	                        <DataTemplate>
+	                            <StackPanel Orientation="Horizontal">
+	                                <TextBox Text="{Binding Age,Mode=TwoWay}" Margin="0,0,10,0" />
+	                                <TextBlock Text="years" Foreground="Green"  VerticalAlignment="Bottom" />
+	                            </StackPanel>
+	                        </DataTemplate>
+	                    </telerik:DataFormDataField.ContentTemplate>
+	                </telerik:DataFormDataField>
+	            </StackPanel>
+	        </DataTemplate>
+	    </Grid.Resources>
+	    <telerik:RadDataForm AutoGenerateFields="False" 
+	                   EditTemplate="{StaticResource MyTemplate}">
+	    </telerik:RadDataForm>
+	</Grid>
 {{endregion}}
 
 {% endif %}

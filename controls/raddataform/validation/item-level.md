@@ -25,81 +25,78 @@ First we need to include the System.ComponentModel.DataAnnotations namespace:
 #### __[C#] Example 1: Including System.ComponentModel.DataAnnotations__
 
 	{{region cs-raddataform-validation-item-level_0}}
-	    using System.ComponentModel.DataAnnotations;
-	{{endregion}}
+	using System.ComponentModel.DataAnnotations;
+{{endregion}}
 
 #### __[VB.NET] Example 1: Including System.ComponentModel.DataAnnotations__
 
 	{{region vb-raddataform-validation-item-level_0}}
-	    Imports System.ComponentModel.DataAnnotations
-	{{endregion}}
+	Imports System.ComponentModel.DataAnnotations
+{{endregion}}
 
 Now we can define a simple Employee class with validation attributes.
 
 #### __[C#] Example 2: Creating an Employee class with validation attributes__
 
 	{{region cs-raddataform-validation-item-level_1}}
-	    public class Employee
-	    {
-	        [Required]
-	        public string FirstName { get; set; }
-	
-	        [Required(ErrorMessage = "LastName is required")]
-	        public string LastName { get; set; }
-	
-	        [Range(21, 70)]
-	        public int Age { get; set; }
-	
-	        [RegularExpression("[a-z]#[0-9]*")]
-	        public string EmployeeID { get; set; }
-	    }
-	{{endregion}}
+	public class Employee
+	{
+	    [Required]
+	    public string FirstName { get; set; }
+	    [Required(ErrorMessage = "LastName is required")]
+	    public string LastName { get; set; }
+	    [Range(21, 70)]
+	    public int Age { get; set; }
+	    [RegularExpression("[a-z]#[0-9]*")]
+	    public string EmployeeID { get; set; }
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 2: Creating an Employee class with validation attributes__
 
 	{{region vb-raddataform-validation-item-level_1}}
-	    Public Class Employee
-	        <Required()>
-	        Public Property FirstName() As String
-	            Get
-	                Return m_FirstName
-	            End Get
-	            Set(value As String)
-	                m_FirstName = value
-	            End Set
-	        End Property
-	        Private m_FirstName As String
-	        <Required(ErrorMessage:="LastName is required")>
-	        Public Property LastName() As String
-	            Get
-	                Return m_LastName
-	            End Get
-	            Set(value As String)
-	                m_LastName = value
-	            End Set
-	        End Property
-	        Private m_LastName As String
-	        <Range(21, 70)>
-	        Public Property Age() As Integer
-	            Get
-	                Return m_Age
-	            End Get
-	            Set(value As Integer)
-	                m_Age = value
-	            End Set
-	        End Property
-	        Private m_Age As Integer
-	        <RegularExpression("[a-z]#[0-9]*")>
-	        Public Property EmployeeID() As String
-	            Get
-	                Return m_EmployeeID
-	            End Get
-	            Set(value As String)
-	                m_EmployeeID = value
-	            End Set
-	        End Property
-	        Private m_EmployeeID As String
-	    End Class
+	Public Class Employee
+	    <Required()>
+	    Public Property FirstName() As String
+	        Get
+	            Return m_FirstName
+	        End Get
+	        Set(value As String)
+	            m_FirstName = value
+	        End Set
+	    End Property
+	    Private m_FirstName As String
+	    <Required(ErrorMessage:="LastName is required")>
+	    Public Property LastName() As String
+	        Get
+	            Return m_LastName
+	        End Get
+	        Set(value As String)
+	            m_LastName = value
+	        End Set
+	    End Property
+	    Private m_LastName As String
+	    <Range(21, 70)>
+	    Public Property Age() As Integer
+	        Get
+	            Return m_Age
+	        End Get
+	        Set(value As Integer)
+	            m_Age = value
+	        End Set
+	    End Property
+	    Private m_Age As Integer
+	    <RegularExpression("[a-z]#[0-9]*")>
+	    Public Property EmployeeID() As String
+	        Get
+	            Return m_EmployeeID
+	        End Get
+	        Set(value As String)
+	            m_EmployeeID = value
+	        End Set
+	    End Property
+	    Private m_EmployeeID As String
+	End Class
 {{endregion}}
 
 Please, have in mind that __those errors are removed from the validation summary__ on the next committing operation, __unlike the property level ones__, which are removed on property change. 

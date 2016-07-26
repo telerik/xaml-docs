@@ -36,6 +36,6 @@ To apply the style to the real cells, set it to the __DataFieldStyle__ property 
 
 	{{region xaml-raddataform-styles-and-templates-styling-dataformdatafield_0}}
 	<telerik:RadDataForm x:Name="dataForm" DataFieldStyle="{StaticResource DataFormDataFieldStyle}"/>
-	{{endregion}}
+{{endregion}}
 
 

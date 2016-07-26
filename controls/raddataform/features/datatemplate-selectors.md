@@ -20,54 +20,54 @@ For this tutorial we will extend our example from the [Getting Started]({%slug r
 
 	{{region xaml-raddataform-datatemplate-selectors_0}}
 			<Grid>
-				<Grid.Resources>
-					<DataTemplate x:Key="MyTemplate">
-						<Grid>
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition/>
-								<ColumnDefinition/>
-							</Grid.ColumnDefinitions>
-							<Grid.RowDefinitions>
-								<RowDefinition/>
-								<RowDefinition/>
-							</Grid.RowDefinitions>
-							<telerik:DataFormDataField Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" />
-							<telerik:DataFormDataField Grid.Column="1" Label="Salary" DataMemberBinding="{Binding Salary, Mode=TwoWay}" />
-						</Grid>
-					</DataTemplate>
-				</Grid.Resources>
-				<telerik:RadDataForm x:Name="DataForm1" AutoGenerateFields="True" ReadOnlyTemplate="{StaticResource MyTemplate}">
-	
-					<telerik:RadDataForm.EditTemplateSelector>
-						<my:EmployeesEditTemplateSelector>
-							<my:EmployeesEditTemplateSelector.SmallSalaryTemplate>
-								<DataTemplate>
-									<StackPanel>
-										<telerik:DataFormDataField Label="First Name"  
-	                                                           DataMemberBinding="{Binding FirstName}"/>
-										<telerik:DataFormDataField Foreground="Black" 
-	                                                           Label="Salary" 
-	                                                           Background="Blue" 
-	                                                           DataMemberBinding="{Binding Salary}" />
-									</StackPanel>
-								</DataTemplate>
-							</my:EmployeesEditTemplateSelector.SmallSalaryTemplate>
-							<my:EmployeesEditTemplateSelector.BigSalaryTemplate>
-								<DataTemplate>
-									<StackPanel>
-										<telerik:DataFormDataField Label="First Name" 
-	                                                           DataMemberBinding="{Binding FirstName}"/>
-										<telerik:DataFormDataField Foreground="White" 
-	                                                           Label="Salary" 
-	                                                           Background="Red" 
-	                                                           DataMemberBinding="{Binding Salary}" />
-									</StackPanel>
-								</DataTemplate>
-							</my:EmployeesEditTemplateSelector.BigSalaryTemplate>
-						</my:EmployeesEditTemplateSelector>
-					</telerik:RadDataForm.EditTemplateSelector>
-				</telerik:RadDataForm>
-		</Grid>
+			            <Grid.Resources>
+			                <DataTemplate x:Key="MyTemplate">
+			                    <Grid>
+			                        <Grid.ColumnDefinitions>
+			                            <ColumnDefinition/>
+			                            <ColumnDefinition/>
+			                        </Grid.ColumnDefinitions>
+			                        <Grid.RowDefinitions>
+			                            <RowDefinition/>
+			                            <RowDefinition/>
+			                        </Grid.RowDefinitions>
+			                        <telerik:DataFormDataField Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" />
+			                        <telerik:DataFormDataField Grid.Column="1" Label="Salary" DataMemberBinding="{Binding Salary, Mode=TwoWay}" />
+			                    </Grid>
+			                </DataTemplate>
+			            </Grid.Resources>
+			            <telerik:RadDataForm x:Name="DataForm1" AutoGenerateFields="True" ReadOnlyTemplate="{StaticResource MyTemplate}">
+			
+			                <telerik:RadDataForm.EditTemplateSelector>
+			                    <my:EmployeesEditTemplateSelector>
+			                        <my:EmployeesEditTemplateSelector.SmallSalaryTemplate>
+			                            <DataTemplate>
+			                                <StackPanel>
+			                                    <telerik:DataFormDataField Label="First Name"  
+			                                                           DataMemberBinding="{Binding FirstName}"/>
+			                                    <telerik:DataFormDataField Foreground="Black" 
+			                                                           Label="Salary" 
+			                                                           Background="Blue" 
+			                                                           DataMemberBinding="{Binding Salary}" />
+			                                </StackPanel>
+			                            </DataTemplate>
+			                        </my:EmployeesEditTemplateSelector.SmallSalaryTemplate>
+			                        <my:EmployeesEditTemplateSelector.BigSalaryTemplate>
+			                            <DataTemplate>
+			                                <StackPanel>
+			                                    <telerik:DataFormDataField Label="First Name" 
+			                                                           DataMemberBinding="{Binding FirstName}"/>
+			                                    <telerik:DataFormDataField Foreground="White" 
+			                                                           Label="Salary" 
+			                                                           Background="Red" 
+			                                                           DataMemberBinding="{Binding Salary}" />
+			                                </StackPanel>
+			                            </DataTemplate>
+			                        </my:EmployeesEditTemplateSelector.BigSalaryTemplate>
+			                    </my:EmployeesEditTemplateSelector>
+			                </telerik:RadDataForm.EditTemplateSelector>
+			            </telerik:RadDataForm>
+			        </Grid>
 	{{endregion}}
 
 Here we define a __DataTemplateSelector__(__Example 2__):
@@ -95,7 +95,6 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 					return this.SmallSalaryTemplate;
 				}
 			}
-	
 			public DataTemplate BigSalaryTemplate { get; set; }
 			public DataTemplate SmallSalaryTemplate { get; set; }
 		}
@@ -105,23 +104,21 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 	{{region vb-raddataform-datatemplate-selectors_2}}
 	Public Class EmployeesEditTemplateSelector
-			Inherits System.Windows.Controls.DataTemplateSelector
-	
-			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
-				Dim employee As Employee = TryCast(item, Employee)
-				If employee Is Nothing Then
-					Return Nothing
-				ElseIf employee.Salary > 2500 Then
-					Return Me.BigSalaryTemplate
-				Else
-					Return Me.SmallSalaryTemplate
-				End If
-			End Function
-	
-			Public Property BigSalaryTemplate() As DataTemplate
-			Public Property SmallSalaryTemplate() As DataTemplate
-		End Class
-	{{endregion}}
+	    Inherits System.Windows.Controls.DataTemplateSelector
+	    Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+	        Dim employee As Employee = TryCast(item, Employee)
+	        If employee Is Nothing Then
+	            Return Nothing
+	        ElseIf employee.Salary > 2500 Then
+	            Return Me.BigSalaryTemplate
+	        Else
+	            Return Me.SmallSalaryTemplate
+	        End If
+	    End Function
+	    Public Property BigSalaryTemplate() As DataTemplate
+	    Public Property SmallSalaryTemplate() As DataTemplate
+	End Class
+{{endregion}}
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
@@ -146,7 +143,6 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 					return this.SmallSalaryTemplate;
 				}
 			}
-	
 			public DataTemplate BigSalaryTemplate { get; set; }
 			public DataTemplate SmallSalaryTemplate { get; set; }
 		}
@@ -156,21 +152,19 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 	{{region vb-raddataform-datatemplate-selectors_1}}
 		Public Class EmployeesEditTemplateSelector
-			Inherits Telerik.Windows.Controls.DataTemplateSelector
-	
-			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
-				Dim employee As Employee = TryCast(item, Employee)
-				If employee Is Nothing Then
-					Return Nothing
-				ElseIf employee.Salary > 2500 Then
-					Return Me.BigSalaryTemplate
-				Else
-					Return Me.SmallSalaryTemplate
-				End If
-			End Function
-	
-			Public Property BigSalaryTemplate() As DataTemplate
-			Public Property SmallSalaryTemplate() As DataTemplate
+		    Inherits Telerik.Windows.Controls.DataTemplateSelector
+		    Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+		        Dim employee As Employee = TryCast(item, Employee)
+		        If employee Is Nothing Then
+		            Return Nothing
+		        ElseIf employee.Salary > 2500 Then
+		            Return Me.BigSalaryTemplate
+		        Else
+		            Return Me.SmallSalaryTemplate
+		        End If
+		    End Function
+		    Public Property BigSalaryTemplate() As DataTemplate
+		    Public Property SmallSalaryTemplate() As DataTemplate
 		End Class
 	{{endregion}}
 

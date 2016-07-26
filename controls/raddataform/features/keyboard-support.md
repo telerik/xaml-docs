@@ -48,77 +48,75 @@ The class responsible for customizing the keyboard navigation should to be simil
 #### __[C#] Example 1: Creating a custom KeyboardCommandProvider__
 
 	{{region cs-raddataform-features-keyboard-support_0}}
-	    public class CustomKeyboardCommandProvider : DataFormCommandProvider
+	public class CustomKeyboardCommandProvider : DataFormCommandProvider
+	{
+	    public CustomKeyboardCommandProvider()
+	        : base(null)
 	    {
-	        public CustomKeyboardCommandProvider()
-	            : base(null)
-	        {
-	
-	        }
-	
-	        public CustomKeyboardCommandProvider(RadDataForm dataForm)
-	            : base(dataForm)
-	        {
-	            this.DataForm = dataForm;
-	        }
-	        public override List<DelegateCommandWrapper> ProvideCommandsForKey(KeyEventArgs args)
-	        {
-	            List<DelegateCommandWrapper> actionsToExecute = base.ProvideCommandsForKey(args);
-	            if (args.Key == Key.Right)
-	            {
-	                actionsToExecute.Clear();
-	                actionsToExecute.Add(new DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToNext, this.DataForm));
-	                actionsToExecute.Add(new DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, this.DataForm));
-	            }
-	            if (args.Key == Key.Left)
-	            {
-	                actionsToExecute.Clear();
-	                actionsToExecute.Add(new DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToPrevious, this.DataForm));
-	                actionsToExecute.Add(new DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, this.DataForm));
-	            }
-	            if (actionsToExecute.Count > 0)
-	            {
-	                actionsToExecute.Add(new DataFormDelegateCommandWrapper(new Action(() => { this.DataForm.AcquireFocus(); }), 100, this.DataForm));
-	                args.Handled = true;
-	            }
-	            return actionsToExecute;
-	        }
 	    }
-	{{endregion}}
+	    public CustomKeyboardCommandProvider(RadDataForm dataForm)
+	        : base(dataForm)
+	    {
+	        this.DataForm = dataForm;
+	    }
+	    public override List<DelegateCommandWrapper> ProvideCommandsForKey(KeyEventArgs args)
+	    {
+	        List<DelegateCommandWrapper> actionsToExecute = base.ProvideCommandsForKey(args);
+	        if (args.Key == Key.Right)
+	        {
+	            actionsToExecute.Clear();
+	            actionsToExecute.Add(new DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToNext, this.DataForm));
+	            actionsToExecute.Add(new DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, this.DataForm));
+	        }
+	        if (args.Key == Key.Left)
+	        {
+	            actionsToExecute.Clear();
+	            actionsToExecute.Add(new DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToPrevious, this.DataForm));
+	            actionsToExecute.Add(new DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, this.DataForm));
+	        }
+	        if (actionsToExecute.Count > 0)
+	        {
+	            actionsToExecute.Add(new DataFormDelegateCommandWrapper(new Action(() => { this.DataForm.AcquireFocus(); }), 100, this.DataForm));
+	            args.Handled = true;
+	        }
+	        return actionsToExecute;
+	    }
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 1: Creating a custom KeyboardCommandProvider__
 
 	{{region vb-raddataform-features-keyboard-support_0}}
-	    Public Class CustomKeyboardCommandProvider
-	        Inherits DataFormCommandProvider
-	        Public Sub New()
-	            MyBase.New(Nothing)
-	        End Sub
-	        Public Sub New(dataForm As RadDataForm)
-	            MyBase.New(dataForm)
-	            Me.DataForm = dataForm
-	        End Sub
-	        Public Overrides Function ProvideCommandsForKey(ByVal args As KeyEventArgs) As List(Of DelegateCommandWrapper)
-	            Dim actionsToExecute As List(Of DelegateCommandWrapper) = MyBase.ProvideCommandsForKey(args)
-	            If args.Key = Key.Right Then
-	                actionsToExecute.Clear()
-	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToNext, Me.DataForm))
-	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, Me.DataForm))
-	            End If
-	            If args.Key = Key.Left Then
-	                actionsToExecute.Clear()
-	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToPrevious, Me.DataForm))
-	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, Me.DataForm))
-	            End If
-	            If actionsToExecute.Count > 0 Then
-	                actionsToExecute.Add(New DataFormDelegateCommandWrapper(New Action(Sub()
-	                                                                                       Me.DataForm.AcquireFocus()
-	                                                                                   End Sub), 100, Me.DataForm))
-	                args.Handled = True
-	            End If
-	            Return actionsToExecute
-	        End Function
-	    End Class
+	Public Class CustomKeyboardCommandProvider
+	    Inherits DataFormCommandProvider
+	    Public Sub New()
+	        MyBase.New(Nothing)
+	    End Sub
+	    Public Sub New(dataForm As RadDataForm)
+	        MyBase.New(dataForm)
+	        Me.DataForm = dataForm
+	    End Sub
+	    Public Overrides Function ProvideCommandsForKey(ByVal args As KeyEventArgs) As List(Of DelegateCommandWrapper)
+	        Dim actionsToExecute As List(Of DelegateCommandWrapper) = MyBase.ProvideCommandsForKey(args)
+	        If args.Key = Key.Right Then
+	            actionsToExecute.Clear()
+	            actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToNext, Me.DataForm))
+	            actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, Me.DataForm))
+	        End If
+	        If args.Key = Key.Left Then
+	            actionsToExecute.Clear()
+	            actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.MoveCurrentToPrevious, Me.DataForm))
+	            actionsToExecute.Add(New DataFormDelegateCommandWrapper(RadDataFormCommands.BeginEdit, Me.DataForm))
+	        End If
+	        If actionsToExecute.Count > 0 Then
+	            actionsToExecute.Add(New DataFormDelegateCommandWrapper(New Action(Sub()
+	                                                                                   Me.DataForm.AcquireFocus()
+	                                                                               End Sub), 100, Me.DataForm))
+	            args.Handled = True
+	        End If
+	        Return actionsToExecute
+	    End Function
+	End Class
 {{endregion}}
 
 Following up the code-snippet above, a press of Left/ Right keys will result in moving to the Next/ Previous item and editing it. However, do not forget to remove the predefined commands for that particular key by calling the Clear() method.
@@ -128,27 +126,26 @@ The last thing to be done is to set the CommandProvider property of the RadDataF
 #### __[XAML] Example 2: Set the CommandProvider property__
 
 	{{region xaml-raddataform-features-keyboard-support_1}}
-	    <Grid.Resources>
-            <my:CustomKeyboardCommandProvider x:Key="CustomProvider"/>
-        </Grid.Resources>
-
-        <telerik:RadDataForm x:Name="RadDataForm1"
-                         ItemsSource="{Binding Employees}" 
-                         CommandProvider="{StaticResource CustomProvider}"/> 
-	{{endregion}}
+	<Grid.Resources>
+	    <my:CustomKeyboardCommandProvider x:Key="CustomProvider"/>
+	</Grid.Resources>
+	<telerik:RadDataForm x:Name="RadDataForm1"
+	                 ItemsSource="{Binding Employees}" 
+	                 CommandProvider="{StaticResource CustomProvider}"/>
+{{endregion}}
 
 
 #### __[C#] Example 2: Set the CommandProvider property__
 
 	{{region cs-raddataform-features-keyboard-support_2}}
-	    this.RadDataForm1.CommandProvider = new CustomKeyboardCommandProvider(this.RadDataForm1);
-	{{endregion}}
+	this.RadDataForm1.CommandProvider = new CustomKeyboardCommandProvider(this.RadDataForm1);
+{{endregion}}
 
 #### __[VB.NET] Example 2: Set the CommandProvider property__
 
 	{{region vb-raddataform-features-keyboard-support_2}}
-	    Me.RadDataForm1.CommandProvider = New CustomKeyboardCommandProvider(Me.RadDataForm1)
-	{{endregion}}
+	Me.RadDataForm1.CommandProvider = New CustomKeyboardCommandProvider(Me.RadDataForm1)
+{{endregion}}
 
 ## Disable the Built-in Navigation
 
@@ -157,40 +154,36 @@ As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation
 #### __[C#] Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
 	{{region cs-raddataform-features-keyboard-support_3}}
-    public class NoBuiltInNavigationKeyboardCommandProvider : DataFormCommandProvider
-    {
-        public NoBuiltInNavigationKeyboardCommandProvider()
-            : base(null)
-        {
-
-        }
-
-        public NoBuiltInNavigationKeyboardCommandProvider(RadDataForm dataForm)
-            : base(dataForm)
-        {
-            this.DataForm = dataForm;
-            this.EnableBuiltInNavigation = false;
-        }
-    }
-	{{endregion}}
+	public class NoBuiltInNavigationKeyboardCommandProvider : DataFormCommandProvider
+	{
+	    public NoBuiltInNavigationKeyboardCommandProvider()
+	        : base(null)
+	    {
+	    }
+	    public NoBuiltInNavigationKeyboardCommandProvider(RadDataForm dataForm)
+	        : base(dataForm)
+	    {
+	        this.DataForm = dataForm;
+	        this.EnableBuiltInNavigation = false;
+	    }
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
 	{{region vb-raddataform-features-keyboard-support_3}}
-    Public Class NoBuiltInNavigationKeyboardCommandProvider
-        Inherits DataFormCommandProvider
-        Public Sub New()
-
-            MyBase.New(Nothing)
-        End Sub
-
-        Public Sub New(dataForm As RadDataForm)
-            MyBase.New(dataForm)
-            Me.DataForm = dataForm
-            Me.EnableBuiltInNavigation = False
-        End Sub
-    End Class
-	{{endregion}}
+	Public Class NoBuiltInNavigationKeyboardCommandProvider
+	    Inherits DataFormCommandProvider
+	    Public Sub New()
+	        MyBase.New(Nothing)
+	    End Sub
+	    Public Sub New(dataForm As RadDataForm)
+	        MyBase.New(dataForm)
+	        Me.DataForm = dataForm
+	        Me.EnableBuiltInNavigation = False
+	    End Sub
+	End Class
+{{endregion}}
 
 ## Control the Processing of Handled Events
 
@@ -199,40 +192,36 @@ As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __Data
 #### __[C#] Example 4: Setting the ShouldProcessHandledEvents to False__
 
 	{{region cs-raddataform-features-keyboard-support_4}}
-    public class ProcessHandledEventsKeyboardCommandProvider : DataFormCommandProvider
-    {
-        public ProcessHandledEventsKeyboardCommandProvider()
-            : base(null)
-        {
-
-        }
-
-        public ProcessHandledEventsKeyboardCommandProvider(RadDataForm dataForm)
-            : base(dataForm)
-        {
-            this.DataForm = dataForm;
-            this.ShouldProcessHandledEvents = false;
-        }
-    }
-	{{endregion}}
+	public class ProcessHandledEventsKeyboardCommandProvider : DataFormCommandProvider
+	{
+	    public ProcessHandledEventsKeyboardCommandProvider()
+	        : base(null)
+	    {
+	    }
+	    public ProcessHandledEventsKeyboardCommandProvider(RadDataForm dataForm)
+	        : base(dataForm)
+	    {
+	        this.DataForm = dataForm;
+	        this.ShouldProcessHandledEvents = false;
+	    }
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 4: Setting the ShouldProcessHandledEvents to False__
 
 	{{region vb-raddataform-features-keyboard-support_4}}
-    Public Class ProcessHandledEventsKeyboardCommandProvider
-        Inherits DataFormCommandProvider
-        Public Sub New()
-
-            MyBase.New(Nothing)
-        End Sub
-
-        Public Sub New(dataForm As RadDataForm)
-            MyBase.New(dataForm)
-            Me.DataForm = dataForm
-            Me.ShouldProcessHandledEvents = False
-        End Sub
-    End Class
-	{{endregion}}
+	Public Class ProcessHandledEventsKeyboardCommandProvider
+	    Inherits DataFormCommandProvider
+	    Public Sub New()
+	        MyBase.New(Nothing)
+	    End Sub
+	    Public Sub New(dataForm As RadDataForm)
+	        MyBase.New(dataForm)
+	        Me.DataForm = dataForm
+	        Me.ShouldProcessHandledEvents = False
+	    End Sub
+	End Class
+{{endregion}}
 
 ## See Also
 

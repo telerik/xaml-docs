@@ -51,115 +51,114 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 #### __[C#] Example 2: Creating an Employee Class with Some Exposed Properties__
 
 	{{region cs-raddataform-getting-started_1}}
-	public class Employee 
-	 {  
-	  public string FirstName
-	  {
-	   get;
-	   set;
-	  }
-	  public string LastName
-	  {
-	   get;
-	   set;
-	  }
-	  public string Occupation
-	  {
-	   get;
-	   set;
-	  }
-	  public DateTime StartingDate
-	  {
-	   get;
-	   set;
-	  }
-	  public bool IsMarried
-	  {
-	   get;
-	   set;
-	  }
-	
-	  public int Salary
-	  {
-	   get;
-	   set;
-	  }
-	  public Gender Gender
-	  {
-	   get;
-	   set;
-	  }
-	 }
-	{{endregion}}
+	public class Employee
+	{
+	    public string FirstName
+	    {
+	        get;
+	        set;
+	    }
+	    public string LastName
+	    {
+	        get;
+	        set;
+	    }
+	    public string Occupation
+	    {
+	        get;
+	        set;
+	    }
+	    public DateTime StartingDate
+	    {
+	        get;
+	        set;
+	    }
+	    public bool IsMarried
+	    {
+	        get;
+	        set;
+	    }
+	    public int Salary
+	    {
+	        get;
+	        set;
+	    }
+	    public Gender Gender
+	    {
+	        get;
+	        set;
+	    }
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 2: Creating an Employee Class with Some Exposed Properties__
 
 	{{region vb-raddataform-getting-started_1}}
-	    Public Class Employee
-	        Public Property FirstName() As String
-	            Get
-	                Return m_FirstName
-	            End Get
-	            Set(value As String)
-	                m_FirstName = value
-	            End Set
-	        End Property
-	        Private m_FirstName As String
-	        Public Property LastName() As String
-	            Get
-	                Return m_LastName
-	            End Get
-	            Set(value As String)
-	                m_LastName = value
-	            End Set
-	        End Property
-	        Private m_LastName As String
-	        Public Property Occupation() As String
-	            Get
-	                Return m_Occupation
-	            End Get
-	            Set(value As String)
-	                m_Occupation = value
-	            End Set
-	        End Property
-	        Private m_Occupation As String
-	        Public Property StartingDate() As DateTime
-	            Get
-	                Return m_StartingDate
-	            End Get
-	            Set(value As DateTime)
-	                m_StartingDate = value
-	            End Set
-	        End Property
-	        Private m_StartingDate As DateTime
-	        Public Property IsMarried() As Boolean
-	            Get
-	                Return m_IsMarried
-	            End Get
-	            Set(value As Boolean)
-	                m_IsMarried = value
-	            End Set
-	        End Property
-	        Private m_IsMarried As Boolean
-	        Public Property Salary() As Integer
-	            Get
-	                Return m_Salary
-	            End Get
-	            Set(value As Integer)
-	                m_Salary = value
-	            End Set
-	        End Property
-	        Private m_Salary As Integer
-	        Public Property Gender() As Gender
-	            Get
-	                Return m_Gender
-	            End Get
-	            Set(value As Gender)
-	                m_Gender = value
-	            End Set
-	        End Property
-	        Private m_Gender As Gender
-	    End Class
+	Public Class Employee
+	    Public Property FirstName() As String
+	        Get
+	            Return m_FirstName
+	        End Get
+	        Set(value As String)
+	            m_FirstName = value
+	        End Set
+	    End Property
+	    Private m_FirstName As String
+	    Public Property LastName() As String
+	        Get
+	            Return m_LastName
+	        End Get
+	        Set(value As String)
+	            m_LastName = value
+	        End Set
+	    End Property
+	    Private m_LastName As String
+	    Public Property Occupation() As String
+	        Get
+	            Return m_Occupation
+	        End Get
+	        Set(value As String)
+	            m_Occupation = value
+	        End Set
+	    End Property
+	    Private m_Occupation As String
+	    Public Property StartingDate() As DateTime
+	        Get
+	            Return m_StartingDate
+	        End Get
+	        Set(value As DateTime)
+	            m_StartingDate = value
+	        End Set
+	    End Property
+	    Private m_StartingDate As DateTime
+	    Public Property IsMarried() As Boolean
+	        Get
+	            Return m_IsMarried
+	        End Get
+	        Set(value As Boolean)
+	            m_IsMarried = value
+	        End Set
+	    End Property
+	    Private m_IsMarried As Boolean
+	    Public Property Salary() As Integer
+	        Get
+	            Return m_Salary
+	        End Get
+	        Set(value As Integer)
+	            m_Salary = value
+	        End Set
+	    End Property
+	    Private m_Salary As Integer
+	    Public Property Gender() As Gender
+	        Get
+	            Return m_Gender
+	        End Get
+	        Set(value As Gender)
+	            m_Gender = value
+	        End Set
+	    End Property
+	    Private m_Gender As Gender
+	End Class
 {{endregion}}
 
 In the example above **Gender** is of type enum:
@@ -168,20 +167,20 @@ In the example above **Gender** is of type enum:
 
 	{{region cs-raddataform-getting-started_2}}
 	public enum Gender
-	 {
-	  Female,
-	  Male
-	 }
-	{{endregion}}
+	{
+	    Female,
+	    Male
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 3: Create Gender Enumeration__
 
 	{{region vb-raddataform-getting-started_2}}
 	Public Enum Gender
-	 Female
-	 Male
+	    Female
+	    Male
 	End Enum
-	{{endregion}}
+{{endregion}}
 
 >Note that in case you want to be notified on the changes made on the data item, the class Employee should implement the __INotifyPropertyChanged__ interface and raise the __PropertyChanged__ event every time a property value changes.
 
@@ -190,31 +189,33 @@ Once the class Employee is defined, you may use it for creating an object of thi
 #### __[C#] Example 4: Binding a Single Item to RadDataForm__
 
 	{{region cs-raddataform-getting-started_3}}
-	   Employee employee = new Employee() { 
-			FirstName = "Sarah", 
-			LastName = "Blake", 
-			Occupation = "Supplied Manager", 
-			StartingDate = new DateTime(2005, 04, 12), 
-			IsMarried = true, Salary = 3500,   
-			Gender = Gender.Female 
-	   }; 
-	   this.RadDataForm1.CurrentItem = employee;
-	{{endregion}}
+	Employee employee = new Employee()
+	{
+	    FirstName = "Sarah",
+	    LastName = "Blake",
+	    Occupation = "Supplied Manager",
+	    StartingDate = new DateTime(2005, 04, 12),
+	    IsMarried = true,
+	    Salary = 3500,
+	    Gender = Gender.Female
+	};
+	this.RadDataForm1.CurrentItem = employee;
+{{endregion}}
 
 #### __[VB.NET] Example 4: Binding a Single Item to RadDataForm__
 
 	{{region vb-raddataform-getting-started_3}}
-        Dim employee As New Employee() With { _
-         .FirstName = "Sarah", _
-         .LastName = "Blake", _
-         .Occupation = "Supplied Manager", _
-         .StartingDate = New DateTime(2005, 4, 12), _
-         .IsMarried = True, _
-         .Salary = 3500, _
-         .Gender = Gender.Female _
-        }
-        Me.DataForm1.CurrentItem = employee
-	{{endregion}}
+	Dim employee As New Employee() With {
+	 .FirstName = "Sarah",
+	 .LastName = "Blake",
+	 .Occupation = "Supplied Manager",
+	 .StartingDate = New DateTime(2005, 4, 12),
+	 .IsMarried = True,
+	 .Salary = 3500,
+	 .Gender = Gender.Female
+	}
+	Me.RadDataForm1.CurrentItem = employee
+{{endregion}}
 
 After you run the application you should see the following:
 
@@ -231,98 +232,98 @@ We will create a simple **EmployeeService** class with a single static method - 
 	{{region cs-raddataform-getting-started_4}}
 	public class EmployeeService
 	{
-	  public static ObservableCollection<Employee> GetEmployees()
-	  {
-            ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
-            employees.Add(new Employee() 
-            { 
-                FirstName = "Sarah", 
-                LastName = "Blake", 
-                Occupation = "Supplied Manager", 
-                StartingDate = new DateTime(2005, 04, 12), 
-                IsMarried = true, Salary = 3500, 
-                Gender = Gender.Female 
-            });
-            employees.Add(new Employee() 
-            { 
-                FirstName = "Jane", 
-                LastName = "Simpson", 
-                Occupation = "Security", 
-                StartingDate = new DateTime(2008, 12, 03), 
-                IsMarried = true, 
-                Salary = 2000, 
-                Gender = Gender.Female 
-            });
-            employees.Add(new Employee() 
-            { 
-                FirstName = "John", 
-                LastName = "Peterson", 
-                Occupation = "Consultant", 
-                StartingDate = new DateTime(2005, 04, 12), 
-                IsMarried = false, Salary = 2600, 
-                Gender = Gender.Male 
-            });
-            employees.Add(new Employee() 
-            { 
-                FirstName = "Peter", 
-                LastName = "Bush",
-                Occupation = "Cashier", 
-                StartingDate = new DateTime(2005, 04, 12), 
-                IsMarried = true, 
-                Salary = 2300, 
-                Gender = Gender.Male 
-            });
-            return employees;
-	  }
+	    public static ObservableCollection<Employee> GetEmployees()
+	    {
+	        ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
+	        employees.Add(new Employee() 
+	        { 
+	            FirstName = "Sarah", 
+	            LastName = "Blake", 
+	            Occupation = "Supplied Manager", 
+	            StartingDate = new DateTime(2005, 04, 12), 
+	            IsMarried = true, Salary = 3500, 
+	            Gender = Gender.Female 
+	        });
+	        employees.Add(new Employee() 
+	        { 
+	            FirstName = "Jane", 
+	            LastName = "Simpson", 
+	            Occupation = "Security", 
+	            StartingDate = new DateTime(2008, 12, 03), 
+	            IsMarried = true, 
+	            Salary = 2000, 
+	            Gender = Gender.Female 
+	        });
+	        employees.Add(new Employee() 
+	        { 
+	            FirstName = "John", 
+	            LastName = "Peterson", 
+	            Occupation = "Consultant", 
+	            StartingDate = new DateTime(2005, 04, 12), 
+	            IsMarried = false, Salary = 2600, 
+	            Gender = Gender.Male 
+	        });
+	        employees.Add(new Employee() 
+	        { 
+	            FirstName = "Peter", 
+	            LastName = "Bush",
+	            Occupation = "Cashier", 
+	            StartingDate = new DateTime(2005, 04, 12), 
+	            IsMarried = true, 
+	            Salary = 2300, 
+	            Gender = Gender.Male 
+	        });
+	        return employees;
+	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 5: Creating an EmployeeService class with a static GetEmployees() method__
 
 	{{region vb-raddataform-getting-started_4}}
 	Public Class EmployeeService
-	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
-	  Dim employees As New ObservableCollection(Of Employee)()
-	            employees.Add(New Employee() With { _
-	              .FirstName = "Sarah", _
-	              .LastName = "Blake", _
-	              .Occupation = "Supplied Manager", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 3500, _
-	              .Gender = Gender.Female _
-	            })
-	            employees.Add(New Employee() With { _
-	              .FirstName = "Jane", _
-	              .LastName = "Simpson", _
-	              .Occupation = "Security", _
-	              .StartingDate = New DateTime(2008, 12, 3), _
-	              .IsMarried = True, _
-	              .Salary = 2000, _
-	              .Gender = Gender.Female _
-	            })
-	            employees.Add(New Employee() With { _
-	              .FirstName = "John", _
-	              .LastName = "Peterson", _
-	              .Occupation = "Consultant", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = False, _
-	              .Salary = 2600, _
-	              .Gender = Gender.Male _
-	            })
-	            employees.Add(New Employee() With { _
-	              .FirstName = "Peter", _
-	              .LastName = "Bush", _
-	              .Occupation = "Cashier", _
-	              .StartingDate = New DateTime(2005, 4, 12), _
-	              .IsMarried = True, _
-	              .Salary = 2300, _
-	              .Gender = Gender.Male _
-	            })
-	  Return employees
-	 End Function
+	    Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
+	        Dim employees As New ObservableCollection(Of Employee)()
+	        employees.Add(New Employee() With { _
+	          .FirstName = "Sarah", _
+	          .LastName = "Blake", _
+	          .Occupation = "Supplied Manager", _
+	          .StartingDate = New DateTime(2005, 4, 12), _
+	          .IsMarried = True, _
+	          .Salary = 3500, _
+	          .Gender = Gender.Female _
+	        })
+	        employees.Add(New Employee() With { _
+	          .FirstName = "Jane", _
+	          .LastName = "Simpson", _
+	          .Occupation = "Security", _
+	          .StartingDate = New DateTime(2008, 12, 3), _
+	          .IsMarried = True, _
+	          .Salary = 2000, _
+	          .Gender = Gender.Female _
+	        })
+	        employees.Add(New Employee() With { _
+	          .FirstName = "John", _
+	          .LastName = "Peterson", _
+	          .Occupation = "Consultant", _
+	          .StartingDate = New DateTime(2005, 4, 12), _
+	          .IsMarried = False, _
+	          .Salary = 2600, _
+	          .Gender = Gender.Male _
+	        })
+	        employees.Add(New Employee() With { _
+	          .FirstName = "Peter", _
+	          .LastName = "Bush", _
+	          .Occupation = "Cashier", _
+	          .StartingDate = New DateTime(2005, 4, 12), _
+	          .IsMarried = True, _
+	          .Salary = 2300, _
+	          .Gender = Gender.Male _
+	        })
+	        Return employees
+	    End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 
@@ -330,13 +331,13 @@ Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 
 	{{region cs-raddataform-getting-started_5}}
 	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
 	{{region vb-raddataform-getting-started_5}}
 	Me.RadDataForm1.ItemsSource = EmployeeService.GetEmployees()
-	{{endregion}}
+{{endregion}}
 
 On running the application, you should see the following:
 

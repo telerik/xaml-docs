@@ -16,30 +16,30 @@ RadPropertyGrid auto-generates its property definitions by default based on the 
 
 However, sometimes you may decide on customizing or totally changing them. This can be achieved by setting the __AutoGeneratePropertyDefinitions__ to __"False"__ and defining those you require in the PropertyDefinitions collection. For example, instead of using a simple TextBox for editing the Height and Width properties of RadButton, you may use RadNumericUpDown:
 
-#### __[XAML]Example 1: Custom Property Definitions__
+#### __[XAML] Example 1: Custom Property Definitions__
 
 	{{region xaml-radpropertygrid-gettingstarted-customized-property-definitions_0}}
 	<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding ElementName= button1}"
-	    AutoGeneratePropertyDefinitions="False" 
-	             Grid.Column="1">
-	 <telerik:RadPropertyGrid.PropertyDefinitions>
-	  <telerik:PropertyDefinition Binding="{Binding Width}" Description="Displays the Width property of the RadButton" DisplayName="Width">
-	   <telerik:PropertyDefinition.EditorTemplate>
-	    <DataTemplate>
-	     <telerik:RadNumericUpDown Value="{Binding Width, Mode=TwoWay}" />
-	    </DataTemplate>
-	   </telerik:PropertyDefinition.EditorTemplate>
-	  </telerik:PropertyDefinition>
-	  <telerik:PropertyDefinition Binding="{Binding Height}" Description="Displays the Height property of the RadButton" DisplayName="Height">
-	   <telerik:PropertyDefinition.EditorTemplate>
-	    <DataTemplate>
-	     <telerik:RadNumericUpDown Value="{Binding Height, Mode=TwoWay}" />
-	    </DataTemplate>
-	   </telerik:PropertyDefinition.EditorTemplate>
-	  </telerik:PropertyDefinition>
-	 </telerik:RadPropertyGrid.PropertyDefinitions>
+	AutoGeneratePropertyDefinitions="False" 
+	     Grid.Column="1">
+	    <telerik:RadPropertyGrid.PropertyDefinitions>
+	        <telerik:PropertyDefinition Binding="{Binding Width}" Description="Displays the Width property of the RadButton" DisplayName="Width">
+	            <telerik:PropertyDefinition.EditorTemplate>
+	                <DataTemplate>
+	                    <telerik:RadNumericUpDown Value="{Binding Width, Mode=TwoWay}" />
+	                </DataTemplate>
+	            </telerik:PropertyDefinition.EditorTemplate>
+	        </telerik:PropertyDefinition>
+	        <telerik:PropertyDefinition Binding="{Binding Height}" Description="Displays the Height property of the RadButton" DisplayName="Height">
+	            <telerik:PropertyDefinition.EditorTemplate>
+	                <DataTemplate>
+	                    <telerik:RadNumericUpDown Value="{Binding Height, Mode=TwoWay}" />
+	                </DataTemplate>
+	            </telerik:PropertyDefinition.EditorTemplate>
+	        </telerik:PropertyDefinition>
+	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-	{{endregion}}
+{{endregion}}
 
 Thus, your RadPropertyGrid will be displayed as follows:
 

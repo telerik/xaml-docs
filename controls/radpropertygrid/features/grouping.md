@@ -21,19 +21,18 @@ For example, lets have the following declaration of the RadPropertyGrid control:
 #### __[XAML] Example 1: Declaring RadPropertyGrid__
 
 	{{region xaml-radpropertygrid-grouping_0}}
-
 	<telerik:RadPropertyGrid Grid.Row="0" x:Name="PropertyGrid1"
-	                                  RenderMode="Flat"
-	                                  AutoGeneratePropertyDefinitions="False"
-	                                  IsGrouped="True">
-	  <telerik:RadPropertyGrid.PropertyDefinitions>
-	    <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="First Name"/>
-	    <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="Last Name"/>
-	    <telerik:PropertyDefinition Binding="{Binding Title}" GroupName="Group Title" DisplayName="Title"/>
-	    <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
-	  </telerik:RadPropertyGrid.PropertyDefinitions>
+	                          RenderMode="Flat"
+	                          AutoGeneratePropertyDefinitions="False"
+	                          IsGrouped="True">
+	    <telerik:RadPropertyGrid.PropertyDefinitions>
+	        <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="First Name"/>
+	        <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="Last Name"/>
+	        <telerik:PropertyDefinition Binding="{Binding Title}" GroupName="Group Title" DisplayName="Title"/>
+	        <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
+	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-	{{endregion}}
+{{endregion}}
 
 Its Item is set like so:
 
@@ -48,7 +47,19 @@ Its Item is set like so:
 	    HomePhone = "(206) 555-9857"
 	};
 	this.PropertyGrid1.Item = Employee;
-	{{endregion}}
+{{endregion}}
+
+#### __[VB.NET] Example 2: Setting RadPropertyGrid Item__
+
+	{{region vb-radpropertygrid-grouping_1}}
+	Dim Employee As New Employee() With {
+	    .FirstName = "Nancy",
+	    .LastName = "Davolio",
+	    .Title = "Sales Representative",
+	    .HomePhone = "(206) 555-9857"
+	}
+	Me.PropertyGrid1.Item = Employee
+{{endregion}}
 
 Now, if you run your application, you will see this result:
 
@@ -66,7 +77,13 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 	{{region cs-radpropertygrid-grouping_2}}
 	this.PropertyGrid1.ExpandGroup("Group Name");
-	{{endregion}}
+{{endregion}}
+
+#### __[VB.NET] Example 3: Expanding RadPropertyGrid Group__
+
+	{{region vb-radpropertygrid-grouping_2}}
+	Me.PropertyGrid1.ExpandGroup("Group Name")
+{{endregion}}
 
 * __CollapseGroup(object GroupKey)__: Collapses the visual group for the given GroupDefinition
 
@@ -74,7 +91,13 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 	{{region cs-radpropertygrid-grouping_3}}
 	this.PropertyGrid1.CollapseGroup("Group Name");
-	{{endregion}}
+{{endregion}}
+
+#### __[VB.NET] Example 4: Collapsing RadPropertyGrid Group__
+
+	{{region vb-radpropertygrid-grouping_3}}
+	Me.PropertyGrid1.CollapseGroup("Group Name")
+{{endregion}}
 
 * __ExpandAllGroups()__: Expands all groups recursively
 
@@ -82,16 +105,27 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 	{{region cs-radpropertygrid-grouping_4}}
 	this.PropertyGrid1.ExpandAllGroups();
-	{{endregion}}
+{{endregion}}
+
+#### __[VB.NET] Example 5: Expanding all RadPropertyGrid Groups__
+
+	{{region vb-radpropertygrid-grouping_4}}
+	Me.PropertyGrid1.ExpandAllGroups()
+{{endregion}}
 
 * __CollapseAllGroups()__: Collapses all groups recursively.
-            
 
 #### __[C#] Example 6: Collapsing all RadPropertyGrid Groups__
 
 	{{region cs-radpropertygrid-grouping_5}}
 	this.PropertyGrid1.CollapseAllGroups();
-	{{endregion}}
+{{endregion}}
+
+#### __[VB.NET] Example 6: Collapsing all RadPropertyGrid Groups__
+
+	{{region vb-radpropertygrid-grouping_5}}
+	Me.PropertyGrid1.CollapseAllGroups()
+{{endregion}}
 
 >importantYou need to set __RenderMode="Flat"__ in order to be able to execute the methods above. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
@@ -109,11 +143,17 @@ It has two methods:
 
 	{{region cs-radpropertygrid-grouping_6}}
 	this.PropertyGrid1.GroupDefinitions.SuspendNotifications();
-	
 	// Execute additional logic
-	
 	this.PropertyGrid1.GroupDefinitions.ResumeNotifications();
-	{{endregion}}
+{{endregion}}
+
+#### __[VB.NET] Example 7: Suspending and Resuming notifications__
+
+	{{region vb-radpropertygrid-grouping_6}}
+	Me.PropertyGrid1.GroupDefinitions.SuspendNotifications()
+	' Execute additional logic
+	Me.PropertyGrid1.GroupDefinitions.ResumeNotifications()
+{{endregion}}
 
 >importantYou need to set __RenderMode="Flat"__ in order to be able to work with the GroupDefinitions collection. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 

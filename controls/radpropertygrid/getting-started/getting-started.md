@@ -33,10 +33,10 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 #### __[XAML] Example 1: Adding RadPropertyGrid__
 
 	{{region xaml-radpropertygrid-getting-started-getting-started_0}}
-	 <Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	  <telerik:RadPropertyGrid x:Name="PropertyGrid1" /> 
-	 </Grid>
-	{{endregion}}
+	<Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+	    <telerik:RadPropertyGrid x:Name="PropertyGrid1" />
+	</Grid>
+{{endregion}}
 
 Now, if you run your application, you will see an empty RadPropertyGrid:
 
@@ -49,28 +49,31 @@ Now, if you run your application, you will see an empty RadPropertyGrid:
 #### __[C#] Example 4: Binding to data item__
 
 	{{region cs-radpropertygrid-getting-started-getting-started_1}}
-	this.PropertyGrid1.Item = new Employee() 
-	   { FirstName = "Sarah",
-	    LastName = "Blake", 
-	    Occupation = "Supplied Manager", 
-	    StartingDate = new DateTime(2005, 04, 12), 
-	    IsMarried = true, Salary = 3500, Gender = Gender.Female 
-	   };
-	{{endregion}}
+	this.PropertyGrid1.Item = new Employee()
+	{
+	    FirstName = "Sarah",
+	    LastName = "Blake",
+	    Occupation = "Supplied Manager",
+	    StartingDate = new DateTime(2005, 04, 12),
+	    IsMarried = true,
+	    Salary = 3500,
+	    Gender = Gender.Female
+	};
+{{endregion}}
 
 #### __[VB.NET] Example 4: Binding to data item__
 	
 	{{region vb-radpropertygrid-getting-started-getting-started_1}}
-	Me.PropertyGrid1.Item = New Employee() With { _
-	  .FirstName = "Sarah", _
-	  .LastName = "Blake", _
-	  .Occupation = "Supplied Manager", _
-	  .StartingDate = New DateTime(2005, 4, 12), _
-	  .IsMarried = True, _
-	  .Salary = 3500, _
-	  .Gender = Gender.Female _
+	Me.PropertyGrid1.Item = New Employee() With {
+	  .FirstName = "Sarah",
+	  .LastName = "Blake",
+	  .Occupation = "Supplied Manager",
+	  .StartingDate = New DateTime(2005, 4, 12),
+	  .IsMarried = True,
+	  .Salary = 3500,
+	  .Gender = Gender.Female
 	}
-	{{endregion}}
+{{endregion}}
 
 Once you set the Item and run the application, you will see a RadPropertyGrid:
 
@@ -82,8 +85,8 @@ Once you set the Item and run the application, you will see a RadPropertyGrid:
 
 	{{region xaml-radpropertygrid-getting-started-getting-started_2}}
 	<telerik:RadButton x:Name="button1" Content="MyButton" />
-	<telerik:RadPropertyGrid x:Name="PropertyGrid1" Item="{Binding ElementName= button1}"/>
-	{{endregion}}
+	<telerik:RadPropertyGrid Item="{Binding ElementName= button1}"/>
+{{endregion}}
 
 When you run the application, you will see a RadPropertyGrid:
 
@@ -97,12 +100,12 @@ When you run the application, you will see a RadPropertyGrid:
 #### __[XAML] Example 6: Binding to a property of data item__
 
 	{{region xaml-radpropertygrid-getting-started-getting-started_3}}
-	  <telerik:RadPropertyGrid x:Name="PropertyGrid1"> 
-	        <telerik:RadPropertyGrid.PropertyDefinitions>                
-	                <telerik:PropertyDefinition Binding="{Binding FirstName}" DisplayName="My FirstName"/>
-	        </telerik:RadPropertyGrid.PropertyDefinitions>
-	  </telerik:RadPropertyGrid>
-	{{endregion}}
+	<telerik:RadPropertyGrid>
+	    <telerik:RadPropertyGrid.PropertyDefinitions>
+	        <telerik:PropertyDefinition Binding="{Binding FirstName}" DisplayName="My FirstName"/>
+	    </telerik:RadPropertyGrid.PropertyDefinitions>
+	</telerik:RadPropertyGrid>
+{{endregion}}
 
 ## Nested Properties in a RadPropertyGrid
 

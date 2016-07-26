@@ -20,49 +20,71 @@ __1.__ First we declare an Employee class, an instance of which we will set as t
 
 #### [C#] Example 1: Create the Employee class
 	
-	{{region cs-propertygrid-style-groups_0}}
-	 class Employee
-    {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Title { get; set; }
-        public string HomePhone { get; set; }
-    }
-	{{endregion}}
+	{{region cs-radpropertygrid-styling-groups_0}}
+	public class Employee
+	{
+	    public string FirstName { get; set; }
+	    public string LastName { get; set; }
+	    public string Title { get; set; }
+	    public string HomePhone { get; set; }
+	}
+{{endregion}}
+
+#### [VB.NET] Example 1: Create the Employee class
+	
+	{{region vb-radpropertygrid-styling-groups_0}}
+	Public Class Employee
+	    Public Property FirstName() As String
+	    Public Property LastName() As String
+	    Public Property Title() As String
+	    Public Property HomePhone() As String
+	End Class
+{{endregion}}
 
 __2.__ Declare the RadPropertyGrid in XAML:
 
 #### [XAML] Example 2: Create the RadPropertyGrid
 
-	{{regionpxaml-ropertygrid-style-groups_1}}
+	{{region xaml-radpropertygrid-styling-groups_1}}
 	<telerik:RadPropertyGrid x:Name="PropertyGrid" 
-                             RenderMode="Flat"   
-                             IsGrouped="True"
-                             AutoGeneratePropertyDefinitions="False">
-        <telerik:RadPropertyGrid.PropertyDefinitions>
-                <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="First Name" />
-                <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="Last Name"/>
-                <telerik:PropertyDefinition Binding="{Binding Title}" GroupName="Group Title" DisplayName="Title"/>
-                <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
-            </telerik:RadPropertyGrid.PropertyDefinitions>
-    </telerik:RadPropertyGrid>
-	{{endregion}}        
+	                 RenderMode="Flat"   
+	                 IsGrouped="True"
+	                 AutoGeneratePropertyDefinitions="False">
+	    <telerik:RadPropertyGrid.PropertyDefinitions>
+	        <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="First Name" />
+	        <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="Last Name"/>
+	        <telerik:PropertyDefinition Binding="{Binding Title}" GroupName="Group Title" DisplayName="Title"/>
+	        <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
+	    </telerik:RadPropertyGrid.PropertyDefinitions>
+	</telerik:RadPropertyGrid>
+{{endregion}}        
 
 __3.__ Instantiate the Employee object and set it as the item of the PropertyGrid control:
 
 #### [C#] Example 3: Instantiate Employee object
 
-	{{region cs-propertygrid-style-groups-2}}
-		InitializeComponent();
-        Employee employee = new Employee()
-        {
-            FirstName = "Nancy",
-            LastName = "Porter",
-            Title = "Sales Representative",
-            HomePhone = "0088 888 3433"
-        };
-        PropertyGrid.Item = employee;
-	{{endregion}}  
+	{{region cs-radpropertygrid-styling-groups_2}}
+	Employee employee = new Employee()
+	{
+	    FirstName = "Nancy",
+	    LastName = "Porter",
+	    Title = "Sales Representative",
+	    HomePhone = "0088 888 3433"
+	};
+	PropertyGrid.Item = employee;
+{{endregion}}
+
+#### [VB.NET] Example 3: Instantiate Employee object
+
+	{{region vb-radpropertygrid-styling-groups_2}}
+	Dim employee As New Employee() With {
+	    .FirstName = "Nancy",
+	    .LastName = "Porter",
+	    .Title = "Sales Representative",
+	    .HomePhone = "0088 888 3433"
+	}
+	PropertyGrid.Item = employee
+{{endregion}}  
 
 At this point we have the following appearance:
 
@@ -74,25 +96,25 @@ __4.__ Create the common style as a static resource:
 
 #### [XAML] Example 4: Create the style
 	
-	{{region xaml-propertygrid-style-groups-3}}
-		<Style x:Key="commonGroupStyle" TargetType="telerik:RadToggleButton">
-            <Setter Property="Foreground" Value="Blue" />
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="Height"  Value="50" />
-        </Style>
-	{{endregion}}
+	{{region xaml-radpropertygrid-styling-groups_3}}
+	<Style x:Key="commonGroupStyle" TargetType="telerik:RadToggleButton">
+	    <Setter Property="Foreground" Value="Blue" />
+	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	    <Setter Property="FontSize" Value="15"/>
+	    <Setter Property="Height"  Value="50" />
+	</Style>
+{{endregion}}
 
 __5.__ Set the __Group Style__ property of the RadPropertyGrid:
 
 #### [XAML] Example 5: Set the GroupStyle property
 
-	{{region xaml-propertygrid-style-groups-4}}
-	<telerik:RadPropertyGrid x:Name="PropertyGrid" 
-                             RenderMode="Flat"
-							 GroupStyle="{StaticResource commonGroupStyle}">
-
-	{{endregion}}  
+	{{region xaml-radpropertygrid-styling-groups_4}}
+	<telerik:RadPropertyGrid RenderMode="Flat"   
+	                 IsGrouped="True"
+	                 AutoGeneratePropertyDefinitions="False"
+	                 GroupStyle="{StaticResource commonGroupStyle}" />
+{{endregion}}  
 
 The effect on the appearance of the control will be the following:
 

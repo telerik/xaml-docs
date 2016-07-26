@@ -23,7 +23,10 @@ When __EnableDeferredFiltering__ is set to __“True”__, the filtering will be
 #### __[XAML] Example 1: Enabling Deferred Filtering__
 
 	{{region xaml-radpropertygrid-filtering_0}}
-	{{endregion}}
+	<telerik:RadPropertyGrid x:Name="propertyGrid" 
+	                  EnableDeferredFiltering="True">
+	</telerik:RadPropertyGrid>
+{{endregion}}
 
 # See also
 

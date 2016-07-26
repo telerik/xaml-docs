@@ -24,7 +24,7 @@ Here is a simple RadPropertyGrid declaration.
 
 	{{region xaml-radpropertygrid-virtualization_0}}
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
-	{{endregion}}
+{{endregion}}
 
 RadPropertyGrid is populated with 10 000 rows.
 
@@ -32,13 +32,13 @@ RadPropertyGrid is populated with 10 000 rows.
 
 	{{region cs-radpropertygrid-virtualization_1}}
 	this.propertyGrid1.Item = this.GetVeryLargeDataSource();
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 2: Populating RadPropertyGrid__
 
 	{{region vb-radpropertygrid-virtualization_1}}
-	    Me.propertyGrid1.Item = Me.GetVeryLargeDataSource()
-	{{endregion}}
+	Me.propertyGrid1.Item = Me.GetVeryLargeDataSource()
+{{endregion}}
 
 Finally, in order to enable the __UI Virtualization__ behavior, you should set the __IsVirtualizing__ property of RadPropertyGrid to __True__. See the example below:
       
@@ -46,7 +46,7 @@ Finally, in order to enable the __UI Virtualization__ behavior, you should set t
 #### __[XAML] Example 3: Setting IsVirtualizing property__
 
 	{{region xaml-radpropertygrid-virtualization_2}}
-	<telerik:RadPropertyGrid x:Name="propertyGrid1" IsVirtualizing="True" />
-	{{endregion}}
+	<telerik:RadPropertyGrid IsVirtualizing="True" />
+{{endregion}}
 
 >tipA complete example of RadPropertyGrid UI Virtualization is available in {% if site.site_name == 'Silverlight' %}[this online demo](http://demos.telerik.com/silverlight/#PropertyGrid/Virtualization){% endif %}{% if site.site_name == 'WPF' %}[this online demo](http://demos.telerik.com/wpf/#PropertyGrid/Virtualization){% endif %}.

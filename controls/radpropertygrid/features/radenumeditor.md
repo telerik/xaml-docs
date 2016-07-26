@@ -21,24 +21,23 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 	{{region cs-radpropertygrid-flagenumeditor_0}}
 	[Flags]
 	public enum Permissions
-		{
-			Read = 1,
-			Write = 2,
-			Execute = 4
-		}
-	
-	{{endregion}}
+	{
+	    Read = 1,
+	    Write = 2,
+	    Execute = 4
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 1: Defining flag enum__
 
 	{{region vb-radpropertygrid-flagenumeditor_0}}
-	    <Flags()> _
-	    Public Enum Permissions
-	        Read = 1
-	        Write = 2
-	        Execute = 4
-	    End Enum
-	{{endregion}}
+	<Flags()>
+	Public Enum Permissions
+	    Read = 1
+	    Write = 2
+	    Execute = 4
+	End Enum
+{{endregion}}
 
 Each element should contain name and a value (which should be degree of 2 – 1, 2, 4, 8, 16, etc.).
 
@@ -53,37 +52,29 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 #### __[C#] Example 2: Defining flag enum__
 
 	{{region cs-radpropertygrid-flagenumeditor_1}}
-	namespace RPG_WPF
+	[Flags]
+	public enum PermissionsAllNone
 	{
-	    [Flags]
-	    public enum Permissions
-	    {
-	        All = -1,
-	        None = 0,
-	        Read = 1,
-	        Write = 2,
-	        Execute = 4
-	    }
+	    All = -1,
+	    None = 0,
+	    Read = 1,
+	    Write = 2,
+	    Execute = 4
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 2: Defining flag enum__
 
 	{{region vb-radpropertygrid-flagenumeditor_1}}
-	Namespace RPG_WPF
-	        <Flags()> _
-	        Public Enum Permissions
-	            All = -1
-	            None = 0
-	            Read = 1
-	            Write = 2
-	            Execute = 4
-	        End Enum
-	    End Namespace
-	    '#End Region
-	
-	End Class
-	{{endregion}}
+	<Flags()>
+	Public Enum PermissionsAllNone
+	    All = -1
+	    None = 0
+	    Read = 1
+	    Write = 2
+	    Execute = 4
+	End Enum
+{{endregion}}
 
 >Do not define values with 0 and -1 values if you do not mean to use them as select no flag and select all flags.
 
@@ -92,14 +83,14 @@ You can manually define your __FlagEnumEditor__ in __XAML__, like so:
 #### __[XAML] Example 4: Defining FlagEnumEditor__
 
 	{{region xaml-radpropertygrid-flagenumeditor_2}}
-	<telerik:PropertyDefinition Binding="{Binding Permission}"> 
-	                        <telerik:PropertyDefinition.EditorTemplate> 
-	                            <DataTemplate> 
-	                                <telerik:FlagEnumEditor Value="{Binding Permission}" EnumType="my:Permissions"/> 
-	                            </DataTemplate> 
-	                        </telerik:PropertyDefinition.EditorTemplate> 
-	                    </telerik:PropertyDefinition>
-	{{endregion}}
+	<telerik:PropertyDefinition Binding="{Binding Permission}">
+	    <telerik:PropertyDefinition.EditorTemplate>
+	        <DataTemplate>
+	            <telerik:FlagEnumEditor Value="{Binding Permission}" EnumType="my:Permissions"/>
+	        </DataTemplate>
+	    </telerik:PropertyDefinition.EditorTemplate>
+	</telerik:PropertyDefinition>
+{{endregion}}
 
 Thus your __FlagEnumEditor__ will look like:
 

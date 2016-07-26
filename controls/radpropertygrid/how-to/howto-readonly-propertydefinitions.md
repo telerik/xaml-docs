@@ -19,9 +19,9 @@ Here is a simple PropertyDefinition declaration:
 #### __[XAML] Example 1: Binding IsReadOnly property__
 
 	{{region xaml-radpropertygrid-howto-readonly-propertydefinitions_0}}
-	                <telerik:PropertyDefinition 
-	                            Binding="{Binding FirstName}" 
-	                            DisplayName="First Name"
-	                            IsReadOnly="{Binding  Path=IsActive, Source={StaticResource MyViewModel}}">                  
-	                </telerik:PropertyDefinition>        
-	{{endregion}}
+	<telerik:PropertyDefinition 
+	            Binding="{Binding FirstName}" 
+	            DisplayName="First Name"
+	            IsReadOnly="{Binding  Path=IsActive, Source={StaticResource MyViewModel}}">
+	</telerik:PropertyDefinition>
+{{endregion}}

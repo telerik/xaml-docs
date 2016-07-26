@@ -3,7 +3,7 @@ title: Enable touch events for custom elements
 page_title:  Enable touch events for custom elements
 description: How To Enable Touch Event for Custom Elements
 slug: gridview-how-to-enable-touch-event-celltemplate
-tags: touch, event, cell-templateS
+tags: touch, event, cell-template
 published: True
 position: 18
 ---

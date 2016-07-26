@@ -1,6 +1,6 @@
 ---
 title: Access filtered and sorted items
-page_title:  Filtered-Sorted-Items-RadGridView
+page_title:  Access filtered and sorted items
 description: How To Access Filter and Sorted Items
 slug: gridview-how-to-access-filtered-and-sorted-items
 tags: sorted, filtered, items

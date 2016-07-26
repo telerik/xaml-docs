@@ -14,7 +14,7 @@ To save and load column filters, you would have to create a simple property bag 
 
 #### __C#__
 
-{{region gridview-filtering-howto-save-and-load-filter-settings_0}}
+{{region cs-gridview-filtering-howto-save-and-load-filter-settings_0}}
 
 	using System;
 	using System.Collections.Generic;
@@ -149,7 +149,7 @@ To save and load column filters, you would have to create a simple property bag 
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-save-and-load-filter-settings_0}}
+{{region vb-gridview-filtering-howto-save-and-load-filter-settings_0}}
 
 	Public Class FilterDescriptorProxy
 		Public Property [Operator]() As Telerik.Windows.Data.FilterOperator

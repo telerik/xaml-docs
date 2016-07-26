@@ -19,7 +19,7 @@ The purpose of this tutorial is to show you how to populate a __RadGridView__ wi
 
 #### __XAML__
 
-{{region gridview-loading-data-from-ria-services_0}}
+{{region xaml-gridview-loading-data-from-ria-services_0}}
 
 	<telerik:RadGridView x:Name="radGridView" Margin="8"/>
 {{endregion}}
@@ -30,7 +30,7 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 
 #### __C#__
 
-{{region gridview-loading-data-from-ria-services_1}}
+{{region cs-gridview-loading-data-from-ria-services_1}}
 
 	public class NorthwindDataSource
 	{
@@ -39,7 +39,7 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-ria-services_2}}
+{{region vb-gridview-loading-data-from-ria-services_2}}
 
 	Public Class NorthwindDataSource
 	End Class
@@ -52,7 +52,7 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 
 #### __C#__
 
-{{region gridview-loading-data-from-ria-services_3}}
+{{region cs-gridview-loading-data-from-ria-services_3}}
 
 	public class NorthwindDataSource
 	{
@@ -72,7 +72,7 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-ria-services_4}}
+{{region vb-gridview-loading-data-from-ria-services_4}}
 
 	Public Class NorthwindDataSource
 	    Private riaContext As SampleRiaContext
@@ -98,7 +98,7 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 
 #### __C#__
 
-{{region gridview-loading-data-from-ria-services_5}}
+{{region cs-gridview-loading-data-from-ria-services_5}}
 
 	LoadOperation<Customers> loadOperation = riaContext.Load<Customers>( riaContext.GetCustomersQuery() );
 	loadOperation.Completed += new EventHandler( loadOperation_Completed );
@@ -106,7 +106,7 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-ria-services_6}}
+{{region vb-gridview-loading-data-from-ria-services_6}}
 
 	Dim loadOperation As LoadOperation(Of Customers) = riaContext.Load(Of Customers)(riaContext.GetCustomersQuery())
 	AddHandler loadOperation.Completed, AddressOf loadOperation_Completed
@@ -116,7 +116,7 @@ And here is the code handling the __Completed__ event of the load operation:
 
 #### __C#__
 
-{{region gridview-loading-data-from-ria-services_7}}
+{{region cs-gridview-loading-data-from-ria-services_7}}
 
 	private void loadOperation_Completed( object sender, EventArgs e )
 	{
@@ -130,7 +130,7 @@ And here is the code handling the __Completed__ event of the load operation:
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-ria-services_8}}
+{{region vb-gridview-loading-data-from-ria-services_8}}
 
 	Private Sub loadOperation_Completed(ByVal sender As Object, ByVal e As EventArgs)
 	    'Consume the result
@@ -144,7 +144,7 @@ And here is the code handling the __Completed__ event of the load operation:
 
 #### __XAML__
 
-{{region gridview-loading-data-from-ria-services_9}}
+{{region xaml-gridview-loading-data-from-ria-services_9}}
 
 	<UserControl.Resources>
 	   <example:NorthwindDataSource x:Key="DataSource"/>
@@ -155,7 +155,7 @@ And here is the code handling the __Completed__ event of the load operation:
 
 #### __XAML__
 
-{{region gridview-loading-data-from-ria-services_10}}
+{{region xaml-gridview-loading-data-from-ria-services_10}}
 	<telerik:RadGridView x:Name="radGridView" Margin="8"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
 {{endregion}}

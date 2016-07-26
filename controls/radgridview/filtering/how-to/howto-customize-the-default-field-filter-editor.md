@@ -16,7 +16,7 @@ Depending on the column DataType the editor will be different. For String column
 
 #### __C#__
 
-{{region gridview-filtering-howto-customize-the-default-field-filter-editor_0}}
+{{region cs-gridview-filtering-howto-customize-the-default-field-filter-editor_0}}
 
 	private void OnRadGridViewFieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
@@ -35,7 +35,7 @@ Depending on the column DataType the editor will be different. For String column
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-customize-the-default-field-filter-editor_0}}
+{{region vb-gridview-filtering-howto-customize-the-default-field-filter-editor_0}}
 
 	Private Sub OnRadGridViewFieldFilterEditorCreated(sender As System.Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 		If e.Column.UniqueName = "HireDate" Then
@@ -56,7 +56,7 @@ In case you need the filtering to be re-applied on every character entered, you 
 
 #### __C#__
 
-{{region gridview-filtering-howto-customize-the-default-field-filter-editor_1}}
+{{region cs-gridview-filtering-howto-customize-the-default-field-filter-editor_1}}
 
 	private void OnRadGridViewFieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{

@@ -22,7 +22,7 @@ When you add a new descriptor to the collection, the data is automatically sorte
 
 #### __C#__
 
-{{region gridview-sorting-programmatic_2}}
+{{region cs-gridview-sorting-programmatic_2}}
 
 	ColumnSortDescriptor csd = new ColumnSortDescriptor()
 	{
@@ -51,7 +51,7 @@ Another approach is to add the new __SortDescriptor__ object (instead of __Colum
 
 #### __C#__
 
-{{region gridview-sorting-programmatic_0}}
+{{region cs-gridview-sorting-programmatic_0}}
 
 	SortDescriptor descriptor = new SortDescriptor();
 	descriptor.Member = "Title";
@@ -60,7 +60,7 @@ Another approach is to add the new __SortDescriptor__ object (instead of __Colum
 
 #### __VB.NET__
 
-{{region gridview-sorting-programmatic_1}}
+{{region vb-gridview-sorting-programmatic_1}}
 
 	Dim descriptor As New SortDescriptor()
 	descriptor.Member = "Title"
@@ -76,7 +76,7 @@ You can easily create a sort descriptor in XAML and then add it to the SortDescr
 For example:
 #### __XAML__
 
-{{region gridview-sorting-programmatic_4}}
+{{region xaml-gridview-sorting-programmatic_4}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -93,7 +93,7 @@ As of __Q3 2011__, you can create a ColumnSortDescriptor in XAML and then add it
 For example:
 #### __XAML__
 
-{{region gridview-sorting-programmatic_7}}
+{{region xaml-gridview-sorting-programmatic_7}}
 
 	<telerik:RadGridView x:Name="radGridView" 
 	                     AutoGenerateColumns="False">

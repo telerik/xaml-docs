@@ -33,7 +33,7 @@ __Example 1: RadGridView__ generates columns automatically.
 
 #### __C#__
 
-{{region gridview-columns-defining-columns_0}}
+{{region cs-gridview-columns-defining-columns_0}}
 
 	public class Employee
 	{
@@ -60,7 +60,7 @@ __Example 1: RadGridView__ generates columns automatically.
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_1}}
+{{region vb-gridview-columns-defining-columns_1}}
 
 	Public Class Employee
 		<DisplayAttribute(AutoGenerateField:=False)> _
@@ -121,7 +121,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __XAML__
 
-{{region gridview-columns-defining-columns_2}}
+{{region xaml-gridview-columns-defining-columns_2}}
 
 	<telerik:GridViewDataColumn/>
 {{endregion}}
@@ -130,14 +130,14 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __C#__
 
-{{region gridview-columns-defining-columns_3}}
+{{region cs-gridview-columns-defining-columns_3}}
 
 	GridViewDataColumn column = new GridViewDataColumn();
 {{endregion}}
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_4}}
+{{region vb-gridview-columns-defining-columns_4}}
 
 	Dim column As New GridViewDataColumn()
 {{endregion}}
@@ -149,7 +149,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 			  
 #### __XAML__
 
-{{region gridview-columns-defining-columns_5}}
+{{region xaml-gridview-columns-defining-columns_5}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -162,7 +162,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __C#__
 
-{{region gridview-columns-defining-columns_6}}
+{{region cs-gridview-columns-defining-columns_6}}
 
 	GridViewDataColumn column = new GridViewDataColumn();
 	column.DataMemberBinding = new Binding( "FirstName" );
@@ -174,7 +174,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_7}}
+{{region vb-gridview-columns-defining-columns_7}}
 
 	Dim column As New GridViewDataColumn()
 	column.DataMemberBinding = New Binding("FirstName")
@@ -189,7 +189,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __C#__
 
-{{region gridview-columns-defining-columns_8}}
+{{region cs-gridview-columns-defining-columns_8}}
 
 	GridViewDataColumn myColumn = this.radGridView.Columns[ "FirstColumn" ];
 	myColumn = this.radGridView.Columns[ 0 ];
@@ -198,7 +198,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_9}}
+{{region vb-gridview-columns-defining-columns_9}}
 
 	Dim myColumn As GridViewDataColumn = Me.radGridView.Columns("MyColumn")
 	myColumn = Me.radGridView.Columns(0)
@@ -209,7 +209,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __XAML__
 
-{{region gridview-columns-defining-columns_11}}
+{{region xaml-gridview-columns-defining-columns_11}}
 
 	<Window.Resources>
 	    <DataTemplate x:Key="dataTemplate1">
@@ -223,7 +223,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __XAML__
 
-{{region gridview-columns-defining-columns_10}}
+{{region xaml-gridview-columns-defining-columns_10}}
 
 	<UserControl.Resources>
 	    <DataTemplate x:Key="dataTemplate1">
@@ -237,7 +237,7 @@ Then reference it in code-behind as demonstrated below:
         
 #### __C#__
 
-{{region gridview-columns-defining-columns_12}}
+{{region cs-gridview-columns-defining-columns_12}}
 
 	GridViewDataColumn column = new GridViewDataColumn();
 	column.CellTemplate = (DataTemplate)this.Resources["dataTemplate1"];
@@ -246,7 +246,7 @@ Then reference it in code-behind as demonstrated below:
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_13}}
+{{region vb-gridview-columns-defining-columns_13}}
 
 	Dim column As New GridViewDataColumn()
 	column.CellTemplate = DirectCast(Me.Resources("dataTemplate1"), DataTemplate)

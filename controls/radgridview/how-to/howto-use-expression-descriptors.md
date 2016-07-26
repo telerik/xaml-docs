@@ -21,7 +21,7 @@ __Example 1: Create a generic SortDescriptor<T>.__
 
 #### __C#__
 
-{{region gridview-howto-use-expression-descriptors_0}}
+{{region cs-gridview-howto-use-expression-descriptors_0}}
 
 	var descriptor = new SortDescriptor<Employee, double>
 	{
@@ -42,7 +42,7 @@ __Example 2: Create a generic GroupDescriptor<T>.__
 
 #### __C#__
 
-{{region gridview-howto-use-expression-descriptors_1}}
+{{region cs-gridview-howto-use-expression-descriptors_1}}
 
 	var descriptor = new GroupDescriptor<Employee, int, int>
 	{
@@ -64,7 +64,7 @@ __Example 3: Create a generic FilterDescriptor<T>.__
 
 #### __C#__
 
-{{region gridview-howto-use-expression-descriptors_2}}
+{{region cs-gridview-howto-use-expression-descriptors_2}}
 
 	var descriptor = new FilterDescriptor<Employee> { FilteringExpression = e => prospects.Contains(e) };
 {{endregion}}

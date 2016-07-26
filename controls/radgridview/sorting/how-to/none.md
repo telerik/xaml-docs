@@ -16,7 +16,7 @@ To accomplish this you need to subscribe to the __Sorting__ event and define its
 
 #### __C#__
 
-{{region gridview-sorting-none_0}}
+{{region cs-gridview-sorting-none_0}}
 
 	private void clubsGrid_Sorting(object sender, GridViewSortingEventArgs e)
 	{
@@ -29,7 +29,7 @@ To accomplish this you need to subscribe to the __Sorting__ event and define its
 
 #### __VB.NET__
 
-{{region gridview-sorting-none_1}}
+{{region vb-gridview-sorting-none_1}}
 
 	Private Sub clubsGrid_Sorting(sender As Object, e As GridViewSortingEventArgs)
 	 If e.NewSortingState = SortingState.None Then

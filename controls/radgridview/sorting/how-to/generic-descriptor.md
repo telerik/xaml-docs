@@ -20,7 +20,7 @@ __Example 1: Create a generic SortDescriptor<T>.__
 
 #### __C#__
 
-{{region gridview-howto-use-expression-descriptors_0}}
+{{region cs-gridview-howto-use-expression-descriptors_0}}
 
 	var descriptor = new SortDescriptor<Employee, double>
 	{

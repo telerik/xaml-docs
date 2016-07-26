@@ -16,7 +16,7 @@ As you probably know, if you [edit an item]({%slug gridview-managing-data-updati
 
 #### __C#__
 
-{{region edit-item-outside-gridview_0}}
+{{region cs-edit-item-outside-gridview_0}}
 
 	Club selectedItem = this.clubsGrid.SelectedItem as Club;
 	this.clubsGrid.Items.EditItem(selectedItem);
@@ -24,7 +24,7 @@ As you probably know, if you [edit an item]({%slug gridview-managing-data-updati
 
 #### __VB.NET__
 
-{{region edit-item-outside-gridview_1}}
+{{region vb-edit-item-outside-gridview_1}}
 
 	Dim selectedItem As Club = TryCast(Me.clubsGrid.SelectedItem, Club)
 	Me.clubsGrid.Items.EditItem(selectedItem)
@@ -34,7 +34,7 @@ As you probably know, if you [edit an item]({%slug gridview-managing-data-updati
 
 #### __C#__
 
-{{region edit-item-outside-gridview_2}}
+{{region cs-edit-item-outside-gridview_2}}
 
 	selectedItem.Name = "new Name of the item";
 	this.clubsGrid.Items.CommitEdit();
@@ -42,7 +42,7 @@ As you probably know, if you [edit an item]({%slug gridview-managing-data-updati
 
 #### __VB.NET__
 
-{{region edit-item-outside-gridview_3}}
+{{region vb-edit-item-outside-gridview_3}}
 
 	selectedItem.Name = "new Name of the item"
 	Me.clubsGrid.Items.CommitEdit()

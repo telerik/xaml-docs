@@ -30,7 +30,7 @@ If you want to implement multi-column grouping you just have to define __GroupDe
 
 #### __XAML__
 
-{{region gridview-multiple-column-grouping_0}}
+{{region xaml-gridview-multiple-column-grouping_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                        AutoGenerateColumns="False">
@@ -47,7 +47,7 @@ This can be done at run time via managed code too:
 
 #### __C#__
 
-{{region gridview-multiple-column-grouping_1}}
+{{region cs-gridview-multiple-column-grouping_1}}
 
 	GroupDescriptor countryDescriptor = new GroupDescriptor();
 	countryDescriptor.Member = "Country";
@@ -61,7 +61,7 @@ This can be done at run time via managed code too:
 
 #### __VB.NET__
 
-{{region gridview-multiple-column-grouping_2}}
+{{region vb-gridview-multiple-column-grouping_2}}
 
 	Dim countryDescriptor As New GroupDescriptor()
 	countryDescriptor.Member = "Country"

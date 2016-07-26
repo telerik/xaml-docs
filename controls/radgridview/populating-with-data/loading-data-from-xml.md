@@ -20,7 +20,7 @@ The final result should look like the snapshot below:
 
 #### __XAML__
 
-{{region gridview-loading-data-from-xml_0}}
+{{region xaml-gridview-loading-data-from-xml_0}}
 
 	<?xml version="1.0" encoding="utf-8" ?>
 	<Items>
@@ -43,7 +43,7 @@ The final result should look like the snapshot below:
 
 #### __C#__
 
-{{region gridview-loading-data-from-xml_1}}
+{{region cs-gridview-loading-data-from-xml_1}}
 
 	public class XmlNodeItem
 	{
@@ -64,7 +64,7 @@ The final result should look like the snapshot below:
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-xml_2}}
+{{region vb-gridview-loading-data-from-xml_2}}
 
 	Public Class XmlNodeItem
 	Private _Team As String
@@ -95,7 +95,7 @@ The final result should look like the snapshot below:
 
 #### __C#__
 
-{{region gridview-loading-data-from-xml_3}}
+{{region cs-gridview-loading-data-from-xml_3}}
 
 	[XmlRoot( ElementName = "Items" )]
 	public class XmlNodeItemList : ObservableCollection<XmlNodeItem>
@@ -112,7 +112,7 @@ The final result should look like the snapshot below:
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-xml_4}}
+{{region vb-gridview-loading-data-from-xml_4}}
 
 	<XmlRoot(ElementName = "Items")> _
 	Public Class XmlNodeItemList
@@ -129,7 +129,7 @@ The final result should look like the snapshot below:
 
 #### __C#__
 
-{{region gridview-loading-data-from-xml_5}}
+{{region cs-gridview-loading-data-from-xml_5}}
 
 	public class RadGridViewXmlDataSource : XmlNodeItemList
 	{
@@ -159,7 +159,7 @@ The final result should look like the snapshot below:
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-xml_6}}
+{{region vb-gridview-loading-data-from-xml_6}}
 
 	Public Class RadGridViewXmlDataSource
 	    Inherits XmlNodeItemList
@@ -188,7 +188,7 @@ The final result should look like the snapshot below:
 
 #### __XAML__
 
-{{region gridview-loading-data-from-xml_7}}
+{{region xaml-gridview-loading-data-from-xml_7}}
 
 	<UserControl.Resources>
 	    <example:RadGridViewXmlDataSource x:Key="DataSource"
@@ -200,7 +200,7 @@ The final result should look like the snapshot below:
 
 #### __XAML__
 
-{{region gridview-loading-data-from-xml_8}}
+{{region xaml-gridview-loading-data-from-xml_8}}
 
 	<telerik:RadGridView x:Name="radGridView" Margin="8"
 	    ItemsSource="{Binding Source={StaticResource DataSource}}"/>

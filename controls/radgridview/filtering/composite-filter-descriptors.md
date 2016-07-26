@@ -17,7 +17,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 
 #### __XAML__
 
-{{region radgridview-filtering-composite-filter-descriptors_0}}
+{{region xaml-radgridview-filtering-composite-filter-descriptors_0}}
 
 	<telerik:CompositeFilterDescriptor LogicalOperator="Or">
 		<telerik:CompositeFilterDescriptor.FilterDescriptors>
@@ -36,7 +36,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 
 #### __C#__
 
-{{region radgridview-filtering-composite-filter-descriptors_1}}
+{{region cs-radgridview-filtering-composite-filter-descriptors_1}}
 
 	CompositeFilterDescriptor compositeDescriptor = new CompositeFilterDescriptor();
 	compositeDescriptor.LogicalOperator = FilterCompositionLogicalOperator.Or;
@@ -47,7 +47,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 
 #### __VB.NET__
 
-{{region radgridview-filtering-composite-filter-descriptors_2}}
+{{region vb-radgridview-filtering-composite-filter-descriptors_2}}
 
 	Dim compositeDescriptor As New CompositeFilterDescriptor()
 	compositeDescriptor.LogicalOperator = FilterCompositionLogicalOperator.[Or]
@@ -72,7 +72,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 
 #### __XAML__
 
-{{region radgridview-filtering-composite-filter-descriptors_3}}
+{{region xaml-radgridview-filtering-composite-filter-descriptors_3}}
 
 	<telerik:CompositeFilterDescriptor LogicalOperator="And">
 		<telerik:CompositeFilterDescriptor.FilterDescriptors>
@@ -97,7 +97,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 
 #### __C#__
 
-{{region radgridview-filtering-composite-filter-descriptors_4}}
+{{region cs-radgridview-filtering-composite-filter-descriptors_4}}
 
 	CompositeFilterDescriptor compositeDescriptor = new CompositeFilterDescriptor();
 	compositeDescriptor.LogicalOperator = FilterCompositionLogicalOperator.And;
@@ -118,7 +118,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 
 #### __VB.NET__
 
-{{region radgridview-filtering-composite-filter-descriptors_5}}
+{{region vb-radgridview-filtering-composite-filter-descriptors_5}}
 
 	Dim compositeDescriptor As New CompositeFilterDescriptor()
 	compositeDescriptor.LogicalOperator = FilterCompositionLogicalOperator.[And]

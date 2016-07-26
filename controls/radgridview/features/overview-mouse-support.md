@@ -52,7 +52,7 @@ In the example below you can see how to attach to __MouseWheel__ event from XAML
 
 #### __XAML__
 
-{{region gridview-overview-mouse-support_0}}
+{{region xaml-gridview-overview-mouse-support_0}}
 
 	<telerik:RadGridView x:Name="radGridView" MouseWheel="radGridView_MouseWheel" />
 {{endregion}}
@@ -64,7 +64,7 @@ The implementation of the event handler __radGridView_MouseWheel__ is located in
 
 #### __C#__
 
-{{region gridview-overview-mouse-support_1}}
+{{region cs-gridview-overview-mouse-support_1}}
 
 	private void radGridView_MouseWheel( object sender, MouseWheelEventArgs e )
 	{
@@ -74,7 +74,7 @@ The implementation of the event handler __radGridView_MouseWheel__ is located in
 
 #### __VB.NET__
 
-{{region gridview-overview-mouse-support_2}}
+{{region vb-gridview-overview-mouse-support_2}}
 
 	Private Sub radGridView_MouseWheel(ByVal sender As Object, ByVal e As MouseWheelEventArgs)
 	    MessageBox.Show("The mouse wheel has changed: " & e.Delta)
@@ -86,7 +86,7 @@ The RadGridView actually uses and handles many of the mouse events. If you would
 
 #### __C#__
 
-{{region gridview-overview-mouse-support_3}}
+{{region cs-gridview-overview-mouse-support_3}}
 
 	    public void AddHandler( RoutedEvent routedEvent, Delegate handler, bool handledEventsToo );
 {{endregion}}
@@ -94,7 +94,7 @@ The RadGridView actually uses and handles many of the mouse events. If you would
 
 #### __VB.NET__
 
-{{region gridview-overview-mouse-support_4}}
+{{region vb-gridview-overview-mouse-support_4}}
 
 	    Public Sub [AddHandler](ByVal routedEvent As RoutedEvent, ByVal handler As [Delegate], ByVal handledEventsToo As Boolean)
 	    End Sub

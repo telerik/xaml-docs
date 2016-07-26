@@ -18,7 +18,7 @@ Add one or more sections with content
 
 #### __C#__
 
-{{region radgridview-filtering-custom-types_0}}
+{{region cs-radgridview-filtering-custom-types_0}}
 	
 	public class Person
 	{
@@ -50,7 +50,7 @@ The first thing that you need to do is implement the IEquatable interface. It ha
 
 #### __C#__
 
-{{region radgridview-filtering-custom-types_2}}
+{{region cs-radgridview-filtering-custom-types_2}}
 
 	public class Person : IEquatable<Person>
 	{
@@ -91,7 +91,7 @@ Next, you need to override Object.Equals(Object) and Object.GetHashCode. MSDN st
 
 #### __C#__
 
-{{region radgridview-filtering-custom-types_4}}
+{{region cs-radgridview-filtering-custom-types_4}}
 
 	public override bool Equals(object obj)
 	{
@@ -110,7 +110,7 @@ You need to override the ToString method of your type so that distinct values an
 
 #### __C#__
 
-{{region radgridview-filtering-custom-types_6}}
+{{region cs-radgridview-filtering-custom-types_6}}
 
 	public override string ToString()
 	{
@@ -124,7 +124,7 @@ When RadGridView encounters a custom type it will use a plain TextBox for the fi
         
 #### __C#__
 
-{{region radgridview-filtering-custom-types_8}}
+{{region cs-radgridview-filtering-custom-types_8}}
 
 	public class PersonConverter : TypeConverter
 	{
@@ -178,7 +178,7 @@ If the plain TextBox does not suit your needs, you can provide your own field fi
         
 #### __C#__
 
-{{region radgridview-filtering-custom-types_10}}
+{{region cs-radgridview-filtering-custom-types_10}}
 	public class MyDateTimeColumn : GridViewColumn
 	{
 	    public override FrameworkElement CreateFieldFilterEditor()
@@ -231,7 +231,7 @@ If you want to see the comparison filter operators (Is Less Than, etc.) you shou
 
 #### __C#__
 
-{{region radgridview-filtering-custom-types_12}}
+{{region cs-radgridview-filtering-custom-types_12}}
 
 	public static bool operator <(Person left, Person right)
 	{

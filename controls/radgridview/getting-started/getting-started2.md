@@ -38,14 +38,14 @@ You can add __RadGridView__ manually by writing the XAML code in __Example 1__. 
 
 #### __[XAML] Example 1: Adding RadGridView in XAML__
 
-{{region gridview-getting-started2_0}}
+{{region xaml-gridview-getting-started2_0}}
 	<telerik:RadGridView />
 {{endregion}}
 
 
 >In order to use __RadGridView__ in XAML, you have to add the following namespace declaration:
 >#### __[XAML] Example 2: Declaring Telerik Namespace__
->{{region telerik-schemas}}
+>{{region xaml-telerik-schemas}}
 >    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 >{{endregion}}
 
@@ -65,7 +65,7 @@ In order to populate the __RadGridView__ control with data, you should create a 
 
 #### __[C#] Example 3: Simple Business Class__
 
-{{region gridview-getting-started2_0}}         
+{{region cs-gridview-getting-started2_0}}         
     public class Club : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -139,7 +139,7 @@ In order to populate the __RadGridView__ control with data, you should create a 
 
 #### __[VB.NET] Example 3: Simple Business Class__
 
-{{region gridview-getting-started2_0}}
+{{region vb-gridview-getting-started2_0}}
 	Public Class Club
 		Implements INotifyPropertyChanged
 		Public Event PropertyChanged As PropertyChangedEventHandler
@@ -212,7 +212,7 @@ Next, you should create the view model containing a collection of Club objects.
 
 #### __[C#] Example 4: View Model Containing ObservableCollection of Sample Data__
 
-{{region gridview-getting-started2_1}}
+{{region cs-gridview-getting-started2_1}}
     public class MyViewModel : ViewModelBase
     {
         private ObservableCollection<Club> clubs;
@@ -252,7 +252,7 @@ Next, you should create the view model containing a collection of Club objects.
 
 #### __[VB.NET] Example 4: View Model Containing ObservableCollection of Sample Data__
 
-{{region gridview-getting-started2_1}}
+{{region vb-gridview-getting-started2_1}}
 	Public Class MyViewModel
 		Inherits ViewModelBase
 		Private m_clubs As ObservableCollection(Of Club)
@@ -296,7 +296,7 @@ __Example 5__ demonstrates how you can bind the ItemsSource collection in XAML. 
 
 #### __[XAML] Example 5: Bind RadGridView__
 
-{{region gridview-getting-started2_1}}
+{{region xaml-gridview-getting-started2_1}}
     <Grid.Resources>
         <local:MyViewModel x:Key="MyViewModel" />
     </Grid.Resources>
@@ -309,13 +309,13 @@ Alternatively, you can set the ItemsSource property in code-behind, as demonstra
 
 #### __[C#] Example 6: Set ItemsSource in Code__
 
-{{region gridview-getting-started2_2}}
+{{region cs-gridview-getting-started2_2}}
 	this.gridView.ItemsSource = new MyViewModel().Clubs;
 {{endregion}}
 
 #### __[VB.NET] Example 6: Set ItemsSource in Code__
 
-{{region gridview-getting-started2_2}}
+{{region vb-gridview-getting-started2_2}}
 	Me.gridView.ItemsSource = New MyViewModel().Clubs
 {{endregion}}
 
@@ -337,7 +337,7 @@ __Example 7__ demonstrates how you can manually prevent the automatic generation
 
 #### __[XAML] Example 7: Manually Defined Columns__
 
-{{region gridview-getting-started2_2}}
+{{region xaml-gridview-getting-started2_2}}
     <telerik:RadGridView x:Name="manualGridView" DataContext="{StaticResource MyViewModel}" 
                          ItemsSource="{Binding Clubs}" 
                          AutoGenerateColumns="False" >

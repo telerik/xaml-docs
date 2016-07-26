@@ -18,7 +18,7 @@ To set the value of the footer use __Footer__ property of the column.
 
 #### __XAML__
 
-{{region gridview-columns-column-footers_0}}
+{{region xaml-gridview-columns-column-footers_0}}
 
 	<telerik:GridViewDataColumn Header="ID"
                                 DataMemberBinding="{Binding EmployeeID}"
@@ -30,7 +30,7 @@ Because it is of type object, you are not limited to just using plain text. For 
 
 #### __XAML__
 
-{{region gridview-columns-column-footers_1}}
+{{region xaml-gridview-columns-column-footers_1}}
 
 	<telerik:GridViewDataColumn Header="ID"
                                 DataMemberBinding="{Binding EmployeeID}">
@@ -59,7 +59,7 @@ Because it is of type object, you are not limited to just using plain text. For 
 By default column footers are hidden, so in order to make them visible you have to set the __ShowColumnFooters__ property to __True__.
 
 #### __XAML__
-{{region gridview-columns-column-footers_2}}
+{{region xaml-gridview-columns-column-footers_2}}
 
 	<telerikGrid:RadGridView x:Name="radGridView"
 	                         ShowColumnFooters="True">

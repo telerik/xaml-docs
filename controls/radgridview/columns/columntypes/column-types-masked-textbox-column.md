@@ -16,7 +16,7 @@ For example add a __GridViewMaskedTextBoxColumn__ that represents the OrderNumbe
 
 #### __[XAML]Example 1: Define GridViewMaskedTextBoxColumn in XAML:__
 
-{{region radgridview-columns-column-types-masked-textbox-column_0}}
+{{region xaml-radgridview-columns-column-types-masked-textbox-column_0}}
 
 	<telerik:RadGridView 
 			x:Name="radGridView"

@@ -19,7 +19,7 @@ For the purpose of this tutorial the following __RadGridView__ declaration will 
 
 #### __XAML__
 
-{{region gridview-paging-using-silverlight-datapager_0}}
+{{region xaml-gridview-paging-using-silverlight-datapager_0}}
 
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <Grid.ColumnDefinitions>
@@ -43,7 +43,7 @@ In order to use the __DataPager__ with __RadGridView__, you need to perform the 
 
 #### __XAML__
 
-{{region gridview-paging-using-silverlight-datapager_1}}
+{{region xaml-gridview-paging-using-silverlight-datapager_1}}
 
 	<data:DataPager x:Name="dataPager" PageSize="6" DisplayMode="FirstLastPreviousNextNumeric"/>
 {{endregion}}
@@ -52,14 +52,14 @@ In order to use the __DataPager__ with __RadGridView__, you need to perform the 
 
 #### __C#__
 
-{{region gridview-paging-using-silverlight-datapager_2}}
+{{region cs-gridview-paging-using-silverlight-datapager_2}}
 
 	QueryableCollectionView qcv = new QueryableCollectionView( RadGridViewSampleData.GetEmployees() );
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-paging-using-silverlight-datapager_3}}
+{{region vb-gridview-paging-using-silverlight-datapager_3}}
 
 	Dim qcv As New QueryableCollectionView(RadGridViewSampleData.GetEmployees())
 {{endregion}}
@@ -72,7 +72,7 @@ In order to use the __DataPager__ with __RadGridView__, you need to perform the 
 
 #### __C#__
 
-{{region gridview-paging-using-silverlight-datapager_4}}
+{{region cs-gridview-paging-using-silverlight-datapager_4}}
 
 	QueryableCollectionView qcv = new QueryableCollectionView( RadGridViewSampleData.GetEmployees() );
 	dataPager.Source = qcv;
@@ -81,7 +81,7 @@ In order to use the __DataPager__ with __RadGridView__, you need to perform the 
 
 #### __VB.NET__
 
-{{region gridview-paging-using-silverlight-datapager_5}}
+{{region vb-gridview-paging-using-silverlight-datapager_5}}
 
 	Dim qcv As New QueryableCollectionView(RadGridViewSampleData.GetEmployees())
 	dataPager.Source = qcv

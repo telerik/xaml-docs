@@ -28,7 +28,7 @@ If you do not encounter any of the above mentioned problems, then you probably u
 
 #### __XAML__
 
-{{region gridview-troubleshooting-blank-cells_0}}
+{{region xaml-gridview-troubleshooting-blank-cells_0}}
 
 	<telerik:GridViewComboBoxColumn Header="Category"
 	        DataMemberBinding="{Binding CategoryID}"
@@ -47,7 +47,7 @@ There are two ways of solving the issue :
 
 #### __XAML__
 
-{{region gridview-troubleshooting-blank-cells_1}}
+{{region xaml-gridview-troubleshooting-blank-cells_1}}
 
 	<UserControl.Resources>
 	    <local:MainPageViewModel x:Key="mainPageViewModel" />
@@ -64,7 +64,7 @@ There are two ways of solving the issue :
 
 #### __C#__
 
-{{region gridview-troubleshooting-blank-cells_2}}
+{{region cs-gridview-troubleshooting-blank-cells_2}}
 
 	private void gridView_DataLoaded(object sender, EventArgs e)
 	{

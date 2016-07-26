@@ -16,7 +16,7 @@ Here is a __RadGridView__ declaration, which is populated with some sample data.
 
 #### __XAML__
 
-{{region gridview-selection-via-checkbox_0}}
+{{region xaml-gridview-selection-via-checkbox_0}}
 	<telerik:RadGridView x:Name="radGridView"
 	                         IsReadOnly="False"
 	                         AutoGenerateColumns="False">
@@ -50,7 +50,7 @@ In order to enable the selection via checkbox behavior, you need to perform the 
 
 #### __XAML__
 
-{{region gridview-selection-via-checkbox_1}}
+{{region xaml-gridview-selection-via-checkbox_1}}
 
 	<telerik:RadGridView SelectionMode="Extended">
 {{endregion}}
@@ -59,7 +59,7 @@ In order to enable the selection via checkbox behavior, you need to perform the 
 
 #### __XAML__
 
-{{region gridview-selection-via-checkbox_2}}
+{{region xaml-gridview-selection-via-checkbox_2}}
 
 	<telerik:RadGridView.Columns>
 	    <telerik:GridViewSelectColumn/>

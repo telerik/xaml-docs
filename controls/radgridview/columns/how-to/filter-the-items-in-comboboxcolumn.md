@@ -22,7 +22,7 @@ To resolve the problem you just have to change __RadComboBox's ItemsPanel with S
       
 #### __XAML__
 
-{{region gridview-columns-how-to-filter-the-items-in-comboboxcolumn_0}}
+{{region xaml-gridview-columns-how-to-filter-the-items-in-comboboxcolumn_0}}
 
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}"
                                     UniqueName="Country"

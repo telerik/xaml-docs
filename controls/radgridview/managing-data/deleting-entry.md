@@ -18,7 +18,7 @@ For example, you can have a button in which click event you implement your delet
 
 #### __XAML__
 
-{{region gridview-managing-data-deleting-entry_0}}
+{{region xaml-gridview-managing-data-deleting-entry_0}}
 
 	<StackPanel x:Name="LayoutRoot">
 	    <Button Content="Delete"
@@ -34,7 +34,7 @@ To determine which items are to be removed, use the __SelectedItems__ collection
 
 #### __C#__
 
-{{region gridview-managing-data-deleting-entry_3}}
+{{region cs-gridview-managing-data-deleting-entry_3}}
 
 	foreach ( Employee item in this.radGridView.SelectedItems )
 	{
@@ -48,7 +48,7 @@ To determine which items are to be removed, use the __SelectedItems__ collection
 
 #### __VB.NET__
 
-{{region gridview-managing-data-deleting-entry_4}}
+{{region vb-gridview-managing-data-deleting-entry_4}}
 
 	For Each item As Employee In Me.radGridView.SelectedItems
 	    itemsToRemove.Add(item)
@@ -64,7 +64,7 @@ Here is an example of a sample deleting logic implemented in the event handler f
 
 #### __C#__
 
-{{region gridview-managing-data-deleting-entry_5}}
+{{region cs-gridview-managing-data-deleting-entry_5}}
 
 	private void Button_Click( object sender, RoutedEventArgs e )
 	{
@@ -88,7 +88,7 @@ Here is an example of a sample deleting logic implemented in the event handler f
 
 #### __VB.NET__
 
-{{region gridview-managing-data-deleting-entry_6}}
+{{region vb-gridview-managing-data-deleting-entry_6}}
 
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    If Me.radGridView.SelectedItems.Count = 0 Then

@@ -26,7 +26,7 @@ The example will represent a __ListBox and RadGridView__. The ListBox will list 
 Here are the definitions of the controls.
 
 #### __XAML__
-{{region radgridview-how-to-show-hide-columns-outside-of-the-radgridview_0}}
+{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_0}}
 
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
@@ -43,7 +43,7 @@ Here are the definitions of the controls.
 Next bind the __ListBox.ItemsSource__ to __RadGridView.Columns__ collection via Element Binding.
 
 #### __XAML__
-{{region radgridview-how-to-show-hide-columns-outside-of-the-radgridview_1}}
+{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_1}}
 
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
@@ -61,7 +61,7 @@ After that define __DataTemplate__ for __ItemTemplate__ property of the ListBox.
 
 #### __XAML__
 
-{{region radgridview-how-to-show-hide-columns-outside-of-the-radgridview_2}}
+{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_2}}
 
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>

@@ -26,7 +26,7 @@ To do so follow these steps:
 
 #### __C#__
 
-{{region gridview-cell-template-selector_0}}
+{{region cs-gridview-cell-template-selector_0}}
 
 	public class MyCellTemplateSelector : DataTemplateSelector
 	{
@@ -53,7 +53,7 @@ To do so follow these steps:
 
 #### __VB.NET__
 
-{{region gridview-cell-template-selector_1}}
+{{region vb-gridview-cell-template-selector_1}}
 
     Public Class MyCellTemplateSelector
         Inherits DataTemplateSelector
@@ -95,7 +95,7 @@ In this case we have two different DataTemplates that could be applied - bigStad
 
 #### __XAML__
 
-{{region gridview-cell-template-selector_2}}
+{{region xaml-gridview-cell-template-selector_2}}
 
 	<my:MyCellTemplateSelector x:Key="myCellTemplateSelector">
 	    <my:MyCellTemplateSelector.bigStadium>
@@ -121,7 +121,7 @@ In this case we have two different DataTemplates that could be applied - bigStad
 
 #### __XAML__
 
-{{region gridview-cell-template-selector_3}}
+{{region xaml-gridview-cell-template-selector_3}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
             Header="Stadium" 
             CellTemplateSelector="{StaticResource myCellTemplateSelector}"

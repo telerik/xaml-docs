@@ -26,7 +26,7 @@ Here is a small example:
 
 #### __C#__
 
-{{region gridview-not-all-values-shown-filtering_0}}
+{{region cs-gridview-not-all-values-shown-filtering_0}}
 
 	public MainPage()
 	{

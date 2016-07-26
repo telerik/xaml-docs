@@ -27,7 +27,7 @@ To do so follow these steps:
 
 #### __C#__
 
-{{region gridview-rowstyleselector_0}}
+{{region cs-gridview-rowstyleselector_0}}
 
 	public class StadiumCapacityStyle : StyleSelector
 	{
@@ -54,7 +54,7 @@ To do so follow these steps:
 
 #### __VB.NET__
 
-{{region gridview-rowstyleselector_1}}
+{{region vb-gridview-rowstyleselector_1}}
 
 	Public Class StadiumCapacityStyle
 	 Inherits StyleSelector
@@ -101,7 +101,7 @@ Depending on the underlying data you cab select which style to apply.
 
 #### __XAML__
 
-{{region gridview-rowstyleselector_2}}
+{{region xaml-gridview-rowstyleselector_2}}
 	<Grid>
 		<Grid.Resources>
 			<my:StadiumCapacityStyle x:Key="stadiumCapacityStyle">
@@ -127,7 +127,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 #### __XAML__
 
-{{region gridview-rowstyleselector_4}}
+{{region xaml-gridview-rowstyleselector_4}}
 
     <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
     	<Setter Property="Background" Value="Yellow" />
@@ -138,7 +138,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 #### __XAML__
 
-{{region gridview-rowstyleselector_3}}
+{{region xaml-gridview-rowstyleselector_3}}
 
 	<telerik:RadGridView Name="clubsGrid" 
 	                     ItemsSource="{Binding Clubs}"

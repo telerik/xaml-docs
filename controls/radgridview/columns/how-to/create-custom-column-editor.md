@@ -16,7 +16,7 @@ This tutorial will guide you through the common task of creating a custom column
 			
 #### __[C#] Example 1: Business object definition__
 
-	{{region gridview-how-to-create-custom-captain-editor-column_0}}
+	{{region cs-gridview-how-to-create-custom-captain-editor-column_0}}
 	 public class Club : INotifyPropertyChanged
     {
         private string name;
@@ -124,7 +124,7 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 
 #### __[XAML] Example 2: Initial declaration of RadGridView__
 
-	{{region gridview-how-to-create-custom-captain-editor-column_0}}
+	{{region xaml-gridview-how-to-create-custom-captain-editor-column_0}}
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False" ItemsSource="{Binding Clubs}">
             <telerik:RadGridView.Columns>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
@@ -138,7 +138,7 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 
 #### __[C#] Example 3: Populating RadGridView__
 
-	{{region gridview-how-to-create-date-time-picker-column_1}}
+	{{region cs-gridview-how-to-create-date-time-picker-column_1}}
 	this.radGridView.ItemsSource = Club.GetClubs();
 	{{endregion}}
 
@@ -146,7 +146,7 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 			
 #### __[XAML] Example 4: Declaration of CustomCaptainEditor  UserControl__
 
-	{{region gridview-how-to-create-custom-captain-editor-column_1}}
+	{{region xaml-gridview-how-to-create-custom-captain-editor-column_1}}
 	<UserControl x:Class="CustomColumnEditor.CustomCaptainEditor"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -172,7 +172,7 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 
 #### __[C#] Example 5: Code-behind definition of the CustomCaptainEditor UserControl__
 
-	{{region gridview-how-to-create-custom-captain-editor-column_2}}
+	{{region cs-gridview-how-to-create-custom-captain-editor-column_2}}
 	public partial class CustomCaptainEditor : UserControl
     {
         public static readonly DependencyProperty CaptainNameProperty =
@@ -233,7 +233,7 @@ Take a look at the code-behind of the control. Two additional dependency propert
 
 #### __[C#] Example 6: Definition of CustomColumn class__
 
-	{{region gridview-how-to-create-custom-captain-editor-column_4}}
+	{{region cs-gridview-how-to-create-custom-captain-editor-column_4}}
 	public class CustomColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -278,7 +278,7 @@ Take a look at the code-behind of the control. Two additional dependency propert
 
 #### __[XAML] Example 7: The updated declaration of RadGridView__
 
-	{{region gridview-how-to-create-custom-captain-editor-column_2}}
+	{{region xaml-gridview-how-to-create-custom-captain-editor-column_2}}
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False" ItemsSource="{Binding Clubs}">
             <telerik:RadGridView.Columns>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />

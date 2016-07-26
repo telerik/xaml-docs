@@ -25,7 +25,7 @@ Columns in RadGridView may be grouped in __column groups__(added with __Q3 2011_
 To enable __column grouping__ you need to define __RadGridView.ColumnGroups__ as illustrated below.
      
 #### __[XAML]Example 1: Definining ColumnGroups and specifying them for columns__
-{{region gridview-columns-column-headers_3}}
+{{region xaml-gridview-columns-column-headers_3}}
 
 	<telerik:RadGridView x:Name="RadGridView1" GridLinesVisibility="Vertical" Width="450" CanUserFreezeColumns="False" AutoGenerateColumns="False" IsFilteringAllowed="False"  ShowGroupPanel="False" RowIndicatorVisibility="Collapsed">
 		<telerik:RadGridView.ColumnGroups>
@@ -55,7 +55,7 @@ For example:
 
 #### __[XAML]Example 2: Specify ColumnGroupName for a column__
 
-{{region gridview-columns-column-headers_4}}
+{{region xaml-gridview-columns-column-headers_4}}
 
 	<telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
 	 ...
@@ -66,7 +66,7 @@ Column groups can be __nested__. They can be defined like so:
  
 #### __[XAML]Example 3: Nested ColumnGroups__
 
-{{region gridview-columns-column-headers_5}}
+{{region xaml-gridview-columns-column-headers_5}}
 
 	<telerik:RadGridView.ColumnGroups>
 		<telerik:GridViewColumnGroup  Name="Data" Header="Data">
@@ -85,7 +85,7 @@ You can define a __custom header__ for the __GridViewColumnGroup__ through its H
 
 #### __[XAML]Example 4: Define GridViewColumnGroup.HeaderTemplate__
 
-{{region gridview-columns-column-headers_6}}
+{{region xaml-gridview-columns-column-headers_6}}
 
 	<telerik:GridViewColumnGroup Name="Data">
 	    <telerik:GridViewColumnGroup.HeaderTemplate>

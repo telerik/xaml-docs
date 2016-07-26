@@ -38,7 +38,7 @@ When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ meth
 
 #### __[C#] Example 1: Exporting DateTime Values to Excel__
 
-	{{region gridview-export-how-to-export-datetime-1}}
+	{{region cs-gridview-export-how-to-export-datetime-1}}
 	this.gridViewExport.ElementExportingToDocument += (s, e) =>
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -58,7 +58,7 @@ When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ meth
 
 #### __[VB.NET] Example 1: Exporting DateTime Values to Excel__
 
-	{{region gridview-export-how-to-export-datetime-2}}
+	{{region vb-gridview-export-how-to-export-datetime-2}}
 	Me.gridViewExport.ElementExportingToDocument += Function(s, e) 
 		If e.Element = ExportElement.Cell Then
 			Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)

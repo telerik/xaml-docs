@@ -16,7 +16,7 @@ __GridViewDataColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview
 
 #### __[XAML] Example 1: Define GridViewDataColumn in XAML.__
 
-{{region radgridview-columns-column-types-data-column_0}}
+{{region xaml-radgridview-columns-column-types-data-column_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -28,7 +28,7 @@ __GridViewDataColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview
 
 #### __[C#] Example 2: Define GridViewDataColumn in code.__
 
-{{region radgridview-columns-column-types-data-column_1}}
+{{region cs-radgridview-columns-column-types-data-column_1}}
 
 	GridViewDataColumn column = new GridViewDataColumn();
     column.DataMemberBinding = new Binding("Id");

@@ -18,7 +18,7 @@ If you want to change the appearance of a cell when it enters edit mode, you sho
 
 #### __[XAML] Example 1: Styling the GridViewEditorPresenter__
 
-	{{region gridview-styling-editorpresenter_1}}
+	{{region xaml-gridview-styling-editorpresenter_1}}
     <Style TargetType="{x:Type telerik:GridViewEditorPresenter}">
 		<Setter Property="Template" Value="{StaticResource GridViewEditorPresenterTemplate}"/>
         <Setter Property="Padding" Value="5"/>

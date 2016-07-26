@@ -18,7 +18,7 @@ We will consider two scenarios - getting the data from the selected row and gett
 
 #### __C#__
 
-{{region gridview-how-to-get-data-from-row_0}}
+{{region cs-gridview-how-to-get-data-from-row_0}}
 
 	private void Button2_Click(object sender, RoutedEventArgs e)
 	{
@@ -32,7 +32,7 @@ We will consider two scenarios - getting the data from the selected row and gett
 
 #### __VB.NET__
 
-{{region gridview-how-to-get-data-from-row_1}}
+{{region vb-gridview-how-to-get-data-from-row_1}}
 
 	Private Sub Button2_Click(sender As Object, e As RoutedEventArgs)
 	 Dim club As Club = TryCast(Me.clubsGrid.SelectedItem, Club)
@@ -45,7 +45,7 @@ We will consider two scenarios - getting the data from the selected row and gett
 
 #### __C#__
 
-{{region gridview-how-to-get-data-from-row_2}}
+{{region cs-gridview-how-to-get-data-from-row_2}}
 
 	void clubsGrid_RowActivated(object sender, Telerik.Windows.Controls.GridView.RowEventArgs e)
 	{
@@ -60,7 +60,7 @@ We will consider two scenarios - getting the data from the selected row and gett
 
 #### __VB.NET__
 
-{{region gridview-how-to-get-data-from-row_3}}
+{{region vb-gridview-how-to-get-data-from-row_3}}
 
 	Private Sub clubsGrid_RowActivated(sender As Object, e As Telerik.Windows.Controls.GridView.RowEventArgs)
 	 Dim row = TryCast(e.Row, GridViewRow)

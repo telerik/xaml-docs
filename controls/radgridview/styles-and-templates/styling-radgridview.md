@@ -43,7 +43,7 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all instances of RadGridView in an application__
 
-	{{region gridview-styling-radgridview-0}}
+	{{region xaml-gridview-styling-radgridview-0}}
 	<Style TargetType="telerik:RadGridView">
 		<Setter Property="Foreground" Value="Red"/>
 	</Style>
@@ -57,7 +57,7 @@ __RadGridView__ exposes a **Style** property that allows you to apply a style to
 
 #### __[XAML] Example 1: Setting RadGridView Style__
 
-	{{region gridview-styling-radgridview-1}}
+	{{region xaml-gridview-styling-radgridview-1}}
 	<telerik:RadGridView Style="{StaticResource RadGridViewStyle}" />
 	{{endregion}}
 
@@ -93,7 +93,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __[XAML] Example 2: Usage of General properties__
 
-	{{region gridview-styling-radgridview-2}}
+	{{region xaml-gridview-styling-radgridview-2}}
 	<telerik:RadGridView x:Name="radGridView" 
                          GridLinesVisibility="Vertical"
                          ShowColumnFooters="True"
@@ -123,7 +123,7 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 #### __[XAML] Example 3: Usage of Columns properties__
 
-	{{region gridview-styling-radgridview-3}}
+	{{region xaml-gridview-styling-radgridview-3}}
 	<telerik:RadGridView x:Name="radGridView" MinColumnWidth="20" MaxColumnWidth="100" ColumnWidth="80"/>
 	{{endregion}}
 
@@ -149,7 +149,7 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 #### __[XAML] Example 4: Usage of Rows properties__
 
-	{{region gridview-styling-radgridview-4}}
+	{{region xaml-gridview-styling-radgridview-4}}
 	<telerik:RadGridView x:Name="radGridView" 
                          RowIndicatorVisibility="Collapsed"
                          RowDetailsVisibilityMode="VisibleWhenSelected"
@@ -186,7 +186,7 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 #### __[XAML] Example 5: Usage of Groups properties__
 
-	{{region gridview-styling-radgridview-5}}
+	{{region xaml-gridview-styling-radgridview-5}}
 	<telerik:RadGridView x:Name="radGridView"
                          ShowGroupFooters="True"
                          ShowGroupPanel="False">

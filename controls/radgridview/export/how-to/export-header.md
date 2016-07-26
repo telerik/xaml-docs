@@ -29,7 +29,7 @@ Here is a small sample code:
         
 #### __[XAML]Example 1: Define a custom header:__
 
-{{region gridview-export-troubleshooting-export-header_0}}
+{{region xaml-gridview-export-troubleshooting-export-header_0}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}">
 	    <telerik:GridViewDataColumn.Header>
@@ -43,7 +43,7 @@ Here is a small sample code:
         
 #### __[C#]Example 2: Handle the ElementExporting event:__
 
-{{region gridview-export-troubleshooting-export-header_1}}
+{{region cs-gridview-export-troubleshooting-export-header_1}}
 
 	void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
@@ -54,7 +54,7 @@ Here is a small sample code:
 
 #### __[VB.NET]Example 2:Handle the ElementExporting event:__
 
-{{region gridview-export-troubleshooting-export-header_2}}
+{{region vb-gridview-export-troubleshooting-export-header_2}}
 
 	Private Sub clubsGrid_ElementExporting(sender As Object, e As GridViewElementExportingEventArgs)
         If e.Value IsNot Nothing AndAlso e.Value.[GetType]() = GetType(TextBlock) Then

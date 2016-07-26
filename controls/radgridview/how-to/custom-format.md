@@ -18,7 +18,7 @@ For example you can define a custom formatting with the help of the CurrentCultu
 
 #### __C#__ Example 1: Defining custom formatting
 
-{{region gridview-how-to-custom-format_0}}
+{{region cs-gridview-how-to-custom-format_0}}
 
 	private void Application_Startup(object sender, StartupEventArgs e)
 	{

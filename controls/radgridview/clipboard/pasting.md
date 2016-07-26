@@ -39,7 +39,7 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 
 #### __[C#]Example 1: Utilizing Pasting and PastingCellClipboardContent events__
 
-{{region gridview-pasting_0}}
+{{region cs-gridview-pasting_0}}
 	
 	private void radGridView1_Pasting(object sender, GridViewClipboardEventArgs e)
 	{
@@ -66,7 +66,7 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 
 #### __[VB.NET]Example 1: Utilizing Pasting and PastingCellClipboardContent events__
 
-{{region gridview-pasting_1}}
+{{region vb-gridview-pasting_1}}
 
     Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
         e.Cancel = True

@@ -48,7 +48,7 @@ For example:
 
 #### __[C#]Example 1: Set the style of the exported element__
 
-{{region gridview-export-async_2}}
+{{region cs-gridview-export-async_2}}
 
 	 private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
         {
@@ -68,7 +68,7 @@ You can define the Style when __InitializingExcelMLStyles__ event is raised. For
 
 #### __[C#]Example 2: Define a style:__
 
-{{region gridview-export-async_4}}
+{{region cs-gridview-export-async_4}}
 
 	private void clubsGrid_InitializingExcelMLStyles(object sender, ExcelMLStylesEventArgs e)
         {

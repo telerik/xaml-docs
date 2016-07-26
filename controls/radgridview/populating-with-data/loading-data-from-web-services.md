@@ -23,7 +23,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __XAML__
 
-{{region gridview-loading-data-from-web-services_0}}
+{{region xaml-gridview-loading-data-from-web-services_0}}
 
 	<telerik:RadGridView x:Name="radGridView"/>
 {{endregion}}
@@ -35,14 +35,14 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-web-services_1}}
+{{region cs-gridview-loading-data-from-web-services_1}}
 
 	SampleWebServiceSoapClient serviceClient = new SampleWebServiceSoapClient();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-web-services_2}}
+{{region vb-gridview-loading-data-from-web-services_2}}
 
 	Dim serviceClient As New SampleWebServiceSoapClient()
 {{endregion}}
@@ -53,7 +53,7 @@ The gridview control will be populated with all __Customers__ from the __Northwi
 
 #### __C#__
 
-{{region gridview-loading-data-from-web-services_3}}
+{{region cs-gridview-loading-data-from-web-services_3}}
 
 	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>( serviceClient_LoadCustomersCompleted );
 	serviceClient.LoadCustomersAsync();
@@ -67,7 +67,7 @@ The gridview control will be populated with all __Customers__ from the __Northwi
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-web-services_4}}
+{{region vb-gridview-loading-data-from-web-services_4}}
 
 	AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	serviceClient.LoadCustomersAsync()
@@ -80,7 +80,7 @@ The gridview control will be populated with all __Customers__ from the __Northwi
 
 #### __C#__
 
-{{region gridview-loading-data-from-web-services_5}}
+{{region cs-gridview-loading-data-from-web-services_5}}
 
 	SampleWebServiceSoapClient serviceClient = new SampleWebServiceSoapClient();
 	this.radGridView.ItemsSource = serviceClient.LoadCustomers();
@@ -88,7 +88,7 @@ The gridview control will be populated with all __Customers__ from the __Northwi
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-web-services_6}}
+{{region vb-gridview-loading-data-from-web-services_6}}
 
 	Dim serviceClient As New SampleWebServiceSoapClient()
 	Me.radGridView.ItemsSource = serviceClient.LoadCustomers()
@@ -106,7 +106,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-web-services_7}}
+{{region cs-gridview-loading-data-from-web-services_7}}
 
 	public class NorthwindDataSource
 	{
@@ -115,7 +115,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-web-services_8}}
+{{region vb-gridview-loading-data-from-web-services_8}}
 
 	Public Class NorthwindDataSource
 	End Class
@@ -129,7 +129,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-web-services_9}}
+{{region cs-gridview-loading-data-from-web-services_9}}
 
 	public class NorthwindDataSource
 	{
@@ -149,7 +149,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-web-services_10}}
+{{region vb-gridview-loading-data-from-web-services_10}}
 
 	Public Class NorthwindDataSource
 	    Private serviceClient As SampleWebServiceSoapClient
@@ -177,7 +177,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-web-services_11}}
+{{region cs-gridview-loading-data-from-web-services_11}}
 
 	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>( serviceClient_LoadCustomersCompleted );
 	serviceClient.LoadCustomersAsync();
@@ -185,7 +185,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-web-services_12}}
+{{region cs-gridview-loading-data-from-web-services_12}}
 
 	foreach ( Customers c in serviceClient.LoadCustomers() )
 	{
@@ -195,7 +195,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-web-services_13}}
+{{region vb-gridview-loading-data-from-web-services_13}}
 
 	AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	serviceClient.LoadCustomersAsync()
@@ -203,7 +203,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-web-services_14}}
+{{region vb-gridview-loading-data-from-web-services_14}}
 
 	For Each c As Customers In serviceClient.LoadCustomers()
 	    Me.Customers.Add(c)
@@ -216,7 +216,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __C#__
 
-{{region gridview-loading-data-from-web-services_15}}
+{{region cs-gridview-loading-data-from-web-services_15}}
 	private void serviceClient_LoadCustomersCompleted( object sender, LoadCustomersCompletedEventArgs e )
 	{
 	    if ( e.Error == null && e.Result != null )
@@ -231,7 +231,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-web-services_16}}
+{{region vb-gridview-loading-data-from-web-services_16}}
 
 	Private Sub serviceClient_LoadCustomersCompleted(ByVal sender As Object, ByVal e As LoadCustomersCompletedEventArgs)
 	    If e.[Error] Is Nothing AndAlso e.Result IsNot Nothing Then
@@ -246,7 +246,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __XAML__
 
-{{region gridview-loading-data-from-web-services_17}}
+{{region xaml-gridview-loading-data-from-web-services_17}}
 
 	<UserControl.Resources>
 	   <example:NorthwindDataSource x:Key="DataSource"/>
@@ -257,7 +257,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __XAML__
 
-{{region gridview-loading-data-from-web-services_18}}
+{{region xaml-gridview-loading-data-from-web-services_18}}
 
 	<telerik:RadGridView x:Name="radGridView" Margin="8"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>

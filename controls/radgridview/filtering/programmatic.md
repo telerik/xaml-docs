@@ -34,7 +34,7 @@ If you want to adjust many properties at once without triggering a data engine u
 
 #### __[C#] Example 1: Filtering single column programmatically__
 
-	{{region gridview-filtering-programmatic_0}}
+	{{region cs-gridview-filtering-programmatic_0}}
 	var countryColumn = this.radGridView.Columns["Country"];
 	var countryFilter = countryColumn.ColumnFilterDescriptor;
 	
@@ -69,7 +69,7 @@ If you want to adjust many properties at once without triggering a data engine u
 
 #### __[VB.NET] Example 1: Filtering single column programmatically__
 
-	{{region gridview-filtering-programmatic_0}}
+	{{region vb-gridview-filtering-programmatic_0}}
 	Dim countryColumn = Me.radGridView.Columns("Country")
 	Dim countryFilter = countryColumn.ColumnFilterDescriptor
 	
@@ -122,7 +122,7 @@ In case you want to pre-filter multiple columns at once without triggering a dat
 
 #### __[C#] Example 2: Filtering multiple columns programmatically__
 
-	{{region gridview-filtering-programmatic_1}}
+	{{region cs-gridview-filtering-programmatic_1}}
 	this.radGridView.FilterDescriptors.SuspendNotifications();
 
 	// filter as many columns as you wish here
@@ -132,7 +132,7 @@ In case you want to pre-filter multiple columns at once without triggering a dat
 
 #### __[VB.NET] Example 2: Filtering multiple columns programmatically__
 
-	{{region gridview-filtering-programmatic_1}}
+	{{region vb-gridview-filtering-programmatic_1}}
 	Me.radGridView.FilterDescriptors.SuspendNotifications()
 
 	' filter as many columns as you wish here '
@@ -146,7 +146,7 @@ Clearing multiple column filters is again done by using the Suspend/Resume patte
 
 #### __[C#] Example 3: Clearing multiple column filters__
 
-	{{region gridview-filtering-programmatic_2}}
+	{{region cs-gridview-filtering-programmatic_2}}
 	this.radGridView.FilterDescriptors.SuspendNotifications();
 	foreach (GridViewColumn column in this.radGridView.Columns)
 	{
@@ -157,7 +157,7 @@ Clearing multiple column filters is again done by using the Suspend/Resume patte
 
 #### __[VB.NET] Example 3: Clearing multiple column filters__
 
-	{{region gridview-filtering-programmatic_2}}
+	{{region vb-gridview-filtering-programmatic_2}}
 	Me.radGridView.FilterDescriptors.SuspendNotifications()
 	For Each column As GridViewColumn In Me.radGridView.Columns
 		column.ClearFilters()
@@ -193,7 +193,7 @@ So a typical FilterDescriptor might look something like this:
 
 #### __[C#] Example 4: A custom FilterDescriptor__
 
-	{{region gridview-filtering-programmatic_3}}
+	{{region cs-gridview-filtering-programmatic_3}}
 	// Give me all people that are with first name John.
 	var fd = new FilterDescriptor();
 	fd.Member = "FirstName";
@@ -207,7 +207,7 @@ So a typical FilterDescriptor might look something like this:
 
 #### __[VB.NET] Example 4: A custom FilterDescriptor__
 
-	{{region gridview-filtering-programmatic_3}}
+	{{region vb-gridview-filtering-programmatic_3}}
 	' Give me all people that are named John. '
 	Dim fd As New FilterDescriptor()
 	fd.Member = "FirstName"
@@ -236,13 +236,13 @@ To help you understand how this FilterDescriptor is used by the data engine, let
 
 #### __[C#] Example 5: The generated LINQ expression__
 	
-	{{region gridview-filtering-programmatic_4}}
+	{{region cs-gridview-filtering-programmatic_4}}
 	people.Where(person => person.FirstName == "John")
 	{{endregion}}
 
 #### __[VB.NET] Example 5: The generated LINQ expression__
 
-	{{region gridview-filtering-programmatic_4}}
+	{{region vb-gridview-filtering-programmatic_4}}
 	people.Where(Function(person) person.FirstName = "John")
 	{{endregion}}
 
@@ -258,7 +258,7 @@ Imagine that we would like to get only people between the ages of 18 and 60 who 
 
 #### __[C#] Example 6: Creating a CompositeFilterDescriptor__
 
-	{{region gridview-filtering-programmatic_5}}
+	{{region cs-gridview-filtering-programmatic_5}}
 	var olderThan18Filter = new FilterDescriptor("Age", FilterOperator.IsGreaterThanOrEqualTo, 18);
 	var youngerThan60Filter = new FilterDescriptor("Age", FilterOperator.IsLessThan, 60);
 	
@@ -279,7 +279,7 @@ Imagine that we would like to get only people between the ages of 18 and 60 who 
 
 #### __[VB.NET] Example 6: Creating a CompositeFilterDescriptor__
 
-	{{region gridview-filtering-programmatic_5}}
+	{{region vb-gridview-filtering-programmatic_5}}
 	Dim olderThan18Filter = New FilterDescriptor("Age", FilterOperator.IsGreaterThanOrEqualTo, 18)
 	Dim youngerThan60Filter = New FilterDescriptor("Age", FilterOperator.IsLessThan, 60)
 	
@@ -308,13 +308,13 @@ The data engine will generate something similar in pseudo-code:
 
 #### __[C#] Example 7: The generated LINQ expression__
 
-	{{region gridview-filtering-programmatic_6}}
+	{{region cs-gridview-filtering-programmatic_6}}
 	people.Where(person => (person.Country == "Spain" && (person.Age >= 18 && person.Age < 60)));
 	{{endregion}}
 
 #### __[VB.NET] Example 7: The generated LINQ expression__
 
-	{{region gridview-filtering-programmatic_6}}
+	{{region vb-gridview-filtering-programmatic_6}}
 	people.Where(Function(person) (person.Country = "Spain" AndAlso (person.Age >= 18 AndAlso person.Age < 60)))
 	{{endregion}}
 

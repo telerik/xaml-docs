@@ -14,7 +14,7 @@ __GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the di
 
 #### __XAML__
 
-{{region gridview-columns-data-formatting_0}}
+{{region xaml-gridview-columns-data-formatting_0}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding OrderDate}"
                                 Header="Order Date"
@@ -26,7 +26,7 @@ __GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the di
 
 #### __C#__
 
-{{region gridview-columns-data-formatting_1}}
+{{region cs-gridview-columns-data-formatting_1}}
 
 	((GridViewDataColumn)this.radGridView.Columns["OrderDate"] ).DataFormatString = "{0:dd, MMM, yyyy}";
 	    // or
@@ -35,7 +35,7 @@ __GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the di
 
 #### __VB.NET__
 
-{{region gridview-columns-data-formatting_2}}
+{{region vb-gridview-columns-data-formatting_2}}
 
 	DirectCast(Me.radGridView.Columns("OrderDate"), GridViewDataColumn).DataFormatString = "{0:dd, MMM, yyyy}"
 	    ' or'

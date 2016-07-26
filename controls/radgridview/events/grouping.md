@@ -32,7 +32,7 @@ The code snippets below show how to subscribe for those events:
 
 #### __XAML__
 
-{{region gridview-events-grouping_0}}
+{{region xaml-gridview-events-grouping_0}}
 
 	<telerik:RadGridView Name="clubsGrid" 
 	                    ItemsSource="{Binding Clubs}"
@@ -44,7 +44,7 @@ The code snippets below show how to subscribe for those events:
 
 #### __C#__
 
-{{region gridview-events-grouping_5}}
+{{region cs-gridview-events-grouping_5}}
 
 	clubsGrid.Grouping += new EventHandler<GridViewGroupingEventArgs>(clubsGrid_Grouping);
 	clubsGrid.Grouped += new EventHandler<GridViewGroupedEventArgs>(clubsGrid_Grouped);
@@ -55,7 +55,7 @@ The code snippets below show how to subscribe for those events:
 
 #### __VB.NET__
 
-{{region gridview-events-grouping_6}}
+{{region vb-gridview-events-grouping_6}}
 
 	clubsGrid.Grouping += New EventHandler(Of GridViewGroupingEventArgs)(clubsGrid_Grouping)
 	clubsGrid.Grouped += New EventHandler(Of GridViewGroupedEventArgs)(clubsGrid_Grouped)
@@ -96,7 +96,7 @@ For example, you can use the __Grouping__ event to prevent the user from adding 
 
 #### __C#__
 
-{{region gridview-events-grouping_1}}
+{{region cs-gridview-events-grouping_1}}
 	
 	private void clubsGrid_Grouping(object sender, GridViewGroupingEventArgs e)
 	{
@@ -111,7 +111,7 @@ For example, you can use the __Grouping__ event to prevent the user from adding 
 
 #### __VB.NET__
 
-{{region gridview-events-grouping_2}}
+{{region vb-gridview-events-grouping_2}}
 	
 	Private Sub clubsGrid_Grouping(sender As Object, e As GridViewGroupingEventArgs)
 	 If e.Action = GroupingEventAction.Place AndAlso e.Index > 0 Then
@@ -157,7 +157,7 @@ For example, you can use the __Grouped__ event to get the column that is grouped
 
 #### __C#__
 
-{{region gridview-events-grouping_3}}
+{{region cs-gridview-events-grouping_3}}
 	
 	private void clubsGrid_Grouped(object sender, GridViewGroupedEventArgs e)
 	{
@@ -168,7 +168,7 @@ For example, you can use the __Grouped__ event to get the column that is grouped
 
 #### __VB.NET__
 
-{{region gridview-events-grouping_4}}
+{{region vb-gridview-events-grouping_4}}
 	
 	    Private Sub clubsGrid_Grouped(sender As Object, e As GridViewGroupedEventArgs)
 	        Dim column As GridViewDataColumn = TryCast(DirectCast(e.GroupDescriptor, Telerik.Windows.Controls.GridView.ColumnGroupDescriptor).Column, GridViewDataColumn)
@@ -190,7 +190,7 @@ For example, you can use the __GroupRowIsExpandedChanging__ event like so.
 
 #### __C#__
 
-{{region gridview-events-grouping_7}}
+{{region cs-gridview-events-grouping_7}}
 
 	void clubsGrid_GroupRowIsExpandedChanging(object sender, Telerik.Windows.Controls.GridView.GroupRowCancelEventArgs e)
 	{
@@ -201,7 +201,7 @@ For example, you can use the __GroupRowIsExpandedChanging__ event like so.
 
 #### __VB.NET__
 
-{{region gridview-events-grouping_8}}
+{{region vb-gridview-events-grouping_8}}
 
     Private Sub clubsGrid_GroupRowIsExpandedChanging(sender As Object, e As Telerik.Windows.Controls.GridView.GroupRowCancelEventArgs)
         e.Cancel = True
@@ -222,7 +222,7 @@ For example, you can use the __GroupRowIsExpandedChanged__ event to get the expa
 
 #### __C#__
 
-{{region gridview-events-grouping_9}}
+{{region cs-gridview-events-grouping_9}}
 
 	void clubsGrid_GroupRowIsExpandedChanged(object sender, Telerik.Windows.Controls.GridView.GroupRowEventArgs e)
 	{
@@ -241,7 +241,7 @@ For example, you can use the __GroupRowIsExpandedChanged__ event to get the expa
 
 #### __VB.NET__
 
-{{region gridview-events-grouping_10}}
+{{region vb-gridview-events-grouping_10}}
 
     Private Sub clubsGrid_GroupRowIsExpandedChanged(sender As Object, e As Telerik.Windows.Controls.GridView.GroupRowEventArgs)
         Dim expandedGroup As GridViewGroupRow = TryCast(e.Row, GridViewGroupRow)

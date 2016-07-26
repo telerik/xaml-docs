@@ -32,7 +32,7 @@ Here is a small sample code:
 
 #### __[C#]Example 1: Handling the ElementExporting event:__
 
-{{region gridview-export-troubleshooting-export-string_0}}
+{{region cs-gridview-export-troubleshooting-export-string_0}}
 
 	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
@@ -49,7 +49,7 @@ Here is a small sample code:
 
 #### __[VB.NET]Example 2: Handling the ElementExporting event:__
 
-{{region gridview-export-troubleshooting-export-string_1}}
+{{region vb-gridview-export-troubleshooting-export-string_1}}
 
     Private Sub clubsGrid_ElementExporting(sender As Object, e As GridViewElementExportingEventArgs)
         Dim column = TryCast(e.Context, GridViewDataColumn)

@@ -18,7 +18,7 @@ You can define filtering either in the XAML or in the code-behind.
 
 #### __XAML__
 
-{{region gridview-overview-filtering_0}}
+{{region xaml-gridview-overview-filtering_0}}
 
 	<telerik:RadGridView x:Name="radGridView">
 	   <telerik:RadGridView.FilterDescriptors>
@@ -34,7 +34,7 @@ You can achieve the same result if you define your filtering in your code-behind
 
 #### __C#__
 
-{{region gridview-overview-filtering_2}}
+{{region cs-gridview-overview-filtering_2}}
 
 	FilterDescriptor descriptor = new FilterDescriptor();
 	descriptor.Member = "Country";
@@ -45,7 +45,7 @@ You can achieve the same result if you define your filtering in your code-behind
 
 #### __VB.NET__
 
-{{region gridview-overview-filtering_3}}
+{{region vb-gridview-overview-filtering_3}}
 
 	Dim descriptor As New FilterDescriptor()
 	descriptor.Member = "Country"

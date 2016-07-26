@@ -24,7 +24,7 @@ Here is a list of the most important properties.
 
 #### __[XAML] Example 1: Define GridViewImageColumn in XAML.__
 
-{{region radgridview-columns-columntypes-image-column_0}}
+{{region xaml-radgridview-columns-columntypes-image-column_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">

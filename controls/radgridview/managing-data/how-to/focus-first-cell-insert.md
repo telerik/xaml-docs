@@ -18,7 +18,7 @@ This article shows how to make always the first column be focused when a new ite
 
 #### __C#__
 
-{{region gridview-how-to-focus-first-cell-insert_0}}
+{{region cs-gridview-how-to-focus-first-cell-insert_0}}
 
 	private void clubsGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)
 	{
@@ -29,7 +29,7 @@ This article shows how to make always the first column be focused when a new ite
 
 #### __VB.NET__
 
-{{region gridview-how-to-focus-first-cell-insert_1}}
+{{region vb-gridview-how-to-focus-first-cell-insert_1}}
 
 	Private Sub clubsGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)
 	   Dim grid = e.OwnerGridViewItemsControl

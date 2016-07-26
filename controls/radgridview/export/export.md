@@ -39,7 +39,7 @@ __Example 1__ shows how to display a "Save File" dialog asking the user to save 
 
 #### __[C#] Example 1: Save RadGridView`s content in Excel file__
 
-{{region gridview-export_0}}
+{{region cs-gridview-export_0}}
 
 	public MainPage()
 	{
@@ -75,7 +75,7 @@ __Example 1__ shows how to display a "Save File" dialog asking the user to save 
 
 #### __[VB.NET] Example 1: Save RadGridView`s content in Excel file__
 
-{{region gridview-export_1}}
+{{region vb-gridview-export_1}}
 
 	Public Sub New()
 	 InitializeComponent()
@@ -116,7 +116,7 @@ In addition, __RadGridView__ provides built-in methods to get the content of you
 
 #### __[C#] Example 2: Save content to String__
 
-{{region gridview-export_2}}
+{{region cs-gridview-export_2}}
 
 	using Telerik.Windows.Controls;
 	...
@@ -126,7 +126,7 @@ In addition, __RadGridView__ provides built-in methods to get the content of you
 
 #### __[VB.NET] Example 2: Save content to String__
 
-{{region gridview-export_3}}
+{{region vb-gridview-export_3}}
 
 	Imports Telerik.Windows.Controls
 	...

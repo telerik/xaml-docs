@@ -41,7 +41,7 @@ Another approach would be to set the __Language__ based on the __CurrentCulture_
 
 #### __C#__
 
-{{region gridview-troubleshooting-apply-currentculture_0}}
+{{region cs-gridview-troubleshooting-apply-currentculture_0}}
 
 	public MainWindow()
 	{
@@ -57,7 +57,7 @@ Another approach would be to set the __Language__ based on the __CurrentCulture_
 
 #### __C#__
 
-{{region gridview-troubleshooting-apply-currentculture_1}}
+{{region cs-gridview-troubleshooting-apply-currentculture_1}}
 
 	public MainPage()
 	{

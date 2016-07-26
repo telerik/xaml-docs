@@ -17,7 +17,7 @@ Here is an example of how to create a RadDateTimePicker and use it as a custom f
 
 #### __C#__
 
-{{region gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
+{{region cs-gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
 
 	public class MyDateTimeColumn : Telerik.Windows.Controls.GridViewDataColumn
 	{
@@ -66,7 +66,7 @@ Here is an example of how to create a RadDateTimePicker and use it as a custom f
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
+{{region vb-gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
 
 	Public Class MyDateTimeColumn
 		Inherits Telerik.Windows.Controls.GridViewDataColumn

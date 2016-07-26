@@ -40,7 +40,7 @@ The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewR
 
 #### __[XAML] Example 1: Applying the Lightweight Templates__
 
-{{region gridview-overview-lightweight-template_0}}
+{{region xaml-gridview-overview-lightweight-template_0}}
 
 	    <Window.Resources>
 	        <ResourceDictionary>
@@ -73,7 +73,7 @@ The CoreValidationStyles are an alternative of the standard __GridViewCell, Grid
 
 #### __[XAML] Example 2: Applying Lightweight Templates with Validation__
 
-{{region gridview-overview-lightweight-template_1}}
+{{region xaml-gridview-overview-lightweight-template_1}}
 
 	<Window.Resources>
 	        <ResourceDictionary>

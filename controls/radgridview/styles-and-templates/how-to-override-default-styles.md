@@ -28,7 +28,7 @@ You need to modify GridViewRow's template. [This topic]({%slug gridview-styling-
 
 #### __[XAML] Example 1: The Default Border When the Mouse Hovers GridViewRow__
 
-{{region how-to-override-default-gridview-styles_0}}
+{{region xaml-how-to-override-default-gridview-styles_0}}
 
 	<Border x:Name="Background_Over" 
 	        BorderBrush="{StaticResource ItemOuterBorder_Over}" 
@@ -43,7 +43,7 @@ Now you can change all the properties you want, e.g., the __BorderBrush__ value 
 
 #### __[XAML] Example 2: Modified The Default Border When the Mouse Hovers GridViewRow__
 
-{{region how-to-override-default-gridview-styles_1}}
+{{region xaml-how-to-override-default-gridview-styles_1}}
 
 	<Border x:Name="Background_Over" 
 	 BorderBrush="Blue" 
@@ -101,7 +101,7 @@ Finally, find the __Property="FocusVisualStyle"__ and set its value to null:{% e
 
 #### __[XAML] Example 4: Setting the FocusVisualStyle Property to null__
 
-{{region how-to-override-default-gridview-styles_3}}
+{{region xaml-how-to-override-default-gridview-styles_3}}
 
 	<Setter Property="FocusVisualStyle" Value="{x:Null}" />
 {{endregion}}

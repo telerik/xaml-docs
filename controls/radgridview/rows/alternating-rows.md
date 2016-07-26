@@ -18,7 +18,7 @@ In order to define the pattern of alternation, you have to set the __Alternation
 
 ![](images/RadGridView_Rows_Alternating_Rows_02.png)
 
-{{region radgridview-rows-alternating-rows_0}}
+{{region xaml-radgridview-rows-alternating-rows_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                         AlternationCount="2">
@@ -34,7 +34,7 @@ __Example 2__ shows __RadGridView__ with __AlternationCount__ set to __3__ and _
 
 #### __[XAML] Example 2: Setting the AlternateRowBackground Property:__
 
-{{region radgridview-rows-alternating-rows_1}}
+{{region xaml-radgridview-rows-alternating-rows_1}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                         AlternationCount="2"

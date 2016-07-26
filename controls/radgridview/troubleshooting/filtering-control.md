@@ -36,7 +36,7 @@ You might have problems extracting the control template of the Filtering control
 
 #### __XAML__
 
-{{region gridview-troubleshooting-filtering-control_0}}
+{{region xaml-gridview-troubleshooting-filtering-control_0}}
 
 	<Style TargetType="telerik:FilteringControl" >
         <Setter Property="Template">

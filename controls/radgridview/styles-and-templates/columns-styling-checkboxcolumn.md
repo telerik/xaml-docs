@@ -88,7 +88,7 @@ In order to center the __CheckBox__ in __GridViewCheckBoxColumn__, you can defin
 
 ####  __[XAML] Example 4: Centering the GridViewCheckBoxColumn__
 
-{{region gridview-checkbox-column_3}}
+{{region xaml-gridview-checkbox-column_3}}
 
 	<Style x:Key="MyCheckBoxColumnCellStyle" TargetType="telerik:GridViewCell">
 		<Setter Property="HorizontalContentAlignment" Value="Center"/>

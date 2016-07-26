@@ -28,7 +28,7 @@ Here is an example of filtering the __RadGridView__ via a __IColumnFilterDescrip
 
 #### __C#__
 
-{{region radgridview-filtering-icolumn-filter-descriptors_0}}
+{{region cs-radgridview-filtering-icolumn-filter-descriptors_0}}
 
     GridViewColumn cityColumn = this.playersGrid.Columns["City"];
     // Getting it from the property will create it and associate it with its column automatically.
@@ -43,7 +43,7 @@ Here is an example of filtering the __RadGridView__ via a __IColumnFilterDescrip
 
 #### __VB.NET__
 
-{{region radgridview-filtering-icolumn-filter-descriptors_1}}
+{{region vb-radgridview-filtering-icolumn-filter-descriptors_1}}
 
     Dim cityColumn As GridViewColumn = Me.playersGrid.Columns("City")
     ' Getting it from the property will create it and associate it with its column automatically.'
@@ -60,7 +60,7 @@ Here is the same example done by using the FieldFilter property.
 
 #### __C#__
 
-{{region radgridview-filtering-icolumn-filter-descriptors_2}}
+{{region cs-radgridview-filtering-icolumn-filter-descriptors_2}}
 
     GridViewColumn cityColumn = this.playersGrid.Columns["City"];
     // Getting it from the property will create it and associate it with its column automatically.
@@ -78,7 +78,7 @@ Here is the same example done by using the FieldFilter property.
 
 #### __VB.NET__
 
-{{region radgridview-filtering-icolumn-filter-descriptors_3}}
+{{region vb-radgridview-filtering-icolumn-filter-descriptors_3}}
 
     Dim cityColumn As GridViewColumn = Me.playersGrid.Columns("City")
     ' Getting it from the property will create it and associate it with its column automatically.'
@@ -114,7 +114,7 @@ Such a complex filtering expression might include filters for multiple fields, l
 
 #### __C#__
 
-{{region radgridview-filtering-icolumn-filter-descriptors_4}}
+{{region cs-radgridview-filtering-icolumn-filter-descriptors_4}}
     GridViewColumn cityColumn = this.playersGrid.Columns["City"];
     // Getting it from the property will create it and associate it with its column automatically
     IColumnFilterDescriptor cityDescriptor = cityColumn.ColumnFilterDescriptor;
@@ -135,7 +135,7 @@ Such a complex filtering expression might include filters for multiple fields, l
 
 #### __VB.NET__
 
-{{region radgridview-filtering-icolumn-filter-descriptors_5}}
+{{region vb-radgridview-filtering-icolumn-filter-descriptors_5}}
 
     Dim cityColumn As GridViewColumn = Me.playersGrid.Columns("City")
     ' Getting it from the property will create it and associate it with its column automatically'

@@ -15,7 +15,7 @@ If you want to filter a column that is data-bound to a custom type, you need to 
 
 #### __C#__
 
-{{region gridview-filtering-howto-filter-a-custom-type_0}}
+{{region cs-gridview-filtering-howto-filter-a-custom-type_0}}
 
 	public class Person
 	{
@@ -42,7 +42,7 @@ If you want to filter a column that is data-bound to a custom type, you need to 
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-filter-a-custom-type_0}}
+{{region vb-gridview-filtering-howto-filter-a-custom-type_0}}
 	
  	Public Class Person
 		Private ReadOnly m_name As String
@@ -73,7 +73,7 @@ The first thing that you need to do is implement the generic IEquatable interfac
 
 #### __C#__
 
-{{region gridview-filtering-howto-filter-a-custom-type_1}}
+{{region cs-gridview-filtering-howto-filter-a-custom-type_1}}
 
 	public class Person : IEquatable<Person>
 	{
@@ -121,7 +121,7 @@ The first thing that you need to do is implement the generic IEquatable interfac
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-filter-a-custom-type_1}}
+{{region vb-gridview-filtering-howto-filter-a-custom-type_1}}
 
 	Public Class Person
 		Implements IEquatable(Of Person)
@@ -169,7 +169,7 @@ Next you will need to define a TypeConverter for string conversions. When RadGri
 
 #### __C#__
 
-{{region gridview-filtering-howto-filter-a-custom-type_2}}
+{{region cs-gridview-filtering-howto-filter-a-custom-type_2}}
 
 	public class PersonConverter : System.ComponentModel.TypeConverter
 	{
@@ -219,7 +219,7 @@ Next you will need to define a TypeConverter for string conversions. When RadGri
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-filter-a-custom-type_2}}
+{{region vb-gridview-filtering-howto-filter-a-custom-type_2}}
 
 	Public Class PersonConverter
 		Inherits System.ComponentModel.TypeConverter
@@ -264,7 +264,7 @@ If you want to see the comparison filter operators (Is Less Than, etc.) you shou
 
 #### __C#__
 
-{{region gridview-filtering-howto-filter-a-custom-type_3}}
+{{region cs-gridview-filtering-howto-filter-a-custom-type_3}}
 
 	public static bool operator <(Person left, Person right)
 	{
@@ -289,7 +289,7 @@ If you want to see the comparison filter operators (Is Less Than, etc.) you shou
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-filter-a-custom-type_3}}
+{{region vb-gridview-filtering-howto-filter-a-custom-type_3}}
 
 	Public Shared Operator <(left As Person, right As Person) As Boolean
 		Return left.Age < right.Age

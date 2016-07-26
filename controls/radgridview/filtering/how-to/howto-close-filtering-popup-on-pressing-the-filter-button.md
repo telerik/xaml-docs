@@ -14,7 +14,7 @@ In order to close filtering Popup on pressing the fitler button, you need to ove
 
 #### __C#__
 
-{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_1}}
+{{region cs-gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_1}}
 
     class MyFilteringControl : FilteringControl
     {
@@ -39,7 +39,7 @@ In order to close filtering Popup on pressing the fitler button, you need to ove
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_3}}
+{{region vb-gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_3}}
 
     Class MyFilteringControl
         Inherits FilteringControl
@@ -65,7 +65,7 @@ Then you can apply it to a desired column like so:
 
 #### __C#__
 
-{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_2}}
+{{region cs-gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_2}}
 
 	this.clubsGrid.Columns["Name"].FilteringControl = new MyFilteringControl(this.clubsGrid.Columns["Name"]);
 {{endregion}}
@@ -73,7 +73,7 @@ Then you can apply it to a desired column like so:
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_4}}
+{{region vb-gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_4}}
 
 	Me.clubsGrid.Columns("Name").FilteringControl = New MyFilteringControl(Me.clubsGrid.Columns("Name"))s
 {{endregion}}

@@ -15,7 +15,7 @@ Displaying data in the __RadGridView__ depends on the data binding mechanism. Th
 
 #### __C#__
 
-{{region gridview-overview-data-binding_0}}
+{{region cs-gridview-overview-data-binding_0}}
 
 	this.radGridView.ItemsSource = GetObservableObjectData();
 {{endregion}}
@@ -23,7 +23,7 @@ Displaying data in the __RadGridView__ depends on the data binding mechanism. Th
 
 #### __VB.NET__
 
-{{region gridview-overview-data-binding_1}}
+{{region vb-gridview-overview-data-binding_1}}
 
 	Me.radGridView.ItemsSource = GetObservableObjectData()
 {{endregion}}

@@ -19,7 +19,7 @@ In this case each of the controls is defined in the main Grid and the ElementNam
 
 #### __XAML__
 
-{{region gridview-how-to-create-hierarchical-grid-with-ria_0}}
+{{region xaml-gridview-how-to-create-hierarchical-grid-with-ria_0}}
 
 	<Grid x:Name="LayoutRoot" Background="White">
 	 <telerik:RadDomainDataSource x:Name="customersDomainDataSource" QueryName="GetCustomers" AutoLoad="True">
@@ -54,7 +54,7 @@ Following this approach, you have to define the two RadDomainDataSource-s in the
 
 #### __XAML__
 
-{{region gridview-how-to-create-hierarchical-grid-with-ria_1}}
+{{region xaml-gridview-how-to-create-hierarchical-grid-with-ria_1}}
 	<UserControl x:Class="Hierarchy_RIA.MainPage">
 	 <UserControl.Resources>
 	  <telerik:RadDomainDataSource x:Name="customersDomainDataSource" QueryName="GetCustomers" AutoLoad="True">
@@ -96,7 +96,7 @@ As it can be seen, all objects of type Order are displayed in the child grid. If
 
 #### __C#__
 
-{{region gridview-how-to-create-hierarchical-grid-with-ria_2}}
+{{region cs-gridview-how-to-create-hierarchical-grid-with-ria_2}}
 	public IQueryable<Order> GetOrdersByCustomerID(string customerID)
 	  {
 	   var orders = from o in ObjectContext.Orders where o.CustomerID.StartsWith(customerID)  select o;
@@ -108,7 +108,7 @@ As it can be seen, all objects of type Order are displayed in the child grid. If
 
 #### __XAML__
 
-{{region gridview-how-to-create-hierarchical-grid-with-ria_3}}
+{{region xaml-gridview-how-to-create-hierarchical-grid-with-ria_3}}
 	<UserControl.Resources>
 	 <telerik:RadDomainDataSource x:Key="customers" QueryName="GetCustomers" AutoLoad="True">
 	  <telerik:RadDomainDataSource.DomainContext>

@@ -40,7 +40,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __XAML__
 
-{{region gridview-styles-and-templates-controlling-appearance_0}}
+{{region xaml-gridview-styles-and-templates-controlling-appearance_0}}
 
 	<telerik:RadGridView x:Name="radGridView" 
                          GridLinesVisibility="Vertical"
@@ -69,7 +69,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __XAML__
 
-{{region gridview-styles-and-templates-controlling-appearance_1}}
+{{region xaml-gridview-styles-and-templates-controlling-appearance_1}}
 
 	<telerik:RadGridView x:Name="radGridView" MinColumnWidth="20" MaxColumnWidth="100" ColumnWidth="80"/>
 {{endregion}}
@@ -96,7 +96,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __XAML__
 
-{{region gridview-styles-and-templates-controlling-appearance_2}}
+{{region xaml-gridview-styles-and-templates-controlling-appearance_2}}
 
 	<telerik:RadGridView x:Name="radGridView" 
                          RowIndicatorVisibility="Collapsed"
@@ -132,7 +132,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __XAML__
 
-{{region gridview-styles-and-templates-controlling-appearance_3}}
+{{region xaml-gridview-styles-and-templates-controlling-appearance_3}}
 
 	<telerik:RadGridView x:Name="radGridView"
                          ShowGroupFooters="True"

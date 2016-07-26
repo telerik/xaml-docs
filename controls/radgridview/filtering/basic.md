@@ -79,7 +79,7 @@ __Example 1__ shows how to specify the **FilterMemberPath** for the column to fi
 
 #### __[XAML] Example 1: Specifying the FilterMemberPath for a column__
 
-	{{region gridview-filtering-basic_0}}
+	{{region xaml-gridview-filtering-basic_0}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" FilterMemberPath="NameToFilterOn"/>
 	{{endregion}}
 

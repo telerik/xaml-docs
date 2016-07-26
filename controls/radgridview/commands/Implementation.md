@@ -17,7 +17,7 @@ Basically, there are two main scenarios to define a button - inside and outside 
 
 #### __XAML__
 
-{{region GridView-Commands-Implementation_3}}
+{{region xaml-GridView-Commands-Implementation_3}}
 
 	xmlns:telerikGrid="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView"
 {{endregion}}
@@ -26,7 +26,7 @@ Basically, there are two main scenarios to define a button - inside and outside 
 
 #### __XAML__
 
-{{region GridView-Commands-Implementation_0}}
+{{region xaml-GridView-Commands-Implementation_0}}
 
 	<telerik:GridViewColumn>
 	  <telerik:GridViewColumn.CellTemplate>
@@ -45,7 +45,7 @@ The other approach will be to define the __RadButton__ beyond the boundaries of 
 
 #### __XAML__
 
-{{region GridView-Commands-Implementation_1}}
+{{region xaml-GridView-Commands-Implementation_1}}
 
 	<telerik:RadButton Width="150" Content="Save insert/edit" 
 	                   Command="telerikGrid:RadGridViewCommands.CommitEdit" 
@@ -59,7 +59,7 @@ However, in both cases you will need to initialize the commands beforehand:
 
 #### __C#__
 
-{{region GridView-Commands-Implementation_2}}
+{{region cs-GridView-Commands-Implementation_2}}
 
 	public MainPage()
 	{

@@ -27,7 +27,7 @@ Add an __OrderBy__ clause in your query at server side or define a __SortDescrip
 
 #### __C#__
 
-{{region gridview-troubleshooting-paging_0}}
+{{region cs-gridview-troubleshooting-paging_0}}
 
 	public IQueryable<Order_Details_Extended> GetOrder_Details_Extendeds()
 	{
@@ -37,7 +37,7 @@ Add an __OrderBy__ clause in your query at server side or define a __SortDescrip
 
 #### __XAML__
 
-{{region gridview-troubleshooting-paging_1}}
+{{region xaml-gridview-troubleshooting-paging_1}}
 
 	<riaControls:DomainDataSource AutoLoad="True" 
 	    d:DesignData="{d:DesignInstance my:Order_Details_Extended, CreateList=true}" 
@@ -55,7 +55,7 @@ Add an __OrderBy__ clause in your query at server side or define a __SortDescrip
 
 #### __C#__
 
-{{region gridview-troubleshooting-paging_2}}
+{{region cs-gridview-troubleshooting-paging_2}}
 
 	order_Details_ExtendedDomainDataSource.SortDescriptors.Add(new 
 	SortDescriptor("OrderID", SortDirection.Ascending));

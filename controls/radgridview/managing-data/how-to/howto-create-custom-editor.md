@@ -25,7 +25,7 @@ This tutorial will demonstrate you the second approach by creating a column with
 
 #### __[C#] Example 1: Creating the RadColorPickerColumn class__
 
-	{{region radgridview-howto-create-custom-editor_0}}
+	{{region cs-radgridview-howto-create-custom-editor_0}}
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	}
@@ -34,7 +34,7 @@ This tutorial will demonstrate you the second approach by creating a column with
 
 #### __[VB.NET] Example 1: Creating the RadColorPickerColumn class__
 
-	{{region radgridview-howto-create-custom-editor_1}}
+	{{region vb-radgridview-howto-create-custom-editor_1}}
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 	End Class
@@ -47,7 +47,7 @@ There are several methods you should override:
 
 #### __[C#] Example 2: Overriding the CreateCellElement method__
 
-	{{region radgridview-howto-create-custom-editor_2}}
+	{{region cs-radgridview-howto-create-custom-editor_2}}
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement( GridViewCell cell, object dataItem )
@@ -74,7 +74,7 @@ There are several methods you should override:
 
 #### __[VB.NET] Example 2: Overriding the CreateCellElement method__
 
-	{{region radgridview-howto-create-custom-editor_3}}
+	{{region vb-radgridview-howto-create-custom-editor_3}}
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 	    Public Overloads Overrides Function CreateCellElement(ByVal cell As GridViewCell, ByVal dataItem As Object) As FrameworkElement
@@ -100,7 +100,7 @@ You should note two things here: first, a border with bound background to the co
 
 #### __[C#] Example 3: The ColorToBrushConverter class__
 
-	{{region radgridview-howto-create-custom-editor_4}}
+	{{region cs-radgridview-howto-create-custom-editor_4}}
 	public class ColorToBrushConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -121,7 +121,7 @@ You should note two things here: first, a border with bound background to the co
 
 #### __[VB.NET] Example 3: The ColorToBrushConverter class__
 
-	{{region radgridview-howto-create-custom-editor_5}}
+	{{region vb-radgridview-howto-create-custom-editor_5}}
 	Public Class ColorToBrushConverter
 	    Implements IValueConverter
 	    Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
@@ -141,7 +141,7 @@ You should note two things here: first, a border with bound background to the co
 *         
 #### __[C#] Example 4: Overriding the CreateCellEditElement method__
 
-	{{region radgridview-howto-create-custom-editor_6}}
+	{{region cs-radgridview-howto-create-custom-editor_6}}
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement( GridViewCell cell, object dataItem ){...}
@@ -165,7 +165,7 @@ You should note two things here: first, a border with bound background to the co
 
 #### __[VB.NET] Example 4: Overriding the CreateCellEditElement method__
 
-	{{region radgridview-howto-create-custom-editor_7}}
+	{{region vb-radgridview-howto-create-custom-editor_7}}
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 	    public override FrameworkElement CreateCellElement( GridViewCell cell, object dataItem ){...}
@@ -185,7 +185,7 @@ In this method an instance of a __RadColorPicker__ control is created and return
 
 #### __[C#] Example 5: The CreateValueBinding() method__
 
-	{{region radgridview-howto-create-custom-editor_8}}
+	{{region cs-radgridview-howto-create-custom-editor_8}}
 	private Binding CreateValueBinding()
 	{
 	    Binding valueBinding = new Binding();
@@ -200,7 +200,7 @@ In this method an instance of a __RadColorPicker__ control is created and return
 
 #### __[VB.NET] Example 5: The CreateValueBinding() method__
 
-	{{region radgridview-howto-create-custom-editor_9}}
+	{{region vb-radgridview-howto-create-custom-editor_9}}
 	Private Function CreateValueBinding() As Binding
 	    Dim valueBinding As New Binding()
 	    valueBinding.Mode = BindingMode.TwoWay
@@ -221,7 +221,7 @@ Another interesting line of the __CreateCellEditElement()__ method is: __cellEdi
 
 #### __[C#] Example 6: Overriding the CopyPropertiesFrom method__
 
-	{{region radgridview-howto-create-custom-editor_10}}
+	{{region cs-radgridview-howto-create-custom-editor_10}}
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement( GridViewCell cell, object dataItem ){...}
@@ -259,7 +259,7 @@ Another interesting line of the __CreateCellEditElement()__ method is: __cellEdi
 
 #### __[VB.NET] Example 6: Overriding the CopyPropertiesFrom method__
 
-	{{region radgridview-howto-create-custom-editor_11}}
+	{{region vb-radgridview-howto-create-custom-editor_11}}
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 	    public override FrameworkElement CreateCellElement( GridViewCell cell, object dataItem ){...}
@@ -291,7 +291,7 @@ Here is the full code for the __RadColorPickerColumn__ class:
 
 #### __[C#] Example 7: The final RadColorPickerColumn class__
 
-	{{region radgridview-howto-create-custom-editor_12}}
+	{{region cs-radgridview-howto-create-custom-editor_12}}
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement( GridViewCell cell, object dataItem )
@@ -356,7 +356,7 @@ Here is the full code for the __RadColorPickerColumn__ class:
 
 #### __[VB.NET] Example 7: The final RadColorPickerColumn class__
 
-	{{region radgridview-howto-create-custom-editor_13}}
+	{{region vb-radgridview-howto-create-custom-editor_13}}
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 	    Public Overloads Overrides Function CreateCellElement(ByVal cell As GridViewCell, ByVal dataItem As Object) As FrameworkElement
@@ -412,7 +412,7 @@ Here is the full code for the __RadColorPickerColumn__ class:
 
 #### __[XAML] Example 8: Defining a RadColorPickerColumn in XAML__
 
-	{{region radgridview-howto-create-custom-editor_14}}
+	{{region xaml-radgridview-howto-create-custom-editor_14}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <Grid.Resources>
 	        <example:ColorToBrushConverter x:Key="colorToBrushConverter" />
@@ -443,7 +443,7 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 
 #### __[C#] Example 9: Overriding the UpdateSourceWithEditorValue method__
 
-	{{region radgridview-howto-create-custom-editor_15}}
+	{{region cs-radgridview-howto-create-custom-editor_15}}
 	public override IList<string> UpdateSourceWithEditorValue(GridViewCell gridViewCell)
 	    {
 	        List<String> errors = new List<String>();
@@ -463,7 +463,7 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 
 #### __[VB.NET] Example 9: Overriding the UpdateSourceWithEditorValue method__
 
-	{{region radgridview-howto-create-custom-editor_16}}
+	{{region vb-radgridview-howto-create-custom-editor_16}}
     Public Overrides Function UpdateSourceWithEditorValue(gridViewCell As GridViewCell) As IList(Of String)
         Dim errors As New List(Of [String])()
         Dim editor As RadColorPicker = TryCast(gridViewCell.GetEditingElement(), RadColorPicker)
@@ -482,7 +482,7 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 
 #### __[C#] Example 10: Overriding the GetNewValueFromEditor method__
 
-	{{region radgridview-howto-create-custom-editor_17}}
+	{{region cs-radgridview-howto-create-custom-editor_17}}
 	public override object GetNewValueFromEditor( object editor )
 	{
 	    RadColorPicker colorPicker = editor as RadColorPicker;
@@ -499,7 +499,7 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 
 #### __[VB.NET] Example 10: Overriding the GetNewValueFromEditor method__
 
-	{{region radgridview-howto-create-custom-editor_18}}
+	{{region vb-radgridview-howto-create-custom-editor_18}}
     Public Overrides Function GetNewValueFromEditor(editor As Object) As Object
         Dim colorPicker As RadColorPicker = TryCast(editor, RadColorPicker)
         If colorPicker IsNot Nothing Then

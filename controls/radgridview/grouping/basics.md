@@ -55,7 +55,7 @@ For example, you can configure the column to be grouped on the Name property alt
 
 #### __XAML__
 
-{{region gridview-grouping-basics_3}}
+{{region xaml-gridview-grouping-basics_3}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
 	                            GroupMemberPath="Name" />
@@ -77,7 +77,7 @@ There are two ways to disable the built-in grouping of __RadGridView__. The firs
 
 #### __XAML__
 
-{{region gridview-grouping-basics_0}}
+{{region xaml-gridview-grouping-basics_0}}
 
 	<telerik:RadGridView x:Name="radGridView" ShowGroupPanel="False"/>
 {{endregion}}
@@ -89,7 +89,7 @@ The second way is to disable it on column level via __IsGroupable__ property. Wh
 
 #### __XAML__
 
-{{region gridview-grouping-basics_1}}
+{{region xaml-gridview-grouping-basics_1}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
                                 Header="Title"
@@ -99,14 +99,14 @@ The second way is to disable it on column level via __IsGroupable__ property. Wh
 
 #### __C#__
 
-{{region gridview-grouping-basics_2}}
+{{region cs-gridview-grouping-basics_2}}
 
 	this.radGridView.Columns[ "Title" ].IsGroupable = false;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-grouping-basics_3}}
+{{region vb-gridview-grouping-basics_3}}
 
 	Me.radGridView.Columns("Title").IsGroupable = False
 {{endregion}}

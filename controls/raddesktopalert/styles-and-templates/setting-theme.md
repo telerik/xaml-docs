@@ -33,7 +33,7 @@ You could do that using one of the following approaches:
 	
 	#### __[XAML] Example 1: Merging the .xaml files__
 
-	{{region raddesktopalert-styles-and-templates-setting-theme_0}}
+	{{region xaml-raddesktopalert-styles-and-templates-setting-theme_0}}
 		 <Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -53,7 +53,7 @@ You could do that using one of the following approaches:
 
 	#### __[XAML] Example 2: Merging the .xaml files__
 
-	{{region raddesktopalert-styles-and-templates-setting-theme_1}}
+	{{region xaml-raddesktopalert-styles-and-templates-setting-theme_1}}
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>

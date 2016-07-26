@@ -37,7 +37,7 @@ So, in order to set the __MenuItemsSource__ a sample date needs to be created as
 
 #### __[C#]  Preparing the data__
 
-{{region raddesktopalert-menuitemssource_0}}
+{{region cs-raddesktopalert-menuitemssource_0}}
 	public ObservableCollection<DesktopAlertMenuItem> GetDesktopAlertMenuItems()
 	{
 		ObservableCollection<DesktopAlertMenuItem> items = new ObservableCollection<DesktopAlertMenuItem>();
@@ -68,7 +68,7 @@ So, in order to set the __MenuItemsSource__ a sample date needs to be created as
 
 #### __[VB]  Preparing the data__
 
-{{region raddesktopalert-menuitemssource_0}}
+{{region vb-raddesktopalert-menuitemssource_0}}
 	Public Function GetDesktopAlertMenuItems() As ObservableCollection(Of DesktopAlertMenuItem)
 		Dim items As New ObservableCollection(Of DesktopAlertMenuItem)()
 		Dim copyItem As New DesktopAlertMenuItem() With {.Header = "Copy"}
@@ -88,13 +88,13 @@ Finally, you need to pass the generated collection to the __MenuItemsSource__:
 
 #### __[C#]  Setting MenuItemsSource__
 
-{{region raddesktopalert-menuitemssource_1}}
+{{region cs-raddesktopalert-menuitemssource_1}}
 	this.Alert.MenuItemsSource = GetDesktopAlertMenuItems();
 {{endregion}}
 
 #### __[VB]  Setting MenuItemsSource__
 
-{{region raddesktopalert-menuitemssource_1}}
+{{region vb-raddesktopalert-menuitemssource_1}}
 	Me.Alert.MenuItemsSource = GetDesktopAlertMenuItems()
 {{endregion}}
 
@@ -107,7 +107,7 @@ In order to visualize the data in the menu of __RadDeskotopAlert__ you could als
 
 #### __XAML Setting MenuItemsSource___
 
-{{region raddesktopalert-menuitemssource_0}}
+{{region xaml-raddesktopalert-menuitemssource_0}}
 	<Style x:Key="DesktopAlertMenuItemContainerStyle" TargetType="telerik:RadMenuItem">
 		<Setter Property="Header" Value="{Binding Header}"/>
 		<Setter Property="Command" Value="{Binding Command}" />
@@ -130,7 +130,7 @@ In order to use the created style with __RadDeskotopAlert__ , you have to set it
 
 #### __[C#]  Setting MenuItemContainerStyle__
 
-{{region raddesktopalert-menuitemssource_2}}
+{{region cs-raddesktopalert-menuitemssource_2}}
 	RadDesktopAlert Alert = new RadDesktopAlert();
 	this.Alert.ShowMenuButton = true;
 	this.Alert.MenuItemsSource = GetDesktopAlertMenuItems();
@@ -139,7 +139,7 @@ In order to use the created style with __RadDeskotopAlert__ , you have to set it
 
 #### __[VB]  Setting MenuItemContainerStyle__
 
-{{region raddesktopalert-menuitemssource_2}}
+{{region vb-raddesktopalert-menuitemssource_2}}
 	Dim Alert As New RadDesktopAlert()
 	Me.Alert.ShowMenuButton = True
 	Me.Alert.MenuItemsSource = GetDesktopAlertMenuItems()

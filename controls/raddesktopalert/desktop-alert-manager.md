@@ -16,7 +16,7 @@ You can initialize __RadDesktopAlertManager__ using one of the following constru
 
 #### __[C#] Initializing of RadDesktopAlertManager__
 
-{{region raddesktopalert-desktop-alert-manager_0}}
+{{region cs-raddesktopalert-desktop-alert-manager_0}}
 	var manager = new RadDesktopAlertManager();
 	...
 	var manager = new RadDesktopAlertManager(AlertScreenPosition.BottomCenter);
@@ -30,7 +30,7 @@ You can initialize __RadDesktopAlertManager__ using one of the following constru
 
 #### __[VB] Initializing of RadDesktopAlertManager__
 
-{{region raddesktopalert-desktop-alert-manager_0}}
+{{region vb-raddesktopalert-desktop-alert-manager_0}}
 	Dim manager = New RadDesktopAlertManager()
 	...
 	Dim manager = New RadDesktopAlertManager(AlertScreenPosition.BottomCenter)
@@ -70,7 +70,7 @@ __Example 1__ demonstrates how to visualize __RadDesktopAlert__.
 
 #### __[C#] Example 1:  Showing RadDesktopAlert__
 
-{{region raddesktopalert-desktop-alert-manager_0}}
+{{region cs-raddesktopalert-desktop-alert-manager_0}}
 	var alert = new RadDesktopAlert
 	{
 		Header = "MAIL NOTIFICATION",
@@ -83,7 +83,7 @@ __Example 1__ demonstrates how to visualize __RadDesktopAlert__.
 
 #### __[VB] Example 1:  Showing RadDesktopAlert__
 
-{{region raddesktopalert-desktop-alert-manager_0}}
+{{region vb-raddesktopalert-desktop-alert-manager_0}}
 	Dim alert = New RadDesktopAlert() With {
 		 .Header = "MAIL NOTIFICATION",
 		 .Content = "Hello, Here are two things that we noticed today on our daily meeting.",
@@ -97,7 +97,7 @@ By default, __RadDesktopAlert__ is shown and closed with an animation. However, 
 
 #### __[C#]Example 2:  Show RadDesktopAlert without animation__
 
-{{region raddesktopalert-desktop-alert-manager_1}}
+{{region cs-raddesktopalert-desktop-alert-manager_1}}
 	manager.ShowAlert(new DesktopAlertParameters
 	{
 		Header = "New mail",
@@ -110,7 +110,7 @@ By default, __RadDesktopAlert__ is shown and closed with an animation. However, 
 
 #### __[VB] Example 2:  Show RadDesktopAlert without animation__
 
-{{region raddesktopalert-desktop-alert-manager_1}}
+{{region vb-raddesktopalert-desktop-alert-manager_1}}
 	manager.ShowAlert(New DesktopAlertParameters() With {
 		 .Header = "New mail",
 		 .Content = "Hello, Here are two things that we noticed today on our meeting",
@@ -132,7 +132,7 @@ __Example 3__ demonstrates how to display an alert in a MVVM scenario:
 
 #### __[C#]Example 3:  Creating RadDesktopAlert in MVVM__
 
-{{region raddesktopalert-desktop-alert-manager_2}}
+{{region cs-raddesktopalert-desktop-alert-manager_2}}
 	manager.ShowAlert(new DesktopAlertParameters
 	{
 		Header = "New mail",
@@ -145,7 +145,7 @@ __Example 3__ demonstrates how to display an alert in a MVVM scenario:
 
 #### __[VB] Example 3:  Creating RadDesktopAlert in MVVM__
 
-{{region raddesktopalert-desktop-alert-manager_2}}
+{{region vb-raddesktopalert-desktop-alert-manager_2}}
 	manager.ShowAlert(New DesktopAlertParameters() With {
 		 .Header = "New mail",
 		 .Content = "Hello, Here are two things that we noticed today on our meeting",
@@ -167,12 +167,12 @@ __Example 4__ shows how to close __RadDesktopAlert__:
 
 #### __[C#] Example 4:  Closing single RadDesktopAlert__
 
-{{region raddesktopalert-desktop-alert-manager_3}}
+{{region cs-raddesktopalert-desktop-alert-manager_3}}
 	manager.CloseAlert(alert);
 {{endregion}}
 
 #### __[VB] Example 4:  Closing single RadDesktopAlert__
-{{region raddesktopalert-desktop-alert-manager_3}}
+{{region vb-raddesktopalert-desktop-alert-manager_3}}
 	manager.CloseAlert(alert)
 {{endregion}}
 
@@ -182,13 +182,13 @@ __Example 5__ demonstrates how to close all opened __RadDesktopAlerts__:
 
 #### __[C#]Example 5:  Closing all RadDesktopAlerts__
 
-{{region raddesktopalert-desktop-alert-manager_4}}
+{{region cs-raddesktopalert-desktop-alert-manager_4}}
 	manager.CloseAllAlerts();
 {{endregion}}
 
 #### __[VB]Example 5:  Closing all RadDesktopAlerts__
 
-{{region raddesktopalert-desktop-alert-manager_4}}
+{{region vb-raddesktopalert-desktop-alert-manager_4}}
 	manager.CloseAllAlerts()
 {{endregion}}
 
@@ -198,14 +198,14 @@ __Example 6__ demonstrates how to close RadDesktopAlert without using an animati
 
 #### __[C#]Example 6:  Closing RadDesktopAlert without an animation__
 
-{{region raddesktopalert-desktop-alert-manager_5}}
+{{region cs-raddesktopalert-desktop-alert-manager_5}}
 	Manager.CloseAlert(this.Alert, false);
 	Manager.CloseAllAlerts(false);
 {{endregion}}
 
 #### __[VB]Example 6:  Closing RadDesktopAlert without an animation__
 
-{{region raddesktopalert-desktop-alert-manager_5}}
+{{region vb-raddesktopalert-desktop-alert-manager_5}}
 	Me.Manager.CloseAlert(Me.Alert, False)
 	Me.Manager.CloseAllAlerts(False)
 {{endregion}}
@@ -218,12 +218,12 @@ __Example 7__ shows how to get all __RadDesktopAlert__:
 
 #### __[C#] Example 7:  Getting all opened RadDesktopAlerts__
 
-{{region raddesktopalert-desktop-alert-manager_5}}
+{{region cs-raddesktopalert-desktop-alert-manager_5}}
 	IEnumerable alerts = this.Manager.GetAllAlerts();
 {{endregion}}
 
 #### __[VB] Example 7:  Getting all opened RadDesktopAlerts__
-{{region raddesktopalert-desktop-alert-manager_6}}
+{{region vb-raddesktopalert-desktop-alert-manager_6}}
 	Dim alerts As IEnumerable = Me.Manager.GetAllAlerts()
 {{endregion}}
 
@@ -235,7 +235,7 @@ __Example 8__ demonstates how a __FadeAnimation__ could be used:
 
 #### __[C#] Example 8: Applying ShowAnimation__
 
-{{region raddesktopalert-desktop-alert-manager_7}}
+{{region cs-raddesktopalert-desktop-alert-manager_7}}
 	manager.ShowAnimation = new FadeAnimation
 	{ 
 		Direction = AnimationDirection.Out, 
@@ -247,7 +247,7 @@ __Example 8__ demonstates how a __FadeAnimation__ could be used:
 
 #### __[VB] Example 8: Applying ShowAnimation__
 
-{{region raddesktopalert-desktop-alert-manager_7}}
+{{region vb-raddesktopalert-desktop-alert-manager_7}}
 	manager.ShowAnimation = New FadeAnimation() With 
 	{ 
 		 .Direction = AnimationDirection.Out, 
@@ -287,13 +287,13 @@ With Q3 2015 released version of WPF a brand new property __AlertsReorderAnimati
 
 #### __[C#]  Setting AlertsReorderAnimationDuration__
 
-{{region raddesktopalert-desktop-alert-manager_8}}
+{{region cs-raddesktopalert-desktop-alert-manager_8}}
 	this.Manager.AlertsReorderAnimationDuration = 1000;
 {{endregion}}
 
 #### __[VB]  Setting AlertsReorderAnimationDuration__
 
-{{region raddesktopalert-desktop-alert-manager_8}}
+{{region vb-raddesktopalert-desktop-alert-manager_8}}
 	Me.Manager.AlertsReorderAnimationDuration = 1000
 {{endregion}}
 

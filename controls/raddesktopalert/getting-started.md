@@ -21,7 +21,7 @@ You can include the control in your page by either dragging it from the toolbox 
 
 #### __[C#]  Creating RadDesktopAlert__
 
-{{region raddesktopalert-getting-started_0}}
+{{region cs-raddesktopalert-getting-started_0}}
 	var alert = new RadDesktopAlert();
 	alert.Header = "MAIL NOTIFICATION";
 	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting.";
@@ -30,7 +30,7 @@ You can include the control in your page by either dragging it from the toolbox 
 
 #### __[VB]  Creating RadDesktopAlert__
 
-{{region raddesktopalert-getting-started_0}}
+{{region vb-raddesktopalert-getting-started_0}}
 	Dim alert = New RadDesktopAlert()
 	alert.Header = "MAIL NOTIFICATION"
 	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting."
@@ -43,14 +43,14 @@ In order to visualize it, a new instance of __RadDesktopAlertManager__ should be
 
 #### __[C#]  Showing RadDesktopAlert__
 
-{{region raddesktopalert-getting-started_1}}
+{{region cs-raddesktopalert-getting-started_1}}
 	RadDesktopAlertManager manager = new RadDesktopAlertManager();
 	manager.ShowAlert(alert);
 {{endregion}}
 
 #### __[VB]  Showing RadDesktopAlert__
 
-{{region raddesktopalert-getting-started_1}}
+{{region vb-raddesktopalert-getting-started_1}}
 	Dim manager As New RadDesktopAlertManager()
 	manager.ShowAlert(alert)
 {{endregion}}

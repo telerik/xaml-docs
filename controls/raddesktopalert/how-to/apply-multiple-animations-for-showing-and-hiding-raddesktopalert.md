@@ -36,7 +36,7 @@ The next code snippet shows how to apply an __AnimationGroup__ to both the __Sho
 
 #### __[C#] Applying AnimationGroup__
 
-{{region raddesktopalert-how-to-apply-animation-group_1}}
+{{region cs-raddesktopalert-how-to-apply-animation-group_1}}
 	AnimationGroup groupIn = new AnimationGroup();
 	groupIn.Children.Add(new FadeAnimation() { Direction = AnimationDirection.In });
 	groupIn.Children.Add(new ScaleAnimation() { Direction = AnimationDirection.In, MinScale = 0.9 });
@@ -51,7 +51,7 @@ The next code snippet shows how to apply an __AnimationGroup__ to both the __Sho
 
 #### __[VB] Applying AnimationGroup__
 
-{{region raddesktopalert-how-to-apply-animation-group_2}}
+{{region vb-raddesktopalert-how-to-apply-animation-group_2}}
 	Dim groupIn As New AnimationGroup() 
 	groupIn.Children.Add(New FadeAnimation() With { Key .Direction = AnimationDirection.[In] })
 	groupIn.Children.Add(New ScaleAnimation() With { Key .Direction = AnimationDirection.[In], Key .MinScale = 0.9 })

@@ -11,8 +11,6 @@ site_name: Silverlight
 
 # End-User Capabilities
 
-
-
 The user is able to do the following things with the __RadUpload__ control:
 
 * [Select files for upload](#Selecting_Files_for_Upload)
@@ -71,12 +69,8 @@ To resume the upload the user has to click the __"Resume"__ button.
 
 ![](images/RadUpload_End_User_Capabilities_06.png)
 
-# See Also
-
+## See Also
  * [Visual Structure]({%slug radupload-visual-structure%})
-
  * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
-
  * [Events - Overview]({%slug radupload-events-overview%})
-
  * [Localization]({%slug radupload-localization%})

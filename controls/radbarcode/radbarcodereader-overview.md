@@ -19,8 +19,8 @@ When decoding a barcode image, the control will either display the type and text
 
 And here is the XAML that produces the result:        
 
-#### __XAML__
-{{region radbarcodereader-overview}}
+#### __[XAML] Example 1: Barcode reader definition__  
+{{region xaml-radbarcodereader-overview-0}}
 	<!--The values below are the default ones, so you do not need to specify them-->
 	<telerik:RadBarcodeReader OpenButtonText="Choose Image" DecodeButtonText="Decode Image"/>
 {{endregion}}

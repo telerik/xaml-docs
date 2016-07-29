@@ -37,6 +37,6 @@ Here is a snapshot of the template generated in Expression Blend.
 
 		* __DisabledVisual__ - represents the visual element, that appears when the __RadMaskedInput__ control is disabled, and is of type __Border__
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [Common Features]({%slug radmaskedinput-features-common%})

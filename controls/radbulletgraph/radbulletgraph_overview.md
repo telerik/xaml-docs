@@ -40,16 +40,14 @@ There are two main types of bullet graphs - __horizontal__ and __vertical__, dep
 
 Below is a basic declaration of a __horizontal__ graph:
 
-#### __C#__
-{{region radbulletgraph_overview_0}}
-	<telerik:RadHorizontalBulletGraph FeaturedMeasure="330" ComparativeMeasure="550"> 
-	</telerik:RadHorizontalBulletGraph>
+#### __[XAML] Example 1: Defining a horizontal bulletgraph control__  
+{{region xaml-radbulletgraph-overview-0}}
+	<telerik:RadHorizontalBulletGraph FeaturedMeasure="330" ComparativeMeasure="550" />
 {{endregion}}
 
 We can declare a __vertical__ bullet graph as shown in the code below:
 
-#### __C#__
-{{region radbulletgraph_overview_1}}
-	<telerik:RadVerticalBulletGraph FeaturedMeasure="270" ComparativeMeasure="250">                   
-	</telerik:RadVerticalBulletGraph>
+#### __[XAML] Example 2: Defining a horizontal bulletgraph control__  
+{{region xaml-radbulletgraph-overview-1}}
+	<telerik:RadVerticalBulletGraph FeaturedMeasure="270" ComparativeMeasure="250" />
 {{endregion}}

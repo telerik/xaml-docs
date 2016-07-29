@@ -28,15 +28,15 @@ The __MaskedInputExtensions__ class allows you to further customize the __Masked
 
 * The __MaskedInputExtensions.Maximum__ property allows you to define the maximum value that can be entered in the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls.            
 
-	#### __[XAML] Example 1: Setting MaskedInputExtensions.Maximum example__
-	{{region radmaskedinput-features-extensions-0}}		
+	#### __[XAML] Example 1: Setting MaskedInputExtensions.Maximum attached property__
+	{{region xaml-radmaskedinput-features-extensions-0}}
 		<telerik:RadMaskedNumericInput maskedInput:MaskedInputExtensions.Maximum="1000" />
 	{{endregion}}
 
 * The __MaskedInputExtensions.Minimum__ property allows you to define the minimum value that can be entered in the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls. You can use it to restrict the user input to positive numbers only.            
 
-	#### __[XAML] Example 2: Setting MaskedInputExtensions.Minimum example__
-	{{region radmaskedinput-features-extensions-1}}		
+	#### __[XAML] Example 2: Setting MaskedInputExtensions.Minimum attached property__
+	{{region xaml-radmaskedinput-features-extensions-1}}
 		<telerik:RadMaskedNumericInput maskedInput:MaskedInputExtensions.Minimum="0" />
 	{{endregion}}
 
@@ -44,25 +44,26 @@ The __MaskedInputExtensions__ class allows you to further customize the __Masked
 
 * The __MaskedInputExtensions.MaxTextLength__ property allows you to define the maximum length of the input entered in the __RadMaskedTextInput__ control.            
 
-	#### __[XAML] Example 3: Setting MaskedInputExtensions.MaxTextLength example__
-	{{region radmaskedinput-features-extensions-2}}		
-		<telerik:RadMaskedTextInput HorizontalAlignment="Center" 
+	#### __[XAML] Example 3: Setting MaskedInputExtensions.MaxTextLength attached property__
+	{{region xaml-radmaskedinput-features-extensions-2}}
+		<telerik:RadMaskedTextInput HorizontalAlignment="Center"
 									VerticalAlignment="Top"
 									maskedInput:MaskedInputExtensions.MaxTextLength="8"
 									Value="sample text" />
 	{{endregion}}
 
-	#### __Figure 1: MaskedInputExtensions.MaxTextLength example__  
+	#### __Figure 1: MaskedInputExtensions.MaxTextLength attached property example__  
 	![radmaskedinput-features-extensions-max Length](images/radmaskedinput_features_extensions_maxLength.png)
 
 * The __MaskedInputExtensions.MinTextLength__ property allows you to define the minimum length of the input entered in the __RadMaskedTextInput__ control.            
 
-	#### __[XAML] Example 4: Setting MaskedInputExtensions.MinTextLength example__
-	{{region radmaskedinput-features-extensions-3}}		
-		<telerik:RadMaskedTextInput HorizontalAlignment="Center" 
+	#### __[XAML] Example 4: Setting MaskedInputExtensions.MinTextLength attached property__
+	{{region xaml-radmaskedinput-features-extensions-3}}
+		<telerik:RadMaskedTextInput HorizontalAlignment="Center"
 									VerticalAlignment="Top"
 									maskedInput:MaskedInputExtensions.MinTextLength="3"
 									Value="sample text" />
+
 	{{endregion}}
 
 ## Use the Culture Settings to Configure the Number of Digits After the Decimal Symbol
@@ -71,9 +72,9 @@ The __MaskedInputExtensions.UseCultureDigits__ property allows you to configure 
 
 If you set the __MaskedInputExtensions.UseCultureDigits__ property to __True__, the number of digits displayed after the decimal symbol will depend on the culture settings.        
 
-#### __[XAML] Example 5: Setting MaskedInputExtensions.UseCultureDigits example__
-{{region radmaskedinput-features-extensions-4}}	
-	<telerik:RadMaskedNumericInput maskedInput:MaskedInputExtensions.UseCultureDigits="True" />
+#### __[XAML] Example 5: Setting MaskedInputExtensions.UseCultureDigits attached property__
+{{region xaml-radmaskedinput-features-extensions-4}}
+	  <telerik:RadMaskedNumericInput maskedInput:MaskedInputExtensions.UseCultureDigits="True" />
 {{endregion}}
 
 >Please keep in mind that when you set the __RadMaskedInputExtensions.UseCultureDigits__ property to __True__, if you want to define a __Mask__ for the control, it has to be set after the __.UseCultureDigits__ property in the definition of the __RadMaskedInput__ control.          
@@ -88,8 +89,8 @@ It is an enumeration of type __SelectionStartOnSignChanged__ that exposes the fo
 
 * __Unchanged__ - when the sign of the value is changed, the caret isn't moved. This is the default behavior of the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls.            
 
-#### __[XAML] Example 6: Setting MaskedInputExtensions.SelectionStartOnSignChanged example__
-{{region radmaskedinput-features-extensions-5}}	
+#### __[XAML] Example 6: Setting MaskedInputExtensions.SelectionStartOnSignChanged attached property__
+{{region xaml-radmaskedinput-features-extensions-5}}
 	<StackPanel Background="White">
 		<telerik:RadMaskedNumericInput maskedInput:MaskedInputExtensions.SelectionStartOnSignChanged="Beginning" />
 		<telerik:RadMaskedNumericInput maskedInput:MaskedInputExtensions.SelectionStartOnSignChanged="Unchanged" />
@@ -108,8 +109,8 @@ The major difference that this property makes is when you initially have a negat
 
 The __MaskedInputExtensions.AllowMinusOnNullValue__ property allows you to display the minus sign when the value of the control is set to __Null__ and you press the OemMinus/Subtract key on the keyboard. The default value of the attached property is set to __False__, which means that the described behavior is disabled by default.
 
-#### __[XAML] Example 9: Setting MaskedInputExtensions.AllowMinusOnNullValue example__
-{{region radmaskedinput-features-extension-06}}	
+#### __[XAML] Example 7: Setting MaskedInputExtensions.AllowMinusOnNullValue attached property__
+{{region xaml-radmaskedinput-features-extensions-6}}
 	<telerik:RadMaskedNumericInput Mask="" maskedInput:MaskedInputExtensions.AllowMinusOnNullValue="True" />
 {{endregion}}
 
@@ -117,7 +118,7 @@ The __MaskedInputExtensions.AllowMinusOnNullValue__ property allows you to displ
 
 When the property is set to __True__ and the __Value__ is set to __null__, the minus symbol will be included in the Text property, however, the value will remain null. You can see the example in *Figure 2*.
 
-#### __Figure 2: MaskedInputExtensions.AllowMinusOnNullValue example__
+#### __Figure 2: MaskedInputExtensions.AllowMinusOnNullValue attached property example__
 ![](images/radmaskedinput_features_extensions_01.png)
 
 By default, the minus sign cannot be deleted on press of the __Delete__ or the __Backspace__ key. To change this behavior, you will need to create a custom masked input class that derives from either the RadMaskedNumeric or RadMaskedCurrencyInput control and override its CanModifyChar, HandleDeleteKeyNoMask and HandleBackKeyNoMask methods. This approach is demonstrated in the [MinusKeyCustomizations](https://github.com/telerik/xaml-sdk/tree/master/MaskedInput/MinusKeyCustomizations) SDK example.
@@ -128,14 +129,14 @@ By default, the minus sign cannot be deleted on press of the __Delete__ or the _
 
 The keyboard navigation of the RadMaskedInput suite of controls can be controlled by three properties: the native __IsTabStop__, the __SectionsNavigationMode__ and the attached __IsEditorTabStop__ properties, as shown in Example 7.         
 
-#### __[XAML] Example 7: Setting MaskedInputExtensions.IsEditorTabStop example__
-{{region radmaskedinput-features-keyboard-mouse_1}}	
+#### __[XAML] Example 8: Setting MaskedInputExtensions.IsEditorTabStop attached property__
+{{region xaml-radmaskedinput-features-extensions-7}}
 	<StackPanel>
-	    <telerik:RadMaskedTextInput SectionsNavigationMode="None" />
-	    <telerik:RadMaskedTextInput IsTabStop="False"
-	                                SectionsNavigationMode="None"
-	                                maskedInput:MaskedInputExtensions.IsEditorTabStop="False" />
-	    <telerik:RadMaskedTextInput SectionsNavigationMode="None" />
+		<telerik:RadMaskedTextInput SectionsNavigationMode="None" />
+		<telerik:RadMaskedTextInput IsTabStop="False"
+							SectionsNavigationMode="None"
+							maskedInput:MaskedInputExtensions.IsEditorTabStop="False" />
+		<telerik:RadMaskedTextInput SectionsNavigationMode="None" />
 	</StackPanel>
 {{endregion}}
 
@@ -145,12 +146,13 @@ You can find more information about the keyboard navigation in the [Keyboard and
 
 The __MaskedInputExtensions.CaretToEndOfTextOnFocus__ property allows you to configure the RadMaskedTextInput control, whether to place the caret at the beginning of the text or at the end of it, when the control has focus. If you set it to __True__, the caret will be placed at the end of the text, as shown in Example 8.
 
-#### __[XAML] Example 8: Setting MaskedInputExtensions.CaretToEndOfTextOnFocus example__
+#### __[XAML] Example 9: Setting MaskedInputExtensions.CaretToEndOfTextOnFocus attached property__
+{{region xaml-radmaskedinput-features-extensions-8}}
 	<telerik:RadMaskedTextInput maskedInput:MaskedInputExtensions.CaretToEndOfTextOnFocus="True"/>
-
+{{endregion}}
 >This property is designed to work only for the RadMaskedTextInput control.
 
-# See Also
+## See Also
  * [Common Features]({%slug radmaskedinput-features-common%})
  * [Keyboard navigation]({%slug radmaskedinput-features-keyboard-mouse%})
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})

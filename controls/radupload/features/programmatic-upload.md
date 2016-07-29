@@ -11,10 +11,6 @@ site_name: Silverlight
 
 # Programmatic Upload
 
-
-
-## 
-
 You can achieve programmatic upload by using the different methods exposed by the __RadUpload__ control. Here is a list of them:
 
 * __CancelUpload()__ - cancels the current upload. When the upload gets canceled the __UploadCanceled__ event is raised.
@@ -27,20 +23,15 @@ You can achieve programmatic upload by using the different methods exposed by th
 
 * __StartUpload()__ - starts the upload. When the upload gets started the __UploadStarted__ event is raised.
 
->tipTo learn more about the events of the __RadUpload__ read [here]({%slug radupload-events-overview%}).
+>tip To learn more about the events of the __RadUpload__ read [here]({%slug radupload-events-overview%}).
 
->tipYou can use the __Items.Count__ property to see if any files have been selected for upload, before starting it.
+>tip You can use the __Items.Count__ property to see if any files have been selected for upload, before starting it.
 
-# See Also
-
+## See Also  
  * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
-
  * [Upload Handler]({%slug radupload-features-upload-handler%})
-
  * [Upload Service Parameters]({%slug radupload-features-upload-service-parameters%})
-
  * [Rename a File]({%slug radupload-how-to-rename-a-file%})
-
  * [Hide the Buttons]({%slug radupload-how-to-hide-the-buttons%})
-
  * [Limit the Upload Speed]({%slug radupload-how-to-limit-the-upload-speed%})
+ 

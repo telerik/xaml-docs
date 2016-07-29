@@ -24,8 +24,8 @@ The __RadButtons__ provide you with a standard __ICommandSource__ implementation
 
 Here is an example of a command usage in a MVVM scenario. The command is located in the __SampleViewModel__ class.		
 
-#### __C#__
-{{region radbuttons-features-commands_0}}
+#### __[C#] Example 1: Defining a command__
+{{region cs-radbuttons-features-commands_0}}
 	public class SampleViewModel
 	{
 	   public SampleViewModel()
@@ -39,36 +39,39 @@ Here is an example of a command usage in a MVVM scenario. The command is located
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radbuttons-features-commands_1}}
+#### __[VB.NET] Example 1: Defining a command__
+{{region vb-radbuttons-features-commands_1}}
 	Public Class SampleViewModel
-	 Public Sub New()
-	 End Sub
-	 Public Property MyCommand() As ICommand
-	  Get
-	  End Get
-	  Set
-	  End Set
-	 End Property
+	    Public Sub New()
+	    End Sub
+	    Public Property MyCommand() As ICommand
+	        Get
+	            Return m_MyCommand
+	        End Get
+	        Set(value As ICommand)
+	            m_MyCommand = Value
+	        End Set
+	    End Property
+	    Private m_MyCommand As ICommand
 	End Class
 {{endregion}}
 
 Set the __SampleViewModel__ as the __DataContext__ of your __UserControl__.		
 
-#### __C#__
-{{region radbuttons-features-commands_2}}
+#### __[C#] Example 2: Setting up the DataContext__  
+{{region cs-radbuttons-features-commands_2}}
 	public Example()
 	{
-	   InitializeComponent();
-	   this.DataContext = new SampleViewModel();
+	    InitializeComponent();
+	    this.DataContext = new SampleViewModel();
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radbuttons-features-commands_3}}
+#### __[VB.NET] Example 2: Setting up the DataContext__  
+{{region vb-radbuttons-features-commands_3}}
 	Public Sub New()
-	 InitializeComponent()
-	 Me.DataContext = New SampleViewModel()
+	    InitializeComponent()
+	    Me.DataContext = New SampleViewModel()
 	End Sub
 {{endregion}}
 
@@ -78,16 +81,16 @@ In the XAML provide the bindings for the command and set the command parameter.
 
 >Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
-#### __XAML__
-{{region radbuttons-features-commands_4}}
-	<telerik:RadButton Text="My Button"
+#### __[XAML] Example 3: Setting up the Command and CommandParameter properties__  
+{{region xaml-radbuttons-features-commands_4}}
+	<telerik:RadButton Content="My Button"
 	                   Command="{Binding MyCommand}"
 	                   CommandParameter="ParameterValue" />
-	{{endregion}}
+{{endregion}}
 
 >This is a very basic sample, but you can apply this approach to any type of commands that implement the __ICommand__ interface.		  
 
-# See Also
+## See Also
  * [Appearance]({%slug radbuttons-features-appearance%})
  * [Button]({%slug radbuttons-features-button%})
  * [Events]({%slug radbuttons-events%})

@@ -16,7 +16,7 @@ You can modify the look of a __RadMaskedInput__ control by either changing some 
 
 >tip To find out how to modify the __RadControls'__ theme read this [topic](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html).        
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [Common Features]({%slug radmaskedinput-features-common%})
  * [Template Structure]({%slug radmaskedinput-styles-templates-template-structure%})

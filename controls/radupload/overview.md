@@ -14,9 +14,6 @@ site_name: Silverlight
 ![upload sl icon](images/upload_sl_icon.png)
 
 Thank you for choosing Telerik __RadUpload__!
-	  
-
-## 
 
 With __RadUpload__ you will save the end-user’s time and efforts, utilizing its multiple files upload and automatic upload function. With this dedicated file-upload control you can achieve fast performance, since it allocates a minimum amount of server memory, while enabling optimized and fully configurable single and multi-file uploads.
 ![](images/RadUpload_Overview_02.png)
@@ -40,18 +37,11 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 * __Codeless Test Automation__- now you can record, execute and debug functional tests without leaving the familiar Visual Studio environment. Telerik [WebUI Test Studio](http://www.telerik.com/products/web-testing-tools/webui-test-studio-features.aspx) is an advanced click and play web application testing tool specialized for automating both AJAX and Silverlight applications. The Studio ships with special translators for Telerik RadControls for ASP.NET AJAX and Silverlight.
 			
 
-# See Also
-
+## See Also
  * [Visual Structure]({%slug radupload-visual-structure%})
-
  * [Getting Started]({%slug radupload-getting-started%})
-
  * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
-
  * [Events - Overview]({%slug radupload-events-overview%})
-
  * [Styles and Templates - Overview]({%slug radupload-styles-and-templates-overview%})
-
  * [End-User Capabilities]({%slug radupload-end-user-capabilities%})
-
  * [Localization]({%slug radupload-localization%})

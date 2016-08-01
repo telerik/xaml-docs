@@ -14,10 +14,10 @@ There is no property that disables the mouse wheel in RadCoverFlow, but you coul
 
 #### __C#__
 
-{{region coverflow-disable-mousewheel_0}}
+{{region cs-coverflow-disable-mousewheel_0}}
 	public class CoverFlow : RadCoverFlow
 	{
-		protected override void OnMouseWheel(MouseWheelEventArgs e)
+		protected override void OnMouseWheel(System.Windows.Input.MouseWheelEventArgs e)
 		{
 			//base.OnMouseWheel(e);
 		}
@@ -28,7 +28,7 @@ Then use the new control in XAML:
 
 #### __XAML__
 
-{{region coverflow-disable-mousewheel_1}}
+{{region xaml-coverflow-disable-mousewheel_1}}
 	<local:CoverFlow>
 	       <Rectangle Fill="Red" Width="200" Height="200" />
 	       <Rectangle Fill="Green" Width="200" Height="200" />

@@ -24,7 +24,7 @@ Once you have your images added, creating a RadCoverFlow is straight-forward. He
 
 #### __XAML__
 
-{{region coverflow-getting-started_0}}
+{{region xaml-coverflow-getting-started_0}}
 	<telerik:RadCoverFlow Width="300" Height="300">
 	 <Image Source="images/1371213801_a9b202fc31_o.jpg" Stretch="None" Width="100" Height="100"/>
 	 <Image Source="images/1689886185_a282cccabb_o.jpg" Stretch="None" Width="100" Height="100"/>

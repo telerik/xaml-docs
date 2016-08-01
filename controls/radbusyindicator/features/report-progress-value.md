@@ -20,7 +20,7 @@ The first thing you have to do is to specify that you want your indicator to be 
 
 #### __[XAML] Setting IsIndeterminate__
 
-{{region radbusyindicator-features-report-progress-value_0}}
+{{region xaml-radbusyindicator-features-report-progress-value_0}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator" 
 	                          IsIndeterminate="False" 
 	                          ProgressValue="{Binding ProgressValue}">
@@ -58,7 +58,7 @@ In the code behind you have to:
 
 #### __[C#] ProgressDetermination class implementation__
 
-{{region radbusyindicator-features-report-progress-value_1}}
+{{region cs-radbusyindicator-features-report-progress-value_1}}
 	public partial class ProgressDetermination : UserControl, INotifyPropertyChanged
 	{
 	    private int progressValue;
@@ -107,7 +107,7 @@ In the code behind you have to:
 
 #### __[VB] ProgressDetermination class implementation__
 
-{{region radbusyindicator-features-report-progress-value_2}}
+{{region vb-radbusyindicator-features-report-progress-value_2}}
 	Public Class ProgressDetermination
 		Implements INotifyPropertyChanged
 	

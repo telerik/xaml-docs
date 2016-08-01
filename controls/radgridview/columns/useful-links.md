@@ -34,7 +34,7 @@ position: 13
 
 * [Show/Hide Columns outside of the RadGridView]({%slug radgridview-how-to-show-hide-columns-outside-of-the-radgridview%})
 
-* [Create Custom Column Editor]({%slug gridview-how-to-create-custom-date-column%})
+* [Create Custom Column Editor]({%slug gridview-how-to-create-custom-column-editor%})
 
 
 ## Blog Posts

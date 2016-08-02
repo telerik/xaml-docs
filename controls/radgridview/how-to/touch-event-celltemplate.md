@@ -16,7 +16,7 @@ In a scenario where you have explicitly set the cell template of a column within
 
 #### **[XAML] Example 1: Enable touch event for a button within a column cell template**
 
-				 <telerik:GridViewColumn>
+		<telerik:GridViewColumn>
                     <telerik:GridViewColumn.CellTemplate>
                         <DataTemplate>
                             <Button Name="Button1"

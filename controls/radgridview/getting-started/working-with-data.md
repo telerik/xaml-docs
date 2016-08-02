@@ -61,7 +61,7 @@ If you don't want to display all the data in one row you can use RadGridView's [
 
 If the data you want to display is hierarchical you can display it in nested __RadGridViews__. You can learn more about creating a **Hierarchical GridView** in [the following topic]({%slug gridview-hierachy-overview%}). 
 
->important Resetting the __ItemsSource__ collection will cause __RadGridView's__ horizontal scrollbar to be set to the top. You can keep track of the scrollbar's VerticalOffset and reposition the scrollbar after the collection update to keep the original appearance.
+>important Resetting the __ItemsSource__ collection will cause __RadGridView's__ horizontal scrollbar to be set to the top. You can keep track of the scrollbar's **VerticalOffset** and reposition the scrollbar after the collection update to keep the original appearance.
 
 ## Managing Data
 

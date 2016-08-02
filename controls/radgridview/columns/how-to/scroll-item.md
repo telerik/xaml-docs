@@ -16,7 +16,7 @@ This article shows how to scroll RadGridView to a particular row and / or column
 * __ScrollIndexIntoViewAsync__. 
 
 We can use them against RadGridView with many rows and columns. The ultimate goal would be to scroll to the last column of the last row:
-                     
+#### __Figure 1: Scroll to the last column of the last row__                     
 ![](images/how_to_scroll_gridview.png)
 
 ## ScrollIntoViewAsync
@@ -32,7 +32,7 @@ __ScrollIntoViewAsync__ method accepts the following parameters:
 
 Here is the code that will scroll to the last row and last column of RadGridView:
 
-#### __C#__
+#### __[C#] Example 1: Scroll to the last row and last column__
 
 {{region gridview-scroll-item_0}}
 
@@ -45,7 +45,7 @@ Here is the code that will scroll to the last row and last column of RadGridView
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Scroll to the last row and last column__
 
 {{region gridview-scroll-item_1}}
 
@@ -73,7 +73,7 @@ __ScrollIndexIntoViewAsync__ method accepts the following parameters:
 
 Here is the code that will scroll into the last row and last column of RadGridView:
 
-#### __C#__
+#### __[C#] Example 2: Scroll into the last row and last column of RadGridView__
 
 {{region gridview-scroll-item_2}}
 
@@ -87,7 +87,7 @@ Here is the code that will scroll into the last row and last column of RadGridVi
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Scroll into the last row and last column of RadGridView__
 
 {{region gridview-scroll-item_3}}
 

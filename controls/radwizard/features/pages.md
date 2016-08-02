@@ -61,7 +61,6 @@ __xmlns:wizard="clr-namespace:Telerik.Windows.Controls.Wizard;assembly=Telerik.W
 __Figure 1:__ The wizard page defined in __Example 1__ will be displayed as follows:
 ![Pages SettingTemplates](images/pages-settingtemplates.png)
 
-
 {% if site.site_name == 'WPF' %}
 ### Preserve __WizardPage__ content
 By default, __RadWizard__ reuses a single __ContentPresenter__ for holding the currently selected page. Each time the selection is changed, the content of the last active page is unloaded in order to load the content of the newly selected page, thus the content of the pages is not persisted. 

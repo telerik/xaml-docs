@@ -16,7 +16,7 @@ Here is a regular __RadListBox__ declaration without items:
 
 #### __[XAML]  Declaring RadListBox__
 
-{{region radlistbox-populating-with-data-in-code-behind_0}}
+{{region xaml-radlistbox-populating-with-data-in-code-behind_0}}
 	<telerik:RadListBox x:Name="radListBox" Width="200">			
 	</telerik:RadListBox>
 {{endregion}}
@@ -33,10 +33,9 @@ In order to add new listbox items to a __RadListBox__ control, you have to perfo
 
 #### __[C#]  Populating RadListBox with items from code-behind__
 
-{{region radlistbox-populating-with-data-in-code-behind_1}}
+{{region cs-radlistbox-populating-with-data-in-code-behind_1}}
 	var item1 = new RadListBoxItem() { Content = "Australia" };
 	radListBox.Items.Add(item1);
-	
 	var item2 = new RadListBoxItem() { Content = "Brazil" };
 	radListBox.Items.Add(item2);
 {{endregion}}
@@ -51,10 +50,10 @@ In order to remove a specific __RadListBoxItem__, you should remove it from the 
 
 #### __[C#]  Removing RadListBoxItems__
 
-{{region radlistbox-populating-with-data-in-code-behind_2}}
+{{region cs-radlistbox-populating-with-data-in-code-behind_2}}
 	private void RemoveListBoxItem(RadListBoxItem itemToRemove)
 	{
-		this.radListBox.Items.Remove(itemToRemove);
+	    this.radListBox.Items.Remove(itemToRemove);
 	}
 {{endregion}}
 

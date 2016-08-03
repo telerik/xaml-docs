@@ -22,29 +22,25 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 	#### __[C#]  Country class creation__
 
-	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-0}}
+	{{region cs-radlistbox-styles-and-templates-customize-the-dragvisualprovider-0}}
 		public class Country
 		{
 			public string Name { get; set; }
-		
 			public string Capital { get; set; }
-		
 			public int Id { get; set; }
-		} 
+		}
 	{{endregion}}
 
 2. Next you should create a __Countries__ collection in your ViewModel and populate it with some sample data:            
 
 	#### __[C#]  ViewModel declaration___
 
-	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-1}}
+	{{region cs-radlistbox-styles-and-templates-customize-the-dragvisualprovider-1}}
 		public class ViewModel : ViewModelBase
 		{
-			private ObservableCollection<Country> countries;
-		
 			public ViewModel()
 			{
-				this.countries = new ObservableCollection<Country>()
+				this.Countries= new ObservableCollection<Country>()
 				{
 					new Country() { Name = "Australia", Capital = "Canberra", Id = 1 },
 					new Country() { Name = "Bulgaria", Capital = "Sofia", Id = 2 },
@@ -61,23 +57,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 					new Country() { Name = "United States", Capital = "Washington, D.C.", Id = 13 }
 				};
 			}
-		
-			public ObservableCollection<Country> Countries
-			{
-				get
-				{
-					return this.countries;
-				}
-		
-				set
-				{
-					if (this.countries != value)
-					{
-						this.countries = value;
-						this.OnPropertyChanged(() => this.Countries);
-					}
-				}
-			}
+			public ObservableCollection<Country> Countries { get; set; }
 		}
 	{{endregion}}
 
@@ -85,14 +65,14 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 	#### __[XAML]  Merging the necessary ResourceDictionary__
 
-	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-0}}
+	{{region xaml-radlistbox-styles-and-templates-customize-the-dragvisualprovider-0}}
 		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-					<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-					<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
+		    <ResourceDictionary>
+		        <ResourceDictionary.MergedDictionaries>
+		            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
+		            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
+		        </ResourceDictionary.MergedDictionaries>
+		    </ResourceDictionary>
 		</Application.Resources>
 	{{endregion}}
 
@@ -100,59 +80,54 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 	#### __[XAML]  Style targeting ListBoxDragVisual__
 
-	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-1}}
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-					...
-				</ResourceDictionary.MergedDictionaries>
-				<Style TargetType="telerikDragDrop:ListBoxDragVisual" BasedOn="{StaticResource DragVisualStyle}">
-					<Setter Property="Foreground" Value="White"/>
-					<Setter Property="BorderBrush" Value="DarkGreen"/>
-					<Setter Property="Background" Value="Green"/>
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="telerikDragDrop:DragVisual">
-								<Grid>
-									<VisualStateManager.VisualStateGroups>
-										...
-									</VisualStateManager.VisualStateGroups>
-									...
-									<Border Margin="0 0 4 4" Padding="{TemplateBinding BorderThickness}">
-										<Grid Margin="2, 0, 2, 0">
-											...
-											<Grid.RowDefinitions>
-												<RowDefinition Height="20"/>
-												<RowDefinition Height="Auto"/>
-												<RowDefinition Height="20"/>
-												<RowDefinition Height="Auto"/>
-												<RowDefinition Height="20"/>
-											</Grid.RowDefinitions>
-											...
-											<StackPanel Orientation="Horizontal" Margin="15, 0, 0, 0" Grid.Row="0" VerticalAlignment="Center">
-												<TextBlock Text="ID: "/>
-												<TextBlock Text="{Binding Content.Id, RelativeSource={RelativeSource TemplatedParent}}"
-													FontWeight="Bold"/>
-											</StackPanel>
-											<Border Background="White" Height="1" Grid.Row="1"/>
-											<StackPanel Orientation="Horizontal" Margin="15, 0, 0, 0" Grid.Row="2" VerticalAlignment="Center">
-												<TextBlock Text="Name: "/>
-												<TextBlock Text="{Binding Content.Name, RelativeSource={RelativeSource TemplatedParent}}"
-													FontWeight="Bold"/>
-											</StackPanel>
-											<Border Background="White" Height="1" Grid.Row="3"/>
-											<StackPanel Orientation="Horizontal" Margin="15, 0, 0, 0" Grid.Row="4" VerticalAlignment="Center">
-												<TextBlock Text="Capital: "/>
-												<TextBlock Text="{Binding Content.Capital, RelativeSource={RelativeSource TemplatedParent}}"
-													FontWeight="Bold"/>
-											</StackPanel>
-										</Grid>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</ResourceDictionary>
-		</Application.Resources>
+	{{region xaml-radlistbox-styles-and-templates-customize-the-dragvisualprovider-1}}
+		<Style TargetType="telerikDragDrop:ListBoxDragVisual" BasedOn="{StaticResource DragVisualStyle}">
+		    <Setter Property="Foreground" Value="White"/>
+		    <Setter Property="BorderBrush" Value="DarkGreen"/>
+		    <Setter Property="Background" Value="Green"/>
+		    <Setter Property="Template">
+		        <Setter.Value>
+		            <ControlTemplate TargetType="telerikDragDrop:DragVisual">
+		                <Grid>
+		                    <VisualStateManager.VisualStateGroups>
+		                       <!-- ... -->
+		                    </VisualStateManager.VisualStateGroups>
+		                    <!-- ...-->
+		                    <Border Margin="0 0 4 4" Padding="{TemplateBinding BorderThickness}">
+		                        <Grid Margin="2, 0, 2, 0">
+		                            <!-- ... -->
+		                            <Grid.RowDefinitions>
+		                                <RowDefinition Height="20"/>
+		                                <RowDefinition Height="Auto"/>
+		                                <RowDefinition Height="20"/>
+		                                <RowDefinition Height="Auto"/>
+		                                <RowDefinition Height="20"/>
+		                            </Grid.RowDefinitions>
+		                            <!-- ... -->
+		                            <StackPanel Orientation="Horizontal" Margin="15, 0, 0, 0" Grid.Row="0" VerticalAlignment="Center">
+		                                <TextBlock Text="ID: "/>
+		                                <TextBlock Text="{Binding Content.Id, RelativeSource={RelativeSource TemplatedParent}}"
+		                        FontWeight="Bold"/>
+		                            </StackPanel>
+		                            <Border Background="White" Height="1" Grid.Row="1"/>
+		                            <StackPanel Orientation="Horizontal" Margin="15, 0, 0, 0" Grid.Row="2" VerticalAlignment="Center">
+		                                <TextBlock Text="Name: "/>
+		                                <TextBlock Text="{Binding Content.Name, RelativeSource={RelativeSource TemplatedParent}}"
+		                        FontWeight="Bold"/>
+		                            </StackPanel>
+		                            <Border Background="White" Height="1" Grid.Row="3"/>
+		                            <StackPanel Orientation="Horizontal" Margin="15, 0, 0, 0" Grid.Row="4" VerticalAlignment="Center">
+		                                <TextBlock Text="Capital: "/>
+		                                <TextBlock Text="{Binding Content.Capital, RelativeSource={RelativeSource TemplatedParent}}"
+		                        FontWeight="Bold"/>
+		                            </StackPanel>
+		                        </Grid>
+		                    </Border>
+		                </Grid>
+		            </ControlTemplate>
+		        </Setter.Value>
+		    </Setter>
+		</Style>
 	{{endregion}}
 
 	You can find the entire ListBoxDragVisual Template code in each specific theme for the RadListBox control.            
@@ -163,15 +138,15 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 	#### __[XAML]  RadListBox declaration__
 
-	{{region radlistbox-styles-and-templates-customize-the-dragvisualprovider-2}}
+	{{region xaml-radlistbox-styles-and-templates-customize-the-dragvisualprovider-2}}
 		<telerik:RadListBox ItemsSource="{Binding Countries}" 
-							DisplayMemberPath="Name">
-			<telerik:RadListBox.DragDropBehavior>
-				<telerik:ListBoxDragDropBehavior AllowReorder="True" />
-			</telerik:RadListBox.DragDropBehavior>
-			<telerik:RadListBox.DragVisualProvider>
-				<telerik:ListBoxDragVisualProvider/>
-			</telerik:RadListBox.DragVisualProvider>
+		DisplayMemberPath="Name">
+		    <telerik:RadListBox.DragDropBehavior>
+		        <telerik:ListBoxDragDropBehavior AllowReorder="True" />
+		    </telerik:RadListBox.DragDropBehavior>
+		    <telerik:RadListBox.DragVisualProvider>
+		        <telerik:ListBoxDragVisualProvider/>
+		    </telerik:RadListBox.DragVisualProvider>
 		</telerik:RadListBox>
 	{{endregion}}
 

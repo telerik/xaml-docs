@@ -16,7 +16,7 @@ Here is a regular __RadListBox__ declaration without items:
 
 #### __[XAML]  Declaring RadListBox__
 
-{{region radlistbox-populating-with-data-declaratively_0}}
+{{region xaml-radlistbox-populating-with-data-declaratively_0}}
 	<telerik:RadListBox  Width="200">			
 	</telerik:RadListBox>
 {{endregion}}
@@ -25,7 +25,7 @@ In order to add listbox items you need to use the __RadListBox__'s __Items__ pro
 
 #### __[XAML]  Populating RadListBox with items__
 
-{{region radlistbox-populating-with-data-declaratively_1}}
+{{region xaml-radlistbox-populating-with-data-declaratively_1}}
 	<telerik:RadListBox  Width="200">
 		<telerik:RadListBoxItem Content="Australia" />
 		<telerik:RadListBoxItem Content="Brazil" />

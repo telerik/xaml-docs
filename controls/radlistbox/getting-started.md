@@ -19,21 +19,13 @@ You can include the control in your page by either dragging it from the toolbox 
 
 #### __[XAML]  Creating RadListBox__
 
-{{region radlistbox-getting-started_0}}
-	<UserControl
-	    ... 
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid x:Name="LayoutRoot" Background="White">
-	        <StackPanel>
-	            <telerik:RadListBox x:Name="radListBox" Width="200" />
-	        </StackPanel>
-	    </Grid>
-	</UserControl>
+{{region xaml-radlistbox-getting-started_0}}
+	<telerik:RadListBox x:Name="radListBox" Width="200" />
 {{endregion}}
 
 #### __[C#]  Creating RadListBox__
 
-{{region radlistbox-getting-started_1}}
+{{region cs-radlistbox-getting-started_1}}
 	RadListBox listBox = new RadListBox();
 {{endregion}}
 

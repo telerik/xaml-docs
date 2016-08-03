@@ -22,7 +22,7 @@ First, you need to create a new business object named for example Item. Its stru
 
 #### __[C#]  Business object Item__
 
-{{region radlistbox-features-selecteditemssource-0}}
+{{region cs-radlistbox-features-selecteditemssource-0}}
 	public class Item
 	{
 		public Item(string name)
@@ -35,12 +35,12 @@ First, you need to create a new business object named for example Item. Its stru
 
 #### __[VB]  Business object Item__
 
-{{region radlistbox-features-selecteditemssource-0}}
+{{region vb-radlistbox-features-selecteditemssource-0}}
 	Public Class Item
-		Public Sub New(ByVal name As String)
-			Me.Name = name
-		End Sub
-		Public Property Name() As String
+	    Public Sub New(ByVal name As String)
+	        Me.Name = name
+	    End Sub
+	    Public Property Name() As String
 	End Class
 {{endregion}}
 
@@ -48,7 +48,7 @@ Next thing you have to do is to create a new class named ViewModel that inherits
 
 #### __[C#]  Creating the ViewModel__
 
-{{region radlistbox-features-selecteditemssource-1}}
+{{region cs-radlistbox-features-selecteditemssource-1}}
 	private ObservableCollection<Item> items;
 	private ObservableCollection<Item> selectedItemsSource;
 	public ViewModel()
@@ -99,43 +99,41 @@ Next thing you have to do is to create a new class named ViewModel that inherits
 
 #### __[VB]  Creating the ViewModel__
 
-{{region radlistbox-features-selecteditemssource-1}}
+{{region vb-radlistbox-features-selecteditemssource-1}}
 	Private items_Renamed As ObservableCollection(Of Item)
 	Private selectedItemsSource_Renamed As ObservableCollection(Of Item)
 	Public Sub New()
-			Me.Items = Me.GetItems(100)
-			Me.SelectedItemsSource = New ObservableCollection(Of Item)() From {Me.Items(0), Me.Items(2), Me.Items(4), Me.Items(6), Me.Items(7)}
+	    Me.Items = Me.GetItems(100)
+	    Me.SelectedItemsSource = New ObservableCollection(Of Item)() From {Me.Items(0), Me.Items(2), Me.Items(4), Me.Items(6), Me.Items(7)}
 	End Sub
 	Public Property SelectedItemsSource() As ObservableCollection(Of Item)
-		Get
-			Return Me.selectedItemsSource_Renamed
-		End Get
-
-		Set(ByVal value As ObservableCollection(Of Item))
-			If Me.selectedItemsSource_Renamed IsNot value Then
-				Me.selectedItemsSource_Renamed = value
-				Me.OnPropertyChanged(Function() Me.SelectedItemsSource)
-			End If
-		End Set
+	    Get
+	        Return Me.selectedItemsSource_Renamed
+	    End Get
+	    Set(ByVal value As ObservableCollection(Of Item))
+	        If Me.selectedItemsSource_Renamed IsNot value Then
+	            Me.selectedItemsSource_Renamed = value
+	            Me.OnPropertyChanged(Function() Me.SelectedItemsSource)
+	        End If
+	    End Set
 	End Property
 	Public Property Items() As ObservableCollection(Of Item)
-		Get
-			Return Me.items_Renamed
-		End Get
-
-		Set(ByVal value As ObservableCollection(Of Item))
-			If Me.items_Renamed IsNot value Then
-				Me.items_Renamed = value
-				Me.OnPropertyChanged(Function() Me.Items)
-			End If
-		End Set
+	    Get
+	        Return Me.items_Renamed
+	    End Get
+	    Set(ByVal value As ObservableCollection(Of Item))
+	        If Me.items_Renamed IsNot value Then
+	            Me.items_Renamed = value
+	            Me.OnPropertyChanged(Function() Me.Items)
+	        End If
+	    End Set
 	End Property
 	Private Function GetItems(ByVal size As Integer) As ObservableCollection(Of Item)
-		Dim result = New ObservableCollection(Of Item)()
-		For i As Integer = 0 To size - 1
-			result.Add(New Item(String.Format("Item {0}", i)))
-		Next i
-		Return result
+	    Dim result = New ObservableCollection(Of Item)()
+	    For i As Integer = 0 To size - 1
+	        result.Add(New Item(String.Format("Item {0}", i)))
+	    Next i
+	    Return result
 	End Function
 {{endregion}}
 
@@ -145,9 +143,10 @@ Next you should declare the ViewModel as DataContext in your XAML:
 
 #### __[XAML]  Set the ViewModel as DataContext__
 
-{{region radlistbox-features-selecteditemssource-0}}
+{{region xaml-radlistbox-features-selecteditemssource-0}}
+	>
 	<UserControl.DataContext>
-        <local:ViewModel/>
+	    <local:ViewModel/>
 	</UserControl.DataContext>
 {{endregion}}
 
@@ -155,11 +154,11 @@ Finally, all you need to do is to set both created collection of items to the __
 
 #### __[XAML]  Set the ItemsSource and SelectedItemsSource__
 
-{{region radlistbox-features-selecteditemssource-1}}
+{{region xaml-radlistbox-features-selecteditemssource-1}}
 	<telerik:RadListBox x:Name="radListBox" ItemsSource="{Binding Items}"
-                        DisplayMemberPath="Name"
-                        SelectionMode="Multiple"
-                        telerik:ListBoxSelectedItemsBehavior.SelectedItemsSource="{Binding SelectedItemsSource}"/>
+	                    DisplayMemberPath="Name"
+	                    SelectionMode="Multiple"
+	                    telerik:ListBoxSelectedItemsBehavior.SelectedItemsSource="{Binding SelectedItemsSource}"/>
 {{endregion}}
 
 The final result is shown on the snapshot below:

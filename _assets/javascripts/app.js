@@ -448,7 +448,6 @@ $(function(){
 	/* START TabStrip logic */
 	 $("div.tabbedCode").each(function() {
 			var container = $(this);
-			console.log(container);
 			var langs = container.find("pre");		
 			if (langs.length == 0)
 			{

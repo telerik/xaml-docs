@@ -40,7 +40,7 @@ The purpose of the SelectedItem property is to get or set the currently selected
 
 #### __[C#]  Getting the SelectedItem of type RadListBoxItem__
 
-{{region radlistbox-features-selection_0}}
+{{region cs-radlistbox-features-selection_0}}
 	var selectedItem = radListBox.SelectedItem as RadListBoxItem;
 {{endregion}}
 
@@ -48,7 +48,7 @@ The purpose of the SelectedItem property is to get or set the currently selected
 
 #### __[C#]  Getting the SelectedItem of type custom object__
 
-{{region radlistbox-features-selection_1}}
+{{region cs-radlistbox-features-selection_1}}
 	var customer = radListBox.SelectedItem as Customer;
 {{endregion}}
 
@@ -68,18 +68,18 @@ Imagine that you have a business object named Customer with two members(properti
 
 #### __[C#]  Business object named Customer__
 
-{{region radlistbox-features-selection_3}}
+{{region cs-radlistbox-features-selection_3}}
 	public class Customer
 	{
 		public string Name { get; set; }
 		public string City { get; set; }
-	}	
+	}
 {{endregion}}
 
 #### __[XAML]  Initializing of RadListBox__
 
-{{region radlistbox-features-selection_4}}
-	<telerik:RadListBox  Width="300" x:Name="radListBox" 
+{{region xaml-radlistbox-features-selection_4}}
+	<telerik:RadListBox  Width="300" x:Name="radListBox1" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
 			SelectedValuePath="City"				
 			DisplayMemberPath="Name"/>
@@ -95,7 +95,7 @@ Use the __SelectedIndex__ property to get or set the index of the selected item.
 
 #### __[XAML]  Setting SelectedIndex__
 
-{{region radlistbox-features-selection_2}}
+{{region xaml-radlistbox-features-selection_2}}
 	<telerik:RadListBox x:Name="radListBox" Width="200" SelectedIndex="3" />
 {{endregion}}
 

@@ -50,11 +50,11 @@ Setting __TextPath__ /__TextBinding__ property will allow to use "Name" property
 
 #### __[XAML]  Setting TextPath__
 
-{{region radlistbox-features-autocomplete_2}}
-	<telerik:RadListBox  Width="300" x:Name="radListBox"
-			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"				
-			ItemTemplate="{StaticResource ListBoxCustomTemplate}"
-			TextPath="Name" />
+{{region xaml-radlistbox-features-autocomplete_2}}
+	<telerik:RadListBox  Width="300" x:Name="radListBox1"
+	ItemsSource="{Binding Customers}"
+	ItemTemplate="{StaticResource ListBoxCustomTemplate}"
+	TextPath="Name" />
 {{endregion}}
 
 Typing, for example "L" will select the corresponding item:
@@ -73,12 +73,12 @@ By default the autocomplete feature of __RadListBox__ is always enabled. In orde
 
 #### __[XAML]  Setting IsTextSearchEnabled__
 
-{{region radlistbox-features-autocomplete_0}}
+{{region xaml-radlistbox-features-autocomplete_0}}
 	<telerik:RadListBox x:Name="radListBox" IsTextSearchEnabled="False"/>
 {{endregion}}
 
 #### __[C#]  Setting IsTextSearchEnabled__
 
-{{region radlistbox-features-autocomplete_1}}
+{{region cs-radlistbox-features-autocomplete_1}}
 	radListBox.IsTextSearchEnabled = false;
 {{endregion}}

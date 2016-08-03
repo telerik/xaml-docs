@@ -1434,5 +1434,43 @@ header, nav, section, article, aside, footer {
 	}
 }
 
-
 /* END Kendo Grid Nova Theme CSS*/
+
+/* START TabStrip styles */
+.k-tabstrip {
+    border: 1px solid #ebecee;
+}
+
+.k-tabstrip .k-item,
+.k-tabstrip .k-link,
+.k-tabstrip .k-content,
+.k-tabstrip .k-content pre,
+.k-tabstrip .k-loading {
+    border: 0;
+}
+
+.k-tabstrip .k-tabstrip-items {
+    background: #f5f7f8;
+}
+
+.k-tabstrip .k-tabstrip-items .k-state-active .k-link {
+    font-weight: bold;
+    color: #000;
+}
+
+.k-tabstrip .k-content {
+    background: #fff;
+}
+
+.k-tabstrip .prettyprint {
+    padding: 0;
+}
+
+.prettyprint {
+    border-color: #ebecee;
+}
+
+.prettyprint code {
+    line-height: 1.4;
+}
+/* END TabStrip styles */

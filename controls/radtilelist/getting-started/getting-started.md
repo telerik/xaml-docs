@@ -33,79 +33,53 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 * Add RadTileList as demonstrated below:
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+#### __[XAML] Example 1: Defining RadTileList__
 
-{{region radtilelist-getting-started_0}}
-
-	<UserControl x:Class="RadTileList_SL.MainPage"
-	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	    mc:Ignorable="d"
-	    d:DesignHeight="300" d:DesignWidth="400">
-	 <Grid x:Name="LayoutRoot" Background="White">
-	  <telerik:RadTileList x:Name="TileList1">
-	       <telerik:Tile/>
-	  </telerik:RadTileList>
-	 </Grid>
-	</UserControl>
-	{{endregion}}
+{{region xaml-radtilelist-getting-started_0}}
+	<telerik:RadTileList x:Name="TileList1">
+	  <telerik:Tile/>
+	</telerik:RadTileList>
+{{endregion}}
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __[XAML] Example 1: Defining RadTileList__
 
-{{region radtilelist-getting-started_1}}
-
-	<Window x:Class="RadTileList_WPF.MainWindow"
-	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	    mc:Ignorable="d"
-	    d:DesignHeight="300" d:DesignWidth="400">
-	 <Grid x:Name="LayoutRoot" Background="White">
-	  <telerik:RadTileList x:Name="TileList1">
-	       <telerik:Tile/>
-	  </telerik:RadTileList>
-	 </Grid>
-	</UserControl>
-	{{endregion}}
+{{region xaml-radtilelist-getting-started_1}}
+	<telerik:RadTileList>
+	  <telerik:Tile/>
+	</telerik:RadTileList>
+{{endregion}}
 
 {% endif %}
 
 Two lines of code are important here:
 
-* The import of the Telerik schema:
+* The import of the __Telerik schema__:
 
-#### __XAML__
+#### __[XAML] Example 2: Importing the Telerik Schema__
 
-{{region radtilelist-getting-started_2}}
-
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	{{endregion}}
-
+{{region xaml-radtilelist-getting-started_2}}
+	<!--xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"-->
+{{endregion}}
 
 
-* The declaration of the RadTileList control inside the Grid:
 
-#### __XAML__
+* The declaration of the __RadTileList__ control inside the Grid:
 
-{{region radtilelist-getting-started_3}}
+#### __[XAML] Example 3: Declaring RadTileList inside a Grid container__
 
-	<Grid x:Name="LayoutRoot" Background="White">
-	  <telerik:RadTileList x:Name="TileList1">
-	       <telerik:Tile/>
+{{region xaml-radtilelist-getting-started_3}}
+	<Grid Background="White">
+	  <telerik:RadTileList >
+	    <telerik:Tile/>
 	  </telerik:RadTileList>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
-Now if you run the application, you have an empty Tile{% if site.site_name == 'Silverlight' %}
+Now if you run the application, you have an empty __Tile__ {% if site.site_name == 'Silverlight' %}
 
 ![Rad Tile List Getting Started image 01 SL](images/RadTileList_GettingStarted_image_01_SL.png){% endif %}{% if site.site_name == 'WPF' %}
 
@@ -113,7 +87,7 @@ Now if you run the application, you have an empty Tile{% if site.site_name == 'S
 
 ## Select a Tile
 
-You can select a Tile by clicking or tapping on it. The selected Tile will look like:{% if site.site_name == 'Silverlight' %}
+You can select a __Tile__ by clicking or tapping on it. The selected __Tile__ will look like:{% if site.site_name == 'Silverlight' %}
 
 ![Rad Tile List Getting Started Selected Tile 01 SL](images/RadTileList_GettingStarted_SelectedTile_01_SL.png){% endif %}{% if site.site_name == 'WPF' %}
 
@@ -126,11 +100,11 @@ You can specify the __Tile__ type through its property - __TileType__.
 
 There are three types of Tiles:
 
-* Single
+* __Single__
 
-* Double
+* __Double__
 
-* Quadruple{% if site.site_name == 'Silverlight' %}
+* __Quadruple__ {% if site.site_name == 'Silverlight' %}
 
 ![Rad Tile List Getting Started Tile Types image SL](images/RadTileList_GettingStarted_TileTypes_image_SL.png){% endif %}{% if site.site_name == 'WPF' %}
 
@@ -141,11 +115,11 @@ There are three types of Tiles:
 
 ## Change the Default Theme
 
-You can set the theme of the RadTileList to one of the predefined themes for the Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
+You can set the theme of __RadTileList__ to one of the predefined themes for the Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
         
 
 Read the 	[Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})and[Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) articles for more information.
         
 
-To see the different themes of RadTileList please check our  [Theming](http://demos.telerik.com/silverlight/#TileList/Theming) online example. 
+To see the different themes of __RadTileList__ please check our  [Theming](http://demos.telerik.com/silverlight/#TileList/Theming) online example. 
         

@@ -30,8 +30,8 @@ The __SelectionMode__ property of RadTileList controls whether users can select 
 __Example 1__ demonstrates how you can set the __SelectionMode__ property in XAML.
 
 #### __[XAML] Example 1: Set SelectionMode of RadTileList to Multiple__
-{{region radtilelist-features-selection_0}}
-    <telerik:RadTileList x:Name="RadTileList" SelectionMode="Multiple"/>
+{{region xaml-radtilelist-features-selection_0}}
+	<telerik:RadTileList x:Name="RadTileList" SelectionMode="Multiple"/>
 {{endregion}}
 
 __Figure 1__ shows the result when Multiple selection is enabled and several tiles are included in the selection.
@@ -56,23 +56,23 @@ Regardless of the mode the selection is in, the __SelectionChanged__ event will 
 The snippet in __Example 2__ demonstrates how you can react to a change in the current selection.
 
 #### __[C#] Example 2: SelectionChanged Event Handler for RadTileList__
-{{region radtilelist-features-selection_1}}
-    private void EmployeesTileList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        if (e.RemovedItems.Count == 0)
-        {
-            MessageBox.Show("Please choose an employee");
-        }
-    }
+{{region cs-radtilelist-features-selection_1}}
+	private void EmployeesTileList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+	{
+	    if (e.RemovedItems.Count == 0)
+	    {
+	        MessageBox.Show("Please choose an employee");
+	    }
+	}
 {{endregion}}
 
 #### __[VB.NET] Example 2: SelectionChanged Event Handler for RadTileList__
-{{region radtilelist-features-selection_2}}
-    Private Sub EmployeesTileList_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
-        If e.RemovedItems.Count = 0 Then
-            MessageBox.Show("Please choose an employee")
-        End If
-    End Sub
+{{region vb-radtilelist-features-selection_2}}
+	Private Sub EmployeesTileList_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
+	    If e.RemovedItems.Count = 0 Then
+	        MessageBox.Show("Please choose an employee")
+	    End If
+	End Sub
 {{endregion}}
 
 

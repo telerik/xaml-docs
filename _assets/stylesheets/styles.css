@@ -1462,6 +1462,14 @@ header, nav, section, article, aside, footer {
     background: #fff;
 }
 
+.k-tabstrip .k-tabstrip-items .k-state-active {
+	background: white;
+}
+
+.k-tabstrip .k-tabstrip-items .k-item {
+	font-weight: bold;
+}
+
 .k-tabstrip .prettyprint {
     padding: 0;
 }

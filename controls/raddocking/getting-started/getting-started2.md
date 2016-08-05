@@ -43,7 +43,7 @@ In order to use a __RadDocking__ control in XAML, you have to add the following 
 
 #### __[XAML] Example 2: Declaring Telerik Namespace__
 {{region xaml-raddocking-getting-started2-8}}
-    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 {{endregion}}
 
 If you run the application, you will see an empty docking with no SplitContainers, PaneGroups and Panes, as shown in __Figure 1__. 
@@ -64,8 +64,11 @@ The [Document Host]({%slug raddocking-features-document-host%}) is meant to be t
 
 {{region xaml-raddocking-getting-started2_1}}
 	<telerik:RadDocking>
-		<telerik:RadDocking.DocumentHost>
-		</telerik:RadDocking.DocumentHost>
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            ...
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -81,10 +84,10 @@ __Example 4__ demonstrates how to add __RadSplitContainer__ inside the __Documen
 
 {{region xaml-raddocking-getting-started2_2}}
 	<telerik:RadDocking>
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -96,12 +99,12 @@ Before adding panes to your __RadDocking__ declaration, you need to add a [RadPa
 
 {{region xaml-raddocking-getting-started2_3}}
 	<telerik:RadDocking>
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-				<telerik:RadPaneGroup>
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -113,14 +116,16 @@ Before adding panes to your __RadDocking__ declaration, you need to add a [RadPa
 
 {{region xaml-raddocking-getting-started2_4}}
 	<telerik:RadDocking>
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-				<telerik:RadPaneGroup>
-					<telerik:RadPane/>
-					<telerik:RadPane/>
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup>
+	                <telerik:RadPane>
+	                </telerik:RadPane>
+	                <telerik:RadPane>
+	                </telerik:RadPane>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -136,18 +141,36 @@ The __RadDocking__ from _Example 6_ does not have any __Header__ or __Content__ 
 
 {{region xaml-raddocking-getting-started2_5}}
 	<telerik:RadDocking Width="300" Height="200">
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-				<telerik:RadPaneGroup>
-					<telerik:RadPane Header="Description">
-						<TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab."/>
-					</telerik:RadPane>
-					<telerik:RadPane Header="NonDraggable">
-						<TextBlock TextWrapping="Wrap" Text="This pane cannot be dragged, because it has its property CanFloat set 'False'."/>
-					</telerik:RadPane>
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup>
+	                <telerik:RadPane Header="Description">
+	                    <TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab."/>
+	                </telerik:RadPane>
+	                <telerik:RadPane Header="NonDraggable">
+	                    <TextBlock TextWrapping="Wrap" Text="This pane cannot be dragged, because it has its property CanFloat set 'False'."/>
+	                </telerik:RadPane>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
+	</telerik:RadDocking>
+	
+	<!-- #region raddocking-getting-started2_6 -->
+	<telerik:RadDocking>
+	    <telerik:RadDocking Width="300" Height="200">
+	        <telerik:RadDocking.DocumentHost>
+	            <telerik:RadSplitContainer>
+	                <telerik:RadPaneGroup>
+	                    <telerik:RadPane Header="Description">
+	                        <TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab."/>
+	                    </telerik:RadPane>
+	                    <telerik:RadPane Header="NonDraggable" CanFloat="False">
+	                        <TextBlock TextWrapping="Wrap" Text="This pane cannot be dragged, because it has its property CanFloat set 'False'."/>
+	                    </telerik:RadPane>
+	                </telerik:RadPaneGroup>
+	            </telerik:RadSplitContainer>
+	        </telerik:RadDocking.DocumentHost>
+	    </telerik:RadDocking>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -160,19 +183,21 @@ If you need to prevent the pane from being [dragged and dropped]({%slug raddocki
 #### __[XAML] Example 8: Setting CanFloat__
 
 {{region xaml-raddocking-getting-started2_6}}
-	<telerik:RadDocking Width="300" Height="200">
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-				<telerik:RadPaneGroup>
-					<telerik:RadPane Header="Description">
-						<TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab."/>
-					</telerik:RadPane>
-					<telerik:RadPane Header="NonDraggable" CanFloat="False">
-						<TextBlock TextWrapping="Wrap" Text="This pane cannot be dragged, because it has its property CanFloat set 'False'."/>
-					</telerik:RadPane>
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
+	<telerik:RadDocking>
+	    <telerik:RadDocking Width="300" Height="200">
+	        <telerik:RadDocking.DocumentHost>
+	            <telerik:RadSplitContainer>
+	                <telerik:RadPaneGroup>
+	                    <telerik:RadPane Header="Description">
+	                        <TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab."/>
+	                    </telerik:RadPane>
+	                    <telerik:RadPane Header="NonDraggable" CanFloat="False">
+	                        <TextBlock TextWrapping="Wrap" Text="This pane cannot be dragged, because it has its property CanFloat set 'False'."/>
+	                    </telerik:RadPane>
+	                </telerik:RadPaneGroup>
+	            </telerik:RadSplitContainer>
+	        </telerik:RadDocking.DocumentHost>
+	    </telerik:RadDocking>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -188,39 +213,39 @@ You can easily change the pin state of RadPane programmatically using the IsPinn
 
 {{region xaml-raddocking-getting-started2_7}}
 	<telerik:RadDocking>
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-				<telerik:RadPaneGroup>
-					<telerik:RadPane Header="Description">
-						<TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab."/>
-					</telerik:RadPane>
-					<telerik:RadPane Header="NonDraggable" CanFloat="False">
-						<TextBlock TextWrapping="Wrap" Text="This pane cannot be dragged, because it has its property CanFloat set 'False'."/>
-					</telerik:RadPane>
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
-
-		<telerik:RadSplitContainer InitialPosition="DockedLeft">
-			<telerik:RadPaneGroup>
-				<telerik:RadPane Header="Toolbox"/>
-				<telerik:RadPane Header="Server Explorer"/>
-			</telerik:RadPaneGroup>
-		</telerik:RadSplitContainer>
-
-		<telerik:RadSplitContainer InitialPosition="DockedRight">
-			<telerik:RadPaneGroup>
-				<telerik:RadPane Header="Properties"/>
-				<telerik:RadPane Header="Solution Explorer"/>
-			</telerik:RadPaneGroup>
-		</telerik:RadSplitContainer>
-
-		<telerik:RadSplitContainer InitialPosition="DockedBottom">
-			<telerik:RadPaneGroup>
-				<telerik:RadPane Header="Output"/>
-				<telerik:RadPane Header="Error List"/>
-			</telerik:RadPaneGroup>
-		</telerik:RadSplitContainer>
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup>
+	                <telerik:RadPane Header="Description">
+	                    <TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab."/>
+	                </telerik:RadPane>
+	                <telerik:RadPane Header="NonDraggable" CanFloat="False">
+	                    <TextBlock TextWrapping="Wrap" Text="This pane cannot be dragged, because it has its property CanFloat set 'False'."/>
+	                </telerik:RadPane>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
+	
+	    <telerik:RadSplitContainer InitialPosition="DockedLeft">
+	        <telerik:RadPaneGroup>
+	            <telerik:RadPane Header="Toolbox"/>
+	            <telerik:RadPane Header="Server Explorer"/>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
+	
+	    <telerik:RadSplitContainer InitialPosition="DockedRight">
+	        <telerik:RadPaneGroup>
+	            <telerik:RadPane Header="Properties"/>
+	            <telerik:RadPane Header="Solution Explorer"/>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
+	
+	    <telerik:RadSplitContainer InitialPosition="DockedBottom">
+	        <telerik:RadPaneGroup>
+	            <telerik:RadPane Header="Output"/>
+	            <telerik:RadPane Header="Error List"/>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
 

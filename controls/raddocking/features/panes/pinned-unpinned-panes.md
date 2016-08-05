@@ -67,7 +67,7 @@ If you don't want your __RadPanes__ to be pinnable just set the __CanUserPin__ p
 #### __XAML__
 
 {{region xaml-raddocking-panes-pinned-unpinned-panes_3}}
-	<telerik:RadPane x:Name="radPane" CanUserPin="False"/>
+	<telerik:RadPane x:Name="radPane1" CanUserPin="False"/>
 {{endregion}}
 
 #### __C#__

@@ -56,21 +56,21 @@ The next code snippet shows how to set the CloseButtonPosition to InPane:
 
 {{region xaml-raddocking-features-document-host_1}}
 	<telerik:RadDocking CloseButtonPosition="InPane">
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-				<telerik:RadPaneGroup x:Name="radPaneGroup" >
-					<telerik:RadPane x:Name="radPane1" Header="Document 1">
-						<TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-					</telerik:RadPane>
-					<telerik:RadPane x:Name="radPane2" Header="Document 2">
-						<TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-					</telerik:RadPane>
-					<telerik:RadPane x:Name="radPane3" Header="Document 3">
-						<TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-					</telerik:RadPane>
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup x:Name="radPaneGroup1" >
+	                <telerik:RadPane x:Name="radPane11" Header="Document 1">
+	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
+	                </telerik:RadPane>
+	                <telerik:RadPane x:Name="radPane21" Header="Document 2">
+	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
+	                </telerik:RadPane>
+	                <telerik:RadPane x:Name="radPane31" Header="Document 3">
+	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
+	                </telerik:RadPane>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -95,7 +95,7 @@ When the number of Panes inside the __DocumentHost__ increases and there is not 
 #### __XAML__
 
 {{region xaml-raddocking-features-document-host_2}}
-	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto">
+	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
 {{endregion}}
 
 __Figure 1:__ __DocumentHost__ with a visible __HorizontalScrollBar__:
@@ -109,7 +109,7 @@ In addition to this you could also display the drop down menu button that contai
 #### __XAML__
 
 {{region xaml-raddocking-features-document-host_3}}
-	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto" DropDownDisplayMode="Visible">
+	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto" DropDownDisplayMode="Visible"/>
 {{endregion}}
 
 The __DropDownDisplayMode__ property could be set to any of the following values:

@@ -28,11 +28,11 @@ __RadDocking__ provides the ability to easily set the initial floating size and 
 
 {{region xaml-raddocking-features-tool-window_0}}
 	<telerik:RadDocking>
-		<telerik:RadSplitContainer InitialPosition="FloatingOnly">
-			<telerik:RadPaneGroup>
-				<telerik:RadPane telerik:RadDocking.FloatingSize="500, 500" telerik:RadDocking.FloatingLocation="400, 400"/>
-			</telerik:RadPaneGroup>
-		</telerik:RadSplitContainer>
+	    <telerik:RadSplitContainer InitialPosition="FloatingOnly">
+	        <telerik:RadPaneGroup>
+	            <telerik:RadPane telerik:RadDocking.FloatingSize="500, 500" telerik:RadDocking.FloatingLocation="400, 400"/>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
 

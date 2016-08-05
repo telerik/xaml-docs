@@ -22,16 +22,16 @@ Let’s, for example, have a simple RadDocking definition as shown in __Example 
 
 {{region xaml-raddocking-how-to-disable-tab-navigation_0}}
 	<telerik:RadDocking Width="240" Height="200">
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-				<telerik:RadPaneGroup>
-					<telerik:RadPane Header="Description">                   
-						<TextBox Text="Some text here"  Width="100" Margin="10" />                             
-					</telerik:RadPane>                 
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
-	</telerik:RadDocking> 
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup>
+	                <telerik:RadPane Header="Description">
+	                    <TextBox Text="Some text here"  Width="100" Margin="10" />
+	                </telerik:RadPane>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
+	</telerik:RadDocking>
 {{endregion}}
 
 In the example, when RadDocking receives the focus, a user needs to push the Tab key several times in order to navigate to the TextBox inside the pane as shown in __Figure 1__.   
@@ -46,27 +46,27 @@ In order to change this behavior, you will need to set the __IsTabStop__ propert
 
 {{region xaml-raddocking-how-to-disable-tab-navigation_1}}
 	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Docking.xaml"/>              
-			</ResourceDictionary.MergedDictionaries>
-
-			<Style TargetType="telerik:AutoHideArea" BasedOn="{StaticResource AutoHideAreaStyle}">
-				<Setter Property="IsTabStop" Value="False" />
-			</Style>
-			<Style TargetType="telerik:RadDocking" BasedOn="{StaticResource RadDockingStyle}">
-				<Setter Property="IsTabStop" Value="False"/>
-			</Style>
-			<Style TargetType="telerik:RadGridResizer" BasedOn="{StaticResource RadGridResizerStyle}">
-				<Setter Property="IsTabStop" Value="False"/>
-			</Style>
-			<Style TargetType="telerik:PaneHeader" BasedOn="{StaticResource PaneHeaderStyle}">
-				<Setter Property="IsTabStop" Value="False"/>
-			</Style>
-		</ResourceDictionary>
+	    <ResourceDictionary>
+	        <ResourceDictionary.MergedDictionaries>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Docking.xaml"/>
+	        </ResourceDictionary.MergedDictionaries>
+	
+	        <Style TargetType="telerik:AutoHideArea" BasedOn="{StaticResource AutoHideAreaStyle}">
+	            <Setter Property="IsTabStop" Value="False" />
+	        </Style>
+	        <Style TargetType="telerik:RadDocking" BasedOn="{StaticResource RadDockingStyle}">
+	            <Setter Property="IsTabStop" Value="False"/>
+	        </Style>
+	        <Style TargetType="telerik:RadGridResizer" BasedOn="{StaticResource RadGridResizerStyle}">
+	            <Setter Property="IsTabStop" Value="False"/>
+	        </Style>
+	        <Style TargetType="telerik:PaneHeader" BasedOn="{StaticResource PaneHeaderStyle}">
+	            <Setter Property="IsTabStop" Value="False"/>
+	        </Style>
+	    </ResourceDictionary>
 	</Application.Resources>
 {{endregion}}
 

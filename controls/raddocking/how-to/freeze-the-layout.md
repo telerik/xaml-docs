@@ -23,40 +23,35 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 #### __XAML__
 
 {{region xaml-raddocking-how-to-freeze-the-layout_0}}
-	<telerik:RadDocking x:Name="radDocking">
-	
-	        <telerik:RadSplitContainer InitialPosition="DockedLeft">
-	            <telerik:RadPaneGroup>
-	                <telerik:RadPane x:Name="radPane1" Header="Pane 1">
-	                    <TextBlock Text="Some simple text here"/>
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	
+	<telerik:RadDocking x:Name="radDocking">
+	    <telerik:RadSplitContainer InitialPosition="DockedLeft">
+	        <telerik:RadPaneGroup>
+	            <telerik:RadPane x:Name="radPane1" Header="Pane 1">
+	                <TextBlock Text="Some simple text here"/>
+	            </telerik:RadPane>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
 	    <telerik:RadSplitContainer InitialPosition="DockedRight">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane x:Name="radPane2" Header="Pane 2">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
 	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	
+	    </telerik:RadSplitContainer>
 	    <telerik:RadSplitContainer InitialPosition="DockedTop">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane x:Name="radPane3" Header="Pane 3">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
 	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	
+	    </telerik:RadSplitContainer>
 	    <telerik:RadSplitContainer InitialPosition="DockedBottom">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane x:Name="radPane4" Header="Pane 4">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
 	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	
+	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -69,14 +64,14 @@ In order to disable the close button, you need to set the __CanUserClose__ prope
 #### __XAML__
 
 {{region xaml-raddocking-how-to-freeze-the-layout_1}}
-	...
-	<telerik:RadPane x:Name="radPane1" Header="Pane 1" CanUserClose="False">
-	...
-	<telerik:RadPane x:Name="radPane2" Header="Pane 2" CanUserClose="False">
-	...
-	<telerik:RadPane x:Name="radPane3" Header="Pane 3" CanUserClose="False">
-	...
-	<telerik:RadPane x:Name="radPane4" Header="Pane 4" CanUserClose="False">
+	<!--...-->
+	<telerik:RadPane x:Name="radPane10" Header="Pane 1" CanUserClose="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane20" Header="Pane 2" CanUserClose="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane30" Header="Pane 3" CanUserClose="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane40" Header="Pane 4" CanUserClose="False"/>
 {{endregion}}
 
 Here is the result:
@@ -90,14 +85,14 @@ In order to disable the pin/unpin button, you need to set the __CanUserPin__ pro
 #### __XAML__
 
 {{region xaml-raddocking-how-to-freeze-the-layout_2}}
-	...
-	<telerik:RadPane x:Name="radPane1" Header="Pane 1" CanUserClose="False" CanUserPin="False">
-	...
-	<telerik:RadPane x:Name="radPane2" Header="Pane 2" CanUserClose="False" CanUserPin="False">
-	...
-	<telerik:RadPane x:Name="radPane3" Header="Pane 3" CanUserClose="False" CanUserPin="False">
-	...
-	<telerik:RadPane x:Name="radPane4" Header="Pane 4" CanUserClose="False" CanUserPin="False">
+	<!--...-->
+	<telerik:RadPane x:Name="radPane11" Header="Pane 1" CanUserClose="False" CanUserPin="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane21" Header="Pane 2" CanUserClose="False" CanUserPin="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane31" Header="Pane 3" CanUserClose="False" CanUserPin="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane41" Header="Pane 4" CanUserClose="False" CanUserPin="False"/>
 {{endregion}}
 
 Here is the result:
@@ -111,14 +106,14 @@ In order to disable the float behavior, you need to set the __CanFloat__ propert
 #### __XAML__
 
 {{region xaml-raddocking-how-to-freeze-the-layout_3}}
-	...
-	<telerik:RadPane x:Name="radPane1" Header="Pane 1" CanUserClose="False" CanUserPin="False" CanFloat="False">
-	...
-	<telerik:RadPane x:Name="radPane2" Header="Pane 2" CanUserClose="False" CanUserPin="False" CanFloat="False">
-	...
-	<telerik:RadPane x:Name="radPane3" Header="Pane 3" CanUserClose="False" CanUserPin="False" CanFloat="False">
-	...
-	<telerik:RadPane x:Name="radPane4" Header="Pane 4" CanUserClose="False" CanUserPin="False" CanFloat="False">
+	<!--...-->
+	<telerik:RadPane x:Name="radPane12" Header="Pane 1" CanUserClose="False" CanUserPin="False" CanFloat="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane22" Header="Pane 2" CanUserClose="False" CanUserPin="False" CanFloat="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane32" Header="Pane 3" CanUserClose="False" CanUserPin="False" CanFloat="False"/>
+	<!--...-->
+	<telerik:RadPane x:Name="radPane42" Header="Pane 4" CanUserClose="False" CanUserPin="False" CanFloat="False"/>
 {{endregion}}
 
 ## Disable the Drop-Down Menu in the Pane Header
@@ -132,10 +127,10 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 {{region cs-raddocking-how-to-freeze-the-layout_4}}
 	private void DisableMenu()
 	{
-	    radPane1.MenuCommands.Clear();
-	    radPane2.MenuCommands.Clear();
-	    radPane3.MenuCommands.Clear();
-	    radPane4.MenuCommands.Clear();
+	    radPane1.ContextMenuTemplate = null;
+	    radPane2.ContextMenuTemplate = null;
+	    radPane3.ContextMenuTemplate = null;
+	    radPane4.ContextMenuTemplate = null;
 	}
 {{endregion}}
 
@@ -143,10 +138,10 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 
 {{region vb-raddocking-how-to-freeze-the-layout_5}}
 	Private Sub DisableMenu()
-	    radPane1.MenuCommands.Clear()
-	    radPane2.MenuCommands.Clear()
-	    radPane3.MenuCommands.Clear()
-	    radPane4.MenuCommands.Clear()
+		radPane1.ContextMenuTemplate = Nothing
+		radPane2.ContextMenuTemplate = Nothing
+		radPane3.ContextMenuTemplate = Nothing
+		radPane4.ContextMenuTemplate = Nothing
 	End Sub
 {{endregion}}
 

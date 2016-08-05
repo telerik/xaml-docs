@@ -28,26 +28,26 @@ Create a new application and add the following declaration.
 	    </Grid.RowDefinitions>
 	    <StackPanel>
 	        <Button Content="Save layout to XElement" 
-	    Click="OnSaveLayoutButtonClick"/>
+	Click="OnSaveLayoutButtonClick"/>
 	        <Button Content="Load layout from XElement" 
-	    Click="OnLoadLayoutButtonClick"
-	    x:Name="LoadLayoutFromXElementButton"/>
+	Click="OnLoadLayoutButtonClick"
+	x:Name="LoadLayoutFromXElementButton"/>
 	    </StackPanel>
 	    <telerik:RadDocking x:Name="radDocking"
-	        Grid.Row="1">
+	Grid.Row="1">
 	        <telerik:RadDocking.DocumentHost>
 	
 	            <telerik:RadSplitContainer>
 	                <telerik:RadPaneGroup x:Name="DocumentGroup">
 	                    <telerik:RadPane x:Name="LayoutXml" Header="Layout Xml"
-	                        telerik:RadDocking.SerializationTag="LayoutXml"
-	                        telerik:RadDocking.FloatingSize="450, 400">
+	                telerik:RadDocking.SerializationTag="LayoutXml"
+	                telerik:RadDocking.FloatingSize="450, 400">
 	                        <TextBox TextWrapping="Wrap" x:Name="XmlTextBox"
-	                    VerticalScrollBarVisibility="Auto"
-	                    Text="{Binding Xml, Mode=TwoWay}" />
+	            VerticalScrollBarVisibility="Auto"
+	            Text="{Binding Xml, Mode=TwoWay}" />
 	                    </telerik:RadPane>
 	                    <telerik:RadDocumentPane Header="Document 1" Title="Document 1"
-	                                telerik:RadDocking.SerializationTag="DocumentPane">
+	                        telerik:RadDocking.SerializationTag="DocumentPane">
 	                        <TextBox x:Name="DocumentTextBox" Text="Some text" />
 	                    </telerik:RadDocumentPane>
 	                </telerik:RadPaneGroup>
@@ -58,19 +58,19 @@ Create a new application and add the following declaration.
 	        <telerik:RadSplitContainer InitialPosition="DockedLeft">
 	            <telerik:RadPaneGroup>
 	                <telerik:RadPane Header="Pane Left 1"
-	                    telerik:RadDocking.SerializationTag="PaneLeft1">
+	            telerik:RadDocking.SerializationTag="PaneLeft1">
 	                    <TextBox x:Name="TextBox" Text="Some other text" />
 	                </telerik:RadPane>
 	                <telerik:RadPane Header="Pane Left 2"
-	                    telerik:RadDocking.SerializationTag="PaneLeft2">
+	            telerik:RadDocking.SerializationTag="PaneLeft2">
 	                    <TextBox Text="Pane Left 2" />
 	                </telerik:RadPane>
 	                <telerik:RadPane Header="Pane Left 3"
-	                    telerik:RadDocking.SerializationTag="PaneLeft3">
+	            telerik:RadDocking.SerializationTag="PaneLeft3">
 	                    <TextBox Text="Pane Left 3" />
 	                </telerik:RadPane>
 	                <telerik:RadPane Header="Pane Left 4"
-	                    telerik:RadDocking.SerializationTag="PaneLeft4">
+	            telerik:RadDocking.SerializationTag="PaneLeft4">
 	                    <TextBox Text="Pane Left 4" />
 	                </telerik:RadPane>
 	            </telerik:RadPaneGroup>
@@ -79,7 +79,7 @@ Create a new application and add the following declaration.
 	        <telerik:RadSplitContainer InitialPosition="DockedRight">
 	            <telerik:RadPaneGroup>
 	                <telerik:RadPane Header="Pane Right 1"
-	                    telerik:RadDocking.SerializationTag="PaneRight1">
+	            telerik:RadDocking.SerializationTag="PaneRight1">
 	                    <telerik:RadTreeView>
 	                        <telerik:RadTreeViewItem Header="RootItem">
 	                            <telerik:RadTreeViewItem Header="Item1" />
@@ -100,7 +100,7 @@ Create a new application and add the following declaration.
 	        <telerik:RadSplitContainer InitialPosition="DockedTop">
 	            <telerik:RadPaneGroup>
 	                <telerik:RadPane Header="Pane Top 1"
-	                    telerik:RadDocking.SerializationTag="PaneTop1">
+	            telerik:RadDocking.SerializationTag="PaneTop1">
 	                    <TextBox Text="Pane Top 1" />
 	                </telerik:RadPane>
 	            </telerik:RadPaneGroup>
@@ -157,8 +157,6 @@ Example 2 shows how to load a RadDocking control's layout stored as valid XEleme
 #### __C#__
 
 {{region cs-raddocking-features-save-load-layout-linq-to-xml_2}}
-	private XElement dockingLayout;
-	
 	private void OnLoadLayoutButtonClick(object sender, RoutedEventArgs e)
 	{
 	    MemoryStream sourceAsStream = new MemoryStream();
@@ -166,4 +164,4 @@ Example 2 shows how to load a RadDocking control's layout stored as valid XEleme
 	    sourceAsStream.Seek(0, SeekOrigin.Begin);
 	    this.radDocking.LoadLayout(sourceAsStream);
 	}
-	{{endregion}}
+{{endregion}}

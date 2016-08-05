@@ -77,38 +77,32 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 #### __C#__
 
 {{region cs-raddocking-features-compass_4}}
-	public partial class CompassSample : UserControl
+	       
+	public CompassSample()
 	{
-	    public CompassSample()
-	    {
-	        InitializeComponent();
+	    InitializeComponent();
 	
-	        radDocking.PreviewShowCompass += new EventHandler<Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs>( radDocking_PreviewShowCompass );
-	    }
+	    this.radDocking.PreviewShowCompass += new EventHandler<Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs>(radDocking_PreviewShowCompass);
+	}
 	
-	    private void radDocking_PreviewShowCompass( object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e )
-	    {
-	        e.Compass.Background = new SolidColorBrush( Colors.Red );
-	    }
+	private void radDocking_PreviewShowCompass(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
+	{
+	    e.Compass.Background = new SolidColorBrush(Colors.Red);
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-raddocking-features-compass_5}}
-	Public Partial Class CompassSample
-	    Inherits UserControl
+	Public Sub New()
+		InitializeComponent()
 	
-	    Public Sub New()
-	        InitializeComponent()
+		AddHandler radDocking.PreviewShowCompass, AddressOf radDocking_PreviewShowCompass
+	End Sub
 	
-	        AddHandler radDocking.PreviewShowCompass, AddressOf radDocking_PreviewShowCompass
-	    End Sub
-	
-	    Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-	        e.Compass.Background = New SolidColorBrush(Colors.Red)
-	    End Sub
-	End Class
+	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
+		e.Compass.Background = New SolidColorBrush(Colors.Red)
+	End Sub
 {{endregion}}
 
 And the result:

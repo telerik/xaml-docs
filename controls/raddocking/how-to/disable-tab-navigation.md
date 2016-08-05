@@ -20,7 +20,7 @@ Let’s, for example, have a simple RadDocking definition as shown in __Example 
 
 #### __[XAML] Example 1: Simple RadDocking definition__
 
-{{region raddocking-how-to-disable-tab-navigation_0}}
+{{region xaml-raddocking-how-to-disable-tab-navigation_0}}
 	<telerik:RadDocking Width="240" Height="200">
 		<telerik:RadDocking.DocumentHost>
 			<telerik:RadSplitContainer>
@@ -44,7 +44,7 @@ In order to change this behavior, you will need to set the __IsTabStop__ propert
 
 #### __[XAML] Example 2: Applying IsTabStop through the Styles of RadDocking elements__
 
-{{region raddocking-how-to-disable-tab-navigation_1}}
+{{region xaml-raddocking-how-to-disable-tab-navigation_1}}
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>

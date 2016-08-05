@@ -26,7 +26,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 
 #### __C#__
 
-{{region raddocking-features-compass_0}}
+{{region cs-raddocking-features-compass_0}}
 	Compass compass = new Compass();
 	compass.IsBottomIndicatorVisible = false;
 	compass.IsCenterIndicatorVisible = false;
@@ -34,7 +34,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 
 #### __VB.NET__
 
-{{region raddocking-features-compass_1}}
+{{region vb-raddocking-features-compass_1}}
 	Dim compass As Compass = New Compass()
 	compass.IsBottomIndicatorVisible = False
 	compass.IsCenterIndicatorVisible = False
@@ -54,7 +54,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 
 #### __C#__
 
-{{region raddocking-features-compass_2}}
+{{region cs-raddocking-features-compass_2}}
 	RootCompass rootCompass = new RootCompass();
 	rootCompass.IsLeftIndicatorVisible = false;
 	rootCompass.IsRightIndicatorVisible = false;
@@ -62,7 +62,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 
 #### __VB.NET__
 
-{{region raddocking-features-compass_3}}
+{{region vb-raddocking-features-compass_3}}
 	Dim rootCompass As RootCompass = New RootCompass()
 	rootCompass.IsLeftIndicatorVisible = False
 	rootCompass.IsRightIndicatorVisible = False
@@ -76,7 +76,7 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 
 #### __C#__
 
-{{region raddocking-features-compass_4}}
+{{region cs-raddocking-features-compass_4}}
 	public partial class CompassSample : UserControl
 	{
 	    public CompassSample()
@@ -95,7 +95,7 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 
 #### __VB.NET__
 
-{{region raddocking-features-compass_5}}
+{{region vb-raddocking-features-compass_5}}
 	Public Partial Class CompassSample
 	    Inherits UserControl
 	

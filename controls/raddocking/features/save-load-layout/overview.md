@@ -24,7 +24,7 @@ Create a new application and add the following initial __RadDocking__ declaratio
 
 #### __XAML__
 
-{{region raddocking-features-save-load-layout_0}}
+{{region xaml-raddocking-features-save-load-layout_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	
@@ -103,7 +103,7 @@ Set the __RadDocking.SerializationTag__ attached property for each one of the pa
 
 #### __XAML__
 
-{{region raddocking-features-save-load-layout_1}}
+{{region xaml-raddocking-features-save-load-layout_1}}
 	...
 	<telerik:RadPane x:Name="LayoutXml" Header="Layout Xml"
 	                                telerik:RadDocking.SerializationTag="LayoutXml"
@@ -137,7 +137,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 		
 #### __C#__
 
-{{region raddocking-features-save-load-layout_2}}
+{{region cs-raddocking-features-save-load-layout_2}}
 	private string SaveLayout()
 	{
 	    string xml;
@@ -159,7 +159,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_3}}
+{{region vb-raddocking-features-save-load-layout_3}}
 	Private Function SaveLayout() As String
 	 Dim xml As String
 	 ' Save your layout for example in the isolated storage.
@@ -180,7 +180,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout_2_1}}
+{{region cs-raddocking-features-save-load-layout_3}}
 	private string SaveLayout()
 	{
 	    string xml;
@@ -202,7 +202,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_3_1}}
+{{region vb-raddocking-features-save-load-layout_3}}
 	Private Function SaveLayout() As String
 	 Dim xml As String
 	 ' Save your layout for example in the isolated storage.
@@ -225,7 +225,7 @@ Here is how the result XML will look like for the above example:
 
 #### __XAML__
 
-{{region raddocking-features-save-load-layout_4}}
+{{region xaml-raddocking-features-save-load-layout_4}}
 	<?xml version="1.0" encoding="utf-8"?>
 	<RadDocking>
 	    <DocumentHost>
@@ -294,7 +294,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout_5}}
+{{region cs-raddocking-features-save-load-layout_5}}
 	private void LoadLayout()
 	{
 	    // Load your layot from the isolated storage.
@@ -310,7 +310,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_6}}
+{{region vb-raddocking-features-save-load-layout_6}}
 	Private Sub LoadLayout()
 	 ' Load your layot from the isolated storage.
 	 Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForApplication()
@@ -325,7 +325,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout_5_1}}
+{{region cs-raddocking-features-save-load-layout_6}}
 	private void LoadLayout()
 	{
 	    // Load your layot from the isolated storage.
@@ -341,7 +341,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_6_1}}
+{{region vb-raddocking-features-save-load-layout_6}}
 	Private Sub LoadLayout()
 	 'Load your layot from the isolated storage.
 	 Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
@@ -402,13 +402,13 @@ The event argument of the __CustomElementLoading__ event is of type __LayoutSeri
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout_7}}
+{{region cs-raddocking-features-save-load-layout_7}}
 	public void SaveLayout( Stream destination, bool raiseEventsIfNoSerializationTag );
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_8}}
+{{region vb-raddocking-features-save-load-layout_8}}
 	Public Sub SaveLayout(ByVal destination As Stream, ByVal raiseEventsIfNoSerializationTag As Boolean)
 	End Sub
 {{endregion}}

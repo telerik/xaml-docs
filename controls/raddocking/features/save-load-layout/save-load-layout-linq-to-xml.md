@@ -20,7 +20,7 @@ Create a new application and add the following declaration.
                 
 #### __XAML__
 
-{{region raddocking-features-save-load-layout-linq-to-xml_1}}
+{{region xaml-raddocking-features-save-load-layout-linq-to-xml_1}}
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="Auto"/>
@@ -123,7 +123,7 @@ Example 1 shows how you can convert the generated XML from the SaveLayout functi
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout-linq-to-xml_1}}
+{{region cs-raddocking-features-save-load-layout-linq-to-xml_1}}
 	private XElement dockingLayout;
 	
 	private void OnSaveLayoutButtonClick(object sender, RoutedEventArgs e)
@@ -156,7 +156,7 @@ Example 2 shows how to load a RadDocking control's layout stored as valid XEleme
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout-linq-to-xml_2}}
+{{region cs-raddocking-features-save-load-layout-linq-to-xml_2}}
 	private XElement dockingLayout;
 	
 	private void OnLoadLayoutButtonClick(object sender, RoutedEventArgs e)

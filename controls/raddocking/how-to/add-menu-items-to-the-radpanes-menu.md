@@ -22,7 +22,7 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
 	
 	#### __C#__
 
-	{{region raddocking-how-to-add-menu-items-to-the-radpanes-menu_0}}
+	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_0}}
 		public static class RadDockingCommands
 		{
 			private static RoutedUICommand closeAllPanesButThisCommand;
@@ -45,7 +45,7 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
           
 	#### __XAML__
 
-	{{region raddocking-how-to-add-menu-items-to-the-radpanes-menu_2_1}}
+	{{region xaml-raddocking-how-to-add-menu-items-to-the-radpanes-menu_2}}
 		<DataTemplate x:Key="ContextMenuTemplate">
 			<telerik:RadContextMenu InheritDataContext="False">
 				<telerik:RadMenuItem 
@@ -79,7 +79,7 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
           
 	#### __C#__
 
-	{{region raddocking-how-to-add-menu-items-to-the-radpanes-menu_4}}
+	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_4}}
 		public static class RadDockingCommands
 		{
 			...
@@ -129,7 +129,7 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
 	
 	#### __C#__
 
-	{{region raddocking-how-to-add-menu-items-to-the-radpanes-menu_3}}
+	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_3}}
 		CommandManager.RegisterClassCommandBinding(
 			typeof(RadPaneGroup), 
 			new CommandBinding(
@@ -147,7 +147,7 @@ In order to remove the __RadPane__'s Menu, you should set the __RadPane__'s __Co
 
 #### __XAML__
 
-{{region raddocking-how-to-add-menu-items-to-the-radpanes-menu_5}}
+{{region xaml-raddocking-how-to-add-menu-items-to-the-radpanes-menu_5}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -165,13 +165,13 @@ In order to remove the __RadPane__'s Menu, you should set the __RadPane__'s __Co
 
 #### __C#__
 
-{{region raddocking-how-to-add-menu-items-to-the-radpanes-menu_6}}
+{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_6}}
 	radPane.ContextMenuTemplate = null;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddocking-how-to-add-menu-items-to-the-radpanes-menu_7}}
+{{region vb-raddocking-how-to-add-menu-items-to-the-radpanes-menu_7}}
 	radPane.ContextMenuTemplate = Nothing
 {{endregion}}
 

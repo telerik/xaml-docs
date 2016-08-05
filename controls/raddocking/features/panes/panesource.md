@@ -26,7 +26,7 @@ The next example demonstrates the described approach:
 
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-1}}
+	{{region cs-raddocking-features-panes-panesource-1}}
 		public class ViewModel : ViewModelBase
 		{
 			private ObservableCollection<RadPane> panes;
@@ -59,7 +59,7 @@ The next example demonstrates the described approach:
                         
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-2}}
+	{{region cs-raddocking-features-panes-panesource-2}}
 		public class ViewModel : ViewModelBase
 		{
 			private ObservableCollection<RadPane> panes;
@@ -97,7 +97,7 @@ The next example demonstrates the described approach:
 
 	#### __XAML__
 
-	{{region raddocking-features-panes-panesource-1}}
+	{{region xaml-raddocking-features-panes-panesource-1}}
 		<telerik:RadDocking PanesSource="{Binding Panes}">
 			<telerik:RadDocking.DockingPanesFactory>
 				<telerik:DockingPanesFactory/>
@@ -135,7 +135,7 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-3}}
+	{{region cs-raddocking-features-panes-panesource-3}}
 		public class ViewModel : ViewModelBase
 		{
 			private ObservableCollection<RadPane> panes;
@@ -173,7 +173,7 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	#### __XAML__
 
-	{{region raddocking-features-panes-panesource-2}}
+	{{region xaml-raddocking-features-panes-panesource-2}}
 		<telerik:RadDocking PanesSource="{Binding Panes}">
 			<telerik:RadSplitContainer InitialPosition="DockedLeft">
 				<telerik:RadPaneGroup  x:Name="LeftPaneGroup">
@@ -190,7 +190,7 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-4}}
+	{{region cs-raddocking-features-panes-panesource-4}}
 		public class CustomDockingPanesFactory : DockingPanesFactory
 		{
 				
@@ -201,7 +201,7 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-5}}
+	{{region cs-raddocking-features-panes-panesource-5}}
 		public class CustomDockingPanesFactory : DockingPanesFactory
 		{
 			protected override void AddPane(Telerik.Windows.Controls.RadDocking radDocking, Telerik.Windows.Controls.RadPane pane)
@@ -225,7 +225,7 @@ The next example demonstrates a common scenario when using the PaneSource proper
    
 	#### __XAML__
 
-	{{region raddocking-features-panes-panesource-3}}
+	{{region xaml-raddocking-features-panes-panesource-3}}
 		<telerik:RadDocking PanesSource="{Binding Panes}">
 			<telerik:RadSplitContainer InitialPosition="DockedLeft">
 				<telerik:RadPaneGroup  x:Name="LeftPaneGroup">

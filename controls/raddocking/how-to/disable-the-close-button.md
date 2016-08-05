@@ -28,7 +28,7 @@ Here is a simple __RadDocking__ declaration with a single pane.
 
 #### __XAML__
 
-{{region raddocking-how-to-disable-the-close-button_0}}
+{{region xaml-raddocking-how-to-disable-the-close-button_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -50,7 +50,7 @@ So, find your __RadPane__ declaration and set the following attribute:
 
 #### __XAML__
 
-{{region raddocking-how-to-disable-the-close-button_1}}
+{{region xaml-raddocking-how-to-disable-the-close-button_1}}
 	CanUserClose="False"
 {{endregion}}
 
@@ -62,7 +62,7 @@ The same operation can be done in the code-behind. In order to do that, set the 
 
 #### __C#__
 
-{{region raddocking-how-to-disable-the-close-button_2}}
+{{region cs-raddocking-how-to-disable-the-close-button_2}}
 	private void HideTheCloseButton()
 	{
 	    radPane.CanUserClose = false;
@@ -71,7 +71,7 @@ The same operation can be done in the code-behind. In order to do that, set the 
 
 #### __VB.NET__
 
-{{region raddocking-how-to-disable-the-close-button_3}}
+{{region vb-raddocking-how-to-disable-the-close-button_3}}
 	Private Sub HideTheCloseButton()
 	    radPane.CanUserClose = False
 	End Sub
@@ -87,7 +87,7 @@ The second way to disable the close button is to handle the __PreviewClose__ eve
 
 #### __XAML__
 
-{{region raddocking-how-to-disable-the-close-button_4}}
+{{region xaml-raddocking-how-to-disable-the-close-button_4}}
 	<telerik:RadDocking x:Name="radDocking" PreviewClose="radDocking_PreviewClose">
 {{endregion}}
 
@@ -95,7 +95,7 @@ Switch to the code-behind and add the following code in the event handler:
 
 #### __C#__
 
-{{region raddocking-how-to-disable-the-close-button_5}}
+{{region cs-raddocking-how-to-disable-the-close-button_5}}
 	private void radDocking_PreviewClose( object sender, StateChangeEventArgs e )
 	{
 	    e.Handled = true;
@@ -104,7 +104,7 @@ Switch to the code-behind and add the following code in the event handler:
 
 #### __VB.NET__
 
-{{region raddocking-how-to-disable-the-close-button_6}}
+{{region vb-raddocking-how-to-disable-the-close-button_6}}
 	Private Sub radDocking_PreviewClose(ByVal sender As Object, ByVal e As StateChangeEventArgs)
 	    e.Handled = True
 	End Sub

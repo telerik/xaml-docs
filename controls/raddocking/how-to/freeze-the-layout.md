@@ -22,7 +22,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 
 #### __XAML__
 
-{{region raddocking-how-to-freeze-the-layout_0}}
+{{region xaml-raddocking-how-to-freeze-the-layout_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	
 	        <telerik:RadSplitContainer InitialPosition="DockedLeft">
@@ -68,7 +68,7 @@ In order to disable the close button, you need to set the __CanUserClose__ prope
 
 #### __XAML__
 
-{{region raddocking-how-to-freeze-the-layout_1}}
+{{region xaml-raddocking-how-to-freeze-the-layout_1}}
 	...
 	<telerik:RadPane x:Name="radPane1" Header="Pane 1" CanUserClose="False">
 	...
@@ -89,7 +89,7 @@ In order to disable the pin/unpin button, you need to set the __CanUserPin__ pro
 
 #### __XAML__
 
-{{region raddocking-how-to-freeze-the-layout_2}}
+{{region xaml-raddocking-how-to-freeze-the-layout_2}}
 	...
 	<telerik:RadPane x:Name="radPane1" Header="Pane 1" CanUserClose="False" CanUserPin="False">
 	...
@@ -110,7 +110,7 @@ In order to disable the float behavior, you need to set the __CanFloat__ propert
 
 #### __XAML__
 
-{{region raddocking-how-to-freeze-the-layout_3}}
+{{region xaml-raddocking-how-to-freeze-the-layout_3}}
 	...
 	<telerik:RadPane x:Name="radPane1" Header="Pane 1" CanUserClose="False" CanUserPin="False" CanFloat="False">
 	...
@@ -129,7 +129,7 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 
 #### __C#__
 
-{{region raddocking-how-to-freeze-the-layout_4}}
+{{region cs-raddocking-how-to-freeze-the-layout_4}}
 	private void DisableMenu()
 	{
 	    radPane1.MenuCommands.Clear();
@@ -141,7 +141,7 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 
 #### __VB.NET__
 
-{{region raddocking-how-to-freeze-the-layout_5}}
+{{region vb-raddocking-how-to-freeze-the-layout_5}}
 	Private Sub DisableMenu()
 	    radPane1.MenuCommands.Clear()
 	    radPane2.MenuCommands.Clear()

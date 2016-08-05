@@ -28,7 +28,7 @@ For the current article, we will use the declaration of RadDocking shown in __Ex
 
 #### __[XAML] Example 1: RadDocking declaration__
 
-{{region raddocking-features-custom-save-load-layout_0}}
+{{region xaml-raddocking-features-custom-save-load-layout_0}}
 	<telerik:RadDocking x:Name="radDocking" 
 						ElementLayoutSaving="radDocking_ElementLayoutSaving"
                         CustomElementLoading="radDocking_CustomElementLoading"
@@ -85,7 +85,7 @@ __Example 2__ demonstrates how you could easily add the CanFloat property of a P
 
 #### __[C#] Example 2: Adding properties to ElementProperties__
 
-{{region raddocking-features-custom-save-load-layout_1}}
+{{region cs-raddocking-features-custom-save-load-layout_1}}
 	private void radDocking_ElementLayoutSaving(object sender, LayoutSerializationSavingEventArgs e)
 	{
 		var pane = e.AffectedElement as RadPane;
@@ -103,7 +103,7 @@ __Example 3__ demonstrates how you could exclude the Header of a pane from savin
 
 #### __[C#] Example 3: Prevent properties from saving__
 
-{{region raddocking-features-custom-save-load-layout_2}}
+{{region cs-raddocking-features-custom-save-load-layout_2}}
 	private void radDocking_ElementLayoutSaving(object sender, LayoutSerializationSavingEventArgs e)
 	{
 		var pane = e.AffectedElement as RadPane;
@@ -123,7 +123,7 @@ __Example 4__ shows the generated XML after the execution of the code of __Examp
 
 #### __[XAML] Example 4: Generated XML after saving__
 
-{{region raddocking-features-custom-save-load-layout_3}}
+{{region xaml-raddocking-features-custom-save-load-layout_3}}
 	<?xml version="1.0" encoding="utf-8"?>
 	<RadDocking SerializationTag="dock">
 		<DocumentHost>
@@ -169,7 +169,7 @@ __Example 5__ demonstrates how to exclude a specific RadPane and RadPaneGroup fr
 
 #### __[C#] Example 5: Exclude from saving__
 
-{{region raddocking-features-custom-save-load-layout_4}}
+{{region cs-raddocking-features-custom-save-load-layout_4}}
 	private void radDocking_ElementLayoutSaving(object sender, LayoutSerializationSavingEventArgs e)
 	{
 		if (e.AffectedElementSerializationTag.Equals("PaneGroup") ||
@@ -184,7 +184,7 @@ The generated XML file after executing the code in __Example 5__ is shown in __E
 
 #### __[XAML] Example 6: Generated XML after saving__
 
-{{region raddocking-features-custom-save-load-layout_5}}
+{{region xaml-raddocking-features-custom-save-load-layout_5}}
 	<?xml version="1.0" encoding="utf-8"?>
 	<RadDocking SerializationTag="dock">
 		<DocumentHost>
@@ -229,7 +229,7 @@ __Example 7__ demonstrates how to prevent the Header property of the left docked
 
 #### __[C#] Example 7: Loading properties__
 
-{{region raddocking-features-custom-save-load-layout_6}}
+{{region cs-raddocking-features-custom-save-load-layout_6}}
 	private void radDocking_ElementLoading(object sender, Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs e)
 	{
 		if (e.AffectedElementSerializationTag.Contains("PaneLeft"))
@@ -258,7 +258,7 @@ __Example 7__ demonstrates how to load a custom pane (for example, "MyRadPane") 
 
 #### __[C#] Example 6: Custom loading of elements__
 
-{{region raddocking-features-custom-save-load-layout_6}}
+{{region cs-raddocking-features-custom-save-load-layout_6}}
 	private void radDocking_CustomElementLoading(object sender, LayoutSerializationCustomLoadingEventArgs e)
 	{
 		if (e.CustomElementTypeName == "MyRadPane")
@@ -278,7 +278,7 @@ __Example 8__ demonstrates how to prevent a PaneGroup from being cleaned when th
 
 #### __[C#] Example 8: Prevent element from cleaning__
 
-{{region raddocking-features-custom-save-load-layout_7}}
+{{region cs-raddocking-features-custom-save-load-layout_7}}
 	private void radDocking_ElementLayoutCleaning(object sender, LayoutSerializationCleaningEventArgs e)
 	{
 		if (e.AffectedElementSerializationTag.Contains("PaneLeft"))

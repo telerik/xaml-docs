@@ -26,7 +26,7 @@ __RadDocking__ provides the ability to easily set the initial floating size and 
 
 #### __[XAML] Example 1: Setting RadDocking.FloatingSize and RadDocking.FloatingLocation__
 
-{{region raddocking-features-tool-window_0}}
+{{region xaml-raddocking-features-tool-window_0}}
 	<telerik:RadDocking>
 		<telerik:RadSplitContainer InitialPosition="FloatingOnly">
 			<telerik:RadPaneGroup>

@@ -35,14 +35,14 @@ You can add a __RadDocking__ control manually by writing the XAML code in __Exam
 
 #### __[XAML] Example 1: Adding RadDocking in XAML__
 
-{{region raddocking-getting-started2_0}}
+{{region xaml-raddocking-getting-started2_0}}
 	<telerik:RadDocking/>
 {{endregion}}
 
 In order to use a __RadDocking__ control in XAML, you have to add the following namespace declaration:
 
 #### __[XAML] Example 2: Declaring Telerik Namespace__
-{{region telerik-schemas}}
+{{region xaml-raddocking-getting-started2-8}}
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 {{endregion}}
 
@@ -62,7 +62,7 @@ The [Document Host]({%slug raddocking-features-document-host%}) is meant to be t
 
 #### __[XAML] Example 3: Adding DocumentHost in XAML__
 
-{{region raddocking-getting-started2_1}}
+{{region xaml-raddocking-getting-started2_1}}
 	<telerik:RadDocking>
 		<telerik:RadDocking.DocumentHost>
 		</telerik:RadDocking.DocumentHost>
@@ -79,7 +79,7 @@ __Example 4__ demonstrates how to add __RadSplitContainer__ inside the __Documen
 
 #### __[XAML] Example 4: Adding RadSplitContainer in XAML__
 
-{{region raddocking-getting-started2_2}}
+{{region xaml-raddocking-getting-started2_2}}
 	<telerik:RadDocking>
 		<telerik:RadDocking.DocumentHost>
 			<telerik:RadSplitContainer>
@@ -94,7 +94,7 @@ Before adding panes to your __RadDocking__ declaration, you need to add a [RadPa
 
 #### __[XAML] Example 5: Adding RadPaneGroup in XAML__
 
-{{region raddocking-getting-started2_3}}
+{{region xaml-raddocking-getting-started2_3}}
 	<telerik:RadDocking>
 		<telerik:RadDocking.DocumentHost>
 			<telerik:RadSplitContainer>
@@ -111,7 +111,7 @@ Before adding panes to your __RadDocking__ declaration, you need to add a [RadPa
 
 #### __[XAML] Example 6: Adding RadPane in XAML__
 
-{{region raddocking-getting-started2_4}}
+{{region xaml-raddocking-getting-started2_4}}
 	<telerik:RadDocking>
 		<telerik:RadDocking.DocumentHost>
 			<telerik:RadSplitContainer>
@@ -134,7 +134,7 @@ The __RadDocking__ from _Example 6_ does not have any __Header__ or __Content__ 
 
 #### __[XAML] Example 7: Adding header and content for the panes__
 
-{{region raddocking-getting-started2_5}}
+{{region xaml-raddocking-getting-started2_5}}
 	<telerik:RadDocking Width="300" Height="200">
 		<telerik:RadDocking.DocumentHost>
 			<telerik:RadSplitContainer>
@@ -159,7 +159,7 @@ If you need to prevent the pane from being [dragged and dropped]({%slug raddocki
 
 #### __[XAML] Example 8: Setting CanFloat__
 
-{{region raddocking-getting-started2_6}}
+{{region xaml-raddocking-getting-started2_6}}
 	<telerik:RadDocking Width="300" Height="200">
 		<telerik:RadDocking.DocumentHost>
 			<telerik:RadSplitContainer>
@@ -186,7 +186,7 @@ You can easily change the pin state of RadPane programmatically using the IsPinn
 
 #### __[XAML] Example 9: Pinned Panes__
 
-{{region raddocking-getting-started2_7}}
+{{region xaml-raddocking-getting-started2_7}}
 	<telerik:RadDocking>
 		<telerik:RadDocking.DocumentHost>
 			<telerik:RadSplitContainer>

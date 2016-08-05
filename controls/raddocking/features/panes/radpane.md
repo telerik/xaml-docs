@@ -34,7 +34,7 @@ Here is a sample XAML code, showing you how to add two __RadPane__ instances to 
 
 #### __XAML__
 
-{{region raddocking-panes-radpane_0}}
+{{region xaml-raddocking-panes-radpane_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	        <telerik:RadSplitContainer x:Name="radSplitContainer">
 	            <telerik:RadPaneGroup x:Name="radPaneGroup">
@@ -51,7 +51,7 @@ Here is a sample XAML code, showing you how to add two __RadPane__ instances to 
 
 #### __C#__
 
-{{region raddocking-panes-radpane_1}}
+{{region cs-raddocking-panes-radpane_1}}
 	RadPane radPane1 = new RadPane();
 	radPane1.Header = "Document 1";
 	radPane1.Content = new TextBlock() { Text = "Some simple text here" };
@@ -66,7 +66,7 @@ Here is a sample XAML code, showing you how to add two __RadPane__ instances to 
 
 #### __VB.NET__
 
-{{region raddocking-panes-radpane_2}}
+{{region vb-raddocking-panes-radpane_2}}
 	Dim radPane1 As New RadPane()
 	radPane1.Header = "Document 1"
 	Dim textBlock As New TextBlock()
@@ -152,19 +152,19 @@ You can also hide/show your __RadPane__ instances programmatically using the boo
         
 #### __XAML__
 
-{{region raddocking-panes-radpane_3}}
+{{region xaml-raddocking-panes-radpane_3}}
 	<telerik:RadPane x:Name="radPane" IsHidden="True"/>
 {{endregion}}
 
 #### __C#__
 
-{{region raddocking-panes-radpane_4}}
+{{region cs-raddocking-panes-radpane_4}}
 	radPane.IsHidden = true;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddocking-panes-radpane_5}}
+{{region vb-raddocking-panes-radpane_5}}
 	radPane.IsHidden = true
 {{endregion}}
 
@@ -206,7 +206,7 @@ The next example will demonstrate how you could activate (focus) a RadPane witho
         
 #### __XAML__
 
-{{region raddocking-panes-radpane_4}}
+{{region xaml-raddocking-panes-radpane_4}}
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="Auto"/>
@@ -227,7 +227,7 @@ The next example will demonstrate how you could activate (focus) a RadPane witho
 
 #### __C#__
 
-{{region raddocking-panes-radpane_5}}
+{{region cs-raddocking-panes-radpane_5}}
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    this.Pane3.IsActive = true;

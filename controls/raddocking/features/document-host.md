@@ -18,7 +18,7 @@ Here is the XAML declaration of the above structure.
 
 #### __XAML__
 
-{{region raddocking-features-document-host_0}}
+{{region xaml-raddocking-features-document-host_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -54,7 +54,7 @@ The next code snippet shows how to set the CloseButtonPosition to InPane:
   
 #### __XAML__
 
-{{region raddocking-features-document-host_1}}
+{{region xaml-raddocking-features-document-host_1}}
 	<telerik:RadDocking CloseButtonPosition="InPane">
 		<telerik:RadDocking.DocumentHost>
 			<telerik:RadSplitContainer>
@@ -94,7 +94,7 @@ When the number of Panes inside the __DocumentHost__ increases and there is not 
 
 #### __XAML__
 
-{{region raddocking-features-document-host_2}}
+{{region xaml-raddocking-features-document-host_2}}
 	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto">
 {{endregion}}
 
@@ -108,7 +108,7 @@ In addition to this you could also display the drop down menu button that contai
 
 #### __XAML__
 
-{{region raddocking-features-document-host_3}}
+{{region xaml-raddocking-features-document-host_3}}
 	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto" DropDownDisplayMode="Visible">
 {{endregion}}
 

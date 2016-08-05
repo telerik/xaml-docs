@@ -16,7 +16,7 @@ Copy the created style with all of the resources it uses and place it in the __R
 
 #### __XAML__
 
-{{region raddocking-theming-radsplitcontainer_0}}
+{{region xaml-raddocking-theming-radsplitcontainer_0}}
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 	    <!--Paste the style and all of the resources it uses here. --> 
@@ -30,7 +30,7 @@ The next step is to declare the required namespaces in the resource dictionary.
 
 #### __XAML__
 
-{{region raddocking-theming-radsplitcontainer_1}}
+{{region xaml-raddocking-theming-radsplitcontainer_1}}
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	                    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
@@ -44,7 +44,7 @@ Finally, in order to make the style default for all of the __RadSplitContainer__
 
 #### __XAML__
 
-{{region raddocking-theming-radsplitcontainer_2}}
+{{region xaml-raddocking-theming-radsplitcontainer_2}}
 	<Style TargetType="telerik:RadSplitContainer">
 	        ...
 	</Style>
@@ -56,7 +56,7 @@ To apply the theme got to the UserControl that hosts your __RadDocking__ control
 
 #### __C#__
 
-{{region raddocking-theming-radsplitcontainer_3}}
+{{region cs-raddocking-theming-radsplitcontainer_3}}
 	public StylingRadPaneGroup()
 	{
 	    InitializeComponent();
@@ -66,7 +66,7 @@ To apply the theme got to the UserControl that hosts your __RadDocking__ control
 
 #### __VB.NET__
 
-{{region raddocking-theming-radsplitcontainer_4}}
+{{region vb-raddocking-theming-radsplitcontainer_4}}
 	Public Sub New()
 	    InitializeComponent()
 	    StyleManager.SetTheme(Me.radDocking, New Theme(New Uri("/RadDockingSample;component/Themes/RadDockingTheme.xaml", UriKind.Relative)))
@@ -79,7 +79,7 @@ Finally in order to make the style default for all of the __RadSplitContainer__c
 
 #### __XAML__
 
-{{region raddocking-theming-radsplitcontainer_5}}
+{{region xaml-raddocking-theming-radsplitcontainer_5}}
 	<Style x:Key="{telerik:ThemeResourceKey ThemeType={x:Type local:RadDockingTheme}, ElementType={x:Type telerik:RadSplitContainer}}"
 	       TargetType="{x:Type telerik:RadSplitContainer}">
 	    ...

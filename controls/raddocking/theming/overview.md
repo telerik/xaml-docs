@@ -38,7 +38,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 
 #### __C#__
 
-{{region raddocking-theming-overview_0}}
+{{region cs-raddocking-theming-overview_0}}
 	public StylingPaneHeader()
 	{
 	    InitializeComponent();
@@ -48,7 +48,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 
 #### __VB.NET__
 
-{{region raddocking-theming-overview_1}}
+{{region vb-raddocking-theming-overview_1}}
 	Public Sub New()
 	    InitializeComponent()
 	    StyleManager.SetTheme(Me.radDocking, New Theme(New Uri("/RadDockingSample;component/Themes/RadDockingTheme.xaml", UriKind.Relative)))
@@ -57,7 +57,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 
 #### __XAML__
 
-{{region raddocking-theming-overview_2}}
+{{region xaml-raddocking-theming-overview_2}}
 	<UserControl.Resources>
 	    <CustomThemes:CustomTheme x:Key="MyTheme" />
 	<UserControl.Resources>
@@ -68,7 +68,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 
 #### __C#__
 
-{{region raddocking-theming-overview_3}}
+{{region cs-raddocking-theming-overview_3}}
 	public StylingPaneHeader()
 	{
 	    InitializeComponent();
@@ -78,7 +78,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 
 #### __VB.NET__
 
-{{region raddocking-theming-overview_4}}
+{{region vb-raddocking-theming-overview_4}}
 	Public Sub New()
 	    InitializeComponent()
 	    StyleManager.SetTheme(Me.radDocking, New RadDockingTheme())

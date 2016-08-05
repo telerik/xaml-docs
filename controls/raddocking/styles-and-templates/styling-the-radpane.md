@@ -110,7 +110,7 @@ After finishing the modifications, set the style to the desired __RadPanes__.{% 
 
 #### __XAML__
 
-{{region raddocking-styling-the-radpane_0}}
+{{region xaml-raddocking-styling-the-radpane_0}}
 	<telerik:RadPane Style="{StaticResource RadPaneStyle}">
 	</telerik:RadPane>
 {{endregion}}

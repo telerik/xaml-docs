@@ -48,7 +48,7 @@ In order to group two or more panes, you should add them to the __RadPaneGroup__
 
 #### __XAML__
 
-{{region raddocking-features-pane-groups_0}}
+{{region xaml-raddocking-features-pane-groups_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadSplitContainer>
 	
@@ -65,7 +65,7 @@ The same operation can be done in the code-behind. You can group panes using the
 
 #### __C#__
 
-{{region raddocking-features-pane-groups_1}}
+{{region cs-raddocking-features-pane-groups_1}}
 	private void GroupPanes()
 	{
 	    Telerik.Windows.Controls.RadPane pane3 = new Telerik.Windows.Controls.RadPane();
@@ -76,7 +76,7 @@ The same operation can be done in the code-behind. You can group panes using the
 
 #### __VB.NET__
 
-{{region raddocking-features-pane-groups_2}}
+{{region vb-raddocking-features-pane-groups_2}}
 	Private Sub GroupPanes()
 	    Dim pane3 As New Telerik.Windows.Controls.RadPane()
 	    pane3.Header = "Properties"
@@ -98,7 +98,7 @@ You can remove panes using procedural code in two ways:
 
 #### __C#__
 
-{{region raddocking-features-pane-groups_5}}
+{{region cs-raddocking-features-pane-groups_5}}
 	private void RemovePane( RadPane paneToRemove )
 	{
 	    Group1.Items.Remove( paneToRemove );
@@ -107,7 +107,7 @@ You can remove panes using procedural code in two ways:
 
 #### __VB.NET__
 
-{{region raddocking-features-pane-groups_6}}
+{{region vb-raddocking-features-pane-groups_6}}
 	Private Sub RemovePane(RadPane paneToRemove)
 	    Group1.Items.Remove(paneToRemove)
 	End Sub
@@ -117,7 +117,7 @@ You can remove panes using procedural code in two ways:
 
 #### __C#__
 
-{{region raddocking-features-pane-groups_7}}
+{{region cs-raddocking-features-pane-groups_7}}
 	private void RemovePane( RadPane paneToRemove )
 	{
 	    paneToRemove.RemoveFromParent();
@@ -126,7 +126,7 @@ You can remove panes using procedural code in two ways:
 
 #### __VB.NET__
 
-{{region raddocking-features-pane-groups_8}}
+{{region vb-raddocking-features-pane-groups_8}}
 	Private Sub RemovePane(RadPane paneToRemove)
 	    paneToRemove.RemoveFromParent()
 	End Sub
@@ -138,7 +138,7 @@ The __RadPaneGroup__ class exposes __HideAllPanes__ method, which allows you to 
 
 #### __C#__
 
-{{region raddocking-features-pane-groups_9}}
+{{region cs-raddocking-features-pane-groups_9}}
 	private void HideAllPanes()
 	{
 	    Group1.HideAllPanes();
@@ -147,7 +147,7 @@ The __RadPaneGroup__ class exposes __HideAllPanes__ method, which allows you to 
 
 #### __VB.NET__
 
-{{region raddocking-features-pane-groups_10}}
+{{region vb-raddocking-features-pane-groups_10}}
 	Private Sub HideAllPanes()
 	    Group1.HideAllPanes()
 	End Sub
@@ -161,7 +161,7 @@ The __RadPaneGroup__ class exposes __ShowAllPanes__ method, which allows you to 
 
 #### __C#__
 
-{{region raddocking-features-pane-groups_11}}
+{{region cs-raddocking-features-pane-groups_11}}
 	private void ShowAllPanes()
 	{
 	    Group1.ShowAllPanes();
@@ -170,7 +170,7 @@ The __RadPaneGroup__ class exposes __ShowAllPanes__ method, which allows you to 
 
 #### __VB.NET__
 
-{{region raddocking-features-pane-groups_12}}
+{{region vb-raddocking-features-pane-groups_12}}
 	Private Sub ShowAllPanes()
 	    Group1.ShowAllPanes()
 	End Sub
@@ -186,7 +186,7 @@ The __RadPaneGroup__ class exposes __PinAllPanes__ method, which allows you to p
 
 #### __C#__
 
-{{region raddocking-features-pane-groups_13}}
+{{region cs-raddocking-features-pane-groups_13}}
 	private void PinAllPanes()
 	{
 	    Group1.PinAllPanes();
@@ -195,7 +195,7 @@ The __RadPaneGroup__ class exposes __PinAllPanes__ method, which allows you to p
 
 #### __VB.NET__
 
-{{region raddocking-features-pane-groups_14}}
+{{region vb-raddocking-features-pane-groups_14}}
 	Private Sub PinAllPanes()
 	    Group1.PinAllPanes()
 	End Sub
@@ -209,7 +209,7 @@ The __RadPaneGroup__ class exposes __UnpinAllPanes__ method, which allows you to
 
 #### __C#__
 
-{{region raddocking-features-pane-groups_15}}
+{{region cs-raddocking-features-pane-groups_15}}
 	private void UnpinAllPanes()
 	{
 	    Group1.UnpinAllPanes();
@@ -218,7 +218,7 @@ The __RadPaneGroup__ class exposes __UnpinAllPanes__ method, which allows you to
 
 #### __VB.NET__
 
-{{region raddocking-features-pane-groups_16}}
+{{region vb-raddocking-features-pane-groups_16}}
 	Private Sub UnpinAllPanes()
 	    Group1.UnpinAllPanes()
 	End Sub
@@ -234,7 +234,7 @@ The sizes of the __RadPaneGroups__ that are not directly set in the __RadDocking
 
 #### __XAML__
 
-{{region raddocking-features-pane-groups_17}}
+{{region xaml-raddocking-features-pane-groups_17}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadSplitContainer Height="200" InitialPosition="DockedTop" Orientation="Horizontal">
 	        <telerik:RadPaneGroup telerik:ProportionalStackPanel.RelativeSize="200, 200">

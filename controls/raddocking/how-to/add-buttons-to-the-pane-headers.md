@@ -18,7 +18,7 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 
 #### __XAML__
 
-{{region raddocking-how-to-add-buttons-to-the-pane-headers_0}}
+{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -42,7 +42,7 @@ Create a new data template in your XAML. For example, see the next declaration:
 
 #### __XAML__
 
-{{region raddocking-how-to-add-buttons-to-the-pane-headers_1}}
+{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_1}}
 	<DataTemplate x:Key="TitleTemplate">
 	    <Grid>
 	        <Grid.ColumnDefinitions>
@@ -61,7 +61,7 @@ Change your XAML declaration and set the __TitleTemplate__ property of the __Rad
 
 #### __XAML__
 
-{{region raddocking-how-to-add-buttons-to-the-pane-headers_2}}
+{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_2}}
 	<telerik:RadDocking.DocumentHost>
 	    <telerik:RadSplitContainer>
 	        <telerik:RadPaneGroup x:Name="radPaneGroup">
@@ -83,7 +83,7 @@ In order to add a behavior to the button, you should use the command mechanism. 
 
 #### __XAML__
 
-{{region raddocking-how-to-add-buttons-to-the-pane-headers_3}}
+{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_3}}
 	<DataTemplate x:Key="TitleTemplate">
 	    <Grid>
 	        <Grid.ColumnDefinitions>

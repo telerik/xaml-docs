@@ -97,7 +97,7 @@ After finishing with your modifications, remove the dummy control and set the st
         
 #### __XAML__
 
-{{region raddocking-styling-the-root-compass_0}}
+{{region xaml-raddocking-styling-the-root-compass_0}}
 	<telerik:RadDocking x:Name="radDocking"
 	                         RootCompassStyle="{StaticResource RootCompassStyle}">
 	      ...

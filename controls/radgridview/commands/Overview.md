@@ -44,6 +44,9 @@ All supported commands are defined in the RadGridViewCommands class and are list
 		  
 
 * __Delete__ - removes the selected item from the collection.
+
+
+* __ExtendSelectionToCurrentUnit__ - selects all the selection unit from the anchor upto the chosen unit.
 		  
 
 * __MoveBottom, MoveTop__ - moves the focus to the cell situated in the bottom/top item.
@@ -66,8 +69,9 @@ All supported commands are defined in the RadGridViewCommands class and are list
 
 * __MoveHome__ - moves the focus to the cell situated in the first item.
 
-* __Search__: Executed in order to show the search panel.
+* __Search__- executed in order to show the search panel.
 		  
+* __SearchByText__- adds search criteria programmatically.
 
 * __SelectCurrentItem__ - selects the current item.
 		  
@@ -75,7 +79,7 @@ All supported commands are defined in the RadGridViewCommands class and are list
 * __SelectCurrentUnit__ - selects the current unit. By default the selection unit is __"FullRow"__, but the __SelectionUnit__ property may also be set to __"Cell"__, thus enabling a cell-based selection.
 		  
 
-* __ExtendSelectionToCurrentUnit__ - selects all the selection unit from the anchor upto the chosen unit.
+
 
 As the commands provided by __RadGridView__ are __ICommands__ at their core, they do provide methods both for checking if they can be invoked - __CanExecute()__ and for invoking it - __Execute()__. 
 		

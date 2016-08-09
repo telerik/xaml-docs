@@ -30,41 +30,41 @@ For the current article, we will use the declaration of RadDocking shown in __Ex
 
 {{region xaml-raddocking-features-custom-save-load-layout_0}}
 	<telerik:RadDocking x:Name="radDocking" 
-						ElementLayoutSaving="radDocking_ElementLayoutSaving"
-                        CustomElementLoading="radDocking_CustomElementLoading"
-                        ElementLayoutCleaning="radDocking_ElementLayoutCleaning">
-		<telerik:RadDocking.DocumentHost>
-			<telerik:RadSplitContainer>
-				<telerik:RadPaneGroup x:Name="DocumentGroup">
-					<telerik:RadDocumentPane Header="Document 1" Title="Document 1" telerik:RadDocking.SerializationTag="DocumentPane">
-						<TextBox x:Name="DocumentTextBox" Text="Some text" />
-					</telerik:RadDocumentPane>
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadDocking.DocumentHost>
-		<telerik:RadSplitContainer InitialPosition="DockedLeft">
-			<telerik:RadPaneGroup telerik:RadDocking.SerializationTag="PaneGroup">
-				<telerik:RadPane Header="Pane Left 1"  telerik:RadDocking.SerializationTag="PaneLeft1">
-					<TextBox x:Name="TextBox" Text="Some other text" />
-				</telerik:RadPane>
-				<telerik:RadPane Header="Pane Left 2"  telerik:RadDocking.SerializationTag="PaneLeft2">
-					<TextBox Text="Pane Left 2" />
-				</telerik:RadPane>
-				<telerik:RadPane Header="Pane Left 3"  telerik:RadDocking.SerializationTag="PaneLeft3">
-					<TextBox Text="Pane Left 3" />
-				</telerik:RadPane>
-				<telerik:RadPane Header="Pane Left 4"  telerik:RadDocking.SerializationTag="PaneLeft4">
-					<TextBox Text="Pane Left 4" />
-				</telerik:RadPane>
-			</telerik:RadPaneGroup>
-		</telerik:RadSplitContainer>
-		<telerik:RadSplitContainer InitialPosition="DockedTop">
-			<telerik:RadPaneGroup>
-				<telerik:RadPane Header="Pane Top 1" telerik:RadDocking.SerializationTag="PaneTop1">
-					<TextBox Text="Pane Top 1" />
-				</telerik:RadPane>
-			</telerik:RadPaneGroup>
-		</telerik:RadSplitContainer>
+	ElementLayoutSaving="radDocking_ElementLayoutSaving"
+	                CustomElementLoading="radDocking_CustomElementLoading"
+	                ElementLayoutCleaning="radDocking_ElementLayoutCleaning">
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup x:Name="DocumentGroup">
+	                <telerik:RadDocumentPane Header="Document 1" Title="Document 1" telerik:RadDocking.SerializationTag="DocumentPane">
+	                    <TextBox x:Name="DocumentTextBox" Text="Some text" />
+	                </telerik:RadDocumentPane>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
+	    <telerik:RadSplitContainer InitialPosition="DockedLeft">
+	        <telerik:RadPaneGroup telerik:RadDocking.SerializationTag="PaneGroup">
+	            <telerik:RadPane Header="Pane Left 1"  telerik:RadDocking.SerializationTag="PaneLeft1">
+	                <TextBox x:Name="TextBox" Text="Some other text" />
+	            </telerik:RadPane>
+	            <telerik:RadPane Header="Pane Left 2"  telerik:RadDocking.SerializationTag="PaneLeft2">
+	                <TextBox Text="Pane Left 2" />
+	            </telerik:RadPane>
+	            <telerik:RadPane Header="Pane Left 3"  telerik:RadDocking.SerializationTag="PaneLeft3">
+	                <TextBox Text="Pane Left 3" />
+	            </telerik:RadPane>
+	            <telerik:RadPane Header="Pane Left 4"  telerik:RadDocking.SerializationTag="PaneLeft4">
+	                <TextBox Text="Pane Left 4" />
+	            </telerik:RadPane>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
+	    <telerik:RadSplitContainer InitialPosition="DockedTop">
+	        <telerik:RadPaneGroup>
+	            <telerik:RadPane Header="Pane Top 1" telerik:RadDocking.SerializationTag="PaneTop1">
+	                <TextBox Text="Pane Top 1" />
+	            </telerik:RadPane>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -88,12 +88,12 @@ __Example 2__ demonstrates how you could easily add the CanFloat property of a P
 {{region cs-raddocking-features-custom-save-load-layout_1}}
 	private void radDocking_ElementLayoutSaving(object sender, LayoutSerializationSavingEventArgs e)
 	{
-		var pane = e.AffectedElement as RadPane;
-
-		if(e.AffectedElementSerializationTag.Equals("PaneTop1") && pane != null)
-		{
-			e.ElementProperties.Add("CanFloat", pane.CanFloat.ToString());
-		}
+	    var pane = e.AffectedElement as RadPane;
+	
+	    if (e.AffectedElementSerializationTag.Equals("PaneTop1") && pane != null)
+	    {
+	        e.ElementProperties.Add("CanFloat", pane.CanFloat.ToString());
+	    }
 	}
 {{endregion}}
 
@@ -106,16 +106,16 @@ __Example 3__ demonstrates how you could exclude the Header of a pane from savin
 {{region cs-raddocking-features-custom-save-load-layout_2}}
 	private void radDocking_ElementLayoutSaving(object sender, LayoutSerializationSavingEventArgs e)
 	{
-		var pane = e.AffectedElement as RadPane;
-
-		if(e.AffectedElementSerializationTag.Equals("PaneTop1") && pane != null)
-		{
-			e.ElementProperties.Add("CanFloat", pane.CanFloat.ToString());
-			if(e.ElementProperties.ContainsKey("Header"))
-			{
-				e.ElementProperties.Remove("Header");
-			}
-		}
+	    var pane = e.AffectedElement as RadPane;
+	
+	    if (e.AffectedElementSerializationTag.Equals("PaneTop1") && pane != null)
+	    {
+	        e.ElementProperties.Add("CanFloat", pane.CanFloat.ToString());
+	        if (e.ElementProperties.ContainsKey("Header"))
+	        {
+	            e.ElementProperties.Remove("Header");
+	        }
+	    }
 	}
 {{endregion}}
 
@@ -124,42 +124,41 @@ __Example 4__ shows the generated XML after the execution of the code of __Examp
 #### __[XAML] Example 4: Generated XML after saving__
 
 {{region xaml-raddocking-features-custom-save-load-layout_3}}
-	<?xml version="1.0" encoding="utf-8"?>
 	<RadDocking SerializationTag="dock">
-		<DocumentHost>
-			<RadSplitContainer>
-				<Items>
-					<RadPaneGroup SelectedIndex="0">
-						<Items>
-							<RadDocumentPane SerializationTag="DocumentPane" IsDockable="True" Title="Document 1" Header="Document 1" />
-						</Items>
-					</RadPaneGroup>
-				</Items>
-			</RadSplitContainer>
-		</DocumentHost>
-		<SplitContainers>
-			<RadSplitContainer Dock="DockedLeft" Width="240">
-				<Items>
-					<RadPaneGroup SerializationTag="PaneGroupLeft" SelectedIndex="0">
-						<Items>
-							<RadPane SerializationTag="PaneLeft1" IsDockable="True" Header="Pane Left 1" />
-							<RadPane SerializationTag="PaneLeft2" IsDockable="True" Header="Pane Left 2" />
-							<RadPane SerializationTag="PaneLeft3" IsDockable="True" Header="Pane Left 3" />
-							<RadPane SerializationTag="PaneLeft4" IsDockable="True" Header="Pane Left 4" />
-						</Items>
-					</RadPaneGroup>
-				</Items>
-			</RadSplitContainer>
-			<RadSplitContainer Dock="DockedTop" Height="180">
-				<Items>
-					<RadPaneGroup SelectedIndex="0">
-						<Items>
-							<RadPane SerializationTag="PaneTop1" IsDockable="True" CanFloat="False" />
-						</Items>
-					</RadPaneGroup>
-				</Items>
-			</RadSplitContainer>
-		</SplitContainers>
+	    <DocumentHost>
+	        <RadSplitContainer>
+	            <Items>
+	                <RadPaneGroup SelectedIndex="0">
+	                    <Items>
+	                        <RadDocumentPane SerializationTag="DocumentPane" IsDockable="True" Title="Document 1" Header="Document 1" />
+	                    </Items>
+	                </RadPaneGroup>
+	            </Items>
+	        </RadSplitContainer>
+	    </DocumentHost>
+	    <SplitContainers>
+	        <RadSplitContainer Dock="DockedLeft" Width="240">
+	            <Items>
+	                <RadPaneGroup SerializationTag="PaneGroupLeft" SelectedIndex="0">
+	                    <Items>
+	                        <RadPane SerializationTag="PaneLeft1" IsDockable="True" Header="Pane Left 1" />
+	                        <RadPane SerializationTag="PaneLeft2" IsDockable="True" Header="Pane Left 2" />
+	                        <RadPane SerializationTag="PaneLeft3" IsDockable="True" Header="Pane Left 3" />
+	                        <RadPane SerializationTag="PaneLeft4" IsDockable="True" Header="Pane Left 4" />
+	                    </Items>
+	                </RadPaneGroup>
+	            </Items>
+	        </RadSplitContainer>
+	        <RadSplitContainer Dock="DockedTop" Height="180">
+	            <Items>
+	                <RadPaneGroup SelectedIndex="0">
+	                    <Items>
+	                        <RadPane SerializationTag="PaneTop1" IsDockable="True" CanFloat="False" />
+	                    </Items>
+	                </RadPaneGroup>
+	            </Items>
+	        </RadSplitContainer>
+	    </SplitContainers>
 	</RadDocking>
 {{endregion}}
 
@@ -172,11 +171,11 @@ __Example 5__ demonstrates how to exclude a specific RadPane and RadPaneGroup fr
 {{region cs-raddocking-features-custom-save-load-layout_4}}
 	private void radDocking_ElementLayoutSaving(object sender, LayoutSerializationSavingEventArgs e)
 	{
-		if (e.AffectedElementSerializationTag.Equals("PaneGroup") ||
-			e.AffectedElementSerializationTag.Equals("DocumentPane"))
-		{
-			e.Cancel = true;
-		}
+	    if (e.AffectedElementSerializationTag.Equals("PaneGroup") ||
+	        e.AffectedElementSerializationTag.Equals("DocumentPane"))
+	    {
+	        e.Cancel = true;
+	    }
 	}
 {{endregion}}
 
@@ -185,31 +184,30 @@ The generated XML file after executing the code in __Example 5__ is shown in __E
 #### __[XAML] Example 6: Generated XML after saving__
 
 {{region xaml-raddocking-features-custom-save-load-layout_5}}
-	<?xml version="1.0" encoding="utf-8"?>
 	<RadDocking SerializationTag="dock">
-		<DocumentHost>
-			<RadSplitContainer>
-				<Items>
-					<RadPaneGroup SelectedIndex="0">
-						<Items />
-					</RadPaneGroup>
-				</Items>
-			</RadSplitContainer>
-		</DocumentHost>
-		<SplitContainers>
-			<RadSplitContainer Dock="DockedLeft" Width="240">
-				<Items />
-			</RadSplitContainer>
-			<RadSplitContainer Dock="DockedTop" Height="180">
-				<Items>
-					<RadPaneGroup SelectedIndex="0">
-						<Items>
-							<RadPane SerializationTag="PaneTop1" IsDockable="True" Header="Pane Top 1" />
-						</Items>
-					</RadPaneGroup>
-				</Items>
-			</RadSplitContainer>
-		</SplitContainers>
+	    <DocumentHost>
+	        <RadSplitContainer>
+	            <Items>
+	                <RadPaneGroup SelectedIndex="0">
+	                    <Items />
+	                </RadPaneGroup>
+	            </Items>
+	        </RadSplitContainer>
+	    </DocumentHost>
+	    <SplitContainers>
+	        <RadSplitContainer Dock="DockedLeft" Width="240">
+	            <Items />
+	        </RadSplitContainer>
+	        <RadSplitContainer Dock="DockedTop" Height="180">
+	            <Items>
+	                <RadPaneGroup SelectedIndex="0">
+	                    <Items>
+	                        <RadPane SerializationTag="PaneTop1" IsDockable="True" Header="Pane Top 1" />
+	                    </Items>
+	                </RadPaneGroup>
+	            </Items>
+	        </RadSplitContainer>
+	    </SplitContainers>
 	</RadDocking>
 {{endregion}}
 
@@ -230,15 +228,12 @@ __Example 7__ demonstrates how to prevent the Header property of the left docked
 #### __[C#] Example 7: Loading properties__
 
 {{region cs-raddocking-features-custom-save-load-layout_6}}
-	private void radDocking_ElementLoading(object sender, Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs e)
+	private void radDocking_CustomElementLoading(object sender, LayoutSerializationCustomLoadingEventArgs e)
 	{
-		if (e.AffectedElementSerializationTag.Contains("PaneLeft"))
-		{
-			if(e.ElementProperties.ContainsKey("Header"))
-			{
-				e.ElementProperties.Remove("Header");
-			}
-		}
+	    if (e.CustomElementTypeName == "MyRadPane")
+	    {
+	        e.SetAffectedElement(new MyRadPane());
+	    }
 	}
 {{endregion}}
 
@@ -261,10 +256,10 @@ __Example 7__ demonstrates how to load a custom pane (for example, "MyRadPane") 
 {{region cs-raddocking-features-custom-save-load-layout_6}}
 	private void radDocking_CustomElementLoading(object sender, LayoutSerializationCustomLoadingEventArgs e)
 	{
-		if (e.CustomElementTypeName == "MyRadPane")
-		{
-			e.SetAffectedElement(new MyRadPane());
-		}
+	    if (e.CustomElementTypeName == "MyRadPane")
+	    {
+	        e.SetAffectedElement(new MyRadPane());
+	    }
 	}
 {{endregion}}
 
@@ -281,10 +276,10 @@ __Example 8__ demonstrates how to prevent a PaneGroup from being cleaned when th
 {{region cs-raddocking-features-custom-save-load-layout_7}}
 	private void radDocking_ElementLayoutCleaning(object sender, LayoutSerializationCleaningEventArgs e)
 	{
-		if (e.AffectedElementSerializationTag.Contains("PaneLeft"))
-		{
-			e.Cancel = true;
-		}
+	    if (e.AffectedElementSerializationTag.Contains("PaneLeft"))
+	    {
+	        e.Cancel = true;
+	    }
 	}
 {{endregion}}
 

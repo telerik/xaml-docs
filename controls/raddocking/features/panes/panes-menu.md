@@ -30,7 +30,7 @@ You can modify the menu by using the __ContextMenuTemplate__ property of the __R
 
 {{region xaml-raddocking-features-panes-panes-menu_0}}
 	<telerik:RadPane x:Name="radPane"
-	                     Header="Pane 1">
+	             Header="Pane 1">
 	    <telerik:RadPane.ContextMenuTemplate>
 	        <DataTemplate>
 	            <telerik:RadContextMenu>
@@ -73,15 +73,15 @@ Here is the final code:
 #### __XAML__
 
 {{region xaml-raddocking-features-panes-panes-menu_2}}
-	<telerik:RadPane x:Name="radPane"
-	                     Header="Pane 1">
+	<telerik:RadPane x:Name="radPane1"
+	             Header="Pane 1">
 	    <telerik:RadPane.ContextMenuTemplate>
 	        <DataTemplate>
 	            <telerik:RadContextMenu>
 	                <telerik:RadMenuItem Header="Floating"
-	                                               Command="telerik:RadDockingCommands.Floating" />
+	                                       Command="telerik:RadDockingCommands.Floating" />
 	                <telerik:RadMenuItem Header="Dockable"
-	                                               Command="telerik:RadDockingCommands.Dockable" />
+	                                       Command="telerik:RadDockingCommands.Dockable" />
 	            </telerik:RadContextMenu>
 	        </DataTemplate>
 	    </telerik:RadPane.ContextMenuTemplate>

@@ -79,8 +79,8 @@ When you want to achieve __horizontally__ oriented layout, you need to set the _
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_1}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" Orientation="Horizontal">
+	<telerik:RadDocking x:Name="radDocking1">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer1" Orientation="Horizontal">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -117,7 +117,7 @@ The __RadSplitContainer__'s __Orientation__ can also be set in the code-behind.
 
 {{region vb-raddocking-features-split-container_3}}
 	Private Sub SetOrientationToVertical()
-	    radSplitContainer.Orientation = Orientation.Vertical
+		radSplitContainer.Orientation = Orientation.Vertical
 	End Sub
 {{endregion}}
 
@@ -136,7 +136,7 @@ The __RadSplitContainer__'s __Orientation__ can also be set in the code-behind.
 
 {{region vb-raddocking-features-split-container_5}}
 	Private Sub SetOrientationToHorizontal()
-	    radSplitContainer.Orientation = Orientation.Horizontal
+		radSplitContainer.Orientation = Orientation.Horizontal
 	End Sub
 {{endregion}}
 
@@ -153,8 +153,8 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_6}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="DockedLeft">
+	<telerik:RadDocking x:Name="radDocking2">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer2" InitialPosition="DockedLeft">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -175,8 +175,8 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_7}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="DockedTop">
+	<telerik:RadDocking x:Name="radDocking3">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer3" InitialPosition="DockedTop">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -197,8 +197,8 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_8}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="DockedRight">
+	<telerik:RadDocking x:Name="radDocking4">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer4" InitialPosition="DockedRight">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -219,8 +219,8 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_9}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="DockedBottom">
+	<telerik:RadDocking x:Name="radDocking5">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer5" InitialPosition="DockedBottom">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -241,8 +241,8 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_10}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="FloatingOnly">
+	<telerik:RadDocking x:Name="radDocking6">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer6" InitialPosition="FloatingOnly">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -263,8 +263,8 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_11}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="FloatingDockable">
+	<telerik:RadDocking x:Name="radDocking7">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer7" InitialPosition="FloatingDockable">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -301,7 +301,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 
 {{region vb-raddocking-features-split-container_13}}
 	Private Sub SetInitialPositionToLeft()
-	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedLeft
+		radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedLeft
 	End Sub
 {{endregion}}
 
@@ -320,7 +320,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 
 {{region vb-raddocking-features-split-container_15}}
 	Private Sub SetInitialPositionToTop()
-	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedTop
+		radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedTop
 	End Sub
 {{endregion}}
 
@@ -339,7 +339,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 
 {{region vb-raddocking-features-split-container_17}}
 	Private Sub SetInitialPositionToRight()
-	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedRight
+		radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedRight
 	End Sub
 {{endregion}}
 
@@ -358,7 +358,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 
 {{region vb-raddocking-features-split-container_19}}
 	Private Sub SetInitialPositionToBottom()
-	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedBottom
+		radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.DockedBottom
 	End Sub
 {{endregion}}
 
@@ -377,7 +377,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 
 {{region vb-raddocking-features-split-container_21}}
 	Private Sub SetInitialPositionToFloatingOnly()
-	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.FloatingOnly
+		radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.FloatingOnly
 	End Sub
 {{endregion}}
 
@@ -396,7 +396,7 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 
 {{region vb-raddocking-features-split-container_23}}
 	Private Sub SetInitialPositionToFloatingDockable()
-	    radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.FloatingDockable
+		radSplitContainer.InitialPosition = Telerik.Windows.Controls.Docking.DockState.FloatingDockable
 	End Sub
 {{endregion}}
 
@@ -409,7 +409,7 @@ You can set the initial size of your split containers using the attached propert
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_24}}
-	<telerik:RadDocking x:Name="radDocking">
+	<telerik:RadDocking x:Name="radDocking8">
 	    <telerik:RadSplitContainer telerik:DockingPanel.InitialSize="80,200">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Left Pane" Content="Pane Left 1" />
@@ -429,9 +429,9 @@ For this purpose you need to set the __RadDocking.FloatingSize__ attached proper
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_25}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="FloatingDockable"
-	        telerik:RadDocking.FloatingSize="300,300">
+	<telerik:RadDocking x:Name="radDocking9">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer9" InitialPosition="FloatingDockable"
+	telerik:RadDocking.FloatingSize="300,300">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -458,9 +458,9 @@ For this purpose you need to set the __RadDocking.FloatingLocation__ attached pr
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_26}}
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="FloatingDockable"
-	        telerik:RadDocking.FloatingLocation="10,10">
+	<telerik:RadDocking x:Name="radDocking10">
+	    <telerik:RadSplitContainer x:Name="radSplitContainer10" InitialPosition="FloatingDockable"
+	telerik:RadDocking.FloatingLocation="10,10">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Pane Left 1" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -485,19 +485,19 @@ For this purpose you need to set the __RelativeSize__ attached property of the _
 #### __XAML__
 
 {{region xaml-raddocking-features-split-container_27}}
-	<telerik:RadDocking x:Name="radDocking">
-		<telerik:RadSplitContainer InitialPosition="DockedTop">
-			<telerik:RadSplitContainer telerik:ProportionalStackPanel.RelativeSize="200, 200">
-				<telerik:RadPaneGroup>
-					<telerik:RadPane Header="Width: 1/3"  />
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-			<telerik:RadSplitContainer telerik:ProportionalStackPanel.RelativeSize="400, 200">
-				<telerik:RadPaneGroup>
-					<telerik:RadPane Header="Width: 2/3" />
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-		</telerik:RadSplitContainer>
+	<telerik:RadDocking x:Name="radDocking11">
+	    <telerik:RadSplitContainer InitialPosition="DockedTop">
+	        <telerik:RadSplitContainer telerik:ProportionalStackPanel.RelativeSize="200, 200">
+	            <telerik:RadPaneGroup>
+	                <telerik:RadPane Header="Width: 1/3"  />
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	        <telerik:RadSplitContainer telerik:ProportionalStackPanel.RelativeSize="400, 200">
+	            <telerik:RadPaneGroup>
+	                <telerik:RadPane Header="Width: 2/3" />
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
 

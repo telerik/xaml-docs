@@ -36,16 +36,16 @@ Here is a sample XAML code, showing you how to add two __RadPane__ instances to 
 
 {{region xaml-raddocking-panes-radpane_0}}
 	<telerik:RadDocking x:Name="radDocking">
-	        <telerik:RadSplitContainer x:Name="radSplitContainer">
-	            <telerik:RadPaneGroup x:Name="radPaneGroup">
-	                <telerik:RadPane x:Name="radPane1" Header="Document 1">
-	                    <TextBlock Text="Some simple text here"></TextBlock>
-	                </telerik:RadPane>
-	                <telerik:RadPane x:Name="radPane2" Header="Document 2">
-	                    <TextBlock Text="Some simple text here"></TextBlock>
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
+	    <telerik:RadSplitContainer x:Name="radSplitContainer">
+	        <telerik:RadPaneGroup x:Name="radPaneGroup">
+	            <telerik:RadPane x:Name="radPane1" Header="Document 1">
+	                <TextBlock Text="Some simple text here"></TextBlock>
+	            </telerik:RadPane>
+	            <telerik:RadPane x:Name="radPane2" Header="Document 2">
+	                <TextBlock Text="Some simple text here"></TextBlock>
+	            </telerik:RadPane>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -60,8 +60,8 @@ Here is a sample XAML code, showing you how to add two __RadPane__ instances to 
 	radPane2.Header = "Document 2";
 	radPane2.Content = new TextBlock() { Text = "Some simple text here" };
 	
-	radPaneGroup.Items.Add( radPane1 );
-	radPaneGroup.Items.Add( radPane2 );
+	radPaneGroup.Items.Add(radPane1);
+	radPaneGroup.Items.Add(radPane2);
 {{endregion}}
 
 #### __VB.NET__
@@ -71,16 +71,14 @@ Here is a sample XAML code, showing you how to add two __RadPane__ instances to 
 	radPane1.Header = "Document 1"
 	Dim textBlock As New TextBlock()
 	textBlock.Text = "Some simple text here"
-	radPane1.Content = textBlock
-	
+	radPane1.Content = textBlock
 	Dim radPane2 As New RadPane()
 	radPane2.Header = "Document 2"
 	textBlock = New TextBlock()
 	textBlock.Text = "Some simple text here"
-	radPane2.Content = textBlock
-	
-	radPaneGroup.Items.Add(radPane1)
-	radPaneGroup.Items.Add(radPane2)
+	radPane2.Content = textBlock
+	RadPaneGroup.Items.Add(radPane1)
+	RadPaneGroup.Items.Add(radPane2)
 {{endregion}}
 
 And here is the result:
@@ -165,7 +163,7 @@ You can also hide/show your __RadPane__ instances programmatically using the boo
 #### __VB.NET__
 
 {{region vb-raddocking-panes-radpane_5}}
-	radPane.IsHidden = true
+	radPane1.IsHidden = True
 {{endregion}}
 
 To learn how to disable the close button or how to handle the __RadDocking__'s __PreviewClose__ event take a look at the [How to Disable the Close Button]({%slug raddocking-how-to-disable-the-close-button%}) topic.

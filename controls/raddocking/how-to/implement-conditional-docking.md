@@ -31,7 +31,7 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 {{region xaml-raddocking-how-to-implement-conditional-docking_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup >
+	        <telerik:RadPaneGroup>
 	            <telerik:RadPane x:Name="radPane" Header="Pane 1">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
@@ -54,7 +54,7 @@ Attach to the __PreviewShowCompass__ event of the __RadDocking__ control.
 #### __XAML__
 
 {{region xaml-raddocking-how-to-implement-conditional-docking_1}}
-	<telerik:RadDocking x:Name="radDocking" PreviewShowCompass="radDocking_PreviewShowCompass">
+	<telerik:RadDocking x:Name="radDocking1" PreviewShowCompass="radDocking_PreviewShowCompass">
 {{endregion}}
 
 Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compass__ property. You need to use the __Is<*>IndicatorVisible__ series of properties of the __Compass__ class in order to disable any of the compass indicators.
@@ -64,7 +64,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 #### __C#__
 
 {{region cs-raddocking-how-to-implement-conditional-docking_2}}
-	private void radDocking_PreviewShowCompass( object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e )
+	private void radDocking_PreviewShowCompass(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
 	}
@@ -73,8 +73,8 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 #### __VB.NET__
 
 {{region vb-raddocking-how-to-implement-conditional-docking_3}}
-	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-	    e.Compass.IsLeftIndicatorVisible = False
+	Private Sub radDocking_PreviewShowCompass(sender As Object, e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
+		e.Compass.IsLeftIndicatorVisible = False
 	End Sub
 {{endregion}}
 
@@ -85,7 +85,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 #### __C#__
 
 {{region cs-raddocking-how-to-implement-conditional-docking_4}}
-	private void radDocking_PreviewShowCompass( object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e )
+	private void radDocking_PreviewShowCompass1(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
 	    e.Compass.IsTopIndicatorVisible = false;
@@ -98,8 +98,8 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 {{region vb-raddocking-how-to-implement-conditional-docking_5}}
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-	    e.Compass.IsLeftIndicatorVisible = False
-	    e.Compass.IsTopIndicatorVisible = False
+		e.Compass.IsLeftIndicatorVisible = False
+		e.Compass.IsTopIndicatorVisible = False
 	End Sub
 {{endregion}}
 
@@ -110,7 +110,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 #### __C#__
 
 {{region cs-raddocking-how-to-implement-conditional-docking_6}}
-	private void radDocking_PreviewShowCompass( object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e )
+	private void radDocking_PreviewShowCompass2(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
 	    e.Compass.IsTopIndicatorVisible = false;
@@ -122,9 +122,9 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 {{region vb-raddocking-how-to-implement-conditional-docking_7}}
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-	    e.Compass.IsLeftIndicatorVisible = False
-	    e.Compass.IsTopIndicatorVisible = False
-	    e.Compass.IsRightIndicatorVisible = False
+		e.Compass.IsLeftIndicatorVisible = False
+		e.Compass.IsTopIndicatorVisible = False
+		e.Compass.IsRightIndicatorVisible = False
 	End Sub
 {{endregion}}
 
@@ -135,7 +135,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 #### __C#__
 
 {{region cs-raddocking-how-to-implement-conditional-docking_8}}
-	private void radDocking_PreviewShowCompass( object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e )
+	private void radDocking_PreviewShowCompass3(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
 	    e.Compass.IsTopIndicatorVisible = false;
@@ -148,10 +148,10 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 {{region vb-raddocking-how-to-implement-conditional-docking_9}}
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-	    e.Compass.IsLeftIndicatorVisible = False
-	    e.Compass.IsTopIndicatorVisible = False
-	    e.Compass.IsRightIndicatorVisible = False
-	    e.Compass.IsBottomIndicatorVisible = False
+		e.Compass.IsLeftIndicatorVisible = False
+		e.Compass.IsTopIndicatorVisible = False
+		e.Compass.IsRightIndicatorVisible = False
+		e.Compass.IsBottomIndicatorVisible = False
 	End Sub
 {{endregion}}
 
@@ -162,7 +162,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 #### __C#__
 
 {{region cs-raddocking-how-to-implement-conditional-docking_10}}
-	private void radDocking_PreviewShowCompass( object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e )
+	private void radDocking_PreviewShowCompass4(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
 	    e.Compass.IsTopIndicatorVisible = false;
@@ -176,11 +176,11 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 {{region vb-raddocking-how-to-implement-conditional-docking_11}}
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-	    e.Compass.IsLeftIndicatorVisible = False
-	    e.Compass.IsTopIndicatorVisible = False
-	    e.Compass.IsRightIndicatorVisible = False
-	    e.Compass.IsBottomIndicatorVisible = False
-	    e.Compass.IsCenterIndicatorVisible = False
+		e.Compass.IsLeftIndicatorVisible = False
+		e.Compass.IsTopIndicatorVisible = False
+		e.Compass.IsRightIndicatorVisible = False
+		e.Compass.IsBottomIndicatorVisible = False
+		e.Compass.IsCenterIndicatorVisible = False
 	End Sub
 {{endregion}}
 

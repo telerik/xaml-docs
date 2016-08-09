@@ -23,11 +23,11 @@ In order to remove the __Header__ of the __RadPane__ you have to set the __PaneH
 {{region xaml-raddocking-how-to-remove-the-header-of-the-radpane_0}}
 	<telerik:RadDocking Grid.Row="1">
 	    <telerik:RadSplitContainer InitialPosition="DockedBottom">
-	           <telerik:RadPaneGroup>
-	                   <telerik:RadPane Header="Pane with header"/>
-	                   <telerik:RadPane PaneHeaderVisibility="Collapsed"/>
-	             </telerik:RadPaneGroup>
-	     </telerik:RadSplitContainer>
+	        <telerik:RadPaneGroup>
+	            <telerik:RadPane Header="Pane with header"/>
+	            <telerik:RadPane PaneHeaderVisibility="Collapsed"/>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
 
@@ -47,18 +47,18 @@ So to remove it and to leave only the border of the DocumentPane in the Document
 
 {{region xaml-raddocking-how-to-remove-the-header-of-the-radpane_1}}
 	<telerik:RadDocking>
-	     <telerik:RadDocking.DocumentHost>
-	           <telerik:RadSplitContainer>
-	                <telerik:RadPaneGroup x:Name="docHostSplitContainer">
-	                            <telerik:RadDocumentPane Header="DocPane" Visibility="Collapsed"/>
-	                 </telerik:RadPaneGroup>
-	            </telerik:RadSplitContainer>
-	      </telerik:RadDocking.DocumentHost>
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup x:Name="docHostSplitContainer">
+	                <telerik:RadDocumentPane Header="DocPane" Visibility="Collapsed"/>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
 	    <telerik:RadSplitContainer InitialPosition="DockedRight">
-	          <telerik:RadPaneGroup>
-	                 <telerik:RadPane Header="Pane 1"/>
-	           </telerik:RadPaneGroup>
-	     </telerik:RadSplitContainer>
+	        <telerik:RadPaneGroup>
+	            <telerik:RadPane Header="Pane 1"/>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
 

@@ -62,12 +62,12 @@ Set the created data template to the __HeaderTemplate__ property of the __RadPan
 #### __XAML__
 
 {{region xaml-raddocking-how-to-add-icon-pane-header_2}}
-	<telerik:RadDocking x:Name="radDocking">
+	<telerik:RadDocking x:Name="radDocking1">
 	    <telerik:RadSplitContainer>
 	        <telerik:RadPaneGroup>
 	
 	            <telerik:RadPane Header="Pane 1" HeaderTemplate="{StaticResource HeaderTemplate}">
-	               <TextBlock Text="Some simple text here"/>
+	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
 	
 	        </telerik:RadPaneGroup>

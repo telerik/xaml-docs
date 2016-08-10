@@ -32,7 +32,7 @@ __Figure 1:__ Adding the needed references
 After that merge the xaml files in the App.xaml as shown in __Example 1__:
 
 #### __[XAML] Example 1: Merging the .xaml files__
-{{region radtimespanpicker-styles-and-templates-setting-theme_0}}
+{{region xaml-radtimespanpicker-styles-and-templates-setting-theme_0}}
 	 <Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -52,7 +52,7 @@ After that merge the xaml files in the App.xaml as shown in __Example 1__:
 
 	#### __[XAML] Example 2: Merging the .xaml files__
 
-	{{region radtimespanpicker-styles-and-templates-setting-theme_1}}
+	{{region xaml-radtimespanpicker-styles-and-templates-setting-theme_1}}
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>

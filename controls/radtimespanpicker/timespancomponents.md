@@ -37,7 +37,7 @@ In order to include each one of the components in __RadTimeSpanPicker__, they ha
 
 #### __[XAML] Defining TimeSpanComponents__
 
-{{region radtimespanpicker-timespancomponent_0}}
+{{region xaml-radtimespanpicker-timespancomponent_0}}
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 		<Grid x:Name="LayoutRoot" Background="White">
 			<telerik:RadTimeSpanPicker>
@@ -57,7 +57,7 @@ You can also define them in code-behind:
 
 #### __[C#]  Defining TimeSpanComponents in code__
 
-{{region radtimespanpicker-timespancomponents_0}}
+{{region cs-radtimespanpicker-timespancomponents_0}}
 	RadTimeSpanPicker timeSpanPicker = new RadTimeSpanPicker();
 	DayTimeSpanComponent dayComponent = new DayTimeSpanComponent();
 	HourTimeSpanComponent hourComponent = new HourTimeSpanComponent();
@@ -73,7 +73,7 @@ You can also define them in code-behind:
 
 #### __[VB]  Defining TimeSpanComponents code__
 
-{{region radtimespanpicker-timespancomponents_0}}
+{{region vb-radtimespanpicker-timespancomponents_0}}
 	Dim timeSpanPicker As New RadTimeSpanPicker()
 	Dim dayComponent As New DayTimeSpanComponent()
 	Dim hourComponent As New HourTimeSpanComponent()
@@ -127,7 +127,7 @@ Firstly you need to create a custom class that inherits the __StepTimeSpanCompon
 
 #### __[C#]  Creating custom TimeSpanComponent__
 
-{{region radtimespanpicker-timespancomponents_1}}
+{{region cs-radtimespanpicker-timespancomponents_1}}
 	public class WeekTimeSpanComponent : StepTimeSpanComponentBase
 	{
 		protected override Freezable CreateInstanceCore()
@@ -139,7 +139,7 @@ Firstly you need to create a custom class that inherits the __StepTimeSpanCompon
 
 #### __[VB]  Creating custom TimeSpanComponent__
 
-{{region radtimespanpicker-timespancomponents_1}}
+{{region vb-radtimespanpicker-timespancomponents_1}}
 	Public Class WeekTimeSpanComponent
 		Inherits StepTimeSpanComponentBase
 		Protected Overrides Function CreateInstanceCore() As Freezable
@@ -154,7 +154,7 @@ Next thing you have to do is to override the __GetTicksFromItem__ method that sh
 
 #### __[C#]  Override GetTicksFromItem__
 
-{{region radtimespanpicker-timespancomponents_2}}
+{{region cs-radtimespanpicker-timespancomponents_2}}
 	public override long GetTicksFromItem(object item)
 	{
 		if (item != null)
@@ -172,7 +172,7 @@ Next thing you have to do is to override the __GetTicksFromItem__ method that sh
 {{endregion}}
 
 #### __[VB]  Override GetTicksFromItem__
-{{region radtimespanpicker-timespancomponents_2}}
+{{region vb-radtimespanpicker-timespancomponents_2}}
 	Public Overrides Function GetTicksFromItem(item As Object) As Long
 		If item IsNot Nothing Then
 			Dim ticksForOneUnitMultiplier  = 7
@@ -189,7 +189,7 @@ Finally all you need to do is to add the newly created TimeSpanComponent into th
 
 #### __[XAML] Add the custom TimeSpanComponent__
 
-{{region radtimespanpicker-timespancomponent_1}}
+{{region xaml-radtimespanpicker-timespancomponent_1}}
 	<telerik:RadTimeSpanPicker>
 		<telerik:RadTimeSpanPicker.TimeSpanComponents>
 			<local:WeekTimeSpanComponent Minimum = "0" Maximum = "4" Step = "0.5" Header = "Week"/>

@@ -16,6 +16,8 @@ Telerik's __RadGridView__ allows you not only to display sets of data, but also 
 
 Some data sources, such as those implementing __INotifyCollectionChanged(ObservableCollection<T>)__, support data inserts, change notifications and etc. This means that they will automatically handle the creation of new objects in the collection and send notifications to the __DataBinding__ engine that the data has changed. When using collections that don't support inserts and change notifications as data source, you have to create the new items manually and rebind the grid to the modified data source to display the modified data.
 
+> When __DataTable__ is needed as a source collection of __RadGridView__, it is recommended to use its __DefaultView__ property. It raises a notification for a collection change and its __DataRowView__ implements __INotifyPropertyChanged__ interface, thus the UI will be updated out-of-the-box.
+
 ## Adding New Entries
 
 The adding of new entires is achieved via the __GridViewNewRow__ control, which appears when the user hits the "Insert" key or when the developer initiate an add operation. To learn more about how to add items to your __RadGridView__ control take a look at the [Adding New Entries]({%slug gridview-managing-data-add-new-entries%}) topic.

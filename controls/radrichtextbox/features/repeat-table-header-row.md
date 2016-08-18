@@ -57,7 +57,7 @@ The __[TableRow class](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_W
 	row.RepeatOnEveryPage = True
 {{endregion}}
 
-<<Comment: In the example above, is C# 0-based? The VB example starts with row 1. I see this same thing in further examples but I want someone more technical to check just in case that is not intentional.>>
+
 Another option is to use the ChangeTableRowRepeatOnEveryPage() method of __RadRichTextBox__, which allows you to change whether a row will be repeated or not. __Example 2__ demonstrates how to get the first __TableRow__ in a __[RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})__ and set it as a repeated header row.
 
 #### __[C#] Example 2: Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage() method__

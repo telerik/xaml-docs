@@ -33,7 +33,7 @@ The Break elements can be used only in the context of a Paragraph element. The [
 	paragraph.Inlines.Add(br);
 	section.Blocks.Add(paragraph);
 	
-{{ednregion}}
+{{endregion}}
 
 
 #### __[VB.NET] Example 1: Insert a break__
@@ -46,7 +46,7 @@ The Break elements can be used only in the context of a Paragraph element. The [
     paragraph.Inlines.Add(break)
     section.Blocks.Add(paragraph)
 
-{{ednregion}}
+{{endregion}}
 
 ## Modifying a Break
 
@@ -58,7 +58,7 @@ The __Break__ element exposes a __BreakType__ property, which specifies the type
 
 	br.BreakType = BreakType.LineBreak;
 
-{{ednregion}}
+{{endregion}}
 
 # See Also
 

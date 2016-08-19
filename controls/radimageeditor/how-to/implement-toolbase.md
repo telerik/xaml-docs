@@ -48,3 +48,4 @@ The __ToolBase__ class is an abstract class which implements the __ITool__ inter
 # See Also
 
 * [Create a Custom Tool]({%slug radimageeditor-howto-custom-tool%})
+* [Implement DrawToolBase Class]({%slug radimageeditor-howto-implement-drawtoolbase%})

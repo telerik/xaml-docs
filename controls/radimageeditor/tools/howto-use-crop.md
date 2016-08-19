@@ -26,14 +26,14 @@ When the tool is invoked a rectangle is shown over the image. It is called crop 
 
 Crop Adorner![Rad Image Editor How To Use Crop 01](images/RadImageEditor_HowTo_Use_Crop_01.png)
 
-The tool is located in the Telerik.Windows.Media.Imaging.Tools namespace and can be defined in XAML as follows.
+The tool is located in the Telerik.Windows.Media.Imaging.Tools namespace and can be defined in XAML as demonstrated in **Example 1**.
       
 
-#### __[XAML] Create Crop Tool__
+#### __[XAML] Example 1: Create CropTool__
 
-{{region radimageeditor-howto-use-crop_0}}
-	        <tools:CropTool />
-	{{endregion}}
+{{region xaml-radimageeditor-tools-crop_0}}
+	<tools:CropTool />
+{{endregion}}
 
 
 
@@ -42,32 +42,32 @@ The tool is located in the Telerik.Windows.Media.Imaging.Tools namespace and can
 The __InitialSize__ property is of type Size and determines the initial size of the crop adorner. Unless explicitly set, the rectangle has width and height equal to 80% of the width and height of the image that is shown in the control.
         
 
-__Example 1__ and __Example 2__ demonstrate how to set the initial size of the tool in XAML and in code, respectively.
+__Example 2__ demonstrates how to set the initial size of the tool in XAML and in code.
         
 
-#### __[XAML] Example 1: Set Initial Size__
+#### __[XAML] Example 2: Set initial size__
 
-{{region radimageeditor-howto-use-crop_1}}
-	        <tools:CropTool InitialSize="200,100" />
-	{{endregion}}
-
-
-
-#### __[C#] Example 2: Set Initial Size__
-
-{{region radimageeditor-howto-use-crop_0}}
-	            CropTool cropTool = new CropTool();
-	            cropTool.InitialSize = new Size(150, 150);
-	{{endregion}}
+{{region xaml-radimageeditor-tools-crop_1}}
+	<tools:CropTool InitialSize="150,150" />
+{{endregion}}
 
 
 
-#### __[VB.NET] Example 2: Set Initial Size__
+#### __[C#] Example 2: Set initial size__
 
-{{region radimageeditor-howto-use-crop_0}}
-		Dim cropTool As New CropTool()
-		cropTool.InitialSize = New Size(150, 150)
-	{{endregion}}
+{{region cs-radimageeditor-tools-crop_2}}
+	CropTool cropTool = new CropTool();
+	cropTool.InitialSize = new Size(150, 150);
+{{endregion}}
+
+
+
+#### __[VB.NET] Example 2: Set initial size__
+
+{{region vb-radimageeditor-tools-crop_3}}
+	Dim cropTool As New CropTool()
+	cropTool.InitialSize = New Size(150, 150)
+{{endregion}}
 
 
 
@@ -76,32 +76,32 @@ __Example 1__ and __Example 2__ demonstrate how to set the initial size of the t
 The __FixedSize__ property is of type Size and specifies the only size that is allowed for the Crop tool. This means that the crop adorner is shown with those dimensions and resizing it is not possible.
         
 
-__Example 3__ and __Example 4__ show how to set fixed size in XAML and code.
+__Example 3__ shows how to set fixed size in XAML and in code.
         
 
-#### __[XAML] Example 2: Set Fixed Size__
+#### __[XAML] Example 3: Set fixed size__
 
-{{region radimageeditor-howto-use-crop_2}}
-	        <tools:CropTool FixedSize="200,100" />
-	{{endregion}}
-
-
-
-#### __[C#] Example 3: Set Fixed Size__
-
-{{region radimageeditor-howto-use-crop_1}}
-	            CropTool tool = new CropTool();
-	            tool.FixedSize = new Size(200, 100);
-	{{endregion}}
+{{region xaml-radimageeditor-tools-crop_4}}
+	<tools:CropTool FixedSize="200,100" />
+{{endregion}}
 
 
 
-#### __[VB.NET] Example 3: Set Fixed Size__
+#### __[C#] Example 3: Set fixed size__
 
-{{region radimageeditor-howto-use-crop_1}}
-		Dim tool As New CropTool()
-		tool.FixedSize = New Size(200, 100)
-	{{endregion}}
+{{region cs-radimageeditor-tools-crop_5}}
+	CropTool cropTool = new CropTool();
+	cropTool.FixedSize = new Size(200, 100);
+{{endregion}}
+
+
+
+#### __[VB.NET] Example 3: Set fixed size__
+
+{{region vb-radimageeditor-tools-crop_6}}
+	Dim cropTool As New CropTool()
+	cropTool.FixedSize = New Size(200, 100)
+{{endregion}}
 
 
 
@@ -113,31 +113,31 @@ __Example 3__ and __Example 4__ show how to set fixed size in XAML and code.
 The __AspectRatio__ property of the crop tool determines whether the width and height of the crop adorner are in linear dependence. The value can be a positive decimal number and specifying it "locks" the ratio between the width and height of the crop rectangle.
         
 
-The calculated ratio value corresponds to the width of the adorner divided by its height. This means that if you want a crop rectangle that has a width 2 times smaller than its height, you should set value 0.5 to the AspectRatio. __Example 5__ and __Example 6__ show how this can be done in XAML and code behind.
+The calculated ratio value corresponds to the width of the adorner divided by its height. This means that if you want a crop rectangle that has a width 2 times smaller than its height, you should set value 0.5 to the AspectRatio. __Example 3__ shows how this can be done in XAML and in code behind.
         
 
-#### __[XAML] Example 3: Set Fixed Aspect Ratio__
+#### __[XAML] Example 3: Set fixed aspect ratio__
 
-{{region radimageeditor-howto-use-crop_3}}
-	        <tools:CropTool AspectRatio="0.5"/>
-	{{endregion}}
-
-
-
-#### __[C#] Example 4: Set Fixed Aspect Ratio__
-
-{{region radimageeditor-howto-use-crop_2}}
-	            CropTool tool = new CropTool();
-	            tool.AspectRatio = 0.5;
-	{{endregion}}
+{{region xaml-radimageeditor-tools-crop_7}}
+	<tools:CropTool AspectRatio="0.5"/>
+{{endregion}}
 
 
 
-#### __[VB.NET] Example 4: Set Fixed Aspect Ratio__
+#### __[C#] Example 3: Set fixed aspect ratio__
 
-{{region radimageeditor-howto-use-crop_2}}
-		Dim tool As New CropTool()
-		tool.AspectRatio = 0.5
+{{region cs-radimageeditor-tools-crop_8}}
+	CropTool cropTool = new CropTool();
+	cropTool.AspectRatio = 0.5;
+{{endregion}}
+
+
+
+#### __[VB.NET] Example 3: Set fixed aspect ratio__
+
+{{region vb-radimageeditor-tools-crop_9}}
+	Dim cropTool As New CropTool()
+	cropTool.AspectRatio = 0.5
 {{endregion}}
 
 
@@ -148,7 +148,5 @@ The calculated ratio value corresponds to the width of the adorner divided by it
 # See Also
 
 * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})
-
 * [Drawing]({%slug radimageeditor-tools-drawing%})
-
 * [Shape Tool]({%slug radimageeditor-tools-shape-tool%})

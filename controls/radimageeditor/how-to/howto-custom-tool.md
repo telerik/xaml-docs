@@ -22,60 +22,57 @@ This allows you to implement virtually any behavior you want within your tool an
 
 1. __Create your tool.__<br/>Create a WatermarkTool class which implements the __ITool__ interface. The interface contains four properties and six methods which you need to implement.
 
-	#### __[C#] Create Tool__
+	#### __[C#] Example 1: Create a tool__
 	
-	{{region radimageeditor-howto-custom-tool_0}}
-		    public class WatermarkTool : ITool
+	{{region cs-radimageeditor-howto-custom-tool_0}}
+		public class WatermarkTool : ITool
 	{{endregion}}
 
 
 1. __Create a command.__<br/>The public IImageCommand GetCommand() method requires you to return a command linked with the tool. Create a custom command which implements the __IImageCommand__ interface and a field of the command's type in the WatermarkTool class.
             
 
-	#### __[C#] Create Command__
+	#### __[C#] Example 2: Create Command__
 	
-	{{region radimageeditor-howto-custom-tool_1}}
-	    private WatermarkCommand watermarkCommand;
+	{{region cs-radimageeditor-howto-custom-tool_1}}
+		private WatermarkCommand watermarkCommand;
+		public class WatermarkCommand : IImageCommand
+		{
+		    public RadBitmap Execute(RadBitmap source, object context)
+		    {
+		        WatermarkCommandContext myContext = (WatermarkCommandContext)context;
+		        Grid grid = new Grid();
+		        grid.Children.Add(new Image()
+		        {
+		            Source = source.Bitmap,
+		            Stretch = Stretch.None
+		        });
 	
-	    public class WatermarkCommand : IImageCommand
-	    {
-	        public RadBitmap Execute(RadBitmap source, object context)
-	        {
-	            WatermarkCommandContext myContext = (WatermarkCommandContext)context;
+		        Image image = new Image()
+		        {
+		            Source = myContext.Image.Bitmap,
+		            Stretch = Stretch.None,
+		            Opacity = myContext.Opacity,
+		        };
 	
-	            Grid grid = new Grid();
-	            grid.Children.Add(new Image()
-	            {
-	                Source = source.Bitmap,
-	                Stretch = Stretch.None
-	            });
+		        ScaleTransform scaleTransform = new ScaleTransform();
+		        scaleTransform.ScaleX = myContext.Scale;
+		        scaleTransform.ScaleY = myContext.Scale;
 	
-	            Image image = new Image()
-	            {
-	                Source = myContext.Image.Bitmap,
-	                Stretch = Stretch.None,
-	                Opacity = myContext.Opacity,
-	            };
+		        RotateTransform rotateTransform = new RotateTransform();
+		        rotateTransform.Angle = myContext.Rotation;
 	
-	            ScaleTransform scaleTransform = new ScaleTransform();
-	            scaleTransform.ScaleX = myContext.Scale;
-	            scaleTransform.ScaleY = myContext.Scale;
+		        TransformGroup transform = new TransformGroup();
+		        transform.Children.Add(rotateTransform);
+		        transform.Children.Add(scaleTransform);
 	
-	            RotateTransform rotateTransform = new RotateTransform();
-	            rotateTransform.Angle = myContext.Rotation;
+		        image.RenderTransform = transform;
+		        image.RenderTransformOrigin = new Point(0.5, 0.5);
 	
-	            TransformGroup transform = new TransformGroup();
-	            transform.Children.Add(rotateTransform);
-	            transform.Children.Add(scaleTransform);
-	
-	            image.RenderTransform = transform;
-	            image.RenderTransformOrigin = new Point(0.5, 0.5);
-	
-	            grid.Children.Add(image);
-	
-	            return new RadBitmap(source.Width, source.Height, grid);
-	        }
-	    }
+		        grid.Children.Add(image);
+		        return new RadBitmap(source.Width, source.Height, grid);
+		    }
+		}
 	{{endregion}}
 
 
@@ -85,25 +82,24 @@ This allows you to implement virtually any behavior you want within your tool an
 1. __Create command context.__<br/>Create context for your custom command. In this case we will take into account the Opacity, Rotation, Scale and Image properties.
             
 	
-	#### __[C#] Create Command Context__
+	#### __[C#] Example 3: Create Command Context__
 	
-	{{region radimageeditor-howto-custom-tool_2}}
-		    public class WatermarkCommandContext
+	{{region cs-radimageeditor-howto-custom-tool_2}}
+		public class WatermarkCommandContext
+		{
+		    public double Opacity { get; private set; }
+		    public double Rotation { get; private set; }
+		    public double Scale { get; private set; }
+		    public RadBitmap Image { get; private set; }
+		    public WatermarkCommandContext(double opacity, double rotation, double scale, RadBitmap image)
 		    {
-		        public double Opacity { get; private set; }
-		        public double Rotation { get; private set; }
-		        public double Scale { get; private set; }
-		        public RadBitmap Image { get; private set; }
-		
-		        public WatermarkCommandContext(double opacity, double rotation, double scale, RadBitmap image)
-		        {
-		            this.Opacity = opacity;
-		            this.Rotation = rotation;
-		            this.Scale = scale;
-		            this.Image = image;
-		        }
+		        this.Opacity = opacity;
+		        this.Rotation = rotation;
+		        this.Scale = scale;
+		        this.Image = image;
 		    }
-		{{endregion}}
+		}
+	{{endregion}}
 	
 	The context is also used in the public object GetContext() method in your tool.
 	            
@@ -113,20 +109,18 @@ This allows you to implement virtually any behavior you want within your tool an
 	>tip__ToolSettingsHeader__ is a content control located in the Telerik.Windows.Controls.ImageEditor assembly.
 	              
 	
-	#### __[XAML] Create Custom Tool Settings__
+	#### __[XAML] Example 4: Create Custom Tool Settings__
 	
-	{{region radimageeditor-howto-custom-tool_0 }}
-
-		<toolSettingsHeader:ToolSettingsHeader  x:Class="CustomWatermarkTool.WatermarkToolSettings"
-		                                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		                                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		                                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-		                                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-		                                        xmlns:toolSettingsHeader="clr-namespace:Telerik.Windows.Media.Imaging.Tools.UI;assembly=Telerik.Windows.Controls.ImageEditor"
-		                                        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-		                                        mc:Ignorable="d"
-		                                        d:DesignHeight="300" d:DesignWidth="400">
-		
+	{{region xaml-radimageeditor-howto-custom-tool_3 }}
+		<toolSettingsHeader:ToolSettingsHeader 
+		                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		                            xmlns:toolSettingsHeader="clr-namespace:Telerik.Windows.Media.Imaging.Tools.UI;assembly=Telerik.Windows.Controls.ImageEditor"
+		                            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+		                            mc:Ignorable="d"
+		                            d:DesignHeight="300" d:DesignWidth="400">
 		    <Grid x:Name="LayoutRoot">
 		        <Grid.RowDefinitions>
 		            <RowDefinition Height="Auto "/>
@@ -150,60 +144,54 @@ This allows you to implement virtually any behavior you want within your tool an
 	
 	
 	
-	#### __[C#] Interaction Logic for Tool Settings__
+	#### __[C#] Example 5: Interaction logic for tool settings__
 	
-	{{region radimageeditor-howto-custom-tool_3}}
-		    public partial class WatermarkToolSettings : ToolSettingsHeader
+	{{region cs-radimageeditor-howto-custom-tool_4}}
+		public partial class WatermarkToolSettings : ToolSettingsHeader
+		{
+		    public WatermarkToolSettings()
 		    {
-		        public WatermarkToolSettings()
-		        {
-		            InitializeComponent();
-		
-		            this.opacity.Value = WatermarkTool.DefaultOpacity;
-		            this.scale.Value = WatermarkTool.DefaultScale;
-		            this.rotation.Value = WatermarkTool.DefaultRotation;
-		        }
+		        InitializeComponent();
+		        this.opacity.Value = WatermarkTool.DefaultOpacity;
+		        this.scale.Value = WatermarkTool.DefaultScale;
+		        this.rotation.Value = WatermarkTool.DefaultRotation;
 		    }
-		{{endregion}}
+		    //...
+	{{endregion}}
 
 
 
 1. Implement the __AttachUI()__, __DetachUI()__ and __ResetSettings()__ methods.
 	            
 	
-	#### __[C#] Implement UI Settings Related Methods__
+	#### __[C#] Example 6: Implement UI settings related methods__
 	
-	{{region radimageeditor-howto-custom-tool_4}}
-		        public void AttachUI(ToolInitInfo previewInitInfo)
-		        {
-		            this.currnetEditor = previewInitInfo.ImageEditor;
-		            this.previewPanel = previewInitInfo.PreviewPanel;
-		
-		            this.currnetEditor.ScaleFactorChanged += currnetEditor_ScaleFactorChanged;
-		            this.previewPanel.SizeChanged += currnetEditor_ScaleFactorChanged;
-		            this.previewPanel.Children.Add(this.watermarkImage);
-		
-		            this.UpdateScaleFactor();
-		        }
-		
-		        public void DetachUI()
-		        {
-		            this.currnetEditor.ScaleFactorChanged -= currnetEditor_ScaleFactorChanged;
-		            this.previewPanel.SizeChanged -= currnetEditor_ScaleFactorChanged;
-		
-		            this.previewPanel.Children.Clear();
-		            this.currnetEditor = null;
-		            this.previewPanel = null;
-		        }
-		
-		        public void ResetSettings()
-		        {
-		            this.isDirty = false;
-		            this.settings.opacity.Value = DefaultOpacity;
-		            this.settings.rotation.Value = DefaultRotation;
-		            this.settings.scale.Value = DefaultScale;
-		        }
-		{{endregion}}
+	{{region cs-radimageeditor-howto-custom-tool_5}}
+		public void AttachUI(ToolInitInfo previewInitInfo)
+		{
+		    this.currnetEditor = previewInitInfo.ImageEditor;
+		    this.previewPanel = previewInitInfo.PreviewPanel;
+		    this.currnetEditor.ScaleFactorChanged += currnetEditor_ScaleFactorChanged;
+		    this.previewPanel.SizeChanged += currnetEditor_ScaleFactorChanged;
+		    this.previewPanel.Children.Add(this.watermarkImage);
+		    this.UpdateScaleFactor();
+		}
+		public void DetachUI()
+		{
+		    this.currnetEditor.ScaleFactorChanged -= currnetEditor_ScaleFactorChanged;
+		    this.previewPanel.SizeChanged -= currnetEditor_ScaleFactorChanged;
+		    this.previewPanel.Children.Clear();
+		    this.currnetEditor = null;
+		    this.previewPanel = null;
+		}
+		public void ResetSettings()
+		{
+		    this.isDirty = false;
+		    this.settings.opacity.Value = DefaultOpacity;
+		    this.settings.rotation.Value = DefaultRotation;
+		    this.settings.scale.Value = DefaultScale;
+		}
+	{{endregion}}
 	
 	
 	
@@ -216,3 +204,4 @@ This allows you to implement virtually any behavior you want within your tool an
 # See Also
 
 * [Implement ToolBase Class]({%slug radimageeditor-howto-implement-toolbase%})
+* [Implement DrawToolBase Class]({%slug radimageeditor-howto-implement-drawtoolbase%})

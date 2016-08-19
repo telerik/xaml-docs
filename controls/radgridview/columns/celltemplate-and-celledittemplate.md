@@ -18,7 +18,7 @@ RadGridView provides a set of predefined column types like GridViewCheckBoxColum
 
 Generally, the default templates for view mode are:
 
-* __TextBlock__ - for string, numeric, DataTime properties;
+* __TextBlock__ - for string, numeric, DateTime properties;
 
 * __CheckBox__ - for boolean properties;
 
@@ -66,7 +66,7 @@ As it can be seen, the editor for a column of type DateTime is defined as RadDat
 
 Although the example above illustrates defining either CellTemplate or CellEditTemplate, it is possible to set them both for one and the same column. The exact implementation depends entirely on the specific requirements. 
 
-If you want ot set a CellTemplate in code-behind, you can check [this help article]({%slug gridview-columns-defining-columns%}) for reference.
+If you want to set a CellTemplate in code-behind, you can check [this help article]({%slug gridview-columns-defining-columns%}) for reference.
 
 >tipHaving DataMemberBinding set to StartingDate, the aggregation, sorting, grouping and filtering operations on this column will be done based on the StartingDate property.
 

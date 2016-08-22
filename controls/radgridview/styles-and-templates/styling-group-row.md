@@ -40,11 +40,11 @@ You have two options:
 
 #### __[XAML] Example 1: Targetting GridViewGroupRow__
 
-	{{region gridview-styling-group-row-1}}
+	{{region xaml-gridview-styling-group-row-1}}
 	<Style TargetType="{x:Type telerik:GridViewGroupRow}">
-        <Setter Property="MinHeight" Value="60" />
-    </Style>
-	{{endregion}}
+	    <Setter Property="MinHeight" Value="60" />
+	</Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupRowStyle__.
 
@@ -58,11 +58,11 @@ If you have set your **GroupRenderMode** to **Flat**, your style should target t
 
 #### __[XAML] Example 2: Targetting GroupHeaderRow__
 
-	{{region gridview-styling-group-row-2}}
+	{{region xaml-gridview-styling-group-row-2}}
 	<Style TargetType="{x:Type telerik:GroupHeaderRow}">
-        <Setter Property="MinHeight" Value="60" />
-    </Style>
-	{{endregion}}
+	    <Setter Property="MinHeight" Value="60" />
+	</Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GroupHeaderRowStyle__.
 
@@ -72,15 +72,19 @@ The __RadGridView__ exposes the __GroupRowStyle__ property of type __Style__. It
 
 #### __[XAML] Example 2: Setting RadGridView's GroupRowStyle__
 
-	{{region gridview-styling-cell_1}}
+	{{region xaml-gridview-styling-group-row-3}}
 	<telerik:RadGridView GroupRowStyle="{StaticResource GroupRowStyle}" />
-	{{endregion}}
+{{endregion}}
 
 #### __Figure 3: RadGridView with styled group rows__
 
 ![](images/RadGridView_Styles_and_Templates_Styling_GridViewGroupRow_03.png)
 
->In order to fully style the grouping appearance you have to also modify the styles for [GridViewRow]({%slug gridview-styling-a-row%}), [GridViewGroupFooterRow]({%slug gridview-styles-and-templates-styling-group-footers%}) and [indent cells]({%slug radgridview-styling-indent-cells%}).
+>In order to fully style the grouping appearance you have to also modify the styles for [GridViewRow]({%slug gridview-styling-a-row%}), [GridViewGroupRow]({%slug gridview-styles-and-templates-styling-group-footers%}) and [indent cells]({%slug radgridview-styling-indent-cells%}).
+
+## Setting RadGridView's GroupRowStyleSelector
+
+You could also use RadGridView's **GroupRowStyleSelector** property to style group rows differently based on a specific condition. The [following article]({%slug gridview-group-row-style-selector%}) demonstrates how this can be done.
 
 # See Also
 

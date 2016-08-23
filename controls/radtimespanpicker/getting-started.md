@@ -22,9 +22,9 @@ You can include the control in your page by either dragging it from the toolbox 
 
 {{region xaml-radtimespanpicker-getting-started_0}}
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-		<Grid x:Name="LayoutRoot" Background="White">
-			<telerik:RadTimeSpanPicker GenerateDefaultComponents="True"/>
-		</Grid>
+	    <Grid x:Name="LayoutRoot" Background="White">
+	        <telerik:RadTimeSpanPicker GenerateDefaultComponents="True"/>
+	    </Grid>
 	</UserControl>
 {{endregion}}
 
@@ -50,17 +50,17 @@ By setting the __GenerateDefaultComponents__ property to __True__ the control wi
 
 {{region xaml-radtimespanpicker-getting-started_1}}
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-		<Grid x:Name="LayoutRoot" Background="White">
-			<telerik:RadTimeSpanPicker>
-				<telerik:RadTimeSpanPicker.TimeSpanComponents>
-					<telerik:DayTimeSpanComponent/>
-					<telerik:HourTimeSpanComponent/>
-					<telerik:MinuteTimeSpanComponent/>
-					<telerik:SecondTimeSpanComponent/>
-					<telerik:MillisecondTimeSpanComponent/>
-				</telerik:RadTimeSpanPicker.TimeSpanComponents>
-			</telerik:RadTimeSpanPicker>
-		</Grid>
+	    <Grid x:Name="LayoutRoot1" Background="White">
+	        <telerik:RadTimeSpanPicker>
+	            <telerik:RadTimeSpanPicker.TimeSpanComponents>
+	                <telerik:DayTimeSpanComponent/>
+	                <telerik:HourTimeSpanComponent/>
+	                <telerik:MinuteTimeSpanComponent/>
+	                <telerik:SecondTimeSpanComponent/>
+	                <telerik:MillisecondTimeSpanComponent/>
+	            </telerik:RadTimeSpanPicker.TimeSpanComponents>
+	        </telerik:RadTimeSpanPicker>
+	    </Grid>
 	</UserControl>
 {{endregion}}
 

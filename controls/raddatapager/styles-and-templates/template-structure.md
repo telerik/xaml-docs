@@ -24,12 +24,14 @@ Like most controls, __RadDataPager__ also allows you to template it in order to 
 
 ## RadDataPager
 
+#### __Figure 1: RadDataPager`s template structure__
 ![](images/RadDataPager_Styles_and_Templates_01.png)
 
 * __DataPagerPresenter__ - wraps the entire UI of __RadDataPager__ and is of type __DataPagerPresenter__.
 
 ## DataPagerPresenter
 
+#### __Figure 2: DataPagerPresenter`s template structure__
 ![](images/RadDataPager_Styles_and_Templates_02.png)
 
 * __[Border]__ - wraps the visual and layout elements of the __DataPagerPresenter's__ template and is of type __Border__. It is responsible for the background and the border color of the __DataPagerPresenter__.
@@ -82,6 +84,7 @@ Like most controls, __RadDataPager__ also allows you to template it in order to 
 
 ## Numeric Button
 
+#### __Figure 3: Numeric Button`s template structure__
 ![](images/RadDataPager_Styles_and_Templates_03.png)
 
 >The numeric buttons are of type __RadRadioButton__.

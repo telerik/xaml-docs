@@ -21,12 +21,11 @@ You have two options:
 
 ## Creating an empty Style
 
-If you want to use this approach you have to create a __Style__ that targets __RadRadioButton__ class. In it you can apply a custom __ControlTemplate__, in which to define the appearance of your button. Here is an example of a __RadDataPager__, which numeric buttons will be represented by ellipses.
+If you want to use this approach you have to create a __Style__ that targets __RadRadioButton__ class. In it you can apply a custom __ControlTemplate__, in which to define the appearance of your button. __Example 1__ shows a __RadDataPager__ with numeric buttons that are represented by ellipses.
 
-#### __XAML__
-{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_0}}
-
-	<telerik:BooleanToVisibilityConverter x:Name="BooleanToVisibilityConverter" />
+#### __[XAML]Example 1: Changing the template of RadDataPager`s numeric buttons__
+{{region xaml-raddatapager-styles-and-templates-styling-the-numeric-buttons_0}}
+	<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 	<Style x:Key="buttonStyle"
 	        TargetType="ButtonBase">
 	    <Setter Property="Template">
@@ -53,8 +52,8 @@ If you want to use this approach you have to create a __Style__ that targets __R
 	</Style>
 {{endregion}}
 
-#### __C#__
-{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_1}}
+#### __[C#]Example 2: Declare a BooleanToVisibility Converter__
+{{region cs-raddatapager-styles-and-templates-styling-the-numeric-buttons_1}}
 
 	public class BooleanToVisibilityConverter : IValueConverter
 	{
@@ -71,8 +70,8 @@ If you want to use this approach you have to create a __Style__ that targets __R
 
 
 
-#### __VB.NET__
-{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_2}}
+#### __[VB.NET]Example 2: Declare a BooleanToVisibility Converter__
+{{region vb-raddatapager-styles-and-templates-styling-the-numeric-buttons_2}}
 
 	Public Class BooleanToVisibilityConverter
 	 Implements IValueConverter
@@ -102,9 +101,9 @@ To modify the default style for the numeric buttons you have to get the default 
 
 Here is the default XAML for the numeric buttons' __Style__ and its resources.
 
-#### __XAML__
+#### __[XAML]Example 3: Numeric buttons` default Style__
 
-	{{region raddatapager-styles-and-templates-styling-the-numeric-buttons_3}}
+	{{region xaml-raddatapager-styles-and-templates-styling-the-numeric-buttons_3}}
 	<LinearGradientBrush x:Key="RadPager_Page_TopShadow"
 	                        EndPoint="0.5,1"
 	                        StartPoint="0.5,0">

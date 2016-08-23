@@ -15,7 +15,7 @@ position: 0
 ## RELATED VIDEOS
 In this video, learn how you can quickly and easily get started using __RadDataPager__ in your Silverlight and WPF applications.(Runtime:02:39)
 
-![](images/datapager_getting_started_video.png)(http://tv.telerik.com/watch/silverlight/getting-started-with-raddatapager)
+[![DataPager Video](images/datapager_getting_started_video.png)](http://tv.telerik.com/watch/silverlight/getting-started-with-raddatapager)
 
 {% if site.site_name == 'Silverlight' %}
 The one most important piece of software concerning paging in Silverlight is the [System.ComponentModel.IPagedCollectionView](http://msdn.microsoft.com/en-us/library/system.componentmodel.ipagedcollectionview%28VS.95%29.aspx) interface.          

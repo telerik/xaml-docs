@@ -16,15 +16,15 @@ Using the keyboard you can perform some of the most common tasks.
 
 This section describes the keyboard shortcuts used by RadAutoCompleteBox.
 
-* __Up__ - Navigates up through the items in the DropDown portion of the control.
+* __Up__: Navigates up through the items in the DropDown portion of the control.
 
-* __Down__ – Navigates down through the items in the DropDown portion of the control.
+* __Down__: Navigates down through the items in the DropDown portion of the control.
 
-* __Tab__ – Selects the highlighted item and loses the focus. If there is no suggested item just loses the focus.
+* __Tab__: Selects the highlighted item and loses the focus. If there is no suggested item just loses the focus.
 
-* __Enter__ – Closes the DropDown if it is open and selects the currently highlighted item.
+* __Enter__: Closes the DropDown if it is open and selects the currently highlighted item.
 
-* __Escape__ – Closes the DropDown and deletes the last non autocompleted entered text.
+* __Escape__: Closes the DropDown and deletes the last non autocompleted entered text.
 
 >When an item is selected with the keyboard, it should be scrolled into the viewport and made visible.
 

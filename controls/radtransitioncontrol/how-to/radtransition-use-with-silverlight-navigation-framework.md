@@ -31,8 +31,8 @@ The first thing to do is to create a __ControlTemplate__ in your resources secti
 
 {{region xaml-radtransition-how-to-use-with-silverlight-navigation-framework_1}}
 	<UserControl.Resources>
-	    <ControlTemplate x:Name="FrameTemplate"
-	                        TargetType="navigation:Frame">
+	    <ControlTemplate x:Key="FrameTemplate"
+	                    TargetType="navigation:Frame">
 	    </ControlTemplate>
 	</UserControl.Resources>
 {{endregion}}
@@ -45,10 +45,10 @@ Add a __RadTransitionControl__ to the __ControlTemplate__ and configure the appr
 
 {{region xaml-radtransition-how-to-use-with-silverlight-navigation-framework_2}}
 	<UserControl.Resources>
-	    <ControlTemplate x:Name="FrameTemplate"
-	                        TargetType="navigation:Frame">
+	    <ControlTemplate x:Key="FrameTemplate"
+	            TargetType="navigation:Frame">
 	        <telerik:RadTransitionControl Content="{TemplateBinding Content}"
-	                                        ContentTemplate="{TemplateBinding ContentTemplate}">
+	                            ContentTemplate="{TemplateBinding ContentTemplate}">
 	        </telerik:RadTransitionControl>
 	    </ControlTemplate>
 	</UserControl.Resources>
@@ -60,10 +60,10 @@ By default there is no transition effect specified for the __RadtRansitionContro
 
 {{region xaml-radtransition-how-to-use-with-silverlight-navigation-framework_3}}
 	<UserControl.Resources>
-	    <ControlTemplate x:Name="FrameTemplate"
-	                        TargetType="navigation:Frame">
+	    <ControlTemplate x:Key="FrameTemplate"
+	            TargetType="navigation:Frame">
 	        <telerik:RadTransitionControl Content="{TemplateBinding Content}"
-	                                        ContentTemplate="{TemplateBinding ContentTemplate}">
+	                            ContentTemplate="{TemplateBinding ContentTemplate}">
 	            <telerik:RadTransitionControl.Transition>
 	                <telerikTransitions:MotionBlurredZoomTransition />
 	            </telerik:RadTransitionControl.Transition>
@@ -79,7 +79,8 @@ The last thing to do is to set the created __ControlTemplate__ to the __Frame__ 
 #### __XAML__
 
 {{region xaml-radtransition-how-to-use-with-silverlight-navigation-framework_4}}
-	<navigation:Frame x:Name="MainFrame" Template="{StaticResource FrameTemplate}" />
+	<navigation:Frame x:Name="MainFrame"
+	            Template="{StaticResource FrameTemplate}" />
 {{endregion}}
 
 # See Also

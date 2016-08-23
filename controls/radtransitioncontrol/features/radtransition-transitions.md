@@ -68,7 +68,7 @@ The __FadeTransition__ fades out the old content and fades in the new one. It ha
 #### __XAML__
 
 {{region xaml-radtransition-features-transitions_0}}
-	<telerik:RadTransitionControl x:Name="radTRansitionControl">
+	<telerik:RadTransitionControl x:Name="radTRansitionControl1">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:FadeTransition />
 	    </telerik:RadTransitionControl.Transition>
@@ -84,7 +84,7 @@ The __FlipWrapsTransition__ flips the old content from the bottom to the top and
 #### __XAML__
 
 {{region xaml-radtransition-features-transitions_1}}
-	<telerik:RadTransitionControl x:Name="radTRansitionControl">
+	<telerik:RadTransitionControl x:Name="radTRansitionControl1">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:FadeTransition />
 	    </telerik:RadTransitionControl.Transition>
@@ -106,11 +106,11 @@ The __LinearFadeTransition__ is a fade transition which follows a linear pattern
 #### __XAML__
 
 {{region xaml-radtransition-features-transitions_2}}
-	<telerik:RadTransitionControl x:Name="radTRansitionControl">
+	<telerik:RadTransitionControl x:Name="radTRansitionControl2">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:LinearFadeTransition Darker="0.5"
-	                                                 Angle="0.5"
-	                                                 Thickness="0.5" />
+	                                         Angle="0.5"
+	                                         Thickness="0.5" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
 {{endregion}}
@@ -134,12 +134,12 @@ The __MotionBlurredZoomTransition__ is basically a fade transition with motion b
 #### __XAML__
 
 {{region xaml-radtransition-features-transitions_3}}
-	<telerik:RadTransitionControl x:Name="radTRansitionControl">
+	<telerik:RadTransitionControl x:Name="radTRansitionControl3">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:MotionBlurredZoomTransition Center="0.5,0.5"
-	                                                        InBlurRatio="0.3"
-	                                                        OutBlurRatio="-0.3"
-	                                                        Samples="7" />
+	                                                InBlurRatio="0.3"
+	                                                OutBlurRatio="-0.3"
+	                                                Samples="7" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
 {{endregion}}
@@ -167,15 +167,15 @@ The __RollTransition__ rolls out the new content above the old one. You can also
 #### __XAML__
 
 {{region xaml-radtransition-features-transitions_4}}
-	<telerik:RadTransitionControl x:Name="radTRansitionControl">
+	<telerik:RadTransitionControl x:Name="radTRansitionControl4">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:RollTransition InterpolationFunction="2"
-	                                            IsRollOut="False"
-	                                            IsTopToBottom="True"
-	                                            Orientation="Vertical"
-	                                            LightIntensity="0.5"
-	                                            RelativeRollWidth="0.15"
-	                                            RollSize="0.15" />
+	                                    IsRollOut="False"
+	                                    IsTopToBottom="True"
+	                                    Orientation="Vertical"
+	                                    LightIntensity="0.5"
+	                                    RelativeRollWidth="0.15"
+	                                    RollSize="0.15" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
 {{endregion}}
@@ -197,12 +197,12 @@ The __SlideAndZoomTransition__ zooms out the old content and decreases its opaci
 #### __XAML__
 
 {{region xaml-radtransition-features-transitions_5}}
-	<telerik:RadTransitionControl x:Name="radTRansitionControl">
+	<telerik:RadTransitionControl x:Name="radTRansitionControl5">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:SlideAndZoomTransition MinAlpha="0.1"
-	                                                    MinZoom="0.9"
-	                                                    SlideDirection="LeftToRight"
-	                                                    StartSlideAt="0.25" />
+	                                            MinZoom="0.9"
+	                                            SlideDirection="LeftToRight"
+	                                            StartSlideAt="0.25" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
 {{endregion}}
@@ -222,12 +222,11 @@ The __WaveTransition__ creates a wave effect over the old content. When the wave
 #### __XAML__
 
 {{region xaml-radtransition-features-transitions_6}}
-	<telerik:RadTransitionControl x:Name="radTRansitionControl">
-	    <telerik:RadTransitionControl.Transition>
+	<telerik:RadTransitionControl x:Name="radTRansitionControl6">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:WaveTransition Amplitude="0.2"
-	                                            Angle="0.5"
-	                                            Fade="0.7" />
+	                                    Angle="0.5"
+	                                    Fade="0.7" />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
 {{endregion}}

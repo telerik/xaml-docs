@@ -48,8 +48,8 @@ Here is a sample __ListBox__ definition, which is populated with objects of type
 
 {{region xaml-radtransition-getting-started_1}}
 	<ListBox x:Name="PhotosListBox"
-	            DisplayMemberPath="Name"
-	            ItemsSource="{Binding PhotosCollection}" />
+	    DisplayMemberPath="Name"
+	    ItemsSource="{Binding PhotosCollection}" />
 {{endregion}}
 
 The content of the __RadTransitionControl__ should be represented by the __SelectedItem__ of the __ListBox__. This can be done by using element to element binding.
@@ -66,17 +66,17 @@ The content of the __RadTransitionControl__ should be represented by the __Selec
 	        <ColumnDefinition Width="Auto" />
 	        <ColumnDefinition />
 	    </Grid.ColumnDefinitions>
-	<ListBox x:Name="PhotosListBox"
-	        DisplayMemberPath="Name"
-	        ItemsSource="{Binding PhotosCollection}" />
+	    <ListBox x:Name="PhotosListBox1"
+	DisplayMemberPath="Name"
+	ItemsSource="{Binding PhotosCollection}" />
 	    <telerik:RadTransitionControl Grid.Column="1"
-	                                    Content="{Binding SelectedItem, ElementName=PhotosListBox}">
+	                            Content="{Binding SelectedItem, ElementName=PhotosListBox}">
 	        <telerik:RadTransitionControl.ContentTemplate>
 	            <DataTemplate>
 	                <Image Source="{Binding ImageUrl}"
-	                        Stretch="Uniform"
-	                        Width="320"
-	                        Height="240" />
+	                Stretch="Uniform"
+	                Width="320"
+	                Height="240" />
 	            </DataTemplate>
 	        </telerik:RadTransitionControl.ContentTemplate>
 	    </telerik:RadTransitionControl>
@@ -96,14 +96,14 @@ The __RadTransitionControl__ automatically detects when the content is changed a
 #### __XAML__
 
 {{region xaml-radtransition-getting-started_5}}
-	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls" 
+	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
 #### __XAML__
 
 {{region xaml-radtransition-getting-started_3}}
 	<telerik:RadTransitionControl Grid.Column="1"
-	                              Content="{Binding SelectedItem, ElementName=PhotosListBox}">
+	                      Content="{Binding SelectedItem, ElementName=PhotosListBox}">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>

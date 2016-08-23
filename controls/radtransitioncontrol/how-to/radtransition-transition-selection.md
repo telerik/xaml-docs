@@ -49,25 +49,25 @@ Such converter would look like:
 {{region cs-radtransition-how-to-transition-selection_0}}
 	public class BooleanToTransitionConverter : IValueConverter
 	{
-		public TransitionProvider TransitionForward { get; set; }
-		public TransitionProvider TransitionBackward { get; set; }
+	    public TransitionProvider TransitionForward { get; set; }
+	    public TransitionProvider TransitionBackward { get; set; }
 	
-		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-		{
-			if (!(value is bool) || (bool)value)
-			{
-				return TransitionForward;
-			}
-			else
-			{
-				return TransitionBackward;
-			}
-		}
+	    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+	    {
+	        if (!(value is bool) || (bool)value)
+	        {
+	            return TransitionForward;
+	        }
+	        else
+	        {
+	            return TransitionBackward;
+	        }
+	    }
 	
-		public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-		{
-			throw new NotImplementedException();
-		}
+	    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+	    {
+	        throw new NotImplementedException();
+	    }
 	}
 {{endregion}}
 
@@ -77,20 +77,20 @@ And could be used in XAML:
 
 {{region xaml-radtransition-how-to-transition-selection_1}}
 	<telerik:RadTransitionControl Content="{Binding SelectedImageSource}">
-	  <telerik:RadTransitionControl.Transition>
-	    <Binding Path="IsNavigatingForward">
-	      <Binding.Converter>
-	        <local:BooleanToTransitionConverter>
-	          <local:BooleanToTransitionConverter.TransitionForward>
-	            <telerik:SlideAndZoomTransition SlideDirection="LeftToRight" />
-	          </local:BooleanToTransitionConverter.TransitionForward>
-	          <local:BooleanToTransitionConverter.TransitionBackward>
-	            <telerik:SlideAndZoomTransition SlideDirection="RightToLeft" />
-	          </local:BooleanToTransitionConverter.TransitionBackward>
-	        </local:BooleanToTransitionConverter>
-	      </Binding.Converter>
-	    </Binding>
-	  </telerik:RadTransitionControl.Transition>
+	    <telerik:RadTransitionControl.Transition>
+	        <Binding Path="IsNavigatingForward">
+	            <Binding.Converter>
+	                <local:BooleanToTransitionConverter>
+	                    <local:BooleanToTransitionConverter.TransitionForward>
+	                        <telerik:SlideAndZoomTransition SlideDirection="LeftToRight" />
+	                    </local:BooleanToTransitionConverter.TransitionForward>
+	                    <local:BooleanToTransitionConverter.TransitionBackward>
+	                        <telerik:SlideAndZoomTransition SlideDirection="RightToLeft" />
+	                    </local:BooleanToTransitionConverter.TransitionBackward>
+	                </local:BooleanToTransitionConverter>
+	            </Binding.Converter>
+	        </Binding>
+	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
 {{endregion}}
 
@@ -111,25 +111,25 @@ In general implementing a custom TransitionProvider would use quite a few lines 
 {{region cs-radtransition-how-to-transition-selection_2}}
 	public class WizzardPageTransition : TransitionProvider
 	{
-		public TransitionProvider BackTransition { get; set; }
-		public TransitionProvider ForwardTransition { get; set; }
-		public override Transition CreateTransition(TransitionContext context)
-		{
-			WizzardPage oldPage = context.OldContent as WizzardPage;
-			WizzardPage newPage = context.CurrentContent as WizzardPage;
-			if (oldPage == null || newPage == null)
-			{
-				return null;
-			}
-			else if (newPage.PageIndex > oldPage.PageIndex)
-			{
-				return this.ForwardTransition.CreateTransition(context);
-			}
-			else
-			{
-				return this.BackTransition.CreateTransition(context);
-			}
-		}
+	    public TransitionProvider BackTransition { get; set; }
+	    public TransitionProvider ForwardTransition { get; set; }
+	    public override Transition CreateTransition(TransitionContext context)
+	    {
+	        WizzardPage oldPage = context.OldContent as WizzardPage;
+	        WizzardPage newPage = context.CurrentContent as WizzardPage;
+	        if (oldPage == null || newPage == null)
+	        {
+	            return null;
+	        }
+	        else if (newPage.PageIndex > oldPage.PageIndex)
+	        {
+	            return this.ForwardTransition.CreateTransition(context);
+	        }
+	        else
+	        {
+	            return this.BackTransition.CreateTransition(context);
+	        }
+	    }
 	}
 {{endregion}}
 
@@ -138,18 +138,18 @@ And in XAML you could use it like:
 #### __XAML__
 
 {{region xaml-radtransition-how-to-transition-selection_3}}
-	<telerik:RadTransitionControl Content="{TemplateBinding SelectedContent}">
-		<telerik:RadTransitionControl.Transition>
-			<local:WizzardPageTransition>
-				<local:WizzardPageTransition.BackTransition>
-					<telerik:SlideAndZoomTransition SlideDirection="LeftToRight"/>
-				</local:WizzardPageTransition.BackTransition>
-				<local:WizzardPageTransition.ForwardTransition>
-					<telerik:SlideAndZoomTransition SlideDirection="RightToLeft"/>
-				</local:WizzardPageTransition.ForwardTransition>
-			</local:WizzardPageTransition>
-		</telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>	
+	<telerik:RadTransitionControl Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=SelectedContent}" >
+	    <telerik:RadTransitionControl.Transition>
+	        <local:WizzardPageTransition>
+	            <local:WizzardPageTransition.BackTransition>
+	                <telerik:SlideAndZoomTransition SlideDirection="LeftToRight"/>
+	            </local:WizzardPageTransition.BackTransition>
+	            <local:WizzardPageTransition.ForwardTransition>
+	                <telerik:SlideAndZoomTransition SlideDirection="RightToLeft"/>
+	            </local:WizzardPageTransition.ForwardTransition>
+	        </local:WizzardPageTransition>
+	    </telerik:RadTransitionControl.Transition>
+	</telerik:RadTransitionControl>
 {{endregion}}
 
 If the Content is non-UI element you could define simple properties that can be compared in the if-statements.      	

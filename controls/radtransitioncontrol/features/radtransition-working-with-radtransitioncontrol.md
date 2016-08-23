@@ -35,9 +35,9 @@ In order to set the content of the __RadTransitionControl__ you have to use its 
 {{region xaml-radtransition-features-working-with-radtransitioncontrol_0}}
 	<telerik:RadTransitionControl x:Name="radTRansitionControl">
 	    <Image Source="/Silverlight.Help.RadTransitionControlSamples;component/Demos/Images/Koala.jpg"
-	            Stretch="Uniform"
-	            Width="320"
-	            Height="240" />
+	    Stretch="Uniform"
+	    Width="320"
+	    Height="240" />
 	</telerik:RadTransitionControl>
 {{endregion}}
 
@@ -93,7 +93,7 @@ By default there is no easing function specified for the __RadTransitionControl_
 #### __XAML__
 
 {{region xaml-radtransition-features-working-with-radtransitioncontrol_4}}
-	<telerik:RadTransitionControl x:Name="radTransitionControl">
+	<telerik:RadTransitionControl x:Name="radTransitionControl1">
 	    <telerik:RadTransitionControl.Easing>
 	        <BackEase EasingMode="EaseInOut" Amplitude="0.5" />
 	    </telerik:RadTransitionControl.Easing>

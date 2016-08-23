@@ -20,7 +20,7 @@ Here is an example:
 
 {{region xaml-radtransition-features-data-binding_0}}
 	<telerik:RadTransitionControl x:Name="radTRansitionControl"
-	                                Content="{Binding MyDataItem}">
+	                        Content="{Binding MyDataItem}">
 	    <telerik:RadTransitionControl.ContentTemplate>
 	        <DataTemplate>
 	            <TextBlock Text="{Binding Text}" />
@@ -41,8 +41,8 @@ You can also bind the __RadTransitionControl__ to another __Control__ in your __
 	<ListBox x:Name="MyListBox">
 	    ...
 	</ListBox>
-	<telerik:RadTransitionControl x:Name="radTRansitionControl"
-	                                Content="{Binding SelectedItem, ElementName=MyListBox}">
+	<telerik:RadTransitionControl x:Name="radTRansitionControl1"
+	                        Content="{Binding SelectedItem, ElementName=MyListBox}">
 	    <telerik:RadTransitionControl.ContentTemplate>
 	        <DataTemplate>
 	            <TextBlock Text="{Binding Text}" />

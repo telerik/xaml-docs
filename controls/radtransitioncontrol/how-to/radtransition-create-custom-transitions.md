@@ -42,6 +42,7 @@ The class that wraps the shader effect should inherit the __BaseTransitionEffect
 	{
 	    protected override PixelShader LoadShader()
 	    {
+	        return new PixelShader();
 	    }
 	}
 {{endregion}}
@@ -58,7 +59,7 @@ In the override for the __LoadShader()__ method you have to create a __PixelShad
 	    protected override PixelShader LoadShader()
 	    {
 	        PixelShader pixelShader = new PixelShader();
-	        pixelShader.UriSource = TransitionEffect.PackUri<CircleRevealTransitionEffect>( "CustomTransitions/CircleRevealTransitionEffect.ps" );
+	        pixelShader.UriSource = TransitionEffect.PackUri<CircleRevealTransitionEffect>("CustomTransitions/CircleRevealTransitionEffect.ps");
 	        return pixelShader;
 	    }
 	}
@@ -101,20 +102,20 @@ In order to pass the fuzzy amount constant create an appropriate __DependencyPro
 #### __C#__
 
 {{region cs-radtransition-how-to-create-custom-transitions_4}}
-	public static readonly DependencyProperty FuzzyAmountProperty = 
-	    DependencyProperty.Register( "FuzzyAmount", 
-	                                    typeof( double ), 
-	                                    typeof( CircleRevealTransitionEffect ), 
-	                                    new PropertyMetadata( 0.1, ShaderEffect.PixelShaderConstantCallback( 1 ) ) );
+	public static readonly DependencyProperty FuzzyAmountProperty =
+	    DependencyProperty.Register("FuzzyAmount",
+	                                    typeof(double),
+	                                    typeof(CircleRevealTransitionEffect),
+	                                    new PropertyMetadata(0.1, ShaderEffect.PixelShaderConstantCallback(1)));
 	public double FuzzyAmount
 	{
 	    get
 	    {
-	        return ( double )this.GetValue( FuzzyAmountProperty );
+	        return (double)this.GetValue(FuzzyAmountProperty);
 	    }
 	    set
 	    {
-	        this.SetValue( FuzzyAmountProperty, value );
+	        this.SetValue(FuzzyAmountProperty, value);
 	    }
 	}
 {{endregion}}
@@ -128,7 +129,7 @@ You also have to force an update of the __Shader Effect__ constant, when your __
 {{region cs-radtransition-how-to-create-custom-transitions_5}}
 	public CircleRevealTransitionEffect()
 	{
-	    base.UpdateShaderValue( FuzzyAmountProperty );
+	    base.UpdateShaderValue(FuzzyAmountProperty);
 	}
 {{endregion}}
 

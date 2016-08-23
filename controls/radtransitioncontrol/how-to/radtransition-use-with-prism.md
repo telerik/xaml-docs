@@ -24,7 +24,7 @@ In order to access the __RegionName__ attached property you have to declare the 
 
 {{region xaml-radtransition-how-to-use-with-prism_1}}
 	<telerik:RadTransitionControl Grid.Column="1"
-	                                Regions:RegionManager.RegionName="MainRegion">
+	                        Regions:RegionManager.RegionName="MainRegion">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>

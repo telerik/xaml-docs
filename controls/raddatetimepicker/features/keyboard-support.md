@@ -12,7 +12,7 @@ position: 8
 
 Using the keyboard you can perform some of the most common tasks. This section describes the keyboard shortcuts used by __RadDateTimePicker__.
 
-## Navigation between Calendar part and Clock part
+## Navigation between Calendar and Clock
 
 When the user opens the DateTimePicker, the keyboard focus goes automatically to the Calendar in it. At this point, there is a full TAB cycle in the dropdown of the control, namely:
 
@@ -28,7 +28,7 @@ When the user opens the DateTimePicker, the keyboard focus goes automatically to
 
 ## Navigation inside the Calendar
 
-When the focus is in the Calendar, you can use the following keyboard keys to navigate between the dates and the Views:
+When the focus is in the Calendar, you can use the following keyboard keys to navigate between the Dates and the Views:
 
 * __Arrow Keys__ - navigate in all directions inside the Calendar;
 

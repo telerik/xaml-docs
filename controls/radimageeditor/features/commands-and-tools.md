@@ -78,6 +78,6 @@ Available __Tools__:
 
 The effects in __RadImageEditor__ that are implemented using pixel shaders enable the use of hardware acceleration whenever the platform supports it. This result in most effects being applied almost instantly, enabling real-time preview with sliders for the parameter values. You can easily create a command using your own custom shader by implementing __EffectCommandBase__. This approach is shown in [this blog post](http://blogs.telerik.com/blogs/posts/11-07-20/under-the-hood-of-radimageeditor-for-silverlight-and-wpf.aspx) with a sample implementation of a blur command.
         
-# See Also
+## See Also
 
 * [History]({%slug radimageeditor-features-history%})

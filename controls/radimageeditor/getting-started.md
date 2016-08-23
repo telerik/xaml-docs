@@ -29,7 +29,7 @@ Adding the above listed references will be sufficient to enable different modifi
 __RadImageEditor__ has a good-to-go UI that comes out of the box. That is __RadImageEditorUI__, which is quite easily wired to work with the commands and tools that __RadImageEditor__ exposes. As both controls follow closely the command pattern, they can be set up to work with little to no code-behind. However, you can implement and wire custom UI, too.  [Read More]({%slug radimageeditor-features-radimageeditorui%})
 
 
-# See Also
+## See Also
 
 * [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%})
 * [Import and Export]({%slug radimageeditor-features-import-export%})

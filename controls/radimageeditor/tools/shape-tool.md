@@ -203,7 +203,7 @@ After creating a custom shape, it should be registered in the tool. This could b
 	</tools:ShapeTool>
 {{endregion}}
 
-# See also
+## See also
 
 * [Draw Tool]({%slug radimageeditor-tools-drawing%})
 * [Crop Tool]({%slug radimageeditor-tools-crop%})

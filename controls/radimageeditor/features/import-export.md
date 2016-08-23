@@ -140,14 +140,14 @@ One thing to note is that the last applied change may not be committed (which no
 
 To commit this last change, use the method from **Example 4**
 
-#### __[C#] Example 3: Commit a change__
+#### __[C#] Example 4: Commit a change__
 
 {{region cs-radimageeditor-features-import-export_4}}
 	this.imageEditorUI.ImageEditor.CommitTool();
 {{endregion}}
 
 
-# See Also 
+## See Also 
 
 * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})
 * [History]({%slug radimageeditor-features-history%})

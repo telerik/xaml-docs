@@ -120,6 +120,6 @@ For example, if you subscribe to the CurrentImageChanged in the following way, y
 
 
 
-# See Also
+## See Also
 
 * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})

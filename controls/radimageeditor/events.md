@@ -93,6 +93,6 @@ RadImageEditor raises the following events:
 >tipWhen a tool is executed, the CommandExecuting/ CommandExecuted events are raised for the ExecuteToolCommand. The specific tool is available from the CommandParameter, however you cannot control its behavior (for example, cancel it). For this purpose the ToolCommitting/ToolCommitted events are raised. You can find a working example of their use in our online SDK reporitory: [Handle Tool Commit](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/HandleToolCommit).
           
 
-# See Also
+## See Also
 
  * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})

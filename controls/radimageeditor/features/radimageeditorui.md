@@ -107,6 +107,6 @@ The image to be used will be chosen depending on the Theme applied to the editor
 >tip A custom UI that is not based on RadImageEditorUI can also be created and used. This approach is illustrated in the demo CustomUI, which can be viewed here: [http://demos.telerik.com/silverlight/#ImageEditor/CustomUI](http://demos.telerik.com/silverlight/#ImageEditor/CustomUI).
 
 
-# See Also
+## See Also
 
 * [Import and Export]({%slug radimageeditor-features-import-export%})

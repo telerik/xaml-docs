@@ -45,7 +45,7 @@ The __ToolBase__ class is an abstract class which implements the __ITool__ inter
 * __GetSettingsUI()__: Returns an __UIElement__ which shall be placed as a content of the __RadImageEditor’s ToolSettingsContainer__.
 
 
-# See Also
+## See Also
 
 * [Create a Custom Tool]({%slug radimageeditor-howto-custom-tool%})
 * [Implement DrawToolBase Class]({%slug radimageeditor-howto-implement-drawtoolbase%})

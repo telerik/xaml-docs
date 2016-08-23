@@ -62,7 +62,7 @@ The __DrawTool__ introduces the following virtual methods which can be overridde
 
 * __CreatePathSegment(Point currentPosition)__: Returns a [PathSegment](https://msdn.microsoft.com/en-us/library/system.windows.media.pathsegment(v=vs.110).aspx) object which is added to the drawn path’s figure during the drawing. A [LineSegment](https://msdn.microsoft.com/en-us/library/system.windows.media.linesegment%28v=vs.110%29.aspx) is inserted by default.
 
-# See Also
+## See Also
 
 * [Cropping]({%slug radimageeditor-tools-crop%})
 * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})

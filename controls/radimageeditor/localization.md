@@ -146,7 +146,7 @@ Of course, if you don't want to hard-code your translation inside the source cod
 
 
 
-# See Also
+## See Also
 
 * [Localization SDK Example](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization)
 * [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%})

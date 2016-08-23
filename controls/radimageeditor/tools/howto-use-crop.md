@@ -145,7 +145,7 @@ The calculated ratio value corresponds to the width of the adorner divided by it
 >tipYou can crop an image with fixed ration between the width and height without setting the FixedRatio property. Just press and hold the __Shift__ key while dragging the crop adorner.
           
 
-# See Also
+## See Also
 
 * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})
 * [Drawing]({%slug radimageeditor-tools-drawing%})

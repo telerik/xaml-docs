@@ -201,7 +201,7 @@ This allows you to implement virtually any behavior you want within your tool an
 	>tipThe complete code is available in the XAML SDK repository: [Custom Watermark Tool](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/CustomWatermarkTool).
 	          
 
-# See Also
+## See Also
 
 * [Implement ToolBase Class]({%slug radimageeditor-howto-implement-toolbase%})
 * [Implement DrawToolBase Class]({%slug radimageeditor-howto-implement-drawtoolbase%})

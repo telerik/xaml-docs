@@ -23,7 +23,7 @@ Here is an example with the __HeaderedContentControl__. Take a look at the defau
 
 #### __XAML__
 
-{{region radtransition-features-integration-with-content-controls_1}}
+{{region xaml-radtransition-features-integration-with-content-controls_1}}
 	<ControlTemplate TargetType="controlsToolkit:HeaderedContentControl">
 	    <StackPanel>
 	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
@@ -44,7 +44,7 @@ Here is an example with the __HeaderedContentControl__. Take a look at the defau
 
 #### __XAML__
 
-{{region radtransition-features-integration-with-content-controls_2}}
+{{region xaml-radtransition-features-integration-with-content-controls_2}}
 	<ControlTemplate TargetType="HeaderedContentControl">
 	    <StackPanel>
 	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
@@ -69,13 +69,13 @@ The first __ContentPresenter__ is responsible for the header and the second one 
 
 #### __XAML__
 
-{{region radtransition-features-integration-with-content-controls_3}}
+{{region xaml-radtransition-features-integration-with-content-controls_3}}
 	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
 #### __XAML__
 
-{{region radtransition-features-integration-with-content-controls_4}}
+{{region xaml-radtransition-features-integration-with-content-controls_4}}
 	<ControlTemplate TargetType="controlsToolkit:HeaderedContentControl">
 	    <StackPanel>
 	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
@@ -98,7 +98,7 @@ The first __ContentPresenter__ is responsible for the header and the second one 
 
 #### __XAML__
 
-{{region radtransition-features-integration-with-content-controls_5}}
+{{region xaml-radtransition-features-integration-with-content-controls_5}}
 	<ControlTemplate TargetType="HeaderedContentControl">
 	    <StackPanel>
 	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
@@ -128,7 +128,7 @@ Next, configure the __RadTransitionControl__ to match your needs. For example, d
 
 #### __XAML__
 
-{{region radtransition-features-integration-with-content-controls_7}}
+{{region xaml-radtransition-features-integration-with-content-controls_7}}
 	<telerik:RadTransitionControl Cursor="{TemplateBinding Cursor}"
 	                              ContentTemplate="{TemplateBinding ContentTemplate}"
 	                              Content="{TemplateBinding Content}"

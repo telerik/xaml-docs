@@ -18,7 +18,7 @@ Here is an example:
 
 #### __XAML__
 
-{{region radtransition-features-data-binding_0}}
+{{region xaml-radtransition-features-data-binding_0}}
 	<telerik:RadTransitionControl x:Name="radTRansitionControl"
 	                                Content="{Binding MyDataItem}">
 	    <telerik:RadTransitionControl.ContentTemplate>
@@ -37,7 +37,7 @@ You can also bind the __RadTransitionControl__ to another __Control__ in your __
 
 #### __XAML__
 
-{{region radtransition-features-data-binding_1}}
+{{region xaml-radtransition-features-data-binding_1}}
 	<ListBox x:Name="MyListBox">
 	    ...
 	</ListBox>

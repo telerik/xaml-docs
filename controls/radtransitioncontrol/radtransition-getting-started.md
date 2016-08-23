@@ -26,13 +26,13 @@ In order to add a __RadTransitionControl__ to your application, you have to simp
 
 #### __XAML__
 
-{{region radtransition-getting-started_4}}
+{{region xaml-radtransition-getting-started_4}}
 	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
 #### __XAML__
 
-{{region radtransition-getting-started_0}}
+{{region xaml-radtransition-getting-started_0}}
 	<telerik:RadTransitionControl x:Name="radTransitionControl" />
 {{endregion}}
 
@@ -46,7 +46,7 @@ Here is a sample __ListBox__ definition, which is populated with objects of type
 
 #### __XAML__
 
-{{region radtransition-getting-started_1}}
+{{region xaml-radtransition-getting-started_1}}
 	<ListBox x:Name="PhotosListBox"
 	            DisplayMemberPath="Name"
 	            ItemsSource="{Binding PhotosCollection}" />
@@ -60,7 +60,7 @@ The content of the __RadTransitionControl__ should be represented by the __Selec
 
 #### __XAML__
 
-{{region radtransition-getting-started_2}}
+{{region xaml-radtransition-getting-started_2}}
 	<Grid x:Name="LayoutRoot">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="Auto" />
@@ -95,13 +95,13 @@ The __RadTransitionControl__ automatically detects when the content is changed a
 
 #### __XAML__
 
-{{region radtransition-getting-started_5}}
+{{region xaml-radtransition-getting-started_5}}
 	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls" 
 {{endregion}}
 
 #### __XAML__
 
-{{region radtransition-getting-started_3}}
+{{region xaml-radtransition-getting-started_3}}
 	<telerik:RadTransitionControl Grid.Column="1"
 	                              Content="{Binding SelectedItem, ElementName=PhotosListBox}">
 	    <telerik:RadTransitionControl.Transition>

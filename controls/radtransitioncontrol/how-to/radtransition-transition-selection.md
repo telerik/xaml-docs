@@ -46,7 +46,7 @@ Such converter would look like:
 
 #### __C#__
 
-{{region radtransition-how-to-transition-selection_0}}
+{{region cs-radtransition-how-to-transition-selection_0}}
 	public class BooleanToTransitionConverter : IValueConverter
 	{
 		public TransitionProvider TransitionForward { get; set; }
@@ -75,7 +75,7 @@ And could be used in XAML:
 
 #### __XAML__
 
-{{region radtransition-how-to-transition-selection_1}}
+{{region xaml-radtransition-how-to-transition-selection_1}}
 	<telerik:RadTransitionControl Content="{Binding SelectedImageSource}">
 	  <telerik:RadTransitionControl.Transition>
 	    <Binding Path="IsNavigatingForward">
@@ -108,7 +108,7 @@ In general implementing a custom TransitionProvider would use quite a few lines 
 
 #### __C#__
 
-{{region radtransition-how-to-transition-selection_2}}
+{{region cs-radtransition-how-to-transition-selection_2}}
 	public class WizzardPageTransition : TransitionProvider
 	{
 		public TransitionProvider BackTransition { get; set; }
@@ -137,7 +137,7 @@ And in XAML you could use it like:
 
 #### __XAML__
 
-{{region radtransition-how-to-transition-selection_3}}
+{{region xaml-radtransition-how-to-transition-selection_3}}
 	<telerik:RadTransitionControl Content="{TemplateBinding SelectedContent}">
 		<telerik:RadTransitionControl.Transition>
 			<local:WizzardPageTransition>

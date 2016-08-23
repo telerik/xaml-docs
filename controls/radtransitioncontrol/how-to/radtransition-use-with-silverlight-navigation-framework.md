@@ -29,7 +29,7 @@ The first thing to do is to create a __ControlTemplate__ in your resources secti
 
 #### __XAML__
 
-{{region radtransition-how-to-use-with-silverlight-navigation-framework_1}}
+{{region xaml-radtransition-how-to-use-with-silverlight-navigation-framework_1}}
 	<UserControl.Resources>
 	    <ControlTemplate x:Name="FrameTemplate"
 	                        TargetType="navigation:Frame">
@@ -43,7 +43,7 @@ Add a __RadTransitionControl__ to the __ControlTemplate__ and configure the appr
 
 #### __XAML__
 
-{{region radtransition-how-to-use-with-silverlight-navigation-framework_2}}
+{{region xaml-radtransition-how-to-use-with-silverlight-navigation-framework_2}}
 	<UserControl.Resources>
 	    <ControlTemplate x:Name="FrameTemplate"
 	                        TargetType="navigation:Frame">
@@ -58,7 +58,7 @@ By default there is no transition effect specified for the __RadtRansitionContro
 
 #### __XAML__
 
-{{region radtransition-how-to-use-with-silverlight-navigation-framework_3}}
+{{region xaml-radtransition-how-to-use-with-silverlight-navigation-framework_3}}
 	<UserControl.Resources>
 	    <ControlTemplate x:Name="FrameTemplate"
 	                        TargetType="navigation:Frame">
@@ -78,7 +78,7 @@ The last thing to do is to set the created __ControlTemplate__ to the __Frame__ 
 
 #### __XAML__
 
-{{region radtransition-how-to-use-with-silverlight-navigation-framework_4}}
+{{region xaml-radtransition-how-to-use-with-silverlight-navigation-framework_4}}
 	<navigation:Frame x:Name="MainFrame" Template="{StaticResource FrameTemplate}" />
 {{endregion}}
 

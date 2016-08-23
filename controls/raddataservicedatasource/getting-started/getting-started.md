@@ -21,7 +21,9 @@ This tutorial will walk you through the creation of a sample application that co
 
 >tipIf you are using OData version 3 you need to add reference to  __Telerik.Windows.Controls.DataServices50__ which is built against __Microsoft.Data.Services.Client__ with version __5.6.4__.
 
->tipFor OData version 4 support, you need to add reference to __Telerik.Windows.Controls.DataServices60__ which is built against __Microsoft.OData.Client__ with __version 6.13.0__.
+{% if site.site_name == 'WPF' %}
+>tipFor OData version 4 support, you need to add reference to __Telerik.Windows.Controls.DataServices60__ which is built against __Microsoft.OData.Client__ with __version 6.15.0__.
+{% endif %}
 
 ## Adding RadDataServiceDataSource 
 

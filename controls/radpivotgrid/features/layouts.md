@@ -16,7 +16,7 @@ __RadPivotGrid__ supports all of the three most widely used report layouts: Tabu
 
 When you create your report with __RadPivotGrid__ you may want to make the data easier for understanding by changing the report layout. With __RadPivotGrid__ you have three different Layouts to format the data in the rows and columns. Each of them can be set separately for Rows and Columns and by combining them you can create many different reports:       
 
-* __Compact__ - with this layout all row headers are in one column and all column headers are in one row. If you have more than one group description in your rows/columns you will notice that there is fixed indent for each group headers. This way you there is more space for numeric data:
+* __Compact__ - with this layout all row headers are in one column and all column headers are in one row. If you have more than one group description in your rows/columns you will notice that there is fixed indent for each group headers. This way there is more space for numeric data:
 
 ![Rad Pivot Grid Features Layouts 01](images/RadPivotGrid_Features_Layouts_01.png)
 

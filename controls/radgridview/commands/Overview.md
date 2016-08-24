@@ -71,7 +71,7 @@ All supported commands are defined in the RadGridViewCommands class and are list
 
 * __Search__- executed in order to show the search panel.
 		  
-* __SearchByText__- adds search criteria programmatically.
+* __SearchByText__ - adds search criteria programmatically.
 
 * __SelectCurrentItem__ - selects the current item.
 		  
@@ -87,7 +87,7 @@ As the commands provided by __RadGridView__ are __ICommands__ at their core, the
 Using the __RadGridViewCommands__ class, you can set a consequence of commands to be performed one after another as if simultaneously.  So, for example, you may easily handle the Click event of a button that moves the focus down, selects the current unit and delete it. However, when invoking the commands in such a manner a second parameter should be added, pointing out the target UI Element.
 		
 
-#### __C#__
+#### __[C#] Example 1: Executing different commands__
 
 {{region GridView-Commands-Overview_0}}
 
@@ -103,7 +103,7 @@ Using the __RadGridViewCommands__ class, you can set a consequence of commands t
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Executing different commands__
 
 {{region GridView-Commands-Overview_1}}
 

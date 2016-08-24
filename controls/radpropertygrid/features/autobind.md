@@ -90,8 +90,22 @@ In most cases when a custom __DataTemplate__ is defined, the element within it w
 
 >The AutoBind behavior is designed to function exclusively in the context of RadPropertyGrid.
           
+## Set the BindingMode of Custom Data Type
+By default, the __AutoBindBehavior__ supports __TwoWay Binding__ only for the data types listed in the previous section. For a __custom data type__, the __BindingMode__ is __OneWay__. This behavior can be altered through the __BindingModeOverride__ property. 
 
-# See Also
+#### __[XAML]Example 2: Setting the BindingModeOverride property to TwoWay__
+
+	{{region xaml-radpropertygrid-autobind_1}}
+	<Grid.Resources>
+	  <DataTemplate x:Key="editorTemplate1">
+	    <TextBox Foreground="Red" FontWeight="Bold"
+	             telerik:AutoBindBehavior.BindingModeOverride="TwoWay"/>
+	  </DataTemplate>
+	</Grid.Resources>
+{{endregion}}
+          
+
+## See Also
 
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})
 

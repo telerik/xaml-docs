@@ -40,7 +40,7 @@ Next, you need to add RadCarousel to your application. You may set some of its b
 	</UserControl>
 {{endregion}}
 
-## Bind RadCarousel to Collection of Custom Objects
+## Bind RadCarousel to а Collection of Custom Objects
 
 For the purpose of this tutorial we will create a new **Employee** class with a couple of properties:
 

@@ -14,17 +14,17 @@ position: 0
 
 * [Implicit Styles Benefits](#implicit-styles-benefits)
 
-* [Themes distribution](#themes-distribution)
+* [Themes Distribution](#themes-distribution)
       
-* [Applying a theme globally in your application](#applying-a-theme-globally-in-your-application)
+* [Applying a Theme Globally in Your Application](#applying-a-theme-globally-in-your-application)
 
-* [Basing a custom style on a theme default style](#basing-a-custom-style-on-a-theme-default-style)
+* [Basing a Custom Style on a Theme Default Style](#basing-a-custom-style-on-a-theme-default-style)
 
 * [Example: How To Apply Custom Styles to Controls](#how-to-apply-custom-style-to-controls  )
 
-* [Implicit Styles guidelines for all assemblies](#implicit-styles-guidelines-for-all-assemblies)
+* [Implicit Styles Guidelines For All Assemblies](#implicit-styles-guidelines-for-all-assemblies)
 
-* [Styling custom controls](#styling-custom-controls)
+* [Styling Custom Controls](#styling-custom-controls)
 
 
 ## Implicit Styles Benefits
@@ -123,7 +123,7 @@ The default styles and resources for each theme are shipped in the **Themes.Impl
 
 When creating the default styles for all the controls, we have followed a naming convention where the key for every control`s default style consists of **the name of the control followed by a "Style" suffix**.
 
-This would mean that the default style applied for the **RadGridView** control is with **x:Key="RadGridViewStyle"**, the default one for the **RadComboBox** with **x:Key="RadComboBoxStyle"**, etc. **Example 4** shows how to create custom styles based on the default one for the **RadComboBox** control:
+This would mean that the default style applied for the **RadGridView** control is with **x:Key="RadGridViewStyle"**, the default one for the **RadComboBox** with **x:Key="RadComboBoxStyle"**, etc. **Example 3** shows how to create custom styles based on the default one for the **RadComboBox** control:
 
 #### __[XAML] Example 3: Custom styles for RadComboBox__
 
@@ -150,7 +150,7 @@ The following example shows how to apply a custom style to a control in an appli
 #### __Figure 4: Copy the needed .xaml in the project__
 ![implicit styles 1](images/implicit_styles_1.png)
 
-* The next step is to merge these **ResourceDictionaries** in the App.xaml file as shown in __Example 5__.          
+* The next step is to merge these **ResourceDictionaries** in the App.xaml file as shown in __Example 4__.          
             
 #### __[XAML] Example 4: Merging the Resource Dictionaries__
 

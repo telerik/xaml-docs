@@ -38,7 +38,7 @@ After adding references to the aforementioned dlls, you can declare a new __RadD
 
 >To use the __RadDataPager__ in the XAML you have to add the following namespace declaration: __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__ 
 
-#### __XAML__
+#### __[XAML] Example 1: Declare a RadDataPager__
 
 {{region raddatapager-getting-started_0}}
 
@@ -66,7 +66,7 @@ The collection in this example holds business objects of type __Employee__. You 
 After that, you create your __RadDataPager__ and bind its __RadDataPager.Source__ property to the __RadGridView.Items__ collection using __ElementName Binding__.
         
 
-#### __XAML__
+#### __[XAML] Example 2: Paging RadGridView__
 
 {{region raddatapager-getting-started_7}}
 
@@ -91,12 +91,14 @@ After that, you create your __RadDataPager__ and bind its __RadDataPager.Source_
 	</Grid>
 {{endregion}}
 
+#### __Figure 1: Paged RadGridView__
  ![](images/RadDataPager_GettingStarted_01.png)
 
 ## Paging a Collection
 
 >To learn more about the use of the __Source__ and the __PagedSource__ properties, please read [this topic]({%slug raddatapager-features-source-and-paged-source%}).
-          
+         
+>tip __RadDataPager__ internally uses a __QueryableCollectionView__ for its paging mechanism, which relies on the __Skip__ method. This requires the __OrderBy__ method to be called over the source collection, so that it is sorted.
 
 __RadDataPager__ can page any collection that implements the __IEnumerable__ interface. The only thing that you have to do is to pass the collection to its __Source__ property.
         
@@ -107,7 +109,7 @@ The collection in this example will hold business objects of type Club. You can 
 Create your __RadDataPager__ and make some basic configurations to it.
         
 
-#### __XAML__
+#### __[XAML] Example 3: RadDataPager bound to a collection__
 
 	{{region raddatapager-getting-started_3}}
 	<telerik:RadDataPager x:Name="radDataPager"
@@ -126,7 +128,7 @@ After the collection is passed to the __Source__ property, it will get split int
 
 The paged collection inside the __RadDataPager__ can be accessed via the __PagedSource__ property. It exposes the set of data belonging to the current page. Here is an example of a __ListBox__ that displays the data paged by the __RadDataPager__.
 
-#### __XAML__
+#### __[XAML] Example 4: ListBox exposing the paged collection__
 
 {{region raddatapager-getting-started_6}}
 

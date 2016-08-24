@@ -1,14 +1,14 @@
 ---
-title: RowStyleSelectors
-page_title: RowStyleSelectors
-description: RowStyleSelectors
+title: RowStyleSelector
+page_title: RowStyleSelector
+description: RowStyleSelector
 slug: gridview-rowstyleselector
-tags: rowstyleselectors
+tags: rowstyleselector
 published: True
 position: 2
 ---
 
-# RowStyleSelectors
+# RowStyleSelector
 
 This article illustrates how to conditionally style rows through applying __RowStyleSelector__.
 		

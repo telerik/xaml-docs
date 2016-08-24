@@ -18,16 +18,15 @@ __RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsC
 #### __[C#] Example 1: Setting RadCarousel's ItemsSource__
 
 	{{region cs-carousel-data-binding_0}}
-	            var dataTable = GetDataTable();
-	            this.RadCarousel1.ItemsSource = dataTable;
+	var dataTable = GetDataTable();
+	this.RadCarousel1.ItemsSource = dataTable;
 {{endregion}}
 
 #### __[VB.NET] Example 1: Setting RadCarousel's ItemsSource__
 
 	{{region vb-carousel-data-binding_0}}
-
-	            Dim dataTable = GetDataTable()
-	            Me.RadCarousel1.ItemsSource = dataTable
+	Dim dataTable = GetDataTable()
+	Me.RadCarousel1.ItemsSource = dataTable
 {{endregion}}
 
 Unlike a standard items control, __RadCarousel's ItemsSource__ property is declared to be of type __System.Object__. This lets you provide objects that are not .NET collections like the ADO.NET __DataTable__ and __DataSet__:
@@ -35,16 +34,15 @@ Unlike a standard items control, __RadCarousel's ItemsSource__ property is decla
 #### __[C#] Example 2: Providing a DataSet as an ItemsSource__
 
 	{{region cs-carousel-data-binding_1}}
-	            var dataSet = dataTable.DataSet;
-	            this.RadCarousel1.ItemsSource = dataSet;
+	var dataSet = dataTable.DataSet;
+	this.RadCarousel1.ItemsSource = dataSet;
 {{endregion}}
 
 #### __[VB.NET] Example 2: Providing a DataSet as an ItemsSource__
 
 	{{region vb-carousel-data-binding_1}}
-
-	            Dim dataSet = dataTable.DataSet
-	            Me.RadCarousel1.ItemsSource = dataSet
+	Dim dataSet = dataTable.DataSet
+	Me.RadCarousel1.ItemsSource = dataSet
 {{endregion}}
 
 Of course standard .NET collections that implement the __IEnumerable__ interface are fully supported as well.
@@ -59,14 +57,14 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
 
 	{{region xaml-carousel-data-binding_2}}
 	<Grid>
-	    <Grid.Resources>
-	        <ObjectDataProvider x:Key="objectDataProvider" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
-	    </Grid.Resources>
-	    <telerik:RadCarousel Name="RadCarousel1"
-	        ItemsSource="{Binding Source={StaticResource objectDataProvider}}">
-	    </telerik:RadCarousel>
+	  <Grid.Resources>
+	    <ObjectDataProvider x:Key="objectDataProvider" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
+	  </Grid.Resources>
+	  <telerik:RadCarousel Name="RadCarousel1"
+	      ItemsSource="{Binding Source={StaticResource objectDataProvider}}">
+	  </telerik:RadCarousel>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 >Note that you have to always pass data provider objects through a binding for the WPF bindings infrastructure to extract the data. This code will __not__ work:
 
@@ -74,14 +72,14 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
 
 	{{region xaml-carousel-data-binding_3}}
 	<Grid>
-	    <Grid.Resources>
-	        <ObjectDataProvider x:Key="objectDataProviderIncorrect" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
-	    </Grid.Resources>
-	    <telerik:RadCarousel Name="RadCarouselIncorrect"
-	        ItemsSource="{StaticResource objectDataProviderIncorrect}">
-	    </telerik:RadCarousel>
+	  <Grid.Resources>
+	    <ObjectDataProvider x:Key="objectDataProviderIncorrect" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
+	  </Grid.Resources>
+	  <telerik:RadCarousel Name="RadCarouselIncorrect"
+	      ItemsSource="{StaticResource objectDataProviderIncorrect}">
+	  </telerik:RadCarousel>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 As you can see, using __{StaticResource objectDataProvider}__ directly fails to get the real data source from the data provider.
 

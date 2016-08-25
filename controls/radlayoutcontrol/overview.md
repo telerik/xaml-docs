@@ -28,9 +28,11 @@ __RadLayoutControl__ is a flexible component that allows you to arrange visual e
 
 * __Save and load the layout__: This feature allows you to save the current state of the layout. You can read more about it in the [Save/Load Layout]({%slug radlayoutcontrol-features-save-load-layout%}) help article.
 
+* __Toolbox__: The toolbox allows you to easily add items in the layout via drag/drop. You can also use it to keep track of the deleted items, and the hierarchical structure of the layout. You can read more about this in the [ToolBox]({%slug radlayoutcontrol-features-toolbox-overview%}) documentation section.
+
 >You can find examples that demonstrate RadLayoutControl in our [demo application](http://demos.telerik.com/wpf/).
 
-# See Also  
+## See Also  
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})
 * [Layout Groups Overview]({%slug radlayoutcontrol-features-layoutgroups-overview%})
 * [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%})

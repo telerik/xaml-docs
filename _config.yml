@@ -350,6 +350,14 @@ navigation:
         title: RadHtmlPlaceHolder
     controls/radlayoutcontrol:
         title: RadLayoutControl
+    controls/radlayoutcontrol/getting-started:
+        title: Getting Started	
+        position: 3
+    controls/radlayoutcontrol/features:
+        title: Features
+        position: 4
+    controls/radlayoutcontrol/features/toolbox:
+        title: ToolBox
     controls/radlayoutcontrol/features/layoutgroups:
         title: Layout Groups
     controls/radlegend:

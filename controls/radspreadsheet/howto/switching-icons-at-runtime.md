@@ -27,7 +27,7 @@ __RadSpreadsheet__ comes with two separate sets of icons that can be used in its
 {{endregion}}
 
 
->tipTo browse all icons you can download the source code of the controls from your Telerik account. The images are located at \Telerik_UI_for_WPF_Source_[Version]\Documents\ Spreadsheet\Controls\Images\Light.
+>tipTo browse all icons you can download the source code of the controls from your Telerik account. The images are located at {%if site.site_name == 'WPF' %}\Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\Spreadsheet\Controls\Images\Light.{%endif%} {%if site.site_name == 'Silverlight' %} \Telerik\_UI\_for\_Silverlight\_Source\_[Version]\Controls\Spreadsheet\Controls\Images\Light.{%endif%}
 
 
 # See Also

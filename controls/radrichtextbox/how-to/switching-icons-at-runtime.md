@@ -29,7 +29,7 @@ __RadRichTextBox__ comes with three separate sets of icons that can be used in i
 {{endregion}}
 
 
->tipTo browse all icons you can download the source code of the controls from your Telerik account. The images are located at \Telerik_UI_for_WPF_Source_[Version]\Documents\Flow\RichTextBoxUI\Images.
+>tipTo browse all icons you can download the source code of the controls from your Telerik account. The images are located at {%if site.site_name == 'WPF' %}\Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\RichTextBox\RichTextBoxUI\Images{%endif%}{%if site.site_name == 'Silerlight' %}\Telerik\_UI\_for\_Silerlight\_Source\_[Version]\Controls\RichTextBox\RichTextBoxUI\Images{%endif%}.
 
 
 # See Also

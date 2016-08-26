@@ -81,7 +81,8 @@ controls/radlistbox/how-to,
 visual-studio-templates.md,
 consuming-data/wcf-service.md,
 controls/radziplibrary/features/zip-extensions.md, controls/radgridview/features/search-as-you-type,
-controls/radentityframeworkdatasource]
+controls/radentityframeworkdatasource,
+controls/radgridview/styles-and-templates/styling-search-panel.md]
 
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:

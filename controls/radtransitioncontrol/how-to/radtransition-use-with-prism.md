@@ -16,15 +16,15 @@ In order to access the __RegionName__ attached property you have to declare the 
 
 #### __XAML__
 
-{{region radtransition-how-to-use-with-prism_0}}
+{{region xaml-radtransition-how-to-use-with-prism_0}}
 	xmlns:Regions="clr-namespace:Microsoft.Practices.Composite.Presentation.Regions;assembly=Microsoft.Practices.Composite.Presentation"
 {{endregion}}
 
 #### __XAML__
 
-{{region radtransition-how-to-use-with-prism_1}}
+{{region xaml-radtransition-how-to-use-with-prism_1}}
 	<telerik:RadTransitionControl Grid.Column="1"
-	                                Regions:RegionManager.RegionName="MainRegion">
+	                        Regions:RegionManager.RegionName="MainRegion">
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>

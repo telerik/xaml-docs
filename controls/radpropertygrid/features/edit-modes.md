@@ -56,7 +56,7 @@ __Figure 2__: RadPropertyGrid with Single EditMode
 
 ## Events
 
-> __BeginningEdit__ and __EditEnded__ events are raised only if the __EditMode__ property is set to __Single__.  
+> The __BeginningEdit__ and __EditEnded__ events are raised only if the __EditMode__ property is set to __Single__.  
 
 ### BeginEdit
 

@@ -10,57 +10,47 @@ position: 10
 
 # Scrolling into View
 
-
-
 Since __RadPropertyGrid__ utilizes UI virtualization, it only initializes those PropertyGridFields that should be currently displayed in the view port. Thus, if one aims to bring some PropertyDefinition's PropertyGridField into view, a standard visual tree traversal will not do the work. 
 
 ## The ScrollIntoViewAsync method
 
-__ScrollIntoViewAsync(PropertyDefinition propertyDefinition, Action<PropertyGridField> finishedCallback)__ handles the mentioned scenario. Invoking it for a certain __PropertyDefinition__ forces RadPropertyGrid to calculate the needed scroll offset to display its PropertyGridField and then scrolls to it. 
-        
+__ScrollIntoViewAsync(PropertyDefinition propertyDefinition, Action<PropertyGridField> finishedCallback)__ handles the mentioned scenario. Invoking it for a certain __PropertyDefinition__ forces RadPropertyGrid to calculate the needed scroll offset to display its PropertyGridField and then scrolls to it.
 
 >tipAfter the scrolling operation is accomplished, the __finishedCallback__ is executed, passing the __newly realized PropertyGridField as a parameter__.
-          
 
 >importantScrollIntoViewAsync is supported only when __RenderMode is set to Flat__. For more information on the different rendering modes, please check the [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}) article.
-        
 
 You can define RadPropertyGrid similar to:
 
-#### __[XAML]Example 1: Defining RadPropertyGrid with manually defined PropertyDefinitions__
+#### __[XAML] Example 1: Defining RadPropertyGrid with manually defined PropertyDefinitions__
 
-{{region radpropertygrid-scrolling_0}}
-
+	{{region xaml-radpropertygrid-scrolling_0}}
 	<Grid>
-	  <Grid.RowDefinitions>
-	    <RowDefinition Height="*"/>
-	    <RowDefinition Height="Auto" />
-	  </Grid.RowDefinitions>
-	  <telerik:RadPropertyGrid Height="200" x:Name="PropertyGrid1" RenderMode="Flat" AutoGeneratePropertyDefinitions="False">
-	    <telerik:RadPropertyGrid.PropertyDefinitions>
-	      <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="FirstName"/>
-	      <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="LastName"/>
-	      <telerik:PropertyDefinition Binding="{Binding Ocupation}" GroupName="Occupation" DisplayName="Occupation"/>
-	      <telerik:PropertyDefinition Binding="{Binding Salary}" GroupName="Occupation" DisplayName="Salary"/>
-	      <telerik:PropertyDefinition Binding="{Binding IsMarried}" GroupName="Personal" DisplayName="IsMarried"/>
-	    </telerik:RadPropertyGrid.PropertyDefinitions>
-	  </telerik:RadPropertyGrid>
-	  <Button Name="Button1"
-	      Grid.Row="1"
-	      Content="Scroll field into view "
-	      Click="Button1_Click"
-	      Margin="5"
-	      HorizontalAlignment="Left"/>
+	    <Grid.RowDefinitions>
+	        <RowDefinition Height="*"/>
+	        <RowDefinition Height="Auto" />
+	    </Grid.RowDefinitions>
+	    <telerik:RadPropertyGrid Height="200" x:Name="PropertyGrid1" RenderMode="Flat" AutoGeneratePropertyDefinitions="False">
+	        <telerik:RadPropertyGrid.PropertyDefinitions>
+	            <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="FirstName"/>
+	            <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="LastName"/>
+	            <telerik:PropertyDefinition Binding="{Binding Ocupation}" GroupName="Occupation" DisplayName="Occupation"/>
+	            <telerik:PropertyDefinition Binding="{Binding Salary}" GroupName="Occupation" DisplayName="Salary"/>
+	            <telerik:PropertyDefinition Binding="{Binding IsMarried}" GroupName="Personal" DisplayName="IsMarried"/>
+	        </telerik:RadPropertyGrid.PropertyDefinitions>
+	    </telerik:RadPropertyGrid>
+	    <Button Name="Button1"
+	Grid.Row="1"
+	Content="Scroll field into view "
+	Click="Button1_Click"
+	Margin="5"
+	HorizontalAlignment="Left"/>
 	</Grid>
 {{endregion}}
 
-
-
 As to assigning the __Item of RadPropertyGrid__, please check the __Binding RadPropertyGrid to an item__ section in [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) help article.
-        
 
 You can see the result after starting the application on __Figure 1__:
-        
 
 __Figure 1__: RadPropertyGrid in sorted mode with some fields not currently visible
 
@@ -68,13 +58,12 @@ __Figure 1__: RadPropertyGrid in sorted mode with some fields not currently visi
 
 Then, click on __Scroll field into view__ button and execute the following code:
 
-#### __[C#]Example 2: Scrolling to a particular PropertyDefinition and selecting it__
+#### __[C#] Example 2: Scrolling to a particular PropertyDefinition and selecting it__
 
-{{region radpropertygrid-scrolling_1}}
-
+	{{region cs-radpropertygrid-scrolling_1}}
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
-	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x=>x.DisplayName == "IsMarried").FirstOrDefault();
+	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x => x.DisplayName == "IsMarried").FirstOrDefault();
 	    if (propertyDefinition != null)
 	    {
 	        PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, new Action<PropertyGridField>(f => f.IsSelected = true));
@@ -82,21 +71,16 @@ Then, click on __Scroll field into view__ button and execute the following code:
 	}
 {{endregion}}
 
+#### __[VB] Example 2: Scrolling to a particular PropertyDefinition and selecting it__
 
-
-#### __[VB]Example 2: Scrolling to a particular PropertyDefinition and selecting it__
-
-{{region radpropertygrid-scrolling_1}}
-
-	    Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
-	        Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
-	        If propertyDefinition IsNot Nothing Then
-	            PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, New Action(Of PropertyGridField)(Function(f) InlineAssignHelper(f.IsSelected, True)))
-	        End If
-	    End Sub
+	{{region vb-radpropertygrid-scrolling_1}}
+	Private Sub Button1_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	    Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
+	    If propertyDefinition IsNot Nothing Then
+	        PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, New Action(Of PropertyGridField)(Sub(f) f.IsSelected = True))
+	    End If
+	End Sub
 {{endregion}}
-
-
 
 You can observe the result on __Figure 2__.
 
@@ -114,37 +98,7 @@ However, this functionality is supported only for groups that have valid Key (Pr
 
 __Figure 3__: RadPropertyGrid in grouped mode with some fields not currently visible![Rad Property Grid Scroll Grouped 1](images/RadPropertyGrid_Scroll_Grouped_1.png)
 
-Then, click on __Scroll field into view__ button and execute the following code:
-        
-#### __[C#]Example 3: Scrolling to a particular PropertyDefinition and selecting it__
-
-{{region radpropertygrid-scrolling_1}}
-
-	private void Button1_Click(object sender, RoutedEventArgs e)
-	{
-	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x=>x.DisplayName == "IsMarried").FirstOrDefault();
-	    if (propertyDefinition != null)
-	    {
-	        PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, new Action<PropertyGridField>(f => f.IsSelected = true));
-	    }
-	}
-{{endregion}}
-
-
-
-#### __[VB]Example 3: Scrolling to a particular PropertyDefinition and selecting it__
-
-{{region radpropertygrid-scrolling_1}}
-
-	    Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
-	        Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
-	        If propertyDefinition IsNot Nothing Then
-	            PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, New Action(Of PropertyGridField)(Function(f) InlineAssignHelper(f.IsSelected, True)))
-	        End If
-	    End Sub
-{{endregion}}
-
-
+Then, click on __Scroll field into view__ button and execute the code from **Example 2**.
 
 You can observe the result on __Figure 4__.
         

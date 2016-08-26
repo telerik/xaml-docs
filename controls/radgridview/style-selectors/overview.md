@@ -16,8 +16,16 @@ Typically, you use a style selector when you have more than one styles defined f
 
 >tipFor more information, you can check the [StyleSelector Class msdn article](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx).
 
-# See Also
+## See Also
 
- * [CellStyleSelector]({%slug gridview-cell-style-selector%})
+* [CellStyleSelector]({%slug gridview-cell-style-selector%})
 
- * [RowStyleSelector]({%slug gridview-rowstyleselector%})
+* [RowStyleSelector]({%slug gridview-rowstyleselector%})
+
+* [MergedCellsStyleSelector]({%slug gridview-merged-cells-style-selector%})
+
+* [RowDetailsStyleSelector]({%slug gridview-rowdetails-styleselector%})
+
+* [GroupFooterRowStyleSelector]({%slug gridview-group-footer-row-style-selector%})
+
+* [GroupFooterCellStyleSelector]({%slug gridview-group-footer-cell-style-selector%})

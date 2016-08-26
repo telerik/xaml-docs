@@ -18,6 +18,8 @@ In this article we will discuss the following topics:
 
 * [Setting RadGridView's RowStyle and AlternateRowsStyle](#setting-radgridviews-rowstyle-and-alternaterowsstyle)
 
+* [Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector](#setting-radgridviews-rowstyleselector-and-alternaterowsstyleselector)
+
 #### __Figure 1: GridViewRow template structure__
 
 ![GridViewRow template structure](images/gridview-row-template.png)
@@ -62,6 +64,10 @@ __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of
 #### __Figure 2: RadGridView with styled rows__
 
 ![RadGridView with styled cells](images/gridview-styled-row-and-alternaterow.png)
+
+## Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector
+
+You could also use RadGridView's **RowStyleSelector** and **AlternateRowsStyleSelector** properties to style rows differently based on a specific condition. More details about how this can be achieved can be found in the [RowStyleSelector article]({%slug gridview-rowstyleselector%}).
 
 # See Also
 

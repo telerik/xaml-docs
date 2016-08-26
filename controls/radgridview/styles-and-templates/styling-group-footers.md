@@ -24,6 +24,8 @@ In this article we will discuss the following topics:
 
 * [Setting a Column's GroupFooterCellStyle](#setting-a-columns-groupfootercellstyle)
 
+* [Setting a Column's GroupFooterCellStyleSelector](#setting-a-columns-groupfootercellstyleselector)
+
 ## Targeting the GridViewGroupFooterRow Element
 
 If you want to style all group footer rows of your application, you should create an appropriate style targeting the __GridViewGroupFooterRow__ element.
@@ -99,6 +101,10 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 #### __Figure 2: RadGridView with styled group footer cells__
 
 ![RadGridView with styled group footer cells](images/RadGridView_Styles_and_Templates_Styling_GridViewFooterCell_03.png)
+
+## Setting a Column's GroupFooterCellStyleSelector
+
+You could also use RadGridView's **GroupFooterCellStyleSelector** property to style group footer rows differently based on a specific condition. More details about how this can be achieved can be found in the [GroupFooterCellStyleSelector article]({%slug gridview-group-footer-cell-style-selector%}).
 
 ## See Also
 

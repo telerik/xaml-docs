@@ -2,7 +2,7 @@
 title: GroupfooterCellStyleSelector
 page_title: GroupfooterCellStyleSelector
 description: GroupfooterCellStyleSelector
-slug: gridview-group-footer-row-style-selector
+slug: gridview-group-footer-cell-style-selector
 tags: groupfootercellstyleselector
 published: True
 position: 6

@@ -18,6 +18,8 @@ In this article we will discuss the following topics:
 
 * [Setting RadGridView's RowDetailsStyle](#setting-radgridviews-rowdetailsstyle)
 
+* [Setting RadGridView's RowDetailsStyleSelector](#setting-radgridviews-rowdetailsstyleselector)
+
 ## Targeting the DetailsPresenter Element
 
 In order to style all row details of an application, you should create an appropriate style targeting the __DetailsPresenter__ element.
@@ -54,10 +56,14 @@ __RadGridView__ exposes the __RowDetailsStyle__ property of type __Style__. It i
 
 ![RadGridView with styled row details](images/RadGridView_Styles_and_Templates_Styling_GridViewRowDetails_03.png)
 
-# See Also
+## Setting RadGridView's RowDetailsStyleSelector
 
- * [Styling the Group Row]({%slug gridview-styling-group-row%})
+You could also use RadGridView's **RowDetailsStyleSelector** property to style rows details differently based on a specific condition. More details about how this can be achieved can be found in the [RowDetailsStyleSelector article]({%slug gridview-rowdetails-styleselector%}).
 
- * [Styling the Header Row]({%slug gridview-styling-header-row%})
+## See Also
 
- * [Styling a Row]({%slug gridview-styling-a-row%})
+* [Styling a Row]({%slug gridview-styling-a-row%})
+ 
+* [Styling the Group Row]({%slug gridview-styling-group-row%})
+
+* [Styling the Header Row]({%slug gridview-styling-header-row%})

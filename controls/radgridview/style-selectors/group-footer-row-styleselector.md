@@ -123,7 +123,7 @@ And here is the final result:
 
 ![The group footer rows styled using the GroupFooterRowStyleSelector property](images/gridview-groupfooterrowstyleselector.png)
 
-# See Also
+## See Also
 
  * [Styling Group Row]({%slug gridview-styling-group-row%})
 

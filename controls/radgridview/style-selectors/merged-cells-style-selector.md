@@ -122,4 +122,6 @@ And here is the final result:
 
 ## See Also
 
- * [Styling a Cell]({%slug gridview-styling-cell%})
+* [Styling a Cell]({%slug gridview-styling-cell%})
+
+* [Styling Merged Cells]({%slug gridview-styling-mergedcell%})

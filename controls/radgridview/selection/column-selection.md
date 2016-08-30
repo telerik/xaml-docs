@@ -22,29 +22,31 @@ As of **R3 2016** entire columns can be added to RadGridView's selection. This c
 
 ## Select Columns Through the UI
 
-RadGridView's new **CanUserSelectColumns** property determines whether users can add a whole column to the current selection. The default value is **False**, but when set to **True**, a new **ControlPanelItem** appears in RadGridView's **ControlPanel** which consists of a **ListBox**, whose **ItemsSource** is RadGridView's **Columns** collection. The user can then check and uncheck columns in order to add and remove them from the current selection.
+RadGridView's new **CanUserSelectColumns** property determines whether users can add a whole column to the current selection. The default value is **False**, but when set to **True**, a new [RadDropDownButton]({%slug radbuttons-getting-started%}#raddropdownbutton) appears in RadGridView's  top left corner. When clicked, a **ListBox** appears, whose **ItemsSource** is bound to RadGridView's **Columns** collection. The user can then check and uncheck columns in order to add and remove them from the current selection.
 
-#### __[C#] Example 1: Selecting RadGridView's CanUserSelectColumns property__
+#### __[C#] Example 1: Setting RadGridView's CanUserSelectColumns property__
 
 {{region gridview-column-selection_1}}
 
 	this.radGridView.CanUserSelectColumns = true;
 {{endregion}}
 
-#### __[VB.NET] Example 1: Selecting RadGridView's CanUserSelectColumns property__
+#### __[VB.NET] Example 1: Setting RadGridView's CanUserSelectColumns property__
 
 {{region gridview-column-selection_2}}
 
 	Me.radGridView.CanUserSelectColumns = True
 {{endregion}}
 
-#### __Figure 1: Selecting columns from RadGridView's Control Panel__
+#### __Figure 1: Selecting columns through the UI__
 
-![Selecting columns from RadGridView's Control Panel](url)
+![Selecting columns through the UI](images/gridview-columnselection.png)
 
 ## Select Columns Via a Column's IsSelected Property
 
 Columns can also be selected programmatically by setting their **IsSelected** property.
+
+>Bear in mind that this will only work if **CanUserSelectColumns** is set to **True**. 
 
 #### __[C#] Example 1: Setting a column's IsSelected property__
 

@@ -46,7 +46,8 @@ Telerik __WPF controls__ support the following themes:
 * __Windows8Touch__
 
 >The __Silverlight themes__ are located in separate assemblies so that the size of the control assembly is optimized (smaller). The __WPF themes__ are embedded in the control assemblies.
-        
+
+>important With **Q1 2014** the **Themes** folder, containing the standard themes used with StyleManager, is not provided in the installation package anymore. They can be separately downloaded from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} download page in your [Telerik account](http://www.telerik.com/account.aspx).        
 
 In order to use one of the themes with the StyleManager you need to create a new WPF application or open an existing one and add a references to the assemblies with the desired Telerik __WPF controls__.
       

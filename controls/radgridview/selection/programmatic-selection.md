@@ -90,7 +90,7 @@ You can also set the __CurrentItem__ to an item in the __RadGridView's__ data so
 
 >tipYou can also make another control like __ListBox__ or __ComboBox__ to pass the __CurrentItem__ to the __RadGridView__.
 
->Prior to Q2 2010 version, the current item was synchronized with the selected item. As a result, the __first row__ of the GridView was __selected initially__. To prevent this, you would simply need to set the __IsSynchronizedWithCurrentItem__ property of RadGridView to __False__. In __Q2 2010__ version, the __IsSynchronizedWithCurrentItem__ is null by default - SelectedItem is synchronized with the CurrentItem only if CollectionView is used as ItemsSource
+>Prior to R2 2010 version, the current item was synchronized with the selected item. As a result, the __first row__ of the GridView was __selected initially__. To prevent this, you would simply need to set the __IsSynchronizedWithCurrentItem__ property of RadGridView to __False__. In __R2 2010__ version, the __IsSynchronizedWithCurrentItem__ is null by default - SelectedItem is synchronized with the CurrentItem only if CollectionView is used as ItemsSource
 
 ## SelectedItems
 
@@ -271,7 +271,7 @@ As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows
 
 Deselecting cell regions can be achieved analogically by using RadGridView's **UnselectCellRegion** method.
 
-# See Also
+## See Also
 
  * [Basic Selection]({%slug gridview-selection-basics%})
 

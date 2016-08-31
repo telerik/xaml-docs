@@ -18,11 +18,13 @@ As of **R3 2016** entire columns can be added to RadGridView's selection. This c
 
 * [Using the SelectCellRegion method](#using-the-selectcellregion-method)
 
->Column selection is only available when **SelectionMode** is either **Multiple** or **Extended** and **SelectionUnit** is either **Cell** or **Mixed**.
+>importantColumn selection is only available when **SelectionMode** is either **Multiple** or **Extended** and **SelectionUnit** is either **Cell** or **Mixed**.
 
 ## Select Columns Through the UI
 
-RadGridView's new **CanUserSelectColumns** property determines whether users can add a whole column to the current selection. The default value is **False**, but when set to **True**, a new [RadDropDownButton]({%slug radbuttons-getting-started%}#raddropdownbutton) appears in RadGridView's  top left corner. When clicked, a **ListBox** appears, whose **ItemsSource** is bound to RadGridView's **Columns** collection. The user can then check and uncheck columns in order to add and remove them from the current selection.
+RadGridView's new **CanUserSelectColumns** property determines whether users can add a whole column to the current selection. The default value is **False**, but when set to **True**, a new [RadDropDownButton]({%slug radbuttons-getting-started%}#raddropdownbutton) appears in RadGridView's  top right corner. When clicked, a **ListBox** appears, whose **ItemsSource** is bound to RadGridView's **Columns** collection. The user can then check and uncheck columns in order to add and remove them from the current selection.
+
+>Column selection behaves differently depending on the **SelectionMode** - when dealing with **Extended** selection, if you want to select multiple columns, you need to hold down the **Ctrl** key.
 
 #### __[C#] Example 1: Setting RadGridView's CanUserSelectColumns property__
 
@@ -80,7 +82,7 @@ Another way to programmatically select columns is by using the [SelectCellRegion
 	Me.radGridView.SelectCellRegion(New CellRegion(Me.radGridView.Columns("Name").DisplayIndex, 0, 1, Me.radGridView.Items.Count))
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Basic Selection]({%slug gridview-selection-basics%})
 

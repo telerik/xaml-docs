@@ -42,7 +42,7 @@ In the following example, the user is asked to enter four digits:
 
 #### __XAML__
 
-{{region radwatermarktextbox-overview_0}}
+{{region xaml-radwatermarktextbox-overview_0}}
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox" WatermarkContent="Please Enter Four Digits:" />
 {{endregion}}
 
@@ -52,7 +52,7 @@ The __WatermarkContent__ property is of type object. Which means that you can se
 
 #### __XAML__
 
-{{region radwatermarktextbox-overview_1}}
+{{region xaml-radwatermarktextbox-overview_1}}
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox">
 		<telerik:RadWatermarkTextBox.WatermarkContent>
 			<StackPanel Orientation="Horizontal">
@@ -71,7 +71,7 @@ Similarly, you can use the __WatermarkTemplate__ property for the same sort of s
 
 #### __XAML__
 
-{{region radwatermarktextbox-overview_2}}
+{{region xaml-radwatermarktextbox-overview_2}}
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox">
 		<telerik:RadWatermarkTextBox.WatermarkTemplate>
 			<DataTemplate>
@@ -92,7 +92,7 @@ The __SelectionOnFocus__ property of __RadWatermarkTextBox__ allows you to speci
 
 #### __XAML__
 
-{{region radwatermarktextbox-overview_3}}
+{{region xaml-radwatermarktextbox-overview_3}}
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox" 
 								 SelectionOnFocus="SelectAll"
 								 WatermarkContent="Please Enter Four Digits:" />

@@ -32,7 +32,7 @@ For example:
 
 #### __XAML__
 
-{{region raddatetimepicker-features-formatting_0}}
+{{region xaml-raddatetimepicker-features-formatting_0}}
 	<telerik:RadDateTimePicker DisplayFormat="Long"/>
 {{endregion}}
 
@@ -46,19 +46,19 @@ Here is an example:
 
 #### __XAML__
 
-{{region raddatetimepicker-features-formatting_1}}
+{{region xaml-raddatetimepicker-features-formatting_1}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" Culture="de"/>
 {{endregion}}
 
 #### __C#__
 
-{{region raddatetimepicker-features-formatting_2}}
+{{region cs-raddatetimepicker-features-formatting_2}}
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo( "de" );
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddatetimepicker-features-formatting_3}}
+{{region vb-raddatetimepicker-features-formatting_3}}
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("de")
 {{endregion}}
 
@@ -74,7 +74,7 @@ Here is an example of defining a custom format for the __RadDateTimePicker's__ i
 
 #### __C#__
 
-{{region raddatetimepicker-features-formatting_4}}
+{{region cs-raddatetimepicker-features-formatting_4}}
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo("en-US");
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "dd-MMM";
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "h tt";
@@ -84,7 +84,7 @@ Here is an example of defining a custom format for the __RadDateTimePicker's__ i
 
 #### __VB.NET__
 
-{{region raddatetimepicker-features-formatting_5}}
+{{region vb-raddatetimepicker-features-formatting_5}}
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("en-US")
 	Me.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "dd-MMM"
 	Me.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "h tt"

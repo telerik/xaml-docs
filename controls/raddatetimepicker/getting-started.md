@@ -42,19 +42,19 @@ The following snippet was generated for you in XAML:
 _xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"_
 
 #### __XAML__
-{{region raddatetimepicke-getting-started_1}}
+{{region xaml-raddatetimepicke-getting-started_1}}
 	<telerik:RadDateTimePicker VerticalAlignement="Top"/>
 {{endregion}}
 
 You can also create the __RadDateTimePicker__ in code-behind:
 
 #### __C#__
-{{region raddatetimepicke-getting-started_2}}
+{{region cs-raddatetimepicke-getting-started_2}}
 	RadDateTimePicker radDateTimePicker = new RadDateTimePicker();
 {{endregion}}
 
 #### __VB.NET__
-{{region raddatetimepicke-getting-started_3}}
+{{region vb-raddatetimepicke-getting-started_3}}
 	Dim radDateTimePicker As New RadDateTimePicker()
 {{endregion}}
 
@@ -75,7 +75,7 @@ You can get the selected value using the following properties:
 Here is an example of getting these properties:
 
 #### __C#__
-{{region raddatetimepicke-getting-started_4}}
+{{region cs-raddatetimepicke-getting-started_4}}
 	DateTime? userSelectedValue = this.radDateTimePicker.SelectedValue;
 	DateTime? userSelectedDate = this.radDateTimePicker.SelectedDate;
 	TimeSpan? userSelectedTime = this.radDateTimePicker.SelectedTime;
@@ -85,7 +85,7 @@ Here is an example of getting these properties:
 
 #### __VB.NET__
 
-{{region raddatetimepicke-getting-started_5}}
+{{region vb-raddatetimepicke-getting-started_5}}
 	Dim userSelectedValue As System.Nullable(Of DateTime) = Me.radDateTimePicker.SelectedValue
 	Dim userSelectedDate As System.Nullable(Of DateTime) = Me.radDateTimePicker.SelectedDate
 	Dim userSelectedTime As System.Nullable(Of TimeSpan) = Me.radDateTimePicker.SelectedTime

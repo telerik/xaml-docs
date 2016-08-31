@@ -24,7 +24,7 @@ You can change the value of this property in XAML as shown in this snippet:
 
 #### __XAML__
 
-{{region raddatetimepicker-features-input-modes_0}}
+{{region xaml-raddatetimepicker-features-input-modes_0}}
 	<telerik:RadDateTimePicker InputMode="DatePicker"/>
 {{endregion}}
 
@@ -36,7 +36,7 @@ Similarly if you decide to have only the time picker you can choose the TimePick
 
 #### __XAML__
 
-{{region raddatetimepicker-features-input-modes_1}}
+{{region xaml-raddatetimepicker-features-input-modes_1}}
 	<telerik:RadDateTimePicker InputMode="TimePicker"/>
 {{endregion}}
 

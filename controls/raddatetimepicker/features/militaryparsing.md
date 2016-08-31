@@ -46,7 +46,7 @@ So, let's have the following RadDateTimePicker:
 
 #### __XAML__
 
-{{region raddatetimepicker-features-militaryparsing_0}}
+{{region xaml-raddatetimepicker-features-militaryparsing_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" Width="200" />
 {{endregion}}
 
@@ -54,7 +54,7 @@ Here is how the military parsing can be set:
 
 #### __C#__
 
-{{region raddatetimepicker-features-militaryparsing_1}}
+{{region cs-raddatetimepicker-features-militaryparsing_1}}
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo("en-US");
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "ddMMyyyy";
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "HHmm";

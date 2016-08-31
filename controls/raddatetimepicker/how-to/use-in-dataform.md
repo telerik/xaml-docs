@@ -19,7 +19,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 #### __C#__
 
-{{region raddatetimepicker-how-to-use-in-dataform_0}}
+{{region cs-raddatetimepicker-how-to-use-in-dataform_0}}
 	public class Club
 	{
 	    public Club( string name, DateTime established, int stadiumCapacity )
@@ -57,7 +57,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 #### __VB.NET__
 
-{{region raddatetimepicker-how-to-use-in-dataform_1}}
+{{region vb-raddatetimepicker-how-to-use-in-dataform_1}}
 	Public Class Club
 	 Public Sub New(name As String, established As DateTime, stadiumCapacity As Integer)
 	  Me.Name = name
@@ -106,7 +106,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 #### __XAML__
 
-{{region raddatetimepicker-how-to-use-in-dataform_2}}
+{{region xaml-raddatetimepicker-how-to-use-in-dataform_2}}
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <dataForm:DataForm x:Name="dataForm"
@@ -119,13 +119,13 @@ For the purpose of this example the first thing you have to do is to define the 
 
 #### __C#__
 
-{{region raddatetimepicker-how-to-use-in-dataform_3}}
+{{region cs-raddatetimepicker-how-to-use-in-dataform_3}}
 	this.radGridView.ItemsSource = Club.GetClubs();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddatetimepicker-how-to-use-in-dataform_4}}
+{{region vb-raddatetimepicker-how-to-use-in-dataform_4}}
 	Me.radGridView.ItemsSource = Club.GetClubs()
 {{endregion}}
 
@@ -135,7 +135,7 @@ Here is the complete XAML:
 
 #### __XAML__
 
-{{region raddatetimepicker-how-to-use-in-dataform_5}}
+{{region xaml-raddatetimepicker-how-to-use-in-dataform_5}}
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <dataForm:DataForm x:Name="dataForm"

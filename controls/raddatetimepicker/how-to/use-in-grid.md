@@ -18,7 +18,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 #### __C#__
 
-{{region raddatetimepicker-how-to-use-in-grid_0}}
+{{region cs-raddatetimepicker-how-to-use-in-grid_0}}
 	public class Club
 	{
 	    public Club( string name, DateTime established, int stadiumCapacity )
@@ -58,7 +58,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 #### __VB.NET__
 
-{{region raddatetimepicker-how-to-use-in-grid_1}}
+{{region vb-raddatetimepicker-how-to-use-in-grid_1}}
 	Public Class Club
 	 Public Sub New(name As String, established As DateTime, stadiumCapacity As Integer)
 	  Me.Name = name
@@ -105,7 +105,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 #### __XAML__
 
-{{region raddatetimepicker-how-to-use-in-grid_2}}
+{{region xaml-raddatetimepicker-how-to-use-in-grid_2}}
 	<telerik:RadGridView Name="radGridView"
 	                        AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -122,13 +122,13 @@ For the purpose of this example the first thing you have to do is to define the 
 
 #### __C#__
 
-{{region raddatetimepicker-how-to-use-in-grid_3}}
+{{region cs-raddatetimepicker-how-to-use-in-grid_3}}
 	this.radGridView.ItemsSource = Club.GetClubs();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddatetimepicker-how-to-use-in-grid_4}}
+{{region vb-raddatetimepicker-how-to-use-in-grid_4}}
 	Me.radGridView.ItemsSource = Club.GetClubs()
 {{endregion}}
 
@@ -136,7 +136,7 @@ The next and final step in the example is to define the actual __CellTemplate__ 
 
 #### __XAML__
 
-{{region raddatetimepicker-how-to-use-in-grid_5}}
+{{region xaml-raddatetimepicker-how-to-use-in-grid_5}}
 	<telerik:RadGridView Name="radGridView"
 	                        AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>

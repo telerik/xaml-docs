@@ -16,7 +16,7 @@ With the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %
 
 #### [XAML] __TodayButtonVisibility and TodayButtonContent__
 
-{{region raddatetimepicker-todaybutton_0}}
+{{region xaml-raddatetimepicker-todaybutton_0}}
 	<telerik:RadDateTimePicker TodayButtonVisibility="Visible" TodayButtonContent="Select Today/Now"/>
 {{endregion}}
 

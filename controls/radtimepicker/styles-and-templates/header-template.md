@@ -18,7 +18,7 @@ The next example will demonstrate the necessary steps in order to customize the 
 
 	#### __XAML__
 
-	{{region radtimepicker-header-template_0}}
+	{{region xaml-radtimepicker-header-template_0}}
 		<Style x:Key="RadClockStyle" TargetType="telerik:RadClock" >
 		
 		</Style>
@@ -28,7 +28,7 @@ The next example will demonstrate the necessary steps in order to customize the 
 
 	#### __XAML__
 
-	{{region radtimepicker-header-template_1}}
+	{{region xaml-radtimepicker-header-template_1}}
 		<Style x:Key="RadClockStyle" TargetType="telerik:RadClock" >
 			<Setter Property="Header" Value="Custom Header and HeaderTemplate"/>
 		</Style>
@@ -38,7 +38,7 @@ The next example will demonstrate the necessary steps in order to customize the 
 
 	#### __XAML__
 
-	{{region radtimepicker-header-template_2}}
+	{{region xaml-radtimepicker-header-template_2}}
 		<Style x:Key="RadClockStyle" TargetType="telerik:RadClock" >
 			<Setter Property="Header" Value="Custom Header and HeaderTemplate"/>
 			<Setter Property="HeaderTemplate">
@@ -57,7 +57,7 @@ The next example will demonstrate the necessary steps in order to customize the 
 
 	#### __XAML__
 
-	{{region radtimepicker-header-template_3}}
+	{{region xaml-radtimepicker-header-template_3}}
 		<telerik:RadTimePicker ClockStyle="{StaticResource RadClockStyle}"/>
 	{{endregion}}
 

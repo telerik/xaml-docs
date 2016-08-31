@@ -16,7 +16,7 @@ First, we need to define new ItemsPanel and set it in the ClockStyle.
 
 #### __XAML__
 
-{{region radtimepicker-layout-support_0}}
+{{region xaml-radtimepicker-layout-support_0}}
 	<!--Layout 1-->
 	<Style x:Key="RadUniformGridStyle1" TargetType="telerik:RadUniformGrid">
 		<Setter Property="Rows" Value="4"/>
@@ -57,7 +57,7 @@ Then, set the ClockStyle property to the TimePicker.
 
 #### __XAML__
 
-{{region radtimepicker-layout-support_1}}
+{{region xaml-radtimepicker-layout-support_1}}
 	<Grid x:Name="LayoutRoot" Background="White">
 		<telerik:RadDateTimePicker InputMode="TimePicker" Margin="68,0,0,0" ClockStyle="{StaticResource RadClockStyle1}"
 	VerticalAlignment="Center" HorizontalAlignment="Left" Width="200"/>

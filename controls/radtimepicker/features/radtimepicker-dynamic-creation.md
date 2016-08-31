@@ -14,13 +14,13 @@ The following snippet creates a TimePicker in XAML and code-behind:
 
 #### __XAML__
 
-{{region radtimepicker-radtimepicker-dynamic-creation_0}}
+{{region xaml-radtimepicker-radtimepicker-dynamic-creation_0}}
 	<telerik:RadTimePicker />
 {{endregion}}
 
 #### __C#__
 
-{{region radtimepicker-radtimepicker-dynamic-creation_1}}
+{{region cs-radtimepicker-radtimepicker-dynamic-creation_1}}
 	RadTimePicker timePicker = new RadTimePicker();
 {{endregion}}
 
@@ -28,7 +28,7 @@ RadTimePicker exposes  SelectedTime event that can be handled: __SelectedTimeCha
 
 #### __XAML__
 
-{{region radtimepicker-radtimepicker-dynamic-creation_2}}
+{{region xaml-radtimepicker-radtimepicker-dynamic-creation_2}}
 	<StackPanel>
 		<telerik:RadTimePicker SelectedTimeChanged="timePicker_SelectedTimeChanged"/>
 		<TextBlock x:Name="message" />
@@ -39,7 +39,7 @@ or you can use only code-behind.
 
 #### __C#__
 
-{{region radtimepicker-radtimepicker-dynamic-creation_3}}
+{{region cs-radtimepicker-radtimepicker-dynamic-creation_3}}
 	public partial class Page : UserControl
 	{
 		public Page()
@@ -66,13 +66,13 @@ In the next example you can see how to set this properties in XAML and code-behi
 
 #### __XAML__
 
-{{region radtimepicker-radtimepicker-dynamic-creation_4}}
+{{region xaml-radtimepicker-radtimepicker-dynamic-creation_4}}
 	<telerik:RadTimePicker x:Name="timePicker" EndTime="2:0:0"/>
 {{endregion}}
 
 #### __C#__
 
-{{region radtimepicker-radtimepicker-dynamic-creation_5}}
+{{region cs-radtimepicker-radtimepicker-dynamic-creation_5}}
 	public partial class Page : UserControl
 	{
 		public Page()
@@ -88,7 +88,7 @@ You may switch between different data sources at runtime as demonstrated in the 
 
 #### __C#__
 
-{{region radtimepicker-radtimepicker-dynamic-creation_6}}
+{{region cs-radtimepicker-radtimepicker-dynamic-creation_6}}
 	public partial class Page : UserControl
 	{
 		public Page()

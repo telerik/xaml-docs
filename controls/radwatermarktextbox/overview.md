@@ -53,13 +53,13 @@ The __WatermarkContent__ property is of type object. Which means that you can se
 #### __XAML__
 
 {{region xaml-radwatermarktextbox-overview_1}}
-	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox">
-		<telerik:RadWatermarkTextBox.WatermarkContent>
-			<StackPanel Orientation="Horizontal">
-				<Image Source="/Silverlight.Help.RadMaskedTextBox;component/Images/EURFlag.png" />
-				<TextBlock Margin="3,0,0,0" Text="Please Enter Four Digits" />
-			</StackPanel>
-		</telerik:RadWatermarkTextBox.WatermarkContent>
+	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox1">
+	    <telerik:RadWatermarkTextBox.WatermarkContent>
+	        <StackPanel Orientation="Horizontal">
+	            <Image Source="/Silverlight.Help.RadMaskedTextBox;component/Images/EURFlag.png" />
+	            <TextBlock Margin="3,0,0,0" Text="Please Enter Four Digits" />
+	        </StackPanel>
+	    </telerik:RadWatermarkTextBox.WatermarkContent>
 	</telerik:RadWatermarkTextBox>
 {{endregion}}
 
@@ -72,15 +72,15 @@ Similarly, you can use the __WatermarkTemplate__ property for the same sort of s
 #### __XAML__
 
 {{region xaml-radwatermarktextbox-overview_2}}
-	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox">
-		<telerik:RadWatermarkTextBox.WatermarkTemplate>
-			<DataTemplate>
-				<StackPanel Orientation="Horizontal">
-					<Image Source="/Silverlight.Help.RadMaskedTextBox;component/Images/EURFlag.png" />
-					<TextBlock Margin="3,0,0,0" Text="Please Enter Four Digits" />
-				</StackPanel>
-			</DataTemplate>
-		</telerik:RadWatermarkTextBox.WatermarkTemplate>
+	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox2">
+	    <telerik:RadWatermarkTextBox.WatermarkTemplate>
+	        <DataTemplate>
+	            <StackPanel Orientation="Horizontal">
+	                <Image Source="/Silverlight.Help.RadMaskedTextBox;component/Images/EURFlag.png" />
+	                <TextBlock Margin="3,0,0,0" Text="Please Enter Four Digits" />
+	            </StackPanel>
+	        </DataTemplate>
+	    </telerik:RadWatermarkTextBox.WatermarkTemplate>
 	</telerik:RadWatermarkTextBox>
 {{endregion}}
 
@@ -93,7 +93,7 @@ The __SelectionOnFocus__ property of __RadWatermarkTextBox__ allows you to speci
 #### __XAML__
 
 {{region xaml-radwatermarktextbox-overview_3}}
-	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox" 
-								 SelectionOnFocus="SelectAll"
-								 WatermarkContent="Please Enter Four Digits:" />
+	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox3" 
+	                             SelectionOnFocus="SelectAll"
+	                             WatermarkContent="Please Enter Four Digits:" />
 {{endregion}}

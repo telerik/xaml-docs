@@ -12,7 +12,7 @@ position: 4
 
 If you want to mark the position where the user has clicked, you just have to handle the __MapMouseClick__ event and add the desired mark element to the __InformationLayer__ of the __RadMap__ on the clicked location.
 
-The following example will use a __RadMap__ with one __InformationLayer__. The __InformationLayer__ has its __ItemTemplate__ property set. The __DataTemplate__ contains a red __Ellipse__. In this example, the object that will be passed to the __InformaitonLayer__ will be of type Location, so the __MapLayer.Location__ property of the ellipse is bound to the __DataContext__ of the template.
+The following example will use a __RadMap__ with one __InformationLayer__. The __InformationLayer__ has its __ItemTemplate__ property set. The __DataTemplate__ contains a red __Ellipse__. In this example, the object that will be passed to the __InformationLayer__ will be of type Location, so the __MapLayer.Location__ property of the ellipse is bound to the __DataContext__ of the template.
 
 >tip More detailed information regarding the data binding can be found in the [Data Binding]({%slug radmap-features-data-binding%}) topic.
 

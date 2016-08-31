@@ -24,11 +24,11 @@ This article shows you how to hide week numbers in __RadDateTimePicker__ control
 
 {{region xaml-raddatetimepicker-how-to-hide-week-numbers_1}}
 	<UserControl.Resources>
-	     <Style x:Key="calendarStyle" TargetType="telerik:RadCalendar">
-	      ....
-	     </Style> 
+	    <Style x:Key="calendarStyle" TargetType="telerik:RadCalendar">
+	        <!--....-->
+	    </Style>
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -37,12 +37,12 @@ This article shows you how to hide week numbers in __RadDateTimePicker__ control
 #### __XAML__
 
 {{region xaml-raddatetimepicker-how-to-hide-week-numbers_3}}
-	<UserControl.Resources>        
-	    <Style x:Key="calendarStyle" TargetType="telerik:RadCalendar">            
-	        <Setter Property="AreWeekNumbersVisible" Value="False" />        
+	<UserControl.Resources>
+	    <Style x:Key="calendarStyle" TargetType="telerik:RadCalendar">
+	        <Setter Property="AreWeekNumbersVisible" Value="False" />
 	    </Style>
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -55,10 +55,10 @@ This article shows you how to hide week numbers in __RadDateTimePicker__ control
 
 {{region xaml-raddatetimepicker-how-to-hide-week-numbers_4}}
 	<telerik:RadDateTimePicker Width="100"                            
-	                           InputMode="DatePicker"                            
-	                           CalendarStyle="{StaticResource calendarStyle}"                            
-	                           VerticalAlignment="Center"/>
-	{{endregion}}
+	                   InputMode="DatePicker"                            
+	                   CalendarStyle="{StaticResource calendarStyle}"                            
+	                   VerticalAlignment="Center"/>
+{{endregion}}
 
 
 

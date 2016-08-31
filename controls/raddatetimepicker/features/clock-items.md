@@ -32,7 +32,7 @@ Here is demonstrated how to change these properties in XAML:
 
 {{region xaml-raddatetimepicker-features-clock-items_0}}
 	<telerik:RadDateTimePicker StartTime="12:00" EndTime="18:00" TimeInterval="0:30"/>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -56,6 +56,7 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 	    InitializeComponent();
 	    this.radDateTimePicker.ClockItemsSource = this.LoadDataObjects();
 	}
+	
 	public ObservableCollection<TimeSpan> LoadDataObjects()
 	{
 	    ObservableCollection<TimeSpan> times = new ObservableCollection<TimeSpan>()
@@ -74,18 +75,18 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 
 {{region vb-raddatetimepicker-features-clock-items_2}}
 	Public Sub New()
-	 InitializeComponent()
-	 Me.radDateTimePicker.ClockItemsSource = Me.LoadDataObjects()
+	    InitializeComponent()
+	    Me.radDateTimePicker.ClockItemsSource = Me.LoadDataObjects()
 	End Sub
 	Public Function LoadDataObjects() As ObservableCollection(Of TimeSpan)
-	 Dim times As New ObservableCollection(Of TimeSpan)() With {
-	  New TimeSpan(9, 0, 0),
-	  New TimeSpan(10, 0, 0),
-	  New TimeSpan(10, 5, 0),
-	  New TimeSpan(10, 22, 0),
-	  New TimeSpan(13, 15, 0)
-	 }
-	 Return times
+	    Dim times As New ObservableCollection(Of TimeSpan)() From {
+	      New TimeSpan(9, 0, 0),
+	      New TimeSpan(10, 0, 0),
+	      New TimeSpan(10, 5, 0),
+	      New TimeSpan(10, 22, 0),
+	      New TimeSpan(13, 15, 0)
+	     }
+	    Return times
 	End Function
 {{endregion}}
 

@@ -21,7 +21,7 @@ For the purpose of this example the first thing you have to do is to define the 
 {{region cs-raddatetimepicker-how-to-use-in-grid_0}}
 	public class Club
 	{
-	    public Club( string name, DateTime established, int stadiumCapacity )
+	    public Club(string name, DateTime established, int stadiumCapacity)
 	    {
 	        this.Name = name;
 	        this.Established = established;
@@ -45,10 +45,10 @@ For the purpose of this example the first thing you have to do is to define the 
 	    public static IEnumerable<Club> GetClubs()
 	    {
 	        ObservableCollection<Club> clubs = new ObservableCollection<Club>();
-	        clubs.Add( new Club( "Liverpool", new DateTime( 1892, 1, 1 ), 45362 ) );
-	        clubs.Add( new Club( "Manchester Utd.", new DateTime( 1878, 1, 1 ), 76212 ) );
-	        clubs.Add( new Club( "Chelsea", new DateTime( 1905, 1, 1 ), 42055 ) );
-	        clubs.Add( new Club( "Arsenal", new DateTime( 1886, 1, 1 ), 60355 ) );
+	        clubs.Add(new Club("Liverpool", new DateTime(1892, 1, 1), 45362));
+	        clubs.Add(new Club("Manchester Utd.", new DateTime(1878, 1, 1), 76212));
+	        clubs.Add(new Club("Chelsea", new DateTime(1905, 1, 1), 42055));
+	        clubs.Add(new Club("Arsenal", new DateTime(1886, 1, 1), 60355));
 	        return clubs;
 	    }
 	}
@@ -60,46 +60,46 @@ For the purpose of this example the first thing you have to do is to define the 
 
 {{region vb-raddatetimepicker-how-to-use-in-grid_1}}
 	Public Class Club
-	 Public Sub New(name As String, established As DateTime, stadiumCapacity As Integer)
-	  Me.Name = name
-	  Me.Established = established
-	  Me.StadiumCapacity = stadiumCapacity
-	 End Sub
-	 Public Property Name() As String
-	  Get
-	   Return m_Name
-	  End Get
-	  Set
-	   m_Name = Value
-	  End Set
-	 End Property
-	 Private m_Name As String
-	 Public Property Established() As System.Nullable(Of DateTime)
-	  Get
-	   Return m_Established
-	  End Get
-	  Set
-	   m_Established = Value
-	  End Set
-	 End Property
-	 Private m_Established As System.Nullable(Of DateTime)
-	 Public Property StadiumCapacity() As Integer
-	  Get
-	   Return m_StadiumCapacity
-	  End Get
-	  Set
-	   m_StadiumCapacity = Value
-	  End Set
-	 End Property
-	 Private m_StadiumCapacity As Integer
-	 Public Shared Function GetClubs() As IEnumerable(Of Club)
-	  Dim clubs As New ObservableCollection(Of Club)()
-	  clubs.Add(New Club("Liverpool", New DateTime(1892, 1, 1), 45362))
-	  clubs.Add(New Club("Manchester Utd.", New DateTime(1878, 1, 1), 76212))
-	  clubs.Add(New Club("Chelsea", New DateTime(1905, 1, 1), 42055))
-	  clubs.Add(New Club("Arsenal", New DateTime(1886, 1, 1), 60355))
-	  Return clubs
-	 End Function
+	    Public Sub New(name As String, established As DateTime, stadiumCapacity As Integer)
+	        Me.Name = name
+	        Me.Established = established
+	        Me.StadiumCapacity = stadiumCapacity
+	    End Sub
+	    Public Property Name() As String
+	        Get
+	            Return m_Name
+	        End Get
+	        Set(value As String)
+	            m_Name = value
+	        End Set
+	    End Property
+	    Private m_Name As String
+	    Public Property Established() As System.Nullable(Of DateTime)
+	        Get
+	            Return m_Established
+	        End Get
+	        Set(value As System.Nullable(Of DateTime))
+	            m_Established = value
+	        End Set
+	    End Property
+	    Private m_Established As System.Nullable(Of DateTime)
+	    Public Property StadiumCapacity() As Integer
+	        Get
+	            Return m_StadiumCapacity
+	        End Get
+	        Set(value As Integer)
+	            m_StadiumCapacity = value
+	        End Set
+	    End Property
+	    Private m_StadiumCapacity As Integer
+	    Public Shared Function GetClubs() As IEnumerable(Of Club)
+	        Dim clubs As New ObservableCollection(Of Club)()
+	        clubs.Add(New Club("Liverpool", New DateTime(1892, 1, 1), 45362))
+	        clubs.Add(New Club("Manchester Utd.", New DateTime(1878, 1, 1), 76212))
+	        clubs.Add(New Club("Chelsea", New DateTime(1905, 1, 1), 42055))
+	        clubs.Add(New Club("Arsenal", New DateTime(1886, 1, 1), 60355))
+	        Return clubs
+	    End Function
 	End Class
 {{endregion}}
 
@@ -107,7 +107,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 {{region xaml-raddatetimepicker-how-to-use-in-grid_2}}
 	<telerik:RadGridView Name="radGridView"
-	                        AutoGenerateColumns="False">
+	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn Header="Name"
 	                                    DataMemberBinding="{Binding Name}" />
@@ -137,8 +137,8 @@ The next and final step in the example is to define the actual __CellTemplate__ 
 #### __XAML__
 
 {{region xaml-raddatetimepicker-how-to-use-in-grid_5}}
-	<telerik:RadGridView Name="radGridView"
-	                        AutoGenerateColumns="False">
+	<telerik:RadGridView Name="radGridView1"
+	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn Header="Name"
 	                                    DataMemberBinding="{Binding Name}" />

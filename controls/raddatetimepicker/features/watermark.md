@@ -25,7 +25,7 @@ The __DateTimeWatermarkContent__ is the simplest way to change the watermark's c
 #### __XAML__
 
 {{region xaml-raddatetimepicker-features-watermark_0}}
-	<telerik:RadDateTimePicker DateTimeWatermarkContent="Enter departure date">
+	<telerik:RadDateTimePicker DateTimeWatermarkContent="Enter departure date"/>
 {{endregion}}
 
 ![](images/dateTimePicker_features_watermark_020.png)
@@ -36,14 +36,14 @@ If you want to further customize the watermark you need to set the __DateTimeWat
 
 {{region xaml-raddatetimepicker-features-watermark_1}}
 	<telerik:RadDateTimePicker Width="200">
-	      <telerik:RadDateTimePicker.DateTimeWatermarkTemplate>
-	           <DataTemplate>
-	                <StackPanel Orientation="Horizontal">
-	                   <Image Source="/Silverlight.Help.RadDateTimePicker;component/Demos/Images/web-airplain.png" />                       
-	                    <TextBlock Text="Enter departure date" VerticalAlignment="Center" />
-	                </StackPanel>
-	           </DataTemplate>
-	      </telerik:RadDateTimePicker.DateTimeWatermarkTemplate>  
+	    <telerik:RadDateTimePicker.DateTimeWatermarkTemplate>
+	        <DataTemplate>
+	            <StackPanel Orientation="Horizontal">
+	                <Image Source="/Silverlight.Help.RadDateTimePicker;component/Demos/Images/web-airplain.png" />
+	                <TextBlock Text="Enter departure date" VerticalAlignment="Center" />
+	            </StackPanel>
+	        </DataTemplate>
+	    </telerik:RadDateTimePicker.DateTimeWatermarkTemplate>
 	</telerik:RadDateTimePicker>
 {{endregion}}
 

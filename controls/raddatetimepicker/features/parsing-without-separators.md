@@ -18,7 +18,7 @@ This feature can be enabled by setting __AllowParsingWithoutSeparator__ property
 
 {{region xaml-raddatetimepicker-features-parsing-without-separators_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" AllowParsingWithoutSeparator="True" />
-	{{endregion}}
+{{endregion}}
 
 
 

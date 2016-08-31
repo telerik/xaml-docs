@@ -31,7 +31,7 @@ For the purpose of this example, after defining your __RadDateTimePicker__ contr
 #### __C#__
 
 {{region cs-raddatetimepicker-how-to-set-first-day-calendar_1}}
-	public SetFirstDayOfWeekExample()
+	public Default_Cs()
 	{
 	    InitializeComponent();
 	    CultureInfo cultureInfo = new CultureInfo( "en-US" );
@@ -46,12 +46,12 @@ For the purpose of this example, after defining your __RadDateTimePicker__ contr
 
 {{region vb-raddatetimepicker-how-to-set-first-day-calendar_2}}
 	Public Sub New()
-	 InitializeComponent()
-	 Dim cultureInfo As New CultureInfo("en-US")
-	 Dim dateInfo As New DateTimeFormatInfo()
-	 dateInfo.FirstDayOfWeek = DayOfWeek.Friday
-	 cultureInfo.DateTimeFormat = dateInfo
-	 Me.radDateTimePicker.Culture = cultureInfo
+	    InitializeComponent()
+	    Dim cultureInfo As New CultureInfo("en-US")
+	    Dim dateInfo As New DateTimeFormatInfo()
+	    dateInfo.FirstDayOfWeek = DayOfWeek.Friday
+	    cultureInfo.DateTimeFormat = dateInfo
+	    Me.radDateTimePicker.Culture = cultureInfo
 	End Sub
 {{endregion}}
 

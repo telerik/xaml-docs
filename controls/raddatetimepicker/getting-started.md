@@ -43,7 +43,7 @@ _xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"_
 
 #### __XAML__
 {{region xaml-raddatetimepicke-getting-started_1}}
-	<telerik:RadDateTimePicker VerticalAlignement="Top"/>
+	<telerik:RadDateTimePicker VerticalAlignment="Top"/>
 {{endregion}}
 
 You can also create the __RadDateTimePicker__ in code-behind:
@@ -76,9 +76,9 @@ Here is an example of getting these properties:
 
 #### __C#__
 {{region cs-raddatetimepicke-getting-started_4}}
-	DateTime? userSelectedValue = this.radDateTimePicker.SelectedValue;
-	DateTime? userSelectedDate = this.radDateTimePicker.SelectedDate;
-	TimeSpan? userSelectedTime = this.radDateTimePicker.SelectedTime;
+	DateTime? userSelectedValue = radDateTimePicker.SelectedValue;
+	DateTime? userSelectedDate = radDateTimePicker.SelectedDate;
+	TimeSpan? userSelectedTime = radDateTimePicker.SelectedTime;
 {{endregion}}
 
 
@@ -86,9 +86,9 @@ Here is an example of getting these properties:
 #### __VB.NET__
 
 {{region vb-raddatetimepicke-getting-started_5}}
-	Dim userSelectedValue As System.Nullable(Of DateTime) = Me.radDateTimePicker.SelectedValue
-	Dim userSelectedDate As System.Nullable(Of DateTime) = Me.radDateTimePicker.SelectedDate
-	Dim userSelectedTime As System.Nullable(Of TimeSpan) = Me.radDateTimePicker.SelectedTime
+	Dim userSelectedValue As System.Nullable(Of DateTime) = radDateTimePicker.SelectedValue
+	Dim userSelectedDate As System.Nullable(Of DateTime) = radDateTimePicker.SelectedDate
+	Dim userSelectedTime As System.Nullable(Of TimeSpan) = radDateTimePicker.SelectedTime
 {{endregion}}
 
 >tipIf you want to set a specific value to be loaded to the control's input box you can bind the __SelectedValue__ property to your data.

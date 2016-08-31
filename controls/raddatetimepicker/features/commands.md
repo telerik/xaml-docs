@@ -24,7 +24,7 @@ In __Example 1__ a __Button__ is linked to the __RadDateTimePickerCommands.SetTo
 
 #### __[XAML] Example 1: SetToday command__
 
-{{region raddatetimepicker-commands_0}}
+{{region xaml-raddatetimepicker-commands_0}}
 	<telerik:RadDateTimePicker x:Name="dateTimePicker1" />
 	<telerik:RadButton Command="{x:Static telerik:RadDateTimePickerCommands.SetToday}" 
 					   CommandTarget="{Binding ElementName=dateTimePicker1}" 
@@ -39,7 +39,7 @@ __Example 2__ demonstrates how to close the drop down of __RadDateTimePicker__ b
 
 #### __[C#] Example 2: Close command__
 
-{{region raddatetimepicker-commands_1}}
+{{region cs-raddatetimepicker-commands_1}}
 	RadDateTimePickerCommands.Close.Execute(null, this.dateTimePicker1);
 {{endregion}}
 

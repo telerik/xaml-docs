@@ -5,7 +5,6 @@ description: Search
 slug: radrichtextbox-features-search
 tags: search
 published: True
-position: 2
 ---
 
 # Search

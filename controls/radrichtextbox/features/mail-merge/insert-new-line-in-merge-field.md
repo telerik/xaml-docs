@@ -10,7 +10,7 @@ position: 1
 
 # Insert a New Line in Merge Field
 
-In RadRichtextBox, you can insert a line break using the [Break element]({%slug radrichtextbox-features-document-elements-break%}). However, when working with mail merge fields, inserting a similar document element is not possible. This is why we introduced support for the vertical tab symbol. This article will explain how you could use this symbol in order to insert a new line in the document content and in a merge field. 
+In RadRichtextBox, you can insert a line break using the [Break element]({%slug radrichtextbox-features-document-elements-break%}). However, when working with mail merge fields, inserting a similar document element is not possible. This is why we introduced support for the vertical tab symbol. This article explains how you can use this symbol to insert a new line in the document content and in a merge field. 
 
 * [What is the Vertical Tab Symbol?](#what-is-the-vertical-tab-symbol)
 
@@ -28,7 +28,7 @@ The vertical tab character is __*"\v"*__. It can be inserted directly into a doc
 ## How to Insert a Vertical Tab in RadDocument?
 
 
-The [RadDocumentEditor class]({%slug radrichtextbox-features-raddocumenteditor%}) exposes the Insert() method that allows you add text to the document. **Example 1** shows how to insert a vertical tab with this method.
+The [RadDocumentEditor class]({%slug radrichtextbox-features-raddocumenteditor%}) exposes the Insert() method that enables you add text to the document. **Example 1** shows you how to insert a vertical tab using this method.
 
 #### __[C#] Example 1: Insert vertical tab through RadDocumentEditor__
 
@@ -47,7 +47,7 @@ The [RadDocumentEditor class]({%slug radrichtextbox-features-raddocumenteditor%}
 
 Another option is to create a [Span]({%slug radrichtextbox-features-document-elements-span%}) and assign the vertical tab character to it. 
 
->This option is suitable only when the document is still not measured. For more information on the measured and not measured states of RadDocument, check [this topic]({%slug radrichtextbox-features-document-elements-raddocument%}#specifics).
+>This option is suitable only when the document is still not measured. For more information on the measured and not measured states of RadDocument, see [this topic]({%slug radrichtextbox-features-document-elements-raddocument%}#specifics).
 
 #### __[C#] Example 2: Create vertical tab through document model__
 
@@ -63,24 +63,24 @@ Another option is to create a [Span]({%slug radrichtextbox-features-document-ele
 
 	Dim span As New Span("\v")
 {{endregion}}
-When inserted in the document, the vertical tab symbol will be replaced with a Break element of type LineBreak.
+When the vertical tab symbol is inserted in a document, it is replaced with a Break element of type LineBreak.
 
 ## Insert a Line Break Before/After a Merge Field If the Field Result Isn't Empty
 
-The vertical tab symbol allows you insert a new line in the resulting fragment of a merge field. You can use the symbol to insert a line break before or after the result of a merge field only if it is not empty.
+The vertical tab symbol enables you to insert a new line in the resulting fragment of a merge field. You can use the symbol to insert a line break before or after the result of a merge field only if it is not empty.
 
-The next figures will demonstrate a sample scenario which uses vertical tab to separate the result values on lines. In **Figure 1**, are shown the result fragments of merge fields for the sender's name, job title and address. 
+The next figures demonstrate a sample scenario that uses the vertical tab to separate the result values in lines. **Figure 1** shows the result fragments of merge fields for a sender's name, job title and address. 
 
-#### __Figure 1: Result fragment of mail merge, where all the fields has values__
+#### __Figure 1: Result fragment of mail merge, when all the fields have values__
 ![](images/RadRichTextBox-MailMerge-InsertANewLineInMergeField_01.png)
 
-If a line break is inserted after each merge field, when a value for a field is missing, the result would be an empty line. **Figure 2** shows the result of the mail merge when the merge field for job title has no value.
+If a line break is inserted after each merge field and a value for a field is missing, the result is an empty line. **Figure 2** shows the result of the mail merge when the merge field for job title has no value.
 
-#### __Figure 2: Result fragment of mail merge, where one of the fields has no value__
+#### __Figure 2: Result fragment of mail merge, when one of the fields has no value__
 ![](images/RadRichTextBox-MailMerge-InsertANewLineInMergeField_02.png)
 
 
-You could handle a similar scenario using the vertical tab symbol in the TextAfterIfNotEmpty property of the merge field. **Example 3** shows how to create such a field and the result is demonstrated in **Figure 3**.
+You could handle a similar scenario using the vertical tab symbol in the TextAfterIfNotEmpty property of the merge field. **Example 3** shows you how to create such a field and the result is demonstrated in **Figure 3**.
 
 
 #### __[C#] Example 3: Insert vertical tab in the switch of a merge field__
@@ -99,14 +99,14 @@ You could handle a similar scenario using the vertical tab symbol in the TextAft
 {{endregion}}
 
 
-#### __Figure 3: Result fragment of mail merge, where one of the fields has applied a switch with vertical tab symbol and has no value__
+#### __Figure 3: Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value__
 ![](images/RadRichTextBox-MailMerge-InsertANewLineInMergeField_03.png)
 
 
 
-### Using End of Paragraph "\r\n" Instead of Vertical Tab
+### Using End of Paragraph "\r\n" Instead the Vertical Tab
 
-You could use the *“\r\n”* in the TextBeforeIfNotEmpty or TextAfterIfNotEmpty switches to create a line break as well. 
+You could also use the *“\r\n”* in the TextBeforeIfNotEmpty or TextAfterIfNotEmpty switches to create a line break. 
 
 #### __[C#] Example 4: Insert \r\n in the switch of a merge field__
 
@@ -124,14 +124,14 @@ You could use the *“\r\n”* in the TextBeforeIfNotEmpty or TextAfterIfNotEmpt
 {{endregion}}
 
 
->important The vertical tab is serialized only when it is used as a value for a document variable. In all other cases, it  will be stripped from the document content on export.
+>important The vertical tab is serialized only when it is used as a value for a document variable. In all other cases, it is not included in the document content on export.
 
 
-## Using Vertical Tab in a DocumentVariableField
+## Using the Vertical Tab in a DocumentVariableField
 
 The suggested approach in scenarios that include export is to use a [document variable]({%slug radrichtextbox-features-document-variables%}) as a nested field. Using this approach, the field will be persisted when importing or exporting XAML and DOCX documents.
 
-#### __[C#] Example 5: Insert vertical in the switch of a merge field__
+#### __[C#] Example 5: Insert the vertical tab in the switch of a merge field__
 
 {{region radrichtextbox-features-mail-merge-Insert-new-line-in-merge-field_8}}
 
@@ -150,7 +150,7 @@ The suggested approach in scenarios that include export is to use a [document va
 {{endregion}}
 
 
-#### __[VB.NET] Example 5: Insert vertical in the switch of a merge field__
+#### __[VB.NET] Example 5: Insert the vertical tab in the switch of a merge field__
 
 {{region radrichtextbox-features-mail-merge-Insert-new-line-in-merge-field_9}}
 
@@ -168,7 +168,7 @@ The suggested approach in scenarios that include export is to use a [document va
 
 {{endregion}}
 
-As a value of the document variable you could insert the "\r\n" as well. Have in mind that this value could be exported to DOCX only.
+As a value of the document variable, you could also insert the "\r\n". Keep in mind that this value is exported to DOCX files only.
 
 # See Also
 

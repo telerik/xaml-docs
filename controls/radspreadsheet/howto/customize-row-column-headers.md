@@ -5,7 +5,7 @@ description: Customize Row and Column Headers
 slug: radspreadsheet-howto-customize-row-column-headers
 tags: customize,row,and,column,headers
 published: True
-position: 1
+position: 2
 ---
 
 # Customize Row and Column Headers
@@ -62,7 +62,26 @@ That's it. The column heading is changed.
         
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
+
+## States of the Row and Column Headings
+
+The headings of the rows and columns have different states. You can use these states to apply different styles of the items depending on whether they appear in selection. This section will describe the possible states of the headings in RadSpreadsheet.
+
+
+* **HeadingState**: It is property of the RowColumnHeadingBase type. It is an enum type and could have the following values:
+	* **Normal**: The heading is not included in any selection.
+	
+	* **Selected**: A cell from the row/column appears in a selection. 
+	
+	* **FullySelected**: All the cells included in the row/column are selected. 
+
           
+* **SelectAllControlState**: This is property of the SelectAllControl and determines whether this control is selected. It is an enum type and could have the following values:
+	
+	* **Normal**: The control is not selected.
+	
+	* **Selected**: The control is selected.
+
 
 # See Also
 

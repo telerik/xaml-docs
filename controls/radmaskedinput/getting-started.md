@@ -61,9 +61,9 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 
 After adding references to the aforementioned dlls, you can declare a new __RadMaskedInput__ control as any normal {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control.				
 
-#### __XAML__
-{{region radmaskedinput-getting-started_0}}
-	<UserControl .....
+#### __[XAML] Example 1: Declare RadMaskedInput controls in XAML__
+{{region xaml-radmaskedinput-getting-started_0}}
+	<UserControl 
 	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	   <StackPanel x:Name="LayoutRoot"
 	         Background="White"> 
@@ -83,18 +83,18 @@ Although each __RadMaskedInput__ component is designed to work with specific typ
 					
 The following code example initializes the __RadMaskedDateTimeInput__ to accept a date in a long date format.				
 
-#### __XAML__
-{{region radmaskedinput-getting-started_1}}
-	<telerik:RadMaskedDateTimeInput x:Name="radMaskedDateTimeInput" Mask="D"/>
+#### __[XAML] Example 2: Set mask property__
+{{region xaml-radmaskedinput-getting-started_1}}
+	<telerik:RadMaskedDateTimeInput  Mask="D"/>
 {{endregion}}
 
 ## Change the Default Placeholder Character
 
 The __Placeholder__ property represents the character displayed in any blank space defined by a __Mask__ character. By default the character is an underscore.				
 
-#### __XAML__
-{{region radmaskedinput-getting-started_2}}
-	<telerik:RadMaskedCurrencyInput x:Name="radMaskedCurrencyInput" Placeholder="$" />
+#### __[XAML] Example 3: Set custom character to the Placeholder property__
+{{region xaml-radmaskedinput-getting-started_2}}
+	<telerik:RadMaskedCurrencyInput Placeholder="$" />
 {{endregion}}
 
 ## Change the Culture
@@ -103,10 +103,9 @@ The __Culture__ property allows you to set the current language and culture from
 				
 The following code example initializes the __RadMaskedDateTimeInput__ to accept a Bulgarian date in a long date format.				
 
-#### __XAML__
-{{region radmaskedinput-getting-started_3}}
-	<telerik:RadMaskedDateTimeInput x:Name="radMaskedDateTimeInput"
-	                                Mask="D"
+#### __[XAML] Example 3: Change the Culture property__
+{{region xaml-radmaskedinput-getting-started_3}}
+	<telerik:RadMaskedDateTimeInput Mask="D"
 	                                Culture="bg-BG" />
 {{endregion}}
 
@@ -118,12 +117,12 @@ The following code example initializes the __RadMaskedDateTimeInput__ to accept 
 
 You can set a watermark content to the __RadMaskedInput__ controls by using the __EmptyContent__ and the __EmptyContentTemplate__ properties. When the __Value__ of a __RadMaskedTextInput__ control is null or empty the __EmptyContent__ will be displayed.				
 
-#### __XAML__
-{{region radmaskedinput-getting-started_4}}
+#### __[XAML] Example 4: Set custom value to the EmptyContent property__
+{{region xaml-radmaskedinput-getting-started_4}}
 	<telerik:RadMaskedTextInput Mask="####" EmptyContent="Please Enter Four Digits" />
 {{endregion}}
 
-# See Also
+## See Also
  * [RadMaskedInput Controls Overview]({%slug radmaskedinput-overview%})
  * [Events Overview]({%slug radmaskedinput-events-overview%})
  * [Common Features]({%slug radmaskedinput-features-common%})

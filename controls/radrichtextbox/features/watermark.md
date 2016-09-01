@@ -5,7 +5,6 @@ description: Watermark
 slug: radrichtextbox-features-watermark
 tags: watermark
 published: True
-position: 21
 ---
 
 # Watermark

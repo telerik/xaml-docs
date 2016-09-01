@@ -5,7 +5,6 @@ description: Hyperlink
 slug: radrichtextbox-features-document-elements-hyperlink
 tags: hyperlink
 published: True
-position: 10
 ---
 
 # Hyperlink

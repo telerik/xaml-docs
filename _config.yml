@@ -637,6 +637,8 @@ navigation:
     controls/radrichtextbox/features/styles:
         title: Styles
         position: 12		
+    controls/radrichtextbox/features/mail-merge:
+        title: Mail Merge
     controls/radrichtextbox/features/fields-and-document-variables:
         title: Fields and Document Variables
         position: 18

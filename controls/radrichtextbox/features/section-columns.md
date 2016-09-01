@@ -5,7 +5,6 @@ description: Section Columns
 slug: radrichtextbox-features-section-columns
 tags: section, columns
 published: True
-position: 8
 ---
 
 # Section Columns

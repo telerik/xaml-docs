@@ -5,7 +5,6 @@ description: Spellcheck
 slug: radrichtextbox-features-spellcheck
 tags: spellcheck
 published: True
-position: 7
 ---
 
 # Spellcheck

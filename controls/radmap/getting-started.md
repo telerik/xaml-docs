@@ -55,7 +55,7 @@ This example will use __Bing Maps__ as its provider. In order to do that you hav
 {{region radmap-getting-started_4}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:RadMap.Provider>
-	        <telerik:BingMapProvider ApplicationId="AqaPuZWytKRUA8Nm5nqvXHWGL8BDCXvK8onCl2PkC581Zp3T_fYAQBiwIphJbRAK"
+	        <telerik:BingMapProvider ApplicationId="Bing_Map_Key"
 	                                 Mode="Aerial"
 	                                 IsLabelVisible="True"/>
 	    </telerik:RadMap.Provider>

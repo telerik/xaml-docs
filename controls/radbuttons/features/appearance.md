@@ -24,6 +24,6 @@ Applying a style to the button is the most efficient way to customize its appear
 
 By using a __Style__ you can also entirely change the appearance of the button. This is done by modifying its __ControlTemplate__. To learn more about styling the __RadButtons__ read [here]({%slug radbuttons-styles-and-templates-overview%}).
 
-# See Also
+## See Also
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
  * [Visual Structure]({%slug radbuttons-visual-structure%})

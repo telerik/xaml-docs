@@ -31,10 +31,9 @@ The __RadMaskedCurrencyInput__ represents the basic control that can be used to 
 
 Here is a simple definition of a __RadMaskedCurrencyInput__ control:				
 
-#### __XAML__
-{{region radmaskedinput-features-controls-currency_0}}
-	<telerik:RadMaskedCurrencyInput x:Name="radMaskedCurrencyInput"
-	                                Width="200"
+#### __[XAML] Example 1: Define RadMaskedCurrencyInput in XAML__
+{{region xaml-radmaskedinput-features-controls-currency_0}}
+	<telerik:RadMaskedCurrencyInput Width="200"
 	                                Margin="20 20 20 10"
 	                                Culture="en-US"
 	                                EmptyContent="Enter digits"
@@ -52,10 +51,9 @@ You can further customize the __RadMaskedCurrencyInput__ control's behavior by s
 				
 You can further restrict the user input by setting the __FormatString__ property.It uses [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric Format Strings](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) to further format the __Text__ property.				
 
-#### __XAML__
-{{region radmaskedinput-features-controls-currency_1}}
-	<telerik:RadMaskedCurrencyInput x:Name="radMaskedCurrencyInput"
-	                                HorizontalAlignment="Center"
+#### __[XAML] Example 2: Setting the FormatString property__
+{{region xaml-radmaskedinput-features-controls-currency_1}}
+	<telerik:RadMaskedCurrencyInput HorizontalAlignment="Center"
 	                                EmptyContent="Enter currency"
 	                                Culture="en-US"
 	                                FormatString="{}The currency value is {0:c2}, the numeric value is {0:n2}"
@@ -66,7 +64,7 @@ You can further restrict the user input by setting the __FormatString__ property
 
 ![](images/radmaskedinput_currencyinput_format_string.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})
  * [MaskedTextInput]({%slug radmaskedinput-features-controls-text%})

@@ -12,7 +12,7 @@ position: 8
 
 Using the keyboard you can perform some of the most common tasks. This section describes the keyboard shortcuts used by __RadDateTimePicker__.
 
-## Navigation between Calendar part and Clock part
+## Navigation between Calendar and Clock
 
 When the user opens the DateTimePicker, the keyboard focus goes automatically to the Calendar in it. At this point, there is a full TAB cycle in the dropdown of the control, namely:
 
@@ -28,7 +28,7 @@ When the user opens the DateTimePicker, the keyboard focus goes automatically to
 
 ## Navigation inside the Calendar
 
-When the focus is in the Calendar, you can use the following keyboard keys to navigate between the dates and the Views:
+When the focus is in the Calendar, you can use the following keyboard keys to navigate between the Dates and the Views:
 
 * __Arrow Keys__ - navigate in all directions inside the Calendar;
 
@@ -49,3 +49,13 @@ Here is a list of the keyboard shortcuts that can be used inside TimePicker:
 * __Home/End__ - navigate to the first/last item.
 
 * __Enter__ - selects the currently focused time and closes the dropdown.
+
+## Tab Navigation
+
+__TabNavigationExtensions.IsTabStop__ attached property indicates whether RadDateTimePicker control is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since R3 2016.  
+
+#### __[XAML] Example 1: RadDateTimePicker with TabNavigationExtensions.IsTabStop__
+
+{{region raddatetimepicker-features-keyboard-support-0}}
+	<telerik:RadDateTimePicker telerik:TabNavigationExtensions.IsTabStop="False" />
+{{endregion}}

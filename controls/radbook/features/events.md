@@ -26,8 +26,8 @@ __RadBook__ exposes the following events:
 
 Please find below and example of how to use those events:
 
-#### __XAML__
-{{region radbook-events_0}}
+#### __[XAML] Example 1: Subscribing to the RadBook events__  
+{{region xaml-radbook-events_0}}
 	<Grid x:Name="LayoutRoot" Background="Purple">
 	    <telerik:RadBook x:Name="RadBook1" 
 	                        Margin="50"
@@ -66,8 +66,8 @@ Please find below and example of how to use those events:
 	</Grid>
 {{endregion}}
 
-#### __C#__
-{{region radbook-events_1}}
+#### __[C#] Example 2: Adding event handlers__  
+{{region cs-radbook-events_1}}
 	public partial class MainPage : UserControl
 	{
 		public MainPage()
@@ -80,7 +80,6 @@ Please find below and example of how to use those events:
 		}
 		private void RadBook1_FoldDeactivated(object sender, Telerik.Windows.Controls.FoldEventArgs e)
 		{
-
 		}
 		private void RadBook1_PageChanged(object sender, Telerik.Windows.RadRoutedEventArgs e)
 		{
@@ -97,13 +96,13 @@ Please find below and example of how to use those events:
 		private void RadBook1_PreviewPageFlipStarted(object sender, Telerik.Windows.Controls.PageFlipEventArgs e)
 		{
 			RadBookItem flippedPage = e.Page;
-			e.Handled = true; //if the page flip should stop
+			e.Handled = true;//if the page flip should stop
 		}
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radbook-events_1}}
+#### __[VB.NET] Example 2: Adding event handlers__  
+{{region vb-radbook-events_2}}
 	Partial Public Class MainPage
 		Inherits UserControl
 		Public Sub New()
@@ -113,7 +112,6 @@ Please find below and example of how to use those events:
 			Dim position As FoldPosition = e.Position
 		End Sub
 		Private Sub RadBook1_FoldDeactivated(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.FoldEventArgs)
-
 		End Sub
 		Private Sub RadBook1_PageChanged(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 			Dim currentPage As Integer = RadBook1.RightPageIndex
@@ -126,7 +124,7 @@ Please find below and example of how to use those events:
 		End Sub
 		Private Sub RadBook1_PreviewPageFlipStarted(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.PageFlipEventArgs)
 			Dim flippedPage As RadBookItem = e.Page
-			e.Handled = True 'if the page flip should stop'
+			e.Handled = True 'if the page flip should stop '
 		End Sub
 	End Class
 {{endregion}}

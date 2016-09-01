@@ -30,8 +30,8 @@ The __SpinMode__ property is enumeration that exposed the following values:
 
 * __None__ - disables the spin behavior            
 
-#### __XAML__
-{{region radmaskedinput-features-keyboard-mouse_0}}
+#### __[XAML] Example 1: Setting the SpinMode property__
+{{region xaml-radmaskedinput-features-keyboard-mouse_0}}
 	<telerik:RadMaskedCurrencyInput Margin="0,5,0,10" 
 	                                Culture="bg-BG"
 	                                Mask="c4"
@@ -68,9 +68,9 @@ Once you turn off the sections tab navigation, you can set up the following prop
 
 The following snippet demonstrates how both properties can be used to restrict the second __RadMaskedInput__ control from receiving focus. Note that with the following implementation only one __Tab__ (or __Shift + Tab__) key stroke is needed to move the focus form the first control to the third one (or vice versa):        
 
-#### __XAML__
-{{region radmaskedinput-features-keyboard-mouse_1}}
-	<UserControl x:Class="MaskedInput_SL.MainPage"
+#### __[XAML] Example 2: Setting the IsTabStop and IsEditorTabStop properties__
+{{region xaml-radmaskedinput-features-keyboard-mouse_1}}
+	<UserControl 
 	            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	            xmlns:maskedInput="clr-namespace:Telerik.Windows.Controls.MaskedInput;assembly=Telerik.Windows.Controls.Input"
@@ -98,7 +98,7 @@ The following table represents all possible combinations between the two propert
 
 Basically, the __IsEditorTabStop__ property controls the focus of *EditorTextBox* and the native __IsTabStop__ property controls the focus of the __RadMaskedInput__ control itself.        
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [Common Features]({%slug radmaskedinput-features-common%})
  * [Globalization Support]({%slug radmaskedinput-features-globalization%})

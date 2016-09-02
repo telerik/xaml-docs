@@ -12,9 +12,9 @@ position: 2
 
 >important This feature is available with __R2 2016 Service pack 1__ version of Telerik UI for WPF controls.
 
-__RadLayoutControl__ supports saving and loading the state of the layout. This can be done via the __SaveToXmlString()__ and __LoadFromXamlString()__ methods of __RadLayoutControl__. The control is serialized into an XML string and it is deserialized from one.
+__RadLayoutControl__ supports saving and loading the state of a layout. This can be done via the __SaveToXmlString()__ and __LoadFromXamlString()__ methods of __RadLayoutControl__. The control is serialized into an XML string and it is deserialized from one.
 
-In order to serialize the layout you will need to set the __RadLayoutControl.SerializationId__ attached property on the RadLayoutControl and all layout groups and UIElements that you want to save.
+In order to serialize a layout you will need to set the __RadLayoutControl.SerializationId__ attached property on the RadLayoutControl and all layout groups and UIElements that you want to save.
 
 > The __SerializationIds__ must be unique. If there are elements with matching __SerializationIds__ , this might lead to multiple operations performed on a single UI element resulting to an __ArgumentException__ with the following error message: "Element is already the child of another element".
 
@@ -23,7 +23,7 @@ In order to serialize the layout you will need to set the __RadLayoutControl.Ser
 	<telerik:RadLayoutControl telerik:RadLayoutControl.SerializationId="myLayoutControlID" />
 {{endregion}}
 
-> If an element doesn't have __SerializationId__ property set, it will not be saved in the serialized XML. So, it will be removed from the layout when the XML loads.
+> If an element doesn't have __SerializationId__ property set, it will not be saved in the serialized XML file. So, it will be removed from the layout when the XML file loads.
  
 ## Saving the layout
 

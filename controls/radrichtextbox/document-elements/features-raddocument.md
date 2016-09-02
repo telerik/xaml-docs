@@ -76,7 +76,9 @@ As the two states of the document - measured and not measured are too different,
 
 As explained in the previous section, the state of the document is essential for the methods that can be used on it.
 
-For example, you can build a RadDocument from scratch and add Sections to it as demonstrated in **Example 2**:
+For example, you can build a RadDocument from scratch and add Sections to it as demonstrated in **Example 2**.
+
+>tip You can also merge RadDocument instances. For more information, see the [Merge Documents section]({%slug radrichtextbox-features-merge-raddocumentmerger%}).
 
 #### __[C#] Example 2: Add a section to a not measured document__
 
@@ -222,7 +224,7 @@ This document is editable. To make it **read only** you have to set the __IsRead
 
 
 
-# See Also
+## See Also
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
 
@@ -235,3 +237,5 @@ This document is editable. To make it **read only** you have to set the __IsRead
  * [Hyperlink]({%slug radrichtextbox-features-document-elements-hyperlink%})
 
  * [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%})
+ 
+ * [Merge Documents]({%slug radrichtextbox-features-merge-raddocumentmerger%})

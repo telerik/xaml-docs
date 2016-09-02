@@ -148,7 +148,9 @@ If you choose to use the document selection when creating a __DocumentFragment__
 {{endregion}}
 
 
+>For merging RadDocument instances, you can use the [RadDocumentMerger class]({%slug radrichtextbox-features-merge-raddocumentmerger%}).
 
-# See Also
+## See Also
 
  * [Import/Export]({%slug radrichtextbox-features-import-export%})
+ * [RadDocumentMerger]({%slug radrichtextbox-features-merge-raddocumentmerger%})

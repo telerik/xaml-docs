@@ -12,21 +12,21 @@ position: 3
 
 Besides the built-in selection functionality, you are able to use a programmatic approach to select the data in the __RadGridView__. The __RadGridView__ exposes several properties which allow you to manipulate the selected data. You are able to:
 
-* [Set the selected item](#selecteditem)
+* [Set the Selected Item](#selecteditem)
 
-* [Set the current item](#currentitem)
+* [Set the Current Item](#currentitem)
 
-* [Add or remove items to/from the selection](#selecteditems)
+* [Add or Remove Items to/from the Selection](#selecteditems)
 
-* [Set the selected cell](#selectedcells)
+* [Set the Selected Cell](#selectedcells)
 
-* [Select all of the items](#selecting-all-items)
+* [Select All of the Items](#selecting-all-items)
 
-* [Deselect all of the items](#deselecting-all-items)
+* [Deselect All of the Items](#deselecting-all-items)
 
-* [Selecting cell regions](#selecting-cell-regions)
+* [Selecting Cell Regions](#selecting-cell-regions)
 
-* [Deselecting cell regions](#deselecting-cell-regions)
+* [Deselecting Cell Regions](#deselecting-cell-regions)
 
 >tipYou can download a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel [here](https://github.com/telerik/xaml-sdk), the example is listed as __GridView/BindingSelectedItemsFromViewModel__.
         
@@ -212,7 +212,7 @@ The second one is to call the __Clear()__ method of the __SelectedItems__ collec
 	Me.radGridView.SelectedItems.Clear()
 {{endregion}}
 
-## Selecting cell regions
+## Selecting Cell Regions
 
 As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows you to select specific region(s) of cells. Its overloads allow you to pass as a parameter either a single **CellRegion** instance or a collection of cell regions. The CellRegion class has a single constructor through which the following internal properties can be set:
 

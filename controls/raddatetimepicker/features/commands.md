@@ -16,11 +16,11 @@ This article provides an information about the following commands that __RadDate
 
 * [Close Command](#close)
 
-## SetToday
+## SetToday Command
 
-Using the __SetToday__ command the current date of __RadDateTimePicker__ could be set to today.
+Using the __SetToday__ command the current date of __RadDateTimePicker__ could be set to the current date (today).
 
-In __Example 1__ a __Button__ is linked to the __RadDateTimePickerCommands.SetToday__ command - after execution the date of __RadDateTimePicker__ will be set to today date:
+In __Example 1__ a __Button__ is linked to the __RadDateTimePickerCommands.SetToday__ command after whose execution the date will be set to the current day:
 
 #### __[XAML] Example 1: SetToday command__
 
@@ -31,7 +31,7 @@ In __Example 1__ a __Button__ is linked to the __RadDateTimePickerCommands.SetTo
 					   Content="Set Today"/>
 {{endregion}}
 
-## Close
+## Close Command
 
 The __Close__ command closes the drop down part of __RadDateTimePicker__ if it is opened.
 

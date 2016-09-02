@@ -12,7 +12,7 @@ position: 2
 
 >important This feature is available with __R2 2016 Service pack 1__ version of Telerik UI for WPF controls.
 
-__RadLayoutControl__ supports saving and loading the state of the layout. This can be done via the __SaveToXmlString()__ and __LoadFromXamlString()__ methods of __RadLayoutControl__. The control is serialized into an XML string and it is deserialized from one.
+__RadLayoutControl__ supports saving and loading the state of the layout. You can do this using the __SaveToXmlString()__ and __LoadFromXamlString()__ methods of __RadLayoutControl__. The control is serialized into an XML string and it is deserialized from one.
 
 In order to serialize a layout you will need to set the __RadLayoutControl.SerializationId__ attached property on the RadLayoutControl and all layout groups and UIElements that you want to save.
 

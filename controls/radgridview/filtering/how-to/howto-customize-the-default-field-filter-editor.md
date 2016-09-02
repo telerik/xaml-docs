@@ -75,3 +75,21 @@ In case you need the filtering to be re-applied on every character entered, you 
 	    }
 	}
 {{endregion}}
+
+#### __VB.NET__
+
+{{region vb-gridview-filtering-howto-customize-the-default-field-filter-editor_1}}
+
+	Private Sub OnRadGridViewFieldFilterEditorCreated(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
+            Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
+
+            If stringFilterEditor IsNot Nothing Then
+                AddHandler e.Editor.Loaded, Sub(s1, e1)
+                                                Dim textBox = e.Editor.ChildrenOfType(Of TextBox)().Single()
+                                                AddHandler textBox.TextChanged, Sub(s2, e2)
+                                                                                    textBox.GetBindingExpression(TextBox.TextProperty).UpdateSource()
+                                                                                End Sub
+                                            End Sub
+            End If
+        End Sub
+{{endregion}}

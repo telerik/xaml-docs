@@ -10,9 +10,9 @@ position: 4
 
 # Multiple Selection
 
-With the R3 2016 release version of UI for WPF the ability to select multiple items from __RadComboBox__ is now available. 
+With the R3 2016 release version of UI for WPF, multiple items can be selected from __RadComboBox__. 
 
-In order to enable it the __AllowMultipleSelection__  property needs to be set to __True__.
+To enable this functionality, you have to set the  __AllowMultipleSelection__  property to __True__.
 
 This article will provide some detailed information about the available properties, commands and other features that are available when multiple selection is allowed:
 
@@ -38,7 +38,7 @@ This section will provide information about the following properties connected w
 
 ### AllowMultipleSelection
 
-Using the __AllowMultipleSelection__ property the multiple selection functionality of __RadComboBox__ could be enabled or disabled. It is of type bool and could be set either to __True__ or __False__. The default value is __False__ and in order to enable the multiple selection the __AllowMultipleSelection__ should be set to __True__ as shown in __Example 1__:
+Using the __AllowMultipleSelection__ you can enable or disable the multiple selection functionality of __RadComboBox__. This property is of type bool.It can be set either to __True__ or __False__. The default value is __False__. To enable the multiple selection the __AllowMultipleSelection__ should be set to __True__ as shown in __Example 1__:
 
 #### __[XAML] Example 1: Allowing multiple selection__
 
@@ -48,9 +48,9 @@ Using the __AllowMultipleSelection__ property the multiple selection functionali
 
 ### MultipleSelectionSeparator
 
-When multiple items are selected in __RadComboBox__ they are separated from each other with a specific separator. In order to change that separator the __MultipleSelectionSeparator__ property could be used. This property is of type char, so any character could be set as a separator between the selected items.  
+When multiple items are selected in __RadComboBox__ they are separated from each other with a specific separator - the default separator is comma. To change that separator, the __MultipleSelectionSeparator__ property is used. This property is of type char, so any character could be set as a separator.  
 
-__Example 2__ demonstrates how to change the default separator.
+__Example 2__ demonstrates how to change the default separator to a dash.
 
 #### __[XAML] Example 2: Changing multiple selection separator__
 

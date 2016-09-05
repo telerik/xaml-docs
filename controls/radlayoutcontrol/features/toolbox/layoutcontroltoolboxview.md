@@ -35,9 +35,9 @@ You can __get, add or remove__ the elements from the toolbox using the __NewItem
 
 ## Tracking the deleted items
 
-The toolbox allows you to track and restore the items that was removed from the layout. They are displayed in the __Deleted Items__ visual section of the control. Once an item is deleted, it is added in the __DeletedItems__ collection of the LayoutControlToolBoxView. You can restore the element back in the layout by drag/droping it from the Deleted Items to the __RadLayoutControl__.
+The toolbox allows you to track and restore the items that was removed from the layout. Once an item is deleted, it is added in the __DeletedItems__ collection of the LayoutControlToolBoxView. You can restore the element back in the layout by drag/droping it from the Deleted Items to the __RadLayoutControl__.
 
-This feature is disabled by default. You can enable it by setting the the __TrackDeletedItems__ property to __True__.
+>important This feature is disabled by default. You can enable it by setting the the __TrackDeletedItems__ property to __True__.
 
 #### __[XAML] Example 2: Enabling the deleted items tracking__
 	<telerik:LayoutControlToolBoxView TrackDeletedItems="True"/>

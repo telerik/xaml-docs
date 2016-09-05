@@ -21,7 +21,7 @@ The layout control toolbox allows you to add items in the layout control at runt
 
 The toolbox has a few sections containing information about the available items (__New Items__), the deleted items (__Deleted Items__) and the structure of the elements in the layout.
 
-The __New Items__ section of the Items tab displays a list of elements that can be dropped into the layout control.
+The __New Items__ section of the Items tab displays a list of elements that can be added into the layout control.
 
 The __Deleted Items__ of the Items section displays all the elements that have been deleted, and also allows you to drag them back into the layout control. The deleted items feature is disabled by default. To enable it you can use the __TrackDeletedItems__ property of __LayoutControlToolBoxView__.
 
@@ -29,7 +29,7 @@ The __Structure__ tab displays a hierarchical structure of the layout, allowing 
 
 ## Setting up the toolbox
 
-The layout control toolbox is represented by the __LayoutControlToolBoxView__ control which you can display following the approaches listed below.
+The layout control toolbox is presented via the __LayoutControlToolBoxView__ control which you can display following the approaches listed below.
 
 * [Using the LayoutControlToolBox control]({%slug radlayoutcontrol-features-toolbox-layoutcontroltoolbox%}): You can define the control in the __AdditionalCanvasItems__ collection of __RadLayoutControl__. This will embed a toggle button into the layout control allowing you to show and hide the __LayoutControlToolBoxView__.
 

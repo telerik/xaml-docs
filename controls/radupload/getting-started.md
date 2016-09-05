@@ -5,16 +5,13 @@ description: Getting Started
 slug: radupload-getting-started
 tags: getting,started
 published: True
-position: 3
+position: 2
 site_name: Silverlight
 ---
 
 # Getting Started
 
-
-
 __RadUpload__ has a client and a server side part. The client side is executed entirely in the browser using the Silverlight platform. The server side requires a handler on the server for processing the files that are submitted from the client side. This topic will explain the basics of:
-	  
 
 * [Configuring the server side](#Configuring_the_server_side)
 
@@ -139,14 +136,9 @@ This is enough to make the __RadUpload__ work. To fine tune the upload to match 
 
 * [Programmatic Upload]({%slug radupload-features-programmatic-upload%})
 
-# See Also
-
+## See Also
  * [Visual Structure]({%slug radupload-visual-structure%})
-
  * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
-
  * [Events - Overview]({%slug radupload-events-overview%})
-
  * [Styles and Templates - Overview]({%slug radupload-styles-and-templates-overview%})
-
  * [Localization]({%slug radupload-localization%})

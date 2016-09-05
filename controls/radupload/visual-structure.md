@@ -5,15 +5,11 @@ description: Visual Structure
 slug: radupload-visual-structure
 tags: visual,structure
 published: True
-position: 2
+position: 1
 site_name: Silverlight
 ---
 
 # Visual Structure
-
-
-
-## 
 
 This section defines the terms and concepts used in the scope of __RadUpload__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting the support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadUpload__ control.
 
@@ -57,10 +53,7 @@ When the upload process has been started the following elements are available.
 
 * __Cancel Button__ - breaks the upload and clears the upload list.
 
-# See Also
-
+## See Also
  * [Getting Started]({%slug radupload-getting-started%})
-
  * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
-
  * [Template Structure]({%slug radupload-styles-and-templates-template-structure%})

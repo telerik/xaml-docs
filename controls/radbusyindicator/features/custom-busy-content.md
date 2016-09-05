@@ -22,7 +22,7 @@ __BusyContent__ property sets the loading message while the indicator is active 
 
 #### __[XAML] Setting BusyContent__
 
-{{region radbusyindicator-features-custom-busy-content_0}}
+{{region xaml-radbusyindicator-features-custom-busy-content_0}}
 	<telerik:RadBusyIndicator BusyContent="The report is currently loading..." >
         <!-- the content here -->
     </telerik:RadBusyIndicator>
@@ -42,7 +42,7 @@ To do this, first you have to define your __RadBusyIndicator__ control:
 
 #### __[XAML] Defining RadBusyIndicator__
 
-{{region radbusyindicator-features-custom-busy-content_4}}
+{{region xaml-radbusyindicator-features-custom-busy-content_4}}
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator"
 	                          Background="Transparent"
 	                          BusyContentTemplate="{StaticResource BusyContentDataTemplate}">
@@ -63,7 +63,7 @@ In the __RadBusyIndicator's__ definition you have indicated the __BusyContentTem
 
 #### __[XAML] Defining DataTemplate__
 
-{{region radbusyindicator-features-custom-busy-content_1}}
+{{region xaml-radbusyindicator-features-custom-busy-content_1}}
 	<DataTemplate x:Key="BusyContentDataTemplate">
 	    <StackPanel Orientation="Horizontal"
 	                DataContext="{Binding DataContext, ElementName=radBusyIndicator}">
@@ -101,7 +101,7 @@ In the code behind you have to:
 
 #### __[C#] BusyContentTemplateSample class implementation__
 
-{{region radbusyindicator-features-custom-busy-content_2}}
+{{region cs-radbusyindicator-features-custom-busy-content_2}}
 	public partial class BusyContentTemplateSample : UserControl, INotifyPropertyChanged
 	{
 	    private int progressValue;
@@ -151,7 +151,7 @@ In the code behind you have to:
 
 #### __[VB] BusyContentTemplateSample class implementation__
 
-{{region radbusyindicator-features-custom-busy-content_3}}
+{{region vb-radbusyindicator-features-custom-busy-content_3}}
 	Public Partial Class BusyContentTemplateSample
 	 Inherits UserControl
 	 Implements INotifyPropertyChanged

@@ -52,7 +52,7 @@ Initially, the __LayoutControlToolBox__ displays a single toggle button (see __F
 
 When the button is clicked the toolbox view will be opened in a popup.
 
-#### __Figure 2: Opened toolbox__  
+#### __Figure 2: Toolbox view__  
 ![](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-02.png)
 
 ## Manually control the toolbox view visibility
@@ -105,7 +105,7 @@ The toolbox view is displayed in a __RadWindow__ element which can be customized
 		</telerik:RadLayoutControl.AdditionalCanvasItems>
 	</telerik:RadLayoutControl>
 	
-> The __BasedOn__ setting is applicable only in a scenario with [implicit styles]({%slug styling-apperance-implicit-styles-overview%}). The attribute is set in order for the custom style to inherit the default toolbox window style. The __LayoutControlToolBoxWindowStyle__ is located in the __Telerik.Windows.Controls.Navigation.xaml__ ResourceDictionary.
+> The __BasedOn__ setting is applicable only in a scenario with [implicit styles]({%slug styling-apperance-implicit-styles-overview%}). This attribute is set so that the custom style inherits the default toolbox window style. The __LayoutControlToolBoxWindowStyle__ is located in the __Telerik.Windows.Controls.Navigation.xaml__ ResourceDictionary.
 	
 #### __Figure 4: Custom window style__
 ![](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-04.png)

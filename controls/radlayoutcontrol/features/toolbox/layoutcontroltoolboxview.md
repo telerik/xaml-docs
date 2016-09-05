@@ -50,7 +50,7 @@ The toolbox allows you to track and restore the items that was removed from the 
 __LayoutControlHierarchicalNodeProxy__ is the model of the toolbox items. The __LayoutControlToolBoxView__ element exposes two collections – one with the elements displayed in the __New Items__ section and another one displayed in the __Deleted Items__ section. The collections can be accessed respectively through the __NewItems__ and __DeletedItems__ properties which are of type __ObservableCollection&lt;LayoutControlHierarchicalNodeProxy&gt;__. 
 
 The proxy object contains information about the elements in the toolbox.
-* __Header__: You can use this property to set a string that represents the header of the toolbox item
+* __Header__: You can use this property to set a string that represents the header of the toolbox item.
 * __OriginalItemType__: This property holds the type of the associated element.
 * __OriginalItem__: This property holds the associated element.
 

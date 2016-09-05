@@ -11,7 +11,7 @@ site_name: Silverlight
 
 # RadUploadDropPanel
 
-__RadUploadDropPanel__ is a content control that works with RadUpload and allows you to drop files over it. The dropped files are prepared for upload in the assosiated RadUpload component. The drop panel doesn't have a specific default visualization which means that you can define its look and feel.
+__RadUploadDropPanel__ is a content control that works with RadUpload and allows you to drop files into it. The dropped files are prepared for upload in the assosiated RadUpload component. The drop panel doesn't have a specific default layout which means that you can define its look and feel.
 
 The drop panel have the following properties:
 * __RadUpload__: A property of type __RadUpload__ that gets or sets a value indicating the assosisated RadUpload control.

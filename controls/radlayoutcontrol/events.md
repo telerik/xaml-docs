@@ -14,7 +14,7 @@ This article contains basic information about the events available with __RadLay
 
 ## RadLayoutControl events
 
-The layout control have the following event.
+The layout control has the following event.
 
 * __SelectionChanged__: Occurs when the selection changes. The event arguments are of type __LayoutControlSelectionChangedEventArgs__  and have the following properties:
 	

@@ -43,8 +43,6 @@ The layout control has the following event.
 		#### __Figure 1: Locked item__
 		![](images/layoutcontrol-events-01.png)
 
-> __RadLayoutControl__ also have few [save/load events](#saveload-layout-events).
-		
 ## Save/Load layout events
 
 __RadLayoutControl__ and the [layout groups]({%slug radlayoutcontrol-features-layoutgroups-overview%}) expose several events which can be used to modify the saving and loading process of the layout. The available events are listed below.

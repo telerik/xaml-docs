@@ -22,7 +22,7 @@ The layout control has the following event.
 	* __OldItem__: A property of type __object__ that gets the previously selected item.
 	* __AllowedActions__: A property of type __LayoutControlAllowedActions__ gets or sets the allowed operations for the selected item. 	
 	
-		> You can use this property to forbid specific input device (mouse, touch) interactions as drag, resize and the manipulation actions available in the __ManipulationPane__.
+		> You can use this property to forbid specific input device (mouse, touch) interactions as drag, resize and the manipulation actions available in the [ManipulationPane]({%slug radlayoutcontrol-edit-the-layout%}).
 	
 		The property is an enum and it has the following values:
 		* __None__: No actions will be available 

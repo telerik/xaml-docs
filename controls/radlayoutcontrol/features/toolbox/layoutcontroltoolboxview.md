@@ -29,7 +29,7 @@ The toolbox can be associated with RadLayoutControl through its __LayoutControl_
 #### __Figure 1: Final result__  
 ![](images/radlayoutcontrol-features-toolbox-toolboxview-01.png)
 
->Drop from the toolbox is allowed only if the layout control is in [edit mode]({%slug radlayoutcontrol-edit-the-layout%}).
+>Dropping items from the toolbox into the layout control is allowed only if the layout control is in [edit mode]({%slug radlayoutcontrol-edit-the-layout%}).
 
 You can __get, add or remove__ the elements from the toolbox using the __NewItems__ and __DeletedItems__ collections of the __LayoutControlToolBoxView__ control.
 
@@ -54,7 +54,7 @@ The proxy object contains information about the elements in the toolbox.
 * __OriginalItemType__: This property holds the type of the associated element.
 * __OriginalItem__: This property holds the associated element.
 
-By default the toolbox is populated with a collection that contains all available layout controls. But you can use the __NewItems__ collection and the __LayoutControlHierarchicalNodeProxy__ class to add a custom __UIElements__ in the toolbox.
+By default the toolbox is populated with a collection that contains all available layout controls. But you can use the __NewItems__ collection and the __LayoutControlHierarchicalNodeProxy__ class to add custom __UIElements__ in the toolbox.
 
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

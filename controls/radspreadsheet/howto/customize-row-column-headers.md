@@ -67,7 +67,7 @@ That's it. The column heading is changed.
 ## States of the Row and Column Headings
 
 The headings of the rows and columns have different states. You can use these states to apply different styles of the items depending on whether they appear in a selection. This section will describe the possible states of the headings in RadSpreadsheet.
-
+ 
 * **HeadingState**: A property of type RowColumnHeadingBase that gets or sets the heading state. It is an enum and it could have the following values:
 	* **Normal**: The heading is not included in any selection.
 	

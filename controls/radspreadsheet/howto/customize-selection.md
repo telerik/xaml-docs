@@ -10,16 +10,13 @@ position: 0
 
 # Customize Selection
 
-RadSpreadsheet exposes several properties that allow you control the way the selection in the control is rendered. This article will describe the available properties and show you how to work with them.
-
-## 
+RadSpreadsheet exposes several properties that enable you to control the way the selection in the control is rendered. This article describes the available properties and shows you how to work with them.
 
 * **SelectionStroke**: A *dependency property* of type *Brush* that gets or sets the stroke of the selection.
 
 * **SelectionStrokeThickness**: A *dependency property* of type *double* that gets or sets the stroke thickness of the selection.
 
-* **SelectionFill**: Gets or sets the fill of the selection. This is a *dependency property* and it is of type *Brush*.
-
+* **SelectionFill**: A *dependency property* of type *Brush* that gets or sets the fill of the selection. 
 
 * **FillHandleSelectionStroke**: A *dependency property* of type *Brush* that gets or sets the fill handle selection stroke.
 

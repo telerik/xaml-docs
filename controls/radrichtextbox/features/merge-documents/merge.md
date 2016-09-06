@@ -9,7 +9,7 @@ published: True
 
 # Insert Document at Caret Position
 
-The [RadDocumentMerger]({%slug radrichtextbox-features-merge-raddocumentmerger%}) class exposes the **InsertDocument() method** that enables you to merge two [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) instances at the caret position of the targeted one. 
+The [RadDocumentMerger]({%slug radrichtextbox-features-merge-raddocumentmerger%}) class exposes the **InsertDocument() method** that enables you to merge two [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) instances. The documents will be merged at the caret position of the targeted one.
 
 Along with the [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) instance, the overloads of the InsertDocument() method allow you to pass a parameter of type **InsertDocumentOptions**. You can use this parameter to customize the way the merge conflicts are resolved and the new document is inserted. The available properties are as follows:
 
@@ -19,7 +19,7 @@ Along with the [RadDocument]({%slug radrichtextbox-features-document-elements-ra
 	
 	* **RenameSourceStyle**: The style of the source document is renamed and used. E.g. if the target and source documents have a style with a name "MyStyle", but with different properties, the one from the source is renamed to "MyStyle\_1", added to the style repository of the target document and used by the merged from the source document elements. *This is the default value*.
 
-* **InsertLastParagraphMarker**: A Boolean property that determines whether the last paragraph marker is inserted and, subsequently, whether the last paragraph formatting is preserved. When the value is true, a new paragraph with the same formatting is inserted. Otherwise, only the inlines from that paragraph are inserted. *The default value is true*.
+* **InsertLastParagraphMarker**: A Boolean property that determines whether the last paragraph marker is inserted and, subsequently, whether the last paragraph formatting is preserved. When the value is **true**, a new paragraph with the same formatting is inserted. Otherwise, only the inlines from that paragraph are inserted. *The default value is **true***.
 
 #### **[C#] Example 3: Merge documents with InsertDocumentOptions**
 
@@ -96,7 +96,5 @@ There is another overload of InsertDocument() that takes only a [RadDocument]({%
 ## See Also
 
  * [RadDocumentMerger]({%slug radrichtextbox-features-merge-raddocumentmerger%})
-
  * [Append Document]({%slug radrichtextbox-features-merge-append-documents%})
-
  * [Using RadRichTextBox's formatting API ]({%slug radrichtextbox-features-formatting-api%})

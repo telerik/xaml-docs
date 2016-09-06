@@ -17,7 +17,7 @@ Along with the RadDocument instance, the overloads of the AppendDocument() metho
 
 	* **UseTargetStyle**: The style of the target document is used. E.g. if the target and source documents have a style with a name "MyStyle", but with different properties, the one from the target is used by the merged document and the one from the source document is not added to the style repository of the target document.
 	
-	* **RenameSourceStyle**: The style of the source document is renamed and used. E.g. if the target and source documents have a style with a name "MyStyle", but with different properties, the one from the source is renamed to "MyStyle\_1", added to the style repository of the target document and used by the merged from the source document elements. *This is the default value*.
+	* **RenameSourceStyle**: The style of the source document is renamed and used. E.g. if the target and source documents have a style with a name "MyStyle", but with different properties, the one from the source is renamed to "MyStyle\_1", added to the style repository of the target document and used by the elements merged from the source document. *This is the default value*.
 
 * **FirstSourceSectionPropertiesResolutionMode**: Determines whether the source document should be inserted in the target with a preceding SectionBreak, should the source section properties be omitted or preserved. **The value is used only for the first section of the source document**. The rest of the section elements and their properties remain unchanged. 
 

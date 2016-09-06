@@ -44,7 +44,7 @@ RadGridView's new **CanUserSelectColumns** property determines whether users can
 
 ![Selecting columns through the UI](images/gridview-columnselection.png)
 
->If you do not want to display the column selection button, you can use the new **ColumnsSelectionButtonVisibility** in order to hide it.
+>If you do not want to display the column selection button, you can use RadGridView's **ColumnsSelectionButtonVisibility** property in order to hide it.
 
 ## Select Columns Via a Column's IsSelected Property
 

@@ -853,6 +853,8 @@ navigation:
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":
         title: "Troubleshooting"
+    "styling-and-appearance/glyphs":
+        title: "Font Glyphs"
 ## Common End
 
 ## Api Reference Start

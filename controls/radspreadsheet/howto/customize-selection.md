@@ -14,14 +14,14 @@ RadSpreadsheet exposes several properties that allow you control the way the sel
 
 ## 
 
-* **SelectionStroke**: Gets or sets the stroke of the selection. This is a *dependency property* and it is of type *Brush*.
+* **SelectionStroke**: A *dependency property* of type *Brush* that gets or sets the stroke of the selection.
 
-* **SelectionStrokeThickness**: Gets or sets the stroke thickness of the selection. This is a *dependency property* and it is of type *double*.
+* **SelectionStrokeThickness**: A *dependency property* of type *double* that gets or sets the stroke thickness of the selection.
 
 * **SelectionFill**: Gets or sets the fill of the selection. This is a *dependency property* and it is of type *Brush*.
 
 
-* **FillHandleSelectionStroke**: Gets or sets the fill handle selection stroke. This is a *dependency property* and it is of type *Brush*.
+* **FillHandleSelectionStroke**: A *dependency property* of type *Brush* that gets or sets the fill handle selection stroke.
 
 **Figure 1** shows an example of a customized selection.
 
@@ -66,6 +66,6 @@ RadSpreadsheet exposes several properties that allow you control the way the sel
 {{endregion}}
 
 
-# See Also
+## See Also
 
  * [Customize Row and Column Headers]({%slug radspreadsheet-howto-customize-row-column-headers%})

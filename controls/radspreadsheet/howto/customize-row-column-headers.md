@@ -68,8 +68,7 @@ That's it. The column heading is changed.
 
 The headings of the rows and columns have different states. You can use these states to apply different styles of the items depending on whether they appear in a selection. This section will describe the possible states of the headings in RadSpreadsheet.
 
-
-* **HeadingState**: It is a property of the RowColumnHeadingBase type. It is an enum type and could have the following values:
+* **HeadingState**: A property of type RowColumnHeadingBase that gets or sets the heading state. It is an enum and it could have the following values:
 	* **Normal**: The heading is not included in any selection.
 	
 	* **Selected**: A cell from the row/column appears in a selection. 
@@ -77,7 +76,7 @@ The headings of the rows and columns have different states. You can use these st
 	* **FullySelected**: All the cells included in the row/column are selected. 
 
           
-* **SelectAllControlState**: This is a property of the SelectAllControl and determines whether this control is selected. It is an enum type and could have the following values:
+* **SelectAllControlState**: A property of the SelectAllControl which is of type SelectAllControlState. The property gets or sets a value indicating whether the control is selected. It is an enum and it could have the following values:
 	
 	* **Normal**: The control is not selected.
 	
@@ -90,7 +89,7 @@ The headings of the rows and columns have different states. You can use these st
 		#### **Figure 3: SelectAllControl in selected state**
 		![Rad Spreadsheet SelectAllControl - selected](images/RadSpreadsheet_HowTo_Customize_Row_and_Column_Headers_03.png)
 
-# See Also
+## See Also
 
  * [Hide Row and Column Headers and Gridlines]({%slug radspreadsheet-howto-hide-row-column-headers-and-gridlines%})
  * [Customize Selection]({%slug radspreadsheet-howto-customize-selection%})

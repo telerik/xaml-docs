@@ -214,7 +214,7 @@ The second one is to call the __Clear()__ method of the __SelectedItems__ collec
 
 ## Selecting Cell Regions
 
-As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows you to select specific region(s) of cells. Its overloads allow you to pass as a parameter either a single **CellRegion** instance or a collection of cell regions. The CellRegion class has a single constructor through which the following internal properties can be set:
+As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows you to select specific region(s) of cells. Its overloads allow you to pass as a parameter either a single **CellRegion** instance or a collection of cell regions. The CellRegion class has a single constructor through which you can set the following internal properties:
 
 * **Left**: The horizontal offset for the top-left cell.
 
@@ -269,7 +269,7 @@ As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows
 
 ## Deselecting cell regions
 
-Deselecting cell regions can be achieved analogically by using RadGridView's **UnselectCellRegion** method.
+You can deselect cell regions by using RadGridView's **UnselectCellRegion** method similarly to using [SelectCellRegion](#selecting-cell-regions).
 
 ## See Also
 

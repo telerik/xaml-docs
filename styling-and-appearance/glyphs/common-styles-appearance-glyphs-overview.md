@@ -58,10 +58,10 @@ Since this string carries no meaning for the glyph it relates to, we are providi
 
 #### __[XAML] Example 2: Setting a glyph__
 	<!-- Glyph string -->
-	<TextBlock Text=”&amp;#xe101;” /> 
+	<TextBlock Text="&#xe101;" /> 
 	
 	<!-- Meaningful reference name -->
-	<TextBlock Text=”{StaticResource GlyphRedo}” /> 
+	<TextBlock Text="{StaticResource GlyphRedo}" /> 
 
 Furthermore that allows inclusions to the __TelerikWebUI__ font as it is extended occasionally, sometimes shifting the numbers of some of the existing glyphs. The resource dictionary is updated and shipped with the font in the assembly with every change, without a need for changes in the already existing projects.
 

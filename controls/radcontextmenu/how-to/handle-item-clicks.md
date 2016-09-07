@@ -35,11 +35,11 @@ Here is an example of an event handler attached to the __Click__ event and how t
 {{region xaml-radcontextmenu-how-to-handle-item-clicks_0}}
 	<telerik:RadContextMenu>
 	    <telerik:RadMenuItem Header="Item 1"
-	                                   Click="RadMenuItem_Click" />
+	                         Click="RadMenuItem_Click" />
 	    <telerik:RadMenuItem Header="Item 2"
-	                                   Click="RadMenuItem_Click" />
+	                         Click="RadMenuItem_Click" />
 	    <telerik:RadMenuItem Header="Item 3"
-	                                   Click="RadMenuItem_Click" />
+	                         Click="RadMenuItem_Click" />
 	</telerik:RadContextMenu>
 {{endregion}}
 
@@ -57,8 +57,8 @@ Here is an example of an event handler attached to the __Click__ event and how t
 
 {{region vb-radcontextmenu-how-to-handle-item-clicks_2}}
 	Private Sub RadMenuItem_Click(sender As Object, e As RadRoutedEventArgs)
-	 Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
-	 'implement the logic regarding the instance here.
+	    Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
+	    'implement the logic regarding the instance here.
 	End Sub
 {{endregion}}
 
@@ -83,7 +83,7 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 #### __C#__
 
 {{region cs-radcontextmenu-how-to-handle-item-clicks_4}}
-	private void radContextMenu_ItemClick( object sender, RadRoutedEventArgs e )
+	private void radContextMenu_ItemClick(object sender, RadRoutedEventArgs e)
 	{
 	    RadMenuItem item = e.OriginalSource as RadMenuItem;
 	    //implement the logic regarding the instance here.
@@ -94,8 +94,8 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 
 {{region vb-radcontextmenu-how-to-handle-item-clicks_5}}
 	Private Sub radContextMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)
-	 Dim item As RadMenuItem = TryCast(e.OriginalSource, RadMenuItem)
-	 'implement the logic regarding the instance here.
+	    Dim item As RadMenuItem = TryCast(e.OriginalSource, RadMenuItem)
+	    'implement the logic regarding the instance here.
 	End Sub
 {{endregion}}
 

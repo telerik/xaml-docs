@@ -46,7 +46,7 @@ Here is an example:
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu x:Name="radContextMenu"
-	                                          Placement="Bottom">
+	                                Placement="Bottom">
 	            ...
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
@@ -64,13 +64,13 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 #### __XAML__
 
 {{region xaml-radcontextmenu-features-placement_1}}
-	<TextBox x:Name="InputBox"
-	         Width="200"
-	         VerticalAlignment="Top">
+	<TextBox x:Name="InputBox1"
+	 Width="200"
+	 VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu"
-	                                          Placement="Bottom"
-	                                          PlacementRectangle="0,0,100,100">
+	        <telerik:RadContextMenu x:Name="radContextMenu1"
+	                                Placement="Bottom"
+	                                PlacementRectangle="0,0,100,100">
 	            ...
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
@@ -88,7 +88,7 @@ The __PlacementTarget__ property is used when the __RadContextMenu__ should be d
 #### __C#__
 
 {{region cs-radcontextmenu-features-placement-01}}
-	public Example()
+	public Default_Cs()
 	{
 	    InitializeComponent();
 	    this.radContextMenu.PlacementTarget = this.InputBox;
@@ -131,11 +131,11 @@ Here is an example:
 #### __XAML__
 
 {{region xaml-radcontextmenu-features-placement_2}}
-	<TextBox x:Name="InputBox"
-	    Width="200"
-	    VerticalAlignment="Top">
+	<TextBox x:Name="InputBox2"
+	         Width="200"
+	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu">
+	        <telerik:RadContextMenu x:Name="radContextMenu2">
 	            ...
 	            <telerik:RadMenuItem Header="Sub Menu" DropDownPlacement="Right">
 	                <telerik:RadMenuItem Header="Item 1" />

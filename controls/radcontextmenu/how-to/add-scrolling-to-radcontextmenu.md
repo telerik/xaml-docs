@@ -28,7 +28,7 @@ Here's a simple code that shows how to use Height and DropDownHeight properties:
 
 {{region xaml-radcontextmenu-howto-scrolling_1}}
 	<telerik:RadContextMenu.ContextMenu>
-	    <telerik:RadContextMenu x:Name="ContextMenu" Height="200">
+	    <telerik:RadContextMenu x:Name="radContextMenu" Height="200">
 	        <telerik:RadMenuItem Header="Item 1" DropDownHeight="200">
 	            <telerik:RadMenuItem Header="Item 1.1"/>
 	            <telerik:RadMenuItem Header="Item 1.2"/>
@@ -37,7 +37,7 @@ Here's a simple code that shows how to use Height and DropDownHeight properties:
 	        <telerik:RadMenuItem Header="Item 2"/>
 	        <!--Define all items -->
 	    </telerik:RadContextMenu>
-	<telerik:RadContextMenu.ContextMenu>
+	</telerik:RadContextMenu.ContextMenu>
 {{endregion}}
 
 ## Scrolling in RadMenuGroupItem
@@ -47,11 +47,11 @@ If you are using __RadMenuGroupItem__ you can control scrolling inside it via Sc
 #### __XAML__
 
 {{region xaml-radcontextmenu-howto-scrolling_2}}
-	<telerik:RadContextMenu x:Name="ContextMenu">
-	        <telerik:RadMenuGroupItem Height="100" Width="150" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible">
-	            <telerik:RadColorSelector/>
-	        </telerik:RadMenuGroupItem>
-	    </telerik:RadContextMenu>
+	<telerik:RadContextMenu x:Name="ContextMenu1">
+	    <telerik:RadMenuGroupItem Height="100" Width="150" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible">
+	        <telerik:RadColorSelector/>
+	    </telerik:RadMenuGroupItem>
+	</telerik:RadContextMenu>
 	</telerik:RadContextMenu.ContextMenu>
 {{endregion}}
 

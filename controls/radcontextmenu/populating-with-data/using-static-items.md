@@ -18,8 +18,7 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 #### __XAML__
 
 {{region xaml-radcontextmenu-populating-with-data-using-static-items_0}}
-	<TextBox Width="200"
-	         VerticalAlignment="Top">
+	<TextBox Width="200" VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
 	
@@ -33,9 +32,8 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 #### __XAML__
 
 {{region xaml-radcontextmenu-populating-with-data-using-static-items_3}}
-	<TextBox Width="200"
-	         VerticalAlignment="Top"
-			 ContextMenu="{x:Null}">
+	<TextBox Width="200" VerticalAlignment="Top"
+	         ContextMenu="{x:Null}">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
 	
@@ -51,8 +49,7 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 #### __XAML__
 
 {{region xaml-radcontextmenu-populating-with-data-using-static-items_1}}
-	<TextBox Width="200"
-	         VerticalAlignment="Top">
+	<TextBox Width="200" VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
 	            <telerik:RadMenuItem Header="Copy" />
@@ -69,9 +66,7 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 #### __XAML__
 
 {{region xaml-radcontextmenu-populating-with-data-using-static-items_4}}
-	<TextBox Width="200"
-	         VerticalAlignment="Top"
-			 ContextMenu="{x:Null}">
+	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
 	            <telerik:RadMenuItem Header="Copy" />
@@ -97,26 +92,25 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 #### __XAML__
 
 {{region xaml-radcontextmenu-populating-with-data-using-static-items_2}}
-	<TextBox Width="200"
-	         VerticalAlignment="Top">
+	<TextBox Width="200" VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
 	            <telerik:RadMenuItem Header="Copy">
 	                <telerik:RadMenuItem.Icon>
 	                    <Image Source="/Images/copy.png"
-	                           Stretch="None" />
+	                   Stretch="None" />
 	                </telerik:RadMenuItem.Icon>
 	            </telerik:RadMenuItem>
 	            <telerik:RadMenuItem Header="Paste">
 	                <telerik:RadMenuItem.Icon>
 	                    <Image Source="/Images/paste.png"
-	                           Stretch="None" />
+	                   Stretch="None" />
 	                </telerik:RadMenuItem.Icon>
 	            </telerik:RadMenuItem>
 	            <telerik:RadMenuItem Header="Cut">
 	                <telerik:RadMenuItem.Icon>
 	                    <Image Source="/Images/cut.png"
-	                           Stretch="None" />
+	                   Stretch="None" />
 	                </telerik:RadMenuItem.Icon>
 	            </telerik:RadMenuItem>
 	            <telerik:RadMenuItem IsSeparator="True" />
@@ -131,27 +125,25 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 #### __XAML__
 
 {{region xaml-radcontextmenu-populating-with-data-using-static-items_5}}
-	<TextBox Width="200"
-	         VerticalAlignment="Top"
-			 ContextMenu="{x:Null}">
+	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
 	            <telerik:RadMenuItem Header="Copy">
 	                <telerik:RadMenuItem.Icon>
 	                    <Image Source="/Images/copy.png"
-	                           Stretch="None" />
+	                   Stretch="None" />
 	                </telerik:RadMenuItem.Icon>
 	            </telerik:RadMenuItem>
 	            <telerik:RadMenuItem Header="Paste">
 	                <telerik:RadMenuItem.Icon>
 	                    <Image Source="/Images/paste.png"
-	                           Stretch="None" />
+	                   Stretch="None" />
 	                </telerik:RadMenuItem.Icon>
 	            </telerik:RadMenuItem>
 	            <telerik:RadMenuItem Header="Cut">
 	                <telerik:RadMenuItem.Icon>
 	                    <Image Source="/Images/cut.png"
-	                           Stretch="None" />
+	                   Stretch="None" />
 	                </telerik:RadMenuItem.Icon>
 	            </telerik:RadMenuItem>
 	            <telerik:RadMenuItem IsSeparator="True" />

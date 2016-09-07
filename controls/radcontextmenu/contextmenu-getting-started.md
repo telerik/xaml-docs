@@ -37,12 +37,7 @@ In order to add a __RadContextMenu__ control to your __UserControl__ you have to
 #### __XAML__
 
 {{region xaml-contextmenu-getting-started_0}}
-	<UserControl ...
-	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid x:Name="LayoutRoot">
-	
-	    </Grid>
-	</UserControl>
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 {{endregion}}
 
 This tutorial will show you how to attach a __RadContextMenu__ to a TextBox control. Here is the TextBox control definition.
@@ -67,11 +62,10 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 #### __XAML__
 
 {{region xaml-contextmenu-getting-started_2}}
-	<Grid x:Name="LayoutRoot"
-	      Background="White">
+	<Grid Background="White">
 	    <TextBox Width="200"
 	             VerticalAlignment="Top"
-				 ContextMenu="{x:Null}">
+	             ContextMenu="{x:Null}">
 	        <telerik:RadContextMenu.ContextMenu>
 	            <telerik:RadContextMenu />
 	        </telerik:RadContextMenu.ContextMenu>
@@ -84,15 +78,19 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 #### __XAML__
 
 {{region xaml-contextmenu-getting-started_3}}
-	<Grid x:Name="LayoutRoot"
-	      Background="White">
-	    <TextBox Width="200"
-	             VerticalAlignment="Top">
-	        <telerik:RadContextMenu.ContextMenu>
-	            <telerik:RadContextMenu />
-	        </telerik:RadContextMenu.ContextMenu>
-	    </TextBox>
-	</Grid>
+	<TextBox Width="200"
+	         VerticalAlignment="Top"
+	         ContextMenu="{x:Null}">
+	    <telerik:RadContextMenu.ContextMenu>
+	        <telerik:RadContextMenu>
+	            <telerik:RadMenuItem Header="Copy" />
+	            <telerik:RadMenuItem Header="Paste" />
+	            <telerik:RadMenuItem Header="Cut" />
+	            <telerik:RadMenuItem IsSeparator="True" />
+	            <telerik:RadMenuItem Header="Select All" />
+	        </telerik:RadContextMenu>
+	    </telerik:RadContextMenu.ContextMenu>
+	</TextBox>
 {{endregion}}
 {% endif %}
 
@@ -114,12 +112,12 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
-	                <telerik:RadMenuItem Header="Copy" />
-	                <telerik:RadMenuItem Header="Paste" />
-	                <telerik:RadMenuItem Header="Cut" />
-	                <telerik:RadMenuItem IsSeparator="True" />
-	                <telerik:RadMenuItem Header="Select All" />
-	            </telerik:RadContextMenu>
+	            <telerik:RadMenuItem Header="Copy" />
+	            <telerik:RadMenuItem Header="Paste" />
+	            <telerik:RadMenuItem Header="Cut" />
+	            <telerik:RadMenuItem IsSeparator="True" />
+	            <telerik:RadMenuItem Header="Select All" />
+	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
 {{endregion}}
@@ -129,15 +127,17 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 #### __XAML__
 
 {{region xaml-contextmenu-getting-started_3}}
-	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
+	<TextBox Width="200"
+	         VerticalAlignment="Top"
+	         ContextMenu="{x:Null}">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
-	                <telerik:RadMenuItem Header="Copy" />
-	                <telerik:RadMenuItem Header="Paste" />
-	                <telerik:RadMenuItem Header="Cut" />
-	                <telerik:RadMenuItem IsSeparator="True" />
-	                <telerik:RadMenuItem Header="Select All" />
-	            </telerik:RadContextMenu>
+	            <telerik:RadMenuItem Header="Copy" />
+	            <telerik:RadMenuItem Header="Paste" />
+	            <telerik:RadMenuItem Header="Cut" />
+	            <telerik:RadMenuItem IsSeparator="True" />
+	            <telerik:RadMenuItem Header="Select All" />
+	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
 {{endregion}}

@@ -39,7 +39,7 @@ In order to attach a __RadContextMenu__ to a control, you have to set the instan
 #### __C#__
 
 {{region cs-radcontextmenu-features-working-with-radcontext-menu_1}}
-	public Example()
+	public Default_Cs()
 	{
 	    InitializeComponent();
 	    RadContextMenu radContextMenu = new RadContextMenu();
@@ -51,9 +51,9 @@ In order to attach a __RadContextMenu__ to a control, you have to set the instan
 
 {{region vb-radcontextmenu-features-working-with-radcontext-menu_2}}
 	Public Sub New()
-	 InitializeComponent()
-	 Dim radContextMenu As New RadContextMenu()
-	 RadContextMenu.SetContextMenu(Me.textBox, radContextMenu)
+	    InitializeComponent()
+	    Dim radContextMenu As New RadContextMenu()
+	    radContextMenu.SetContextMenu(Me.textBox, radContextMenu)
 	End Sub
 {{endregion}}
 
@@ -68,15 +68,15 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 #### __XAML__
 
 {{region xaml-radcontextmenu-features-working-with-radcontext-menu_3}}
-	<TextBox x:Name="textBox"
+	<TextBox x:Name="textBox1"
 	         Width="200"
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
-	                <telerik:RadMenuItem Header="Copy" />
-	                <telerik:RadMenuItem Header="Paste" />
-	                <telerik:RadMenuItem Header="Cut" />
-	         </telerik:RadContextMenu>
+	            <telerik:RadMenuItem Header="Copy" />
+	            <telerik:RadMenuItem Header="Paste" />
+	            <telerik:RadMenuItem Header="Cut" />
+	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
 {{endregion}}
@@ -84,7 +84,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 #### __C#__
 
 {{region cs-radcontextmenu-features-working-with-radcontext-menu_4}}
-	public Example()
+	public Default_Cs()
 	{
 	    InitializeComponent();
 	    RadContextMenu radContextMenu = new RadContextMenu();
@@ -106,18 +106,18 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 
 {{region vb-radcontextmenu-features-working-with-radcontext-menu_5}}
 	Public Sub New()
-	 InitializeComponent()
-	 Dim radContextMenu As New RadContextMenu()
-	 Dim copyItem As New RadMenuItem()
-	 copyItem.Header = "Copy"
-	 radContextMenu.Items.Add(copyItem)
-	 Dim pasteItem As New RadMenuItem()
-	 pasteItem.Header = "Paste"
-	 radContextMenu.Items.Add(pasteItem)
-	 Dim cutItem As New RadMenuItem()
-	 cutItem.Header = "Cut"
-	 radContextMenu.Items.Add(cutItem)
-	 RadContextMenu.SetContextMenu(Me.textBox, radContextMenu)
+	    InitializeComponent()
+	    Dim radContextMenu As New RadContextMenu()
+	    Dim copyItem As New RadMenuItem()
+	    copyItem.Header = "Copy"
+	    radContextMenu.Items.Add(copyItem)
+	    Dim pasteItem As New RadMenuItem()
+	    pasteItem.Header = "Paste"
+	    radContextMenu.Items.Add(pasteItem)
+	    Dim cutItem As New RadMenuItem()
+	    cutItem.Header = "Cut"
+	    radContextMenu.Items.Add(cutItem)
+	    radContextMenu.SetContextMenu(Me.textBox, radContextMenu)
 	End Sub
 {{endregion}}
 

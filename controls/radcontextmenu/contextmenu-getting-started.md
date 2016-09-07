@@ -83,7 +83,7 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region xaml-contextmenu-getting-started_2_1}}
+{{region xaml-contextmenu-getting-started_3}}
 	<Grid x:Name="LayoutRoot"
 	      Background="White">
 	    <TextBox Width="200"
@@ -109,7 +109,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region xaml-contextmenu-getting-started_3_1}}
+{{region xaml-contextmenu-getting-started_5}}
 	<TextBox Width="200"
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>

@@ -11,7 +11,7 @@ glyphs_refence_sheet: True
 
 # Glyphs Reference Sheet
 
-This article list all available glyphs from the TelerikWebUI font along with their names, number and string values. For more information more about glyphs, see the [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) help article. 
+This article lists all available glyphs from the TelerikWebUI font along with their names, number and string values. For more information about the glyphs, see the [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) help article. 
 
 |Glyph|Glyph Name|Glyph number|Glyph string value|
 |---|---|---|---|

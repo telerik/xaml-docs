@@ -56,7 +56,7 @@ Below you can find more details about each brush and where it is usually applied
 
 * __MainBrush__: This brush is white by default and it is mainly used as background of the controls.
 * __MarkerBrush__: This brush is dark by default and it is used as foregound color. 
-* __MarkerInvertedBrush__: This brush is light color by default and it is mostly used as foreground color while you interact with the control. If the control has accent interaction states, we apply the brush for better contrast.
+* __MarkerInvertedBrush__: This brush is a light color by default and it is mostly used as foreground color while you interact with the control. If the control has accent interaction states, we apply the brush for better contrast.
 
 The __Office2016__ palette provides both accent and non-accent brushes for the different interaction states. 
 
@@ -76,8 +76,16 @@ The __non-accent brushes__ are different shades of grey by default and are used 
 
 There are several brushes used as background color other than the MainBrush.
 
+* __PrimaryBrush__: This brush is used as a background of the input controls in disabled state.
+* __AlternativeBrush__: This brush is used as an alternative background – i.e. for popups or if we want to distinguish one element from another and for more complex controls – RadRichTextBox, RadImageEditor, RadTabControlItem. 
+* __ComplementaryBrush__: This is used for background of components in more complex controls or their states. For example in RadOutlookBar, RadPanelBar, RadTreeView.
+
+There are two read-only brushes in the Office2016 palette:
+
 * __ReadOnlyBackgroundBrush__: This brush is white by default and it is used as a background brush of the controls while in read-only state.
 * __ReadOnlyBorderBrush__: This brush is light gray by default and it is used as a border brush of the controls while in read-only state.
+
+<!-- -->
 * __BasicBrush__: This brush is grey and it is used as the default border brush of the controls while in normal state.
 * __IconBrush__: This brush is black by default and it is used for glyphs and paths.
 
@@ -183,19 +191,23 @@ __Example 8__ shows how to change the default corner radius from 0 to 2.
 
 ## ReadOnlyBackgroundBrush and ReadOnlyBorderBrush
 
-In the Office2016 theme there are two brushes that define Background and BorderBrush for the read-only states of RadMaskedInput and TextBox. The default colors are __#FFFFFFFF__ for __ReadOnlyBackgroundBrush__ and __#FFABABAB__ for __ReadOnlyBorderBrush__.
+You can now easily change the read-only background and border brush of all text input controls (Syste.Windows.TextBox, RadDateTimePicker, RadMaskedInput and RadWatermarkTextBox) using the __ReadOnlyBackgroundColor__ and __ReadOnlyBorderColor__ properties of __Office2016Palette__.
+
+#### __[C#] Example 9: Setting the read-only colors__
+	Office2016Palette.Palette.ReadOnlyBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFBDD");
+	Office2016Palette.Palette.ReadOnlyBorderColor = (Color)ColorConverter.ConvertFromString("#5F5F5F");
 
 ## Changing DisabledOpacity
 
 If you need to change the opacity of disabled elements, you can easily do it via the __DisabledOpacity__ property of __Office2016Palette__. The default value of the property is 0.5.
 
-#### __[C#] Example 9: Setting the disabled opacity__
+#### __[C#] Example 10: Setting the disabled opacity__
 	Office2016Palette.Palette.DisabledOpacity = 0.3;
 
 #### __Figure 6: Setting the disabled opacity__
 ![](images/common-styling-appearance-office2016-theme-5.png)	
 
-# See Also
+## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
  * [Office2013 Theme]({%slug common-styling-appearance-office2013-theme%})
  * [VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})

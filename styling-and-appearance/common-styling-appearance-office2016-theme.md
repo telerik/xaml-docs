@@ -54,29 +54,29 @@ The Office2016 has one color variation, but it is designed to be easily modified
 
 Below you can find more details about each brush and where it is usually applied.
 
-* __MainBrush__: This brush is white by default and it is used for the backgrounds of the controls.
-* __MarkerBrush__: This brush is black by default and it is used for the foregounds. 
-* __MarkerInvertedBrush__: This brush is white by default and it is used for the foregrounds while you interact with the control. If the control has accent interactions states, the brush used in the changing states.
+* __MainBrush__: This brush is white by default and it is mainly used as background of the controls.
+* __MarkerBrush__: This brush is dark by default and it is used as foregound color. 
+* __MarkerInvertedBrush__: This brush is light color by default and it is mostly used as foreground color while you interact with the control. If the control has accent interaction states, we apply the brush for better contrast.
 
 The __Office2016__ palette provides both accent and non-accent brushes for the different interaction states. 
 
-The __accent brushes__ are by default deep blue background brushes and are used to highlight input and interaction elements - e.g. buttons.
+The __accent brushes__ are by default deep blue brushes and are used to highlight input and interaction elements - e.g. buttons.
 
 * __AccentBrush__: This is the main accent brush and it is used mainly for headers and interaction feedback.
-* __AccentMouseOverBrush__: This brush is brighter blue which is the color applied to the controls with accent-colored states while in mouse over state.
-* __AccentPressedBrush__: This is the darkest blue and it is used for the pressed states of the controls.
+* __AccentMouseOverBrush__: This brush is brighter shade of blue and it is used for controls in accent-colored mouse over state.
+* __AccentPressedBrush__: This is the darkest shade of blue and it is used for controls in accent-colored pressed state.
 
-The __non-accent brushes__ are different shades of grey by default and are used for interaction feedback in secondary input or navigation elements and other components which do not need accent – e.g. RadListBox, buttons in RadRibbonView.
+The __non-accent brushes__ are different shades of grey by default and are used for interaction feedback in secondary input or navigation elements and other components which do not need accenting – e.g. RadListBox, buttons in RadRibbonView.
 
 * __MouseOverBrush__: This is the non-accent brush for the background of the control while in mouse over state.
 * __PressedBrush__: This is the non-accent brush for the background of the control while in pressed state.
-* __SelectedBrush__: This is the non-accent brush for the background of the control while in pressed state.
+* __SelectedBrush__: This is the non-accent brush for the background of the control while in selected state.
 * __AccentFocusedBrush__: This brush is light blue and it's the default brush for the focused visual and rarely for any other interaction.
 * __ValidatonBrush__: This brush is red by default and it is used for failed validation where such is applicable in our controls.
 
 There are several brushes used as background color other than the MainBrush.
 
-* __ReadOnlyBackgroundBrush__: This brush white by default and it is used as a background brush of the controls while in read-only state.
+* __ReadOnlyBackgroundBrush__: This brush is white by default and it is used as a background brush of the controls while in read-only state.
 * __ReadOnlyBorderBrush__: This brush is light gray by default and it is used as a border brush of the controls while in read-only state.
 * __BasicBrush__: This brush is grey and it is used as the default border brush of the controls while in normal state.
 * __IconBrush__: This brush is black by default and it is used for glyphs and paths.
@@ -120,7 +120,7 @@ The __Examples 2 and 3__ shows how to change the default FontFamily from "Segoe 
 
 ## Glyphs
 
-With Office2016 theme we are introducing a new approach to add icons and icon-like images. Instead of images or paths we are using a font of glyphs by default. The __TelerikWebUI__ font provides over 400 scalable vector glyphs that are available for use to our clients. We have chosen this approach to the icons in this theme because it provides a number of advantages and benefits.
+With Office2016 theme we are introducing a new approach to add icons and icon-like images. Instead of images or paths we are using a font of glyphs by default. The __TelerikWebUI__ font provides over 400 scalable vector glyphs that are available for use to our clients. We have chosen this approach to icons in this theme because it provides a number of advantages and benefits.
 * The glyphs are vector paths which are easily scalable without loss of quality.
 
 * There is a wide range of different beautiful built-in glyphs to choose from.

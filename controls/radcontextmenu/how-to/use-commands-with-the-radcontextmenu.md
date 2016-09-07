@@ -32,7 +32,7 @@ Before getting to the commands, you have to prepare the UI on which they will ge
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_0}}
+{{region xaml-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_0}}
 	<ListBox x:Name="listBox">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu x:Name="radContextMenu">
@@ -49,7 +49,7 @@ As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for y
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_1}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_1}}
 	public class ExampleViewModel : INotifyPropertyChanged
 	{
 	    private DataItem selectedItem;
@@ -98,7 +98,7 @@ As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for y
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_2}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_2}}
 	Public Class ExampleViewModel
 	 Implements INotifyPropertyChanged
 	 Private selectedItem As DataItem
@@ -142,7 +142,7 @@ In the constructor of the __UserControl__ you have to create an instance of the 
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_3}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_3}}
 	private ExampleViewModel viewModel;
 	public CommandsSample()
 	{
@@ -154,7 +154,7 @@ In the constructor of the __UserControl__ you have to create an instance of the 
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_4}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_4}}
 	Private viewModel As ExampleViewModel
 	Public Sub New()
 	 InitializeComponent()
@@ -167,7 +167,7 @@ In the XAML you have to set the __SelectedItem__, the __DisplayMemberPath__ and 
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_5}}
+{{region xaml-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_5}}
 	<ListBox x:Name="listBox"
 	         DisplayMemberPath="Value"
 	         ItemsSource="{Binding Items}"
@@ -185,7 +185,7 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_6}}
+{{region xaml-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_6}}
 	<ListBox x:Name="listBox"
 	         DisplayMemberPath="Value"
 	         ItemsSource="{Binding Items}"
@@ -201,7 +201,7 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_7}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_7}}
 	private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
 	{
 	    System.Windows.Controls.ListBoxItem item = this.radContextMenu.GetClickedElement<System.Windows.Controls.ListBoxItem>();
@@ -218,7 +218,7 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_8}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_8}}
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	 Dim item As System.Windows.Controls.ListBoxItem = Me.radContextMenu.GetClickedElement(Of System.Windows.Controls.ListBoxItem)()
 	 If item <> Nothing Then
@@ -235,7 +235,7 @@ The next step is to create your commands. They will be host by the __ViewModel__
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_9}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_9}}
 	public RoutedUICommand MoveUpCommand
 	{
 	    get;
@@ -250,7 +250,7 @@ The next step is to create your commands. They will be host by the __ViewModel__
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_10}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_10}}
 	Public Property MoveUpCommand() As RoutedUICommand
 	 Get
 	 End Get
@@ -269,7 +269,7 @@ Initialize them in the constructor of the __ViewModel__:
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_11}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_11}}
 	public ExampleViewModel()
 	{
 	    this.MoveUpCommand = new RoutedUICommand( "Move Up", "MoveUp", typeof( ExampleViewModel ) );
@@ -280,7 +280,7 @@ Initialize them in the constructor of the __ViewModel__:
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_12}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_12}}
 	Public Sub New()
 	 Me.MoveUpCommand = New RoutedUICommand("Move Up", "MoveUp", GetType(ExampleViewModel))
 	 Me.MoveDownCommand = New RoutedUICommand("Move Down", "MoveDown", GetType(ExampleViewModel))
@@ -293,7 +293,7 @@ Bind them in the __View__.
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_13}}
+{{region xaml-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_13}}
 	<ListBox x:Name="listBox"
 	         DisplayMemberPath="Value"
 	         ItemsSource="{Binding Items}"
@@ -314,7 +314,7 @@ You will also need methods that will get called when the command is executed. In
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_14}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_14}}
 	public void MoveUp( object sender, ExecutedRoutedEventArgs e )
 	{
 	    if ( this.SelectedItem == null || this.Items.IndexOf( this.SelectedItem as DataItem ) == 0 )
@@ -343,7 +343,7 @@ You will also need methods that will get called when the command is executed. In
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_15}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_15}}
 	Public Sub MoveUp(sender As Object, e As ExecutedRoutedEventArgs)
 	 If Me.SelectedItem = Nothing OrElse Me.Items.IndexOf(TryCast(Me.SelectedItem, DataItem)) = 0 Then
 	  Return
@@ -373,7 +373,7 @@ In order to use the commands in the UI you have to provide a __CommandBinding__ 
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_16}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_16}}
 	public CommandBindingCollection GetCommandBindings()
 	{
 	    CommandBindingCollection bindings = new CommandBindingCollection();
@@ -385,7 +385,7 @@ In order to use the commands in the UI you have to provide a __CommandBinding__ 
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_17}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_17}}
 	Public Function GetCommandBindings() As CommandBindingCollection
 	 Dim bindings As New CommandBindingCollection()
 	 bindings.Add(New CommandBinding(Me.MoveUpCommand, Me.MoveUp))
@@ -401,7 +401,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 {% if site.site_name == 'Silverlight' %}
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_18}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_18}}
 	public CommandsSample()
 	{
 	    InitializeComponent();
@@ -413,7 +413,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_19}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_19}}
 	Public Sub New()
 	 InitializeComponent()
 	 Me.viewModel = New ExampleViewModel()
@@ -426,7 +426,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 {% if site.site_name == 'WPF' %}
 #### __C#__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_20}}
+{{region cs-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_20}}
 	public CommandsSample()
 	{
 	    InitializeComponent();
@@ -443,7 +443,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-commands-with-the-radcontextmenu_21}}
+{{region vb-radcontextmenu-how-to-use-commands-with-the-radcontextmenu_21}}
 	Public Sub New()
 		InitializeComponent()
 		Me.viewModel = New ExampleViewModel()

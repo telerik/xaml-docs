@@ -28,7 +28,7 @@ Here is an example of a __RadContextMenu__ that requires the Control button to b
 
 #### __XAML__
 
-{{region radcontextmenu-key-modifiers_0}}
+{{region xaml-radcontextmenu-key-modifiers_0}}
 	<TextBox Width="200"
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>

@@ -25,7 +25,7 @@ In order to attach a __RadContextMenu__ to a control, you have to set the instan
 
 #### __XAML__
 
-{{region radcontextmenu-features-working-with-radcontext-menu_0}}
+{{region xaml-radcontextmenu-features-working-with-radcontext-menu_0}}
 	<TextBox x:Name="textBox"
 	         Width="200"
 	         VerticalAlignment="Top">
@@ -38,7 +38,7 @@ In order to attach a __RadContextMenu__ to a control, you have to set the instan
 
 #### __C#__
 
-{{region radcontextmenu-features-working-with-radcontext-menu_1}}
+{{region cs-radcontextmenu-features-working-with-radcontext-menu_1}}
 	public Example()
 	{
 	    InitializeComponent();
@@ -49,7 +49,7 @@ In order to attach a __RadContextMenu__ to a control, you have to set the instan
 
 #### __VB.NET__
 
-{{region radcontextmenu-features-working-with-radcontext-menu_2}}
+{{region vb-radcontextmenu-features-working-with-radcontext-menu_2}}
 	Public Sub New()
 	 InitializeComponent()
 	 Dim radContextMenu As New RadContextMenu()
@@ -67,7 +67,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 
 #### __XAML__
 
-{{region radcontextmenu-features-working-with-radcontext-menu_3}}
+{{region xaml-radcontextmenu-features-working-with-radcontext-menu_3}}
 	<TextBox x:Name="textBox"
 	         Width="200"
 	         VerticalAlignment="Top">
@@ -83,7 +83,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 
 #### __C#__
 
-{{region radcontextmenu-features-working-with-radcontext-menu_4}}
+{{region cs-radcontextmenu-features-working-with-radcontext-menu_4}}
 	public Example()
 	{
 	    InitializeComponent();
@@ -104,7 +104,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 
 #### __VB.NET__
 
-{{region radcontextmenu-features-working-with-radcontext-menu_5}}
+{{region vb-radcontextmenu-features-working-with-radcontext-menu_5}}
 	Public Sub New()
 	 InitializeComponent()
 	 Dim radContextMenu As New RadContextMenu()
@@ -129,13 +129,13 @@ For example, if you have a __RadTreeView__ with a __RadContextMenu__ attached, a
 
 #### __C#__
 
-{{region radcontextmenu-features-working-with-radcontext-menu_6}}
+{{region cs-radcontextmenu-features-working-with-radcontext-menu_6}}
 	RadTreeViewItem item = radContextMenu.GetClickedElement<RadTreeViewItem>();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radcontextmenu-features-working-with-radcontext-menu_7}}
+{{region vb-radcontextmenu-features-working-with-radcontext-menu_7}}
 	Dim item As RadTreeViewItem = radContextMenu.GetClickedElement(Of RadTreeViewItem)()
 {{endregion}}
 

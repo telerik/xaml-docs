@@ -40,7 +40,7 @@ Here is an example:
 
 #### __XAML__
 
-{{region radcontextmenu-features-placement_0}}
+{{region xaml-radcontextmenu-features-placement_0}}
 	<TextBox x:Name="InputBox"
 	         Width="200"
 	         VerticalAlignment="Top">
@@ -63,7 +63,7 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 
 #### __XAML__
 
-{{region radcontextmenu-features-placement_1}}
+{{region xaml-radcontextmenu-features-placement_1}}
 	<TextBox x:Name="InputBox"
 	         Width="200"
 	         VerticalAlignment="Top">
@@ -87,7 +87,7 @@ The __PlacementTarget__ property is used when the __RadContextMenu__ should be d
 
 #### __C#__
 
-{{region radcontextmenu-features-placement-01}}
+{{region cs-radcontextmenu-features-placement-01}}
 	public Example()
 	{
 	    InitializeComponent();
@@ -130,7 +130,7 @@ Here is an example:
 
 #### __XAML__
 
-{{region radcontextmenu-features-placement_2}}
+{{region xaml-radcontextmenu-features-placement_2}}
 	<TextBox x:Name="InputBox"
 	    Width="200"
 	    VerticalAlignment="Top">

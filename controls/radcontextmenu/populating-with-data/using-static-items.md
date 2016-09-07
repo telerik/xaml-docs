@@ -17,7 +17,7 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region radcontextmenu-populating-with-data-using-static-items_0}}
+{{region xaml-radcontextmenu-populating-with-data-using-static-items_0}}
 	<TextBox Width="200"
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
@@ -32,7 +32,7 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 {% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region radcontextmenu-populating-with-data-using-static-items_0_1}}
+{{region xaml-radcontextmenu-populating-with-data-using-static-items_0_1}}
 	<TextBox Width="200"
 	         VerticalAlignment="Top"
 			 ContextMenu="{x:Null}">
@@ -50,7 +50,7 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region radcontextmenu-populating-with-data-using-static-items_1}}
+{{region xaml-radcontextmenu-populating-with-data-using-static-items_1}}
 	<TextBox Width="200"
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
@@ -68,7 +68,7 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 {% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region radcontextmenu-populating-with-data-using-static-items_1_1}}
+{{region xaml-radcontextmenu-populating-with-data-using-static-items_1_1}}
 	<TextBox Width="200"
 	         VerticalAlignment="Top"
 			 ContextMenu="{x:Null}">
@@ -96,7 +96,7 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region radcontextmenu-populating-with-data-using-static-items_2}}
+{{region xaml-radcontextmenu-populating-with-data-using-static-items_2}}
 	<TextBox Width="200"
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
@@ -130,7 +130,7 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 {% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region radcontextmenu-populating-with-data-using-static-items_2_1}}
+{{region xaml-radcontextmenu-populating-with-data-using-static-items_2_1}}
 	<TextBox Width="200"
 	         VerticalAlignment="Top"
 			 ContextMenu="{x:Null}">

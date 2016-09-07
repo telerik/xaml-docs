@@ -20,7 +20,7 @@ Here is the final code snippet.
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-create-menu-button-with-radcontextmenu-and-togglebutton_0}}
+{{region xaml-radcontextmenu-how-to-create-menu-button-with-radcontextmenu-and-togglebutton_0}}
 	<ToggleButton Content="Click me"
 	              HorizontalAlignment="Left"
 	              IsChecked="{Binding IsOpen, ElementName=radContextMenu, Mode=TwoWay}">

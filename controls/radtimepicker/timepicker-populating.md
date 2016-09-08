@@ -28,7 +28,7 @@ The __SelectedTime__ property holds the selected time.
 
 #### __C#__
 
-{{region radtimepicker-timepicker-populating_0}}
+{{region cs-radtimepicker-timepicker-populating_0}}
 	timePicker.SelectedTime = new TimeSpan(3,0,0);
 {{endregion}}
 
@@ -38,29 +38,29 @@ You can limit the times that can be selected by setting the __StartTime__ and __
 
 #### __XAML__
 
-{{region radtimepicker-timepicker-populating_1}}
-	<telerik:RadTimePicker TimeInterval="0:30:0" StartTime="0:0:0" EndTime="7:0:0" />
+{{region xaml-radtimepicker-timepicker-populating_1}}
+	<telerik:RadTimePicker x:Name="timePicker" TimeInterval="0:30:0" StartTime="0:0:0" EndTime="7:0:0" />
 {{endregion}}
 
 The following example demonstrate how to bind RadTimePicker to observable collection from TimeSpan objects.
 
 #### __C#__
 
-{{region radtimepicker-timepicker-populating_2}}
+{{region cs-radtimepicker-timepicker-populating_2}}
 	public DataBinding()
 	{
-		this.radTimePicker.ClockItemSource = this.LoadDataObjects(); 
+	    this.radTimePicker.ClockItemsSource = this.LoadDataObjects();
 	}
 	public ObservableCollection<TimeSpan> LoadDataObjects()
 	{
-		ObservableCollection<TimeSpan> times = new ObservableCollection<TimeSpan>()
-		{ 
-		   new TimeSpan(9,0,0),
-		   new TimeSpan(10,0,0),
-		   new TimeSpan(10,5,0),
-		   new TimeSpan(10,22,0),
-		};
-		return times;
+	    ObservableCollection<TimeSpan> times = new ObservableCollection<TimeSpan>()
+	    { 
+	       new TimeSpan(9,0,0),
+	       new TimeSpan(10,0,0),
+	       new TimeSpan(10,5,0),
+	       new TimeSpan(10,22,0),
+	    };
+	    return times;
 	}
 {{endregion}}
 

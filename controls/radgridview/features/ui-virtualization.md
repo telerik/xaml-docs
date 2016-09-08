@@ -10,47 +10,22 @@ position: 13
 
 # UI Virtualization
 
-__RadGridView's API__ supports __UI Virtualization__, which processes only information that is loaded in viewable area. This reduces the memory footprint of the application and speeds up the loading time thus additionally enhancing the UI performance. 
+__RadGridView's API__ supports __UI Virtualization__ which processes only these visual elements that are loaded in its viewable area. This reduces the memory footprint of the application and speeds up the loading time, thus immensely enhancing the **UI performance**. 
 
-The grid utilizes horizontal and vertical virtualization and introduces container recycling for a further improvement of speed and memory footprint. This is of great importance when the control is bound to large data sets. The __UI virtualization__ technique ensures only the containers (rows/cells) which are shown in the viewport will be created. The container recycling pushes further the speed of scrolling __horizontally__ and __vertically__. This feature enables RadGridView to reuse the existing containers over and over again for different data items, instead of creating new ones.
+The grid control utilizes **horizontal** and **vertical** virtualization and introduces container recycling for speed improvement and reduction in memory usage. This is of great importance when the control is bound to large data sets. The container recycling pushes further the speed of horizontal and vertical scrolling, allowing **RadGridView** to reuse the existing containers for the different data items from the source collection instead of creating new ones.
+
+>important You should **not work** with the visual elements of **RadGridView**(GridViewCell, GridViewRow, etc.) directly as this will result in inconsistent behavior due to the containers recycling mechanism. Instead, you should use the underlying data items as explained in the [Style Selectors]({%slug gridview-style-selectors-overview%}) section.
 
 These techniques, combined with the outstanding LINQ-based data engine, guarantee fast performance.
         
->tipThe standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of user interface (UI) elements are generated from a larger number of data items based on which items are visible on-screen. Generating many UI elements when only a few elements might be on the screen can adversely affect the performance of your application.
+>tip Both **EnableColumnVirtualization** and **EnableRowVirtualization** properties of **RadGridView** are set to **True** by default.     
 
->When column virtualization is enabled, only those cells that are visible in the view port are initialized. When the view port or scroll position changes, these cells are reused to represent the new visible cells.
-On the other hand, when EnableColumnVirtualization is False, all of the needed cell are initialized. The default internal behavior ensures that only the visible ones are measured.
-        
->tipBy default they are both set to True.     
+>In case the **UI Virtualization** is disabled, then all the visual elements will be loaded once **RadGridView** is visualized and its items are populated. This can lead to huge performance issues and additional loading time. Disabling the virtualization is **highly** not recommended.
+
+>important **Do not** place RadGridView in controls/panels which will measure it with infinity as this will disable the **UI Virtualization**. For example, __ScrollViewer__, __StackPanel__ and __Grid__ with __Row.Height=Auto__ or __Column.Width=Auto__ will measure it in that way. You can place it in RowDefinition with Height="*" instead. 
 
 You can check the topic on [Styling or content mixed-up on scrolling]({%slug gridview-troubleshooting-style-disappears-scrolling%}) on some issues with styling the visual elements.
         
->In case UI Virtualization is disabled, then all the visual elements will be loaded once RadGridView is visualized and its items are populated. Otherwise only the visible items will be populated.
-
->importantTry not to place RadGridView in controls/panels which will measure it with infinity. For example, __ScrollViewer__, __StackPanel__ and __Grid__ with __Row.Height=Auto__ or __Column.Width=Auto__ will measure it in that way. You can place it in RowDefinition with Height="*" instead. 
-
-## Disable Column Virtualization
-
-In order to disable UI __Column Virtualization__ behavior, you should configure __EnableColumnVirtualization__ property to __False__. See the example below:
-
-#### __XAML__
-
-{{region radgridview-features-ui-virtualization_3}}
-	<telerik:RadGridView x:Name="radGridView" EnableColumnVirtualization="False"/>
-{{endregion}}
-
-
-## Disable Row Virtualization
-
-In order to disable UI __Row Virtualization__ behavior, you should configure __EnableRowVirtualization__ property to __False__. See the example below:
-
-#### __XAML__
-
-{{region radgridview-features-ui-virtualization_4}}
-	<telerik:RadGridView x:Name="radGridView" EnableRowVirtualization="False"/>
-{{endregion}}
-
-
 # See Also
 
  * [Degraded Performance]({%slug gridview-troubleshooting-performance%})

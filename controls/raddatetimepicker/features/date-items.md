@@ -22,7 +22,7 @@ Here is an example of setting these properties in XAML:
 
 #### __XAML__
 
-{{region raddatetimepicker-features-date-items_0}}
+{{region xaml-raddatetimepicker-features-date-items_0}}
 	<telerik:RadDateTimePicker DisplayDateStart="1/1/2010" DisplayDateEnd="11/15/2010"/>
 {{endregion}}
 
@@ -44,7 +44,7 @@ For example:
 
 #### __XAML__
 
-{{region raddatetimepicker-features-date-items_1}}
+{{region xaml-raddatetimepicker-features-date-items_1}}
 	<telerik:RadDateTimePicker DisplayDate="4/1/2010"/>
 {{endregion}}
 

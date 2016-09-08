@@ -20,7 +20,7 @@ The next code snippet demonstrates how to set the CurrentCulture and CurrentUICu
 
 #### __C#__
 
-{{region raddatetimepicker-how-to-set-culture-1}}
+{{region cs-raddatetimepicker-how-to-set-culture-1}}
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");
@@ -53,7 +53,7 @@ The next code snippet shows how to set the date pattern in order to change the d
 
 #### __C#__
 
-{{region raddatetimepicker-how-to-set-culture-2}}
+{{region cs-raddatetimepicker-how-to-set-culture-2}}
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");
@@ -72,7 +72,7 @@ The next code snippet shows how to set the date pattern in order to change the d
 {% if site.site_name == 'Silverlight' %}
 #### __C#__
 
-{{region raddatetimepicker-how-to-set-culture-3}}
+{{region cs-raddatetimepicker-how-to-set-culture-3}}
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");

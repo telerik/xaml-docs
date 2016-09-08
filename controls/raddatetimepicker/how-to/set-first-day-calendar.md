@@ -16,7 +16,7 @@ You do this through the __RadDateTimePicker__ control's __Culture__ property.
 
 #### __XAML__
 
-{{region raddatetimepicker-how-to-set-first-day-calendar_0}}
+{{region xaml-raddatetimepicker-how-to-set-first-day-calendar_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker"/>
 {{endregion}}
 
@@ -30,8 +30,8 @@ For the purpose of this example, after defining your __RadDateTimePicker__ contr
 
 #### __C#__
 
-{{region raddatetimepicker-how-to-set-first-day-calendar_1}}
-	public SetFirstDayOfWeekExample()
+{{region cs-raddatetimepicker-how-to-set-first-day-calendar_1}}
+	public Default_Cs()
 	{
 	    InitializeComponent();
 	    CultureInfo cultureInfo = new CultureInfo( "en-US" );
@@ -44,14 +44,14 @@ For the purpose of this example, after defining your __RadDateTimePicker__ contr
 
 #### __VB.NET__
 
-{{region raddatetimepicker-how-to-set-first-day-calendar_2}}
+{{region vb-raddatetimepicker-how-to-set-first-day-calendar_2}}
 	Public Sub New()
-	 InitializeComponent()
-	 Dim cultureInfo As New CultureInfo("en-US")
-	 Dim dateInfo As New DateTimeFormatInfo()
-	 dateInfo.FirstDayOfWeek = DayOfWeek.Friday
-	 cultureInfo.DateTimeFormat = dateInfo
-	 Me.radDateTimePicker.Culture = cultureInfo
+	    InitializeComponent()
+	    Dim cultureInfo As New CultureInfo("en-US")
+	    Dim dateInfo As New DateTimeFormatInfo()
+	    dateInfo.FirstDayOfWeek = DayOfWeek.Friday
+	    cultureInfo.DateTimeFormat = dateInfo
+	    Me.radDateTimePicker.Culture = cultureInfo
 	End Sub
 {{endregion}}
 

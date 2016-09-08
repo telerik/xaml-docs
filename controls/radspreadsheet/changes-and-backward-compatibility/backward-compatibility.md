@@ -14,6 +14,17 @@ position: 1
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 
+## What's Different in 2016 R3
+
+### Changed
+
+Telerik.Windows.Controls.Spreadsheet.Controls::**ProtectionButton** is obsolete. 
+
+### What to do now
+
+The control can be replaced with any other button.
+
+
 ## What's Different in 2016 Q1
 
 ### Changed

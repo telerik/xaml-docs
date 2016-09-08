@@ -11,10 +11,10 @@ position: 1
 # RadDocument
 
 
-__RadDocument__ is the root element for __RadRichTextBox's__ content. It holds the collection of __Sections__ defined for the __RadRichTextBox__ content. It also allows you to configure the appearance of its child elements.
+__RadDocument__ is the root element for __RadRichTextBox's__ content. It holds the collection of __Sections__ defined for the __RadRichTextBox__ content. It also enables you to configure the appearance of its child elements.
       
 
-This article will explain how you can customize the contents of the RadDocument.
+This article explains how you can customize the contents of RadDocument.
 
 * [Customizing a RadDocument](#customize-the-contents-of-raddocument)
 
@@ -26,7 +26,7 @@ This article will explain how you can customize the contents of the RadDocument.
 
 ## Customize the contents of RadDocument
 
-__RadDocument__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
+__RadDocument__ exposes several properties that enables you to customize the layout of the elements placed underneath it. Here is a list of them:
         
 
 * __LayoutMode__: Specifies whether the page should be in __Paged__, __Flow__ or __FlowNoWrap__ layout mode. To learn more about layout modes, read [here]({%slug radrichtextbox-features-layout-modes%}).
@@ -107,14 +107,9 @@ Splitting an already measured document into two sections at the current caret po
 	Me.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage)
 {{endregion}}
 
+>More details about the Section element and the section break types is available [here]({%slug radrichtextbox-features-document-elements-section%}).
 
-The InsertSectionBreak() method accepts a parameter of type **SectionBreakType**. The possible values are:
-
-* **SectionBreakType.NextPage**: The default value. The next section will start on the next page.
-* **SectionBreakType.OddPage**: The next section will start on the next odd page.
-* **SectionBreakType.EvenPage**: The next section will start on the next even page.
-
->The distribution of the document content in sections is only visible when the document is in **Paged** layout mode. Furthermore, the sections and section breaks can be persisted in XAML, Docx and Rtf. If you export the document to HTML or plain text, the section breaks will be lost.
+>tip The distribution of the document content in sections is only visible when the document is in **Paged** layout mode. Furthermore, the sections and section breaks can be persisted in XAML, Docx and Rtf. If you export the document to HTML or plain text, the section breaks will be lost.
 
 ## Creating a Document at Run Time
 

@@ -68,7 +68,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_0}}
+{{region cs-radwindow-features-predefined-dialogs_0}}
 	RadWindow.Alert( new DialogParameters()
 	{
 	    Content = "Hello"
@@ -77,7 +77,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_1}}
+{{region vb-radwindow-features-predefined-dialogs_1}}
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Hello"
 	RadWindow.Alert(parameters)
@@ -87,13 +87,13 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_2}}
+{{region cs-radwindow-features-predefined-dialogs_2}}
 	RadWindow.Alert( "Hello" );
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_3}}
+{{region vb-radwindow-features-predefined-dialogs_3}}
 	RadWindow.Alert( "Hello" )
 {{endregion}}
 
@@ -101,7 +101,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_4}}
+{{region cs-radwindow-features-predefined-dialogs_4}}
 	public void ShowAlert()
 	{
 	    RadWindow.Alert( "Hello", this.OnClosed );
@@ -113,7 +113,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_5}}
+{{region vb-radwindow-features-predefined-dialogs_5}}
 	Public Sub ShowAlert()
 			RadWindow.Alert("Hello", AddressOf Me.OnClosed)
 	End Sub
@@ -132,7 +132,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_6}}
+{{region cs-radwindow-features-predefined-dialogs_6}}
 	DialogParameters parameters = new DialogParameters();
 	parameters.Content = "Enter your name:";
 	RadWindow.Prompt( parameters );
@@ -140,7 +140,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_7}}
+{{region vb-radwindow-features-predefined-dialogs_7}}
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Enter your name:"
 	RadWindow.Prompt(parameters)
@@ -151,7 +151,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_8}}
+{{region cs-radwindow-features-predefined-dialogs_8}}
 	public void ShowPrompt()
 	{
 	    RadWindow.Prompt( "Enter your name:", this.OnClosed );
@@ -163,7 +163,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_9}}
+{{region vb-radwindow-features-predefined-dialogs_9}}
 	Public Sub ShowPrompt()
 			RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed)
 	End Sub
@@ -175,7 +175,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_10}}
+{{region cs-radwindow-features-predefined-dialogs_10}}
 	public void SHowPrompt()
 	{
 	    RadWindow.Prompt( "Enter your name:", this.OnClosed, "John Doe" );
@@ -187,7 +187,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_11}}
+{{region vb-radwindow-features-predefined-dialogs_11}}
 	Public Sub SHowPrompt()
 			RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed, "John Doe")
 	End Sub
@@ -205,7 +205,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_12}}
+{{region cs-radwindow-features-predefined-dialogs_12}}
 	DialogParameters parameters = new DialogParameters();
 	parameters.Content = "Are you sure?";
 	RadWindow.Confirm( parameters );
@@ -213,7 +213,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_13}}
+{{region vb-radwindow-features-predefined-dialogs_13}}
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Are you sure?"
 	RadWindow.Confirm(parameters)
@@ -223,7 +223,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_14}}
+{{region cs-radwindow-features-predefined-dialogs_14}}
 	public void ShowConfirm()
 	{
 	    RadWindow.Confirm( "Are you sure?", this.OnClosed );
@@ -235,7 +235,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_15}}
+{{region vb-radwindow-features-predefined-dialogs_15}}
 	Public Sub ShowConfirm()
 			RadWindow.Confirm("Are you sure?", AddressOf Me.OnClosed)
 	End Sub

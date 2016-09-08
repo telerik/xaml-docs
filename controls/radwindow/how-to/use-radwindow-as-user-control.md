@@ -16,7 +16,7 @@ After creating it open the XAML file and replace the __UserControl__ declaration
 
 #### __XAML__
 
-{{region radwindow-how-to-use-radwindow-as-user-control_0}}
+{{region xaml-radwindow-how-to-use-radwindow-as-user-control_0}}
 	<telerik:RadWindow x:Class="RadWindowSamples.RadWindowControl"
 	                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -30,7 +30,7 @@ Also in the code behind your user control should inherit the __RadWindow__ inste
 
 #### __C#__
 
-{{region radwindow-how-to-use-radwindow-as-user-control_1}}
+{{region cs-radwindow-how-to-use-radwindow-as-user-control_1}}
 	public partial class RadWindowControl : RadWindow
 	{
 	    public RadWindowControl()
@@ -42,7 +42,7 @@ Also in the code behind your user control should inherit the __RadWindow__ inste
 
 #### __VB.NET__
 
-{{region radwindow-how-to-use-radwindow-as-user-control_2}}
+{{region vb-radwindow-how-to-use-radwindow-as-user-control_2}}
 	Public Partial Class RadWindowControl
 	 Inherits RadWindow
 	 Public Sub New()
@@ -59,14 +59,14 @@ As this is an user control of type __RadWindow__ you can use any of the features
 
 #### __C#__
 
-{{region radwindow-how-to-use-radwindow-as-user-control_3}}
+{{region cs-radwindow-how-to-use-radwindow-as-user-control_3}}
 	RadWindowControl window = new RadWindowControl();
 	window.Show();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-how-to-use-radwindow-as-user-control_4}}
+{{region vb-radwindow-how-to-use-radwindow-as-user-control_4}}
 	Dim window As New RadWindowControl()
 	window.Show()
 {{endregion}}
@@ -75,7 +75,7 @@ As this is an user control of type __RadWindow__ you can use any of the features
 
 #### __XAML__
 
-{{region radwindow-how-to-use-radwindow-as-user-control_5}}
+{{region xaml-radwindow-how-to-use-radwindow-as-user-control_5}}
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>

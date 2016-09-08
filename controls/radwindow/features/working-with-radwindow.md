@@ -30,7 +30,7 @@ After the reference is available, you can declare a __RadWindow__. Here is an ex
 
 #### __C#__
 
-{{region radwindow-features-working-with-radwindow_0}}
+{{region cs-radwindow-features-working-with-radwindow_0}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.Width = 400;
 	radWindow.Height = 300;
@@ -38,7 +38,7 @@ After the reference is available, you can declare a __RadWindow__. Here is an ex
 
 #### __VB.NET__
 
-{{region radwindow-features-working-with-radwindow_1}}
+{{region vb-radwindow-features-working-with-radwindow_1}}
 	Dim radWindow As New RadWindow()
 	radWindow.Width = 400
 	radWindow.Height = 300
@@ -54,13 +54,13 @@ Call the __Show()__ method of the __RadWindow__ instance to open it as a __norma
 
 #### __C#__
 
-{{region radwindow-features-working-with-radwindow_2}}
+{{region cs-radwindow-features-working-with-radwindow_2}}
 	radWindow.Show();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-working-with-radwindow_3}}
+{{region vb-radwindow-features-working-with-radwindow_3}}
 	radWindow.Show()
 {{endregion}}
 
@@ -68,13 +68,13 @@ Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a _
 
 #### __C#__
 
-{{region radwindow-features-working-with-radwindow_4}}
+{{region cs-radwindow-features-working-with-radwindow_4}}
 	radWindow.ShowDialog();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-working-with-radwindow_5}}
+{{region vb-radwindow-features-working-with-radwindow_5}}
 	radWindow.ShowDialog()
 {{endregion}}
 
@@ -94,7 +94,7 @@ If you have a window-specific content, use the __Content__ property.
 
 #### __C#__
 
-{{region radwindow-features-working-with-radwindow_6}}
+{{region cs-radwindow-features-working-with-radwindow_6}}
 	Grid grid = new Grid();
 	grid.Background = new SolidColorBrush( Color.FromArgb( 255, 240, 255, 255 ) );
 	radWindow.Content = grid;
@@ -102,7 +102,7 @@ If you have a window-specific content, use the __Content__ property.
 
 #### __VB.NET__
 
-{{region radwindow-features-working-with-radwindow_7}}
+{{region vb-radwindow-features-working-with-radwindow_7}}
 	Dim grid As New Grid()
 	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
 	radWindow.Content = grid
@@ -112,7 +112,7 @@ If you want to share a common layout structure for the content of multiple windo
 
 #### __XAML__
 
-{{region radwindow-features-working-with-radwindow_8}}
+{{region xaml-radwindow-features-working-with-radwindow_8}}
 	<UserControl.Resources>
 	    <DataTemplate x:Key="WindowContentTemplate">
 	        <Grid Background="Azure" />
@@ -122,13 +122,13 @@ If you want to share a common layout structure for the content of multiple windo
 
 #### __C#__
 
-{{region radwindow-features-working-with-radwindow_9}}
+{{region cs-radwindow-features-working-with-radwindow_9}}
 	radWindow.ContentTemplate = this.Resources[ "WindowContentTemplate" ] as DataTemplate;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-working-with-radwindow_10}}
+{{region vb-radwindow-features-working-with-radwindow_10}}
 	radWindow.ContentTemplate = TryCast(Me.Resources("WindowContentTemplate"), DataTemplate)
 {{endregion}}
 

@@ -26,7 +26,7 @@ First, you will need to obtain the default style that targets __RadAlert__. To l
 
 #### __[XAML] Example 1: Default RadAlertStyle__
 
-{{region radwindow-styles-and-templates-styling-the-predefined-windows_0}}
+{{region xaml-radwindow-styles-and-templates-styling-the-predefined-windows_0}}
 	<Style x:Key="RadAlertStyle" TargetType="telerik:RadAlert">
 		<Setter Property="IsTabStop" Value="False"/>
 		<Setter Property="MinWidth" Value="275"/>
@@ -51,7 +51,7 @@ And finally, you have to pass the customized __RadAlertStyle__ to the predefined
 
 #### __[C#] Example 2: Applying customized Style to RadAlert__
 
-{{region radwindow-styles-and-templates-styling-the-predefined-windows_0}}
+{{region cs-radwindow-styles-and-templates-styling-the-predefined-windows_0}}
 	DialogParameters parameters = new DialogParameters();
 	parameters.ContentStyle = this.Resources["RadAlertStyle"] as Style;
 	parameters.Content = "Hello";
@@ -60,7 +60,7 @@ And finally, you have to pass the customized __RadAlertStyle__ to the predefined
 
 #### __[VB.NET] Example 2: Applying customized Style to RadAlert__
 
-{{region radwindow-styles-and-templates-styling-the-predefined-windows_1}}
+{{region vb-radwindow-styles-and-templates-styling-the-predefined-windows_1}}
 	Dim parameters As New DialogParameters()
 	parameters.ContentStyle = TryCast(Me.Resources("RadAlertStyle"), Style)
 	parameters.Content = "Hello"
@@ -80,7 +80,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 
 #### __[XAML] Example 3: Defining the DataTemplate__
 
-{{region radwindow-styles-and-templates-styling-the-predefined-windows_0}}
+{{region xaml-radwindow-styles-and-templates-styling-the-predefined-windows_0}}
 	<DataTemplate x:Key="IconTemplate">
 		<Image Source="telerik.png" Stretch="Fill" Width="22" Height="22"/>
 	</DataTemplate>
@@ -88,7 +88,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 
 #### __[C#] Example 4: Applying the DataTemplate to the IconTemplate property__
 
-{{region radwindow-styles-and-templates-styling-the-predefined-windows_2}}
+{{region cs-radwindow-styles-and-templates-styling-the-predefined-windows_2}}
 	RadWindow.Alert(new DialogParameters()
 	{
 		Content = "Hello",
@@ -98,7 +98,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 
 #### __[VB.NET] Example 4: Applying the DataTemplate to the IconTemplate property__
 
-{{region radwindow-styles-and-templates-styling-the-predefined-windows_3}}
+{{region vb-radwindow-styles-and-templates-styling-the-predefined-windows_3}}
 	RadWindow.Alert(New DialogParameters() With
 	{
 		.Content = "Hello",

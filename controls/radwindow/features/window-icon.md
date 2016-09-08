@@ -20,7 +20,7 @@ If you have a window-specific icon, use the __Icon__ property.
 
 #### __C#__
 
-{{region radwindow-features-window-icon_0}}
+{{region cs-radwindow-features-window-icon_0}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.Icon = new Image()
 	{
@@ -30,7 +30,7 @@ If you have a window-specific icon, use the __Icon__ property.
 
 #### __VB.NET__
 
-{{region radwindow-features-window-icon_1}}
+{{region vb-radwindow-features-window-icon_1}}
 	Dim radWindow As New RadWindow()
 	Dim image As New Image()
 	image.Source = New BitmapImage(New Uri("../../Images/WindowIcon.png", UriKind.Relative))
@@ -45,7 +45,7 @@ If you want to share a common icon layout structure for the content of multiple 
 
 #### __XAML__
 
-{{region radwindow-features-window-icon_2}}
+{{region xaml-radwindow-features-window-icon_2}}
 	<UserControl.Resources>
 	    <DataTemplate x:Key="WindowIconTemplate">
 	        <Image Source="/Images/WindowIcon.png"
@@ -56,14 +56,14 @@ If you want to share a common icon layout structure for the content of multiple 
 
 #### __C#__
 
-{{region radwindow-features-window-icon_3}}
+{{region cs-radwindow-features-window-icon_3}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.IconTemplate = this.Resources["WindowIconTemplate"] as DataTemplate;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-window-icon_4}}
+{{region vb-radwindow-features-window-icon_4}}
 	Dim radWindow As New RadWindow()
 	radWindow.IconTemplate = TryCast(Me.Resources("WindowIconTemplate"), DataTemplate)
 {{endregion}}

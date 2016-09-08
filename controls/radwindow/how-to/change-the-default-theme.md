@@ -24,7 +24,7 @@ So merging the mentioned xaml files, for example, for __Windows8__ theme:
 
 #### __XAML__
 
-{{region radwindow-how-to-change-the-default-theme_0}}
+{{region xaml-radwindow-how-to-change-the-default-theme_0}}
 	<Application ...>
 		<Application.Resources>
 			<ResourceDictionary>
@@ -41,7 +41,7 @@ And opening a RadWindow:
 
 #### __C#__
 
-{{region radwindow-how-to-change-the-default-theme_1}}
+{{region cs-radwindow-how-to-change-the-default-theme_1}}
 	var newWindow = new RadWindow()
 	{
 	    Width = 300,
@@ -52,7 +52,7 @@ And opening a RadWindow:
 
 #### __VB.NET__
 
-{{region radwindow-how-to-change-the-default-theme_4}}
+{{region vb-radwindow-how-to-change-the-default-theme_4}}
 	Dim newWindow As New RadWindow() With { _
 		Key .Width = 300, _
 		Key .Height = 300 _
@@ -68,7 +68,7 @@ If you have __RadWindow__ as an user control like this:
 
 #### __XAML__
 
-{{region radwindow-how-to-change-the-default-theme_2}}
+{{region xaml-radwindow-how-to-change-the-default-theme_2}}
 	<telerik:RadWindow x:Class="RadWindowSamples.RadWindowControl"
 			   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -80,7 +80,7 @@ it will not receive automatically the Window style. You should add the following
 
 #### __XAML__
 
-{{region radwindow-how-to-change-the-default-theme_3}}
+{{region xaml-radwindow-how-to-change-the-default-theme_3}}
 	<Application ...>
 		<Application.Resources>
 			<ResourceDictionary>

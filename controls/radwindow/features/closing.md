@@ -16,7 +16,7 @@ The __RadWindow__ can be closed by either clicking on its 'Close' button at the 
 
 #### __C#__
 
-{{region radwindow-features-closing_0}}
+{{region cs-radwindow-features-closing_0}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.Show();
 	...
@@ -25,7 +25,7 @@ The __RadWindow__ can be closed by either clicking on its 'Close' button at the 
 
 #### __VB.NET__
 
-{{region radwindow-features-closing_1}}
+{{region vb-radwindow-features-closing_1}}
 	Dim radWindow As New RadWindow()
 	radWindow.Show()
 	...
@@ -40,14 +40,14 @@ To disable the closing of the __RadWindow__ via the UI you have to set the __Can
 
 #### __C#__
 
-{{region radwindow-features-closing_2}}
+{{region cs-radwindow-features-closing_2}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.CanClose = false;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-closing_3}}
+{{region vb-radwindow-features-closing_3}}
 	Dim radWindow As New RadWindow()
 	radWindow.CanClose = False
 {{endregion}}

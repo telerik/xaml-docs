@@ -20,14 +20,14 @@ If you have a window-specific header, use the __Header__ property.
 
 #### __C#__
 
-{{region radwindow-features-window-header_0}}
+{{region cs-radwindow-features-window-header_0}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.Header = "My RadWindow";
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-window-header_1}}
+{{region vb-radwindow-features-window-header_1}}
 	Dim radWindow As New RadWindow()
 	radWindow.Header = "My RadWindow"
 {{endregion}}
@@ -36,7 +36,7 @@ If you want to share a common icon layout structure for the content of multiple 
 
 #### __XAML__
 
-{{region radwindow-features-window-header_2}}
+{{region xaml-radwindow-features-window-header_2}}
 	<UserControl.Resources>
 	    <DataTemplate x:Key="WindowHeaderTemplate">
 	        <TextBlock Text="My RadWindow" />
@@ -46,14 +46,14 @@ If you want to share a common icon layout structure for the content of multiple 
 
 #### __C#__
 
-{{region radwindow-features-window-header_3}}
+{{region cs-radwindow-features-window-header_3}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.HeaderTemplate = this.Resources[ "WindowHeaderTemplate" ] as DataTemplate;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-window-header_4}}
+{{region vb-radwindow-features-window-header_4}}
 	Dim radWindow As New RadWindow()
 	radWindow.HeaderTemplate = TryCast(Me.Resources("WindowHeaderTemplate"), DataTemplate)
 {{endregion}}

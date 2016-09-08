@@ -16,7 +16,7 @@ In the __ControlTemplate__ for the __RadWindow__, find the __Grid__ with name "H
 
 #### __XAML__
 
-{{region radwindow-how-to-center-the-header-of-the-content_0}}
+{{region xaml-radwindow-how-to-center-the-header-of-the-content_0}}
 	<StackPanel Margin="2 0 0 0"
 	            Grid.Column="0"
 	            Orientation="Horizontal">
@@ -38,7 +38,7 @@ Replace the __StackPanel__ with a __Grid__, having two columns. Place the __Icon
 
 #### __XAML__
 
-{{region radwindow-how-to-center-the-header-of-the-content_1}}
+{{region xaml-radwindow-how-to-center-the-header-of-the-content_1}}
 	<Grid Margin="2 0 0 0"
 	      Grid.Column="0">
 	    <Grid.ColumnDefinitions>
@@ -65,7 +65,7 @@ With this done, you can easily control the position of the content through the e
 
 #### __C#__
 
-{{region radwindow-how-to-center-the-header-of-the-content_2}}
+{{region cs-radwindow-how-to-center-the-header-of-the-content_2}}
 	TextBlock textBlock = new TextBlock();
 	textBlock.Text = "My RadWindow";
 	textBlock.HorizontalAlignment = HorizontalAlignment.Center;
@@ -78,7 +78,7 @@ With this done, you can easily control the position of the content through the e
 
 #### __VB.NET__
 
-{{region radwindow-how-to-center-the-header-of-the-content_3}}
+{{region vb-radwindow-how-to-center-the-header-of-the-content_3}}
 	Dim textBlock As New TextBlock()
 	textBlock.Text = "My RadWindow"
 	textBlock.HorizontalAlignment = HorizontalAlignment.Center

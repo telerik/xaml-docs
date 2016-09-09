@@ -24,13 +24,13 @@ Here is the default animation value.
 	    <telerikAnimation:AnimationManager.AnimationSelector>
 	        <telerikAnimation:AnimationSelector>
 	            <telerikAnimation:SlideAnimation Direction="In"
-	                                             SlideMode="Top"
-	                                             AnimationName="Expand"
-	                                             TargetName="DropDownBorder"
-	                                             SpeedRatio="3.0" />
+	                                     SlideMode="Top"
+	                                     AnimationName="Expand"
+	                                     TargetElementName="DropDownBorder"
+	                                     SpeedRatio="3.0" />
 	        </telerikAnimation:AnimationSelector>
 	    </telerikAnimation:AnimationManager.AnimationSelector>
-	    ...
+	    <!--...-->
 	</telerik:RadMenu>
 {{endregion}}
 
@@ -51,22 +51,23 @@ In order to add an animation for the collapsing of the popup you have to define 
 #### __XAML__
 
 {{region xaml-radmenu-features-animation_1}}
-	<telerik:RadMenu VerticalAlignment="Top" HorizontalAlignment="Left">
+	<telerik:RadMenu VerticalAlignment="Top"
+	                 HorizontalAlignment="Left">
 	    <telerikAnimation:AnimationManager.AnimationSelector>
 	        <telerikAnimation:AnimationSelector>
 	            <telerikAnimation:SlideAnimation Direction="In"
-	                                             SlideMode="Bottom"
-	                                             AnimationName="Expand"
-	                                             TargetName="DropDownBorder"
-	                                             SpeedRatio="3.0" />
+	                                     SlideMode="Bottom"
+	                                     AnimationName="Expand"
+	                                     TargetElementName="DropDownBorder"
+	                                     SpeedRatio="3.0" />
 	            <telerikAnimation:SlideAnimation Direction="Out"
-	                                             SlideMode="Bottom"
-	                                             AnimationName="Collapse"
-	                                             TargetName="DropDownBorder"
-	                                             SpeedRatio="3.0" />
+	                                     SlideMode="Bottom"
+	                                     AnimationName="Collapse"
+	                                     TargetElementName="DropDownBorder"
+	                                     SpeedRatio="3.0" />
 	        </telerikAnimation:AnimationSelector>
 	    </telerikAnimation:AnimationManager.AnimationSelector>
-	    ...
+	    <!--...-->
 	</telerik:RadMenu>
 {{endregion}}
 

@@ -45,8 +45,7 @@ Drag a __RadMenu__ on the artboard.
 #### __XAML__
 
 {{region xaml-radmenu-getting-started_0}}
-	<UserControl ...
-	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"> 
+	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <Grid x:Name="LayoutRoot">
 	        <telerik:RadMenu VerticalAlignment="Top" />
 	    </Grid>

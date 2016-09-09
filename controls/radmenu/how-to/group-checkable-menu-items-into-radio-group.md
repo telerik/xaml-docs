@@ -25,30 +25,30 @@ Here is a sample __RadMenu__ and one of its items has two radio groups. Notice t
 	    </telerik:RadMenuItem>
 	    <telerik:RadMenuItem Header="Options">
 	        <telerik:RadMenuItem Header="Radio Button 1.1"
-	                                       Tag="1"
-	                                       IsCheckable="True"
-	                                       StaysOpenOnClick="True" />
+	                             Tag="1"
+	                             IsCheckable="True"
+	                             StaysOpenOnClick="True" />
 	        <telerik:RadMenuItem Header="Radio Button 1.2"
-	                                       Tag="1"
-	                                       IsCheckable="True"
-	                                       StaysOpenOnClick="True" />
+	                             Tag="1"
+	                             IsCheckable="True"
+	                             StaysOpenOnClick="True" />
 	        <telerik:RadMenuItem Header="Radio Button 1.3"
-	                                       Tag="1"
-	                                       IsCheckable="True"
-	                                       StaysOpenOnClick="True" />
+	                             Tag="1"
+	                             IsCheckable="True"
+	                             StaysOpenOnClick="True" />
 	        <telerik:RadMenuItem IsSeparator="True" />
 	        <telerik:RadMenuItem Header="Radio Button 2.1"
-	                                       Tag="2"
-	                                       IsCheckable="True"
-	                                       StaysOpenOnClick="True" />
+	                             Tag="2"
+	                             IsCheckable="True"
+	                             StaysOpenOnClick="True" />
 	        <telerik:RadMenuItem Header="Radio Button 2.2"
-	                                       Tag="2"
-	                                       IsCheckable="True"
-	                                       StaysOpenOnClick="True" />
+	                             Tag="2"
+	                             IsCheckable="True"
+	                             StaysOpenOnClick="True" />
 	        <telerik:RadMenuItem Header="Radio Button 2.3"
-	                                       Tag="2"
-	                                       IsCheckable="True"
-	                                       StaysOpenOnClick="True" />
+	                             Tag="2"
+	                             IsCheckable="True"
+	                             StaysOpenOnClick="True" />
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
 {{endregion}}
@@ -60,7 +60,7 @@ The next step is to handle the __ItemClick__ event of the __RadMenu.__ It gets f
 #### __XAML__
 
 {{region xaml-radmenu-how-to-group-checkable-menu-items-into-radio-group_1}}
-	<telerik:RadMenu x:Name="radMenu" ItemClick="radMenu_ItemClick">
+	<telerik:RadMenu x:Name="radMenu1" ItemClick="radMenu_ItemClick">
 	    ...
 	</telerik:RadMenu>
 {{endregion}}
@@ -70,10 +70,10 @@ In the event handler you get the item that has been clicked and check if it is c
 #### __C#__
 
 {{region cs-radmenu-how-to-group-checkable-menu-items-into-radio-group_2}}
-	private void radMenu_ItemClick( object sender, RadRoutedEventArgs e )
+	private void radMenu_ItemClick(object sender, RadRoutedEventArgs e)
 	{
 	    var currentItem = e.OriginalSource as RadMenuItem;
-	    if ( currentItem.IsCheckable && currentItem.Tag != null )
+	    if (currentItem.IsCheckable && currentItem.Tag != null)
 	    {
 	        //the place for the radio items logic
 	    }
@@ -84,10 +84,10 @@ In the event handler you get the item that has been clicked and check if it is c
 
 {{region vb-radmenu-how-to-group-checkable-menu-items-into-radio-group_3}}
 	Private Sub radMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)
-	 Dim currentItem As var = TryCast(e.OriginalSource, RadMenuItem)
-	 If currentItem.IsCheckable AndAlso currentItem.Tag <> Nothing Then  
-	   'the place for the radio items logic
-	 End If
+	    Dim currentItem = TryCast(e.OriginalSource, RadMenuItem)
+	    If currentItem.IsCheckable AndAlso currentItem.Tag <> Nothing Then
+	        'the place for the radio items logic
+	    End If
 	End Sub
 {{endregion}}
 
@@ -100,24 +100,24 @@ In order the uncheck the other items from the same group, you have to get them f
 #### __C#__
 
 {{region cs-radmenu-how-to-group-checkable-menu-items-into-radio-group_4}}
-	private List<RadMenuItem> GetSiblingGroupItems( RadMenuItem currentItem )
+	private List<RadMenuItem> GetSiblingGroupItems(RadMenuItem currentItem)
 	{
 	    var parentItem = currentItem.ParentOfType<RadMenuItem>();
-	    if ( parentItem == null )
+	    if (parentItem == null)
 	    {
 	        return null;
 	    }
 	    List<RadMenuItem> items = new List<RadMenuItem>();
-	    foreach ( var item in parentItem.Items )
+	    foreach (var item in parentItem.Items)
 	    {
-	        RadMenuItem container = parentItem.ItemContainerGenerator.ContainerFromItem( item ) as RadMenuItem;
-	        if ( container == null || container.Tag == null )
+	        RadMenuItem container = parentItem.ItemContainerGenerator.ContainerFromItem(item) as RadMenuItem;
+	        if (container == null || container.Tag == null)
 	        {
 	            continue;
 	        }
-	        if ( container.Tag.Equals( currentItem.Tag ) )
+	        if (container.Tag.Equals(currentItem.Tag))
 	        {
-	            items.Add( container );
+	            items.Add(container);
 	        }
 	    }
 	    return items;
@@ -128,21 +128,21 @@ In order the uncheck the other items from the same group, you have to get them f
 
 {{region vb-radmenu-how-to-group-checkable-menu-items-into-radio-group_5}}
 	Private Function GetSiblingGroupItems(currentItem As RadMenuItem) As List(Of RadMenuItem)
-	 Dim parentItem As var = currentItem.ParentOfType(Of RadMenuItem)()
-	 If parentItem = Nothing Then
-	  Return Nothing
-	 End If
-	 Dim items As New List(Of RadMenuItem)()
-	 For Each item As var In parentItem.Items
-	  Dim container As RadMenuItem = TryCast(parentItem.ItemContainerGenerator.ContainerFromItem(item), RadMenuItem)
-	  If container = Nothing OrElse container.Tag = Nothing Then
-	   Continue For
-	  End If
-	  If container.Tag.Equals(currentItem.Tag) Then
-	   items.Add(container)
-	  End If
-	 Next
-	 Return items
+	    Dim parentItem = currentItem.ParentOfType(Of RadMenuItem)()
+	    If parentItem Is Nothing Then
+	        Return Nothing
+	    End If
+	    Dim items As New List(Of RadMenuItem)()
+	    For Each item In parentItem.Items
+	        Dim container As RadMenuItem = TryCast(parentItem.ItemContainerGenerator.ContainerFromItem(item), RadMenuItem)
+	        If container Is Nothing OrElse container.Tag = Nothing Then
+	            Continue For
+	        End If
+	        If container.Tag.Equals(currentItem.Tag) Then
+	            items.Add(container)
+	        End If
+	    Next
+	    Return items
 	End Function
 {{endregion}}
 
@@ -170,7 +170,7 @@ Now as the sibling items from the same group are available, the only things that
 	                    item.IsChecked = false;
 	                }
 	            }
-	        }                
+	        }
 	    }
 	}
 {{endregion}}
@@ -215,7 +215,7 @@ When having __RadMenu__ with dynamic data in it, the logic remains the same, but
 
 {{region cs-radmenu-how-to-group-checkable-menu-items-into-radio-group_8}}
 	public class MenuItem
-	{       
+	{
 	    public string Header { get; set; }
 	    public bool IsCheckable { get; set; }
 	    public string RadioGroup { get; set; }
@@ -265,22 +265,22 @@ The ViewModel should look as shown below:
 	    public ViewModel()
 	    {
 	        this.MenuItems = new ObservableCollection<MenuItem>
+	    {
+	        new MenuItem { Header = "File", SubMenuItems = new ObservableCollection<MenuItem>
 	        {
-	            new MenuItem { Header = "File", SubMenuItems = new ObservableCollection<MenuItem>
-	            {
-	                new MenuItem { Header = "Exit", IsCheckable = true, RadioGroup = "1" },
-	            }},
-	            new MenuItem { Header = "Options", SubMenuItems = new ObservableCollection<MenuItem>
-	            {
-	                new MenuItem { Header = "Radio Button 1.1", IsCheckable = true, RadioGroup = "1" },
-	                new MenuItem { Header = "Radio Button 1.2", IsCheckable = true, RadioGroup = "1" },
-	                new MenuItem { Header = "Radio Button 1.3", IsCheckable = true, RadioGroup = "1" },
-	                new MenuItem { IsSeparator = true },
-	                new MenuItem { Header = "Radio Button 2.1", IsCheckable = true, RadioGroup = "2" },
-	                new MenuItem { Header = "Radio Button 2.2", IsCheckable = true, RadioGroup = "2" },
-	                new MenuItem { Header = "Radio Button 2.3", IsCheckable = true, RadioGroup = "2" },
-	            }},
-	        };
+	            new MenuItem { Header = "Exit", IsCheckable = true, RadioGroup = "1" },
+	        }},
+	        new MenuItem { Header = "Options", SubMenuItems = new ObservableCollection<MenuItem>
+	        {
+	            new MenuItem { Header = "Radio Button 1.1", IsCheckable = true, RadioGroup = "1" },
+	            new MenuItem { Header = "Radio Button 1.2", IsCheckable = true, RadioGroup = "1" },
+	            new MenuItem { Header = "Radio Button 1.3", IsCheckable = true, RadioGroup = "1" },
+	            new MenuItem { IsSeparator = true },
+	            new MenuItem { Header = "Radio Button 2.1", IsCheckable = true, RadioGroup = "2" },
+	            new MenuItem { Header = "Radio Button 2.2", IsCheckable = true, RadioGroup = "2" },
+	            new MenuItem { Header = "Radio Button 2.3", IsCheckable = true, RadioGroup = "2" },
+	        }},
+	    };
 	    }
 	}
 {{endregion}}
@@ -313,7 +313,7 @@ Finally you need to set the created style to the __ItemContainerStyle__ property
 #### __XAML__
 
 {{region xaml-radmenu-how-to-group-checkable-menu-items-into-radio-group_11}}
-	<telerik:RadMenu x:Name="radMenu" 
+	<telerik:RadMenu x:Name="radMenu2" 
 	                 VerticalAlignment="Top"  
 	                 ItemClick="radMenu_ItemClick"
 	                 Orientation="Horizontal"

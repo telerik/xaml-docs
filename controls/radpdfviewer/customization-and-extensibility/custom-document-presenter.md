@@ -15,7 +15,7 @@ position: 2
 Document presenters in __RadPdfViewer__ are responsible for displaying the pages of a PDF document, as well as navigating the file and manipulating it. There are two presenters that come out-of-the-box and you can find more information about them  [here]({%slug radpdfviewer-ui-document-presenters%}).
       
 
-Additionally, __RadPDFViewer__ offers the ability to create your own custom document presenter which would help you design the presentational functionality of the document at your will.
+Additionally, __RadPDFViewer__ offers the ability to create your own document presenter, which would help you design the presentational functionality of the document at your will.
       
 
 This article covers the following topics:
@@ -88,16 +88,13 @@ Implementing this interface allows you to create a fully functioning document pr
 
 ## Inheriting FixedDocumentPresenterBase
 
-The __FixedDocumentPresenterBase__ class implements all the members from __IFixedDocumentPresenter__ but also allows the inheriting class to override those members with custom functionality. Some members of this class are abstract and need to be overridden in the inheriting classes:
+The [__FixedDocumentPresenterBase__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_UI_FixedDocumentPresenterBase.htm) class implements all the members from [__IFixedDocumentPresenter__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_UI_IFixedDocumentPresenter.htm) but also allows the inheriting class to override those members with custom functionality. Some members of this class are abstract and need to be overridden in the inheriting classes:
         
 
 * __PagesLayoutManager:__ The property is of type __Telerik.Windows.Documents.Fixed.Layout.PagesLayoutManagerBase__  and is responsible for the way pages are laid out in the document.
             
 
 * __CurrentNo:__ The number of the current page.
-            
-
-* __VisiblePages:__ A collection of the currently visible pages in the view port of __RadPdfViewer__.
             
 
 * __GetLocationFromViewPoint(Point viewpoint, out RadFixedPage page, out Point location):__ Obtains the document location from the provided view point.
@@ -120,131 +117,85 @@ __PagesLayoutManagerBase__ is an abstract class that is responsible for the layo
 
 ## Creating a Custom Presenter
 
-The following six steps illustrate what you need to do in order to create and register a custom presenter:
+The following steps illustrate what you need to do in order to create and register a custom document presenter:
         
 
-__Step 1:__ Create a class responsible for the page layout which inherits the abstract __FixedPageLayoutInfo__ class. It should hold the information about how to visualize a single page. Implement the base constructor and add your preferences.
+__Step 1:__ Create a class which inherits the abstract [__FixedPageLayoutInfo__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Layout_FixedPageLayoutInfo.htm) class. This class will be responsible for the page layout and should hold the information about how to visualize a single page. Implement the base constructor and add your preferences.
         
 
-#### __C#__
+#### __[C#] Example 1: Implement FixedPageLayoutInfo__
 
 {{region radpdfviewer-customization-and-extensibility-custom-document-presenter_0}}
-	    public class SinglePageInfo: FixedPageLayoutInfo
+	public class SinglePageInfo : FixedPageLayoutInfo
+	{
+	    public SinglePageInfo(Telerik.Windows.Documents.Fixed.Model.RadFixedPage page, System.Windows.Rect positionInView)
+	        : base(page, positionInView)
 	    {
-	        public SinglePageInfo(Telerik.Windows.Documents.Fixed.Model.RadFixedPage page, System.Windows.Rect positionInView) : base(page, positionInView)
-	        {
-	        ...
-	        }
+	        //...
 	    }
+	}
 {{endregion}}
 
+__Step 2:__ Create a class inheriting the abstract [__PagesLayoutManagerBase__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Layout_PagesLayoutManagerBase.htm) class, responsible for the layout of the document pages. Implement all abstract members of this class and override them according to your scenario.
+       
 
-__Step 2:__ Add a new class for your custom presenter that inherits the abstract __FixedDocumentPresenterBase__ class which on its hand inherits the __IFixedDocumentPresenter__ interface.
-        
-
-__Step 3:__ Implement all members of the __FixedDocumentPresenterBase__ class to create a fully functional document presenter. Some members of this class are abstract and need to be overridden with custom functionality.
-        
-
-#### __C#__
+#### __[C#] Example 2: Implement PagesLayoutManagerBase__
 
 {{region radpdfviewer-customization-and-extensibility-custom-document-presenter_1}}
-	    public class CustomSinglePagePresenter : FixedDocumentPresenterBase
-	    {
-	        protected override int CurrentPageNo
-	        {
-	            get 
-	            { 
-	                ...
-	            }
-	        }
-	
-	        public override bool GetLocationFromViewPoint(Point viewPoint, out RadFixedPage page, out Point location)
-	        {
-	            ...
-	        }
-	
-	        protected override PagesLayoutManagerBase PagesLayoutManager
-	        {
-	          get 
-	            { 
-	                ...
-	            }
-	        }
-	
-	        protected override void UpdateScrollOffsetFromPosition(TextPosition position)
-	        {
-	            ...
-	        }
-	
-	        protected override IEnumerable<FixedPageLayoutInfo> VisiblePages
-	        {
-	          get 
-	            { 
-	                ...
-	            }
-	        }
-	    }
-{{endregion}}
+    public class SinglePageLayoutManager : PagesLayoutManagerBase
+    {
+        private SinglePageInfo visiblePage;
+        private readonly List<SinglePageInfo> pageLayoutInfos;
+
+        public SinglePageLayoutManager(IFixedDocumentPresenter presenter)
+            : base(presenter)
+        {
+            this.pageLayoutInfos = new List<SinglePageInfo>();
+        }
+
+        protected override List<FixedPageLayoutInfo> GetPagesLayoutInfos()
+        {
+            List<FixedPageLayoutInfo> result = new List<FixedPageLayoutInfo>();
+            foreach (var info in this.pageLayoutInfos)
+            {
+                result.Add(info);
+            }
+
+            return result;
+        }
+
+        public override void Release()
+        {
+            // Release pageLayoutInfos here.
+        }
+
+        public override void UpdateLayout(Size viewportSize)
+        {
+            // Update pageLayoutInfos here.
+        }
+    }
+{{endregion}} 
 
 
-
-__Step 4:__ Create a class which inherits the abstract __PagesLayoutManagerBase__ class which is responsible for the layout of the document pages. Implement all abstract members of this class and override them for your desired scenario.
+__Step 3:__ Add a new class for your custom presenter that inherits the abstract [__FixedDocumentPresenterBase__](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_UI_FixedDocumentPresenterBase.htm) class which, on its turn, inherits the __IFixedDocumentPresenter__ interface.
         
 
-#### __C#__
+__Step 4:__ Implement all members of the __FixedDocumentPresenterBase__ class to create a fully functional document presenter. Some members of this class are abstract and need to be overridden with custom functionality.
+
+>In order to ensure that the content is loaded, verify that the **VisiblePages** property of FixedDocumentPresenterBase is set every time the visible pages in the presenter are changed.
+
+__Step 5:__ Register the custom document presenter like demonstrated in **Example 3**.
+        
+
+#### __[C#] Example 3: Register a custom document presenter__
 
 {{region radpdfviewer-customization-and-extensibility-custom-document-presenter_2}}
-	    public class SinglePageLayoutManager : PagesLayoutManagerBase
-	    {
-	        public override void UpdateLayout(Size viewportSize)
-	        {
-	            ...
-	        }
-	
-	        public override void Release()
-	        {
-	            ...
-	        }
-	
-	        protected override List<FixedPageLayoutInfo> GetPagesLayoutInfos()
-	        {
-	            ...
-	        }
-	    }
-{{endregion}}
-
-
-
-__Step 5:__ Override the __PagesLayoutManagerBase__ property and set its field to be of a type of the above created single page information class (see step 1.).
-        
-
-#### __C#__
-
-{{region radpdfviewer-customization-and-extensibility-custom-document-presenter_3}}
-	        private SinglePageInfo visiblePage;
-	        private readonly List<SinglePageInfo> pageLayoutInfos;
-	
-	        public SinglePageLayoutManager(IFixedDocumentPresenter presenter)
-	            : base(presenter)
-	        {
-	            this.pageLayoutInfos = new List<SinglePageInfo>();
-	        }
-{{endregion}}
-
-
-
-__Step 6:__ Register the custom document presenter like in the following code-snippet:
-        
-
-#### __C#__
-
-{{region radpdfviewer-customization-and-extensibility-custom-document-presenter_4}}
 	        this.pdfViewer.RegisterPresenter("CustomPresenterName", new CustomSinglePagePresenter());
 {{endregion}}
 
 
 
-An example demonstrating how to create and register a custom document presenter could be downloaded at our SDK repository [here](https://github.com/telerik/xaml-sdk).
+>tip An example demonstrating how to create and register a custom document presenter could be downloaded from [our SDK repository on GitHub](https://github.com/telerik/xaml-sdk/blob/master/PdfViewer/CustomPresenter).
         
 
 # See Also

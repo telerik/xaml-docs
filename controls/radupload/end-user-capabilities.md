@@ -5,7 +5,7 @@ description: End-User Capabilities
 slug: radupload-end-user-capabilities
 tags: end-user,capabilities
 published: True
-position: 5
+position: 7
 site_name: Silverlight
 ---
 

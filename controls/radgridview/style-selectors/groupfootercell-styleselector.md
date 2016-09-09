@@ -1,7 +1,7 @@
 ---
-title: GroupfooterCellStyleSelector
-page_title: GroupfooterCellStyleSelector
-description: GroupfooterCellStyleSelector
+title: GroupFooterCellStyleSelector
+page_title: GroupFooterCellStyleSelector
+description: GroupFooterCellStyleSelector
 slug: gridview-group-footer-cell-style-selector
 tags: groupfootercellstyleselector
 published: True

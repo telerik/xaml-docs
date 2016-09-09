@@ -10,6 +10,9 @@
         <link href="{{site.baseurl}}/favicon.ico?Version=2016" rel="shortcut icon" />
 		
         {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
+		{% if page.glyphs_refence_sheet %}
+			{% stylesheet telerikwebui-glyph-styles %}
+		{% endif %}
         <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.1.112/styles/kendo.common.min.css" />
         {% stylesheet styles %}
         {% stylesheet theme %}

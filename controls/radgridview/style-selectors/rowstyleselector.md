@@ -153,7 +153,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 ## AlternateRowStyleSelector
 
-If you've set the **AlternationCount** property, you can apply conditional styles only on the [alternating rows]({%slug radgridview-rows-alternating-rows%}) by specifying an **AlternateRowStyleSelector**. **Figure 2** shows the result of using the same StyleSelector from the previous example, but setting it as the AlternateRowStyleSelector for the RadGridView.
+If you've set the **AlternationCount** property, you can apply conditional styles only on the [alternating rows]({%slug radgridview-rows-alternating-rows%}) by specifying an **AlternateRowStyleSelector**.
 
 #### __[XAML] Example 5: Set RadGridView's AlternateRowStyleSelector__
 
@@ -161,6 +161,12 @@ If you've set the **AlternationCount** property, you can apply conditional style
 
 	<telerik:RadGridView AlternateRowStyleSelector="{StaticResource StadiumCapacityStyle}" />
 {{endregion}}
+
+**Figure 2** shows the result of using the same StyleSelector from the previous example, but setting it as the AlternateRowStyleSelector for the RadGridView.
+
+#### __Figure 2: The alternating rows styled using the AlternateRowStyleSelector property__
+
+![The alternating rows styled using the AlternateRowStyleSelector property](images/gridview_alternaterowstyleselector.png)
 
 ## See Also
 

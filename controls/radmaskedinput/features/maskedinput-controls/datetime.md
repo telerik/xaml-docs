@@ -31,10 +31,9 @@ The __RadMaskedDateTimeInput__ represents the basic control that can be used to 
 
 Here is a simple definition of a __RadMaskedDateTimeInput__ control:
 
-#### __XAML__
-{{region radmaskedinput-features-controls-datetime_0}}
-	<telerik:RadMaskedDateTimeInput x:Name="radMaskedDateTimeInput" 
-	                                Width="200"
+#### __[XAML] Example 1: Define RadMaskedDateTimeInput in XAML__
+{{region xaml-radmaskedinput-features-controls-datetime_0}}
+	<telerik:RadMaskedDateTimeInput Width="200"
 	                                Margin="20 20 20 10"
 	                                Culture="en-US"
 	                                EmptyContent="Enter digits"
@@ -49,10 +48,9 @@ Here is a simple definition of a __RadMaskedDateTimeInput__ control:
 
 You can further restrict the user input by setting the __FormatString__ property.
 
-#### __XAML__
-{{region radmaskedinput-features-controls-datetime_1}}
-	<telerik:RadMaskedDateTimeInput x:Name="radMaskedDateTimeInput"                       
-	                                HorizontalAlignment="Center"
+#### __[XAML] Example 2: Setting the FormatString property__
+{{region xaml-radmaskedinput-features-controls-datetime_1}}
+	<telerik:RadMaskedDateTimeInput HorizontalAlignment="Center"
 	                                Culture="en-US"
 	                                FormatString="{}Day: {0:dd}, Month: {0:MM}, Year: {0:yyyy}"
 	                                InputBehavior="Replace"
@@ -64,7 +62,7 @@ You can further restrict the user input by setting the __FormatString__ property
 
 ![](images/radmaskedinput_datetimeinput_format_string.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})
  * [MaskedCurrencyInput]({%slug radmaskedinput-features-controls-currency%})

@@ -41,5 +41,5 @@ The other API changes are listed in the table below:
 
 At the same time in the __RadMaskedInput__ components you will find a more extensive set of features further demonstrated in the examples available within the {% if site.site_name == 'Silverlight' %}[ UI for Silverlight demo application](http://demos.telerik.com/silverlight/){% endif %}{% if site.site_name == 'WPF' %}[ UI for WPF demo application](http://demos.telerik.com/wpf/){% endif %}.        
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})

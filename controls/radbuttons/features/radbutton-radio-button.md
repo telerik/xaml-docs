@@ -23,19 +23,21 @@ You can instantiate your __RadRadioButton__ in both XAML and code. Here is an ex
 >The __RadRadioButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly. {% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %} 
 > Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
-#### __XAML__
-{{region radbutton-features-radio-button_0}}
+#### __[XAML] Example 1: Defining a button in XAML__
+{{region xaml-radbutton-features-radio-button_0}}
 	<telerik:RadRadioButton Content="Radio Item" />
 {{endregion}}
 
-#### __C#__
-{{region radbutton-features-radio-button_1}}
+#### __[C#] Example 2: Defining a button in code__
+{{region cs-radbutton-features-radio-button_1}}
 	RadRadioButton radRadioButton = new RadRadioButton() { Content = "Radio Item" };
 {{endregion}}
 
-#### __VB.NET__
-{{region radbutton-features-radio-button_2}}
-	Dim radRadioButton As New RadRadioButton() With {.Content = "Radio Item"}
+#### __[VB.NET] Example 2: Defining a button in code__  
+{{region vb-radbutton-features-radio-button_2}}
+	Dim radRadioButton As New RadRadioButton() With { _
+	    .Content = "Radio Item" _
+	}
 {{endregion}}
 
 ## Handling the Button Checked Event
@@ -46,23 +48,23 @@ To execute some logic when the __RadRadioButton__ gets checked, you have to hand
 
 Here is an example of handling the __Checked__ event of a button.		
 
-#### __XAML__
-{{region radbutton-features-radio-button_3}}
-	<telerik:RadRadioButton Content="Radio Item" Checked="RadRadioButton_Checked" />
+#### __[XAML] Example 3: Subscribing to the Checked event__  
+{{region xaml-radbutton-features-radio-button_3}}
+	<telerik:RadRadioButton Content="Radio Item" Checked="RadRadioButton_Checked"/>
 {{endregion}}
 
-#### __C#__
-{{region radbutton-features-radio-button_4}}
-	private void RadRadioButton_Checked( object sender, RoutedEventArgs e )
+#### __[C#] Example 4: Defining a Checked event handler__  
+{{region cs-radbutton-features-radio-button_4}}
+	private void RadRadioButton_Checked(object sender, RoutedEventArgs e)
 	{
 	    //implement your logic here
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radbutton-features-radio-button_5}}
+#### __[VB.NET] Example 4: Defining a Checked event handler__  
+{{region vb-radbutton-features-radio-button_5}}
 	Private Sub RadRadioButton_Checked(sender As Object, e As RoutedEventArgs)
-	 'implement your logic here'
+	    'implement your logic here '
 	End Sub
 {{endregion}}
 
@@ -70,10 +72,10 @@ Here is an example of handling the __Checked__ event of a button.
 
 ## Grouping RadRadioButtons
 
- By grouping the __RadRadioButtons__ the user will be allowed to check only one button in the group. In order to group several __RadRadioButtons__ you just have to place them in the same layout panel. Here is an example:		
+By grouping the __RadRadioButtons__ the user will be allowed to check only one button in the group. In order to group several __RadRadioButtons__ you just have to place them in the same layout panel. Here is an example:		
 
-#### __XAML__
-{{region radbutton-features-radio-button_6}}
+#### __[XAML] Example 5: Grouping radio buttons__  
+{{region xaml-radbutton-features-radio-button_6}}
 	<StackPanel>
 	    <telerik:RadRadioButton Content="Item 1.1" />
 	    <telerik:RadRadioButton Content="Item 1.2" />
@@ -90,7 +92,7 @@ The above code creates two groups of __RadRadioButtons__.
 
 * __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the __RadRadioButton__ control in normal state		  
 
-# See Also
+## See Also
  * [Button]({%slug radbuttons-features-button%})
  * [Toggle Button]({%slug radbuttons-features-toggle-button%})
  * [Commands]({%slug radbuttons-features-commands%})

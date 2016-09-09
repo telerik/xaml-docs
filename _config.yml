@@ -130,6 +130,8 @@ navigation:
         title: RadScheduleView
     controls/radtimepicker:
         title: RadTimePicker
+    controls/radpasswordbox:
+        title: RadPasswordBox
     controls/radtimespanpicker:
         title: RadTimeSpanPicker
     controls/radtransitioncontrol:
@@ -290,25 +292,38 @@ navigation:
         title: Styles and Templates
         position: 12
     controls/radchartview/series/cartesianchart-series:
-        title: CartesianChart Series
-    controls/radchartview/series/cartesianchart-series/bar-series:
-        title: Bar Series		
-    controls/radchartview/series/cartesianchart-series/bubble-series:
-        title: Bubble Series
-    controls/radchartview/series/cartesianchart-series/financial-series:
-        title: Financial Series
-    controls/radchartview/series/cartesianchart-series/scatter-series:
-        title: Scatter Series
+        title: CartesianChart Series            
     controls/radchartview/series/piechart-series:
         title: PieChart Series
     controls/radchartview/series/polarchart-series:
-        title: PolarChart Series
+        title: PolarChart Series    
+    controls/radchartview3d:
+        title: RadChartView3D
+    controls/radchartview3d/features:
+        title: Features
+        position: 6
+    controls/radchartview3d/series:
+        title: Series
+        position: 7
+    controls/radchartview3d/styles-and-templates:
+        title: Styles and Templates
+        position: 8
+    controls/radchartview3d/features/behaviors:
+        title: Behaviors     
     "*area-series":
         title: Area Series
     "*line-series":
         title: Line Series
     "*point-series":
         title: Point Series
+    "*bar-series":
+        title: Bar Series
+    "*bubble-series":
+        title: Bubble Series
+    "*financial-series":
+        title: Financial Series
+    "*scatter-series":
+        title: Scatter Series    
     controls/radcloudupload:
         title: RadCloudUpload
     controls/radcoloreditor:
@@ -394,6 +409,14 @@ navigation:
         title: RadHtmlPlaceHolder
     controls/radlayoutcontrol:
         title: RadLayoutControl
+    controls/radlayoutcontrol/getting-started:
+        title: Getting Started	
+        position: 3
+    controls/radlayoutcontrol/features:
+        title: Features
+        position: 4
+    controls/radlayoutcontrol/features/toolbox:
+        title: ToolBox
     controls/radlayoutcontrol/features/layoutgroups:
         title: Layout Groups
     controls/radlegend:
@@ -655,8 +678,12 @@ navigation:
         title: Mail Merge
     controls/radrichtextbox/features/fields-and-document-variables:
         title: Fields and Document Variables
+        position: 18
     controls/radrichtextbox/features/references:
         title: References
+        position: 19	
+    controls/radrichtextbox/features/merge-documents:
+        title: Merge Documents
     "*radspreadstreamprocessing":
         title: RadSpreadStreamProcessing
 ## Centaur Controls End
@@ -903,6 +930,8 @@ navigation:
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":
         title: "Troubleshooting"
+    "styling-and-appearance/glyphs":
+        title: "Font Glyphs"
 ## Common End
 
 ## Api Reference Start

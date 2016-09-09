@@ -10,17 +10,12 @@ position: 10
 
 # Redirect To a Page From the Server Side
 
-
-
-## 
-
 You can customize the __RadUploadHandler__ to redirect the client to a certain page as soon as the upload is finished, by adding a __RedirectPage__ __RadUploadConstants__.
 
 In order to implement this scenario, you will need to override the __GetAssociatedData__ method:
 
-#### __C#__
-
-{{region radupload-how-to-redirect-to-page-from-server_0}}
+#### __[C#] Example 1: Redirecting the client__  
+{{region cs-radupload-how-to-redirect-to-page-from-server_0}}
 	public override Dictionary<string, object> GetAssociatedData()
 	{
 	 Dictionary<string, object> associatedData = base.GetAssociatedData();
@@ -30,13 +25,11 @@ In order to implement this scenario, you will need to override the __GetAssociat
 	 }
 	  return associatedData;
 	}
-	{{endregion}}
+{{endregion}}
 
+#### __[VB.NET] Example 1: Redirecting the client__  
 
-
-#### __VB.NET__
-
-{{region radupload-how-to-redirect-to-page-from-server_1}}
+{{region vb-radupload-how-to-redirect-to-page-from-server_1}}
 	Public Overrides Function GetAssociatedData() As Dictionary(Of String, Object)
 	 Dim associatedData As Dictionary(Of String, Object) = MyBase.GetAssociatedData()
 	 If Me.IsFinalFileRequest() Then
@@ -44,8 +37,4 @@ In order to implement this scenario, you will need to override the __GetAssociat
 	 End If
 	 Return associatedData
 	End Function
-	{{endregion}}
-
-
-
-
+{{endregion}}

@@ -31,43 +31,41 @@ The __RadMaskedNumericInput__ represents the basic control that can be used to r
 
 Here is a simple definition of a __RadMaskedNumericInput__ control:
 
-#### __XAML__
-{{region radmaskedinput-features-controls-numeric_0}}
-    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
-                                   HorizontalAlignment="Center"
-                                   Culture="en-US"
-                                   EmptyContent="Enter digits"
-                                   InputBehavior="Replace"
-                                   Mask="#9.2"
-                                   SelectionOnFocus="SelectAll"
-                                   TextMode="PlainText"
-                                   UpdateValueEvent="LostFocus"
-                                   Value="12345" />
+#### __[XAML] Example 1: Define RadMaskedNumericInput in XAML__
+{{region xaml-radmaskedinput-features-controls-numeric_0}}
+	<telerik:RadMaskedNumericInput HorizontalAlignment="Center"
+								   Culture="en-US"
+								   EmptyContent="Enter digits"
+								   InputBehavior="Replace"
+								   Mask="#9.2"
+								   SelectionOnFocus="SelectAll"
+								   TextMode="PlainText"
+								   UpdateValueEvent="LostFocus"
+								   Value="12345" />
 {{endregion}}
 
 ![](images/radmaskedinput_numericinput_default.png)
 
 You can further restrict the user input by setting the __FormatString__ property. It uses [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric Format Strings](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) to further format the __Text__ property.
 
-#### __XAML__
-{{region radmaskedinput-features-controls-numeric_1}}
-    <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" 
-                                   Width="200"
-                                   Margin="20 20 20 10"
-                                   Culture="en-US"
-                                   EmptyContent="Enter digits"
-                                   FormatString="n3"
-                                   InputBehavior="Replace"
-                                   Mask="#9.2"
-                                   SelectionOnFocus="SelectAll"
-                                   TextMode="PlainText"
-                                   UpdateValueEvent="LostFocus"
-                                   Value="12345" />
+#### __[XAML] Example 2: Setting the FormatString property__
+{{region xaml-radmaskedinput-features-controls-numeric_1}}
+	<telerik:RadMaskedNumericInput Width="200"
+								   Margin="20 20 20 10"
+								   Culture="en-US"
+								   EmptyContent="Enter digits"
+								   FormatString="n3"
+								   InputBehavior="Replace"
+								   Mask="#9.2"
+								   SelectionOnFocus="SelectAll"
+								   TextMode="PlainText"
+								   UpdateValueEvent="LostFocus"
+								   Value="12345" />
 {{endregion}}
 
 ![](images/radmaskedinput_numericinput_formatted.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [MaskedCurrencyInput]({%slug radmaskedinput-features-controls-currency%})
  * [MaskedTextInput]({%slug radmaskedinput-features-controls-text%})

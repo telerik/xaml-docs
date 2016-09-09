@@ -15,25 +15,15 @@ position: 1
 >	- __Telerik.Windows.Controls.dll__ 
 >	- __Telerik.Windows.Controls.DataVisualization.dll__
 
-You also have to declare the following namespace in your UserControl:
-
-#### __XAML__
-{{region radbarcodeqr-getting-started-telerik-xmlns-definition}}
-	 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
-
 ## Defining RadBarcodeQR
 
-#### __XAML__
-{{region radbarcodeqr-getting-started-qrcode-declaration}}
-	<telerik:RadBarcodeQR  Version="20" ErrorCorrectionLevel="H" Text="Sample text" 
-							Mode="Byte" ECI="ISO8859_1" 
-							FNC1="FNC1SecondPosition" 
-							ApplicationIndicator="00">
-	</telerik:RadBarcodeQR>
+#### __[XAML] Example 1: QR barcode definition__  
+{{region xaml-radbarcodeqr-getting-started-0}}
+	<telerik:RadBarcodeQR Version="20" ErrorCorrectionLevel="H" Text="Sample text" 
+						  Mode="Byte" ECI="ISO8859_1" FNC1="FNC1SecondPosition" 
+						  ApplicationIndicator="00" />
 {{endregion}}
 
 ## See Also
-[Overview](a881ccfb-f368-4cf7-b14c-6896efd15f5e)
-[QRCode Visual Structure]({%slug radbarcodeqr-qrcode-visual-structure%})
-[QRCode Properties]({%slug radbarcodeqr-features%})
+* [QRCode Visual Structure]({%slug radbarcodeqr-qrcode-visual-structure%})
+* [QRCode Properties]({%slug radbarcodeqr-features%})

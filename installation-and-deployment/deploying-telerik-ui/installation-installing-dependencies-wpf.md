@@ -33,6 +33,7 @@ RadChart	|	Telerik.Windows.Controls.Charting
 RadChartView	|	Telerik.Windows.Controls.Chart, Telerik.Windows.Data
 	|	
 	|	Note: Additionally the Direct2D Rendering feature requires the SharpDX, SharpDX.Direct2D1, SharpDX.Direct2D10, SharpDX.Direct2D9, SharpDX.DXGI and Telerik.Windows.Controls.Chart.Direct2D assemblies. The SharpDX binaries are located under the SharpDX folder in the UI for WPF installation directory.
+RadChartView3D	|	Telerik.Windows.Controls.Chart, Telerik.Windows.Data
 RadCloudUpload	|	Telerik.Windows.Cloud, Telerik.Windows.Cloud.Controls
 RadCollectionNavigator	|	Telerik.Windows.Controls.Data, Telerik.Windows.Data
 RadColorEditor	|	Telerik.Windows.Controls.Input

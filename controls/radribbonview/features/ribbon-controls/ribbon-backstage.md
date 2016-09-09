@@ -10,15 +10,21 @@ position: 2
 
 # Ribbon Backstage
 
+* [RibbonBackstage Fundamentals] (#ribbonbackstage-fundamentals)
+* [Adding Backstage to the RadRibbonView] (#adding-backstage-to-the-radribbonview)
+* [Adding Backstage Items] (#adding-backstage-items)
+* [Backstage Properties] (#backstage-properties)
+* [BackstageItem Properties] (#backstageitem-properties)
+
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The new __Ribbon__ __Backstage__ control allows you to achieve a more native Office 2010 look and feel of your application.
 
 ## RibbonBackstage Fundamentals
 
-The __RibbonBackstage__ appears when a user __clicks__ the __Application Button__. It can be used to display controls, used to perform actions on the entire document, like Save, Print and Send. The __RibbonBackstage__ can also provide a list of recent documents, access to application options for changing user settings and preferences, and application exit.
+The __RibbonBackstage__ appears when a user __clicks__ the __Application Button__. It can be used to display controls, used to perform actions on the entire document, like __Save__, __Print__ and __Send__. The __RibbonBackstage__ can also provide a list of recent documents, access to application options for changing user settings and preferences, and application exit.
 
 By default the __Backstage__ isn't opened. In order to control its state you can set the __RadRibbonView__'s __IsBackstageOpen__ property.
 
-#### __XAML__
+#### __[XAML] Example 1: Set the IsBackstageOpen property__
 {{region radribbonview-ribbon-backstage_0}}
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application" IsBackstageOpen="True">
 	 ...
@@ -29,7 +35,7 @@ By default the __Backstage__ isn't opened. In order to control its state you can
 
 In order to add a backstage to your __RadRibbonView__ control you need to set the __RadRibbonView__'s __Backstage__ property. The next several code-snippets show you how to do that in XAML, as well as in the code-behind.
 
-#### __XAML__
+#### __[XAML] Example 2: Declaring RadRibbonBackstage in XAML__
 {{region radribbonview-ribbon-backstage_1}}
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
 	    <telerik:RadRibbonView.Backstage>
@@ -38,23 +44,24 @@ In order to add a backstage to your __RadRibbonView__ control you need to set th
 	</telerik:RadRibbonView>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 3: Declaring RadRibbonBackstage in code-behind__
 {{region radribbonview-ribbon-backstage_2}}
 	this.radRibbonView.Backstage = new RadRibbonBackstage();
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Declaring RadRibbonBackstage in code-behind__
 {{region radribbonview-ribbon-backstage_3}}
 	Me.radRibbonView.Backstage = New RadRibbonBackstage()
 {{endregion}}
 
+#### __Figure 1: RadRibbonBackstage default appearance__
 ![](images/RadRibbonView_Backstage_Empty.png)
 
 ## Adding Backstage Items
 
 The __Backstage__ control derives from the __RadTabControl__. That fact allows you to easily customize it by adding/removing __BackstageItems__ (the __BackstageItem__ derives from a __RadTabItem__).
 
-#### __XAML__
+#### __[XAML] Example 4: Adding RadRibbonBackstageItem in XAML__
 {{region radribbonview-ribbon-backstage_4}}
 	<telerik:RadRibbonView x:Name="radRibbonView" 
 	                        Title="My Title"
@@ -74,27 +81,46 @@ The __Backstage__ control derives from the __RadTabControl__. That fact allows y
 	</telerik:RadRibbonView>
 {{endregion}}
 
+## Backstage Properties
+
+* __WindowMinHeight__: Specifies the minimum __Height__ of the window when the backstage is open.
+
+* __WindowMinWidth__: Specifies the minimum __Width__ of the window when the backstage is open.
+
+* __BackstagePosition__: Specifies where the backstage will be positioned when opened. The backstage position is an enumeration of type Telerik.Windows.Controls.RibbonView.BackstagePosition and it accepts the following values:
+	* __Office2010__: The backstage will be positioned under the tab strip area
+	
+		#### __Figure 2: BackstagePosition property set to Office2010__
+		![](images/RadRibbonView_Backstage_BackstagePosition_Office2010.PNG)	
+
+	* __Office2013__: The backstage will be positioned on top of the tab strip area
+	
+		#### __Figure 3: BackstagePosition property set to Office2013__
+		![](images/RadRibbonView_Backstage_BackstagePosition_Office2013.PNG)
+
+	>Keep in mind that if the __BackstagePosition__ property is set to __Office2013__ the close  button of the backstage will be displayed only if one of the following themes is applied: [Green]({%slug common-styling-appearance-green-theme%}),[Office2013]({%slug common-styling-appearance-office2013-theme%}),[VisualStudio2013]({%slug common-styling-appearance-visualstudio2013-theme %})
+ 
 ## BackstageItem Properties
 
 The __BackstageItem__ exposes the following properties that allow you to further customize it:
 
-* __IsSelectable__ - specifies whether an item can be selected. If you set this property to __False__, the item will behave like a __Button__. 
+* __IsSelectable__: Specifies whether an item can be selected. If you set this property to __False__, the item will behave like a __Button__. 
 
 	>If the __BackstageItem__ __IsSelectable__ property is set to __False__, you will be able to take advantage of the __Click()__ event of the item, as well as its __Command__ property.
 
-* __IsDefault__ - specifies whether the item should be selected when the __Backstage__ is opened. 
+* __IsDefault__: Specifies whether the item should be selected when the __Backstage__ is opened. 
 
 	>Please note that if you set the __IsDefault__ property of multiple __BackstageItems__ to __True__, the last one marked as default will be selected.
 
-* __IsGroupSeparator__ - specifies whether an item is a group separator. Such items are used as a heading in order to differentiate a logical group of __BackstageItems__.
+* __IsGroupSeparator__: Specifies whether an item is a group separator. Such items are used as a heading in order to differentiate a logical group of __BackstageItems__.
 
-* __Icon__ - gets or sets __BackstageItem__ icon 
-
-* __CloseOnClick__ - specifies whether the __Backstage__ will be closed when the item is clicked. 
+* __Icon__  gets or sets __BackstageItem__ icon 
+	
+* __CloseOnClick__: Specifies whether the __Backstage__ will be closed when the item is clicked. 
 
 	>If the __BackstageItem__ is not selectable the __CloseOnClick__ property is set to __True__ by default. However, if the item is selectable, then the __CloseOnClick__ property won't affect its behavior.
 
-#### __XAML__
+#### __[XAML] Example 5: RadRibbonView with RadRibbonBackstage code example__
 {{region radribbonview-ribbon-backstage_5}}
 	<telerik:RadRibbonView x:Name="radRibbonView" 
 	                        Title="My Title"
@@ -134,7 +160,7 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	                            </Rectangle.Fill>
 	                        </Rectangle>
 	                        <ItemsControl Margin="0 4 0 0">
-	                            <telerik:RadRibbonButton Width="285">
+	                            <telerik:RadRibbonButton Width="285" HorizontalContentAlignment="Left">
 	                                <StackPanel Orientation="Horizontal">
 	                                    <Image Source="Images/Document.png" />
 	                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
@@ -143,7 +169,7 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	                                    </StackPanel>
 	                                </StackPanel>
 	                            </telerik:RadRibbonButton>
-	                            <telerik:RadRibbonButton Width="285">
+	                            <telerik:RadRibbonButton Width="285" HorizontalContentAlignment="Left">
 	                                <StackPanel Orientation="Horizontal">
 	                                    <Image Source="Images/Document.png" />
 	                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
@@ -152,7 +178,7 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	                                    </StackPanel>
 	                                </StackPanel>
 	                            </telerik:RadRibbonButton>
-	                            <telerik:RadRibbonButton Width="285">
+	                            <telerik:RadRibbonButton Width="285" HorizontalContentAlignment="Left">
 	                                <StackPanel Orientation="Horizontal">
 	                                    <Image Source="Images/Document.png" />
 	                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
@@ -161,7 +187,7 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	                                    </StackPanel>
 	                                </StackPanel>
 	                            </telerik:RadRibbonButton>
-	                            <telerik:RadRibbonButton Width="285">
+	                            <telerik:RadRibbonButton Width="285" HorizontalContentAlignment="Left">
 	                                <StackPanel Orientation="Horizontal">
 	                                    <Image Source="Images/Document.png" />
 	                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
@@ -199,7 +225,7 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	                            </Rectangle.Fill>
 	                        </Rectangle>
 	                        <ItemsControl Margin="0 4 0 0">
-	                            <telerik:RadRibbonButton Width="285">
+	                            <telerik:RadRibbonButton Width="285" HorizontalContentAlignment="Left">
 	                                <StackPanel Orientation="Horizontal">
 	                                    <Image Source="Images/Document.png" />
 	                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
@@ -208,7 +234,7 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	                                    </StackPanel>
 	                                </StackPanel>
 	                            </telerik:RadRibbonButton>
-	                            <telerik:RadRibbonButton Width="285">
+	                            <telerik:RadRibbonButton Width="285" HorizontalContentAlignment="Left">
 	                                <StackPanel Orientation="Horizontal">
 	                                    <Image Source="Images/Document.png" />
 	                                    <StackPanel Margin="3 0 0 0" HorizontalAlignment="Left">
@@ -340,14 +366,15 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	</telerik:RadRibbonView>
 {{endregion}}
 
+#### __Figure 4: Customized RadRibbonBackstage__
 ![](images/RadRibbonView_Backstage_Sample.png)
 
 The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that allows you to define the area over which the __Backstage__ will be displayed:
 
-#### __XAML__
-     <Grid x:Name="LayoutRoot" Background="White">
+#### __[XAML] Example 6: Specify BackstageClippingElement property__
+     <Grid x:Name="LayoutRoot" Background="White" ShowGridLines="True">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -372,6 +399,9 @@ The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that al
         </Grid>
     </Grid>
 
+#### __Figure 5: RadRibbonView with BackstageClippingElement property set__
+![](images/RadRibbonView_BackstageClippingElement_Sample.PNG)
+	
 The __RadRibbonView__ is a complex control and the __backstage menu__ is only a small part of it. The __RadRibbonView__ consists of various elements such as:
 * [Application Menu]({%slug radribbonview-applicationmenu%})
 * [Quick Access ToolBar]({%slug radribbonview-qat%})
@@ -382,7 +412,7 @@ The __RadRibbonView__ is a complex control and the __backstage menu__ is only a 
 * [Ribbon ComboBox]({%slug radribbonview-ribbon-combobox%})
 * [Screen Tips]({%slug radribbonview-screentips%})
 
-Additional features that you may find interesting are:
+## See Also
 * [Selection]({%slug radribbonview-selection%})
 * [Resizing]({%slug radribbonview-resizing%})
 * [Minimization]({%slug radribbonview-minimization%})

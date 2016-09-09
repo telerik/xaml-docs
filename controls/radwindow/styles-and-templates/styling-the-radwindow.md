@@ -74,7 +74,7 @@ Finally remove the __dummy__ instance of the __RadWindow__ form the XAML and set
 
 {{region cs-radwindow-styles-and-templates-styling-the-radwindow_0}}
 	RadWindow radWindow = new RadWindow();
-	radWindow.Style = this.Resources[ "RadWindowStyle" ] as Style;
+	radWindow.Style = this.Resources["RadWindowStyle"] as Style;
 {{endregion}}
 
 #### __VB.NET__

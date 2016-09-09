@@ -29,11 +29,8 @@ Here is a sample __RadWindow__, used as user control, with a button in it:
 	                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid x:Name="LayoutRoot"
-	          Background="White">
-	        <Button Content="Close me!"
-	                HorizontalAlignment="Center"
-	                VerticalAlignment="Center" />
+	    <Grid x:Name="LayoutRoot" Background="White">
+	        <Button Content="Close me!" HorizontalAlignment="Center" VerticalAlignment="Center" />
 	    </Grid>
 	</telerik:RadWindow>
 {{endregion}}
@@ -52,7 +49,7 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 #### __C#__
 
 {{region cs-radwindow-how-to-close-the-radwidnow-through-its-content_2}}
-	private void Button_Click( object sender, RoutedEventArgs e )
+	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    this.Close();
 	}
@@ -62,7 +59,7 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 
 {{region vb-radwindow-how-to-close-the-radwidnow-through-its-content_3}}
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
-	 Me.Close()
+	    Me.Close()
 	End Sub
 {{endregion}}
 
@@ -86,7 +83,7 @@ In this scenario the __Button__ is placed inside a __UserControl__, which is pas
 #### __C#__
 
 {{region cs-radwindow-how-to-close-the-radwidnow-through-its-content_4}}
-	private void Button_Click( object sender, RoutedEventArgs e )
+	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    RadWindow window = this.ParentOfType<RadWindow>();
 	    window.Close();
@@ -97,8 +94,8 @@ In this scenario the __Button__ is placed inside a __UserControl__, which is pas
 
 {{region vb-radwindow-how-to-close-the-radwidnow-through-its-content_5}}
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
-	 Dim window As RadWindow = Me.ParentOfType(Of RadWindow)()
-	 window.Close()
+	    Dim window As RadWindow = Me.ParentOfType(Of RadWindow)()
+	    window.Close()
 	End Sub
 {{endregion}}
 

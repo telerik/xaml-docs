@@ -96,7 +96,7 @@ If you have a window-specific content, use the __Content__ property.
 
 {{region cs-radwindow-features-working-with-radwindow_6}}
 	Grid grid = new Grid();
-	grid.Background = new SolidColorBrush( Color.FromArgb( 255, 240, 255, 255 ) );
+	grid.Background = new SolidColorBrush(Color.FromArgb(255, 240, 255, 255));
 	radWindow.Content = grid;
 {{endregion}}
 
@@ -123,7 +123,7 @@ If you want to share a common layout structure for the content of multiple windo
 #### __C#__
 
 {{region cs-radwindow-features-working-with-radwindow_9}}
-	radWindow.ContentTemplate = this.Resources[ "WindowContentTemplate" ] as DataTemplate;
+	radWindow.ContentTemplate = this.Resources["WindowContentTemplate"] as DataTemplate;
 {{endregion}}
 
 #### __VB.NET__

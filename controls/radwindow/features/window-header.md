@@ -48,7 +48,7 @@ If you want to share a common icon layout structure for the content of multiple 
 
 {{region cs-radwindow-features-window-header_3}}
 	RadWindow radWindow = new RadWindow();
-	radWindow.HeaderTemplate = this.Resources[ "WindowHeaderTemplate" ] as DataTemplate;
+	radWindow.HeaderTemplate = this.Resources["WindowHeaderTemplate"] as DataTemplate;
 {{endregion}}
 
 #### __VB.NET__

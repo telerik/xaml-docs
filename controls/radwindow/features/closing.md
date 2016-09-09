@@ -19,7 +19,7 @@ The __RadWindow__ can be closed by either clicking on its 'Close' button at the 
 {{region cs-radwindow-features-closing_0}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.Show();
-	...
+	//...
 	radWindow.Close();
 {{endregion}}
 
@@ -28,7 +28,7 @@ The __RadWindow__ can be closed by either clicking on its 'Close' button at the 
 {{region vb-radwindow-features-closing_1}}
 	Dim radWindow As New RadWindow()
 	radWindow.Show()
-	...
+	'...'
 	radWindow.Close()
 {{endregion}}
 

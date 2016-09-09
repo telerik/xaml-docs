@@ -54,12 +54,12 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 #### __C#__
 
 {{region cs-radwindow-how-to-use-keyboard-to-get-user-response_1}}
-	private void OnButtonAcceptClicked( object sender, RoutedEventArgs e )
+	private void OnButtonAcceptClicked(object sender, RoutedEventArgs e)
 	{
 	    this.DialogResult = true;
 	    this.Close();
 	}
-	private void OnButtonCancelClicked( object sender, RoutedEventArgs e )
+	private void OnButtonCancelClicked(object sender, RoutedEventArgs e)
 	{
 	    this.DialogResult = false;
 	    this.Close();
@@ -70,12 +70,12 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 
 {{region vb-radwindow-how-to-use-keyboard-to-get-user-response_2}}
 	Private Sub OnButtonAcceptClicked(sender As Object, e As RoutedEventArgs)
-	 Me.DialogResult = True
-	 Me.Close()
+	    Me.DialogResult = True
+	    Me.Close()
 	End Sub
 	Private Sub OnButtonCancelClicked(sender As Object, e As RoutedEventArgs)
-	 Me.DialogResult = False
-	 Me.Close()
+	    Me.DialogResult = False
+	    Me.Close()
 	End Sub
 {{endregion}}
 

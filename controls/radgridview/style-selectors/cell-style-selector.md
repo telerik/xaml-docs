@@ -16,7 +16,9 @@ This article will show you how to style conditionally RadGridView's cells applyi
 		  
 Assume we have RadGridView bound to a collection of Clubs. Each Club has a property __StadiumCapacity__. What we want to achieve is to set the background color of the StadiumCapacity cells to __Red if the capacity > 50 000 or Yellow otherwise__:
 
-![](images/gridview_cellstyleselector.png)
+#### __Figure 1: The expected result__
+
+![The expected result](images/gridview_cellstyleselector.png)
 
 To do so follow these steps:
 
@@ -24,7 +26,7 @@ To do so follow these steps:
 
 2. Override its __SelectStyle__ method. Based on your conditions - you return the proper Style that will be applied to the framework element (GridViewCell in our case).
 
-#### __C#__
+#### __[C#] Example 1: The StadiumCapacityStyle class__
 
 {{region gridview-cell-style-selector_0}}
 
@@ -51,7 +53,7 @@ To do so follow these steps:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: The StadiumCapacityStyle class__
 
 {{region gridview-cell-style-selector_1}}
 
@@ -98,10 +100,9 @@ Depending on the underlying data you can select which style to apply.
 
 3.In the XAML file define the style selector as a resource and set the properties of __BigStadiumStyle__ and __SmallStadiumStyle__:
 
-#### __XAML__
+#### __[XAML] Example 2: Set the different styles for the style selector__
 
 {{region gridview-cell-style-selector_2}}
-	<Grid>
 		<Grid.Resources>
 			<my:StadiumCapacityStyle x:Key="stadiumCapacityStyle">
 				<my:StadiumCapacityStyle.BigStadiumStyle>
@@ -116,15 +117,13 @@ Depending on the underlying data you can select which style to apply.
 				</my:StadiumCapacityStyle.SmallStadiumStyle>
 			</my:StadiumCapacityStyle>
 		</Grid.Resources>
-		...
-	</Grid>
 {{endregion}}
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
 If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme:
 
-#### __XAML__
+#### __[XAML] Example 3: Base the style when using implicit styles__
 
 {{region gridview-cell-style-selector_4}}
 
@@ -135,7 +134,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 4.Finally, set the __CellStyleSelector__ property of the data column which represents the StadiumCapacity field:
 
-#### __XAML__
+#### __[XAML] Example 4: Set CellStyleSelector for the column__
 
 {{region gridview-cell-style-selector_3}}
 
@@ -160,5 +159,8 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/CellStyleSelector__.
           
-# See Also
- * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
+## See Also
+
+* [Styling Cells]({%slug gridview-styling-cell%})
+
+* [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

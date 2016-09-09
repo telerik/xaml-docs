@@ -130,6 +130,8 @@ navigation:
         title: RadScheduleView
     controls/radtimepicker:
         title: RadTimePicker
+    controls/radpasswordbox:
+        title: RadPasswordBox
     controls/radtimespanpicker:
         title: RadTimeSpanPicker
     controls/radtransitioncontrol:

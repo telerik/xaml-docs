@@ -607,6 +607,8 @@ navigation:
     controls/radrichtextbox/features/references:
         title: References
         position: 19	
+    controls/radrichtextbox/features/merge-documents:
+        title: Merge Documents
     "*radspreadstreamprocessing":
         title: RadSpreadStreamProcessing
 ## Centaur Controls End

@@ -177,7 +177,7 @@ Paragraphs can be added to a section in the following ways:
 
 
 
-# See Also
+## See Also
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
 
@@ -190,3 +190,5 @@ Paragraphs can be added to a section in the following ways:
  * [Hyperlink]({%slug radrichtextbox-features-document-elements-hyperlink%})
 
  * [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%})
+
+ * [Merge Documents]({%slug radrichtextbox-features-merge-raddocumentmerger%})

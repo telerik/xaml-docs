@@ -86,16 +86,22 @@ Unline RadChart, the __RadChartView__ control comes with a built-in set of palet
 
 ## Features with no equivalent in RadChartView
 
->The information is up-to-date as for Q1 2015. The list of features will change with our next releases.					
+>The information is up-to-date as for R3 2016. The list of features will change with our next releases.					
 
 1. Sorting/Filtering
 2. Hierarchical Data Support*
 3. ChartTitle
 4. All 3D series types
 
-> *Currently ChartView provides partial support for Hierarchical Data through the [SeriesProvider]({%slug radchartview-features-chartseriesprovider%}) feature.					
+> *Currently __RadChartView__ provides partial support for Hierarchical Data through the [SeriesProvider]({%slug radchartview-features-chartseriesprovider%}) feature.					
 
-# See Also
+<!-- -->
+
+{% if site.site_name == 'WPF' %}
+> Check the __RadChartView3D__ which provides a [3D chart]({%slug radchartview3d-overview%}) visualizing three-dimensional data in the 3D space, unlike the 3D series of __RadChart__ where the third dimension has no relation to the plotted two-dimensional data.
+{% endif %}
+
+## See Also
  * [Axis]({%slug radchartview-axes-axis%})
  * [Series Overview]({%slug radchartview-series-chartseries%})
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

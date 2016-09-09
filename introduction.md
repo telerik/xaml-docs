@@ -213,6 +213,8 @@ Telerik &reg; UI for WPF features the following controls:
 
 * [ChartView]({%slug radchartview-overview%})
 
+* [ChartView3D]({%slug radchartview3d-overview%})
+
 * [CloudUpload]({%slug radcloudupload-overview%})
 
 * [CollectionNavigator]({%slug collectionnavigator_overview%})

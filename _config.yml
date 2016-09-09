@@ -290,25 +290,38 @@ navigation:
         title: Styles and Templates
         position: 12
     controls/radchartview/series/cartesianchart-series:
-        title: CartesianChart Series
-    controls/radchartview/series/cartesianchart-series/bar-series:
-        title: Bar Series		
-    controls/radchartview/series/cartesianchart-series/bubble-series:
-        title: Bubble Series
-    controls/radchartview/series/cartesianchart-series/financial-series:
-        title: Financial Series
-    controls/radchartview/series/cartesianchart-series/scatter-series:
-        title: Scatter Series
+        title: CartesianChart Series            
     controls/radchartview/series/piechart-series:
         title: PieChart Series
     controls/radchartview/series/polarchart-series:
-        title: PolarChart Series
+        title: PolarChart Series    
+    controls/radchartview3d:
+        title: RadChartView3D
+    controls/radchartview3d/features:
+        title: Features
+        position: 6
+    controls/radchartview3d/series:
+        title: Series
+        position: 7
+    controls/radchartview3d/styles-and-templates:
+        title: Styles and Templates
+        position: 8
+    controls/radchartview3d/features/behaviors:
+        title: Behaviors     
     "*area-series":
         title: Area Series
     "*line-series":
         title: Line Series
     "*point-series":
         title: Point Series
+    "*bar-series":
+        title: Bar Series
+    "*bubble-series":
+        title: Bubble Series
+    "*financial-series":
+        title: Financial Series
+    "*scatter-series":
+        title: Scatter Series    
     controls/radcloudupload:
         title: RadCloudUpload
     controls/radcoloreditor:

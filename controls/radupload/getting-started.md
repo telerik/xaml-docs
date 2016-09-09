@@ -5,7 +5,7 @@ description: Getting Started
 slug: radupload-getting-started
 tags: getting,started
 published: True
-position: 2
+position: 3
 site_name: Silverlight
 ---
 

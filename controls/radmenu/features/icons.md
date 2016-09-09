@@ -26,7 +26,7 @@ By using static items you can directly access the __Icon__ property of each item
 
 #### __XAML__
 
-{{region radmenu-features-icons_0}}
+{{region xaml-radmenu-features-icons_0}}
 	<telerik:RadMenuItem Header="New File">
 	    <telerik:RadMenuItem.Icon>
 	        <Image Source="/Images/newFile.png"
@@ -49,7 +49,7 @@ The specific here is that your data item should expose a property of type __Imag
 
 #### __C#__
 
-{{region radmenu-features-icons_1}}
+{{region cs-radmenu-features-icons_1}}
 	public class MenuItem
 	{
 	    ...
@@ -77,7 +77,7 @@ The specific here is that your data item should expose a property of type __Imag
 
 #### __VB.NET__
 
-{{region radmenu-features-icons_2}}
+{{region vb-radmenu-features-icons_2}}
 	Public Class MenuItem
 	 ...
 	 Public Property IconUrl() As Uri

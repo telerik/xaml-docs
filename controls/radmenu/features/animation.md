@@ -19,7 +19,7 @@ Here is the default animation value.
 
 #### __XAML__
 
-{{region radmenu-features-animation_0}}
+{{region xaml-radmenu-features-animation_0}}
 	<telerik:RadMenu>
 	    <telerikAnimation:AnimationManager.AnimationSelector>
 	        <telerikAnimation:AnimationSelector>
@@ -50,7 +50,7 @@ In order to add an animation for the collapsing of the popup you have to define 
 
 #### __XAML__
 
-{{region radmenu-features-animation_1}}
+{{region xaml-radmenu-features-animation_1}}
 	<telerik:RadMenu VerticalAlignment="Top" HorizontalAlignment="Left">
 	    <telerikAnimation:AnimationManager.AnimationSelector>
 	        <telerikAnimation:AnimationSelector>

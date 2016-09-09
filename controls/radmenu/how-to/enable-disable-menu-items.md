@@ -24,7 +24,7 @@ Disabling all menu items can be easily done by just setting the __IsEnabled__ pr
 
 #### __XAML__
 
-{{region radmenu-how-to-enable-disable-menu-items_0}}
+{{region xaml-radmenu-how-to-enable-disable-menu-items_0}}
 	<telerik:RadMenu VerticalAlignment="Top"
 	                           IsEnabled="False">
 	    ...
@@ -41,7 +41,7 @@ To disable a static menu item you just have to set its __IsEnabled__ property to
 
 #### __XAML__
 
-{{region radmenu-how-to-enable-disable-menu-items_1}}
+{{region xaml-radmenu-how-to-enable-disable-menu-items_1}}
 	<telerik:RadMenuItem Header="Save as ..." IsEnabled="False" />
 {{endregion}}
 
@@ -57,7 +57,7 @@ In order to disable a dynamic menu item you have to bind its __IsEnabled__ prope
 
 #### __XAML__
 
-{{region radmenu-how-to-enable-disable-menu-items_2}}
+{{region xaml-radmenu-how-to-enable-disable-menu-items_2}}
 	<telerik:HierarchicalDataTemplate x:Key="ItemTemplate"
 	                                  ItemsSource="{Binding SubItems}">
 	    <telerik:ContainerBinding.ContainerBindings>

@@ -20,7 +20,7 @@ Here is an example of a definition of a checkable __RadMenuItem__:
 
 #### __XAML__
 
-{{region radmenu-features-checkable-items_0}}
+{{region xaml-radmenu-features-checkable-items_0}}
 	<telerik:RadMenuItem Header="Status Bar" IsCheckable="True" />
 {{endregion}}
 

@@ -69,7 +69,7 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 
 ## RadWordsDictionary
 
-**RadWordsDictionary** implements the __IWordDictionary__ interface and is capable of reading the words from text files containing one word per line. An example of such files are the **.dic** dictionaries. **Example 2** shows you how to create a RadWordsDictionary instance from stream.
+**RadWordsDictionary** implements the __IWordDictionary__ interface and is capable of reading the words from text files containing one word per line. An example of such files are the **.dic** dictionaries. **Example 2** shows you how to create a RadWordsDictionary instance from a stream.
 
 #### **[C#] Example 2: Load stream in RadWordsDictionary**
 {{region radrichtextbox-features-spellcheck_8}}
@@ -110,9 +110,9 @@ One of the constructor overloads of the RadWordsDictionary class enables you to 
 
 ## Custom Dictionaries
 
-One feature of the __SpellChecker__ in __RadRichTextBox__ is to add a word to a user-defined custom dictionary to enable domain-specific applications. Such dictionary should implement the __IWordCustomDictionary__ interface. For that purpose the __RadRichTextBox__ provides you with the __RadIsolatedStorageCustomDictionary__ class out of the box. It allows you to persist the word list in a file located in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}’s Isolated Storage.
+One feature of the __SpellChecker__ in __RadRichTextBox__ is to add a word to a user-defined custom dictionary to enable domain-specific applications. Such dictionary should implement the __IWordCustomDictionary__ interface. For that purpose, the __RadRichTextBox__ provides you with the __RadIsolatedStorageCustomDictionary__ class out of the box. It allows you to persist the word list in a file located in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}’s Isolated Storage.
 
-Here is an example of a such dictionary which adds the words in the "CustomDictionary.txt" marked as a Site-scoped IsolatedSotrageFile.
+Here is an example of such dictionary which adds the words in the "CustomDictionary.txt" marked as a Site-scoped IsolatedSotrageFile.
 
 >The __IsolatedStorageScope__ enumeration has the following values: 
 >  *  __Site__ - the dictionary defined in this scope is available for each application hosted on the same site.
@@ -150,13 +150,12 @@ If you want to have a temporary custom dictionary, that will only be available f
 
 ## Adding a Word
 
-To add a word to a dictionary you can either use the __AddWord()__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This done done by passing the desired culture as parameter to the method.
+To add a word to a dictionary you can either use the __AddWord()__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This is done by passing the desired culture as a parameter to the method.
 
->Using the overload of the __AddWord()__ method that takes only the word as argument is equal to using the second overload and passing __CultureInfo.InvariantCulture__ as argument.
+>Using the overload of the __AddWord()__ method that takes only the word as an argument is equal to using the second overload and passing __CultureInfo.InvariantCulture__ as an argument.
 
 Using the __AddWord()__ method of the dictionary itself will add the word only to the respective dictionary.
 
-Here is an example.
 
 #### __[C#] Example 5: Adding a word to a dictionary__
 
@@ -182,7 +181,7 @@ Here is an example.
 
 >The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__.
 
-#### __[C#] Example 6: Loading a dictionary and assosiating it with a culture__
+#### __[C#] Example 6: Loading a dictionary and associating it with a culture__
 
 {{region radrichtextbox-features-spellcheck_6}}
     private void LoadDictionaryWithCulture(Stream tdfFileStream)
@@ -195,7 +194,7 @@ Here is an example.
 
 
 
-#### __[VB.NET] Example 6: Loading a dictionary and assosiating it with a culture__
+#### __[VB.NET] Example 6: Loading a dictionary and associating it with a culture__
 
 {{region radrichtextbox-features-spellcheck_7}}
 	 Private Sub LoadDictionaryWithCulture(ByVal tdfFileStream As Stream)

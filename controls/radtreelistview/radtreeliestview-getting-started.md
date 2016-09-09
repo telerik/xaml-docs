@@ -12,15 +12,28 @@ position: 3
 
 This article will guide you through the process of creating a sample application with __RadTreeListView__.
 
+* [RadTreeListView vs RadGridView](#radtreelistview-vs-radgridview)
+
 * [Assembly References](#assembly-references)
 
 * [Add RadTreeListView to Your Application](#add-radtreelistview-to-the-project)
 
-* [Prepare Sample Data](#prepare-sample-data)
+* [Populating with Data](#populating-with-data)
 
 * [Columns](#columns)
 
-* [RadTreeListView vs RadGridView](#radtreelistview-vs-radgridview)
+## RadTreeListView vs RadGridView
+
+You should use the __RadTreeListView__ control to display hierarchical data in a tabular format. In order to achieve this, the control combines the functionality of __RadGridView__ control with the ability to display data in a tree view manner. This is implemented by directly inheriting __RadGridView__ and implementing the tree view behavior.
+
+__RadTreeListView__ displays the data in the same way as __RadGridView__. The difference is that each row plays the role of a tree node, which can be expanded or collapsed.
+
+Please note that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
+
+
+>important Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
+
+>tip You can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
 
 ## Assembly References
 
@@ -54,7 +67,6 @@ After you make sure you have added the needed assembly references, you can eithe
 	<telerik:RadTreeListView x:Name="radTreeListView">
 	</telerik:RadTreeListView>
 {{endregion}}
-
 
 ## Populating with Data
 
@@ -143,8 +155,6 @@ The example will use a collection that represents the contents of a warehouse. I
 
 {{endregion}}
 
-
-
 #### __[VB.NET] Example 3: Defining a Sample Business Model__
 
 {{region radtreeliestview-getting-started_5}}
@@ -210,8 +220,6 @@ The example will use a collection that represents the contents of a warehouse. I
 	End Class
 {{endregion}}
 
-
-
 Here is an example class that dynamically creates the sample data.
 
 #### __[C#] Example 4: Create Sample Data__
@@ -245,8 +253,6 @@ Here is an example class that dynamically creates the sample data.
 	    }
 	}
 {{endregion}}
-
-
 
 #### __[VB.NET] Example 4: Create Sample Data__
 
@@ -331,8 +337,6 @@ In order to display your data, you need to bind the __ItemsSource__ property of 
 
 {{endregion}}
 
-
-
 At this point, only the first level of the hierarchical data will get displayed and __RadTreeListView__ will look just like a __RadGridView__. 
 
 __Figure 1: RadTreeListView bound to collection of WarehouseItems__
@@ -377,11 +381,8 @@ By default, __RadTreeListView__ will auto-generate the columns for its data by c
 	</telerik:RadTreeListView>
 {{endregion}}
 
-
-
 >tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns, read [here]({%slug radgridview-columns-column-types-basic-column%}).
         
-
 >tip To change the column, which holds the tree view UI, use the __HierarchyColumnIndex__ property.
 
 __Figure 2__ shows a snapshot of the result.
@@ -390,18 +391,6 @@ __Figure 2: RadTreeListView with manually defined columns__
 
 ![](images/RadTreeListView_GettingStarted_01.png)
 
-## RadTreeListView vs RadGridView
-
-You should use the __RadTreeListView__ control to display hierarchical data in a tabular format. In order to achieve this, the control combines the functionality of __RadGridView__ control with the ability to display data in a tree view manner. This is implemented by directly inheriting __RadGridView__ and implementing the tree view behavior.
-
-__RadTreeListView__ displays the data in the same way as __RadGridView__. The difference is that each row plays the role of a tree node, which can be expanded or collapsed.
-
-Please note that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
-
-
-Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
-
->tip You can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
 
 # See Also
 

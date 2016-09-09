@@ -28,7 +28,7 @@ For the purpose of this tutorial the following declaration will be used:
 
 #### __XAML__
 
-{{region gridview-group-footers_0}}
+{{region xaml-gridview-group-footers_0}}
 
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -49,7 +49,7 @@ In order to enable the group footers functionality, merely set __ShowGroupFooter
 
 #### __XAML__
 
-{{region gridview-group-footers_1}}
+{{region xaml-gridview-group-footers_1}}
 
 	<telerik:RadGridView x:Name="radGridView" ShowGroupFooters="True">
 {{endregion}}
@@ -62,7 +62,7 @@ The same operation can be done in the code-behind.
 
 #### __C#__
 
-{{region gridview-group-footers_2}}
+{{region cs-gridview-group-footers_2}}
 	private void EnableGroupFooters()
 	{
 	    this.radGridView.ShowGroupFooters = true;
@@ -71,7 +71,7 @@ The same operation can be done in the code-behind.
 
 #### __VB.NET__
 
-{{region gridview-group-footers_3}}
+{{region vb-gridview-group-footers_3}}
 
 	Private Sub EnableGroupFooters()
 	    Me.radGridView.ShowGroupFooters = True
@@ -86,7 +86,7 @@ If you want your group footers to have a static content, simply configure __Grou
 
 #### __XAML__
 
-{{region gridview-group-footers_4}}
+{{region xaml-gridview-group-footers_4}}
 
 	<UserControl.Resources>
 	    <DataTemplate x:Key="GroupFooterTemplate">
@@ -113,7 +113,7 @@ The group footers are most commonly used to visualize calculations from aggregat
 
 #### __XAML__
 
-{{region gridview-group-footers_5}}
+{{region xaml-gridview-group-footers_5}}
 
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False" ShowGroupFooters="True">
 	    <telerik:RadGridView.Columns>

@@ -18,7 +18,7 @@ You can define sorting criteria either in the XAML or in the code-behind.
 
 #### __XAML__
 
-{{region gridview-overview-sorting_0}}
+{{region xaml-gridview-overview-sorting_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -36,7 +36,7 @@ You can achieve the same result if you define your sorting criteria in the code-
 
 #### __C#__
 
-{{region gridview-overview-sorting_2}}
+{{region cs-gridview-overview-sorting_2}}
 
 	SortDescriptor descriptor = new SortDescriptor();
 	descriptor.Member = "EmployeeID";
@@ -47,7 +47,7 @@ You can achieve the same result if you define your sorting criteria in the code-
 
 #### __VB.NET__
 
-{{region gridview-overview-sorting_3}}
+{{region vb-gridview-overview-sorting_3}}
 
 	Dim descriptor As New SortDescriptor()
 	descriptor.Member = "EmployeeID"

@@ -36,7 +36,7 @@ You can subscribe to the events either declaratively or from the code-behind, as
 
 #### __[XAML] Example 1: Subscribe to events declaratively__
 
-	{{region gridview-export-events_0}}
+	{{region xaml-gridview-export-events_0}}
 	<telerik:RadGridView x:Name="RadGridView1"
 	                     ElementExporting="RadGridView1_ElementExporting"
 	                     ElementExported="RadGridView1_ElementExported">
@@ -44,7 +44,7 @@ You can subscribe to the events either declaratively or from the code-behind, as
 
 #### __[C#] Example 2: Subscribe to events from the code-behind__
 
-	{{region gridview-export-events_1}}
+	{{region cs-gridview-export-events_1}}
 	RadGridView1.ElementExporting += new EventHandler<GridViewElementExportingEventArgs>(RadGridView1_ElementExporting);
 	RadGridView1.ElementExported += new EventHandler<GridViewElementExportedEventArgs>(RadGridView1_ElementExported);
 	{{endregion}}
@@ -52,7 +52,7 @@ You can subscribe to the events either declaratively or from the code-behind, as
 
 #### __[VB.NET] Example 2: Subscribe to events from the code-behind__
 
-	{{region gridview-export-events_2}}
+	{{region vb-gridview-export-events_2}}
 	AddHandler RadGridView1.ElementExporting, AddressOf RadGridView1_ElementExporting
 	AddHandler RadGridView1.ElementExported, AddressOf RadGridView1_ElementExported
 	{{endregion}}
@@ -97,7 +97,7 @@ You can use the __ElementExported__ event if you want to write additional data t
 
 #### __[C#] Example 3: Add row details to the exported data__
 
-	{{region gridview-export-events_5}}
+	{{region cs-gridview-export-events_5}}
 	private void RadGridView1_ElementExported(object sender, GridViewElementExportedEventArgs e)
 	{
 	    if (e.Element == ExportElement.Row)
@@ -120,7 +120,7 @@ You can use the __ElementExported__ event if you want to write additional data t
 
 #### __[VB.NET] Example 3: Add row details to the exported data__
 
-	{{region gridview-export-events_6}}
+	{{region vb-gridview-export-events_6}}
 	Private Sub RadGridView1_ElementExported(sender As Object, e As GridViewElementExportedEventArgs)
 	 If e.Element = ExportElement.Row Then
 	  Dim obj As Employees = TryCast(e.Context, Employees)
@@ -171,7 +171,7 @@ You can define a style when the __InitializingExcelMLStyles__ event is raised, a
         
 #### __[C#] Example 4: Define a style__
 
-	{{region gridview-export-events_7}}
+	{{region cs-gridview-export-events_7}}
 	ExcelMLStyle style = new ExcelMLStyle("0");            
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
 	e.Styles.Add(style);
@@ -179,7 +179,7 @@ You can define a style when the __InitializingExcelMLStyles__ event is raised, a
 
 #### __[VB.NET] Example 4: Define a style__
 
-	{{region gridview-export-events_8}}
+	{{region vb-gridview-export-events_8}}
 	Dim style As New ExcelMLStyle("0")
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic
 	e.Styles.Add(style)
@@ -223,7 +223,7 @@ __Example 5__ shows how to use __ExcelMLStyle__.
 
 #### __[C#] Example 5: Modify the style before exporting__
 
-	{{region gridview-export-events_9}}
+	{{region cs-gridview-export-events_9}}
 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
 		ExcelMLStyle style = new ExcelMLStyle("0");
@@ -262,7 +262,7 @@ __Example 5__ shows how to use __ExcelMLStyle__.
 
 #### __[VB.NET] Example 5: Modify the style before exporting__
 
-	{{region gridview-export-events_10}}
+	{{region vb-gridview-export-events_10}}
 	Private Sub clubsGrid_InitializingExcelMLStyles_1(sender As Object, e As ExcelMLStylesEventArgs)
 		Dim style As New ExcelMLStyle("0")
 	

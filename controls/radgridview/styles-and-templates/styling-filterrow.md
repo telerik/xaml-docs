@@ -45,7 +45,7 @@ The __StringFilterEditor__ is nothing more than a __TextBox__ and a __ToggleButt
 
 #### __[XAML] Example 1: Styling the StringFilterEditor__
 
-	{{region gridview-styling-filter-row-1}}
+	{{region xaml-gridview-styling-filter-row-1}}
     <Style TargetType="{x:Type Editors:StringFilterEditor}">
 		<Setter Property="Template" Value="{StaticResource StringFilterEditorTemplate}"/>
 		<Setter Property="IsTabStop" Value="False"/>
@@ -61,7 +61,7 @@ In order to change RadDropDownButton's (the funnel) visual appearance, you shoul
 
 #### __[XAML] Example 2: Styling the FieldFilterControl__
 
-	{{region gridview-styling-filter-row-2}}
+	{{region xaml-gridview-styling-filter-row-2}}
     <Style TargetType="{x:Type telerik:FieldFilterControl}">
 		<Setter Property="Template" Value="{StaticResource FieldFilterControlTemplate}"/>
         <Setter Property="Padding" Value="5"/>
@@ -76,7 +76,7 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 
 #### __[C#] Example 3: Setting a background for the filtering row TextBox__
 
-	{{region gridview-styling-filter-row-3}}
+	{{region cs-gridview-styling-filter-row-3}}
 	private void clubsGrid_FieldFilterEditorCreated(object sender, EditorCreatedEventArgs e)
     {
         if (e.Column.UniqueName == "StadiumCapacity")
@@ -92,7 +92,7 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 
 #### __[VB.NET] Example 3: Setting a background for the filtering row TextBox__
 
-	{{region gridview-styling-filter-row-4}}
+	{{region vb-gridview-styling-filter-row-4}}
     Private Sub clubsGrid_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
         If e.Column.UniqueName = "StadiumCapacity" Then
             Dim txtBox As TextBox = TryCast(e.Editor, TextBox)

@@ -45,13 +45,13 @@ After you've acquired your data, you have to set it as the __ItemsSource__ of yo
 
 #### __[C#] Example 1: Setting RadGridView's ItemsSource__
 
-	{{region gridview-working-with-data_0}}
+	{{region cs-gridview-working-with-data_0}}
 	this.RadGridView.ItemsSource = SampleData.GetData();
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Setting RadGridView's ItemsSource__
 
-	{{region gridview-working-with-data_1}}
+	{{region vb-gridview-working-with-data_1}}
 	Me.RadGridView.ItemsSource = SampleData.GetData()
 	{{endregion}}
 

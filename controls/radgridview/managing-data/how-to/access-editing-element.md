@@ -20,7 +20,7 @@ To make the editing textbox wraps the text as well you need to subscribe to the 
 
 #### __C#__
 
-{{region gridview-access-editing-element_0}}
+{{region cs-gridview-access-editing-element_0}}
 
 	private void clubsGrid_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
@@ -34,7 +34,7 @@ To make the editing textbox wraps the text as well you need to subscribe to the 
 
 #### __VB.NET__
 
-{{region gridview-access-editing-element_1}}
+{{region vb-gridview-access-editing-element_1}}
 
 	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	 If DirectCast(e.Column.Header, String) = "Name" Then
@@ -52,7 +52,7 @@ Ok, what if I do not want have this text selected, but want to have the cursor p
 
 #### __C#__
 
-{{region gridview-access-editing-element_2}}
+{{region cs-gridview-access-editing-element_2}}
 
 	private void clubsGrid_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{   
@@ -67,7 +67,7 @@ Ok, what if I do not want have this text selected, but want to have the cursor p
 
 #### __VB.NET__
 
-{{region gridview-access-editing-element_3}}
+{{region vb-gridview-access-editing-element_3}}
 
 	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	 If DirectCast(e.Column.Header, String) = "Name" Then

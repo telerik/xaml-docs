@@ -22,7 +22,7 @@ Here, under the section of <Property Group> is the element <Supported Cultures>.
 
 #### __XAML__
 
-{{region gridview-localization-setting-default-startup-language3_0}}
+{{region xaml-gridview-localization-setting-default-startup-language3_0}}
 
 	<SupportedCultures>es</SupportedCultures>
 {{endregion}}
@@ -35,7 +35,7 @@ The next step for defining the language settings of the application is change th
                   
 #### __C#__
 
-{{region gridview-localization-setting-default-startup-language3_1}}
+{{region cs-gridview-localization-setting-default-startup-language3_1}}
 
 	private void Application_Startup(object sender, StartupEventArgs e)
 	{
@@ -48,7 +48,7 @@ The next step for defining the language settings of the application is change th
 
 #### __VB.NET__
 
-{{region gridview-localization-setting-default-startup-language3_2}}
+{{region vb-gridview-localization-setting-default-startup-language3_2}}
 
 	Private Sub Application_Startup(ByVal sender As Object, ByVal e As StartupEventArgs)
 	     Thread.CurrentThread.CurrentCulture = New CultureInfo("es")
@@ -64,7 +64,7 @@ The thing that you must do for defining the language settings of the application
 
 #### __C#__
 
-{{region gridview-localization-setting-default-startup-language3_3}}
+{{region cs-gridview-localization-setting-default-startup-language3_3}}
 
 	public App()
 	{
@@ -75,7 +75,7 @@ The thing that you must do for defining the language settings of the application
 
 #### __VB.NET__
 
-{{region gridview-localization-setting-default-startup-language3_4}}
+{{region vb-gridview-localization-setting-default-startup-language3_4}}
 
 	Public Sub New()
 	    Thread.CurrentThread.CurrentCulture = New CultureInfo("es")

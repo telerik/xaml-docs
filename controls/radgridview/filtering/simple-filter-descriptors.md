@@ -16,7 +16,7 @@ And now you can create a descriptor:
 
 #### __XAML__
 
-{{region radgridview-filtering-simple-filter-descriptors_1}}
+{{region xaml-radgridview-filtering-simple-filter-descriptors_1}}
 
 	<telerik:FilterDescriptor Member="Country"
                               Operator="IsEqualTo"
@@ -26,7 +26,7 @@ And now you can create a descriptor:
 
 #### __C#__
 
-{{region radgridview-filtering-simple-filter-descriptors_2}}
+{{region cs-radgridview-filtering-simple-filter-descriptors_2}}
 
 	FilterDescriptor descriptor = new FilterDescriptor();
 	descriptor.Member = "Country";
@@ -37,7 +37,7 @@ And now you can create a descriptor:
 
 #### __VB.NET__
 
-{{region radgridview-filtering-simple-filter-descriptors_3}}
+{{region vb-radgridview-filtering-simple-filter-descriptors_3}}
 
 	Dim descriptor As New FilterDescriptor()
 	descriptor.Member = "Country"
@@ -58,7 +58,7 @@ To use the created descriptor to filter the data in the __RadGridView__ you have
 
 #### __XAML__
 
-{{region radgridview-filtering-simple-filter-descriptors_4}}
+{{region xaml-radgridview-filtering-simple-filter-descriptors_4}}
 
 	<telerik:RadGridView x:Name="radGridView">
 	    <telerik:RadGridView.FilterDescriptors>
@@ -74,14 +74,14 @@ When you add a new descriptor to the collection, the data is automatically filte
 
 #### __C#__
 
-{{region radgridview-filtering-simple-filter-descriptors_5}}
+{{region cs-radgridview-filtering-simple-filter-descriptors_5}}
 
 	this.radGridView.FilterDescriptors.Add( descriptor );
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radgridview-filtering-simple-filter-descriptors_6}}
+{{region vb-radgridview-filtering-simple-filter-descriptors_6}}
 
 	Me.radGridView.FilterDescriptors.Add(descriptor)
 {{endregion}}

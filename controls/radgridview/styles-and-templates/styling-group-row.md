@@ -40,7 +40,7 @@ You have two options:
 
 #### __[XAML] Example 1: Targetting GridViewGroupRow__
 
-	{{region gridview-styling-group-row-1}}
+	{{region xaml-gridview-styling-group-row-1}}
 	<Style TargetType="{x:Type telerik:GridViewGroupRow}">
         <Setter Property="MinHeight" Value="60" />
     </Style>
@@ -58,7 +58,7 @@ If you have set your **GroupRenderMode** to **Flat**, your style should target t
 
 #### __[XAML] Example 2: Targetting GroupHeaderRow__
 
-	{{region gridview-styling-group-row-2}}
+	{{region xaml-gridview-styling-group-row-2}}
 	<Style TargetType="{x:Type telerik:GroupHeaderRow}">
         <Setter Property="MinHeight" Value="60" />
     </Style>
@@ -72,7 +72,7 @@ The __RadGridView__ exposes the __GroupRowStyle__ property of type __Style__. It
 
 #### __[XAML] Example 2: Setting RadGridView's GroupRowStyle__
 
-	{{region gridview-styling-cell_1}}
+	{{region xaml-gridview-styling-cell_1}}
 	<telerik:RadGridView GroupRowStyle="{StaticResource GroupRowStyle}" />
 	{{endregion}}
 

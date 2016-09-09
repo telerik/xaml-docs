@@ -15,7 +15,7 @@ GridViewComboBoxColumn does not expose a SelectionChanged event itself. In case 
 
 #### __C#__
 
-{{region gridview-columns-howto-selectionchanged-comboboxcolumn_1}}
+{{region cs-gridview-columns-howto-selectionchanged-comboboxcolumn_1}}
 
 	public MainWindow()
     {
@@ -37,7 +37,7 @@ GridViewComboBoxColumn does not expose a SelectionChanged event itself. In case 
 
 #### __C#__
 
-{{region gridview-columns-howto-selectionchanged-comboboxcolumn_2}}
+{{region cs-gridview-columns-howto-selectionchanged-comboboxcolumn_2}}
 
     public MainPage()
     {

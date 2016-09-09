@@ -34,7 +34,7 @@ For example:
 
 #### __[C#]Example 1: Set the properties of the VisualParameters:__
 
-{{region gridview-export-async_6}}
+{{region cs-gridview-export-async_6}}
 
 	  private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
         {

@@ -42,7 +42,7 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all group footer rows of an application__
 
-	{{region gridview-styling-group-footers-1}}
+	{{region xaml-gridview-styling-group-footers-1}}
 	<Style TargetType="telerik:GridViewGroupFooterRow">
 		<Setter Property="Foreground" Value="White"/>
 		<Setter Property="Background" Value="LightBlue"/>
@@ -57,7 +57,7 @@ RadGridView's footer rows can also be styled by creating an appropriate __Style_
 
 #### __[XAML] Example 2: Setting RadGridView's GroupFooterRowStyle__
 
-	{{region gridview-styling-group-footers-2}}
+	{{region xaml-gridview-styling-group-footers-2}}
 	<telerik:RadGridView GroupFooterRowStyle="{StaticResource GridViewFooterRowStyle}" />
 	{{endregion}}
 
@@ -75,7 +75,7 @@ To do so, first create a new class that inherits the **StyleSelector** class and
 
 #### __[C#] Example 3: The GroupFooterRowStyleSelector class__
 
-	{{region gridview-styling-group-footers-3}}
+	{{region cs-gridview-styling-group-footers-3}}
 	public class GroupFooterRowStyleSelector : StyleSelector
     {
         public override Style SelectStyle(object item, DependencyObject container)
@@ -104,7 +104,7 @@ To do so, first create a new class that inherits the **StyleSelector** class and
 
 #### __[VB.NET] Example 3: The GroupFooterRowStyleSelector class__
 	
-	{{region gridview-styling-group-footers-4}}
+	{{region vb-gridview-styling-group-footers-4}}
 	Public Class GroupFooterRowStyleSelector
 	Inherits StyleSelector
 		Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
@@ -147,7 +147,7 @@ In the XAML file, define the style selector as a resource and set the properties
 
 #### __[XAML] Example 4: Setting the BigGroupStyle and SmallGroupStyle__
 
-	{{region gridview-styling-group-footers-6}}
+	{{region xaml-gridview-styling-group-footers-6}}
 	<Grid.Resources>
         <my:GroupFooterRowStyleSelector x:Key="StadiumCapacityStyleSelector">
             <my:GroupFooterRowStyleSelector.BigGroupStyle>
@@ -170,7 +170,7 @@ Finally, set the **MergedCellsStyleSelector** property:
 
 #### __[XAML] Example 5: Setting the GroupFooterRowStyleSelector property__
 
-	{{region gridview-styling-group-footers-7}}
+	{{region xaml-gridview-styling-group-footers-7}}
 	<telerik:RadGridView GroupFooterRowStyleSelector="{StaticResource GroupFooterRowStyleSelector}" />
 	{{endregion}}
 
@@ -186,7 +186,7 @@ In order to style all __RadGridView__ cells of an application, you should create
 
 #### __[XAML] Example 6: Styling all group footer cells of an application__
 
-	{{region gridview-styling-group-footers-8}}
+	{{region xaml-gridview-styling-group-footers-8}}
 	<Style TargetType="telerik:GridViewGroupFooterCell">
 		<Setter Property="BorderBrush" Value="Red"/>
 		<Setter Property="Background" Value="Blue"/>
@@ -201,7 +201,7 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 
 #### __[XAML] Example 7: Setting a column's GroupFooterCellStyle__
 
-	{{region gridview-styling-group-footers-9}}
+	{{region xaml-gridview-styling-group-footers-9}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
                                 Header="Name"
                                 GroupFooterCellStyle="{StaticResource GridViewFooterCellStyle}" />

@@ -21,7 +21,7 @@ For example:Selected State
 
 #### __XAML__
 
-{{region gridview-how-to-modify-foreground-row_0}}
+{{region xaml-gridview-how-to-modify-foreground-row_0}}
 
 	<VisualState x:Name="Selected">
 	    <Storyboard>
@@ -51,7 +51,7 @@ MouseOver State
 
 #### __XAML__
 
-{{region gridview-how-to-modify-foreground-row_1}}
+{{region xaml-gridview-how-to-modify-foreground-row_1}}
 
 	<VisualState x:Name="MouseOver">
 	    <Storyboard>
@@ -76,7 +76,7 @@ You may also add your own brush resources with an appropriate color for this ani
         
 #### __XAML__
 
-{{region gridview-how-to-modify-foreground-row_2}}
+{{region xaml-gridview-how-to-modify-foreground-row_2}}
 
 	<SolidColorBrush x:Key="GridView_ItemForeground_Selected" Color="Green"/>
 	<SolidColorBrush x:Key="GridView_ItemForeground_Over" Color="Red"/>

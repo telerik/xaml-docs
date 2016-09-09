@@ -24,13 +24,13 @@ There are two ways to insert a new row in RadGridView — by pressing the __Inse
 
 #### __[C#] Example 1: Adding new rows with BeginInsert()__
 
-	{{region gridview-managing-data-add-new-entries_0}}
+	{{region cs-gridview-managing-data-add-new-entries_0}}
 	this.AddingNewRowsGrid.BeginInsert();
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Adding new rows with BeginInsert()__
 
-	{{region gridview-managing-data-add-new-entries_1}}
+	{{region vb-gridview-managing-data-add-new-entries_1}}
 	Me.AddingNewRowsGrid.BeginInsert()
 	{{endregion}}
 
@@ -48,7 +48,7 @@ The next step in implementing the adding functionality is to attach event handle
 
 #### __[XAML] Example 2: Add handlers for the AddingNewDataItem and RowEditEnded events__
 
-	{{region gridview-managing-data-add-new-entries_5}}
+	{{region xaml-gridview-managing-data-add-new-entries_5}}
 	<telerik:RadGridView x:Name="radGridView"
                          AddingNewDataItem="radGridView_AddingNewDataItem"
                          RowEditEnded="radGridView_RowEditEnded" />
@@ -58,7 +58,7 @@ The __AddingNewDataItem__ event is raised before a new row is added to RadGridVi
 
 #### __[C#] Example 3: The AddingNewDataItem event handler__
 
-	{{region gridview-managing-data-add-new-entries_6}}
+	{{region cs-gridview-managing-data-add-new-entries_6}}
 	private void radGridView_AddingNewDataItem( object sender, GridViewAddingNewEventArgs e )
 	{
 	    var employee = new Employee();
@@ -70,7 +70,7 @@ The __AddingNewDataItem__ event is raised before a new row is added to RadGridVi
 
 #### __[VB.NET] Example 3: The AddingNewDataItem event handler__
 
-	{{region gridview-managing-data-add-new-entries_7}}
+	{{region vb-gridview-managing-data-add-new-entries_7}}
 	Private Sub radGridView_AddingNewDataItem(ByVal sender As Object, ByVal e As GridViewAddingNewEventArgs)
 	    Dim employee = New Employee()
 		employee.FirstName = "John"
@@ -83,7 +83,7 @@ If the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly 
 
 #### __[C#] Example 4: Adding a new item to a DataTable__
 
-	{{region gridview-managing-data-add-new-entries_12}}
+	{{region cs-gridview-managing-data-add-new-entries_12}}
 	radGridView_AddingNewDataItem(object sender, GridViewAddingNewEventArgs e)
 	{
 	    e.Cancel = true;
@@ -96,7 +96,7 @@ If the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly 
 
 #### __[VB.NET] Example 4: Adding a new item to a DataTable__
 
-	{{region gridview-managing-data-add-new-entries_13}}
+	{{region vb-gridview-managing-data-add-new-entries_13}}
     Private Sub New(sender As Object, e As GridViewAddingNewEventArgs)
 		e.Cancel = True
 		Dim newRow = TryCast(e.OwnerGridViewItemsControl.ItemsSource, DataView).AddNew()
@@ -124,7 +124,7 @@ You can access __EditAction__ (__Commit__ or __Cancel__) and __GridViewEditOpera
 
 #### __[C#] Example 5: Handling the RowEditEnded event__
 
-	{{region gridview-managing-data-add-new-entries_10}}
+	{{region cs-gridview-managing-data-add-new-entries_10}}
 	private void radGridView_RowEditEnded( object sender, GridViewRowEditEndedEventArgs e )
 	{
 	    if (e.EditAction == GridViewEditAction.Cancel)
@@ -141,7 +141,7 @@ You can access __EditAction__ (__Commit__ or __Cancel__) and __GridViewEditOpera
 
 #### __[VB.NET] Example 5: Handling the RowEditEnded event__
 
-	{{region gridview-managing-data-add-new-entries_11}}
+	{{region vb-gridview-managing-data-add-new-entries_11}}
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 	    If e.EditAction = GridViewEditAction.Cancel Then
 	        Exit Sub

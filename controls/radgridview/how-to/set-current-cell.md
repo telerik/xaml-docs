@@ -16,7 +16,7 @@ The code below shows how to set the current cell (it will be on the sixth row an
 
 #### __C#__
 
-{{region gridview-how-to-set-current-cell_0}}
+{{region cs-gridview-how-to-set-current-cell_0}}
 
 	public MainPage()
 	{
@@ -36,7 +36,7 @@ The code below shows how to set the current cell (it will be on the sixth row an
 
 #### __VB.NET__
 
-{{region gridview-how-to-set-current-cell_1}}
+{{region vb-gridview-how-to-set-current-cell_1}}
 
 	Public Sub New()
 	 InitializeComponent()

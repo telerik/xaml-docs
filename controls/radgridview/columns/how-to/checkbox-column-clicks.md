@@ -32,7 +32,7 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 
 #### __XAML__
 
-{{region gridview-checkbox-column-clicks_1}}
+{{region xaml-gridview-checkbox-column-clicks_1}}
 
 	<telerik:GridViewCheckBoxColumn Name="CheckBoxColumn"
 	            EditTriggers="CellClick"
@@ -43,7 +43,7 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 
 #### __C#__
 
-{{region gridview-checkbox-column-clicks_2}}
+{{region cs-gridview-checkbox-column-clicks_2}}
 
 	private void gridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
 	{
@@ -68,7 +68,7 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 
 #### __VB.NET__
 
-{{region gridview-checkbox-column-clicks_3}}
+{{region vb-gridview-checkbox-column-clicks_3}}
 
     Private Sub gridView_AutoGeneratingColumn(sender As Object, e As GridViewAutoGeneratingColumnEventArgs)
         Dim dataColumn = TryCast(e.Column, GridViewDataColumn)
@@ -93,7 +93,7 @@ Another approach would be to leverage the __CellTemplate__ of GridViewDataColumn
 
 #### __XAML__
 
-{{region gridview-checkbox-column-clicks_0}}
+{{region xaml-gridview-checkbox-column-clicks_0}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding IsActive}" 
 	                            IsReadOnly="True">

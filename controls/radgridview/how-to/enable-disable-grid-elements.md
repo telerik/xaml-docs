@@ -26,7 +26,7 @@ You can __disable whole column__ by changing the __IsEnabled__ property of each 
 
 #### __XAML__
 
-{{region gridview-enable-disable-grid-elements_0}}
+{{region xaml-gridview-enable-disable-grid-elements_0}}
 
 	<Style x:Key="disabledStyle" TargetType="telerik:GridViewCell">
 		<Setter Property="IsEnabled" Value="False"/>
@@ -35,7 +35,7 @@ You can __disable whole column__ by changing the __IsEnabled__ property of each 
 
 #### __XAML__
 
-{{region gridview-enable-disable-grid-elements_1}}
+{{region xaml-gridview-enable-disable-grid-elements_1}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}"
 	 CellStyle="{StaticResource disabledStyle}"/>
@@ -49,7 +49,7 @@ To __disable all the rows__ you need to apply a Style targeting the __GridViewRo
 
 #### __XAML__
 
-{{region gridview-enable-disable-grid-elements_2}}
+{{region xaml-gridview-enable-disable-grid-elements_2}}
 
 	<Style TargetType="telerik:GridViewRow">
 	   <Setter Property="IsEnabled" Value="False"/>

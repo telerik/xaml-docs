@@ -54,7 +54,7 @@ __After__
 For __ExportFormat.HTML__, the code you should use now is similar to:   
 #### __C#__
 
-{{region gridview-export-async_6}}
+{{region cs-gridview-export-async_6}}
 	private void radGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
@@ -78,7 +78,7 @@ Now, it is also possible to define styling for __ExportFormat.ExcelML__
 
 The type of the property for this format is __GridViewExcelMLVisualExportParameters__ and you can set it as follows:
 #### __C#__
-{{region gridview-export-async_2}}
+{{region cs-gridview-export-async_2}}
 
 	(e.VisualParameters as GridViewExcelMLVisualExportParameters).StyleId = "0";
 {{endregion}}
@@ -87,7 +87,7 @@ You can define the Style when __InitializingExcelMLStyles__ event is raised. For
           
 #### __C#__
 
-{{region gridview-export-async_4}}
+{{region cs-gridview-export-async_4}}
 
 	ExcelMLStyle style = new ExcelMLStyle("0");            
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
@@ -252,7 +252,7 @@ Now the Culture used is the one specified as a Language for the GridView (or the
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_12}}
+{{region cs-radgridview-backward-compatibility_12}}
 
     public MainWindow()
     {
@@ -265,7 +265,7 @@ Now the Culture used is the one specified as a Language for the GridView (or the
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_14}}
+{{region cs-radgridview-backward-compatibility_14}}
 
     public MainPage()
     {
@@ -339,7 +339,7 @@ Some __code changes__ are needed after the __upgrade__. Find the list with code 
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_0}}
+{{region cs-radgridview-backward-compatibility_0}}
 
     GridViewColumn ageColumn = this.radGridView.Columns["Age"];
     ColumnFilterDescriptor ageColumnFilter = new ColumnFilterDescriptor(ageColumn);
@@ -353,7 +353,7 @@ Some __code changes__ are needed after the __upgrade__. Find the list with code 
 
 #### __VB.NET__
 
-{{region radgridview-backward-compatibility_1}}
+{{region vb-radgridview-backward-compatibility_1}}
 
     Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
     Dim ageColumnFilter As New ColumnFilterDescriptor(ageColumn)
@@ -369,7 +369,7 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_2}}
+{{region cs-radgridview-backward-compatibility_2}}
 
 	    GridViewColumn ageColumn = this.radGridView.Columns["Age"];
 	    // Getting it from the property will create it and associate it with its column automatically.
@@ -387,7 +387,7 @@ __After:__
 
 #### __VB.NET__
 
-{{region radgridview-backward-compatibility_3}}
+{{region vb-radgridview-backward-compatibility_3}}
 
 	    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
 	    ' Getting it from the property will create it and associate it with its column automatically.
@@ -407,7 +407,7 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_4}}
+{{region cs-radgridview-backward-compatibility_4}}
 
 	    this.radGridView.FilterDescriptors.Remove(columnFilterDescriptor);
 {{endregion}}
@@ -416,7 +416,7 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_6}}
+{{region cs-radgridview-backward-compatibility_6}}
 
 	    // Calling ClearFilter will automatically remove filter descriptor from the grid.
 	    myColumn.ClearFilters();
@@ -427,7 +427,7 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_8}}
+{{region cs-radgridview-backward-compatibility_8}}
 
 	    this.radGridView.FilterDescriptors.Clear();
 {{endregion}}
@@ -436,7 +436,7 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_10}}
+{{region cs-radgridview-backward-compatibility_10}}
 
 	    this.radGridView.FilterDescriptors.SuspendNotifications();
 	    foreach (var column in this.radGridView.Columns)
@@ -450,7 +450,7 @@ __After:__
 
 #### __VB.NET__
 
-{{region radgridview-backward-compatibility_11}}
+{{region vb-radgridview-backward-compatibility_11}}
 
 	    Me.radGridView.FilterDescriptors.SuspendNotifications()
 	    For Each column As var In Me.radGridView.Columns

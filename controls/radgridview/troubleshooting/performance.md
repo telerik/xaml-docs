@@ -51,7 +51,7 @@ __Not Recommended__ (using the RowStyle):
 
 #### __XAML__
 
-{{region gridview-troubleshooting-performance_0}}
+{{region xaml-gridview-troubleshooting-performance_0}}
 
 	<telerik:RadGridView RowStyle="{StaticResource myRowStyle}"                     
 	                     ItemsSource="{Binding Data}" />
@@ -61,7 +61,7 @@ __Recommended__ (using implicit Style):
 
 #### __XAML__
 
-{{region gridview-troubleshooting-performance_1}}
+{{region xaml-gridview-troubleshooting-performance_1}}
 
 	<UserControl.Resources> 
 	    <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}>

@@ -16,7 +16,7 @@ First you should add a GridView to the user control and bind it to some data.
 
 #### __XAML__
 
-{{region gridview-how-to-create-row-tooltip_0}}
+{{region xaml-gridview-how-to-create-row-tooltip_0}}
 
 	<telerik:RadGridView Name="gridView" ItemsSource="{Binding}" />
 {{endregion}}
@@ -34,7 +34,7 @@ To achive that you can define a ToolTipTemplate for the column:
 
 #### __XAML__
 
-{{region gridview-how-to-create-row-tooltip_1}}
+{{region xaml-gridview-how-to-create-row-tooltip_1}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding ID}" >
 	    <telerik:GridViewColumn.ToolTipTemplate>
@@ -64,7 +64,7 @@ Two of the options to do so are:
 
 #### __XAML__
 
-{{region gridview-how-to-create-row-tooltip_2}}
+{{region xaml-gridview-how-to-create-row-tooltip_2}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
 	    <telerik:GridViewDataColumn.HeaderCellStyle>
@@ -82,7 +82,7 @@ Two of the options to do so are:
 
 #### __XAML__
 
-{{region gridview-how-to-create-row-tooltip_3}}
+{{region xaml-gridview-how-to-create-row-tooltip_3}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
 	    <telerik:GridViewDataColumn.Header>
@@ -103,7 +103,7 @@ You can define a ToolTip for the rows as follows:
 
 #### __XAML__
 
-{{region gridview-how-to-create-row-tooltip_4}}
+{{region xaml-gridview-how-to-create-row-tooltip_4}}
 
 	<Style TargetType="telerik:GridViewRow"> 
 		<Setter Property="ToolTipService.ToolTip" Value="MyToolTipText"/>

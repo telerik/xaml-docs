@@ -18,7 +18,7 @@ The ElementName binding does not work when used in column Header or CellTemplate
 #### __XAML__
 
 
-{{region gridview-troubleshooting-elementname-binding_0}}
+{{region xaml-gridview-troubleshooting-elementname-binding_0}}
 	<TextBox x:Name="TextBox1" Text="Type something" />
 	    <telerik:RadGridView ItemsSource="{Binding}" AutoGenerateColumns="False">
 	        <telerik:RadGridView.Columns>
@@ -47,7 +47,7 @@ Use a Style to set the ContentTemplate as below:
 
 #### __XAML__
 
-{{region gridview-troubleshooting-elementname-binding_1}}
+{{region xaml-gridview-troubleshooting-elementname-binding_1}}
 
 	<TextBox x:Name="TextBox1" Text="Type something" />
 	

@@ -53,7 +53,7 @@ You can subscribe to the __BeginningEdit__ event declaratively or runtime like t
 
 #### __XAML__
 
-{{region gridview-events-edit_0}}
+{{region xaml-gridview-events-edit_0}}
 
 	<telerik:RadGridView x:Name="radGridView" BeginningEdit="EditGrid_BeginningEdit"/>
 {{endregion}}
@@ -61,14 +61,14 @@ You can subscribe to the __BeginningEdit__ event declaratively or runtime like t
 
 #### __C#__
 
-{{region gridview-events-edit_1}}
+{{region cs-gridview-events-edit_1}}
 
 	this.radGridView.BeginningEdit += new EventHandler<Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs>(radGridView_BeginningEdit);
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-events-edit_2}}
+{{region vb-gridview-events-edit_2}}
 
 	AddHandler Me.radGridView.BeginningEdit, AddressOf radGridView_BeginningEdit
 {{endregion}}
@@ -77,7 +77,7 @@ The __BeginningEdit__ event is cancelable:
 
 #### __C#__
 
-{{region gridview-events-edit_3}}
+{{region cs-gridview-events-edit_3}}
 
 	private void radGridView_BeginningEdit( object sender, Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs e )
 	{
@@ -88,7 +88,7 @@ The __BeginningEdit__ event is cancelable:
 
 #### __VB.NET__
 
-{{region gridview-events-edit_4}}
+{{region vb-gridview-events-edit_4}}
 
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs)
 	    e.Cancel = True
@@ -100,7 +100,7 @@ The example below uses the __BeginningEdit__ event to show a tool tip when the u
 
 #### __C#__
 
-{{region gridview-events-edit_5}}
+{{region cs-gridview-events-edit_5}}
 
 	private void radGridView_BeginningEdit( object sender, Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs e )
 	{
@@ -114,7 +114,7 @@ The example below uses the __BeginningEdit__ event to show a tool tip when the u
 
 #### __VB.NET__
 
-{{region gridview-events-edit_6}}
+{{region vb-gridview-events-edit_6}}
 
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs)
 	    If e.Cell.Column.UniqueName = "CustomerID" Then
@@ -144,7 +144,7 @@ The example below uses the __PreparingCellForEdit__ event to access the underlyi
 
 #### __C#__
 
-{{region gridview-events-edit_7}}
+{{region cs-gridview-events-edit_7}}
 
 	private void clubsGrid_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
@@ -158,7 +158,7 @@ The example below uses the __PreparingCellForEdit__ event to access the underlyi
 
 #### __VB.NET__
 
-{{region gridview-events-edit_8}}
+{{region vb-gridview-events-edit_8}}
 
 	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	 If DirectCast(e.Column.Header, String) = "Name" Then
@@ -188,7 +188,7 @@ The example below uses the __PreparedCellForEdit__ event to prevent the selectio
 
 #### __C#__
 
-{{region gridview-events-edit_9}}
+{{region cs-gridview-events-edit_9}}
 
 	private void clubsGrid_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
@@ -204,7 +204,7 @@ The example below uses the __PreparedCellForEdit__ event to prevent the selectio
 
 #### __VB.NET__
 
-{{region gridview-events-edit_10}}
+{{region vb-gridview-events-edit_10}}
 
 	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	 If DirectCast(e.Column.Header, String) = "Name" Then
@@ -244,7 +244,7 @@ You can subscribe to the __CellEditEnded__ event declaratively or runtime like t
 
 #### __XAML__
 
-{{region gridview-events-edit_11}}
+{{region xaml-gridview-events-edit_11}}
 
 	<telerik:RadGridView x:Name="radGridView" CellEditEnded="EditGrid_CellEditEnded"/>
 {{endregion}}
@@ -252,7 +252,7 @@ You can subscribe to the __CellEditEnded__ event declaratively or runtime like t
 
 #### __C#__
 
-{{region gridview-events-edit_12}}
+{{region cs-gridview-events-edit_12}}
 
 	this.radGridView.CellEditEnded += new EventHandler<Telerik.Windows.Controls.GridViewCellEditEndedEventArgs>(radGridView_CellEditEnded);
 {{endregion}}
@@ -260,7 +260,7 @@ You can subscribe to the __CellEditEnded__ event declaratively or runtime like t
 
 #### __VB.NET__
 
-{{region gridview-events-edit_13}}
+{{region vb-gridview-events-edit_13}}
 
 	AddHandler Me.radGridView.CellEditEnded, AddressOf radGridView_CellEditEnded
 {{endregion}}
@@ -270,7 +270,7 @@ The example below uses the __CellEditEnded__ event to show a message box contain
 
 #### __C#__
 
-{{region gridview-events-edit_14}}
+{{region cs-gridview-events-edit_14}}
 
 	private void radGridView_CellEditEnded(object sender, Telerik.Windows.Controls.GridViewCellEditEndedEventArgs e)
 	{
@@ -282,7 +282,7 @@ The example below uses the __CellEditEnded__ event to show a message box contain
 
 #### __VB.NET__
 
-{{region gridview-events-edit_15}}
+{{region vb-gridview-events-edit_15}}
 
 	Private Sub radGridView_CellEditEnded(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewCellEditEndedEventArgs)
 	    Dim editedEmployee As Employee = TryCast(e.Cell.DataContext, Employee)
@@ -317,21 +317,21 @@ You can subscribe to the __RowEditEnded__ event declaratively or runtime like th
 
 #### __XAML__
 
-{{region gridview-events-edit_16}}
+{{region xaml-gridview-events-edit_16}}
 
 	<telerik:RadGridView x:Name="radGridView" RowEditEnded="EditGrid_RowEditEnded"/>
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-events-edit_17}}
+{{region cs-gridview-events-edit_17}}
 
 	this.radGridView.RowEditEnded += new EventHandler<Telerik.Windows.Controls.GridViewRowEditEndedEventArgs>(radGridView_RowEditEnded);
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-events-edit_18}}
+{{region vb-gridview-events-edit_18}}
 
 	AddHandler Me.radGridView.RowEditEnded, AddressOf radGridView_RowEditEnded
 {{endregion}}
@@ -340,7 +340,7 @@ The example below uses the __RowEditEnded__ to display the new data of the edite
 
 #### __C#__
 
-{{region gridview-events-edit_19}}
+{{region cs-gridview-events-edit_19}}
 
 	private void radGridView_RowEditEnded(object sender, Telerik.Windows.Controls.GridViewRowEditEndedEventArgs e)
 	{
@@ -354,7 +354,7 @@ The example below uses the __RowEditEnded__ to display the new data of the edite
 
 #### __VB.NET__
 
-{{region gridview-events-edit_20}}
+{{region vb-gridview-events-edit_20}}
 
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewRowEditEndedEventArgs)
 	    Dim newEmployee As Employee = TryCast(e.NewData, Employee)

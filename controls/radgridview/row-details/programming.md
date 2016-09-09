@@ -22,7 +22,7 @@ For example, if you have a __RadGridView__ with the following __RowDetailsTempla
 
 #### __XAML__
 
-{{region radgridview-row-details-programming_0}}
+{{region xaml-radgridview-row-details-programming_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     LoadingRowDetails="radGridView_LoadingRowDetails">
@@ -42,7 +42,7 @@ You can change the __StackPanel's Background__ depending on is the row alternati
 
 #### __C#__
 
-{{region radgridview-row-details-programming_1}}
+{{region cs-radgridview-row-details-programming_1}}
 
 	private void radGridView_LoadingRowDetails( object sender, GridViewRowDetailsEventArgs e )
 	{
@@ -60,7 +60,7 @@ You can change the __StackPanel's Background__ depending on is the row alternati
 
 #### __VB.NET__
 
-{{region radgridview-row-details-programming_2}}
+{{region vb-radgridview-row-details-programming_2}}
 	Private Sub radGridView_LoadingRowDetails(ByVal sender As Object, ByVal e As GridViewRowDetailsEventArgs)
 	    Dim element As StackPanel = TryCast(e.DetailsElement, StackPanel)
 	

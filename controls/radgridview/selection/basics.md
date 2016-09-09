@@ -69,7 +69,7 @@ To disable the selection functionality you can set the __CanUserSelect__ to fals
           
 #### __XAML__
 
-{{region gridview-selection-basics_0}}
+{{region xaml-gridview-selection-basics_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     CanUserSelect="False">
@@ -78,14 +78,14 @@ To disable the selection functionality you can set the __CanUserSelect__ to fals
 
 #### __C#__
 
-{{region gridview-selection-basics_1}}
+{{region cs-gridview-selection-basics_1}}
 
 	this.radGridView.CanUserSelect = false;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-selection-basics_2}}
+{{region vb-gridview-selection-basics_2}}
 
 	Me.radGridView.CanUserSelect = False
 {{endregion}}

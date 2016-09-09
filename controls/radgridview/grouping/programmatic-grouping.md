@@ -20,7 +20,7 @@ When you add a new descriptor to the collection, the data is automatically group
 
 #### __C#__
 
-{{region gridview-programmatic-grouping_0}}
+{{region cs-gridview-programmatic-grouping_0}}
 
 	GroupDescriptor descriptor = new GroupDescriptor();
 	descriptor.Member = "Country";
@@ -30,7 +30,7 @@ When you add a new descriptor to the collection, the data is automatically group
 
 #### __VB.NET__
 
-{{region gridview-programmatic-grouping_1}}
+{{region vb-gridview-programmatic-grouping_1}}
 
 	Dim descriptor As New GroupDescriptor()
 	descriptor.Member = "Country"
@@ -44,7 +44,7 @@ And now you can create a descriptor:
 
 #### __XAML__
 
-{{region gridview-programmatic-grouping_2}}
+{{region xaml-gridview-programmatic-grouping_2}}
 	<telerik:GroupDescriptor Member="Country"
 	                         SortDirection="Ascending" />
 {{endregion}}
@@ -54,7 +54,7 @@ To use the created descriptor to sort the data in the __RadGridView__ you have t
 
 #### __XAML__
 
-{{region gridview-programmatic-grouping_3}}
+{{region xaml-gridview-programmatic-grouping_3}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                         AutoGenerateColumns="False">
@@ -68,14 +68,14 @@ To use the created descriptor to sort the data in the __RadGridView__ you have t
 
 #### __C#__
 
-{{region gridview-programmatic-grouping_4}}
+{{region cs-gridview-programmatic-grouping_4}}
 
 	this.radGridView.GroupDescriptors.Add( descriptor );
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-programmatic-grouping_5}}
+{{region vb-gridview-programmatic-grouping_5}}
 
 	Me.radGridView.GroupDescriptors.Add(descriptor)
 {{endregion}}
@@ -86,7 +86,7 @@ Except __Member__ and __SortDirection__ properties, the __GroupDescriptor__ expo
 
 #### __XAML__
 
-{{region gridview-programmatic-grouping_6}}
+{{region xaml-gridview-programmatic-grouping_6}}
 	<telerik:GroupDescriptor Member="Country"
                              SortDirection="Ascending"
                              DisplayContent="Country Group" />
@@ -94,7 +94,7 @@ Except __Member__ and __SortDirection__ properties, the __GroupDescriptor__ expo
 
 #### __C#__
 
-{{region gridview-programmatic-grouping_7}}
+{{region cs-gridview-programmatic-grouping_7}}
 	GroupDescriptor descriptor = new GroupDescriptor();
 	descriptor.Member = "Country";
 	descriptor.SortDirection = ListSortDirection.Ascending;
@@ -103,7 +103,7 @@ Except __Member__ and __SortDirection__ properties, the __GroupDescriptor__ expo
 
 #### __VB.NET__
 
-{{region gridview-programmatic-grouping_8}}
+{{region vb-gridview-programmatic-grouping_8}}
 
 	Dim descriptor As New GroupDescriptor()
 	descriptor.Member = "Country"
@@ -133,7 +133,7 @@ Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which g
 
 #### __XAML__
 
-{{region gridview-programmatic-grouping_11}}
+{{region xaml-gridview-programmatic-grouping_11}}
 
 	<telerik:ColumnGroupDescriptor Column="{Binding Columns[\Name\], ElementName=clubsGrid}"
 	                             SortDirection="Descending"  />
@@ -141,7 +141,7 @@ Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which g
 
 #### __C#__
 
-{{region gridview-programmatic-grouping_9}}
+{{region cs-gridview-programmatic-grouping_9}}
 
 	this.clubsGrid.GroupDescriptors.Add(new ColumnGroupDescriptor() 
 	{ 
@@ -153,7 +153,7 @@ Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which g
 
 #### __VB.NET__
 
-{{region gridview-programmatic-grouping_10}}
+{{region vb-gridview-programmatic-grouping_10}}
 
 	Me.clubsGrid.GroupDescriptors.Add(New ColumnGroupDescriptor() With { _
 	 .Column = Me.clubsGrid.Columns("Name"), _

@@ -19,7 +19,7 @@ You can define grouping either in the XAML or in the code-behind.
 
 #### __XAML__
 
-{{region gridview-overview-grouping_0}}
+{{region xaml-gridview-overview-grouping_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -37,7 +37,7 @@ You can achieve the same result if you define your grouping in the code-behind l
 
 #### __C#__
 
-{{region gridview-overview-grouping_2}}
+{{region cs-gridview-overview-grouping_2}}
 
 	GroupDescriptor descriptor = new GroupDescriptor();
 	descriptor.Member = "Country";
@@ -50,7 +50,7 @@ You can achieve the same result if you define your grouping in the code-behind l
 
 #### __VB.NET__
 
-{{region gridview-overview-grouping_3}}
+{{region vb-gridview-overview-grouping_3}}
 
 	Dim descriptor As New GroupDescriptor()
 	descriptor.Member = "Country"

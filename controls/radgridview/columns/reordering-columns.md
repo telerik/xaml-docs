@@ -36,7 +36,7 @@ There are two ways to disable reordering.
 
 #### __[XAML] Example 1: Disable Reordering__
 
-{{region gridview-columns-reordering-columns_0}}
+{{region xaml-gridview-columns-reordering-columns_0}}
 	<telerik:RadGridView x:Name="radGridView"
 	                     CanUserReorderColumns="False">
 	    ...
@@ -49,7 +49,7 @@ The headers will be still draggable, but when you drop them nothing will happen.
 
 #### __[XAML] Example 2: Disable Reordering for a particular column__
 
-{{region gridview-columns-reordering-columns_1}}
+{{region xaml-gridview-columns-reordering-columns_1}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
                                 Header="Name"
@@ -62,7 +62,7 @@ The order of the columns may also be configured by setting the __DisplayIndex__ 
 
 #### __[XAML] Example 3: Reorder using DisplayIndex__
 
-{{region gridview-columns-reordering-columns_2}}
+{{region xaml-gridview-columns-reordering-columns_2}}
 
 	<telerik:RadGridView.Columns>
 	     <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" DisplayIndex="0"/>

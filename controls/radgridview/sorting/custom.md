@@ -42,7 +42,7 @@ To do so you can use the __Sorting__ event. As a start you need to attach an eve
        
 #### __C#__
 
-{{region gridview-sorting-custom_0}}
+{{region cs-gridview-sorting-custom_0}}
 
 	public CustomSorting()
 	{
@@ -56,7 +56,7 @@ To do so you can use the __Sorting__ event. As a start you need to attach an eve
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_1}}
+{{region vb-gridview-sorting-custom_1}}
 
 	Public Sub New()
 	    InitializeComponent()       
@@ -86,7 +86,7 @@ The first thing to do is to get the value of __RadGridView.ItemsSource__ and ass
 
 #### __C#__
 
-{{region gridview-sorting-custom_2}}
+{{region cs-gridview-sorting-custom_2}}
 
 	private void radGridView_Sorting( object sender, GridViewSortingEventArgs e )
 	{
@@ -103,7 +103,7 @@ The first thing to do is to get the value of __RadGridView.ItemsSource__ and ass
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_3}}
+{{region vb-gridview-sorting-custom_3}}
 
 	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
 	    'Gets the value of the ItemsSource property as IEnumerable.'
@@ -121,7 +121,7 @@ Next you have to check the value of the current sorting direction. To do that us
         
 #### __C#__
 
-{{region gridview-sorting-custom_4}}
+{{region cs-gridview-sorting-custom_4}}
 
 	//If the sorting state is none, sort the items ascending.
 	if ( e.OldSortingState == SortingState.None )
@@ -142,7 +142,7 @@ Next you have to check the value of the current sorting direction. To do that us
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_5}}
+{{region vb-gridview-sorting-custom_5}}
 
 	'If the sorting state is none, sort the items ascending.'
 	If e.OldSortingState = SortingState.None Then
@@ -162,7 +162,7 @@ To sort the employees collection use __OrderBy__ and __OrderByDescending__ exten
         
 #### __C#__
 
-{{region gridview-sorting-custom_6}}
+{{region cs-gridview-sorting-custom_6}}
 
 	//Via the SortPropertyName value get 
 	//the value of the property to sort your data by.
@@ -173,7 +173,7 @@ To sort the employees collection use __OrderBy__ and __OrderByDescending__ exten
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_7}}
+{{region vb-gridview-sorting-custom_7}}
 
 	'Via the SortPropertyName value get' 
 	'the value of the property to sort your data by.'
@@ -186,7 +186,7 @@ Do the same with __OrderByDescending__ extension method. In the end, set __RadGr
 
 #### __C#__
 
-{{region gridview-sorting-custom_8}}
+{{region cs-gridview-sorting-custom_8}}
 
 	e.DataControl.ItemsSource = employees.ToList();
 	e.Cancel = true;
@@ -194,7 +194,7 @@ Do the same with __OrderByDescending__ extension method. In the end, set __RadGr
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_9}}
+{{region vb-gridview-sorting-custom_9}}
 
 	e.DataControl.ItemsSource = employees.ToList()
 	e.Cancel = True
@@ -204,7 +204,7 @@ Here is the final code that should represent __Sorting__ event handler.
 
 #### __C#__
 
-{{region gridview-sorting-custom_10}}
+{{region cs-gridview-sorting-custom_10}}
 
 	private void CustomSortingGrid_Sorting( object sender, GridViewSortingEventArgs e )
 	{
@@ -246,7 +246,7 @@ Here is the final code that should represent __Sorting__ event handler.
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_11}}
+{{region vb-gridview-sorting-custom_11}}
 
 	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
 	    'Gets the value of the ItemsSource property as IEnumerable.'

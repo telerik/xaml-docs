@@ -47,7 +47,7 @@ You can subscribe to the __Deleting__ event declaratively or runtime like this:
 
 #### __XAML__
 
-{{region gridview-events-delete_0}}
+{{region xaml-gridview-events-delete_0}}
 
 	<telerik:RadGridView Name="gridView" Deleting="gridView_Deleting" />
 {{endregion}}
@@ -55,7 +55,7 @@ You can subscribe to the __Deleting__ event declaratively or runtime like this:
 
 #### __C#__
 
-{{region gridview-events-delete_1}}
+{{region cs-gridview-events-delete_1}}
 
 	this.gridView.Deleting += new EventHandler<GridViewDeletingEventArgs>(gridView_Deleting);
 {{endregion}}
@@ -63,7 +63,7 @@ You can subscribe to the __Deleting__ event declaratively or runtime like this:
 
 #### __VB.NET__
 
-{{region gridview-events-delete_2}}
+{{region vb-gridview-events-delete_2}}
 
 	AddHandler Me.gridView.Deleting, AddressOf gridView_Deleting
 {{endregion}}
@@ -73,7 +73,7 @@ The Deleting event is cancelable. The example below uses the __Deleting__ event 
 
 #### __C#__
 
-{{region gridview-events-delete_3}}
+{{region cs-gridview-events-delete_3}}
 
 	public MainPage()
 	{
@@ -111,7 +111,7 @@ The Deleting event is cancelable. The example below uses the __Deleting__ event 
 
 #### __VB.NET__
 
-{{region gridview-events-delete_4}}
+{{region vb-gridview-events-delete_4}}
 
 	Public Sub New()
 	 InitializeComponent()
@@ -150,21 +150,21 @@ You can subscribe to the __Deleted__ event declaratively or runtime like this:
 
 #### __XAML__
 
-{{region gridview-events-delete_5}}
+{{region xaml-gridview-events-delete_5}}
 
 	<telerik:RadGridView Name="gridView" Deleted="gridView_Deleted" />
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-events-delete_6}}
+{{region cs-gridview-events-delete_6}}
 	this.gridView.Deleted += new EventHandler<GridViewDeletedEventArgs>(gridView_Deleted);
 {{endregion}}
 
 
 #### __VB.NET__
 
-{{region gridview-events-delete_7}}
+{{region vb-gridview-events-delete_7}}
 	AddHandler Me.gridView.Deleted, AddressOf gridView_Deleted
 {{endregion}}
 

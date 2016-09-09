@@ -18,7 +18,7 @@ Here is an ordinary __RadGridView__ declaration, populated with some data:
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_0}}
+{{region xaml-gridview-self-referencing-grid_0}}
 
 	<telerik:RadGridView Margin="8" x:Name="radGridView" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -36,14 +36,14 @@ Here is an ordinary __RadGridView__ declaration, populated with some data:
 
 #### __C#__
 
-{{region gridview-self-referencing-grid_1}}
+{{region cs-gridview-self-referencing-grid_1}}
 
 	this.radGridView.ItemsSource = RadGridViewSampleData.GetEmployees();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-self-referencing-grid_2}}
+{{region vb-gridview-self-referencing-grid_2}}
 
 	Me.radGridView.ItemsSource = RadGridViewSampleData.GetEmployees()
 {{endregion}}
@@ -58,7 +58,7 @@ You can build a self-refencing hierarchy by performing the following steps:
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_3}}
+{{region xaml-gridview-self-referencing-grid_3}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                         AutoGenerateColumns="False">
@@ -74,7 +74,7 @@ You can build a self-refencing hierarchy by performing the following steps:
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_4}}
+{{region xaml-gridview-self-referencing-grid_4}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -94,7 +94,7 @@ You can build a self-refencing hierarchy by performing the following steps:
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_5}}
+{{region xaml-gridview-self-referencing-grid_5}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -131,7 +131,7 @@ You can specify more than one __FiledDescriptorNamePair__. For example, define a
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_6}}
+{{region xaml-gridview-self-referencing-grid_6}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">

@@ -22,7 +22,7 @@ When you set __IsReadOnlyBinding__ property of RadGridView to True - the __full 
 
 #### __[XAML] Example 1: Binding IsReadOnlyBinding at RadGridView level.__
 
-{{region gridview-read-only-rows-cells_0}}
+{{region xaml-gridview-read-only-rows-cells_0}}
 
 	<telerik:RadGridView x:Name="radGridView" IsReadOnlyBinding="{Binding IsActive}" />
 {{endregion}}
@@ -33,7 +33,7 @@ When you set the __IsReadOnlyBinding__ property of the GridViewDataColumn - only
 
 #### __[XAML] Example 2: Binding IsReadOnlyBinding at column level.__
 
-{{region gridview-read-only-rows-cells_1}}
+{{region xaml-gridview-read-only-rows-cells_1}}
 
 	<telerik:RadGridView x:Name="radGridView" >
 	...

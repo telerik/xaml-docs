@@ -16,7 +16,7 @@ In some cases when you define aggregates in RadGridView you need to access aggre
 
 #### __C#__
 
-{{region gridview-grouping-how-to-get-aggregates_0}}
+{{region cs-gridview-grouping-how-to-get-aggregates_0}}
     private void Button1_Click(object sender, RoutedEventArgs e)
     {
         foreach(QueryableCollectionViewGroup item in this.radGridView.Items.Groups)
@@ -31,7 +31,7 @@ In some cases when you define aggregates in RadGridView you need to access aggre
 
 #### __VB.NET__
 
-{{region gridview-grouping-how-to-get-aggregates_1}}
+{{region vb-gridview-grouping-how-to-get-aggregates_1}}
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs)
         For Each item As QueryableCollectionViewGroup In Me.OrgInfo.Items.Groups
             If (item.Key.Equals("24")) Then

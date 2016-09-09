@@ -36,7 +36,7 @@ When using __VirtualQueryableCollectionView__ for WPF, you may easily benefit fr
 
 #### __C#__
 
-{{region GridView-Populating-DataVirtualization_0}}
+{{region cs-GridView-Populating-DataVirtualization_0}}
 	public MainWindow()
     {
         InitializeComponent();
@@ -49,7 +49,7 @@ When using __VirtualQueryableCollectionView__ for WPF, you may easily benefit fr
 
 #### __VB.NET__
 
-{{region GridView-Populating-DataVirtualization_1}}
+{{region vb-GridView-Populating-DataVirtualization_1}}
 
 	Public Sub New()
 	 InitializeComponent()
@@ -70,7 +70,7 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
 
 #### __C#__
 
-{{region GridView-Populating-DataVirtualization_3}}
+{{region cs-GridView-Populating-DataVirtualization_3}}
 
 	public MainPage()
     {
@@ -99,7 +99,7 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
 
 #### __XAML__
 
-{{region GridView-Populating-DataVirtualization_5}}
+{{region xaml-GridView-Populating-DataVirtualization_5}}
 
 	<telerik:RadGridView ItemsSource="{Binding}" />
 {{endregion}}

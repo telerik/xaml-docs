@@ -35,7 +35,7 @@ Here is an example on how to copy column headers as well as selected data:
 
 #### __[C#] Example 1: Setting the ClipboardCopyMode__
 
-{{region gridview-copying_0}}
+{{region cs-gridview-copying_0}}
 
 	this.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells | 
 	GridViewClipboardCopyMode.Header;
@@ -43,7 +43,7 @@ Here is an example on how to copy column headers as well as selected data:
 
 #### __[VB.NET] Example 1: Setting the ClipboardCopyMode__
 
-{{region gridview-copying_1}}
+{{region vb-gridview-copying_1}}
 
 	Me.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells Or GridViewClipboardCopyMode.Header
 {{endregion}}
@@ -54,7 +54,7 @@ There are two events that allow you to control the copying operation: __Copying_
 
 #### __[C#] Example 2: The CopyingCellClipboardContent Event__
 
-{{region gridview-copying_2}}
+{{region cs-gridview-copying_2}}
 
 	private void radGridView_CopyingCellClipboardContent(object sender, GridViewCellClipboardEventArgs e)
 	{
@@ -68,7 +68,7 @@ There are two events that allow you to control the copying operation: __Copying_
 
 #### __[VB.NET] Example 2: The CopyingCellClipboardContent Event__
 
-{{region gridview-copying_3}}
+{{region vb-gridview-copying_3}}
 
 	Private Sub radGridView_CopyingCellClipboardContent(sender As Object, e As GridViewCellClipboardEventArgs)
 	 If e.Cell.Column.UniqueName = "FullName" Then

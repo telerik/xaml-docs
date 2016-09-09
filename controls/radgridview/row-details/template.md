@@ -21,7 +21,7 @@ Here is an example for a basic row details template (__Example 1__). You can obs
 
 #### __[XAML] Example 1: Definition of Basic RowDetails Template__
 
-{{region radgridview-row-details-template_0}}
+{{region xaml-radgridview-row-details-template_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                         RowDetailsVisibilityMode="VisibleWhenSelected">
@@ -48,7 +48,7 @@ Here is an example for a complex row details template (__Example 2__). You can o
 
 #### __[XAML] Example 2: Definition of Complex RowDetails Template__
 
-{{region radgridview-row-details-template_1}}
+{{region xaml-radgridview-row-details-template_1}}
 
 	<Grid>
 		<Grid.Resources>

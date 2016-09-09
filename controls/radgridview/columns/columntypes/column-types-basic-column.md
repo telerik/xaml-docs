@@ -78,7 +78,7 @@ Here is a list of the most important properties and how they can be used.
 Here is how to define a column of this type.
 
 #### __[XAML] Example 1: Define GridViewColumn in XAML:__
-{{region radgridview-columns-column-types-basic-column_0}}
+{{region xaml-radgridview-columns-column-types-basic-column_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -90,7 +90,7 @@ Here is how to define a column of this type.
          
 #### __[C#] Example 2: Define GridViewColumn in code:__
 
-{{region radgridview-columns-column-types-basic-column_1}}
+{{region cs-radgridview-columns-column-types-basic-column_1}}
 
 	GridViewColumn column = new GridViewColumn();
 	this.radGridView.Columns.Add( column );
@@ -98,7 +98,7 @@ Here is how to define a column of this type.
 
 #### __[VB.NET] Example 2: Define GridViewColumn in code:__
 
-{{region radgridview-columns-column-types-basic-column_2}}
+{{region vb-radgridview-columns-column-types-basic-column_2}}
 
 	Dim column As New GridViewColumn()
 	Me.radGridView.Columns.Add( column )

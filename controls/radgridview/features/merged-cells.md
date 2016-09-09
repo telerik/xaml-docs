@@ -47,7 +47,7 @@ __Example 1:__ Configure RadGridView to merge cells vertically
       
 #### __XAML__
 
-{{region gridview-merged-cells_2}}
+{{region xaml-gridview-merged-cells_2}}
 
 	<telerik:RadGridView
 	  ColumnWidth="*"
@@ -68,7 +68,7 @@ __Example 2:__ Configure RadGridView to merge cells horizontally
         
 #### __XAML__
 
-{{region gridview-merged-cells_3}}
+{{region xaml-gridview-merged-cells_3}}
 
 	<telerik:RadGridView
 	  ColumnWidth="*"
@@ -89,7 +89,7 @@ __Example 3:__ Configure cell merging per column
         
 #### __XAML__
 
-{{region gridview-merged-cells_4}}
+{{region xaml-gridview-merged-cells_4}}
 
 	<telerik:RadGridView Grid.Row="0" 
                              Name="radGridView" 

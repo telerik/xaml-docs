@@ -18,21 +18,21 @@ The __GridViewTableDefinition__ class is to be found in the same assembly and na
 
 #### __XAML__
 
-{{region gridview-basic-hierarchies_0}}
+{{region xaml-gridview-basic-hierarchies_0}}
 
 	<telerik:GridViewTableDefinition />
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-basic-hierarchies_1}}
+{{region cs-gridview-basic-hierarchies_1}}
 
 	GridViewTableDefinition d = new GridViewTableDefinition();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-basic-hierarchies_2}}
+{{region vb-gridview-basic-hierarchies_2}}
 
 	Dim d As New GridViewTableDefinition()
 {{endregion}}
@@ -43,7 +43,7 @@ The __ParentPropertyName__ of the __PropertyRelation__ object represents the nam
 
 #### __XAML__
 
-{{region gridview-basic-hierarchies_4}}
+{{region xaml-gridview-basic-hierarchies_4}}
 
 	<telerik:GridViewTableDefinition>
 		<telerik:GridViewTableDefinition.Relation>
@@ -54,7 +54,7 @@ The __ParentPropertyName__ of the __PropertyRelation__ object represents the nam
 
 #### __C#__
 
-{{region gridview-basic-hierarchies_5}}
+{{region cs-gridview-basic-hierarchies_5}}
 
 	GridViewTableDefinition d = new GridViewTableDefinition();
 	d.Relation = new Telerik.Windows.Data.PropertyRelation( "Orders" );
@@ -63,7 +63,7 @@ The __ParentPropertyName__ of the __PropertyRelation__ object represents the nam
 
 #### __VB.NET__
 
-{{region gridview-basic-hierarchies_6}}
+{{region vb-gridview-basic-hierarchies_6}}
 
 	Dim d As New GridViewTableDefinition()
 	d.Relation = New Telerik.Windows.Data.PropertyRelation("Orders")
@@ -73,7 +73,7 @@ Now you can add the definition to the __ChildTableDefinitions__ collection.
 
 #### __XAML__
 
-{{region gridview-basic-hierarchies_7}}
+{{region xaml-gridview-basic-hierarchies_7}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
@@ -91,14 +91,14 @@ Now you can add the definition to the __ChildTableDefinitions__ collection.
 
 #### __C#__
 
-{{region gridview-basic-hierarchies_8}}
+{{region cs-gridview-basic-hierarchies_8}}
 
 	this.radGridView.ChildTableDefinitions.Add( d );
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-basic-hierarchies_9}}
+{{region vb-gridview-basic-hierarchies_9}}
 
 	Me.radGridView.ChildTableDefinitions.Add(d)
 {{endregion}}

@@ -20,7 +20,7 @@ Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid 
 
 #### __XAML__
 
-{{region radgridview-row-details-external-row-details_0}}
+{{region xaml-radgridview-row-details-external-row-details_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                         RowDetailsVisibilityMode="Collapsed">
@@ -43,14 +43,14 @@ Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid 
 
 #### __C#__
 
-{{region radgridview-row-details-external-row-details_1}}
+{{region cs-radgridview-row-details-external-row-details_1}}
 
 	this.ExternalPresenter.DetailsProvider = this.radGridView.RowDetailsProvider;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radgridview-row-details-external-row-details_2}}
+{{region vb-radgridview-row-details-external-row-details_2}}
 
 	Me.ExternalPresenter.DetailsProvider = Me.radGridView.RowDetailsProvider
 {{endregion}}

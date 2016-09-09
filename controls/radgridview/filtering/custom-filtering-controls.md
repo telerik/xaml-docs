@@ -18,7 +18,7 @@ In order to be able to communicate with RadGridView, your custom filtering contr
 
 #### __C#__
 
-{{region gridview-filtering-custom-filtering-controls_0}}
+{{region cs-gridview-filtering-custom-filtering-controls_0}}
 
 	/// <summary>
 	/// Provides functionality required by all filtering components.
@@ -41,7 +41,7 @@ In order to be able to communicate with RadGridView, your custom filtering contr
 
 #### __VB.NET__
 
-{{region gridview-filtering-custom-filtering-controls_0}}
+{{region vb-gridview-filtering-custom-filtering-controls_0}}
 
 	' Provides functionality required by all filtering components.'
 	Public Interface IFilteringControl
@@ -62,7 +62,7 @@ Here is an example of a custom filtering control that displays two date time pic
 
 #### __XAML__
 
-{{region gridview-filtering-custom-filtering-controls_1}}
+{{region xaml-gridview-filtering-custom-filtering-controls_1}}
 
 	<UserControl x:Class="Telerik.Windows.Examples.GridView.CustomFilterControls.FromDateToDateFilterControl"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
@@ -95,7 +95,7 @@ Here is an example of a custom filtering control that displays two date time pic
 
 #### __C#__
 
-{{region gridview-filtering-custom-filtering-controls_1}}
+{{region cs-gridview-filtering-custom-filtering-controls_1}}
 
 	/// <summary>
 	/// FromDateToDateFilterControl
@@ -219,7 +219,7 @@ Here is an example of a custom filtering control that displays two date time pic
 
 #### __VB.NET__
 
-{{region gridview-filtering-custom-filtering-controls_1}}
+{{region vb-gridview-filtering-custom-filtering-controls_1}}
 
 	Partial Public Class FromDateToDateFilterControl
 		Inherits UserControl
@@ -333,7 +333,7 @@ Finally, you have to tell the column to use this custom filtering control like t
 
 #### __XAML__
 
-{{region gridview-filtering-custom-filtering-controls_2}}
+{{region xaml-gridview-filtering-custom-filtering-controls_2}}
 
 	<telerik:RadGridView Name="radGridView" AutoGenerateColumns="False">
 		<telerik:RadGridView.Columns>

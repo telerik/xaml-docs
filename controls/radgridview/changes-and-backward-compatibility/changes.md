@@ -987,7 +987,7 @@ Some __code changes__ are needed after the __upgrade__. Find the list with code 
 
 #### __C#__
 
-{{region radgridview-changes_0}}
+{{region cs-radgridview-changes_0}}
 
 	    GridViewColumn ageColumn = this.radGridView.Columns["Age"];
 	    ColumnFilterDescriptor ageColumnFilter = new ColumnFilterDescriptor(ageColumn);
@@ -1003,7 +1003,7 @@ Some __code changes__ are needed after the __upgrade__. Find the list with code 
 
 #### __VB.NET__
 
-{{region radgridview-changes_1}}
+{{region vb-radgridview-changes_1}}
 
 	    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
 	    Dim ageColumnFilter As New ColumnFilterDescriptor(ageColumn)
@@ -1076,7 +1076,7 @@ __After:__
 
 #### __VB.NET__
 
-{{region radgridview-changes_3}}
+{{region vb-radgridview-changes_3}}
 
 	    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
 	    ' Getting it from the property will create it and associate it with its column automatically.
@@ -1128,7 +1128,7 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-changes_6}}
+{{region cs-radgridview-changes_6}}
 
 	    // Calling ClearFilter will automatically remove filter descriptor from the grid.
 	    myColumn.ClearFilters();
@@ -1140,7 +1140,7 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-changes_8}}
+{{region cs-radgridview-changes_8}}
 
 	    this.radGridView.FilterDescriptors.Clear();
 	{{endregion}}
@@ -1149,7 +1149,7 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-changes_10}}
+{{region cs-radgridview-changes_10}}
 
 	    this.radGridView.FilterDescriptors.SuspendNotifications();
 	    foreach (var column in this.radGridView.Columns)
@@ -1163,7 +1163,7 @@ __After:__
 
 #### __VB.NET__
 
-{{region radgridview-changes_11}}
+{{region vb-radgridview-changes_11}}
 
 	    Me.radGridView.FilterDescriptors.SuspendNotifications()
 	    For Each column As var In Me.radGridView.Columns

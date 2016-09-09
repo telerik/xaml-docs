@@ -36,7 +36,7 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all rows of an application__
 
-	{{region gridview-styling-row-1}}
+	{{region xaml-gridview-styling-row-1}}
 	<Style TargetType="telerik:GridViewRow">
         <Setter Property="Background" Value="Red"/>
         <Setter Property="Foreground" Value="White"/>
@@ -53,7 +53,7 @@ __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 
-	{{region gridview-styling-row-2}}
+	{{region xaml-gridview-styling-row-2}}
 	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
 						 AlternationCount="2"
 						 AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />

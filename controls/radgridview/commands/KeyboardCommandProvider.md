@@ -23,7 +23,7 @@ The custom class responsible for the update of the commands needs to be similar 
 
 #### __C#__
 
-{{region GridView-Commands-KeyboardCommandProvider_0}}
+{{region cs-GridView-Commands-KeyboardCommandProvider_0}}
 
 	class CustomKeyboardCommandProvider : DefaultKeyboardCommandProvider
 	 {
@@ -55,7 +55,7 @@ The custom class responsible for the update of the commands needs to be similar 
 
 #### __VB.NET__
 
-{{region GridView-Commands-KeyboardCommandProvider_1}}
+{{region vb-GridView-Commands-KeyboardCommandProvider_1}}
 
 	Class CustomKeyboardCommandProvider
 	 Inherits DefaultKeyboardCommandProvider
@@ -90,7 +90,7 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 
 #### __C#__
 
-{{region GridView-Commands-KeyboardCommandProvider_2}}
+{{region cs-GridView-Commands-KeyboardCommandProvider_2}}
 
 	this.RadGridView1.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.RadGridView1);
 {{endregion}}
@@ -99,7 +99,7 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 
 #### __VB.NET__
 
-{{region GridView-Commands-KeyboardCommandProvider_3}}
+{{region vb-GridView-Commands-KeyboardCommandProvider_3}}
 
 	Me.RadGridView1.KeyboardCommandProvider = New CustomKeyboardCommandProvider(Me.RadGridView1)
 {{endregion}}

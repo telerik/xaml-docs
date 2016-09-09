@@ -29,7 +29,7 @@ First you need to define the context menu with menu items.
 
 #### __XAML__
 
-{{region gridview-how-to-use-radcontextmenu-mvvm_1}}
+{{region xaml-gridview-how-to-use-radcontextmenu-mvvm_1}}
 	        
     <local:ObjectToStringConverter x:Key="ObjectToStringConverter" />
     <local:RadContextMenuXamlHolder x:Key="ContextMenuHolder">
@@ -86,7 +86,7 @@ First you need to define the context menu with menu items.
 
 #### __XAML__
 
-{{region gridview-how-to-use-radcontextmenu-mvvm_0}}
+{{region xaml-gridview-how-to-use-radcontextmenu-mvvm_0}}
 
     <local:RadContextMenuXamlHolder x:Key="ContextMenuHolder">
     <telerik:RadContextMenu InheritDataContext="False" DataContext="{Binding Path=UIElement.Column.DataControl.DataContext, RelativeSource={RelativeSource Self}}">
@@ -141,7 +141,7 @@ You need to attach the defined context menu to the column headers.
 
 #### __XAML__
 
-{{region gridview-how-to-use-radcontextmenu-mvvm_2}}
+{{region xaml-gridview-how-to-use-radcontextmenu-mvvm_2}}
 
     <Style TargetType="telerik:GridViewHeaderCell">
         <Setter Property="telerik:RadContextMenu.ContextMenu" Value="{Binding Path=ContextMenu, Source={StaticResource ContextMenuHolder}}" />
@@ -155,7 +155,7 @@ The style targeting GridViewHeaderCell will be automatically applied for the Rad
 
 #### __XAML__
 
-{{region gridview-how-to-use-radcontextmenu-mvvm_3}}
+{{region xaml-gridview-how-to-use-radcontextmenu-mvvm_3}}
 
     <Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource ViewModel}">
         <telerik:RadGridView ItemsSource="{Binding Items}" />
@@ -168,7 +168,7 @@ The RadContextMenuXamlHolder class is defined in code behind like so:
 
 #### __C#__
 
-{{region gridview-how-to-use-radcontextmenu-mvvm_4}}
+{{region cs-gridview-how-to-use-radcontextmenu-mvvm_4}}
 
     [ContentProperty("ContextMenu")]
     public class RadContextMenuXamlHolder : INotifyPropertyChanged
@@ -211,7 +211,7 @@ The RadContextMenuXamlHolder class is defined as follows:
 
 #### __C#__
 
-{{region gridview-how-to-use-radcontextmenu-mvvm_6}}
+{{region cs-gridview-how-to-use-radcontextmenu-mvvm_6}}
 
 	public class ObjectToStringConverter : IValueConverter
     {
@@ -234,7 +234,7 @@ The implementation of the ViewModel is below:
 
 #### __C#__
 
-{{region gridview-how-to-use-radcontextmenu-mvvm_5}}
+{{region cs-gridview-how-to-use-radcontextmenu-mvvm_5}}
 
     public ViewModel()
     {

@@ -23,7 +23,7 @@ This approach involves inheriting __GridViewColumn__ and overriding __CreateCell
 
 #### __C#__
 
-{{region gridview-add-button-column_0}}
+{{region cs-gridview-add-button-column_0}}
 
 	public class MyButtonColumn : GridViewColumn
 	{
@@ -48,7 +48,7 @@ Now we need to add this custom column to RadGridView.Columns. We can do it eithe
 
 #### __XAML__
 
-{{region gridview-add-button-column_1}}
+{{region xaml-gridview-add-button-column_1}}
 
 	<telerik:RadGridView.Columns>
 	    ...
@@ -60,7 +60,7 @@ or in code (subscribing for RadGridView.DataLoaded event):
 
 #### __C#__
 
-{{region gridview-add-button-column_2}}
+{{region cs-gridview-add-button-column_2}}
 
 	private void clubsGrid_DataLoaded(object sender, EventArgs e)
 	{
@@ -82,7 +82,7 @@ With this approach we are re-defining the template of the cells for that column.
 
 #### __XAML__
 
-{{region gridview-add-button-column_3}}
+{{region xaml-gridview-add-button-column_3}}
 
 	<telerik:RadGridView.Columns>
 	    ...

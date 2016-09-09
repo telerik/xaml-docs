@@ -28,7 +28,7 @@ For example, if you want to set the style for the __GridViewDataColumn__'s edito
 
 #### __[XAML] Example 1: Styling all text boxes of an application__
 
-	{{region radgridview-styling-column-editor_0}}
+	{{region xaml-radgridview-styling-column-editor_0}}
 	<Style x:Key="TextBoxStyle" TargetType="TextBox">
 	    <Setter Property="Background" Value="Red"/>
 		<Setter Property="Foreground" Value="Yellow"/>
@@ -40,7 +40,7 @@ For example, if you want to set the style for the __GridViewDataColumn__'s edito
 
 #### __[XAML] Example 2: Setting a column's EditorStyle__
 
-	{{region radgridview-styling-column-editor_1}}
+	{{region xaml-radgridview-styling-column-editor_1}}
 	<telerik:GridViewDataColumn EditorStyle="{StaticResource TextBoxStyle}" />
 	{{endregion}}
 

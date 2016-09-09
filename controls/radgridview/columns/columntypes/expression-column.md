@@ -16,7 +16,7 @@ __GridViewExpressionColumn__ derives from [GridViewColumn]({%slug radgridview-co
 
 #### __[XAML] Example 1: Define GridViewExpressionColumn in XAML.__
 
-{{region gridview-expression-column_0}}
+{{region xaml-gridview-expression-column_0}}
 
 	<telerik:RadGridView ItemsSource="{Binding Products}" AutoGenerateColumns="False" ColumnWidth="*">
 	 <telerik:RadGridView.Columns>

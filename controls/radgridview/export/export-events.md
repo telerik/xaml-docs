@@ -36,7 +36,7 @@ You can subscribe to the events either declaratively or from the code-behind lik
 
 #### __[XAML]Example 1: Subscribe to events declaratively:__
 
-{{region gridview-export-events_0}}
+{{region xaml-gridview-export-events_0}}
 
 	<telerik:RadGridView x:Name="RadGridView1"
 	                     ElementExporting="RadGridView1_ElementExporting"
@@ -45,7 +45,7 @@ You can subscribe to the events either declaratively or from the code-behind lik
 
 #### __[C#]Example 2: Subscribe to events from the code-behind:__
 
-{{region gridview-export-events_1}}
+{{region cs-gridview-export-events_1}}
 
 	RadGridView1.ElementExporting += new EventHandler<GridViewElementExportingEventArgs>(RadGridView1_ElementExporting);
 	RadGridView1.ElementExported += new EventHandler<GridViewElementExportedEventArgs>(RadGridView1_ElementExported);
@@ -54,7 +54,7 @@ You can subscribe to the events either declaratively or from the code-behind lik
 
 #### __[VB.NET]Example 3: Subscribe to events from the code-behind:__
 
-{{region gridview-export-events_2}}
+{{region vb-gridview-export-events_2}}
 
 	AddHandler RadGridView1.ElementExporting, AddressOf RadGridView1_ElementExporting
 	AddHandler RadGridView1.ElementExported, AddressOf RadGridView1_ElementExported
@@ -100,7 +100,7 @@ You can use this event if you want to write additional data to the stream. A com
 	
 #### __[C#] Example 4: Add row details to the exported data:__
 
-{{region gridview-export-events_5}}
+{{region cs-gridview-export-events_5}}
 
 	private void RadGridView1_ElementExported(object sender, GridViewElementExportedEventArgs e)
 	{
@@ -124,7 +124,7 @@ You can use this event if you want to write additional data to the stream. A com
 
 #### __[VB.NET] Example 5: Add row details to the exported data:__
 
-{{region gridview-export-events_6}}
+{{region vb-gridview-export-events_6}}
 
 	Private Sub RadGridView1_ElementExported(sender As Object, e As GridViewElementExportedEventArgs)
 	 If e.Element = ExportElement.Row Then
@@ -174,7 +174,7 @@ For example:
         
 #### __[C#] Example 6: Define a style:__
 
-{{region gridview-export-events_7}}
+{{region cs-gridview-export-events_7}}
 
 	ExcelMLStyle style = new ExcelMLStyle("0");            
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
@@ -219,7 +219,7 @@ __NumberFormat:__
 
 #### __[C#] Example 7: Apply a style before exporting:__
 
-{{region gridview-export-events_9}}
+{{region cs-gridview-export-events_9}}
 
  	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{

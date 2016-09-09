@@ -36,7 +36,7 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all cells of an application__
 
-	{{region gridview-cells_1}}
+	{{region xaml-gridview-cells_1}}
 	<Style TargetType="telerik:GridViewCell">
 		<Setter Property="VerticalContentAlignment" Value="Top"/>
 		<Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -56,7 +56,7 @@ __RadGridView Cells__ can also be styled by creating an appropriate __Style__ fo
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 
-	{{region gridview-styling-cell_1}}
+	{{region xaml-gridview-styling-cell_1}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
                                 Header="Name"
                                 CellStyle="{StaticResource GridViewCellStyle}" />

@@ -30,7 +30,7 @@ For example, you can close the popup with the following code:
 
 #### __[C#] Example 1: Closing the Filtering Popup from the Deactivated event__
 
-{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_3}}
+{{region cs-gridview-filtering-faq-popup-stays_0}}
 
     var FilterDialogs = this.clubsGrid.ChildrenOfType<Popup>().Where(p => p.Name == "PART_DropDownPopup");
     if (FilterDialogs != null)
@@ -43,7 +43,7 @@ For example, you can close the popup with the following code:
 
 #### __[VB.NET] Example 1: Closing the Filtering Popup from the Deactivated event__
 
-{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_4}}
+{{region vb-gridview-filtering-faq-popup-stays_1}}
 
     Dim FilterDialogs = Me.clubsGrid.ChildrenOfType(Of Popup)().Where(Function(p) p.Name = "PART_DropDownPopup")
 	If FilterDialogs IsNot Nothing Then
@@ -63,7 +63,7 @@ And here is how to set it:
 
 #### __[XAML] Example 2: Closing the Filtering Popup in XAML__
 
-{{region gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_5}}
+{{region xaml-gridview-filtering-faq-popup-stays_2}}
 
     <telerik:RadGridView ShouldCloseFilteringPopupOnKeyboardFocusChanged="True" />
 {{endregion}}

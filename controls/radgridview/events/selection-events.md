@@ -25,7 +25,7 @@ It is fired once a selection is about to be performed and a change in the Select
 
 #### __C#__
 
-{{region gridview-selection-events_0}}
+{{region cs-gridview-selection-events_0}}
 
 	public BasicSelection()
 	{
@@ -40,7 +40,7 @@ It is fired once a selection is about to be performed and a change in the Select
 
 #### __VB.NET__
 
-{{region gridview-selection-events_1}}
+{{region vb-gridview-selection-events_1}}
 
 	Public Sub New()
 	 InitializeComponent()
@@ -59,7 +59,7 @@ Fires each time there is a change in the __SelectedItems__ collection (a row has
 
 #### __C#__
 
-{{region gridview-selection-events_2}}
+{{region cs-gridview-selection-events_2}}
 
 	public BasicSelection()
 	{
@@ -74,7 +74,7 @@ Fires each time there is a change in the __SelectedItems__ collection (a row has
 
 #### __VB.NET__
 
-{{region gridview-selection-events_3}}
+{{region vb-gridview-selection-events_3}}
 
 	Public Sub New()
 	    InitializeComponent()
@@ -97,7 +97,7 @@ This event is raised when a cell is selected. It fires before the __SelectionCha
 
 #### __C#__
 
-{{region gridview-selection-events_4}}
+{{region cs-gridview-selection-events_4}}
 
 	public BasicSelection()
 	{
@@ -112,7 +112,7 @@ This event is raised when a cell is selected. It fires before the __SelectionCha
 
 #### __VB.NET__
 
-{{region gridview-selection-events_5}}
+{{region vb-gridview-selection-events_5}}
 
 	Public Sub New()
 	    InitializeComponent()
@@ -135,7 +135,7 @@ This event is fired on the time a change in the SelectedCells collection is abou
 
 #### __C#__
 
-{{region gridview-selection-events_6}}
+{{region cs-gridview-selection-events_6}}
 
 	public BasicSelection()
 	{
@@ -150,7 +150,7 @@ This event is fired on the time a change in the SelectedCells collection is abou
 
 #### __VB.NET__
 
-{{region gridview-selection-events_7}}
+{{region vb-gridview-selection-events_7}}
 
 	Public Sub New()
 	 InitializeComponent()
@@ -177,7 +177,7 @@ Fires each time there is change in the __SelectedCells__ collection (a cell has 
 
 #### __C#__
 
-{{region gridview-selection-events_8}}
+{{region cs-gridview-selection-events_8}}
 
 	public MainPage()
 	{
@@ -191,7 +191,7 @@ Fires each time there is change in the __SelectedCells__ collection (a cell has 
 
 #### __VB.NET__
 
-{{region gridview-selection-events_9}}
+{{region vb-gridview-selection-events_9}}
 
 	Public Sub New()
 	 InitializeComponent()

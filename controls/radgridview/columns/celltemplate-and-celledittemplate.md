@@ -34,7 +34,7 @@ In case you want to change those default elements for a particular columns, you 
 
 #### __XAML__
 
-{{region radgridview-columns-celltemplate-and-celledittemplate_0}}
+{{region xaml-radgridview-columns-celltemplate-and-celledittemplate_0}}
 
 	<telerik:RadGridView x:Name="EmployeesGrid" AutoGenerateColumns="False" ItemsSource="{Binding Employees}">
 	 <telerik:RadGridView.Columns>

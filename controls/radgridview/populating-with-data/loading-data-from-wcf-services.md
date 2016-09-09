@@ -22,7 +22,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __XAML__
 
-{{region gridview-loading-data-from-wcf-services_0}}
+{{region xaml-gridview-loading-data-from-wcf-services_0}}
 
 	<telerik:RadGridView x:Name="radGridView"/>
 {{endregion}}
@@ -35,14 +35,14 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_1}}
+{{region cs-gridview-loading-data-from-wcf-services_1}}
 
 	WcfServiceClient serviceClient = new WcfServiceClient();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_2}}
+{{region vb-gridview-loading-data-from-wcf-services_2}}
 
 	Dim serviceClient As New WcfServiceClient()
 {{endregion}}
@@ -53,7 +53,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_3}}
+{{region cs-gridview-loading-data-from-wcf-services_3}}
 
 	private void BeginRequest()
 	{
@@ -70,7 +70,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_4}}
+{{region vb-gridview-loading-data-from-wcf-services_4}}
 
 	Private Sub BeginRequest()
 	    AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
@@ -85,7 +85,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_5}}
+{{region cs-gridview-loading-data-from-wcf-services_5}}
 
 	WcfServiceClient serviceClient = new WcfServiceClient();
 	this.radGridView.ItemsSource = serviceClient.LoadCustomers();
@@ -93,7 +93,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_6}}
+{{region vb-gridview-loading-data-from-wcf-services_6}}
 
 	Dim serviceClient As New WcfServiceClient()
 	Me.radGridView.ItemsSource = serviceClient.LoadCustomers()
@@ -111,7 +111,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_7}}
+{{region cs-gridview-loading-data-from-wcf-services_7}}
 
 	public class NorthwindDataSource
 	{
@@ -120,7 +120,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_8}}
+{{region vb-gridview-loading-data-from-wcf-services_8}}
 
 	Public Class NorthwindDataSource
 	End Class
@@ -134,7 +134,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_9}}
+{{region cs-gridview-loading-data-from-wcf-services_9}}
 
 	public class NorthwindDataSource
 	{
@@ -154,7 +154,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_10}}
+{{region vb-gridview-loading-data-from-wcf-services_10}}
 
 	Public Class NorthwindDataSource
 	    Private serviceClient As SampleWcfServiceClient
@@ -183,7 +183,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_11}}
+{{region cs-gridview-loading-data-from-wcf-services_11}}
 
 	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>( serviceClient_LoadCustomersCompleted );
 	serviceClient.LoadCustomersAsync();
@@ -191,7 +191,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_12}}
+{{region cs-gridview-loading-data-from-wcf-services_12}}
 
 	foreach ( Customers c in serviceClient.LoadCustomers() )
 	{
@@ -201,7 +201,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_13}}
+{{region vb-gridview-loading-data-from-wcf-services_13}}
 
 	AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	serviceClient.LoadCustomersAsync()
@@ -209,7 +209,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_14}}
+{{region vb-gridview-loading-data-from-wcf-services_14}}
 
 	For Each c As Customers In serviceClient.LoadCustomers()
 	    Me.Customers.Add(c)
@@ -222,7 +222,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_15}}
+{{region cs-gridview-loading-data-from-wcf-services_15}}
 
 	private void serviceClient_LoadCustomersCompleted( object sender, LoadCustomersCompletedEventArgs e )
 	{
@@ -238,7 +238,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_16}}
+{{region vb-gridview-loading-data-from-wcf-services_16}}
 
 	Private Sub serviceClient_LoadCustomersCompleted(ByVal sender As Object, ByVal e As LoadCustomersCompletedEventArgs)
 	    If e.[Error] Is Nothing AndAlso e.Result IsNot Nothing Then
@@ -253,7 +253,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __XAML__
 
-{{region gridview-loading-data-from-wcf-services_17}}
+{{region xaml-gridview-loading-data-from-wcf-services_17}}
 
 	<UserControl.Resources>
 	   <example:NorthwindDataSource x:Key="DataSource"/>
@@ -264,7 +264,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __XAML__
 
-{{region gridview-loading-data-from-wcf-services_18}}
+{{region xaml-gridview-loading-data-from-wcf-services_18}}
 
 	<telerik:RadGridView x:Name="radGridView" Margin="8"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>

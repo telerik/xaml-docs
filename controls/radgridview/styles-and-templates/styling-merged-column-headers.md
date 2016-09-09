@@ -14,7 +14,7 @@ In order to style **Columng Groups** you will need to create two styles targetin
 
 #### __[XAML] Example 1: Styling the CommonHeaderPresenter and CommonColumnHeader__
 
-	{{region gridview-styling-column-groups-1}}
+	{{region xaml-gridview-styling-column-groups-1}}
 	<Style TargetType="telerik:CommonHeaderPresenter">
             <Setter Property="Background" Value="Red"/>
         </Style>

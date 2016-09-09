@@ -30,7 +30,7 @@ To set value for the header use the __Header__ property of the column.
 
 #### __[XAML] Example 1: Setting the Header Property__
 
-{{region gridview-columns-column-headers_0}}
+{{region xaml-gridview-columns-column-headers_0}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
 	                            Header="ID" />
@@ -40,7 +40,7 @@ The __Header__ property is of type __object__ and you are not limited to just us
 
 #### __[XAML] Example 2: Setting Custom Content to the Header Property__
 
-{{region gridview-columns-column-headers_1}}
+{{region xaml-gridview-columns-column-headers_1}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}">
 		<telerik:GridViewDataColumn.Header>
@@ -72,7 +72,7 @@ Column headers can only be hidden by setting __ShowColumnHeaders__ property of _
 
 #### __[XAML] Example 3: Setting the ShowColumnHeaders property to False__
 
-{{region gridview-columns-column-headers_2}}
+{{region xaml-gridview-columns-column-headers_2}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     ShowColumnHeaders="False">

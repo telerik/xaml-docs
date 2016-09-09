@@ -19,7 +19,7 @@ __Example 1: Create a generic GroupDescriptor<T>.__
 
 #### __C#__
 
-{{region gridview-howto-use-expression-descriptors_1}}
+{{region cs-gridview-howto-use-expression-descriptors_1}}
 
 	var descriptor = new GroupDescriptor<Employee, int, int>
 	{

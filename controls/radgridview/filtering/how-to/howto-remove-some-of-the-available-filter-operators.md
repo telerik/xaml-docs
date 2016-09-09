@@ -14,7 +14,7 @@ In case you want to hide some of the available filter operators, you have to att
 
 #### __C#__
 
-{{region gridview-filtering-howto-remove-some-of-the-available-filter-operators_0}}
+{{region cs-gridview-filtering-howto-remove-some-of-the-available-filter-operators_0}}
 
 	private void OnRadGridViewFilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
 	{
@@ -37,7 +37,7 @@ In case you want to hide some of the available filter operators, you have to att
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-remove-some-of-the-available-filter-operators_0}}
+{{region vb-gridview-filtering-howto-remove-some-of-the-available-filter-operators_0}}
 	Private Sub OnRadGridViewFilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
 		If e.Column.UniqueName = "HireDate" Then
 			e.AvailableOperators.Remove(Telerik.Windows.Data.FilterOperator.IsEqualTo)

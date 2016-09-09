@@ -16,14 +16,14 @@ There are three ways for the row to enter edit mode. The first one is when the u
 
 #### __C#__
 
-{{region gridview-managing-data-updating-entry_0}}
+{{region cs-gridview-managing-data-updating-entry_0}}
 
 	this.radGridView.BeginEdit();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-managing-data-updating-entry_1}}
+{{region vb-gridview-managing-data-updating-entry_1}}
 
 	Me.radGridView.BeginEdit()
 {{endregion}}
@@ -32,7 +32,7 @@ For example, you can use a button to call this method.
 
 #### __XAML__
 
-{{region gridview-managing-data-updating-entry_2}}
+{{region xaml-gridview-managing-data-updating-entry_2}}
 	<StackPanel x:Name="LayoutRoot">
 	    <Button Content="Edit"
 	            Click="Button_Click" />
@@ -47,7 +47,7 @@ And in the event handler call the method for the Click event.
 
 #### __C#__
 
-{{region gridview-managing-data-updating-entry_3}}
+{{region cs-gridview-managing-data-updating-entry_3}}
 	private void Button_Click( object sender, RoutedEventArgs e )
 	{
 	    this.radGridView.BeginEdit();
@@ -56,7 +56,7 @@ And in the event handler call the method for the Click event.
 
 #### __VB.NET__
 
-{{region gridview-managing-data-updating-entry_4}}
+{{region vb-gridview-managing-data-updating-entry_4}}
 
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.radGridView.BeginEdit()
@@ -73,7 +73,7 @@ The next step in implementing the adding functionality is to attach event handle
 
 #### __XAML__
 
-{{region gridview-managing-data-updating-entry_5}}
+{{region xaml-gridview-managing-data-updating-entry_5}}
 
 	<telerik:RadGridView x:Name="radGridView"
                          BeginningEdit="EditingRowsGrid_BeginningEdit"
@@ -85,7 +85,7 @@ The __BeginningEdit__ event is raised before the row enters edit mode. In the ev
 
 #### __C#__
 
-{{region gridview-managing-data-updating-entry_6}}
+{{region cs-gridview-managing-data-updating-entry_6}}
 
 	private void radGridView_BeginningEdit( object sender, GridViewBeginningEditRoutedEventArgs e )
 	{
@@ -94,7 +94,7 @@ The __BeginningEdit__ event is raised before the row enters edit mode. In the ev
 
 #### __VB.NET__
 
-{{region gridview-managing-data-updating-entry_7}}
+{{region vb-gridview-managing-data-updating-entry_7}}
 
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As GridViewBeginningEditRoutedEventArgs)
 	End Sub
@@ -104,7 +104,7 @@ There are several ways to commit the edited data and all of them will raise the 
 
 #### __C#__
 
-{{region gridview-managing-data-updating-entry_8}}
+{{region cs-gridview-managing-data-updating-entry_8}}
 
 	private void radGridView_RowEditEnded( object sender, GridViewRowEditEndedEventArgs e )
 	{
@@ -115,7 +115,7 @@ There are several ways to commit the edited data and all of them will raise the 
 
 #### __VB.NET__
 
-{{region gridview-managing-data-updating-entry_9}}
+{{region vb-gridview-managing-data-updating-entry_9}}
 
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 	End Sub
@@ -129,7 +129,7 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 
 #### __XAML__
 
-{{region gridview-managing-data-updating-entry_10}}
+{{region xaml-gridview-managing-data-updating-entry_10}}
 
 	private void radGridView_RowEditEnded( object sender, GridViewRowEditEndedEventArgs e )
 	{
@@ -146,7 +146,7 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 
 #### __VB.NET__
 
-{{region gridview-managing-data-updating-entry_11}}
+{{region vb-gridview-managing-data-updating-entry_11}}
 
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 	    If e.EditAction = GridViewEditAction.Cancel Then

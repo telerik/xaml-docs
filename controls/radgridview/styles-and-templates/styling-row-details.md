@@ -32,7 +32,7 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all row details of an application__
 
-	{{region gridview-styling-row-details-1}}
+	{{region xaml-gridview-styling-row-details-1}}
 	<Style TargetType="telerik:DetailsPresenter">
 		<Setter Property="Background" Value="Red"/>
 		<Setter Property="HorizontalContentAlignment" Value="Right"/>
@@ -46,7 +46,7 @@ __RadGridView__ exposes the __RowDetailsStyle__ property of type __Style__. It i
 
 #### __[XAML] Example 2: Setting RadGridView's RowDetailsStyle__
 
-	{{region gridview-styling-row-details-2}}
+	{{region xaml-gridview-styling-row-details-2}}
 	<telerik:RadGridView RowDetailsStyle="{StaticResource RowDetailsStyle}" />
 	{{endregion}}
 

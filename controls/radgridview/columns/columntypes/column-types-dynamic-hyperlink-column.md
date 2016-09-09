@@ -26,7 +26,7 @@ Here is a list of the most important properties:
 
 #### __[XAML] Example 1: Define GridViewDynamicHyperlinkColumn in XAML.__
 
-{{region radgridview-columns-column-types-dynamic-hyperlink-column_0}}
+{{region xaml-radgridview-columns-column-types-dynamic-hyperlink-column_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">

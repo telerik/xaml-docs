@@ -85,7 +85,7 @@ Using the __RadGridViewCommands__ class, you can set a consequence of commands t
 
 #### __C#__
 
-{{region GridView-Commands-Overview_0}}
+{{region cs-GridView-Commands-Overview_0}}
 
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
@@ -101,7 +101,7 @@ Using the __RadGridViewCommands__ class, you can set a consequence of commands t
 
 #### __VB.NET__
 
-{{region GridView-Commands-Overview_1}}
+{{region vb-GridView-Commands-Overview_1}}
 
 	Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
 	 Dim moveDownCommand = TryCast(RadGridViewCommands.MoveDown, RoutedUICommand)

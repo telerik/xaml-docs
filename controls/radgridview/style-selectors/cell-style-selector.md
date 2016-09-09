@@ -26,7 +26,7 @@ To do so follow these steps:
 
 #### __C#__
 
-{{region gridview-cell-style-selector_0}}
+{{region cs-gridview-cell-style-selector_0}}
 
 	public class StadiumCapacityStyle : StyleSelector
 	{
@@ -53,7 +53,7 @@ To do so follow these steps:
 
 #### __VB.NET__
 
-{{region gridview-cell-style-selector_1}}
+{{region vb-gridview-cell-style-selector_1}}
 
 	Public Class StadiumCapacityStyle
 	 Inherits StyleSelector

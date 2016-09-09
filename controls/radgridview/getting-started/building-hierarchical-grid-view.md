@@ -25,7 +25,7 @@ The sample data is represented by teams divided into divisions. First create the
 
 #### __C#__
 
-{{region gridview-building-hierarchical-grid-view_0}}
+{{region cs-gridview-building-hierarchical-grid-view_0}}
 
 	public class Team
 	{
@@ -50,7 +50,7 @@ The sample data is represented by teams divided into divisions. First create the
 
 #### __VB.NET__
 
-{{region gridview-building-hierarchical-grid-view_1}}
+{{region vb-gridview-building-hierarchical-grid-view_1}}
 
 	Public Class Team
 	Private _Id As Integer
@@ -90,7 +90,7 @@ The class that represents a single division will contain a collection of Team ob
 
 #### __C#__
 
-{{region gridview-building-hierarchical-grid-view_2}}
+{{region cs-gridview-building-hierarchical-grid-view_2}}
 
 	public class Division
 	{
@@ -115,7 +115,7 @@ The class that represents a single division will contain a collection of Team ob
 
 #### __VB.NET__
 
-{{region gridview-building-hierarchical-grid-view_3}}
+{{region vb-gridview-building-hierarchical-grid-view_3}}
 
 	Public Class Division
 	Private _Id As Integer
@@ -157,7 +157,7 @@ Create "__DivisionsService__" class and implement a static method __GetDivisions
 
 #### __C#__
 
-{{region gridview-building-hierarchical-grid-view_4}}
+{{region cs-gridview-building-hierarchical-grid-view_4}}
 
 	public class DivisionsService
 	{
@@ -233,7 +233,7 @@ Create "__DivisionsService__" class and implement a static method __GetDivisions
 
 #### __VB.NET__
 
-{{region gridview-building-hierarchical-grid-view_5}}
+{{region vb-gridview-building-hierarchical-grid-view_5}}
 
 	Public Class DivisionsService
 	    Public Shared Function GetDivisions() As ObservableCollection(Of Division)
@@ -312,7 +312,7 @@ Now after the sample data is prepared you are ready to bind it to the __RadGridV
 
 #### __XAML__
 
-{{region gridview-building-hierarchical-grid-view_6}}
+{{region xaml-gridview-building-hierarchical-grid-view_6}}
 
 	<telerik:RadGridView x:Name="HierarchicalGridView"
 	                         AutoGenerateColumns="False">
@@ -330,7 +330,7 @@ Set the __ItemsSource__ in the code-behind file of your UserControl.
 
 #### __C#__
 
-{{region gridview-building-hierarchical-grid-view_7}}
+{{region cs-gridview-building-hierarchical-grid-view_7}}
 
 	public BuildingHierarchicalGrid()
 	{
@@ -342,7 +342,7 @@ Set the __ItemsSource__ in the code-behind file of your UserControl.
 
 #### __VB.NET__
 
-{{region gridview-building-hierarchical-grid-view_8}}
+{{region vb-gridview-building-hierarchical-grid-view_8}}
 
 	Public Sub New()
 	    InitializeComponent()
@@ -360,7 +360,7 @@ The next step is to make the __RadGridView__ display the collections of teams as
 
 #### __XAML__
 
-{{region gridview-building-hierarchical-grid-view_9}}
+{{region xaml-gridview-building-hierarchical-grid-view_9}}
 
 	<telerik:RadGridView x:Name="HierarchicalGridView"
 	                         AutoGenerateColumns="False">

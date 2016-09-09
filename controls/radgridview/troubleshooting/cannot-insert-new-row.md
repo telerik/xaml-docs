@@ -32,7 +32,7 @@ For example if you have a collection of Orders when you want to add a new Order 
         
 #### __C#__
 
-{{region gridview-troubleshooting-cannot-insert-new-row_0}}
+{{region cs-gridview-troubleshooting-cannot-insert-new-row_0}}
 
     private void ordersGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)
     {
@@ -42,7 +42,7 @@ For example if you have a collection of Orders when you want to add a new Order 
 
 #### __VB.NET__
 
-{{region gridview-troubleshooting-cannot-insert-new-row_1}}
+{{region vb-gridview-troubleshooting-cannot-insert-new-row_1}}
 
     Private Sub ordersGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)
     e.NewObject = New Order() With 

@@ -14,7 +14,7 @@ As you know, in order to display Row Details outside [RadGridView](http://www.te
 
 #### __C#__
 
-{{region gridview-how-to-display-row-details-window_0}}
+{{region cs-gridview-how-to-display-row-details-window_0}}
 
 	public MainPage()
 	{
@@ -39,7 +39,7 @@ The [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.c
 
 #### __C#__
 
-{{region gridview-how-to-display-row-details-window_1}}
+{{region cs-gridview-how-to-display-row-details-window_1}}
 
 	public interface IDetailsProvider : INotifyPropertyChanged 
 	{ 
@@ -54,7 +54,7 @@ As you can see, it inherits from the [INotifyPropertyChanged](http://msdn.micros
 
 #### __C#__
 
-{{region gridview-how-to-display-row-details-window_2}}
+{{region cs-gridview-how-to-display-row-details-window_2}}
 	private void OnRowDetailsProviderPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 	{
 	   if (e.PropertyName == "DataContext")

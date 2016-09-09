@@ -31,7 +31,7 @@ For the purpose of this tutorial, we will use the __RadGridView__ declaration in
 
 #### __[XAML] Example 1: Declare RadGridView.__
 
-{{region gridview-managing-data-validation_0}}
+{{region xaml-gridview-managing-data-validation_0}}
 
 	<telerik:RadGridView x:Name="radGridView"/>
 {{endregion}}
@@ -89,7 +89,7 @@ Attach to the __CellValidating__ event, which is exposed by the __RadGridView__.
 
 #### __[XAML] Example 3: Attach to the CellValidating event.__
 
-{{region gridview-managing-data-validation_1}}
+{{region xaml-gridview-managing-data-validation_1}}
 
 	<telerik:RadGridView x:Name="radGridView" CellValidating="radGridView_CellValidating"/>
 {{endregion}}
@@ -99,7 +99,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 
 #### __[C#] Example 3: Add custom logic in the code behind.__
 
-{{region gridview-managing-data-validation_2}}
+{{region cs-gridview-managing-data-validation_2}}
 
 	private void radGridView_CellValidating( object sender, Telerik.Windows.Controls.GridViewCellValidatingEventArgs e )
 	{
@@ -116,7 +116,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 
 #### __[VB.NET] Example 3: Add custom logic in the code behind.__
 
-{{region gridview-managing-data-validation_3}}
+{{region vb-gridview-managing-data-validation_3}}
 
 	Private Sub radGridView_CellValidating(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewCellValidatingEventArgs)
 	    If e.Cell.Column.UniqueName = "OrderNO" Then
@@ -143,7 +143,7 @@ An alternative approach is to use validation on a __property level__ as shown in
 
 #### __[C#] Example 4: Set validation on a property level.__
 
-{{region gridview-managing-data-validation_4}}
+{{region cs-gridview-managing-data-validation_4}}
 
 	public class Order
 	{
@@ -169,7 +169,7 @@ An alternative approach is to use validation on a __property level__ as shown in
 
 #### __[VB.NET] Example 4: Set validation on a property level.__
 
-{{region gridview-managing-data-validation_5}}
+{{region vb-gridview-managing-data-validation_5}}
 
 	Public Class Order
 	    Private m_orderNo As String
@@ -206,7 +206,7 @@ Attach to the __RowValidating__ event, which is exposed by the __RadGridView__.
 
 #### __[XAML] Example 5: Attach to the RowValidating event.__
 
-{{region gridview-managing-data-validation_6}}
+{{region xaml-gridview-managing-data-validation_6}}
 
 	<telerik:RadGridView RowValidating="radGridView_RowValidating"/>
 {{endregion}}
@@ -216,7 +216,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 <Comment: Isn't the next example 6 instead of 5?>
 #### __[C#] Example 5: Apply custom logic in the RowValidating event.__
 
-{{region gridview-managing-data-validation_7}}
+{{region cs-gridview-managing-data-validation_7}}
 
 	private void radGridView_RowValidating( object sender, Telerik.Windows.Controls.GridViewRowValidatingEventArgs e )
 	{
@@ -244,7 +244,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 
 #### __[VB.NET] Example 5: Apply custom logic in the RowValidating event.__
 
-{{region gridview-managing-data-validation_8}}
+{{region vb-gridview-managing-data-validation_8}}
 
 	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewRowValidatingEventArgs)
 	    Dim order As Order = TryCast(e.Row.DataContext, Order)
@@ -294,7 +294,7 @@ The code snippet below shows you how to use __DataAnnotations__ in order to vali
 <Comment: You already have an example 5 in the row validation section above. Please check the numbering. In the previous sentence, please change "below" to the correct example number.>
 #### __[C#] Example 5: Set validation through data DataAnnotations.__
 
-{{region gridview-managing-data-validation_9}}
+{{region cs-gridview-managing-data-validation_9}}
 
 	[Required]
 	public string OrderNO
@@ -315,7 +315,7 @@ The code snippet below shows you how to use __DataAnnotations__ in order to vali
 
 #### __[VB.NET] Example 5: Set validation through data DataAnnotations.__
 
-{{region gridview-managing-data-validation_10}}
+{{region vb-gridview-managing-data-validation_10}}
 
 	<Required()> _
 	Public Property OrderNO() As String

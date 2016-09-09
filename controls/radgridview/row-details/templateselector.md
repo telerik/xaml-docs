@@ -33,7 +33,7 @@ To do so follow these steps:
 				
 #### __[C#] Example 1: Custom implementation of a DataTemplateSelector__
 
-{{region radgridview-row-details-templateselector-0}}
+{{region cs-radgridview-row-details-templateselector-0}}
 
 	public class MyCustomRowDetailsTemplateSelector : DataTemplateSelector
 	{
@@ -61,7 +61,7 @@ To do so follow these steps:
 
 #### __[VB] Example 1: Custom implementation of a DataTemplateSelector__
 
-{{region radgridview-row-details-templateselector-0}}
+{{region vb-radgridview-row-details-templateselector-0}}
 
 		Public Class MyCustomRowDetailsTemplateSelector
 			Inherits DataTemplateSelector
@@ -90,7 +90,7 @@ In this case we have two different DataTemplates that could be applied - __bigSt
 
 #### __[XAML] Example 2: Definition of the bigStadium and smallStadium DataTemplates__
 
-{{region radgridview-row-details-templateselector_0}}
+{{region xaml-radgridview-row-details-templateselector_0}}
 
 	<Grid.Resources>
 		<Style x:Key="playersGridRowBackground"
@@ -148,7 +148,7 @@ In this case we have two different DataTemplates that could be applied - __bigSt
 				 
 #### __[XAML] Example 3: Definition of RowDetailsTemplateSelector property of RadGridView__
 
-{{region radgridview-row-details-templateselector_1}}
+{{region xaml-radgridview-row-details-templateselector_1}}
 
 	<telerik:RadGridView Name="clubsGrid"
 			            Margin="5"

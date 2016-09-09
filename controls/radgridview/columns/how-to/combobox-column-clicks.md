@@ -30,7 +30,7 @@ This could be done in __XAML__ by applying a Style targeting RadComboBox element
 
 #### __XAML__
 
-{{region gridview-combobox-column-clicks_0}}
+{{region xaml-gridview-combobox-column-clicks_0}}
 
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding ClubID}"
 	                                SelectedValueMemberPath="ID"

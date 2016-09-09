@@ -40,7 +40,7 @@ If you don't want your __RadGridView__ to be sortable, you just have to set its 
 
 #### __XAML__
 
-{{region gridview-sorting-basics_0}}
+{{region xaml-gridview-sorting-basics_0}}
 
 	<telerik:RadGridView x:Name="radGridView" 
 	                     CanUserSortColumns="False">
@@ -51,7 +51,7 @@ In case you want to disable sorting for a particular column only, you can config
 
 #### __XAML__
 
-{{region gridview-sorting-basics_1}}
+{{region xaml-gridview-sorting-basics_1}}
 
 	<telerik:GridViewColumn IsSortable="False" />
 {{endregion}}
@@ -62,7 +62,7 @@ There are two events that are raised as the user apply sorting on any column. Th
 
 #### __XAML__
 
-{{region gridview-sorting-basics_2}}
+{{region xaml-gridview-sorting-basics_2}}
 
 	<telerik:RadGridView x:Name="radGridView"
                          Sorting="radGridView_Sorting"
@@ -75,7 +75,7 @@ You are also able to cancel the sorting operation by setting the __e.Cancel__ pr
 
 #### __C#__
 
-{{region gridview-sorting-basics_3}}
+{{region cs-gridview-sorting-basics_3}}
 
 	private void radGridView_Sorting( object sender, GridViewSortingEventArgs e )
 	{
@@ -85,7 +85,7 @@ You are also able to cancel the sorting operation by setting the __e.Cancel__ pr
 
 #### __VB.NET__
 
-{{region gridview-sorting-basics_4}}
+{{region vb-gridview-sorting-basics_4}}
 
 	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
 	    e.Cancel = True
@@ -101,7 +101,7 @@ In the event handler you can place some code that has to be executed when the da
 
 #### __C#__
 
-{{region gridview-sorting-basics_5}}
+{{region cs-gridview-sorting-basics_5}}
 
 	private GridViewColumn previousColumn;
 	private void radGridView_Sorted( object sender, GridViewSortedEventArgs e )
@@ -117,7 +117,7 @@ In the event handler you can place some code that has to be executed when the da
 
 #### __VB.NET__
 
-{{region gridview-sorting-basics_6}}
+{{region vb-gridview-sorting-basics_6}}
 
 	Private previousColumn As GridViewColumn
 	Private Sub radGridView_Sorted(ByVal sender As Object, ByVal e As GridViewSortedEventArgs)

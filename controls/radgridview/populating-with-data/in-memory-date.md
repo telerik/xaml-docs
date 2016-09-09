@@ -16,7 +16,7 @@ The purpose of this tutorial is to show you how to populate a __RadGridView__ wi
 
 #### __XAML__
 
-{{region gridview-in-memory-date_0}}
+{{region xaml-gridview-in-memory-date_0}}
 
 	<telerik:RadGridView x:Name="radGridView" Margin="8"/>
 {{endregion}}
@@ -27,7 +27,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __C#__
 
-{{region gridview-in-memory-date_1}}
+{{region cs-gridview-in-memory-date_1}}
 
 	public class Car
 	{
@@ -54,7 +54,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __VB.NET__
 
-{{region gridview-in-memory-date_2}}
+{{region vb-gridview-in-memory-date_2}}
 
 	Public Class Car
 	
@@ -92,7 +92,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __C#__
 
-{{region gridview-in-memory-date_3}}
+{{region cs-gridview-in-memory-date_3}}
 
 	public class RadGridViewSampleData
 	{
@@ -101,7 +101,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __VB.NET__
 
-{{region gridview-in-memory-date_4}}
+{{region vb-gridview-in-memory-date_4}}
 
 	Public Class RadGridViewSampleData
 	End Class
@@ -111,7 +111,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __C#__
 
-{{region gridview-in-memory-date_5}}
+{{region cs-gridview-in-memory-date_5}}
 
 	public class RadGridViewSampleData
 	{
@@ -129,7 +129,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __VB.NET__
 
-{{region gridview-in-memory-date_6}}
+{{region vb-gridview-in-memory-date_6}}
 
 	Public Class RadGridViewSampleData
 	    Public Sub New()
@@ -152,7 +152,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __C#__
 
-{{region gridview-in-memory-date_7}}
+{{region cs-gridview-in-memory-date_7}}
 
 	Cars.Add( new Car( "BMW", "A german luxury car." ) );
 	Cars.Add( new Car( "Porsche", "A german sports car." ) );
@@ -162,7 +162,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __VB.NET__
 
-{{region gridview-in-memory-date_8}}
+{{region vb-gridview-in-memory-date_8}}
 
 	Cars.Add(New Car("BMW", "A german luxury car."))
 	Cars.Add(New Car("Porsche", "A german sports car."))
@@ -174,7 +174,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __XAML__
 
-{{region gridview-in-memory-date_9}}
+{{region xaml-gridview-in-memory-date_9}}
 
 	<UserControl.Resources>
 	    <sampleData:RadGridViewSampleData x:Key="DataSource"/>
@@ -185,7 +185,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __XAML__
 
-{{region gridview-in-memory-date_10}}
+{{region xaml-gridview-in-memory-date_10}}
 
 	<telerik:RadGridView x:Name="radGridView" Margin="8"
 	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Cars}"/>

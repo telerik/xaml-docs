@@ -22,7 +22,7 @@ This article will show how to access and set different properties, in code behin
 
 #### __XAML__
 
-{{region gridview-how-to-access-child-gridview_0}}
+{{region xaml-gridview-how-to-access-child-gridview_0}}
 
 	<telerik:RadGridView Name="employeeRadGridView" 
 	                     ItemsSource="{Binding Employees}" 
@@ -34,7 +34,7 @@ This article will show how to access and set different properties, in code behin
 
 #### __C#__
 
-{{region gridview-how-to-access-child-gridview_1}}
+{{region cs-gridview-how-to-access-child-gridview_1}}
 
 	private void employeeRadGridView_DataLoading(object sender, GridViewDataLoadingEventArgs e)
 	{
@@ -61,7 +61,7 @@ This article will show how to access and set different properties, in code behin
 
 #### __VB.NET__
 
-{{region gridview-how-to-access-child-gridview_2}}
+{{region vb-gridview-how-to-access-child-gridview_2}}
 
 	Private Sub employeeRadGridView_DataLoading(sender As Object, e As GridViewDataLoadingEventArgs)
 	 Dim dataControl As GridViewDataControl = DirectCast(sender, GridViewDataControl)
@@ -88,7 +88,7 @@ As an alternative, you can use the __HierarchyChildTemplate__ and put RadGridVie
 
 #### __XAML__
 
-{{region gridview-how-to-access-child-gridview_3}}
+{{region xaml-gridview-how-to-access-child-gridview_3}}
 
 	<telerik:RadGridView Name="gridView" ItemsSource="{Binding Person}">
 	    <telerik:RadGridView.ChildTableDefinitions>

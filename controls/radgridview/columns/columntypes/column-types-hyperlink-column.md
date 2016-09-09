@@ -22,7 +22,7 @@ Lets say the bound data object exposes a TeamUrl property defined as follows:
         
 #### __C#__
 
-{{region radgridview-columns-column-types-hyperlink-column_1}}
+{{region cs-radgridview-columns-column-types-hyperlink-column_1}}
 
 	public class Employee
 	{
@@ -45,7 +45,7 @@ Lets say the bound data object exposes a TeamUrl property defined as follows:
 
 #### __VB.NET__
 
-{{region radgridview-columns-column-types-hyperlink-column_2}}
+{{region vb-radgridview-columns-column-types-hyperlink-column_2}}
 
     Public Class Employee
         Private m_teamUrl As String = "http://google.com"
@@ -67,7 +67,7 @@ Then, here is how to define a column of such a type.
 
 #### __[XAML] Example 1: Define GridViewHyperlinkColumn in XAML.__
 
-{{region radgridview-columns-column-types-hyperlink-column_0}}
+{{region xaml-radgridview-columns-column-types-hyperlink-column_0}}
 
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">

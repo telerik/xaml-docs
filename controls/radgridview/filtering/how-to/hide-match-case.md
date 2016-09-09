@@ -33,7 +33,7 @@ Here is the full code
 
 #### __C#__
 
-{{region gridview-how-to-hide-match-case_2}}
+{{region cs-gridview-how-to-hide-match-case_2}}
 
 	void gridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
@@ -49,7 +49,7 @@ Here is the full code
 
 #### __VB.NET__
 
-{{region gridview-how-to-hide-match-case_3}}
+{{region vb-gridview-how-to-hide-match-case_3}}
 
     Private Sub gridView_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
         'get the StringFilterEditor in your RadGridView'
@@ -68,7 +68,7 @@ Here is the full code:
 
 #### __C#__
 
-{{region gridview-how-to-hide-match-case_0}}
+{{region cs-gridview-how-to-hide-match-case_0}}
 
 	void gridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
@@ -89,7 +89,7 @@ Here is the full code:
 
 #### __VB.NET__
 
-{{region gridview-how-to-hide-match-case_1}}
+{{region vb-gridview-how-to-hide-match-case_1}}
 
 	Private Sub gridView_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 	 'get the StringFilterEditor in your RadGridView'

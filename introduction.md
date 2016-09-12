@@ -281,6 +281,8 @@ Telerik &reg; UI for WPF features the following controls:
 
 * [PanelBar]({%slug radpanelbar-overview%})
 
+* [PasswordBox]({%slug radpasswordbox-overview%})
+
 * [PdfProcessing]({%slug radpdfprocessing-overview%})
 
 * [PdfViewer]({%slug radpdfviewer-overview%})

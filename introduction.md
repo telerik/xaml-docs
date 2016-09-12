@@ -113,7 +113,7 @@ Telerik &reg; UI for Silverlight features the following controls:
 
 * [OutlookBar]({%slug radoutlookbar-overview%})
 
-* [PanelBar]({%slug radpanelbar-overview%})
+* [PanelBar]( radpanelbar-overview%})
 
 * [PdfProcessing]({%slug radpdfprocessing-overview%})
 
@@ -280,6 +280,8 @@ Telerik &reg; UI for WPF features the following controls:
 * [OutlookBar]({%slug radoutlookbar-overview%})
 
 * [PanelBar]({%slug radpanelbar-overview%})
+
+* [PasswordBox]({%slug radpasswordbox-overview%})
 
 * [PdfProcessing]({%slug radpdfprocessing-overview%})
 

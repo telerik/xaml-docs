@@ -23,27 +23,27 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 	{{region cs-radradialmenu-commands-radialmenuitem_0}}
 		public class CustomItemCommand : ICommand
 		{
-			public bool CanExecute(object parameter)
-			{
-				var radialMenuItem = parameter as RadRadialMenuItem;
-				if (radialMenuItem != null)
-				{
-				   // perform custom logic here
-				}
-				return true;
-			}
+		    public bool CanExecute(object parameter)
+		    {
+		        var radialMenuItem = parameter as RadRadialMenuItem;
+		        if (radialMenuItem != null)
+		        {
+		            // perform custom logic here
+		        }
+		        return true;
+		    }
 		
-			public void Execute(object parameter)
-			{
-				var radialMenuItem = parameter as RadRadialMenuItem;
-				if (radialMenuItem != null)
-				{
-				   // perform custom logic here                
-				}
-			}
+		    public void Execute(object parameter)
+		    {
+		        var radialMenuItem = parameter as RadRadialMenuItem;
+		        if (radialMenuItem != null)
+		        {
+		            // perform custom logic here                
+		        }
+		    }
 		
-			public event EventHandler CanExecuteChanged;
-		}    
+		    public event EventHandler CanExecuteChanged;
+		}
 	{{endregion}}
 
 1. Add an instance of the custom command class to the Resources of the UserControl.
@@ -52,7 +52,7 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 
 	{{region xaml-radradialmenu-commands-radialmenuitem_1}}
 		<UserControl.Resources>
-			<local:CustomItemCommand x:Key="CustomItemCommand"/>
+		    <local:CustomItemCommand x:Key="CustomItemCommand"/>
 		</UserControl.Resources>
 	{{endregion}}
 
@@ -62,12 +62,12 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 
 	{{region xaml-radradialmenu-commands-radialmenuitem_2}}
 		<telerik:RadRadialMenu>
-			<telerik:RadRadialMenuItem Header="Item 1" Command="{StaticResource CustomItemCommand}" 
-					CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
-			<telerik:RadRadialMenuItem Header="Item 2" Command="{StaticResource CustomItemCommand}" 
-					CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
-			<telerik:RadRadialMenuItem Header="Item 3" Command="{StaticResource CustomItemCommand}" 
-					CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+		    <telerik:RadRadialMenuItem Header="Item 1" Command="{StaticResource CustomItemCommand}" 
+		    CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+		    <telerik:RadRadialMenuItem Header="Item 2" Command="{StaticResource CustomItemCommand}" 
+		    CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
+		    <telerik:RadRadialMenuItem Header="Item 3" Command="{StaticResource CustomItemCommand}" 
+		    CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
 		</telerik:RadRadialMenu>
 	{{endregion}}
 

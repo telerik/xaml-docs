@@ -52,15 +52,15 @@ __RadialMenuCommands__ class can be used in the following ways:
 
 	{{region xaml-radradialmenu-features-contextmenu_1}}
 		<TextBox Text="Some Text">
-			<telerik:EventToCommandBehavior.EventBindings>
-				<telerik:EventBinding EventName="GotFocus" Command="{x:Static telerik:RadialMenuCommands.Show}" />
-				<telerik:EventBinding EventName="LostFocus" Command="{x:Static telerik:RadialMenuCommands.Hide}" />
-			</telerik:EventToCommandBehavior.EventBindings>
-			<telerik:RadRadialMenu.RadialContextMenu>
-				<telerik:RadRadialMenu>
-				   ...
-				</telerik:RadRadialMenu>
-			</telerik:RadRadialMenu.RadialContextMenu>
+		    <telerik:EventToCommandBehavior.EventBindings>
+		        <telerik:EventBinding EventName="GotFocus" Command="{x:Static telerik:RadialMenuCommands.Show}" />
+		        <telerik:EventBinding EventName="LostFocus" Command="{x:Static telerik:RadialMenuCommands.Hide}" />
+		    </telerik:EventToCommandBehavior.EventBindings>
+		    <telerik:RadRadialMenu.RadialContextMenu>
+		        <telerik:RadRadialMenu>
+		            <!--...-->
+		        </telerik:RadRadialMenu>
+		    </telerik:RadRadialMenu.RadialContextMenu>
 		</TextBox>
 	{{endregion}}
 
@@ -70,15 +70,15 @@ __RadialMenuCommands__ class can be used in the following ways:
 
 	{{region xaml-radradialmenu-features-contextmenu_2}}
 		<TextBox Text="Some Text">
-			<TextBox.InputBindings>
-				<KeyBinding Modifiers="Control" Key="M" Command="{x:Static telerik:RadialMenuCommands.Show}" />                
-				<KeyBinding Key="Escape" Command="{x:Static telerik:RadialMenuCommands.Hide}" />
-			</TextBox.InputBindings>
-			<telerik:RadRadialMenu.RadialContextMenu>
-				<telerik:RadRadialMenu>
-					...
-				</telerik:RadRadialMenu>
-			</telerik:RadRadialMenu.RadialContextMenu>
+		    <TextBox.InputBindings>
+		        <KeyBinding Modifiers="Control" Key="M" Command="{x:Static telerik:RadialMenuCommands.Show}" />
+		        <KeyBinding Key="Escape" Command="{x:Static telerik:RadialMenuCommands.Hide}" />
+		    </TextBox.InputBindings>
+		    <telerik:RadRadialMenu.RadialContextMenu>
+		        <telerik:RadRadialMenu>
+		            <!--...-->
+		        </telerik:RadRadialMenu>
+		    </telerik:RadRadialMenu.RadialContextMenu>
 		</TextBox>
 	{{endregion}}
 

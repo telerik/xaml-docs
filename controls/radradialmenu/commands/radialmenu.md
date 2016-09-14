@@ -58,27 +58,27 @@ The next example will show how to implement custom command that will be executed
 	{{region cs-radradialmenu-commands-radialmenu_2}}
 		public class CustomMenuCommand : RadialMenuCommand
 		{
-			public CustomMenuCommand()
-			{
-				this.Id = CommandId.NavigateToView;
-			}
+		    public CustomMenuCommand()
+		    {
+		        this.Id = CommandId.NavigateToView;
+		    }
 		
-			public override void Execute(object parameter)
-			{
-				base.Execute(parameter);
-				var context = parameter as NavigateContext;
-				var source = context.MenuItemSource; // parent menu item
-				var target = context.MenuItemTarget; // current menu item
+		    public override void Execute(object parameter)
+		    {
+		        base.Execute(parameter);
+		        var context = parameter as NavigateContext;
+		        var source = context.MenuItemSource; // parent menu item
+		        var target = context.MenuItemTarget; // current menu item
 		
-				// put your custom command logic here
+		        // put your custom command logic here
 		
-				this.Owner.CommandService.ExecuteDefaultCommand(CommandId.NavigateToView, context);
-			}
+		        this.Owner.CommandService.ExecuteDefaultCommand(CommandId.NavigateToView, context);
+		    }
 		
-			public override bool CanExecute(object parameter)
-			{
-				return true;
-			}
+		    public override bool CanExecute(object parameter)
+		    {
+		        return true;
+		    }
 		}
 	{{endregion}}
 
@@ -88,17 +88,17 @@ The next example will show how to implement custom command that will be executed
 
 	{{region xaml-radradialmenu-commands-radialmenu_0}}
 		<telerik:RadRadialMenu>
-			<telerik:RadRadialMenu.Commands>
-				<local:CustomMenuCommand />
-			</telerik:RadRadialMenu.Commands>
-			<telerik:RadRadialMenuItem Header="Item 1" >
-				<telerik:RadRadialMenuItem Header="Item 1.1">
-					<telerik:RadRadialMenuItem Header="Item 1.1.1" />
-				</telerik:RadRadialMenuItem>
-			<telerik:RadRadialMenuItem Header="Item 1.2" >
-			   <telerik:RadRadialMenuItem Header="Item 1.2.1" />
-			</telerik:RadRadialMenuItem>
-			</telerik:RadRadialMenuItem>
+		    <telerik:RadRadialMenu.Commands>
+		        <local:CustomMenuCommand />
+		    </telerik:RadRadialMenu.Commands>
+		    <telerik:RadRadialMenuItem Header="Item 1" >
+		        <telerik:RadRadialMenuItem Header="Item 1.1">
+		            <telerik:RadRadialMenuItem Header="Item 1.1.1" />
+		        </telerik:RadRadialMenuItem>
+		        <telerik:RadRadialMenuItem Header="Item 1.2" >
+		            <telerik:RadRadialMenuItem Header="Item 1.2.1" />
+		        </telerik:RadRadialMenuItem>
+		    </telerik:RadRadialMenuItem>
 		</telerik:RadRadialMenu>
 	{{endregion}}
 

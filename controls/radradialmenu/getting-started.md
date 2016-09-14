@@ -35,7 +35,7 @@ where *telerik* namespace is defined like this:
 #### __[XAML]__
 
 {{region xaml-radradialmenu-getting-started_1}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"  
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 {{endregion}}
 
 #### __[C#] Creating RadRadialMenu with code__

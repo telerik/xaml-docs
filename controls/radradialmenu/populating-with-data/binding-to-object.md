@@ -20,37 +20,37 @@ In order to be able to successfully use the binding feature of the control, the 
 
 #### __C#__
 {{region cs-radradialmenu-populating-with-data-binding-to-object_1}}
-	public class CustomMenuItem: IRadialMenuItem
+	public class CustomMenuItem : IRadialMenuItem
 	{
-		public bool CanUserSelect { get; set; }
-		public System.Windows.Input.ICommand Command { get; set; }
-		public object CommandParameter { get; set; }
-		public System.Windows.UIElement CommandTarget { get; set; }
-		public Brush ContentSectorBackground { get; set; }
-		public string GroupName { get; set; }
-		public object Header { get; set; }
-		public object IconContent { get; set; }
-		public bool IsSelected { get; set; }
-		public IEnumerable<IRadialMenuItem> ItemsSource { get; set; }
-		public object ToolTipContent { get; set; }
+	    public bool CanUserSelect { get; set; }
+	    public System.Windows.Input.ICommand Command { get; set; }
+	    public object CommandParameter { get; set; }
+	    public System.Windows.UIElement CommandTarget { get; set; }
+	    public Brush ContentSectorBackground { get; set; }
+	    public string GroupName { get; set; }
+	    public object Header { get; set; }
+	    public object IconContent { get; set; }
+	    public bool IsSelected { get; set; }
+	    public IEnumerable<IRadialMenuItem> ItemsSource { get; set; }
+	    public object ToolTipContent { get; set; }
 	}
 {{endregion}}
 
 #### __VB.NET__
 {{region vb-radradialmenu-populating-with-data-binding-to-object_1}}
 	Public Class CustomMenuItem
-		Implements IRadialMenuItem
-			Public Property CanUserSelect() As Boolean
-			Public Property Command() As System.Windows.Input.ICommand
-			Public Property CommandParameter() As Object
-			Public Property CommandTarget() As System.Windows.UIElement
-			Public Property ContentSectorBackground() As Brush
-			Public Property GroupName() As String
-			Public Property Header() As Object
-			Public Property IconContent() As Object
-			Public Property IsSelected() As Boolean
-			Public Property ItemsSource() As IEnumerable(Of IRadialMenuItem)
-			Public Property ToolTipContent() As Object
+	    Implements IRadialMenuItem
+	    Public Property CanUserSelect As Boolean Implements IRadialMenuItem.CanUserSelect
+	    Public Property Command As ICommand Implements IRadialMenuItem.Command
+	    Public Property CommandParameter As Object Implements IRadialMenuItem.CommandParameter
+	    Public Property CommandTarget As UIElement Implements IRadialMenuItem.CommandTarget
+	    Public Property ContentSectorBackground As Brush Implements IRadialMenuItem.ContentSectorBackground
+	    Public Property GroupName As String Implements IRadialMenuItem.GroupName
+	    Public Property Header As Object Implements IRadialMenuItem.Header
+	    Public Property IconContent As Object Implements IRadialMenuItem.IconContent
+	    Public Property IsSelected As Boolean Implements IRadialMenuItem.IsSelected
+	    Public Property ItemsSource As IEnumerable(Of IRadialMenuItem) Implements IRadialMenuItem.ItemsSource
+	    Public Property ToolTipContent As Object Implements IRadialMenuItem.ToolTipContent
 	End Class
 {{endregion}}
 
@@ -62,78 +62,78 @@ The next thing is to simply define the needed source collection of CustomMenuIte
 
 #### __C#__
 {{region cs-radradialmenu-populating-with-data-binding-to-object_2}}
-	public class ViewModel: ViewModelBase
+	public class ViewModel : ViewModelBase
 	{
-		public ObservableCollection<CustomMenuItem> MenuItems { get; set; }
-
-		public ViewModel()
-		{
-			this.MenuItems = this.GetMenuItems();
-		}
-
-		private ObservableCollection<CustomMenuItem> GetMenuItems()
-		{
-			var collection = new ObservableCollection<CustomMenuItem>();
-
-			var fileItem = new CustomMenuItem { Header = "File" };
-			collection.Add(fileItem);
-
-			var uploadItem = new CustomMenuItem { Header = "Upload" };
-			collection.Add(uploadItem);
-
-			var mailItem = new CustomMenuItem { Header = "Mail" };
-			mailItem.ItemsSource = new ObservableCollection<CustomMenuItem>
-			{
-				new CustomMenuItem { Header = "Inbox" },
-				new CustomMenuItem { Header = "Drafts" },
-				new CustomMenuItem { Header = "Sent" },
-				new CustomMenuItem { Header = "Deleted" }
-			};
-			collection.Add(mailItem);
-
-			var favoritesItem = new CustomMenuItem { Header = "Favorites" };
-			collection.Add(favoritesItem);
-
-			return collection;
-		}
+	    public ObservableCollection<CustomMenuItem> MenuItems { get; set; }
+	
+	    public ViewModel()
+	    {
+	        this.MenuItems = this.GetMenuItems();
+	    }
+	
+	    private ObservableCollection<CustomMenuItem> GetMenuItems()
+	    {
+	        var collection = new ObservableCollection<CustomMenuItem>();
+	
+	        var fileItem = new CustomMenuItem { Header = "File" };
+	        collection.Add(fileItem);
+	
+	        var uploadItem = new CustomMenuItem { Header = "Upload" };
+	        collection.Add(uploadItem);
+	
+	        var mailItem = new CustomMenuItem { Header = "Mail" };
+	        mailItem.ItemsSource = new ObservableCollection<CustomMenuItem>
+				{
+					new CustomMenuItem { Header = "Inbox" },
+					new CustomMenuItem { Header = "Drafts" },
+					new CustomMenuItem { Header = "Sent" },
+					new CustomMenuItem { Header = "Deleted" }
+				};
+	        collection.Add(mailItem);
+	
+	        var favoritesItem = new CustomMenuItem { Header = "Favorites" };
+	        collection.Add(favoritesItem);
+	
+	        return collection;
+	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 {{region vb-radradialmenu-populating-with-data-binding-to-object_2}}
 	Public Class ViewModel
-		Inherits ViewModelBase
-
-		Public Property MenuItems() As ObservableCollection(Of CustomMenuItem)
-
-		Public Sub New()
-			Me.MenuItems = Me.GetMenuItems()
-		End Sub
-
-		Private Function GetMenuItems() As ObservableCollection(Of CustomMenuItem)
-			Dim collection = New ObservableCollection(Of CustomMenuItem)()
-
-			Dim fileItem = New CustomMenuItem With {.Header = "File"}
-			collection.Add(fileItem)
-
-			Dim uploadItem = New CustomMenuItem With {.Header = "Upload"}
-			collection.Add(uploadItem)
-
-			Dim mailItem = New CustomMenuItem With {.Header = "Mail"}
-			mailItem.ItemsSource = New ObservableCollection(Of CustomMenuItem) From { _
-				New CustomMenuItem With {.Header = "Inbox"}, _
-				New CustomMenuItem With {.Header = "Drafts"}, _
-				New CustomMenuItem With {.Header = "Sent"}, _
-				New CustomMenuItem With {.Header = "Deleted"} _
-			}
-			collection.Add(mailItem)
-
-			Dim favoritesItem = New CustomMenuItem With {.Header = "Favorites"}
-			collection.Add(favoritesItem)
-
-			Return collection
-		End Function
-	End Class
+	        Inherits ViewModelBase
+	
+	        Public Property MenuItems() As ObservableCollection(Of CustomMenuItem)
+	
+	        Public Sub New()
+	            Me.MenuItems = Me.GetMenuItems()
+	        End Sub
+	
+	        Private Function GetMenuItems() As ObservableCollection(Of CustomMenuItem)
+	            Dim collection = New ObservableCollection(Of CustomMenuItem)()
+	
+	            Dim fileItem = New CustomMenuItem With {.Header = "File"}
+	            collection.Add(fileItem)
+	
+	            Dim uploadItem = New CustomMenuItem With {.Header = "Upload"}
+	            collection.Add(uploadItem)
+	
+	            Dim mailItem = New CustomMenuItem With {.Header = "Mail"}
+	            mailItem.ItemsSource = New ObservableCollection(Of CustomMenuItem) From { _
+	                New CustomMenuItem With {.Header = "Inbox"}, _
+	                New CustomMenuItem With {.Header = "Drafts"}, _
+	                New CustomMenuItem With {.Header = "Sent"}, _
+	                New CustomMenuItem With {.Header = "Deleted"} _
+	            }
+	            collection.Add(mailItem)
+	
+	            Dim favoritesItem = New CustomMenuItem With {.Header = "Favorites"}
+	            collection.Add(favoritesItem)
+	
+	            Return collection
+	        End Function
+	    End Class
 {{endregion}}
 
 ## Binding the Collection in XAML

@@ -36,13 +36,13 @@ There are two ways to reference the needed xaml files:
 	#### __[XAML] Example 1: Merging the .xaml files__
 
 	{{region xaml-radradialmenu-styles-and-templates-setting-theme_0}}
-		 <Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-					<ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.xaml" />
-					<ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
+		<Application.Resources>
+		    <ResourceDictionary>
+		        <ResourceDictionary.MergedDictionaries>
+		            <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.xaml" />
+		            <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
+		        </ResourceDictionary.MergedDictionaries>
+		    </ResourceDictionary>
 		</Application.Resources>
 	{{endregion}}
 
@@ -57,12 +57,12 @@ There are two ways to reference the needed xaml files:
 
 	{{region xaml-radradialmenu-styles-and-templates-setting-theme_1}}
 		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-					<ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
-					<ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
+		    <ResourceDictionary>
+		        <ResourceDictionary.MergedDictionaries>
+		            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
+		            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
+		        </ResourceDictionary.MergedDictionaries>
+		    </ResourceDictionary>
 		</Application.Resources>
 	{{endregion}}
 

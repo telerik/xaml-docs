@@ -32,7 +32,7 @@ Initially __RadRadialMenu__ is closed, you should click on the __RadialMenuButto
 
 {{region xaml-radradialmenu-features-configuration_0}}
 	<telerik:RadRadialMenu IsOpen="True">
-	 ...
+	    <!--...-->
 	</telerik:RadRadialMenu>
 {{endregion}}
 
@@ -44,9 +44,9 @@ The size of __RadRadialMenu__ is set through __MinWidth__ and __MinHeight__ prop
 
 {{region xaml-radradialmenu-features-configuration_3}}
 	<telerik:RadRadialMenu IsOpen="True" MinWidth="200" MinHeight="200">
-		<telerik:RadRadialMenuItem Header="Item 1" />
-		<telerik:RadRadialMenuItem Header="Item 2" />
-		<telerik:RadRadialMenuItem Header="Item 3" />
+	    <telerik:RadRadialMenuItem Header="Item 1" />
+	    <telerik:RadRadialMenuItem Header="Item 2" />
+	    <telerik:RadRadialMenuItem Header="Item 3" />
 	</telerik:RadRadialMenu>
 {{endregion}}
 

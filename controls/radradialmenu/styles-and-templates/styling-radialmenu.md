@@ -30,7 +30,7 @@ The following code snippets show how these properties can be customized.
 
 #### __[XAML] Example 1: Define the Style properties__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_0}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_0}}
 	<UserControl.Resources>
 		<Style x:Key="CustomContentMenuStyle" TargetType="Rectangle" BasedOn="{StaticResource ContentMenuStyle}">
 	        <Setter Property="Fill" Value="Yellow" />           
@@ -44,7 +44,7 @@ The following code snippets show how these properties can be customized.
 
 #### __[XAML] Example 2: Set the Style properties to the RadialMenu__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_1}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_1}}
 	<telerik:RadRadialMenu ContentMenuBackgroundStyle="{StaticResource CustomContentMenuStyle}"
 	                       NavigationMenuBackgroundStyle="{StaticResource CustomNavigationMenuStyle}">
 	...
@@ -60,7 +60,7 @@ In order to change the way the navigation buttons look, you will need to create 
 
 #### __[XAML] Example 3: Customize the NavigationButtons__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_2}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_2}}
 	<UserControl.Resources>
 	<Style TargetType="telerik:NavigationItemButton" BasedOn="{StaticResource NavigationItemButtonStyle}">
 	    <Setter Property="Background" Value="Yellow"/>
@@ -80,7 +80,7 @@ __VisualStatesItemPresenter__ is the element used to mark the selected and highl
 
 #### __[XAML] Example 4: Customize the VisualStatesItemPresenter__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_3}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_3}}
 	<UserControl.Resources>
 	<Style TargetType="telerik:VisualStatesItemPresenter" BasedOn="{StaticResource VisualStatesItemPresenterStyle}">        
 	     <Setter Property="Background" Value="Blue"/>
@@ -101,7 +101,7 @@ __Example 5__ will show how these properties could be set:
 
 #### __[XAML] Example 5: VisualStatesItemPresenter with customize Thickness and ArrowThickness__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_4}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_4}}
 	<UserControl.Resources>
 	<Style TargetType="telerik:VisualStatesItemPresenter" BasedOn="{StaticResource VisualStatesItemPresenterStyle}">        
 	    <Setter Property="Background" Value="Blue"/>

@@ -19,7 +19,7 @@ The following example will demonstrate how to bind __RadRadialMenu__ with a coll
 In order to be able to successfully use the binding feature of the control, the used custom objects need to implement the __IRadialMenuItem__ interface. The interface provides all the required properties for __RadRadialMenuItem__:
 
 #### __C#__
-{{region radradialmenu-populating-with-data-binding-to-object_1}}
+{{region cs-radradialmenu-populating-with-data-binding-to-object_1}}
 	public class CustomMenuItem: IRadialMenuItem
 	{
 		public bool CanUserSelect { get; set; }
@@ -37,7 +37,7 @@ In order to be able to successfully use the binding feature of the control, the 
 {{endregion}}
 
 #### __VB.NET__
-{{region radradialmenu-populating-with-data-binding-to-object_1}}
+{{region vb-radradialmenu-populating-with-data-binding-to-object_1}}
 	Public Class CustomMenuItem
 		Implements IRadialMenuItem
 			Public Property CanUserSelect() As Boolean
@@ -61,7 +61,7 @@ In order to be able to successfully use the binding feature of the control, the 
 The next thing is to simply define the needed source collection of CustomMenuItems in the ViewModel. Once this is done we will be able to bind it to the __ItemsSource__ property. 
 
 #### __C#__
-{{region radradialmenu-populating-with-data-binding-to-object_2}}
+{{region cs-radradialmenu-populating-with-data-binding-to-object_2}}
 	public class ViewModel: ViewModelBase
 	{
 		public ObservableCollection<CustomMenuItem> MenuItems { get; set; }
@@ -100,7 +100,7 @@ The next thing is to simply define the needed source collection of CustomMenuIte
 {{endregion}}
 
 #### __VB.NET__
-{{region radradialmenu-populating-with-data-binding-to-object_2}}
+{{region vb-radradialmenu-populating-with-data-binding-to-object_2}}
 	Public Class ViewModel
 		Inherits ViewModelBase
 
@@ -141,7 +141,7 @@ The next thing is to simply define the needed source collection of CustomMenuIte
 The final step would be to set the ViewModel as DataContext and bind the already created collection to the __ItemsSource__ property of __RadRadialMenu__ as shown below:
 
 #### __XAML__
-{{region radradialmenu-populating-with-data-binding-to-object_1}}
+{{region xaml-radradialmenu-populating-with-data-binding-to-object_1}}
 	<telerik:RadRadialMenu ItemsSource="{Binding MenuItems}" />
 {{endregion}}
 

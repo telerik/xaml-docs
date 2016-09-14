@@ -26,7 +26,7 @@ __Example 1__ show how these properties can be used when the RadialContextMenu i
 
 #### __[XAML] Example 1: Setting ShowEventName/HideEventName properties__
 
-{{region radradialmenu-features-contextmenu_0}}
+{{region xaml-radradialmenu-features-contextmenu_0}}
 	<TextBox Text="Some Text">
 	    <telerik:RadRadialMenu.RadialContextMenu>
 	        <telerik:RadRadialMenu ShowEventName="GotFocus" HideEventName="LostFocus">
@@ -50,7 +50,7 @@ __RadialMenuCommands__ class can be used in the following ways:
 
 	#### __[XAML] Example 2: Using EventToCommandBehavior__
 
-	{{region radradialmenu-features-contextmenu_1}}
+	{{region xaml-radradialmenu-features-contextmenu_1}}
 		<TextBox Text="Some Text">
 			<telerik:EventToCommandBehavior.EventBindings>
 				<telerik:EventBinding EventName="GotFocus" Command="{x:Static telerik:RadialMenuCommands.Show}" />
@@ -68,7 +68,7 @@ __RadialMenuCommands__ class can be used in the following ways:
 
 	#### __[XAML] Example 3: Using InputBindings__
 
-	{{region radradialmenu-features-contextmenu_2}}
+	{{region xaml-radradialmenu-features-contextmenu_2}}
 		<TextBox Text="Some Text">
 			<TextBox.InputBindings>
 				<KeyBinding Modifiers="Control" Key="M" Command="{x:Static telerik:RadialMenuCommands.Show}" />                
@@ -86,7 +86,7 @@ __RadialMenuCommands__ class can be used in the following ways:
 
 	#### __[C#] Example 4: In code-behind__
 
-	{{region radradialmenu-features-contextmenu_3}}
+	{{region cs-radradialmenu-features-contextmenu_3}}
 		//show the RadialContextMenu
 		RadialMenuCommands.Show.Execute(null, textBox1);
 		

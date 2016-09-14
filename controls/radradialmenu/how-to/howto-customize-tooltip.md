@@ -28,7 +28,7 @@ You can completely disable showing the ToolTip for the whole __RadRadialMenu__ b
 
 #### __[XAML] Example 1: Disabling the ToolTip__
 
-{{region radradialmenu-howto-customize-tooltip_0}}
+{{region xaml-radradialmenu-howto-customize-tooltip_0}}
 	<telerik:RadRadialMenu ShowToolTip="False">
 	     ...
 	</telerik:RadRadialMenu>
@@ -40,7 +40,7 @@ __ToolTipContent__ property of the __RadialMenuItem__ allows you to customize th
 
 #### __[XAML] Example 2: Custom ToolTipContent__
 
-{{region radradialmenu-howto-customize-tooltip_1}}
+{{region xaml-radradialmenu-howto-customize-tooltip_1}}
 	<telerik:RadRadialMenu>
 	    <telerik:RadRadialMenuItem Header="Font 1">
 	        <telerik:RadRadialMenuItem.ToolTipContent>
@@ -65,7 +65,7 @@ __Example 3__ shows a quick sample of a custom MenuToolTipStyle.
 
 #### __[XAML] Example 3: Custom MenuToolTipStyle__
 
-{{region radradialmenu-howto-customize-tooltip_2}}
+{{region xaml-radradialmenu-howto-customize-tooltip_2}}
 	<Style TargetType="telerik:MenuToolTip" BasedOn="{StaticResource MenuToolTipStyle}">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -101,7 +101,7 @@ You could change the default position of the __RadialMenu__ ToolTip through the 
 
 #### __[XAML] Example 4: Subscribe to PreviewToolTipOpen event__
 
-{{region radradialmenu-howto-customize-tooltip_3}}
+{{region xaml-radradialmenu-howto-customize-tooltip_3}}
 	<telerik:RadRadialMenu PreviewToolTipOpen="RadRadialMenu_PreviewToolTipOpen">
 	    ...
 	</telerik:RadRadialMenu> 
@@ -109,7 +109,7 @@ You could change the default position of the __RadialMenu__ ToolTip through the 
 
 #### __[C#] Example 5: Set the position inside the event handler__
 
-{{region radradialmenu-howto-customize-tooltip_4}}
+{{region cs-radradialmenu-howto-customize-tooltip_4}}
 	private void RadRadialMenu_PreviewToolTipOpen(object sender, MenuToolTipEventArgs e)
 	{
 	    e.Placement = System.Windows.Controls.Primitives.PlacementMode.Left;

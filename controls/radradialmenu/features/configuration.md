@@ -30,7 +30,7 @@ Initially __RadRadialMenu__ is closed, you should click on the __RadialMenuButto
 
 #### __[XAML] Example 1: Setting IsOpen property__
 
-{{region radradialmenu-features-configuration_0}}
+{{region xaml-radradialmenu-features-configuration_0}}
 	<telerik:RadRadialMenu IsOpen="True">
 	 ...
 	</telerik:RadRadialMenu>
@@ -42,7 +42,7 @@ The size of __RadRadialMenu__ is set through __MinWidth__ and __MinHeight__ prop
 
 #### __[XAML] Example 2: Setting MinWidth and MinHeight properties__
 
-{{region radradialmenu-features-configuration_3}}
+{{region xaml-radradialmenu-features-configuration_3}}
 	<telerik:RadRadialMenu IsOpen="True" MinWidth="200" MinHeight="200">
 		<telerik:RadRadialMenuItem Header="Item 1" />
 		<telerik:RadRadialMenuItem Header="Item 2" />
@@ -61,7 +61,7 @@ __StartAngle__ property is used to set the angle at which the first __RadRadialM
 
 #### __[XAML] Example 3: Setting StartAngle property__
 
-{{region radradialmenu-features-configuration_1}}
+{{region xaml-radradialmenu-features-configuration_1}}
 	<telerik:RadRadialMenu IsOpen="True" StartAngle="180" >
 	    <telerik:RadRadialMenuItem Header="Item 1" />
 	    <telerik:RadRadialMenuItem Header="Item 2" />
@@ -92,7 +92,7 @@ Figure 3: Radius Properties
 __RadRadialMenu__ provides a static *double* property that will help you to adjust the speed of the animations as required. The default value of the __AnimationSpeedFactor__ property is {% if site.site_name == 'WPF' %}*1.5d*{% endif %}{% if site.site_name == 'Silverlight' %}*1.6d*{% endif %} and the minimum possible value is *0.1d*. The property can be set as shown below:
  
 #### __[C#] Example 4: Setting AnimationSpeedFactor property__
-{{region radradialmenu-features-configuration_0}}
+{{region cs-radradialmenu-features-configuration_0}}
 	RadRadialMenu.AnimationSpeedFactor = 1.2d;
 {{endregion}}
 

@@ -34,7 +34,7 @@ __Example 1__ shows how they can be set.
 
 #### __[XAML] Example 1: Setting RadRadialMenuItem properties__
 
-{{region radradialmenu-features-radialmenuitems_0}}
+{{region xaml-radradialmenu-features-radialmenuitems_0}}
 	<telerik:RadRadialMenu>
 	    <telerik:RadRadialMenuItem Header="File" ToolTipContent="Click to open the File menu" >
 	        <telerik:RadRadialMenuItem.IconContent>
@@ -72,7 +72,7 @@ __RadialMenuItems__ can be grouped, so that they behave as radio buttons when se
 
 #### __[XAML] Example 2: Grouping RadialMenuItems__
 
-{{region radradialmenu-features-radialmenuitems_1}}
+{{region xaml-radradialmenu-features-radialmenuitems_1}}
 	<telerik:RadRadialMenuItem Header="Upload">              
 	    <telerik:RadRadialMenuItem Header="Upload" GroupName="UploadGroup" />           
 	    <telerik:RadRadialMenuItem Header="Download" GroupName="UploadGroup" />                    

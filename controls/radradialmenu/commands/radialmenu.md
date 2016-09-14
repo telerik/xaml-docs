@@ -28,7 +28,7 @@ __Example 1__ demonstrates how to navigate to another view in the RadRadialMenu 
 
 #### __[C#] Example 1: Executing the NavigateToView command__
 
-{{region radradialmenu-commands-radialmenu_1}}
+{{region cs-radradialmenu-commands-radialmenu_1}}
 	NavigateContext context = new NavigateContext(menuItem);
 	this.radialMenu.CommandService.ExecuteCommand(Telerik.Windows.Controls.RadialMenu.Commands.CommandId.NavigateToView, context);
 {{endregion}}
@@ -55,7 +55,7 @@ The next example will show how to implement custom command that will be executed
 
 	#### __[C#] Example 2: Creating a custom command__
 
-	{{region radradialmenu-commands-radialmenu_2}}
+	{{region cs-radradialmenu-commands-radialmenu_2}}
 		public class CustomMenuCommand : RadialMenuCommand
 		{
 			public CustomMenuCommand()
@@ -86,7 +86,7 @@ The next example will show how to implement custom command that will be executed
 
 	#### __[XAML] Example 3: Setting the custom command__
 
-	{{region radradialmenu-commands-radialmenu_0}}
+	{{region xaml-radradialmenu-commands-radialmenu_0}}
 		<telerik:RadRadialMenu>
 			<telerik:RadRadialMenu.Commands>
 				<local:CustomMenuCommand />

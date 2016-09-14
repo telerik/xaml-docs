@@ -28,7 +28,7 @@ The default Style could be extracted from the UI for {% if site.site_name == 'Si
 
 #### __[XAML] Example 1: Extracting the default Style__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenubutton_0}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenubutton_0}}
 	<UserControl.Resources>
 	    <Style x:Key="RadialMenuButtonStyle" TargetType="telerik:RadialMenuButton">
 	        <Setter Property="BorderThickness" Value="2"/>
@@ -78,7 +78,7 @@ We will need to create a new Style based on the default __RadialMenuButtonStyle_
 
 #### __[XAML] Example 2: Custom ContentTemplate and BackContentTemplate__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenubutton_1}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenubutton_1}}
 	 <Style TargetType="telerik:RadialMenuButton" BasedOn="{StaticResource RadialMenuButtonStyle}">      
 	    <Setter Property="Background" Value="#FF00B7E0" />
 	    <Setter Property="ContentTemplate">

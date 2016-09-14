@@ -22,7 +22,7 @@ You can include the control in your page by either dragging it from the toolbox 
 
 #### __[XAML]  Creating RadRadialMenu__
 
-{{region radradialmenu-getting-started_0}}
+{{region xaml-radradialmenu-getting-started_0}}
 	<telerik:RadRadialMenu>
 	    <telerik:RadRadialMenuItem Header="Item 1" />
 	    <telerik:RadRadialMenuItem Header="Item 2" />
@@ -34,13 +34,13 @@ where *telerik* namespace is defined like this:
 
 #### __[XAML]__
 
-{{region radradialmenu-getting-started_1}}
+{{region xaml-radradialmenu-getting-started_1}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"  
 {{endregion}}
 
 #### __[C#] Creating RadRadialMenu with code__
 
-{{region radradialmenu-getting-started_2}}
+{{region cs-radradialmenu-getting-started_2}}
 	var radialMenu = new RadRadialMenu();
 	
 	radialMenu.Items.Add(new RadRadialMenuItem() { Header = "Item 1" });
@@ -54,7 +54,7 @@ Here is a simple example demonstrating how to declare a __RadRadialMenu__ instan
 
 #### __[XAML] RadialMenu as a ContextMenu__
 
-{{region radradialmenu-getting-started_3}}
+{{region xaml-radradialmenu-getting-started_3}}
 	<TextBox Text="Some Text">
 	    <telerik:RadRadialMenu.RadialContextMenu>
 	        <telerik:RadRadialMenu ShowEventName="GotFocus" HideEventName="LostFocus">

@@ -20,7 +20,7 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 
 	#### __[C#] Example 1: Creating a command__
 
-	{{region radradialmenu-commands-radialmenuitem_0}}
+	{{region cs-radradialmenu-commands-radialmenuitem_0}}
 		public class CustomItemCommand : ICommand
 		{
 			public bool CanExecute(object parameter)
@@ -50,7 +50,7 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 
 	#### __[XAML] Example 2: Adding the command to the Resources__
 
-	{{region radradialmenu-commands-radialmenuitem_1}}
+	{{region xaml-radradialmenu-commands-radialmenuitem_1}}
 		<UserControl.Resources>
 			<local:CustomItemCommand x:Key="CustomItemCommand"/>
 		</UserControl.Resources>
@@ -60,7 +60,7 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 
 	#### __[XAML] Example 3: Bind the command__
 
-	{{region radradialmenu-commands-radialmenuitem_2}}
+	{{region xaml-radradialmenu-commands-radialmenuitem_2}}
 		<telerik:RadRadialMenu>
 			<telerik:RadRadialMenuItem Header="Item 1" Command="{StaticResource CustomItemCommand}" 
 					CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />

@@ -50,13 +50,14 @@ Here is an example of how to use the __ValueChanged__ event that is raised whene
 {{region cs-radnumericupdown-howto-events_0}}
 	public void Events()
 	{
-		RadNumericUpDown numeric = new RadNumericUpDown();
-		numeric.ValueChanged += new RoutedPropertyChangedEventHandler<double>(OnNumericValueChanged);
-		numeric.Value = 10;
+	    RadNumericUpDown numeric = new RadNumericUpDown();
+	    numeric.ValueChanged += OnNumericValueChanged;
+	    numeric.Value = 10;
 	}
-	private void OnNumericValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+	
+	private void OnNumericValueChanged(object sender, RadRangeBaseValueChangedEventArgs e)
 	{
-		 RadWindow.Alert(String.Format("New value: {0}, Old value: {1}", e.NewValue, e.OldValue));
+	    RadWindow.Alert(String.Format("New value: {0}, Old value: {1}", e.NewValue, e.OldValue));
 	}
 {{endregion}}
 
@@ -64,11 +65,11 @@ Here is an example of how to use the __ValueChanged__ event that is raised whene
 
 {{region vb-radnumericupdown-howto-events_1}}
 	Private Sub Events()
-		Dim numeric As RadNumericUpDown = New RadNumericUpDown
-		AddHandler numeric.ValueChanged, AddressOf OnNumericValueChanged
-		numeric.Value = 10;
+	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
+	    AddHandler numeric.ValueChanged, AddressOf OnNumericValueChanged
+	    numeric.Value = 10
 	End Sub
-	Private Sub OnNumericValueChanged(ByVal sender As Object, ByVal e As RoutedPropertyChangedEventArgs(Of double))
-		RadWindow.Alert(String.Format("New value: {0}, Old value: {1}", e.NewValue, e.OldValue))
+	Private Sub OnNumericValueChanged(sender As Object, e As RadRangeBaseValueChangedEventArgs)
+	    RadWindow.Alert(String.Format("New value: {0}, Old value: {1}", e.NewValue, e.OldValue))
 	End Sub
 {{endregion}}

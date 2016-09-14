@@ -47,7 +47,7 @@ Here is an example of how to use the __ValueChanged__ event that is raised whene
 
 #### __C#__
 
-{{region radnumericupdown-howto-events-wpf_0}}
+{{region cs-radnumericupdown-howto-events-wpf_0}}
 	public void Events()
 	{
 		RadNumericUpDown numeric = new RadNumericUpDown();
@@ -62,7 +62,7 @@ Here is an example of how to use the __ValueChanged__ event that is raised whene
 
 #### __VB.NET__
 
-{{region radnumericupdown-howto-events-wpf_1}}
+{{region vb-radnumericupdown-howto-events-wpf_1}}
 	Private Sub Events()
 		Dim numeric As RadNumericUpDown = New RadNumericUpDown
 		AddHandler numeric.ValueChanged, AddressOf OnNumericValueChanged

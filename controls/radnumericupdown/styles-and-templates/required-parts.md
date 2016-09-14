@@ -18,7 +18,7 @@ Here is an image that describes the required items from the code-behind:
 
 #### __XAML__
 
-{{region radnumericupdown-required-parts_0}}
+{{region xaml-radnumericupdown-required-parts_0}}
 	<!--1. Textbox control for text input-->
 	    <TextBox x:Name="textbox" />
 	<!--2. Button control for increasing the value-->

@@ -30,7 +30,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __C#__
 
-{{region radnumericupdown-formatting_0-1}}
+{{region cs-radnumericupdown-formatting_0-1}}
 	private RadNumericUpDown TestMethod()
 	{
 	   RadNumericUpDown numeric = new RadNumericUpDown();
@@ -44,7 +44,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __VB.NET__
 
-{{region radnumericupdown-formatting_1-1}}
+{{region vb-radnumericupdown-formatting_1-1}}
 	Private Function TestMethod() As RadNumericUpDown
 	   Dim numeric As RadNumericUpDown = New RadNumericUpDown
 	   numeric.Value = 15.50
@@ -60,7 +60,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-2}}
+{{region xaml-radnumericupdown-formatting-2}}
 	<UserControl ...
 	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	            xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
@@ -78,7 +78,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __C#__
 
-{{region radnumericupdown-formatting_0-2}}
+{{region cs-radnumericupdown-formatting_0-2}}
 	private RadNumericUpDown TestMethod()
 	{
 	   RadNumericUpDown numeric = new RadNumericUpDown();
@@ -92,7 +92,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __VB.NET__
 
-{{region radnumericupdown-formatting_1-2}}
+{{region vb-radnumericupdown-formatting_1-2}}
 	    Private Function TestMethod() As RadNumericUpDown
 	        Dim numeric As RadNumericUpDown = New RadNumericUpDown
 	        numeric.Value = 15.5
@@ -108,7 +108,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-3}}
+{{region xaml-radnumericupdown-formatting-3}}
 	<UserControl ...
 	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	            xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
@@ -126,7 +126,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __C#__
 
-{{region radnumericupdown-formatting_0-3}}
+{{region cs-radnumericupdown-formatting_0-3}}
 	private RadNumericUpDown TestMethod()
 	{
 	   RadNumericUpDown numeric = new RadNumericUpDown();
@@ -140,7 +140,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __VB.NET__
 
-{{region radnumericupdown-formatting_1-3}}
+{{region vb-radnumericupdown-formatting_1-3}}
 	Private Function TestMethod() As RadNumericUpDown
 		Dim numeric As RadNumericUpDown = New RadNumericUpDown
 		numeric.Value = 15.5
@@ -156,7 +156,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-4}}
+{{region xaml-radnumericupdown-formatting-4}}
 	<UserControl ...
 	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	            xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
@@ -176,7 +176,7 @@ Here is a simple example of how to use __CustomUnit__ property:
 
 #### __C#__
 
-{{region radnumericupdown-formatting_2}}
+{{region cs-radnumericupdown-formatting_2}}
 	private RadNumericUpDown TestMethod()
 	{
 	   RadNumericUpDown numeric = new RadNumericUpDown();
@@ -191,7 +191,7 @@ Here is a simple example of how to use __CustomUnit__ property:
 
 #### __VB.NET__
 
-{{region radnumericupdown-formatting_3}}
+{{region vb-radnumericupdown-formatting_3}}
 	Private Function TestMethod() As RadNumericUpDown
 	  Dim numeric As RadNumericUpDown = New RadNumericUpDown
 	  numeric.Value = 10
@@ -219,7 +219,7 @@ The above parsing is correct and useful when using the value of the RadNumericUp
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-1}}
+{{region xaml-radnumericupdown-formatting-1}}
 	<telerik:RadNumericUpDown Minimum="0"
 	                          Maximum="100"
 	                          CustomUnit="%"/>
@@ -240,7 +240,7 @@ __RadNumericUpDown__ provides property named __HideTrailingZeros__ which removes
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-5}}
+{{region xaml-radnumericupdown-formatting-5}}
 	<telerik:RadNumericUpDown NumberDecimalDigits="2" Value="42" />
 {{endregion}}
 
@@ -252,7 +252,7 @@ If you set the __HideTrailingZeros__ property to True as shown below:
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-6}}
+{{region xaml-radnumericupdown-formatting-6}}
 	<telerik:RadNumericUpDown NumberDecimalDigits="2" Value="42" HideTrailingZeros="True" />
 {{endregion}}
 

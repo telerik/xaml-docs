@@ -57,7 +57,7 @@ Two lines of code are important here:
 
 * The import of the __Telerik schema__:
 
-#### __[XAML] Example 2: Importing the Telerik Schema__
+#### __[XAML] Example 2: Importing the Telerik schema__
 
 {{region xaml-radtilelist-getting-started_2}}
 	<!--xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"-->

@@ -77,7 +77,7 @@ For example:
 __RadTileList__ exposes a __GroupHeaderVisibility__ property that sets whether the headers of the groups will be visible or not. Thus, once you set it to collapse, your control will be organized in groups, but will not have any text above:
         
 
-#### __[XAML] Example 2: Setting the GroupHeaderVisibility Property__
+#### __[XAML] Example 2: Setting the GroupHeaderVisibility property__
 
 {{region xaml-radtilelist-modifying-tilelist-view-1}}
 			<telerik:RadTileList x:Name="RadTileList1"
@@ -93,7 +93,7 @@ __RadTileList__ exposes a __GroupHeaderVisibility__ property that sets whether t
 __RadTileList__ gives the opportunity to set the height of the headers with a single property __GroupHeaderHeight__.
         
 
-#### __[XAML] Example 3: Setting the GroupHeaderHeight Property__
+#### __[XAML] Example 3: Setting the GroupHeaderHeight property__
 
 {{region xaml-radtilelist-modifying-tilelist-view-2}}
 			<telerik:RadTileList x:Name="RadTileList2"

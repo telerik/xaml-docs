@@ -36,7 +36,7 @@ __Example 1__ demonstrates how you can set the __SelectionMode__ property in XAM
 
 __Figure 1__ shows the result when Multiple selection is enabled and several tiles are included in the selection.
 
-#### __Figure 1: Multiple Selection in RadTileList__
+#### __Figure 1: Multiple selection in RadTileList__
 ![Grouping SL](images/RadTileList_Features_Selection_01.PNG)
 
 ## SelectedItem and SelectedItems
@@ -49,13 +49,13 @@ __SelectedItems__ is a collection of items containing all selected items in the 
 
 >importantThe __SelectedItems__ collection will remain empty when SelectionMode is set to Single and you change the selected item. However, when in Multiple or Extended selection mode, __SelectedItem__ will be set to the last item added to the selected items that is still included in the selection.
 
-## Reacting to Changes in the Selection
+## Reacting to changes in the selection
 
 Regardless of the mode the selection is in, the __SelectionChanged__ event will be raised when the user changes the selected item or items in RadTileList. The event arguments are of [SelectionChangedEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.controls.selectionchangedeventargs) type, so you gain access to the items removed or added to the selection.
 
 The snippet in __Example 2__ demonstrates how you can react to a change in the current selection.
 
-#### __[C#] Example 2: SelectionChanged Event Handler for RadTileList__
+#### __[C#] Example 2: SelectionChanged event handler for RadTileList__
 {{region cs-radtilelist-features-selection_1}}
 	private void EmployeesTileList_SelectionChanged(object sender, SelectionChangedEventArgs e)
 	{
@@ -66,7 +66,7 @@ The snippet in __Example 2__ demonstrates how you can react to a change in the c
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 2: SelectionChanged Event Handler for RadTileList__
+#### __[VB.NET] Example 2: SelectionChanged event handler for RadTileList__
 {{region vb-radtilelist-features-selection_2}}
 	Private Sub EmployeesTileList_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
 	    If e.RemovedItems.Count = 0 Then

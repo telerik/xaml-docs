@@ -24,7 +24,7 @@ This tutorial will walk your through the population of __RadTileList__ and will 
 
 Firstly, for the purpose of this tutorial, we will create a new class __Employee__ with a couple of properties:
 
-#### __[C#] Example 1: Defining the Employee Class__
+#### __[C#] Example 1: Defining the Employee class__
 
 {{region cs-radtilelist-getting-started_4}}
 	public class Employee
@@ -54,7 +54,7 @@ Firstly, for the purpose of this tutorial, we will create a new class __Employee
 
 
 
-#### __[VB.NET] Example 1: Defining the Employee Class__
+#### __[VB.NET] Example 1: Defining the Employee class__
 
 {{region vb-radtilelist-getting-started_5}}
 	Public Class Employee
@@ -105,7 +105,7 @@ Firstly, for the purpose of this tutorial, we will create a new class __Employee
 Once the class __Employee__ is defined, we will define an __EmployeeService__ class that will return an ObservableCollection, containing several hard-coded employees:
         
 
-#### __[C#] Example 2: Defining the EmployeeService Class__
+#### __[C#] Example 2: Defining the EmployeeService class__
 
 {{region cs-radtilelist-getting-started_6}}
 	public class EmployeeService
@@ -127,7 +127,7 @@ Once the class __Employee__ is defined, we will define an __EmployeeService__ cl
 
 
 
-#### __[VB.NET] Example 2: Defining the EmployeeService Class__
+#### __[VB.NET] Example 2: Defining the EmployeeService class__
 
 {{region vb-radtilelist-getting-started_7}}
 	Public Class EmployeeService

@@ -29,7 +29,7 @@ position: 1
 
 Before:
 
-#### __[XAML] Example 1: RadTileList Before Q3 2014__
+#### __[XAML] Example 1: RadTileList before Q3 2014__
 
 {{region xaml-radtilelist-changes-backward-compatibility-0}}
 			<Grid.Resources>
@@ -49,7 +49,7 @@ Before:
 
 After __Q3 2014__
 
-#### __[XAML] Example 2: RadTileList After Q3 2014__
+#### __[XAML] Example 2: RadTileList after Q3 2014__
 
 {{region xaml-radtilelist-changes-backward-compatibility-1}}
 			<telerik:RadTileList x:Name="RadTileList">
@@ -117,7 +117,7 @@ After __Q3 2014__
 * If you have custom theme, you need to update the panel of RadTileList and it should be:
           
 
-#### __[XAML] Example 4: Updating the Panel of RadTileList__
+#### __[XAML] Example 4: Updating the panel of RadTileList__
 
 {{region xaml-radtilelist-changes-backward-compatibility-3}}
 			<ItemsPanelTemplate x:Key="RadTileListItemsPanelTemplate">

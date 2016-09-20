@@ -20,7 +20,7 @@ Besides the built-in sorting functionality, you are able to programmatically sor
 
 When you add a new descriptor to the collection, the data is automatically sorted according to it. To learn how to create and configure descriptors, look at the following example:
 
-#### __C#__
+#### __[C#]__
 
 {{region cs-gridview-sorting-programmatic_2}}
 
@@ -31,6 +31,8 @@ When you add a new descriptor to the collection, the data is automatically sorte
 	};
 	this.clubsGrid.SortDescriptors.Add(csd);
 {{endregion}}
+
+#### __[VB.NET]
 
 {{region gridview-sorting-programmatic_3}}
 
@@ -74,6 +76,7 @@ The __SortDirection__ property allows you to define the sorting direction.
       
 You can easily create a sort descriptor in XAML and then add it to the SortDescriptors collection.
 For example:
+
 #### __XAML__
 
 {{region xaml-gridview-sorting-programmatic_4}}
@@ -126,10 +129,24 @@ If you need to apply multiple sorting operations and you would like to reset all
 
 Consider the following scenario. You apply a programmatic sorting for your RadGridView as follows:
 
+#### __[C#]__
+
+{{region cs-gridview-sorting-programmatic_8}}
 	 ColumnSortDescriptor csd = new ColumnSortDescriptor();
 	 csd.Column = MyGrid.Columns["Name"];
 	 csd.SortDirection = ListSortDirection.Descending;
 	 clubsGrid.SortDescriptors.Add(csd);
+{{endregion}}
+
+#### __[VB.NET]__
+
+{{region vb-gridview-sorting-programmatic_9}}
+	Dim csd As New ColumnSortDescriptor()
+        clubsGrid.SortDescriptors.Clear()
+        csd.Column = clubsGrid.Columns("Name")
+        csd.SortDirection = ListSortDirection.Descending
+        clubsGrid.SortDescriptors.Add(csd)
+{{endregion}}
 
 At this point, the RadGridView has the following state:
 
@@ -139,11 +156,25 @@ FIGURE 3:
 
 Eventually, you need to sort the grid by another column and would like to remove the previously applied rule. Use the following approach:
 
-     clubsGrid.SortDescriptors.Clear();
-     ColumnSortDescriptor csd = new ColumnSortDescriptor();
+#### __[C#]__
+
+{{region cs-gridview-sorting-programmatic_10}}
+	clubsGrid.SortDescriptors.Clear();
+	ColumnSortDescriptor csd = new ColumnSortDescriptor();
 	 csd.Column = clubsGrid.Columns["Established"];
 	 csd.SortDirection = ListSortDirection.Descending;
 	 clubsGrid.SortDescriptors.Add(csd);
+{{endregion}}
+
+#### __[VB.NET]__
+
+{{region vb-gridview-sorting-programmatic_11}}
+	ColumnSortDescriptor csd = new ColumnSortDescriptor();
+        clubsGrid.SortDescriptors.Clear();
+        csd.Column = clubsGrid.Columns["Established"];
+        csd.SortDirection = ListSortDirection.Descending;
+        clubsGrid.SortDescriptors.Add(csd);
+{{endregion}}
 
 The result will be:
 

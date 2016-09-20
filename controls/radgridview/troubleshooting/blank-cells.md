@@ -48,19 +48,22 @@ There are two ways of solving the issue :
 #### __XAML__
 
 {{region xaml-gridview-troubleshooting-blank-cells_1}}
-
 	<UserControl.Resources>
 	    <local:MainPageViewModel x:Key="mainPageViewModel" />
 	</UserControl.Resources>
-	...
-	<telerik:GridViewComboBoxColumn Header="Category"
-            DataMemberBinding="{Binding CategoryID}"
-            ItemsSource="{Binding Path=Categories, Source={StaticResource mainPageViewModel}}"
-            DisplayMemberPath="CategoryName"
-            SelectedValueMemberPath="CategoryID" />
 {{endregion}}
 
-2. Set the ItemsSource of the combo column in code behind instead of binding it in XAML:
+2. Set the ItemsSource of the ComboBox column:
+
+#### __XAML__
+
+{{region xaml-gridview-troubleshooting-blank-cells_2}}
+	<telerik:GridViewComboBoxColumn Header="Category"
+	            DataMemberBinding="{Binding CategoryID}"
+	            ItemsSource="{Binding Path=Categories, Source={StaticResource mainPageViewModel}}"
+	            DisplayMemberPath="CategoryName"
+	            SelectedValueMemberPath="CategoryID" />
+{{endregion}}
 
 #### __C#__
 
@@ -72,4 +75,11 @@ There are two ways of solving the issue :
 	}
 {{endregion}}
 
+#### __VB.NET__
 
+{{region vb-gridview-troubleshooting-blank-cells_2}}
+
+	Private Sub gridView_DataLoaded(ByVal sender As Object, ByVal e As EventArgs)
+            TryCast(Me.radGridView.Columns("Category"), GridViewComboBoxColumn).ItemsSource = GetCategories()
+        End Sub
+{{endregion}}

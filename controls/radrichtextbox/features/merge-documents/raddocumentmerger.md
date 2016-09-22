@@ -10,7 +10,7 @@ position: 0
 
 # RadDocumentMerger Overview
 
-**RadDocumentMerger** introduces an API that enables users to merge two RadDocument instances or append them. When performing similar operations, you may encounter conflicts between the different settings of both documents. Such conflicts could be customized and resolved with the provided by **RadDocumentMerger** settings.
+**RadDocumentMerger** introduces an API that enables users to merge two RadDocument instances or append them to each other. When performing merging operations, you may encounter conflicts between the different settings of two documents. Such conflicts can be resolved/avoided by changing the settings of **RadDocumentMerger**.
 
 
 ## Create a RadDocumentMerger
@@ -26,7 +26,7 @@ When instantiating the **RadDocumentMerger** class, you should pass to its const
 
 >The document passed to the constructor can be obtained through the **Document property** of the RadDocumentMerger instance.
 
-Now, you can use the methods of the RadDocumentMerger class to [insert the content of the desired documents at the caret position]({%slug radrichtextbox-features-merge-insert-document%}) or just [append]({%slug radrichtextbox-features-merge-append-documents%}) it to the target document.
+You can use the methods of the RadDocumentMerger class to [insert the content of the desired documents at the caret position]({%slug radrichtextbox-features-merge-insert-document%}) or just [append]({%slug radrichtextbox-features-merge-append-documents%}) it to the target document.
 
 ## See Also
 

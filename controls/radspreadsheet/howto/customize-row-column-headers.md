@@ -12,10 +12,10 @@ position: 2
 
 
 
-Giving your data meaningful names helps you better understand it. For example, if your document contains a column with the first names of your employees, the column name A does not help you understand the meaning of the data contained in that column. For the same reason, you probably will have one header row in the document that will store the names of your columns. But when a user scrolls down, the content of the header row will be hidden and the user will not see the names.
+Giving your data meaningful names helps you better understand it. For example, if your document contains a column with the first names of your employees, the column name A does not necessarily help you understand the meaning of the data contained in that column. For the same reason, you probably are likely to have one header row in the document that will store the names of your columns. But when a user scrolls down, the content of the header row would be hidden and the user would not see the names.
       
 
-It will be useful if you can set the column heading name when the first row is not visible like shown in the below image.
+It will be useful if you can set the column heading name when the first row is not visible as shown in the image below.
 
 #### **Figure 1: Column with custom heading name**
 ![Rad Spreadsheet How To Customize Row and Column Headers 01](images/RadSpreadsheet_HowTo_Customize_Row_and_Column_Headers_01.png)
@@ -62,13 +62,13 @@ After implementing your custom name converter you need to instantiate it and ass
 That's it. The column heading is changed.
         
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/CustomRowAndColumnHeadings).
 
 ## States of the Row and Column Headings
 
 The headings of the rows and columns have different states. You can use these states to apply different styles of the items depending on whether they appear in a selection. This section will describe the possible states of the headings in RadSpreadsheet.
  
-* **HeadingState**: A property of type RowColumnHeadingBase that gets or sets the heading state. It is an enum and it could have the following values:
+* **HeadingState**: A property of type RowColumnHeadingBase that gets or sets the heading state. It is an enum and it can have the following values:
 	* **Normal**: The heading is not included in any selection.
 	
 	* **Selected**: A cell from the row/column appears in a selection. 
@@ -76,7 +76,7 @@ The headings of the rows and columns have different states. You can use these st
 	* **FullySelected**: All the cells included in the row/column are selected. 
 
           
-* **SelectAllControlState**: A property of the SelectAllControl which is of type SelectAllControlState. The property gets or sets a value indicating whether the control is selected. It is an enum and it could have the following values:
+* **SelectAllControlState**: A property of the SelectAllControl which is of type SelectAllControlState. The property gets or sets a value indicating whether the control is selected. It is an enum and it can have the following values:
 	
 	* **Normal**: The control is not selected.
 	

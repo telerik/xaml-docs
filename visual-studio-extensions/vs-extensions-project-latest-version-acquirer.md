@@ -24,7 +24,7 @@ With the Telerik Visual Studio Extensions you keep your projects in an up-to-dat
 
 >If you've disabled the notifications, you can use the [Options Dialog]({%slug radcontrols-vs-extensions-options%}) to activate them again.
 
-Clicking the {% if site.site_name == 'Silverlight'}__Get Now__{% endif %}{% if site.site_name == 'WPF'}__Update Now__{% endif %} button starts the Latest Version Acquirer tool, prompting for your Telerik credentials and the type of license you own in its first page. If you do not have a [www.telerik.com](http://www.telerik.com/) account, you can create one through the {% if site.site_name == 'Silverlight' %}__Register__{% endif %}{% if site.site_name == 'WPF'}__Create an account for free__{% endif %} link.
+Clicking the {% if site.site_name == 'Silverlight' %}__Get Now__{% endif %}{% if site.site_name == 'WPF' %}__Update Now__{% endif %} button starts the Latest Version Acquirer tool, prompting for your Telerik credentials and the type of license you own in its first page. If you do not have a [www.telerik.com](http://www.telerik.com/) account, you can create one through the {% if site.site_name == 'Silverlight' %}__Register__{% endif %}{% if site.site_name == 'WPF' %}__Create an account for free__{% endif %} link.
 
 
 {% if site.site_name == 'Silverlight' %}![extensions acquirertool sl 2](images/extensions_acquirertool_sl_2.png){% endif %}{% if site.site_name == 'WPF' %}![extensions acquirertool wpf 2](images/extensions_acquirertool_wpf_2.png){% endif %}

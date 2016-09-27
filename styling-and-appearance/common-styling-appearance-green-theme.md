@@ -56,17 +56,17 @@ You can switch between the color palettes by calling the __LoadPreset__ method a
 
 #### __[C#] Example 2: Changing the color variantion of the theme__
 	//default color variation
-	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light);
+	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);	
 
-	//dark color variation
-	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);
+	//light color variation
+	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light);
 	
 #### __[VB.NET] Example 2: Changing the color variantion of the theme__
 	//default color variation
-	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light)
-
-	//dark color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
+
+	//light color variation
+	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light)
 	
 ## Green Palette Brushes
 

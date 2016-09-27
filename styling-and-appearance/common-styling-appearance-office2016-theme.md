@@ -154,7 +154,7 @@ Since each glyph’s string value is ambiguous and not related to its shape, we 
 #### __Figure 3: Heart glyph__
 ![](images/common-styling-appearance-office2016-theme-2.png)	
 
-> You can read more about the usage and the different available glyphs in [our article]() about this new feature.
+> You can read more about the usage and the different available glyphs in [our article]({%slug common-styling-appearance-glyphs-overview%}) about this new feature.
 
 ## Changing FocusThickness
 

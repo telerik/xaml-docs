@@ -16,9 +16,9 @@ This article describes all the visual elements and terms used in __RadPasswordBo
 
 ![RadPasswordBox Visual Structure](images/RadPasswordBox_VisualStructure_1.png)
 
-* __WatermarkContent__: represents the content shown instead of the password when the __PasswordBox__ is empty and is out of focus.
+* __WatermarkContent__: represents the content displayed to help the user understand what must be input in the __RadPasswordBox__ when the __RadPasswordBox__ is empty and out of focus. For example, _“Enter password”_. 
 
-* __Password__: represents the input area showing the characters hiding the password and allowing you to enter the password value.
+* __Password__: represents the input area of __RadPasswordBox__ in which the user enters a password. It hides the actual password, displaying instead hidden characters, for security.
 
 * __ShowPasswordButton__: represents the button used to display the password at runtime.
 

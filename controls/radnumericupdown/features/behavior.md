@@ -34,19 +34,19 @@ Here is a brief list of all behavior properties defined in RadNumericUpDown.
 
 	#### __XAML__
 
-	{{region radnumericupdown-behavior_0}}
-		<telerik:RadNumericUpDown IsReadOnly="True"/>
+	{{region xaml-radnumericupdown-behavior_0}}
+		<telerik:RadNumericUpDown x:Name="radNumericUpDown" IsReadOnly="True"/>
 	{{endregion}}
 
 	#### __C#__
 
-	{{region radnumericupdown-behavior_1}}
+	{{region cs-radnumericupdown-behavior_1}}
 		this.radNumericUpDown.IsReadOnly = true;
 	{{endregion}}
 
 	#### __VB__
 
-	{{region radnumericupdown-behavior_2}}
+	{{region vb-radnumericupdown-behavior_2}}
 		Me.radNumericUpDown.IsReadOnly = True
 	{{endregion}}
 

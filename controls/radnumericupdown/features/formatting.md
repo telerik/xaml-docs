@@ -30,47 +30,46 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __C#__
 
-{{region radnumericupdown-formatting_0-1}}
+{{region cs-radnumericupdown-formatting_0-1}}
 	private RadNumericUpDown TestMethod()
 	{
-	   RadNumericUpDown numeric = new RadNumericUpDown();
-	   numeric.Value = 15.50;
-	   numeric.ValueFormat = ValueFormat.Numeric;
-	   numeric.NumberFormatInfo = new NumberFormatInfo() { NumberDecimalDigits = 0 };
-	   //ContentText is "16"
-	   return numeric;
-	 }
+	    RadNumericUpDown numeric = new RadNumericUpDown();
+	    numeric.Value = 15.50;
+	    numeric.ValueFormat = ValueFormat.Numeric;
+	    numeric.NumberFormatInfo = new NumberFormatInfo() { NumberDecimalDigits = 0 };
+	    //ContentText is "16"
+	    return numeric;
+	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radnumericupdown-formatting_1-1}}
+{{region vb-radnumericupdown-formatting_1-1}}
 	Private Function TestMethod() As RadNumericUpDown
-	   Dim numeric As RadNumericUpDown = New RadNumericUpDown
-	   numeric.Value = 15.50
-	   numeric.ValueFormat = ValueFormat.Numeric
-	   numeric.NumberFormatInfo = New NumberFormatInfo() With {
-	     .NumberDecimalDigits = 0
-	   }   
-	   //the display result is "16"
-	   
-	   return numeric
-	End Sub
+	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
+	    numeric.Value = 15.5
+	    numeric.ValueFormat = ValueFormat.Numeric
+	    numeric.NumberFormatInfo = New NumberFormatInfo() With {
+	      .NumberDecimalDigits = 0
+	    }
+	    'the display result is "16"
+	
+	    Return numeric
+	End Function
 {{endregion}}
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-2}}
-	<UserControl ...
-	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	            xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
-	        <Grid>
-	            <telerik:RadNumericUpDown ValueFormat="Numeric">
-	                <telerik:RadNumericUpDown.NumberFormatInfo>
-	                    <global:NumberFormatInfo NumberDecimalDigits="0"/>
-	                </telerik:RadNumericUpDown.NumberFormatInfo>
-	            </telerik:RadNumericUpDown>
-	        </Grid>
+{{region xaml-radnumericupdown-formatting-2}}
+	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	             xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
+	    <Grid>
+	        <telerik:RadNumericUpDown ValueFormat="Numeric">
+	            <telerik:RadNumericUpDown.NumberFormatInfo>
+	                <global:NumberFormatInfo NumberDecimalDigits="0"/>
+	            </telerik:RadNumericUpDown.NumberFormatInfo>
+	        </telerik:RadNumericUpDown>
+	    </Grid>
 	</UserControl>
 {{endregion}}
 
@@ -78,40 +77,39 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __C#__
 
-{{region radnumericupdown-formatting_0-2}}
+{{region cs-radnumericupdown-formatting_0-2}}
 	private RadNumericUpDown TestMethod()
 	{
-	   RadNumericUpDown numeric = new RadNumericUpDown();
-	   numeric.Value = 15.50;
-	   numeric.ValueFormat = ValueFormat.Currency;
-	   numeric.NumberFormatInfo = new NumberFormatInfo() { CurrencyDecimalDigits = 2 };
-	   //ContentText is "$15.50"
-	   return numeric;
-	 }
+	    RadNumericUpDown numeric = new RadNumericUpDown();
+	    numeric.Value = 15.50;
+	    numeric.ValueFormat = ValueFormat.Currency;
+	    numeric.NumberFormatInfo = new NumberFormatInfo() { CurrencyDecimalDigits = 2 };
+	    //ContentText is "$15.50"
+	    return numeric;
+	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radnumericupdown-formatting_1-2}}
-	    Private Function TestMethod() As RadNumericUpDown
-	        Dim numeric As RadNumericUpDown = New RadNumericUpDown
-	        numeric.Value = 15.5
-	        numeric.ValueFormat = ValueFormat.Currency
-	        numeric.NumberFormatInfo = New NumberFormatInfo() With {
-	          .CurrencyDecimalDigits = 2
-	        }
-	        //the display result is "$15.50"
-	       
-	        Return numeric
-	    End Function
+{{region vb-radnumericupdown-formatting_1-2}}
+	Private Function TestMethod() As RadNumericUpDown
+	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
+	    numeric.Value = 15.5
+	    numeric.ValueFormat = ValueFormat.Currency
+	    numeric.NumberFormatInfo = New NumberFormatInfo() With {
+	      .CurrencyDecimalDigits = 2
+	    }
+	    'the display result is "$15.50"
+	
+	    Return numeric
+	End Function
 {{endregion}}
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-3}}
-	<UserControl ...
-	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	            xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
+{{region xaml-radnumericupdown-formatting-3}}
+	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	             xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
 	    <Grid>
 	        <telerik:RadNumericUpDown ValueFormat="Currency">
 	            <telerik:RadNumericUpDown.NumberFormatInfo>
@@ -126,40 +124,39 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 #### __C#__
 
-{{region radnumericupdown-formatting_0-3}}
+{{region cs-radnumericupdown-formatting_0-3}}
 	private RadNumericUpDown TestMethod()
 	{
-	   RadNumericUpDown numeric = new RadNumericUpDown();
-	   numeric.Value = 15.50;
-	   numeric.ValueFormat = ValueFormat.Percentage;
-	   numeric.NumberFormatInfo = new NumberFormatInfo() { PercentDecimalDigits = 1 };
-	   //ContentText is "%1500.5"
-	   return numeric;
-	 }
+	    RadNumericUpDown numeric = new RadNumericUpDown();
+	    numeric.Value = 15.50;
+	    numeric.ValueFormat = ValueFormat.Percentage;
+	    numeric.NumberFormatInfo = new NumberFormatInfo() { PercentDecimalDigits = 1 };
+	    //ContentText is "%1500.5"
+	    return numeric;
+	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radnumericupdown-formatting_1-3}}
+{{region vb-radnumericupdown-formatting_1-3}}
 	Private Function TestMethod() As RadNumericUpDown
-		Dim numeric As RadNumericUpDown = New RadNumericUpDown
-		numeric.Value = 15.5
-		numeric.ValueFormat = ValueFormat.Percentage
-		numeric.NumberFormatInfo = New NumberFormatInfo() With {
-			.PercentDecimalDigits = 1
-		}
-	//the display result is "%1500.5"
-
-		Return numeric
+	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
+	    numeric.Value = 15.5
+	    numeric.ValueFormat = ValueFormat.Percentage
+	    numeric.NumberFormatInfo = New NumberFormatInfo() With {
+	        .PercentDecimalDigits = 1
+	    }
+	    'the display result is "%1500.5"
+	
+	    Return numeric
 	End Function
 {{endregion}}
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-4}}
-	<UserControl ...
-	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	            xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
+{{region xaml-radnumericupdown-formatting-4}}
+	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	             xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib">
 	    <Grid>
 	        <telerik:RadNumericUpDown ValueFormat="Percentage">
 	            <telerik:RadNumericUpDown.NumberFormatInfo>
@@ -176,33 +173,33 @@ Here is a simple example of how to use __CustomUnit__ property:
 
 #### __C#__
 
-{{region radnumericupdown-formatting_2}}
+{{region cs-radnumericupdown-formatting_2}}
 	private RadNumericUpDown TestMethod()
 	{
-	   RadNumericUpDown numeric = new RadNumericUpDown();
-	   numeric.Value = 10;
-	   numeric.ValueFormat = ValueFormat.Numeric;
-	   numeric.NumberFormatInfo = new NumberFormatInfo() { NumberDecimalDigits = 2 };
-	   numeric.CustomUnit = "meters";
-	   //the display result is "10.00 meters"
-	   return numeric;
+	    RadNumericUpDown numeric = new RadNumericUpDown();
+	    numeric.Value = 10;
+	    numeric.ValueFormat = ValueFormat.Numeric;
+	    numeric.NumberFormatInfo = new NumberFormatInfo() { NumberDecimalDigits = 2 };
+	    numeric.CustomUnit = "meters";
+	    //the display result is "10.00 meters"
+	    return numeric;
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radnumericupdown-formatting_3}}
+{{region vb-radnumericupdown-formatting_3}}
 	Private Function TestMethod() As RadNumericUpDown
-	  Dim numeric As RadNumericUpDown = New RadNumericUpDown
-	  numeric.Value = 10
-	  numeric.ValueFormat = ValueFormat.Numeric
-	  numeric.NumberFormatInfo = New NumberFormatInfo() With {
-	    .NumberDecimalDigits = 2
-	  }
-	  numeric.CustomUnit = "meters"
-	  //the display result is "10.00 meters"
-	  return numeric
-	End Sub
+	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
+	    numeric.Value = 10
+	    numeric.ValueFormat = ValueFormat.Numeric
+	    numeric.NumberFormatInfo = New NumberFormatInfo() With {
+	      .NumberDecimalDigits = 2
+	    }
+	    numeric.CustomUnit = "meters"
+	    'the display result is "10.00 meters"
+	    Return numeric
+	End Function
 {{endregion}}
 
 ## Using CustomUnit      
@@ -219,7 +216,7 @@ The above parsing is correct and useful when using the value of the RadNumericUp
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-1}}
+{{region xaml-radnumericupdown-formatting-1}}
 	<telerik:RadNumericUpDown Minimum="0"
 	                          Maximum="100"
 	                          CustomUnit="%"/>
@@ -240,7 +237,7 @@ __RadNumericUpDown__ provides property named __HideTrailingZeros__ which removes
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-5}}
+{{region xaml-radnumericupdown-formatting-5}}
 	<telerik:RadNumericUpDown NumberDecimalDigits="2" Value="42" />
 {{endregion}}
 
@@ -252,7 +249,7 @@ If you set the __HideTrailingZeros__ property to True as shown below:
 
 #### __XAML__
 
-{{region radnumericupdown-formatting-6}}
+{{region xaml-radnumericupdown-formatting-6}}
 	<telerik:RadNumericUpDown NumberDecimalDigits="2" Value="42" HideTrailingZeros="True" />
 {{endregion}}
 

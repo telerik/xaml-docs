@@ -22,7 +22,7 @@ Before starting, here is a sample __RadTreeView__ with a sample __RadContextMenu
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_0}}
+{{region xaml-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_0}}
 	<telerik:RadTreeView x:Name="radTreeView">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu x:Name="radContextMenu">
@@ -51,9 +51,9 @@ To handle the __Opened__ event attach an event handler to it.
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_1}}
-	<telerik:RadContextMenu x:Name="radContextMenu" 
-	                                  Opened="RadContextMenu_Opened">
+{{region xaml-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_1}}
+	<telerik:RadContextMenu x:Name="radContextMenu1" 
+	                        Opened="RadContextMenu_Opened">
 	    <telerik:RadMenuItem Header="Menu Option 1" />
 	    <telerik:RadMenuItem Header="Menu Option 2" />
 	    <telerik:RadMenuItem Header="Menu Option 3" />
@@ -62,7 +62,7 @@ To handle the __Opened__ event attach an event handler to it.
 
 #### __C#__
 
-{{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_2}}
+{{region cs-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_2}}
 	private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
 	{
 	}
@@ -70,7 +70,7 @@ To handle the __Opened__ event attach an event handler to it.
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_3}}
+{{region vb-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_3}}
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	End Sub
 {{endregion}}
@@ -79,8 +79,8 @@ In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetCl
 
 #### __C#__
 
-{{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_4}}
-	private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
+{{region cs-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_4}}
+	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
 	{
 	    RadTreeViewItem item = this.radContextMenu.GetClickedElement<RadTreeViewItem>();
 	}
@@ -88,9 +88,9 @@ In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetCl
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_5}}
+{{region vb-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_5}}
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
-	 Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
+	    Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
 	End Sub
 {{endregion}}
 
@@ -100,11 +100,11 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 
 #### __C#__
 
-{{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_6}}
-	private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
+{{region cs-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_6}}
+	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
 	{
 	    RadTreeViewItem item = this.radContextMenu.GetClickedElement<RadTreeViewItem>();
-	    if ( item != null )
+	    if (item != null)
 	    {
 	        this.radTreeView.SelectedItem = item;
 	    }
@@ -113,12 +113,12 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_7}}
+{{region vb-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_7}}
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
-	 Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
-	 If item <> Nothing Then
-	  Me.radTreeView.SelectedItem = item
-	 End If
+	    Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
+	    If item Is Nothing Then
+	        Me.radTreeView.SelectedItem = item
+	    End If
 	End Sub
 {{endregion}}
 

@@ -29,6 +29,8 @@ The purpose of this help article is to show you the key properties of __RadPassw
 
 __SecurePassword__ is a read-only property that returns the current password as a [System.Security.SecureString](https://msdn.microsoft.com/en-us/library/system.security.securestring(v=vs.110).aspx).
 
+>__SecurePassword__ is not a dependency property (it is not bindable) due to security reasons. 
+
 ## Password
 
 __Password__ property returns the current password as a string representation. It could be used to set initial password as demonstrated in __Example 1__.
@@ -75,11 +77,11 @@ __ShowPasswordButton__ refers to the button used to display the entered password
 __ShowPasswordButtonVisibility__ property defines the visibility mode of the ShowPassword button. It is of __ShowPasswordButtonVisibilityMode__ enum type and could receive the following values:
 * Never 
 * Always
-* Auto (the button will be visible only when there is currently entered password). 
+* Auto (the button will be visible only when the password is entered). 
 
 The default value is Auto.
 
-In order to completely remove the ShowPassword button, you could set this property to Never as demonstrated in __Example 3__.
+To completely remove the __ShowPasswordButton__, you could set this property to Never as demonstrated in __Example 3__.
  
 #### __[XAML] Example 3: Setting ShowPasswordButtonVisibility__
 {{region radpasswordbox-key-properties_1}}
@@ -103,7 +105,7 @@ First, we will create a simple DataTemplate as demonstrated in __Example 4__.
 	</DataTemplate>
 {{endregion}}
 
-__Example 5__ illustates how to set the ImageTemplate to the __ShowPasswordButtonContentTemplate__ property of the PasswordBox as well as define its __ShowPasswordButtonContent__ property.
+__Example 5__ illustates how to set the ImageTemplate to the __ShowPasswordButtonContentTemplate__ property of __RadPasswordBox__ as well as define its __ShowPasswordButtonContent__ property.
 
 #### __[XAML] Example 5: Setting ShowPasswordButton content properties__
 {{region radpasswordbox-key-properties_4}}
@@ -132,7 +134,7 @@ First, we will create a simple DataTemplate as demonstrated in __Example 6__.
 	</DataTemplate>
 {{endregion}}
 
-Then, set the defined WatermarkWithImageTemplate to the __WatermarkTemplate__ of the __PasswordBox__.
+Then, set the defined WatermarkWithImageTemplate to the __WatermarkTemplate__ of the __RadPasswordBox__.
 
 #### __[XAML] Example 7: Setting WatermarkTemplate__
 {{region radpasswordbox-key-properties_6}}

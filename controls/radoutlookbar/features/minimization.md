@@ -29,21 +29,20 @@ You can use the __Minimization__ feature of the __RadOutlookBar__ to create more
 The default value of the __IsMinimizable__ property is __True__:
 
 #### __XAML__
-{{region radoutlookbar-features-minimization_0}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1" 
-						   Width="250"
-						   Height="390">
-		<telerik:RadOutlookBarItem Header="Contact 1" Icon="../Images/OutlookBar/contactsBig.png">
-			<TextBlock Text="Contact 1 Information" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Contact 2" 
-								   Icon="../Images/OutlookBar/contactsBig.png"
-								   IsSelected="True">
-			<TextBlock Text="Contact 2 Information" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Contact 3" Icon="../Images/OutlookBar/contactsBig.png">
-			<TextBlock Text="Contact 3 Information" />
-		</telerik:RadOutlookBarItem>
+{{region xaml-radoutlookbar-features-minimization_0}}
+	<telerik:RadOutlookBar Width="250"
+	                       Height="390">
+	    <telerik:RadOutlookBarItem Header="Contact 1" Icon="../Images/OutlookBar/contactsBig.png">
+	        <TextBlock Text="Contact 1 Information" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Contact 2" 
+	                               Icon="../Images/OutlookBar/contactsBig.png"
+	                               IsSelected="True">
+	        <TextBlock Text="Contact 2 Information" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Contact 3" Icon="../Images/OutlookBar/contactsBig.png">
+	        <TextBlock Text="Contact 3 Information" />
+	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
 {{endregion}}
 
@@ -52,22 +51,21 @@ The default value of the __IsMinimizable__ property is __True__:
 Setting the __IsMinimizable__ property to __False__ will disable the __Minimization__ feature of the __RadOutlookBar__:
 
 #### __XAML__
-{{region radoutlookbar-features-minimization_1}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1" 
-						   Width="250"
-						   Height="390"
-						   IsMinimizable="False">
-		<telerik:RadOutlookBarItem Header="Contact 1" Icon="../Images/OutlookBar/contactsBig.png">
-			<TextBlock Text="Contact 1 Information" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Contact 2" 
-								   Icon="../Images/OutlookBar/contactsBig.png"
-								   IsSelected="True">
-			<TextBlock Text="Contact 2 Information" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Contact 3" Icon="../Images/OutlookBar/contactsBig.png">
-			<TextBlock Text="Contact 3 Information" />
-		</telerik:RadOutlookBarItem>
+{{region xaml-radoutlookbar-features-minimization_1}}
+	<telerik:RadOutlookBar Width="250"
+	                       Height="390"
+	                       IsMinimizable="False">
+	    <telerik:RadOutlookBarItem Header="Contact 1" Icon="../Images/OutlookBar/contactsBig.png">
+	        <TextBlock Text="Contact 1 Information" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Contact 2" 
+	                               Icon="../Images/OutlookBar/contactsBig.png"
+	                               IsSelected="True">
+	        <TextBlock Text="Contact 2 Information" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Contact 3" Icon="../Images/OutlookBar/contactsBig.png">
+	        <TextBlock Text="Contact 3 Information" />
+	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
 {{endregion}}
 
@@ -78,22 +76,21 @@ Setting the __IsMinimizable__ property to __False__ will disable the __Minimizat
 The __IsMinimized__ property allows you to manually control the state of the __RadOutlookBar__. When set to the __RadOutlookBar__ is minimized:
 
 #### __XAML__
-{{region radoutlookbar-features-minimization_2}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1" 
-						   Width="250"
-						   Height="390"
-						   IsMinimized="True">
-		<telerik:RadOutlookBarItem Header="Contact 1" Icon="../Images/OutlookBar/contactsBig.png">
-			<TextBlock Text="Contact 1 Information" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Contact 2" 
-								   Icon="../Images/OutlookBar/contactsBig.png"
-								   IsSelected="True">
-			<TextBlock Text="Contact 2 Information" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Contact 3" Icon="../Images/OutlookBar/contactsBig.png">
-			<TextBlock Text="Contact 3 Information" />
-		</telerik:RadOutlookBarItem>
+{{region xaml-radoutlookbar-features-minimization_2}}
+	<telerik:RadOutlookBar Width="250"
+	                       Height="390"
+	                       IsMinimized="True">
+	    <telerik:RadOutlookBarItem Header="Contact 1" Icon="../Images/OutlookBar/contactsBig.png">
+	        <TextBlock Text="Contact 1 Information" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Contact 2" 
+	                               Icon="../Images/OutlookBar/contactsBig.png"
+	                               IsSelected="True">
+	        <TextBlock Text="Contact 2 Information" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Contact 3" Icon="../Images/OutlookBar/contactsBig.png">
+	        <TextBlock Text="Contact 3 Information" />
+	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
 {{endregion}}
 
@@ -104,23 +101,22 @@ The __IsMinimized__ property allows you to manually control the state of the __R
 The default value of the __MinimizedWidth__ property is 30. However, you can change that size to better fit your scenario:
 
 #### __XAML__
-{{region radoutlookbar-features-minimization_3}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1" 
-						   Width="250"
-						   Height="390"
-						   IsMinimized="True"
-						   MinimizedWidth="60">
-		<telerik:RadOutlookBarItem Header="Contact 1" Icon="../Images/OutlookBar/contactsBig.png">
-			<TextBlock Text="Contact 1 Information" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Contact 2" 
-								   Icon="../Images/OutlookBar/contactsBig.png"
-								   IsSelected="True">
-			<TextBlock Text="Contact 2 Information" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Contact 3" Icon="../Images/OutlookBar/contactsBig.png">
-			<TextBlock Text="Contact 3 Information" />
-		</telerik:RadOutlookBarItem>
+{{region xaml-radoutlookbar-features-minimization_3}}
+	<telerik:RadOutlookBar Width="250"
+	                       Height="390"
+	                       IsMinimized="True"
+	                       MinimizedWidth="60">
+	    <telerik:RadOutlookBarItem Header="Contact 1" Icon="../Images/OutlookBar/contactsBig.png">
+	        <TextBlock Text="Contact 1 Information" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Contact 2" 
+	                               Icon="../Images/OutlookBar/contactsBig.png"
+	                               IsSelected="True">
+	        <TextBlock Text="Contact 2 Information" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Contact 3" Icon="../Images/OutlookBar/contactsBig.png">
+	        <TextBlock Text="Contact 3 Information" />
+	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
 {{endregion}}
 

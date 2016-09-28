@@ -15,9 +15,8 @@ position: 0
 To handle changes in the selection you can use the __SelectionChanged__ event: 
 
 #### __XAML__
-{{region radoutlookbar-selection_0}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1" 
-	                       PreviewSelectionChanged="RadOutlookBar1_PreviewSelectionChanged"
+{{region xaml-radoutlookbar-selection_0}}
+	<telerik:RadOutlookBar PreviewSelectionChanged="RadOutlookBar1_PreviewSelectionChanged"
 	                       SelectionChanged="RadOutlookBar1_SelectionChanged">
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
 	        <TextBlock Text="Item 1 Content" />
@@ -34,25 +33,26 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 {{endregion}}
 
 #### __C#__
-{{region radoutlookbar-selection_0}}
+{{region cs-radoutlookbar-selection_1}}
 	private void RadOutlookBar1_SelectionChanged(object sender, RoutedEventArgs e)
 	{
 		RadOutlookBarItem newSelectedItem = (sender as
 		RadOutlookBar).SelectedItem as RadOutlookBarItem;
 	}
-	private void RadOutlookBar1_PreviewSelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
+	      
+	private void RadOutlookBar1_PreviewSelectionChanged(object sender, Telerik.Windows.Controls.RadSelectionChangedEventArgs e)
 	{
 		//use the Handled property to prevent the selection           
 	}
 {{endregion}}
 
 #### __VB.NET__
-{{region radoutlookbar-selection_0}}
+{{region vb-radoutlookbar-selection_1}}
 	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
+	    Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
 	End Sub
-	Private Sub RadOutlookBar1_PreviewSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-		'use the Handled property to prevent the selection'
+	Private Sub RadOutlookBar1_PreviewSelectionChanged(sender As Object, e As Telerik.Windows.Controls.RadSelectionChangedEventArgs)
+	    'use the Handled property to prevent the selection'           
 	End Sub
 {{endregion}}
 
@@ -61,8 +61,8 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 You can set the selected item by using its __IsSelected__ property:
         
 #### __XAML__
-{{region radoutlookbar-selection_1}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1">
+{{region xaml-radoutlookbar-selection_2}}
+	<telerik:RadOutlookBar>
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
 	        <TextBlock Text="Item 1 Content" />
 	    </telerik:RadOutlookBarItem>
@@ -93,6 +93,6 @@ There are also the following properties related to the styling of the selected c
 
 * __SelectedContentTemplateSelector__ - template selector for the selected content
 
-# See Also
+## See Also
  * [Getting Started]({%slug radoutlookbar-getting-started%})
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})

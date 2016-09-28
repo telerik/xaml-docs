@@ -34,9 +34,9 @@ position: 0
 ## Adding icons to the items
 
 #### __XAML__
-{{region radoutlookbar-getting-started_0}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1">
-	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">{{endregion}}
+{{region xaml-radoutlookbar-getting-started_0}}
+	<telerik:RadOutlookBar>
+	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
 	        <TextBlock Text="Item 1 Content" />
 	    </telerik:RadOutlookBarItem>
 	    <telerik:RadOutlookBarItem Header="Item 2" 
@@ -57,15 +57,14 @@ position: 0
 By default the first item will be selected. In order to select another item you can use the __IsSelected__ property.        
 
 #### __XAML__
-{{region radoutlookbar-getting-started_1}}
-	<UserControl x:Class="RadOutlookBarHelpExamples.MainPage" 
-	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+{{region xaml-radoutlookbar-getting-started_1}}
+	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <Grid x:Name="LayoutRoot">
-	        <telerik:RadOutlookBar x:Name="RadOutlookBar1">
+	        <telerik:RadOutlookBar >
 	            <telerik:RadOutlookBarItem Header="Item 1">
 	                <TextBlock Text="Item 1 Content" />
 	            </telerik:RadOutlookBarItem>
@@ -87,7 +86,7 @@ By default the first item will be selected. In order to select another item you 
 To handle the changes in the selection you can use the __SelectionChanged__ event of the __RadOutlookBar__:        
 
 #### __XAML__
-{{region radoutlookbar-getting-started_2}}
+{{region xaml-radoutlookbar-getting-started_2}}
 	<telerik:RadOutlookBar x:Name="RadOutlookBar1" SelectionChanged="RadOutlookBar1_SelectionChanged">
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
 	        <TextBlock Text="Item 1 Content" />
@@ -104,7 +103,7 @@ To handle the changes in the selection you can use the __SelectionChanged__ even
 {{endregion}}
 
 #### __C#__
-{{region radoutlookbar-getting-started_1}}
+{{region cs-radoutlookbar-getting-started_3}}
 	private void RadOutlookBar1_SelectionChanged(object sender, RoutedEventArgs e)
 	{
 		RadOutlookBarItem newSelectedItem = (sender as RadOutlookBar).SelectedItem as RadOutlookBarItem;
@@ -112,9 +111,9 @@ To handle the changes in the selection you can use the __SelectionChanged__ even
 {{endregion}}
 
 #### __VB.NET__
-{{region radoutlookbar-getting-started_1}}
+{{region vb-radoutlookbar-getting-started_3}}
 	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
+	    Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
 	End Sub
 {{endregion}}
 
@@ -123,25 +122,25 @@ To handle the changes in the selection you can use the __SelectionChanged__ even
 To limit the number of items that can be displayed in the active area you can use the __ActiveItemsMaxCount__ property:        
 
 #### __XAML__
-{{region radoutlookbar-getting-started_3}}
-    <telerik:RadOutlookBar x:Name="RadOutlookBar1" ActiveItemsMaxCount="2">
-        <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
-            <TextBlock Text="Item 1 Content" />
-        </telerik:RadOutlookBarItem>
-        <telerik:RadOutlookBarItem Header="Item 2" 
-                                   Icon="Letter.png"
-                                   IsSelected="True">
-            <TextBlock Text="Item 2 Content" />
-        </telerik:RadOutlookBarItem>
-        <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
-            <TextBlock Text="Item 3 Content" />
-        </telerik:RadOutlookBarItem>
-    </telerik:RadOutlookBar>
+{{region xaml-radoutlookbar-getting-started_4}}
+	<telerik:RadOutlookBar ActiveItemsMaxCount="2">
+	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
+	        <TextBlock Text="Item 1 Content" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Item 2" 
+	                               Icon="Letter.png"
+	                               IsSelected="True">
+	        <TextBlock Text="Item 2 Content" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
+	        <TextBlock Text="Item 3 Content" />
+	    </telerik:RadOutlookBarItem>
+	</telerik:RadOutlookBar>
 {{endregion}}
 
 ![](images/outlook_step4.png)
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})
  * [Resizing]({%slug radoutlookbar-resizing%})
  * [Selection]({%slug radoutlookbar-selection%})

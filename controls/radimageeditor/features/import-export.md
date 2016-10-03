@@ -136,7 +136,7 @@ You can use the available format providers to export the images as well.  **Exam
 
 
 
-One thing to note is that the last applied change may not be committed (which normally happens when you press Enter or change the current tool).
+>One thing to note is that the last applied change may not be committed (which normally happens when you press Enter or change the current tool).
 
 To commit this last change, use the method from **Example 4**
 

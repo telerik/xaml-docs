@@ -64,7 +64,7 @@ After that, you can add a RadPdfViewer like shown in **Example 2**.
     <telerik:RadPdfViewer x:Name="pdfViewer"/>
 {{endregion}}
 
-> When creating RadPdfViewer, you should ensure that the control is **not** placed in a container that measures its children with Infinity as this could lead to an unexpected behavior of the viewer.
+> When creating RadPdfViewer, you should ensure that the control is **not** placed in a container that measures its children with Infinity as this could lead to an unexpected behavior of the viewer. Examples of such containers are **ScrollViewer**, **StackPanel** or **Grid** with row height and column width set to ***Auto***. 
 
 ## Wiring UI with the Commands of RadPdfViewer
 
@@ -81,7 +81,7 @@ The navigation panel is separated from the control in order to provide better cu
 
 >tipYou can download a complete runnable example showing the default RadPdfViewer with RadToolBar configuration from our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). 
 
-You can then add buttons, comboboxes, etc. bound to the respective command descriptors of the viewer as **Example 4** shows.
+You can then add buttons, combo boxes, etc. bound to the respective command descriptors of the viewer as **Example 4** shows.
 
 #### __[XAML] Example 4: Wire a CommandDescriptor to a RadButton__
 

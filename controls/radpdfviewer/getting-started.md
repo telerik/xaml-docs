@@ -50,8 +50,8 @@ The first thing you need to do is to declare the Telerik namespace.
 
 #### __[XAML] Example 1: Declare the Telerik namespace__
 
-{{region radpdfviewer-getting-started_0}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"     
+{{region xaml-radpdfviewer-getting-started_0}}
+	telerik="http://schemas.telerik.com/2008/xaml/presentation"     
 {{endregion}}
 
 
@@ -60,8 +60,10 @@ After that, you can add a RadPdfViewer like shown in **Example 2**.
 
 #### __[XAML] Example 2: Create a PdfViewer__
 
-{{region radpdfviewer-getting-started_1}}
-    <telerik:RadPdfViewer x:Name="pdfViewer"/>
+{{region xaml-radpdfviewer-getting-started_1}}
+	<Grid>
+	    <telerik:RadPdfViewer x:Name="pdfViewer"/>
+	</Grid>
 {{endregion}}
 
 > When creating RadPdfViewer, you should ensure that the control is **not** placed in a container that measures its children with Infinity as this could lead to an unexpected behavior of the viewer. Examples of such containers are **ScrollViewer**, **StackPanel** or **Grid** with row height and column width set to ***Auto***. 
@@ -73,9 +75,9 @@ The navigation panel is separated from the control in order to provide better cu
 
 #### __[XAML] Example 3: Add a RadToolBar to RadPdfViewer__
 
-{{region radpdfviewer-getting-started_2}}
+{{region xaml-radpdfviewer-getting-started_2}}
 	<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
-	   …
+	    <!--...-->
 	</telerik:RadToolBar>
 {{endregion}}
 
@@ -85,13 +87,13 @@ You can then add buttons, combo boxes, etc. bound to the respective command desc
 
 #### __[XAML] Example 4: Wire a CommandDescriptor to a RadButton__
 
-{{region radpdfviewer-getting-started_3}}
-	        <telerik:RadButton Command="{Binding OpenCommandDescriptor.Command}" Visibility="{Binding OpenCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsBackgroundVisible="False">
-	            <ToolTipService.ToolTip>
-	                <TextBlock Text="Open" />
-	            </ToolTipService.ToolTip>
-	            <Image Source="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/open.png" Stretch="None" />
-	        </telerik:RadButton>
+{{region xaml-radpdfviewer-getting-started_3}}
+	<telerik:RadButton Command="{Binding OpenCommandDescriptor.Command}" Visibility="{Binding OpenCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsBackgroundVisible="False">
+	    <ToolTipService.ToolTip>
+	        <TextBlock Text="Open" />
+	    </ToolTipService.ToolTip>
+	    <Image Source="{telerik:IconResource IconRelativePath=open.png, IconSources={StaticResource IconPaths}}" Stretch="None" />
+	</telerik:RadButton>
 {{endregion}}
 
 
@@ -103,6 +105,6 @@ You can then add buttons, combo boxes, etc. bound to the respective command desc
 Having configured __RadPdfViewer__ in this way, the control is ready to use. Additional options, such as showing a PDF document when the viewer is loaded or binding the document, are described in the [Showing a File article]({%slug radpdfviewer-showing-a-file%}).
         
 
-# See Also
+## See Also
 * [Showing a File]({%slug radpdfviewer-showing-a-file%})
 * [Wiring UI]({%slug radpdfviewer-wiring-ui%})

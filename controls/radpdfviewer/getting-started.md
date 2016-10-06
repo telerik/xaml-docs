@@ -16,8 +16,8 @@ __RadPdfViewer__ is a control that allows you to display PDF files natively in {
       
 
 * [Adding the Required Assembly References](#assembly-references)
-* [Declaring RadPdfViewer in XAML](#adding-radpdfviewer-to-the-page)
-* [Wiring UI with the Commands of RadPdfViewer](#wiring-ui-with-the-commands-of-radpdfviewer)
+* [Declaring RadPdfViewer in XAML](#adding-radpdfviewer-to-a-page)
+* [Wiring UI with the Commands of RadPdfViewer](#wiring-the-ui-with-radpdfviewer-commands)
 
 ## Assembly References
 
@@ -30,12 +30,12 @@ The minimal set of assembly references you need to add to your {% if site.site_n
 * **Telerik.Windows.Documents.Fixed.dll**
 * **Telerik.Windows.Zip.dll**
 
-If you would like to include a RadToolBar, you will also need to reference:
+If you want to include a RadToolBar, you also need to reference:
 
 * **Telerik.Windows.Controls.Input.dll**
 * **Telerik.Windows.Controls.Navigation.dll**
 
-You can also take advantage of some RadPdfViewer-specific controls such as FindDialog and PercentComboBox. In order to use them, you need to add the following references to your project:
+You can also take advantage of some RadPdfViewer-specific controls such as FindDialog and PercentComboBox. To use them, you need to add the following references to your project:
         
 
 * **Telerik.Windows.Controls.Input.dll**
@@ -43,9 +43,9 @@ You can also take advantage of some RadPdfViewer-specific controls such as FindD
 * **Telerik.Windows.Controls.FixedDocumentViewersUI**
             
 
-## Adding RadPdfViewer to the Page
+## Adding RadPdfViewer to a Page
 
-The first thing you need to do is to declare the Telerik namespace.
+You have to first declare the Telerik namespace.
         
 
 #### __[XAML] Example 1: Declare the Telerik namespace__
@@ -56,7 +56,7 @@ The first thing you need to do is to declare the Telerik namespace.
 
 
 
-After that, you can add a RadPdfViewer like shown in **Example 2**.
+After that, you can add a RadPdfViewer, as shown in **Example 2**.
 
 #### __[XAML] Example 2: Create a PdfViewer__
 
@@ -66,11 +66,11 @@ After that, you can add a RadPdfViewer like shown in **Example 2**.
 	</Grid>
 {{endregion}}
 
-> When creating RadPdfViewer, you should ensure that the control is **not** placed in a container that measures its children with Infinity as this could lead to an unexpected behavior of the viewer. Examples of such containers are **ScrollViewer**, **StackPanel** or **Grid** with row height and column width set to ***Auto***. 
+> When you create a RadPdfViewer, ensure that the control is **not** placed in a container that measures its children in Infinity as this could lead to unexpected behavior of the viewer. Examples of such containers are **ScrollViewer**, **StackPanel** or **Grid** with row height and column width set to ***Auto***. 
 
-## Wiring UI with the Commands of RadPdfViewer
+## Wiring the UI with RadPdfViewer Commands 
 
-The navigation panel is separated from the control in order to provide better customization options. In order to add a panel in your application, you can use __RadToolBar__, which has the command descriptors of the viewer as a DataContext.
+The navigation panel is separated from the control to provide better customization options. In order to add a panel in your application, you can use __RadToolBar__, which has the command descriptors of the viewer as a DataContext.
         
 
 #### __[XAML] Example 3: Add a RadToolBar to RadPdfViewer__
@@ -81,9 +81,9 @@ The navigation panel is separated from the control in order to provide better cu
 	</telerik:RadToolBar>
 {{endregion}}
 
->tipYou can download a complete runnable example showing the default RadPdfViewer with RadToolBar configuration from our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). 
+>tipYou can download a complete runnable example that shows the default RadPdfViewer with RadToolBar configuration from the [Telerik® SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). 
 
-You can then add buttons, combo boxes, etc. bound to the respective command descriptors of the viewer as **Example 4** shows.
+You can then add buttons, combo boxes, etc., bound to the respective command descriptors of the viewer, as **Example 4** shows.
 
 #### __[XAML] Example 4: Wire a CommandDescriptor to a RadButton__
 
@@ -97,12 +97,12 @@ You can then add buttons, combo boxes, etc. bound to the respective command desc
 {{endregion}}
 
 
->tipFor the whole configuration of a RadToolBar with all commands of the viewer, you can refer to [this article]({%slug radpdfviewer-wiring-ui%}) and more information about the command descriptors is available [here]({%slug radpdfviewer-command-descriptors%}).
+>tipFor the whole configuration of a RadToolBar with all commands of the viewer, you can refer to [this article]({%slug radpdfviewer-wiring-ui%}). More information about the command descriptors is available [here]({%slug radpdfviewer-command-descriptors%}).
           
 
 ## 
 
-Having configured __RadPdfViewer__ in this way, the control is ready to use. Additional options, such as showing a PDF document when the viewer is loaded or binding the document, are described in the [Showing a File article]({%slug radpdfviewer-showing-a-file%}).
+After you configure __RadPdfViewer__ in this way, the control is ready to use. Additional options, such as showing a PDF document when the viewer is loaded or binding the document, are described in the [Showing a File]({%slug radpdfviewer-showing-a-file%}) article.
         
 
 ## See Also

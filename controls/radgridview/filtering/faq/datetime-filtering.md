@@ -10,23 +10,27 @@ position: 3
 
 # Filtering column showing DateTime values
 
+## Items disappear when a column is filtered over a DateTime property
 
-## Why do they disappear all when I filter and select a date?
-      
+When a column is filtered over a __DateTime__ property and its __Time__ part is not explicitly set, the default __00:00:00 value__ is used. Thus, if the bound items have different values for the __Time__ portion of the __DateTime__ property, they will be filtered out.
+ 
+>Since DateTime values with different time parts are __not equal__, you will have no match.
 
-Most probably your __DateTime data contains a time part which is different from 00:00:00__. When you filter and select a DateTime value, this selected DateTime will have its time part equal to zero if you forget to enter the time part. 
+### Solution 1
+
+Trim the time part of your DateTimes. 
+
+### Solution 2
+
+The use can be instructed to enter both the date and time parts of the date when filtering.
+
+### Solution 3
         
-
->Since DateTime’s with different time parts are not equal for the .NET Framework, you will have no match.
-          
-
-A possible solution would be to __trim the time part__ of your DateTimes. __Alternatively, you may instruct the user to enter both the date and time parts__ of the date when filtering.
-        
-
-An even better approach would be to __bind your column directly to the Date (or Year) property__ of the DateTime object. 
-        
+Bind the column __directly to the Date (or Year)__ property of the __DateTime__ object.         
 
 >tipFor example: DataMemberBinding="{Binding BirthDate.Date}"
+
+>Columns bound to the __Date__ part of a __Nullable DateTime__ does not support filtering, as a __Nullable DateTime__ does not expose a __Date__ property.
 
 As alternative solution, you can benefit from a property called __FilterMemberPath__. You can use it to tell the column to __filter on a property different from the one it displays__ in its cells.      
         
@@ -34,6 +38,6 @@ As alternative solution, you can benefit from a property called __FilterMemberPa
 >tipFor example: FilterMemberPath="BirthDate.Date". You can also check the [FilterMemberPath documentation]({%slug gridview-filtering-basic%}).
           
 
-# See Also
+## See Also
 
  * [Basic Filtering]({%slug gridview-filtering-basic%})

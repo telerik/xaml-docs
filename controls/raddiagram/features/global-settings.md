@@ -41,7 +41,7 @@ The __Diagramming Framework__ provides a list of constants that are applied thro
 
 * __MaximumZoom__: Gets or sets the maximum zoom level. The default value of this constant is 5. Read more about zooming in the [Pan and Zoom](585daa93-6cbd-47a4-8fd3-61469984b67e#Zooming) tutorial.			
 
-* __MinimumZoom__: Gets or sets the minimum zoom level. The default value of this constant is 0.5. Read more about zooming in the [Pan and Zoom](585daa93-6cbd-47a4-8fd3-61469984b67e#Zooming) tutorial.			
+* __MinimumZoom__: Gets or sets the minimum zoom level. The default value of this constant is 0.5. Read more about zooming in the [Pan and Zoom]({%slug raddiagrams-features-pan-zoom%}) tutorial.			
 
 * __RotationAngleSnap__: Gets or sets the snapping angle when rotating items. The default value of this constant is 5 degrees. Read more about rotation in the [Rotation]({%slug raddiagrams-features-rotation%}) tutorial.			
 

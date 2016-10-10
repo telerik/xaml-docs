@@ -57,4 +57,4 @@ The __Diagramming Framework__ provides a list of constants that are applied thro
 
 * __MinimumShapeSize__: Gets or sets a __double__ value that determines the minimum size of the diagram shapes.
 
-> We recommend to use matching values for the __MinimumShapeSize__ and __MinimumAdornerSize__ properties. Otherwise, the adorner won't match the shape's size when reaches its minimum size.
+> We recommend to use matching values for the __MinimumShapeSize__ and __MinimumAdornerSize__ properties. Otherwise, the adorner won't match the shape's size when its minimum value is reached.

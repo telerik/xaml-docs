@@ -47,7 +47,7 @@ The __Diagramming Framework__ provides a list of constants that are applied thro
 
 * __RotationHitTestRadius__: Gets or sets the radius around the rotation thumb where a click operation activates the thumb. The default value of this constant is 7px. Read more about rotation in the [Rotation]({%slug raddiagrams-features-rotation%}) tutorial.			
 
-* __RoutingGridSize__: Gets or sets the routing grid cell size. The value of this constant is used in the layout algorithm used to layout the __RadDiagramConnections__. The default value of this constant is 40px.			
+* __RoutingGridSize__: Gets or sets the routing grid cell size. The value of this constant is used in the algorithm used to layout the __RadDiagramConnections__. The default value of this constant is 40px.			
 
 * __SelectionHitTestRadius__: Gets or sets the radius of the area around each item which is considered selectable. The default value of this constant is 10px.			
 

@@ -37,7 +37,7 @@ The __Diagramming Framework__ provides a list of constants that are applied thro
 
 * __RouterInflationValue__: Gets or sets the distance around the shapes which the router inflates the shapes with, if implemented. This property is used by the __InflatedRectRouted__ and __AStarRouter__.
 	
-* __ZoomScaleFactor__: Gets or sets the default zoom factor that is used as a multiplier or divider to produce the next step in a zoom operation. The default value of this constant is 1.2. Read more about zooming in the [Pan and Zoom](585daa93-6cbd-47a4-8fd3-61469984b67e#Zooming) tutorial.			
+* __ZoomScaleFactor__: Gets or sets the default zoom factor that is used as a multiplier or divider to produce the next step in a zoom operation. The default value of this constant is 1.2. Read more about zooming in the [Pan and Zoom]({%slug raddiagrams-features-pan-zoom%}) tutorial.			
 
 * __MaximumZoom__: Gets or sets the maximum zoom level. The default value of this constant is 5. Read more about zooming in the [Pan and Zoom](585daa93-6cbd-47a4-8fd3-61469984b67e#Zooming) tutorial.			
 

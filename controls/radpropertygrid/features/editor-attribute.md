@@ -40,7 +40,7 @@ It has tree properties:
 
 ## Constructors
 
-Consequently, __EditorAttribute has a various constructors__ that can be used depending on the necessities. Their main difference is that either the __Type__ of the editor is passed as parameter, or the string representation of the editor's __Type__. 
+Consequently, __EditorAttribute has various constructors__ that can be used depending on the necessities. Their main difference is that either the __Type__ of the editor is passed as parameter, or the string representation of the editor's __Type__. 
 
 * __public  EditorAttribute(Type editorType)__
 

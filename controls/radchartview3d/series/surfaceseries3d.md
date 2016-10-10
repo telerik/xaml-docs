@@ -66,7 +66,7 @@ You can use the code from __Example 1__ to create a __SurfaceSeries3D__.
 
 ## Data bound series
 
-You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ properties of __SurfaceSeries3D__ to bind the __SurfaceDataPoint3D__ properties to the properties from the view models. The __ItemsSource__ property is used to pass to the data collection to the series.
+You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ properties of __SurfaceSeries3D__ to bind the __SurfaceDataPoint3D__ properties to the properties of the view models. The __ItemsSource__ property is used to pass the data collection to the series.
 
 #### __[C#] Example 2: Defining a model for the data points and setting up the data context__
 	public class PlotInfo
@@ -126,7 +126,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 
 * __SurfaceSeries3DDataPointColorizer__
 
-	This colorizer uses colors get from the plotted data points and based on them creates a gradient texture which is applied on the surface. By default the __SurfaceSeries3DDataPointColorizer__ works only in a data binding scenario. The colorizer requires each data point to define a color in its model. You can bind the color from the point's model to the colorizer via the __ColorBinding__ property. The property expects a path to a property of type __Color__ in the model of the data point.  
+	This colorizer uses colors obtained from the plotted data points and based on them creates a gradient texture which is applied on the surface. By default the __SurfaceSeries3DDataPointColorizer__ works only in a data binding scenario. The colorizer requires each data point to define a color in its model. You can bind the color from the point's model to the colorizer via the __ColorBinding__ property. The property expects a path to a property of type __Color__ in the model of the data point.  
 	
 	The color of a point will be blend with the colors of its neighbour points, thus forming a gradient texture applied to the part of the surface that is formed between the points.
 

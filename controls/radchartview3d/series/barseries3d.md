@@ -57,7 +57,7 @@ You can use the code from __Example 1__ to create a __BarSeries3D__.
 
 ## Data bound series
 
-You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ properties of __BarSeries3D__ to bind the __XyzDataPoints__’ properties to the properties from the view models. The __ItemsSource__ property is used to pass to the data collection to the series.
+You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ properties of __BarSeries3D__ to bind the __XyzDataPoints__’ properties to the properties of the view models. The __ItemsSource__ property is used to pass the data collection to the series.
 
 #### __[C#] Example 2: Defining a model for the data points and setting up the data context__
 	public class PlotInfo

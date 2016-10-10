@@ -69,7 +69,7 @@ The geometry of a 3D object describes its shape. You can define a geometry for t
 
 The chart allows you to choose different geometries and materials for each data point based on its model.
 
-You can use the __DefaultVisualMaterialSelector__ property to set material selector and choose material dynamically.
+You can use the __DefaultVisualMaterialSelector__ property to set a material selector and choose material dynamically.
 
 #### __[C#] Example 4: Implementing material selector__
 	public class MyDefaultVisualMaterialSelector : MaterialSelector

@@ -28,7 +28,7 @@ You can find the required assemblies for each control from the UI for WPF suite 
 
 ## Defining chart and axes
 
-In order to display the chart you will need to define it along with its axes (see __Example 1__). You can find more information about the chart's axes in the [Axes]({%slug radchartview3d-axes%}) help article.
+To display the __RadCartesianChart3D__ you will need to define it along with its axes (see __Example 1__). You can find more information about the chart's axes in the [Axes]({%slug radchartview3d-axes%}) help article.
 
 #### __[XAML] Example 1: Empty RadCartesianChart3D__
 	<telerik:RadCartesianChart3D>
@@ -50,7 +50,7 @@ At this point the viewport of the chart is rendered.
 
 ## Defining chart series
 
-The data in the chart is presented by the chart series. You can find more information about this in the [Series]({%slug radchartview3d-pointseries3d%}) section of the documentation.
+The data in the chart is presented with the chart series objects. You can find more information about this in the [Series]({%slug radchartview3d-pointseries3d%}) section of the help documentation.
 
 #### __[XAML] Example 2: Defining series__
 	<telerik:RadCartesianChart3D>
@@ -89,7 +89,7 @@ The data in the chart is presented by the chart series. You can find more inform
 #### __Figure 2: PointSeries3D__
 ![](images/radchartview-3d-getting-started-1.png)	
 
-For better percieving the 3D space you can enable the chart's grid. You can read more about this in the [Chart Grid]({%slug radchartview3d-chartgrid%}) help article.
+For precisely reading the elements in the 3D space you can enable the chart's grid. You can read more about this in the [Chart Grid]({%slug radchartview3d-chartgrid%}) help article.
 
 #### __[XAML] Example 3: Adding chart grid__
 	<telerik:RadCartesianChart3D.Grid>

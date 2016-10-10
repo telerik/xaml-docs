@@ -70,7 +70,7 @@ In order to use the glyph references and the font as __StaticResources__ in a pr
 #### __[XAML] Example 3: Adding the ResourceDictionary with the fonts__
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
 
-In our controls the needed resources are provided, so this inclusion is required only in case you would like to use the font and the glyphs in your custom project.
+In the UI for WPF controls the needed resources are provided, so this inclusion is required only in case you would like to use the font and the glyphs in your custom project.
 
 Changing the glyphs’ color is achieved by changing the foreground of the holding element, in the same manner as the foreground of a regular font. This is extremely useful in scenarios when the background of the control changes in different interaction states (see __Example 4__).
 
@@ -86,7 +86,7 @@ Changing the glyphs’ color is achieved by changing the foreground of the holdi
 #### __Figure 1: Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed__  
 ![](images/common-styling-appearance-glyphs-overview-0.png)
 
-__Example 5__ demonstrates how to change the glyph based on a __RadToggleButton__ being checked or not.
+__Example 5__ demonstrates how to change the glyph based on a __RadToggleButton__ being checked or unchecked.
 
 #### __[XAML] Example 5: Dynamic glyph change__
 	<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10" >
@@ -106,7 +106,7 @@ __Example 5__ demonstrates how to change the glyph based on a __RadToggleButton_
 		</telerik:RadToggleButton.Resources>
 	</telerik:RadToggleButton>
 
-#### __Figure 2: Dynamic change of the glyph icon on toggle of RadToggleButton__  
+#### __Figure 2: Dynamic change of the glyph icon when RadToggleButton is toggled__  
 ![](images/common-styling-appearance-glyphs-overview-1.png)
 
 ## See Also

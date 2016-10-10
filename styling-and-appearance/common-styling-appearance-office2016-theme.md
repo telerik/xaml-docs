@@ -128,7 +128,7 @@ The __Examples 2 and 3__ shows how to change the default FontFamily from "Segoe 
 
 ## Glyphs
 
-With Office2016 theme we are introducing a new approach to add icons and icon-like images. Instead of images or paths we are using a font of glyphs by default. The __TelerikWebUI__ font provides over 400 scalable vector glyphs that are available for use to our clients. We have chosen this approach to icons in this theme because it provides a number of advantages and benefits.
+With Office2016 theme we are introducing a new approach to add icons and icon-like images. Instead of images or paths we are using a font of glyphs by default. The __TelerikWebUI__ font provides over 400 scalable vector glyphs that are available for use to our clients. We have chosen this approach because it provides a number of advantages and benefits.
 * The glyphs are vector paths which are easily scalable without loss of quality.
 
 * There is a wide range of different beautiful built-in glyphs to choose from.
@@ -154,7 +154,7 @@ Since each glyph’s string value is ambiguous and not related to its shape, we 
 #### __Figure 3: Heart glyph__
 ![](images/common-styling-appearance-office2016-theme-2.png)	
 
-> You can read more about the usage and the different available glyphs in [our article]({%slug common-styling-appearance-glyphs-overview%}) about this new feature.
+> You can read more about the usage of the new glyph's feature and see the available glyphs in [this article]({%slug common-styling-appearance-glyphs-overview%}).
 
 ## Changing FocusThickness
 

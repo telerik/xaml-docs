@@ -136,7 +136,7 @@ The linear and categorical 3D axes share some common features which you can find
 	
 ## LinearAxis3D
 
-This type of axis has a notion of range and it can be used to plot numeric data. You can find the axis specific features listed below.
+This type of axis has a notion of range which means that it has minimum, maximum and a numeric step between its values. The axis can be used to plot numeric data. You can find the axis specific features listed below.
 
 * __Desired tick count__: You can use the __DesiredTickCount__ property of the axis to set the number of the desired ticks that will be displayed on the axis. Note that the property doesn’t set a fixed number of ticks, but it defines the preferred count and the chart tries to calculate them accordingly.
 
@@ -155,7 +155,7 @@ This type of axis has a notion of range and it can be used to plot numeric data.
 	#### __Figure 11: Manual range__
 	![](images/radchartview-3d-axes-10.png)
 
-* __Tick origin__: The axis tick positions are determined by the __MajorStep__ and the __TickOrigin__ properties. The ticks will be generated in a way so that a tick is positioned at the given TickOrigin. 
+* __Tick origin__: The axis tick positions are determined by the __MajorStep__ and the __TickOrigin__ properties. The ticks will be generated such that a tick is positioned at the given TickOrigin. 
 
 	#### __[XAML] Example 12: Setting the axis title__
 	{{region xaml-radchartview-3d-axes-11}}	

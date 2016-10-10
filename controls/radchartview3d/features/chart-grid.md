@@ -44,7 +44,7 @@ To set the visibility of the grid and strip lines you can use the following prop
 * __XZGridLinesVisibility__ and __XZStripLinesVisibility__ for the lines in the XZ plane.
 * __YZGridLinesVisibility__ and __YZStripLinesVisibility__ for the lines in the YZ plane.
 
-#### __[XAML] Example 2: Setting the lines visibility__  
+#### __[XAML] Example 2: Setting lines visibility__  
 {{region xaml-radchartview-3d-chartgrid-1}}
 		<telerik:CartesianChart3DGrid XZGridLinesVisibility="All" 
 									  YZGridLinesVisibility="All"
@@ -60,7 +60,7 @@ __CartesianChart3DGrid__ allows you to define custom materials for the grid and 
 
 To set the stroke thickness of the grid lines you can use the __GridLineThickness__ property.
 
-#### __[XAML] Example 3: Setting the stroke thickness__  
+#### __[XAML] Example 3: Setting line stroke thickness__  
 {{region xaml-radchartview-3d-chartgrid-3}}
 	<telerik:CartesianChart3DGrid GridLineThickness="5" />
 {{endregion}}

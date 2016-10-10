@@ -36,7 +36,7 @@ The camera is rotated when you mouse down on the chart and move the mouse. You c
 #### __[XAML] Example 2: Setting the camera angles__
 	<telerik:Chart3DCameraBehavior FirstAngle="300" SecondAngle="80" />
 
-__FirstAngle__ is the angle between the axis to the right and the projection of the line between the camera position and the plot area center onto the horizontal plane. The axis to the right is considered to be the one that goes to the right when one axis goes up and another goes towards the viewer. The horizontal plane is considered to be the plane that is defined by the right axis and the axis that goes towards the viewer.
+__FirstAngle__ is the angle between the axis to the right and the projection of the line between the camera position and the plot area center onto the horizontal plane. The axis to the right is considered to be the one that goes to the right when one axis goes up and another goes toward the viewer. The horizontal plane is considered to be the plane that is defined by the right axis and the axis that goes towards the viewer.
 
 #### __Figure 2: FirstAngle example__
 ![](images/radchartview-3d-behaviors-camera-1.png)
@@ -46,7 +46,7 @@ __SecondAngle__ is the angle between the __UpDirection__ axis and the line betwe
 #### __Figure 3: SecondAngle example__
 ![](images/radchartview-3d-behaviors-camera-2.png)
 
-The camera behavior allows you to define custom key combination that activates the rotation while dragging. You can do that via the __DragToRotateKeyCombinations__ collection.
+The camera behavior allows you to define custom key combinations that activate the rotation while dragging. You can do that via the __DragToRotateKeyCombinations__ collection.
 
 #### __[C#] Example 3: Defining drag-to-rotate key combination__
 	ChartKeyCombination keyCombination = new ChartKeyCombination();
@@ -66,16 +66,16 @@ To change the distance you can use the mouse wheel. You can use the __Distance__
 #### __[XAML] Example 4: Changing the distance__
 	<telerik:Chart3DCameraBehavior Distance="2300" >
 
->The distance has different meaning for the different cameras. When a __PerspectiveCamera__ is in use the distance is the radius of the sphere that the camera is positioned on. When an __OrthographicCamera__ is in use the distance is the width of the camera.
+>The distance has different meaning for different cameras. When a __PerspectiveCamera__ is in use the distance is the radius of the sphere that the camera is positioned on. When an __OrthographicCamera__ is in use the distance is the width of the camera.
 
 ## Changing the field of view angle
 
 To change the field of view you can use the combination between the __Shift__ key and __mouse wheel__. You can use the __FieldOfView__ property to change the field of view manually.
 
+>The field of view angle is available only with a __PerspectiveCamera__.
+
 #### __Figure 5: Changing the camera distance__
 ![](images/radchartview-3d-behaviors-camera-4.png)
-
->The field of view angle is available only with a __PerspectiveCamera__.
 
 #### __[XAML] Example 5: Manually setting the field of view__
 	<telerik:Chart3DCameraBehavior FieldOfView="45" >
@@ -103,7 +103,7 @@ The up direction of the camera is defined by the __UpDirection__ property which 
 
 ## Lights
 
-When the camera behavior is enabled the lights direction is determined by the camera position. So, when you rotate the camera the lights will also be rotated according to the camera. This behavior can be toggled via the __CameraBehavior3D.IsRotationEnabled__ attached property. Its default value is __True__. To avoid rotating the light you can set it to __False__. This is useful when you want to have static lights that illuminate the scene.
+When the camera behavior is enabled the lights direction is determined by the camera position. So, when you rotate the camera the lights will also be rotated accordingly to the camera. This behavior can be toggled via the __CameraBehavior3D.IsRotationEnabled__ attached property. Its default value is __True__. To avoid rotating the light you can set it to __False__. This is useful when you want to have static lights that illuminate the scene.
 
 #### __[XAML] Example 8: Disabling the automatic rotation of a light in XAML__
 {{region xaml-radchartview-3d-lights-2}}

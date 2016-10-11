@@ -26,8 +26,8 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 
 #### __XAML__
 
-{{region radchart-populating-with-data-data-binding-to-many-chart-areas_0}}
-	<telerikChart:RadChart x:Name="radChart" UseDefaultLayout="False">
+{{region xaml-radchart-populating-with-data-data-binding-to-many-chart-areas_0}}
+	<telerik:RadChart x:Name="radChart" UseDefaultLayout="False">
 	    <Grid Margin="10,10,0,20">
 	        <Grid.RowDefinitions>
 	            <RowDefinition Height="Auto" />
@@ -37,48 +37,50 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	            <ColumnDefinition Width="*" />
 	            <ColumnDefinition Width="*" />
 	        </Grid.ColumnDefinitions>
-	        <telerikCharting:ChartTitle Margin="0,0,0,10" HorizontalAlignment="Center" Content="Year 2008" 
-	            Grid.Row="0" Grid.Column="0" />
-	        <telerikCharting:ChartArea x:Name="webBrowsersShare2008Chart" Grid.Row="1" Grid.Column="0" />
-	        <telerikCharting:ChartTitle HorizontalAlignment="Center" Content="Year 2009"
-	            Margin="0,0,0,10" Grid.Row="0" Grid.Column="1" />
-	        <telerikCharting:ChartArea x:Name="webBrowsersShare2009Chart" 
-	            Margin="0,0,0,15" Grid.Row="1" Grid.Column="1" />
+	        <telerik:ChartTitle Grid.Row="0" Grid.Column="0"
+	                            Margin="0,0,0,10" HorizontalAlignment="Center"
+	                            Content="Year 2008" />
+	        <telerik:ChartTitle Grid.Row="0" Grid.Column="1"
+	                            Margin="0,0,0,10" HorizontalAlignment="Center"
+	                            Content="Year 2009" />
+	        <telerik:ChartArea x:Name="webBrowsersShare2008Chart" Grid.Row="1" Grid.Column="0" />
+	        <telerik:ChartArea x:Name="webBrowsersShare2009Chart" Grid.Row="1"
+	                           Grid.Column="1" Margin="0,0,0,15" />
 	    </Grid>
 	
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping CollectionIndex="0" ChartAreaName="webBrowsersShare2008Chart">
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:DoughnutSeriesDefinition />
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping ChartAreaName="webBrowsersShare2008Chart" CollectionIndex="0">
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:DoughnutSeriesDefinition />
+	            </telerik:SeriesMapping.SeriesDefinition>
 	
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="Value" DataPointMember="YValue" />
-	                <telerikCharting:ItemMapping FieldName="Description" DataPointMember="Label" />
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	        <telerikCharting:SeriesMapping CollectionIndex="1" ChartAreaName="webBrowsersShare2009Chart">
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:DoughnutSeriesDefinition />
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="Value" DataPointMember="YValue" />
-	                <telerikCharting:ItemMapping FieldName="Description" DataPointMember="Label" />
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	</telerikChart:RadChart>
-	{{endregion}}
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Value" />
+	                <telerik:ItemMapping DataPointMember="Label" FieldName="Description" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	        <telerik:SeriesMapping ChartAreaName="webBrowsersShare2009Chart" CollectionIndex="1">
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:DoughnutSeriesDefinition />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Value" />
+	                <telerik:ItemMapping DataPointMember="Label" FieldName="Description" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-populating-with-data-data-binding-to-many-chart-areas_1}}
+{{region cs-radchart-populating-with-data-data-binding-to-many-chart-areas_1}}
 	//Creating new instance of RadChart control
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	radChart.UseDefaultLayout = false;
-	....
+	//....
 	//Creating Grid with two rows and two columns to host two ChartTitles and two ChartAreas
 	Grid chartLayout = new Grid();
 	chartLayout.Margin = new Thickness( 10, 10, 0, 20 );
@@ -129,17 +131,17 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue ) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Description", DataPointMember.Label ) );
 	radChart.SeriesMappings.Add( seriesMapping );
-	....
-	{{endregion}}
+	//....
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-data-binding-to-many-chart-areas_2}}
-	'Creating new instance of RadChart control
+{{region vb-radchart-populating-with-data-data-binding-to-many-chart-areas_2}}
+	'Creating new instance of RadChart control'
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
-	....
+	'....'
 	'Creating Grid with two rows and two columns to host two ChartTitles and two ChartAreas'
 	Dim chartLayout As New Grid()
 	chartLayout.Margin = New Thickness(10, 10, 0, 20)
@@ -190,8 +192,8 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	seriesMapping.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
 	seriesMapping.ItemMappings.Add(New ItemMapping("Description", DataPointMember.Label))
 	radChart.SeriesMappings.Add(seriesMapping)
-	....
-	{{endregion}}
+	'....'
+{{endregion}}
 
 
 

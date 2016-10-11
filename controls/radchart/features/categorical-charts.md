@@ -28,76 +28,76 @@ To create categorical charts, you have to map the category values to the __XCate
 
 #### __XAML__
 
-{{region radchart-features-categorical-charts_0}}
-	<telerikCharting:DataPoint YValue="41" XCategory="Apples"/>
-	<telerikCharting:DataPoint YValue="33" XCategory="Oranges"/>
-	<telerikCharting:DataPoint YValue="25" XCategory="Grapes"/>
-	{{endregion}}
+{{region xaml-radchart-features-categorical-charts_0}}
+	<telerik:DataPoint XCategory="Apples" YValue="41" />
+	<telerik:DataPoint XCategory="Oranges" YValue="33" />
+	<telerik:DataPoint XCategory="Grapes" YValue="25" />
+{{endregion}}
 
 #### __C#__
 
-{{region radchart-features-categorical-charts_1}}
+{{region cs-radchart-features-categorical-charts_1}}
 	DataSeries dataSeries = new DataSeries();
 	dataSeries.Definition = new BarSeriesDefinition();
 	dataSeries.Add( new DataPoint() { YValue = 41, XCategory = "Apples" } );
 	dataSeries.Add( new DataPoint() { YValue = 33, XCategory = "Oranges" } );
 	dataSeries.Add( new DataPoint() { YValue = 25, XCategory = "Grapes" } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( dataSeries );
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
-{{region radchart-features-categorical-charts_2}}
+{{region vb-radchart-features-categorical-charts_2}}
 	Dim dataSeries As New DataSeries()
 	dataSeries.Definition = New BarSeriesDefinition()
 	Dim dataPoint As New DataPoint()
 	dataPoint.YValue = 41
 	dataPoint.XCategory = "Apples"
-	dataSeries.Add( dataPoint )
+	dataSeries.Add(dataPoint)
 	dataPoint = New DataPoint()
 	dataPoint.YValue = 33
 	dataPoint.XCategory = "Oranges"
-	dataSeries.Add( dataPoint )
+	dataSeries.Add(dataPoint)
 	dataPoint = New DataPoint()
 	dataPoint.YValue = 25
 	dataPoint.XCategory = "Grapes"
-	dataSeries.Add( dataPoint )
-	radChart.DefaultView.ChartArea.DataSeries.Add( dataSeries )
-	{{endregion}}
+	dataSeries.Add(dataPoint)
+	radChart.DefaultView.ChartArea.DataSeries.Add(dataSeries)
+{{endregion}}
 
 If you want to use data binding, then you have to set the __DataPointMember__ to __XCategory__ instead of __XValue__.
 
 #### __C#__
 
-{{region radchart-features-categorical-charts_3}}
+{{region cs-radchart-features-categorical-charts_3}}
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.SeriesDefinition = new BarSeriesDefinition();
 	ItemMapping itemMapping = new ItemMapping();
 	itemMapping.DataPointMember = DataPointMember.XCategory;
 	itemMapping.FieldName = "Fruit";
-	seriesMapping.ItemMappings.Add( itemMapping );
+	seriesMapping.ItemMappings.Add(itemMapping);
 	itemMapping = new ItemMapping();
 	itemMapping.DataPointMember = DataPointMember.YValue;
 	itemMapping.FieldName = "Orders";
-	seriesMapping.ItemMappings.Add( itemMapping );
-	radChart.SeriesMappings.Add( seriesMapping );
-	{{endregion}}
+	seriesMapping.ItemMappings.Add(itemMapping);
+	radChart.SeriesMappings.Add(seriesMapping);
+{{endregion}}
 
 #### __VB.NET__
 
-{{region radchart-features-categorical-charts_4}}
+{{region vb-radchart-features-categorical-charts_4}}
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.SeriesDefinition = New BarSeriesDefinition()
 	Dim itemMapping As New ItemMapping()
 	itemMapping.DataPointMember = DataPointMember.XCategory
 	itemMapping.FieldName = "Fruit"
-	seriesMapping.ItemMappings.Add( itemMapping )
+	seriesMapping.ItemMappings.Add(itemMapping)
 	itemMapping = New ItemMapping()
 	itemMapping.DataPointMember = DataPointMember.YValue
 	itemMapping.FieldName = "Orders"
-	seriesMapping.ItemMappings.Add( itemMapping )
-	radChart.SeriesMappings.Add( seriesMapping )
-	{{endregion}}
+	seriesMapping.ItemMappings.Add(itemMapping)
+	radChart.SeriesMappings.Add(seriesMapping)
+{{endregion}}
 
 If you are looking for more data binding options take a look at the [Populating with Data Overview]({%slug radchart-populating-with-data-overview%}) topic.
 

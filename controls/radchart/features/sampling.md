@@ -10,8 +10,6 @@ position: 24
 
 # Sampling
 
-
-
 >__Sampling__ is __available__ in data binding scenarios __only__. __Sampling__ is also __not applicable__ when plotting data for properties of non-CLS compliant types, like __uint__.
 
 When the chart is populated by thousands of items, the visual representation might not be that clear. It is possible that there are two or more __DataPoints__ shown with a very close Y and X values. This is when sampling comes in handy. The chart combines the items, so that the __DataPoints__ are limited to a certain number (__200__ by default). The sampling engine does not detect/determine whether the datapoints will be on similar pixel coordinates. Instead, it visualizes a subset of the original data. For example, if you have 1000 points, 95% of which are clustered together, and you choose a sampling threshold of 300 points, 95% of these 300 points will be clustered as well. In such a scenario, one possible option is to use [Zooming and Scrolling]({%slug radchart-features-zooming-and-scrolling%}). 
@@ -20,15 +18,13 @@ Determining the number of __DataPoints__ to be displayed is done by setting the 
 
 #### __XAML__
 
-{{region radchart-features-sampling_0}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.SamplingSettings>
-	        <telerikCharting:SamplingSettings SamplingThreshold="100" />
-	    </telerikChart:RadChart.SamplingSettings>
-	</telerikChart:RadChart>
-	{{endregion}}
-
-
+{{region xaml-radchart-features-sampling_0}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SamplingSettings>
+	        <telerik:SamplingSettings SamplingThreshold="100" />
+	    </telerik:RadChart.SamplingSettings>
+	</telerik:RadChart>
+{{endregion}}
 
 >tipSet the __SamplingThreshold__ to __0__ to disable the feature.
 
@@ -56,14 +52,14 @@ Here is an example:
 
 #### __XAML__
 
-{{region radchart-features-sampling_1}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.SamplingSettings>
-	        <telerikCharting:SamplingSettings SamplingFunction="Average"
-	                                          SamplingThreshold="100" />
-	    </telerikChart:RadChart.SamplingSettings>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-sampling_1}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SamplingSettings>
+	        <telerik:SamplingSettings SamplingFunction="Average"
+	                                  SamplingThreshold="100" />
+	</telerik:RadChart.SamplingSettings>
+	k:RadChart>
+{{endregion}}
 
 
 
@@ -91,83 +87,83 @@ These steps are made by the static class Statistics:
 
 #### __C#__
 
-{{region radchart-features-sampling_2}}
+{{region cs-radchart-features-sampling_2}}
 	public static class Statistics
-    {
-        public static double StdDev<TSource>(IEnumerable<TSource> source, Func<TSource, MyClass> selector)
-        {
-            return StdDev<TSource, MyClass>(source, selector);
-        }
-
-        public static double StdDev<TSource, TResult>(IEnumerable<TSource> source, Func<TSource, TResult> selector)
-            where TResult : MyClass
-        {
-            int itemCount = source.Count();
-            if (itemCount > 1)
-            {
-                IEnumerable<double> values = from i in source select Convert.ToDouble(selector(i).Y);
-
-                double sum = SumAvg(values);
-
-                return Math.Sqrt(sum / (itemCount - 1));
-            }
-
-            return 0;
-        }
-
-        private static double SumAvg(IEnumerable<double> values)
-        {
-            double average = values.Average();
-            double sum = 0;
-
-            foreach (double item in values)
-            {
-                sum += Math.Pow(item - average, 2);
-            }
-
-            return sum;
-        }
-    }
-	{{endregion}}
+	{
+	    public static double StdDev<TSource>(IEnumerable<TSource> source, Func<TSource, MyClass> selector)
+	    {
+	        return StdDev<TSource, MyClass>(source, selector);
+	    }
+	
+	    public static double StdDev<TSource, TResult>(IEnumerable<TSource> source, Func<TSource, TResult> selector)
+	        where TResult : MyClass
+	    {
+	        int itemCount = source.Count();
+	        if (itemCount > 1)
+	        {
+	            IEnumerable<double> values = from i in source select Convert.ToDouble(selector(i).Y);
+	
+	            double sum = SumAvg(values);
+	
+	            return Math.Sqrt(sum / (itemCount - 1));
+	        }
+	
+	        return 0;
+	    }
+	
+	    private static double SumAvg(IEnumerable<double> values)
+	    {
+	        double average = values.Average();
+	        double sum = 0;
+	
+	        foreach (double item in values)
+	        {
+	            sum += Math.Pow(item - average, 2);
+	        }
+	
+	        return sum;
+	    }
+	}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-sampling_3}}
+{{region vb-radchart-features-sampling_3}}
 	Public NotInheritable Class Statistics
-    Private Sub New()
-    End Sub
-    Public Shared Function StdDev(Of TSource)(ByVal source As IEnumerable(Of TSource), ByVal selector As Func(Of TSource, MyClass)) As Double
-          Return StdDev(Of TSource, MyClass)(source, selector)
-    End Function
-
-    Public Shared Function StdDev(Of TSource, TResult As [MyClass])(ByVal source As IEnumerable(Of TSource), ByVal selector As Func(Of TSource, TResult)) As Double
-          Dim itemCount As Integer = source.Count()
-          If itemCount > 1 Then
-                Dim values As IEnumerable(Of Double) = From i In source
-                                                       Select Convert.ToDouble(selector(i).Y)
-
-                Dim sum As Double = SumAvg(values)
-
-                Return Math.Sqrt(sum / (itemCount - 1))
-          End If
-
-          Return 0
-    End Function
-
-    Private Shared Function SumAvg(ByVal values As IEnumerable(Of Double)) As Double
-          Dim average As Double = values.Average()
-          Dim sum As Double = 0
-
-          For Each item As Double In values
-                sum += Math.Pow(item - average, 2)
-          Next item
-
-          Return sum
-    End Function
+	    Private Sub New()
+	    End Sub
+	    Public Shared Function StdDev(Of TSource)(ByVal source As IEnumerable(Of TSource), ByVal selector As Func(Of TSource, [MyClass])) As Double
+	        Return StdDev(Of TSource, [MyClass])(source, selector)
+	    End Function
+	
+	    Public Shared Function StdDev(Of TSource, TResult As [MyClass])(ByVal source As IEnumerable(Of TSource), ByVal selector As Func(Of TSource, TResult)) As Double
+	        Dim itemCount As Integer = source.Count()
+	        If itemCount > 1 Then
+	            Dim values As IEnumerable(Of Double) = From i In source
+	                                                   Select Convert.ToDouble(selector(i).Y)
+	
+	            Dim sum As Double = SumAvg(values)
+	
+	            Return Math.Sqrt(sum / (itemCount - 1))
+	        End If
+	
+	        Return 0
+	    End Function
+	
+	    Private Shared Function SumAvg(ByVal values As IEnumerable(Of Double)) As Double
+	        Dim average As Double = values.Average()
+	        Dim sum As Double = 0
+	
+	        For Each item As Double In values
+	            sum += Math.Pow(item - average, 2)
+	        Next item
+	
+	        Return sum
+	    End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -175,47 +171,47 @@ The real standard deviation function inherits *Telerik.Windows.Data.EnumerableSe
 
 #### __C#__
 
-{{region radchart-features-sampling_4}}
+{{region cs-radchart-features-sampling_4}}
 	public class StandardDeviationFunction : EnumerableSelectorAggregateFunction
-    {
-        protected override string AggregateMethodName
-        {
-            get
-            {
-                return "StdDev";
-            }
-        }
-
-        protected override Type ExtensionMethodsType
-        {
-            get
-            {
-                return typeof(Statistics);
-            }
-        }
-    }
-	{{endregion}}
+	{
+	    protected override string AggregateMethodName
+	    {
+	        get
+	        {
+	            return "StdDev";
+	        }
+	    }
+	
+	    protected override Type ExtensionMethodsType
+	    {
+	        get
+	        {
+	            return typeof(Statistics);
+	        }
+	    }
+	}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-sampling_5}}
+{{region vb-radchart-features-sampling_5}}
 	Public Class StandardDeviationFunction
-      Inherits EnumerableSelectorAggregateFunction
-            Protected Overrides ReadOnly Property AggregateMethodName() As String
-                  Get
-                        Return "StdDev"
-                  End Get
-            End Property
-
-            Protected Overrides ReadOnly Property ExtensionMethodsType() As Type
-                  Get
-                        Return GetType(Statistics)
-                  End Get
-            End Property
+	    Inherits EnumerableSelectorAggregateFunction
+	    Protected Overrides ReadOnly Property AggregateMethodName() As String
+	        Get
+	            Return "StdDev"
+	        End Get
+	    End Property
+	
+	    Protected Overrides ReadOnly Property ExtensionMethodsType() As Type
+	        Get
+	            Return GetType(Statistics)
+	        End Get
+	    End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -223,48 +219,49 @@ The Chart itself is populated by [List of Business Object]({%slug radchart-popul
 
 #### __C#__
 
-{{region radchart-features-sampling_6}}
-	...
-	InitializeComponent();
-	RadChar1.DefaultView.ChartArea.AxisX.LabelStep = 4;
-	List<MyClass> data = new List<MyClass>();
+{{region cs-radchart-features-sampling_6}}
+	public Sample ()
+	{      
+	    InitializeComponent();
+	    radChart.DefaultView.ChartArea.AxisX.LabelStep = 4;
+	    List<MyClass> data = new List<MyClass>();
 	
-	            for (int i = 0; i < 1000; i++)
-	            {
-	                data.Add(new MyClass()
-	                {
-	                    Y  = i
-	                });
-	            }
+	    for (int i = 0; i < 1000; i++)
+	    {
+	        data.Add(new MyClass()
+	        {
+	            Y  = i
+	        });
+	    }
 	
-	  RadChar1.ItemsSource = data;
-	
-	...
+	    radChart.ItemsSource = data;
+		    }
 	
 	public class MyClass
 	{
-	public double Y { get; set; }
+	    public double Y { get; set; }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-sampling_7}}
-	...
-	InitializeComponent()
-	RadChar1.DefaultView.ChartArea.AxisX.LabelStep = 4
-	Dim data As New List(Of MyClass)()
-	For i As Integer = 0 To 999
-	data.Add(New [MyClass]() With {.Y = i})
-	Next i
-	RadChar1.ItemsSource = data
-	...
+{{region vb-radchart-features-sampling_7}}
+	Private Sub New()
+	    InitializeComponent()
+	    RadChar1.DefaultView.ChartArea.AxisX.LabelStep = 4
+	    Dim data As New List(Of [MyClass])()
+	    For i As Integer = 0 To 999
+	        data.Add(New [MyClass]() With {.Y = i})
+	    Next i
+	    RadChar1.ItemsSource = data
+	End Sub
+	
 	Public Class [MyClass]
-	Public Property Y() As Double
+	    Public Property Y() As Double
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -274,24 +271,24 @@ Finally the XAML:
 
 #### __XAML__
 
-{{region radchart-features-sampling_8}}
+{{region xaml-radchart-features-sampling_8}}
 	<telerik:RadChart Name="RadChar1">
-        <telerik:RadChart.DefaultSeriesDefinition>
-            <telerik:ScatterSeriesDefinition ShowItemLabels="False" ShowItemToolTips="False" />
-        </telerik:RadChart.DefaultSeriesDefinition>
-        <telerik:RadChart.SeriesMappings>
-            <telerik:SeriesMapping>
-                <telerik:SeriesMapping.ItemMappings>
-                    <telerik:ItemMapping DataPointMember="YValue" FieldName="Y">
-                        <telerik:ItemMapping.CustomSamplingFunction>
-                            <local:StandardDeviationFunction />
-                        </telerik:ItemMapping.CustomSamplingFunction>
-                    </telerik:ItemMapping>
-                </telerik:SeriesMapping.ItemMappings>
-            </telerik:SeriesMapping>
-        </telerik:RadChart.SeriesMappings>
-    </telerik:RadChart>
-	{{endregion}}
+	            <telerik:RadChart.DefaultSeriesDefinition>
+	                <telerik:ScatterSeriesDefinition ShowItemLabels="False" ShowItemToolTips="False" />
+	            </telerik:RadChart.DefaultSeriesDefinition>
+	            <telerik:RadChart.SeriesMappings>
+	                <telerik:SeriesMapping>
+	                    <telerik:SeriesMapping.ItemMappings>
+	                        <telerik:ItemMapping DataPointMember="YValue" FieldName="Y">
+	                            <telerik:ItemMapping.CustomSamplingFunction>
+	                                <local:StandardDeviationFunction />
+	                            </telerik:ItemMapping.CustomSamplingFunction>
+	                        </telerik:ItemMapping>
+	                    </telerik:SeriesMapping.ItemMappings>
+	                </telerik:SeriesMapping>
+	            </telerik:RadChart.SeriesMappings>
+	        </telerik:RadChart>
+{{endregion}}
 
 
 

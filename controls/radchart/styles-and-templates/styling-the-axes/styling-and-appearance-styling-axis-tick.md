@@ -22,13 +22,13 @@ Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ co
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-axis-tick_0}}
+{{region xaml-radchart-styling-and-appearance-styling-axis-tick_0}}
 	<Grid x:Name="LayoutRoot"
 	      Background="White">
-	    ...
+	    <!--...-->
 	    <Line />
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 To go back to the design view select *View -> Active Document View -> Design View* from the menu. In the 'Objects and Timeline' pane select the newly created __Line__ control. And select *Object -> Edit Style -> Create Empty* from the menu*. *You will be prompted for the name of the style and where to be placed within your application.
@@ -43,18 +43,18 @@ After finishing with the changes, it is time to set the style to the __TickLineS
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-axis-tick_2}}
-	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TickLineStyle = this.Resources[ "AxisXTickStyle" ] as Style;
-	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TickLineStyle = this.Resources[ "AxisYTickStyle" ] as Style;
-	{{endregion}}
+{{region cs-radchart-styling-and-appearance-styling-axis-tick_2}}
+	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TickLineStyle = this.Resources["AxisXTickStyle"] as Style;
+	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TickLineStyle = this.Resources["AxisYTickStyle"] as Style;
+{{endregion}}
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-axis-tick_3}}
-	Me.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TickLineStyle = TryCast(Me.Resources("AxisXTickStyle"), Style)
-	Me.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TickLineStyle = TryCast(Me.Resources("AxisYTickStyle"), Style)
-	{{endregion}}
+{{region vb-radchart-styling-and-appearance-styling-axis-tick_3}}
+	Me.RadChart.DefaultView.ChartArea.AxisX.AxisStyles.TickLineStyle = TryCast(Me.Resources("AxisXTickStyle"), Style)
+	Me.RadChart.DefaultView.ChartArea.AxisY.AxisStyles.TickLineStyle = TryCast(Me.Resources("AxisYTickStyle"), Style)
+{{endregion}}
 
 
 
@@ -67,18 +67,14 @@ Here is the final XAML for the __Styles__:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-axis-tick_4}}
-	<Style x:Key="AxisXTickStyle"
-	       TargetType="Line">
-	    <Setter Property="Stroke"
-	            Value="Orange" />
+{{region xaml-radchart-styling-and-appearance-styling-axis-tick_4}}
+	<Style x:Key="AxisXTickStyle" TargetType="Line">
+	    <Setter Property="Stroke" Value="Orange" />
 	</Style>
-	<Style x:Key="AxisYTickStyle"
-	       TargetType="Line">
-	    <Setter Property="Stroke"
-	            Value="Orange" />
+	<Style x:Key="AxisYTickStyle" TargetType="Line">
+	    <Setter Property="Stroke" Value="Orange" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 

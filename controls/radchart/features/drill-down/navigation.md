@@ -20,7 +20,7 @@ Here is an example of two buttons, which call the respective methods.
 
 #### __XAML__
 
-{{region radchart-features-drill-down-navigation_0}}
+{{region xaml-radchart-features-drill-down-navigation_0}}
 	<StackPanel>
 	    <Button x:Name="BackButton"
 	            Content="Back"
@@ -29,34 +29,34 @@ Here is an example of two buttons, which call the respective methods.
 	            Content="Forward"
 	            Click="ForwardButton_Click" />
 	</StackPanel>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-drill-down-navigation_1}}
-	private void BackButton_Click( object sender, RoutedEventArgs e )
+{{region cs-radchart-features-drill-down-navigation_1}}
+	private void BackButton_Click(object sender, RoutedEventArgs e)
 	{
 	    this.radChart.HierarchyManager.Back();
 	}
-	private void ForwardButton_Click( object sender, RoutedEventArgs e )
+	private void ForwardButton_Click(object sender, RoutedEventArgs e)
 	{
 	    this.radChart.HierarchyManager.Forward();
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-drill-down-navigation_2}}
+{{region vb-radchart-features-drill-down-navigation_2}}
 	Private Sub BackButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	 Me.radChart.HierarchyManager.Back()
+	    Me.radChart.HierarchyManager.Back()
 	End Sub
 	Private Sub ForwardButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	 Me.radChart.HierarchyManager.Forward()
+	    Me.radChart.HierarchyManager.Forward()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 

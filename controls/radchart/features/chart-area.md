@@ -40,50 +40,50 @@ When you set the label format behavior, all the labels (axes, series item labels
 
 #### __XAML__
 
-{{region radchart-features-chart-area_0}}
-	<telerikChart:radChart >
-	    <telerikChart:radChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            ....
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea LabelFormatBehavior="HumanReadable">
-	                    <telerikCharting:ChartArea.AxisX>
-	                        <telerikCharting:AxisX IsDateTime="True" DefaultLabelFormat="MMM"
-	                            LayoutMode="Between" >
-	                        </telerikCharting:AxisX>
-	                    </telerikCharting:ChartArea.AxisX>
-	                    <telerikCharting:ChartArea.DataSeries>
-	                        ....
-	                    </telerikCharting:ChartArea.DataSeries>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:radChart.DefaultView>
-	</telerikChart:radChart>
-	{{endregion}}
+{{region xaml-radchart-features-chart-area_0}}
+	<telerik:RadChart>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <!--  ....  -->
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea LabelFormatBehavior="HumanReadable">
+	                    <telerik:ChartArea.AxisX>
+	                        <telerik:AxisX DefaultLabelFormat="MMM"
+	                                       IsDateTime="True"
+	                                       LayoutMode="Between" />
+	                    </telerik:ChartArea.AxisX>
+	                    <telerik:ChartArea.DataSeries>
+	                    <!--  ....  -->
+	                    </telerik:ChartArea.DataSeries>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 #### __C#__
 
-{{region radchart-features-chart-area_1}}
-	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
+{{region cs-radchart-features-chart-area_1}}
+	RadChart radChart = new RadChart();
 	
 	radChart.DefaultView.ChartArea.LabelFormatBehavior = LabelFormatBehavior.HumanReadable;
 	radChart.DefaultView.ChartArea.AxisX.IsDateTime = true;
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "MMM";
 	radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Between;
-	...
-	{{endregion}}
+	//...
+{{endregion}}
 
 #### __VB.NET__
 
-{{region radchart-features-chart-area_2}}
+{{region vb-radchart-features-chart-area_2}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
-	....
+	'....'
 	radChart.DefaultView.ChartArea.LabelFormatBehavior = LabelFormatBehavior.HumanReadable
 	radChart.DefaultView.ChartArea.AxisX.IsDateTime = True
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "MMM"
 	radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Between
-	{{endregion}}
+{{endregion}}
 
 On the image below you can see how the __Y-Axis__ and the series item labels are formatted when __LayoutFormatBehavior__ is set to __HumanReadable__, while the __X-Axis__ is formatted using custom [Format Expressions]({%slug radchart-features-format-expressions%}):
 

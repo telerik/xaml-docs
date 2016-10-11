@@ -25,20 +25,23 @@ The example below shows a text box with some details when a candle is clicked. _
 
 #### __XAML__
 
-{{region radchart-features-interactivity_0}}
-	<telerikCharting:ChartDefaultView.ChartArea>
-	    <telerikCharting:ChartArea ItemClick="ChartArea_ItemClick">
-	    </telerikCharting:ChartArea>
-	</telerikCharting:ChartDefaultView.ChartArea>
-	{{endregion}}
+{{region xaml-radchart-features-interactivity_0}}
+	<telerik:ChartDefaultView.ChartArea>
+	    <telerik:ChartArea ItemClick="ChartArea_ItemClick" />
+	</telerik:ChartDefaultView.ChartArea>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-interactivity_1}}
-	radChart.DefaultView.ChartArea.ItemClick += new EventHandler<ChartItemClickEventArgs>( ChartArea_ItemClick );
-	...
+{{region cs-radchart-features-interactivity_1}}
+	public Sample()
+	{       
+	    InitializeComponent();
+	    radChart.DefaultView.ChartArea.ItemClick += new EventHandler<ChartItemClickEventArgs>( ChartArea_ItemClick );
+	}
+	
 	private void ChartArea_ItemClick( object sender, ChartItemClickEventArgs e )
 	{
 	    TradeData td = e.DataPoint.DataItem as TradeData;
@@ -46,21 +49,20 @@ The example below shows a text box with some details when a candle is clicked. _
 	        "Trading details for {0:d}:\n\nOpen\t: {1:c}\nHigh\t: {2:c}\nLow\t: {3:c}\nClose\t: {4:c}\n\nVolume\t: {5}",
 	        td.FromDate, td.Open, td.High, td.Low, td.Close, td.Volume ), td.Emission, MessageBoxButton.OK );
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-interactivity_2}}
-	AddHandler radChart.DefaultView.ChartArea.ItemClick, AddressOf ChartArea_ItemClick
-	...
+{{region vb-radchart-features-interactivity_2}}
+	      
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
 	    Dim td As TradeData = TryCast(e.DataPoint.DataItem, TradeData)
 	    MessageBox.Show(String.Format("Trading details for {0:d}:" & vbLf & vbLf & "Open" & vbTab & ": {1:c}" & vbLf & "High" & vbTab & ": {2:c}" & vbLf & "Low" & vbTab & ": {3:c}" & vbLf & "Close" & vbTab & ": {4:c}" & vbLf & vbLf & "Volume" & vbTab & ": {5}", td.FromDate, td.Open, td.High, td.Low, td.Close, _
 	     td.Volume), td.Emission, MessageBoxButton.OK)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -74,30 +76,30 @@ The latest version of the Chart control includes an enhancement of the Selection
 
 #### __C#__
 
-{{region radchart-features-interactivity_3}}
+{{region cs-radchart-features-interactivity_3}}
 	private void Button_Click(object sender, RoutedEventArgs e)
-	  {
-	    foreach (DataPoint dataPoint1 in Chart1.DefaultView.ChartArea.DataSeries[0])
+	{
+	    foreach (DataPoint dataPoint1 in this.radChart.DefaultView.ChartArea.DataSeries[0])
 	    {
-	      if(dataPoint1.YValue==154.0)
-	      Chart1.DefaultView.ChartArea.SelectItem(dataPoint1);
-	    } 
-	  }
-	{{endregion}}
+	        if (dataPoint1.YValue == 154.0)
+	            this.radChart.DefaultView.ChartArea.SelectItem(dataPoint1);
+	    }
+	}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-interactivity_4}}
+{{region vb-radchart-features-interactivity_4}}
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
-	 For Each dataPoint1 As DataPoint In Chart1.DefaultView.ChartArea.DataSeries(0)
-	  If dataPoint1.YValue = 154.0 Then
-	   Chart1.DefaultView.ChartArea.SelectItem(dataPoint1)
-	  End If
-	 Next
+	    For Each dataPoint1 As DataPoint In Chart1.DefaultView.ChartArea.DataSeries(0)
+	        If dataPoint1.YValue = 154.0 Then
+	            Chart1.DefaultView.ChartArea.SelectItem(dataPoint1)
+	        End If
+	    Next
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

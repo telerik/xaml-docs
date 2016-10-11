@@ -30,44 +30,52 @@ The following code creates the Chart part of the PDF document:
 
 #### __C#__
 
-{{region radchart-features-export-to-pdf_0}}
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
+{{region cs-radchart-features-export-to-pdf_0}}
+	Telerik.Windows.Documents.Model.Section section = new Telerik.Windows.Documents.Model.Section();
+	Telerik.Windows.Documents.Model.Paragraph paragraph = new Telerik.Windows.Documents.Model.Paragraph();
 	BitmapImage bi = new BitmapImage();
 	
-	 using (MemoryStream ms = new MemoryStream())
-	   {
-	    RadChart1.ExportToImage(ms, new PngBitmapEncoder());
-	    bi.SetSource(ms);
-	    }
+	using (MemoryStream ms = new MemoryStream())
+	{
+	    radChart.ExportToImage(ms, new PngBitmapEncoder());
 	
-	  ImageInline image = new ImageInline(new WriteableBitmap(bi)) { Width = 700, Height = 500 };
+	    bi.BeginInit();
+	    bi.StreamSource = ms;
+	    bi.EndInit();
+	
+	}
+	
+	Telerik.Windows.Documents.Model.ImageInline image = new Telerik.Windows.Documents.Model.ImageInline(new WriteableBitmap(bi)) { Width = 700, Height = 500 };
 	   paragraph.Inlines.Add(image);
 	   section.Blocks.Add(paragraph);
 	   document.Sections.Add(section);
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-export-to-pdf_1}}
-	    Dim section As New Section()
-	    Dim paragraph As New Paragraph()
-	    Dim bi As New BitmapImage()
+{{region vb-radchart-features-export-to-pdf_1}}
+	Dim section As New Telerik.Windows.Documents.Model.Section()
+	Dim paragraph As New Telerik.Windows.Documents.Model.Paragraph()
+	Dim bi As New BitmapImage()
 	
 	Using ms As New MemoryStream()
-	RadChart1.ExportToImage(ms, New PngBitmapEncoder())
-	bi.SetSource(ms)
-	      End Using
+	    radChart.ExportToImage(ms, New PngBitmapEncoder())
 	
-	    Dim image As New ImageInline(New WriteableBitmap(bi))
-	      700, Height = 500
-	      Width = 700, Height
+	    bi.BeginInit()
+	    bi.StreamSource = ms
+	
+	    bi.EndInit()
+	End Using
+	
+	Dim image As New Telerik.Windows.Documents.Model.ImageInline(New WriteableBitmap(bi)) With { _
+	    .Width = 700, _
+	    .Height = 500 _
+	}
 	paragraph.Inlines.Add(image)
 	section.Blocks.Add(paragraph)
-	document.Sections.Add(section)
-	{{endregion}}
+{{endregion}}
 
 
 As for the grid part of the constructed document – all you need to do is create a second __Section__ element and construct __Table__ with the respective __TableRow__/ __TableCell__ elements. We will not go into details as you may find them as well as the source listing in this [online example](http://demos.telerik.com/silverlight/#GridView/PrintAndExportWithRadDocument) and this blog post [here](http://blogs.telerik.com/vladimirenchev/posts/10-11-11/pdf_export_with_radgridview_for_silverlight_q3_2010.aspx).
@@ -76,51 +84,57 @@ Now that the document model is ready, you can add a Button that will function as
 
 #### __C#__
 
-{{region radchart-features-export-to-pdf_4}}
+{{region cs-radchart-features-export-to-pdf_4}}
 	private void Export_Click(object sender, System.Windows.RoutedEventArgs e)
-    {
-        SaveFileDialog dialog = new SaveFileDialog();
-        dialog.DefaultExt = "*.pdf";
-        dialog.Filter = "Adobe PDF Document (*.pdf)|*.pdf";
-
-        if (dialog.ShowDialog() == true)
-        {
-            {
-                RadDocument document = this.CreateDocument();
-                document.LayoutMode = DocumentLayoutMode.Paged;
-                document.Measure(RadDocument.MAX_DOCUMENT_SIZE);
-                document.Arrange(new RectangleF(PointF.Empty, document.DesiredSize));
-
-                PdfFormatProvider provider = new PdfFormatProvider();
-
-                using (Stream output = dialog.OpenFile())
-                {
-                    provider.Export(document, output);
-                }
-            }
-        }
-    }
-	{{endregion}}
+	        {
+	            SaveFileDialog dialog = new SaveFileDialog();
+	            dialog.DefaultExt = "*.pdf";
+	            dialog.Filter = "Adobe PDF Document (*.pdf)|*.pdf";
+	
+	            if (dialog.ShowDialog() == true)
+	            {
+	                {
+	                    RadDocument document = this.CreateDocument();
+	                    document.LayoutMode = DocumentLayoutMode.Paged;
+	                    document.Measure(RadDocument.MAX_DOCUMENT_SIZE);
+	                    document.Arrange(new RectangleF(PointF.Empty, document.DesiredSize));
+	
+	                    Telerik.Windows.Documents.FormatProviders.Pdf.PdfFormatProvider provider = 
+	                        new Telerik.Windows.Documents.FormatProviders.Pdf.PdfFormatProvider();                            
+	
+	                    using (Stream output = dialog.OpenFile())
+	                    {
+	                        provider.Export(document, output);
+	                    }
+	                }
+	            }
+	        }
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-export-to-pdf_5}}
-    Private Sub Export_Click(ByVal sender As Object, ByVal e As System.Windows.RoutedEventArgs)
-        Dim dialog As New SaveFileDialog()
-        dialog.DefaultExt = "*.pdf"
-        dialog.Filter = "Adobe PDF Document (*.pdf)|*.pdf"
-        If dialog.ShowDialog() = True Then
-            Dim document As RadDocument = Me.CreateDocument()
-            document.LayoutMode = DocumentLayoutMode.Paged
-            document.Measure(RadDocument.MAX_DOCUMENT_SIZE)
-            document.Arrange(New RectangleF(PointF.Empty, document.DesiredSize))
-            Dim provider As New PdfFormatProvider()
-            Using output As Stream = dialog.OpenFile()
-                provider.Export(document, output)
-            End Using
-        End If
-    End Sub
-	{{endregion}}
+{{region vb-radchart-features-export-to-pdf_5}}
+	Private Sub Export_Click(sender As Object, e As System.Windows.RoutedEventArgs)
+	    Dim dialog As New SaveFileDialog()
+	    dialog.DefaultExt = "*.pdf"
+	    dialog.Filter = "Adobe PDF Document (*.pdf)|*.pdf"
+	
+	    If dialog.ShowDialog() = True Then
+	        If True Then
+	            Dim document As RadDocument = Me.CreateDocument()
+	            document.LayoutMode = DocumentLayoutMode.Paged
+	            document.Measure(RadDocument.MAX_DOCUMENT_SIZE)
+	            document.Arrange(New RectangleF(PointF.Empty, document.DesiredSize))
+	
+	            Dim provider As New Telerik.Windows.Documents.FormatProviders.Pdf.PdfFormatProvider()
+	
+	            Using output As Stream = dialog.OpenFile()
+	                provider.Export(document, output)
+	            End Using
+	        End If
+	    End If
+	End Sub
+{{endregion}}
 

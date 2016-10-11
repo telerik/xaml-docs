@@ -26,21 +26,20 @@ Now you are able to define more than one chart area inside the __RadChart__ cont
 
 #### __XAML__
 
-{{region radchart-features-drill-down-in-multiple-chart-areas_0}}
-	<telerik:RadChart x:Name="radChart"
-	                    UseDefaultLayout="False">
+{{region xaml-radchart-features-drill-down-in-multiple-chart-areas_0}}
+	<telerik:RadChart x:Name="radChart" UseDefaultLayout="False">
 	    <Grid>
 	        <Grid.RowDefinitions>
-	            <RowDefinition Height="*"></RowDefinition>
-	            <RowDefinition Height="*"></RowDefinition>
+	            <RowDefinition Height="*" />
+	            <RowDefinition Height="*" />
 	        </Grid.RowDefinitions>
 	        <telerik:ChartArea x:Name="CompanyChartArea" />
 	        <telerik:ChartArea x:Name="ModelSalesChartArea"
-	                            Grid.Row="1"
-	                            NoDataString="Select a company to see details by model." />
+	                           Grid.Row="1"
+	                           NoDataString="Select a company to see details by model." />
 	    </Grid>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -50,53 +49,48 @@ The definition of the __ChartHierarchicalViewDescriptor__ objects is the same as
 
 #### __XAML__
 
-{{region radchart-features-drill-down-in-multiple-chart-areas_1}}
-	<telerik:RadChart x:Name="radChart"
-	                    UseDefaultLayout="False">
+{{region xaml-radchart-features-drill-down-in-multiple-chart-areas_1}}
+	<telerik:RadChart x:Name="radChart" UseDefaultLayout="False">
 	    <Grid>
 	        <Grid.RowDefinitions>
-	            <RowDefinition Height="*"></RowDefinition>
-	            <RowDefinition Height="*"></RowDefinition>
+	            <RowDefinition Height="*" />
+	            <RowDefinition Height="*" />
 	        </Grid.RowDefinitions>
 	        <telerik:ChartArea x:Name="CompanyChartArea" />
 	        <telerik:ChartArea x:Name="ModelSalesChartArea"
-	                            Grid.Row="1"
-	                            NoDataString="Select a company to see details by model." />
+	                           Grid.Row="1"
+	                           NoDataString="Select a company to see details by model." />
 	    </Grid>
 	    <telerik:RadChart.HierarchicalViewDescriptors>
 	        <telerik:ChartHierarchicalViewDescriptor>
 	            <telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	                <telerik:SeriesMapping ChartAreaName="CompanyChartArea">
-	                    <telerik:ItemMapping FieldName="Sales.TotalAmount"
-	                                            DataPointMember="YValue" />
-	                    <telerik:ItemMapping FieldName="Name"
-	                                            DataPointMember="XCategory" />
+	                    <telerik:ItemMapping DataPointMember="YValue" FieldName="Sales.TotalAmount" />
+	                    <telerik:ItemMapping DataPointMember="XCategory" FieldName="Name" />
 	                </telerik:SeriesMapping>
 	            </telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	        </telerik:ChartHierarchicalViewDescriptor>
 	        <telerik:ChartHierarchicalViewDescriptor>
 	            <telerik:ChartHierarchicalViewDescriptor.Relation>
-	                <telerik:PropertyRelation ParentPropertyName="Sales"></telerik:PropertyRelation>
+	                <telerik:PropertyRelation ParentPropertyName="Sales" />
 	            </telerik:ChartHierarchicalViewDescriptor.Relation>
 	            <telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	                <telerik:SeriesMapping ChartAreaName="ModelSalesChartArea">
 	                    <telerik:SeriesMapping.GroupingSettings>
 	                        <telerik:GroupingSettings ShouldFlattenSeries="True">
-	                            <telerik:ChartGroupDescriptor Member="Model"></telerik:ChartGroupDescriptor>
+	                            <telerik:ChartGroupDescriptor Member="Model" />
 	                        </telerik:GroupingSettings>
 	                    </telerik:SeriesMapping.GroupingSettings>
-	                    <telerik:ItemMapping FieldName="Amount"
-	                                            DataPointMember="YValue"
-	                                            AggregateFunction="Sum">
-	                    </telerik:ItemMapping>
-	                    <telerik:ItemMapping FieldName="Model"
-	                                            DataPointMember="XCategory"></telerik:ItemMapping>
+	                    <telerik:ItemMapping AggregateFunction="Sum"
+	                                         DataPointMember="YValue"
+	                                         FieldName="Amount" />
+	                    <telerik:ItemMapping DataPointMember="XCategory" FieldName="Model" />
 	                </telerik:SeriesMapping>
 	            </telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 

@@ -22,7 +22,7 @@ The main idea behind this binding is to create an object that implements INotify
 
 #### __XAML__
 
-{{region radchart-howto-binding-datapointmember-to-a-depenndency-property_0}}
+{{region xaml-radchart-howto-binding-datapointmember-to-a-depenndency-property_0}}
 	<telerik:RadChart x:Name="RadChart1" Margin="0,0,0,48" ItemsSource="{Binding}">
 	     <telerik:RadChart.SeriesMappings>
 	          <telerik:SeriesMapping>
@@ -35,7 +35,7 @@ The main idea behind this binding is to create an object that implements INotify
 	</telerik:RadChart>
 	<TextBox Height="23" HorizontalAlignment="Left" Margin="342,0,0,12" Name="textBox1" VerticalAlignment="Bottom" Width="120" Text="{Binding Path=[0].yValue, Mode=TwoWay}" />
 	<TextBlock Height="23" HorizontalAlignment="Left" Margin="300,0,0,8" Name="textBlock1" Text="Value:" VerticalAlignment="Bottom" />
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -43,7 +43,7 @@ Here is how to create object that implements INotifyPropertyChanged in code-behi
 
 #### __C#__
 
-{{region radchart-howto-binding-datapointmember-to-a-depenndency-property_1}}
+{{region cs-radchart-howto-binding-datapointmember-to-a-depenndency-property_1}}
 	public class MyObject : INotifyPropertyChanged
 	{
 	  private double _yValue = 0;
@@ -68,41 +68,44 @@ Here is how to create object that implements INotifyPropertyChanged in code-behi
 	     PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 	   }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-binding-datapointmember-to-a-depenndency-property_2}}
+{{region vb-radchart-howto-binding-datapointmember-to-a-depenndency-property_2}}
 	Public Class MyObject
-	 Implements INotifyPropertyChanged
+	    Implements INotifyPropertyChanged
 	
-	 Private _yValue As Double = 0
-	 Public Event PropertyChanged As PropertyChangedEventHandler
-	 Public Property yValue() As Double
 	
-	  Get
+	    Private _yValue As Double = 0
 	
-	   Return Me._yValue
-	  End Get
-	  Set
+	    Public Property yValue() As Double
 	
-	   If Me._yValue = value Then
-	    Return
-	   End If
-	   Me._yValue = value
+	        Get
 	
-	   Me.OnPropertyChanged("yValue")
-	  End Set
-	 End Property
+	            Return Me._yValue
+	        End Get
+	        Set(value As Double)
 	
-	 Protected Overridable Sub OnPropertyChanged(propertyName As String)
+	            If Me._yValue = value Then
+	                Return
+	            End If
+	            Me._yValue = value
 	
-	  RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-	 End Sub
+	            Me.OnPropertyChanged("yValue")
+	        End Set
+	    End Property
+	
+	    Protected Overridable Sub OnPropertyChanged(propertyName As String)
+	
+	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+	    End Sub
+	
+	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -110,19 +113,19 @@ Set the DataContext property to List of MyObject class after the InitializeCompo
 
 #### __C#__
 
-{{region radchart-howto-binding-datapointmember-to-a-depenndency-property_3}}
+{{region cs-radchart-howto-binding-datapointmember-to-a-depenndency-property_3}}
 	this.DataContext = new List<MyObject>() { new MyObject() };
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-binding-datapointmember-to-a-depenndency-property_4}}
-	Me.DataContext = New List(Of MyObject)() With { _
-	 New MyObject() _
+{{region vb-radchart-howto-binding-datapointmember-to-a-depenndency-property_4}}
+	Me.DataContext = New List(Of MyObject)() From { _
+	New MyObject() _
 	}
-	{{endregion}}
+{{endregion}}
 
 
 

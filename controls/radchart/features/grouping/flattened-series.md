@@ -20,7 +20,7 @@ Here is a __RadChart__ declaration before setting the __ShouldFlattenSeries__ pr
 
 #### __XAML__
 
-{{region radchart-features-flattened-series_0}}
+{{region xaml-radchart-features-flattened-series_0}}
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -35,22 +35,20 @@ Here is a __RadChart__ declaration before setting the __ShouldFlattenSeries__ pr
 	                </telerik:GroupingSettings>
 	            </telerik:SeriesMapping.GroupingSettings>
 	            <telerik:SeriesMapping.ItemMappings>
-	                <telerik:ItemMapping FieldName="Date"
-	                                        DataPointMember="XValue" />
-	                <telerik:ItemMapping FieldName="Value"
-	                                        DataPointMember="YValue" />
+	                <telerik:ItemMapping DataPointMember="XValue" FieldName="Date" />
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Value" />
 	            </telerik:SeriesMapping.ItemMappings>
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 ![](images/RadChart_Features_FlattenedSeries_01.png)
 
 Here is the same __RadChart__ after setting the property to __True__.
 
 #### __XAML__
 
-{{region radchart-features-flattened-series_1}}
+{{region xaml-radchart-features-flattened-series_1}}
 	<telerik:SeriesMapping.GroupingSettings>
 	    <telerik:GroupingSettings ShouldFlattenSeries="True">
 	        <telerik:GroupingSettings.GroupDescriptors>
@@ -58,30 +56,30 @@ Here is the same __RadChart__ after setting the property to __True__.
 	        </telerik:GroupingSettings.GroupDescriptors>
 	    </telerik:GroupingSettings>
 	</telerik:SeriesMapping.GroupingSettings>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-flattened-series_2}}
+{{region cs-radchart-features-flattened-series_2}}
 	public Sample()
 	{
 	    InitializeComponent();
 	    this.radChart.SeriesMappings[ 0 ].GroupingSettings.ShouldFlattenSeries = true;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-flattened-series_3}}
+{{region vb-radchart-features-flattened-series_3}}
 	Public Sub New()
-	 InitializeComponent()
-	 Me.radChart.SeriesMappings(0).GroupingSettings.ShouldFlattenSeries = True
+	    InitializeComponent()
+	    Me.radChart.SeriesMappings(0).GroupingSettings.ShouldFlattenSeries = True
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadChart_Features_FlattenedSeries_02.png)
 
@@ -93,39 +91,38 @@ Here is an example of a __CheckBox__ that manages the series flattening of the _
 
 #### __XAML__
 
-{{region radchart-features-flattened-series_4}}
-	<CheckBox Content="Flatten"
-	          Click="CheckBox_Click" />
-	{{endregion}}
+{{region xaml-radchart-features-flattened-series_4}}
+	<CheckBox Click="CheckBox_Click" Content="Flatten" />
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-flattened-series_5}}
-	private void CheckBox_Click( object sender, RoutedEventArgs e )
+{{region cs-radchart-features-flattened-series_5}}
+	private void CheckBox_Click(object sender, RoutedEventArgs e)
 	{
-	    bool? isChecked = ( sender as CheckBox ).IsChecked;
-	    if ( isChecked == null )
+	    bool? isChecked = (sender as CheckBox).IsChecked;
+	    if (isChecked == null)
 	        return;
-	    this.radChart.SeriesMappings[ 0 ].GroupingSettings.ShouldFlattenSeries = ( bool )isChecked;
+	    this.radChart.SeriesMappings[0].GroupingSettings.ShouldFlattenSeries = (bool)isChecked;
 	    this.radChart.Rebind();
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-flattened-series_6}}
+{{region vb-radchart-features-flattened-series_6}}
 	Private Sub CheckBox_Click(sender As Object, e As RoutedEventArgs)
-	 Dim isChecked As System.Nullable(Of Boolean) = TryCast(sender, CheckBox).IsChecked
-	 If isChecked Is Nothing Then
-	  Return
-	 End If
-	 Me.radChart.SeriesMappings(0).GroupingSettings.ShouldFlattenSeries = CBool(isChecked)
-	 Me.radChart.Rebind()
+	    Dim isChecked As System.Nullable(Of Boolean) = TryCast(sender, CheckBox).IsChecked
+	    If isChecked Is Nothing Then
+	        Return
+	    End If
+	    Me.radChart.SeriesMappings(0).GroupingSettings.ShouldFlattenSeries = CBool(isChecked)
+	    Me.radChart.Rebind()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 

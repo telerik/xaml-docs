@@ -28,28 +28,26 @@ Take a look at the 'Objects and Timeline' pane. Select the __PART_PointMarkPath_
 
 #### __XAML__
 
-{{region radchart-templating-point-marks_0}}
-	<Style x:Key="PointMarkStyle"
-	     TargetType="telerikCharting:PointMark">
-	  <Setter Property="Size"
-	          Value="10" />
-	  <Setter Property="Template">
-	      <Setter.Value>
-	          <ControlTemplate TargetType="telerikCharting:PointMark">
-	              <Canvas>
-	                  <Path x:Name="PART_PointMarkPath"
-	                        Stretch="Fill"
-	                        Height="{TemplateBinding Size}"
-	                        Style="{TemplateBinding ShapeStyle}"
-	                        Width="{TemplateBinding Size}"
-	                        Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
-	                        Canvas.Top="{TemplateBinding PointMarkCanvasTop}" />
-	              </Canvas>
-	          </ControlTemplate>
-	      </Setter.Value>
-	  </Setter>
+{{region xaml-radchart-templating-point-marks_0}}
+	<Style x:Key="PointMarkStyle" TargetType="telerik:PointMark">
+	    <Setter Property="Size" Value="10" />
+	    <Setter Property="Template">
+	        <Setter.Value>
+	            <ControlTemplate TargetType="telerik:PointMark">
+	                <Canvas>
+	                    <Path x:Name="PART_PointMarkPath"
+	                          Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
+	                          Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
+	                          Width="{TemplateBinding Size}"
+	                          Height="{TemplateBinding Size}"
+	                          Stretch="Fill"
+	                          Style="{TemplateBinding ShapeStyle}" />
+	                </Canvas>
+	            </ControlTemplate>
+	        </Setter.Value>
+	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -57,16 +55,16 @@ You can see that the __Data__ property of the __Path__ is not set. Create the da
 
 #### __XAML__
 
-{{region radchart-templating-point-marks_1}}
+{{region xaml-radchart-templating-point-marks_1}}
 	<Path x:Name="PART_PointMarkPath"
-	      Stretch="Fill"
-	      Height="{TemplateBinding Size}"
-	      Style="{TemplateBinding ShapeStyle}"
-	      Width="{TemplateBinding Size}"
 	      Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
 	      Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
-	      Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z" />
-	{{endregion}}
+	      Width="{TemplateBinding Size}"
+	      Height="{TemplateBinding Size}"
+	      Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z"
+	      Stretch="Fill"
+	      Style="{TemplateBinding ShapeStyle}" />
+{{endregion}}
 
 
 
@@ -76,19 +74,19 @@ After that set the created __PointMark__ style to the __DefaultSeriesDefinition_
 
 #### __C#__
 
-{{region radchart-templating-point-marks_2}}
+{{region cs-radchart-templating-point-marks_2}}
 	this.radChart.DefaultSeriesDefinition = new LineSeriesDefinition();
 	this.radChart.DefaultSeriesDefinition.PointMarkItemStyle = this.Resources["PointMarkStyle"] as Style;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-templating-point-marks_3}}
+{{region vb-radchart-templating-point-marks_3}}
 	Me.radChart.DefaultSeriesDefinition = New LineSeriesDefinition()
 	Me.radChart.DefaultSeriesDefinition.PointMarkItemStyle = TryCast(Me.Resources("PointMarkStyle"), Style)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -100,26 +98,24 @@ Here is the resulting XAML for the __PointMarkItem's Style__:
 
 #### __XAML__
 
-{{region radchart-templating-point-marks_4}}
-	<Style x:Key="PointMarkStyle"
-	       TargetType="telerikCharting:PointMark">
-	    <Setter Property="Size"
-	            Value="10" />
+{{region xaml-radchart-templating-point-marks_4}}
+	<Style x:Key="PointMarkStyle" TargetType="telerik:PointMark">
+	    <Setter Property="Size" Value="10" />
 	    <Setter Property="Template">
 	        <Setter.Value>
-	            <ControlTemplate TargetType="telerikCharting:PointMark">
+	            <ControlTemplate TargetType="telerik:PointMark">
 	                <Canvas>
 	                    <Path x:Name="PART_PointMarkPath"
-	                          Stretch="Fill"
-	                          Height="{TemplateBinding Size}"
-	                          Style="{TemplateBinding ShapeStyle}"
-	                          Width="{TemplateBinding Size}"
 	                          Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
 	                          Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
-	                          Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z" />
+	                          Width="{TemplateBinding Size}"
+	                          Height="{TemplateBinding Size}"
+	                          Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z"
+	                          Stretch="Fill"
+	                          Style="{TemplateBinding ShapeStyle}" />
 	                </Canvas>
 	            </ControlTemplate>
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}

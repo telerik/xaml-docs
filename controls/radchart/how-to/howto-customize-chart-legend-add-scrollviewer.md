@@ -20,7 +20,7 @@ For the purpose you should retemplate the default Legend Style and add ScrollVie
 
 #### __XAML__
 
-{{region radchart-howto-customize-chart-legend-add-scrollviewer_0}}
+{{region xaml-radchart-howto-customize-chart-legend-add-scrollviewer_0}}
 	<UserControl.Resources>
 	        <telerik:TextToVisibilityConverter x:Key="textToVisibilityConverter" />
 	
@@ -107,7 +107,7 @@ For the purpose you should retemplate the default Legend Style and add ScrollVie
 	            </Setter>
 	        </Style>
 	    </UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -115,7 +115,7 @@ The sample Chart shown below has [LegendDisplayMode](http://www.telerik.com/help
 
 #### __C#__
 
-{{region radchart-howto-customize-chart-legend-add-scrollviewer_1}}
+{{region cs-radchart-howto-customize-chart-legend-add-scrollviewer_1}}
 	public MainPage()
 	        {
 	            InitializeComponent();
@@ -131,26 +131,26 @@ The sample Chart shown below has [LegendDisplayMode](http://www.telerik.com/help
 	            RadChart1.DefaultSeriesDefinition.LegendDisplayMode = LegendDisplayMode.DataPointLabel;
 	            RadChart1.DefaultView.ChartLegend.Style = (Style)this.Resources["ChartLegendStyle"];
 	        }
-	{{endregion}}
+{{endregion}}
 
 
 #### __VB.NET__
 
-{{region radchart-howto-customize-chart-legend-add-scrollviewer_2}}
+{{region vb-radchart-howto-customize-chart-legend-add-scrollviewer_2}}
 	Public Sub New()
-	InitializeComponent()
-	Dim r As New Random()
-	Dim myArray(99) As Integer
-	For i As Integer = 0 To myArray.Length - 1
-	myArray(i) = r.Next(0, 100)
-	Next i
-	RadChart1.ItemsSource = myArray
-	RadChart1.DefaultView.ChartArea.EnableAnimations = False
-	RadChart1.DefaultView.ChartLegend.Width = 200
-	RadChart1.DefaultSeriesDefinition.LegendDisplayMode = LegendDisplayMode.DataPointLabel
-	RadChart1.DefaultView.ChartLegend.Style = CType(Me.Resources("ChartLegendStyle"), Style)
+	    InitializeComponent()
+	    Dim r As New Random()
+	    Dim myArray(99) As Integer
+	    For i As Integer = 0 To myArray.Length - 1
+	        myArray(i) = r.Next(0, 100)
+	    Next i
+	    RadChart1.ItemsSource = myArray
+	    RadChart1.DefaultView.ChartArea.EnableAnimations = False
+	    RadChart1.DefaultView.ChartLegend.Width = 200
+	    RadChart1.DefaultSeriesDefinition.LegendDisplayMode = LegendDisplayMode.DataPointLabel
+	    RadChart1.DefaultView.ChartLegend.Style = CType(Me.Resources("ChartLegendStyle"), Style)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

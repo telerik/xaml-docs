@@ -28,17 +28,17 @@ You can modify every one of the properties available for the styles. After that 
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-item-labels_0}}
-	this.radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources[ "SeriesItemLabelStyle" ] as Style;
-	{{endregion}}
+{{region cs-radchart-styling-and-appearance-styling-item-labels_0}}
+	this.radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources["SeriesItemLabelStyle"] as Style;
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-item-labels_1}}
+{{region vb-radchart-styling-and-appearance-styling-item-labels_1}}
 	Me.radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = TryCast(Me.Resources("SeriesItemLabelStyle"), Style)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -50,40 +50,28 @@ Here is the final XAML for the __Style__:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-item-labels_2}}
-	<Style x:Key="SeriesItemLabelStyle"
-	        TargetType="telerik:SeriesItemLabel">
-	    <Setter Property="HorizontalContentAlignment"
-	            Value="Center" />
-	    <Setter Property="Padding"
-	            Value="2,0" />
-	    <Setter Property="IsHitTestVisible"
-	            Value="False" />
-	    <Setter Property="Foreground"
-	            Value="#FF535353" />
-	    <Setter Property="Stroke"
-	            Value="#FF535353" />
-	    <Setter Property="FontWeight"
-	            Value="Bold" />
-	    <Setter Property="FontStyle"
-	            Value="Italic" />
-	    <Setter Property="FontFamily"
-	            Value="Trebuchet MS" />
-	    <Setter Property="FontSize"
-	            Value="18.667" />
+{{region xaml-radchart-styling-and-appearance-styling-item-labels_2}}
+	<Style x:Key="SeriesItemLabelStyle" TargetType="telerik:SeriesItemLabel">
+	    <Setter Property="HorizontalContentAlignment" Value="Center" />
+	    <Setter Property="Padding" Value="2,0" />
+	    <Setter Property="IsHitTestVisible" Value="False" />
+	    <Setter Property="Foreground" Value="#FF535353" />
+	    <Setter Property="Stroke" Value="#FF535353" />
+	    <Setter Property="FontWeight" Value="Bold" />
+	    <Setter Property="FontStyle" Value="Italic" />
+	    <Setter Property="FontFamily" Value="Trebuchet MS" />
+	    <Setter Property="FontSize" Value="18.667" />
 	    <Setter Property="LabelStyle">
 	        <Setter.Value>
 	            <Style TargetType="Border">
-	                <Setter Property="BorderThickness"
-	                        Value="3" />
+	                <Setter Property="BorderThickness" Value="3" />
 	            </Style>
 	        </Setter.Value>
 	    </Setter>
 	    <Setter Property="ContentTemplate">
 	        <Setter.Value>
 	            <DataTemplate>
-	                <TextBlock TextAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource TemplatedParent}}"
-	                            Text="{Binding Content, RelativeSource={RelativeSource TemplatedParent}}" />
+	                <TextBlock Text="{Binding Content, RelativeSource={RelativeSource TemplatedParent}}" TextAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource TemplatedParent}}" />
 	            </DataTemplate>
 	        </Setter.Value>
 	    </Setter>
@@ -91,38 +79,10 @@ Here is the final XAML for the __Style__:
 	        <Setter.Value>
 	            <ControlTemplate TargetType="telerik:SeriesItemLabel">
 	                <Canvas x:Name="PART_MainContainer">
-	                    <VisualStateManager.VisualStateGroups>
-	                        <VisualStateGroup x:Name="HoverStates">
-	                            <VisualState x:Name="Normal">
-	                                <Storyboard>
-	                                    <DoubleAnimation Duration="0.00:00:00.15"
-	                                                        To="1.0"
-	                                                        Storyboard.TargetProperty="Opacity"
-	                                                        Storyboard.TargetName="PART_MainContainer" />
-	                                </Storyboard>
-	                            </VisualState>
-	                            <VisualState x:Name="Hovered">
-	                                <Storyboard>
-	                                    <DoubleAnimation Duration="0.00:00:00.15"
-	                                                        To="1.0"
-	                                                        Storyboard.TargetProperty="Opacity"
-	                                                        Storyboard.TargetName="PART_MainContainer" />
-	                                </Storyboard>
-	                            </VisualState>
-	                            <VisualState x:Name="Hidden">
-	                                <Storyboard>
-	                                    <DoubleAnimation Duration="0.00:00:00.15"
-	                                                        To="0.15"
-	                                                        Storyboard.TargetProperty="Opacity"
-	                                                        Storyboard.TargetName="PART_MainContainer" />
-	                                </Storyboard>
-	                            </VisualState>
-	                        </VisualStateGroup>
-	                    </VisualStateManager.VisualStateGroups>
-	                    <Path Style="{TemplateBinding ConnectorStyle}"
-	                            Stroke="{TemplateBinding Stroke}"
-	                            StrokeThickness="{TemplateBinding StrokeThickness}"
-	                            Visibility="{TemplateBinding ConnectorVisibility}">
+	                    <Path Stroke="{TemplateBinding Stroke}"
+	                          StrokeThickness="{TemplateBinding StrokeThickness}"
+	                          Style="{TemplateBinding ConnectorStyle}"
+	                          Visibility="{TemplateBinding ConnectorVisibility}">
 	                        <Path.Data>
 	                            <PathGeometry>
 	                                <PathFigure x:Name="PART_Connector">
@@ -132,17 +92,45 @@ Here is the final XAML for the __Style__:
 	                        </Path.Data>
 	                    </Path>
 	                    <Border x:Name="PART_TextContainer"
-	                            BorderBrush="{TemplateBinding Stroke}"
 	                            Background="{TemplateBinding Fill}"
+	                            BorderBrush="{TemplateBinding Stroke}"
 	                            Style="{TemplateBinding LabelStyle}">
 	                        <ContentPresenter Margin="{TemplateBinding Padding}" />
 	                    </Border>
+	                    <VisualStateManager.VisualStateGroups>
+	                        <VisualStateGroup x:Name="HoverStates">
+	                            <VisualState x:Name="Normal">
+	                                <Storyboard>
+	                                    <DoubleAnimation Duration="0.00:00:00.15"
+	                                                     Storyboard.TargetName="PART_MainContainer"
+	                                                     Storyboard.TargetProperty="Opacity"
+	                                                     To="1.0" />
+	                                </Storyboard>
+	                            </VisualState>
+	                            <VisualState x:Name="Hovered">
+	                                <Storyboard>
+	                                    <DoubleAnimation Duration="0.00:00:00.15"
+	                                                     Storyboard.TargetName="PART_MainContainer"
+	                                                     Storyboard.TargetProperty="Opacity"
+	                                                     To="1.0" />
+	                                </Storyboard>
+	                            </VisualState>
+	                            <VisualState x:Name="Hidden">
+	                                <Storyboard>
+	                                    <DoubleAnimation Duration="0.00:00:00.15"
+	                                                     Storyboard.TargetName="PART_MainContainer"
+	                                                     Storyboard.TargetProperty="Opacity"
+	                                                     To="0.15" />
+	                                </Storyboard>
+	                            </VisualState>
+	                        </VisualStateGroup>
+	                    </VisualStateManager.VisualStateGroups>
 	                </Canvas>
 	            </ControlTemplate>
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 

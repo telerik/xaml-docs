@@ -31,7 +31,7 @@ This help article will show you how to show PointMarks and Labels for specific p
 
 #### __C#__
 
-{{region radchart-howto-pointmarks-and-labels-for-specific-points-only_0}}
+{{region cs-radchart-howto-pointmarks-and-labels-for-specific-points-only_0}}
 	public class Data : INotifyPropertyChanged
 	{
 	  private DateTime _date;
@@ -99,74 +99,75 @@ This help article will show you how to show PointMarks and Labels for specific p
 	     this.PointMarkVisibility = Visibility.Visible;
 	   }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-pointmarks-and-labels-for-specific-points-only_1}}
+{{region vb-radchart-howto-pointmarks-and-labels-for-specific-points-only_1}}
 	Public Class Data
-		Implements INotifyPropertyChanged
-	  Private _date As Date
-	  Private _pointMarkVisibility As Visibility
-	  Private _yvalue As Integer
-	  Public Sub New(ByVal [date] As Date, ByVal yvalue As Integer)
-	   Me._date = [date]
-	   Me._yvalue = yvalue
-	   Me.UpdatePointMarkVisibility()
-	  End Sub
-	  Public Event PropertyChanged As PropertyChangedEventHandler
-	  Public Property [Date]() As Date
-	   Get
-		 Return _date
-	   End Get
-	   Set(ByVal value As Date)
-		If Me._date Is value Then
-		Return
-		End If
-		Me._date = value
-		Me.OnPropertyChanged("Date")
-	   End Set
-	  End Property
-	   Public Property YValue() As Integer
-		 Get
-		   Return _yvalue
-		 End Get
-		Set(ByVal value As Integer)
-		  If Me._yvalue = value Then
-		  Return
-		  End If
-		  Me._yvalue = value
-		  Me.OnPropertyChanged("YValue")
-		End Set
-	   End Property
-	   Public Property PointMarkVisibility() As Visibility
-		Get
-		  Return _pointMarkVisibility
-		End Get
-		Private Set(ByVal value As Visibility)
-		  If Object.Equals(Me._pointMarkVisibility, value) Then
-		  Return
-		  End If
-		  Me._pointMarkVisibility = value
-		  Me.OnPropertyChanged("PointMarkVisibility")
-		End Set
-	   End Property
-	   Protected Overridable Sub OnPropertyChanged(ByVal propertyName As String)
-		 If Me.PropertyChangedEvent IsNot Nothing Then
-		 RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		 End If
-	   End Sub
-	   Private Sub UpdatePointMarkVisibility()
-		 If Me.Date.Day Mod 5 <> 0 Then
-		 Me.PointMarkVisibility = Visibility.Collapsed
-		 Else
-		 Me.PointMarkVisibility = Visibility.Visible
-		 End If
-	   End Sub
+	    Implements INotifyPropertyChanged
+	    Private _date As Date
+	    Private _pointMarkVisibility As Visibility
+	    Private _yvalue As Integer
+	    Public Sub New(ByVal [date] As Date, ByVal yvalue As Integer)
+	        Me._date = [date]
+	        Me._yvalue = yvalue
+	        Me.UpdatePointMarkVisibility()
+	    End Sub
+	    Public Property [Date]() As Date
+	        Get
+	            Return _date
+	        End Get
+	        Set(ByVal value As Date)
+	            If Me._date = value Then
+	                Return
+	            End If
+	            Me._date = value
+	            Me.OnPropertyChanged("Date")
+	        End Set
+	    End Property
+	    Public Property YValue() As Integer
+	        Get
+	            Return _yvalue
+	        End Get
+	        Set(ByVal value As Integer)
+	            If Me._yvalue = value Then
+	                Return
+	            End If
+	            Me._yvalue = value
+	            Me.OnPropertyChanged("YValue")
+	        End Set
+	    End Property
+	    Public Property PointMarkVisibility() As Visibility
+	        Get
+	            Return _pointMarkVisibility
+	        End Get
+	        Private Set(ByVal value As Visibility)
+	            If Object.Equals(Me._pointMarkVisibility, value) Then
+	                Return
+	            End If
+	            Me._pointMarkVisibility = value
+	            Me.OnPropertyChanged("PointMarkVisibility")
+	        End Set
+	    End Property
+	    Protected Overridable Sub OnPropertyChanged(ByVal propertyName As String)
+	        If Me.PropertyChangedEvent IsNot Nothing Then
+	            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+	        End If
+	    End Sub
+	    Private Sub UpdatePointMarkVisibility()
+	        If Me.Date.Day Mod 5 <> 0 Then
+	            Me.PointMarkVisibility = Visibility.Collapsed
+	        Else
+	            Me.PointMarkVisibility = Visibility.Visible
+	        End If
+	    End Sub
+	
+	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -176,9 +177,9 @@ Add a new chart declaration to your XAML:
 
 #### __XAML__
 
-{{region radchart-howto-pointmarks-and-labels-for-specific-points-only_4}}
-	<control:RadChart x:Name="chart"/>
-	{{endregion}}
+{{region xaml-radchart-howto-pointmarks-and-labels-for-specific-points-only_4}}
+	<telerik:RadChart x:Name="chart"/>
+{{endregion}}
 
 
 
@@ -186,30 +187,30 @@ Add a new chart declaration to your XAML:
 
 #### __XAML__
 
-{{region radchart-howto-pointmarks-and-labels-for-specific-points-only_5}}
-	<Style x:Key="MyPointMark_Style" TargetType="telerikCharting:PointMark">
-	   <Setter Property="Template">
-	      <Setter.Value>
-	          <ControlTemplate TargetType="telerikCharting:PointMark">
-	              <Canvas>
-	                  <Path x:Name="PART_PointMarkPath"
-	                        Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
-	                        Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
-	                        Style="{TemplateBinding ShapeStyle}"
-	                        Width="{TemplateBinding Size}"
-	                        Height="{TemplateBinding Size}"
-	                        Visibility="{Binding DataItem.PointMarkVisibility}"
-	                        Stretch="Fill">
-	                    <Path.Data>
-	                       <PathGeometry x:Name="PART_PointMarkPathGeometry" />
-	                    </Path.Data>
-	                  </Path>
-	              </Canvas>
-	         </ControlTemplate>
-	       </Setter.Value>
+{{region xaml-radchart-howto-pointmarks-and-labels-for-specific-points-only_5}}
+	<Style x:Key="MyPointMark_Style" TargetType="telerik:PointMark">
+	    <Setter Property="Template">
+	        <Setter.Value>
+	            <ControlTemplate TargetType="telerik:PointMark">
+	                <Canvas>
+	                    <Path x:Name="PART_PointMarkPath"
+	            Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
+	            Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
+	            Style="{TemplateBinding ShapeStyle}"
+	            Width="{TemplateBinding Size}"
+	            Height="{TemplateBinding Size}"
+	            Visibility="{Binding DataItem.PointMarkVisibility}"
+	            Stretch="Fill">
+	                        <Path.Data>
+	                            <PathGeometry x:Name="PART_PointMarkPathGeometry" />
+	                        </Path.Data>
+	                    </Path>
+	                </Canvas>
+	            </ControlTemplate>
+	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -217,15 +218,15 @@ Add a new chart declaration to your XAML:
 
 #### __C#__
 
-{{region radchart-howto-pointmarks-and-labels-for-specific-points-only_2}}
+{{region cs-radchart-howto-pointmarks-and-labels-for-specific-points-only_2}}
 	List<Data> exportData = new List<Data>();
 	DateTime baseDate = new DateTime(2011, 1, 1);
 	Random r = new Random();
 	for (int i = 0; i < 30; i++)
 	{
-	   exportData.Add(new Data(baseDate.AddDays(i), r.Next(-10, 20)));
+	    exportData.Add(new Data(baseDate.AddDays(i), r.Next(-10, 20)));
 	}
-	        
+	
 	SeriesMapping mapping = new SeriesMapping();
 	mapping.ItemMappings.Add(new ItemMapping("YValue", DataPointMember.YValue));
 	mapping.ItemMappings.Add(new ItemMapping("Date", DataPointMember.XCategory));
@@ -243,36 +244,36 @@ Add a new chart declaration to your XAML:
 	chart.DefaultSeriesDefinition.PointMarkItemStyle = this.Resources["MyPointMark_Style"] as Style;
 	chart.DataBound += (o, e) =>
 	{
-	    var dataSeries = chart.DefaultView.ChartArea.DataSeries.FirstOrDefault();   
-	    if (dataSeries != null)            
-	    {                             
-	        foreach (var point in dataSeries.ToList())  
+	    var dataSeries = chart.DefaultView.ChartArea.DataSeries.FirstOrDefault();
+	    if (dataSeries != null)
+	    {
+	        foreach (var point in dataSeries.ToList())
 	        {
 	            DateTime myDate = DateTime.Parse(point.XCategory);
 	            if (myDate.Day % 5 != 0)
 	            {
 	                point.Label = " ";
-	            }   
-	        }   
-	    }    
+	            }
+	        }
+	    }
 	};
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-pointmarks-and-labels-for-specific-points-only_3}}
+{{region vb-radchart-howto-pointmarks-and-labels-for-specific-points-only_3}}
 	Dim exportData As New List(Of Data)()
 	Dim baseDate As New Date(2011, 1, 1)
 	Dim r As New Random()
 	For i As Integer = 0 To 29
-	   exportData.Add(New Data(baseDate.AddDays(i), r.Next(-10, 20)))
+	    exportData.Add(New Data(baseDate.AddDays(i), r.Next(-10, 20)))
 	Next i
 	
-	 Dim mapping As New SeriesMapping()
-	 mapping.ItemMappings.Add(New ItemMapping("YValue", DataPointMember.YValue))
-	 mapping.ItemMappings.Add(New ItemMapping("Date", DataPointMember.XCategory))
+	Dim mapping As New SeriesMapping()
+	mapping.ItemMappings.Add(New ItemMapping("YValue", DataPointMember.YValue))
+	mapping.ItemMappings.Add(New ItemMapping("Date", DataPointMember.XCategory))
 	chart.ItemsSource = exportData
 	chart.SeriesMappings.Add(mapping)
 	chart.DefaultView.ChartArea.AxisX.IsDateTime = True
@@ -286,17 +287,17 @@ Add a new chart declaration to your XAML:
 	line.ShowItemLabels = True
 	chart.DefaultSeriesDefinition.PointMarkItemStyle = TryCast(Me.Resources("MyPointMark_Style"), Style)
 	AddHandler chart.DataBound, Sub(o, e)
-		Dim dataSeries = chart.DefaultView.ChartArea.DataSeries.FirstOrDefault()
-		If dataSeries IsNot Nothing Then
-			For Each point In dataSeries.ToList()
-				Dim myDate As Date = Date.Parse(point.XCategory)
-				If myDate.Day Mod 5 <> 0 Then
-					point.Label = " "
-				End If
-			Next point
-		End If
-	End Sub
-	{{endregion}}
+	                                Dim dataSeries = chart.DefaultView.ChartArea.DataSeries.FirstOrDefault()
+	                                If dataSeries IsNot Nothing Then
+	                                    For Each point In dataSeries.ToList()
+	                                        Dim myDate As Date = Date.Parse(point.XCategory)
+	                                        If myDate.Day Mod 5 <> 0 Then
+	                                            point.Label = " "
+	                                        End If
+	                                    Next point
+	                                End If
+	                            End Sub
+{{endregion}}
 
 
 

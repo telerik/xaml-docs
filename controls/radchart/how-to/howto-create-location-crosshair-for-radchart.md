@@ -21,28 +21,28 @@ To achieve the crosshair functionality you will add two [custom gridlines]({%slu
 
 #### __C#__
 
-{{region radchart-howto-create-location-crosshair-for-radchart_0}}
+{{region cs-radchart-howto-create-location-crosshair-for-radchart_0}}
 	private void OnChartLoaded(object sender, RoutedEventArgs e)
 	{
-		var plotAreaPanel = this.chart.DefaultView.ChartArea.ChildrenOfType<ClipPanel>().FirstOrDefault();
-		plotAreaPanel.MouseEnter += this.OnPlotAreaPanelMouseEnter;
-		plotAreaPanel.MouseMove += this.OnPlotAreaPanelMouseMove;
-		plotAreaPanel.MouseLeave += this.OnPlotAreaPanelMouseLeave;
+	    var plotAreaPanel = this.chart.DefaultView.ChartArea.ChildrenOfType<ClipPanel>().FirstOrDefault();
+	    plotAreaPanel.MouseEnter += this.OnPlotAreaPanelMouseEnter;
+	    plotAreaPanel.MouseMove += this.OnPlotAreaPanelMouseMove;
+	    plotAreaPanel.MouseLeave += this.OnPlotAreaPanelMouseLeave;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-create-location-crosshair-for-radchart_1}}
+{{region vb-radchart-howto-create-location-crosshair-for-radchart_1}}
 	Private Sub OnChartLoaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim plotAreaPanel = Me.chart.DefaultView.ChartArea.ChildrenOfType(Of ClipPanel)().FirstOrDefault()
-		plotAreaPanel.MouseEnter += Me.OnPlotAreaPanelMouseEnter
-		plotAreaPanel.MouseMove += Me.OnPlotAreaPanelMouseMove
-		plotAreaPanel.MouseLeave += Me.OnPlotAreaPanelMouseLeave
+	    Dim plotAreaPanel = Me.chart.DefaultView.ChartArea.ChildrenOfType(Of ClipPanel)().FirstOrDefault()
+	    AddHandler plotAreaPanel.MouseEnter, AddressOf Me.OnPlotAreaPanelMouseEnter
+	    AddHandler plotAreaPanel.MouseMove, AddressOf Me.OnPlotAreaPanelMouseMove
+	    AddHandler plotAreaPanel.MouseLeave, AddressOf Me.OnPlotAreaPanelMouseLeave
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -54,64 +54,64 @@ Knowing the current X and Y data values of the mouse cursor you can bind the pai
 
 #### __C#__
 
-{{region radchart-howto-create-location-crosshair-for-radchart_2}}
+{{region cs-radchart-howto-create-location-crosshair-for-radchart_2}}
 	private void OnPlotAreaPanelMouseEnter(object sender, MouseEventArgs e)
 	{
-		this.chart.DefaultView.ChartArea.Annotations.Add(xGridLine);
-		this.chart.DefaultView.ChartArea.Annotations.Add(yGridLine);
+	    this.chart.DefaultView.ChartArea.Annotations.Add(xGridLine);
+	    this.chart.DefaultView.ChartArea.Annotations.Add(yGridLine);
 	}
 	
 	private void OnPlotAreaPanelMouseMove(object sender, MouseEventArgs e)
 	{
-		var plotAreaPanel = sender as ClipPanel;
-		var position = e.GetPosition(plotAreaPanel);
+	    var plotAreaPanel = sender as ClipPanel;
+	    var position = e.GetPosition(plotAreaPanel);
 	
-		var x = this.chart.DefaultView.ChartArea.AxisX.ConvertPhysicalUnitsToData(position.X);
-		var y = this.chart.DefaultView.ChartArea.AxisY.ConvertPhysicalUnitsToData(position.Y);
+	    var x = this.chart.DefaultView.ChartArea.AxisX.ConvertPhysicalUnitsToData(position.X);
+	    var y = this.chart.DefaultView.ChartArea.AxisY.ConvertPhysicalUnitsToData(position.Y);
 	
-		xGridLine.XIntercept = x;
-		yGridLine.YIntercept = y;
+	    xGridLine.XIntercept = x;
+	    yGridLine.YIntercept = y;
 	
-		this.textX.Text = string.Format("X: {0:N2}", x);
-		this.textY.Text = string.Format("Y: {0:N2}", y);
+	    this.textX.Text = string.Format("X: {0:N2}", x);
+	    this.textY.Text = string.Format("Y: {0:N2}", y);
 	}
 	
 	private void OnPlotAreaPanelMouseLeave(object sender, MouseEventArgs e)
 	{
-		this.chart.DefaultView.ChartArea.Annotations.Remove(xGridLine);
-		this.chart.DefaultView.ChartArea.Annotations.Remove(yGridLine);
+	    this.chart.DefaultView.ChartArea.Annotations.Remove(xGridLine);
+	    this.chart.DefaultView.ChartArea.Annotations.Remove(yGridLine);
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-create-location-crosshair-for-radchart_3}}
-	Private Sub OnPlotAreaPanelMouseEnter(ByVal sender As Object, ByVal e As MouseEventArgs)
-		Me.chart.DefaultView.ChartArea.Annotations.Add(xGridLine)
-		Me.chart.DefaultView.ChartArea.Annotations.Add(yGridLine)
+{{region vb-radchart-howto-create-location-crosshair-for-radchart_3}}
+	Private Sub OnPlotAreaPanelMouseEnter(sender As Object, e As MouseEventArgs)
+	    Me.chart.DefaultView.ChartArea.Annotations.Add(xGridLine)
+	    Me.chart.DefaultView.ChartArea.Annotations.Add(yGridLine)
 	End Sub
 	
 	Private Sub OnPlotAreaPanelMouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
-		Dim plotAreaPanel = TryCast(sender, ClipPanel)
-		Dim position = e.GetPosition(plotAreaPanel)
+	    Dim plotAreaPanel = TryCast(sender, ClipPanel)
+	    Dim position = e.GetPosition(plotAreaPanel)
 	
-		Dim x = Me.chart.DefaultView.ChartArea.AxisX.ConvertPhysicalUnitsToData(position.X)
-		Dim y = Me.chart.DefaultView.ChartArea.AxisY.ConvertPhysicalUnitsToData(position.Y)
+	    Dim x = Me.chart.DefaultView.ChartArea.AxisX.ConvertPhysicalUnitsToData(position.X)
+	    Dim y = Me.chart.DefaultView.ChartArea.AxisY.ConvertPhysicalUnitsToData(position.Y)
 	
-		xGridLine.XIntercept = x
-		yGridLine.YIntercept = y
+	    xGridLine.XIntercept = x
+	    yGridLine.YIntercept = y
 	
-		Me.textX.Text = String.Format("X: {0:N2}", x)
-		Me.textY.Text = String.Format("Y: {0:N2}", y)
+	    Me.textX.Text = String.Format("X: {0:N2}", x)
+	    Me.textY.Text = String.Format("Y: {0:N2}", y)
 	End Sub
 	
 	Private Sub OnPlotAreaPanelMouseLeave(ByVal sender As Object, ByVal e As MouseEventArgs)
-		Me.chart.DefaultView.ChartArea.Annotations.Remove(xGridLine)
-		Me.chart.DefaultView.ChartArea.Annotations.Remove(yGridLine)
+	    Me.chart.DefaultView.ChartArea.Annotations.Remove(xGridLine)
+	    Me.chart.DefaultView.ChartArea.Annotations.Remove(yGridLine)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -119,12 +119,12 @@ The Location Indicator consists of two textblocks. We modify their values in cod
 
 #### __XAML__
 
-{{region radchart-howto-create-location-crosshair-for-radchart_4}}
+{{region xaml-radchart-howto-create-location-crosshair-for-radchart_4}}
 	<StackPanel Orientation="Horizontal" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top">
-		<TextBlock Name="textX" Width="50" Margin="0,0,15,0" />
-		<TextBlock Name="textY" Width="50" />
+		<TextBlock x:Name="textX" Width="50" Margin="0,0,15,0" />
+		<TextBlock x:Name="textY" Width="50" />
 	</StackPanel>
-	{{endregion}}
+{{endregion}}
 
 
 

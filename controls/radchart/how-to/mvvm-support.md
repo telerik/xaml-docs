@@ -20,7 +20,7 @@ The Telerik __RadChart__ control can be used with great success with the __Model
 
 #### __C#__
 
-{{region radchart-how-to-mvvm-support_0}}
+{{region cs-radchart-how-to-mvvm-support_0}}
 	public class Person : INotifyPropertyChanged
 	{
 	    private double grade;
@@ -60,13 +60,13 @@ The Telerik __RadChart__ control can be used with great success with the __Model
 	            this.PropertyChanged( this, new PropertyChangedEventArgs( propertyName ) );
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-mvvm-support_1}}
+{{region vb-radchart-how-to-mvvm-support_1}}
 	Public Class Person
 	    Implements INotifyPropertyChanged
 	    Private m_grade As Double
@@ -96,13 +96,13 @@ The Telerik __RadChart__ control can be used with great success with the __Model
 	        Grade = grade__2
 	    End Sub
 	
-	    Public Event PropertyChanged As PropertyChangedEventHandler
-	
 	    Protected Overridable Sub OnPropertyChanged(ByVal propertyName As String)
 	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 	    End Sub
+	
+	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -117,7 +117,7 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 
 #### __C#__
 
-{{region radchart-how-to-mvvm-support_2}}
+{{region cs-radchart-how-to-mvvm-support_2}}
 	public class PersonViewModel : INotifyPropertyChanged
 	{
 	    private Person _person;
@@ -199,13 +199,13 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 	        return Color.FromArgb( a, r, g, b );
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-mvvm-support_3}}
+{{region vb-radchart-how-to-mvvm-support_3}}
 	Public Class PersonViewModel
 	    Implements INotifyPropertyChanged
 	    Private _person As Person
@@ -230,8 +230,7 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 	
 	    Public Sub New(ByVal person As Person)
 	        Me.Person = person
-	        person.PropertyChanged += HandleStudentPropertyChanged
-	
+	        AddHandler person.PropertyChanged, AddressOf HandleStudentPropertyChanged
 	        Me.UpdateGradeColor()
 	    End Sub
 	
@@ -267,8 +266,6 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 	        Me.OnPropertyChanged("GradeColor")
 	    End Sub
 	
-	    Public Event PropertyChanged As PropertyChangedEventHandler
-	
 	    Protected Overridable Sub OnPropertyChanged(ByVal propertyName As String)
 	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 	    End Sub
@@ -286,8 +283,10 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 	        Dim b As Byte = System.Convert.ToByte(s.Substring(6, 2), 16)
 	        Return Color.FromArgb(a, r, g, b)
 	    End Function
+	
+	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -304,9 +303,9 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 
 #### __XAML__
 
-{{region radchart-how-to-mvvm-support_4}}
-	<telerikChart:RadChart x:Name="radChart" Margin="8"/>
-	{{endregion}}
+{{region xaml-radchart-how-to-mvvm-support_4}}
+	<telerik:RadChart x:Name="radChart" Margin="8"/>
+{{endregion}}
 
 
 
@@ -322,7 +321,7 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 
 #### __C#__
 
-{{region radchart-how-to-mvvm-support_5}}
+{{region cs-radchart-how-to-mvvm-support_5}}
 	private void MVVM_Loaded( object sender, RoutedEventArgs e )
 	{
 	    radChart.DefaultView.ChartArea.AxisY.AutoRange = false;
@@ -338,13 +337,13 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 	    radChart.SeriesMappings.Add( seriesMapping );
 	    radChart.ItemsSource = this.GetData();
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-mvvm-support_6}}
+{{region vb-radchart-how-to-mvvm-support_6}}
 	Private Sub MVVM_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    radChart.DefaultView.ChartArea.AxisY.AutoRange = False
 	    radChart.DefaultView.ChartArea.AxisY.MinValue = 0
@@ -361,7 +360,7 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 	    radChart.SeriesMappings.Add(seriesMapping)
 	    radChart.ItemsSource = Me.GetData()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -369,7 +368,7 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 
 #### __C#__
 
-{{region radchart-how-to-mvvm-support_7}}
+{{region cs-radchart-how-to-mvvm-support_7}}
 	private List<PersonViewModel> GetData()
 	{
 	    Random rand = new Random( DateTime.Now.Millisecond );
@@ -381,13 +380,13 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 	        modelList.Add( new PersonViewModel( person ) );
 	    return modelList;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-mvvm-support_8}}
+{{region vb-radchart-how-to-mvvm-support_8}}
 	Private Function GetData() As List(Of PersonViewModel)
 	    Dim rand As New Random(DateTime.Now.Millisecond)
 	    Dim studentList As New List(Of Person)()
@@ -403,7 +402,7 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 	
 	    Return modelList
 	End Function
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -418,7 +417,7 @@ Here is the method that will be passed to the delegate.
 
 #### __C#__
 
-{{region radchart-how-to-mvvm-support_9}}
+{{region cs-radchart-how-to-mvvm-support_9}}
 	public Style BuildCustomItemStyle( Control item, Style style, DataPoint point, DataSeries dataSeries )
 	{
 	    if ( ( item as BaseChartItem ) == null )
@@ -432,25 +431,25 @@ Here is the method that will be passed to the delegate.
 	    newStyle.Setters.Add( new Setter( Shape.FillProperty, brush ) );
 	    return newStyle;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-mvvm-support_10}}
+{{region vb-radchart-how-to-mvvm-support_10}}
 	Public Function BuildCustomItemStyle(item As Control, style As Style, point As DataPoint, dataSeries As DataSeries) As Style
-	 If TryCast(item, BaseChartItem) Is Nothing Then
-	  Return style
-	 End If
-	 Dim newStyle As New Style()
-	 newStyle.BasedOn = style
-	 newStyle.TargetType = GetType(Shape)
-	 Dim brush As Brush = TryCast(dataSeries(TryCast(item, BaseChartItem).CurrentIndex).DataItem, PersonViewModel).GradeColor
-	 newStyle.Setters.Add(New Setter(Shape.FillProperty, brush))
-	 Return newStyle
+	    If TryCast(item, BaseChartItem) Is Nothing Then
+	        Return style
+	    End If
+	    Dim newStyle As New Style()
+	    newStyle.BasedOn = style
+	    newStyle.TargetType = GetType(Shape)
+	    Dim brush As Brush = TryCast(dataSeries(TryCast(item, BaseChartItem).CurrentIndex).DataItem, PersonViewModel).GradeColor
+	    newStyle.Setters.Add(New Setter(Shape.FillProperty, brush))
+	    Return newStyle
 	End Function
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -458,17 +457,17 @@ To pass this method to the __RadChart__ use its __CustomItemStyleDelegate__ prop
 
 #### __C#__
 
-{{region radchart-how-to-mvvm-support_11}}
+{{region cs-radchart-how-to-mvvm-support_11}}
 	this.radChart.CreateItemStyleDelegate = this.BuildCustomItemStyle;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-mvvm-support_12}}
-	Me.radChart.CreateItemStyleDelegate = Me.BuildCustomItemStyle;
-	{{endregion}}
+{{region vb-radchart-how-to-mvvm-support_12}}
+	Me.radChart.CreateItemStyleDelegate = Me.BuildCustomItemStyle
+{{endregion}}
 
 
 
@@ -481,54 +480,53 @@ Additionally you may want to remove the Background from the SeriesItemsLabels. T
 
 #### __XAML__
 
-{{region radchart-how-to-mvvm-support_13}}
-	<Style x:Key="MySeriesItemLabel_Style"
-	       TargetType="telerik:SeriesItemLabel">
-	            <Setter Property="Padding" Value="2,0" />
-	            <Setter Property="Foreground" Value="Black"/>
-	            <Setter Property="IsHitTestVisible" Value="False"/>
-	            <Setter Property="ContentTemplate">
-	                <Setter.Value>
-	                    <DataTemplate>
-	                        <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content }" TextAlignment="Center" />
-	                    </DataTemplate>
-	                </Setter.Value>
-	            </Setter>
-	            <Setter Property="Template" >
-	                <Setter.Value>
-	                    <ControlTemplate TargetType="telerik:SeriesItemLabel">
-	                        <Canvas x:Name="PART_MainContainer">
-	                            <Path                            
-	                              Visibility="{TemplateBinding ConnectorVisibility}"
-	                              Style="{TemplateBinding ConnectorStyle}"
-	                              Stroke="{TemplateBinding Stroke}"
-	                              StrokeThickness="{TemplateBinding StrokeThickness}">
-	                                <Path.Data>
-	                                    <PathGeometry >
-	                                        <PathGeometry.Figures>
-	                                            <PathFigure x:Name="PART_Connector">
-	                                                <PathFigure.Segments>
-	                                                    <PolyLineSegment />
-	                                                </PathFigure.Segments>
-	                                            </PathFigure>
-	                                        </PathGeometry.Figures>
-	                                    </PathGeometry>
-	                                </Path.Data>
-	                            </Path>
-	                            <Border x:Name="PART_TextContainer"
-	                               Style="{TemplateBinding LabelStyle}"
-	                               BorderBrush="{TemplateBinding Stroke}"
-	                               Background="Transparent"
-	                               Width="{TemplateBinding Width}"
-	                               Height="{TemplateBinding Height}">
-	                                <ContentPresenter Margin="{TemplateBinding Padding}" />
-	                            </Border>
-	                        </Canvas>
-	                    </ControlTemplate>
-	                </Setter.Value>
-	            </Setter>
-	        </Style>
-	{{endregion}}
+{{region xaml-radchart-how-to-mvvm-support_13}}
+	<Style x:Key="MySeriesItemLabel_Style" TargetType="telerik:SeriesItemLabel">
+	    <Setter Property="Padding" Value="2,0" />
+	    <Setter Property="Foreground" Value="Black"/>
+	    <Setter Property="IsHitTestVisible" Value="False"/>
+	    <Setter Property="ContentTemplate">
+	        <Setter.Value>
+	            <DataTemplate>
+	                <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content }" TextAlignment="Center" />
+	            </DataTemplate>
+	        </Setter.Value>
+	    </Setter>
+	    <Setter Property="Template" >
+	        <Setter.Value>
+	            <ControlTemplate TargetType="telerik:SeriesItemLabel">
+	                <Canvas x:Name="PART_MainContainer">
+	                    <Path                            
+	                  Visibility="{TemplateBinding ConnectorVisibility}"
+	                  Style="{TemplateBinding ConnectorStyle}"
+	                  Stroke="{TemplateBinding Stroke}"
+	                  StrokeThickness="{TemplateBinding StrokeThickness}">
+	                        <Path.Data>
+	                            <PathGeometry >
+	                                <PathGeometry.Figures>
+	                                    <PathFigure x:Name="PART_Connector">
+	                                        <PathFigure.Segments>
+	                                            <PolyLineSegment />
+	                                        </PathFigure.Segments>
+	                                    </PathFigure>
+	                                </PathGeometry.Figures>
+	                            </PathGeometry>
+	                        </Path.Data>
+	                    </Path>
+	                    <Border x:Name="PART_TextContainer"
+	                   Style="{TemplateBinding LabelStyle}"
+	                   BorderBrush="{TemplateBinding Stroke}"
+	                   Background="Transparent"
+	                   Width="{TemplateBinding Width}"
+	                   Height="{TemplateBinding Height}">
+	                        <ContentPresenter Margin="{TemplateBinding Padding}" />
+	                    </Border>
+	                </Canvas>
+	            </ControlTemplate>
+	        </Setter.Value>
+	    </Setter>
+	</Style>
+{{endregion}}
 
 
 
@@ -536,17 +534,17 @@ Don't forget to apply the Style to the SeriesItemLabelStyle property of the Seri
 
 #### __C#__
 
-{{region radchart-how-to-mvvm-support_14}}
+{{region cs-radchart-how-to-mvvm-support_14}}
 	radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources["MySeriesItemLabel_Style"] as Style;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-mvvm-support_15}}
+{{region vb-radchart-how-to-mvvm-support_15}}
 	radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = TryCast(Me.Resources("MySeriesItemLabel_Style"), Style)
-	{{endregion}}
+{{endregion}}
 
 
 

@@ -30,27 +30,27 @@ For example, you can change the appearance of the point marks for a __LineSeries
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-point-marks_0}}
+{{region cs-radchart-styling-and-appearance-styling-point-marks_0}}
 	LineSeriesDefinition l = new LineSeriesDefinition();
-	l.Appearance.PointMark.Stroke = new SolidColorBrush( Colors.Blue );
+	l.Appearance.PointMark.Stroke = new SolidColorBrush(Colors.Blue);
 	l.Appearance.PointMark.StrokeThickness = 1;
-	l.Appearance.PointMark.Fill = new SolidColorBrush( Colors.Transparent );
+	l.Appearance.PointMark.Fill = new SolidColorBrush(Colors.Transparent);
 	l.Appearance.PointMark.Shape = MarkerShape.Diamond;
 	this.radChart.DefaultSeriesDefinition = l;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-point-marks_1}}
+{{region vb-radchart-styling-and-appearance-styling-point-marks_1}}
 	Dim l As New LineSeriesDefinition()
 	l.Appearance.PointMark.Stroke = New SolidColorBrush(Colors.White)
 	l.Appearance.PointMark.StrokeThickness = 1
 	l.Appearance.PointMark.Fill = New SolidColorBrush(Colors.Transparent)
 	l.Appearance.PointMark.Shape = MarkerShape.Diamond
 	Me.radChart.DefaultSeriesDefinition = l
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -68,44 +68,43 @@ Changing the shape of the pointmark can be done by retemplating the Scatter/Poin
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-point-marks_2}}
+{{region xaml-radchart-styling-and-appearance-styling-point-marks_2}}
 	<Style x:Key="CustomPoint" TargetType="telerik:PointMark">
-			<Setter Property="Size" Value="20" />
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate TargetType="telerik:PointMark">
-						<Canvas>
-							<Path x:Name="PART_PointMarkPath"
-							Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
-							Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
-							Style="{TemplateBinding ShapeStyle}"
-							Width="{TemplateBinding Size}"
-							Height="{TemplateBinding Size}"
-							Stretch="Fill"
-							Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z"/>
-						</Canvas>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	
-		<Style x:Key="CustomScatter"  TargetType="telerik:ScatterPoint">
-			<Setter Property="Template" >
-				<Setter.Value>
-					<ControlTemplate TargetType="telerik:ScatterPoint">
-						<Canvas x:Name="PART_MainContainer">
-							<telerik:PointMark x:Name="PART_PointMark"
-											Canvas.Top="{TemplateBinding StartPointY}"
-											PointMarkCanvasLeft="{TemplateBinding PointMarkCanvasLeft}"
-											PointMarkCanvasTop="{TemplateBinding PointMarkCanvasTop}"
-											ShapeStyle="{TemplateBinding PointMarkShapeStyle}"
-												Style="{StaticResource CustomPoint}"  />
-						</Canvas>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	{{endregion}}
+	    <Setter Property="Size" Value="20" />
+	    <Setter Property="Template">
+	        <Setter.Value>
+	            <ControlTemplate TargetType="telerik:PointMark">
+	                <Canvas>
+	                    <Path x:Name="PART_PointMarkPath"
+	                          Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
+	                          Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
+	                          Width="{TemplateBinding Size}"
+	                          Height="{TemplateBinding Size}"
+	                          Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z"
+	                          Stretch="Fill"
+	                          Style="{TemplateBinding ShapeStyle}" />
+	                </Canvas>
+	            </ControlTemplate>
+	        </Setter.Value>
+	    </Setter>
+	</Style>
+	<Style x:Key="CustomScatter" TargetType="telerik:ScatterPoint">
+	    <Setter Property="Template">
+	        <Setter.Value>
+	            <ControlTemplate TargetType="telerik:ScatterPoint">
+	                <Canvas x:Name="PART_MainContainer">
+	                    <telerik:PointMark x:Name="PART_PointMark"
+	                                       Canvas.Top="{TemplateBinding StartPointY}"
+	                                       PointMarkCanvasLeft="{TemplateBinding PointMarkCanvasLeft}"
+	                                       PointMarkCanvasTop="{TemplateBinding PointMarkCanvasTop}"
+	                                       ShapeStyle="{TemplateBinding PointMarkShapeStyle}"
+	                                       Style="{StaticResource CustomPoint}" />
+	                </Canvas>
+	            </ControlTemplate>
+	        </Setter.Value>
+	    </Setter>
+	</Style>
+{{endregion}}
 
 
 

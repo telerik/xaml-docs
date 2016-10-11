@@ -24,25 +24,25 @@ The __IExtensibleObject__ interface is implemented by types that allow __IExtens
 
 #### __C#__
 
-{{region radchart-features-chart-extensions_0}}
+{{region cs-radchart-features-chart-extensions_0}}
 	public interface IExtension<T>
-	where T : IExtensibleObject<T>
+	    where T : IExtensibleObject<T>
 	{
 	   void Attach(T owner);
 	   void Detach(T owner);
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-chart-extensions_1}}
+{{region vb-radchart-features-chart-extensions_1}}
 	Public Interface IExtension(Of T As IExtensibleObject(Of T))
 	    Sub Attach(ByVal owner As T)
 	    Sub Detach(ByVal owner As T)
 	End Interface
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -62,23 +62,23 @@ In order to utilize the already defined custom tool you need to add it to the __
 
 #### __C#__
 
-{{region radchart-features-chart-extensions_2}}
+{{region cs-radchart-features-chart-extensions_2}}
 	private void UserControl_Loaded(object sender, RoutedEventArgs e)
 	{
-	   CameraExtension cameraExtension = new CameraExtension();
-	   radChart.DefaultView.ChartArea.Extensions.Add(cameraExtension);
+	    CameraExtension cameraExtension = new CameraExtension();
+	    radChart.DefaultView.ChartArea.Extensions.Add(cameraExtension);
 	}
 	private void UserControl_Unloaded(object sender, RoutedEventArgs e)
 	{
-	   radChart.DefaultView.ChartArea.Extensions.Clear();
+	    radChart.DefaultView.ChartArea.Extensions.Clear();
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-chart-extensions_3}}
+{{region vb-radchart-features-chart-extensions_3}}
 	Private Sub UserControl_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim cameraExtension As New CameraExtension()
 	    radChart.DefaultView.ChartArea.Extensions.Add(cameraExtension)
@@ -86,7 +86,7 @@ In order to utilize the already defined custom tool you need to add it to the __
 	Private Sub UserControl_Unloaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    radChart.DefaultView.ChartArea.Extensions.Clear()
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

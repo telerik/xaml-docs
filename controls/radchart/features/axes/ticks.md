@@ -30,7 +30,7 @@ These properties are available for both the x- and the y-axis. Here is an exampl
 
 #### __XAML__
 
-{{region radchart-features-axes-ticks_0}}
+{{region xaml-radchart-features-axes-ticks_0}}
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -38,15 +38,15 @@ These properties are available for both the x- and the y-axis. Here is an exampl
 	                <telerik:ChartArea>
 	                    <telerik:ChartArea.AxisX>
 	                        <telerik:AxisX MajorTicksVisibility="Collapsed"
-	                                        MinorTickPointMultiplier="3"
-	                                        MinorTicksVisibility="Visible">
-	                        </telerik:AxisX>
+	                                       MinorTickPointMultiplier="3"
+	                                       MinorTicksVisibility="Visible" />
 	                    </telerik:ChartArea.AxisX>
+	                </telerik:ChartArea>
 	            </telerik:ChartDefaultView.ChartArea>
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -54,21 +54,21 @@ You can do this in code-behind too.
 
 #### __C#__
 
-{{region radchart-features-axes-ticks_1}}
+{{region cs-radchart-features-axes-ticks_1}}
 	this.radChart.DefaultView.ChartArea.AxisX.MajorTicksVisibility = System.Windows.Visibility.Collapsed;
 	this.radChart.DefaultView.ChartArea.AxisX.MinorTickPointMultiplier = 3;
 	this.radChart.DefaultView.ChartArea.AxisX.MinorTicksVisibility = System.Windows.Visibility.Visible;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-ticks_2}}
+{{region vb-radchart-features-axes-ticks_2}}
 	Me.radChart.DefaultView.ChartArea.AxisX.MajorTicksVisibility = System.Windows.Visibility.Collapsed
 	Me.radChart.DefaultView.ChartArea.AxisX.MinorTickPointMultiplier = 3
 	Me.radChart.DefaultView.ChartArea.AxisX.MinorTicksVisibility = System.Windows.Visibility.Visible
-	{{endregion}}
+{{endregion}}
 
 
 

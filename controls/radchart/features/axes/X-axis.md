@@ -50,69 +50,60 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 
 #### __XAML__
 
-{{region radchart-features-axes-X-axis_0}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping>
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:SplineSeriesDefinition ShowItemLabels="False"
-	                                                        ShowPointMarks="False" />
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="Date"
-	                                             DataPointMember="XValue" />
-	                <telerikCharting:ItemMapping FieldName="Value"
-	                                             DataPointMember="YValue" />
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            ...
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea>
-	                    <telerikCharting:ChartArea.AxisX>
-	                        <telerikCharting:AxisX IsDateTime="True"
-	                                               Step="5"
-	                                               LabelStep="2"
-	                                               DefaultLabelFormat="dd-MMM"
-	                                               StepLabelLevelCount="3"
-	                                               StepLabelLevelHeight="10">
-	                        </telerikCharting:AxisX>
-	                    </telerikCharting:ChartArea.AxisX>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-axes-X-axis_0}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping>
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:SplineSeriesDefinition ShowItemLabels="False" ShowPointMarks="False" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="XValue" FieldName="Date" />
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Value" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <!--  ...  -->
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea>
+	                    <telerik:ChartArea.AxisX>
+	                        <telerik:AxisX DefaultLabelFormat="dd-MMM"
+	                                       IsDateTime="True"
+	                                       LabelStep="2"
+	                                       Step="5"
+	                                       StepLabelLevelCount="3"
+	                                       StepLabelLevelHeight="10" />
+	                    </telerik:ChartArea.AxisX>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-X-axis_1}}
-	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
-	radChart.DefaultView.ChartArea.AxisX.IsDateTime = true;
+{{region cs-radchart-features-axes-X-axis_1}}
+	//....
+	radChart.DefaultView.ChartArea.AxisX.AutoRange = false;
+	radChart.DefaultView.ChartArea.AxisX.MinValue = new DateTime( 2009, 1, 1 ).ToOADate();
+	radChart.DefaultView.ChartArea.AxisX.MaxValue = new DateTime( 2009, 3, 31 ).ToOADate();
 	radChart.DefaultView.ChartArea.AxisX.Step = 5;
 	radChart.DefaultView.ChartArea.AxisX.LabelStep = 2;
-	radChart.DefaultView.ChartArea.AxisX.StepLabelLevelCount = 3;
-	radChart.DefaultView.ChartArea.AxisX.StepLabelLevelHeight = 10;
+	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45;
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
-	....
-	SeriesMapping sm = new SeriesMapping();
-	sm.SeriesDefinition = new SplineSeriesDefinition();
-	....
-	sm.ItemMappings.Add( new ItemMapping( "Date", DataPointMember.XValue ) );
-	sm.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue ) );
-	radChart.SeriesMappings.Add( sm );
-	{{endregion}}
+	//....
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-X-axis_2}}
+{{region vb-radchart-features-axes-X-axis_2}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.IsDateTime = True
 	radChart.DefaultView.ChartArea.AxisX.Step = 5
@@ -120,15 +111,15 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 	radChart.DefaultView.ChartArea.AxisX.StepLabelLevelCount = 3
 	radChart.DefaultView.ChartArea.AxisX.StepLabelLevelHeight = 10
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM"
-	...
+	'...'
 	Dim sm As New SeriesMapping()
 	sm.SeriesDefinition = New SplineSeriesDefinition()
 	sm.SeriesDefinition.ShowItemLabels = False
-	DirectCast( sm.SeriesDefinition, SplineSeriesDefinition ).ShowPointMarks = False
-	sm.ItemMappings.Add(New ItemMapping( "Date", DataPointMember.XValue ) )
-	sm.ItemMappings.Add(New ItemMapping( "Value", DataPointMember.YValue ) )
-	radChart.SeriesMappings.Add( sm )
-	{{endregion}}
+	DirectCast(sm.SeriesDefinition, SplineSeriesDefinition).ShowPointMarks = False
+	sm.ItemMappings.Add(New ItemMapping("Date", DataPointMember.XValue))
+	sm.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
+	radChart.SeriesMappings.Add(sm)
+{{endregion}}
 
 
 ![](images/RadChart_Features_Axes_x_axis_01a.png)
@@ -141,72 +132,73 @@ The following example demonstrates how to customize the __X-Axis__. The chart is
 
 #### __XAML__
 
-{{region radchart-features-axes-X-axis_3}}
-	<telerikChart:RadChart x:Name="radChart"
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping>
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:SplineSeriesDefinition ShowItemLabels="False" ShowPointMarks="False"/>
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="Date" DataPointMember="XValue" />
-	                <telerikCharting:ItemMapping FieldName="Value" DataPointMember="YValue" />
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            ....
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea>
-	                    <telerikCharting:ChartArea.AxisX>
-	                        <telerikCharting:AxisX AutoRange="True" IsDateTime="True" 
-	                            DefaultLabelFormat="dd-MMM" LabelRotationAngle="45">
-	                        </telerikCharting:AxisX>
-	                    </telerikCharting:ChartArea.AxisX>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-axes-X-axis_3}}
+	<telerik:RadChart>
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping>
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:SplineSeriesDefinition ShowItemLabels="False" ShowPointMarks="False" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="XValue" FieldName="Date" />
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Value" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <!--  ....  -->
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea>
+	                    <telerik:ChartArea.AxisX>
+	                        <telerik:AxisX AutoRange="True"
+	                                       DefaultLabelFormat="dd-MMM"
+	                                       IsDateTime="True"
+	                                       LabelRotationAngle="45" />
+	                    </telerik:ChartArea.AxisX>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-X-axis_4}}
+{{region cs-radchart-features-axes-X-axis_4}}
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = true;
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45;
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
-	....
+	//....
 	SeriesMapping sm = new SeriesMapping();
 	sm.SeriesDefinition = new SplineSeriesDefinition();
-	....
+	//....
 	sm.ItemMappings.Add( new ItemMapping( "Date", DataPointMember.XValue ) );
 	sm.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue ) );
 	radChart.SeriesMappings.Add( sm );
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-X-axis_5}}
+{{region vb-radchart-features-axes-X-axis_5}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = True
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM"
-	...
+	'...'
 	Dim sm As New SeriesMapping()
 	sm.SeriesDefinition = New SplineSeriesDefinition()
 	sm.SeriesDefinition.ShowItemLabels = False
-	DirectCast( sm.SeriesDefinition, SplineSeriesDefinition ).ShowPointMarks = False
-	sm.ItemMappings.Add(New ItemMapping( "Date", DataPointMember.XValue ) )
-	sm.ItemMappings.Add(New ItemMapping( "Value", DataPointMember.YValue ) )
-	radChart.SeriesMappings.Add( sm )
-	{{endregion}}
+	DirectCast(sm.SeriesDefinition, SplineSeriesDefinition).ShowPointMarks = False
+	sm.ItemMappings.Add(New ItemMapping("Date", DataPointMember.XValue))
+	sm.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
+	radChart.SeriesMappings.Add(sm)
+{{endregion}}
 
 
 
@@ -219,35 +211,37 @@ However, the chart above could be improved if a bit more ticks are shown. When _
 
 #### __XAML__
 
-{{region radchart-features-axes-X-axis_6}}
-	....
-	<telerikCharting:ChartArea.AxisX>
-	    <telerikCharting:AxisX AutoRange="True" IsDateTime="True" 
-	        DefaultLabelFormat="dd-MMM" TicksDistance="15" LabelRotationAngle="45">
-	    </telerikCharting:AxisX>
-	</telerikCharting:ChartArea.AxisX>
-	....
-	{{endregion}}
+{{region xaml-radchart-features-axes-X-axis_6}}
+	<!--  ....  -->
+	<telerik:ChartArea.AxisX>
+	    <telerik:AxisX AutoRange="True"
+	                   DefaultLabelFormat="dd-MMM"
+	                   IsDateTime="True"
+	                   LabelRotationAngle="45"
+	                   TicksDistance="15" />
+	</telerik:ChartArea.AxisX>
+	<!--  ....  -->
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-X-axis_7}}
-	....
+{{region cs-radchart-features-axes-X-axis_7}}
+	//....
 	radChart.DefaultView.ChartArea.AxisX.TicksDistance = 15;
-	....
-	{{endregion}}
+	//....
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-X-axis_8}}
-	....
+{{region vb-radchart-features-axes-X-axis_8}}
+	'....'
 	radChart.DefaultView.ChartArea.AxisX.TicksDistance = 15
-	....
-	{{endregion}}
+	'....'
+{{endregion}}
 
 ![](images/RadChart_Features_Axes_x_axis_30.png)
 
@@ -257,23 +251,27 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 
 #### __XAML__
 
-{{region radchart-features-axes-X-axis_9}}
-	...
-	<telerikCharting:ChartArea.AxisX>
-	    <telerikCharting:AxisX IsDateTime="True" AutoRange="False"
-	        MinValue="39814.0" MaxValue="39903.0" Step="5"
-	        LabelStep="2" DefaultLabelFormat="dd-MMM" LabelRotationAngle="45">
-	    </telerikCharting:AxisX>
-	</telerikCharting:ChartArea.AxisX>
-	...
-	{{endregion}}
+{{region xaml-radchart-features-axes-X-axis_9}}
+	<!--  ...  -->
+	<telerik:ChartArea.AxisX>
+	    <telerik:AxisX AutoRange="False"
+	                   DefaultLabelFormat="dd-MMM"
+	                   IsDateTime="True"
+	                   LabelRotationAngle="45"
+	                   LabelStep="2"
+	                   MaxValue="39903.0"
+	                   MinValue="39814.0"
+	                   Step="5" />
+	</telerik:ChartArea.AxisX>
+	<!--  ...  -->
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-X-axis_10}}
-	....
+{{region cs-radchart-features-axes-X-axis_10}}
+	//....
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = false;
 	radChart.DefaultView.ChartArea.AxisX.MinValue = new DateTime( 2009, 1, 1 ).ToOADate();
 	radChart.DefaultView.ChartArea.AxisX.MaxValue = new DateTime( 2009, 3, 31 ).ToOADate();
@@ -281,22 +279,22 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 	radChart.DefaultView.ChartArea.AxisX.LabelStep = 2;
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45;
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
-	....
-	{{endregion}}
+	//....
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-X-axis_11}}
+{{region vb-radchart-features-axes-X-axis_11}}
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = False
-	radChart.DefaultView.ChartArea.AxisX.MinValue = New DateTime( 2009, 1, 1 ).ToOADate()
-	radChart.DefaultView.ChartArea.AxisX.MaxValue = New DateTime( 2009, 3, 31 ).ToOADate()
+	radChart.DefaultView.ChartArea.AxisX.MinValue = New DateTime(2009, 1, 1).ToOADate()
+	radChart.DefaultView.ChartArea.AxisX.MaxValue = New DateTime(2009, 3, 31).ToOADate()
 	radChart.DefaultView.ChartArea.AxisX.Step = 5
 	radChart.DefaultView.ChartArea.AxisX.LabelStep = 2
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM"
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadChart_Features_Axes_X_axis_40.png)
 

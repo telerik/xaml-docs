@@ -22,43 +22,38 @@ The usage of a single chart area for displaying hierarchical data in a drill dow
 
 #### __XAML__
 
-{{region radchart-features-drill-down-in-a-single-chart-area_0}}
+{{region xaml-radchart-features-drill-down-in-a-single-chart-area_0}}
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.HierarchicalViewDescriptors>
 	        <telerik:ChartHierarchicalViewDescriptor>
 	            <telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	                <telerik:SeriesMapping>
-	                    <telerik:ItemMapping FieldName="Sales.TotalAmount"
-	                                            DataPointMember="YValue">
-	                    </telerik:ItemMapping>
-	                    <telerik:ItemMapping FieldName="Name"
-	                                            DataPointMember="XCategory"></telerik:ItemMapping>
+	                    <telerik:ItemMapping DataPointMember="YValue" FieldName="Sales.TotalAmount" />
+	                    <telerik:ItemMapping DataPointMember="XCategory" FieldName="Name" />
 	                </telerik:SeriesMapping>
 	            </telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	        </telerik:ChartHierarchicalViewDescriptor>
 	        <telerik:ChartHierarchicalViewDescriptor>
 	            <telerik:ChartHierarchicalViewDescriptor.Relation>
-	                <telerik:PropertyRelation ParentPropertyName="Sales"></telerik:PropertyRelation>
+	                <telerik:PropertyRelation ParentPropertyName="Sales" />
 	            </telerik:ChartHierarchicalViewDescriptor.Relation>
 	            <telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	                <telerik:SeriesMapping>
 	                    <telerik:SeriesMapping.GroupingSettings>
 	                        <telerik:GroupingSettings ShouldFlattenSeries="True">
-	                            <telerik:ChartGroupDescriptor Member="Model"></telerik:ChartGroupDescriptor>
+	                            <telerik:ChartGroupDescriptor Member="Model" />
 	                        </telerik:GroupingSettings>
 	                    </telerik:SeriesMapping.GroupingSettings>
-	                    <telerik:ItemMapping FieldName="Amount"
-	                                            DataPointMember="YValue"
-	                                            AggregateFunction="Sum">
-	                    </telerik:ItemMapping>
-	                    <telerik:ItemMapping FieldName="Model"
-	                                            DataPointMember="XCategory"></telerik:ItemMapping>
+	                    <telerik:ItemMapping AggregateFunction="Sum"
+	                                         DataPointMember="YValue"
+	                                         FieldName="Amount" />
+	                    <telerik:ItemMapping DataPointMember="XCategory" FieldName="Model" />
 	                </telerik:SeriesMapping>
 	            </telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
-	        </telerik:ChartHierarchicalViewDescriptor>                
+	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 

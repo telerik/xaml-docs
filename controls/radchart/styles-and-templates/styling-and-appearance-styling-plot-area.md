@@ -26,17 +26,17 @@ Your next step is to set the created style to the PlotAreaStyle property of the 
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-plot-area_0}}
-	this.radChart.DefaultView.ChartArea.PlotAreaStyle = this.Resources[ "ClipPanelStyle" ] as Style;
-	{{endregion}}
+{{region cs-radchart-styling-and-appearance-styling-plot-area_0}}
+	this.radChart.DefaultView.ChartArea.PlotAreaStyle = this.Resources["ClipPanelStyle"] as Style;
+{{endregion}}
 
 
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-plot-area_1}}
-	Me.radChart.DefaultView.ChartArea.PlotAreaStyle = TryCast(Me.Resources("ClipPanelStyle"), Style)
-	{{endregion}}
+{{region xaml-radchart-styling-and-appearance-styling-plot-area_1}}
+	Me.radChart.DefaultView.ChartArea.PlotAreaStyle = TryCast(Me.Resources(&quot;ClipPanelStyle&quot;), Style)
+{{endregion}}
 
 
 
@@ -48,23 +48,18 @@ Here is the final XAML for the __Style__:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-plot-area_2}}
-	<Style x:Key="ClipPanelStyle"
-	       TargetType="telerikCharting:ClipPanel">
+{{region xaml-radchart-styling-and-appearance-styling-plot-area_2}}
+	<Style x:Key="ClipPanelStyle" TargetType="telerik:ClipPanel">
 	    <Setter Property="Background">
 	        <Setter.Value>
-	            <LinearGradientBrush EndPoint="1,0"
-	                                 StartPoint="0,1"
-	                                 SpreadMethod="Pad">
-	                <GradientStop Color="Black"
-	                              Offset="0" />
-	                <GradientStop Color="#FF00B4FF"
-	                              Offset="1" />
+	            <LinearGradientBrush SpreadMethod="Pad" StartPoint="0,1" EndPoint="1,0">
+	                <GradientStop Offset="0" Color="Black" />
+	                <GradientStop Offset="1" Color="#FF00B4FF" />
 	            </LinearGradientBrush>
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 

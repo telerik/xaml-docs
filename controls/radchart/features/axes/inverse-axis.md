@@ -22,9 +22,9 @@ The following sample code will show you how this can be achieved:
 
 #### __C#__
 
-{{region radchart-features-axes-inverse-axis_0}}
-	InitializeComponent();
-	telerikChart.DefaultView.ChartArea.AxisY.IsInverse = true;
+{{region cs-radchart-features-axes-inverse-axis_0}}
+	           
+	this.radChart.DefaultView.ChartArea.AxisY.IsInverse = true;
 	//Line Chart
 	DataSeries lineSeries = new DataSeries();
 	lineSeries.LegendLabel = "Turnover";
@@ -41,7 +41,7 @@ The following sample code will show you how this can be achieved:
 	lineSeries.Add(new DataPoint() { YValue = 187, XCategory = "Oct" });
 	lineSeries.Add(new DataPoint() { YValue = 193, XCategory = "Nov" });
 	lineSeries.Add(new DataPoint() { YValue = 176, XCategory = "Dec" });
-	telerikChart.DefaultView.ChartArea.DataSeries.Add(lineSeries);
+	this.radChart.DefaultView.ChartArea.DataSeries.Add(lineSeries);
 	//Bar Chart
 	DataSeries barSeries = new DataSeries();
 	barSeries.LegendLabel = "Expenses";
@@ -58,14 +58,12 @@ The following sample code will show you how this can be achieved:
 	barSeries.Add(new DataPoint() { YValue = 85, XCategory = "Oct" });
 	barSeries.Add(new DataPoint() { YValue = 89, XCategory = "Nov" });
 	barSeries.Add(new DataPoint() { YValue = 80, XCategory = "Dec" });
-	telerikChart.DefaultView.ChartArea.DataSeries.Add(barSeries);
-	{{endregion}}
-
-
+	this.radChart.DefaultView.ChartArea.DataSeries.Add(barSeries);
+{{endregion}}
 
 #### __VB.NET__
 
-{{region radchart-features-axes-inverse-axis_1}}
+{{region vb-radchart-features-axes-inverse-axis_1}}
 	InitializeComponent()
 	Dim lineSeries As New DataSeries()
 	    lineSeries.LegendLabel = "Turnover"
@@ -119,7 +117,7 @@ The following sample code will show you how this can be achieved:
 	    dataPoint.XCategory = "Dec"
 	    lineSeries.Add(dataPoint)
 	    telerikChart.DefaultView.ChartArea.DataSeries.Add(lineSeries)
-	    'Bar Chart
+	    'Bar Chart '
 	    Dim barSeries As New DataSeries()
 	    barSeries.LegendLabel = "Expenses"
 	    barSeries.Definition = New BarSeriesDefinition()
@@ -185,15 +183,15 @@ Optionally you may inverse the XAxis too - it will display the categories from D
 
 #### __C#__
 
-{{region radchart-features-axes-inverse-axis_2}}
-	telerikChart.DefaultView.ChartArea.AxisX.IsInverse = true;
-	{{endregion}}
+{{region cs-radchart-features-axes-inverse-axis_2}}
+	this.radChart.DefaultView.ChartArea.AxisX.IsInverse = true;
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-inverse-axis_3}}
+{{region vb-radchart-features-axes-inverse-axis_3}}
 	telerikChart.DefaultView.ChartArea.AxisX.IsInverse = true
 	{{endregion}}
 

@@ -49,7 +49,7 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 
 #### __C#__
 
-{{region radchart-features-format-expressions_0}}
+{{region cs-radchart-features-format-expressions_0}}
 	public class TradeData
 	{
 	    public string Emission
@@ -98,13 +98,13 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 	        set;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-format-expressions_1}}
+{{region vb-radchart-features-format-expressions_1}}
 	Public Class TradeData
 	    Private _Emission As String
 	    Public Property Emission() As String
@@ -196,56 +196,54 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 Take a look at the code snippet below and see how to define custom label format strings for your __RadChart__.
 
 #### __XAML__
 
-{{region radchart-features-format-expressions_2}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea>
-	                    <telerikCharting:ChartArea.AxisX>
-	                        <telerikCharting:AxisX DefaultLabelFormat="dd-MMM" LayoutMode="Inside">
-	                        </telerikCharting:AxisX>
-	                    </telerikCharting:ChartArea.AxisX>
-	                    <telerikCharting:ChartArea.AxisY>
-	                        <telerikCharting:AxisY DefaultLabelFormat="#VAL{C2}">
-	                        </telerikCharting:AxisY>
-	                    </telerikCharting:ChartArea.AxisY>
+{{region xaml-radchart-features-format-expressions_2}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea>
+	                    <telerik:ChartArea.AxisX>
+	                        <telerik:AxisX DefaultLabelFormat="dd-MMM" LayoutMode="Inside" />
+	                    </telerik:ChartArea.AxisX>
+	                    <telerik:ChartArea.AxisY>
+	                        <telerik:AxisY DefaultLabelFormat="#VAL{C2}" />
+	                    </telerik:ChartArea.AxisY>
 	
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	            ....
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping LegendLabel="MSFT">
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:LineSeriesDefinition
-	                    ShowItemLabels="True" ShowItemToolTips="True" 
-	                    ItemLabelFormat="#Y{C2}"
-	                    ItemToolTipFormat="High/Low: #DATAITEM.High{C4}/#DATAITEM.Low{C4}&#x0a;Volume: #DATAITEM.Volume{#,###,###,##0}"/>
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping DataPointMember="YValue" FieldName="Close" />
-	                <telerikCharting:ItemMapping DataPointMember="XValue" FieldName="FromDate" />
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	</telerikChart:RadChart>
-	{{endregion}}
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	            <!--  ....  -->
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping LegendLabel="MSFT">
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:LineSeriesDefinition ItemLabelFormat="#Y{C2}"
+	                                              ItemToolTipFormat="High/Low: #DATAITEM.High{C4}/#DATAITEM.Low{C4}&#x0a;Volume: #DATAITEM.Volume{#,###,###,##0}"
+	                                              ShowItemLabels="True"
+	                                              ShowItemToolTips="True" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Close" />
+	                <telerik:ItemMapping DataPointMember="XValue" FieldName="FromDate" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-format-expressions_3}}
-	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
-	....
+{{region cs-radchart-features-format-expressions_3}}
+	RadChart radChart = new RadChart();
+	//....
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
 	radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Inside;
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "#VAL{C2}";
@@ -258,13 +256,13 @@ Take a look at the code snippet below and see how to define custom label format 
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Close", DataPointMember.YValue ) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "FromDate", DataPointMember.XValue ) );
 	radChart.SeriesMappings.Add( seriesMapping );
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
-{{region radchart-features-format-expressions_4}}
+{{region vb-radchart-features-format-expressions_4}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
-	....
+	'....'
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM"
 	radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Inside
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "#VAL{C2}"
@@ -272,12 +270,11 @@ Take a look at the code snippet below and see how to define custom label format 
 	seriesMapping.SeriesDefinition = New LineSeriesDefinition()
 	seriesMapping.SeriesDefinition.ShowItemToolTips = True
 	seriesMapping.SeriesDefinition.ItemLabelFormat = "#Y{C2}"
-	seriesMapping.SeriesDefinition.ItemToolTipFormat = 
-	    "High/Low: #DATAITEM.High{C4}/#DATAITEM.Low{C4}" & vbLf & "Volume: #DATAITEM.Volume{#,###,###,##0}"
+	seriesMapping.SeriesDefinition.ItemToolTipFormat = "High/Low: #DATAITEM.High{C4}/#DATAITEM.Low{C4}" & vbLf & "Volume: #DATAITEM.Volume{#,###,###,##0}"
 	seriesMapping.ItemMappings.Add(New ItemMapping("Close", DataPointMember.YValue))
 	seriesMapping.ItemMappings.Add(New ItemMapping("FromDate", DataPointMember.XValue))
 	radChart.SeriesMappings.Add(seriesMapping)
-	{{endregion}}
+{{endregion}}
 
 The specified label formats are:
 

@@ -10,10 +10,6 @@ position: 0
 
 # Overview
 
-
-
-## 
-
 __Axes__ in a chart are used to display the dimensions of the data. The __X-axis__ and the __Y-axis__ are contained in the __ChartArea__ and can be customized in XAML or code-behind.
 
 ![](images/RadChart_Features_Axes_Overview_01.png)
@@ -46,34 +42,34 @@ The following example demonstrates how to use the common properties in XAML and 
 
 #### __XAML__
 
-{{region radchart-features-axes-overview_0}}
-	<telerikChart:RadChart>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            ...
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea>
-	                    <telerikCharting:ChartArea.AxisX>
-	                        <telerikCharting:AxisX AutoRange="True" DefaultLabelFormat="0.0" Title="Kilovolt [kV]" />
-	                    </telerikCharting:ChartArea.AxisX>
-	                    <telerikCharting:ChartArea.AxisY>
-	                        <telerikCharting:AxisY AutoRange="False" MinValue="100" MaxValue="200" Step="5"
-	                           DefaultLabelFormat="0" Title="Ampere [A]"/>
-	                    </telerikCharting:ChartArea.AxisY>
-	                    ...
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-axes-overview_0}}
+	<telerik:RadChart>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <!--...-->
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea>
+	                    <telerik:ChartArea.AxisX>
+	                        <telerik:AxisX AutoRange="True" DefaultLabelFormat="0.0" Title="Kilovolt [kV]" />
+	                    </telerik:ChartArea.AxisX>
+	                    <telerik:ChartArea.AxisY>
+	                        <telerik:AxisY AutoRange="False" MinValue="100" MaxValue="200" Step="5"                                
+	                                       DefaultLabelFormat="0" Title="Ampere [A]"/>
+	                    </telerik:ChartArea.AxisY>
+	                    <!--...-->
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-overview_1}}
-	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
+{{region cs-radchart-features-axes-overview_1}}
+	RadChart radChart = new RadChart();
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = true;
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "0.0";
 	radChart.DefaultView.ChartArea.AxisX.Title = "Kilovolt [kV]";
@@ -83,13 +79,13 @@ The following example demonstrates how to use the common properties in XAML and 
 	radChart.DefaultView.ChartArea.AxisY.Step = 5;
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0";
 	radChart.DefaultView.ChartArea.AxisY.Title = "Ampere [A]";
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-overview_2}}
+{{region vb-radchart-features-axes-overview_2}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = True
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "0.0"
@@ -100,43 +96,31 @@ The following example demonstrates how to use the common properties in XAML and 
 	radChart.DefaultView.ChartArea.AxisY.[Step] = 5
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0"
 	radChart.DefaultView.ChartArea.AxisY.Title = "Ampere [A]"
-	{{endregion}}
+{{endregion}}
 
-
-
->tipInstead of setting the __MaxValue__, __MinValue__ and __Step__ properties you can call the __AddRange()__ method. This is more performant, because setting each the properties will trigger recalculations of the axis' values.
+>tip Instead of setting the __MaxValue__, __MinValue__ and __Step__ properties you can call the __AddRange()__ method. This is more performant, because setting each the properties will trigger recalculations of the axis' values.
 
 #### __C#__
 
-{{region radchart-features-axes-overview_3}}
-	telerikChart.DefaultView.ChartArea.AxisX.AddRange( 100, 200, 5 );
-	{{endregion}}
+{{region cs-radchart-features-axes-overview_3}}
+	radChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5);
+{{endregion}}
 
-
-
-#### __XAML__
-
-{{region radchart-features-axes-overview_4}}
-	telerikChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5)
-	{{endregion}}
-
-
+#### __VB.NET__
+{{region vb-radchart-features-axes-overview_4}}
+	radChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5)
+{{endregion}}
 
 In the code snippet above, both the X and the Y axes are customized. The changes done for the __Y-axis__ are several, but probably the most important of them is that the range auto generation (__AutoRange = False__) for that axis is stopped and this is done manually by defining values for __MinValue__, __MaxValue__ and __Step.__ The result is __Y-axis__ with values starting from 100, ending at 200 with tick placed on each 5 units.
 
 The manual range definition is very useful feature because it allows you to justify the visualization of your axes better.
 ![](images/RadChart_Features_Axes_Overview_02.png)
 
-# See Also
+## See Also
 
  * [X-Axis]({%slug radchart-features-axes-x-axis%})
-
  * [Y-Axis]({%slug radchart-features-axes-y-axis%})
-
  * [Multiple Y axes]({%slug radchart-features-axes-multiple-y-axes%})
-
  * [Striplines and Gridlines]({%slug radchart-features-axes-striplines-and-gridlines%})
-
  * [Styling the Axes Overview]({%slug radchart-styling-and-appearance-styling-axes-overview%})
-
  * [RadChart Visual Structure]({%slug radchart-general-information-visual-structure%})

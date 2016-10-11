@@ -24,33 +24,33 @@ The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnable
 
 #### __XAML__
 
-{{region radchart-features-smart-labels_0}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea SmartLabelsEnabled="True" />
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-smart-labels_0}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea SmartLabelsEnabled="True" />
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-smart-labels_1}}
+{{region cs-radchart-features-smart-labels_1}}
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-smart-labels_2}}
-	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True;
-	{{endregion}}
+{{region vb-radchart-features-smart-labels_2}}
+	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
+{{endregion}}
 
 
 
@@ -68,31 +68,30 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 
 #### __XAML__
 
-{{region radchart-features-smart-labels_3}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.DefaultSeriesDefinition>
-	        <telerikCharting:LineSeriesDefinition>
-	            <telerikCharting:LineSeriesDefinition.LabelSettings>
-	                <telerikCharting:LabelSettings Distance="10"
-	                                               ShowConnectors="True" />
-	            </telerikCharting:LineSeriesDefinition.LabelSettings>
-	        </telerikCharting:LineSeriesDefinition>
-	    </telerikChart:RadChart.DefaultSeriesDefinition>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea SmartLabelsEnabled="True"></telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-smart-labels_3}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.DefaultSeriesDefinition>
+	        <telerik:LineSeriesDefinition>
+	            <telerik:LineSeriesDefinition.LabelSettings>
+	                <telerik:LabelSettings Distance="10" ShowConnectors="True" />
+	            </telerik:LineSeriesDefinition.LabelSettings>
+	        </telerik:LineSeriesDefinition>
+	    </telerik:RadChart.DefaultSeriesDefinition>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea SmartLabelsEnabled="True" />
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-smart-labels_4}}
+{{region cs-radchart-features-smart-labels_4}}
 	LabelSettings settings = new LabelSettings();
 	settings.Distance = 10;
 	settings.ShowConnectors = true;
@@ -100,13 +99,13 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 	lineSeries.LabelSettings = settings;
 	this.radChart.DefaultSeriesDefinition = new LineSeriesDefinition();
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-smart-labels_5}}
+{{region vb-radchart-features-smart-labels_5}}
 	Dim settings As New LabelSettings()
 	settings.Distance = 10
 	settings.ShowConnectors = True
@@ -114,7 +113,7 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 	lineSeries.LabelSettings = settings
 	Me.radChart.DefaultSeriesDefinition = New LineSeriesDefinition()
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
-	{{endregion}}
+{{endregion}}
     
     
 
@@ -134,32 +133,32 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 
 #### __XAML__
 
-{{region radchart-features-smart-labels_6}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.DefaultSeriesDefinition>
-	        <telerikCharting:BarSeriesDefinition>
-	            <telerikCharting:BarSeriesDefinition.LabelSettings>
-	                <telerikCharting:BarLabelSettings Distance="10"
-	                                                  LabelDisplayMode="Outside"
-	                                                  ShowConnectors="False" />
-	            </telerikCharting:BarSeriesDefinition.LabelSettings>
-	        </telerikCharting:BarSeriesDefinition>
-	    </telerikChart:RadChart.DefaultSeriesDefinition>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea SmartLabelsEnabled="True"></telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-smart-labels_6}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.DefaultSeriesDefinition>
+	        <telerik:BarSeriesDefinition>
+	            <telerik:BarSeriesDefinition.LabelSettings>
+	                <telerik:BarLabelSettings Distance="10"
+	                                          LabelDisplayMode="Outside"
+	                                          ShowConnectors="False" />
+	            </telerik:BarSeriesDefinition.LabelSettings>
+	        </telerik:BarSeriesDefinition>
+	    </telerik:RadChart.DefaultSeriesDefinition>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea SmartLabelsEnabled="True" />
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-smart-labels_7}}
+{{region cs-radchart-features-smart-labels_7}}
 	BarLabelSettings barSettings = new BarLabelSettings();
 	barSettings.Distance = 10;
 	barSettings.LabelDisplayMode = LabelDisplayMode.Outside;
@@ -168,13 +167,13 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 	barSeries.LabelSettings = barSettings;
 	this.radChart.DefaultSeriesDefinition = barSeries;
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-smart-labels_8}}
+{{region vb-radchart-features-smart-labels_8}}
 	Dim barSettings As New BarLabelSettings()
 	barSettings.Distance = 10
 	barSettings.LabelDisplayMode = LabelDisplayMode.Outside
@@ -183,7 +182,7 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 	barSeries.LabelSettings = barSettings
 	Me.radChart.DefaultSeriesDefinition = barSeries
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
-	{{endregion}}
+{{endregion}}
 
     
 ![](images/RadChart_Features_SmartLabels_02.png)
@@ -198,30 +197,29 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 
 #### __XAML__
 
-{{region radchart-features-smart-labels_9}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.DefaultSeriesDefinition>
-	        <telerikCharting:PieSeriesDefinition>
-	            <telerikCharting:PieSeriesDefinition.LabelSettings>
-	                <telerikCharting:RadialLabelSettings SpiderModeEnabled="True"
-	                                                     ShowConnectors="True" />
-	            </telerikCharting:PieSeriesDefinition.LabelSettings>
-	        </telerikCharting:PieSeriesDefinition>
-	    </telerikChart:RadChart.DefaultSeriesDefinition>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea SmartLabelsEnabled="True"></telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-smart-labels_9}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.DefaultSeriesDefinition>
+	        <telerik:PieSeriesDefinition>
+	            <telerik:PieSeriesDefinition.LabelSettings>
+	                <telerik:RadialLabelSettings ShowConnectors="True" SpiderModeEnabled="True" />
+	            </telerik:PieSeriesDefinition.LabelSettings>
+	        </telerik:PieSeriesDefinition>
+	    </telerik:RadChart.DefaultSeriesDefinition>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea SmartLabelsEnabled="True" />
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 #### __C#__
 
-{{region radchart-features-smart-labels_10}}
+{{region cs-radchart-features-smart-labels_10}}
 	RadialLabelSettings radialSettings = new RadialLabelSettings();
 	radialSettings.SpiderModeEnabled = true;
 	radialSettings.ShowConnectors = true;
@@ -234,7 +232,7 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 
 #### __VB.NET__
 
-{{region radchart-features-smart-labels_11}}
+{{region vb-radchart-features-smart-labels_11}}
 	Dim radialSettings As New RadialLabelSettings()
 	radialSettings.SpiderModeEnabled = True
 	radialSettings.ShowConnectors = True
@@ -242,7 +240,7 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 	pieSeries.LabelSettings = radialSettings
 	Me.radChart.DefaultSeriesDefinition = pieSeries
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
-	{{endregion}}
+{{endregion}}
 
 Here is a snapshot of the result.
  ![](images/RadChart_Features_SmartLabels_03.png)

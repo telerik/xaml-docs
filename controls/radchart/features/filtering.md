@@ -36,47 +36,47 @@ Here is an example of implementing filtering.
 
 #### __XAML__
 
-{{region radchart-features-filtering_0}}
-	xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"
-	{{endregion}}
+{{region xaml-radchart-features-filtering_0}}
+	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
+{{endregion}}
 
 
 
 #### __XAML__
 
-{{region radchart-features-filtering_1}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.FilterDescriptors>
-	        <telerikCharting:ChartFilterDescriptor Member="Quantity"
-	                                               Operator="IsLessThanOrEqualTo"
-	                                               Value="150" />
-	    </telerikChart:RadChart.FilterDescriptors>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-filtering_1}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.FilterDescriptors>
+	        <telerik:ChartFilterDescriptor Member="Quantity"
+	                                       Operator="IsLessThanOrEqualTo"
+	                                       Value="150" />
+	    </telerik:RadChart.FilterDescriptors>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-filtering_2}}
+{{region cs-radchart-features-filtering_2}}
 	ChartFilterDescriptor descriptor = new ChartFilterDescriptor();
 	descriptor.Member = "Quantity";
 	descriptor.Operator = FilterOperator.IsLessThanOrEqualTo;
 	descriptor.Value = 150;
-	this.radChart.FilterDescriptors.Add( descriptor );
-	{{endregion}}
+	this.radChart.FilterDescriptors.Add(descriptor);
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-filtering_3}}
+{{region vb-radchart-features-filtering_3}}
 	Dim descriptor As New ChartFilterDescriptor()
 	descriptor.Member = "Quantity"
 	descriptor.[Operator] = FilterOperator.IsLessThanOrEqualTo
 	descriptor.Value = 150
 	Me.radChart.FilterDescriptors.Add(descriptor)
-	{{endregion}}
+{{endregion}}
     
 Here is a snapshot of the result.
     ![](images/RadChart_Features_Filtering_02.png)

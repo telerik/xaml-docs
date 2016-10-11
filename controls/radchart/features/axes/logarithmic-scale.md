@@ -20,25 +20,25 @@ Here is an example of a __RadChart__ that visualizes the following values - 10, 
 
 #### __XAML__
 
-{{region radchart-features-axes-logarithmic-scale_0}}
-	<telerikChart:RadChart x:Name="radChart" />
-	{{endregion}}
+{{region xaml-radchart-features-axes-logarithmic-scale_0}}
+	<telerik:RadChart x:Name="radChart" />
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-logarithmic-scale_1}}
+{{region cs-radchart-features-axes-logarithmic-scale_1}}
 	this.radChart.ItemsSource = new int[] { 10, 100, 1000, 10000, 100000, 1000000 };
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-logarithmic-scale_2}}
+{{region vb-radchart-features-axes-logarithmic-scale_2}}
 	Me.radChart.ItemsSource = New Integer() {10, 100, 1000, 10000, 100000, 1000000}
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadChart_Features_Axes_Logarithmic_Scale_01.png)
 
@@ -46,37 +46,37 @@ Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 
 #### __XAML__
 
-{{region radchart-features-axes-logarithmic-scale_3}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea>
-	                    <telerikCharting:ChartArea.AxisY>
-	                        <telerikCharting:AxisY IsLogarithmic="True" />
-	                    </telerikCharting:ChartArea.AxisY>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-axes-logarithmic-scale_3}}
+	<telerik:RadChart>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea>
+	                    <telerik:ChartArea.AxisY>
+	                        <telerik:AxisY IsLogarithmic="True" />
+	                    </telerik:ChartArea.AxisY>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-logarithmic-scale_4}}
+{{region cs-radchart-features-axes-logarithmic-scale_4}}
 	this.radChart.DefaultView.ChartArea.AxisY.IsLogarithmic = true;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-logarithmic-scale_5}}
+{{region vb-radchart-features-axes-logarithmic-scale_5}}
 	Me.radChart.DefaultView.ChartArea.AxisY.IsLogarithmic = True
-	{{endregion}}
+{{endregion}}
 
 
 

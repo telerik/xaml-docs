@@ -28,7 +28,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_0}}
+{{region cs-radchart-howto-integration-radcontextmenu-wpf_0}}
 	public class MenuItem : INotifyPropertyChanged
 	{
 	    private bool isChecked;
@@ -203,15 +203,16 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        }
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_1}}
+{{region vb-radchart-howto-integration-radcontextmenu-wpf_1}}
 	Public Class MenuItem
 	    Implements INotifyPropertyChanged
+	
 	    Private m_isChecked As Boolean
 	    Private m_isEnabled As Boolean = True
 	    Private m_text As String
@@ -226,8 +227,6 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	    Public Sub New()
 	        Me.m_items = New MenuItemsCollection(Me)
 	    End Sub
-	
-	    Public Event PropertyChanged As PropertyChangedEventHandler
 	
 	    Public Property Text() As String
 	        Get
@@ -341,10 +340,10 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	    End Property
 	
 	    Private Sub UncheckOtherItemsInGroup()
-	        Dim groupItems As IEnumerable(Of MenuItem) = Me.Parent.Items.Where(Function(ByVal item As MenuItem) item.GroupName = Me.GroupName)
+	        Dim groupItems As IEnumerable(Of MenuItem) = Me.Parent.Items.Where(Function(item As MenuItem) item.GroupName = Me.GroupName)
 	        For Each item As MenuItem In groupItems
-	            If item <> Me Then
-	                item.isChecked = False
+	            If item IsNot Me Then
+	                item.IsChecked = False
 	                item.OnPropertyChanged("IsChecked")
 	            End If
 	        Next
@@ -353,8 +352,10 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	    Private Sub OnPropertyChanged(ByVal propertyName As String)
 	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 	    End Sub
+	
+	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -362,7 +363,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_2}}
+{{region cs-radchart-howto-integration-radcontextmenu-wpf_2}}
 	public class MenuItemsCollection : ObservableCollection<MenuItem>
 	{
 	    private MenuItem parent;
@@ -391,13 +392,13 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        base.InsertItem( index, item );
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_3}}
+{{region vb-radchart-howto-integration-radcontextmenu-wpf_3}}
 	Public Class MenuItemsCollection
 	    Inherits ObservableCollection(Of MenuItem)
 	    Private m_parent As MenuItem
@@ -424,7 +425,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        MyBase.InsertItem(index, item)
 	    End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -432,7 +433,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_4}}
+{{region cs-radchart-howto-integration-radcontextmenu-wpf_4}}
 	public class ChartDataItem : INotifyPropertyChanged
 	{
 	    private double yValue;
@@ -472,19 +473,17 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        }
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_5}}
+{{region vb-radchart-howto-integration-radcontextmenu-wpf_5}}
 	Public Class ChartDataItem
 	    Implements INotifyPropertyChanged
 	    Private m_yValue As Double
 	    Private m_menuItems As MenuItemsCollection
-	
-	    Public Event PropertyChanged As PropertyChangedEventHandler
 	
 	    Public Property YValue() As Double
 	        Get
@@ -511,8 +510,10 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	    Private Sub OnPropertyChanged(ByVal propertyName As String)
 	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 	    End Sub
+	
+	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -520,21 +521,21 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_6}}
+{{region cs-radchart-howto-integration-radcontextmenu-wpf_6}}
 	public class ChartDataCollection : ObservableCollection<ChartDataItem>
 	{
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_7}}
+{{region vb-radchart-howto-integration-radcontextmenu-wpf_7}}
 	Public Class ChartDataCollection
 	    Inherits ObservableCollection(Of ChartDataItem)
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -542,7 +543,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_8}}
+{{region cs-radchart-howto-integration-radcontextmenu-wpf_8}}
 	public class ChartViewModel
 	{
 	    private Random rand = new Random( DateTime.Now.Millisecond );
@@ -575,13 +576,13 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        return item;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_9}}
+{{region vb-radchart-howto-integration-radcontextmenu-wpf_9}}
 	Public Class ChartViewModel
 	    Private rand As New Random(DateTime.Now.Millisecond)
 	    Private m_data As ChartDataCollection
@@ -611,7 +612,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        Return item
 	    End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -619,20 +620,20 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __XAML__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_10}}
+{{region xaml-radchart-howto-integration-radcontextmenu-wpf_10}}
 	<Style x:Key="CustomStyle"
-	       TargetType="telerikCharting:Bar">
+	       TargetType="telerik:Bar">
 	    <Setter Property="Template">
 	        <Setter.Value>
-	            <ControlTemplate TargetType="telerikCharting:Bar">
+	                    <ControlTemplate TargetType="telerik:Bar">
 	                <Canvas Opacity="0"
 	                        x:Name="PART_MainContainer">
-	                    <telerikNavigation:RadContextMenu.ContextMenu>
-	                        <telerikNavigation:RadContextMenu ItemsSource="{Binding DataItem.MenuItems}"
+	                            <telerik:RadContextMenu.ContextMenu>
+	                                <telerik:RadContextMenu ItemsSource="{Binding DataItem.MenuItems}"
 	                                                          ItemTemplate="{StaticResource MenuItemTemplate}"
 	                                                          ItemClick="OnContextMenuClick">
-	                            <telerikNavigation:RadContextMenu.ItemContainerStyle>
-	                                <Style TargetType="telerikNavigation:RadMenuItem">
+	                                    <telerik:RadContextMenu.ItemContainerStyle>
+	                                            <Style TargetType="telerik:RadMenuItem">
 	                                    <Setter Property="IsCheckable"
 	                                            Value="{Binding IsCheckable}" />
 	                                    <Setter Property="IsChecked"
@@ -646,9 +647,9 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	                                    <Setter Property="Icon"
 	                                            Value="{Binding Image}" />
 	                                </Style>
-	                            </telerikNavigation:RadContextMenu.ItemContainerStyle>
-	                        </telerikNavigation:RadContextMenu>
-	                    </telerikNavigation:RadContextMenu.ContextMenu>
+	                            </telerik:RadContextMenu.ItemContainerStyle>
+	                        </telerik:RadContextMenu>
+	                    </telerik:RadContextMenu.ContextMenu>
 	                    <Rectangle x:Name="PART_DefiningGeometry"
 	                               Height="{TemplateBinding ItemActualHeight}"
 	                               Width="{TemplateBinding ItemActualWidth}"
@@ -675,7 +676,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -691,113 +692,103 @@ The code snippet below shows you the full XAML code:
 
 #### __XAML__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_11}}
-	<Window x:Class="RadChartAndRadContextMenuWPF.Window1"
-	        Title="Window1"
-	        Height="300"
-	        Width="300"
-	        xmlns:telerikChart="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Charting"
-	        xmlns:mscorlib="clr-namespace:System;assembly=mscorlib"
-	        xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"
-	        xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
-	        xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls">
-	    <Grid>
-	        <Grid.Resources>
-	            <HierarchicalDataTemplate x:Key="MenuItemTemplate"
-	                                      ItemsSource="{Binding Items}">
-	                <TextBlock Text="{Binding Text}" />
-	            </HierarchicalDataTemplate>
-	            <mscorlib:Double x:Key="BarRadiusX">2</mscorlib:Double>
-	            <mscorlib:Double x:Key="BarRadiusY">2</mscorlib:Double>
-	            <LinearGradientBrush x:Key="BarMaskBrush"
-	                                 EndPoint="1,0.5"
-	                                 StartPoint="0,0.5">
-	                <GradientStop Color="#00FFFFFF"
-	                              Offset="0" />
-	                <GradientStop Color="#00FFFFFF"
-	                              Offset="1" />
-	                <GradientStop Color="#26000000"
-	                              Offset="0.2" />
-	                <GradientStop Color="#66000000"
-	                              Offset="0.2" />
-	            </LinearGradientBrush>
-	            <SolidColorBrush x:Key="BarOpacityMaskBrush"
-	                             Color="#FF000000" />
-	            <SolidColorBrush x:Key="BarTopMaskBrush"
-	                             Color="Transparent" />
-	            <Style x:Key="CustomStyle"
-	                   TargetType="telerikCharting:Bar">
-	                <Setter Property="Template">
-	                    <Setter.Value>
-	                        <ControlTemplate TargetType="telerikCharting:Bar">
-	                            <Canvas Opacity="0"
-	                                    x:Name="PART_MainContainer">
-	                                <telerikNavigation:RadContextMenu.ContextMenu>
-	                                    <telerikNavigation:RadContextMenu ItemsSource="{Binding DataItem.MenuItems}"
-	                                                                      ItemTemplate="{StaticResource MenuItemTemplate}"
-	                                                                      ItemClick="OnContextMenuClick">
-	                                        <telerikNavigation:RadContextMenu.ItemContainerStyle>
-	                                            <Style TargetType="telerikNavigation:RadMenuItem">
-	                                                <Setter Property="IsCheckable"
-	                                                        Value="{Binding IsCheckable}" />
-	                                                <Setter Property="IsChecked"
-	                                                        Value="{Binding IsChecked}" />
-	                                                <Setter Property="IsSeparator"
-	                                                        Value="{Binding IsSeparator}" />
-	                                                <Setter Property="IsEnabled"
-	                                                        Value="{Binding IsEnabled}" />
-	                                                <Setter Property="StaysOpenOnClick"
-	                                                        Value="{Binding StaysOpenOnClick}" />
-	                                                <Setter Property="Icon"
-	                                                        Value="{Binding Image}" />
-	                                            </Style>
-	                                        </telerikNavigation:RadContextMenu.ItemContainerStyle>
-	                                    </telerikNavigation:RadContextMenu>
-	                                </telerikNavigation:RadContextMenu.ContextMenu>
-	                                <Rectangle x:Name="PART_DefiningGeometry"
-	                                           Height="{TemplateBinding ItemActualHeight}"
-	                                           Width="{TemplateBinding ItemActualWidth}"
-	                                           Style="{TemplateBinding ItemStyle}"
-	                                           RadiusX="{StaticResource BarRadiusX}"
-	                                           RadiusY="{StaticResource BarRadiusY}" />
-	                                <Rectangle Height="{TemplateBinding ItemActualHeight}"
-	                                           Width="{TemplateBinding ItemActualWidth}"
-	                                           RadiusX="{StaticResource BarRadiusX}"
-	                                           RadiusY="{StaticResource BarRadiusY}"
-	                                           OpacityMask="{StaticResource BarOpacityMaskBrush}"
-	                                           Fill="{StaticResource BarMaskBrush}" />
-	                                <Rectangle Height="{TemplateBinding ItemActualHeight}"
-	                                           Width="{TemplateBinding ItemActualWidth}"
-	                                           RadiusX="{StaticResource BarRadiusX}"
-	                                           RadiusY="{StaticResource BarRadiusY}"
-	                                           Fill="{StaticResource BarTopMaskBrush}" />
-	                                <Canvas.RenderTransform>
-	                                    <ScaleTransform x:Name="PART_AnimationTransform"
-	                                                    ScaleY="0" />
-	                                </Canvas.RenderTransform>
-	                            </Canvas>
-	                        </ControlTemplate>
-	                    </Setter.Value>
-	                </Setter>
-	            </Style>
-	        </Grid.Resources>
-	        <telerikChart:RadChart x:Name="radChart"
-	                               ItemsSource="{Binding Data}">
-	            <telerikChart:RadChart.SeriesMappings>
-	                <telerikCharting:SeriesMapping>
-	                    <telerikCharting:SeriesMapping.SeriesDefinition>
-	                        <telerikCharting:BarSeriesDefinition ItemStyle="{StaticResource CustomStyle}" />
-	                    </telerikCharting:SeriesMapping.SeriesDefinition>
-	                    <telerikCharting:SeriesMapping.ItemMappings>
-	                        <telerikCharting:ItemMapping FieldName="YValue"
-	                                                     DataPointMember="YValue" />
-	                    </telerikCharting:SeriesMapping.ItemMappings>
-	                </telerikCharting:SeriesMapping>
-	            </telerikChart:RadChart.SeriesMappings>
-	        </telerikChart:RadChart>
-	    </Grid>
-	</Window>
-	{{endregion}}
+{{region xaml-radchart-howto-integration-radcontextmenu-wpf_11}}
+	<Grid>
+	    <Grid.Resources>
+	        <HierarchicalDataTemplate x:Key="MenuItemTemplate"
+	                                  ItemsSource="{Binding Items}">
+	            <TextBlock Text="{Binding Text}" />
+	        </HierarchicalDataTemplate>
+	        <mscorlib:Double x:Key="BarRadiusX">2</mscorlib:Double>
+	        <mscorlib:Double x:Key="BarRadiusY">2</mscorlib:Double>
+	        <LinearGradientBrush x:Key="BarMaskBrush"
+	                             EndPoint="1,0.5"
+	                             StartPoint="0,0.5">
+	            <GradientStop Color="#00FFFFFF"
+	                          Offset="0" />
+	            <GradientStop Color="#00FFFFFF"
+	                          Offset="1" />
+	            <GradientStop Color="#26000000"
+	                          Offset="0.2" />
+	            <GradientStop Color="#66000000"
+	                          Offset="0.2" />
+	        </LinearGradientBrush>
+	        <SolidColorBrush x:Key="BarOpacityMaskBrush"
+	                         Color="#FF000000" />
+	        <SolidColorBrush x:Key="BarTopMaskBrush"
+	                         Color="Transparent" />
+	        <Style x:Key="CustomStyle"
+	               TargetType="telerik:Bar">
+	            <Setter Property="Template">
+	                <Setter.Value>
+	                        <ControlTemplate TargetType="telerik:Bar">
+	                        <Canvas Opacity="0"
+	                                x:Name="PART_MainContainer">
+	                                <telerik:RadContextMenu.ContextMenu>
+	                                    <telerik:RadContextMenu ItemsSource="{Binding DataItem.MenuItems}"
+	                                                                  ItemTemplate="{StaticResource MenuItemTemplate}"
+	                                                                  ItemClick="OnContextMenuClick">
+	                                        <telerik:RadContextMenu.ItemContainerStyle>
+	                                            <Style TargetType="telerik:RadMenuItem">
+	                                            <Setter Property="IsCheckable"
+	                                                    Value="{Binding IsCheckable}" />
+	                                            <Setter Property="IsChecked"
+	                                                    Value="{Binding IsChecked}" />
+	                                            <Setter Property="IsSeparator"
+	                                                    Value="{Binding IsSeparator}" />
+	                                            <Setter Property="IsEnabled"
+	                                                    Value="{Binding IsEnabled}" />
+	                                            <Setter Property="StaysOpenOnClick"
+	                                                    Value="{Binding StaysOpenOnClick}" />
+	                                            <Setter Property="Icon"
+	                                                    Value="{Binding Image}" />
+	                                        </Style>
+	                                    </telerik:RadContextMenu.ItemContainerStyle>
+	                                </telerik:RadContextMenu>
+	                            </telerik:RadContextMenu.ContextMenu>
+	                            <Rectangle x:Name="PART_DefiningGeometry"
+	                                       Height="{TemplateBinding ItemActualHeight}"
+	                                       Width="{TemplateBinding ItemActualWidth}"
+	                                       Style="{TemplateBinding ItemStyle}"
+	                                       RadiusX="{StaticResource BarRadiusX}"
+	                                       RadiusY="{StaticResource BarRadiusY}" />
+	                            <Rectangle Height="{TemplateBinding ItemActualHeight}"
+	                                       Width="{TemplateBinding ItemActualWidth}"
+	                                       RadiusX="{StaticResource BarRadiusX}"
+	                                       RadiusY="{StaticResource BarRadiusY}"
+	                                       OpacityMask="{StaticResource BarOpacityMaskBrush}"
+	                                       Fill="{StaticResource BarMaskBrush}" />
+	                            <Rectangle Height="{TemplateBinding ItemActualHeight}"
+	                                       Width="{TemplateBinding ItemActualWidth}"
+	                                       RadiusX="{StaticResource BarRadiusX}"
+	                                       RadiusY="{StaticResource BarRadiusY}"
+	                                       Fill="{StaticResource BarTopMaskBrush}" />
+	                            <Canvas.RenderTransform>
+	                                <ScaleTransform x:Name="PART_AnimationTransform"
+	                                                ScaleY="0" />
+	                            </Canvas.RenderTransform>
+	                        </Canvas>
+	                    </ControlTemplate>
+	                </Setter.Value>
+	            </Setter>
+	        </Style>
+	    </Grid.Resources>
+	        <telerik:RadChart x:Name="radChart"
+	                           ItemsSource="{Binding Data}">
+	            <telerik:RadChart.SeriesMappings>
+	                <telerik:SeriesMapping>
+	                    <telerik:SeriesMapping.SeriesDefinition>
+	                        <telerik:BarSeriesDefinition ItemStyle="{StaticResource CustomStyle}" />
+	                </telerik:SeriesMapping.SeriesDefinition>
+	                    <telerik:SeriesMapping.ItemMappings>
+	                        <telerik:ItemMapping FieldName="YValue"
+	                                                 DataPointMember="YValue" />
+	                </telerik:SeriesMapping.ItemMappings>
+	            </telerik:SeriesMapping>
+	        </telerik:RadChart.SeriesMappings>
+	    </telerik:RadChart>
+	</Grid>
+{{endregion}}
 
 
 
@@ -805,29 +796,32 @@ The code snippet below shows you the full XAML code:
 
 #### __XAML__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_12}}
-	<telerikChart:RadChart x:Name="radChart"
-	                       ItemsSource="{Binding Data}">
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping>
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:BarSeriesDefinition ItemStyle="{StaticResource CustomStyle}" />
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="YValue"
-	                                             DataPointMember="YValue" />
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-howto-integration-radcontextmenu-wpf_12}}
+	<telerik:RadChart x:Name="radChart"
+	   ItemsSource="{Binding Data}">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping>
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:BarSeriesDefinition ItemStyle="{StaticResource CustomStyle}" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping FieldName="YValue"
+	                         DataPointMember="YValue" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_13}}
-	this.DataContext = new ChartViewModel();
+{{region cs-radchart-howto-integration-radcontextmenu-wpf_13}}
+	public void SetDataContex()
+	{
+	    this.DataContext = new ChartViewModel();
+	}
 	private void OnContextMenuClick(object sender, Telerik.Windows.RadRoutedEventArgs e)
 	{
 	    // Get the clicked item
@@ -837,15 +831,17 @@ The code snippet below shows you the full XAML code:
 	        //...
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-integration-radcontextmenu-wpf_14}}
-	
-	{{endregion}}
+{{region vb-radchart-howto-integration-radcontextmenu-wpf_14}}
+	Dim menu As RadContextMenu = CType(sender, RadContextMenu)
+	Dim clickedBar As Bar = menu.GetClickedElement(Of Bar)()
+	Dim clickedBarYValue As Double = clickedBar.DataPoint.YValue
+{{endregion}}
 
 
 

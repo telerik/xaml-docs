@@ -18,8 +18,8 @@ If, for example, you want to show the monthly sales of cars for the year 2009 on
 
 #### __XAML__
 
-{{region radchart-populating-with-data-creating-chart-declaratively_5}}
-	<telerikChart:RadChart UseDefaultLayout="False" Height="362" Width="1042" VerticalAlignment="Bottom">
+{{region xaml-radchart-populating-with-data-creating-chart-declaratively_5}}
+	<telerik:RadChart UseDefaultLayout="False" Height="362" Width="1042" VerticalAlignment="Bottom">
 	    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,10,0,20">
 	        <Grid.RowDefinitions>
 	            <RowDefinition Height="Auto" />
@@ -30,59 +30,60 @@ If, for example, you want to show the monthly sales of cars for the year 2009 on
 	            <ColumnDefinition Width="*" />
 	            <ColumnDefinition Width="Auto" />
 	        </Grid.ColumnDefinitions>
-	        <telerikCharting:ChartTitle Margin="0,0,0,10" HorizontalAlignment="Center" Content="Monthly Sales for 2009" 
+	        <telerik:ChartTitle Margin="0,0,0,10" HorizontalAlignment="Center" Content="Monthly Sales for 2009" 
 	            Grid.Row="0" Grid.Column="0" />
-	        <telerikCharting:ChartArea HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+	        <telerik:ChartArea HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
 	            Grid.Row="1" Grid.Column="0">
-	            <telerikCharting:ChartArea.DataSeries>
+	            <telerik:ChartArea.DataSeries>
 	                <!-- Line Chart -->
-	                <telerikCharting:DataSeries>
-	                    <telerikCharting:DataSeries.Definition>
-	                        <telerikCharting:LineSeriesDefinition >
-	                        </telerikCharting:LineSeriesDefinition>
-	                    </telerikCharting:DataSeries.Definition>
-	                    <telerikCharting:DataPoint YValue="38" XCategory="Jan"/>
-	                    <telerikCharting:DataPoint YValue="65" XCategory="Feb"/>
-	                    <telerikCharting:DataPoint YValue="30" XCategory="Mar"/>
-	                    <telerikCharting:DataPoint YValue="63" XCategory="Apr"/>
-	                    <telerikCharting:DataPoint YValue="98" XCategory="May"/>
-	                    <telerikCharting:DataPoint YValue="47" XCategory="Jun"/>
-	                    <telerikCharting:DataPoint YValue="91" XCategory="Jul"/>
-	                    <telerikCharting:DataPoint YValue="99" XCategory="Aug"/>
-	                    <telerikCharting:DataPoint YValue="32" XCategory="Sep"/>
-	                    <telerikCharting:DataPoint YValue="77" XCategory="Oct"/>
-	                    <telerikCharting:DataPoint YValue="62" XCategory="Nov"/>
-	                    <telerikCharting:DataPoint YValue="38" XCategory="Dec"/>
-	                </telerikCharting:DataSeries>
-	            </telerikCharting:ChartArea.DataSeries>
-	        </telerikCharting:ChartArea>
-	        <telerikCharting:ChartTitle HorizontalAlignment="Center" Content="Sales per Manufacturer"
+	                <telerik:DataSeries>
+	                    <telerik:DataSeries.Definition>
+	                        <telerik:LineSeriesDefinition />
+	                    </telerik:DataSeries.Definition>
+	                    <telerik:DataPoint YValue="38" XCategory="Jan"/>
+	                    <telerik:DataPoint YValue="65" XCategory="Feb"/>
+	                    <telerik:DataPoint YValue="30" XCategory="Mar"/>
+	                    <telerik:DataPoint YValue="63" XCategory="Apr"/>
+	                    <telerik:DataPoint YValue="98" XCategory="May"/>
+	                    <telerik:DataPoint YValue="47" XCategory="Jun"/>
+	                    <telerik:DataPoint YValue="91" XCategory="Jul"/>
+	                    <telerik:DataPoint YValue="99" XCategory="Aug"/>
+	                    <telerik:DataPoint YValue="32" XCategory="Sep"/>
+	                    <telerik:DataPoint YValue="77" XCategory="Oct"/>
+	                    <telerik:DataPoint YValue="62" XCategory="Nov"/>
+	                    <telerik:DataPoint YValue="38" XCategory="Dec"/>
+	                </telerik:DataSeries>
+	            </telerik:ChartArea.DataSeries>
+	        </telerik:ChartArea>
+	        <telerik:ChartTitle HorizontalAlignment="Center" Content="Sales per Manufacturer"
 	            Margin="0,0,0,10" Grid.Row="0" Grid.Column="1" />
-	        <telerikCharting:ChartArea LegendName="ChartLegendManufacturers" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+	        <telerik:ChartArea LegendName="ChartLegendManufacturers" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
 	            Margin="0,0,0,15" Grid.Row="1" Grid.Column="1">
-	            <telerikCharting:ChartArea.DataSeries>
+	            <telerik:ChartArea.DataSeries>
 	                <!-- Doughnut Chart -->
-	                <telerikCharting:DataSeries>
-	                    <telerikCharting:DataSeries.Definition>
-	                        <telerikCharting:DoughnutSeriesDefinition ItemLabelFormat="p">
-	                        </telerikCharting:DoughnutSeriesDefinition>
-	                    </telerikCharting:DataSeries.Definition>
-	                    <telerikCharting:DataPoint YValue="0.215208267" LegendLabel="Toyota"/>
-	                    <telerikCharting:DataPoint YValue="0.192960612" LegendLabel="General Motors"/>
-	                    <telerikCharting:DataPoint YValue="0.151830229" LegendLabel="Volkswagen"/>
-	                    <telerikCharting:DataPoint YValue="0.125964366" LegendLabel="Ford"/>
-	                    <telerikCharting:DataPoint YValue="0.091152353" LegendLabel="Honda"/>
-	                    <telerikCharting:DataPoint YValue="0.079093251" LegendLabel="Nissan"/>
-	                    <telerikCharting:DataPoint YValue="0.079093251" LegendLabel="PSA"/>
-	                    <telerikCharting:DataPoint YValue="0.06469767" LegendLabel="Hyundai"/>
-	                </telerikCharting:DataSeries>
-	            </telerikCharting:ChartArea.DataSeries>
-	        </telerikCharting:ChartArea>
-	        <telerikCharting:ChartLegend x:Name="ChartLegendManufacturers" Header="" VerticalAlignment="Stretch" 
-	            Grid.Row="1" Grid.Column="2" />
+	                <telerik:DataSeries>
+	                    <telerik:DataSeries.Definition>
+	                        <telerik:DoughnutSeriesDefinition ItemLabelFormat="p">
+	                        </telerik:DoughnutSeriesDefinition>
+	                    </telerik:DataSeries.Definition>
+	                    <telerik:DataPoint YValue="0.215208267" LegendLabel="Toyota"/>
+	                    <telerik:DataPoint YValue="0.192960612" LegendLabel="General Motors"/>
+	                    <telerik:DataPoint YValue="0.151830229" LegendLabel="Volkswagen"/>
+	                    <telerik:DataPoint YValue="0.125964366" LegendLabel="Ford"/>
+	                    <telerik:DataPoint YValue="0.091152353" LegendLabel="Honda"/>
+	                    <telerik:DataPoint YValue="0.079093251" LegendLabel="Nissan"/>
+	                    <telerik:DataPoint YValue="0.079093251" LegendLabel="PSA"/>
+	                    <telerik:DataPoint YValue="0.06469767" LegendLabel="Hyundai"/>
+	                </telerik:DataSeries>
+	            </telerik:ChartArea.DataSeries>
+	        </telerik:ChartArea>
+	        <telerik:ChartLegend x:Name="ChartLegendManufacturers"
+	                             Header="" 
+	                             VerticalAlignment="Stretch"             
+	                             Grid.Row="1" Grid.Column="2" />
 	    </Grid>
-	</telerikChart:RadChart>
-	{{endregion}}
+	</telerik:RadChart>
+{{endregion}}
 
 
 

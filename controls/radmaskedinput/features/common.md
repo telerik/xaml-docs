@@ -10,7 +10,15 @@ position: 1
 
 # Common
 
-The __RadMaskedInput__ controls allow controlled user's input by implementing masking elements. Moreover, they expose the following properties that allow further customization of the masking behavior:  
+This article lists features that are common between the __RadMaskedInput__ controls.
+
+* [No-Mask Functionality](#no-mask-functionality)
+* [Input Behavior](#input-behavior)
+* [Text and TextMode](#text-and-textmode-properties)
+* [ValueToTextConverter](#valuetotextconverter)
+* [Add/Remove the ClearButton](#addremove-the-clearbutton)
+* [IsLastPositionEditable](#islastpositioneditable)
+* [TextBoxStyle](#textboxstyle)
 
 ## No-Mask Functionality
 
@@ -23,6 +31,7 @@ You can take advantage of the 'no-mask' functionality of the __RadMaskedTextInpu
 	<telerik:RadMaskedDateTimeInput  Mask=""/>
 	<telerik:RadMaskedNumericInput Mask=""/>
 {{endregion}}
+
 This feature creates __RadMaskedInput__ controls that allow unlimited input. And as the __Mask__ property is empty, the controls won't expect a certain number of characters and this is why they will automatically update to fit the user input.	  
 
 >tip The 'no-mask' functionality will remove the restrictions usually applied by the __Mask__ property on the type and the number of input characters in each of the controls. Still you can set the __FormatString__ property to control the input in the __RadMaskedInput__ controls when they don't specify a __Mask__. For example you can use the [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric Format Strings](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) to control the input in the __RadMaskedNumericInput__ and the __RadMaskedCurrencyInput__. This means that if you need to restrict the number of digits after the decimal point to 2 in a __RadMaskedNumericInput__, you can set its __FormatString__ property to __"n2"__: <br/><br /> `<telerik:RadMaskedNumericInput Mask="" FormatString="n2"/>`
@@ -31,9 +40,9 @@ This feature creates __RadMaskedInput__ controls that allow unlimited input. And
 
 The __RadMaskedInput__ controls allow you to specify the characters input behavior using the __InputBehavior__ property. The property is an enumeration of type __InputBehavior__ and exposes the following values:		
 
-* __Replace__ - input characters on right of the current caret position		  
+* __Replace__: Inputs characters on the right of the current caret position.
 
-* __Insert__ - inserts characters before the caret's current position for as long as there are empty positions to fill. When there are no empty positions to fill on left of the caret, then the characters are added on right of the caret.		  
+* __Insert__: Inserts characters before the caret's current position for as long as there are empty positions to fill. When there are no empty positions to fill on left of the caret, then the characters are added on right of the caret.		  
 
 >You can change the __InputBehavior__ using the __Insert__ key. Also please keep in mind that the __InputBehavior__ reflects the behavior of the __Backspace__ and __Delete__ keys		  
 
@@ -41,9 +50,9 @@ The __RadMaskedInput__ controls allow you to specify the characters input behavi
 
 The __RadMaskedInput__ controls expose a __Text__ property that gets the value displayed in the control when it isn't focused. The value of this property depends on the __TextMode__ enumeration, that exposed the following values:		
 
-* __MaskedText__ - if a __RadMaskedInput__ control's __TextMode__ property is set to __MaskedText__, its __Text__ value represents the formatted __Value__ including the placeholder characters.		  
+* __MaskedText__: When this mode is enabled the __Text__ property value represents the formatted __Value__ including the placeholder characters.		  
 
-* __PlainText__- if a __RadMaskedInput__ control's __TextMode__ property is set to __PlainText__, its __Text__ value will hold the formatted __Value__ but without the placeholder characters.
+* __PlainText__: When this mode is enabled the __Text__ property value represents the formatted __Value__ without the placeholder characters.
 
 #### __[XAML] Example 2: Setting TextMode property in XAML__
 {{region xaml-radmaskedinput-features-common_1}}
@@ -153,7 +162,7 @@ Now we can define the __NumericValueToTextConverter__ as a resource in our appli
 
 ## Add/Remove the ClearButton
 
-The default __Template__ of the __RadMaskedInput__ controls defines a __ClearButton__ that allows the user to clear the input. You can hide this button by setting the __IsClearButtonVisible__ property to __False:__
+The default __Template__ of the __RadMaskedInput__ controls defines a __ClearButton__ that allows the user to clear the input. You can hide this button by setting the __IsClearButtonVisible__ property to __False__.
 
 #### __[XAML] Example 6: Setting the IsClearButtonVisible property__
 {{region xaml-radmaskedinput-features-common_5}}
@@ -174,7 +183,23 @@ The default __Template__ of the __RadMaskedInput__ controls defines a __ClearBut
 
 ## IsLastPositionEditable
 
-The __IsLastPositionEditable__ property defines if the last position in the __RadMaskedInput__ controls can be modified. If the property is set to __True__, the user will be able to edit the value in the last available position of the control. This is the default behavior of the __RadMaskedInput__ controls. However, if you need to restrict the user from changing this value, you can set the __IsLastPositionEditable__ property to __False__.		
+The __IsLastPositionEditable__ property indicates whether the last position in the __RadMaskedInput__ controls can be modified or not. If the property is set to __True__, the user will be able to edit the value in the last available position of the control. This is the default behavior of the __RadMaskedInput__ controls. However, if you need to restrict the user from changing this value, you can set the __IsLastPositionEditable__ property to __False__.		
+
+## TextBoxStyle
+
+The __RadMaskedInput__ controls have a __TextBoxStyle__ property which allows you to modify the style of the underlying text box element representing the input. The property is of type Style which targets TextBox.
+
+#### __[XAML] Example 7: Setting TextBoxStyle__
+{{region xaml-radmaskedinput-features-common_6}}
+	<telerik:RadMaskedTextInput>
+		<telerik:RadMaskedTextInput.TextBoxStyle>
+			<Style TargetType="TextBox">
+				<Setter Property="TextWrapping" Value="Wrap" />
+				<Setter Property="SelectionBrush" Value="Green" />
+			</Style>
+		</telerik:RadMaskedTextInput.TextBoxStyle>
+	</telerik:RadMaskedTextInput>
+{{endregion}}
 
 ## See Also
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})

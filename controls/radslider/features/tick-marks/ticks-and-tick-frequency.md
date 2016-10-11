@@ -19,15 +19,15 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a __n
 
 #### __XAML__
 
-{{region radslider-ticks-and-tick-frequency_0}}
+{{region xaml-radslider-ticks-and-tick-frequency_0}}
 	<telerik:RadSlider Maximum="10" Ticks="3,5,7" TickPlacement="TopLeft" />
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radslider-ticks-and-tick-frequency_1}}
+{{region cs-radslider-ticks-and-tick-frequency_1}}
 	RadSlider radSlider1 = new RadSlider();
 	radSlider1.Maximum = 10;
 	DoubleCollection tickCollection = new DoubleCollection();
@@ -37,13 +37,13 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a __n
 	radSlider1.Ticks = tickCollection;
 	radSlider1.TickPlacement = TickPlacement.TopLeft;
 	LayoutRoot.Children.Add(radSlider1);
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radslider-ticks-and-tick-frequency_2}}
+{{region vb-radslider-ticks-and-tick-frequency_2}}
 	Dim radSlider1 As New RadSlider()
 	radSlider1.Maximum = 10
 	Dim tickCollection As New DoubleCollection()
@@ -53,7 +53,7 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a __n
 	radSlider1.Ticks = tickCollection
 	radSlider1.TickPlacement = TickPlacement.TopLeft
 	LayoutRoot.Children.Add(radSlider1)
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_ticks_custom.png)
 
@@ -61,8 +61,8 @@ The __TickFrequency__ property on the other hand allows you to place marks(ticks
 
 #### __XAML__
 
-{{region radslider-ticks-and-tick-frequency_3}}
+{{region xaml-radslider-ticks-and-tick-frequency_3}}
 	<telerik:RadSlider Maximum="10" TickFrequency="2" TickPlacement="BottomRight" />
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_ticks_default.png)

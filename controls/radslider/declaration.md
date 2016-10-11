@@ -19,9 +19,9 @@ position: 1
 
 #### __XAML__
 
-{{region radslider-declaration_0}}
+{{region xaml-radslider-declaration_0}}
 	<telerik:RadSlider Value="5" Minimum="0" SmallChange="1" Maximum="100"/>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -29,27 +29,25 @@ Code-behind declaration:
 
 #### __C#__
 
-{{region radslider-declaration_1}}
+{{region cs-radslider-declaration_1}}
 	RadSlider slider = new RadSlider();
 	slider.Maximum = 100;
 	slider.Minimum = 0;
 	slider.Value = 5;
 	slider.SmallChange = 1;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radslider-declaration_1}}
-		Dim slider As New RadSlider()
-		slider.Maximum = 100
-		slider.Minimum = 0
-		slider.Value = 5
-		slider.SmallChange = 1
-	#End Region
-	End Class
-
+{{region vb-radslider-declaration_2}}
+	Dim slider As New RadSlider()
+	slider.Maximum = 100
+	slider.Minimum = 0
+	slider.Value = 5
+	slider.SmallChange = 1
+{{endregion}}
 
 
 ![](images/radslider_gettingstarted.png)

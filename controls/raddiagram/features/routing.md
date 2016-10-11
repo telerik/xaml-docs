@@ -13,21 +13,69 @@ position: 13
 __Routing__ - a mechanism using algorithms to make sure that the connections don't cross each other while building links/paths between the shapes. 
 
 ## Default Routing
-
+	
 Routing in __RadDiagram__ is only available if the __RadDiagram RouteConnections__ property is set to __True__.  Please note that its default value is __False__ and you need to explicitly declare you want to enable the routing features.		  
 
 #### __XAML__
-    <Grid>
-      <Grid.Resources>
-        <Style TargetType="telerik:RadDiagramConnection">
-          <Setter Property="ConnectionType" Value="Polyline"/>
-        </Style>
-      </Grid.Resources>
-      <telerik:RadDiagram RouteConnections="True"/>
-    </Grid>		  
+{{region raddiagram-features-routing-01}}
+	<Grid>
+		<Grid.Resources>
+			<Style TargetType="telerik:RadDiagramShape" >
+				<Setter Property="Width" Value="100"/>
+				<Setter Property="Height" Value="40"/>
+			</Style>
+			<Style TargetType="telerik:RadDiagramConnection">
+				<Setter Property="ConnectionType" Value="Polyline"/>
+			</Style>
+		</Grid.Resources>
+		<telerik:RadDiagram RouteConnections="True" ConnectionRoundedCorners="True">
+			
+			<telerik:RadDiagramShape x:Name="xShape1" 
+									 Content="Shape 1"
+									 Position="320,60"/>
 
-![raddiagram-features-routing 1](images/raddiagram-features-routing1.png)
+			<telerik:RadDiagramShape x:Name="xShape2" 
+									 Content="Shape 2"
+									 Position="120,220"/>
 
+			<telerik:RadDiagramShape x:Name="xShape3" 
+									 Content="Shape 3"
+									 Position="520,220"/>
+
+			<telerik:RadDiagramShape x:Name="xShape4" Width="260" Height="25"
+									 Content="Shape 4"
+									 Position="240,160"/>
+
+			<telerik:RadDiagramConnection x:Name="xConnection1"
+										  Source="{Binding ElementName=xShape1}"
+										  SourceConnectorPosition="Bottom"
+										  TargetConnectorPosition="Top"
+										  Target="{Binding ElementName=xShape2}"/>
+
+			<telerik:RadDiagramConnection x:Name="xConnection2"
+										  SourceConnectorPosition="Bottom"
+										  TargetConnectorPosition="Top"
+										  Source="{Binding ElementName=xShape1}"
+										  Target="{Binding ElementName=xShape3}"/>									  
+		</telerik:RadDiagram>
+	</Grid>		  
+{{endregion}}
+
+![raddiagram-features-routing 0](images/raddiagram-features-routing1.png)
+
+If you want to __exclude/include__ a connection from the routing process, you can use the __Route__ property of the __RadDiagramConnection__. Using the code above we will exclude the second connection from the routing by setting its __Route__ property to __False__.
+
+#### __XAML__
+{{region raddiagram-features-routing-01}}
+	<telerik:RadDiagramConnection x:Name="xConnection2" Route="False"
+								  SourceConnectorPosition="Bottom"
+								  TargetConnectorPosition="Top"
+								  Source="{Binding ElementName=xShape1}"
+								  Target="{Binding ElementName=xShape3}"/>	
+{{endregion}}	
+
+![raddiagram-features-routing 1](images/raddiagram-features-routing2.png)	
+	
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.		  
 
 The routing algorithm can be parametrized using the __DiagramConstants.RoutingGridSize__ constant that has a default value of __40__ units.
@@ -103,7 +151,7 @@ The ConnectionOuterSpacing is the Minimum Margin between the Parent/Child Shape 
 {{endregion}}
 
 Below you can see these shapes after TreeDown Layout operation performed on the Diagram.
-![raddiagram-features-routing 2](images/raddiagram-features-routing2.png)
+![raddiagram-features-routing 2](images/raddiagram-features-routing3.png)
 
 The OrgTreeRouter is used in our __ClassDiagram__ and __OrgChart__ samples of RadDiagram.
 
@@ -219,7 +267,7 @@ On a button's click event handler we will perform 3 base steps:
 {{endregion}}
 
 Here is a possible result in Windows8 theme:
-![raddiagram-features-routing 3](images/raddiagram-features-routing3.png)
+![raddiagram-features-routing 3](images/raddiagram-features-routing4.png)
 
 ## AStarRouter
 
@@ -332,8 +380,6 @@ The final step is to make our Router the current one of the Diagram. This is don
 Below you can see a possible output (Windows8 theme is applied). The custom points that router creates are marked with 1,2,3,4:
 ![raddiagram-features-customrouter](images/raddiagram-features-customrouter.png)
 
-
-
-# See Also
+## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Layout]({%slug raddiagram-features-diagram-layout%})

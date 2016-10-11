@@ -40,7 +40,7 @@ This feature creates __RadMaskedInput__ controls that allow unlimited input. And
 
 The __RadMaskedInput__ controls allow you to specify the characters input behavior using the __InputBehavior__ property. The property is an enumeration of type __InputBehavior__ and exposes the following values:		
 
-* __Replace__: Input characters on right of the current caret position.
+* __Replace__: Inputs characters on the right of the current caret position.
 
 * __Insert__: Inserts characters before the caret's current position for as long as there are empty positions to fill. When there are no empty positions to fill on left of the caret, then the characters are added on right of the caret.		  
 
@@ -50,9 +50,9 @@ The __RadMaskedInput__ controls allow you to specify the characters input behavi
 
 The __RadMaskedInput__ controls expose a __Text__ property that gets the value displayed in the control when it isn't focused. The value of this property depends on the __TextMode__ enumeration, that exposed the following values:		
 
-* __MaskedText__: If a __RadMaskedInput__ control's __TextMode__ property is set to __MaskedText__, its __Text__ value represents the formatted __Value__ including the placeholder characters.		  
+* __MaskedText__: When this mode is enabled the __Text__ property value represents the formatted __Value__ including the placeholder characters.		  
 
-* __PlainText__: If a __RadMaskedInput__ control's __TextMode__ property is set to __PlainText__, its __Text__ value will hold the formatted __Value__ but without the placeholder characters.
+* __PlainText__: When this mode is enabled the __Text__ property value holds the formatted __Value__ without the placeholder characters.
 
 #### __[XAML] Example 2: Setting TextMode property in XAML__
 {{region xaml-radmaskedinput-features-common_1}}
@@ -162,7 +162,7 @@ Now we can define the __NumericValueToTextConverter__ as a resource in our appli
 
 ## Add/Remove the ClearButton
 
-The default __Template__ of the __RadMaskedInput__ controls defines a __ClearButton__ that allows the user to clear the input. You can hide this button by setting the __IsClearButtonVisible__ property to __False:__
+The default __Template__ of the __RadMaskedInput__ controls defines a __ClearButton__ that allows the user to clear the input. You can hide this button by setting the __IsClearButtonVisible__ property to __False__.
 
 #### __[XAML] Example 6: Setting the IsClearButtonVisible property__
 {{region xaml-radmaskedinput-features-common_5}}
@@ -183,7 +183,7 @@ The default __Template__ of the __RadMaskedInput__ controls defines a __ClearBut
 
 ## IsLastPositionEditable
 
-The __IsLastPositionEditable__ property defines if the last position in the __RadMaskedInput__ controls can be modified. If the property is set to __True__, the user will be able to edit the value in the last available position of the control. This is the default behavior of the __RadMaskedInput__ controls. However, if you need to restrict the user from changing this value, you can set the __IsLastPositionEditable__ property to __False__.		
+The __IsLastPositionEditable__ property indicates whether the last position in the __RadMaskedInput__ controls can be modified or not. If the property is set to __True__, the user will be able to edit the value in the last available position of the control. This is the default behavior of the __RadMaskedInput__ controls. However, if you need to restrict the user from changing this value, you can set the __IsLastPositionEditable__ property to __False__.		
 
 ## TextBoxStyle
 

@@ -52,7 +52,7 @@ The __RadMaskedInput__ controls expose a __Text__ property that gets the value d
 
 * __MaskedText__: When this mode is enabled the __Text__ property value represents the formatted __Value__ including the placeholder characters.		  
 
-* __PlainText__: When this mode is enabled the __Text__ property value holds the formatted __Value__ without the placeholder characters.
+* __PlainText__: When this mode is enabled the __Text__ property value represents the formatted __Value__ without the placeholder characters.
 
 #### __[XAML] Example 2: Setting TextMode property in XAML__
 {{region xaml-radmaskedinput-features-common_1}}

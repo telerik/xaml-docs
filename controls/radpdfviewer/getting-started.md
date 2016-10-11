@@ -97,7 +97,7 @@ You can then add buttons, combo boxes, etc., bound to the respective command des
 {{endregion}}
 
 
->tipFor the whole configuration of a RadToolBar with all commands of the viewer, you can refer to [this article]({%slug radpdfviewer-wiring-ui%}). More information about the command descriptors is available [here]({%slug radpdfviewer-command-descriptors%}).
+>tipFor the whole configuration of a RadToolBar with all commands of the viewer, you can refer to the [Wiring UI]({%slug radpdfviewer-wiring-ui%}) article. More information about the command descriptors is available [here]({%slug radpdfviewer-command-descriptors%}).
           
 
 ## 

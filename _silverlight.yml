@@ -89,7 +89,8 @@ consuming-data/wcf-service.md,
 controls/radziplibrary/features/zip-extensions.md, controls/radgridview/features/search-as-you-type,
 controls/radentityframeworkdatasource,
 controls/radgridview/styles-and-templates/styling-search-panel.md,
-controls/radgridview/style-selectors/merged-cells-style-selector]
+controls/radgridview/style-selectors/merged-cells-style-selector,
+controls/radmap/features/wraparound]
 
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:

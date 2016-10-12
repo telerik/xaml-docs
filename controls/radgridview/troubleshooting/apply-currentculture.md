@@ -24,22 +24,18 @@ It is due to the fact that the culture used for __formatting the data__ is now t
 It is due to the fact that the culture used for __formatting the data__ is now the one specified as a __Language for the GridView__ (or the containing Page).{% endif %}
 
 We have changed this behavior with the version __Q2 2012 SP2__, so now it is compatible with the behavior of the __MS DataGrid__.
-        
 
 __SOLUTION__
 
 With __Q1 2013__ we have introduced the __IsLocalizationLanguageRespected__ property of __RadGridView__, which will enable you to control whether the __CurrentCulture__ or the __Language__ will be respected. It can be configured with the following values: 
-	
+
 * ___"True"___ - the __Language__ will be respected ___(default)___.
 * ___"False"___ - the __CurrentCulture__ format settings will be respected.
-
-
-         
 
 Another approach would be to set the __Language__ based on the __CurrentCulture__  as follows:
 {% if site.site_name == 'WPF' %}
 
-#### __C#__
+#### __[C#]__
 
 {{region cs-gridview-troubleshooting-apply-currentculture_0}}
 
@@ -48,14 +44,23 @@ Another approach would be to set the __Language__ based on the __CurrentCulture_
 	  InitializeComponent();
 	  this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag);
 	}
-	
+{{endregion}}
+
+#### __[VB.NET]__
+
+{{region vb-gridview-troubleshooting-apply-currentculture_0}}
+
+	Public Sub New()
+            InitializeComponent()
+            Me.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag)
+        End Sub
 {{endregion}}
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
 
 
-#### __C#__
+#### __[C#]__
 
 {{region cs-gridview-troubleshooting-apply-currentculture_1}}
 
@@ -65,6 +70,16 @@ Another approach would be to set the __Language__ based on the __CurrentCulture_
 	  
 	  Dispatcher.BeginInvoke(new Action(() => this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)));
 	}	
+{{endregion}}
+
+#### __[VB.NET]__
+
+{{region vb-gridview-troubleshooting-apply-currentculture_1}}
+
+	Public Sub New()
+            InitializeComponent()
+            Dispatcher.BeginInvoke(New Action(Sub() Me.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)))
+        End Sub	
 {{endregion}}
 
 {% endif %}

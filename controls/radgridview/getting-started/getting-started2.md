@@ -45,7 +45,7 @@ You can add __RadGridView__ manually by writing the XAML code in __Example 1__. 
 
 >In order to use __RadGridView__ in XAML, you have to add the following namespace declaration:
 >#### __[XAML] Example 2: Declaring Telerik Namespace__
->{{region xaml-telerik-schemas}}
+>{{region xaml-gridview-getting-started2_3}}
 >    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 >{{endregion}}
 

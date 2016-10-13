@@ -26,7 +26,7 @@ The next code snippets shows how to implement the above formula in order to set 
 
 {{region xaml-radganttview-features-timeruler-conversion-1}}
 	<telerik:RadGanttView x:Name="GanttView">
-	    ...
+	    <!--...-->
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -50,7 +50,7 @@ The next code snippets show how to implement the described above formula in orde
 
 {{region xaml-radganttview-features-timeruler-conversion-1}}
 	<telerik:RadGanttView x:Name="GanttView">
-	    ...
+	    <!--...-->
 	</telerik:RadGanttView>
 {{endregion}}
 

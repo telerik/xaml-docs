@@ -40,9 +40,9 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 			public class MyViewModel : ViewModelBase
 			{
 				private ObservableCollection<GanttTask> tasks;
-		
+			
 				private DateRange visibleTime;
-		
+			
 				public MyViewModel()
 				{
 					var date = DateTime.Now;
@@ -53,7 +53,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 						Title = "Design public API",
 						Description = "Description: Design public API"
 					};
-		
+			
 					var ganttRendering = new GanttTask()
 					{
 						Start = date.AddDays(2).AddHours(8),
@@ -61,7 +61,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 						Title = "Gantt Rendering",
 						Description = "Description: Gantt Rendering"
 					};
-		
+			
 					var ganttDemos = new GanttTask()
 					{
 						Start = date.AddDays(4.5),
@@ -69,7 +69,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 						Title = "Gantt Demos",
 						Description = "Description: Gantt Demos"
 					};
-		
+			
 					var milestone = new GanttTask()
 					{
 						Start = date.AddDays(7),
@@ -78,11 +78,11 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 						Description = "Review",
 						IsMilestone = true
 					};
-		
-		
+			
+			
 					ganttRendering.Dependencies.Add(new Dependency { FromTask = ganttAPI });
 					ganttDemos.Dependencies.Add(new Dependency { FromTask = ganttRendering });
-		
+			
 					var iterationTask = new GanttTask()
 					{
 						Start = date,
@@ -90,11 +90,11 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 						Title = "Iteration 1",
 						Children = { ganttAPI, ganttRendering, ganttDemos, milestone }
 					};
-		
+			
 					this.tasks = new ObservableCollection<GanttTask>() { iterationTask };
 					this.visibleTime = new DateRange(date.AddDays(-1), date.AddDays(9));
 				}
-		
+			
 				public ObservableCollection<GanttTask> Tasks
 				{
 					get
@@ -107,7 +107,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 						OnPropertyChanged(() => Tasks);
 					}
 				}
-		
+			
 				public DateRange VisibleTime
 				{
 					get
@@ -134,17 +134,17 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 			public class TimeRulerDeadlineTickInfo : IEventInfo, ICellCoordinates
 			{
 				private Range<long> timeRange;
-		
+			
 				public TimeRulerDeadlineTickInfo(long timeRange)
 				{
 					this.timeRange = new Range<long>(timeRange);
 				}
-		
+			
 				public Range<long> TimeRange
 				{
 					get { return this.timeRange; }
 				}
-		
+			
 				public Range<int> CellCoordinates
 				{
 					get { return new Range<int>(0, 2); }
@@ -172,14 +172,14 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 						}
 					}
 				}
-		
+			
 				public override System.Collections.IEnumerable GetVisibleItems(TimeRulerVisualizationState state)
 				{
 					foreach (var majorTick in base.GetVisibleItems(state))
 					{
 						yield return majorTick;
 					}
-		
+			
 					yield return new TimeRulerDeadlineTickInfo(this.projectDeadline.Ticks);
 				}
 			}
@@ -194,20 +194,20 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 	{{region cs-radganttview-howto-customize-the-timeruler-3}}
 			public class MyViewModel : ViewModelBase
 			{
-				...
+			       //...
 				private DateTime projectDeadline = DateTime.Today;
-		
+			
 				private TimeRulerDeadlineBehavior timeRulerDeadlineBehavior;
-		
+			
 				public MyViewModel()
 				{
-					...
+			           //...
 					this.timeRulerDeadlineBehavior = new TimeRulerDeadlineBehavior();
-					this.ProjectDeadline = date.AddDays(8);
+					this.ProjectDeadline = DateTime.Now.AddDays(8);
 				}
-		
-				...
-		
+			
+			       //...
+			
 				public DateTime ProjectDeadline
 				{
 					get
@@ -228,7 +228,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 						}
 					}
 				}
-		
+			
 				public TimeRulerDeadlineBehavior TimeRulerDeadlineBehavior
 				{
 					get
@@ -255,7 +255,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 				{
 					this.DefaultStyleKey = typeof(TimeRulerDeadlineContainer);
 				}
-		
+			
 				public object DataItem { get; set; }
 			}
 	{{endregion}}
@@ -266,19 +266,19 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 
 	{{region xaml-radganttview-howto-customize-the-timeruler-0}}
 		<Style TargetType="local:TimeRulerDeadlineContainer">
-			<Setter Property="Canvas.ZIndex" Value="100"/>
-			<Setter Property="BorderBrush" Value="Red"/>
-			<Setter Property="BorderThickness" Value="1"/>
-			<Setter Property="Margin" Value="0 0 -1 0"/>
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate>
-						<Grid>
-							<Rectangle Margin="0 0 -1 0" Width="2" Fill="Red" VerticalAlignment="Stretch"/>
-						</Grid>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
+		    <Setter Property="Canvas.ZIndex" Value="100"/>
+		    <Setter Property="BorderBrush" Value="Red"/>
+		    <Setter Property="BorderThickness" Value="1"/>
+		    <Setter Property="Margin" Value="0 0 -1 0"/>
+		    <Setter Property="Template">
+		        <Setter.Value>
+		            <ControlTemplate>
+		                <Grid>
+		                    <Rectangle Margin="0 0 -1 0" Width="2" Fill="Red" VerticalAlignment="Stretch"/>
+		                </Grid>
+		            </ControlTemplate>
+		        </Setter.Value>
+		    </Setter>
 		</Style>
 	{{endregion}}
 
@@ -290,7 +290,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 			public class TimeRulerDeadlineContainerSelector : DefaultTimeRulerContainerSelector
 			{
 				private static readonly ContainerTypeIdentifier timeRulerDeadlineContainerType = ContainerTypeIdentifier.FromType<TimeRulerDeadlineContainer>();
-		
+			
 				public override ContainerTypeIdentifier GetContainerType(object item)
 				{
 					if (item is TimeRulerDeadlineTickInfo)
@@ -308,18 +308,18 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 
 	{{region xaml-radganttview-howto-customize-the-timeruler-1}}
 		<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="5"
-						TimeRulerVisualizationBehavior="{Binding TimeRulerDeadlineBehavior}"
-						VisibleRange="{Binding VisibleTime}"
-						PixelLength="00:30:00"
-						Height="200">
-			<telerik:RadGanttView.TimeRulerContainerSelector>
-				<local:TimeRulerDeadlineContainerSelector/>
-			</telerik:RadGanttView.TimeRulerContainerSelector>
-			<telerik:RadGanttView.Columns>
-				<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-			</telerik:RadGanttView.Columns>
+		                      TimeRulerVisualizationBehavior="{Binding TimeRulerDeadlineBehavior}"
+		                      VisibleRange="{Binding VisibleTime}"
+		                      PixelLength="00:30:00"
+		                      Height="200">
+		    <telerik:RadGanttView.TimeRulerContainerSelector>
+		        <local:TimeRulerDeadlineContainerSelector/>
+		    </telerik:RadGanttView.TimeRulerContainerSelector>
+		    <telerik:RadGanttView.Columns>
+		        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
 	{{endregion}}
 

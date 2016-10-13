@@ -19,7 +19,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 #### __XAML__
 
 {{region xaml-radganttview-populating-with-data-viewmodel_0}}
-	<telerik:RadGanttView x:Name="ganttView" />	
+	<telerik:RadGanttView x:Name="ganttView" />
 {{endregion}}
 
 * Create a new class named __MyViewModel__:
@@ -39,20 +39,20 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 {{region cs-radganttview-populating-with-data-viewmodel_2}}
 	public class MyViewModel : PropertyChangedBase
 	{
-		private ObservableCollection<GanttTask> tasks;
+	    private ObservableCollection<GanttTask> tasks;
 	
-		public ObservableCollection<GanttTask> Tasks
-		{
-			get
-			{
-				return tasks;
-			}
-			set
-			{
-				tasks = value;
-				OnPropertyChanged(() => Tasks);
-			}
-		}
+	    public ObservableCollection<GanttTask> Tasks
+	    {
+	        get
+	        {
+	            return tasks;
+	        }
+	        set
+	        {
+	            tasks = value;
+	            OnPropertyChanged(() => Tasks);
+	        }
+	    }
 	}
 {{endregion}}
 
@@ -63,23 +63,24 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 {{region cs-radganttview-populating-with-data-viewmodel_3}}
 	public MyViewModel()
 	{
-		var date = DateTime.Now;
-				
-		var ganttAPI = new GanttTask() { Start = date, End = date.AddDays(2), Title = "Design public API" };
-		var ganttRendering = new GanttTask() { Start = date.AddDays(2).AddHours(8), End = date.AddDays(4), Title = "Gantt Rendering" };
-		var ganttDemos = new GanttTask() { Start = date.AddDays(5), End = date.AddDays(7), Title = "Gantt Demos" };
+	    var date = DateTime.Now;
 	
-		var milestone = new GanttTask() { Start = date.AddDays(7), End = date.AddDays(7).AddHours(1), Title = "Review", IsMilestone = true };
+	    var ganttAPI = new GanttTask() { Start = date, End = date.AddDays(2), Title = "Design public API" };
+	    var ganttRendering = new GanttTask() { Start = date.AddDays(2).AddHours(8), End = date.AddDays(4), Title = "Gantt Rendering" };
+	    var ganttDemos = new GanttTask() { Start = date.AddDays(5), End = date.AddDays(7), Title = "Gantt Demos" };
 	
-		ganttRendering.Dependencies.Add( new Dependency() { FromTask=ganttAPI });
-		ganttDemos.Dependencies.Add(new Dependency() { FromTask = ganttRendering });
+	    var milestone = new GanttTask() { Start = date.AddDays(7), End = date.AddDays(7).AddHours(1), Title = "Review", IsMilestone = true };
 	
-		var iterationTask = new GanttTask(date, date.AddDays(7), "Iteration 1")  {
-			Children = { ganttAPI, ganttRendering, ganttDemos, milestone }
-		};
-				
+	    ganttRendering.Dependencies.Add(new Dependency() { FromTask = ganttAPI });
+	    ganttDemos.Dependencies.Add(new Dependency() { FromTask = ganttRendering });
 	
-		this.tasks = new ObservableCollection<GanttTask>() { iterationTask };
+	    var iterationTask = new GanttTask(date, date.AddDays(7), "Iteration 1")
+	    {
+	        Children = { ganttAPI, ganttRendering, ganttDemos, milestone }
+	    };
+	
+	
+	    this.tasks = new ObservableCollection<GanttTask>() { iterationTask };
 	}
 {{endregion}}
 
@@ -88,7 +89,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 #### __XAML__
 
 {{region xaml-radganttview-populating-with-data-viewmodel_4}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}"  />
+	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}"  />
 {{endregion}}
 
 * Finally, set the DataContext: 	

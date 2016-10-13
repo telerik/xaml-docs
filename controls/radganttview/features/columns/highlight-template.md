@@ -20,31 +20,31 @@ The xaml of the GanttView should look like this:
 
 {{region xaml-radganttview-features-columns-highlight-template-0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
-						  VerticalAlignment="Top"
-						  VisibleRange="{Binding VisibleTime}">
-		<telerik:RadGanttView.Columns>
-			<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellHighlightTemplate>
-					<DataTemplate>
-						<TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Red" VerticalAlignment="Center"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellHighlightTemplate>
-			</telerik:TreeColumnDefinition>
-			<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellHighlightTemplate>
-					<DataTemplate>
-						<TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Green" VerticalAlignment="Center"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellHighlightTemplate>
-			</telerik:ColumnDefinition>
-			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellHighlightTemplate>
-					<DataTemplate>
-						<TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Blue" VerticalAlignment="Center"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellHighlightTemplate>
-			</telerik:ColumnDefinition>
-		</telerik:RadGanttView.Columns>
+	VerticalAlignment="Top"
+	VisibleRange="{Binding VisibleTime}">
+	    <telerik:RadGanttView.Columns>
+	        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellHighlightTemplate>
+	                <DataTemplate>
+	                    <TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Red" VerticalAlignment="Center"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellHighlightTemplate>
+	        </telerik:TreeColumnDefinition>
+	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellHighlightTemplate>
+	                <DataTemplate>
+	                    <TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Green" VerticalAlignment="Center"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellHighlightTemplate>
+	        </telerik:ColumnDefinition>
+	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellHighlightTemplate>
+	                <DataTemplate>
+	                    <TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Blue" VerticalAlignment="Center"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellHighlightTemplate>
+	        </telerik:ColumnDefinition>
+	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
 {{endregion}}
 

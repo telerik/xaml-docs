@@ -29,7 +29,7 @@ Here are some examples:
 #### __XAML__
 
 {{region xaml-radganttview-features-timeruler-configuring_0}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">		
+	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -40,7 +40,7 @@ Here are some examples:
 #### __XAML__
 
 {{region xaml-radganttview-features-timeruler-configuring_1}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="01:00:00">		
+	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}" PixelLength="01:00:00">
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -51,7 +51,7 @@ Here are some examples:
 #### __XAML__
 
 {{region xaml-radganttview-features-timeruler-configuring_2}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:15:00">		
+	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}" PixelLength="00:15:00">
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -66,18 +66,18 @@ Here is a simple example:
 #### __XAML__
 
 {{region xaml-radganttview-features-timeruler-configuring_3}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
-		<telerik:RadGanttView.TimeRulerLines>
-			<telerik:GroupTickLine>
-				<telerik:TickInterval Interval="OneWeek" />
-			</telerik:GroupTickLine>
-			<telerik:MajorTickLine>
-				<telerik:TickInterval Interval="OneDay" />				
-			</telerik:MajorTickLine>
-			<telerik:MinorTickLine>
-				<telerik:TickInterval Interval="ThreeHours" />
-			</telerik:MinorTickLine>
-		</telerik:RadGanttView.TimeRulerLines>
+	<telerik:RadGanttView x:Name="ganttView3" TasksSource="{Binding Tasks}" >
+	    <telerik:RadGanttView.TimeRulerLines>
+	        <telerik:GroupTickLine>
+	            <telerik:TickInterval Interval="OneWeek" />
+	        </telerik:GroupTickLine>
+	        <telerik:MajorTickLine>
+	            <telerik:TickInterval Interval="OneDay" />
+	        </telerik:MajorTickLine>
+	        <telerik:MinorTickLine>
+	            <telerik:TickInterval Interval="ThreeHours" />
+	        </telerik:MinorTickLine>
+	    </telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -136,15 +136,15 @@ Let’s have the example modified like this:
 #### __XAML__
 
 {{region xaml-radganttview-features-timeruler-configuring_4}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
-		<telerik:RadGanttView.TimeRulerLines>
-			<telerik:GroupTickLine>
-					<telerik:TickInterval Interval="OneMonth" FormatString="{}{0:MMMM, yyyy}" />
-			</telerik:GroupTickLine>
-			<telerik:MajorTickLine>
-					<telerik:TickInterval Interval="OneDay" FormatString="Day {0:dd}" />					
-			</telerik:MajorTickLine>
-		</telerik:RadGanttView.TimeRulerLines>
+	<telerik:RadGanttView x:Name="ganttView4" TasksSource="{Binding Tasks}" >
+	    <telerik:RadGanttView.TimeRulerLines>
+	        <telerik:GroupTickLine>
+	            <telerik:TickInterval Interval="OneMonth" FormatString="{}{0:MMMM, yyyy}" />
+	        </telerik:GroupTickLine>
+	        <telerik:MajorTickLine>
+	            <telerik:TickInterval Interval="OneDay" FormatString="Day {0:dd}" />
+	        </telerik:MajorTickLine>
+	    </telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -159,16 +159,16 @@ Let’s modify the example like this:
 #### __XAML__
 
 {{region xaml-radganttview-features-timeruler-configuring_5}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:20:00">
-		<telerik:RadGanttView.TimeRulerLines>
-			<telerik:GroupTickLine>
-					<telerik:TickInterval Interval="OneMonth" FormatString="{}{0:MMMM, yyyy}" />
-			</telerik:GroupTickLine>
-			<telerik:MajorTickLine>					
-					<telerik:TickInterval Interval="OneDay" FormatString="Day {0:dd}" MinLength="45" />
-					<telerik:TickInterval Interval="OneWeek"  />
-			</telerik:MajorTickLine>
-		</telerik:RadGanttView.TimeRulerLines>
+	<telerik:RadGanttView x:Name="ganttView5" TasksSource="{Binding Tasks}" PixelLength="00:20:00">
+	    <telerik:RadGanttView.TimeRulerLines>
+	        <telerik:GroupTickLine>
+	            <telerik:TickInterval Interval="OneMonth" FormatString="{}{0:MMMM, yyyy}" />
+	        </telerik:GroupTickLine>
+	        <telerik:MajorTickLine>
+	            <telerik:TickInterval Interval="OneDay" FormatString="Day {0:dd}" MinLength="45" />
+	            <telerik:TickInterval Interval="OneWeek"  />
+	        </telerik:MajorTickLine>
+	    </telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -177,16 +177,16 @@ Note that we’ve set two TickIntervals for the MajorTickLine.  So when PixelLen
 #### __XAML__
 
 {{region xaml-radganttview-features-timeruler-configuring_6}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:40:00">
-		<telerik:RadGanttView.TimeRulerLines>
-			<telerik:GroupTickLine>
-				<telerik:TickInterval Interval="OneMonth" FormatString="{}{0:MMMM, yyyy}" />
-			</telerik:GroupTickLine>
-			<telerik:MajorTickLine>					
-				<telerik:TickInterval Interval="OneDay" FormatString="Day {0:dd}" MinLength="45" />
-				<telerik:TickInterval Interval="OneWeek"  />
-			</telerik:MajorTickLine>
-		</telerik:RadGanttView.TimeRulerLines>
+	<telerik:RadGanttView x:Name="ganttView6" TasksSource="{Binding Tasks}" PixelLength="00:40:00">
+	    <telerik:RadGanttView.TimeRulerLines>
+	        <telerik:GroupTickLine>
+	            <telerik:TickInterval Interval="OneMonth" FormatString="{}{0:MMMM, yyyy}" />
+	        </telerik:GroupTickLine>
+	        <telerik:MajorTickLine>
+	            <telerik:TickInterval Interval="OneDay" FormatString="Day {0:dd}" MinLength="45" />
+	            <telerik:TickInterval Interval="OneWeek"  />
+	        </telerik:MajorTickLine>
+	    </telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
 {{endregion}}
 

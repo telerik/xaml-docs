@@ -110,8 +110,8 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 
 {{region xaml-radganttview-dragdrop-drag-reorder_0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="20"
-					VerticalAlignment="Top" 
-					VisibleRange="{Binding VisibleTime}">
+	VerticalAlignment="Top" 
+	VisibleRange="{Binding VisibleTime}">
 	    <telerik:RadGanttView.DragDropBehavior>
 	        <local:CustomGanttDragDropBehavior/>
 	    </telerik:RadGanttView.DragDropBehavior>

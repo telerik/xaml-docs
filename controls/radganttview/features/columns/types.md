@@ -37,8 +37,8 @@ To define columns in the RadGanttView control, you have to add them to the Colum
 
 {{region xaml-radganttview-features-columns-types_0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
-						  VerticalAlignment="Top"
-						  VisibleRange="{Binding VisibleTime}">
+	       VerticalAlignment="Top"
+	       VisibleRange="{Binding VisibleTime}">
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -48,13 +48,13 @@ To define columns in the RadGanttView control, you have to add them to the Colum
 
 {{region xaml-radganttview-features-columns-types_1}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
-						  VerticalAlignment="Top"
-						  VisibleRange="{Binding VisibleTime}">
-		<telerik:RadGanttView.Columns>
-			<telerik:TreeColumnDefinition/>
-			<telerik:ColumnDefinition/>
-			<telerik:ColumnDefinition/>
-		</telerik:RadGanttView.Columns>
+	 VerticalAlignment="Top"
+	    VisibleRange="{Binding VisibleTime}">
+	    <telerik:RadGanttView.Columns>
+	        <telerik:TreeColumnDefinition/>
+	        <telerik:ColumnDefinition/>
+	        <telerik:ColumnDefinition/>
+	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -64,13 +64,13 @@ To define columns in the RadGanttView control, you have to add them to the Colum
 
 {{region xaml-radganttview-features-columns-types_2}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
-				VerticalAlignment="Top"
-				VisibleRange="{Binding VisibleTime}">
-		<telerik:RadGanttView.Columns>
-			<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
-			<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-		</telerik:RadGanttView.Columns>
+	             VerticalAlignment="Top"
+	             VisibleRange="{Binding VisibleTime}">
+	    <telerik:RadGanttView.Columns>
+	        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
+	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -90,11 +90,11 @@ Let us, for example, set the first "Title" column to be frozen, as shown in __Ex
 
 {{region xaml-radganttview-features-columns-types_3}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}">
-		<telerik:RadGanttView.Columns>
-			<telerik:TreeColumnDefinition Header="Title" IsFrozenColumn="True" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent" />
-			<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-		</telerik:RadGanttView.Columns>  
+	<telerik:RadGanttView.Columns>
+	<telerik:TreeColumnDefinition Header="Title" IsFrozenColumn="True" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent" />
+	<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+	<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+	</telerik:RadGanttView.Columns>  
 	</telerik:RadGanttView>
 {{endregion}}
 

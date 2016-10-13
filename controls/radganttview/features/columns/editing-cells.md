@@ -24,31 +24,31 @@ The xaml of the GanttView should look like this:
 
 {{region xaml-radganttview-features-columns-edit-template-0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" 
-						  VerticalAlignment="Top"
-						  VisibleRange="{Binding VisibleTime}">
-		<telerik:RadGanttView.Columns>
-			<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellEditTemplate>
-					<DataTemplate>
-						<TextBox Text="{Binding Title, Mode=TwoWay}"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellEditTemplate>
-			</telerik:TreeColumnDefinition>
-			<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellEditTemplate>
-					<DataTemplate>
-						<telerik:RadDateTimePicker SelectedValue="{Binding Start, Mode=TwoWay}"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellEditTemplate>
-			</telerik:ColumnDefinition>
-			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellEditTemplate>
-					<DataTemplate>
-						<telerik:RadDateTimePicker SelectedValue="{Binding End, Mode=TwoWay}"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellEditTemplate>
-			</telerik:ColumnDefinition>
-		</telerik:RadGanttView.Columns>
+	VerticalAlignment="Top"
+	VisibleRange="{Binding VisibleTime}">
+	    <telerik:RadGanttView.Columns>
+	        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellEditTemplate>
+	                <DataTemplate>
+	                    <TextBox Text="{Binding Title, Mode=TwoWay}"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellEditTemplate>
+	        </telerik:TreeColumnDefinition>
+	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellEditTemplate>
+	                <DataTemplate>
+	                    <telerik:RadDateTimePicker SelectedValue="{Binding Start, Mode=TwoWay}"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellEditTemplate>
+	        </telerik:ColumnDefinition>
+	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellEditTemplate>
+	                <DataTemplate>
+	                    <telerik:RadDateTimePicker SelectedValue="{Binding End, Mode=TwoWay}"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellEditTemplate>
+	        </telerik:ColumnDefinition>
+	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
 {{endregion}}
 

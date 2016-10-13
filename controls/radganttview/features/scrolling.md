@@ -68,7 +68,7 @@ __Example 2__ demonstrates how the ScrollIntoView method could be used with __Sc
 #### __[C#] Example 2: Calling ScrollIntoView method with ScrollSettings__
 
 {{region cs-radganttview-scrolling_1}}
-	var settings = new ScrollSettings() { HorizontalScrollPosition = HorizontalScrollPosition.Right, VerticalScrollPosition = VerticalScrollPosition. Anywhere};
+	var settings = new ScrollSettings() { HorizontalScrollPosition = HorizontalScrollPosition.Right, VerticalScrollPosition = VerticalScrollPosition.Anywhere };
 	GanttView.ScrollingService.ScrollIntoView(task4, settings);
 {{endregion}}
 

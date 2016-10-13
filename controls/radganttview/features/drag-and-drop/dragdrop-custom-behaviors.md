@@ -134,7 +134,7 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 #### __XAML__
 
 {{region xaml-radganttview-dragdrop-custom-behaviors-2}}
-	<telerik:RadGanttView  x:Name="ganttView" TasksSource="{Binding Tasks}" >
+	<telerik:RadGanttView  x:Name="ganttView1" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.ResizeBehavior>
 	        <local:SnappingSchedulingResizeBehavior />
 	    </telerik:RadGanttView.ResizeBehavior>

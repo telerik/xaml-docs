@@ -27,8 +27,7 @@ The next example demonstrates how to create a behavior that will collapsed only 
 	{{region cs-radganttview-features-items-expand-collapse-1}}
 		public class CustomInitialExpandBehavior : IInitialExpandBehavior
 		{
-		
-		}
+		    //...
 	{{endregion}}
 
 1. Implement its __ShouldExpandItemByDefault()__ method by creating a condition that returns true if the __HierarchicalItem’s__ Level is above 0:
@@ -38,12 +37,12 @@ The next example demonstrates how to create a behavior that will collapsed only 
 	{{region cs-radganttview-features-items-expand-collapse-2}}
 		public class CustomInitialExpandBehavior : IInitialExpandBehavior
 		{
-			public bool ShouldExpandItemByDefault(Telerik.Windows.Core.HierarchicalItem item)
-			{
-				var shouldExpand = item.Level > 0;
+		    public bool ShouldExpandItemByDefault(Telerik.Windows.Core.HierarchicalItem item)
+		    {
+		        var shouldExpand = item.Level > 0;
 		
-				return shouldExpand;
-			}
+		        return shouldExpand;
+		    }
 		}
 	{{endregion}}
 
@@ -53,12 +52,12 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 	{{region xaml-radganttview-features-items-expand-collapse-1}}
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
-							  VisibleRange="{Binding VisibleTime}"
-			<telerik:RadGanttView.Columns>
-				<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="130"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="130"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="130"/>
-			</telerik:RadGanttView.Columns>
+		                      VisibleRange="{Binding VisibleTime}">
+		    <telerik:RadGanttView.Columns>
+		        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="130"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="130"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="130"/>
+		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
 	{{endregion}}
 
@@ -68,13 +67,13 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 	{{region xaml-radganttview-features-items-expand-collapse-2}}
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
-							  VisibleRange="{Binding VisibleTime}"
-							  InitialExpandBehavior="{StaticResource CustomInitialExpandBehavior}">
-			<telerik:RadGanttView.Columns>
-				<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="130"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="130"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="130"/>
-			</telerik:RadGanttView.Columns>
+		  VisibleRange="{Binding VisibleTime}"
+		  InitialExpandBehavior="{StaticResource CustomInitialExpandBehavior}">
+		    <telerik:RadGanttView.Columns>
+		        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="130"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="130"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="130"/>
+		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
 	{{endregion}}
 

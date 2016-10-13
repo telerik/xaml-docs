@@ -27,7 +27,7 @@ __Example 1__ shows how the Deadline can be set.
 	{
 	    Start = new DateTime(2014, 6, 6),
 	    End = new DateTime(2014, 6, 8),
-	    Deadline = new DateTime(2014,6,9),
+	    Deadline = new DateTime(2014, 6, 9),
 	    Title = "Gantt Rendering"
 	};
 {{endregion}}
@@ -36,10 +36,10 @@ __Example 1__ shows how the Deadline can be set.
 
 {{region vb-radganttview-features-items-gantttask-deadline_0}}
 	Dim task = New GanttTask() With { _
-		.Start = New DateTime(2014, 6, 6), _
-		.[End] = New DateTime(2014, 6, 8), _
-		.Deadline = New DateTime(2014, 6, 9), _
-		.Title = "Gantt Rendering" _
+	    .Start = New DateTime(2014, 6, 6), _
+	    .[End] = New DateTime(2014, 6, 8), _
+	    .Deadline = New DateTime(2014, 6, 9), _
+	    .Title = "Gantt Rendering" _
 	}
 {{endregion}}
 
@@ -73,10 +73,10 @@ __Example 2__ shows how to override CheckIsExpired method.
 
 {{region vb-radganttview-features-items-gantttask-deadline_1}}
 	Public Class CustomGanttTask
-		Inherits GanttTask
-		Protected Overrides Function CheckIsExpired() As Boolean
-			Return Me.Deadline < Me.Start
-		End Function
+	    Inherits GanttTask
+	    Protected Overrides Function CheckIsExpired() As Boolean
+	        Return Me.Deadline < Me.Start
+	    End Function
 	End Class
 {{endregion}}
 

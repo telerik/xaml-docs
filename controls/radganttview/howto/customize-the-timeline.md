@@ -36,7 +36,7 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-0}}
+	{{region cs-radganttview-howto-customize-the-timeline-0}}
 			public class GanttDeadlineTask : GanttTask
 			{
 				private DateTime? ganttDeadLine;
@@ -63,7 +63,7 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-1}}
+	{{region cs-radganttview-howto-customize-the-timeline-1}}
 			public class MyViewModel : ViewModelBase
 			{
 				private ObservableCollection<GanttTask> _Tasks;
@@ -147,7 +147,7 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-2}}
+	{{region cs-radganttview-howto-customize-the-timeline-2}}
 			public class TimeLineDeadlineEventInfo : SlotInfo
 			{
 				public TimeLineDeadlineEventInfo(Range<long> timeRange, int index)
@@ -171,7 +171,7 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-3}}
+	{{region cs-radganttview-howto-customize-the-timeline-3}}
 			public class TimeLineDeadlineBehavior : DefaultGanttTimeLineVisualizationBehavior
 			{
 				protected override IEnumerable<IEventInfo> GetEventInfos(TimeLineVisualizationState state, Telerik.Windows.Core.HierarchicalItem hierarchicalItem)
@@ -204,7 +204,7 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-4}}
+	{{region cs-radganttview-howto-customize-the-timeline-4}}
 			public class MyViewModel : ViewModelBase
 			{
 				...
@@ -237,7 +237,7 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-5}}
+	{{region cs-radganttview-howto-customize-the-timeline-5}}
 			public class TimeLineDeadlineContainer : Control, IDataContainer
 			{
 				public TimeLineDeadlineContainer()
@@ -253,7 +253,7 @@ The example will go through on the following key steps:
 
 	#### __XAML__
 
-	{{region radganttview-howto-customize-the-timeline-0}}
+	{{region xaml-radganttview-howto-customize-the-timeline-0}}
 		<Style TargetType="local:TimeLineDeadlineContainer">
 			<Setter Property="telerik:ZIndexManager.ZIndex" Value="100"/>
 			<Setter Property="BorderBrush" Value="Red" />
@@ -275,7 +275,7 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-6}}
+	{{region cs-radganttview-howto-customize-the-timeline-6}}
 			public class TimeLineDeadlineContainerSelector : DefaultTimeLineContainerSelector
 			{
 				private static readonly ContainerTypeIdentifier timelineDeadlineEventInfoContainerType = ContainerTypeIdentifier.FromType<TimeLineDeadlineContainer>();
@@ -296,7 +296,7 @@ The example will go through on the following key steps:
 
 	#### __XAML__
 
-	{{region radganttview-howto-customize-the-timeline-1}}
+	{{region xaml-radganttview-howto-customize-the-timeline-1}}
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
 							  TimeLineVisualizationBehavior="{Binding TimeLineDeadlineBehavior}"
 							  VisibleRange="{Binding VisibleTime}"
@@ -324,7 +324,7 @@ Repeat the steps from the preview example but on __step 3__ create the __EventIn
 
 #### __C#__
 
-{{region radganttview-howto-customize-the-timeline-7}}
+{{region cs-radganttview-howto-customize-the-timeline-7}}
 		public class TimeLineDeadlineEventInfo : TimeSlotInfo
 		{
 			public TimeLineDeadlineEventInfo(Range<long> timeRange)
@@ -348,7 +348,7 @@ And on __step 4__ create the custom __TimeLineDeadlineBehavior__ as follows:
 
 #### __C#__
 
-{{region radganttview-howto-customize-the-timeline-8}}
+{{region cs-radganttview-howto-customize-the-timeline-8}}
 		public class TimeLineDeadlineBehavior : DefaultGanttTimeLineVisualizationBehavior
 		{
 			private DateTime projectDeadline;
@@ -389,7 +389,7 @@ Finally we will need to create a __ProjectDeadline__ property in the ViewModel o
 
 #### __C#__
 
-{{region radganttview-howto-customize-the-timeline-9}}
+{{region cs-radganttview-howto-customize-the-timeline-9}}
 		public class MyViewModel : ViewModelBase
 		{
 			...

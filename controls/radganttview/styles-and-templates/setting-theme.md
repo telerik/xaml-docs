@@ -36,7 +36,7 @@ There are two ways to reference the needed xaml files:
 
 	#### __XAML__
 
-	{{region radganttview-styles-and-templates-setting-theme_0}}
+	{{region xaml-radganttview-styles-and-templates-setting-theme_0}}
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -58,7 +58,7 @@ There are two ways to reference the needed xaml files:
 
 	#### __XAML__
 
-	{{region radganttview-styles-and-templates-setting-theme_1}}
+	{{region xaml-radganttview-styles-and-templates-setting-theme_1}}
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>

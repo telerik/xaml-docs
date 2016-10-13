@@ -21,7 +21,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radlistbox-0}}
+	{{region xaml-radganttview-dragdrop-radlistbox-0}}
 		<telerik:RadListBox ItemsSource="{Binding Projects}" DisplayMemberPath="Name"/>
 	{{endregion}}
 
@@ -29,7 +29,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-0}}
+	{{region cs-radganttview-dragdrop-radlistbox-0}}
 		public class ViewModel : ViewModelBase
 		{
 			private ObservableCollection<Project> projects;
@@ -67,7 +67,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radlistbox-1}}
+	{{region xaml-radganttview-dragdrop-radlistbox-1}}
 		<telerik:RadGanttView x:Name="radGanttView" 
 							  TasksSource="{Binding GanttTasks}" 
 							  VisibleRange="{Binding VisibleRange}">
@@ -83,7 +83,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-1}}
+	{{region cs-radganttview-dragdrop-radlistbox-1}}
 		public class ViewModel : ViewModelBase
 		{
 			...
@@ -150,7 +150,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-2}}
+	{{region cs-radganttview-dragdrop-radlistbox-2}}
 		public class CustomGanttDragDropBehavior : GanttDragDropBehavior
 		{
 			protected override bool CanStartDrag(SchedulingDragDropState state)
@@ -164,7 +164,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-3}}
+	{{region cs-radganttview-dragdrop-radlistbox-3}}
 		public class CustomGanttConverter : DataConverter
 		{
 			public override object ConvertTo(object data, string format)
@@ -192,7 +192,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-4}}
+	{{region cs-radganttview-dragdrop-radlistbox-4}}
 		public class CustomListBoxConverter : DataConverter
 		{
 			public override object ConvertTo(object data)
@@ -209,7 +209,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radlistbox-2}}
+	{{region xaml-radganttview-dragdrop-radlistbox-2}}
 		<telerik:RadListBox ItemsSource="{Binding Projects}" 
 							AllowDrop="True"
 							ItemContainerStyle="{StaticResource DraggableListBoxItem}" 

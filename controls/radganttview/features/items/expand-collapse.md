@@ -24,7 +24,7 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 	#### __C#__
 
-	{{region radganttview-features-items-expand-collapse-1}}
+	{{region cs-radganttview-features-items-expand-collapse-1}}
 		public class CustomInitialExpandBehavior : IInitialExpandBehavior
 		{
 		
@@ -35,7 +35,7 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 	#### __C#__
 
-	{{region radganttview-features-items-expand-collapse-2}}
+	{{region cs-radganttview-features-items-expand-collapse-2}}
 		public class CustomInitialExpandBehavior : IInitialExpandBehavior
 		{
 			public bool ShouldExpandItemByDefault(Telerik.Windows.Core.HierarchicalItem item)
@@ -51,7 +51,7 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 	#### __XAML__
 
-	{{region radganttview-features-items-expand-collapse-1}}
+	{{region xaml-radganttview-features-items-expand-collapse-1}}
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
 							  VisibleRange="{Binding VisibleTime}"
 			<telerik:RadGanttView.Columns>
@@ -66,7 +66,7 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 	#### __XAML__
 
-	{{region radganttview-features-items-expand-collapse-2}}
+	{{region xaml-radganttview-features-items-expand-collapse-2}}
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
 							  VisibleRange="{Binding VisibleTime}"
 							  InitialExpandBehavior="{StaticResource CustomInitialExpandBehavior}">
@@ -96,7 +96,7 @@ The next example will enhance the previous example by adding two button one for 
 
 #### __XAML__
 
-{{region radganttview-features-items-expand-collapse-3}}
+{{region xaml-radganttview-features-items-expand-collapse-3}}
 	<StackPanel Orientation="Horizontal">
 	    <TextBlock Text="Expand/Collapse Tasks with the use of the code behind:" Margin="10 0 0 20" VerticalAlignment="Center"/>
 	    <Button Content="Expand Big Iteration Task" x:Name="ExpandButton" Click="ExpandButton_Click" Margin="10 0 10 20"/>
@@ -108,7 +108,7 @@ The next example will enhance the previous example by adding two button one for 
 
 #### __C#__
 
-{{region radganttview-features-items-expand-collapse-3}}
+{{region cs-radganttview-features-items-expand-collapse-3}}
 	private void ExpandButton_Click(object sender, RoutedEventArgs e)
 	{
 	    var firstTask = (this.GanttView.TasksSource as IList<GanttTask>)[0];

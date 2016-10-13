@@ -31,7 +31,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 #### __XAML__
 
-{{region radganttview-getting-started_0}}
+{{region xaml-radganttview-getting-started_0}}
 	<UserControl
 	   ...
 	   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -52,7 +52,7 @@ You should manually define the columns of the data grid in order to show additio
 
 #### __XAML__
 
-{{region radganttview-getting-started_3}}
+{{region xaml-radganttview-getting-started_3}}
 	<telerik:RadGanttView x:Name="ganttView">
 		<telerik:RadGanttView.Columns>
 			<telerik:TreeColumnDefinition Header="Title" Width="AutoHeaderAndContent"/>
@@ -70,7 +70,7 @@ You should manually define the columns of the data grid in order to show additio
 
 #### __C#__
 
-{{region radganttview-getting-started_1}}
+{{region cs-radganttview-getting-started_1}}
 	var date = DateTime.Now;
 	
 	var task1 = new GanttTask( date, date.AddDays(1), "task 1");
@@ -88,7 +88,7 @@ You should manually define the columns of the data grid in order to show additio
 
 #### __XAML__
 
-{{region radganttview-getting-started_2}}
+{{region xaml-radganttview-getting-started_2}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
 	...
 	</telerik:RadGanttView>

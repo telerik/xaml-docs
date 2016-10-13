@@ -22,7 +22,7 @@ The next example will demonstrate how to add an additional description property 
 
 	#### __C#__
 
-	{{region radganttview-features-items-custom-gantttask_0}}
+	{{region cs-radganttview-features-items-custom-gantttask_0}}
 		public class MyGanttTask : GanttTask
 		{
 		}
@@ -32,7 +32,7 @@ The next example will demonstrate how to add an additional description property 
 
 	#### __C#__
 
-	{{region radganttview-features-items-custom-gantttask_1}}
+	{{region cs-radganttview-features-items-custom-gantttask_1}}
 		public class MyGanttTask : GanttTask
 		{
 			public string CustomDescription { get; set; }
@@ -43,7 +43,7 @@ The next example will demonstrate how to add an additional description property 
 
 	#### __C#__
 
-	{{region radganttview-features-items-custom-gantttask_2}}
+	{{region cs-radganttview-features-items-custom-gantttask_2}}
 		public class ViewModel : ViewModelBase
 		{
 			private ObservableCollection<MyGanttTask> tasks;
@@ -135,7 +135,7 @@ The xaml of the GanttView control should look like this:
 
 #### __XAML__
 
-{{region radganttview-features-items-custom-gantttask_0}}
+{{region xaml-radganttview-features-items-custom-gantttask_0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="5"
 					VisibleRange="{Binding VisibleTime}">
 		<telerik:RadGanttView.Columns>
@@ -161,7 +161,7 @@ The next code snippet shows a sample implementation of __IDependant__ interface:
 
 #### __C#__
 
-{{region radganttview-features-items-custom-gantttask_3}}
+{{region cs-radganttview-features-items-custom-gantttask_3}}
 	IEnumerable IDependant.Dependencies
 	{
 		get { return this.Dependencies; }

@@ -20,7 +20,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radscheduleview-0}}
+	{{region xaml-radganttview-dragdrop-radscheduleview-0}}
 		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
 			<telerik:RadScheduleView.ViewDefinitions>
 				<telerik:WeekViewDefinition/>
@@ -32,7 +32,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radscheduleview-0}}
+	{{region cs-radganttview-dragdrop-radscheduleview-0}}
 		public class ViewModel : ViewModelBase
 		{
 			private ObservableCollection<Appointment> appointments;
@@ -90,7 +90,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radscheduleview-1}}
+	{{region xaml-radganttview-dragdrop-radscheduleview-1}}
 		<telerik:RadGanttView x:Name="radGanttView" 
 							  TasksSource="{Binding GanttTasks}" 
 							  VisibleRange="{Binding VisibleRange}">
@@ -106,7 +106,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radscheduleview-1}}
+	{{region cs-radganttview-dragdrop-radscheduleview-1}}
 		public class ViewModel : ViewModelBase
 		{
 			...
@@ -169,7 +169,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radscheduleview-2}}
+	{{region cs-radganttview-dragdrop-radscheduleview-2}}
 		public class CustomGanttDragDropBehavior : GanttDragDropBehavior
 		{
 			protected override bool CanStartDrag(SchedulingDragDropState state)
@@ -183,7 +183,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radscheduleview-3}}
+	{{region cs-radganttview-dragdrop-radscheduleview-3}}
 		public class CustomScheduleViewDragDropBehavior : ScheduleViewDragDropBehavior
 		{
 			public override IEnumerable<IOccurrence> ConvertDraggedData(object data)
@@ -208,7 +208,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radscheduleview-4}}
+	{{region cs-radganttview-dragdrop-radscheduleview-4}}
 		public class CustomScheduleViewConverter : IDataObjectProvider
 		{
 			public object GetData(string type, bool autoConvert, IEnumerable<IOccurrence> draggedAppointments)
@@ -243,7 +243,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radscheduleview-2}}
+	{{region xaml-radganttview-dragdrop-radscheduleview-2}}
 		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 								 Margin="20">
 			<telerik:RadScheduleView.ViewDefinitions>

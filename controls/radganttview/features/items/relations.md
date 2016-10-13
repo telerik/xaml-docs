@@ -16,7 +16,7 @@ The relation is set through __Dependencies__ property of the __GanttTask__ class
 
 #### __C#__
 
-{{region radganttview-features-items-relations_0}}
+{{region cs-radganttview-features-items-relations_0}}
 	var task1 = new GanttTask(date, date.AddDays(1), "task 1");
 	var task2 = new GanttTask(date.AddDays(1), date.AddDays(1).AddHours(15), "task 2");
 	

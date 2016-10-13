@@ -32,7 +32,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __C#__
 
-	{{region radganttview-exportingsupport-0}}
+	{{region cs-radganttview-exportingsupport-0}}
 		public class GanttPaginator : DocumentPaginator
 		{
 			private IList<BitmapSource> exportImages;
@@ -86,7 +86,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __C#__
 
-	{{region radganttview-exportingsupport-1}}
+	{{region cs-radganttview-exportingsupport-1}}
 		public static class PrintingService
 		{
 			public static void Print(RadGanttView ganttView)
@@ -112,7 +112,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __XAML__
 
-	{{region radganttview-exportingsupport-0}}
+	{{region xaml-radganttview-exportingsupport-0}}
 		<Grid DataContext="{StaticResource ViewModel}">
 		
 			...
@@ -127,7 +127,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __C#__
 
-	{{region radganttview-exportingsupport-2}}
+	{{region cs-radganttview-exportingsupport-2}}
 		private void PrintButtonClick(object sender, RoutedEventArgs e)
 		{
 			PrintingService.Print(this.GanttView);
@@ -145,7 +145,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __C#__
 
-	{{region radganttview-exportingsupport-3}}
+	{{region cs-radganttview-exportingsupport-3}}
 		public static class PrintingService
 		{
 			public static void Print(RadGanttView ganttView)
@@ -195,7 +195,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __XAML__
 
-	{{region radganttview-exportingsupport-0}}
+	{{region xaml-radganttview-exportingsupport-0}}
 		<Grid DataContext="{StaticResource ViewModel}">
 		
 			...
@@ -210,7 +210,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __C#__
 
-	{{region radganttview-exportingsupport-2}}
+	{{region cs-radganttview-exportingsupport-2}}
 		private void PrintButtonClick(object sender, RoutedEventArgs e)
 		{
 			PrintingService.Print(this.GanttView);

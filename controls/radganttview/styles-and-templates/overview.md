@@ -20,7 +20,7 @@ Let’s for example have a GanttView control defined like this:
 
 #### __XAML__
 
-{{region radganttview-styles-and-templates-overview_0}}
+{{region xaml-radganttview-styles-and-templates-overview_0}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>
@@ -53,7 +53,7 @@ If we have CellTemplate and/or CellEditTemplate defined, the generated container
 
 #### __XAML__
 
-{{region radganttview-styles-and-templates-overview_4}}
+{{region xaml-radganttview-styles-and-templates-overview_4}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
 		...
 		<telerik:RadGanttView.Columns>
@@ -94,7 +94,7 @@ In case we have SpecialSlots defined:
 
 #### __XAML__
 
-{{region radganttview-styles-and-templates-overview_1}}
+{{region xaml-radganttview-styles-and-templates-overview_1}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
 		...
 		<telerik:RadGanttView.SpecialSlotsGenerator>
@@ -162,7 +162,7 @@ So, let’s create the following implicit style:
 
 #### __XAML__
 
-{{region radganttview-styles-and-templates-overview_2}}
+{{region xaml-radganttview-styles-and-templates-overview_2}}
 	<Style TargetType="telerik:EventContainer" BasedOn="{StaticResource EventContainerStyle}">			
 		<Setter Property="Foreground" Value="White" />
 		<Setter Property="Background" Value="Navy" />		
@@ -179,7 +179,7 @@ In case you need to further customize an element, you could create an implicit s
 
 #### __XAML__
 
-{{region radganttview-styles-and-templates-overview_3}}
+{{region xaml-radganttview-styles-and-templates-overview_3}}
 	<Style TargetType="gantt:DragResizeSlotHighlightContainer">			
 		<Setter Property="BorderBrush" Value="{x:Null}" />
 		<Setter Property="BorderThickness" Value="0" />

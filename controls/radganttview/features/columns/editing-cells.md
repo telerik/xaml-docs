@@ -22,7 +22,7 @@ The xaml of the GanttView should look like this:
 
 #### __XAML__
 
-{{region radganttview-features-columns-edit-template-0}}
+{{region xaml-radganttview-features-columns-edit-template-0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" 
 						  VerticalAlignment="Top"
 						  VisibleRange="{Binding VisibleTime}">

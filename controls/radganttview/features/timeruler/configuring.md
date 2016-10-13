@@ -28,7 +28,7 @@ Here are some examples:
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-configuring_0}}
+{{region xaml-radganttview-features-timeruler-configuring_0}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">		
 	</telerik:RadGanttView>
 {{endregion}}
@@ -39,7 +39,7 @@ Here are some examples:
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-configuring_1}}
+{{region xaml-radganttview-features-timeruler-configuring_1}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="01:00:00">		
 	</telerik:RadGanttView>
 {{endregion}}
@@ -50,7 +50,7 @@ Here are some examples:
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-configuring_2}}
+{{region xaml-radganttview-features-timeruler-configuring_2}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:15:00">		
 	</telerik:RadGanttView>
 {{endregion}}
@@ -65,7 +65,7 @@ Here is a simple example:
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-configuring_3}}
+{{region xaml-radganttview-features-timeruler-configuring_3}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>
@@ -135,7 +135,7 @@ Let’s have the example modified like this:
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-configuring_4}}
+{{region xaml-radganttview-features-timeruler-configuring_4}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>
@@ -158,7 +158,7 @@ Let’s modify the example like this:
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-configuring_5}}
+{{region xaml-radganttview-features-timeruler-configuring_5}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:20:00">
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>
@@ -176,7 +176,7 @@ Note that we’ve set two TickIntervals for the MajorTickLine.  So when PixelLen
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-configuring_6}}
+{{region xaml-radganttview-features-timeruler-configuring_6}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" PixelLength="00:40:00">
 		<telerik:RadGanttView.TimeRulerLines>
 			<telerik:GroupTickLine>

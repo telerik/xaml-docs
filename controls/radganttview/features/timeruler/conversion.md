@@ -24,7 +24,7 @@ The next code snippets shows how to implement the above formula in order to set 
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-conversion-1}}
+{{region xaml-radganttview-features-timeruler-conversion-1}}
 	<telerik:RadGanttView x:Name="GanttView">
 	    ...
 	</telerik:RadGanttView>
@@ -32,7 +32,7 @@ The next code snippets shows how to implement the above formula in order to set 
 
 #### __C#__
 
-{{region radganttview-features-timeruler-conversion-1}}
+{{region cs-radganttview-features-timeruler-conversion-1}}
 	var maxTicks = this.GanttView.VisibleRange.End.Subtract(this.GanttView.VisibleRange.Start).Ticks / 760;
 	
 	this.GanttView.PixelLength = TimeSpan.FromTicks(maxTicks);
@@ -48,7 +48,7 @@ The next code snippets show how to implement the described above formula in orde
 
 #### __XAML__
 
-{{region radganttview-features-timeruler-conversion-1}}
+{{region xaml-radganttview-features-timeruler-conversion-1}}
 	<telerik:RadGanttView x:Name="GanttView">
 	    ...
 	</telerik:RadGanttView>
@@ -56,7 +56,7 @@ The next code snippets show how to implement the described above formula in orde
 
 #### __C#__
 
-{{region radganttview-features-timeruler-conversion-2}}
+{{region cs-radganttview-features-timeruler-conversion-2}}
 	var maxTicks = this.GanttView.PixelLength.Ticks;
 	
 	var pixels = this.GanttView.VisibleRange.End.Subtract(this.GanttView.VisibleRange.Start).Ticks / maxTicks;

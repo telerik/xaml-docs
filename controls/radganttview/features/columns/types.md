@@ -35,7 +35,7 @@ To define columns in the RadGanttView control, you have to add them to the Colum
 
 #### __[XAML] Example 1: Declaring RadGanttView__
 
-{{region radganttview-features-columns-types_0}}
+{{region xaml-radganttview-features-columns-types_0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
 						  VerticalAlignment="Top"
 						  VisibleRange="{Binding VisibleTime}">
@@ -46,7 +46,7 @@ To define columns in the RadGanttView control, you have to add them to the Colum
 
 #### __[XAML] Example 2: Adding columns__
 
-{{region radganttview-features-columns-types_1}}
+{{region xaml-radganttview-features-columns-types_1}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
 						  VerticalAlignment="Top"
 						  VisibleRange="{Binding VisibleTime}">
@@ -62,7 +62,7 @@ To define columns in the RadGanttView control, you have to add them to the Colum
 
 #### __[XAML] Example 3: Setting column properties__
 
-{{region radganttview-features-columns-types_2}}
+{{region xaml-radganttview-features-columns-types_2}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
 				VerticalAlignment="Top"
 				VisibleRange="{Binding VisibleTime}">
@@ -88,7 +88,7 @@ Let us, for example, set the first "Title" column to be frozen, as shown in __Ex
 
 #### __[XAML] Example 4: Setting IsFrozenColumn property__
 
-{{region radganttview-features-columns-types_3}}
+{{region xaml-radganttview-features-columns-types_3}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}">
 		<telerik:RadGanttView.Columns>
 			<telerik:TreeColumnDefinition Header="Title" IsFrozenColumn="True" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent" />

@@ -18,7 +18,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 #### __XAML__
 
-{{region radganttview-populating-with-data-viewmodel_0}}
+{{region xaml-radganttview-populating-with-data-viewmodel_0}}
 	<telerik:RadGanttView x:Name="ganttView" />	
 {{endregion}}
 
@@ -26,7 +26,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 #### __C#__
 
-{{region radganttview-populating-with-data-viewmodel_1}}
+{{region cs-radganttview-populating-with-data-viewmodel_1}}
 	public class MyViewModel
 	{
 	}
@@ -36,7 +36,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 #### __C#__
 
-{{region radganttview-populating-with-data-viewmodel_2}}
+{{region cs-radganttview-populating-with-data-viewmodel_2}}
 	public class MyViewModel : PropertyChangedBase
 	{
 		private ObservableCollection<GanttTask> tasks;
@@ -60,7 +60,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 #### __C#__
 
-{{region radganttview-populating-with-data-viewmodel_3}}
+{{region cs-radganttview-populating-with-data-viewmodel_3}}
 	public MyViewModel()
 	{
 		var date = DateTime.Now;
@@ -87,7 +87,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 #### __XAML__
 
-{{region radganttview-populating-with-data-viewmodel_4}}
+{{region xaml-radganttview-populating-with-data-viewmodel_4}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}"  />
 {{endregion}}
 
@@ -95,7 +95,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 #### __C#__
 
-{{region radganttview-populating-with-data-viewmodel_5}}
+{{region cs-radganttview-populating-with-data-viewmodel_5}}
 	this.DataContext = new MyViewModel();
 {{endregion}}
 

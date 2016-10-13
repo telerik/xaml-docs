@@ -20,7 +20,7 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 #### __C#__
 
-{{region radganttview-features-items-highlighting_0}}
+{{region cs-radganttview-features-items-highlighting_0}}
 	public class MyViewModel : PropertyChangedBase
 	{
 		private ObservableCollection<GanttTask> tasks;
@@ -52,7 +52,7 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 #### __C#__
 
-{{region radganttview-features-items-highlighting_1}}
+{{region cs-radganttview-features-items-highlighting_1}}
 	public MyViewModel()
 	{
 		...
@@ -64,7 +64,7 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 #### __XAML__
 
-{{region radganttview-features-items-highlighting_2}}
+{{region xaml-radganttview-features-items-highlighting_2}}
 	<telerik:RadGanttView x:Name="ganttView" 
 			TasksSource="{Binding Tasks}" 
 			HighlightedItemsSource="{Binding HighlightedTasks}" />

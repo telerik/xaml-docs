@@ -18,7 +18,7 @@ The next example demonstrates how to customize the CellTemplate of the Title col
 
 #### __XAML__
 
-{{region radganttview-features-columns-cell-template-0}}
+{{region xaml-radganttview-features-columns-cell-template-0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
 						  VerticalAlignment="Top"
 						  VisibleRange="{Binding VisibleTime}">

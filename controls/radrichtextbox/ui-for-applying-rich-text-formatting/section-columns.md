@@ -37,6 +37,8 @@ The Page Layout tab of [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-r
 
 * **Right**: Represents two text columns where the right one has a smaller width than the left one.
 
+* **More Columns...**: Opens the Section Columns Dialog that allows you set columns with custom width and spacing. 
+
 #### __Figure 3: Left option applied on a section__
 ![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
 
@@ -47,7 +49,12 @@ When the Section contains columns with equal width, you can customize the width 
 #### __Figure 3: Customizing the width of a column__
 ![RadRichTextBox_Features_Section_Columns_04](images/RadRichTextBox_Features_Section_Columns_04.png)
 
-# See Also
+Another approach for applying different settings to section columns is through the Columns dialog.
+
+#### __Figure 4: Customizing the width and spacing of columns using dialog__
+![RadRichTextBox_Features_Section_Columns_04](images/RadRichTextBox_Features_Section_Columns_05.png)
+
+## See Also
 
 * [Section]({%slug radrichtextbox-features-document-elements-section%})
 * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})

@@ -140,6 +140,8 @@ There are two events related to the exporting of RadGridView with the ExportToXl
 
 * __[Disable the Export of a Particular Column]({%slug gridview-troubleshooting-disable-column-export%})__
 
+* **[Style Exported XLSX & PDF Documents]({%slug gridview-export-style-exported-xlsx-pdf-documents%})**
+
 
 ## See Also
 

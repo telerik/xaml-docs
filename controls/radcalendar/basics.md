@@ -21,7 +21,7 @@ There are four __Calendar modes__ that specify what is visible in the Calendar v
 #### __XAML__
 
 {{region xaml-radcalendar-basics_0}}
-	<telerik:RadCalendar DisplayMode="YearView" />
+	<telerik:RadCalendar DisplayMode="YearView" x:Name="calendar"/>
 {{endregion}}
 
 >The navigation between different __DisplayModes__ depends on the currently set __DisplayDate__. If, for example in the MonthView, the currently shown Month is August, but the SelectedDate is in September, clicking on the header button will navigate to YearView and will highlight August button.

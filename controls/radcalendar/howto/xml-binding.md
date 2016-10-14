@@ -17,16 +17,15 @@ The __DataSource.xml__ file has the following content:
 #### __XAML__
 
 {{region xaml-radcalendar-xml-binding_0}}
-	<?xml version="1.0" encoding="utf-8" ?>
 	<ChosenDates>
-	  <Date>08/21/2010</Date>
-	  <Date>08/04/2010</Date>
-	  <Date>08/01/2010</Date>
-	  <Date>08/26/2010</Date>
-	  <Date>08/02/2010</Date>
-	  <Date>08/03/2010</Date>
-	  <Date>08/19/2010</Date>
-	  <Date>08/10/2010</Date>
+	    <Date>08/21/2010</Date>
+	    <Date>08/04/2010</Date>
+	    <Date>08/01/2010</Date>
+	    <Date>08/26/2010</Date>
+	    <Date>08/02/2010</Date>
+	    <Date>08/03/2010</Date>
+	    <Date>08/19/2010</Date>
+	    <Date>08/10/2010</Date>
 	</ChosenDates>
 {{endregion}}
 

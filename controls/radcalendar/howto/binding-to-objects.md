@@ -20,7 +20,7 @@ Here is the Xaml for the example:
 
 #### __XAML__
 
-{{region radcalendar-binding-to-objects_0}}
+{{region xaml-radcalendar-binding-to-objects_0}}
 	<UserControl x:Class="SimpleTwoWayDataBinding.Page"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
@@ -42,7 +42,7 @@ And the code-behind:
 
 #### __C#__
 
-{{region radcalendar-binding-to-objects_1}}
+{{region cs-radcalendar-binding-to-objects_1}}
 	using System;
 	using System.ComponentModel;
 	using System.Windows;

@@ -32,7 +32,7 @@ This article will show you how to create a simple calendar.
 
 	#### __XAML__
 
-	{{region radcalendar-getting-started_0}}
+	{{region xaml-radcalendar-getting-started_0}}
 		<telerik:RadCalendar HorizontalAlignment="Left" VerticalAlignment="Center" 
 			 x:Name="calendar" Columns="2" ViewsHeaderVisibility="Visible"/>
 	{{endregion}}

@@ -16,7 +16,7 @@ The following snippet creates a Calendar with Extended selection mode:
 
 #### __XAML__
 
-{{region radcalendar-selection-modes_0}}
+{{region xaml-radcalendar-selection-modes_0}}
 	<telerik:RadCalendar SelectionMode="Extended" />
 {{endregion}}
 

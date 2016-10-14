@@ -24,7 +24,7 @@ The __RadCalendar__ has several static methods (__IsDisplayDateValid__, __IsDisp
 
 #### __C#__
 
-{{region radcalendar-constraining-selection-and-visible-dates_0}}
+{{region cs-radcalendar-constraining-selection-and-visible-dates_0}}
 	if (RadCalendar.IsDisplayDateValid(calendar, DateTime.Today))
 	{
 	    calendar.DisplayDate = DateTime.Today;

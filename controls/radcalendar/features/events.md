@@ -14,7 +14,7 @@ The __RadCalendar__ exposes three events that can be handled: __SelectionChanged
 
 #### __C#__
 
-{{region radcalendar-events_0}}
+{{region cs-radcalendar-events_0}}
 	using System;
 	using System.Windows.Controls;
 	namespace EventsHandling
@@ -36,7 +36,7 @@ The __RadCalendar__ exposes three events that can be handled: __SelectionChanged
 
 #### __XAML__
 
-{{region radcalendar-events_1}}
+{{region xaml-radcalendar-events_1}}
 	<StackPanel>
 	    <telerik:RadCalendar x:Name="calendar" SelectionMode="Extended"/>
 	    <TextBlock x:Name="message" />
@@ -51,7 +51,7 @@ The following example shows how to sign up for the __SelectionChanged__ event at
 
 #### __C#__
 
-{{region radcalendar-events_2}}
+{{region cs-radcalendar-events_2}}
 	public Page()
 	{
 	    InitializeComponent();

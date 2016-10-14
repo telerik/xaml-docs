@@ -22,7 +22,7 @@ Firstly, you need to create a DayButtonTemplateSelector class that inherits the 
 
 #### __C#__
 
-{{region radcalendarstyling-and-appearance-daytemplateselector-1}}
+{{region cs-radcalendarstyling-and-appearance-daytemplateselector-1}}
 	public class DayButtonTemplateSelector : DataTemplateSelector
 	{
 			
@@ -33,7 +33,7 @@ Next we need to define the needed DataTemplates and override the __SelectTemplat
 
 #### __C#__
 
-{{region radcalendarstyling-and-appearance-daytemplateselector-2}}
+{{region cs-radcalendarstyling-and-appearance-daytemplateselector-2}}
 	public DataTemplate DefaultTemplate { get; set; }
 	public DataTemplate BookedDayTemplate { get; set; }
 	public DataTemplate SpecialHolidayTemplate { get; set; }
@@ -66,7 +66,7 @@ As a next step you need to create a StaticResource in XAML for the DayButtonTemp
 
 #### __XAML__
 
-{{region radcalendarstyling-and-appearance-daytemplateselector-1}}
+{{region xaml-radcalendarstyling-and-appearance-daytemplateselector-1}}
 	<local:DayButtonTemplateSelector x:Key="DayButtonTemplateSelector">
 		<local:DayButtonTemplateSelector.DefaultTemplate>
 			<DataTemplate>
@@ -117,7 +117,7 @@ As a next step you need to create a StaticResource in XAML for the DayButtonTemp
 The last step is to set the __DayTemplateSelector__ property of the control:
 
 #### __XAML__
-{{region radcalendarstyling-and-appearance-daytemplateselector-2}}
+{{region xaml-radcalendarstyling-and-appearance-daytemplateselector-2}}
 	<telerik:RadCalendar DayTemplateSelector="{StaticResource DayButtonTemplateSelector}" />
 {{endregion}}
 

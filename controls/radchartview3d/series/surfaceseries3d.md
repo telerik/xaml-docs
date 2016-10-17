@@ -191,21 +191,32 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 		
 		this.surfaceSeries.DataContext = source;
 		
-	#### __Figure 3: SurfaceSeries3DDataPointColorizer__  
+	#### __Figure 3: SurfaceSeries3DDataPointColorizer with default blending colorization mode__  
 	![](images/radchartview-3d-surfaceseries3d-2.png)
+	
+	The __SurfaceSeries3DDataPointColorizer__ supports two colorization modes which determine the appearance of the surface. You can change the mode via the __ColorizationMode__ property of the colorizer. This property accepts the following values:
+	
+	* __Blend__: The surface is divided into triangles determined by the original data points centers. The pixels in each triangle are color blends between the three colors determined by the data points (see __Figure 3__). This is the default colorization mode.
+	* __Tiles__: Each data point is presented by a tile with a solid color (see __Figure 4__).
+	
+	#### __[XAML] Example 9: Setting colorization mode__  
+		<telerik:SurfaceSeries3DDataPointColorizer ColorizationMode="Tiles"/>
+	
+	#### __Figure 4: SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles__  
+	![](images/radchartview-3d-surfaceseries3d-3.png)
 	
 ## Display direction
 
 The display direction specifies how the 3D points are connected, thus how the surface is displayed. The points are connected in a way to respect their 2D position on the plane which is perpendicular to the display direction. For example, if the display direction is the Z axis, then the points are connected so that their 2D position in the XY plane is respected.
 
-#### __[XAML] Example 9: Setting display direction__  
+#### __[XAML] Example 10: Setting display direction__  
 	<telerik:SurfaceSeries3D DisplayDirection="Z" />
 	
 ## Customizing surface triangulation	
 
 __SurfaceSeries3D__ allows you define a custom collection of triangle indices used to create the triangles which form the surface. The indices collection will be set to the __MeshGeometry3D__ object that presents the surface. To pass the custom triangulation you can use the __TriangleIndices__ collection of __SurfaceSeries3D__. When the collection is null, the chart calculates the triangle indices automatically.
 
-#### __[C#] Example 9: Setting display direction__  
+#### __[C#] Example 11: Setting display direction__  
 	surfaceSeries.TriangleIndices = GetTriangleIndices();
 	//....
 	private Int32Collection GetTriangleIndices()
@@ -217,14 +228,14 @@ __SurfaceSeries3D__ allows you define a custom collection of triangle indices us
 
 By default the data points of the series are not visible and only the surface can be seen. You can display the data point visuals by setting the __PointSize__ property. 
 
-#### __[XAML] Example 10: Setting point size in XAML__  
+#### __[XAML] Example 12: Setting point size in XAML__  
 	<telerik:SurfaceSeries3D PointSize="60 60 60">
 
-#### __[C#] Example 11: Setting point size in code__  
+#### __[C#] Example 13: Setting point size in code__  
 	surfaceSeries.PointSize = new Size3D(60, 60, 60);
 
-#### __Figure 4: SurfaceSeries3D default point visuals__  
-![](images/radchartview-3d-surfaceseries3d-3.png)
+#### __Figure 5: SurfaceSeries3D default point visuals__  
+![](images/radchartview-3d-surfaceseries3d-4.png)
 	
 To customize the geometry and the material of the visual elements that represent the __SurfaceSeries3D__ data points you can use the __DefaultVisualMaterial__ and __DefaultVisualGeometry__ properties of the series. Additionally, you can use the __DefaultVisualMaterialSelector__ and __DefaultVisualGeometrySelector__ to choose different materials and geometries based on a specific condition.
  

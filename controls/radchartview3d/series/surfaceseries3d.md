@@ -194,7 +194,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 	#### __Figure 3: SurfaceSeries3DDataPointColorizer with default blending colorization mode__  
 	![](images/radchartview-3d-surfaceseries3d-2.png)
 	
-	The __SurfaceSeries3DDataPointColorizer__ supports two colorization modes which determines the appearance of the surface. The mode can be changed via the __ColorizationMode__ property of the colorizer and it accepts the following values:
+	The __SurfaceSeries3DDataPointColorizer__ supports two colorization modes which determine the appearance of the surface. You can change the mode via the __ColorizationMode__ property of the colorizer. This property accepts the following values:
 	
 	* __Blend__: The surface is divided into triangles determined by the original data points centers. The pixels in each triangle are color blends between the three colors determined by the data points (see __Figure 3__). This is the default colorization mode.
 	* __Tiles__: Each data point is presented by a tile with a solid color (see __Figure 4__).

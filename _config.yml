@@ -3038,6 +3038,9 @@ defaults:
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 
+# Define any custom fields that you use in the site here
+framework_name: WPF
+
 # Feedback Form Google Sheet ID
 ff-sheet-id: 1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo
 

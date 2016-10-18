@@ -99,6 +99,9 @@ navigation:
 ## The application virtual path
 baseurl: "/devtools/silverlight"
 
+# Define any custom fields that you use in the site here
+framework_name: Silverlight
+
 # The google services configuration
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92

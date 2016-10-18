@@ -26,7 +26,7 @@ __RadProgressBar__ has an __Orientation__ property which can be set to either *H
 #### __VB.NET__
 {{region vb-Orientation_2}}
 	Dim progressBar As New RadProgressBar()
-	progressBar.Orientation = System.Windows.Controls.Orientation.Vertical
+	progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal
 {{endregion}}
 
 ![](images/progress_horizontal.jpg)

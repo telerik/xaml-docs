@@ -45,7 +45,7 @@ The __ReorderingEasing__ property is of type __IEasingFunction__ which means tha
 	
 ## Resizing animation
 
-It occurs when the items changes their __TileState__ (minimized, maximized, restored) The __RadTileView__ control allows you to change the animation duration and easing function. To do that use the __ResizingDuration__ and __ResizingEasing__ properties. The properties are set in the same manner as the reordering animation properties (see Examples 2 to 4).
+It occurs when the items change their __TileState__ (minimized, maximized, restored). The __RadTileView__ control allows you to change the animation duration and easing function. To do that use the __ResizingDuration__ and __ResizingEasing__ properties. The properties are set in the same manner as the reordering animation properties (see Examples 2 to 4).
 
 ## See Also
  * [Getting Started]({%slug radtileview-getting-started%})

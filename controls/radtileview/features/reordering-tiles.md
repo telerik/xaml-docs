@@ -32,13 +32,6 @@ __RadTileView__ supports autoscrolling while dragging a tile. To enable this fea
 #### __[XAML] Example 3: Enabling autoscrolling__
 	<telerik:RadTileView IsAutoScrollingEnabled="True">
 
-## Animation
-
-You can control the tileview animations, including the reordering animation via the __IsItemsAnimationEnabled__ property. Note that the property will also affect the minimize/maximize animation. You can find more information about animations in the [Animation]({%slug radtileview-animation%}) help article.
-
-#### __[XAML] Example 4: Disabling animations__
-	<telerik:RadTileView IsItemsAnimationEnabled="False">
-
 ## See Also
 
 * [Getting Started]({%slug radtileview-getting-started%})

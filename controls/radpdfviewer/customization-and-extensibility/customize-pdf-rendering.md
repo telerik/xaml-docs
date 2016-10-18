@@ -135,11 +135,11 @@ The result that a custom filter should return depends on the type of the filter.
 
 * **JBIG2Decode**
 
+* **JPXDecode**
+
 * **DCTDecode**
 	>You can override the DctDecode class and its Decode() method. This will enable you to call the DecodeWithJpegDecode() method in order to achieve backward compatibility by using Telerik's JpegDecoder. In some cases, this approach decodes faster than the BitmapImage class, which is currently used to decode the images.
 
-
-* **JPXDecode**
 
 RadPdfViewer expects these filters to return data that depends on the decoded object's colors space and bits per component (there are such properties in the __decodedObject__). The resulting byte array should contain exactly BitsPerComponent bits for each color component in the color space. For example, if you have RGB color space and 8 bits per component, the resulting byte array should contains a single byte value for each Red, Green and Blue value (for each pixel) in the decoded image.
         

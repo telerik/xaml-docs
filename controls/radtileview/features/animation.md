@@ -10,83 +10,44 @@ position: 4
 
 # Animation
 
-##  Modifying the default animations
+This article describes how you can control the __RadTileView__ animations. By default the animations are enabled. This can be changed using the __IsItemsAnimationEnabled__ property.
 
-There are two different animations available in the __RadTileView__
+#### __[XAML] Example 1: Disabling the animations__
+	<telerik:RadTileView IsItemsAnimationEnabled="False">
+		<telerik:RadTileViewItem Header="Item 1" />
+		<telerik:RadTileViewItem Header="Item 2" />
+		<telerik:RadTileViewItem Header="Item 3" />
+		<telerik:RadTileViewItem Header="Item 4" />
+		<telerik:RadTileViewItem Header="Item 5" />
+		<telerik:RadTileViewItem Header="Item 6" />
+	</telerik:RadTileView>	
 
-* __Reordering animation__ - when the items are dragged and reordered when in __Restore__ state.					
+There are two different animations available with the control.
 
-* __Resizing animation__ - when the items change their state.					
+## Reordeing animation
 
-The following properties are available for modifying the animations:
+It occurs when items are swapped using drag. Or when the __Position__ property's value of a __RadTileViewItem__ is changed. The __RadTileView__ control allows you to change the animation duration and easing function. To do that use the __ReorderingDuration__ and __ReorderingEasing__ properties. 
 
-* __ReorderingDuration__ - controls the duration of the reordering animation. It is of type __TimeSpan__.					
+#### __[XAML] Example 2: Setting animation duration__
+	<telerik:RadTileView ReorderingDuration="0:0:2">
 
-* __ReorderingEasing__ - controls the easing type of the reordering animation. It is of type __IEasingFunction__ allowing you to create a custom easing or to use the one found in the Silverlight framework.					
+#### __[C#] Example 3: Setting animation duration in code__
+	tileview.ReorderingDuration = TimeSpan.FromSeconds(2);
 
-* __ResizingDuration__ - controls the duration of the resizing animation. It is of type __TimeSpan__.					
+The __ReorderingEasing__ property is of type __IEasingFunction__ which means that you can use any of the easing functions provided by the {{ site.framework_name }} framework or create a custom one.
 
-* __ResizingEasing__ - controls the easing type of the resize animation. It is of type __IEasingFunction__ allowing you to create a custom easing or to use the one found in the Silverlight framework.					
-
-	#### __XAML__
-
-	{{region radtileview-animation_0}}
-		<Grid x:Name="LayoutRoot">
-			<Grid.Resources>
-				<ElasticEase x:Name="ResizingEase"/>
-			</Grid.Resources>
-			<telerik:RadTileView ReorderingDuration="0:0:2" ResizingDuration="0:0:1.5" ResizingEasing="{StaticResource ResizingEase}" x:Name="RadTileView1" MaxColumns="2" MaxRows="1">
-				<telerik:RadTileViewItem Header="Item1">
-					<TextBlock Text="Item1 Content"/>
-				</telerik:RadTileViewItem>
-				<telerik:RadTileViewItem Header="Item2">
-					<TextBlock Text="Item2 Content"/>
-				</telerik:RadTileViewItem>
-				<telerik:RadTileViewItem Header="Item3" >
-					<TextBlock Text="Item3 Content"/>
-				</telerik:RadTileViewItem>
-				<telerik:RadTileViewItem Header="Item4" >
-					<TextBlock Text="Item4 Content"/>
-				</telerik:RadTileViewItem>
-				<telerik:RadTileViewItem Header="Item5" >
-					<TextBlock Text="Item5 Content"/>
-				</telerik:RadTileViewItem>
-				<telerik:RadTileViewItem Header="Item6" >
-					<TextBlock Text="Item6 Content"/>
-				</telerik:RadTileViewItem>
-			</telerik:RadTileView>
-		</Grid>
-	{{endregion}}
-
-## Disabling the Animation
-
-To disable the animation developers can use the __IsItemsAnimationEnabled__ property and set it to __False__.				
-
-#### __XAML__
-
-{{region radtileview-animation_1}}
-	<telerik:RadTileView IsItemsAnimationEnabled="False"  x:Name="RadTileView1" MaximizeMode="One">
-	    <telerik:RadTileViewItem Header="Item1">
-	        <TextBlock Text="Item1 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item2">
-	        <TextBlock Text="Item2 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item3" >
-	        <TextBlock Text="Item3 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item4" >
-	        <TextBlock Text="Item4 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item5" >
-	        <TextBlock Text="Item5 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item6" >
-	        <TextBlock Text="Item6 Content"/>
-	    </telerik:RadTileViewItem>
+#### __[XAML] Example 4: Setting animation easing__
+	<telerik:RadTileView>
+		<telerik:RadTileView.ReorderingEasing>
+			<BackEase />
+		</telerik:RadTileView.ReorderingEasing>            
 	</telerik:RadTileView>
-{{endregion}}
+	
+## Resizing animation
 
-# See Also
+It occurs when the items changes their __TileState__ (minimized, maximized, restored) The __RadTileView__ control allows you to change the animation duration and easing function. To do that use the __ResizingDuration__ and __ResizingEasing__ properties. The properties are set in the same manner as the reordering animation properties (see Examples 2 to 4).
+
+## See Also
  * [Getting Started]({%slug radtileview-getting-started%})
  * [Events]({%slug radtileview-events%})
+ * [Reordering Tiles]({%slug radtileview-features-reordering-tiles%})

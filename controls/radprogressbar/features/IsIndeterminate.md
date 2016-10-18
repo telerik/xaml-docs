@@ -35,14 +35,21 @@ The __IsIndeterminate__ property specifies whether the control is in __InDetermi
 	progressBar.IsIndeterminate = False
 {{endregion}}
 
+![](images/progress_horizontal.jpg)
+
+#### __XAML__		
+{{region xaml-IsIndeterminate_3}}
+	<telerik:RadProgressBar Height="30" Width="150" IsIndeterminate="True" />
+{{endregion}}
+
 #### __C#__
-{{region cs-IsIndeterminate_3}}
+{{region cs-IsIndeterminate_4}}
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.IsIndeterminate = true;
 {{endregion}}
 
 #### __VB.NET__
-{{region vb-IsIndeterminate_4}}
+{{region vb-IsIndeterminate_5}}
 	Dim progressBar As New RadProgressBar()
 	progressBar.IsIndeterminate = True
 {{endregion}}

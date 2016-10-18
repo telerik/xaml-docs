@@ -19,40 +19,33 @@ __RadProgressBar__ supports two modes of operation:
 The __IsIndeterminate__ property specifies whether the control is in __InDeterminate__ mode or not. The property is of *boolean* type and the default value is *false*. Below you can see examples of how to set the property in *C#* and *XAML* code:
 
 #### __XAML__
-{{region IsIndeterminate_1}}
+{{region xaml-IsIndeterminate_0}}
 	<telerik:RadProgressBar Height="30" Width="150" IsIndeterminate="False" Value="35" />
 {{endregion}}
 
 #### __C#__
-{{region IsIndeterminate_0}}
+{{region cs-IsIndeterminate_1}}
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.IsIndeterminate = false;
 {{endregion}}
 
 #### __VB.NET__
-{{region IsIndeterminate_0}}
-    Dim progressBar As New RadProgressBar()
-    progressBar.IsIndeterminate = False
-
-	
-![](images/progress_horizontal.jpg)
-
-
-#### __XAML__
-{{region IsIndeterminate_3}}
-	<telerik:RadProgressBar Height="30" Width="150" IsIndeterminate="True" />
+{{region vb-IsIndeterminate_2}}
+	Dim progressBar As New RadProgressBar()
+	progressBar.IsIndeterminate = False
 {{endregion}}
 
 #### __C#__
-{{region IsIndeterminate_2}}
+{{region cs-IsIndeterminate_3}}
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.IsIndeterminate = true;
 {{endregion}}
 
 #### __VB.NET__
-{{region IsIndeterminate_2}}
-    Dim progressBar As New RadProgressBar()
-    progressBar.IsIndeterminate = True
+{{region vb-IsIndeterminate_4}}
+	Dim progressBar As New RadProgressBar()
+	progressBar.IsIndeterminate = True
+{{endregion}}
 
 	
 ![](images/progress_indeterminate.jpg)

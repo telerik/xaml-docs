@@ -22,7 +22,7 @@ Trim the time part of your DateTimes.
 
 ### Solution 2
 
-The use can be instructed to enter both the date and time parts of the date when filtering.
+The user can be instructed to enter both the date and time parts of the date when filtering.
 
 ### Solution 3
         
@@ -35,7 +35,7 @@ Bind the column __directly to the Date (or Year)__ property of the __DateTime__ 
 As alternative solution, you can benefit from a property called __FilterMemberPath__. You can use it to tell the column to __filter on a property different from the one it displays__ in its cells.      
         
 
->tipFor example: FilterMemberPath="BirthDate.Date". You can also check the [FilterMemberPath documentation]({%slug gridview-filtering-basic%}).
+>tipFor example: **FilterMemberPath="BirthDate.Date"**. You can also check the [FilterMemberPath documentation]({%slug gridview-filtering-basic%}).
           
 
 ## See Also

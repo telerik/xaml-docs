@@ -28,65 +28,63 @@ To do so follow these steps:
 #### __C#__
 
 {{region cs-gridview-rowstyleselector_0}}
-
 	public class StadiumCapacityStyle : StyleSelector
 	{
-	 public override Style SelectStyle(object item, DependencyObject container)
-	 {
-	  if (item is Club)
-	  {
-	   Club club = item as Club;
-	   if (club.StadiumCapacity > 50000)
-	   {
-	    return BigStadiumStyle;
-	   }
-	   else
-	   {
-	    return SmallStadiumStyle;
-	   }
-	  }
-	  return null;
-	 }
-	 public Style BigStadiumStyle { get; set; }
-	 public Style SmallStadiumStyle { get; set; }
+	    public override Style SelectStyle(object item, DependencyObject container)
+	    {
+	        if (item is Club)
+	        {
+	            Club club = item as Club;
+	            if (club.StadiumCapacity > 50000)
+	            {
+	                return BigStadiumStyle;
+	            }
+	            else
+	            {
+	                return SmallStadiumStyle;
+	            }
+	        }
+	        return null;
+	    }
+	    public Style BigStadiumStyle { get; set; }
+	    public Style SmallStadiumStyle { get; set; }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-rowstyleselector_1}}
-
 	Public Class StadiumCapacityStyle
-	 Inherits StyleSelector
-	 Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
-	  If TypeOf item Is Club Then
-	   Dim club As Club = TryCast(item, Club)
-	   If club.StadiumCapacity > 50000 Then
-	    Return BigStadiumStyle
-	   Else
-	    Return SmallStadiumStyle
-	   End If
-	  End If
-	  Return Nothing
-	 End Function
-	 Public Property BigStadiumStyle() As Style
-	  Get
-	   Return m_BigStadiumStyle
-	  End Get
-	  Set
-	   m_BigStadiumStyle = Value
-	  End Set
-	 End Property
-	 Private m_BigStadiumStyle As Style
-	 Public Property SmallStadiumStyle() As Style
-	  Get
-	   Return m_SmallStadiumStyle
-	  End Get
-	  Set
-	   m_SmallStadiumStyle = Value
-	  End Set
-	 End Property
-	 Private m_SmallStadiumStyle As Style
+	    Inherits StyleSelector
+	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
+	        If TypeOf item Is Club Then
+	            Dim club As Club = TryCast(item, Club)
+	            If club.StadiumCapacity > 50000 Then
+	                Return BigStadiumStyle
+	            Else
+	                Return SmallStadiumStyle
+	            End If
+	        End If
+	        Return Nothing
+	    End Function
+	    Public Property BigStadiumStyle() As Style
+	        Get
+	            Return m_BigStadiumStyle
+	        End Get
+	        Set
+	            m_BigStadiumStyle = Value
+	        End Set
+	    End Property
+	    Private m_BigStadiumStyle As Style
+	    Public Property SmallStadiumStyle() As Style
+	        Get
+	            Return m_SmallStadiumStyle
+	        End Get
+	        Set
+	            m_SmallStadiumStyle = Value
+	        End Set
+	    End Property
+	    Private m_SmallStadiumStyle As Style
 	End Class
 {{endregion}}
 
@@ -102,23 +100,20 @@ Depending on the underlying data you cab select which style to apply.
 #### __XAML__
 
 {{region xaml-gridview-rowstyleselector_2}}
-	<Grid>
-		<Grid.Resources>
-			<my:StadiumCapacityStyle x:Key="stadiumCapacityStyle">
-				<my:StadiumCapacityStyle.BigStadiumStyle>
-					<Style TargetType="telerik:GridViewRow">
-						<Setter Property="Background" Value="Red"/>
-					</Style>
-				</my:StadiumCapacityStyle.BigStadiumStyle>
-				<my:StadiumCapacityStyle.SmallStadiumStyle>
-					<Style TargetType="telerik:GridViewRow">
-						<Setter Property="Background" Value="Yellow" />
-					</Style>
-				</my:StadiumCapacityStyle.SmallStadiumStyle>
-			</my:StadiumCapacityStyle>
-		</Grid.Resources>
-		...
-	</Grid>
+	<Grid.Resources>
+	    <my:StadiumCapacityStyle x:Key="StadiumCapacityStyle">
+	        <my:StadiumCapacityStyle.BigStadiumStyle>
+	            <Style TargetType="telerik:GridViewRow">
+	                <Setter Property="Background" Value="Red"/>
+	            </Style>
+	        </my:StadiumCapacityStyle.BigStadiumStyle>
+	        <my:StadiumCapacityStyle.SmallStadiumStyle>
+	            <Style TargetType="telerik:GridViewRow">
+	                <Setter Property="Background" Value="Yellow" />
+	            </Style>
+	        </my:StadiumCapacityStyle.SmallStadiumStyle>
+	    </my:StadiumCapacityStyle>
+	</Grid.Resources>
 {{endregion}}
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
@@ -128,10 +123,9 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 #### __XAML__
 
 {{region xaml-gridview-rowstyleselector_4}}
-
-    <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
-    	<Setter Property="Background" Value="Yellow" />
-    </Style>
+	<Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
+	    <Setter Property="Background" Value="Yellow" />
+	</Style>
 {{endregion}}
 
 4.Finally, set the __RowStyleSelector__ property:
@@ -139,10 +133,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 #### __XAML__
 
 {{region xaml-gridview-rowstyleselector_3}}
-
-	<telerik:RadGridView Name="clubsGrid" 
-	                     ItemsSource="{Binding Clubs}"
-	                     RowStyleSelector="{StaticResource stadiumCapacityStyle}" />
+	<telerik:RadGridView RowStyleSelector="{StaticResource StadiumCapacityStyle}" />
 {{endregion}}
 
 >tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.

@@ -55,7 +55,6 @@ In the example below you can see how to attach to __KeyDown__ and __KeyUp__ even
 #### __XAML__
 
 {{region xaml-gridview-overview-keyboard-support_0}}
-
 	<telerik:RadGridView x:Name="radGridView" KeyDown="radGridView_KeyDown" KeyUp="radGridView_KeyUp"/>
 {{endregion}}
 
@@ -66,14 +65,13 @@ The implementation of both event handlers __radGridView_KeyDown__ and __radGridV
 #### __C#__
 
 {{region cs-gridview-overview-keyboard-support_1}}
-
-	private void radGridView_KeyDown( object sender, KeyEventArgs e )
+	private void radGridView_KeyDown(object sender, KeyEventArgs e)
 	{
-	    MessageBox.Show( "The pressed key is: " + e.Key.ToString() );
+	    MessageBox.Show("The pressed key is: " + e.Key.ToString());
 	}
-	private void radGridView_KeyUp( object sender, KeyEventArgs e )
+	private void radGridView_KeyUp(object sender, KeyEventArgs e)
 	{
-	    MessageBox.Show( "The released key is: " + e.Key.ToString() );
+	    MessageBox.Show("The released key is: " + e.Key.ToString());
 	}
 {{endregion}}
 
@@ -81,10 +79,10 @@ The implementation of both event handlers __radGridView_KeyDown__ and __radGridV
 #### __VB.NET__
 
 {{region vb-gridview-overview-keyboard-support_2}}
-
 	Private Sub radGridView_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 	    MessageBox.Show("The pressed key is: " & e.Key.ToString())
 	End Sub
+	
 	Private Sub radGridView_KeyUp(ByVal sender As Object, ByVal e As KeyEventArgs)
 	    MessageBox.Show("The released key is: " & e.Key.ToString())
 	End Sub

@@ -23,18 +23,17 @@ For example, if you have a __RadGridView__ with the following __RowDetailsTempla
 #### __XAML__
 
 {{region xaml-radgridview-row-details-programming_0}}
-
 	<telerik:RadGridView x:Name="radGridView"
-	                     LoadingRowDetails="radGridView_LoadingRowDetails">
-	   <telerik:RadGridView.RowDetailsTemplate>
-	       <DataTemplate>
-	           <StackPanel Orientation="Horizontal">
-	               <TextBlock Text="City: " />
-	               <TextBlock Text="{Binding City}" />
-	           </StackPanel>
-	       </DataTemplate>
-	   </telerik:RadGridView.RowDetailsTemplate>
-	    ...
+	                LoadingRowDetails="radGridView_LoadingRowDetails">
+	    <telerik:RadGridView.RowDetailsTemplate>
+	        <DataTemplate>
+	            <StackPanel Orientation="Horizontal">
+	                <TextBlock Text="City: " />
+	                <TextBlock Text="{Binding City}" />
+	            </StackPanel>
+	        </DataTemplate>
+	    </telerik:RadGridView.RowDetailsTemplate>
+	    <!--...-->
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -43,17 +42,16 @@ You can change the __StackPanel's Background__ depending on is the row alternati
 #### __C#__
 
 {{region cs-radgridview-row-details-programming_1}}
-
-	private void radGridView_LoadingRowDetails( object sender, GridViewRowDetailsEventArgs e )
+	private void radGridView_LoadingRowDetails(object sender, GridViewRowDetailsEventArgs e)
 	{
 	    StackPanel element = e.DetailsElement as StackPanel;
-	    if ( e.Row.IsAlternating )
+	    if (e.Row.IsAlternating)
 	    {
-	        element.Background = new SolidColorBrush( Colors.Black );
+	        element.Background = new SolidColorBrush(Colors.Black);
 	    }
 	    else
 	    {
-	        element.Background = new SolidColorBrush( Colors.White );
+	        element.Background = new SolidColorBrush(Colors.White);
 	    }
 	}
 {{endregion}}

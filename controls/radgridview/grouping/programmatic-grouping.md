@@ -21,7 +21,6 @@ When you add a new descriptor to the collection, the data is automatically group
 #### __C#__
 
 {{region cs-gridview-programmatic-grouping_0}}
-
 	GroupDescriptor descriptor = new GroupDescriptor();
 	descriptor.Member = "Country";
 	descriptor.SortDirection = ListSortDirection.Ascending;
@@ -31,7 +30,6 @@ When you add a new descriptor to the collection, the data is automatically group
 #### __VB.NET__
 
 {{region vb-gridview-programmatic-grouping_1}}
-
 	Dim descriptor As New GroupDescriptor()
 	descriptor.Member = "Country"
 	descriptor.SortDirection = ListSortDirection.Ascending
@@ -46,7 +44,7 @@ And now you can create a descriptor:
 
 {{region xaml-gridview-programmatic-grouping_2}}
 	<telerik:GroupDescriptor Member="Country"
-	                         SortDirection="Ascending" />
+	             SortDirection="Ascending" />
 {{endregion}}
 
 
@@ -55,28 +53,25 @@ To use the created descriptor to sort the data in the __RadGridView__ you have t
 #### __XAML__
 
 {{region xaml-gridview-programmatic-grouping_3}}
-
 	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
+	                 AutoGenerateColumns="False">
 	    <telerik:RadGridView.GroupDescriptors>
 	        <telerik:GroupDescriptor Member="Country"
-	                                     SortDirection="Ascending" />
+	                             SortDirection="Ascending" />
 	    </telerik:RadGridView.GroupDescriptors>
-	    ...
-	</telerik:RadGridView>.
+	    <!--...-->
+	</telerik:RadGridView>
 {{endregion}}
 
 #### __C#__
 
 {{region cs-gridview-programmatic-grouping_4}}
-
-	this.radGridView.GroupDescriptors.Add( descriptor );
+	this.radGridView.GroupDescriptors.Add(descriptor);
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-programmatic-grouping_5}}
-
 	Me.radGridView.GroupDescriptors.Add(descriptor)
 {{endregion}}
 
@@ -88,27 +83,26 @@ Except __Member__ and __SortDirection__ properties, the __GroupDescriptor__ expo
 
 {{region xaml-gridview-programmatic-grouping_6}}
 	<telerik:GroupDescriptor Member="Country"
-                             SortDirection="Ascending"
-                             DisplayContent="Country Group" />
+	             SortDirection="Ascending"
+	             DisplayContent="Country Group" />
 {{endregion}}
 
 #### __C#__
 
 {{region cs-gridview-programmatic-grouping_7}}
-	GroupDescriptor descriptor = new GroupDescriptor();
-	descriptor.Member = "Country";
-	descriptor.SortDirection = ListSortDirection.Ascending;
-	descriptor.DisplayContent = "Country Group";
+	GroupDescriptor descriptor2 = new GroupDescriptor();
+	descriptor2.Member = "Country";
+	descriptor2.SortDirection = ListSortDirection.Ascending;
+	descriptor2.DisplayContent = "Country Group";
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-programmatic-grouping_8}}
-
-	Dim descriptor As New GroupDescriptor()
-	descriptor.Member = "Country"
-	descriptor.SortDirection = ListSortDirection.Ascending
-	descriptor.DisplayContent = "Country Group"
+	Dim descriptor2 As New GroupDescriptor()
+	descriptor2.Member = "Country"
+	descriptor2.SortDirection = ListSortDirection.Ascending
+	descriptor2.DisplayContent = "Country Group"
 {{endregion}}
 
 ![](images/RadGridView_ProgrammaticGrouping_1.png)
@@ -134,19 +128,17 @@ Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which g
 #### __XAML__
 
 {{region xaml-gridview-programmatic-grouping_11}}
-
 	<telerik:ColumnGroupDescriptor Column="{Binding Columns[\Name\], ElementName=clubsGrid}"
-	                             SortDirection="Descending"  />
+	             SortDirection="Descending"  />
 {{endregion}}
 
 #### __C#__
 
 {{region cs-gridview-programmatic-grouping_9}}
-
-	this.clubsGrid.GroupDescriptors.Add(new ColumnGroupDescriptor() 
-	{ 
-	 Column = this.clubsGrid.Columns["Name"],
-	 SortDirection = ListSortDirection.Descending
+	this.radGridView.GroupDescriptors.Add(new ColumnGroupDescriptor()
+	{
+	    Column = this.radGridView.Columns["Name"],
+	    SortDirection = ListSortDirection.Descending
 	});
 {{endregion}}
 
@@ -154,10 +146,9 @@ Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which g
 #### __VB.NET__
 
 {{region vb-gridview-programmatic-grouping_10}}
-
-	Me.clubsGrid.GroupDescriptors.Add(New ColumnGroupDescriptor() With { _
-	 .Column = Me.clubsGrid.Columns("Name"), _
-	 .SortDirection = ListSortDirection.Descending _
+	Me.radGridView.GroupDescriptors.Add(New ColumnGroupDescriptor() With {
+	 .Column = Me.radGridView.Columns("Name"),
+	 .SortDirection = ListSortDirection.Descending
 	})
 {{endregion}}
 

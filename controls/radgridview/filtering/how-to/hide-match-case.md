@@ -34,15 +34,14 @@ Here is the full code
 #### __C#__
 
 {{region cs-gridview-how-to-hide-match-case_2}}
-
-	void gridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
+	private void gridView_FieldFilterEditorCreated2(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
-	 //get the StringFilterEditor in your RadGridView
-	 var stringFilterEditor = e.Editor as StringFilterEditor;
-	 if (stringFilterEditor != null)
-	 {
-	    stringFilterEditor.MatchCaseVisibility = Visibility.Hidden;
-	 }
+	    //get the StringFilterEditor in your RadGridView
+	    var stringFilterEditor = e.Editor as StringFilterEditor;
+	    if (stringFilterEditor != null)
+	    {
+	        stringFilterEditor.MatchCaseVisibility = Visibility.Hidden;
+	    }
 	}
 {{endregion}}
 
@@ -50,14 +49,13 @@ Here is the full code
 #### __VB.NET__
 
 {{region vb-gridview-how-to-hide-match-case_3}}
-
-    Private Sub gridView_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
-        'get the StringFilterEditor in your RadGridView'
-        Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
-        If stringFilterEditor IsNot Nothing Then
-            stringFilterEditor.MatchCaseVisibility = Visibility.Hidden
-        End If
-    End Sub
+	Private Sub gridView_FieldFilterEditorCreated2(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
+	    'get the StringFilterEditor in your RadGridView
+	    Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
+	    If stringFilterEditor IsNot Nothing Then
+	        stringFilterEditor.MatchCaseVisibility = Visibility.Hidden
+	    End If
+	End Sub
 {{endregion}}
 
 Second approach (before Q3 2011)
@@ -69,38 +67,37 @@ Here is the full code:
 #### __C#__
 
 {{region cs-gridview-how-to-hide-match-case_0}}
-
-	void gridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
+	private void gridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
-	 //get the StringFilterEditor in your RadGridView
-	 var stringFilterEditor = e.Editor as StringFilterEditor;
-	 if (stringFilterEditor != null)
-	 {
-	  stringFilterEditor.Loaded += new RoutedEventHandler(stringFilterEditor_Loaded);
-	 }
+	    //get the StringFilterEditor in your RadGridView
+	    var stringFilterEditor = e.Editor as StringFilterEditor;
+	    if (stringFilterEditor != null)
+	    {
+	        stringFilterEditor.Loaded += new RoutedEventHandler(stringFilterEditor_Loaded);
+	    }
 	}
 	
-	void stringFilterEditor_Loaded(object sender, RoutedEventArgs e)
+	private void stringFilterEditor_Loaded(object sender, RoutedEventArgs e)
 	{
-	 //Hide the Match case toogle button in its Loaded event
-	 ((StringFilterEditor) sender).ChildrenOfType<ToggleButton>().FirstOrDefault().Visibility = Visibility.Collapsed;
+	    //Hide the Match case toogle button in its Loaded event
+	    ((StringFilterEditor)sender).ChildrenOfType<ToggleButton>().FirstOrDefault().Visibility = Visibility.Collapsed;
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-how-to-hide-match-case_1}}
-
 	Private Sub gridView_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
-	 'get the StringFilterEditor in your RadGridView'
-	 Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
-	 If stringFilterEditor IsNot Nothing Then
-	  stringFilterEditor.Loaded += New RoutedEventHandler(stringFilterEditor_Loaded)
-	 End If
+	    'get the StringFilterEditor in your RadGridView
+	    Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
+	    If stringFilterEditor IsNot Nothing Then
+	        AddHandler stringFilterEditor.Loaded, AddressOf stringFilterEditor_Loaded
+	    End If
 	End Sub
+	
 	Private Sub stringFilterEditor_Loaded(sender As Object, e As RoutedEventArgs)
-	 'Hide the Match case toogle button in its Loaded event'
-			DirectCast(sender, StringFilterEditor).ChildrenOfType(Of ToggleButton)().FirstOrDefault().Visibility = Visibility.Collapsed
+	    'Hide the Match case toogle button in its Loaded event
+	    DirectCast(sender, StringFilterEditor).ChildrenOfType(Of ToggleButton)().FirstOrDefault().Visibility = Visibility.Collapsed
 	End Sub
 {{endregion}}
 

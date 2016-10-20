@@ -38,22 +38,20 @@ Another approach would be to set the __Language__ based on the __CurrentCulture_
 #### __[C#]__
 
 {{region cs-gridview-troubleshooting-apply-currentculture_0}}
-
 	public MainWindow()
 	{
-	  InitializeComponent();
-	  this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag);
+	    InitializeComponent();
+	    this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag);
 	}
 {{endregion}}
 
 #### __[VB.NET]__
 
 {{region vb-gridview-troubleshooting-apply-currentculture_0}}
-
 	Public Sub New()
-            InitializeComponent()
-            Me.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag)
-        End Sub
+	    InitializeComponent()
+	    Me.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag)
+	End Sub
 {{endregion}}
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
@@ -63,23 +61,20 @@ Another approach would be to set the __Language__ based on the __CurrentCulture_
 #### __[C#]__
 
 {{region cs-gridview-troubleshooting-apply-currentculture_1}}
-
 	public MainPage()
 	{
-	  InitializeComponent();
-	  
-	  Dispatcher.BeginInvoke(new Action(() => this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)));
-	}	
+	    InitializeComponent();
+	    Dispatcher.BeginInvoke(new Action(() => this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)));
+	}
 {{endregion}}
 
 #### __[VB.NET]__
 
 {{region vb-gridview-troubleshooting-apply-currentculture_1}}
-
 	Public Sub New()
-            InitializeComponent()
-            Dispatcher.BeginInvoke(New Action(Sub() Me.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)))
-        End Sub	
+	    InitializeComponent()
+	    Dispatcher.BeginInvoke(New Action(Sub() Me.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)))
+	End Sub
 {{endregion}}
 
 {% endif %}

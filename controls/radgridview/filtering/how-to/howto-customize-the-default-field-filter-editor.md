@@ -17,17 +17,16 @@ Depending on the column DataType the editor will be different. For String column
 #### __C#__
 
 {{region cs-gridview-filtering-howto-customize-the-default-field-filter-editor_0}}
-
 	private void OnRadGridViewFieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
-		if (e.Column.UniqueName == "HireDate")
-		{
-			Telerik.Windows.Controls.RadDateTimePicker picker = e.Editor as Telerik.Windows.Controls.RadDateTimePicker;
-			if (picker != null)
-			{
-				picker.InputMode = Telerik.Windows.Controls.InputMode.DateTimePicker;
-			}
-		}
+	    if (e.Column.UniqueName == "HireDate")
+	    {
+	        Telerik.Windows.Controls.RadDateTimePicker picker = e.Editor as Telerik.Windows.Controls.RadDateTimePicker;
+	        if (picker != null)
+	        {
+	            picker.InputMode = Telerik.Windows.Controls.InputMode.DateTimePicker;
+	        }
+	    }
 	}
 {{endregion}}
 
@@ -36,14 +35,13 @@ Depending on the column DataType the editor will be different. For String column
 #### __VB.NET__
 
 {{region vb-gridview-filtering-howto-customize-the-default-field-filter-editor_0}}
-
 	Private Sub OnRadGridViewFieldFilterEditorCreated(sender As System.Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
-		If e.Column.UniqueName = "HireDate" Then
-			Dim picker As Telerik.Windows.Controls.RadDateTimePicker = TryCast(e.Editor, Telerik.Windows.Controls.RadDateTimePicker)
-			If picker IsNot Nothing Then
-				picker.InputMode = Telerik.Windows.Controls.InputMode.DateTimePicker
-			End If
-		End If
+	    If e.Column.UniqueName = "HireDate" Then
+	        Dim picker As Telerik.Windows.Controls.RadDateTimePicker = TryCast(e.Editor, Telerik.Windows.Controls.RadDateTimePicker)
+	        If picker IsNot Nothing Then
+	            picker.InputMode = Telerik.Windows.Controls.InputMode.DateTimePicker
+	        End If
+	    End If
 	End Sub
 {{endregion}}
 
@@ -57,7 +55,6 @@ In case you need the filtering to be re-applied on every character entered, you 
 #### __C#__
 
 {{region cs-gridview-filtering-howto-customize-the-default-field-filter-editor_1}}
-
 	private void OnRadGridViewFieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
 	    var stringFilterEditor = e.Editor as StringFilterEditor;
@@ -79,17 +76,16 @@ In case you need the filtering to be re-applied on every character entered, you 
 #### __VB.NET__
 
 {{region vb-gridview-filtering-howto-customize-the-default-field-filter-editor_1}}
-
 	Private Sub OnRadGridViewFieldFilterEditorCreated(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
-            Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
-
-            If stringFilterEditor IsNot Nothing Then
-                AddHandler e.Editor.Loaded, Sub(s1, e1)
-                                                Dim textBox = e.Editor.ChildrenOfType(Of TextBox)().Single()
-                                                AddHandler textBox.TextChanged, Sub(s2, e2)
-                                                                                    textBox.GetBindingExpression(TextBox.TextProperty).UpdateSource()
-                                                                                End Sub
-                                            End Sub
-            End If
-        End Sub
+	    Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
+	
+	    If stringFilterEditor IsNot Nothing Then
+	        AddHandler e.Editor.Loaded, Sub(s1, e1)
+	                                        Dim textBox = e.Editor.ChildrenOfType(Of TextBox)().Single()
+	                                        AddHandler textBox.TextChanged, Sub(s2, e2)
+	                                                                            textBox.GetBindingExpression(TextBox.TextProperty).UpdateSource()
+	                                                                        End Sub
+	                                    End Sub
+	    End If
+	End Sub
 {{endregion}}

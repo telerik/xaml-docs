@@ -23,7 +23,6 @@ When you set __IsReadOnlyBinding__ property of RadGridView to True - the __full 
 #### __[XAML] Example 1: Binding IsReadOnlyBinding at RadGridView level.__
 
 {{region xaml-gridview-read-only-rows-cells_0}}
-
 	<telerik:RadGridView x:Name="radGridView" IsReadOnlyBinding="{Binding IsActive}" />
 {{endregion}}
 
@@ -34,12 +33,12 @@ When you set the __IsReadOnlyBinding__ property of the GridViewDataColumn - only
 #### __[XAML] Example 2: Binding IsReadOnlyBinding at column level.__
 
 {{region xaml-gridview-read-only-rows-cells_1}}
-
-	<telerik:RadGridView x:Name="radGridView" >
-	...
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Age}" 
-	                            IsReadOnlyBinding="{Binding IsActive}" />
-	...
+	<telerik:RadGridView>
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Age}" 
+	                    IsReadOnlyBinding="{Binding IsActive}" />
+	        <!--...-->
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 

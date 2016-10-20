@@ -21,7 +21,6 @@ As it comes to RadGridView, this approach represents custom sorting logic and as
 #### __[XAML] Example 1: Setting SortingState for a column.__
 
 {{region xaml-gridview-set-sortingstate-on-column_1}}
-
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" SortingState="Ascending" IsCustomSortingEnabled="True"/>
 {{endregion}}
 

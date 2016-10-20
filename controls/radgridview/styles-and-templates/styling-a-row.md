@@ -38,10 +38,10 @@ You have two options:
 
 	{{region xaml-gridview-styling-row-1}}
 	<Style TargetType="telerik:GridViewRow">
-        <Setter Property="Background" Value="Red"/>
-        <Setter Property="Foreground" Value="White"/>
-    </Style>
-	{{endregion}}
+	    <Setter Property="Background" Value="Red"/>
+	    <Setter Property="Foreground" Value="White"/>
+	</Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
 
@@ -55,9 +55,9 @@ __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of
 
 	{{region xaml-gridview-styling-row-2}}
 	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
-						 AlternationCount="2"
-						 AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
-	{{endregion}}
+	AlternationCount="2"
+	AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
+{{endregion}}
 
 #### __Figure 2: RadGridView with styled rows__
 

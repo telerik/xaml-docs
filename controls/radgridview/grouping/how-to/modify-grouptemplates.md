@@ -31,12 +31,12 @@ Below you can find a sample code showing how to set a new __GroupHeaderTemplate 
 	    <DataTemplate>
 	        <StackPanel>
 	            <TextBlock Foreground="#FFED7971"
-	                 Text="Test Key" />
+	Text="Test Key" />
 	            <TextBlock Foreground="#FFED7971"
-	                 Text="{Binding Group.Key}" />
+	Text="{Binding Group.Key}" />
 	        </StackPanel>
 	    </DataTemplate>
-	 </telerik:GridViewDataColumn.GroupHeaderTemplate>
+	</telerik:GridViewDataColumn.GroupHeaderTemplate>
 {{endregion}}
 
 You could do the same for all the columns by defining a __GroupHeaderTemplate for the RadGridView__:
@@ -48,12 +48,12 @@ You could do the same for all the columns by defining a __GroupHeaderTemplate fo
 	    <DataTemplate>
 	        <StackPanel>
 	            <TextBlock Foreground="#FFED7971"
-	                 Text="Test Key" />
+	     Text="Test Key" />
 	            <TextBlock Foreground="#FFED7971"
-	                 Text="{Binding Group.Key}" />
+	     Text="{Binding Group.Key}" />
 	        </StackPanel>
 	    </DataTemplate>
-	 </telerik:RadGridView.GroupHeaderTemplate>
+	</telerik:RadGridView.GroupHeaderTemplate>
 {{endregion}}
 
 Note that if you have any AggregateFunctions defined, and you do not want the default aggregate reasults to show after predefining the GroupHeaderTemplate, you will have to hide them. You can achieve this, like so:
@@ -61,8 +61,8 @@ Note that if you have any AggregateFunctions defined, and you do not want the de
 #### __XAML__
 
 {{region xaml-gridview-grouping-how-to-modify-grouptemplates_2}}
-	<Style TargetType="telerik:GroupHeaderRow">
-	   <Setter Property="ShowHeaderAggregates" Value="False"/>
+	<Style TargetType="telerik:GridViewGroupRow">
+	    <Setter Property="ShowHeaderAggregates" Value="False"/>
 	</Style>
 {{endregion}}
 

@@ -24,58 +24,55 @@ The custom class responsible for the update of the commands needs to be similar 
 #### __C#__
 
 {{region cs-GridView-Commands-KeyboardCommandProvider_0}}
-
-	class CustomKeyboardCommandProvider : DefaultKeyboardCommandProvider
-	 {
-	  private GridViewDataControl parentGrid;
-	  private DefaultKeyboardCommandProvider defaultKeyboardProvider;
-	  private CustomKeyboardCommandProvider customKeyboardProvider;
-	  public CustomKeyboardCommandProvider(GridViewDataControl grid)
-	   : base(grid)
-	  {
-	   this.parentGrid = grid;
-	  }
-	  public override IEnumerable<ICommand> ProvideCommandsForKey(Key key)
-	  {
-	   List<ICommand> commandsToExecute = base.ProvideCommandsForKey(key).ToList();
-	  
-	    if (key == Key.Enter)
-	       {
-	          commandsToExecute.Clear();
-	          commandsToExecute.Add(RadGridViewCommands.CommitEdit);
-	          commandsToExecute.Add(RadGridViewCommands.MoveNext);
-	          commandsToExecute.Add(RadGridViewCommands.BeginEdit);
-	       }
+	public class CustomKeyboardCommandProvider : DefaultKeyboardCommandProvider
+	{
+	    private GridViewDataControl parentGrid;
 	
-	   return commandsToExecute;
+	    public CustomKeyboardCommandProvider(GridViewDataControl grid)
+	     : base(grid)
+	    {
+	        this.parentGrid = grid;
+	    }
 	
-	  }
-	 }
+	    public override IEnumerable<ICommand> ProvideCommandsForKey(Key key)
+	    {
+	        List<ICommand> commandsToExecute = base.ProvideCommandsForKey(key).ToList();
+	
+	        if (key == Key.Enter)
+	        {
+	            commandsToExecute.Clear();
+	            commandsToExecute.Add(RadGridViewCommands.CommitEdit);
+	            commandsToExecute.Add(RadGridViewCommands.MoveNext);
+	            commandsToExecute.Add(RadGridViewCommands.BeginEdit);
+	        }
+	
+	        return commandsToExecute;
+	    }
+	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-GridView-Commands-KeyboardCommandProvider_1}}
-
-	Class CustomKeyboardCommandProvider
-	 Inherits DefaultKeyboardCommandProvider
-	 Private parentGrid As GridViewDataControl
-	 Private defaultKeyboardProvider As DefaultKeyboardCommandProvider
-	 Private customKeyboardProvider As CustomKeyboardCommandProvider
-	 Public Sub New(grid As GridViewDataControl)
-	  MyBase.New(grid)
-	  Me.parentGrid = grid
-	 End Sub
-	 Public Overrides Function ProvideCommandsForKey(key__1 As Key) As IEnumerable(Of ICommand)
-	  Dim commandsToExecute As List(Of ICommand) = MyBase.ProvideCommandsForKey(key__1).ToList()
-	   If key = Key.Enter Then
-		commandsToExecute.Clear()
-		commandsToExecute.Add(RadGridViewCommands.CommitEdit)
-		commandsToExecute.Add(RadGridViewCommands.MoveNext)
-		commandsToExecute.Add(RadGridViewCommands.BeginEdit)
-	   End If
-	  Return commandsToExecute
-	 End Function
+	Public Class CustomKeyboardCommandProvider
+	    Inherits DefaultKeyboardCommandProvider
+	    Private parentGrid As GridViewDataControl
+	
+	    Public Sub New(grid As GridViewDataControl)
+	        MyBase.New(grid)
+	        Me.parentGrid = grid
+	    End Sub
+	
+	    Public Overrides Function ProvideCommandsForKey(key As Key) As IEnumerable(Of ICommand)
+	        Dim commandsToExecute As List(Of ICommand) = MyBase.ProvideCommandsForKey(key).ToList()
+	        If key = Key.Enter Then
+	            commandsToExecute.Clear()
+	            commandsToExecute.Add(RadGridViewCommands.CommitEdit)
+	            commandsToExecute.Add(RadGridViewCommands.MoveNext)
+	            commandsToExecute.Add(RadGridViewCommands.BeginEdit)
+	        End If
+	        Return commandsToExecute
+	    End Function
 	End Class
 {{endregion}}
 
@@ -91,7 +88,6 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 #### __C#__
 
 {{region cs-GridView-Commands-KeyboardCommandProvider_2}}
-
 	this.RadGridView1.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.RadGridView1);
 {{endregion}}
 
@@ -100,7 +96,6 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 #### __VB.NET__
 
 {{region vb-GridView-Commands-KeyboardCommandProvider_3}}
-
 	Me.RadGridView1.KeyboardCommandProvider = New CustomKeyboardCommandProvider(Me.RadGridView1)
 {{endregion}}
 

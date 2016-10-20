@@ -19,24 +19,17 @@ For example you can define a custom formatting with the help of the CurrentCultu
 #### __C#__ Example 1: Defining custom formatting
 
 {{region cs-gridview-how-to-custom-format_0}}
-
-	private void Application_Startup(object sender, StartupEventArgs e)
-	{
-		System.Globalization.CultureInfo cultureInfo =
-				new System.Globalization.CultureInfo("en-US");
-		System.Globalization.DateTimeFormatInfo dateTimeInfo =
-		new System.Globalization.DateTimeFormatInfo();
-		dateTimeInfo.LongDatePattern = "dd--MMM--yyyy";
-		dateTimeInfo.ShortDatePattern = "dd--MMM--yy";
-		cultureInfo.DateTimeFormat = dateTimeInfo;
-		cultureInfo.NumberFormat.NumberGroupSeparator = "/";
-		cultureInfo.NumberFormat.NegativeSign = "/";
+	System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
+	System.Globalization.DateTimeFormatInfo dateTimeInfo =
+	new System.Globalization.DateTimeFormatInfo();
+	dateTimeInfo.LongDatePattern = "dd--MMM--yyyy";
+	dateTimeInfo.ShortDatePattern = "dd--MMM--yy";
+	cultureInfo.DateTimeFormat = dateTimeInfo;
+	cultureInfo.NumberFormat.NumberGroupSeparator = "/";
+	cultureInfo.NumberFormat.NegativeSign = "/";
 	
-		Thread.CurrentThread.CurrentCulture = cultureInfo;
-		Thread.CurrentThread.CurrentUICulture = cultureInfo;
-	
-		this.RootVisual = new MainPage();
-	}
+	Thread.CurrentThread.CurrentCulture = cultureInfo;
+	Thread.CurrentThread.CurrentUICulture = cultureInfo;
 {{endregion}}
 
 __Figure 1__: RadGridView displaying data before custom format is applied:

@@ -21,26 +21,24 @@ To make the editing textbox wraps the text as well you need to subscribe to the 
 #### __C#__
 
 {{region cs-gridview-access-editing-element_0}}
-
 	private void clubsGrid_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
-	  if ((string) e.Column.Header == "Name")
-	  {
-	    var tb = e.EditingElement as TextBox;
-	    tb.TextWrapping = TextWrapping.Wrap;
-	  }
+	    if ((string)e.Column.Header == "Name")
+	    {
+	        var tb = e.EditingElement as TextBox;
+	        tb.TextWrapping = TextWrapping.Wrap;
+	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-access-editing-element_1}}
-
 	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
-	 If DirectCast(e.Column.Header, String) = "Name" Then
-	  Dim tb = TryCast(e.EditingElement, TextBox)
-	  tb.TextWrapping = TextWrapping.Wrap
-	 End If
+	    If DirectCast(e.Column.Header, String) = "Name" Then
+	        Dim tb = TryCast(e.EditingElement, TextBox)
+	        tb.TextWrapping = TextWrapping.Wrap
+	    End If
 	End Sub
 {{endregion}}
 
@@ -53,28 +51,26 @@ Ok, what if I do not want have this text selected, but want to have the cursor p
 #### __C#__
 
 {{region cs-gridview-access-editing-element_2}}
-
 	private void clubsGrid_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
-	{   
-	   if ((string) e.Column.Header == "Name")
-	   {
-	      var tb = e.EditingElement as TextBox;
-	      tb.SelectionLength = 0;
-	      tb.SelectionStart = tb.Text.Length;
-	   }
+	{
+	    if ((string)e.Column.Header == "Name")
+	    {
+	        var tb = e.EditingElement as TextBox;
+	        tb.SelectionLength = 0;
+	        tb.SelectionStart = tb.Text.Length;
+	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-access-editing-element_3}}
-
 	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
-	 If DirectCast(e.Column.Header, String) = "Name" Then
-	  Dim tb = TryCast(e.EditingElement, TextBox)
-	  tb.SelectionLength = 0
-	  tb.SelectionStart = tb.Text.Length
-	 End If
+	    If DirectCast(e.Column.Header, String) = "Name" Then
+	        Dim tb = TryCast(e.EditingElement, TextBox)
+	        tb.SelectionLength = 0
+	        tb.SelectionStart = tb.Text.Length
+	    End If
 	End Sub
 {{endregion}}
 

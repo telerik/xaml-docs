@@ -19,21 +19,18 @@ The __GridViewTableDefinition__ class is to be found in the same assembly and na
 #### __XAML__
 
 {{region xaml-gridview-basic-hierarchies_0}}
-
 	<telerik:GridViewTableDefinition />
 {{endregion}}
 
 #### __C#__
 
 {{region cs-gridview-basic-hierarchies_1}}
-
 	GridViewTableDefinition d = new GridViewTableDefinition();
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-basic-hierarchies_2}}
-
 	Dim d As New GridViewTableDefinition()
 {{endregion}}
 
@@ -44,29 +41,26 @@ The __ParentPropertyName__ of the __PropertyRelation__ object represents the nam
 #### __XAML__
 
 {{region xaml-gridview-basic-hierarchies_4}}
-
 	<telerik:GridViewTableDefinition>
-		<telerik:GridViewTableDefinition.Relation>
-			<telerik:PropertyRelation ParentPropertyName="Orders" />
-		</telerik:GridViewTableDefinition.Relation>
+	    <telerik:GridViewTableDefinition.Relation>
+	        <telerik:PropertyRelation ParentPropertyName="Orders" />
+	    </telerik:GridViewTableDefinition.Relation>
 	</telerik:GridViewTableDefinition>
 {{endregion}}
 
 #### __C#__
 
 {{region cs-gridview-basic-hierarchies_5}}
-
-	GridViewTableDefinition d = new GridViewTableDefinition();
-	d.Relation = new Telerik.Windows.Data.PropertyRelation( "Orders" );
+	GridViewTableDefinition td = new GridViewTableDefinition();
+	td.Relation = new PropertyRelation("Orders");
 {{endregion}}
 
 
 #### __VB.NET__
 
 {{region vb-gridview-basic-hierarchies_6}}
-
-	Dim d As New GridViewTableDefinition()
-	d.Relation = New Telerik.Windows.Data.PropertyRelation("Orders")
+	Dim td As New GridViewTableDefinition()
+	td.Relation = New Telerik.Windows.Data.PropertyRelation("Orders")
 {{endregion}}
 
 Now you can add the definition to the __ChildTableDefinitions__ collection.
@@ -74,17 +68,15 @@ Now you can add the definition to the __ChildTableDefinitions__ collection.
 #### __XAML__
 
 {{region xaml-gridview-basic-hierarchies_7}}
-
 	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
-		<telerik:RadGridView.ChildTableDefinitions>
-			<telerik:GridViewTableDefinition>
-				<telerik:GridViewTableDefinition.Relation>
-					<telerik:PropertyRelation ParentPropertyName="Orders" />
-				</telerik:GridViewTableDefinition.Relation>
-			</telerik:GridViewTableDefinition>
-		</telerik:RadGridView.ChildTableDefinitions>
-		...
+	                 AutoGenerateColumns="False">
+	    <telerik:RadGridView.ChildTableDefinitions>
+	        <telerik:GridViewTableDefinition>
+	            <telerik:GridViewTableDefinition.Relation>
+	                <telerik:PropertyRelation ParentPropertyName="Orders" />
+	            </telerik:GridViewTableDefinition.Relation>
+	        </telerik:GridViewTableDefinition>
+	    </telerik:RadGridView.ChildTableDefinitions>
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -92,14 +84,12 @@ Now you can add the definition to the __ChildTableDefinitions__ collection.
 #### __C#__
 
 {{region cs-gridview-basic-hierarchies_8}}
-
-	this.radGridView.ChildTableDefinitions.Add( d );
+	this.radGridView.ChildTableDefinitions.Add(td);
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-basic-hierarchies_9}}
-
 	Me.radGridView.ChildTableDefinitions.Add(d)
 {{endregion}}
 

@@ -22,11 +22,10 @@ For example:Selected State
 #### __XAML__
 
 {{region xaml-gridview-how-to-modify-foreground-row_0}}
-
 	<VisualState x:Name="Selected">
 	    <Storyboard>
 	        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Selected"
-	Storyboard.TargetProperty="(UIElement.Visibility)">
+	UIElement.Visibility)">
 	            <DiscreteObjectKeyFrame KeyTime="0">
 	                <DiscreteObjectKeyFrame.Value>
 	                    <Visibility>Visible</Visibility>
@@ -34,14 +33,14 @@ For example:Selected State
 	            </DiscreteObjectKeyFrame>
 	        </ObjectAnimationUsingKeyFrames>
 	        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NavigatorIndicatorBackground"
-	Storyboard.TargetProperty="Background">
+	ackground">
 	            <DiscreteObjectKeyFrame KeyTime="0:0:0"
-	Value="{StaticResource GridView_RowIndicatorCellBackground_Selected}" />
+	iew_RowIndicatorCellBackground_Selected}" />
 	        </ObjectAnimationUsingKeyFrames>
 	        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_DataCellsPresenter"
-	Storyboard.TargetProperty="Foreground">
+	oreground">
 	            <DiscreteObjectKeyFrame KeyTime="0:0:0"
-	Value="{StaticResource GridView_ItemForeground_Selected}" />
+	iew_ItemForeground_Selected}" />
 	        </ObjectAnimationUsingKeyFrames>
 	    </Storyboard>
 	</VisualState>
@@ -52,11 +51,10 @@ MouseOver State
 #### __XAML__
 
 {{region xaml-gridview-how-to-modify-foreground-row_1}}
-
 	<VisualState x:Name="MouseOver">
 	    <Storyboard>
 	        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Over"
-	Storyboard.TargetProperty="(UIElement.Visibility)">
+	UIElement.Visibility)">
 	            <DiscreteObjectKeyFrame KeyTime="0">
 	                <DiscreteObjectKeyFrame.Value>
 	                    <Visibility>Visible</Visibility>
@@ -64,9 +62,9 @@ MouseOver State
 	            </DiscreteObjectKeyFrame>
 	        </ObjectAnimationUsingKeyFrames>
 	        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_DataCellsPresenter"
-	Storyboard.TargetProperty="Foreground">
+	oreground">
 	            <DiscreteObjectKeyFrame KeyTime="0:0:0"
-	Value="{StaticResource GridView_ItemForeground_Over}" />
+	iew_ItemForeground_Over}" />
 	        </ObjectAnimationUsingKeyFrames>
 	    </Storyboard>
 	</VisualState>
@@ -77,7 +75,6 @@ You may also add your own brush resources with an appropriate color for this ani
 #### __XAML__
 
 {{region xaml-gridview-how-to-modify-foreground-row_2}}
-
 	<SolidColorBrush x:Key="GridView_ItemForeground_Selected" Color="Green"/>
 	<SolidColorBrush x:Key="GridView_ItemForeground_Over" Color="Red"/>
 {{endregion}}

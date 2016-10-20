@@ -17,7 +17,6 @@ As a typical data control the __RadGridView__ displays data by binding to a sour
 #### __C#__
 
 {{region cs-gridview-configuring-the-databindings_0}}
-
 	this.radGridView.ItemsSource = SampleData.GetData();
 {{endregion}}
 
@@ -26,7 +25,6 @@ As a typical data control the __RadGridView__ displays data by binding to a sour
 #### __VB.NET__
 
 {{region vb-gridview-configuring-the-databindings_1}}
-
 	Me.radGridView.ItemsSource = SampleData.GetData()
 {{endregion}}
 
@@ -45,12 +43,12 @@ The data in the __RadGridView__ is separated in columns. There are different typ
 #### __XAML__
 
 {{region xaml-gridview-configuring-the-databindings_2}}
-
-	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Id}" 
-										Header="Id" />
-		</telerik:RadGridView.Columns>
+	<telerik:RadGridView x:Name="radGridView"
+	                 AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"
+	                                Header="Id" />
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 

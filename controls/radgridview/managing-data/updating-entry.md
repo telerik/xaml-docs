@@ -17,14 +17,12 @@ There are three ways for the row to enter edit mode. The first one is when the u
 #### __C#__
 
 {{region cs-gridview-managing-data-updating-entry_0}}
-
 	this.radGridView.BeginEdit();
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-managing-data-updating-entry_1}}
-
 	Me.radGridView.BeginEdit()
 {{endregion}}
 
@@ -35,10 +33,9 @@ For example, you can use a button to call this method.
 {{region xaml-gridview-managing-data-updating-entry_2}}
 	<StackPanel x:Name="LayoutRoot">
 	    <Button Content="Edit"
-	            Click="Button_Click" />
-	    <telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
-	        ...
+	    Click="Button_Click" />
+	    <telerik:RadGridView AutoGenerateColumns="False">
+	        <!--...-->
 	    </telerik:RadGridView>
 	</StackPanel>
 {{endregion}}
@@ -48,7 +45,7 @@ And in the event handler call the method for the Click event.
 #### __C#__
 
 {{region cs-gridview-managing-data-updating-entry_3}}
-	private void Button_Click( object sender, RoutedEventArgs e )
+	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    this.radGridView.BeginEdit();
 	}
@@ -57,7 +54,6 @@ And in the event handler call the method for the Click event.
 #### __VB.NET__
 
 {{region vb-gridview-managing-data-updating-entry_4}}
-
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.radGridView.BeginEdit()
 	End Sub
@@ -74,10 +70,10 @@ The next step in implementing the adding functionality is to attach event handle
 #### __XAML__
 
 {{region xaml-gridview-managing-data-updating-entry_5}}
-
-	<telerik:RadGridView x:Name="radGridView"
-                         BeginningEdit="EditingRowsGrid_BeginningEdit"
-                         RowEditEnded="EditingRowsGrid_RowEditEnded">
+	<telerik:RadGridView BeginningEdit="radGridView_BeginningEdit"
+	             RowEditEnded="radGridView_RowEditEnded">
+	    <!--...-->
+	</telerik:RadGridView>
 {{endregion}}
 
 
@@ -86,8 +82,7 @@ The __BeginningEdit__ event is raised before the row enters edit mode. In the ev
 #### __C#__
 
 {{region cs-gridview-managing-data-updating-entry_6}}
-
-	private void radGridView_BeginningEdit( object sender, GridViewBeginningEditRoutedEventArgs e )
+	private void radGridView_BeginningEdit(object sender, GridViewBeginningEditRoutedEventArgs e)
 	{
 	}
 {{endregion}}
@@ -95,49 +90,24 @@ The __BeginningEdit__ event is raised before the row enters edit mode. In the ev
 #### __VB.NET__
 
 {{region vb-gridview-managing-data-updating-entry_7}}
-
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As GridViewBeginningEditRoutedEventArgs)
 	End Sub
 {{endregion}}
 
 There are several ways to commit the edited data and all of them will raise the __RowEditEnded__ event. The first one occurs when the user presses __Enter__, the second when the __CommitEdit()__ method is called and the last one when another row is selected. The editing operation can also be cancelled by pressing __Escape.__ The first time you press __Escape__ only the cell cancels the edit. By pressing the __Escape__ second time, the whole row leaves edit mode. Another way to make the row cancel the edit is by calling the __CancelEdit()__ method. In this case the __RowEditEnded__ event will be raised again.
 
-#### __C#__
-
-{{region cs-gridview-managing-data-updating-entry_8}}
-
-	private void radGridView_RowEditEnded( object sender, GridViewRowEditEndedEventArgs e )
-	{
-	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-gridview-managing-data-updating-entry_9}}
-
-	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
-	End Sub
-{{endregion}}
-
-
-
->You can also use the __CellEditEnded__ event to handle the committing or the cancelling actions and the logic in the event handler will be executed every time a cell gets edited. In some cases this might be inconvenient because different calls to a service might be made for each cell.
-
 Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction__ (__Commit__ or __Cancel__) and the __GridViewEditOperationType__ (__Insert__ or __Edit__) . The event arguments class also allows you to access the updated data via the __NewData__ property. On the other hand the __OldValues__ property contains the old data. To be sure that the appropriate data will be submitted (as this handler will be used by the add operations too), you have to assure that the action is __Commit__ and the operation type is __Edit__.
 
-#### __XAML__
+#### __C#__
 
-{{region xaml-gridview-managing-data-updating-entry_10}}
-
-	private void radGridView_RowEditEnded( object sender, GridViewRowEditEndedEventArgs e )
+{{region cs-gridview-managing-data-updating-entry_10}}
+	private void radGridView_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
 	{
-	    if ( e.EditAction == GridViewEditAction.Cancel )
+	    if (e.EditAction == GridViewEditAction.Cancel)
 	    {
 	        return;
 	    }
-	    if ( e.EditOperationType == GridViewEditOperationType.Edit )
+	    if (e.EditOperationType == GridViewEditOperationType.Edit)
 	    {
 	        //Update the entry in the data base based on your logic.
 	    }
@@ -147,17 +117,18 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 #### __VB.NET__
 
 {{region vb-gridview-managing-data-updating-entry_11}}
-
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 	    If e.EditAction = GridViewEditAction.Cancel Then
 	        Exit Sub
 	    End If
 	
 	    If e.EditOperationType = GridViewEditOperationType.Edit Then
-	            'Edit the entry in the data base based on your logic.'
+	        'Edit the entry in the data base based on your logic.
 	    End If
 	End Sub
 {{endregion}}
+
+>You can also use the __CellEditEnded__ event to handle the committing or the cancelling actions and the logic in the event handler will be executed every time a cell gets edited. In some cases this might be inconvenient because different calls to a service might be made for each cell.
 
 When the updated item is committed, it will be automatically added to the __RadGridView__'s __Items__ collection, so you don't have to worry about anything on the client-side. If you have to save it to a data base use the event handler to call the appropriate method, as it is shown in the example above.
 

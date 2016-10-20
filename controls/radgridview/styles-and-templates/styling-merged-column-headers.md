@@ -14,14 +14,14 @@ In order to style **Columng Groups** you will need to create two styles targetin
 
 #### __[XAML] Example 1: Styling the CommonHeaderPresenter and CommonColumnHeader__
 
-	{{region xaml-gridview-styling-column-groups-1}}
+	{{region xaml-gridview-styling-column-groups_1}}
 	<Style TargetType="telerik:CommonHeaderPresenter">
-            <Setter Property="Background" Value="Red"/>
-        </Style>
-	<Style TargetType="telerik:CommonColumnHeader">
-		<Setter Property="Background" Value="Red"/>
+	    <Setter Property="Background" Value="Red"/>
 	</Style>
-	{{endregion}}
+	<Style TargetType="telerik:CommonColumnHeader">
+	    <Setter Property="Background" Value="Red"/>
+	</Style>
+{{endregion}}
 
 This will result in a red background for the merged header cells.
 

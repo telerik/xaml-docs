@@ -21,7 +21,6 @@ For example you can update the source of the binding on every text change. You c
 #### __XAML__
 
 {{region xaml-gridview-how-to-update-on-every-text-changed_0}}
-
 	<TextBox Text="{Binding Name}" telerik:TextBoxBehavior.UpdateTextOnTextChanged="True" />
 {{endregion}}
 

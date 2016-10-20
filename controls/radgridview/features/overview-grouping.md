@@ -20,15 +20,13 @@ You can define grouping either in the XAML or in the code-behind.
 #### __XAML__
 
 {{region xaml-gridview-overview-grouping_0}}
-
 	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
-	   <telerik:RadGridView.GroupDescriptors>
-					<telerik:GroupDescriptor 
-						Member="Country"
-						SortDirection="Ascending" />
-	       <!--You can add more group descriptors here-->
-	   </telerik:RadGridView.GroupDescriptors>
+	                AutoGenerateColumns="False">
+	    <telerik:RadGridView.GroupDescriptors>
+	        <telerik:GroupDescriptor Member="Country"
+	                            SortDirection="Ascending" />
+	        <!--You can add more group descriptors here-->
+	    </telerik:RadGridView.GroupDescriptors>
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -38,12 +36,11 @@ You can achieve the same result if you define your grouping in the code-behind l
 #### __C#__
 
 {{region cs-gridview-overview-grouping_2}}
-
 	GroupDescriptor descriptor = new GroupDescriptor();
 	descriptor.Member = "Country";
 	descriptor.SortDirection = ListSortDirection.Ascending;
 	descriptor.DisplayContent = "Country Group";
-	this.radGridView.GroupDescriptors.Add( descriptor );
+	this.radGridView.GroupDescriptors.Add(descriptor);
 	//You can create and add more descriptors here
 {{endregion}}
 
@@ -51,12 +48,11 @@ You can achieve the same result if you define your grouping in the code-behind l
 #### __VB.NET__
 
 {{region vb-gridview-overview-grouping_3}}
-
 	Dim descriptor As New GroupDescriptor()
 	descriptor.Member = "Country"
 	descriptor.SortDirection = ListSortDirection.Ascending
 	descriptor.DisplayContent = "Country Group"
-	Me.radGridView.GroupDescriptors.Add( descriptor )
+	Me.radGridView.GroupDescriptors.Add(descriptor)
 	'You can create and add more descriptors here
 {{endregion}}
 

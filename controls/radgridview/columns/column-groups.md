@@ -26,19 +26,18 @@ To enable __column grouping__ you need to define __RadGridView.ColumnGroups__ as
      
 #### __[XAML]Example 1: Definining ColumnGroups and specifying them for columns__
 {{region xaml-gridview-columns-column-headers_3}}
-
 	<telerik:RadGridView x:Name="RadGridView1" GridLinesVisibility="Vertical" Width="450" CanUserFreezeColumns="False" AutoGenerateColumns="False" IsFilteringAllowed="False"  ShowGroupPanel="False" RowIndicatorVisibility="Collapsed">
-		<telerik:RadGridView.ColumnGroups>
-			<telerik:GridViewColumnGroup Name="VehicleInfo" Header="Vehicle info" />
-			<telerik:GridViewColumnGroup Name="Dimensions" Header="Dimensions" />
-		</telerik:RadGridView.ColumnGroups>
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Make}" ColumnGroupName="VehicleInfo" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Model}" ColumnGroupName="VehicleInfo" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Length}" ColumnGroupName="Dimensions" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Width}"  ColumnGroupName="Dimensions" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Heigth}" ColumnGroupName="Dimensions" />
-		</telerik:RadGridView.Columns>
+	    <telerik:RadGridView.ColumnGroups>
+	        <telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
+	        <telerik:GridViewColumnGroup  Name="Dimensions" Header="Dimensions" />
+	    </telerik:RadGridView.ColumnGroups>
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Make}" ColumnGroupName="VehicleInfo" />
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Model}" ColumnGroupName="VehicleInfo" />
+	        <telerik:GridViewDataColumn  DataMemberBinding="{Binding Length}" ColumnGroupName="Dimensions" />
+	        <telerik:GridViewDataColumn  DataMemberBinding="{Binding Width}"  ColumnGroupName="Dimensions" />
+	        <telerik:GridViewDataColumn  DataMemberBinding="{Binding Heigth}" ColumnGroupName="Dimensions" />
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -56,10 +55,12 @@ For example:
 #### __[XAML]Example 2: Specify ColumnGroupName for a column__
 
 {{region xaml-gridview-columns-column-headers_4}}
-
-	<telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
-	 ...
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Make}" ColumnGroupName="VehicleInfo" />
+	<telerik:RadGridView.ColumnGroups>
+	    <telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
+	</telerik:RadGridView.ColumnGroups>
+	<telerik:RadGridView.Columns>
+	    <telerik:GridViewDataColumn DataMemberBinding="{Binding Make}" ColumnGroupName="VehicleInfo" />
+	</telerik:RadGridView.Columns>
 {{endregion}}
 
 Column groups can be __nested__. They can be defined like so:
@@ -67,12 +68,11 @@ Column groups can be __nested__. They can be defined like so:
 #### __[XAML]Example 3: Nested ColumnGroups__
 
 {{region xaml-gridview-columns-column-headers_5}}
-
 	<telerik:RadGridView.ColumnGroups>
-		<telerik:GridViewColumnGroup  Name="Data" Header="Data">
-			<telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
-			<telerik:GridViewColumnGroup  Name="Dimensions" Header="Dimensions" />
-		</telerik:GridViewColumnGroup>
+	    <telerik:GridViewColumnGroup  Name="Data" Header="Data">
+	        <telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
+	        <telerik:GridViewColumnGroup  Name="Dimensions" Header="Dimensions" />
+	    </telerik:GridViewColumnGroup>
 	</telerik:RadGridView.ColumnGroups>
 {{endregion}}
 
@@ -86,7 +86,6 @@ You can define a __custom header__ for the __GridViewColumnGroup__ through its H
 #### __[XAML]Example 4: Define GridViewColumnGroup.HeaderTemplate__
 
 {{region xaml-gridview-columns-column-headers_6}}
-
 	<telerik:GridViewColumnGroup Name="Data">
 	    <telerik:GridViewColumnGroup.HeaderTemplate>
 	        <DataTemplate>

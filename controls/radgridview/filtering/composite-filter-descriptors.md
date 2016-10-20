@@ -18,18 +18,17 @@ To filter a single data field by multiple values, you have to use the __Composit
 #### __XAML__
 
 {{region xaml-radgridview-filtering-composite-filter-descriptors_0}}
-
 	<telerik:CompositeFilterDescriptor LogicalOperator="Or">
-		<telerik:CompositeFilterDescriptor.FilterDescriptors>
-			<telerik:FilterDescriptor Member="City"
-                          Operator="IsEqualTo"
-                          Value="Berlin"
-                          IsCaseSensitive="False" />
-			<telerik:FilterDescriptor Member="City"
-                          Operator="IsEqualTo"
-                          Value="Aachen"
-                          IsCaseSensitive="False" />
-		</telerik:CompositeFilterDescriptor.FilterDescriptors>
+	    <telerik:CompositeFilterDescriptor.FilterDescriptors>
+	        <telerik:FilterDescriptor Member="City"
+	              Operator="IsEqualTo"
+	              Value="Berlin"
+	              IsCaseSensitive="False" />
+	        <telerik:FilterDescriptor Member="City"
+	              Operator="IsEqualTo"
+	              Value="Aachen"
+	              IsCaseSensitive="False" />
+	    </telerik:CompositeFilterDescriptor.FilterDescriptors>
 	</telerik:CompositeFilterDescriptor>
 {{endregion}}
 
@@ -37,18 +36,16 @@ To filter a single data field by multiple values, you have to use the __Composit
 #### __C#__
 
 {{region cs-radgridview-filtering-composite-filter-descriptors_1}}
-
 	CompositeFilterDescriptor compositeDescriptor = new CompositeFilterDescriptor();
 	compositeDescriptor.LogicalOperator = FilterCompositionLogicalOperator.Or;
-	compositeDescriptor.FilterDescriptors.Add( new FilterDescriptor( "City", FilterOperator.IsEqualTo, "Berlin", false ) );
-	compositeDescriptor.FilterDescriptors.Add( new FilterDescriptor( "City", FilterOperator.IsEqualTo, "Aachen", false ) );
-	this.radGridView.FilterDescriptors.Add( compositeDescriptor );
+	compositeDescriptor.FilterDescriptors.Add(new FilterDescriptor("City", FilterOperator.IsEqualTo, "Berlin", false));
+	compositeDescriptor.FilterDescriptors.Add(new FilterDescriptor("City", FilterOperator.IsEqualTo, "Aachen", false));
+	this.radGridView.FilterDescriptors.Add(compositeDescriptor);
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-radgridview-filtering-composite-filter-descriptors_2}}
-
 	Dim compositeDescriptor As New CompositeFilterDescriptor()
 	compositeDescriptor.LogicalOperator = FilterCompositionLogicalOperator.[Or]
 	compositeDescriptor.FilterDescriptors.Add(New FilterDescriptor("City", FilterOperator.IsEqualTo, "Berlin", False))
@@ -73,34 +70,32 @@ The composite filters allow you to create more complex filtering expressions. Su
 #### __XAML__
 
 {{region xaml-radgridview-filtering-composite-filter-descriptors_3}}
-
 	<telerik:CompositeFilterDescriptor LogicalOperator="And">
-		<telerik:CompositeFilterDescriptor.FilterDescriptors>
-			<telerik:CompositeFilterDescriptor LogicalOperator="Or">
-				<telerik:CompositeFilterDescriptor.FilterDescriptors>
-					<telerik:FilterDescriptor Member="City"
-                          Operator="IsEqualTo"
-                          Value="Berlin"
-                          IsCaseSensitive="False" />
-					<telerik:FilterDescriptor Member="City"
-                          Operator="IsEqualTo"
-                          Value="Aachen"
-                          IsCaseSensitive="False" />
-				</telerik:CompositeFilterDescriptor.FilterDescriptors>
-			</telerik:CompositeFilterDescriptor>
-			<telerik:FilterDescriptor Member="Country"
-                          Operator="IsEqualTo"
-                          Value="Germany"/>
-		</telerik:CompositeFilterDescriptor.FilterDescriptors>
+	    <telerik:CompositeFilterDescriptor.FilterDescriptors>
+	        <telerik:CompositeFilterDescriptor LogicalOperator="Or">
+	            <telerik:CompositeFilterDescriptor.FilterDescriptors>
+	                <telerik:FilterDescriptor Member="City"
+	              Operator="IsEqualTo"
+	              Value="Berlin"
+	              IsCaseSensitive="False" />
+	                <telerik:FilterDescriptor Member="City"
+	              Operator="IsEqualTo"
+	              Value="Aachen"
+	              IsCaseSensitive="False" />
+	            </telerik:CompositeFilterDescriptor.FilterDescriptors>
+	        </telerik:CompositeFilterDescriptor>
+	        <telerik:FilterDescriptor Member="Country"
+	              Operator="IsEqualTo"
+	              Value="Germany"/>
+	    </telerik:CompositeFilterDescriptor.FilterDescriptors>
 	</telerik:CompositeFilterDescriptor>
 {{endregion}}
 
 #### __C#__
 
 {{region cs-radgridview-filtering-composite-filter-descriptors_4}}
-
-	CompositeFilterDescriptor compositeDescriptor = new CompositeFilterDescriptor();
-	compositeDescriptor.LogicalOperator = FilterCompositionLogicalOperator.And;
+	CompositeFilterDescriptor compositeDescriptor2 = new CompositeFilterDescriptor();
+	compositeDescriptor2.LogicalOperator = FilterCompositionLogicalOperator.And;
 	CompositeFilterDescriptor citiesDescriptor = new CompositeFilterDescriptor();
 	citiesDescriptor.LogicalOperator = FilterCompositionLogicalOperator.Or;
 	citiesDescriptor.FilterDescriptors.Add(new FilterDescriptor("City", FilterOperator.IsEqualTo, "Berlin", false));
@@ -109,9 +104,9 @@ The composite filters allow you to create more complex filtering expressions. Su
 	descriptor.Member = "Country";
 	descriptor.Operator = FilterOperator.IsEqualTo;
 	descriptor.Value = "Germany";
-	compositeDescriptor.FilterDescriptors.Add(citiesDescriptor);
-	compositeDescriptor.FilterDescriptors.Add(descriptor);
-	this.radGridView.FilterDescriptors.Add(compositeDescriptor);
+	compositeDescriptor2.FilterDescriptors.Add(citiesDescriptor);
+	compositeDescriptor2.FilterDescriptors.Add(descriptor);
+	this.radGridView.FilterDescriptors.Add(compositeDescriptor2);
 {{endregion}}
 
 
@@ -119,9 +114,8 @@ The composite filters allow you to create more complex filtering expressions. Su
 #### __VB.NET__
 
 {{region vb-radgridview-filtering-composite-filter-descriptors_5}}
-
-	Dim compositeDescriptor As New CompositeFilterDescriptor()
-	compositeDescriptor.LogicalOperator = FilterCompositionLogicalOperator.[And]
+	Dim compositeDescriptor2 As New CompositeFilterDescriptor()
+	compositeDescriptor2.LogicalOperator = FilterCompositionLogicalOperator.[And]
 	Dim citiesDescriptor As New CompositeFilterDescriptor()
 	citiesDescriptor.LogicalOperator = FilterCompositionLogicalOperator.[Or]
 	citiesDescriptor.FilterDescriptors.Add(New FilterDescriptor("City", FilterOperator.IsEqualTo, "Berlin", False))
@@ -130,9 +124,9 @@ The composite filters allow you to create more complex filtering expressions. Su
 	descriptor.Member = "Country"
 	descriptor.[Operator] = FilterOperator.IsEqualTo
 	descriptor.Value = "Germany"
-	compositeDescriptor.FilterDescriptors.Add(citiesDescriptor)
-	compositeDescriptor.FilterDescriptors.Add(descriptor)
-	Me.radGridView.FilterDescriptors.Add(compositeDescriptor)
+	compositeDescriptor2.FilterDescriptors.Add(citiesDescriptor)
+	compositeDescriptor2.FilterDescriptors.Add(descriptor)
+	Me.radGridView.FilterDescriptors.Add(compositeDescriptor2)
 {{endregion}}
 
 And here is the result:

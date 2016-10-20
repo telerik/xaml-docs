@@ -44,10 +44,10 @@ You have two options:
 
 	{{region xaml-gridview-styling-group-footers-1}}
 	<Style TargetType="telerik:GridViewGroupFooterRow">
-		<Setter Property="Foreground" Value="White"/>
-		<Setter Property="Background" Value="LightBlue"/>
-	</Style>
-	{{endregion}}
+	            <Setter Property="Foreground" Value="White"/>
+	            <Setter Property="Background" Value="LightBlue"/>
+	        </Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupFooterRowStyle__.
 
@@ -59,7 +59,7 @@ RadGridView's footer rows can also be styled by creating an appropriate __Style_
 
 	{{region xaml-gridview-styling-group-footers-2}}
 	<telerik:RadGridView GroupFooterRowStyle="{StaticResource GridViewFooterRowStyle}" />
-	{{endregion}}
+{{endregion}}
 
 #### __Figure 2: RadGridView with styled group footer rows__
 
@@ -77,71 +77,71 @@ To do so, first create a new class that inherits the **StyleSelector** class and
 
 	{{region cs-gridview-styling-group-footers-3}}
 	public class GroupFooterRowStyleSelector : StyleSelector
-    {
-        public override Style SelectStyle(object item, DependencyObject container)
-        {
-            var group = item as CollectionViewGroup;
-
-            if (group != null)
-            {
-                if (group.ItemCount > 1)
-                {
-                    return BigGroupStyle;
-                }
-                else
-                {
-                    return SmallGroupStyle;
-                }
-            }
-
-            return null;
-        }
-
-        public Style BigGroupStyle { get; set; }
-        public Style SmallGroupStyle { get; set; }
-    }
-	{{endregion}}
+	    {
+	        public override Style SelectStyle(object item, DependencyObject container)
+	        {
+	            var group = item as CollectionViewGroup;
+	
+	            if (group != null)
+	            {
+	                if (group.ItemCount > 1)
+	                {
+	                    return BigGroupStyle;
+	                }
+	                else
+	                {
+	                    return SmallGroupStyle;
+	                }
+	            }
+	
+	            return null;
+	        }
+	
+	        public Style BigGroupStyle { get; set; }
+	        public Style SmallGroupStyle { get; set; }
+	    }
+{{endregion}}
 
 #### __[VB.NET] Example 3: The GroupFooterRowStyleSelector class__
 	
 	{{region vb-gridview-styling-group-footers-4}}
 	Public Class GroupFooterRowStyleSelector
-	Inherits StyleSelector
-		Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
-			Dim group = TryCast(item, CollectionViewGroup)
-	
-			If group IsNot Nothing Then
-				If group.ItemCount > 1 Then
-					Return BigGroupStyle
-				Else
-					Return SmallGroupStyle
+		Inherits StyleSelector
+			Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
+				Dim group = TryCast(item, CollectionViewGroup)
+		
+				If group IsNot Nothing Then
+					If group.ItemCount > 1 Then
+						Return BigGroupStyle
+					Else
+						Return SmallGroupStyle
+					End If
 				End If
-			End If
+		
+				Return Nothing
+			End Function
 	
-			Return Nothing
-		End Function
-
-		Public Property BigGroupStyle() As Style
-			Get
-				Return m_BigGroupStyle
-			End Get
-			Set
-				m_BigGroupStyle = Value
-			End Set
-		End Property
-		Private m_BigGroupStyle As Style
-
-		Public Property SmallGroupStyle() As Style
-			Get
-				Return m_SmallGroupStyle
-			End Get
-			Set
-				m_SmallGroupStyle = Value
-			End Set
-		End Property
-		Private m_SmallGroupStyle As Style
-	End Class
-	{{endregion}}
+			Public Property BigGroupStyle() As Style
+				Get
+					Return m_BigGroupStyle
+				End Get
+				Set
+					m_BigGroupStyle = Value
+				End Set
+			End Property
+			Private m_BigGroupStyle As Style
+	
+			Public Property SmallGroupStyle() As Style
+				Get
+					Return m_SmallGroupStyle
+				End Get
+				Set
+					m_SmallGroupStyle = Value
+				End Set
+			End Property
+			Private m_SmallGroupStyle As Style
+		End Class
+{{endregion}}
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigGroupStyle** and **SmallGroupStyle**:
 
@@ -149,20 +149,20 @@ In the XAML file, define the style selector as a resource and set the properties
 
 	{{region xaml-gridview-styling-group-footers-6}}
 	<Grid.Resources>
-        <my:GroupFooterRowStyleSelector x:Key="StadiumCapacityStyleSelector">
-            <my:GroupFooterRowStyleSelector.BigGroupStyle>
-                <Style TargetType="telerik:GridViewGroupFooterRow">
-                    <Setter Property="Background" Value="Red"/>
-                </Style>
-            </my:GroupFooterRowStyleSelector.BigGroupStyle>
-            <my:GroupFooterRowStyleSelector.SmallGroupStyle>
-                <Style TargetType="telerik:GridViewGroupFooterRow">
-                    <Setter Property="Background" Value="Yellow" />
-                </Style>
-            </my:GroupFooterRowStyleSelector.SmallGroupStyle>
-        </my:GroupFooterRowStyleSelector>
-	</Grid.Resources>
-	{{endregion}}
+	            <my:GroupFooterRowStyleSelector x:Key="StadiumCapacityStyleSelector">
+	                <my:GroupFooterRowStyleSelector.BigGroupStyle>
+	                    <Style TargetType="telerik:GridViewGroupFooterRow">
+	                        <Setter Property="Background" Value="Red"/>
+	                    </Style>
+	                </my:GroupFooterRowStyleSelector.BigGroupStyle>
+	                <my:GroupFooterRowStyleSelector.SmallGroupStyle>
+	                    <Style TargetType="telerik:GridViewGroupFooterRow">
+	                        <Setter Property="Background" Value="Yellow" />
+	                    </Style>
+	                </my:GroupFooterRowStyleSelector.SmallGroupStyle>
+	            </my:GroupFooterRowStyleSelector>
+	        </Grid.Resources>
+{{endregion}}
 
 >The **"my:"** prefix before **GroupFooterRowStyleSelector** specifies the mapping for the namespace of the project: **xmlns:my="..."**
 
@@ -172,7 +172,7 @@ Finally, set the **MergedCellsStyleSelector** property:
 
 	{{region xaml-gridview-styling-group-footers-7}}
 	<telerik:RadGridView GroupFooterRowStyleSelector="{StaticResource GroupFooterRowStyleSelector}" />
-	{{endregion}}
+{{endregion}}
 
 And here is the final result:
 
@@ -188,10 +188,10 @@ In order to style all __RadGridView__ cells of an application, you should create
 
 	{{region xaml-gridview-styling-group-footers-8}}
 	<Style TargetType="telerik:GridViewGroupFooterCell">
-		<Setter Property="BorderBrush" Value="Red"/>
-		<Setter Property="Background" Value="Blue"/>
-	</Style>
-	{{endregion}}
+	            <Setter Property="BorderBrush" Value="Red"/>
+	            <Setter Property="Background" Value="Blue"/>
+	        </Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupFooterCellStyle__.
 
@@ -203,9 +203,9 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 
 	{{region xaml-gridview-styling-group-footers-9}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-                                Header="Name"
-                                GroupFooterCellStyle="{StaticResource GridViewFooterCellStyle}" />
-	{{endregion}}
+	                                Header="Name"
+	                                GroupFooterCellStyle="{StaticResource GridViewFooterCellStyle}" />
+{{endregion}}
 
 #### __Figure 2: RadGridView with styled group footer cells__
 

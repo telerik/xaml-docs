@@ -48,12 +48,10 @@ __Example 1:__ Configure RadGridView to merge cells vertically
 #### __XAML__
 
 {{region xaml-gridview-merged-cells_2}}
-
-	<telerik:RadGridView
-	  ColumnWidth="*"
-	  MergedCellsDirection="Vertical"
-	  CanUserFreezeColumns="False"
-	  GroupRenderMode="Flat"/>
+	<telerik:RadGridView ColumnWidth="*"
+	                    MergedCellsDirection="Vertical"
+	                    CanUserFreezeColumns="False"
+	                    GroupRenderMode="Flat"/>
 {{endregion}}
 
 
@@ -69,12 +67,10 @@ __Example 2:__ Configure RadGridView to merge cells horizontally
 #### __XAML__
 
 {{region xaml-gridview-merged-cells_3}}
-
-	<telerik:RadGridView
-	  ColumnWidth="*"
-	  MergedCellsDirection="Horizontal"
-	  CanUserFreezeColumns="False”"
-	  GroupRenderMode="Flat"/>
+	<telerik:RadGridView ColumnWidth="*"
+	                    MergedCellsDirection="Horizontal"
+	                    CanUserFreezeColumns="False"
+	                    GroupRenderMode="Flat"/>
 {{endregion}}
 
 
@@ -90,21 +86,14 @@ __Example 3:__ Configure cell merging per column
 #### __XAML__
 
 {{region xaml-gridview-merged-cells_4}}
-
-	<telerik:RadGridView Grid.Row="0" 
-                             Name="radGridView" 
-							 ColumnWidth="*" 
-							 MergedCellsDirection="Horizontal"   
-                             CanUserFreezeColumns="False"
-							 GroupRenderMode="Flat"
-                             AutoGenerateColumns="False">
-            <telerik:RadGridView.Columns>
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}"/>
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}"/>
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" IsCellMergingEnabled="False"/>
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}" IsCellMergingEnabled="False"/>
-            </telerik:RadGridView.Columns>
-        </telerik:RadGridView>
+	<telerik:RadGridView ColumnWidth="*"
+	                      MergedCellsDirection="Vertical"
+	                      CanUserFreezeColumns="False"
+	                      GroupRenderMode="Flat">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn IsCellMergingEnabled="False"/>
+	    </telerik:RadGridView.Columns>
+	</telerik:RadGridView>
 {{endregion}}
 
 >Please note RadGridView's definition in __Example 3__ is specific to illustrate it

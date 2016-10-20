@@ -17,27 +17,15 @@ Basically, there are two main scenarios to define a button - inside and outside 
 
 #### __XAML__
 
-{{region xaml-GridView-Commands-Implementation_3}}
-
-	xmlns:telerikGrid="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView"
-{{endregion}}
-
-
-
-#### __XAML__
-
 {{region xaml-GridView-Commands-Implementation_0}}
-
 	<telerik:GridViewColumn>
-	  <telerik:GridViewColumn.CellTemplate>
-	     <DataTemplate>
-	         <telerik:RadButton Content="Delete" Command="telerikGrid:RadGridViewCommands.Delete" CommandParameter="{Binding}" />
-	     </DataTemplate>
-	  </telerik:GridViewColumn.CellTemplate>
+	    <telerik:GridViewColumn.CellTemplate>
+	        <DataTemplate>
+	            <telerik:RadButton Content="Delete" Command="telerik:RadGridViewCommands.Delete" CommandParameter="{Binding}" />
+	        </DataTemplate>
+	    </telerik:GridViewColumn.CellTemplate>
 	</telerik:GridViewColumn>
 {{endregion}}
-
-
 
 Once the source object is defined up in the tree as a __DataContext__, you may set the source for the __CommandParameter__ Property's Binding to be the entire object.
 
@@ -46,10 +34,9 @@ The other approach will be to define the __RadButton__ beyond the boundaries of 
 #### __XAML__
 
 {{region xaml-GridView-Commands-Implementation_1}}
-
 	<telerik:RadButton Width="150" Content="Save insert/edit" 
-	                   Command="telerikGrid:RadGridViewCommands.CommitEdit" 
-	                   CommandTarget="{Binding ElementName=RadGridView1}"  />
+	           Command="telerik:RadGridViewCommands.CommitEdit" 
+	           CommandTarget="{Binding ElementName=RadGridView1}" />
 {{endregion}}
 
 
@@ -60,16 +47,15 @@ However, in both cases you will need to initialize the commands beforehand:
 #### __C#__
 
 {{region cs-GridView-Commands-Implementation_2}}
-
 	public MainPage()
 	{
-       ICommand deleteCommand = RadGridViewCommands.Delete;
-       ICommand beginInsertCommand = RadGridViewCommands.BeginInsert;
-       ICommand cancelRowEditCommand = RadGridViewCommands.CancelRowEdit;
-       ICommand commitEditCommand = RadGridViewCommands.CommitEdit;
-       InitializeComponent();
+	    ICommand deleteCommand = RadGridViewCommands.Delete;
+	    ICommand beginInsertCommand = RadGridViewCommands.BeginInsert;
+	    ICommand cancelRowEditCommand = RadGridViewCommands.CancelRowEdit;
+	    ICommand commitEditCommand = RadGridViewCommands.CommitEdit;
+	    InitializeComponent();
 	}
-	{{endregion}}
+{{endregion}}
 {% endif %}
 
 

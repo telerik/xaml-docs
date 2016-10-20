@@ -41,10 +41,7 @@ If you don't want your __RadGridView__ to be sortable, you just have to set its 
 #### __XAML__
 
 {{region xaml-gridview-sorting-basics_0}}
-
-	<telerik:RadGridView x:Name="radGridView" 
-	                     CanUserSortColumns="False">
-	</telerik:RadGridView>
+	<telerik:RadGridView CanUserSortColumns="False" />
 {{endregion}}
 
 In case you want to disable sorting for a particular column only, you can configure column's __IsSortable__ property to __False__:
@@ -52,7 +49,6 @@ In case you want to disable sorting for a particular column only, you can config
 #### __XAML__
 
 {{region xaml-gridview-sorting-basics_1}}
-
 	<telerik:GridViewColumn IsSortable="False" />
 {{endregion}}
 
@@ -63,10 +59,8 @@ There are two events that are raised as the user apply sorting on any column. Th
 #### __XAML__
 
 {{region xaml-gridview-sorting-basics_2}}
-
-	<telerik:RadGridView x:Name="radGridView"
-                         Sorting="radGridView_Sorting"
-                         Sorted="radGridView_Sorted" />
+	<telerik:RadGridView Sorting="radGridView_Sorting" 
+	             Sorted="radGridView_Sorted" />
 {{endregion}}
 
 Via the __GridViewSortingEventArgs__ of the __Sorting__ event you can get the instance of the column that is being sorted (__e.Column__), the instance of the __RadGridView__ that owns the column (__e.DataControl__), the sorting state (__e.SortingState__) and others. ![](images/RadGridView_BasicSorting_2.png)
@@ -76,8 +70,7 @@ You are also able to cancel the sorting operation by setting the __e.Cancel__ pr
 #### __C#__
 
 {{region cs-gridview-sorting-basics_3}}
-
-	private void radGridView_Sorting( object sender, GridViewSortingEventArgs e )
+	private void radGridView_Sorting(object sender, GridViewSortingEventArgs e)
 	{
 	    e.Cancel = true;
 	}
@@ -86,7 +79,6 @@ You are also able to cancel the sorting operation by setting the __e.Cancel__ pr
 #### __VB.NET__
 
 {{region vb-gridview-sorting-basics_4}}
-
 	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
 	    e.Cancel = True
 	End Sub
@@ -102,15 +94,14 @@ In the event handler you can place some code that has to be executed when the da
 #### __C#__
 
 {{region cs-gridview-sorting-basics_5}}
-
 	private GridViewColumn previousColumn;
-	private void radGridView_Sorted( object sender, GridViewSortedEventArgs e )
+	private void radGridView_Sorted(object sender, GridViewSortedEventArgs e)
 	{
-	    if ( this.previousColumn != null )
+	    if (this.previousColumn != null)
 	    {
-	         this.previousColumn.Background = new SolidColorBrush( Colors.Transparent );
+	        this.previousColumn.Background = new SolidColorBrush(Colors.Transparent);
 	    }
-	    e.Column.Background = new SolidColorBrush( Colors.Green );
+	    e.Column.Background = new SolidColorBrush(Colors.Green);
 	    this.previousColumn = e.Column;
 	}
 {{endregion}}
@@ -118,7 +109,6 @@ In the event handler you can place some code that has to be executed when the da
 #### __VB.NET__
 
 {{region vb-gridview-sorting-basics_6}}
-
 	Private previousColumn As GridViewColumn
 	Private Sub radGridView_Sorted(ByVal sender As Object, ByVal e As GridViewSortedEventArgs)
 	    If Me.previousColumn IsNot Nothing Then

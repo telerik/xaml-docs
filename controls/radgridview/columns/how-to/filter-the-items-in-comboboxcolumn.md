@@ -23,13 +23,12 @@ To resolve the problem you just have to change __RadComboBox's ItemsPanel with S
 #### __XAML__
 
 {{region xaml-gridview-columns-how-to-filter-the-items-in-comboboxcolumn_0}}
-
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}"
-                                    UniqueName="Country"
-                                    SelectedValueMemberPath="Id"
-                                    DisplayMemberPath="Name" 
-                                    IsComboBoxEditable="True"
-                                    EditTriggers="CellClick">
+	                    UniqueName="Country"
+	                    SelectedValueMemberPath="Id"
+	                    DisplayMemberPath="Name" 
+	                    IsComboBoxEditable="True"
+	                    EditTriggers="CellClick">
 	    <telerik:GridViewComboBoxColumn.EditorStyle>
 	        <Style TargetType="telerik:RadComboBox">
 	            <Setter Property="IsFilteringEnabled" Value="True"/>
@@ -42,7 +41,7 @@ To resolve the problem you just have to change __RadComboBox's ItemsPanel with S
 	                </Setter.Value>
 	            </Setter>
 	        </Style>
-	    </telerik:GridViewComboBoxColumn.EditorStyle>                    
+	    </telerik:GridViewComboBoxColumn.EditorStyle>
 	</telerik:GridViewComboBoxColumn>
 {{endregion}}
 

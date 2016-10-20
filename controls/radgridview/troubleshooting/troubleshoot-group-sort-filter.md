@@ -23,16 +23,13 @@ Probably you are using a __CellTemplate__ for that particular column and you hav
 #### __XAML__
 
 {{region xaml-gridview-troubleshoot-group-sort-filter_0}}
-
-	<telerik:RadGridView.Columns>
-	    <telerik:GridViewDataColumn Header="FirstName" >
-	        <telerik:GridViewDataColumn.CellTemplate>
-	            <DataTemplate>
-	                <TextBlock Text="{Binding FirstName}" />
-	            </DataTemplate>
-	        </telerik:GridViewDataColumn.CellTemplate>
-	    </telerik:GridViewDataColumn>
-	</telerik:RadGridView.Columns>
+	<telerik:GridViewDataColumn Header="FirstName" >
+	    <telerik:GridViewDataColumn.CellTemplate>
+	        <DataTemplate>
+	            <TextBlock Text="{Binding FirstName}" />
+	        </DataTemplate>
+	    </telerik:GridViewDataColumn.CellTemplate>
+	</telerik:GridViewDataColumn>
 {{endregion}}
 
 __SOLUTION__
@@ -42,16 +39,13 @@ Set the __DataMemberBinding__ property of the column to the field that you want 
 #### __XAML__
 
 {{region xaml-gridview-troubleshoot-group-sort-filter_1}}
-
-	<telerik:RadGridView.Columns>
-	    <telerik:GridViewDataColumn Header="FirstName" DataMemberBinding="{Binding FirstName}" >
-	        <telerik:GridViewDataColumn.CellTemplate>
-	            <DataTemplate>
-	                <TextBlock Text="{Binding FirstName}" />
-	            </DataTemplate>
-	        </telerik:GridViewDataColumn.CellTemplate>
-	    </telerik:GridViewDataColumn>
-	</telerik:RadGridView.Columns>
+	<telerik:GridViewDataColumn Header="FirstName" DataMemberBinding="{Binding FirstName}" >
+	    <telerik:GridViewDataColumn.CellTemplate>
+	        <DataTemplate>
+	            <TextBlock Text="{Binding FirstName}" />
+	        </DataTemplate>
+	    </telerik:GridViewDataColumn.CellTemplate>
+	</telerik:GridViewDataColumn>
 {{endregion}}
 
 

@@ -19,14 +19,13 @@ For example, you can have a button in which click event you implement your delet
 #### __XAML__
 
 {{region xaml-gridview-managing-data-deleting-entry_0}}
-
 	<StackPanel x:Name="LayoutRoot">
 	    <Button Content="Delete"
-	            Click="Button_Click" />
-				<telerik:RadGridView x:Name="radGridView"
+	    Click="Button_Click" />
+	    <telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
-	        ...
-				</telerik:RadGridView>
+	        <!--...-->
+	    </telerik:RadGridView>
 	</StackPanel>
 {{endregion}}
 
@@ -35,27 +34,34 @@ To determine which items are to be removed, use the __SelectedItems__ collection
 #### __C#__
 
 {{region cs-gridview-managing-data-deleting-entry_3}}
-
-	foreach ( Employee item in this.radGridView.SelectedItems )
+	private void Button_Click(object sender, RoutedEventArgs e)
 	{
-	    itemsToRemove.Add( item );
-	}
-	foreach ( Employee item in itemsToRemove )
-	{
-	    ( ( ObservableCollection<Employee> )this.radGridView.ItemsSource ).Remove( item );
+	    ObservableCollection<Employee> itemsToRemove = new ObservableCollection<Employee>();
+	
+	    foreach (Employee item in this.radGridView.SelectedItems)
+	    {
+	        itemsToRemove.Add(item);
+	    }
+	    foreach (Employee item in itemsToRemove)
+	    {
+	        ((ObservableCollection<Employee>)this.radGridView.ItemsSource).Remove(item);
+	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-managing-data-deleting-entry_4}}
-
-	For Each item As Employee In Me.radGridView.SelectedItems
-	    itemsToRemove.Add(item)
-	Next
-	For Each item As Employee In itemsToRemove
-	    DirectCast(Me.radGridView.ItemsSource, ObservableCollection(Of Employee)).Remove(item)
-	Next
+	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	    Dim itemsToRemove As New ObservableCollection(Of Employee)()
+	
+	    For Each item As Employee In Me.radGridView.SelectedItems
+	        itemsToRemove.Add(item)
+	    Next
+	    For Each item As Employee In itemsToRemove
+	        DirectCast(Me.radGridView.ItemsSource, ObservableCollection(Of Employee)).Remove(item)
+	    Next
+	End Sub
 {{endregion}}
 
 When an item is removed from the __ItemsSource__ collection it is also removed from the __SelectedItems__ collection. This means that you cannot directly use the __SelectedItems__ in the same foreach, where the items get removed, because it will result in an exception. This is where the itemsToRemove comes in hand.
@@ -65,23 +71,23 @@ Here is an example of a sample deleting logic implemented in the event handler f
 #### __C#__
 
 {{region cs-gridview-managing-data-deleting-entry_5}}
-
-	private void Button_Click( object sender, RoutedEventArgs e )
+	private void Button2_Click(object sender, RoutedEventArgs e)
 	{
-	    if ( this.radGridView.SelectedItems.Count == 0 )
+	    if (this.radGridView.SelectedItems.Count == 0)
 	    {
 	        return;
 	    }
+	
 	    ObservableCollection<Employee> itemsToRemove = new ObservableCollection<Employee>();
 	
 	    //Remove the items from the RadGridView
-	    foreach ( var item in this.radGridView.SelectedItems )
+	    foreach (var item in this.radGridView.SelectedItems)
 	    {
-	        itemsToRemove.Add( item as Employee );
+	        itemsToRemove.Add(item as Employee);
 	    }
-	    foreach ( var item in itemsToRemove )
+	    foreach (var item in itemsToRemove)
 	    {
-	        ( ( ObservableCollection<Employee> )this.radGridView.ItemsSource ).Remove( item as Employee );
+	        ((ObservableCollection<Employee>)this.radGridView.ItemsSource).Remove(item as Employee);
 	    }
 	}
 {{endregion}}
@@ -89,15 +95,14 @@ Here is an example of a sample deleting logic implemented in the event handler f
 #### __VB.NET__
 
 {{region vb-gridview-managing-data-deleting-entry_6}}
-
-	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	Private Sub Button2_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    If Me.radGridView.SelectedItems.Count = 0 Then
 	        Exit Sub
 	    End If
 	
 	    Dim itemsToRemove As New ObservableCollection(Of Employee)()
 	
-	        'Remove the items from the RadGridView'  
+	    'Remove the items from the RadGridView
 	    For Each item In Me.radGridView.SelectedItems
 	        itemsToRemove.Add(TryCast(item, Employee))
 	    Next

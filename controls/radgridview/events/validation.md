@@ -74,8 +74,7 @@ You can subscribe to the __CellValidating__ event declaratively or in code-behin
 #### __XAML__
 
 {{region xaml-gridview-events-validation_0}}
-
-	<telerik:RadGridView Name="radGridView" CellValidating="radGridView_CellValidating"/>
+	<telerik:RadGridView CellValidating="radGridView_CellValidating"/>
 {{endregion}}
 
 
@@ -83,15 +82,13 @@ You can subscribe to the __CellValidating__ event declaratively or in code-behin
 #### __C#__
 
 {{region cs-gridview-events-validation_1}}
-
-	this.radGridView.CellValidating += new EventHandler<GridViewCellValidatingEventArgs>(radGridView_CellValidating);
+	this.radGridView.RowValidated += radGridView_RowValidated;
 {{endregion}}
 
 
 #### __VB.NET__
 
 {{region vb-gridview-events-validation_2}}
-
 	AddHandler Me.radGridView.CellValidating, AddressOf radGridView_CellValidating
 {{endregion}}
 
@@ -104,13 +101,12 @@ The code snippet below checks whether the value entered in the "CountryId" colum
 #### __C#__
 
 {{region cs-gridview-events-validation_3}}
-
-	private void radGridView_CellValidating( object sender, GridViewCellValidatingEventArgs e )
+	private void radGridView_CellValidating(object sender, GridViewCellValidatingEventArgs e)
 	{
-	    if ( e.Cell.Column.UniqueName == "CountryId" )
+	    if (e.Cell.Column.UniqueName == "CountryId")
 	    {
-	        int newValue = Int32.Parse( e.NewValue.ToString() );
-	        if ( newValue < 0 || newValue > 12 )
+	        int newValue = Int32.Parse(e.NewValue.ToString());
+	        if (newValue < 0 || newValue > 12)
 	        {
 	            e.IsValid = false;
 	            e.ErrorMessage = "The entered value must be between 0 and 12";
@@ -122,7 +118,6 @@ The code snippet below checks whether the value entered in the "CountryId" colum
 #### __VB.NET__
 
 {{region vb-gridview-events-validation_4}}
-
 	Private Sub radGridView_CellValidating(ByVal sender As Object, ByVal e As GridViewCellValidatingEventArgs)
 	    If e.Cell.Column.UniqueName = "CountryId" Then
 	        Dim newValue As Integer = Int32.Parse(e.NewValue.ToString())
@@ -158,23 +153,20 @@ You can subscribe to the __CellValidated__ event declaratively or in code-behind
 #### __XAML__
 
 {{region xaml-gridview-events-validation_5}}
-
-	<telerik:RadGridView Name="radGridView" CellValidated="radGridView_CellValidated"/>
+	<telerik:RadGridView CellValidated="radGridView_CellValidated"/>
 {{endregion}}
 
 
 #### __C#__
 
 {{region cs-gridview-events-validation_6}}
-
-	this.radGridView.CellValidated += new EventHandler<GridViewCellValidatedEventArgs>(radGridView_CellValidated);
+	this.radGridView.CellValidated += radGridView_CellValidated;
 {{endregion}}
 
 
 #### __VB.NET__
 
 {{region vb-gridview-events-validation_7}}
-
 	AddHandler Me.radGridView.CellValidated, AddressOf radGridView_CellValidated
 {{endregion}}
 
@@ -207,22 +199,19 @@ You can subscribe to the __RowValidating__ event declaratively or in code-behind
 #### __XAML__
 
 {{region xaml-gridview-events-validation_8}}
-
-	<telerik:RadGridView Name="radGridView" RowValidating="radGridView_RowValidating"/>
+	<telerik:RadGridView RowValidating="radGridView_RowValidating"/>
 {{endregion}}
 
 
 #### __C#__
 
 {{region cs-gridview-events-validation_9}}
-
-	this.radGridView.RowValidating += new EventHandler<GridViewRowValidatingEventArgs>(radGridView_RowValidating);
+	this.radGridView.RowValidating += radGridView_RowValidating;
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-events-validation_10}}
-
 	AddHandler Me.radGridView.RowValidating, AddressOf radGridView_RowValidating
 {{endregion}}
 
@@ -232,8 +221,7 @@ To stop the commit process just set the __IsValid__ property of the __GridViewRo
 #### __C#__
 
 {{region cs-gridview-events-validation_15}}
-
-	private void radGridView_RowValidating( object sender, GridViewRowValidatingEventArgs e )
+	private void radGridView_RowValidating(object sender, GridViewRowValidatingEventArgs e)
 	{
 	    e.IsValid = false;
 	}
@@ -243,7 +231,6 @@ To stop the commit process just set the __IsValid__ property of the __GridViewRo
 #### __VB.NET__
 
 {{region vb-gridview-events-validation_16}}
-
 	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As GridViewRowValidatingEventArgs)
 	    e.IsValid = False
 	End Sub
@@ -269,21 +256,18 @@ You can subscribe to the __RowValidated__ event declaratively or in code-behind 
 #### __XAML__
 
 {{region xaml-gridview-events-validation_11}}
-
-	<telerik:RadGridView Name="radGridView" RowValidated="radGridView_RowValidated"/>
+	<telerik:RadGridView RowValidated="radGridView_RowValidated"/>
 {{endregion}}
 
 #### __C#__
 
 {{region cs-gridview-events-validation_12}}
-
-	this.radGridView.RowValidated += new EventHandler<GridViewRowValidatedEventArgs>(radGridView_RowValidated);
+	this.radGridView.RowValidated += radGridView_RowValidated;
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-events-validation_13}}
-
 	AddHandler Me.radGridView.RowValidated, AddressOf radGridView_RowValidated
 {{endregion}}
 

@@ -32,7 +32,6 @@ For the purpose of this tutorial, we will use the __RadGridView__ declaration in
 #### __[XAML] Example 1: Declare RadGridView.__
 
 {{region xaml-gridview-managing-data-validation_0}}
-
 	<telerik:RadGridView x:Name="radGridView"/>
 {{endregion}}
 
@@ -90,8 +89,7 @@ Attach to the __CellValidating__ event, which is exposed by the __RadGridView__.
 #### __[XAML] Example 3: Attach to the CellValidating event.__
 
 {{region xaml-gridview-managing-data-validation_1}}
-
-	<telerik:RadGridView x:Name="radGridView" CellValidating="radGridView_CellValidating"/>
+	<telerik:RadGridView CellValidating="radGridView_CellValidating"/>
 {{endregion}}
 
 
@@ -100,12 +98,11 @@ Switch to the code-behind and add your custom validation logic in the event hand
 #### __[C#] Example 3: Add custom logic in the code behind.__
 
 {{region cs-gridview-managing-data-validation_2}}
-
-	private void radGridView_CellValidating( object sender, Telerik.Windows.Controls.GridViewCellValidatingEventArgs e )
+	private void radGridView_CellValidating(object sender, Telerik.Windows.Controls.GridViewCellValidatingEventArgs e)
 	{
-	    if ( e.Cell.Column.UniqueName == "OrderNO" )
+	    if (e.Cell.Column.UniqueName == "OrderNO")
 	    {
-	        if ( e.NewValue.ToString().Length < 5 )
+	        if (e.NewValue.ToString().Length < 5)
 	        {
 	            e.IsValid = false;
 	            e.ErrorMessage = "OrderNO must be longer than five characters.";
@@ -117,7 +114,6 @@ Switch to the code-behind and add your custom validation logic in the event hand
 #### __[VB.NET] Example 3: Add custom logic in the code behind.__
 
 {{region vb-gridview-managing-data-validation_3}}
-
 	Private Sub radGridView_CellValidating(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewCellValidatingEventArgs)
 	    If e.Cell.Column.UniqueName = "OrderNO" Then
 	        If e.NewValue.ToString().Length < 5 Then
@@ -144,7 +140,6 @@ An alternative approach is to use validation on a __property level__ as shown in
 #### __[C#] Example 4: Set validation on a property level.__
 
 {{region cs-gridview-managing-data-validation_4}}
-
 	public class Order
 	{
 	    private string orderNo;
@@ -156,13 +151,15 @@ An alternative approach is to use validation on a __property level__ as shown in
 	        }
 	        set
 	        {
-	            if ( value.Length < 5 )
+	            if (value.Length < 5)
 	            {
-	                throw new Exception( "OrderNo should be longer than 5 characters." );
+	                throw new Exception("OrderNo should be longer than 5 characters.");
 	            }
 	            this.orderNo = value;
 	        }
 	    }
+	
+	    public int Total { get; internal set; }
 	}
 {{endregion}}
 
@@ -170,7 +167,6 @@ An alternative approach is to use validation on a __property level__ as shown in
 #### __[VB.NET] Example 4: Set validation on a property level.__
 
 {{region vb-gridview-managing-data-validation_5}}
-
 	Public Class Order
 	    Private m_orderNo As String
 	
@@ -185,6 +181,8 @@ An alternative approach is to use validation on a __property level__ as shown in
 	            Me.m_orderNo = value
 	        End Set
 	    End Property
+	
+	    Public Property Total As Integer
 	End Class
 {{endregion}}
 
@@ -207,7 +205,6 @@ Attach to the __RowValidating__ event, which is exposed by the __RadGridView__.
 #### __[XAML] Example 5: Attach to the RowValidating event.__
 
 {{region xaml-gridview-managing-data-validation_6}}
-
 	<telerik:RadGridView RowValidating="radGridView_RowValidating"/>
 {{endregion}}
 
@@ -217,26 +214,25 @@ Switch to the code-behind and add your custom validation logic in the event hand
 #### __[C#] Example 5: Apply custom logic in the RowValidating event.__
 
 {{region cs-gridview-managing-data-validation_7}}
-
-	private void radGridView_RowValidating( object sender, Telerik.Windows.Controls.GridViewRowValidatingEventArgs e )
+	private void radGridView_RowValidating(object sender, Telerik.Windows.Controls.GridViewRowValidatingEventArgs e)
 	{
 	
 	    Order order = e.Row.DataContext as Order;
-	    if ( String.IsNullOrEmpty( order.OrderNO ) || order.OrderNO.Length < 5 )
+	    if (String.IsNullOrEmpty(order.OrderNO) || order.OrderNO.Length < 5)
 	    {
 	        GridViewCellValidationResult validationResult = new GridViewCellValidationResult();
 	        validationResult.PropertyName = "OrderNO";
 	        validationResult.ErrorMessage = "OrderNO is required and must be at least five characters";
-	        e.ValidationResults.Add( validationResult );
+	        e.ValidationResults.Add(validationResult);
 	        e.IsValid = false;
 	    }
 	
-	    if ( order.Total < 0 )
+	    if (order.Total < 0)
 	    {
 	        GridViewCellValidationResult validationResult = new GridViewCellValidationResult();
 	        validationResult.PropertyName = "Total";
 	        validationResult.ErrorMessage = "Total must be positive";
-	        e.ValidationResults.Add( validationResult );
+	        e.ValidationResults.Add(validationResult);
 	        e.IsValid = false;
 	    }
 	}
@@ -245,7 +241,6 @@ Switch to the code-behind and add your custom validation logic in the event hand
 #### __[VB.NET] Example 5: Apply custom logic in the RowValidating event.__
 
 {{region vb-gridview-managing-data-validation_8}}
-
 	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewRowValidatingEventArgs)
 	    Dim order As Order = TryCast(e.Row.DataContext, Order)
 	    If [String].IsNullOrEmpty(order.OrderNO) OrElse order.OrderNO.Length < 5 Then
@@ -295,7 +290,6 @@ The code snippet below shows you how to use __DataAnnotations__ in order to vali
 #### __[C#] Example 5: Set validation through data DataAnnotations.__
 
 {{region cs-gridview-managing-data-validation_9}}
-
 	[Required]
 	public string OrderNO
 	{
@@ -305,28 +299,27 @@ The code snippet below shows you how to use __DataAnnotations__ in order to vali
 	    }
 	    set
 	    {
-	        ValidationContext validationContext = new ValidationContext( this, null, null );
+	        ValidationContext validationContext = new ValidationContext(this, null, null);
 	        validationContext.MemberName = "OrderNO";
-	        Validator.ValidateProperty( value, validationContext );
+	        Validator.ValidateProperty(value, validationContext);
 	        this.orderNo = value;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 5: Set validation through data DataAnnotations.__
 
 {{region vb-gridview-managing-data-validation_10}}
-
-	<Required()> _
+	<Required()>
 	Public Property OrderNO() As String
 	    Get
-	        Return Me.orderNo
+	        Return Me.m_orderNo
 	    End Get
 	    Set(ByVal value As String)
 	        Dim validationContext As New ValidationContext(Me, Nothing, Nothing)
 	        validationContext.MemberName = "OrderNO"
 	        Validator.ValidateProperty(value, validationContext)
-	        Me.orderNo = value
+	        Me.m_orderNo = value
 	    End Set
 	End Property
 {{endregion}}

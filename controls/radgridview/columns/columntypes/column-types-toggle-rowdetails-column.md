@@ -27,12 +27,11 @@ Here is a list of the most important properties.
 #### __[XAML] Example 1: Define GridViewToggleRowDetailsColumn in XAML.__
 
 {{region xaml-radgridview-columns-column-types-toggle-rowdetails-column_0}}
-
 	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
+	                 AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewToggleRowDetailsColumn />
-	        ...
+	        <!--...-->
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}

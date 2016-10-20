@@ -38,11 +38,11 @@ You have two options:
 
 	{{region xaml-gridview-styling-cell_2}}
 	<Style TargetType="telerik:GridViewCell">
-		<Setter Property="VerticalContentAlignment" Value="Top"/>
-		<Setter Property="HorizontalContentAlignment" Value="Center"/>
-		<Setter Property="Background" Value="#ffcc00"/>
+	    <Setter Property="VerticalContentAlignment" Value="Top"/>
+	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	    <Setter Property="Background" Value="#ffcc00"/>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewCellStyle__.
 
@@ -58,9 +58,9 @@ __RadGridView Cells__ can also be styled by creating an appropriate __Style__ fo
 
 	{{region xaml-gridview-styling-cell_1}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-                                Header="Name"
-                                CellStyle="{StaticResource GridViewCellStyle}" />
-	{{endregion}}
+	                Header="Name"
+	                CellStyle="{StaticResource GridViewCellStyle}" />
+{{endregion}}
 
 # See Also
 

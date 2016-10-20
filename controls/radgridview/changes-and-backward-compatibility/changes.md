@@ -988,151 +988,68 @@ Some __code changes__ are needed after the __upgrade__. Find the list with code 
 #### __C#__
 
 {{region cs-radgridview-changes_0}}
-
-	    GridViewColumn ageColumn = this.radGridView.Columns["Age"];
-	    ColumnFilterDescriptor ageColumnFilter = new ColumnFilterDescriptor(ageColumn);
-	    // ...
-	    ageColumnFilter.DistinctFilter.DistinctValues.Add(5);
-	    ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
-	    ageColumnFilter.FieldFilter.Filter1.Value = 10;
-	    // ...
-	    this.radGridView.FilterDescriptors.Add(ageColumnFilter);
-	{{endregion}}
+	GridViewColumn ageColumn = this.radGridView.Columns["Age"];
+	ColumnFilterDescriptor ageColumnFilter = new ColumnFilterDescriptor(ageColumn);
+	// ...
+	ageColumnFilter.DistinctFilter.DistinctValues.Add(5);
+	ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
+	ageColumnFilter.FieldFilter.Filter1.Value = 10;
+	// ...
+	this.radGridView.FilterDescriptors.Add(ageColumnFilter);
+{{endregion}}
 
 
 
 #### __VB.NET__
 
 {{region vb-radgridview-changes_1}}
-
-	    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
-	    Dim ageColumnFilter As New ColumnFilterDescriptor(ageColumn)
-	    ' ...
-	    ageColumnFilter.DistinctFilter.DistinctValues.Add(5)
-	    ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
-	    ageColumnFilter.FieldFilter.Filter1.Value = 10
-	    ' ...
-	    Me.radGridView.FilterDescriptors.Add(ageColumnFilter)
-	#End Region
-	
-	#Region "radgridview-changes_3"
-
-	    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
-	    ' Getting it from the property will create it and associate it with its column automatically.
-	    Dim ageColumnFilter As IColumnFilterDescriptor = ageColumn.ColumnFilterDescriptor
-	    ageColumnFilter.SuspendNotifications()
-	    ' ...
-	    ageColumnFilter.DistinctFilter.AddDistinctValue(5)
-	    ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
-	    ageColumnFilter.FieldFilter.Filter1.Value = 10
-	    ' ...
-	    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-	    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.
-	    ageColumnFilter.ResumeNotifications()
-	#End Region
-	
-	#Region "radgridview-changes_5"
-	    Me.radGridView.FilterDescriptors.Remove(columnFilterDescriptor)
-	#End Region
-	
-	#Region "radgridview-changes_7"
-	    ' Calling ClearFilter will automatically remove filter descriptor from the grid.
-	    myColumn.ClearFilters()
-	#End Region
-	
-	#Region "radgridview-changes_9"
-	    Me.radGridView.FilterDescriptors.Clear()
-	#End Region
-	#Region "radgridview-changes_11"
-	    Me.radGridView.FilterDescriptors.SuspendNotifications()
-	    For Each column As var In Me.radGridView.Columns
-		    column.ClearFilters()
-	    Next
-	    Me.radGridView.FilterDescriptors.ResumeNotifications()
-	    End Class
-	#End Region
+	Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
+	Dim ageColumnFilter As New ColumnFilterDescriptor(ageColumn)
+	' ...
+	ageColumnFilter.DistinctFilter.DistinctValues.Add(5)
+	ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
+	ageColumnFilter.FieldFilter.Filter1.Value = 10
+	' ...
+	Me.radGridView.FilterDescriptors.Add(ageColumnFilter)
+{{endregion}}
 
 __After:__
 
 #### __C#__
 
-{{region radgridview-changes_2}}
-
-	    GridViewColumn ageColumn = this.radGridView.Columns["Age"];
-	    // Getting it from the property will create it and associate it with its column automatically.
-	    IColumnFilterDescriptor ageColumnFilter = ageColumn.ColumnFilterDescriptor;
-	    ageColumnFilter.SuspendNotifications();
-	    // ...
-	    ageColumnFilter.DistinctFilter.AddDistinctValue(5);
-	    ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
-	    ageColumnFilter.FieldFilter.Filter1.Value = 10;
-	    // ...
-	    // There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-	    // When the column filter is activated/deactivated it is automatically added/removed to this collection.
-	    ageColumnFilter.ResumeNotifications();
-	{{endregion}}
-
-
+{{region radgridview-changes_2}} {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-radgridview-changes_3}}
-
-	    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
-	    ' Getting it from the property will create it and associate it with its column automatically.
-	    Dim ageColumnFilter As IColumnFilterDescriptor = ageColumn.ColumnFilterDescriptor
-	    ageColumnFilter.SuspendNotifications()
-	    ' ...
-	    ageColumnFilter.DistinctFilter.AddDistinctValue(5)
-	    ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
-	    ageColumnFilter.FieldFilter.Filter1.Value = 10
-	    ' ...
-	    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-	    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.
-	    ageColumnFilter.ResumeNotifications()
-	#End Region
-	
-	#Region "radgridview-changes_5"
-	    Me.radGridView.FilterDescriptors.Remove(columnFilterDescriptor)
-	#End Region
-	
-	#Region "radgridview-changes_7"
-	    ' Calling ClearFilter will automatically remove filter descriptor from the grid.
-	    myColumn.ClearFilters()
-	#End Region
-	
-	#Region "radgridview-changes_9"
-	    Me.radGridView.FilterDescriptors.Clear()
-	#End Region
-	#Region "radgridview-changes_11"
-	    Me.radGridView.FilterDescriptors.SuspendNotifications()
-	    For Each column As var In Me.radGridView.Columns
-		    column.ClearFilters()
-	    Next
-	    Me.radGridView.FilterDescriptors.ResumeNotifications()
-	    End Class
-	#End Region
-
-
+	Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
+	' Getting it from the property will create it and associate it with its column automatically.
+	Dim ageColumnFilter As IColumnFilterDescriptor = ageColumn.ColumnFilterDescriptor
+	ageColumnFilter.SuspendNotifications()
+	' ...
+	ageColumnFilter.DistinctFilter.AddDistinctValue(5)
+	ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
+	ageColumnFilter.FieldFilter.Filter1.Value = 10
+	' ...
+	' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	' When the column filter is activated/deactivated it is automatically added/removed to this collection.
+	ageColumnFilter.ResumeNotifications()
+{{endregion}}
 
 * __Clearing a Column Filter____Before:__
 
 #### __C#__
 
-{{region radgridview-changes_4}}
-
-	    this.radGridView.FilterDescriptors.Remove(columnFilterDescriptor);
-	{{endregion}}
+{{region radgridview-changes_4}} {{endregion}}
 
 __After:__
 
 #### __C#__
 
 {{region cs-radgridview-changes_6}}
-
-	    // Calling ClearFilter will automatically remove filter descriptor from the grid.
-	    myColumn.ClearFilters();
-	{{endregion}}
+	// Calling ClearFilter will automatically remove filter descriptor from the grid.
+	myColumn.ClearFilters();
+{{endregion}}
 
 
 
@@ -1141,23 +1058,21 @@ __After:__
 #### __C#__
 
 {{region cs-radgridview-changes_8}}
-
-	    this.radGridView.FilterDescriptors.Clear();
-	{{endregion}}
+	this.radGridView.FilterDescriptors.Clear();
+{{endregion}}
 
 __After:__
 
 #### __C#__
 
 {{region cs-radgridview-changes_10}}
-
-	    this.radGridView.FilterDescriptors.SuspendNotifications();
-	    foreach (var column in this.radGridView.Columns)
-	    {
-		    column.ClearFilters();
-	    }
-	    this.radGridView.FilterDescriptors.ResumeNotifications();
-	{{endregion}}
+	this.radGridView.FilterDescriptors.SuspendNotifications();
+	foreach (var column in this.radGridView.Columns)
+	{
+	    column.ClearFilters();
+	}
+	this.radGridView.FilterDescriptors.ResumeNotifications();
+{{endregion}}
 
 
 

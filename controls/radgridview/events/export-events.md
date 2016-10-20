@@ -38,16 +38,16 @@ You can subscribe to the events either declaratively or from the code-behind, as
 
 	{{region xaml-gridview-export-events_0}}
 	<telerik:RadGridView x:Name="RadGridView1"
-	                     ElementExporting="RadGridView1_ElementExporting"
-	                     ElementExported="RadGridView1_ElementExported">
-	{{endregion}}
+	             ElementExporting="RadGridView1_ElementExporting"
+	             ElementExported="RadGridView1_ElementExported" />
+{{endregion}}
 
 #### __[C#] Example 2: Subscribe to events from the code-behind__
 
 	{{region cs-gridview-export-events_1}}
-	RadGridView1.ElementExporting += new EventHandler<GridViewElementExportingEventArgs>(RadGridView1_ElementExporting);
-	RadGridView1.ElementExported += new EventHandler<GridViewElementExportedEventArgs>(RadGridView1_ElementExported);
-	{{endregion}}
+	RadGridView1.ElementExporting += RadGridView1_ElementExporting;
+	RadGridView1.ElementExported += RadGridView1_ElementExported;
+{{endregion}}
 
 
 #### __[VB.NET] Example 2: Subscribe to events from the code-behind__
@@ -55,7 +55,7 @@ You can subscribe to the events either declaratively or from the code-behind, as
 	{{region vb-gridview-export-events_2}}
 	AddHandler RadGridView1.ElementExporting, AddressOf RadGridView1_ElementExporting
 	AddHandler RadGridView1.ElementExported, AddressOf RadGridView1_ElementExported
-	{{endregion}}
+{{endregion}}
 
 ## ElementExporting
 
@@ -102,7 +102,7 @@ You can use the __ElementExported__ event if you want to write additional data t
 	{
 	    if (e.Element == ExportElement.Row)
 	    {
-	        Employees obj = e.Context as Employees;
+	        Employee obj = e.Context as Employee;
 	        if (obj != null)
 	        {
 	            e.Writer.Write(String.Format(@"<tr><td style=""background-color:#CCC;"" colspan=""{0}"">",
@@ -116,26 +116,26 @@ You can use the __ElementExported__ event if you want to write additional data t
 	        }
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 3: Add row details to the exported data__
 
 	{{region vb-gridview-export-events_6}}
-	Private Sub RadGridView1_ElementExported(sender As Object, e As GridViewElementExportedEventArgs)
-	 If e.Element = ExportElement.Row Then
-	  Dim obj As Employees = TryCast(e.Context, Employees)
-	  If obj IsNot Nothing Then
-	   e.Writer.Write([String].Format("<tr><td style=""background-color:#CCC;"" colspan=""{0}"">", DirectCast(RadGridView1.Columns, IEnumerable(Of Telerik.Windows.Controls.GridViewColumn)).Count()))
-	   e.Writer.Write([String].Format("<b>Birth date:</b> {0} <br />", obj.BirthDate))
-	   e.Writer.Write([String].Format("<b>Hire date:</b> {0} <br />", obj.HireDate))
-	   e.Writer.Write([String].Format("<b>Address:</b> {0} <br />", obj.Address))
-	   e.Writer.Write([String].Format("<b>City:</b> {0} <br />", obj.City))
-	   e.Writer.Write([String].Format("<b>Notes:</b> {0} <br />", obj.Notes))
-	   e.Writer.Write("</td></tr>")
-	  End If
-	 End If
+	Private Sub RadGridView1_ElementExported(ByVal sender As Object, ByVal e As GridViewElementExportedEventArgs)
+	    If e.Element = ExportElement.Row Then
+	        Dim obj As Employee = TryCast(e.Context, Employee)
+	        If obj IsNot Nothing Then
+	            e.Writer.Write(String.Format("<tr><td style=""background-color:#CCC;"" colspan=""{0}"">", DirectCast(RadGridView1.Columns, IEnumerable(Of Telerik.Windows.Controls.GridViewColumn)).Count()))
+	            e.Writer.Write(String.Format("<b>Birth date:</b> {0} <br />", obj.BirthDate))
+	            e.Writer.Write(String.Format("<b>Hire date:</b> {0} <br />", obj.HireDate))
+	            e.Writer.Write(String.Format("<b>Address:</b> {0} <br />", obj.Address))
+	            e.Writer.Write(String.Format("<b>City:</b> {0} <br />", obj.City))
+	            e.Writer.Write(String.Format("<b>Notes:</b> {0} <br />", obj.Notes))
+	            e.Writer.Write("</td></tr>")
+	        End If
+	    End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 You can see the result in **Figure 1**.
 
@@ -172,10 +172,10 @@ You can define a style when the __InitializingExcelMLStyles__ event is raised, a
 #### __[C#] Example 4: Define a style__
 
 	{{region cs-gridview-export-events_7}}
-	ExcelMLStyle style = new ExcelMLStyle("0");            
+	ExcelMLStyle style = new ExcelMLStyle("0");
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
 	e.Styles.Add(style);
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 4: Define a style__
 
@@ -183,7 +183,8 @@ You can define a style when the __InitializingExcelMLStyles__ event is raised, a
 	Dim style As New ExcelMLStyle("0")
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic
 	e.Styles.Add(style)
-	{{endregion}}
+	'
+{{endregion}}
 
 Here is a list of the properties that could be set for __ExcelMLStyle__:
         
@@ -226,77 +227,77 @@ __Example 5__ shows how to use __ExcelMLStyle__.
 	{{region cs-gridview-export-events_9}}
 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
-		ExcelMLStyle style = new ExcelMLStyle("0");
+	    ExcelMLStyle style = new ExcelMLStyle("0");
 	
-		// Alignment
-		style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
-		style.Alignment.Vertical = ExcelMLVerticalAlignment.Top;
-		style.Alignment.Indent = 5;
-		style.Alignment.Rotate = 0;
-		style.Alignment.ShrinkToFit = true;
-	 	style.Alignment.VerticalText = true;
-		style.Alignment.WrapText = true;
+	    // Alignment
+	    style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
+	    style.Alignment.Vertical = ExcelMLVerticalAlignment.Top;
+	    style.Alignment.Indent = 5;
+	    style.Alignment.Rotate = 0;
+	    style.Alignment.ShrinkToFit = true;
+	    style.Alignment.VerticalText = true;
+	    style.Alignment.WrapText = true;
 	
-		// Font
-		style.Font.Bold = true;
-		style.Font.Color = "Beige";
-		style.Font.FontName = "Calibri";
-		style.Font.Italic = true;
-		style.Font.Outline = true;
-		style.Font.Shadow = true;
-		style.Font.Size = 10;
-		style.Font.StrikeThrough = true;
-		style.Font.Underline = ExcelMLUnderline.Double;
+	    // Font
+	    style.Font.Bold = true;
+	    style.Font.Color = "Beige";
+	    style.Font.FontName = "Calibri";
+	    style.Font.Italic = true;
+	    style.Font.Outline = true;
+	    style.Font.Shadow = true;
+	    style.Font.Size = 10;
+	    style.Font.StrikeThrough = true;
+	    style.Font.Underline = ExcelMLUnderline.Double;
 	
-		// Interior
-		style.Interior.Color = "Green";
-		style.Interior.Pattern = ExcelMLPattern.Solid;
-		style.Interior.PatternColor = "#FF0000";
+	    // Interior
+	    style.Interior.Color = "Green";
+	    style.Interior.Pattern = ExcelMLPattern.Solid;
+	    style.Interior.PatternColor = "#FF0000";
 	
-		// NumberFormat
-	 	style.NumberFormat.Format = "00.00";
+	    // NumberFormat
+	    style.NumberFormat.Format = "00.00";
 	
 	    e.Styles.Add(style);
-	}    		
-	{{endregion}}
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 5: Modify the style before exporting__
 
 	{{region vb-gridview-export-events_10}}
-	Private Sub clubsGrid_InitializingExcelMLStyles_1(sender As Object, e As ExcelMLStylesEventArgs)
-		Dim style As New ExcelMLStyle("0")
+	Private Sub clubsGrid_InitializingExcelMLStyles_1(ByVal sender As Object, ByVal e As ExcelMLStylesEventArgs)
+	    Dim style As New ExcelMLStyle("0")
 	
-		' Alignment
-		style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic
-		style.Alignment.Vertical = ExcelMLVerticalAlignment.Top
-		style.Alignment.Indent = 5
-		style.Alignment.Rotate = 0
-		style.Alignment.ShrinkToFit = True
-		style.Alignment.VerticalText = True
-		style.Alignment.WrapText = True
+	    ' Alignment
+	    style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic
+	    style.Alignment.Vertical = ExcelMLVerticalAlignment.Top
+	    style.Alignment.Indent = 5
+	    style.Alignment.Rotate = 0
+	    style.Alignment.ShrinkToFit = True
+	    style.Alignment.VerticalText = True
+	    style.Alignment.WrapText = True
 	
-		' Font
-		style.Font.Bold = True
-		style.Font.Color = "Beige"
-		style.Font.FontName = "Calibri"
-		style.Font.Italic = True
-		style.Font.Outline = True
-		style.Font.Shadow = True
-		style.Font.Size = 10
-		style.Font.StrikeThrough = True
-		style.Font.Underline = ExcelMLUnderline.[Double]
+	    ' Font
+	    style.Font.Bold = True
+	    style.Font.Color = "Beige"
+	    style.Font.FontName = "Calibri"
+	    style.Font.Italic = True
+	    style.Font.Outline = True
+	    style.Font.Shadow = True
+	    style.Font.Size = 10
+	    style.Font.StrikeThrough = True
+	    style.Font.Underline = ExcelMLUnderline.Double
 	
-		' Interior
-		style.Interior.Color = "Green"
-		style.Interior.Pattern = ExcelMLPattern.Solid
-		style.Interior.PatternColor = "#FF0000"
+	    ' Interior
+	    style.Interior.Color = "Green"
+	    style.Interior.Pattern = ExcelMLPattern.Solid
+	    style.Interior.PatternColor = "#FF0000"
 	
-		' NumberFormat
-		style.NumberFormat.Format = "00.00"
+	    ' NumberFormat
+	    style.NumberFormat.Format = "00.00"
 	
-		e.Styles.Add(style)
+	    e.Styles.Add(style)
 	End Sub
-	{{endregion}}
+{{endregion}}
         
 # See Also
 

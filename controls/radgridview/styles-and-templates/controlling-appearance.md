@@ -41,12 +41,10 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 #### __XAML__
 
 {{region xaml-gridview-styles-and-templates-controlling-appearance_0}}
-
-	<telerik:RadGridView x:Name="radGridView" 
-                         GridLinesVisibility="Vertical"
-                         ShowColumnFooters="True"
-                         ShowColumnHeaders="False"
-                         ColumnBackground="Bisque"/>
+	<telerik:RadGridView GridLinesVisibility="Vertical"
+	             ShowColumnFooters="True"
+	             ShowColumnHeaders="False"
+	             ColumnBackground="Bisque"/>
 {{endregion}}
 
 The final result should be similar to this:
@@ -70,8 +68,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 #### __XAML__
 
 {{region xaml-gridview-styles-and-templates-controlling-appearance_1}}
-
-	<telerik:RadGridView x:Name="radGridView" MinColumnWidth="20" MaxColumnWidth="100" ColumnWidth="80"/>
+	<telerik:RadGridView MinColumnWidth="20" MaxColumnWidth="100" ColumnWidth="80"/>
 {{endregion}}
 
 ## Rows
@@ -97,16 +94,14 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 #### __XAML__
 
 {{region xaml-gridview-styles-and-templates-controlling-appearance_2}}
-
-	<telerik:RadGridView x:Name="radGridView" 
-                         RowIndicatorVisibility="Collapsed"
-                         RowDetailsVisibilityMode="VisibleWhenSelected"
-                         AlternationCount="2">
+	<telerik:RadGridView RowIndicatorVisibility="Collapsed"
+	             RowDetailsVisibilityMode="VisibleWhenSelected"
+	             AlternationCount="2">
 	    <telerik:RadGridView.RowDetailsTemplate>
 	        <DataTemplate>
 	            <Border BorderThickness="2" Height="35">
 	                <TextBlock Text="{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-	            </Border>   
+	            </Border>
 	        </DataTemplate>
 	    </telerik:RadGridView.RowDetailsTemplate>
 	</telerik:RadGridView>
@@ -133,13 +128,10 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 #### __XAML__
 
 {{region xaml-gridview-styles-and-templates-controlling-appearance_3}}
-
-	<telerik:RadGridView x:Name="radGridView"
-                         ShowGroupFooters="True"
-                         ShowGroupPanel="False">
+	<telerik:RadGridView ShowGroupFooters="True" ShowGroupPanel="False">
 	    <telerik:RadGridView.GroupDescriptors>
-					<telerik:GroupDescriptor Member="Country">
-					</telerik:GroupDescriptor>
+	        <telerik:GroupDescriptor Member="Country">
+	        </telerik:GroupDescriptor>
 	    </telerik:RadGridView.GroupDescriptors>
 	</telerik:RadGridView>
 {{endregion}}

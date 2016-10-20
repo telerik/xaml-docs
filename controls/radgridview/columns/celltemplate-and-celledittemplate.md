@@ -35,26 +35,25 @@ In case you want to change those default elements for a particular columns, you 
 #### __XAML__
 
 {{region xaml-radgridview-columns-celltemplate-and-celledittemplate_0}}
-
 	<telerik:RadGridView x:Name="EmployeesGrid" AutoGenerateColumns="False" ItemsSource="{Binding Employees}">
-	 <telerik:RadGridView.Columns>
-	  <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" />
-	  <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}" />
-	  <telerik:GridViewDataColumn DataMemberBinding="{Binding StartingDate}">
-	   <telerik:GridViewDataColumn.CellEditTemplate>
-	    <DataTemplate>
-	     <telerik:RadDateTimePicker SelectedDate="{Binding StartingDate}" IsTooltipEnabled="False"/>
-	    </DataTemplate>
-	   </telerik:GridViewDataColumn.CellEditTemplate>
-	  </telerik:GridViewDataColumn>
-	  <telerik:GridViewDataColumn DataMemberBinding="{Binding Salary}">
-	   <telerik:GridViewDataColumn.CellTemplate>
-	    <DataTemplate>
-	     <telerik:RadNumericUpDown Value="{Binding Salary}" />
-	    </DataTemplate>
-	   </telerik:GridViewDataColumn.CellTemplate>
-	  </telerik:GridViewDataColumn>
-	 </telerik:RadGridView.Columns>
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" />
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}" />
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding StartingDate}">
+	            <telerik:GridViewDataColumn.CellEditTemplate>
+	                <DataTemplate>
+	                    <telerik:RadDateTimePicker SelectedDate="{Binding StartingDate}" IsTooltipEnabled="False"/>
+	                </DataTemplate>
+	            </telerik:GridViewDataColumn.CellEditTemplate>
+	        </telerik:GridViewDataColumn>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Salary}">
+	            <telerik:GridViewDataColumn.CellTemplate>
+	                <DataTemplate>
+	                    <telerik:RadNumericUpDown Value="{Binding Salary}" />
+	                </DataTemplate>
+	            </telerik:GridViewDataColumn.CellTemplate>
+	        </telerik:GridViewDataColumn>
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 

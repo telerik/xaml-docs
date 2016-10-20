@@ -36,15 +36,13 @@ Here is an example on how to copy column headers as well as selected data:
 #### __[C#] Example 1: Setting the ClipboardCopyMode__
 
 {{region cs-gridview-copying_0}}
-
-	this.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells | 
+	this.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells |
 	GridViewClipboardCopyMode.Header;
 {{endregion}}
 
 #### __[VB.NET] Example 1: Setting the ClipboardCopyMode__
 
 {{region vb-gridview-copying_1}}
-
 	Me.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells Or GridViewClipboardCopyMode.Header
 {{endregion}}
 
@@ -55,26 +53,24 @@ There are two events that allow you to control the copying operation: __Copying_
 #### __[C#] Example 2: The CopyingCellClipboardContent Event__
 
 {{region cs-gridview-copying_2}}
-
 	private void radGridView_CopyingCellClipboardContent(object sender, GridViewCellClipboardEventArgs e)
 	{
-	     if (e.Cell.Column.UniqueName == "FullName")
-	     {
-	          var person = e.Cell.Item as Person;
-	          e.Value = string.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName);
-	     }
+	    if (e.Cell.Column.UniqueName == "FullName")
+	    {
+	        var person = e.Cell.Item as Person;
+	        e.Value = string.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName);
+	    }
 	}
 {{endregion}}
 
 #### __[VB.NET] Example 2: The CopyingCellClipboardContent Event__
 
 {{region vb-gridview-copying_3}}
-
 	Private Sub radGridView_CopyingCellClipboardContent(sender As Object, e As GridViewCellClipboardEventArgs)
-	 If e.Cell.Column.UniqueName = "FullName" Then
-	  Dim person = TryCast(e.Cell.Item, Person)
-	  e.Value = String.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName)
-	 End If
+	    If e.Cell.Column.UniqueName = "FullName" Then
+	        Dim person = TryCast(e.Cell.Item, Person)
+	        e.Value = String.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName)
+	    End If
 	End Sub
 {{endregion}}
 

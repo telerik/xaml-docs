@@ -31,18 +31,17 @@ This could be done in __XAML__ by applying a Style targeting RadComboBox element
 #### __XAML__
 
 {{region xaml-gridview-combobox-column-clicks_0}}
-
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding ClubID}"
-	                                SelectedValueMemberPath="ID"
-	                                EditTriggers="CellClick"
-	                                DisplayMemberPath="Name"
-	                                ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}">
-        <telerik:GridViewComboBoxColumn.EditorStyle>
-            <Style TargetType="telerik:RadComboBox">
-                <Setter Property="OpenDropDownOnFocus" Value="True"/>
-            </Style>
-        </telerik:GridViewComboBoxColumn.EditorStyle>
-    </telerik:GridViewComboBoxColumn>
+	                            SelectedValueMemberPath="ID"
+	                            EditTriggers="CellClick"
+	                            DisplayMemberPath="Name"
+	                            ItemsSource="{Binding Clubs}">
+	    <telerik:GridViewComboBoxColumn.EditorStyle>
+	        <Style TargetType="telerik:RadComboBox">
+	            <Setter Property="OpenDropDownOnFocus" Value="True"/>
+	        </Style>
+	    </telerik:GridViewComboBoxColumn.EditorStyle>
+	</telerik:GridViewComboBoxColumn>
 {{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __RadComboBoxStyle__.

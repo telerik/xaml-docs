@@ -29,14 +29,15 @@ You need to modify GridViewRow's template. [This topic]({%slug gridview-styling-
 #### __[XAML] Example 1: The Default Border When the Mouse Hovers GridViewRow__
 
 {{region xaml-how-to-override-default-gridview-styles_0}}
-
-	<Border x:Name="Background_Over" 
+	!--
+	                                <Border x:Name="Background_Over" 
 	        BorderBrush="{StaticResource ItemOuterBorder_Over}" 
 	        BorderThickness="1" 
 	        Grid.ColumnSpan="2" Grid.Column="2" 
 	        CornerRadius="1" Margin="1,1,1,2" telerik:SelectiveScrollingGrid.SelectiveScrollingClip="True" Visibility="Collapsed">
-           <Border BorderBrush="{StaticResource ItemInnerBorder_Over}" BorderThickness="1" Background="{StaticResource ItemBackground_Over}"/>
-	</Border>
+	                                    <Border BorderBrush="{StaticResource ItemInnerBorder_Over}" BorderThickness="1" Background="{StaticResource ItemBackground_Over}"/>
+	                                </Border>
+	                                -->
 {{endregion}}
 
 Now you can change all the properties you want, e.g., the __BorderBrush__ value will affect the border, the __Background__ will affect the background, etc. The next example changes the values a little to end up with this XAML:
@@ -44,14 +45,15 @@ Now you can change all the properties you want, e.g., the __BorderBrush__ value 
 #### __[XAML] Example 2: Modified The Default Border When the Mouse Hovers GridViewRow__
 
 {{region xaml-how-to-override-default-gridview-styles_1}}
-
-	<Border x:Name="Background_Over" 
+	!--
+	                                <Border x:Name="Background_Over" 
 	 BorderBrush="Blue" 
 	 BorderThickness="1" 
 	 Grid.ColumnSpan="2" Grid.Column="2" CornerRadius="1" Margin="1,1,1,2" 
 	 telerik:SelectiveScrollingGrid.SelectiveScrollingClip="True" Visibility="Collapsed">
-	     <Border BorderBrush="{StaticResource ItemInnerBorder_Over}" BorderThickness="1" Background="Gray"/>
-	</Border>
+	                                    <Border BorderBrush="{StaticResource ItemInnerBorder_Over}" BorderThickness="1" Background="Gray"/>
+	                                </Border>
+	                                -->
 {{endregion}}
 
 Finally, you need to set the __RowStyle__ property of __RadGridView__ to the style you have just modified.
@@ -102,8 +104,9 @@ Finally, find the __Property="FocusVisualStyle"__ and set its value to null:{% e
 #### __[XAML] Example 4: Setting the FocusVisualStyle Property to null__
 
 {{region xaml-how-to-override-default-gridview-styles_3}}
-
-	<Setter Property="FocusVisualStyle" Value="{x:Null}" />
+	!--
+	                <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+	                -->
 {{endregion}}
 
 Now make the style implicit (i.e., do not specify the __x:Key__ attribute) so it will apply to all __GridViewCell__ elements.

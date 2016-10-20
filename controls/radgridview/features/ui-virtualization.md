@@ -36,7 +36,7 @@ In order to disable UI __Column Virtualization__ behavior, you should configure 
 #### __XAML__
 
 {{region xaml-radgridview-features-ui-virtualization_3}}
-	<telerik:RadGridView x:Name="radGridView" EnableColumnVirtualization="False"/>
+	<telerik:RadGridView EnableColumnVirtualization="False"/>
 {{endregion}}
 
 
@@ -47,7 +47,7 @@ In order to disable UI __Row Virtualization__ behavior, you should configure __E
 #### __XAML__
 
 {{region xaml-radgridview-features-ui-virtualization_4}}
-	<telerik:RadGridView x:Name="radGridView" EnableRowVirtualization="False"/>
+	<telerik:RadGridView EnableRowVirtualization="False"/>
 {{endregion}}
 
 

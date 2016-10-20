@@ -19,14 +19,12 @@ You can define filtering either in the XAML or in the code-behind.
 #### __XAML__
 
 {{region xaml-gridview-overview-filtering_0}}
-
 	<telerik:RadGridView x:Name="radGridView">
-	   <telerik:RadGridView.FilterDescriptors>
-					<telerik:FilterDescriptor 
-						Member="Country"
-						Operator="IsEqualTo"
-						Value="Germany"/>
-	   </telerik:RadGridView.FilterDescriptors>
+	    <telerik:RadGridView.FilterDescriptors>
+	        <telerik:FilterDescriptor Member="Country"
+	                             Operator="IsEqualTo"
+	                             Value="Germany"/>
+	    </telerik:RadGridView.FilterDescriptors>
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -35,18 +33,16 @@ You can achieve the same result if you define your filtering in your code-behind
 #### __C#__
 
 {{region cs-gridview-overview-filtering_2}}
-
 	FilterDescriptor descriptor = new FilterDescriptor();
 	descriptor.Member = "Country";
 	descriptor.Operator = FilterOperator.IsEqualTo;
 	descriptor.Value = "Germany";
-	this.radGridView.FilterDescriptors.Add( descriptor );
+	this.radGridView.FilterDescriptors.Add(descriptor);
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-overview-filtering_3}}
-
 	Dim descriptor As New FilterDescriptor()
 	descriptor.Member = "Country"
 	descriptor.Operator = FilterOperator.IsEqualTo

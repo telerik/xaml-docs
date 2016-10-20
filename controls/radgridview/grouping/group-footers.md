@@ -29,16 +29,15 @@ For the purpose of this tutorial the following declaration will be used:
 #### __XAML__
 
 {{region xaml-gridview-group-footers_0}}
-
-	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
+	<telerik:RadGridView AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
-	                                    Header="ID"/>
+	                                Header="ID"/>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                                    Header="Name"/>
+	                                Header="Name"/>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
-                                        Header="Title"
-                                        UniqueName="Title" />
+	                                Header="Title"
+	                                UniqueName="Title" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
@@ -50,8 +49,7 @@ In order to enable the group footers functionality, merely set __ShowGroupFooter
 #### __XAML__
 
 {{region xaml-gridview-group-footers_1}}
-
-	<telerik:RadGridView x:Name="radGridView" ShowGroupFooters="True">
+	<telerik:RadGridView ShowGroupFooters="True" />
 {{endregion}}
 
 ![](images/RadGridView_Grouping_GroupFooters_010.png)
@@ -72,7 +70,6 @@ The same operation can be done in the code-behind.
 #### __VB.NET__
 
 {{region vb-gridview-group-footers_3}}
-
 	Private Sub EnableGroupFooters()
 	    Me.radGridView.ShowGroupFooters = True
 	End Sub
@@ -87,12 +84,11 @@ If you want your group footers to have a static content, simply configure __Grou
 #### __XAML__
 
 {{region xaml-gridview-group-footers_4}}
-
-	<UserControl.Resources>
+	<Grid.Resources>
 	    <DataTemplate x:Key="GroupFooterTemplate">
 	        <TextBlock Text="Hello"/>
 	    </DataTemplate>
-	</UserControl.Resources>
+	</Grid.Resources>
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
 	        <telerik:RadGridView.Columns>
@@ -114,8 +110,7 @@ The group footers are most commonly used to visualize calculations from aggregat
 #### __XAML__
 
 {{region xaml-gridview-group-footers_5}}
-
-	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False" ShowGroupFooters="True">
+	<telerik:RadGridView AutoGenerateColumns="False" ShowGroupFooters="True">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}" Header="ID">
 	            <telerik:GridViewDataColumn.AggregateFunctions>

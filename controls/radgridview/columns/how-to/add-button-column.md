@@ -24,23 +24,22 @@ This approach involves inheriting __GridViewColumn__ and overriding __CreateCell
 #### __C#__
 
 {{region cs-gridview-add-button-column_0}}
-
-	public class MyButtonColumn : GridViewColumn
+	public class MyButtonColumn : Telerik.Windows.Controls.GridViewColumn
 	{
-	 public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
-	 {
-	  RadButton button = cell.Content as RadButton;
-	  if (button == null)
-	  {
-	   button = new RadButton();
-	   button.Content = "Delete";
-	   button.Command = RadGridViewCommands.Delete;
-	  }
+	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
+	    {
+	        RadButton button = cell.Content as RadButton;
+	        if (button == null)
+	        {
+	            button = new RadButton();
+	            button.Content = "Delete";
+	            button.Command = RadGridViewCommands.Delete;
+	        }
 	
-	  button.CommandParameter = dataItem;
+	        button.CommandParameter = dataItem;
 	
-	  return button;
-	 }
+	        return button;
+	    }
 	}
 {{endregion}}
 
@@ -49,9 +48,8 @@ Now we need to add this custom column to RadGridView.Columns. We can do it eithe
 #### __XAML__
 
 {{region xaml-gridview-add-button-column_1}}
-
 	<telerik:RadGridView.Columns>
-	    ...
+	    <!-- ... -->
 	    <my:MyButtonColumn Header="Delete" />
 	</telerik:RadGridView.Columns>
 {{endregion}}
@@ -61,17 +59,12 @@ or in code (subscribing for RadGridView.DataLoaded event):
 #### __C#__
 
 {{region cs-gridview-add-button-column_2}}
-
 	private void clubsGrid_DataLoaded(object sender, EventArgs e)
 	{
-	 if ( clubsGrid.Columns.Last<GridViewColumn>() is MyButtonColumn )
-	 {
-	  return;
-	 }
-	 this.clubsGrid.Columns.Add(new MyButtonColumn() 
-	 { 
-	  Header = "Delete"
-	 });
+	    this.clubsGrid.Columns.Add(new MyButtonColumn()
+	    {
+	        Header = "Delete"
+	    });
 	}
 {{endregion}}
 
@@ -83,15 +76,14 @@ With this approach we are re-defining the template of the cells for that column.
 #### __XAML__
 
 {{region xaml-gridview-add-button-column_3}}
-
 	<telerik:RadGridView.Columns>
-	    ...
+	    <!-- ... -->
 	    <telerik:GridViewColumn Header="Delete" >
 	        <telerik:GridViewColumn.CellTemplate>
 	            <DataTemplate>
 	                <telerik:RadButton Content="Delete" 
-	                                   Command="telerik:RadGridViewCommands.Delete"
-	                                   CommandParameter="{Binding}" />
+	                        Command="telerik:RadGridViewCommands.Delete"
+	                        CommandParameter="{Binding}" />
 	            </DataTemplate>
 	        </telerik:GridViewColumn.CellTemplate>
 	    </telerik:GridViewColumn>

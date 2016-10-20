@@ -17,10 +17,9 @@ You declare a custom header for a column (__Example 1__):
 #### __[XAML] Example 1: Initial declaration of a custom header__
 
 {{region xaml-gridview-troubleshooting-styling-custom-header_0}}
-
 	<telerik:GridViewDataColumn.Header>
-		<TextBlock Text="My Custom Header"
-				   TextWrapping="Wrap" />
+	    <TextBlock Text="My Custom Header"
+	TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
 {{endregion}}
 
@@ -46,11 +45,11 @@ You can bind the __Foreground__ property of the custom header(in this example th
 {% if site.site_name == 'WPF' %}
 
 {{region xaml-gridview-troubleshooting-styling-custom-header_1}}
-
 	<telerik:GridViewDataColumn.Header>
-		<TextBlock Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType={x:Type ContentControl}}}"
-				   Text="My Custom Header"
-				   TextWrapping="Wrap" />
+	    <TextBlock Foreground="{Binding Foreground,
+	                  RelativeSource={RelativeSource AncestorType={x:Type ContentControl}}}"
+	Text="My Custom Header"
+	TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
 {{endregion}}
 

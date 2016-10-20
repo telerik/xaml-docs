@@ -19,25 +19,23 @@ We will consider two scenarios - getting the data from the selected row and gett
 #### __C#__
 
 {{region cs-gridview-how-to-get-data-from-row_0}}
-
-	private void Button2_Click(object sender, RoutedEventArgs e)
+	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
-	 Club club = this.clubsGrid.SelectedItem as Club;
-	 string message = string.Format("Name: {0} \n Established: {1} \n Capacity: {2}", club.Name, 
-	                      club.Established, 
-	                      club.StadiumCapacity);
-	 MessageBox.Show(message);
+	    Club club = this.clubsGrid.SelectedItem as Club;
+	    string message = string.Format("Name: {0} \n Established: {1} \n Capacity: {2}", club.Name,
+	                         club.Established,
+	                         club.StadiumCapacity);
+	    MessageBox.Show(message);
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-how-to-get-data-from-row_1}}
-
 	Private Sub Button2_Click(sender As Object, e As RoutedEventArgs)
-	 Dim club As Club = TryCast(Me.clubsGrid.SelectedItem, Club)
-	 Dim message As String = String.Format("Name: {0} " & vbLf & " Established: {1} " & vbLf & " Capacity: {2}", club.Name, club.Established, club.StadiumCapacity)
-	 MessageBox.Show(message)
+	    Dim club As Club = TryCast(Me.clubsGrid.SelectedItem, Club)
+	    Dim message As String = String.Format("Name: {0} " & vbLf & " Established: {1} " & vbLf & " Capacity: {2}", club.Name, club.Established, club.StadiumCapacity)
+	    MessageBox.Show(message)
 	End Sub
 {{endregion}}
 
@@ -46,27 +44,25 @@ We will consider two scenarios - getting the data from the selected row and gett
 #### __C#__
 
 {{region cs-gridview-how-to-get-data-from-row_2}}
-
 	void clubsGrid_RowActivated(object sender, Telerik.Windows.Controls.GridView.RowEventArgs e)
 	{
-	 var row = e.Row as GridViewRow;
-	 Club club = row.Item as Club;
-	 string message = string.Format("Name: {0} \n Established: {1} \n Capacity: {2}", club.Name,
-	                      club.Established,
-	                      club.StadiumCapacity);
-	 MessageBox.Show(message);
+	    var row = e.Row as GridViewRow;
+	    Club club = row.Item as Club;
+	    string message = string.Format("Name: {0} \n Established: {1} \n Capacity: {2}", club.Name,
+	                         club.Established,
+	                         club.StadiumCapacity);
+	    MessageBox.Show(message);
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-how-to-get-data-from-row_3}}
-
 	Private Sub clubsGrid_RowActivated(sender As Object, e As Telerik.Windows.Controls.GridView.RowEventArgs)
-	 Dim row = TryCast(e.Row, GridViewRow)
-	 Dim club As Club = TryCast(row.Item, Club)
-	 Dim message As String = String.Format("Name: {0} " & vbLf & " Established: {1} " & vbLf & " Capacity: {2}", club.Name, club.Established, club.StadiumCapacity)
-	 MessageBox.Show(message)
+	    Dim row = TryCast(e.Row, GridViewRow)
+	    Dim club As Club = TryCast(row.Item, Club)
+	    Dim message As String = String.Format("Name: {0} " & vbLf & " Established: {1} " & vbLf & " Capacity: {2}", club.Name, club.Established, club.StadiumCapacity)
+	    MessageBox.Show(message)
 	End Sub
 {{endregion}}
 

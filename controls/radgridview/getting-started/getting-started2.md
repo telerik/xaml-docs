@@ -45,9 +45,7 @@ You can add __RadGridView__ manually by writing the XAML code in __Example 1__. 
 
 >In order to use __RadGridView__ in XAML, you have to add the following namespace declaration:
 >#### __[XAML] Example 2: Declaring Telerik Namespace__
->{{region xaml-telerik-schemas}}
->    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
->{{endregion}}
+>{{region xaml-telerik-schemas}}{{endregion}}
 
 
 
@@ -65,75 +63,75 @@ In order to populate the __RadGridView__ control with data, you should create a 
 
 #### __[C#] Example 3: Simple Business Class__
 
-{{region cs-gridview-getting-started2_0}}         
-    public class Club : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private string name;
-        private DateTime established;
-        private int stadiumCapacity;
-
-        public string Name
-        {
-            get { return this.name; }
-            set
-            {
-                if (value != this.name)
-                {
-                    this.name = value;
-                    this.OnPropertyChanged("Name");
-                }
-            }
-        }
-
-        public DateTime Established
-        {
-            get { return this.established; }
-            set
-            {
-                if (value != this.established)
-                {
-                    this.established = value;
-                    this.OnPropertyChanged("Established");
-                }
-            }
-        }
-
-        public int StadiumCapacity
-        {
-            get { return this.stadiumCapacity; }
-            set
-            {
-                if (value != this.stadiumCapacity)
-                {
-                    this.stadiumCapacity = value;
-                    this.OnPropertyChanged("StadiumCapacity");
-                }
-            }
-        }
-
-        public Club(string name, DateTime established, int stadiumCapacity)
-        {
-            this.name = name;
-            this.established = established;
-            this.stadiumCapacity = stadiumCapacity;
-        }
-        
-        protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
-        {
-            PropertyChangedEventHandler handler = this.PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, args);
-            }
-        }
-
-        private void OnPropertyChanged(string propertyName)
-        {
-            this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-        }    
-    }
+{{region cs-gridview-getting-started2_0}}
+	public class Club : INotifyPropertyChanged
+	{
+	    public event PropertyChangedEventHandler PropertyChanged;
+	
+	    private string name;
+	    private DateTime established;
+	    private int stadiumCapacity;
+	
+	    public string Name
+	    {
+	        get { return this.name; }
+	        set
+	        {
+	            if (value != this.name)
+	            {
+	                this.name = value;
+	                this.OnPropertyChanged("Name");
+	            }
+	        }
+	    }
+	
+	    public DateTime Established
+	    {
+	        get { return this.established; }
+	        set
+	        {
+	            if (value != this.established)
+	            {
+	                this.established = value;
+	                this.OnPropertyChanged("Established");
+	            }
+	        }
+	    }
+	
+	    public int StadiumCapacity
+	    {
+	        get { return this.stadiumCapacity; }
+	        set
+	        {
+	            if (value != this.stadiumCapacity)
+	            {
+	                this.stadiumCapacity = value;
+	                this.OnPropertyChanged("StadiumCapacity");
+	            }
+	        }
+	    }
+	    
+	    public Club(string name, DateTime established, int stadiumCapacity)
+	    {
+	        this.name = name;
+	        this.established = established;
+	        this.stadiumCapacity = stadiumCapacity;
+	    }
+	
+	    protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
+	    {
+	        PropertyChangedEventHandler handler = this.PropertyChanged;
+	        if (handler != null)
+	        {
+	            handler(this, args);
+	        }
+	    }
+	
+	    private void OnPropertyChanged(string propertyName)
+	    {
+	        this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
+	    }
+	}
 {{endregion}}
 
 
@@ -141,66 +139,67 @@ In order to populate the __RadGridView__ control with data, you should create a 
 
 {{region vb-gridview-getting-started2_0}}
 	Public Class Club
-		Implements INotifyPropertyChanged
-		Public Event PropertyChanged As PropertyChangedEventHandler
+	    Implements INotifyPropertyChanged
+	    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 	
-		Private m_name As String
-		Private m_established As DateTime
-		Private m_stadiumCapacity As Integer
+	    Private m_name As String
+	    Private m_established As DateTime
+	    Private m_stadiumCapacity As Integer
 	
-		Public Property Name() As String
-			Get
-				Return Me.m_name
-			End Get
-			Set
-				If value <> Me.m_name Then
-					Me.m_name = value
-					Me.OnPropertyChanged("Name")
-				End If
-			End Set
-		End Property
+	    Public Property Name() As String
+	        Get
+	            Return Me.m_name
+	        End Get
+	        Set(value As String)
+	            If value <> Me.m_name Then
+	                Me.m_name = value
+	                Me.OnPropertyChanged("Name")
+	            End If
+	        End Set
+	    End Property
 	
-		Public Property Established() As DateTime
-			Get
-				Return Me.m_established
-			End Get
-			Set
-				If value <> Me.m_established Then
-					Me.m_established = value
-					Me.OnPropertyChanged("Established")
-				End If
-			End Set
-		End Property
+	    Public Property Established() As DateTime
+	        Get
+	            Return Me.m_established
+	        End Get
+	        Set(value As DateTime)
+	            If value <> Me.m_established Then
+	                Me.m_established = value
+	                Me.OnPropertyChanged("Established")
+	            End If
+	        End Set
+	    End Property
 	
-		Public Property StadiumCapacity() As Integer
-			Get
-				Return Me.m_stadiumCapacity
-			End Get
-			Set
-				If value <> Me.m_stadiumCapacity Then
-					Me.m_stadiumCapacity = value
-					Me.OnPropertyChanged("StadiumCapacity")
-				End If
-			End Set
-		End Property
+	    Public Property StadiumCapacity() As Integer
+	        Get
+	            Return Me.m_stadiumCapacity
+	        End Get
+	        Set(value As Integer)
+	            If value <> Me.m_stadiumCapacity Then
+	                Me.m_stadiumCapacity = value
+	                Me.OnPropertyChanged("StadiumCapacity")
+	            End If
+	        End Set
+	    End Property
 	
-		Public Sub New()
-		End Sub
+	    Public Sub New()
+	    End Sub
 	
-		Public Sub New(name As String, established As DateTime, stadiumCapacity As Integer)
-			Me.m_name = name
-			Me.m_established = established
-			Me.m_stadiumCapacity = stadiumCapacity
-		End Sub
+	    Public Sub New(name As String, established As DateTime, stadiumCapacity As Integer)
+	        Me.m_name = name
+	        Me.m_established = established
+	        Me.m_stadiumCapacity = stadiumCapacity
+	    End Sub
 	
-		Protected Overridable Sub OnPropertyChanged(args As PropertyChangedEventArgs)
-			Dim handler As PropertyChangedEventHandler = Me.PropertyChanged
-			RaiseEvent handler(Me, args)
-		End Sub
-	
-		Private Sub OnPropertyChanged(propertyName As String)
-			Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
-		End Sub
+	    Protected Overridable Sub OnPropertyChanged(ByVal args As PropertyChangedEventArgs)
+	        Dim handler As PropertyChangedEventHandler = Me.PropertyChangedEvent
+	        If handler IsNot Nothing Then
+	            handler(Me, args)
+	        End If
+	    End Sub
+	    Private Sub OnPropertyChanged(ByVal propertyName As String)
+	        Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
+	    End Sub
 	End Class
 {{endregion}}
 
@@ -213,40 +212,40 @@ Next, you should create the view model containing a collection of Club objects.
 #### __[C#] Example 4: View Model Containing ObservableCollection of Sample Data__
 
 {{region cs-gridview-getting-started2_1}}
-    public class MyViewModel : ViewModelBase
-    {
-        private ObservableCollection<Club> clubs;
-
-        public ObservableCollection<Club> Clubs
-        {
-            get
-            {
-                if (this.clubs == null)
-                {
-                    this.clubs = this.CreateClubs();
-                }
-
-                return this.clubs;
-            }
-        }
-
-        private ObservableCollection<Club> CreateClubs()
-        {
-            ObservableCollection<Club> clubs = new ObservableCollection<Club>();
-            Club club;
-
-            club = new Club("Liverpool", new DateTime(1892, 1, 1), 45362);
-            clubs.Add(club);
-
-            club = new Club("Manchester Utd.", new DateTime(1878, 1, 1), 76212);
-            clubs.Add(club);
-
-            club = new Club("Chelsea", new DateTime(1905, 1, 1), 42055);
-            clubs.Add(club);
-
-            return clubs;
-        }
-    }
+	public class MyViewModel : ViewModelBase
+	{
+	    private ObservableCollection<Club> clubs;
+	
+	    public ObservableCollection<Club> Clubs
+	    {
+	        get
+	        {
+	            if (this.clubs == null)
+	            {
+	                this.clubs = this.CreateClubs();
+	            }
+	
+	            return this.clubs;
+	        }
+	    }
+	
+	    private ObservableCollection<Club> CreateClubs()
+	    {
+	        ObservableCollection<Club> clubs = new ObservableCollection<Club>();
+	        Club club;
+	
+	        club = new Club("Liverpool", new DateTime(1892, 1, 1), 45362);
+	        clubs.Add(club);
+	
+	        club = new Club("Manchester Utd.", new DateTime(1878, 1, 1), 76212);
+	        clubs.Add(club);
+	
+	        club = new Club("Chelsea", new DateTime(1905, 1, 1), 42055);
+	        clubs.Add(club);
+	
+	        return clubs;
+	    }
+	}
 {{endregion}}
 
 
@@ -254,34 +253,34 @@ Next, you should create the view model containing a collection of Club objects.
 
 {{region vb-gridview-getting-started2_1}}
 	Public Class MyViewModel
-		Inherits ViewModelBase
-		Private m_clubs As ObservableCollection(Of Club)
+	    Inherits ViewModelBase
+	    Private m_clubs As ObservableCollection(Of Club)
 	
-		Public ReadOnly Property Clubs() As ObservableCollection(Of Club)
-			Get
-				If Me.m_clubs Is Nothing Then
-					Me.m_clubs = Me.CreateClubs()
-				End If
+	    Public ReadOnly Property Clubs() As ObservableCollection(Of Club)
+	        Get
+	            If Me.m_clubs Is Nothing Then
+	                Me.m_clubs = Me.CreateClubs()
+	            End If
 	
-				Return Me.m_clubs
-			End Get
-		End Property
+	            Return Me.m_clubs
+	        End Get
+	    End Property
 	
-		Private Function CreateClubs() As ObservableCollection(Of Club)
-			Dim clubs As New ObservableCollection(Of Club)()
-			Dim club As Club
+	    Private Function CreateClubs() As ObservableCollection(Of Club)
+	        Dim clubs As New ObservableCollection(Of Club)()
+	        Dim club As Club
 	
-			club = New Club("Liverpool", New DateTime(1892, 1, 1), 45362)
-			clubs.Add(club)
+	        club = New Club("Liverpool", New DateTime(1892, 1, 1), 45362)
+	        clubs.Add(club)
 	
-			club = New Club("Manchester Utd.", New DateTime(1878, 1, 1), 76212)
-			clubs.Add(club)
+	        club = New Club("Manchester Utd.", New DateTime(1878, 1, 1), 76212)
+	        clubs.Add(club)
 	
-			club = New Club("Chelsea", New DateTime(1905, 1, 1), 42055)
-			clubs.Add(club)
+	        club = New Club("Chelsea", New DateTime(1905, 1, 1), 42055)
+	        clubs.Add(club)
 	
-			Return clubs
-		End Function
+	        Return clubs
+	    End Function
 	End Class
 {{endregion}}
 
@@ -297,10 +296,10 @@ __Example 5__ demonstrates how you can bind the ItemsSource collection in XAML. 
 #### __[XAML] Example 5: Bind RadGridView__
 
 {{region xaml-gridview-getting-started2_1}}
-    <Grid.Resources>
-        <local:MyViewModel x:Key="MyViewModel" />
-    </Grid.Resources>
-    <telerik:RadGridView x:Name="gridView" DataContext="{StaticResource MyViewModel}" ItemsSource="{Binding Clubs}"/>
+	<Grid.Resources>
+	    <local:MyViewModel x:Key="MyViewModel" />
+	</Grid.Resources>
+	<telerik:RadGridView x:Name="gridView" DataContext="{StaticResource MyViewModel}" ItemsSource="{Binding Clubs}"/>
 {{endregion}}
 
 
@@ -338,14 +337,14 @@ __Example 7__ demonstrates how you can manually prevent the automatic generation
 #### __[XAML] Example 7: Manually Defined Columns__
 
 {{region xaml-gridview-getting-started2_2}}
-    <telerik:RadGridView x:Name="manualGridView" DataContext="{StaticResource MyViewModel}" 
-                         ItemsSource="{Binding Clubs}" 
-                         AutoGenerateColumns="False" >
-        <telerik:RadGridView.Columns>
-            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Club Name"/>
-            <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}" Header="Established"/>
-        </telerik:RadGridView.Columns>
-    </telerik:RadGridView>
+	<telerik:RadGridView x:Name="manualGridView" DataContext="{StaticResource MyViewModel}" 
+	                     ItemsSource="{Binding Clubs}" 
+	                     AutoGenerateColumns="False" >
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Club Name"/>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}" Header="Established"/>
+	    </telerik:RadGridView.Columns>
+	</telerik:RadGridView>
 {{endregion}}
 
 

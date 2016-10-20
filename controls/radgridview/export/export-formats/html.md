@@ -35,23 +35,22 @@ For example:
 #### __[C#]Example 1: Set the properties of the VisualParameters:__
 
 {{region cs-gridview-export-async_6}}
-
-	  private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
-        {
-            if (e.VisualParameters is GridViewHtmlVisualExportParameters)
-            {
-                var param = e.VisualParameters as GridViewHtmlVisualExportParameters;
-                param.Background = Colors.AliceBlue;
-                param.FontFamily = new FontFamily("Verdana");
-                param.FontSize = 15;
-                param.FontWeight = FontWeights.Bold;
-                param.Foreground = Colors.Black;
-                param.Height = 30;
-                param.TextAlignment = TextAlignment.Center;
-                param.VerticalAlignment = VerticalAlignment.Bottom;
-                param.Width = 200;
-            }
-        }
+	private void clubsGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
+	{
+	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
+	    {
+	        var param = e.VisualParameters as GridViewHtmlVisualExportParameters;
+	        param.Background = Colors.Red;
+	        param.FontFamily = new FontFamily("Verdana");
+	        param.FontSize = 30;
+	        param.FontWeight = FontWeights.Bold;
+	        param.Foreground = Colors.Green;
+	        param.Height = 50;
+	        param.TextAlignment = TextAlignment.Center;
+	        param.VerticalAlignment = VerticalAlignment.Bottom;
+	        param.Width = 500;
+	    }
+	}
 {{endregion}}
 
 You can read more about the export events [here]({%slug gridview-export-events%}).

@@ -17,9 +17,8 @@ __Bound columns__ represent the data from __RadGridView's__ ItemsSource. They su
 #### __XAML__
 
 {{region xaml-gridview-columns-bound-unbound-columns_0}}
-
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
-	                            Header="ID (Bound)" />
+	                Header="ID (Bound)" />
 {{endregion}}
 
 ![](images/RadGridView_BoundUnboundColumns_1.png)
@@ -31,19 +30,18 @@ Here is an example for unbound column:
 #### __XAML__
 
 {{region xaml-gridview-columns-bound-unbound-columns_1}}
-
 	<telerik:GridViewColumn Header="Name">
-		<telerik:GridViewColumn.CellTemplate>
+	    <telerik:GridViewColumn.CellTemplate>
 	        <DataTemplate>
 	            <StackPanel Orientation="Horizontal">
 	                <Image Stretch="None"
-	                       Source="../../Images/User.png"
-	                       Margin="0,0,5,0" />
+	       Source="../../Images/User.png"
+	       Margin="0,0,5,0" />
 	                <TextBlock Text="{Binding Name}"
-	                           VerticalAlignment="Center" />
+	           VerticalAlignment="Center" />
 	            </StackPanel>
 	        </DataTemplate>
-		</telerik:GridViewColumn.CellTemplate>
+	    </telerik:GridViewColumn.CellTemplate>
 	</telerik:GridViewColumn>
 {{endregion}}
 
@@ -58,19 +56,18 @@ Here is the above sample of an unbound column transformed into a template column
 #### __XAML__
 
 {{region xaml-gridview-columns-bound-unbound-columns_2}}
-
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name (Unbound)">
-		<telerik:GridViewDataColumn.CellTemplate>
+	    <telerik:GridViewDataColumn.CellTemplate>
 	        <DataTemplate>
 	            <StackPanel Orientation="Horizontal">
 	                <Image Stretch="None"
-	                       Source="../../Images/User.png"
-	                       Margin="0,0,5,0" />
+	       Source="../../Images/User.png"
+	       Margin="0,0,5,0" />
 	                <TextBlock Text="{Binding Name}"
-	                           VerticalAlignment="Center" />
+	           VerticalAlignment="Center" />
 	            </StackPanel>
 	        </DataTemplate>
-		</telerik:GridViewDataColumn.CellTemplate>
+	    </telerik:GridViewDataColumn.CellTemplate>
 	</telerik:GridViewDataColumn>
 {{endregion}}
 

@@ -15,12 +15,11 @@ __GridViewCheckBoxColumn__ derives from __GridViewBoundColumnBase__ class and it
 #### __[XAML] Example 1: Declare a column of type GridViewCheckBoxColumn.__
 
 {{region xaml-gridview-checkbox-column_0}}
-
 	<telerik:RadGridView x:Name="radGridView"
-	                        AutoGenerateColumns="False">
-	   <telerik:RadGridView.Columns>
-	       <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsActive}" />
-	   </telerik:RadGridView.Columns>
+	                AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsActive}" />
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 

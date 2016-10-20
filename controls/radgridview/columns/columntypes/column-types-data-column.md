@@ -17,11 +17,10 @@ __GridViewDataColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview
 #### __[XAML] Example 1: Define GridViewDataColumn in XAML.__
 
 {{region xaml-radgridview-columns-column-types-data-column_0}}
-
 	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
+	             AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding={Binding Id} />
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
@@ -29,19 +28,17 @@ __GridViewDataColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview
 #### __[C#] Example 2: Define GridViewDataColumn in code__
 
 {{region cs-radgridview-columns-column-types-data-column_1}}
-
 	GridViewDataColumn column = new GridViewDataColumn();
-    column.DataMemberBinding = new Binding("Id");
-    this.radGridView.Columns.Add(column);
+	column.DataMemberBinding = new Binding("Id");
+	this.radGridView.Columns.Add(column);
 {{endregion}}
 
 #### __[VB.NET] Example 2: Define GridViewDataColumn in code__
 
 {{region vb-radgridview-columns-column-types-data-column_2}}
-
 	Dim column As New GridViewDataColumn()
-    column.DataMemberBinding = new Binding("Id")
-    Me.radGridView.Columns.Add(column)
+	column.DataMemberBinding = new Binding("Id")
+	Me.radGridView.Columns.Add(column)
 {{endregion}}
 
 >importantFor performance reasons, you should work with __UniqueName__ of GridViewBoundColumnBase only when you have also configured __DataMemberBinding__ for it. Otherwise, please define __GridViewColumn__ and use __Header__ property instead. 

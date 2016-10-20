@@ -20,7 +20,6 @@ The purpose of this tutorial is to show you how to populate __RadGridView__ with
 #### __XAML__
 
 {{region xaml-gridview-domaindatasource-support_0}}
-
 	<telerik:RadGridView x:Name="radGridView" Margin="8"/>
 {{endregion}}
 
@@ -31,12 +30,11 @@ The gridview will be bound to a __DomainDataSource__. When the control is loaded
 #### __XAML__
 
 {{region xaml-gridview-domaindatasource-support_1}}
-
-	<ria:DomainDataSource x:Key="DomainDataSource" AutoLoad="True" QueryName="GetCustomers">
-	    <ria:DomainDataSource.DomainContext>
-	        <riaContext:SampleRiaContext/>
-	    </ria:DomainDataSource.DomainContext>
-	</ria:DomainDataSource>
+	  <telerik:DomainDataSource x:Key="DomainDataSource" AutoLoad="True" QueryName="GetCustomers">
+	    <telerik:DomainDataSource.DomainContext>
+	      <local:SampleRiaContext/>
+	    </telerik:DomainDataSource.DomainContext>
+	  </telerik:DomainDataSource>
 {{endregion}}
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
@@ -44,9 +42,8 @@ The gridview will be bound to a __DomainDataSource__. When the control is loaded
 #### __XAML__
 
 {{region xaml-gridview-domaindatasource-support_2}}
-
-	<telerik:RadGridView x:Name="radGridView" Margin="8"
-	    ItemsSource="{Binding Source={StaticResource DomainDataSource}, Path=Data}"/>
+	<telerik:RadGridView Margin="8"
+	sSource="{Binding Source={StaticResource DomainDataSource}, Path=Data}"/>
 {{endregion}}
 
 Run your demo, the result can be seen on the next picture: 

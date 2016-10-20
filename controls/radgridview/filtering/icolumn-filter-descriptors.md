@@ -29,31 +29,29 @@ Here is an example of filtering the __RadGridView__ via a __IColumnFilterDescrip
 #### __C#__
 
 {{region cs-radgridview-filtering-icolumn-filter-descriptors_0}}
-
-    GridViewColumn cityColumn = this.playersGrid.Columns["City"];
-    // Getting it from the property will create it and associate it with its column automatically.
-    IColumnFilterDescriptor columnDescriptor = cityColumn.ColumnFilterDescriptor;
-    columnDescriptor.SuspendNotifications();
-    columnDescriptor.DistinctFilter.AddDistinctValue("Berlin");
-    columnDescriptor.DistinctFilter.AddDistinctValue("Aachen");
-    columnDescriptor.ResumeNotifications();
-    // There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-    // When the column filter is activated/deactivated it is automatically added/removed to this collection.
+	GridViewColumn cityColumn = this.playersGrid.Columns["City"];
+	// Getting it from the property will create it and associate it with its column automatically.
+	IColumnFilterDescriptor columnDescriptor = cityColumn.ColumnFilterDescriptor;
+	columnDescriptor.SuspendNotifications();
+	columnDescriptor.DistinctFilter.AddDistinctValue("Berlin");
+	columnDescriptor.DistinctFilter.AddDistinctValue("Aachen");
+	columnDescriptor.ResumeNotifications();
+	// There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	// When the column filter is activated/deactivated it is automatically added/removed to this collection.
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-radgridview-filtering-icolumn-filter-descriptors_1}}
-
-    Dim cityColumn As GridViewColumn = Me.playersGrid.Columns("City")
-    ' Getting it from the property will create it and associate it with its column automatically.'
-    Dim columnDescriptor As IColumnFilterDescriptor = cityColumn.ColumnFilterDescriptor
-    columnDescriptor.SuspendNotifications()
-    columnDescriptor.DistinctFilter.AddDistinctValue("Berlin")
-    columnDescriptor.DistinctFilter.AddDistinctValue("Aachen")
-    columnDescriptor.ResumeNotifications()
-    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors'
-    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.'
+	Dim cityColumn As GridViewColumn = Me.playersGrid.Columns("City")
+	' Getting it from the property will create it and associate it with its column automatically.
+	Dim columnDescriptor As IColumnFilterDescriptor = cityColumn.ColumnFilterDescriptor
+	columnDescriptor.SuspendNotifications()
+	columnDescriptor.DistinctFilter.AddDistinctValue("Berlin")
+	columnDescriptor.DistinctFilter.AddDistinctValue("Aachen")
+	columnDescriptor.ResumeNotifications()
+	' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	' When the column filter is activated/deactivated it is automatically added/removed to this collection.
 {{endregion}}
 
 Here is the same example done by using the FieldFilter property.
@@ -61,37 +59,35 @@ Here is the same example done by using the FieldFilter property.
 #### __C#__
 
 {{region cs-radgridview-filtering-icolumn-filter-descriptors_2}}
-
-    GridViewColumn cityColumn = this.playersGrid.Columns["City"];
-    // Getting it from the property will create it and associate it with its column automatically.
-    IColumnFilterDescriptor columnDescriptor = cityColumn.ColumnFilterDescriptor;
-    columnDescriptor.SuspendNotifications();
-    columnDescriptor.FieldFilter.Filter1.Operator = FilterOperator.IsEqualTo;
-    columnDescriptor.FieldFilter.Filter1.Value = "Berlin";
-    columnDescriptor.FieldFilter.LogicalOperator = FilterCompositionLogicalOperator.Or;
-    columnDescriptor.FieldFilter.Filter2.Operator = FilterOperator.IsEqualTo;
-    columnDescriptor.FieldFilter.Filter2.Value = "Aachen";
-    columnDescriptor.ResumeNotifications();
-    // There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-    // When the column filter is activated/deactivated it is automatically added/removed to this collection.
+	GridViewColumn cityColumn2 = this.playersGrid.Columns["City"];
+	// Getting it from the property will create it and associate it with its column automatically.
+	IColumnFilterDescriptor columnDescriptor2 = cityColumn2.ColumnFilterDescriptor;
+	columnDescriptor2.SuspendNotifications();
+	columnDescriptor2.FieldFilter.Filter1.Operator = FilterOperator.IsEqualTo;
+	columnDescriptor2.FieldFilter.Filter1.Value = "Berlin";
+	columnDescriptor2.FieldFilter.LogicalOperator = FilterCompositionLogicalOperator.Or;
+	columnDescriptor2.FieldFilter.Filter2.Operator = FilterOperator.IsEqualTo;
+	columnDescriptor2.FieldFilter.Filter2.Value = "Aachen";
+	columnDescriptor2.ResumeNotifications();
+	// There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	// When the column filter is activated/deactivated it is automatically added/removed to this collection.
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-radgridview-filtering-icolumn-filter-descriptors_3}}
-
-    Dim cityColumn As GridViewColumn = Me.playersGrid.Columns("City")
-    ' Getting it from the property will create it and associate it with its column automatically.'
-    Dim columnDescriptor As IColumnFilterDescriptor = cityColumn.ColumnFilterDescriptor
-    columnDescriptor.SuspendNotifications()
-    columnDescriptor.FieldFilter.Filter1.[Operator] = FilterOperator.IsEqualTo
-    columnDescriptor.FieldFilter.Filter1.Value = "Berlin"
-    columnDescriptor.FieldFilter.LogicalOperator = FilterCompositionLogicalOperator.[Or]
-    columnDescriptor.FieldFilter.Filter2.[Operator] = FilterOperator.IsEqualTo
-    columnDescriptor.FieldFilter.Filter2.Value = "Aachen"
-    columnDescriptor.ResumeNotifications()
-    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors'
-    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.'
+	Dim cityColumn2 As GridViewColumn = Me.playersGrid.Columns("City")
+	' Getting it from the property will create it and associate it with its column automatically.
+	Dim columnDescriptor2 As IColumnFilterDescriptor = cityColumn2.ColumnFilterDescriptor
+	columnDescriptor2.SuspendNotifications()
+	columnDescriptor2.FieldFilter.Filter1.[Operator] = FilterOperator.IsEqualTo
+	columnDescriptor2.FieldFilter.Filter1.Value = "Berlin"
+	columnDescriptor2.FieldFilter.LogicalOperator = FilterCompositionLogicalOperator.[Or]
+	columnDescriptor2.FieldFilter.Filter2.[Operator] = FilterOperator.IsEqualTo
+	columnDescriptor2.FieldFilter.Filter2.Value = "Aachen"
+	columnDescriptor2.ResumeNotifications()
+	' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	' When the column filter is activated/deactivated it is automatically added/removed to this collection.
 {{endregion}}
 
 The data is filtered by the "City" column and only these data items are displayed, which have their City equal to Berlin or Aachen.
@@ -115,43 +111,42 @@ Such a complex filtering expression might include filters for multiple fields, l
 #### __C#__
 
 {{region cs-radgridview-filtering-icolumn-filter-descriptors_4}}
-    GridViewColumn cityColumn = this.playersGrid.Columns["City"];
-    // Getting it from the property will create it and associate it with its column automatically
-    IColumnFilterDescriptor cityDescriptor = cityColumn.ColumnFilterDescriptor;
-    cityDescriptor.SuspendNotifications();
-    cityDescriptor.DistinctFilter.AddDistinctValue("Berlin");
-    cityDescriptor.DistinctFilter.AddDistinctValue("Aachen");
-    cityDescriptor.ResumeNotifications();
-
-    GridViewColumn countryColumn = this.playersGrid.Columns["Country"];
-    IColumnFilterDescriptor columnDescriptor = countryColumn.ColumnFilterDescriptor;
-    columnDescriptor.SuspendNotifications();
-    columnDescriptor.DistinctFilter.AddDistinctValue("Germany");
-    columnDescriptor.ResumeNotifications();  
-
-    // There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-    // When the column filter is activated/deactivated it is automatically added/removed to this collection.
+	GridViewColumn cityColumn3 = this.playersGrid.Columns["City"];
+	// Getting it from the property will create it and associate it with its column automatically
+	IColumnFilterDescriptor cityDescriptor = cityColumn3.ColumnFilterDescriptor;
+	cityDescriptor.SuspendNotifications();
+	cityDescriptor.DistinctFilter.AddDistinctValue("Berlin");
+	cityDescriptor.DistinctFilter.AddDistinctValue("Aachen");
+	cityDescriptor.ResumeNotifications();
+	
+	GridViewColumn countryColumn = this.playersGrid.Columns["Country"];
+	IColumnFilterDescriptor columnDescriptor3 = countryColumn.ColumnFilterDescriptor;
+	columnDescriptor3.SuspendNotifications();
+	columnDescriptor3.DistinctFilter.AddDistinctValue("Germany");
+	columnDescriptor3.ResumeNotifications();
+	
+	// There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	// When the column filter is activated/deactivated it is automatically added/removed to this collection.
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-radgridview-filtering-icolumn-filter-descriptors_5}}
-
-    Dim cityColumn As GridViewColumn = Me.playersGrid.Columns("City")
-    ' Getting it from the property will create it and associate it with its column automatically'
-    Dim cityDescriptor As IColumnFilterDescriptor = cityColumn.ColumnFilterDescriptor
-    cityDescriptor.SuspendNotifications()
-    cityDescriptor.DistinctFilter.AddDistinctValue("Berlin")
-    cityDescriptor.DistinctFilter.AddDistinctValue("Aachen")
-    cityDescriptor.ResumeNotifications()
-
-    Dim countryColumn As GridViewColumn = Me.playersGrid.Columns("Country")
-    Dim columnDescriptor As IColumnFilterDescriptor = countryColumn.ColumnFilterDescriptor
-    columnDescriptor.SuspendNotifications()
-    columnDescriptor.DistinctFilter.AddDistinctValue("Germany")
-    columnDescriptor.ResumeNotifications()
-    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors'
-    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.'
+	Dim cityColumn3 As GridViewColumn = Me.playersGrid.Columns("City")
+	' Getting it from the property will create it and associate it with its column automatically
+	Dim cityDescriptor As IColumnFilterDescriptor = cityColumn3.ColumnFilterDescriptor
+	cityDescriptor.SuspendNotifications()
+	cityDescriptor.DistinctFilter.AddDistinctValue("Berlin")
+	cityDescriptor.DistinctFilter.AddDistinctValue("Aachen")
+	cityDescriptor.ResumeNotifications()
+	
+	Dim countryColumn As GridViewColumn = Me.playersGrid.Columns("Country")
+	Dim columnDescriptor3 As IColumnFilterDescriptor = countryColumn.ColumnFilterDescriptor
+	columnDescriptor3.SuspendNotifications()
+	columnDescriptor3.DistinctFilter.AddDistinctValue("Germany")
+	columnDescriptor3.ResumeNotifications()
+	' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	' When the column filter is activated/deactivated it is automatically added/removed to this collection.
 {{endregion}}
 
 And here is the result:

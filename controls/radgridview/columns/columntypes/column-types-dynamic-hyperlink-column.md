@@ -27,15 +27,13 @@ Here is a list of the most important properties:
 #### __[XAML] Example 1: Define GridViewDynamicHyperlinkColumn in XAML.__
 
 {{region xaml-radgridview-columns-column-types-dynamic-hyperlink-column_0}}
-
 	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
+	                 AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDynamicHyperlinkColumn 
-				 DataMemberBinding="{Binding Name}"
-				 NavigateUrlMemberPaths="TeamUrl"
-				 NavigateUrlFormatString="{} http://oficialleaguesite.com/{0}"
-				 TargetName="_blank" />
+	        <telerik:GridViewDynamicHyperlinkColumn DataMemberBinding="{Binding Name}"
+	                         NavigateUrlMemberPaths="TeamUrl"
+	                         NavigateUrlFormatString="{} http://oficialleaguesite.com/{0}"
+	                         TargetName="_blank" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}

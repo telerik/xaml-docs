@@ -27,15 +27,13 @@ Your code should be similar to the following:
 #### __C#__
 
 {{region cs-gridview-troubleshooting-validation-stays_0}}
-
 	private void rgvTest_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
 	{
-		if (e.EditAction == GridViewEditAction.Cancel)
-		{
-			e.UserDefinedErrors.Clear();
-		}
+	    if (e.EditAction == GridViewEditAction.Cancel)
+	    {
+	        e.UserDefinedErrors.Clear();
+	    }
 	}
-	
 {{endregion}}
 
 # See Also

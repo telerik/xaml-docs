@@ -31,10 +31,10 @@ For example, if you want to set the style for the __GridViewDataColumn__'s edito
 	{{region xaml-radgridview-styling-column-editor_0}}
 	<Style x:Key="TextBoxStyle" TargetType="TextBox">
 	    <Setter Property="Background" Value="Red"/>
-		<Setter Property="Foreground" Value="Yellow"/>
-		<Setter Property="Padding" Value="2"/>
+	    <Setter Property="Foreground" Value="Yellow"/>
+	    <Setter Property="Padding" Value="2"/>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 >If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base the style on __TextBoxStyle__.
 
@@ -42,7 +42,7 @@ For example, if you want to set the style for the __GridViewDataColumn__'s edito
 
 	{{region xaml-radgridview-styling-column-editor_1}}
 	<telerik:GridViewDataColumn EditorStyle="{StaticResource TextBoxStyle}" />
-	{{endregion}}
+{{endregion}}
 
 #### __Figure 1: RadGridView with styled column edtior__
 

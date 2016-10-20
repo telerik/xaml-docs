@@ -17,24 +17,22 @@ To accomplish this you need to subscribe to the __Sorting__ event and define its
 #### __C#__
 
 {{region cs-gridview-sorting-none_0}}
-
 	private void clubsGrid_Sorting(object sender, GridViewSortingEventArgs e)
 	{
-	 if (e.NewSortingState == SortingState.None)
-	 {
-	  e.NewSortingState = SortingState.Ascending; 
-	 }
+	    if (e.NewSortingState == SortingState.None)
+	    {
+	        e.NewSortingState = SortingState.Ascending;
+	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-sorting-none_1}}
-
 	Private Sub clubsGrid_Sorting(sender As Object, e As GridViewSortingEventArgs)
-	 If e.NewSortingState = SortingState.None Then
-	  e.NewSortingState = SortingState.Ascending
-	 End If
+	    If e.NewSortingState = SortingState.None Then
+	        e.NewSortingState = SortingState.Ascending
+	    End If
 	End Sub
 {{endregion}}
 

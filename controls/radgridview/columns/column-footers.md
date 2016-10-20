@@ -19,10 +19,9 @@ To set the value of the footer use __Footer__ property of the column.
 #### __XAML__
 
 {{region xaml-gridview-columns-column-footers_0}}
-
 	<telerik:GridViewDataColumn Header="ID"
-                                DataMemberBinding="{Binding EmployeeID}"
-                                Footer="Footer cell">
+	                DataMemberBinding="{Binding EmployeeID}"
+	                Footer="Footer cell" />
 {{endregion}}
 
 
@@ -31,24 +30,25 @@ Because it is of type object, you are not limited to just using plain text. For 
 #### __XAML__
 
 {{region xaml-gridview-columns-column-footers_1}}
-
 	<telerik:GridViewDataColumn Header="ID"
-                                DataMemberBinding="{Binding EmployeeID}">
-		<telerik:GridViewDataColumn.Footer>
-	        <Grid>
-	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="Auto" />
-	                <ColumnDefinition />
-	            </Grid.ColumnDefinitions>
-	            <Image Stretch="None"
-	                   Source="../../Images/User.png"
-	                   Margin="0,0,5,0" />
-	            <TextBlock Text="The Id of the employee"
-	                       VerticalAlignment="Center"
-	                       TextWrapping="Wrap"
-	                       Grid.Column="1" />
-	        </Grid>
-		</telerik:GridViewDataColumn.Footer>
+	                DataMemberBinding="{Binding EmployeeID}">
+	  <telerik:GridViewDataColumn.Footer>
+	
+	    <Grid>
+	      <Grid.ColumnDefinitions>
+	        <ColumnDefinition Width="Auto" />
+	        <ColumnDefinition />
+	      </Grid.ColumnDefinitions>
+	      <Image Stretch="None"
+	Source="../../Images/User.png"
+	Margin="0,0,5,0" />
+	      <TextBlock Text="The Id of the employee"
+	 VerticalAlignment="Center"
+	 TextWrapping="Wrap"
+	 Grid.Column="1" />
+	
+	    </Grid>
+	  </telerik:GridViewDataColumn.Footer>
 	</telerik:GridViewDataColumn>
 {{endregion}}
 
@@ -60,11 +60,10 @@ By default column footers are hidden, so in order to make them visible you have 
 
 #### __XAML__
 {{region xaml-gridview-columns-column-footers_2}}
-
-	<telerikGrid:RadGridView x:Name="radGridView"
+	<telerik:RadGridView x:Name="radGridView"
 	                         ShowColumnFooters="True">
-	    ...
-	</telerik:Grid:RadGridView>
+	  <!-- ... -->
+	</telerik:RadGridView>
 {{endregion}}
 
 ## Aggregates

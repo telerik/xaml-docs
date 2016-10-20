@@ -19,7 +19,6 @@ Add one or more sections with content
 #### __C#__
 
 {{region cs-radgridview-filtering-custom-types_0}}
-	
 	public class Person
 	{
 	    private readonly string name;
@@ -51,7 +50,6 @@ The first thing that you need to do is implement the IEquatable interface. It ha
 #### __C#__
 
 {{region cs-radgridview-filtering-custom-types_2}}
-
 	public class Person : IEquatable<Person>
 	{
 	    private readonly string name;
@@ -82,7 +80,6 @@ The first thing that you need to do is implement the IEquatable interface. It ha
 	
 	        return StringComparer.Ordinal.Equals(this.Name, other.Name);
 	    }
-	}
 {{endregion}}
 
 ## Override Object.Equals(Object) and Object.GetHashCode
@@ -92,7 +89,6 @@ Next, you need to override Object.Equals(Object) and Object.GetHashCode. MSDN st
 #### __C#__
 
 {{region cs-radgridview-filtering-custom-types_4}}
-
 	public override bool Equals(object obj)
 	{
 	    return ((IEquatable<Person>)this).Equals(obj as Person);
@@ -111,7 +107,6 @@ You need to override the ToString method of your type so that distinct values an
 #### __C#__
 
 {{region cs-radgridview-filtering-custom-types_6}}
-
 	public override string ToString()
 	{
 	    return this.Name;
@@ -125,7 +120,6 @@ When RadGridView encounters a custom type it will use a plain TextBox for the fi
 #### __C#__
 
 {{region cs-radgridview-filtering-custom-types_8}}
-
 	public class PersonConverter : TypeConverter
 	{
 	    public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
@@ -134,7 +128,7 @@ When RadGridView encounters a custom type it will use a plain TextBox for the fi
 	        {
 	            return true;
 	        }
-	        
+	
 	        return base.CanConvertFrom(context, sourceType);
 	    }
 	
@@ -145,7 +139,7 @@ When RadGridView encounters a custom type it will use a plain TextBox for the fi
 	        {
 	            return new Person(stringValue);
 	        }
-	        
+	
 	        return base.ConvertFrom(context, culture, value);
 	    }
 	
@@ -232,7 +226,6 @@ If you want to see the comparison filter operators (Is Less Than, etc.) you shou
 #### __C#__
 
 {{region cs-radgridview-filtering-custom-types_12}}
-
 	public static bool operator <(Person left, Person right)
 	{
 	    return left.Age < right.Age;

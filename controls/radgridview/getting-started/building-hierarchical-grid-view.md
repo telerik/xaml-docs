@@ -26,7 +26,6 @@ The sample data is represented by teams divided into divisions. First create the
 #### __C#__
 
 {{region cs-gridview-building-hierarchical-grid-view_0}}
-
 	public class Team
 	{
 	    public int Id
@@ -51,9 +50,8 @@ The sample data is represented by teams divided into divisions. First create the
 #### __VB.NET__
 
 {{region vb-gridview-building-hierarchical-grid-view_1}}
-
 	Public Class Team
-	Private _Id As Integer
+	    Private _Id As Integer
 	    Public Property Id() As Integer
 	        Get
 	            Return _Id
@@ -63,7 +61,7 @@ The sample data is represented by teams divided into divisions. First create the
 	        End Set
 	    End Property
 	
-	Private _Name As String
+	    Private _Name As String
 	    Public Property Name() As String
 	        Get
 	            Return _Name
@@ -73,7 +71,7 @@ The sample data is represented by teams divided into divisions. First create the
 	        End Set
 	    End Property
 	
-	Private _Place As Integer
+	    Private _Place As Integer
 	    Public Property Place() As Integer
 	        Get
 	            Return _Place
@@ -91,24 +89,23 @@ The class that represents a single division will contain a collection of Team ob
 #### __C#__
 
 {{region cs-gridview-building-hierarchical-grid-view_2}}
-
 	public class Division
 	{
-	   public int Id
-	   {
-	       get;
-	       set;
-	   }
-	   public string Name
-	   {
-	       get;
-	       set;
-	   }
-	   public List<Team> Teams
-	   {
-	       get;
-	       set;
-	   }
+	    public int Id
+	    {
+	        get;
+	        set;
+	    }
+	    public string Name
+	    {
+	        get;
+	        set;
+	    }
+	    public List<Team> Teams
+	    {
+	        get;
+	        set;
+	    }
 	}
 {{endregion}}
 
@@ -116,9 +113,8 @@ The class that represents a single division will contain a collection of Team ob
 #### __VB.NET__
 
 {{region vb-gridview-building-hierarchical-grid-view_3}}
-
 	Public Class Division
-	Private _Id As Integer
+	    Private _Id As Integer
 	    Public Property Id() As Integer
 	        Get
 	            Return _Id
@@ -128,7 +124,7 @@ The class that represents a single division will contain a collection of Team ob
 	        End Set
 	    End Property
 	
-	Private _Name As String
+	    Private _Name As String
 	    Public Property Name() As String
 	        Get
 	            Return _Name
@@ -138,7 +134,7 @@ The class that represents a single division will contain a collection of Team ob
 	        End Set
 	    End Property
 	
-	Private _Teams As List(Of Team)
+	    Private _Teams As List(Of Team)
 	    Public Property Teams() As List(Of Team)
 	        Get
 	            Return _Teams
@@ -158,75 +154,74 @@ Create "__DivisionsService__" class and implement a static method __GetDivisions
 #### __C#__
 
 {{region cs-gridview-building-hierarchical-grid-view_4}}
-
 	public class DivisionsService
 	{
-	   public static ObservableCollection<Division> GetDivisions()
-	   {
-	       ObservableCollection<Division> divisions = new ObservableCollection<Division>();
-	       Division dA = new Division();
-	       dA.Name = "Division A";
-	       dA.Id = 1;
-	       dA.Teams = new List<Team>();
-	       Team team1 = new Team();
-	       team1.Id = 1;
-	       team1.Name = "Team I";
-	       team1.Place = 1;
-	       dA.Teams.Add( team1 );
-	       Team team2 = new Team();
-	       team2.Id = 2;
-	       team2.Name = "Team II";
-	       team2.Place = 2;
-	       dA.Teams.Add( team2 );
-	       Team team3 = new Team();
-	       team3.Id = 3;
-	       team3.Name = "Team III";
-	       team3.Place = 3;
-	       dA.Teams.Add( team3 );
-	       divisions.Add( dA );
-	       Division dB = new Division();
-	       dB.Name = "Division B";
-	       dB.Id = 2;
-	       dB.Teams = new List<Team>();
-	       Team teamRed = new Team();
-	       teamRed.Id = 1;
-	       teamRed.Name = "Team Red";
-	       teamRed.Place = 1;
-	       dB.Teams.Add( teamRed );
-	       Team teamGreen = new Team();
-	       teamGreen.Id = 2;
-	       teamGreen.Name = "Team Green";
-	       teamGreen.Place = 2;
-	       dB.Teams.Add( teamGreen );
-	       Team teamBlue = new Team();
-	       teamBlue.Id = 3;
-	       teamBlue.Name = "Team Blue";
-	       teamBlue.Place = 3;
-	       dB.Teams.Add( teamBlue );
-	       divisions.Add( dB );
+	    public static ObservableCollection<Division> GetDivisions()
+	    {
+	        ObservableCollection<Division> divisions = new ObservableCollection<Division>();
+	        Division dA = new Division();
+	        dA.Name = "Division A";
+	        dA.Id = 1;
+	        dA.Teams = new List<Team>();
+	        Team team1 = new Team();
+	        team1.Id = 1;
+	        team1.Name = "Team I";
+	        team1.Place = 1;
+	        dA.Teams.Add(team1);
+	        Team team2 = new Team();
+	        team2.Id = 2;
+	        team2.Name = "Team II";
+	        team2.Place = 2;
+	        dA.Teams.Add(team2);
+	        Team team3 = new Team();
+	        team3.Id = 3;
+	        team3.Name = "Team III";
+	        team3.Place = 3;
+	        dA.Teams.Add(team3);
+	        divisions.Add(dA);
+	        Division dB = new Division();
+	        dB.Name = "Division B";
+	        dB.Id = 2;
+	        dB.Teams = new List<Team>();
+	        Team teamRed = new Team();
+	        teamRed.Id = 1;
+	        teamRed.Name = "Team Red";
+	        teamRed.Place = 1;
+	        dB.Teams.Add(teamRed);
+	        Team teamGreen = new Team();
+	        teamGreen.Id = 2;
+	        teamGreen.Name = "Team Green";
+	        teamGreen.Place = 2;
+	        dB.Teams.Add(teamGreen);
+	        Team teamBlue = new Team();
+	        teamBlue.Id = 3;
+	        teamBlue.Name = "Team Blue";
+	        teamBlue.Place = 3;
+	        dB.Teams.Add(teamBlue);
+	        divisions.Add(dB);
 	
-	       Division dC = new Division();
-	       dC.Name = "Division C";
-	       dC.Id = 3;
-	       dC.Teams = new List<Team>();
-	       Team teamAlpha = new Team();
-	       teamAlpha.Id = 1;
-	       teamAlpha.Name = "Team Alpha";
-	       teamAlpha.Place = 1;
-	       dC.Teams.Add( teamAlpha );
-	       Team teamBeta = new Team();
-	       teamBeta.Id = 2;
-	       teamBeta.Name = "Team Beta";
-	       teamBeta.Place = 2;
-	       dC.Teams.Add( teamBeta );
-	       Team teamGama = new Team();
-	       teamGama.Id = 3;
-	       teamGama.Name = "Team Gama";
-	       teamGama.Place = 3;
-	       dC.Teams.Add( teamGama );
-	       divisions.Add( dC );
-	       return divisions;
-	   }
+	        Division dC = new Division();
+	        dC.Name = "Division C";
+	        dC.Id = 3;
+	        dC.Teams = new List<Team>();
+	        Team teamAlpha = new Team();
+	        teamAlpha.Id = 1;
+	        teamAlpha.Name = "Team Alpha";
+	        teamAlpha.Place = 1;
+	        dC.Teams.Add(teamAlpha);
+	        Team teamBeta = new Team();
+	        teamBeta.Id = 2;
+	        teamBeta.Name = "Team Beta";
+	        teamBeta.Place = 2;
+	        dC.Teams.Add(teamBeta);
+	        Team teamGama = new Team();
+	        teamGama.Id = 3;
+	        teamGama.Name = "Team Gama";
+	        teamGama.Place = 3;
+	        dC.Teams.Add(teamGama);
+	        divisions.Add(dC);
+	        return divisions;
+	    }
 	}
 {{endregion}}
 
@@ -234,7 +229,6 @@ Create "__DivisionsService__" class and implement a static method __GetDivisions
 #### __VB.NET__
 
 {{region vb-gridview-building-hierarchical-grid-view_5}}
-
 	Public Class DivisionsService
 	    Public Shared Function GetDivisions() As ObservableCollection(Of Division)
 	        Dim divisions As New ObservableCollection(Of Division)()
@@ -313,15 +307,14 @@ Now after the sample data is prepared you are ready to bind it to the __RadGridV
 #### __XAML__
 
 {{region xaml-gridview-building-hierarchical-grid-view_6}}
-
 	<telerik:RadGridView x:Name="HierarchicalGridView"
-	                         AutoGenerateColumns="False">
-				<telerik:RadGridView.Columns>
-					<telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"
-	                                        Header="Id" />
-					<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                                        Header="Name" />
-				</telerik:RadGridView.Columns>
+	                 AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"
+	                                Header="Id" />
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
+	                                Header="Name" />
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -331,23 +324,14 @@ Set the __ItemsSource__ in the code-behind file of your UserControl.
 #### __C#__
 
 {{region cs-gridview-building-hierarchical-grid-view_7}}
-
-	public BuildingHierarchicalGrid()
-	{
-	    InitializeComponent();
-	    this.HierarchicalGridView.ItemsSource = DivisionsService.GetDivisions();
-	}
+	this.HierarchicalGridView.ItemsSource = DivisionsService.GetDivisions();
 {{endregion}}
 
 
 #### __VB.NET__
 
 {{region vb-gridview-building-hierarchical-grid-view_8}}
-
-	Public Sub New()
-	    InitializeComponent()
-	    Me.HierarchicalGridView.ItemsSource = DivisionsService.GetDivisions()
-	End Sub
+	Me.HierarchicalGridView.ItemsSource = DivisionsService.GetDivisions()
 {{endregion}}
 
 If you run the application at this stage you should see this.
@@ -361,24 +345,20 @@ The next step is to make the __RadGridView__ display the collections of teams as
 #### __XAML__
 
 {{region xaml-gridview-building-hierarchical-grid-view_9}}
-
-	<telerik:RadGridView x:Name="HierarchicalGridView"
-	                         AutoGenerateColumns="False">
-				<telerik:RadGridView.ChildTableDefinitions>
-	
-					<telerik:GridViewTableDefinition>
-						<telerik:GridViewTableDefinition.Relation>
-							<telerik:PropertyRelation ParentPropertyName="Teams" />
-						</telerik:GridViewTableDefinition.Relation>
-					</telerik:GridViewTableDefinition>
-	
-				</telerik:RadGridView.ChildTableDefinitions>
-				<telerik:RadGridView.Columns>
-					<telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"
-	                                        Header="Id" />
-					<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                                        Header="Name" />
-				</telerik:RadGridView.Columns>
+	<telerik:RadGridView AutoGenerateColumns="False">
+	    <telerik:RadGridView.ChildTableDefinitions>
+	        <telerik:GridViewTableDefinition>
+	            <telerik:GridViewTableDefinition.Relation>
+	                <telerik:PropertyRelation ParentPropertyName="Teams" />
+	            </telerik:GridViewTableDefinition.Relation>
+	        </telerik:GridViewTableDefinition>
+	    </telerik:RadGridView.ChildTableDefinitions>
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"
+	                                Header="Id" />
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
+	                                Header="Name" />
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 

@@ -31,27 +31,27 @@ For example, you can close the popup with the following code:
 #### __[C#] Example 1: Closing the Filtering Popup from the Deactivated event__
 
 {{region cs-gridview-filtering-faq-popup-stays_0}}
-
-    var FilterDialogs = this.clubsGrid.ChildrenOfType<Popup>().Where(p => p.Name == "PART_DropDownPopup");
-    if (FilterDialogs != null)
-    foreach (Popup FilterDialog in FilterDialogs)
-    {
-        if (FilterDialog.IsOpen)
-            FilterDialog.IsOpen = false;
-    }
+	var FilterDialogs = this.radGridView.ChildrenOfType<Popup>().Where(p => p.Name == "PART_DropDownPopup");
+	if (FilterDialogs != null)
+	{
+	    foreach (Popup FilterDialog in FilterDialogs)
+	    {
+	        if (FilterDialog.IsOpen)
+	            FilterDialog.IsOpen = false;
+	    }
+	}
 {{endregion}}
 
 #### __[VB.NET] Example 1: Closing the Filtering Popup from the Deactivated event__
 
 {{region vb-gridview-filtering-faq-popup-stays_1}}
-
-    Dim FilterDialogs = Me.clubsGrid.ChildrenOfType(Of Popup)().Where(Function(p) p.Name = "PART_DropDownPopup")
+	Dim FilterDialogs = Me.radGridView.ChildrenOfType(Of Popup)().Where(Function(p) p.Name = "PART_DropDownPopup")
 	If FilterDialogs IsNot Nothing Then
-		For Each FilterDialog As Popup In FilterDialogs
-			If FilterDialog.IsOpen Then
-				FilterDialog.IsOpen = False
-			End If
-		Next
+	    For Each FilterDialog As Popup In FilterDialogs
+	        If FilterDialog.IsOpen Then
+	            FilterDialog.IsOpen = False
+	        End If
+	    Next
 	End If
 {{endregion}}
 
@@ -64,8 +64,7 @@ And here is how to set it:
 #### __[XAML] Example 2: Closing the Filtering Popup in XAML__
 
 {{region xaml-gridview-filtering-faq-popup-stays_2}}
-
-    <telerik:RadGridView ShouldCloseFilteringPopupOnKeyboardFocusChanged="True" />
+	<telerik:RadGridView ShouldCloseFilteringPopupOnKeyboardFocusChanged="True" />
 {{endregion}}
 
 # See Also

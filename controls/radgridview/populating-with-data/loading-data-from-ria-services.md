@@ -20,7 +20,6 @@ The purpose of this tutorial is to show you how to populate a __RadGridView__ wi
 #### __XAML__
 
 {{region xaml-gridview-loading-data-from-ria-services_0}}
-
 	<telerik:RadGridView x:Name="radGridView" Margin="8"/>
 {{endregion}}
 
@@ -31,7 +30,6 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 #### __C#__
 
 {{region cs-gridview-loading-data-from-ria-services_1}}
-
 	public class NorthwindDataSource
 	{
 	}
@@ -40,7 +38,6 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 #### __VB.NET__
 
 {{region vb-gridview-loading-data-from-ria-services_2}}
-
 	Public Class NorthwindDataSource
 	End Class
 {{endregion}}
@@ -53,16 +50,15 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 #### __C#__
 
 {{region cs-gridview-loading-data-from-ria-services_3}}
-
 	public class NorthwindDataSource
 	{
 	    SampleRiaContext riaContext;
 	    public NorthwindDataSource()
 	    {
 	        riaContext = new SampleRiaContext();
-	        this.Customers = new ObservableCollection<Customers>();
+	        this.Customers = new ObservableCollection<Customer>();
 	    }
-	    public ObservableCollection<Customers> Customers
+	    public ObservableCollection<Customer> Customers
 	    {
 	        get;
 	        set;
@@ -73,24 +69,13 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 #### __VB.NET__
 
 {{region vb-gridview-loading-data-from-ria-services_4}}
-
 	Public Class NorthwindDataSource
 	    Private riaContext As SampleRiaContext
-	
 	    Public Sub New()
 	        riaContext = New SampleRiaContext()
-	        Me.Customers = New ObservableCollection(Of Customers)()
+	        Me.Customers = New ObservableCollection(Of Customer)()
 	    End Sub
-	
-	Private _Customers As ObservableCollection(Of Customers)
-	    Public Property Customers() As ObservableCollection(Of Customers)
-	        Get
-	            Return _Customers
-	        End Get
-	        Set(ByVal value As ObservableCollection(Of Customers))
-	            _Customers = value
-	        End Set
-	    End Property
+	    Public Property Customers() As ObservableCollection(Of Customer)
 	End Class
 {{endregion}}
 
@@ -99,17 +84,16 @@ The __RadGridView__ will be bound to a data source object, that has a property _
 #### __C#__
 
 {{region cs-gridview-loading-data-from-ria-services_5}}
-
-	LoadOperation<Customers> loadOperation = riaContext.Load<Customers>( riaContext.GetCustomersQuery() );
-	loadOperation.Completed += new EventHandler( loadOperation_Completed );
+	LoadOperation<Customer> loadOperation = riaContext.Load<Customer>(riaContext.GetCustomersQuery());
+	loadOperation.Completed += loadOperation_Completed;
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-gridview-loading-data-from-ria-services_6}}
-
-	Dim loadOperation As LoadOperation(Of Customers) = riaContext.Load(Of Customers)(riaContext.GetCustomersQuery())
+	Dim loadOperation As LoadOperation(Of Customer) = riaContext.Load(Of Customer)(riaContext.GetCustomersQuery())
 	AddHandler loadOperation.Completed, AddressOf loadOperation_Completed
+	'
 {{endregion}}
 
 And here is the code handling the __Completed__ event of the load operation: 
@@ -117,13 +101,12 @@ And here is the code handling the __Completed__ event of the load operation:
 #### __C#__
 
 {{region cs-gridview-loading-data-from-ria-services_7}}
-
-	private void loadOperation_Completed( object sender, EventArgs e )
+	private void loadOperation_Completed(object sender, EventArgs e)
 	{
 	    //Consume the result
-	    foreach ( Customers c in riaContext.Customers )
+	    foreach (Customer c in riaContext.Customers)
 	    {
-	        this.Customers.Add( c );
+	        this.Customers.Add(c);
 	    }
 	}
 {{endregion}}
@@ -131,12 +114,11 @@ And here is the code handling the __Completed__ event of the load operation:
 #### __VB.NET__
 
 {{region vb-gridview-loading-data-from-ria-services_8}}
-
 	Private Sub loadOperation_Completed(ByVal sender As Object, ByVal e As EventArgs)
 	    'Consume the result
-	    For Each c As Customers In riaContext.Customers
+	    For Each c As Customer In riaContext.Customers
 	        Me.Customers.Add(c)
-	    Next
+	    Next c
 	End Sub
 {{endregion}}
 
@@ -145,9 +127,8 @@ And here is the code handling the __Completed__ event of the load operation:
 #### __XAML__
 
 {{region xaml-gridview-loading-data-from-ria-services_9}}
-
 	<UserControl.Resources>
-	   <example:NorthwindDataSource x:Key="DataSource"/>
+	    <my:NorthwindDataSource x:Key="DataSource"/>
 	</UserControl.Resources>
 {{endregion}}
 
@@ -156,8 +137,7 @@ And here is the code handling the __Completed__ event of the load operation:
 #### __XAML__
 
 {{region xaml-gridview-loading-data-from-ria-services_10}}
-	<telerik:RadGridView x:Name="radGridView" Margin="8"
-	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
+	<telerik:RadGridView ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
 {{endregion}}
 
 Run your demo, the result can be seen on the next picture:

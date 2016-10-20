@@ -29,12 +29,11 @@ If you do not encounter any of the above mentioned problems, then you probably u
 #### __XAML__
 
 {{region xaml-gridview-troubleshooting-blank-cells_0}}
-
 	<telerik:GridViewComboBoxColumn Header="Category"
-	        DataMemberBinding="{Binding CategoryID}"
-	        ItemsSource="{Binding Path=DataContext.Categories, ElementName=RootElement}"
-	        DisplayMemberPath="CategoryName"
-	        SelectedValueMemberPath="CategoryID" />
+	DataMemberBinding="{Binding CategoryID}"
+	ItemsSource="{Binding Path=DataContext.Categories, ElementName=RootElement}"
+	DisplayMemberPath="CategoryName"
+	SelectedValueMemberPath="CategoryID" />
 {{endregion}}
 
 This will not work, as the DataContext of the cell would not be the ViewModel, but the business object related to the row instead. We do not recommend such approach.
@@ -49,7 +48,7 @@ There are two ways of solving the issue :
 
 {{region xaml-gridview-troubleshooting-blank-cells_1}}
 	<UserControl.Resources>
-	    <local:MainPageViewModel x:Key="mainPageViewModel" />
+	    <local:MyViewModel x:Key="MyViewModel" />
 	</UserControl.Resources>
 {{endregion}}
 
@@ -59,27 +58,25 @@ There are two ways of solving the issue :
 
 {{region xaml-gridview-troubleshooting-blank-cells_2}}
 	<telerik:GridViewComboBoxColumn Header="Category"
-	            DataMemberBinding="{Binding CategoryID}"
-	            ItemsSource="{Binding Path=Categories, Source={StaticResource mainPageViewModel}}"
-	            DisplayMemberPath="CategoryName"
-	            SelectedValueMemberPath="CategoryID" />
+	DataMemberBinding="{Binding CategoryID}"
+	ItemsSource="{Binding Path=Categories, Source={StaticResource MyViewModel}}"
+	DisplayMemberPath="CategoryName"
+	SelectedValueMemberPath="CategoryID" />
 {{endregion}}
 
 #### __C#__
 
-{{region cs-gridview-troubleshooting-blank-cells_2}}
-
+{{region cs-gridview-troubleshooting-blank-cells_3}}
 	private void gridView_DataLoaded(object sender, EventArgs e)
 	{
-	     (gridView.Columns["Category"] as GridViewComboBoxColumn).ItemsSource = GetCategories();
+	    (this.radGridView.Columns["Category"] as GridViewComboBoxColumn).ItemsSource = GetCategories();
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region vb-gridview-troubleshooting-blank-cells_2}}
-
+{{region vb-gridview-troubleshooting-blank-cells_3}}
 	Private Sub gridView_DataLoaded(ByVal sender As Object, ByVal e As EventArgs)
-            TryCast(Me.radGridView.Columns("Category"), GridViewComboBoxColumn).ItemsSource = GetCategories()
-        End Sub
+	    TryCast(Me.radGridView.Columns("Category"), GridViewComboBoxColumn).ItemsSource = GetCategories()
+	End Sub
 {{endregion}}

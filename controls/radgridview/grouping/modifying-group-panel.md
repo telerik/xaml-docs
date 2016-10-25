@@ -54,7 +54,9 @@ Check out the following topics which explain in great details the __RadGridView_
 
 * Use [group footers]({%slug gridview-group-footers%}) for displaying summaries.
 
-# See Also
+## See Also
+
+ * [Style Group Panel]({%slug radgridview-styles-and-templates-styling-the-group-panel%})
 
  * [Basic Filtering]({%slug gridview-filtering-basic%})
 

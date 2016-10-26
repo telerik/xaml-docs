@@ -2,7 +2,7 @@
 title: Upgrade API Analyzer tool
 page_title: How to Use the Upgrade API Analyzer
 description: How to use the Upgrade API Analyzer 
-slug: upgrade-api-analyzer
+slug: upgrade-api-analyzer-sl
 tags: api, analyzer, upgrade
 published: True
 position: 20
@@ -10,7 +10,7 @@ position: 20
 
 # How to Use the Upgrade API Analyzer 
 
-With every release of UI for WPF we’re trying to avoid introducing changes that affect the public API. However, sometimes such changes are needed for the product to evolve. We understand that this could cause issues when upgrading your app to the latest release. The main purpose of the __Telerik Upgrade API Analyzer__ is to make the upgrade process easier by comparing both versions and determining the problematic areas.
+With every release of UI for Silverlight we’re trying to avoid introducing changes that affect the public API. However, sometimes such changes are needed for the product to evolve. We understand that this could cause issues when upgrading your app to the latest release. The main purpose of the __Telerik Upgrade API Analyzer__ is to make the upgrade process easier by comparing both versions and determining the problematic areas.
 
 Telerik Upgrade API Analyzer could be used when upgrading your desktop application such as WPF or WinForms as well as your Silverlight or ASP.NET Web application.
 
@@ -23,7 +23,6 @@ In short, the __Telerik API Analyzer__ tool will help you with the upgrade of th
 
 >At this stage, Upgrade API Analyzer checks only the C# code of your application. 
 
-
 ## Where Do You Get Telerik Upgrade API Analyzer?
 
 **Upgrade API Analyzer** is a **ClickOnce** application and you can download the installation file directly from [our site](http://demos.telerik.com/UpgradeAPIAnalyzer/setup.exe).
@@ -31,7 +30,6 @@ In short, the __Telerik API Analyzer__ tool will help you with the upgrade of th
 >The tool relies on **.NET Framework 4.5.2** and in case you haven’t got it on your machine yet, the setup of the tool will install it automatically.
 
 ## How Do You Use It?
-
 
 Running the __Upgrade API Analyzer__ will lead to the screen shown in __Figure 1__.
 
@@ -51,19 +49,14 @@ All you need to do is:
 
 4. Open the solution you’re planning to upgrade.  
 
->tipYou can run the Upgrade API Analyzer from the [Project Upgrade Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}), by clicking the "Compatibility" button (see **Figure 2**). In this case, the tool is started with *Technology*, *Your Version* and *Version to Upgrade* parameters pointed out in the Upgrade Wizard. When Upgrade API Analyzer is started directly through the "Compatibility" button without installing it first, the installation will start automatically. In case .NET Framework 4.5.2 is not present on the machine, the application will prompt you to install it manually at the end of the installation.
 
-#### __Figure 2: Compatibility button in Project Upgrade Wizard__
+The tool starts automatically analyzing the code as shown in __Figure 2__ and will list all the changes found between both versions as demonstrated in __Figure 3__. 
 
-![](images/upgrade-api-analyzer_5.png)
-
-The tool starts automatically analyzing the code as shown in __Figure 3__ and will list all the changes found between both versions as demonstrated in __Figure 4__. 
-
-#### __Figure 3: The tool starts analyzing as soon as you open a solution__
+#### __Figure 2: The tool starts analyzing as soon as you open a solution__
 
 ![](images/upgrade-api-analyzer_1.png)
 
-#### __Figure 4: Upgrade API Analyzer lists the found differences__
+#### __Figure 3: Upgrade API Analyzer lists the found differences__
 
 ![](images/upgrade-api-analyzer_2.png)
  
@@ -73,9 +66,9 @@ For each of the changes, you can see the following information:
 
 * __Difference__: It could be Obsolete, Deleted and Modified.
 
-By default, the Modified changes are not shown as they actually indicate that there is an internal change in the method/class, which does not affect its function as a whole and does not require any action from your side. Still, you could see the __Modified__ changes by updating the Filter of the __Difference__ column as shown in __Figure 5__.
+By default, the Modified changes are not shown as they actually indicate that there is an internal change in the method/class, which does not affect its function as a whole and does not require any action from your side. Still, you could see the __Modified__ changes by updating the Filter of the __Difference__ column as shown in __Figure 4__.
 
-#### __Figure 5: Displaying all the changes found including the Modified ones.__
+#### __Figure 4: Displaying all the changes found including the Modified ones.__
 
 ![](images/upgrade-api-analyzer_3.png)
 
@@ -88,7 +81,7 @@ By default, the Modified changes are not shown as they actually indicate that th
 * __Line__: The exact line in the source file.
 * __Character__: The character in the previously set line.
 
-Additionally, __Upgrade API Analyzer__ provides the option to save the gathered information for a later moment through the __Export button__ in the upper right corner, as shown in __Figure 6__. The data will be arranged and exported to a HTML document. The exported information include the currently visible (filtered) data in the grid. 
+Additionally, __Upgrade API Analyzer__ provides the option to save the gathered information for a later moment through the __Export button__ in the upper right corner, as shown in __Figure 5__. The data will be arranged and exported to a HTML document. The exported information include the currently visible (filtered) data in the grid. 
 
 #### __Figure 6: API Analyzer provides export to a HTML document__
 

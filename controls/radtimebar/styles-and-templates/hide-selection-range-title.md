@@ -13,7 +13,7 @@ position: 1
 Since __Q1 2012 SP1__ we are providing new binaries for our controls, the so-called NoXAML binaries. In the normal assemblies you have all the XAML for all components for all themes included in the dll and the styling is done with explicitly set styles. This unfortunately affected the size of the binaries. With the NoXaml assemblies you will get completely clean assembly with absolutely no XAML included and you can add manually only needed resources for your application.
 
 >The purpose of this topic is to demonstrate how you may hide the range title that is visible with selection range.
-This will be achieved with completely implicit styles instead of the old way of styling which was used in [Styling the Items and Groups](01c67ec1-70cd-4bd1-a7d2-8b1b2f6263f9) topic for example.
+This will be achieved with completely implicit styles instead of the old way of styling which was used in [Styling the Items and Groups]({%slug radtimebar-styling-the-items-and-groups%}) topic for example.
 
 Here are the steps that you should follow to create a RadTimeBar with implicit Windows8 style:
 

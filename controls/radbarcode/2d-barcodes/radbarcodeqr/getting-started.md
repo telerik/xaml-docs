@@ -34,6 +34,6 @@ You also have to declare the following namespace in your UserControl:
 {{endregion}}
 
 ## See Also
-[Overview](a881ccfb-f368-4cf7-b14c-6896efd15f5e)
+[Overview]({%slug radbarcode-overview%})
 [QRCode Visual Structure]({%slug radbarcodeqr-qrcode-visual-structure%})
 [QRCode Properties]({%slug radbarcodeqr-features%})

@@ -44,7 +44,7 @@ Before proceeding further with this tutorial, you need to create a new applicati
 	Dim serviceClient As New ComboBoxWcfServiceClient()
 {{endregion}}
 
->tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service]({%slug consuming-data-wcf-service%}) topic.
+>tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service]({%slug  consuming-data-ado-net-data-service%}) topic.
 
 * The __ComboBox__ control will be populated with all __Products__ from the __Northwind__ database. In the drop-down list the __ProductName__ and the __UnitPrice__ properties will be displayed. Add the following code which will make the initial load of the objects.
 

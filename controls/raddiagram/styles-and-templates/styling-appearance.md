@@ -18,7 +18,7 @@ This article describes how to customize the appearance of the __RadDiagram__,__R
 
 You can control the background settings of the diagramming surface through the following set of properties:
 
-* __IsBackgroundSurfaceVisible__ - a __Boolean__ property that determines whether the background surface of the __RadDiagram__ should be displayed. When set to __true__ both the background grid and the [Preview Pages canvas](a0973f36-f74e-44df-ac8f-d124c3e948aa#PagesPreview) are displayed. Its default value is __true__.
+* __IsBackgroundSurfaceVisible__ - a __Boolean__ property that determines whether the background surface of the __RadDiagram__ should be displayed. When set to __true__ both the background grid and the [Preview Pages canvas]({%slug raddiagram-features-printing%}#pages-preview-canvas) are displayed. Its default value is __true__.
 ![Rad Diagram Styling Background Surface](images/RadDiagram_Styling_BackgroundSurface.png)
 
 * __Background__ - this property is of type __Brush__ and it controls the fill of the __RadDiagram__ background.

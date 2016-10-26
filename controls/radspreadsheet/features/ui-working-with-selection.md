@@ -380,7 +380,7 @@ The following example makes a single CellRange selection and saves it in a Selec
 The automatic filling of data in RadSpreadsheet can also be performed through the selection to ease the access to the feature. This is done by using the fill handle, which can be found at the bottom right corner of the current selection, provided that this selection consists of only one range.
         
 
->tipMore information concerning automatically filling data is available in RadSpreadProcessing's documentation that represents the model of RadSpreadsheet. Check the [Repeat Values]({%slug radspreadprocessing-features-fill-data-automatically-repeat-values%}) and [Series]({%slug radspreadprocessing-features-fill-data-automatically-series%}) articles.
+>tipMore information concerning automatically filling data is available in RadSpreadProcessing's documentation that represents the model of RadSpreadsheet. Check the [Repeat Values](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/fill-data-automatically/repeat-values ) and [Series](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/fill-data-automatically/series ) articles.
           
 
 In order to use the fill handle, select the initial set of data, click and hold the handle and drag it in the desired direction.

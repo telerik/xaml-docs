@@ -20,6 +20,4 @@ You can modify the look of __RadTimePicker__ either by changing some of the brus
 
  * [Layout Support]({%slug radtimepicker-layout-support%})
 
- * [Styling]({%slug radtimepicker-styling%})
-
  * [Header Template]({%slug radtimepicker-header-template%})

@@ -86,7 +86,7 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 
 >tipElements are __cleaned just before loading__ the layout - This operation is performed to prepare the Docking control for the new layout.
 
->tipFor more information about saving and loading __RadDocking__ layout, take a look at the [Save\Load Layout]({%slug raddocking-features-save-load-layout%}) topic.
+>tipFor more information about saving and loading __RadDocking__ layout, take a look at the [Save\Load Layout]({%slug raddocking-features-save-load-layout-overview%}) topic.
 
 * __ElementCreated Events__ (introduced in Q1 2016 SP1 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}).
 

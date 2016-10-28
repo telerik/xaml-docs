@@ -89,7 +89,8 @@ With the initial release of the nested __RadDockings__ there are a few not suppo
 
 * Deferred DragDropMode is not supported in the nested __RadDockings__.
  
-# See Also[Panes](a97c7e77-5e76-4dfa-9cd5-9f8a382ddfe0)
+# See Also
+ * [Panes]({%slug raddocking-panes-radpane%})
 
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
 

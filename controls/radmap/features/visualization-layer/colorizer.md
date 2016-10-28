@@ -177,7 +177,7 @@ In the snapshots below you can see how the above example will be displayed
 
 The __ColorMeasureScale__ can apply a different color to each range it creates. You are able to specify the desired set of colors not only for the normal fill of the shapes, but for the highlighted one too. This is done by using the __ShapeFillCollection__ and __HighlightFillCollection__ properties. They are collections of __MapShapeFill__ objects.        
 
->If you are creating the ranges manually, you can pass the __MapShapeFill__ object directly to the __MapRange__ object. To learn more read the [Ranges](4c68d39a-7a0b-4f6d-9415-9869a401584e#ranges) section.
+>If you are creating the ranges manually, you can pass the __MapShapeFill__ object directly to the __MapRange__ object. To learn more read the [Ranges](#ranges) section.
 
 <!-- -->
 >The first color will get applied to the lowest layer. 

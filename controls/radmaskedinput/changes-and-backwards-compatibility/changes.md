@@ -83,7 +83,7 @@ To see the fixes and features included in our latest official release please ref
 
 ### What's New
 
-* Feature: Allow masked input controls to have no mask ([Read More](6423C290-4198-48A9-A19B-8937AAE46FCB#NoMask))				
+* Feature: Allow masked input controls to have no mask ([Read More]({%slug radmaskedinput-features-mask-tokens%}))				
 
 ## Q1 2012
 

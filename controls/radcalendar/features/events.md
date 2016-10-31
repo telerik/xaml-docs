@@ -14,29 +14,28 @@ The __RadCalendar__ exposes three events that can be handled: __SelectionChanged
 
 #### __C#__
 
-{{region radcalendar-events_0}}
-	using System;
-	using System.Windows.Controls;
-	namespace EventsHandling
+{{region cs-radcalendar-events_0}}
+	public partial class Default_Cs : UserControl
 	{
-	    public partial class Page : UserControl
+	       public Default_Cs ()
 	    {
-	        public Page()
-	        {
-	            InitializeComponent();
-	            calendar.SelectionChanged += new EventHandler<SelectionChangedEventArgs>(calendar_SelectionChanged);
-	        }
-	        void calendar_SelectionChanged(object sender, SelectionChangedEventArgs e)
-	        {
-	            message.Text = String.Format("{0} dates have been selected.", calendar.SelectedDates.Count);
-	        }
+	           this.InitializeComponent();
+	           calendar.SelectionChanged += calendar_SelectionChanged;
+	
+	           calendar.SelectionChanged +=calendar_SelectionChanged;
 	    }
+	
+	       void calendar_SelectionChanged(object sender, SelectionChangedEventArgs e)
+	       {
+	           message.Text = String.Format("{0} dates have been selected.", calendar.SelectedDates.Count);
+	       }
+	
 	}
 {{endregion}}
 
 #### __XAML__
 
-{{region radcalendar-events_1}}
+{{region xaml-radcalendar-events_1}}
 	<StackPanel>
 	    <telerik:RadCalendar x:Name="calendar" SelectionMode="Extended"/>
 	    <TextBlock x:Name="message" />
@@ -51,14 +50,15 @@ The following example shows how to sign up for the __SelectionChanged__ event at
 
 #### __C#__
 
-{{region radcalendar-events_2}}
+{{region cs-radcalendar-events_2}}
 	public Page()
 	{
 	    InitializeComponent();
 	    //Sign up for the event:
-	    this.LayoutRoot.AddHandler(RadCalendar.SelectionChangedEvent, new Telerik.Windows.Controls.SelectionChangedEventHandler(OnCalendarSelectionChanged));
+	    this.LayoutRoot.AddHandler(RadCalendar.SelectionChangedEvent, new SelectionChangedEventHandler(OnCalendarSelectionChanged));
 	}
-	private void OnCalendarSelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
+	
+	private void OnCalendarSelectionChanged(object sender, SelectionChangedEventArgs e)
 	{
 	}
 {{endregion}}

@@ -16,7 +16,7 @@ Here is a regular __RadMenu__ declaration without items:
 
 #### __XAML__
 
-{{region radmenu-populating-with-data-using-static-items_0}}
+{{region xaml-radmenu-populating-with-data-using-static-items_0}}
 	<telerik:RadMenu VerticalAlignment="Top">
 {{endregion}}
 
@@ -24,7 +24,7 @@ In order to add items you need to use the __RadMenu's Items__ property. The __It
 
 #### __XAML__
 
-{{region radmenu-populating-with-data-using-static-items_1}}
+{{region xaml-radmenu-populating-with-data-using-static-items_1}}
 	<telerik:RadMenu VerticalAlignment="Top">
 	    <telerik:RadMenuItem Header="File" />
 	    <telerik:RadMenuItem Header="Edit" />
@@ -41,31 +41,27 @@ Each of the __RadMenuItems__ can have child items that are defined in the same w
 
 #### __XAML__
 
-{{region radmenu-populating-with-data-using-static-items_2}}
+{{region xaml-radmenu-populating-with-data-using-static-items_2}}
 	<telerik:RadMenu VerticalAlignment="Top">
 	    <telerik:RadMenuItem Header="File">
 	        <telerik:RadMenuItem Header="New Tab">
 	            <telerik:RadMenuItem.Icon>
-	                <Image Source="/Images/newFile.png"
-	                       Stretch="None" />
+	                <Image Source="/Images/newFile.png" Stretch="None" />
 	            </telerik:RadMenuItem.Icon>
 	        </telerik:RadMenuItem>
 	        <telerik:RadMenuItem Header="New Window">
 	            <telerik:RadMenuItem.Icon>
-	                <Image Source="/Images/newFile.png"
-	                       Stretch="None" />
+	                <Image Source="/Images/newFile.png" Stretch="None" />
 	            </telerik:RadMenuItem.Icon>
 	        </telerik:RadMenuItem>
 	        <telerik:RadMenuItem Header="Open">
 	            <telerik:RadMenuItem.Icon>
-	                <Image Source="/Images/open.png"
-	                       Stretch="None" />
+	                <Image Source="/Images/open.png" Stretch="None" />
 	            </telerik:RadMenuItem.Icon>
 	        </telerik:RadMenuItem>
 	        <telerik:RadMenuItem Header="Save">
 	            <telerik:RadMenuItem.Icon>
-	                <Image Source="/Images/save.png"
-	                       Stretch="None" />
+	                <Image Source="/Images/save.png" Stretch="None" />
 	            </telerik:RadMenuItem.Icon>
 	        </telerik:RadMenuItem>
 	        <telerik:RadMenuItem Header="Save as ..." />

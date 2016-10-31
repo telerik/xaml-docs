@@ -16,7 +16,7 @@ Here is a sample definition of __RadMenuItem__, used as separator:
 
 #### __XAML__
 
-{{region radmenu-features-separator-items_0}}
+{{region xaml-radmenu-features-separator-items_0}}
 	<telerik:RadMenuItem IsSeparator="True" />
 {{endregion}}
 

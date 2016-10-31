@@ -34,7 +34,7 @@ By default all of the MenuItems has equal space reserved for an Icon. With the Q
 
 #### __XAML__
 
-{{region radmenu-how-to-remove-and-modify-icon-area_01}}
+{{region xaml-radmenu-how-to-remove-and-modify-icon-area_01}}
 	<telerik:RadMenu VerticalAlignment="Top" IconColumnWidth="60">
 	    <telerik:RadMenuItem Header="Circle Sizes" x:Name="sizeRadMenu" IconColumnWidth="0">
 	        <telerik:RadMenuItem Header="Small" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="35" Height="35" />

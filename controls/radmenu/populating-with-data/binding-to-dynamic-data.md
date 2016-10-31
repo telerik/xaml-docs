@@ -20,7 +20,7 @@ The data displayed in the __RadMenu__ has a hierarchical structure (similar to t
 
 For this tutorial the following sample class will be used:
 
-#### __C#__
+#### __[C#] Example 1: MenuItem sample class__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_0}}
 	public class MenuItem
@@ -47,7 +47,7 @@ For this tutorial the following sample class will be used:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] Example 1: MenuItem sample class__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_1}}
 	Public Class MenuItem
@@ -87,7 +87,7 @@ The __MenuItem__ class holds the information for the menu items.
 
 On the next step a sample method, which creates the sample data, is needed. Here is one:
 
-#### __C#__
+#### __[C#] Example 2: Creating MenuItems collection__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_2}}
 	public ObservableCollection<MenuItem> GetMenuItems()
@@ -132,7 +132,7 @@ On the next step a sample method, which creates the sample data, is needed. Here
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] Example 2: Creating MenuItems collection__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_3}}
 	Public Function GetMenuItems() As ObservableCollection(Of MenuItem)
@@ -156,7 +156,7 @@ On the next step a sample method, which creates the sample data, is needed. Here
 
 Finally, pass the generated collection to the __ItemsSource__ of the __RadMenu__.
 
-#### __C#__
+#### __[C#] Example 3: Setting the ItemsSource of the Menu__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_4}}
 	public Sample()
@@ -166,7 +166,7 @@ Finally, pass the generated collection to the __ItemsSource__ of the __RadMenu__
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB] Example 3: Setting the ItemsSource of the Menu__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_5}}
 	Public Sub New()
@@ -179,7 +179,7 @@ Finally, pass the generated collection to the __ItemsSource__ of the __RadMenu__
 
 In order to visualize the data in __RadMenu__ you can use *ItemContainerStyle* property. When used in combination with *ItemsSource*, the Style is applied on all __RadMenuItems__. The only thing you have to do is set the bindings for the needed properties. For the "Icon" you will have to use "IconTemplate" as shown below. When you bind the "Icon" property to the "IconUrl", its value will be passed to the DataTemplate and used as a Source of an image.        
 
-#### __XAML__
+#### __[XAML] Example 4: Defining MenuItemStyle__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_6}}
 	<Style x:Key="MenuItemStyle" TargetType="telerik:RadMenuItem">
@@ -196,15 +196,19 @@ In order to visualize the data in __RadMenu__ you can use *ItemContainerStyle* p
 	</Style>
 {{endregion}}
 
-So its time to define __RadMenu__ and set "ItemContainerStyle" property:
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) note that the Style that targets RadMenuItem should be based on the default __RadMenuItemStyle__.
+
+So it's time to define __RadMenu__ and set "ItemContainerStyle" property:
         
-#### __XAML__
+#### __[XAML] Example 5: Applying the MenuItemStyle to RadMenu__
 
 {{region radmenu-populating-with-data-binding-to-dynamic-data_8}}
 	<telerik:RadMenu x:Name="radMenu" ItemContainerStyle="{StaticResource MenuItemStyle}"/>
 {{endregion}}
 
-Here is a snapshot of the final result:
+__Fugure 1__ illustrates the final result.
+
+#### __Fugure 1: RadMenu bound to dynamic data__
 
 ![](images/RadMenu_Populating_with_Data_Binding_to_Dynamic_Data_02.png)
 

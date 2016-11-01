@@ -130,7 +130,7 @@ First you need to define the context menu with menu items.
             </telerik:RadMenuItem.ItemContainerStyle>
         </telerik:RadMenuItem>
     </telerik:RadContextMenu>
-</local:RadContextMenuXamlHolder>
+	</local:RadContextMenuXamlHolder>
 {{endregion}}
 
 {% endif %}

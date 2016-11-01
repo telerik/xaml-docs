@@ -11,7 +11,7 @@ position: 2
 # Styling RadDataForm
 
 
->Before reading this topic, you might find useful to get familiar with the[Template Structure of the RadDataForm control](D30D9A7D-C51D-4EF8-B58D-C0DC967FCB41#RadDataForm).
+>Before reading this topic, you might find useful to get familiar with the[Template Structure of the RadDataForm control]({%slug raddataform-styles-and-templates-templates-structure%}).
 
 __RadDataForm__ exposes a Style property which allows you to apply a particular style to it and modify its appearance.
 

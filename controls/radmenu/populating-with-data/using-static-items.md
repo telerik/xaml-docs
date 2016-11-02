@@ -80,7 +80,7 @@ Each of the __RadMenuItems__ can have child items that are defined in the same w
 	</telerik:RadMenu>
 {{endregion}}
 
-#### __Fugure 2: RadMenu with static submenu items__
+#### __Figure 2: RadMenu with static submenu items__
 
 ![](images/RadMenu_Populating_with_Data_Using_Static_Items_02.png)
 

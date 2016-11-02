@@ -206,9 +206,9 @@ So it's time to define __RadMenu__ and set "ItemContainerStyle" property:
 	<telerik:RadMenu x:Name="radMenu" ItemContainerStyle="{StaticResource MenuItemStyle}"/>
 {{endregion}}
 
-__Fugure 1__ illustrates the final result.
+__Figure 1__ illustrates the final result.
 
-#### __Fugure 1: RadMenu bound to dynamic data__
+#### __Figure 1: RadMenu bound to dynamic data__
 
 ![](images/RadMenu_Populating_with_Data_Binding_to_Dynamic_Data_02.png)
 

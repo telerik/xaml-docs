@@ -106,6 +106,8 @@ You can use the __DefaultVisualMaterialSelector__ property to set a material sel
         </local:MyDefaultVisualMaterialSelector>
     </FrameworkElement.Resources>
 
+> To improve the chart's performnace, it is recommended to cache and reuse the Material objects instead of creating new ones for each model. You can find a runnable project demonstrating how to implement a material selector in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ChartView3D/WPF/DefaultVisualMaterialSelector). The project also demonstrates a simple material caching implementation.
+
 You can use the __DefaultVisualGeometrySelector__ property to choose different geometry for each data point dynamically.	
 
 #### __[C#] Example 6: Implementing geometry selector__

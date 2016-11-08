@@ -45,7 +45,7 @@ The __ZoomMode__ and __PanMode__ properties can be used to restrict zooming/pann
 
 ## Drag to zoom/scroll
 
-The pan and zoom behavior enables drag-to-zoom and drag-to-pan functionality. By default when the ChartPanAndZoomBehavior is activated and you start dragging on the plot area, a zoom rectangle will be created and when the mouse is released the visible area will fit into the rectangle. 
+The pan and zoom behavior enables drag-to-zoom and drag-to-pan functionalities. By default, when the ChartPanAndZoomBehavior is activated and you start dragging on the plot area, a zoom rectangle will be created and when the mouse is released the visible area will fit into the rectangle. 
 
 #### __Figure 1: Drag to zoom__
 ![](images/radchart-features-scrollandzoom-1.png)

@@ -83,7 +83,7 @@ The __ChartPanAndZoomBehavior__ allows you to define custom key combinations tha
 	panAndZoomBehavior.DragToPanKeyCombinations.Add(keyCombo);
 {{endregion}}
 
-> The __DragToZoomKeyCombinations__ and __DragToPanKeyCombinations__ properties has a higher priority than the __DragMode__ property and if any combination is satisfied, a drag/pan-to-zoom operation is started.
+> The __DragToZoomKeyCombinations__ and __DragToPanKeyCombinations__ properties have higher priority than the __DragMode__ property and if any combination is satisfied, a drag/pan-to-zoom operation is started.
 	
 To cancel the drag to zoom operation you can use the __CancelDragToZoom()__ method of the behavior.	
 

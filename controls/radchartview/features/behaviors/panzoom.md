@@ -23,7 +23,7 @@ In order to utilize this behavior users simply have to add it to the chart's __B
 
 By default only the panning and zooming of the horizontal axis are enabled. You can alter this by setting the __ZoomMode__ and __PanMode__ properties of the __ChartPanAndZoomBehavior__. Both properties are of type __ChartPanZoomMode__ and accept the following values:
 
-* __None__: The zooming/panning with the mouse device is disabled. You can use this value to stop the zoom functionality of the behavior.
+* __None__: The zooming/panning with the mouse device is disabled. You can use this value to disable the zoom functionality of the behavior.
 * __Horizontal__: The zooming/panning with the mouse device is enabled only on the horizontal axis.
 * __Vertical__: The zooming/panning with the mouse device is enabled only on the vertical axis.
 * __Both__: The zooming/panning with the mouse device is enabled both on the horizontal and vertical axes. You can use this value to removes any restrictions, thus the chart can be zoomed in both the horizontal and vertical axes.

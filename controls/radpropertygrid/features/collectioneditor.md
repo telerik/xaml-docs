@@ -222,6 +222,19 @@ Modifying the methods will result in the following action when trying to move to
 
 ![customize commands](images/RadPropertyGrid_CollectionEditor_CustomizeCommands.png)
 
+## Add/Remove items 
+
+**CollectionEditor** allows you to add and remove items to the underlying collection through the **Add** and **Remove** buttons. The availability of this functionality relies on the type of the bound collection and whether it supports such operations. **Figure 1** and **Figure 2** show the state of the buttons when the CollectionEditor is bound to an **ObsevableCollection** and an **array** respectively.
+
+#### **Figure 1: CollectionEditor bound to a collection that supports add/remove functionalities:**
+![add/remove enabled](images/CollectionEditor_AddRemove_Enabled.png)
+
+#### **Figure 2: CollectionEditor bound to a collection that does not support add/remove functionalities:**
+
+![add/remove disabled](images/CollectionEditor_AddRemove_Disabled.png)
+
+>important **The business object should expose a default constructor in order to have the "Add" button enabled.**
+
 # See Also
 
 * [Nested Properties]({%slug radpropertygrid-nested-properties%})

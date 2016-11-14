@@ -40,21 +40,20 @@ The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewR
 
 #### __[XAML] Example 1: Applying the Lightweight Templates__
 
-{{region gridview-overview-lightweight-template_0}}
-
-	    <Window.Resources>
-	        <ResourceDictionary>
-	            <ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
-	            </ResourceDictionary.MergedDictionaries>
-	            <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowCoreStyle}"/>
-	            <Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellCoreStyle}"/>
-	            <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowCoreStyle}"/>
-	        </ResourceDictionary>
-	    </Window.Resources>
+{{region xaml-gridview-overview-lightweight-template_0}}
+	<Grid.Resources>
+	    <ResourceDictionary>
+	        <ResourceDictionary.MergedDictionaries>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
+	        </ResourceDictionary.MergedDictionaries>
+	        <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowCoreStyle}"/>
+	        <Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellCoreStyle}"/>
+	        <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowCoreStyle}"/>
+	    </ResourceDictionary>
+	</Grid.Resources>
 {{endregion}}
 
 #### __Figure 1: RadGridView with Lightweight templates applied__
@@ -73,21 +72,20 @@ The CoreValidationStyles are an alternative of the standard __GridViewCell, Grid
 
 #### __[XAML] Example 2: Applying Lightweight Templates with Validation__
 
-{{region gridview-overview-lightweight-template_1}}
-
-	<Window.Resources>
-	        <ResourceDictionary>
-	            <ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
-	            </ResourceDictionary.MergedDictionaries>
-	            <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowCoreValidationStyle}"/>
-	            <Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellCoreValidationStyle}"/>
-	            <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowCoreValidationStyle}"/>
-	        </ResourceDictionary>
-	    </Window.Resources>
+{{region xaml-gridview-overview-lightweight-template_1}}
+	<Grid.Resources>
+	    <ResourceDictionary>
+	        <ResourceDictionary.MergedDictionaries>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
+	        </ResourceDictionary.MergedDictionaries>
+	        <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowCoreValidationStyle}"/>
+	        <Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellCoreValidationStyle}"/>
+	        <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowCoreValidationStyle}"/>
+	    </ResourceDictionary>
+	</Grid.Resources>
 {{endregion}}
 
 #### __Figure 2: RadGridView with Lightweight templates with validation applied__

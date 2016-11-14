@@ -28,66 +28,64 @@ To do so follow these steps:
 
 #### __[C#] Example 1: The StadiumCapacityStyle class__
 
-{{region gridview-cell-style-selector_0}}
-
+{{region cs-gridview-cell-style-selector_0}}
 	public class StadiumCapacityStyle : StyleSelector
 	{
-	 public override Style SelectStyle(object item, DependencyObject container)
-	 {
-	  if (item is Club)
-	  {
-	   Club club = item as Club;
-	   if (club.StadiumCapacity > 50000)
-	   {
-	    return BigStadiumStyle;
-	   }
-	   else
-	   {
-	    return SmallStadiumStyle;
-	   }
-	  }
-	  return null;
-	 }
-	 public Style BigStadiumStyle { get; set; }
-	 public Style SmallStadiumStyle { get; set; }
+	    public override Style SelectStyle(object item, DependencyObject container)
+	    {
+	        if (item is Club)
+	        {
+	            Club club = item as Club;
+	            if (club.StadiumCapacity > 50000)
+	            {
+	                return BigStadiumStyle;
+	            }
+	            else
+	            {
+	                return SmallStadiumStyle;
+	            }
+	        }
+	        return null;
+	    }
+	    public Style BigStadiumStyle { get; set; }
+	    public Style SmallStadiumStyle { get; set; }
 	}
 {{endregion}}
 
 #### __[VB.NET] Example 1: The StadiumCapacityStyle class__
 
-{{region gridview-cell-style-selector_1}}
-
+{{region vb-gridview-cell-style-selector_1}}
 	Public Class StadiumCapacityStyle
-	 Inherits StyleSelector
-	 Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
-	  If TypeOf item Is Club Then
-	   Dim club As Club = TryCast(item, Club)
-	   If club.StadiumCapacity > 50000 Then
-	    Return BigStadiumStyle
-	   Else
-	    Return SmallStadiumStyle
-	   End If
-	  End If
-	  Return Nothing
-	 End Function
-	 Public Property BigStadiumStyle() As Style
-	  Get
-	   Return m_BigStadiumStyle
-	  End Get
-	  Set
-	   m_BigStadiumStyle = Value
-	  End Set
-	 End Property
-	 Private m_BigStadiumStyle As Style
-	 Public Property SmallStadiumStyle() As Style
-	  Get
-	   Return m_SmallStadiumStyle
-	  End Get
-	  Set
-	   m_SmallStadiumStyle = Value
-	  End Set
-	 End Property
-	 Private m_SmallStadiumStyle As Style
+	    Inherits StyleSelector
+	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
+	        If TypeOf item Is Club Then
+	            Dim club As Club = TryCast(item, Club)
+	            If club.StadiumCapacity > 50000 Then
+	                Return BigStadiumStyle
+	            Else
+	                Return SmallStadiumStyle
+	            End If
+	        End If
+	        Return Nothing
+	    End Function
+	    Public Property BigStadiumStyle() As Style
+	        Get
+	            Return m_BigStadiumStyle
+	        End Get
+	        Set
+	            m_BigStadiumStyle = Value
+	        End Set
+	    End Property
+	    Private m_BigStadiumStyle As Style
+	    Public Property SmallStadiumStyle() As Style
+	        Get
+	            Return m_SmallStadiumStyle
+	        End Get
+	        Set
+	            m_SmallStadiumStyle = Value
+	        End Set
+	    End Property
+	    Private m_SmallStadiumStyle As Style
 	End Class
 {{endregion}}
 

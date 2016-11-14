@@ -22,25 +22,23 @@ Subscribe to the __Grouping__ event and define its handler as below:
 
 #### __C#__
 
-{{region gridview-troubleshooting-nested-grouping_0}}
-
-	void RadGridView1_Grouping(object sender, GridViewGroupingEventArgs e)
+{{region cs-gridview-troubleshooting-nested-grouping_0}}
+	private void RadGridView1_Grouping(object sender, GridViewGroupingEventArgs e)
 	{
-	    Dispatcher.BeginInvoke(() =>
+	    Dispatcher.BeginInvoke((Action)(() =>
 	    {
 	        this.RadGridView1.CurrentItem = null;
-	    });
+	    }));
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-troubleshooting-nested-grouping_1}}
-
-	Private Sub RadGridView1_Grouping(sender As Object, e As GridViewGroupingEventArgs)
-	 Dispatcher.BeginInvoke(Function() Do
-	  Me.RadGridView1.CurrentItem = Nothing
-	 End Function)
+{{region vb-gridview-troubleshooting-nested-grouping_1}}
+	Private Sub RadGridView1_Grouping(ByVal sender As Object, ByVal e As GridViewGroupingEventArgs)
+	    Dispatcher.BeginInvoke(CType(Sub()
+	                                     Me.RadGridView1.CurrentItem = Nothing
+	                                 End Sub, Action))
 	End Sub
 {{endregion}}
 

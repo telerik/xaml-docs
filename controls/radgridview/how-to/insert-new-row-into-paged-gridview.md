@@ -20,13 +20,12 @@ When you insert new row, it is added to the last page of RadDataPager. If you wa
 
 #### __C#__
 
-{{region gridview-how-to-insert-new-row-into-paged-gridview_0}}
-
+{{region cs-gridview-how-to-insert-new-row-into-paged-gridview_0}}
 	private void clubsGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)
-	    {
-	      Dispatcher.BeginInvoke(new Action(()=>{
+	{
+	    Dispatcher.BeginInvoke(new Action(() => {
 	        ((RadGridView)sender).Items.MoveToLastPage();
-	      }));
+	    }));
 	}
 {{endregion}}
 

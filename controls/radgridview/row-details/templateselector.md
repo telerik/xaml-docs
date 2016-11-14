@@ -33,53 +33,55 @@ To do so follow these steps:
 				
 #### __[C#] Example 1: Custom implementation of a DataTemplateSelector__
 
-{{region radgridview-row-details-templateselector-0}}
-
+{{region cs-radgridview-row-details-templateselector-0}}
 	public class MyCustomRowDetailsTemplateSelector : DataTemplateSelector
 	{
-		public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
-		{
-			if (item is Club)
-			{
-				Club club = item as Club;
-				if (club.StadiumCapacity > 50000)
-				{
-					return bigStadium;
-				}
-				else
-				{
-					return smallStadium;
-				}
-			}
-			return null;
-		}
-		public DataTemplate bigStadium { get; set; }
-		public DataTemplate smallStadium { get; set; }
+	    public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
+	    {
+	        if (item is Club)
+	        {
+	            Club club = item as Club;
+	            if (club.StadiumCapacity > 50000)
+	            {
+	                return BigStadium;
+	            }
+	            else
+	            {
+	                return SmallStadium;
+	            }
+	        }
+	        return null;
+	    }
+	    public DataTemplate BigStadium { get; set; }
+	    public DataTemplate SmallStadium { get; set; }
 	}
 {{endregion}}
 
 
 #### __[VB] Example 1: Custom implementation of a DataTemplateSelector__
 
-{{region radgridview-row-details-templateselector-0}}
-
-		Public Class MyCustomRowDetailsTemplateSelector
-			Inherits DataTemplateSelector
+{{region vb-radgridview-row-details-templateselector-0}}
+	Public Class MyCustomRowDetailsTemplateSelector
+		Inherits DataTemplateSelector
 	
-			Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As System.Windows.DependencyObject) As System.Windows.DataTemplate
-				If TypeOf item Is Club Then
-					Dim club As Club = TryCast(item, Club)
-					If club.StadiumCapacity > 50000 Then
-						Return bigStadium
-					Else
-						Return smallStadium
-					End If
+		Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As System.Windows.DependencyObject) As System.Windows.DataTemplate
+			If TypeOf item Is Club Then
+				Dim club As Club = TryCast(item, Club)
+				If club.StadiumCapacity > 50000 Then
+					Return bigStadium
+				Else
+					Return smallStadium
 				End If
-				Return Nothing
-			End Function
-			Public Property bigStadium() As DataTemplate
-			Public Property smallStadium() As DataTemplate
-		End Class
+			End If
+			Return Nothing
+		End Function
+		Public Property bigStadium() As DataTemplate
+		Public Property smallStadium() As DataTemplate
+	End Class
+	
+	   Friend Class Club
+	       Public Property StadiumCapacity As Integer
+	   End Class
 {{endregion}}
 
 In this case we have two different DataTemplates that could be applied - __bigStadium__ and __smallStadium__. Depending on the underlying data we choose / select which template to apply.
@@ -90,57 +92,56 @@ In this case we have two different DataTemplates that could be applied - __bigSt
 
 #### __[XAML] Example 2: Definition of the bigStadium and smallStadium DataTemplates__
 
-{{region radgridview-row-details-templateselector_0}}
-
+{{region xaml-radgridview-row-details-templateselector_0}}
 	<Grid.Resources>
-		<Style x:Key="playersGridRowBackground"
-				BasedOn="{StaticResource GridViewRowStyle}"
-				TargetType="telerik:GridViewRow">
-			<Setter Property="Background" Value="#33848484" />
-		</Style>
+	    <Style x:Key="playersGridRowBackground"
+	BasedOn="{StaticResource GridViewRowStyle}"
+	TargetType="telerik:GridViewRow">
+	        <Setter Property="Background" Value="#33848484" />
+	    </Style>
 	
-		<local:MyCustomRowDetailsTemplateSelector x:Key="RowDetailsTemplate">
-			<local:MyCustomRowDetailsTemplateSelector.bigStadium>
-				<DataTemplate>
-					<telerik:RadGridView Name="playersGrid"
-							                AutoGenerateColumns="False"
-							                ItemsSource="{Binding Players}"
-							                RowStyle="{StaticResource playersGridRowBackground}">
-						<telerik:RadGridView.Columns>
-							<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-							<telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" />
-							<telerik:GridViewDataColumn DataMemberBinding="{Binding Position}" />
-							<telerik:GridViewDataColumn DataMemberBinding="{Binding Country}" />
-						</telerik:RadGridView.Columns>
-					</telerik:RadGridView>
-				</DataTemplate>
-			</local:MyCustomRowDetailsTemplateSelector.bigStadium>
-			<local:MyCustomRowDetailsTemplateSelector.smallStadium>
-				<DataTemplate>
-					<ListBox Name="playersListBox"
-							    Background="#33848484"
-							    ItemsSource="{Binding Players}">
-						<ListBox.ItemTemplate>
-							<DataTemplate>
-								<Grid>
-									<Grid.ColumnDefinitions>
-										<ColumnDefinition Width="200" />
-										<ColumnDefinition Width="100" />
-										<ColumnDefinition Width="100" />
-										<ColumnDefinition Width="*" />
-									</Grid.ColumnDefinitions>
+	    <local:MyCustomRowDetailsTemplateSelector x:Key="RowDetailsTemplate">
+	        <local:MyCustomRowDetailsTemplateSelector.BigStadium>
+	            <DataTemplate>
+	                <telerik:RadGridView Name="playersGrid"
+	              AutoGenerateColumns="False"
+	              ItemsSource="{Binding Players}"
+	              RowStyle="{StaticResource playersGridRowBackground}">
+	                    <telerik:RadGridView.Columns>
+	                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
+	                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" />
+	                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Position}" />
+	                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Country}" />
+	                    </telerik:RadGridView.Columns>
+	                </telerik:RadGridView>
+	            </DataTemplate>
+	        </local:MyCustomRowDetailsTemplateSelector.BigStadium>
+	        <local:MyCustomRowDetailsTemplateSelector.SmallStadium>
+	            <DataTemplate>
+	                <ListBox Name="playersListBox"
+	  Background="#33848484"
+	  ItemsSource="{Binding Players}">
+	                    <ListBox.ItemTemplate>
+	                        <DataTemplate>
+	                            <Grid>
+	                                <Grid.ColumnDefinitions>
+	                                    <ColumnDefinition Width="200" />
+	                                    <ColumnDefinition Width="100" />
+	                                    <ColumnDefinition Width="100" />
+	                                    <ColumnDefinition Width="*" />
+	                                </Grid.ColumnDefinitions>
 	
-									<TextBlock Grid.Column="0" Text="{Binding Name, StringFormat='Name: {0}'}" />
-									<TextBlock Grid.Column="1" Text="{Binding Number, StringFormat='Number: {0}'}" />
-									<TextBlock Grid.Column="2" Text="{Binding Position, StringFormat='Position: {0}'}" />
-									<TextBlock Grid.Column="3" Text="{Binding Country, StringFormat='Country: {0}'}" />
-								</Grid>
-							</DataTemplate>
-						</ListBox.ItemTemplate>
-					</ListBox>
-				</DataTemplate>
-			</local:MyCustomRowDetailsTemplateSelector.smallStadium>
-		</local:MyCustomRowDetailsTemplateSelector>
+	                                <TextBlock Grid.Column="0" Text="{Binding Name, StringFormat='Name: {0}'}" />
+	                                <TextBlock Grid.Column="1" Text="{Binding Number, StringFormat='Number: {0}'}" />
+	                                <TextBlock Grid.Column="2" Text="{Binding Position, StringFormat='Position: {0}'}" />
+	                                <TextBlock Grid.Column="3" Text="{Binding Country, StringFormat='Country: {0}'}" />
+	                            </Grid>
+	                        </DataTemplate>
+	                    </ListBox.ItemTemplate>
+	                </ListBox>
+	            </DataTemplate>
+	        </local:MyCustomRowDetailsTemplateSelector.SmallStadium>
+	    </local:MyCustomRowDetailsTemplateSelector>
 	</Grid.Resources>
 {{endregion}}
 
@@ -148,23 +149,22 @@ In this case we have two different DataTemplates that could be applied - __bigSt
 				 
 #### __[XAML] Example 3: Definition of RowDetailsTemplateSelector property of RadGridView__
 
-{{region radgridview-row-details-templateselector_1}}
-
+{{region xaml-radgridview-row-details-templateselector_1}}
 	<telerik:RadGridView Name="clubsGrid"
-			            Margin="5"
-			            AutoGenerateColumns="False"
-			            ItemsSource="{Binding Clubs}"
-			            RowDetailsTemplateSelector="{StaticResource RowDetailsTemplate}">
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewToggleRowDetailsColumn />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-			<telerik:GridViewDataColumn DataFormatString="{}{0:yyyy}"
-					                DataMemberBinding="{Binding Established}"
-					                Header="Est." />
-			<telerik:GridViewDataColumn DataFormatString="{}{0:N0}"
-					                DataMemberBinding="{Binding StadiumCapacity}"
-					                Header="Stadium" />
-		</telerik:RadGridView.Columns>
+	      Margin="5"
+	      AutoGenerateColumns="False"
+	      ItemsSource="{Binding Clubs}"
+	      RowDetailsTemplateSelector="{StaticResource RowDetailsTemplate}">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewToggleRowDetailsColumn />
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
+	        <telerik:GridViewDataColumn DataFormatString="{}{0:yyyy}"
+	            DataMemberBinding="{Binding Established}"
+	            Header="Est." />
+	        <telerik:GridViewDataColumn DataFormatString="{}{0:N0}"
+	            DataMemberBinding="{Binding StadiumCapacity}"
+	            Header="Stadium" />
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 

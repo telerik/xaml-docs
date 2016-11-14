@@ -27,12 +27,12 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all footer cells of an application__
 
-	{{region gridview-styling-column-footers-1}}
+	{{region xaml-gridview-styling-column-footers-1}}
 	<Style TargetType="telerik:GridViewFooterCell">
-		<Setter Property="BorderBrush" Value="Red"/>
-		<Setter Property="Background" Value="Blue"/>
+	    <Setter Property="BorderBrush" Value="Red"/>
+	    <Setter Property="Background" Value="Blue"/>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewFooterCellStyle__.
 
@@ -42,11 +42,12 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 
-	{{region gridview-styling-column-footers-2}}
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-                                Header="Name"
-                                FooterCellStyle="{StaticResource GridViewFooterCellStyle}" />
-	{{endregion}}
+	{{region xaml-gridview-styling-column-footers-2}}
+	<telerik:GridViewDataColumn Header="ID"
+	                DataMemberBinding="{Binding EmployeeID}"
+	                Footer="ID"
+	                FooterCellStyle="{StaticResource GridViewFooterCellStyle}" />
+{{endregion}}
 
 #### __Figure 2: RadGridView with styled footer cells__
 

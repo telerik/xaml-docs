@@ -19,18 +19,17 @@ Still, there is a way to set the CurrentCulture and apply the format you would l
 #### __[C#] Example 1: Defining custom formatting__
 
 {{region cs-gridview-how-to-custom-format_0}}
-
-	    System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
-            System.Globalization.DateTimeFormatInfo dateTimeInfo =
-            new System.Globalization.DateTimeFormatInfo();
-            dateTimeInfo.LongDatePattern = "dd--MMM--yyyy";
-            dateTimeInfo.ShortDatePattern = "dd--MMM--yy";
-            cultureInfo.DateTimeFormat = dateTimeInfo;
-            cultureInfo.NumberFormat.NumberGroupSeparator = "/";
-            cultureInfo.NumberFormat.NegativeSign = "/";
-
-            Thread.CurrentThread.CurrentCulture = cultureInfo;
-            Thread.CurrentThread.CurrentUICulture = cultureInfo;
+	System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
+	System.Globalization.DateTimeFormatInfo dateTimeInfo =
+	new System.Globalization.DateTimeFormatInfo();
+	dateTimeInfo.LongDatePattern = "dd--MMM--yyyy";
+	dateTimeInfo.ShortDatePattern = "dd--MMM--yy";
+	cultureInfo.DateTimeFormat = dateTimeInfo;
+	cultureInfo.NumberFormat.NumberGroupSeparator = "/";
+	cultureInfo.NumberFormat.NegativeSign = "/";
+	
+	Thread.CurrentThread.CurrentCulture = cultureInfo;
+	Thread.CurrentThread.CurrentUICulture = cultureInfo;
 {{endregion}}
 
 #### __[VB.NET] Example 1: Defining custom formatting__

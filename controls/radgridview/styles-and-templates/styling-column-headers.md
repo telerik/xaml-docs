@@ -53,9 +53,9 @@ __RadGridView__ header cells can also be styled by creating an appropriate __Sty
 
 	{{region xaml-gridview-styling-headercell_2}}
 	<telerik:GridViewDataColumn Header="ID"
-	                            DataMemberBinding="{Binding EmployeeID}"
-	                            HeaderCellStyle="{StaticResource GridViewHeaderCellStyle}" />
-	{{endregion}}
+	             DataMemberBinding="{Binding EmployeeID}"
+	             HeaderCellStyle="{StaticResource GridViewHeaderCellStyle}" />
+{{endregion}}
 
 #### __Figure 2: RadGridView with styled header cells__
 

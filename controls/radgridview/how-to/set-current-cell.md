@@ -16,37 +16,25 @@ The code below shows how to set the current cell (it will be on the sixth row an
 
 #### __C#__
 
-{{region gridview-how-to-set-current-cell_0}}
-
-	public MainPage()
+{{region cs-gridview-how-to-set-current-cell_0}}
+	private void gridView_DataLoaded(object sender, EventArgs e)
 	{
-	   InitializeComponent(); 
-	   gridView.DataLoaded += new EventHandler<EventArgs>(gridView_DataLoaded);  
-	}
-	
-	void gridView_DataLoaded(object sender, EventArgs e)
-	{
-	  Dispatcher.BeginInvoke(new Action(() =>
-	  {
-	     gridView.CurrentCellInfo = new GridViewCellInfo(gridView.Items[5], gridView.Columns["Text"]);
-	     gridView.Focus();  
-	  }))
+	    Dispatcher.BeginInvoke(new Action(() =>
+	    {
+	        gridView.CurrentCellInfo = new GridViewCellInfo(gridView.Items[5], gridView.Columns["Text"]);
+	        gridView.Focus();
+	    }));
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-how-to-set-current-cell_1}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 AddHandler gridView.DataLoaded, AddressOf gridView_DataLoaded
-	End Sub
-	Private Sub gridView_DataLoaded(sender As Object, e As EventArgs)
-	 Dispatcher.BeginInvoke(New Action(Function() Do
-	   gridView.CurrentCellInfo = New GridViewCellInfo(gridView.Items(5), gridView.Columns("Text"))
-	   gridView.Focus()
-	 End Function))
+{{region vb-gridview-how-to-set-current-cell_1}}
+	Private Sub gridView_DataLoaded(ByVal sender As Object, ByVal e As EventArgs)
+		Dispatcher.BeginInvoke(New Action(Sub()
+			gridView.CurrentCellInfo = New GridViewCellInfo(gridView.Items(5), gridView.Columns("Text"))
+			gridView.Focus()
+		End Sub))
 	End Sub
 {{endregion}}
 

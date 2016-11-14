@@ -17,7 +17,7 @@ This article shows how to scroll RadGridView to a particular row and / or column
 
 We can use them against RadGridView with many rows and columns. The ultimate goal would be to scroll to the last column of the last row:
 #### __Figure 1: Scroll to the last column of the last row__                     
-![](images/how_to_scroll_gridview.png)
+![Scroll to the last column of the last row](images/how_to_scroll_gridview.png)
 
 ## ScrollIntoViewAsync
 
@@ -34,7 +34,7 @@ Here is the code that will scroll to the last row and last column of RadGridView
 
 #### __[C#] Example 1: Scroll to the last row and last column__
 
-{{region gridview-scroll-item_0}}
+{{region cs-gridview-scroll-item_0}}
 
 	this.gridView.ScrollIntoViewAsync(this.gridView.Items[this.gridView.Items.Count - 1], //the row
 	                                  this.gridView.Columns[this.gridView.Columns.Count - 1], //the column
@@ -47,7 +47,7 @@ Here is the code that will scroll to the last row and last column of RadGridView
 
 #### __[VB.NET] Example 1: Scroll to the last row and last column__
 
-{{region gridview-scroll-item_1}}
+{{region vb-gridview-scroll-item_1}}
 
 	    Me.gridView.ScrollIntoViewAsync(Me.gridView.Items(Me.gridView.Items.Count - 1), Me.gridView.Columns(Me.gridView.Columns.Count - 1), New Action(Of FrameworkElement)(AddressOf SelectRow))
 	   
@@ -75,7 +75,7 @@ Here is the code that will scroll into the last row and last column of RadGridVi
 
 #### __[C#] Example 2: Scroll into the last row and last column of RadGridView__
 
-{{region gridview-scroll-item_2}}
+{{region cs-gridview-scroll-item_2}}
 
 	this.gridView.ScrollIndexIntoViewAsync(this.gridView.Items.Count - 1, //the row
 	                                  this.gridView.Columns[this.gridView.Columns.Count - 1], //the column
@@ -89,7 +89,7 @@ Here is the code that will scroll into the last row and last column of RadGridVi
 
 #### __[VB.NET] Example 2: Scroll into the last row and last column of RadGridView__
 
-{{region gridview-scroll-item_3}}
+{{region vb-gridview-scroll-item_3}}
 
     Me.clubsGrid.ScrollIndexIntoViewAsync(Me.clubsGrid.Items.Count - 1, Me.clubsGrid.Columns(Me.clubsGrid.Columns.Count - 1), New Action(Of FrameworkElement)(AddressOf SelectRow), Nothing)
     

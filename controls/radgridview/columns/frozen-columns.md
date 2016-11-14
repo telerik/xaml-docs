@@ -32,22 +32,19 @@ In __Example 1__, the first two columns are frozen starting from left to right.
 
 #### __[XAML] Example 1: Setting FrozenColumnCount__
 
-{{region gridview-columns-frozen-columns_0}}
-
+{{region xaml-gridview-columns-frozen-columns_0}}
 	<telerik:RadGridView FrozenColumnCount="2" />
 {{endregion}}
 
 #### __[C#] Example 1: Setting FrozenColumnCount__
 
-{{region gridview-columns-frozen-columns_1}}
-
+{{region cs-gridview-columns-frozen-columns_1}}
 	this.radGridView.FrozenColumnCount = 2;
 {{endregion}}
 
 #### __[VB.NET] Example 1: Setting FrozenColumnCount__
 
-{{region gridview-columns-frozen-columns_2}}
-
+{{region vb-gridview-columns-frozen-columns_2}}
 	Me.radGridView.FrozenColumnCount = 2
 {{endregion}}
 
@@ -57,12 +54,9 @@ To disable the freezing of a column, just set the __CanUserFreezeColumns__ to __
 
 #### __[XAML] Example 2: Disabling Frozen Columns__
 
-{{region gridview-columns-frozen-columns_3}}
-
+{{region xaml-gridview-columns-frozen-columns_3}}
 	<telerik:RadGridView x:Name="radGridView"
-	                     CanUserFreezeColumns="False">
-	    ...
-	</telerik:RadGridView>
+	             CanUserFreezeColumns="False" />
 {{endregion}}
 
 ![Rad Grid View Frozencolumns 4](images/RadGridView_Frozencolumns_4.png)
@@ -90,24 +84,21 @@ __Example 3__ shows that you can subscribe to the event either declaratively or 
 
 #### __[XAML] Example 3: Subscribing to the FrozenColumnsChanged Event__
 
-{{region gridview-columns-frozen-columns_4}}
-
-	<telerik:RadGridView Name="gridView" 
-					     FrozenColumnsChanged="gridView_FrozenColumnsChanged" />
+{{region xaml-gridview-columns-frozen-columns_4}}
+	<telerik:RadGridView x:Name="gridView"
+	             FrozenColumnsChanged="gridView_FrozenColumnsChanged" />
 {{endregion}}
 
 #### __[C#] Example 3: Subscribing to the FrozenColumnsChanged Event__
 
-{{region gridview-columns-frozen-columns_5}}
-
+{{region cs-gridview-columns-frozen-columns_5}}
 	gridView.FrozenColumnsChanged += new EventHandler<FrozenColumnsChangedEventArgs>(gridView_FrozenColumnsChanged);
 {{endregion}}
 
 #### __[VB.NET] Example 3: Subscribing to the FrozenColumnsChanged Event__
 
-{{region gridview-columns-frozen-columns_6}}
-
-	AddHandler gridView.FrozenColumnsChanged, AddressOf gridView_FrozenColumnsChanged
+{{region vb-gridview-columns-frozen-columns_6}}
+	AddHandler Me.gridView.FrozenColumnsChanged, AddressOf gridView_FrozenColumnsChanged
 {{endregion}}
 
 Via the FrozenColumnsChangedEventArgs, you can get the:
@@ -122,26 +113,24 @@ __Example 4__ shows how you can get the names of the columns currently in the fr
 
 #### __[C#] Example 4: Using the FrozenColumnsChanged Event__
 
-{{region gridview-columns-frozen-columns_7}}
-
-	private void clubsGrid_FrozenColumnsChanged(object sender, Telerik.Windows.Controls.GridView.GridView.FrozenColumnsChangedEventArgs e)
-    {
-        var msg = "Added: " + string.Join(", ", e.AddedFrozenColumns.Select(x => x.UniqueName)) + 
-                  "\nRemoved: " + string.Join(", ", e.RemovedFrozenColumns.Select(x => x.UniqueName)) +
-                  "\nAll: " + string.Join(", ", e.AllFrozenColumns.Select(x => x.UniqueName));
-        MessageBox.Show(msg);
-    }
+{{region cs-gridview-columns-frozen-columns_7}}
+	private void gridView_FrozenColumnsChanged(object sender, Telerik.Windows.Controls.GridView.GridView.FrozenColumnsChangedEventArgs e)
+	{
+	    var msg = "Added: " + string.Join(", ", e.AddedFrozenColumns.Select(x => x.UniqueName)) +
+	        "\nRemoved: " + string.Join(", ", e.RemovedFrozenColumns.Select(x => x.UniqueName)) +
+	        "\nAll: " + string.Join(", ", e.AllFrozenColumns.Select(x => x.UniqueName));
+	    MessageBox.Show(msg);
+	}
 {{endregion}}
 
 
 #### __[VB.NET] Example 4: Using the FrozenColumnsChanged Event__
 
-{{region gridview-columns-frozen-columns_8}}
-
-	Private Sub clubsGrid_FrozenColumnsChanged(sender As Object, e As Telerik.Windows.Controls.GridView.GridView.FrozenColumnsChangedEventArgs)
-	Dim msg = "Added: " + String.Join(", ", e.AddedFrozenColumns.[Select](Function(x) x.UniqueName)) + vbLf & "Removed: " + String.Join(", ", e.RemovedFrozenColumns.[Select](Function(x) x.UniqueName)) + vbLf & "All: " + String.Join(", ", e.AllFrozenColumns.[Select](Function(x) x.UniqueName))
-	MessageBox.Show(msg)
-End Sub
+{{region vb-gridview-columns-frozen-columns_8}}
+	Private Sub gridView_FrozenColumnsChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridView.GridView.FrozenColumnsChangedEventArgs)
+	    Dim msg = "Added: " & String.Join(", ", e.AddedFrozenColumns.Select(Function(x) x.UniqueName)) & ControlChars.Lf & "Removed: " & String.Join(", ", e.RemovedFrozenColumns.Select(Function(x) x.UniqueName)) & ControlChars.Lf & "All: " & String.Join(", ", e.AllFrozenColumns.Select(Function(x) x.UniqueName))
+	    MessageBox.Show(msg)
+	End Sub
 {{endregion}}
 
 ![Rad Grid View FrozenColumnsChanged 1](images/RadGridView_FrozenColumnsChanged_1.png)

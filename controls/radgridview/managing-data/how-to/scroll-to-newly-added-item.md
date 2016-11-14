@@ -17,26 +17,25 @@ When you insert a new item, it is added as last item in of __RadGridView__. If y
 
 #### __C#__
 
-{{region gridview-how-to-scroll-to-newly-added-item_0}}
+{{region cs-gridview-how-to-scroll-to-newly-added-item_0}}
 	private void clubsGrid_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
-    {
-        if (e.Row is GridViewNewRow)            
-        {
-            this.clubsGrid.SelectedItem = e.Row.Item;
-            this.clubsGrid.ScrollIntoView(this.clubsGrid.SelectedItem);
-        }
-    }
+	{
+	    if (e.Row is GridViewNewRow)
+	    {
+	        this.clubsGrid.SelectedItem = e.Row.Item;
+	        this.clubsGrid.ScrollIntoView(this.clubsGrid.SelectedItem);
+	    }
+	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-how-to-scroll-to-newly-added-item_1}}
-
+{{region vb-gridview-how-to-scroll-to-newly-added-item_1}}
 	Private Sub clubsGrid_RowEditEnded(sender As Object, e As GridViewRowEditEndedEventArgs)
-		If TypeOf e.Row Is GridViewNewRow Then
-			Me.clubsGrid.SelectedItem = e.Row.Item
-			Me.clubsGrid.ScrollIntoView(Me.clubsGrid.SelectedItem)
-		End If
+	    If TypeOf e.Row Is GridViewNewRow Then
+	        Me.clubsGrid.SelectedItem = e.Row.Item
+	        Me.clubsGrid.ScrollIntoView(Me.clubsGrid.SelectedItem)
+	    End If
 	End Sub
 {{endregion}}
 

@@ -12,7 +12,7 @@ position: 8
 
 __RadScheduleView__ provides a wide range of customizable __TimeRulerItems__. The term __TimeRulerItem__ refers to the major and minor ticks inside the TimeRuler, date group headers in TimelineView as well as day buttons and weekdays headers in MonthView.
 
->tip See the [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration %}) topic for further details on the different TimeRuler items.
+>tip See the [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration%}) topic for further details on the different TimeRuler items.
 
 This topic explains how to define the __TimeRulerItemTemplateSelector__ property of RadScheduleView in order to customize the templates of the TimeRuler items.
 
@@ -48,7 +48,7 @@ The next figures show the templates in the different ViewDefinitions of __RadSch
 
 ![](images/radscheduleview_templating_timeruleritems_07.png)
 
->tipMinor tick templates are by design empty. This could be easily changed by assigning a StringFormat through the [Formatting properties]({%slug radscheduleview-features-formatting %}) of the ViewDefinitions.
+>tipMinor tick templates are by design empty. This could be easily changed by assigning a StringFormat through the [Formatting properties]({%slug radscheduleview-features-formatting%}) of the ViewDefinitions.
 
 Example 1 shows how to configure DayViewDefinition and the corresponding VerticalDayMajorItem and VerticalDayMinorItem templates in order to achieve a more detailed view of the TimeRuler.
 
@@ -75,7 +75,7 @@ __Example 1__ shows TimeRulerItemTemplateSelector with modified VerticalDayMajor
 	</telerikScheduleView:TimeRulerItemTemplateSelector>
 {{endregion}}
 
->The text of the TextBlock inside the templates is bound to the __FormattedValue__ property, which is formed after the StringFormat is set through the [Formatting properties]({%slug radscheduleview-features-formatting %}) of the ViewDefinitions is applied.
+>The text of the TextBlock inside the templates is bound to the __FormattedValue__ property, which is formed after the StringFormat is set through the [Formatting properties]({%slug radscheduleview-features-formatting%}) of the ViewDefinitions is applied.
 
 >The DataContext of the templates is of type _TimeRulerItemProxy_ - it contains information about the DateTime and the Duration of the TimeRulerItem.
 
@@ -103,8 +103,8 @@ __Figure 8__ shows the final result.
 
 # See Also
 
- * [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration %})
+ * [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration%})
 
- * [Formatting properties]({%slug radscheduleview-features-formatting %})
+ * [Formatting properties]({%slug radscheduleview-features-formatting%})
  
- * [Styling the TimeRulerItems]({%slug radscheduleview-styles-and-templates-styling-timeruleritems %})
+ * [Styling the TimeRulerItems]({%slug radscheduleview-styles-and-templates-styling-timeruleritems%})
